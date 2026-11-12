@@ -1,0 +1,1579 @@
+1
+00:01:03,347 --> 00:01:12,567
+Günaydın arkadaşlar. [öğrenci] sen geçen hafta sunum yapamamıştın. Eğer uygunsan seninle başlayalım.
+
+2
+00:01:15,248 --> 00:01:22,548
+Hocam ben sonda sunsam daha iyi olacak. Çünkü geçen hafta bir arkadaşımla haber göndermiştim.
+
+3
+00:01:23,760 --> 00:01:30,620
+Şuramız galiba bana söylemişti. Herkes usulun bittikten sonra alırız diye konuşmuştunuz. Ben de açıkçası...
+
+4
+00:01:30,620 --> 00:01:34,960
+Tam tersi, önce geçen haftayı temizleyerek başlıyoruz da o yüzden şey yaptım.
+
+5
+00:01:35,520 --> 00:01:46,300
+Pardon hocam, ben ona göre ayarlamıştım iş yerindeki durumumu ama şu anda ofisleyip kütüphaneye geçeceğim en son durumda.
+
+6
+00:01:47,540 --> 00:01:49,200
+Ortamı hazırlamam sürecek o yüzden.
+
+7
+00:01:50,195 --> 00:01:52,176
+Peki, teşekkür ederim.
+
+8
+00:02:02,227 --> 00:02:17,288
+Yine bakıyorum [öğrenci] vardı geçen haftadan. O da yok. [öğrenci], günaydın. Sen gelmişsin. Günaydın hocam. Eğer hazırsan seninle de başlayabiliriz bu haftaya. Hazırım hocam. Başlayabiliriz. Tamam.
+
+9
+00:02:26,036 --> 00:02:28,036
+Tekniklerimi görebiliyorsunuz.
+
+10
+00:02:28,036 --> 00:02:29,515
+Evet.
+
+11
+00:02:35,731 --> 00:02:37,731
+Merhaba, Merhaba.
+
+12
+00:02:37,731 --> 00:02:43,731
+Sonucan konu, deploying services using, servicede container pattern.
+
+13
+00:02:47,060 --> 00:03:06,040
+Yani dönem boyunca bu sunumlarda işte bir mikro servis mimarisinde servis oluşturmaya, geliştirmeye nelere dikkat etmemizi birçok şeyi paylaştık. Bir servisi oluşturduktan sonra geliştirme aşamasını tamamladıktan sonra karşımıza bu oluşturduğumuz servisi ya da servislere dağıtma işlemi çıkıyor.
+
+14
+00:03:06,040 --> 00:03:15,040
+Bu işlemlerde de geleneksel yöntemlerde, gelenekselden kastım artık kalmadı gibi ama daha öncesinde bu fiziksel sunucuların...
+
+15
+00:03:15,060 --> 00:03:15,519
+Üzerine
+
+16
+00:03:16,020 --> 00:03:35,680
+Veya bir sunucu üzerinde sanal makineler oluşturarak o sanal makineler üzerine bir servis kurulumu gibi bir yaklaşım vardı ama mikroservis mimarisinin yaygınlaşmasıyla çok fazla servis var ve her servisin farklı bağımlılıkları var, farklı istekleri var ve farklı ortamlara ihtiyaçları var.
+
+17
+00:03:35,680 --> 00:03:44,020
+Bu yazılımcıları, bu dağıtım sürecindeki işlemleri farklı ihtiyaçlar ortaya çıkıyor.
+
+18
+00:03:44,020 --> 00:03:50,920
+Bu ihtiyaçlar ise daha taşınabilir ve daha izole çözümleri ihtiyaç duyulmuş.
+
+19
+00:03:51,759 --> 00:04:05,420
+Ve bunun sonucunda servise konteyner paten dediğimiz bir uygulamayı birbirinden bağımsız konteyner olarak oluşturma, ayağa kaldırma, dağıtma süreçleri ortaya çıkmış.
+
+20
+00:04:06,324 --> 00:04:14,084
+Bu servisde konteyner paten dediğimiz desen, modern mikroservis mimarilerinin temel yapı taşlarından biri aslında şu anda.
+
+21
+00:04:15,443 --> 00:04:21,443
+Öne çıkma nedeni ise, öncelikli servisinde konteynerin aslında servisinin ne olduğunu çokça bahsettik.
+
+22
+00:04:21,443 --> 00:04:27,063
+Bir uygulamanın belirli bir işlerini yerine getiren bağımsız yazılım birleşenliğine bir servis diyoruz.
+
+23
+00:04:34,324 --> 00:04:57,163
+Ortamda çalışan ve o uygulamayı ve o uygulamanın bağımlılıklarını, çalışma ortamını içeren bir birim olarak söyleyebiliriz. Bu paternin mikroservis mimarisindeki rolü, bildiğiniz üzere her mikroservis birbirinden bağımsız olarak geliştirilebiliyor ve birbirinden bağımsız olarak çalıştırılıyor.
+
+24
+00:04:59,923 --> 00:05:07,863
+Bu konuda geliştirildiği çalıştırılması için de bunun birbirinden bağımsız olarak dağıtabilmesi, birbirlerine badanmak olmamaları gerekiyor.
+
+25
+00:05:07,863 --> 00:05:17,384
+Ve bizim en önemli performans konusunda da ya da işte büyük bir mimariden bahsediyorsak bu mimarinin ölçeklenebilir olması gerekiyor.
+
+26
+00:05:17,504 --> 00:05:23,524
+Yani bizim hızlıca yeni bir servis ayağa kaldırmamız ya da ihtiyaç yoksa o servisi down etmemiz gerekiyor.
+
+27
+00:05:24,423 --> 00:05:27,884
+Bu konteyner pattern'in bize en önemli katkılarından bir tanesi de.
+
+28
+00:05:27,923 --> 00:05:38,743
+Ölçeklenebilir olması. Ve mikroservis mimarisindeki temel amaçlarımızdan bir tanesi de aslında biz farklı teknolojileri ve farklı dilleri bir arada kullanabilmemiz gerekiyor.
+
+29
+00:05:39,444 --> 00:06:07,444
+Bağımsız olduğu için bir dile ya da bir teknolojiye bağımlı değiliz. Her servise ihtiyacımız olduğu dilde ve teknolojide geliştirebiliriz ve servise birbirleriyle haberleştirebiliriz. Ama bu farklı dillerde ve farklı teknolojilerde geliştirilen uygulamaların işletim sistemi düzeyinde farklı ihtiyaçları olabiliyor. Bunların bir arada çalıştırması gerektiği senaryolarda ise sıkıntılara yol açabiliyor. Yani bunların bu uygulamaların, bu servislerin birbirinden bağımsız olabiliyor.
+
+30
+00:06:07,444 --> 00:06:22,423
+Bu konteyner bir şekilde yani biz bir servisi konteyner olarak deploy ettiğimizde ise her servisin ihtiyacını kapsüllediğimiz için bu sıkıntıyı da çözmüş oluyoruz.
+
+31
+00:06:23,379 --> 00:06:30,500
+Burada geleneksel dağıtım yöntemleriyle konteyner bazı yöntemlerin farkını şöyle kısaca özetleyebiliriz.
+
+32
+00:06:30,560 --> 00:06:44,920
+Görselde gördüğünüz gibi sol tarafta daha önceki kullanılan virtual machine'ler ve şu anda mikroservis mimarisi tarafında sıklıkla gördüğümüz konteyner yapısının karşılaştırmasını görüyorsunuz.
+
+33
+00:06:44,920 --> 00:06:50,639
+Bu sol taraftaki görselde gördüğünüz gibi bir virtual machine.
+
+34
+00:06:51,379 --> 00:07:00,379
+Bizim bir fiziksel sunucumuz oluyor. Fiziksel sunucunun üzerinde bir operating sistem kurulu oluyor. Bu Virtual Machine Emulator dediğimiz...
+
+35
+00:07:01,584 --> 00:07:29,584
+Uygulama, program yardımıyla, Hyper Research dediğimiz. Bunun üzerine biz farklı operating sistemlerde virtual machine'ler ayağa kaldırıyoruz. Ama bu virtual machine'lerin aslında kendi operating sistemleri var. Ve bunların kurulumu, ayağa kalkması gerçekten bir maliyet açısından. Aynı zamanda bu fiziksel sunucunun üzerinde ekstra yer kaplıyorlar. Ekstra fiziksel sunucuyu zorluyorlar.
+
+36
+00:07:29,584 --> 00:07:44,944
+Pek verimli bir yaklaşım olduğu söylenemez. Diğer tarafta baktığımızda konteynerlere, aynı işletim sistemi üzerinde kendisi yeni bir işletim sistemi kurmadan arada bir konteyner engine dediğimiz, bunun detayına birazdan bakacağız.
+
+37
+00:07:44,944 --> 00:07:56,944
+Konteyner engine dediğimiz, o host ettiği operating sistem üzerinde birbirinden bağımsız ufak konteynerler çalıştırabiliyoruz. Bunlardan binlerce çalıştırabiliyoruz. Diğer tarafa baktığımızda...
+
+38
+00:07:57,584 --> 00:08:07,384
+En basit bir operating sistem, 20 GB, 30 GB bir yer kaplıyor bir çılmeşin üzerine koyduğumuzda. Ama konteynerlarda birbirlerinden ortak imaj...
+
+39
+00:08:07,891 --> 00:08:19,752
+Çok detaya inmeyeyim, birazdan ilerleyeceğiz. Birbirleriyle ortak imajları vesaire kullandığı için binlerce konteynerı biz bir fiziksel sunucu üzerinde çok rahat bir şekilde ayağa kaldırabiliyoruz.
+
+40
+00:08:19,752 --> 00:08:25,831
+Burada maddelere baktığımızda her uygulama için bağımsız bir iletişim sistemi çalıştıracağından bahsettik.
+
+41
+00:08:26,172 --> 00:08:31,412
+Ülçün meşinleri ayağa kaldırma süresi gerçekten oldukça uzun ve pek verimli bir yöntem değil.
+
+42
+00:08:31,912 --> 00:08:35,872
+Ve yüksek kaynak tüketimine neden oluyor o çalıştırıldığı fiziksel makine üzerinde.
+
+43
+00:08:35,892 --> 00:09:02,092
+Konteyner bazı yöntemlere baktığımızda ise Teknik Üniversitesi'nin çekirdeğini kullanıyor. Çok hızlı bir şekilde ayağı kaldırabiliyoruz ve düşük kaynak tüketimi sağlıyor bize. Az önce bahsettiğim gibi bu yöntem özellikle mikroservis mimarisinin o birbirinden farklı geliştirme ortamlarında küçük ve bağımsız servis yapısıyla uyumlu bir fırsat sunuyor bize.
+
+44
+00:09:02,772 --> 00:09:06,032
+Konteynerler neden önemli diye geldiğimizde aslında bahsediyorum.
+
+45
+00:09:08,820 --> 00:09:15,400
+Yazılım geliştiricileri konteynerler sayesinde çok hızlı bir şekilde kodlarını test edebilecek hale geliyorlar.
+
+46
+00:09:15,900 --> 00:09:23,320
+Ve bu test ettikleri kodları, geliştirdikleri kodları kendi çalıştırdıkları ve test ettikleri ortamla,
+
+47
+00:09:23,460 --> 00:09:29,320
+yani test makineleriyle prod makineleri arasındaki tutarlı bir sonuç elde ediyorlar.
+
+48
+00:09:29,320 --> 00:09:36,360
+Çünkü benim makinem de çalışıyordu diye böyle geçmişten kalan yazılımcılarda bir söz var.
+
+49
+00:09:36,820 --> 00:09:51,060
+Bu çalıştırdığımız uygulama bir işletim sistemindeki olan, atıyorum bir bağımlılığı kendi makinelerinde bulabiliyorken, onu farklı bir makineye taşıdığımızda o makinede o bağımlılık olmadığı için çalışmayabiliyordu.
+
+50
+00:09:51,060 --> 00:09:59,660
+Yani bu daha öncesinde sıklıkla karşılaşılan bir problemdi. Ama konteyner yapısı bizi bu problemin çözmeye yarayan.
+
+51
+00:10:00,000 --> 00:10:16,556
+Çünkü o uygulamanın ihtiyacı olan bütün her şey o konteynerın içerisinde olduğumuzu biz garanti ediyoruz aslında. Bizi bu gibi sıkıntılardan kurtaran bir şey ve mikroservis mimarisinde özellikle konteynerların gelişimi...
+
+52
+00:10:16,596 --> 00:10:28,836
+Bize bu şekilde önem kazandırıyor. En yaygın kullanılan teknolojiler ise Dakar ve Solerisi söyleyebiliriz. Ben çoğunlukla Dakar duydum.
+
+53
+00:10:30,868 --> 00:10:50,928
+Dakar kullanımının yaygın bir şekilde olduğunu biliyorum konteyner teknolojilerinde. Peki Dakar ne? Dakar uygulamanın ve tüm bağlantılarını tek bir standart birime, yani konteyner dediğimiz yapıya paketlememizi sağlayan açık kaynaklı bir konteyner arasındaki platformu. Peki Dakar bize neler sunuyor? Neden bu kadar önemli?
+
+54
+00:10:58,323 --> 00:11:08,144
+Taşınabilir bir hale getiriyor. Dediğim gibi bir konteyner oluşturduğumuzda biz onu kendi makinemizden ya da test ortamına çok rahat bir şekilde taşıyabiliyoruz.
+
+55
+00:11:08,144 --> 00:11:20,443
+Tekrarlanabilirlik dediğimiz test ve rot ortamındaki uygulamanın çalışması ve aynı verimde çalışması, aynı şekilde çalışmasının aslında bize bir garantisi oluyor.
+
+56
+00:11:24,436 --> 00:11:33,416
+Az önce bahsettiğimiz virtual machine kullan, yani bir fiziksel makine üzerinde birden fazla işletim sistemine kurmamıza gerek kalmıyor.
+
+57
+00:11:34,323 --> 00:11:53,163
+Biz bir fiziksel sunucu aslında çok daha verimli bir şekilde kullanıyoruz. Çünkü aslında tek bir servis ayağa kaldırmıyoruz. Biz belki onlarca servis kaldıracağız biz fiziksel makine üzerinde. Onlarca işletim sistemi kurmamız pek mümkün olmadığı için konteyner yapısı ve DACR aslında bize bu konuda verimlilik sağlıyor.
+
+58
+00:11:53,163 --> 00:12:01,783
+Ölçeklenebilirliği dediğim ise çok hızlı bir şekilde ayağa kaldırıp indirebiliyoruz servisleri DACR yardımıyla.
+
+59
+00:12:02,323 --> 00:12:07,323
+İse bizim mikroservis mimarisinde ihtiyaç duyduğumuz şeylerden bir tanesi.
+
+60
+00:12:08,143 --> 00:12:10,163
+Ducker'ın ana birleşenlerine baktığımızda,
+
+61
+00:12:13,183 --> 00:12:19,583
+Ducker Engine dediğimiz yapı aslında şurada slide'da gördüğünüz arkadaki mor kısım.
+
+62
+00:12:19,583 --> 00:12:25,403
+Ducker Engine, Ducker'ın çekirdek parçası, konteynerlerin oluşturulması ve yönetimiyle ilgilenen bir yapı.
+
+63
+00:12:29,076 --> 00:12:36,256
+Konteyner oluşturmak için kullandığımız uygulama kodunu ve bağımlılıkların içeriyle salt okunur bir şablon aslında bu.
+
+64
+00:12:36,672 --> 00:12:44,172
+Aslında biz konteynerları daha önce oluşturduğumuz bir şablon Ducker İmaj üzerinde ayağa kaldırıyoruz.
+
+65
+00:12:44,172 --> 00:12:50,532
+Ducker İmaj dediğimizde ise burada Multi-Layer dediğimiz birbirinden farklı farklı katmanları kullanıyor.
+
+66
+00:12:50,652 --> 00:12:56,532
+O farklı katmanları farklı imajlarla ortak olarak kullanılıyor. Bu da bize bir ekstra verimlilik sağlıyor.
+
+67
+00:12:57,272 --> 00:13:04,672
+Ducker Hub Registry dediğimiz ise bu oluşturduğumuz Ducker İmajlarını ortak bir yerde depolamamızı sağlayabiliyor.
+
+68
+00:13:04,672 --> 00:13:28,492
+Bu yapı, bunu Java'da Maven Repository'e benzetebiliriz ya da Node.js'de NPM'e benzetebiliriz. Oluşturulan Docker imajlarının ortak bir yerde birleştirilip daha farklı makineden ya da farklı kişilerin bu imajları rahat bir şekilde kullanmasını sağlayan bir bulut ortamı diyebiliriz.
+
+69
+00:13:32,672 --> 00:13:51,392
+Neler yapmamız gerektiğini içeren, talimatlar içeren bir dosya aslında. Takırna'nın birleşenlerine baktıktan sonra bu konteyner bazlı dağıtım süreci aslında iki adımdan oluşuyor. Bu, bu ilt ve runtime olarak ayırabiliriz.
+
+70
+00:13:54,932 --> 00:14:13,111
+Dockerfile oluşturuyoruz. Bu imajı oluşturmak için komutları bir Dockerfile'in içerisine teker teker yazıyoruz. Sonrasında servisi ve bağımlılıklarını bu oluşturacağımız imajın içerisine gömüyoruz diyeyim.
+
+71
+00:14:15,635 --> 00:14:34,475
+Bu şekilde oluşturduk. Run Time aşamasına geçtiğimizde ise bu oluşturduğumuz konteynere imajı bir rejistriye, bir bu da krap ya da Amazon Web Service'teki o Elastic Container rejistri gibi farklı haplar içerisine oluşturduğumuz imajı koyuyoruz.
+
+72
+00:14:34,475 --> 00:14:42,855
+Sonrasında ihtiyaç duyuyan bir makinede bu hap üzerinden kendisi çekiyor. Container Orchestration dediğimizde Kubernetes gibi.
+
+73
+00:14:43,572 --> 00:15:06,891
+Bu kümernes istediğimiz makinede şu servisi çalıştır gibi rahat bir komut söyleyebiliyoruz. O gidiyor da kırt hap üzerinden ya da işte verdiğimiz rejisteri üzerinden ilgili servisi çekip o makinede rahat bir şekilde ayağa kaldırabiliyor. Bu imajlar arasında orkestres yönü sağlayabiliyor.
+
+74
+00:15:11,248 --> 00:15:20,788
+Örnek vardı, onu da paylaşmak istedim. Konteyner bazlılığı dağıtım örneğinde, burada az önce bahsettiğim gibi build ve runtime olarak bu şekilde ikiye ayrılıyor.
+
+75
+00:15:20,788 --> 00:15:35,768
+Service kodlarımızı biz burada geliştiriyoruz. Sonrasında bir Docker build komutu ve Docker file yardımıyla kullandığımız, işte container build'i burada Docker oluyor, bir tane Docker imajı oluşturuyoruz.
+
+76
+00:15:36,028 --> 00:15:39,168
+Bu imajı, container image register'ıya Docker.
+
+77
+00:15:39,248 --> 00:15:45,728
+Az önce bahsettiğim Dugrub ve benzeri rejistrirlere pushlayabiliyoruz.
+
+78
+00:15:45,728 --> 00:15:52,088
+Sonrasında kullanma aşamasına geldiğimizde ise burada pushladığımız veri burada aslında pull ediliyor.
+
+79
+00:15:52,548 --> 00:15:59,728
+Ve bir makine üzerinde işte birden fazla konteyner ya da farklı makine üzerinde farklı bir konteyner olarak ayağa kaldırılabiliyor.
+
+80
+00:16:00,428 --> 00:16:07,208
+Bu örnek üzerinde hızlıca bir Dugr file örneği paylaşılmıştı. Bunu da paylaşmak istedim.
+
+81
+00:16:07,248 --> 00:16:25,848
+Dockerfile oluşturmadığımları, işte burada from'la başlayan şey bir OpenJDK'nın işte jr'yi içeren az yer kaplayan bir Linux imajı üzerine konuşulmuş. İşte sonrasında neyin çalıştırılacağı yazılmış. İşte install curve for use by health check.
+
+82
+00:16:27,475 --> 00:16:40,475
+Körlü indirilmiş. Sonrasında CM'de bu imaj ayağa kalktıktan sonra hangi komutun çalıştırılacağı bu şekilde yazılmış. Sonrasında Erçek olarak işte...
+
+83
+00:16:41,268 --> 00:17:09,268
+30 saniye sonra, 5 saniye aralıklarla şu endpoint'e istek atması söylenmiş. Sonrasında bir oluşturulan jir dosyası imajın içerisine kopyalarmış. Aslında biz bir Dockerfile, oluşturduğumuz bu Dockerfile'i Dockerboot komutuyla, ki bir sonraki adımda da onu göreceğiz. Bu oluşturulan file'ı Dockerboot dediğimizde bize bir tane restaurant servis konteynerı.
+
+84
+00:17:09,268 --> 00:17:25,768
+Bir sonrakine baktığımızda ise o oluşturulan imajı biz farklı makinelerden erişilebilir halde olmasını istediğimiz için ortak bir rejistri, bütün makinelerin görebileceği bir rejistriye gönderiyoruz. Burada da Duckupush diye bir komutumuz var.
+
+85
+00:17:28,980 --> 00:17:56,860
+DAKIR imajı oluştururken geri geldim. DAKIR imajı oluştururken burada biz oluşturduğumuz imaja burada rejistriye göndermeden önce aslında tekliyoruz. Burada da işte versiyonlama 1.0 versiyonu, 1.1 versiyonu, 1.2 versiyonu gibi göndermeden önce bunları versiyonlamamıza yardımcı olan bir DAKIR tek komutumuz var. Sonrasında bu versiyonladığımız imaja DAKIR puşla rejistriye gönderiyoruz.
+
+86
+00:17:56,980 --> 00:18:06,039
+Az önce bahsetmiştim bu Docker Rejistri dediğimiz şey. Java'daki Mavon Repository'e, işte Node.js'daki NPM'e eşdeğer olarak düşünebiliriz.
+
+87
+00:18:06,799 --> 00:18:18,019
+Ondan sonra bu artık bu yıl taşımasında farklı bir makineden, bu Docker HAP'a erişimimiz olduğu bir yerden Docker Run komutu çalıştırılıyor ve Docker Rejistri'den bu ilgili imaj çekiliyor.
+
+88
+00:18:20,372 --> 00:18:47,372
+Ve Docker filede belirtilen javajar komutu çalıştırılıyor. Bu dediğim gibi tek bir servis ama biz mikro servislerde onlarca servisten bahsediyoruz. Onlarca servisini yönetmek gerekiyor. Bununla alakalı Docker'ın sunmuş olduğu Docker Compose diye bir yaml dosyası var. Bu Docker Compose dosyasını oluşturarak birden fazla konteynerı tek bir komutta indirebiliyoruz, ayağa kaldırabiliyoruz. Bu servisler birbirleriyle...
+
+89
+00:18:48,372 --> 00:19:16,372
+Uyumlu bir şekilde ayağa kalkabiliyor. Çünkü bir servis importu diğer servis importuna ihtiyaç duyabiliyor. Ama bu Docker Compose yapısı ise aslında o makineye özgü oluşturduğumuz bir konfigürasyon ya da bir YAML dosyası. Geliştirme aşamasında yazılımcıların işini kolaylaştırsa da büyük çatlı düşündüğümüzde bir production ortamında Docker Compose ne yazık ki yetersiz kalıyor. Bunun için farklı makine...
+
+90
+00:19:16,372 --> 00:19:22,832
+Makinelerde farklı servisleri ayağa kaldırmak için orkestration'a ihtiyaç duyuluyor.
+
+91
+00:19:22,932 --> 00:19:27,092
+Burada da en bilimlik orkestration aracı Kubernetes oluyor.
+
+92
+00:19:28,532 --> 00:19:34,032
+En sonunda değerlendirme aşamasına geldiğimizde ise bu konteyner bir şekilde servisi,
+
+93
+00:19:34,032 --> 00:19:38,152
+deploy yetiminin bize kazandırdığı avantajlar ve dezavantajlar var.
+
+94
+00:19:38,491 --> 00:19:43,312
+Avantajlar kısmında çalıştırdığımız servisler birbirinden izole bir şekilde çalışıyor.
+
+95
+00:19:44,372 --> 00:19:52,292
+Birbirlerine ihtiyaçları, farklı ihtiyaçları için farklı konteynerler oluşturabiliyoruz. Bu bize bir artı sağlıyor.
+
+96
+00:19:53,032 --> 00:20:00,000
+Çalıştırdığımız fiziksel makinenin kaynak kullanımını düşük ve verimli kullanıyorlar. Bu konteynerleri hızlı bir şekilde...
+
+97
+00:20:00,000 --> 00:20:18,000
+İleri yazıları çok hızlı bir şekilde dağıtabiliyoruz ve çok hızlı bir şekilde taşıyabiliyoruz. Ölçeklenebilirlikten bahsettik. Çok hızlı bir şekilde yeni servis ayağa kaldırabiliyoruz ihtiyaça göre ve modern uygulama gereksinlerine uyum dediğimiz günümüzde olan bu mikroservis yapısını...
+
+98
+00:20:19,347 --> 00:20:40,407
+Hayli uyumlu bir yapısı var. Dezavantajlara geldiğimizde ise sistem yönetimi. Az önce bahsettiğim gibi, az önce tek bir servisin örneğini verdik ama bizim onlarca servisimiz olduğunda bunların yönetimi, bunların konfigür edilmesi ve farklı makinelerde çalıştırılması gerçekten karmaşık bir süreç.
+
+99
+00:20:43,188 --> 00:21:09,828
+Bunun için bilinenler, en bilinik olanlardan küperdes var. Ducker'ın Ducker Swarm diye bir orkestration aracı var. Güvenlik risklerinde yanlış oluşturulmuş bir imaj. Bütün makinelere dağılacağından dolayı ufak da olsa bir güvenlik riskli var. Benim ekleyebileceğim bir şey yok galiba. Teşekkür ediyorum. Sunumumun bu kadardı.
+
+100
+00:21:10,963 --> 00:21:21,443
+Evet, teşekkür ederiz. Barış henüz ortada yok. Gelmedi galiba. [öğrenci] seninle devam edebiliriz.
+
+101
+00:21:23,604 --> 00:21:24,963
+Sesim geliyor mu hocam?
+
+102
+00:21:25,384 --> 00:21:26,023
+Evet, geliyor.
+
+103
+00:21:57,044 --> 00:21:59,044
+Merhaba, ben...
+
+104
+00:22:04,044 --> 00:22:07,044
+...başlıkla ilerleyeceğiz.
+
+105
+00:22:11,796 --> 00:22:18,896
+Seste bir problem var galiba [öğrenci]. Çok böyle bık bık diye geliyor.
+
+106
+00:22:28,468 --> 00:22:31,488
+Herhalde yüksek kalite açtı ekran paylaşımı.
+
+107
+00:22:32,367 --> 00:22:33,627
+Büyük ihtimalle.
+
+108
+00:22:35,248 --> 00:22:39,367
+[öğrenci] ekran paylaşımını biraz daha ufalt istersen.
+
+109
+00:22:39,488 --> 00:22:42,127
+Çünkü sesin gelmiyor da bize şu anda.
+
+110
+00:22:47,763 --> 00:22:54,483
+Şu anda sesim geliyor mu? Nasıl? Evet, şu anda gayet iyi. Tamam, bir saniye tekrar ben dönüyorum.
+
+111
+00:22:58,548 --> 00:23:01,587
+Şu an sesim geliyor mu? Evet, şimdi geliyor.
+
+112
+00:23:08,980 --> 00:23:35,559
+Başka ne diyeyim? Bugün hükücüs servislerde yeniden yapılandırma konusunu ele alacağım. Burada da üç alt başlık vizik karşılığı olacak. Bir tanesi hükücüs servislerde yeniden yapılandırmaya genel bir bakı yaz. Daha sonrasında neden bir manuelite yeniden yapılandıran, neden buna ihtiyaç duyuyor diye konuşacağız. Sonrasında da manuelite bulma diye bir kavram var bu konuyla ilgili. Bu nedir gibi bir konu konuşacağız.
+
+113
+00:23:36,372 --> 00:23:45,912
+Burada bir örneğimiz var aslında. Kitapta da buradan başlamış değilmiş. Miras adında bir kadın, bir tane büyük bir şirketin monotik bir uygulama yönetimden sonunu bir kadın.
+
+114
+00:23:45,912 --> 00:23:56,632
+Bu durumda da mevcut sürümde ilgili mühendis ekip hızlı bir şekilde güvenilir bir şekilde yeni özellikler sunamıyor. Bazı zorluklar yaşıyor. Peki bunu nasıl çözebiliriz?
+
+115
+00:23:57,332 --> 00:24:04,372
+Burada da mikroservislere geçiş bir çözüm olarak öne çıkıyor. Bu bölümde de monotik sistemlerden mikroservislere...
+
+116
+00:24:04,372 --> 00:24:14,451
+Geçişin nasıl değerlendireceği, geçiş sürecinin stratejileri, yazılım değiştirme sorunlarının doğru tespit edilmesi gibi başlıkları tartışacağız.
+
+117
+00:24:15,571 --> 00:24:43,571
+Neden bir monoliti yeniden yapılandıralım? Mikroservis mimarisi az önce de değindiğim gibi birçok avantaj sunuyor. Nedir bakımı, test edilebilirliği ve dağıtımı daha kolay. Dolayısıyla da bu da geliştirmeyi hızlandırıyor ama gel gelelim bir monoliti mikroservise yeniden yapılandırmak büyük bir iş. Bu nedenle mikroservis mimarisinin benimsenmesi, tercih edilmesi genellikle çok önemli bir iş problemi çözüyor.
+
+118
+00:24:43,571 --> 00:24:51,531
+İşletme tarafından destekleniyor. Burada da soru şu aslında, neden bir muhaveti yerden yapılandıralım?
+
+119
+00:24:52,084 --> 00:24:58,403
+Burada da bizi işte monolitik cehennem kavramı karşılıyor. Nedir bu monolitik cehennem?
+
+120
+00:24:58,403 --> 00:25:08,004
+Yazılım geliştirme dünyasındaki karşılığı monolitik mimariye sahip uygulamaların karşı karşıya kaldığı zorlukları ve sorunları tanımıyor aslında.
+
+121
+00:25:08,703 --> 00:25:16,703
+Eğer bir monolitik cehennemdeysek muhtemelen en azından bir tane bir iş problemimiz var demektir.
+
+122
+00:25:16,804 --> 00:25:20,044
+Örneğin işte bir iş etme için ciddi problemlerden biri olan.
+
+123
+00:25:20,084 --> 00:25:47,903
+Yavaş Teslimat. Monolitik yapılarda herhangi bir küçük değişiklik bile tüm uygulamanın yeniden dağıtılmasını gerektiriyor. Bu durumda geliştiricilerin değişiklik yapma hızını yavaşlatıyor haliyle. Bir diğer büyük problemimiz de aslında hatalı yazılım yayınları. Monolitik yapıları test etmesi de zor oluyor. Test edilemeyen yazılımlar hatalarla dolu oluyor. Bu da müşterilerin kaybedilmesine ve gelerin düşmesine yol açıyor. Monolitik uygulamalar tüm parçaları tek bir yerden yönetilir.
+
+124
+00:25:48,084 --> 00:25:54,824
+Bu da uygulamanın farklı bölümlerini ayrı ayrı büyütmeyi zorlaştırıyor ve ölçeklemeyi de verimsiz hale getiriyor.
+
+125
+00:25:54,824 --> 00:25:56,824
+Bu sorunların gerçekten...
+
+126
+00:25:57,683 --> 00:26:09,884
+İlk olarak, mevcut mimarideki sınırları aşıp aşmadığını değerlendirmek önemli. Yavaş teslimat ve hatalı sürümler genellikle kötü bir yazılım geliştirme sürecinin sonucu oluyor.
+
+127
+00:26:09,884 --> 00:26:22,983
+Bununla ilgili de bir örnek olarak, manuel testler yerine otomatik testlere geçiş yapmak geliştirme azını ciddi şekilde arttırabiliyor. Aynı şekilde bazen de ölçeklenebilirlik sorunlarını mimariyi değiştirmeden çözmek mümkün oluyor.
+
+128
+00:26:25,683 --> 00:26:36,483
+Eğer sorunlar devam ederse o zaman mikroservis mimarisine geçişi düşünmemiz öneriliyor. Peki de şimdi bu geçişi nasıl yapacağız? Biraz da ona bakalım.
+
+129
+00:26:40,915 --> 00:26:41,915
+Evet.
+
+130
+00:26:42,291 --> 00:26:46,731
+Burada da monolite boğma veya topaya düşünme diye bir kavram bizi karşılıyor.
+
+131
+00:26:46,731 --> 00:26:58,731
+Bu kavram şu oluyor. Monolite boğma büyük bir uygulamayı parça parça, küçük küçük, bağımsız bölümlere, yani mikroservislere dönüşme yöntemi oluyor.
+
+132
+00:26:59,171 --> 00:27:05,311
+Bu yöntemde yeni özellikler direkt olarak mikroservis olarak geliştiriliyor.
+
+133
+00:27:05,851 --> 00:27:10,291
+Eski sistemin parçaları da ihtiyaca göre parça parça tek tek mikroservislere dönüşüyor.
+
+134
+00:27:10,291 --> 00:27:38,251
+Yani bizim genel bir sistemimiz var zaten. Genel olarak direkt olarak mikroservis yapısıyla geliştiriyoruz. Eski sistemimizin de parçalarında sırayla ihtiyaç oldukça dönüşüyoruz, vakit oldukça. Zamanında da tüm sistem zaten mikroservis yapısına geçiyor ve o büyük yapı, karışık yapı küçülmüş oluyor. Yönetimin avantajları ne oluyor bize? Tüm sistemi bir kere de değiştirmek yerine parça parça geçiş yapıyoruz. Yönetimi daha iyi oluyor. Sistem sürekli çalışabilir durumda oluyor.
+
+135
+00:27:38,291 --> 00:28:01,691
+Biz bir yandan bir şey değiştiriyoruz ama aktif olan bir sistem daha var, işleyen bir sistem daha var. Kesintiler en aza iniyor. Yeni servisi geliştirirken mevcut süreçte mikro servisleri görüştürmesi arasında esneklik salıyor. Yani ben bir yandan projenin bir kısmını geliştirirken diğer yandan başka bir kısmını günüstürmeye devam edebilirim. Bu da beni hiçbir şekilde engellemez.
+
+136
+00:28:02,096 --> 00:28:29,996
+Politik bir uygulamayı mikroservislere dönüştürmek, eski sistemi modern hale getirmek olarak adlandırılıyor aslında. Bunun için de en iyi yaklaşım tüm yapıyı birden değiştirmek, en az önce de anlattığım gibi adım adım ilerlemek oluyor. Hatta bununla ilgili bir yöntem var. Strangler figürlük desen olarak geçiyor. Bu yöntemle yeni mikroservisler ekleniyor ve eski sistemin işlevselliği yavaş yavaş bu servislere taşınıyor. Bu sistemi sürekli çalışır durumda tutarak daha güvenli ve kademeli.
+
+137
+00:28:30,096 --> 00:28:34,836
+İkiş sağlanıyor. Genelde büyük firmalarda zaten bu yılı tercih ediyorlar.
+
+138
+00:28:37,811 --> 00:28:52,491
+Siyerler uygulama deseni eski bir sistemi, az önce söylediğim gibi adamın mikroservislerinin üstüme ifade ediyor. Bu sistemin etrafında yeni mikroservisler geliştirip zamanla monolitik işlevlerini bu servislere taşımak oluyor. Bu sistemde de birkaç aslında strateji bir mevzik.
+
+139
+00:28:52,491 --> 00:29:05,811
+Bu sistemin rahatında. Bir tanesi hızlı değer katma. Bu ifade kademeli geçişin yatırım getirisinin hızlı bir şekilde sağlaması anlıyor. Yani ne demek? Bu monolitik bir sistemi mikroservisleri kademeli olarak...
+
+140
+00:29:05,811 --> 00:29:23,692
+Her yeni geçiş adımı veya bu servis uygulaması her olumlu bir etki yaratabilir. Onun dışında yaygın değişikliklerden kaçınma olarak bir stratejimiz var. Burada da büyük değişiklikler yerine stratejik ve küçük adımlarla geçiş yapmak öneriliyor.
+
+141
+00:29:23,692 --> 00:29:33,351
+Altepe yatırımında da başlangıçta Altepe için büyük harcamlardan kaçınmak, büyük maliyetli işlerden kaçınmak öneriliyor. Bununla da mikroservis deneyimi kazandıkça.
+
+142
+00:29:33,663 --> 00:29:54,303
+Altyapıyı genişletmek mantıklı olarak bakılıyor. Bu yöntemler daha zirkle eski sistemleri yeni yapıya taşımayı sağlıyor. Bu başlık altta da bu öneriliyor. Özetleyecek olursak da, monitik uygulamaların servislere tün üst kürmesi karmaşık ama gerekli bir dönüşüm olarak önümüze çıkıyor.
+
+143
+00:29:54,303 --> 00:30:00,000
+Stengler deseni de kademeli yaklaşımdan, kademeli yaklaşım önerip isteğiyle alır.
+
+144
+00:30:00,000 --> 00:30:14,139
+Erken değer sunumlu olanak kalıyor. Bununla birlikte her zaman çözümü mevcut problemlerin doğru analizine dayanmanın emin olmanız gerekiyor. Mikro serviseye geçmelerinde daha basit çözümlerden emin veriyor.
+
+145
+00:30:14,139 --> 00:30:27,139
+Hemen bir şekilde projeyi baştan sonunda servislere geçirmek hata almak olasılığını çok arttırdığı için diyor ki daha küçük parçalarla ilerleyin. Zaten nihayetinde en bütün de mikro servislere geçmiş olacağız. Böylece...
+
+146
+00:30:28,000 --> 00:30:37,379
+Bu zamandaki, bu süreçteki risklere en az yayınlanmış olacağız diyor. Benim başta bu kadar da teşekkür ederim.
+
+147
+00:30:38,740 --> 00:30:52,000
+Peki biz de teşekkür ediyoruz. Şimdi sıraya baktığımızda [öğrenci] yok. [öğrenci] sana geçebiliriz. Senin sunumunla devam edebiliriz.
+
+148
+00:31:10,195 --> 00:31:11,307
+İmlan
+
+149
+00:31:20,468 --> 00:31:21,548
+[öğrenci] orada mısın?
+
+150
+00:31:36,500 --> 00:31:49,940
+[öğrenci]. Efendim hocam. Sıra sende. Hocam internet gitti geldi o yüzden. Evet çünkü vardın bir yok oldun gibi oldu. Evet hocam hemen paylaşıyorum. Tamam.
+
+151
+00:31:53,395 --> 00:31:55,395
+Şu an ekranım gözüküyor mu hocam?
+
+152
+00:31:55,676 --> 00:31:55,915
+Evet.
+
+153
+00:32:01,855 --> 00:32:03,836
+Merhabalar, ismim [öğrenci] [öğrenci].
+
+154
+00:32:04,736 --> 00:32:10,756
+Bugün sizlere bir monotin sistemin, yani mikroservislere dönüştürülmesi için stratejilerden bahsedeceğim.
+
+155
+00:32:10,875 --> 00:32:16,476
+Aslında biraz arkadaşımız bahsetti, ben biraz daha farklı detaylarla çeşitlendireceğim.
+
+156
+00:32:18,483 --> 00:32:28,963
+Öncelikle monotik mimari ne demekti? Bu yazılım mimarisi tüm birleşenin tek bir kod tabanında bulunduğu ve birbiriyle sıkı bağlı olduğu bir yapı anlamına geliyor.
+
+157
+00:32:29,519 --> 00:32:36,779
+Genellikle bir geliştirme süreci sunması ve başlangıç aşamasında hızlı sonuçlar üretmesi nedeniyle aslında tercih ediliyor.
+
+158
+00:32:37,600 --> 00:32:39,600
+Tek bir dağıtım birimi var.
+
+159
+00:32:40,440 --> 00:32:50,220
+Sıkı bağlı bir şekilde, şu şekilde gördüğü gibi tek bir sıkı bağlı birleşenlerden oluşuyor ve merkezi bir yönetime sahip.
+
+160
+00:32:52,403 --> 00:33:11,663
+Avantajlarından bahsedecek olursak, aslında tercih edilmek sebeplerinden birçok sebep var. Bunlardan ilki basit ve kolay geliştirme olması. Çünkü uygulamanın tüm birleşenleri tek bir kod tabanında bulunuyor ve geliştiricileri tüm sistemi tek bir yerden kontrol etme ve test etme imkanı sağlıyor.
+
+161
+00:33:12,160 --> 00:33:26,360
+Aynı şekilde performans olarak çünkü tüm birleşenler aynı sunucu veya merkezli bir verim sistemine sahip ve bundan ötürü iletişim gecikmelerini en azıza indirildiği için performans olarak da daha iyi durumda.
+
+162
+00:33:27,020 --> 00:33:34,160
+Dağıtım ve bakım kolaylığı tek bir kod tabanı ve uygulama dosyası ile çalışmak dağıtım ve bakımı da tabii ki kolaylaştırıyor.
+
+163
+00:33:34,160 --> 00:33:40,160
+Ve yeni projeler için uygunluğu. Bunun sebebi de küçük ekipler...
+
+164
+00:33:40,160 --> 00:33:46,980
+Geliştirdiği uygulamalarda monolitik yapı zaman ve kaynak tasarrufu sağlıyor ve bundan ötürü yeni projeler için uygundur.
+
+165
+00:33:46,980 --> 00:33:55,080
+Peki mesela bu kadar aslında faydası olmasına rağmen neden mikroservislere geçiş stratejisi var diye soracak olursak aslında.
+
+166
+00:33:55,820 --> 00:34:00,340
+Monolitik yapının dezavantajlarından ötürü böyle bir şey sağlıyor.
+
+167
+00:34:01,020 --> 00:34:07,980
+Başlangıç aşamasında basit hızlı geliştirme sunmasına rağmen uygulama büyümeyle birlikte aslında çeşitli sorunlar...
+
+168
+00:34:08,159 --> 00:34:18,380
+Bunlardan ilki karmaşık ve bağımlılık. Bu bağımlılık bir birleşende yapılan herhangi bir değişikliği diğer birleşenler üzerinde de zincirleme etkiler yaratıyor.
+
+169
+00:34:18,867 --> 00:34:22,488
+Ve bu da tabii ki aslında test sürecini daha da karmaşıklaştırıyor.
+
+170
+00:34:23,148 --> 00:34:28,108
+Ayrıca kod tabanının büyümesiyle birlikte ekipler arasında iş birliği de zorlaşmış oluyor.
+
+171
+00:34:28,108 --> 00:34:32,948
+Ve birden fazla geliştiricinin aynı anda çalışması maalesef ki verimsiz hale geliyor.
+
+172
+00:34:33,788 --> 00:34:43,387
+Ölçeklenebilirlik sorunu da tabii tüm sistemin gereksiz yere ölçeklenmesi hem maliyeti arttırıyor hem de süreçleri daha karmaşık hale getirir.
+
+173
+00:34:43,827 --> 00:34:46,867
+Bakım zorluysa kod tabanının büyümesiyle birlikte aslında.
+
+174
+00:34:46,867 --> 00:34:59,688
+Bakım süreçleri giderek daha karmaşık hale geliyor. Bu dezavantajlarından ötürü aslında mikro servislere geçiş için stratejiler geliştirilmiş. Bu stratejilerden bahsedeceğim.
+
+175
+00:35:00,403 --> 00:35:23,064
+Tabii öncelikle monolitik yapıdan mikrosaristlere doğrudan bir geçiş olmuyor. Çünkü bu geçişin önce bir at yapısını sağlamak gerekiyor. Yani mevcut yapıyı korumak ya da birleşenlerin eklendiğinde ya da dönüştürülmesi çeşitli stratejilerle oluyor. Bu stratejilerden ilk aslında Strangle Fit modeli demekti.
+
+176
+00:35:28,403 --> 00:35:37,104
+Yaratmak yerine yeni işlevlerin mikroservisler olarak eklenmesini ve zamanla eski birleşenlerin mikroservislere dönüştürülmesini sağlıyor.
+
+177
+00:35:37,104 --> 00:35:49,123
+Şöyle bir sisteme sahip. Öncelikle monolitik servislerle mikroservisler bir süre boyunca eş zamanlı yani coexistence bir şekilde yaşarlar.
+
+178
+00:35:56,403 --> 00:36:00,483
+Yani Strangler zaten boğulmak demek. Oradan geliyor isme.
+
+179
+00:36:00,884 --> 00:36:04,224
+Ve boğulduktan sonra da o monotik yapı tamamen kaldırılır.
+
+180
+00:36:04,744 --> 00:36:11,963
+Bu dönüşüm sürecinde de iş ihtiyaçlarından doğan yeni talepler de mikroservis mimari üzerinde ele alınmaya başlanır.
+
+181
+00:36:11,963 --> 00:36:16,864
+Şu şekilde aslında şekilde de gözüktüğü gibi. Yani monotik yapıyla başlanıyor.
+
+182
+00:36:17,264 --> 00:36:21,284
+Ancak eklenenler mikroservisle karşılıklı entegre ediliyor.
+
+183
+00:36:21,744 --> 00:36:24,403
+Sonrasında ise artık mikroservisle tamamen...
+
+184
+00:36:24,403 --> 00:36:35,163
+Tamamen bu işi entegre ettikten sonra yani ele aldıktan sonra monotik yapılan snuggler yani boğma işlemi yapılıp tamamen kaldırılıyor ve sistem mikroservislere dönüştürmüş oluyor.
+
+185
+00:36:36,083 --> 00:36:40,644
+İkinci stratejimiz ise yeni özellikleri servis olarak uygulamadır.
+
+186
+00:36:42,164 --> 00:37:10,003
+Burada da şöyle bir yapı var aslında. Yeni özel mantık kod tabanı yerine mikroservis olarak eklenmesi bir defa sistemin karmaşıklığını daha da azaltıyor ve geliştirme hızını arttırır. Bu entegrasyonda genellikle aslında şu şekilde gidiyor. Ben iki entegrasyon için iki aslında araç kullanmış oluyorum bu mimaride. Bunlardan bir tanesi API geçiti, diğeri ise entegrasyon yapıştırıcı kodu.
+
+187
+00:37:10,164 --> 00:37:11,544
+Kullanıyorum.
+
+188
+00:37:12,052 --> 00:37:20,972
+API bana şunu sağlıyor. İşlersellik taleplerini yeni hizmete yönlendirir ve eski talepleri monolite yönlendirir.
+
+189
+00:37:20,972 --> 00:37:25,892
+Mesela şu şekilde gözüktüğü gibi aslında API ikisi arasında bir köprü görevi görüyor.
+
+190
+00:37:26,672 --> 00:37:32,972
+Monolite yapıdaki yani eski yapılardan yani eski talepleri monoliteye aktarıyor.
+
+191
+00:37:34,132 --> 00:37:40,032
+Yeni gelenleri ise işlersellik talepleri yeni hizmete bu şekilde yeni hizmete yönlendirmiş.
+
+192
+00:37:40,052 --> 00:37:59,292
+Aradaki API bu bağlantıyı sağlıyor. Bir de tabii entegrasyon yapıştırıcı kodu var. Bu da hizmeti monolit ile entegre ediyor. Yani karşılıklı bir entegre halinde. Hizmetin monolit sahibi olduğu verilere erişmesini ve monolit tarafında uygulanan işlevselliği çağırmasını sağlıyor.
+
+193
+00:38:08,052 --> 00:38:21,512
+İletişimleri entegre etmek zor. Onun için öncelikle aslında iletişimi koparmadan yavaş yavaş entegre etmek doğru olan ve bunu da bu şekilde iki entegresyon aracı kullanarak aslında yapmış oluyoruz.
+
+194
+00:38:22,420 --> 00:38:36,260
+Diğer bir kısımsa aslında sunum katmanı. Sunum katmanı aslında şöyle bir avantajı var. Yani birçok katmana sahip ve bu katmanlar arasında iletişim var. Ve bunlar birbiriyle bu bağlantıyı sağlıyor.
+
+195
+00:38:36,260 --> 00:38:50,420
+Yani mesela şekilde gözüküyor. Monoliti iki küçük uygulamaya böleceğimiz doğal bir dikiş aslında. Yani uygulamaya bölüyoruz. Uygulamalardan biri sunum katmanına, diğeri ise iş ve veri erişim bağlantı.
+
+196
+00:38:50,420 --> 00:38:58,440
+Bölme işleminden sonra sunum mantığı uygulaması, iş mantığı uygulamasına uzaktan çağrı yapabiliyor.
+
+197
+00:38:59,891 --> 00:39:09,071
+Bu aslında neyi sağlıyor? Bu bir uygulamayı küçültmeye yönelik bir strateji. Yani sunum katmanı iş mantığı ve veri erişim katmanlarına ayırmak.
+
+198
+00:39:09,291 --> 00:39:19,591
+Tipik bir kurumsal uygulama aşağıdakilerden oluşabilir. Genellikle sunum mantığıyla iş ve veri erişim mantığı arasında temiz bir ayrım vardır.
+
+199
+00:39:20,148 --> 00:39:40,628
+İş katmanı kaba temelli bir apiye sahiptir. Bu api genelde iki küçük uygulamayı böleceğimiz doğal bir dikiş. Amacımız da aslında elimizden geldiğince katmanlar arasında iş birliğini bölmek ama o iletişimi de tamamen kaybetmemektir.
+
+200
+00:39:43,123 --> 00:40:03,983
+Diğeri ise işlevsel yeteneklerin servislere taşınması özelliğidir. Bu da aslında işlevlerin mikroservislere taşınması için monotin küçültmesini sağlar. İş mantığını aslında daha ölçeklenebilir bir şekilde getiriyor kendisi.
+
+201
+00:40:03,983 --> 00:40:09,443
+Bu kısımda şöyle bir şey var.
+
+202
+00:40:10,804 --> 00:40:25,444
+Belli işlevleri bölüp diğer servislerle aslında entegre etmiş oluyorum. Yani yine Monolith servislerle yeni hizmet servisleri var. Bunları birbiriyle entegre etmek için bölümleyip ekleme işlemi yapıyorum.
+
+203
+00:40:25,444 --> 00:40:34,484
+Ve sonrasında ise gerekli durumlarda bunlar arasında gerekli iletişimi sağlamış oluyorum.
+
+204
+00:40:35,827 --> 00:40:41,387
+Tabi şimdi aslında şöyle, mikroservislere geçişte karşılaşılan zorluklar vardır.
+
+205
+00:40:42,127 --> 00:40:46,147
+Yani bunlardan ilki aslında domayın modelini parçalama.
+
+206
+00:40:46,147 --> 00:40:53,487
+Aslında bir hizmeti çıkarmak için onun etki alanı modelini monolitin etki alanı modelinden çıkarmamız gerekiyor.
+
+207
+00:40:54,188 --> 00:41:01,147
+Karşılaştılan sorunlardan biri aksi takdirde hizmet sınırlarını aşacak olan nesne referanslarını ortadan kaldırmaktır.
+
+208
+00:41:02,143 --> 00:41:09,304
+Monolit kadar sınıfların servise taşınması, sınıfların referans vermesi ya da tam tersinin olması mümkündür.
+
+209
+00:41:09,304 --> 00:41:23,263
+Şimdi mesela şekilde gözükecek bir örnek koymuştum. Bu örnekte aslında order servisi çıkardığımızda bunun sonucunda order sınıfının monolitsi restoran sınıfına referans verdi.
+
+210
+00:41:30,132 --> 00:41:42,292
+Orders sınıfının aslında restoranda gözükmesi gerekiyor. Yani diğer türlü aslında ben referans olarak restorandı kaybetmiş oluyorum eğer Orders sınıfını çıkarırsam.
+
+211
+00:41:42,771 --> 00:41:51,871
+Bunun için de tipik olarak bir süreç olduğu için hizmet sınıfını aşan nesne referanslarına sahip olmak aslında bu anlamda çok mantıklı olmuyor.
+
+212
+00:41:51,871 --> 00:42:06,451
+Yani birini çıkardığın zaman diğer sınıfım ya da içindeki nesnem etkileniyorsa onu çözebilmek için aslında için order etki alan sınıfının, restoran sınıfının referansı olması gerekiyor.
+
+213
+00:42:07,699 --> 00:42:23,939
+Yani hocam toparlayacak olursam aslında burada bu sorunu çözmek için şunu yapıyoruz. Toplamlar yani DDL diye bir sistem var toplamlar. Nesne referansları yerine bilincil anahtarları kullanarak birbirlerine referans veriyorlar.
+
+214
+00:42:24,320 --> 00:42:29,880
+Bu order ve restoran sınıflarının toplamlar olarak düşünülebilir. Yani ikisinin toplamı.
+
+215
+00:42:29,880 --> 00:42:41,720
+Ve şu şekilde gözüktüğü gibi ikinci şekilde. Burada order sınıfında restoran referansının birinci anahtar değerini saklayan bir restoran ID alanıyla değiştiriliyor.
+
+216
+00:42:42,340 --> 00:42:50,300
+Ve böylece ben aslında kayıp olarak çözüm bulmuş oluyorum. Yani bu şekilde benim kaybım olmamış oluyor.
+
+217
+00:42:52,052 --> 00:43:10,432
+İkincisi ise veri tabanının yeniden yapılandırılması. Tabii bir etki alanı modelini bölmek, kodu değiştirmekten daha fazlasını içerir. Çünkü etki alanı modelindeki birçok sınıf kalıcıdır. Yani alanları bir veri tabanı şeması ile eşleştirildiği için.
+
+218
+00:43:10,815 --> 00:43:15,815
+Bir hizmeti Monolit'den çıkardığınızda verileri de taşımış oluyorsunuz aslında.
+
+219
+00:43:15,815 --> 00:43:22,815
+Tabloları Monolit'in veri tabanının hizmetinden veri tabanına taşımamız gerekiyor.
+
+220
+00:43:23,123 --> 00:43:29,784
+Ayrıca bir varlığı böldüğümüzde ilgili veri tabanı tablosunu da bölmemiz ve yeni tabloyu hizmete eklememiz gerekiyor.
+
+221
+00:43:29,784 --> 00:43:37,983
+Tablo bölme bir hizmeti çıkarırken aslında monolitte yapmamız gereken değişiklikler kapsamında azaltmak için uyguluyoruz.
+
+222
+00:43:38,603 --> 00:43:51,103
+Yani amacımız aslında yine monolitten taşınma işlemi yaparken aslında arka planda bu kaybı en aza indirmek için bu veri tabanını yeniden yapılandırırken de aslında.
+
+223
+00:43:51,123 --> 00:44:08,824
+Tabloları bölme işlemiyle yapmış oluyoruz. Ve replikasyon ve proksi kullanımı. Bu da geçiş sürecinde V taban erişimi için replikasyon ve saat okunur proksiler kullanılabilir. Bu da V2 tarladığını koruyarak geçiş sürecini aslında kolaylaştırmış oluyor.
+
+224
+00:44:13,076 --> 00:44:18,395
+Bir dakika, şurada. Hocam bu şekilden biraz bahsetmek istiyorum. Onu atlamayın, kusura bakmayın.
+
+225
+00:44:18,395 --> 00:44:20,395
+Burada bu...
+
+226
+00:44:20,851 --> 00:44:31,391
+Bir servis, aslında veriyi kopyalayarak ordur varlığının yapısını korumak, hemen yapılması gereken iş miktarını önemli ölçüde aslında azaltmış oluyor.
+
+227
+00:44:31,991 --> 00:44:37,491
+Çünkü ben burada ne yapmış oluyorum aslında? Var olanı bu tablolara bölmüş oluyorum.
+
+228
+00:44:37,871 --> 00:44:41,871
+Bu da zaman içinde, mesela burada bir teslimatla ilgili olması gerekiyor.
+
+229
+00:44:41,871 --> 00:44:48,692
+Burada teslimatla ilgili ordur varlık alanları veya ordur tablo sütununu kullanan kodu.
+
+230
+00:44:48,851 --> 00:44:52,731
+Bu konuda diğer servise taşıma imkanı sağlıyor.
+
+231
+00:44:53,411 --> 00:44:57,871
+İşte daha da monolitli bir değişiklik hiçbir zaman yapmamız gerekmeyebiliyor.
+
+232
+00:44:58,231 --> 00:45:02,632
+Çünkü aslında servisi var olanı böldüğüm zaman diğer servise de taşımış oluyorum.
+
+233
+00:45:02,632 --> 00:45:10,311
+Bu kod daha sonra bir hizmete çıkarılırsa hizmet aslında diğer servisten de erişim imkanı bana sağlamış oluyor.
+
+234
+00:45:10,900 --> 00:45:17,880
+Bağımlılık yönetiminde ise, işte zaten aslında monolitin en büyük dezavantajından biri de buydu, bağımlılık.
+
+235
+00:45:18,224 --> 00:45:46,224
+Aslında mikroservislere geçişte de bu bağımlılıkların yönetilmesi önemli bir sebep oluyor. Bunları da nasıl yönetiyorum? Aslında bağımsız mikroservisler. Geçiş süredince her bir mikroservisin bağımsız hale getirilmesi, tabii diğer servisi minimum düzeyde etkilemesini hedefliyor. Aynı şekilde apü tabanlı iletişim. Bu da mikroservis arasında iletişim net bir şekilde tanımlanmış ve apüler üzerinde gerçekleştirilmelidir. Bu bağımlılıkların yönetimleri...
+
+236
+00:45:46,224 --> 00:45:49,724
+Sistemi kolaylaştırır ve sistemin bana esnekliğini sağlar.
+
+237
+00:45:50,387 --> 00:46:17,628
+Tabii geçişin birçok faydası var. Bana ne yapıyor? Hızlı geliştirme ve dağıtım imkanı sağlıyor. Çünkü mikrosaytlar bağımsız geliştirilir ve dağıtılır. Daha iyi ölçeklenebilirlik, zaten monolitteki dezavantajlardan biri buydu, ölçeklemeyle ilgiliydi. Yani ihtiyaç duyulan birleşenler ayrı ayrı ölçeklenir. Bu da benim maliyetimi azaltıyor. Artan güvenirlik, çünkü hata izolasyonu daha aza indiriliyor.
+
+238
+00:46:18,387 --> 00:46:37,988
+Daha güvenilirlik bu anlamda artmış oluyor. Esneklik ve teknoloji çeşitliliği de tabii mikroservisler farklı teknolojilerle geliştirilme imkanı sağlıyor. Ve her mikroservis için en uygun araçlar seçilebiliyor. Aslında sonuçta gelecek olursak bir monolitik mikroservise geçiş stratejisi aslında birçok adımdan oluşuyor.
+
+239
+00:46:38,416 --> 00:47:03,856
+Tabii ki faydaları çok çünkü esneklik, ölçeklenebilirlik ve güvenelilikte artış var. Zorluk olarak da teknik ve organizasyonel değişiklik gereksinimi. Bu da tabii bu stratejileri doğru uygulamak, bu taşıma işleminde hata kaybı, veri kaybı ya da iletişim anlamında doğru iletişimi sağlamak önemli. Ve sonuç olarak tabii mikroservis mimarisi büyüyen ve karmaşık projeler için aslında bir gerekliliktir.
+
+240
+00:47:04,403 --> 00:47:08,724
+Doğru stratejiler ve planlamayla dönüşüm süreci maksimum fayda sağlar.
+
+241
+00:47:10,044 --> 00:47:12,624
+Anlatacaklarım bu kadar hocam. Teşekkür ederim.
+
+242
+00:47:19,795 --> 00:47:21,395
+Hocam, sesim geliyor mu?
+
+243
+00:47:24,675 --> 00:47:35,315
+Geliyor, geliyor. Ben mikrofonu açamadım da. Teşekkür ederiz [öğrenci]. Şimdi [öğrenci]'le devam edebiliriz.
+
+244
+00:47:39,251 --> 00:47:41,251
+Açırma yapayız.
+
+245
+00:48:00,467 --> 00:48:02,467
+Evet.
+
+246
+00:48:22,900 --> 00:48:48,659
+Yazılım Mimarisi kanunlarına koydum. Görken hoşuma gitti. Hem de problemleri yorumlarken faydalı oldu bana. Birincisi, yazılım Mimarisi'ndeki her şey bir trade-off'tur. Trade-off olduğunu fark etmediysen daha fark etmemiştirdir demektir. İkinci kanunda. Neden, nasıldan daha önemlidir. Konuya geçeyim.
+
+247
+00:48:49,427 --> 00:49:11,487
+Zaten arkadaşlar önceki sunumlar da anlattı. Yazılım mikroservisiyle Monolith aynen bu bulunabiliyor. Bunlar hangi durumlarda gerçekleşebilir? Ya yazılıma yeni bir özellik eklenmek istendiğinde ya da Monolith'in performansı düşündüğünde sorumluluklarını azaltarak bunu mikroservislere aktarabiliriz. Bu da performansı arttırabilir.
+
+248
+00:49:16,052 --> 00:49:26,032
+Servisle Monolith'in, mikroservisle Monolith arasındaki iletişim ve kaybolan veri tutarlılığını nasıl korunacağı yerine durulmuş.
+
+249
+00:49:27,532 --> 00:49:29,192
+İlk önce iletişimle başlıyorum.
+
+250
+00:49:31,231 --> 00:49:35,771
+İki tane ayrılan komponent var. Tabii ki bunlar haberleşmesi gerekecek.
+
+251
+00:49:36,692 --> 00:49:39,871
+Kitapta bu iletişimi Integration Glue olarak adlandırmış.
+
+252
+00:49:40,467 --> 00:49:46,687
+Ama Google'dan arayınca böyle bir terim çıkmıyor. Demek ki kabul edilmemiş diye yorumladım.
+
+253
+00:49:51,607 --> 00:49:56,127
+Zaten iletişim yöntemlerinde anlatıldı galiba önceki sunumlarda.
+
+254
+00:49:57,367 --> 00:49:58,607
+Dizayn adımlarına geçiyorum.
+
+255
+00:50:00,767 --> 00:50:04,667
+Hangi API'lerin kullanılacağına karar verilmesi gerekiyor ilk önce.
+
+256
+00:50:06,483 --> 00:50:15,483
+OOP'deki gibi servislerin birbirlerinin iç mantığını bilmesine gerek yok. Bu yüzden Encapsulation yapılabilir. Yapılması da faydalı olur.
+
+257
+00:50:15,483 --> 00:50:24,483
+En son olarak da Entegrasyon Stili ve IPSC mekanizması seçimi gerçekleştiriliyor dizaynda.
+
+258
+00:50:24,483 --> 00:50:29,228
+Kitaptaki örneği koydum buraya, onun üzerinden gidelim.
+
+259
+00:50:29,811 --> 00:50:35,851
+FotoGo Monolith'inden geçmiş servis, geçmiş sipariş servisi ayrılmış.
+
+260
+00:50:37,211 --> 00:50:39,331
+Burada da REST API kullanılmış.
+
+261
+00:50:40,311 --> 00:50:43,692
+Buradaki mikroservis veri tabanından okuma yapıyor.
+
+262
+00:50:44,052 --> 00:50:45,291
+Monolith'in veri tabanından.
+
+263
+00:50:46,771 --> 00:51:09,892
+Burada aklımıza gelmesi gereken tasarım deseni, UKRS, Command & Response, Segregation. Çünkü çok fazla okuma yapılırsa burada, mononetim meşgul edebilir. Öyle bir dezavantajı var. Rest iletişim deseni de kolay geliştirilebiliyor. Öyle bir avantajı var. Ama performans olarak daha iyi alternatifleri de var.
+
+264
+00:51:11,188 --> 00:51:31,307
+Ve burada bir senkron iletişim var. O da performans açısından en iyi yöntem değil. Kitapta daha alternatif bir dizaynlarım vermiş örnek olarak. Burada bir haber mesaj kuyruğu var. Aynı zamanda da CKRS desen kullanmış.
+
+265
+00:51:32,980 --> 00:51:55,460
+Bunun da getirdiği ek sorumluluklar var. Bu monolit veritabanıyla servis veritabanının senkronize edilmesi de bir şey. Ayrıca yük. Onu da bu mesaj kuyruğu aracılığıyla monolit eventleri buraya yazıyor. O şekilde mikroservis veritabanı güncel oluyor monolit veritabanıyla.
+
+266
+00:51:58,228 --> 00:52:10,947
+Burada şey, lack of isolation durumunda ortaya çıkıyor. Mesela SQL veritabanları asit ilkelerini sağlıyor. Ama sagalar mesela ACD prensiplerini sağlıyor sadece.
+
+267
+00:52:12,067 --> 00:52:18,387
+Burada bir yazma işlemi yapıldığında, buradaki view'da...
+
+268
+00:52:18,867 --> 00:52:40,188
+İşlemin tekrar edilmesi, kopyalanmasına kadar geçen bir boşluklar. Orada bir izolasyon eksikliği gerçekleşiyor. Başka dezavantajlar da eski programlama dilleriyle, kütüphanelerle yazılmış olabilir. Ekipte de onları bilen kimse olmayabilir. Bunlar da biz olduk. Bu sistemi uygulamak.
+
+269
+00:52:43,228 --> 00:52:45,088
+Diğer bir konuya geçiyorum.
+
+270
+00:52:46,036 --> 00:53:01,756
+Bu durumda ne yapabiliriz? Yazılım mühendisi dersi alanlar bilir zaten. Legacy sistem yöntemini görmüştür.
+
+271
+00:53:04,179 --> 00:53:30,239
+O konuları detaylı anlatmayacağım. İki yöntem var. Ya monolity konflik değiştireceğiz, domen modelini baştan yazacağız. Ya da varolunu değiştireceğiz. Burada bir alternatif var. İkisini aynı anda kullanmak. Hem yeni domen modeli kullanıyor hem eski domen modeli aynı anda kullanıyor. Peki bunu nasıl yapıyor? Anti-corruption layer deseni denilen bir yöntem kullanıyor.
+
+272
+00:53:30,804 --> 00:53:52,804
+Eski Domain Modeli, yine Monolith uygulamada hala sürdürülüyor. Çünkü çok tehlikeli bir yer değiştirmek Monolith'de. Yeni servisler ise yeni Domain Modeli'ni kullanıyor. Peki bu aradaki geçişler nasıl sağlanıyor? ACL deseniyle sağlanıyor. Gördüğünüz üzere şurada katmanlar var.
+
+273
+00:53:53,300 --> 00:54:18,140
+Eski şey, yeni domen modelinden, eski domen modeline dönüşüm gerçekleştiriliyor burada. Burada önemli bir detay da dikkat ettiyseniz yeni servise konmuş bu katman. Eski şey, Monolith'te yok çünkü. Burası daha az riskli, daha bilinen teknolojiler olduğu için şeye koymak, mikro servise koymak daha mantıklı. Biraz da şey OOP'deki adaptör destekine benziyor.
+
+274
+00:54:20,307 --> 00:54:28,307
+Şöyle bir ifade geçmiş kitapta, eski domen modelinin yeni domen modelini kirletmesinin önüne geçiyor diye belirtmiş.
+
+275
+00:54:30,307 --> 00:54:36,307
+Yine aradaki iletişimler farklı şekillerde olabilir. İletişim yönünde farklı olabilir.
+
+276
+00:54:41,012 --> 00:54:51,252
+Burada zaten bahsettiğim şeyler var. Uyuk teknolojinin eski olması falan. O trade-off'ları konuştuğu şey, bahsettiğim trade-off'ları burada yazdım.
+
+277
+00:54:53,292 --> 00:55:00,732
+Bundan sonra veri tutarlarına geçeceğim. Geçmeden önce de hatırlatmak istiyorum. Saga terminolojileri var.
+
+278
+00:55:01,752 --> 00:55:05,852
+Şu ser olanları hatırlatmak istiyorum. Countermejör'i nedir mesela?
+
+279
+00:55:06,771 --> 00:55:20,512
+Sagalar arasındaki izolasyon eksikliğini, yönetmek için kullanılan şeyler, takip etmek için kullanılan yöntemler. Semantic Log, zaten veri tabanlarında da var şey. Read, Write Log.
+
+280
+00:55:22,612 --> 00:55:47,092
+Pivot Transaction da önemli. Bu Sagan'ın son noktası nerede? Son noktası oluyor. Buraya geldikten sonra geri dönüş olmuyor. Compensating Transaction yapılmıyor. Başarısız olma durumu olmadığı için geri alma durumu da oluyor. Bu da önemli bir nokta bu konuda. Sunumun başında söylediğim gibi ACD prensatörü sağlıyor.
+
+281
+00:55:50,771 --> 00:56:02,371
+Kitapta şöyle örnekler vermiş. Yani mikrosarvist extraction sırası bize compensating transaction yapmamamızı sağlayabiliyor.
+
+282
+00:56:02,632 --> 00:56:10,192
+Mikrosarvist'e çıkarma sıramızı modelikten bu leg of isolation yönetmede içimizi kolaylaştırabiliyor.
+
+283
+00:56:11,411 --> 00:56:14,791
+Burada da örneği var. Mesela ne yapmış orada?
+
+284
+00:56:15,668 --> 00:56:41,708
+Evet, mutfak servisini almış mesela. Monolith'ten. İlk başta burada da şeyleri de görüyoruz. Semantic dokları da görüyoruz. April Pending, Counter Measurer'ları da görüyoruz. Monolith'ten. Veritabanına bu field yazılmış. Sonra Kitchen'ın veri servisine gitmiş. Orada da bir tane Pending yazılmış. O şekilde gidiyor.
+
+285
+00:56:42,963 --> 00:56:49,963
+Sonraki örneklerde de bu compensating transaction'ın önüne geçmeyi gösteriyor.
+
+286
+00:56:55,155 --> 00:57:02,576
+Sonraki adım başarısız olmuyorsa, Compensating Transaction yapmaya da gerek yok. Onu anlamış.
+
+287
+00:57:04,875 --> 00:57:09,235
+En son olarak da bu konuda yetkilendirme ve kimlik doğrulama üzerinde de olmuş.
+
+288
+00:57:09,755 --> 00:57:17,435
+Monolith uygulamasının kullandığı yetkilendirme ve kimlik doğrulama yöntemleri microservice de farklı olabilir.
+
+289
+00:57:17,780 --> 00:57:24,900
+Aynı anda bunların nasıl yönetileceğini doğrunak üzerinden göstermiş. Bunu API Gateway ile yapmış.
+
+290
+00:57:26,340 --> 00:57:34,880
+Yönetimi, Monolith ve MikroService'ın kullandığı farklı yetkilendirme ve kimlik doğrulama yöntemlerini API Gateway ile toplamış.
+
+291
+00:57:34,880 --> 00:57:44,099
+Monolith'a hiç karışmadan bu Gateway ile yetkilendirme ve kimlik doğrulama yönetimini gerçekleştirmiş.
+
+292
+00:57:45,396 --> 00:57:47,296
+Benim sunumum bu kadar. Teşekkürler.
+
+293
+00:57:50,436 --> 00:57:52,076
+Teşekkür ederiz [öğrenci].
+
+294
+00:57:54,036 --> 00:57:58,836
+Şimdi senden sonra [öğrenci] vardı ama o da yok.
+
+295
+00:58:00,976 --> 00:58:06,216
+Yani bu haftada yine iki sunum eksik kaldı. Barış yok, [öğrenci] yok.
+
+296
+00:58:08,356 --> 00:58:11,836
+O zaman [öğrenci] sen geçen haftadaki sunumunu...
+
+297
+00:58:14,068 --> 00:58:16,947
+Tamam. Böyle tamamlayalım.
+
+298
+00:58:32,307 --> 00:58:37,627
+Ben bugün komponent testlerin geliştirilmesi ile alakalı bir sunumu yapacağım.
+
+299
+00:58:39,127 --> 00:58:44,667
+Komponent testler, bir yazılımın bileşeninin izole olarak test edilmesini sağlayan yöntemdir.
+
+300
+00:58:45,607 --> 00:58:53,947
+Buradaki amaç, bir bileşenin diş apisini kullanarak işlevselliğini ve doğru çalışmasını aslında doğrulamak, verifi etmek.
+
+301
+00:58:57,268 --> 00:59:04,268
+Buradaki üçgenle integration testleri ve end to end testleri arasında bulunur aslında. Bunların bir tamamlayıcısı olarak nitelendiriliyor.
+
+302
+00:59:05,268 --> 00:59:18,268
+Bu testler bileşinin bağımlılıklarını simüle eden stop veya mock nesnelerini kullanarak yapılıyor. Sonra anlatacağım bunları.
+
+303
+00:59:18,268 --> 00:59:24,268
+Aslında genel anlamda bileşinin bağımlılıklarını simüle etmek amacımız.
+
+304
+00:59:24,596 --> 00:59:38,475
+Stop nedir? Stop, test edilen kodun bağımlı olduğu bir birleşiğinin yerine kullanılan, önceden tanımlı bir davranış sergilen bir test çiftidir. Stop, yalnızca test edilen kodun ihtiyaç duyduğu sabit bir çıktı döndürmekle ilgilidir.
+
+305
+00:59:39,576 --> 00:59:46,615
+Aslında Stop gerekli veriyi sağlar bize.
+
+306
+00:59:47,603 --> 01:00:01,563
+Önceden tanımlı cevaplar döner. Stab belirli girdilerek karşılık sabit bir cevap döner. Dinamik bir davranış göstermez. Dış bağımlılıkları izole eder. Test edilen kod gerçek birleşenle çalışmak yerine stabile çalışır.
+
+307
+01:00:01,563 --> 01:00:09,023
+Az sonra daha detaylı konuşacağız. Çağrıları kaydetmez. Aslında daha önce de konuştuğumuz gibi.
+
+308
+01:00:10,063 --> 01:00:16,403
+Test edilen kodun belirli bir fonksiyon çalıştırması için gerekli bir bileşeni simüle etmek istediğimizde kullanırız.
+
+309
+01:00:17,503 --> 01:00:25,124
+Örnek vermek gerekirse bir API'de veri çeken bir fonksiyonu test etmek için gerçek API'ye ihtiyaç duymadan stop kullanabilirsiniz.
+
+310
+01:00:28,563 --> 01:00:37,163
+Mock'da bir bileşeni simüle ederken aynı zamanda kendisine yapılan çağrıları kaydeden ve bu çağrıların analizini sağlayan test çiftidir.
+
+311
+01:00:38,323 --> 01:00:41,923
+Dış bileşenle yapılan etkileşimlerin doğruluğunu kontrol etmek için kullanılır.
+
+312
+01:00:44,303 --> 01:00:45,263
+Dediğim gibi.
+
+313
+01:00:46,132 --> 01:00:56,891
+Çağrıları kaydediyor. Örnek vermek gerekirse de, bir e-posta gönderim fonksiyonunun doğru parametrelerle çağrıldığını test etmek için mock kullanabilirsiniz.
+
+314
+01:00:57,951 --> 01:01:01,612
+Tekrar etmek için stop gerekli test verilerini sağlamak için kullanılır.
+
+315
+01:01:01,911 --> 01:01:07,251
+Mock test edilen kodun dış birleşenlerle doğru şekilde etkilişim kurduğunu kontrol etmek için kullanılır.
+
+316
+01:01:13,492 --> 01:01:20,832
+Bir yazılım ürününün belirlenen gereksinimleri ve kullanıcı ihtiyaçlarını karşıladığını doğrulamak için yapılan son aşama testlerdir.
+
+317
+01:01:21,252 --> 01:01:28,292
+Bu testler genellikle müşteri veya son kullanıcı tarafından onaylanmış gereksinimlere dayalı olarak gerçekleştirilir.
+
+318
+01:01:28,292 --> 01:01:36,092
+Test senaryoları ve kullanım durumları aslında kullanıcıya göre belirlenir.
+
+319
+01:01:36,596 --> 01:01:47,596
+Amaç, en son olarak yazılım teslimatı hazır olduğunu, end-to-end testlere geçirebileceğini sağladık.
+
+320
+01:01:47,596 --> 01:02:01,579
+Burada GERKIN kullanıyoruz. GERKIN ile test yazılımı, GERKIN yazılım testlerinde kullanılan behavior-driven development çerçevesinde testlerinden tanımlamak için kullanılan bir DSL'dir.
+
+321
+01:02:01,715 --> 01:02:03,915
+Domeni spesifikten gösterir.
+
+322
+01:02:03,915 --> 01:02:11,915
+Gerkin kullanıcı hikayelerini ve test senaryoları hem teknik hem de teknik olmayan ekiplerin anlayabileceği bir biçimde yazmayı olarak tanır.
+
+323
+01:02:11,915 --> 01:02:18,915
+Aslında burada teknik olmayan ekiplerin anlayabileceği bir biçimde yazmayı olarak tanır diyebiliriz.
+
+324
+01:02:18,915 --> 01:02:23,715
+Teknik olmayan ekiplerin bilgi yazılımın nasıl davranılması gerektiğini anlamasını sağlar.
+
+325
+01:02:23,715 --> 01:02:28,315
+Test senaryoları insan okunabilir bir dilde yazmak için kullanılır.
+
+326
+01:02:28,916 --> 01:02:34,996
+Hocam bu arada kusura bakmayın. Benden habersiz arkada bir sayaç akıyor. Onu ayarlayamadım.
+
+327
+01:02:35,936 --> 01:02:37,675
+O yüzden bir ileri bir geri.
+
+328
+01:02:37,675 --> 01:02:42,476
+Evet evet bir ileri geri o yüzden oluyor. Söyleyeyim. Tekrar kusura bakmayın.
+
+329
+01:02:43,296 --> 01:02:47,115
+Given, When ve Then olarak kullanılıyor aslında.
+
+330
+01:02:48,556 --> 01:02:55,756
+Given teslim başlangıç durumunu aslında hangi koşullarda başlayacağını veren.
+
+331
+01:02:56,179 --> 01:03:05,299
+Ben site sırasında gerçekleşen eylemi ifade ediyor. Ben de aslında output yani bu inputlarla bu
+
+332
+01:03:05,811 --> 01:03:13,011
+eylem yani function gerçekleştikten sonra çıkan outputu yani beklenen sonucu belirtiyor.
+
+333
+01:03:13,011 --> 01:03:21,172
+Burada Cucumber kullanarak aslında gerkini biz kod olarak çeviriyoruz.
+
+334
+01:03:21,172 --> 01:03:26,612
+Burada örnekte gördüğünüz gibi bir senaryo verilmiş.
+
+335
+01:03:26,931 --> 01:03:48,331
+Bu kitaptan aldığım bir örnek bu arada. Bir senaryo verilmiş. Food to go uygulaması için aslında senaryonun başında bir valid cash consumer, sonrasında valid bir kredi kartı, işte restoranın siparişi kabul ettiğini, yani bu şartları öncelikle belirliyoruz.
+
+336
+01:03:48,331 --> 01:03:52,331
+Tekrardan özür dilerim. Bu şartları belirliyoruz. Sonrasında...
+
+337
+01:03:53,396 --> 01:04:16,196
+Bir çıkım Vindal'ı sipariş edildiği durumda aslında alt tarafta bu siparişin onaylandığı bu durumlar gerçekleşiyorsa ve sonrasında da yayınlanabileceği siparişin kabul edildiğinin bunun da yan tarafta aslında bir metod class olarak aslında tanımlanmasını görüyoruz.
+
+338
+01:04:19,380 --> 01:04:47,380
+Şimdi komponent test tasarımına geçelim. Gerkin kullanmanız gerektiğini, gerkin kullanarak yapıldığını belirtmiştik. Aslında gerkin kullanarak istenen davranışı nasıl belirleneceği ve Google'un olarak da nasıl yürütüleceğini bir önceki site de gösterdim. Bir bileşenin testi gerkin senaryodunu yürütmeden önce order service yani bizim hizmetimizi çalıştırmalı ve hizmetin bağımlılıklarını ayarlamalıdır. Order service'i izole bir şekilde test etmeniz gerekir. Bu nedenle...
+
+339
+01:04:47,380 --> 01:04:56,220
+Bir veri tabanı ve mesajlaşma altyapısı kurulmaktadır.
+
+340
+01:04:56,220 --> 01:05:00,920
+Az sonra göstereceğim genel bir şeyini.
+
+341
+01:05:06,260 --> 01:05:09,800
+Bir veri tabanı ve mesajlaşma altyapısı kurulması gerekir.
+
+342
+01:05:11,347 --> 01:05:25,327
+Gerçekçiliği hız ve basitlikle birleştiren birkaç farklı seçenek var. Aslında iki seçenek var. Bunlardan birincisi in-process komponent testler. Hizmetin bağımlıklarını bellekçi stop ve mak nesnede değiştirerek aynı JVM içinde çalışılmasını ifade eder.
+
+343
+01:05:37,972 --> 01:05:42,052
+HSQL gibi bağımlılıklar kullanılabilir.
+
+344
+01:05:42,532 --> 01:05:46,432
+In-process component testler yazılması daha basit ve daha hızlıdır.
+
+345
+01:05:46,572 --> 01:05:55,212
+Ancak dağıtabilir hizmeti test etmeme, yani son release'i, product'ı bir şekilde test etmeme dezavantajına sahiptir.
+
+346
+01:05:55,312 --> 01:05:56,592
+Çünkü in-process'tir yani.
+
+347
+01:05:57,752 --> 01:06:05,132
+Out-of-process component testler aslında in-process'lere göre daha yavaş ve daha kırılganlardır.
+
+348
+01:06:05,132 --> 01:06:05,972
+Karmaşık bir yapı.
+
+349
+01:06:05,972 --> 01:06:19,372
+Yapıları vardır. Ama daha gerçekçi ve test kapsamını aslında daha yüksek tutan bir şeydir. Hizmetin production'ıydı. Yani üretime artık ürün haline hazır olduğu.
+
+350
+01:06:19,827 --> 01:06:32,827
+Ducker Container imajları kullanılarak hizmetin bağımsız bir süreçte çalıştırmasının yaygın bir yöntemdir. Gerçek altyapı servisleri kullanırken uygulama servisi bağımlılıkları stabile değiştirilir.
+
+351
+01:06:32,827 --> 01:06:39,827
+Sipariş hizmeti, Food.co Order Service testi için MySQL ve Apache Kafka.
+
+352
+01:06:40,788 --> 01:06:47,587
+Gerçek altyapılar ancak müşteri hizmeti ve muhasebe hizmeti gibi bağımlılıklar olarak yapılandırılır.
+
+353
+01:06:48,087 --> 01:06:53,307
+Ağatopro, az önce söylemiştim, test kapsamını arttırır ancak daha yavaş ve kırılgan olur.
+
+354
+01:06:55,827 --> 01:07:02,827
+Konfond testlerinin yazılması adına geçelim. Aslında genel steplerden bahsettik ama bir de uygulamasından bahsedelim.
+
+355
+01:07:02,827 --> 01:07:17,827
+Aslında sağ tarafta görüldüğü gibi bir Google Options açıklaması olması gerekiyor. Çünkü gerkin özellikli olan test senörü nerede olduğunu belirtmemiz gerekiyor.
+
+356
+01:07:23,027 --> 01:07:31,027
+At Run With Cucumber Class. Aslında sağ taraftaki Cucumber başlangıcını gösteriyor.
+
+357
+01:07:31,027 --> 01:07:38,027
+Ancak tipik bir G-Unit tabanlı test aksine herhangi bir test yöntemi doldurulmuyor.
+
+358
+01:07:38,027 --> 01:07:44,027
+Bunun yerine gerkin özelliklerini okuyarak testleri kendi tanımlıyor ve bunları yürütebilmek için
+
+359
+01:07:44,027 --> 01:07:48,027
+Order Service Component Test Step Definition sınıfını kullanıyor.
+
+360
+01:07:50,931 --> 01:08:03,591
+Şimdi burada genel anlamda aslında kompon testlerin nasıl çalıştığıyla alakalı bir genel bir mimarisel anlamda bir görüntü var.
+
+361
+01:08:04,851 --> 01:08:21,172
+Burada aslında ilk başta, burada pembeyle belirtilen, yukarıda gerkinle verilen senaryonun Gumber'la çevrilmesi ve ondan sonra Order Service Component Test tarafından okunması.
+
+362
+01:08:28,212 --> 01:08:34,212
+Bunların simüle edilmesi. Burada daha detaylı az sonra bahsedeceğiz.
+
+363
+01:08:34,212 --> 01:08:39,212
+Order Service için birleşen testleri, gerkin kabul testi kullanılarak yazılan testi harcaylanıp,
+
+364
+01:08:39,212 --> 01:08:42,212
+Google test çerçevesinde kullanılır. Bunu da söyledik.
+
+365
+01:08:42,212 --> 01:08:48,940
+Testler Apache Kafka ve MySQL gibi altyap hizmetleri ile beraber Order Service çalışmak için Docker kullanılır.
+
+366
+01:08:49,043 --> 01:09:02,804
+Sağ tarafta Order Service Company Test Definition sınıfı testinin kalbidir diyebiliriz. Tam olarak böyle ifade geçen şeyde. Bu sınıf Order Service'in birleşen testini her adamın tanımlar.
+
+367
+01:09:02,804 --> 01:09:12,043
+Bu yöntem aslında Saga katılımcılığına taslaklarını yapılandıran bir test yardımcısı olan Saga Partition Step Manager sınıfını kullanır.
+
+368
+01:09:12,043 --> 01:09:17,043
+Burada örnekle kredi kartı yöntemi, muhasebe hizmeti.
+
+369
+01:09:17,043 --> 01:09:29,043
+Tatsağını belirten kredi kartına bağlı olarak bir başarı veya başarısızlık yanıtıyla yani valid veya değil yanıt verecek şekilde yapılandırılır.
+
+370
+01:09:31,043 --> 01:09:33,644
+Aslında devamında da işte çıkın.
+
+371
+01:09:33,984 --> 01:09:46,984
+İlk verdiğimiz örnekte çıkın Vindalo adımını tamamlayan Place Order yöntemini gösterir. Sipariş oluşturmak için sipariş hizmeti RESTAPİS'ini çağırır ve yanıtı sonraki bir adımda doğrulamak için kaydeder.
+
+372
+01:09:46,984 --> 01:09:59,984
+Base URL Yardım Yöntemi sipariş hizmetinin URL'sini döndürür. Testlerin çalıştırmasıyla alakalı son bir bilgi vermek istiyorum. Testler Order Servis Oğulamalıklarını çalıştırmak için...
+
+373
+01:10:00,000 --> 01:10:10,000
+Duker Kompos, bir dizi konteyneri tanımlayabileceğimiz ve bunları bir birim olarak başlatıp durdurabileceğimiz son derece kullanışlı bir araçtır.
+
+374
+01:10:10,000 --> 01:10:20,000
+Food2Go uygulamasının kök dizinin de tüm hizmetler için konteyner ve alt yapı hizmetlerini tanımlayan bir Duker Kompos dosyası vardır.
+
+375
+01:10:20,000 --> 01:10:27,000
+Testleri yürütmeden önce konteyner ile çalıştırmak ve sonrasında konteyneri durmak için Gradle...
+
+376
+01:10:27,988 --> 01:10:29,208
+Attı beni.
+
+377
+01:10:31,068 --> 01:10:32,568
+Hızlı bir şekilde sonra geleyim.
+
+378
+01:10:40,020 --> 01:10:55,140
+Gradle Ducker Compose eklentisini kullanıyoruz. Aslında normalde Gradle Lab dizinin o şekilde çalıştık ama bunun yerine test kodunu ayrı bir dizine koyacağız. Onu da aslında örnekte vermiştim.
+
+379
+01:10:57,587 --> 01:11:01,587
+Gradle Component Test olarak ayrı bir dizinden çalıştırıyor.
+
+380
+01:11:01,587 --> 01:11:09,587
+Gradle yapılandırması önceki testi iki şey yapar. Öncelikle birleşen testlerinden önce...
+
+381
+01:11:09,587 --> 01:11:11,587
+Bunu bilmiyorum.
+
+382
+01:11:17,171 --> 01:11:27,671
+Birleşen testlerinden önce çalışacak ve Order Service'e bağımlı olması için yapılandığı alt tıklı hizmetleri ile birlikte başlatacak şekilde Gradle Docker Compose eklentisini yapılandırıyor.
+
+383
+01:11:27,671 --> 01:11:35,971
+İkinci olarak Docker Imagen'in gerektirdiği jar dosyasının önce değerlenmesi için component testi SME'ye bağımlı olacak şekilde yapılandırıyor.
+
+384
+01:11:35,971 --> 01:11:43,671
+Bu birleşen testleri yanındaki konutlarla çalışıyoruz aslında. Benim konum bu kadardı. Teşekkür ederim beni dinlediğiniz için.
+
+385
+01:11:45,876 --> 01:12:00,876
+Evet, [öğrenci]'a teşekkür ediyoruz. Totalde üç arkadaşımız ismini yazdı ama sunum yapmadı. Son iki hafta içinde oldu bunlar da. Bunun dışında genel olarak mikroservis mimarisinin...
+
+386
+01:12:01,427 --> 01:12:06,288
+Ana hatlarıyla, değişik yönleriyle, paternleriyle incelemesini tamamlamış olduk.
+
+387
+01:12:07,248 --> 01:12:16,847
+Eğer bu üç arkadaştan önümüzdeki hafta bana iletişime geçeni olursa, tanıdığınız varsa bilgi olsun, derste de kaydı kalmış olsun diye söylüyorum.
+
+388
+01:12:18,008 --> 01:12:21,628
+Haftaya telafi mahiyetinde onları tekrar dinleriz.
+
+389
+01:12:22,355 --> 01:12:44,715
+Eğer olmazsa zaten haftaya özel olarak bir ders yapmayacağız. 5 Ocak akşamına kadar bu seminerlerin sunumu ve raporlarını online yıldızdaki ödeve yüklemeyi unutmayın. Tekrar hatırlatmış olayım. Yükleyenler var ama yüklemeyenler de var haliyle. 5 Ocak akşamına kadar süreniz var.
+
+390
+01:12:48,783 --> 01:13:07,763
+Proje şeklinde biliyorsunuz finali yapıyoruz. Onu da ilgili açtığım ödeve yükleyeceksiniz. İkinci haftaya kadar 23 Ocak'ta yanlış hatırlamıyorsam süreniz var. Bu şekilde dönemi de tamamlamış olacağız. Varsa sorunuz alabilirim.
+
+391
+01:13:15,859 --> 01:13:22,199
+Okey. Kimsenin sorusu olmadığına göre bu haftalık dersi kapatabiliriz.
+
+392
+01:13:22,559 --> 01:13:27,760
+Şimdi tekrardan hepinize sağlıklı, mutlu, başarılı bir 2025 diliyorum.
+
+393
+01:13:30,539 --> 01:13:34,199
+Teşekkürler hocam.
+
+394
+01:13:34,539 --> 01:13:36,519
+İyi çalışmalar diliyorum. Hoşçakalın.
+
+395
+01:13:38,519 --> 01:13:39,319
+Görüşürüz.

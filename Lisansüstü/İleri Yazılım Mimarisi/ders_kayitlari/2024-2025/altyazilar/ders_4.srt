@@ -1,0 +1,1927 @@
+1
+00:00:20,435 --> 00:00:25,295
+Günaydın arkadaşlar. Katılımımız az. Biraz bekleyelim.
+
+2
+00:00:26,056 --> 00:00:26,916
+Günaydın hocam.
+
+3
+00:01:27,091 --> 00:01:51,652
+Bugünkü sunumlar [öğrenci]'la başlayacak. İlk olarak CQRS paterniyle ilgili iki sunum var. Sonrasında API Gateway, yine iki sunum. Sonra da test stratejileri, mikro servislerdeki test stratejilerle ilgili üç sunum var. Biraz daha bekleyelim. [öğrenci] de geldi, katıldı.
+
+4
+00:01:57,652 --> 00:01:58,972
+[öğrenci], günaydın.
+
+5
+00:02:00,152 --> 00:02:02,252
+Günaydın hocam, sesini alabiliyor musunuz?
+
+6
+00:02:03,152 --> 00:02:05,852
+Evet, geliyor. Biraz kısık ama geliyor bana.
+
+7
+00:02:08,932 --> 00:02:13,192
+Eğer hazırsan senin sunumunla bu haftaya başlayabiliriz.
+
+8
+00:02:15,831 --> 00:02:18,372
+Tamamdır hocam, ben ekran parçamı yapmaya çalışıyorum.
+
+9
+00:02:27,156 --> 00:02:28,795
+Şu anda ekranımı görebiliyor musunuz?
+
+10
+00:02:35,443 --> 00:02:37,443
+Şu anda ekranı net olarak gözüküyor mu Hocam?
+
+11
+00:02:38,943 --> 00:02:39,943
+Bizde gözüküyor.
+
+12
+00:02:39,943 --> 00:02:41,443
+Evet, gözüküyor.
+
+13
+00:02:42,443 --> 00:02:43,443
+Tamamdır.
+
+14
+00:02:43,443 --> 00:02:44,443
+Başlıyorum.
+
+15
+00:02:51,699 --> 00:03:11,579
+Sikvers patenden bahsedecektim bu hafta. Bu patenin avantajlarını ilk olarak giriş yapacağım. Patenin yaklaşımlarından, avantajlarından, motivasyonundan bahsedeceğim. Daha sonra patenden bahsedeceğim. Bu durumun, bu patenin yararlarından ve dezavantajlarından bahsedeceğim son olarak da.
+
+16
+00:03:12,079 --> 00:03:18,259
+Şimdi mevcut yaklaşımda birçok kumsal uygulama işlem kayıtlarını tutmak için işteli.
+
+17
+00:03:18,671 --> 00:03:46,012
+İlşikisayar Veritaban Öğretim Sistemi'nin genelde kompozisyon paterni seçiyorlar. Bu patern ne sağlar? Normalde işte Mayısükar kullanılır veya herhangi bir veritaban kullanılabilir. Bu veritabanına sorgular yapılır. Bu sorgularda bazı prim ülkelerin birleştirilip sorgunun tamamlanması ve bazı komutların uygulanması gerekir. Bunların veritabanına getirdikleri ekstra yükler vardır.
+
+18
+00:03:47,219 --> 00:04:01,219
+Örneğin şurada görebiliyoruz. Herhangi bir kullanıcının, Custom Rady'e bağlı olarak ismi, müşterinin ödemesi veya bazı bilgilerini çekmek için bunları zorunluyor.
+
+19
+00:04:01,219 --> 00:04:12,219
+Bu tür karmaşık sorularının yürütülmesi ilerleyen süreçlerde problemli hale gelebiliyor. Tek bir veritabanı için kapasitenin yetersiz kalması da bu durumu zorlaştırıyor.
+
+20
+00:04:12,436 --> 00:04:32,735
+Geliştirme süreçleri artık sorguların düzenlenmesine ve sorguların üzerine yoğunlaşmaya başlıyor. Böyle dezavantajları var aslında. Ürünü geliştirmekten ziyade sorguları ve kompleksli problemleri çözmeye yönelik yola girilmiş oluyor bu süreçte.
+
+21
+00:04:33,684 --> 00:04:57,244
+Örneğin, Find Order History metodumuz var. Servisimiz var daha doğrusu. Bu sorgu operasyonda müşterilerin sipariş tarihine göre sıralı sipariş geçmişi listelenmek isteniliyor. Bu nasıl bir şey? Aslında bir müşterinin ailesi biliniyor. Bu aileye bağlı olarak sipariş tarihi listelenecek. Sipariş tarihi listelendikten sonra...
+
+22
+00:04:57,779 --> 00:05:03,240
+Sipariş geçmişi, sipariş tarihine bağlı olarak sipariş geçmişinin düzenlenmesi lazım.
+
+23
+00:05:03,659 --> 00:05:09,500
+Sıralama işlemi yapılması gerekiyor. Örneğin bu servis Order Restore adında bir obje return etsin.
+
+24
+00:05:10,000 --> 00:05:15,559
+Bu objenin sipariş numarası, sipariş kurumu toplam tutarı ve teslimat zamanı bilgilerine ihtiyaç var.
+
+25
+00:05:16,419 --> 00:05:18,559
+Bu servis'in return edebilmesi için.
+
+26
+00:05:18,959 --> 00:05:28,819
+Bu bilgileri kullanması gerekiyor. Bunun için ne yapacak? İlk olarak, Accounting Servis'e gidecek. Accounting Servis'te ödemeleri listelemesi lazım.
+
+27
+00:05:29,279 --> 00:05:42,839
+Teslimat servisinde bu teslimatları liste edildikten sonra sıralayacak. Sıraladıktan sonra ödeme servisinin yanıtı ile bunu birleştirmesi lazım. Toplam tutarı çekmesi gerekiyor.
+
+28
+00:05:44,019 --> 00:05:44,819
+Daha sonrasında...
+
+29
+00:05:45,524 --> 00:05:51,683
+Sipariş servisiyle de bunu join'lemesi lazım. Neden? Sipariş numarası ve sipariş durumunu da çekmek gerekiyor.
+
+30
+00:05:52,484 --> 00:05:58,264
+Bu tür alt servislerin join'lerle ilerlemesi bizim sürecimiz zorlaştırıyor.
+
+31
+00:05:58,264 --> 00:06:08,043
+Örneğin şurada da Order and Kitchen servislerde custom riley ile tüm siparişlerin yancı menü adı sorgusu yapılarak çekilmesi gerekilebiliyor.
+
+32
+00:06:10,420 --> 00:06:14,939
+Teslimat ve ödeme servislerinde de yalnızca Customer ID kullanılabiliyor.
+
+33
+00:06:15,699 --> 00:06:20,939
+Buna bağlı olarak birbirleri arasında ilişkileri Customer ID'ler üzerinden veya
+
+34
+00:06:22,860 --> 00:06:25,420
+farklı keywordler üzerinden,
+
+35
+00:06:25,420 --> 00:06:29,379
+Orders Service için farklı keywordler üzerinden yapmak gerekecektir.
+
+36
+00:06:29,379 --> 00:06:32,699
+Bunlar da ekstra maliyet ve karmaşıklığa sebep oluyor.
+
+37
+00:06:33,971 --> 00:06:47,531
+Bunun için söylediğim gibi in-memorji oyun yapılabilir. Bu aslında serbest sonrası yanıtların tamamen belli çekilip tüm işlemlerin belli bir join üzerinden merge edilmesi de yapılıyor.
+
+38
+00:06:47,531 --> 00:06:56,171
+Bu tabi büyük bir bellek alanı ve verimsiz bir işlem olmuş oluyor. ID ile sorgulama yaklaşımı da kullanılabilir.
+
+39
+00:06:56,372 --> 00:07:02,372
+Bunda da ID'ye bağlı olarak Orduberk Kitchen servislerle bir bir ID'leme ile sorun yapılacak.
+
+40
+00:07:02,372 --> 00:07:08,372
+Filtreleme sonuçları her seferinde aktif olarak gerçekleştirecek. Bu da ekstra yük gerektiriyor.
+
+41
+00:07:08,372 --> 00:07:16,372
+Bu yöntemin verilme olabilmesi için ise diğer hizmetlerin toplu veri alma, bulk veş denilen bir API yaklaşımına dayanması gerekiyor.
+
+42
+00:07:16,372 --> 00:07:22,283
+Aksi takdirde tek tek yapılan soruları alt trafiğini arttıracak. Bu da performansı düşürecektir.
+
+43
+00:07:24,372 --> 00:07:51,252
+Burada bir diğer örneğimiz, find available restaurant. Bu da bir sorgu metodu. Bu işlemde belli bir adresi ve belli bir zamana göre teslimat yapılabilecek restoranları bulmak istiyoruz. Bu sorgunun temelinde teslimat arzısında belli bir mesafedeki restoranları bulmak için yapılan bir coğrafat konum araması yapmak gerekiyor. Bunun tabi bazı zorlukları da var. Neden? Veritabanımız bunu desteklemiyor olabilir.
+
+44
+00:07:51,776 --> 00:08:16,716
+Örneğin Mongolia, Bipostra X veya Meusquale, Cualifor Zantap olarak kolayca uygulanabiliyor. Bu iki nokta arasındaki mesafeyi bul veya bana en yakın noktadaki restoranları listele tarzında bir sorguyu yönetebiliyor veya buna dair indeksleme yapabilirken diğer veri tabanları yapamayabilir veya bizim yönetimimize bakıyor olabilir. Bu da ekstra bir detay.
+
+45
+00:08:20,596 --> 00:08:31,696
+Tabii her sorgulamaya karşı çoğu zaman bir şey de olacaktır. Bir konut da gerçekleşmesi gerekecektir. Örneğin, Fenty Belly Berry restoran sorgusunda restoran verileri alan bir işlem.
+
+46
+00:08:32,467 --> 00:08:41,347
+Ve bu veriler de sona servisi tarafından yönetiliyor. Ancak bir tarafta sorgu ve bir tarafta bu sorguya yanıt olarak komutların işlenmesi gerekecektir.
+
+47
+00:08:41,347 --> 00:08:49,048
+Ben bu kişinin bu bu restoranda yapmış olduğu alışverişleri mesela bellekten kaldırmam gerekecek veya veritabanından sinmem gerekecek.
+
+48
+00:08:49,467 --> 00:08:56,347
+Kullanıcı hesabını kapadığı için. Ama bu işlemi yapabilmek için ilk önce sorgu sona komutu işlemek gerekiyor ve...
+
+49
+00:08:56,884 --> 00:09:07,044
+O sırada başka bir sorgu aynı veri tabanına yapılıyor olabilir. Bunların asinkron olarak gerçekleşmesi ekstra bir veri tutarsızlığına sebep olabilecektir.
+
+50
+00:09:08,884 --> 00:09:17,124
+Bundan dolayı aslında sorgu ve komut taraflarının ayrılması gerekecek veri tabanında. SQLite aslında tam olarak bunu gerçekleştiriyor.
+
+51
+00:09:19,604 --> 00:09:27,784
+Dediğim gibi, command ve query site diye iki alt bölümden oluşuyor. Bu, command site de, create, update ve delete işlemleri yapılıyor.
+
+52
+00:09:27,784 --> 00:09:33,903
+Burada veriye değerli değişiklikler olduğunda, domain eventları yayınlanıyor.
+
+53
+00:09:33,903 --> 00:09:41,304
+Domain eventlar, query modelde event ender tarafından yakalanıyor ve query database'i güncelleniyor.
+
+54
+00:09:41,304 --> 00:09:47,304
+Normal yaklaşımdan bahsedeyim en baştan. Şurası, kraftta temel olarak,
+
+55
+00:09:47,508 --> 00:09:59,828
+Agregate yaparak toplam yapacak şuralarda şeyleri değişiklik yapılan kısımları ve veri tabanını eğer bir sorgu geldiyse veri tabanı güncellekten sonra sorgu yönlendirecektir.
+
+56
+00:09:59,828 --> 00:10:01,828
+Ama bizim yaklaşımımızda...
+
+57
+00:10:01,940 --> 00:10:18,940
+CQRs'den en azından. Toplam her veri yazılma işleminden sonra, aggregate modelleri event'ler süretecekler. Bu event'ler, query model'da, event handler'da yakalanacak ve query database'ini güncelecek.
+
+58
+00:10:18,940 --> 00:10:25,676
+Yoğun işlemlerin ise, common site'de gerçekleştirilecek olan büyük işlemler ise,
+
+59
+00:10:25,716 --> 00:10:38,915
+Common Site Database'de ver tabanına yazılacak. Böylelikle Query ve Common Site tarafından ayrıldığı için hem Bion işlemlerin birbirinden ayrılması hem de sorgu işlemlerin asinkron olarak gerçekleşmesi mümkün kullanacaktır.
+
+60
+00:10:40,915 --> 00:10:48,515
+Burada bizim servislerimiz üzerinden bir örnek var. Ordu Service Kitchen, Clive View ve Accounting Servisler üzerinden.
+
+61
+00:10:50,915 --> 00:10:52,315
+Bu tarafta da
+
+62
+00:10:52,724 --> 00:10:56,264
+Bizim yapacağımız olan CQS Paterna uygulamaktır yine.
+
+63
+00:10:56,264 --> 00:10:57,264
+Yancı...
+
+64
+00:10:57,504 --> 00:11:02,504
+Bir hizmet için de uygulanmakta kalmayıp aynı zamanda sorgu servisini tanımak için de kullanılacaktır.
+
+65
+00:11:02,504 --> 00:11:08,004
+Query Servis yanca sorgu işlemlerine oluşan bir API'ye sahiptir ve konut işlemlerine hiç armaz.
+
+66
+00:11:08,004 --> 00:11:12,504
+Veritamını sorgulayarak sorgu işlemlerini gerçekleştirir.
+
+67
+00:11:12,504 --> 00:11:18,504
+Order History Servis, Find Order History adlı bir sorgu işlemlerini gerçekleştirir ve Order Service,
+
+68
+00:11:23,700 --> 00:11:35,860
+Şu tarafta biz Order Ticket, işte devir ve ekantik eventler yayınlarız. Order Kitchen devir ve ekantik servisler için. Bu tarafta Order History servisi kendi handler tarafından yakalar.
+
+69
+00:11:36,440 --> 00:11:46,899
+Kendi handler tarafında eventler yayınlayınca yakalanır ve Order History bir database'i güncellenir. Böylelikle servislerin asarsın yönetimi de gerçekleşmiş oluyor.
+
+70
+00:11:50,899 --> 00:12:12,519
+Dezavantajları olacaktır. Burada avantajlarından bahsedelim. EPR kompozasyon yaklaşımında büyük bir hükümelerin bellekle birleştirilmesi pahalı ve verimsiz işlemlere yol açabilir. EPR kompozasyon bunu gerçekleştirecektir. Ama C-Crash bunu bir kullanarak daha yönetilebilir kılıyor ve daha verimli hale getirecektir.
+
+71
+00:12:15,827 --> 00:12:36,608
+Bu da ekstra bir verimini kazandırıyor. Tüm sorguları tek bir veritabanı modeli kullanarak desteklemeye çalışmak zordur. Örneğin bazen özgür veritabanın sorgulama yetenekleri oldukça sınırlıdır. Seekvars pattern birden fazla bir tanımlayarak tek bir veritabanı sınırlamalarından kaçınır. Her bir belli sorgulara etkili bir şekilde listeli şekilde tısarlanır. Böylelikle.
+
+72
+00:13:03,059 --> 00:13:14,059
+Bir diğer avantajı, komutları ve sorguları ayırır. Yine, Secure Sitesini bir hizmetin Command Tank Query tarafları için ayrı kod modelleri ve veritabanı şemalaları tanımlar.
+
+73
+00:13:14,059 --> 00:13:28,559
+Sorunlukların ayrılması sayesinde komut ve sorgu tarafları daha basit ve bakımı kolay hale gelecektir. Zaten farklı veritabanları da olacaktır. Bu da veritabanları yüklerini azaltacak bu tarafta.
+
+74
+00:13:28,788 --> 00:13:33,788
+Tabi dezavantajı ise konteks mimari barındırması.
+
+75
+00:13:33,788 --> 00:13:37,788
+Biri, Siköreş mimariyle etk arnaşıklar gelecektir.
+
+76
+00:13:37,788 --> 00:13:42,788
+Geliştiricilerin viğbuları güncelleyen ve sorgulayan sorgu tarafı hizmetlerine yazmaları gerekecek.
+
+77
+00:13:42,788 --> 00:13:49,788
+Ayrıca ek veri depolarının yönetilmesi ve işitilmesiyle ilgili operasyonlar arnaşıklar ortaya çıkacak.
+
+78
+00:13:49,788 --> 00:13:56,620
+Uygulama farklı türdeki veritabanlarını kullanıyorsa, bu durum hem geliştiriler hem de operasyon ekipleri için zorlukları arttırır.
+
+79
+00:13:56,724 --> 00:14:23,124
+Böyle bir kompleksitesi var. Ayrıca bir diğer dezavantajıysa, sorgu ve komut tarafındaki es zamanlılık veya güncelleme problemi. Örneğin bir komut tarafı bir olay yayınlandıktan sonra bu olayın sorgu tarafının, görünümün güncellenmesi arasında bir gecikme olacaktır. Yani bir komut gerçekleşecek, bir event'in güncellenmesi gerekecektir.
+
+80
+00:14:24,148 --> 00:14:31,148
+Bu tarafta client ise uygulama bir nesneyi güncel ekran ardından sorgulama yapımında önceki sürümü görecek.
+
+81
+00:14:31,368 --> 00:14:38,368
+Yani ben bir komutta yazma işlemi gerçekleştirdim ancak hala eski bilgim gözüküyor label'da.
+
+82
+00:14:39,008 --> 00:14:47,528
+Bunu çözmek için ise komut ve sorgu API'leri istemce sorgu tarafından güncel olmadığını anlamasından olarak tanıyacak sürüm bilgisi sağlayabilir.
+
+83
+00:14:47,528 --> 00:14:50,528
+Yani değişiklik olduğuna dair bir...
+
+84
+00:14:50,995 --> 00:15:05,235
+Görünün güncellemesine dair bir şey tetiklemesi gerekecektir. Bir yılın tetiklemesi gerekecektir. Bu da bu gecikmeyi çözebilir. Anlatacaklarım bu kadardı aslında. Sorularınız varsa dinleyin.
+
+85
+00:15:06,696 --> 00:15:08,735
+Teşekkür ederiz [öğrenci].
+
+86
+00:15:11,735 --> 00:15:13,995
+Şimdi sırada...
+
+87
+00:15:14,131 --> 00:15:22,451
+Yine CQRS pattern'inden, tasarımın yapımıyla ilgili [öğrenci]'nin sunumu vardı ama [öğrenci] burada değil.
+
+88
+00:15:22,451 --> 00:15:29,151
+Devam edecek olursak [öğrenci] burada, hazır galiba.
+
+89
+00:15:29,151 --> 00:15:31,171
+Aç paylaşabilirim hocam.
+
+90
+00:15:31,171 --> 00:15:34,131
+Tamam, peki. API Gateway.
+
+91
+00:15:34,868 --> 00:15:48,648
+Paten'inle geçelim o zaman sizinle birlikte. Ekranı görüyorsunuz değil mi hocam? Şu anda browser ekranını görüyoruz. Evet şimdi PowerPoint ekranını görüyoruz. Şunuma geçiyorum. Tamam.
+
+92
+00:15:54,451 --> 00:15:55,991
+Şu an geldi herhalde.
+
+93
+00:15:57,531 --> 00:15:58,812
+Evet evet geldi.
+
+94
+00:15:59,051 --> 00:16:06,731
+Hocam şu an telefonun internetiyle giriyorum da, eğer internetim geçilirse söylemebilir misiniz?
+
+95
+00:16:07,251 --> 00:16:10,572
+Yani eğer donma olursa söyleriz ama sen nasıl duyacaksın?
+
+96
+00:16:11,351 --> 00:16:16,971
+Donma olduğunu şey yaparım ya, arada gider gelebilir. Şu an sağdayım hocam o yüzden.
+
+97
+00:16:17,231 --> 00:16:18,771
+Tamam tamam okey.
+
+98
+00:16:19,291 --> 00:16:20,312
+Devam hocam.
+
+99
+00:16:20,467 --> 00:16:25,807
+Merhabalar, benim konum Epic Gateway Patent konusunu anlatacağım.
+
+100
+00:16:26,836 --> 00:16:41,556
+Problem, client ile servis arasındaki doğrudan iletişim. Buradaki problemler, istemci ile servis arasındaki doğrudan iletişim zorluklarından kaynaklanır.
+
+101
+00:16:42,216 --> 00:16:49,535
+Bu da fazla istek, protokol yönetimi ve UI karmaşıklıklarına yol açar.
+
+102
+00:16:49,919 --> 00:17:05,860
+Çözüm olarak iyi tanımlanmış API tasarımı, mikroservis iletişim desenleri, örnek olarak Epic Gateway, Backend Frontend Patent ve benzeri önerilirmiş.
+
+103
+00:17:06,963 --> 00:17:28,983
+Doğrudan istemci ile mikroservis arasındaki iletişim küçük uygulamalarda uygun olabilir. Ancak büyük ve karmaşık sistemlerde yönetim zorluğu gibi sorunlar yaratabiliyor. Bu da Epic Gateway Patent bunlara bir çözüm olarak sunmaktan.
+
+104
+00:17:29,983 --> 00:17:33,423
+Epic Gateway kullanmanın ana nedenleri
+
+105
+00:17:34,036 --> 00:17:46,976
+Epic Gateway kullanımı, istemci uygulamalarının farklı protokollerle mikroservislere yapılan çoklu istekleri yönetmesini zorlaştırıyor.
+
+106
+00:17:47,796 --> 00:17:58,496
+Ve istemci kodunu karmaşık hale getirir. Ayrıca istemci ile mikroservisler arasında güçlü bir bağlantı oluşturur.
+
+107
+00:17:58,864 --> 00:18:13,244
+Bu da bakım zorluklarına yol açıyor. Kimlik doğrulama, yetkilendirme, izleme ve benzeri her mikroserviste uygulandığında verimsiz olur.
+
+108
+00:18:22,836 --> 00:18:32,936
+Farklı islemci türlerine göre yük gövdesi değişiklikleri gibi sorunlar ortaya çıkıyor.
+
+109
+00:18:33,996 --> 00:18:44,416
+Appi Gateway bu sorunları çözerek mikroservisler arasındaki iletişimi daha verimli hale getiren bir yapı.
+
+110
+00:18:50,644 --> 00:19:06,584
+İstemci ve isteklerini mikroservislere yönlendiren kimlik doğrulama, yük dengeleme, izleme gibi görevleri üstlenen bir sistemdir diye bir tanım yapabiliriz.
+
+111
+00:19:07,604 --> 00:19:15,864
+İstemciler için tek bir giriş noktası single entry point sağlar.
+
+112
+00:19:16,256 --> 00:19:23,676
+Ve işte dahili servisler arasında iletişimi kolaylaştıran bir yapı.
+
+113
+00:19:25,096 --> 00:19:36,376
+Gateway Routing, istemcilerin tek bir uç noktası üzerinden birden fazla mikro servise erişmesini sağlar.
+
+114
+00:19:37,296 --> 00:19:41,476
+Mikro servis değişiklikleri istemciye etkilenmez.
+
+115
+00:19:42,928 --> 00:19:53,488
+Yapılandırma, Gateway'de güncelleniyor. Ayrıca mikroservis detaylarına istemciden soyutluyor.
+
+116
+00:19:54,168 --> 00:20:03,768
+Aynı zamanda da bu EPI sürüm yönetiminin de kolaylaştırır şeklinde de bir kitapta açıklaması vardı.
+
+117
+00:20:09,748 --> 00:20:23,928
+Epic Gateway, birden fazla mikro servisi çağırarak sonuçları tek bir yanıt halinde birleştirmesini birleştirir.
+
+118
+00:20:24,372 --> 00:20:45,012
+Bu işlem islemci performansını artırıyor ve islemci kodunu basitleştirir. Örneğin, şekildeki uygulamada sipariş detaylarını görüntülemek için birden çok istek yapmak yerine,
+
+119
+00:20:52,372 --> 00:21:03,052
+Gerekli verileri farklı hizmetlerden alır ve istenciye tek bir yanıt olarak döner.
+
+120
+00:21:05,107 --> 00:21:29,407
+Protokol Translation, Epic Hatway farklı protokoller arasında dönüşüm yapmasını sağlıyor. Örnek olarak istemciden gelen HTTP isteğini arka uç serviste GRPS olarak çeviriyor. Bu sayede uyumluluk sağlanıyor ve sistem karmaşıklığını azaltıyor.
+
+121
+00:21:32,147 --> 00:21:40,947
+API Gateway provides each client with client-specific API.
+
+122
+00:21:41,140 --> 00:22:01,300
+Epic Gateway, her istemciye özel API sağlayarak farklı istemci ihtiyaçlarına çözüm sunuyor. Örneğin, bir üçüncü taraf uygulama tam sipariş ayrıntılarını isterken mobil istemci yalnızca bir alt kümeyi talep edebilir.
+
+123
+00:22:01,811 --> 00:22:18,111
+Epic Gateway islemcilere hangi verilerin döndürülmesi gerektiğini belirleme imkanı sunuyor. Daha gelişmiş bir yaklaşım ise her islemciye özel bir API sağlamaktır.
+
+124
+00:22:29,044 --> 00:22:31,604
+Esneklik Sağlıklar.
+
+125
+00:22:33,644 --> 00:22:35,963
+Implementing Edge Function.
+
+126
+00:22:36,203 --> 00:22:45,683
+Edge fonksiyonları istemci isteklerini hızlı ve verimli şekilde işlemek için kullanılıyor.
+
+127
+00:22:45,943 --> 00:22:49,524
+Yaygın kullanım alanları şunlarıdır.
+
+128
+00:22:49,875 --> 00:23:03,756
+Kimlik doğrulama, islemcinin kimliğini kontrol eder. Yetkilendirme, islemcinin işlem yetkisini doğrular. Hız sınırlama, istek sayısını belirli bir limitte tutar.
+
+129
+00:23:03,756 --> 00:23:16,456
+Catching, yanıtları önbelliği alarak yükü azaltır. Metrik toplama, API kullanımıyla ilgili verileri toplar.
+
+130
+00:23:16,819 --> 00:23:32,579
+İstek Loglama, gelen istekleri kaydederek izleme sağlar. Bu fonksiyonlar güvenlik, performans ve izlenebilirlik açısından avantaj sağlamaktadır.
+
+131
+00:23:32,579 --> 00:23:42,339
+API Gateway Architecture, API katmanı bağımsız API modüllerinden oluşur.
+
+132
+00:23:42,548 --> 00:23:55,548
+Bağımsız API, her modelin belli bir islemci için özelleştirilmiş API'yi uygular. Örneğin mobil API, tarayıcı API'si, genel API.
+
+133
+00:23:55,548 --> 00:24:05,548
+Orta katmanda ise tüm API'ler için ortak işçiliyorsak sunuyor.
+
+134
+00:24:06,099 --> 00:24:14,299
+Burada kimlik doğrulama, yetkilendirme, hız sınırlama gibi edge fonksiyonlarını içerip
+
+135
+00:24:14,900 --> 00:24:20,700
+API modüllerinin işleyişini şu şekilde anlatmıştır.
+
+136
+00:24:21,140 --> 00:24:30,740
+Kitapta yönlendirme, gelen istekler API modülü tarafından uygun hizmet API'lerine yönlendiriyor.
+
+137
+00:24:31,360 --> 00:24:38,120
+Daha sonrasında API birleştirme, karmaşık işlemler için birden fazla hizmet çağrılır.
+
+138
+00:24:38,740 --> 00:24:42,080
+Ve sonuçlar birleştirerek istenciye tek bir yanıt döner.
+
+139
+00:24:42,675 --> 00:24:57,076
+Bunlar yüksek performans ve ölçülülebilirlik sağlayarak tasarlanmalıdır diye bir açıklaması vardı.
+
+140
+00:24:57,076 --> 00:25:01,276
+App Gateway Ownership modeli
+
+141
+00:25:01,652 --> 00:25:09,612
+Ownership model, API Gateway sorumluluğunu ve yönetiminin nasıl dağıtılacağını belirler.
+
+142
+00:25:10,831 --> 00:25:16,351
+Slide'da belirtilen başlıklar bu modelin temel ögeleridir.
+
+143
+00:25:17,471 --> 00:25:24,692
+İstemci takımları kendi API'lerini yönetir, özelleştirir.
+
+144
+00:25:29,407 --> 00:25:41,087
+Genel işlevsellikten sorumludur. Merkezi bir gateway takımı ise mikro servislerin bağımsızlığını, gelişim hızını engelleyebilir.
+
+145
+00:25:42,927 --> 00:25:47,627
+Otomatik dağıtım ve iyi koordinasyon.
+
+146
+00:25:49,364 --> 00:26:02,763
+ve hızlı güncellemeler, bağımsız geliştirmeler için bunlar kritik bir öneme sahip olduğunu söylüyordu.
+
+147
+00:26:04,903 --> 00:26:10,763
+A Client Team Owns der API modül başlığı.
+
+148
+00:26:15,188 --> 00:26:32,188
+API Gateway Ownership modelini göstermektedir. Burada her istemci ekibi kendi API modülünden sorumludur.
+
+149
+00:26:32,188 --> 00:26:42,348
+API Gateway ekipisi ise yalnızca ortak modül ve geçitin operasyonel işlemlerinden sorumludur.
+
+150
+00:26:42,644 --> 00:26:54,043
+Bu modelde ise ekiplerin API'ler üzerinde daha fazla kontrol sahibi olmasına, hızlı geliştirme döngülerini olanak tanır.
+
+151
+00:26:54,043 --> 00:27:01,084
+Ve ekipler API'lerinde değişikliklerini bağımsız olarak yapabilir.
+
+152
+00:27:02,604 --> 00:27:06,604
+Using the Back and For Front Ends Pattern
+
+153
+00:27:06,708 --> 00:27:18,908
+Kısaltılması BFF'dir. BFF modeli her istenci türü için ayrı epi gateway oluşturulmasını öneriyor.
+
+154
+00:27:18,908 --> 00:27:32,028
+Burada sorumlulukları netleştirir ve ölçülümebilirliğini artarır. Ortak işlevsellik bir kütüphane aracılığıyla sağlanır.
+
+155
+00:27:32,384 --> 00:27:39,264
+Ve tüm geçitler aynı teknoloji yığılını kullanır.
+
+156
+00:27:39,264 --> 00:27:48,864
+Bu BFF modeli olarak Netflix bu modeli başarılı bir şekilde uygulamıştır.
+
+157
+00:27:48,864 --> 00:27:56,704
+Netflix başlangıçta tek bir app'i kullanmayı denemiş.
+
+158
+00:27:56,884 --> 00:28:09,004
+Ancak farklı cihaz türlerinin ihtiyaçlarına yanıt veremediği için her cihaz türü için özel bir app'i Getway kullanmaya başlamış.
+
+159
+00:28:09,004 --> 00:28:24,884
+Bu BFF modelinin bir örneğidir. BFF modelinde ise her islemci türü için mobil, televizyon ve benzeri için app'i getirmek.
+
+160
+00:28:24,884 --> 00:28:51,104
+Yetveriler bulunur. Böylece her cihaz türüne özgü, optimize edilmiş apiler sağlanır. Bu model esneklik, güvenilirlik ve ölçünebilirlik sunarak istemci ihtiyaçlarına hızlı yanıt vermesini, mikro servislerin daha verimli yönetmesini sağlamaktadır.
+
+161
+00:28:52,403 --> 00:29:04,124
+API Gateway Design. API Gateway tasarım için dikkate alınması gereken temel konular şunlardır.
+
+162
+00:29:04,124 --> 00:29:15,283
+Performans ve ölçülebilirlik, bakımı yapılabilir kod, kısmi hataların işlenmesi, mimaride iyi bir vatandaş olmak.
+
+163
+00:29:15,604 --> 00:29:25,524
+Epic Gateway tasarımında Asikron giriş ve çıkış ölçülenebilirlik sağlanır ama karmaşıktır.
+
+164
+00:29:25,524 --> 00:29:38,964
+Reaktif programada ise eş zamanlı konutu kodu yönetilebilir. Hata yönetiminde ise sistemin çökmesini engellemek için önemlidir.
+
+165
+00:29:39,155 --> 00:29:58,956
+Ayrıca servis keşfi ve gözlenebilirlik gibi kalıplar kullanarak ay geçitinin mikroservislerle uyumlu olmalıdır. Tasarımda dikkat edilmesi konulardan birisi.
+
+166
+00:30:03,635 --> 00:30:26,915
+Epic et ve istencilerin uygulamanın iç yapısını gizler ve onlara özel apiler sunar. İstencilerin tek bir istekle gerekli veriye ulaşmasını sağlar. Geliştiriciler hizmet ayrıştırmasını ve değişikliğini kolaylık sunar. Yani esneklik sağlıyor.
+
+167
+00:30:27,443 --> 00:30:33,963
+Güvenlik, kimlik doğrulama, yetkilendirme gibi işlevlerle güçlendirilir.
+
+168
+00:30:34,884 --> 00:30:43,463
+Ayrıca performans, ölçünebilirlik için önbelliği alma ve rate limit gibi iyileştirmeler yapıyor.
+
+169
+00:30:45,043 --> 00:30:53,103
+Ve protokol çevirisi yaparak farklı protokoller arasında iletişimi sağlar.
+
+170
+00:30:54,548 --> 00:31:13,587
+Epic Adway'in dezavantajları ise, Epic Adway dezavantajlar arasında geliştirme ve yönetim yükü, tek hata noktası riski, performans gecikmeleri yer alıyor.
+
+171
+00:31:14,132 --> 00:31:22,872
+Ayrıca yüksek trafik yönetimi ve karmışıklık artışı gibi sorunlar da ortaya çıkabilmekte.
+
+172
+00:31:23,192 --> 00:31:38,872
+Epic Adway, tüm istemci isteklerini merkezi bir noktada toplaması nedeniyle sisteminin bütününü etkileyecek bir arıza riskine sahiptir.
+
+173
+00:31:39,443 --> 00:31:49,443
+Geliştirme ve dağıtım zorlukları ve yüksek maliyetler de dezavantajlar arasındadır.
+
+174
+00:31:49,443 --> 00:32:00,443
+Bu sorunlar önerilen kitapta frontend patternleri, desenleri kullanarak...
+
+175
+00:32:01,327 --> 00:32:13,168
+Apple Gateway'i böyle renk daha bu sorunları hafifletilebilir şeklinde bir önerisi vardı.
+
+176
+00:32:15,955 --> 00:32:32,355
+Sonuç olarak Epic Gateway, mikroservis tabanlı uygulamalarda istemci ile arka uç servisler arasında iletişimi yönetir ve güvenlik, ön bellekleme gibi çapraz kesitli işlemleri sağlar.
+
+177
+00:32:33,255 --> 00:32:37,955
+Ancak tek bir Epic Gateway kullanmak...
+
+178
+00:32:38,048 --> 00:32:44,607
+Tek hafda noktası riski ve karmaşıklık sorunlarını yol açabilir.
+
+179
+00:32:44,607 --> 00:32:57,087
+En iyi uygulama Epic Gateway'in Back-end, Front-end, Patent desenini kullanarak daha küçük servislere bölmektir.
+
+180
+00:32:57,087 --> 00:33:05,327
+Böylece her işlemci türü için optimizm edilmiş çözümler sunulur.
+
+181
+00:33:05,811 --> 00:33:10,871
+Referanslarım da bu şekildedir. Teşekkür ederim.
+
+182
+00:33:11,871 --> 00:33:17,411
+Biz teşekkür ederiz. Şimdi [öğrenci] ile devam edebiliriz.
+
+183
+00:33:20,231 --> 00:33:21,731
+Sesim geliyor mu hocam?
+
+184
+00:33:21,731 --> 00:33:22,951
+Evet, geliyor.
+
+185
+00:33:25,531 --> 00:33:27,191
+Ekran paylaşıyorum.
+
+186
+00:33:45,683 --> 00:33:58,763
+Merhaba, ben de az önceki arkadaşımıza yine dirsek temaksında bir konu. Bu API Gateway'lerin implement edilmesiyle alakalı bir sunum yapacağım.
+
+187
+00:33:59,763 --> 00:34:03,663
+Önce yine architecture'ları kısaca anlatacağım.
+
+188
+00:34:13,331 --> 00:34:34,291
+Monolitik ve MikroService Arktitifinden farkını anlatacağım ve kitapta belirtilen şekliyle bu API getimleri implement edilirken nasıl yapıldı, hazır mı kullanalım, kendimiz mi yazalım gibi sorulara cevap alacağız.
+
+189
+00:34:40,255 --> 00:35:04,515
+Bu monolitik mimari aslında tüm bileşenlerin sıkı sıkıya bağlı olduğu tek bir yapı şeklinde çalışıyor. Geliştirmesi basit, ufak projeler için ideal. Her şey tek bir birim olarak çalışıyor. Karmaşıklık az gibi gözükse de başta aslında bu daha sonra scalability sorunlarına dönebiliyor.
+
+190
+00:35:07,731 --> 00:35:23,971
+Düşük operasyonel overhead bir avantaj ama aslında işlerledikçe kodumuzun karmaşıklaşması ve hiçbir reaktif özelliğinin aslında olmadığı bir duruma çok hızlı evrilebilir.
+
+191
+00:35:24,412 --> 00:35:31,572
+Dolayısıyla eğer ufak çaplı bir proje yapmıyorsak hiç ideal bir durum değil.
+
+192
+00:35:32,532 --> 00:35:54,532
+Sağdaki diagramda, Kaptay verildiği şekliyle, FTGO Boot to Go uygulamasını temizlediyor. Burada tek bir API call ile, GetOrderDTLs callu ile, File Olu üzerinden, monolitik FTGO uygulamasına bir call yollanıyor.
+
+193
+00:35:56,083 --> 00:36:07,683
+Eğer MikroService Mimarisine geçecek olursak, burada ise küçük ve bağımsız modüler servislere bölünmüş bir yapı görüyoruz.
+
+194
+00:36:10,403 --> 00:36:19,683
+Her biri kendine özgü API call'larıyla iletişim kuruyor ve her biri farklı özellikleri...
+
+195
+00:36:21,268 --> 00:36:46,628
+Her biri kendine özgü işlevlerini yerine getiriyor ve bu da tabii ki barımsız geliştirmeyi sağlıyor. Bu da tabii ki geliştirme hızını arttırıyor. Aslında development kısmında costlar düşürse de en nihayetinde maintain etmek için daha yüksek costlar gerekiyor bu modüleri kuran olayı.
+
+196
+00:36:48,532 --> 00:36:53,452
+Monolitik yapıdan farkı scalability konusunda çok daha esnek.
+
+197
+00:36:54,232 --> 00:37:01,792
+Ve tabii ki en önemlisi tek bir servisteki sorun bütün sistemimizi alaşağı etme tehlikesiyle bizi karşı karşıya bırakmıyor.
+
+198
+00:37:03,872 --> 00:37:15,932
+Fakat dediğim gibi bu kadar modüler bir yapı dezavantajları da beraberinde getiriyor ve bazen operasyonu olan overheadler artabiliyor.
+
+199
+00:37:16,416 --> 00:37:33,216
+Ve tabii ki çok fazla API call gerektiği için mesela az önce MonaltyGap'a tek bir API call ile yaptığım için burada mesela 4 tane API call ile yapacaksam burada client iletişimiyle alakalı bir sıkıntı doğabilir.
+
+200
+00:37:33,216 --> 00:37:41,016
+Benim client'ım 4 API içinde farklı URL'e mi bilmek zorunda? Nasıl iletişim kuracak?
+
+201
+00:37:42,579 --> 00:38:03,480
+Soru işaretlerini aslında içinde barındırıyor. Burada bir çözüm sunacak olursak, burada API Gateway ortaya çıkıyor. Gateway aslında dışarıdan gelen bütün bu API çağrılarına tek bir giriş noktası sunuyor. Bu sağdaki diagramda görüleceği şekliyle.
+
+202
+00:38:08,563 --> 00:38:32,923
+Aslında kullanıcıyı kendi backend servislerime doğrudan maruz bırakmıyorum. Ve tek bir giriş noktası veriyorum. Hem kolay yönetebiliyorum, çok daha az karmaşık bir yapım var. Dükkan routing yapabiliyorum. Gelen listemizden gelen istekleri doğru mikro servise, backend'e, API gateway kendi yolluyor.
+
+203
+00:38:34,963 --> 00:38:48,983
+Yine Authentication yapabiliyorum. Güvenlik açısından çok iyi. Çünkü kullanıcıları doğrudan doğruya kendilerini arz bırakmadık için aynı şekilde kendim aslında saldırılardan da bir nebze kurmuş oluyorum.
+
+204
+00:38:49,983 --> 00:38:58,923
+Load balancing yapabiliyor. Bu istemeciden gelen istekleri dağıtım konusunda çok başarılı.
+
+205
+00:39:00,916 --> 00:39:27,376
+API aggregation, yani data aggregation, yani birden fazla backenddeki mikro servisten aldığım yanıtları birleştirip tek bir yanıt yapabiliyorum. Nasıl yani? Mesela az önceki mikro servisteki dört farklı API'den aslında istediğim şekliyle değil de.
+
+206
+00:39:28,436 --> 00:39:50,615
+Yani dört backend servislerini aldığım sonucu birleştirerek tek bir çıktı gibi alabiliyorum. Aynı zamanda rate limiting, monitoring, trafiği izleme, loglama işlemlerini yapabiliyorum. Aynı zamanda client, backend arasında, translation da aynı şekilde gateway ile yapabiliyorum.
+
+207
+00:39:57,300 --> 00:40:10,679
+Hazır API Gateway çözümlerine gelirsek, burada en ilk akla gelen Amazon Web Service'in API Gateway ve Load Balancer çözümleri.
+
+208
+00:40:14,036 --> 00:40:32,115
+Aslında Amazon Web Services'ın API Gateway'i API Composition gibi yani. API Composition, aslında Data Aggregation, az önce bahsettiğim olay. Birden fazla backend servisine gelen servisin tek bir birleştirilmesi olayı.
+
+209
+00:40:38,639 --> 00:40:49,000
+Özelliklere ihtiyacımız yoksa aslında baştan sona oldukça başarılı fakat dediğim gibi bu tür eksiklerle geliyor.
+
+210
+00:40:49,000 --> 00:41:06,039
+Şey konusunda çok iyi, diğer Amazon Web Service'in sağladığı servislerle entegre çalışabildiği için burada yok Lambda'yla sunuçsuz uygulama oluşturayım, Dynamo'yla veri tabanına bağlanayım.
+
+211
+00:41:06,400 --> 00:41:17,480
+CloudWatch'la loglama yapayım gibi işlemler konusunda oldukça devletlere de kullanıcıya da çok yardımcı.
+
+212
+00:41:19,240 --> 00:41:24,120
+İkinci olarak, CloudWatch'ın sırasında bir yük dengeleyici.
+
+213
+00:41:25,120 --> 00:41:32,860
+Çok lightweight ve çok kısıtlı gateway özellikleri gösteriyor.
+
+214
+00:41:33,427 --> 00:41:46,427
+Ne Edge Function var ne API Composition var. Fakat oldukça lightweight. Çok tercih edilen bir şey değil gibi duruyor.
+
+215
+00:41:46,427 --> 00:42:00,427
+Son olarak işte Kong Trafic gibi API Gateway ürünleri var. Bundan hem open source hem oldukça özelleştirilebilir. Çok esnek.
+
+216
+00:42:01,076 --> 00:42:08,275
+Çok güzel fakat operasyonel olarak çok yollucu. Biraz saçraşı olmak gerekiyor.
+
+217
+00:42:08,275 --> 00:42:13,476
+İşte kurulumu, konfigürasyonu, bakımı için ekstra zamanla harcamak gerekiyor.
+
+218
+00:42:13,476 --> 00:42:26,076
+Bu da tabii bunları kullanılma noktasında çok daha aslında istediğimiz bir şey değil.
+
+219
+00:42:30,195 --> 00:42:57,235
+Peki, bunun dışında ne yapabiliriz hazır çözümler kullanmak yerine? Tabii ki kendi API Gateway'imizi kendimiz yapabiliriz. Bu da aslında zor bir şey değil. Sadece iki tane kritik nokta var. Birincisi routing kuralları. Bunları doğru bir şekilde tanımlamak gerekiyor. İkincisi de HTTP proxy devranışını ve header'larla beraber.
+
+220
+00:42:58,068 --> 00:42:59,867
+Doğru bir şekilde işlemek gerekiyor.
+
+221
+00:43:01,427 --> 00:43:08,768
+Burada kitaptaki kısımda yazarın öbe öbe bitiremediği Spring Cloud Gateway'den bahsedeceğiz.
+
+222
+00:43:08,768 --> 00:43:14,347
+Burada kitapta diyor ki hepsinde bir eksik var.
+
+223
+00:43:14,548 --> 00:43:19,188
+Amazon Web Service'te bile Data Aggregation konusunda eksikler var.
+
+224
+00:43:19,648 --> 00:43:24,768
+Ama burada bunu bir framework olarak alıp...
+
+225
+00:43:25,396 --> 00:43:31,876
+Kendim bir API yapmaya kalktığımda burada bu problemlerin hepsini aslında aşıyorum.
+
+226
+00:43:31,876 --> 00:43:40,116
+İşte Edge Function'ım da var, Data Aggregation'ım da var, Routing'im var çok basit ve temiz bir şekilde.
+
+227
+00:43:40,116 --> 00:43:45,716
+Reaktif bir program var, Asynchron Event Drive'ın, Scaleability'im çok iyi.
+
+228
+00:43:45,716 --> 00:43:52,916
+Dolayısıyla burada Spring Cloud Gateway oldukça öne çıkıyor diğer tüm çözümler arasında.
+
+229
+00:43:54,036 --> 00:44:03,956
+Dediğimiz gibi aslında çok temel 4 tane görev var bir API Gateway. Request Routing, API Composition, Data Integration yani.
+
+230
+00:44:03,956 --> 00:44:14,516
+Ve Edge Functions, en temeli Authentication tabii ki ve Protocol Translation. Çok kısa bakacak olursak.
+
+231
+00:44:18,931 --> 00:44:42,731
+RequestRouting'de API get ve istenmişten gelen isteği metoduna göre, URL yoluna göre doğrudan backend'e yönlendiriyor. Burada bir get, işte, orders, order id, endpoint tanımlanmış. Bu endpoint gelen isteği ele alarak üç farklı backend servise yönlendiriyor. Bu da bir RequestRouting örneği.
+
+232
+00:44:44,411 --> 00:44:45,931
+Devam edecek olursak.
+
+233
+00:44:46,324 --> 00:45:10,484
+API konumunda, burada data aggregation dediğimiz olay aslında tam bir gerçekten aggregation yapıyor, birleştirme yapıyor. Birden fazla backend servisten aldığı, yani burada 3 tane backend servis görüyorum. Order Service, Consumer Service, Delivery Service. Bunlardan aldığı verileri tek bir JSON yanıtı halinde birleştirip istemciye gönderiyor.
+
+234
+00:45:13,364 --> 00:45:40,004
+Ve son olarak Edge Function. Burada da bir Authentication görevinin nasıl yapıldığını kısaca görüyoruz. Burada Authentication Token fonksiyonu bir istek geldiğinde işte JVT tabanlı kinnik doğrulama yaparak yetkin var mı yok mu aslında kontrol ediyor. Bu tarz Edge Function'lar.
+
+235
+00:45:40,884 --> 00:46:03,144
+İstenmişteki istekleri filtreleyerek, taci yetkili kullanıcıların backendteki servislerine erişmesini sağlıyor. İstenmeyen istekleri backend servislerinde buluşturmamış oluyor. Teşekkür ederim denediniz için. Anlatacaklarım bu kadar.
+
+236
+00:46:09,043 --> 00:46:22,863
+Evet, biz de teşekkür ediyoruz. API Gateway ile ilgili sunumlar. Tamam. Şimdi test tarafına geçiyoruz [öğrenci] ile.
+
+237
+00:46:22,863 --> 00:46:26,863
+Merhaba hocam, sesim geliyor mu? Evet, geliyor.
+
+238
+00:46:26,863 --> 00:46:30,219
+Tamam. Kardeşiyorum.
+
+239
+00:47:09,364 --> 00:47:16,983
+Merhaba, ben [öğrenci]. Bugün mikroservis mimarisi test stratejilerinden bahsedeceğim.
+
+240
+00:47:18,195 --> 00:47:34,796
+İlk olarak test nedir? Sorusuna cevap verecek olursak aslında bir yazılımın veya sistemin belirli gereksinimlere, beklentiklere veya işlevselle uygun çalışmadığının doğrulama işlemidir esasen.
+
+241
+00:47:36,396 --> 00:47:45,796
+Mikroservis mimarisinde ise yazılım sistemlerini aslında küçük, birbirinden bağımsız ve birbiriyle...
+
+242
+00:47:46,195 --> 00:48:08,496
+Birbiriyle iletişim halinde çalışacak bir yapıdır mikroservis. Bu noktada birbirinden izole bir şekilde, aslında izole demeyelim, birbirinden farklı servisler olduğu için bunların arasındaki iletişimi doğrulamak önemli bir hal alıyor.
+
+243
+00:48:11,027 --> 00:48:22,967
+Bu noktada yazılım testlerinin öneminden biraz bahsedecek olursak, aslında ilk olarak hataların erken tespiti kısmında büyük rol oynuyor.
+
+244
+00:48:22,967 --> 00:48:31,887
+Burada sunacağımız hizmet veya uyguladığımız hizmet kritik olabilmektedir.
+
+245
+00:48:37,811 --> 00:48:54,392
+Müşteriye vermeden önce test edip hataların önceden tespit edilmesi önem azetlikte. Bunun dışında güvenilir bir sistem sağlamış oluyoruz. Kullanıcıya veya daha sonraki müşterilerimize bir güven ortamı oluşturmuş oluruz aslında.
+
+246
+00:48:56,851 --> 00:49:12,331
+Bunun dışında sürekli bir değişim ve hızlı geliştirme açısından aslında kod değişikliklerinin sistemi bozmadığını ve sürekli bir şekilde bu entegrasyonun devam ettiğini doğrulamış oluruz.
+
+247
+00:49:12,571 --> 00:49:21,751
+Az önce bahsettiğim gibi yine müşteri memnuniyet açısından testlerin sürekli yapılıp doğrulanması önem arz ediyor.
+
+248
+00:49:22,739 --> 00:49:32,639
+Dediğim gibi mikro servisler birçok servisten oluştuğu için bunların arasındaki uyumunda test etmiş oluyoruz.
+
+249
+00:49:33,719 --> 00:49:37,519
+Aile yeten maliyet kısmında da bize büyük fayda sağlıyor.
+
+250
+00:49:37,519 --> 00:49:42,980
+Çünkü bu sistemlerin dürgün çalışmamasından kaynaklı aslında.
+
+251
+00:49:44,659 --> 00:49:54,500
+Testlerin de yapılmamasından kaynaklı ekstra bir iş gücü gerektireceği için bu noktada aslında bize büyük avantaj sağlıyor.
+
+252
+00:49:56,599 --> 00:50:00,000
+Testler manuelde yapılıyor.
+
+253
+00:50:00,000 --> 00:50:12,360
+Otomatik de yapılabilir. Tabi manuel yapılması pek mantıklı olmayacaktır. Bunun için aslında birçok dilde bu iş için hazır çerçeveler, frameworkler bulunuyor.
+
+254
+00:50:13,099 --> 00:50:22,119
+Örneğin burada da yazdığı gibi Java'da JUnit adlı bir framework veya PyTest ve NUnit gibi Python ve C şartillerinde de.
+
+255
+00:50:22,547 --> 00:50:37,387
+Hazır frameworkler bulunuyor. Bu frameworkler aslında kolay kullanım kısmında, otomatize etme kısmında ve hız kısmında bizlere fayda sağlıyor.
+
+256
+00:50:38,847 --> 00:50:45,788
+Sağdaki görselde de bir test sürecinin aslında nasıl işlediğini gösteriyor sağdaki görsel.
+
+257
+00:50:49,427 --> 00:51:15,268
+Fixture dediğimiz kısım bir test döngüsünü kısaca özetliyor. Burada setup dediğimiz kısım aslında test için gerekli olan ön koşulların hazırlandığı kısımdır. Örneğin işte belli başlığı değişkenlerin başlatılması gerektiği veya önceden testin başlamasından önce belli işlemlerin yapılması gerektiği noktayı ifade ediyor.
+
+258
+00:51:15,860 --> 00:51:26,440
+Execute kısmı test edilecek olan kod parçasını ifade ediyor. Aslında direkt işlemin yapıldığı kısmı.
+
+259
+00:51:27,340 --> 00:51:37,380
+Verify kısmı bu işlem yapıldıktan sonra aslında doğrulama kısmı yani kolun beklenen sonuçları verip vermediği kısmını ifade ediyor.
+
+260
+00:51:37,380 --> 00:51:42,380
+Tear down dediği kısım da aslında testin bitiminde yapılması.
+
+261
+00:51:43,347 --> 00:51:46,347
+İstenen, yapılmak istenen kısımları ifade ediyor.
+
+262
+00:51:50,067 --> 00:51:58,507
+Mikro servis kısmında dediğimiz gibi çok aslında servis bulunuyor ve birçok bağımlılık var haliyle.
+
+263
+00:51:59,347 --> 00:52:03,327
+Bu da test süreçlerini karmaşıklaştırabiliyor ve yavaşlatabiliyor.
+
+264
+00:52:04,547 --> 00:52:10,467
+Bunun için Mock ve Stop denen aslında araçlar kullanılmaktadır.
+
+265
+00:52:11,347 --> 00:52:25,307
+Stab'a bakacak olursak, Stab aslında bir servisin bağımlılığını simüle ederek ona olan bağımlılığı ortadan kaldırma işlemidir.
+
+266
+00:52:27,447 --> 00:52:30,387
+Burada da bir örneğimiz var.
+
+267
+00:52:31,699 --> 00:52:43,280
+Order Service sınıfımız var örnekle mesela göreceğimiz üzere ve burada bir sipariş oluşturma çağrısında aslında her zaman sahte bir sipariş nesnesi döndürmesini sağlıyoruz.
+
+268
+00:52:43,280 --> 00:52:55,800
+Order Service nesnesinin sınıfının. Burada amaç aslında test edeceğimiz servisin dışında haricinde kalan tüm servisleri simüle ederek.
+
+269
+00:52:56,175 --> 00:53:08,956
+Asıl test etmek istediğimiz servisi test etmiş oluyoruz ve diğer servislerle onlara bağımlı olduğumuz için aslında oradaki iş yükünden kurtulmuş oluyoruz bağımlılıklardan.
+
+270
+00:53:10,956 --> 00:53:22,596
+Bir de MOK dediğimiz kısım var. MOK da aslında test ettiğimiz servisin bağımlılığının doğru şekilde çağrılıp çağrılmadığını doğrular.
+
+271
+00:53:23,027 --> 00:53:43,807
+Burada da aslında yalnızca ilgili servisin çağırılıp çağırılmadığını simüle ederek yine staba benzer bir şekilde diğer servisleri, asıl ilgilendiğimiz servisin dışındaki servisi simüle etmiş oluyoruz.
+
+272
+00:53:46,228 --> 00:54:04,228
+Yine kitapta bahsedilen bir Breen Merrick isimli kişinin burada yazılım test süreçlerini daha stratejik ve yapılandırılmış bir şekilde ele almak için sunduğu bir yaklaşım var.
+
+273
+00:54:05,708 --> 00:54:12,348
+Burada aslında neden bu testlerin yapıldığını, hangi hedefe hizmet ettiğini ve
+
+274
+00:54:12,980 --> 00:54:18,920
+Hangi tür testlerin hangi amaca uygun olduğu gibi sorulara yanıt arıyoruz.
+
+275
+00:54:20,519 --> 00:54:32,559
+Örneğin test stratejisi ve planlama başlığı altında testlerin önceliklendirilmesi ve hangi test türüne ne zaman odaklanacağı gibi konularda rehberlik ediyor.
+
+276
+00:54:36,911 --> 00:54:48,771
+Birim testi, entegrasyon testi, performans testi gibi belirli test türlerinin hedefleri ve rolleri hakkında bize daha net bir yol sağlıyor.
+
+277
+00:54:51,511 --> 00:55:02,971
+Onun dışında bir test piramidi dediğimiz bir yapı var. Bu yapı da aslında bize hangi test türlerine ne kadar odaklanması gerektiği konusunda bir rehberlik sağlıyor.
+
+278
+00:55:04,751 --> 00:55:17,311
+Piramide bakacak olursak en alt kısmında birazdan bahsedeceğim. İşte buradaki testlerin hepsinden birazdan bahsedeceğim. Piramidin altında unit test dediğimiz yapı var.
+
+279
+00:55:17,780 --> 00:55:40,000
+Piramide göre unit test dediğimiz testin olabildiğince fazla ve olabildiğince fazla bir şekilde uygulanması gerektiğini söylüyor. Çünkü bu testler hızlı, basit ve güvenilir olduğu için uygulanması birçok açıdan fayda sağlamış olacak bize.
+
+280
+00:55:43,059 --> 00:55:58,559
+Entegrasyon ve bileşen testleri dediğimiz testler var. Bunlar da yine servislerin altyapı ve diğer uygulama hizmetleriyle olan etkileşimlerini test eden testler. Bunlar da nispeten daha az sayıda olmalı.
+
+281
+00:56:01,204 --> 00:56:13,764
+Günit teste göre daha fazla karmaşıklık sunuyor ve daha fazla iş yükü getirebiliyor. O yüzden bu testlere biraz daha günit teste göre daha az uygulanması gerektiğini söylüyor.
+
+282
+00:56:14,764 --> 00:56:27,923
+En uç kısımda ise Entrent Test dediğimiz uçtan uca testler var. Burada da bütün bir süreci baştan sona simle ettiğimiz, uyguladığımız test yöntemi.
+
+283
+00:56:28,563 --> 00:56:35,943
+Bu da en aslında yavaş ve maliyetli kısım olduğu için bunun en az sayıda uygulanması gerektiğini söylüyor.
+
+284
+00:56:38,163 --> 00:56:53,864
+Burada da aslında bir deployment pipeline denilen bir servisin aslında geliştiricinin masa üstünden üretim ortamına kadar olan iki kısmı otomatikleştirilmiş bir süreci ifade ediyor aslında.
+
+285
+00:56:54,675 --> 00:57:05,735
+Bu süreç yazılım geliştirme ve teslimatını hızlandırırken yüksek kaliteli ve hatasız yazılımın sürekli olarak devam etmesini sağlıyor.
+
+286
+00:57:07,735 --> 00:57:10,935
+Bu pipeline nasıl işliyor?
+
+287
+00:57:11,935 --> 00:57:13,675
+İlk olarak aslında...
+
+288
+00:57:13,972 --> 00:57:34,612
+Ön test, ön komit dediğimiz aşamada birim testleri çalıştırılıyor ve aslında bu noktada geliştirici kodu komit etmeden önce birim testlerin kendi uyguladığı yazdığı kodları test ediyor ve ilk aşamada aslında bir hata olup olmadığını kendi kısmında görmüş oluyor.
+
+289
+00:57:42,675 --> 00:57:54,576
+Komite ediyor kodu ve bu kodu aslında yine burada bir test edip bir problem olup olmadığını, sistemle bir bütün halinde çalıştığında problem olup olmadığını görmüş oluyor.
+
+290
+00:57:54,576 --> 00:58:04,635
+Daha sonra entegrasyon test aşaması var. Burada ise burada da uygulamanın diğer servislerle entegrasyonunu doğruladığı bir aşama var.
+
+291
+00:58:05,364 --> 00:58:14,603
+Aslında bu az önce gösterdiğim test üçgeninin aşamalarına benzer bir şekilde burada süreci aslında bir otomatize halde yapma işlemini anlatıyor.
+
+292
+00:58:15,384 --> 00:58:23,844
+Birleşen test aşaması kısmında ise servisin aslında tüm işlevselliğini kapsamlı bir şekilde test ettiği kısmı ifade ediyor.
+
+293
+00:58:27,155 --> 00:58:34,856
+Servis üretim ortamını çıkarılıyor ve tüm testler başarılı olmuşsa yazılım canlıya alınıyor.
+
+294
+00:58:36,596 --> 00:58:42,936
+Aslında CIC sürekli integrasyon, sürekli dağıtım dediğimiz süreç.
+
+295
+00:58:42,936 --> 00:58:54,715
+CİN, aslında kitapta böyle geçiyor ama sürekli integrasyon ve sürekli dağıtım dediğimiz yapının aşamaları aynı şekilde uygulanmakta.
+
+296
+00:58:56,052 --> 00:59:14,052
+Test stratejilerine bakacak olursak, ilk olarak unit test dediğimiz test yöntemi bulunuyor. Aslında burada her mikroservisin ya da mikroservis olmak zorunda değil, yazılımın en küçük birleşenlerin örneğin fonksiyonlarına...
+
+297
+00:59:15,199 --> 00:59:31,079
+Bu testler aslında bağımsız bir şekilde çalıştığı için sadece küçük birimler üzerinde yapılması gerekmekte ve oldukça hızlı çalışmakta.
+
+298
+00:59:31,079 --> 00:59:39,939
+Aslında buradaki amaç bir fonksiyonun ilgili küçük birimin doğru bir şekilde çalışıp çalışmadığını görmek daha doğrusu.
+
+299
+00:59:42,800 --> 00:59:54,580
+Burada hesaplama sınıfımız ve bunun içinde bir toplama fonksiyonumuz var. Hazır bir framework kullanılarak burada bir test sınıfı yazılmış görüldüğü üzere.
+
+300
+00:59:54,580 --> 00:59:59,580
+Burada testin toplama işlemi...
+
+301
+01:00:00,000 --> 01:00:27,400
+Bu toplama işleminin bir simülasyonu var. Altta da aslında negatif sayılarla toplama işlemi var. Burada aslında bir sınıf nesnesi oluşturdu. İlgili sınıf fonksiyonu çağrılıp bu yine kullanılan kütüphaneye bağlı olarak bir asört fonksiyonu yardımıyla ilgili çıktığının beklenilen değere eşit olup olmadığı kontrol ediliyor.
+
+302
+01:00:28,179 --> 01:00:42,859
+Unit test dediğimiz gibi basit, hızlı ve etkili testler. Bunun gibi aslında birçok test keysi yazılabilir. İstenilen, isterlere göre ve detaylı olması isteğine göre bu genişletilebilir.
+
+303
+01:00:44,239 --> 01:00:55,179
+Entegrasyon testi dediğimiz kısım var. Burada ise bir servisin aslında diğer servislerle ya da sistemlerle doğru bir şekilde etkileşimde bulunup bulunmadığı test edilir.
+
+304
+01:00:55,668 --> 01:01:17,291
+Yanda da bir örneğimiz var aslında. Burada bir order servis sınıfımız var. Burada bir order sınıfından nesne üretilip, şu aşağı tarafta da görüleceği üzere aslında, burada bir...
+
+305
+01:01:18,068 --> 01:01:37,728
+Bağımlılığı var bu Order Service sınıfının. Ona bakalım önce. Order Repository adlı bir sınıftan bağımlılığımız var aslında. Burada Order Repository'nin FindById fonksiyonu çağırılarak yine bir nesneye tanıyor.
+
+306
+01:01:45,199 --> 01:01:59,459
+Doğru olup olmadığına bakılıyor. Burada da aslında birbiriyle bağımlı olan sınıflar arasında bir doğru çalışıp çalışmadığıyla alakalı bir test gerçekleştirilmiş oluyor.
+
+307
+01:02:00,980 --> 01:02:13,320
+Komponent testimiz var. Burada da aslında bir servisin izole olarak test edildiği bir yöntem. Başta da anlattığım gibi bu mock ve stop yapılarını söylemiştim.
+
+308
+01:02:14,099 --> 01:02:28,980
+Dediğimiz bir mikro serviste birçok birbirine bağımlı yapı var ve bu servisleri tek başına bir bütün olarak test etmek istediğimizde diğer servisleri burada çağırmak, gereksiz yere çağırıp gereksiz bir...
+
+309
+01:02:28,980 --> 01:02:46,820
+İşlem yüküyle uğraşmak istemeyebiliriz. Bu noktada diğer servisleri aslında MOK dediğimiz yapılarla taklit ederek sadece ilgilendiğimiz servis özelinde bir test gerçekleştirebiliriz.
+
+310
+01:02:47,960 --> 01:02:54,460
+Örneğin burada Payment Service sınıfı Payment Gateway adlı bir sınıfa bağımlı.
+
+311
+01:02:54,943 --> 01:03:01,304
+Fakat bu sınıfı gerçekten, bu servisi gerçekten çalıştırmak istemeyebiliriz.
+
+312
+01:03:03,463 --> 01:03:15,943
+Bunun için burada test kodumuzda örneğin bir payment sınıfından mesleği üretip yine ilgili framework'ün sağladığı bir yapıyla burada...
+
+313
+01:03:16,271 --> 01:03:22,831
+Payment Gateway servisinin Process adlı fonksiyonunu aslında,
+
+314
+01:03:24,831 --> 01:03:33,711
+Process fonksiyonuna Payment türünden bir sınıf geldiğinde True dönmesini sağlıyoruz burada.
+
+315
+01:03:34,032 --> 01:03:35,711
+Bu şekilde aslında.
+
+316
+01:03:36,083 --> 01:04:02,083
+Burada Payment Gateway sınıfını simüle etmiş oluyoruz. İlgili servisi aslında elimine etmiş oluyoruz. Sadece kendi Payment Servis sınıfımıza odaklanmış oluyoruz. Burada Payment Servis sınıfının Process Payment adlı fonksiyonunu çağırdığımızda bu Process Payment fonksiyonu normalde Payment Gateway fonksiyonu servisini ya da sınıfını her...
+
+317
+01:04:02,675 --> 01:04:18,635
+Derse diyelim, çağırdığında normalde bu servisin çalışması gerekiyorken burada aslında bu servisin nasıl hareket etmesi gerektiğini önceden belirterek o servisi taklit etmiş olduk ve sadece kendi kısmımıza odaklanmış olduk.
+
+318
+01:04:20,335 --> 01:04:28,435
+End-to-end testlerimiz var aslında. Bu da tüm sistemin baştan sona test edildiği bir yöntemdir.
+
+319
+01:04:28,884 --> 01:04:44,664
+Deyim burayı, eski için bir süre uzuyor çünkü. Kontrakt test dediğimiz sözleşme testleri var. Burada da aslında belli bir servisler arasında belli bir sözleşme, belli bir veri formatı var aslında.
+
+320
+01:04:45,396 --> 01:05:00,216
+Buradaki yapıyla da tüketici ve sağlayıcı dediğimiz yapılar var. Buradaki amaç aslında diğer mikroservislerin birbiriyle olan iletişimini ve ofis sözleşmelerinin doğruluğunu test etmek buradaki amaç.
+
+321
+01:05:00,996 --> 01:05:09,216
+Son olarak üç tane daha testim burada belirttim. Dayanıklılık testi var. Bu aslında...
+
+322
+01:05:09,876 --> 01:05:24,996
+Hata durumlarında servislerin ne kadar, servisin ne kadar dayanıklı olacağını ya da nasıl bir cevap vereceğini görmek istediğimiz durumlarda uyguladığımız bir test türü. Performans testleri var.
+
+323
+01:05:25,456 --> 01:05:37,115
+Bu da mikroservisin aslında yük altında nasıl çalıştığını ve sistemine ters tepkiler verdiğini test etmeye amaçlayan bir test yöntemi.
+
+324
+01:05:37,115 --> 01:05:47,456
+Bu da güvenlik testi arsiyonu olarak burada da servislere yetkisiz erişim veya diğer tehditler durumunda.
+
+325
+01:05:47,936 --> 01:06:08,375
+Ne tarz tepkiler vereceğini gördüğümüz test türdür aslında. Sonuç olarak mikroservislerde test stratejidir aslında yazılımın kalitesini arttırmak ve sürdürebilirliği sağlamak açısından oldukça önemli.
+
+326
+01:06:11,059 --> 01:06:24,079
+Mikro servisin unit test dediğimiz kısımları aslında her bir küçük birini hızlıca test edip sistemin birçok parçasını, güvenliğini doğrulayabiliriz.
+
+327
+01:06:25,139 --> 01:06:34,320
+Buradaki test piramidi yaklaşımı kısmında aslında farklı test seviyelerinin dengeli bir şekilde uygulanması gerektiğini de görmüş olduk.
+
+328
+01:06:37,331 --> 01:06:48,132
+Mikro servislerin bağımsız yapısı aslında paralel test çalıştırmayı bir yandan da mümkün hale getiriyor. Bu da test sürelerini büyük ölçüde azaltmakta.
+
+329
+01:06:49,268 --> 01:07:00,347
+Sözleşme testleri kısmında da mikro servislerin birbiriyle olan etkileşimlerini ve uyum içinde çalışıp çalışmadığını doğrulamış oluyoruz.
+
+330
+01:07:01,347 --> 01:07:07,947
+Dayanıklılık testleriyle sistemin zorlu durumlara karşı dayanıklılığını test ediyoruz.
+
+331
+01:07:09,847 --> 01:07:16,947
+CICD süreçleriyle sistemin aslında baştan sona nasıl...
+
+332
+01:07:16,992 --> 01:07:37,992
+Bir süreç izlemesi gerektiğini de aslında görmüş olduk. En sonunda da uçtan uca testlerle de aslında bir sistemi baştan sona bir bütün halinde test ederek hem güven açısından hem maliyet açısından birçok noktadan avantaj elde etmiş oluyoruz.
+
+333
+01:07:39,452 --> 01:07:41,311
+Sunumu bu şekildeydi. Teşekkür ederim.
+
+334
+01:07:49,043 --> 01:08:01,324
+Evet, [öğrenci] teşekkür ederiz. Şimdi Halit sırada. Paylaşıyor musun hocam? Tamam.
+
+335
+01:08:09,460 --> 01:08:11,619
+Evet.
+
+336
+01:08:15,956 --> 01:08:33,036
+Merhaba öncelikle. Bugün benim konum bir servis için unit test yazma üzerine. Bununla alakalı bir sunum yapacağım size. Burada servis için unit test yazmadan önce unit test hakkında ufak bir bilgi vermem gerekiyor. Ondan sonra servis için örnek vererek sunumu bitirmeyi düşünüyorum.
+
+337
+01:08:34,163 --> 01:08:53,804
+Unit Test dediğimiz kısım, Unit Test mikroservislerde veya monolitik yapıda önemli değil. Bir parça kısmı için birim test yazmadır. Yani bu parçadan bahsettiğimiz bir kılısı olabilir, bir kontrolör olabilir, bir servis olabilir, bir entity olabilir. Bunların birimlerine, Unit adı verilen birimleri ufak parçalara...
+
+338
+01:08:54,547 --> 01:09:12,067
+UnitTest yazarak birbirinden bağımsız halde çalışabilir, daha hızlı çalışabilir ve sadece belli yani o servis için yapılacak kısmın odağını alarak o servisin testinin geçip geçmediği hakkında bize bilgi verip o servisi aslında test etmek üzerine yazılır.
+
+339
+01:09:12,067 --> 01:09:18,567
+Bu UnitTest'i bir servis için yazmamızdaki en büyük amaçlardan biri.
+
+340
+01:09:18,912 --> 01:09:28,912
+Bir olarak, burada oluşacak hataların önceden tespit edilebilmesi, kod içerisindeki kalitenin arttırabilmesi, refaktör yapma işlemindeki...
+
+341
+01:09:29,587 --> 01:09:37,067
+Bize sunduğu büyük olanaklar, çünkü her bir birimi ayrı ayrı test edeceğimiz için bağımlılıkları birbiriyle alakalı olarak azalmış olacak.
+
+342
+01:09:37,067 --> 01:09:48,067
+Bunun dışında uzun süreç içerisinde hataları önceden tespit ettiğimiz için bize maliyet olarak daha düşük bir sistem yapacak.
+
+343
+01:09:48,647 --> 01:09:50,859
+Bu unit test olarak yaptığımız...
+
+344
+01:09:51,796 --> 01:10:08,796
+İki ana başlıkta ayrılıyor. Solitary ve Sogible olarak iki ana başlıkta unit testi ayrılıyor. Bunlar da servislerin bağımlılıklarıyla alakalı. Solitary unit testte bir mocklama işlemi yapılır. Yani bir servis içerisinde başka klaslara ait sınıflarda obje olarak kullanılabilir.
+
+345
+01:10:18,899 --> 01:10:40,199
+Sadece kendi iş kısmına odaklanmak için burada soliteri unit test kullanarak bunu modlama işlemi yapabilir, stop işlemi yapabilir aynı şekilde. Burada kendi solitlanma yani diğer bağımlılıklar, diğer servisinin ne iş yaptığıyla ilgilenmeden sadece kendi olanaklarını test edebilmek için soliteri unit test adı altında kullanılıyor.
+
+346
+01:10:40,199 --> 01:10:44,799
+Burada görüldüğü üzere bir target mock klası var.
+
+347
+01:10:46,420 --> 01:11:01,500
+Target Class'ını modlayarak bu içerindeki Dependency'leri bağımsız hale getirmiş oluyor. Daha sonrasında buradaki modladığı Class'la yapılacak işlemi kendi bir response dönerek burada şeklinde yapılabilir.
+
+348
+01:11:01,500 --> 01:11:12,500
+Aynı şekilde burada SocialEublium test var. Burada da şekilde görülmek üzere burada servis bir servis. Consum ediyor. Üç tane başka servisi. Bu servislerin bağımlı...
+
+349
+01:11:12,752 --> 01:11:27,051
+Bağımlılıklarını bir şekilde uygulamak zorunda. Buradaki bağımlılıkları ele almak zorunda. Çünkü buradaki servisin ne iş yapacağı da bu test yazma üzeri, yani unit test yazarken bizim için önemli olmuş oluyor.
+
+350
+01:11:27,051 --> 01:11:38,051
+Yani bir servis, burada şöyle bir örnek verebilirim. Daha sonra da bu örnekten bahsedeceğim. Bir user servisimiz var. Bu user servisi içerisinde bir database'i...
+
+351
+01:11:39,028 --> 01:11:51,088
+Bir sorgu atılmak isteniyor. Bu database sorgu atılmak istendiği fonksiyonun da ne yaptığı burada önemli olmuş oluyor. O yüzden Social Unity testte de dependency'leri kontrol etmek ve bunları birbirine bağlamak önemli olmuş oluyor.
+
+352
+01:11:52,340 --> 01:12:05,400
+Burada kısa bir görselde örnek veriliyor. Unit Test ile alakalı. Solitary Unit Test içerisinde, Dependentistlerin burada görüldüğü üzere bir klas içerisindeki Dependentistlerin modlanarak bu bağımsızlaştırma işlemi yapılıyor.
+
+353
+01:12:05,400 --> 01:12:16,840
+Social Unit Test'te ise bu Dependentistleri klas içerisinde yöneterek bunun tüm birim testin bağımlılıklarıyla birlikte çalışması amaçlanıyor.
+
+354
+01:12:17,908 --> 01:12:30,548
+Burada Solitary ve Sociable Unit Test için kitaptan almış olduğum bir örnek var. Solitary Unit Test nerede kullanılır, Sociable Unit Test nerede kullanılır? Bunun hakkında bize bilgi veriyor.
+
+355
+01:12:30,548 --> 01:12:37,288
+Burada Solitary Unit Test genelde Controller ve Servis için yazılır. Sociable Unit Test ise Entity.
+
+356
+01:12:38,003 --> 01:12:57,804
+Valiye Objekt veya Kontroller gibi daha çok bağımlılıkları ilgilendiren kısım. Soliter Yunite Test ise sadece akışa odaklanan kısımlar için yazılan bir Yunite Test'tir. Mesela servis için servisin bir ana görevi vardır. Ana görevin dışındaki kısımlar servisin içerisine dahil edilmeden yazılmak istenir.
+
+357
+01:13:06,003 --> 01:13:25,744
+Bu işlem yapılıp yapılmadı. Ekstra başka bir şeye bakılması istenmez. Sociable Unites Entity'lerde daha çok yazılır. Bunda yazılmasının en büyük sebeplerinden biri de Entity'nin dışarıya doğru çok fazla bağımlılık ve çok yerde kullanıldığından dolayı bu bağımlılıkların gerçekten doğru kontrol edilip edilmediği ile alakalı kullanılır.
+
+358
+01:13:26,868 --> 01:13:35,808
+Bir unit test yazarken bu yapı içerisinde bir AAA patent kullanılarak üç ana şekilde bir structure vardır.
+
+359
+01:13:36,388 --> 01:13:41,448
+Burada önce ilk başta bu arrange kısmıyla birlikte dependency'ler yönetilir.
+
+360
+01:13:41,448 --> 01:13:50,448
+Gerekli dependency varsa bunlar ya mocklanır ya da mocklanmıyor ise eğer bir social unit test yazıyor isek bu dependency'leri...
+
+361
+01:13:51,028 --> 01:13:58,528
+Burada sağlamamız gerekiyor. Eklediğimiz kısımda ise bu unit test altında yapılacak işlemleri
+
+362
+01:13:59,128 --> 01:14:06,528
+moklandıysa gelecek responsların nasıl olacağını ve hangi unit test hangi fonksiyonu çalıştıracağımız kısım yazılıyor.
+
+363
+01:14:06,528 --> 01:14:12,028
+En sonunda gelen sonuçları assert etme kısmımız var. Burada da bir sonucun
+
+364
+01:14:12,340 --> 01:14:23,660
+Eğer bizim beklediğimiz sonuçla aynı mı, değil mi veya bir hata fırlatılıyorsa, biz bu hatayı düşündüğümüz noktada bu hatayı yakalayabilip yakalayamadığımızı kullanmak için burada bir Assertion kısmımız var.
+
+365
+01:14:24,720 --> 01:14:32,400
+Burada ufak bir örnek vermek istedim, Calculator'la alakalı. Bu tamamen sadece testi, unit testi yazmanın ne demek?
+
+366
+01:14:33,043 --> 01:14:59,783
+Olduğuyla alakalı. Burada bir Calculator Test klası içerisinde bir Dependency olarak çekme işlemi ne yapacağımızla alakalı. Setup kısmında bunun yeni bir objesinin oluşturulması gösteriliyor. Bu ne Solitary Unit Test'tir. Çünkü hiçbir Dependency bağımlılığı yoktur bu klasın. Bu sadece ufak bir örnek. Burada da ise teste Structure anlayabilmek için yapılan ek kısmı burada gözüküyor.
+
+367
+01:15:01,171 --> 01:15:24,891
+Arrange kısmı, setup kısmı burada anlatmış oluyoruz. Buradaki ek kısmında bir calculator klası içerisinde bir add fonksiyonu var. Add fonksiyonu sadece basit bir şekilde toplama işlemi yapıyor. Bu toplama işleminin sonucunda da bir integer değer döndürüyor. Bu işlem yapıldığı zaman dönen sonucun biz 8 olduğunu beklemekteyiz ve bunun assertion kısmında ise kontrolü sağlanmış oluyor.
+
+368
+01:15:25,939 --> 01:15:50,920
+Bir servis için, şu an Solitary Unit Test görüyorsunuz. Bu servisteki Solitary Unit Test kısmını anlatacağım. Asıl konum zaten çok uzun bir konu değil, kısa bir konu olduğu için. Böyle bir kendim örnek yazmak istedim. Bu örnek üzerinden de tüm yapılması istenilen işlemleri yapmak istiyorum. Bir User Servisimiz var. User Repository ile bağlantılı. Buraya bir istek.
+
+369
+01:15:51,539 --> 01:16:05,519
+Gönderiyor. Bunun sonucunda bir data dönmesi, bu user repository, database'den bir data alıyor. Bu klas bir username getirmek üzerine bir get username isiminde bir fonksiyon yazıyor. Bir user ID üzerinden işliyor.
+
+370
+01:16:07,136 --> 01:16:22,136
+Test için bizim User Repository'nin ne iş yaptığını çok ilgilenmemiz gerekiyor. Solitary unit test yazacağımız için. O yüzden User Repository'yi sahada görüldüğü gibi bir mocklama işlemi yapıyoruz. Bu mocklama işleminden sonra bizim...
+
+371
+01:16:23,060 --> 01:16:33,780
+Bu fonksiyonumuzun iki durumu olduğu için, bu unit test için iki farklı senaryo için iki test yazmamız gerekiyor ki tüm fonksiyondaki unit testi karşılayabilsin diye.
+
+372
+01:16:34,600 --> 01:16:43,760
+Bu unit testi yazarken bir user'ın null durumunda geldiğini, bir de normal user'ın geldiği durumu düşünerek iki test yazmamız gerekiyor.
+
+373
+01:16:43,760 --> 01:16:49,760
+Dediğim gibi user repository'nin ne yaptığını bilmeden, bundan bağımsız olarak user repository'yi bir...
+
+374
+01:16:50,612 --> 01:17:01,131
+Aslında burada stop işlemi uygulamış oluyoruz. UserReposter'in 123FindByUserId ile birlikte bize null bir user döneceğini
+
+375
+01:17:01,891 --> 01:17:14,131
+burada yapıyoruz. Ek kısmında yani when kısmında ise bu fonksiyonu çalıştırdığımızda bize dönecek olan string username'in ne olacağıyla alakalı, user not found olacağını bildiğimiz için en son bir assertion kontrolü yapıyoruz.
+
+376
+01:17:14,131 --> 01:17:15,931
+Daha sonrasında bu
+
+377
+01:17:15,984 --> 01:17:33,463
+Bizim stop işlemi yaptığımız user repository'den bir user objesi dönmesini sağlıyoruz. User objesi döndüğü zaman da fonksiyonun bize bir user ismini vereceğini düşünerek o dönen user içerisindeki user isminin aynı şekilde döndüğünün kontrolünü yapmış oluyoruz.
+
+378
+01:17:33,463 --> 01:17:39,583
+Benim bu konuyla ilgili anlatacaklarım bu kadar. Servisle alakalı çok uzun da bir konu değildi.
+
+379
+01:17:42,931 --> 01:17:44,931
+Evet, teşekkür ediyoruz.
+
+380
+01:17:49,076 --> 01:17:53,076
+Şimdi [öğrenci] son sunup sende...
+
+381
+01:17:55,076 --> 01:17:58,076
+[öğrenci] de mail atmış bana, o da haftaya sunacak.
+
+382
+01:18:01,619 --> 01:18:03,500
+Gözüküyor değil mi? Evet.
+
+383
+01:18:05,980 --> 01:18:12,880
+Merhabalar, ben Aykeren Kupuz. Bugün sizlere açıklamakta 1'deki Writing Integration Test kısmını açıklamaya çalışacağım.
+
+384
+01:18:13,539 --> 01:18:19,460
+Entegrasyon testi nedir, niçin kullanılır ve yine farklı tiplerdeki etkileşimler için örnekleri açıklamaya çalışacağım.
+
+385
+01:18:20,564 --> 01:18:36,543
+Öncelikle İntegrasyon testi nedir? Bundan demek gerekirse. Unit testinin hemen üzerinde yer alan ve farklı hizmetlerin, altyapıların yer almış olduğu hizmetlerde iletişimin doğru şekilde kurulup kurulamadığını, kontraktlara bağlı kalınıp kalınamadığını test edildik kısmı diyebiliriz.
+
+386
+01:18:37,083 --> 01:18:45,524
+Entren testlerden hemen önce gerçekleştirilen ve bilim testlerinden sonra gerçekleştirilen piramitte unit testinin hemen üzerinde yer alan test çeşididir.
+
+387
+01:18:47,028 --> 01:19:05,068
+Peki, entegrasyon testini neden yapıyoruz? Neden önem arz ediyor? Öncelikle hizmetler arasında iletişim doğru şekilde gerçekleşmediğinin test edilmesinden bahsetmiştik. Beklenmeyen davranışların özellikle end-to-end testler öncesinde tespit edilmesi maliyet açısından bir kazanç sağlayacaktır.
+
+388
+01:19:11,988 --> 01:19:31,928
+Maliyet ve zaman açısından bir kazanç olarak dönecektir. Aynı zamanda geliştiricilerin doğru geliştirme yapabilmesi için ve diğer geliştiricilerle olan işbirliklerini kolaylaştırması için entegrasyon testleri önemli. Ve yine performans analizlerinin yapılabilmesi, regresyonların önlenmesi için entegrasyon testleri önemli.
+
+389
+01:19:34,068 --> 01:19:42,068
+Kitapta da verilen örnek olan Order Service örneğinden ilerleyerek farklı etkileşimler için farklı entegrasyon testlerini kısa kısa açıklamaya çalışacağım.
+
+390
+01:19:42,927 --> 01:19:51,787
+Burada görmüş olduğunuz Order Service uygulaması farklı farklı altyapılarla, farklı hizmetlerle sürekli olarak etkileşim halinde ve farklı etkileşim tiplerine sahip.
+
+391
+01:19:51,787 --> 01:19:57,967
+Bu etkileşim tipleri için gerekli olan entegrasyon testlerinden bahsetmeye çalışacağım.
+
+392
+01:20:00,627 --> 01:20:21,947
+1, 2, 3 ve 4 olarak numaralandırmış kısımlar arasında Order Service hizmetinin etkileşimlerini temsil ediyor. Burada Order Service'ın doğru şekilde çalışıp çalışmadığı, aslında bu etkileşimlerin de istenildiği gibi çalışıp çalışmadığına bağlı olarak gerçekleşiyor. Eğer hizmetlerle doğru bir şekilde iletişim kuruluyorsa, entegrasyon testi başarıyla geçilmiş oluyor.
+
+393
+01:20:30,771 --> 01:20:46,512
+4 farklı etkileşimdeki etkileşim tiplerine, entegrasyon tiplerine ve provider consumer taraflarına bakacak olursak, öncelikle Order Service'in API Gateway ile REST tabanlı Request-Response ilişkisi olduğunu görüyoruz. Burada consumer tarafı API Gateway.
+
+394
+01:20:47,475 --> 01:20:51,815
+Provider tarafı Order Service. Üç numarada bir database etkileşimi var.
+
+395
+01:20:52,335 --> 01:20:58,495
+Order Repository Adaptör klası Order Service'tan aldığı orderları database'e sürekli olarak kaydediyor.
+
+396
+01:21:00,015 --> 01:21:07,195
+Bir başka entegrasyon tipi Order Service sürekli olarak orderlar güncellendikçe, yeni orderlar geldikçe eventler yayılmıyor.
+
+397
+01:21:07,315 --> 01:21:09,915
+Bu eventler Order History Service tarafından kullanılıyor.
+
+398
+01:21:10,575 --> 01:21:12,955
+Burada da Consumer tarafı Order History Service.
+
+399
+01:21:13,684 --> 01:21:34,564
+Bir başka entegrasyon tipi ise Al-Synchron Request-Response ilişkisi. Burada da kommentler üzerinden etkileşim söz konusu. Order Service'ın Kitchen Service ile olan etkileşim söz konusu. Consumer tarafı Order Service, Provider tarafı Kitchen Service. Bu dört etkileşim tipi üzerinden farklı örneklerle ilerleyerek etkileşim testlerini açıklamaya çalışacağım.
+
+400
+01:21:37,564 --> 01:21:39,564
+Provider ve Consumer taraftan bahsetmiştik.
+
+401
+01:21:40,659 --> 01:21:47,079
+Sıklıkla bahsettik ki Consumer Side Test, Provider Side Test bunların ne anlama geliyor?
+
+402
+01:21:47,779 --> 01:21:59,199
+Öncelikle entegrasyon testindeki önemli bir avantaj hem Consumer tarafı için hem Provider tarafı için iletişimde kalınan tarafın fiziksel olarak ayağa kaldırılmadan testlerin icra edilebiliyor olması.
+
+403
+01:21:59,199 --> 01:22:00,420
+Yani Consumer tarafı için.
+
+404
+01:22:00,992 --> 01:22:23,871
+Provider tarafının ayağa kaldırılmasına gerek olmuyor. Bu sayede entegrasyon testleri çok daha hızlı bir şekilde gerçekleştirilebilmiş oluyor. Burada peki bu nasıl sağlanıyor? Provider'ı simüle eden MOC sunucular, MOC tabanlı sunucular ile consumer tarafı test ediliyor. Provider tarafı içinde adaptörle bağımlılıklarını taklit eden MOC'lar kullanılarak Provider tarafı test edilmiş oluyor.
+
+405
+01:22:24,435 --> 01:22:29,376
+Sonki aşamalarda zaten detaylı bir şekilde bunları iş yakışı diagramları üzerinden göreceğiz.
+
+406
+01:22:31,496 --> 01:22:38,996
+İlk test tipinden bahsedecek olursak Persistence Integration Test. Bunu kalıcılık olarak çevirdim.
+
+407
+01:22:38,996 --> 01:22:40,996
+Burada dört adımda...
+
+408
+01:22:41,460 --> 01:22:53,560
+Bunu ayırmış kitap. Temel amacı hizmetin veri tabanı ile erişimde olduğu durumlarda, etkileşimde olduğu durumlarda veri tabanı ile gerçekleşecek olan alışverişin doğru bir şekilde gerçekleşip gerçekleşmelerinin testinin yapılması.
+
+409
+01:22:54,199 --> 01:22:59,460
+Setup kısmı, execute kısmı, verify kısmı ve teardown kısmı var. Bizim örneğimiz için...
+
+410
+01:23:00,564 --> 01:23:07,324
+Aslında üç numaralı etkileşimde görmüştük. Bunu birazdan örnek olarak göreceğiz. Setup kısmında veritabanı şeması oluşturuluyor.
+
+411
+01:23:07,324 --> 01:23:21,324
+Ve veritabanı tester tarafından, kullanıcı tarafından daha önceden belirlenmiş bir duruma getiriliyor. Ardından execute kısmında bu veritabanı işlemi gerçekleştiriliyor. Verify kısmında ise veritabanından bu...
+
+412
+01:23:21,971 --> 01:23:45,491
+Nesne çekilerek daha öncesinde bilinen durumda olan tutarlılığı aslında test ediliyor. Ve yine tier down aşamasında bir veri taban işlemi yaptığımız için veri tabanı eski haline getirme işlemi yapılarak, aslında geri alma işlemi yapılarak değişiklikler geri alınıyor. Kitap bu tier down'ı opsiyonel olarak nitelendirmiş. Setup, execute ve verify'ı persistence integration testin üç temel aşaması olarak nitelendirmiş.
+
+413
+01:23:49,264 --> 01:23:54,783
+Bizim Order Service hizmetindeki örneğimizden yola çıkarak alt tarafta üç numaralı bağımlı görüyoruz.
+
+414
+01:23:54,844 --> 01:24:02,463
+Order Repository Adapter klası database ile bir etkileşim halinde. Bu etkileşim testi Persistence Test örneği olarak verilmiş.
+
+415
+01:24:03,543 --> 01:24:06,384
+Sağ taraftaki kod da aslında temel olarak iki işlem yapılıyor.
+
+416
+01:24:07,523 --> 01:24:12,623
+Order Kümesi, Order Repository için bir kalıçlık entegrasyon testi örneği görüyoruz.
+
+417
+01:24:12,623 --> 01:24:14,943
+Bir Order nesnesi oluşturuluyor sağ tarafta.
+
+418
+01:24:15,347 --> 01:24:38,287
+Bu, should save and loader metodu içerisinde. Burada verilen argümanlar zaten tester tarafından bilinen argümanlar. Sonrasında bu order mesnesi veri tabanına kaydediliyor. Hemen akibinde veri tabanından çekilerek bu alanların doğruluğu karşılaştırılıyor. Alanların doğruluğu görüldüğünde ise biz bu testin başarılı bir şekilde geçildiğini görüyoruz.
+
+419
+01:24:41,716 --> 01:24:50,695
+Bir başka etkileşim tipi REST tabanlı Request Response ilişkisi. Bu etkileşimlerin test edilmesi de yine önemli.
+
+420
+01:24:51,756 --> 01:24:55,956
+REST tabanlı Request Response etkileşimleri bir client ve server tarafı var.
+
+421
+01:24:55,956 --> 01:25:03,876
+HTTP istekleri gönderdiği ve sonucunun isteklerin yanıta aldığı bir etkileşim modeli.
+
+422
+01:25:04,372 --> 01:25:17,992
+Burada doğru 3.http isteği göndermek, hizmet istemlinin beklediği yanıtı geri göndermesi bunlar önemli kıstaslar. Bunların testinin yapılması bu entegrasyon testi kapsamında gerçekleştiriliyor.
+
+423
+01:25:21,716 --> 01:25:37,876
+Bizim örneğimiz için etkileşim testine bakacak olursak, burada sözleşmeler kontraktlere bağlı API Gateway ve Order Service arasındaki rest tabanlı iletişim doğru şekilde gerçekleşip gerçekleşmediği test ediliyor.
+
+424
+01:25:39,916 --> 01:25:46,916
+Buradaki aslına bakarsak en önemli kısım ve entegrasyon testinin merkezinde yer alan kısım, Spring Cloud Contract kısmı.
+
+425
+01:25:47,231 --> 01:26:04,112
+Sprint Cloud Contracts, mikroservisler arasındaki iletişimi test etmek için kullanılıyor. Özellikle kontrakt tabanlı iletişimlerde testleri yapmayı bir hayli kolaylaştırıyor. Bizim de sonraki testlerde de sıklıkla merkezde göreceğimiz araç aslında Sprint Cloud Contracts aracı.
+
+426
+01:26:05,395 --> 01:26:15,675
+Bu araç sayesinde API'ler arasında doğru etkili işin gerçekleşip gerçekleşmediği hem provider tarafı için hem de consumer tarafı için sözleşme testlerinin yazılması sağlanıyor.
+
+427
+01:26:15,755 --> 01:26:17,295
+Contract testlerinin yazılması sağlanıyor.
+
+428
+01:26:18,095 --> 01:26:24,875
+Burada da göreceğiniz üzere Spring Cloud Contract consumer tarafı için bir wiremog server oluşturuyor, bir taklitçi server oluşturuyor.
+
+429
+01:26:24,875 --> 01:26:27,871
+Bu sayede consumer tarafını tıklayırken...
+
+430
+01:26:27,872 --> 01:26:33,132
+Provider tarafı ayağa kaldırılmadan provider'ı taklit edebilen bir server konfigür edilmiş oluyor.
+
+431
+01:26:33,952 --> 01:26:37,872
+Ve çok daha hızlı bir şekilde test icra edilmiş oluyor.
+
+432
+01:26:39,752 --> 01:26:46,392
+Diğer taraftan da bakacak olursak, Spring Cloud Contract bir kod generator gibi çalışıyor.
+
+433
+01:26:46,472 --> 01:26:50,612
+Provider site tarafı için HTTP test klasını oluşturarak.
+
+434
+01:26:52,115 --> 01:26:56,096
+Testin, order kontrollarının testini yapacak olan kodları jenerit ediyor.
+
+435
+01:26:57,779 --> 01:27:22,139
+Burada REST Assured Mock MVC kullanıyor. Speed Cloud Contract. Order Service'ın kontrollerlerini bu sayede kontrol ediyor. REST Assured Mock MVC birazdan kod örneğinde de göreceğiz. RESTful Web hizmetlerinin Mock MVC altyapısını kullanarak test edilmesini sağlayan bir araç. Bundan sonraki entegrasyon testlerinde de Speed Cloud Contract'in temel rolü aslında 3 aşağı 5 yukarı aynı olacak. Bunu göreceğiz.
+
+436
+01:27:24,564 --> 01:27:45,304
+REST API için örnek bir kontrat, kontrakt kod örneği var burada. Temel olarak kontraktlar aslında bir yazılımda iki sistemin, iki hizmetin nasıl etkileşime gireceğini belirleyen bir anlaşma tipi. Hem consumer tarafı hem provider tarafı bu kontrakt içerisinde yer alan içeriye kalmak zorunda. Biz entegrasyon testlerinde aslında.
+
+437
+01:27:45,811 --> 01:28:04,932
+Bu içeriye bağlı kalıp kalınmadığının kontrolünü sağlıyoruz. Etkileşimin tanımlamasının yapıldığı kısım burası. Yine aynı şekilde verinin nasıl bir veri gönderileceği, hangi formatta veri gönderileceği ve hangi parametrenin gerektiği, hangi yanıtların döneceği kısmı tamamen aslında kontraklerde yazılı olarak belirtiliyor.
+
+438
+01:28:05,492 --> 01:28:12,372
+Spring Cloud Contract de bu kontraklerden faydalanarak hem consumer hem de provider tarafı için testlerin yazılımını sağlıyor.
+
+439
+01:28:16,595 --> 01:28:30,055
+Burada order service için bir contract entegrasyon testinin yazılması örneği var. Bu test order kontrollerinin doğru şekilde yapılandırıldığından ve belirtilen mock verilerle doğru şekilde yanıt verdiğinden emin olur.
+
+440
+01:28:30,420 --> 01:28:48,500
+Bu aslında Provider tarafındaki bir test. Setup kısmında Order Service ve Order Repository nesnelerinin oluşturulduğunu görüyoruz. Fakat bunlar Mock nesneler yani taklitçi nesneler. Order Service ve Order Repository taklit eden nesneler. Ardından Order Controller nesnesinin oluşturulduğunu görüyoruz.
+
+441
+01:28:51,199 --> 01:28:54,500
+Yine Rest Deshirt Mock MVC'yi burada görüyoruz.
+
+442
+01:28:54,836 --> 01:28:59,216
+Burada REST-SHIRT kullanılarak Order Controller'ın test edilmesi için yapılandırma yapılmış oluyor.
+
+443
+01:28:59,816 --> 01:29:08,776
+Provider testleri bu şekilde icra edilmiş oluyor. Yine bu kısımda FindById metodu çağrılarak belli transiparşinin döndürülmesi sağlanıyor.
+
+444
+01:29:10,196 --> 01:29:16,356
+Temel amacı API'nin istemcilerin istediği şekilde yanıt verdiğini doğrulamak için gerekli ortama hazırlamak.
+
+445
+01:29:17,816 --> 01:29:22,036
+Consumer tarafındaki teste göz atacak olursak.
+
+446
+01:29:22,676 --> 01:29:39,235
+Burada da API Gateway'nin Order Service Proxy klası, Order ID uç noktasını çağırıyor. Point'ine istek gönderiyor. Bu isteklerin sözleşmelere uygun, kontraktlara uygun olup olmadığını test etmek için Order Service Proxy Integration test sınıfı kullanılıyor.
+
+447
+01:29:41,716 --> 01:29:48,796
+Bu test sınıfı yine Spring Cloud Contract tarafından otomatik olarak yazılan bir test sınıfı.
+
+448
+01:29:50,484 --> 01:30:03,724
+Setup kısmına bakacak olursak, bu setup kısmı testlerden hemen önce çalıştırılıyor. Order Destinations nesnesi oluşturuluyor. Order Service Proxy'nin doğru yörelle yapılandırmasını sağlıyor.
+
+449
+01:30:04,844 --> 01:30:10,904
+Ve Order Service yöreller burada aslında Winemok'un çalıştığı port kullanarak dinamik olarak belirleniyor.
+
+450
+01:30:11,784 --> 01:30:17,804
+Hemen altında aslında testin gerçekleştiği iki adet metot görüyoruz. Bunlardan bir tanesi Should Verify Existing Customer.
+
+451
+01:30:18,323 --> 01:30:36,363
+Burada bu test Order Service Proxy'yi kullanarak Find Order By ID ile sorgulama yapıyor ve siparişin durumunu kontrol ediyor. Bu örnek için sipariş ID'si verilen ID mi ve durum Approval Pendling mi bu doğrulanıyor. Eğer ikisi de doğrulanmış olursa test geçirmiş oluyor.
+
+452
+01:30:36,363 --> 01:30:42,943
+Bir diğer metot da Should Fail To Find Missing Order testi. Burada da olmayan bir siparişin sorgulaması test ediliyor.
+
+453
+01:30:43,376 --> 01:31:00,236
+Burada beklenen durum Order Not Found Exception fırlatılması. Order Service Find Order By ID 555, 555 ID'li bir sipariş yok. Olmayan bir siparişin sorgulaması yapılıyor. Ve burada Exception fırlatılması bekleniyor.
+
+454
+01:31:02,612 --> 01:31:16,872
+Bir başka etkileşim tipi olan Publish Subscribe etkileşimi. Burada da yine kendi örneğimizden gidecek olursak Order Service sürekli olarak order'lar güncellendikçe ve yeni order'lar geldikçe eventler yayınlanıyor.
+
+455
+01:31:16,872 --> 01:31:25,872
+Bu eventlere alan ve aslında Order Service'e Subscribe olan kısım Order History Service. Bu olayın consumer'larından bir tanesi.
+
+456
+01:31:27,956 --> 01:31:36,136
+Bu etkilişim doğru bir şekilde gerçekleşip gerçekleşmediğinin testi de aslında gerçekleştirmesi gereken bir başka entegrasyon testi.
+
+457
+01:31:36,695 --> 01:31:41,716
+Burada Provider tarafında Order Domain Event Publisher klasını görüyoruz.
+
+458
+01:31:41,996 --> 01:31:45,496
+Burada kontrakte uygun eventler yayınlanıp yayınlanmadı doğrulanıyor.
+
+459
+01:31:45,872 --> 01:32:08,472
+Consumer tarafında ise Order History Event Hender'ın sözleşmedeki örnek eventlerin doğru şekilde tükettiği durum. Yani burada bir yine messaging stop durumu var. Split Cloud Contract tarafından oluşturulmuş sahte bir yani taklitçi bir provider var. Bu provider'ın publish ettiği eventleri doğru bir şekilde tüketip tüketmediğinin testi Consumer tarafında yapılıyor.
+
+460
+01:32:09,332 --> 01:32:11,792
+Yine bir contract örneği görüyoruz burada.
+
+461
+01:32:13,423 --> 01:32:33,043
+Diğer kontrakta olduğu gibi aslında yine eventin bir kanalı, body kısmı, mesaj başlıkları gibi kontrakla alakalı detayların, parametrelerin yer aldığı bir kısım görüyoruz. Bunun haricinde de bir label kısmı var. Label kısmı consumer testi tarafından eventin speak cloud kontrak tarafından yayınlanmasını tetiklemek için kullanılıyor.
+
+462
+01:32:33,684 --> 01:32:43,804
+İmput kısmının içindeyse TriggeredPy görüyoruz. TriggeredPy'da üretilen test metodunun eventin yayınlanmasını tetiklemek için çağırdığı üst sınıfın adı aslında Order Created.
+
+463
+01:32:46,583 --> 01:33:00,083
+Yine Provider Site Testler için Abstract Base Class. Bu yine Spring Cloud Contract tarafına oluşturulmuş bir sınıf Messaging Base sınıfı. Bu sınıf Order Domain Event Publisher sınıfının yapılandırmada kullanılıyor.
+
+464
+01:33:00,627 --> 01:33:14,547
+Orada domain event publishirse yayınların eventlerin doğru olup olmadığının kontrolünü sağlıyor. Bu testin temel amacı sağlayıcı tarafında olayları doğru bir şekilde eventlerin doğru bir şekilde yayınlanıp yayınlanmadığını doğrulamak.
+
+465
+01:33:15,207 --> 01:33:23,267
+Spring Cloud Contract sayesinde yine bu testler kontraktlere dayalı olarak yazılıyor. Etkileşimler doğru bir şekilde gerçekleştiğinden emin olunuyor.
+
+466
+01:33:24,372 --> 01:33:46,231
+Son etkileşim tipimiz asenkron request-response ilişkisi. Buradaki kontrak yazımı aslında rest request-response'a benziyor. Burada iki taraf var. Birisi requester, bir tarafta replyer, gönderici ve yanıtlayıcı. İstek gönderici komut mesajını gönderen servis. Yanıtlayıcı bu komut mesajını işleyip geri yanıt gönderen servis.
+
+467
+01:33:46,608 --> 01:34:00,568
+Bu iki taraf komut mesajının kanal ismini ve komut ile yanıt mesajlarının yapısını belirleme konusunda anlaşma sağlaması gerekiyor. Bu anlaşmanın doğru bir şekilde sağlanıp sağlanmadığını testte yine entegrasyon testleri kısmında icra ediliyor.
+
+468
+01:34:01,300 --> 01:34:13,440
+Provider tarafındaki testlere bakacak olursak, burada Kitchen Service Command Handler, komutları işleyen kısım, komutları doğru bir şekilde işlediğini, yanıtları doğru bir şekilde gönderdiğinin doğrulaması Provider tarafında yapılıyor.
+
+469
+01:34:13,900 --> 01:34:24,000
+Consumer tarafında ise Kitchen Service Proxy'nin kontraktlara uygun komut gönderdiğinin ve kontraktten gelen örnek yanıtların doğru şekilde işlendiğinin doğrulaması yapılıyor.
+
+470
+01:34:24,532 --> 01:34:30,811
+Bu şekilde her iki taraf için de etkileşimi doğru şekilde gerçekleştirildiği doğrulanmış oluyor aslında.
+
+471
+01:34:31,891 --> 01:34:38,032
+Dördüncü tip etkileşim tipi için de entegrasyon testini bu şekilde açıklamış oldum.
+
+472
+01:34:38,391 --> 01:34:40,972
+Kısaca entegrasyon testi nedir, niçin kullanılır?
+
+473
+01:34:41,532 --> 01:34:46,612
+Farklı etkileşim tipleri için entegrasyon testleri nasıl işler?
+
+474
+01:34:46,792 --> 01:34:51,112
+Sprint Cloud Contract nedir, niçin kullanılır gibi kısımlara değinmeye çalıştım.
+
+475
+01:34:51,572 --> 01:34:53,912
+Vakit ayırdığınız için, dinlediğiniz için teşekkür ederim.
+
+476
+01:34:54,872 --> 01:34:56,172
+Biz de teşekkür ederiz.
+
+477
+01:34:57,972 --> 01:35:03,252
+Evet, testlerin de konularını görmüş olduk. Teşekkür ederim.
+
+478
+01:35:04,532 --> 01:35:06,731
+Ve bu haftaki sunumları tamamladık.
+
+479
+01:35:08,812 --> 01:35:12,312
+Haftaya yine üniteyle devam edeceğiz.
+
+480
+01:35:14,412 --> 01:35:16,292
+O zaman size iyi çalışmalar.
+
+481
+01:35:17,011 --> 01:35:20,951
+İyi haftalar diliyorum. Görüşmek üzere. Dersi sonlandırıyorum.
+
+482
+01:35:21,351 --> 01:35:21,951
+Sağ olun hocam.

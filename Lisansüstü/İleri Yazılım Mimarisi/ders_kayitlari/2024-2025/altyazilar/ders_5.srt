@@ -1,0 +1,1215 @@
+1
+00:00:15,891 --> 00:00:27,071
+Günaydın arkadaşlar. Kusura bakmayın. Okulun online yıldız sisteminde bir sorun var galiba. Çok zor bağlandım. Bilmiyorum siz de yaşadınız mı?
+
+2
+00:00:42,835 --> 00:00:43,936
+Sesim geliyor değil mi?
+
+3
+00:00:45,655 --> 00:00:46,256
+Evet hocam.
+
+4
+00:00:46,275 --> 00:00:46,735
+Giyor hocam.
+
+5
+00:00:47,235 --> 00:00:50,355
+Tamam. Kimseden ses çıkmayınca dedim bir sorun mu var?
+
+6
+00:00:51,635 --> 00:00:55,515
+Tamam. O zaman geçen haftadan [öğrenci] kalmıştı.
+
+7
+00:00:56,435 --> 00:01:00,775
+Sivki, URS konusunda. Hazırsan sen başlayabilirsin.
+
+8
+00:01:01,235 --> 00:01:01,855
+Tamamdır.
+
+9
+00:01:15,540 --> 00:01:17,020
+Geliyor mu görüntü hocam?
+
+10
+00:01:17,560 --> 00:01:17,820
+Evet.
+
+11
+00:01:18,620 --> 00:01:26,340
+Tamamdır. Ben CQRS Vue'ların tasarımından bahsedeceğim bugün. İlk öncelikle bir giriş yapacağız. CQRS Vue modülü nasıl?
+
+12
+00:01:26,900 --> 00:01:43,900
+Veri erişim modülü tasarımından bahsedeceğiz. Sonra da var olan bir uygulamaya CQRS Vue nasıl eklenir veya nasıl güncellenir onlardan bahsedeceğiz.
+
+13
+00:01:45,043 --> 00:01:54,883
+Öncelikle, CQRS Vue modeli sahada gördüğünüz gibi içerisinde dışarıdan aldığı sorguları implementleyen bir Query API vardır.
+
+14
+00:02:00,924 --> 00:02:07,543
+Bu ikisi güncelleme ve sorgulama işlemlerini Data Access modülü üzerinden Vue Database'de yapar.
+
+15
+00:02:08,051 --> 00:02:14,051
+Data Access modülü burada aracı olur. Direkt olarak Vue Database'e erişemezler.
+
+16
+00:02:16,051 --> 00:02:24,872
+Modül tasarımında birkaç tane gereksinim var. İlk öncelikle veri tabanının belirlenmiş olması lazım. Aynı şekilde şemanın da belirlenmiş olması lazım.
+
+17
+00:02:26,171 --> 00:02:34,292
+Data Access'te güncellemeler idem potent olacak şekilde yapılmalıdır. Ve eş zamanlı güncellemelerinde sistemi bozmaması gerekmektedir.
+
+18
+00:02:34,867 --> 00:02:44,827
+Aynı zamanda olan bir sisteme yeni bir view modeli eklenecekse veya şeması değişecekse, bu içindeki view veritabanını oluşturacak bir mekanizma bulunmalıdır.
+
+19
+00:02:45,728 --> 00:02:52,507
+Bir de istemcilerin replikasyon gecikmesinden etkilenmemiz gerekmektedir. Bunları da detaylı olarak konuşacağız.
+
+20
+00:02:53,647 --> 00:02:57,848
+Veritabanında ilk önce hangi veritabanı kullanacağımızın seçimi önemli.
+
+21
+00:03:00,532 --> 00:03:12,752
+Veri tabanın sorgulama ve güncelleme işleminin efektif olması bizim için en önemli olan şeydir. Veri tabanı seçerken de sorgu ve güncelleminin karakteristikleri bizim için büyük bir rol oynayacaktır.
+
+22
+00:03:12,752 --> 00:03:26,852
+Sağda gördüğünüz gibi, mesela Primary Key üzerinden bir JSON-OBIS'i aranacaksa o zaman MongoDB veya DynamoDB gibi bir öneride bulunuyor. Veya işte Text Query'si aranacaksa Elastic Search gibi bir motor öneriyor gibi.
+
+23
+00:03:28,948 --> 00:03:51,687
+SQL ile NoSQL'in farkları da şunlar. SQL'in ölçeklenebilirlikte kısıtlı olmasından dolayı çıkan NoSQL veri tabanları genelde daha esnek veri modeli, daha iyi performans ve tabii daha iyi ölçeklenebilirlik sunuyor. Fakat SQL kadar kompleks işlemler, kompleks kuyveliler yapamıyor.
+
+24
+00:03:53,907 --> 00:04:02,647
+Bu esnek veri modeli ve performans sayesinde de CQRS modüllerinde NoSQL veri tabanları SQL'e göre daha iyi bir seçim olarak kalıyor.
+
+25
+00:04:03,427 --> 00:04:12,967
+Çünkü CQRS modüllerinde genelde yapılan işlemler basit işlemler oluyor. Kompleks işlemler yapılmıyor. Bu yüzden NoSQL'in o dezavantajından etkilenmemiş oluyor.
+
+26
+00:04:14,288 --> 00:04:14,907
+Buna rağmen...
+
+27
+00:04:16,244 --> 00:04:39,784
+Modern donanımlarda SQL veritabanların performansı iyi olabiliyor, daha iyi olabiliyor. Şu anki yazılımcıların, IT'cilerin hala hazırdaki de SQL tecrübesi, gelen eventlerin raporlanması için kullanılan araçlar ve bazı ilişkisel olmayan özellikleri de içerebilme durumları olduğu için SQL veritabanlar da hala kullanılabiliyor.
+
+28
+00:04:42,548 --> 00:04:59,168
+Güncelleme işlemleri ise şöyle. Genelde primary key kullanılarak güncelleme yapılıyor. Örneğin siparişler tablosundan bir tane sipariş güncellenecekse, hangi sipariş ID'sini güncelleneceksek onu bulup, o anahtardan onu bulup, satırı bulup onu güncelliyoruz.
+
+29
+00:04:59,908 --> 00:05:03,968
+Fakat bazen foreign key de kullanarak güncelleme yapılması gerekebiliyor.
+
+30
+00:05:04,432 --> 00:05:24,432
+Örneğin teslimat oluşturulduğu eventi gelirse sipariş ID bize verilebilir. Sipariş ID'yi direkt olarak güncelleyebiliriz. Fakat mesela teslimat alındığı eventinde sipariş ID gelmeyebilir. Bu durumda da o teslimatın ID'sini kullanarak forenky üzerinden siparişi güncellememiz gerekir.
+
+31
+00:05:29,684 --> 00:05:45,344
+Foreniki güncellemelerinde indeksleme kullanıyor ve verimli bir şekilde güncellemi yapabiliyor. Fakat diğer genelde NoSQL tabanlarında çoğunluğunda daha kompleks işlemler gerektirebiliyor. Direkt olarak verimli bir şekilde bunları halledemiyor.
+
+32
+00:05:47,124 --> 00:05:51,424
+Şimdi de bu Data Access modülü, veriş erişim modülünü nasıl tasarlayacağız ona bakacağız.
+
+33
+00:05:52,500 --> 00:06:14,620
+Öncelikle Event Tender'lar ve sorgulama API'yu veri tabanından işlem yapmak için bu veri erişim modülünü kullanacak. İçinde veri erişim objesi, DAO dediğimiz ve yardımcı sınıflar bulunuyor. Event Tender'ların güncelleme işlemleri ve sorgu işlemleri bu veri erişim objesinin görevidir.
+
+34
+00:06:15,187 --> 00:06:23,708
+Aynı zamanda veri tabanı API ile bizim yüksek seviyedeki kodumuzdaki veri tipleri arasında köprü görevi görür.
+
+35
+00:06:25,288 --> 00:06:34,168
+Bu ilk başta dediğimiz gibi eş zamanlı güncellemeleri idare edebilmeli ve güncellemelerin idam potent olduğundan emin olması gerekmektedir.
+
+36
+00:06:34,168 --> 00:06:36,168
+Verişim modülünün.
+
+37
+00:06:38,548 --> 00:07:02,068
+Eş zamanlı güncellemelerin desteklenmesi bu şekilde. Sonsuz bir şekilde hallolmaları lazım. Çünkü mesela diyelim ki sipariş ve teslimat eventi geldi. İki tane aynı anda siparişe yapılacak iki eventin etkisi de. Fakat aynı anda update edilmeye çalışırsa birbirlerinin üstüne yazabilme durumları var. Bu zamanda da bir veri kaybı olacak.
+
+38
+00:07:02,612 --> 00:07:14,692
+Bunu çözebilmek için de iyimser ya da kötümser bir kilitleme mekanizması kullanarak verinin kaybolmamasına aynı anda güncelleme yapamamalarını sağlarız.
+
+39
+00:07:14,972 --> 00:07:17,512
+Bu şekilde bu eş zamanlı güncelleme de desteklemiş oluruz.
+
+40
+00:07:19,152 --> 00:07:26,532
+Güncellemenin idem patent olması ise şöyle bir event ender'de aynı event birden çok keste teklenebilir.
+
+41
+00:07:26,995 --> 00:07:34,495
+Mesela sağdaki gördüğümüz örnekte ilk iki paket bir ağ hatası yüzünden tekrarlanmış.
+
+42
+00:07:36,536 --> 00:07:42,716
+Event Handler'ın idem potent olması için aynı event birden çok kez tetiklendiğinde,
+
+43
+00:07:42,716 --> 00:07:50,516
+eğer istenilen sonucu ulaşılabiliyorsa, yani bir kere tetiklendiğinde ve beş kere tetiklendiğinde yine doğru sonuca ulaşabiliyorsa,
+
+44
+00:07:50,956 --> 00:07:52,855
+o zaman idem potenttir diyoruz.
+
+45
+00:07:54,036 --> 00:08:00,096
+Eğer bu idem potenlik sağlanamazsa, geçici olarak bir güncellik kaybı yaşanabiliyor.
+
+46
+00:08:00,815 --> 00:08:05,915
+Yine örnekte gördüğümüz gibi, ilk önce Pickup State'e geçmiş. Oradan Delivered State'e geçmiş.
+
+47
+00:08:05,915 --> 00:08:14,075
+Fakat bu iki paket, bu iki event tekrarlandığı için, son Delivered paketi gelene kadar Pickup State'inde kalmış.
+
+48
+00:08:14,795 --> 00:08:19,315
+Burada kalma süresi de geçici olarak bizde bir güncellik kaybına yol açmış.
+
+49
+00:08:22,163 --> 00:08:33,163
+Eğer bu sistem için kabul edilemez bir şey ise, kritik bir şey ise, o zaman event handlerlarda bu aynı eventleri tespit etmek için bir mekanizma olması gerekmektedir.
+
+50
+00:08:33,163 --> 00:08:39,163
+Bu mekanizmada şöyle, her bir event için eşsiz bir ID oluşturulur.
+
+51
+00:08:39,860 --> 00:08:48,160
+Event Handler ise bu ID'leri kaydeder ve gelen ID'lerin daha önce gelmediğine emin olur.
+
+52
+00:08:48,160 --> 00:08:54,860
+Gelenler arasında var mı yok mu diye bakarak. Eğer yoksa, Event'i işler, varsa o Event'i işlemez.
+
+53
+00:08:54,860 --> 00:09:01,860
+Fakat burada bütün ID'lerin kaydedilmesi de gerekmez. Eğer sıralı bir şekilde ID'ler ilerliyorsa...
+
+54
+00:09:02,128 --> 00:09:21,612
+Maksimum gelen, en büyük gelen ID'yi kaydetmesi yeterlidir. Ondan küçük olanlar zaten daha önce gelmiş eventler demektir. Bir de verinin tutarlı olması gerekmektedir. Yani ne demek? İstemci eğer bir güncelleme komuta attıysa ve hemen ardından bir tane sorgulama komuta attıysa...
+
+55
+00:09:21,652 --> 00:09:31,652
+O zaman, view veri tabanı güncellenmeden bir sorgu yapılmış olur ve güncelleme olmayan veri istemciye geri döndürmüş olur.
+
+56
+00:09:31,652 --> 00:09:35,652
+Bu da bir tutarsızlığa yol açar istemciyle bizim aramızda.
+
+57
+00:09:35,652 --> 00:09:39,652
+Verinin tutarlı olduğunu garantilemek için ise...
+
+58
+00:09:39,764 --> 00:09:48,604
+İstemci bize güncelleme komuta atarken dönüş olarak bizim ona bir token vermemiz gerekiyor.
+
+59
+00:09:49,424 --> 00:09:53,684
+Onun için tokenin içinde de güncelleme yapan eventin id'si olacak.
+
+60
+00:09:54,364 --> 00:09:58,604
+Ki istemci bize sorgulama yaparken bu id'yi tekrar atabilsin.
+
+61
+00:10:00,000 --> 00:10:11,080
+ID'den güncelleme yapılmış mı, yapılmamış mı bakalım. Yapılmadıysa hata döndürelim. Yapıldıysa güncel veriyi döndürelim sistemciye. Bu şekilde tutarlı veriyi de sağlamış oluyoruz.
+
+62
+00:10:12,720 --> 00:10:18,500
+Son olarak da sistemlere CQRSVU ekleme ve güncelleme hususuna bakacağız.
+
+63
+00:10:19,443 --> 00:10:37,144
+Uygulamayan hayatı boyunca illaki yeni bir view ekleme ya da olanı güncellememiz gerekiyor. Çünkü yeni bir sorgulama desteği eklersek veya bir hata çıkarsa, onu çözerken değişirse veya veri taban aşamasına yeni bir şey gelirse yeni bir CQS view eklenecek ya da güncellenecektir.
+
+64
+00:10:37,524 --> 00:10:43,663
+Yeni bir tane eklemek için ilk başta gördüğümüz o diagramda olan şeyleri implement etmemiz yetiyor.
+
+65
+00:10:43,824 --> 00:10:49,964
+Sorgulama modülü verit taban hazırlanıyor. Event Ender'ları diğer eventlere subscribe'lıyoruz.
+
+66
+00:10:50,704 --> 00:10:52,804
+Sonra view zaman içerisinde güncel haline geliyor.
+
+67
+00:10:54,124 --> 00:10:57,624
+Var olan bir view'u güncellemek için de iki tane yolumuz var.
+
+68
+00:10:58,740 --> 00:11:20,800
+İlki arşivlenmiş eventler ile oluşturma. Burada bütün eventleri, yeni oluşturulan bir view'u güncel hale getirmek için arşivliyoruz. Fakat diyelim ki mesela RevitemQ gibi bir mesaj kuyruğu kullanıyoruz eventler için. Burada mesajlar kaydolmuyor. İştendiği gibi siliniyor.
+
+69
+00:11:21,203 --> 00:11:31,203
+Daha modern mesela Kafka'da da bir mesaj tutma süresi var ayarlanabilen. Fakat bu da sonuçta kadar değil. O yüzden bunlar da siliniyor.
+
+70
+00:11:31,203 --> 00:11:42,203
+Bu yüzden arşivlemek için ekstradan AWS gibi ya da daha büyük veri üzerine Apache Spark gibi servisinin kullanılması gerekiyor.
+
+71
+00:11:42,203 --> 00:11:46,203
+Diğer yöntem ise artımlı olarak oluşturma yöntemi.
+
+72
+00:11:46,740 --> 00:12:05,419
+Bir önceki yöntemde sürekli olarak gelen her eventi arşivlediğimiz için zaman arttıkça, zaman geçtikçe yeni bir view oluşturmak için gereken zaman ve kaynaklar artacaktır. Bunun yerine iki adımlı artımlı algoritma denilen algoritmayı kullanıyoruz.
+
+73
+00:12:05,871 --> 00:12:16,891
+Burada da ilk adımımız periyodik olarak her aggregate için oluşturulan bir önceki snapshot'tan sonra gelen eventlerden yeni bir snapshot oluşturuyor.
+
+74
+00:12:17,011 --> 00:12:23,651
+Yani önceki t-1 diki halinden yeni bir tane t anındaki snapshot'ını oluşturuyor.
+
+75
+00:12:24,551 --> 00:12:31,951
+İkinci adım ise bu snapshot'ları ve bu snapshot'lardan sonra gelen event varsa onları kullanarak view'u oluşturmak.
+
+76
+00:12:32,272 --> 00:12:42,332
+Bu da checkpoint alıyormuş gibi gittiği için bir önceki yöntem gibi zaman ve kaynağın artmasına sebep olmayacaktır.
+
+77
+00:12:44,012 --> 00:12:46,832
+Benim sunumum bu kadardı. Teşekkür ederim dinlediğiniz için.
+
+78
+00:12:48,352 --> 00:12:49,792
+Biz de teşekkür ediyoruz.
+
+79
+00:12:50,852 --> 00:12:56,192
+CQRS'e zaten geçen hafta da bakmıştık. Bu hafta tekrar bir hatırlamış olduk. Teşekkür ederiz.
+
+80
+00:12:57,172 --> 00:13:06,831
+Ve bugünkü yani 26 Aralık sunumlarına geçebiliriz. Arif [öğrenci] gelmemiş mi?
+
+81
+00:13:07,211 --> 00:13:12,812
+Merhaba hocam. Arif [öğrenci] bugün gelemedi. Biz aynı yerde çalışıyoruz da size mail de bildirecekti.
+
+82
+00:13:13,731 --> 00:13:15,752
+Bakayım ben de gelmedi mail ama.
+
+83
+00:13:16,451 --> 00:13:20,072
+Belki henüz atmamış olabilir. İşten ötürü katılım sağlayamadı da.
+
+84
+00:13:20,611 --> 00:13:23,672
+Tamam peki. Sorun değil. Haftaya şey yapar.
+
+85
+00:13:24,083 --> 00:13:25,063
+Tamam hocam.
+
+86
+00:13:25,323 --> 00:13:26,783
+O zaman sıra sende.
+
+87
+00:13:27,883 --> 00:13:29,283
+Ben paylaşıyorum ekranını.
+
+88
+00:13:43,700 --> 00:14:05,960
+Geldi iklim değil mi? Evet, sunum umudum da. Benim bugünkü konum end-to-end testler. End-to-end testlerin ne olduğundan, buradaki zorluklardan, tasarımından, performansından genel bir bilgi vereceğim bu konular hakkında.
+
+89
+00:14:11,443 --> 00:14:39,403
+Öncelikle end-to-end test nedir? Buradan bir giriş yapalım. End-to-end testler bir uygulamanın tüm bileşenlerinin birlikte çalışmasını doğrulayan testler. Bu testler bir uygulamanın gerçek kullanım senaryolarını simüle ediyor. Kullanıcı etkileşimlerini ve iş süreçlerinin doğru çalıştığını test ediyor. Bu testler sistemin uçtan uca entegrasyonunu ve işlevselliğinin beklendiği gibi çalıştığını.
+
+90
+00:14:39,443 --> 00:14:53,043
+Garanti altına almak için yapılıyor. Burada test piramidi var. Bunu görüyoruz. Burada end-to-end testler test piramidinin en üst katmanında yer alıyor. Ve en karmaşık testleri arasında bulunuyor.
+
+91
+00:14:53,043 --> 00:15:03,543
+Test piramidinin yapısında en alt katmanda yönüt testler var. Bunlar küçük ve hızlı testler. Bu orta katmanda entegrasyon testleri var.
+
+92
+00:15:04,115 --> 00:15:09,535
+Bunlar da sistemin birleşenlerinin birlikte doğru çalışıp çalışmadığını test ediyorlar.
+
+93
+00:15:10,115 --> 00:15:17,115
+En üstte. Bunlar da bir sistemin bütün olarak doğru çalışıp çalışmadığını test ediyorlar.
+
+94
+00:15:17,115 --> 00:15:19,115
+Bu testler...
+
+95
+00:15:19,903 --> 00:15:39,744
+Tüm sistemin birleşenlerini kapsadığı için az sayıda yazılmalı. Çünkü yavaş, kırılgan ve zaman alıcı olabiliyorlar. Bu tesislerin amacı sistemin tüm parçalarının birlikte çalıştığını garanti altına almak. İlerleyen saytlarda da avantajlarını ve dezavantajlarını ele alacağız.
+
+96
+00:15:40,371 --> 00:15:55,291
+Burada tekrar piramit katmanlarından bahsedeceğim. Burada az önce de söylediğim gibi unit test en altta temel birleşenleri tesis ediyor. Entegrasyon testleri orta katmandaydı. Hizmetlerin birbirleriyle nasıl çalıştığını tesis ediyor.
+
+97
+00:15:56,052 --> 00:16:13,032
+End-to-end testlerde en üste uygulamanın tamamını tesis ediyor. Yavaş çalıştığı, kırılgan bir yapıya sahip olduğu ve geliştirmesi zaman aldığı için bu testler en üst katmanda yer alıyor. Bu testlerin sayısının az olması tavsiye ediliyor. Bu özelliklerinden ötürü.
+
+98
+00:16:13,032 --> 00:16:24,052
+Burada end-to-end testlerin rolü uygulamanın işlevselliğini bir bütün olarak doğrulaması ve kullanıcı perspektifinden aslında senaryo.
+
+99
+00:16:24,052 --> 00:16:35,812
+Kapsamı da tüm sistemin çalışabilirdiğini test etmesi. Burada altyapı hizmetlere dahil olmak üzere birden fazla hizmetin entegrasyonunu kapsıyor bu testler.
+
+100
+00:16:36,812 --> 00:16:41,711
+Burada öneri olarak NPM testlerin sayısını azaltmak.
+
+101
+00:16:42,163 --> 00:17:02,903
+Yani az olması tavsiye ediliyor. Çünkü yavaş ve kırılganlar. Bu yüzden de mümkün olduğunca bu testlerin sayısı az olmalı. User Journey testleri gibi daha geniş ve kapsamlı verimli test stratejileri bu testler yerine benimsenmeli.
+
+102
+00:17:03,668 --> 00:17:13,548
+Bu testlerin zorlukları yavaşlık, kırılganlık, geliştirme ve bakım zorlukları ve ölçeklendirme problemleri olarak kategorilendirilebiliriz.
+
+103
+00:17:14,627 --> 00:17:19,467
+Entren testler tüm uygulamayı ve altyapı çalıştırdığı için genellikle yavaş.
+
+104
+00:17:19,467 --> 00:17:25,307
+Test sürecinde birçok hizmetin başlatılması ve senaryoların tamamlanması zaman alıyor.
+
+105
+00:17:26,907 --> 00:17:30,708
+Test sürecinin tamamlanması ve geliştirme döngüsünü uzatıyor.
+
+106
+00:17:31,667 --> 00:17:47,847
+Çok sayıda hareketli parça var burada. Yani hizmetler ve alt yapı gibi. Bir veya daha fazla hizmetin çalışmaması durumunda testlerin başarısız olma ihtimali yükseliyor. Testlerin güvenirliği azalıyor. Sık sık fospozitif sonuçlar üretebiliyor.
+
+107
+00:17:49,236 --> 00:18:16,536
+Testlerin yazılması ve sürdürülmesi zaman alıyor. Herhangi bir yapılan değişiklik birçok testleri etkileyebiliyor ve testleri güncellemeyi zorunlu kılıyor. Testlerin bakımı ve maliyeti karmaşık bir hale geliyor. Yüzlerce hizmet veya test içeren sistemlerde ölçeklenebilirlik zorlaştığı için, bu da burada büyük bir sorun, daha büyük uygulamalarda testlerin yürütülmesi sağlıkları alabiliyor.
+
+108
+00:18:17,236 --> 00:18:19,576
+Küçük ve özel tesislerin önlemini arttırıyor.
+
+109
+00:18:20,376 --> 00:18:24,876
+Bu da yavaşlığı ve kırılganlığı azaltmak için test senaryoları optimize edilebilir.
+
+110
+00:18:24,876 --> 00:18:28,516
+Örnek olarak User Journey tesisleri kullanılabilir.
+
+111
+00:18:29,396 --> 00:18:32,436
+Daha az ancak daha etkili end-to-end tesisleri yazılabilir.
+
+112
+00:18:33,256 --> 00:18:39,736
+Performans iyileştirmesi için de Gradle Docker Compose gibi araçlarla test altyapısı optimize edilebilir.
+
+113
+00:18:40,496 --> 00:18:42,296
+Pardon, otomatize edilebilir.
+
+114
+00:18:44,531 --> 00:19:01,451
+Daha önce de açıkladığım gibi, bunlardan mümkün olduğunca az yazmak en iyisi. User Journey testleri yazmak iyi bir sığ strateji oluyor bu noktada. Bir User Journey testi bir kullanıcının sistemdeki yolculuğuna karşılık geliyor.
+
+115
+00:19:01,751 --> 00:19:12,451
+Örnek olarak sipariş oluşturma, revize etme ve iptal etmeyi ayrı ayrı test etmek yerine üçünü de yapan tek bir test yazabiliriz. Bu yaklaşım...
+
+116
+00:19:12,531 --> 00:19:36,951
+Yazılması gereken test sayısını azaltıyor ve test yürütme süresini de kısaltıyor. Burada test senaryolarını end-to-end testte tasarlanırken test senaryoları belirleniyor. Burada gerçek kullanıcı davranışlarına dayanarak bir sistemdeki kritik yolculuklar belirleniyor. Test edilecek işlevlerin sistemdeki etkileri analiz ediliyor.
+
+117
+00:19:40,180 --> 00:19:59,380
+Görsel destek ve örneklerden faydalanabiliyor. Burada örnek olarak sipariş oluşturma, revize etme ve ip iptal etme örneğini koydum. Burada adımlarda kullanıcı geçerli bir kredi kartıyla bir sipariş veriyor. Bu siparişi revize ediyor.
+
+118
+00:20:04,147 --> 00:20:07,948
+İhtiyaçlarını ekliyor. Son olarak da bunu iptal ediyor.
+
+119
+00:20:10,948 --> 00:20:16,768
+Burada örnek senaryo olarak Görkin'in kullanımından bahsedeceğim.
+
+120
+00:20:17,107 --> 00:20:26,008
+Görkin, iç dünyasında paydaşların anlayabileceği bir dil kullanarak test senaryolarını yazmaya olanak sağlayan bir domenist spesif.
+
+121
+00:20:26,319 --> 00:20:52,240
+Spesifik bir dil. Given When'den yapısını kullanarak testleri yapılandırıyor. End-to-end testler kabul testleri gibi iş dünyasına yönelik testler. Bunlar iş dünyasındaki kişilerin anlayabileceği üst düzen bir DSL yazmak mantıklı oluyor. Örneğin End-to-end testleri görken kullanarak yazabiliriz.
+
+122
+00:20:55,188 --> 00:21:08,788
+Burada da bu dili kullanarak yazılmış bir örnek var. Aslında hani ben A dilini biliyorumdur, karşımdaki C dilini biliyordur ama burayı okuyarak ikimiz de aslında buradaki test senaryolarını anlayabiliyoruz.
+
+123
+00:21:11,124 --> 00:21:15,324
+Yani burada aynı dili konuşarak ortak bir şeyi anlamak için kullanılıyor.
+
+124
+00:21:16,324 --> 00:21:21,324
+Ve teknik olmayan ekiplerin de test senaryolarını anlamasını sağlıyor.
+
+125
+00:21:22,384 --> 00:21:31,403
+Görgün kullanımın avantajları burada iş birliği kolaylığı, doğrudan anlaşılabilirlik ve otomasyon imkanı sağlıyor.
+
+126
+00:21:34,163 --> 00:22:01,483
+AntoAntestler tüm uygulama ve altyapı hizmetlerini bir arada çalıştırmaya gerektiriyor. Uygulamanın gerçek kullanıcı deneyimi koşullarında nasıl davrandığını doğruluyor. Burada testlerin başlaması için birden fazla hizmetin ve altyapının örnek olarak veri tabanı ve API'ları verebiliriz. Bunların başlatılması gerekiyor. Gradle Docker Compose gibi araçlar testler sırasındaki gerekli tüm konteynerleri başlatıyor.
+
+127
+00:22:02,163 --> 00:22:14,644
+Burada örnek uygulama olarak FTGO test modülünden bahsedeceğim. Burada gör ki senaryolarla yazılmış testler Kulkenberg kullanarak çalıştırılıyor.
+
+128
+00:22:14,764 --> 00:22:26,743
+Burada da Kulkenberg kompoz eklentisi testlerden önce gerekli konteynları başlatıyor. Basit bir uygulama için tüm konteynları başlatıp testleri çalıştırmak 4-5 dakika kadar sürebiliyor.
+
+129
+00:22:30,163 --> 00:22:31,723
+O da önemli ölçüde uzayabiliyor.
+
+130
+00:22:33,923 --> 00:22:40,403
+Burada performans sorunları yüzlerce konteynır ve test olduğunda yürütme süreleri çok fazla uzuyor.
+
+131
+00:22:40,604 --> 00:22:43,483
+Yavaş test döngüleri de geliştirme sürecini etkiliyor.
+
+132
+00:22:44,463 --> 00:22:48,663
+Çözüm olarak daha az, daha etkili uçtan önce testler yazılabilir.
+
+133
+00:22:48,663 --> 00:22:55,723
+Ve daha hızlı test döngüleri için test piramidinin en az seviyesindeki testlere odaklanılabilir.
+
+134
+00:22:57,779 --> 00:23:23,000
+Performans sorunları burada bahsettiğimiz gibi yavaşlık, kırılganlık ve maliyet. Tüm sistemi çalıştırması nedeniyle test süresi uzuyor, gelişimi ve test döngüleri yavaşlıyor ve ürünün teslim süresini de etkiliyor bu. Birden fazla hizmet ve altyapı olduğu için testler başarısız olma ihtimali yükseliyor. Yüksek işlem gücü ve kaynak gereksinim nedeniyle de maliyet artıyor.
+
+135
+00:23:23,892 --> 00:23:33,072
+Burada User Journey testlerine odaklanılabilir. Kritik işlevlere odaklanan bu test senaryolarından yazılabilir.
+
+136
+00:23:33,748 --> 00:23:45,568
+Test kapsamı arttırılıp test sayısı azaltılabilir. Paralel test çalışma ile test süresi azaltılıp test süresi optimize edilebilir.
+
+137
+00:23:46,968 --> 00:23:52,928
+Sıkkın olan hizmetler için ortam bir kere oluşturulur ve hep aynı ortam kullanılır.
+
+138
+00:23:54,068 --> 00:23:59,348
+Test piramidinin en az seviyesindeki testler arttırılır ve end-to-end testlerinin yükü azaltılır.
+
+139
+00:24:00,180 --> 00:24:14,039
+Tesisleri manuel müdahaleye ihtiyaç durmadan çalışması sağlanabilir. Hataların erken bir şekilde tespit edilmesiyle düzeltme maliyeti düşürülebilir.
+
+140
+00:24:14,644 --> 00:24:28,884
+Aynı anda birden fazla test çalıştırılarak test çalıştırma süresi azaltabilir. Yani bir testte 100 test, bir makinada bir test 100 test arda arda koşacak yerine daha fazla makinada testler daha kısa sürede koşabilir.
+
+141
+00:24:30,723 --> 00:24:41,703
+Sanal makineler ve dakır konteynları kullanılarak altyapı yüke azaltılabilir. Performans darboğazlarını belirlemek için de SCP ve belle kullanımı izlenebilir.
+
+142
+00:24:44,468 --> 00:24:50,908
+Özelleştirilmiş end-to-end testler, belirli iş süreçlerini ve user journey
+
+143
+00:24:51,284 --> 00:25:02,404
+Testlerini hedefleyerek kapsama daraltılmış testler. Genel uçtan ucu testlerin aksine sadece kritik işlevselliklerin doğru çalıştığını doğrulama odaklanıyor.
+
+144
+00:25:03,884 --> 00:25:13,724
+Özelleştirilmiş entelitezlerin avantajları daha hızlı test yürütme süresi sağlıyor ve daha az hizmet bağımlı olduğu için daha az kırılgan yapıda oluyorlar.
+
+145
+00:25:14,464 --> 00:25:18,764
+Kritik alanlara odaklanıyorlar ve kapsamlı testler yerine daha verimli sonuç alıyorlar.
+
+146
+00:25:19,571 --> 00:25:25,851
+Buradaki hedefler, sistem üzerindeki genel test yükünü azaltmak.
+
+147
+00:25:27,251 --> 00:25:51,591
+Küçük ve hedeflenmiş testler olarak ilerliyor. Uygulamanı yalnızca belli bir parçasına test etmek için özelleştirilmiş senaryolar oluşturuyor. Örnek olarak bir sipariş oluşturma testinden bahsetmiştik. Oluştur, yeni öğle reddiv, iyi iptal et gibi. Burada sadece örnek veriyorum. Ödeme işlemini test eden bir senaryo geliştiriyor.
+
+148
+00:25:52,391 --> 00:25:55,011
+Testlerin birbirinden bağımsız olması sağlanıyor.
+
+149
+00:25:55,251 --> 00:26:02,871
+Her testin kendi altyapı ihtiyaçlarını karşılayabilmesi başarısızlık ihtimalini azaltıyor.
+
+150
+00:26:03,651 --> 00:26:08,371
+Daha az kapsamlı ancak daha sık testler çalıştırarak hızlı geri bildirimler alınıyor.
+
+151
+00:26:10,511 --> 00:26:12,251
+Burada genel olarak baktığımızda...
+
+152
+00:26:13,140 --> 00:26:32,480
+End-to-end testlerin önemi, uygulamanın tüm bileşenlerini ve entegrasyon test ederek gerçek bir kullanıcı deneyimini simüle etmemizi sağlıyor. Sistemin genel işlevselliğini doğrulamada kritik bir rol oynuyor. Buradaki zorluklar yavaşlık kırılganlık ve maliyet testlerin kapsamı büyük olduğu için.
+
+153
+00:26:33,076 --> 00:26:43,916
+Test prelendimini dengeli kullanarak ve yüzürücü örneğe testlere odaklanarak ve özelleştirilmiş testler yaparak buradaki zorlukların önüne geçebiliriz.
+
+154
+00:26:46,356 --> 00:26:53,256
+Burada her bir testin amacı ve kapsamı iyi tanımlanıp gereksiz testlerden kaçırılıp test sayısını bilinize ederek
+
+155
+00:26:55,188 --> 00:26:57,608
+Yine buradaki zorlukların önüne geçebiliriz.
+
+156
+00:26:58,588 --> 00:27:07,908
+Enter testler sistem direninde yüksek güvenilirlik sağlayabilmesi için yapılıyor ve dikkatli bir şekilde yönetilmeli.
+
+157
+00:27:08,528 --> 00:27:15,408
+Zaman ve kaynak maliyetini azaltmak için daha düşük seviyeli testlerle dengeli bir şekilde uygulanmalı.
+
+158
+00:27:16,408 --> 00:27:21,948
+Teknolojik araçlar ve düzgün bir planlamayla test süreçlerinde optimize edilebilmeli.
+
+159
+00:27:23,347 --> 00:27:28,347
+Benim sunumum bu kadar. Sorunuz varsa alabilirim.
+
+160
+00:27:29,668 --> 00:27:32,847
+Teşekkür ediyoruz [öğrenci]. Var mı soru?
+
+161
+00:27:32,847 --> 00:27:37,907
+Yok. Emir [öğrenci]'la devam edeceğiz.
+
+162
+00:27:46,355 --> 00:27:47,576
+Hocam görüntü geliyor mu?
+
+163
+00:27:48,375 --> 00:27:50,455
+Şimdi gelmeye başladı, evet.
+
+164
+00:27:52,816 --> 00:27:58,635
+Herkese günaydın öncelikle. Benim bugün anlatacağım konu güvenli servisler geliştirmek üzerine olacak.
+
+165
+00:27:59,475 --> 00:28:01,836
+İlk olarak bu konu hakkında kısa bir görüş yapacağım.
+
+166
+00:28:02,495 --> 00:28:07,615
+Sonrasında güvenli servisler geliştirmek için yapmamız gereken dört yöntemden bahsedeceğim.
+
+167
+00:28:07,615 --> 00:28:10,615
+Sonrasında monolitik uygulamalarda...
+
+168
+00:28:10,784 --> 00:28:17,384
+Güvenlik sistemlerin nasıl gerçekleştiğini, ardından da mikro servis mimarilerinde nasıl gerçekleştiğini anlatacağım.
+
+169
+00:28:17,384 --> 00:28:21,584
+Sonrasında da sonuç kısmında da genel bir özet yapıp sunumumu bitireceğim.
+
+170
+00:28:21,584 --> 00:28:31,184
+İlk olarak bir servisin üretim ortamından dağıtma hazır hale gelebilmesi için 3 kritik kalite özelliğini karşılanması gerekmektedir.
+
+171
+00:28:31,184 --> 00:28:37,184
+Bunlardan birincisi güvenliktir. Mikro servis mimarilerinde güvenlik.
+
+172
+00:28:37,279 --> 00:28:41,639
+kullanıcı kimliğini güvenli bir şekilde servis arasına aktarmayı sağlamaktadır.
+
+173
+00:28:41,639 --> 00:28:53,279
+Tekil uygulamalarda ve mikrosavis uygulamalarında benzer sistemler olsa da mikrosavis mimarilerinde ek uygulamalar gerekmektedir.
+
+174
+00:28:53,279 --> 00:28:56,680
+İkinci kalite özelliğimiz, yapılandırılabilirlik.
+
+175
+00:28:56,680 --> 00:29:01,279
+Sistemin farklı ortamlar için gereken bilgilerini dışarıdan alabilme yeteneğidir.
+
+176
+00:29:01,279 --> 00:29:03,480
+Dinamik bir şekilde de çalışması gerekmektedir.
+
+177
+00:29:03,859 --> 00:29:21,379
+Üçüncü kalite özelliğimiz, gözlemlenebilirlik. Mikro servislerin dağıtık yapısından dolayı uygulamaların nasıl çalıştığını anlamak ve çözmek zordur. Bundan dolayı izleme ve günlük kaydı gibi yöntemlerle bu izlemeyi sağlamamız gerekmektedir. Bu sunumda güvenliğe yoğunlaşacağız.
+
+178
+00:29:22,539 --> 00:29:27,259
+İlk olarak bu güvenlik önlemlerin alınması için dört yöntemimizin bulunduğunu söylemiştim.
+
+179
+00:29:27,604 --> 00:29:32,704
+Tekil ve mikroservis mimarileri için genel anlamda bu dört yöntem de gerekmektedir.
+
+180
+00:29:33,644 --> 00:29:46,524
+Kimlik doğrulama, uygulama yarışmaya çalışan insanların ya da uygulamaların kimliğini doğrulaması için kullanıcı adı şifre ya da aprenator gibi kimlik bilgisayar kullanılarak yaptığı bir işlemdir.
+
+181
+00:29:47,204 --> 00:29:54,204
+Yetkilendirme ise bir kullanıcı ya da uygulamanın belli veriler üzerinde işlem yapma yetkisine sahip olup olmadığını doğrulayan süreçtir.
+
+182
+00:29:55,604 --> 00:30:00,423
+Denetlemede ise güvenlik sorularını tespit etmek ve bunu izlemek ana amaçtır.
+
+183
+00:30:01,504 --> 00:30:11,604
+Güvenlik süreçler arası iletişimlerde ise ideal olarak Transport to Layer Security dediğimiz, aslında HTTP'yi kullandığımız ve bunu da kimlik doğrulama ile desteklediğimiz bir süreçtir.
+
+184
+00:30:13,224 --> 00:30:18,484
+Burada bir uygulamamız, bir şemamız görünmektedir. Bu şemada monolitik bir uygulama kullanılmaktadır.
+
+185
+00:30:22,612 --> 00:30:30,052
+Browser ya da mobil uygulama aracılığıyla uygulamamıza bir ID Password olarak bir kimlik bilgisi gönderir.
+
+186
+00:30:30,792 --> 00:30:37,892
+Uygulamamız bu kimliği doğruladıktan sonra Station Token dediğimiz bir oturum belirtecini istemceği göre döner.
+
+187
+00:30:38,372 --> 00:30:42,372
+Burada kullanıcı bilgileri, sahip olduğu rol ve yetkileri bulunmaktadır.
+
+188
+00:30:43,332 --> 00:30:46,972
+Sonrasında ise bu jeton, bu belirtecimiz.
+
+189
+00:30:47,604 --> 00:30:57,324
+Kullanıcının sonraki isteklerine eklenir. Böylelikle uygulamamız işlemi yapan kişinin bilgilerini almış olur.
+
+190
+00:30:57,324 --> 00:31:05,004
+Buradaki şavamızda ise aslında bir öncekiyle aynı olmakla birlikte uygulamamızın iç yapısını daha detaylı göstermektedir.
+
+191
+00:31:05,004 --> 00:31:15,004
+Öncelikle yine aynı şekilde kullanıcımız, kullanıcı bilgilerini login under dediğimiz uygulamanın içindeki bir bölüme gönderir.
+
+192
+00:31:15,284 --> 00:31:29,764
+Bu bölüm veri tabanı üzerinden kullanıcı kimlik bilgilerini doğrular. Bunu başarılı bir şekilde yaparsa, Station dediğimiz bir oturumda kullanıcı ID'sini ve sahip olduğu rolü ve yetkilerini burada belirtir.
+
+193
+00:31:29,764 --> 00:31:38,264
+Üçüncü adımda ise bu bilgilerini tekrardan Station'a, client'e geri gönderir. Dördüncü adımda bu Station,
+
+194
+00:31:38,304 --> 00:31:43,124
+Kullanıcının sonraki isteklerine eklenir ve oturum tabanını güvenli iletilir.
+
+195
+00:31:43,804 --> 00:31:49,284
+Bundan sonra buradan iletildikten sonra da Security Context dediğimiz bir güvenlik bağlama oluşturulur.
+
+196
+00:31:49,964 --> 00:31:55,564
+Burada da 6. adımda ise kullanıcının talep ettiği işlemin gerçekleştirip gerçekleştirilmeyeceğine karar verilir.
+
+197
+00:31:57,004 --> 00:32:00,144
+Onolitik uygulamalarda güvenlik işlemi bu şekildedir.
+
+198
+00:32:00,463 --> 00:32:08,463
+Ancak mikroservis mimarilerinde bu doğrudan uygulanamaz. Çünkü bu yaklaşımlar dağıtık yapıya uygun değildir.
+
+199
+00:32:09,463 --> 00:32:17,463
+Dağıtık yapıya uygun olmamasının iki temel sebebi, In-Memory Security Context dediğimiz bellekçi güvenlik bağlamı.
+
+200
+00:32:17,463 --> 00:32:25,131
+Monolitik uygulamalarda güvenlik bağlamı ve kullanıcının kimliğini işlem sırasında taşınmak için kullanılır.
+
+201
+00:32:27,220 --> 00:32:36,480
+Mikro servis mimarilerinde her hizmet bağımsız çalışır ve ortak bir paylaşımlı belleği söz konusu değildir. Bundan dolayı mikro servis mimarilerinde bu uygulanamaz.
+
+202
+00:32:37,652 --> 00:32:49,212
+İkinci sebebi ise merkezi oturumdur. Bir önceki görselde de bahsettiğimiz gibi monolitik uygulamalarda bellekçi oturumda merkezi oturumda kullanıcı bilgileri bulunmaktadır.
+
+203
+00:32:49,832 --> 00:32:56,972
+Ancak bu hizmet yine mikroservis için mümkün değildir. Çünkü hizmetlerin bu merkezi oturuma bağımlılığı söz konusu oluyor.
+
+204
+00:32:56,972 --> 00:33:05,352
+Bu bağlı, gevşek bağlılık adıyla adlandırılmış. Bu ise sistem birleşenlerinin birbirine minimum düzeyde bağlı olması demektir.
+
+205
+00:33:05,615 --> 00:33:11,615
+Bu bağlılıktan dolayı mikroservis mimarisine uymamaktadır ve bu kuralı ihlal etmektedir.
+
+206
+00:33:11,615 --> 00:33:24,615
+Kimlik doğrulama için farklı yöntemler bulunmakla birlikte ilk yöntemimiz hizmetlerin kimlik doğrulamalarını servislerin kendilerinin yapması.
+
+207
+00:33:25,759 --> 00:33:33,759
+Kimlik doğrulanmamış isteklerin iç hağa girmesine neden olduğu için büyük bir güvenlik açığı içer mektedir. O yüzden bu tavsiye edilmemektedir.
+
+208
+00:33:33,759 --> 00:33:44,759
+Bir diğer zorluğu ise farklı istemcilerin farklı kimlik doğrulama yöntemleri bulunabilir. Bu da servislerimizde karmaşıklığa ve performans düşüklüğüne yol açabilir.
+
+209
+00:33:44,759 --> 00:33:52,759
+Bu sebepten ötürü bir API geçidi kullanmamız gerekiyor. API geçidinde kimliklerimizi doğrulamamız gerekiyor. Bunu yaptığımız takdirde
+
+210
+00:33:53,172 --> 00:34:10,952
+İlk olarak, güvenliği tek bir noktada topluyoruz. Böylelikle güvenlik açığı risklerini azaltıyoruz. İkinci olarak da farklı kimlik doğrulama mekanizmalarıyla servisler değil, API geçidi ilgileniyor. Böylelikle karmaşıklığı azaltıyoruz ve servislerimizin performansını arttırıyoruz.
+
+211
+00:34:12,431 --> 00:34:19,952
+Buradaki şemamızda ise anlattığım konuyla ilgili bir şema bulunuyor. Öncelikle API clientimiz.
+
+212
+00:34:20,532 --> 00:34:48,332
+Bir kimlik bilgilerini API'ye ulaştırıyor. API geçidi bu kimlik bilgilerini doğruladığı takdirde sonraki siteklerine bir security token ekliyor. Burada da yine kimlik bilgilerini içeren bir token. Buradan da ulaşılmak istenen servise ulaşılıyor. Bir de oturum tabanlı istemciler bulunmaktadır. Burada da bir önceki ile bir önceki şemal ağasla mantığı aynı. Yine kimlik bilgilerini...
+
+213
+00:34:48,403 --> 00:34:55,804
+API geçitimizi ulaştırıyoruz. Doğrulandığı takdirde client'imize security token'ı geri gönderiyoruz.
+
+214
+00:34:55,804 --> 00:35:04,804
+Client'in sonraki isteklerine bu token'ı ekleyip, API geçitinden de ulaşılmak istenen servise bunu iletiyoruz.
+
+215
+00:35:04,804 --> 00:35:11,003
+Böylece kimliğimiz doğrulanmış oluyor ve sisteme hizmete erişebiliyoruz.
+
+216
+00:35:13,492 --> 00:35:18,492
+Bir istemcinin kimlik bilgilerini doğrulamak önemli ancak tek başına da yeterli değildir.
+
+217
+00:35:18,492 --> 00:35:27,492
+Bir uygulama istemcinin talep ettiği işlemi gerçekleştirmeye yetkili olduğunu doğrulayan bir yetkilendirme mekanizmasını da uygulaması gerekmektedir.
+
+218
+00:35:27,492 --> 00:35:36,492
+Bunun için yine kimlik doğrulamada uyguladığımız gibi bir API geçidi uygulamak, API geçidinde yetkilendirmeyi uygulamak daha doğrudur.
+
+219
+00:35:37,331 --> 00:35:43,331
+En büyük avantajı da API geçidini merkezeleştirerek güvenlik riskini önemli ölçüde azaltıyoruz.
+
+220
+00:35:44,331 --> 00:35:52,331
+Ancak üç tane de dezavantajımız bulunmaktadır. Bunlardan ilki API geçidinin hizmetlerle sıkı sıkıya bağlı olma riskini arttırır.
+
+221
+00:35:52,331 --> 00:35:59,307
+Bu durumda da hizmetlerin ve API geçidinin eş zamanlı güncellenmesine neden olur. Performansımızı bu sebepte düşürebiliriz.
+
+222
+00:35:59,507 --> 00:36:09,007
+Bir diğer sebebi API geçidi yalnızca URL rol tabanlı erişim kontrolü sağlayabilir. Bu da şu demekti. Karmaşık erişim kontrol mekanizmalarını desteklemez.
+
+223
+00:36:09,507 --> 00:36:16,387
+Bir önceki yemek uygulamamızda kullanıcının siparişlere erişebilir bilgisini API geçidiyle sağlayabiliyoruz.
+
+224
+00:36:16,387 --> 00:36:24,788
+Ancak her kullanıcı kendi siparişlerini elde etsin, bu bilgiye ulaşsın dediğimizde bunu API geçidiyle sağlayamıyoruz.
+
+225
+00:36:25,427 --> 00:36:37,427
+Bundan dolayı, Erişim Kontrol Listeleri adı verdiğimiz, apilerde değil, hizmetlerde, servislerin içinde bulunması gereken bir özellikle bunu sağlayabiliyoruz.
+
+226
+00:36:37,427 --> 00:36:51,427
+Bu soruyu sağlayabiliyoruz. Böylelikle yetkilendirme servislerde de uygulanabiliyor ve Erişim Kontrol Listeleri kullanarak gerekli toplu işlemlere, karmaşık işlemlere de ulaşabiliyoruz.
+
+227
+00:36:53,492 --> 00:37:02,232
+Aplilere ulaştırdığımız kimlik bilgilerine hizmetlere ulaştırmak için iki ayrı belirteç seçeneğimiz bulunmaktadır.
+
+228
+00:37:02,712 --> 00:37:10,552
+Bunlardan birincisi OPAC belirteçler. Bu belirteçlerimizde, bu tokenlarımızda dışarıdan bakıldığında aslında bir bilgi bulunmamaktadır.
+
+229
+00:37:10,732 --> 00:37:17,812
+Bilgi, konulacı bilgilerine erişebilmemiz için ayrı bir güvenlik servisinde Remote Procedure Call Charge yapılarak elde edilmektedir.
+
+230
+00:37:18,324 --> 00:37:28,624
+Ancak her istek için ekstra bir çağrı yapılması gerektiğinden, serviste performans düşüklüğüne yol açtığı gibi aynı zamanda bir hata oluştuğunda da sistemi kilitleyebilir.
+
+231
+00:37:29,164 --> 00:37:36,483
+O yüzden bu belirteçleri kullanılması tavsiye edilmez. O yüzden genel olarak şeffaf belirteçler adına verdiğimiz belirteçleri kullanıyoruz.
+
+232
+00:37:36,483 --> 00:37:39,340
+Bu belirteçlerde kullanıcı hakkında bilgi...
+
+233
+00:37:39,923 --> 00:37:47,083
+İçer mektedir. Aynı zamanda JSON Web Token dediğimiz popüler bir Jfap Birlertage formatımız bulunmaktadır.
+
+234
+00:37:48,243 --> 00:37:56,583
+Formatın içeriği ikiye ayrılmaktadır. Birincisi Payload dediğimiz bir kısım. Bu kısımda kullanıcının kimliği ve rolleri gibi bilgiler içermektedir.
+
+235
+00:37:57,483 --> 00:38:02,923
+Signature dediğimizde bir imza bölümü vardır. Birlertage'in bütünlüğünü görüp ve gizliliğini sağlamaktadır.
+
+236
+00:38:06,447 --> 00:38:25,087
+Remote Procedure Cool çağrısı ortadan kaldırılır ve böylelikle performans arttırılır. Ancak bir de dezavantajı vardır. Burada yapılan işlemler geri alınamaz bir yapıya sahiptir. Bu da güvenlik açığı riskini arttırabilir. Bunun çözümü olarak da bu JSON Web Token'larımızı kısa sürede oluşturmak.
+
+237
+00:38:25,940 --> 00:38:36,940
+Kısa süreli oluşturduğumuz takdirde güvenliğe attırıyoruz ama bu seferde bu otorumu sürekli açık tutmak ve sürekli güncellememiz gerekmektedir. Böyle bir dezavantajı bulunmaktadır.
+
+238
+00:38:38,940 --> 00:38:50,827
+Mikros servis mimarilerinde Open Authorization 2.0 diye bir standartımız bulunmaktadır. Aslında bu standart bizim Google'da kullandığımız, Bulut hizmetlerinde kullandığımız bir standarttır. Bir güvenlik standartıdır.
+
+239
+00:38:51,123 --> 00:38:56,384
+Uygulamalarda aynı zamanda kimlik doğrulama ve yetkilendirme içinde bu standart kullanılmaktadır.
+
+240
+00:38:57,943 --> 00:39:03,523
+Temel kavramlarından ilki, Yetkilendirme Sunucusu adını verdiğimiz bir sunucusu bulunmaktadır.
+
+241
+00:39:04,123 --> 00:39:10,583
+Kullanıcı kimlikleri burada doğrulanır ve Axis Token ile yenileme belirteci API'ye geri döndürülür.
+
+242
+00:39:11,244 --> 00:39:16,903
+Erişim belirteci aslında Security Token ya da Station Token'da bahsettiğimiz gibi yine bir kimlik bilgilerini içerir.
+
+243
+00:39:18,195 --> 00:39:44,815
+Yenileme belirteci bu tokenlardan biraz farklıdır. Daha uzun ömürlüdür ve iptal edilebilir bir belirteçtir. Kaynak sunucusu burada aslında bizim ulaşmak istediğimiz hizmetlerdir. İstemcimiz ise bizim burada istemcimiz aslında API geçidi olmaktadır. Open Authorization 2.0 API'yi bir istemci olarak görmektedir. Burada da bunun şeması bulunmaktadır. İlk olarak client'imiz API geçidini...
+
+244
+00:39:44,815 --> 00:39:51,055
+Kimlik Bilgilerini İletir. API Geçidimizde Open Authorization Standartına bu kimlik bilgilerini gönderir.
+
+245
+00:39:51,055 --> 00:39:56,215
+Buradan kendi veri tabanından bu kimliğini kontrol eder. Eğer doğrulayabilirse de,
+
+246
+00:39:56,215 --> 00:40:03,015
+Axis Tekun dediğimiz bir geri dönüşü API Geçidine geri döndürür. API Geçidi de bu,
+
+247
+00:40:03,015 --> 00:40:09,215
+bu erişim belirtişini kendi isteklerine ekler ve böyle de hizmetlere ulaşır.
+
+248
+00:40:10,132 --> 00:40:24,132
+Oturun tabanlı islemcilerde de durum benzerdir. Kullanıcı kimlik bilgileri API geçidinin login handler kısmına iletilir. Oradan tekrardan Open Authorization'a bu kimlik bilgisi iletilir. Doğrulandığı takdirde...
+
+249
+00:40:24,500 --> 00:40:30,500
+Token'ımız API geçidine geri döndürülür. Buradan da API geçidinden client'e geri döndürülür.
+
+250
+00:40:30,500 --> 00:40:39,500
+Client'e geri döndürüldükten sonra bu token client isteklerine eklenip API geçidine oradan da ulaşılmak istenen hizmete iletilir.
+
+251
+00:40:41,012 --> 00:40:53,312
+Sonuç olarak bir hizmetin işlevsel gereksinimlerinin karşılamasının önemli olduğundan bahsettik. Ancak aynı zamanda güvenli, yapılandırılabilir ve gözlemlenebilir olması gerektiğinin altını çizmiştik.
+
+252
+00:40:54,212 --> 00:41:07,672
+İkinci olarak mikroservis mimarilerinin güvenliğin birçok yönü tekil mimarilerle de aynı olduğunu ancak mikroservis mimarilerinde bazı ek güvenlik önlemlerinin de eklenmesi gerektiğinden bahsettik.
+
+253
+00:41:08,083 --> 00:41:15,363
+Yaygın bir yaklaşım olarak istemciler kimlik doğrulamasını API geçidi ile yapması gerektiğini anlattık.
+
+254
+00:41:15,803 --> 00:41:22,603
+Sonrasında bu API geçidinin her hizmet istiğinde JSON Web Token adını verdiğimiz bir şeffaf belirtici kullandığından bahsettik.
+
+255
+00:41:23,643 --> 00:41:32,763
+Ve en sonunda da Open Authorization ile bir güvenlik standartının bulunduğunu ve Mühendisliği firmalisi için güçlü bir güvenlik temelini sağladığından bahsettik.
+
+256
+00:41:34,003 --> 00:41:39,403
+Benim anlatacaklarım bu kadar. Dinlediğiniz için teşekkür ederim. Bir sorunuz varsa cevaplayabilirim.
+
+257
+00:41:41,043 --> 00:41:49,164
+Biz de teşekkür ediyoruz [öğrenci]. Şimdi [öğrenci] vardı sırada ama o da yok aramızda.
+
+258
+00:41:52,755 --> 00:42:13,755
+Haberi olan var mı? Bana da mail atmadı. Ona da bir işaret ekleyelim. Belki haftaya, son hafta zaten. Yok, son hafta değil pardon. Bir de en son bir haftamız daha olacak. Peki, o zaman [öğrenci], bugünün son sunumu sende?
+
+259
+00:42:13,755 --> 00:42:15,916
+Aşlatıyorum hocam. Merhabalar.
+
+260
+00:42:26,099 --> 00:42:26,940
+Tekrar geldi mi?
+
+261
+00:42:28,259 --> 00:42:29,039
+Evet geldi.
+
+262
+00:42:41,876 --> 00:43:02,636
+Konum Developing Services Using the Microservice Cases Parten. Burada aslında Microservice Cases yöntemi hata hata gibi, loglama, performans takibi, monitoring, güvenlik gibi ortak problemleri ele alan bir framework üzerinde servislerin oluşturulması yordamıdır.
+
+263
+00:43:06,943 --> 00:43:27,103
+sunduğu işlevselliğe göre bölünmüş bir dizi küçük bağımsız servislere sahiptir. Bununla birlikte her bir mikro servisini sağlaması gereken ve tüm bu servislerin tekrarlanan bir dizi kesicen, Roskadi Konser dediğim bir alanı vardır. Bu ortak kesicen servislerin sayısı arttıkça kod içerisinde gereksiz tekrarı, fazlalığa ve kaynak tüketimine sebep olmaktadır.
+
+264
+00:43:27,391 --> 00:43:41,391
+Bunu önlemek için ortaya atılmış bir paten yöntemidir. Sol taraftaki görsel şekilde aslında bunun hangi alanlarda kullanıldığını gösteren küçük bir alt göstergesi.
+
+265
+00:43:41,391 --> 00:43:50,391
+Bu tür yaygın endişeleri yönetmek için bahsedilen tüm özellikleri sağlayan ve ona iş işsizliklerine eklemeye başlamak için kullanılabilecek bir iskelet uygulama oluşturmak,
+
+266
+00:43:50,963 --> 00:43:59,763
+Bu noktada güzel bir fikir olarak düşünülüyor. Mikro Service Case burada devreye giriyor ve servislerin hızlı, yalın bir şekilde geliştirilmesini sağlayan bir framework olarak tanımlanıyor.
+
+267
+00:43:59,763 --> 00:44:05,364
+Spring Boot, Spring Cloud gibi frameworkler, Mikro Service Case'in klasik örnekleridir.
+
+268
+00:44:05,364 --> 00:44:18,364
+Tabi illa bir framework kullanılacak diye de değil, bir library oluşturularak da muadil bir şekilde, bir framework aslında simüle edilerek de bu paten koşturulabilir.
+
+269
+00:44:18,708 --> 00:44:34,388
+İsterseniz, işlemin şasesini sabit bir şekilde tutarsak, üzerine kendi servislerini, tekeri ya da farları vesaire onun üzerine entegre edebiliriz şeklinde ilerliyor.
+
+270
+00:44:34,592 --> 00:44:54,132
+Bir mikroservis bağlamında temel framework veya farklı servislerde yeniden kullanabilen başka bir servis olabilir. Keseceğin kaygıların yani keseceğin isteklerin temel çerçevesinin yeniden kullanabilmesini sağlar ve yalnızca mikroservisinin sağlaması gereken iş işlevselliğini oluşturmaya odaklanır. Her servis sadece kendi işiyle odaklanır, ortak yapması gereken alanlarda kesişim noktasında çözülür.
+
+271
+00:44:54,547 --> 00:45:08,628
+Yandaki diagram case modelini kullanan tipik bir mikro servis geliştirmeyi göstermektedir. Tüm servisler iskelet case kullanır. Yalnızca servis A mesaj desteği ve DB bağlantısı gerektiğinden bu amaç için geliştirilmiş bağımsız paylaşımlı kütüphalelere bağlantı kurmakta.
+
+272
+00:45:09,268 --> 00:45:18,148
+Avantajları bu yöntemin, yazılması gereken kod miktarını önemli ölçüde azaltır. Yapısal problemleri ortadan kaldırarak iş mantığını geliştirmeye odaklanmasını sağlar.
+
+273
+00:45:18,579 --> 00:45:35,980
+Diğer mikro servislerde yeniden kullanılabilen kararlı bir kod tabanı sağlar. Yeni özellikler iskelete bağımsız olarak eklenebilir ve yalnızca bu özellikleri gerektiren servisler için güncellenmesi gerekir. Bu nedenle diğer servisler üzerinde ya hiçbir etkisi yoktur ya da minimum düzeyde kalır.
+
+274
+00:45:36,579 --> 00:45:43,439
+Dezavantajı ise servisleri geliştirmek için kullanılan her dil veya platform birleşimi için ayrı bir geliştirme ihtiyaç duymasıdır.
+
+275
+00:45:44,052 --> 00:46:09,572
+Burada da aslında Mesh mimarisine doğru bir kanca atıyoruz. Mikro servis sistem Mesh'e geçerken devre kesiciler, dağıtılmış izleme, Türkçeleştirilmesi çok doğru olmadı bu kavramların ama load balancer ve kural tabanlı trafik yönlendirme dahil olmak üzere çeşitli konuları uygulayan bir ağ katmanı aracılığıyla hizmetlere giren ve çıkan tüm ağ trafiğini yöneten bir yöntemdir servis Mesh'te.
+
+276
+00:46:10,771 --> 00:46:30,751
+Microservice Cast'i için tek bir dizaynı anlatajdan bahsetmiştik az önce. O da her yazılım dili için ayrı bir geliştirme yapma gerekliliğiydi. Bunu önleyen yeni bir alternatif olarak ortaya çıkıyor Mesh. İşlerlerin bir kısmının servis dışında yani bir platforma bağlılıktan ziyade bağımsız bir şekilde servis mesol olarak bilinen bir şekilde uygulamak.
+
+277
+00:46:31,023 --> 00:46:40,183
+Servis Match'te bir servis ile diğer servislerin ve harici uygulamalar arasındaki iletişime aracılık eden bir ağ altyapısı olarak sunuluyor.
+
+278
+00:46:40,692 --> 00:47:04,931
+Görselde de görüldüğü gibi hizmete giren ve çıkan tüm alt trafiği servis mesaj üzerinden geçer. Devre keşifler, dağıtılmış hizmet ve hizmet keşifi, yük dengeleme ve kural tabanlı trafik yönlendirme gibi çeşitli konularla uygulanır. Burada da görüldüğü gibi aslında hepsi bir önce alt katmanında load balancing, secure communication vesaire şeklinde alt katmana geliyor. Ondan sonra duruma göre microservice keşiflerinden farkını oluşturuyor ve sisteme istek olarak düşüyor.
+
+279
+00:47:05,811 --> 00:47:10,152
+Microservice Cases gibi geliştiriciyi de birbiriyle kesişen endişeleri uğraşmaktan kurtarıyor.
+
+280
+00:47:10,672 --> 00:47:15,271
+Servis mesin trafiği yönlendirme yeteneği dağıtımı sürümden ayırmamızı olanak tarıyor.
+
+281
+00:47:16,051 --> 00:47:19,351
+Size bir hizmetin yeni bir sürümünü üretme dağıtma yeteneği veriyor.
+
+282
+00:47:20,172 --> 00:47:24,771
+Ancak bunu yalnızca dahili test kullanıcıları gibi belli kullanıcılara yayılıyor.
+
+283
+00:47:26,391 --> 00:47:28,652
+Burada aslında genel bir mimari Microservice.
+
+284
+00:47:30,516 --> 00:47:49,956
+Mesle birleştirilmiş altyapısını. Mikroservis'te sadece gördüğünüz üzere bir istek geliyor ve bizansdan bizansa geçiş oluyor. Fakat mesle birleştirdiğimde bunlar önce bir a katmanı da prokside toplanıp daha sonrasında duruma göre işlem yapılıyor. Yapılacak işlem neyse metrix'e, konfiks'e ona göre isteğe göre yanıt dönülüyor.
+
+285
+00:47:58,516 --> 00:48:05,516
+Daha çok karşıma çıktı. Daha da kolay bir örnek. Bir istek geldiğinde servise, bu servisi yakalamak istediğimizde, aslında şuraya döneyim.
+
+286
+00:48:10,516 --> 00:48:13,516
+Bir istek geldiğinde biz bu isteği yakalamak istediğimizde,
+
+287
+00:48:14,032 --> 00:48:22,472
+Öncesinde her isteğin geldiği anı logda yakalamak istiyoruz ve bunları hep bir logda bizim ilgili dosyamıza bastırmak istiyoruz.
+
+288
+00:48:22,472 --> 00:48:31,372
+Her istek için tekrardan bir logger oluşturup al bu log'u şu dosyayı yaz demek hem kod tekrarı hem de gereksiz bir...
+
+289
+00:48:31,411 --> 00:48:43,411
+Hurda yığınına sebep oluyor, spagettiye oluşturuyor. Bunu engellemek için log yapısını sabit bir şekilde bir inherit yapısıyla oluşturursak basit bir yöntemle. Her gelen istek önce oradan türediğinden kendi isteğin base tabanında...
+
+290
+00:48:46,260 --> 00:49:01,340
+Yarıntında direkt algılayıp, orada Log'u basıp sonra ilgili istek neyse, işte Health Check ise onun cevabını, Loglamaysa onun cevabını vesaire yaptıktan sonra ilgili istek neyse o business'ı yapıp sonra cevabı restlerinden dönmek gibi düşünebilirsiniz.
+
+291
+00:49:02,560 --> 00:49:13,760
+Bahsettiğimiz bu Mesh tarzıysa çok bilinik bir örneği, SSL örneği aslında. Direkt alt tabanında gelecek isteklerini yakalayalım. Güvenli bir istek altyapısından mı gelmiş? Evet. Sertikalı bir istek mi? Evet.
+
+292
+00:49:14,260 --> 00:49:36,840
+Tamam ben bu şifreyi doğrulayabiliyorum. O halde bu isteği alıyorum deyip, A katmandan bunu engelleyip, daha sonra isteğin gelen isteğiyle birleştirdiğimizde, şuradaki örnekle. Önce A tabanı da yakaladım. Güvenli olduğunu gördüm. Güvenli olduğunu netleştirdikten sonra ise, isteğin işi neyse, servislerine, isteklerine, onu işleyip geri cevap olarak dönüyorum şeklinde düşünebilirsiniz. Beni dinlediğiniz için teşekkür ederim. Benim sonumum bu kadardı hocam.
+
+293
+00:49:38,060 --> 00:49:39,280
+Teşekkür ediyoruz.
+
+294
+00:49:39,280 --> 00:49:40,440
+Rab'da rahma.
+
+295
+00:49:41,108 --> 00:50:05,488
+Bu haftalık sunumumuz kalmadı. Çünkü iki arkadaşımız sunmadı. Biri haftaya herhalde sunacak [öğrenci]. [öğrenci] öyle söylemişti. [öğrenci]'dan bir ses çıkmadı. Bakalım. O da belki haftaya gelir. Haftaya normalde 6 tane sunumumuz var. Bunlarla birlikte 8'e kadar çıkabiliriz. Bakalım duruma göre.
+
+296
+00:50:08,532 --> 00:50:10,092
+Bir şey sorabilir miyim hocam?
+
+297
+00:50:10,291 --> 00:50:11,172
+Buyurun.
+
+298
+00:50:12,372 --> 00:50:24,972
+Final ödevinizi paylaşmışsınız. Final ödeminde bu kodun da bir sunum ve paylaşımlarını istemişiz. Kodun, header'lar üzerinden bir paylaşım gerçekleştirip sunumda içeriğini paylaşsak olur mu?
+
+299
+00:50:24,972 --> 00:50:30,231
+Çünkü geliştirmekte olduğum bir yöntem var. Şirket projesi olsun paylaşmakta sıkıntı yaşıyorum. Teşekkür ederim.
+
+300
+00:50:30,251 --> 00:50:36,512
+Tabii tabii. Yani bazı şeyleri paylaşamayabilirsiniz. Hazır kullandığınız şeyler varsa önceden.
+
+301
+00:50:36,532 --> 00:50:40,812
+İmplemati ettiğiniz. Sıkıntı yok. Heather'ın bir şey yaparsınız, paylaşırsınız.
+
+302
+00:50:40,992 --> 00:50:42,731
+Çok teşekkürler hocam. Sağ olun.
+
+303
+00:50:42,812 --> 00:50:56,512
+Rica ederim. Peki o zaman arkadaşlar haftaya yeni yıla geçmiş olacağız. 2025'e ilk dersimizde. 2025'nin ilk dersinde birlikte olacağız.
+
+304
+00:50:57,619 --> 00:51:16,759
+2 Ocak tarihinde yani 2025'in ilk iş gününe beraber başlayacağız. O yüzden şimdiden size mutlu, sağlıklı, güzel bir yıl diliyorum. Haftaya yeni yılda görüşmek üzere. Dersi sonlandırabiliriz. Hoşçakalın.

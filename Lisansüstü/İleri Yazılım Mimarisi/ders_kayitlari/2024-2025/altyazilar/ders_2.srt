@@ -1,0 +1,1535 @@
+1
+00:00:32,564 --> 00:00:33,603
+[öğrenci], günaydın.
+
+2
+00:00:35,043 --> 00:00:35,923
+Günaydın hocam.
+
+3
+00:00:39,003 --> 00:00:40,984
+İlk sunumu sen yapacağın için hazırsın.
+
+4
+00:00:41,444 --> 00:00:43,084
+Evet, önceden geldin son.
+
+5
+00:00:43,084 --> 00:00:44,263
+İyi yaptın.
+
+6
+00:00:45,503 --> 00:00:47,103
+Ben de şeye bakayım da oturayım.
+
+7
+00:00:48,484 --> 00:00:51,143
+Tamam, ekran paylaşımı izniniz var zaten.
+
+8
+00:00:53,024 --> 00:00:53,243
+Okey.
+
+9
+00:00:54,304 --> 00:00:56,344
+Biraz bekleyelim tabii, daha ders başlamadı.
+
+10
+00:00:57,344 --> 00:00:58,804
+Sonrasında sunumuna geçersin.
+
+11
+00:05:06,803 --> 00:05:10,223
+Evet, [öğrenci] istersen ekran paylaşımına başla.
+
+12
+00:05:13,083 --> 00:05:13,743
+Olur hocam.
+
+13
+00:05:14,163 --> 00:05:15,123
+Geldi tamam.
+
+14
+00:05:16,423 --> 00:05:17,123
+Şöyle.
+
+15
+00:05:17,283 --> 00:05:21,103
+Nasıl olsa kayıtlı olduğu için hani tutmayanlar da sonradan izlerler artık.
+
+16
+00:05:21,243 --> 00:05:21,483
+Tamam.
+
+17
+00:05:23,003 --> 00:05:25,183
+Ekranı paylaştım sanırım.
+
+18
+00:05:27,483 --> 00:05:28,403
+Ekran geliyor mu hocam?
+
+19
+00:05:28,583 --> 00:05:29,243
+Evet, geldi.
+
+20
+00:05:31,524 --> 00:05:32,863
+Öncelikle günaydın.
+
+21
+00:05:33,300 --> 00:05:39,460
+Ben [öğrenci]. Bugün benim konum mikroservis mimarisi tam olarak nedir?
+
+22
+00:05:41,800 --> 00:05:48,379
+Sunumda önce bir girişle başlayacağım. Mikroservis mimarisi nedir? Onun tanımlarını yapacağım.
+
+23
+00:05:48,379 --> 00:06:00,259
+Daha sonrasında bu mimarinin temelleri, yazılım mimarisi, perspektifleri, ardından da mikroservislerin pratik kullanımı ve sonuçla bitiriyor olacağım.
+
+24
+00:06:03,060 --> 00:06:24,259
+Mikroservis mimarisi nedir? Uygulamaların işlevsel parçalara bölünmesi esasına dayanır. Bu parçalar yani mikroservisler bağımsız olarak geliştirilip dağıtılabilir. Bu yaklaşım büyük ve karmaşık sistemleri daha yönetilebilir ve esnek hale getirilir. Peki neden mikroservisler?
+
+25
+00:06:24,947 --> 00:06:44,847
+Geleneksel monolitik mimarilerde tüm uygulama buradaki gibi tek bir yapıdadır. Bu da her değişiklikte tüm sistemin yeniden inşa edilmesini ve dağıtılmasını gerektirir. Mikroservislerde ise her bir hizmet bağımsızdır ve bu bağımsızlık ekiplerin daha hızlı ve verimli çalışmasını sağlar.
+
+26
+00:06:46,100 --> 00:06:57,420
+Kısacası mikroservisler daha hızlı geliştirme, kolay bakım ve yüksek ölçeklenebilirlik sunarak günümüz yazılım projelerinde sıklıkla tercih edilen bir yaklaşım haline gelmiştir.
+
+27
+00:07:00,580 --> 00:07:06,139
+Mikroservis mimarisinin temelleri bu slide'da bağımsızlık ve esneklik özelliklerini öne alacağım.
+
+28
+00:07:06,995 --> 00:07:24,795
+Mikroservis mimarisi her bir mikroservisin kendi işlevini ve veri tabanını yönetmesini sağlayarak bağımsız bir yapı sunuyor bize. Bu bağımsızlık da hizmetlerin diğerlerinden etkilenmeden geliştirilmesine, development'ın yapılmasına ve deployment'ın yapılmasına olanak tanıyor.
+
+29
+00:07:28,788 --> 00:07:50,067
+Sipariş yönetimi, bildirim ve ödeme adında üç tane mikroservisimiz olsun. Sipariş yönetimi mikroservisinde yapılan güncellemenin bildirim veya ödeme hizmetlerini etkilememesi mikroservislerin önemli bir avantajı oluyor. Esneklik ise mikroservislerin ihtiyaç duyulduğunda belirli bir hizmetin ölçeklenmesini,
+
+30
+00:07:50,415 --> 00:08:11,795
+Veya güncellenmesini mümkün kılıyor. Yine aynı örnekten gidecek olursam, ödeme hizmetini diğer mikroservislerden bağımsız olarak ölçeklendirebiliriz. Her birinin konfigürasyonu da ayrı bir biçimde sağlanabilir. Aynı zamanda her mikroservis farklı bir teknoloji yığını ile geliştirilebilir.
+
+31
+00:08:12,208 --> 00:08:38,548
+Burada üç tane modül mikro servisimiz olarak varsayıyorum. Ödeme hizmetlerinde biz Dynatrace veya Open Telemetry entegrasyonları yapabiliriz. Bu entegrasyonlar performansı düşürse de para geçen yerlerde bu teknolojiyi uygulamak, daha tracelerini izleyebilmek daha faydalı olabilir ve bunu diğer mikro servislerden de ayrıştırabiliriz.
+
+32
+00:08:39,028 --> 00:09:06,447
+Bu da ekiplerin projeye uygun teknolojileri seçmesini sağlıyor. Bu esneklik modern uygulama gereksinimlerinin karşılamada önemli bir avantaj sunuyor bize. Bağımsızlık ve esneklik özelliklerinde mikroservis mimarisi hem developerlar hem de organizasyonlar için çok cazip bir seçenek haline geldi. Şimdi de bu yapının avantajlarına ve dezavantajlarına bakalım.
+
+33
+00:09:07,923 --> 00:09:27,124
+Bu yapı, yazılım geliştirme süreçlerinde pek çok fayda sağlarken, beraberinde yönetilmesi gereken bazı karmaşıklıkları da getiriyor. Avantajlarla başlayacak olursak, mikroservisler hızlı geliştirme ve dağıtımı destekler.
+
+34
+00:09:27,731 --> 00:09:48,871
+Ekipler bağımsız birimler üzerinde çalıştığı için işler paralel şekilde ilerler. Yani bir ekip A mikroservisine bakarken diğer ekip de B mikroservisinin işlerini yapabilir ve geliştirme süresi önemli ölçüde kısalır. Ayrıca modüler yapısı sayesinde sistem daha kolay ölçeklenebilir ve bakımı yapılabilir.
+
+35
+00:09:49,395 --> 00:10:07,495
+Büyük organizasyonlarda ekipler birbirinden bağımsız olarak çalışabilir. Bu da üretkenliği de arttırır. Ancak bu yapı bazı zorluklarla birlikte geliyor. Mikroservislerin karmaşıklığı özellikle sistemdeki farklı hizmetlerin koordinasyonunu zorlaştırabilir.
+
+36
+00:10:08,244 --> 00:10:26,903
+Veri tutarlılığı da büyük bir sorun olabilir. Her bir mikroservisin kendi veri tabanına sahip olması sistem genelinde tutarlılığın sağlanmasını güçleştirebiliyor. Ayrıca hata ayıklama ve sistemin genel izlenebilirliği gibi konular mikroservis mimarisinde dikkatle ele alınması gereken konular.
+
+37
+00:10:32,307 --> 00:10:37,587
+Doğru uygulandığında mikroservisler yazılım geliştirme süreçlerine büyük bir değer katabilir.
+
+38
+00:10:41,107 --> 00:11:08,467
+Perspektiflerinde ise 4 artı 1 görünüm modeli sıklıkla kullanılıyor yazılım mimarisinde. Bu model yazılımın farklı perspektiflerden değerlendirilmesine olanak tanıyor. Burada da 4 tane Vibomuz var, görünümümüz var ve bunları açıklayan bir artı 1 olarak senaryolarımız var. İlk olarak mantıksal görünüm sınıflar ve paketler arasındaki ilişkileri gösterir.
+
+39
+00:11:09,203 --> 00:11:28,403
+Yazılımın geliştirme sırasında nasıl bir yapılandırmaya sahip olduğunu anlamak için kullanılır. Uygulama görünümü sistemin modüler ve bileşenler olarak nasıl paketlendiğini gösterir. Bu özellikle kodun dağıtım önce yapısını anlamak için önemlidir.
+
+40
+00:11:37,107 --> 00:11:57,307
+Dağıtım Görünümü. Bu süreçlerin fiziksel veya sanal makinelerde nasıl dağıtıldığını, deployment'ın yapıldığını gösterir. Senaryolar olarak adlandırılan artı bir ise bu dört görünümü bir araya getirerek yazılımın işlevselliğini bir bütün olarak anlamamızı sağlıyor.
+
+41
+00:12:01,971 --> 00:12:13,531
+Katmanlı Mimari, uygulamayı burada biz işlevsel katmanlara ayırıyoruz. Bu katmanlar genellikle Presentation Layer, Business Layer ve Data Layer olmak üzere 3 katmandan oluşuyor.
+
+42
+00:12:14,311 --> 00:12:28,531
+Presentation Layer yani sunum katmanı, kullanıcı arayüzünü ve dış hapileri içerir. Business Logic katmanı, uygulamanın kurallarını ve mantığını barındırırken,
+
+43
+00:12:29,427 --> 00:12:53,347
+Veri katmanı ise veri tabanı ile etkileşimi sağlar. Bu yapı basit ve anlaşılabilir bir model sunuyor bize. Ancak katmanlar arası burada sıkı bağımlılıklar var. Örneğin bu da değişiklik yapmayı ve testleri zorlaştırabiliyor. Örneğin biz Data Layer'da veri tabanında bir değişiklik yaptık. Bu bağımlılıklardan dolayı tüm sistemi etkileyecek bir hale gelebilir.
+
+44
+00:12:55,447 --> 00:12:56,988
+Altıgen mimari.
+
+45
+00:12:57,524 --> 00:13:13,624
+Burada Business Logic merkezde ve adaptörlerle biz bunu çevriliyoruz. İmband adaptörler dış talepleri işman, Business Logic'e götürür. Outbound ise Business Logic'den gelen talepleri dış sistemlere aktarıyor.
+
+46
+00:13:14,584 --> 00:13:20,243
+Altıgen mimarinin en büyük avantajı Business Logic. Diğer birleşenler de tamamen bağımsız hale geliyor.
+
+47
+00:13:20,788 --> 00:13:40,048
+Bu bağımsızlık ise uygulamanın testini kolaylaştırıyor ve burada modülerliği arttırmış oluyoruz. Ancak bu tabii ki de diğer katmanlı mimariye göre daha karmaşık bir yapı sunuyor. Ve yapıyı kurmanın maliyeti daha yüksek olabiliyor.
+
+48
+00:13:40,596 --> 00:13:49,295
+Sonuç olarak biz hem katmanlı hem altıgen mimariyi karşılaştıracak olursak ikisinin de kendine özgü avantajları ve kullanım durumları vardır.
+
+49
+00:13:49,295 --> 00:13:55,675
+Ama biz şu an günümüzde mikroservislerde genellikle altıgen mimari tercih ediyoruz.
+
+50
+00:13:56,155 --> 00:14:00,795
+Şimdi mikroservislerin pratik kullanımına geçelim.
+
+51
+00:14:01,683 --> 00:14:24,663
+Nasıl organize edilebileceğini anlamak için FTGO uygulamasını bir örnek olarak ele alabiliriz. Uygulama, restoran sipariş yönetimi gibi senaryoda mikroservislerin avantajlarını göstermektedir. FTGO uygulaması sipariş yönetimi, teslimat, bildirim, restoran servisi gibi bağımsız mikroservislerden, bileşenlerden oluşuyor.
+
+52
+00:14:26,548 --> 00:14:52,027
+Tüm talepleri burada doğru servislere yönlendirirken servisler arası iletişim ise restapiler veya asenkron mesajlaşma ile sağlanıyor. Bu yapı her servisin bağımsız bir şekilde geliştirilip dağıtılabilmesi, deploy edilebilmesini mümkün kılıyor. Örneğin yalnızca biz order yani sipariş servisini güncellendiğinde diğer servislerin çalışması kesintiye uğramıyor.
+
+53
+00:14:53,139 --> 00:15:13,259
+Bu mimari hem bağımsızlık hem de yüksek ölçeklenebilirlik sunarak büyük ölçekli projeler de bize önemli bir avantaj sağlıyor. Etkili olduğu alanlara gelecek olursak özellikle hızlı geliştirme ve bağımsız ekip çalışması gereken durumlarda öne çıkıyor mikroservisler.
+
+54
+00:15:14,227 --> 00:15:31,447
+Paralel çalışan ekipler her biri farklı bir mikroservisten sorumlu olarak daha verimli çalışabiliyor. Özellikle çok büyük ölçekli uygulamalarda, görsellerdeki gibi, mikroservislerin ölçeklenebilirlik avantajı belirgin bir hale geliyor.
+
+55
+00:15:31,923 --> 00:15:42,183
+Örneğin bir e-ticaret sitesi düşünelim Amazon gibi. Yoğun sipariş dönemlerinde yalnızca sipariş servisini ölçeklendirmek, o mikro servisi ölçeklendirmek mümkün.
+
+56
+00:15:42,183 --> 00:15:52,504
+Aynı şekilde Netflix gibi video platformları içerik akışını ayrı mikro servisler üzerinden yönlendirerek yüksek kullanıcı yükünü yönetebiliyor.
+
+57
+00:15:57,919 --> 00:16:04,179
+Esneklik ve ölçeklenebilirlik gereksinimlerini karşılamak için vazgeçilmez bir hale gelmiştir.
+
+58
+00:16:06,199 --> 00:16:08,659
+Şimdi ise sonuca geçeyim.
+
+59
+00:16:09,939 --> 00:16:18,000
+Sonuç olarak mikroservis mimarisi yazılım geliştirmede bağımsızlık ve esneklik sağlayarak büyük bir avantaj sunuyor bize.
+
+60
+00:16:18,484 --> 00:16:38,163
+Bu yaklaşımın bir parçası olarak kendi işimde de ben benzer bir yapıyla çalışıyorum. Paycel'de ekip olarak mikro servisler geliştiriyoruz ve bağımsız servislerin clean code yazımına ve hızlı development süreçlerine ne kadar katkı sağladığına birebir ben deneyimliyorum. Ancak bu yapının bir de yönetim tarafı var.
+
+61
+00:16:38,740 --> 00:16:59,699
+Her mikroservisin bağımsız olarak development'ının yapılması ve deployment'ının yapılması bizde devop süreçlerini oldukça artırıyor. Özellikle ilk başta. Her servis için ayrı deployment süreçleri, ayrı pipeline oluşturulması ve her servis için ayrı bir konfigürasyon yönetimi gibi işler.
+
+62
+00:17:00,083 --> 00:17:23,083
+Sistemin karmaşıklığını burada bir tık arttırabiliyor. Bu nedenle mikroservis mimarisini uygularken bizim DevOps ekipleriyle sıkı bir işbirliği içerisinde olmamız gerekiyor. Sonuç olarak mikroservis mimarisi doğru uygulanırsa development süreçlerine, yazılım geliştirme süreçlerine büyük bir katkı sağlıyor. Ancak bu yapıyı hayata geçirirken...
+
+63
+00:17:23,955 --> 00:17:35,195
+Teknik Altyapının da buna uygun şekilde hazırlanması kritik bir öneme sahip. Diyerek sunumumu bitireyim. Beni dinlediğiniz için teşekkür ederim.
+
+64
+00:17:37,195 --> 00:17:46,615
+Evet, [öğrenci] teşekkür ederiz. Giriş bölümünü güzel özetleyerek mikroservis mimarisine bize aktardın.
+
+65
+00:17:48,135 --> 00:17:50,815
+Şimdi sırada kim vardı? Hemen listeye bakalım.
+
+66
+00:17:53,587 --> 00:18:10,367
+[öğrenci], [öğrenci]. Aramızda mı? Değil. Hay Allah. Niye değil? Keşke olsaydı. [öğrenci] burada mı? [öğrenci] da yok.
+
+67
+00:18:14,132 --> 00:18:18,552
+Zahkar var mı? O da yok. Allah Allah. Sunum yapacak kimse yok ortalıkta.
+
+68
+00:18:29,011 --> 00:18:30,132
+[öğrenci] geldi.
+
+69
+00:18:44,243 --> 00:18:45,243
+[öğrenci] merhaba.
+
+70
+00:18:47,203 --> 00:18:48,723
+Merhaba hocam, günaydın.
+
+71
+00:18:49,183 --> 00:18:59,163
+Günaydın. Hazırsan istiyorsan sana geçelim. Çünkü [öğrenci], [öğrenci], [öğrenci] yok. [öğrenci] de haftaya sunacak. Çünkü onun da bölümde bir görevi var.
+
+72
+00:19:00,983 --> 00:19:04,563
+Aradaki, yani senden önceki 3 kişi olmadığı için [öğrenci]'nın da sunumu bitti.
+
+73
+00:19:07,483 --> 00:19:09,063
+Hazırsan sana geçebiliriz.
+
+74
+00:19:09,844 --> 00:19:24,163
+Tabi hocam, 2-3 dakikaya başlasam olur mu? 3-4 dakikaya. Son kez gözden geçireyim. Slides'ları. Tamam tamam, okey. Sunum ve ekran paylaşımı iznin var. Hazır olduğunda başlarsın. Tamamdır hocam.
+
+75
+00:23:51,731 --> 00:23:55,391
+Hocam eğer müsaatesiniz siz de başlayabilir miyim?
+
+76
+00:23:56,891 --> 00:23:57,491
+Tabii ki.
+
+77
+00:24:01,587 --> 00:24:02,647
+Ekranı paylaşayım.
+
+78
+00:24:17,811 --> 00:24:18,771
+Ekran geliyor mu hocam?
+
+79
+00:24:19,672 --> 00:24:23,771
+Evet, PowerPoint'i görüyoruz. Ama sunum modunda görmüyoruz.
+
+80
+00:24:24,851 --> 00:24:25,612
+Şimdi geldi.
+
+81
+00:24:27,271 --> 00:24:29,791
+Tamam, şimdi slide'ların görünmesi lazım.
+
+82
+00:24:29,791 --> 00:24:31,871
+Evet, gayet güzel görünüyor şu anda.
+
+83
+00:24:32,372 --> 00:24:40,872
+Evet, herkese merhabalar. İsmim [öğrenci]. Benim bu yüzyıl konum aslında Transaction Management with Saga.
+
+84
+00:24:41,032 --> 00:24:53,432
+Şeydeki o bizim mikroservis kitabında, mikroservis mimarisiyle Transaction Management'in nasıl yapıldığı, yeni modern çözümlerle, çözümle, Saga dediğimiz tasarım deseniyle nasıl yapıldığı.
+
+85
+00:24:54,132 --> 00:24:59,432
+Hemen Upline'a geçmem gerekirse, ilk önce Transaction Management'in nedir sorusuna kısa bir cevap vermek istiyorum.
+
+86
+00:25:00,084 --> 00:25:13,204
+Transaction Management genel olarak bir uygulamada veri yapısında yapılan değişiklik diyebiliriz. Yani veri akışı da diyebiliriz buna.
+
+87
+00:25:13,923 --> 00:25:23,204
+Örnek olarak göstermem gerekirse, misal olarak bir yemek zepeti gibi bir uygulamada bir sipariş hazırladığınızda,
+
+88
+00:25:24,276 --> 00:25:42,476
+Sipariş et düğmesini tıkladığınız zaman verilerin hem sizin veri tabanında farklı tablolarda değişimini bize anlatıyor. Misal olarak diyelim biz sipariş ettiğimizde bizim bir paramız oluyor cüzdanımızda yemek sepetinde.
+
+89
+00:25:50,928 --> 00:26:13,708
+O çıkılan miktar kadar aktarılması, yeni bir sipariş kaydının oluşturulması veyahut da kompleks işlemlerde bu sipariş kaydının takip edilmesi, mesela Kore'nin konumunun güncellenmesi, gördüğümüz gibi birden fazla tablonun aktif olarak yazılma işlemine maruz kalması.
+
+90
+00:26:14,163 --> 00:26:34,683
+Aslında o kadar da kolay olarak kontrol edilebilir bir konu değildir. Aslında monolitik yapılarda veya basit projeler diyelim. Monolitik yapısı olan basit projelerde bu biraz daha basit olarak görünebilir. Çünkü veri tabanı aynı uygulamanın içinde çalışmaktadır.
+
+91
+00:26:42,163 --> 00:27:07,143
+Uygulamaların farklı, yani farklı servislerin diyelim, veri tabanları farklı olduğu için bunları kontrol etmek o kadar da kolay değildir. Şimdi burada kontrol etmekten kastımız şudur. Esasen tüm işlemler başarılı gerçekleşirse çok bir sorunla biz karşılaşmıyoruz. Fakat eğer arada bazı işlemlerde kopma yaşanırsa.
+
+92
+00:27:07,923 --> 00:27:20,163
+Servislerin bazılarında ayağa kalkma problemi yaşanırsa veya programlama dilinde diyelim yazılım dilinde eğer bir tanesi fail olursa bu zaman veri kaybını nasıl yaşamayız?
+
+93
+00:27:20,163 --> 00:27:31,364
+Yani nasıl geri döndürürüz? İşte işlemden veri tabanındaki verileri işlemden önceki versiyonuna nasıl döndürürüz? Buna da aslında rollback işlemi diyoruz.
+
+94
+00:27:32,019 --> 00:27:41,779
+Aslında bu işin zor kısmı o. Yani rollback işlemi nasıl yapılmalı ki kullanıcı mağdur durumda kalmasın.
+
+95
+00:27:41,779 --> 00:27:48,779
+Şimdi monolitik yapılarda hangi yöntemlerle kontrol edilir? Bu yöntem neden mikroservis mimarisinde verimli değildir?
+
+96
+00:27:49,839 --> 00:27:56,259
+Bu aşamadan sonra mikroservis mimarisinde kullanılan geleneksel çözüm ve modern çözümden bahsetmek istiyorum.
+
+97
+00:27:56,980 --> 00:28:07,380
+ve mikroservis memarisinde kullanılan geleneksel çözümün bazı dezavantajlarını söyleyip sonra modern yönteme geçeceğim. Bu modern tasarım desteğinin ismi SAG'ı.
+
+98
+00:28:07,380 --> 00:28:17,779
+Monitek yapılarda kullanılan yöntem aslında bize kullandığımız framework'ün sağladığı kolaylıklar sayesinde de.
+
+99
+00:28:17,811 --> 00:28:24,611
+Yani framework'ın sağladığı kolaylıkları da kullanarak bunu hızlı bir şekilde başarabiliyoruz.
+
+100
+00:28:24,711 --> 00:28:29,331
+Şimdi aslında işlemin gerçekleşmesi için bir protokol uygulanıyor.
+
+101
+00:28:29,331 --> 00:28:43,191
+Bu protokolde dört aşamadan oluşuyor. Yani transakşın yapılırken bu dört atom ACID protokolündeki dört şeyin korunması gerekiyor.
+
+102
+00:28:44,435 --> 00:29:06,695
+Dediğim gibi frameworklerin bize sağladığı, ben Spring Boot'tan bahsedeceğim ama, frameworklerin bize sağladığı kolaylık sayesinde monolitik yapıda. Bunu kolayca yapabiliyoruz bu rollback işlemini. Ama yapılırken dediğim gibi şeylere uyulması gerekiyor bu maddeleri. Bu maddeler nelerdi? İlk önce atometrik maddesi geliyor.
+
+103
+00:29:07,188 --> 00:29:26,067
+İşlemler bir bütün olarak ya yapılır ya da hiç yapılmaz. Rollback bu işleminin temelidir. Yani az önce söylediğim gibi ortalarda bir servis hangi ortalarda diyelim mesela akkauntun validate edilmesi. Yani siz bir kredi kartıyla bir sipariş verdiğiniz zaman.
+
+104
+00:29:27,892 --> 00:29:50,912
+O birkaç tane aşamaya gidecek zaten. Veri tabanında değişiklikler yapacak. Fakat eğer sizin girdiğiniz kredi kartı numarası, misal olarak söyleyeyim, zamanı geçmişse bu zaman fail de oluyor. Fail olduğu zaman eğer önceler veri tabanında değişiklik yapılmışsa onların rollback edilmesi gerekiyor. İlk aşama bunu gösteriyor. Yani atomiklik. İkinci veri tabanında tutarlılık.
+
+105
+00:29:51,508 --> 00:30:14,288
+İşlem öncesi ve sonrası tutarlı bir durumda kalmalıdır. Yani işlem başarılı olsa da, rollback yapılsa da veri tabanına herhangi bir kullanıcı mağdur durumunda bırakışacak şekilde zedelenmemelidir. Yani değişime uğramamalıdır. Yalıtım bir diğer işlem diğer işlemlerden etkilenmez. Aslında bu yasa hem mikroservis mimarisinde...
+
+106
+00:30:14,932 --> 00:30:25,612
+Hem de diyelim burada farklı veri tabanları birbirinden etkilendiği için mikroservis mimarisinde biz Transaction Management yaptığımız zaman bu yasayı kayda almıyoruz.
+
+107
+00:30:25,612 --> 00:30:41,872
+Bu işte veri tabanında bir veri tablosu diğerinden etkilendiği için buradaki anormallikleri tespit etmek için mikroservis mimarisinde
+
+108
+00:30:42,223 --> 00:30:48,323
+Kendisi kontrol ediyor. Bunun Sagan'ın farklı yöntemleri var. Ondan bahsedeceğim.
+
+109
+00:30:48,423 --> 00:30:52,963
+Tamam benim chapter'ıma uygun değil. Konusunu aşıyor ama kısa bir şekilde söyleyeceğim.
+
+110
+00:30:53,623 --> 00:30:58,723
+Son madde de dayanıklık maddesi. İşlem başarı ile tamamlanıyorsa sonuç kalıcı olarak saklanıyor.
+
+111
+00:31:00,723 --> 00:31:18,064
+Monolitik yapıda dediğim gibi, mesela kod kısmında gördüğümüz gibi bize Spring Boot burada transakçın anotasyonunu sağlıyor. Bu transakçın anotasyonu aslında ben de daha önceden backendçi olarak bir müddet çalıştığım için burada bu anotasyonu ben de kullandım.
+
+112
+00:31:21,907 --> 00:31:47,667
+Monotic Yapıda servis derken başka bir uygulamayı değil de portta ayağa kalkan uygulamayı değil de klas olarak söylüyorum. Eğer başka bir servis klasına gidip oradan da database'i repoya inecekse ve orada işlem yapacaksa bunlar bu metoddan hepsi çağrılıyor. Derim transform maniden çağrılıyor. Aşağıda bazı validasyonlar yapılıyor. Eğer validasyondan geçiyorsa başka bir servis klasına oradan da repo yani database'i değişiklik yapmaya doğru gidiyor.
+
+113
+00:31:48,788 --> 00:31:59,248
+Eğer o girilen servis klubasında bir failing yapılırsa, misal olarak Transform Money'nin içinde Authorized Account ya da Authorized Bank Card deyelim.
+
+114
+00:32:00,127 --> 00:32:10,447
+Öyle bir metodumuz varsa, o da başka bir servis klubusunun içindeyse, bu zaman oradaki bir failing, orada bir yazılım patladığı zaman program.
+
+115
+00:32:11,284 --> 00:32:29,903
+Veyahut normal şekilde kart bilgilerinde bir sorun olduğu zaman bu işlemin yapılmaması gerekiyor. Ve eğer o klasa gitmeden önce bu aşağıdaki kod satırlarında bir değişiklik yapılmışsa bu Transactional Annotasyon'a o bilgilerin geri rollback yapılmasını sağlıyor.
+
+116
+00:32:31,220 --> 00:32:42,460
+Şimdi bizim burada database'ler hepsi aynı uygulamada toplandığı için transaction'ın anotasyonunu bu işlemi sadece bir rollback komutu database'e göndererek, SQL'e göndererek bunu yapabiliyor.
+
+117
+00:32:43,140 --> 00:32:48,319
+Fakat eğer bizim microservis'de veri tabanlarımız farklı uygulamalardaysa bu o kadar da kolay yapılamıyor.
+
+118
+00:32:51,140 --> 00:32:57,819
+İlk cümleyi aslında şimdi söyledim. Her bir veri tabanında ayrı bir transaction'ın yönetimi gerekmektedir.
+
+119
+00:32:59,220 --> 00:33:16,420
+İşlemler birden fazla serviste etkiliyorsa sadece bir veri tabağında rollback yapmak yeterli değildir. Peki buna nasıl çözüm sağlayabiliriz? Aslında bunun geleneksel çözümü de var. İlk aklımıza gelen şey tabi her database için ayrı ayrı rollback işlemi yapmaktır.
+
+120
+00:33:17,044 --> 00:33:35,044
+Fakat bunu nasıl yönetebiliriz? Yani bu rollback işlemi farklı database'lerde yapıldığı zaman uygulama bunu nasıl yönetebilir? Bunun için eski tasarım dönemi, geleneksel tasarım deseni two-phase commit yani XA dediğimiz open distributed two-phase commit deseni.
+
+121
+00:33:41,556 --> 00:33:45,475
+Kontrollü bir şekilde rollback işlemi yapılıyor ya da commit işlemi yapılıyor.
+
+122
+00:33:46,895 --> 00:33:58,135
+Eğer tüm servisler başarılı bir şekilde işlemi tamamlıyorsa, uygulama commit işlemin için emiri yönderiyor ve database save ediliyor.
+
+123
+00:34:00,564 --> 00:34:07,924
+Fail edilmişse yine aynı şekilde tüm database'lerin ayakta olup olmadığı kontrol edilip onların rollback işlemi yapılıyor.
+
+124
+00:34:08,543 --> 00:34:12,864
+Aslında burada bunun dezavantajları şu.
+
+125
+00:34:12,864 --> 00:34:15,704
+Şimdi ondan önce bu slide'da şey yazmışım.
+
+126
+00:34:16,904 --> 00:34:20,704
+Two-Face community'nin nasıl çalıştığını da biraz araştırmaya çalıştım.
+
+127
+00:34:20,784 --> 00:34:24,404
+Kitapta çok fazla aslında Wikipedia'nın linki vardı ama.
+
+128
+00:34:25,204 --> 00:34:31,024
+Biraz da Medium gibi sosyal medyalardan da yararlanmaya çalıştım.
+
+129
+00:34:31,124 --> 00:34:33,804
+Bir şeyde, Two-Face Committee'de bir hazırlık aşaması mevcut.
+
+130
+00:34:34,624 --> 00:34:43,264
+Orada aslında tüm servislerin ilk önce ayakta olup olmadığını, komite veya rolbeke hazır durumda olup olmadığını, pardon, komite hazır olup olmadığını kontrol ediyor.
+
+131
+00:34:43,584 --> 00:34:48,604
+Aslında Two-Face Committee'in dezavantajı da burada karşımıza çıkıyor.
+
+132
+00:34:51,827 --> 00:35:00,447
+Bu bir senkron bir işlem. Yani tüm servislerin ayakta olması gerekiyor ki biz bir komit ya da rollback işlemini tamamlayabiliriz.
+
+133
+00:35:00,447 --> 00:35:04,447
+Bu aslında X-Face komitin...
+
+134
+00:35:05,076 --> 00:35:22,456
+Bir nevi dezavantajından bir tanesi. Aslında yeni de çalışıyor mu? Çalışıyor. Yani tabii ki veri tabanını sağlıklı bir şekilde güncelleyebiliyor ama daha hızlı bir çözüme yönelmelerini sağlamaları bu tasarım desinin senkron olarak çalışmasında.
+
+135
+00:35:25,155 --> 00:35:28,456
+Dediğim gibi bir farklı dezavantajı da var.
+
+136
+00:35:29,396 --> 00:35:44,556
+Biz her zaman böyle SQL gibi database'ler değil de, o bir obje yapısıyla çalışan, diyelim MongoDB tipli no SQL yapıları da kullanıyoruz. Bu xa2pacecommit onlarla çalışamıyor.
+
+137
+00:35:45,216 --> 00:35:51,244
+İlave eden message brokerlarla kendisinin içinde var tabii, message brokerlar 2pacecommit'in ama şey xa'in ama...
+
+138
+00:35:51,956 --> 00:36:11,056
+Modern kullanılan mesaj brokerlar, yani mesela Kafka veya en çok da tabii Kafka ama daha basit versiyonu RabbitMQ bu protokolü desteklemiyor. Bu yüzden aslında şimdiki uygulamalarda bunun kullanılması çok da verimli olamaz bu mesaj kurilerle desteklenmediği için.
+
+139
+00:36:12,336 --> 00:36:18,076
+Bir de dediğim gibi servis eğer ayakta değilse veya çalışmıyorsa bu işlem yapılamaz ve bu da gecikmelere sebep olur.
+
+140
+00:36:19,155 --> 00:36:42,615
+Bu yüzden yazılım tasarımcıları Saga tasarım desenini düşünmüşler. Bu tasarım desenin bir işlemi aslında lokal transakşonlara bölerek her diyelim 4 mikro servisimiz varsa 4'ünün de içinde farklı lokal transakşonlara bölerek burada bir serviste biten transakşonun diğerini otomatik olarak tetiklemesini sağlıyor, trigger etmesini sağlıyor.
+
+141
+00:36:42,615 --> 00:36:45,475
+Bunu da bir mesaj paylaşarak yapıyor.
+
+142
+00:36:45,940 --> 00:36:53,640
+Şimdi burada cümle olarak işlemleri adımlara bölerek local compensating yani geri alma işlemlerini tanımlayarak bağımsız bir çözüm sağlar.
+
+143
+00:36:54,519 --> 00:36:57,680
+Şimdi buradan bunu kısaca anlatmak istiyorum hocam.
+
+144
+00:36:57,800 --> 00:37:10,619
+Dediğim gibi lokal transakşonları böldüğü için aşama aşama gelip bir aşamada takıldığı zaman otomatik olarak geriye doğru yapılan şeyleri tekrarlayarak geriye doğru almasını sağlıyor.
+
+145
+00:37:10,976 --> 00:37:34,536
+Bunu nasıl yapıyor? Bunu da tabii ki ortalarda bir compensating transaction'ı önceden kayıt ediyor. Yani bu aşamada fail olursa geriye doğru yapma metodunu da kendisi set ediyor önceden. Bu arada fail olduğu zaman verileri geriye döndürmek sadece veri tabanına bir şey yazdığımız zaman gerekiyor. Veri tabanından bir şey okuduğumuz zaman o kadar da gerekmiyor.
+
+146
+00:37:38,771 --> 00:37:46,591
+Eğer sadece veri tabanından bir şey okumaksa, bu zaman direkt işlem iftihar edilebiliyor. Yani böyle kompleks işlemlere girmemiz gerekmiyor.
+
+147
+00:37:48,391 --> 00:37:56,911
+Kısa olarak söylemem gerekirse, işlem bir mikroservis başlatır. Her mikroservis işlemi tamamlar ve bir sonraki servise iletişi sonucunu.
+
+148
+00:37:56,911 --> 00:38:00,631
+Lokal transakçı tamamlandığında servis bir mesaj paylaşır.
+
+149
+00:38:01,235 --> 00:38:19,675
+Ve bu mesaj diğer servislerde işleme başlatır. Bunun sayesinde eğer bir servis durmuş olsa bile mesaj broker duran servis ayağa kalkana kadar bu mesajı paylaşmaya devam eder. Eğer bir adım başarısız olursa önceki işlemler telafi edilir ve bu sayede de sistem tutarlı bir hale getirilir.
+
+150
+00:38:21,204 --> 00:38:46,844
+Burada basit ve görsel olarak bunu slide'a koymak istedim hocam. Local Transaction. Diyelim ilk local transaction'ımız bizim bir yemek sepetinde bir siparişe tıkladığımız zaman bizim kartımızı diyelim validate etmesi. Bir sonraki aşama bizim banka hesabımızdan o paranın düşmesi. Diğer aşama şirkete ilave edilmesi, şirketin bütçesine ilave edilmesi ya da
+
+151
+00:38:47,315 --> 00:38:58,055
+Misal olarak diyorum, kuruya mesajın ulaştırılması. Ortadaki servis patlarsa, bir öncekinde write işlemi yapılmışsa o da onu geriye döndürüyor hocam. Bu nasıl yapılıyor?
+
+152
+00:38:59,092 --> 00:39:25,492
+Diyelim Tn sayda bu kadar kompleks bir işlem yapıyorsak fazla aşamalarımız oluyor. Diyelim Tn'e kadar geliyor, ortada bir yerde patlıyorsa buradan Tn artı birden sonraki Cn ve C1'e kadar zaten n burada azala azala gidiyor. Buradaki C aslında T'de yapılanın aynısı. Cn buradaki Tn oluyor, Tn'i geri döndürmeye çalışıyor. Aynı işlemleri sırasıyla geriye doğru yapıyor.
+
+153
+00:39:26,260 --> 00:39:48,740
+Bizim hesabımızdan 10 dolar çıkmışsa, ortada bir fail edilen aşama varsa, yeniden ilk yapacağı iş bizim, pardon son yapı. Eğer ilk aşama olarak bizden 10 doları çıkmışsa ve o failde kadar bazı aşamalar varsa, ilk önce o aşamaları geri döndürüyor. En sonunda da bizim hesabımıza 10 doları geri ekliyor hocam.
+
+154
+00:39:49,340 --> 00:39:51,320
+Kullandığımız kitapta bunun örneği vardı.
+
+155
+00:39:52,916 --> 00:39:58,056
+Biz order servisimiz, müşteri servisi, mutfak servisi və hesap servisimiz olduğunu düşünelim.
+
+156
+00:39:59,136 --> 00:40:02,396
+Hesap yarattığımız zaman ilk önce bizim kimlik bilgilerimizi kontrol ediyoruz.
+
+157
+00:40:03,216 --> 00:40:06,496
+Sonra bilet oluşturuluyor. Bilet dediğimiz yəni, sifariş oluşturuyor.
+
+158
+00:40:06,636 --> 00:40:13,176
+Kartımız autoriz ediliyor. Kartımızdaki bilgileri doğrulandıktan sonra sifariş doğrulanıyor.
+
+159
+00:40:17,684 --> 00:40:36,463
+Tiketi doğrulanıyor ve en sonunda da bizim siparişimizin doğrulandığına dair mesaj alıyoruz ve burada işlem tamamlanmış oluyor. Fakat burada Compensation Transaction'ın bildirilmesi bir sonraki aşamada. Bu az önce dediğim aşamaların nasıl değiştiğine dair.
+
+160
+00:40:37,076 --> 00:40:46,635
+Basit bir kitaptan aldım bunu hocam. Bu cümleler yazıyor. Yani hangi aşamalarında hangi işlemlerin yapıldığına dair.
+
+161
+00:40:49,811 --> 00:41:15,251
+Burada bazı aşamalar tabiki database'de write yapmadığı için, mesela Verify that Consumer Templates and Order. Bu sadece database'den read işlemi yapar. O yüzden eğer bizim dördüncü aşamada bir patlama yaşıyorsak, geriye dönüyorsak, ikinci aşamadaki bir compensating transaction çalışmaz. Yani bir şey, devre tabanında bir şey değiştirmemize gerek kalmaz. Sadece database'de yazdığımız zaman değiştirmemize gerek kalır.
+
+162
+00:41:16,115 --> 00:41:31,615
+Bu nasıl olur? Bu önceden ne yapar? Transaction'lara yani Compensating Transaction metodlara atan setler. Bu da ne demek? Yani eğer Verify Mesela Verify Consumer DTS aşamasında bir şey.
+
+163
+00:41:33,460 --> 00:41:45,619
+Fail olursa, Create Ticket değil de Reject Ticket metodunu çalıştır. Ve o Reject Ticket metodunu çalıştırdığımızda da zaten geriye doğru yine aynı şekilde tüm aşamaları rollback yapacaktır.
+
+164
+00:41:46,899 --> 00:42:00,340
+Misal olarak burada mesela Autorize 4. aşamada burada Fail olduğu şeyi anlatmış. Autorize Consumers Credit Card which fails. Fail olduktan sonra artık 5. aşamada Create Ticket değil de Create Rejected.
+
+165
+00:42:00,724 --> 00:42:08,083
+Metodunu çalıştırmakla, komutanı çalıştırmakla biz rollback işlerini yapıyoruz. Çok kısa şekilde
+
+166
+00:42:08,083 --> 00:42:19,524
+Saga pattern'in kültürlü yönetilebilir. Bir de orkestrisi, bir de chronisation. Orkestrisi de bir orkestrisi
+
+167
+00:42:22,771 --> 00:42:35,751
+Ve kontrol ettiği için de aslında bu hangi aşamaların geldiğini dediğimiz gibi geriye doğru olduğu için bir hafızım mekanizması olması lazım. Bunu kendisi karar verir. Nereden tutmasını? Bir SQL'de de tutabilir.
+
+168
+00:42:37,331 --> 00:42:47,051
+Veya mesaj brokerların yani o mesajları paylaşan bir lokal transakşonun tamamlandığı bilgisini paylaşan mesaj brokerlar da bu bilgileri tutabiliyor.
+
+169
+00:42:47,539 --> 00:43:09,840
+Veya inmemory, Redis dediğimiz veri yapısında tutulduğu zaman rollback mekanizması başarılı bir şekilde çalışabiliyor. Bu aşamadan sonra aslında bu iki tane şeyi detaylı şekilde anlatılıyor. Bu benim çarptarım değil hocam. Anlatacaklarım bu kadar. Eğer bir sorunuz varsa, internet gitmediyse alabilirim hocam.
+
+170
+00:43:09,840 --> 00:43:13,039
+Yok, yok gitmedi. Teşekkür ederiz.
+
+171
+00:43:14,579 --> 00:43:29,500
+Önceki arkadaşlar daha henüz katılmadığı için [öğrenci]'e geçtik. Aslında o saga biraz daha ileri bir konuydu. Ama olsun. Teşekkürler. Var mı sorusu olan arkadaş? Herhalde varsa sorabilirsiniz tabii.
+
+172
+00:43:33,460 --> 00:43:38,980
+Sanıyorum yok. Peki o zaman tekrar başa dönüp [öğrenci] seninle.
+
+173
+00:43:46,356 --> 00:43:49,096
+Devam edebiliriz [öğrenci]. Orada mısın?
+
+174
+00:44:09,460 --> 00:44:12,235
+Evet, mikrofon. İlk sessiz, tamam.
+
+175
+00:44:19,891 --> 00:44:25,991
+Bekliyoruz seni. Hazır olduğunda ekran paylaşarak sunuma geçebilirsin.
+
+176
+00:44:41,588 --> 00:44:42,628
+Ses...
+
+177
+00:44:45,844 --> 00:44:46,743
+Geliyor şimdi.
+
+178
+00:44:46,963 --> 00:44:47,903
+Sesim geriyor mu hocam?
+
+179
+00:44:47,923 --> 00:44:49,224
+Geldi, geldi, geldi.
+
+180
+00:44:49,684 --> 00:44:50,384
+Tamam hocam.
+
+181
+00:44:54,099 --> 00:44:55,099
+Şöyle bir şey ben.
+
+182
+00:45:13,844 --> 00:45:15,083
+Sağolun değil mi?
+
+183
+00:45:26,452 --> 00:45:28,972
+Şu an hangi ekran görünüyor hocam?
+
+184
+00:45:29,572 --> 00:45:32,452
+Şey, web browser görüyoruz.
+
+185
+00:45:34,452 --> 00:45:36,592
+Web browserı bir saniye.
+
+186
+00:46:05,427 --> 00:46:13,768
+Şu an sunum görünüyor sanırım hocam. Evet, şimdi sunuma geçtik. Tamam, ben başlayayım istedim. Evet, buyur.
+
+187
+00:46:16,884 --> 00:46:38,183
+Benim bölümüm aslında kitaptaki ikinci bölümdü. İkinci bölümde mikroservis mimarileri aslında nasıl servislere dönüştürülür, nasıl parçalara ayrılır, nasıl daha iyi bir sistem haline getirilir. Özellikle CI, CD, DevOps süreçlerine nasıl uygunluğu hale getirilir. Bundan bahsetmeye çalışacağım.
+
+188
+00:46:38,931 --> 00:46:44,652
+Burada kitapta dekompozisyon yöntemleri olarak anlatılmış.
+
+189
+00:46:46,036 --> 00:47:03,596
+Şimdi bir mikroservis mimarisine baktığımız zaman, bir mikroservis mimarisini nasıl tanımlayacağız? İlk başladığımız zaman bu servisleri nasıl belirleyeceğiz? Bizim için büyük bir problem. Çünkü onları doğru tanımlamamız gerekiyor ki, operasyonları doğru tanımlamamız gerekiyor ki sistem istediğimiz gibi çalışsın.
+
+190
+00:47:14,036 --> 00:47:23,296
+İterasyon şeklinde, yani belirlediğiniz bir modeli sürekli üzerinde yeniden düzenlemeniz gereken ve biraz da yaratıcılık katmanız gereken bir süreç olarak tanımlanmış.
+
+191
+00:47:23,556 --> 00:47:33,856
+Ve ilk aşamaları olarak aslında sistem operasyonlarını tanımlamaktan bahsetmiş. Daha sonra iki tane yöntemden bahsedilmiş bu servislere ayırma yöntemleri olarak.
+
+192
+00:47:34,436 --> 00:47:40,136
+Birincisi iş yeteneklerine göre ayrıştırma desenlerinden bahsedilmiş. Yani business capability olarak geçiyor burada.
+
+193
+00:47:42,036 --> 00:47:51,316
+Yöntem olarak ise alt alan deseninin uygulanması olarak geçilmiş. Yani bir alan modeliniz var. Bunları subdomainlerine servis olarak tanımlıyorsunuz.
+
+194
+00:47:51,316 --> 00:48:00,436
+Ve demopozisyon yönergeleri olarak neler var? Bu ayrıştırmaları yaparken iki tane ilkeden bahsedilmiş. Bunlardan bahsetmeye çalışacağım.
+
+195
+00:48:00,916 --> 00:48:07,016
+Tabi bu servislere ayırırken zorluklar yaşamıyor muyuz? Yaşıyoruz. Bunlardan bahsedeceğim. Engellerden.
+
+196
+00:48:07,436 --> 00:48:10,036
+Ve son olarak da bu servislere ait olan...
+
+197
+00:48:10,036 --> 00:48:12,036
+Anfilerin tanımlanmasından bas.
+
+198
+00:48:18,835 --> 00:48:26,635
+İkinci bölüm kullanılıyor. Şimdi mikroservis mimarisi dediğimiz zaman aslında tek bir sorumluluğu olan bağımsız dağıtılabilir, izlenebilir.
+
+199
+00:48:27,923 --> 00:48:43,884
+Bir yapı olarak bizim karşımıza çıkıyor. Peki biz mikroservis mimarisine neden ihtiyaç duyuyoruz? Aslında daha önce söylediğim gibi CICT süreçlerinin uyumluluğu sağlamak için bir uygulama geliştirdiğimizde çok komplike bir yapı ortaya çıkıyor.
+
+200
+00:48:43,884 --> 00:48:55,824
+Aslında servisler oluyor birden fazla birbiriyle ilişki içinde oluyor. Nasıl ilişki içinde olacağını çok iyi bir şekilde tanımlamamız gerekiyor. Tabi bu servisler bazen farklı farklı bölümlerde geliştirilebiliyor.
+
+201
+00:48:55,923 --> 00:49:10,043
+Tabi bu bölüm farklı bölümlerin birbirleriyle ortak bir noktada buluşması lazım. Ortak bir şekilde geliştirebiliyor olması lazım. Ve bir bölümün geliştirdiği ya da yaptığı bir değişikliğin diğer bölümü aslında etkilememesi gerekiyor.
+
+202
+00:49:10,043 --> 00:49:22,043
+Tabi bu mikroservis mimarisi de aslında böyle ihtiyaçlara yönelik olarak gelişen bir yöntem olarak bizim karşımıza...
+
+203
+00:49:22,356 --> 00:49:31,036
+Şimdi baktığımızda bunun bir tanımlama süreci var. Peki biz bunu mikroservis mimarisini nasıl tanımlayacağız?
+
+204
+00:49:35,219 --> 00:49:51,699
+Mikroservis mimarisini geliştireceğimiz kurum, kuruluş gidiyoruz ve orada aslında uzmanlara soruyoruz. Siz bu işi nasıl yapıyorsunuz? Ürün nereden geliyor ya da veriniz nereden geliyor? Nereye gidiyor? Nasıl işliyorsunuz? Ne gibi süreçlerde geçiriyorsunuz? Bunu şeklinde.
+
+205
+00:49:52,739 --> 00:49:59,699
+Hastanelerde olduğu gibi aslında bir onan formu gibi bir işin hikayesini alıyorsunuz aslında. Daha sonra bu hikayeyi...
+
+206
+00:50:00,000 --> 00:50:16,780
+Biz aslında sınıfta derslerde de yaptığımız gibi isimler gibi, fiiller gibi yapılara ayırıyoruz. Ve daha sonra aslında isimler bizim servislerimiz, sınıflarımız oluyor. Daha sonra da bu fiil olarak belirlediğimiz eylemlerde bizim aslında operasyonlarımız olarak tanımlıyoruz. Aslında işlem ilk başta böyle başlıyor.
+
+207
+00:50:28,000 --> 00:50:41,940
+Yapının üzerinde yaptığımız herhangi bir servisteki ya da bölümündeki yaptığımız değişiklikle beraber tüm model üzerinde yeniden bunu nasıl etkiledir, bunda nasıl bir değişiklik yapmamız gerekiyor, burayı nasıl değiştirebiliriz ya da bu buna uyumlu mu şeklinde yeniden üzerinden geçiyoruz.
+
+208
+00:50:44,307 --> 00:51:07,148
+Şimdi kitapta verilen örnekle burada aslında alınan gereksinimler belirlenmiş. Bir müşteri olduğunu söylemiş ve bir sipariş vermek istediğini söylemiş. Tabi burası sadece bir örnek. Ve başka bir örnekte de burada da restoran olduğunu söylemiş ve bu da siparişleri kabul etmek, olaylamak ya da denay etmek gibi işlemleri yapmak istediğinden bahsedilmiş.
+
+209
+00:51:12,307 --> 00:51:15,108
+Bir uygulama aslında. Bunun üzerinden anlatılmış tüm örnekler.
+
+210
+00:51:15,788 --> 00:51:22,128
+Burada bir siparişin oluşturulması ve siparişin kabul edilmesi şeklinde de fonksiyonlar belirlenmiş.
+
+211
+00:51:23,108 --> 00:51:28,148
+Burada bir mikroservis mimarisinin oluşturulmasıyla ilgili 3 adımdan bahsedilmiş.
+
+212
+00:51:28,148 --> 00:51:30,928
+İlk olarak burada sistem operasyonlarının tanımlanması.
+
+213
+00:51:31,408 --> 00:51:37,428
+Daha sonra bu sistem operasyonlarını kullanacak aslında servislerin tanımlanması şeklinde belirlenmiş ikinci adım olarak.
+
+214
+00:51:37,888 --> 00:51:40,307
+Ne gibi? Sipariş servisi gibi. Restoran servisi gibi.
+
+215
+00:51:40,307 --> 00:51:43,708
+Dikkat ederseniz buradaki restoran, müşteri...
+
+216
+00:51:44,755 --> 00:52:03,635
+Bunlar birer servis olarak tanımlanmış ilk başta. Daha sonra da bunlar arasında, tabi bu servisler birbiriyle etkileşim içinde olacak, birbirleriyle haberleşecekler, bazen dışarıdan da istekler olacak. Bunları gerçekleştirecek API'lerin ve bu API'lerin birbirleriyle arasındaki ilişkinin nasıl olacağı tanımlanmış.
+
+217
+00:52:12,755 --> 00:52:16,755
+Daha sonra da bunların apilerinin belirlenmesi şeklinde tanımlanmış.
+
+218
+00:52:18,496 --> 00:52:22,396
+Şimdi sistem operasyonları diyoruz. Servislerimizden bahsettik.
+
+219
+00:52:22,396 --> 00:52:24,396
+Sistem operasyonları...
+
+220
+00:52:24,659 --> 00:52:51,199
+Bu metinde, yani kitapta şu şekilde belirtilmiş. Komutlar ve sorgulardan bahsedilmiş burada. Aslında bizim crude dediğimiz işlemler, yani create, update, delete, read dediğimiz işlemler. Burada read dediğimiz işlem sorgu olarak geçmiş. Yani belirli bir sorgu çalıştırılması ve velilerin getirilmesi, okunması şeklinde. Geri kalan diğer işlemler ise komut olarak belirlenmiş.
+
+221
+00:52:52,659 --> 00:52:54,919
+Burada ikiye ayrıldığından bahsedilmiş.
+
+222
+00:52:56,019 --> 00:53:08,740
+Yani bir servisin ihtiyaç duyduğu veriyi, bilgiyi diğer servislerden ya da kullanıcıdan alacak, getirecek, bazen işleyecek, birbirini çağıracak yapılardan bahsediyoruz aslında burada sistem operasyonları derken.
+
+223
+00:53:09,440 --> 00:53:19,820
+Peki bu sistem operasyonlarının düzgün bir şekilde tanımlanması, gerekli olan servise gerekli olan operasyonun tanımlanması bizim için neden önemli?
+
+224
+00:53:24,019 --> 00:53:52,019
+Bu sürecinden bahsediyoruz. Burada sürekli bir geliştirme olacak, sürekli bir ihtiyaç olacak. Bazen bir sorunu çözeceğiz, bazen başka bir özellik ekleyeceğiz. Tabii bu özellik bir servise eklediğimizde diğer servisleri nasıl etkileyecek? Ne kadar etkileyecek? Onlarda ne kadar değişikliğe gitmemiz gerekecek? Aslında biz burada, kitapta da anlatıldığı gibi bunu minimize etmek. Olabildiğince birbirinden ayrıştırarak, farklı servisler oluşturarak bir işlemi gerçekleştirdiğimizde ya da bir yerde...
+
+225
+00:53:52,019 --> 00:54:02,039
+Değişiklik yaptığımızda diğer servisleri çok fazla etkilememesi lazım ki bize getirdiği iş yükünü azaltması lazım ve hızlı bir çözümle iyi bir sonuç elde etmeliyiz.
+
+226
+00:54:03,891 --> 00:54:21,011
+Tabii bunu yaparken aslında ilk başta oluşturduğumuz şey bizim alan modelimiz oluyor. Burada ilk başta oluşturduğumuz alan modeliyle biz şunu belirliyoruz aslında. Bir servis nedir bu oluşturduğumuz hikayede ya da bize verilen hikayede?
+
+227
+00:54:21,556 --> 00:54:38,596
+Bu servisler nelerdir, neler servis olabilir? Tabii ki bu yazdığımız gibi ilk başta kalmayacak. Bu sürekli ilerleyen süreçte farklı servisler ya da farklı ihtiyaçlara göre belki başka bir yapı ya da bir alt domeyin diyeceğimiz bir şey direkt farklı bir servis olarak ortaya çıkabilir. Onu öyle tasarlayabiliriz.
+
+228
+00:54:39,596 --> 00:54:48,735
+Burada önemli olan alan modelinde servislerimizi oluşturmak ve operasyonlarımızı tanımlamak. Ne gibi operasyonlara ihtiyacımız var ve ne gibi servisler belirlemeliyiz?
+
+229
+00:54:50,324 --> 00:55:06,503
+Şimdi burada verilen örnekle aslında burada bir hikayemiz vardı. Bizden istenenler vardı. Bundan yüksek seviye bir alan modeli oluşturuyoruz. Order gibi, restoran gibi, teslimat gibi farklı farklı servislerin olacağını varsayıyoruz.
+
+230
+00:55:06,503 --> 00:55:18,324
+Ve burada bu sistemler arasında olabilecek operasyonlarımızı belirliyoruz. Bir siparişin oluşturulması gibi, bir siparişin kabul edilmesi gibi. Tabi bu ilk başlangıç oldu.
+
+231
+00:55:18,324 --> 00:55:44,963
+Bu konuda basit bir seviyede basit basit servislerimizi oluşturuyoruz. Şöyle geçiyorum. Burada kitapta verilen bir örneği koydum. Aslında bir sipariş verme örneği hikayesi ele alınmış. Bir tüketicinin olduğundan bahsedilmiş, bir restoranın olduğundan bahsedilmiş. Şurada verildiği gibi aslında. Ve o restoran tarafından teslim edilen şunu biraz.
+
+232
+00:55:47,315 --> 00:55:55,435
+Ve o restoran tarafından teslim edilebilecek bir teslimat adresi zamanına ihtiyaç duyulduğu söylenmiş.
+
+233
+00:55:55,435 --> 00:55:59,015
+Ve restoranın sipariş askeri tutarını karşılayan bir sipariş toplamı.
+
+234
+00:55:59,635 --> 00:56:25,715
+Dikkat ederseniz ilk başta sadece tüketicimiz, restoranımız bir ordunun oluşturulması, ordunun kabul edilmesi vardı. Olay örgüsüne girdikçe aslında ihtiyacımız olan fonksiyonlar, yani operasyonların farklılaştığını, farklı farklı operasyonlara ihtiyaç duyduğumuzu da görüyoruz burada. Tüketici restoran için bir sipariş verdiğinde tüketicinin kredi kartı onaylanır. Burada da aslında senkron, asinkron olaylarına da girilmiş, biraz bahsedilmiş.
+
+235
+00:56:27,635 --> 00:56:42,635
+Mekanizmaları, servis ve operasyon seviyesinde...
+
+236
+00:56:42,996 --> 00:57:10,696
+Tanımlarken bunları bu durumlara dikkat etmemiz gerekiyor. Sipariş tüketiciyle ilişkilendirilir, sipariş restoranla ilişkilendirilir şeklinde bir hikaye oluşturulmuş. Bir ilerleyen slide'larda da bahsedeceğim. Aslında bunu belirlerken, özellikle alt donu yayınları da belirlerken burası biraz daha özner. Yani bu böyle yapılır ya da şöyle yapılır gibi bir kuralın olmasından ziyade sizin sisteme nasıl baktığınız.
+
+237
+00:57:10,996 --> 00:57:20,916
+Oluşturduğunuz sistem hangi şirkete ya da kuruma aitse o kurumun ne iş yaptığıyla da biraz alakalı aslında. Yani bu servislere ayırırken ona da dikkat ediyoruz.
+
+238
+00:57:22,324 --> 00:57:41,623
+Verilen bir sipariş pending acceptance durumunda olsun denilmiş ve bir teslimatçı siparişi teslim etmek için mevcut olsun. Ne zaman bir restoran belirli bir saatte hazırlama sözü vererek siparişi kabul ederse o zaman siparişin durumu accept olarak değiştirilir ve siparişin promise by time'ı söz verilen zamanla güncellenir olarak belirlenmiş.
+
+239
+00:57:41,623 --> 00:57:50,324
+Tabi burada belirlenen bu operasyonlar bu operasyonu gerçekleştirirken aslında farklı servisler bilgilerine de ihtiyaç duyuyor.
+
+240
+00:57:50,324 --> 00:58:05,203
+Birazdan onlardan da bahsedeceğiz. Apilerle beraber oradaki bilgileri de çekip getirmesi gerekiyor ki bu operasyonel işlemini yerine getirebilmesi için. Ve teslim açı siparişi teslim etmek üzere atanır şeklinde bir olay örgüsü verilmiş.
+
+241
+00:58:06,867 --> 00:58:19,288
+Yani biz ilk başta servislerimizi belirledikten sonra, burada olay örgümüzü aldıktan sonra bunlara ait olan operasyonlarımızı belirliyoruz ve arasındaki ilişkiyle belirleyerek bir mimari ortaya çıkarmaya çalışıyoruz.
+
+242
+00:58:20,128 --> 00:58:23,288
+Burada verilen olay örgüsünden alınan...
+
+243
+00:58:25,043 --> 00:58:31,263
+Durumlardan belirli sınıflar oluşturulmuş ve sınıflar arasında belirli ilişkilendirmeler verilmiş.
+
+244
+00:58:31,263 --> 00:58:41,003
+Tabi orada verilen hikayeye göre. Tabi burada bir ödeme bilgileri var, teslimat bilgileri var. Teslimat bilgileri dikkat ederseniz yine adrese ihtiyaç duyuyor.
+
+245
+00:58:42,900 --> 00:58:59,539
+Burada bir sipariş var. Siparişin belirli bir durumu var. State buraya koyulmuş. Yine restoran var. Taşıyıcı, kuryemiz var. Uygun olup olmama durumu var. Bu mesela taşıyıcının yani kurye sınıfının içine koyulmuş. Belki burada belirli bir...
+
+246
+00:59:00,596 --> 00:59:11,855
+Şey koyulabilirdi, teslimat bilgisi gibi ya da teslimat diye farklı bir sınıf oluşturulup buradaki kuryenin uygunluk durumu belki oraya da taşınabilirdi, koyulabilirdi.
+
+247
+00:59:13,996 --> 00:59:17,896
+Şimdi burada iki tane yöntemden bahsetmiştik.
+
+248
+00:59:18,612 --> 00:59:24,831
+İki tane alan modelinin oluşturulmasına yönelik iş yeteneklerine göre hizmetlerin tanımlanması.
+
+249
+00:59:24,831 --> 00:59:36,271
+Şimdi burada belirtilen durum şu. Şirketin ne yaptığını tanımlayan durumların aslında servis olarak mimaride oluşturulmasını öneriyor.
+
+250
+00:59:39,956 --> 00:59:49,096
+Ne işle ilgileniyorsa, o işte önemli olan kavramlar nelerse bu kavramlarının belirlenmesi ve bunların servis olarak tanımlanması şeklinde bir öneri yapılmış.
+
+251
+00:59:49,096 --> 01:00:06,876
+Tabi burada ayrıştırma yani dekompozisyon işlemi bu servislerin birbirine ayrılması ve tanımlanmasında bizim ana hedef olarak alacağımız yöntemin bu şirketin ne yaptığını tanımlayan parçaların.
+
+252
+01:00:07,315 --> 01:00:29,036
+Olması gerektiğini savunmuş burada. Bu ilk olarak, ilk yöntemimiz iş yeteneklerine göre ayırma olarak verilmiş. Burada da bir örnek verildiğinde aslında banka çeki örneğin verilmiş. Bu banka çeki örneğinde çek yatırma işleminden bahsedilmiş ve daha önceden yazılı bir kağıtla bankaya giderken şimdi ATM'lerden ya da telefonlardan çekildiğinden bahsedilmiş.
+
+253
+01:00:31,251 --> 01:00:44,652
+İş yeteneği değişmiyor ama iş yeteneğinin nasıl işlemle yapıldığının değiştiğinden bahsedilmiş. Dolayısıyla bu yöntemle geliştirdiğimizde bizim iş yeteneğimiz değişmiyor.
+
+254
+01:00:45,172 --> 01:00:58,891
+Yani ilerleyen süreçlerde tabii ki değişiklikler olabilir. Buna uyumlu mudur diye bakıyoruz aslında burada. Tabii ki iş yeteneğimiz değişmiyor ama nasıl yapıldığı değişiyor. Yani operasyonlarda aslında bir değişiklik yapıyoruz ama servisimiz aynı kalmış oluyor.
+
+255
+01:01:01,556 --> 01:01:05,916
+Burada da Food to Co. örneğinden verilmiş. Kitapta verilen örnekleri kullanıyorum.
+
+256
+01:01:06,675 --> 01:01:14,695
+Tabi burada bir tedarikçi yönetiminden bahsedilmiş, tüketici yönetiminden bahsedilmiş, sipariş alımı ve yerine getirilmesinden bahsedilmiş ve muhasebeden bahsedilmiş.
+
+257
+01:01:15,576 --> 01:01:24,655
+Burada restoran bilgi yönetimi, menüler, konumlar, çalışma saatleri gibi özelliklerin burada yöneticilerinden bahsedilmiş.
+
+258
+01:01:25,076 --> 01:01:29,496
+Kurye yönetimi, kurye ile ilgili bilgilerin, lokasyonun bilgisi gibi.
+
+259
+01:01:29,556 --> 01:01:34,896
+Uygun olup olmadığının durumunun bilgisi gibi bilgilerin burada yönetileceğinden bahsedilmiş.
+
+260
+01:01:35,695 --> 01:01:40,195
+Tüketici tüketiciliğe ilgili olan tüm bilgilerin burada yönetileceğinden bahsedilmiş.
+
+261
+01:01:40,195 --> 01:01:46,195
+Sipariş yönetimi, restoran sipariş yönetimi, lojistik.
+
+262
+01:01:46,675 --> 01:01:58,335
+Bu yönetimi, mesela kuryelerin teslimat için kullanılabilirliğini yönetme, mesela burada lojistik bilgisinin sipariş alımı ve yerine getirilmesi diye bir servisin içine koyulmuş. Biraz önce kuryenin içindeydi.
+
+263
+01:01:59,123 --> 01:02:14,883
+Teslimat yönetimi siparişlerin tüketiciye teslim edilmesi. Dikkat ederseniz burada da servisler birazdan farklı bir alt alan modelinden de bahsedeceğiz. Çok fazla aslında servis var ve birbirinden uyumlu olmama gibi bir durum da olabilir burada.
+
+264
+01:02:15,923 --> 01:02:21,783
+Ya da farklı servislerin çıktısına ihtiyaç duyan çok fazla durumda olabilir.
+
+265
+01:02:22,643 --> 01:02:27,283
+Muhasebe olarak da tüketici muhasebesi, restoran muhasebesi ve kurye muhasebesi olarak verilmiş.
+
+266
+01:02:27,403 --> 01:02:31,943
+Tabi bu burada verilen örnekten elde edilen çıktılar olarak sunulmuş.
+
+267
+01:02:34,103 --> 01:02:39,943
+Grafiksel olarak verildiğinde ise bizim burada...
+
+268
+01:02:40,755 --> 01:03:07,755
+İş yeteneklerinden, hizmetlerine döndüğümüzde, Sapphire Management olarak bir kuryenin yönetimi ve restoran bilgi yönetimi olarak verilmiş ve bunlar ayrı birer servis olarak tanımlanmış. Birbirinden ayrılmış yani birbirinden bağımlı azaltılmış. Bir Consumer Management verilmiş, Order Taking and Fulfillment verilmiş ve bunlar yine aynı şekilde üstte olduğu gibi farklı servisler olarak belirlenmiş.
+
+269
+01:03:08,755 --> 01:03:19,115
+Bir de yapacağımız iterasyonlar, Consumer Management'ın içine farklı iki tane daha servis oluşturulup, yani bir iş iki parçaya ayrılıp, burada iki farklı servis de oluşturulabilir.
+
+270
+01:03:20,016 --> 01:03:24,775
+Tabi bu şekilde yapıldığında şu da unutulmamalı. Burada oluşturduğumuz aslında servis sayısı artıyor.
+
+271
+01:03:24,775 --> 01:03:36,755
+Ama bir yandan böyle dezavantaj gibi düşünülebilir ama şöyle de bir avantajı var. Birbirine olan bağımlılıklarını da azaltmış oluyorsunuz. Yani tek bir işle uğraşacak bir servis haline.
+
+272
+01:03:36,755 --> 01:03:49,875
+Bizim de zaten bu mimariyi oluştururken, servisleri oluştururken ana adetlerimizden birisi de o. Burada farklı servisler aynı şekilde oluşturulmuş.
+
+273
+01:03:50,875 --> 01:03:59,915
+Tabi burada açıklamaları da yazılmış zaten. Her bir servisin farklı bir işi ele aldığını ve o işi çözmeye çalıştığından bahsedilmiş.
+
+274
+01:04:01,300 --> 01:04:23,019
+Bir hizmetin hangi iş yeteneğine karşılık geldiğini belirlemek öznel bir karardır. En başta da bahsettiğimiz gibi bu hangi iş yeteneklerine ayıracağımız, nasıl ayıracağımız, şirketi nasıl analiz ettiğimiz, nasıl baktığımız iyi bir şekilde analiz etmemiz gerekiyor ki bu servisleri uygun olduğu şekilde ve gereksinimleri karşılayacak şekilde belirleyebilelim.
+
+275
+01:04:23,019 --> 01:04:29,019
+Çünkü bu işleşme genellikle iş süreçlerinin derinlemesine, anlaşılmasına dayanır şeklinde bir...
+
+276
+01:04:29,300 --> 01:04:40,300
+Metin verilmiş. Şimdi burada öznel olarak belirlendiği için kitabı yazan kişinin burada belirlediği servisleri nasıl ayırdığını...
+
+277
+01:04:40,692 --> 01:05:08,131
+Şu şekilde açıklamış. Tedarikçi yönetiminin altı yetenekleri iki hizmete eşlenmiştir. Çünkü restoranlar ve kuryeler çok farklı tedarikçi türlerdir diye bir gerekçe sunmuş. Sipariş alımı ve yerine getirilmesi yeteneği süreçin farklı aşamalarından sorumlu üç hizmete eşlenmiş. Kurye kullanılabilirlik yönetimi ve teslimat yönetimi yetenekleri birleştirilip tek bir hizmete eşlenmiştir. Çünkü bunlar derinlemesine iç içe geçmiş durumlardır. Burada aslında şundan da bahsediyor.
+
+278
+01:05:08,692 --> 01:05:24,411
+Çok bağımlı olduğu için birinde yapılacak bir değişiklik diğerini de etkileyecektir. Dolayısıyla ikisinde yeniden değişiklik yapmanız gerekiyor. Bu sınıfları birleştirirseniz, servisleri birleştirirseniz tek bir serviste değişiklik yapmış olacaksınız ve tek bir servise etkilemiş olacak. Aslında baktığımızda mantıklı.
+
+279
+01:05:26,387 --> 01:05:49,307
+İkinci bir yöntem ise alt alan deseni uygulayarak mikro mimarilerin, yani mikro servislerin oluşturulması. Peki burada nasıl bir yöntem var? Nesne yönelimli alan modelinden esinlenilmiş. Buradaki asıl hedef, farklı farklı servislerle uğraşan ekipler arasında ortak bir dilin oluşturulması.
+
+280
+01:05:50,963 --> 01:05:55,903
+Buradaki ana hedef de iş alanlarının farklı yönlerini belirlemek aslında.
+
+281
+01:05:59,347 --> 01:06:27,347
+Burada en çarpıcı ve öne çıkan durumlardan birisi de şu. Biz dikkat ederseniz diğer mikro mimari servisleri için hep bir tane alan modelinden bahsediyorduk. Bu alt alan deseni, alt alan modeli, subdomain olan yöntemde ise her bir servisin kendisine ait olan bir alan modeli olduğunu söylüyor. Yani öyle bir şekilde oluşturmamız gerektiğini söylüyor. Dolayısıyla biz her bir servisin sadece tek bir işle ilgilendiği kavramı...
+
+282
+01:06:27,347 --> 01:06:49,467
+Buradan çıkarmış oluyoruz. Dolayısıyla birbirlerine olan bağımlılıklarını da azaltmış oluyoruz. Bir ekip yapısı olarak düşündüğümüzde, 6 kişilik ya da 10 kişilik ekipler olarak düşündüğümüzde bir ekibin yaptığı bir değişiklik sadece o servise etkilemiş oluyor. Diğer servisleri etkilemiş olmuyor. Dolayısıyla orada hızlı bir entegrasyon yapıp projenin uygulamanın sürekli çalışmasını, sürekli hizmet vermesini sağlamış oluyoruz.
+
+283
+01:06:50,900 --> 01:07:14,560
+Burada Domain Driven Design'dan bahsedilmiş. Tabi bu biraz önceki bahsettiğim aslında birden fazla alan modelinin olmasının kavramını açıklıyor aslında. Tabi burada sınırlı bağlam olarak söylediğimiz de biraz önceki söylediğim bir servisin diğer servisi aslında etkilememesi, arasındaki bağlamı azaltmak, birbirinden izolasyonunu sağlamak.
+
+284
+01:07:15,539 --> 01:07:36,940
+Tabii bunu yaptığımız zaman şöyle bir şey de oluşturmuş oluyoruz. Bir kavram bazen farklı servisi geliştiren ekipler arasında farklı bir durumu ya da işlemi ifade edebilir. Bu şekilde oluşturduğumuzda da aslında bir kavramın bir ekip içinde aynı şeyi ifade etmesini sağlamış oluyoruz. Böylece de ortak dili oluşturmuş oluyoruz.
+
+285
+01:07:39,251 --> 01:08:07,251
+Burada alt alanların, yani burada kavram, burada savunulan kavram şu. Her bir alt alanın bir tane alan modeli vardır ve bir servisle aslında ifade edilir. Bu şekilde bir parçalama yapılıyor. Burada SAP Domain yönteminin kullanılarak mikromini vari servisinin oluşturulmasında. Bir order servis verilmiş ve order domain model. Kendisine ait bir alan modeli var. Bir teslimat servisi var ve teslimat servis.
+
+286
+01:08:07,251 --> 01:08:35,252
+Kendisine ait bir alan modeli var. Ve bu şekilde ilerleye oluşturduğunuz her bir subdomain için, yani alt alan için aslında bir alan modeli oluşturuyorsunuz yeni başta. Dolayısıyla sadece o işe odaklanmış oluyor, tek bir işi oluyor, tek bir görevi yerine getirmek. Bu şekilde baktığınızda aslında ilk mikromimari servisini oluştururken ya da şirketi tanımlayan o iş adımlarını tanımlarken çok büyük ve karmaşık görünen yapı bu şekilde geldiğinde aslında basite indirilmiştir.
+
+287
+01:08:35,252 --> 01:08:39,192
+Ve her servisin bir işlemi gerçekleştirdiği bir yapıya dönüşmüş oluyor.
+
+288
+01:08:41,332 --> 01:09:07,912
+Hizmetleri ayrıştırmalı iki yöntemden bahsettik. Peki bunda yönergeler nelerdir? İki tane ilkeden bahsedilmiş aslında. Birincisi Single Responsibility Principle, ikincisi de Common Closure Principle. Single Responsibility Principle şunu söylemekte, her bir servisin tek bir işinin olması gerektiğini söylüyor. Yani tek bir görevden sorumludur ve bu tek bir görevi gerçekleştirmelidir şeklinde.
+
+289
+01:09:09,332 --> 01:09:17,391
+Biz aslında mikro servis mimarisinde servisleri belirlerken, tabii 11 tane ilke var. Burada sadece 2 tanesinden bahsedilmiş.
+
+290
+01:09:22,484 --> 01:09:26,884
+Tek bir görevden sorumlusunuz. Dolayısıyla sadece onu gerçekleştirmeye çalışıyorsunuz.
+
+291
+01:09:26,884 --> 01:09:50,484
+Onu gerçeklemeye çalışıyorsunuz. Common Closure Principle ise birbirine yakın işlemleri gerçekleştiren servislerin bir sınıf içinde olması ve bunların bir tanesini etkilendiğinde ya da bir tanesinin verisi güncellendiğinde o sınıfa ait olan tüm servislerin güncellenmesi gerektiğini, yani kapandığında da beraber kapanması gerektiğini.
+
+292
+01:09:50,484 --> 01:10:14,644
+gerektiğini savunan bir prensip olarak ortaya çıkıyor. Yani biz aslında servislerimizi gerçekleştirirken ve arasındaki ilişkileri de belirlerken aslında bu iki prensiple dikkat etmemiz gerekiyor. Yani bu şekilde yaptığımızda bizim ilk başta belirlediğimiz hedefe daha da yaklaşmış oluyoruz. Birbirinden izole edilmiş, belirli işlemleri gerçekleştiren bir servis mimarisi.
+
+293
+01:10:16,083 --> 01:10:43,963
+Bunlardan biraz önce de bahsedeceğim ama tabii bu prensipleri gerçekleştirirken ya da uygularken, operasyonları belirlerken, servisleri tanımlarken önümüzde farklı farklı sorunlar da çıkacak. Bunlardan en önemlilerinden bir tanesi de tanrı sınıfları. Şimdi bazen bazı servisler olabiliyor, birbiriyle çok ilişkili olabiliyor ama farklı farklı alanlara da ayırmış olabiliyoruz. Farklı ihtiyaçlarımız olabiliyor. Tabii bunlara çözüm bulmak oldukça karmaşık bir süreci de beraberinde getiriyor.
+
+294
+01:10:44,083 --> 01:11:12,083
+Burada bahsedilen tanrı sınıfları birden fazla aslında işlemi gören, yapılar bir tek bir sınıf altında toplanması. Bunları farklı farklı bir sınıf şeklinde tanımlanması bizim için daha uygun olabileceğinden bahsediliyor. Ama bazen bazı sınıflar, bazı servisler birbirine o kadar bağlı oluyor ki bunlara ayırmak çok güç olabiliyor. Aslında bunların sagalardan da bahsediyor. Sagalar kullanılabilir diyor. Onlar da daha...
+
+295
+01:11:12,083 --> 01:11:20,083
+Daha sonraki chapter'larda anlatılıyor aslında. Tabi burada hizmete ayrıştırma yönergelerini de uyguladığımız zaman,
+
+296
+01:11:20,083 --> 01:11:28,083
+belirli bir sürdürülebilirlik sağlamış oluyoruz ve ölçeklenebilirlik sağlamış oluyoruz. Çünkü mikroservis mimarisinde ya da herhangi bir farklı bir sistemde de,
+
+297
+01:11:28,083 --> 01:11:35,083
+şu an üç tane, beş tane makineyle belirli bir işi görebiliyor ya da bizden istenilen gereksinimleri yerine getirebiliyor olabiliriz.
+
+298
+01:11:35,083 --> 01:11:40,083
+Ama ilerleyen zamanlarda bazen bu sistemi büyütmemiz gerekebilir, ekibimizi büyütmemiz gerekebilir.
+
+299
+01:11:40,083 --> 01:11:57,783
+Farklı bir alan açmamız gerekebilir. Yani ölçeklenmemiz gerekebilir. Bu mikroservis mimarisinin de buna da uygun olması gerekiyor. Dolayısıyla bir yapıyı oluştururken, mikroservis mimarisini oluştururken bunu da göz önünde bulundurmalıyız. Şu ana kadar anlattıklarımızın hepsi aslında sürdürülebilirliği.
+
+300
+01:11:58,292 --> 01:12:21,532
+Sürdürülebilirliğe katkı sağlayan şeyler. Çünkü birbirinden izole etmeye çalışıyoruz. Her bir servisin, her bir bölümün tek bir işten sorumlu olmasını sağlamaya çalışıyoruz. Dolayısıyla birinin yapacağı bir değişiklik diğerlerini etkilemeyeceği için çok daha hızlı bir çözüm sunulabilir. İşlem sürekli devam edebilir ve bizden istenilen bilgileri biz sürekli istenildiği gibi verebiliriz.
+
+301
+01:12:22,899 --> 01:12:43,119
+Peki bir mikroservis mimarisi uygulamanın zorlukları nelerdir? Tanrı sınıflarından aslında bahsettik. Burada ayrıştırma işlemlerimizi yaparken yani dekomposition işlemlerimizi yaparken, servislere ayırırken çok zorluk çekebiliriz tanrı sınıflarıyla beraber. Bir de gecikme olabilir. Gecikme de aslında bahsettiğimiz şey ağdaki gecikme.
+
+302
+01:12:50,899 --> 01:12:59,600
+API çalışacağı zaman bazen farklı bir servisin API'nin çıktısı olan bir veriye ihtiyaç duyabilir. Dolayısıyla onu beklemesi gerekebilir.
+
+303
+01:13:00,752 --> 01:13:08,292
+Böyle bir mimaride çok farklı farklı sistemler, servisler oluştuğunda ve birbirini beklemesi gerektiği zaman bazen dışarıdan bir istek olabilir.
+
+304
+01:13:08,452 --> 01:13:11,532
+Bazen servisler içinde, servisler birbirinden de istekle bulunabilir.
+
+305
+01:13:11,532 --> 01:13:17,612
+Tabi bu çok fazla servis oluşturduğumuz zaman gecikmeye de neden olabilir.
+
+306
+01:13:18,272 --> 01:13:20,032
+Bunu minimize etmeye çalışıyoruz aslında.
+
+307
+01:13:20,632 --> 01:13:22,572
+Tabi verilerde tutarlı olmalıdır.
+
+308
+01:13:23,731 --> 01:13:26,552
+Bir order bilgisi getirmemiz gerekiyor.
+
+309
+01:13:28,752 --> 01:13:29,312
+Mutfaktan.
+
+310
+01:13:29,876 --> 01:13:51,176
+Bazen bir delivery servisinden, delivery servisinden bilgiler getirmemiz gerekebiliyor. Tabi bu bilgilerin her iki tarafta da aynı olması gerekiyor. Bunu şu şekilde düşünebiliriz. Bir servis iki tane farklı serverda işlem görüyorsa ve bu iki server aslında aynı veriyi aynı şekilde tutması gerekiyor. Aynı şekilde kullanıcıya göstermesi gerekiyor.
+
+311
+01:13:57,760 --> 01:14:22,140
+Veriye bakmak istediklerinde aynı değeri görmesi gerekiyor. Tabi bu da arka tarafta bulunan serverların, veri tabanlarının birbirleriyle iyi bir şekilde iletişimde bulunması gerektiğini de bize söylüyor. Tabi burada belirttiğimiz gecikmenin engellenmesi, tutarlılığın sağlanması gibi tek başına bakıldığında aslında çözülebilecek bir durum gibi görünüyor. Ama bizim hedefimiz buradaki tüm sorunları çözebilmek.
+
+312
+01:14:23,604 --> 01:14:48,503
+Kullanım, senkron iletişim. Biraz önce bahsettiğimiz gibi bu da tutarlılığa çok büyük etkisi olduğu için senkron ya da asenkron iletişimin olması eş zamanlı mı gerçekleşecek? Yoksa bir API'nin gerçekleştireceği sistemin, bir operasyonun gerçekleşmesi için dışarıdan bir trigger'ın mı gerekiyor? Yani bir şeyin tetiklemesi mi gerekiyor? Belirli bir verinin ya da işlemi bitmesi mi gerekiyor? Tabi bunlar bizim için oldukça önemli.
+
+313
+01:14:49,524 --> 01:14:59,052
+Burada bir başka durumda karmaşa. Çok farklı ve çok karmaşık bir sistem ortaya çıkabiliyor bazen. Çünkü çok farklı yapıları...
+
+314
+01:15:00,083 --> 01:15:20,123
+Çok sayıda servislere böldüğümüz zaman bu sefer çok fazla API yazmamız gerekiyor. Çok farklı operasyonlarımız oluyor. Bu operasyon arasındaki ilişkilerin sağlanması, bir mimarinin ortaya çıkarılması daha doğrusu çok karmaşık bir yapı haline gelebiliyor. Bizim işimiz ya da yapmak istediğimiz şey bu işi basite indirgemek ve tutarlı olmasını sağlamak.
+
+315
+01:15:21,716 --> 01:15:44,216
+Hatta dağıtılmış sistemlerde, yani dağıtık sistemlerde CAP teoremi de var aslında. Consistency, Availability ve Partition adı altında. Ve oradaki teoride de aslında sanılılan şey şu, dağıtık sistemlerde bu üç kavramdan maksimum iki tanesi kullanılabilir diyor aslında. Bir tanesi her zaman diğerleriyle çakışacaktır diyor.
+
+316
+01:15:48,051 --> 01:15:51,652
+Biz servislerimizi oluşturduk, operasyonlarımızı da oluşturduk.
+
+317
+01:15:52,020 --> 01:16:16,020
+Şimdi geldik sıra servis apilerinin tasarımlarına oluşturulmasına. Bir api aslında operasyonlar ve servislerin atanmasıyla ilgili. Bu operasyonları biz nasıl kullanacağız? Operasyonlar bir servis tarafından verildiği zaman farklı servislerin operasyonlarına ihtiyaç duyuyor mu? Ya da dışarıdan gelen bir istekle mi çalışacak? Bunların belirlenmesi gerekiyor.
+
+318
+01:16:20,020 --> 01:16:44,820
+Vereceğimizi belirlememiz de bizim için oldukça önemli. Burada asenkron iletişime biraz önem veriyoruz. Çünkü bir servise bir API tanımladığımız zaman bu servis hangi servislerin API'lerinden gelen çıktılara ihtiyaç duyuyor. Bunları belirlediğimiz zaman bir API'nin çalışacağı zaman diğer servislerin ya da dışarıdan gelecek o isteklerin hangileri olduğu, ne sırayla gelmesi gerektiğini tanımlamamız gerekiyor.
+
+319
+01:16:48,020 --> 01:17:00,620
+Kurala göre yapılıyor. Burada belirtilen önemli bir kavram da kendi kendine yeten servisler. Yani bir servisin tek bir işten sorumlu olması ve bu şekilde tasarlanması gerektiğinden bahsediyor.
+
+320
+01:17:00,620 --> 01:17:15,440
+Tabii biraz önceki bahsettiğim dışarıdan gelen ya da farklı servislerin çıktılarına ihtiyaç duyan API'ler için API Gateway kullanımından bahsedilmiş. Bu API Gateway ne yapıyor? Farklı API'lerin çıktılarını alıyor, birleştiriyor ve çıktı olarak sunuyor.
+
+321
+01:17:16,020 --> 01:17:30,780
+Birleştirici gibi düşünebiliriz bunu da. Burada sonuç ve değerlendirmeye baktığımızda ise avantajlar olarak DevOps sürecine oldukça katkı sağlamış oluyor. Her bir servis tek bir hizmetten sorumlu olmuş oluyor.
+
+322
+01:17:31,444 --> 01:17:41,524
+Öncelikle operasyonlarımızı, servislerimizi ve apilerimizi olması gerektiği gibi ölçeklenebilir, sürdürülebilir bir yapıya uygun olarak tasarlamış oluyoruz.
+
+323
+01:17:41,524 --> 01:17:49,824
+Tabi dezavantaj olarak senkron ve asenkron işlemlerin ya da tanrı sınıflarının ayrılması dediğimiz gibi aslında her zaman mümkün olmayabiliyor.
+
+324
+01:17:49,944 --> 01:17:54,463
+Bunun için farklı farklı yöntemler kullanılıyor. Bunlar da daha sonraki bölümlerde anlatılıyor aslında.
+
+325
+01:17:56,212 --> 01:18:12,372
+Operasyon ve servis atamalarının oldukça bizim için önemli olduğunu söyledik ve iteration şeklinde sürekli oluşturulan bir model üzerinde sürekli sürekli yenilemelerin, düzenlemelerin yapılması şeklinde bir süreç olduğundan bahsettik. Doğru atamanın önemli olduğundan bahsediyoruz.
+
+326
+01:18:12,372 --> 01:18:23,272
+Ve düşük bağlamdan bahsediyoruz. Her bir servis kendi isteklerinden, kendisinden istenen isteklerden sorumlu olmalıdır. Bu şekilde tasarlamaya çalışmalıyız.
+
+327
+01:18:24,659 --> 01:18:39,299
+API Gateway'leri, yani basit veri entegrasyonu sağlayarak farklı servislerin çıktılarını ya da dışarıdan gelen istekleri, verilen parametreleri biriktirerek ya da birleştirerek sonuç olarak sunmamızı sağlıyor.
+
+328
+01:18:40,212 --> 01:19:02,452
+Yani bu konuda, daha doğrusu kitabın ikinci bölümde anlatılan konuda, bir mikroservis mimarisi oluştururken ilk başta hangi adımlarla başlanır? Operasyon ve servislerin belirlenmesi, bir yüksek alan modelinin oluşturulması, daha sonra burada kullanılan iki yöntem, Business Capability dediğimiz iş yetenekleri ya da alt alan modelleri oluşturarak oluşturmadan bahsediyoruz.
+
+329
+01:19:02,452 --> 01:19:08,212
+Burada de kompozisyon yöntemleri olarak ise SAP dediğimiz Single Responsibility Principle ya da...
+
+330
+01:19:08,212 --> 01:19:14,012
+Hatta CCP dediğimiz Common Closure Principle yöntemlerini kullanabileceğimizden bahsediyoruz.
+
+331
+01:19:14,132 --> 01:19:18,392
+11 tane prensip var. Bunlardan sadece 2 tanesinden bahsettik.
+
+332
+01:19:18,392 --> 01:19:31,392
+Ve en son olarak da bunlara ait olan apilerin tasarlanması ve minimal bir seviyede başlangıç olarak bu şekilde bir mikroservis mimarisinin oluşturulması şeklinde anlatılmış.
+
+333
+01:19:36,307 --> 01:19:36,728
+Bu kadar.
+
+334
+01:19:39,387 --> 01:19:40,067
+Çok.
+
+335
+01:19:41,067 --> 01:19:45,827
+Yani aslında hocam, kitapta çok fazla detay var, çok fazla ayrıntı da var.
+
+336
+01:19:45,827 --> 01:19:49,787
+Ben aslında aklımda kalanları anlatmaya çalıştım.
+
+337
+01:19:52,728 --> 01:19:53,927
+Sağ olun hocam.
+
+338
+01:19:55,367 --> 01:19:58,827
+Şimdi bu haftaki sunum yapacak arkadaşların...
+
+339
+01:20:00,000 --> 01:20:12,500
+[öğrenci] sundu, [öğrenci] şimdi sen bitirdin, [öğrenci] sundu, [öğrenci] onun görevi olduğu için haftayı sunacak. [öğrenci] ve Zakar katılmadılar, baştan beri yoklar.
+
+340
+01:20:13,332 --> 01:20:15,771
+Hocam, bir de ben bir şey sorabilir miyim?
+
+341
+01:20:15,912 --> 01:20:16,412
+Tabii ki.
+
+342
+01:20:16,872 --> 01:20:18,511
+Hocam, rapordan bahsettiniz ya.
+
+343
+01:20:19,271 --> 01:20:22,652
+Hocam, bu derse gelemediğim için tam soramamıştım ben.
+
+344
+01:20:22,652 --> 01:20:29,011
+Bu rapor şu şekilde mi? Mesela burada anlatılan konuyla ilgili bir şeyler yapılıp onun raporunun sunulması mı?
+
+345
+01:20:29,051 --> 01:20:31,791
+Yoksa bu bölümün bir raporunun oluşturulması mı kitaptaki?
+
+346
+01:20:32,176 --> 01:20:41,156
+Burada anlattığınız kitaptaki, yani seçtiğiniz alt konu başlığı var ya, burada da bunu yaptığınız, işte bununla alakalı bir özet rapor hazırlanıyorum.
+
+347
+01:20:41,696 --> 01:20:46,996
+Yani bu konuyu özetleyen, anlattığınız konuyu özetleyen bir rapor. Yoksa onunla ilgili bir uygulama falan değil.
+
+348
+01:20:46,996 --> 01:20:48,076
+Tamam, tamam.
+
+349
+01:20:48,096 --> 01:21:00,176
+Bunları da kayıttan izleyecekler için de söylemiş olalım. Henüz şey yapamadım, ödevi online yıldızda tanımlayamadım ama hem sunum ve raporunuzu yüklemek için bir ödev tanımlayamadım.
+
+350
+01:21:00,176 --> 01:21:02,816
+14. haftaya kadar yükleyebileceksiniz.
+
+351
+01:21:03,496 --> 01:21:07,436
+Ben onu hazırlamıştım hocam. Biraz büyük oldu senin. Onu biraz küçültüp...
+
+352
+01:21:07,436 --> 01:21:26,636
+Çok büyük yapmayın tabii. Bir de final için Take Home şeklindeki projenin gereksinimlerini de hazırlıyorum. Kısmetse yarın şey yapacağım. Onları da yine ders duvarından paylaşmış olacağım. Bunları da söylemiş olayım ki eksik kalmasınlar.
+
+353
+01:21:27,347 --> 01:21:45,188
+Dediğim gibi şey yok. [öğrenci]'la Zakar gelmediler. O yüzden saatte 10.00, artık 17.00 geçiyor. Yani 67 dakikadır dersteyiz. Hatta daha öncesinde de açmıştım. Dilerseniz bu haftalık kapatabiliriz.
+
+354
+01:21:48,724 --> 01:22:04,543
+Peki, onlar da haftaya anlatırlar ya da başka bir çözüm bulurlar. Tekrar bakıyorum, katılımcılara yok. Evet, tamam. Peki, o zaman sizlere iyi çalışmalar, iyi haftalar arkadaşlar.
+
+355
+01:22:04,564 --> 01:22:06,823
+Hocam, bir şey, küçük bir şey söyleyebilir miyim?
+
+356
+01:22:07,224 --> 01:22:07,764
+Tabii, buyur.
+
+357
+01:22:08,903 --> 01:22:11,583
+Şey, bu Google Doc paylaşmıştınız ya şeyde.
+
+358
+01:22:12,180 --> 01:22:13,740
+Kendi isimlerimizi yazdığımız.
+
+359
+01:22:14,260 --> 01:22:14,440
+Evet.
+
+360
+01:22:14,780 --> 01:22:18,360
+Burada şeyde tarih olarak 6'sı yazıyor aralığın.
+
+361
+01:22:19,300 --> 01:22:21,560
+İlk şeyde 5 yerine 6 yazıyor.
+
+362
+01:22:22,320 --> 01:22:22,860
+Yanlış mı?
+
+363
+01:22:23,720 --> 01:22:27,079
+Acaba diyorum onu karıştırmış olabilir mi bazı arkadaşlar?
+
+364
+01:22:27,820 --> 01:22:30,480
+Aaa ama nasıl olacak ki 6 Aralık'ta ders yok.
+
+365
+01:22:31,020 --> 01:22:31,300
+Evet.
+
+366
+01:22:31,300 --> 01:22:34,060
+Evet tabi orada doğru.
+
+367
+01:22:34,600 --> 01:22:36,460
+Ben takvime yanlış bakmışım.
+
+368
+01:22:36,979 --> 01:22:41,399
+Diğerleri de yanlış. Onları da düzelteyim. 12-19. Değil mi?
+
+369
+01:22:41,999 --> 01:22:42,679
+Evet hocam.
+
+370
+01:22:43,139 --> 01:22:44,239
+Ya niye düzeltmediniz?
+
+371
+01:22:45,439 --> 01:22:47,379
+12-19-26 hocam.
+
+372
+01:22:48,459 --> 01:22:52,239
+26. Bu doğru mu?
+
+373
+01:22:55,079 --> 01:22:57,599
+12-19-26 şeklinde.
+
+374
+01:22:57,599 --> 01:23:00,319
+Ben direkt şeye bakmışım.
+
+375
+01:23:01,587 --> 01:23:10,307
+Düzelttik.
+
+376
+01:23:10,307 --> 01:23:15,867
+Kimsenin de aklına gelmemiş. Teşekkür ederim uyarı için.
+
+377
+01:23:16,427 --> 01:23:21,407
+Benim aklıma geldi de hocam, belki siz öyle yazmışsınızdır diye ben değişiklik yapmak istemedim.
+
+378
+01:23:21,447 --> 01:23:27,747
+Nasıl şey yapalım, cuma dersimiz yok ki. Yani garip olmuş. Neyse.
+
+379
+01:23:28,404 --> 01:23:33,923
+Peki arkadaşlar, tekrar iyi çalışmalar. İyi haftalar. Görüşmek üzere hocam. İyi çalışmalar.
+
+380
+01:23:34,623 --> 01:23:38,224
+Yoklamayı otomatik mi alacaksınız yoksa direkt şey yapıyorsunuz?
+
+381
+01:23:38,224 --> 01:23:44,804
+Bu şey Zoom kaydında zaten online yıldızdan yaptığımız için bütün katılımcıları listeliyor.
+
+382
+01:23:45,583 --> 01:23:52,104
+Yani girip çıkmanız bile yeterli oluyor öyle söyleyeyim. Orada bir kayıt oluşuyor. O liste yoklama listesi oluyor.
+
+383
+01:23:53,108 --> 01:23:55,108
+Tamamdır hocam, iyi günler.
+
+384
+01:23:55,108 --> 01:23:57,108
+Okey, teşekkürler, hoşçakalın.
