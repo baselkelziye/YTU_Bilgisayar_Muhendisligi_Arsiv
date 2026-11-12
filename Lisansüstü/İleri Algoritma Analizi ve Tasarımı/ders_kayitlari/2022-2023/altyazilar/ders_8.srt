@@ -1,0 +1,2131 @@
+1
+00:03:32,979 --> 00:03:34,840
+Günaydın arkadaşlar, hoş geldiniz.
+
+2
+00:03:36,699 --> 00:03:38,060
+Bugün günaydın hocam.
+
+3
+00:03:38,459 --> 00:03:41,099
+Nasılsınız? On kişiyle ders yapacağız herhalde bugün.
+
+4
+00:03:41,599 --> 00:03:42,679
+Günaydın hocam.
+
+5
+00:03:42,919 --> 00:03:43,780
+Günaydın.
+
+6
+00:03:44,659 --> 00:03:46,179
+Maillerimi aldınız mı?
+
+7
+00:03:48,500 --> 00:04:03,280
+Yani bana konu tercihi için mail atan herkese geri döndüğümü düşünüyorum ama atladığım biri varsa diye de tedirginim. O yüzden bir bakın, ben tercih göndermiştim ama geri dönüşü olmadı hocam diyorsanız bana tekrar yazın.
+
+8
+00:04:03,919 --> 00:04:07,460
+Hatta şimdi varsa söyleyin ama bu 10 kişiye rast gelme ihtimali de düşük.
+
+9
+00:04:07,460 --> 00:04:10,283
+Şimdi arkadaşlar bugün...
+
+10
+00:04:11,795 --> 00:04:27,036
+Biliyorsunuz geçen hafta amortize analizden bahsetmiştik. Amortize analizin bir uygulamasını daha yapacağım. Sonrasında biraz örnek çözeceğim size. Sınav öncesi öyle istemiştiniz. Geçen hafta da biraz çözmüştük ve bitireceğiz bu şekilde.
+
+11
+00:04:31,036 --> 00:04:34,195
+Şimdi ekran paylaşımı yapalım.
+
+12
+00:04:47,283 --> 00:04:51,283
+Tamam bu değil ama çok özür dilerim. Yanlış olduğunu paylaştım.
+
+13
+00:05:06,291 --> 00:05:10,451
+Arkadaşlar, bugün Dinamik Tabl'lara
+
+14
+00:05:14,004 --> 00:05:20,144
+İşlem, insert ve delation yaparken amortize analizle karmaşıklık ne olur ona bakacağız.
+
+15
+00:05:21,163 --> 00:05:27,704
+Bunun için öğrendiğimiz farklı amortize analiz yöntemlerini uygulayacağız. Böylece bir pratik yapmış olacaksınız siz de.
+
+16
+00:05:28,924 --> 00:05:39,484
+Dinamik table dediğimiz şey nedir? Biliyorsunuz bir table'ımız varsa bunun içerisinde herhangi bir anında değişen miktarda veriye sahip olabiliriz.
+
+17
+00:05:39,744 --> 00:05:53,644
+Düşündüğümüzden ilk başta yer açtığımızdan daha fazla veriye ihtiyaç duyabiliriz. Daha az veriye ihtiyaç duyabiliriz. Bu anlamda bu table'ın boyutunu dinamik olarak küçültebilmek, büyütebilmek işlemlerine izin veren table'ları dinamik table diyoruz biliyorsunuz.
+
+18
+00:05:54,708 --> 00:06:05,908
+Mesela tabloda olduğu zaman tablonun boyutunu arttırıyorsunuz, boş slotlar ekliyorsunuz ama ekleyeceğiniz memori kısımlarının arka arkaya gelme zorunluluğu var.
+
+19
+00:06:05,908 --> 00:06:17,328
+Tableda rahat ulaşabilmek adına. Dolayısıyla aslında yaptığımız şey eski tablo esilip büyük boyutta yeni bir tablo create etmek ve tüm eski elemanları taşımak şeklinde oluyor.
+
+20
+00:06:17,908 --> 00:06:21,448
+Şimdi bu bahsettiğim dinamik tabloların kullanım alanlarından bir tanesi.
+
+21
+00:06:21,908 --> 00:06:28,368
+Geçen haftalarda gördüğümüz aslında rehashing yapmak için dinamik tablolar kullanıyoruz.
+
+22
+00:06:28,368 --> 00:06:33,927
+Yani aslında bir hash fonksiyonunda bir load factor vardı hatırlarsanız doluluk oranını gösteren.
+
+23
+00:06:34,408 --> 00:06:48,588
+Bu load factor aşıldığı vakit daha büyük bir tablo oluşturup tüm eski itemları yeni tabloda yeni hash'leriyle hesaplayarak yerleştirip yeni itemlara da bu yeni tabloda yerleştirmeye devam ediyordu rehashingde.
+
+24
+00:06:49,172 --> 00:07:02,232
+Biz rehashing'de insert sebebiyle sınırı aşan load faktörde tablo boyutunu arttırmak için neler yapabiliriz? O zaman collusion ne olur vesaire konuşmuştuk.
+
+25
+00:07:02,972 --> 00:07:14,472
+Tabi bir de bunun tersi var. Hashed table'dan beri sildiğiniz zaman belirli bir load faktörün altına indiğinde tablo. O zaman tabloyu küçültmeye de gidilebiliyor. Farklı oranlarda bunu yapabiliyorsunuz.
+
+26
+00:07:15,764 --> 00:07:35,984
+Şimdi genel yaklaşım, load faktörü hatırlarsanız n bölü m olarak belirtmiştik. Item sayısıyla slot sayısının oranı. Bir hash table'da rehashing yaparken genel yaklaşım yeni alanı eskisinin iki katı olacak şekilde açmaktı.
+
+27
+00:07:39,507 --> 00:07:51,867
+Yani eğer tek bir insert işlemi varsa, delete işlemi yoksa sadece insert işlemi varsa sistemde, yani tablonun loudfaktörü herhangi bir T anında en azından 1 bölü 2 oluyor her zaman.
+
+28
+00:07:52,788 --> 00:07:58,887
+Dolayısıyla yer kaybı da toplam tablo boyutunun yarısını aşmayacak şekilde dinamik tablolar üzerinden işlemlerimizi yapıyorduk.
+
+29
+00:08:00,007 --> 00:08:05,048
+Şimdi bir dinamik tablola insert işleminin psodokodunu yazalım. Bunun üzerinden analizlerimizi yapacağız.
+
+30
+00:08:08,244 --> 00:08:09,364
+Nelerimiz var?
+
+31
+00:08:12,364 --> 00:08:13,884
+Table'ı gösterecek.
+
+32
+00:08:19,603 --> 00:08:29,603
+Pay.table, Tableda saklanan Storage'ın pointer aslında. Yani bu Storage alanına işaret eden bir pointer.
+
+33
+00:08:48,083 --> 00:08:50,723
+Tablodaki item sayısı.
+
+34
+00:09:03,796 --> 00:09:05,796
+İlk olarak, birçok birçok birçok.
+
+35
+00:09:16,403 --> 00:09:29,963
+Şimdi ilk başta, initial durumda table boş. Dolayısıyla table'ımızdaki eleman sayısı table'ımızın boyutuna eşit. O da 0 eşit.
+
+36
+00:09:29,963 --> 00:09:37,163
+Şimdi bakalım table insert nasıl çalışıyor.
+
+37
+00:09:44,788 --> 00:09:47,488
+Pable ve Insert edilecek elemanı alacak.
+
+38
+00:09:52,659 --> 00:10:01,539
+Table'mız şu an boş. Size'ı da aslında sıfırsa. O zaman yer allocated etmemiz gerekiyor.
+
+39
+00:10:05,172 --> 00:10:27,372
+ve bu allocate ettiğimiz yeri table field'ı allocate ettiğimiz yere ait adresi. Table field'ı tutacak şekilde pointer'ını dolduracağız. Tek bir slot olacak. Sonra da size'ına bir vereceğiz. Bu size field'ı üzerinden çünkü takip ediyor olacağız tablomuzu.
+
+40
+00:10:40,820 --> 00:10:48,900
+Eleman sayısı aslında tablonun tamamını eşitse, yani tablomuz full doluysa o zaman ne yapmamız gerekiyor?
+
+41
+00:10:50,500 --> 00:10:51,800
+Çok özür diliyorum arkadaşlar.
+
+42
+00:11:12,820 --> 00:11:23,940
+Çok özür dilerim devam ediyorum. TnR veya tsize eşitse bu demektir ki bir ekspert işlemi yapmak zorundayız.
+
+43
+00:11:28,179 --> 00:11:29,699
+Bu ekspart işlemi içinde
+
+44
+00:11:36,307 --> 00:11:37,367
+Yeni bir tablo.
+
+45
+00:11:41,364 --> 00:11:42,284
+Evet, edeceğiz.
+
+46
+00:11:54,388 --> 00:11:56,388
+Ve sonra tüm ayetimleri
+
+47
+00:12:02,580 --> 00:12:18,580
+Table'a taşıyacağız. Tabii ki yeni table'a. New table, yeni table'ımızın pointer'ı eskisini friye ediyoruz.
+
+48
+00:12:31,347 --> 00:12:58,407
+NewTable variable üzerinden ulaşmak için ilgili slotlara NewTable pointer'ını buraya yazdık. Ve tabii ki size'ı da update edeceğiz. Bu size'ı üzerinden kontroller yaptığımız için onu da iki katına çıkarıyoruz. Bu işlemlerden sonra X'i table'a yerleştireceğiz.
+
+49
+00:13:00,403 --> 00:13:24,644
+Ve tabi ki son olarak da Table'daki eleman sayısını bir arttırıyoruz. Item sayısını htable'daki. Şimdi burada şu iki satır, Insert, şu satır, Insert All Items in Table ve şu insertler.
+
+50
+00:13:25,039 --> 00:13:43,279
+Insert işlemleri. Bu insert işlemlerine göre running time'ı değerlendiririz. Bunların sayısına göre. Şurada Expans işleminin yapıldığı alanlar var. Şurada allocate new table kısmıyla şu kısım. Burası da önemli.
+
+51
+00:13:44,159 --> 00:13:49,819
+Expert işleminin yapılması durumu da analizlerimiz için önemli olacak. Buraya da şimdilik Expansion diyelim.
+
+52
+00:13:50,611 --> 00:13:57,611
+Şimdi bu algoritmini aggregate analizi ile çözelim bakalım. Amortize kodu ne oluyor?
+
+53
+00:14:07,028 --> 00:14:09,908
+Bu arada soru var mı diye bakıyorum. Yok, tamam.
+
+54
+00:14:13,268 --> 00:14:13,867
+Şimdi
+
+55
+00:14:17,683 --> 00:14:40,903
+İyince operasyonun kostu C-E-H-Y. Ama bu kost gerçek kostu. Ne olur? Eğer iyince operasyon ilk işlemse veya iyince operasyon için tabloda yer varsa.
+
+56
+00:14:41,364 --> 00:15:06,923
+Yani tablo full da olması ve expansion durumuna gitmiyorsa, ilk işlemse ya da aradaki işlemlerden biriyse, o zaman C'ye neye eşit olacak? Bir de eşit olacak. Tekme in third ile bu işi bitiriyoruz. Ama eğer iyice operasyonu ile table expand ediyorsa, o zaman ne oluyor? O zaman C'ye, i'ye eşit oluyor. Neden? Çünkü şöyle.
+
+57
+00:15:07,988 --> 00:15:17,688
+Önce bu iyinci operasyondan önceki i-1 item'ı yeni tabloya taşımanız gerekiyor.
+
+58
+00:15:18,108 --> 00:15:20,348
+Taşımadan dolayı gelen maliyetimiz var.
+
+59
+00:15:20,988 --> 00:15:25,648
+Bir de ilgili i'yi insert etmek için gelen maliyetimiz var.
+
+60
+00:15:26,168 --> 00:15:30,068
+Dolayısıyla iyilik bir kostunuz olacak.
+
+61
+00:15:30,068 --> 00:15:35,208
+O zaman ben c'yi şöyle yazabilirim.
+
+62
+00:15:43,796 --> 00:15:58,236
+Peki bu iyilerin, C, İ'nin iyi eşit olma durumu, yani ekspant etme durumunun, İ'nin değeri üzerinden formülize edecek olursam, İ'nin hangi değerleri için C, İ'nin iyi eşit olduğunu düşünce?
+
+63
+00:15:58,236 --> 00:16:07,596
+Her değeri için değil. İkinin kuvvetleri olması durumu burada önemli. Çünkü ikinin katları oldukça ekspant ettiğimden.
+
+64
+00:16:08,115 --> 00:16:14,095
+Doluyor ya çünkü. Dolayısıyla dolduğunda ikiye katlıyorum her seferinde. O yüzden şöyle yazabilirim.
+
+65
+00:16:24,083 --> 00:16:35,083
+Eğer İ-1, 2'nin kuvvetiyse, X-Band yapalım. Değilse, zaten o zaman da bizim maliyetimiz iyi olacak.
+
+66
+00:16:35,843 --> 00:16:42,463
+Eğer değilse zaten table boş demektir, yer var demektir. O zaman maliyetimiz 1 olsun. Böyle söyleyebiliriz.
+
+67
+00:16:43,883 --> 00:16:47,003
+Şimdi bu durumda total cost'u bir hesaplayalım. Nasıl hesaplayabiliriz?
+
+68
+00:16:56,244 --> 00:16:57,443
+Bu da enzane.
+
+69
+00:17:01,139 --> 00:17:25,599
+Biliyorsunuz, insert işlemi için. Şu an sadece sistemimde insert işlemi var. Dolayısıyla Entered Table Insert olursa, bunun costu şöyle olacak. C. Peki bunu nasıl yazabilirim? Bu formülü nasıl çözeceğim? Aslında bu şöyle oluyor.
+
+70
+00:17:29,619 --> 00:17:49,980
+İğnen 1 olduğu durumda 1, 2 olduğu durumda ekspant etti. 3 olduğu durumda 1 artıyor. 4 olduğu durumda ekspant ediyor. 5 olduğu durumda 1 artıyor. 6 olduğu durumda 1 artıyor. 7 olduğu durumda 8 olduğu durumda ekspant ediyor gibi. Dolayısıyla aslında toplamı şu şekilde yazman mümkün.
+
+71
+00:17:52,403 --> 00:18:05,963
+İ'nin, i-1'in 2'nin kuvveti olmadığı durumlar için o zamana kadar gelen elemanların sayısını en olarak hesap edebiliriz aslında.
+
+72
+00:18:13,172 --> 00:18:15,791
+Logaritma A'n, ama bunu aşağıya yuvarlayalım.
+
+73
+00:18:19,539 --> 00:18:20,599
+Şu şifade.
+
+74
+00:18:24,115 --> 00:18:51,456
+Expand ettiği durumlar için aslında toplumu bize verecek ama tam olarak vermeyecek. Biraz daha büyük bir değeri verecek. Şu da aslında expand ettiği en eksi, expand ettiği durumları çıkarttığımızda aslında şuradaki birilerinin sayısını buluyoruz. Dolayısıyla bu da normal tight bound'dan birazcık daha fazla. Dolayısıyla bu ikisinin arasına eşitlik değil de şu işareti yazmak bize aşağı yukarı doğru sonuca getirecek. Bu da takriben üçen oluyor.
+
+75
+00:18:52,819 --> 00:19:09,019
+Dolayısıyla ben aslında en tane işlemin, insert'tan oluşan en tane işlemin 3 enden küçük olduğunu buldum. Bunu yaparken bu arada hangi analiz metodunu kullandım? Aggregate Analizi kullandım.
+
+76
+00:19:16,531 --> 00:19:17,871
+Ereket Analizi Kullandık.
+
+77
+00:19:21,907 --> 00:19:24,907
+Şimdi bunun bu anlaşıldı mı? Var mı soru?
+
+78
+00:19:28,907 --> 00:19:33,367
+Eğer bunda soru yoksa, accounting metodu ile nasıl çözeriz ona bakacağız.
+
+79
+00:19:35,627 --> 00:19:36,727
+Şöyle geçelim.
+
+80
+00:19:44,435 --> 00:19:46,435
+Şimdi accounting metodla çözelim.
+
+81
+00:19:59,284 --> 00:20:14,923
+Bunu biraz şekilsel olarak düşüneceğiz. Accounting metotunu hatırlarsanız eğer hani stek işleminde mesela içerisinde push olan bir siteyimiz vardı. Orada tabakların bu restoranlardaki işte.
+
+82
+00:20:16,339 --> 00:20:30,579
+Teknik gibi görünen yerlere tabakların böyle alt alta üst üste konulduğu bir durumdan bahsetmiştik ve tabakları push etmeye ekstra kredit vermiştik ki pull etmeyi oradan maliyetini karşılayabilelim diye. Bunun gibi bir şey yapmamız gerekiyor burada da.
+
+83
+00:20:40,627 --> 00:20:45,887
+Her insert içinde 3 kredinin charge edildiği bir durum düşünelim.
+
+84
+00:20:46,567 --> 00:20:50,107
+Ve bu durum bizim gereksinemimizi karşılıyor mu? Ona bir bakalım.
+
+85
+00:20:50,307 --> 00:20:53,347
+Biraz daha gözümüzde canlanması için de bunu şekil çizerek yapacağız.
+
+86
+00:20:53,347 --> 00:21:06,347
+Bu sefer, bakayım şununla yaparsam.
+
+87
+00:21:07,508 --> 00:21:09,508
+Belki daha rahat olabilir.
+
+88
+00:21:14,324 --> 00:21:18,316
+Ops! Şöyle olacak.
+
+89
+00:21:29,619 --> 00:21:37,299
+Şimdi ilk etapta, ilk etap demeyeyim baştan başlamayayım da, örneğin şöyle bir tablom var. Şimdiye kadar bir şekilde dolmuş.
+
+90
+00:21:39,339 --> 00:21:51,379
+Burada elemanlarım var. X1, X2'yi, X3'ü eklemişim. Bu i'nin 3 olduğu durum. Bunu ekledikten sonra dördüncü operasyonum geldi.
+
+91
+00:21:54,675 --> 00:22:08,855
+X1, X2, X3, X4 ekledim. Sonra 5. operasyonum geldi. 5. operasyonum geldiğinde artık table full dolu. O yüzden ilave bir expansion yapacağım.
+
+92
+00:22:18,516 --> 00:22:32,516
+Ben de bir expansion yaptım. Şu kısımları x1, x2, x3, x4 buraya taşıdım. x5'i buraya koydum.
+
+93
+00:22:34,516 --> 00:22:39,976
+Şimdi her insert için her expansion'dan sonra sıfırlanıyor. Tam şu noktada.
+
+94
+00:22:40,384 --> 00:22:46,784
+Önceki derin eksperşonunu değil de bunun üzerinden anlatmaya çalışıyorum. Tam bu noktada Total Credit 0.
+
+95
+00:22:53,076 --> 00:23:01,476
+Şimdi şuradaki insertion'a, x5'e 3 kredit şarj edelim. 3 kredit şarj ettim.
+
+96
+00:23:03,215 --> 00:23:12,795
+Şimdi bu üçün bir tanesi aslında actual cost of x5'in insert edilmesi. Yani bir tanesi gerçekten x5'i insert etmek için kullanacağım cost.
+
+97
+00:23:14,387 --> 00:23:27,807
+Bir tanesini X1'in üzerine yazacağım. Öyle düşüneceğim totalde. Çünkü şu an total kredisi 0 ya. Bir tanesinin X1'e yazdığımı düşünüyorum. Bir tanesi de X5'in üstünde kalacak.
+
+98
+00:23:27,807 --> 00:23:41,867
+Şimdi bu şekilde ben örneğin X6'yı, X7'yi, X8'i ekledim. Hepsi içinde birer tane 3 kost.
+
+99
+00:23:43,188 --> 00:23:43,868
+Kojdo.
+
+100
+00:23:47,539 --> 00:24:07,079
+Bunlar doldu. Hepsi tek tek tek. Bu arası bir yanda da olmuyor. Burada işlemler var. Doldu. Şimdi dolduktan sonra bu dokuzuncu işlemde yeni bir tane eleman gelecek. X9. O zaman tekrar expand etmem gerekecek. Tekrar expand edelim. Pardon.
+
+101
+00:24:16,915 --> 00:24:18,571
+Şunlar var da...
+
+102
+00:24:24,468 --> 00:24:41,288
+Bir daha ekspert ettim. Ama tabii şu alanlar... Niye böyle siliyor tek tek? Allah Allah. Aşağısızlıkla sonuçlandı.
+
+103
+00:24:45,288 --> 00:24:47,768
+Tek tek bir sileceğiz buna şimdi.
+
+104
+00:24:52,372 --> 00:24:55,724
+İlk
+
+105
+00:25:06,804 --> 00:25:17,304
+Bunun diğerleri de identical olduğunu hayal etmenizi istiyorum. Dolayısıyla iki katına çıkmış bir şey var. Burada tablo boyutu var. Burada tablo boyutu iki katına çıktığında
+
+106
+00:25:17,304 --> 00:25:30,804
+şu elemanları buraya taşımanız gerekiyor. Bu elemanları buraya taşıyabilmek için hani şurada x5'i, x6'ı, x7'i, x8'i
+
+107
+00:25:31,476 --> 00:25:57,976
+Üç kredi verdiğiniz vakit, bu üç kredinin birer kredisini aslında şunların üzerine vermiştiniz ya. Birer kredisi bunların üzerinde kalmıştı. Birer kredisini de bunları insert etmek için kullanmıştınız. Dolayısıyla insert işlemleriniz bittiğinde aslında şuradaki X1 ile X8 arasındaki tüm artımların üzerinde birer tane kredit var. Dolayısıyla expand işlemi yapmanız gerektiğinde bu birer krediyi
+
+108
+00:25:58,387 --> 00:26:06,107
+Bu elemanları yeni tabloya taşımak için kullanıyorsunuz. Dolayısıyla şu noktada total krediniz 0 oluyor.
+
+109
+00:26:06,107 --> 00:26:14,527
+Ve bundan sonra ekleyeceğiniz her eleman için, örneğin x9 için yeniden 3 kredi sisteme vereceksiniz.
+
+110
+00:26:15,567 --> 00:26:19,980
+Bu kredinin bir tanesi x9 için kullanılacak, bir tanesi x1'e kullanılacak.
+
+111
+00:26:20,948 --> 00:26:30,948
+bir sonraki Expansion maliyetini karşılamak için kullanılacak. Bir tanesi de X9'un üstünde kalacak. X9'un bir sonraki Expansion maliyetini karşılamak için. Sistem böyle.
+
+112
+00:26:30,948 --> 00:26:47,948
+Dolayısıyla bu sistemde benim her bir işlemimin Maximum Amortize Cost'u yine bir Constant Faktör oluyor. Dolayısıyla en işlemim varsa Total'de O'yan olacak şekilde
+
+113
+00:26:49,107 --> 00:26:56,968
+Bitirebiliyorum. Anlaşıldı mı? Anlaşıldı herhalde. Var mı soru arkadaşlar?
+
+114
+00:27:01,523 --> 00:27:05,323
+Peki tamam. O zaman şimdi bir de Potential Method'la çözelim.
+
+115
+00:27:19,476 --> 00:27:23,076
+Bir Potential fonksiyona ihtiyacım var Potential metodla çözebilmek için.
+
+116
+00:27:23,875 --> 00:27:31,736
+Bu Potential Function'ı şöyle düşünüyorum. Expansion sonrası değeri sıfırlanacak ve tablo doldukça değer kazanacak bir fonksiyona ihtiyacım var.
+
+117
+00:27:33,076 --> 00:27:38,976
+Expansion sonrası sıfırlanacak. Az önceki aggregate analizde yaptığım gibi ve sonra doldukça yavaş yavaş değer kazanacak.
+
+118
+00:27:38,976 --> 00:27:43,076
+Şimdi nasıl bir fonksiyon yazabilirim? Sistemi ifade edecek bir fonksiyon yazmalıyım.
+
+119
+00:27:43,596 --> 00:27:45,456
+Şöyle bir fonksiyon yazabilir miyim mesela?
+
+120
+00:27:52,339 --> 00:27:54,339
+Potential Functional İşareti
+
+121
+00:28:11,476 --> 00:28:16,476
+Şimdi bakalım test edelim. Hemen Expansion sonrası.
+
+122
+00:28:19,731 --> 00:28:38,451
+PNA P size bölü 2 olacak. Doğru değil mi? Bu durumda benim Potential Function'ımın değeri de 0 olacak. Bu anlamda beklentimi karşıladım. Expression öncesi.
+
+123
+00:28:44,307 --> 00:28:56,307
+TNM T size eşit olacak. Bu durumda benim Potential Function değerim de.
+
+124
+00:29:00,660 --> 00:29:08,100
+değerleme eşit olacak. Dolayısıyla size arttıkça Potential Function'ın değeri artacak.
+
+125
+00:29:08,100 --> 00:29:14,740
+Bu beklentimi de karşıladık. Tablo her zaman dolu olduğu için, yarı yarıya dolu olduğu için de
+
+126
+00:29:14,740 --> 00:29:19,700
+üçüncü case'in biliyorsunuz Potential Function'ın negatife inmemesi gerekiyordu.
+
+127
+00:29:24,980 --> 00:29:35,180
+Hiç negatif olmuyor, non-negatif bir fonksiyon var. Dolayısıyla benim beklantilerimi karşılayan bir fonksiyon oldu bu.
+
+128
+00:29:35,180 --> 00:29:37,859
+Şimdi burada Immortalskost'u hesaplayalım.
+
+129
+00:29:42,740 --> 00:29:55,059
+Şöyle formülde kullanacağım değişkenleri. Biliyorsunuz Potential'ını iki ayrı state arasındaki Potential farkı üzerinden hesaplamalarımı yapıyordum.
+
+130
+00:29:56,559 --> 00:30:03,600
+Şimdi burada Nami, İ. Operasyon ve İ-İ. Operasyon üzerinden Potential farkına bakacağım.
+
+131
+00:30:03,600 --> 00:30:08,960
+Nami yine şunu ifade ediyor. Number of items stored in the table after.
+
+132
+00:30:09,395 --> 00:30:11,084
+İlk operation.
+
+133
+00:30:25,683 --> 00:30:30,163
+Birinci operasyon sonrası. Tablodaki eleman sayısı.
+
+134
+00:30:36,115 --> 00:30:38,915
+Sizey, Total Size of Table.
+
+135
+00:30:49,779 --> 00:30:52,779
+Yine ince operasyon sonrası.
+
+136
+00:30:58,067 --> 00:31:00,067
+Bu da Potential Function.
+
+137
+00:31:08,788 --> 00:31:10,388
+Şurası iyi olursa eğer.
+
+138
+00:31:14,451 --> 00:31:15,951
+İndi operasyonuz.
+
+139
+00:31:19,667 --> 00:31:35,487
+Şimdi burada farklı ihtimallerim var benim. İyince işlemin bir expansion'a sebep olması durumu var ve sebep olmaması durumu var bu sistemde. Dolayısıyla en kötüsünü ele alıp o en kötüyü üzerinden işlemlerimi yapmam gerekiyor.
+
+140
+00:31:35,487 --> 00:31:41,687
+Şimdi önce ince operasyonun expansion'a neden olmadığı durumu düşünelim.
+
+141
+00:32:01,491 --> 00:32:08,932
+diğerine trigger etmedi herhangi bir Expansion'ın. Bu durumda aslında benim
+
+142
+00:32:12,276 --> 00:32:31,356
+Önceki işlem ve sonraki işlem arasındaki table size farkım 0. Yani bu ikisi birbirine eşit çünkü expansion yok. Formülüm şöyleydi. Potential metodda hatırlarsanız şöyle hesaplanıyordu. İyince operasyonun amortize postu.
+
+143
+00:32:40,531 --> 00:33:01,531
+Şimdi bu durumda benim Expansion olmadığı için Real Costum aslında bir. Şuradaki formülden, P'nin formülü şuydu. Bunu iyince operasyon olacak şekilde numi ve sizeyi kullanarak yazalım.
+
+144
+00:33:10,003 --> 00:33:20,003
+Diğer tarafta da i-1 olacak şekilde yazalım.
+
+145
+00:33:26,963 --> 00:33:29,483
+Şimdi şurası, numi-
+
+146
+00:33:34,932 --> 00:33:38,532
+Şurası aslında neye eşit?
+
+147
+00:33:42,099 --> 00:33:57,639
+Nam i-1 aslında nam i-1'e eşit. Çünkü insert işlemi yapıyorum. Dolayısıyla i. operasyonda bir tane ekstra insert yaptığım eleman sayım bir önceki operasyonda bir fazla oldu.
+
+148
+00:33:57,639 --> 00:34:06,519
+Dolayısıyla nam i-1'i yani i-1. operasyon sonrası eleman sayısını i. operasyon sonrası eleman sayısı cinsinden yazacak olursam,
+
+149
+00:34:07,188 --> 00:34:16,148
+Şu altta gördüğünüz şekilde yazabilirim. Size zaten eşit. Dolayısıyla aslında bu eşitlik şuna dönüşüyor.
+
+150
+00:34:16,148 --> 00:34:24,668
+Yani size ile size-1 de birbirine götürdüğü için bu eşitlik şuna dönüşüyor.
+
+151
+00:34:37,427 --> 00:34:50,707
+Eksi iki numarıyı, eksi iki artı size değil. Bu da namlar birbirine geçiriyor. Size daha birbirine geçiriyor.
+
+152
+00:35:02,387 --> 00:35:09,608
+Sırayı yanlış mı? 3 olacak çünkü bu şurası 2 olacak galiba arkadaşlar. Yanlış yapmışım. Bu da bana 3 verdi.
+
+153
+00:35:12,608 --> 00:35:25,988
+Şimdi bu durumda benim constant bir faktörüm var. Potential method ile insert'ın olduğu bir operasyon için constant bir faktörüm var.
+
+154
+00:35:30,387 --> 00:35:35,988
+Keyes'i ele alacağım. O da ince operasyonun bir trigger tetikleme durumu.
+
+155
+00:35:37,608 --> 00:35:39,108
+Bunun için soru var mı?
+
+156
+00:35:46,195 --> 00:35:47,692
+Şöyle yazalım.
+
+157
+00:35:59,956 --> 00:36:03,956
+Şimdi trigger tetiklerse o zaman size değişimi nasıl olacak?
+
+158
+00:36:06,956 --> 00:36:12,876
+İ anındaki yani iyince operasyon sonrası size aslında bir önceki size iki katı olacak.
+
+159
+00:36:16,403 --> 00:36:23,903
+Peki bu size'larla nam arasındaki ilişkiyi nasıl kurabilirim? Yani eleman sayısı ile tablo boyutu arasındaki ilişkiyi.
+
+160
+00:36:37,811 --> 00:36:46,072
+Şimdi num-i ile yani i anındaki işlemle işlem sonrası eleman sayısıyla bir önceki eleman sayısı arasında şöyle bir ilişki var.
+
+161
+00:36:46,952 --> 00:36:54,992
+Expansion öncesi tablo full dolu olduğu için de şu ikisi birbirine eşit.
+
+162
+00:36:56,112 --> 00:36:58,231
+Dolayısıyla bunların arasında böyle bir ilişki var.
+
+163
+00:37:07,219 --> 00:37:12,219
+Saiz İ ile Tamam İyi
+
+164
+00:37:15,507 --> 00:37:33,667
+Arasındaki ilişkiyi de şöyle yazabilirim. Tablo sayısı iki katına çıkartılıyor. Tablodaki sayısı iki katına çıkartılıyor. İyince işlemle. Dolayısıyla böyle bir ilişki var aralarında.
+
+165
+00:37:48,179 --> 00:38:07,619
+Formül yerine koyalım. Şimdi C ne oluyor? Gerçek post. İyi oluyor. Hani hesaplamıştık ya. Gerçek post'um şu an Nami olacak. İyince operasyon sonrası.
+
+166
+00:38:11,539 --> 00:38:16,359
+Biri gör tetiklenirse.
+
+167
+00:38:22,228 --> 00:38:48,844
+Şimdi, daha önceki kez ile hesaplamıştık. Oradan, i eksi bir artı beden i'ye denk geliyordu ya. Dolayısıyla nam i oluyor. 2 çarpı nam i eksi size i. Burada şuradaki yukarıda yazdığım formülü oluşturduğum formül vardı ya şurada. Şu formülü. Bunu yine
+
+168
+00:38:50,516 --> 00:38:58,275
+Nami ve Saizi üzerinden yazıyorum. Ve sonra da
+
+169
+00:39:01,396 --> 00:39:07,716
+Nami-1 ve Size-1 üzerinden yazıyorum.
+
+170
+00:39:22,356 --> 00:39:34,956
+Az önce şurada kullandım, yazdım, şurada yazdım. Eşitlikleri aslında formülü uyguluyorum. Size yerine 2xnami-1 koydum.
+
+171
+00:39:50,579 --> 00:40:02,899
+Size-1 yerine de Nami-1 koydum. Şuradaki eşitlikten dolayı. Dolayısıyla bunu açarsam, çok uzun yazmayayım size. Bu da yine 3'e denk geliyor.
+
+172
+00:40:03,859 --> 00:40:09,380
+Yani Expansion olsa da olmasa da bir Constant Factor ile bağım edilmiş durumda işlemin Amortize Cost'u.
+
+173
+00:40:10,960 --> 00:40:15,699
+Dolayısıyla aslında O1'e tekabül edecek. N işlem için de O1'e tekabül edecek.
+
+174
+00:40:16,947 --> 00:40:26,867
+Şimdi buraya kadar bir sorun var mı? Her şey tamamsa bir de delete işlemini hesaba katıp o zaman ne oluyor diye bakacağız.
+
+175
+00:40:31,284 --> 00:40:32,140
+Arkadaşlar, bu kadar örneklerle anlatacağım.
+
+176
+00:40:35,764 --> 00:40:36,264
+Şimdi.
+
+177
+00:40:44,244 --> 00:40:52,384
+Delayed işlemini de hesaba katarsak ne olur? Yani aslında hem insert olacak sistemde bu durumda ve delayed olacak tableda.
+
+178
+00:40:53,144 --> 00:40:59,904
+Dolayısıyla bizim hatırlarsanız en işlem varsa ve bu iş en işlem içerisinde fazla farklı çeşitli işlemler varsa
+
+179
+00:41:01,300 --> 00:41:18,579
+Bunların en kötü durum senaryosunu verecek olan sekansını analiz edecektik. En kötü durum senaryosunu verecek en operasyonda insert-delayed işlemleri ne sırada yer alacak, kaç tane hangisinden olacak gibi düşünmemiz gerekiyor.
+
+180
+00:41:20,039 --> 00:41:27,180
+Şimdi silme işlemi için ilgili item'ı tablodan kaldırıyoruz aslında basitçe ama yer tasarrufu sağlamamız gerekiyor.
+
+181
+00:41:28,340 --> 00:41:35,739
+Eğer load Factor çok düşerse daha küçük bir tabloyu allocate edip elemanları ona hashlemek burada genel yaklaşım.
+
+182
+00:41:37,739 --> 00:41:47,440
+Şimdi burada COUNT'ı yani COST'u hesaplarken az önceki implementasyonda olduğu gibi insertion ve delation cinsinden yapacağız.
+
+183
+00:41:49,039 --> 00:41:54,539
+Şimdi önce şeyi bir belirleyelim.
+
+184
+00:41:54,771 --> 00:42:21,731
+Load Factor ne olduğunda ne yapmalıyım? Nasıl bir kötü durum senaryosuyla karşı karşıya kalabilirim? Önce onu bir analiz edelim. Mesela tablo full dolu olduğunda size 2'ye katlayıp az önceki işlemlerimiz gibi. Ama eğer bir elemanı silmek istiyorsak ve bu tabloyu yarıdan az dolu hale getiriyorsa yani yine Load Factor'ın 1 bölü 2 olduğu durumda bunun altına indiğinde size de yarıya indireceksek, tam tersi işlem yapacaksak.
+
+185
+00:42:22,000 --> 00:42:30,000
+Böyle bir strateji mi izlemeliyiz? Böyle bir stratejide bizim total costumuz nereye gider? Ona bir bakalım.
+
+186
+00:42:32,260 --> 00:42:42,679
+Böyle yaparsak, yani ikiye katlarsak tablo full dolduğunda, insert işlemi geldiğinde tablo boyutunu ya da bir delete olduğunda bir bölükinden az hale geliyorsa yarıya indirirsek.
+
+187
+00:42:42,679 --> 00:42:47,480
+Böyle yaparsak, böyle en işlem yapalım ve enin ikinin kuvveti olduğunu düşünelim.
+
+188
+00:42:48,019 --> 00:43:10,800
+İlk yarı işlem n bölü 2 işlem insert olsun. Öyle hayal ediyorum. İlk işlemlerin kodunu önceki kısımlarda hesaplamıştık. İlk n bölü 2'nin insert olduğunu düşünüyorum. Bunun kodu oyendi hatırlarsınız.
+
+189
+00:43:19,507 --> 00:43:20,307
+Asatena
+
+190
+00:43:24,052 --> 00:43:33,152
+Daha es. O da eşittir. N bölü 2 şu an. Şimdi sonraki N bölü 2'lik işlemi şu şekilde yaparsak ne olur?
+
+191
+00:43:38,068 --> 00:43:55,688
+Bir Insert yaparsak, sonra Delayed, sonra bir daha Delayed yaparsak, sonra Insert, sonra bir daha Insert, sonra Delayed, sonra bir tane daha Delayed.
+
+192
+00:43:55,688 --> 00:44:03,488
+Bu rutinde giden bir sekansımız olursa, bu işlemlerden sonra tablo boyutumuz ne olur?
+
+193
+00:44:04,563 --> 00:44:09,743
+Şimdi ona bakalım. Yine şekil çizelim biraz daha rahat almışsın diye.
+
+194
+00:44:18,835 --> 00:44:20,955
+Şimdi şöyle bir tablom var.
+
+195
+00:44:27,411 --> 00:44:28,791
+Şimdi burada
+
+196
+00:44:33,043 --> 00:44:50,043
+Tablo full dolu. Bu da n bölü iki. n bölü iki tane burada element var. Şimdi bir tane şuradaki insert buraya geldi. Bir tane insert yapmam gerekiyor.
+
+197
+00:44:58,483 --> 00:45:01,724
+Bu insert yaptığım vakit artı tablo.
+
+198
+00:45:06,739 --> 00:45:16,679
+Artık tablon ne olacak? Expand edilmesi gerekiyor. Yani aslında şuralar doluydu.
+
+199
+00:45:24,532 --> 00:45:50,052
+Şunları, şeyleri sildiğimi farzedin. Küçük küçük noktaların olmadığını farzedin. Buraya bir tane daha kayıt koydum. Şurası n bölü 2. Yeni bir insert geldi. Yeni bir insert geldiğinde tablo full olduğu için expand yaptım. Ve yeni açtığım tabloda n bölü 2'lik alan dolu olduğu gibi diğer n bölü 2'lik alanında ilk ayetimi dolu.
+
+200
+00:45:52,436 --> 00:46:06,355
+İki Delayte bakalım. Bu iki Delayte yapacağız. Şimdi birinci Delayte şu tabloyu. Aslına bakarsanız.
+
+201
+00:46:11,956 --> 00:46:13,296
+Şu hale getirmiş oluyor.
+
+202
+00:46:20,500 --> 00:46:22,500
+Oysin.
+
+203
+00:46:29,204 --> 00:46:48,684
+Birinci delete ne yaptı? Şu elemanı sildi. Bu hale geldi. Birinci delete bunu yaptı. İkinci delete buradan da bir eleman sildi. Buradan da bir eleman silince, yani birinci delete'in sonunda tablımız şuna denk geldi.
+
+204
+00:46:55,123 --> 00:47:22,123
+Birinci delete'in sonunda tablomuz şu dolu, buranın full dolu olduğu alana denk geldi. İkinci delete de şu sondaki elemanı da sildiniz. Şuralar dolu, burasının boş olduğu bir durum elde ettiniz. Sonra insert bloğuna geçtiniz. İki tane insert'ünüz var. Birinci insert, şuranın son slotunu doldurdu ve tablomuz...
+
+205
+00:47:23,699 --> 00:47:37,519
+Bu halde. İkinci Insert aynı şuradaki gibi Expansion'a sebep oldu. Dolayısıyla yeni bir blok koydunuz.
+
+206
+00:47:37,519 --> 00:47:40,279
+Altıa.
+
+207
+00:47:45,139 --> 00:48:09,599
+Ve buraya da doldurdunuz. Sonra Delaytlere geçtiniz yine. Delaytler ne yapacak? Birinci Delayt şunu silecek. Ondan sonra ikinci Delayt bunu silecek ve tekrar Contraction yapacaksınız, küçüleceksiniz. İkinci Delayt buradaki elemanı da silecek. Dolayısıyla tablomuz yine.
+
+208
+00:48:11,860 --> 00:48:34,480
+Şuna dönüşecek. Pardon şu tamamını seçmeye çalışıyorum ama bu türlü. Gayet. Allah Allah. Resmen imtihan oldu benim için ya. Gelin buraya çocuklar. Gelmiyor.
+
+209
+00:48:38,739 --> 00:48:47,979
+Şimdi gelin. Olmadı. Neyse, bunu sizin artık ayağı gücünüze bırakıyorum arkadaşlar. Beni daha fazla büyüyüp küçülen ekranlarda mücadele etmek zorunda kalmıyor.
+
+210
+00:48:47,979 --> 00:48:50,459
+Tablo nihayetinde şuna dönüşecek.
+
+211
+00:48:52,579 --> 00:48:57,459
+Dolayısıyla ne oldu? Sürekli expand, contraction. Büyüttün, küçüktün, büyüttün, küçüktün.
+
+212
+00:49:01,459 --> 00:49:03,019
+Her seferinde
+
+213
+00:49:04,019 --> 00:49:30,379
+her expand ve her contraction'ın karmaşıklığı en aslında çünkü en eleman taşınıyor. Burada expand ve contraction'dan da en tane var. Sürekli çünkü bu işlem yapılıyor. Dolayısıyla total kostum benim en kareye çıkıyor. Doğru mu? Şimdi bunun üzerinden işlem yapabilirim ama acaba ben bunu
+
+214
+00:49:31,507 --> 00:49:57,127
+Daha iyi hale getirebilir miyim? Yani bu işlemin kötü yanı ne? Expand işleminden sonra contraction işleminin maliyetini karşılayacak kadar yeterince silme yapmıyorsunuz. Az önce aggregate analizde yapmıştık ya. Maliyeti karşılıyorduk insertlerden. Bir sonraki expand'in maliyetini karşılıyorduk. Burada yeterince insert yapamıyorsunuz maliyeti karşılayacak kadar. Silme için de aynı şey geçerli. Dolayısıyla bu stratejiyi iyileştirmemiz gerekiyor.
+
+215
+00:49:58,068 --> 00:50:13,468
+Şimdi expand için yine 1 bölü 2'yi kullansak ama küçültme yapacağımız zaman load faktörünün 1 bölü 2'nin altına inmesine izin versek. Daha fazla inmesine izin versek.
+
+216
+00:50:13,847 --> 00:50:21,347
+Insert ile tablo full olursa yine sahiz 2 katına çıkaralım ama tablo mesela 1 bölü 4'ten daha az dolu ise küçültelim.
+
+217
+00:50:22,579 --> 00:50:28,699
+O zaman biraz daha iyi bir sistem elde edebiliriz. Ona bakalım.
+
+218
+00:50:35,731 --> 00:50:41,231
+Full doluysa sadece iki katına çıkaracağım. Ama 1 bölü 4'ten daha az doluysa küçülteceğim.
+
+219
+00:50:41,231 --> 00:50:47,231
+Şimdi n elemanlık, Instort Delayed Operation dizisinin yine maliyetini Potential Method ile analiz edeceğiz.
+
+220
+00:50:47,231 --> 00:50:51,115
+Bu anlattığım sistem için fonksiyon oluşturalım.
+
+221
+00:50:54,164 --> 00:51:09,164
+Bu arada bu fonksiyonu oluşturmadan önce bir ara vermek ister misiniz? Çünkü bu biraz sürecek. Eğer yorgunsanız bir ara verebiliriz ya da bitirip şey yapabiliriz. Ara vermek istemiyorsunuz eğer de.
+
+222
+00:51:09,164 --> 00:51:19,164
+Ayrıca bitirebiliriz hocam yarın kalmasın. Tamam hadi bitirelim o zaman. Şimdi bu fonksiyonu bir oluşturalım.
+
+223
+00:51:39,155 --> 00:51:40,915
+Şöyle bir fonksiyon yazabilir miyim?
+
+224
+00:52:03,603 --> 00:52:10,603
+Load Factor 1 bölü 2'nin üzerindeyse, Insult için çıkardığımız formülün aynısı aslında bu.
+
+225
+00:52:10,603 --> 00:52:16,603
+Hemen Expansion sonrası yine 0 olacak. Çünkü TNM tSize bölü 2'ye eşit olduğu için.
+
+226
+00:52:17,300 --> 00:52:32,260
+1 olduğunda da, load factor eğer 1 olursa da, t saldine t nama eşit olacak. Dolayısıyla yeni bir expansion maliyetini karşılayacak şekilde fi t t nama eşit oluyor. Bu tamamen önceki kısmın aynısı.
+
+227
+00:52:32,260 --> 00:52:35,039
+Şimdi şu kısım buna ilave gelecek.
+
+228
+00:52:51,251 --> 00:52:56,692
+Eğer Note Faktör 1 bölü 2'nin altına düşerse.
+
+229
+00:53:00,532 --> 00:53:09,532
+Bu durumda şöyle bir formül yazdım. Bu durumda mesela 1 bölü 4 olduğunda
+
+230
+00:53:14,036 --> 00:53:15,356
+D size aslında ne demek?
+
+231
+00:53:20,947 --> 00:53:37,708
+4 çarpı TNM demek. Dolayısıyla bu case için fi'yi hesaplarsa 2 çarpı TNM-TNM olacak şu case için. Dolayısıyla bu da TNM'a denk geliyor.
+
+232
+00:53:39,847 --> 00:53:42,907
+Yani konsert işleminin maliyetini karşılıyor.
+
+233
+00:53:46,963 --> 00:54:10,044
+Çünkü her bir expansion için, contraction için, tnm kadar maliyet tükettiğim için. Dolayısıyla bu fonksiyon benim için çalışıyor. Bu fonksiyon üzerinden yine state'ini, potential'ın iyinci durum ve iyeksi birinci durum için state farkları üzerinden analizimi yapabilirim.
+
+234
+00:54:10,044 --> 00:54:13,244
+Yine bazı tanımlamalarım var yapmam gereken.
+
+235
+00:54:21,876 --> 00:54:23,416
+Gerçek kostüm var.
+
+236
+00:54:30,547 --> 00:54:34,907
+İndi, operasyon sonrasan.
+
+237
+00:54:46,547 --> 00:54:50,047
+Eleman sayısı yine. Amortize Costume var.
+
+238
+00:54:59,411 --> 00:55:12,271
+Size var. Bunu da biliyorsunuz. Total Size of Table tekrar yazmayın. Potential Faktör var. Diğerleri zaten aynıydı. Şunu yazalım bir tek.
+
+239
+00:55:27,956 --> 00:55:47,596
+Bunu kullanacağız. Potential function'ın sizeyi altı tane oldu mu? Oldu. Tamam. Bunları kullanıyoruz. Şimdi başlangıçta yine initial değeri eleman değeri sıfır.
+
+240
+00:55:53,715 --> 00:56:04,715
+Size'm yine 0. Load Faktör'üm 1. Yani bu 0'a 0'a bölmeyi de düşünmezseniz orada 1 olarak initialize edeceğim.
+
+241
+00:56:04,715 --> 00:56:15,715
+Frame'm de 0. Şimdi ince operasyonun insert olma işlemini üzerinden önce bir analizimizi yapalım.
+
+242
+00:56:16,563 --> 00:56:28,563
+Sonra Delayt olma üzerinden işlemlerimizi yapacağız. Mesela Stack örneğinde de Push olduğunda, Pop olduğunda, Multi Pop olduğunda ne olur? Tek tek bakmıştık. Şimdi İnci Operasyon Insert olmasına.
+
+243
+00:56:33,556 --> 00:57:00,155
+yazacağız. İyince operasyon insert olacak ve bir de burada load faktörün farklı değerleri için fonksiyon farklı değerler alacağından dolayı bunların keyizlerini de tek tek değerlendirmemiz gerekiyor ve yine en gücü durum olanı seçeceğiz. Dolayısıyla birinci seçeneği, birinci kombinasyonum aslında şu. İyince operasyon bir insert işlemi ve load faktör
+
+244
+00:57:03,572 --> 00:57:04,431
+1 bölü 2
+
+245
+00:57:09,427 --> 00:57:17,427
+Şimdi önce bunun üzerinden bir işlemimizi yapalım. Şunu şöyle alalım biraz.
+
+246
+00:57:27,764 --> 00:57:31,764
+Şimdi biz sadece insert yaptığımız zaman, o durumda...
+
+247
+00:57:39,668 --> 00:57:43,288
+Şöyle bir case'im hiç gerçekleşmiyordu ama şimdi gerçekleşiyor artık.
+
+248
+00:58:02,579 --> 00:58:21,079
+Şimdi, hep en az 1 bölü 2 dolu oluyordu insert işlemlerinde ama şimdi Delayed işlemi de işin içine girince, 1 bölü 2'nin altına inme durumu var bizim load faktörümüzün. Load faktörümüz 1 bölü 2'nin altındayken expand olmuyor.
+
+249
+00:58:24,884 --> 00:58:42,884
+1 olduğundan expand oluyordu hatırlarsınız. Şimdi insert işlemi için konuşuyorum. Şu keyif için formülümüzü yazalım. Yukarıdaki fiilerin farkını alıp actual cost ile topladığımız ve amortize cost'u bu şekilde bulduğumuz formülümüzü yazalım.
+
+250
+00:58:57,172 --> 00:59:18,172
+Şimdi, Expansion olmadığı için iyinci operasyon sonrasında çünkü Fii şurası 1 bölü 2'nin altında. Dolayısıyla tam dolu olmuyor iyinci operasyonda. Dolayısıyla Insert işlemini bir işlemde yapabiliyorsun.
+
+251
+00:59:25,108 --> 00:59:40,008
+Şöyle oluyor. Yukarıdaki formüldeki ikinci kezi. Nerede olmuş? Şu kısım. Şunu yazıyorum. Dolayısıyla şuna denk geliyor.
+
+252
+00:59:48,340 --> 00:59:54,220
+Size i bölü 2'ye, eksin de mi?
+
+253
+01:00:04,275 --> 01:00:05,815
+Eksi ne yapayım? Eksi bir.
+
+254
+01:00:09,652 --> 01:00:16,931
+Şimdi bunu nasıl açacağım? Şu kısmı yine aynen yazalım.
+
+255
+01:00:23,315 --> 01:00:40,315
+Şurada i-1, i ifadesi cinsinden yapmaya çalışalım. Şimdi expand olmadığı için, şurası aslında sadece i bölü 2 ile aynı. Şu kısmı böyle yazabilirim.
+
+256
+01:00:42,315 --> 01:00:47,995
+Şimdi nam i ise, nam i-1 ile nam i arasında da şöyle bir bağlantı var.
+
+257
+01:00:52,244 --> 01:01:10,684
+Böyle. Çünkü numi aslında numi eksi birden bir fazla. Çünkü bir insert operation var. Dolayısıyla bu formülü bu hale getirdim. Şimdi bunu açtığınız vakit elemanlar birbirine götürecek ve kosmuz sıfır çıkacak. Dolayısıyla bir insert işleminizin
+
+258
+01:01:20,244 --> 01:01:44,424
+Expand olsun veya olmasın. Aslında şunu size söylemeyi unutmuşum. Şimdi Expand olsun veya olmasın, C'yi en çok 3 oluyordu hatırlarsanız. Insert Operation'ın olduğu durum için analiz etmiştik. Dolayısıyla şunu aslında yaptık. Farklı durumları analiz ediyorum ya, orayı bir açıklığa kavuşturayım. Bu biraz şeyde kaldı.
+
+259
+01:01:48,052 --> 01:01:52,172
+Zaten analiz ettik öncesinde hatırlarsınız. Bu zaten 3 oluyordu en çok.
+
+260
+01:01:52,791 --> 01:01:53,771
+Atmos 3 oluyordu.
+
+261
+01:01:55,991 --> 01:02:01,072
+Bu keyizi önceki analizlerimizde yaptık. Dolayısıyla şu keyizleri yapıyoruz şimdi.
+
+262
+01:02:02,471 --> 01:02:03,431
+Bu keyizleri yapıyoruz.
+
+263
+01:02:04,331 --> 01:02:08,692
+Bu keyizi yaptığımız vakitte postumuz 0 oldu.
+
+264
+01:02:09,692 --> 01:02:12,391
+Şimdi bu keyizi yaptık.
+
+265
+01:02:13,268 --> 01:02:27,468
+i-1'in 1 bölü 2'den küçük olduğu ve load faktörün de yine 1 bölü 2'den operasyon sonrası hala küçük olduğu durumu analiz ettik. Şöyle bir durum var, onu analiz etmedik, onu analiz ederim.
+
+266
+01:02:40,148 --> 01:03:03,567
+İyinci işlemde sonrasında bir bölü ikinin üzerine çıktı. O zaman ne olur? Bu durumu analiz edeceğiz. Tüm durumları analiz ediyoruz. Bu durumu analiz edeceğiz. Bu nasıl mümkün olabilir? Şöyle bir durum aslında. Burada ekspant var mı yok mu? Önce onu değerlendireceğiz.
+
+267
+01:03:07,583 --> 01:03:14,583
+Yarı yarıya doludan azmış. Ama sonra yarı yarıya dolu hale gelmiş. Bu durumda expand oluyor mu?
+
+268
+01:03:14,583 --> 01:03:30,583
+Aslında öncelikle görüntü şöyleymiş. Şurası table'ın yarısı ya. Şurası doluymuş. Yani i-1, 1 bölü 2'den küçültmüş.
+
+269
+01:03:34,356 --> 01:03:42,216
+Insert olmuş. Burası da doğmuş. Bu durumda expand var mı? Expand yok.
+
+270
+01:03:45,216 --> 01:03:50,436
+Şimdi bakalım buna göre o zaman tekrar formüllerimizi oluşturalım.
+
+271
+01:04:08,083 --> 01:04:21,543
+Şimdi expand olmadığına göre kostum 1000'e 1. Sadece içine insert ettim. O kadar. Dolayısıyla formülümde ilgili kısmı yazarak 2'ye ayrılıyor diye.
+
+272
+01:04:23,223 --> 01:04:35,543
+Fi'nin 1 bölü 2'den büyük olduğu kısmı yazarak bu sefer yine devam edeceğim.
+
+273
+01:04:44,884 --> 01:04:48,523
+Bakalım nasıl bir burada birbirlerine dönüşüm yapabiliyoruz.
+
+274
+01:04:52,436 --> 01:04:54,496
+Şurası aslında şöyle yazılabilir.
+
+275
+01:05:03,476 --> 01:05:16,516
+Şöyle, bakın şurayı şöyle yazabilirim. Namiye eşitti. Namiye eksi bir artı bir. Çünkü bir eleman eklendiği için iyince operasyonda. Dolayısıyla bunu böyle yazabilirim.
+
+276
+01:05:21,300 --> 01:05:27,440
+Bunu da size'ları birbirine eşit olduğu için table size'ları i-1 olarak yazabilirim.
+
+277
+01:05:27,440 --> 01:05:36,400
+Burada yani neticede sizin özetle yapmanız gereken formülünüzü çıkarttıktan sonra o case'leri tek tek denemeniz gerekiyor.
+
+278
+01:05:37,139 --> 01:05:57,599
+Load Faktör'e bağlı olarak formülü yazdıysanız, şöyle olursa ne olur, böyle olursa ne olur diye tüm case'leri denemeniz gerekiyor. Case'leri denerken de kritik olan şey Expansion yapılıp yapılmadı ya da Contraction yapılıp yapılmadı. O case'in bu Expansion ya da Contraction'a sebep olup olmadığını analiz etmeniz, onun üzerinde eşitlikleri yazmanız gerekiyor.
+
+279
+01:06:04,532 --> 01:06:05,931
+Çarptığım vakit.
+
+280
+01:06:24,019 --> 01:06:51,000
+Nami-1 bu. Buna dönüştüm. Şimdi şurası aslında şöyle. Buradaki şu Nami-i'leri topluyorsunuz. Nami-i'leri üç tane. Nami-i-1 oluyor. Şunları da 2 bölü 2 gibi düşünüp faride eşitleme yaparsanız.
+
+281
+01:06:51,699 --> 01:06:55,799
+Burası da size 3 çarpı size in-1.
+
+282
+01:06:58,099 --> 01:06:59,379
+2 oluyor.
+
+283
+01:07:00,659 --> 01:07:01,940
+Artı 3'ünüz var.
+
+284
+01:07:02,699 --> 01:07:05,779
+Şimdi aslında şöyle bir şey yazabilirim.
+
+285
+01:07:09,811 --> 01:07:20,811
+Load Factor i-1 Şuna eşitti değil mi? Namlı size'ın oranlarını eşitti. Dolayısıyla burada
+
+286
+01:07:20,811 --> 01:07:31,755
+Nami-1 yerine şurada Nami-1 yerine şu ikisinin çarpımını yazarak bu eşitliği devam ettirebilirim.
+
+287
+01:07:49,972 --> 01:08:16,332
+Şimdi şu mu? Alfa i-1'in load factor 1 bölü 2'den küçük olduğu durum için biz bu analizi yapıyorduk. Dolayısıyla 1 bölü 2'den küçükse şu kısım 1 bölü 2'den küçükse şurası aslında negatife düşüyor.
+
+288
+01:08:17,171 --> 01:08:26,171
+Dolayısıyla C'yi küçük, 3 oluyor. Burası negatife düştüğü için 3'ün altına inmiş oluyorsunuz.
+
+289
+01:08:26,171 --> 01:08:35,751
+Bu durumda amortize kostu da en fazla 3 olmuş oluyor yine. Etmos 3 diyebiliriz amortize kostuna. Yani yine birer düşmüş oluyor.
+
+290
+01:08:36,492 --> 01:08:41,971
+İki durum içinde constant faktörle bağlı dediğini bu işlemlerin gördük.
+
+291
+01:08:42,836 --> 01:08:48,516
+Şimdi insert için ama. Şimdi bir de deleteler için yapacağız. Sonrasında işlevimiz bitmiş olacak.
+
+292
+01:08:48,516 --> 01:09:00,836
+Sıkıldınız mı? Sıkıldınız. Şimdi bakalım. İyince operasyonu delete olursa ne olur?
+
+293
+01:09:06,644 --> 01:09:11,628
+şimdi delete olursa elemanlar arasındaki bağıntı ne olacak?
+
+294
+01:09:17,652 --> 01:09:19,771
+Piyaz alacak eleman sayısı.
+
+295
+01:09:25,460 --> 01:09:27,760
+Şimdi şu case'i önce kontrol edelim.
+
+296
+01:09:27,760 --> 01:09:28,760
+Eğer
+
+297
+01:09:33,971 --> 01:09:49,031
+i-1, Alfa i-1, Alfa i-1 için konuşuyorum. Yani load factor i-1, 1 bölü 2'den küçükse bu sinmenin bir küçültmeye, contraction'a yol açıp açmadığına bakmam gerekiyor.
+
+298
+01:09:49,031 --> 01:10:00,000
+İki kezim var burada. Burada load factor i-1, 1 bölü 2'den küçüktü. Bu durumda sinme yaparsam, contraction'a yol açacak.
+
+299
+01:10:00,404 --> 01:10:08,844
+İlk kezde contraction'a yol açmadığına düşünelim.
+
+300
+01:10:15,731 --> 01:10:16,851
+Contraction yok.
+
+301
+01:10:19,192 --> 01:10:21,211
+Bir durum söz konusu olabilir.
+
+302
+01:10:21,611 --> 01:10:26,731
+Contraction yoksa, size'ları aslında tabloların eşit.
+
+303
+01:10:32,051 --> 01:10:32,891
+Bakalım.
+
+304
+01:10:34,992 --> 01:10:36,171
+Actual Costume 1.
+
+305
+01:10:45,971 --> 01:10:47,171
+Formülüm şu.
+
+306
+01:11:03,123 --> 01:11:23,043
+Sağız İ bölü 2, eksi, nami, yine eksi, sağız İ eksi 1 bölü 2, eksi nami, eksi 1. Formülü de İler, İ eksi 1'ler koydu.
+
+307
+01:11:36,627 --> 01:11:44,627
+Şurası aslında neye eşit? Size iyi eşit. Bunu aynen yazabilirim. Şurası da aslında...
+
+308
+01:11:48,467 --> 01:11:57,667
+numi artı 1'e eşit. Onu da şuradan getirdim. Dolayısıyla bu bana 2 verdi. Ne oldu? Yine bir constant ile karşılaştık.
+
+309
+01:11:59,667 --> 01:12:09,768
+Şimdi load faktörüm, bir önceki işlemimdeki load faktörüm 1 bölü 2'den küçük ve kontrakşın yok.
+
+310
+01:12:10,427 --> 01:12:15,327
+Diğer bir durumda bir önceki load faktörüm 1 bölü 2'den küçük.
+
+311
+01:12:16,467 --> 01:12:21,887
+Ama kontrakşın var. Kontrakşın olduğu duruma bakacağım. O da zaten son durumum.
+
+312
+01:12:21,887 --> 01:12:24,407
+Sonra bakacağım.
+
+313
+01:12:57,363 --> 01:13:21,463
+Şimdi bakalım, Contractions'a sebep olursa gerçek kostum ne oluyor? Birincisi şöyle oluyor, o contraction anı için. O andaki eleman sayısını neyse onu bir move yapıyorsun, yeni yere ve bir tane item'ı siliyorsun. Dolayısıyla şöyle bir Action Costum var.
+
+314
+01:13:24,916 --> 01:13:31,916
+Dolayısıyla şuna yine her zamanki klasik Potential Method formülüm var.
+
+315
+01:13:40,404 --> 01:13:58,844
+Şurayı, numaya artık bir yaptım. Artık dedim. Size 2 bölü 2 eksi numaya.
+
+316
+01:14:02,292 --> 01:14:29,051
+eksi. Size X böyle iki. Size X böyle iki. Nami'yi eksi bir. Yine bunu yazdım. Şimdi burada size var. Arasında size i size i eksi bir. Nami, Nami eksi bir. Bunun arasındaki bağlantıyı kurmak yine gerekiyor. Bu bir tık daha komplike bu şu an.
+
+317
+01:14:29,492 --> 01:14:33,332
+Yine bu çizerek kenarda nasıl bir ilişki kurabiliriz ona bir bakalım.
+
+318
+01:14:33,332 --> 01:14:34,932
+Şimdi benim.
+
+319
+01:14:39,859 --> 01:14:43,139
+Şöyle bir tablom var.
+
+320
+01:14:45,079 --> 01:14:45,859
+i-1
+
+321
+01:14:45,859 --> 01:14:48,579
+Bu.
+
+322
+01:14:49,459 --> 01:14:51,279
+Bunda söz gelinmiş.
+
+323
+01:14:51,279 --> 01:14:55,760
+Şimdilik 8 tane slot olsun.
+
+324
+01:15:02,068 --> 01:15:08,468
+Bunların iki tanesinin dolu olduğunu düşünüyorum. Şimdi i-1. işlemden sonra durum buymuş.
+
+325
+01:15:09,748 --> 01:15:16,667
+Bir tane ince işlemde yine bir delete yaptım. Dolayısıyla tablomun yeni durumu şu oldu.
+
+326
+01:15:21,011 --> 01:15:23,011
+Şöyle böyle.
+
+327
+01:15:25,011 --> 01:15:28,011
+Şu silindi, buna geldi.
+
+328
+01:15:28,011 --> 01:15:37,899
+Bunu yaptıktan sonra 1 bölü 4'ün artık altına düştüğünüz için, yu doluluk oranında contraction yaptınız. Ve ne yaptınız? Küçüldünüz.
+
+329
+01:15:42,100 --> 01:15:56,220
+Yani aslında şu ikisi iyinci işlemi anlatıyor. Sonunda da bu hale geldiğinizde iyinci işlemde size 4, tablo boyutunu 4.
+
+330
+01:16:00,275 --> 01:16:01,576
+Eleman sayınız 5.
+
+331
+01:16:08,020 --> 01:16:16,040
+Önceden i-1'deyken, şuradayken sadece i-1'ini 8'de.
+
+332
+01:16:21,268 --> 01:16:36,688
+Nam İ-1'in ise 2 idi. Şimdi şunların arasında, çünkü senaryo bunu anlatıyor. Bunların arasında şöyle bir ilişki kurabilir miyim? Şuraya yazalım.
+
+333
+01:16:40,467 --> 01:17:07,087
+Size i bölü 2 eşittir. Size i eksi 1 bölü 4. O da eşittir. Nam i eksi 1. O da eşittir. Nam i artı 1. Bunların arasında, bu sayıların arasında böyle bir ilişki olduğunu göreceksiniz.
+
+334
+01:17:09,939 --> 01:17:26,500
+Bir tane elemanın silinmesi durumunun contraction'a sebep olduğu case bu. 1 bölü 2'den küçük, i-1 1 bölü 2'den küçük ama tam sınırda bir taneden çıkarttığınız vakit 1 bölü 4'ün altına düşüyor. Dolayısıyla böyle bir eşitlik var.
+
+335
+01:17:39,028 --> 01:17:40,568
+Şuna dönüşecek.
+
+336
+01:17:42,988 --> 01:17:44,148
+Nami artı bir.
+
+337
+01:17:50,996 --> 01:17:54,796
+Arta, naminha artı bir.
+
+338
+01:17:59,604 --> 01:18:00,844
+Ekse nâmini.
+
+339
+01:18:16,275 --> 01:18:22,675
+Buna dönüşüyor. Bu da bana tekrar açık açık yazmayacağım.
+
+340
+01:18:22,675 --> 01:18:33,175
+Bire bir bire. Şimdi dolayısıyla yine bir ince operasyonda kontrakşına sebep olması ve olmaması durumları için hepsi için analizimi yaptım.
+
+341
+01:18:33,435 --> 01:18:37,015
+Yine bir constant sayı elde ettim.
+
+342
+01:18:38,036 --> 01:18:41,115
+Şimdi tek eksiğim burada şunu analiz ettim.
+
+343
+01:18:42,420 --> 01:19:01,659
+Kontrakşına sebep oluyor mu diye baktım. Kontrakşına sebep olmuyor mu diye baktım. Şuna baktım. İ-1'in 1 bölü 2'den küçük olması ve İ'nin 1 bölü 2'den büyük olmasına baktım.
+
+344
+01:19:10,676 --> 01:19:28,076
+İ bölü 2'nin pardon pi i eksi 1'in 1 bölü 2'den büyük olması durumuna baktım. Hepsine baktım. Sadece şuna bakmadım direkt için. Bir o eksik şu an. Onu da yapmayacağım. Çok sıkmak istemiyorum. Siz onu yapın kendiniz. Şuna bakmadım.
+
+345
+01:19:33,908 --> 01:19:48,148
+Load Factor i-1'in 1 bölü 2'den büyük olma durumu. Bunun için analizini yapmadım. Bunu yaptığınız vakit yine bir constant ile karşılaşacaksınız. Dolayısıyla tüm Insert Delete opsiyonları için O1'i bulmuş oluyorsunuz.
+
+346
+01:19:49,307 --> 01:19:51,648
+En tane işlem içinde O1'i bulmuş olacaksınız.
+
+347
+01:19:52,648 --> 01:20:00,788
+Bunu biraz tekrar edebilirsiniz. Eğer işlemlerle alakalı takip etmekte belki zorlanabilirsiniz.
+
+348
+01:20:01,779 --> 01:20:08,539
+Mümkün olunca açık yazdım ama bir kendinize tekrar edebilirsiniz. Var mı soru arkadaşlar?
+
+349
+01:20:13,300 --> 01:20:19,880
+Soru yok. O zaman bir 15 dakika ara verelim. Çeyrek kala örneklerimizi çözmeye başlarız. Tamam.
+
+350
+01:34:22,228 --> 01:34:45,808
+Merhaba arkadaşlar. Şimdi önce bu rapor, yani şey proje için tekrar mail atacağım ama şu an sayımız çok az. Ama genel olarak şöyle bir beklentim var sizlerden. Şimdi benim derste işlediğim temel şeyler var. Mesela Universal Hash Functions, işte Collision Resistance. Ben bunlarla alakalı işte temel bilgileri verdim.
+
+351
+01:34:46,452 --> 01:34:55,112
+Şimdi burada konumuz içerisinde tabii ki derste bir yerinden yakalıyor olacaksınız anlatılan şeyleri.
+
+352
+01:34:55,112 --> 01:35:00,152
+Ama benim amacım aslında literatürü taramanızı sağlamak.
+
+353
+01:35:00,412 --> 01:35:05,231
+Yani bunun güncel kullanımıyla alakalı paperlara yer vermenizi istiyorum.
+
+354
+01:35:06,272 --> 01:35:09,832
+Tabii ki hiç derste değinmediğimiz konular da var. Mesela digital stopping.
+
+355
+01:35:10,484 --> 01:35:15,944
+Söyledim ama nasıl yapılacağını çok fazla anlatmadım. Burada problemler nasıl çözülüyor?
+
+356
+01:35:17,235 --> 01:35:39,015
+Bunlara değinmedim örneğin. Bunlara da tabii değineceksiniz. Bunlara basic şeyi eğer ben derste anlatmadıysam, konunun altyapısını oluşturacak basic information'ı tabii ki vereceksiniz. Ama mutlaka güncel kullanımla alakalı bir bilginin raporunuzda olması gerekiyor. Paperlarınızı buna göre değerlendirmeniz gerekiyor. Mümkün olduğunca güncel paperları değerlendirmeniz gerekiyor.
+
+357
+01:35:40,115 --> 01:35:50,155
+Ama konular içerisine tabii ki temel bilgi verebilmek için daha önceki tarihlere ait en erken yayınlanan paperlardan da koymanız gerekecek.
+
+358
+01:35:50,296 --> 01:35:56,195
+Yeri gelecek belki arkadaşlarınızı olayı daha iyi anlatmak için internet kaynaklarından faydalanmanız gerekecek.
+
+359
+01:35:56,195 --> 01:36:02,015
+Tamam bunlar okey ama benim temel hedefim güncel yayınlar üzerinden durum tespiti yapmak.
+
+360
+01:36:02,115 --> 01:36:08,115
+Dolayısıyla buna göre daha çok bir literatür özeti, akademik bir literatür özeti tarıyor mu?
+
+361
+01:36:08,115 --> 01:36:29,916
+Üniversite Hedge Function'ı verdiysem ben, en güncel paperlar, hangi universal hash functionlar nasıl ortaya atılmış onlara bakmanızı istiyorum. Sunumlarınızı yapacaksınız ve rapor göndereceksiniz demiştim. Tek kişilik gruplar için 15 dakikayı geçmeyen, çift kişilik gruplar için 25 dakikayı geçmeyen bir sunum.
+
+362
+01:36:30,963 --> 01:36:45,503
+Bu kafamda var. Buna göre yani çift kişilik gruplardan daha detaylı bir çalışma bekliyorum. Buna göre oluşturursunuz raporlarınızı. Şimdi biraz soru çözelim o zaman.
+
+363
+01:36:50,387 --> 01:36:54,788
+Bakayım ekran paylaşımım var mı hala benim? Şuan kapattım galiba.
+
+364
+01:37:10,899 --> 01:37:32,119
+Şimdi arkadaşlar, BruteForce algoritmalarını biliyorsunuz. BruteForce algoritmalarında ne yapıyorduk? Bir problemi çözmek için tüm farklı opsiyonları deneyip bir tanesini seçiyorduk. Dolayısıyla karmaşıklığı yüksek, hesap maliyeti yüksek ama kolay implement edilen problemlerde.
+
+365
+01:37:35,220 --> 01:38:01,440
+Closed Spare problemi aslında diye bir problem. Çok da kompleks bir şey değil. Bir gerçek çizgi doğru üzerinde sıralanmış noktalar var. Bunlardan en yakın olan çifti bulmaya çalışacaksınız. Birbirine en yakın olan iki noktayı bulmaya çalışıyorsunuz.
+
+366
+01:38:01,747 --> 01:38:08,247
+Bunu brute force ile çözerseniz karmaşıklığa ne olur? Daha iyi bir algoritma nasıl tasarlarsınız diye soruyorum size.
+
+367
+01:38:13,235 --> 01:38:15,235
+Yorum yapmak isteyen.
+
+368
+01:38:17,235 --> 01:38:29,804
+Brute Force'a çözmek demek tüm opsiyonları değerlendirmek demek. Yani tüm çiftlere tek tek bakmak, bu çiftler arasındaki distance hesaplamak ve minimumunu bulmak demek. Dolayısıyla tüm
+
+369
+01:38:30,292 --> 01:38:36,292
+Bu elemanları, mesela bu elemanı n-1 tanesiyle karşılaştırmam gerekiyor. Dolayısıyla burada n-1 tanesiyle karşılaştırmam gerekiyor.
+
+370
+01:38:36,292 --> 01:38:38,292
+Dolayısıyla burada n-1 tanesiyle karşılaştırmam gerekiyor.
+
+371
+01:38:38,292 --> 01:38:41,292
+Eğer ben bunu brute force ile çözersem.
+
+372
+01:38:45,524 --> 01:38:53,863
+Peki daha iyi bir çözüm nasıl elde edebilirim? Mesela önce sıralayabilirim. Enlogende bunu sıralarım.
+
+373
+01:38:55,363 --> 01:39:03,564
+Sıraladıktan sonra arka arkaya gelen çiftleri sadece konsol etmem yeterli. Arka arkaya gelenlere bakıp minimumunu bulurum.
+
+374
+01:39:03,564 --> 01:39:08,244
+Arka arkaya gelenlere bakmak için de oyanlık bir karmaşıklığa ihtiyacım var.
+
+375
+01:39:10,131 --> 01:39:31,652
+Peki, bunlar birbiriyle nasıl ilişkili? Çarpım şeklinde mi ilişkili? Hayır, toplam şeklinde ilişkili. Önce sırala, sonra o ayına bak. Yani iki ayrı problem var burada. Dolayısıyla böyle bir ifadem varsa, bigonotation'da biliyorsunuz yüksek olanı kabul ediyordum. Dolayısıyla endlogende çözebilirim diyorum.
+
+376
+01:39:32,711 --> 01:39:37,711
+Peki, mesela başka bir örnek. Binary Search yapmıştık hatırlayın.
+
+377
+01:39:38,228 --> 01:39:58,747
+Binary Sörcü biz nasıl yapıyorduk? Bir array'imiz vardı, sıralı bir dizi. Divide by a constant factor örneği de o. Her seferinde bir yarı inceliyorduk. Önce ortadaki elemanı buluyorduk. Aradığımız elemanın mid yani ortadaki elemandan büyük olması durumunda.
+
+378
+01:40:00,787 --> 01:40:25,967
+Yaksosol tarafını inceliyorduk ve bunu sürekli bulana kadar yapıyorduk. Dolayısıyla karmaşıklık sürekli ikiye bölerek gittiğim için binary search'te. Neydi karmaşıklık? Logende. Şimdi size sorum şu. R yerine link listede tutsaydım ben bu elemanları, o zaman karmaşıklığım ne olurdu?
+
+379
+01:40:27,060 --> 01:40:35,780
+Array yine link listede tutsaydım. Sıralı bir şekilde yine tutuluyor ama array de değil, link listede tutuyorum. Bu durumda karmaşıklığım ne olurdu?
+
+380
+01:40:39,764 --> 01:40:40,804
+Bu an yorum yapmak istiyorum.
+
+381
+01:40:45,332 --> 01:41:02,492
+Normalde Binary Search'te bu Logan diziyi ikiye bölerek gitmeden kaynaklanan boyut. Her seferinde ortadaki elemana O1'de ulaşıyorum.
+
+382
+01:41:02,492 --> 01:41:10,412
+Dizi olduğu için bu. O1'de ortadaki elemana ulaşıyorum. Her seferinde ortadaki elemana O1'de ulaşabiliyorum. Ve bunu
+
+383
+01:41:10,963 --> 01:41:32,783
+Logi en kere yapıyorum. Dolayısıyla karmaşıklık böyle oluyor. Linkli listede benim ortadaki elemanı bulabilmem sıralı bir dizideki kadar kolay değil. Linkli listede benim ortadaki elemanı bulabilmem için oran karmaşıklığa ihtiyacım var. Yani dizideyi baştan takip etmem gerekiyor.
+
+384
+01:41:34,863 --> 01:41:36,163
+Karmaşıklık oran.
+
+385
+01:41:37,619 --> 01:41:55,260
+Dolayısıyla benim aslında log en kez ikiye bölerek yaptığım işlemde binary search liste R şeklindeki implementasyonunda burada constant factor 1 ile çarparken burada n ile çarpmanız gerekiyor.
+
+386
+01:41:56,200 --> 01:41:58,860
+Dolayısıyla n log eni de implement etmiş oluyorsunuz.
+
+387
+01:41:58,860 --> 01:42:00,340
+Neckliliste çözümü olursa.
+
+388
+01:42:01,939 --> 01:42:14,180
+Şimdi bir deneyimiz vardı mesela. Master Teorem vardı. Bu önemli. Biraz formül çözümü gibi sadece ama size kısaca hatırlatayım.
+
+389
+01:42:14,180 --> 01:42:24,180
+Eğer benim bir recurrence relation'ım varsa şöyle örneğin bu formatta.
+
+390
+01:42:27,891 --> 01:42:45,192
+O zaman burada karmaşıklık şununla yani sap problemleri birleştirmek için harcadığım vakitle ve kaç sap probleme böldüğüm ve sap problem sayısını gösteren şu değişkenlerle ifade ediliyordu hatırlarsanız.
+
+391
+01:42:45,192 --> 01:42:46,492
+Eğer
+
+392
+01:42:52,851 --> 01:43:06,971
+F'nin karmaşıklığı örneğin en üstü D ise o zaman şuradaki A, şuradaki B ve şuradaki D'nin değerlerinin farklı değerleri için karmaşıklık hesabı yapabiliyordum ben master teoremde.
+
+393
+01:43:12,212 --> 01:43:18,652
+Eğer A, B üstü D'den küçükse en üzeri D oluyordu.
+
+394
+01:43:21,132 --> 01:43:23,752
+En üzeri D logen oluyordu.
+
+395
+01:43:26,472 --> 01:43:37,072
+Eğer A, B üstü D yeşilse ve en üzeri log B tabanında A oluyordu.
+
+396
+01:43:38,931 --> 01:43:57,691
+Eğer A, B üzeri D'den büyükse. Şimdi benim master teoremle hesaplama yapabiliyordum. Eğer bir karmaşıklık recurrence'ın bir fonksiyonunu da çözmek istiyorsam. Recurrence 3'i çizebiliyordum. Az sonra onu yapacağım.
+
+397
+01:43:59,152 --> 01:44:05,531
+Mathematical Induction'la Substitution yapabiliyordum. Hangisinin daha uygun olduğuna karar vermem gerekiyordu.
+
+398
+01:44:06,547 --> 01:44:19,287
+Şimdi bir tane sadece örnek yapayım. Zaten siz formül üzerinde olduğu için ve uygunluğu anlamanız yeterli olduğu için master türelimi kullanmakta.
+
+399
+01:44:21,127 --> 01:44:25,407
+Diyelim ki şöyle olsun. 4TN bölü 2 artı N.
+
+400
+01:44:35,252 --> 01:44:36,132
+Burası 1.
+
+401
+01:44:39,072 --> 01:44:39,652
+Şurası.
+
+402
+01:44:41,152 --> 01:44:46,092
+Dolayısıyla A'nın B bölü D'den büyük olduğu bir durum söz konusu.
+
+403
+01:44:47,172 --> 01:44:52,572
+Dolayısıyla en üzeri logaritma 2 tabanında 4 diyorum.
+
+404
+01:44:52,972 --> 01:44:55,311
+Bu da n kareye denk geliyor demiştim.
+
+405
+01:44:55,311 --> 01:45:00,052
+Bunun gibi farklı değerler için farklı sonuçlar üretecek.
+
+406
+01:45:03,188 --> 01:45:15,988
+Şimdi hash fonksiyonlarda collusion üzerine mesela bol bol çalıştık. Temel olarak aslında benzer bir yaklaşım üzerinden hareket ediyorduk hep.
+
+407
+01:45:19,307 --> 01:45:28,528
+Mesela n adet key sayısı n olan, size da m olan.
+
+408
+01:45:29,555 --> 01:45:47,255
+Bir hash table'da, uniform hash'in ile yerleştirdiğimizi düşünelim. Uniform hash'in neydi? Aslında collusion olma olasılığı herhangi bir key için diğerleriyle aynı. Uniform hash'in var. Böyle bir durumda. Expected number of collusion'ı nasıl buluyorduk mesela?
+
+409
+01:45:58,612 --> 01:46:07,011
+Uniform Hashing olduğu için iki ayrı K ve L kirlilerinin kolujun olma olasılıkları bir bölü M'de.
+
+410
+01:46:07,571 --> 01:46:10,131
+Tablonun size M olduğu için.
+
+411
+01:46:10,831 --> 01:46:18,571
+Dolayısıyla kaç farklı K, L çifti varsa onunla bir bölü M'i çarpıp expected number of kolujunu bulabiliyorduk.
+
+412
+01:46:19,604 --> 01:46:33,604
+O zaman ne yapıyorduk? Enin içerisinden kaç tane farklı ikili seçebilirim? Ve bunu 1 bölü M'de çarpıyordum basitçe. Bu da n çarpı n-1 bölü 2 çarpı 1 bölü M oluyordu.
+
+413
+01:46:33,604 --> 01:46:39,604
+Şimdi ben böyle sizden soru gelmedi sürece devam ediyorum arkadaşlar.
+
+414
+01:46:41,604 --> 01:46:47,275
+Arefe olduğu için de çok da tutmak istemiyorum sizi. 11 kişi gelmişsiniz sağ olun.
+
+415
+01:46:47,444 --> 01:46:53,204
+Şimdi şöyle bir sorun var. Biraz düşünmenizi de istiyorum yani aslında bakarsanız.
+
+416
+01:46:53,204 --> 01:47:05,324
+Şimdi şöyle bir problem düşünün. Bir linkli listeniz var. Bu linkli listede her bir notta çok uzun stringler var.
+
+417
+01:47:05,324 --> 01:47:14,892
+Ve bu stringler içerisinde arama yapıyorsunuz. Likli listede arama yapıyorsunuz aslında. Her bir notumuzda uzun stringler var.
+
+418
+01:47:15,123 --> 01:47:22,083
+Böyle Long String Bir.
+
+419
+01:47:26,868 --> 01:47:31,028
+Bir tane not. Yeni bir tane long string ikiye.
+
+420
+01:47:34,148 --> 01:47:38,408
+Long string ikiye. Böyle gidiyor.
+
+421
+01:47:42,707 --> 01:48:05,807
+Linked Listede arama yapacağınız için ne yapmanız gerekiyor aslında? Elinizde de bir key var. Bu key'nin hangisine denk geldiğine bakacaksınız. Tek tek bakmanız gerekiyor. Long String 1 ile key'yi karşılaştıracaksınız. Uygun değilse bir sonraki node'a gideceksiniz. Long String 2 ile key'yi karşılaştıracaksınız.
+
+422
+01:48:10,484 --> 01:48:22,043
+Dolayısıyla eğer sizin linkli listenizde en tane eleman varsa, n çarpı string length kadar döneceksiniz. Değil mi bu iş için?
+
+423
+01:48:22,043 --> 01:48:36,124
+Şimdi böyle bir problemi daha iyi çözebilmek için kullandığımız teknolojilerden hangisini, kullandığımız yapılardan hangisini bu probleme ekleyebilirsiniz?
+
+424
+01:48:39,252 --> 01:48:41,172
+Var mı yoruma olan?
+
+425
+01:48:47,060 --> 01:48:51,820
+Bir düşün bakalım. Ne yaparsam ben bu linkli listede ilave olarak nasıl bir bilgi tutarsam?
+
+426
+01:48:53,000 --> 01:48:54,028
+Search'ümü...
+
+427
+01:48:59,828 --> 01:49:16,568
+Kolaylaştırabilirim. Söğürçümü sadece N ile sadece Linkli Listeyi gezerek, içinde String Length için String'in tüm karakterlerini karşılaştırmadan sadece Linkli Liste üzerinde gezerek bu işi nasıl yapar?
+
+428
+01:49:20,916 --> 01:49:21,416
+Var mı yorum?
+
+429
+01:49:24,516 --> 01:49:26,376
+Şöyle yapabilirim arkadaşlar.
+
+430
+01:49:27,856 --> 01:49:33,696
+Buralarda String'le beraber String'in bir hash fonksiyonu.
+
+431
+01:49:38,996 --> 01:49:43,996
+Bir Heşfenks fonksiyonu kullanırım ve Strik ile beraber her notta bu heşi tutarım.
+
+432
+01:49:50,003 --> 01:50:09,023
+Dolayısıyla karşılaştırmak istediğim key için de bu hash değerini hesaplarım. Ve stringleri karşılaştırmam. Sadece hash fonksiyonlarını karşılaştırırım. Hash'e hesaplamayı o bir de yaparım. Karşılaştırmayı da o bir de yaparım. Dolayısıyla sadece linkli liste.
+
+433
+01:50:09,376 --> 01:50:21,196
+Bu işlemi bitirmiş olurum. Peki bu durumda ne ile ekstra nasıl bir kontrol yapmam gerekiyor benim? Karşılaştırma yaparken.
+
+434
+01:50:24,724 --> 01:50:47,064
+Collusion var mı? Collusion olduğu bir durumda yanlış elemanı bana döndürebilir. Dolayısıyla, eğer siz match eden bir hash bulduysanız, pi'nin hash ile ilgili nodun da hesaplanan, kayıt edilmiş olan hash'in birbirine uyduğu durumda, bir collusiona rast gelme ihtimalimizi ortadan kaldırmak için sadece bir seferlik işte.
+
+435
+01:50:47,520 --> 01:51:00,300
+ve çetki hashler için tüm string ile key'inizi karşılaştırmanız gerekiyor. Bununla alakalı bir psodokod yazabilirsiniz. Ben şimdi buraya yazmayacağım. Temel mantığı anlattığımı düşünüyorum. Var mı soru?
+
+436
+01:51:03,923 --> 01:51:04,923
+Şimdiki.
+
+437
+01:51:11,380 --> 01:51:26,380
+Ben size Mathematical Induction'la Substitution anlatmıştım. Elimde bir relation varsa, mesela…
+
+438
+01:51:31,283 --> 01:51:45,723
+T en eşittir. 4T. N bölü 4 artı E. Induction ile bunun parmaşıklığını bulmak için bir yol izlemiştik. Tüme varım yapıyorduk aslında.
+
+439
+01:51:46,612 --> 01:51:56,332
+Bunu burada bir tane ya da iki tane soru çözmüştüm. Hatta konveks olabilmek için kullandığımız metot master teoreme uymadığı için.
+
+440
+01:51:56,752 --> 01:51:59,852
+Onun matematikli induction ile kompleksitesini hesaplamıştık.
+
+441
+01:52:01,231 --> 01:52:11,672
+Bunlar tabii master teoreme uyan şeyler ama açıklama açısından örnek güzel olduğu için bunu çözeceğim size bir kere daha hatırlatmak için.
+
+442
+01:52:12,500 --> 01:52:28,860
+Şimdi ne yapıyorduk Matematical Induction'da? Bir tahmin yapıyorduk ve o tahmini ispat etmeye çalışıyorduk. Şunu prove etmeye çalışıyorum aslında. Şu işlemimi prove edeceğim.
+
+443
+01:52:42,739 --> 01:52:50,739
+On olduğunu prove etmeye çalışıyorum. Birinci kesim bu. Bu ne demekti? Şöyle yazabiliyordum ben bunu.
+
+444
+01:52:50,739 --> 01:52:56,739
+Tn Çük eşit Cn şeklinde yazabiliyordum. Dolayısıyla benim
+
+445
+01:53:05,524 --> 01:53:07,524
+Bunu prove etmem gerekiyor.
+
+446
+01:53:10,743 --> 01:53:11,804
+Varsayımım neydi?
+
+447
+01:53:15,304 --> 01:53:18,963
+Varsayımım şuydu. Hatta bu konuda bir soru da gelmişti bir arkadaşımızdan.
+
+448
+01:53:22,083 --> 01:53:23,083
+Varsayımım şuydu.
+
+449
+01:53:29,235 --> 01:53:52,076
+Bu indakşının doğru olduğunu kabul edeceğim. N'den küçük olan her M için bu indakşının doğru olduğunu kabul edeceğim. Bu kabul ile elimde bu kabul varken T'nin C'nden küçük olduğunu ispat etmeye çalışacağım. Ve bunun için de M'e N'den küçük bir değer vereceğim. N bölü 4 veriyorum. Çünkü 4'e bölerek gittiği için her seferinde.
+
+450
+01:53:57,203 --> 01:53:58,784
+Hasnır Relation'ım şuydu.
+
+451
+01:54:04,340 --> 01:54:15,739
+Şunu şurada yerine koyarsam M yerine N bölü 4. T N bölü 4 küçük eşit. C çarpı N bölü 4.
+
+452
+01:54:17,340 --> 01:54:26,619
+Gerçek relation'ım şu. Şu ifadeyi, bu ifadeyi bunun yerine yazıyorum. Dolayısıyla şöyle oluyordu.
+
+453
+01:54:31,764 --> 01:54:58,463
+En bölü 4 artı. Bunlar gidiyordu. T'en küçük, C'en artı. Böyle bir ifade çıktı karşıma. Şimdi ben neyi prove etmeye çalışıyorum? T'enin C'enden küçük olduğunu prove etmeye çalışıyorum. Ama böyle bir eşitlik buldum. Şimdi bunu sağlayan bir T'en, şunu sağlamayabilir.
+
+454
+01:54:59,060 --> 01:55:24,700
+Pozitif N ve C için. Dolayısıyla bu induction'ım yanlışmış. Burada bir yanlışlık var. Tahminim yanlışmış. Benim bulduğum aslında TN, CN'den büyükmüş. Öyle bir yanlış bir şey bulduğunuz vakit aslında bu size bir fikir verir. Bunu ispatlamaya çalışıyordunuz, ispatlayamadınız. Demek ki TN, CN'den büyük. Dolayısıyla daha büyük bir bantla bunu denemeniz gerekiyor.
+
+455
+01:55:25,747 --> 01:55:32,287
+İkinci bir tahmin yapacaksınız.
+
+456
+01:55:32,527 --> 01:55:33,347
+İkinci tahmin.
+
+457
+01:55:35,947 --> 01:55:36,967
+Şöyle olabilir mi?
+
+458
+01:55:39,107 --> 01:55:39,768
+T'nin.
+
+459
+01:55:43,891 --> 01:55:49,011
+N-Log iki tabanında N'den küçük eşit olduğunu tahmin edeyim.
+
+460
+01:55:50,212 --> 01:56:00,131
+Bu durumda yine N'den küçük her M için bunun tutarlı olduğunu kabul ederek bir M değeri için ispatlayacaktım.
+
+461
+01:56:01,771 --> 01:56:03,372
+Bu M yine N bölü 4 olsun.
+
+462
+01:56:07,923 --> 01:56:18,891
+ve n bölü 4 n bölü 4 logaritma 2 n bölü 4. Normal derivation'ım şuydu.
+
+463
+01:56:29,844 --> 01:56:39,144
+Şunu alıyorum, bunun yerine yazıyorum. Dolayısıyla, burada küçük eşit olduğu için bu eşitlik neye dönüşüyor? Küçük eşite dönüşüyor.
+
+464
+01:56:39,144 --> 01:56:44,943
+4 çarpı n bölü 4.
+
+465
+01:56:44,943 --> 01:56:54,644
+Şimdi şöyle bir logaritmik fonksiyonlarda biliyorsunuz dönüşüm var. Onu açıkça şuraya yazayım sonra.
+
+466
+01:56:55,347 --> 01:56:57,467
+Takip etmesi konulması sizin için.
+
+467
+01:57:03,956 --> 01:57:21,956
+Logo etma 2 tabanında n bölü 4'ü, Logo etma 2 tabanında n-2 diye yazabilirim. Dolayısıyla şuradaki n bölü 4, Logo etma 2 tabanında n bölü 4 artı n'i şöyle yazacağım.
+
+468
+01:57:24,655 --> 01:57:28,775
+n Logo etma 2 tabanında n-2 n artı n diye yazacağım.
+
+469
+01:57:29,235 --> 01:57:54,296
+Dolayısıyla bu bana ne verdi? N logaritma iki tabanında N eksi N verdi. Şimdi bakalım tuttu mu bu sefer? Benim ispatlamaya çalıştığım şey şuydu. T'nin N log 2 N'den küçük olduğunu ispatlamaya çalışıyordum. T'nin N log 2 N eksi N'den küçük olduğunu buldum. Dolayısıyla aslında prof etmiş oldum.
+
+470
+01:57:57,427 --> 01:58:14,228
+Yani bu indukşanım tuttu. TN, Big O'da Nlog'i gelmiş. Peki, daha sıkı bir bound deneyebilir miyim? Yani bunu n karede yapsam bu sonuçta küçük olan bir şey bulduğu için ON notasyonu gereği tutacak. Daha sıkı bir bound deneyebilir miyim? Mesela şunu deneyebilir miyim?
+
+471
+01:58:19,155 --> 01:58:20,655
+Bir tane daha tahmin yapalım.
+
+472
+01:58:27,667 --> 01:58:35,387
+T n, küçük eşit n, logaritma dört tabanında n. Bunu deneyebilir miyim? Logaritma iki tabanında n bulmuştum.
+
+473
+01:58:39,764 --> 01:58:51,264
+Şimdi bu durumda yine, S n küçük eşit m, logaritma 4 tabanında m oluyor. m'in n bölü 4 olduğunu kabul ettim.
+
+474
+01:58:53,403 --> 01:59:00,563
+S n bölü 4 küçük eşit n bölü 4, logaritma 4 tabanında n bölü 4.
+
+475
+01:59:01,923 --> 01:59:04,011
+Dolayısıyla, ana...
+
+476
+01:59:04,532 --> 01:59:22,652
+Formülünü de yerine koyayım. 4 çarpı t n bölü 4 artı n de şu ifadeyi şunun yerine koyuyorum. Küçüklük, küçük eşit şartı geliyor. 4 çarpı n bölü 4 logaritma 4 n bölü 4 artı n oluyor.
+
+477
+01:59:31,923 --> 01:59:45,724
+Şöyle yazacağım bunu da. Enlok, dört tabanında en, eksi en, artı en, bunlar da gitti. Yani küçük eşit enlok, dört tabanında en.
+
+478
+01:59:46,864 --> 01:59:55,064
+Şimdi ben zaten enlok, dört tabanında eni prove etmeye çalışıyordum. Prove etmeye çalıştığım şey bu. Ve bunu buldum. Tamamen aynısını buldum.
+
+479
+02:00:00,787 --> 02:00:13,447
+Exact Bound'u bulmuş oldum. N 94 tabanında N'e eşitmiş. Mathematical Induction bu şekilde çalışıyordu. Size bir hatırlatmak istedim. Var mı soru?
+
+480
+02:00:17,076 --> 02:00:26,296
+Tamam, soru yok. Bir de triler vardı. Trilerle ilgili çok örnek çözmedim sizi. O yüzden iki tane örnek çözmek istiyorum. Sonra bitireceğim.
+
+481
+02:00:28,076 --> 02:00:36,036
+Recurrence, bu trili tabii şöyle. Recurrence Tree. Solving recurrences by recursion tree method.
+
+482
+02:00:37,684 --> 02:00:52,804
+Bir ağaca yerleştirerek çözüyorduk. Biz sizinle Hanoi tavırı ağaca yerleştirmiştik. Hibonacci de zannedersem ağaca yerleştirmiştik. Hatta orada ağacın balans olmadığı durumlar oluyordu. Altın oran karşımıza çıkmıştı.
+
+483
+02:00:53,464 --> 02:01:01,804
+Şimdi elinde şöyle bir Merge Sort için şöyle bir Reaction var.
+
+484
+02:01:09,235 --> 02:01:14,876
+Şu ölç için gereken karmaşıklık, şu da divide için gereken karmaşıklık.
+
+485
+02:01:16,155 --> 02:01:22,615
+Bunun T1'i 0'du. Yani T1 olduğu zaman artık kol yapmıyorduk.
+
+486
+02:01:23,216 --> 02:01:26,895
+Şimdi bunu ağacını çizerek analizini yapmaya çalışalım.
+
+487
+02:01:26,895 --> 02:01:31,796
+Şöyle yapıyoruz. Hatırlarsanız Tn'den başladınız.
+
+488
+02:01:32,467 --> 02:01:38,788
+Her Function Call için yapılan işlemler ve onun çağırdığı Function Call'ları ağaçta yapraklara yerleştiriyorsunuz.
+
+489
+02:01:38,847 --> 02:01:41,708
+TN, iki tane TN bölü iki çağırıyor.
+
+490
+02:01:42,448 --> 02:01:42,788
+Şöyle.
+
+491
+02:01:45,648 --> 02:01:46,587
+TN bölü iki.
+
+492
+02:01:48,427 --> 02:01:50,068
+TN bölü iki çağırıyor.
+
+493
+02:01:50,612 --> 02:02:00,231
+Tn bu arada en tane işlem yapıyor. Şundan dolayı. Tn düzeyinde hem Tn bölü 2'leri çağırıyorsunuz hem de en tane işlem yapıyorsunuz.
+
+494
+02:02:00,231 --> 02:02:14,791
+Şimdi Tn bölü 2'lerle gelecek olursak bunların her biri neyi çağırıyor? Tn bölü 4'ü çağırıyor. Bu da öyle.
+
+495
+02:02:21,779 --> 02:02:46,659
+Peki burada kaç tane işlem yapıyor aynı zamanda? TN bölü 2. İki tane. Her biri N bölü 2 işlem yapıyor. Ve bunlardan iki tane var. Bu N bölü 2 yapıyor, bu N bölü 2 yapıyor. Şurada N olduğu için. Dolayısıyla 2 çarpı N bölü 2. Peki burada her biri N bölü 4 işlem yapıyor. N bölü 4, N bölü 4. Şundan dolayı. Ve dört tane olduğu için 4 çarpı N bölü 4 bu da.
+
+496
+02:02:48,212 --> 02:02:50,212
+Bu gidiyor böyle.
+
+497
+02:02:52,212 --> 02:02:54,212
+Nereye kadar gidiyor? T1'e kadar gidiyor.
+
+498
+02:02:54,212 --> 02:03:00,212
+Dolayısıyla burada artık bir yerde bunlar T1'e düşecekler.
+
+499
+02:03:00,212 --> 02:03:03,660
+Hepsi düşecek, burada düşecek T1'e.
+
+500
+02:03:09,908 --> 02:03:19,627
+Şimdi burada benim şunlardan kaç tane olduğu en artı, aslında şöyle, şunlar birbirini götürüyor bakın, bunlar birbirini götürüyor.
+
+501
+02:03:20,247 --> 02:03:27,228
+Her bir ağaç seviyesinde enlik işlemim var. Bunları toplamam gerekiyor. Nereye kadar topluyorum? Ağacımın seviyeleri hep burada benim için önemli.
+
+502
+02:03:27,228 --> 02:03:36,167
+Şu derinliği önemli yani. Şimdi bu da bir artı logaritman iki tabanında en.
+
+503
+02:03:36,564 --> 02:04:02,003
+Örneğin en sekiz olsaydı, sekiz, dört, iki, bir şurada bitecekti. Ağaç seviyesi o zaman dört olacaktı. Bir, iki, üç ve dört olacaktı. Dolayısıyla ben burada her seferinde enlik işlem yaptığım için, şundan en kere yapıyorum. Enlogene tekabül ediyor diyebilirim. Ağaç kullanarak çözdüm.
+
+504
+02:04:03,764 --> 02:04:04,923
+Var mı soru arkadaşlar?
+
+505
+02:04:08,304 --> 02:04:08,584
+Yok.
+
+506
+02:04:10,844 --> 02:04:11,644
+Tamam, peki.
+
+507
+02:04:12,324 --> 02:04:13,584
+Bir tane daha örnek çözelim o zaman.
+
+508
+02:04:24,979 --> 02:04:27,800
+Şöyle olsun. 2T n bölü 2 artı n kare olsun.
+
+509
+02:04:31,764 --> 02:04:34,264
+Şimdi ne yapıyorum? Envar
+
+510
+02:04:38,452 --> 02:04:42,391
+N bölü 2'lere çağırıyor. Yani t'ler var bunların hepsinin başında da.
+
+511
+02:04:43,192 --> 02:04:43,492
+Şöyle.
+
+512
+02:04:46,952 --> 02:04:50,192
+Şimdi bu, N kare işlem yaptı.
+
+513
+02:04:51,672 --> 02:05:00,172
+Şu, her bir tanesi N bölü 2'nin karesi kadar işlem yaptı ve bunlardan iki tane var.
+
+514
+02:05:01,552 --> 02:05:02,112
+Böyle gidiyor.
+
+515
+02:05:06,612 --> 02:05:21,612
+n bölü 4, n bölü 4. Her bir tanesi n bölü 4'ün karesi kadar işlem yaptı ve bundan 4 tane var. Bunlar böyle 1'e kadar gidecek.
+
+516
+02:05:21,612 --> 02:05:30,912
+Böyle gidecek. Şimdi birinci şuna level 0 diyelim. Burada n kare.
+
+517
+02:05:33,684 --> 02:06:01,204
+Şurada level 1 olsun. Ne oldu bu? N kare bölü 2. Şurası. Burası. N kare bölü 4. Level 2. Şimdi bu gidiyor. Pıt pıt pıt pıt. Nereye kadar gidiyor? İinci level'a kadar. İinci level'da N kare bölü 2 üzeri iyi olacak.
+
+518
+02:06:01,779 --> 02:06:12,199
+Dolayısıyla benim yine bunun derinliğine, bu ağacın derinliğine ihtiyacım var ki o da ikişer yüz bölerek gittiği için Nögritma kitabında.
+
+519
+02:06:12,199 --> 02:06:14,199
+O zaman benim...
+
+520
+02:06:22,676 --> 02:06:45,056
+Formülüm şu. Sıfırdan başlıyorum. Logaritma iki tabanında n'e kadar gidiyorum. n kare bölü iki üzeri i dedim. Yani n kare bir üzeri sıfır. Logaritma iki tabanında bir bölü iki üzeri i dedim.
+
+521
+02:06:48,756 --> 02:06:58,615
+Birden küçük bir şeye yakın suyu. Dolayısıyla benim t'nin o'l² diyebilirim.
+
+522
+02:07:00,787 --> 02:07:16,667
+Bu örnekte tri'nin derinliği çok önemli değil aslında çünkü çok hızlı bir şekilde azalıyor. İkiye bölerek azalıyor. İkiye bölerek azaldığında tri'nin derinliği bir noktadan sonra önemsiz hale gelecek. Çünkü dediğim gibi logaritmik bir fonksiyonumuz var.
+
+523
+02:07:16,667 --> 02:07:26,059
+Hıfır sonuca ulaşıyorsunuz, azalıyorsunuz. Benim bu gün için herhalde hazırladığım örnekler bu kadardı. Bir bakayım tekrar.
+
+524
+02:07:33,203 --> 02:07:47,443
+Bu kadar arkadaşlar. Haftaya sınav var biliyorsunuz. Ondan sonra yine devam edeceğiz derslerimizle. Var mı bana sormak istediğiniz bir şey? Kendimi çok yalnız hissediyorum arkadaşlar.
+
+525
+02:07:50,703 --> 02:07:53,303
+Hocam kaç soru soracaksınız? Ben de onu sorayım.
+
+526
+02:07:57,223 --> 02:08:00,163
+Kaç soru soracağım? Ben de daha soruları hazırlamadım.
+
+527
+02:08:01,235 --> 02:08:27,576
+Anladım. Bu derste anlattığınız konumdan da sorarsınız. Amortiz analizden mi? Evet. Bilemem şimdi, ne diyeyim bilemedim. Hazırlamadım gerçekten. Sizi yanlış yönlendirmek istemem. Ama siz çalıştığınızda sonunda, finalde yüz yüze görüşeceğiz ya. O zaman karşılaşıyorsunuz. Peki öyle. Tamam, teşekkür ederim. Bunlarla alakalı sormak istediğiniz bir şey var mı?
+
+528
+02:08:29,268 --> 02:08:56,007
+Arkadaşlar, ben bir sumum rapor formatı paylaşmadım ama kaynaklarınız, yani siz bu işi biliyorsunuz artık. Sekiz sensör öğrencisiniz. Kaynaklarınızda nasıl referans vereceğinizi biliyorsunuz. Yani bunu böyle akademik bir dille yazmanızı bekliyorum. O yüzden özel bir şey paylaşmadım. Takvimi paylaşıyor olacağım. Belki iki haftaya yaymak gerekebilir. Bir hafta bir de on şey gibi.
+
+529
+02:08:57,076 --> 02:09:23,896
+Diğer haftanın yarısı gibi. İki haftaya yaymak gerekebilir. Onunla alakalı vize muhtemelen gibi, vize haftası gibi size şey yaparım. Takvim paylaşmış olurum. Bu noktada rapor hazırlamaktan falan vazgeçerseniz bana haber verin, size takvime koymayayım. İnşallah vazgeçmezsiniz. Hepimiz için faydalı olur diye düşünüyorum. Var mı arkadaşlar başka bir şey? Peki, iyi bayram var şimdiden.
+
+530
+02:09:24,304 --> 02:09:25,844
+Teşekkürler hocam. İyi bayramlar.
+
+531
+02:09:26,024 --> 02:09:26,644
+Çok sağ olun.
+
+532
+02:09:26,644 --> 02:09:28,724
+Çok teşekkür ederiz hocam. İyi bayramlar.
+
+533
+02:09:28,824 --> 02:09:29,544
+Teşekkür ederim.
