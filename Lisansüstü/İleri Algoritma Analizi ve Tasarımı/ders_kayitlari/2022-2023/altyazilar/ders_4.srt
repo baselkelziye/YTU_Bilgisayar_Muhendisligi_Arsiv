@@ -1,0 +1,2683 @@
+1
+00:03:19,316 --> 00:03:31,336
+Günaydın arkadaşlar. Nasılsınız? İnşallah herkes iyidir. Hayırlı Ramazanlar öncelikle. Güzel, bereketli bir ay olur inşallah hepimiz için.
+
+2
+00:03:31,336 --> 00:03:34,336
+Şimdi bugünkü...
+
+3
+00:03:35,764 --> 00:03:50,764
+Günaydın [öğrenci]. Şimdi bugünkü dersimizde katılımcı sayımızın gitgide düştüğünü görerek bir önce bir üzüldüm ama bilemedim şimdi Ramazan'ın ilk gün olduğu için mi böyle 12 kişi beni biraz hayal kırıklığına uğrattı. En sevdiğim öğrencilerim şu an burada demek ki.
+
+4
+00:03:52,116 --> 00:04:10,556
+Bugün arkadaşlar ne yapacağız? Geçen hafta analizlerden bahsetmiştik. Master Teorem ile ilgili analizlerimizi yapmıştık. Divayeten Konkür algoritmalarından konveks ol ve medyan bulmayı incelemiştik.
+
+5
+00:04:15,135 --> 00:04:35,636
+karmaşıklığını hesaplayabilmiştik. Ama medyan bulmada biraz durum farklıydı. Onun için kullanmamız gereken farklı bir metod var. O metoddan bahsederek başlayacağım. Ama önce geçen haftaki algoritmamızı hızlıca bir hatırlayalım istiyorum. Analiz yaparken aklımıza soru işareti kalmasın diye.
+
+6
+00:04:41,812 --> 00:04:58,012
+Geçen hafta Median Finding yaptık biliyorsunuz. Sort etmeden Divide and Conquer ile bir dizideki Median'ı bulduk. Bunun için bu şekilde görünen bir Pissodo kodumuz vardı. Temel olarak yaptığı şey bir pivot seçip
+
+7
+00:04:58,259 --> 00:05:05,259
+Bu pivotun sağına ve soluna, daha doğrusu pivottan küçük olan ve büyük olan elemanlar şeklindeki grup oluşturmaktı.
+
+8
+00:05:05,259 --> 00:05:12,259
+Ve bunu seçtiği rengi elde edene kadar iteratif olarak, recursif olarak yapıyor.
+
+9
+00:05:12,259 --> 00:05:18,259
+Dolayısıyla burada pivotu seçmenin önemli olduğunu, bunun doğrudan karmaşıklığı etkilediğini konuşmuştuk.
+
+10
+00:05:18,644 --> 00:05:40,344
+Pivotu nasıl seçeriz? Akıllıca seçmemiz gerekir demiştik. Medyanların medyanını bulma yönteminden bahsetmiştik. Tabii ki burada medyan bulma ayırtmamızın içerisinde pivotu seçmek için seçtiğimiz yöntemde tekrar medyan bulmaya çalıştırmamız gerekiyordu. Dolayısıyla bir durma noktası tespit etmemiz gerekiyordu.
+
+11
+00:05:44,276 --> 00:05:59,115
+Yaptığımız zaman burada nasıl bir durma noktası sonsuza kadar gitmemesi için tespit etmeliyiz diye düşünmüştük ve bunun gibi belirli bir konstant işlemin altında olduğumuzu...
+
+12
+00:05:59,156 --> 00:06:16,235
+Garanti dediğimizde constant time'da bulabiliriz medyanı demiştik. Onunla alakalı eklemelerin bu arada olması gerektiğini söylemiştik. Belki bir sort yaparak ya da farklı bir yöntemle bunu yapıp algoritmaya uygun dönüşleri sağlayacak şekilde bu eklemeleri yapmamız gerekiyor demiştik.
+
+13
+00:06:18,076 --> 00:06:26,336
+Şimdi burada analiz ederken nasıl, kaç elemanla ilgilenmemiz gerektiğini.
+
+14
+00:06:27,124 --> 00:06:40,444
+Aslında konuşmamız gerekiyordu. Dolayısıyla aslında iki parçaya ayırdığımızda bu parçalarda olabilecek maksimum eleman sayısının ne olduğu üzerinden yola çıkmıştık.
+
+15
+00:06:41,139 --> 00:07:00,339
+Ve şöyle bir açıklama yapmıştım sizlere. Burada kolonlar vardı. Her birinde beşer eleman olan. Medyanın medyanı olarak belirlediğimiz eleman burada x ise x'den büyük elemanların sayısını ve x'den küçük elemanların sayısını çıkartmak için şöyle bir eşitlikten faydalanmıştık.
+
+16
+00:07:05,908 --> 00:07:28,408
+Ya bir taraflı ya bir taraflı ilgileniyor. Hem A tarafıyla hem B tarafıyla ilgilenmiyor. Dolayısıyla bir parçayı diskart edeceğiz. Diskart edeceğimiz parçanın en fazla olduğu opsiyonu düşünerek Recurrence Relation'ımızı yazmalıyız. Dolayısıyla bu da bizi 7N bölü 10 artı 6'ya getirmişti. Medyanların medyanını bulmak için de.
+
+17
+00:07:28,800 --> 00:07:51,480
+T5'e böldüğümüz için bu n bölü 5 kadar kolon içerdiğinden, burada da rekör aranızı çalıştırdığımızda bize tn bölü 5'lik bir işlem karmaşıklığı getirecekti. Bir de o enlik bir arttırmamız vardı. Burada işte partitionları ayırmak. Normalde şurada her bir kolonda 5 eleman var.
+
+18
+00:07:53,983 --> 00:08:09,504
+Sıralamamız gerekiyordu biliyorsunuz algoritma içerisinde. Ama burada her bir sıralama aslında O1'de yapılabiliyor demiştik. 5'e indirmemizin bize getirdiği avantajı oydu. Ama sonuçta M bölü 5'li adak olmama. Dolayısıyla M bölü 5'lik bir işlem var orada.
+
+19
+00:08:11,764 --> 00:08:19,364
+Bunlar ama hepsi, biliyorsunuz notasyon olarak baktığımız vakit n'e gelecek denk geliyordu.
+
+20
+00:08:19,364 --> 00:08:22,364
+Dolayısıyla böyle bir Recurrence Relation yazmıştık.
+
+21
+00:08:22,364 --> 00:08:30,564
+Şimdi bu Relation üzerinden, Master Teorimi çalıştırmak istediğimizde bunu başaramıyoruz.
+
+22
+00:08:31,124 --> 00:08:43,264
+Recursion Tree ile de işler çok zor oluyor. Master Teorem ile de olmuyor. Çünkü Master Teoremin de bize şart olarak böldüğü vakit sap problemlerde eşitlik arz etmesi gerekiyor.
+
+23
+00:08:47,508 --> 00:09:06,268
+O zaman Mathematical Induction kullanıyoruz. Mathematical Induction aslında tüme varımıyla çalışıyor. Yani elimizde küçük bir problem varken tüme varımla bir kanıtlama yapmaya çalışıyoruz. İlk başta tespit etmek istediğimiz karmaşıklıkla alakalı bir tahminde bulunuyoruz.
+
+24
+00:09:06,644 --> 00:09:30,644
+Matematical Induction'ın aslında zor tarafı bu. Önce bir tahminde bulunmanız gerekiyor. Sonra da bu tahminin doğruluğunu ispat etmeniz gerekiyor. Bazı assumption'lar yaparak. Eğer sizin elinizde bir relation varsa, bunun n'in farklı değerleri için neye bağlıysa tabii ki burada n değişebilir. Yani illa eleman stres olmak zorunda değil. Neye bağlıysa.
+
+25
+00:09:31,316 --> 00:09:49,076
+1, 2, 3, n-1. Tüm bunlar için tahmininizin doğru olduğunu kabul edip, n için doğruluğunu ispatlamanız gerekiyor. Şimdi ben bir size örnek yapacağım. O zaman zaten oturacak kafamızda bir şeyler. Şimdi bunun için de bir paylaşma durdurayım.
+
+26
+00:09:55,860 --> 00:09:57,139
+Çünkü
+
+27
+00:10:00,460 --> 00:10:01,740
+Niye durdurdum?
+
+28
+00:10:05,875 --> 00:10:14,316
+Şunun için durdurdum. Yeni oyuncuya mı size inşallah? Burada bir şeyler anlatmaya çalışacağım. Bakalım deneyeceğim.
+
+29
+00:10:19,220 --> 00:10:21,220
+Görüyorsunuz değil mi arkadaşlar?
+
+30
+00:10:22,720 --> 00:10:24,500
+Terslik varsa söyleyebilirsiniz.
+
+31
+00:10:33,203 --> 00:10:39,023
+İşleyeceğimiz konu Substitution Method That Uses Mathematical Induction.
+
+32
+00:11:00,436 --> 00:11:02,436
+Siz de böylece not alırsınız.
+
+33
+00:11:09,043 --> 00:11:18,963
+Bu yöntemi konuşacağız. Basit bir örnekle başlayacağız. Sonra şeyle devam edeceğiz. Medyen bulmayla alakalı örneğimizi çözerek devam edeceğiz.
+
+34
+00:11:19,723 --> 00:11:27,144
+Şimdi ne yapıyoruz? Birinci adımda bir tahminde bulunuyoruz. Bu önemli bir adım.
+
+35
+00:11:28,043 --> 00:11:34,983
+Bunun doğru olduğunu kabul edeceğiz işlemlerimizde. İkinci adımımızda da, ikinci adımımızda da
+
+36
+00:11:42,899 --> 00:11:44,899
+Bu statementı
+
+37
+00:11:53,556 --> 00:11:57,796
+El için doğru olduğunu kanıtlayacağız.
+
+38
+00:12:02,004 --> 00:12:04,064
+Bunu bir assumption altında yapıyoruz.
+
+39
+00:12:12,244 --> 00:12:23,364
+Birden küçük değerler için. Şimdi şöyle bir örnekle başlayalım. Şöyle bir Recurrence Lation'ım olsun.
+
+40
+00:12:31,731 --> 00:12:35,412
+Bu aslında tanıdık gelebilir size. Merge Sort'un Recurrence Relation'a.
+
+41
+00:12:36,951 --> 00:12:40,892
+Bir başlangıç değeri var bunun. Çözmüştük hatırlarsanız.
+
+42
+00:12:41,471 --> 00:12:43,511
+Enin birden büyük olduğu değerler için çalışıyor.
+
+43
+00:12:43,951 --> 00:12:53,932
+Şimdi bir baktığınız vakit bunun için önce Matematical Induction'da çözebilmek için ki bu master teoremle çözmeye çok uygun ama basit bir örnek olduğu için bunun üzerinden anlatımlar yapılıyor genelde.
+
+44
+00:12:54,011 --> 00:12:58,132
+Matematical Induction'da bunu çözebilmek için bir tahminde bulunmanız gerekiyor demiştim.
+
+45
+00:12:59,091 --> 00:13:00,271
+Tahminimiz şu.
+
+46
+00:13:06,004 --> 00:13:20,263
+Nlogan olduğunu tahmin ediyorum. Burada ikiye bölmeyle giden bir işlem var. O yüzden diyorum ki TN Nlogan olabilir. Dolayısıyla neyi tahmin etmek zorundayım?
+
+47
+00:13:29,364 --> 00:13:29,764
+Pardon.
+
+48
+00:13:47,923 --> 00:14:08,744
+C-N-Logen. Şimdi eğer biliyorsunuz Big O Notation'da definitionları vermiştik ilk haftalarda. Belirli bir kat sayıyla çarptığımız vakit C-N-Logen, bunun T-N'den büyük olması durumunda T-N'in ilgili sınıfa ait olduğunu söylemiş oluyorduk.
+
+49
+00:14:09,124 --> 00:14:13,484
+Bunu prove etmeye çalışıyoruz. Peki bunu prove ederken ki assumption'ımız ne?
+
+50
+00:14:19,827 --> 00:14:32,988
+Tm küçük eşit cm logem hangi m'ler için? m'in n'den küçük olduğu durumlar için. Bunu ezüm ederek bu kuruğu yapmaya çalışacağız.
+
+51
+00:14:32,988 --> 00:14:36,988
+Şimdi şuradan.
+
+52
+00:14:43,668 --> 00:14:45,668
+Yeni bir slide ile devam edelim.
+
+53
+00:15:05,875 --> 00:15:09,735
+Arkadaşlar, şeyde bir sümrün yaşamın topu gülüm. İlk günüm olduğu için.
+
+54
+00:15:11,775 --> 00:15:12,575
+Ekleme.
+
+55
+00:15:57,683 --> 00:15:59,683
+Şimdi tekrar parla içine.
+
+56
+00:16:06,067 --> 00:16:08,548
+Çok özür dilerim tekrar atsaklık için.
+
+57
+00:16:18,451 --> 00:16:21,732
+Doğru yeri görüyorsunuz değil mi? Bir aksilik varsa söyleyin lütfen.
+
+58
+00:16:26,899 --> 00:16:38,039
+Şimdi arkadaşlar bu şey yaparken, induction ile yaparken bu işi öncelikle Recurrence Relation'ı yazarak başlıyorum.
+
+59
+00:16:39,039 --> 00:16:40,440
+Recurrence Relation'ım şuydu.
+
+60
+00:16:41,360 --> 00:16:43,960
+2T, N bölü 2, Aten.
+
+61
+00:16:45,700 --> 00:16:48,639
+Şimdi bunu ben, Recurrence Relation'ım bu.
+
+62
+00:16:49,779 --> 00:16:52,120
+Prove etmek istediğim şeyi yanına yazayım.
+
+63
+00:16:52,120 --> 00:16:53,899
+Prove etmek istediğim şey şu.
+
+64
+00:16:54,419 --> 00:17:02,179
+cnlogenden küçük olması. Bunu prove ederken de esiyom ettiğim şey neydi?
+
+65
+00:17:06,740 --> 00:17:13,940
+T'nin herhangi bir n'den küçük m değeri için aynı şekilde bu eşitsizliği sağlaması gerekiyor.
+
+66
+00:17:13,940 --> 00:17:21,779
+Burada ben m'in n bölü 2 olduğunu düşünerek şöyle bir eşitsizlik yazabilirim.
+
+67
+00:17:27,731 --> 00:17:32,192
+Burada M, N bölü 2 oldu. Bir önceki sayfadaki M, burada N bölü 2 oldu.
+
+68
+00:17:34,271 --> 00:17:49,711
+Şimdi şuradan devam edelim. Şuradaki kısımdan. Şuradaki bölüm yerine 2T, N bölü 2'deki aslında T'nin N bölü 2 kısmı yerine şuradaki eşitsizliğin sağ tarafını alacağım.
+
+69
+00:17:50,163 --> 00:17:53,043
+O yüzden buradaki eşitsizliğim şuna dönüşecek.
+
+70
+00:17:53,043 --> 00:18:03,764
+Tn eşittir yerine küçük eşit yapacağım artık. Çünkü Tn bölü 2 için şöyle bir ondan büyük olan bir ifadeyle sürdürüyor olacağım buradaki eşitsizliğimi.
+
+71
+00:18:03,764 --> 00:18:09,043
+O yüzden bunu eşittir yerine küçük eşit yapabilirim. Buradaki 2'yi aynen aldım.
+
+72
+00:18:09,043 --> 00:18:16,324
+Tn bölü 2 yerine şu ifade yazıyorum. Yani Cn bölü 2
+
+73
+00:18:16,723 --> 00:18:19,723
+Log n bölü 2 artı n diyorum.
+
+74
+00:18:22,043 --> 00:18:22,723
+Tamam, şimdi...
+
+75
+00:18:28,307 --> 00:18:31,508
+Buradaki ifade, sağ taraftaki ifade neye eşit olur?
+
+76
+00:18:33,907 --> 00:18:39,988
+Cn log n bölü 2 artı n'e eşit olur. Buradaki ikiler birbirine götürdüğü için.
+
+77
+00:18:40,708 --> 00:18:49,668
+Bu ifade neye eşit olur? Cn parantez içerisine alırsam log n eksi log 2'ye eşit olur artı n.
+
+78
+00:18:50,788 --> 00:18:54,988
+Şimdi şununla ilgili bir logaritmik biliyorsunuz.
+
+79
+00:18:55,988 --> 00:19:17,367
+Formülüm var. Simpliçti için bunu kullanabilirim. Log a eksi log b'ye eşitti. Aynı zamanda log 2 tabanında ikinin de 1 olduğunu biliyorum. Dolayısıyla buradan yola çıkarak diyebilirim ki cn login eksi 1 artı n.
+
+80
+00:19:23,380 --> 00:19:24,960
+Şurada da şöyle bir şey yapalım.
+
+81
+00:19:25,620 --> 00:19:31,380
+Cnlogan-n parantezinde c...
+
+82
+00:19:40,756 --> 00:19:42,056
+Pardon, ne oldu öyle ya?
+
+83
+00:19:43,896 --> 00:19:45,135
+Gündenbire uçtu her şey.
+
+84
+00:20:10,163 --> 00:20:12,163
+Hala görüyor musunuz arkadaşlar ekranı?
+
+85
+00:20:12,163 --> 00:20:14,163
+Yok hocam, 30 saniyedir yok.
+
+86
+00:20:14,163 --> 00:20:21,163
+Gittim ekran paylaşımı. Tamam, pardon. Tekrar alayım sizin için.
+
+87
+00:20:27,059 --> 00:20:28,159
+Tamam geldi şimdi.
+
+88
+00:20:39,380 --> 00:21:01,500
+Tamam. Şimdi arkadaşlar, burada ne yapmıştık? Cn parantezinde log n-1 artı n ifadesini açarak yazdık. Önce cn log n-i cn artı n'e dönüştürdük. Bu da eşittir.
+
+89
+00:21:05,715 --> 00:21:07,715
+En parantezinde c-1.
+
+90
+00:21:09,715 --> 00:21:12,915
+Şimdi, elimde böyle bir ifade var benim.
+
+91
+00:21:13,755 --> 00:21:16,255
+İspatlamaya çalıştığım şey neydi aslında?
+
+92
+00:21:16,975 --> 00:21:18,895
+Bakın, ispatlamaya çalıştığım şey şuydu.
+
+93
+00:21:19,835 --> 00:21:29,955
+Benim şu an elimdeki ifade t'nin, şu ifade t'nin küçük eşit.
+
+94
+00:21:30,271 --> 00:21:36,811
+cnlogan eksi n c eksi bir oluşu. Peki.
+
+95
+00:21:43,188 --> 00:21:51,847
+Burada bir eksi işaret olduğu için, kuruğu yaptığımı görüyorum. Çünkü ben zaten şunu kuruğu etmek istiyorum.
+
+96
+00:21:51,847 --> 00:21:58,847
+T'nin şu ifadeden herhangi bir n c-1 çıkartıldığında,
+
+97
+00:21:59,215 --> 00:22:13,036
+Vereceği sonuç hala tn'den büyük olacaktır. Dolayısıyla burada eksi işareti olması benim için proof anlamına geliyor. Neyi biliyorum çünkü? E'nin ve c'nin pozitif sayılar olduğunu biliyorum. Burası negatif bir şeye doğru evrilemeyeceği için proof etmiş oldum.
+
+98
+00:22:13,795 --> 00:22:19,576
+Peki bu proofdan sonra benim notasyonum neye dönüşüyor? Şuna dönüşüyor.
+
+99
+00:22:45,491 --> 00:22:48,371
+Neye dönüştü? Notasyonum şuna dönüştü.
+
+100
+00:22:51,411 --> 00:22:59,612
+Değerli, küçük eşit, c, lo gelmiş. Bunu anladım. Nasıl yazıyordum ben bunu? Definition gereği.
+
+101
+00:22:59,612 --> 00:23:12,071
+n'in n sıfırdan büyük olduğu, asintotik notation'a göre n'in n sıfırdan büyük olduğu değerler için bunun çalıştığını ispatlamam gerekiyordu. Peki n sıfır bu durumda ne olmalı?
+
+102
+00:23:12,884 --> 00:23:28,603
+Şimdi n0'a 0 versem n0'a 0 veremiyorum. Pozitif bir şey olması gerekiyor. N0'a 1 versem olur mu mesela? N0'a 1 versem t1'in değeri küçük eşit 0 olacak. Burada logende log 1 0'a döndüğü için.
+
+103
+00:23:41,332 --> 00:23:55,832
+1 desem 1 olduğu durum için yine sıkıntı yaşayacağım. Peki en büyük eşit 2 desem o zaman olur mu? Bakalım. Örneğin n'e 2 verelim. n'e 2 verirsem t2 ne olacak?
+
+104
+00:24:08,852 --> 00:24:35,472
+1 olduğu için. Peki, 3 versem denesem olur mu diyorum. Bu da 2, T1, artı 3, 5 verecek. Sorun yaşıyor muyum? Yaşamıyorum. Peki, bu kısıtları sağlayacak C ne olabilir? Diye bakacağım. Ona bakalım şimdi bu kısıtları sağlayacak C olabilir. Bir de C kastayım var biliyorsunuz. Mesela C1 olur mu?
+
+105
+00:24:36,660 --> 00:25:03,860
+Bakalım. Enin 2 olduğu durum için eşitliğimizi yazalım. T2 küçük eşit. C'ye 1 verirsem 1 çarpı ene 2 verirsem 2 log 2. Şimdi burası T2 4. Bu zaten 1. Ne oldu? 4 küçük eşit 2. Oldu mu? Olmadı. Demek ki C'nin 1 olması beni kurtarmıyor. Peki C2 olur mu?
+
+106
+00:25:05,779 --> 00:25:08,700
+O zaman yazıyorum yine enin 2 olduğu durum için.
+
+107
+00:25:10,579 --> 00:25:16,220
+S2 küçük eşit 2 çarpı 2 log 2.
+
+108
+00:25:18,619 --> 00:25:19,899
+Burası 4.
+
+109
+00:25:21,779 --> 00:25:30,259
+Burası da 1 olduğu için 2 çarpı 2'den burası da 4 oldu mu? Evet oldu.
+
+110
+00:25:31,139 --> 00:25:32,139
+5 için.
+
+111
+00:25:33,428 --> 00:25:43,828
+Yani t'nin en 3 içinde denesem yine olacak. Dolayısıyla o zaman ben diyebilirim ki şu eşitlikte c'me 2 verebilirim örneğin.
+
+112
+00:25:45,628 --> 00:25:50,828
+n'in değerini de ilk değerinin de 2'den büyük olduğunu söyleyebilirim.
+
+113
+00:25:50,828 --> 00:25:58,648
+O zaman benim recurrence relation'ım n sıfır, n sıfır da eşittir.
+
+114
+00:26:04,819 --> 00:26:05,799
+Büyük işit.
+
+115
+00:26:11,635 --> 00:26:18,635
+2 diyorum. Böyle olduğu zaman da zaten p'nin eşittir.
+
+116
+00:26:21,635 --> 00:26:28,635
+Bu daha kötü bir tahta kullanıcısı olduğumu şu an dijital olarak bir de kayıt altına almış oldum ama üstüne.
+
+117
+00:26:38,036 --> 00:26:46,056
+Bu eşitsizliğin tutarlılığını test etmiş oldum. O yüzden kesimin doğru olduğunu görmüş oldum.
+
+118
+00:26:46,655 --> 00:26:54,915
+Dolayısıyla mathematical induction ile merge sort'un karmaşıklığının enlogen olduğunu ispatlamış oldum.
+
+119
+00:26:55,915 --> 00:27:04,536
+Peki nasıl yanlışlar yapabilirim? Mesela tahminimi yanlış yapsaydım. O zaman nerede hata görecektim? Ona bakalım.
+
+120
+00:27:15,284 --> 00:27:17,284
+Var mı arkadaşlar? Soru varsa alabilirim.
+
+121
+00:27:25,107 --> 00:27:34,048
+Evet, şimdi. Başlayalım. Hah, [öğrenci] bir şey soruyormuş. Buyur [öğrenci], dinlendim.
+
+122
+00:27:34,208 --> 00:27:40,008
+Hocam, ikinci adımdan sonra bir fazlasını kanıtlamaya çalışmıyor muyduk? Sonra sanki ikiye bölüp...
+
+123
+00:27:40,008 --> 00:27:47,087
+[öğrenci], buyur, dinliyorum. Sesim gelmiyor ama. Sesin gelmiyor bana.
+
+124
+00:27:48,211 --> 00:27:52,152
+Bir dakika, bir dakika. [öğrenci] bir şey söylüyor musun şu an? Sesin kapalı.
+
+125
+00:27:52,692 --> 00:27:53,591
+Sesim geliyor mu şu an?
+
+126
+00:27:53,611 --> 00:27:54,451
+Şimdi geldi.
+
+127
+00:27:56,051 --> 00:28:04,731
+İkinci adımdan sonra en için bir fazlasını kanıtlamaya çalışmıyor muyduk? İkiye bölerek gittik de orası tam olmadı bende. Tekrar edebilir misiniz?
+
+128
+00:28:14,099 --> 00:28:32,200
+Şimdi burada bir eşitsizlik ortaya koyduğun zaman işin sonunda bunun emin diğer değerleri için de geçerli olduğunu zaten göstermiş oluyorsun. Benim bunu n'in n-1, n-2 gibi gitmiyor bu ikiye böyle böyle gittiği için buradaki eşitsizlik.
+
+129
+00:28:32,627 --> 00:28:46,627
+Dolayısıyla bir sonraki adımda ikiye bölme yaptığım için, emin en eksi iki olduğu değer için bu indakşını gösterdim ben. Sonunda elde ettiğin eşitsizlik de zaten neredeydi? Şurada.
+
+130
+00:28:47,188 --> 00:29:15,188
+Gösterdiğim vakit, enin hangi değerleri için? Burada range'in dışına çıkabilir bir durum var mı? Bu eşitsizlik zaten kendini gösteriyor. Mesela bir sonraki örnekle göstereceğim. Yanlış bir tahmin yaptığımız bir durum var. O zaman burada zaten senin enin diğer değerleri için, herhangi bir değeri içinde bu eşitsizliğin sağlanmadığını göstermiş olacaksın. Buradaki eşitsizlik sana gösteriyor oluyor. Neticede değişik en değerleri için sağlanıp sağlanmayacağını.
+
+131
+00:29:15,188 --> 00:29:31,368
+Şurada da deniyoruz ya, nerede o? İlk değeri için hangi değerden itibaren eşitsizliğin tuttuğunu deniyoruz. Her seferinde C için aynı şekilde geçerli C değerini ve N değerini buluyoruz. Dolayısıyla sağlamış oluyor.
+
+132
+00:29:35,539 --> 00:29:47,019
+Anlaşıldı mı? Tamamdır. İstersen bir tane daha örnek yapalım, olur mu? Sonra konuşalım. Olur. Belki o zaman biraz daha farklı düşünürsün. Şimdi...
+
+133
+00:29:51,892 --> 00:30:09,331
+Yanlış tahminde bulunsaydım, tahminden kastım, ilk başta bir kez yaptım ya, yanlış olsaydı ne olurdu mesela? O zaman nereye doğru gidecek değişiksizliğim? Benim Recurrence Relation'ım bu. Az önceki Recurrence Relation için tahmin ediyorum.
+
+134
+00:30:19,092 --> 00:30:39,492
+Yani tn eşittir, ondir. Ben bu recurrence relation'dan bunu anlıyorum. Tahminim budur deseydim. Ve bunun üzerinden tespit etmeye çalışsaydım ne olacaktı? O zaman devamı için yazmak, assumption'ım, devamı için kaydı almam gereken assumption'ım bu oluyordu. Tn'in cn'den küçük olduğu durum.
+
+135
+00:30:44,660 --> 00:31:10,900
+Dolayısıyla Recurrence Relation'ımda Şuradaki M'in yine n bölü 2 olduğu durum için Tn bölü 2 yerine cn bölü 2 gelecekti. Ve burası şuraya dönüşüyordu. 2 çarpı cn bölü 2 artı n. Bu neye dönüşüyordu? cn artı n. Peki benim?
+
+136
+00:31:13,940 --> 00:31:37,180
+O zaman, eşitsizliğim bu şekilde olacak. Şimdi burada bunun sağlanma ihtimali var mı? Bakın burada pozitif bir ifade var. Bunun sağlanma ihtimali ancak en negatif olduğu durumlar için olabilir. Dolayısıyla diyorum ki, en pozitif olduğu için bu mümkün değil. Demek ki ben kesimi yanlış yapmışım.
+
+137
+00:31:39,251 --> 00:31:58,811
+Anlatabiliyor muyum? Peki bu ifade n'in her değeri için geçerli olacak mı? Belirli bir sınırın üstündeki değerleri için? Evet, geçerli olacak. O yüzden bu, yani şu an tabii bunu söyleyemiyorum da elde edemedim zaten. Az önceki örneğin için konuşuyorum. O yüzden induction üzerinden bu ispatlamayı yapıyorum.
+
+138
+00:31:58,811 --> 00:32:00,612
+Şimdi
+
+139
+00:32:01,619 --> 00:32:11,740
+Yoksa soru Divayet & Conquer için bu işi nasıl yapmıştığımı çözelim isterseniz. Belki orada biraz daha oturur. Geçeyim ona var mı paylaşmak istediğiniz bir şey?
+
+140
+00:32:14,259 --> 00:32:15,919
+Yok, okey geçelim o zaman.
+
+141
+00:32:41,332 --> 00:32:43,148
+Evet, şimdi.
+
+142
+00:32:47,923 --> 00:33:03,923
+Problemimiz Divide and Concur ile Media Finding. Master Teorem kadar kullanışlı bir teorem olmuyor aslında. Kullanışlı demeyeyim de.
+
+143
+00:33:04,339 --> 00:33:17,799
+Hataya açık bir iş bu Mathematical Induction. Master Teorem kadar pratik değil. Ama onun ya da Recursion Theory ile bu işi çözemediğimiz durumlarda işimize yarıyor.
+
+144
+00:33:18,799 --> 00:33:20,619
+Şimdi bizim Recurrence Relation'ımız neydi?
+
+145
+00:33:23,359 --> 00:33:24,559
+TN için.
+
+146
+00:33:29,940 --> 00:33:55,720
+Biz sabit değer belirlemiştik hatırlarsanız. 120 olabilir, 150 olabilir, 140 olabilir bir şey belirlemiştik. Bundan küçük olan en durumları için şu if bu arada. Constant time'da bu işi çözebiliriz demiştik. Ama eğer daha farklı, daha fazla elemandan bahsediyorsak o zaman da dersin başında tekrar ettiğimiz relation.
+
+147
+00:33:56,819 --> 00:34:07,819
+bölü 10 artı 6 artı o n'den devreye giriyordu. Şimdi bunun üzerinden induction yapacağız. Bu da tabii n'in
+
+148
+00:34:10,963 --> 00:34:17,684
+Ters yapmışım. Büyük eşit olacaktı. Çok özür dilerim. Büyük olduğu durumlar için geç hali.
+
+149
+00:34:26,579 --> 00:34:27,039
+Şimdi.
+
+150
+00:34:31,539 --> 00:34:44,320
+Bizim tahminimiz ne? Bakalım. Tahminimiz şu. Diyoruz ki T'nin hedefimiz buydu zaten. O'en de bu işi yaptığını prove etmek istiyorum diyorum.
+
+151
+00:34:45,440 --> 00:34:52,000
+Yani aslında notasyonun üzerinden konuşursak T'nin C'nden küçük olduğu bir durum var diyeceğim.
+
+152
+00:35:00,659 --> 00:35:04,519
+T'nin en veli 5 değerinin
+
+153
+00:35:09,619 --> 00:35:19,800
+C çarpı n bölü 5 ve T'nin 7n bölü 6 değerinin de C çarpı
+
+154
+00:35:23,284 --> 00:35:26,604
+Küçük olduğu assumption'ları üzerinden bu işi yapıyor olacağım.
+
+155
+00:35:28,144 --> 00:35:33,264
+Şimdi iki parçalı bir relation var şu an karşımda. Hep tek parçalı relation'lar üzerinden çalışmıştık.
+
+156
+00:35:33,784 --> 00:35:38,124
+Bu iki parçalı relation'ların birleşimini aslında analiz ediyorum ama
+
+157
+00:35:38,320 --> 00:36:02,980
+İkisinin de ON'e uyması gerekiyor ki sonucum yine ON üzerin olabilsin. Dolayısıyla ikisi için de burada gördüğünüz yanına yazdığım C çarpı M bölü 5 ve C çarpı 7N bölü 10 artı 6'lı işlemlerin tutarlı olması gerekiyor. Bunun üzerinden assumption'ımı ispatlamam gerekiyor.
+
+158
+00:36:02,980 --> 00:36:04,980
+Dolayısıyla şöyle yazabilirim.
+
+159
+00:36:06,356 --> 00:36:08,012
+Diyebilirim ki...
+
+160
+00:36:21,780 --> 00:36:49,140
+Artı 7n bölü 10 artı 6 artı an. Şimdi burada bir sabitim var. T'leri uyguladım. Bir de sonundaki işlemim için uygulamam gereken bir sabitim var. Bunları birbirinden ayırıyorum. Çünkü bir tanesi sabit bir işlem. Bir tanesi Recurgeon olarak kendisi üzerinde devam ediyor. O yüzden bir an kat sayısı ile çarparak son kısmı induction'ıma ekledim.
+
+161
+00:36:50,835 --> 00:36:59,655
+Şimdi burada bu parantezleri açtığım vakit şu üstteki ifade şuna dönüşüyor.
+
+162
+00:36:59,655 --> 00:37:13,355
+C n bölü 5 artı. Hadi bakalım. Hatta veriyor bu sık sık yavru bizi başımıza ağrıtacak. Yine kapandı değil mi?
+
+163
+00:37:15,395 --> 00:37:16,095
+Evet hocam.
+
+164
+00:37:16,695 --> 00:37:16,955
+Tamam.
+
+165
+00:37:21,364 --> 00:37:23,364
+Anlatmanızı oluşan kusturarak ben ya.
+
+166
+00:37:30,452 --> 00:37:37,452
+Tamam, şimdi tekrar ekran paylaşımı yapayım sizlere. Beklediğim performansı alamadım yeni oyuncağımdan.
+
+167
+00:37:43,860 --> 00:37:45,380
+Mocer, mocer.
+
+168
+00:38:03,795 --> 00:38:12,615
+Şimdi dedim ki bu eşitsizlikte parantezleri açarak devam edeceğim dedim.
+
+169
+00:38:12,615 --> 00:38:24,876
+Cn bölü 5 artı 7cn bölü 10 artı 6c parantez açtığım için artı aynı olacak.
+
+170
+00:38:25,635 --> 00:38:26,755
+Bu neye eşit olacak?
+
+171
+00:38:28,596 --> 00:38:33,836
+9C yani bölü 10, artı 6C, artı A en eşit olacak.
+
+172
+00:38:34,935 --> 00:38:44,115
+Şimdi burada, hani az önceki slaytlarda bir tanesinde Merge Sort'u kanıtladığımız slaytta bir negatif.
+
+173
+00:38:44,659 --> 00:38:59,819
+Aslında tutarlı olduğunu kabul ettiğim ifadeden sonra bir çıkartma işlemiyle karşılaştığım vakit doğruluğunu kanıtlama için bana zemin hazırlamış oluyordu. Ama bir pozitif işlem varsa o zaman o biraz da detaylı düşünmem gerekiyordu.
+
+174
+00:39:03,775 --> 00:39:16,595
+Benzetmek istediğim, kuru etmek istediğim ifade C'yen olduğu için C'yen cinsinden bir başlangıçla şekillendirerek yazıyorum ki benim açımdan ispatlaması kolay olsun.
+
+175
+00:39:16,715 --> 00:39:19,935
+Göze görünürlük açısından. Dolayısıyla şu ifadeyi şöyle yazıyorum.
+
+176
+00:39:28,115 --> 00:39:38,556
+Şuradaki 9cn bölü 10'u cn artı eksi cn bölü 10 şeklinde yazdım. Buraya bir artı ifadesi koydum. Şimdi burayı eksiye çevirirsem ne olacak?
+
+177
+00:39:38,556 --> 00:39:52,755
+cn eksi cn bölü 10 eksi 6c eksi an olacak. Şimdi medyan tort için
+
+178
+00:39:53,460 --> 00:40:13,619
+Merge Sort için pardon. Kullandığım eşitliğe biraz benzer bir şey ortaya çıktı. Burada t'nin c'nden küçük olabilmesinin tek şartı aslına bakarsanız, şuradaki ifadenin şu c'n bölü 10-6c-a'nin sıfırdan büyük olması durumu. Böyle olduğu takdirde bu eşitsizlik sağlanacak.
+
+179
+00:40:18,960 --> 00:40:30,260
+İşlemlerimi devam ettirmem ve uygun C değerinin, N değerinin ne olduğunu bulmam gerekiyor. O yüzden şöyle devam edelim hemen.
+
+180
+00:40:34,099 --> 00:40:37,399
+Yine hatırlatıcı olarak üstte keşist dediği de başa yazılı.
+
+181
+00:40:48,947 --> 00:40:52,707
+Şimdi son ifadede ne yazmıştım son sayfada? Demiştim ki.
+
+182
+00:40:56,403 --> 00:41:18,123
+Benim ifadem Cn bölü 10-6c-a'nin 0'dan büyük olması gerekiyor. Dolayısıyla burada aslında Cn bölü 10'un 6c artı an'den büyük olması gerekiyor.
+
+183
+00:41:23,572 --> 00:41:44,192
+10a n'den büyük olması gerekiyor. Yani c'nin 60c bölü n artı 10a'dan büyük eşit olması gerekiyor. Şimdi bu noktada elimde böyle bir bilgi varken bana bunu sağlayacak.
+
+184
+00:41:44,755 --> 00:42:05,076
+Sınırlarını n'in çizmeliyim. Ve c için de yine a cinsinden bir sınır belirlemeliyim. Bu aslında biraz deneyerek de yapılabilecek bir şey. Şöyle bir sınır belirlersem örneğin 120 n'in 120'den büyük olduğu ve c'nin 20a'dan büyük olduğu durumlar için.
+
+185
+00:42:05,519 --> 00:42:13,960
+O zaman burası tam aslında burada eşitlik olduğunu düşünerek bu işlemde ilgili kat sayıları bulmak daha rahat olacaktır.
+
+186
+00:42:13,960 --> 00:42:32,739
+Diyelim ki öyle düşündüm. Ne olacak o zaman? C yerine 20A yazıyorum. 60 çarpı 20 çarpı A bölü 120 artı 10'a 20A büyük eşit.
+
+187
+00:42:33,300 --> 00:42:46,739
+Şimdi dolayısıyla burada bir eşitlik sağladım. Bu noktadan sonra C'nin 20'den büyük olduğu ve N'in 120'den büyük olduğu değerler için bu indakşının tuttuğumu hesaplamış oldum. Bu bana neyi gösteriyor aslında?
+
+188
+00:43:01,300 --> 00:43:22,119
+O1'de işlem yapılacak şekilde gerekli eklemeleri yapmalıyım. Onun için bir değer koymalıyım diye. İşte o değerin ne olması gerektiğini de burada görmüş oldum. Dolayısıyla bu şartlar sağlandığı vakit ilgili assumption'ın tuttuğunu görmüş oldum. Otomatik induction bu şekilde çalışıyor. Var mı soru arkadaşlar?
+
+189
+00:43:29,235 --> 00:43:31,235
+Aydın, size niye göremiyorum.
+
+190
+00:43:36,947 --> 00:43:45,188
+Şöyle. Şimdi ben bir sonraki derste bakayım nereden devam ediyordum.
+
+191
+00:43:45,188 --> 00:43:47,188
+Normalde şeye geçeceğim.
+
+192
+00:43:52,851 --> 00:44:11,152
+Hash fonksiyonlarına geçeceğim. Bunun için önce bir linkli listelerde ufak bir hatırlatma yapacağım size. Linkli listeler nasıl çalışıyor bir hatırlayacağız. Onun üzerinden hash fonksiyonlarda ispatlara vesaire bakmamız gerekecek çünkü. İsterseniz küçük bir ara verelim 10 dakika kadar. Tam 10 dakika ara verelim. 5 kala başlayalım olur mu?
+
+193
+00:44:13,311 --> 00:44:15,891
+Tamam. O zaman 10 dakika sonra görüşelim.
+
+194
+00:53:43,731 --> 00:54:04,051
+Merhaba tekrar arkadaşlar. Şimdi linkli listelere bir hatırlayalım. Zaten siz biliyorsunuz ama implementasyonunda belki hızlıca bir örnek üzerinden gitmek bilgileri oturtabilir iyice. Linkli listeler aslında dizilere benziyor bir açıdan. Bir takım aynı tipteki verilerin tutulmasını sağlıyordu ama
+
+195
+00:54:05,076 --> 00:54:10,836
+Burada birbiriyle nodlar yüzük içerisinde bu bilgiler tutuyordu. Link listelerin elemanları aslında nodlardı.
+
+196
+00:54:10,836 --> 00:54:18,355
+Ve bunlar birbirlerini point ediyorlardı. Bu da bizim silme, ekleme işlemlerimizi kolaylaştırma için oldukça önemli.
+
+197
+00:54:18,355 --> 00:54:24,195
+Bir de dinamik olarak listenin boyutunun artmasını, azalmasını kontrol etmemizi kolaylaştırıyordu.
+
+198
+00:54:24,195 --> 00:54:26,356
+First node burada önemliydi.
+
+199
+00:54:26,643 --> 00:54:37,583
+Ve her seferinde her not bir sonraki point etmek istediği noda ait adresi ilgili kendi fiyatında tutarak...
+
+200
+00:54:37,583 --> 00:55:00,204
+linkli listeleri oluşturmuş oluyorduk. Ve tabii ki başı bildiğimiz gibi sonu da bilmemiz gerekiyordu. Last node yani en son nodunda bir nal değeri point ettiğini düşünüyoruz. Daha doğrusu kabul ediyoruz. Böyle implement ediyoruz. Böyle implement ettiğimiz zaman da liste sonunu yakalamamız mümkün oluyor. Şimdi basit bir linkli liste görüntüsü var burada.
+
+201
+00:55:01,139 --> 00:55:19,340
+Dört tane nodu var. Her bir nod Next Field'ı ile diğer nod'a point etmiş oluyor. Bu tek taraflı bir linkli liste. Single link list. Dolayısıyla her nod bir sonraki nodu sadece gösteriyor. Arkaya doğru gitmek burada mümkün değil. Sürekli ilerlemek zorundasınız.
+
+202
+00:55:24,563 --> 00:55:33,603
+Nereye eklemek istiyorsanız bunu belki bir sıra üzerinden yapıyorsunuz. Aslında yaptığınız şey yeni nodu. Birincisi create etmeniz gerekiyordu.
+
+203
+00:55:33,603 --> 00:55:48,323
+Ve bu nodun öncesindeki ve sonrasındaki elemanların adresleri üzerinde işlem yapmanız gerekiyordu. Yeni nodun adresini önceki elemanın next gözüne point edecek şekilde, next gözü point edecek şekilde buraya atmanız.
+
+204
+00:55:52,563 --> 00:56:01,243
+Önceden A'nın gösterdiği not olması gerekiyordu. Bu şekilde düzenlemeleri yaparak not eklemek mümkündü.
+
+205
+00:56:03,243 --> 00:56:09,963
+Silmek için ise aradan diyelim ki X notunu silmek istiyorsunuz. A ve B link listelerinde yine single link liste konusuyken.
+
+206
+00:56:09,963 --> 00:56:12,423
+O zaman aslında temel olarak yapılan şey.
+
+207
+00:56:12,768 --> 00:56:24,048
+A'nın gösterdiği adresin B'yi göstermesini sağlamak X yerine. Bu durumda X'i devreden çıkartıp linkli listedeki izlem sırasını şu hale getirmiş oluyorsunuz.
+
+208
+00:56:24,048 --> 00:56:34,008
+A'dan B'ye direkt geçer hale getirmiş oluyorsunuz. Şimdi mesela Tingle bir link listesi ile nasıl implement ediyorduk? Biraz pointer'ları hatırlamış olalım.
+
+209
+00:56:37,523 --> 00:56:44,083
+daha doğrusu kendi tipinde içerisinde bir pointer verisi tutan bir not tanımlamamız gerekiyor.
+
+210
+00:56:44,683 --> 00:56:53,703
+Burada tabii ki yanında gelecek olan bilgilerin büyüklüğüne göre burası gelişecek ama tek bir değer ve bir de pointer tutan basit bir linkli liste notu bu.
+
+211
+00:56:53,703 --> 00:57:01,703
+Bu tanımlamayı yaptıktan sonra örneğin listenin sonuna eğer bir not eklemek istiyorsanız yazacağınız fonksiyon böyle görünecekti.
+
+212
+00:57:02,431 --> 00:57:15,791
+İmput olarak eklemek istediğiniz değeri almanız gerekiyor. Bir de tabii ki hedi almanız gerekiyor ki bu hedi üzerinden hareket edeceksiniz.
+
+213
+00:57:16,692 --> 00:57:34,272
+Biliyorsunuz pointer'larla işlem yaparken bunu parametre olarak aktardığımız vakit, eğer main fonksiyonda da bunun değişmemesine ilgili etikap etmek istemiyorsanız, bir current diyelim ki ismi burada current olmuş. Yedek bir pointer üzerinden bu linkli listelerde.
+
+214
+00:57:36,115 --> 00:57:47,596
+Takibi devam ettirmeniz gerekiyordu. O yüzden burada yeni bir değişken tanımlanmış Notepoint'ın tipinde. Her seferinde sonuna ulaştığımızı, ulaşıp ulaşmadığımızı kontrol ediyoruz.
+
+215
+00:57:56,211 --> 00:58:10,711
+Nodumuzu ekleyebiliriz. Bu yüzden bir yer açıyoruz. Açtığımız yerin adresi şu an eklediğim nodun Next'ine atanıyor. Böylece onu göstermiş oluyoruz. Değerimizi atıyoruz. Burada şu zaten yeni eklediğim nodun.
+
+216
+00:58:11,411 --> 00:58:25,132
+Yeni gösteren ifade. Bunun var kısmına vale atıyorum. Sonra da next'ine de nala atıyorum. Böylece listenin sonunu değiştirmiş oldum. Yeni eklediğim nodu listenin sonuna konuşlandırdım.
+
+217
+00:58:27,511 --> 00:58:36,132
+Eğer başına bir şey ekleyeceksem, örneğin nasıl bir kod kullanmalıyım. Yine burada yeni bir...
+
+218
+00:58:36,527 --> 00:58:46,527
+Yeni nod oluşturdum. Bu yeni nodum için yer açtım. Yeni nodumun buradaki push-head fonksiyonuna önceden gelen head'i
+
+219
+00:58:46,688 --> 00:58:50,648
+Aslında göstermesi gerekiyor. Artık siz burada head'i değiştiriyorsunuz çünkü.
+
+220
+00:58:51,368 --> 00:58:53,368
+Ve eklemek istediğiniz değeri de eklediniz.
+
+221
+00:58:53,368 --> 00:59:05,468
+Şimdi bu mesela böyle bir fonksiyon kullanıyorsanız artık sizin head'iniz değiştiği için ve diğer fonksiyonlara bu head üzerinden ulaşılacağı için yeni oluşturduğunuz head'inizi de return etmeniz gerekiyor.
+
+222
+00:59:05,568 --> 00:59:08,468
+Böyle bir tasarımla bunu yapabilirsiniz. Tabii farklı yollara da olabilir.
+
+223
+00:59:09,508 --> 00:59:13,428
+Biz denemek istiyorsanız ne yapıyorsunuz? Sıra ile gezmeniz gerekiyor nodları.
+
+224
+00:59:14,612 --> 00:59:32,112
+Dolayısıyla yine hedi alıyorsunuz. Gezmek için kullanacağınız değişkeninizi tanımlıyorsunuz. Ve sona gelip gelmediğinize bakıp her seferinde bu aynı zamanda hem aslında search için de benzer bir şey kullanıyoruz. Değeri de yazıyor ekrana.
+
+225
+00:59:32,112 --> 00:59:41,271
+Ve bir sonraki node'a geçmek için de şöyle bir implementasyonum var. Bu şekilde tek tek yazıp listelemiş oluyorum.
+
+226
+00:59:41,907 --> 00:59:59,948
+Peki silmek için ne yapıyorum? Silmek için aslında silmek istediğim elemanın değerini alıyorum ve tabi ki hedi alıyorum yine. Burada silme işleminde hangi sayı yani değerin datanın ne olacağı bana bilgi olarak.
+
+227
+01:00:00,000 --> 01:00:08,840
+Adres olarak hangi adreseteki nodu sileceğim bilgisi gelmiyor. Dolayısıyla ilgili veriyi bulmak için dönmek ve sürekli aramak zorundayım.
+
+228
+01:00:08,840 --> 01:00:21,220
+Listenin sonuna gelene kadar ya da bulunduğum notun değerinin aradığım değer olup olmadığını kontrol edeceğim. Farklı olduğu sürece dönüyorum. Her seferinde bir sonraki elemana geçiyorum.
+
+229
+01:00:26,228 --> 01:00:53,528
+Bir önceki nodun değerini de, adresini de tutmak zorundayım. Çünkü ikisini birbirine bağlayacağım. Eğer silmek istediğim elemanı bulabildiysem, bu elemanın bir önceki, bu elemandan bir önceki nodun gösterdiği adresi, bu elemanın gösterdiği adrese dönüştürüyorum. Böylece siliyorum. Silerken memoriden silebilirsiniz ya da kalmasını istiyorsanız farklı bir frek atayabilirsiniz. Bu şekilde silme işlemini yapıyorduk.
+
+230
+01:00:53,972 --> 01:01:15,112
+Bunları kısaca bir hatırladık. Double Link List, bunu implementa etmeye yar vermeyeceğim ama siz bakarsınız belki de zaten implementa etmişsinizdir. Double olan da çift taraflı bir bağ söz konusu. Yani her not hem öncekine hem sonraki nota referans veriyor. Bu bize hareket kolaylığı sağlıyor.
+
+231
+01:01:16,052 --> 01:01:19,452
+Bazı işlemleri daha rahat yapmamızı, daha hızlı yapmamızı sağlıyor.
+
+232
+01:01:20,332 --> 01:01:23,192
+Silme işlemini örneğin, bu durumda nasıl yapıyoruz?
+
+233
+01:01:23,852 --> 01:01:36,211
+Silme işlemini yaparken, bu aradaki nodu örneğin çıkartırken, önceki versiyonda, single link liste, bir önceki ve bir sonraki nod bağlantısında kurmak aslında tek bir işlemle mümkün oluyordu.
+
+234
+01:01:41,492 --> 01:02:00,812
+Önceki Not Old Note Preview'un Next kısmının, şu an sildiğiniz notun Next kısmına point etmesini sağlamalı. Bir de tam ters işlemini de sağlamalısınız. İki bağlantıyı birden güncellemeniz gerekiyor. Ondan sonra da Old Note'u zaten silebiliyorsunuz.
+
+235
+01:02:02,492 --> 01:02:07,812
+Eklemeyi nasıl yapıyorsunuz? Yine aynı şekilde yeni bir not create ediyorsunuz.
+
+236
+01:02:08,820 --> 01:02:18,100
+Yeni nodun bir önceki nodu gösteren adresine mevcut olanı koyuyorsunuz.
+
+237
+01:02:18,100 --> 01:02:24,100
+Sonrakini gösteren adresine aslında mevcutun gösterdiği nodu koyuyorsunuz.
+
+238
+01:02:25,380 --> 01:02:33,579
+Sonrasında da bu bağlantıları kurduktan sonra aynı zamanda şeyi de yapmanız gerekiyor.
+
+239
+01:02:35,284 --> 01:02:43,284
+Ve sonrakini de yine güncellemeniz gerekiyor. Bu şekilde işlemleri tamamladık.
+
+240
+01:02:43,284 --> 01:02:55,284
+Şimdi hash fonksiyonlarda bu linkli listeleri kullandığımız bir modül var. Daha doğrusu bir çeşit var. O yüzden bunu özellikle anlatmak istemiştim size.
+
+241
+01:02:55,284 --> 01:02:59,084
+Şimdi dictionary tanımı ile başlayalım.
+
+242
+01:02:59,635 --> 01:03:06,776
+diye bir ifade var biliyorsunuz. Elemanları üzerinde işte search, insert, delete işlemlerinin de tanımlı olduğu bir set aslında bu.
+
+243
+01:03:08,215 --> 01:03:14,135
+Bu kümenin elemanları, sayılar, karakterler, linkler vesaire olabilir.
+
+244
+01:03:15,456 --> 01:03:20,856
+İşte pek çok dilde bu bir data type olarak karşımıza çıkıyor. İşte Java'da, Parti'nde var.
+
+245
+01:03:22,675 --> 01:03:23,215
+Bunların
+
+246
+01:03:24,307 --> 01:03:29,268
+Dikişin nereler üzerinde işlem yapabilmek için aslında iş fonksiyonları oldukça kullanışlı.
+
+247
+01:03:30,887 --> 01:03:39,887
+Şimdi bizim eğer bir rekordumuz varsa tipik bir kayıtta ilgili varlığın belirli bir özelliğini tutmaktan sonra mu fiyatlar var biliyorsunuz.
+
+248
+01:03:39,947 --> 01:03:43,608
+Örneğin işte bir öğrenci için öğrencinin numarası gibi.
+
+249
+01:03:51,507 --> 01:03:59,087
+Rekordların fiyatları arasında en az bir tanesi ilgili varlığı ayırt etmek için kullanılıyor. Yani bir key değerimiz var.
+
+250
+01:04:01,107 --> 01:04:11,087
+Şimdi eğer biz en tane rekordtan oluşan bir sözlüklük işleri implemente edeceksek, bunların key'lerinin örneğin K1, K2, K3 olduğunu...
+
+251
+01:04:11,956 --> 01:04:20,956
+Bu bilgileri rahat ulaşabilmek için bir hash table'da tutmak mümkün oluyor.
+
+252
+01:04:20,956 --> 01:04:32,460
+Şimdi bu keylerin, hashing aslında bu keylerin bir boyutlu bir diziye dağıtılması fikrine dayanıyor biliyorsunuz.
+
+253
+01:04:33,108 --> 01:04:56,868
+Bu dağılım her key için önceden tanımlanmış bir hash fonksiyonu denen bir fonksiyonun sonucunun hesaplanması ile mümkün ve bu hash fonksiyonu da key'e 0 ile m-1 aralığında bir integer atıyor. Bu aslında aynı zamanda tablonun boyutunu da gösteriyor. Biz bunu hash adres diyoruz.
+
+254
+01:05:03,251 --> 01:05:30,872
+Insert, Search, Delayed gibi Dictionary Operation'larını destekleyen bir dinamik seti aslında ihtiyaç duyan pek çok uygulama var. Örneğin, compiler'larda sembol tabloları, bazı yerde hash table'lar ile implement ediliyor. Çünkü hızlı bir şekilde bununla, bu sembol ile alakalı veriye ulaşması gerekiyor compiler'ın. Bu bir kullanım örneği. Farklı hash table'ların, işte kriptolojide de örneğin çok kullanımı mümkün.
+
+255
+01:05:31,251 --> 01:05:34,432
+Buna üzerinde örnekler de önümüzdeki haftalarda vermek istiyorum size.
+
+256
+01:05:39,012 --> 01:05:49,372
+Şimdi normalde bir hashtag bu üzerinde arama yapmak kötü durum senaryosunda aslında.
+
+257
+01:05:49,372 --> 01:05:53,372
+O ayına doğru dönebiliyor. Bunları göreceğiz ama normalde bizim...
+
+258
+01:05:54,159 --> 01:06:02,799
+Standart istediğimiz durumlarda O1 üzerinden bu işlemler yani constant time'da bu işlemleri bize yapma fırsatı sunuyor.
+
+259
+01:06:07,027 --> 01:06:14,627
+Genel olarak, hash tablo tipik olarak gerçekte depolanan anahtarların sayısı ile orantılı boyutta bir dizi kullanır.
+
+260
+01:06:16,967 --> 01:06:29,947
+Dolayısıyla bu anahtarların sayısı olası anahtarın toplam sayısına göre küçük olduğundan hash tablolar bu diziyi doğrudan adreslemek yerine güzel alternatif çözüm olarak karşımıza geliyor.
+
+261
+01:06:31,147 --> 01:06:32,687
+Şimdi direkt adresleme.
+
+262
+01:06:33,844 --> 01:06:49,824
+İle başlayalım önce. Aslında bunun ilk versiyonu gibi. Direkt adresleme nasıl çalışıyor? Benim bir evrenim var. Bunun içerisinde key'leri kullanarak adresleme yapıyorum.
+
+263
+01:06:59,476 --> 01:07:09,636
+M'in çok büyük olmadığı sayılardan oluşuyorsa, o zaman iki tane elemanın da aynı ikiye sahip olmadığını düşünüyorsam,
+
+264
+01:07:09,936 --> 01:07:16,656
+dairekte adresleme yapabiliyorum. İmplementasyonu kolay bir şekilde bana constant time'da ulaşma şansı sağlıyor.
+
+265
+01:07:17,836 --> 01:07:26,656
+Örneğin burada T dizisi ne görüyorsunuz? Bu benim dairekt tablom. Bunun elemanları aslında koyutturlar.
+
+266
+01:07:27,476 --> 01:07:33,795
+Mesela burada ikinci elemanı beraberinde bir ek verinin olduğu bir yapıya işaret ediyor.
+
+267
+01:07:34,456 --> 01:07:40,556
+Buradaki K evrenin içerisinde kullandığınız key'ler belli.
+
+268
+01:07:41,076 --> 01:07:46,775
+İki key'i örneğin ikinci elemanına gidiyor ve bu da size buradaki bilgiye ulaşma imkanı sağlıyor.
+
+269
+01:07:46,775 --> 01:07:52,655
+Üçü kullanırsanız tek O1'de hop gidiyorsunuz. Üç ile alakalı bilgiyi kullanıyorsunuz gibi.
+
+270
+01:07:56,692 --> 01:08:01,351
+Dolayısıyla Search, Insert and Delayed işlemleriyle alakalı ne yapıyoruz?
+
+271
+01:08:01,791 --> 01:08:26,291
+Bunları nasıl bir karmaşıklıkta yapıyoruz? Hepsinin o bir karmaşıklığında yapma şansımız var. Çünkü direkt key'nin üzerinden return tk dediğimiz zaman direkt olarak adres erişim imkanımız var. Insert etmek istiyorsanız eğer table'a bir x değerine yine aynı şekilde direkt x'in key'si üzerinden bu insertion yapabiliyorsunuz. Yani x'in key'si örneğin 5'si.
+
+272
+01:08:26,868 --> 01:08:44,268
+X-Record'unu direkt bu adrese yerleştirebiliyorsunuz. Daha doğrusu X-Record'un adresini T5'e yerleştirmiş oluyorsunuz. Dilmek de aynı şekilde. Direkt bunun Alpoint'ıyla örneğin doldurabilirsiniz. Tüm bunların hepsi Constant Time'da gerçekleşmiş oluyor.
+
+273
+01:08:55,444 --> 01:09:00,944
+Diyelim ki bizim Direct Table'ın en uzunluğunda
+
+274
+01:09:03,315 --> 01:09:25,536
+Tanımlanmış bir S-Dynamic Setim var. Worst Case Senaryosu nedir bu sette? Bir elemanı bulmak istediğinizde worst case senaryosu ne olacaktır diye size sorduğum vakit, nasıl yaparsınız diye sorduğum vakit aslında ne yapıyorsunuz? Tüm diziyi taramanız gerekecek. Maksimum elemanını örneğin bulmak istiyorsanız tüm diziyi taramanız gerekecek.
+
+275
+01:09:28,212 --> 01:09:41,952
+Bu OEM'e kadar gidebiliyor. World Case Senderiosunda eğer bir finding yapıyorsanız tek tek bakmanız gerekiyor. Yani finding derken maksimum elemanı fayda etmek gibi bir prosedürden bahsediyorum.
+
+276
+01:09:49,716 --> 01:10:03,115
+Direct Addressing'in kötü tarafı ne? Eğer bizim kullandığımız tavlonun size uygun değilse,
+
+277
+01:10:03,264 --> 01:10:31,264
+Örneğin, çok fazla key varsa, çok büyükse ya da çok küçükse ikisi de bizim için problem çıkartıyor. Eğer keyleriniz çok büyükse table'nizin size çok büyümesi lazım. Keyleriniz çok küçükse arada bir sürü boş kullanılmayan memory kalacak. Dolayısıyla bunlar çok practical kullanımı mümkün hale geçirmiyor ama eğer keyleriniz birbirine yakın değerlerse ve belirli bir range'in altında olduklarından eminseniz o zaman tabii ki güzel olur. İmplementasyon da kolay olduğu için.
+
+278
+01:10:31,264 --> 01:10:41,984
+Ama büyük ve küçük olduğu durumlarda kullanışsız hale geliyor. Dolayısıyla hash fonksiyonu üzerinden bunu tabloya yerleştirme mantığı ortaya çıkmış.
+
+279
+01:10:45,011 --> 01:10:52,511
+Şimdi Direct Addressing'de ne yapıyorduk? Bir tane key'imiz var ve bunu direkt T tablosunun ilgili slotuna koyuyorduk.
+
+280
+01:10:52,511 --> 01:11:05,752
+Hashing'de ise direkt o ilgili slota koymak yerine bir fonksiyon üzerinden hareket ediyoruz ve bu fonksiyonun sonucunun bize verdiği yere ilgili elemanı yerleştiriyoruz.
+
+281
+01:11:08,212 --> 01:11:13,212
+İlgili array ile alakalı boyutu küçültmüş olabiliyor.
+
+282
+01:11:13,212 --> 01:11:25,212
+Dolayısıyla bütün key'lerin hepsinin olduğu üniversitin boyutundan daha küçük bir tabloyla da bu işi görebiliyorsunuz.
+
+283
+01:11:25,212 --> 01:11:30,212
+Ama ne ortaya çıkıyor bu durumda? Eğer bir hash fonksiyonunuz varsa...
+
+284
+01:11:30,644 --> 01:11:43,404
+Bu hash fonksiyon iki ayrı keyyi aynı yere mapleyebilir ve bu durumda da Collision ile karşılaşabilirsiniz. Zaten Collision'a bulunan çözümler aslında bu konunun temelini oluşturuyor.
+
+285
+01:11:45,543 --> 01:11:47,363
+Şimdi Collision ne?
+
+286
+01:11:48,212 --> 01:12:11,772
+Dediğim gibi iki ayrı key'niz var ve fonksiyon bu ikisi için de aynı şekilde sonuç üretti. Normalde bir hash fonksiyonunun iyi olması aslında random bir şekilde bu key'leri üretebilmesiyle orantılı. Ne kadar random'a yakın bir şekilde üretirse fonksiyonu yerleşecek, table'da yerleşecek yere o kadar başarılı. Collusionları o kadar az ortaya çıkarmış oluyor.
+
+287
+01:12:12,224 --> 01:12:38,923
+Şimdi Random Looking Hash Function bulmaya çalışıyoruz. Random Looking Hash Function bulabilmek için de yine farklı yöntemler var. Özellikle asal sayılardan yararlanıyoruz bunların en basit halinde de. Ama her ne kadar bunları yapsanız da yine kollijonlar ortaya çıkıyor. Ve bu kollijonları çözmeniz gerekiyor bir şekilde. Kollijonları çözmenin güzel bir yolu da link listeleri kullanmak.
+
+288
+01:12:42,036 --> 01:13:01,216
+Chainlink ile bu işi yapmak. Chainlink de yapılan şey aslında linkli listenin bağlanması tablodaki ilgili gözlere. Yani kolide eden birbiriyle çakışan elemanları linkli liste şeklinde tutmak.
+
+289
+01:13:02,068 --> 01:13:17,007
+Örneğin, burada K1, K4, K5 Bunları hash fonksiyonuna soktuğumuz zaman, K1 ve K4'ün tabloda aynı slotu gösterdiği bir durum ortaya çıkmış. Hash fonksiyon sonucu ikisi için de aynıymış.
+
+290
+01:13:17,007 --> 01:13:27,387
+O zaman bunları bir linkli liste şeklinde tutmak ve buradaki T'nin ilgili elemanını linkli listenin başına point etmesi şeklinde bir çözüm karşımıza çıkıyor.
+
+291
+01:13:28,243 --> 01:13:48,363
+İşte K5, K7 ve K2 de yine aynı link listede aynı yeri göstermiş. K3, K8, K6. K3 tek başına görünüyor. Diğerleri kolay tetmiş. Şimdi burada linkli listede hangi tasarımı kullanmalıyız sorusu geliyor ve double linkli listi kullanıyoruz.
+
+292
+01:13:57,492 --> 01:14:00,131
+Niye Single Data Double kullanmayı tercih etmişiz?
+
+293
+01:14:04,595 --> 01:14:05,536
+Var mı cevabı oğlum?
+
+294
+01:14:13,235 --> 01:14:26,235
+Şimdi Double Link List kullanıyoruz. Çünkü bu silmeyi çok kolaylaştırıyor. Silme işlemini hızlı yapmamızı sağlıyor. Single Link List'ten farklı olarak. O yüzden bunu kullanıyoruz.
+
+295
+01:14:30,100 --> 01:14:32,280
+Şimdi karmaşıklıkları nasıl oluyor?
+
+296
+01:14:33,840 --> 01:14:36,020
+Insert işlemi için konuşuyorum.
+
+297
+01:14:37,680 --> 01:14:42,500
+Linkli listelerde, linkli listelerle chaining yapan hash tablolarında,
+
+298
+01:14:43,540 --> 01:14:51,600
+insert işleminin karmaşıklığını düşürebilmenin yolu, yeni modu listenin soluna değil başına eklemek.
+
+299
+01:14:51,600 --> 01:14:53,340
+Bir collision varsa,
+
+300
+01:14:53,844 --> 01:15:10,484
+O Collision'ın olduğu slotun referans ettiği ilk adrese, linkli listenin headine koyduğunuz vakit yeni elemanınızı o zaman burada karmaşıklığınız, insertion karmaşıklığınız constant time oluyor. O bir de bu işi çözüyorsunuz.
+
+301
+01:15:18,131 --> 01:15:32,331
+Tüm elemanların iyi bir hash fonksiyonu kullanmadığınızı ya da kötücül bir şekilde geldiğini, yani bunun kasıtlı bir şekilde aynı yeri üretmesini sağlandığını düşünelim, elemanların öyle geldiğini.
+
+302
+01:15:32,331 --> 01:15:43,572
+O zaman elemanlarınızın tamamı tek bir linkli liste içerisinde bulunuyor. Dolayısıyla o linkli listeyi taramanız gerekecek. Bu sizin için oyanlık bir karmaşıklık ortaya çıkaracak.
+
+303
+01:15:46,131 --> 01:15:49,332
+Double linkliniz.
+
+304
+01:15:49,747 --> 01:16:07,207
+Kullandığımız için sinmek istediğimiz elemanın adresi elimizde ve onun öncesindeki ve sonrasındaki elemanların ilgili adreslerini, Previous ve Next field'larını birbirine bağlayarak az önce gösterdiğim gibi sinme işlemini yapıyorsunuz.
+
+305
+01:16:07,207 --> 01:16:17,207
+Adres bilgisayar elinizde olduğu için de O1'de bu işi çözmüş oluyorsunuz. Çünkü elinize bir not verildiğinde o notun bağlı olduğu önceki ve sonraki elemanlar...
+
+306
+01:16:17,747 --> 01:16:27,827
+Elinizde oluyor, mevcut oluyor. Peki eğer Double List kullanmasaydık da Single Dick List kullansaydık o zaman bu karmaşıklık ne olacaktı?
+
+307
+01:16:33,811 --> 01:16:34,604
+Peki.
+
+308
+01:16:37,395 --> 01:17:03,095
+Yine aslında ON olacaktı. Çünkü bize bu elemanın kendisi değil de iyi verilmiş ve tüm elemanların aynı hash'a sahip olduğu bir senaryoda onun önceki, kendisi de verilmiş olsa aslında aynı şey olacak. Ondan önceki elemanı bilmeniz gerekiyor ki sonraki elemanla bağlayasınız. Ama önceki elemanı verdiğiniz size verilen not tutmuyor. Çünkü tek bir taraflı, sadece next tutacak şekilde tasarlanmış.
+
+309
+01:17:05,395 --> 01:17:08,775
+Bu da OE'ne doğru giden bir karmaşıklıkla karşılaşıyor olacaktık.
+
+310
+01:17:14,100 --> 01:17:15,079
+Arkadaşlar, sorun.
+
+311
+01:17:18,540 --> 01:17:24,860
+Şimdi bu kısımla alakalı sorumuz yoksa biraz analizle alakalı işlere geçeceğiz.
+
+312
+01:17:32,692 --> 01:17:37,992
+Tamam, o vakit. Hemen başlayalım. Analize geçelim, şunu kapatalım.
+
+313
+01:17:47,828 --> 01:17:53,548
+Şimdi yine çok ideal olmayan yazımla karşı karşıya kalacaksınız.
+
+314
+01:17:58,547 --> 01:18:03,927
+Sınıfta olsa estağfurullah hocam falan derdiniz de. Şimdi dediğinizi varsayıyorum.
+
+315
+01:18:08,747 --> 01:18:10,487
+Estağfurullah hocam, tabii ki varsayın.
+
+316
+01:18:12,028 --> 01:18:17,608
+Var mı soru arkadaşlar? Tesledi duymak da güzel oldu. Yok herhalde.
+
+317
+01:18:18,387 --> 01:18:20,288
+Yok hocam. Bir soru var.
+
+318
+01:18:20,288 --> 01:18:20,907
+Peki.
+
+319
+01:18:24,087 --> 01:18:25,948
+Biraz da soluklanmış olayım.
+
+320
+01:18:27,123 --> 01:18:32,123
+Çünkü sürekli konuşmakta yorucu olabiliyor.
+
+321
+01:18:34,123 --> 01:18:36,123
+Şimdi setup'ımı yine kurayım.
+
+322
+01:18:43,188 --> 01:18:54,188
+Şimdi şu an Chaining ile Collision'ı çözen Hatch fonksiyonların analizi ile alakalı neler yapabiliriz? Onlara bakacağız.
+
+323
+01:19:03,988 --> 01:19:05,579
+Evet, şu.
+
+324
+01:19:16,243 --> 01:19:22,423
+Şimdi size bir güzellik yapıp, başlığı kırmızı yazıyorum arkadaşlar.
+
+325
+01:19:37,619 --> 01:19:53,139
+Şimdi gözünüzün önüne getirirseniz bir hash tablomuz vardı. Bunun slotları vardı ve bunun slotları linkli listelere referans verecek şekilde tasarlanmıştı.
+
+326
+01:19:55,280 --> 01:20:00,819
+Burada elimdeki değişkenlerin neler olduğunu şuraya bir yazalım.
+
+327
+01:20:09,140 --> 01:20:10,659
+Eş tabloma T diyorum.
+
+328
+01:20:17,460 --> 01:20:23,779
+Bu hash tablomdaki eleman sayısı yani aslında number of slots. Bunlara M diyorum.
+
+329
+01:20:28,243 --> 01:20:38,304
+Hatch tablomda saklamayı planladığım elemanların sayısı da number of stored elements n diyorum.
+
+330
+01:20:40,163 --> 01:20:43,304
+Şimdi burada şöyle bir şey devreye giriyor.
+
+331
+01:20:43,304 --> 01:20:51,543
+Eğer siz bunun için analiz yapacaksanız n ve n'nin birbiriyle oranı aslında analizinizi doğrudan etkileyen bir şey.
+
+332
+01:20:53,623 --> 01:20:55,463
+Alfa n bölü m.
+
+333
+01:20:56,756 --> 01:21:13,716
+Bu da aslında load factor deniyor. Load factor aslında neye ifade ediyor? T için load factor n ve m'in oranı. Yani aslında bir çayinde.
+
+334
+01:21:14,260 --> 01:21:32,579
+Ortalama saklanan eleman sayısını vermiş oluyor bize. En toplam eleman sayısı en de slot sayısı olduğu için aslında load factor bize bir çeyindeki ortalama eleman sayısını vermiş oluyor. Tabii ki bu her zaman üniform olmayabilir.
+
+335
+01:21:39,988 --> 01:21:42,948
+Eyvah, yine kapanacak galiba.
+
+336
+01:21:47,283 --> 01:21:55,644
+Evet, yine kapandı. Bu PowerPoint'in azizliğinden midir? Benim şeyden midir? Gidemedim. Hemen şimdi tekrar bakacağım.
+
+337
+01:21:56,564 --> 01:22:00,804
+Hocam, siz ne kullanıyorsunuz ki sürekli ekran paylaşmayı kapatıyor?
+
+338
+01:22:01,623 --> 01:22:10,443
+Valla ben PowerPoint'i üzerine grafik tabletle yazmaya çalışıyorum. Onu soruyorsun ne kullanıyorsunuz? Bir grafik tablet aldım yeni kendime.
+
+339
+01:22:10,899 --> 01:22:12,699
+Hayırlı olsun hocam. Güle güle kullanıyorum.
+
+340
+01:22:13,759 --> 01:22:24,840
+Ama beklentilerim yani yazılma güzel de belki de PowerPoint ile iletişiminde bir sorun var. Yani farklı bir onun kendi belki programı üzerinden bunu yapmam lazım. Ona bir bakayım bu hafta.
+
+341
+01:22:25,299 --> 01:22:28,799
+Denemelerimde böyle bir şeyle karşılaşmamıştım. Uzun uzun 3 saat denemediğim için.
+
+342
+01:22:30,799 --> 01:22:30,879
+Şimdi.
+
+343
+01:22:32,051 --> 01:22:34,371
+Hocam, onu da öneriniz alayım arkadaşlar.
+
+344
+01:22:34,652 --> 01:22:39,031
+Basını tuttuğunuzda sağ klik atmaya çalıştığı için sorun yaşıyor olabilir misiniz?
+
+345
+01:22:40,271 --> 01:22:41,111
+Öyle bir şey var mı?
+
+346
+01:22:41,511 --> 01:22:47,791
+Bilemedim, deneyeyim şimdi bunu. Şimdi denemeyeyim de dersten sonra deneyeyim. Tekrar tekrar yaşamayalım. Olabilir hepsi arkadaşlar.
+
+347
+01:22:49,072 --> 01:22:51,752
+Ben de çok teknolojiye hakim bir insan değilim.
+
+348
+01:22:53,031 --> 01:22:58,611
+Şimdi, Average Numbrose sizinle paylaştım mı? Ben görüyor musunuz? Ha görmüyorsunuz, pardon. Hemen paylaşıyorum.
+
+349
+01:23:00,819 --> 01:23:13,099
+Evet. Şimdi geldi. Load Faktörün ne olduğunu yazıyordum size. Average Number of Elements stored in a chain.
+
+350
+01:23:17,459 --> 01:23:23,779
+Şimdi bunları kullanıyor olacağız. Bu alfa hangi değerleri alabilir? Bir kere birden büyük olabilir.
+
+351
+01:23:24,692 --> 01:23:30,992
+Bire eşit olabilir ve birden küçük olabilir. Tam tersini söyledim de birden küçük ya da eşit olabilir.
+
+352
+01:23:33,332 --> 01:23:45,271
+Şimdi worst case senaryosunda örneğin bir arama yapıyorsam, tüm keylerde aynı slota hash ettiyse o zaman ben bunu
+
+353
+01:23:46,036 --> 01:23:51,796
+Maalesef OAN'de çözüyordum. Demin konuşmuştuk çünkü oraya gidip tüm elemanları gezmem gerekiyordu.
+
+354
+01:23:52,195 --> 01:23:57,275
+Best Case Senaryosu bu. Best Case Senaryosu'na zaten O1'de bu işi yapıyorum.
+
+355
+01:23:57,876 --> 01:24:00,716
+Şimdi benim ilgilendiğim şey Average Case Performansı aslında.
+
+356
+01:24:01,336 --> 01:24:07,095
+Bu Average Case Performansı da dediğim gibi bu load faktöre bağlı.
+
+357
+01:24:08,556 --> 01:24:11,095
+Şimdi Average Case'i hesaplarken...
+
+358
+01:24:11,439 --> 01:24:25,680
+Bundan sonraki hesaplamalarımızda bunu yapacağız. Her verilen elemanın Mslot'tan birine yerleşme ihtimalinin eşit olduğunu varsayacağız. Buna Simple Uniform Hashing deniyor.
+
+359
+01:24:34,228 --> 01:24:53,307
+Simple Uniform Magic Herhangi bir elemanın, verilen herhangi bir elemanın buradaki mslottan birine yerleşme ihtimalinin eşit olması durumu. Bunun üzerinden işlem yapacağız. Şimdi bir teoremimiz var. Ona bakalım.
+
+360
+01:24:58,036 --> 01:25:05,536
+Teoremler üzerinden gidiyor olacağız bir süreye.
+
+361
+01:25:07,536 --> 01:25:09,476
+Şimdi teorem şu.
+
+362
+01:25:20,532 --> 01:25:44,112
+Bir hash tablosunda, kollisionların chain link ile çözüldüğü bir hash tablosunda başarısız bir search'ın yaklaşık theta 1 artı alfada, simple uniform hashingin olduğunu düşünürsek, 1 artı alfada çözülmüş olduğuna dair bir teorem var.
+
+363
+01:25:44,112 --> 01:25:45,852
+Şimdi bunu ispatlamaya çalışacağız.
+
+364
+01:25:48,467 --> 01:26:00,467
+Bunun için size şu tabloyu bir çizeyim. Bu tablo üzerinden işleyişin nasıl olduğunu bir gözümüzle canlandıralım.
+
+365
+01:26:01,467 --> 01:26:04,327
+Şimdi şunu sileceğim. Sonra tekrar yazarım.
+
+366
+01:26:13,492 --> 01:26:15,092
+Şöyle bir hash tablom var.
+
+367
+01:26:30,420 --> 01:26:44,299
+Doğrusal olması gerekiyordu. Şişman 5 tablosu oldu. Şurada elemanlarımın olduğu slotlarım var. İlkokuğla gidin oğlum. Benden iyi çizan muhtemelen.
+
+368
+01:26:46,299 --> 01:26:57,299
+Şimdi arkadaşlar, X1, X2, XM. Bunlar elemanlarım.
+
+369
+01:26:58,739 --> 01:27:10,219
+Çeyne eklemek istediğim elemanı biliyorsunuz bir kolujim varsa Çeyne eklemek istediğim elemanı ilgili kolujunun olduğu yerde linkli listenin en başına ekliyordum hatırlarsınız.
+
+370
+01:27:10,219 --> 01:27:16,000
+Şimdi diyelim ki bir kolujuna denk geldim ve buradaki linkli listenin başına bir şey eklemek istiyorum.
+
+371
+01:27:17,939 --> 01:27:25,479
+X1'i yerleştirmişim önce. Sonra X2'yi sonra X3'ü yerleştirmişim.
+
+372
+01:27:26,003 --> 01:27:32,463
+Burada benim linkli listem şöyle görünüyor. Burada x3 var.
+
+373
+01:27:37,300 --> 01:27:42,360
+Burada X2 var. Double link liste hatırlarsanız. Burada X1 var.
+
+374
+01:27:44,860 --> 01:27:53,960
+Sıralama nasıl olmuş? X1'i yerleştirmişim. X2'yi yerleştirmek istediğimde çakışma olmuş. O yüzden listenin başına yani X1'in başına X2'yi yerleştirmişim.
+
+375
+01:27:53,960 --> 01:27:59,280
+X3'ü yerleştirmek istediğimde yine çakışma olmuş. Dolayısıyla onu en başa yerleştirmişim.
+
+376
+01:28:03,539 --> 01:28:26,100
+Eğer ben X1'i aramak istiyorsam, kaç tane eleman saymalıyım? X1'i yerleştirdikten sonra yerleştirdiğim elemanlar kadar search yapmalıyım aslında. Bir de X'in kendisini tarıyorum. Dolayısıyla benim aslında burada yaptığım işlem sayısı ne oluyor? İki tane şunları taradığım için bir de bu üç tane oluyor.
+
+377
+01:28:26,479 --> 01:28:47,459
+Chain'imdeki eleman sayısına denk gelmiş oluyor bu işlem. Dolayısıyla eğer ben bir search yapıyorsam ve bu search başarısız bir search ise, soluna kadar gitmemi gerektirecek bir search ise, o zaman benim bu listeydekinin aranması için beklenen sürem aslında
+
+378
+01:28:53,395 --> 01:29:06,415
+Burada ilgili gözün sonuna kadar ilgili gözün işaret ettiğinizde sonuna kadar sürmeli. Ben load factor tanımlamıştım ve bu load factor aslında neydi hatırlarsınız? En bölü, m'di.
+
+379
+01:29:06,815 --> 01:29:27,435
+Ve aslında bana Average Number of Elements Stored Inet Chain yani bir dizide o çeyindeki ortalama eleman sayısını veriyordu. Dolayısıyla benim buradan yola çıkarak bir başarısız search yapmak için üzerinde geçmem gereken eleman sayısı neye dönüşüyor? Seta bir artı alfaya dönüşüyor.
+
+380
+01:29:29,435 --> 01:29:29,995
+Peki.
+
+381
+01:29:31,220 --> 01:29:37,800
+Bu başarısız bir search için. Başarılı bir search yaparsam o zaman neye dönüşüyor? Şimdi ona bakalım.
+
+382
+01:29:57,460 --> 01:29:58,412
+Şimdi.
+
+383
+01:30:06,452 --> 01:30:07,212
+Teoremim şu.
+
+384
+01:30:12,148 --> 01:30:20,148
+Tahta yazarken silgiyi almayı üşenip üzerinde karaladım. Günlerim aklıma geldi.
+
+385
+01:30:24,020 --> 01:30:36,940
+Değer hem şu, bir Htable daha. Collision'ların, Chaining'de çözüldüğü bir Htable bu. O detayı yazmıyorum. Başarılı bir arama.
+
+386
+01:30:44,692 --> 01:30:46,380
+Ortalama olarak...
+
+387
+01:30:59,764 --> 01:31:11,584
+Teta bir artı alfa olur. Başarısız bir aramada da teta bir artı alfadaydı. Başarılı bir aramada da mı aynısı olacak? Şimdi teorem bu. Tabi bu uniform hashing varken.
+
+388
+01:31:24,948 --> 01:31:30,327
+Yerleştiğini farzedersem. Bunun, bu teoremin ispatıyla ilgili konuşalım.
+
+389
+01:31:32,488 --> 01:31:38,028
+Şimdi benim bir büyük x, j random variable'ım olsun.
+
+390
+01:31:39,587 --> 01:31:52,167
+Burada x'i, küçük x'i'nin tabloya eklenen i'inci elemanı olduğunu kabul edersem, bu random variable'ım için şunu yazabilirim.
+
+391
+01:32:00,148 --> 01:32:08,688
+Eğer x'i ve x'i aynı slota.
+
+392
+01:32:12,627 --> 01:32:18,768
+Geliyorsa hash fonksiyonu sonucunda bir olsun, değilse sıfır olsun.
+
+393
+01:32:22,227 --> 01:32:34,947
+Eklenen i ve j elemanın aynı key'yi üretmesi hash fonksiyonuyla daha doğrusu hash fonksiyonu sonucunda aynı bilgi üretmesi durumuna bir, değilse sıfır alan bir x c j random variable'ı tanımladım.
+
+394
+01:32:38,484 --> 01:32:49,464
+Listeye bu x'i eklendikten sonra eklenenlerden x'i ile aynı eşi verenlerin sayısı şöyle oluyor.
+
+395
+01:32:58,547 --> 01:33:09,587
+Doğru mu? X'i eklendikten sonra eklenenlerden X'i ile aynı eşi verenlerin sayısı. Bunlar eşit olduğu takdirde 1 verecek, değilse 0 verecek. Toplama dahil etmeyecek.
+
+396
+01:33:11,587 --> 01:33:18,627
+Şimdi bu durumda benim şöyle bir ifade yazma şansım oluyor.
+
+397
+01:33:39,444 --> 01:33:51,144
+Bakın, şu zaten az önce yazdığım şey. Şu kısım, şu kısım, eleman için yapılacak examination sayısını gösteriyor.
+
+398
+01:33:51,644 --> 01:33:57,044
+İ'nin 1 olduğu, 2 olduğu, 3 olduğu durum için yapılacak examination sayısı. Şuradaki 1.
+
+399
+01:33:57,456 --> 01:34:22,956
+X'in kendisi için yapılmış olan examination. Şuradaki de ondan önce gelen elemanların sayısını bulmak için koyduğum random variable'ların bir eden değerlerinin toplamıyla elde ettiğim sayı. Dolayısıyla burası benim, şu kısım benim, her eleman için yapılacak examination sayısını veren ifade. Şuradaki bir böyle anne bunu çarpmak bana neyi sağlıyor? Average examination'ı.
+
+400
+01:34:24,372 --> 01:34:35,351
+Vermeyimi sağlıyor. Yani aslında ben zaten ortalamayı bulmaya çalışıyorum ya. Successful bir searchteki ortalama examination sayısını bulmaya çalışıyorum. Dolayısıyla bunu n'e bölüyorum.
+
+401
+01:34:38,551 --> 01:34:42,011
+Şimdi burada bir expected number kavramı devreye giriyor.
+
+402
+01:34:49,055 --> 01:34:52,475
+İfade etmeyi kolaylaştırdığı için bunu kullanıyor kaynaklar.
+
+403
+01:34:54,323 --> 01:35:22,323
+XEG Random Variable'ının, yani i ve g'nin birbiriyle çakışıp çakışmamasını ifade eden, şurada anlattım. Bu Random Variable'ın vermesini beklediğim, expected number of değeri vermesini beklediğim değer neye eşit oluyor? Bir bölüye eşit olur değil mi? Çünkü olasılık buydu. Kolayet etme olasılıkları bunların alfa ile orantılı bir değerdi. Buradaki m'de benim slot sayımı gösteriyor.
+
+404
+01:35:22,323 --> 01:35:38,483
+Bunların kolayca etme oranları bir bölü M olacaktır. X ve J'nin aynı slotta bulunma olasılıkları. M slot sayısı olduğu için bir bölü M olacaktır. Şimdi şuradaki ifadeleri bu bir bölü M'i kullanarak yürütmeye devam edelim.
+
+405
+01:35:43,060 --> 01:35:50,920
+Yeni slide düğmesini her seferinde nasıl bulmakla zorlanıyorum. Ben de gerçekten kendimi şaşırıyorum.
+
+406
+01:35:58,836 --> 01:36:04,056
+Az önceki ifadem neye dönüştü?
+
+407
+01:36:06,316 --> 01:36:07,756
+Şuna dönüştü. Bir bölü M.
+
+408
+01:36:10,155 --> 01:36:12,176
+Bir eşitliği birden E'ne kadar gidiyor.
+
+409
+01:36:13,636 --> 01:36:14,836
+Bir artı.
+
+410
+01:36:17,336 --> 01:36:20,196
+İ artı birden E'ne kadar.
+
+411
+01:36:20,196 --> 01:36:22,956
+Bir bölü M.
+
+412
+01:36:26,644 --> 01:36:32,024
+Teşekkür ediyorum. Bir sonrakinde onu deneyeceğim.
+
+413
+01:36:33,704 --> 01:36:42,684
+Şimdi ne kadar yardımsever öğrencilerim var. Evet, şimdi bunun üzerinden tekrar işleyişe devam edelim.
+
+414
+01:36:50,163 --> 01:37:15,023
+n-i, eksi bir artı bir bunlar birbirini götürecek. Bunu biliyorsunuz şuradaki formülü üzerinden yaptığım vakit açılımına buna denk geliyor. Dolayısıyla bir bölü n, n'e kadar, bir artı, n-i.
+
+415
+01:37:16,595 --> 01:37:17,915
+Böleyeme denk gelecek.
+
+416
+01:37:21,587 --> 01:37:30,747
+Buradaki toplam sembolünü de açalım. Şu bir ifadesi en olarak karşıma çıkıyor. Toplam sembolünü iç tarafa taşırsam.
+
+417
+01:37:34,804 --> 01:38:00,464
+Bu ifadeye dönüşecek. Buradaki çarpım yani bölüm olan bir bölüm ile çarpım olan kısmı dışarıya çıkartmam mümkün. Dolayısıyla bunu da çarparak gidersem burası 1'e dönüşüyor. Burası 1 bölü. N'e dönüşüyor. İyi giderken birden birer birer ne kadar.
+
+418
+01:38:01,300 --> 01:38:08,399
+Deneksiye dönüşüyor. Yukarıdan devam edersem işlemlerine, bu neye denk gelecek?
+
+419
+01:38:08,399 --> 01:38:10,239
+Bir artı.
+
+420
+01:38:16,435 --> 01:38:27,975
+Toplam sembolüyle alakalı formülden yeni ifadem bu. Bu da en eksi bir bölü iki m denk geldi.
+
+421
+01:38:29,195 --> 01:38:39,855
+Şimdi bu ifadede bunu load factor cinsinden yazalım. Yani alfanın n bölü m olduğu şekilde yazarsak.
+
+422
+01:38:45,171 --> 01:39:08,431
+Arka bölü 2. Şimdi aslında şu kısım 1 bölü 2 buna denk geliyor. Yani burada alfanın bir kat sayıyla çarpımı söz konusu. Dolayısıyla çarpım sabit kat sayılarla çarpımlarda bir gondotasyonda biliyorsunuz o n'e denk geliyordu. Ya da alfaya burada alfa bizim.
+
+423
+01:39:10,547 --> 01:39:31,007
+Anahtarımız, onun üzerinden bu işlemleri yapıyoruz. Dolayısıyla bir artı alfaya denk geldi. Yani successful'lar da successful search'lerde, average case'de tabii ki aynı şekilde bir artı alfa işlemle bu işi yapabiliyormuşuz. Onu görmüş olduk. Var mı soru arkadaşlar?
+
+424
+01:39:34,007 --> 01:39:34,967
+Şimdi
+
+425
+01:39:38,100 --> 01:39:44,820
+Hash fonksiyonlarla alakalı, yani nasıl fonksiyonlar hash fonksiyon olarak kullanılabilir? Onlara bakacağız.
+
+426
+01:39:48,500 --> 01:40:03,920
+Beşkala mı başlamıştık? Bir ara vermek ister misiniz? Sonra hızlıca bitiririz. Başta başladık, beşkala başladık. Kırk beş dakika, elli dakika önce. Tamam, bir ara verelim arkadaşlar isterseniz. On dakika bir ara verelim. Ondan sonra yeni konuya başlayalım.
+
+427
+01:47:51,988 --> 01:48:02,988
+Devam edelim arkadaşlar. Şimdi, hash fonksiyonlarının iyi olarak kabul edilmesi için nasıl özelliklere sahip olmaları gerekiyor?
+
+428
+01:48:02,988 --> 01:48:11,988
+Söylediğim gibi, keylerin dağılımının aslında iyi olması, randıma yakın bir görüntüde olması, bunlar bizim için önemli.
+
+429
+01:48:15,488 --> 01:48:30,328
+Eğer tutacak bir hash fonksiyonu, bir hash tabloda tutacak bir hash fonksiyonu tasarlıyorsanız, işte pt, pts gibi birbirine çok yakın olan stringlerde sorun yaşamamak adına bunu göz önünde bulunduracak bir hash fonksiyon kullanmanız gerekiyor.
+
+430
+01:48:32,088 --> 01:48:38,608
+Bu bazen probleminize bakarak karar vereceğiniz bir şey. Bazen çok da kolay da olabilir.
+
+431
+01:48:42,271 --> 01:48:54,352
+0 ile 1 arasında sayılardan oluşan t'leriniz varsa o zaman bunu basit bir şekilde bir m değeriyle çarpmak size uniform dağılıma sahip bir hash fonksiyonu verecek.
+
+432
+01:48:55,132 --> 01:49:02,812
+Şimdi bu birkaç farklı metot var hash fonksiyonu oluşturabilmek için. Division metot, multiple cash metot bunlardan bahsedeceğim.
+
+433
+01:49:03,731 --> 01:49:05,812
+Ama öncesinde stringlere...
+
+434
+01:49:06,176 --> 01:49:30,676
+Nasıl uyguluyoruz? Bunları nümerik hale nasıl getiriyoruz? Küçük bir örnekle anlatalım. Genelde biliyorsunuz doğal sayılar üzerinden çoğu hash fonksiyonu çalışıyor. Dolayısıyla stringleri de doğal sayı şeklinde interpret edebilecek bir düzenlemeye ihtiyacımız var. Bu yüzden Radix Notation.
+
+435
+01:49:32,467 --> 01:49:53,988
+Yani taban sistemi üzerinden bu işi yapıyoruz. Örneğin, Pt rengini nümerik hale getirmek isterseniz, bunlar da P ve T'nin ASCII kodlarını burada kullanarak tabanlık, Redix 128 mesela kullanılabilir.
+
+436
+01:49:55,988 --> 01:49:59,788
+ASCII kodlarını kullanarak nümerik hale getirebiliriz. Örneğin,
+
+437
+01:50:00,000 --> 01:50:09,199
+D'nin mesela 112, D'nin de 116 ile ifade edildiğini düşünelim.
+
+438
+01:50:09,199 --> 01:50:14,720
+O zaman temel olarak iki elemanlı olduğu için 128.
+
+439
+01:50:15,764 --> 01:50:35,824
+Şuradaki daha az öneme sahip olan tabanlık bir değerinde 128 üzeri 0 çarpı 116 artı 128 çarpı 112. Eğer daha fazla olsaydı 128'in ikinci kuvveti, üçüncü kuvveti gibi gidecekti. Yani bu PT ifadesini örneğin şöyle yazmamız mümkün.
+
+440
+01:50:42,804 --> 01:50:44,619
+116 çarpı
+
+441
+01:50:47,731 --> 01:50:58,731
+Bu da bize şu ifadeyi veriyormuş. Stringleri örneğin çevirebilmek için basit olarak böyle bir yöntem kullanmamız mümkün.
+
+442
+01:50:58,731 --> 01:51:08,072
+Şimdi kısa yolla bakın çat diye arkadaşınızın bana hatırladığı kısa yolla bu işi çözdüm.
+
+443
+01:51:09,271 --> 01:51:10,631
+Yine slide'ıma geçtim.
+
+444
+01:51:11,952 --> 01:51:14,011
+Ne bence şuraya tıklamadan bu işi yapalım.
+
+445
+01:51:17,492 --> 01:51:19,492
+Division metotla başlayalım arkadaşlar.
+
+446
+01:51:30,644 --> 01:51:46,764
+Şimdi division metodda aslında bir bölme işlemiyle hash fonksiyonu üretmek. Örneğin kki için yazacağınız hash fonksiyonu basit olarak şöyle olabilir. K modem.
+
+447
+01:51:48,364 --> 01:51:57,104
+Şimdi burada emi seçmek kritik önem taşıyor fonksiyonunuzun başarısı için.
+
+448
+01:51:58,676 --> 01:52:22,496
+İkinin tam katına yakın olmayan bir prime seçmek mantıklı. Tabii burada sizin kaç tane elemanla iş yaptığınız da aslında önemli olacak. Örneğin, iki bin tane elemanınız olduğunu düşünelim. En eşittir iki bin. Bunları tutacak bir hash tasarlamak istiyorsunuz.
+
+449
+01:52:23,475 --> 01:52:42,555
+Şimdi burada kaç tane unsuccessful search'ü problem etmem diye bir sormanız gerekiyor. Örneğin bunu da üç olarak belirlediniz. Yani bu demektir ki aslında üç defa unsuccessful search yaptığınızda bu sizin performansınızı çok fazla etkilemeyecek.
+
+450
+01:52:49,395 --> 01:53:00,795
+yakın bir değer seçmeniz gerekiyor. Bunun ikinin kuvvetlerine uzak bir asal sayı olmasını bekliyorsanız, o zaman örneğin m'in 701 olarak seçilmesi mantıklı olacak.
+
+451
+01:53:00,795 --> 01:53:14,595
+Dolayısıyla burada elemanlarınızın sayısını da göz önünde bulundurarak eğer division metod kullanıyorsanız, bir m değeri belirlemiş olacaksınız. Ben mesela burada Talmud 701 seçtim gibi.
+
+452
+01:53:15,188 --> 01:53:25,188
+Prime Number'ı kullanmak her zaman üniform dağılımı destekleyen bir şey. Peki Multiplication Metot var bir de. O nasıl çalışıyormuş ona bakalım.
+
+453
+01:53:37,076 --> 01:53:48,175
+Multiplication Metod. Şimdi Multiplication Metod'da şöyle bir işlem adımları var aslında dikkat edilmesi gereken.
+
+454
+01:53:51,572 --> 01:54:00,572
+Bir sayıyla ikiyi çarpmanız gerekiyor önce. Ama bu sayının belirli bir aralıkta olması gerekiyor.
+
+455
+01:54:00,572 --> 01:54:03,572
+Pardon, mantıplarda yazacaktık.
+
+456
+01:54:27,475 --> 01:54:31,675
+0 ile 1 aranında olacak. 1 A seçiyorsunuz ve 2'yi bu sayıyla çarpıyorsunuz.
+
+457
+01:54:35,412 --> 01:54:40,412
+Sonrasında ondalıklı kısmını...
+
+458
+01:54:53,939 --> 01:54:55,219
+Almanız gerekiyor.
+
+459
+01:55:05,811 --> 01:55:08,032
+Bunu M sayısı ile çarpıyorsunuz.
+
+460
+01:55:16,916 --> 01:55:18,916
+Ve yuvarlama yapıyorsunuz.
+
+461
+01:55:23,764 --> 01:55:33,923
+106 flor yaptınız. Yani aslında ifade edecek olursam şöyle oluyor. Sembollerle ifade edecek olursam.
+
+462
+01:55:48,372 --> 01:56:06,551
+Şöyle ifade edebilirim. Bir örnek yapacağım şimdi. Burada M çok kritik değil aslında nasıl seçildiği ama A'nın nasıl seçildiği önemli. Yani ki çarpacağınız A'nın nasıl seçildiği önemli. 0 ile 1 arasında bir değer seçeceksiniz.
+
+463
+01:56:16,275 --> 01:56:40,635
+Önerisi var. Diyor ki, A'yı şöyle seçtiğim zaman, eksi bir, böyle iki. Daha iyi sonuçlar verdiğini gördüm diyor. Bu ifade neyi anlatıyor siz? Hatırlıyor musunuz bunun ne olduğunu? Bu Golden Ratio. Burada da karşımıza altın oran çıktı.
+
+464
+01:56:44,500 --> 01:56:54,279
+Bu vesileyle danıtı atın da belki çalışmalarını şöyle bir karıştırma şansınız olur. ACM ödülü almış Turing.
+
+465
+01:56:56,020 --> 01:57:19,820
+Ödülü almış biliyorsunuz. Aslında bir yandan da Algoritma Analizi'nin babası olarak kabul ediliyor. Onun da öyle bir çıkarıma olmuş. Bolden Reşiyor görünce burada. Heyecanlandım. Sizinle paylaşmak istedim. Şimdi bir örnek yapalım. Yine hızlıca yine slatımı açayım. Kısa yolumla. Soru var mı?
+
+466
+01:57:26,131 --> 01:57:29,031
+Soru yok herhalde bakayım. Bir şey yok. Peki.
+
+467
+01:57:32,979 --> 01:57:34,411
+Şimdi örneğin
+
+468
+01:57:40,340 --> 01:57:42,380
+Emin 10.000 seçildiğini düşünelim.
+
+469
+01:57:46,100 --> 01:57:49,880
+Şöyle bir sayı olsun.
+
+470
+01:57:52,360 --> 01:57:54,640
+Bunun hash fonksiyonunu hesaplamak istiyorum.
+
+471
+01:58:00,051 --> 01:58:01,671
+Aşağıya yuvarlıyorum.
+
+472
+01:58:03,471 --> 01:58:03,971
+Emle.
+
+473
+01:58:07,731 --> 01:58:08,971
+Kimi çarpıyorum.
+
+474
+01:58:15,060 --> 01:58:20,819
+A değerini yazacaktım ama A değil tabi burada şey yazacağım. Altın oranı yapacağım.
+
+475
+01:58:28,372 --> 01:58:30,372
+Sıfırıla da.
+
+476
+01:58:30,372 --> 01:58:33,372
+Seksar.
+
+477
+01:58:33,372 --> 01:58:34,412
+Sıfırıla da.
+
+478
+01:58:39,859 --> 01:58:42,999
+Mod 1. Aslında şuranın modunu alacağım.
+
+479
+01:58:48,851 --> 01:58:55,351
+Modunu dediğiniz aslında bir gün daha sonraki kısmıyla ilgileniyorsunuz. Dolayısıyla şu ifade size.
+
+480
+01:59:02,163 --> 01:59:09,944
+0, 0, 41 Burayı verdiğinden. Ve gülden sonraki kısmı aldığımız için 10.000'le.
+
+481
+01:59:15,956 --> 01:59:17,956
+Bunu çarptınız ve...
+
+482
+01:59:19,655 --> 01:59:20,956
+...söp bir nokta...
+
+483
+01:59:23,056 --> 01:59:24,956
+Haydi bakalım. Yine yazmıyor.
+
+484
+01:59:34,515 --> 01:59:36,515
+A pam yöldüksevaita bana, bana.
+
+485
+01:59:40,243 --> 01:59:41,243
+Teşekkürler.
+
+486
+01:59:52,756 --> 01:59:53,256
+Tamam.
+
+487
+01:59:57,171 --> 02:00:00,491
+Şimdiki, bu da.
+
+488
+02:00:05,619 --> 02:00:06,460
+Bakışı var.
+
+489
+02:00:12,307 --> 02:00:13,468
+Tamam, geldin.
+
+490
+02:00:23,444 --> 02:00:47,564
+41.151 Buradan burada da şu parçayı alıyorsunuz. Yani hash 1,2,3,4,5,6 bize 41'e denk geliyor. Bu benim muhapıplık eşliği metoduyla hashing yapma. Örneğim bu şekilde yapıyoruz. Dediğim gibi burada seçmeniz gereken kritik şey A'nın değeri.
+
+491
+02:00:49,427 --> 02:01:08,707
+Şimdi, hash fonksiyonları için farklı aslında şeyler yine bahsedeceğim. Universal hashing var mesela. Onlardan da önümüzdeki hafta bahsedeceğiz ama burada collusionlarla alakalı neler yapıyorduk? Onlar alternatif ne yapabiliriz? Onun üzerinden biraz gitmek istiyorum şimdi.
+
+492
+02:01:10,847 --> 02:01:12,707
+Biliyorsunuz, chaining yapıyorduk.
+
+493
+02:01:15,407 --> 02:01:17,007
+Collusion olduğu vakit.
+
+494
+02:01:18,739 --> 02:01:29,239
+Bunun diğer bir alternatifi, Chainlink yapmak yerine Open Addressing kullanmak.
+
+495
+02:01:32,627 --> 02:01:34,627
+Şimdi biraz ondan bahsedelim.
+
+496
+02:01:39,412 --> 02:01:40,792
+Okun adreslik nedir?
+
+497
+02:01:54,131 --> 02:01:57,931
+Şimdi şeyinden farklı olarak Open Adres kullanıyorsanız
+
+498
+02:02:03,764 --> 02:02:23,583
+Tüm elemanlar aslında tablonun kendisinde tutuluyor. Birbiriyle çakışanlara ekstra bir ayrı bir linkli listede tutmak yerine tablonun kendisine koyuyorsunuz. Bir elemanı yerleştirmek için önce bir slotu deniyorsunuz. Eğer burada yer yoksa başka bir slotu deniyorsunuz.
+
+499
+02:02:24,659 --> 02:02:33,979
+Çayn yapmak yerine başka bir slot deniyorsunuz. Dolayısıyla burada slotların denenme sıralamasının belirlenmesi gerekiyor.
+
+500
+02:02:34,420 --> 02:02:39,939
+Slotların denenme sırasını belirleyen şey aslında biraz daha geniştirilmiş bir hash fonksiyonu.
+
+501
+02:02:40,039 --> 02:02:44,380
+Şimdiye kadar kullandığımız hash fonksiyonlarında input olarak bir key almıştık.
+
+502
+02:02:44,380 --> 02:02:49,779
+Şimdi burada bir de denenme sırasını gösteren ikinci bir parametre sisteme dahil ediliyor.
+
+503
+02:02:52,659 --> 02:03:01,659
+Gelenme sırasında içeren hash fonksiyonuyla her seferinde collusionla karşılaşırsanız bir sonraki slota yönlendirilmiş oluyorsunuz.
+
+504
+02:03:01,659 --> 02:03:06,659
+Şöyle örneğin, görüntüsü bu hash fonksiyonlarının.
+
+505
+02:03:18,484 --> 02:03:26,163
+key ile beraber order belirleyen şey şurada key'imiz var. Bu da order belirleyen ikinci parametremiz.
+
+506
+02:03:26,163 --> 02:03:37,283
+Şimdi eğer bir insertion yapacaksak örneğin hash table'ımıza nasıl bir yol izleyeceğiz? Bir küçük pseudokod verelim burada.
+
+507
+02:03:42,676 --> 02:03:54,676
+Open Address'in ile insertion yapıyorsak. Key'imizi aldık, bir de tablomuzu aldık. Baştan başlamamız gerekiyor.
+
+508
+02:03:57,016 --> 02:04:00,676
+Tekrarlamamız gerekiyor. Ne zamana kadar bu işi yapacaksınız?
+
+509
+02:04:02,136 --> 02:04:08,676
+Birincisi hash fonksiyonu. İlgili i için ve key için size bir değer döndürüyor.
+
+510
+02:04:08,783 --> 02:04:11,623
+Bu slotun boş olup olmadığına bakacaksınız.
+
+511
+02:04:21,524 --> 02:04:27,284
+Eğer boşsa, o küpe edinmemişse yani, buraya istediğiniz elemanı yerleştirebilirsiniz.
+
+512
+02:04:33,203 --> 02:04:37,804
+ve pardon, litroan litro değil, j olacak. Yanlış yazdım.
+
+513
+02:04:42,323 --> 02:04:55,275
+Ve yerleştirdikten sonra da bitirirsiniz işinizi, çıkarsınız fonksiyondan. Ama eğer uğradığınız slot dolu bir slot ise, okupe edilmiş bir slot ise o zaman bir sonraki...
+
+514
+02:04:59,315 --> 02:05:08,036
+Denemenize gitmeniz gerekiyor. Yani İ'yi bıraktırmanız gerekiyor. Fonksiyonda İ'nin iki olduğu, üç olduğu durumlar için bakmanız gerekiyor. Bunları...
+
+515
+02:05:12,884 --> 02:05:18,843
+Sonuna gelmediğiniz sürece yapacaksınız. Eğer sonuna ulaştıysanız artık o zaman tablonuz dolu demektir.
+
+516
+02:05:23,699 --> 02:05:24,599
+Hata verirsiniz.
+
+517
+02:05:29,587 --> 02:05:40,608
+Şimdi insertion için böyle bir psodokod çalıştırıyoruz. Tek tek sırayla bakıyoruz. Peki search için ne yapacağız örneğin? Ona bakalım.
+
+518
+02:06:02,644 --> 02:06:28,463
+Yine tablonuzu alıyorsunuz ve aradığımız bir elemanınız var. Onu alıyorsunuz. Yine aynı şekilde birinci sıfırıncı elemandan daha doğrusu 5 fonksiyonunuza gelecek ikinci parametreniz sıfır. İlk denemeniz demek oluyor bu. Oradan başladınız. Yine bir iki için ve i'nin sıfır olduğu değer için bir j ürettiniz ve bunun tabloda olup olmadığına baktınız.
+
+519
+02:06:38,739 --> 02:06:45,599
+Bulduysanız ne hala sorun yok. Bulamadıysanız bir sonraki deneme ile devam edeceksiniz.
+
+520
+02:06:52,851 --> 02:06:54,492
+Burada da tablo sonunumu.
+
+521
+02:06:57,412 --> 02:06:58,132
+Geldiniz.
+
+522
+02:07:01,132 --> 02:07:02,452
+Teknoloji.
+
+523
+02:07:07,347 --> 02:07:08,347
+İlk sığa.
+
+524
+02:07:17,332 --> 02:07:22,572
+Bulunur, bulamadınız mı? Buna bakacaksınız. Böyle şartlar sağlandığınız sürece devam edeceksiniz.
+
+525
+02:07:27,315 --> 02:07:53,076
+Şimdi eklemeyi, aramayı yapıyoruz. Temel olan şey tek tek slotları denemeniz. Hash fonksiyonunuza verdiğiniz ikinci parametreyle bir sonraki slotu döndürmeniz. Allah Allah pancaya kapatıldı mı? Yine gitti. Neyse yazmayı bitirmiştim. Şimdi size sorum şu. Ben açarken siz de o soruyu düşünün. Böyle bir durumda silmeyi nasıl yaparız?
+
+526
+02:07:54,676 --> 02:08:12,316
+Slotlarınız doluyor. Bir slot doluyor, sonra ikincisi doluyor ki aslında Open Addressing'i gerçekten örneklerle şimdi örnek vereceğim. Birazcık daha belki oturur kafanızda. Belki ondan sonra bu soruyu sormak daha mantıklı olabilir ama.
+
+527
+02:08:12,316 --> 02:08:16,276
+Relating'i yapma işlemi biraz daha sıkıntılı.
+
+528
+02:08:34,996 --> 02:08:37,596
+Neyse zaten, yeni bir şeye geçecektim de.
+
+529
+02:08:42,260 --> 02:09:06,699
+Delete yapmak sıkıntılı arkadaşlar. Çünkü silme işlemi yaptığımız zaman eğer silinecek elemanın yerine örneğin bir nalk koyarsanız. Search çüm erken solulanmasına sebep olabilirsiniz. Normalde Search tablosumla gelinceye kadar.
+
+530
+02:09:07,247 --> 02:09:32,007
+Sönlanıyordu ya da occupy edilmemiş bir alana bir şey yerleştirmek istiyorsanız, boş bir alan bulmadığınız sürece dönecektiniz. Ama eğer siz oradaki alanı silerseniz, daha aslında devamında önceden yerleştirilmiş, o hash fonksiyonu bağlamında yerleştirilmiş elemanlar olduğu halde, erken bir şekilde oradaki nal değerini gördüğünüzde search'unuz sonlanabilir.
+
+531
+02:09:35,412 --> 02:09:39,811
+Null yapmak yerine belki delete yazabilirsiniz. Yani bir flag koyabilirsiniz oraya.
+
+532
+02:09:39,811 --> 02:09:49,412
+Html'ın içerisine. Ve insert fonksiyonumuz delete yazan slotu boş kabul edecek şekilde çalışır. O şekilde güncelleme yapar.
+
+533
+02:09:49,412 --> 02:10:00,000
+Ama delete edilen eleman çoksa, çok olursa, artık search için harcanan zamanınız load faktörden çok silinen elemanlara bağlı olur.
+
+534
+02:10:00,000 --> 02:10:14,479
+Bu da sizin için bir dezavantaj getirir. Dolayısıyla eğer silme işlemine çokça ihtiyacımız varsa Open Addressing kullanmak o zaman iyi bir çözüm olmuyor. Onun yerine Chain ile Collusion'ları çözmek daha mantıklı oluyor.
+
+535
+02:10:17,220 --> 02:10:23,239
+Şimdi buradan devam edelim. Şunu paylaşayım sizinle.
+
+536
+02:10:41,716 --> 02:10:47,015
+Şimdi bu Open adresi yapmak için uygulamak için nasıl tekniklerim var?
+
+537
+02:11:13,716 --> 02:11:18,676
+Diner Probing yapabilirim.
+
+538
+02:11:22,804 --> 02:11:23,744
+Kvadratik.
+
+539
+02:11:30,484 --> 02:11:33,804
+probing yapabilirim ya da double hashing yapabilirim.
+
+540
+02:11:46,131 --> 02:11:48,311
+Şimdi bunlara nasıl yapılıyor bir bakalım.
+
+541
+02:11:50,068 --> 02:12:15,248
+Bunlar aslında Linear Probing, Quadratic Probing ve Double Ashing. Aslında bir yardımcı hash fonksiyonu, tek parametreli bir yardımcı hash fonksiyonu üzerinden ilerleyen çözümler. Dedik ya, Open Address Link'te iki parametre alıyor diye. Başlangıcında bunların tamamında bir yardımcı hash fonksiyonu tanımlamanız gerekiyor tek parametreli. Onun üzerinden implementasyonunuzu devam ettiriyorsunuz.
+
+542
+02:12:16,212 --> 02:12:19,532
+Şimdi Liner Probing ile başlayalım.
+
+543
+02:12:22,804 --> 02:12:24,804
+Çok teşekkür ederim.
+
+544
+02:12:39,283 --> 02:12:45,163
+Şimdi şöyle bir formül var bunun için. Daha doğrusu görüntüsü şöyle.
+
+545
+02:13:14,804 --> 02:13:28,804
+Burada tek parametreli yardımcı fonksiyonumuz, eş fonksiyonumuzun çıktısını i ile topluyorsunuz ve m'e göre modunu alıyorsunuz. Linear probing ile her seferinde aynı tablo üzerinde slotlar içerisinde gezelmenizi sağlıyor.
+
+546
+02:13:40,819 --> 02:13:44,239
+Yardımcı fonksiyonu şöyle yazılmış olsun. Tamam, o da.
+
+547
+02:13:46,239 --> 02:13:47,539
+Bakalım ne yapıyoruz?
+
+548
+02:13:49,859 --> 02:13:51,279
+Şuraya bir hashtag'ı çizelim.
+
+549
+02:13:59,859 --> 02:14:06,579
+İlk yöntem, bir daha.
+
+550
+02:14:17,524 --> 02:14:42,824
+4, 1, 2, 3, 4, böyle gidiyor. Şimdi çalıştırdığım vakit, sağının 9 olduğu, emin 7 olduğu bu durum için, 5 fonksiyonumu 9 mod 7, o da bana 2'yi verecek.
+
+551
+02:14:45,011 --> 02:14:54,192
+Şimdi i'nin 0 olduğu durum için, i0, 2 artı 0,
+
+552
+02:14:58,547 --> 02:15:09,587
+Mod 7. O da bana 2'yi verecek. Bu demektir ki ilk bakacağım nokta 2. İkinci slot boş mu diye bakıyorum. İkinci slot boş olduğu için
+
+553
+02:15:11,728 --> 02:15:24,028
+yerleştirmek istediğim elemanımı yani dokuzu key'yi buraya koydum. Şimdi diğer bir eleman geliyor yerleştirmem için key geliyor. Örneğin 16.
+
+554
+02:15:25,363 --> 02:15:32,743
+16 için yine yardımcı eşimle bir değer öğreteceğim.
+
+555
+02:15:36,467 --> 02:16:00,688
+Bu da bana ikiyi verecek. Şimdi i0 iken birinci hoktayım. i0 iken 16.0 için yine 2 artı 0 mod 7'den bu da bana 2'yi verdi. Şimdi geldim 2'ye. 2 dolu. 2'yi yerleştiremediğim için bir sonraki.
+
+556
+02:16:01,460 --> 02:16:05,460
+Denememde, İ'nin 1 olduğu durum için fonksiyonlarımı çağırıyorum.
+
+557
+02:16:05,460 --> 02:16:08,460
+Yapma lütfen, gene mi kapandın?
+
+558
+02:16:08,460 --> 02:16:12,460
+Hakikaten çözüm bulmam lazım ya.
+
+559
+02:16:12,460 --> 02:16:19,460
+Şuraya bakmayın arkadaşlar, şimdi benim paylaşımı durdurayım, hemen açacağım.
+
+560
+02:16:19,460 --> 02:16:23,460
+Sorunuz varsa bu esnada alayım ben.
+
+561
+02:16:34,772 --> 02:16:35,772
+Bu ne?
+
+562
+02:16:59,731 --> 02:17:06,731
+Tamam. Şimdi, i'nin 1 olduğu durum için...
+
+563
+02:17:13,363 --> 02:17:34,123
+2 artı 1, mor 7. O da bana 3 verdi. Yani gidiyorum üçüncü elemana o zaman ben şimdi 16'yı yerleştirdim. Şimdi bu şeklinde bir işleyiş varken yine Collision olacak bir değer.
+
+564
+02:17:34,324 --> 02:17:47,364
+Örneğin, gelirse karşıma. O zaman nereye yerleşecek? Bu gidişattan artık onu anlayabiliyoruz değil mi? Şuraya yerleşecek. Yine iki verecek şekilde yardımcı fonksiyonu ile yer gelirse.
+
+565
+02:17:50,304 --> 02:17:55,083
+Yirmi üç kez de diyelim ki buraya yerleşecek. Bir sonraki buraya yerleşecek. Bir sonraki buraya yerleşecek.
+
+566
+02:17:56,340 --> 02:18:04,540
+Şimdi, linear probing'in avantajları ne olarak görünüyor şimdi size? Implementasyonu kolay. Basit bir şekilde implemente edebiliyorum.
+
+567
+02:18:04,540 --> 02:18:12,220
+Ama, clustering denen bir problem ortaya çıkıyor. Burada bakın, bazı cluster'lar oluştu.
+
+568
+02:18:12,220 --> 02:18:18,620
+Aa, opsi. Böyle bir özelliği varmış şu an kaleminin arkadaşlar.
+
+569
+02:18:25,203 --> 02:18:30,203
+[öğrenci].
+
+570
+02:18:30,203 --> 02:18:39,203
+Clusterlar, her elemanın aslında kendisinin yerleşmesi beklenen slotu değil de daha alttaki slotlara yerleşmesine sebep oluyor.
+
+571
+02:18:39,203 --> 02:18:45,203
+Dolayısıyla bu da benim search süremin çok uzamasına neden oluyor. İstediğim bir şey değil.
+
+572
+02:18:45,203 --> 02:18:50,203
+Diner Probe'in de avantajı bu. İmplementasyonu kolay ama ciddi bir clustering sorunu var.
+
+573
+02:18:50,432 --> 02:19:02,852
+Dolayısıyla bu clustering sorunumu azaltacak bir çözüm üzerinde durmam gerekiyor. Quadratic Probing bunu biraz daha azaltarak clustering problemini yaşamamı sağlıyor.
+
+574
+02:19:02,852 --> 02:19:05,231
+Şimdi ona bakalım nasıl bir şeymiş.
+
+575
+02:19:22,100 --> 02:19:28,100
+Ama çakışma olması durumunda, diner bir fonksiyon değil, kuadratik bir fonksiyon kullanmak.
+
+576
+02:19:28,100 --> 02:19:33,100
+Kuadratik probing'in amacı bu. Herhangi bir kuadratik fonksiyon olabilir.
+
+577
+02:19:33,100 --> 02:19:39,100
+Burada yazdığım olmak zorunda değil. Ama şunları kullanabiliriz örneğin.
+
+578
+02:19:41,100 --> 02:19:44,100
+Yine yardımcı bir fonksiyon üzerinden hareket ediyorum.
+
+579
+02:20:02,484 --> 02:20:09,084
+Bu mesela başarılı bir kvadratik probing fonksiyonu. Şöyle de bir şey belki görürsünüz.
+
+580
+02:20:17,108 --> 02:20:17,968
+Babasit.
+
+581
+02:20:26,260 --> 02:20:50,260
+Şimdi bu metot linear probing'den daha iyi çalışıyor ama, hash table'ın tamamının kullanılabilmesi için c1, c2 ve m'in seçilecek değerleri kısıtlı. Bu bize tablonun dışına atabilir. O anlamda dikkat etmek gerekiyor.
+
+582
+02:20:53,152 --> 02:21:05,152
+İki keyin initial propositionları aynıysa, sekansın ürettiği değerler de aynı oluyor ama yine hala klaster problemimiz var yani. Ama daha az uzunluklarda klasterlar oluşuyor.
+
+583
+02:21:05,152 --> 02:21:07,819
+Şimdi bir örnek yapalım.
+
+584
+02:21:13,716 --> 02:21:30,195
+Şimdi örneğin C1 eşittir 2, C2 eşittir M, C2 eşittir 1, emin de 7 oldu. Bir fonksiyon tanımlayalım. Üsttekini kullanıyorum bu işaret dediğim. Şunu kullanacağım.
+
+585
+02:21:31,507 --> 02:21:42,727
+Az önceki görüntüdeki yerleşimi hatırlıyorsunuz. 9, 16, 23. Bunlar arka arkaya gelmişlerdi. Şimdi kuadratik probing yaparsak ne oluyor? Ona bakalım.
+
+586
+02:21:51,700 --> 02:21:59,079
+Aslında bu sadece haş üstünde 9 var. Yani bunu yanlış yazdım. Haş üstü zaten tek balon etrafa bir şölesi yok.
+
+587
+02:22:07,603 --> 02:22:08,603
+9.7.
+
+588
+02:22:10,223 --> 02:22:10,743
+2.
+
+589
+02:22:12,683 --> 02:22:15,023
+2'yi şuraya yerleştiriyorum.
+
+590
+02:22:35,796 --> 02:22:39,756
+Buraya yerleştirelim. 16 geldi.
+
+591
+02:22:50,515 --> 02:22:59,015
+Dolayısıyla yine ikiye ulaştım. İki dolu olduğu için bu sefer Quadratic Probing fonksiyonumu çağırıyorum.
+
+592
+02:23:02,324 --> 02:23:20,984
+Ve 1 ile çağırıyorum. 2 artı çarpı 1. 1 çarpı 1'in karesi. Bu da 5. Demek ki 3, 4, 5. Şuraya 16'yı yerleştirdim.
+
+593
+02:23:22,204 --> 02:23:25,764
+Bir sonraki kezde örneğin 23 elime gelse.
+
+594
+02:23:35,763 --> 02:23:37,291
+Ne verecek bana?
+
+595
+02:23:40,659 --> 02:23:48,680
+23 dolu 2'ye geldim. 2 dolu olduğu için 1 için çalıştırıyorum.
+
+596
+02:23:51,739 --> 02:24:03,739
+2 artı 2 çarpı 1 artı 1 çarpı 1'den 5 ürettim. 5'e geldim. 5 de dolu. O zaman bir sonraki turn'de.
+
+597
+02:24:07,507 --> 02:24:09,188
+Şu değerle çalıştırıyorum.
+
+598
+02:24:10,347 --> 02:24:10,907
+2 artı.
+
+599
+02:24:11,387 --> 02:24:12,948
+3 artı 2 artı.
+
+600
+02:24:13,648 --> 02:24:15,108
+1 artı 2 makinesi.
+
+601
+02:24:15,788 --> 02:24:19,488
+O da bana 10 verdi.
+
+602
+02:24:24,884 --> 02:24:49,884
+Şurada bir yerlerde, ilgiri göze yerleştirdim. Dolayısıyla klasik probleminden biraz daha az karşılaşmış oldum. Daha iyi bir dağılım sağlamış oldum. Ama dediğim gibi CRR seçimi tablo dışına kaçmayacak şekilde olmalı.
+
+603
+02:24:57,907 --> 02:24:59,907
+Bak yine kısa yolu kullanmayı unuttum.
+
+604
+02:24:59,907 --> 02:25:01,907
+Hoşçakalın.
+
+605
+02:25:06,260 --> 02:25:07,260
+Döbleşik.
+
+606
+02:25:22,739 --> 02:25:36,059
+Double Ashing'de iki hash fonksiyonu kullanıyoruz. İkisi de aynı yardımcı hash fonksiyonunu kullanıyorlar ama birlikte bir fonksiyon üretiyorlar.
+
+607
+02:25:38,219 --> 02:25:44,659
+H1 ve H2 hash fonksiyonlarını kullanacağız. Kullanacağımız Double Ashing.
+
+608
+02:26:01,363 --> 02:26:20,683
+İki eş fonksiyonunu kullanan bir fonksiyon olmalı. Bunun gibi. Double eşik diğerlerine göre iyi sonuç veriyor. Çünkü bu yöntemin oluşturduğu permutasyonlar yani seçeneklerimiz rastgele özelliğe yakın. O yüzden güzel bir metot.
+
+609
+02:26:22,363 --> 02:26:26,003
+Şimdi iki tane fonksiyon belirleyip bir örnek yapalım.
+
+610
+02:26:32,051 --> 02:26:37,171
+Birincisi şu olsun. Burada M'in Table Size.
+
+611
+02:26:40,659 --> 02:26:48,159
+olması önemli. Buradaki dikkat edilmesi gereken şey o. İkinci fonksiyonumuz ise.
+
+612
+02:26:53,459 --> 02:26:58,459
+Şükür mü?
+
+613
+02:27:02,932 --> 02:27:04,932
+Bir artı
+
+614
+02:27:07,252 --> 02:27:25,932
+bu da yeni bir M devreye giriyor. Birincisinin Table Size olması gerektiğini söylemiştim. Bu da şöyle olursa ama küçük olmalı yani M'den ama fazla da küçük olmamaya slightly less.
+
+615
+02:27:25,932 --> 02:27:28,300
+Neredeyse işte ancak küçük.
+
+616
+02:27:29,780 --> 02:27:36,260
+Ne gibi mesela? M-1 gibi mesela. Bir şey seçmek mantıklı.
+
+617
+02:27:38,620 --> 02:27:40,479
+Bir tane tabloda örnek yapalım.
+
+618
+02:27:46,227 --> 02:27:47,227
+Bir şey açalım.
+
+619
+02:27:47,227 --> 02:27:49,227
+Aslında makar olmalıdır.
+
+620
+02:28:00,724 --> 02:28:08,204
+Şimdi şuraya fonksiyonlarımı bir yazalım. Diyelim ki ki 14. 14'ü insert etmek istiyorum.
+
+621
+02:28:11,084 --> 02:28:17,783
+Table Size'm 13. 13'lük bir boyutum var. O yüzden M'e 13 verdim.
+
+622
+02:28:19,684 --> 02:28:26,164
+Şimdi M-1 seçtiğim zaman çift sayı elde ederim. Ama Prime sayı kullanmak daha mantıklı demiştim.
+
+623
+02:28:27,092 --> 02:28:29,432
+Hadi bakalım. Yapma lütfen ya.
+
+624
+02:28:31,432 --> 02:28:32,492
+Arkadaş ya.
+
+625
+02:28:38,355 --> 02:28:40,355
+Teşekkürler.
+
+626
+02:28:57,620 --> 02:28:59,620
+Tamam artık onu kullanacağız.
+
+627
+02:29:01,620 --> 02:29:03,620
+Şöyle yazalım.
+
+628
+02:29:05,620 --> 02:29:07,436
+Hı, sizinle paylaşayım.
+
+629
+02:29:24,819 --> 02:29:47,659
+Şimdi ne demiştim? Table Size'ımın 13 olduğu. Dolayısıyla M'in de 13 olduğu ama diğer M'in biraz daha küçük bir değer ama prime olmasını istediğim için 11 olarak seçtiğim bir tablom var. 14'ü insert etmek istiyorum.
+
+630
+02:29:53,492 --> 02:29:59,492
+14 mod 13 O da bana virüverdi.
+
+631
+02:30:03,028 --> 02:30:07,488
+İkincisini hesaplıyorum. Şurada bu arada önce bir şey çizeyim.
+
+632
+02:30:12,564 --> 02:30:13,739
+Ahtırımı.
+
+633
+02:30:17,716 --> 02:30:24,396
+Tablomda bazı yerlerin önceden doldurulmuş olduğunu kabul edeceğim.
+
+634
+02:30:53,363 --> 02:31:02,363
+Böyle olsun. Şimdi şurada diyelim ki 79 var. Burası dolu. Şurada 69 var.
+
+635
+02:31:06,451 --> 02:31:08,451
+Burada 98 var.
+
+636
+02:31:10,912 --> 02:31:12,591
+Burada 72 var.
+
+637
+02:31:13,371 --> 02:31:14,891
+Şurada da 50 var.
+
+638
+02:31:16,811 --> 02:31:19,251
+14'ü insert etmek istiyorum ben.
+
+639
+02:31:19,631 --> 02:31:21,631
+H1 bana 1 verdi.
+
+640
+02:31:21,631 --> 02:31:23,851
+H2 için çalıştırıyorum.
+
+641
+02:31:26,051 --> 02:31:28,211
+O da 1 artı
+
+642
+02:31:30,611 --> 02:31:32,611
+14 mod 11'den
+
+643
+02:31:33,747 --> 02:31:52,747
+4 verdi. Şimdi i0 için birinci denememi yapıyorum. 1. Dolayısıyla t1'e bakıyorum. t1 burada dolu. Dolayısıyla ikinci denememi yapacağım.
+
+644
+02:32:00,531 --> 02:32:13,851
+1 artı 1 çarpı 4'ten 5. Yapma artık ya. Yine gitti. Çok verimsiz oldu böyle.
+
+645
+02:32:50,291 --> 02:32:54,291
+Ayağız, özellikle de kaybolmuştu.
+
+646
+02:33:33,716 --> 02:33:35,916
+Ayy, gerçekten çok yoruldum.
+
+647
+02:33:38,556 --> 02:33:38,976
+Evet.
+
+648
+02:33:40,876 --> 02:33:42,956
+Yani şimdi ne yapayım, baştan mı yazacağız?
+
+649
+02:33:46,956 --> 02:33:48,436
+Arkadaşlar, tamam yazalım.
+
+650
+02:33:51,335 --> 02:33:55,396
+14, mod 13'ten 1'di. Bunu bulmuştum.
+
+651
+02:33:57,515 --> 02:33:59,756
+H2'nin de 4 olduğunu bulmuştum.
+
+652
+02:34:01,396 --> 02:34:03,596
+İ'nin 0 olduğu değerler için.
+
+653
+02:34:07,316 --> 02:34:13,456
+Şöyle bir tablom vardı. Ben bari bunu bu sefer belki daha cümleyin. Hadi bakalım.
+
+654
+02:34:20,755 --> 02:34:26,995
+Tablo eklemek şeklinde yapmak yerine niye kalemle ekliyorsa ben onları çözeceğim.
+
+655
+02:34:32,147 --> 02:34:34,847
+Zaten tek bir işlemim kalmıştı aslında gösterecek.
+
+656
+02:34:44,788 --> 02:35:08,568
+Dolu olan gözlerim vardı. Burası doluydu mesela. Burası doluydu. Burası boştu. Burası doluydu. Birinci atışımda bir üretmişti bana. Bire gidip 79'un dolu olduğunu görmüştüm. Y'nin 2 olduğu değer için baktığım vakit.
+
+657
+02:35:09,843 --> 02:35:32,664
+İ'nin 1 olduğu değer için baktığım vakit, H 14'e 1. O da bana 5 döndürmüştü. Beşinci gözümde dolu olduğunu gördüm. Tekrar kapanmadan bitirmeye çalışıyorum. İ'nin 2 olduğu durum için ise 14'e 2. Bu da 1 artı 2 çarpı 4'ten bana 9 döndürüyor.
+
+658
+02:35:36,371 --> 02:35:49,072
+Buraya gelişti ve bunu yerleştirdi. Double Aishing'de böyle çalışıyor. Dolayısıyla daha rastgeleliğe yakın sonuçlar ürettiği için tercih ediliyor.
+
+659
+02:35:50,011 --> 02:35:57,691
+Şimdi önümüzdeki hafta devam etmek istiyorum. Artık biraz daha çünkü teorem ve ispatı üzerine gideceğiz. Belki bu problemi de çözerim o zamana kadar.
+
+660
+02:35:59,691 --> 02:36:02,111
+Var mı arkadaşlar sormak istediğiniz bir şey?
+
+661
+02:36:04,628 --> 02:36:08,048
+Önceki haftaların slide'larını koydum şeye.
+
+662
+02:36:09,587 --> 02:36:12,028
+Havet size koydum, oradan bakabilirsiniz.
+
+663
+02:36:12,848 --> 02:36:15,568
+Bunlar çok düzenli değil, arada kapandı, kayboldu vs.
+
+664
+02:36:16,288 --> 02:36:21,068
+Bu dersi o yüzden kayıt üzerinden belki daha şey yapmanız, takip etmeniz daha mantıklı olacak.
+
+665
+02:36:21,228 --> 02:36:22,708
+Sonrası için tekrar konuşalım.
+
+666
+02:36:25,708 --> 02:36:26,427
+Tamam arkadaşlar.
+
+667
+02:36:29,427 --> 02:36:30,068
+Tamam, peki.
+
+668
+02:36:30,868 --> 02:36:32,488
+İyi o hocam, teşekkür ederiz.
+
+669
+02:36:32,507 --> 02:36:34,567
+Teşekkür ederim o zaman. Sağ olun, görüşmek üzere.
+
+670
+02:36:35,707 --> 02:36:36,528
+Görüşmek üzere.
+
+671
+02:36:37,108 --> 02:36:38,587
+Sağ olun, hoşçakalın arkadaşlar.
