@@ -1,0 +1,3007 @@
+1
+00:02:24,372 --> 00:02:25,832
+Merhaba arkadaşlar.
+
+2
+00:02:28,292 --> 00:02:29,432
+Merhabalar hocam.
+
+3
+00:02:29,812 --> 00:02:30,392
+Merhaba.
+
+4
+00:02:30,712 --> 00:02:33,552
+Merhaba hocam.
+
+5
+00:02:33,712 --> 00:02:34,632
+Hoş geldiniz.
+
+6
+00:02:36,452 --> 00:02:38,512
+İki dakika daha bekleyeyim mi arkadaşlar?
+
+7
+00:02:39,032 --> 00:02:42,412
+Bir normalde 10-15 kişimiz daha var galiba ama.
+
+8
+00:02:43,532 --> 00:02:45,892
+İki dakika daha bekleyip öyle başlayayım.
+
+9
+00:02:46,812 --> 00:02:50,152
+Ben de bu arada sunumları açayım.
+
+10
+00:05:12,755 --> 00:05:19,155
+Peki arkadaşlar, tekrar merhaba, başlayalım. Ekranım geldi mi?
+
+11
+00:05:21,015 --> 00:05:21,715
+Evet hocam.
+
+12
+00:05:21,715 --> 00:05:37,555
+Tamam. İlk sayfayı kaldırdım. Tarihleri daha ayarlamamıştım programımız için. Onları tekrar söyleyeceğim. Daha doğrusu programda tam olarak yapamadım. Biraz kalabalık olmuş sınıf.
+
+13
+00:05:38,067 --> 00:05:56,087
+Ama prensipte şöyle söyleyeyim. Büyük ihtimalle dönem içi iki tane projemsi ödeviniz olur. Bir iki tane belki küçük ödev olur. Ders sırasında söyleyeceğim küçük sorular olabilir.
+
+14
+00:05:57,087 --> 00:06:05,587
+Dönem sonunda da yapabilirsem online sınav, bir sınav yapacağım.
+
+15
+00:06:06,163 --> 00:06:28,923
+Ya da ona benzer TECOM. Planım böyle şimdilik. Sayınız kaç oldu bilmiyorum. 35 artırmışlardı en son. Size sunum yaptırmak gibi bir şeyler vardı aklımda ama bu sayıyla programlayamadım şu anda.
+
+16
+00:06:29,779 --> 00:06:39,439
+Öyle bir şey programlayabilirsem ya da ödevlerle sizden alacağım şeyler, isteyeceğim şeyler olacak. O şekilde devam ederiz bu dönem.
+
+17
+00:06:41,019 --> 00:06:51,459
+Şimdi hemen bir iki tane kitap söyleyeceğim. Biz aslında yapay sinir ağları artı derin öğrenme diye şey yapıyoruz. Çoğunlukla derin öğrenme diye.
+
+18
+00:06:51,987 --> 00:07:08,367
+Söylüyoruz ders ama zaten farklı şeyler değiller aslında. Aynı köklere sahip konular. Dolayısıyla yapay sinir ağlarıyla başlayacağım. Daha sonra derin öğrenmeyle ilgili biraz daha spesifik bir şeyleri konuşuyor olacağız.
+
+19
+00:07:09,687 --> 00:07:17,367
+Kaynak olarak, ilk yazdığım kaynak, Loren Fossett'in Fundamentals of Neural Networks.
+
+20
+00:07:18,420 --> 00:07:35,439
+Dili çok basit olan güzel bir kitap. Derin öğrenmeye kadar gitmiyor. Biraz eski bir kitap. Ama dili çok sade. Güzel örnekler var içinde. İnternette de bulabiliyorsunuz. Bir bakmak isteyebilirsiniz.
+
+21
+00:07:36,360 --> 00:07:40,060
+Yapay sinir ağları ile ilgili anlatacağım kısımlar orayla örtüşüyor.
+
+22
+00:07:40,755 --> 00:08:08,235
+Bu, Martin Hagan'ın kitabı var. Biraz daha matematik tarafından bakan. O da iyi bir kitaptır. Ve tabii çok daha yeni olan, güncel olan MIT Press'in yayınladığı Deep Learning kitabı. Bunun Türkçesi de çıktı. Onu da belki bakmak isteyebilirsiniz veya genel olarak ilginiz varsa bu tür konuları tezinizde kullanmayı düşünüyorsanız mutlaka edinin zaten.
+
+23
+00:08:09,108 --> 00:08:26,307
+Bir de internette olan online bir kitap var Michael Wilson'ın. Bunların isimlerini zaten şu anda kayda geçiyordur. Buradan alıp bakarsanız faydası olur diye düşünüyorum.
+
+24
+00:08:29,908 --> 00:08:36,148
+Şimdi yapay sinir ağları nereden geliyor? Birazcık kökenlerinden bahsedelim.
+
+25
+00:08:36,543 --> 00:08:46,423
+Bilginiz vardır diye tahmin ediyorum. Belki biraz konulara da aşinasınızdır ama bana biraz bilgi verir misiniz?
+
+26
+00:08:47,903 --> 00:08:53,483
+Genel olarak ne kadar derin öğrenme veya yapay sinirayla uğraştınız?
+
+27
+00:08:54,843 --> 00:08:59,923
+Derslerinizde veya tezinizde kullanmak gibi bir niyetiniz var mı?
+
+28
+00:09:01,843 --> 00:09:03,683
+Hadi öyle bir giriş yapalım önce.
+
+29
+00:09:10,163 --> 00:09:17,923
+Listenizi alabilirsem ben soracağım. [öğrenci], ben önümdeki listedeki sıradan gideyim.
+
+30
+00:09:18,523 --> 00:09:19,083
+Tabii hocam.
+
+31
+00:09:19,764 --> 00:09:31,104
+Hocam biraz aşinalığım var konulara fakat derinlemesini öğrenmek istiyorum ve doktora tezimde de kullanmayı düşünüyorum. Deep Learning algoritmalarını. O nedenle ders aldım.
+
+32
+00:09:31,544 --> 00:09:34,443
+Teste ne yapmayı düşünüyorsun? Var mı bir şey?
+
+33
+00:09:34,844 --> 00:09:36,963
+Hocam şu anda tam olarak belli değil.
+
+34
+00:09:36,984 --> 00:09:37,443
+Ne yapacaksın?
+
+35
+00:09:38,183 --> 00:09:46,304
+Fakat hani savunma sanayiyle yönelik robotik sistemleri de içeren ve derin öğrenme algoritmalarını içeren bir sistem üzerine çalışmayı düşünüyorum.
+
+36
+00:09:46,995 --> 00:09:47,995
+[kişisel bilgi]
+
+37
+00:09:47,995 --> 00:09:49,316
+Konuşuyor musun dışarıda?
+
+38
+00:09:49,895 --> 00:09:51,215
+[kişisel bilgi] hocam.
+
+39
+00:09:52,215 --> 00:09:52,775
+Aa, tamam.
+
+40
+00:09:53,875 --> 00:09:54,275
+Tamam.
+
+41
+00:09:55,375 --> 00:09:58,096
+Tamam, o zaman konuşabiliriz bir ara.
+
+42
+00:09:58,836 --> 00:09:59,275
+Tabii hocam.
+
+43
+00:09:59,495 --> 00:10:01,135
+O botiye de bulaştıracaksan.
+
+44
+00:10:01,596 --> 00:10:02,475
+Tabii hocam olur.
+
+45
+00:10:02,755 --> 00:10:03,155
+Konuşalım.
+
+46
+00:10:03,955 --> 00:10:04,755
+Peki.
+
+47
+00:10:05,596 --> 00:10:07,435
+[öğrenci] senin nasıl durum?
+
+48
+00:10:13,491 --> 00:10:18,571
+[öğrenci]? Peki. [öğrenci]?
+
+49
+00:10:22,836 --> 00:10:23,996
+Sesim geliyor mu hocam?
+
+50
+00:10:26,796 --> 00:10:28,216
+Duyamadım sesini.
+
+51
+00:10:29,076 --> 00:10:35,256
+Hocam, ben de ilgileniyorum. Online birkaç tane kurs aldım. Şu anda da...
+
+52
+00:10:35,256 --> 00:10:36,216
+Aki veren aldın?
+
+53
+00:10:37,496 --> 00:10:38,115
+Coursera.
+
+54
+00:10:38,576 --> 00:10:40,216
+Coursera üzerinden aldım.
+
+55
+00:10:41,456 --> 00:10:46,875
+TensorFlow ağırlıklı çalışmalar yapıyorum. TensorFlow sakitli ön ağırlıklı çalışmalar yapıyorum.
+
+56
+00:10:47,892 --> 00:10:52,052
+İş için mi söylüyorsun bu çalışmalarını? Hangi amaçla yapıyorsun?
+
+57
+00:10:53,451 --> 00:11:12,991
+Hocam, akademik kariyer düşünüyorum Avrupa'da. [kişisel bilgi] Şu anda iş için diyebiliriz.
+
+58
+00:11:14,092 --> 00:11:15,292
+Tamam, çalışıyor musun?
+
+59
+00:11:16,275 --> 00:11:17,995
+Evet, çalışıyorum aynı zamanda.
+
+60
+00:11:18,615 --> 00:11:21,375
+Nerede? Ya da sektör?
+
+61
+00:11:22,316 --> 00:11:27,336
+Bir yazılım firmasında network yönetim sistemi uygulaması geliştiriyoruz.
+
+62
+00:11:28,275 --> 00:11:32,155
+Güvenlik tarafı da o yüzden mi ilgini çekiyor?
+
+63
+00:11:33,296 --> 00:11:39,275
+Yani gelecekte önemli olacağını düşündüğüm için güvenlik tarafını seçtim.
+
+64
+00:11:41,268 --> 00:11:50,648
+İşimle doğrudan alakalı değil aslında şu anki yaptığım işte güvenlikle alakalı çok bir şey yapmıyorum ama önümüzdeki yıllarda çok ciddi etkisi olacağını düşünüyorum.
+
+65
+00:11:53,648 --> 00:12:00,608
+Şu an şey de sorayım ya arkadaşlar yüksek lisans mı doktor ama hangi aşamadasınız onu da söyler misiniz bana?
+
+66
+00:12:01,368 --> 00:12:05,468
+Tabii hocam ben şu an yüksek lisans aşaması.
+
+67
+00:12:08,692 --> 00:12:16,111
+Peki, senin konuların da yine bana yakınmış. Konuşuruz daha sonrasında da istersen.
+
+68
+00:12:17,051 --> 00:12:18,152
+Tabii hocam, teşekkürler.
+
+69
+00:12:18,731 --> 00:12:22,831
+Ben teşekkür ederim. [öğrenci], senden de atalım mı?
+
+70
+00:12:30,515 --> 00:12:34,775
+Merhaba. Ay sesin çok kısık geliyor [öğrenci].
+
+71
+00:12:37,275 --> 00:12:38,576
+Ben demeyim.
+
+72
+00:12:46,259 --> 00:12:48,299
+Biz seni duyamıyoruz [öğrenci].
+
+73
+00:12:48,740 --> 00:12:50,099
+Şimdi duyabiliyor musunuz beni?
+
+74
+00:12:50,799 --> 00:12:54,399
+Peki, çok kısık ama söyle. Anlamaya çalışıyorum.
+
+75
+00:12:55,779 --> 00:13:00,000
+Şimdi girebildim ben sisteme. Affedersiniz. Tam olarak ne söyleyebilirim?
+
+76
+00:13:00,000 --> 00:13:00,440
+Ha tamam.
+
+77
+00:13:01,039 --> 00:13:02,200
+Kendim ben...
+
+78
+00:13:02,292 --> 00:13:13,951
+Kabaca, evet biraz kendinizi tanıtmak. Ne yapıyorsunuz? Derin öğrenmeyi niye istediniz? Tezde kullanmayı düşünüyor musunuz? İşle mi kullanmayı düşünüyorsunuz?
+
+79
+00:13:13,951 --> 00:13:27,951
+Tamam. Ben geçen yıl başladım yüksek lisansa. İkinci senem. Aslında ders almam gerekmiyor ama geçen yılda ni almıştım. Bizim bölümde açılmıştı.
+
+80
+00:13:29,779 --> 00:13:37,839
+Tezimi de bu alanda belirlemeyi düşündüğüm için, yani başlığını attık ama biraz bir şeyler öğrenmek istediğim için bu bölümden aldım dersi.
+
+81
+00:13:38,559 --> 00:13:39,299
+Başlıyor ne?
+
+82
+00:13:40,319 --> 00:13:46,399
+Tedarik zinciri yönetiminde yapay zeka uygulamaları dedik. Yani çok geniş bir başlık şu an ama.
+
+83
+00:13:46,620 --> 00:13:47,319
+Evet, aha.
+
+84
+00:13:48,884 --> 00:13:59,144
+O yüzden merak ettim. Burada da bu ilk derste derin içeriğini anlayayım, yapabilir miyim? Çünkü bilgisayar mühendisliğinden olunca belki daha ağırdır. Bilemiyorum şu an.
+
+85
+00:14:01,843 --> 00:14:07,423
+Göreceğiyle çok ağır değil. Ders biraz temelleri üzerinden gideceğim.
+
+86
+00:14:07,827 --> 00:14:24,588
+Ama sonuç itibariyle tabii uygulama yaparken bunu tabii nerede olursa olsun kullanman gerekecek. En azından bir miktar kodlama yapman ve kütüphaneleri kullanman gerekecek. Onun dışında o kadar ağır değil ama bir bak bakalım bir süre.
+
+87
+00:14:26,588 --> 00:14:30,788
+Peki, kimle konuşmadım? [öğrenci], burada mısın?
+
+88
+00:14:35,316 --> 00:14:37,236
+Merhaba hocam. Sesim geliyor mu?
+
+89
+00:14:37,656 --> 00:14:38,596
+Geliyor, geliyor.
+
+90
+00:14:39,776 --> 00:14:44,476
+Evet, yüksek sens öğrencisiyim ben de. [kişisel bilgi]
+
+91
+00:14:45,996 --> 00:14:47,476
+İlginç hangisinde acaba?
+
+92
+00:14:47,796 --> 00:14:54,276
+Deep Learning almamın nedeni de böyle daha çok bilgisayarlarla görme üstüne tarafımda çalışmak istiyorum.
+
+93
+00:14:54,276 --> 00:14:58,516
+Bu tezimde de kullanacağım. Tezim şöyle bir şey.
+
+94
+00:14:59,028 --> 00:15:12,587
+Şehir alanlarında bir kara aracıyla otonom olarak da navigasyon. Burada çeşitli araziler falan olacak. Bunları tespit etme olacak. Farklı objeler olacak. Bunları tespit edip buna göre...
+
+95
+00:15:12,587 --> 00:15:15,327
+Yani danışman atamasını yaptın mı [öğrenci]?
+
+96
+00:15:15,727 --> 00:15:17,227
+[kişisel bilgi]
+
+97
+00:15:17,227 --> 00:15:20,028
+Tamam. Şeyi soracağım.
+
+98
+00:15:21,652 --> 00:15:24,332
+Sen de Coursera'nın kurslarını almış mıydın?
+
+99
+00:15:24,752 --> 00:15:25,812
+Almadım hocam ben onları.
+
+100
+00:15:26,072 --> 00:15:26,532
+Yok hocam.
+
+101
+00:15:26,532 --> 00:15:26,892
+Almadın mı?
+
+102
+00:15:27,192 --> 00:15:27,592
+Yok hocam.
+
+103
+00:15:27,592 --> 00:15:34,932
+Ben yanlış hatırlıyorum. Tamam. O zaman daha önce herhangi bir kurs almadın en azından.
+
+104
+00:15:35,412 --> 00:15:42,432
+Yok kurs almadım. Ama yani farklı farklı derslerde bu deep learning yapay siniraları olsun. Bir aşinalığım var yani.
+
+105
+00:15:43,132 --> 00:15:44,672
+Var. Tamam.
+
+106
+00:15:45,268 --> 00:15:56,288
+Peki, atlarsam sonra beni uyandırın olur mu? Söyleyin bir anne konuşmanızı diye. [öğrenci], benim önümdeki liste bazen oynuyor da.
+
+107
+00:15:58,348 --> 00:15:59,187
+Merhaba hocam.
+
+108
+00:15:59,888 --> 00:16:02,947
+Merhaba. Sen de biraz bahset bize istersen.
+
+109
+00:16:03,796 --> 00:16:16,736
+Hocam ben de doktora öğrencisiyim. Geçen sene başlamıştım. [kişisel bilgi]
+
+110
+00:16:17,135 --> 00:16:40,515
+Evet hocam, bu dönemde yani [kişisel bilgi]
+
+111
+00:16:44,816 --> 00:16:47,576
+İlişkilendirmeyi planlıyoruz şu an için.
+
+112
+00:16:47,576 --> 00:16:55,576
+Tamam. Senin herhangi bir bilgin, kullanmışlığın, değerli öğrenme ve öral...
+
+113
+00:16:57,355 --> 00:17:06,275
+Yani şok. Bu konuya dair çok bir bilgim sahibi değilim. Online derslere de katılım sağlamadım.
+
+114
+00:17:06,275 --> 00:17:07,415
+Tamam.
+
+115
+00:17:08,627 --> 00:17:16,947
+Geçen sene ki dersimizle belki kavramsız olarak birkaç hususu araştırmışım ama bu alanda henüz daha yolun başındayım.
+
+116
+00:17:17,567 --> 00:17:19,127
+Tamam, teşekkür ederiz.
+
+117
+00:17:21,367 --> 00:17:22,167
+[öğrenci]?
+
+118
+00:17:24,407 --> 00:17:25,307
+Merhaba hocam.
+
+119
+00:17:25,788 --> 00:17:26,367
+Merhabalar.
+
+120
+00:17:27,748 --> 00:17:28,707
+İsim [öğrenci].
+
+121
+00:17:30,707 --> 00:17:35,147
+Bilimsel hazırlık okudum. Yüksek lisansa yaklaşık iki yıl önce başladım.
+
+122
+00:17:35,892 --> 00:17:49,692
+Geçen senede makine öğrenmesi ders almıştım. Aslında yapay sinir ağlarına ve derin öğrenmeye bir ilgim var. Tezim de aslında bu konuyla birebir alakalı olmasa da benzer bir konu.
+
+123
+00:17:53,652 --> 00:18:00,652
+Derin Öğrenme ve Yapay Sinir Ağları kullanabileceğim bir konu. Fatih Hoca ile çalışıyoruz. Konum ise...
+
+124
+00:18:00,652 --> 00:18:01,652
+Neydi?
+
+125
+00:18:01,652 --> 00:18:04,652
+İniversitesi Bilgisayar Mühendisliği ve Doğal Dil İşlemi.
+
+126
+00:18:04,652 --> 00:18:05,652
+Tamam.
+
+127
+00:18:05,652 --> 00:18:07,652
+Bu şekilde.
+
+128
+00:18:08,500 --> 00:18:15,420
+Tamam, teşekkür ederiz. Senin bir tecrüben var mı? Yeni mi başlıyorsun kullanmaya?
+
+129
+00:18:15,980 --> 00:18:21,279
+Şöyle, yani iş hayatında kullanamadım. [kişisel bilgi]
+
+130
+00:18:21,711 --> 00:18:42,152
+Fakat iş dünyasında kullanamadım. Daha çok popüler programlı dilleriyle işler yapıyoruz ama makine öğrenmesi ve derin öğrenme, yapay sinir ağları gibi konuları işaretinde kullanma fırsatım olmadı. Fakat makine öğrenmesi dersinde yaptığımız ödevler ve projeler var aklımda kalan bilgi olarak. Bu şekilde hocam.
+
+131
+00:18:42,572 --> 00:18:44,552
+Tez de kullanacaksın büyük ihtimalle.
+
+132
+00:18:45,351 --> 00:18:46,311
+Evet hocam.
+
+133
+00:18:46,711 --> 00:18:47,751
+Teşekkürler.
+
+134
+00:18:47,751 --> 00:18:48,291
+Kolay gelsin.
+
+135
+00:18:48,711 --> 00:18:49,052
+Sağ olun.
+
+136
+00:18:50,451 --> 00:18:52,331
+Merhaba hocam. Merhaba.
+
+137
+00:18:52,331 --> 00:19:06,552
+Öğrencisiyim. Daha önce yüksek lisansta yapay sinir ağlarıyla ilgili biraz çalışmıştık. [kişisel bilgi]
+
+138
+00:19:07,059 --> 00:19:19,579
+[kişisel bilgi]
+
+139
+00:19:20,440 --> 00:19:29,659
+Aynı bir şey var ama yine derin öğrenmeyle birlikte yapay sinir ağlarını yeni görmüş olacağım aslında. Derin öğrenme benim için daha yeni.
+
+140
+00:19:34,256 --> 00:20:00,000
+Gibi biraz daha bir madenciliğine kayan bir konu üzerinden gitmek için gibi duruyor şu an. Birazcık daha çalıştıracağım. Daha başlamadın herhalde. Aslında altyapım var ama daha önce yani ben de bilimsel hazırlık okudum hocam bir yıl. Tezle ilgili bilimsel hazırlık yılı boyunca tabii hiçbir şey düşünmediğim için aklımda biraz daha havaya...
+
+141
+00:20:00,000 --> 00:20:08,240
+Havada kaldı. Ama ciddi yüksek lisans sezirme de bağlantılı bir fikrim var, fikirlerim var daha doğrusu.
+
+142
+00:20:08,480 --> 00:20:14,340
+Dersler bitmiş durumda mı? Bitiyor mu bu dönem yoksa daha derste ne aşamadasın?
+
+143
+00:20:14,900 --> 00:20:20,440
+Doktorada iki ders aldım. Geçen sene bilimsel hazırlıkta da iki doktora dersi almıştım.
+
+144
+00:20:20,440 --> 00:20:27,220
+Şimdi bu dönem dört ders daha aldım doktoradan. Dolayısıyla bir zorunlu dersim kalıyor ikinci döneme.
+
+145
+00:20:27,551 --> 00:20:41,211
+Yani biraz daha vaktin var ama en azından. Evet, öyle görünüyor. Tamam. Güzel, kolay gelsin. [öğrenci]. Merhaba hocam.
+
+146
+00:20:41,211 --> 00:20:52,652
+Geliyor. Hocam ben yüksek sensör öncesiyim. Şu anda deyip reinforcement örnek yapıyorum.
+
+147
+00:20:54,387 --> 00:21:03,007
+Aslında bu dersi daha önce geçen sene sizden almıştım ve BB ile geçmiştim. Hem notu yükseltmek için, hem de rap pekişmesi için tekrar aldım.
+
+148
+00:21:03,007 --> 00:21:15,007
+Öyle mi? Peki. Tamam, inşallah daha güzel bir notla şey yaparsın. Başka bir şekilde kullanmışlığın var mı? Yaparsın raha veya derin öğrenme?
+
+149
+00:21:15,007 --> 00:21:16,647
+Veya işin var mı?
+
+150
+00:21:16,647 --> 00:21:19,947
+Ben de sonunda dil ve impulsuz dönük yapıyorum hocam.
+
+151
+00:21:20,211 --> 00:21:28,251
+Başka bir şekilde kullanmıştım. O kadar hocam. İş alıncıyorsanız yok hocam. [kişisel bilgi]
+
+152
+00:21:28,251 --> 00:21:34,052
+Yani herhangi bir şekilde hayatınızda yeri var mı diye merak ederek sordum.
+
+153
+00:21:34,052 --> 00:21:37,932
+Yok hocam. [kişisel bilgi]
+
+154
+00:21:39,152 --> 00:21:41,251
+Tamam, teşekkürler. [öğrenci]?
+
+155
+00:21:42,392 --> 00:21:43,231
+Merhabalar hocam.
+
+156
+00:21:43,632 --> 00:21:44,311
+Merhabalar.
+
+157
+00:21:44,736 --> 00:22:04,115
+Benim yüksek lisans da ikinci dönemim. Derin Öğrenme'ye ilgim var. Daha önce Data Camp'tan Derin Öğrenme girişle ilgili bir kurs almıştım. Şu anda kurserada da kaydoldum. Bunun haricinde pandemi sürecinde hafta sonlarımı Derin Öğrenme ve Veri Bilimi ile ilgili katıldığım kurslarla geçirdim.
+
+158
+00:22:06,291 --> 00:22:19,831
+Tweet Classification ile ilgili bir proje gerçekleştirdim. Şu anda da tavsiye sistemleriyle derin öğrenmeyi kullandığımız bir proje yapıyoruz. Yani benim biraz ilgim var diyebilirim. Seviyorum bu konuları.
+
+159
+00:22:20,723 --> 00:22:24,743
+Tez için düşünce kullanmak yönünde.
+
+160
+00:22:24,743 --> 00:22:31,883
+Evet hocam, tezimde kullanmayı düşünüyorum ama henüz kesin bir karar veremedim. Tez başlığı atmak durumundaydım ders seçmek için.
+
+161
+00:22:32,583 --> 00:22:41,763
+Şey gibi, görüntüden yazı tahminleme gibi çok genel bir başlık attım ama bunu daha da bu derslere aldıktan sonra spesifikleştirmeyi düşünüyorum.
+
+162
+00:22:42,963 --> 00:22:44,363
+Tamam, kolay gelsin.
+
+163
+00:22:44,883 --> 00:22:45,623
+Teşekkür ederim.
+
+164
+00:22:46,383 --> 00:22:47,143
+[öğrenci]?
+
+165
+00:22:48,084 --> 00:22:49,683
+Merhaba hocam.
+
+166
+00:22:50,124 --> 00:22:50,804
+Merhabalar.
+
+167
+00:22:51,324 --> 00:23:01,504
+Hocam ben yüksek lisansı yaptım. Doktoradan şu anda. [kişisel bilgi] Şimdi dok paratezimde de yine...
+
+168
+00:23:01,504 --> 00:23:04,064
+Yüksek lisansı nerede yaptın? Bizde mi yaptın?
+
+169
+00:23:04,244 --> 00:23:05,544
+[kişisel bilgi]
+
+170
+00:23:06,384 --> 00:23:07,064
+Mekatronik'te?
+
+171
+00:23:07,084 --> 00:23:08,304
+[kişisel bilgi]
+
+172
+00:23:08,544 --> 00:23:08,844
+Tamam.
+
+173
+00:23:09,375 --> 00:23:19,016
+[kişisel bilgi] Yani yapay zekayı da o alanda kullanmak için ben sizin dersinizi aldım.
+
+174
+00:23:20,296 --> 00:23:31,936
+Tamam. Senle de bir konuşuruz ne yapacaksın insan sağlık araçlarıyla. İşin alakası var mı? Çalışıyor mu? [kişisel bilgi]
+
+175
+00:23:34,516 --> 00:23:37,836
+Tamam, pardon. Fark etmedim ben.
+
+176
+00:23:38,215 --> 00:23:38,875
+Tamam hocam.
+
+177
+00:23:39,255 --> 00:23:41,816
+Peki. Dersler daha bitmedi herhalde.
+
+178
+00:23:42,215 --> 00:23:43,475
+Yok hocam. Şu an ikinci dönemde.
+
+179
+00:23:43,475 --> 00:23:44,915
+Ama şu an. Tamam.
+
+180
+00:23:45,975 --> 00:23:48,336
+Tamam. Peki. Kolay gelsin sana.
+
+181
+00:23:48,336 --> 00:23:49,516
+Tamam hocam. Teşekkür ederim.
+
+182
+00:23:50,855 --> 00:23:52,115
+Başka? [öğrenci]?
+
+183
+00:23:54,451 --> 00:23:56,172
+Merhaba hocam, sesim geliyor mu?
+
+184
+00:23:56,271 --> 00:23:57,672
+Merhabalar, geliyor evet.
+
+185
+00:23:58,172 --> 00:24:14,412
+Ben [öğrenci]. [kişisel bilgi]
+
+186
+00:24:15,155 --> 00:24:39,275
+Tezimde ancak içerik şöyle yoğun bir veri analizi yapacağım. Yani ana mantığım şu, bir batimetri çalışmasından alınan verileri işleyerek oradaki hataları tespit edip hataların yerine doğru tahminler yapmaya çalışacağım. Bunun için de Cenk Hoca ile çalışıyoruz Mekatronik Mühendisliği'nde.
+
+187
+00:24:39,839 --> 00:24:51,699
+Burada da yapay sinir ağları ve derin öğrenmeyi öğrenip, bulanık mantıkla birlikte kullanabilir miyim ve vizyonumu geliştirmek için bu dersi aldatıyorum.
+
+188
+00:24:51,719 --> 00:24:52,079
+Karşılaştırabilirsin belki.
+
+189
+00:24:53,279 --> 00:24:57,000
+Bu vizyonumu da geliştirmek için bu dersi seçtim.
+
+190
+00:24:57,859 --> 00:25:05,740
+Tamam. Bu vesileyle söyleyeyim. Belki mümkün olduğunca size yakın bir uygulama alanı seçmeniz için.
+
+191
+00:25:06,144 --> 00:25:27,403
+[öğrenci], proje konularını belirlerken sizden öneri alabilirim. Birazcık kalabalık olmanız beni ürkütüyor ama yine de size faydası olacak bir şekilde bir proje konusu, bir ödev seçelim en azından diye planlıyorum. [öğrenci] burada mısın?
+
+192
+00:25:32,884 --> 00:25:43,223
+Peki. [öğrenci] senin haberin var mı [öğrenci]'den? İşte herhalde. Geçiyorum ben. [öğrenci]?
+
+193
+00:25:44,604 --> 00:25:46,423
+Merhabalar hocam. Sesim geliyor mu?
+
+194
+00:25:47,144 --> 00:25:47,564
+Geliyor.
+
+195
+00:25:48,344 --> 00:25:51,324
+Ben bu yıl başladım. Daha birinci dönemim.
+
+196
+00:25:51,988 --> 00:26:17,648
+Bu sene mezun oldum lisanstan da. Lisans sürecimde bir yapay zeka dersi almıştım. O derste birazcık giriş yapmıştık. Derin öğrenme ve yapay sinir ağlarına. Onun dışında ben de ilgim olduğu için birazcık online kurslar aldım. Almaya devam ediyorum. Belki tezimle kullanabilirim diye hem de ilgim olduğu için almak istedim dersi.
+
+197
+00:26:18,548 --> 00:26:33,788
+[kişisel bilgi] Şimdi de devam etme gibi bir durumum var ama orada bu alanla ilgili çalışmıyordum. [kişisel bilgi] ama havacılıkla ilgili belki bir şeyler, bir uygulamalar yapabilirim diye düşünüyorum.
+
+198
+00:26:33,788 --> 00:26:42,087
+Olabilir. Türk Hava Yollarının da bazı uygulamaları var bildiğim sebebiyle. Daha doğrusu en azından ARGE merkezimiz var değil mi?
+
+199
+00:26:42,644 --> 00:26:44,884
+[kişisel bilgi]
+
+200
+00:26:45,324 --> 00:26:46,304
+Argede misin? Tamam.
+
+201
+00:26:46,584 --> 00:26:47,364
+Argedeyim.
+
+202
+00:26:47,504 --> 00:26:49,924
+Ama o zaman iş ne yarar diye tahmin ediyorum.
+
+203
+00:26:51,044 --> 00:26:52,264
+O şekilde.
+
+204
+00:26:52,544 --> 00:26:54,044
+Siz belirlemedin herhalde.
+
+205
+00:26:54,524 --> 00:26:55,824
+Yok hocam, daha yeni.
+
+206
+00:26:56,284 --> 00:26:56,724
+Erken.
+
+207
+00:26:57,364 --> 00:26:57,744
+Evet.
+
+208
+00:26:58,364 --> 00:27:05,804
+Tamam. Yine konuşmak istersen, herkes için aslında konusu yakın olanlara ayrıca söylüyormuşum gibi oluyor ama.
+
+209
+00:27:06,291 --> 00:27:10,511
+PES konumuzla ilgili her zaman konuşuruz istediğinizde.
+
+210
+00:27:11,511 --> 00:27:12,771
+Teşekkürler hocam. Sağ olun.
+
+211
+00:27:13,351 --> 00:27:14,511
+Ben de teşekkür ederim.
+
+212
+00:27:14,511 --> 00:27:16,071
+[öğrenci].
+
+213
+00:27:16,819 --> 00:27:43,480
+Merhaba, merhaba hocam. Merhabalar. Ben de aslında geçen dönem başladım ama geçen dönem dondurdum. İlk dönemim olduğu için, bizi eve kilitledikleri için. Bu dönem baktım devam edecek, böyle gitmeyecek. Ama şey güzel oldu, ben normalde bir günü boşaltmaya çalışıyorum çalıştığım için. Farklı günlerde ders alabildim. Böylelikle ders planı daha iyi oldu. Böyle sizi seçebildim yani.
+
+214
+00:27:44,819 --> 00:27:59,900
+Bu konuya ilgim var ama hiçbir işimde de kullanmadım. Daha önce ders almadım. Lisansta da böyle bir ders almadım. Ama Udemy'den takip ettiğim kurslar var. Yeni başladım ama hevesliyim diyeyim. Öyle.
+
+215
+00:27:59,900 --> 00:28:10,860
+Tamam. Udemy yerine Coursera'nın kurslarını takip edersen Deep AI kursu var.
+
+216
+00:28:12,528 --> 00:28:27,788
+Özellikle onu tavsiye edeyim. Yudemi'dekilerin güvenilirliği biraz daha sınırlı olabiliyor. Biraz daha güvenilir yerleri ve üniversitelerin kurslarını tercihen takip et olur mu?
+
+217
+00:28:28,208 --> 00:28:30,228
+Tamam hocam. Teşekkür ederim.
+
+218
+00:28:30,668 --> 00:28:33,988
+Ben teşekkür ederim. [öğrenci].
+
+219
+00:28:36,128 --> 00:28:38,268
+Merhaba hocam. Sesim geliyor mu?
+
+220
+00:28:38,804 --> 00:28:40,764
+Geliyor, geliyor. Gayet iyi geliyor.
+
+221
+00:28:41,503 --> 00:28:53,024
+Merhaba hocam. Ben [öğrenci]. [kişisel bilgi]
+
+222
+00:28:54,923 --> 00:28:57,243
+Şimdi biraz sesin gitti [öğrenci].
+
+223
+00:28:59,364 --> 00:29:03,024
+[kişisel bilgi]
+
+224
+00:29:03,024 --> 00:29:03,923
+Tamam.
+
+225
+00:29:04,596 --> 00:29:16,795
+Orada RG birimin değeri son ikisine ve derin öğrenme ile sağlık bilişimi üzerine, sağlık sistemleri üzerine derin öğrenme. Genelde TÜBİTAK kurucu.
+
+226
+00:29:18,255 --> 00:29:21,415
+O zaman biraz uygulama yapabildin yani.
+
+227
+00:29:21,415 --> 00:29:32,096
+Evet hocam. Yapma fırsatım oldu. Zaten yüksek sansımda da makine öğrenmesi ve derin öğrenmesi derste aynı şahı aldım.
+
+228
+00:29:33,140 --> 00:29:55,600
+Doktoramda da bu konuda devam etmek istiyorum ama daha bir proje ya da fikir olarak daha bir şey bulamadım. Nasıl bir doktora çalışması yapmam gerektiğini de tam olarak yapamadım. Biraz da onunla ilgili düşüncelerim var. Onu düşünüyorum. Nasıl bir şey yaptım?
+
+229
+00:29:55,600 --> 00:30:00,600
+Bu süreçte belki birazcık araştırma fırsatın olur veya...
+
+230
+00:30:00,912 --> 00:30:09,572
+Burada konuştuklarımızdan bile aklına bir şeyler gelecektir diye tahmin ediyorum. Herhalde biraz daha vaktin var değil mi test seçmek için?
+
+231
+00:30:09,592 --> 00:30:11,612
+Var hocam da ilk dönemin doktorat.
+
+232
+00:30:11,612 --> 00:30:20,072
+İlk dönemin, tamam. O zaman belki bu süreçte karar verebilirsin. Peki, teşekkür ediyorum.
+
+233
+00:30:20,072 --> 00:30:20,471
+Teşekkürler.
+
+234
+00:30:21,532 --> 00:30:22,211
+[öğrenci]?
+
+235
+00:30:23,672 --> 00:30:25,251
+Merhabalar hocam, sesim geliyor mu?
+
+236
+00:30:25,612 --> 00:30:26,292
+Geliyor, evet.
+
+237
+00:30:27,508 --> 00:30:44,307
+İsmim Yüksek Lisans'ın birinci dönemindeyim. Geçen sene bilimsel hazırlık almıştım iki dönem. [kişisel bilgi]
+
+238
+00:30:45,648 --> 00:30:47,088
+Duymamıştım orayı. Tamam.
+
+239
+00:30:47,768 --> 00:30:54,528
+Şöyle yani Digiturk'ün web'e bastığı tüm yayınlar bizim programlardan geçiyor. Ana müşterimiz Digiturk.
+
+240
+00:30:54,996 --> 00:31:18,636
+C, C++'larına çalışıyoruz. Yapay Zeka Üzerine de daha önce Reinforcement Learning ve GAN modelleri üzerinde çalıştım. Reinforcement Learning'te yaklaşık 5-6 kişiyle temel bir kitap vardı. Richard Satın'ın Reinforcement Learning, Introduction to Reinforcement Learning kitabını özetler halinde, bölümler halinde Türk-Türkçeye çevirdik.
+
+241
+00:31:19,155 --> 00:31:19,915
+Öyle mi?
+
+242
+00:31:20,435 --> 00:31:40,175
+Evet, Türkçe'yi çevirdik. Kendi sitemizde de yayınladık. Yaklaşık bir Discord'da bir ekibiz. Yani 20-25 kişilik bir ekibiz. Yani tez konumu daha düşünmedim. Daha önce dediğim gibi Aner'i Aral ve Gan Zer'ine çalıştım. Ya birinden ilerleyeceğim ya da ikisini ortak bir noktada birleştirmeyi düşünüyorum. Şu an kafamda bir şeyler yok.
+
+243
+00:31:41,044 --> 00:31:46,884
+Öyle. Eğer isteyen arkadaşlar olursa kendi sitemizinde linkini atarım hocam.
+
+244
+00:31:46,884 --> 00:32:02,484
+Şimdi onu söyleyeceğim. İstersen evet chatten gönderdim. Biz burada bir şeyler yayınlıyoruz. Pekiştirmeli öğrenme kitabı var içeride. Yani bölümlerde ilerleyebilirler.
+
+245
+00:32:02,484 --> 00:32:07,464
+Yani toplamda 14 bölüm falan da biz 10 bölümünü özet şekilde çevirdik. Tam böyle.
+
+246
+00:32:07,872 --> 00:32:15,451
+Birebir çeviri değil. Öyle bir şeyler yapmaya çalışıyoruz hocam. Ama test konumu daha düşünmedim. İlk dönemindeyim.
+
+247
+00:32:16,352 --> 00:32:23,211
+Tamam. Gelir zaten bu süreç içinde çıkar diye tahmin ediyorum. Peki kolay gelsin. Teşekkürler.
+
+248
+00:32:23,672 --> 00:32:24,492
+Teşekkürler hocam.
+
+249
+00:32:24,992 --> 00:32:26,252
+[öğrenci] burada mısın?
+
+250
+00:32:27,692 --> 00:32:28,492
+Buradayım hocam.
+
+251
+00:32:28,948 --> 00:32:36,448
+Tamam. Merhabalar. Merhabalar. Sen biraz bahset, ben hatırlayayım. Sen ne tez yapacaksın, yapacak mısın?
+
+252
+00:32:38,068 --> 00:32:45,288
+Ben biraz sizin kayıp öğrencilerinizden oldum geçen dönemden dolayı. Yakında bulacağım hepinizi.
+
+253
+00:32:45,288 --> 00:32:54,628
+Geçen dönem derslerimi bitirmeyi planlayarak kalan iki dersimi almıştım ama bir aksilik oldu pandemiden dolayı.
+
+254
+00:32:55,443 --> 00:33:03,203
+O yüzden donduramadım da öyle hepsinden kaldım dersleri. Bu dönem biraz daha umutluyum. Umarım.
+
+255
+00:33:03,703 --> 00:33:06,284
+Sadece iki dersin var herhalde bu dönem anladın.
+
+256
+00:33:06,723 --> 00:33:16,304
+Sadece iki dersler artı etikle seminerde var ama ben üç ders seçtim yine de ne olur ne olmaz birinden kalırım malarım diye. Çünkü dördüncü dönemim artık.
+
+257
+00:33:16,788 --> 00:33:37,788
+Deep Learning'i de neden seçtim? Daha önce almıştım zaten. [kişisel bilgi] Öğrenmeye çalıştık diye.
+
+258
+00:33:38,195 --> 00:33:46,675
+Daha çok CNN kullandık. [kişisel bilgi]
+
+259
+00:33:47,028 --> 00:34:09,788
+Orada bir ufak bir şey yapmaya çalışmıştık, proje yapmaya çalışmıştık birlikte. Ben daha önce hep CNN kullandığım için elestiyemi falan bilmiyorum. O yüzden o proje yürümedi. Ben sizle de onu ayrıntıları belki konuşabilirim. Onu belki yapabilirim diye umut ediyorum bu ders kapsamında. [kişisel bilgi]
+
+260
+00:34:11,788 --> 00:34:13,528
+Onu tamamlayalım o zaman.
+
+261
+00:34:14,036 --> 00:34:15,576
+Tamamlayabilirsek.
+
+262
+00:34:16,655 --> 00:34:29,396
+Duymayan arkadaşlar için de tekrar söyleyeyim, şöyle özel yapmak istediğiniz bir şey varsa bir konunuz tezinizle ilgili bir aşama olabilir.
+
+263
+00:34:30,416 --> 00:34:41,596
+Dersteki projeyi seçerken onunla ilgili bana bilgi verirseniz uygunsa size uygun bir şey tanımlamak için yardımcı olmaya çalışayım.
+
+264
+00:34:41,903 --> 00:34:52,083
+Bir faydası olsun. Hani tezinize yönelik eğer kullanacaksanız bu dersi, tezinize yönelik aşamayı başlatmış olursunuz en azından.
+
+265
+00:34:53,384 --> 00:34:58,804
+Tezimde kullanmayı düşünmemiştik, birlikte konuşmuştuk tez başlığını, belirlemiştik sizinle ama.
+
+266
+00:34:59,524 --> 00:35:03,224
+Tamam, biraz zaman geçti. Tekrar bir değerlendirelim olur mu?
+
+267
+00:35:03,304 --> 00:35:04,304
+Tamam, tamam hocam.
+
+268
+00:35:04,963 --> 00:35:08,244
+Tekrar değerlendirelim, bir toplantı yapacağım sizinle zaten.
+
+269
+00:35:10,068 --> 00:35:18,688
+Bir gözden geçirelim. Bu arada zaten bizim konuştuklarımızın bir kısmı yapılmış olabilir. Bir değerlendirmekte fayda var.
+
+270
+00:35:20,448 --> 00:35:21,988
+Teşekkür ederiz.
+
+271
+00:35:22,768 --> 00:35:26,927
+Okula geliyor musun bu arada? Ne yapıyorsun evde mi sen?
+
+272
+00:35:26,927 --> 00:35:33,807
+[kişisel bilgi]
+
+273
+00:35:33,807 --> 00:35:35,007
+Tamam daha iyi.
+
+274
+00:35:35,007 --> 00:35:40,127
+[kişisel bilgi]
+
+275
+00:35:41,007 --> 00:35:43,168
+Daha mı güvenli buldun oraları?
+
+276
+00:35:44,532 --> 00:35:46,572
+Yok, trafik yok ya.
+
+277
+00:35:47,052 --> 00:35:52,952
+Tamam, teşekkür ederim. Çok teşekkür ediyoruz. [öğrenci], merhaba.
+
+278
+00:35:54,072 --> 00:35:55,292
+Merhaba hocam.
+
+279
+00:35:55,432 --> 00:35:56,332
+Nasılsın, iyi misin?
+
+280
+00:35:56,872 --> 00:35:58,092
+Sağ olun hocam, siz?
+
+281
+00:35:58,492 --> 00:36:00,292
+Teşekkür ederim, ben de iyiyim.
+
+282
+00:36:01,192 --> 00:36:06,552
+Ben doktora programında devam ediyorum öğrenimi. İkinci ders var.
+
+283
+00:36:07,891 --> 00:36:12,371
+Nasip size tüm dersleri verip ders sürecini tamamlamayı planlıyorum.
+
+284
+00:36:13,731 --> 00:36:17,351
+Bir yandan tez hazırlıklarına ufak ufak başladım.
+
+285
+00:36:17,952 --> 00:36:19,231
+Planladın mı tezini?
+
+286
+00:36:20,083 --> 00:36:44,263
+[kişisel bilgi] Ian Goodfellow'un kitabını ben yaklaşık altı ayda takip ediyorum. Onunla ilgili okumalarım ve uygulamalarım devam ediyor.
+
+287
+00:36:45,012 --> 00:36:56,052
+Onun dışında yapay sinir ağları ve derin öğrenme üzerine de Bilgi Üniversitesi'nde bir hocanın kurduğu bir topluluk var. Karmaşık Sistemler diye. Onların verdiği bir...
+
+288
+00:36:56,052 --> 00:36:58,931
+Onu da söylemezsin arkadaşlarına, evet.
+
+289
+00:37:00,012 --> 00:37:04,252
+KV, yani Karmaşık Sistemler ve Veri Bilimi Topluluğu olarak geçiyor.
+
+290
+00:37:04,724 --> 00:37:28,024
+Ara ara güzel eğitimler düzenliyorlar. Ben taktik iki sene önce bir proje tabanlı yapay zekayetini düzenlemişlerdi. Ona katılmıştım. Kendi çabam doğrultusunda şu anda bilgi ve tecrübem, özel bir çalışmam yok bu alanda. Ama tezli artık çok sık kullanacağım için bu dersi aldım. Çok da verimli geçeceğine inanıyorum.
+
+291
+00:37:28,820 --> 00:37:35,079
+İnşallah. Ben biraz o kadar umutlu değilim ama inşallah güzel olacaktır.
+
+292
+00:37:36,380 --> 00:37:42,920
+Pardon benim telefonum. [öğrenci], bir de senden dinleyelim.
+
+293
+00:37:43,300 --> 00:37:52,120
+Merhaba hocam. Ben bu sene mezun oldum. Yüksek lisansa da yeni başladım. [kişisel bilgi]
+
+294
+00:37:53,043 --> 00:37:53,643
+Tamam.
+
+295
+00:37:54,003 --> 00:38:10,283
+Fez planım öneri sistemleri üzerine bir şey yapmak. Bitirme projem de böyleydi. Restoran öneri sistemi yapmıştım okulda. Öneri sistemleri tabii o makine öğrenme tabanlıydı. Belki yapay sinir ağlarıyla veya derin öğrenmeyle de bir şeyler yapabilirim diye düşünüyorum. Bakacağım.
+
+296
+00:38:10,283 --> 00:38:15,103
+Tamam. İş yerinde benzer bir uygulama yok herhalde öyle anlıyorum.
+
+297
+00:38:15,103 --> 00:38:19,003
+Bir kere TensorFlow'u kullanıp bir proje yapmıştık sınıflandırıcı.
+
+298
+00:38:19,507 --> 00:38:23,467
+Ama sürekli bir işim yok. Sürekli işim frontend üzerine.
+
+299
+00:38:24,167 --> 00:38:28,507
+Tamam. Belki uygulamayı biraz daha spesifikleştirirsen.
+
+300
+00:38:31,288 --> 00:38:44,027
+Storan değil de belki daha farklı bir şey de olabilir. Yine tavsiye sistemi veya öneri olabilir. Ders içinde biraz şekillendirsin sen de umuyorum.
+
+301
+00:38:44,027 --> 00:38:45,587
+Tamam, teşekkür ederim.
+
+302
+00:38:45,903 --> 00:38:50,043
+Peki ben de teşekkür ediyorum. [öğrenci].
+
+303
+00:38:53,715 --> 00:38:58,556
+Merhaba hocam. Merhabalar. Duyuyorum, duyuyorum.
+
+304
+00:38:59,195 --> 00:39:10,395
+Ben de yüksek lisans öğrencisiyim. İkinci ders dönemindeyim. Konuyla alakalı herhangi bir vukiyetim yok. Daha önce çalışmadım. Makine öğrenmesi dersine de bir dönem alıyorum.
+
+305
+00:39:11,315 --> 00:39:18,336
+Tezim sosyal medya verisi üzerinde doğal dil işleme süreci ortaya koyacağım.
+
+306
+00:39:18,900 --> 00:39:24,599
+Kullanmak istiyorum. Makine öğrenmesi algoritmasını, derin öğrenme algoritmaları.
+
+307
+00:39:24,599 --> 00:39:27,099
+Ne yapacaksın tam olarak?
+
+308
+00:39:27,099 --> 00:39:35,900
+Şu anda hocam başlığı geniş tutmak için sosyal medya verisi üzerinde doğal dil işleme süreci dedik ama.
+
+309
+00:39:35,900 --> 00:39:39,900
+Hangilerini kullanacaksın belli değil herhalde.
+
+310
+00:39:39,900 --> 00:39:43,900
+Yok, henüz belli değil. Daha sonra şirkilenecek diye düşünüyorum.
+
+311
+00:39:46,132 --> 00:40:06,271
+[kişisel bilgi] Öyle mi? Güzel. Tamam. Teşekkür ediyoruz. [öğrenci], bir tek sen kaldın galiba. Merhaba hocam. [kişisel bilgi] İkinci dönemim.
+
+312
+00:40:08,724 --> 00:40:27,824
+Daha önce derin öğrenmeyle ilgili çalışmam olmadı ama, höristik, optimizasyon ve yapay sinir ağlarıyla ilgili birkaç hem endüstriyel tabanlı hem de akademik tabanlı birkaç tane çalışmam oldu. Bizim bölümde de yine yapay zeka derslerini almıştım daha önce. Şimdi bu dersi de derin öğrenme üzerine de biraz daha bildirim.
+
+313
+00:40:27,844 --> 00:40:29,864
+Tülay Hoca'ndan mı aldın? Kimden aldın?
+
+314
+00:40:30,224 --> 00:40:31,524
+Tezim Tülay Hoca ile yapıyorum, evet.
+
+315
+00:40:32,148 --> 00:40:33,088
+Tamam, güzel.
+
+316
+00:40:34,007 --> 00:40:41,407
+Tezimde de şimdilik Endüstriyel Yapay Zekar Bulması gibi başka bir şey ama daha henüz tabii spesifik olarak çalışmaya başlamadım henüz tezimde. İkinci dönem bu dönem.
+
+317
+00:40:42,036 --> 00:40:46,916
+Tamam. Endüstriyel uygulama derken o da içeriği de tam belli değil herhalde daha.
+
+318
+00:40:47,336 --> 00:40:53,976
+[kişisel bilgi]
+
+319
+00:40:54,896 --> 00:40:59,876
+Gerçek zamanlı sistemlerle yapay zeka sistemlerini birleştiren bir şey düşünüyorum şimdilik.
+
+320
+00:40:59,876 --> 00:41:09,236
+Yani örneğin mesela gerçek zamanlı scheduling sistemin yapay zeka yardımıyla optimize edilmesi, determinizmin artılması üzerine çalışma düşünüyorum şu anda.
+
+321
+00:41:09,619 --> 00:41:21,599
+Güzel, tamam. Teşekkür ederim. Peki, konuşmadığım kimse kaldıysa siz söyler misiniz arkadaşlar? Liste oynadığı için sırada kaçırmış olabilirim.
+
+322
+00:41:25,076 --> 00:41:50,155
+Tamam, yok herhalde. Peki, şimdi tecrübeleriniz biraz farklı farklı ama zaten ben derste anlatacağım her şeyi bir şekilde baştan. [öğrenci] evet sesin gelmiyor. Peki [öğrenci], arkadaşınızla konuşmamışız. Sesin gelmiyor, evet.
+
+323
+00:41:56,148 --> 00:42:01,448
+Tamam, sen çık gel. Biz bu arada birazcık konuşmaya başlayalım.
+
+324
+00:42:02,768 --> 00:42:06,748
+Birazcık Yapay Sinir Ağlarının tarihçesinden bahsedeceğim.
+
+325
+00:42:07,208 --> 00:42:16,128
+Hani benzer bir şeyler almış olabilirsiniz daha önce ama umuyorum biraz daha farklı bir şeyler söyleme fırsatım olur.
+
+326
+00:42:17,128 --> 00:42:20,788
+Daha çok hangi uygulamalarda kullanıyoruz onu da.
+
+327
+00:42:20,788 --> 00:42:23,108
+Ben de bu arada kontrol edemedim.
+
+328
+00:42:23,987 --> 00:42:37,807
+Ne tür alanlarda ve güçlü yönleriyle, zayıf yönleriyle ne zaman işimize yarar? Bunlardan birazcık bahsedeceğim bugün.
+
+329
+00:42:37,807 --> 00:42:50,788
+Ve belki sanırım zamanımız yetecektir. Birazcık ilkel nöronlar, perseptronlar ve onların uygulamalarından bahsetmeye çalışacağım.
+
+330
+00:42:51,507 --> 00:43:09,567
+Şimdi neden yapay sinir ağları? Aslında mantıkbazlı uygulamaların başarısız olduğu, yetersiz kaldığı noktada beynin yapısını anlamak ve güçlü özelliklerini taklit etmek için neredeyse 70 yıl önce.
+
+331
+00:43:10,667 --> 00:43:15,487
+Hatta benim bu yazdıklarım biraz eskidir, 75'e yaklaşıyor.
+
+332
+00:43:15,936 --> 00:43:33,756
+75 yıl öncesine dayanan bir geçmişi var yapay sinir ağlarının. Veri işlemenin temel bir matematiksel modeli olarak düşünebiliriz. İlişkileri gösterme yöntemleri klasik yapay zeka yöntemlerinden farklı.
+
+333
+00:43:34,324 --> 00:43:44,124
+[öğrenci] geldiysen bir ses... Sesim geliyor mu hocam? Evet, şimdi çok güzel [öğrenci] geliyor. Merhabalar. Seni de dinleyelim, öyle devam edelim.
+
+334
+00:43:44,124 --> 00:43:52,724
+Ben doktora'ya bu sene başladım. [kişisel bilgi]
+
+335
+00:43:53,427 --> 00:43:58,747
+Bizim dönemimizde çok almak istemiştim, Derin Öğrenme.
+
+336
+00:43:58,847 --> 00:44:00,687
+Almamış mıydın sen Yapay Sinir Ağları?
+
+337
+00:44:01,267 --> 00:44:06,787
+Alamadım. Şöyle bir sorun vardı, belki hatırlarsınız. Zorunlu ders sayısı dörde falan çıkmıştı bir ara.
+
+338
+00:44:07,487 --> 00:44:08,147
+Evet, evet.
+
+339
+00:44:08,807 --> 00:44:14,927
+Zorunlu derslerden dolayı hiçbir istediğimiz seçme dersi alamadık maalesef.
+
+340
+00:44:15,860 --> 00:44:40,300
+Bu dönem derin öğrenme, bilgisayarla görme, doğal dil işlemi. Bunların ışığında test konusunu belireceğim. Zaten şu anda ilk dönemim. [kişisel bilgi]
+
+341
+00:44:41,492 --> 00:44:47,692
+Mühendisliği, Mühendisliği, Yapay Sinir Ağları, Derin Öğrenme de kullandım.
+
+342
+00:44:47,692 --> 00:44:49,692
+Ne kadar başarılı oldu?
+
+343
+00:44:49,692 --> 00:44:56,692
+Veriler çok şey olmadığı için aldığımız, ben verileri kendim topladım.
+
+344
+00:44:56,692 --> 00:44:58,692
+Veri de problem.
+
+345
+00:44:58,692 --> 00:45:02,692
+Sonra bir de 2004 yılında yapılan bir yarışma vardı.
+
+346
+00:45:02,692 --> 00:45:07,291
+Orada kullanılan verilerle birleştirdim verim çoğalması için.
+
+347
+00:45:07,539 --> 00:45:27,179
+Gene başarılı oldu. Makine öğrenmesi yöntemlerinden destek vektör makineleri daha iyi sonuç verdi ama bu false, negatif tarzı değerlerde yapay sinira daha başarılı.
+
+348
+00:45:27,179 --> 00:45:34,059
+Yani şöyle sahte imzanın gerçek olma ihtimalini daha yüksek göstermediği için başarılı diyebildik orada.
+
+349
+00:45:34,771 --> 00:45:43,571
+Onu söyleyeceğim. Biraz daha hataları tolere etme ve genelleyebilme yeteneği var.
+
+350
+00:45:46,571 --> 00:45:58,571
+Orada şöyle bir durum oldu. Normalde bizim gerçek imzayı sahte söylemesi çok büyük bir kayıp değil ama sahte imzayı gerçek gibi algılaması...
+
+351
+00:45:59,123 --> 00:46:09,344
+Maddi bir kayıp olarak karşımıza çıkacaktı. Bu kapsamda oradaki ekürisi daha iyiydi yani.
+
+352
+00:46:10,068 --> 00:46:16,368
+Biraz tabii veri de çok önemli. Ondan kaynaklı sorunların doğmuştur belki.
+
+353
+00:46:16,368 --> 00:46:37,368
+Evet, doğrudur. Aldığımız veriler bir de imzayı atan kişilerden aynı zamanda aldım imzayı. Farklı dönemlerinde de almam gerekiyor. Çünkü duygusal olarak da o anki durumuyla imzanın şekli de değişiyor. Farklı farklı değerler...
+
+354
+00:46:37,615 --> 00:46:44,936
+Olmuş olacaktı. O yüzden biraz daha veri çok toplamak çok önemli, Derin Öğrenme de.
+
+355
+00:46:45,716 --> 00:46:52,696
+Tamam. İyi, bir miktar tecrüben var. Belki tezde de nasıl kullanacaksın veya kullanacak mısın?
+
+356
+00:46:53,696 --> 00:47:04,696
+Ben daha çok görüntü üzerine şey yapmak istiyorum. Sizde de mesela sizin şirketinizle alakalı yaptığınız böyle...
+
+357
+00:47:05,536 --> 00:47:11,532
+Verilerin tanınması, mesela otonom sistemlerde veya canlılık testi.
+
+358
+00:47:11,923 --> 00:47:35,003
+O canlı testi de önemli. Çoğunuz biliyorum görüntü üzerine de çalışmak istiyorsunuz. Aman aman ne olur uygulamadanızı en azından biraz daha özgün seçmeye, biraz daha yeni bir şey katabileceğiniz şeylere doğru yönelmeye çalışırsanız güzel olur.
+
+359
+00:47:35,744 --> 00:47:38,244
+[öğrenci] konuşalım biz yine senle de.
+
+360
+00:47:39,923 --> 00:47:41,224
+Bileceğim bir şeyler olabilir.
+
+361
+00:47:42,063 --> 00:47:42,903
+Tamamdır hocam.
+
+362
+00:47:43,403 --> 00:47:53,704
+Ben konuşunca hep robot geliyor, aklıma otonomi geliyor. O yüzden herkese bir şey demiyorum. Konuşmak isteyen olursa aklımdakilerden fikir paylaşırım.
+
+363
+00:47:54,264 --> 00:47:56,824
+Tamamdır. Teşekkürler.
+
+364
+00:47:56,824 --> 00:48:05,523
+Teşekkür ediyorum ben de. Başka sanırım konuşmadığımız kimse kalmadı. Artık başlayayım birazcık.
+
+365
+00:48:07,295 --> 00:48:10,255
+Neden Yapay Sinir Ağları dedik?
+
+366
+00:48:10,255 --> 00:48:13,255
+İşte klasik...
+
+367
+00:48:13,588 --> 00:48:37,248
+Mantıksal tabanlı hesaplamalarım veya klasik yöntemlerin yetersiz kaldığı yerlerde aslında insana benzetemediğimiz makine öğrenmesi ve diğer öğrenme yöntemlerinden sonra insanın beynini taklit etmeye yönelik bir girişimin sonucu yapay sinir ağlarının çıkışı.
+
+368
+00:48:39,155 --> 00:48:50,576
+İlişki gösterme yöntemi insan beynine benzer şekilde taklit edilmiş. Tabii bunu söylerken her zaman da özellikle söylüyorum.
+
+369
+00:48:50,960 --> 00:49:05,259
+Yani bir takım uygulamalarda çok başarılı, çok da yaygın artık kullanılmaya başlandı ama hep aklımızda tutmamız gereken şey, evet insan beynine benzetiyoruz ama biz insan beynini o kadar da iyi bilmiyoruz.
+
+370
+00:49:05,259 --> 00:49:12,940
+Veya bildiğimiz detayı bile henüz aslında yapay sinir ağları modellerine aktarabilmiş değiliz.
+
+371
+00:49:16,563 --> 00:49:35,403
+Hani hep bu ara o geyik geziyor ya, insanın yerini alacak mı? O kadar yakın görünmüyor bana. Ama insanın en önemli, beynindeki modelin en önemli kısmını takip ettiği için.
+
+372
+00:49:35,791 --> 00:49:52,251
+Belli bir aşamada başarılı. Özellikle görüntü üzerinde başarılı zaten biliyorsunuz. Ve bir takım lojik problemlerde genellemeye gerektiren zamana bağlı değişen veriler üzerinde son derece başarılı.
+
+373
+00:49:53,371 --> 00:50:00,000
+Peki, yapay sinir ağlarında ne var? Bizim beynimizdeki nöronların bir benzeri...
+
+374
+00:50:00,000 --> 00:50:19,260
+olduğunu varsaydığımız veya onları takip eden yapay nöronlarımız var. Yine basitleştirilmiş şekilde. En temelde beyinle ilgili bilmediklerimiz bir yana beynimizde pek çok hormon ve salgının olduğunu biliyoruz.
+
+375
+00:50:21,556 --> 00:50:27,436
+İnsanın psikolojik durumunda, kararlarında ne kadar etkili olduğunu biliyoruz.
+
+376
+00:50:28,436 --> 00:50:32,176
+Ve biz bunları aslında yapay sinir ağlarına aktarmış değiliz.
+
+377
+00:50:32,996 --> 00:50:35,456
+Kimyasını da çözebilmiş değiliz.
+
+378
+00:50:35,576 --> 00:50:43,396
+Dolayısıyla beynin aslında kimyasal kısmıyla ilgili şeyler bizim yarattığımız matematiksel modellerde yok.
+
+379
+00:50:45,715 --> 00:51:04,755
+Ama bir şekilde o kinyasallar gizemli olduğu için bir şekilde onun da modelin içinde kendi kendine herkes için farklı nasıl olsa her yapay sinir ağ modelinde de veya her problem çözümünde de farklı bir şekilde yansıtıldığını da düşünebiliriz.
+
+380
+00:51:04,755 --> 00:51:12,295
+Ama sonuç itibariyle yapay bir şey yapıyoruz, genelliyoruz, bir takım şeyleri varsayıyoruz.
+
+381
+00:51:12,704 --> 00:51:31,943
+Bu aklımızın bir kenarında olsun ki, böyle bütün dertlerimizin devası da değil. Yapay sinir ağları veya derin öğrenme. Bunu bilmemiz lazım. Kullanırken de ona göre zayıf yönleri, güçlü yönleri dikkate alarak kullanmakta fayda var.
+
+382
+00:51:32,628 --> 00:51:42,108
+Yapay nöronlardan oluşan ağlardan bahsediyoruz aslında. Yani nöronlar arasında bağlantılar var.
+
+383
+00:51:43,668 --> 00:51:53,847
+Pratik bir bakış açısıyla bakarsak belli bir görevi gerçekleştirmek için birbirine bağlanan işlem öğeleri olarak düşünebiliriz nöronları.
+
+384
+00:51:54,291 --> 00:52:16,331
+Paralel bir hesaplama sistemi oluşturmuş oluyoruz. Bu açıdan önemli. İşlemlerin paralel yapılıyor olması daha büyük veriyi, daha kompleks problemleri modellememize olanak veriyor. Bu yönüyle de klasik yapay zeka uygulamalarından farklılaşıyor.
+
+385
+00:52:16,947 --> 00:52:37,288
+İnsan beyniyle karşılaştırdığımızda dediğim gibi basit bir model aslında. En çok hangi uygulama alanlarında işe yarıyor dersek, besen sınıflandırma, bu her türlü görüntü verisi veya diğer patronlar olabilir.
+
+386
+00:52:44,224 --> 00:53:00,684
+İşlerinde oldukça başarılı. Fonksiyon yakınlaştırma, yani regresyon tarzı problemlerin çözümünde başarılı. Tahmin problemlerinde ve optimizasyon problemlerinde de son derece başarılı.
+
+387
+00:53:01,103 --> 00:53:21,963
+Elinizdeki verilerde gürültü, eksik, hata varsa bunları tolera etme konusunda özellikle hata tolera etme konusunda yapay sinir ağları gerçekten klasik modellerden çok daha fazla başarı gösteriyor.
+
+388
+00:53:22,483 --> 00:53:41,903
+Bir bellek gibi de kullanabiliyoruz aslında. İçerik adreslenebilir belleklere benzeyen uygulamaları da var. Derste bunlardan bahsedeceğiz ve kullanacağız. Hatta belki ödev olarak vereceğim ilk şeylerden birisi olacak bu.
+
+389
+00:53:42,271 --> 00:53:54,731
+Yine kontrol uygulamalarında da kullanabiliyoruz. Bunlar kısıtlı bir örnek ama genelleştirirsek bu başlıkların altında toplanıyor çoğu uygulama alanı.
+
+390
+00:53:54,731 --> 00:54:04,731
+Ve dediğim gibi tahminleme ve optimizasyonda başarılı olduğu en önemli noktalar diyebiliriz.
+
+391
+00:54:06,291 --> 00:54:21,291
+Yapay zekanın bir dalı sonuçta yapay sinir ağları ve yapay zeka ile elintir olarak iki tane amacı olduğunu söyleyebiliriz. Biz tabii mühendislik tarafından bakıyoruz, beyinden yararlanmaya çalışıyoruz ama.
+
+392
+00:54:21,664 --> 00:54:43,984
+Aynı zamanda tıp da bu taraftaki gelişmelerden yararlanabiliyor. Yani yapay zeka için veya nöral networkler için geliştirilen modellerin başarı göstermesi, tıp alanında da beynine o gözle bakıp insanın beyninin işleyişini anlamada faydalı olabiliyor.
+
+393
+00:54:47,315 --> 00:54:57,396
+Önemli buradaki gelişmeler. Tıptaki gelişmeler, mühendislik tarafını, mühendisliklik gelişmeler tıp tarafını etkileyebiliyor.
+
+394
+00:54:57,396 --> 00:55:00,396
+Beyin modellemi için...
+
+395
+00:55:01,396 --> 00:55:26,655
+Yapılan çalışmalarda potansiyel olarak insan doğasını, insanın zekasını anlamamıza, daha iyi öğrenme stratejileri oluşturmamıza ve özellikle beyin hasarlı, nörolojik rahatsızlıkları olan hastaların iyileşmesiyle ilgili önlemler geliştirilmesine son derece faydası var geliştirilen modellerin.
+
+396
+00:55:27,092 --> 00:55:53,391
+Yapay sistemler geliştirmede mühendislik açısından verimli sistemler oluşturmamızı ve makinelerin daha güçlü hale gelmesi, insanların rutin işlerden kurtarılabilmesi ve hatta insanlara yardımcı olarak kullanıp insanların performanslarını iyileştirme, eğitme, öğretme gibi amaçlarla da
+
+397
+00:55:54,320 --> 00:56:14,160
+Kullanılabiliyor. Peki, çok hızlı biliyorsunuz zaten ama uygulama alanları olarak insan gelişim modelleri, bu aslında beyin modellemesine örnek olarak düşünülebilir.
+
+398
+00:56:14,160 --> 00:56:20,980
+Gelişim problemi olan çocuklara yardım, beynin nasıl çalıştığını anlamamıza yardım.
+
+399
+00:56:21,492 --> 00:56:48,312
+Yetişkinlerin performansının simüle edilmesi, nöropsikolojik modellerin oluşturulması, hem beyin hasarlı hastalar için hem de yaşlılıkla gelen hastalıklarla da hastalıkların izlenmesi, öngörüler oluşturulması, tedavi yöntemlerinin geliştirilmesi için de çokça kullanılmaya başlandı derin öğrenme ve yapay siniraların modelleri.
+
+400
+00:56:48,788 --> 00:56:59,967
+Gerçek dünya ile ilgili olarak tabii en önde ekonomik ve finansal uygulamalar geliyor. Hisse senetlerinin, döviz kurlarının tahminlenmesi.
+
+401
+00:57:00,416 --> 00:57:17,116
+Diğer zaman serisi verilerinin tahminlenmesi. Zaman serisi dediğim zaman anlıyorsunuzdur diye tahmin ediyorum ama kabaca zamana bağlı değişen her türlü veriyi zaman serisi olarak düşünebiliriz.
+
+402
+00:57:28,416 --> 00:57:45,756
+Verileri, iklim, hava durumu, havayolunun pazarlama taktikleri, bir takım kullanım oranları zaman içinde nasıl değişiyor gibi veriler.
+
+403
+00:57:47,219 --> 00:57:59,400
+Zaman serisi verileri olarak düşünülebilir ve bunların modellenmesinde tahminlerde çok sık kullanabiliyoruz yapay sinir ağlarını.
+
+404
+00:57:59,400 --> 00:58:11,980
+Bunun dışında bilgisayar oyunlarında, akıllı ejentlerde, tavla, FPS gibi oyun uygulamalarında sıklıkla kullanılıyor.
+
+405
+00:58:12,400 --> 00:58:33,219
+Kontrol sistemlerinde kullanılabiliyor. Kontrol sistemleri bazen çok kompleks olabiliyor. Dikkate almanız gereken pek çok parametre oluyor. O yüzden yani normalde kontrol teorisi çok çözülmemiş veya başka yöntemleri olmayan teoriler değil ama.
+
+406
+00:58:33,632 --> 00:58:57,692
+Bu tip şeylerde bile eğer çok fazla parametremiz varsa, sistem kompleksse bunları büyük matematik denklemlerle oluşturmaya çalışmak yerine modellerini yapay sinir ağlarından yararlanarak güzel sistemler oluşturmak mümkün olabiliyor.
+
+407
+00:58:58,228 --> 00:59:17,927
+Onun dışında er yazı, tanıma, konuşma, tanıma, görüntü, sonar, sinyalleri, aklınıza gelebilecek her türlü sinyal işlemesinde, tanımasında, veri analizinde, veri sıkıştırmada, veri madenciliğinde kullanılabiliyor.
+
+408
+00:59:18,452 --> 00:59:44,832
+Gürültü azaltma önemli bir fonksiyonumuz. Yapay sinir ağları bu konuda dediğim gibi oldukça başarılı. Dolayısıyla tıbbi verilerde, kardiyografi verilerinin analizinde, modellenmesinde özellikle gürültü sinyallerini temizleyerek iyi tahminleme yapabilen yapılar yine mevcut.
+
+409
+00:59:45,364 --> 00:59:57,903
+Bu tarz uygulamalar var. Belki uygulamaları özellikle saydım bir yerden bir şey çalıştırırsa diye bunları daha da çok alana göre streslikleştirebiliriz.
+
+410
+00:59:59,264 --> 01:00:10,164
+En önemli özellikleri söyledim ama tekrar söylememiz gerekirse paralel çalışıyor. Son derece güçlü bir hesaplama aracı olarak düşünülebilir.
+
+411
+01:00:10,675 --> 01:00:16,836
+Eğitim verimlerinden öğrenme ve öğrendiğini genelleştirebilme yeteneği çok öne çıkıyor.
+
+412
+01:00:16,836 --> 01:00:36,256
+Ata toleransı, gürültü toleransı yüksek ve temel olarak sembolik mantık sistemlerini yapabileceğinden daha fazlasını veya onların yapamadıklarını yapabilme kapasitesi, potansiyeli var yapay sinir ağlarının.
+
+413
+01:00:36,851 --> 01:00:58,571
+Şöyle bir tarihçesine bakarsak biraz ne kadar eski olduğunu görmeniz açısından da kısaca geçmek istiyorum bunu. İlk nöron modelinin ortaya atılması Macbeth ve Pitts tarafından 1943'te olmuş. Başlangıç olarak bunu kabul ediyoruz genellikle.
+
+414
+01:00:59,123 --> 01:01:15,923
+Tabii Macle of Epics'in tanımladığı şey aslında sadece bir nöron modeli. Hala Deep Learning'de de kullanmakta olduğumuz, temel girdileri toplayıp bir fonksiyon uygulayan basit bir nöron modelini tanımlıyorlar.
+
+415
+01:01:15,923 --> 01:01:22,303
+Ama fikir özellikle o zaman için son derece yeni. Özellikle insan belini takip ettiği için.
+
+416
+01:01:25,492 --> 01:01:43,032
+Bir nöronun yapabileceği şeyler son derece kısıtlı. Öğrenme algoritması bu nöronların birlikte kullanılmasını destekleyen mimarların çıkmasından önce uygulamalar son derece kısıtlı kalıyor.
+
+417
+01:01:44,032 --> 01:01:49,032
+1949'da Hebb'in önerdiği Hebb'in Öğrenme Kuralı.
+
+418
+01:01:51,027 --> 01:02:11,427
+Büyük bir gelişme sağlıyor aslında makulopis nöronlarının kullanımı ile ilgili. Uygulama alanlarını genişletmiş oluyor. İşe yaradığını aslında göstermiş oluyor. Sonra 1958'e kadar bir duraklama dönemi var.
+
+419
+01:02:11,791 --> 01:02:28,571
+Rosenbolt'un Perseptron adı verilen tek katmanlı ağları önermesine kadar. Tek katmanlı ağlar ilk önerildiğinde oldukça ses getiriyor ve yine göreceğiz örneklerini.
+
+420
+01:02:30,931 --> 01:02:37,271
+Özellikle lojik devreler ve lojik kapıların modellenmesinde son derece faydalı.
+
+421
+01:02:37,748 --> 01:03:00,288
+Bu şekilde 69'lara kadar bir rüzgar devam ediyor. Ta ki Miski ve Pepperd'ın tek katmanlı perseptronların kısıtlarını göstermesi ve bununla ilgili bir kitap yayınlamasıyla birlikte yapay sinir ağları alanında bir duraklama başlıyor.
+
+422
+01:03:05,135 --> 01:03:27,376
+Tek katmanlı perseptronlarla çözülememesi sonuçta egzordat oldukça temel bir problem. Sanki sistemin hiç işe yaramayacağı kanısı uyandırıyor ve insanların ilgisi azalıyor. 82'lere kadar bu duraklama devam ediyor.
+
+423
+01:03:27,376 --> 01:03:30,856
+Tabi insanların ilgisi azalıyor ama birileri çalışmaya devam ediyor.
+
+424
+01:03:31,443 --> 01:03:49,443
+Hopfield Ağları'nı öneriyor ve bununla ilgili bir dizi bildiri yayınlıyor. Kohanen arkasından yine aynı yıl kendi adını taşıyan Self Organizing Map'leri geliştiriyor.
+
+425
+01:03:49,871 --> 01:04:04,131
+Ve yeniden bir canlanma başlıyor. Özellikle 1986'da çok katmanlı persektronlar ve backpropagation öğrenme algoritmasının önerilmesiyle tüm alan tekrar canlanıyor.
+
+426
+01:04:05,611 --> 01:04:13,511
+O dönemler benim öğrencilik dönemlerime geliyor. Yani şu anda nasıl deep learning için bir furya varsa.
+
+427
+01:04:14,099 --> 01:04:30,980
+Benzeri de o dönem vardı. Herkes elindeki bütün verileri ilgili, ilgisiz bakmadan bir yapay sinir ağ modeliyle deneyip bir büyük propaganda uygulayıp sonuç almaya çalışıyordu.
+
+428
+01:04:31,539 --> 01:04:51,119
+Açıkçası bu aşırı ilgi bazen işe yaramadığı noktaları özellikle de iyi izah edilmezse ortaya çıkardığı için bir noktada da sanki yöntemin bir zayıflığını ortaya çıkarmış gibi oluyor.
+
+429
+01:04:51,635 --> 01:05:11,556
+Tam da öyle bir şey oldu o dönemde. Yani 86'lardan 2000'lere kadar yapay sinir ağları korkunç popülerdi. Hatta 2000'lerin de ilk yarısında 2004'lere, 2005'lere kadar yine benzer bir durum vardı. Herkes her şeyi yapay sinir ağıyla yapıyordu.
+
+430
+01:05:19,572 --> 01:05:24,832
+Yetersiz kaldığı durumlar çok da iyi uygulanmayınca.
+
+431
+01:05:25,268 --> 01:05:48,608
+Ortaya çıktı ve bir sessizlik oldu. Tahti ne zaman? GPU'ların ortaya çıkması, derin ağların önerilmesiyle birlikte. Bu arada yapay sinir ağlarının zayıflığı yok muydu ya da derin öğrenme bir yenilik getirmedi mi derseniz getirdi.
+
+432
+01:05:53,268 --> 01:06:09,068
+Temel Yenilik getirdi. O iki tane temel yenilik tabii çok şeyi değiştirdiği için şu anda yine böyle popüler. Yani sadece bu bir moda demiş gibi olmayayım.
+
+433
+01:06:10,488 --> 01:06:17,788
+İşte 2000'lere kadar yapay sinir ağlarının en önemli eksikliği olan backpropagation algoritmasının daha ziyade.
+
+434
+01:06:18,324 --> 01:06:38,164
+Gradient Descent algoritmasında türevin değerinin çok küçülmesiyle Vanishing Gradient dediğimiz problemin ortaya çıkması ve veriyi artırdığınızda da bu problemin aslında ağı tamamen işe yaramaz hale getirecek şekilde
+
+435
+01:06:40,244 --> 01:06:57,364
+Ortaya çıkmasıyla problemleri, karmaşık problemleri çözemediğimiz tanısı oluşmuştu. Dolayısıyla derin ağlara geldiğimizde çözülen problemlerden birisi bu. Vanishing gradient dediğimiz problem. Konuşacağız bunu daha.
+
+436
+01:07:05,940 --> 01:07:09,920
+Kullanmak istediği verilerin miktarı çok fazla arttı.
+
+437
+01:07:10,320 --> 01:07:27,240
+Veri miktarı artınca daha kompleks ağlar oluşturmaya başladık. Daha fazla hesaplama yapılması gerekti ve klasik CPU'lar bunlara yetersiz kalıyordu. Yani 2000'lerde oluşan duraklama daha ziyade bu problemlerle oldu.
+
+438
+01:07:38,320 --> 01:07:57,940
+Biraz daha gelişmiş versiyonu GPU'larla birlikte hayatımıza girdi. Şimdilik de tüm hızıyla devam ediyor. Bakalım veriler de artmaya devam ediyor. Bu sefer ne zaman tıkanacağız? Hep birlikte göreceğiz belki.
+
+439
+01:08:00,096 --> 01:08:17,636
+Yapay Sinir Ağının modeli var. Evet, nöronları alıyoruz. Daha doğrusu bir nöron modelimiz var her şeyden önce. Sonra bu nöronları birbirine bağlıyoruz. Peki, [öğrenci] mesajını şimdi gördüm. Tamam, görüşmek üzere diyorum.
+
+440
+01:08:18,536 --> 01:08:26,935
+Yapay Sinir Ağlarının bir mimarisi var. Fakat o mimari sadece bize bağlantıları, nöronları.
+
+441
+01:08:27,311 --> 01:08:45,891
+Katmanları gösteriyor. Esas önemli olan bir de bu mimarinin bir öğrenme için eğitilmesi. Yapay sinir ağlarının öğrenmesi de bizim için önemli bir konu.
+
+442
+01:08:48,243 --> 01:09:00,743
+Birçoğu bağlı nöronlar vasıtasıyla aslında bir aktivasyon sinyalini diğer nörona ileterek çalışıyor yapay sinir ağa öğrenmesinde algoritmaların.
+
+443
+01:09:01,484 --> 01:09:08,304
+Bir takım eğitim verilerinden öğrenme ve genelleme becerisi de bu şekilde gelişiyor.
+
+444
+01:09:08,304 --> 01:09:13,783
+Yani sizin inputlarınız var, ilk girdikleri nörona bir uyarı.
+
+445
+01:09:14,260 --> 01:09:31,960
+Bu örneğe oluşturuyorlar. Burada kullandığınız fonksiyon bu uyarıyı bir sonraki nörona bağlı olduğu diğer nöronlara iletip iletmeme konusunda karar veriyor veya ne kadar güçlü ileteceği konusunda karar veriyor ve bir çıktı oluşturuyor.
+
+446
+01:09:41,460 --> 01:09:56,220
+Bu nöronlar da gelen uyarıların içeriğine veya değerine göre diğer nöronlara iletilip iletilmeyeceğine karar vermeyi öğreniyorlar.
+
+447
+01:09:57,659 --> 01:10:05,360
+Öğrenme nasıl oluyor? Bu nöronlar arasındaki bağlantıların kuvvetlendirilmesi veya zayıflatılması yoluyla oluyor.
+
+448
+01:10:05,971 --> 01:10:16,131
+İstediğimiz çıktığı elde edecek şekilde bağlantının kuvvetini, ağırlığını diyeceğiz aslında bundan sonra.
+
+449
+01:10:16,711 --> 01:10:21,652
+Değiştirerek nihai doğru çıktıklara ulaşmaya çalışıyoruz.
+
+450
+01:10:23,431 --> 01:10:27,591
+Şimdi sözlü konuşuyorum. Buraları biraz hızlıca geçeceğim şimdi.
+
+451
+01:10:27,591 --> 01:10:30,691
+Üç çeşit öğrenme türü var.
+
+452
+01:10:32,115 --> 01:10:38,136
+Bunları da mutlaka duymuşsunuzdur ama bir tekrar söyleyelim. Hatta demin konuştuk birazcık.
+
+453
+01:10:38,935 --> 01:10:47,996
+Öğretmende öğrenme dediğimiz Superwise Learning. En çok, en yaygın kullandığımız yöntem Superwise öğrenme.
+
+454
+01:10:47,996 --> 01:10:57,056
+Fakat zayıflığına çok fazla veri gerektiriyor. Sonuçta örnekten öğrenme gerçekleşiyor.
+
+455
+01:10:57,492 --> 01:11:23,572
+Örneğin verdiğiniz örneklerin beklediğiniz sonuçları üretip üretmemesine göre bir hata fonksiyonu oluşturuyorsunuz ve oluşan hata miktarına göre de algoritmanız bağlantı ağırlıklarını ayarlayıp ağın parametrelerini değiştirerekten yeni örnekler için daha iyi sonuç elde edecek şekilde eğitilmiş oluyor.
+
+456
+01:11:24,148 --> 01:11:39,108
+Reinforcement Learning'de bir miktarlık geri besleme var. Aslında sisteme az sayıda örnek vererek gerçekten denemeler yaparak bir çıktığı üretmesini istiyorsunuz.
+
+457
+01:11:51,539 --> 01:11:55,460
+Kısıtlı bir geri beslemeyle öğrenmeyi sağlıyorsunuz.
+
+458
+01:11:56,079 --> 01:12:01,700
+Unsupervised Learning ise tamamen kendi kendine öğrenme yöntemi diyebileceğimiz.
+
+459
+01:12:01,700 --> 01:12:17,700
+Yine çok az sayıda etiketli bir veri kullanılabilir ama çoğunlukla verinin etiketli olmadığı, tamamen sistemin kendi kendine organize olup veriyi anlaması, benzerlikleri.
+
+460
+01:12:18,079 --> 01:12:37,739
+Bu örneğe tespit etmesini istediğimiz yöntem. Bunun da önemli olduğu noktalar var. Siz şimdi verileri kendiniz etiketliyorsanız veya hazır etiketlenmiş veriler kullanabiliyorsanız neyin ne olduğunu siz söylüyorsunuz. Bir şeylere doğru bir şeylere yanlış diyorsunuz.
+
+461
+01:12:38,079 --> 01:12:44,979
+Fakat burada o kararları, etiketleri oluştururken insan faktörü devreye girmiş oluyor.
+
+462
+01:12:45,659 --> 01:12:48,760
+Ve bir şeyle ilgili hepimizin fikri aynı olmayabilir.
+
+463
+01:12:49,960 --> 01:12:55,659
+Dolayısıyla daha data etiketlenirken bir takım hatalar içinde barındırmış oluyor.
+
+464
+01:12:57,000 --> 01:13:03,360
+Öğretmensiz öğrenme durumunda ise sistem tamamen real.
+
+465
+01:13:03,728 --> 01:13:18,547
+Özelliklerine, parametrelerine bakarak bir şeylerin birbirine benzeyip benzemediğine karar vermiş oluyor. Bir açıdan insandan daha objektif bir şekilde bu verileri etiketlemiş oluyor.
+
+466
+01:13:19,547 --> 01:13:28,547
+Tabii yine kesinlikle problemimize bağlı ama böyle de bir objektif yanı olan bir öğrenme yöntemi. O yüzden...
+
+467
+01:13:29,908 --> 01:13:41,948
+Her ne kadar öğretmenli öğrenme veya Supervised Learning daha çok kullanıyorsak da, an Supervised Learning'in de tercih edilmesi gereken ve edilmesinde fayda olan noktalar var.
+
+468
+01:13:43,307 --> 01:13:50,788
+Peki, şöyle bir genel bakarsak, aynı şeyleri tekrarlamış olmayayım. Buradakileri söyledim. Paralel çalışıyor.
+
+469
+01:13:57,587 --> 01:14:16,408
+Modeller elde ediyoruz. Beyinle olan benzerliğini çok kısa şu slide ile geçeceğim. Beynin diğer şeylerine girmeyeceğim. Slide'lar da var. Siz daha sonra isterseniz bakarsınız bunlara.
+
+470
+01:14:17,327 --> 01:14:25,268
+İnsan sinir sisteminin bir blok diagram gösterimi gibi düşünebilir burada gördüğünüz şekil.
+
+471
+01:14:25,619 --> 01:14:43,220
+Bizim de vücudumuz veya insan da böyle çalışıyor. Stimulus dediğimiz, dışarıdan aldığımız uyaranlar var. Bu uyaranların algılandığı reseptörlerimiz var sinirlerimizin uçlarında.
+
+472
+01:14:52,948 --> 01:15:19,348
+Bizim beynimizdeki aslında nöronların oluşturduğu ağa aktarılıyor. Burada bir karar oluşuyor ve biz de efektörlerimiz, uç birimlerimiz, elimiz, kolumuz, dilimiz, bacaklarımız, bütün organlarımızla bir cevap üretiyoruz.
+
+473
+01:15:19,988 --> 01:15:39,508
+Bu ne olabilir mesela? Bir şey kokladık. Koku çok hoşumuza gitti. Bu kokunun olduğu yere doğru yönelmek. Aslında işte reseptörlerimiz burada burnumuzdaki algılayıcılar.
+
+474
+01:15:39,920 --> 01:15:52,119
+Beynimiz gelen kokunun hoş olduğuna karar verdi. Nasıl karar verdi? Bizim daha önce yaşadığımız şeylere göre, deneyimlere göre, öğrendiklerimize göre.
+
+475
+01:15:54,340 --> 01:16:04,119
+Kimimize kötü gelen koku, kimimize aslında çok içimizi ısıtan, bir şeyleri hatırlatan bir koku olarak gelebilir.
+
+476
+01:16:05,039 --> 01:16:16,260
+Bu açıdan bakarsanız da, esas kilit nokta, aldığımız uyaran karşısında nöronlarımızın verdiği karar.
+
+477
+01:16:16,655 --> 01:16:33,975
+Olarak ortaya çıkıyor. Aldığımız uyaran nöronlarımızı tetikliyor. Bu nöronların hangi nöronları tetikleyeceği ve sonunda nasıl bir tepki oluşturacağı tamamen kişisel bir durum olarak ortaya çıkıyor.
+
+478
+01:16:42,336 --> 01:17:06,175
+Yapay sinir ağlarında temel mantığını oluşturuyor. O yüzden örnekler gösteriyoruz. Yani insanların yaşadığı tecrübelerin kararlarımızdaki etkisini yapay sinir ağlarına bu şekilde aktarmış oluyoruz. Kabaca bu blok biyogramın bir benzerini biz de yapay sinir ağlarında mimari olarak kullanıyoruz.
+
+479
+01:17:07,667 --> 01:17:28,887
+Başka neler var? Beynimizde bizim hiç dikkate almadığımız moleküller ve iyonlar var. Sinapslar var. Nöronal mikro devreler var. Biz ana nöronların oluşturduğu yerel devreleri dikkate alıyoruz ama küçük küçük ayrıca nöronal devreler var.
+
+480
+01:17:29,247 --> 01:17:50,927
+Dentrik ağaçlar var. Şu sağda mavi şekilde gördüğünüz biraz daha kalıncı olan bağlantılar, dentrik ağaçlar. Sinapslar onların ucunda yer alıyor. Bunları da dikkate almıyoruz. Biz sadece nöronları ve nöronların oluşturduğu ana yerel devreyi dikkate almış oluyoruz.
+
+481
+01:17:51,315 --> 01:18:11,395
+Bölgeler arası ayrıca devreler var. Bunları da devreye almıyoruz. Merkezi sinir sistemini zaten çözebilmiş de değiliz çok. Onu da hiç dikkate almamış oluyoruz. Dolayısıyla buradaki 8 tane bileşen, hatta bu da belki bizim kıskı bilgimizde oluşturduğumuz.
+
+482
+01:18:11,807 --> 01:18:34,747
+Tıvı bilgimizi oluşturduğumuz sekiz ana bileşen ama sekiz bileşenin ikisini dikkate alarak oluşturduğumuz, yani beyne ancak o kadar, dörtte biri kadar belki benzeyen, tamamen tahini söylüyorum, bir yapay, beyin benzeri mimari oluşturuyoruz.
+
+483
+01:18:35,699 --> 01:18:54,539
+Peki, sonuçta biz beyni anlasak bile bunu gerçeklerken yapay zeka uygulamaları için bilgisayarlardan veya GPU'lardan bir şekilde insan yapımı olan işlemcilerden yararlanacağız.
+
+484
+01:18:55,339 --> 01:18:59,839
+Beyinle aynı performansı göstermesini bekleyebilir miyiz bunların?
+
+485
+01:19:00,307 --> 01:19:23,947
+Sayılar birazcık eski ama çok yanlış değil. Örçekleri doğru en azından. Şöyle kıyaslanabilir. İnsan korteksinde yaklaşık 10 milyar tane nöron var. Buna karşı bizim şu anda işleyebildiğimiz en güçlü paralel bilgisayarda 10 bin tane falan işlemci var.
+
+486
+01:19:24,404 --> 01:19:43,904
+GPU'larda biraz daha iyi olduğunu düşünürsek ama kuantum bilgisayarlarında henüz çıkmadığını düşünürsek arada bir uçurum var. 10 milyar nöron yani 10 milyar tane işlem veya işlemci var. Bizim elde edebildiğimiz 10 binler seviyesinde.
+
+487
+01:19:44,904 --> 01:19:51,904
+Korkunç bir o zaman işlem kapasitesinde beyinden uzağız.
+
+488
+01:19:52,020 --> 01:20:07,260
+Her biyolojik nöron, güçlü paralel bilgisayarlardaki bağlantılara benzer şekilde binlerce diğer nörona bağlanıyor. Biyolojik nöronların çalışma hızları 10 üzeri eksi 3 saniye.
+
+489
+01:20:07,648 --> 01:20:23,887
+Bir silikon çipin 10 üzeri eksi 9 saniye. Yani birisi milisaniye, birisi nanosaniye seviyesinde çalışıyor. Dolayısıyla burada da bir fark var.
+
+490
+01:20:23,887 --> 01:20:33,507
+Bir de enerji açısından bakarsak, insan beyninin enerji tüketimi saniyede yaklaşık 10 üzeri eksi 16 J.
+
+491
+01:20:34,163 --> 01:20:52,783
+En iyi bilgisayarların enerji tüketimi saniyede yaklaşık 10 üzeri eksi 6 J. Burada da neredeyse 10 üzeri 3 gibi bir fark var. Yani enerji tüketimi olarak da bilgisayarlarımız beyinden.
+
+492
+01:20:53,152 --> 01:21:05,431
+Çok daha az etkin. Bu anlamda donanımsal olarak da alınması gereken henüz çok yol var. Eğer beyne benzer bir şey yapmaya çalışıyorsak.
+
+493
+01:21:06,100 --> 01:21:22,500
+İnsan beyninin yapısı girmeyeceğim dediğim gibi ama şurada sadece arkadaki perital log, okupital log kısımları bizim alıcılarımız, sensörlerimizin olduğu kısım olarak düşünebilir.
+
+494
+01:21:23,539 --> 01:21:30,180
+Öndeki frontal log, bu arada temporal log da işitmeyle ve hafızayla ilgili kısımda.
+
+495
+01:21:30,591 --> 01:21:49,332
+Yine bizim veri girişimiz diye düşünebilir. Frontal lob ise planlamanın, akıl yürütmenin yapıldığı kısım. Frontal lob da bizim karar vericimiz yani ağın çıktısının üretildiği yer diye düşünebiliriz.
+
+496
+01:21:51,471 --> 01:21:57,591
+Burada sadece şöyle bir görmüş olun. Sinapslar, aksonlar, dentrinler dediğimiz.
+
+497
+01:21:58,036 --> 01:22:15,215
+Biz neyi alıyoruz? Ortadaki nükleeris dediğimiz merkez nöronu sadece modelliyoruz. Diğer şeyleri ve bunların içinde bulunduğu kimyasal ortamı kesinlikle modellerimize aktarmamış oluyoruz.
+
+498
+01:22:17,036 --> 01:22:21,515
+Arkadaşlar, ara ister misiniz? Bir ara verip mi devam edeyim?
+
+499
+01:22:22,895 --> 01:22:23,975
+İyi olabilir hocam.
+
+500
+01:22:24,532 --> 01:22:34,891
+Tamam. 10 dakika o zaman sessize alıyorum. Ben buradayım. 10 dakika sonra tekrar başlarız. Tamam. Sonra McClough Kids'e geçeceğim.
+
+501
+01:33:20,564 --> 01:33:24,044
+Arkadaşlar, başlayalım geldiyseniz.
+
+502
+01:33:25,444 --> 01:33:26,204
+Geldik hocam.
+
+503
+01:33:26,984 --> 01:33:27,284
+Tamam.
+
+504
+01:33:27,624 --> 01:33:28,004
+Alıyoruz.
+
+505
+01:33:28,924 --> 01:33:30,364
+Tekrar merhaba.
+
+506
+01:33:31,944 --> 01:33:36,944
+Macleopis nöronundan bir başlayalım. İlk nöron nasıl bir şeymiş?
+
+507
+01:33:37,944 --> 01:33:42,084
+Daha doğrusu hala kullandığımız nöron aşağı yukarı bu yapıda.
+
+508
+01:33:42,579 --> 01:33:54,039
+Dediğim gibi gerçek beyindeki nöronların basitleştirilmiş bir hali olarak düşünmüş bir işlem birimi, basit bir işlem birimi olarak düşünebilirsiniz.
+
+509
+01:33:55,699 --> 01:34:09,039
+Nöronumuzun içinde bir toplama yapan bir işlem birimimiz var. Bu toplamanın sonucunu da bir fonksiyon uygulayarak çıktığı oluşturuyoruz.
+
+510
+01:34:10,420 --> 01:34:30,320
+Şekilde inlerle gösterilenler inputlarımız, en tane input geliyor. Bunları topluyoruz ve daha sonra bir threshold fonksiyonu uygulayarak, bir step fonksiyonu uygulayarak çıktığı elde ediyoruz. Bu kadar basit bir yapı, bir toplama işlemi ve bir threshold.
+
+511
+01:34:30,963 --> 01:34:55,663
+Tresol fonksiyonuyla bir çıktı elde ediyoruz. Tresol fonksiyonunun sınırına bağlı olarak aslında söylediği şey bu şu nöronun bize elde ettiğin toplam tresol değerinin üstündeyse pozitif, altında kalıyorsa negatif ya da olumsuz bir sonuç üret diyor.
+
+512
+01:34:57,536 --> 01:35:04,895
+İlk maklopis nöronunun yaptığı veya yapabileceği şey bununla sınırlı kalmış oluyor.
+
+513
+01:35:07,296 --> 01:35:14,056
+Tabii lineer olmayan başka aktivasyon fonksiyonlarının kullanımı biraz daha sonra olacak.
+
+514
+01:35:14,056 --> 01:35:21,376
+Ama maklopis'in tanımladığı şu şekildeki bir fresh shot fonksiyonu sadece.
+
+515
+01:35:26,131 --> 01:35:32,811
+En basit yapay sinir ağları maklopis nöronları grubundan oluşuyor.
+
+516
+01:35:33,671 --> 01:35:40,731
+Yani birden fazla nöronu peş peşe bağlayarak basit bir ağ oluşturabiliyoruz.
+
+517
+01:35:40,731 --> 01:35:44,152
+O durumda uygulama nasıl oluyor?
+
+518
+01:35:44,731 --> 01:35:50,011
+Yine inputlarımız var. Nöron aynı nöron toplama işlemini yapıyor.
+
+519
+01:35:50,711 --> 01:35:52,871
+Aktivasyon fonksiyonunu uyguluyor.
+
+520
+01:35:53,300 --> 01:36:07,560
+Çıktığı bir sonraki nörona aktardığı bağlantının da bir ağırlığı oluyor. Bu sefer devreye giren bu iki nöron arasındaki bağlantının ağırlığı söz konusu.
+
+521
+01:36:08,360 --> 01:36:18,980
+Hesaplamalar şöyle yapılıyor. Inputları topluyoruz dediğim gibi. Şuradaki toplam işlemi, en alt kattaki OT. Masumu görüyor musunuz arkadaşlar?
+
+522
+01:36:19,859 --> 01:36:20,739
+Evet hocam.
+
+523
+01:36:20,739 --> 01:36:37,059
+Görüyor musun? Tamam. Daha önceki sistemde görünmüyordu da hep görmüyorsunuz diye şey yapıyorum. En tane inputumuzu topluyoruz. Sonuçta şu step fonksiyonunun yaptığı şey belirlediğimiz threshold keta ise.
+
+524
+01:36:37,471 --> 01:36:58,211
+O tetanın üstünde mi çıktı, toplam altında mı çıktı onu belirlemek. Dolayısıyla teta değerini çıkarırsam toplamın tetayla farkı negatifse olumsuz, pozitifse olumlu bir sonuç elde edeceğim.
+
+525
+01:37:00,180 --> 01:37:15,079
+Buna göre bir çıkma hesaplıyorum negatif veya pozitif olarak ve bunu bir ağırlık değeriyle, en sağdaki denklem, ağırlık değeriyle çarparak diğer nörona input olarak veriyorum.
+
+526
+01:37:15,980 --> 01:37:26,700
+Sonra yine bu input'u alıyorum, toplam işlemi yapıyorum, başka gelen input'lar varsa yine fonksiyonu uyguluyorum ve bir sonraki nörona aktarabiliyorum vs.
+
+527
+01:37:27,444 --> 01:37:40,124
+1940'lardaki uygulama genellikle bu makrofis nöronlarının birbirine bağlanmasıyla bu şekilde yapılan hesaplamalarla kısıtlı.
+
+528
+01:37:40,124 --> 01:37:46,344
+Hemen şu araya koymuşum ben slide'ı hatırlatma olarak.
+
+529
+01:37:50,323 --> 01:38:08,503
+Vektör çarpımı özellikle sık sık yapacağız. Dolayısıyla Liner Cebir'le ilgili bilgilerinizi lütfen bir tekrarlamanızı rica edeceğim. Biz de örnekler içinde yapacağız ama siz baştan bir tekrarlarsanız çok iyi olur.
+
+530
+01:38:09,076 --> 01:38:31,655
+Kısaca hemen bir notasyondan ve vektörle skaler arasındaki farktan bahsedelim. Vektör dediğimiz şey ilgili sayıların sıralı grubu olarak düşünülebilir. İlk satırdaki x ve y birer vektör olarak düşünülebilir.
+
+531
+01:38:32,095 --> 01:38:54,315
+X1, X2, X3 diye gösterdiğimiz vektörün bileşenleri ve bunlar skaler değerler. Bunları bir arada kullandığımızda vektör dediğimiz şey skaler bir değerin yanı sıra bir yön bilgisi de içeren bir tanımı kapsıyor.
+
+532
+01:38:55,028 --> 01:39:06,548
+Ancak vektörün bileşenlerini topladığımda doğal olarak her bileşen skaler değer olduğu için yine elde edeceğimiz şey skaler bir değer olacak.
+
+533
+01:39:07,728 --> 01:39:12,448
+Aynı uzunlukta iki vektörün toplamı başka bir vektörü verir.
+
+534
+01:39:12,448 --> 01:39:19,968
+Bu şekilde yaptığımız toplamda her bileşeni ilgili bileşenle yani birinci bileşeni birinciyle.
+
+535
+01:39:20,467 --> 01:39:25,027
+İkinciyi ikinciyle toplayarak yeni vektörümüzü elde edebiliyoruz.
+
+536
+01:39:25,648 --> 01:39:29,007
+Buraya kadar her şey mantıklı.
+
+537
+01:39:30,768 --> 01:39:32,347
+İki vektörün çarpımı.
+
+538
+01:39:32,832 --> 01:39:51,092
+Toplama iki vektörün yine vektör veriyordu. İki vektörün çarpımı ise skaler bir değer üretecektir. Çünkü iki vektörün çarpımı bileşenlerin çarpımı ve toplanmasıyla yapılıyor ve tek bir değere dönüyor.
+
+539
+01:39:51,092 --> 01:39:57,092
+Yani toplama işlemindeki gibi yine bileşenleri olan bir vektöre dönüşmüyor.
+
+540
+01:40:00,000 --> 01:40:25,460
+Bir bileşeni birbiriyle topladığımız için en sonunda şurada sum diye gösterilen kısımda elde ettiğimiz şey bir adet sayı. O da skaler bir değer. Şu kısmı en azından aklınızdan çıkarmayın. İki vektörün çarpımı bir skaler değer verir. İki vektörün toplamı vektörel bir değer verir. İşlemleri yaparken çok hata yapılan yerler olduğu için.
+
+541
+01:40:25,908 --> 01:40:44,268
+Özellikle söylüyorum. Vektör çarpımında dikkat edeceğiniz boyutlarla ilgili kısıtlar vardı hatırlarsanız. Satır ve sütun çarpılabilir vektörlerle çarpamayacağımız vektörler vardı. Onları biraz tekrarlarsanız iyi olur.
+
+542
+01:40:46,228 --> 01:40:59,708
+Nöronumuzun içinde toplama işleminin yanında maklopidsin tanımladığı step fonksiyonunun dışında farklı aktivasyon fonksiyonları da.
+
+543
+01:41:00,079 --> 01:41:17,980
+Kullanabiliyoruz demiştik. Buna aktivasyon fonksiyonu dememizin sebebi aslında bu fonksiyonun sonucu bizim diğer nöronumuzun aktive olup olmayacağını, diğer nöronun uyarılıp uyarılmayacağını belirlediği için bir nevi.
+
+544
+01:41:18,484 --> 01:41:38,364
+En genel kullandığımız aktivasyon ilk veya önerilen aktivasyon fonksiyonları Step fonksiyonunun yanında bir de Identity Function dediğimiz kimlik fonksiyonu dediğimiz fonksiyon. O da fx eşittir, x'in aslında gösterdiği.
+
+545
+01:41:38,688 --> 01:42:00,088
+Threshold veya Binary Step fonksiyonunu da şu şekilde tanımlayabiliriz. X θ'dan büyükse 1, X θ'dan küçükse, büyük eşitse 1, küçükse 0 sonucunu veren fonksiyonda Binary Step fonksiyonu veya Threshold fonksiyonu.
+
+546
+01:42:02,868 --> 01:42:15,068
+Bunun dışında çok sayıda, bunlar biraz daha ilerleyen dönemlerde kullanılmaya başlayan, çok sayıda farklı aktivasyon fonksiyonu var.
+
+547
+01:42:15,068 --> 01:42:19,688
+Ama genellikle bunların hepsini kullanmıyoruz.
+
+548
+01:42:20,688 --> 01:42:29,068
+Sigmoid dediğimiz, şu soft sign diye gösterdiğim soft sigmoid fonksiyonunun bir benzeri.
+
+549
+01:42:29,652 --> 01:42:44,091
+Bir saniye. Şurada varmış, atlamışım ben. Şu şekilde 1 bölü 1 artı E üzeri dama X şeklindeki sigmoid fonksiyonunu çok kullanıyoruz.
+
+550
+01:42:52,819 --> 01:43:12,819
+Fonksiyonunu kullanıyoruz. Ki az önce bahsettiğim gradiyanın kaybolması veya Vanishing Gradient probleminin yapay sinir ağlarında mevcut olan problemin çözülmesinde reluların kullanımı çok önemli.
+
+551
+01:43:19,091 --> 01:43:42,131
+Anlaşılıyor. Bunun üzerine bir takım çalışmalar farklı aktivasyon fonksiyonu kullanarak bunu aşabilir miyiz diye çok sayıda denemeler yapılıyor. Ama bu problemin çözülmesi bir şekilde biraz daha 2000'lerin ortalarına denk geliyor.
+
+552
+01:43:43,699 --> 01:43:59,180
+Bu da relular sayesinde. Dolayısıyla burada da yaygın kullanılan relu fonksiyonu var. Soft sign fonksiyonu da kısmen kullanılıyor. Ve tabii sigmoid fonksiyonu.
+
+553
+01:43:59,479 --> 01:44:06,960
+Binary sigmoid fonksiyonu, şuradaki gamma değerini bir aldığımızda şu sağdaki gibi sıfırla bir arasında.
+
+554
+01:44:07,604 --> 01:44:27,123
+Ara değer üreten bir fonksiyon. Gamayla oynadığınızda bu fonksiyonun temsil ettiği aralığın değiştiğini göreceksiniz. Bunu bir çizdirerek, deneyerek görebilirsiniz veya uygulamaların sırasında da zaten kullanacağız sigmoid fonksiyonunu.
+
+555
+01:44:28,264 --> 01:44:34,663
+Bu vesileyle bir şey daha sorayım. Şimdi aşağıda da bipolar sigmoid fonksiyonu var.
+
+556
+01:44:35,155 --> 01:44:53,536
+Bipolardan ne kastettiğimi veya bipoların ne olduğunu biliyor musunuz? Onunla ilgili bir yorum alayım sizden. Binary ile bipolar arasındaki ilişki veya fark. Bipolar kelimesini duymuşsunuzdur da ne anlamda duydunuz?
+
+557
+01:44:57,587 --> 01:44:59,167
+Var mı yorum yapacak olan?
+
+558
+01:45:05,363 --> 01:45:08,123
+Peki, duydum duymadım diyecek olan var mı?
+
+559
+01:45:09,823 --> 01:45:11,203
+Hocam ben hiç duymadım.
+
+560
+01:45:12,023 --> 01:45:15,483
+Duymadın, tamam. Duyan var mı? Öyle sorayım.
+
+561
+01:45:20,692 --> 01:45:33,112
+Tamam, ilginç. Kullanacağız. Şöyle söyleyeyim, aslında şurada GX ile yazdığım bir polar sigmoid formülünden de çizdirirseniz göreceksiniz.
+
+562
+01:45:35,251 --> 01:45:40,011
+Genellikle, tabii bu da biraz daha ilerleyen aşamalarda.
+
+563
+01:45:40,564 --> 01:46:03,023
+Çıkan fikir ama yine de perseptronlarda ve çok katmanlı perseptronlarda kullanılmaya başlanmış bir şey. Özellikle lojik problemleri çözerken ihtiyaç hissedilmiş bir şey. Binary olarak temsil ettiğimiz değerler sıfır ve birden ibaret. Yani bir şeye ya yanlış ya doğru demiş oluyoruz.
+
+564
+01:46:05,439 --> 01:46:26,059
+Bir şey tam kesin doğru, tam kesin yanlış olmayabilir. Ara değerlere ihtiyacımız olabilir. Ayrık veya sürekli ara değerleri de kapsayacak bir şey istiyorsak, temsil istiyorsak, bipolar değerlerde şu şekilde en azından ayrık versiyonunda...
+
+565
+01:46:26,287 --> 01:46:50,127
+Eksi 1, 0, 1 gibi 3 tane sonuç üretecek şekilde veya 3 değerle temsil ediyoruz. Inputlarımızı da outputlarımızı da bu şekilde temsil edebiliyoruz. Burada eksi 1 yanlış yani binary'deki 0 yerine kullandığımız bir değer olacak. 1 yine 1 pozitif olacak.
+
+566
+01:46:50,608 --> 01:47:07,827
+Sıfır ise belirsizliği ifade edecek. Yani elinizdeki bir inputun doğru mu yanlış mı olduğunu, pozitif mi negatif mi olduğunu bilmiyorsanız onu sıfırla temsil etme gibi bir seçenek sunuyor bize.
+
+567
+01:47:08,427 --> 01:47:17,467
+Bu da yapay sinir ağlarının genelleştirme, hata terörü edebilme yeteneklerini daha üst düzeye çıkarabilen bir temsil.
+
+568
+01:47:17,876 --> 01:47:45,176
+Yöntemi. Daha çok çok yapacağım için fazla devam etmiyorum tanımlamaya. Sözel ders gibi oldu. Örneklerde göreceksiniz. Binary yerine bipolar temsil ettiğimizde verileri hem eğitim daha kısa sürüyor hem sonuçlar daha başarılı oluyor. Özellikle verilerimiz herhangi bir şekilde hatalı veya gürültülü ise.
+
+569
+01:47:45,779 --> 01:48:04,239
+Şimdi, aktivasyon fonksiyonlarını seçerken dikkat ettiğimiz ikinci bir husus daha var. Fonksiyonlarımızın türevlenebilir olması lazım. Şu tabloda yaygın kullanılan veya hepsi aynı derecede yaygın olmasa da.
+
+570
+01:48:04,724 --> 01:48:09,924
+Kullanılan aktivasyon fonksiyonlarını görüyorsunuz ve onların türevlerini.
+
+571
+01:48:11,564 --> 01:48:25,304
+Türevi neden istiyorum? Backpropagation algoritmasından bahsetmeye başladığımız zaman fonksiyonların öğrenme algoritmaları içinde türevini alıyor olduğumuzu göreceğiz.
+
+572
+01:48:25,964 --> 01:48:32,064
+Dolayısıyla fonksiyonumuzun türevlenebilir olması öğrenme algoritmamız için en zem bir durum.
+
+573
+01:48:32,595 --> 01:48:46,555
+Teorik olarak kafamıza göre aktivasyon fonksiyonu seçebilir miyiz? Evet, seçebiliriz. Ama türevlenebilir bir fonksiyon seçmezsek öğrenme algoritmasında sıkıntı yaşarız.
+
+574
+01:48:46,996 --> 01:49:00,516
+İkinci parametre ne? Yani şimdi bilmiyorum nasıl yapıyorsunuz uygulama yaparken. Aktivasyon fonksiyonlarını sırayla deniyor olabilirsiniz. Hangisinde güzel sonuç alıyorsam diye bakıyor olabilirsiniz.
+
+575
+01:49:00,516 --> 01:49:10,776
+Biraz daha bilinçli bir seçim yapmak gerekirse özellikle de fonksiyonların da üstlerinde, kat sayılarında.
+
+576
+01:49:11,152 --> 01:49:20,311
+Bu, sizin için belirleyici olan aslında antikulasyon fonksiyonunun temsil ettiği aralıktır.
+
+577
+01:49:24,180 --> 01:49:38,260
+Çıkışta elde etmek istediğiniz verilerin alt ve üst sınırı neyse, size o sınırda, o aralıkta değer üreten bir aktivasyon fonksiyonu seçmeniz lazım.
+
+578
+01:49:38,260 --> 01:49:46,280
+Aksi halde ne yaparsanız yapın, yeterince başarılı bir sonuç elde edemezsiniz.
+
+579
+01:49:46,931 --> 01:50:03,051
+Bu da genellikle dikkatten kaçan, oysa çok önemli olan basit bir konu. Eğer inputlarınız 1 ile 10 arasında çıkışta elde etmeniz gereken de atıyorum,
+
+580
+01:50:04,944 --> 01:50:19,244
+Kesinlikle pozitif olması gereken ama büyüklüğü de sınırsız olan bir şeyse gidip soft plus fonksiyonunu kullanmam uygun olabilir. Sıfırla sonsuz arasında bana değer üretecektir, pozitif değer üretecektir.
+
+581
+01:50:19,600 --> 01:50:36,100
+Ama gidip bir soft sign fonksiyonu kullanırsam negatif değerler de elde edeceğim. Benim elimde hiç negatif sonuç veren örnek yoksa bir şekilde negatif sonuç üreten bir fonksiyonla ben ne yapayım?
+
+582
+01:50:37,984 --> 01:50:58,903
+Dolayısıyla seçtiğiniz aktivasyon fonksiyonunun çıktılarına dikkat etmeniz lazım. Hangi aralıkta çıktı üretiyor? İkinci bir alternatif, kendi evinizdeki örneklerin kullandığınız aktivasyon fonksiyonunun aralıklarına göre ölçeklenmesi lazım.
+
+583
+01:51:01,903 --> 01:51:04,903
+[öğrenci] yazdığını şimdi gördüm.
+
+584
+01:51:05,264 --> 01:51:16,403
+Y değerlerinin değerlerde alabildiği bir fonksiyon dipolar için mi dedim? Tam anlayamadım. Yazarsın tekrar.
+
+585
+01:51:16,403 --> 01:51:26,264
+Bu şekilde aktivasyon fonksiyonumuzu seçtikten sonra, bu da diğer bir grup daha.
+
+586
+01:51:27,764 --> 01:51:40,804
+Dediğim gibi çeşit çok ama bu kadar fazlasını kullanıyor muyuz? Hayır. İşte burada logistik fonksiyon, identity function, bunlar kullanılan fonksiyonlar.
+
+587
+01:51:40,804 --> 01:51:53,264
+Hipolar için demiştim. Ha, eksi değerler. Tamam. Evet [öğrenci]. Bir nevi doğru kalanını da şeyde konuşacağız örneklerde.
+
+588
+01:51:55,220 --> 01:52:08,640
+Bu kadar çok çeşitin içinde işte sigmoid, tangent perborik, identifonction ve tabi relu yaygın olarak kullandığımız fonksiyonlar.
+
+589
+01:52:13,640 --> 01:52:18,640
+Demin yazmış olduk aslında. Şimdi çıkışları...
+
+590
+01:52:19,380 --> 01:52:35,200
+Girdilerin bir fonksiyonu olarak yazmak istersek, çıkışın kararını da verecek şekilde yazmak istersek, bu slide'da gördüğünüz gibi ifade edebiliriz.
+
+591
+01:52:35,200 --> 01:52:40,340
+Eğer girdilerin toplamı keta'dan büyükse sonuç 1 olacaktır.
+
+592
+01:52:40,688 --> 01:52:46,268
+Eğer girdilerin toplamı tetadan küçükse sonuç sıfır olacaktır.
+
+593
+01:52:46,268 --> 01:52:56,268
+Veya tek deklamda ifade etmek istersek de toplam eksi tetayı bir...
+
+594
+01:52:56,627 --> 01:53:04,327
+İşaret fonksiyonu uyguladığımda zaten bu içerideki değer pozitifse sonuç 1 olacaktır.
+
+595
+01:53:04,907 --> 01:53:08,167
+Negatifse de 0 olacaktır diyebiliriz.
+
+596
+01:53:08,667 --> 01:53:13,728
+Makrofis nöronunun aslında matematiksel ifadesi de bu kadar.
+
+597
+01:53:19,636 --> 01:53:26,756
+Peki, Resholt Lojiklerimi de ediyoruz. McCloughis nöronuna bu arada. Onu burada söylemiş olayım.
+
+598
+01:53:31,828 --> 01:53:36,648
+Bu nöronla tek başına çok fazla bir şey yapamayacağımızdan bahsettik.
+
+599
+01:53:38,408 --> 01:53:50,828
+Ancak birden fazla nöron kullanırsak ve bu nöronlar arasındaki bağlantıların da ağırlık değerlerini de bir parametre olarak işleme katarsak,
+
+600
+01:53:59,028 --> 01:54:03,087
+Etkili bir yapıya ulaşmış olacağız.
+
+601
+01:54:04,448 --> 01:54:13,627
+Şimdi nöronların, her bir nöronun girdisi bu evrensel olarak şimdiye kadar değişmemiş bir şey.
+
+602
+01:54:14,467 --> 01:54:19,288
+Dolayısıyla kısaca tanımları bu şekilde söyleyebiliriz.
+
+603
+01:54:19,288 --> 01:54:26,127
+Bir nöronun girdisini inputların, bizim verilerimizin girdilerinin,
+
+604
+01:54:26,931 --> 01:54:34,411
+Bu, ağırlıklarla, bağlantı ağırlıklarıyla çarkımının toplamı olarak ifade edebiliyoruz.
+
+605
+01:54:34,411 --> 01:54:47,051
+Tekrar dönersen, şuradaki girdilerin, eğer bu girdiler bir başka nörondan geliyor olsaydı bağlantıların da ağırlıkları olacaktı.
+
+606
+01:54:47,551 --> 01:54:53,192
+Bağlantı ağırlığıyla çarkılıp nöronun içinde de bir toplama işlemine tutulması olarak.
+
+607
+01:54:53,684 --> 01:55:13,244
+Bakabilirsiniz. Bu şekilde bir nöronun net girdisini hesaplamış oluyoruz. Sonra bu girdi değerini bir aktivasyon fonksiyonunu uygulayarak diğer bir nöron için çıktı değerini oluşturacak şekilde işliyoruz.
+
+608
+01:55:13,244 --> 01:55:19,744
+Şimdi bir threshold fonksiyonu kullanırsak Macleopist'teki gibi.
+
+609
+01:55:20,148 --> 01:55:34,488
+O zaman net girdiğimize F diye gösterdiğimiz bir fonksiyonu uygulayıp, girdiğinin sıfırdan büyükse bir, küçükse sıfır üretmesi.
+
+610
+01:55:34,975 --> 01:56:00,195
+Kararını verebiliriz. Eğer threshold'un sıfırsa durum böyle veya aslında threshold'un sıfır olması demek herhangi bir threshold kullanmamışız demek. Bir sıfırdan farklı bir threshold değeri kullanırsak da nöronun çıktısı, Fnet'te gösterdiğim şey şu şekilde ifade edilebiliyor.
+
+611
+01:56:02,899 --> 01:56:22,880
+Threshold'u böyle kullanmışken, Maklopis, buradan oluşan bir fikir var. Fiyas denen bir değer. Bu threshold'u şuraya dahil etmektense, eğer sıfırdan farklı bir threshold değeri varsa, onu nörona bir girdi olarak verebilir miyiz?
+
+612
+01:56:24,372 --> 01:56:35,192
+Şurada ortadaki ifadeye bakarsanız, yaptığım şey bu toplamı elde ettikten sonra şuradaki ketetrajı olduğu kadar bir değeri buradan çıkartmak.
+
+613
+01:56:35,311 --> 01:56:40,931
+Yani hala toplama eklenen yeni bir değerden bahsediyorum.
+
+614
+01:56:40,931 --> 01:56:51,011
+Bunu yapacağımı ben şuradaki eksik ketayı da bir input olarak kabul etsem ve sadece toplama işlemi yapsam.
+
+615
+01:56:51,060 --> 01:56:58,000
+Aynı şeye varır değil mi? Takip edebiliyor musunuz söylediklerimi arkadaşlar? Bir sıkıntı yok değil mi?
+
+616
+01:56:59,780 --> 01:57:00,360
+Yok hocam.
+
+617
+01:57:00,360 --> 01:57:10,360
+Tamam. Bu şekilde aslında threshold ile dias diye tanımladığımız...
+
+618
+01:57:10,836 --> 01:57:30,175
+Bir inputun ilişkisini söyleyebiliriz. Sanki bir threshold aktivasyon fonksiyonu uygulamakla nörona bir bias değerini, input B ile gösterdiğimiz bias değerini ekstra bir input olarak vermek aynı işe yarıyor.
+
+619
+01:57:30,623 --> 01:57:45,783
+Şimdi buradaki threshold fonksiyonunun dışında bir aktivasyon fonksiyonu kullanacak olsanız bile aslında böyle bir bias değeri kullanmanın şöyle bir faydası var.
+
+620
+01:57:45,783 --> 01:57:57,583
+Siz istediğiniz sonuçlara benzeyen veya istediğinize benzeyen bir eğriyi oluşturabilirsiniz, ilişkileri kurabilirsiniz.
+
+621
+01:57:58,003 --> 01:58:18,723
+Ama tam istediğiniz aralığa oturmuyordur. Bir şekilde oluşan çıktıların biraz kaydırılmasında, değerlerin ayarlanmasında size oynayabileceğiniz bir parametre olarak bu BIAS değeri büyük katkı sağlar. O nedenle görmüşsünüzdür.
+
+622
+01:58:20,627 --> 01:58:35,488
+Eğer birazcık baktıysanız yapay sinir ağları veya derin rün ağları, hiç bakmayanlar için de yeni olarak söylemiş olayım. Mutlaka her nöronun veya her katmanın girişinde bir bias değeri vardır.
+
+623
+01:58:47,315 --> 01:59:14,096
+Oynama parametresi. Bir açıdan da şöyle de düşünebilirsiniz. Şimdi fonksiyonlarda, linear bir fonksiyonda x artı 5 dediğimde oradaki o artı 5 ne yapıyor? Bizim değerimizi 5 birim kaydırmış oluyor değil mi? Yani aslında bir shift işlemi yapan bir parametre olarak düşünebilirsiniz.
+
+624
+01:59:14,547 --> 01:59:28,188
+İstediğiniz sonucu veya istediğiniz fonksiyonu şekil olarak elde ettiniz ama biraz kayık duruyor. O zaman ben Bias değeriyle oynayarak tam benim istediğim yere oturacak şekilde bunu oynatabiliyorum.
+
+625
+01:59:29,228 --> 01:59:32,488
+Bias'ın önemi ve anlamı kabaca böyle.
+
+626
+01:59:33,011 --> 01:59:40,011
+Ve threshold ile bias arasında da bu sebepten bir ilişki olduğunu söyleyebiliriz.
+
+627
+01:59:40,971 --> 01:59:56,771
+Mark Lofitz nöronundaki gibi bir threshold değer uygulamayı düşünüyorsam, onun yerine onun negatifi olan bir miktara, bir değere sahip inputu nörona ekleyebilirim alternatif olarak.
+
+628
+01:59:58,451 --> 01:59:59,431
+Peki.
+
+629
+02:00:00,000 --> 02:00:24,179
+Maklo-Pits nöronlarını istediğimiz şekilde, istediğimiz sayıda bağlayabiliyoruz. Bu da perseptron olarak adlandırdığımız, aslında maklo ve Pits'in nedense aklına gelmemiş, daha doğrusu nöronları birbirine bağlamışlar da bu şekilde perseptrondaki gibi yapısal bir bağlama söz konusu değil.
+
+630
+02:00:24,627 --> 02:00:47,707
+Bu daha sonra Rosenbelth'in önerdiği bir şey. Perseptron Ağı dediğimiz şey de her input bir sonraki bir katman olarak düşünebileceğimiz bir nöronların oluşturduğu bir katmandaki nöronlara bağlı. Her input her nörona bağlı olmak zorunda.
+
+631
+02:00:48,340 --> 02:01:06,539
+İmput sayısıyla nöronların bulunduğu katmandaki nöron sayısı eşit olmak zorunda falan değil. Burada şekil çok eşitmiş gibi görünmüş ama dikkat ederseniz n tane inputumuz var. Buna karşılık n tane nöronumuz var.
+
+632
+02:01:13,488 --> 02:01:38,007
+Tek katmandan kastettiğimde paralel işleyen nöronlar aslında bunlar. Paralel hesaplama yapıyoruz dedik ya, bu nöronlara hepsine aynı anda inputlar geleceği için aynı anda toplama işlemi ve ayrıca aktivasyon fonksiyonu uygulanması işlemini gerçekleştirebiliriz.
+
+633
+02:01:38,399 --> 02:01:49,100
+Sırayla hesaplamamız gerekmiyor her nöron için. Dolayısıyla paralel işleyebileceğimiz nöronların bulunduğu...
+
+634
+02:01:49,492 --> 02:02:15,391
+Her diziye bir katman olarak isimlendirebiliriz. Burada da bir tane o şekilde bir katman var. Bir inputlarımız var, ikincisi de nöronların bulunduğu katmanımız var. Böyle bir yapı oluşturduğumuzda, mimari oluşturduğumuzda buna da tek katmanlı perseptron veya tek katman demiyorsanız da perseptron dediğinizde anlayacağımız şey.
+
+635
+02:02:15,796 --> 02:02:21,256
+Bu mimaridir. Buradaki hesaplamalar nasıl yapılıyor?
+
+636
+02:02:23,336 --> 02:02:30,796
+İnputlarımız nöronlara giden bağlantılarında bir ağırlık değeri barındırıyor.
+
+637
+02:02:31,596 --> 02:02:35,956
+İnputun değerini bu ağırlık değeriyle çarpıyoruz.
+
+638
+02:02:36,636 --> 02:02:43,115
+Nörona gelen bütün inputlar kendi ilgili ağırlıklarıyla çarpılıyor.
+
+639
+02:02:43,551 --> 02:03:06,452
+Toplanıyor ve sonra bir threshold değeri veya bias değeri varsa bu nöronlara bağlı olan veya içerideki fonksiyonumuz maklülops nöronu kullanıyorsak fonksiyonumuz threshold fonksiyonu olduğu için bu threshold değerini çıkararak sonucun pozitifliği negatifliğine olduğuna göre bir çıktı hesaplamış oluyoruz.
+
+640
+02:03:07,172 --> 02:03:09,212
+Yaptığımız işlem de bu kadar.
+
+641
+02:03:09,876 --> 02:03:27,655
+Bunu söylemişken küçük bir not söylemiş olayım. Hep yapay sinir ağlarından, derin öğrenmeden bahsedilirken Black Box terimi çok kullanılır. Yani kapalı kutu, içeride ne olduğunu bilmiyoruz.
+
+642
+02:03:27,655 --> 02:03:35,635
+O bilmemenin sebebi aslında içerideki işlemlerin tanımlı olmamasıyla alakalı değil.
+
+643
+02:03:36,051 --> 02:03:46,971
+İçeride çok fazla nöron olması, işlemleri alt alta yazdığımızda insan gözüyle takip etmenin zor olması.
+
+644
+02:03:47,471 --> 02:04:11,931
+Düşünün ki burada binlerce nöronunuz var ve binlerce kere şu işlemi yapıyorsunuz. Bu işlemler tekrar bir sonraki katmana giderken başka ağırlıklarla çarpılıyor vs. vs. Denklemleri yazdığınızda aslında çok uzun denklemler oluyor. Oysa denklemler o kadar basit ki sadece toplama ve çarpma işleminden ibaret.
+
+645
+02:04:12,404 --> 02:04:34,684
+Hadi bir de aktivasyon fonksiyonumuz, o da her zaman çok kompleks olmak durumunda değil. Matematiksel olarak gayet iyi biliyoruz içeride ne var. Formülize etmek istesek, Dışan Mayfau uzun denklemleri yazmak istesek çok rahatlıkla yazarız. Orada bir sıkıntı yok.
+
+646
+02:04:35,091 --> 02:04:54,471
+Ama takip edemiyoruz. Gözle, uzunluktan dolayı, akıl yürütmeyle tam olarak ne oldu da bu sonuca vardı bu yapay sinir ağ diye bir çırpıda söylemek, bir bakışta söylemek mümkün olmuyor.
+
+647
+02:04:54,471 --> 02:04:56,427
+Black box denmesinin...
+
+648
+02:04:56,467 --> 02:05:08,087
+Sebebi de bu. Aslında kapalı olan bir şey yok. Yani yaptığımız işlemler gayet basit ve ortada. Sadece çoklar. Sayı olarak çok fazla işlem var.
+
+649
+02:05:08,087 --> 02:05:22,007
+Peki, perseptronların ana, tabii ki o dönemler için önemli olan uygulamalarının başında lojik tıpkıların.
+
+650
+02:05:22,384 --> 02:05:31,923
+geldiğini söyleyebiliriz. Malkyloftis nöronlarıyla lojik tapıların nasıl gerçekleneceğine bakabiliriz şimdi.
+
+651
+02:05:34,564 --> 02:05:42,923
+Sonuçta lojik tapılarda girdilerin neler olabileceği ve çıktı olarak ne beklediğimiz belli.
+
+652
+02:05:43,475 --> 02:06:01,855
+Hatta veri üretmekte gayet basit, veriler de sınırlı. İki girişli bir şeyden, kapıdan bahsediyorsak, dört tane alternatifimiz var giriş olarak. Dört girdinin dört tane de çıktısı var. Yani dört adet veriyle bir lojik.
+
+653
+02:06:02,420 --> 02:06:11,739
+Kapı için bir nöron yapısı veya persepiyon oluşturduysak bu persepiyonu eğiteceğiz demektir.
+
+654
+02:06:11,739 --> 02:06:21,480
+Dört tane örnekle hatta dördünün birden eğitim için kullanılması da mümkün olmayabilir veya tercih edilmeyebilir.
+
+655
+02:06:21,619 --> 02:06:25,739
+O zaman üç örnekle vesaireyle eğitip...
+
+656
+02:06:26,228 --> 02:06:33,188
+Beklediğimiz, lojik kapının çıktısı olması gereken değeri bulmaya çalışacağız.
+
+657
+02:06:41,235 --> 02:06:51,615
+Bu kapıların kombinasyonuyla yapabileceğimiz devreler de söz konusu. Onlar bir kapının işlevinden çok daha kompleks yapılara sahip olacak.
+
+658
+02:06:51,615 --> 02:07:05,615
+Yani o anlamda da bir tek makrolofis nöronuyla bile yapılabilecek şeylerin önemli olduğunu söylemek mümkün özellikle de donanım seviyesine indirildiğinde...
+
+659
+02:07:06,963 --> 02:07:19,884
+Kapıları, devreleri gerçeklemede kullanıldığında aslında o zamanki haliyle bile uygulamaya göre çok daha efektif olabilecek.
+
+660
+02:07:19,884 --> 02:07:28,344
+Kapı kullanmak yerine bu kadar mekanizmalarını kullanmanın etkili olacağı pek çok uygulama bulunabilir.
+
+661
+02:07:29,460 --> 02:07:53,199
+Bir or kapısı yapmaya çalışalım maklophis nöronlarıyla şimdi. Or kapısının inputlarını biliyorsunuz. Eğer bir tane pozitif inputumuz varsa sonuç pozitif oluyordu. Dolayısıyla sadece inputlarımız 0,0 iken Y ile gösterdiğimiz çıktı. 0 olacak.
+
+662
+02:07:53,811 --> 02:07:57,851
+Onun dışındaki durumlar için çıktığımız bir olacak.
+
+663
+02:07:59,092 --> 02:08:02,992
+Şimdi kaç tane nöronla ifade edebilirim?
+
+664
+02:08:03,972 --> 02:08:07,332
+İlk başta sağ tarafın elinizde olmadığını düşünün.
+
+665
+02:08:07,972 --> 02:08:10,892
+Elinizde iki tane input var, bir tane de çıktı.
+
+666
+02:08:11,292 --> 02:08:12,672
+Tek bir output var.
+
+667
+02:08:13,632 --> 02:08:17,432
+Dolayısıyla her input için bir nöron koyarak başlamalısınız.
+
+668
+02:08:17,432 --> 02:08:19,572
+Şuradaki x1x2 nöronları.
+
+669
+02:08:20,692 --> 02:08:47,051
+Output'unuzu da, tabii burada bir tane output olduğu için direkt bir tane nöron koyarak temsil edeceğiz. Daha uzun bir output beklentimiz varsa, mümkün olduğunca özetleyerek ne kadar az nöronla temsil edebiliyorsanız, öyle temsil ederek, nöron sayısında sınırlı tutarak tasarımı yapmanız lazım.
+
+670
+02:08:47,731 --> 02:08:55,831
+Böyle bir yapı oluşturduktan sonra normalde eğitim algoritmaları falan kullanırız daha kompleks problemler için.
+
+671
+02:08:55,831 --> 02:09:05,831
+Ama buradaki ol problem için çok düşünmeye bile gerek yok. Olay belli inputlarım nörona girecek, toplanacak ve...
+
+672
+02:09:06,368 --> 02:09:13,388
+Seçtiğim bir teta değerinden ki o da 2 olsun, ya küçük olacak ya büyük olacak.
+
+673
+02:09:13,388 --> 02:09:20,768
+2'den büyük çıktığı zaman y sonucunun 1 olması anlamına gelecek.
+
+674
+02:09:21,528 --> 02:09:25,248
+2'den küçük çıktığı zaman ise 0 olması anlamına gelecek.
+
+675
+02:09:43,475 --> 02:10:01,395
+Peki, bağlantı ağrını çarptığım zaman bunları koplayıp TETA'yı çıkardığında kalan değerin ne olacağını veya benim istediğim gibi bazen daha doğrusu bir durum için negatif, diğer durumlar için pozitif olmasını isteyeceğim.
+
+676
+02:10:03,155 --> 02:10:09,335
+Öğrenme dediğimiz şey şu bağlantı ağırlıklarını bulmaktan ibaret. Bir kere daha söylemiş olayım.
+
+677
+02:10:10,003 --> 02:10:31,983
+Dolayısıyla bağlantı ağırlıklarını test edecek bir yöntem bulmam lazım. Problemin basitliğini dikkate alırsak, TETA'yı iki seçtiğime göre bağlantı ağırlıklarına bir iki tane değer vererek hemencecik ne olabileceğini veya ne olmayacağını bu bağlantı ağırlıkların söyleyebilirim.
+
+678
+02:10:32,435 --> 02:10:54,975
+Diğer alternatif, zaten şu anda çok az nöronum var. Klasik bir yoldan gidip denklemleri yazabilirim. Şu şekilde. Bu denklemlerde bazı şeyler benim için biliniyor. Değil mi? Keta'yı biliyorum.
+
+679
+02:10:55,667 --> 02:11:04,108
+input değerini biliyorum. Burada bir nöronun output olduğu için alt diye göstermişiz ama sonuçta bu nörona giren değer.
+
+680
+02:11:05,327 --> 02:11:10,467
+Tek bilinmeyenim ağırlık değeri, W ile gösterdiğimiz ağırlık değeri.
+
+681
+02:11:11,327 --> 02:11:18,587
+Şimdi elimde dört tane örnek var. Ben bu dört örnekle dört tane denklem yazabilirim.
+
+682
+02:11:23,252 --> 02:11:34,272
+Input'un çarpı ağırlık değeri, değil mi? Eksi teta eşittir y olması gerekiyor.
+
+683
+02:11:37,612 --> 02:11:48,652
+Bunu sıfırı çarptığım gibi diğer sıfırı da x2'yi de ağırlık değeriyle çarpıp bu toplama ekleyeceğim. Sonra threshold'da farkını alacağım.
+
+684
+02:11:49,300 --> 02:12:14,380
+İkinci satır ne söylüyor? 0 çarpı x'dir artı 1 çarpı x2 değil mi? 0 çarpı x1 çarpı w bunun bağlantı ağırlığı. 1 çarpı x2 çarpı w buradaki bağlantı ağırlığı.
+
+685
+02:12:15,220 --> 02:12:30,539
+Eşittir y olmalı. Bu şekilde ben dört tane denklem yazabilirim. Peki benim bilinmeyenim kaç tane? Sadece iki tane. Yani şu bağlantının ağırlığı, bir de diğer bağlantının ağırlığı.
+
+686
+02:12:30,996 --> 02:12:42,996
+Dört tane lineal denklemden ben iki tane bilinmeyeni çok rahatlıkla çözebilirim. İster bu yoldan gidebilirsiniz, isterseniz de şuradan gözle hesap yapın.
+
+687
+02:12:43,556 --> 02:12:49,916
+Yani bir sıfır verdiğimde buraya bağlantılara bir iki verdiğimde pozitif sonuç elde ediyor muyum?
+
+688
+02:12:49,916 --> 02:12:53,896
+Onunla elde ediyorsam diğer örneği verdiğimde elde ediyor muyum?
+
+689
+02:12:54,436 --> 02:12:58,516
+Sıfır sıfır içinde negatif veya sıfır sonucu elde edebiliyor muyum?
+
+690
+02:12:58,996 --> 02:13:19,756
+Bir değer elde ediyor muyum diye baksam direkt problemi çözebilirim. Konu bu kadar basit olunca, mimari bu kadar basit olunca çok özel bir öğrenme algoritması gerekmiyor. Öğrenme algoritmaları ne zaman çıkacak? Çok fazla nöronumuz, çok fazla bağlantımız olur.
+
+691
+02:13:20,275 --> 02:13:41,115
+Bir sürü bağlantı ağırlığını birlikte ayarlamamız gerektiğinde. Şu basit yapıya bile bakarsanız aslında bir bağlantı ağırlığını diğerinden bağımsız düşünemiyorum. İkisinin değerini birden işleme alıyorum. Dolayısıyla aynı anda kaç tane bağlantım varsa onu ayarlamak söz konusu.
+
+692
+02:13:42,036 --> 02:13:51,916
+Bu da problemin içindeki zorluk veya öğrenme algoritmasının önemli olduğu, devreye girdiği yer.
+
+693
+02:13:54,396 --> 02:14:03,416
+Uzatmayacağım mantığı anladığınızı tahmin ediyorum. End kapısı için aynı durum. End kapısının nasıl çalıştığını biliyoruz.
+
+694
+02:14:07,764 --> 02:14:29,764
+Alabileceği değerler yine dört çeşit. Bunlara karşılık beklediğimiz çıktılar belli. Mimarimiz yine mecburen iki inputlu bir outputlu bir mimari olacak. Bu değerleri sağlayacak bağlantı ağırlıkları seçtiğimiz bir TETA değerine göre ne olur diye baktığımızda...
+
+695
+02:14:30,015 --> 02:14:51,015
+Bunun da 1-1 olması gerektiğini bulacağız. Bunu da siz denersiniz. Hatta küçücük pratik olsun diye şuradan 4 tane denklemi yazıp çözün. Buna V1, buna da V2 diye 2 tane ağırlık değeri verirsek çözdüğünüzde V1, V2'nin ne çıktığına bakın. Bu ağırlıkların alabileceği değerler...
+
+696
+02:14:52,532 --> 02:15:01,591
+Bir tek bunlar olmak zorunda değil bu arada. Bizi çözüme getiren başka değerler de bulabilirsiniz kapısına göre ve feta değerine bağlı olarak.
+
+697
+02:15:03,211 --> 02:15:05,351
+Azıcık minik bir oynayın.
+
+698
+02:15:06,511 --> 02:15:16,871
+Not kapısı dediğimiz şey ne? Not kapısının bir tane inputu var, bir tane outputu var. Ne girdiyse onun tersini çıkartmasını beklediğimiz bir kapı.
+
+699
+02:15:17,619 --> 02:15:35,319
+Bir input, bir output'lu olarak bunu oluşturabilirim. Fakat burada şöyle bir önemli durum var. Belki, TFA değerini de seçtim. Bir input için sağladığı zaman...
+
+700
+02:15:37,460 --> 02:15:58,239
+İstediğimiz çıktıları diğer input için sağlayamayabilir. Özellikle binary veriyle uğraşıyorsak, çünkü devreye sıfırlar giriyor. Sıfırın girdiği durumda şu ağırlığın herhangi bir anlamı kalmamış oluyor. Ve ben 0x-1 yaptığımda sonuç 0 oluyor.
+
+701
+02:15:58,239 --> 02:16:03,060
+İşte şimdi dikkat ederseniz biraz değerine ihtiyaç duydum.
+
+702
+02:16:03,315 --> 02:16:23,015
+Inputum sıfır olduğu için ve benim birden fazla bağlantım olmadığı için ben ne yaparsam yapayım, bu bağlantıya istediğim ağırlık değerini vereyim, sonuç sıfır çıkacak ki benim istediğim de bu değil. Özellikle de istediğimi de sağlamadığı için benim bir şeyler yapmam lazım.
+
+703
+02:16:28,180 --> 02:16:53,300
+İnce ayarı yapacak bir BIAS değeri tanımlıyorum ve ikinci bir input olarak onu girdi olarak veriyorum. BIAS değerini nasıl seçiyorduk? Teta ile aynı değerde olabilir demiştik. Tersi negatifi olabilir demiştik. BIAS değerini de iki olarak seçtiğim bir durum olabilir.
+
+704
+02:16:53,840 --> 02:17:08,159
+Burada iki olarak biyası da seçersem sıfır değerine girdiğimde bu bağlantıdan sıfır gelse de buradan bir değer gelecek ve benim şu bağlantı ağırlığını da ayarlama şansım olacak.
+
+705
+02:17:10,099 --> 02:17:14,920
+Buradaki durumu ve biyasın önemini gördünüz değil mi arkadaşlar?
+
+706
+02:17:14,920 --> 02:17:15,920
+Tamam.
+
+707
+02:17:19,239 --> 02:17:20,420
+Ennat kapısı.
+
+708
+02:17:21,043 --> 02:17:42,623
+Bu şekilde tanımlayabiliyoruz. Yine benzer aynı şey. Yine iki tane ağırlığımız var. Bunlar dediğim gibi ufak oynarsınız. Mantık aynı. Dört tane denklemle veya gözle keskip edebileceğim bağlantı ağırlıklarını bulmaya çalışıyoruz.
+
+709
+02:17:43,623 --> 02:17:45,763
+Gelelim ilk zor kapısına.
+
+710
+02:17:46,484 --> 02:18:00,304
+İlk zorun nasıl çalıştığını hatırlarsanız, eğer iki tane input değeri birbirinin aynıysa 0 çıkıyordu, birbirinden farklıysa 1 çıkıyordu.
+
+711
+02:18:00,304 --> 02:18:13,664
+Yani 0, 0 ve 1, 1 inputları için çıktığımızın 0 olmasını bekliyoruz. 0, 1 ve 1, 0 için ise çıktığımızın 1 olmasını bekliyoruz.
+
+712
+02:18:15,443 --> 02:18:36,484
+Sizden rica etsem şu dört tane input için denklemleri yazmaya çalışır mısınız? Hatta şöyle yapayım. Ben aslında bir şey almamıştım. Bir tablet bağlayıp yazılı veya şuradaki tahtayı kullanmaya biraz alışmaya başlayabilirim.
+
+713
+02:18:37,012 --> 02:19:02,891
+Bu denklemleri yazarak da gidebiliriz. Ama bu hafta için bunu size ödev vermiş olayım. Yapmanızı istediğim şey şöyle. XOR kapısı için inputlar belli zaten. Bu inputları ve çıktığı kullanarak dört tane lineer denklem oluşturuyorsunuz. Şu bağlantılara da V1, V2 gibi iki tane sembolik de yaratayabilirsiniz.
+
+714
+02:19:03,507 --> 02:19:12,688
+Onları da değişken olarak bırakarak yani 4 denklem 2 bilinmeyen şeklinde bir linear denklem seti oluşturuyorsunuz.
+
+715
+02:19:13,207 --> 02:19:23,207
+Ve şu V1 ve V2 diyeceğimiz değerleri buradan linear denklem setini çözerek elde etmeye çalışıyorsunuz.
+
+716
+02:19:23,827 --> 02:19:37,268
+Tamam. Bu ödevi yapıp bana Gmail adresimden, site'in başında göstermedim galiba. Şuradan yazayım. İlk hafta ödeviniz olsun.
+
+717
+02:19:37,268 --> 02:19:46,387
+Hocam, kapısına tek bir kroposikotron var da bunu gösteremiyordum.
+
+718
+02:19:46,747 --> 02:19:48,448
+Sesin biraz zor geliyor.
+
+719
+02:19:49,236 --> 02:19:58,376
+Hocam diyorum ki, tek nöron görüyorum burada. Normalde egzor kapısını tek nöronla biz ifade edemiyorduk.
+
+720
+02:19:59,996 --> 02:20:08,636
+İşte onu gösterir misin? Bunun ispatı ne ifade edemediğimizin?
+
+721
+02:20:15,347 --> 02:20:17,268
+Matematiksel olarak niye?
+
+722
+02:20:18,128 --> 02:20:19,148
+Nasıl hocam?
+
+723
+02:20:19,468 --> 02:20:21,128
+Matematiksel olarak niye?
+
+724
+02:20:22,547 --> 02:20:31,707
+Tek bir doğru dediğin doğrununda bir denkleme var ya, iki tane doğru denkleme olunca ne oluyor da ayıramıyor?
+
+725
+02:20:32,927 --> 02:20:37,648
+Veya iki tane doğru denklemi niye oluşturamıyoruz ayırabilmek için?
+
+726
+02:20:38,611 --> 02:20:48,691
+Yani tek bir nöron kullandığımız için tek bir doğru çizmemiz gerekiyor. Ama ikinci nöron da ikinci doğruyu çizebiliyoruz. Zaten iki tane doğru ile ayırabiliyoruz.
+
+727
+02:20:50,260 --> 02:21:06,260
+Peki, burada da ben bunu aynı şeyi, aslında göstereceğiniz şey o olacak. Bu arada mail'i yanlış yazmışım. Denklem olarak yazarsanız, oluşturduğunuz lineaci bir denklemlerinin…
+
+728
+02:21:06,804 --> 02:21:23,224
+Birbiriyle çelişen şeyler söylediğini göreceksiniz. Onu görmenizi istiyordum. Yani dediğin şeye gelecek ama bu sefer denklemler yoluyla matematiksel olarak İgzor'un çözülemediğini görmüş olacaksınız.
+
+729
+02:21:25,364 --> 02:21:30,564
+Onu ben de göstermeye çalışıyorum. Yani çözeceksiniz diye vermedim ödevi.
+
+730
+02:21:30,564 --> 02:21:31,564
+Anlaştık.
+
+731
+02:21:33,888 --> 02:21:56,808
+Belki senin açından da denklemleri yazdığında göreceksin ki, tabii bu arada orada bir TETA değeri de olacak. Seçeceğiniz TETA değeri aynı anda iki tane birbiriyle çelişen kuralı temsil edecek ve öyle bir TETA değeri bulamayacaksınız.
+
+732
+02:21:58,479 --> 02:22:02,479
+Onu görebilmeniz için bu dört tane denklemi yazmanızı rica ediyorum.
+
+733
+02:22:02,799 --> 02:22:07,819
+Ve çözmeye çalışın ya da çözemediğinizde ne olduğunu bana izah edin.
+
+734
+02:22:08,379 --> 02:22:17,840
+Niye çözülmez olduğunu. Ben şimdi ağzımda söyledim hepsini ama yazdığınızda tekrar aklınıza gelecektir söylediklerim veya kendiniz göreceksiniz.
+
+735
+02:22:18,919 --> 02:22:22,340
+Minicik bir ödev olarak bu hafta için bunu vermiş olayım, olur mu?
+
+736
+02:22:23,699 --> 02:22:24,479
+Anlaşıldı hocam.
+
+737
+02:22:24,979 --> 02:22:25,619
+Tamam hocam.
+
+738
+02:22:26,484 --> 02:22:51,524
+Teşekkür ediyorum. Bugünlük bu kadar yeter arkadaşlar. Bir bakayım devamında neler vardı. Peki, zoru yapacağız. Topolojileri daha sonra işte tek daha persepronla ilgili de söyleyeceğim şeyler var ama hemen yakın bir zamanda çok katmanlı persepronlara geçeceğiz.
+
+739
+02:22:51,956 --> 02:23:11,495
+O zaman biraz daha fazla öğrenme kurallarından bahsediyor olacağız. Onun dışında rekürent ağlar temel mimarilerimizden bir tanesi. Onlardan da kısaca bir bahsedeceğim ve daha çok derin öğrenme dediğimiz şey de öyle.
+
+740
+02:23:12,115 --> 02:23:19,995
+Çok katmanlı, geri beslemeli ağlar üzerinde birazcık algoritmalardan konuşacağız.
+
+741
+02:23:21,796 --> 02:23:27,976
+Tamam, o zaman arkadaşlar haftaya görüşmek üzere diyorum. Ödevi unutmayın.
+
+742
+02:23:29,796 --> 02:23:36,995
+Hemen şimdi hatta ders tazeyken 5 dakikada yapacağınız bir şey yapıp bana gönderebilirsiniz.
+
+743
+02:23:39,572 --> 02:23:41,871
+Hocam, sunumu sisteme yükleyecek misiniz?
+
+744
+02:23:43,492 --> 02:23:49,152
+Onu birazcık düzenleyip yükleyeyim ama şeyden görebilirsiniz. Lazım mı sunum?
+
+745
+02:23:50,171 --> 02:23:52,031
+Dersten önce tekrar etmek için.
+
+746
+02:23:52,531 --> 02:23:57,311
+Tamam, derse kadar yüklerim. Bugün yükleyemem de hafta sonu gibi yüklerim.
+
+747
+02:23:57,811 --> 02:23:59,672
+İyi olur hocam. Teşekkür ederim.
+
+748
+02:24:00,072 --> 02:24:07,572
+Tamam. Şu dersin başına bir takvimi falan da koymak istiyorum. Onları da tamamlayıp slide'ları bir düzenleyin öyle yükleyeyim.
+
+749
+02:24:08,452 --> 02:24:09,972
+Teşekkürler hocam. İyi günler.
+
+750
+02:24:10,152 --> 02:24:13,452
+Ben de teşekkür ediyorum. Kendinize iyi bakın. Görüşmek üzere.
+
+751
+02:24:13,992 --> 02:24:14,811
+İyi günler hocam.
+
+752
+02:24:15,231 --> 02:24:15,772
+İyi günler.
