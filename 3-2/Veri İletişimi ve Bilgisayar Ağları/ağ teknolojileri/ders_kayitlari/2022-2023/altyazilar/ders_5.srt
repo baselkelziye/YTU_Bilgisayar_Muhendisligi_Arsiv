@@ -1,0 +1,1959 @@
+1
+00:05:03,860 --> 00:05:17,980
+Günaydın arkadaşlar. Bir 10 dakika bekleyelim, 10 geçe kadar. Sonrasında başlarız. Şu anda 24 kişi var. En azından 50 kişiyi bulalım.
+
+2
+00:15:18,964 --> 00:15:21,244
+Good morning, everybody.
+
+3
+00:15:21,244 --> 00:15:26,484
+This is our fifth week in Computer Networking Technologies.
+
+4
+00:15:26,484 --> 00:15:37,684
+This week, we are going to start the third subject of this course.
+
+5
+00:15:37,684 --> 00:15:41,484
+We are going to discuss transport layer.
+
+6
+00:15:41,484 --> 00:15:45,204
+Before we start, let's share our screen first.
+
+7
+00:15:47,731 --> 00:15:55,751
+Okay. Let me make it full screen and smaller this one.
+
+8
+00:16:08,052 --> 00:16:24,451
+Ok. This is our fifth week in Computer Networking Technologies. This is our third subject in this lecture. Today and two more weeks, we are going to discuss Transport Layer subject.
+
+9
+00:16:38,227 --> 00:16:39,427
+Just a second.
+
+10
+00:17:11,028 --> 00:17:38,708
+Ok, we are going to talk about the transport layer. As you remember, the application layer is the visible layer on the internet and this is the application. And a transport layer gives a service to the application layer. So, in the application layer subject, our goal of this subject is to understand
+
+11
+00:17:38,991 --> 00:17:45,991
+ve bu konuda
+
+12
+00:17:45,991 --> 00:17:47,991
+ve hosya
+
+13
+00:17:47,991 --> 00:17:50,991
+bazı
+
+14
+00:17:50,991 --> 00:17:51,991
+internet
+
+15
+00:17:51,991 --> 00:17:53,991
+aynı zamanda
+
+16
+00:18:20,435 --> 00:18:29,255
+internet is a network of networks and it is there is no reliable data transfer on the internet so
+
+17
+00:18:29,255 --> 00:18:41,115
+reliable data transfer must be done on higher layers so transport layer is
+
+18
+00:18:41,779 --> 00:18:48,779
+Bir de sorunlar için bir sorunlar için bir de olabilecek bir de olabilecek bir de olabilecek.
+
+19
+00:18:50,036 --> 00:19:02,635
+If our aim to give reliable data transfer, we should have some sort of flow control mechanism and congestion control mechanism too.
+
+20
+00:19:02,635 --> 00:19:09,836
+So this is the two requirement for reliable data transfer on the network layer.
+
+21
+00:19:09,836 --> 00:19:11,436
+So again...
+
+22
+00:19:11,567 --> 00:19:17,607
+We are going to learn about the Internet Transport Layer Protocols.
+
+23
+00:19:17,607 --> 00:19:23,447
+There are two Internet Transport Layer Protocols.
+
+24
+00:19:23,447 --> 00:19:34,447
+One is UDP, that gives us connectionless transport, and TCP, that is...
+
+25
+00:19:34,720 --> 00:20:00,720
+A connection-oriented protocol, and TCP gives us reliable data transfer. So TCP has congestion control and flow control mechanism because TCP gives a guarantee for reliable data transfer. Okay, here is our roadmap for...
+
+26
+00:20:01,140 --> 00:20:03,140
+Bu konuda başlayalım.
+
+27
+00:20:05,140 --> 00:20:07,140
+Transport Layer Services'i
+
+28
+00:20:07,140 --> 00:20:09,140
+ve devam edelim.
+
+29
+00:20:09,140 --> 00:20:13,140
+Önceye başlayalım.
+
+30
+00:20:13,140 --> 00:20:15,140
+ve demultipleksin.
+
+31
+00:20:15,140 --> 00:20:19,140
+Önceye başlayalım.
+
+32
+00:20:19,140 --> 00:20:21,140
+UDP'nin.
+
+33
+00:20:21,140 --> 00:20:23,140
+Connectionless Transport.
+
+34
+00:20:23,140 --> 00:20:28,620
+Önceye başlayalım.
+
+35
+00:20:29,140 --> 00:20:36,140
+ve
+
+36
+00:20:41,875 --> 00:20:44,255
+Connection-Oriented Transfer Protocol,
+
+37
+00:20:44,615 --> 00:20:46,016
+we are going to talk about,
+
+38
+00:20:46,155 --> 00:20:47,215
+which is TCP.
+
+39
+00:20:47,796 --> 00:20:47,995
+Okay?
+
+40
+00:20:48,395 --> 00:20:50,096
+And so on and so forth.
+
+41
+00:20:50,596 --> 00:20:51,655
+So this week,
+
+42
+00:20:51,935 --> 00:20:53,355
+we are going to talk about
+
+43
+00:20:53,355 --> 00:20:55,576
+Transport Layer Services,
+
+44
+00:20:55,796 --> 00:20:57,816
+Multiplexing and Demultiplexing,
+
+45
+00:20:58,135 --> 00:21:01,596
+Connectionless Transport Protocol,
+
+46
+00:21:01,596 --> 00:21:04,296
+which is UDP,
+
+47
+00:21:04,836 --> 00:21:07,816
+and Principles of Reliable Data Transfer.
+
+48
+00:21:08,076 --> 00:21:09,875
+And we are going to continue
+
+49
+00:21:09,875 --> 00:21:13,195
+ve devam edinçli.
+
+50
+00:21:13,195 --> 00:21:23,596
+As you remember here, this is the internet, it's a network of networks.
+
+51
+00:21:23,596 --> 00:21:34,875
+There are many edge devices and some infrastructure such as routers, access points, and so on.
+
+52
+00:21:36,819 --> 00:21:48,579
+Transport layer provides logical communication between application processes running on different hosts.
+
+53
+00:21:48,579 --> 00:21:51,579
+So suppose here is an example.
+
+54
+00:21:59,604 --> 00:22:07,124
+Mobile phone trying to access web server on the server in some area on the globe.
+
+55
+00:22:07,764 --> 00:22:08,324
+So...
+
+56
+00:22:15,347 --> 00:22:35,347
+Internet browser on the Edge device, in this example, which is mobile phone, trying to access the Apache server on the internet server, web server. Okay. And TCP, create.
+
+57
+00:22:35,700 --> 00:22:43,279
+Logical communication link between one end to another end.
+
+58
+00:22:43,640 --> 00:22:43,720
+Okay?
+
+59
+00:22:45,000 --> 00:22:50,200
+So, transport protocol action in end system,
+
+60
+00:22:50,200 --> 00:22:53,820
+in the sender area and receiver area.
+
+61
+00:22:54,220 --> 00:22:57,200
+In the sender area, the transport rail...
+
+62
+00:22:58,943 --> 00:23:02,943
+ve
+
+63
+00:22:58,132 --> 00:23:20,532
+transport layer is responsible of breaking application messages into, we call it segments, and passes to the below layer, which is network layer. Okay? So in the sender location, the application...
+
+64
+00:23:21,299 --> 00:23:28,299
+ve
+
+65
+00:23:48,980 --> 00:24:01,220
+There are two transport layer protocols available to internet applications, which are TCP and UDP.
+
+66
+00:24:01,220 --> 00:24:02,220
+Okay?
+
+67
+00:24:03,579 --> 00:24:05,740
+Let's have a look at the analogy.
+
+68
+00:24:06,220 --> 00:24:07,220
+Okay?
+
+69
+00:24:07,380 --> 00:24:12,139
+Transport versus network layer services and protocol.
+
+70
+00:24:12,659 --> 00:24:13,659
+Suppose...
+
+71
+00:24:14,804 --> 00:24:16,804
+Bir de iki evde.
+
+72
+00:24:17,524 --> 00:24:19,124
+Bir evde N evde.
+
+73
+00:24:19,423 --> 00:24:21,684
+Bir evde Bill's evde.
+
+74
+00:24:22,064 --> 00:24:29,544
+Bir evde 12 evde.
+
+75
+00:24:30,923 --> 00:24:34,484
+Bir evde evde.
+
+76
+00:24:34,484 --> 00:24:38,244
+Bir evde.
+
+77
+00:24:39,508 --> 00:24:53,188
+to the bill each kid in bill's house so as analogy host is houses on the stays okay processes are
+
+78
+00:24:53,188 --> 00:25:06,867
+kids in the house and application messages is letters in envelopes okay so transport protocol
+
+79
+00:25:07,827 --> 00:25:15,147
+Because network layer is logical communication between hosts.
+
+80
+00:25:15,147 --> 00:25:24,427
+So transport protocol is basically NNBIL who democs into the house siblings.
+
+81
+00:25:24,427 --> 00:25:29,307
+And network layer protocol is the postal service.
+
+82
+00:25:29,307 --> 00:25:35,188
+So logical communication between hosts provided by...
+
+83
+00:25:35,347 --> 00:26:01,707
+A
+
+84
+00:26:03,347 --> 00:26:07,347
+Let's have a look at the transport layer actions.
+
+85
+00:26:07,347 --> 00:26:19,347
+Again, in the sender area, the application create a message, send this message through circuit.
+
+86
+00:26:19,347 --> 00:26:21,347
+Okay.
+
+87
+00:26:21,347 --> 00:26:28,144
+And in the transport layer, the application is passed.
+
+88
+00:26:28,144 --> 00:26:50,476
+This message into the transport layer and the transport layer, the transport layer determines, break this message into segments and determines segment header field values. Okay? Then, this is...
+
+89
+00:26:51,539 --> 00:26:56,299
+These created segments into the network layer.
+
+90
+00:26:56,299 --> 00:27:07,779
+And in the network layer, put the IP and the receiver side.
+
+91
+00:27:11,859 --> 00:27:22,099
+The message is passed through network layer to the transport layer. And transport layer check header values,
+
+92
+00:27:22,099 --> 00:27:32,099
+because the message is broken into many segments and each segment in cell is sent.
+
+93
+00:27:33,107 --> 00:27:52,387
+through the layers to sender to receiver. So at the receiver side, the transport layer checks each help and extracts application layer message. Then the multiplex...
+
+94
+00:27:52,788 --> 00:28:05,788
+these messages up to many applications and split these messages, many messages, and send through circuit. Okay?
+
+95
+00:28:05,788 --> 00:28:19,788
+There are two principal internet transport protocol, as I said. TCP is a transmission control protocol.
+
+96
+00:28:20,051 --> 00:28:27,531
+TCP provides reliable and in-order delivery.
+
+97
+00:28:27,531 --> 00:28:30,692
+Why we are talking about in-order delivery?
+
+98
+00:28:30,692 --> 00:28:34,971
+Because the messages are in segments.
+
+99
+00:28:34,971 --> 00:28:40,811
+So these segments must be reassembled at the receiver side.
+
+100
+00:28:40,811 --> 00:28:42,571
+So TCP...
+
+101
+00:28:44,019 --> 00:28:49,059
+provides reliable and in-order delivery.
+
+102
+00:28:51,139 --> 00:29:01,860
+To provide these specifications, TCP has congestion control and flow control mechanism. And
+
+103
+00:29:03,860 --> 00:29:07,940
+before exchanging segments, TCP
+
+104
+00:29:08,788 --> 00:29:15,508
+set the connection so TCP has connection setup mechanism too.
+
+105
+00:29:18,387 --> 00:29:23,907
+In UDP protocol, user datagram protocol,
+
+106
+00:29:25,508 --> 00:29:32,867
+this protocol provides unreliable, unordered delivery.
+
+107
+00:29:32,948 --> 00:30:00,000
+So, there is no, it's basically no frills, extensions of best offered IP. The network protocol is a base port protocol. There is no reliable connection and we put port mechanism.
+
+108
+00:30:00,000 --> 00:30:02,079
+IP protocol.
+
+109
+00:30:03,819 --> 00:30:06,339
+As you can see
+
+110
+00:30:06,339 --> 00:30:07,799
+in the network layer
+
+111
+00:30:07,799 --> 00:30:10,920
+in the transport layer
+
+112
+00:30:10,920 --> 00:30:12,740
+as I said there are
+
+113
+00:30:12,740 --> 00:30:14,660
+two protocols
+
+114
+00:30:14,660 --> 00:30:16,039
+TCP and UDP.
+
+115
+00:30:16,460 --> 00:30:18,480
+One is reliable and
+
+116
+00:30:18,480 --> 00:30:20,720
+connection oriented protocol.
+
+117
+00:30:20,900 --> 00:30:22,579
+The other one is unreliable
+
+118
+00:30:22,579 --> 00:30:24,720
+connectionless protocol
+
+119
+00:30:24,720 --> 00:30:26,720
+but none of the protocol
+
+120
+00:30:27,188 --> 00:30:44,428
+Gives any guarantee for delay and bandwidth. Okay? There is no such service that guarantee delay and bandwidth. Okay.
+
+121
+00:30:44,819 --> 00:30:49,139
+This is the introductory part of Transport Layer Services.
+
+122
+00:30:49,139 --> 00:30:55,139
+So let's continue the multiplexing and demultiplexing mechanism.
+
+123
+00:30:57,779 --> 00:30:58,579
+Okay.
+
+124
+00:30:59,299 --> 00:31:04,179
+Suppose, let's have a look at our example here.
+
+125
+00:31:04,819 --> 00:31:08,659
+Client on the left and client on the right.
+
+126
+00:31:08,659 --> 00:31:12,259
+And in the middle is the HTTP Apache server.
+
+127
+00:31:12,819 --> 00:31:19,819
+ve
+
+128
+00:31:38,003 --> 00:32:03,471
+create message and send this message to the transport layer. And transport layer breaks this incoming message into segments and add transport layer header. Then send to the network layer. And in the network layer, this layer adds
+
+129
+00:32:03,471 --> 00:32:04,672
+network header.
+
+130
+00:32:05,152 --> 00:32:06,951
+In transport layer,
+
+131
+00:32:09,592 --> 00:32:11,051
+message is broken
+
+132
+00:32:11,051 --> 00:32:13,471
+into segments and in the header
+
+133
+00:32:13,471 --> 00:32:14,451
+there are
+
+134
+00:32:14,451 --> 00:32:17,791
+sending port
+
+135
+00:32:17,791 --> 00:32:19,451
+and receiving port.
+
+136
+00:32:19,612 --> 00:32:21,451
+In the network layer,
+
+137
+00:32:22,112 --> 00:32:23,172
+sending address
+
+138
+00:32:23,172 --> 00:32:25,652
+and receiving IP address.
+
+139
+00:32:26,092 --> 00:32:26,152
+Okay?
+
+140
+00:32:27,051 --> 00:32:28,652
+And this is
+
+141
+00:32:28,991 --> 00:32:35,991
+ve
+
+142
+00:32:50,932 --> 00:33:13,532
+OK? So here we come multiplexing and demultiplexing mechanism. You remember, there can be many processes running on the same host, and each process must use a door to access.
+
+143
+00:33:14,132 --> 00:33:15,432
+transport layer.
+
+144
+00:33:15,992 --> 00:33:16,992
+Socket
+
+145
+00:33:16,992 --> 00:33:19,872
+is a kind of
+
+146
+00:33:19,872 --> 00:33:21,832
+door.
+
+147
+00:33:23,612 --> 00:33:24,612
+And
+
+148
+00:33:24,612 --> 00:33:27,152
+process 1 in the
+
+149
+00:33:27,152 --> 00:33:28,312
+Apache server
+
+150
+00:33:28,312 --> 00:33:30,932
+communicating to process 3
+
+151
+00:33:30,932 --> 00:33:32,932
+and process 2
+
+152
+00:33:32,932 --> 00:33:34,532
+is communicating to
+
+153
+00:33:34,532 --> 00:33:37,112
+process 4. And as you can
+
+154
+00:33:37,112 --> 00:33:38,552
+see in the server
+
+155
+00:33:38,552 --> 00:33:40,912
+each process has
+
+156
+00:33:42,644 --> 00:34:10,603
+unique door to communicate to each process. So, transport layer creates a logical link between process 1 and process 3 and process 2 to process 4 to exchange messages. So, multiplexing at sender
+
+157
+00:34:11,795 --> 00:34:36,996
+Handle data from multiple circuits, coming from multiple circuits, and adds transport header, later used for the multiplexing. So in the header, we should have something to multiplex.
+
+158
+00:34:39,891 --> 00:35:05,579
+For multiplexing and at the receiver side, same header field is going to be used for demultiplexing. At the receiver side, the transport layer uses header info to deliver received segments to correct circuits because
+
+159
+00:35:06,324 --> 00:35:33,900
+The application on the machine in the middle, the server, there are two individual processes that are communicating to different clients. So how multiplexing works? Host receives IP datagrams. Okay? Each datagram has
+
+160
+00:35:34,516 --> 00:35:39,516
+SOURCE IP adres ve DESTİNATION IP adres.
+
+161
+00:35:39,516 --> 00:35:40,516
+OK?
+
+162
+00:35:40,516 --> 00:35:47,516
+This is what we must have because each host on the network must have unique address to address.
+
+163
+00:35:48,516 --> 00:35:49,516
+OK?
+
+164
+00:35:49,516 --> 00:35:57,516
+So, at the IP datagram, each datagram has SOURCE IP adres and DESTİNATION IP adres.
+
+165
+00:36:01,460 --> 00:36:06,059
+Bu da aynı hosyda,
+
+166
+00:36:06,059 --> 00:36:08,980
+bir hosyda bir hosyda,
+
+167
+00:36:08,980 --> 00:36:11,180
+bir hosyda bir hosyda
+
+168
+00:36:11,180 --> 00:36:13,340
+farklı hosyda.
+
+169
+00:36:13,340 --> 00:36:16,980
+Bu, bir hosyda bir hosyda
+
+170
+00:36:16,980 --> 00:36:18,980
+bir hosyda bir hosyda
+
+171
+00:36:18,980 --> 00:36:28,172
+ve hosyda bir hosyda
+
+172
+00:36:28,244 --> 00:36:46,484
+So in this case, for multiplexing, host uses IP addresses and port numbers to direct segment to appropriate circuit because each circuit has unique...
+
+173
+00:36:47,123 --> 00:37:10,123
+port number, and each host has unique IP number. So in this case, each segment can be uniquely addressed with IP addresses plus port numbers. So let's have a look TCP and UDP segment format.
+
+174
+00:37:11,027 --> 00:37:14,627
+It is 32-bit wide.
+
+175
+00:37:14,627 --> 00:37:31,827
+And the header, there are 16-bit source port plus 16-bit destination ports and other fields we are going to discuss.
+
+176
+00:37:31,827 --> 00:37:36,827
+And the payload, payload means duplication data.
+
+177
+00:37:38,068 --> 00:38:02,468
+TCP and UDP segment format because the message is broken into segments and each segment has headers and in the header it has source port and destination port plus the payload. Payload is broken message part. Okay?
+
+178
+00:38:03,956 --> 00:38:08,956
+This is the source port, and here is the destination port.
+
+179
+00:38:09,956 --> 00:38:16,956
+Okay, in the connectionless demultiplexing, let's remember,
+
+180
+00:38:17,956 --> 00:38:23,956
+when creating a socket, we must specify host local port.
+
+181
+00:38:23,956 --> 00:38:29,644
+So, in the datagram socket, let's say mySocket1,
+
+182
+00:38:29,652 --> 00:38:44,971
+equal to new datagram socket 12534. This is the socket number. This is the port number. Okay. As you can see, this is unique for that communication.
+
+183
+00:38:44,971 --> 00:38:51,412
+When creating datagram to send into UDP socket,
+
+184
+00:38:52,052 --> 00:39:11,452
+We must specify destination IP address and destination port because it creates connectionless transfer, so no need to have source port, source IP address and source port number. And...
+
+185
+00:39:12,500 --> 00:39:19,000
+Destination IP address and destination port is enough for UDP socket.
+
+186
+00:39:19,000 --> 00:39:39,947
+When receiving host receives UDP segment, first checks destination port in segment and direct these UDP segment to socket with that port, that unique port to send that specific application.
+
+187
+00:39:42,099 --> 00:40:08,739
+In IP and UDP datagrams with same destination port number, but different source IP addresses and source port numbers will be directed to same circuit at receiving port, because both have destination IP address and destination port.
+
+188
+00:40:10,579 --> 00:40:26,779
+Let's have a look again at the example. Application 1 in the middle at the server, Application 3 in the first client, and Application 4 in the second client.
+
+189
+00:40:26,779 --> 00:40:34,539
+So, let's say our application on the first client, Process 3.
+
+190
+00:40:34,579 --> 00:41:01,259
+bu soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile soru ile
+
+191
+00:41:02,036 --> 00:41:08,036
+In the server, our circuit number 6428.
+
+192
+00:41:09,036 --> 00:41:17,744
+So, if process 3 wants to send a message to...
+
+193
+00:41:17,744 --> 00:41:32,423
+Pro-process one. So, source port is, as you can see, 9157, and destination port is 6428. And when-
+
+194
+00:41:33,523 --> 00:41:45,923
+Server send a message to client 1. In this case, source port is 6428. Destination port is 9157.
+
+195
+00:41:47,923 --> 00:41:58,323
+Meanwhile, let's say process 1 also communicates with process 4. In this case, when server
+
+196
+00:41:59,219 --> 00:42:08,619
+Sending a message to process 4, the source port is going to be the 6428, as you can see.
+
+197
+00:42:08,851 --> 00:42:14,251
+ve desteklerinden birleştirilecek birleştirilecek.
+
+198
+00:42:14,251 --> 00:42:16,411
+Ve bu konuluktanla,
+
+199
+00:42:16,411 --> 00:42:19,291
+ve bu konuluktanla,
+
+200
+00:42:19,291 --> 00:42:25,172
+bu konuluktanla,
+
+201
+00:42:25,172 --> 00:42:27,931
+ve bu konuluktanla,
+
+202
+00:42:27,931 --> 00:42:29,931
+bu konuluktanla,
+
+203
+00:42:29,931 --> 00:42:32,011
+bu konuluktanla.
+
+204
+00:42:34,491 --> 00:42:35,211
+Ama,
+
+205
+00:42:35,295 --> 00:42:58,895
+In connection-oriented demultiplexing, because TCP provides connection-oriented service, reliable service, in order delivery. So TCP socket identified by for tuple. Source address.
+
+206
+00:42:59,103 --> 00:43:24,903
+SOURCE port, DESTINATION ADRESS, DESTINATION PORT. As you can see in UDP, there are only two tuple, SOURCE port and DESTINATION port. But here we have SOURCE IP ADRESS and SOURCE port, DESTINATION IP ADRESS and DESTINATION port too.
+
+207
+00:43:26,164 --> 00:43:49,364
+While demultiplexing, receiver uses all four tuples, source IP, source port, destination IP, and destination port, to direct segment to appropriate socket because TCP creates logical link between sender and receiver.
+
+208
+00:43:49,907 --> 00:44:16,307
+Server may support many simultaneous TCP connections. So, each socket identified by its own four tuples because different connections must have different tuples. Each socket associated with a different connecting line.
+
+209
+00:44:17,012 --> 00:44:43,052
+Let's have a look TCP connection example this time. Apache server, host A, the IP address of host A is let's say A, and we have host B is the server, and host C is another client. So, while communicating
+
+210
+00:44:43,123 --> 00:44:45,923
+Proces 1 and Proces 4.
+
+211
+00:44:46,923 --> 00:44:49,523
+We have source IP address.
+
+212
+00:44:52,483 --> 00:44:55,923
+For sending, source IP address is A.
+
+213
+00:44:55,923 --> 00:45:00,203
+Source port is, you remember, 9157.
+
+214
+00:45:00,723 --> 00:45:05,003
+And destination IP address is B.
+
+215
+00:45:05,003 --> 00:45:09,203
+Destination port is 80 because HTTP...
+
+216
+00:45:09,588 --> 00:45:12,788
+Gives a service through port 80.
+
+217
+00:45:12,788 --> 00:45:21,988
+While receiving a message from process 4 to process 1, in this case, source IP address is B,
+
+218
+00:45:21,988 --> 00:45:32,588
+source port is 80, destination IP address is A, destination port is 9157.
+
+219
+00:45:34,708 --> 00:45:49,708
+Suppose process 6 is communicating to process 2, it is sending area, while sending a message from process 2 to process 6.
+
+220
+00:45:49,708 --> 00:46:02,316
+Source IP address is C, source port is 5775, and destination IP address is B, and destination port is 8.
+
+221
+00:46:02,547 --> 00:46:28,547
+Meanwhile, another connection is created between Client 2 to Apache server, but different process must have different socket number. This time, let's say our socket number is 9157, similar socket number with the Client 1, the process 1.
+
+222
+00:46:29,556 --> 00:46:50,755
+It has different triples because while communicating between process 3 to process 5, the source IP address is C, destination source port is 51.9157, destination IP address is B.
+
+223
+00:46:50,880 --> 00:46:53,079
+Destination port is 80.
+
+224
+00:46:53,400 --> 00:46:57,119
+As you can see, although process 3 and process 1
+
+225
+00:46:57,119 --> 00:47:01,300
+uses same port number, 9157,
+
+226
+00:47:01,300 --> 00:47:05,079
+but it has,
+
+227
+00:47:06,480 --> 00:47:10,500
+these both have different triples
+
+228
+00:47:10,500 --> 00:47:15,200
+because IP addresses changes among hosts.
+
+229
+00:47:16,659 --> 00:47:16,920
+So,
+
+230
+00:47:18,036 --> 00:47:22,516
+Apache server distinguishes these two different communications.
+
+231
+00:47:24,516 --> 00:47:36,996
+Three segments, as you can see, all destined to IP address B. Port number is 80. But different circuits.
+
+232
+00:47:36,996 --> 00:47:44,195
+So these different tuples are used in the indexing.
+
+233
+00:47:50,452 --> 00:47:51,452
+Yes, yes, I can.
+
+234
+00:48:31,603 --> 00:48:34,203
+There's something wrong on my computer, guys.
+
+235
+00:48:36,003 --> 00:48:37,003
+Let's wait.
+
+236
+00:49:31,476 --> 00:49:44,436
+As I said, there are three segments, all destined to IP addresses B, destination port is 80, are demultiplexed to different circuits because each...
+
+237
+00:49:50,771 --> 00:50:23,563
+O
+
+238
+00:50:16,083 --> 00:50:21,083
+Let's start, let's continue our lecture at 10 o'clock guys.
+
+239
+00:50:21,083 --> 00:50:23,083
+Meanwhile, let's get...
+
+240
+01:07:33,659 --> 01:07:36,268
+O
+
+241
+01:07:32,596 --> 01:07:36,195
+Good morning again. Let's continue our lecture.
+
+242
+01:08:01,488 --> 01:08:03,488
+O
+
+243
+01:08:00,596 --> 01:08:27,235
+OK. So we have discussed already multiplexing and demultiplexing. So as I said, there are two types of protocol in transport layer, UDP and TCP. UDP gives us unreliable connectionless data transfer protocol. And...
+
+244
+01:08:28,340 --> 01:08:31,340
+We are going to continue to UDP.
+
+245
+01:08:32,340 --> 01:08:44,340
+In UDP, user datagram protocol, there is no frills, bare bones, that is too simple internet transport protocol.
+
+246
+01:08:44,340 --> 01:08:52,340
+It provides best efforts service, so UDP segments may have
+
+247
+01:08:54,644 --> 01:09:07,264
+Data lost and may deliver the segments out of order to application because it doesn't give any guarantee at all.
+
+248
+01:09:07,264 --> 01:09:17,043
+It gives us best effort service, but overhead is too simple because there is nothing at all.
+
+249
+01:09:17,284 --> 01:09:20,644
+We just add port number on IPs.
+
+250
+01:09:22,292 --> 01:09:24,292
+Oluşun,
+
+251
+01:09:21,684 --> 01:09:48,484
+It is connectionless, no handshaking between UDP sender and receiver. So there is no RTT delay. Each UDP segment handled independently of others because there's no guarantee. It can receive out of order too. So...
+
+252
+01:09:49,427 --> 01:09:51,547
+Why is the UDP?
+
+253
+01:09:52,747 --> 01:09:56,007
+Why we need such UDP?
+
+254
+01:09:57,787 --> 01:10:05,068
+Because it gives us unreliable, connectionless service.
+
+255
+01:10:05,988 --> 01:10:08,007
+It is no connection establishment.
+
+256
+01:10:09,907 --> 01:10:13,648
+Because as a result, there is no RTT delay.
+
+257
+01:10:13,648 --> 01:10:15,367
+It is too simple.
+
+258
+01:10:16,180 --> 01:10:22,360
+Çünkü,
+
+259
+01:10:29,011 --> 01:10:55,211
+Since it is connectionless transport layer protocol, there is no congestion control, UDP can blast away as fast as desired, and UDP can function in the phase of congestion, okay? Because there is nothing. You may lose UDP.
+
+260
+01:10:56,307 --> 01:11:21,323
+UDP segment, moreover, you can receive UDP segment out of order too. So in UDP, UDP uses streaming media applications because it is loss tolerant and race sensitive because
+
+261
+01:11:21,363 --> 01:11:48,395
+There is no overhead, smaller header side, and it can travel faster. So you may lose some segments, but it's still fast. DNS also use UDP protocol, SNMP, and HTTP3. If you see HTTP here,
+
+262
+01:11:49,108 --> 01:11:59,308
+HTTP 1.1 and 2 is a connection-oriented and it provides reliable data transfer.
+
+263
+01:11:59,308 --> 01:12:10,108
+But HTTP 3, as you can see, is based on UDP protocol, but how we can provide reliability?
+
+264
+01:12:10,108 --> 01:12:15,884
+Reliability is added on application layer.
+
+265
+01:12:16,020 --> 01:12:23,780
+And as a result, congestion control and flow control is also done on application layer.
+
+266
+01:12:23,780 --> 01:12:33,460
+So in HTTP 3 uses UDP because it provides faster data transfer, but...
+
+267
+01:12:33,779 --> 01:12:39,899
+Bu konnektörle ilgili bir konukla oluşturma yaptığı,
+
+268
+01:12:48,404 --> 01:13:16,332
+The application layer provides reliability and condition control, flow control for HTTP 3 because it uses UDP transport layer protocol. As I said, UDP protocol is very simple. It is open protocol and
+
+269
+01:13:16,340 --> 01:13:39,940
+The standard document request for command RFC 768. As you can see, this is the first page of RFC 768. This is the UDP standard document published in 1980s.
+
+270
+01:13:40,243 --> 01:13:43,843
+It has only three pages.
+
+271
+01:13:43,843 --> 01:13:46,963
+It is very simple protocol.
+
+272
+01:13:46,963 --> 01:13:51,763
+If you ever look, it is user readable and very simple.
+
+273
+01:13:52,403 --> 01:13:56,963
+So how it works in transport layer?
+
+274
+01:13:59,763 --> 01:14:04,403
+UDP sender action, application layer.
+
+275
+01:14:04,948 --> 01:14:25,188
+The application layer, application creates a message, let's say SNMP message, because SNMP protocol, application layer protocol uses UDP. SNMP application create a message and send through the latest circuit to the transport layer.
+
+276
+01:14:27,028 --> 01:14:27,828
+And
+
+277
+01:14:28,659 --> 01:14:33,460
+Transport layer determines UDP segment header values
+
+278
+01:14:36,159 --> 01:14:44,760
+and create UDP segments and adds UDP header.
+
+279
+01:14:46,260 --> 01:14:51,460
+Passes to network layer and
+
+280
+01:14:51,507 --> 01:15:02,547
+The network layer, the IP address is added and sent through network to the receiver. At the receiver side,
+
+281
+01:15:06,195 --> 01:15:18,735
+Network layer, IPv6 is checked and encapsulated the IP header then passed through transport layer.
+
+282
+01:15:19,956 --> 01:15:22,595
+And transport layer,
+
+283
+01:15:25,095 --> 01:15:32,996
+transport layer checks, UDP checks some header value. Why we check?
+
+284
+01:15:33,844 --> 01:15:56,844
+CHECK SOME, because we want to make sure that this receiving segment has no error, contains no error. If it has errors, then we basically discard this segment because UDP provides connectionless transfer.
+
+285
+01:15:57,524 --> 01:16:14,524
+And if there is no error, after checking checksum header value, extract application layer message and send true related support to the application.
+
+286
+01:16:16,524 --> 01:16:21,524
+Let's have a look at the UDP segment header.
+
+287
+01:16:25,427 --> 01:16:52,971
+Source port and destination port, which have 16 bit each, and length in bytes of UDP segment, including header. So this value is 16 bit. So maximum size of the UDP.
+
+288
+01:16:53,076 --> 01:17:20,171
+UDP segment is 2 power 16 bit. Okay? And it's sorry, 2 power 16 bytes, the length in bytes. And this one provides the total length of the segment and application data send it.
+
+289
+01:17:20,372 --> 01:17:44,772
+from sender to receiver through application layer. And CheckTransum provides, CheckTransum is used for checking the receiving segment, including header, whether it contains error or not. So...
+
+290
+01:17:45,460 --> 01:18:12,859
+The critical field, which is 16-bit, is the checksum. The goal of checksum is basically detect errors. Detect error means flipped bit. The sender send logical one at the receiver side is flipped to logical zero or vice versa. So it's basically used to detect flipped bits in transmitted segments.
+
+291
+01:18:41,619 --> 01:18:51,180
+And it makes 10, but checksum is 11, which means this packet is corrupted.
+
+292
+01:18:56,340 --> 01:19:03,540
+So, this checksum is used to check whether the packet is corrupted or not.
+
+293
+01:19:07,091 --> 01:19:30,851
+So, in the Internet Chexam, sender thread context of UDP segment, including UDP header. In UDP header, the header fields and IP addresses as seconds of 16-bit integer. And Chexam addition once complement of...
+
+294
+01:19:31,055 --> 01:19:39,155
+Segment content and checksum value put into the UDP checksum field.
+
+295
+01:19:40,655 --> 01:19:58,655
+Severside, compute checksum at received segment, excluding the checksum field, then check if computed checksum equal to checksum field, if it is equal,
+
+296
+01:19:58,707 --> 01:20:00,387
+There is no error detected.
+
+297
+01:20:01,107 --> 01:20:05,927
+But it is not 100% true.
+
+298
+01:20:06,307 --> 01:20:07,907
+We are going to discuss later.
+
+299
+01:20:08,268 --> 01:20:08,907
+Don't forget.
+
+300
+01:20:09,387 --> 01:20:15,147
+If that is a queue, it says no error detected.
+
+301
+01:20:15,147 --> 01:20:21,107
+But it doesn't mean the segment contains no error.
+
+302
+01:20:21,779 --> 01:20:31,379
+We are going to discuss. If it's not equal, which means definitely error, contains error in the segment.
+
+303
+01:20:33,779 --> 01:20:44,579
+Let's have a look here, how we calculate the Internet checksum. Let's say we have two 16-bit integers.
+
+304
+01:20:45,219 --> 01:20:46,340
+The first one,
+
+305
+01:20:46,484 --> 01:20:47,784
+And the second one.
+
+306
+01:20:48,064 --> 01:20:50,064
+How we calculate the checksums?
+
+307
+01:20:50,244 --> 01:20:51,064
+It's very simple.
+
+308
+01:20:53,164 --> 01:20:57,484
+0, 1 is 1, 1, 0 is 1, 1, 1 is 0.
+
+309
+01:20:57,484 --> 01:21:01,364
+We add 1 as an overflow.
+
+310
+01:21:01,844 --> 01:21:08,204
+0, 0 plus 1 is 1, 0, 1, 1, 0, 1, 1, 1, 0.
+
+311
+01:21:08,504 --> 01:21:09,244
+It continues.
+
+312
+01:21:09,764 --> 01:21:11,124
+And as you can see,
+
+313
+01:21:12,979 --> 01:21:38,479
+Overflow. And we wrap around, add it to there, and here is our checksum. Okay? When adding numbers, a carryout from the most significant bit needs to be added to the result. That is the critical point. It's overflow. It must be added. Right?
+
+314
+01:21:40,884 --> 01:21:47,104
+The checksum is one's complement of the sum.
+
+315
+01:21:48,523 --> 01:21:54,003
+So zero is flipped to one, one is flipped to zero.
+
+316
+01:21:54,003 --> 01:21:55,484
+It is very simple.
+
+317
+01:21:55,484 --> 01:21:58,104
+And this is our checksum value.
+
+318
+01:22:00,384 --> 01:22:01,224
+Okay?
+
+319
+01:22:03,264 --> 01:22:04,104
+Suppose
+
+320
+01:22:06,123 --> 01:22:07,123
+a two
+
+321
+01:22:07,636 --> 01:22:13,756
+Bir bit on the leftmost, rightmost area, least significant two bit is flipped.
+
+322
+01:22:14,316 --> 01:22:17,856
+One is zero, zero is one in the first number.
+
+323
+01:22:18,695 --> 01:22:26,896
+And in the second number, again, two bit is flipped in the least significant area.
+
+324
+01:22:27,311 --> 01:22:47,512
+1, 0, 1, 0, flip to 1, 1, flip to 0. And as you can see, although 4 bits are flipped and it contains error, but the checksum is identical, even though...
+
+325
+01:22:49,363 --> 01:23:15,371
+Bu, bu
+
+326
+01:23:16,243 --> 01:23:30,743
+OK. As I said, UDP is very simple protocol. It provides connectionless, unreliable, but fast data transfer. Since it is fast,
+
+327
+01:23:33,011 --> 01:23:41,652
+Some application layer protocols such as SNMP, UDP, even HTTP3 uses UDP.
+
+328
+01:23:41,652 --> 01:23:49,492
+And in HTTP3, reliability is provided in application layer.
+
+329
+01:23:49,492 --> 01:23:58,771
+So before starting and before discussing TCP, let's have a look how
+
+330
+01:24:01,779 --> 01:24:19,779
+Let's have a look how we can create reliable data transfer. So we are going to create or we are going to design our own reliable protocol step by step in this action.
+
+331
+01:24:22,779 --> 01:24:26,779
+For the moment, if our channel
+
+332
+01:24:26,996 --> 01:24:30,096
+100% reliable
+
+333
+01:24:30,096 --> 01:24:32,235
+which means
+
+334
+01:24:32,235 --> 01:24:34,576
+there is no loss, no delay
+
+335
+01:24:34,576 --> 01:24:35,996
+nothing at all
+
+336
+01:24:35,996 --> 01:24:37,895
+so the data
+
+337
+01:24:37,895 --> 01:24:39,735
+no need to any
+
+338
+01:24:39,735 --> 01:24:42,416
+values
+
+339
+01:24:42,416 --> 01:24:44,996
+because the channel is reliable
+
+340
+01:24:48,627 --> 01:24:56,807
+We send the data and we receive the data unchanged.
+
+341
+01:24:56,807 --> 01:25:08,127
+But how we can create reliable communication over unreliable channel?
+
+342
+01:25:09,268 --> 01:25:15,307
+We must have some protocol.
+
+343
+01:25:16,307 --> 01:25:39,307
+in sender area to check, to send our message through unreliable channel. At the receiver side, we must have another protocol, part of the protocol to receive, to provide reliability.
+
+344
+01:25:41,332 --> 01:26:01,532
+So, at the sender side, reliable data transfer protocol. At the receiver side, we must have reliable data transfer protocol to provide reliable data transfer over unreliable channel because network layer, it is connectionless.
+
+345
+01:26:01,695 --> 01:26:05,775
+It provides connectionless communication.
+
+346
+01:26:05,775 --> 01:26:11,536
+It provides, it gives best-offer service since it is unreliable.
+
+347
+01:26:14,575 --> 01:26:21,216
+So, the complexity of reliable data transfer protocol will depend
+
+348
+01:26:22,068 --> 01:26:29,068
+...sorunluğun birçok olmalıdır.
+
+349
+01:26:29,068 --> 01:26:34,568
+Çünkü, if you are using wireless channel,
+
+350
+01:26:35,568 --> 01:26:37,068
+reliability is...
+
+351
+01:26:38,068 --> 01:26:40,068
+...there are many losses,
+
+352
+01:26:40,068 --> 01:26:43,068
+...because it is open environment.
+
+353
+01:26:45,619 --> 01:27:03,619
+Fiber-optik channel, it's almost reliable, okay? So the data transfer protocol, reliable data transfer protocol is complex and strongly depends on the characteristic of underneath channel.
+
+354
+01:27:05,747 --> 01:27:13,427
+ve sender ve receiver do not know anything about the state of each other.
+
+355
+01:27:13,427 --> 01:27:23,028
+Çünkü sender is one location in the globe, receiver is another location in the globe.
+
+356
+01:27:31,764 --> 01:27:34,764
+...state of the receiver part...
+
+357
+01:27:34,764 --> 01:27:38,444
+...unless communicated via message.
+
+358
+01:27:39,304 --> 01:27:39,564
+Okay?
+
+359
+01:27:41,123 --> 01:27:44,764
+Because it has some sort of curtain...
+
+360
+01:27:44,764 --> 01:27:49,104
+...and the sender and receiver are blind to each other.
+
+361
+01:27:50,304 --> 01:27:50,564
+Okay?
+
+362
+01:27:51,944 --> 01:27:56,503
+So we must have some mechanism.
+
+363
+01:27:56,744 --> 01:27:58,543
+We must implement some mechanism.
+
+364
+01:27:59,039 --> 01:28:05,039
+for reliable service over unreliable communication channel.
+
+365
+01:28:07,039 --> 01:28:20,039
+Suppose our protocol is RDT, which is the so-called, we named this our protocol, Reliable Data Transfer Protocol.
+
+366
+01:28:20,039 --> 01:28:25,039
+Okay? So at the standard side, we have
+
+367
+01:28:25,167 --> 01:28:29,927
+Reliable data transfer send command in our protocol.
+
+368
+01:28:29,927 --> 01:28:42,907
+And to send the application data through transport layer to network layer.
+
+369
+01:28:43,907 --> 01:28:52,627
+But since the channel is unreliable, we use unreliable data transfer send command.
+
+370
+01:28:53,076 --> 01:29:17,963
+to pass our segment through unreliable channel. At the receiver side, we must implement reliable data transfer receive command to check the reliability. And if the data is reliable, deliver our data to
+
+371
+01:29:18,579 --> 01:29:21,779
+application so deliver data application
+
+372
+01:29:21,779 --> 01:29:32,159
+reliable data transfer sent called from above by the application passed
+
+373
+01:29:32,159 --> 01:29:44,300
+is application data to deliver to receiver a seed message to upper layer and
+
+374
+01:29:46,003 --> 01:30:01,003
+Unreliable data transfer command called by reliable data transfer command protocol to transfer packet over unreliable channel to receiver.
+
+375
+01:30:03,003 --> 01:30:13,867
+Receiver side, reliable data transfer receive called by packet arrived the side of receiving side of the channel.
+
+376
+01:30:13,876 --> 01:30:38,435
+Then, if there is no error at the segment, the delivered data called by reliable data transfer protocol to deliver receiving data to upper layer. It is bidirectional communication over unreliable channel.
+
+377
+01:30:38,452 --> 01:30:49,452
+So we are trying to implement reliable data transfer protocol, we named as RDT, over unreliable channel.
+
+378
+01:30:49,452 --> 01:30:57,452
+The data is exchanged reliably among sender and receiver.
+
+379
+01:30:57,452 --> 01:31:05,452
+But here we have packets, it contains the data and the header.
+
+380
+01:31:06,100 --> 01:31:09,020
+So we must have something on the headers.
+
+381
+01:31:10,700 --> 01:31:25,659
+So at the beginning, the first step, we will incrementally develop sender and receiver side of reliable data transfer protocol, RDT protocol.
+
+382
+01:31:28,212 --> 01:31:35,012
+For the first step, let's consider only unidirectional data transfer.
+
+383
+01:31:36,012 --> 01:31:44,532
+But we are going to control the info will flow in both directions.
+
+384
+01:31:44,532 --> 01:31:51,092
+Control info in both directions, but only unidirectional data transfer.
+
+385
+01:31:52,692 --> 01:31:55,412
+For simplicity, we use...
+
+386
+01:31:56,115 --> 01:32:02,915
+FSM, Finite State Machine, to specify sender and receiver.
+
+387
+01:32:02,915 --> 01:32:13,315
+Suppose we have the machine is one state and the next stage unit determined by an event,
+
+388
+01:32:13,315 --> 01:32:21,915
+then the machine put itself into the second stage, like on and off both.
+
+389
+01:32:23,631 --> 01:32:33,391
+RDT10, it is the first version of reliable data transfer protocol.
+
+390
+01:32:33,391 --> 01:32:46,671
+It is the first step, underlying channel is 100% reliable, although we are trying to develop
+
+391
+01:32:46,752 --> 01:32:51,652
+Reliable data transfer protocol over unreliable channel.
+
+392
+01:32:51,652 --> 01:33:04,752
+But for that moment, let's assume there is no error in our channel and there is no packet loss in our channel.
+
+393
+01:33:04,752 --> 01:33:14,052
+In this case, we separate finite state machine for sender and receiver.
+
+394
+01:33:14,260 --> 01:33:36,260
+Sender sends data into underlying channel, but our channel this time has no bit error, no packet loss, and receiver reads data from underlying channel. So, one state machine for sender side, one state machine for receiver side.
+
+395
+01:33:42,292 --> 01:33:46,852
+It's waiting for call from above, from application layer.
+
+396
+01:33:49,412 --> 01:34:02,292
+If the data is received, RTT send data to lower layer. So since this data can be larger than segment,
+
+397
+01:34:02,292 --> 01:34:09,492
+we packet these application into segments, make packet data. Then
+
+398
+01:34:10,868 --> 01:34:38,155
+unreliable data sent packet through channel. Okay? Receiver site, it is waiting a segment from above layer and received packet and extract packet. Then, since it is break into many segments and
+
+399
+01:34:39,507 --> 01:35:07,307
+Reassemble incoming packet into data and deliver data into two upper layers. Okay? It is very simple. In RTT10, our unreliable channel is 100% reliable. It's easy, too simple, because no pain.
+
+400
+01:35:07,439 --> 01:35:12,939
+No headache. Because the channel is 100% reliable.
+
+401
+01:35:15,139 --> 01:35:31,435
+In our next version, this time, underlying channel may flip bits in packet. All right? May flip bits in packet, which means it contains error.
+
+402
+01:35:31,923 --> 01:35:41,923
+So, checksum, internet checksum to detect bit errors. So, the question, how to recover from errors?
+
+403
+01:35:44,484 --> 01:35:49,683
+Okay, we can compare with human conversation.
+
+404
+01:35:52,243 --> 01:35:58,003
+So, underlying channel, which is unreliable this time in our
+
+405
+01:36:22,783 --> 01:36:26,783
+VLAN İlginç, 2nd version.
+
+406
+01:36:21,779 --> 01:36:43,659
+The packet is received. Okay. Or we can use negative acknowledgement next. So, receives explicitly tells sender that packet had errors. Then sender resend the packet. Okay. And for acknowledgement...
+
+407
+01:36:44,212 --> 01:36:54,212
+No need to resend. For negative acknowledgement, send the retransmit packet on receipt of negative acknowledgement.
+
+408
+01:36:54,212 --> 01:37:08,212
+That is, in RTT20, our protocol is stop and wait protocol. Sender send one packet, then waits for receiver to respond.
+
+409
+01:37:08,532 --> 01:37:15,731
+Because if positive acknowledgement is received, send another packet.
+
+410
+01:37:15,731 --> 01:37:24,532
+If negative acknowledgement is received, send same packet again, till positive acknowledgement is received.
+
+411
+01:37:24,532 --> 01:37:32,131
+In this case, at the sender side, our state machine has two states.
+
+412
+01:37:36,916 --> 01:38:02,916
+If the data is received, the layer above from the application, then RDT send data and send packet. We make packet using the data and we add checksum because our channel is unreliable.
+
+413
+01:38:02,931 --> 01:38:27,243
+ve send our packet through unreliable data transfer send. And in this case, put itself into the wait for acknowledgement or NAC. If acknowledgement is received,
+
+414
+01:38:28,787 --> 01:38:34,107
+Then put itself to the waitfor call above.
+
+415
+01:38:34,107 --> 01:38:43,188
+If negative acknowledgement is received, resend same packet using UDP send.
+
+416
+01:38:43,188 --> 01:38:48,188
+Receiver side, again simple.
+
+417
+01:38:48,188 --> 01:38:54,067
+If the...
+
+418
+01:38:54,100 --> 01:39:01,600
+Paket is received and it is corrupted, then negative acknowledgement is sent.
+
+419
+01:39:01,600 --> 01:39:09,100
+If paket is received and checked, there is no...
+
+420
+01:39:09,100 --> 01:39:22,864
+...
+
+421
+01:39:11,956 --> 01:39:30,056
+The error inside, then extract this packet and resamble data, deliver this resamble data into the application, then send acknowledgement packet. Okay.
+
+422
+01:39:33,427 --> 01:39:54,628
+So, state of receiver, if receiver get my message correctly, is a no to sender unless somehow communicated with receiver to sender. So that's why we need a protocol. Because it is curtain here.
+
+423
+01:39:57,507 --> 01:39:59,747
+We use negative eckno.
+
+424
+01:40:00,000 --> 01:40:04,380
+ve wait for negative acknowledgement or positive acknowledgement.
+
+425
+01:40:06,960 --> 01:40:14,399
+So, the machine, the first time machine is waiting in the state one, waiting for call from above.
+
+426
+01:40:14,399 --> 01:40:22,119
+If received, the receiver side waiting for call from below, from network layer.
+
+427
+01:40:22,119 --> 01:40:26,119
+The sender side waiting from application layer.
+
+428
+01:40:26,612 --> 01:40:52,612
+The packet is received from application layer and RDT send used to split our data into packets and add text them, send to the receiver and the receiver RDT receive packet not corrupted, extract data.
+
+429
+01:40:52,819 --> 01:41:20,491
+paket ve reassemble data, deliver data, and send acknowledgement to the sender, then sender accept, then wait for another data from above. If same thing, data is received,
+
+430
+01:41:37,171 --> 01:41:50,851
+to the sender, then sender resend again till the packet receive without any error.
+
+431
+01:41:52,564 --> 01:42:05,844
+and send acknowledgement to the sender, then sender's change its state to wait for a call from above.
+
+432
+01:42:08,003 --> 01:42:15,283
+But there is a problem here. Why? What happens if
+
+433
+01:42:16,051 --> 01:42:25,652
+Acknowledgment or negative acknowledgement is corrupted. So sender doesn't know what happened at receiver.
+
+434
+01:42:27,451 --> 01:42:38,851
+In this case, we can't just retransmit. In this case, receiver may have duplicate data, duplicate package.
+
+435
+01:42:41,252 --> 01:42:42,252
+So...
+
+436
+01:42:42,707 --> 01:43:07,851
+For this case, the receiver must handle duplicate packets. Sender retransmit current packet if negative or positive acknowledgement is corrupted. And in this case, sender adds sequence number to each packet. And at the receiver side,
+
+437
+01:43:08,307 --> 01:43:14,548
+Receiver discard if multiple packet is received.
+
+438
+01:43:15,548 --> 01:43:16,548
+Okay?
+
+439
+01:43:17,988 --> 01:43:24,948
+Again, stop and wait. Sender send one packet, then wait for receiver to response.
+
+440
+01:43:25,507 --> 01:43:33,667
+But there must be some sort of time up. In this case, we have four states.
+
+441
+01:43:35,315 --> 01:44:01,956
+And we use one bit segment zero and segment one. So in this case, in the first stage, call for zero data from above, then send, wait for acknowledgement for zero, then if...
+
+442
+01:44:02,387 --> 01:44:21,188
+Positif aknowledgment is received, then put itself, wait for packet 2, 1 from above, then send to a receiver, then wait for acknowledgement and negative acknowledgement for packet 1.
+
+443
+01:44:21,188 --> 01:44:30,188
+So, when the first packet is received, 0, and send and add checksum, then...
+
+444
+01:44:30,771 --> 01:44:44,171
+If positive acknowledgement is received, wait for packet 1, then send, then wait for acknowledgement for packet 1.
+
+445
+01:44:44,171 --> 01:44:55,372
+If it's received and positive acknowledgement is received, then put itself to the first stage, waiting for zero packet from above.
+
+446
+01:44:55,372 --> 01:44:57,572
+If it is corrupted...
+
+447
+01:44:58,163 --> 01:45:04,723
+Then, or negative Acknowledgement is received, then we send the same packet.
+
+448
+01:45:04,723 --> 01:45:20,603
+Again, while waiting the Acknowledgement for packet 1, if negative Acknowledgement is received or is corrupted, then we send the packet.
+
+449
+01:45:25,332 --> 01:45:32,092
+How we can handle GARP Acknowledgment and Negative Acknowledgment?
+
+450
+01:45:32,092 --> 01:45:35,452
+It's waiting for call from below.
+
+451
+01:45:36,452 --> 01:45:44,612
+If the packet is received and no error inside, send positive acknowledgement
+
+452
+01:45:44,612 --> 01:45:48,892
+and put itself waiting for one from below.
+
+453
+01:45:48,892 --> 01:45:49,892
+If...
+
+454
+01:46:19,475 --> 01:46:30,995
+So let's discuss here in the second version, because we are handling error in our channel.
+
+455
+01:46:30,995 --> 01:46:40,995
+So we add sequence number to the packet. For this case, there are two sequence, 1 and 0. Is this enough?
+
+456
+01:46:41,140 --> 01:46:42,380
+Ve bu şekilde görmek için.
+
+457
+01:46:42,380 --> 01:46:44,460
+Ve bu şekilde,
+
+458
+01:46:44,460 --> 01:46:46,460
+ve bu şekilde,
+
+459
+01:46:46,460 --> 01:46:57,140
+bu şekilde,
+
+460
+01:46:57,140 --> 01:46:58,140
+bir sürü bir sürü,
+
+461
+01:46:58,140 --> 01:46:58,252
+bu,
+
+462
+01:47:06,195 --> 01:47:07,115
+[öğrenci]!
+
+463
+01:47:11,768 --> 01:47:23,748
+bu,
+
+464
+01:47:11,380 --> 01:47:16,140
+ve state must remember whether expected packet
+
+465
+01:47:16,140 --> 01:47:20,619
+should have sequence number 0 or 1.
+
+466
+01:47:20,619 --> 01:47:24,340
+So in some cases, if some delay,
+
+467
+01:47:24,340 --> 01:47:27,340
+same sequence number must receive.
+
+468
+01:47:27,340 --> 01:47:31,020
+So in this case, we must handle duplicate packets.
+
+469
+01:47:31,020 --> 01:47:34,260
+At receiver side, we must check if
+
+470
+01:47:34,260 --> 01:47:37,020
+received packet is duplicate or not.
+
+471
+01:47:37,492 --> 01:47:44,311
+Ve bu
+
+472
+01:47:44,311 --> 01:47:48,092
+ve bu
+
+473
+01:47:48,092 --> 01:48:07,092
+bu
+
+474
+01:48:06,100 --> 01:48:15,100
+Tamam. Bu kadar. Bu kadar. Burada burada durabilirsiniz. Sonra sonra bir hafta devam edebiliriz.
+
+475
+01:48:16,100 --> 01:48:17,100
+Bir soru var mı?
+
+476
+01:48:20,100 --> 01:48:22,100
+Arkadaşlar, sonunuz var mı?
+
+477
+01:48:23,100 --> 01:48:24,100
+Yok hocam.
+
+478
+01:48:25,100 --> 01:48:30,100
+Evet. Sonuyu web sayfasına koydum. Oradan indirebilirsiniz.
+
+479
+01:48:31,100 --> 01:48:32,100
+Hepinize...
+
+480
+01:48:32,819 --> 01:48:35,579
+Hayırlı cumalar ve iyi hafta sonları diliyorum.
+
+481
+01:48:35,579 --> 01:48:36,779
+Haftaya görüşmek üzere.
+
+482
+01:48:36,779 --> 01:48:39,979
+Ben web sayfamızı açamadım da sorun olabilir mi acaba?
+
+483
+01:48:39,979 --> 01:48:41,219
+Neyi açamadın?
+
+484
+01:48:41,219 --> 01:48:43,579
+Web sayfamızı açamadım da şey oldu.
+
+485
+01:48:43,579 --> 01:48:44,779
+Bugün mi açamadı?
+
+486
+01:48:44,779 --> 01:48:45,779
+Evet.
+
+487
+01:48:45,779 --> 01:48:47,779
+Belki evde internet gitmiştir.
+
+488
+01:48:47,779 --> 01:48:51,019
+Ama ben bağlanabildim. Şu anda bağlanıyordu.
+
+489
+01:48:51,019 --> 01:48:52,779
+Bir de cepten bir daha bir deneyeyim.
+
+490
+01:48:53,716 --> 01:49:16,216
+Ne zaman bağlanamadı? Dün akşam. Bazen şey oluyor ya, internette sorun oluyor ya da benim oğlanlar oyun falan oynuyorsa açılıyor şu anda. O zaman bottleneck oluşabiliyor. Şu anda sorun yok. Anlatacaklar. Tamam. Haftaya görüşmek üzere arkadaşlar. Herkese iyi günler.
