@@ -32,6 +32,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aOf9B8FXnHMR2NJwKjOlWVLtUM__Rt4c?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Elektronik Devreler Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Rayene'in el yazısı notları](./slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
