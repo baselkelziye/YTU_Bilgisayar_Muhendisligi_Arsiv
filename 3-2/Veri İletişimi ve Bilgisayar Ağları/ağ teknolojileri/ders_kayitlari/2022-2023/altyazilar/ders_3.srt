@@ -1,0 +1,1907 @@
+1
+00:09:45,172 --> 00:10:10,652
+Günaydın sevgili arkadaşlar. Hepinize iyi bir hafta diliyorum. Gerçi hafta da bitmek üzere ama iyi bir hafta sonları da ekliyorum devamında. Bu hafta ikinci hafta. Yaklaşık 43 kişi, bu da sınıfın yaklaşık beşte biri online olarak katıldı demektir. Dersimize başlayalım.
+
+2
+00:10:10,975 --> 00:10:13,296
+Sesim geliyor mu? Ses verirseniz.
+
+3
+00:10:14,936 --> 00:10:15,936
+Geliyor hocam.
+
+4
+00:10:15,936 --> 00:10:18,936
+Tamamdır.
+
+5
+00:10:19,936 --> 00:10:20,936
+Okay.
+
+6
+00:10:21,615 --> 00:10:22,936
+Let's start
+
+7
+00:10:23,816 --> 00:10:25,936
+our this week presentation.
+
+8
+00:10:41,908 --> 00:11:08,108
+Here we go. As I said, this is our second week in Computer Networking Technology. Sorry, this is third week in Computer Networking Technologies Lecture. As you remember, first two weeks, we have discussed the introductory subjects and I have given a brief information about the context of this lecture.
+
+9
+00:11:08,303 --> 00:11:16,423
+And this week, we are going to start two lecture subjects.
+
+10
+00:11:16,423 --> 00:11:21,644
+As I said last week, internet is a network of networks.
+
+11
+00:11:21,843 --> 00:11:27,163
+The architecture of the internet or networks based on layer structure.
+
+12
+00:11:27,923 --> 00:11:30,155
+So, since...
+
+13
+00:11:30,196 --> 00:11:39,796
+The network is based on layering, so we are going to discuss each layer in the coming weeks.
+
+14
+00:11:39,796 --> 00:11:53,796
+So here we are going to discuss the first layer, which is application layer. This is the user seeable layer and all application.
+
+15
+00:11:53,875 --> 00:12:01,375
+VE us in our laptops, desktops, mobile phones, or other end-edge devices.
+
+16
+00:12:01,375 --> 00:12:08,875
+So this week, and the coming week, we are going to discuss application layer.
+
+17
+00:12:08,875 --> 00:12:09,875
+Okay?
+
+18
+00:12:09,875 --> 00:12:14,875
+So, let's have a look at application layer.
+
+19
+00:12:15,087 --> 00:12:23,487
+We are going to start with discussing the application principles of applications, network applications,
+
+20
+00:12:23,487 --> 00:12:31,327
+and we are going to continue commonly used applications such as web and HTTPS.
+
+21
+00:12:31,327 --> 00:12:37,807
+And we are going to continue email, SMTP, IMAP, these are the protocols, and DNS.
+
+22
+00:12:37,971 --> 00:12:40,251
+Ve devam ediyoruz.
+
+23
+00:12:40,251 --> 00:12:42,451
+Peer-to-peer applications.
+
+24
+00:12:43,412 --> 00:12:45,471
+Ve devam ediyoruz.
+
+25
+00:12:45,751 --> 00:12:46,511
+Video streaming.
+
+26
+00:12:47,011 --> 00:12:48,672
+CDNs.
+
+27
+00:12:49,052 --> 00:12:51,251
+Content Division Networks.
+
+28
+00:12:52,611 --> 00:12:52,991
+So.
+
+29
+00:12:53,831 --> 00:12:54,771
+Our goal.
+
+30
+00:12:55,991 --> 00:12:56,231
+Of.
+
+31
+00:12:56,724 --> 00:13:09,724
+A application layer chapter here give you conceptual and practical implementation aspects of application layer protocols. Okay?
+
+32
+00:13:09,724 --> 00:13:23,532
+This application layer is serviced by transport layer, which is the one layer below of application layer. There are two kinds of
+
+33
+00:13:23,827 --> 00:13:36,827
+Paradygum, we can discuss in application layer applications, server-client paradigm, and peer-to-peer paradigm.
+
+34
+00:13:36,827 --> 00:13:47,435
+And by the end of this application layer lecture, we are going to learn about protocols.
+
+35
+00:13:47,827 --> 00:14:11,903
+Bu, bu
+
+36
+00:14:11,903 --> 00:14:21,223
+A protocol from which all the names are translated from IPs or vice versa.
+
+37
+00:14:21,223 --> 00:14:32,503
+Or video streamings, CDNs, such as these are some proprietary applications such as Netflix, Skype.
+
+38
+00:14:32,503 --> 00:14:37,783
+These are based on video streaming protocols and CDNs.
+
+39
+00:14:39,316 --> 00:14:49,476
+Let's have a look at commonly used and well-known network applications, such as social networking.
+
+40
+00:14:49,476 --> 00:15:05,476
+These are common and every young people are commonly used and spend most of their time on social networking, such as Facebook, Instagram, Twitter, TikTok.
+
+41
+00:15:05,652 --> 00:15:23,772
+There are many names and many applications that build social networking. Web, such as Chrome, Safari.
+
+42
+00:15:23,772 --> 00:15:31,852
+There are many web browser applications and many web server applications. Text messaging, Skype.
+
+43
+00:15:32,436 --> 00:15:33,875
+Signal.
+
+44
+00:15:34,735 --> 00:15:36,816
+There are many text messaging,
+
+45
+00:15:36,996 --> 00:15:38,636
+email, applications,
+
+46
+00:15:39,416 --> 00:15:40,596
+multi-user games.
+
+47
+00:15:41,176 --> 00:15:42,220
+I cannot...
+
+48
+00:15:42,323 --> 00:16:05,644
+This is uncountable because there are many multi-user network games that work on PCs, laptops, tablets, mobile devices, streaming stored videos such as YouTube, Hulu, Netflix, Blue TV, Disney Plus.
+
+49
+00:16:06,196 --> 00:16:26,196
+Amazon, there are many peer-to-peer file sharing applications, voice over IP applications such as Skype, real video streaming application, for example, Zoom, on which we are...
+
+50
+00:16:47,443 --> 00:17:02,443
+ve
+
+51
+00:17:06,932 --> 00:17:17,311
+Some of their time using network application, either social networking, web browsing, YouTube, Facebook, or Zoom, whatever.
+
+52
+00:17:17,711 --> 00:17:17,852
+Okay?
+
+53
+00:17:18,231 --> 00:17:19,271
+It is very common.
+
+54
+00:17:20,192 --> 00:17:30,432
+And as I said, by the invention of mobile device, encouraged network usage.
+
+55
+00:17:32,799 --> 00:17:40,000
+Network, internet, made mobile phone more usable.
+
+56
+00:17:40,000 --> 00:17:41,000
+Okay?
+
+57
+00:17:41,000 --> 00:17:47,399
+And mobile phones made internet more accessible.
+
+58
+00:17:47,399 --> 00:17:50,599
+And this is like chicken and egg.
+
+59
+00:17:50,599 --> 00:17:51,399
+Okay?
+
+60
+00:17:51,399 --> 00:17:54,399
+And it is very common now.
+
+61
+00:17:56,199 --> 00:17:57,199
+All right.
+
+62
+00:17:57,199 --> 00:18:00,399
+On the right-hand side, you can see
+
+63
+00:18:00,531 --> 00:18:22,132
+Our internet structure, as I said, these are blue areas, our networks and internet is network of networks. As you can see, there are some core devices, ISPs, and there are some edge devices. So...
+
+64
+00:18:22,867 --> 00:18:29,627
+Network applications may run on different end systems.
+
+65
+00:18:29,627 --> 00:18:40,987
+Either, as you can see, the mobile phone on the right laptop, desktops, and other devices.
+
+66
+00:18:40,987 --> 00:18:49,627
+And they can communicate over network and web server software.
+
+67
+00:18:50,836 --> 00:18:53,576
+...comunikates with browser software.
+
+68
+00:18:53,796 --> 00:18:56,976
+This is one commonly used example.
+
+69
+00:18:57,395 --> 00:18:59,836
+Okay, let's say this server here...
+
+70
+00:19:00,836 --> 00:19:02,935
+...is let's say the web server.
+
+71
+00:19:03,195 --> 00:19:03,836
+And these are the...
+
+72
+00:19:05,316 --> 00:19:06,836
+...Edge devices.
+
+73
+00:19:07,756 --> 00:19:12,796
+One is on top, mobile phone and the desktop underneath here.
+
+74
+00:19:12,796 --> 00:19:14,836
+And as you can see...
+
+75
+00:19:15,836 --> 00:19:18,827
+...no need to write for...
+
+76
+00:19:19,284 --> 00:19:42,700
+network core device to develop network application. And network core device do not run over user applications. And application on Nsystem allows for rapid application development propagation. And since it is layer structure,
+
+77
+00:19:42,836 --> 00:20:04,836
+OK. And application layer is the top layer. And as you can see, there are five layers. From the bottom, physical layer, data link layer, network layer, and transport layer. And application layer is serviced by transport layer services. And application layer...
+
+78
+00:20:05,428 --> 00:20:16,684
+Aplikasyonlarla konuşmak için birçok birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak birçok model olarak
+
+79
+00:20:22,427 --> 00:20:38,427
+Açıkçı,
+
+80
+00:20:21,683 --> 00:20:29,284
+And these are, as I said, there are two types of paradigm.
+
+81
+00:20:30,163 --> 00:20:33,963
+First one in application layer structure.
+
+82
+00:20:34,244 --> 00:20:37,043
+First one is client-server paradigm.
+
+83
+00:20:37,844 --> 00:20:43,844
+As you can see here, it is very common and everybody is familiar.
+
+84
+00:20:45,043 --> 00:20:46,844
+There are two sides.
+
+85
+00:20:47,155 --> 00:21:10,956
+Server-side, client-side, right? And on the server-side, server always on the host, and it must have permanent IP address, and they are placed oftenly in data centers for scaling, okay?
+
+86
+00:21:11,155 --> 00:21:15,755
+And clients, clients communicate with the server.
+
+87
+00:21:17,295 --> 00:21:23,336
+It may have permanent IP or dynamic IP.
+
+88
+00:21:23,576 --> 00:21:26,755
+So it may be intermittently connected.
+
+89
+00:21:27,215 --> 00:21:29,355
+It's sometimes connected, sometimes not.
+
+90
+00:21:29,355 --> 00:21:34,355
+May have dynamic IP addresses and...
+
+91
+00:21:36,559 --> 00:21:37,559
+ve
+
+92
+00:21:35,667 --> 00:21:46,667
+In server to client-server paradigm, clients do not communicate each other directly.
+
+93
+00:21:46,667 --> 00:21:48,299
+So...
+
+94
+00:21:49,299 --> 00:22:10,500
+Let's have a look at the server, client-server paradigm examples. HTTP is one of the examples, web browser. As you can see, Chrome run on client device may communicate Apache web server that is run on server.
+
+95
+00:22:11,220 --> 00:22:17,220
+Another example is IMAP for email or FTP for file sharing.
+
+96
+00:22:17,220 --> 00:22:18,220
+Okay.
+
+97
+00:22:18,220 --> 00:22:23,220
+Another approach is peer-to-peer approach.
+
+98
+00:22:23,220 --> 00:22:29,220
+In that application, it is not necessary to have server.
+
+99
+00:22:29,220 --> 00:22:30,220
+Okay.
+
+100
+00:22:30,220 --> 00:22:36,220
+And arbitrary end systems directly communicate each other.
+
+101
+00:22:38,132 --> 00:22:48,512
+And pairs, each pair may request service from other pair, provide server in turn to other pairs.
+
+102
+00:22:49,512 --> 00:23:02,692
+So, sometimes a client may send file or message to other pair, other client, or sometimes may receive.
+
+103
+00:23:03,955 --> 00:23:05,955
+It has self-scalability.
+
+104
+00:23:05,955 --> 00:23:08,955
+What it does mean?
+
+105
+00:23:08,955 --> 00:23:16,955
+New pairs bring new service capability as well as new service demands.
+
+106
+00:23:16,955 --> 00:23:20,955
+And pairs are intermittently connected.
+
+107
+00:23:20,955 --> 00:23:23,955
+They are not always connected to network.
+
+108
+00:23:23,955 --> 00:23:31,947
+And in other words, it may not have permanent IP addresses.
+
+109
+00:23:32,051 --> 00:23:36,051
+It may change addresses from time to time.
+
+110
+00:23:36,051 --> 00:23:40,051
+So the management is too complex.
+
+111
+00:23:40,051 --> 00:23:42,923
+The commonly used example of...
+
+112
+00:23:43,028 --> 00:23:48,108
+A peer-to-peer paradigm is peer-to-peer file sharing.
+
+113
+00:23:48,108 --> 00:24:04,108
+As you can see here, the mobile phone and the desktop here may exchange data or the car on the top here may communicate, exchange data among other clients.
+
+114
+00:24:04,108 --> 00:24:09,947
+This is another paradigm, all right, in application layer services.
+
+115
+00:24:10,291 --> 00:24:36,811
+So, on the application layer, it doesn't necessary to have one application. There can be more than one application serviced by transport layer. So, process is basically running program within a host. So, on the same host,
+
+116
+00:24:38,612 --> 00:25:01,832
+There can be more than one running process and because it is multi-tasking and multi-user system and these are common and on the same server or same client, same host, more than one process may communicate each other.
+
+117
+00:25:02,644 --> 00:25:27,644
+This is called inter-process communication. And this is governed by operating system. Process in same host, if process in the same host exchange, this is called inter-process communication, IPC. If the processes...
+
+118
+00:25:28,243 --> 00:25:35,563
+plays on different hosts, communicates by exchanging messages.
+
+119
+00:25:35,563 --> 00:25:36,563
+All right?
+
+120
+00:25:36,563 --> 00:25:48,003
+So in this type of communication, there are two paradigm, client-server model or peer-to-peer model.
+
+121
+00:25:48,003 --> 00:25:50,963
+Let's have a look at client-server model.
+
+122
+00:25:52,963 --> 00:25:55,963
+The client process on the one side.
+
+123
+00:25:56,307 --> 00:26:00,127
+...may communicate the server's process on the other side.
+
+124
+00:26:00,127 --> 00:26:06,387
+And client process called processes that initiate communication on the client.
+
+125
+00:26:06,988 --> 00:26:14,288
+And server process basically waits for clients to be contacted.
+
+126
+00:26:15,867 --> 00:26:19,008
+So, server process...
+
+127
+00:26:19,008 --> 00:26:24,148
+...always running and waiting for client to be accessed.
+
+128
+00:26:24,847 --> 00:26:30,008
+So applications with peer-to-peer architectures...
+
+129
+00:26:30,008 --> 00:26:34,827
+...have client process and server process together.
+
+130
+00:26:35,604 --> 00:26:38,923
+Çünkü, no server to communicate.
+
+131
+00:26:38,923 --> 00:26:45,764
+So, each one may give a service or given a service by other client.
+
+132
+00:26:45,764 --> 00:26:49,963
+So, in the process, in the peer-to-peer application,
+
+133
+00:26:49,963 --> 00:26:57,204
+these processes behave as if client process and server process together.
+
+134
+00:26:58,403 --> 00:27:02,124
+So, as I said on the same host,
+
+135
+00:27:02,836 --> 00:27:06,476
+There can be more than one running process.
+
+136
+00:27:06,916 --> 00:27:12,615
+And each process is given service by transport layer services.
+
+137
+00:27:13,655 --> 00:27:13,796
+Okay?
+
+138
+00:27:14,155 --> 00:27:20,996
+And how we can distinguish these processes running on the same server?
+
+139
+00:27:20,996 --> 00:27:22,936
+This is called sockets.
+
+140
+00:27:24,223 --> 00:27:44,423
+A person send and receive messages to or from its circuits. As an analogy, a circuit is a kind of door to access to the lower layer. Okay? Sending process shows message outdoor through process and...
+
+141
+00:27:45,203 --> 00:28:07,703
+Sending process rely on transport infrastructure, that is the transport layer, the one layer below of application layer, on the other side of the door to deliver a message to the circuit at receiving process. And two circuits involved.
+
+142
+00:28:07,988 --> 00:28:09,988
+Bir tane bir tane.
+
+143
+00:28:09,988 --> 00:28:12,788
+Ve bu sockets'n birçok,
+
+144
+00:28:12,788 --> 00:28:33,836
+birçok,
+
+145
+00:28:34,067 --> 00:29:00,708
+must also be unique for the application. So in this case, because of network structure, because of network structure, to receive and send message, each process must have unique identifier.
+
+146
+00:29:00,948 --> 00:29:22,948
+So, what should we have? We should have a unique identifier to distinguish a process in the same host, plus to identify the host that the process run on. So, we must have a unique IP addresses.
+
+147
+00:29:23,104 --> 00:29:35,704
+IPv4, that is 32 bit IP addresses or 128 bit in IPv6 addressing mechanism.
+
+148
+00:29:35,704 --> 00:29:47,704
+So, let me, we may rise, does IP address of host on which process run suffice for identifying the process?
+
+149
+00:29:47,704 --> 00:29:50,504
+The answer is no, because...
+
+150
+00:29:50,644 --> 00:30:01,364
+As I said in the previous slides, there can be more than one running process communicating each other.
+
+151
+00:30:01,364 --> 00:30:15,923
+So in inter-process communication, each process or more than one process may exchange data, although they are sitting on the same host.
+
+152
+00:30:16,276 --> 00:30:41,076
+OK? So IP address itself is not enough to address the process. So what should we have? We should have an identifier must include both IP addresses and port addresses associated with process on host.
+
+153
+00:30:41,523 --> 00:30:57,523
+For example, in HTTP server, in the server-side process, the port number 18 is used to access to that server-side web process.
+
+154
+00:30:57,523 --> 00:31:00,523
+For mailing, it is 25.
+
+155
+00:31:00,523 --> 00:31:08,523
+To send HTTP message to server, such as GICS, Fumis, EduTia, Edu,
+
+156
+00:31:08,915 --> 00:31:21,516
+It is a web server. The IP address is 128.119.245.12, and the port number is 18.
+
+157
+00:31:23,516 --> 00:31:35,796
+So, we know this time there are more than one processes running on the same host, and the processes among
+
+158
+00:31:36,031 --> 00:32:02,031
+A sit-on, different hosts may exchange messages. So they must have unique identifiers. So these identifiers include port address plus port number plus IP addresses. So they exchange message. All right.
+
+159
+00:32:02,483 --> 00:32:14,983
+So, there are two types of message exchanged among process request message and response message, right?
+
+160
+00:32:14,983 --> 00:32:22,683
+Since we are using the protocol, each protocol must have unique syntax.
+
+161
+00:32:22,683 --> 00:32:29,483
+So, in that syntax, it is defined what field in messages and
+
+162
+00:32:29,683 --> 00:32:32,624
+how fields are delimited.
+
+163
+00:32:33,943 --> 00:32:34,243
+Right?
+
+164
+00:32:34,763 --> 00:32:38,543
+So these are the fixed and this is common.
+
+165
+00:32:38,543 --> 00:32:44,723
+And it's used for any version of operating system
+
+166
+00:32:44,723 --> 00:32:47,644
+and plus any type of operating system.
+
+167
+00:32:48,283 --> 00:32:54,223
+And message semantics is basically the meaning of information in fields.
+
+168
+00:32:54,983 --> 00:32:57,543
+And the rules for when...
+
+169
+00:32:57,680 --> 00:33:02,460
+ve nasıl bir süreçlik sende ve bir süreçlik sende ve bir süreçlik sende.
+
+170
+00:33:02,460 --> 00:33:11,100
+Yani, bu süreçlik bir süreçlik sende ve bir süreçlik sende ve bir süreçlik sende.
+
+171
+00:33:11,100 --> 00:33:15,360
+Bu süreçlik bir süreçlik ve bir süreçlik sende.
+
+172
+00:33:18,708 --> 00:33:39,708
+So, it is serviced by these lower layer protocols. And there are two types of protocols used in application layer applications. First one is open protocols. These are...
+
+173
+00:33:40,243 --> 00:33:46,743
+Openly used protocols defined by in RFCs, request for commands.
+
+174
+00:33:46,743 --> 00:33:55,943
+Everyone can access to protocol definition and allows for interpropriety.
+
+175
+00:33:55,943 --> 00:34:02,243
+For example, HTTP, SMTP, DNS, those are open protocols.
+
+176
+00:34:02,243 --> 00:34:05,543
+There are another type of protocol.
+
+177
+00:34:05,632 --> 00:34:11,632
+Prioritory protocols, such as the protocol of Zoom or Skype.
+
+178
+00:34:19,668 --> 00:34:42,867
+OK, so what we need now? We need unique address. We need the protocol. So what transport service does an application need? First is data integrity.
+
+179
+00:34:44,244 --> 00:34:48,024
+İntegrity of the data must be unchanged.
+
+180
+00:34:48,564 --> 00:34:53,044
+So some applications, such as file transfer, web transaction,
+
+181
+00:34:53,644 --> 00:34:58,704
+requires 100% reliable data transfer.
+
+182
+00:34:58,704 --> 00:35:06,604
+But some applications, such as audio or video, may tolerate some package loss.
+
+183
+00:35:07,704 --> 00:35:09,704
+So it depends on...
+
+184
+00:35:09,936 --> 00:35:33,936
+The need. So data integrity is one need. Some protocol or some application accept some certain amount of loss, some application cannot afford. Another one is timing. Some application...
+
+185
+00:35:35,092 --> 00:35:39,092
+Bu konuda, bilgi verilir,
+
+186
+00:35:39,092 --> 00:35:43,092
+ama gerçekleştirme yapabilirsiniz,
+
+187
+00:35:43,092 --> 00:35:47,092
+bu konuda dağılıklarımızın
+
+188
+00:35:47,092 --> 00:35:49,092
+ile ilgili.
+
+189
+00:35:49,092 --> 00:35:51,092
+Bu konuda, telefon,
+
+190
+00:35:51,092 --> 00:35:53,092
+ve oyunlarla ilgili
+
+191
+00:35:53,092 --> 00:35:57,092
+daha fazla kullanılabilir.
+
+192
+00:35:57,331 --> 00:36:03,032
+But some application may accept.
+
+193
+00:36:03,032 --> 00:36:06,631
+Throughput is another need.
+
+194
+00:36:06,631 --> 00:36:14,631
+Some applications such as multimedia require minimum amount of throughput to be effective.
+
+195
+00:36:14,631 --> 00:36:16,131
+Okay?
+
+196
+00:36:16,271 --> 00:36:41,228
+Some applications we call elastic applications may use of whatever throughput they may get, such as email or file transfer. We can be patient to have our file. And another read is security. Security is not the subject of
+
+197
+00:36:41,396 --> 00:36:43,876
+Computer Networking Technology
+
+198
+00:36:43,876 --> 00:36:48,216
+It is the subject of next year's lecture
+
+199
+00:36:48,216 --> 00:36:50,615
+Which is the Computer and Network Security
+
+200
+00:36:50,615 --> 00:36:53,016
+But this is another need
+
+201
+00:36:53,016 --> 00:36:57,196
+Because there are many many applications
+
+202
+00:36:57,196 --> 00:37:06,876
+Those are sending and receiving some confidential data
+
+203
+00:37:08,340 --> 00:37:13,980
+Security is another need for our application.
+
+204
+00:37:13,980 --> 00:37:17,700
+Let's have a look at this table for the moment.
+
+205
+00:37:18,867 --> 00:37:34,667
+On the left side, we have applications such as file transfer, download, upload, web documents, real-time video, audio, streaming video, audio, interactive games, or text messaging.
+
+206
+00:37:34,667 --> 00:37:45,867
+And these are the need as raw data loss, throughput, time sensitivity. As you can see here, file transfer
+
+207
+00:38:14,164 --> 00:38:37,764
+But real-time video, audio, or streaming video audio, it may tolerate some certain amount of loss, such as, and it requires minimum amount of throughput. In audio, the minimum amount of throughput must be...
+
+208
+00:38:38,228 --> 00:38:41,988
+5 kilobit per second up to 1 megabit per second.
+
+209
+00:38:41,988 --> 00:38:51,188
+It depends on the quality of the voice, CD quality or audio quality or any.
+
+210
+00:38:51,988 --> 00:38:59,827
+And video again, 10 kilobit per second up to 5 megabit per second.
+
+211
+00:39:00,068 --> 00:39:04,788
+Again, this is the throughput required according to the quality of the picture.
+
+212
+00:39:05,396 --> 00:39:14,176
+Again, it is time sensitive and we can tolerate only 10 millisecond of delay.
+
+213
+00:39:15,256 --> 00:39:25,756
+And again, gaming, it may tolerate some loss, but it may require some certain amount of throughput.
+
+214
+00:39:26,396 --> 00:39:31,756
+And text messaging, again, no loss. It is elastic and it is...
+
+215
+00:39:32,788 --> 00:40:00,000
+Time sensitivity depends on the importance of the text message. Sometimes it may be too important because if you are using text message as command, it is time sensitive. Or if you use text message for giving information to others, it may tolerate. So in that case, there is no time sensitivity.
+
+216
+00:40:00,000 --> 00:40:24,012
+Xtivity in text messaging. As I said, text messaging, the time sensitivity, it depends on which type of application you are using. Okay. Let's continue. As I said in the previous slides, who asked some questions?
+
+217
+00:40:27,956 --> 00:40:54,796
+I'm going to answer your questions at the end of just before the break. Okay. As I said, application level application is given service by transport layer. And there are two types of service in transport layer, TCP service, UDP service. In TCP service,
+
+218
+00:40:54,996 --> 00:41:02,496
+TCP gives reliable transport between sending and receiving process.
+
+219
+00:41:04,695 --> 00:41:09,195
+So, since it is reliable, it must have flow control.
+
+220
+00:41:09,195 --> 00:41:13,195
+So sender won't overwhelm receiver.
+
+221
+00:41:13,996 --> 00:41:15,596
+And again,
+
+222
+00:41:15,795 --> 00:41:39,395
+It must have congestion control too, so throttle sender when network overload and but TCP is reliable but it does not provide any timing, minimum throughput, guarantee or security. Okay? It is connection oriented.
+
+223
+00:41:39,472 --> 00:41:53,672
+Before sending or receiving any message, you must send, you must set the connection first and exchange data and close the connection.
+
+224
+00:41:56,072 --> 00:42:03,872
+In UDP service, it is unreliable data transfer between sending and receiving process.
+
+225
+00:42:03,936 --> 00:42:27,936
+Again, it does not provide reliability, flow control, congestion control, timing, throughput, whatever. There is nothing. So this is best efforts service. It sends and it prays to receive. Okay? But if we have a look here...
+
+226
+00:42:28,115 --> 00:42:43,315
+So, since UDP is unreliable, TCP is reliable, so why and how UDP is still using? Okay? This is, we are going to give the answer.
+
+227
+00:42:48,724 --> 00:43:00,724
+Let's combine the protocols, the applications, such as file transfer, download.
+
+228
+00:43:00,724 --> 00:43:09,724
+This application, it requires the reliable file transfer, so there must be no loss of data.
+
+229
+00:43:09,724 --> 00:43:14,724
+So TCP protocol is used. And this is open protocol.
+
+230
+00:43:15,347 --> 00:43:39,148
+The application layer protocol based on TCP is FTP. It is open protocol and the RFC document of FTP is RFC 959. SMTP, again, it requires reliable data transfer. It is based on TCP and SMTP is also...
+
+231
+00:43:39,443 --> 00:44:04,235
+Open protocol and RFC, it's defined RFC 5321. Web document, again, based on TCP, HTTP 1.1. And internet, telephony, SIP, RTP or some other proprietary protocols, both
+
+232
+00:44:04,244 --> 00:44:28,684
+based on TCP or UDP. Audio or video streaming, HTTP- based on TCP, Interactive Games, WoW, FPS, FPS is prior portory protocol, again based on UDP or FTP. So at the beginning,
+
+233
+00:44:29,780 --> 00:44:34,539
+The TCP and UDP are text-based protocol.
+
+234
+00:44:34,539 --> 00:44:42,619
+And there is, at the beginning, there is no encryption in TCP and UDP.
+
+235
+00:44:42,619 --> 00:44:49,940
+It is clear text password sent into circuit and traverse internet in clear text.
+
+236
+00:44:49,940 --> 00:44:56,059
+So, how we can add security on...
+
+237
+00:44:56,851 --> 00:45:24,291
+TCP and UTP. It is common, it is open protocol, there is no security, everything sent and received in clear text. So how we can build security on top of it? It is easy. What we can do? We can create a thin layer between application layer and transport layer, such as TLS.
+
+238
+00:45:24,480 --> 00:45:39,480
+TRANSPORT LAYER SECURITY. That is application layer protocol based on either TCP and UDP, but it provides security on the applications.
+
+239
+00:45:45,748 --> 00:45:59,988
+On TCP connections and it gives data integrity and endpoint authentication. And TLS implemented in application layer.
+
+240
+00:46:00,467 --> 00:46:34,144
+ve
+
+241
+00:46:26,132 --> 00:46:32,771
+TLS sockets apiece, again encrypted in TLS before sending through socket.
+
+242
+00:46:32,771 --> 00:46:33,652
+OK.
+
+243
+00:46:35,492 --> 00:46:36,532
+All right, guys.
+
+244
+00:46:39,172 --> 00:46:43,652
+Let me answer your questions here.
+
+245
+00:46:47,059 --> 00:46:58,579
+Arkadaşlar, LAB'larla alakalı hususları Google Classroom'a dahil olduysanız, orada asistan arkadaşlar size duyuracaklar.
+
+246
+00:46:58,579 --> 00:47:08,939
+Grupları oluşturacaklar. Size mail atmıştım hatırlarsanız OBS sistemini kullanarak. OBS sistemine gireceksiniz.
+
+247
+00:47:08,939 --> 00:47:13,579
+Tamam. Orada...
+
+248
+00:47:14,356 --> 00:47:37,856
+grupları, ikişer kişilik olacak deney gruplarımız. İkişer kişilik olarak gruplarınızı oluşturacaksınız. O gruplar oluştuktan sonra da bizler deney fölilerini sizlere ulaştıracağız ve ne zaman uygulamalarınızı asistanlara hangi linkler üzerinden online sunacaklarınız hepsi
+
+249
+00:47:37,887 --> 00:48:00,875
+Google Classroom'da arkadaşlar tarafından organize edilecek. Tamam? Şu ana kadar 210 kişi ders alıyor ama sadece 150 kişi başvurmuş. 150 kişi, demek ki yaklaşık 60-70 kişi başvurmamış. Biz bunları...
+
+250
+00:48:01,300 --> 00:48:12,300
+Random olarak grupları oluşturacağız. Daha sonra ben bu grupta bu arkadaşı bulamıyorum, edemiyorum demeyin. O yüzden girin Google Classroom'a ve oluşturun.
+
+251
+00:48:13,300 --> 00:48:26,300
+Üç tane uygulamayı online yapacaksınız. Bundan puan alacaksınız. Artı bir tane de proje uygulaması yapıp puan alacaksınız. Onlardan aldığınız puanların ortalaması
+
+252
+00:48:26,416 --> 00:48:33,416
+Ağırlıklarına göre asistanlarınızı duyuracak. Yüzde otuz olarak yıl sonu hesabına eklenecek.
+
+253
+00:48:33,416 --> 00:48:44,416
+Uygulamaları size öngörülen saatte online olarak yapmazsanız o uygulamadan sıfır alacaksınız.
+
+254
+00:48:44,416 --> 00:48:46,220
+Ve
+
+255
+00:48:47,699 --> 00:49:04,699
+Sıfır olarak değerlendireceği için, çünkü üç tane bir de proje dört yüzde yirmi beş puanınız düşmüş olacak. O yüzden lütfen arkadaşlar dikkat edelim. Başka sorusu olan var mı arkadaşlar? Bir kişi lapla ilgili sormuş ama başka sorunuz var mı?
+
+256
+00:49:08,467 --> 00:49:11,787
+Açıp bırakıp gittiniz mi, yine kayboldunuz millet.
+
+257
+00:49:11,787 --> 00:49:14,107
+Yok hocam, sorumuz yok.
+
+258
+00:49:14,107 --> 00:49:20,747
+Tamam, hadi ara verelim, bir çay kahve arası. Saat başında tekrar başlarız. Görüşmek üzere.
+
+259
+01:13:51,060 --> 01:13:54,780
+OK, everybody. Let's continue to our lecture.
+
+260
+01:13:56,540 --> 01:14:00,280
+So this is, as I said, application layer.
+
+261
+01:14:00,280 --> 01:14:03,680
+There are many types of applications, we can think,
+
+262
+01:14:03,680 --> 01:14:10,668
+and all applications are serviced by transport layer protocols and web.
+
+263
+01:14:31,488 --> 01:14:41,488
+I have picked the commonly used application, which is web, and HTTP is web protocol, application layer protocol.
+
+264
+01:14:41,488 --> 01:14:49,488
+So, for a quick review, on the web, web consists of objects.
+
+265
+01:14:59,220 --> 01:15:21,720
+web server. So, it can be stored on same web server or different web servers. So, if you view the web page, these objects can be picked from different servers. So, these objects can be HTML file.
+
+266
+01:15:22,323 --> 01:15:44,523
+JPEG image, Java Upland, audio file, video file, whatever. So our web page consists of base HTML file. So this file includes several reference objects and each object has address.
+
+267
+01:15:44,819 --> 01:15:50,940
+So, each object is addressable by URL.
+
+268
+01:15:50,940 --> 01:15:56,500
+For example, let's have a look at this week's presentation address.
+
+269
+01:16:02,379 --> 01:16:10,260
+And Lecture Notes, ComNet, second application layer, this is the path name.
+
+270
+01:16:10,431 --> 01:16:17,752
+So, the address contains the hostname part plus pathname part.
+
+271
+01:16:17,752 --> 01:16:27,631
+So, as I said, web page consists of objects. So, there are many types of objects.
+
+272
+01:16:27,631 --> 01:16:28,631
+And...
+
+273
+01:16:29,747 --> 01:16:42,467
+VEB is based on HTTP protocol. HTTP is basically Hypertext Transfer Protocol. That is Application Layer Protocol.
+
+274
+01:16:42,467 --> 01:16:51,827
+Based on Transport Layer Protocol is TCP is the Transport Layer Protocol and VEB's Application Layer Protocol.
+
+275
+01:16:57,551 --> 01:17:04,832
+client model paradigm. And client, in the client side, browser.
+
+276
+01:17:06,832 --> 01:17:19,152
+Its browser can be Firefox, Chrome, Safari, whatever. Request service using HTTP protocol. And
+
+277
+01:17:21,395 --> 01:17:48,195
+Display Web Object. Okay? In the client side, browser, such as on the host, the desktop, request HTTP page from Apache Web Server, and Apache Web Server responds to browser. In the server, web server sends...
+
+278
+01:17:48,595 --> 01:17:56,095
+using again HTTP protocol, objects in response to the request.
+
+279
+01:17:56,095 --> 01:18:10,095
+In Firefox browser, HTTP request is sent and in that request, hostname is there plus the path of the object and server response.
+
+280
+01:18:10,095 --> 01:18:16,095
+Then receiving response is displayed on the browser.
+
+281
+01:18:16,340 --> 01:18:31,039
+In Safari on your iPhone, HTTP request based on HTTP protocol sent to the server and response is displayed on iPhone screen.
+
+282
+01:18:32,640 --> 01:18:44,239
+So, as I said, HTTP uses TCP protocol because it requires reliable file transfer.
+
+283
+01:18:44,336 --> 01:19:10,923
+It is stateless. Stateless means there is no previous information stored. And client initiates TCP connection through port 80. So at the server side, HTTP service process waits for
+
+284
+01:19:12,115 --> 01:19:38,988
+messages. Server accepts TCP connection from client. HTTP messages, those are application layer protocol messages, exchanged between browser, that is the HTTP client, and patch server, that is the HTTP server. Then, if object is received,
+
+285
+01:19:39,060 --> 01:20:03,052
+Then Open TCP connection is closed. As I said, it is stateless protocol, which means server maintains no information about past client request. So if you want to maintain state, this is...
+
+286
+01:20:03,155 --> 01:20:27,155
+Kompleks process. So past history, such as state, must be maintained or may be required to be maintained. So if server or client crashes, their weave of states may be inconsistent and must be reconciled. Okay.
+
+287
+01:20:27,539 --> 01:20:31,539
+There are two types of HTTP connection.
+
+288
+01:20:31,539 --> 01:20:40,039
+First one is non-persistent HTTP connection and persistent HTTP connection.
+
+289
+01:20:40,039 --> 01:20:45,539
+In non-persistent HTTP connection, as I said, HTTP is based on TCP.
+
+290
+01:20:45,539 --> 01:20:51,539
+TCP connection is opened and request is sent and respond is received.
+
+291
+01:20:51,539 --> 01:20:54,539
+Then this connection is closed.
+
+292
+01:20:55,539 --> 01:21:14,139
+If you want to download multiple object from the server, multiple TCP connection must be opened, requested, received and closed in non-persistent HTTP protocol.
+
+293
+01:21:14,139 --> 01:21:16,139
+Another type...
+
+294
+01:21:16,692 --> 01:21:38,692
+Persistent HTTP, in this case, TCP connection is opened to the server, and multiple objects can be sent or received over single TCP connection between client and server. At the end, TCP connection is closed.
+
+295
+01:21:42,963 --> 01:22:04,492
+OK? Let's have a look at this example. Suppose we have URL address, some school edu, some department, then the home.index. So first part is the host and the second part is the path of the object. In non-persistent example,
+
+296
+01:22:05,268 --> 01:22:13,667
+In A, first A, HTTP client initiates TCP connection to HTTP server.
+
+297
+01:22:13,667 --> 01:22:20,968
+That is, the server is, the address of the server is some school dot other.
+
+298
+01:22:20,968 --> 01:22:25,167
+Then, server response.
+
+299
+01:22:25,167 --> 01:22:28,167
+Okay?
+
+300
+01:22:28,167 --> 01:22:30,667
+Then...
+
+301
+01:22:32,020 --> 01:22:59,056
+OpenConnection, then Connection is established, then in second, the HTTP client sends HTTP request containing the URL, that is the address of the path of the image, then HTTP sends the request. As I said in this example, suppose in that web page,
+
+302
+01:22:59,055 --> 01:23:04,376
+10 JPEG images must be received.
+
+303
+01:23:04,376 --> 01:23:09,775
+After the connection, HTTP closed.
+
+304
+01:23:09,775 --> 01:23:17,135
+As I said in our example, 5 images must be received.
+
+305
+01:23:17,135 --> 01:23:21,055
+So, 5, 10 images must be received.
+
+306
+01:23:21,055 --> 01:23:23,055
+Then 10 times...
+
+307
+01:23:23,764 --> 01:23:36,244
+TCP connection must be opened and one image is received, request for one image, then received, then closed.
+
+308
+01:23:37,524 --> 01:23:38,244
+Okay?
+
+309
+01:23:38,387 --> 01:23:51,787
+So, step 1 to 5 must be repeated each of 10 JPEG objects if we are using non-persistent HTTP connection.
+
+310
+01:23:54,100 --> 01:24:16,600
+So in this case, RTT is round trip time. It is the send the request and receive the reply. Okay. It is called RTT. That is round trip time. So one RTT for connection and one RTT for receiving.
+
+311
+01:24:17,716 --> 01:24:38,115
+So, in non-persistent HTTP response time, 2RTT plus file transfer time, blue here, that is the time to transfer the file. But this area depends on the speed of the length, okay?
+
+312
+01:24:40,515 --> 01:24:41,503
+So...
+
+313
+01:24:41,503 --> 01:24:55,904
+In non-persistent HTTP requires two RTTs for each object, plus operating system overheads for each TCP connection.
+
+314
+01:24:55,904 --> 01:25:09,103
+And browsers open multiple parallel TCP connection to fetch reference object in parallel to speed up in HTTP version 1.1.
+
+315
+01:25:10,420 --> 01:25:30,700
+In persistent HTTP connection in 1.1, server leaves connection open after sending response and client requests subsequent HTTP messages between some client and server.
+
+316
+01:25:31,028 --> 01:25:59,028
+Bu, bu
+
+317
+01:25:59,028 --> 01:26:00,028
+is saved.
+
+318
+01:26:02,927 --> 01:26:08,488
+So this time, let's discuss request HTTP messages.
+
+319
+01:26:08,488 --> 01:26:16,308
+There are two type of HTTP message, request message and response message.
+
+320
+01:26:16,308 --> 01:26:24,028
+In HTTP request message, that is human readable, that is plain text formatted by ASCII.
+
+321
+01:26:25,716 --> 01:26:43,716
+As you can see here, in the first line is the message type is the get request message type. Here is the object, html.index.html. This is the...
+
+322
+01:26:44,500 --> 01:27:11,692
+Bu, bu
+
+323
+01:27:11,923 --> 01:27:37,203
+Text language, encoding type, and connection. Keep Alive means the server keeps the connection open. And this is the end. As you can see, it is very simple messaging. All right? It is human readable and it contains all related information.
+
+324
+01:27:38,163 --> 01:28:01,043
+In general request message, as you can see, the method, in that case, get source or whatever, and source port, that is the URL address of the object, and this is the version of the protocol and where users can align it, and this is...
+
+325
+01:28:01,072 --> 01:28:10,871
+...file name, values, hostname, text, language, formatting, and connection type. And these are the values.
+
+326
+01:28:10,871 --> 01:28:28,072
+In request message, in some method, we can send some data in the request message. Such as in the post method, we send some data to post to insert into the...
+
+327
+01:28:28,212 --> 01:28:30,212
+Evet.
+
+328
+01:28:30,212 --> 01:28:34,212
+Bir sonraki diğer tarifte de request messages.
+
+329
+01:28:53,652 --> 01:29:13,152
+In that case, web page often include some form, according to form, and field, to field, and user input sent from client to server in the body of HTTP request message, post request message.
+
+330
+01:29:15,539 --> 01:29:35,840
+Method is head method. In head, request headers only that will be returned if specified URL were requested with an HTTP GET method. And put method, similar to POS, new uploads.
+
+331
+01:29:36,243 --> 01:29:41,003
+New files or new objects upload to the server.
+
+332
+01:29:41,003 --> 01:29:49,403
+In that case, the object in the server replaced by new incoming objects.
+
+333
+01:29:49,403 --> 01:29:50,403
+Okay?
+
+334
+01:29:50,403 --> 01:29:53,884
+So, these object is sent in the...
+
+335
+01:29:59,412 --> 01:30:04,612
+So, let's have a look. This time, second type of response.
+
+336
+01:30:08,340 --> 01:30:15,340
+ve
+
+337
+01:30:34,644 --> 01:30:59,083
+...
+
+338
+01:31:00,688 --> 01:31:02,688
+ve
+
+339
+01:31:00,627 --> 01:31:21,387
+Here, in the request, in the response message, there are status codes. You are already familiar, 200 here. There are many type of request status codes, and you can have a list in RFC-related document.
+
+340
+01:31:21,387 --> 01:31:27,387
+Statut codes appear in the first line of the response message.
+
+341
+01:31:27,507 --> 01:31:48,507
+200 OK, which means request succeeded, requested object later sent later in this message. 301 moved permanently in this status quo, requested object moved from that location.
+
+342
+01:31:49,587 --> 01:31:56,587
+ve
+
+343
+01:31:56,587 --> 01:32:12,587
+400, bad request, request message not understood by the server. 404, you may face many types. Request document not found in the server.
+
+344
+01:32:18,100 --> 01:32:19,300
+545.
+
+345
+01:32:26,195 --> 01:32:53,876
+HTTP version, not. As I said, HTTP protocol is stateless protocol. Stateless protocol means we do not keep any previous state of information. But if we want to keep the state, there are two methods. One is conditional get or cookies.
+
+346
+01:32:54,131 --> 01:33:04,131
+In cookies, web server sites and client browser use cookies to maintain some state between transaction.
+
+347
+01:33:04,131 --> 01:33:13,131
+There are four components of cookies. First one is cookie header in the HTTP response message.
+
+348
+01:33:13,631 --> 01:33:19,131
+KUKI header line, again, this is in next HTTP request message.
+
+349
+01:33:19,131 --> 01:33:28,631
+KUKI file kept on user's host, making by user's browser, and backend database at website.
+
+350
+01:33:29,747 --> 01:33:55,275
+Let's have a look example. Let's say Susan uses browsers on the laptop, visits some specified e-commerce website, such as Trendyol, IpsiBrother, Amazon, whatever, the first time. She never visited that page before. So when initial HTTP request arrives at site,
+
+351
+01:33:55,539 --> 01:34:06,979
+Server, site creates a cookie ID, okay? And entry in backend database.
+
+352
+01:34:07,155 --> 01:34:33,291
+of the server for that cookie ID. And in the subsequent message, HTTP request from Susan to this site will contain cookie value, allowing site to identify Susan. And in the next visit, in that case, the browser send cookie ID to the server, then server
+
+353
+01:34:33,427 --> 01:34:39,188
+ve check from the database and get some previous information.
+
+354
+01:34:39,188 --> 01:34:48,067
+So let's have a look here. We have client, server, and backend database to keep ID of the cookies.
+
+355
+01:34:48,067 --> 01:34:58,987
+As you can see, our client Suzy visited eBuy before and it contains cookie ID of eBuy.
+
+356
+01:34:59,572 --> 01:35:26,572
+7.9.34, let's say this is the example of cookie ID. And now she is visiting Amazon the first time. Usual HTTP request message to server and server check. This is the first time she visited and set cookie ID. Let's say 1678 is the cookie ID of that.
+
+357
+01:35:27,507 --> 01:35:50,007
+user, SUSAN, and register, put into entry to the backend database. And reply to SUSAN, including cookie address, cookie, that is the set cookie 16, 17. In this case, the client side.
+
+358
+01:35:52,020 --> 01:35:56,020
+Amazon ID is stored, as you can see.
+
+359
+01:35:57,020 --> 01:36:13,020
+And in the next request, in this time, Susan send the cookie ID to the server, and server checks that cookie ID and usual response messages.
+
+360
+01:36:13,020 --> 01:36:19,020
+And one week later, once she visited, then...
+
+361
+01:36:19,199 --> 01:36:25,319
+with the cookie ID and usual HTTP response message.
+
+362
+01:36:25,319 --> 01:36:34,639
+In the cookies, when cookies, what purposes that cookie can be used?
+
+363
+01:36:34,639 --> 01:36:38,920
+It can be used for authorization.
+
+364
+01:36:39,859 --> 01:37:07,567
+OK? Or shopping carts, basket, previous items in the basket. Recommendations, the setup of the webpage, and user session stays such as web email or other, you might think. So, cooking and privacy. Cookies.
+
+365
+01:37:07,568 --> 01:37:14,967
+permit sites to learn about the client on their site.
+
+366
+01:37:14,967 --> 01:37:22,967
+And in some third-party persistent cookies, that is called tracking cookies.
+
+367
+01:37:28,020 --> 01:37:33,620
+allow cut across multiple website cookies and to learn about you.
+
+368
+01:37:34,820 --> 01:37:52,420
+And in the challenges, protocols and points maintain state at sender and receiver over multiple transactions and HTTP message in this case carry the state, although it is stateless.
+
+369
+01:37:53,820 --> 01:37:54,620
+So...
+
+370
+01:37:55,123 --> 01:37:56,763
+VLAN KOKI now.
+
+371
+01:37:58,763 --> 01:38:04,203
+And it gives some sort of state, you want state this HTTP protocol.
+
+372
+01:38:04,203 --> 01:38:07,724
+In this case, let's have a look at web cache.
+
+373
+01:38:09,404 --> 01:38:20,404
+There are many servers and many clients and the link between the local...
+
+374
+01:38:21,539 --> 01:38:23,539
+...
+
+375
+01:38:20,479 --> 01:38:26,039
+...açınca internet ve bu kapasitiyonu...
+
+376
+01:38:26,039 --> 01:38:31,839
+...bir kapasitiyonu...
+
+377
+01:38:31,839 --> 01:38:32,439
+...bottleneck.
+
+378
+01:38:32,859 --> 01:38:35,079
+Ve aynı site...
+
+379
+01:38:35,079 --> 01:38:40,199
+...manyolca birçok ile...
+
+380
+01:38:40,199 --> 01:38:42,199
+...birçok ile...
+
+381
+01:38:42,199 --> 01:38:44,119
+...bottleneck.
+
+382
+01:38:44,916 --> 01:39:09,868
+Proxy, two method, conditional get or proxies. So our goal of using proxy servers satisfy client requests without involving original server and user configures browser to point to a web cache and browser send a request.
+
+383
+01:39:10,003 --> 01:39:12,003
+Web Proxy
+
+384
+01:39:12,003 --> 01:39:16,003
+ve bu site'a aldık bir süreçten önce
+
+385
+01:39:34,868 --> 01:39:40,427
+ve bu durumda, bu soru var, ve bu soru var,
+
+386
+01:39:40,427 --> 01:39:44,188
+ve bu soru var,
+
+387
+01:39:44,188 --> 01:39:45,828
+bu soru var,
+
+388
+01:39:45,828 --> 01:39:49,708
+bu soru var.
+
+389
+01:39:49,708 --> 01:39:52,347
+Bu soru var,
+
+390
+01:39:52,347 --> 01:40:00,000
+ve bu soru var,
+
+391
+01:40:00,000 --> 01:40:26,543
+as if client to request the original website from the server. So how it works? If the object is cached, then cache returns object to client. If cache, if object is not in the cache, first the cache request from the original server store and
+
+392
+01:40:26,543 --> 01:40:48,268
+Bu nedenle, webcache'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching'in caching
+
+393
+01:40:48,435 --> 01:41:06,443
+İstediğiniz için bir üniversite, bir üniversite, bir üniversite, bir üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite üniversite ün
+
+394
+01:41:06,804 --> 01:41:20,083
+ve internet is dense with cash
+
+395
+01:41:20,083 --> 01:41:30,604
+let's have a look our scenario here all right we have institutional network in local area
+
+396
+01:41:30,604 --> 01:41:33,864
+it is one gigabit per second lan
+
+397
+01:41:34,260 --> 01:41:42,120
+ve internet, 1.54 Mbps ve
+
+398
+01:41:42,120 --> 01:41:46,620
+ve many original servers. RTT,
+
+399
+01:41:46,620 --> 01:41:51,060
+from institutional router to the server, here,
+
+400
+01:41:51,060 --> 01:41:54,060
+is 2 s.
+
+401
+01:41:54,323 --> 01:42:11,643
+Let's say our web object is 100 kilobit and average request rate from browser to original server 100 kilobit per second, speed is 1.54 megabit per second.
+
+402
+01:42:11,643 --> 01:42:16,763
+In this case, it takes 15 bit per second.
+
+403
+01:42:17,108 --> 01:42:23,307
+Average rate to the browser is 154 Mbps.
+
+404
+01:42:24,307 --> 01:42:33,587
+So let's say in this case, the LAN utilization is too low, 0.0015.
+
+405
+01:42:36,756 --> 01:42:58,476
+Akseslink utilization is 97. So in this case, 97% of link is occupied. So end-to-end delay is internet delay, which is two seconds, plus Akseslink delay, the capacity is...
+
+406
+01:43:00,500 --> 01:43:26,379
+1.54 megabit per second, and we have 100 kilobits, so it requires minutes to download, plus LAN delay, LAN is 1 gigabit per second, so it is 1 microsecond. As you can see, the bottleneck is in the middle, all right, to increase.
+
+407
+01:43:28,979 --> 01:43:31,539
+Bu, end-to-end,
+
+408
+01:43:31,539 --> 01:43:33,579
+bu, end-to-end delay.
+
+409
+01:43:33,579 --> 01:43:35,579
+Bu, ne yapmalı?
+
+410
+01:43:35,579 --> 01:43:38,219
+Bu, birçok seçim var,
+
+411
+01:43:38,219 --> 01:43:42,019
+çünkü,
+
+412
+01:43:42,019 --> 01:43:44,419
+bu,
+
+413
+01:43:44,419 --> 01:43:46,339
+çünkü,
+
+414
+01:43:46,339 --> 01:43:47,179
+bu,
+
+415
+01:43:47,179 --> 01:43:48,899
+97%
+
+416
+01:43:48,899 --> 01:43:50,579
+ve büyük birçok,
+
+417
+01:43:50,579 --> 01:43:51,579
+birçok.
+
+418
+01:43:51,579 --> 01:43:52,299
+Bu,
+
+419
+01:43:52,299 --> 01:43:53,739
+bu,
+
+420
+01:43:56,467 --> 01:44:10,667
+We pay lots of money to increase our speed 1.54 to 154 megabit per second 100 times.
+
+421
+01:44:10,667 --> 01:44:18,467
+In this case, utilization is now 0.0097.
+
+422
+01:44:18,467 --> 01:44:21,467
+And in this case...
+
+423
+01:44:22,868 --> 01:44:26,467
+It minutes down to millisecond.
+
+424
+01:44:26,467 --> 01:44:34,668
+So two second plus milliseconds for the downloading the object plus microsecond for local delay.
+
+425
+01:44:35,868 --> 01:44:44,467
+And we solved the problem, but we paid a lot of money. This is expensive.
+
+426
+01:44:44,467 --> 01:44:49,268
+What we can do to increase the...
+
+427
+01:44:49,908 --> 01:44:53,087
+Utilization plus decrease the delay.
+
+428
+01:44:53,547 --> 01:44:57,347
+We can put local web cache here, right?
+
+429
+01:45:00,851 --> 01:45:27,167
+Because to buy a server is cheaper than increasing the capacity of the link. Let's compute utilization. Suppose 40% of the requests can be found in the cache and 60% must be requested from the original server. In this case, the
+
+430
+01:45:27,167 --> 01:45:46,447
+60% is downloaded from the 1.50 Mbps, in this time 0.9 Mbps, and utilization is down from 97 to 58, if the cache is 40 only.
+
+431
+01:45:46,447 --> 01:45:53,648
+In this case, the average utilization is around 1.2 seconds.
+
+432
+01:45:53,908 --> 01:45:58,728
+All right, it is even cheaper to buy.
+
+433
+01:45:59,368 --> 01:46:02,807
+And what we can do later,
+
+434
+01:46:04,188 --> 01:46:09,788
+more pages are visited and stored in the disk.
+
+435
+01:46:09,788 --> 01:46:16,828
+And if the cache increases and the utilization also increase.
+
+436
+01:46:18,588 --> 01:46:19,788
+Another type of...
+
+437
+01:46:21,587 --> 01:46:41,587
+...
+
+438
+01:46:40,340 --> 01:46:47,039
+In this case, no object transmission delay and lower link utilization.
+
+439
+01:46:47,039 --> 01:47:06,039
+In that case, cache specified the cached copy in the HTTP request using this line, if modified since and the date, date is the cached version of the object and Serban's response.
+
+440
+01:47:06,515 --> 01:47:34,411
+using HTTP 1.304 not modified status code message. If it's modified, then send the object to end. In this case, the cache is updated. Let's say here, the client request using if modified since the date, object not modified before that date, and if
+
+441
+01:47:35,283 --> 01:47:44,083
+This response is received, which means the server version of the object and the cache version of the object is identical.
+
+442
+01:47:44,083 --> 01:47:49,283
+And there's no transmission at .
+
+443
+01:47:49,283 --> 01:48:02,283
+And if it is modified, it responds HTTP 200 OK and send the object and the cache updates the object.
+
+444
+01:48:03,412 --> 01:48:26,284
+OK. So in HTTP 1.1, there are some weaknesses. In HTTP 2 version, it decrease in 1.1, it decrease delay with multiple object requests because
+
+445
+01:48:26,771 --> 01:48:53,931
+1.1 introduced multiple pipeline gets over single TCP connection. So server response in order, first come first serve in HTTP 1.1 protocol. But this FCS first come first serve scheduling
+
+446
+01:48:54,100 --> 01:49:18,220
+may create whole effect head of line blocking if we want to transfer larger object in front of smaller object. To improve this file transaction and improve efficiency, HTTP 2 version is used. In this case,
+
+447
+01:49:19,347 --> 01:49:47,347
+In HTTP2, RFC document is 7440 published in 2015, increased flexibility at server in sending object to client. In that matter, status codes mostly similar to HTTP 1.1, but transmission order of request object based on client specified object prior.
+
+448
+01:49:47,347 --> 01:50:14,479
+It is not necessary in first-come, first-served scheduling. And push unrequested object to the client. And in HTTP2, divides object into frames for larger object to overcome head-of-line block. Let's have a look here. What is hole blocking? Suppose...
+
+449
+01:50:14,479 --> 01:50:21,559
+CLINTE requested OBJ1, OBJ2, OBJ3, OBJ4 in order.
+
+450
+01:50:21,559 --> 01:50:31,799
+And as you can see, OBJ1 is too large, even larger than the total of remaining three objects.
+
+451
+01:50:31,799 --> 01:50:40,879
+In this case, larger object must be sent than Q2, Q3, Q4.
+
+452
+01:50:40,944 --> 01:51:04,543
+in HTTP2. So it takes too much time for object 4. But in HTTP2, it is divided into frames, as you can see, and sent frame by frame. First frame.
+
+453
+01:51:04,916 --> 01:51:12,316
+Q2 is only one frame, Q3 is two frame, divided into two, and Q4 divided into four.
+
+454
+01:51:12,316 --> 01:51:18,516
+So in first part, four frames for each object is sent.
+
+455
+01:51:18,516 --> 01:51:26,716
+In the second part, another, but as you can see, Q2 is only one frame, so it's received.
+
+456
+01:51:26,716 --> 01:51:29,916
+Q2, three is two frames.
+
+457
+01:51:30,916 --> 01:51:31,851
+And...
+
+458
+01:51:31,923 --> 01:51:57,523
+As you can see, the remaining Q1. As you can see, there is not much changes for Q1, but Q2, Q3, and Q4 received too early in HTTP2 because we, in HTTP2, the larger object is divided into smaller frames.
+
+459
+01:51:58,676 --> 01:52:03,275
+And Q2, Q3, Q4 delivered quickly.
+
+460
+01:52:03,275 --> 01:52:07,876
+And Q4, Q1 slightly delayed.
+
+461
+01:52:07,876 --> 01:52:17,876
+And in HTTP2, HTTP3, the goal decreased delay in multiple object HTTP requests.
+
+462
+01:52:17,876 --> 01:52:24,876
+And HTTP2 over single TCP connection divided into...
+
+463
+01:52:25,896 --> 01:52:33,896
+...
+
+464
+01:52:24,948 --> 01:52:27,868
+Fremes,
+
+465
+01:52:27,868 --> 01:52:31,208
+but there is no, still there is no security.
+
+466
+01:52:31,847 --> 01:52:34,468
+Http3 adds security
+
+467
+01:52:34,468 --> 01:52:37,608
+per object and error
+
+468
+01:52:37,608 --> 01:52:40,148
+and congestion control mechanism
+
+469
+01:52:40,148 --> 01:52:42,307
+where over UDP.
+
+470
+01:52:43,315 --> 01:52:53,216
+Previous one based on TCP, HTTP 3 adds reliability, security and congestion control, where over UDP.
+
+471
+01:52:54,416 --> 01:53:10,855
+And more on HTTP 3 in transport layer. Okay guys, this is the end of first part of application layer lecture. Next week, we are going to continue
+
+472
+01:53:10,975 --> 01:53:19,216
+to another commonly used application email and the application layer email protocol SMTP and MyMap.
+
+473
+01:53:19,216 --> 01:53:30,975
+And we are going to continue again next week, DNS, domain name servers, P2P applications and video streaming and content distribution networks.
+
+474
+01:53:30,975 --> 01:53:35,884
+Okay, this is the end of this week's presentation.
+
+475
+01:53:37,460 --> 01:53:54,560
+Evet arkadaşlar, bu haftanın sonu. Sormak istediğiniz bir şeyler var mı? Yazan çete yazan arkadaşınız var mı? Yok. Arkadaşlar tekrar ediyorum, herkes Google Classroom'a üye olsun.
+
+476
+01:53:55,060 --> 01:54:18,060
+Bazı arkadaşlarınız bana mail atıyor, hocam dersin linkini paylaşır mısınız diye. Online'da, derste herhangi bir link yok. Çünkü ben oluşturmuyorum bunu. Uzem oluşturuyor. Dolayısıyla ders gözükmüyor ise uzem.yıldız.edu.tr'ye mail atarsanız, onlar sizi tanımlarlar ve sonraki derslerde...
+
+477
+01:54:18,707 --> 01:54:40,707
+önünüze çıkar diye düşünüyorum. Girmediğiniz dersleri de kayıtlardan izleyebilirsiniz. Hepinize iyi hafta sonları diliyorum. Gelecek hafta aynı saatte görüşmek üzere. Herkese hayırlı cumalar. Hayırlı cumalar. Teşekkürler hocam. İyi günler hocam.

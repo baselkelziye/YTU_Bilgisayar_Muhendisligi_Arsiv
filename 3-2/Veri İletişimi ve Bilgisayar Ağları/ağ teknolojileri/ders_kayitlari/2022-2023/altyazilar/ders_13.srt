@@ -1,0 +1,2163 @@
+1
+00:03:17,587 --> 00:03:26,587
+Günaydın arkadaşlar. Bir üç dört dakika daha bekleyelim. En azından sayımız on kişi olsun. Sonrasında dersimize başlarız.
+
+2
+00:08:06,100 --> 00:08:08,500
+Evet isterseniz başlayalım arkadaşlar.
+
+3
+00:08:08,500 --> 00:08:12,700
+Let's start through our lecture.
+
+4
+00:08:12,700 --> 00:08:15,500
+Let me share the screen first.
+
+5
+00:08:19,124 --> 00:08:39,324
+OK. As you remember, last week we have started to discuss control plane. As you remember, as I mentioned, I have divided our network layer section into two parts. The data plane part we have already discussed.
+
+6
+00:08:43,539 --> 00:09:11,339
+ve ilk hafta başladıkları konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla
+
+7
+00:09:11,668 --> 00:09:34,635
+We have to discuss routing protocol. Routing protocol basically defines the path between source to destination. And there are two main types of routing protocol we are going to talk about. The first one is based on link state.
+
+8
+00:09:39,644 --> 00:09:41,644
+OK.
+
+9
+00:09:41,644 --> 00:09:50,644
+Our aim, basically, from the network, to send our message from source to destination,
+
+10
+00:09:50,644 --> 00:09:52,644
+from one edge to another edge.
+
+11
+00:09:52,644 --> 00:09:59,644
+One edge can be any device from laptops, PCs, other domestic...
+
+12
+00:10:00,000 --> 00:10:19,148
+Avrupa, mobilisiydi, mobilisiydi, mobilisiydi, mobilisiydi,
+
+13
+00:10:21,076 --> 00:10:27,316
+Ökvalentli, routes from sending host to the receiving host.
+
+14
+00:10:27,316 --> 00:10:33,556
+So there are two types of keywords, two keywords I have mentioned.
+
+15
+00:10:33,556 --> 00:10:38,756
+First, what is good and what is path?
+
+16
+00:10:39,716 --> 00:10:45,796
+So let's define the path first. Path, basically the seconds of routers.
+
+17
+00:10:46,580 --> 00:11:11,379
+paket transfer from one individual host to final destination. Okay? We are told in the path, there are many routers. So to find the path, it must be the coordination of, the coordination among routers.
+
+18
+00:11:11,615 --> 00:11:39,216
+Another term is good. So what is good? Is it good? This path is good because it is cheap. This path is good because it is the fastest or least congested. So we have to define the value, the good. So routing protocol is basic, as I said, to find a good path from source to the destination. So...
+
+19
+00:11:39,827 --> 00:11:49,028
+Routing protocol or routing problem is top 10 networking challenge around the world.
+
+20
+00:11:49,028 --> 00:11:57,827
+OK, before we start discussing routing protocol, let's have a look at the terminology.
+
+21
+00:11:57,827 --> 00:12:06,603
+Here is our graph. There are routers named UTZ, as you can see, U, V, W, X, Y, Z.
+
+22
+00:12:06,644 --> 00:12:08,644
+ve bu graph
+
+23
+00:12:08,644 --> 00:12:14,644
+ve rüters
+
+24
+00:12:14,644 --> 00:12:16,644
+ve bu değerlerine
+
+25
+00:12:16,644 --> 00:12:18,644
+bu değerlerine
+
+26
+00:12:18,644 --> 00:12:26,644
+değerlerine
+
+27
+00:12:26,995 --> 00:12:31,596
+or these values set by ISPs.
+
+28
+00:12:31,596 --> 00:12:36,795
+As you can see, the graph consists of the number of nodes
+
+29
+00:12:36,795 --> 00:12:40,995
+and the number of edges, links.
+
+30
+00:12:41,620 --> 00:13:06,019
+As you can see, N is the set of routers, U, V, W, X, Y, Z, as you can see in this graph. E is the set of links, such as the link between UTV, UTX, as you can see, VTX, VTW, X2W, X2Y.
+
+31
+00:13:07,059 --> 00:13:25,259
+W to Y, W to Z, Y to Z. So these are the set of lengths among individual motors. So there are costs. C sub Eb is the cost from E.
+
+32
+00:13:25,440 --> 00:13:47,440
+router E to B. For example, see the cost value of W to Z. As you can see, W to Z cost 5. As you can see in the graph. If this cost is infinite, which means there is no direct link. Okay?
+
+33
+00:13:47,635 --> 00:14:13,135
+So this cost defined by network operator or ISP could always be one or inverse related to bandwidth or inverse related to congestion. Okay. Or related to the cost, whatever the cost is defined. And let's have a look.
+
+34
+00:14:13,716 --> 00:14:17,475
+The routing algorithm classification first.
+
+35
+00:14:17,475 --> 00:14:23,676
+There are two main routing algorithm classification.
+
+36
+00:14:23,676 --> 00:14:32,596
+First one is global. Global means all routers have complete topology to the link info.
+
+37
+00:14:32,596 --> 00:14:35,395
+So every router...
+
+38
+00:14:35,860 --> 00:14:48,259
+in the network knows entire topology because the algorithm is global. Link state algorithm is global algorithm. Another one is
+
+39
+00:14:49,107 --> 00:15:00,707
+to be decentralized or distributed. So iterative process of computation, exchange of info between neighbor routers.
+
+40
+00:15:00,707 --> 00:15:15,827
+So routers initially knows link cost to adjacent attached neighbors first, then exchange information among neighbor routers and update
+
+41
+00:15:16,755 --> 00:15:41,323
+It's stable. So example is distance vector algorithm. Distance vector algorithm is decentralized algorithm. Another classification is routing can be static. Static means routers change its value very slowly over time or
+
+42
+00:15:41,331 --> 00:15:45,331
+Dynamic means router değiştirecek.
+
+43
+00:15:45,331 --> 00:15:51,331
+So, periodic updates or in response to link cause changes.
+
+44
+00:15:51,331 --> 00:15:55,331
+So, there are two main classifications.
+
+45
+00:15:55,331 --> 00:16:04,331
+According to the first one is global or decentralized or static or dynamic.
+
+46
+00:16:05,652 --> 00:16:28,652
+OK, let's start to link state first. OK? Dijkstra is link state algorithm. So here we are going to discuss Dijkstra link state algorithm, that is global algorithm, as I said. This is centralized.
+
+47
+00:16:29,139 --> 00:16:33,220
+So, each router knows entire network topology.
+
+48
+00:16:33,220 --> 00:16:38,500
+It is accomplished via link state broadcast.
+
+49
+00:16:38,500 --> 00:16:45,940
+So, since this is centralized in the global algorithm, all nodes have same info.
+
+50
+00:16:48,788 --> 00:16:57,788
+This algorithm computes least-cause paths from one node to all other nodes in the network.
+
+51
+00:16:57,788 --> 00:17:05,788
+So this one gives forwarding table for that individual router, okay?
+
+52
+00:17:05,788 --> 00:17:13,788
+And exchange the topology to update its related forwarding table.
+
+53
+00:17:13,788 --> 00:17:15,660
+It is iterative.
+
+54
+00:17:16,852 --> 00:17:20,352
+It can be k number of iterations.
+
+55
+00:17:20,352 --> 00:17:30,852
+So after k number of iterations, each router knows least cost fast for k destinations.
+
+56
+00:17:30,852 --> 00:17:34,852
+So let's have a look at the notation.
+
+57
+00:17:34,852 --> 00:17:37,852
+The cost value, C, x to y.
+
+58
+00:17:40,723 --> 00:17:52,723
+That is direct link cost from node x to y, okay? If the value is infinite, which means there is no direct link for dead neighbors.
+
+59
+00:17:53,723 --> 00:18:06,723
+D sub y is a current estimate cost of least cost path from source to the destination v.
+
+60
+00:18:06,836 --> 00:18:17,936
+So, if we set the source first to destination V. P sub Y is a processor, nodes, along paths from source to V.
+
+61
+00:18:17,936 --> 00:18:34,036
+And N' is the set of nodes whose least cost paths definitely known. Okay? As I said, this is global algorithm, and it's...
+
+62
+00:18:34,355 --> 00:18:36,675
+It contains iteration.
+
+63
+00:18:36,675 --> 00:18:38,355
+So let's have a look.
+
+64
+00:18:38,355 --> 00:18:40,755
+These algorithms, step by step.
+
+65
+00:18:40,755 --> 00:18:42,675
+First is the initialization.
+
+66
+00:18:42,675 --> 00:18:44,836
+And M' is the U.
+
+67
+00:18:44,836 --> 00:18:46,596
+U is the starting node.
+
+68
+00:18:46,596 --> 00:18:53,556
+We are talking about this one, this graph, as you remember, in the previous example.
+
+69
+00:18:53,556 --> 00:18:56,796
+We are going to see no need to go back.
+
+70
+00:18:56,796 --> 00:18:57,796
+Okay?
+
+71
+00:18:57,796 --> 00:19:01,195
+And for all nodes to V.
+
+72
+00:19:02,160 --> 00:19:15,460
+V is adjacent to U, which means V has a direct link to the U, then D sub V equal to cost of U to V.
+
+73
+00:19:15,460 --> 00:19:28,460
+Else, D sub V equal to infinite. Infinite means there is no direct link. And there's a loop. What's inside the loop? Find W.
+
+74
+00:19:29,364 --> 00:19:50,564
+Not in M' such that dw, d subw is a minimum. So add w to M' this time and update d subv for all adjacent to the w that is not in M'.
+
+75
+00:19:50,736 --> 00:20:10,736
+And find the minimum Dv, D sub V. That is the minimum. D sub V is the previous. And D sub W plus cos W to V. Okay? And here is the loop. We are going to...
+
+76
+00:20:11,316 --> 00:20:38,347
+Easily understand what we are, when we are talking about on example. Okay. Here is our example. You remember this graph here. Okay. In the first step, let's say our starting point is u. We have started to u. Okay. And an m prime.
+
+77
+00:20:39,731 --> 00:20:52,331
+is u and as you can see there is from u there is a direct link to v which is 2 and the pv is the
+
+78
+00:20:52,331 --> 00:21:01,371
+previous node that is u and to w is also directly cos 5 and to x
+
+79
+00:21:01,875 --> 00:21:28,875
+is 1 and there is no direct link to y or z. Okay? As you can see here, the minimum 1 is x, 1, 1u. So we add x to the n' this time and we jump to the x this time.
+
+80
+00:21:33,203 --> 00:21:56,884
+V, the previous one is 2, and the new one, previous, you remember the one here, one here, and plus 2, that is 3, so 2 is still smaller. For W, as you can see, 1 plus 3, that is 4, smaller than.
+
+81
+00:21:57,236 --> 00:22:19,236
+5, so we update to 4, then the previous node is x this time, the node we can go to the source, and x, there is, it's, is x basically, and to y, as you can see, previous one is infinitive, and to...
+
+82
+00:22:19,471 --> 00:22:47,468
+How can we reach from u to y through x? The cost is 1 plus 1, that is equal to 2. And the node is x. And there is no link to z that is infinite. In this time, 2 is smallest, 2x. And we can move y to m' and this time...
+
+83
+00:22:48,723 --> 00:23:13,003
+We are going to Y this time, 1, 2. And how can we reach W? W, there is no direct link from Y, so we keep 2U. And we can access to Y from U, X, Y, W, the total cost of 3, which is smaller than...
+
+84
+00:23:13,299 --> 00:23:40,900
+4 this time, so 3y, and to z we can access this time, the total cost is 4. And this time, v, we can move. So m' contains uxyv now, then let's update, calculate again. From...
+
+85
+00:23:41,940 --> 00:23:52,000
+YV, we can access to W5, which is bigger than 3.
+
+86
+00:23:52,000 --> 00:23:55,080
+So we keep 3Y again.
+
+87
+00:23:55,600 --> 00:23:59,259
+And from V, we can access to Z.
+
+88
+00:23:59,580 --> 00:24:04,039
+That is equal to 510, which is bigger than 4.
+
+89
+00:24:04,220 --> 00:24:06,600
+So we can keep 4 this time.
+
+90
+00:24:07,059 --> 00:24:08,000
+So now...
+
+91
+00:24:08,692 --> 00:24:23,092
+3y is smallest. We can move w to the list. So m' contains now w. And let's update this time. From w,
+
+92
+00:24:23,571 --> 00:24:48,571
+We can reach to Z, 1, 2, 3, 5, it makes 8. So that is smaller than, bigger than 4. So we can keep 4Y. And the last bit is Z. So now each router knows entire topology and knows cheapest.
+
+93
+00:24:49,523 --> 00:24:54,864
+So this is the resulting least-cost path 3 from U, right?
+
+94
+00:24:56,283 --> 00:25:00,023
+And in the forwarding table in the U,
+
+95
+00:25:02,823 --> 00:25:03,523
+V
+
+96
+00:25:04,180 --> 00:25:17,120
+U, V is outgoing link. If you want to reach to X, U to X, Y, W, X, you have to go through X, as you can see.
+
+97
+00:25:17,120 --> 00:25:29,660
+So, as you can see, now we can reach routing table of U using global or centralized extra algorithm.
+
+98
+00:25:32,019 --> 00:25:38,519
+Okay. Let's have a look at another example. This is another graph.
+
+99
+00:25:41,811 --> 00:26:02,811
+Again, we want to calculate least cost root from u to any nodes. So our m' start from u now, and as you can, u to v is 7, u to w is 3, u to x is 5.
+
+100
+00:26:03,251 --> 00:26:28,051
+U to Y, there is no link. U to Z, there is no link either. So it's infinite. So this time, 3 is smallest. We can move W this time. Now, W to V, it makes 6 this time through W to X. Where is X?
+
+101
+00:26:28,596 --> 00:26:43,596
+W to X, 4, 7, that is bigger than 5, so we keep 5 now, to Y, 3 plus 8, that is 11, W. So there's...
+
+102
+00:26:43,859 --> 00:26:57,059
+ve no direct link from Z either. As you can see this time, 5 is smallest. So we can add X to our M prime. So we move to X this time.
+
+103
+00:26:58,059 --> 00:27:10,559
+How can we reach V from X? The previous one is 6 from W, as you remember. And now from V,
+
+104
+00:27:11,316 --> 00:27:15,895
+5, 9, 12.
+
+105
+00:27:16,056 --> 00:27:19,375
+6, so we keep here.
+
+106
+00:27:20,096 --> 00:27:23,976
+And 11 we keep because it is bigger again.
+
+107
+00:27:24,395 --> 00:27:26,256
+5 plus 7, that is 12.
+
+108
+00:27:26,776 --> 00:27:31,776
+And z now 5 plus 9, 14 from x.
+
+109
+00:27:32,036 --> 00:27:33,736
+So we can reach to z now.
+
+110
+00:27:34,375 --> 00:27:36,536
+So here, which is smallest?
+
+111
+00:27:36,536 --> 00:27:37,375
+6.
+
+112
+00:27:37,936 --> 00:27:38,536
+So we...
+
+113
+00:27:39,412 --> 00:27:41,632
+Ve bu liste.
+
+114
+00:27:42,532 --> 00:27:43,491
+Ve bu zaman,
+
+115
+00:27:43,832 --> 00:27:45,532
+bu vücudur.
+
+116
+00:27:45,971 --> 00:27:47,291
+Bu vücudur.
+
+117
+00:27:47,291 --> 00:27:48,112
+Y'yı
+
+118
+00:27:48,112 --> 00:27:50,291
+ve bu vücudur.
+
+119
+00:27:50,912 --> 00:27:53,852
+3'e 3'e 6'e
+
+120
+00:27:53,852 --> 00:27:56,291
+ve 4'e 10'e
+
+121
+00:27:56,291 --> 00:27:58,632
+10'e 11'e
+
+122
+00:27:58,632 --> 00:28:01,291
+ve 10'e 10'e
+
+123
+00:28:01,291 --> 00:28:03,912
+ve 10'e
+
+124
+00:28:06,675 --> 00:28:08,675
+V from Y.
+
+125
+00:28:10,435 --> 00:28:16,915
+So if Z from V, there is no direct link, so we can keep 14X.
+
+126
+00:28:16,915 --> 00:28:22,115
+In this time, N is smallest.
+
+127
+00:28:22,115 --> 00:28:25,475
+So in this time, if we go up to...
+
+128
+00:28:26,259 --> 00:28:53,059
+Y, now, for the previous one, 14, now 3, 10, plus 2, 12. 12 is smaller than 14. We can update 12 now. So that is Z. So here is this cost, root from U to any nodes. Okay? So let's have a look.
+
+129
+00:28:53,875 --> 00:28:58,875
+Or let's calculate the complexity of this Dijkstra algorithm.
+
+130
+00:28:58,875 --> 00:29:04,875
+There are n number of nodes, each of n iterations, okay?
+
+131
+00:29:04,875 --> 00:29:08,875
+Because each node must know entire topology.
+
+132
+00:29:08,875 --> 00:29:14,875
+So each n iteration to check all nodes.
+
+133
+00:29:14,875 --> 00:29:17,875
+So W not in M'
+
+134
+00:29:18,675 --> 00:29:44,235
+So it contains n times n plus 1 by 2 comparisons. So as a result, the complexity is O n squared, is complexity. So more efficient implementation possible for this algorithm. In this time, the complexity becomes n log n this time.
+
+135
+00:29:45,395 --> 00:29:48,996
+Let's have a look at the message complexity.
+
+136
+00:29:48,996 --> 00:29:56,596
+So each router must broadcast link state information to n number of routers.
+
+137
+00:29:56,596 --> 00:29:58,996
+So it is efficient.
+
+138
+00:30:01,491 --> 00:30:10,932
+Broadcast algorithm ON link crossings to disseminate a broadcast message from one source to all others.
+
+139
+00:30:10,932 --> 00:30:20,771
+So, each router message crosses ON complexity links over message complexity again ON².
+
+140
+00:30:22,932 --> 00:30:24,748
+But, sometimes...
+
+141
+00:30:27,124 --> 00:30:32,043
+In Dijkstra algorithm, oscillation can be possible.
+
+142
+00:30:32,043 --> 00:30:41,043
+That is in theory, when link costs depend on traffic value, road oscillation possible.
+
+143
+00:30:41,043 --> 00:30:43,203
+Let's have a look at our scenario.
+
+144
+00:30:43,203 --> 00:30:53,763
+We have four nodes, four routers, A to D, and routing to destinations A.
+
+145
+00:30:54,067 --> 00:31:08,468
+Traffic entering at D, E, and C with rates 1. E is smaller than 1.
+
+146
+00:31:09,076 --> 00:31:10,576
+ve 1 again.
+
+147
+00:31:10,576 --> 00:31:13,256
+Link cost are directional
+
+148
+00:31:13,256 --> 00:31:14,816
+and value defendant.
+
+149
+00:31:14,816 --> 00:31:18,056
+So if we calculate the direction
+
+150
+00:31:18,056 --> 00:31:21,675
+from anticlockwise,
+
+151
+00:31:21,675 --> 00:31:24,996
+it is this time C to B is E,
+
+152
+00:31:24,996 --> 00:31:28,415
+B to A is 1 plus E,
+
+153
+00:31:28,415 --> 00:31:31,076
+and A to B is
+
+154
+00:31:31,604 --> 00:31:55,684
+2 plus E again. If we calculate anti-clockwise, sorry, clockwise this time, in this case, B to C is 1, previous one is E, and C to D is 1 plus E, and D to A is 2 plus E.
+
+155
+00:31:56,084 --> 00:31:58,084
+ve as you can see
+
+156
+00:31:58,084 --> 00:32:02,084
+when you call broadcast from clockwise
+
+157
+00:32:02,084 --> 00:32:04,084
+and anti-clockwise
+
+158
+00:32:04,084 --> 00:32:07,084
+the link cost total cost
+
+159
+00:32:07,084 --> 00:32:09,084
+may vary may oscillate
+
+160
+00:32:09,084 --> 00:32:13,084
+because one link value
+
+161
+00:32:13,084 --> 00:32:17,084
+link cost is smaller than one okay
+
+162
+00:32:17,084 --> 00:32:20,084
+new cost is oscillating right
+
+163
+00:32:20,660 --> 00:32:25,300
+1E1, 1E1 anticlockwise is different.
+
+164
+00:32:29,107 --> 00:32:37,667
+And let's start to discuss another type of algorithm, which is decentralized algorithm.
+
+165
+00:32:41,140 --> 00:32:50,740
+Decentralized algorithm is distance vector algorithm based on Bellman-Ford equation, BF equation, right?
+
+166
+00:32:50,740 --> 00:33:04,420
+What is Bellman-Ford? In Bellman-Ford equation, let's say DXY is the cost of least path from X to Y, okay?
+
+167
+00:33:04,420 --> 00:33:05,300
+Then...
+
+168
+00:33:05,907 --> 00:33:16,307
+We can calculate DXY minimum from the node V, C sub X to V plus V to Y.
+
+169
+00:33:16,307 --> 00:33:21,307
+So this equation is called Dijkstra.
+
+170
+00:33:21,307 --> 00:33:25,307
+Just a second, guys.
+
+171
+00:33:33,203 --> 00:33:34,203
+Efendim?
+
+172
+00:33:36,003 --> 00:33:37,003
+Günaydın.
+
+173
+00:33:42,195 --> 00:33:45,395
+Evet, evet, gelecekti bana gelmedi. Onda.
+
+174
+00:33:51,763 --> 00:33:57,763
+Evet evet, ben de geleceğim, ben getireceğim. Ben getireceğim, bir 15-20 dakika duracağım, ayrılacağım.
+
+175
+00:33:58,763 --> 00:34:01,763
+Ne oldu, görüşürüz, hoşçakalın.
+
+176
+00:34:04,763 --> 00:34:05,763
+Sorry.
+
+177
+00:34:06,763 --> 00:34:11,764
+Okay, this is Belman Ford equation, right? It is very simple.
+
+178
+00:34:12,371 --> 00:34:23,411
+This is the direct cost from link X to V, and plus previous cost is V to Y. So we calculate the minimum.
+
+179
+00:34:25,411 --> 00:34:36,771
+V is estimated cost path from V to Y. That is minimum taken. Let's start from
+
+180
+00:34:39,795 --> 00:35:05,795
+Our previous figure, suppose use neighbors nodes here, X, V, W, as you can see. It has direct link, X, V, W. Okay? Notes that for destination Z. So there is no, nothing about the Z.
+
+181
+00:35:06,996 --> 00:35:14,756
+So, V to Z, V to Z is 5.
+
+182
+00:35:22,579 --> 00:35:25,779
+X to Z, as you can see, is 3.
+
+183
+00:35:29,844 --> 00:35:41,764
+OK? Because V is already know how to connect V to Z through W, Y, Z, that is equal to 5, that is minimum cost.
+
+184
+00:35:42,324 --> 00:35:57,043
+And V to Z is, as you can see, 3, 1 plus 2, that is 5. X to Z is 1 plus 3 is 3. W to Z is 3.
+
+185
+00:35:57,780 --> 00:36:09,780
+So, as you can see, its neighbor of U, neighbor of U, knows how to connect to reach Z at minimum.
+
+186
+00:36:09,780 --> 00:36:21,456
+So, you calculate U to V plus V to Z. V to Z is 5 plus 2 is 7, comma.
+
+187
+00:36:21,456 --> 00:36:45,655
+The other link is UTX is 1 plus X to Z is what is 3, so now is 4. And last one is UTW is 5 and V to Z is 3, so 5 plus 3 is 8. So now the smallest one is 4.
+
+188
+00:36:47,860 --> 00:37:01,860
+You update its value to reach to Z through, where? Through X. Okay? Which because X was the smallest.
+
+189
+00:37:01,860 --> 00:37:10,604
+So from time to time, each node sends its distance vector estimate to neighbor.
+
+190
+00:37:11,380 --> 00:37:38,380
+When X receives new distance vector from new any neighbors, it updates its own distance vector using what? Using Bellman-Ford equation. This is the Bellman-Ford equation. So under minor natural conditions, they estimate the X to Y convergence to the actual least cost, DXY.
+
+191
+00:37:39,891 --> 00:38:07,011
+So, there are, each node, there are three states. First is wait for change in local link cost or message from neighbor. And recompute its distance vector using Bellman Ford equation. And if anything changed, then notify neighbors.
+
+192
+00:38:09,043 --> 00:38:17,603
+OK, and wait. If new message comes, update. If anything changes, notify neighbor and loop again.
+
+193
+00:38:18,804 --> 00:38:29,203
+That is iterative, asynchronous. So each local iteration caused by local link cost change and
+
+194
+00:38:29,203 --> 00:38:35,283
+distance vector update from its neighbor is distributed.
+
+195
+00:38:37,331 --> 00:39:04,731
+This is not centralized, this is distributed. And self-stopping, self-stopping means if the message arrives, then calculate. If anything changes, distribute. If no message arrives or no link changed, then there is no message. So it stops. Okay.
+
+196
+00:39:04,927 --> 00:39:32,747
+Let's have a look from this topology. As you can see, the routing algorithm is distributed at T equal to zero. Every node has its distance vector. So, D to A is zero because it is node A. D to B, as you can see, is A, direct link. D to C is
+
+197
+00:39:33,108 --> 00:39:40,168
+C is infinite because at T equals zero, it is from the beginning.
+
+198
+00:39:40,748 --> 00:39:42,448
+So there is no direct link, infinite.
+
+199
+00:39:43,088 --> 00:39:55,847
+D to D, E to D is one and the rest is infinite because there is no direct link for node A.
+
+200
+00:39:56,847 --> 00:39:59,847
+Okay, this eight is a...
+
+201
+00:40:00,400 --> 00:40:07,400
+Çünkü A'ın bilgi veriyor, B'ın alanı ile C'yı bilmiyor.
+
+202
+00:40:11,507 --> 00:40:31,907
+Once distance vector of each router is calculated and distribute to neighboring nodes and iterate and compute and distribute again.
+
+203
+00:40:35,443 --> 00:40:37,923
+It is very simple. Okay?
+
+204
+00:40:41,043 --> 00:40:48,963
+Let's take a look at iterative computation of each node. As you remember, 2 to equal to 0,
+
+205
+00:40:51,684 --> 00:41:02,163
+we know the distance vector. B to A is 8, B to C is 1, B to D there is no direct link, and
+
+206
+00:41:02,900 --> 00:41:25,400
+The B to F no direct link and H, I, and G there's no direct link. And we know our previous example, the distance vector of A is D to A zero, B is eight, as you can see, and so on and so forth. And in C,
+
+207
+00:41:26,739 --> 00:41:54,139
+A, there is no direct connection, B is 1, and the rest is infinite. Okay? And E, in the middle, for example, there is A, there is no direct connection, B is 1, C, there is no direct connection, D is 1 again, E is node, it's actual node, F is 1.
+
+208
+00:41:54,771 --> 00:41:56,231
+There is a direct link.
+
+209
+00:41:56,771 --> 00:41:59,092
+And G is there is no direct connection.
+
+210
+00:41:59,311 --> 00:42:00,072
+H is 1.
+
+211
+00:42:00,492 --> 00:42:02,192
+And I is again infinite.
+
+212
+00:42:02,971 --> 00:42:04,911
+As you remember, let's say
+
+213
+00:42:04,911 --> 00:42:06,992
+node B
+
+214
+00:42:06,992 --> 00:42:09,032
+say distribute
+
+215
+00:42:09,032 --> 00:42:11,371
+each node distribute
+
+216
+00:42:11,371 --> 00:42:13,492
+its distance vectors.
+
+217
+00:42:13,492 --> 00:42:15,992
+And now let's talk about
+
+218
+00:42:15,992 --> 00:42:16,672
+B.
+
+219
+00:42:17,172 --> 00:42:19,612
+B receives distance vector from
+
+220
+00:42:20,115 --> 00:42:33,115
+node A, from node C, and node E. And B computes. As you can see, once B computes, B B to A...
+
+221
+00:42:34,115 --> 00:42:35,115
+Just a second.
+
+222
+00:42:37,115 --> 00:42:38,115
+Alo.
+
+223
+00:42:40,115 --> 00:42:43,115
+Arkadaşı gönderin, K block'u son kattayım.
+
+224
+00:42:45,115 --> 00:42:46,923
+Çok çakalın. Sağol.
+
+225
+00:42:48,403 --> 00:43:07,404
+As you can see, once it's computed, the B to A is minimum, C B to A is 8, B to C plus C to A is, and B to E plus E to A.
+
+226
+00:43:07,404 --> 00:43:13,068
+So as you remember, the previous one is 8, that's the direct link, but
+
+227
+00:43:13,108 --> 00:43:39,508
+For C, there is no direct link. It is infinite, as you can see, from E to C. So minimum is 8. And B to C is, is infinite is coming. And 1 is coming from C. And infinite is coming from A. So this time, B to C is 1. And so on and so forth.
+
+228
+00:43:39,827 --> 00:44:06,827
+OK, it's very simple. And then, now the distance vector of P now is this. Again, there is no information about the G and H, sorry, G and I. And the rest is found somehow. But it needs to update and replace to P and distribute.
+
+229
+00:44:08,275 --> 00:44:10,875
+And this time, C computes.
+
+230
+00:44:12,075 --> 00:44:12,875
+Alright?
+
+231
+00:44:12,875 --> 00:44:31,075
+Once C computes as A equal to B, and the C to A is 1 plus 8 is 9, and 1 plus 0 is 1, and 1 plus infinity is infinite, because there is no tie wrinkling, and so on so forth.
+
+232
+00:44:31,075 --> 00:44:33,675
+As a result, new...
+
+233
+00:44:33,903 --> 00:44:59,903
+Distance vector in C is updated. Similarly, then DH and others, alright? In node E, the distance vector of D is coming, B is coming, F is coming, H is coming, as you can see, alright? Then update.
+
+234
+00:45:00,788 --> 00:45:21,588
+So, let's start from C this time. At P equal to zero, C is only in, C knows only the neighboring. Okay? And one hope, this time it covers A and E.
+
+235
+00:45:22,579 --> 00:45:40,179
+And T equal to 2, this time 2 hops, and this time ADH added. And in the fourth step, it covers everything. So it is iterative.
+
+236
+00:45:41,012 --> 00:45:56,811
+It is distributed. It requires message exchange from neighboring routers and compute, update distance vector, and distribute new distance vector, and recompute again.
+
+237
+00:45:58,311 --> 00:46:00,811
+Let's have a look at drawback.
+
+238
+00:46:03,811 --> 00:46:07,412
+If anything changed, let's say,
+
+239
+00:46:07,699 --> 00:46:34,699
+Here is our network, x, y, z. Here is our cost, 1, 4, and 9. Suppose to link cost from x to y, reduce to 1. Then x updates its distance vector and distribute. And if anything reduce, then good news travels fast. Okay?
+
+240
+00:46:35,123 --> 00:46:48,123
+At T equal 0, Y detects link cost change from 4 to 1, then updates its distance vector and informs its neighbor, X and Y.
+
+241
+00:46:48,123 --> 00:46:59,123
+At T equal to 1, Z receives updates from Y, then updates its table and compute new list cost.
+
+242
+00:47:00,371 --> 00:47:02,871
+Y to X.
+
+243
+00:47:02,871 --> 00:47:08,871
+The previous one was 5, then the new one is 2 now.
+
+244
+00:47:08,871 --> 00:47:10,871
+Just a second, gel.
+
+245
+00:47:12,871 --> 00:47:14,871
+Okay.
+
+246
+00:47:16,871 --> 00:47:18,871
+Beş dakika beklersem.
+
+247
+00:47:19,155 --> 00:47:30,155
+T equal to 2, Y receives Z's update, update its distance vector, Y's list costs do not change,
+
+248
+00:47:30,155 --> 00:47:39,155
+because new one is 1, the previous one is bigger than 1, goes through Y again, so,
+
+249
+00:47:39,155 --> 00:47:43,371
+anything reduced, then,
+
+250
+00:47:43,380 --> 00:48:09,779
+link distance vector updates very fast. Okay? But the problem happens, one, when the link cost increases. So, bad news travels slowly. Let's say 4 increase to 60. Y sees direct link to X has new cost to 6, but...
+
+251
+00:48:10,324 --> 00:48:20,324
+Z set, it's a path to 5, although it's through Y, it doesn't matter.
+
+252
+00:48:20,324 --> 00:48:32,324
+So Y updates to 5, then distribute to Z to X, and Z receives because the travel...
+
+253
+00:48:32,596 --> 00:49:00,396
+Y'e de
+
+254
+00:49:05,063 --> 00:49:10,764
+So let's have a look at this distance vector algorithms.
+
+255
+00:49:10,764 --> 00:49:22,563
+Message complexity, so n routers in link state, or n square is message complexity in distance vector,
+
+256
+00:49:22,563 --> 00:49:26,063
+exchange between neighbors, coulurgis.
+
+257
+00:49:26,420 --> 00:49:36,820
+Varies time. It depends on the number of nodes. So, speed of coverage, link state is O-N-square algorithm.
+
+258
+00:49:36,820 --> 00:49:43,420
+So, O-N-square messages must have oscillations in distance vector.
+
+259
+00:49:43,420 --> 00:49:53,324
+Coverage, again, time varies, may have routing loops and count to infinity problem, as I said in the previous example.
+
+260
+00:49:53,619 --> 00:50:11,619
+It's the burstness, what happens if router malfactions or compromise. So in LS link state, router can advertise incorrect link cost to each other.
+
+261
+00:50:11,956 --> 00:50:18,956
+ve
+
+262
+00:50:18,956 --> 00:50:21,956
+router can advertise incorrect paths,
+
+263
+00:50:21,956 --> 00:50:23,956
+because for example,
+
+264
+00:50:24,371 --> 00:50:43,371
+VLAN Router Kompromis, and send a message saying that there's a link cost to anywhere, the cost is zero. This is problem. This problem is called black hole. Okay? Because...
+
+265
+00:50:43,376 --> 00:51:02,376
+Router distribute and say, although there is no direct link, there's a link to somewhere the cost is zero, then the neighbor updates and all traffic sent through that compromised router and all packet may be compromised too.
+
+266
+00:51:03,376 --> 00:51:04,376
+Okay.
+
+267
+00:51:05,376 --> 00:51:10,376
+Let's talk about control plane roadmap.
+
+268
+00:51:11,027 --> 00:51:33,027
+And as I said from the beginning of the lecture, internet is network of networks, right? We know two types of algorithm, link state and distance vector. And let's think again, we have networks. So...
+
+269
+00:51:33,172 --> 00:51:57,067
+In one network, let's say, belong to one autonomous system, one ISP, it's a network owned by one ISP, and another network owned by another ISP. So, we, there can be two type of routing algorithm. First, intra-ISP routing, that is the routing
+
+270
+00:51:57,235 --> 00:52:02,235
+Algolytim among routers belong to one owner.
+
+271
+00:52:02,463 --> 00:52:10,764
+And another one is inter-routing algorithm, inter-routing algorithm, or inter-ISP routing algorithm.
+
+272
+00:52:10,764 --> 00:52:18,963
+So this time we are going to talk about intra-routing algorithm, OSPF, Open Shortest Pathwork Algorithm.
+
+273
+00:52:18,963 --> 00:52:26,963
+And next we are going to discuss inter-routing router algorithm that is called a boarding.
+
+274
+00:52:27,476 --> 00:52:28,596
+Borden Gate Protocol.
+
+275
+00:52:29,036 --> 00:52:33,436
+Borden Gate Protocol is also known as the glue of internet
+
+276
+00:52:33,436 --> 00:52:36,735
+because internet is a network of networks.
+
+277
+00:52:37,155 --> 00:52:41,976
+So we have something to link to different networks.
+
+278
+00:52:42,496 --> 00:52:42,675
+Okay?
+
+279
+00:52:43,036 --> 00:52:46,336
+So we are going to discuss two types of routing algorithm.
+
+280
+00:52:46,936 --> 00:52:52,235
+Intra-ISP routing algorithm, inter-ISP routing algorithm.
+
+281
+00:52:53,036 --> 00:52:53,175
+Okay?
+
+282
+00:52:54,867 --> 00:52:57,768
+So why this is important?
+
+283
+00:52:57,768 --> 00:53:02,768
+Because we make internet scalable
+
+284
+00:53:02,768 --> 00:53:07,768
+or our routing study so far is idealized.
+
+285
+00:53:08,487 --> 00:53:11,768
+Idealized means all routers are identical.
+
+286
+00:53:12,407 --> 00:53:13,768
+Network is flat.
+
+287
+00:53:14,847 --> 00:53:17,208
+But in practice, it is not true.
+
+288
+00:53:19,288 --> 00:53:21,827
+There are billions of destinations.
+
+289
+00:53:22,835 --> 00:53:31,635
+So, it is impossible for each router to store all destination in its routing table.
+
+290
+00:53:31,635 --> 00:53:46,035
+And routing table exchange would be impossible too because huge data, a huge table must be distributed among routers. So, it's a swamp link.
+
+291
+00:53:47,539 --> 00:54:12,539
+And another one is administrative autonomy, because internet is a network of networks, so each network admin, admin of ISP, may want to control routing in its own network. So we have two main factors, scalability and autonomy.
+
+292
+00:54:13,619 --> 00:54:41,420
+So internet approach to scalable routing, so aggregates routers into regions known as autonomous system. Autonomous system also known as domains or known by, owned by ISP. So we are now talking about AS, autonomous system this time. So...
+
+293
+00:54:42,164 --> 00:54:51,523
+There are two types of routing algorithms, intra-autonomous system algorithm and inter-autonomous system algorithm.
+
+294
+00:54:51,523 --> 00:54:59,764
+Intra-domain or intra-autonomous system algorithm routing among within the same autonomous system network.
+
+295
+00:55:02,612 --> 00:55:12,012
+So all routers in autonomous system must run same inter-domain protocol because it is owned by Seri Molnar.
+
+296
+00:55:12,012 --> 00:55:19,612
+And routers in different autonomous system can run different inter-domain routing protocol.
+
+297
+00:55:19,612 --> 00:55:30,012
+So in this case, we should have some gateway routers at the edge of autonomous system to link.
+
+298
+00:55:30,675 --> 00:55:48,675
+A different autonomous system. So, among gateways, we should have inter-autonomous system routing protocols or inter-domain routing protocols. So, gateways perform this time.
+
+299
+00:55:49,076 --> 00:56:08,076
+Both algorithm intra-autonomous system protocols to exchange among in the network and inter-autonomous system routing protocol to exchange among different autonomous system. As you can see here,
+
+300
+00:56:08,980 --> 00:56:13,900
+There are three autonomous system, AS1, AS2, and AS3.
+
+301
+00:56:13,900 --> 00:56:17,900
+Inside, there's intra-autonomous system routers.
+
+302
+00:56:17,900 --> 00:56:26,980
+And between edges, inter-autonomous system routing.
+
+303
+00:56:26,980 --> 00:56:27,884
+And...
+
+304
+00:56:27,891 --> 00:56:35,891
+Each routing table configured by inter- and intra-routing algorithms.
+
+305
+00:56:35,891 --> 00:56:45,891
+Okay? Here on the right side, intra-autonomous system routing and inter-autonomous system.
+
+306
+00:56:45,891 --> 00:56:54,891
+Okay? One traffic flows among autonomous system and then route.
+
+307
+00:56:55,315 --> 00:56:56,203
+OK?
+
+308
+00:57:00,115 --> 00:57:05,115
+OK, guys. Let's give a break for 15 minutes. All right?
+
+309
+00:57:10,260 --> 00:57:18,260
+Bir 15-20 dakika ara verelim arkadaşlar. Saat 20 geçe başlarız. Tamam mı?
+
+310
+01:19:46,420 --> 01:19:48,420
+Tekrar merhaba arkadaşlar.
+
+311
+01:19:50,420 --> 01:19:51,420
+Let's continue.
+
+312
+01:20:08,595 --> 01:20:15,915
+OK, as you remember our discussion, internet is a network of networks.
+
+313
+01:20:15,915 --> 01:20:26,435
+So, networks owned by one owner is like one autonomous system.
+
+314
+01:20:26,435 --> 01:20:32,195
+So, we must have two type of routing protocol, basically.
+
+315
+01:20:35,315 --> 01:20:42,355
+Autonomous system or intra-domain routing protocol, inter-domain routing protocol.
+
+316
+01:20:42,355 --> 01:21:00,675
+So inter-domain routing protocol routing amongst autonomous system and intra-domain routing protocol is inside one autonomous system.
+
+317
+01:21:02,036 --> 01:21:12,435
+In intradomain routing protocol, the first one, the first example is routing information protocol or RIP protocol.
+
+318
+01:21:12,435 --> 01:21:28,515
+This document is published as RFC 1723. It's based on classic distance vector protocol. And this vector is exchanged every 30 seconds. It is
+
+319
+01:21:46,899 --> 01:21:52,659
+EIGRP, Exchange Interior Gateway Routing Protocol.
+
+320
+01:21:52,659 --> 01:21:56,019
+Again, it is distance vector based.
+
+321
+01:21:56,019 --> 01:22:00,739
+It's formerly Cisco proprietary protocol.
+
+322
+01:22:00,739 --> 01:22:06,739
+It's used only Cisco routers for the case, but now it is open.
+
+323
+01:22:07,188 --> 01:22:12,188
+Because Cisco decided to make it open in 2013.
+
+324
+01:22:12,188 --> 01:22:18,188
+And after that, RFC document 7868 is published.
+
+325
+01:22:18,188 --> 01:22:24,815
+And the last one is OSPF, Open Shortest Path.
+
+326
+01:22:24,815 --> 01:22:39,496
+It's published, it's a linked state routing protocol. It is centralized. It's intra-routing protocol. It's published as RFC 2328.
+
+327
+01:22:39,680 --> 01:22:55,920
+A similar to OSPF is ISIS protocol. It is not RFC standard. It is ISO standard, but essentially very similar, almost identical to OSPF.
+
+328
+01:22:57,360 --> 01:23:06,520
+Okay. So widely used intra-routing protocol is OSPF. Okay. Open shortest path.
+
+329
+01:23:07,091 --> 01:23:08,631
+Routing protocol.
+
+330
+01:23:09,631 --> 01:23:14,471
+It is open, means publicly available.
+
+331
+01:23:15,311 --> 01:23:19,351
+It is a link distance vector.
+
+332
+01:23:19,351 --> 01:23:23,231
+Sorry, this is link state, classic link state protocol.
+
+333
+01:23:23,231 --> 01:23:24,992
+It is centralized protocol.
+
+334
+01:23:24,992 --> 01:23:30,851
+Each route of floods open shortest path link state advertisement,
+
+335
+01:23:30,851 --> 01:23:32,831
+directly over IP.
+
+336
+01:23:33,076 --> 01:23:47,876
+So this is IP protocol rather than using TCP or UDP protocol. Okay? Multiple link cost matrix possible bandwidth or delay. So...
+
+337
+01:23:48,083 --> 01:23:53,404
+Differenet, metriks, can be distributed among routers over IPv6.
+
+338
+01:23:53,404 --> 01:24:02,484
+Each router has full topology, uses link state Dijkstra algorithm to compute forwarding table.
+
+339
+01:24:02,484 --> 01:24:13,763
+Security of OSPF, all OSPF messages are authenticated to prevent malicious intrusion activity.
+
+340
+01:24:13,763 --> 01:24:14,347
+Okay?
+
+341
+01:24:15,315 --> 01:24:26,315
+Let's have a look here to OSPF. OSPF is hierarchical protocol. So, there are two levels of hierarchy.
+
+342
+01:24:26,315 --> 01:24:41,315
+First level is local area. And the other one is the blue one or turquoise one is backbone. Link state advertisement flooded only in the area.
+
+343
+01:24:42,323 --> 01:25:00,563
+Or only the backbone region. Each node has dedicated, each node has detailed local area topology, so only knows direction to reach other destination. Okay?
+
+344
+01:25:02,036 --> 01:25:25,100
+So, as you can see, there are some area routers, area border routers. It summarizes distances to directions in its own area advertised to backbone. Okay? And local routers, as you can see here, floods...
+
+345
+01:25:25,332 --> 01:25:44,832
+LS, local link state in area only, in local area only, compute routing within that local area and forwards packets to outside area via this border router, as you can see.
+
+346
+01:25:52,467 --> 01:25:57,467
+This autonomous system to other autonomous system.
+
+347
+01:25:58,467 --> 01:26:10,467
+And as you can see, there are backbone routers, runs OSPF limited to backbone only, not the entire region.
+
+348
+01:26:10,467 --> 01:26:11,467
+Okay.
+
+349
+01:26:11,467 --> 01:26:15,467
+Now, we know what's going on in OSPF.
+
+350
+01:26:15,467 --> 01:26:19,467
+So let's discuss BGP, Border Gateway Protocol.
+
+351
+01:26:19,988 --> 01:26:26,507
+Border Gateway Protocol is inter-autonomous system routing protocol.
+
+352
+01:26:26,507 --> 01:26:27,507
+Okay?
+
+353
+01:26:27,507 --> 01:26:32,828
+So BGP is a de facto inter-domain routing protocol.
+
+354
+01:26:32,828 --> 01:26:37,948
+It's a glue that holds the internet together.
+
+355
+01:26:37,948 --> 01:26:46,028
+So it allows subnet to advertise its existence and its destination.
+
+356
+01:26:46,047 --> 01:27:09,867
+It can reach the rest of the internet. Okay? BGP provides each autonomous system a means to EBGP and IBGP. EBGP obtains subset reachability of the information from neighboring autonomous system and IBGP propagates.
+
+357
+01:27:10,579 --> 01:27:16,239
+Reçability information to all autonomous system internal routers.
+
+358
+01:27:16,340 --> 01:27:22,579
+So as you can see, there are two types of BGP protocol, EBGP and IBGP.
+
+359
+01:27:23,079 --> 01:27:28,399
+EBGP is among autonomous system routers.
+
+360
+01:27:31,283 --> 01:27:47,884
+EBGP protocol is used to exchange information from border routers IC2A, 2C3A as you can see, and EBGP is among autonomous system.
+
+361
+01:27:47,884 --> 01:27:59,083
+Let's say how it works. Suppose we have three autonomous system, okay? And let's say one node is
+
+362
+01:27:59,475 --> 01:28:05,975
+link to the Atomic System 3 to router 3D.
+
+363
+01:28:05,975 --> 01:28:07,975
+And this time...
+
+364
+01:28:11,507 --> 01:28:27,907
+So in this time, 3A, advertise X is connected to Autonomous System 3 through the border router 3A.
+
+365
+01:28:27,907 --> 01:28:38,547
+So advertise BGP advertisement, Autonomous System 3 to X and so on. So BGP message exchange between
+
+366
+01:28:39,091 --> 01:28:50,291
+pairs over TCP connection, different than OSPF. OSPF, you remember, is IP, sends, exchange information over IP.
+
+367
+01:28:51,731 --> 01:29:17,332
+BGP messages is defined in RFC 4371. There are four types of messages. Open, Update, Keep Alive and Notification. Open is basically opens TCP connection to remote BGP pair and authenticase sending BGP pair. Update is basically advertised new path.
+
+368
+01:29:17,747 --> 01:29:26,147
+So as a result, withdraw all paths and keep alive, keeps connection alive in absence of update.
+
+369
+01:29:26,147 --> 01:29:34,867
+Also, it's an acknowledgement request, open request. Notification is basically reports errors in previous message.
+
+370
+01:29:37,747 --> 01:29:41,747
+So BGP Advertise route, such as...
+
+371
+01:29:41,971 --> 01:30:00,971
+Prefix plus attribute. Prefix is destination being advertised. And there are two important attributes, as path and next probe. As autonomous system path, list of autonomous systems through which prefix advertisements has passed.
+
+372
+01:30:02,963 --> 01:30:10,663
+And Next Hop indicates specific internal autonomous system router to Next Hop autonomous system.
+
+373
+01:30:10,663 --> 01:30:22,163
+Basic policy routing is basically gateway receiving road advertisement uses import policy to accept or decline this message.
+
+374
+01:30:22,163 --> 01:30:27,163
+And autonomous system policy also determine whichever
+
+375
+01:30:33,315 --> 01:30:38,315
+Bir otomobü protokollerini işleyeceğiz.
+
+376
+01:30:38,315 --> 01:30:39,315
+Tamam.
+
+377
+01:30:43,636 --> 01:30:59,236
+Let's say here, the autonomous system X, X is connected to autonomous system 3, and border node advertise to next autonomous system to link.
+
+378
+01:30:59,236 --> 01:31:05,536
+So if you want to reach to X, link to the autonomous system 3.
+
+379
+01:31:05,536 --> 01:31:09,436
+And the border...
+
+380
+01:31:10,387 --> 01:31:14,507
+router to Autonomous System 2 advertise.
+
+381
+01:31:14,507 --> 01:31:23,108
+And the border router to Autonomous System 2 also advertise.
+
+382
+01:31:23,108 --> 01:31:31,507
+So, 1c this time knows how to reach x through Autonomous System 2,
+
+383
+01:31:31,507 --> 01:31:37,907
+not the routers in Autonomous System 2 plus Autonomous System 3.
+
+384
+01:31:39,123 --> 01:31:53,923
+If there's a link, direct link between 1C to 3A, then this time Autonomous System 3 also advertise again how to reach.
+
+385
+01:31:53,923 --> 01:32:02,564
+And Autonomous System 1 is free, which path to advertise.
+
+386
+01:32:02,564 --> 01:32:06,243
+Okay? So it is based on policy.
+
+387
+01:32:07,123 --> 01:32:30,123
+suppose, let's have a look at this figure. W is a network customer, okay? And W is the customer of A. And A is advertised that if you want to access to W, it must...
+
+388
+01:32:30,996 --> 01:32:32,996
+B'ye görebilirsiniz.
+
+389
+01:32:32,996 --> 01:32:36,996
+A'ya görebilirsiniz.
+
+390
+01:32:36,996 --> 01:32:38,996
+B'ye görebilirsiniz.
+
+391
+01:32:38,996 --> 01:32:58,539
+A'ya görebilirsiniz.
+
+392
+01:33:01,011 --> 01:33:25,011
+A, B, C, R, private provider networks, X, W, Y, R customers. Okay. As you can see X here, the dual home customer, this is attached to a two autonomous system, sorry, two networks. So, and X.
+
+393
+01:33:25,363 --> 01:33:42,363
+may not advertise anything because the traffic, unnecessary traffic may reach to B through X. Okay? Similar here. May or may not advertise.
+
+394
+01:33:48,435 --> 01:34:00,755
+Right? So we see inside the OSPF is used among autonomous system, BGP is used. Okay?
+
+395
+01:34:05,203 --> 01:34:10,403
+So why different intra- and inter-autonomist system?
+
+396
+01:34:10,663 --> 01:34:13,503
+Why we need two types of routing?
+
+397
+01:34:14,123 --> 01:34:15,463
+Because of the policy.
+
+398
+01:34:15,463 --> 01:34:24,463
+Because inter-autonomist system admin wants control over how its traffic routed.
+
+399
+01:34:25,683 --> 01:34:28,323
+Who routes traffic its network?
+
+400
+01:34:29,043 --> 01:34:29,463
+Who routes...
+
+401
+01:34:30,739 --> 01:34:41,739
+İntra-autonomist system is a single admin, so policy is less of an use.
+
+402
+01:34:41,739 --> 01:34:49,199
+But inter, some autonomous system may let the traffic may go through.
+
+403
+01:34:49,199 --> 01:35:12,555
+oranla ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin
+
+404
+01:35:13,876 --> 01:35:39,476
+Scalability is another case because hierarchical routing saves table size, reduce, as a result, reduce update traffic and performance. Inter-autonomous system can focus on performance. Inter-autonomous system focus on policy because it has to decide which traffic.
+
+405
+01:35:40,564 --> 01:35:47,564
+to let which traffic to pass and which traffic not to pass. Okay?
+
+406
+01:35:49,564 --> 01:35:55,564
+In VGP route selection, router may learn about more than one route to destination.
+
+407
+01:35:55,564 --> 01:35:57,564
+So autonomous system selects.
+
+408
+01:35:57,876 --> 01:36:11,876
+ROOT based on local preference value attributes, according to policy decision, shortest path, closest next hop, or it can also add some more criteria.
+
+409
+01:36:12,876 --> 01:36:23,876
+Okay, let's discuss this time STN, Software Defined Network Control Plan. Up till now, we have discussed
+
+410
+01:36:25,108 --> 01:36:28,728
+Traditional network control plane is used.
+
+411
+01:36:29,528 --> 01:36:32,507
+In software-defined network,
+
+412
+01:36:33,007 --> 01:36:34,728
+internet network layer
+
+413
+01:36:34,728 --> 01:36:36,868
+historically implemented via
+
+414
+01:36:36,868 --> 01:36:41,128
+distributed per router control approach.
+
+415
+01:36:42,208 --> 01:36:43,148
+It is monolithic,
+
+416
+01:36:43,507 --> 01:36:45,988
+so router contains switching hardware,
+
+417
+01:36:46,528 --> 01:36:48,948
+runs preparatory implementation
+
+418
+01:36:48,948 --> 01:36:51,748
+of internet standards such as IPs, RIP,
+
+419
+01:36:52,108 --> 01:36:54,108
+VLAN İlginçler,
+
+420
+01:36:52,079 --> 01:37:01,280
+IS2IS, OSPF, BGP, or proprietary router operating system like Cisco IOT.
+
+421
+01:37:01,280 --> 01:37:14,680
+There are different middle boxes for different network layer functions, such as firewalls, load balancer, network address translation boxes.
+
+422
+01:37:14,944 --> 01:37:20,344
+IDS, IPS, there are many middle boxes.
+
+423
+01:37:20,692 --> 01:37:32,092
+Uptil 2005, renewed interest in rethinking network control plane because it is distributed and management is too difficult now.
+
+424
+01:37:32,092 --> 01:37:46,291
+In per router control plane, as you remember, we have seen this figure, each router is responsible of forwarding incoming datagram according to its header.
+
+425
+01:37:46,547 --> 01:38:10,307
+OK? And each individual router keeps local forwarding table. And on the control plane, each router is responsible of using routing algorithm to update its local forwarding table. OK?
+
+426
+01:38:12,564 --> 01:38:34,564
+In SDN, this time, similar, each router is using its local forwarding table, but this local forwarding table is updated by remote controller. And this time, the management is centralized.
+
+427
+01:38:35,923 --> 01:38:57,923
+So why a logically centralized control plane? Why it is necessary? Why we prefer centralized control plane if the router is distributed? Because it is easier for network management to avoid...
+
+428
+01:38:58,676 --> 01:39:07,076
+router misconfigurations, greater flexibility, or greater traffic flow flexibility.
+
+429
+01:39:09,576 --> 01:39:11,576
+Stable-based forwarding.
+
+430
+01:39:12,576 --> 01:39:15,076
+You remember OpenFlow APIs.
+
+431
+01:39:15,252 --> 01:39:41,891
+So you can program routers. Centralized programming is easier because you compute the table and distribute the table to all routers. Distributed programming is more difficult because it has to, each router must calculate and update its routing table.
+
+432
+01:39:44,212 --> 01:39:52,852
+It is open, STN, non-prioritory, so it is open to implement centralized control plane.
+
+433
+01:39:53,652 --> 01:40:01,572
+It is similar to data center here, PC revolution. As you remember in
+
+434
+01:40:02,228 --> 01:40:11,547
+Early PCs, we have specialized hardware, specialized operating system, on top, specialized application.
+
+435
+01:40:11,547 --> 01:40:22,108
+Nowadays, in Cloud or Virtualize, in this one, we have open Intel microprocessor.
+
+436
+01:40:23,444 --> 01:40:36,864
+Open interface and on any microprocessor you can install any type of operating system and many type of applications.
+
+437
+01:40:38,244 --> 01:40:41,164
+So here is vertically integrated.
+
+438
+01:40:41,764 --> 01:40:42,544
+It is closed.
+
+439
+01:40:42,964 --> 01:40:43,744
+It's proprietary.
+
+440
+01:40:43,744 --> 01:40:46,904
+It is very slow for innovation.
+
+441
+01:40:48,144 --> 01:40:51,524
+It is since it is close, small industry.
+
+442
+01:40:51,524 --> 01:40:55,224
+But now, it's horizontal.
+
+443
+01:40:55,224 --> 01:41:04,224
+There are many open interfaces, rapid innovation, because there are many contributions there.
+
+444
+01:41:04,224 --> 01:41:07,703
+It is horizontal, not vertical.
+
+445
+01:41:07,703 --> 01:41:11,463
+So it has huge industry.
+
+446
+01:41:14,064 --> 01:41:14,891
+In...
+
+447
+01:41:14,963 --> 01:41:19,564
+Now, the network management is our case.
+
+448
+01:41:19,564 --> 01:41:25,724
+In traditional routing or traditional network,
+
+449
+01:41:25,724 --> 01:41:31,003
+traffic engineering is difficult to manage.
+
+450
+01:41:31,475 --> 01:41:58,175
+Since it is updated and it is a forwarding table is updated either using distance vector or link state, it always follows the same route. But if you want to decide to send one traffic to one route, other traffic to other route, so you should have new algorithm.
+
+451
+01:41:58,804 --> 01:41:59,804
+OK?
+
+452
+01:42:01,804 --> 01:42:02,804
+Let's have a look here.
+
+453
+01:42:03,804 --> 01:42:06,804
+For load balancing, we can split our...
+
+454
+01:42:07,804 --> 01:42:08,804
+This is another...
+
+455
+01:42:08,804 --> 01:42:16,804
+If we want to split our traffic into two roads to send in parallel,
+
+456
+01:42:16,804 --> 01:42:20,804
+but in traditional routing, it is again impossible.
+
+457
+01:42:21,747 --> 01:42:36,747
+Now, what we can do, we can send red traffic from one direction, blue traffic to other direction, using centralized routing mechanism.
+
+458
+01:42:41,171 --> 01:42:47,171
+But we have learned that each individual router is responsible for forwarding.
+
+459
+01:42:47,171 --> 01:42:53,171
+So we update forwarding table by...
+
+460
+01:42:55,971 --> 01:43:01,971
+Each forwarding table is updated by central manager, central controller.
+
+461
+01:43:01,971 --> 01:43:06,827
+As you can see, it is very simple. In the data plane, we have...
+
+462
+01:43:07,539 --> 01:43:20,340
+EACH İndivijal router, AND EACH router has a client agent, is connected to the remote controller. On the control plane, there are servers on top of it.
+
+463
+01:43:20,979 --> 01:43:30,979
+We can have many types of applications such as routing application, access control application, load balancer, so on and so forth.
+
+464
+01:43:30,979 --> 01:43:38,979
+So, implementation of these applications is easier than implementing on traditional networks.
+
+465
+01:43:39,859 --> 01:43:43,319
+Çünkü genelde flow-based forwarding,
+
+466
+01:43:43,639 --> 01:43:46,039
+for example, OpenFlow can be used
+
+467
+01:43:46,039 --> 01:43:50,199
+to update each local forwarding table.
+
+468
+01:43:51,399 --> 01:43:54,779
+We have control data plane separation
+
+469
+01:43:54,779 --> 01:44:01,679
+and again control plane external data plane switches
+
+470
+01:44:01,679 --> 01:44:03,719
+to implement application.
+
+471
+01:44:05,268 --> 01:44:09,627
+ve on top of it, programable control application,
+
+472
+01:44:09,627 --> 01:44:12,868
+similar to computer evolution.
+
+473
+01:44:14,868 --> 01:44:18,868
+At the bottom, we have data plane switches.
+
+474
+01:44:18,868 --> 01:44:22,188
+It is fast, simple.
+
+475
+01:44:23,735 --> 01:44:32,735
+ve
+
+476
+01:44:23,220 --> 01:44:31,500
+Komodity switches, implementin generalize datable lane, forwarding in hardware.
+
+477
+01:44:31,500 --> 01:44:34,420
+Okay, this is hardware part.
+
+478
+01:44:34,420 --> 01:44:47,539
+And flow table or forwarding table, computed, installed and under control of the central supervision of central controller.
+
+479
+01:44:47,539 --> 01:44:49,539
+And up is...
+
+480
+01:44:50,003 --> 01:44:55,003
+For table-based switch control, for example, OpenFlow.
+
+481
+01:44:55,003 --> 01:45:00,403
+So it defines what is controllable and what is not controllable.
+
+482
+01:45:01,203 --> 01:45:05,804
+And the protocol for this hardware is OpenFlow.
+
+483
+01:45:06,203 --> 01:45:08,804
+Here is SDN controller.
+
+484
+01:45:11,203 --> 01:45:16,203
+Now, main network state information, the heart.
+
+485
+01:45:16,756 --> 01:45:36,756
+A similar analogist operating system interact with network control application via northbound APIs, the applications, and interact with network switches via southbound APIs, the hardware.
+
+486
+01:45:37,427 --> 01:45:45,028
+and implement it as distributive system for performance, scalability, fault tolerance, and robustness.
+
+487
+01:45:45,907 --> 01:45:55,587
+Here, network control application on the top. It is the brains of control. It's a implement control
+
+488
+01:45:55,587 --> 01:46:04,627
+functions using lower level switches, API provided by STN controller, northbound APIs.
+
+489
+01:46:06,387 --> 01:46:27,188
+unvendled, so it can be provided by third-party companies or vendors, distinct from routing vendor and distinct from STN controller. So you can develop any application on the network control application.
+
+490
+01:46:29,347 --> 01:46:33,748
+So let's have a look at the component of STN controller here.
+
+491
+01:46:36,051 --> 01:46:46,051
+The communication area, communicate between STN controller and controller switches, such as OpenFlow or SNMP.
+
+492
+01:46:46,051 --> 01:46:55,051
+And network-wide state management, the middle, state of network link switches versus the distributed database.
+
+493
+01:46:55,051 --> 01:47:02,051
+And interlayer to network, control APIs, that is the abstraction of APIs used by...
+
+494
+01:47:02,463 --> 01:47:03,943
+Aplikasyon.
+
+495
+01:47:04,463 --> 01:47:08,144
+So let's start from OpenFlow this time.
+
+496
+01:47:08,583 --> 01:47:12,703
+It operates between controller and between switches.
+
+497
+01:47:13,724 --> 01:47:24,783
+So to exchange messages TCP used for security or authentication.
+
+498
+01:47:25,555 --> 01:47:34,875
+Optionally, you can encrypt messages among controllers and among switches, sorry, routers.
+
+499
+01:47:34,875 --> 01:47:44,875
+Three cases of, three class of OpenFlow messages, that is the message controller to switch, that is
+
+500
+01:47:44,875 --> 01:47:49,555
+Akronos, switch to controller, and symmetric.
+
+501
+01:47:50,484 --> 01:47:58,804
+And it is distinct from OpenFlow API. So API is used to specify generalized forwarding action. Okay?
+
+502
+01:48:00,484 --> 01:48:09,764
+So, PController to Switch messages. Switch. So the message goes from Controller to Switch.
+
+503
+01:48:13,587 --> 01:48:30,148
+Switch replies, like configure, controller requires set the switch configuration parameter, and another message, modify state, add, delay, or modify flow entries in the open flow table.
+
+504
+01:48:30,148 --> 01:48:37,427
+And packet out, and this time, controllers can send this packet out to a specific port.
+
+505
+01:48:39,155 --> 01:48:41,916
+And switch to controller messages this time.
+
+506
+01:48:41,916 --> 01:48:46,115
+Packet in, transfer packet to controller.
+
+507
+01:48:46,115 --> 01:48:52,956
+And flow removed, so flow entry is deleted at the switch.
+
+508
+01:48:52,956 --> 01:48:59,996
+And of course this is the informed controller about the port of the switch.
+
+509
+01:49:03,412 --> 01:49:26,412
+Let's have a look at the interaction this time. Let's say in the network we have four switches, S1 to S4. And S1 experienced link failure, uses OpenFlow, link failure to S2, OpenFlow post status message to notify controller.
+
+510
+01:49:26,868 --> 01:49:32,368
+And in the second, STN control receive open flow message.
+
+511
+01:49:32,368 --> 01:49:43,668
+And this time update link state info and send Dijkstra link state routing algorithm on the application.
+
+512
+01:49:44,268 --> 01:49:48,168
+And update link state.
+
+513
+01:49:50,268 --> 01:49:51,768
+And meanwhile,
+
+514
+01:49:53,460 --> 01:50:06,460
+LinkState routing application interacts with OpenFlow competition in the Gnestrian controller and updates FlowTable.
+
+515
+01:50:06,460 --> 01:50:18,380
+And this time, there's some missing link between S1 and S2, and this time FlowTable is updated.
+
+516
+01:50:18,644 --> 01:50:22,344
+Dijkstra link state algorithm on the layer.
+
+517
+01:50:22,344 --> 01:50:28,444
+And this updated table is distributed to all routers.
+
+518
+01:50:28,444 --> 01:50:33,444
+OK? The doors are affected because of the link failure.
+
+519
+01:50:33,444 --> 01:50:34,444
+OK?
+
+520
+01:50:35,644 --> 01:50:42,144
+Let's have a look at another controller, OpenDaylight, ODL controller.
+
+521
+01:50:42,319 --> 01:51:00,319
+On here, there's a traffic engineering, firewalling, load balancing is the network orchestrations and application on the northbound API. Southbound API is the protocols, OpenFlow, NetConf, SNMP, and OVSP-DB.
+
+522
+01:51:00,319 --> 01:51:09,319
+These are the exchange services and basic network functions and message abstraction layer.
+
+523
+01:51:11,796 --> 01:51:35,395
+OK? Onos, in the Onos controller, part is different. Host, path, flow rules, topology, devices, and southbound abstraction protocols keeps information about the link, host, and flow. Right?
+
+524
+01:51:37,203 --> 01:51:46,963
+So, control applications separate from controller and high level specification of service or what rather than how.
+
+525
+01:51:50,131 --> 01:52:17,731
+So, let's have a look. The challenges in STN is hardening the control plane, dependable, reliable, personal performance scalable, or secure distribution system. And the burst to failures, so leverage strong theory of reliable distributed system for control plane and dependency security is another challenges. Okay?
+
+526
+01:52:19,252 --> 01:52:35,916
+Alright, these are the subjects in STN and the rest, this is the time is almost up, the rest you can have a look, alright, because we have lost...
+
+527
+01:52:35,923 --> 01:52:47,923
+I think three weeks because of 19 May and Ramazan, Bayram, and I think one for the midterm.
+
+528
+01:52:47,923 --> 01:52:58,923
+So I require you to have a room for the rest of the presentation. Okay? Then next week we are going to...
+
+529
+01:52:59,380 --> 01:53:06,380
+ve
+
+530
+01:53:21,971 --> 01:53:43,967
+Evet arkadaşlar, bundan sonrası bir 810 slide daha var. Onlara sizler bakarsınız. Kafanıza takılan bir soru olursa gelecek hafta dersin başında alabilirim. Çünkü dediğim gibi üç haftamız uçtur. 19 Mayıs'la, Bayram'la ve viz haftasıyla. Dolayısıyla biraz...
+
+531
+01:53:43,967 --> 01:53:50,768
+programın gerisine düştük maalesef. O yüzden sizlere de biraz buçuk iş düşüyor.
+
+532
+01:53:50,768 --> 01:53:54,167
+Soracağınız bir şey var mı? Bahatmalık dersimiz bu kadar.
+
+533
+01:53:57,684 --> 01:53:59,684
+Uyudunuz mu? Ses çıkmıyor.
+
+534
+01:54:00,884 --> 01:54:02,384
+Yok hocam, teşekkürler.
+
+535
+01:54:03,384 --> 01:54:05,384
+Sağ olun hocam, iyi günler.
+
+536
+01:54:05,884 --> 01:54:07,084
+Okay guys,
+
+537
+01:54:09,084 --> 01:54:10,284
+I wish you
+
+538
+01:54:10,884 --> 01:54:11,884
+to meet
+
+539
+01:54:11,884 --> 01:54:13,084
+next week.
+
+540
+01:54:13,484 --> 01:54:14,684
+Since then,
+
+541
+01:54:14,884 --> 01:54:16,284
+have a good weekend.
