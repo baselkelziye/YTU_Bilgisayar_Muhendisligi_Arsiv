@@ -1,0 +1,2939 @@
+1
+00:05:35,187 --> 00:05:59,207
+Arkadaşlar, hoş geldiniz. Hepinize güzel bir hafta diliyorum. Bu bizim aslında teknik olarak kaçıncı haftamız oluyor? Şöyle bir hesap yapacak olursak, üçüncü haftamız oluyor. Üçüncü haftada artık yavaş yavaş kodlama noktasına ilerleyeceğiz.
+
+2
+00:05:59,668 --> 00:06:05,388
+Ve bugün Android Studio ile tanışacağız hep birlikte küçük bir kod parçası üzerinden.
+
+3
+00:06:05,848 --> 00:06:09,648
+Aslında neler yapabilirsiniz onları biraz konuşacağız.
+
+4
+00:06:09,927 --> 00:06:15,088
+Ama geçtiğimiz hafta bazı konularda henüz tamamlayamadığımız kısımlar vardı.
+
+5
+00:06:15,427 --> 00:06:17,947
+Onları ilk başta tamamlamak istiyorum dersin ilk bölümünde.
+
+6
+00:06:18,968 --> 00:06:24,127
+Sonrasında kodlama tarafına da yavaş yavaş geçiş yapıyor olacağız.
+
+7
+00:06:24,528 --> 00:06:26,608
+Şimdi hemen bir paylaşım yapayım.
+
+8
+00:06:33,267 --> 00:06:55,407
+En son burada kalmıştık. Şunu konuşuyorduk hep birlikte. Mobile Application Development Trendleri neler? Biz hangi konularda biraz daha farklı bakış açısıyla uygulama geliştirebiliriz? Bunları değerlendiriyorduk. Bunlar tabii farklı başlıklar altında da incelenebiliyor.
+
+9
+00:06:55,920 --> 00:07:13,680
+Özellikle işte burada gördüğünüz bir önceki slide'dan farklı olarak Beacon teknolojisine ek olarak Instant App'ler, On Demand App'ler ve Cloud Storage Development noktasında artık Mobile Application'ların Cloud'la olan ilişkileri daha çok önem kazanmaya başladı.
+
+10
+00:07:14,520 --> 00:07:21,680
+Instant App'leri biraz sonra konuşacağız. Bu noktada application'ların boyutlarının büyümesinden dolayı.
+
+11
+00:07:22,548 --> 00:07:47,108
+Application'ın tümünü indirmeden acaba modül modül uygulamaları parça parça çalıştırabilir miyiz? Bu fikrin gerçek hayatta karşılığını görüyorsunuz Instant App'lerde. OnDement App'lerde de daha önce bahsetmiştim. İnsanların ihtiyaç duydukları bilgiler ya da hizmetlerin application'lar üzerinden sağlanması noktasında varıp bakış açısı oluşacak.
+
+12
+00:07:47,603 --> 00:07:59,603
+Burada tabii özellikle katlanabilir cihazlar için uygulamaların yeniden dizayn edilmesi, makine öğrenmesi ve yapay zekanın artık telefonlar üzerinde...
+
+13
+00:08:01,235 --> 00:08:17,635
+Özellikle eğitim noktasında kullanılacak noktaya gelmesi ve bunun için Federal Learning dediğimiz dağıtık yapıda öğrenmenin telefonlar ile yavaş yavaş buluşmaya başlaması, ana bir merkezde yapmak yerine dağıtık bir yapıda öğrenme kavramı, Federated Learning.
+
+14
+00:08:18,535 --> 00:08:22,576
+Bir yandan chatbotlar sıklıkla karşımıza çıkıyor.
+
+15
+00:08:23,040 --> 00:08:33,860
+Giyilebilir cihazların mobil telefonlarla entegrasyonu ve giyilebilir cihazlar için uygulamaların yazılması özellikle saat noktasında bunlarla karşılaşıyoruz.
+
+16
+00:08:34,388 --> 00:08:42,188
+Nesnelerin interneti tarafında çeşitli nesneler için artık uygulama geliştirmeye başlıyoruz.
+
+17
+00:08:42,708 --> 00:08:49,488
+Ağırlıklı olarak şu an giyilebilir cihazlar ama evinizdeki kullanılan akıllı cihazlar da bunlar arasında yer alıyor.
+
+18
+00:08:49,488 --> 00:08:53,128
+Bir çamaşır makinesi olabilir, bir buluşuk makinesi olabilir.
+
+19
+00:08:53,688 --> 00:08:58,807
+Ama en karşılığında sıklıkla kullandığımız akıllı televizyonlar var.
+
+20
+00:08:59,412 --> 00:09:07,412
+Tabii, Augmented Reality ve Virtual Reality de bugünün bir gerçeği. Yaygınlaşma noktasında...
+
+21
+00:09:08,340 --> 00:09:36,340
+Belki düşündüğümüz kadar yaygın kullanımı yok ama bu deneyimi farklı mecralarda özellikle hem oyun alanında, hem sanal gezilerde, sanal turlarda ve işte pandemi döneminde bir yere gidilememesi durumunda, hem uzaktan eğitim verilmesi noktasında ilgili kişilere ya da gerçek hayatta monte etmenizin zor olduğu büyük parçaların bir ofise yerleştiğinde nasıl gözükeceği nokta.
+
+22
+00:09:36,340 --> 00:09:54,879
+Oğmented Reality ve Virtual Reality'yi kullanıyoruz. Ya da bir kampüse girdiniz, büyük bir binaya girdiniz, hangi yoldan gitmek gerekiyor? O noktada size yardımcı olan uygulamalar var. Bu teknolojileri de mobil telefonlarla kullanıyoruz.
+
+23
+00:09:55,680 --> 00:10:00,000
+Tabii mobil cüzdanlar, özellikle mobil ödemenin yaygınlaşımını...
+
+24
+00:10:00,000 --> 00:10:09,180
+Hem saatle ödeme hem telefon ile ödeme çok daha kolay hale geldi ve yanınızda artık kredi kartı taşımadan ödeme yapabilecek noktadasınız.
+
+25
+00:10:09,180 --> 00:10:19,360
+Ve işte burada security anlamında da birçok eskiye göre daha fazla adım uygulanıyor.
+
+26
+00:10:19,559 --> 00:10:23,180
+İşte gerek gönderilen...
+
+27
+00:10:23,796 --> 00:10:33,036
+Huawei Authentication'daki SMS bilgileri ya da uygulamadan gelen, doğrudan uygulamadan gönderilen bildirimler, oradan gelen kodlar kullanılabiliyor.
+
+28
+00:10:33,635 --> 00:10:36,716
+Bu tarz ödeme çözümlerine şey yapabiliyoruz.
+
+29
+00:10:36,716 --> 00:10:37,576
+Çok pardon.
+
+30
+00:10:51,860 --> 00:11:10,539
+Beklediğiniz için teşekkürler. Bu noktada tabii mobil cihazlardaki verinin korunması privacy ve security anlamında da önemli. Bunun için özellikle işletim sistemi seviyesinde çözümler üretilmeye çalışıyor ve bilgilerin, mesajlaşmaların.
+
+31
+00:11:11,187 --> 00:11:19,908
+Herhangi bir ya da sağlık bilgilerinizin herhangi bir üçüncü kişi tarafından öğrenilmemesi noktasında yeni çözümler üretilmeye başlanıyor.
+
+32
+00:11:20,567 --> 00:11:31,607
+Bu application seviyesinde de kullanacağınız veriyi şifreleyerek paylaşma noktasında ya da cloud'u aktarırken bir şifreleme mekanizmasıyla göndermeniz noktasında çözüme dönüşüyor.
+
+33
+00:11:31,607 --> 00:11:39,187
+Bunlar son yıllarda açıkçası en çok üzerinde çalışılan...
+
+34
+00:11:39,187 --> 00:11:42,647
+Bu alanlarda uygulama geliştirmeye devam ediliyor.
+
+35
+00:11:45,587 --> 00:11:49,488
+Burada application kategorilerini de görüyorsunuz.
+
+36
+00:11:49,728 --> 00:11:56,887
+Finans alanı, medikal, müzik, shopping, sağlık alanı.
+
+37
+00:11:57,587 --> 00:11:58,988
+Buraya dağılmış durumda.
+
+38
+00:11:59,728 --> 00:12:05,087
+Ama en büyük pastada payı sizin de gördüğünüz gibi oyun sektörü alıyor.
+
+39
+00:12:05,556 --> 00:12:19,135
+Mobil cihazlarınızda en fazla oyun uygulamalarının tercih edildiğini, kullanıldığını, insanlar tarafından satın alınımını ya da indirildiğini görebiliyorsunuz.
+
+40
+00:12:19,456 --> 00:12:30,855
+Beklenen trend de burada. Şu anda sektördeki yarattığı bütçe ve ilgiyi de gösteriyor.
+
+41
+00:12:31,360 --> 00:12:50,100
+Bunun dışında tabii eğlence uygulamaları hemen oyun uygulamalarının arkasından geliyor. Onların da belirli bir payı var. İşte foto ve video uygulamalarının son dönemde açıkçası yine payı artma eğiliminde devam ediyor. Bunlarla ilgili çeşitli uygulamalar yapılıyor.
+
+42
+00:12:50,528 --> 00:13:04,528
+Şöyle aktarayım, hani değişimin ne yönde olduğunu. Örneğin fotoğraf uygulamalarında eskiden fotoğrafınızı görürdünüz ve hani belirli aksiyonları yapabilirdiniz. Bugün...
+
+43
+00:13:04,755 --> 00:13:11,155
+Bu fotoğraf uygulamaları default olarak gelen işletim sistemleri tarafından sunulan size benzer fotoğrafları sunabiliyor.
+
+44
+00:13:12,255 --> 00:13:18,935
+Coğrafi bölgelerdeki çektiğiniz fotoğrafları uygun bir şekilde konumlandırarak gösteriyor.
+
+45
+00:13:19,435 --> 00:13:29,615
+Büyükten küçüğe sıralayabiliyorsunuz. İstediğiniz kelime ile o fotoğraftaki bir nesneyi aratıp o nesnenin geçtiği fotoğrafları listeletebiliyorsunuz.
+
+46
+00:13:31,988 --> 00:13:41,048
+Öğrenme ve yapay zeka noktasında ve görüntü işleme teknolojilere dahil olmak üzere birçok yenilik bu fotoğraf ve video uygulamalarına geliyor.
+
+47
+00:13:41,188 --> 00:13:50,388
+Eskiden kesip biçme, edit etme yetenekleri varken bugün çok daha fazlasını fotoğraf içeriği olarak uygulamalar size sunuyor.
+
+48
+00:13:52,980 --> 00:13:57,279
+Binler mertebesindeki fotoğraflarınızın daha iyi yönetilmesini sağlıyor.
+
+49
+00:13:57,440 --> 00:14:00,940
+İşte birçok kaynaktan fotoğraf geliyor, Whatsapp'tan geliyor, farklı kaynaklardan.
+
+50
+00:14:01,539 --> 00:14:04,799
+Bazen bu fotoğraflar aynı oluyor, boşu boşuna yer işgal ediyor.
+
+51
+00:14:04,899 --> 00:14:10,519
+Bunları temizleme noktasında ya da aradığınız bir fotoğrafı bulma noktasında bazen tarihte yeterli olmuyor.
+
+52
+00:14:10,639 --> 00:14:16,680
+Ya da ona benzer işte bir manzara fotoğrafı bulmak istiyorsunuz, bir vesikalık fotoğrafınızı bulmak istiyorsunuz.
+
+53
+00:14:16,680 --> 00:14:20,680
+Binlerce fotoğrafınız arasında bunu bulmanızı kolaylaştıracak birçok...
+
+54
+00:14:20,980 --> 00:14:44,980
+Uygulama geliştirildi son dönemde. O yüzden burada trendin bu günlük hayatta çok sık kullandığımız ama bazı özelliklerin düşündüğümüz, keşke olsa dediğimiz özelliklerin yavaş yavaş eklendiğini ve bu açığı görürseniz siz de bununla ilgili bir oku, yani bir tespit yapıp...
+
+55
+00:14:46,227 --> 00:14:50,548
+Sisteme böyle bir geliştirme yapabiliyorsunuz.
+
+56
+00:14:51,367 --> 00:14:54,567
+Mesela bizim bununla ilgili bir proje geliştirmiştik.
+
+57
+00:14:54,667 --> 00:14:55,967
+Visual.ai diye.
+
+58
+00:14:56,987 --> 00:15:04,907
+Bu Android tarafında da, şu chatten de paylaşayım, siz de belki ilgi duyup bakmak istersiniz.
+
+59
+00:15:06,427 --> 00:15:09,427
+Google Play Store tarafında da bu uygulama var.
+
+60
+00:15:10,027 --> 00:15:10,727
+Visual.ai.
+
+61
+00:15:14,259 --> 00:15:15,359
+Şöyle göndereyim.
+
+62
+00:15:16,979 --> 00:15:26,399
+Bu uygulamada bu bahsettiğimiz bir fotoğraf uygulamasının sahip olabileceği birçok özelliği barındırıyoruz.
+
+63
+00:15:27,399 --> 00:15:35,099
+Bunu bir öğrencimiz bitirme projesi olarak yapmıştı. Sonra market üzerinde yayınlama fırsatımız oldu.
+
+64
+00:15:35,635 --> 00:15:52,895
+Siz de merak ederseniz Android tarafındaki versiyon ücretsiz, iOS tarafındaki versiyon ücretli. İlgilenenler bakabilirler, inceleyebilirler. Bir uygulama geliştirme noktasında ne tür fikirler hayat bulabilir? Bunları görebileceksiniz.
+
+65
+00:15:53,620 --> 00:16:11,959
+Bu kısmı konuşmuştuk. Özellikle buraya aldım. Hani neler tercih edilebilir diye. O yüzden çok detaylı bir şekilde anlatmayacağım. Bir uygulamanın ne tür bir teknikle geliştirilmesi gerektiği noktasında size fikir verebilecek bir diagram.
+
+66
+00:16:13,139 --> 00:16:22,679
+Tabii iOS ve Android işletim sistemi seviyesinde karşılaştırdık ama Application Development açısından da bakmakta fayda var.
+
+67
+00:16:23,251 --> 00:16:46,131
+Bir tarafta closed source kodlar varken yani kapalı iken diğer tarafta açık kaynak kodlardan bahsediyoruz. Bir tarafın developer account fees'i daha ucuzken diğer tarafın account fees'i daha pahalı. Bir tarafta herhangi bir device da uygulama geliştirebilirken ve emulator üzerinde deneme yapabilirken Android tarafında, iOS tarafında.
+
+68
+00:16:46,868 --> 00:16:52,968
+Mutlaka gerçek bir device'e ihtiyaç duyuyorsunuz ya da kullandığınız simülatör size sadece bir fikir veriyor.
+
+69
+00:16:53,807 --> 00:16:59,008
+Ama markete çıkacaksanız mutlaka gerçek bir device'e test etmeniz gerekiyor.
+
+70
+00:16:59,108 --> 00:17:05,768
+Tabii uygulama geliştirebilmek için de bir Apple cihazı sahibi olmanız sizden bekleniyor.
+
+71
+00:17:06,067 --> 00:17:08,128
+İşte Xcode üzerinde geliştirebiliyorsunuz.
+
+72
+00:17:08,788 --> 00:17:11,927
+Swift tarafı Kotlin'e göre daha basit yapıda bir dil.
+
+73
+00:17:12,319 --> 00:17:21,460
+Bu nedenle de iOS tarafında aslında kod geliştirmek düşünülenden daha kolay ama biraz daha maliyetli.
+
+74
+00:17:22,699 --> 00:17:30,940
+Öte yandan buradaki hızınız diploy edilme noktasında iOS'da regulasyonlardan dolayı biraz yavaşlıyor.
+
+75
+00:17:31,359 --> 00:17:35,319
+Birkaç haftayı bulabiliyor uygulamanızın onaylanması.
+
+76
+00:17:35,599 --> 00:17:39,719
+Android tarafında ise bu konuda çok büyük bir denetim yok.
+
+77
+00:17:40,211 --> 00:17:48,211
+O yüzden de Google Play Store'da daha fazla Malware tarzı ya da çok da hani...
+
+78
+00:17:49,844 --> 00:17:54,144
+Verimli çalışan uygulamalarla karşılaşamayabiliyorsunuz zaman zaman.
+
+79
+00:17:54,144 --> 00:18:00,524
+Tabii ki orada da iOS tarafında iyi çalışan bir uygulama, Android tarafında da sorunsuz çalışıyor ama
+
+80
+00:18:00,524 --> 00:18:08,403
+iOS'a koyulmayan ama Android'de birçok ücretsiz olan ama sıkıntılı çalışan uygulamalar da var bu denetimin düşük olması sebebiyle.
+
+81
+00:18:09,284 --> 00:18:12,584
+İşte customization açısından Android daha avantajlı.
+
+82
+00:18:14,084 --> 00:18:15,144
+Onun dışında...
+
+83
+00:18:15,476 --> 00:18:28,496
+Genelde iOS uygulamaları enerji tüketimi açısından daha efektif bir şekilde ilgili cihazlar üzerinde çalışabiliyorlar.
+
+84
+00:18:28,864 --> 00:18:35,903
+Bu noktada açıkçası Android tarafı biraz daha problemli.
+
+85
+00:18:36,064 --> 00:18:40,423
+Çünkü donanım yazılım noktasında farklı geliştiriciler söz konusu.
+
+86
+00:18:41,384 --> 00:18:47,844
+Öte yandan baktığınızda yaygınlık açısından Android'in çok daha yaygın olduğunu görüyorsunuz.
+
+87
+00:18:54,548 --> 00:19:05,028
+Bulmanız çok kolay ama iOS'un belirli bir fiyat politikası olduğu için her segmentte müşteriye sahip olmadığını görüyoruz.
+
+88
+00:19:06,028 --> 00:19:11,108
+Tabi bunların hepsi sizin Application Development stratejinizi doğrudan etkiliyor. Bu ne demek?
+
+89
+00:19:11,807 --> 00:19:21,628
+Açıkçası bu şu demek, siz bir uygulama geliştireceğiniz zaman hangi segment kullanıcı kitlesini hedefliyorsunuz?
+
+90
+00:19:21,935 --> 00:19:23,647
+O kullanıcı kitlesinin...
+
+91
+00:19:23,647 --> 00:19:40,627
+İhtiyaç duyduğu aslında uygulama nedir? Bunların analizinin çok iyi yapılması gerekiyor. Çünkü harika bir fikriniz olabilir ama insanların buna ihtiyacı var mı yok mu? O segment geliştirdiğiniz uygulamayı satın alır mı? Yoksa reklamlardan mı gelir kazanmalısınız?
+
+92
+00:19:51,647 --> 00:19:57,047
+versiyonu tercih ediliyor. Bunların hepsi uygulama geliştirirken dikkat etmeniz gereken noktalar.
+
+93
+00:19:57,167 --> 00:20:02,788
+Çünkü sonuçta bugün, geçen hafta da söyledim Android 12, 13'ü konuşuyoruz.
+
+94
+00:20:02,788 --> 00:20:12,268
+Ama yani Android 10 ve sonrasındaki cihaz sayısı aslında düşünüldüğü kadar fazla değil dünyadaki kullanım oranlarına baktığınızda.
+
+95
+00:20:12,907 --> 00:20:15,447
+Ağırlıklı olarak 8, 9, işte 7.
+
+96
+00:20:17,523 --> 00:20:23,263
+Büyük bir segmentin burada olduğunu görüyorsunuz. Hatta hala eski cihazlar bile var.
+
+97
+00:20:23,263 --> 00:20:34,384
+E tabi bu böyle olunca sizin eski versiyonlarla uyumlu bir uygulama geliştirmeniz de çok önem kazanıyor.
+
+98
+00:20:34,763 --> 00:20:41,283
+Bu noktada işte minimum SDK versiyonunuz ne olacak? Default.
+
+99
+00:20:41,728 --> 00:20:55,108
+versiyonunuz ne olacak? Target, SDK versiyonunuz. Bunları belirlerken bütün bu ihtimalleri masanın üzerindeki değerlendirmeniz önemli.
+
+100
+00:20:55,108 --> 00:21:04,728
+Yani sadece ben fikrim var, yazmaya başladım değil. Bunları dikkate almazsanız, evet markete bir uygulama koyarsınız ama insanların çok fazla ilgisini çekmeyebilir.
+
+101
+00:21:09,268 --> 00:21:13,567
+Reklamının yapılacağı, uygulamayı nasıl yayacağınız vs. bunlar da önem kazanıyor.
+
+102
+00:21:14,867 --> 00:21:21,427
+Her iki iOS ve Android tarafı için de farklı stratejileri dikkate almak gerekiyor açıkçası.
+
+103
+00:21:22,907 --> 00:21:31,268
+Burada yine ikisini karşılaştırdığımızda işte bütçeler...
+
+104
+00:21:31,412 --> 00:21:40,372
+Değişkenlik gösteriyor. Kullanılan programlama dilleri farklı dedik. Publishing formatlar farklı. Her ikisinin pekıç formatları var.
+
+105
+00:21:42,228 --> 00:22:03,668
+Kullanacağımız developer resursları açısından da farklılıkları var. Open ve closed source kodu olmalarından bahsetmiştik. Bu noktada biraz önce söylediğim market share, ilgili müşteri tipleri vs. aralarındaki temel farklılıklarını gösteren ana kalemler olarak karşımıza çıkıyor.
+
+106
+00:22:03,668 --> 00:22:07,528
+Şimdi gelelim Instant App kavramına.
+
+107
+00:22:08,468 --> 00:22:13,728
+Aslında Instant App kavramı şu noktadan çıkarak ortaya atılmış Google tarafından.
+
+108
+00:22:14,528 --> 00:22:18,168
+Kullanıcılar çok fazla uygulama indiriyorlar.
+
+109
+00:22:18,807 --> 00:22:25,628
+Bu uygulamaların belli bir süre sonra cihazda yer olmamasından dolayı,
+
+110
+00:22:26,128 --> 00:22:32,367
+kaynak tüketimlerinin çok fazla olmasından dolayı, enerji tüketmelerinden dolayı boyutların büyüdüğü.
+
+111
+00:22:32,852 --> 00:22:45,072
+Ve cihaz kaynaklarını orantısız seviyede kullanıldığı tespit ediliyor ve denetleme makinesi de çok katı olmadığı için bir memnuniyetsizlik oluştuğu tespit ediliyor.
+
+112
+00:22:45,072 --> 00:22:56,392
+Ve her uygulamanın içerisindeki modüllerin hepsinin de aynı oranda kullanılmadığını yaptıkları inceleme sonunda Google tarafı ortaya koyuyor.
+
+113
+00:23:00,852 --> 00:23:03,892
+Uygulamanın çoğu kodunu aslında çalıştırmıyor.
+
+114
+00:23:04,451 --> 00:23:08,031
+O zaman biz de bir Instant App kavramı çıkartalım.
+
+115
+00:23:08,552 --> 00:23:15,612
+Bu Instant App kavramıyla kullanıcı uygulamanın tamamını marketten indireceğine,
+
+116
+00:23:16,612 --> 00:23:21,432
+uygulamanın kullanmak istediği modülünü indirsin.
+
+117
+00:23:22,812 --> 00:23:24,971
+Cache de bu modülü kullansın.
+
+118
+00:23:25,352 --> 00:23:27,531
+Modülü kullandıktan sonra işi bittiğinde de
+
+119
+00:23:27,759 --> 00:23:40,759
+Artık uygulama herhangi bir şekilde hafızada yer kaplamasın diye bu fikirden yola çıkarak Instant App ortaya çıkıyor.
+
+120
+00:23:40,759 --> 00:23:49,840
+Ve genelde de Google Market'e girdiğinizde bazı uygulamaların yanında download.
+
+121
+00:23:50,387 --> 00:24:09,228
+İşte seçeneğinin yanında o uygulamanın Instant App olduğunu gösteren bir işte geçici kullanım bir link bulunur ve sizin oradan o link üzerinden ilgili uygulamanın ihtiyaç duyduğunuz kısımlarını indirmeniz sağlanabilir.
+
+122
+00:24:16,576 --> 00:24:29,576
+Size sunulması değil, en çok kullanılan, tercih edilen kısmının bir Instant App olarak dizayn edilip market üzerinden kullanıcılara sunulması anlamına geliyor.
+
+123
+00:24:31,327 --> 00:24:49,907
+Bahsedildiği gibi bu application'ın mümkün olduğu kadar az yer kaplaması tercih edilen, örnekler olarak shopping app'ler, ödeme ile ilgili olan kısım, bunların podcast uygulamaları da var, Nives application'lar da var.
+
+124
+00:24:57,652 --> 00:25:03,491
+Modüllerin size sunulması şeklinde gerçekleşiyor bu Instant App kavramı.
+
+125
+00:25:04,912 --> 00:25:06,511
+Buraya kadar sorusu olan var mı arkadaşlar?
+
+126
+00:25:14,036 --> 00:25:15,816
+Peki, devam edelim.
+
+127
+00:25:17,856 --> 00:25:23,636
+Tabii, instant applerin belli limitleri de söz konusu.
+
+128
+00:25:23,636 --> 00:25:31,796
+Bu noktada genellikle instant appler bir sandbox ortamında çalışıyor.
+
+129
+00:25:32,696 --> 00:25:38,636
+İlerleyen dakikalarda application'ların Android tarafında...
+
+130
+00:25:39,200 --> 00:25:58,180
+Nasıl çalıştırıldığını da paylaşacağım sizlerle. Yaklaşık olarak 15 MB'lık bir limiti var Instant M tasarladığınızda. Mesela burada sistem tarafından bir broadcast mesajı yani bir değişiklik olduğuna dair sistem seyresinde bilgi alma şansınız yok.
+
+131
+00:26:01,268 --> 00:26:23,268
+Tabi Permission'lar tarafında da device'i kullanmayı düşünüyorsanız device'ın belirli özelliklerinden faydalanamıyorsunuz. Bunlar limit dahilinde size sunuluyor. Özellikle izinler. Aynı şekilde belirli bir...
+
+132
+00:26:23,892 --> 00:26:31,792
+Bilgiyi saklama noktasında da storage'ı canınızın istediği boyuttaki dosyalar için kullanma şansına sahip olmuyorsunuz.
+
+133
+00:26:31,792 --> 00:26:39,012
+İşte burada bir örnek verilmiş mesela diğer uygulamalarla resim paylaşmak gibi aksiyonlara giremiyorsunuz.
+
+134
+00:26:39,412 --> 00:26:48,792
+Background servisler çalıştıramıyorsunuz ki bunlar aslında neden Instant App olduğunu, niçin böyle bir...
+
+135
+00:26:50,451 --> 00:26:53,272
+Yeni bir yaklaşım ortaya konduğunu bize gösteriyor.
+
+136
+00:26:53,392 --> 00:26:55,872
+Çünkü bunları yaptığınız zaman kod büyüyor.
+
+137
+00:26:56,292 --> 00:27:01,192
+Büyüdüğü zaman doğal olarak kaynak tüketim de oldukça yükseliyor.
+
+138
+00:27:01,192 --> 00:27:05,932
+Ve siz basit bir işiniz için bile bütün uygulama kodlarını kendi tarafınıza indirmeniz gerekiyor.
+
+139
+00:27:08,512 --> 00:27:17,872
+Şimdi aslında son 10 yılda On Demand Application dediğimiz uygulamaların sayısı
+
+140
+00:27:18,612 --> 00:27:32,932
+Çok arttı. Bu onDemand application'ların içerisinde, işte taksi çağırmaktan tutun, bir içerik izleme noktasına kadar çok çeşitli uygulamalar var.
+
+141
+00:27:45,536 --> 00:27:52,016
+Almak için bir arayüzme modüller sunarak bunu mümkün kılması.
+
+142
+00:27:52,976 --> 00:28:04,816
+Burada tabii uygulamayı yazmak kadar uygulamanın lojistik desteğini de, yani daha doğrusu o fikrin lojistik desteğini de organize etmek oldukça önemli.
+
+143
+00:28:12,115 --> 00:28:17,395
+Müsait taksilerin bilgisinin kullanıcının telefonuna aktarılması gerekiyor.
+
+144
+00:28:17,395 --> 00:28:28,395
+Bu arada hem taksilerin tarafında çalışan bir uygulama var, yani kurumsal bir uygulama deyin ona ya da business uygulama, hem de müşteriler tarafında bir uygulama var.
+
+145
+00:28:28,996 --> 00:28:33,395
+O yüzden bazen bir fikri hayata geçirmek için...
+
+146
+00:28:33,807 --> 00:28:38,248
+İki tür uygulamayı da market üzerinde yayınlamanız gerekebilir.
+
+147
+00:28:38,347 --> 00:28:41,127
+Çünkü taksici tarafı ayrı bir uygulama kullanıyor.
+
+148
+00:28:43,347 --> 00:28:45,548
+Müşteri tarafı ayrı bir uygulama kullanılıyor.
+
+149
+00:28:45,548 --> 00:28:48,548
+Burada ilgili...
+
+150
+00:28:49,076 --> 00:28:58,156
+Taksici tarafı kendi konumunu beyan ederken, diğer tarafta müşteri de müsait taksileri arayacak uygulamayı çalıştırıyor.
+
+151
+00:28:58,156 --> 00:29:02,156
+Tabii binme işlemi gerçekleştikten sonra taksinin...
+
+152
+00:29:02,576 --> 00:29:17,436
+Kendini artık boş olmadığına dair konumlandırması ve rotaya gidildikten sonra adrese ödeme işleminin de kartla mı, nakit mi yapılacağının yine uygulama tarafından bildirilmesi gerekiyor.
+
+153
+00:29:23,731 --> 00:29:41,071
+Platforma üye olduktan sonra çeşitli hizmetler sunuyor. Seçtiğiniz diziyi, filmi oradan beğenerek izliyorsunuz. Bu sırada tabii bu streamingi yaparken çok ciddi bir bandwit.
+
+154
+00:29:41,536 --> 00:29:59,536
+denetlemesi ve ayarlaması gerekiyor. Sizin uygulamanızın telefon üzerinde çalışırken bazı mesela uygulamalar sadece yatayda ekranı gösterecek şekilde tasarımlar yapıyorlar ve kullanıcı...
+
+155
+00:30:00,000 --> 00:30:11,019
+Telefonu dikeyde izleyemeyebiliyor. Bu tür kararları uygulamanın stratejik ekibinin verdiği kararlara uygun olarak teknik ekibin implemente etmesi gerekiyor.
+
+156
+00:30:11,959 --> 00:30:27,179
+Keza işte durdurduğunuz nokta, nerede kaldınız, hangi bölümleri izlediniz, bütün bunların işte onDement uygulamalarında müşterinin kendi tercihlerine göre bilgi olarak saklanması
+
+157
+00:30:27,663 --> 00:30:35,743
+Aynı zamanda müşteriye daha iyi öneri sunabilmek için de bütün bu alışkanlıklarının aslında izlenmesi ve kaydedilmesi gerekiyor.
+
+158
+00:30:35,743 --> 00:30:45,123
+Bu da biraz bildiğimiz basit mobil application'ın ötesinde bir sorumluluk yüklüyor.
+
+159
+00:30:55,700 --> 00:31:14,700
+İçeriklere bakıldığını, o içeriğin izlenip izlenmediğini, yarım bırakılmadığını, bütün bunları saklamanız gerekiyor. Buna uygun veri toplayan bir yapı olması gerekiyor. Günün sonunda onDemand uygulamaları artarak devam edecek. Bugün işte yeri geldiğinde...
+
+160
+00:31:16,211 --> 00:31:24,011
+Firmanızın temizliği için belirli bir uygulama üzerinden temizlik firmalarını arayabiliyorsunuz.
+
+161
+00:31:24,152 --> 00:31:36,192
+İşte insanlar çocuklarının bakımı için bu uygulamalar üzerinden kayıtlı olan şirketlerden eve yardımcı olabilecek birini arayabiliyorlar.
+
+162
+00:31:36,291 --> 00:31:37,812
+Ev temizliği için arayabiliyorlar.
+
+163
+00:31:38,491 --> 00:31:43,932
+Bir cihazınız bozulduğunda bunu tahmin ettirmek için buradan bir hizmet arayabiliyorsunuz.
+
+164
+00:31:44,211 --> 00:31:51,192
+Bugün yemek servisleri var, yemek siparişleri yapıyorsunuz. Bunların hepsi onDemand app.
+
+165
+00:31:51,192 --> 00:32:02,016
+Yani talep aslında temelli uygulamalar ve mümkün olduğu kadar da size...
+
+166
+00:32:02,016 --> 00:32:14,731
+Hizmeti en hızlı getirmeyi sağlayacak organizasyona sahip uygulamalar oluyorlar ve bu uygulamaların genellikle de sadece front-end tarafı olmuyor ya da...
+
+167
+00:32:15,092 --> 00:32:26,632
+Uç, işte computing, edge computing dediğimiz sadece mobil telefonlar tarafı değil, aynı zamanda Cloud tarafında da ya da sunucu tarafında da backend de yazılmış.
+
+168
+00:32:27,632 --> 00:32:31,152
+Bu bütün süreci yönetecek kodların da olması gerekiyor.
+
+169
+00:32:31,152 --> 00:32:42,992
+Bugün bir mobil uygulama geliştirmek demek, aynı zamanda frontend, backend noktasında uygulama tasarlamak, geliştirmek demek de anlamına geliyor.
+
+170
+00:32:43,092 --> 00:33:05,592
+Eskiden uygulamalar daha çok telefon üzerinde, işte offline çalışacak modda tasarlanırken bugün çoğu online modda çalışacak şekilde tasarlanıyor. Bir bağlantının kopması durumunda da bu bilgilerin mutlaka kullanıcının kaybı olmadan bağlantı geri geldiğinde kaldığı noktadan devam etmesi isteniyor.
+
+171
+00:33:08,596 --> 00:33:32,796
+Gelelim bir mobil uygulamanın başarılı olup olmadığı, nasıl değerlendirileceği, hangi metriklere bakılacağı, başka bir uygulamayla kıyaslarken işlerin yolunda gidip gitmeyeceği noktasında bakılması gereken başlıklar var.
+
+172
+00:33:32,796 --> 00:33:35,696
+Bunlar işte performans metrikleri.
+
+173
+00:33:36,180 --> 00:33:50,880
+User kullanıcı metrikleri ve Engagement ve Business Metrics dediğimiz biraz daha özelleşmiş ve daha çok uygulamanın lifecycle'ını ilgilendiren metrikler.
+
+174
+00:33:52,720 --> 00:34:00,320
+Performance metriklerine baktığımızda ne kadar application'ın crash ettiği report edilmiş.
+
+175
+00:34:03,443 --> 00:34:24,783
+Market'ten Google Play Store üzerinden ya da Apple Market tarafında uygulamalarla ilgili çeşitli performans metriklerini ya sizin yazdığınız kodlar aracılığıyla ya da Play Store'un size ürettiği bazı çiftler aracılığıyla takip edebiliyorsunuz.
+
+176
+00:34:24,783 --> 00:34:30,703
+Bu noktada işte bir API'nin latency'sini izleyebiliyorsunuz.
+
+177
+00:34:30,996 --> 00:34:54,996
+Aynı şekilde işte peer-to-peer bir haberleşmeden bahsediyorsak burada bir latency var mı? Ne kadar network hatası alıyorsunuz? Bunların hepsini takip ederek uygulamanızın aslında ne oranda hata aldığını ve müşteri tarafına nasıl gözüktüğünü consistency'ni inceleyerek
+
+178
+00:34:57,139 --> 00:35:03,639
+Bir fikir sahibi oluyorsunuz. Açıkçası bu metrikler kullanıcı memnuniyetini doğrudan etkileyen metrikler.
+
+179
+00:35:03,739 --> 00:35:18,519
+Mesela işte bir uygulama açılırken resim yükleyerek açılıyorsa bir ekranda, o resim büyükse ya da bir video ile açılıyorsa ve çok geç açılıyorsa, bunun için özel bir çözüm üretmediyseniz, kullanıcı o uygulamayı kullanmaktan bir süre sonra vazgeçecektir.
+
+180
+00:35:18,519 --> 00:35:23,519
+Çünkü zaten bir an önce ilgili modüle erişmek istiyor. Siz oraya...
+
+181
+00:35:24,467 --> 00:35:33,987
+Yani güzel olsun diye koyduğunuz bir resim ya da video kullanıcı açısından çok da bir anlam ifade etmeyebiliyor. Bunları izlemek gerekiyor.
+
+182
+00:35:34,067 --> 00:35:48,407
+Ya da kullanıcı iki üç defa girip her seferinde X bir modülde crash ediyorsa belli bir süre sonra bu uygulama stabil deyip, stabil değil deyip buradan çıkış yapıyor ve onun alternatif uygulamalara geçebiliyor.
+
+183
+00:35:49,043 --> 00:35:56,523
+Bu yüzden bu performans metriklerini çoğaltabiliriz. Bunlar ana temel kullandığımız metrikler.
+
+184
+00:35:57,223 --> 00:36:05,963
+Kullanıcı metriklerine geldiğimizde özellikle kullanıcıların, aktif kullanıcıların sayısı günlük, aylık nasıl değişiyor?
+
+185
+00:36:06,923 --> 00:36:14,283
+Yani indirme oranları yüksek mi? Olumluya doğru gidiyor mu? Bir yere takılıp kalmış mı?
+
+186
+00:36:16,563 --> 00:36:18,563
+Hangi device'ları daha çok...
+
+187
+00:36:18,623 --> 00:36:31,123
+Kullanan kullanıcıların sizin uygulamanızı kullandığı, hangi işletim sistemleri noktasında sizin uygulamanızın kullanıldığı, dünyanın neresindeki kullanıcıların uygulamanıza ilgi gösterdiği vs.
+
+188
+00:36:31,903 --> 00:36:41,884
+Bunları takip etmek size uygulamanızın sonraki adımlarında nasıl modüllerle desteklenebileceğini ya da hangi segmente hitap ettiğinizi anlamanızı kolaylaştırıyor.
+
+189
+00:36:42,384 --> 00:36:46,403
+Bazen X bir segmenti seçebiliyorsunuz ama size Y segmenti.
+
+190
+00:36:46,623 --> 00:36:56,423
+Daha fazla ilgi gösterebiliyor. Bu doğrultuda yeni bakış açıları katıp uygulamanızı yönlendirebiliyorsunuz. Bunları da mutlaka uygulama geliştirirken dikkate almanız bekleniyor.
+
+191
+00:36:58,523 --> 00:37:06,623
+İnsanların ne kadar uygulamanızda kaldığı, uygulamanızı indirdikten sonra...
+
+192
+00:37:07,347 --> 00:37:19,087
+Hangi sürelerle tekrar uygulamanızı kullanmaya devam ettiği, bir kez kurduktan sonra bir daha geri dönüp uygulamaya bakıp bakmadığı, bunları takip etmek gerekiyor.
+
+193
+00:37:19,587 --> 00:37:24,967
+Uygulamanızda yaklaşık ne kadarlık bir süre vakit geçiriyorlar, bunu izlemek gerekiyor.
+
+194
+00:37:31,827 --> 00:37:40,507
+Uygulamanızı gerçekten kullanmak için indirdiğini mi yoksa bir bakıp çıkmak için mi indirdiğini görebiliyorsunuz.
+
+195
+00:37:40,507 --> 00:37:59,467
+Ve hangi modüllerde ne kadar vakit geçirdiğini izlediğinizde buna bağlı olarak insanların aslında kullanıldığı neden sizin uygulamanızı tercih ettiğinizi ya da uygulamanızın ne kadar bağlı olduklarını bu metriklerle inceleyebiliyorsunuz.
+
+196
+00:38:01,427 --> 00:38:11,228
+Burada tabii iş modeli olarak da birçok metrik takip edilebilir. Örneğin ne oranda?
+
+197
+00:38:11,775 --> 00:38:35,775
+Bir gelir elde ediyorsunuz. Yani uygulamanızın bir ücretsiz versiyonu olabilir. Bir de işte in-app purchase dediğimiz uygulama içerisinde belli hizmetleri almak için ödeme yaptığınız bir uygulama geliştirmiş olabilirsiniz. Bunların oranı nasıl gidiyor? İnsanlar ücret veriyorlar mı? Totalde yaptığınız yatırımın karşılığını ne kadar sürede geri...
+
+198
+00:38:36,755 --> 00:38:59,095
+Alma potansiyeliniz oluşuyor. Bunlarla ilgili özellikle iş ve ekonomik anlamdaki modelin takip edilebileceği burada anlatılmış bazı metrikleri görüyorsunuz. Öte yandan kullanıcıların yazdığı yorumlar, verdiği puanlar çok çok önemli bugün.
+
+199
+00:39:01,108 --> 00:39:10,668
+Bu sayede Google Play Store'da ya da ne diyelim Apple Store'da sizin uygulamanız üstlerde yer alabiliyor.
+
+200
+00:39:12,108 --> 00:39:16,587
+Verdiğiniz isim bile sizin açınızdan önemli.
+
+201
+00:39:16,668 --> 00:39:25,168
+Çünkü aynı isimde olup, uygulamaların birbirine benzer isimde olup, sizin reytinginizin düşük olmasından dolayı
+
+202
+00:39:25,248 --> 00:39:40,827
+Çok gerilerde kalma ihtimaliniz de olabiliyor. Böyle bir risk de var. Ya da seçtiğiniz kategori, application kategorisi çok önemli. Yani doğru bir kategori seçmezseniz insanlar o kategoride ararken sizin uygulamanıza erişemeyebilirler.
+
+203
+00:39:42,967 --> 00:39:47,248
+Bu puanlama işi de ilk etapta...
+
+204
+00:39:48,148 --> 00:40:05,748
+Çok yavaş ilerleyen bir iş. İnsanların dikkatini çektikçe bir çığ gibi büyümeye başlayabiliyor. Bu noktada insanların yüksek puan vermesini nasıl sağlayabilirsiniz? Yorumlarını nasıl iyileştirebilirsiniz? Ciddi stratejiler yapmak gerekiyor.
+
+205
+00:40:13,619 --> 00:40:16,219
+Yoluna devam etmesi çok kolay olmuyor.
+
+206
+00:40:16,219 --> 00:40:17,219
+Tabii...
+
+207
+00:40:17,903 --> 00:40:20,003
+Bunun için çeşitli stratejiler yapanlar var.
+
+208
+00:40:20,163 --> 00:40:22,983
+Kendi yakınlarının puan vermesini sağlıyorlar.
+
+209
+00:40:24,063 --> 00:40:27,884
+Farklı accountlarla manipüle ederek puanları yükseltmeye çalışıyorlar.
+
+210
+00:40:27,963 --> 00:40:28,784
+Bunlar da olabiliyor.
+
+211
+00:40:28,784 --> 00:40:42,003
+Ama günün sonunda bu kullanıcı yorumları ve puanları sizin marketteki üst sıralarda yer almanız için çok önemli noktalardan bir tanesi.
+
+212
+00:40:45,844 --> 00:40:55,264
+Kısaca hızla bu metriklere yakından bakarsak, downloadların ne kadar olduğunu takip etmek burada en önemli hedeflerden bir tanesi.
+
+213
+00:40:55,724 --> 00:41:08,804
+Ve bunun hangi kaynaklardan geldiğini, telefon, tablet, yer geldiğinde bunların kendi içindeki çeşitliliği, bu metrik 200 işin metri olarak karşımıza çıkıyor.
+
+214
+00:41:13,487 --> 00:41:19,447
+Uygulamanızı kullandığı, indirdikten sonra ne kadar bunun peşinden gittiği activation metriyle karşımıza çıkıyor.
+
+215
+00:41:21,527 --> 00:41:29,168
+Burada yani şu önemli retention dediğimizde 3. ve 7. güne dikkat çekiyorlar.
+
+216
+00:41:29,547 --> 00:41:37,447
+Bir uygulama açıldıktan sonra 3. ve 7. gün tekrar o uygulama ilk yüklendiği günden sonra tekrar...
+
+217
+00:41:38,643 --> 00:41:48,883
+Kullanıcı tarafından açılıyor mu? Ya da ilk yüklediği günden sonra ilk 3 güne kadar ya da ilk 7 güne kadar onu açıp kullanıyor mu? Bunlara bakıyorlar.
+
+218
+00:41:49,963 --> 00:42:00,363
+Burada session linkleri ve ne sıklıkla uygulamaya girilip gün içerisinde kullanıldığını takip etmek, kullanıcının ne kadar uygulamanızla angajı olduğunu size gösteriyor.
+
+219
+00:42:02,719 --> 00:42:24,819
+Bir de uninstalllar var. Uygulamanızın uninstall edildiğini takip etme şansına sahipsiniz. Bir modül koyup uninstall edilmeden önce onun sizin tarafınıza o çıktığı üretmesini sağlayabilirsiniz. Böylece kullanıcıların ne kadar uygulamanızdan çabuk vazgeçtiğini ya da
+
+220
+00:42:25,460 --> 00:42:31,699
+Olsun, belli bir süre kalsın deyip demediğini görme şansına sahip olabiliyorsunuz.
+
+221
+00:42:33,960 --> 00:42:37,460
+Yine burada kullanıcıların...
+
+222
+00:42:40,947 --> 00:42:54,347
+Aktiviteleriyle ilgili ne oranda bir ödeme yapacağını, ne oranda aksiyon yaptıklarını görme şansına sahip olabiliyorsunuz verdikleri ücretler üzerinden.
+
+223
+00:42:54,996 --> 00:43:16,255
+Tabii, Reachability de önemli. Yani, işte bildirimlerinizi gönderiyorsunuz uygulama üzerinden, acaba tıklanıyor mu? Mesela öyle bir uygulama yazdınız ki, kullanıcıyı bilgilendiriyorsunuz. Hani kullanıcı kullanmıyor ama oradan bazıları takip edebiliyor. İşte Push Notification mesajlarını ya da In-App Notification'ları, kullanıcılar ne kadar tıkılıyorlar.
+
+224
+00:43:16,916 --> 00:43:32,916
+Bunları takip ettiğinizde kullanıcıya ne kadar interaksiyon yapıyorsunuz ve ona ne kadar ulaşabiliyorsunuz, gönderdikleriniz kullanıcı tarafından okunuyor mu? Bu konuda da bilgi sahibi olabiliyorsunuz. Bunu takip etmek de aslında oldukça önemli.
+
+225
+00:43:34,776 --> 00:43:36,836
+Evet, buraya kadar sorusu olan var mı?
+
+226
+00:43:46,739 --> 00:44:08,739
+Peki, şimdi ilk slide grubumuzu tamamladık. Birçok konuya değindik. Mobil uygulama geliştirme tekniklerini, mobil işletim sistemlerini ve özellikle mobil uygulama trendlerini konuştuktan sonra bir mobil uygulama geliştirmek...
+
+227
+00:44:09,088 --> 00:44:20,088
+Geliştirdiğinizde nelerle o mobil uygulamanın başarısını takip edebilirsiniz? Kabaca onlar konusunda da fikir verdik. Artık yavaş yavaş bizim...
+
+228
+00:44:20,148 --> 00:44:34,648
+Esas odaklanacağımız habitat olan Android işletim sisteminin kendi özel yetenekleri ve sahip olduğu özel bilgileri yavaş yavaş geçebiliriz.
+
+229
+00:44:35,168 --> 00:44:38,768
+Şimdi bir ara vereceğim. Saat 14.44 oldu.
+
+230
+00:44:39,284 --> 00:44:56,284
+Ufak bir görüşme yapmam gerektiği için bu seferki arayı saat 15'e kadar vereceğim. Yani bu sefer 10 dakika değil, 15 dakikalık bir ara vereceğim. 15 dakika sonra kaldığımız yerden devam ediyor olacağız. Teşekkür ediyorum arkadaşlar. Birazdan görüşmek üzere.
+
+231
+01:01:12,980 --> 01:01:20,120
+Evet arkadaşlar, yeniden merhaba. Dersimizin ikinci bölümüne geçiyoruz. Şimdi yeni bir slide paylaşacağım sizlerle.
+
+232
+01:01:24,211 --> 01:01:28,611
+Geçtiğimiz bölümle ilgili soru sormak isteyen varsa bu sırada o soruyu da sorabilirim.
+
+233
+01:01:46,068 --> 01:01:48,688
+Evet, Android Programlamaya yavaş yavaş geçiş yapıyoruz.
+
+234
+01:01:50,608 --> 01:02:00,168
+Android mimarisine baktığınızda aslında temelde 1, 2, 3, 4, 5 katman göreceksiniz.
+
+235
+01:02:01,008 --> 01:02:04,468
+Bir tanesi alt seviyeden başlayacak olursak Linux kernel.
+
+236
+01:02:05,139 --> 01:02:09,139
+Olan kısım ve burada driverların yer aldığını görüyorsunuz.
+
+237
+01:02:09,819 --> 01:02:14,279
+Aynı zamanda Power Management da bu katmanda gerçekleştiriliyor.
+
+238
+01:02:14,359 --> 01:02:16,419
+Bir tane Hardware Abstraction Layer'ımız var.
+
+239
+01:02:16,639 --> 01:02:23,919
+Burada çeşitli hardware'lara ulaşmak için ilgili yazımların konumlandırıldığı,
+
+240
+01:02:24,099 --> 01:02:27,419
+firmware'lerin, driver'ların bulunduğu katman var.
+
+241
+01:02:27,679 --> 01:02:31,419
+Hemen üstüne çıktığınızda burada...
+
+242
+01:02:31,699 --> 01:02:48,623
+Kütüphaneleri göreceksiniz. Bu kütüphaneler özellikle native code geliştirme noktasında, işte Media Framework, WebKit, LibJ kütüphanesi bu noktada hakikaten daha...
+
+243
+01:02:48,623 --> 01:02:54,243
+Efektif iş yapmak isteyen geliştiriciler için çok değerli.
+
+244
+01:02:54,983 --> 01:03:03,623
+Genelde low level seviyede kod geliştirmek isteyenler için burada kütüphaneler öneriliyor.
+
+245
+01:03:03,943 --> 01:03:08,863
+Aynı seviyede Android Runtime mimarisini göreceksiniz.
+
+246
+01:03:12,980 --> 01:03:35,280
+Java Virtual Machine ile başlayıp, işte Dalvik Virtual Machine ne dönüştürülüp, Java Virtual Machine'in bu noktada Java'nın normal device'lar için, özellikle desktop'lar için sunduğu yapının daha küçük device'lara evrilmesi planlanmıştı.
+
+247
+01:03:35,280 --> 01:03:40,199
+Ve Dalvik Virtual Machine uzunca bir süre bunun için hizmet etti.
+
+248
+01:03:40,655 --> 01:03:46,195
+Bugün geldiğimiz noktada Android Runtime yapısını kullanıyoruz.
+
+249
+01:03:46,795 --> 01:03:57,195
+Ve bu Android Runtime yapısı aslında bize birçok fikrin kullanılmasını mümkün kılıyor.
+
+250
+01:03:58,195 --> 01:04:08,675
+Şu bu fikirlerde siz normalde işte just-in-time compilation ve ahead-of-time compilation denilen iki kavramı belki duymuşsunuzdur.
+
+251
+01:04:08,735 --> 01:04:10,995
+Duymayanlar varsa da kısaca bahsedelim.
+
+252
+01:04:10,995 --> 01:04:24,615
+Just-in-time compilation bir uygulamayı indirdiğinizde compilation'ın tam uygulama indirildiği zaman değil,
+
+253
+01:04:24,947 --> 01:04:30,687
+Uygulama çalıştırıldığı zaman yapılmasını mümkün kılan bir yaklaşım.
+
+254
+01:04:30,687 --> 01:04:38,627
+Yani siz Consoles kodları indirdiniz, uygulamayı kullanmadığınız sürece herhangi bir derleme yapılmıyor.
+
+255
+01:04:39,227 --> 01:04:41,807
+Böylece işte byte kodlar oluşturulmuyor.
+
+256
+01:04:42,327 --> 01:04:44,247
+Şimdi bu yapının şöyle bir dezavantajı var.
+
+257
+01:04:44,947 --> 01:04:48,567
+Just-in-Time Compilation yapısında
+
+258
+01:04:49,043 --> 01:05:04,663
+Kodları siz uygulama ilk çalıştırdığınızda ve her çalıştırdığınızda üretecek şekilde bir yapı uyguladığınız için büyük boyutlu uygulamaların yavaş çalışmasına sebebiyet veriyordu.
+
+259
+01:05:05,463 --> 01:05:13,403
+Bundan dolayı zaman içerisinde ahead of time compilation dediğimiz, önceden derleyelim.
+
+260
+01:05:14,516 --> 01:05:23,176
+Değerleme aşaması tamamlansın ve hazır kodlar çalışsın uygulama tıklandığında mantığı düşünüldü.
+
+261
+01:05:23,856 --> 01:05:32,196
+Tabii bunun da artısı ve eksisi var. Evet hızlandırıyor ama kaynak israfı hiç kullanmayacağınız bir uygulama için de bu dönüşümü yapıyorsunuz.
+
+262
+01:05:32,851 --> 01:05:44,491
+O zaman her zaman işte download ettiğiniz bir uygulamanın doğrudan ahead of time compilation ile işte bu bütün dönüşümlerin yapılması kaynak israfı anlamına geliyor.
+
+263
+01:05:44,811 --> 01:05:56,511
+Çünkü source koda bir de kaynak kodu bir de çalışacak kodu, executable kodu ürettiğinizde aynı kodun çarpı iki boyutlusunu saklamış oluyorsunuz.
+
+264
+01:05:59,251 --> 01:06:06,112
+Bu iki mantığın daha sonra birleştirilerek yola devam edildiğini görüyoruz Android tarafında.
+
+265
+01:06:06,112 --> 01:06:12,112
+O da şu, çok sık kullanılma potansiyeli olan...
+
+266
+01:06:12,244 --> 01:06:28,544
+Ya da zaman içerisinde bu gözlenen uygulamanın kısımlarının ahead of type compilation ile önceden değerlenmesi ve hazır olarak çalıştırılacak kodun kullanıma hazır olarak listelenmesi,
+
+267
+01:06:28,544 --> 01:06:34,244
+çok kullanılmayan kısımların ise kullanılacağı zaman değerlenilmesine devam edilmesi.
+
+268
+01:06:40,244 --> 01:06:47,104
+Artı ve eksi yönlerini bir araya getirerek, hibrit bir yapı oluşturarak Android yoluna devam etmeye karar veriyor.
+
+269
+01:06:48,179 --> 01:07:00,000
+Günün sonunda bizim kodlarımız bu runtime environment'da çalışıyorlar ve buraya ait core kütüphanelerde bu katmanda yer alıyor.
+
+270
+01:07:01,340 --> 01:07:15,519
+NDK yeri gelmişken onu da söyleyelim. Native Development Kit aslında sizin burada bu katmanda, native kütüphanelerin olduğu katmandaki kod parçalarını kullanmanızı sağlıyor.
+
+271
+01:07:15,987 --> 01:07:28,887
+Bu da low-level işler yapmak isteyen, performanslı işler yapmak isteyen geliştiricilerin aslında en çok ihtiyaç duyduğu kütüphane bütünü, Native Development Kit.
+
+272
+01:07:29,627 --> 01:07:36,847
+Ama genel bir geliştirme yapıyorsanız Software Development Kit'i, yani Android SDK'yı indirmeniz gerekiyor.
+
+273
+01:07:39,731 --> 01:07:50,655
+Burada işte Content Provider'dan Activity Manager'a kadar, Location Manager'a kadar birçok aslında ana temel API'nin kullanımını...
+
+274
+01:07:50,655 --> 01:08:15,816
+Hizmetinizi açıyor ve siz geliştirirken daha çok temel olarak bu üstten ikinci katmandaki yapıları kullanıyorsunuz. Biraz sonra da onların detaylarını konuşuyor olacağız. Her biri için ayrı bir menajer size sağlandığı için o menajerler üzerinden ilgili sınıflar türetilerek kendi özel sınıfınızı üretiyorsunuz.
+
+275
+01:08:18,655 --> 01:08:32,655
+Üst katmanda default uygulamalar var. Bu uygulamalar zaten işletim sisteminiz size normalde herkesin yapabileceği işleri...
+
+276
+01:08:34,387 --> 01:08:43,608
+Herhangi bir üçüncü markete bağlanmak istemeyen, marketten bir şey indirmek istemeyen kişinin rahatlıkla yapabilmesini sağlayan uygulamalar.
+
+277
+01:08:43,688 --> 01:08:51,288
+Mesela kamera uygulaması, standart bir uygulama size sunulur ve herhangi bir ekstra uygulama indirmeye ihtiyaç duymazsınız ama
+
+278
+01:08:51,288 --> 01:08:58,747
+örneğin daha kapsamlı, daha fazla iş yapan, daha detaylı bir uygulama peşindeyseniz o zaman marketten onu indirip kullanabiliyorsunuz.
+
+279
+01:09:02,387 --> 01:09:06,188
+SMS uygulamaları çok daha kapsamlı bir hizmet verirler.
+
+280
+01:09:06,747 --> 01:09:24,128
+O yüzden o birazcık kullanıcının tercihine bağlı oluyor ama genelde işletim sistemleri bugün sağlık uygulamaları dahil yaklaşık olarak 15-20-30 bandında bir uygulamayı, sistem uygulamasını kullanıma sunuyorlar temel uygulamaları.
+
+281
+01:09:25,747 --> 01:09:28,667
+Şimdi bir sonraki slide'a geçelim.
+
+282
+01:09:29,055 --> 01:09:46,495
+Burada aslında kısa bir bilgilendirme yapacağım. Çok üzerinde durmayacağım. Android mimarisini konuştuğumuz için buna ihtiyaç duyuyorum. Sonrasında Activity, Lifecycle'ı daha fazla konuşacağız.
+
+283
+01:09:46,495 --> 01:09:55,796
+Android tarafında bir uygulama çalıştırdığınızda uygulamanın en temel komponentlerinden biri aktivitelerdir.
+
+284
+01:09:56,192 --> 01:10:04,992
+Ve her ekran bir Activity anlamına gelir. Görülebilen, iş yapılabilen her bir ekranı bir Activity olarak düşünebilirsiniz.
+
+285
+01:10:05,711 --> 01:10:13,271
+Ve o Activity aslında uygulamayı bir proses olarak düşünürseniz, Activity'yi de bir thread olarak düşünebilirsiniz.
+
+286
+01:10:13,452 --> 01:10:16,731
+Çok harika bir benzetme olmasa da bir fikir verecektir.
+
+287
+01:10:23,315 --> 01:10:27,915
+Aktiviteler birbirinden bağımsız olarak bir yaşam döngüsüne sahiptirler.
+
+288
+01:10:28,595 --> 01:10:40,056
+Ve aktiviteye bir kez girdiğinizde, onu lounge ettiğinizde, aktivite işte temel olarak onCreate, onStart, onResume adımlarından geçerek çalışmaya başlar.
+
+289
+01:10:40,735 --> 01:10:42,796
+Ekranda bir şey yaptığınız sürece çalışır.
+
+290
+01:10:43,556 --> 01:10:48,556
+Arkadan bir interrupt geldiğinde bir telefon olabilir, bir bildirim olabilir.
+
+291
+01:10:51,283 --> 01:10:55,823
+Görsel indiğinde, Activity, onPause moduna geçer.
+
+292
+01:10:56,503 --> 01:11:01,543
+Tamamen o ekran ortadan kalktığında onStop moduna geçer.
+
+293
+01:11:02,403 --> 01:11:06,283
+Eğer o Activity artık işe yaramayacaksa sizin tarafınızdan...
+
+294
+01:11:08,404 --> 01:11:21,224
+Uygulamanın temizlenmesi ya da uygulamanın sistem tarafından crash etmesi sonunda ya da yer kalmamış sonunda temizlenmesi durumunda onDistroy ile yaşam bölgüsünü sonlandırır.
+
+295
+01:11:21,224 --> 01:11:33,484
+Ama onStop yani arka plana gidip başka bir şey yapıp geri döndüyseniz aktivite kaldığı yerden onReastot metoduyla tekrar run etmeye başlar.
+
+296
+01:11:36,351 --> 01:11:47,631
+Size telefon geldiğinde, o telefonu ekranda, bazen eskiden tam ekran görüyordunuz, şimdi bildirim gibi yukarıdan düşecek şekilde görüyorsunuz.
+
+297
+01:11:48,912 --> 01:11:59,351
+Sizin aktiviteniz görünür vaziyette arka plana gittiğinde ama interakşın olmadığında on-pause modunda olacaktır ve telefona...
+
+298
+01:11:59,539 --> 01:12:09,340
+Cevap verdikten sonra ya da telefonu reddettikten sonra ekrandan o bildirim gittiğinde tekrar aktiviteniz kaldığı yerden çalışmaya devam edecektir.
+
+299
+01:12:09,340 --> 01:12:21,340
+Genel olarak Android mimarisinde uygulamalar alt birimlerinde bu aktivitelerin çalışmasıyla...
+
+300
+01:12:21,876 --> 01:12:25,156
+Tüm uygulamanın devam etmesini sağlayabilirsiniz.
+
+301
+01:12:25,316 --> 01:12:27,695
+Tabii bu noktada şöyle bir şey var.
+
+302
+01:12:28,355 --> 01:12:40,216
+Bir aktivite hayatta kalıp diğer tüm aktiviteler öldüğünde o uygulama teknik olarak aslında ilgili aktivite üzerinden hizmet vermeye devam ediyordur.
+
+303
+01:12:41,115 --> 01:12:46,816
+İlla bütün aktivitelerin yaşıyor pozisyonda olmasına gerek yok uygulamanın.
+
+304
+01:12:47,667 --> 01:12:59,528
+İlgili aktivitesinin kullanılabilmesi için. Bu yaşam döngüsü içerisinde tüm uygulamalar o anda ekranda bulunan aktiviteler üzerinden aslında hizmet vermeye devam ederler.
+
+305
+01:12:59,528 --> 01:13:04,528
+Tabii arka plan işleri var. Bu sırada sizin...
+
+306
+01:13:05,939 --> 01:13:13,500
+Aktivitenizin bağlı olduğu bir servis olabilir. O servis çalıştırılıyordur. Bunların detaylarını biraz sonra konuşuyor olacağız.
+
+307
+01:13:13,619 --> 01:13:22,279
+Ama Android programlama diyorsanız ilk bilmeniz gereken şey kullanıcıyla interaksiyona giren bir ekran.
+
+308
+01:13:22,836 --> 01:13:33,775
+Tasarladığınızda bunun bir aktivite olduğu ve belirli, spesifik bir işi yapmak için oraya konumlandırıldığı örnek vermek gerekirse bir e-mail uygulamanız var diyelim.
+
+309
+01:13:33,775 --> 01:13:38,775
+Uygulamanın mail yazdığınız ekranı bir...
+
+310
+01:13:39,572 --> 01:13:51,051
+X aktivite iken uygulamada tüm maillerinizi listediğiniz başka bir ekranda uygulamanın Y aktivitesi olarak iki farklı ekran olarak karşınıza çıkacaktır.
+
+311
+01:13:51,152 --> 01:13:58,692
+Siz application içerisinde navigate ederek ilgili application'ın aktivitenin çağrılmasını sağlayabileceksiniz.
+
+312
+01:13:59,104 --> 01:14:17,123
+Bir aktiviteye sadece uygulama içinden mi erişebilirsiniz? Hayır. Bir aktiviteye başka bir aktivite üzerinden ya da başka bir yolla da erişme şansınız var ama uygulamaya açılan bir giriş kapısı olduğunu rahatlıkla söyleyebiliriz. Biraz sonra da bu giriş kapılarının neler alabileceğini detaylı olarak konuşuyor olacağız.
+
+313
+01:14:18,644 --> 01:14:20,443
+Buraya kadar sorusu olan var mı acaba?
+
+314
+01:14:23,444 --> 01:14:26,564
+Hocam, Pause'ça Stop'un farkını bir daha söyler misiniz acaba?
+
+315
+01:14:27,444 --> 01:14:33,104
+Stop olduğunda, Aktivity ekranı artık tamamıyla görünmez olur. Burada yazdığı gibi.
+
+316
+01:14:33,724 --> 01:14:36,564
+Ve siz ekranda aktivitenizi dair hiçbir şey görmezsiniz.
+
+317
+01:14:37,424 --> 01:14:51,444
+Pause moduna geçen bir aktivite ancak, işte bir bildirim ekranının ön plana gelmesi, bir dialog box'ın, bir pop-up'ın o aktivitenin arka planda kalacak, görünüm biçimde kalacak şekilde ön plana çıkması konumunda olur.
+
+318
+01:14:51,444 --> 01:14:59,164
+Görüntü varsa aktivitenizle ilgili ekranda, arka planda da olsa on pause'a, görüntü yoksa on stop'a geçer.
+
+319
+01:15:00,224 --> 01:15:00,944
+Sağ olun, sağ olun.
+
+320
+01:15:02,024 --> 01:15:02,604
+Rica ederim.
+
+321
+01:15:03,004 --> 01:15:06,463
+Hocam ben de bir şey soracağım. Yukarıdan bildirim çubuğunu aşağı indirdiğimizde pause mu oluyor?
+
+322
+01:15:07,859 --> 01:15:23,879
+Bildirim çubuğunu indirdiğinizde pausa oluyor. Çünkü o anda bildirim çubuğu ön plana geldiği için aktiviteniz erişilemez ve ne diyelim interaksiyona giremez olduğu için kendini otomatik olarak on pausa alıyor.
+
+323
+01:15:24,859 --> 01:15:25,579
+Tamam hocam sağ olun.
+
+324
+01:15:35,024 --> 01:15:55,644
+Kendi aksiyon sonunda gerçekleştiği için bu lifecycle içerisindeki state'ler sizin o andaki verilerinizi onstopa girdiğiniz zaman geri döndüğünüzde kaldığınız yerden devam ettirebilmeniz için uygun yapılarda saklamanız beklenir.
+
+325
+01:16:02,707 --> 01:16:16,188
+O kaldığınız ağına ait verilerin manipülasyonun da ve saklanmasının da sağlanması çok önemli. Buna dikkat etmek gerekiyor.
+
+326
+01:16:20,188 --> 01:16:29,188
+Şimdi, burada Android tarafında bir uygulama geliştiriyorsanız,
+
+327
+01:16:29,300 --> 01:16:35,300
+Dikkat edilmesi gereken noktalar var. Bunlar temel...
+
+328
+01:16:35,391 --> 01:16:59,391
+İşte mimari prensipleri olarak da geçiyor. Burada üç katmandan bahsediyoruz. Bir UI Layer, bir Domain Layer ki bu opsiyonel bir de Data Layer. Aslında temel olarak minimumda iki katman yapısı oluşturmanız gerekiyor ki bu şu demek, UI tarafıyla sizin aslında arka taraftaki datayı sakladığınız kısmın
+
+329
+01:16:59,923 --> 01:17:08,963
+Birbirinden, işte model view controller deriz, MVVM deriz, farklı yapılar vardır.
+
+330
+01:17:09,404 --> 01:17:13,583
+Bununla kadar UI layer ile data layer'ı birbirinden ayırmanız sizden bekleniyor.
+
+331
+01:17:18,899 --> 01:17:42,019
+Dataya birincisi doğrudan erişimin engellenmesi, ikincisi UI Layer'da yaptığınız bir değişikliğin data ile ilgili herhangi bir sıkıntı çıkarmaması ya da data tarafında yaptığınız bir değişikliğin UI'da da başka değişiklikler gerektirmemesi için sizin bu prensiplere uygun bir şekilde yazılım geliştirmeye başlamanız öneriliyor.
+
+332
+01:17:43,667 --> 01:17:49,387
+Google tarafından Android yapısını kullanacaksınız.
+
+333
+01:17:51,688 --> 01:17:59,247
+Şimdi burada UI Layer dediğiniz zaman iki tane temel alt blok ortaya çıkıyor.
+
+334
+01:17:59,307 --> 01:18:01,387
+Bir UI elementler bir de Stateholder'lar.
+
+335
+01:18:04,948 --> 01:18:22,228
+View'lar olarak düşünürseniz, yani sizin bilgiyi gösteren elementleriniz olarak düşünebilirsiniz ya da işte checkboxlar, ondan sonra buttonlar gibi yapılar olarak düşünürseniz bir de stateholder'lar var.
+
+336
+01:18:22,307 --> 01:18:28,387
+Stateholder'lar da o anda bulunduğunuz ekrandaki UI elementlerin sahip olduğu bilgileri saklayan.
+
+337
+01:18:28,819 --> 01:18:33,619
+Yapılar, aynı zamanda UI elementleri saklayan yapılar.
+
+338
+01:18:33,619 --> 01:18:35,619
+Yani işte bir...
+
+339
+01:18:36,243 --> 01:18:40,224
+Frame'e yerleştirdiğiniz, bir container'a yerleştirdiğiniz UI elemanlar olabilir.
+
+340
+01:18:40,224 --> 01:18:48,623
+Öte yandan, o ilgili, işte Select Box olabilir, bu Text Area olabilir, Text View olabilir.
+
+341
+01:18:49,123 --> 01:18:53,224
+Oradaki bilginin saklanmasından sorumlu State Holder'lar.
+
+342
+01:18:54,103 --> 01:18:56,863
+UI Layer içerisinde de bunlarla karşılaşıyor olacaksınız.
+
+343
+01:18:57,703 --> 01:19:01,903
+Önümüzdeki dönemlerde bunları daha sık konuşuyor olacağız.
+
+344
+01:19:02,523 --> 01:19:04,224
+Data Layer tarafına geldiğinizde de...
+
+345
+01:19:04,243 --> 01:19:21,363
+İki türlü verinin muhafaza edildiği yapı söz konusu olabilir. Biri, Prozotery'ler var. İşte GitHub ve benzeri şekilde. Bir de Data Source'lar var. Data Source'lar daha çok işte dosya, database, işte şeyet preferences vesaire gibi.
+
+346
+01:19:29,524 --> 01:19:32,644
+Konumlandırabileceğiniz farklı modeller var.
+
+347
+01:19:33,764 --> 01:19:36,904
+Farklı veriyi saklama yapıları var.
+
+348
+01:19:37,123 --> 01:19:39,284
+Söylediğim gibi dosya, database.
+
+349
+01:19:39,884 --> 01:19:50,004
+Öbür taraftan repository dediğimiz, sizin uzaktan bağlanıp kodları saklayabildiğiniz yapılardan bahsedebiliriz.
+
+350
+01:19:52,819 --> 01:20:00,279
+Burada application'larla ilgili temel bazı, şurada bir yazım atası olmuş, onu düzeltelim.
+
+351
+01:20:02,180 --> 01:20:07,260
+Temel bazı dikkat edilmesi gereken noktalar var.
+
+352
+01:20:17,492 --> 01:20:27,532
+Data Layer kullanarak bir abstraction yapın ve bu yapıya da belirli fonksiyonlar üzerinden, belirli metotlar üzerinden erişin.
+
+353
+01:20:27,971 --> 01:20:32,971
+Bu sayede hem veriniz değiştirilemez olsun doğrudan erişerek.
+
+354
+01:20:33,192 --> 01:20:36,992
+Bu birazcık Java'daki public private key mantığına benziyor.
+
+355
+01:20:38,612 --> 01:20:41,471
+Daha doğrusu key demeyelim de public private yapısına benziyor.
+
+356
+01:20:45,492 --> 01:20:57,492
+Elemana siz ilgili Gator ve Setter'larla erişebilirsiniz ama Public yaptığımızda doğrudan nesnenin elemanını refer ederek değişiklik yapabilirsiniz.
+
+357
+01:20:58,192 --> 01:21:07,612
+Bunu mümkün olduğunca bu Abstraction Layer'ı sağlayarak verinin arka planda yönetilmesini öneriyor Android mimarisi.
+
+358
+01:21:13,492 --> 01:21:41,492
+Bu düzeyde tutulmasını mutlaka öneriyor. Modüler yapının olabildiğince modüllerin küçük tutulmasını ve bir aktivitede olması gerekenden daha fazla iş yapmamanızı öneriyor. Biraz önce anlattım. Aynı aktivitede mailleri listeleyip, kompoz edip mail yazabilirsiniz. Ama bunu mümkünse ayrı ekranlarda tasarlamak her zaman için işi kolaylaştırıyor. Bu sayede...
+
+359
+01:21:41,492 --> 01:22:02,311
+Ve test edilebilirlikte kolaylaşıyor. Bu nedenle her uygulamanızın parçası için, o uygulamanın parçasının bağımsız test edilebilmesini sağlamak yine önemli mimari dikkat edilmesi gereken noktalardan bir tanesi.
+
+360
+01:22:07,315 --> 01:22:26,315
+Korunması ve kaybolmamasına özen gösterilmesi gerekiyor. Bunu saklayacağımız veri yapılarında konuşacağız. Özellikle telefonunuzun konfigürasyonu değiştiğinde, aktivitenin öldüğünü, mesela ekranı döndürdüğümüzde, dikey...
+
+361
+01:22:26,804 --> 01:22:39,904
+Yataya geçtiğinizde, onDistroy ile aktivitenin öldüğünü, aktivite öldüğü zaman da oradaki bütün o doldurduğunuz forma ait, o ekrana ait bilgilerin kaybolduğunu göreceksiniz.
+
+362
+01:22:40,484 --> 01:22:44,304
+Bunun için ne tür önlemler alabileceğinizi sizlerle paylaşacak Android.
+
+363
+01:22:44,564 --> 01:22:48,503
+Buna uygun olarak kod geliştirmenizi öneriyor.
+
+364
+01:22:50,123 --> 01:22:52,564
+Başka kritik bir nokta var mı diye bakıyorum.
+
+365
+01:22:54,131 --> 01:22:56,492
+Sanırım en temel olanları konuştuk.
+
+366
+01:22:58,951 --> 01:23:04,131
+Peki gelelim, bir uygulama geliştireceksiniz. Nereden başlayacaksınız?
+
+367
+01:23:04,851 --> 01:23:14,431
+Bir kere, application'ların başlayabilmesi için farklı noktalar var.
+
+368
+01:23:17,043 --> 01:23:20,644
+Giriş yapabilmeniz için genellikle aktiviteler vardır.
+
+369
+01:23:21,283 --> 01:23:28,304
+Ama işte servisler ve Broadcast Receiver'lar da o application'a giriş yapabilmeniz için size imkan tanırlar.
+
+370
+01:23:29,783 --> 01:23:32,043
+Ama hani genellikle...
+
+371
+01:23:32,243 --> 01:23:50,623
+Bir uygulamayı açtığımızda genelde launcher dediğimiz uygulamanın bir launch edildiğinde başlamasını sağlayan bir aktivite vardır ki bir uygulamada birden fazla aktivite olduğunda onun tipini launcher olarak belirlemelisiniz ki uygulama ilk açıldığında hangi aktiviteyi çalıştıracağını bilsin.
+
+372
+01:23:50,623 --> 01:23:54,144
+Bunun tanımını da Android Manifeste yaparsınız.
+
+373
+01:23:55,667 --> 01:24:05,327
+Uygulamanın bir ikonu vardır, uygulamanın bir ismi vardır. Bunlarla ilgili bilgilerin de mutlaka tanımlanması gerekir.
+
+374
+01:24:07,380 --> 01:24:13,659
+Bir uygulama geliştiriyorsanız, tek tip bir ekranı dikkate almak çok akıllıca değildir.
+
+375
+01:24:14,159 --> 01:24:19,920
+Çok fazla sayıda farklı layout'a sahip, farklı ekran boyutlarına sahip cihazlar vardır.
+
+376
+01:24:20,520 --> 01:24:30,640
+Ya da bir cihazı döndürdüğünüzde, dikey ve yatay kullanımlarda tasarladığınız layout farklı olmak zorundadır.
+
+377
+01:24:34,612 --> 01:24:42,572
+Döndürme olasılığına karşı bu layoutları ekran boyutu ile uyumlu hale getirmeniz beklenir.
+
+378
+01:24:42,771 --> 01:24:56,612
+Bazı uygulamalar döndürmeden tek bir eksende çalışmayı tercih ederler ve bunun için bir ayar yardımıyla sizin telefonu döndürdüğünüzde de aktivitenin yeni bir...
+
+379
+01:24:58,771 --> 01:25:16,231
+Forma, yeni bir layout'a geçmesini engelleme imkanı verir. Bu sayede işte bir video uygulaması kullanıyorsanız ve o bunu engellediyse dikeye çevirdiğinizde video uygulaması hala yataydaki görüntüsüyle sizin karşınızda telefonunuzu çevirseniz de kalmaya devam eder.
+
+380
+01:25:16,332 --> 01:25:24,332
+Çünkü bu orientation'ı laklamış olduğu anlamına gelir geliştiricinin ve size bu imkanı tanımaz. Bu tamamen sizin tasarımınıza bağlı ama
+
+381
+01:25:25,011 --> 01:25:33,971
+Çoğu uygulama döndürülebilir olarak hizmet verdiği için ekran size'larına göre bir tasarım yapılması önem kazanır.
+
+382
+01:25:33,971 --> 01:25:35,971
+Tabii eskiden...
+
+383
+01:25:37,140 --> 01:25:54,140
+Sadece screen size'ları üzerinden ilerliyorduk. Sonra işte ya da piksel sayıları üzerinden ilerliyorduk. Ondan sonra belirli reyşolar gelmeye başladı ve oransal olarak ilerlemeye başladık. Bu işte responsive dizayndaki gibi bir tablete aynı uygulamayı...
+
+384
+01:25:54,804 --> 01:26:06,963
+Diploy ettiğinizdeki o sayfanın, mobil web teknolojide yazılan sayfanın, tabletin ekranına göre genişlemesi ya da telefona göre küçülmesi noktasındaki kolaylığı Android tarafına da getirdi.
+
+385
+01:26:06,963 --> 01:26:22,684
+Bununla ilgili işte density per inch şeklinde DPI ve değerleri vererek uygulamanızın aslında görselliğini farklı deviceler için daha yönetilebilir.
+
+386
+01:26:22,804 --> 01:26:24,564
+Daha düzgün olmasını sağlayabiliyorsunuz.
+
+387
+01:26:30,036 --> 01:26:43,756
+Şimdi tabii burada şunu muhtemelen söylemeyi unuttum. Bir tane slide kaymış onu da yukarı alalım. Burada olması gerekiyordu bir tane aşağıya kaymış.
+
+388
+01:26:43,756 --> 01:26:45,476
+Architecture.
+
+389
+01:26:46,144 --> 01:26:54,144
+Arkadaşlar, konusundaki bu hassasiyetimiz neden kaynaklanıyor? Bunu hemen söyleyelim. Biraz önce architecture ile ilgili çok şey söyledik.
+
+390
+01:26:54,684 --> 01:27:04,664
+Birincisi, uygulamanızın ölçeklenebilirliğini mümkün kılıyor architecture konusundaki biraz önceki noktalara dikkat ettiğinizde.
+
+391
+01:27:05,984 --> 01:27:12,504
+Test işlemlerinizin daha hızlı ve hatayı ayıklamada daha çabuk olmanızı mümkün kılıyor.
+
+392
+01:27:14,068 --> 01:27:22,507
+Totalde uygulamanızın yönetilebilirliğini, bakım yapılabilirliğini iyileştiriyor ve kalitesini arttırıyor.
+
+393
+01:27:22,587 --> 01:27:25,968
+Bu da doğal olarak 100% experience'e yansıyor.
+
+394
+01:27:25,968 --> 01:27:40,968
+Çünkü mimarisi sağlam olan bir uygulama geliştirdiğinizde, bunlara dikkat ederek geliştirdiğinizde aslında kullanıcının bir aktivitede çok fazla beklemesini...
+
+395
+01:27:41,087 --> 01:27:48,087
+Ya da bir aktivitede kaybolmasını ve ne yapacağını bulamamasını engellemiş oluyorsunuz.
+
+396
+01:27:49,028 --> 01:27:53,087
+Uygulamalar arasındaki veri akışını hızlandırmış oluyorsunuz.
+
+397
+01:27:54,028 --> 01:27:58,347
+Bunlara mutlaka dikkat etmek gerekiyor deyip kaldığımız yere geri dönelim.
+
+398
+01:28:00,051 --> 01:28:06,111
+Bir uygulama geliştireceksiniz. Nelerle karşılaşacaksınız? Uygulamayı nasıl geliştireceksiniz Android tarafında? Onu konuşalım.
+
+399
+01:28:06,211 --> 01:28:20,431
+Önce hangi diller var? Artık Kotlin, Java, C++ var ama Kotlin'in daha fazla kullanıldığını, yaygınlaştığını her geçen gün rahatlıkla söyleyebiliriz.
+
+400
+01:28:27,796 --> 01:28:33,816
+C++ çok da yoğun olarak kullanılmıyor. Daha çok C programlı bir dili kullanılıyor.
+
+401
+01:28:33,916 --> 01:28:36,856
+Onu da NDK ile kullanıldığını size bahsetmiştim.
+
+402
+01:28:37,356 --> 01:28:42,356
+Gelelim, işte birden fazla aktivite yazdınız. Belki servis.
+
+403
+01:28:42,752 --> 01:28:57,811
+İşte ya da Broadcast Receiver'larınız var. Günün sonunda bunların hepsi sizin source kodlarınızı oluşturuyor. Bir de layout gibi resource file'larınız var. Bunlar genellikle XML.
+
+404
+01:28:58,484 --> 01:29:25,384
+formatında saklanıyor ve resource file'leri olarak adlandırılıyor. Bunların hepsi bir arada paketlendiğinde bir APK package'tan bahsediyoruz ve Android bu APK package'ı çalıştırarak aslında derlenmiş versiyonu kullanmanızı mümkün hale getiriyor.
+
+405
+01:29:26,484 --> 01:29:50,144
+Ben uzun yıllar önce, yani artık eskidiği için söylüyorum, Android App Bundle yaklaşık olarak 6-7 sene önce hayatımıza girdi. Daha önce sadece bir APK vardı. Android App Bundle'ın kısaltması AAB şeklinde gerçekleşiyor ve APK'nın bir alternatifi değil aslında.
+
+406
+01:29:50,644 --> 01:30:12,564
+A, B, App Bundle bize bütün farklı cihazlar için olası source kodların ya da resource file'ların yüklendiği bir aslında arşiv file'ını temsil ediyor.
+
+407
+01:30:15,891 --> 01:30:27,891
+Marketten bir uygulama indirirken, o kullanıcının device'ına spesifik hardware ve software neşletim sistemine bağlı olarak ilgili kodların...
+
+408
+01:30:28,595 --> 01:30:34,055
+İnmesini aslında market bu yapı sayesinde mümkün hale getiriyor.
+
+409
+01:30:34,055 --> 01:30:38,055
+Yani siz X bir cihaza sahipsiniz, Y bir işletim sistemine sahipsiniz.
+
+410
+01:30:39,175 --> 01:30:43,015
+Sizin cihazınızda diyelim ki kullanılan bir sensör özelliği yok.
+
+411
+01:30:43,135 --> 01:30:46,055
+O zaman o sensörle ilgili kısımların...
+
+412
+01:30:46,804 --> 01:31:04,403
+Sizin telefonunuza indirilmemesini sağlıyor Android, Google, Play Store ile. Bu kontrolleri yapıyor. Yani neler var hardware ve software yeteneği olarak? Yazılan uygulamada hangi parçalar buna uyumlu olarak hizmet verebilir?
+
+413
+01:31:04,768 --> 01:31:16,768
+Eğer zaten kullanılamayacaksa, donanım ve yazılım konfigürasyonu da ondan o zaman bu uygulamanın, bu kısımlarının o cihaza yüklenmesine gerek olmadığına kanaat getiriyor ve böylece...
+
+414
+01:31:17,011 --> 01:31:29,471
+Çok büyük bir paket olan 100 MB'lik paket, örneğin 80 MB'a, 70 MB'a inerek sizin tarafınıza sadece sizin cihazınızda çalışacak ilgili konfigürasyonlarla iniyor.
+
+415
+01:31:29,471 --> 01:31:41,311
+Buna başka bir örnek, işte device'ınızın screen size'ından tutun, device'ınızın çözünürlüğüne kadar her türlü bilgi analiz edilerek,
+
+416
+01:31:41,747 --> 01:31:53,127
+O device'e özel yüklediğiniz resimler varsa başka device'larda, küçük device'lar için sizin kütüphaneniz içerisinde.
+
+417
+01:31:53,920 --> 01:31:59,620
+Demeyelim de resource filinin içerisine koyduğunuz bilgiler varsa onları otomatikman eliyor.
+
+418
+01:31:59,840 --> 01:32:04,880
+Çünkü zaten sizin device'ınızda ilgili resimler göstereceği için bunu yapmış oluyor.
+
+419
+01:32:05,220 --> 01:32:11,660
+Bu da şu demek, siz kodu geliştirirken her device'da çalışacak şekilde planlamanızı yapıyorsunuz.
+
+420
+01:32:11,660 --> 01:32:21,920
+Bir app bundle oluşturuyorsunuz. App bundle market üzerinden indirilirken bu ayıklama yapılarak uygun kod ve resource fililerini indirilir.
+
+421
+01:32:21,920 --> 01:32:37,260
+İndirilmesi sağlanıyor. Eskiden bu app bandalı yokken sadece APK file oluşturuyordu ve her şey her device'e yükleniyordu. Bu önemli bir yenilik olarak uzun süredir Android'in gündemi kullanılıyor.
+
+422
+01:32:46,836 --> 01:33:04,316
+Her bir proses ayrı bir user olacak şekilde ilgili virtual machine'in de çalışıyor. Yani hiçbir proses istenmediği sürece başka bir prosesin ayağına basma ihtimalle sahip değil.
+
+423
+01:33:04,768 --> 01:33:11,747
+Bunu da her biri için ayrı bir virtual machine üreterek Android tarafı gerçekleştiriyor.
+
+424
+01:33:12,207 --> 01:33:25,768
+Bu sayede kodlar tamamen birbirinden, iki farklı uygulamaya ait kodlar tamamen birbirinden ayrı bölgelerde çalışarak aslında burada principle of least privilege dediğimiz işte tamamen...
+
+425
+01:33:26,452 --> 01:33:31,771
+En düşük düzeyde kontak halinde olacak şekilde konumlandırılıyorlar.
+
+426
+01:33:32,311 --> 01:33:33,851
+Tabii bunun tersini yapmak mümkün.
+
+427
+01:33:34,811 --> 01:33:44,511
+Yani o da şu demek, her bir application bir user ID'ye sahip farklı bir user ID'ye.
+
+428
+01:33:44,511 --> 01:33:47,511
+Ama diyelim ki iki application...
+
+429
+01:33:48,079 --> 01:34:11,079
+Birbirleriyle veri paylaşımı yapacaklar. O zaman uygulamaların aynı User ID'ye sahip olmaları organize edilerek aynı VM içerisinde çalışmaları sağlanıyor ve hem veri aktarımı daha hızlı hale getiriliyor hem de...
+
+430
+01:34:11,792 --> 01:34:19,552
+Bu noktada kaynak tasarrufu boşu boşuna yeni bir virtual machine açılmıyor.
+
+431
+01:34:20,112 --> 01:34:21,932
+Yeni bir proses tablosu oluşturulmuyor.
+
+432
+01:34:22,472 --> 01:34:28,072
+İkisi de aynı VM içerisinde kaynakları kullanmaya devam edebiliyor.
+
+433
+01:34:28,072 --> 01:34:39,072
+Bunu yapabilmeniz için tabii ikisini uygulamaların ya da üçünü aynı birbiriyle paylaşım yapacak uygulamaların aynı certificate ile imzalamanız gerekiyor.
+
+434
+01:34:39,792 --> 01:34:51,672
+Tabii burada birbirleriyle sadece şehir konusunda yani bir veri paylaşımı noktasında interakşında olmak zorunda değiller.
+
+435
+01:34:51,792 --> 01:34:55,792
+Onun dışında bir uygulama device'ın...
+
+436
+01:34:56,275 --> 01:35:03,496
+çalıştığı device'in herhangi bir GPS'ine, kamerasına, Bluetooth'una bağlanma request'inde bulunmak isteyebilir.
+
+437
+01:35:03,496 --> 01:35:11,496
+O zaman yine buna uygun olarak ayarların dizayn edilmesi ve oradaki...
+
+438
+01:35:13,011 --> 01:35:25,992
+İzinlerin, yani sadece kendisinin kaynaklarına erişilebilir dediğimiz yapının, sistemin kaynaklarına erişme noktasında da izinler üzerinde organize edilmesini ihtiyaç duyuyor.
+
+439
+01:35:26,271 --> 01:35:33,412
+Yani siz kameraya erişmek istediğinizde biliyoruz ki o application sadece kendi hakları dahilinde iş yapabiliyor.
+
+440
+01:35:33,551 --> 01:35:40,992
+Kameraya erişmek kendi hakkı değil. O zaman ya install time sırasında yüklenirken ya da run time sırasında.
+
+441
+01:35:41,011 --> 01:35:46,351
+Bu iznin mutlaka alınması gerekiyor ki bu izinleri de yine konuşuyor olacağız.
+
+442
+01:35:46,692 --> 01:35:47,851
+Buraya kadar soru sorun var mı?
+
+443
+01:35:55,988 --> 01:36:12,688
+Hızlı gittiğimi düşünen varsa yazabilir ya da başka bir talebi olan varsa dersin işlenişiyle ilgili olarak belirtebilir ya da sorunuz olursa anlatırken de el kaldırıp devreye girebilirsiniz.
+
+444
+01:36:12,688 --> 01:36:13,347
+Peki.
+
+445
+01:36:17,347 --> 01:36:22,927
+Şimdi Android programlama yaparken
+
+446
+01:36:23,507 --> 01:36:43,007
+Kullanılan temel Application komponentler var. Bunlar bir uygulamada olmazsa olmazlar. Şöyle olmazsa olmazlar. Her uygulamada bunları kullanacaksınız diye bir şey yok. Ama kullanabileceğiniz temel bloklara baktığımızda...
+
+447
+01:36:43,731 --> 01:36:51,851
+Temel komponentlere baktığımızda bir, aktiviteler, iki, servisler, üç, broadcast receiver'lar, dört, content provider'ları görüyoruz.
+
+448
+01:36:52,171 --> 01:36:55,671
+Bunlar bir uygulamayı inşa ederken kullanacağınız blok yapılar.
+
+449
+01:36:56,532 --> 01:37:02,652
+Bu uygulamayı inşa ederken, bu uygulamada olmazsa olmaz olan bir diğer dosya Android Manifest.
+
+450
+01:37:02,652 --> 01:37:07,112
+Yani siz bir uygulamanızda mutlaka bir ee.
+
+451
+01:37:08,532 --> 01:37:20,971
+Kuralları tanımladığınız, izinleri verdiğiniz ya da aldığınız bir dosya yapısı kullanmanız gerekiyor. Bunun ismi her Android uygulaması için Android Manifest dosyasıdır.
+
+452
+01:37:20,971 --> 01:37:30,251
+Tabii bu source kodlara ek olarak application resource'lar geliyor ki bunlar işte view'lar, layout'lar.
+
+453
+01:37:30,640 --> 01:37:36,820
+Ve çeşitli XML dosyaları, bunları da konuşuyor olacağız.
+
+454
+01:37:38,700 --> 01:37:43,620
+Burada Android programlamayı ikiye ayırmak gerekiyor.
+
+455
+01:37:44,280 --> 01:37:47,640
+Bir tarafta aslında daha çok business logic.
+
+456
+01:37:48,148 --> 01:38:02,427
+ve Application Login olduğu aslında hem verinin yönetildiği kısım hem de verinin işlendiği kısım var ki bunları buradaki bahsettiğimiz temel komponentlerle yapıyorsunuz.
+
+457
+01:38:02,427 --> 01:38:11,947
+Bir tarafta verinin daha çok görselleştirildiği User Interface olarak ekrana yansıtıldığı taraf.
+
+458
+01:38:12,427 --> 01:38:14,688
+Var ki bunlar da resource fileler, onları da XML.
+
+459
+01:38:15,252 --> 01:38:31,472
+Dilini kullanarak yapıyorsunuz. Java ve Kotlin'le burada bahsettiğimiz Activity, Service üzerinden kod geliştirirken, diğer tarafta layoutlar ve resource'lar için XML sintaksını kullanarak düzenlemeler yapıyorsunuz.
+
+460
+01:38:31,472 --> 01:38:35,032
+Bu işi kolaylaştıran tabii başka ne diyelim?
+
+461
+01:38:35,667 --> 01:38:45,087
+Temel tool'lar da var. Onu da Android Studio tarafına geçtiğimiz zaman konuşuyor olacağız.
+
+462
+01:38:47,087 --> 01:38:48,587
+Aktiviteler nelerdir?
+
+463
+01:38:48,587 --> 01:38:50,587
+Bir activity...
+
+464
+01:38:53,427 --> 01:39:01,547
+Kullanıcıyla ilgili uygulamanın herhangi bir modülünün interakçına girdiği noktalardan bir tanesidir.
+
+465
+01:39:02,247 --> 01:39:07,007
+Tek bir ekran üzerinden bir kullanıcı arayüzü sunar.
+
+466
+01:39:07,627 --> 01:39:13,247
+Burada biraz önce verdiğim örnek gibi bir e-mail uygulamasındaki login ekranı bir aktivitedir.
+
+467
+01:39:13,847 --> 01:39:17,927
+Login olduktan sonra gelen tüm maillerin listelendiği ekran bir başka aktivitedir.
+
+468
+01:39:18,420 --> 01:39:26,439
+Bir mailin detayına girdiğiniz ekran bir başka aktivitedir. Yeni bir mail yazdığınız ekran bir başka aktivitedir.
+
+469
+01:39:26,539 --> 01:39:36,340
+Her biri kullanıcının bir işi yaptığı ve telefon ile aksiyon alabildiği bir ekranı temsil eder.
+
+470
+01:39:40,815 --> 01:39:51,576
+Uzun süreli çalışacak işler için aslında bir komponent olarak sunulmuştur.
+
+471
+01:39:52,095 --> 01:39:56,195
+Herhangi bir user interface gerekmez bir servis kullanmanız için.
+
+472
+01:39:57,055 --> 01:39:59,996
+Örneğin bir müzik uygulaması, arka planda çalışabilmesi.
+
+473
+01:40:00,000 --> 01:40:19,880
+Servis kullanmanız genelde beklenir. Tabi bugün background tasklar için başka özel yapılar da var. Servisler daha uzun süreli arka planda kesintisiz çalışma ihtiyacı duyulan operasyonlar için kullanılıyor.
+
+474
+01:40:25,555 --> 01:40:37,835
+Kaynak tüketimleri de vardır ve Android işletim sistemi bir kaynağa ihtiyaç duyduğunda kullanıcı interaksiyonu olmadığı için ilk feda edeceği komponentlerden biri servislerdir.
+
+475
+01:40:37,835 --> 01:40:53,555
+Eğer RAM'de yeterli alan kalmadıysa servisleri sonlandırarak inisiyatifini kullanıp bir anda kaynak yetersizliği sebebiyle arka plan işinizin kesintiye uğrama olasılığı her zaman...
+
+476
+01:40:53,555 --> 01:41:01,255
+Bu nedenle servislerin sürekliliğini Android işletim sistemi hiçbir zaman garanti altına almaz.
+
+477
+01:41:02,155 --> 01:41:06,576
+Broadcast Receiver'larsa bizim açımızdan şöyle bir önem taşır.
+
+478
+01:41:07,036 --> 01:41:10,255
+Sistem hakkında ve diğer uygulamalar hakkında bilgi alabilmenin...
+
+479
+01:41:10,960 --> 01:41:37,579
+Ve bilgi paylaşabilmenin en güzel yoludur. Bu ne demek? Telefonunuz şarjda mı değil mi? Telefonunuz kritik seviyede bir batarya noktasına geldi mi yoksa şarjı doldu mu? Bir Wi-Fi ağına bağlı mı değil mi? O anda bir hücresel bağlantı var mı yok mu gibi sistemsel seviyede bir değişiklik gerçekleştiğinde bunun
+
+480
+01:41:37,984 --> 01:41:56,304
+Bu ilgisinin diğer tüm uygulamalara announce edilmesi ve bunun takibini yapan uygulamaların, publish'a subscribe deriz, biri publish eder, sistem bunu publish eder, subscribe olmuş olan da bu bilgiyi takip eden kişi de publish edildiği anda öğrenir.
+
+481
+01:41:56,704 --> 01:42:03,424
+Her uygulama her şeyi takip etmek istemez tüm sistemedeki değişiklikleri. Sizin uygulamanızda neyi takip etmek?
+
+482
+01:42:04,083 --> 01:42:13,583
+İsterseniz onu belirterek Broadcast Receiver'lar üzerinden bu gelişmeleri takip edebilirsiniz. Buna göre uygulamanızda önlemler alabilirsiniz.
+
+483
+01:42:14,423 --> 01:42:25,883
+Bazen de tam tersi gerekir. İşte buradaki Broadcast mesajlarıyla sizin uygulamanızın diğer sistemde çalışan uygulamaları bilgilendirmesi gerekebilir.
+
+484
+01:42:25,883 --> 01:42:31,883
+O zaman da bir Broadcast mesajıyla uygulamalar bilgi yayınlayarak...
+
+485
+01:42:32,083 --> 01:42:38,523
+diğer uygulamaları bilgilendirirler. Bunların detaylarını daha sonra etraflıca görüyor olacağız.
+
+486
+01:42:39,643 --> 01:42:50,763
+Ama Broadcast Receiver'ların desktop tarafındaki interapp'lara, interapp'ların takibine karşılık geldiğini söyleyebiliriz.
+
+487
+01:42:50,823 --> 01:42:56,183
+Sistem seviyesindeki tüm mesajların takip edilmesini mümkün kılıyor Broadcast Receiver'lar.
+
+488
+01:43:00,787 --> 01:43:12,367
+Content Provider'lar, application'lar seviyesinde veri paylaşımı yapmanızı mümkün kılan yapılar.
+
+489
+01:43:15,507 --> 01:43:21,227
+Okunması ve o bilgilerin erişilmesi için Content Provider'lardan faydalanıyoruz.
+
+490
+01:43:21,947 --> 01:43:31,207
+Ve ilgili izinleri almak koşuluyla Content Provider üzerinden veri paylaşımını mümkün kılabiliyorsunuz.
+
+491
+01:43:31,207 --> 01:43:34,207
+Bu da dört temel...
+
+492
+01:43:35,123 --> 01:43:38,623
+Yapıdan bir tanesi ama bir entry point değil.
+
+493
+01:43:39,203 --> 01:43:46,743
+Diğerleri gibi bu daha çok verinin paylaşılması noktasında faydalanan bir yapı.
+
+494
+01:43:48,384 --> 01:43:54,903
+Şimdi 15.43 saat zamanımız geldi ara vermek için.
+
+495
+01:43:55,683 --> 01:43:58,603
+Bir 15.55'e kadar bir ara verelim.
+
+496
+01:43:59,323 --> 01:44:02,403
+15.55'te kaldığımız noktadan devam edelim.
+
+497
+01:55:36,212 --> 01:55:41,471
+Evet, yeniden merhaba arkadaşlar. Kaldığımız yerden devam ediyoruz. Ekran paylaşımına geçiyorum.
+
+498
+01:55:46,996 --> 01:56:01,855
+Şu ana kadar komponentleri konuştuk. Tabi bu komponentler arasında bilgi taşınması gerekiyor. Yani aktiviteler arasında bilgi taşınmanız gerekiyor. Bu işlemi ise Intent ile gerçekleştiriyoruz.
+
+499
+01:56:06,644 --> 01:56:19,543
+Bu üç adet aktivite, servis ve broadcast receivirlerin aktivite edilmesini, aktif hale getirilmesini sağlayan asenkron mesaj tipi intent olarak adlandırılıyor.
+
+500
+01:56:19,543 --> 01:56:34,543
+Buradaki amaç şu, A aktivitesinden B aktivitesine geçerken ya o aktiviteye geçişin yapılabilmesi için intent yapısından faydalanıyorsunuz ya da...
+
+501
+01:56:34,644 --> 01:56:43,104
+İç iş yaparken belirli bir bilginin taşınabilmesi için, mesajlaşma yapılabilmesi için Intent'ten faydalanıyorsunuz.
+
+502
+01:56:43,104 --> 01:56:46,104
+Sadece Intent'i...
+
+503
+01:56:48,884 --> 01:56:57,703
+Uygulama içi, aktiviteler arası geçiş için değil, aynı zamanda başka bir uygulamadan bir aktiviteyi çağırabilmek için de kullanabiliyorsunuz.
+
+504
+01:56:57,943 --> 01:57:03,923
+Bu iki türlü gerçekte şu, bir explicit intentler var, bir de implicit intentler var.
+
+505
+01:57:16,543 --> 01:57:23,543
+Yapılabilmesini mümkün kılacak, aktivitenin size listelenmesini sağlıyor. Örneğin, bir...
+
+506
+01:57:24,180 --> 01:57:51,800
+E-mail göndereceksiniz. E-mail gönderebilen tüm uygulamalar size listeleniyor. Siz sadece e-mail gönderme isteğinizi beyan ediyorsunuz ya da bir fotoğraf çekeceksiniz. Bu isteğinizi beyan ediyorsunuz. Sistem fotoğraf yeteneği olan çekebilen tüm uygulamaları, içinde bu özelliğe sahip aktivite barındıran tüm uygulamaları size gösteriyor ve siz bu sayede implicit yani kapalı olarak istediğiniz isteğinizin karşılığında
+
+507
+01:57:52,180 --> 01:57:55,360
+Hangi uygulamaların hizmet verebileceğini görmüş oluyorsunuz.
+
+508
+01:57:57,779 --> 01:58:13,579
+Gelelim manifest filine. Manifest fili olmazsa olmaz filalarımızdan. Burada bir XML fili görüyorsunuz. Bu XML filinde bütün uygulamanıza ait komponentlerle ilgili tanımlamalarda bulunuyorsunuz.
+
+509
+01:58:13,579 --> 01:58:25,779
+Hepsini belirtmeniz sizden bekleniyor. İşte application'ınızın ismi nedir, icon'ı nedir, ondan sonra hangi aktiviteleri tanımladığınız bir servis.
+
+510
+01:58:25,779 --> 01:58:42,839
+Var mı? Bir intent var mı? Broadcast Receiver var mı? Receiver var mı? Donanımsal ya da yazılımsal telefonunuzun bir kısıtı var mı? Hangi uygulamanız hangi yeteneklere sahip? Hangi telefonlar?
+
+511
+01:58:44,079 --> 01:58:51,020
+Hangi özelliklere sahip telefonlar için çalışabilir? Bütün bunları belirlediğiniz aslında konfigürasyon dosyanız.
+
+512
+01:58:52,600 --> 01:59:00,039
+Bunu doğru bir şekilde konumlandırmazsanız uygulamanızın çalışmama durumu söz konusu oluyor.
+
+513
+01:59:00,039 --> 01:59:03,140
+O yüzden buraya mutlaka tüm tanımlamaların yapılması gerekiyor.
+
+514
+01:59:03,980 --> 01:59:09,980
+Burada örnek bir Android manifest hatta birden fazla kod parçası görüyorsunuz.
+
+515
+01:59:12,079 --> 01:59:17,079
+Uygulamaya ait bir aktivite tanımlanmış. Bu aktivitenin işte...
+
+516
+01:59:17,587 --> 01:59:24,547
+Package'ın ismini görüyorsunuz. com.example.project ve aktivitenin ismini example.activite olarak görüyorsunuz.
+
+517
+01:59:25,127 --> 01:59:33,127
+Onun dışında aktiviteye ait bir labeling'in de yine string.examal üzerinden yapıldığını görebiliyorsunuz.
+
+518
+01:59:33,127 --> 01:59:39,667
+Öte yandan sağ taraftaki üstteki manifest dosyasına baktığınızda bir aktivite var.
+
+519
+01:59:40,180 --> 02:00:00,800
+Aynı zamanda bu aktiviteye ait bir intent filter var. Bu da şu demek, bu aktivite ona aktarılan herhangi bir bilgiyi e-mail olarak gönderebilir bilgisini buraya koyduğu action tagıyla sağlamış oluyor.
+
+520
+02:00:00,800 --> 02:00:05,180
+Action send diyerek. Bu sayede şunu deklare ediyorsunuz sisteme.
+
+521
+02:00:05,631 --> 02:00:31,452
+Benim uygulamamın içerisinde bir Compose E-mail Activity isimli aktivite var ve bu bir e-mail gönderebilir. Herhangi bir e-mail gönder talebi üreten başka bir uygulama varsa benim bu aktivitemden faydalanabilir demiş oluyorsunuz. Bu sayede aktivitelerinizin neler yapabildiğini de manifeste dikleyer ederek diğer uygulamaların bundan haberdar olmasını sağlıyorsunuz.
+
+522
+02:00:31,828 --> 02:00:46,208
+Alttaki örneğe gelecek olursak da şunu söylüyoruz. İşte burada bir uses feature özelliği koyduğunuzda mutlaka benim uygulamam, required to rule dediğiniz için bir kameraya ihtiyaç duyuyor.
+
+523
+02:00:46,208 --> 02:00:58,156
+Dolanımsal olarak bir kamerası yoksa telefonun ki bu günümüzde çok mümkün değil ama bir örnek olarak düşünebilirsiniz. Başka özellikler de kullanılabilir. O zaman...
+
+524
+02:00:58,612 --> 02:01:06,091
+Ben o telefonun Play Store'a girdiğinde önüne bu uygulamayı getirmemeliyim.
+
+525
+02:01:06,412 --> 02:01:17,612
+Aslında bunu sağlıyorsunuz. Siz manifest'e bunu deklare ederek ilgili özelliği, turu kıldığınızda o zaman bunun o telefonda...
+
+526
+02:01:18,739 --> 02:01:40,639
+Yoksa bu uygulamanın o telefonda çalışamayacağını söylüyorsunuz. Bunu false olarak işaretleseydiniz, required. Bu özelliğe ihtiyaç duyuyorum ama mecburu değil. Bilgisini vererek bunu deklara etmiş oluyorsunuz. Bazı özelliklerin bu eksiklik durumunda çalışmayacağını aslında karşı tarafa söylemiş oluyorsunuz.
+
+527
+02:01:45,568 --> 02:01:50,568
+En yüksek hangi, daha doğrusu hangi SDK'yı hedefliyorsunuz bunları belirtebiliyorsunuz.
+
+528
+02:01:51,468 --> 02:02:00,568
+Bu sayede SDK'sı 7'den düşük olan versiyonu telefonlar sizin uygulamanızı göremiyor ve indiremiyor.
+
+529
+02:02:00,688 --> 02:02:08,568
+Çünkü siz minimum SDK versiyon 7 olarak belirlediğinizde Google Play Store bunları bir filtreden geçirip
+
+530
+02:02:08,847 --> 02:02:11,587
+Kullanıcının uygulamayı görmesini engelliyor.
+
+531
+02:02:12,007 --> 02:02:23,727
+Gelelim App Resources dediğimiz bu ekstra dosya ve statik içerik saklayan aslında bizim adımız dosyalara.
+
+532
+02:02:23,727 --> 02:02:32,087
+İşte burada resimler olabilir, layoutlar olabilir, user interface ile ilgili butonların isimleri.
+
+533
+02:02:32,595 --> 02:02:44,515
+İşte farklı dillerde olabilir, animasyonlar olabilir. Birçok burada sayabileceğimiz doğrudan UI'yi etkileyen resourselardan bahsediyoruz.
+
+534
+02:02:45,635 --> 02:02:53,595
+Burada sağ üst tarafta, ikinci kolonda, bir projenin altında, biraz sonra...
+
+535
+02:02:55,091 --> 02:03:02,311
+Android Studio'da da göreceksiniz. Bir Source klasörü var, onun altında kaynak kod var.
+
+536
+02:03:02,311 --> 02:03:22,171
+Resource, sun kısaltılmış REST klasörünün altında da ilgili resimler, bazen audio file'lar, aktiviteleri kullandığı ekranlar, bazı ikonlar, söylediğim gibi
+
+537
+02:03:23,315 --> 02:03:25,416
+Ekranlarda yer alan widgetlerin
+
+538
+02:03:25,939 --> 02:03:53,539
+İsimlerinin, sabitlerinin string egzamelde saklandığı yapılar. Burada bir klasör yapısını görüyorsunuz. Bunlarla ilgili mesela hello ifadesi var. Bunu bir define olarak düşünebilirsiniz. Nasıl define n 100 dediğinizde boşluk bırakıp C programlarının dilinde n gördüğü her yere 100 yazıyorsa, burada da bir isimlendirme yaptıysanız o isimlendirmenin belirli bir sistematiğe uygun olarak.
+
+539
+02:03:53,939 --> 02:03:59,079
+Saklanmasını sağlayan bir string XML yapısı görüyorsunuz en üst versiyonunda.
+
+540
+02:03:59,559 --> 02:04:01,899
+Renklendirme ile ilgili bir color XML var.
+
+541
+02:04:02,179 --> 02:04:06,939
+Orada renk kodlarını sizin anlayacağınız dilde...
+
+542
+02:04:07,796 --> 02:04:13,735
+Şeyin içerisine gömüp, kodunuzun içerisine ama onların hangi koda karşılık geldiğini belirleyebilirsiniz.
+
+543
+02:04:14,895 --> 02:04:22,036
+İşte bir edit text yazdığınızda bu edit text'in color'ı ne olacak? O color.examl'den alabiliyorsunuz.
+
+544
+02:04:22,536 --> 02:04:24,796
+Aşağıda Android 2.text color gözüküyor.
+
+545
+02:04:24,796 --> 02:04:28,796
+Android 2.text'te text...
+
+546
+02:04:29,652 --> 02:04:37,612
+isminin ne olacağı, default'ta ne gözükeceği, addString diyerek stringdeki hello değişkeninin...
+
+547
+02:04:37,684 --> 02:04:42,304
+Karşılığında ne var ona bakarak oranın otomatikte olmasını sağlayabiliyorsunuz.
+
+548
+02:04:42,304 --> 02:04:48,283
+İşte button için aynı şey geçerli. Butonun üzerinde ne yazacak?
+
+549
+02:04:48,423 --> 02:04:54,304
+Mesela burada işte submit'in karşılığında ne varsa string egzemenin içerisinde submit'e gidiyorsunuz.
+
+550
+02:04:55,144 --> 02:04:58,844
+İşte buraya submit yazdığınızda mı oldu? Aslında Türkçe olduğu için gönder olması gerekiyor.
+
+551
+02:04:59,423 --> 02:05:05,623
+Bunları dil uyumlu yapabilmek için de bu şekilde aslında parametrik tanımlamak daha akıllıca.
+
+552
+02:05:05,684 --> 02:05:22,104
+Yoksa siz Android 2.0 üst üste text yazıp çift tırnak içerisine gönder de yazabilirsiniz ama o zaman dil değişimi olduğunda ya da aynı şeyi tekrar kullanmak istediğinizde oraya hard kod yazmış oluyorsunuz.
+
+553
+02:05:25,939 --> 02:05:31,939
+Onun isminin karşılığına String Examal'dan ya da Color Examal'dan bakılmasını sağlıyorsunuz.
+
+554
+02:05:32,260 --> 02:05:46,319
+Yine sağ tarafta ImageView'a baktığınızda o ImageView'da hangi resmin yer alacağını Drawable'ın altına yerleştirerek ilgili imajın resource kaynakları tarafından çekilmesini sağlıyorsunuz.
+
+555
+02:05:46,676 --> 02:06:04,516
+Gelelim Device Configuration Change'e. Bu noktada niye önemsiyoruz? Çünkü device'ın herhangi bir konfigürasyon değiştiğinde aktivite ölüyor demiştik. Aktivite öldüğünde de bilgi kayboluyor demiştik ekrandaki user interface'de yer alan.
+
+556
+02:06:09,747 --> 02:06:20,887
+Ortadan kalkması, tekrar gelmesi, işte multi-window moda geçilmesi, screen'in oryantasyonu değiştirmesi gibi çeşitli configuration changeleri var.
+
+557
+02:06:20,887 --> 02:06:29,887
+Bu bilgileri kaybetmemek adına onSaveInstanceState isimli metodu çağırarak bilgileri...
+
+558
+02:06:30,899 --> 02:06:51,879
+Saklıyorsunuz, sonra tekrar Activity yeniden initialize edildiğinde onları yükleyebiliyorsunuz. İzinler var bizim için kritik. Çünkü bu izinleri almazsanız sistem seviyesinde erişebileceğiniz bilgilere mümkün olmuyor erişmeniz.
+
+559
+02:06:59,667 --> 02:07:22,407
+Kullanıcılar farklı yollardan almanız tavsiye ediliyor. Eskiden sadece uygulamayı kurarken bu izinler soruluyordu ve bir defa alınıyordu bu izinler. Ama artık öyle değil. Artık isterseniz iznin türüne bağlı olarak uygulama kurulurken manifesto yazdığınız izinleri alıyorsunuz. Bazı uygulamalarda zorunlu olmak üzere.
+
+560
+02:07:22,963 --> 02:07:43,043
+Çalıştırma sırasında, runtime sırasında da izin almanız gerekebiliyor. Bu iznin kritikliğine bağlı. Çok kritik bir bilgiye erişmek istiyorsanız o zaman runtime sırasında bu izni almanız bekleniyor. Ama daha böyle genel herkesin erişme ihtimali bulunan ve kişisel bilgi içermeyen...
+
+561
+02:07:43,123 --> 02:07:48,923
+Bir izin talep ediyorsanız, o zaman manifestin içerisine bunu yazabiliyorsunuz.
+
+562
+02:07:49,404 --> 02:07:58,503
+Kullanıcıya seçenek sunarak bir kez mi izin veriyor? Bundan sonra her erişim için mi izin veriyor? Bunu sorma imkanınız da var.
+
+563
+02:08:00,644 --> 02:08:05,024
+İşte burada Normal Permission ve Dangerous Permission olarak ikiye ayrılmış durumda.
+
+564
+02:08:09,908 --> 02:08:16,748
+Ya da device'ın çalışmasını riske atmayacak tüm bilgiler normal permission ile alınıyor.
+
+565
+02:08:16,748 --> 02:08:30,528
+Ama öte yandan kullanıcı mahremiyetini ya da device'ın çalışmasını engelleyecek bir izin potansiyel olarak böyle bir durum varsa dangerous permission olarak adlandırılıyor.
+
+566
+02:08:31,412 --> 02:08:45,591
+Bu runtime request'lar daha çok Android 6 ve sonrasında karşımıza çıktı ve siz bir işlem yaparken size bir dosyaya erişeceksiniz.
+
+567
+02:08:46,511 --> 02:08:49,771
+Karşınıza bir pop-up çıkıyor ve izin verip vermediğiniz soruluyor.
+
+568
+02:08:49,771 --> 02:08:55,724
+Bazen de o izni süresiz olarak mı verdiniz yoksa tekrar...
+
+569
+02:09:01,332 --> 02:09:14,511
+Karşınıza çıkıyor. Yani sonuçta manifest'te bu izinleri ya manifest alacaksınız ya da kodunuzun içerisinde runtime sırasında alacak kodu mutlaka yazmanız bekleniyor sizden.
+
+570
+02:09:15,252 --> 02:09:24,572
+Install time requestler, işte bahsettiğim gibi burada 5.11 ile karşınıza çıkan requestler.
+
+571
+02:09:25,024 --> 02:09:34,203
+Hardware Feature'larıyla ilgili özel request'lerde bulunmak için Uses Feature özelliğini kullanıyorsunuz. Biraz önce görmüştünüz.
+
+572
+02:09:35,572 --> 02:09:59,851
+Burada normal permissionlar olarak adlandırdığımız, mesela wallpaper set edip edememe hakkı, Wi-Fi state'inin değişip değişmediğini öğrenme hakkı, ondan sonra ne diyelim, foreground service ile ilgili bir şey çalıştırmak istiyorsunuz. Bununla ilgili haklar kişisel olarak adlandırılmadığı için normal seviyede.
+
+573
+02:10:00,212 --> 02:10:04,652
+Sınıflandırılıyor ve Android 9'dan itibaren bu sınıflandırma kullanılıyor.
+
+574
+02:10:05,852 --> 02:10:15,112
+Öte yandan Signature Permission dediğimiz, işte Install Time sırasında alınan izinlerden bahsediyoruz.
+
+575
+02:10:19,216 --> 02:10:29,556
+Talep ederken sizin uygulamanızın da aynı sertifikat ile imzalanmış olması gerekiyor ki bu izinleri talep edebilirsiniz. Buna dikkat etmek gerekiyor.
+
+576
+02:10:30,976 --> 02:10:39,456
+Dangerous Permission'lara geldiğimiz zaman gördüğünüz gibi kişisel bilgilerin ön plana çıktığı noktaya değiniyoruz.
+
+577
+02:10:39,936 --> 02:10:42,936
+Nedir? İşte kalenderimizi okuma yazma yapmak.
+
+578
+02:10:43,247 --> 02:11:03,547
+Arama kayıtlarınıza okuma yazma yapmak, kameranızı kullanmak, kontak bilgilerinize erişmek, mikrofondan kayıt yapmak, telefon ile bir arama yapmak, bir arama başlatmak.
+
+579
+02:11:03,988 --> 02:11:13,508
+Bunların hepsi şu anda bizim Dangerous Permission olarak adlandırdığımız izinler. Çok özür dilerim, bir dakikanızı rica ediyorum.
+
+580
+02:11:48,532 --> 02:12:16,532
+Pardon, beklettiğim için teşekkür ederim. Beklediğinizden dolayı sensörlere yine erişim kişinin özel bilgileri olduğu için SMS'ler keza ve tabii ki storage. Yani burada gördüğünüz her şey kişisel bilgi barındırabildiği için bunlar Dangerous Permission olarak adlandırılıyor ve bunların hem install time sırasında mutlaka sorulması gerekiyor hem de kullanımlarında eğer gerçekten ihtiyaç duymuyorsanız kullanıcıdan bunlarla ilgili izin almak kullanılır.
+
+581
+02:12:16,532 --> 02:12:27,271
+Anıcı irite edebilir. Uygulamanızın gereksiz izinler talep etmesi durumunda hiç kullanılmamasına bile, indirilmamasına bile neden olabilir ya da kurulmamasına neden olabilir.
+
+582
+02:12:27,891 --> 02:12:30,311
+Lokasyon bilgisi de keza bunların içerisinde onu da unutmayalım.
+
+583
+02:12:30,411 --> 02:12:36,091
+Çünkü lokasyon bilgisi de kişisel mahremiyet açısından çok kritik bunu söylemekle fayda var.
+
+584
+02:12:37,992 --> 02:12:40,391
+Evet, şimdi devam edelim.
+
+585
+02:12:42,996 --> 02:13:02,435
+Burada iki tür request yapılabileceğini görüyorsunuz. Bir tanesi konuşmuştuk manifest üzerinden. Diğeri de işte bulunduğunuz aktivitedeki konteks üzerinden ilgili izinleri Check Self Permission ve Request Permission metotları üzerinden talep edebiliyorsunuz.
+
+586
+02:13:04,659 --> 02:13:10,579
+Bir Android projesi yaratma noktasında bir Android Studio'ya ihtiyaç duyuyorsunuz.
+
+587
+02:13:10,940 --> 02:13:16,360
+Android Studio, bir Integrated Development Environment geliştirme ortamı ücretsiz olarak sağlanıyor.
+
+588
+02:13:17,760 --> 02:13:23,880
+İlgili SDK'ları yüklemek kaydıyla orada bir uygulama geliştirebiliyorsunuz.
+
+589
+02:13:23,880 --> 02:13:31,520
+Tabii Java'da yapıyorsanız Java Development Kit'i ve Java Runtime Environment'ı da mutlaka yüklemeniz bekleniyor.
+
+590
+02:13:32,000 --> 02:13:34,000
+Bunun dışında...
+
+591
+02:13:34,707 --> 02:13:51,067
+Bir proje açacaksanız, işte Create New Project deyip, Application Name'i, Domain ismini verebiliyorsunuz ve aktivite tiplerinden birini seçiyorsunuz. Mutlaka bir layout file oluşturmanız sizden bekleniyor ve bir manifest file'nizin olması isteniyor.
+
+592
+02:13:51,067 --> 02:14:02,707
+Gradle, buradaki dosyaların build edilmesi için, yani derlenmesi ve bir paketlenmesi için kullanılan yapı. Bu Gradle'ın...
+
+593
+02:14:02,707 --> 02:14:11,127
+İşte çeşitli versiyonları var ve işte bazı kod parçaları üzerinden ilerlediğinizde göreceksiniz internet üzerinde.
+
+594
+02:14:11,667 --> 02:14:21,047
+Uyumsuzluklar olabiliyor. Bu yüzden Gradle versiyonlarını da ilgili çalıştıracağınız projenin dosyalarıyla uyumlu hale getirmeniz sizden bekleniyor.
+
+595
+02:14:21,427 --> 02:14:24,327
+Keza SDK'lar için de aynı şeyi söyleyebiliriz.
+
+596
+02:14:27,028 --> 02:14:49,208
+Uygulama geliştirmek istiyorsunuz. Aktivite yazdığınız bir ekranınız var. Bir layout tasarladınız. Bunu deneyeceksiniz. Çalıştırmak istiyorsunuz. Android Studio üzerinden bu imkan var. İki seçenek sunuyor. İsterseniz gerçek bir device ile çalıştırabiliyorsunuz. İsterseniz virtual bir device ile çalıştırabiliyorsunuz. Bu emulator olarak karşınıza çıkıyor.
+
+597
+02:14:51,252 --> 02:14:56,172
+Burada tabii Developer Options'ı enable etmeniz sizden bekleniyor.
+
+598
+02:14:57,292 --> 02:15:03,132
+Ancak o şekilde Android Studio üzerinden bir uygulamayı deploy edebiliyorsunuz gerçek bir telefona.
+
+599
+02:15:03,192 --> 02:15:03,912
+Burası önemli.
+
+600
+02:15:04,572 --> 02:15:08,252
+Bunun için de işte About kısmındaki telefonun...
+
+601
+02:15:08,979 --> 02:15:20,179
+Bu yıl numarasına 7 defa tıklayarak Developer Options'ı enable edebiliyorsunuz. Bu sayede aslında USB debugging de açılmış oluyor.
+
+602
+02:15:21,179 --> 02:15:26,739
+Ve ondan sonra isterseniz Developer Options'ı on-off diyerek kapatma şansına sahipsiniz.
+
+603
+02:15:26,739 --> 02:15:36,739
+Çünkü Developer Options aslında herhangi bir uygulamanın sizin telefonunuza doğrudan yüklenmesi ve çalıştırılması anlamına geliyor ki bu...
+
+604
+02:15:36,884 --> 02:15:52,244
+Açık olduğunda tehditlere karşı da açıksınız demek. Telefonunuzla ilgili başka şeyler de başınıza gelebilir. Yani bir kop parçası indirdiniz, çalıştırdınız bilmiyorsanız telefonunuzla ilgili bir zarar verme potansiyeli de her zaman için var.
+
+605
+02:15:54,724 --> 02:15:58,704
+Bir basit bir arayüz tasarlamanız bekleniyor.
+
+606
+02:15:59,152 --> 02:16:23,692
+Tabii ilk etapta bunu yapıyor olacaksınız. Bunun için çeşitli UI komponentleri var. Layoutlar belirleyeceksiniz. Textbox'lar, button'lar kullanacaksınız. Bunları zaman içerisinde görüyor olacaksınız. Bu layoutlar sizin komponentlerinizin nasıl yerleşeceğini aslında belirlediğiniz yapılar. İşte linear layout var.
+
+607
+02:16:24,112 --> 02:16:39,051
+GridView layout var. Böyle çeşitli layoutlar mevcut. Bunları kullanarak aslında XML dosyası üzerinde bir konumlandırma yapıyorsunuz UI komponentleriniz için.
+
+608
+02:16:39,051 --> 02:16:49,492
+Yani kodu yazmak kısmı ayrı, layout kısmı ayrı ve bunların birbirleriyle ilişkilendirilmesi gerekiyor ve bunları konuşuyor olacağız.
+
+609
+02:16:52,468 --> 02:17:03,768
+Sunumun sonuna geldik. Genel hatlarıyla bir Android programlamaya giriş yaptık. Şimdi bir Android Studio sizinle paylaşacağım.
+
+610
+02:17:19,252 --> 02:17:22,432
+Buraya kadar tabii sorusu olan var mı? Bir kez daha sorayım.
+
+611
+02:17:29,780 --> 02:17:31,819
+Peki, devam edelim.
+
+612
+02:17:32,520 --> 02:17:39,300
+Bu konuştuğumuz yapı, bu zamana kadar konuştuğumuz başlıklar iOS içinde geçerli olan başlıklar mı?
+
+613
+02:17:39,300 --> 02:17:40,319
+Hayır, iOS.
+
+614
+02:17:40,788 --> 02:17:50,468
+iOS'da hiçbir alakası olmayan başlıklar, son konuştuğumuz slide'lar tamamen Android'e özel bir slide'tı, son slide'larımız.
+
+615
+02:17:50,868 --> 02:17:53,788
+Yani bugün ikinci bölümde kullandığımız slide'lar.
+
+616
+02:17:54,427 --> 02:17:56,188
+Orada da bu tür komponentler var.
+
+617
+02:17:56,308 --> 02:18:00,648
+Orada da package, IPA mesela orada APK yani IPA kullanılıyor.
+
+618
+02:18:03,252 --> 02:18:09,932
+İşletim sistemi, layout bir yapıda ve onların da katmanları var ama bunlar tamamen birbirinden farklı ve bağımsız.
+
+619
+02:18:10,391 --> 02:18:13,192
+O yüzden biz şu anda tamamen Android'i konuşuyoruz.
+
+620
+02:18:14,051 --> 02:18:14,871
+Teşekkür ederim hocam.
+
+621
+02:18:15,231 --> 02:18:15,752
+Rica ederim.
+
+622
+02:18:18,492 --> 02:18:22,051
+Şimdi o zaman ben ekran paylaşayım.
+
+623
+02:18:26,355 --> 02:18:28,635
+Şu an görebiliyorsunuzdur diye tahmin ediyorum.
+
+624
+02:18:30,076 --> 02:18:34,416
+Burada bir Android Studio idesi açtım.
+
+625
+02:18:35,635 --> 02:18:37,536
+İşte menüyü görebiliyor musunuz?
+
+626
+02:18:39,396 --> 02:18:39,935
+Görülecek.
+
+627
+02:18:40,788 --> 02:18:57,788
+Tamam. Menüde işte New diyerek bir projekt başlatabiliyorsunuz. O projenin içerisinde bir Java Class, bir Kotlin file ekleyebiliyorsunuz, bir Resource file ekleyebiliyorsunuz. Aşağıda eklemek istediğiniz komponentlerle ilgili size seçenekler sunuluyor.
+
+628
+02:19:00,884 --> 02:19:26,863
+İçerisinde fragmentlar tanımlayabiliyorsunuz. Bu fragmentlar size bir Activity içerisinde birden fazla aslında işin ekrana bölünerek devam edilmesine imkan sağlıyor. Şu an için birinci önceliğimiz değil ama vakit kalırsa onda konuşuruz. Yani ekranı tek bir ekran olarak değil de parçalı olarak kullanmanızı mümkün kılıyor.
+
+629
+02:19:27,412 --> 02:19:45,632
+Assetler ekleyebiliyorsunuz. Yani burada aynı zamanda import project diyerek indirdiğiniz bir Android Source ya da Android Project dosyaları varsa onu import ederek burada gösterebiliyorsunuz.
+
+630
+02:19:45,951 --> 02:19:57,511
+Keza burada SyncProjectWithGradleFiles dediğinizde herhangi bir sıkıntı var mı yok mu? GradleFiles ile ilgili bunu öğrenme şansına sahipsiniz.
+
+631
+02:19:58,351 --> 02:20:05,711
+Öte yandan şurada Tools'a geldiğinizde SDK Manager burada nelerin yüklü olduğunu görüyorsunuz şu anda.
+
+632
+02:20:05,711 --> 02:20:07,711
+Benim device'ımda...
+
+633
+02:20:08,147 --> 02:20:12,587
+8.18 ve 7.11 için SDK dosyaları yüklü.
+
+634
+02:20:13,427 --> 02:20:19,027
+Onun dışında partially installed dediği 5.0 için var ama diğerleri not installed gözüküyor.
+
+635
+02:20:19,447 --> 02:20:24,567
+Hangi versiyon için çalışmak istiyorsanız, burada isimleri var, daha unique olması açısından.
+
+636
+02:20:24,687 --> 02:20:26,167
+Burada da API level'ları var.
+
+637
+02:20:26,611 --> 02:20:35,811
+Bu level'lara uygun olarak ilgili SDK dosyalarını kendi lokalinize çekmeniz bekleniyor.
+
+638
+02:20:36,711 --> 02:20:49,511
+Onun dışında burada görüntüyle ilgili vesaire temanın ne olacağıyla ilgili, menülerle ilgili, toolbarlarla ilgili ayarlar yapabiliyorsunuz.
+
+639
+02:20:50,371 --> 02:20:53,031
+Hocam, şu an gösterdiğiniz menü gözükmüyor bizde.
+
+640
+02:20:53,652 --> 02:20:55,252
+Öyle mi? Evet.
+
+641
+02:20:56,152 --> 02:21:00,912
+Evet hocam, ben de dünyamızı bitirmenizi bekliyordum. Bahsettiğiniz pop-up sanmıştım. Özledim.
+
+642
+02:21:02,172 --> 02:21:04,572
+Bir saniye, o zaman şöyle deneyelim tekrar.
+
+643
+02:21:09,432 --> 02:21:10,492
+Şöyle sıkın diyelim.
+
+644
+02:21:15,412 --> 02:21:16,932
+Şu an bakalım deneyeceğim.
+
+645
+02:21:22,932 --> 02:21:24,971
+Şu an gözüküyor mu?
+
+646
+02:21:28,211 --> 02:21:29,291
+Evet, gözüküyor.
+
+647
+02:21:29,731 --> 02:21:38,671
+Tamam. Bu ekrandan bahsediyordum. Burada ilgili SDK'ları, API level'larına göre yükleyebiliyorsunuz demiştim.
+
+648
+02:21:39,283 --> 02:21:42,743
+Hangilerinin yüklü olduğunu da buradan statüslerinden görebiliyorsunuz.
+
+649
+02:21:42,804 --> 02:21:50,703
+Ve sol taraftaki menüden gerekli bütün sistem settinglerini, işte buradaki Android SDK location'ı kurduğunuz yer farklıysa bunları değiştirebiliyorsunuz.
+
+650
+02:21:51,783 --> 02:21:52,763
+Böyle bir imkanınız var.
+
+651
+02:21:52,763 --> 02:21:54,636
+Burada...
+
+652
+02:21:54,739 --> 02:22:22,459
+Ulus'a tıkladığımda Device Manager'a geliyorum. Device Manager'ı bu noktada şöyle yapalım. Tıkladığımda Create Virtual Device kısmı var. Buradan telefon, tablet, saat için çeşitli seçenekler sunuyor size. Bunu customize edebiliyorsunuz. Size var, Resolution'ları var, Density'leri var. Yani istediğiniz bir hardware device'ın özelliklerini burada yaratarak aslında bir emulatör üzerinden.
+
+653
+02:22:22,739 --> 02:22:28,880
+yaptığınız, geliştirdiğiniz uygulamaları o telefonda nasıl davranış gösterir?
+
+654
+02:22:29,020 --> 02:22:30,420
+Bunu görme şansına sahipsiniz.
+
+655
+02:22:31,159 --> 02:22:35,500
+Ya da benim şu an telefonum bağlamı burada gözüküyor mu bakalım.
+
+656
+02:22:37,899 --> 02:22:39,279
+Tekrar bir tak çıkar yapayım.
+
+657
+02:22:49,459 --> 02:22:50,459
+bir şey var.
+
+658
+02:22:52,219 --> 02:22:53,219
+Ne oluyor bir şey.
+
+659
+02:23:28,079 --> 02:23:31,079
+İçeride.
+
+660
+02:23:27,443 --> 02:23:30,059
+RecyclerView ve
+
+661
+02:23:35,515 --> 02:24:13,120
+İçeride.
+
+662
+02:24:00,180 --> 02:24:11,200
+Evet, şu an Developer Options'ı tekrar kapatıp açtım. Normalde burada Bestel Z20 gözükmesi gerekiyor. Şu an bir problem oldu. Neden kaynaklanmadığını bilmiyorum. Burada gözüküyor, tamam.
+
+663
+02:24:12,756 --> 02:24:20,756
+İçeride.
+
+664
+02:24:11,796 --> 02:24:29,835
+Şimdi gördüm. Sağ tarafta görüyorsunuz, gerçek deviceleri de bağladığınızı görebiliyorsunuz. Üzerinde Android 8.0 var. Hem virtual olarak hem fizikalı olarak bunu yönetme şansına sahipsiniz ve uygulamalarınızı buraya deploy edebiliyorsunuz, görebiliyorsunuz. Şimdi gelelim şu kısmı kapatalım.
+
+665
+02:24:30,835 --> 02:24:38,556
+Burada bir Project Structure var, Application var. Bunun altında bir manifest dosyasının bulunduğu manifest var, klasörü var.
+
+666
+02:24:39,076 --> 02:24:45,335
+Java klasörünün altında işte Hello World Activity oluşturulmuş durumda.
+
+667
+02:24:45,995 --> 02:24:52,135
+Resources'ın altında da layout'ın altına gidiyorum. Bir XML dosyası oluşturulmuş durumda.
+
+668
+02:24:52,135 --> 02:24:57,915
+Burada ekranda bir Hello World yazısı göreceksiniz. Bunun için bir tane TextView tanımlanması yeterli.
+
+669
+02:24:58,835 --> 02:25:02,255
+Sonalarısının altına tanımlanmış bir sıkıntı değil.
+
+670
+02:25:02,495 --> 02:25:08,495
+İşte bu widget'ın width, height noktasında ne tür seçenekleri var?
+
+671
+02:25:08,615 --> 02:25:12,995
+İşte rep content dediğinizde içerik kadar boyutu olsun diyorsunuz.
+
+672
+02:25:13,056 --> 02:25:15,975
+Bunu özel olarak belli bir boyuta set etme şansınız var.
+
+673
+02:25:16,475 --> 02:25:23,315
+Nereye konumlanacağı noktasında layout, center, horizontal, vertical bunları true yaparak ortaya konumlandıracağını söylüyorsunuz.
+
+674
+02:25:23,315 --> 02:25:26,315
+Text de burada doğrudan bir...
+
+675
+02:25:26,835 --> 02:25:46,995
+Geleişim söz konusu Hello World olmuş. Ama baktığınızda, üzerinize tıkladığınızda aslında buraya AddString Hello World yazıldığını görüyorsunuz. O da values'un altında string egzevenin altındaki Hello World'te ne gözükeceği. Bunu değiştirirseniz, merhaba dünya yaparsanız, biraz önce size söylemiştim.
+
+676
+02:25:55,252 --> 02:26:02,832
+Gördüğünüz gibi merhaba, dünya ifadesini görüyorsunuz. Çünkü oradaki hello world değişkenini refer ediyor, add işaretiyle beraber.
+
+677
+02:26:03,551 --> 02:26:10,832
+Hangi XML dosyası refer ettiğini söylüyorsunuz. İşte burada da textize'ını yani boyutunu, text'in belirlemişler.
+
+678
+02:26:10,832 --> 02:26:17,272
+Çok basit bir örnek, giriş seviyesinde bir örnek. Ama bir layout dosyası görüyorsunuz.
+
+679
+02:26:17,772 --> 02:26:23,231
+Burada sadece kodu görebilirsiniz, yukarıdan değişiklik yaparak. Split diyerek aynı anda.
+
+680
+02:26:23,252 --> 02:26:25,152
+İki sinirden görebilirsiniz ya da design.
+
+681
+02:26:25,600 --> 02:26:33,200
+İşte pattern'ini kullanıp burada işte button var, image view var, RecyclerView var.
+
+682
+02:26:33,720 --> 02:26:37,740
+Kullanabileceğiniz burada text altında bir sürü değişik plain text, password var.
+
+683
+02:26:38,200 --> 02:26:43,000
+Buttonların altında radyo grup button, normal button, image button şeklinde var.
+
+684
+02:26:43,520 --> 02:26:47,299
+Widgetların altında progress bar, seek bar, rating bar gibi.
+
+685
+02:26:47,299 --> 02:26:53,020
+Aslında UI kompanatlarının hepsi burada ilgili palette gözüküyor.
+
+686
+02:26:53,600 --> 02:27:00,700
+Baktığınızda Linear Layout, Horizontal, Linear Layout, Vertical, Frame Layout, Table Layout bunları görebiliyorsunuz.
+
+687
+02:27:01,060 --> 02:27:03,600
+Konteynerlar var. Bu konteynerlar aslında...
+
+688
+02:27:04,468 --> 02:27:21,048
+Sizin UI komponentlerinizi saklamak için kullanılıyor. Burayı yakından incelerseniz ki UI komponentler üzerinde çok uzun durmayacağız. Uygulamanıza özel, çok güzel, değişik UI komponentlerini buradan bulup deneyebilirsiniz.
+
+689
+02:27:21,048 --> 02:27:32,468
+Hepsini seçtiğinizde, layout dediğinizde burada neler kullanılacağı, buraya seçtiğinizde, gönderdiğinizde şu yan tarafta özelliklerini nasıl set edebileceğiniz?
+
+690
+02:27:32,468 --> 02:27:44,708
+Nelerin set edildiğini görebiliyorsunuz. Bu tool'u kullanmak da mümkün ama kimisi de kod yazarak bunu gerçekleştiriyor, XML kodu. Her ikisi de değerlendirilebilir.
+
+691
+02:27:47,208 --> 02:27:50,747
+Gelelim Hello World aktiviteye.
+
+692
+02:27:50,747 --> 02:27:59,747
+Şimdi burada bir package bilgisi veriliyor ki bu package bilgisi önemli. Genelde...
+
+693
+02:27:59,891 --> 02:28:13,051
+Web adreslerinin tersi şeklinde kullanılır. Mesela Yıldız.edu.tr için şey yapıyorsanız tr.edu.yıldız şeklinde bir package ismi verilir. Mantık buna göre işler.
+
+694
+02:28:25,172 --> 02:28:30,672
+Activity'ye ait ya da ilgili bundle'a menüye ait özellikler varsa onu import etmeniz beklenir.
+
+695
+02:28:31,252 --> 02:28:38,272
+Bazen işte buraya yıldız konulur ama yıldız koyduğunuzda işte Android App nokta işte şöyle diyelim, çok özür dilerim.
+
+696
+02:28:46,995 --> 02:28:53,255
+Plasörün altındaki şeyler, App'in altındaki kütüphaneye gelir ve bu istediğimiz bir şey değildir.
+
+697
+02:28:53,815 --> 02:28:57,536
+Boyutu büyütür, bu gördüğünüz hepsi buraya eklenecektir.
+
+698
+02:28:57,615 --> 02:29:01,556
+O yüzden genelde ihtiyaç duyduklarınızı import etmeniz sizden istenir.
+
+699
+02:29:02,067 --> 02:29:10,827
+Bir Activity'yi extend ederseniz, kendi aktivitenizin ismini verirsiniz. İlla Activity geçmek zorunda değil ama genelde bu şekilde isimlendiriliyor.
+
+700
+02:29:11,527 --> 02:29:19,007
+Gelelim şu kısma. Bizim için bir tane mutlaka onCreate metodu var. Aktivitenizin override etmesi gereken.
+
+701
+02:29:28,244 --> 02:29:36,644
+O aktivite kapanırken saklandıysa, o bilginin buraya tekrar has edilmesini sağlayan bir bundle objesidir.
+
+702
+02:29:36,984 --> 02:29:38,564
+Bunun detayını haftaya göreceksiniz.
+
+703
+02:29:39,704 --> 02:29:44,443
+SetContentView'da bizim için, çok özür dilerim.
+
+704
+02:29:47,123 --> 02:29:51,244
+SetContentView'da bizim için, layouttaki...
+
+705
+02:29:52,623 --> 02:30:02,963
+Hangi layout ile bu aktivitenin eşleştirildiğini söyler? Yani der ki ben Activity olarak Activity alt çizgi Hello World.
+
+706
+02:30:03,796 --> 02:30:07,335
+Layout'unu kendime kıyafet olarak kullanacağım der.
+
+707
+02:30:07,335 --> 02:30:11,195
+Yani aslında ilk Activity'yi giydirdiğiniz yer burasıdır.
+
+708
+02:30:11,695 --> 02:30:25,695
+O da şuradaki Activity Hello World exam elindeki UI komponentleri alır ve tamam ben kullanıcının önüne buradaki bunun üzerine koyulan komponentlerle gözükeceğim demektir bu.
+
+709
+02:30:26,155 --> 02:30:29,256
+Burada işte ilişkilendirmenin ilk adımını yapmış olursunuz.
+
+710
+02:30:29,695 --> 02:30:35,195
+Bu noktadan sonra artık, tabii şu onCreateOptionsmenü çok kritik değil.
+
+711
+02:30:35,436 --> 02:30:38,675
+Hani bunu siledebiliriz, burada olması gerekmiyor, default da geliyor.
+
+712
+02:30:38,675 --> 02:30:45,675
+Bu noktadan sonra bizim yapmamız gereken şey, layout tarafındaki komponentlerle,
+
+713
+02:30:48,500 --> 02:30:59,579
+tarafındaki komponentler arasında ilişki kurmaktır. Bunu da işte R dosyası üzerinden yapıyor olacağız. Önümüzdeki hafta bu detayı yapıyor olacağız.
+
+714
+02:30:59,579 --> 02:31:04,579
+Ve oradaki butondan aldığımız bilgiyi burada nasıl...
+
+715
+02:31:04,608 --> 02:31:20,608
+Java tarafına alıyor olacağız layout'tan aldığımız bilgiyi ve onu nasıl işliyor olacağız ve tekrar ekranı nasıl bastırıyor olacağız onu görüyor olacaksınız. Benim kabaca söyleyeceklerim bu kadar. Sorusu olan var mı?
+
+716
+02:31:23,407 --> 02:31:27,288
+Hocam az önce demiştiniz ya, Yıldız koyunca hepsini alıyor, boyut büyüyor.
+
+717
+02:31:27,891 --> 02:31:33,572
+Bunu biz APK'ya çevirince onu optimize etmiyor mu uygulama?
+
+718
+02:31:33,572 --> 02:31:47,572
+Hayır, onu optimize etmiyor. Çünkü orada device'ların özellikleriyle alakalı bir bilgi yok. Daha çok o aktiviteye ait olan...
+
+719
+02:31:47,904 --> 02:31:56,943
+Kütüphanenin bilgileri import edildiği için o spesifiklikte device tipine göre karar vermiyor. Onları zaten included up source file içerisinde barındırıyor.
+
+720
+02:31:58,364 --> 02:32:13,123
+O yüzden bunu APK tarafı, App Bundle tarafı çözmüyor. App Bundle tarafı ağırlıklı olarak ilgili SDK mesela device Android 8.0 ise Android 9.0'ın dosyalarını yüklemiyor karşı tarafı.
+
+721
+02:32:15,188 --> 02:32:16,227
+Anlarım hocam, sağ olun.
+
+722
+02:32:17,907 --> 02:32:19,268
+Başka sorusu olan var mı?
+
+723
+02:32:26,388 --> 02:32:27,328
+Sanırım yok.
+
+724
+02:32:27,328 --> 02:32:29,268
+Şimdi sizden istediğim şey şu.
+
+725
+02:32:29,988 --> 02:32:33,708
+Hakikaten bunun zaten koduna her yerden ulaşabilirsiniz.
+
+726
+02:32:33,848 --> 02:32:41,328
+Bir tane Hello World gibi benzer bir örneği alıp, import edip...
+
+727
+02:32:42,611 --> 02:32:53,611
+Çalıştırıp, emulator üzerinde ya da gerçek divas üzerinde çalışıp çalışmadığını görmek. Ondan sonra işte buradaki drawblardaki ikonu değiştirmek. Ondan sonra...
+
+728
+02:32:54,675 --> 02:33:02,335
+String Examel'in altındaki uygulamanın ismini değiştirmek, değiştirdiğiniz ekranda nasıl gözüktüğünü belirlemek,
+
+729
+02:33:02,675 --> 02:33:13,935
+şuradaki String Examel'deki değişkenin içeriğini değiştirmek, values'unu değiştirmek gibi değişikliklerin olduğunu ve derleme işlemini tamamlayabildiğinizi,
+
+730
+02:33:14,235 --> 02:33:22,536
+uygulamayı emulatörde ya da gerçekliğinizde görebildiğinizi bir sağlamasını yapmanızı bekliyorum.
+
+731
+02:33:22,675 --> 02:33:43,075
+Ondan sonra yavaş yavaş önümüzdeki hafta artık işte aktiviteler arası geçiş, Intent nasıl bilgi taşır? Biraz daha böyle iki ekran arasında belki bir hesap makinesi yapmak, belki bir bu yüzden application'ı yapmak gibi uygulamaları yazmaya başlıyor olacağız.
+
+732
+02:33:45,075 --> 02:33:47,015
+Evet, sorusu olan var mıdır?
+
+733
+02:33:54,036 --> 02:34:10,136
+Peki, o zaman benim de başka ekleyecek bir şeyim yok. Bu hafta derse katıldığınız için size teşekkür ediyorum. Umarım faydalı olmuştur. Sorularınız olursa haftaya ders sırasında ya da mail ile iletebilirsiniz. Teşekkür ediyorum. Güzel bir hafta diliyorum size. Görüşmek üzere arkadaşlar.
+
+734
+02:34:13,335 --> 02:34:14,056
+İyi günler hocam.
+
+735
+02:34:14,816 --> 02:34:15,816
+Teşekkürler, iyi günler.
