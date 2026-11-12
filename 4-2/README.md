@@ -98,5 +98,6 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1oKvIPP6iwCADjMjJs2yWDjLDI8cM5SnN?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Türkçe 2 Ders Kayıtları](./T%C3%BCrk%C3%A7e%202/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
