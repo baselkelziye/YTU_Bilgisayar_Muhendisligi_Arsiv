@@ -1,0 +1,2259 @@
+1
+00:04:09,139 --> 00:04:17,839
+Günün hepinizi genelde bekliyorum. 9-5 geçmesini ancak bağlanıyorsunuz. Nasılsınız?
+
+2
+00:04:20,839 --> 00:04:21,879
+Teşekkürler hocam. [öğrenci].
+
+3
+00:04:21,879 --> 00:04:24,399
+Sesim duyulmuyor mu?
+
+4
+00:04:25,459 --> 00:04:27,039
+Evet hocam.
+
+5
+00:04:28,199 --> 00:04:30,219
+Sesimi duyuyor musunuz?
+
+6
+00:04:30,879 --> 00:04:31,800
+Evet hocam.
+
+7
+00:04:33,524 --> 00:04:42,444
+Ben bilgisayarın sesini kapatmışım. Sizin sesinizi o yüzden duymuyorum herhalde. Günaydın dedim, nasılsınız dedim.
+
+8
+00:04:44,183 --> 00:04:45,863
+Teşekkürler hocam, günaydın. Siz nasılsınız?
+
+9
+00:04:45,944 --> 00:04:46,944
+Teşekkürler hocam, günaydın.
+
+10
+00:04:46,944 --> 00:04:48,663
+Günaydın hocam.
+
+11
+00:04:49,084 --> 00:04:54,004
+Çok şükür sağlıklı ayaktaysak iyiyiz diyoruz günümüz için.
+
+12
+00:04:54,995 --> 00:05:01,855
+Ödevlere evet baktım. Bayağı gönderen olmuş. Saymadım ama 25'i geçiyordur.
+
+13
+00:05:02,240 --> 00:05:22,899
+Ben aslında bu hafta içinde size bir plan çıkaracaktım. Eğitimimizin hangi haftasında ne yapacağız? Belki bunu ilk başta çıkarmam gerekiyordu ama bu seminer haftalarını belirleyebilmek için dersi olan katılımı görmem gerekiyordu ki o kişi sayısıyla bir takvim ayarlayayım.
+
+14
+00:05:23,295 --> 00:05:36,015
+Her zaman derse alanla derse devam eden aynı olmuyor. Bugün ya da yarın gruba atarım ya da gesiz üzerinden de gönderirim. Önemli değil.
+
+15
+00:05:43,827 --> 00:06:00,127
+Drive'a koyarım. Önceden toplamış olduğum, geçen seneden beri gördükçe toplayıp klasöre atmış olduğum Data Compression ile ilgili makaleler var. O makalelerden siz seçebilirsiniz.
+
+16
+00:06:02,163 --> 00:06:26,004
+Bulabilirsiniz. Projede ne tip konular üzerinde çalışmak istiyorsak ona uygun bir makalede seçip ona uygun bir makalede önerebilirsiniz. Bunları zaten yazacağım mailin içerisinde daha açıklayıcı olarak size bildireceğim ki yavaş yavaş bu seminer şehrisine hazırlıklara başlamamız gerekir.
+
+17
+00:06:30,163 --> 00:06:47,963
+Aralık nereden çıktı? Haziran 12'de falan kapanıyor diye biliyorum. Yani Nisan ayını ben ders anlatarak geçireceğim. Mayıs'ın da ilk haftaları olur. Ama sizin de yavaş yavaş planınızı oluşturmanız gerekiyor.
+
+18
+00:06:58,163 --> 00:07:05,403
+Daha ne gördük ama artık yavaş yavaş bir kodlama ve sıkıştırmanın ne olduğunu biliyoruz.
+
+19
+00:07:05,403 --> 00:07:11,403
+Sizin yapacağınız şey gördüğümüz yöntemleri herhangi bir dokümana uygulamak.
+
+20
+00:07:12,103 --> 00:07:17,803
+İçinizde daha önceden sesle çalışan olabilir, görüntüyle çalışan olabilir.
+
+21
+00:07:18,343 --> 00:07:23,644
+Ben genelde doküman sıkıştırmaya odaklı olarak konularımı anlatıyorum.
+
+22
+00:07:23,823 --> 00:07:26,163
+Ama o alanlarda alıp yani datanızı...
+
+23
+00:07:26,163 --> 00:07:30,163
+o alanda alıp o alanda veri sıkıştırma uygulayabilirsiniz.
+
+24
+00:07:31,668 --> 00:07:49,528
+Derin öğrenme konuları da ADT Compression'ın içerisinde var. Eğer daha önceden derin öğrenme modelleriyle ilgili çalışanlarınız olmuşsa, onları hazır veri setleri üzerinde kullanabilirler.
+
+25
+00:07:49,528 --> 00:07:58,228
+Yani yavaş yavaş araştırmaya başlayalım. Ben de konu başlıklarını size göndereceğim mailin içerisinde yazacağım.
+
+26
+00:07:59,475 --> 00:08:09,915
+Evet, bu konuda isterseniz maili paylaştıktan sonra anlamadığınız şeyler olursa haftaya derste bana sorarsınız.
+
+27
+00:08:10,576 --> 00:08:19,156
+Önce bir neler istiyoruz, neler yapıyoruz? Onun size bir ön bilgisini vereyim de ondan sonra bana sorular soru.
+
+28
+00:08:19,156 --> 00:08:26,536
+Şimdi, bugünkü haftaya başlıyoruz konumuza. Haydi bakalım.
+
+29
+00:08:28,019 --> 00:08:30,019
+Share Screen yapalım.
+
+30
+00:08:32,019 --> 00:08:34,019
+Kendimce yaptım.
+
+31
+00:08:34,019 --> 00:08:43,019
+Galiba, istatistiksel yöntemler. Bunu da açıp bırakmışım. Share diyelim.
+
+32
+00:08:43,019 --> 00:08:45,019
+Ekranı görüyor musunuz?
+
+33
+00:08:45,019 --> 00:08:47,019
+Evet hocam.
+
+34
+00:08:47,019 --> 00:08:48,019
+Tamam, okey.
+
+35
+00:08:48,019 --> 00:08:52,019
+Aldığım notlara göre, prefiks kodlarda kalmışız.
+
+36
+00:08:52,019 --> 00:08:55,019
+Prefiks kodlar nerede, nerede?
+
+37
+00:08:56,019 --> 00:08:59,480
+Evet, şunu da fullscreen'e geçelim.
+
+38
+00:09:03,480 --> 00:09:11,019
+Ben elimdeki veriyi herhangi bir yöntemle sıkıştıracağım vakit...
+
+39
+00:09:11,379 --> 00:09:23,740
+Ki bu yöntemlerimiz dedik ki istatistiksel yöntemler olabilir, sözlüksel yöntemler olabilir veya diğer yöntemler başlığı altında açmıştık.
+
+40
+00:09:23,740 --> 00:09:36,579
+Önemli olan iki tane şey vardı. Bir, sıkıştırdığım bir dosyayı geri açabilmem gerekiyor. Açamıyorsam bunun bir esprisi yok.
+
+41
+00:09:36,820 --> 00:09:56,180
+Bir dosyayı geri açabilmem için sıkıştırma algoritmasındaki sembolleri ya da piksellere verilen kod değerlerinin prefiks kod özelliğine sahip olması gerekir. İstatistiksel yöntemlerle çalışıyorsak.
+
+42
+00:10:00,000 --> 00:10:28,000
+Bu yöntemler altında Shannon Fanoy ile başlayacağız. Huffman'ın farklı versiyonları, aritmatik koding, diğer yöntemler arasında Fax Sıkıştırma'da kullanılan yöntemler, PPM dediğimiz yine istatistiğe dayalı ama karakterleri tekli ya da ikili değil. Daha kombinasyonlar şeklinde.
+
+43
+00:10:28,000 --> 00:10:39,148
+üzerinde kullanarak yapmış olduğum yöntemleri içeriyor şimdi prefiks kodla başlayalım prefiks kod nedir
+
+44
+00:10:39,635 --> 00:11:03,775
+Prefiks kod nedir'e geçmeden evvel, öncelikle şunu biliyoruz. Kodlarımız ya değişken uzunluklu olabiliyordu ya da sabit uzunluklu. Bizim günlük hayatta kullandığımız kod ASCII kodu. Yani günlük hayatta dediğime bakmayın. Bilgisayarda kullandığımız kod ASCII kod. Her biri 8 bit ve sabit uzunluklu.
+
+45
+00:11:03,923 --> 00:11:22,864
+Fakat sabit uzunluklu kodlar bana sıkıştırma performansı sağlamaz. Çünkü o veri içerisinde çok fazla sayıda redundancy olur. Artıklık. Redundancy neydi? Bazı şeyleri defalarca söylüyor olabilirim.
+
+46
+00:11:31,923 --> 00:11:47,124
+O veri içerisinde halen sıkıştırabileceğin veriler var demektir. O yüzden sabit uzunluklu kodlar değil, değişken uzunluklu kodlar seçilir.
+
+47
+00:11:47,471 --> 00:12:00,451
+Prefiks kodlar da değişken uzunluklu kodlardandır. Ama bir kodun prefiks kod olarak adlandırılmasının özel bir durumu vardır. O slide'a gelince bahsedeceğim.
+
+48
+00:12:01,672 --> 00:12:12,912
+Bu niye böyle birdenbire geldi? Değişkin uzunluktaki kodlar ne demek? Hemen kısa bir entropi ile bir hatırlayalım.
+
+49
+00:12:13,264 --> 00:12:20,463
+Elimde 4 tane alfabemde sembolüm var. Her birinin olasılığı 0.25 olsun.
+
+50
+00:12:21,331 --> 00:12:37,451
+Ben böyle bir sistemin kaynağını biliyorum demektir. Bir sistemin kaynağını bilmek demek, o sistemde, o veri seti içerisindeki her bir sembolün olasılığını bilmek demektir.
+
+51
+00:12:49,331 --> 00:13:01,312
+Entropi neydi? Bu kaynağı kodlamak için gerekli olan ortalama bit uzunluğuydu. Entropi bana şunu söylüyor.
+
+52
+00:13:01,312 --> 00:13:11,471
+Sen elinde eşit uzunluklu dört tane sembolün varsa bu alfabeye sahip bir metni kodlamak istiyorsan,
+
+53
+00:13:12,052 --> 00:13:25,772
+Ortalama iki bit kullanman gerekir. Entropi formülümüz neydi? Bir sembolün olasılığı çarpı o sembolün taşıdığı bilgiydi.
+
+54
+00:13:25,772 --> 00:13:38,732
+Bilgiyi ölçemeyiz demiştik. Bilgiyi ölçülebilir yapmak için iki tabanında olasılığı alırsam,
+
+55
+00:13:39,539 --> 00:14:03,259
+Bunun da önünde eksi var. Bu da bana neyi veriyordu? Bilgiyi veriyordu. Bunun da önünde bir P var. Bu eksiyi de alıp bunun başına getirirsek, bir tane sembolün entropisini hesaplamak istiyorsan o sembolün olasılığı çarpı o sembolün olasılığının logaritmasıydı.
+
+56
+00:14:03,764 --> 00:14:16,004
+Eğer n tane olayım varsa bunun başına da sigma 1'den n'e kadar diyorduk. O yüzden bunları pi diyorduk. Bütün olaylarımız gelsin diye.
+
+57
+00:14:16,004 --> 00:14:30,504
+Burada benim dört tane olayım var. Olasılığı 0.25, bilgisi log 2 0.25. Dört tane bunu yazmak yerine dörtle çarptım. Entropisi 2 bit çıktı.
+
+58
+00:14:31,764 --> 00:14:39,683
+Böyle bir alfabeden oluşan elimde bir metin varsa ortalama iki bit kullanacaksın diyor entropi.
+
+59
+00:14:39,683 --> 00:14:48,423
+Peki, benim şu an entropiden falan haberim yok. Sıradan bir bilgisayar öğrencisiyim.
+
+60
+00:14:48,923 --> 00:14:55,864
+Dört tane sembolü birbiriyle çıkışmayacak şekilde kodla dersen nasıl kodlarsın?
+
+61
+00:14:56,224 --> 00:15:02,884
+İki tane bit ile 2 üzeri 2'den 4 farklı değişik kod oluştururuz.
+
+62
+00:15:03,663 --> 00:15:11,144
+4 tane kod da işte 00, 01, 01, 01, 01 olabilecek bütün durumlar.
+
+63
+00:15:11,144 --> 00:15:21,104
+Hiçbiri birbiriyle çakışmıyor. Bu A1'in kodu olsun. Bu A2'nin, bu A3'ün, bu da A4'ün kodu olsun.
+
+64
+00:15:22,803 --> 00:15:42,183
+Peki, ortalama mesaj uzunluğumda ne olur benim? Ortalama mesaj uzunluğuna S demiştik. Ortalama ne kaç bit kullandım her biri için? 2, 4, 6, 8. 4'e böldüm 2. Ortalama bit uzunluğu 2.
+
+65
+00:15:43,059 --> 00:15:54,919
+Entropi 2, Redundancy ne oldu? Redundancy, Besaj uzunluğuyla entropi arasındaki mutlak değerce farklı, yani sıfır.
+
+66
+00:15:54,919 --> 00:16:03,699
+Sen bu veriyi daha fazla şekilde iki bitin altında kodlayamazsın demektir.
+
+67
+00:16:04,275 --> 00:16:14,655
+Fakat gerçek dünya böyle değildir. Gerçek dünyada hiçbir şeyin, bir resim alın. Resimdeki bütün pikseller aynı sayıda mıdır?
+
+68
+00:16:15,379 --> 00:16:41,220
+Eğer sen gider bir resim alır, bunu tam ortadan ikiye böler, yukarıya siyah, yukarı aşağıya beyaz yaparsan evet eşit olur. Ama bunu özellikle ben hazırlıyorum eşit olması için. Böyle değildir. Bir döküman alırsanız, döküman içerisindeki bütün karakterlerin ortalaması şey, kullanım sıklığı aynı mıdır? Hayır değildir.
+
+69
+00:16:43,379 --> 00:16:50,160
+Sundance'ın sıfır olması sadece teoride olabilir. Pratikte sıfır olamaz.
+
+70
+00:16:50,160 --> 00:17:00,480
+Şimdi pratiğe bir örnek verelim. Aynı sembollerim var. Dört tane. Fakat bunlar farklı olasılıklara sahip. İşte bu.
+
+71
+00:17:01,524 --> 00:17:19,023
+Bir tanesi 0.49, 0.25, 0.25, 0.01. Böyle bir sistemde kaynak hakkında bilgim var. Kaynak hakkında bilgi neydi? Sembollerin kullanım sıklıklarını çıkarabilmemiz.
+
+72
+00:17:19,392 --> 00:17:38,831
+Entropiyi hesaplayalım. Birincinin olasılığı çarpı logaritması, ikincinin olasılık çarpı logaritması, üçüncünün olasılık çarpı logaritması, dördüncünün olasılık çarpı logaritmasını ekledik, topladık.
+
+73
+00:17:38,831 --> 00:17:46,731
+Önündeki eksi var. Bu eksi neden geliyordu aslında? I dediğimiz şey neydi? Bir bölü.
+
+74
+00:17:47,892 --> 00:18:13,812
+Logaritma 1 bölü P'de. Bu P yukarıya eksi diye geçiyordu. Bu eksilik oradan geliyordu. Ne oldu? 1.57 bit çıktı. Bana teoride diyor ki elinde bu olasılıklara sahip bir dökümanım varsa ya da resmin varsa ortalama 1.57 bite ihtiyacım var.
+
+75
+00:18:14,355 --> 00:18:39,935
+Şimdi 1.57 diye bir kavram, real bir sayı bizim dünyamızda yok. İntecr olması lazım. Yani hiç 2.5 bit uzunluğunda bir veri olamaz. Benim demek ki elimdeki sembollerimin bazıları 1 bitle kodlanacak, bazıları 2 bitle kodlanabilir, bazıları 3 bitle kodlanabilir.
+
+76
+00:18:41,875 --> 00:18:47,855
+Sayılarına göre de bunlar tabii ki değişecek. Ve ortaya teoride 1.57 çıktı.
+
+77
+00:18:47,855 --> 00:18:58,375
+Şimdi benim pratikte acaba böyle olasılıklara sahip olan sembollerime nasıl kodlar atamalıyım?
+
+78
+00:18:58,804 --> 00:19:26,804
+İşte dedik ki Hufman kodu, aritmatik koding bilmem ne bilmem ne böyle yöntemlerim var. Bunları kullanacağım. Ya da bu yöntemlerin sonuçları da bana prefiks kodlar verecek. Ya da önceden hazırlanmış bir takım prefiks kodlar var. Nasıl ASCII tablosu önceden hazırlanmış hepsi 8 bit. Bana da değişken uzunluklu önceden hazırlanmış kodlar da kaybedecek.
+
+79
+00:19:26,804 --> 00:19:46,604
+Şimdi, diyelim ki olasılıklarım bu ve ben yine gittim. Elimde dört tane sembolüm varsa, hiç bu olasılıklarının ne olduğuna dikkat etmeden bunları yine 2 bit 2 bit kodladım.
+
+80
+00:19:47,364 --> 00:19:52,724
+Farkım ne oldu? Bu benim mesaj uzunluğum. Bu da entropi.
+
+81
+00:19:53,587 --> 00:20:04,127
+0.43 Redundance'ı çıktı. Bir öncekindeki Redundance'ı neydi? Şurada bir yere yazmıştık. Sıfırdı. Neden sıfırdı?
+
+82
+00:20:04,692 --> 00:20:23,391
+Çünkü olasılıklar eşitti. O yüzden sıfır çıkmıştı. Burada olasılıklarım farklı. Fakat ben olasılıklara hiç dikkat etmeden bunların her birini sabit uzunluklu olarak kodladığımda entropimi büyüttüm.
+
+83
+00:20:23,391 --> 00:20:31,211
+Demek ki benim sabit uzunluk kullanmamam gerekir. Değişkin uzunluklu kodlar kullanmam gerekir.
+
+84
+00:20:31,700 --> 00:20:58,956
+Peki, ne olabilir bu değişkin uzunluklu kodlar? Bir örnekle görelim. Elimizde şöyle bir inputumuz var. Bu inputta bakarsanız kaç tane A1 var? 1, 2, 3, 4, 5, 6, 7, 8, 9. Eğer yalnız saymadıysam 9 tane A1 var. Kaç A2 var? 1, 2, 3.
+
+85
+00:20:59,124 --> 00:21:18,304
+3, 4, 5 tane A2 var. Kaç A3 var? 1, 2, 3, 3, 4, 5, 5 tane de A3 var. Kaç tane A4 var?
+
+86
+00:21:19,188 --> 00:21:39,388
+Dört bir tane. Bunların olasılıkları aynı çıkmayacak. Nedir bunun olasılığı? 9 bölü 20'dir. İşte bunun olasılığı 1 bölü 20'dir. Bunların olasılığı da 2 bölü 20'den şunların olasılıkları da 1 bölü 10'dur. Olasılıkları farklı.
+
+87
+00:21:40,188 --> 00:21:46,567
+Zaten buraya bakın olasılıkları da çıkarmışım. Bunları böldük ettik. Olasılıklar bu çıktı.
+
+88
+00:21:47,188 --> 00:21:54,468
+Şimdi böyle olasılıklara sahipsem benim gidip bunları sabit uzunluklu kod olarak kullanmamam lazım.
+
+89
+00:21:55,188 --> 00:22:02,708
+Sen diyebilirsin ki bunları şu an bir yöntem bilmiyoruz. Yöntemsiz bunlara bir kod atayalım.
+
+90
+00:22:02,708 --> 00:22:10,868
+İki tane kod atamışım. Bir tanesi kod 1, bir tanesi kod 2 olsun. A1 dedim en fazla kullanılan.
+
+91
+00:22:11,508 --> 00:22:17,028
+Bir sembol olduğuna göre bunu daha küçük bir bitle ifade edeyim.
+
+92
+00:22:17,028 --> 00:22:29,788
+Information Theory bana ne diyordu? Bir sembolün karşıma çıkma olasılığı ne kadar fazlaysa onun taşıdığı bilgi de o kadar azdır.
+
+93
+00:22:30,788 --> 00:22:36,827
+Bilginin azlığı daha az bitle ifade edilmesine karşılık geliyor.
+
+94
+00:22:37,364 --> 00:22:50,463
+Bir şeyin olasılığı ne kadar düşükse onun karşıma gelme ihtimali o kadar düşüktür. Ama gelirse de taşıdığı bilgi büyüktür.
+
+95
+00:22:51,844 --> 00:23:01,884
+Olasılığı küçükse bilgi fazla, bilginin fazlalığını daha fazla bitle ifade edebilir diye düşünüyoruz.
+
+96
+00:23:03,796 --> 00:23:16,256
+Bir demişim, bunu 2 bitle, bunu 3 bitle. Ha diyebilirsiniz, hocam bunun ikisi de aynı olasılığa sahip. Niye bunun ikisini de 2 bit ya da ikisini de 3 bit yapmadım?
+
+97
+00:23:16,660 --> 00:23:44,600
+Yapmadım yani. Ne bileyim ben? Öyle attım. Olabilir de ama olmayacağını da birazdan göreceğiz. Buna da böyle bir kod vermişim. Bir başka arkadaşımız da bunlara kodları verirken ilk ikisine aynı vermiş, üçüncüyü değiştirmiş, dördüncüyü aynı vermiş. Şimdi size soruyorum. Ben bu iki kodu da kullanarak sıkıştırma yapabilir miyim?
+
+98
+00:23:44,660 --> 00:24:04,980
+Hadi bir deneyelim bakalım. Şöyle bir şeyim olsun. Elimde A1, A3, A1 diye bir inputum var. Şimdi ben bunu kod 1 ile kodlayalım.
+
+99
+00:24:12,243 --> 00:24:24,003
+A1'in kodu neydi? 1'di. Kod 1 ile kodlarsam böyle bir kod yazıyorum. Peki ben bunu kod 2 ile kodlayayım.
+
+100
+00:24:26,503 --> 00:24:35,203
+A1 yine 1. A3 3 tane 0. A1 yine 1.
+
+101
+00:24:36,019 --> 00:24:48,059
+Burada da böyle kodladım. Ne var ki? Bu da 5 bitlik, bu da 5 bitlik. Her şey yolunda. Acaba her şey yolunda mı? Rengimizi değiştirelim.
+
+102
+00:24:49,539 --> 00:25:01,239
+Kodladım. Hadi bunu açalım. Bakacaksın. Bir olan bir kod var mı? Bir neydi? A1'di. A1'i yazdım.
+
+103
+00:25:02,548 --> 00:25:22,587
+Sıfırlı bir kod var mı? Bakıyorum sıfır olan bir kod yok. Sıfır biri alayım. İki bitli. Sıfır birli bir kod var mı? Evet var. A2. Ama A3 de olabilir. Bunun üçüncü bitini de alırsan.
+
+104
+00:25:22,976 --> 00:25:43,716
+Bu da 0, 1, 0 olur. Hayda, şimdi ben bunu geri açacağım. Acaba bu iki biti alıp 0, 1'i alıp buna A2 mi demeliyim? Yoksa şu üç tane biti alıp buna A3 mü demeliyim? Bilmiyorsun. Ne alacağını bilmiyorsun.
+
+105
+00:25:45,011 --> 00:26:03,231
+A2 alıp da devam edebilirsin. A3 de alıp devam edebilirsin. Böyle bir durumda, ikilemde kaldığın vakit bazen bu metnin sonuna kadar gelip her şeyi çözersin ama bambaşka bir içerik karşına çıkabilir.
+
+106
+00:26:03,771 --> 00:26:10,271
+Ya da bazen gelir öyle bir yerde kalırsın ki ilerleyemezsin. Öyle bir kod karşında yok.
+
+107
+00:26:10,771 --> 00:26:35,592
+Şimdi kod 2'ye bakalım. 1 var. Başka 1 ile başlayan bir kodum var mı? Yok. Ha diyorum. Bu 1 nedir? A1 aldım. Ondan sonra 0 var. 0 ile başlayan bir sürü kod var. Acaba hangisi? İkinci biti aldım. 2 tane 0. 2 tane 0 ile başlayan kod var mı?
+
+108
+00:26:36,079 --> 00:27:03,499
+Evet var. Bu da var. Bu da var. 3 biti alıyorum. 3 tane sıfırla başlayan kod var mı? Sadece bu var. Bundan başka 3 tane sıfırla başlayan kod olmadığı için bunu hemen A3 diye çözdüm. Sonra 1 bit var. Bu da nedir? A1'dir. Bakın kod 2'de hiçbir problem yaşamadım.
+
+109
+00:27:03,923 --> 00:27:21,024
+Ama kod 1'de yazdım, yaşadım. Bunun sebebi şudur. Kod 1 prefiks kod değildir. Kod 2 ise prefiks koddur. Bu bir prefiks koddur.
+
+110
+00:27:30,867 --> 00:27:39,627
+Bir kod sistemi ile kodladığımız bir dökümanı geri açamıyorsak bu kodun hiçbir esprisi yok demektir.
+
+111
+00:27:40,447 --> 00:27:50,707
+Kodladığım kodlarla geri açabiliyorsam bu doğru kod demektir ve prefiks özelliğine sahip demektir.
+
+112
+00:27:50,707 --> 00:27:57,207
+Şimdi şuraya ne yazmışım bir bakalım. Kod 1 ile kodladığımda durum ne oluyor?
+
+113
+00:27:58,451 --> 00:28:22,291
+9 tane A1 vardı. A1 1 bit ile kodlanmış. 5 tane A2 vardı. A2'ler için 2 bit. 3 tane 5 vardı. 3 bit. 1 tane A4 vardı. 1 bit. Kaç tane sembolüm var? 9, 1 daha 10. 10 daha 20 sembol. 20 sembolü kodlamak için
+
+114
+00:28:22,688 --> 00:28:40,888
+Kaç bite ihtiyacım var? 3 aslında şöyle diyelim. 1 çarpı 9 burası 9 oldu. 2 çarpı 5 burası 10. 3 5 burası 15. 1 çarpı 1 1 burası oldu sana.
+
+115
+00:28:43,539 --> 00:29:00,700
+Niye olmadı? 9, 10, 3, 5, 15, 1, 37 bit ediyor mu burası? 10, 20, etmedi. Neyi hatalı yaptım? Arkadaşlar, A1 1 bit, A2 2 bit.
+
+116
+00:29:01,460 --> 00:29:29,019
+A3, 3 bit. A4, 3 bit olacak. 1 bit nereden çıktı? Bu hatalı. Bunu değiştirmemiz lazım. Burası 3 olduğunda 37 bit kodlanacak. Şimdi ben normalde benim elimde kaç tane sembol var? 20 tane sembol var. Eğer ASCII ile kodlamış olsaydım 8 bit, 160 bite ihtiyacım olacaktı.
+
+117
+00:29:29,407 --> 00:29:42,687
+Halbuki ben kodlama yöntemlerinden birini seçtiğimde aslında kod 1'i de seçsem, kod 2'yi de seçsem ikisinin de bit uzunlukları aynı olduğu için yine 37 bit çıkacak.
+
+118
+00:29:42,687 --> 00:29:47,687
+160 bit yerine 37 bit kodlamış oldum.
+
+119
+00:29:48,339 --> 00:30:03,139
+Ortalama mesaj uzunluğum nedir? Benim 37 bitte kodluyorsam 20 tane sembolü, 37 bölü 20, 1,85 benim ortalama mesaj uzunluğum.
+
+120
+00:30:03,920 --> 00:30:12,339
+Entropisim, bunun entropisini ölçtüğümde ön sayfada ölçmüş müydük? Evet, 1.57 idi entropi.
+
+121
+00:30:12,339 --> 00:30:14,539
+1.57 idi.
+
+122
+00:30:15,508 --> 00:30:36,668
+1.57, ikisi arasındaki mutlak değerce farkı aldığımda 0.28. Yani ben kod 1 ile de kod 2 ile de kodlasam redundancy 0.28, 0'a yakın iyi bir sıkıştırma performansı bana veriyor.
+
+123
+00:30:38,675 --> 00:30:50,495
+Kod 1'in geri dönüşü yoktu. Kod 2'nin geri dönüşü vardı. Neden sorusunun cevabı prefiks kodda yazıyor.
+
+124
+00:30:51,188 --> 00:31:06,728
+Prefiks kodun tanımını yapalım o zaman. Bir sembolün sahip olduğu kodun bit pattern'ı yani bit deseni diğer sembolün ön eki olamaz.
+
+125
+00:31:06,728 --> 00:31:18,028
+Ne demek istiyorum? Şimdi kodumuz ne? Bir. Bir ile başlayan bir kod olmaması gerekir.
+
+126
+00:31:18,355 --> 00:31:36,516
+Evet, yok. Burada da yok. 1 ile başlayan bir kod yok. Öteki kod 0-1. 0-1 ile başlayan bir kod olmaması gerekir. Ama bakıyoruz kod 1'in içinde 0-1 ile başlayan bir kod var.
+
+127
+00:31:37,140 --> 00:32:01,220
+İşte bu problemdir. Bu tip durumlarda kodladığım dokümanı geri açmakta problem yaşarım. Açamam. Acaba iki biti alıp buna A2 mi diyeceğim? Yoksa üçüncü biti de bakıp bu A3 mi olacak? Buna karar veremeyeceğim. Şimdi kod 2'ye bakalım. 1 ile başlayan bir kod var mı? Yok.
+
+128
+00:32:01,652 --> 00:32:20,752
+01 ile başlayan bir kod var mı? Yok. 3 tane 0 ile başlayan bir kod var mı? Yok. 201 ile başlayan bir kod var mı? Hayır, yok. Öyleyse kod 2 yani burası prefiks koddur.
+
+129
+00:32:21,172 --> 00:32:38,211
+Bütün istatistiksel yöntemlerin, önerdiği kodların, yani yöntem sonucunda elde ettiğim kodların hepsinin prefix kod olması gerekir. Bu veri sıkıştırmanın olmazsa olmazlarından biridir.
+
+130
+00:32:38,867 --> 00:32:44,607
+Değişkin uzunlukta kod oluşturulurken iki temel özelliğe dikkat edilecek.
+
+131
+00:32:44,968 --> 00:32:54,548
+Bir, bunu dersin ilk haftalarından beri biliyoruz. En fazla sıklıkla kullanılan sembolü en kısa kod atanır.
+
+132
+00:32:54,548 --> 00:32:56,708
+Sıklığı fazlaysa?
+
+133
+00:32:57,203 --> 00:33:15,183
+Nedir? Olasılığı büyüktür. Olasılıkla bilgi ters orantılıydı. O zaman taşıdığı bilgi az olacaktı. Bilginin az olması onu daha az bitle ifade ettiğimiz anlamına geliyordu.
+
+134
+00:33:15,604 --> 00:33:43,584
+Bir de prefiks özelliğine uymalıdır. Prefiks özelliğimizin tanımı neydi? Bir sembolün kodu, bir başka sembolün başlangıcını oluşturamaz. Zaten prefiksteki, hani İngilizce'de de ekler vardır. Prefiks, safiks, infiks. Ortaya gelen ek, öne gelen ek, sona gelen ek gibi. Bu da öne gelen ektir.
+
+135
+00:33:43,604 --> 00:34:04,144
+Anlamı oradan geliyor. Bir kod, bir başka kodun prefiksi olamaz. Peki, size şöyle bir soru sorsam. Integer sayıların binary gösterilimi prefiks kod özelliğine uyar mı?
+
+136
+00:34:04,723 --> 00:34:28,644
+İntegre sayıları alalım. 0, 1, 2, 3, 4, 4 olmadı. 5, 6, 7, 8'e kadar gidelim. Binary'lerini yazalım. 3 tane 0, 0, 0, 1, 0, 1, 0.
+
+137
+00:34:29,427 --> 00:34:49,887
+0 1 1 1 0 0 1 0 1 1 0 1 1 1 8'i de yazarsam 1 3 0 bunların hepsini 4 bit alırsam şöyle olsun.
+
+138
+00:34:49,887 --> 00:34:51,647
+Şimdi bakın bakalım.
+
+139
+00:34:52,371 --> 00:35:18,112
+Bunlar prefiks kod özelliğine sahip olabilir mi? Aslında şöyle bakalım. Şu sıfır, şu bir, şundan iki ve üç, dört, beş, altı, yedi, buradan itibaren de sekiz.
+
+140
+00:35:19,347 --> 00:35:21,927
+Bir silgimi alayım.
+
+141
+00:35:32,596 --> 00:35:52,755
+Şimdi bakalım. Sıfırla başlayan bir kod var mı? Hayır, yok. Bir ile başlayan bir kod var mı? Bu da var, bu da var, bu da var, bu da var, var, var, var.
+
+142
+00:35:53,396 --> 00:36:02,235
+Onunla başlayan kod var mı? Evet, burası var, burası var, burası var. Birbiriyle başlayan kod var mı? Var.
+
+143
+00:36:03,123 --> 00:36:09,703
+Efendim, yüzde başlayan kod var mı? Ah, şurası yüzde başlıyor. Ve bu böyle devam eder.
+
+144
+00:36:10,443 --> 00:36:19,804
+Öyleyse, integer sayıların binary gösterilimi bir prefix kod özelliğine uymuyor gördüğünüz gibi.
+
+145
+00:36:19,804 --> 00:36:30,804
+Ben oturup bunları prefix kod olarak kullanamam. Bana diyebilirsiniz ki, hocam en büyüğü işte 8, bu 8'i...
+
+146
+00:36:31,123 --> 00:36:45,703
+Bunları 4 bit ile yazdınız. Niye bunları da 4 bit vermediniz? Bunların hepsini 4 bit verseydiniz prefix kod olurdu. Ama o zaman da değişkin usuluklu kod olmazdı.
+
+147
+00:36:46,164 --> 00:37:00,904
+Sabit uzunluklu kod olurdu. Ben artık değişkin uzunluklu kodlardan bahsediyorum. Sabit uzunluklu kodları kullandığım vakit redundansımın yüksek çıkacağını biliyorum. Amacım onu da düşürmek.
+
+148
+00:37:01,972 --> 00:37:20,972
+Peki, ilerleyelim. Şimdi prefiks kodlara örnek verelim. Bu yöntemlere geçmeden evvel araştırmacılar oturuyorlar. Çeşitli prefiks kodlar üretiyorlar. Belirli kurallarla ve kişilerin...
+
+149
+00:37:21,172 --> 00:37:39,231
+Kullanımına sunuyorlar. Senin elinde sembollerin, burada sembol diye bahsettiğim şey karakter olabilir ya da bir görüntü verisi olabilir ya da ses verisinde işlenilebilinen bir veri olabilir. Sembol her şey olabilir.
+
+150
+00:37:42,452 --> 00:37:57,112
+Sarklı olasılıklarla karşıma gelen sembolleri kullanmak amacıyla farklı uzunluklarda belirli kurallar çerçevesinde prefiks kodlar hazırlayıp veriyorlar. Al bunları kullan diyorlar.
+
+151
+00:37:58,195 --> 00:38:18,835
+Yine bana böyle hazır verilmiş prefiks kodlarda yine redundansımda o kadar şey olmuyor. Yani gerçek, statistiksel bir yöntem kullanarak elimdeki veriye bağlı olarak kodları çıkarmıyorsam redundansım ister istemez biraz büyük olacaktır.
+
+152
+00:38:18,835 --> 00:38:25,455
+Şimdi prefiks kod çıkarmak o kadar zor bir şey değil. Bir adamın biri çıkıyor, diyor ki
+
+153
+00:38:25,744 --> 00:38:46,584
+İ diyor 1'e eşit ve 1'den büyük olmak şartıyla. Bu i neyse? 1, 2, 3, 4, 5. Bu i kodunun binary değerinin başlangıcına log2i adet 0 eklenerek elde edilen
+
+154
+00:38:47,956 --> 00:38:56,156
+kodlar çıkarıyor. Nasıl yapıldığını göstereceğim. Öncelikle şunu hatırlayalım. Şu işareti hatırlıyor musunuz?
+
+155
+00:38:56,156 --> 00:39:09,716
+Mesela elimde 7.2 varsa bunun anlamı nedir? 7.2 ve de bunun hani şöylesi var, yukarıdan olanı var.
+
+156
+00:39:14,739 --> 00:39:36,619
+Ben bu işaretleri ilk gördüğümde lisedeydim. Hemen dedim ki kitap yanlış yazmış. Bunlar böyle köşeli parantez olacak. Ama kitabın birinci sayfası, ikinci sayfası hep böyle. Kitabın her tarafı hatalı olamaz. Bu tabii benim o hangi cahilliyim bilmiyorum.
+
+157
+00:39:37,523 --> 00:39:53,384
+Neden sonra işte öğrendik derste hoca anlatınca? Şu şu demek, şuraya da bir 7'yi referans verelim. Şurası 7 olsun, şurası da 8 olsun. 7.2'de şurada bir yer.
+
+158
+00:40:06,483 --> 00:40:23,544
+En küçük integer sayı 7.2 şurada bir yer. 7.2'den büyük buranın tamamı. 7.2'den büyük en küçük integer sayı nedir? 8'dir.
+
+159
+00:40:33,684 --> 00:40:46,244
+En büyük integer sayı, kendisinden küçük deler var. 6, 5, 4, 3, 2 diye gidiyor. En büyüğü de hangisi? 6'dır. Bunun değeri de 6 olur.
+
+160
+00:40:54,387 --> 00:41:13,628
+3'ü aldığımda bir küsür diye bir şey çıkacak. Bu neydi? Kendisinden küçük en büyük tam sayı ne olur bir küsür olan bir şeyin kendisinden küçük en büyük tam sayı bir olacak. O kadar da sıfır eklenir diyoruz.
+
+161
+00:41:13,628 --> 00:41:22,028
+Şimdi şu örneklere bakalım nasıl çıkmış? Bir iki tanesini yapalım. Zaten diğerlerini yapmaya gerek yok.
+
+162
+00:41:22,387 --> 00:41:28,288
+Adamın biri diyor ki i 1, 2, 3, 4, 5 ve integral sayıları çıkarmış.
+
+163
+00:41:28,748 --> 00:41:34,467
+Şu kuralı kullanarak ben prefix kodlar hazırlarım size.
+
+164
+00:41:35,728 --> 00:41:38,168
+i1 bu şartı sağlıyor.
+
+165
+00:41:38,387 --> 00:41:38,907
+Geldi.
+
+166
+00:41:39,467 --> 00:41:41,527
+i'nin binary değeri nedir?
+
+167
+00:41:41,947 --> 00:41:42,547
+1'dir.
+
+168
+00:41:43,539 --> 00:42:06,699
+Bu binary değerinin başlangıcına log2, 1 şu alt parantez var. Nedir? Log2, 1 bakarsanız 0 bilmem ne diye bir şey çıkıyor. Bu da nedir? Kendisinden küçük.
+
+169
+00:42:07,123 --> 00:42:14,764
+En büyük tam sayı yani 0. 0 tane 0 ekle diyor başına. Hiç 0 eklemedim.
+
+170
+00:42:16,284 --> 00:42:29,264
+Şimdi buna gelelim. 2 var. İntecir olarak 2'yi yazdım. 1, 0. Log 2, iyi yerine 2 yazdım. Burası nedir? 1.
+
+171
+00:42:30,036 --> 00:42:41,215
+Bir nedir? Kendisine eşit veya kendisinden küçük en büyük tam sayı birdir. Öylesi önüne bir tane sıfır ekledim.
+
+172
+00:42:43,435 --> 00:42:55,735
+Beşi yapalım. İntecir olarak binary beşi yazıyorum. Binary olarak bu beş. Önüne kaç tane sıfır koyacağım?
+
+173
+00:42:56,820 --> 00:43:16,400
+Log 2, 5 dedim. Eğer burası 4 olsaydı bunun sonucu 2 olacaktı. 5 olduğuna göre burası 2'den büyük bir sayı. Yani şöyle bir şey.
+
+174
+00:43:23,539 --> 00:43:35,839
+Eşit veya kendisinden küçük en büyük tam sayı yani 2. Bunun önüne 2 tane 0 konulacak. İşte 2 tane 0 konulmuş.
+
+175
+00:43:36,879 --> 00:43:46,619
+Son olarak 15'i yapıyorum arkadaşlar. 15'i yazdım. 4 tane 1. Önüne kaç tane 0 gelecek?
+
+176
+00:43:49,844 --> 00:44:10,344
+15 dedik. Eğer burası 16 olsaydı, bu 4 olacaktı. Demek ki 3 küsürlü bir şey. Diyelim ki bu 3.8 gibi bir şey.
+
+177
+00:44:10,963 --> 00:44:23,463
+Alt işaret var. Kendisinden küçük, en büyük tam sayı 3 olacak. Bunun önüne 3 tane 0 gelecek. İşte 3 tane 0 gelmiş.
+
+178
+00:44:24,684 --> 00:44:35,384
+Ve bakalım bunlar prefiks kod mu? Bakın 1 ile başlayan hiçbir kod bulamazsın. 0, 1, 0 ile başlayan hiçbir kod yok.
+
+179
+00:44:35,731 --> 00:44:58,851
+0, 1, 1 ile başlayan bir kod yok. Ya da 2, 0, 100 ile başlayan bir kod göremezsiniz. Buradaki kodların hepsi prefiks koddur. Bu kodların bit uzunlukları nedir? Bu bit uzunluğunun bir uzunluğunda, üç uzunluğunda, üç, beş, beş, beş, beş, yedi, yedi, dokuz, dokuz diye gidiyor.
+
+180
+00:45:03,731 --> 00:45:15,231
+En fazla kullanılan sembol neyse, olasılığı en yüksek sembol neyse onu daha az bitle ifade edeceğine göre bunu kullanırsın.
+
+181
+00:45:15,231 --> 00:45:27,192
+Nerede? Mouse yine gitti. Bir dakika. Bunu kullanırsın. O zaman ben olasılık değerlerimi büyükten küçüğe doğru sıralarım.
+
+182
+00:45:27,603 --> 00:45:36,583
+En büyük olasılık olanları daha az bitle ifade ettiğim için sırasıyla bu kodları ona veririm.
+
+183
+00:45:36,583 --> 00:45:49,364
+Ama yine söylüyorum, elimdeki dökümanın içeriğini bilmeden hazır önceden çıkarılmış kodları kullanıyorsam redundancy yüksek olacaktır.
+
+184
+00:45:50,324 --> 00:46:13,784
+Çünkü benim elimde atıyorum bir tane 0.49 olasılıklı bir verim var, bir tane daha 0.49 olasılıklı bir verim var. Gidiyorum bunun bir tanesini bir bitle kodlarken aynı olasılığa sahip olan birini 3 bitle kodluyorum. İster istemez burada bir artıklık olacaktır.
+
+185
+00:46:15,092 --> 00:46:36,172
+Şu ekranı sileyim. Böyle bir kod kullanırsam ilk kodunun bit uzunluğu ne olur? Yani bana deseler ki 16. sıradaki kodun bit uzunluğu nedir? Şimdi benim bu 9'u bulmam lazım.
+
+186
+00:46:37,204 --> 00:47:03,943
+Ne yaparım? Şurası neydi? İ yerine 16 koyduğumda burası ne olur? 2 üzeri 4'tür. İkiler birbirini götürür. Burada 4 kalır. Eşit ve kendisinden büyük integer sayı 4'tür. 2 ile çarptım 8. 1 ekledim 9. İşte buradaki 9'u bana verdi.
+
+187
+00:47:04,884 --> 00:47:28,403
+6'yı yapalım. Log 2, 6. Burası 4 olsa ne olacak? 2 olacak. Burası 6 olduğuna göre 2'den büyük bir sayı çıktı. Kendisinden küçük en büyük tam sayı 2 olacak. 2'yi 2 ile çarptım. 4, 1 ekledim. 5. İşte 5'i bana verdi.
+
+188
+00:47:28,916 --> 00:47:47,836
+Bu da oturup işte bilmem kaçıncı sırada bir sembol geldiğinde bunu kaç bitte kodlarım diye oturup bu kodları teker teker çıkarmam. Bana 64. sıradaki kodun uzunluğu nedir dediğinde pat diye buraya koyduğumda bulabilirim.
+
+189
+00:47:56,655 --> 00:48:17,495
+ters işlemi yaparak bunun bit uzunluğunu buluyorum. Bu bir prefiks koddu. Şimdi yuneri koda geçeceğim. Ama bugün eğer siz de izin verirseniz iki tane ara yapmak istiyorum arkadaşlar.
+
+190
+00:48:18,931 --> 00:48:46,191
+Çünkü nedense birazcık boğazım acıyor. Çok da bağırarak konuşuyorum. Sonra sesim hepten gidiyor. Bir 10 dakika ara verelim. Saat kaç şu an? Bir dakika, bir bakayım. 49.50 değil. 10'da yeniden gelelim. Tamam mı? Uygun mudur? Tamam hocam. 10'da görüşmek üzere.
+
+191
+00:48:46,867 --> 00:48:47,487
+Onlar.
+
+192
+01:00:34,132 --> 01:00:36,432
+Evet, tekrardan geldik.
+
+193
+01:00:36,432 --> 01:00:40,252
+Şimdi
+
+194
+01:00:45,076 --> 01:00:48,735
+Bu sesim açık mı? Bir kontrol edeyim. Evet açık.
+
+195
+01:00:50,815 --> 01:00:55,836
+Prefiks kodlarımıza devam ediyoruz. Çok çeşitli prefiks kodlarımız var.
+
+196
+01:00:56,476 --> 01:01:01,155
+Bugün bu prefiks kodları bitirip şanalfanoya geçeceğim inşallah.
+
+197
+01:01:02,376 --> 01:01:10,695
+Yine önemli olan kodlardan biri de Unary kod. Bu Unary kod... Geldiniz değil mi?
+
+198
+01:01:13,844 --> 01:01:15,664
+Evet hocam.
+
+199
+01:01:15,844 --> 01:01:27,604
+Tamam ne bileyim ben böyle yine boşluğa anlatıyor olabilirim. İlerleyen kodlarımızın içerisinde de kullanacağımız yüneri kod var. Bu yüneri kod nedir?
+
+200
+01:01:40,916 --> 01:01:46,436
+Ve onları takip eden bir tane sıfırdan oluşmaktadır.
+
+201
+01:01:47,155 --> 01:01:49,195
+Veya tam tersi.
+
+202
+01:01:49,775 --> 01:01:56,356
+En eksi bir tane sıfır, onları takip eden bir tane birden oluşmaktadır.
+
+203
+01:01:56,675 --> 01:01:58,215
+Şimdi örneklerini göreceğiz.
+
+204
+01:01:59,016 --> 01:02:07,755
+Bazen bu yuneri kodu alırken en değeri bazen birden başlatılır, bazen sıfırdan başlatılır.
+
+205
+01:02:08,244 --> 01:02:24,044
+n değeri 1'den başlatıldığında n-1 adet 1 alırız da n değeri 0'dan başlatıldığında 0-1 olmayacağı için n adet 1 alırız.
+
+206
+01:02:24,424 --> 01:02:26,904
+Neyse bunun yeri geldiğini size göstereceğim.
+
+207
+01:02:28,624 --> 01:02:31,044
+Eee niye sayfamız değişmedi?
+
+208
+01:02:32,644 --> 01:02:33,204
+Haydi.
+
+209
+01:02:34,804 --> 01:02:43,664
+Örnek verelim. Önce şu sol tarafa bakın. Şu kalemimizi maviden kırmızıya geçirelim.
+
+210
+01:02:43,664 --> 01:03:01,704
+En 1, 2, 3, 4, 5 verilmiş. En sayısı, integer 1 sayısı. Yünelik kodu diyor ki en 1 ise en eksi 1 adet 1. Birden 1'i çıkardım 0. 0 tane 1.
+
+211
+01:03:03,284 --> 01:03:11,284
+Yani 0 tane 1'i koyamayacağıma göre. Onu takip eden bir tane 0. Evet 0'ı koydum.
+
+212
+01:03:11,284 --> 01:03:28,264
+n şimdi 2. n-1 tane 1. 2-1 1'dir. 1 tane 1. Onu takip eden 0. n 3. 3-1. 2 tane 1. Onu takip eden 0.
+
+213
+01:03:29,076 --> 01:03:39,456
+n4. 4-1, 3. Demek ki 3 tane 1. Onu takip eden 0. Bunlar yüneri kod.
+
+214
+01:03:41,576 --> 01:03:48,536
+Ama burası n birden başlamasaydı da sıfırdan başlasaydı,
+
+215
+01:03:48,692 --> 01:04:05,871
+O zaman n-1 demiyorum. Çünkü 0-1-1 olur. Eksi bir tane bir koyulamaz. Eğer n sıfırdan başlıyorsa n adet bir ve onu takip eden sıfırdan oluşur diyoruz.
+
+216
+01:04:06,483 --> 01:04:20,223
+Bu da alternatif kod. Yani şurada veya dan sonra tam ters işlemini diyorduk ya, en eksi bir tane bir koyuyordu. Bu sıfır. Bu onu takip eden.
+
+217
+01:04:20,788 --> 01:04:46,748
+Bir tane sıfırdan oluşuyor. Bu da onu takip eden bir tane birden oluşuyor. O zaman aynısı buradaki sıfırların yerine bir, birlerin yerine sıfır koyarsak alternatif kodu oluşturuyoruz. Ben genelde örneklerimde hep şunu kullanıyorum. En eksi bir adet bir, onu takip eden sıfırı kullanıyorum.
+
+218
+01:04:48,788 --> 01:05:10,848
+Şimdi yüneli kodlar, şurayı silelim. Yüneli kodlar Start, Step, Stop diye bir tripletten oluşuyor. Triplet dediğimiz şey bir üçlü. Burada üç tane parametrem var. Start, başlangıç, Step, adım sayısı, Stop.
+
+219
+01:05:11,827 --> 01:05:28,988
+Bittiği nokta. A değerini hesaplamamız gerekecek. Bu yüneri kodları hesaplarken nelere ihtiyacımız var? Bir A değişkeni. A değişkeni de N değerini Step ile çarpıp Start kadar ekliyoruz.
+
+220
+01:05:34,387 --> 01:05:47,907
+Gelmişse, aynıysa A bitinin önündeki sıfırı atıyorum. Şimdi, şunlar ne işe yarıyor onu söyleyelim. Bana şöyle bir şey diyebilirler.
+
+221
+01:05:47,907 --> 01:06:01,987
+1750 tane uneri kod yaz. 1750 tane uneri kodu yazmak için oturup bu işlemleri yapmak çok vakit alır.
+
+222
+01:06:02,452 --> 01:06:18,392
+Bunu çok kolay bir şekilde formülize ederek yazabiliriz. O yüzden 1756 tane sayıyı yazabilmek için benim Start, Step, Stop diye bir üçlüye ihtiyacım var.
+
+223
+01:06:18,392 --> 01:06:30,432
+Ama bu yazdığım üçlüler her zaman o benim istediğim sayıyı sağlamaz. Ondan daha fazla kod sayısını ifade eder.
+
+224
+01:06:30,452 --> 01:06:37,972
+Ben ise o kadarını oluşturmam. İstediğim sayıda kalabilirim. Ne demek istediğimi biraz sonra anlatacağım.
+
+225
+01:06:38,612 --> 01:06:47,192
+Kodları çıkarırken bir A değişkenine ihtiyacım var. A değişkenini Start ve Step değerlerinden hesaplıyorum.
+
+226
+01:06:51,155 --> 01:06:58,155
+Artık en son aşamada abitinin önündeki sıfırı düşürüyorum.
+
+227
+01:06:58,956 --> 01:07:00,436
+Manu ne demek istedi?
+
+228
+01:07:02,255 --> 01:07:08,235
+Bize deniyor ki 680 tane yuneri kod oluştur.
+
+229
+01:07:08,235 --> 01:07:13,235
+Ne yapacağım yani buraya birden 680'e kadar yazıp?
+
+230
+01:07:13,952 --> 01:07:35,412
+Her biri için bu işlemleri mi yapacağım? N-1 tane 1 koy arkasına 0 ekle. N-1 tane 1 koy arkasına 0 mı ekle diyeceğim. Bunu çok daha kolay bir şekilde formülize ederiz. Benim 680 tane kod çıkarabilmem için tripletimin şu değerlere sahip olması lazım.
+
+231
+01:07:36,052 --> 01:08:00,432
+Start 3, Step 2, Stop da 9. Ne demek istedim? Şunu demek istedim. En değerini 0 verdiğimde hemen şu a'yı hesaplıyorum. Benim Start'ım ne? 3. Start'ım 3. Yazamadım ama anlayın artık.
+
+232
+01:08:06,260 --> 01:08:08,260
+9 da benim stopum.
+
+233
+01:08:12,532 --> 01:08:23,772
+A değerini hesaplıyorum. N'i step ile çarptım. N'de 0 var. Step ile çarptım. 0, 3 ekledim. 3.
+
+234
+01:08:24,787 --> 01:08:34,947
+N değeri 1 olduğunda ne olacak? 1, 1'i step ile çarptım 2, ekledim 3'ü, A'nın değeri 5 oldu.
+
+235
+01:08:34,947 --> 01:08:49,827
+N 2 ise 2 ile çarptım 3'ü ekledim startı 7 oldu. N 3 ise 2 ile çarptım 6, 3'ü ekledim 9. Şu değerleri de A değerlerinde buldum.
+
+236
+01:08:50,515 --> 01:09:13,815
+Şimdi gelelim bu işlemi nasıl kolay ve hızlı yapabileceğimi. Şuradaki sıfır nereden geldi? N eğer sıfırdan başlıyorsa N-1 demeyecektik. Ne diyecektik? N. N adet 1. Yani sıfır adet 1. Onu takip eden sıfır.
+
+237
+01:09:15,028 --> 01:09:38,028
+n1 ise 0'dan başladıysa n-1 demiyorum. n adet 1, onu takip eden 0. 2 ise n adet 2, onu takip eden 0. n3 ise n adet 3, onu takip eden 0. Burada bir 0 var.
+
+238
+01:09:39,028 --> 01:09:59,028
+Ama kuralım neydi? A stop değerine eşit olduğunda, demek ki A stopta bitecek. Stopum neydi? 9'du. A 9'da bittiğinde A bitinin önündeki 0 düşürülür. Yani şu 0 o yüzden düşürüldü.
+
+239
+01:10:00,404 --> 01:10:17,684
+Peki, şu x, x'ler nedir? Burada kaç tane değer çıktı? 3. Buraya 3 tane x koydum. 5 var, 5 tane x. 7 var, 7 tane x. 9 var, 9 tane x.
+
+240
+01:10:27,855 --> 01:10:30,796
+3'den 8 tane code word yazabilirsin.
+
+241
+01:10:31,735 --> 01:10:38,075
+4 tane, pardon 5 tane x varsa 2 üzeri 5'den 32 tane code word.
+
+242
+01:10:38,075 --> 01:10:41,935
+7 x varsa 2 üzeri 7'den 128.
+
+243
+01:10:42,495 --> 01:10:48,235
+9 tane varsa 2 üzeri 9'dan 512 tane code word yazabilirsin.
+
+244
+01:10:48,884 --> 01:11:07,224
+8 tane kod word 0 ile 7 arası. 32 tane kod word 8 ile 39 arası. 128 tane kod word 40 ile 167 arası. 512 tane kod word de 168 ile 679 arası.
+
+245
+01:11:07,224 --> 01:11:16,304
+Şimdi ben kod wordlerime, işte kod wordlerim neymiş? 3 bitlik, işte 0, 0 var.
+
+246
+01:11:16,756 --> 01:11:38,076
+0, 0, 1 var. Buraya nokta nokta diyelim. 1, 1 gelecek. Sonra 4 bite geçtim. 0, 0, 0, 8 var. İşte burada 9 var. Nokta nokta nokta. Sonra 40 yazacağım. 6 bitliye geçeceğim. Yazacağım.
+
+247
+01:11:44,756 --> 01:11:53,876
+İşte bunları prefiks yapabilmek için önlerine şu bulduğum yuneri kodları ekliyorum.
+
+248
+01:11:54,452 --> 01:12:16,952
+Ve bunları otomatikman prefiks yapıyor. Çünkü hiçbir zaman sıfırla başlayan bir kod olmayacak. Hiç sıfırla başlayan kod yok. Hiçbir zaman bir sıfırla başlayan bir kod yok. Hiçbir zaman bir bir sıfırla başlayan, hiçbir zaman üç tane birle başlayan bir kod yok.
+
+249
+01:12:17,555 --> 01:12:25,163
+Buradaki sıfırın düşürülmesinin sebebi de şu. Bunun devamı olmadığı için...
+
+250
+01:12:25,939 --> 01:12:47,379
+Buradaki sıfır gereksiz. Yani burada bu sıfırın eğer n4 diye bir şey olmuş olsaydı bu sıfırın kalması gerekirdi. Çünkü ileride karşıma üç tane bir ile başlayan bir kod çıkabilir. Burada sıfır olduğunda 3-1-1-3-1-0 ile devam eden bir kod karşıma çıkmayacak.
+
+251
+01:12:48,083 --> 01:13:13,943
+O zaman yuneri kodlar işte bana prefiks kod elde etmeme yardımcı oluyor. Şunların hepsi bildiğim binary kodlar. 3 bit koydum sonra 5 bitlik bilmem ne bilmem ne sıfırdan 679'a kadar yani sıfırda dahil 680 tane prefiks kod çıkarmış oldum.
+
+252
+01:13:14,676 --> 01:13:28,916
+A0'dan 680'e kadar 679'a kadar olan binary sayıları yazıyorum. Fakat bunlar prefiks değil. Bunları prefiks yapmak için önlerine yuneri kodlarını koydum.
+
+253
+01:13:30,484 --> 01:13:43,043
+Notları yeniden söylüyorum. N değeri sıfırdan başlıyorsa N tane 1 onu takip eden 0 veya N tane 0 onu takip eden 1 diye yazabilirim.
+
+254
+01:13:43,864 --> 01:13:55,424
+Eğer 1'den başlıyorsa N-1 adet 1 onu takip eden 0 ya da N-1 adet 0 onu takip eden 1 koyabilirim.
+
+255
+01:13:56,627 --> 01:14:13,427
+Hiç farkına varmadan çok rahatlıkla 680 tane hazır kod oluşturabilirim. Start, Step ve Stop değerlerine bağlı olarak kaç tane yuneri kod oluşturabilirim?
+
+256
+01:14:13,427 --> 01:14:20,167
+Şimdi burada diyorum ki ben dedim ki 680 adet yuneri kod oluştur dedim.
+
+257
+01:14:20,595 --> 01:14:41,555
+Ve şu tripleti verdim. Ne alaka? Yani bu triplet, bu üçlüden bu 680 sayısı nasıl elde edildi? Formülümüz de şu. 2 üzeri stop artı step eksi 2 üzeri start bölü 2 üzeri step eksi 1.
+
+258
+01:14:42,100 --> 01:15:01,400
+Stop Step 9 artı 2 11, Start 3'tü, Step 2'ydi. Koydum bu işleme yaptığımda 680 sayısını elde ederim. O yüzden bu tripleti girdiğimde elde edeceğim sayı, kod sayısı bu kadar.
+
+259
+01:15:10,100 --> 01:15:31,040
+Bu sayı, bu sayı, kaç tane hüneri kod oluşturulacağı sayısı stop değişkenine bağlıdır. Neden?
+
+260
+01:15:31,615 --> 01:15:41,935
+Eğer A sayısı stopa geldiğinde artık ben duruyorum. Bundan sonrasını hiç iplemiyorum. Yani beni ilgilendirmiyor.
+
+261
+01:15:41,935 --> 01:15:59,615
+Öyleyse stop parametresine bağlı olarak üstel olarak artar. Yani eğer ben stopum 3 olmuş olsaydı, benim stop değerim 3 olmuş olsaydı 8 tane güneri kodayım.
+
+262
+01:15:59,615 --> 01:16:13,435
+5 olunca 32 tane, yukarıda da 8 var, 40 tane elde ederim. 2 olursa 40'a 128 ekle 160 tane.
+
+263
+01:16:13,920 --> 01:16:40,979
+167 tane elde ediyorsun. 9 olduğunda 680 tane. Burası M4 olduğunda 2, 4, 8, 9, 10, 11 olacaktı. Stop'un 11 olduğunda buradaki sayım daha da çok artacaktı. O yüzden üstel olarak artar dedik.
+
+264
+01:16:41,587 --> 01:16:57,288
+Bu da daha değişik bir prefix kod elde etme yolu. Tabii sadece bunlarla sınırlı kalmıyorlar. İnsanoğlu doymak bilmiyor. Sürekli ortaya yeni kodlar atıyorlar.
+
+265
+01:17:04,851 --> 01:17:27,451
+Ben 8 tane kod elde ediyorum. Yani bir şeyin olasılığı diyelim ki 06, sonra 04 olasılıkla bir şey var, sonra 030 olasılıkla, ondan sonra diyelim ki 025, 024 olasılıklı sembollerim var.
+
+266
+01:17:32,851 --> 01:17:43,091
+4 bit uzunluğunda veriyorum hep. 4 bit uzunluğunda. Olasılıkları ne olursa olsun. O zaman burada da yine redundancy yüksek olacaktır.
+
+267
+01:17:45,684 --> 01:18:13,524
+Anlatabiliyor muyum? Elimdeki veriye bağlı olarak bu çok iyi sonuçta verebilir, çok kötü sonuçta verebilir. Benim elimde çok fazla şu olasılıklar olabilir. 065, 064, 063, 062. O zaman ben bunların hepsini aynı bit uzunluğunda kodlamışım. Hiçbir kalbim olmaz. Redundance'ım küçük olur. Ama olasılıklar hızlı bir şekilde.
+
+268
+01:18:13,684 --> 01:18:25,064
+Ve ben hala aynı bit uzunluğunu kullanıyorsam işte o zaman problem var demektir. Redundance'ım da yüksek olacaktır.
+
+269
+01:18:26,564 --> 01:18:39,324
+Şimdi başka prefiks kodlara geçelim. Dört tane prefiks kodu göstereceğim. Bu C1, C2, C3 ve C4.
+
+270
+01:18:39,828 --> 01:18:49,128
+Her birinin çıkarılışını size anlatacağım. Ama öncesinde şu üç tane parametreyi bilmemiz lazım.
+
+271
+01:18:50,208 --> 01:18:58,347
+bn nedir? bn'nin bu mutlak değer gibi karşılığı nedir? b üzeri n nedir? Bunlara bakalım.
+
+272
+01:18:59,708 --> 01:19:04,648
+Yine n benim integer sayılarım. 1, 2, 3, 4 diye geçiyor.
+
+273
+01:19:07,699 --> 01:19:19,420
+N sayısının binary karşılığı, hemen bakalım. Birin binary karşılığı, ikinin binary karşılığı, üçün binary, dördün binary. Hiçbir problem yok.
+
+274
+01:19:19,680 --> 01:19:35,680
+B üzeri N nedir? En soldaki bit atıldığında, neredeki en soldaki bit atıldığında, BN'deki en soldaki bit atıldığında kalan bit.
+
+275
+01:19:35,699 --> 01:19:58,719
+Her zamanda en solda bakarsanız B'nin hep 1 vardır. En soldaki bit atılıyor. Atıldı boşluk. En soldaki bit atıldı 0. En soldaki bit atıldı 1. En sol atıldı 0-0. En sol atıldı 0-1. En sol atıldı 1-0.
+
+276
+01:20:00,000 --> 01:20:18,920
+Bn'de, B3n'de böyle bulunuyor. Bir de şu var, mutlak değer işaretinde bir n var. Bunu şey gibi düşünün, nasıl kümelerde skaleriti gösteriliyordu, yani kardinaliti, kümenin eleman sayısını gösteriyordu.
+
+277
+01:20:28,000 --> 01:20:34,760
+Bu binari sayısının dijit uzunluğu.
+
+278
+01:20:42,515 --> 01:20:56,055
+Burada o yok. Burada diyelim ki şunun dijit uzunluğu nedir? 1. Bunun dijit uzunluğu nedir? 2. Dijit uzunluğu nedir? 2. 3. Bana bunları verecek.
+
+279
+01:20:56,055 --> 01:21:07,815
+Şimdi sırasıyla başlayalım. Bunlara animasyonda şey olmuş neyse kalmış. C1 kodunu elde edeceğim.
+
+280
+01:21:08,212 --> 01:21:26,192
+Elimde zaten bu bilgilerim var. Bu neydi? BN, binary karşılığı. B üstü neydi? En soldaki bit atılıyor. Bunlar böyleydi. Bu C1 bir prefiks kod ve şu bilgilerden oluşturuluyor.
+
+281
+01:21:34,195 --> 01:21:40,036
+Sol tarafı bir parçası, sağ tarafı ikinci parçası. Peki nasıl oluşturulur?
+
+282
+01:21:40,036 --> 01:21:58,416
+N değerinin binary karşılığı olan BN'in dijit sayısı değerinin yuneri karşılığı ile BN'in en soldaki bitinin atılmış hali olan B üstü N'in birleşimidir.
+
+283
+01:21:59,188 --> 01:22:04,688
+Tabi bu cümle şu an size çok karışık geliyor. Hemen bir örnekle yapalım.
+
+284
+01:22:04,688 --> 01:22:18,608
+Neyi? 16 alalım. Yani ben 16. prefiks kodu elde etmek istiyorum. Şunu elde etmek istiyorum.
+
+285
+01:22:19,087 --> 01:22:24,868
+N 16. 16'nın baneri karşılığını yazdım.
+
+286
+01:22:25,460 --> 01:22:52,559
+BN neydi? Bu 16'nın baneri karşılığıydı. Evet yazıldı. B3'ü N neydi? En soldaki bir bit atıldığında geri kalan. Evet en soldaki biti attım, geri kalan. BN de neydi? 16 sayısının baneri yazılışının bit karşılığı. 16 kaç bitten oluşuyordu? 5 bitten. Bu da 5 bit.
+
+287
+01:22:53,140 --> 01:23:02,800
+Şimdi bu bilgileri 16 için çıkardığım C1 prefiks kodunun 16. C1 prefiks kodunu yapalım.
+
+288
+01:23:02,800 --> 01:23:07,360
+Şu yukarısı ne diyordu? Bakalım.
+
+289
+01:23:08,120 --> 01:23:15,600
+N değerinin binary karşılığı olan N değerine 16.
+
+290
+01:23:16,820 --> 01:23:20,260
+Binary karşılığı nedir? 5.
+
+291
+01:23:20,916 --> 01:23:40,076
+Bunları karşılığı olan 5'in yüneri karşılığı. Demek ki şurası 16 kaç dijitli? 5 dijitli. Mutlak değer bunun 5 dijit olduğunu gösteriyor. Bu 5'in yüneri kodu olacak.
+
+292
+01:23:42,484 --> 01:23:45,724
+İle ikinci bölümden bahsediyoruz.
+
+293
+01:23:46,584 --> 01:23:50,804
+B'nin en soldaki bitinin atılmış hali.
+
+294
+01:23:51,744 --> 01:23:53,184
+Onu da böyle yazıyorduk.
+
+295
+01:23:53,184 --> 01:23:57,064
+Peki, 5'in yuneri kodunu yazalım.
+
+296
+01:23:57,543 --> 01:24:00,144
+5'in yuneri kodu neydi?
+
+297
+01:24:01,504 --> 01:24:04,564
+N'lerden başlamış, 1'den başlamış.
+
+298
+01:24:05,244 --> 01:24:08,724
+Öyleyse, N-1 adet 1.
+
+299
+01:24:09,363 --> 01:24:25,064
+5, en'in 5, en eksi 1, 4. 4 adet 1, onu takip eden 0. Demek ki 5'in yüneri kodu bu. İşte geldim buraya, 5'in yüneri kodunu yazdım.
+
+300
+01:24:33,844 --> 01:25:00,583
+Bunun en soldaki biti atılmış hali nedir? 4 tane 0. Geldim buraya da 4 tane 0'ı yazdım. İşte C1 kodum bu. Buradaki V'ya'nın karşılığı da şu. Bu yüneri kodunu nasıl yapıyorduk? N-1 adet 1 takip eden 0 veya N-1 adet 0 ve onu takip eden 1 diyorduk.
+
+301
+01:25:01,011 --> 01:25:10,911
+Burada da bu hali var. Şimdi hep birlikte 12'yi yapalım. Tamam mı?
+
+302
+01:25:10,911 --> 01:25:27,171
+En eşittir 12. Önce BN'e neyi yazıyorum? 12'nin baneri karşılığı. Nedir? 8, 4 daha, ondan sonra 0, 0.
+
+303
+01:25:27,663 --> 01:25:45,403
+Burada 12 yazıyor. En soldaki bir biti attım. En soldaki bir biti attım. Öylesi burası 100 oldu. 12'nin baneri dijit sayısı da nedir? 4'tür.
+
+304
+01:25:45,403 --> 01:25:53,303
+Ben şimdi kimi yazacağım? C1. Kimi yazıyorum? C1'in 12. kodunu yazıyorum.
+
+305
+01:25:53,908 --> 01:26:09,908
+İki bölümden oluşuyordu. Birinci bölüm neydi? Birinci bölüm. Bu dijit sayısı neyse? Dört. Dördün yuneri koduydu. Dördün yuneri kodu nedir? Bu birden başladıysa.
+
+306
+01:26:12,275 --> 01:26:27,075
+1'den başladıysa n-1 adet 1, onu takip eden 0. 4 ise 1-3, 3 tane 1, onu takip eden 0.
+
+307
+01:26:28,015 --> 01:26:33,595
+İkinci bölümü neydi? En soldaki bitin atılmış hali 100'dü.
+
+308
+01:26:33,595 --> 01:26:37,035
+Bakıyoruz C12'ye.
+
+309
+01:26:37,359 --> 01:26:52,479
+3, 1, 0 ve 100. Evet oldu. Son kez basitleri alayım birazcık. Kolay olsun. 6'yı yapıyoruz. 6 kaç dijil de yazılır? 4.
+
+310
+01:26:53,524 --> 01:27:12,664
+3, 6, 0. 3 dijitle yazılır. Öyleyse 3'ün binary kodu. 3'ün binary kodu nedir? En eksi bir tane, iki. İki tane, bir. Arkasından onu takip eden 0. Bölü.
+
+311
+01:27:13,332 --> 01:27:25,032
+Sonra altının en soldaki biti atıldı. Şu 6 idi. 10. Yani 1-0. Bakıyoruz C1-6'ya. 110 ve 10.
+
+312
+01:27:25,395 --> 01:27:51,936
+İşte bu. C1 kodları böyle elde edildi. Elinde bir sürü prefiks kod. Şimdi bakın, en yüksek olasılıklı olan bir sembolü bir bitle ifade ediyorsun. İkinci ve üçüncü sıradaki olasılıklar 3 bit. Daha sonra 5 bit, 5 bit, 5 bit geldi, 5 bit geldi. Sonra 4, 7 bitlik bazı semboller var.
+
+313
+01:27:53,395 --> 01:28:00,395
+Koduna göre daha başarılı gibi duruyor. Ama içinde yuneri kodu kullanıyoruz.
+
+314
+01:28:00,395 --> 01:28:06,395
+C2 koduna şunu silelim.
+
+315
+01:28:06,395 --> 01:28:07,947
+Bu kodun
+
+316
+01:28:08,020 --> 01:28:18,680
+Uzunluğu nedir diye sorulsa, yani bana dördüncü sıradaki C1'in kod uzunluğu nedir diye sorulduğunda yapacağımız şey de şu.
+
+317
+01:28:19,539 --> 01:28:28,579
+n'in 2'ye göre logaritmasını alıyoruz yine alttan. Çarpı 2 artı 1. Örnek verelim. Şu 32'yi alalım.
+
+318
+01:28:28,579 --> 01:28:32,960
+Log 2 32 nedir? 2 üzeri 5'tir.
+
+319
+01:28:33,279 --> 01:28:49,799
+2 üzeri 5 ise burası 5 eder. 2 ile çarptım 10, 1 ekledim 11. Şurada 11 bit mi o var? Bakalım. 2, 4, 6, 8, 10, 11. Ve 11 bit uzunluğunda.
+
+320
+01:28:50,979 --> 01:28:58,359
+Böylece elimde bana deseler ki Banu senin elinde 130 tane sembol var.
+
+321
+01:28:59,891 --> 01:29:14,612
+130 nedir? 130 olmasın. İyi tamam 130 olsun. 130 tane sembolüm var. Yani ben şuraya kadar
+
+322
+01:29:18,484 --> 01:29:46,084
+130 olmasın ya, 120 olsun tamam mı? 120 tane sembol var. Ben maksimum en uzun bit uzunluğum ne olacak burada? 120 ise nereye gelir? 120 şuraya dayanacak. Yani şuradaki bit ne ise benim sembolümdeki en uzun kodum bu olacak. Oturup bu tabloyu oluşturacağımı hemen buraya koyuyorum.
+
+323
+01:29:46,484 --> 01:29:52,944
+Pat diye kaç bit uzunluğunda maksimum kodlarımın olacağını söyleyebiliyorum.
+
+324
+01:29:54,424 --> 01:30:06,404
+Şimdi devam edelim. İkincisi C2 koduydu. Yani C2 prefiks kodu. Tek bir bölümden oluşuyor ve çok kolay.
+
+325
+01:30:07,220 --> 01:30:15,940
+Nasıl elde ediliyor? C1 kodunu önce elde ediyorsun. Çünkü C1 üzerinden işlem yapıyorsun. Baya zahmetli.
+
+326
+01:30:17,520 --> 01:30:31,500
+Çalışırken de C1'in birinci bölümündeki biti, arkasından ikinci bölümdeki biti. Birinci bölümden bir bit, ikinci bölümden bir bit. Ala, ala, ala C2'yi oluşturuyoruz.
+
+327
+01:30:31,823 --> 01:30:57,303
+Örnek verelim. Yine C1-16'yı hesaplamıştık bir önceki slide'da. Şimdi ben C2'yi oluşturacağım. C1'den yola çıkıyorum. Birinci bölümdeki biti aldım. İkinci bölümdeki biti. Birinci bölümdeki bit. İkinci bölümdeki bit. Birinci bölümdeki bit. İkinci bölümdeki bit. Birdeki bit.
+
+328
+01:30:57,775 --> 01:31:15,835
+İkideki bit, birdeki bit. Bu da bana C2'yi verecek. Yani C1'i mutlaka bulmam. Arkasından ekstra bir işlem yapmam lazım. Peki C2'nin bit uzunluğu nedir? C1'inki neyse odur.
+
+329
+01:31:16,207 --> 01:31:26,727
+Onu da buraya niye yazmamışım? Çünkü C1'den ne yapıyorsam aynısını burada da kullandığım için aynı bit uzunluğuna sahip olur.
+
+330
+01:31:28,027 --> 01:31:35,567
+Şimdi gelelim C3'e. Acaba C3 biraz daha farklı mı? Artık biraz daha farklı olsun.
+
+331
+01:31:36,287 --> 01:31:40,907
+Ve iki bölümden oluşuyor yine C3 kodu. Haydi bakalım.
+
+332
+01:31:41,716 --> 01:31:44,235
+C3 kodu nasıl elde edilir?
+
+333
+01:31:45,376 --> 01:31:49,596
+N'nin binary gösteriliminin dijit sayısı alınır.
+
+334
+01:31:49,596 --> 01:31:51,136
+Dijit sayısı neydi?
+
+335
+01:31:51,816 --> 01:31:58,615
+Bn'de binary gösteriyorum. Mutlak değer içine de aldığımda bunun dijit sayısını veriyordum.
+
+336
+01:31:59,476 --> 01:32:05,856
+Bn'in bu dijit değerinin C2 kodu içerisindeki değeri bulunur.
+
+337
+01:32:06,323 --> 01:32:13,623
+Sonra arkasına B üstü N eklenir. Yani dıdının dıdı. İnsanı uğraştırıyorlar.
+
+338
+01:32:14,643 --> 01:32:20,103
+Şimdi örnek. Ben C3 15'i hesaplayacağım. 15 nerede? Burada.
+
+339
+01:32:21,463 --> 01:32:27,723
+Ne diyor? N'nin baneri gösterilimini yaz. N'nin baneri gösterilimini yazdım.
+
+340
+01:32:28,923 --> 01:32:33,663
+Dışı sayısını al. Dışı sayısını aldım. Nedir? 4.
+
+341
+01:32:34,192 --> 01:32:50,951
+Şimdi diyor bu 4'ü git, C2'nin içerisinden bul. Hadi C2'ye gidelim. C2'den 4 neydi? 10, 100. Geldiğimde işte burada 10, 100'ü yazdım.
+
+342
+01:32:50,951 --> 01:32:53,951
+Arkasına...
+
+343
+01:32:59,220 --> 01:32:59,760
+Teşekkürler.
+
+344
+01:33:03,764 --> 01:33:21,984
+Tamam. Arkasına neyi ekleyeceğim? B üstü en. B üstü en neydi? Yazılmış olan B'nin en soldaki biti atılıyor. Attım. Geriye 3 tane bit kaldı. İşte bu 3 tane biti yazdık.
+
+345
+01:33:30,863 --> 01:33:45,724
+Düşünelim. Önce ne yapacağım? 10'un baneri karşılığını yazacağım. 8, 4 yerine 0 koydum. 2'yi koydum. 10 oldu. 0 oldu. Burada 10 yazıyor.
+
+346
+01:33:47,203 --> 01:33:58,264
+Mikrofonumuzu kapatalım arkadaşlar. Sonra bunun dijit sayısı bana lazım. Bunun dijit sayısı ne? 4.
+
+347
+01:34:00,372 --> 01:34:25,832
+C2 kodunda 4'ü bulacağım. Hazır burada bulunmuşu var. Bunu alayım. 10, 100. Arkasına şu 10'un en soldaki bit atılmış halini yazacağım. 0, 1, 0. Bakalım doğru mu? 10, 100. Yanlış oldu. Neden?
+
+348
+01:34:26,739 --> 01:34:37,000
+Onu yazıyorum. Onu yazıyorum ben. Şunu yazıyorum. 10, 100. Arkasına da 0, 1, 0 gelecek. 0, 1, 0 geldi.
+
+349
+01:34:38,899 --> 01:34:49,299
+Buradaki tek problem C2'yi elde ederken mutlaka C1'i bilmeliyim. C3'i elde ederken mutlaka C2'yi bilmeliyim.
+
+350
+01:34:52,532 --> 01:35:00,392
+Peki, burada da bir soru olacağını düşünmüyorum birbirinin tekrarı. Buradaki şey ne olur?
+
+351
+01:35:00,884 --> 01:35:28,764
+Bit uzunluğu ne olacak? Onun hesabı da bu. Biraz karışık gibi duruyor ama bir örnekten bakalım. Hemen 15 için yapalım bunu. En yerine 15 koyduk. En yerine 15 koydum. Burası 16 olsa burası 4 çıkacaktı. 15 olduğuna göre 3 küsür çıktı. Kendisinden küçük en büyük tam sayı 3'tür.
+
+352
+01:35:28,884 --> 01:35:51,584
+Burası da 3 olacak. 3 ile 1'i topladım. 4 oldu. Log 2, 4, 2 oldu. 2'yi 2 ile çarptım. 4 oldu. 4, 3, 7, bir daha 8 bit. Bakalım 15, 8 bitten mi oluşuyor?
+
+353
+01:35:52,275 --> 01:36:05,115
+2, 4, 6, 8 bit. 8 bitten oluştuğunu görüyoruz. Son kodumuza gelelim.
+
+354
+01:36:13,171 --> 01:36:24,371
+Son kodumuz C4 kodu. C4 kodu biraz farklı çıkarılması. Bakarsanız buraya çok fazla bölümden oluşuyor.
+
+355
+01:36:24,371 --> 01:36:30,431
+Ya bir türlü kaleme geçemedim. Çok farklı bölümden oluşuyor.
+
+356
+01:36:31,315 --> 01:36:54,996
+Tek bölüm, iki bölüm olanları var, üç bölüm olanları var, dört bölümden oluşanları var. Bu biraz daha ilerlese beş bölüm, altı bölüm, yedi bölüm diye gidecek. Peki bu bölümler nasıl oluşuyor? C4 kodu nasıl elde edilir? C4 birden fazla bölümden oluşur.
+
+357
+01:36:55,539 --> 01:37:07,739
+İlk olarak hesaplanacak olan n kodunun binary gösterilimi yazılır. Önce hangi n'e hesaplayacaksak binary'sini yazıyoruz. Birinci bölüm bitiyor.
+
+358
+01:37:21,935 --> 01:37:26,335
+Onun bir eksiğinin binary gösterilimi yazılıyor.
+
+359
+01:37:27,956 --> 01:37:33,916
+Buradaki binary gösterilimin dijit sayısının bir eksiğine bakılıyor.
+
+360
+01:37:34,055 --> 01:37:36,375
+Yine onun binary gösterilimini yazıyor.
+
+361
+01:37:36,375 --> 01:37:39,855
+Bu işlem ne kadar süre devam ediyormuş?
+
+362
+01:37:40,675 --> 01:37:47,395
+Bu bn dijit sayısı eksi bir, iki dijit kalıncaya kadar burada dönüyoruz.
+
+363
+01:37:47,515 --> 01:37:48,916
+Aynı işlemi yapıyoruz.
+
+364
+01:37:49,460 --> 01:37:55,899
+İki dijit olduğunda en son adıma geçip sağ tarafa bir sıfır yazıyoruz.
+
+365
+01:37:56,359 --> 01:37:57,680
+Haydi bir örnek yapalım.
+
+366
+01:37:59,359 --> 01:38:01,079
+16'yı hesaplıyoruz yine.
+
+367
+01:38:04,139 --> 01:38:05,180
+16.
+
+368
+01:38:06,639 --> 01:38:08,439
+Şunu bulacağız.
+
+369
+01:38:08,439 --> 01:38:09,659
+Ne diyor?
+
+370
+01:38:10,195 --> 01:38:19,415
+İlk olarak hesaplanacak olan enin kodunun binary gösterilimini yaz. 16, burada 16 yazıyor.
+
+371
+01:38:20,695 --> 01:38:28,135
+Sonra bunun sol tarafına ikinci bölümü koyacağım. Sol taraf burası. Ne koyacağız?
+
+372
+01:38:28,135 --> 01:38:38,091
+Bu yazdığımın dişi sayısı nedir? 2, 4, 5. 1 çıkaracağım. 4. Pardon, 4'ün...
+
+373
+01:38:38,387 --> 01:39:03,908
+Dijit sayısı nedir? 5. 1 çıkardım 4. 4'ün binary karşılığını yazacağım. Yazdım. Bakıyorum buradaki dijit 2'ye düşmedi. O zaman aynı işlemi devam edeceğim. Nedir? 4'ün dijit sayısı nedir? 3. 1 çıkardım 2. Bunun soluna 2'nin binary gösterilimini yazıyorum. Yazdım.
+
+374
+01:39:04,372 --> 01:39:12,612
+Bu işlem ne kadar süre devam edecekti? Burada 2 dijit kalıncaya kadar. Artık 2 dijit kaldı.
+
+375
+01:39:12,927 --> 01:39:23,727
+Sonra en son adımda sağ tarafa 0 yazılır. En son adımda da gidip buraya sağ tarafına 0 yazdım.
+
+376
+01:39:23,727 --> 01:39:34,327
+1, 2, 3, 4 parçadan oluştu. C14'e bakarsak da işte buradaki sayıyı elde ettik.
+
+377
+01:39:35,527 --> 01:39:39,167
+Haydi bunu daha basit bir şey için yapalım.
+
+378
+01:39:39,731 --> 01:39:49,552
+Ya da daha zor bir şey için yapalım. 64 için yapalım. C4, 64'ü hesaplıyorum.
+
+379
+01:39:53,076 --> 01:40:19,956
+64'ün banderi karşılığını yazmalıyım. 2 üzeri 5, 32. 2 üzeri 6, 64 ise 6, 5, 4, 3, 2, 1. 0. kuvveti, 1. kuvveti, 2. kuvveti, 3. kuvveti, 4. kuvveti, 5. kuvveti ve 6. kuvveti oldu. Bu ne oldu şimdi?
+
+380
+01:40:23,060 --> 01:40:50,060
+64'ü yazdım. Geldik. Kaç tane dijit var? 2, 4, 6, 7. 7-1, 6. Demek ki bunun soluna neyi ekleyeceğim? Bunun soluna 6'nın banyeri karşılığını ekleyeceğim. 6'nın banyeri karşılığı da bu.
+
+381
+01:40:51,731 --> 01:41:18,672
+İşleme devam edecek miyim? Evet. İki dijit oluncaya kadar yazmıştık. 6 nedir? 4 bit. 1 çıkardım 3. 3'ün banderi karşılığını 4-1 3. Artık 3'ün banderi karşılığını da bunun soluna ekleyeceğim. Yine kalem değiştirelim. 3'ün banderi karşılığı da nedir? 1-1-1.
+
+382
+01:41:19,252 --> 01:41:34,972
+İşlem bitti mi? Bitmedi. Çünkü 2 bit olmadı. 3-1-2 Bunun soluna da 2'yi ekleyeceğim. 2'yi ekleyelim. Bunun soluna da 1 ve 0.
+
+383
+01:41:35,636 --> 01:41:53,416
+2 dijit'e geldi, bitti. En soluna da bir sıfır ekleyeceğim. Burada 64 var mı? Var. Bakalım nasıl gidiyor? Şunu aldım, şuradaki sayıyı aldım. Evet var. Bunun soluna bir bir sıfır ekledi.
+
+384
+01:41:55,816 --> 01:42:02,196
+Ben neyi aldım? 64'ü aldım. Nerede hata yaptık arkadaşlar?
+
+385
+01:42:02,868 --> 01:42:20,808
+1, 2, 3, 4, 5, 6, 7. Evet, bunu aldım. 0 dedik. Kaç bit bu? 7 bit. 1 çıkardım. Ama burası 12 yazıyor. 6 değil ki bu.
+
+386
+01:42:21,652 --> 01:42:31,391
+Bu böyle 6. Burası 3 bit olduğu için burası 2. Öyleyse buraya 2 yazacağım.
+
+387
+01:42:31,760 --> 01:42:53,520
+İki dijete geldiğim için hiç buna gerek yok. Sıfırla bırakacağım. Öyleyse bunu yazdım, yazdım. Önüne ne geldi? Yüz on. İşte önüne geldi yüz on. Onun önüne ne geldi? Bir sıfır. İşte onun önüne bir sıfır geldi. Hepsinin arkasına da sıfır geldi. Hepsinin arkasına da sıfır geldi.
+
+388
+01:42:53,520 --> 01:42:59,760
+O zaman şöyle bir özetleyecek olursak, bugün prefiks kodu gördük şimdiye kadar.
+
+389
+01:42:59,760 --> 01:43:16,279
+Prefiks kodlar değişkin uzunluklu kodlardı. En önemli farkı bir dokümanı prefiks kodla sıkıştırmazsam dönüşü kötü. Yani eski halini açamama ihtimalim çok yüksek.
+
+390
+01:43:27,760 --> 01:43:34,420
+hazırlamış oldukları birtakım prefiks kodlarımız vardı bu prefiks kodlardan bazıları
+
+391
+01:43:35,412 --> 01:44:02,172
+Bunun gibi mesela neydi? Hazırlanmış çıkarmış ama olasılıkları çok birbirine yakın iki tane sembolüm varsa birini bir, birini üç bitle yapıyorum. Mesela birinin olasılığı 0.86, ikincinin olasılığı 0.85 iken ben gidiyorum birini bir bitle, birini üç bitle kullanıyorum.
+
+392
+01:44:03,412 --> 01:44:24,352
+Yüksek olur demiştik. O yüzden önce bir veriye bakıp, verinin dağılımına bakıp olasılıkların ona uygun bir kod seçmek gerekirdi. Sonra Unary kodu görmüştük. Çok basit bir koddu. Eğer n sıfırdan başlıyorsa n adet bir, onu takip eden sıfır.
+
+393
+01:44:24,884 --> 01:44:39,083
+n1'den başlıyorsa n-1 adet 1, onu takip eden 0 ya da bu işlemin tam tersini yapıyorduk. Bir tripletten oluşuyordu. Hazır kodları çıkarmak çok kolay oluyordu bu yüzden.
+
+394
+01:44:41,652 --> 01:44:58,011
+Farklı prefiks kodları gördük. Belirli kurallarla çıkarılmış C1, C1'den yararlanarak C2, C2'den yararlanarak C3 ve tamamıyla birbirinden bağımsız olan C4 kodunu gördük.
+
+395
+01:44:58,011 --> 01:45:02,011
+Evet, şimdi...
+
+396
+01:45:02,836 --> 01:45:17,576
+Şimdi Kolomb Kod'a geçip bir ara vereceğim Kolomb Kod'dan sonra. Arkasından da sanırsam Şanon Fano'ya artık geçeceğiz. Haftaya da Hufman Kodlaması ile devam ederiz.
+
+397
+01:45:20,180 --> 01:45:35,440
+Aslında kitaplara bakarsanız çok fazla kodlama göreceksiniz. Bunların hepsini anlatmak haftalar sürebilir. Ben en çok popüler olan, vakti zamanında çok kullanılmış olan kodları sizin için seçtim.
+
+398
+01:45:41,300 --> 01:45:56,780
+oluşturulan basit bir prefix kod. Yani zaten benim amacım prefix kodlar şu an. Column kod da prefix kod. Bunun içinde de yine yuneri kodları ben kullanacağım. Peki nasıl kullanacağım ve nasıl oluyor bu yöntem?
+
+399
+01:45:57,939 --> 01:46:10,279
+Önce burada yöntemin adımlarını anlattım. Adımlarını anlatırken sizde bir anlam ifade etmiyor. Ben fark ediyorum ama örneklerini verdiğimde daha rahat anlaşılıyor.
+
+400
+01:46:10,279 --> 01:46:24,319
+Sadece şu kullandığım terimlerin ne olduğuna bakalım. Kodları oluşturulacak alfabe içerisinde yer alan karakterler, kullanım frekansları veya olasılıkları büyükten küçüğe doğru sıralanıyor.
+
+401
+01:46:25,939 --> 01:46:33,799
+Bir saniye bir su içmeleyelim.
+
+402
+01:46:39,604 --> 01:46:53,164
+Özür dilerim ama ben de çok bağırarak konuştuğum için böyle oluyor. Karakterleri ya kullanım sıklıkları büyükten küçüğe ya da olasılıkları büyükten küçüğe doğru sıralıyorum.
+
+403
+01:46:53,164 --> 01:47:06,304
+Ve ben bu karakterlere bir label atıyorum. X diyorum. Karakterlere sıfırdan başlayarak ardışık değerler atıyorum. Sıfırıncı, birinci, ikinci, üçüncü, dördüncü diye.
+
+404
+01:47:06,899 --> 01:47:20,859
+Sonra bir m değeri belirliyorum. Bu m değeri için seçilen değer 2'nin kuvveti olacak. Ya 2, ya 4, ya 3, ya pardon 8, ya 16. Bir tane değer seçeceğiz.
+
+405
+01:47:20,859 --> 01:47:32,840
+Her x değeri için bir xm bir de xl değerleri hesaplanacak. xm'in ve xl'nin nasıl hesaplandırıldığı burada var.
+
+406
+01:47:33,684 --> 01:47:58,043
+x'e m'ye hesaplamak istiyorsan bu x değeri x'e sıfırdan başlamak üzere ardışık integer sayılar atanıyordu. Bu x değerini m'ye bölüyoruz. Yine bakın alttan integer sayıyı alacağız. Sonra x'l'yi hesaplayacağız. x'l'de x'in büyük m'ye göre modunun alınmış hali.
+
+407
+01:47:58,579 --> 01:48:16,199
+Yeni bir x değeri bulacağız. Bu x değeri benim kolomb kodum olacak. Bu da bulduğum xm ile m'yi çarpıp xl'yi eklemiş halim. Ve x'e baktığımda bu artık benim prefiks kodum olacak.
+
+408
+01:48:21,807 --> 01:48:30,047
+Yüneri kod değeri ile XL sayısının binary değeri birleştirilerek elde edilecek.
+
+409
+01:48:30,768 --> 01:48:36,047
+Bir XM sayısı işte bu. Gideceğim bunun yüneri kodunu alacağım.
+
+410
+01:48:36,648 --> 01:48:42,588
+Burada hesapladığım XL sayısının da binary değerini alıp birleştireceğim.
+
+411
+01:48:42,588 --> 01:48:47,328
+Şimdi bir örnekle görelim. Şunu bir temizleyelim.
+
+412
+01:48:49,332 --> 01:49:15,032
+M'yi bana 4 vermiş. İkinin kuvveti. Elimde de bir takım karakterlerim var. Diyelim ki burası en fazla Türkçede A kullanılıyor, E kullanılıyor. Sonra K gelsin, sonra L, işte M gelsin. Sonra ne bileyim N gelsin, İ gelsin. Sonra ne olsun? Ne vardır?
+
+413
+01:49:16,148 --> 01:49:28,328
+İşte neyse bilemedim şimdi. Y olsun. Burası da Allah Allah harf kalmadı. Benim ismim olsun. B olsun.
+
+414
+01:49:29,524 --> 01:49:35,404
+En fazla geçen karakterden ya da olasılığı en yüksek olan karakterlerim bunlar.
+
+415
+01:49:35,664 --> 01:49:42,404
+Sıraladım küçükten, büyükten, küçüğe doğru ve bunlara da sıfırdan başlayan ardışık değerler verdim.
+
+416
+01:49:42,724 --> 01:49:45,624
+9 tane alfabemde sembolüm var.
+
+417
+01:49:46,044 --> 01:49:47,963
+1m değeri belirledim, 4.
+
+418
+01:49:48,404 --> 01:49:50,544
+Şimdi xm'yi hesaplayacağım.
+
+419
+01:49:50,544 --> 01:49:51,664
+xm neydi?
+
+420
+01:49:52,595 --> 01:50:04,555
+x'in m'ye alttan integer bölmesi. Bu nedir? 0 bölü 4. 0 bölü 4, 0 nokta bilmem nedir.
+
+421
+01:50:05,011 --> 01:50:30,152
+Bu ne olacak? Sıfır olacak. 1 bölü 4 sıfır olur. 2 bölü 4 sıfır olur. 3 bölü 4 sıfır olur. 4 bölü 4 bir olur. 5 bölü 4 bir nokta bilmem ne olacak. Kendisinden küçük en büyük tam sayı bir olur. 6 bölü 4 bir olur. 7 bölü 4 bir olur. 8 bölü 4 iki olur.
+
+422
+01:50:30,707 --> 01:50:38,447
+XM'i bu şekilde hesapladık. XL ne diyor? X'in M'ye göre modunu al.
+
+423
+01:50:38,963 --> 01:50:57,203
+0'ın 4'e göre modu 0, 1'e göre modu 1, 2'ye göre modu 2, 3'e göre modu 3, 4'ün 4'e göre modu 0, 5'in 4'e göre modu 1, 6'ya göre 2, 7'ye göre 3, 8'in 4'e göre modu 0.
+
+424
+01:51:06,963 --> 01:51:29,184
+3 tane olarak gidiyor. Aslında burası da ne oluyor? M4 ise 4 tane 0, 4 tane 1, 4 tane 2 diye geçecek. Şimdi benim neye ihtiyacım vardı? Oluşturacağım bir yüneri kod. Column kod bir şey olacak. Çok pardon. Prefiks kodum olacak.
+
+425
+01:51:32,404 --> 01:52:00,404
+Bu yüneri kodlar değil, bunu da değiştireyim. Bak, üç tane bugün hata gördüm. Bunların hepsini hafta sonu hazırladığım için kontrol etme şeyim kalmadı. Kolomb kodlar oluşturacağım. Şimdi bunlar nedir diyor? Xm ile xl'nin birleştirilimi. Peki, xm neden oluşacak? Xm sayısının yüneri kod değeri. Xm sıfır.
+
+426
+01:52:00,404 --> 01:52:07,064
+Yüleri kodu neydi? 0 tane 1, onu takip eden 0.
+
+427
+01:52:07,064 --> 01:52:14,184
+0 tane 1, onu takip eden 0. 0 tane 1, onu takip eden 0. 0 tane 1, onu takip eden 0.
+
+428
+01:52:14,663 --> 01:52:22,543
+1 tane 1, takip eden 0. 1 tane 1, takip eden 0. 2 tane 1, takip eden 0 diye gidiyor.
+
+429
+01:52:22,864 --> 01:52:26,484
+Yani XM'in yüleri değerlerini koyduk.
+
+430
+01:52:27,220 --> 01:52:44,860
+X'nin de binary değeri gelecek. X'nin 0, binary karşılığı 1'in, 2'nin, 3'ün. 0'ın, 1'in, 2'nin, 3'ün binary karşılığı, 0'ın binary karşılığı. Sonra şu ikisini birleştirip column kodu elde edeceğim.
+
+431
+01:52:46,440 --> 01:52:54,900
+Şimdi ben bunlara prefix kod diyorum. Hemen kontrol edelim. Gerçekten prefix kod mu? 3 tane sıfırla başlayan kod var mı?
+
+432
+01:52:55,220 --> 01:53:15,340
+Yok. 001 ile başlayan kod var mı? Yok. 010 ile başlayan kod var mı? Yok. İstediğin kadar ara, kontrol et. Mevcut olan bir kodla başlayan bir başka kod göremeyeceğimiz için bu da prefil kod olacak.
+
+433
+01:53:23,796 --> 01:53:35,275
+Öyle bir kodum olsun ki yine şu A'nın olasılığı diyelim ki 0.7, E'nin olasılığı da diyelim ki 0.3.
+
+434
+01:53:36,180 --> 01:53:43,900
+Çok büyük bir fark olmasına rağmen gittim A'yı da 3 bitle, E'yi de 3 bitle kodladım.
+
+435
+01:53:44,440 --> 01:53:52,020
+Demek ki böyle bir kaynağım varsa benim bu kodlama da çok uygun değil. Redundance yüksek olacak.
+
+436
+01:53:52,020 --> 01:53:59,960
+Bu nelerde işime yarayabilir? Aslında E'nin olasılığı bu kadar düşük değildir. En azından A'ya yakındır.
+
+437
+01:54:00,564 --> 01:54:25,104
+K'da yüksek kullanılır. Belki bunların olasılıkları birbirine yakınsa onları eşit bitte kodlamak o kadar redundancy arttırmaz. Eğer olasılıkları arasında çok büyük farklar varsa ve ben onları aynı bitte kodluyorsam bu doğru bir seçim yapmadığımı bana gösterir.
+
+438
+01:54:26,676 --> 01:54:28,676
+Gördüğünüz gibi...
+
+439
+01:54:29,908 --> 01:54:44,368
+Bu da basit bir yöntem. Kolumb'u gördük, yuneri'yi gördük, farklı C isimlendirdiğimiz prefiksleri gördük, barneri sayılardan oluşan prefiks kodları gördük, gördük de gördük.
+
+440
+01:54:44,368 --> 01:54:53,028
+Benim bundan sonra istatistiksel yöntemlerde çıkardığım bütün kodlar önceden hazırlanmış kodlar olmayacak.
+
+441
+01:54:53,488 --> 01:54:57,908
+Buraya kadar olanların hepsi önceden hazırlanmış tablo halindedir.
+
+442
+01:54:57,908 --> 01:55:22,908
+Bu kodlar elimdeki verinin içeriğinden bağımsız olarak. Fakat bundan sonra göreceğimiz kodlamalar artık bir yöntem. Yani nedir? Elimdeki verinin içeriğine bağlı olarak oluşturulmuş kodlamalar olacak ve bunların hepsi de prefiks özelliğine sahip olacak.
+
+443
+01:55:23,347 --> 01:55:47,608
+Şimdi yeniden bir saate bakıyorum. 16.56, 10.55 diyelim buna. 10 geçe yine burada olalım. Tamam mı? Bir kişi evet desin. Tamamdır. 11-10 geçe görüşmek üzere.
+
+444
+01:55:52,595 --> 01:55:53,735
+Tamam hocam.
+
+445
+02:09:22,996 --> 02:09:23,456
+Evet.
+
+446
+02:09:27,923 --> 02:09:29,483
+Densimize başlayalım.
+
+447
+02:09:30,703 --> 02:09:31,543
+Geldik mi?
+
+448
+02:09:38,420 --> 02:09:41,420
+Geldik mi? Evet hocam. Tamamdır.
+
+449
+02:09:43,800 --> 02:09:57,680
+Evet hocam. Tamam. Artık hazır kodları artık bir kenara koyalım. Biz kendimiz kodları nasıl oluşturabiliriz? Bunlara bakalım.
+
+450
+02:09:58,820 --> 02:10:04,920
+Shannon Fano, bu adamın ismi, bunun ortaya attığı bir kodlama yöntemi.
+
+451
+02:10:05,408 --> 02:10:16,288
+Daha sonra bu kodlama yöntemi baz alınarak hayatımızın içerisinde çok fazla yer alan Hufman kodlamayı göreceğiz.
+
+452
+02:10:16,828 --> 02:10:19,448
+Hayatımızın içinde derken neyi kastediyoruz?
+
+453
+02:10:20,007 --> 02:10:26,408
+Hepimiz hemen hemen büyük bir çoğunlukla bir resim indirdiğimizde JPEG formatında indiriyoruz.
+
+454
+02:10:26,408 --> 02:10:28,307
+JPEG olarak saklıyoruz.
+
+455
+02:10:33,408 --> 02:10:42,188
+Winzip, Winrar kullanıyoruz. Bunların hepsinin içerisinde, ara adımda Huffman Koding kullanılıyor.
+
+456
+02:10:43,188 --> 02:10:49,868
+Huffman'a geçmeden, çünkü Huffman Shannon'a göre biraz daha çetrefilli.
+
+457
+02:10:50,528 --> 02:10:55,588
+Shannon'dan bahsedelim. Shannon, değişken uzunluklu koddur.
+
+458
+02:10:55,588 --> 02:11:00,648
+Artık biliyoruz, bizim amacımız değişken uzunluklu ve prefiks özelliğe sahip.
+
+459
+02:11:01,619 --> 02:11:15,420
+Olasılık veya kullanım sıklıkları bilinen en elemanlı bir küme ile başlanır. Burada küme diye kastettiğim şey alfabe. En tane karakterden oluşan bir alfabem var.
+
+460
+02:11:19,028 --> 02:11:33,988
+Ya da bunlar ne bileyim piksel de olabilir, önemli değil. Sembol diyeyim. Bu sembollerin ya frekans değerlerini kullanırım, yani kaç adet geçtiklerini ya da olasılık değerlerini kullanırım. İkisi de aynı kapıya çıkar.
+
+461
+02:11:35,048 --> 02:11:44,068
+Semboller azalan sırada olasılıklarına ya da kullanım sıklıklarına göre sıralanıyor. En küçükten en büyüğe doğru.
+
+462
+02:11:44,756 --> 02:11:53,476
+Daha sonra semboller kümesi aynı veya yakın olasılık değerlerine göre iki kümeye ayrılıyor.
+
+463
+02:11:53,976 --> 02:11:59,576
+Burada olasılık dedim, frekanslara göre sıralanmışsam bunu frekans olarak düşünelim.
+
+464
+02:11:59,891 --> 02:12:06,632
+Yani elimde olasılıklarım var. Bu olasılıklara göre elimdeki kümeyi ikiye böleceğim.
+
+465
+02:12:06,632 --> 02:12:14,612
+Tabi tam ikiye bölünebilir bir durum olmayabilir. Hafif değişimler olabilir iki küme arasında.
+
+466
+02:12:15,731 --> 02:12:27,112
+Bu bölme işleminde iki kümeye bölüyoruz dedik. Bir küme içerisindeki sembollerin hepsine bir değerini atarken diğer sembollere de sıfır değerini atıyorum.
+
+467
+02:12:28,180 --> 02:12:31,720
+Peki bu işleme ne kadar süre devam edeceğim?
+
+468
+02:12:33,171 --> 02:12:59,891
+İkiye böl, ikiye böl. Binary Search'ta nasıl yaparız? Elimizde yüzlük bir şey varsa ortadan böldün elli, sonra onu böldün yirmi beş, onu böldün on üç, onu böldün yedi, böldün üç, böldün iki, böldün bir. Elbette durma noktası var. Burada da var. Her alt küme kendi içerisinde iki eleman kalıncaya kadar bölünmeye devam edilir.
+
+469
+02:13:01,140 --> 02:13:01,820
+Sonra,
+
+470
+02:13:02,484 --> 02:13:11,484
+Semboller atacağız. Çünkü bu 1 ve 0'lar aslında benim o sembolleri atamış olduğum kodların bit değerleri olacak.
+
+471
+02:13:12,104 --> 02:13:16,444
+Ve bu sembolleri artık okumaya başlayacağım. Çünkü semboller oluştu.
+
+472
+02:13:17,123 --> 02:13:24,944
+Sembolleri okurken de aşağıdan yukarıya doğru okuyacağım. Ne demek aşağıdan yukarıya doğru okumak?
+
+473
+02:13:24,944 --> 02:13:30,323
+Bu sembolleri oluştururken bir ağaç yapısı gibi bir yapı karşıma çıkacak.
+
+474
+02:13:30,484 --> 02:13:41,264
+Aşağıdan yukarıya doğru okumak şu demektir, yapraklardan köke ya da kökten yapraklara doğru okunacak.
+
+475
+02:13:41,944 --> 02:13:55,944
+Sembollerin ve bu Shannon-Phono yönteminin en ideal olduğu durum, yani ortalama mesaj uzunluğuyla entropinin birbirine yaklaştığı durum,
+
+476
+02:13:56,307 --> 02:14:01,307
+Eğer olasılık değerleri ikinin negatif kuvvetleri cinsindeyse...
+
+477
+02:14:02,387 --> 02:14:18,587
+Yani olasılığın 1 bölü 2, 1 bölü 4, 1 bölü 8, 1 bölü 10, 1 bölü 32, 1 bölü 64 gibi ikinin kuvvetleri cinsinden gidiyorsa en ideal sıkıştırmaya gerçekleştirmiş olurum.
+
+478
+02:14:18,587 --> 02:14:30,387
+Fakat yine diyoruz gerçek dünyamızda hiçbir olay öyle ikinin kuvvetleri cinsinden artarak bana olasılık değeri vermez. Bunun hepsi tepkiler.
+
+479
+02:14:30,387 --> 02:14:43,787
+Teoride kalır. Şimdi örnekle devam edelim. Ama önce sayfanın çevrilmesi lazım. Evet. Bana bir takım semboller verilmiş. Bunların ne olduğunun önemi yok.
+
+480
+02:14:43,787 --> 02:14:57,527
+Diyelim ki şu A olsun, bu E olsun, bu K olsun, bu M olsun, şu N olsun, şu L olsun, bu da çok küçük olduğu için Z olsun.
+
+481
+02:14:58,068 --> 02:15:18,847
+Bunlar bu sembollerin olasılık değerleri. Şimdi benim ne yapmam gerekiyordu? Bu sembollerin olasılıklar kümesini ikiye böleceğim. Öyle bir yerden ikiye böleyim ki her iki kümede de eşit olasılık olsun. Şimdi buradaki olasılıklar toplamı bir.
+
+482
+02:15:19,539 --> 02:15:36,779
+Ortadan bölürsem 0.5 eder. 0.5 verecek bir şey yok. Şu ikisini toplarsam 0.45 olur. Buradan da bölebilirim. Şunu da eklersem 0.50-0.60 olur. Buradan da bölüyor.
+
+483
+02:15:38,452 --> 02:15:57,112
+0'a 60'a 0'a 40 mı daha iyidir? 45'e 55 mi daha iyidir? Buradan bölmek en ideali. Olabilecek en uygun yerden ikiye böldüm. İki tane küme oldu. Kümenin birine kodu olarak bir, diğerine 0 yazdım.
+
+484
+02:15:58,003 --> 02:16:12,584
+Bu işlemler devam edecekti. Nereye kadar devam edecekti? Her kümenin içerisinde bir eleman kalıncaya kadar. Ya da en son iki eleman kaldığında bunu böleceğim.
+
+485
+02:16:12,584 --> 02:16:19,764
+Öyleyse yukarıya bakalım. Yukarıya da ikiye bölebilirim. Nasıl ikiye bölebilirim?
+
+486
+02:16:21,108 --> 02:16:36,927
+Şöyle bölebilirim. Şurayı 0,25, 0,20. Yani şu bölümü de kendi içinde ikiye böldüm. 0,25, 0,20. Üsttekine bir, alttakine sıfır kodunu atadım.
+
+487
+02:16:36,927 --> 02:16:48,168
+Bakın genelde hep aynı mantığı işlemem lazım. İlk kümeye bir, sonrakine sıfır. İlk kümeye bir, sonrakine sıfır. Sonra geldim bu kümeye.
+
+488
+02:16:48,564 --> 02:16:57,804
+Bu kümeyi de bir yerden ikiye bölmeliyim. Şurası 30, aşağısı 25, 30'a 25 şuradan bölebilirim.
+
+489
+02:16:58,144 --> 02:17:05,224
+Bu kümenin içerisinde de üst kısmı 1, alt kısmı 0'ı koydum.
+
+490
+02:17:05,864 --> 02:17:14,984
+Yukarıya bakalım. Artık yukarıda bölünecek bir şey var mı? Burada da bir eleman var. Burada da bir eleman var. Ama burayı bölebilirim.
+
+491
+02:17:16,819 --> 02:17:33,700
+Burayı böleceğim. Burası zaten 0,15,0,15. Bunu rahatlıkla ortadan bölerim. Burayı nasıl bölerim? 0,10,0,0,05. 10'a 15 diye iki parçaya bölebilirim herhalde.
+
+492
+02:17:43,219 --> 02:17:56,159
+Şurayı böldüm. Burayı da 0, 10'a 0, 15 diye böldüm. Yukarısına 1, aşağısına 0 verdim. Artık buradaki bu işlem buradaki bitti.
+
+493
+02:17:56,703 --> 02:18:14,563
+Buradaki de bitti. Ne kaldı geriye? Şuranın ikiye bölünmesi. Burada bir yüzde on var. Burada yüzde beş var. Bunu da yaklaşık olarak şu şekilde ikiye bölersem, bunun da üstüne bir, bunun da altına sıfır koyacağız.
+
+494
+02:18:14,563 --> 02:18:22,783
+Şimdi bu en son bitmiş halinden yapalım. Önce gittik bunu ikiye böldüm.
+
+495
+02:18:23,731 --> 02:18:48,291
+Mavi ile. 1 ve 0 dedim. Sonra gittim, şunu kendi içinde ikiye böldüm. 1 ve 0 dedi. Sonra bu geri kalan kısmı ikiye böldüm. Yeşiller ve yeşiller. Sonra bu yeşilleri kendi içinde ikiye böldüm.
+
+496
+02:18:49,396 --> 02:19:03,316
+Sonra bu yeşilleri kendi içinde ikiye böldü. Sonra burada bir kaldı. Sonra bunları kendi içinde ikiye böldü. Ve artık bitti. Şunları silelim.
+
+497
+02:19:07,188 --> 02:19:19,768
+Sildim. Şurası kök oldu. Bir şekilde. Burası da yapraklar. Ne diyeyim? Şunlar da yaprak.
+
+498
+02:19:20,500 --> 02:19:36,819
+Şimdi kodları oluşturmam lazım. Şu harflerimizi de koyalım. Şuna ne demiştim? A demiştim, şuna E demiştim, buna K demiştim, buna M demiştim, buna atıyorum, unuttum ne dediğimi. L dedim, N dedim ve Z dedim.
+
+499
+02:19:36,819 --> 02:19:46,260
+Artık benim elimde şu semboller için verilmiş kodlar var. Nedir bu kodlar? Bakalım.
+
+500
+02:19:46,708 --> 02:20:09,648
+Şunu silim şuradan. Kapatıyor. Nedir bu kodlar? Bakalım. Nereden okuyacağız demiştik kodlarımızı? Hemen bakalım. Nereden okuyacağız demiştik? Aşağıdan yukarıya doğru okunur dedik. Tamam, bakalım aşağıdan yukarıya doğru nasıl okuyacağız?
+
+501
+02:20:11,227 --> 02:20:12,868
+Aşağı neresi?
+
+502
+02:20:17,108 --> 02:20:42,087
+Aşağı neresi? Burası. Aşağıdan yukarıya doğru okuyacağız. A nerede bitiyor? 1-1. Bakın A'nın olduğu yere geliyorum. Bir burada bir var, bir burada bir var. İşte bir buraya geldi. E'yi okuyorum. Aşağıdan yukarıya doğru çıktım. 1-0. İşte 1-0 buraya geldi.
+
+503
+02:20:42,708 --> 02:20:51,427
+0-15 kanun kodlarını okuyorum. Aşağıdan yukarıya doğru. Bu yolda neler var? 0-1-1. İşte bu.
+
+504
+02:20:52,528 --> 02:20:58,368
+M'yi okuyorum. Aşağıdan yukarı doğru. Ne var? 0-1-0 var.
+
+505
+02:20:59,408 --> 02:21:04,828
+L'yi okuyorum. Aşağıdan yukarıya doğru. 0-0-1 var.
+
+506
+02:21:05,363 --> 02:21:32,324
+N'yi okuyorum. Aşağıdan yukarıya doğru 3, 0, 1 var. Z'yi okuyorum. Aşağıdan yukarıya doğru 4 tane 0 var. Bakıyorum. Değişken uzunluklu mu? Evet. Hepsi farklı. Peki prefiks kod mu? Bakıyorum. Kaleme geçeyim. Bakıyorum. Birbirle başlayan bir kod var mı? Hayır, yok.
+
+507
+02:21:32,724 --> 02:21:57,103
+10 ile başlayan var mı? Yok. 0-1 ile başlayan kod var mı? Yok. 0-10 ile başlayan var mı? Yok. 2-0-1 ile başlayan yok. 3-0-1 ile başlayan yok. 4-0 ile başlayan yok. Öyleyse bu da prefiks bir koddur. Hadi bir tane örnek verelim. Mesela kaleyi kodlayalım.
+
+508
+02:21:59,443 --> 02:22:17,384
+K'nın kodu ne? K'nın koduna bakıyoruz. 0, 1, 1. A'nın kodu ne? Bakıyorum. 1, 1. L'nin kodu ne? Bakıyorum. 0, 0, 1.
+
+509
+02:22:26,164 --> 02:22:49,724
+Şimdi yalnız şunu da söyleyeyim. Bu geçmişte yapılan bir hata kodluyor arkadaşlar yaptıkları ödevlerde. Kodluyorlar. 0 ve 1 için 1 byte'lık yer tutuyor. O zaman bunu 1 byte'da tutarsan 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 byte olur.
+
+510
+02:22:50,291 --> 02:23:10,551
+Ben bunun zaten orijinali 4 karakter 4 byte ile yazıyorsam senin 10 byte yazmanın bir anlamı var mı? Yok. Bunları byte olarak değil bit olarak alacağız. Yani ben bunları 8 bitli byte'ların içerisine 2, 4, 6, 8.
+
+511
+02:23:11,667 --> 02:23:26,907
+2, 4, 6, 8. Herhalde şöyle 8 mi oldu? 2, 4, 6, 8. Evet. Şunları shift ediyorum byte'ın içine. Bu 8 tane biti. Bunu bir byte de tutuyorum.
+
+512
+02:23:27,443 --> 02:23:41,863
+Arkasından gelen kelimeleri de böyle ekleye ekleye byte byte tutuyorum. Buna bakarsak o zaman bu bir byte'ın içinde de iki bit kullanılmış. Neredeyse kale için iki byte kullanmışım.
+
+513
+02:23:41,863 --> 02:23:55,423
+Orijinali dört, ben iki byte kullanmışım. Ama siz gider bu bir ve sıfırları byte olarak yazarsanız dosyaya hiçbir sıkıştırma yapmış olmazsınız. Dosyanızı genişletmiş olursunuz.
+
+514
+02:23:55,443 --> 02:24:08,304
+Şimdi elimde şöyle sıkıştırılmış halim var. Açabilecek miyim? Açabilmem için karşı tarafında bu kodları bilmesi gerekiyor. Karşı taraf bu kodları nasıl bilecek?
+
+515
+02:24:09,012 --> 02:24:36,112
+Onları size Hoffman'da detaylı olarak anlatacağım. Şu an için karşı tarafın bunları bildiğini düşünün. Ve bu kodu çözmek istiyor. Kalemimizi değiştirelim. Yeşile geçelim. Geliyor sıfıra. Sıfır diye elinde bir kod var mı? Yok. Tek bitli bir kodum yokmuş. İki bit olarak bakayım diyor. Sıfır bir. Bakıyor. Sıfır bir ile iki bitlik bir kod yok.
+
+516
+02:24:37,012 --> 02:25:04,772
+O zaman 3 bit alayım diyor. 3 bite bakıyor. 011 diye bir kod var mı? Evet var. Burası. A diyor. Bu demek ki K'dır. Çünkü 011 ile başlayan başka bir kod olmadığını biliyoruz. Prefiks özelliğini sağlıyorsa. Okey. Sonra geliyor 1. 1 bitten oluşan bir kod yok. 2 tane 1'e bakıyor. 2 tane 1'den oluşan bir kod var. Bunu devam ettirmeye gerek yok.
+
+517
+02:25:05,012 --> 02:25:16,952
+Çünkü bu prefiks kod bir daha birbiriyle başlayan kod yok. Öyleyse diyor ki bu A'mış. Yazdı A'yı. Sonra 0. 0 ile başlayan bir sürü kod var.
+
+518
+02:25:17,780 --> 02:25:44,280
+Ama zaten bir bit değil. İkinci biti alıyor. İki sıfırlı bir kod var mı? Bir sürü var. O zaman üçüncü biti alıyor. Sıfır, sıfır bir diye bir kod var mı? Evet var. Varsa artık bu üçüncü bir bittir. Üçüncü bir semboldür. L'yi alıyor. Yeniden başlıyor. Birli var mı? Hayır yok. On var mı?
+
+519
+02:25:44,915 --> 02:26:02,915
+Evet, var, nedir, e ve kale. Gördüğünüz gibi orijinalini aldım, enkodera soktum, bunu kompres ettim ve daha sonra dekodera soktum ve bunu unkompres ettim.
+
+520
+02:26:03,775 --> 02:26:10,155
+Kompres ve dekompresin birlikte yapıldığı kapalı kutuya da kodek adını vermiştik.
+
+521
+02:26:10,388 --> 02:26:17,448
+Eğer bunlar prefix kod olmasaydı ben bunu bu şekilde rahat açamayacaktım.
+
+522
+02:26:17,948 --> 02:26:23,868
+Yani prefix kodu olmasaydı bu belki açılabilirdi ama yanlış kodlar gelebilirdi.
+
+523
+02:26:23,868 --> 02:26:31,747
+Mesela burası kaze, kaze diye bir şey çıkabilirdi. Ne olduğunu bilmiyorum.
+
+524
+02:26:35,520 --> 02:26:47,460
+Belirli bir şeyden sonrasını bir türlü bir şeyle meç edemez. Orada sıkışıp kalırsın. Bunların hepsi prefiks koddan olmamasından kaynaklanan durumlar.
+
+525
+02:26:48,380 --> 02:27:02,880
+Şimdi bakalım, yine silgimizi bulalım. Masum olsam silgiyi bulacağım. Böyle bir sistemin entropisi nedir? Entropi neydi? Her bir sembolün olasılığı.
+
+526
+02:27:03,316 --> 02:27:29,616
+Çarpı o sembolün logaritmasıyla çarpılmış hali. İkinci sembolünki 0,20. İki tane 0,15 var. İki çarpı 0,15 log 2,0,15. İki tane 0,10 var. İki çarpı 0,10 log 10 artı 0,5 log 0,5. Ve entropi kalemim nerede? Burada 2,67 çıktı.
+
+527
+02:27:30,739 --> 02:27:52,500
+Ortalama mesaj uzunluğu neydi? Ortalama mesaj uzunluğunu şöyle hesaplıyorduk. Bunun sembolü nedir? 0.25. Kaç bitte kodlanmış? 2. 0.5'i 2 ile çarptım. Sembol nedir? Olasılık 0.20. 0.20'nin biti neydi? 2 bit. 2 ile çarptım.
+
+528
+02:27:58,451 --> 02:28:12,391
+Kaç bitlik? 3 bitlik. Kaç tane var 0.15 olasılığında 3 bitlik? 2 tane var. 2 tane olasılığı 0.15 olan 3 bitlik kodum var.
+
+529
+02:28:21,876 --> 02:28:45,855
+Pardon, pardon yanlış. Bunlar çünkü aynı bit değil. Olasılığı 0.10 olan 3 bitlik bir tane var. Olasılığı 0.10 olan 4 bitlik bir tane kodum var. Olasılığı 0.05 olan 4 bitlik bir tane kodum var. Böylece de ortalama mesaj uzunluğunu buldum.
+
+530
+02:28:46,067 --> 02:29:07,847
+Yani bu teori. Teori bana diyor ki senin ortalama böyle bir sistemi 267 bit ile kodlarsın diyor.
+
+531
+02:29:08,435 --> 02:29:17,956
+Ortalama mesaj uzunluğunda nasıl hesaplanıyordu? Her bir sembolün olasılığı ve kaç bit de çarpıldı? O da 2.7 bit.
+
+532
+02:29:18,451 --> 02:29:36,351
+Bu iyi bir sıkıştırma mı? Entropi ile ortalama mesaj uzunluğunun arasındaki farkı alıyorum. Redundancy diyorum. Redundancy sıfıra ne kadar yakınsa o kadar iyi. Oldukça sıfıra yakın. O zaman bu ideal bir sıkıştırmadır diyorum.
+
+533
+02:29:36,351 --> 02:29:46,391
+Zaten ben iyi çıkması için de elimden geleni yapmışım gördüğünüz gibi. Şurada bölmeler kolay ve güzel gözüksün diye anlaşılır.
+
+534
+02:29:46,451 --> 02:29:58,711
+Bir örnek verdim. İşte benim yapacağım her şey artık bu. Elimde döküman var. Bu dökümanı kompres edeceğim.
+
+535
+02:30:00,000 --> 02:30:09,040
+Ama bu dokümanı kompres ederken karşının da bunu açabilmesi için başına bir header bilgisi ekleyeceğim.
+
+536
+02:30:09,040 --> 02:30:18,340
+Bu header bilgim benim belki de bu olasılık değerlerim olabilir, sembollerimin kodları olabilir ya da başka bir şey.
+
+537
+02:30:18,659 --> 02:30:20,639
+Bunları yeri geldikçe anlatacağız.
+
+538
+02:30:26,719 --> 02:30:49,759
+göndereceğim. Karşı taraf gidecek, bunu alacak. A diyecek, ben nasıl kodladığını şu header'dan bilgiye alayım. Önce header'dan bilgiyi alacak. Ondan sonra bu mor kısmı açacak. Bununla bunu karşılaştıracak. Ben kayıpsız bir sıkıştırma yapıyorsam bu ikisinin
+
+539
+02:30:50,175 --> 02:31:05,315
+Bayt olarak compare ettiğimde birebir aynı çıkması lazım. Eğer kayıplı sıkıştırma yapmıyorsam, kayıpsız sıkıştırma yapıyorsam bu ikisi birbirinden farklı olabilir.
+
+540
+02:31:09,843 --> 02:31:21,943
+Görüntüdeki başarıyı ölçtüğüm root mean square ya da signal noise ratio vardı. Onunla ölçeceğim.
+
+541
+02:31:26,291 --> 02:31:42,631
+Kayıplı yapıyorsam, kayıpsız yapıyorsam birebir aynısı olup compare edebilirim. Eğer kayıplı yapıyorsam tekste işte bu birazcık problem. Çünkü compare ettiğimde bite bite aynı şey çıkmayacak.
+
+542
+02:31:43,371 --> 02:31:54,191
+Sıkıştırdığımı açmış olmam içindeki verilerin çok düzgün olacağı anlamına da gelmez. Ben girip okuduğumda, baktığımda içeriğinde bir bozulma yok.
+
+543
+02:31:54,291 --> 02:32:02,811
+Bu bir kayıplı sıkıştırma olup da bozulma yoksa bu da benim kabul edebileceğim bir sistem olacak.
+
+544
+02:32:03,951 --> 02:32:07,072
+Evet, buraya kadar sorunuz var mı arkadaşlar?
+
+545
+02:32:09,811 --> 02:32:15,572
+Yani prefiks kodları gördük. Artık ne olduğunu biliyoruz. Çok fazla çeşitleri var.
+
+546
+02:32:17,112 --> 02:32:22,512
+Statistiksel kodları artık geçtik. İlk başlangıç olan Shannon Fanoy'a girdik.
+
+547
+02:32:22,512 --> 02:32:31,691
+Burada mutlaka bu kodlar hazırlanmamış önceden. Ben verimin içeriğine bağlı olarak bu kodları oluşturuyorum.
+
+548
+02:32:32,132 --> 02:32:37,272
+Yani benim olasılığımın şurası 0.75 olsaydı.
+
+549
+02:32:38,164 --> 02:32:59,184
+Burası 0,20 olsaydı, geri kalanları da diyelim ki 0,1, 0,1, 0,1, 0,1 olup 100'ü toplasaydım, yani 1 etseydim, kodlarım böyle çıkmayacaktı.
+
+550
+02:32:59,184 --> 02:33:05,583
+Kodlarım daha farklı bir şekilde çıkacaktı. Peki şöyle bir örnek yapalım.
+
+551
+02:33:05,951 --> 02:33:17,931
+Şunu siliyorum. Kaleme de geçiyorum. Şöyle yapayım. Şurası açık kalsın. Elimde şöyle olasılıklarım olsun benim.
+
+552
+02:33:33,620 --> 02:33:43,819
+Niyettir. Olur mu? Bu olmadı. Pardon. Şunu çok fena vermişim.
+
+553
+02:33:48,371 --> 02:34:01,171
+4, 8, 1, 0,05, 0,05
+
+554
+02:34:01,171 --> 02:34:16,051
+şimdi ne oldu? Şurası 1, %20, 80 bu. Evet, buna şanonfana uygulayalım. Nasıl bölersin? Yani yukarıda 4 var.
+
+555
+02:34:16,468 --> 02:34:37,028
+Aşağıda 6 var. Ya 4'e 6 diye böleceğim. 8'e 2 diye bölmek hiç adil değil. O zaman 4'e 6 diye böleceğim. Buna 1, diğerlerine 0 koyacağız. Yukarısı bitti. Şimdi burayı böleceğiz.
+
+556
+02:34:37,504 --> 02:35:04,724
+Burayı nasıl böleceğiz? 4 var. 5'e 1 olmaz. 4'e 2 olabilir. Öyleyse gideceğim. Burayı da 4'e 2 diye böleceğim. 4'e 2 diye böldüm. Yukarısı 1. Diyerleri 0 olacak. Sonra geleceğim. Burada 1, 05, 05. O zaman bunu buradan bölebilirim.
+
+557
+02:35:07,092 --> 02:35:21,172
+Burası 1, bunlar 0 ve 0 çıktı. 0 ve 05 bunları tam ortadan bölebilirim. Burası da ne oldu? 1, burası da 0 oldu.
+
+558
+02:35:25,296 --> 02:35:49,376
+Ötekinin kodu 01, ötekinin kodu 001, şunun kodu 3 tane 01, bunun kodu 4 tane 0. Bu prefiks kod mu? 1 ile başlayan yok, 01 ile yok, 201 ile yok, 301 ile yok, 40 ile yok. Öyleyse bu prefiks koddur.
+
+559
+02:35:53,296 --> 02:36:14,456
+Ortadan böleceğiz diyoruz ama her zaman orta çıkmıyor. Mesela burada 0,4'e 0,6 aldım. Bunu almak daha mantıklı. 0,8'e 0,2 almak hiç adil değil. 4'e 6 almak. Alabildiğim en yakın olasılık değerlerinden bölmem gerekiyor.
+
+560
+02:36:15,667 --> 02:36:26,007
+Shannon Fanon böyle. Huffman Tire de A çapısından dolayı benziyor fakat mantığı gerçekten çok çok daha farklı.
+
+561
+02:36:26,727 --> 02:36:36,007
+Huffman çok önemli bir algoritma olduğu için onun birçok aşamasını çok derin bir şekilde size anlatacağım.
+
+562
+02:36:36,007 --> 02:36:41,308
+Uzun bir konu olduğu için bugün o konuya geçmiyorum. Burada bitiriyorum.
+
+563
+02:36:43,667 --> 02:37:06,308
+Sizlere sonuçları ilan edeceğim. Seminer konusu ve proje konusuyla ilgili bir mail hazırlayacağım. Bu hafta içerisinde size göndereceğim. Haftaya hufmanla başlayacağız. Sorusu olan varsa alayım yoksa hepinize iyi haftalar dileyim. Sorusu olan var mı arkadaşlar?
+
+564
+02:37:11,219 --> 02:37:19,360
+Peki, hepiniz çok terbiyelisiniz. Soru sormuyorsunuz. Teşekkür ediyorum. Haftaya görüşmek üzere diyorum o zaman.
+
+565
+02:37:20,860 --> 02:37:24,840
+Teşekkür ederiz hocam.
