@@ -1,0 +1,2435 @@
+1
+00:01:17,427 --> 00:01:23,408
+Evet arkadaşlar, şimdi henüz ben dahil altı kişiyiz. İki dakika bekleyin. Ondan sonra derse başlarız.
+
+2
+00:01:29,652 --> 00:01:31,111
+Hocam merhabalar, nasılsınız?
+
+3
+00:01:31,512 --> 00:01:33,292
+Merhaba [öğrenci], teşekkürler. Nasılsınız?
+
+4
+00:01:33,692 --> 00:01:38,352
+Ben de iyiyim, çok sağ olun. Hocam size bir konuyla ilgili ben mail atmıştım ama, mail ulaştı mı size?
+
+5
+00:01:39,132 --> 00:01:42,972
+Ulaştı, yarın bakabileceğim ancak. Ondan sonra size yanık döneceğim [öğrenci].
+
+6
+00:01:42,992 --> 00:01:47,132
+Tamam, bazen mailde sıkıntı oluyor hocam, iletilmiyor vesaire öyle bir problem var diye endişe ettim.
+
+7
+00:01:47,811 --> 00:01:48,692
+Sıkıntı bende.
+
+8
+00:01:49,792 --> 00:01:52,252
+Estağfurullah hocam, estağfurullah. Çok sağ olun.
+
+9
+00:01:52,611 --> 00:01:55,171
+Öyle, görüşürüz. İki dakika sonra başlatalım daha sonra.
+
+10
+00:02:44,307 --> 00:02:51,707
+Altı.
+
+11
+00:03:45,300 --> 00:03:51,560
+Saat 1.5 geçiyor. Ben dahil alt kişiyiz ama ne yapalım? Başlayalım. Nasıl olsa.
+
+12
+00:03:53,280 --> 00:03:56,460
+Ders self study için uygun bir ders. O yüzden.
+
+13
+00:03:57,219 --> 00:04:02,820
+Bu arada bir yandan da biz başlayalım.
+
+14
+00:04:05,080 --> 00:04:08,260
+Şimdi strateji kalıbıyla başlıyoruz bugün.
+
+15
+00:04:12,692 --> 00:04:25,792
+Şimdi aslında birazdan kalıp yapısını göreceğiz. Genel yapıyı göreceğiz. Bu yapıda bir daha fazla kalıp var. Ama burada önemli olan kalıbın amacı ve bazı nüanslar var. Onların üstünden de geçiyor olacağım.
+
+16
+00:04:36,692 --> 00:04:57,552
+Çalışma anında karar verip bunu dinamik olarak değiştirebilmek. O anda birinci metot daha uygunsa o metotla çalışmak, o yöntemle çalışmak. İkinci algoritma daha uygunsa o algoritmayı kullanmak. Diğer üçüncü algoritma daha uygunsa onu kullanmak şeklinde kullandığımız algoritmayı çalışma anında değiştirebilmek istiyoruz.
+
+17
+00:04:57,552 --> 00:05:03,252
+Strateji kalıbı temel olarak buna yarayan, bu işe yarayan bir kalıptır. Örneğimiz şu olacak.
+
+18
+00:05:03,699 --> 00:05:25,639
+Metin editörü yazıyoruz. Metinlerin yazarken ve gösterirken alt satıra geçme algoritmaları birden fazla var. Bunu mesela örneğin Word'te yazı hazırlarken bunu yapabiliyoruz, seçebiliyoruz. Örneğin işte, geldim Word açayım bir tane. Kelime işlem olduğu için onu da göstereyim.
+
+19
+00:05:31,315 --> 00:05:33,295
+10 paragraflık bir şey yazsın.
+
+20
+00:05:34,076 --> 00:05:38,635
+Şimdi burada iki yana yastığı yapayım mesela.
+
+21
+00:05:39,755 --> 00:05:51,995
+Şimdi dikkat ederseniz burada aslında kaydırma yaparken bazı boşlukları biraz daha fazla, bazı boşlukları biraz daha az olaraktan hizalamış oluyor.
+
+22
+00:05:51,995 --> 00:05:58,696
+Fakat, dur bakayım burada ne ayardaydı? Satır ve sayfası. Bunu söyleyeyim.
+
+23
+00:05:59,348 --> 00:06:03,788
+O da değil. Wordpad'den göstereyim.
+
+24
+00:06:03,788 --> 00:06:05,947
+O zaman otorize.
+
+25
+00:06:09,327 --> 00:06:11,788
+Türü tahtaya yazıyordum normalde.
+
+26
+00:06:15,636 --> 00:06:31,456
+Şimdi, şu an burada hiç kaydırma yok. Bakın. Ha var, pardon. Ama, bakayım. Başlık ve kenar. Tamam, peki. Şu anki kaydırma seçeneği şey gösteriyor. Evet, yine Word'de aynı yapıyor.
+
+27
+00:06:34,196 --> 00:06:39,936
+Ama nasıl bakın, şurada sözcük kaydır seçenekleri var. Pencereye kaydır.
+
+28
+00:06:40,403 --> 00:07:06,783
+Pencredi sırayacak şekilde hizah alıyor. Kaydırma yok desem, hiç kaydırma yapmıyor. Veyahut da cetvele kaydır desem, sarfa marjı neyse o marjı uyacak şekilde kaydırma yapıyor. Şey de olabilirdi, belki otomatik hypernization, yani alt sıra geçmeyi kesme işareti kullanmak istiyorum belki de. O yüzden deyim ki, tamamlayan, tamamlayan demek istiyorum.
+
+29
+00:07:08,192 --> 00:07:11,632
+Tamamlanamayan diyelim.
+
+30
+00:07:12,632 --> 00:07:18,052
+Tamamlanamayan kurtarmadı bu algoritmada. Şuraları çok fazla boşluk bıraktı.
+
+31
+00:07:18,052 --> 00:07:20,052
+O yüzden ben mesela...
+
+32
+00:07:20,339 --> 00:07:40,939
+Gördüğüm WordPad'in öyle bir yetenliği olsaydı, şuraya şu kesmeyi otomatik kendisi koyardı. Gördüğüm bir yetenliği vardı, bir yerlerde şimdi bulamayacağım. Ama şimdi bu bir algoritma, yani uygun yerden track koymak, heceleyerek bir algoritma, jetware kaydırma bir algoritma, pencereye kaydırma diğer bir algoritma, hiç kaydırma yapmamak, o da bir algoritma.
+
+33
+00:07:42,836 --> 00:07:49,875
+İstediğimi çalışma anında değiştirebilmek istiyorum. Bunu nasıl yapacağız? Örneğimizde işte strateji kalıbıyla yapacağız.
+
+34
+00:07:57,939 --> 00:08:09,580
+Bunu nasıl yapabileceğiz? Bizim uygulamamızda, metin düzenli metodunda aynı zamanda sayfaya da bölmeleme işlemini de yapmak istiyoruz.
+
+35
+00:08:09,580 --> 00:08:22,340
+Şimdi, ilkemiz neydi? Neyin değişiklerini bul ve onu sarmala. Madem şimdi burada satır bölümleme algoritmamız değişiyor, o zaman satır bölmeleme algoritmasını öncelikle bir sarmalayalım.
+
+36
+00:08:23,283 --> 00:08:36,703
+Bu bir soyut üst sınıf olabileceği gibi somut da olabilir. Bir default implementasyon, default algoritma. Ama daha çok bunun interfez olması bile yeterlidir bu kalıp için.
+
+37
+00:08:38,803 --> 00:09:06,663
+Eğer tabii ki, yok şimdi çok öyle olmayacak. Bir anlatım şimdi, ayrıntına girelim. İnterfeyiz olabilir ama eğer ilgili algoritma bu uygulamanın metniyle ilgili ya da başka başka bir verilerine ulaşmak isteyecekse o zaman o ilgili bölmeleyiciden uygulamaya doğru da link olmalıdır. O yüzden öyle bir şey olacaksa tabii bunun soyut üst sınıfı olması gerekiyor satın bölmeleminin. Soyut üst sınıf üzerinden gidelim.
+
+38
+00:09:06,803 --> 00:09:28,884
+Bizim bir soyut ve sınıfımız olur ve bir default bölmeleme algoritmamız da olur bu bölmeleme metodunun içerisinde. Ama şart değil. Bu soyut metot bile olabilir. Önemli olan bizim çeşitli soğut bölümleyici sınıflar oluşturmamız ve her birinin de kendi algoritmasına sahip olması. Kesmeli bölümleyici, ilgili heceyden kesme koyup alt satıra geçiliyor.
+
+39
+00:09:29,203 --> 00:09:54,483
+Kelimeden bölümleyici, araya boşluklar koyaraktan her bir kelimeyi bir satırda tutmaya çalışıyor. Sınırdan bölümleyici ise başka bir şekilde çalışıyor. Çeşitli bölme ve algoritmaları. Bunlardan her biri farklı bir algoritma gerçekliyor ama hepsini bölmele adlı metot altında gerçekliyor. Bizim uygulamamıza da bir bölmeleyici üye alanı atıyoruz.
+
+40
+00:09:56,211 --> 00:10:07,251
+O metin düzenleme işleri yaparken aynı zamanda işte bu sahip olduğu, ilişkide olduğu bölmeleyici üzerinden bölmeleme işlemini yaptırıyor. Mesele bu.
+
+41
+00:10:07,860 --> 00:10:19,820
+Ben o anda seçeneklerden kesmeli bölmeleyici seçersem, uygulamamda bölmeleyici üyesine bir kesmeli bölümleyici nesnesi verilecek.
+
+42
+00:10:19,820 --> 00:10:30,180
+Yok, kelimeden bölümleme şeklinde ayar yaptıysam uygulamamda, bir kelimeden bölümleyici nesnesi atanacak bölümleyici nesnesi yerine. Böyle bir yapı.
+
+43
+00:10:32,279 --> 00:10:33,820
+Kalıp olarak düşündüğümüzde...
+
+44
+00:10:34,451 --> 00:10:59,612
+Bizim bir kontekstimiz var. Yapılacak çeşitli işler var ama bu işlerden bir tanesi farklı algoritmalarda yapılabilir. İşte o algoritmanın bir arayüzünü bir soyuç sınıf veya interfezde tanımlıyoruz. Metot imzası ya da imzaları şeklinde. Bu tek bir metot olmayabilir. Bizden fazla metot olabilir.
+
+45
+00:11:00,148 --> 00:11:20,448
+Eğer algoritmanın birden fazla adını varsa, bunların belli bir sırada çalıştırılması falan gerekiyorsa ve bu çalıştırma sırasını konteksten müdahale etmemiz gerekiyorsa o zaman burada birden fazla metot olması yerinde olacak. Ama kontekstin tek işi ilgili strateji nesinesini al kardeşim. İlgili veriydi bu, sen bu işi yap.
+
+46
+00:11:21,139 --> 00:11:34,519
+Bu anda sonucu döndük. Şeklinde bir talebi olacaksa sadece. O zaman tek bir tane şey olması yeterli. Metot olması yeterli. Bu bir soyut sınıf olacak ve normalde algoritma interfazı da soyut metotu olacak.
+
+47
+00:11:36,115 --> 00:11:42,316
+Eğer bir default algoritm söz konusu olabilecekse, o zaman isterseniz bu somut bir metot da olabilir.
+
+48
+00:11:42,756 --> 00:11:46,935
+Alt sınıflarda override edince kendi algoritmalarını sağlayabilir.
+
+49
+00:11:46,935 --> 00:11:53,256
+Alt sınıflar ve altta aşağıda da işte çeşitli strateji gerçeklemeleri de yer almakta.
+
+50
+00:11:54,336 --> 00:12:01,415
+Biz bu kontekste hangi somut stratejiyi atarsak, onun algoritması ile iş yapılıyor olacak. Olay bu.
+
+51
+00:12:06,419 --> 00:12:16,240
+Şimdi, strateji ve konteks nesneleri seçilen algoritmayı gerçeklemek için etkileşimde bulunacak. İster istemez.
+
+52
+00:12:16,240 --> 00:12:24,800
+Çünkü, acaba o anda hangi algoritmanın en uygun olduğuna konteks mi karar verecek? Yoksa strateji mi karar verecek?
+
+53
+00:12:26,196 --> 00:12:40,556
+Eğer strateji karar verecekse, o zaman buraya belki de bir private metotla hangi algoritmanın uygun olduğuna karar verilmesi işlemlerini kodlayabilirsiniz.
+
+54
+00:12:40,556 --> 00:12:46,276
+Ama bu işi en iyi kontekst yapar diyorsanız, o iş orada da yapılabilir.
+
+55
+00:12:47,443 --> 00:12:59,744
+İşte ilgili analizi yapar. Onun sonucunda duruma göre şu ilgili konkret strateji gerçekleştirmelerinden birini ilklendirir ve onun üstünden işlemi yapar.
+
+56
+00:12:59,744 --> 00:13:04,744
+Ama burada kararın stratejide verilmesi...
+
+57
+00:13:04,864 --> 00:13:15,864
+Bu konteksti daha bir somut gerçeklemeden daha bağımsız yapıyor. O yüzden ya en iyi algoritmanın ne olduğuna o anda strateji...
+
+58
+00:13:17,875 --> 00:13:32,596
+Soyut üst sınıfı karar verebilir. Eklenecek somut bir metotla. Veya bu konteksti kullanan bir başka nesne varsa, o nesne kontekste der ki, sen al şu somut stratejiyle çalış da diyebilir.
+
+59
+00:13:37,011 --> 00:13:45,011
+Bu konteks nesnesini kullanacak istekçiler konteks nesnesine bir konkret stratejini sağlayabilir. Az önce ikinci söylediğim bu.
+
+60
+00:13:45,011 --> 00:13:58,655
+Ne zaman uygulayabiliriz bu kalıbı? Bir algoritmanın değişik çeşitlemelerine ihtiyaç duyuyorsak kullanabiliriz. İstekçilerin kullanılacak algoritmaların gerçeklenmesini bilmemesi gerektiği hallerde kullanabiliriz.
+
+61
+00:13:58,655 --> 00:14:09,795
+Tabii ki. Çünkü bu kontekst nihayetinde strateji diyecek ki, işi yap. O kadar. Ayrıntılar somut sınıflarda gerçekleniyor olacak.
+
+62
+00:14:11,635 --> 00:14:36,175
+Ve şu da olabilir. Sadece davranışlarımda değişiklik gösteren birçok ilişkili sınıf bulunduğunda aslında bu şey yani kalıtımın genel yapısına yönelik bir ifade zaten. Aslında sınıf kalıba özellikle kalıpta yönelik bir cümle değil. Çok beğenmedim bu cümleyi. Yazarken ne düşündüğümü bulamıyorum. O yüzden şunu çıkartayım şimdilik.
+
+63
+00:14:39,283 --> 00:15:02,183
+Strateji önemli esneklik sağlayan bir kalıp. Fakat bir iki zayıf yün de var. O da şu. İstekçiler değişik stratejilerin varlığından haberdar olmak zorunda kalabilir. Kalır demek istemiyorum. Kalabilir. Birisi illa mecbur olacak. Yani eğer kontekst kendisi karar verecekse değişik algoritmalar mümkün.
+
+64
+00:15:02,707 --> 00:15:27,387
+O yüzden ben şu durumda şu strateji yok, öbür durumda bu stratejiyi kullanacağım diye eğer konteks karar verecekse o zaman onun bütün bu konkret strateji nesneleriyle ilişkide olması gerekecek. Ama şu da olabilir. Şimdi bu stratejinin yapacağı işe ihtiyaç duyan başka kontekslerimiz de olabilir. Başka konteks sınıflarımız da olabilir.
+
+65
+00:15:27,679 --> 00:15:44,719
+Diyelim ki bir konteks sınıfı A ve B stratejileriyle çalışabilecekken, C onun için gerekli değilken bir başka konteks ise C ve D stratejilerine ihtiyaç duyabilecektir. O zaman o da onlarla ilişkilerdir.
+
+66
+00:15:45,844 --> 00:15:56,324
+Böyle yaparsak boş yere belli bir kontekste ihtiyaç duymadığı stratejilerle eşleştirilmelisiniz. En azından o esnekliği sağlamış oluyor.
+
+67
+00:15:58,704 --> 00:16:02,984
+Ve tabii bunların çalışma anında değiştirilebilmesi esnekliğini sağlıyor.
+
+68
+00:16:04,500 --> 00:16:20,480
+Eğer şu ikinci söylediğim şey, yani konteks nesnesini kullanacak istekçiler, konteks nesnesini sağlıyorsa ilgili strateji, o zaman tamamen şeffaf çalışıyor zaten algoritma kontekste. Problem olmuyor.
+
+69
+00:16:20,480 --> 00:16:29,379
+Fakat şu durumda özellikle dikkat etmemiz lazım. Kontekstin açtığı durum bilgisinin tümüne her stratejinin ihtiyacı olmayabilir.
+
+70
+00:16:32,403 --> 00:16:57,364
+Şunu demek istiyorum. Bu örnekten çok soluk bir şey söylemeyeceğim ama kod örneğimden belki söyleyebilirim. Bazı algoritmalar daha fazla veriye ihtiyaç duyuyor olabilir. Bazı algoritmalar daha az veriye ihtiyaç duyuyor olabilir. Ama şu algoritma intersearch üzerinden kontekst bütün veriyi ilgili somut strateji aktarmak zorunda.
+
+71
+00:16:57,779 --> 00:17:03,079
+Bunlardan bir tanesinin ihtiyaç olmadığı parametreleri de alacaktır belki. Problem değil.
+
+72
+00:17:06,228 --> 00:17:34,228
+Gerçekten problem değil. Özellikle aynı bellek alanında çalışan nesneler söz konusuysa hiç problem değil. Ama eğer bunlar biraz servis ise diyelim ki, veyahut da her bir nesneye bir dağıtılmış bir sistemde ayrı ayrı bilgisayarların bellek uzaylarında duruyorsa, o zaman işte kontekstin belirli bir stratejiye ihtiyaç duymadığı bazı verileri de aktarması bir ek yük olarak değerlendirilir.
+
+73
+00:17:34,228 --> 00:17:37,347
+Onu da düşünmek lazım.
+
+74
+00:17:41,567 --> 00:17:45,447
+Evet, temel olarak bu kalıbın yapısı.
+
+75
+00:17:46,748 --> 00:17:49,427
+Şimdi burada bir şey dikkatinizi çekmek istiyorum özellikle.
+
+76
+00:17:50,288 --> 00:17:56,628
+Üst tarafta Builder kalıbının sınıf şemasını görüyorsunuz.
+
+77
+00:17:57,188 --> 00:18:00,688
+Alt tarafta da Strateji kalıbının sınıf şemasını görüyorsunuz.
+
+78
+00:18:01,971 --> 00:18:08,971
+Temel olarak arada bir fark var mı sınıf şeması olarak baktığınızda? Yok.
+
+79
+00:18:10,372 --> 00:18:15,451
+Şunu somut olarak düşünmeyin demiştim. Soyut sınıf veya interfez olarak düşünün demiştim.
+
+80
+00:18:15,751 --> 00:18:20,652
+Ama algoritmanın eğer bir default gerçekleşenmesi söz konusuysa o zaman somut sınıfta olabilirdi demiştim.
+
+81
+00:18:21,572 --> 00:18:29,231
+Bir tek ufak fark var. Onun dışında her ikisinde yönelik şemalarına baktığınızda temel olarak yapı aynı.
+
+82
+00:18:29,683 --> 00:18:52,463
+O zaman fark ne? Fark yapılan iş ve yapılan işin seçim biçimi. Builder'da amaç, karmaşık bir varlığı değişik parçalarını oluştururken hangi parçanın nasıl oluşturulacağını esnek biçimde karar verilebilmesi.
+
+83
+00:18:53,107 --> 00:19:05,427
+O yüzden Builder. Ama stratejideki olay, iş tamamen mesela diyelim ki kesme bölüyle ilgili tarafından yapılacak. Diğerleri belirli bir anda hiç aktif bile olmayacak.
+
+84
+00:19:09,387 --> 00:19:11,288
+Builder'da pek öyle değil.
+
+85
+00:19:16,692 --> 00:19:40,683
+Fark sadece yapılan iş ve ufak nüans farkları. Ayrıca şunu da söyleyeyim. Builder kalıbında sürekli olarak client'ımız Builder'a şimdi şunu yap, şimdi bunu yap, şimdi şunu yap diye müdahale ediyor. Daha sık müdahale ediyor. Ama strateji kalıbında ilgili kontekst...
+
+86
+00:19:40,819 --> 00:20:00,000
+Strateji gerçeklemesini veriyor. Bu kardeşim, al bunu gerekli, işi yap şeklinde bir kere söylüyor. Bir daha da aradan çekiliyor. En kabası, en ayrıntılısı ne yapabilir? Artık bu algoritma bana uygun değil, öbür algoritma uygun değil. Farklı bir artık somut algoritmaya...
+
+87
+00:20:00,000 --> 00:20:25,619
+Verilerini gönder, aktarır. Hepsi bu. Ve bu geçişler biraz sık olabilir ama çok da sık olmayacaktır. Halbuki builder dese sürekli sen şimdi bana şunu yap, sen şimdi bana bunu yap diye aynı somut builder'a sürekli metot çağrılığında bulunuyor. Stratejide öyle bir durum söz konusu değil. Adık fark bu.
+
+88
+00:20:26,355 --> 00:20:32,115
+Kod olarak baktığınızda, amaç olarak baktığınızda da zaten amaçların farklı olduğunu konuştuk.
+
+89
+00:20:36,596 --> 00:20:50,895
+Bu başka kalıplar içerisinde de böyle bir durum söz konusu. Yani sınıf şeması açısından baktığınızda yapıları biridir aynı olabilir. Fakat fark aynıntıda gizlidir.
+
+90
+00:20:52,019 --> 00:21:00,819
+Ayrıca şu Builder örneğimizde, işte Builder parçalarını nasıl oluşturup bileceğini, birleştireceğini biliyor ve denetliyor.
+
+91
+00:21:00,819 --> 00:21:12,819
+Strateji kalıbında ise üstteki soyut strateji sınıfının işlerini nasıl, somut algoritma gerçeklemelerinin bu işi nasıl yaptığını bilmesine gerek yoktur.
+
+92
+00:21:16,243 --> 00:21:18,084
+Bu şekilde aradaki farklar var.
+
+93
+00:21:19,783 --> 00:21:22,043
+Gelelim örnek problemimize.
+
+94
+00:21:22,864 --> 00:21:28,003
+Örnek problemimizde uluslararası tasar hitap eden bir kişisel finans programı yazıyoruz.
+
+95
+00:21:29,584 --> 00:21:36,783
+Ve işte edindiğimiz çeşitli gelirlere karşılık, gelir kalemlerine karşılık vergimizin hesaplanması gerekiyor.
+
+96
+00:21:37,299 --> 00:21:44,980
+Özellikle finans ve maliye alanlarında çalışan veya o tür firmalarda görev almış olan arkadaşlarım bilirler.
+
+97
+00:21:45,559 --> 00:21:53,839
+Diğişik ülkelerin vergilendirme kuralları birbirine göre çok çok çok farklı. Baştan sona farklı ama.
+
+98
+00:21:53,839 --> 00:22:04,099
+Tek ortak kısım çeşitli gelir kalemlerinin olması ki farklı ülkelerin vergilendirme ya da vergilendirmez.
+
+99
+00:22:05,172 --> 00:22:26,152
+Peki biz şimdi ne yapacağız? İlk etapta üç pazara hitap etmeyi düşünüyoruz. Türkiye, United States ve European Union. Bu ülkelere hitap etmeye karar veriyoruz. Task Controller'ı bizim uygulamamız olacak.
+
+100
+00:22:30,420 --> 00:22:52,539
+Sadece ayarlarına girerekten, şimdi artık bu ülkeyle göre işlem yap gibisinden ayarını yapabilmemiz lazım. Bu nedenle bir kod alanı ekleriz buna. Ki o da bir enum olur. Çok rahatlıkla. Türkiye mi, Amerika mı, Avrupa mı şeklinde. Onun için bir setter metodumuz da olur.
+
+101
+00:22:57,236 --> 00:23:10,876
+Hangi ülkenin kodunu almışsa bizim uygulamamız, ona göre ilgili case'i işletir. Bu ülke kodlarından hiçbiri yoksa da bir default hesap da yapabiliyormuş diyelim ki.
+
+102
+00:23:10,876 --> 00:23:18,696
+Şimdi bu kod örneğinde sadece arada değişen fark vergi oranları.
+
+103
+00:23:19,251 --> 00:23:43,511
+Başka bir şey fark etmiyor. O yüzden sırf bu kod için tabii ki böyle bir enuma ihtiyaç yok da, en tax rate gibi bir üye alan yeterli olacaktı. Ama tekrarlıyorum, çözeceğimiz problem daha kalmaşık. Yani burada basitçe şurada yazdığım gibi bir satırlık bir komut değil. Çok farklılaşacak içerik olarak. Öyle olduğunu düşünün. O zaman ancak o zaman bu örnek anlamlı olabilir.
+
+104
+00:23:44,884 --> 00:24:12,024
+Ben de bu örneği Design Patterns Explained kitabından almışım. İlk çözümüm bu. Ama şunu tekrar hatırlatıyorum. Kendinizi Switchcase kullanırken görüyorsanız bilin ki çok biçimliliğin uygun biçimli bir kullanımın ihtiyacınız var demektir. O yüzden daha iyi bir çözümle gelemez miyiz? Hemen strateji kalıbını kullanarak ilerlemek istiyorum.
+
+105
+00:24:12,564 --> 00:24:29,544
+Şimdi benim çünkü bu şey içerisinde aslında kişisel finans programı içerisinde sadece tek işlem vergi hesaplama olmayacak haliyle. Ne bileyim, gelir planlama olur, raporlama olur, sonraki aylara harcama tahmini olur. Ne bileyim, bir doğru özellik ekleyebilirsiniz.
+
+106
+00:24:30,451 --> 00:24:39,832
+O yüzden benim strateji kalıbıyla bu neler çok değişecekse raporlama değişmez herhalde ama vergilendirme değişecek.
+
+107
+00:24:39,832 --> 00:24:50,152
+Bu yüzden benim uygulamama strateji kalıbı üzerinden aktaracağım çeşitli hesaplama sınıfları hazırlıyorum.
+
+108
+00:24:50,731 --> 00:24:54,971
+Türkiye kuralları, Alfa Birliği kuralları ve Amerika Birleşik Devletleri kuralları gibi.
+
+109
+00:24:57,076 --> 00:25:06,456
+Ben esas işi finans uygulamamda bu vergi kuralı interfaz üzerinden yaptırıyorum.
+
+110
+00:25:07,092 --> 00:25:32,751
+İşte income'um neymişse onu parametre olarak verip ondan sonra hadi bana işte vergiyi hesapla diyorum. Normalde burada farklı gelir kalemleri falan filan olacaktır. Tek bir tane al benim kazancım toplam kazancım demeyecek haliyle daha karmaşık bir gerçek dünya arasında. Ama dediğim gibi o kuralların ayrıntılara girip de konuyu sunandırmamak için daha basit örnek üzerinden gidiyoruz. Olay budur.
+
+111
+00:25:35,092 --> 00:26:02,811
+Bu konudan neye girmişsen, o ayar sonucunda ilgili tax rule somut gerçeklemesi atanmış olur tax üyesine ve onun text amount metodu çağırarak tax control içerisinde ilgili atanmış olan somut vergi kuralı nesnesinin ilgili metodu çalıştırarak işler yürütülür. Bu kadar basit.
+
+112
+00:26:06,579 --> 00:26:19,579
+Koda baktığımızda da eski kod ile yeni kodun karşılaştırmasını görüyoruz. Şu text amount metodunun normalde çok uzun ve karmaşık olacağını hatırlatırım.
+
+113
+00:26:19,579 --> 00:26:30,140
+Hal öyle olunca evvelki halinde her bir kez ile diyelim ki en az 100 satırlık kod içerecek.
+
+114
+00:26:30,932 --> 00:26:51,331
+Dört yüz satırdan daha fazla tek bir tane devasa sınıf yerine sadece yüz on beş yüz yirmi satırlık üç ya da dört. Yani default implementasyon varsa onu da sayıyorum. Çünkü madem burada default saymışız.
+
+115
+00:26:51,827 --> 00:27:16,127
+Çok da güzel değil defaultu Alec Bank ama neyse. Madem default saymışız, o zaman ben bir default rules sınıfı da oluşturmak zorunda kalacağım haliyle. Ve nihayetinde yine yaklaşık satılsayım çok avantaj fark etmeyecek, avantaj sağlamayacak. Ama burada önemli olan bir işin bir yerde yapılması.
+
+116
+00:27:19,028 --> 00:27:44,428
+İyiniz tasarımın tanımı neydi? Hangi düzeyde parçalara ayrılabiliyorsa problemimiz, tasarımımız da o düzeyde parçalara ayrılabilmeli. Madem benim burada tasarım farklı ülkelerin farklı kuralları var düzeyinde parçalara ayrılabiliyor, o zaman ben o farklı ülkelerin kurallarını kendi içerisinde birer parça olarak tanımlayabilmeliyim. Strateji kalıbıyla bunu da sağlamış oluyorum.
+
+117
+00:27:48,019 --> 00:28:12,900
+Evet, bunu söylemiştim. Ben az açıklayayım. Diğer ülkelerin default, bu arada alay sadece vergi hesabı değilse, yine farklı ülkelerin farklı finans işlemlerinde farklılaşmalar ulaşacaksa eğer, o zaman ilk tercihim, farklı soru için strateji kalıbını kurulduğum gibi, o diğer farklı işlemler için de farklı strateji kalıpları kurabilirim.
+
+118
+00:28:16,692 --> 00:28:40,031
+Mergiden düşme diyeceğim. O da olmayacak. Diyelim ki herkesin bir bireysel emeklilik fonuna zorunlu katkıda bulunması gerekiyor. Bunun minimumu söz konusu ve gelirine göre değişen bir minimumu söz konusu. Onun hesaplanmasına yönelik bir işlevli olacaksa benim uygulamamı. O zaman ben yeni bir interfest daha eklerim. O da işte savings rule olur mesela.
+
+119
+00:28:44,692 --> 00:29:07,392
+Bilmem ne rule sınıflarında kodlar. O iş içinde bir daha bir strateji kalıbı uygularım. Bir alternatif, aynı strateji içerisinde yapılacak bütün farklı olayları eklemektir. Yani buraya bir de işte ne koyarım? İşte calculate minimum savings metodu da koyarım.
+
+120
+00:29:07,955 --> 00:29:35,075
+O zaman tabii bunun adını tek soru demem çok uygun olmaz da. Mali kural falan gibi bir isim vermem daha uygun olacaktır. Ama şimdi ben hepsini bir ağır skret stratejide toplamak yerine farklı işleri, farklı ihtiyaçları, farklı strateji kalıbı kurulumlarında bir araya getirmeyi tercih ederim.
+
+121
+00:29:37,236 --> 00:30:02,216
+Bu uyumu da azaltır öbür türlüsü. Bir strateji farklı sorumluluklarla ilgili işleri yüklenmiş. En az iki farklı sorumluluğu var. Onun yerine her biri kendi işiyle odaklanan, kendi işiyle sorumlu iki ayrı strateji gerçeklemesi sistemin geneline bakıldığında uyumu da yükseltecektir.
+
+122
+00:30:06,804 --> 00:30:33,264
+Şimdi bunun için bir örnek, metod çalıştırmayacağım. Bir şeyler hesaplatıp edip çok fazla karmaşık değildir çünkü. Fakat özellikle söylemek istediğim bir şey var. Singleton kalıbı ile birlikte kullanılabilir. Başka bir deyişle bizim her bir strateji gerçeklemimiz biraz Singleton olmaya adaydır aslında. Öyle olmak zorunda değildir.
+
+123
+00:30:33,599 --> 00:30:54,879
+Ama adaydır. Çünkü sistemin genelinde Türkiye ile ilgili kurallar hep aynı, değişmeyecek. Yani bu değişmeyecek kurallar için bizden fazla örneğin TV Rus nesnesi oluşturmaya gerek yok. Bu bir singleton olabilir çok rahatlıkla. Ama dediğim gibi şartta değil.
+
+124
+00:30:58,996 --> 00:31:26,195
+Singleton olarak yaparsanız da, Singleton'ı da hatırlıyorsunuz. Bir tane instance oluyordu, static instance oluyordu. Her isteğine o instance'ı gönderiyordunuz. Yani instance ilklendirmemişse de önce ilklendirip ondan sonra gönderiyordunuz şeklinde. Yani çok da fazla karmaşıklaştırmıyor Singleton kalıbının da eklenmesi bu stratejiyle yaptığımız çözümü. Ama gerekli de değil. Siz birisiniz nasıl işinize geliyorsa.
+
+125
+00:31:26,996 --> 00:31:33,935
+Yaparsınız diyorum. Buraya kadar sorusu olan arkadaşım varsa konuşalım. Yoksa sonraki kalıba geçeceğim.
+
+126
+00:31:35,796 --> 00:31:39,536
+Evet, bu arada E-Ratings'de 60-12 kişiye çıkmışız. Ben H3.
+
+127
+00:31:50,804 --> 00:32:02,903
+Nihayetinde strateji kalıbı, kalıtımın getirdiği çok biçimlilik esnekliğinden yararlanan, tam olarak onun üzerine kurulmuş bir kalıp. Ama şimdi önemli gerçekleme ayrıntı aranan onlardan konuştuk.
+
+128
+00:32:02,903 --> 00:32:15,203
+Gelelim şimdi State'e. State de stratejiye sınıf şaması açısından birebir benzeyen bir kalıp. Ama aradaki nüansları konuşacağız.
+
+129
+00:32:16,788 --> 00:32:29,008
+State kalıbındaki amaç şu. Bir nesnenin iç durumu, yani durum bilgisi, yani state diye tabir ettiğimiz kalan, bu değişince davranışının da değişmesini istiyoruz.
+
+130
+00:32:29,971 --> 00:32:57,692
+Bu davranış değişikliğinin ama büyük ölçekli olmasını istiyoruz. Yani Nesne'nin önceki çalışma biçimini tamamen değiştirmesi şeklinde bir değişiklikten bahsediyoruz. Yoksa bir üye alanının bir değerini değiştirip veya bir parametrenin değerini değiştirip artık farklı sonuçta öndürüyor şeklinde değil. Tamamen değişiyor. Çok farklı farklı işler yapıyor. Örnek olarak bir TCP haberleşmesi kodlaması yapıyoruz. Bir TCP bağlantısı.
+
+131
+00:32:57,971 --> 00:33:04,372
+Belli bir anda ya established'tir, ya listening durumundadır ya da closed durumundadır.
+
+132
+00:33:04,612 --> 00:33:05,432
+Üç durumdan biri.
+
+133
+00:33:05,432 --> 00:33:12,751
+Ve bu parlantı bu hallerden hangisinde ise ona göre çok farklı biçimlerde çalışacaktır.
+
+134
+00:33:12,951 --> 00:33:14,892
+Çok farklı şekilde işler yürütecektir.
+
+135
+00:33:15,692 --> 00:33:21,632
+Bunu kodlamak için, hani switch case ile bir şeyler yaparız herbette ama benzerini gördük işte.
+
+136
+00:33:21,731 --> 00:33:24,231
+Sakıncalığından bahsettik, sürekli de bahsediyoruz.
+
+137
+00:33:25,907 --> 00:33:37,347
+Şöyle bir şey öneriyoruz. İlkemiz neydi? Neyin değiştiğini bu? Onu salmadan. Şimdi değişen şey TCP bağlantısı durumları. O zaman biz de bu durumları salmaylayalım.
+
+138
+00:33:38,147 --> 00:33:52,887
+Ki ayrıca parça bütün ilişkisini de kullanmaya biraz teşvik ediyor bizi. Bizim TCP soketimiz ve soket durumunun simgelen ayrı bir nesne. İki farklı nesne. Bu da bir.
+
+139
+00:33:53,279 --> 00:34:09,279
+Parça bütün ilişkisi o demektir. Fakat şimdi madem bu bağlantı durumuna göre çok farklı çalışacak, yani bir bağlantı o an açık durumdayken...
+
+140
+00:34:09,940 --> 00:34:20,880
+Tekrar aç metodu çağrıldığında farklı çalışacak. Açık durumdayken close metodu geldiğinde farklı çalışacak. Kapalı iken close metodu geldiğinde daha da farklı çalışacak.
+
+141
+00:34:21,380 --> 00:34:29,140
+Ecloraj isteği geldiğinde open iken farklı şekilde davranacak. Closed iken farklı biçimde davranacak. Farklı biçimlerde davranacak.
+
+142
+00:34:33,427 --> 00:34:39,907
+Üç ayrı sınıf oluşturuyorum. Ama bunları ortak durum arayüzünde topluyorum.
+
+143
+00:34:39,907 --> 00:34:55,367
+Ve ilgili TCP Connection'ın her bir iş Open Cross Acknowledge işlemlerini aslında ilgili state arayüzü üzerinden ilgili hangi state isek o state nesnesine yaptırıyor.
+
+144
+00:34:56,724 --> 00:35:21,404
+Şimdi aradaki fark ne? Strateji ile aradaki fark şu. Bir connection kendisinin o anda hangi durumda olduğunu bilir. Hangi durumdan hangi duruma geçmesi gerektiğini bilir. Ve kendisini o ilgili duruma geçirir. Ve ondan sonra o ilgili durum nesnesi üzerinden iş yaptırır. Aradaki fark bu.
+
+145
+00:35:21,907 --> 00:35:31,447
+Ve bu durum geçişleri daha sık olacaktır. Çünkü bir bağlantı anlık olarak durumu değiştirilebilir. Stratejik de böyle değil.
+
+146
+00:35:31,987 --> 00:35:57,667
+Durum geçişleri, daha doğrusu strateji geçişleri daha seyrek. Hatta ploddan bir çalışması boyunca süresince belki hiç değişmeyebilir bile. Bir kere değişebilir. Bu tamamen ilgili strateji gerçeklemesinin verisinin ne kadar değişken ve bu veri değişkenliğinin algoritmayı değiştirme olasılığının ne kadar yüksek olduğuna bakar. Genelde bu olasılık çok fazla değildir.
+
+147
+00:35:59,987 --> 00:36:11,127
+Bir durumdan bir başka duruma geçiş olabilir ve bu durum geçişleri daha sıktır. Ve durum geçişlerinde mutlaka ilgili state'e sahip olan varlık yürütecektir. Aradaki fark da budur.
+
+148
+00:36:14,164 --> 00:36:37,824
+Kalıp olarak baktığımızda bir kontekstimiz var. Bunda bir state olması söz konusu. Birden fazla aslında olası durumlar söz konusu olacak. Ve herhangi bir metot çağrısı olduğunda o metot çağrısı ilgili duruma iletilecek. Hangi durumdaysa o şekilde daha farklı olarak çalışacak bizim kontekstimiz.
+
+149
+00:36:41,396 --> 00:36:59,235
+Evet, söylediğim şeyler yazıyor. Tekrar görüyorum, durum değişikliğinden çok büyük oranda kontekst sorumludur. Genellikle kontekst sorumludur. Aksi taktirde belki bunu state'e de kodlayabiliriz.
+
+150
+00:37:02,804 --> 00:37:16,904
+Şimdi bu state, ben şu an şu durumdayım ama ne oldu da öbür duruma geçeceğim? O ne olduğunun yanıtını illaki konteksten istemek zorunda kalacaktır. Ve çok fazla şey isteyebilecektir konteksten.
+
+151
+00:37:29,012 --> 00:37:42,412
+O iş oraya kodlanmalıdır. Madem durum geçişiyle ilgili bilginin çoğunluğu kontekste, o zaman bu kararı state'de vermek doğru olmaz. Kontekste vermek doğru olur. Sebebi bu.
+
+152
+00:37:46,771 --> 00:37:56,211
+Biz state kalıbını bir nesnenin çalışma şeklinin çalışma anında o nesnenin durum bilgisine göre değişebileceği yerlerde kullanıyoruz.
+
+153
+00:37:56,871 --> 00:38:05,912
+Ve işte bir nesnenin o anki durumuna bağlı kalma şekli uzun olan çok parçalı karar verme işlemleri yürütülecek edecekse o gibi durumlarda kullanıyoruz.
+
+154
+00:38:07,971 --> 00:38:13,131
+UMRS'ın fışılamaların aynı state ve stratejinin ama işte aradaki nüanslar şunlar.
+
+155
+00:38:13,684 --> 00:38:35,324
+State'de kontekstteki durum değiştikçe kontekst kendi konkret state'ini seçecektir. Ve state geçişleri açıkça yapılır. Yani kontekst içerisinde yazdığımız komutlarla yapılır genelde. Bazen konkret state'ler içinde de yapılabilir bu iş ama genelde konteksten yapılır ve durum geçişleri çok daha sıktır.
+
+156
+00:38:35,324 --> 00:38:41,164
+Strateji kalıbında ise bir stratejiden farklı stratejiye geçişi nispeten seyrektir.
+
+157
+00:38:41,715 --> 00:39:08,075
+Ve aynı zamanda strateji nesnelerimiz bu kontekst hakkında sadece işini yapmaya gerekecek kadarını sorgular. Kendilerine ne parametreler verilmişse de hatta öyle çalışırlar. Fakat state, ilgili kontekstteki durumu daha yakından takip eder ve daha fazla geniş bir durum bilgisi üzerinden hareket eder. Aradaki farklar bunlardır.
+
+158
+00:39:09,715 --> 00:39:22,395
+Zaten stratejinin anlamı daha uzun vadeli yapılan plandır. Taktik ve strateji. İki kaldan var. Strateji bizim genel oyun planımızdır.
+
+159
+00:39:23,188 --> 00:39:38,027
+Taktik ise ana göre değişebilecek fakat nihayetinde bu bizim stratejimizin hedefleri doğrultusunda, onlara ulaşmak doğrultusunda kullanabileceğimiz anlık olarak, daha sık olarak değişen taktiklerdir.
+
+160
+00:39:39,668 --> 00:40:06,807
+Maça çıkıyoruz. Eğer stratejimiz savunma ağırlıklı olacaksa, o zaman savunma odaklı taktiklerle çalışırız. Rakibin durumuna göre taktiğimizi değiştiririz. Ama koskoca stratejimizi, oyun planımızı değiştireceksek, o zaman belki devre arasında artık savunma şeklinde, savunma stratejilerine geçiyoruz. Onunla ilgili taktik durumunu değerlendirip hareket edin derler.
+
+161
+00:40:07,860 --> 00:40:17,039
+O yüzden stratejinin daha geniş, uzun vadeli olduğunu düşünürseniz, strateji ile strateji arasındaki farkı daha rahat hatırlarsınız diyorum.
+
+162
+00:40:20,628 --> 00:40:34,608
+Örnek problemimiz ise, bunu Applied Java Patterns'tan aldım. Çok da beğendiğim bir örnek değil ama ne bileyim, daha farklı bir örnek arayamadım. Ondan devam etmek istiyorum.
+
+163
+00:40:35,155 --> 00:40:49,775
+Şimdi bizim bir kişisel bilgi yöneticisi yazılımız var. Personal Information için. Şimdi bunda arkadaşlarımızın iletişim bilgilerini falan tutuyoruz. Böyle bir yazılımız olsun.
+
+164
+00:40:50,228 --> 00:41:11,128
+Şimdi bu yazılımdaki kayıtlarımızın belirli bir anda iki durumdan birinde olabilir. Temiz ve kirli. Dirty ve clean. Eğer bir kayıtta değişiklik yapmış, bir arkadaşımızın bir ulaşım bilgilerinden birinde bir değişiklik yaptık. Ama daha henüz bu değişiklikleri diyelim ki veri tablına kaybetmedik.
+
+165
+00:41:12,244 --> 00:41:20,124
+İşte bu durumda o veri kirli durumdadır. Ama kayıt ettikten sonra temiz konumuna geçer.
+
+166
+00:41:20,124 --> 00:41:39,004
+Veyahut da işte biz şeyde kod yazarken, bakalım bu arada bunda özel bir örneği yok diye hatırlıyorum ama işte şeyde, işte diyelim ki biz herhangi bir ceo dosyasında
+
+167
+00:41:39,699 --> 00:42:04,319
+Ufak bir değişiklik yaptığımız zaman, bakın şurada yıldız ile bir değişiklik yapıldı. Bu değişiklikler hala kaydedilmedi demek istiyor bize. Yani bu Java dosyasının durumu şu an 4'i. Kaydedilmemiş. Clean değil. Ama save ettim de o zaman clean durumuna geçiyor. Aynı mantıkla bizim PIM uygulamamızda çalışacak.
+
+168
+00:42:05,076 --> 00:42:12,596
+O zaman bu da demek oluyor ki bizim PIM uygulamamızın bir state'i olacaktır.
+
+169
+00:42:12,596 --> 00:42:17,815
+Ve state üzerinden DUN geçişleri yapılacaktır.
+
+170
+00:42:18,655 --> 00:42:23,596
+Şimdi bu örnekte aslında...
+
+171
+00:42:27,764 --> 00:42:53,423
+Bizim client çeşitli durumların varlığından haberdardı demiştik stratejide. Daha yüksek oranda haberdardı. O yüzden görüyoruz ki bizim uygulamamız bir clean durumu üye alanına da sahip, bir dirty üye alanına da sahip. Ama bunlar public olmakla birlikte final ve statik de olacaklar, olmalıdırlar. Yoksa public yapmazdık.
+
+172
+00:42:54,164 --> 00:43:02,024
+Ve uygulamanın şu anki durumu ise bir state üye alanı olarak, private üye alanı olarak tutulmakta.
+
+173
+00:43:03,344 --> 00:43:06,164
+State için get a setter metodumuz var.
+
+174
+00:43:06,804 --> 00:43:14,964
+Şimdi diyelim ki bu state'de state'in durum bilgisinin değişmesine sebep olabilecek işlemler edit ve save işlemleridir.
+
+175
+00:43:16,404 --> 00:43:21,744
+Eğer bir kaydımız şu an clean state durumunda ise
+
+176
+00:43:22,675 --> 00:43:38,668
+O zaman, daha doğrusu aslında kayıt bazında düşünülmüyor. Bütün kayıtlar için komple temiz veya kirli şeklinde düşünülüyor. Benim 100 tane arkadaşımın kayıt bilgileri var. Ama bunlardan birisinin veya 3 tanesinin...
+
+177
+00:43:38,900 --> 00:43:59,140
+Sayısı fark etmiyor. Durumunu değiştirdim ama kaydetmedim. Bilgisini değiştirdim, henüz kaydetmedim. Biri bile değişmiş olsa, kaydedilmemiş olsa sistemin geneli dörtü. Daha fazla sayıda kayıt içinde aynı durum söz konusu olsa sistemin durumu yine dörtü. Bu şekilde çalışıyor.
+
+178
+00:44:03,967 --> 00:44:26,467
+Artık Clean State'den Dirt State'e geçmem gerekecek. Bu kodumu yazacağım. State işleminin ardından da artık Clean State'de olma gerekecek şeklinde bir daha kod yazacağım. Dirt State'de ise pek bir kod yazmam gerekmemiş. Biraz da bu nedenle bu örneği çok beğenmiyorum ama neyse.
+
+179
+00:44:29,940 --> 00:44:41,840
+Önce bu soyut state'imize bakalım. Şimdi aslında bu save işleminin esas gövdesini...
+
+180
+00:44:41,840 --> 00:45:06,840
+Benim state sınıfına kodlamam yerinde olacaktır. Çünkü clean state'teyken save işlemiyle 4 state'teyken save işleminin arasındaki tek fark durum geçişi. Yoksa ilgili kayıtların işte yok, veritabanın aktarılması veya liste bir dosyaya yazılması aynı şekilde olacak. O yüzden save işlemini full metot olarak state sınıfında kodlamış oldum.
+
+181
+00:45:07,956 --> 00:45:21,795
+Edit işlemini ise aslında bunu belki şey olarak da bırakabilirdim. Soyut metot olarak bırakabilirdim. Ama isterseniz bırakmak durumunda değilsiniz. Buraya da alabilirsiniz.
+
+182
+00:45:23,936 --> 00:45:25,795
+Clean state'de ise...
+
+183
+00:45:26,708 --> 00:45:41,968
+Edit yapıldığı zaman artık ben kirli durumdayım diyecek. Ama tabii ki esas edit için yapılacak işlemleri söz konusu olarak buraya kodlamışsam eğer, o zaman şöyle demem gerekiyor.
+
+184
+00:45:41,968 --> 00:45:46,968
+Bu komutu verdikten sonra...
+
+185
+00:45:47,251 --> 00:45:55,691
+Örneğin edit işlemini de üst sınıfın yürütmesini sağlamam gerekiyor. Yoksa aslında edit işlemi yapılmamış olur.
+
+186
+00:45:55,691 --> 00:45:57,971
+O da aklıma geldi. Onu yazayım.
+
+187
+00:46:02,151 --> 00:46:11,351
+Örnekten çok memnun olmadığımdan çeşitli notlar aldım düzeltmeye önerik ama yine de hiçbiri çok da içme fazla silmemişti.
+
+188
+00:46:12,532 --> 00:46:29,612
+O yüzden şimdi bir edit işlemi isteği geldiği zaman madem üst sınıfta iş kodlanmış, öncelikle hemen durumunu 4 ye etsin. Ondan sonra super.edit işlemini yapsın.
+
+189
+00:46:29,612 --> 00:46:37,932
+Burada da state örneğime gelirsem eğer, şimdi clean state'teydim.
+
+190
+00:46:40,211 --> 00:46:47,251
+Benzahar Şakır'da süpür olmakta edit işleminin yürütülmesi gerekmekte madem öyle.
+
+191
+00:46:51,539 --> 00:47:16,180
+Madem gerekli işler burada yapılıyor, o zaman bunu unutmayalım. Ama eğer edit metodunu soyut bırakmışsak, o zaman aynı işi, benzer işi hem clean state'in edit metodunda hem de dirty state'in edit metodunda yapmamız iki kere kodlarımız gerekecekti. O yüzden onu uygun olmayacaktı gerçekten.
+
+192
+00:47:18,164 --> 00:47:32,804
+Clean State'deki durum bu. Sev iş istemeye geldiği zaman da, ha bakın burada süpada işi yaptırmayı hatırlamışım ama şurada atlamışım. Şimdi düzeltiyorum.
+
+193
+00:47:34,112 --> 00:47:51,672
+Sev isteği geldiği zaman da artık temiz duruma geçiyorum ve ondan sonra sev işlemini yapıyorum şeklinde yazmışım. Ama tabii ki eğer kalit etme işlemini sırasında bir şeyler ters giderse, dosyayı yazamazsa, edemezse, ne bileyim exception mı oluşuyoruz ya da işlem başarısızsa ona göre az.
+
+194
+00:48:02,483 --> 00:48:07,523
+State'i, Green'i almak da daha doğru olacaktır.
+
+195
+00:48:10,923 --> 00:48:13,604
+Bunu da şöyle yapalım.
+
+196
+00:48:17,104 --> 00:48:24,104
+Bu Green State'in koduna karşılık 4 State'in koduna baktığımızda hiçbir kod yok.
+
+197
+00:48:28,255 --> 00:48:44,776
+Üst sınıfıyla tamamen aynı. Sadece artık soyut değil somut bir sınıf. Bu açıdan baktığımızda bu gibi sınıflara aslında sadece markör sınıf ya da işaretleyici sınıf denir. Markör klas.
+
+198
+00:48:47,891 --> 00:49:15,891
+Bu işin arayüzlerde yapılmasına daha çok hoş karşılığınız. Kimileri bu işin sınıflarla yapılmasına pek hoş bakmaz. Yani bu şekilde Markle Class oluşturmaya pek sıcak bakmaz. Ama çok da bir sakınca değil. Fakat yine de işte şurada sırf basit bir Markle Class olması benim yine bu örneğin çok içime sinir.
+
+199
+00:49:22,708 --> 00:49:36,988
+Evet, şimdi bakalım. Pim Application'ımızda ise, Public Finance Statik, doğru hatırlamışım. Bunu da kodda görüyoruz. İki tane state imlaz. Ondan sonra şu anki ilk başta temiz state de başlıyor.
+
+200
+00:49:36,988 --> 00:49:46,347
+Ondan sonra state için get-il setter metodu var. Ve kendisinin aslında, onu da göstersem iyi olunmuş. Şurada gösterelim.
+
+201
+00:49:46,704 --> 00:50:07,164
+Pim Application'da, ha gerçi yazmamışım, edit işlemi olduğu olacağı zaman aslında state edit yaptıracak. Veyahut da işte bir save işlemi olduğu zaman ilgili state save işlemi yaptıracak. Onu da aslında açıkça belirtirsem daha yararlı olacak.
+
+202
+00:50:10,771 --> 00:50:21,112
+Pim Application'dayız. Buradayız. Tamam. State'e iş yaptırıldığını da göstermek yerinde olacaktır. Yapalım.
+
+203
+00:50:21,112 --> 00:50:37,311
+Pim Application. Public void. Mesela bir edit. Edit'e record iklemi geldi diyelim ki.
+
+204
+00:50:38,068 --> 00:50:43,427
+Ondan sonra aslında bunun için bir record sınıfı oluşturayım mı?
+
+205
+00:50:45,827 --> 00:50:51,427
+Oluşturayım. Biraz daha bütünlüğünü söylemek için.
+
+206
+00:50:57,108 --> 00:51:14,168
+Tabi, Class Record diyorum. Yani herhangi bir şey eklemeyeceğim. Çeşitli bilgiler olacak, yata-setter metotlar olacak, bir tür data sınıfı olacak. Ondan sonra bu kayıtlarda tabii ki diyelim ki bir listede tutulacak.
+
+207
+00:51:14,168 --> 00:51:20,728
+Diyelim ki, eğer indexleme söz konusuysa map yapısı kullanırsınız.
+
+208
+00:51:29,268 --> 00:51:29,668
+gibi.
+
+209
+00:51:32,307 --> 00:51:34,447
+Ben yüzünü de şurada vereyim madem öyle.
+
+210
+00:51:38,516 --> 00:51:39,235
+Unutmayalım.
+
+211
+00:51:39,775 --> 00:51:42,496
+Şey, daha o türlü eklemeyi unutmayalım.
+
+212
+00:51:42,655 --> 00:51:42,936
+O yüzden.
+
+213
+00:51:48,436 --> 00:51:50,436
+Aslında kendisine yaptırabilirdim ama neyse.
+
+214
+00:51:50,436 --> 00:51:55,436
+Şimdi int id diyeyim.
+
+215
+00:51:55,436 --> 00:51:57,436
+Tabii şimdi o da...
+
+216
+00:52:00,980 --> 00:52:02,059
+Haydi diyelim ki.
+
+217
+00:52:03,199 --> 00:52:04,000
+Buradan sonuç ama.
+
+218
+00:52:04,000 --> 00:52:08,519
+Ve burada mesela şeyde ne demişim? Clean State'de.
+
+219
+00:52:09,980 --> 00:52:16,239
+Parametresiz gelmiş gerçi aslında. O zaman ben de parametresiz aktarayım madem öyle. Bu şeylerle çok uğraşmayayım.
+
+220
+00:52:22,164 --> 00:52:24,384
+Buradan devam edebilirsin şeklinde.
+
+221
+00:52:29,556 --> 00:52:34,576
+Ben de şu an parametre fırsatı yaptırayım.
+
+222
+00:52:34,576 --> 00:52:46,576
+Diyelim ki statement.edit metodunu çağıracak. Ondan sonra save işlemi ise...
+
+223
+00:52:50,483 --> 00:52:59,643
+İşlemiyse, o da benzer şekilde yine current date'in fav metodunu çağıracak.
+
+224
+00:52:59,643 --> 00:53:03,163
+F, file f, serialize, bu s tamam peki.
+
+225
+00:53:03,903 --> 00:53:12,543
+File f, an, yazar, s diyeyim. Bunları iletsin.
+
+226
+00:53:14,963 --> 00:53:26,743
+Buna baktığa, ayın nokta, file. Bakın nasıl yazıyordu. Şu. Tamam peki.
+
+227
+00:53:30,708 --> 00:53:34,708
+Evet, ve bunun için de her dışında kendisi beimport ettim.
+
+228
+00:53:39,123 --> 00:53:43,123
+Ioday'da şimdi o nedense onu çıkartamadım.
+
+229
+00:53:43,123 --> 00:53:50,123
+Alt. Ioday.ios şeklinde söylüyorum. Evet şimdi olmuştur.
+
+230
+00:53:50,123 --> 00:53:57,003
+Şimdi burada ne diyor? Ioday. Tross Ioday.io.io deyip geçeceğim.
+
+231
+00:54:02,099 --> 00:54:07,099
+Bu şekilde söyleyebilirim.
+
+232
+00:54:10,099 --> 00:54:14,099
+Peki, soru sağlayan arkadaşım var mı? Varsa buyursun lütfen.
+
+233
+00:54:21,876 --> 00:54:39,636
+Yoksa, ben şimdi arayı vereyim. Ufak tefek kalan birkaç düzenleme işlemi arada yapalım. Onlar ekranın başında tutmaya gerek yok kesinlikle. 13.55'den 14.05'e kadar ara verdik diyelim.
+
+234
+00:54:42,756 --> 00:54:49,216
+O zaman tabii ben şimdi paylaşımımı ona göre açayım. Şu arayı yapsın sadece.
+
+235
+01:07:52,596 --> 01:08:04,996
+Evet arkadaşlar, 5 dakika geciktim. Özür dilerim. Elim dolmayan sebeplerle. Şimdi kaldığımız yerden devam edelim. İlk havapla. O yüzden ben yine tüm ekran paylaşayım.
+
+236
+01:08:08,788 --> 01:08:10,128
+Tamam, devam edelim.
+
+237
+01:08:18,547 --> 01:08:46,167
+Şimdi arkadaşlar, sırada template metot kalıbını göreceğiz. Template metot kalıbının amacı şu. Şimdi bir algoritmamız var. Bunun bazı adımlarının sabit olarak değiştirilemez şekilde belirleyip, bazılarının ayrıntılarını ise başkalarının belirleyebilmesine izin vermek. Başka bir değişle bu işi ertelemek.
+
+238
+01:08:46,739 --> 01:09:10,799
+Örneğimiz şu. Şimdi yine bir framework hazırlıyoruz. Farklı belge türleriyle çalışabilecek. Framework temel olarak belge ve uygulama diye iki tane genel sınıf verecek, sağlayacak. Bizim alıcımız bu. Bizim framework'ümüzü kullanan programcılar ise bu sınıflardan kalıtımda kendi sınıflarını üretecek. Böylelikle kendi yazılımını hazırlamış olacak.
+
+239
+01:09:14,292 --> 01:09:29,552
+Bazı işler farklı tür belgelerden ve farklı tür uygulamalardan bağımsız olarak ortak. Tabii ki biz framework'ımızı mümkün olduğu kadar geniş bir kitleye hitap etmesini istiyoruz.
+
+240
+01:09:29,552 --> 01:09:41,252
+Ve bunu kullanacak programcıların ne tür belgeler ve ne tür uygulamalar hazırlayacağını, kalıtım yoluyla oluşturup hazırlayacağını önceden bilemeyiz. Aklımıza, hayalimize gelmeyen şeyler onların aklına gelebilir.
+
+241
+01:09:42,676 --> 01:10:02,236
+Fakat bütün bu çeşitliliğe rağmen bazı işlerin bazı sırada yapılması kodlanabilir. Ve hatta bu işlerin bazı sırada kritik öneme sahip olabilir. Mutlaka yapılması, unutulmaması gereklidir. Belki de bizim framework'ımızın bazı gereksinimlerinden dolayı.
+
+242
+01:10:03,988 --> 01:10:23,148
+Madem unutulmaması gerek, acaba unutulmasını engelleyebilir miyiz bile? Veya bazı işlemlerinin, bazı işlem adımlarının kesinlikle değiştirilmemesi gerek. Bunlara dokunmayın ama geri kalan şekilde özelleştirme yapabilirsiniz diye servisimizi, hizmetimizi sunmak istiyoruz.
+
+243
+01:10:23,148 --> 01:10:27,608
+Remen kullanıcılarına. Sorunumuz bu. İhtiyacımız bu.
+
+244
+01:10:28,724 --> 01:10:39,244
+Buna yönelik olarak örneğimiz şu. Şimdi bu sınıf şemasında yine şu çizginin üstü bizim framework'ümüz.
+
+245
+01:10:39,244 --> 01:10:50,004
+İşte Documentary Application Sırıları biz oluşturuyoruz. Framework'un kullanıcıları ise bunlardan kalıtında kendi sınıflarını oluşturuyor. Uygulamalar yazıyor dedik.
+
+246
+01:10:50,771 --> 01:11:07,492
+Şimdi bir uygulama farklı tür dükümanlarla çalışacaktır haliyle ama bunlar ne kadar farklı olursa olsun kayıt edilmesi, açılması, kapanması ve gerçekten okuma işleminin yapılması gibi işlemler yapılmalıdır.
+
+247
+01:11:08,083 --> 01:11:30,064
+Aslında save, open ve close temel olarak mesela save ederken işte diske yazma komutları. Şimdi hangi tür belgeyle uğraşıyorsak uğraşalım bunu bir bind dizisi haline getirmek mümkün olabilecektir veya işte string dizisi haline getirmek mümkün olabilecektir.
+
+248
+01:11:36,083 --> 01:11:47,683
+Bir dosya ise farklı şekilde oluşturulacaktır. Bir binary dosya ise farklı şekilde oluşturulacaktır. Ama nihayetinde hepsi bir file pointer üstünden kaydedilecektir mesela.
+
+249
+01:11:54,771 --> 01:12:22,652
+Girmemiz lazım. Orada öyle bir dosya var mı yok mu ona bakılması lazım. O dosyayı açmaya yetki var mı ona bakılması lazım. Bunlar ilgili dosyanın türünden farklı, türünden bağımsız olarak yapılabilecek ortak şeyler. Ama nihayetinde o dosyaya bir file pointer'ını elde ettikten sonra o dosyanın satır satır veyahut da byte byte nasıl açılacağı bununla uygulamanın sorumluluğunda olacak.
+
+250
+01:12:22,771 --> 01:12:26,931
+Framework, burada neler yapılması gerektiğini önceden bilemez.
+
+251
+01:12:27,604 --> 01:12:51,384
+O yüzden esas o yapılacak işleri do read diye bir soyut metot üzerinden tanımlarız. Ki dokümanın somut alt sınıflar içerisinde bu do read metodunu gerçekleyerekten asıl okuma işleminin belge türüne göre farklılaşacak okuma işleminin nasıl yapılacağı işte o ilgili somut doküman sınıfında kodlanacaktır.
+
+252
+01:12:55,604 --> 01:13:03,123
+Bağımsız olarak yapılabilecek ortak işler ise bu dokument soyut sınıfında somut metotlar şeklinde kodlanacaktır.
+
+253
+01:13:05,024 --> 01:13:11,184
+Benzer şekilde bizim uygulamamız, mesela açık olan belgeler içerisinde bir yenisini ekleme.
+
+254
+01:13:11,583 --> 01:13:25,824
+İşlemini kendisi yapabilecektir. Nihayetinde bu bir dizi veya liste veya bir map yapısı şeklinde al dokümentü listeye ekle. Dokümentin türünden bağımsız işleri yapabilecektir, yapabilmelidir de.
+
+255
+01:13:26,363 --> 01:13:39,344
+Fakat ve işte ilgili open metodunu çaldıktan sonra gerçekten ilgili kontrolleri yapmak işini yürütebilir. Ama bir kere ilgili fine pointer aldıktan sonra
+
+256
+01:13:39,583 --> 01:13:53,824
+İlgili dokumentum oluşturulması için ne gibi işlemler gerekiyor onu bilemez. O işi sadece bir metot imzası olarak, soyut bir metot olarak tanınan bunun somut gerçeklemesini yapmayı ilgili somut uygulamaya bırakır.
+
+257
+01:13:54,163 --> 01:14:06,043
+Can Open Document da benzer şekilde. Burada işte acaba dosyanın formatı, istenen formatta mı gibi uygulamanın karar vermesi gereken bir işlemdir bu da.
+
+258
+01:14:07,583 --> 01:14:35,543
+Bu konuda, bugünkü derste konuyu örneklerden falan bahsetmiyorum. Eğer işte açabiliyorsa o zaman belki bir doküman açılmadan önce yapılması gereken bir ilk işlemler varsa onları yapmak için uygulamaya bir fırsat tanınması yerinde olabilir. O gibi bir iş içinde. About the Open Document metodu var. Soyut metot. Ama o işlemlerin işleri nasıl yapılacağına My Application, somut uygulama kararı verecektir. Bu About the Open Document metodunu gövdesi.
+
+259
+01:14:35,583 --> 01:14:37,663
+Mantık bu.
+
+260
+01:14:38,836 --> 01:14:45,655
+Öncelikle framework uygulamasının Open Document metoduna baktığımızda bu somut metoddu. Kodunu görebiliriz.
+
+261
+01:14:46,275 --> 01:14:53,115
+Önce bakalım mesela. Acaba gerçekten ilgili dokümanı açabilmeye muktedir mi uygulama?
+
+262
+01:14:53,655 --> 01:15:02,716
+Bunu somut uygulama bilecektir. O yüzden işte soyut metod üzerinden ilgili somutma application'ın CanOpen Document metodu çalışacaktır.
+
+263
+01:15:02,716 --> 01:15:06,816
+Eğer açamıyorsa o zaman açım-açım yapılmayacaktır.
+
+264
+01:15:06,836 --> 01:15:08,300
+Bu örneğe de geri dönecekti.
+
+265
+01:15:08,435 --> 01:15:29,775
+Ondan sonra dokümanın oluşturulması için de yine uygulama bu işi esas yapabilecektir. Fakat bir kere o dokümanı oluşturduktan sonra ilgili doğuçlu listesine eklenmek için işlemler yürütülecektir uygulama tarafından. Kısmen uygulama tarafından, bir kısmı da somut uygulama tarafından.
+
+266
+01:15:29,775 --> 01:15:36,435
+İşte liste ekliyor, ondan sonra açmak üzereyim fırsatı.
+
+267
+01:15:36,435 --> 01:15:44,095
+Atını tanıyor somut uygulamaya. Ondan sonra dosyayı açıp okuma işlemini yapıyor şeklinde bir çalışma biçimi.
+
+268
+01:15:45,175 --> 01:15:50,695
+Özetlersem, her tür dökümant illa bir şekilde açılacak, open edilecek.
+
+269
+01:15:50,695 --> 01:15:59,055
+Bu open etme işlemi sırasında bazı adımların bu sırada bir adım sırasında yürütülmesi gerekiyor.
+
+270
+01:15:59,435 --> 01:16:02,695
+Önce dosya açılır mı açılır mı bakılır. Açılabiliyorsa...
+
+271
+01:16:04,275 --> 01:16:24,796
+İşlemler yürütülecektir. Açılamıyorsa devam edilmemelidir. Sonra doküman oluşturulmalıdır. Sonra bu doküman belgelerin arasına eklenmelidir. Açılmadan önce yapılması gereken ilk işlemler olabilir. Varsa bunlar yapılmalıdır. Ondan sonra doküman açılıp okuma işlemi yapılmalıdır şeklinde bir adım listemiz var. Bu adım listemizin bu sırada yürütülmesi lazım.
+
+272
+01:16:32,275 --> 01:16:47,735
+Farklı tür dökümanlarla çalışacak, farklı tür somut dökümanlarla çalışacak, farklı somut uygulamalar için farklı şekillerde yapılması gerekecektir. Onların yapılması için gerekli izni veriyoruz alt sınıflara. Ama diğer işlemlerin mutlaka bu sırada yapılması gerek.
+
+273
+01:16:48,756 --> 01:17:03,996
+O yüzden durum bu. Hele ki aslında madem öyle şu add document, open document metotlarını da aslında final olarak tanımlamak gerekir ki my application bunları overwrite edip kafasına göre davranamasın. Onu da önemli bir ayrıntı olarak söyleyeyim.
+
+274
+01:17:04,500 --> 01:17:20,420
+Tabii şimdi orada C-Sentax var. C-Sentax'ın da final nasıl belirtiliyor bilemiyorum. O yüzden böyle kalsın ama Java örneğimde bunun final olması gerektiğini söyleyeceğim. Unutmuştum. Şimdi burada yazacağım.
+
+275
+01:17:27,444 --> 01:17:28,863
+Annotation'ı silelim.
+
+276
+01:17:32,404 --> 01:17:33,844
+Ondan sonra devam edelim.
+
+277
+01:17:36,064 --> 01:17:39,664
+Evet, bunu kalıp yapısını şeklinde özetlersek.
+
+278
+01:17:39,664 --> 01:17:45,404
+Şimdi bizim bir soyut üst sınıfımız var. Ondan türetilmiş somut alt sınıfımız olacak.
+
+279
+01:17:46,224 --> 01:17:49,184
+Soyut üst sınıfımız bize çablonu sunacak.
+
+280
+01:17:50,123 --> 01:17:52,664
+Template Method diye bir somut metot üzerinden.
+
+281
+01:17:53,747 --> 01:18:11,507
+Yapılması gereken adımları yapılması gereken şekilde kodlayacak ama aralarda değişecek ayrıntılar için somut alt sınıfa izin verecek. O metotlar da somut alt sınıfta kodlanacak ve bu şekilde işler yoluna girecek.
+
+282
+01:18:12,692 --> 01:18:29,912
+Evet, gerçekten ayrıntıları şeklinde yazmışım. Java'da final diyeceğiz. Bu arada şu alt sınıflara bırakılacak metod da Java'da mutlaka abstract olmalı ve C++ pure virgül olmalı.
+
+283
+01:18:29,912 --> 01:18:37,372
+Ve işte bu üst düzey metod da mutlaka final olmalıdır. Şeklinde ayrıntıyı da vermiş.
+
+284
+01:18:41,043 --> 01:18:50,623
+Ne zaman uygulabiliriz bu kalıbı? İşte bir algoritmanın değişmez kısımlarını bir kere kodlayıp değişebilecek kısımlarını ise alt sınıflar üzerinden gerçeklemek istediğinizde kullanabiliriz.
+
+285
+01:18:51,503 --> 01:18:59,363
+Alt sınıfların davranışlarının bir şekilde denetlenmesini istiyorsak bu kalıp üzerinden rahatlıkla gördüğünüz gibi yapabiliriz bu işi.
+
+286
+01:19:04,564 --> 01:19:31,684
+Şöyle söyleyeyim. Kalıtım hiyerarşisi içerisinde kardeş sınıflarda yapılan benzer işlemler vardır ama bu işlemler tamamen benzememektedir. Arada önemli farklı kısımlar bulunmaktadır. Bu yüzden o ilgili metodu doğrudan üst sınıfta tanımlayamıyoruz. Sadece işte soyut metot olarak bırakıp metot imzasını koyup alt sınıflarda bunu kodluyoruz.
+
+287
+01:19:32,564 --> 01:19:49,384
+Çünkü beş kardeş sınıftan üç tanesinde bir işi benzer şekilde yapıyoruz. Öbür ikisinde daha farklı yapıyoruz. Aynı işin farklı alt kalemlerinde farklı diğer birinci ve beşinci kardeşler benzer yapıyorken diğerlerini de farklı yapıyoruz.
+
+288
+01:19:49,384 --> 01:19:59,384
+Yani evet benzer yaptığımız işlemler var ama birinin tamamen de benzeri değil. O zaman işte bu template metodu kurarız. Sadece benzer kısımlarını...
+
+289
+01:20:00,000 --> 01:20:10,279
+Hepsinde aynı sıra, aynı şekilde yapılacak kısımlarını template metotta, üst soyut, üst sınıfta somut metot içerisine kodlarız.
+
+290
+01:20:10,279 --> 01:20:21,579
+Değişebilecek kısımlarını ise soyut metotlar olarak bırakıp kardeşlerle sadece bu farklılaşan soyut kısımların somutlaşmış hallerini veriyoruz.
+
+291
+01:20:21,939 --> 01:20:27,639
+Yani ileride şey konusunda da göreceğiz. Faktör eyleminin konusunda da göreceğiz.
+
+292
+01:20:28,000 --> 01:20:36,100
+Plan Method diyeceğiz mesela. Veyahut da şu ihtiyacı zaten yazdığımız kodlarda pratik olarak illa ki hissetmişizdir.
+
+293
+01:20:36,959 --> 01:20:44,659
+Üst sınıfa taşımak istiyoruz ama taşıyamıyoruz. Belki aklımıza gelirdi düşünsek bu template metota gidecek çözüm.
+
+294
+01:20:44,659 --> 01:20:51,399
+Ama şimdi bunun bir adını sanınıp biliyoruz ve bir daha böyle bir durumla karşılaştığınızda oturup uzun uzun düşünmek yerine
+
+295
+01:20:51,399 --> 01:20:55,459
+ha template metot vardı zaten bu işe yarıyor deyip direkt uygulayabiliriz.
+
+296
+01:20:58,868 --> 01:21:11,448
+Kanıt yapısı bu. Eğer soru yoksa örnek üzerinden devam edelim. Kanıdın uygulanma örneğini görelim. Yoksa varsa soru cevaplayalım.
+
+297
+01:21:18,484 --> 01:21:20,364
+Teknik Üniversitesi Bilgisayar Mühendisliği,
+
+298
+01:21:20,819 --> 01:21:34,099
+Örnekte, programımızda veri tabanından kayıtlar çekeceğiz. Selekt komutuyla yapacağız bunu aslında. Fakat biz istiyoruz ki programımız farklı veri taban yönetim sistemleri ile de çalışabilsin.
+
+299
+01:21:34,659 --> 01:21:46,920
+Farklı veri taban yönetim sistemleri demek oluyor ki, bir bağlantı kurma ve SQL komutlarında çeşitli biçimlendirme farklılıkları oluyor. Bunlarda farklılıklar olacak.
+
+300
+01:21:48,819 --> 01:21:52,619
+Kategoriler üzerinden yapıyorsak bu işi, o çok daha farklı.
+
+301
+01:21:53,203 --> 01:22:19,064
+Farklı olacak değişik veri tabanı yönetim sistemleri arasında. Ama bütün bu farklara rağmen aslında yapacağımız işin değişmeyen temel alanları var. Önce bir bağlantı komutunu biçimlendiriyoruz. Ondan sonra veri tabanına bu bağlantı komutunu gönderiyoruz. Ondan sonra bir kayıt seçme için ilgili selek komutunu biçimlendiriyoruz. Bu selek komutunu veri tabana gönderiyoruz. Veri taban da bize seçilen veri kümesini geri döndürüyor. Onun üstünde işlemlerimizi yapıyoruz.
+
+302
+01:22:19,520 --> 01:22:28,120
+Şimdi buradan farklı bir tabanlarında Connection String ve Selection String farklı şekilde yapılandırılacak.
+
+303
+01:22:28,787 --> 01:22:55,987
+Ama diyelim ki bağlantı komutu ortak biçimde gönderecek. Bu da değişebilir, fark etmez. Ama nihayetinde komutun gönderilmesi ortak olacaktır. Ve veri kümesinde geri dönmesi yine aynı şekilde olacaktır. Burada ortak adımlar var. Örneğimizde ortak adımlar 2, 4, 5. adımlar. Ama 1. ve 3. adımlar değişen adımlar olsun. Farklı veri tabu yönetim sistemlerine göre.
+
+304
+01:22:56,787 --> 01:23:23,987
+O zaman biz ne yapalım? Aslında biz strateji de kullanabilirdik mesela. Çünkü neden? Verinin erişim işlemleri farklılaşacak diye çıkıp veri tabunun tipine göre. Ben uygulamama veri tabunun erişim stratejisi koyarım. Ondan sonra Cema. Dedim ki eskler soruları mı çalışacak? Aslında eskler soruları strateji gerçeklenmesi, somut gerçeklenmesi onu verelim. Böyle çalışır.
+
+305
+01:23:24,787 --> 01:23:46,707
+O yüzden aslında bu problemi ana ihtiyaç olarak baktığımızda stratejide kullanabiliriz. Ama stek demiyoruz bakın. Çünkü burada durum bilgisinin değişmesiyle ilgili bir konu yok. Farklı erişim biçimleri var. O yüzden bu soruya stek, bu problemi stek dersek yanlış bir cevap vermiş oluruz.
+
+306
+01:23:47,188 --> 01:24:12,208
+Strateji dersek yakın cevap vermiş oluruz. Ama gereksinleri şu şekilde anlattığım zaman o zaman mecbur buna template metot diyeceğiz. En uygunu bu. Çünkü her ne kadar farklı veri tabanlı sistemleriyle çalışabileceksek de ortak olan adımlar da var. O zaman bu direkt template metot olarak yanıtlandırılması gereken bir örnek oluyor.
+
+307
+01:24:13,811 --> 01:24:17,791
+Ve bu örneği de Design Patterns Explained kitabından almışım.
+
+308
+01:24:20,351 --> 01:24:33,091
+Çözümümüz bu template metodu kullanmak üzere. Benim uygulamam query control olsun. Bu bir query template şablonu üzerinden çalışacak.
+
+309
+01:24:33,811 --> 01:24:36,791
+Do query metodu final.
+
+310
+01:24:37,363 --> 01:24:46,963
+İşte bizim template metodumuz bu olacak aslında. Bunun içerisinde işte bu beş tane adımdan connection string'i oluşturmak ve selection string'i oluşturmak.
+
+311
+01:24:46,963 --> 01:24:55,963
+Bununla soyut olarak alt sınıflara bırakılmış durumda. Ama rule query final ve soyut olaraktan...
+
+312
+01:24:57,844 --> 01:25:05,664
+Özür dilerim, Nesne Soyut'tur. Final olarak tanımlanmış, somut olarak ama final olarak tanımlanmış olacak.
+
+313
+01:25:06,863 --> 01:25:16,844
+İşte neydir? Birinci adım ve üçüncü adım Soyut metotlar üstünden çağrılacak ama iki, dört ve beşinci adımlar şu işte...
+
+314
+01:25:24,756 --> 01:25:43,456
+Tekrar söylüyorum. Scroll olunca odağımı kaybettim. 1-2-3-4-5, birinci ve üçüncü ayrıntılar değişen veri tabanına göre olacağı için ben aslında şu do query metodu içerisinde bu beş adımı kodluyor olacağım.
+
+315
+01:25:47,604 --> 01:26:02,704
+İlgili soyut metotlar üstünden çağırıyor olacağım ki bu template'imi gerçekleyen somut veritabanı ilişim gerçeklemeleri ilgili ince ayarı yapabilsin bu connect ve select işlemleri için.
+
+316
+01:26:03,924 --> 01:26:05,543
+Evet, şimdi doğru tutarlayabilirim.
+
+317
+01:26:09,011 --> 01:26:19,011
+Konu olarak baktığımızda, işte, Query Template'imiz, bu Query Metodu içerisinde, işte, ilgi yalnızca işte bir şey...
+
+318
+01:26:19,252 --> 01:26:45,872
+Konveksiyon sistemini biçimlendiriyor. Ondan sonra gerekli ikinci adımı yapıyor. Ondan sonra query'yi formatlanmasını sağlıyor. Sonra diğer, yani birinci, ikinci, üçüncü adımı yapılmasını sağlıyor. Ondan sonra dördüncü ve beşinci adımları kendisi yapıyor. Öyle devam ediyor. Ben ayrıntıları yazmadım haliyle. Örnekte olduğu gibi iskelet kodu yazarak geçtim.
+
+319
+01:26:49,619 --> 01:27:07,919
+Gerçeklemelerde ise format, connect ve format, serek metotları somut olarak kodlanıyor. Nasıl ilgili özel biçimlerden bir konutları vermesi gerekiyorsa veriliyor ve ilgili string döndürülüyor ki üst sınıfın template metodu işini yapabilsin. Olay budur.
+
+320
+01:27:11,539 --> 01:27:22,359
+Query Control programı ise herhangi bir işlem yapacağı zaman aslında bu query template üzerinden ilgili query'yi yaptırıyor.
+
+321
+01:27:27,180 --> 01:27:37,239
+Sorusu olan, hocam ben bu kalıbı şu şekilde kullandım, şu şekilde uyguladım diye değişik örnekler vermek isteyen arkadaşların varsa buyursunlar.
+
+322
+01:27:40,500 --> 01:27:43,640
+Anlamadığınız kafanıza tıklan yerler varsa sorabilirsiniz.
+
+323
+01:27:45,140 --> 01:27:46,300
+Asla buyurun.
+
+324
+01:28:04,851 --> 01:28:05,351
+Bu zaman.
+
+325
+01:28:08,291 --> 01:28:09,331
+Tıcak edelim.
+
+326
+01:28:10,391 --> 01:28:12,631
+Bugün ilerliyoruz.
+
+327
+01:28:17,076 --> 01:28:41,456
+Tamam, az bir kalıbımız kaldı. Peki, sıradaki kalıbımız visitor kalıbı. Amacımız şu, bizim bir parça bütün ilişkimiz var. Bu belki bir bitme şeklinde de olabilir, ağaç yapısının şeklinde de olabilir. O problem değil. Yani bizim aslında farklı birleşenlerde oluşan bir...
+
+328
+01:28:42,163 --> 01:28:58,843
+Bu nesne yapısının oluşturan elemanlar üzerinde yapılacak çeşitli işlemler tanımlamak istiyoruz.
+
+329
+01:28:58,843 --> 01:29:01,143
+Buradaki problemimiz şu.
+
+330
+01:29:04,819 --> 01:29:10,699
+Farklı türlerden bağımsızlar içeren sınıfların nesneleri arasında kurulmuş olabilir.
+
+331
+01:29:11,279 --> 01:29:20,000
+Ve biz üzerinde işlem yaptığımız elemanların sınıf yapılarını veya sınıf kodlarını sürekli değiştirmek istemiyoruz.
+
+332
+01:29:20,000 --> 01:29:31,079
+Ve bu sistemde de değişik zamanlarda farklı yeni işlemler de tanımlayabilmek istiyoruz.
+
+333
+01:29:32,372 --> 01:29:59,112
+Amacımız bu, sorunumuz da bu. Şimdi burada şöyle bir eleştiri getirebiliriz, son derece de haklı oluruz. Deriz ki, madem daha yapılacak işlemler var, demek ki eylemler ve sonunluklar tam belirlenmemiş, yani gereksinimler tam belirlenmemiş. O yüzden biz mevcut sınıf yapılarını değiştirerek daha farklı bir tasarım yapsak daha iyi olabilir deriz. Bu eleştirinizde de tamamen haklı olursunuz.
+
+334
+01:30:00,724 --> 01:30:16,344
+İşte diyelim ki belki zaman baskısı nedeniyle bir iş erken sunmak istiyoruz diyelim ki. Ve ileride geliştirilmeye açıklığı da bu şekilde sağlamak istiyoruz diyelim ki. Böyle olabilir.
+
+335
+01:30:17,964 --> 01:30:20,344
+Dörtlü çetenin verdiği örnek ise...
+
+336
+01:30:20,819 --> 01:30:41,300
+Şu, bir derleyici yazıyoruz. Kaynak kodu farklı türden tokenlara ayıracak. Fakat bu farklı türler derken farklı durumlar söz konusu olacak. Derleyici bütün bu farklı parçalar üstünde farklı farklı işlemler yapacak.
+
+337
+01:30:41,300 --> 01:30:45,779
+Mesela, şöyle demek istiyorum.
+
+338
+01:30:46,484 --> 01:31:07,624
+Bir düğümümüzde, herhangi bir düğümde bir kodu pars ettiğimiz zaman ortaya çıkan düğümlerde type çekim işlemi yapılabilir. Code generation işlemi yapılabilir. Bunu bir pretty printing, yani girintileme, kemer, kez açıverme falan gibi işlemler yapılabilir.
+
+339
+01:31:07,944 --> 01:31:13,844
+Fakat üstünde de ulaştığımız düğümlerin kimisi bir değişken atama referansıdır.
+
+340
+01:31:14,420 --> 01:31:34,520
+Bir DHK'ne referans verme düğümüdür. Kimisi bir atama düğümüdür. Kimisi bir aritmetik işlem düğümüdür. Mesela aritmetik işlem düğümünde tip checking işlemi yapılabilir. Generate code işlemi yapılabilir. Ama onun için pretty printing zorunlu görmüyoruz.
+
+341
+01:31:38,520 --> 01:31:41,260
+Örnek, mesela şöyle bir şey yapıyoruz.
+
+342
+01:31:42,420 --> 01:32:08,920
+Annotate edeyim. Diyelim ki işte x eşittir y artı z dedik diyelim ki. Böyle bir komut var. Peki şimdi böyle bir komutu parçalarına ayırdığımızda bir parse tree oluşturduğumuzda nasıl bir şey oluyor? Şöyle oluyor. Önce eşittir diyoruz.
+
+343
+01:32:09,811 --> 01:32:21,483
+Ondan sonra eşitliği oluyor. Sonra nedir? Eşitliğin bir tarafında X var, bir tarafında da Y artı Z var. Ki o yüzden...
+
+344
+01:32:21,524 --> 01:32:33,184
+Bir de toplama düğümümüz olacak. Ve orada da toplama düğümü de Y ve Z düğümleri ile işlem yapacak.
+
+345
+01:32:33,844 --> 01:32:38,924
+Şimdi bunlar aynı sırada olsun. Şunlara bir satıl şey vereyim ama şey kaçtı.
+
+346
+01:32:38,924 --> 01:32:45,104
+Peki. Şimdi şunu bir kapatayım.
+
+347
+01:32:48,851 --> 01:33:05,515
+Teknik Üniversitesi Bilgisayar Mühendisliği,
+
+348
+01:33:13,363 --> 01:33:30,804
+Diyelim ki işte x eşittir y artı z dedik. Böyle bir komut verdik. Bu demek oluyor ki benim bir öncelikle bir atama düğümüm var.
+
+349
+01:33:36,819 --> 01:33:48,299
+Ondan sonra öbür tarafında önce bir atama işlemi var. Onun da altında Y ve Z işlemleri var.
+
+350
+01:34:01,779 --> 01:34:16,579
+Aşağıya biraz aşağı taşımak istiyorum.
+
+351
+01:34:18,920 --> 01:34:22,680
+Evet, şimdi artık ağaç yapısı çizebilirim.
+
+352
+01:34:22,680 --> 01:34:25,880
+Daha veririmi çizebilirim. Şekil çizmek istiyorum.
+
+353
+01:34:28,404 --> 01:34:42,604
+Selek diye şekil çizmek istiyorum. Daha bir çizeyim. Evet, tamam. İçi boş. Tamam. Şimdi, Selek'imden çıkmak zorundayım. Tamam. Şekil çizmek istiyorum.
+
+354
+01:34:46,387 --> 01:34:52,807
+Yuvarlak çizmek istiyorum. Evet, tamam, tamam, tamam, tamam. İçilemiyorum şimdi. İçilemiyorum.
+
+355
+01:35:00,467 --> 01:35:04,307
+Yuvarlarda şurada annotate edeyim şimdi. Kafam karıştı.
+
+356
+01:35:13,811 --> 01:35:40,731
+Şöyle bir derleme ağacı oluşturdu. Yani şu ifade bilgisayarın belliğinde derleyici tarafında şu şekilde tokenlara ayrılıyor. Ve her bir token da bir ağaç yapısı şeklinde gösteriliyor. Atama düğümün var, değişken işaret düğümün var, aritmetik işlem düğümün var. Bu şekilde üç farklı düğümün var. Bunlar üstünde dolaşıp kod oluştururken, şimdi
+
+357
+01:35:41,555 --> 01:35:43,555
+Mesela Eşit'de
+
+358
+01:35:45,555 --> 01:35:54,055
+Type Check'in yapmam gerekmeyecek. Bu bir atama. Fakat X düğümünde bir Type Check'in yapmam gerekebilecek.
+
+359
+01:35:54,055 --> 01:36:06,455
+Çünkü mesela toplama işlemi. Toplama işleminde bir Type Check'in yapmam gerekmeyecek. Ama bunun çocuk düğümlerinde Type Check'in işlemi gerekecek.
+
+360
+01:36:06,855 --> 01:36:13,555
+Ki mesela eğer ikisi de tam sayıysa o zaman bunu toplama şeklinde çalış. Java örneği için söylüyoruz.
+
+361
+01:36:13,555 --> 01:36:13,915
+Önlüyorum.
+
+362
+01:36:14,155 --> 01:36:14,355
+Yok.
+
+363
+01:36:14,671 --> 01:36:26,731
+Bunlardan birisi string ise o zaman bu artı yerini, aritmetik toplama yerini, string birleştirme operatörünü yerine geçirir gibisinden işler yapmam gerekecek.
+
+364
+01:36:26,731 --> 01:36:42,671
+Yani benim derleyicim, uzun lafın kısası, bu birbiriyle ilişkili varlıklar arasında her birini dolaşıp, dolaşırken bazen belki ileri geri gitmek işlemlerini de yürütüp ve her bir düğümde farklı farklı işlemler yerine geçirir.
+
+365
+01:36:42,671 --> 01:36:51,911
+getirmek zorunda. Böyle bir epi nasıl kuralım? Ona yönelik bir örnek gelmiş oluyoruz.
+
+366
+01:36:51,911 --> 01:37:00,591
+Şunu da don't stay edeyim. Şuraya geri döneyim.
+
+367
+01:37:08,180 --> 01:37:11,180
+Böyle bir yapıda...
+
+368
+01:37:12,307 --> 01:37:40,307
+Böyle bir yapı kuruyorum. Gerçi her türlü düğümde her tür işlemin yapılmasının anlamı yok. O yüzden belki aslında assignment not'ta printed printing metodun olmasına hiç gerek yok. Ama biz madden bir kılık ilişkisi kurmuşuz. O zaman mecbur, boş gövdeli bile olsa o metodu kodlamamız gerekecek. Bu da visitor kalıbının bir başka eleştirilerinden birisi. O visitor kalıbına yapabileceğimiz eleştirilerden bir tanesi.
+
+369
+01:37:40,307 --> 01:37:40,567
+Tüm bu.
+
+370
+01:37:44,020 --> 01:38:05,659
+Fakat belki işte daha sonra derleyicimize farklı farklı özellikler ekleyeceksek, belki daha sonra o işlemin yapılması gerekebilecektir. Veyahut da şurada düşündüğümüz üç tane işlemden daha farklı dördüncü, beşinci işlemleri de belki de yapmak ihtiyacında görebileceğiz kendimizi.
+
+371
+01:38:10,195 --> 01:38:17,675
+Evet, örnek çözümümüzde derde parçaları tek tek ziyaret edecek ve her parça üzerinde sadece gerekli işlemleri yapacak.
+
+372
+01:38:17,675 --> 01:38:24,675
+Peki, fakat bu durumda...
+
+373
+01:38:29,076 --> 01:38:34,516
+Az önce yaptığım eleştiriyi biraz daha hafifletmek istiyorum.
+
+374
+01:38:36,396 --> 01:38:37,936
+Yok hayır öyle bağlayamayacağım.
+
+375
+01:38:40,936 --> 01:38:50,016
+Şimdi tamam derleyici parçaları tek tek ziyaret edecek. Her parça üstünde işlem yapacak ama sadece gerekli işlemleri yapacak.
+
+376
+01:38:50,016 --> 01:38:56,896
+Bu nedenle benim sadece tip denetimi yapmak için.
+
+377
+01:38:57,043 --> 01:39:24,583
+Sadece bu işlemlerden sorumlu ayrı bir ziyaretçim olabilir. Kod oluşturma amacıyla dolaşan ayrı bir ziyaretçim olabilir. Bunun illaki aynı anda yapılması da gerekmemektedir. Önce bir Type Checking Visitor oluşturur benim dergim. Bütün düğümleri dolaşır. Tip denetimi işlemlerini yapar. İlk bulduğu hatada da artık derlemez ama diğer hataları istemeye devam eder diyelim ki.
+
+378
+01:39:25,268 --> 01:39:36,248
+Her şekilin visitor da dolaştı. Hiçbir hata bulamadı. Bu sefer aynı kod üzerinde Code Generator'ın visitor kullanarak dolaşmaya başla. Biz de kod üretimini yapar.
+
+379
+01:39:42,323 --> 01:39:51,483
+Bu şekilde sırayla farklı farklı işler ama sadece gerekli işleri yapmak için tüm düğümleri dolaşır.
+
+380
+01:39:52,483 --> 01:39:59,963
+Böyle olunca en azından bir şeyde olduğu gibi, örneğin Builder.
+
+381
+01:40:00,000 --> 01:40:07,100
+Bu düğümü dolaşıyorum. O zaman şu işi yapayım. Yok şu an bu düğümü dolaşıyorum. O zaman bu işi yapayım.
+
+382
+01:40:07,100 --> 01:40:14,020
+Bu şekilde if, else, first veya switch case kullanımından uzaklaşmış oluruz en azından.
+
+383
+01:40:14,600 --> 01:40:20,100
+Şey bu. Olay bu. Peki tamam da bu ziyaretçi ilgili düğümleri nasıl ziyaret edecek?
+
+384
+01:40:20,779 --> 01:40:25,579
+Her düğümün de bir ziyaretçiyi kabul etme metodu olacak.
+
+385
+01:40:26,804 --> 01:40:39,180
+Ve diyelim ki işte bir assignment node da dolaşıyorsa şu an herhangi bir ziyaretçi. O zaman...
+
+386
+01:40:40,372 --> 01:41:03,392
+Bu not o ziyaretçiyi kabul edecek. Eğer o ziyaretçi, diyelim ki bir type checking ziyaretçiyse type checking işlemini yapıyor olacak. İlgili düğümün bilgilerini okuyarak. Yok eğer kod oluşturma ziyaretçisi ise o düğümün bilgilerini okuyarak kod oluşturma işlemini yapacak. Ama işte bu ilgili düğüm de o ziyaretçiyi kabul edecek.
+
+387
+01:41:08,372 --> 01:41:31,192
+Herhangi bir tür iş yapacak bir ziyaretçinin herhangi bir tür düğümle üzerinde iş yapabilmesini, öte yandan bakarsak herhangi bir tür düğümün herhangi bir tür ziyaretçiyi kabul ederek kendi üzerinde izin verdiği, şu üst arayüzde tanımladığı işlemlerin yapılmasına izin verecektir, sağlayabilecektir.
+
+388
+01:41:31,192 --> 01:41:32,732
+Olay bu.
+
+389
+01:41:34,771 --> 01:41:36,771
+Böylece işte sadece...
+
+390
+01:41:37,268 --> 01:41:54,387
+İlgili düğümlerde sadece ilgili işler yürütülür. Anlamsız işler yürütülmemiş olur. Ama fakat tabii ki bunu da yapabilmek için kadın bir zayıf yönü daha ortaya çıkıyor. Düğümler işte ziyaret için hangi metodunun bu düğüm için olduğunu bilmek zorunda.
+
+391
+01:42:05,268 --> 01:42:18,307
+Assignment Not olduğu için bu kendisinin Visit Assignment olarak ziyaret edilmesi gerektiğini şu şekilde kodla söylemek zorunda.
+
+392
+01:42:24,307 --> 01:42:26,067
+Başka ne diyebilirim?
+
+393
+01:42:30,771 --> 01:42:57,412
+Şimdi ister istemez, şurada bir node visitor'ın arayüzünde ne tür düğümlerin ziyaret edilmesi durumunda hangi metotların olması gerektiğini kodluyoruz. Böylece assignment node kendisini biz assignment metodunun tanımlı olduğunu bilmek zorunda ki kendisini o şekilde izin, kendisini ziyaret edilmesine o şekilde izin versin.
+
+394
+01:42:58,771 --> 01:43:07,972
+Arada bir ister istemez bir ekstra bağlaşım oluyor. Evet, peki. Başka ne diyebilirim bunun hakkında?
+
+395
+01:43:15,507 --> 01:43:31,288
+En azından tip bağımlılığı yok. Yani bir assignment mod herhangi bir tür visitor'ın kendisini ziyaret etmesine izin verebilmektedir. Öyle olsaydı, öbür tür olsaydı daha kötü olurdu. En azından hangi tür visitor'ı kendisini ziyaret ediyorsa etsin.
+
+396
+01:43:32,083 --> 01:43:55,283
+Ben assignment düğümüyüm kardeşim. O zaman ilgili beni assignment düğümü olarak ziyaret etmeni izin veriyorum anlamında visit assignment metodunu çağırıyor. Ama tabii ki bu metot imzası visitor'da tanımlı olduğu için işte o metodun yani kendisini izin edecek metodun bu olduğunu bilmek zorunda düğüm.
+
+397
+01:43:55,283 --> 01:44:00,083
+Yani düğümlere de biraz ek kod yazmak zorunda.
+
+398
+01:44:00,083 --> 01:44:15,083
+Ziyaretçilere de ek kod yazmak zorunda kalıyoruz. Ama zaten gereksinliğimizde kalın en başında çözülmemiz gereken problem fazla karmaşık olarak belirlendiğinden o zaman kurduğumuz altyapı da karmaşık oluyor.
+
+399
+01:44:15,503 --> 01:44:21,523
+Bütün bu kalmaşıklığı nedeniyle çok tercih ettiğim bir kalıp değil bu.
+
+400
+01:44:21,523 --> 01:44:29,804
+Vizit kalıbı. Ama kullanmamızın kaçınılmaz olduğu durumlarla da karşılaşabiliriz. O zaman kullanırız.
+
+401
+01:44:34,547 --> 01:44:59,147
+Evet, şey olarak baktığımızda, kılıp yapısı olarak önerdiğimizde bizim çeşitli elemanlarımız var. Bu elemanlar bir nesne yapısının parçaları olacak. Her birine bir soyut bir accept metodu tanımlamamız gerekiyor. Bu element tamamen bir interfej olabilir ve onun bir accept metodu, soyut metodu tanımlamış olabilir.
+
+402
+01:45:00,884 --> 01:45:14,003
+Bizim somut elemanlarımız ise bu accept metodunda belirli bir visitor'ı kabul etme metotlarını somut olarak sağlayacaktır.
+
+403
+01:45:14,003 --> 01:45:16,724
+Ve kodlarımız gerekiyor onların içerisinde.
+
+404
+01:45:17,264 --> 01:45:28,884
+Ve işte bu ilgili visitor'ın beni, ben şu tür bir elemanım, örneğin konkret element A'yım, beni konkret element A olarak ziyaret etmene izin veriyorum anlamında o ilgili metodumu çağırıyor.
+
+405
+01:45:28,884 --> 01:45:48,884
+O, bu işlemlerle ilgili sonuç elemanla ilgili işlemler tanımlanır. Fakat, visitor ara yüzünde...
+
+406
+01:45:50,292 --> 01:45:57,092
+Evet, pardon. O visit arayüzünde o farklı operasyonların da ne olduğunun kodlanmasına gerek kalmamaktadır.
+
+407
+01:45:57,092 --> 01:46:06,752
+İşte bu kalıbın kuvvetli yönü. Bu elemanı ziyaret ediyorum, onda şu işlemler yapılabilir. Yok, öbür tür elemanı ziyaret ediyorum, onda şu işlemler yapılabilir.
+
+408
+01:46:07,252 --> 01:46:18,092
+İşte bu yapıyı kurmuş oluyoruz ve örneğin herhangi bir konkret visitor bu konkret elementi ancak bir...
+
+409
+01:46:18,292 --> 01:46:40,092
+Konkret element A türünde yapılacak işlemler için ziyaret edebilir, farklı tür işlemler için ziyaret edemez. Olay bu. Ama zaten olayın geneline baktığımızda zaten biz Konkret element A'ya Operation B metodunu tanımlamazsak zaten olmayan bir metodu kimse çağıramaz ki yani. Onu da öyle söyleyeyim.
+
+410
+01:46:43,859 --> 01:47:09,199
+Elemanların ne olduğunu sözde açıklamaya çalışmıştım. Nesneye de aynı şeyler yazıyor. Ama nihayetinde bu kalıba ciddi eleştiriler getirebiliyoruz. Zayıf yönlerini öne çıkartabiliyoruz. Burada yeni konkret element türleri oluşturmak da zor oluyor. Çünkü yeni bir konkret element olacaksa eğer, o zaman her yeni konkret element için visitor arayüzüne ve somut visitor gerçeklemelerine yeni bir metot eklemek gerekecek.
+
+411
+01:47:11,859 --> 01:47:22,859
+Eğer bir konkret element D çıkacaksa o zaman neler yapmamız gerekiyor? Hem şuraya biz konkret element C metodu eklememiz gerekiyor. Hem de...
+
+412
+01:47:24,467 --> 01:47:46,747
+Daha evvel kendi halinde düzgün çalışan Concrete Visitor 1 ve Concrete Visitor 2'nin de bu nedenle kodlarını değiştirip, biz Concrete Element C metodunu eklememiz gerekiyor. Şu anda onların da bir değişiklik yapmamıza gerek olmasa bile iş mantığı nedeniyle ama derlemeden geçebilmek için o metotların eklenmesi gerekecek.
+
+413
+01:47:46,747 --> 01:47:52,467
+Ha belki o Concrete Visitor 1'in gerçekten o yeni Concrete Element C'yi vizit edip...
+
+414
+01:47:52,467 --> 01:48:02,507
+Yapması gereken şeyler de ortaya çıkmış olabilir. O zaman boş iş yapmamış oluruz. En azından gereksinimi karşılamak için iş yapmış oluruz ama gerekmeyebilirdi yani.
+
+415
+01:48:06,676 --> 01:48:08,176
+Tövbe, durunbo.
+
+416
+01:48:12,083 --> 01:48:28,543
+Şimdi anlayışımız çok kolay bir kalıp değil. O yüzden nesne düzeyinde işlemler nasıl yürütülüyor ona da bakalım. Şimdi bizim bir nesne yapımız var. Buna içerisinde işte konkret eleman A, B falan gibi çeşitli parçaları var.
+
+417
+01:48:39,956 --> 01:48:55,956
+O Vizitor'un ilgili ziyaret metodu çağırıyor. O tüp eleman A içerisinde yapılması anlamlı olan iş A operasyonu ise o zaman o Vizitor gidiyor, o elemant da o A işlemi yapıyor. Ondan sonra...
+
+418
+01:48:57,524 --> 01:49:10,524
+İş bitiyor. Buna bitiyor. Bunda bitiyor. Ondan sonra diyelim ki bu objek yapısında diğer B elemanını da ziyaret edilmesi gerekiyor. O zaman tamam aynı ziyaretçi ziyaret ediyor bütün düğümleri ama...
+
+419
+01:49:11,347 --> 01:49:39,347
+Şimdi ana yapı dedi ki düğme, sen al bu ziyareyi donlaşacaksan sen de bunu kabul et. Eleman da evet bunu kabul ediyor ama kendisinin bir konkret element B türünden olduğu için o ilgili ziyaret metodunun çağrılmasını istiyor. Aynı visitor da işte bu sefer bu konkret element B, B türünden olduğunda B operasyonunun yapılmasını sağlıyor. Ondan sonra ilgili geri dönüş de çalışıyor.
+
+420
+01:49:39,347 --> 01:49:59,568
+Olay bu şekilde. Şimdi bütün bunlar nested arkadaşlar. Dörtlü şete maalesef daha rahat bir sequence diagram gösterimi tercih etmiş. Eğer illaki geri dönüş oklarını da göstereceksek şöyle olsun. Ben geri dönüş oklarını çizeceğim.
+
+421
+01:50:00,000 --> 01:50:13,800
+Şimdi şu konkret element açılacak, A operasyonu çağırılacak, A operasyonu geri dönecek. Şimdi yeşil yaptıklarım şey, aslında kesikli çizgi olarak yapmam gereken geri dönüş oku, öyle düşünüyorum.
+
+422
+01:50:19,123 --> 01:50:45,503
+Biz konkret element olayı da, metodu da sonlanmış olacak. Ondan sonra o da şuradan bir geri dönüş sağlayacak. Maalesef çok fazla boşluk da vermemişler. O yüzden ben de çok arada fazla boşluk veremiyorum. Ondan sonra yani birinci eleman tamamen ziyaret edildikten sonra biz tarafından, ondan sonra ikinci elemanın, bir elemanını ziyaret etme işlemi başlanıyor.
+
+423
+01:50:47,123 --> 01:51:14,483
+Tamam, bu ziyaretçi beni ziyaret edebilir ama beni bir konkret element olarak ziyaret edebilir diyor. O da o metodun içerisinde B operasyonu çağırıyor konkret element için. Onun geri dönüşü yapılıyor. Daha sonra bunun ardından vizit işlemi de bitmiş oluyor. Vizit işlemi bittikten sonra da işte an object extraction, eğer bir C elementi de varsa onun da ziyaret edilmesi için ziyaretçiyi yönlendiriyor.
+
+424
+01:51:15,667 --> 01:51:17,767
+Böyle bir yapı söz konusu.
+
+425
+01:51:18,587 --> 01:51:23,887
+Şimdi, şu şamanın bile aslında anlaşılması pek kolay değil.
+
+426
+01:51:23,887 --> 01:51:30,887
+Ama en azından hangi metot çağrısı hangisinin içinde olmuş biraz daha iyi görselleştirebiliyoruz.
+
+427
+01:51:33,607 --> 01:51:34,767
+C bu. Durum bu.
+
+428
+01:51:36,127 --> 01:51:38,267
+Özellikle siz bu kalıbı ne zaman kullanabiliriz?
+
+429
+01:51:40,020 --> 01:51:57,860
+Değişen arayüzülere sahip nesnelerden oluşan bir yapımız var. İşte A operasyonu, B operasyonu falan gibi. Bunların hepsini dolaşıp uygun operasyonun yapılması gerektiği durumlarda bu metodu kullanabiliriz. Ve önemli bir ve bu nesne yapısındaki türler pek sık değişmeyecek.
+
+430
+01:51:57,860 --> 01:52:07,860
+Çünkü dedik ya, yeni bir konkret element türü geldiğinde bu kalıbın ona da uyarlanması için yapılması gereken ek iş çok fazla. Halbuki tasarım kalıpları...
+
+431
+01:52:08,020 --> 01:52:21,600
+Mühendisliği mümkün olduğu kadar az Angarya ile değişikliklerin karşılanabilmesini yönlendiren çözümlerdir. O yüzden buradaki V koşulu önemli bir V koşulu oluyor.
+
+432
+01:52:24,100 --> 01:52:27,880
+Evet, şimdi de Annotation'ını temizleyeyim.
+
+433
+01:52:37,395 --> 01:53:01,875
+Örneğimizi yapacağız ama saat 14.54 olmuş. İsterseniz bir aramızı verip örneği öyle yapalım. Ama şimdi bir plan yapalım önce. Daha net bir karar vermek için. Önce bu nedenle ana ders malzemesimizde şu kalıp listemize bir bakalım.
+
+434
+01:53:03,123 --> 01:53:13,143
+Ve visitor'dan sonra mediator'ımız var. Başka da bir kalıbımız kalmıyor. Ama uygulama haftalarımıza bakarsak, şimdi 3 aralıktayız.
+
+435
+01:53:13,143 --> 01:53:29,323
+Şimdi şey için, code smear refactoring için en azından şu 17 aralık ve 31 aralığı kullanmamız gerekiyor. Fakat 31 aralıkta kaç kişi gelir de ders yaparız bilemiyorum.
+
+436
+01:53:30,323 --> 01:53:57,483
+O yüzden benim önerim 10 dakikalarımızı verelim. 10 dakikanın ardından bu visitor kalıbının örneğini yapalım. Sonra son kalıbımız olan Mediator'ı da görür. Ondan sonra tasarım kalıpları işlerini bitirmiş oluruz ki 10 ve 17 Aralık'ta bu CodeSmart ve Refactoring konusunu daha rahat rahat işleriz diye düşünüyorum.
+
+437
+01:53:57,908 --> 01:54:11,768
+O yüzden şimdi 10 dakika adımını veriyorum. Yani demek ki 14.55 ile 15.05 arasında aramızı verelim. Ondan sonraki ders saatimizde de tasarım kalıplarını kapatalım diyorum.
+
+438
+01:54:11,768 --> 01:54:13,768
+10 dakika adım.
+
+439
+02:04:38,387 --> 02:04:39,448
+Bakışlayabiliriz.
+
+440
+02:04:43,123 --> 02:04:44,863
+Dað þökum við kross.
+
+441
+02:04:49,011 --> 02:04:51,011
+Tick, şu an.
+
+442
+02:04:56,467 --> 02:05:14,847
+Ana ekran paylaşımındayım. Evet, tamam. Ana ekran paylaşımındayız. Peki. O zaman kaldığımız yerden devam edelim. Visit'ın örneğini göreceğiz. Visit'ın örneği üstünde dolaşırken de kalıbın gerçekleşme ayrıntılarını daha rahat görebiliriz.
+
+443
+02:05:20,659 --> 02:05:24,760
+Biraz daha anlaşılabilirlerini iyileştirecektir diye düşünüyorum.
+
+444
+02:05:25,939 --> 02:05:30,399
+Şimdi farklı çözüm yollarım varmış. Peki tamam, problem değil.
+
+445
+02:05:31,000 --> 02:05:34,399
+Gerekirse bir daha saatince bile konuşuyoruz çünkü bir tek Mediator kaldı.
+
+446
+02:05:34,399 --> 02:05:40,840
+Aftaya gerekirse sadece Mediator yapıp oradan kod simeneye devam edebiliriz. Problem olmaz.
+
+447
+02:05:42,300 --> 02:05:45,979
+Peki, şimdi bir proje yönetim yazılımı hazırlıyoruz.
+
+448
+02:05:47,507 --> 02:06:09,507
+Tabii ki çok ayrıntılı bir şey yazmayacağız. Temel varlıklarımız şundan olacak. Bir proje hiyerarşimiz olacak. Projede tanımlı görevlerimiz olabilecek. Task. Fakat bazı görevler tamamlanabilmesi için belki başka görevlere bağlı olabilir. Dependent Task olacak orada. Bir de herhangi bir görevin değil de...
+
+449
+02:06:09,716 --> 02:06:23,536
+Proje genelinde düşündüğümüzde, projenin ara çıktıları veya sonucu olarak üretilebilecek herhangi bir çıktı. Kod, belge, ürün vs. olabilir. İlla bilgisayar projesi olarak düşünmeyelim.
+
+450
+02:06:24,296 --> 02:06:30,536
+Böyle bir program hazırlıyoruz. Örneği Adlerce Java Patterns'dan almışım.
+
+451
+02:06:34,579 --> 02:06:54,619
+Şimdi ilk olarak aklımıza mantıklı bir çözüm yapalım. Nesneye'nin genel ilkelerine uygun bir çözüm yapmaya çalışalım. Nihayetimle benim projem çeşitli itemlardan oluşacak. Bu itemler task olabilir, deliverable olabilir, dependent task olabilir.
+
+452
+02:06:54,619 --> 02:07:00,460
+Dependent task'ı atlamışım şimdi. Şabayı daha fazla karmaşıklaştırmamak için.
+
+453
+02:07:02,292 --> 02:07:23,912
+Ve işte proje içinde bir list içerisinde bu itemleri tutalım. Böylece ben herhangi bir task veya herhangi bir deliver projemi ekleyebilirim. Şeklinde yapıyı gördüğünüz üzere kurdum. Her bir itemin adı var, tanımı var. Ondan sonra construct var, getter, setter, metodları var.
+
+454
+02:07:29,716 --> 02:07:49,656
+Belki bu task alt görevlerde içeriyor olabilir. O yüzden onun da bir kendi array listi var. Alt task'lar içeriyorsa veya dışlama olarak değil, deliverable'lar da içerebilir belki.
+
+455
+02:07:56,431 --> 02:08:11,771
+Başka tasklar içerebilir. Hem de deliverabler içerebilir. Böyle bir yapı kurmaya müsait oluyor kalıtım hiyerarşisini bu şekilde modellarsa. Başka ne var? Tasktan devam edelim.
+
+456
+02:08:11,771 --> 02:08:21,971
+İşte bu alt taskları veya diğer ilişkide olduğu deliverabler neyse onların listesini komple döndüren getirmek var.
+
+457
+02:08:22,452 --> 02:08:44,952
+Bu task'a bir proje item, işte task'e de deliverer ya da tipe almakta, ekleme yerine ad metodu var. Bir item'ı silme metodu var. Ondan sonra her task'ın bir sahibi yapacak kişisi olacak. Onun için de kontak diye bir sınıf oluşturmuşum. Aynısına pek gerek yok. İsim olur, list olur, get-it-it-it olur.
+
+458
+02:08:47,220 --> 02:09:01,579
+Önemli olan, şimdi acaba bu görev ne kadar zamanda bitirebilir? Onun için bir Time Record aranı var ve onun Getter ve Setter metotları var. Herhangi birini atamak için SetOwn'un metodu var.
+
+459
+02:09:01,904 --> 02:09:29,904
+Günün sonunda şöyle bir raporlar oluşturmaya çalışacağız. İşte bu proje ne kadar zamanda biter ve ne kadar maliyetle biter. Ona yönelik raporlarımız olacak. İşin işte visitor kalıbına bizi yöneltecek kısmı da o olacak zaten. Yoksa sadece bir proje itemler, taskler, deliverable'lar bunları kompozit kalıbını kullanarak da yapabilirdik mesela. Veyahut da sadece bu kalıtı meraçlılık olmak yeterli olur.
+
+460
+02:09:29,904 --> 02:09:51,944
+Başlı başına bir visual problemi olmayacaktı. Ama madem bu projenin acaba ne kadar mağaz olacak ve ne kadar sürecek bunu hesaplayabilmek için tek tek bütün taskların, yorum sub-tasklarının ve deliverabre'lerini ziyaret edilip gerekli kümülatif toplam işlemlerin yapılması gerekecek.
+
+461
+02:09:53,043 --> 02:10:09,543
+Deliverable için ise iki ayrı cost tanımlamışım. Malzeme bedeli ve hizmet bedeli, üretim bedeli ya da şeklinde. Tüm üyeler için alan konstruktörü, getter metodları var.
+
+462
+02:10:10,068 --> 02:10:19,988
+Ayrıca bir deliverabı da belki bir kontakt kişisine sahip olabilir. Ona da üyelik ilişkisini kurmuşum.
+
+463
+02:10:22,292 --> 02:10:44,252
+Şöyle düşünebilirsiniz. Belki proje sorumlusu da projenin kontaktıdır diye düşünüyorsanız o zaman bu kontaktı, Neler ve Task'a ilişki kurmaktansa bunu yukarı çekip proje itemden de bir sahiplik kurabilirdik. Ama bu ufak bir ayrıntı. Çok takmayın buna. Öyle de olabilir. Öyle de olabilirsin. Ben problemi bu şekilde ele almışım.
+
+464
+02:10:46,387 --> 02:10:56,368
+Ve nihayetinde bir raporlama üzerinden bir proje ne kadar zamanda tamamlanıp ve ne kadar mal olur onun hesabını yaptıracağız. Project Calculator sınıfı üzerinden.
+
+465
+02:10:59,648 --> 02:11:04,728
+Gayet basit. Ne yapacağız? Öncelikle projeye gideceğiz.
+
+466
+02:11:06,707 --> 02:11:30,167
+İlgi hesapla bir projeye falan koymak istemiyorum. Hesaplama işlemini bu yapacak. Ne olur işte. Önce buna vereceğimiz, buna bir proje atamış olacağız haliyle. Bir proje atamış olacağız. Bakın böyle bir sahipçik var. Ondan sonra sırayla bütün elemanlar arasında dolaşıp ilgili hesaplamaları yapacak. Göstereyim kaynak kodunu. Çok karmaşık değil.
+
+467
+02:11:34,003 --> 02:11:36,003
+Şu kalsın ekranda.
+
+468
+02:11:37,003 --> 02:11:39,003
+Kaynak kurduğuna bakalım.
+
+469
+02:11:42,003 --> 02:11:45,003
+Soluşun bir. Tamam, soluşun var.
+
+470
+02:11:46,003 --> 02:11:49,003
+İşte şamadan gidelim.
+
+471
+02:11:50,003 --> 02:11:52,003
+Şamadan gidelim.
+
+472
+02:11:52,003 --> 02:11:54,003
+Project item görelim.
+
+473
+02:11:56,003 --> 02:11:59,948
+Gördüğünüz gibi, straightforward. Yani yöner şamasından straightforward.
+
+474
+02:11:59,956 --> 02:12:14,196
+Birebir bunu aktarılmış durumda kod. İşte ne olabilir? Benim projem var. İşte bir eladist içerisinde tutuyor elemanları. Itemlarını döndürmek için direkt eladiste döndülen metodu.
+
+475
+02:12:23,028 --> 02:12:36,688
+Zaten yoksa o zaman ekle. Ama zaten bazen okuman ekleme şeklinde. Veya şerhangi bir element var. Biz eklesin çok basit eklesin metotlarım var. Ondan sonra cıma. Böyle task vardı.
+
+476
+02:12:38,420 --> 02:12:54,199
+İşte TAS kendi içerisinde proje itemlere sahip olabilir. Ne kadar zamandır bir terbiyesi var. Constructor hepsini alıyor, ilgili atamaları yapıyor. Ondan sonra cemaat. Proje itemleri için hepsi için komple geri döndüren gettirmek var.
+
+477
+02:12:54,739 --> 02:13:06,940
+İşte onları time-to-out için get-to-statter metodları var. Benzer şekilde task'a item eklenecekse benzer şekilde ekleme metodu ve silme metodları var.
+
+478
+02:13:09,640 --> 02:13:12,140
+Ben de task'a bakmıyorum bile. Çok benzer.
+
+479
+02:13:14,163 --> 02:13:41,123
+Deliverable ise, onları var, material ve production costları var. Construct'ın bütün iyileri set ediyor. Ayrıca getire de sette metotları da var. Bu kadar. Deliverable'ın alt deliverablerı olmayacak. Şeklinde düşündüm. Buradan daha basit. Ayrıca farklı açmayı da sağlıyor. Task ve project item ve daha doğrusu task ve deliverable arasında farklı açmayı da sağlıyor.
+
+480
+02:13:43,412 --> 02:13:57,952
+Peki, onun dışında projeye baktık, proje kartına baktık, task'a baktık, niye kapattın, deliver'a da baktık. Ondan sonra görelim işte proje kartı veriti var.
+
+481
+02:13:59,091 --> 02:14:11,131
+Önce bir proje atıyorum buna. İngilizce hesaplamaları yapmak için. Ondan sonra ne kadar zaman gerekiyormuş? Bakıyorum. Toplam zaman sıfır. Ondan sonra projenin bütün itemleri için.
+
+482
+02:14:12,011 --> 02:14:24,971
+Şimdi yalnız şöyle bir şey yazmam gerekiyor bu sefer. Şimdi dikkat ederseniz. Şamaya geçeyim. Şunu kapatayım bu arada. Hep karzlarla geçiyorum.
+
+483
+02:14:27,475 --> 02:14:46,635
+Dikkat ederseniz, deliverable için ayrıca bir time required yok. O task kapsamında yapılıyor. Task ne kadar sürüyorsa belki o kadar sürecek deliverable. Ama task'la birikli olacağı için ayrı bir iş olmayacağı için deliverable'da time yok.
+
+484
+02:14:53,587 --> 02:15:11,807
+Maliyet yok. Deliverabler'ın maliyeti var. O çıkarı da yapacağız. Ama cost yok. Görevin costu yok ama deliverabler'ın costu var.
+
+485
+02:15:12,127 --> 02:15:25,447
+Hocam normalde böyle olmuyor diyebilirsiniz ama o zaman ekleyin soru yapalım. Dem olmaz. Deliver'e bunları tasgın, birbirinden mümkün olduğu kadar ayrıştırmaya çalışın. Örneği bizi daha rahat uyarlayabilmek için.
+
+486
+02:15:26,515 --> 02:15:44,635
+O zaman ben zamanı hesaplarken tasklar arasında dolaşacağım. Deliverber'larda bir işlem yapmayacağım. Ama maliyet hesabı yaparken de bu sefer tasklarda dolaşmanın anlamı yok. Ama bütün deliverber'ları ziyaret etmem gerekiyor.
+
+487
+02:15:46,555 --> 02:15:49,135
+Böyle bir durum da var. O yüzden de kodum.
+
+488
+02:15:50,804 --> 02:16:14,804
+Şurada gördüğünüz şekilde. Projenin itemlerini alıyorum. Bu itemler eğer task ise o zaman zamanı ekleme yap diyorum. Bundan sonra şeyde ise, yalnız şunu da unutmamalıyım. Ben bir item'in daha doğrusu aslında görevi ya görevin zamanını hesaplarken diyorum ki görevin alt görevleri de olabilir. O zaman...
+
+489
+02:16:15,380 --> 02:16:43,360
+Ben aslında basitçe toplamı hemen burada yapmıyorum. Bir private metod içerisinde car create time required metodunu overload ettim. Parametre olarak da ilgili subtaskı vardı. Öncelikle o alt grep için ilgili zamanı alıyorum. Ondan sonra onun da alt eğer gereleri varsa onların da lütfen bir alt zaman, onların da gerektirdiği zaman.
+
+490
+02:16:43,379 --> 02:16:46,680
+Bu şekilde yürüyor.
+
+491
+02:16:47,579 --> 02:16:59,139
+Şimdi, onun da art görevleri olabilir. Yani art görevin de art görevi olabilir. O işi şunun zaten rekürsif olarak yaptığı için dikkat ederseniz bir highlight yapayım.
+
+492
+02:17:02,868 --> 02:17:16,488
+Dikkat ederseniz, alt görevinde görevleri varsa yine calculate time, you card mesutları rekülsif olarak çağrıldığında en adet seviye, hiyerarşi izin veriyor bu çözümü.
+
+493
+02:17:18,488 --> 02:17:20,460
+Alt görevlerinin...
+
+494
+02:17:21,427 --> 02:17:31,548
+Tek başına maliyetinin herhangi bir istemiş tarafından hesaplanması anlamsız olacağı için bu iç yapıyla ilgiledir diye düşünüp private görmüyorlar.
+
+495
+02:17:32,659 --> 02:17:54,540
+Bu şeyde ise, cost hesaplanırken ise bu sefer de deliverabre'ların costları var. O yüzden bütün itemler arasında dolaşırken bakıyorum, şu an seyahat ettiğim item eğer bir deliverabre ise, instance operatörü kullanarak bakıyorum da, o zaman işte bu deliverabre'ın materyalik costunu al, production costunu al, topla, toplama, ekle.
+
+496
+02:18:00,659 --> 02:18:17,819
+Şu an ziyaret ettiğim item bir task ise tamam onun doğrudan maliyeti yok ama onun alt görevleri olabilir. Alt görevlerinin ilişkili olduğu şeyler olabilir. Deliverberler olabilir. Onların da maliyetin eklenmesi gerekmektedir.
+
+497
+02:18:17,819 --> 02:18:28,479
+O yüzden ona da bakıyorum. Eğer yok doğaçtığım item deliverber değil de task ise onun da alt itemlarını ziyaret ederek hesaplanması gerekiyor.
+
+498
+02:18:28,659 --> 02:18:33,520
+Dikkat ederseniz o zaman da private double calculate cost metodu çalışıyor.
+
+499
+02:18:33,720 --> 02:18:44,240
+Subtustları içeren. Orada da işte benzer şekilde hemen hemen bakın. Şurayla çok benzer kod. Bu duplicate kod olarak düşünebilirsiniz.
+
+500
+02:18:44,240 --> 02:18:52,500
+Ya da kodları yapıştırdığı çok benzer kod. Hata yapmasının daha çok olası bir şey. Bu şekilde kopyarı yapıştırdığı kod üzerinde.
+
+501
+02:18:52,880 --> 02:18:55,840
+Bakıyorum. Sonra çalışacağımız olan hesapladığını göreceğiz de.
+
+502
+02:18:56,659 --> 02:19:21,780
+Bu sefer yine itemler üzerinde dolaşıyorum. Eğer bu bir deliverable ise tamam. Alt görevin deliverable olmuş yani. Onun da maliyeti ekle diyorum. Ama eğer bu bir görev ise, alt görev ise o zaman onun da alt görevlerinin ilişkili olduğu deliverable'lar olabilir. Onları da hesaplamayı unutma diyorum. Ve külsüz olarak aynı metodu çağırarak da.
+
+503
+02:19:22,260 --> 02:19:34,300
+Gördüğünüz gibi çok da şey basit değil. Bu çözümle en çok eleştirdiğim kısım, Türkiye'de instance of ile tek tek bakmak.
+
+504
+02:19:35,819 --> 02:19:39,300
+Farklı birleşenlerde farklı tür işlemler yapıldığı için...
+
+505
+02:19:39,891 --> 02:19:53,012
+Böyle bakmak zorundayım. Yani instance of'u kaldırmak diye bir şey yapamıyorum. Çünkü örneğin şey yapmak zorunda kalacağım.
+
+506
+02:20:00,531 --> 02:20:24,111
+GetTime.Cart metotları ekleyebilirim. Şu Project Item ortak ara yüzü, yani soyut sınıfına. Ama bu sefer kalıtımın en doğal kuralını ihlal etmiş oluyorum. Örneğin yukarıda GetCost metodum var. Fakat bu GetCost metodumun task için hiçbir anlamı yok.
+
+507
+02:20:24,500 --> 02:20:44,079
+Boş gövdeli ve hatta boş gövdeli bile değil. Çünkü maliyet döndürmesi lazım. Sıfır maliyet döndürecek. Böyle bir dummy bir metot koymam gerekecek. Öte yandan aynı şeyi, benzer şeyi, şimdi getTimeMikavit metodu olacak. Bunun cost için bir anlamı olmayacak.
+
+508
+02:20:52,500 --> 02:21:02,040
+Bu neredeyse boş bir metot olarak tanınlanması söz konusu olacak. Bu da hani kalıtımın ilkesine ters. Ama kodda da bakıyorum.
+
+509
+02:21:02,868 --> 02:21:23,528
+Instant Solve örnekleri görüyorum hep. Bu da aslında çok biçimliliği pek doğru kuramadığım anlamına geliyor. Aslında bu biraz yumurta tavuk misali olmuş oldu. Üst sınıfa ortak metotları, yani o üst tarafta, üst ara, soyu sınıfta bütün metotları yazamıyorum. Alt sınıflarda gerekmeyenler olacak.
+
+510
+02:21:30,868 --> 02:21:49,948
+diye bakmam ve ona göre iş yapmam gerekecek. Acaba daha uygun bir çözüm olamaz mı diye düşünüp bakalım şimdi bunun visitor'ı her ne kadar şöyle zayıf yönleri var, şöyle kalmışlık, böyle kalmışlık beslekte bir de visitor'a kodlayalım bakalım. Neler kazandı, neler kaybettirdi görelim.
+
+511
+02:21:51,948 --> 02:21:54,548
+Ama önce bir doğru hesap yaptığımızı görelim.
+
+512
+02:21:56,244 --> 02:22:20,984
+Onun için de şöyle bir örnek vereceğim. Proje olarak lisans üstü eğitim örneği vermiş oluyorum. Bir proje oluşturuyorum. Yüksek lisans, lisans üstü eğitim şeklinde. Bunlar çeşitli görevler ve deliver'lar ekleyeceğim. Öncelikle güz dönemi derslerini almam gerekiyor.
+
+513
+02:22:21,492 --> 02:22:27,652
+Ondan sonra açığına. Ki şeylere bakarsak, eğer constructime bakarsak task da neymiş?
+
+514
+02:22:29,692 --> 02:22:35,612
+İşte adı, tanımı, sahibi ve gerekli zaman taskta.
+
+515
+02:22:38,612 --> 02:22:45,891
+Adı, açıklaması, sahibi kısmını es geçiyorum. Yani hangi öğrenci için yapıyorsa konu zaten aynı o bütün öğrenci için.
+
+516
+02:22:45,891 --> 02:22:48,972
+Aynı nihayetinde. Ondan sonra açığına şey.
+
+517
+02:22:49,396 --> 02:23:03,896
+Task için pardon buradayım. Sahibi yok. Fakat işte şeyse Time Required'ı ise 15 hafta. Time'lar da hafta cinsinden bu arada. 15 haftalık.
+
+518
+02:23:04,819 --> 02:23:23,340
+Dönem içerisinde işte birinci dönem dört tane ders alıyorum. Her bir derste biraz deliverable olarak düşünüyorum. Dersten aldığım geçen not benim deliverable'ım olacak. Ondan sonra şimdi. Şu örnek, şu kodu ve şu adlı olan ders için sahibi yok.
+
+519
+02:23:25,492 --> 02:23:41,011
+45 saat çalışmam gerekecek. Yani 45 saat derse gireceğim. 3 saat, hafta 3 saat dersten 45 saate mal olacak. Burada da kostu da saat cinsinden harcayan emek şeklinde düşünmüşüm.
+
+520
+02:23:41,671 --> 02:23:50,272
+Şey ise, 30 ise benim sınavlarına da ek çalışmam gerekecek ya, onun için ayıracağım saat diye düşünmüşüm.
+
+521
+02:23:51,059 --> 02:23:57,920
+Ve işte bu deliverimi da projeye ekledim. Bir ders daha yazdım.
+
+522
+02:23:58,239 --> 02:24:25,739
+O da benzer şekilde ama bu ders biraz daha zor olduğu için ona sınavına biraz daha belki fazla çalışacağım diye 40 saat çalışma tahmin edilmişim. Diğer bir dersime yine şey değişmiyor, 15 hafta değişmiyor ve 3'er saat hepsi de yine 45 saat derste gecim var. Ona da çalışacağını sürekli 35 saate ayırmışım. Bir başka derste de benzer şekilde. Bu şekilde iki dönem, her dönemde 4 ders.
+
+523
+02:24:26,515 --> 02:24:45,716
+Ondan sonra bir de test çalışması da ekliyorum. Yapılması gerekiyor. Bunu bir task olarak yazıyorum. Derslerle aynı anda yapabileceğim için.
+
+524
+02:24:46,260 --> 02:24:54,479
+Ona, o göreve, daha doğrusu pardon bu bir tasktı. Taskı time required diyorum. Tamam peki.
+
+525
+02:24:58,020 --> 02:25:09,120
+30 saat demişim. Hani çalışacak, o kadar olmayacak ama. Ama deliverabrına daha fazla zaman ayırmışım. Şurada uğraşacağız falan falan.
+
+526
+02:25:09,120 --> 02:25:12,280
+Diye düşünmüşüm.
+
+527
+02:25:12,852 --> 02:25:24,672
+Ondan sonra bir de tezden bildiği oluşturulması gerekiyor. Onu da sunması ve hazırlanması için saat içerisinden bir şeyler yazmışım. Ondan sonra böylelikle projemi oluşturmuşum.
+
+528
+02:25:24,672 --> 02:25:35,031
+Acaba şimdi bakalım projemin süresi, projenin maliyeti, projenin süresi kaç hafta, projenin maliyeti ne kadar bir hesaplasın bakalım diyorum.
+
+529
+02:25:35,031 --> 02:25:37,312
+Ve çalıştırdığımda işte.
+
+530
+02:25:41,075 --> 02:26:04,876
+Altmış hafta, çünkü iki dönemdi ya, on beş haftalık, pardon. Birinci dönemdi ders, ikinci dönemdi ders. Ondan sonra üçüncü ve dördüncü dönemlerde teze odaklandık diyoruz. Altmış hafta sürecek ve ne kadar tahminlerimden bin yüz yetmiş dört saatte çalışma gerekmiş.
+
+531
+02:26:05,680 --> 02:26:21,680
+diye öyle bir işte konu. Ama neyse ne yapalım. En azından konuyla ilgili bir örnek vermiş oldum. Bu şekilde yaptık. Tamam. Ama bu çözümde beni rahatsız eden şeyleri tekrarlıyorum. Bu instance of'ların...
+
+532
+02:26:22,004 --> 02:26:33,904
+Fazlalığı beni rahatsız ediyor. Tartışmasını yapmıştık. Tekrar vereyim. Acaba HDB kalıbını kullanarak bunu nasıl gerçekleriz? Ona bir bakalım.
+
+533
+02:26:33,904 --> 02:26:44,804
+Şimdi aynı saat sonucunu vereceğini göreceğiz. Sonra geri döner bunu tekrar çalıştık. Aynı toplama işlemlerini yaptığını görürüz.
+
+534
+02:26:49,523 --> 02:27:03,463
+Peki, şimdi bakalım. Visitor kalıbı ile çözümü. Önceki çözümle aynı olan kısımları bu şemada tekrarlamadım. Onları kaldırdım. Neler değişti?
+
+535
+02:27:03,463 --> 02:27:15,683
+Şimdi, benim artık bir Project Visitor interfezim var. Ve eğer maliyet hesaplanacaksa, maliyeti hesaplayacak ayrı bir visitorim var.
+
+536
+02:27:16,115 --> 02:27:25,655
+Zaman hesaplanacaksa, zamanı hesaplayacak aynı bir visitor'ım var. Bu durumda benim raporum önce bir cost visitor oluşturacak, proje üstünde dolaştıracak.
+
+537
+02:27:26,195 --> 02:27:44,576
+Bütün proje düğümlerini ziyaret edilmesini sağlayacak ve maliyeti söyleyecek. Ondan sonra bir time visitor oluşturacak. O visitor'ın bütün düğümlerini ziyaret etmesini sağlayacak ve toplam zamanı da o şekilde bulacak ve bunları ekran yazacak.
+
+538
+02:27:45,043 --> 02:28:09,043
+O zaman benim şimdi bir nedenle bir visitor'ım var. Kalıp nedeniyle. Şimdi bu visitor işte dependent taskları dolaştığında farklı şekilde çalışacak. Orada dependent taskı elemiştir. Deliverables'i dolaşırken farklı şekilde çalışacak. Sadece cost hesaplama amacıyla ziyaret edebilir deliverables.
+
+539
+02:28:13,043 --> 02:28:28,263
+Bu konuyu hesaplamak amacıyla ziyaret edebilir. Ve tabii ki projenin genelinde ziyarete açık olması lazım ki bütün bileşenlerin üstünde dolaşım işlemleri, ziyaret işlemleri daha doğrusu yapılabilsin.
+
+540
+02:28:28,263 --> 02:28:36,063
+Task kendisinin accept edilmesini sağlıyor. Deliver'ı da kendisinin accept edilmesini sağlıyor.
+
+541
+02:28:39,987 --> 02:28:52,308
+Accept metodu var ve Accept metodunun içine gireceğiz. Orada göreceğiz ki Deliveriver'ın Accept metodu Visit Deliveriver metodunu çağırıyor olacak.
+
+542
+02:28:52,308 --> 02:29:00,507
+Task ise Accept metodunun içerisinde Visit Task metodunu çağırıyor olacak.
+
+543
+02:29:02,515 --> 02:29:19,216
+Hemen kodda bunu gösterelim. Projekte ise kendisine bir ziyaretçi geldiğinde onun kendisini visitprojekt metodu üzerinden onu kullanmaktan ziyaret edebilmesini istiyor olacak. Şimdi kodda göreceğiz, görelim.
+
+544
+02:29:24,595 --> 02:29:26,216
+Solution 2'ye geçiyorum.
+
+545
+02:29:27,716 --> 02:29:31,075
+Şimdi farklı olan yerleri göstereceğiz demiştik.
+
+546
+02:29:31,075 --> 02:29:35,135
+Bu bağlamda Project Item'ın işte Akseret metodu var.
+
+547
+02:29:36,195 --> 02:29:38,376
+Project Item'ın Akseret metodu var.
+
+548
+02:29:38,495 --> 02:29:40,915
+Soyut metot. Geri kalan bir şey değişmedi.
+
+549
+02:29:42,175 --> 02:29:44,235
+Ondan sonra hocama şeye bakalım.
+
+550
+02:29:44,595 --> 02:29:45,575
+Project'e bakalım.
+
+551
+02:29:47,056 --> 02:29:47,855
+Aynı sırada bakalım.
+
+552
+02:29:48,675 --> 02:29:51,455
+Project'e baktığımda değişen şey
+
+553
+02:29:52,051 --> 02:30:14,172
+Bir akset metodunun eklenmiş olması. Kendisine bir visitor geldiğinde bir proje diyecek ki sen beni bir proje olarak ziyaret edebilirsin diyecek. Onun visit project metodunu çağırıyor olacak. Aradaki farklara da baktığımızda şunun ve şunun arasındaki sağ tıklıyorum. Compile with each adası dediğimde.
+
+554
+02:30:18,804 --> 02:30:28,364
+Aynı aynı aynı. Şu da aynı. Sadece o da bir satıl boşluk var, bir satıl farklı yok. Ek olarak ne yapmışım? Except metodu eklemişim. Başka bir ek yük yok projeyle ilgili.
+
+555
+02:30:31,987 --> 02:30:35,247
+Sonra gelelim Project Task'lara.
+
+556
+02:30:39,763 --> 02:30:55,363
+Şimdi tasklarda da iç mantığından hiçbir şey yok. Sadece ek olarak o anda accept metodu ekledim. Beni ziyaret edebilir bir visitor, onu kabul ediyorum. Ama işte beni task olarak ziyaret etsin diyor.
+
+557
+02:30:57,363 --> 02:31:01,644
+Keza farkları karşılaştırdığımızda öyle olduğunu göstereyim.
+
+558
+02:31:09,523 --> 02:31:12,843
+Şurada sadece değişken adım mı?
+
+559
+02:31:14,383 --> 02:31:16,943
+Niye bu da farklı? Ha belki o highlight'tırsa, yok.
+
+560
+02:31:19,243 --> 02:31:21,304
+Neyse, çıkanlamadım.
+
+561
+02:31:21,804 --> 02:31:27,183
+Onun dışında görüyorsunuz, işte sadece Excel metodu eklenmiş benzer şekilde.
+
+562
+02:31:30,420 --> 02:31:43,880
+Task için Deliverable işlemine bakalım. Deliverable'da yine sadece ve sadece ek olarak accept metoduna eklenmiş durumda. Ama bu sefer bu Deliverable'dur. O an göre ziyaret edilmelidir.
+
+563
+02:31:47,540 --> 02:32:03,740
+Fakat şeyler değişecek haliyle. Diğer taraflar değişecek. Project Calculator değişecek. O çok değişecek. Aslında raporlama kısmı değişecek. Çok değişmeyen ortak noktalar dediğimiz şeyleri kapatayım.
+
+564
+02:32:07,443 --> 02:32:24,283
+Kapat, kapat, kapat. Esas gelelim. Project Visitor'a bakalım önce. Çünkü daha evvel çözümde öyle bir şey yoktu. Sadece Project Cartwright'ı vardı. Şimdi Project Visitor interfejsi geldi.
+
+565
+02:32:29,523 --> 02:32:36,003
+İşte orada da except metotlarını kodluyorum. İşte kalıbın şeyti, elektirdiği.
+
+566
+02:32:36,468 --> 02:33:01,648
+Bir projeyi ziyaret etmek üzere Constructors'ı atanır atanmaz ziyarete başlıyor diyelim o şekilde. Yani bir visitor üstünde dolaşacağı, bütün düğümlerini ziyaret edeceği, daha doğrusu projeyi alır almaz dolaşmaya başlıyor. O yüzden Constructors'ı alır almaz.
+
+567
+02:33:02,048 --> 02:33:24,528
+Projenin kendisini kabul etmesini istedi ve dolaşımı başlattı. Onun dışında işte bir dependent task'ı şey derken, pardon dependent task önemi yok diye onu task'la aynı şekilde yapıyordu. Ondan sonra çökebilecek, direkt visit task'ı çağırıyor. Bu project time visitor, visit deliverab'ın içerisinde bir şey yapmıyor.
+
+568
+02:33:25,043 --> 02:33:41,804
+Çünkü o zamanla ilgili deliverable'lar içinde zaman belirtmiyor. O da yapılan bir şey yok. Ama bir task ziyaret edildiğinde işte onun kendisi bir time visitor ya, o yüzden ne kadar zaman süreciyle ilgileniyor, o değeri alıyor.
+
+569
+02:33:41,804 --> 02:33:51,243
+Ve ondan sonra onun diğer bütün alt itemları içinde o alt itemları kendisine kabul etmesini istiyor.
+
+570
+02:33:53,203 --> 02:34:20,743
+Projekt için ise işte bir ilk toplam eklemesine gerek yok. O projektin bütün itemlarının işte kendisini ziyaret etmesini istiyor. Ki o item eğer şey ise, task ise, visit task çalıştırılmış oluyor accept üzerinden. Yok eğer şey ise, deliverable ise, visit deliverable çalıştırılmış oluyor ilgili accept üzerinden. Gerçi olduğunda bir şey yapılmamış oluyor ama zaten iş mantığında öyle koyduk.
+
+571
+02:34:21,203 --> 02:34:23,203
+Bu konuda bir şey yapmıyorsun.
+
+572
+02:34:23,203 --> 02:34:25,203
+Evet.
+
+573
+02:34:25,203 --> 02:34:41,203
+Project Cost Visitor da çok benzer şekilde, o işte bir deliverablesı ziyaret ederken, işte material cost, production cost'u topluyor, kümülatif toplama ekliyor.
+
+574
+02:34:46,131 --> 02:35:13,252
+Task ziyaret ediyorsa toplama bir şey eklemiyor ama onun alt itemlarını dolaşıyor ki gerekiyorsa işte onun alt deliver'larını da ziyaret etsin. Ve işte masrafı, kümülatif masrafı biriktirmeye devam etsin. Şeklinde en sonunda da getCostMath. Ne hesaplamış toplam onu geri döndürüyor. Bu bu şekilde.
+
+575
+02:35:15,156 --> 02:35:31,776
+O zaman reporta gittiğimizde report tamamen ilk kısımda aynı. Yani projeyi oluşturma kısımları tamamen aynı. Ondan sonra cama. Yani constructorlar o yüzden tamamen aynı. Sadece değişen şey.
+
+576
+02:35:32,211 --> 02:35:39,211
+Önce bir Cost Visitor oluşturuyor. Ziyaret projeyi veriyor ki bütün projeyi ziyaret etmeye başlasın.
+
+577
+02:35:39,612 --> 02:35:46,731
+Bundan sonra adı ve açıklaması şudur, maliyeti de budur şeklinde hesaplanan çalışmayı Cost Visitor'dan alıp yazdırıyor.
+
+578
+02:35:47,252 --> 02:35:53,231
+Zaman içinde benzer şekilde ama bu sefer Time Visitor oluşturup onun üstünden toplam masrafı alıyor.
+
+579
+02:35:53,231 --> 02:35:57,412
+Bakarsak eğer şu iki reportu karşılaştırırsak.
+
+580
+02:36:06,739 --> 02:36:23,739
+Bu Highlight galiba da. Şöyle baktığımızda bakın başka hiçbir şey söylemiyorum. Tek şunları da bu görev. Bu herhalde Highlight. Bir şeyin üstünde bırakmışım da mouse'umu o yüzden kalmış herhalde. Yoksa aynı bakın satınlar aynı.
+
+581
+02:36:24,595 --> 02:36:40,036
+Şeyler aynı, değerler de aynı, süreler falan da aynı. Nihayetinde aynı sonuç ortaya çıkanmasını bekliyorum. Sadece tabii ki main metotları daha farklı oldu haliyle. O da çok da aman aman da bir fark yok.
+
+582
+02:36:42,175 --> 02:36:46,275
+Bunu da çalıştırdığımda aynı sonucu ürettiğini göreceğim.
+
+583
+02:36:51,379 --> 02:36:56,319
+1174 ve 60. Ötkini tekrar çalıştırayım.
+
+584
+02:36:59,540 --> 02:37:08,860
+1174-60. Birini önde, birini altta, birini önceden sonra yazdığım için ama en azından farklı şey çalıştığında farkı varmış oldum.
+
+585
+02:37:08,860 --> 02:37:20,620
+Evet, aynı hesaplamayı yaptım. Yani demek ki biz bu visitor tasarım kalıbını hem uygulama mantığı açısından doğru bir şekilde kodlayabilmişiz,
+
+586
+02:37:20,979 --> 02:37:27,540
+hem de sınıf işlemasına baktığımda visitor kalıbının bütün gereksinimlerini karşıladığını...
+
+587
+02:37:27,540 --> 02:37:46,500
+Peki ne kazandık? Bu visitor kalıbını uygulayarak ne kazandık? Ne değişti? En azından şu eski Project Calculator'daki Instance of Control'dan kurtulmuş oldum. Bu beni rahatlattı.
+
+588
+02:37:46,899 --> 02:38:05,119
+Çünkü instance of, ben buna necessary evil diye bakıyorum. Bazen gerekiyor ama mümkün olduğu kadar kullanımdan kaçırmak lazım şeklinde değerlendiriyorum. Ama bu kazancımın yanında bir de götürdüğü şey de var. O da hatırlarsınız.
+
+589
+02:38:11,827 --> 02:38:26,127
+Project Cost Visitor'un içerisinde, hani orada çok belki ilk bakışlar gözükmüyor ama Project Time Visitor'un içerisinde visit delivery bunun içi boş. Yani boş gövdeli metotlar da bir rahatsızlık konusudur.
+
+590
+02:38:30,004 --> 02:38:48,164
+Ama bu da hani bir kanıtımda işte bazı metotların ya da bazı üyelerin işte reddi miras yapılamamasından kaynaklanıyor. Bu bence doğru bir olaydır. Yani genel olarak nesneye baktığımızda kanıtım mekanizmasında reddi miras diye bir şey olmaması bence doğru bir karar.
+
+591
+02:38:49,364 --> 02:38:52,424
+Yani instant off'u kaybettik ama ortaya bu durum çıktı.
+
+592
+02:38:53,427 --> 02:39:04,688
+Ama en azından bu sadece bir metot da ortaya çıktı diyeyim. Öte yandan mesela örneğin şey açısından, time açısından hiç yani mesela şey.
+
+593
+02:39:07,283 --> 02:39:14,844
+İnanılmaz, şurada. Time açısından taslıta pek bir şey yapmıyorsak bile en azından bunun alt görevleri de olabilir.
+
+594
+02:39:15,004 --> 02:39:18,144
+Onun da ziyaret edilmesi için en azından bir satır metodun var burada.
+
+595
+02:39:19,763 --> 02:39:24,403
+İki keza bu şekilde boş hiçbir şey yapılmayan metot olmalıdır.
+
+596
+02:39:24,403 --> 02:39:28,423
+Bu konuda ise hiç yok. En azından bir şey de var.
+
+597
+02:39:29,703 --> 02:39:31,403
+Peki acaba...
+
+598
+02:39:32,020 --> 02:39:59,780
+Bu kazancımı ne kadar bir ek maliyet ile karşıladım. Gördüğünüz arada çok daha fazla bir kod farkı da yok. Sadece ufak bir altyapı eklemiş oldum. Fazla bir angaryası olmayan. Bu altyapı sayesinde benim bu projelerin hesaplanması ile ilgili zaman ve maliyet dışında başka başka analizler yapacaksam bunları yapmanın daha kolay olmasını sağladım.
+
+599
+02:40:00,000 --> 02:40:05,559
+Ben yeni bir raporlama türeli ulaşıyorsam onunla ilgili bir visit'ı eklerim, iş çözülür.
+
+600
+02:40:06,515 --> 02:40:23,095
+Ama tabii ki ben bu yapıya yeni bir not düğümü, yani dependent task zaten yok demiştim de, yani var da üstünden gitmedik. Daha başka bir düğün türü eklemek zorunda kalırsam işte o zaman çok iş yapmış olurum.
+
+601
+02:40:34,515 --> 02:40:56,975
+Bir değişiklik yok. Sadece ve sadece yeni bir raporlama türü veya yeni bir hesaplama yapmak için yeni bir liste eklemem yeterli. Üst taraf hiç dokunmuyorum. Fakat önceki çözümünde. Eğer yeni bir iş yapacaksam eğer, onda da gerçi proje kalkuletre dokunurum. Çok fark etmez. Evet o açıdan da çok fazla avantaj yok.
+
+602
+02:40:58,164 --> 02:41:06,164
+Neyse, yani gördük sonuçta. Çok çok da fazla bir şey kazandırmadı. Ama eğer mükemmelletçi yaklaşıyorsanız...
+
+603
+02:41:06,899 --> 02:41:30,899
+Daha az kusurlu Nesneye'nin ilkelerini daha az ihlal eden, minimum ihmal eden bir çözüme ulaşmış olduk. Üstüne gelen ek maliyet de pek fazla değil. O zaman yapmaya değer diye düşünüyorum. Ama hocam zaten ya çok karmaşık bir kalıp işte acceptler, visitler, ne neyi accept etti, ne neyi visit etti, biraz karıştı diyorsanız o zaman...
+
+604
+02:41:32,435 --> 02:41:55,456
+Siz bilirsiniz, iş kurmazsınız. Belki bir yeni programcı diyelim ya da bir acemi deneyimsiz programcı veya deneyimlidir de bu kalıbı hiç duymamıştır ve sizin şirketinizde kod havuzunuzda çalışmaya başladığında buna adapte olması zor olur falan. Ben bu nedenle visitor kalıbıyla olan çözümü tercih etmiyorum diyorsanız, haklısınız. Tercih sizin.
+
+605
+02:41:57,523 --> 02:42:19,363
+Evet, epey konuştuk bu konuda. Soru sorular arkadaşım varsa buyursun. Yoksa bugünlük bu kadar diyeceğim. Mediyatına hiç boşuna girmeyelim. Zaten dersin neredeyse sonuna geldik. Ama gerek bu viziter kalıbı olsun, gerek başka olsun sorularınızı alıp rahat rahat üstünde konuşacak kadar vaktimiz var.
+
+606
+02:42:24,244 --> 02:42:31,344
+O yüzden konuşmak isteyen arkadaşım lütfen buyursun. Ben sonra da mevde kaldığımızı falan işleyeyim.
+
+607
+02:43:35,987 --> 02:44:01,347
+Peki, soru yok herhalde. O zaman bugünlük bu kadar diyebiliriz. Haftaya son kalan mediator örneğimizi yapıp, ki o kalıbımızı yapıp, örneği de yok, hızlı şey deriz, tamamlarız. Ardından kortsimmal ve refactoring konusuna girebiliriz. İşte bunlar finalde geçecek olan konular olacak. O zamana kadar sağlıcakla kalın. Görüşmek üzere diyorum.
+
+608
+02:44:06,772 --> 02:44:12,372
+Yavaş, aştık yonka patalım asal. Şurada da bırakayım.
+
+609
+02:44:12,372 --> 02:44:14,372
+Haftaya hazır olsun.

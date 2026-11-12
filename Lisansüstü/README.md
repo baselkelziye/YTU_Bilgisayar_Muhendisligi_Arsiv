@@ -105,6 +105,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Nesneye Dayalı Tasarım ve Modelleme Ders Kayıtları](./Nesneye%20Dayal%C4%B1%20Tasar%C4%B1m%20ve%20Modelleme/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Nesneye%20Dayal%C4%B1%20Tasar%C4%B1m%20ve%20Modelleme/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
@@ -511,6 +512,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1tGJuwByhLCQVqy2FRS8dubD3ffIDu4CG?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [İleri Yazılım Mimarisi Ders Kayıtları](./%C4%B0leri%20Yaz%C4%B1l%C4%B1m%20Mimarisi/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

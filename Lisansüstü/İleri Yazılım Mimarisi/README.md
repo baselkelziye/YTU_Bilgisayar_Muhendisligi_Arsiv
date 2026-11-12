@@ -13,6 +13,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1tGJuwByhLCQVqy2FRS8dubD3ffIDu4CG?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [İleri Yazılım Mimarisi Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
