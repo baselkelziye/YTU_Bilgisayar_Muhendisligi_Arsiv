@@ -1,0 +1,2211 @@
+1
+00:02:20,756 --> 00:02:24,635
+Günaydın arkadaşlar. Nasılsınız?
+
+2
+00:02:25,656 --> 00:02:28,036
+Günaydın hocam. Nasılsınız?
+
+3
+00:02:28,975 --> 00:02:33,036
+Çok şükür. İyiyiz. Hadi bakalım.
+
+4
+00:02:34,235 --> 00:02:39,355
+Şimdi bizim bu kaçıncı haftamız diye sorsam çok yanlış bir soru mu olur?
+
+5
+00:02:39,355 --> 00:02:47,355
+8-7. haftamız. Bu arada ben bir iki tane mail aldım.
+
+6
+00:02:47,699 --> 00:02:55,959
+İsimlerini hatırlamıyorum kimlerden geldiğini. Hufman'la ilgili bana sorular sormuşlar.
+
+7
+00:02:58,036 --> 00:03:11,816
+Bir örnek bulmuş bir arkadaşınız. O örneğin çözümüyle ilgili sormuş. Bir tanesi bir başka şey sormuş. Ben sorulan sorulardan gördüğüm şeyi çok kısaca yeniden söyleyeceğim.
+
+8
+00:03:19,252 --> 00:03:37,392
+Bir de Hufman'ın bir iki tane versiyonu var. Onlardan bahsedip oraya geçeceğim. Herhalde haftaya da aritmatik kodinke başlarız. Bu arada Drive'a bakmadım. Seminer konularınızı seçmeye başlamışsınızdır inşallah.
+
+9
+00:03:37,392 --> 00:03:45,592
+Dersin sonunda bakacağım. Çünkü derste de hatırlatma yapayım dedim. Hani gelememiş olanlar varsa girsinler.
+
+10
+00:03:46,015 --> 00:04:10,295
+Şu an sınıfımız 20 kişi. Bir şey daha sormak istiyorum. Hep size dedim ya, bu seneye kadar bu dersi bu kadar fazla kişi almamıştı. Bunun sebebi nedir diye merak ettim. Listeye baktım. Sanki bilgisayar mühendisliğinde öğrenci olmayanlar da var.
+
+11
+00:04:11,316 --> 00:04:20,016
+Doğru mu? İçinizde bilgisayar mühendisliğinde doktora ya da master kazanmayıp diğer bölümlerden bu dersi alan var mı?
+
+12
+00:04:24,180 --> 00:04:26,360
+Derse bağlananların hepsi öyle.
+
+13
+00:04:27,000 --> 00:04:29,939
+[kişisel bilgi]
+
+14
+00:04:29,939 --> 00:04:36,019
+[kişisel bilgi]
+
+15
+00:04:37,480 --> 00:04:39,560
+[kişisel bilgi]
+
+16
+00:04:41,300 --> 00:05:09,300
+Olması lazım. Arada bir 10 ya da 11 gibi bir şey olması lazım. Neyse, tamam. Yani hiç normal bir şey değildi. Ben seminer konularında projelere çok çok zorlanacağım. Nasıl olacak bilmiyorum. Aslına bakarsanız yüksek lisans gibi derslerin böyle normal bir şey dersleri gibi, lisans dersleri gibi olmaması da gerekir. Çok çok kalabalık.
+
+17
+00:05:09,300 --> 00:05:24,139
+Ama neyse, bu dönemimiz böyle geçsin. Kontenjanda nasıl arttırıldı, bunun da hiçbir fikrim yok. Ama önemli değil. Zaten gelmişiz yarıya. Şimdi ben ekran paylaşımı yapayım.
+
+18
+00:05:35,124 --> 00:05:48,624
+Bu arada bana şu bilginin de gelmesi gerekiyor. Kimler proje yaparak finale girmek istiyor? Kimler normal sınav?
+
+19
+00:05:49,459 --> 00:06:09,199
+Yani yazılı sınav olarak finale girmek istiyor. Bunu seçimlik bıraktım. Neyse bu konuda da size bir mail döndüreceğim. Aslında projelerinizin büyük bir çoğunluğunda yapan arkadaşların benim önereceğim konular olacak demiştim. Hufman'ı kullanmanız gerekecek.
+
+20
+00:06:09,199 --> 00:06:17,459
+Yine bazı arkadaşlarınızdan mail geldi. Ben kendim bir proje önerisinde bulunabilir miyim? Elbette bulunabilir.
+
+21
+00:06:17,459 --> 00:06:27,339
+Ama önce proje konusunun ne olduğunun bilgisinin bana verilmesi lazım. Ona göre evet ya da hayır diyebileyim ben size.
+
+22
+00:06:27,339 --> 00:06:37,339
+Şimdi yine çok hızlı bir şekilde şunu geçeyim. Şuraya gelelim. Birincisi...
+
+23
+00:06:39,187 --> 00:06:53,107
+Neredeydi? Şu olsun. Elimde verilmiş olan bu diziyi K-1 adet olarak genişletirken her bulduğum ikiliyi sıralamayı bozmayacak şekilde yerleştiriyordum ya.
+
+24
+00:06:53,747 --> 00:07:07,168
+Lütfen dikkat edin. Bana gelen bir örnekte mesela işte toplamış neyle neyi 6 ile 7'yi 13 etmiş ama 13 sayısını gitmiş 14'ten sonraya koymuş.
+
+25
+00:07:07,860 --> 00:07:27,260
+Eğer böyle yaparsanız, bunlar küçük de olsa bir dikkatsizlik ama ağaç farklı oluşur. Ağaç farklı oluşursa çıkan kodlar farklı oluşur. Belki bir prefiks kod bile oluşturamayabilirsiniz arada. Aman buna dikkat. Sıralamayı bozmayacak şekilde koyacağız.
+
+26
+00:07:34,612 --> 00:07:48,072
+Ya da her zaman sağ tarafını tercih etmemiz gerekiyor. Bir başka yapılan hatada şunu gördüm. En sonda okuduğum şu değeri ROOTA yerleştiriyorum.
+
+27
+00:07:49,716 --> 00:07:58,596
+Bu root yani 60 neyle neyin toplamından geliyor? 25 ile 35'in toplamı 60'ı veriyordu.
+
+28
+00:07:59,456 --> 00:08:08,836
+Yerleştirirken hep sondan başlıyordum okumaya. İlk okuduğumu sola, ikinci okuduğumu sağa koyuyordum.
+
+29
+00:08:08,836 --> 00:08:17,716
+Bu şart mı? Hayır şart değil. Sen ilk okuduğunu sağa, ikinciyi sola koyarsın ama her zaman...
+
+30
+00:08:17,716 --> 00:08:33,536
+O zaman aynı işlemi yapman lazım. Bir adımda ilk okuduğunu sola, bir başka seviyeye geldiğinde ilk okuduğunu sağa koyarsan yine çıkan kodlar hatalı çıkar. Lütfen buna dikkat edin.
+
+31
+00:08:34,816 --> 00:08:47,316
+Aynı şeyi uygulamak zorundasın ki prefiks kodlar oluşabilsin. Bunlar çok önemli. Bunları o yüzden söylemek zorundaydım. Yeniden söyledik.
+
+32
+00:08:47,316 --> 00:08:53,956
+Evet, şimdi fullscreen de yapalım. Kaldığımız yerden devam edelim.
+
+33
+00:08:58,932 --> 00:09:26,932
+Farklı şey var. Ya statik hufman yaparız. Nedir? Biri bizim yerimize gidiyor, bir korpus alıyor, korpus üzerinden o dile ait bütün karakterlerin olasılıklarını çıkarıyor. Ona göre hufman ağacını oluşturuyor, kotları oluşturuyor ve benim elime veriyor. Al diyor. Senin kullanabileceğin hufman kotlar bunlar. Ben de bakıyorum elimde en fazla kullanılan sembol hangisiydi?
+
+34
+00:09:26,932 --> 00:09:30,812
+Bu örneğe ise ona bit uzunluğu küçük olan sembolü atıyorum.
+
+35
+00:09:31,604 --> 00:09:38,264
+Statik Kufman'ı kullanırsam performansım diğerlerine göre elbette düşük olacaktır.
+
+36
+00:09:38,264 --> 00:09:46,204
+Çünkü elimdeki dökümanın içeriğine bağlı olarak kod oluşturursam çok çok daha başarılı olur.
+
+37
+00:09:46,964 --> 00:09:57,044
+Önceden oluşturulmuş bir kodu kullanıyorsam elimdeki içeriğe göre hazırlanmadığı için performansım o kadar iyi olmaz.
+
+38
+00:09:57,044 --> 00:09:58,324
+Örnek vereyim.
+
+39
+00:09:59,604 --> 00:10:09,183
+Kufman'la sıkıştırırken %55 bir başarı elde ediyorsan, yarı dinamiği sıkıştırıyorsan %70'lik bir başarı elde edersin.
+
+40
+00:10:09,183 --> 00:10:13,244
+Dinami Kufman'da başarı aynıdır.
+
+41
+00:10:13,652 --> 00:10:30,192
+Aynada demeyeyim, bunda da değişkenlik olacak. Daha yüksektir. Fakat ben dinamik hufmanı dediğim gibi bir iletişim anında, yani veriyi A noktasından B noktasına gönderiyor durumundayken tercih ediyorum.
+
+42
+00:10:30,192 --> 00:10:40,812
+Çünkü çok daha komplike bir algoritma. Dinamik hufmanı neden tercih ettiğimi de söylemiştim. Yine üzerinden geçeceğim. Önce yarı dinamiğe dönelim.
+
+43
+00:10:41,652 --> 00:10:52,652
+Yarı dinamikte ise size anlatmış olduğum dinamik kufman aslında yarı dinamiğe uygun. Yani her dokumana göre ben farklı kodlar...
+
+44
+00:10:53,043 --> 00:11:12,704
+Uyduruyorum. Yani benim elime gelen bir döküman var. Ben o dökümanın içerisindeki sembollerin frekans değerlerine bakarak farklı kodlar çıkarıyorum. Bir başkası elindeki dökümanın içeriğine bakarak farklı olasılık değerleri çıkarıyor. O da farklı kodlar çıkarıyor.
+
+45
+00:11:12,704 --> 00:11:20,644
+Öyleyse yarı dinamik iki aşamadan oluşuyor. Önce dökümanın içerisini bir kere tarıyorum. Frekans değerlerini çıkarıyorum.
+
+46
+00:11:21,043 --> 00:11:29,204
+Sonra ağacı oluşturuyorum. Sonra yeniden dökümanın içerisini okuyorum. Okurken kodluyorum. Okurken kodluyorum.
+
+47
+00:11:29,204 --> 00:11:39,144
+Şimdi gelelim dinamik hufmana. Dinamik hufman ne zaman kullanılır? Hızın önemli olduğu uygulamalarda kullanılır.
+
+48
+00:11:39,423 --> 00:11:59,303
+Hızın önemli olması nedir? Ben veriyi bir noktadan bir noktaya iletiyorsam hız önemlidir. Yani bir veriye buradan gidiyorum, işte Ankara'da bir noktaya göndereceğim. Verinin sıkıştırılarak gönderilmesini istiyorum. Ve hız da önemli.
+
+49
+00:12:00,320 --> 00:12:05,879
+Yani hız neden önemli? Kimse benim oturup önceden ağacı oluşturmamı beklemiyor.
+
+50
+00:12:05,879 --> 00:12:12,780
+Ben gönderim sırasında her iki tarafta karşılıklı olarak aynı anda ağacı oluşturacak.
+
+51
+00:12:13,180 --> 00:12:15,440
+Bununla ilgili örneğimizi de göreceğiz.
+
+52
+00:12:16,040 --> 00:12:18,620
+İşte zaten aşağıki maddelerimizde yazıyor.
+
+53
+00:12:19,220 --> 00:12:25,019
+Encoder ve decoder senkronize çalışır. Aynı anda kodlama ağacını oluşturacak.
+
+54
+00:12:25,408 --> 00:12:42,687
+Başlangıçta ağaç boş her iki tarafta da. Ağaç ilk gelen sembolle ağaca yerleştirilecek ve ona bir kod atanacak. O kod da Output Stream'e yazılacak.
+
+55
+00:12:43,379 --> 00:13:07,519
+Ve sembolü de ağaca ekleyeceğim. Tabi ilk gelen sembolün bir kodu olmadığı için o sembolü ASCII olarak gönderiyorum. Ondan sonra ağaca ekliyorum. Ağaca ekleyince kod oluşuyor. Bir daha o sembol geldiğinde artık o kod değeriyle gönderiyorum. Ağaçtaki frekansını değiştiriyorum.
+
+56
+00:13:11,379 --> 00:13:13,840
+Değeri değişecekse bu değişikliği yapıyorum.
+
+57
+00:13:16,699 --> 00:13:22,120
+Yani hiç ağaçta olmayan bir sembol geldiğinde aski karşılığını gönderiyoruz.
+
+58
+00:13:23,475 --> 00:13:34,855
+Decoder'ın bilmesi gereken şey şu o zaman. Gönderilen bu kod, sembolün kodlanmış hali mi yoksa ASCII kodu mu? Bunu anlaması lazım.
+
+59
+00:13:34,855 --> 00:13:48,995
+Eğer kodlanmış bir sembol göndereceksem öncesinde bir escape kodu gönderiyorum. Öyleyse benim bir de escape koduna ihtiyacım var. Ağacın başlangıcı bir escape koduyla başlıyor.
+
+60
+00:13:50,484 --> 00:14:09,844
+Önemi yok bu escape kodunun frekansı değişecek mi? Hayır. Her zaman sabit olacak. Çünkü ilk 26 karakter İngilizceden bahsediyorsan her karakter sadece ilk kez karşıma geldiğinde ben bu escape kodunu gönderiyorum.
+
+61
+00:14:09,844 --> 00:14:16,484
+Bir kere o sembolü kod atandıktan sonra escape kodunu kullanmayacağız.
+
+62
+00:14:17,395 --> 00:14:35,176
+Decoder, Escape kodundan sonra gelen kodun ASCII kod olduğunu anlayacak ve onun sembolünü yazacak. Escape kodun frekans değeri her zaman birdir, değişmez. Ancak yeni bir sembol ağaca eklendikçe kodu değişir.
+
+63
+00:14:35,176 --> 00:14:42,115
+Şimdi bunları yazılı olarak anlatmak akılda kalacak şeyler değil. Şekil üzerinden gelelim.
+
+64
+00:14:42,707 --> 00:14:51,807
+Şimdi şöyle düşünün. Boş bir ağaç bu. Boş bir ağaç ama elimde benim bir tane escape kodumun olması lazım.
+
+65
+00:14:52,607 --> 00:14:57,867
+Çünkü şuradan da ben bir kalem alayım. Elimde şöyle bir şeyler olsun diyelim.
+
+66
+00:14:57,867 --> 00:15:08,067
+İşte AA, B ve C. Her iki taraf da arkadaşlar, her iki taraf da abortta bekliyor.
+
+67
+00:15:09,203 --> 00:15:26,603
+Şuraya Escape kodunu koyalım. Kodu 1 olsun. Burası da decoder kısmı bekliyor. Bir tane Escape var. O da burada 1 değil. Her ikisi de biliyor.
+
+68
+00:15:32,403 --> 00:15:42,723
+O zaman karşı tarafa önce escape kodunu gönderiyor. Arkasından da A'nın ASCII değerini gönderiyor. Tamam mı?
+
+69
+00:15:43,603 --> 00:15:52,723
+Karşı taraf escape kodunu görünce diyor ki A diyor ağaçta olmayan bir sembol geldi. Arkadaki sembolün...
+
+70
+00:15:53,299 --> 00:16:08,639
+ASCII kodu karşılığıdır. Onu alacağım. Bakıyor A. Output stream'e A yazıyor. Ve her ikisi de A'yı A'cı ekliyor. Ağacın sol koluna burası da A'yı ekledi. Burası da A'yı ekledi.
+
+71
+00:16:09,739 --> 00:16:19,819
+A bir kere geldi. Her ikisi de bunun sembolünün 1 olduğunu biliyor. Frekans değerinin. Ağacın sol tarafı olduğu için kodunun da 0 olduğunu biliyor.
+
+72
+00:16:22,100 --> 00:16:47,039
+İkinci sembol A. Bu taraf bakıyor. A ağaca eklenmiş. Kodu nedir? 0. 0'ı gönderiyor. Karşı taraf alıyor. Bu escape kodu değil. Demek ki ağaçta olan bir sembol. Nedir kod? 0. Ağaçta 0 olan nedir? A. A kutu A'yı yazıyor. Her iki tarafta A'nın frekansını 2 yapıyor.
+
+73
+00:16:47,668 --> 00:17:11,788
+Burası da A'nın frekansına 2 yaptı. Ağaçta bir değişim olması gerekiyorsa olacak. Değiştirecekler. Değişimin de nasıl olduğunu göstereceğim. Şu an ağaçta değişime gerek yok. Zaten iki tane sembol var. İkisini de bir bitle kodlayabilirim. Sonra B geldi. Bakıyor burası ağaçta B yok.
+
+74
+00:17:12,048 --> 00:17:19,708
+Öyleyse ben önce escape kodu gönderim. Arkasından da B'nin ASCII kodunu gönderim diyor.
+
+75
+00:17:21,395 --> 00:17:33,796
+Karşı tarafa gönderiyor. Bakıyor Escape. Ağışta olmayan bir kod geldi. Arkası da ASCII kodu olacak diyor. Bakıyor bu ASCII kodunun karşılığı B'dir diyor.
+
+76
+00:17:33,796 --> 00:17:48,076
+Aputsitrim'e B'yi yazıyor. Şimdi bu ağaca bir de B eklenecek. Tamam mı? Elimdeki frekans değerleri nedir şu an? A'dan iki tane var.
+
+77
+00:17:48,500 --> 00:18:06,860
+Escape'den bir tane var ve B'den de bir tane var. Buna göre ağacın yeniden düzenlenmesi lazım. Diyelim ki ağaç düzenlendi. Şöyle olsun ağaç. Atıyorum bunları yani. A burada olsun. İki adet var.
+
+78
+00:18:07,316 --> 00:18:16,936
+O daha az bitle ifade ediliyor. Bir bitle. Burası B olsun. Bir tane var. Burası da Escape olsun. Bir tane var.
+
+79
+00:18:18,355 --> 00:18:29,316
+Şimdi Escape'in kodu değişti. Ne oldu? 1, 1 oldu. B'nin kodu 1, 0 oldu. A'nın kodu 0. Aynı ağacı buraya da yapıyor.
+
+80
+00:18:29,811 --> 00:18:57,611
+Sırada ne var? C var. C gelecek. Bakıyor ağaçta C var mı? Hayır, yok. Escape kodunu gönderiyor. Arkasından C'yi gönderiyor. Burası bakıyor. Escape kod, ağaçta olmayan bir şey var. ASCII kodunu alayım diyor. ASCII kodunu alıyor. Her iki tarafta, şimdi bu ağaç burada da var biliyorsunuz, aynısı. Şimdi bu ağaca bir de C'yi eklemesi gerekiyor.
+
+81
+00:18:57,811 --> 00:19:05,531
+C, bir adet gelmiş C. Belki de ağaç şöyle olacak artık. Şurayı silin.
+
+82
+00:19:12,339 --> 00:19:24,419
+Burayı alayım. Şurası Escape olacak. Bir adet. Burası da C olacak. Bu da bir adet. Yapamadım. Aynı ağaç burada da var.
+
+83
+00:19:24,751 --> 00:19:30,011
+Bu işlem buradaki input bitene kadar devam edecek.
+
+84
+00:19:30,551 --> 00:19:36,931
+Şimdi burada aslında ne görüyorsunuz? Escape sembolünün frekansını hiç değiştirmiyorum.
+
+85
+00:19:36,931 --> 00:19:47,671
+Çünkü escape sembol eninde sonunda artık bitecek. Her karakter, gelen karakterler bir kere geldikten sonra escape'e ihtiyaç yok.
+
+86
+00:19:52,751 --> 00:19:59,991
+Her büyümesinde escape kodu aşağı seviyelere inecek ve kodu sürekli değişecek.
+
+87
+00:19:59,991 --> 00:20:06,411
+Yine dinamik ufanda ne görüyoruz? Mesela B'nin kodu 1-0 iken,
+
+88
+00:20:10,420 --> 00:20:18,640
+Ya da burada yine aynısı rastladı. Herhangi bir sembolün kodu ağaç değiştiği vakit değişebilir.
+
+89
+00:20:19,560 --> 00:20:32,340
+Öyleyse bir dökümanın başında ağ varken kodu farklı olarak kodlanabilir. Ortalarındayken ağ farklı kodlanabilir. En sonuna geldiğinde ağ farklı kodlanabilir.
+
+90
+00:20:32,340 --> 00:20:38,340
+Ama ağının neyle kodlandığının hiçbir önemi yok. Çünkü burada gördüğünüz kod...
+
+91
+00:20:38,420 --> 00:20:40,220
+gibi bir header bilgisi yok.
+
+92
+00:20:40,980 --> 00:20:42,340
+Hemen her iki taraf
+
+93
+00:20:42,340 --> 00:20:44,580
+aynı anda ağacı oluşturduğu
+
+94
+00:20:44,580 --> 00:20:46,240
+için o an ağanın
+
+95
+00:20:46,240 --> 00:20:48,259
+hangi koda sahip olduğunu
+
+96
+00:20:48,259 --> 00:20:50,460
+ağaç üzerinden zaten görüyor.
+
+97
+00:20:51,060 --> 00:20:52,279
+Bir header bilgisi
+
+98
+00:20:52,279 --> 00:20:54,140
+olmadığı için ağanın
+
+99
+00:20:54,140 --> 00:20:56,120
+farklı farklı kod değerlerini
+
+100
+00:20:56,120 --> 00:20:58,000
+nasıl göndereceğim diye de
+
+101
+00:20:58,000 --> 00:21:00,200
+bir problemim olmayacak.
+
+102
+00:21:03,059 --> 00:21:26,759
+Şimdi kısacası dinamik Huffman bu şekilde çalışıyor. Fakat yine geçen hafta şöyle bir şeyden bahsetmiştik. Huffman ağacını oluştururken işte toplam değerlerin aynısı. Bir şeyde varsa mesela şurada 7 diye bir değer var. Ben iki tane değerimi, stem volumin olasılıklarını topladım, 7 çıktı.
+
+103
+00:21:31,059 --> 00:21:42,099
+Bu da sağına yazıyordum. Demiştim ki, dinamik ufman kullanmıyorsak ister sola yaz, ister sağa yaz hiçbir şey fark etmez. Çünkü entropin aynı çıkar.
+
+104
+00:21:42,963 --> 00:21:53,544
+Ama dinamik huffman kullanıyorsak yazacağın yer varyansı küçük olan hangisi ise onu yapmalısın.
+
+105
+00:21:53,544 --> 00:22:03,384
+Şimdi varyansın küçük olması neydi? Şuydu. Şimdi ben varyansı çok büyük olan kodlamayı seçmiş olsaydım.
+
+106
+00:22:03,440 --> 00:22:31,440
+Anlamış olacaktı. Varyansın büyük olması, sembollerin bit uzunlukları arasında bariz farklılıklar var. Yani ne demek? Öyle kodlarım var ki benim. Nerede? 1 bit uzunluğunda olmuş, arkadan 6 bit gelmiş, arkadan 7 bit gelmiş, arkadan 10 bit, arkadan 17 bit. Bu kodlar arasındaki bit uzunlukları farklı. Yani büyük değişimler var.
+
+107
+00:22:31,440 --> 00:22:41,000
+Buradaki varyans büyüktür. Benim dinamik ofman'da varyansı küçük seçmeliydim. O da neydi? Bir tane sembolüm olsun.
+
+108
+00:22:41,619 --> 00:23:02,200
+Yine mouse'cuğum gitti. Bir, öteki 2 bit uzunluğunda, öteki 3 bit uzunluğunda, bir 3 bit uzunluğunda daha var, daha var. İşte 5 bit uzunluğunda var. Kodlar arasındaki değişimler küçük. Kodlar arasındaki, yani bit uzunlukları arasındaki değişim küçükse varyans küçük demektir.
+
+109
+00:23:09,619 --> 00:23:18,519
+B, A, 17 bit uzunluğunda olsun.
+
+110
+00:23:18,996 --> 00:23:42,016
+B'de 3 bit uzunluğunda olsun. Şimdi ben ilk önce A'yı aldım. 17 bit uzunluğunda buraya gönderdim. Arkasından da 3 bit uzunluğundaki C'yi gönderdim. Ama bu taraf bu 17 bitlik uzunluğundaki kodu A üzerinde çözene kadar buraya geldi. 3 bitlik sıraya girdi beni de çöz diye.
+
+111
+00:23:46,996 --> 00:23:54,716
+Şurada bir B daha olsun. Bir 3 bitlik daha geldi. Burada ne oluyor? Habire çözülmeyi bekleyen kotlar oluyor.
+
+112
+00:23:54,716 --> 00:24:08,076
+Çünkü kotların bit uzunlukları arasındaki mesafeler büyük. Yani 17 biti çözmekle 3 biti 2 biti çözmek farklı.
+
+113
+00:24:08,636 --> 00:24:14,716
+Eğer varyanslar küçük olsaydı buraya gelen diyelim ki 4 bit olacaktı. Bu 3 bit gelene...
+
+114
+00:24:14,996 --> 00:24:35,456
+Bu 4 biti çözerdi. Arkasından bir 3 bit. Böyle ucu ucuna bunları yetiştirebilirdi. Belki şurada küçük bir buffer alanımız açılırdı. Bekleme için burada kodlar dursun diye. Ama varyansı büyük bir kod seçtiğim vakit ben bu buffer alanını çok büyük seçmem lazım.
+
+115
+00:24:42,996 --> 00:24:50,176
+Bilgiler bittiği halde buraya hepsi aynı tez zamanında ulaşamayacak, açılamayacak.
+
+116
+00:24:50,536 --> 00:24:59,696
+Kızın önemli olduğu durumlarda tabii bunu kimse tercih etmez. O yüzden varyansı küçük olan kodları tercih etmeliyiz.
+
+117
+00:25:00,616 --> 00:25:05,096
+Böylece bu varyans konusunu da anlatabilmiş olduk.
+
+118
+00:25:05,096 --> 00:25:05,896
+Peki.
+
+119
+00:25:06,579 --> 00:25:26,759
+Nasıl oluşturulur? Aslında size örnekle anlatmaya çalıştım. Burada belirli bir aşamaya kadar gelmiş bir ağacım var. İşte A bugüne kadar bir adet karşıma gelmiş. E dokuz adet karşıma gelmiş. En fazla E geldiği için bu bir bitle kotlandı.
+
+120
+00:25:34,579 --> 00:25:57,079
+Burası 1, burası 0, burası 1. A'nın kodu nedir? 0, 0, 0. Ve A 3 bitlik, 1 adet gelmiş. B 2 adet gelmiş. 1, 2, 3 bitlik. C 2 adet var. 1, 2, 3 bitlik. D de 2 adet var. 3 bitlik. E'den 9 adet gelmiş. 1 bitlik.
+
+121
+00:26:01,491 --> 00:26:18,611
+Evet, zaten bilgi teorisi bana ne diyordu? Karşıma en fazla gelen olay neyse, onun taşıdığı bilgi daha azdı. Taşınan bilgiyi de bit sayısıyla ifade ediyorduk. Daha az bitle gönderiliyor.
+
+122
+00:26:18,611 --> 00:26:29,491
+Şimdi her iki tarafta diyelim ki karşılıklı olarak bu iki ağacı oluşturdu ve durum bu aşamada. Şu ara değerler nasıl çıktı bakalım. Şunların frekans değerleri.
+
+123
+00:26:29,491 --> 00:26:43,771
+Fekans değerlerini topladım. 3. Frekans değerlerini topladım. 2. 4. 3 ile 4'ü topladım. 7. 7 ile 9'u topladım. 16. Aynı o genişletilmiş diziyi oluşturmam gibi.
+
+124
+00:26:43,771 --> 00:26:56,131
+Şimdi yeni bir sembol gelmiş. A sembolü gelmiş. A sembolünü ağaca ekleyecek. Acaba bu ağaç değişiyor mu? Bakalım. A birken.
+
+125
+00:26:56,496 --> 00:27:17,636
+2 oldu. Tamam, A'ya 2 koyalım. B ile topladım. Burası 4 oldu. Burası da 4'tü. 4 ile 4'ü topladım. 8. 9 hala 8'den büyük. 8, 9, 17. Bir tane A değerinin gelmesi gördüğünüz gibi ağacı değiştirmedi. Ağaç yine aynı ağaç.
+
+126
+00:27:18,048 --> 00:27:34,927
+Şimdi bir tane daha A gelmiş. Üçüncü A geliyor. Şimdi üçüncü A gelince bakın ağacın şekli değişti. Çünkü frekans değeri daha büyük olanlar ne tarafa yerleşiyor? Sağ tarafa yerleşiyor.
+
+127
+00:27:40,880 --> 00:28:06,220
+Sıralamayı bozmayacak şekilde yerleştiğinde 3 nereye gelir? 2'den büyük, 2'den büyük, 2'den büyük. 3 burada bir yere gelecek. Öyleyse bu ağaç yeniden kuruldu. D, B burada 4 etti. C burada 2. A'yı buraya yerleştirdi. 3. 2, 3 daha 5. 4, 5 daha 9.
+
+128
+00:28:06,963 --> 00:28:12,423
+9, 9. Bunlar arka arkaya, herhangi bir değişikliğe gerek yok. Ve 18.
+
+129
+00:28:13,076 --> 00:28:26,756
+Sadece bu bölümde değişti. Yani ben sıralasaydım yine 2, 2, 2, 3 ve 9 ağacı oluştursaydım bu ağaç karşıma çıkacaktı.
+
+130
+00:28:27,436 --> 00:28:35,596
+Şimdi bir tane daha ağ gelmiş. Bir ağ daha geliyor buraya. Bir ağ daha gelirse burası ne olacak? 4 olacak.
+
+131
+00:28:35,596 --> 00:28:41,076
+Ağaçta bir değişim olabilir mi? Bakalım. Eğer burası 4 olursa ne olacak?
+
+132
+00:28:41,076 --> 00:28:50,956
+Ne olur? 4, 2 daha burası 6 olacak. Burası zaten 4. 6, 4 daha 10 olacak ve burası 9.
+
+133
+00:28:50,956 --> 00:29:06,096
+Ne olması gerekiyor? Büyük olanlar sağ tarafa geldiği için, bakın burada bu seviyede 10 ile 9'un yerleri değişecek. Artık 9 bu tarafta.
+
+134
+00:29:07,251 --> 00:29:18,091
+Bu ağacın tamamı da bu tarafa yerleşecek. Bütün A'nın, C'nin, D'nin, B'nin ve E'nin kod değerleri birdenbire değişti.
+
+135
+00:29:18,091 --> 00:29:28,951
+Ve bu işlem devam ediyor. Bakın, işte geldik buraya. Bu şekilde değiştirdik. Buraya bir şey daha gelmiş. Ne gelmiş acaba bakalım.
+
+136
+00:29:34,996 --> 00:30:00,000
+C 2, D 2, B tamam. 2 2 4, 4 2 6, 6 5 daha 11. Burası 9, 11 topladık 20. Bu böyle böyle böyle böyle gitti. Nereye kadar gidecek? Şimdi karşıma şöyle bir problem çıkacak. Bu problemler nedir? Problemlerden bir tanesi.
+
+137
+00:30:00,000 --> 00:30:12,180
+Benim şu toplamları yazmış olduğum değişkenin tipi ne? Byte mi? Byte ise ben buraya maksimum 255 tane.
+
+138
+00:30:12,672 --> 00:30:37,932
+Frekans yazabilirim. Word ise ben buraya 16 bitlik bir sayı yazabilirim. Elimdeki doküman çok büyükse bu frekans değerleri bazen byte olarak tutuyorsam byte'ı taşacak. Word olarak tutuyorsam word'ı taşacak. O zaman ne olacak? O zaman diyor ki bütün frekans değerlerini integer olarak ikiye böl.
+
+139
+00:30:40,672 --> 00:31:05,132
+155, 155, 154, 310 ve 464. Ağaç değişmez. Ağaç yine aynıdır. Frekans değerlerini yarıya getirdim ki getirmezsem ne olur? Mesela burası geldi 255, bir tane A geldi 256. E nereye yazacağım? Bu byte'e bu sığmayacak.
+
+140
+00:31:06,067 --> 00:31:29,307
+Yazamayacağım. Burası 255 diye kalacak ve ben yeni gelen frekans değerlerini kaybedeceğim. O zaman algoritmamda eğer elimdeki dokümanlar çok büyükse bu kontrolü yapmak zorundayım. Bu sayacı kontrol etmek zorundayım. Yani şu en tepedeki root'u kontrol edeceğim. Burası bunun için ayırmış olduğum alanın.
+
+141
+00:31:29,711 --> 00:31:44,251
+Taşıyabileceği maksimum sayıya gelmişse bütün düğüm değerlerini yarıya böleceğim ve bu problemi çözeceğim. Demek ki bu algoritmadaki aksayan taraf sayıcının taşmasıydı.
+
+142
+00:31:52,403 --> 00:32:04,644
+Ben mesela, B'nin kodu nedir şimdi? B'nin kodu bakalım. B'nin kodu, kodları yukarıdan okuyoruz. 1, 1, 1, 1, 4 tane 1.
+
+143
+00:32:08,627 --> 00:32:27,468
+4 tane 1. Atalım. Burada diyelim ki 16 tane bit olsun. Yani 16 bit uzunluğunda bir kodum var. Tamam mı? Peki ben bu kodları nerede tutuyorum? Bu kodları da tuttuğum ya bir byte değişkeni ya da bir word değişkeni.
+
+144
+00:32:27,807 --> 00:32:35,587
+Diyelim ki ben bunu byte'ta tutuyorsam 8 biti geçtikten sonra kod uzunlukları geri kalan nerede tutulacak?
+
+145
+00:32:35,827 --> 00:32:40,768
+Word'te tutuyorsam 16 bitten daha büyük kodları nerede tutacağım?
+
+146
+00:32:40,768 --> 00:32:49,847
+İşte o zaman bir problem yaşıyorum. Bu gibi durumlarda da ya bu şeyi genişleteceğim.
+
+147
+00:32:50,451 --> 00:32:56,192
+Ya da linkli liste kullanacağım. Yani nedir linkli liste kullanmak?
+
+148
+00:32:56,948 --> 00:33:20,668
+Bu diyelim ki benim 17. sıramdaki bir sembol. Elimde bir tane de linkli liste var. Ha diyecek bu 17. semboldeki şeyse git bu 17. göze. Bu 17. gözün göstermiş olduğu yer neresidir bir alan. Buradan da geri kalan bitleri buraya yaz oluşan. Okurken de buradan oku.
+
+149
+00:33:24,948 --> 00:33:42,128
+Biraz da çıktı. Buraya ekstra bir değişkenim olacak. İhtiyacım olursa kullanırım diye. Ona bunların taşıyacak. Yani kodu genişletmem gerekecek. Kodu tuttuğum değişkeni genişletmem gerekecek.
+
+150
+00:33:54,324 --> 00:33:56,064
+O da...
+
+151
+00:33:56,468 --> 00:34:12,788
+Problem çıkarabilir. Yani her şeyin belki ihtiyacım olur diye en büyüğünü kullanmak da saçma. Ama ileride linkli listeye geçecek şekilde kodu yazmak da kompleks. Artık hangisi bana uygun geliyorsa onu yaparım.
+
+152
+00:34:12,788 --> 00:34:24,467
+Ama 16 seviyeyi geçen bir ağaç demek şu demektir. Dökümanın içerisinde çok dengesiz veri dağıldı.
+
+153
+00:34:24,467 --> 00:34:42,068
+Yani bazı öyle semboller var ki çok nadir olarak geçmiş. Çok nadir olarak geçtiği için ister istemez o sembollerin bit değerleri çok uzun olacak. Bu da ağacın uzamasına neden olacak.
+
+154
+00:34:42,068 --> 00:34:52,367
+Ya da şöyle düşünelim, ben sadece karakterleri kokluyorsam hiçbir zaman 16 seviyeli bir ağaç olmaz.
+
+155
+00:34:52,467 --> 00:35:02,568
+Yani beklenmez. Ama diyelim ki ben iki gramları kokluyorum. Yani nedir? Var olabilen bütün ikilileri.
+
+156
+00:35:03,027 --> 00:35:22,907
+Yani mesela A, A benim bir sembolüm olabilir. A, B benim bir sembolüm olabilir. A, Z benim bir sembolüm olabilir. B, A benim bir sembolüm. B, B benim bir sembolüm. 26'nın ikili kombinasyonu neyse o kadar farklı bir sembolüm olur.
+
+157
+00:35:31,027 --> 00:35:50,647
+Ağacımın boyu ister istemez derinliği 16'yı geçecektir. O zaman belki bunları 16 bit olarak değil, 32 bit olarak tanımlayacaksın kopları tuttuğun değişkeni. O yüzden önceden deriyi tanımak da önemlidir.
+
+158
+00:35:59,027 --> 00:36:24,587
+Alırsam, Türkçeyi düşünelim mesela. Düşünmene gerek yok. Yani şöyle düşün, 26 karakter var. İkili kaç tane çıkabilir? Şu kadar sembol çıkabilir. Bir ağaçta her kodu oluşturamadığıma göre bazı kodlar oluşturulamıyor Huffman'da. Çünkü full binary bir tiri çıkmıyor karşıma. O zaman ister istemez ağacın boyu 16'yı geçecektir.
+
+159
+00:36:27,027 --> 00:36:41,907
+Yaparsan ağaç daha derinleşecek. Dörtlü karakterler yaparsan daha da derinleşecek. Bunları düşünerekten olabilecek maksimum sayıyı kullanacağım değişkeni de ona göre karar vermek zorundayım.
+
+160
+00:36:41,907 --> 00:36:45,807
+Evet, Dinamik Ufman'da anlatacaklarım bunlar.
+
+161
+00:36:47,092 --> 00:37:11,531
+Daha hızlı ama daha kompleks olmasının sebebi bu. Ağaç sürekli olarak değişiyor. Bir sembolün kodu döküman içerisinde farklı değerler alabilir herhangi bir anda. Bir an 3 bitken, bir an 5 bite, sonra yeniden 4 bite düşebilir. Bilmiyoruz. Dökümanın içeriğine bağlı bu durum.
+
+162
+00:37:12,884 --> 00:37:15,884
+Sorunuz yoksa bu konuyla ilgili...
+
+163
+00:37:18,084 --> 00:37:20,044
+Boğazım çok kötü oldu.
+
+164
+00:37:24,851 --> 00:37:33,791
+Şimdi hızlı bir şekilde ilerleyeceğim. Çok basit ama kitaplarda görebileceğiniz Hufman'ın farklı versiyonları var.
+
+165
+00:37:34,692 --> 00:37:46,451
+Buraya da yazmışım. Basit fakat az etkili bir yöntem. Az etkili bir yöntem ne demek? Sıkıştırma performansı daha düşük demektir.
+
+166
+00:37:46,451 --> 00:37:49,751
+Silgiyi almışız.
+
+167
+00:37:51,155 --> 00:38:10,096
+Ne zamanlar tercih edilir? Eğer şeyler, elimdeki semboller eşit olasılıklara sahipse, yani eşit olasılıklar demek hepsi illa 0.2 olacak değil. Yani birbirine yakın olasılıklara sahipse bu kodu tercih edebilirsiniz diyor.
+
+168
+00:38:19,155 --> 00:38:39,096
+0.1. Bunu da kullanamazsın. Başarılı sonuç vermez ama öyle sembollerin olur ki olasılıkları hep 0.1, 0.1, 0.09. Böyle birbirine yakın olasılık değerlerin varsa bunu kullanabilirsin. Nasıl bir yöntem?
+
+169
+00:38:40,463 --> 00:38:58,164
+Alphabet'de 4 tane sembol olsun. Bu sembollerin başlangıçta count değerleri sıfır. Bunlara 4 tane sembol içinde çıkarılmış prefix kodlar var. Bunlar da Hufman'dan çıkarılmış kodlar var.
+
+170
+00:38:58,164 --> 00:39:07,864
+Şimdi benim elime ne gelmiş? Bir tane A2 gelmiş. A2 geliyor. Bakıyor A2'nin kodu nedir? 1 sıfırdır.
+
+171
+00:39:08,288 --> 00:39:16,188
+Output String'e 1.0'ı kod olarak yazdık. Şimdi A2 1 oldu. Ne yapmam lazım benim?
+
+172
+00:39:17,076 --> 00:39:22,795
+Olasılığı büyük olan dokümanı daha az bitle ifade etmem lazım.
+
+173
+00:39:22,795 --> 00:39:33,855
+A2 artık bir adet gelmişken bunu iki bitle kodluyorum. A1 hiç gelmemiş. Bunu bir bitle kodlamam adil mi? Hayır adil değil.
+
+174
+00:39:34,395 --> 00:39:40,795
+Sembolyer yerinde kalmak koşuluyla sadece A1 ile A2'yi yer değiştiriyorum.
+
+175
+00:39:41,760 --> 00:39:59,760
+Aynı şekilde frekans değerlerini de değiştirdim. Yani A2'yi ve bir adet olanı aldım. Kendi üstüne çıkardım. A1'i onun yerine getirdim. Sonra elime ne gelsin? Bir A4 gelsin. A4 geldi. A4'ün kodunu 3'ten...
+
+176
+00:40:00,000 --> 00:40:21,460
+3 tane 1. Output Stream'e 3 tane 1'i koydu. Artık A4'ten bir adet var. Bunu daha az bit de ifade etmem lazım. O zaman ne yapacağım? Ben gidiyorum şu A4 ve 1'i alıyorum. Şuradaki A1 ile yer değiştiriyorum. A4 de buraya yerleşti. A1 de buraya geldi.
+
+177
+00:40:28,000 --> 00:40:49,719
+Bunların frekans değerleri. Sonra bir A4 daha gelsin. A4 geldi. A4'ün koduna baktı. 1.0. Output stream'e 1.0 koydu. Artık bunun frekans değeri 2 olacak. 2 olacaksa en fazla A4 kullanılmışsa bunun daha az bitle ifade edilmesi lazım. Yani 1 bitle.
+
+178
+00:40:56,000 --> 00:41:02,399
+2 ile yer değiştirdi. Ve bu işlemem hep bu şekilde devam etti.
+
+179
+00:41:03,188 --> 00:41:29,248
+Tahtaki elindeki input stream bitene kadar. Burada da yine bir problem karşıma çıkar. Ben bu count değerlerini nerede tutuyorum? Byte'da tutuyorsam 255'den sonrası nereye yazılacak? Word'de tutuyorsam 32 bin bilmem bir şeyden sonrası nereye yazacak? Burada da en üst sıradaki count'un değerini kontrol ediyorum.
+
+180
+00:41:31,188 --> 00:41:43,628
+Yaşayabileceği maksimum sayıya ulaştıysa bütün count değerlerini yarıya bölüyorum. Diğerleri yine aynı yerinde kalıyor. Böylece işleme devam ediyorum.
+
+181
+00:41:55,731 --> 00:42:21,612
+Kaynaklar çıkmayacak, problemler çıkmayabilir. Çıkarsa kullanırsın. Ne ala. Ne bileyim, elinde diyelim ki greyscale bir resim olsun. Dört tane renk var. Yani bu dört tane rengin var ya da beş tane rengin var. Oturup böyle bir yöntemi kullanabilirsin. Hiç diğeriyle uğraşmana gerek yok.
+
+182
+00:42:22,132 --> 00:42:26,251
+Yani en ideal bir şekilde sıkıştırmanı yapabilirsin.
+
+183
+00:42:28,351 --> 00:42:34,412
+Husman'da bunu da anlatıp Husman'ı bitirip bir ara vereceğim.
+
+184
+00:42:36,731 --> 00:42:38,251
+Arada bir susmak istiyorum.
+
+185
+00:42:44,152 --> 00:42:48,452
+Canonical Husman. Bu canonical nedir?
+
+186
+00:42:50,003 --> 00:43:06,003
+Neden canonical ismi konulmuş bilmiyorum. Ama amacı şudur. Biliyoruz ki biz Huffman kodlarını oluştururken oluşan Huffman kodları...
+
+187
+00:43:08,115 --> 00:43:25,235
+Yani şöyle yapalım sonra sileyim. Mesela bir ağacım oluşuyor benim. Ağacım şu şekilde oluşuyor mesela. Şöyle şöyle, şöyle şöyle olsun. Sonra bu ağaç işte böyle böyle diyelim. Böyle böyle. Burası da böyle böyle. Böyle böyle gitsin.
+
+188
+00:43:26,195 --> 00:43:32,816
+Bir binary tree ama full binary tree değil. Yani şunlardaki kotlar oluşmamış.
+
+189
+00:43:33,940 --> 00:43:58,980
+Şurada kalemimi değiştireyim, mavi diyeyim. Aslında burada da bir kod oluşabilirdi. Burada da bir kod oluşabilirdi. Sonra bunun altında da böyle. Bunların altında bunlar bunlar. Aynen burası burası. İşte burası burası. Şu seviyeye gelene kadar bunların hepsi oluşabilirdi. Ama oluşmuyor. Demek ki Hufman kodlamada oluşmayan bir sürü kodlar da var.
+
+190
+00:43:59,956 --> 00:44:12,556
+O yüzden bu Hufman prefiks kodlarıyla sıkıştırılmış olduğum dosyaların header'ları oldukça büyük olur.
+
+191
+00:44:12,556 --> 00:44:25,036
+Mesela ben size header'a bu frekans değerlerini ya da kodları almayalım, sadece ağacı gönderelim demek aslında daha sonradan geliştirilmiş bir algoritma.
+
+192
+00:44:26,516 --> 00:44:45,715
+Bu algoritma ile ağacı gönderiyorum. Ama birçok Huffman koduna bakarsanız bu header'da frekans değerlerini ve sembolleri gönderdiğini ya da kodları ve frekans değerlerini, kodları ve sembolleri gönderdiğini görebilirsiniz.
+
+193
+00:44:48,500 --> 00:45:08,180
+Semboller çok farklı bit uzunluklarında olduğu için bu headerlar çok büyük oluşur. Bu headerlaki büyüklüğü azaltmak için ve headerı daha hızlı açabilmek için Huffman kodlarını canonical Huffman koda çeviriyorlar.
+
+194
+00:45:11,123 --> 00:45:22,123
+Header daha küçük oluyor. Header'dan bunları açıp ondan sonra aşağıdaki kodları çözebiliyorlar. Yani kısacası şurayı silelim.
+
+195
+00:45:22,123 --> 00:45:34,123
+Şurayı silelim. Eğer ben çıkarmış olduğum prefiks kodları header'da göndereceksem header'ım çok büyük oluyor. Büyük olmasının sebebi de nedir?
+
+196
+00:45:34,452 --> 00:45:45,852
+Oluşturduğum Hufman ağacındaki bütün kotlar oluşmadığı için kotlar arasındaki bit uzunlukları birbirinden oldukça farklı oluyor.
+
+197
+00:45:45,852 --> 00:45:50,652
+Ve ben header'ı da en büyük bite göre hazırlamalıyım.
+
+198
+00:45:50,932 --> 00:45:52,612
+Yani yine şöyle örnek vereyim.
+
+199
+00:45:52,972 --> 00:45:56,892
+A diyelim ki 3 bitlik, B diyelim 5 bitlik.
+
+200
+00:45:57,556 --> 00:46:07,135
+C diyelim ki 7 bitlik. Şimdi ben header'da bunu gönderirken A'nın 3 bitlik kodunu arkasından
+
+201
+00:46:08,563 --> 00:46:28,363
+İşte diyelim ki B'nin 5 bitlik kodunu 3, 4, 5, C'nin 7 bitlik kodunu tıt tıt tıt. Arkasına A, B, C'yi koyduğunda karşı taraf A'nın kaç bit olduğunu bilmez. 3 mü, 5 mi bilemez. O yüzden ne yaparlar? En büyük kod nedir? 7 bit mi?
+
+202
+00:46:36,563 --> 00:46:52,583
+C'ye de yine 7 bitlik alan ayrılır. Ama burada gereksiz olarak ayrılmış 4 bit var. Burada gereksiz olarak kullanılan 2 bit var. İşte bu fazlalıklar header'ın boyunu uzatır.
+
+203
+00:46:52,583 --> 00:46:59,803
+Hader'ın boyunu uzatmamak amacıyla burada canonical puffman kodlaması kullanılır.
+
+204
+00:47:00,211 --> 00:47:13,172
+Canonical Hufman kodlaması peki nasıldır? Hemen onu da size bir örnekle anlatalım. Silelim burayı. Nasıl oluşturulur?
+
+205
+00:47:13,172 --> 00:47:21,972
+Canonical Hufman kod oluşturma işleminin iki aşaması var. Birinci aşamada yine Hufman kodlarını oluşturuyorum.
+
+206
+00:47:22,420 --> 00:47:33,860
+Arkasından da alfabedeki her bir karakterin sahip olduğu Huffman kod uzunluklarını kullanarak da canonical Huffman kodu oluşturuyorum.
+
+207
+00:47:33,860 --> 00:47:41,760
+Ne demek istedim? Anlatacağım. Ne işe yarıyor? İşte ne işe yaradığını demin anlattık.
+
+208
+00:47:42,159 --> 00:47:46,659
+Hederdeki bilgiyi küçültmek amacıyla kullanıyoruz.
+
+209
+00:47:51,572 --> 00:48:11,572
+Neden küçültüyorum peki? Benim bazen hızlı çözüm almam gerekiyor. Mesela sesi sıkıştırdım, görüntüyü sıkıştırdım ya da arşiv dosyasını sıkıştırdım. İhtiyacım oldu. O header'ın açılmasını mı bekleyeceğim? Ses hemen klik diye bastığımda sesi...
+
+210
+00:48:11,731 --> 00:48:24,192
+Dinlemek istiyorum. Oturup onun açılması için yani milisaniyeler bile bazen bizim için çok önemli olabiliyor. Bekleme istemiyorsam Canonical Hoffman'ı kullanıyorum.
+
+211
+00:48:24,192 --> 00:48:33,211
+Şimdi iki aşamadan oluşur dedik. Birinci aşaması önce Hoffman ağacını kullanarak sembolleri çıkaracağım.
+
+212
+00:48:34,068 --> 00:48:44,268
+İşte kodlanacak alfabede yer alan her bir karakter için Huffman prefiks kod değeri geleneksel Huffman yöntemiyle oluşturulur. Bunu biliyoruz.
+
+213
+00:48:45,128 --> 00:48:48,648
+Bundan sonrası canonical Huffman'ı anlatıyor.
+
+214
+00:48:49,088 --> 00:49:08,368
+Ne yapacağız? Prefiks kod uzunlukları büyükten küçüğe doğru sıralanacak. Yani çıkardığım Hoffman kodları da değerlerini büyükten küçüğe doğru sıralayacağım. En uzun prefiks kod değerini length max diye bir değişkene atacağım.
+
+215
+00:49:17,088 --> 00:49:36,028
+L-Max uzunluğunda kaç tane varsa sıfırdan başlayarak L-Max'a gelinceye kadar sıfır değerini bir ekleyerek yeni canonical Huffman kodları oluşturacağım.
+
+216
+00:49:43,699 --> 00:50:04,459
+Ben, bundan da iki tane var. L-max'ı 3 alacağım. 3 tane 0. 2 tane sembol çıkaracağım. Buna 1 ekleyeceğim. 1. Bir daha ekleyeceğim. 2 diye devam edecek. Biraz sonra örneklerimizi göstereceğim.
+
+217
+00:50:10,804 --> 00:50:20,043
+Bu prefiks uzunluğu neyse onu da Lmax-1'e atacağım. Bundan da kaç adet varsa onu da K2'ye atacağım.
+
+218
+00:50:21,244 --> 00:50:31,923
+Yine Lmax-1'den kaç tane bit alacağıma da bir önceki Lmax'ın kaç bit uzunluğundaysa o kadar.
+
+219
+00:50:32,467 --> 00:50:47,487
+Ön kodunu alacağım. Önceki prefiks kod alını alacağım. Yeniliğe max'a atacağım. K2 tane canonical hoofman kod oluşturacağım. Bu işlemi bütün uzunluk değerleri bitene kadar tamamlayacağız.
+
+220
+00:50:47,487 --> 00:50:58,947
+Şimdi bunu bir örnekle anlatalım. Çok daha kolay olacak. Benim elimdeki metinde... Yine masum yok oldu.
+
+221
+00:51:03,219 --> 00:51:11,099
+Benim elimdeki metinde A, B, C, D, E, F, G ve H diye semboller var.
+
+222
+00:51:11,339 --> 00:51:16,259
+Alfaben bunlardan oluşuyor. Ben bunların frekans değerlerini çıkardım.
+
+223
+00:51:16,599 --> 00:51:22,339
+Bunların Hufman ağacını elde ettim ve Hufman kodlarını oluşturdum.
+
+224
+00:51:23,579 --> 00:51:28,299
+Buraya kadar bir problem yok. Sonra bu Hufman kodlarını sıraladım.
+
+225
+00:51:28,851 --> 00:51:42,351
+A'nın kod uzunluğu 5 bitmiş, B'ninki 5 bit, C kodu 5 bitmiş, D kodu 5 bit, E 3 bit uzunluğunda, F 2 bit uzunluğunda, G 2 bit, H de 2 bit.
+
+226
+00:51:42,351 --> 00:51:51,632
+Yani bunların hepsi bu 5-5'ler Kufman kodlarının bit uzunluklarını büyükten küçüğe doğru sıralıyorum.
+
+227
+00:51:52,467 --> 00:52:09,767
+Şimdi canonical hoofmanı oluşturacağım. Lmax'a gidiyorum. En büyük bit uzunluğu nedir? 5. Lmax'a 5'i koyuyorum. Kaç tane 5 uzunluğunda kod var? 4 tane. K'ya da 4'ü koydum.
+
+228
+00:52:10,767 --> 00:52:19,987
+Şimdi Lmax 5 ise anlamı şudur. 5 bit uzunluğunda 4 tane kod yaz.
+
+229
+00:52:20,400 --> 00:52:26,860
+5 bit uzunluğunda 4 tane kod yazacağım ama ilk kod 00 ile başlıyor.
+
+230
+00:52:28,060 --> 00:52:32,780
+5 bit uzunluğunda 0 ile başlayan bir kod yazdım.
+
+231
+00:52:34,020 --> 00:52:35,960
+Kaç tane sembol var? 4.
+
+232
+00:52:36,700 --> 00:52:41,660
+Birincinin kodu bu oldu. Yani A'nın kodu bu oldu.
+
+233
+00:52:43,560 --> 00:52:45,600
+Arkasındakine 1 ekledim.
+
+234
+00:52:47,123 --> 00:53:07,123
+1 oldu. Bu da gitti. B'nin kodu oldu. Buna 1 ekledim. 2 oldu. Bu da gitti. C'nin kodu oldu. Buna 1 ekledim. 3 oldu. Bu da gitti. E'nin kodu oldu. Bakın bütün kodlar...
+
+235
+00:53:09,012 --> 00:53:22,311
+4 tane sembol'e 5 bit uzunluğunda kod ekledin. Bana diyebilirsiniz ki bunlar zaten 5 bitmiş. Sen de gittin bunlara 5 bit ekledin. Ne olacak?
+
+236
+00:53:23,380 --> 00:53:47,679
+Sorabilirsiniz. Biraz sonra ne olduğunu size söyleyeceğim. Tamam, bu bitti. Şimdi L-max-1'e geldim. Sırada ne var? 3 bit uzunluğunda bir kod var. 3'ü yazdım. Kaç tane 3 bit uzunluğunda kod var? Bir tane. K2'ye de 1'i yazdım. Peki, bu kaç bitle başlayacak?
+
+237
+00:53:48,563 --> 00:54:12,103
+Şuradaki sembolü aldım. En son biteni. Şunu farklı renkle yapalım. En son biteni aldım. En son biteni buraya getirdim. Tamam mı? Bu kaç bitlik? 3. Soldaki ilk 3 prefiks ön kodunu aldım. Yani 3 tane sıfıra aldım.
+
+238
+00:54:15,699 --> 00:54:31,279
+Bir ekleyerek yeni bir kod değeri oluşturdu. Bir adet kod ekleyeceğim için, bulacağım için bu işlem bitti. Bu da gitti. Kimin kodu oldu? Şuradaki E'nin kodu oldu.
+
+239
+00:54:33,699 --> 00:54:42,599
+Bir sonraki adıma nasıl geçtim bakın. En son bıraktığım kod neydi? Bu. Yeni L maksimum değeri nedir? 3.
+
+240
+00:54:43,056 --> 00:55:06,556
+Bunun soldaki 3 tane prefiks kodunu aldım. Bu da 00'dır. Bunu aldım başlangıç olarak. 1 ekledim yeni kod elde ettim. Bir sonraki lemaks eksi 1 değerim. Yine kalemimizi değiştirelim. Bir sonraki lemaks eksi 2 değerim ne olacak? 2 uzunluğunda var. 2'yi aldım.
+
+241
+00:55:06,963 --> 00:55:12,004
+Kaç tane 2 uzunluğunda var? 3 tane. Buraya da 3'ü yazdım.
+
+242
+00:55:12,963 --> 00:55:20,124
+Peki bunun kodlarını oluşturmak için ne yapacağım? Bunun en sondaki değerini alacağım.
+
+243
+00:55:22,584 --> 00:55:28,364
+Baştan lemaks adet 1'i alacağım. Baştan lemaks 2 adet 1 nedir? Bu.
+
+244
+00:55:28,963 --> 00:55:30,624
+Sıfıra aldım.
+
+245
+00:55:31,315 --> 00:55:54,135
+1 ekledim, 0 1'i elde ettim. Bu 0 1 kimin kodu oldu? F'nin kodu oldu. Bu 0 1'i aldım, 1 ekledim, 1 0 oldu. Bu 1 0 kimin kodu oldu? G'nin. Bu 1 0'ı aldım, 1 ekledim, 1 1 oldu. Bu 1 1 de kimin kodu oldu? H'nin kodu oldu.
+
+246
+00:55:54,963 --> 00:56:02,304
+Şimdi sorunuz şuydu. Hocam FGH 2 bit. Siz de gittiniz. Bunlara 2 bit yazdınız.
+
+247
+00:56:02,943 --> 00:56:23,284
+İşte bunlar 3 bit, bu da zaten 3 bit, bunlar 5 bit ama bunlar da 5 bit. Nedir farklı olan? Farklı olan şudur, bunlar arasındaki geçişler, hepsi bütün kodlar var. Bakın 0, 1, 2, 3.
+
+248
+00:56:23,891 --> 00:56:46,271
+Binary olarak hepsi gidiyor. Burası 1, burası 1, 2 ve 3. Bunların aslında orijinal kodlarında ben A'nın 5 bitlik kodu atıyorum. Belki şöyle bir şeydi. B'nin 5 bitlik kodu belki şöyle bir şeydi. C'nin 5 bitlik kodu atıyorum. Şöyle bir şeydi.
+
+249
+00:56:48,563 --> 00:56:55,563
+Bir düzen yok. Bunları rahatlıkla çıkaramam. Ama bunları rahatlıkla çıkarabilirim.
+
+250
+00:56:56,659 --> 00:57:04,699
+Kısacası Hufman kodları bu şekilde kullanılıyor. Bunlar günümüzde kullanılıyor mu? Hayır, kullanılmıyor.
+
+251
+00:57:04,699 --> 00:57:20,259
+Ama çünkü daha sonra ağaç göndermeye başladık. Ağacın kendisini gönderiyorsak zaten bu gibi şeylerle hiç uğraşmaya gerek yok. Ben elimdeki veriyi çok hızlı bir şekilde gönderebiliyorum.
+
+252
+00:57:20,259 --> 00:57:21,239
+Evet.
+
+253
+00:57:22,036 --> 00:57:25,036
+Bu slide'ımı...
+
+254
+00:57:25,215 --> 00:57:33,715
+Burada bitiriyorum. Şimdi bir 15 dakika ara vermek istiyorum. Onu çeyrek geçe yeni bir konuyla başlayacağım.
+
+255
+00:57:33,715 --> 00:57:50,775
+Yeniden şu an şeyimiz nedir bizim? Kaç kişi oldu? 22. Seminer konuları içinizde seçmemiş olanlarınız varsa lütfen seminer konularınızı o dokümana ekleyin. Drive'daki dokümana ekleyin.
+
+256
+00:57:53,215 --> 00:58:03,016
+Artık baskı uygulayacağım. Çünkü bu hafta sonuna kadar benim seminer programını çıkarmam lazım ki kendinizi ona göre ayarlayın.
+
+257
+00:58:04,115 --> 00:58:17,016
+Bir de size yeniden mail göndereceğim. Finalde proje mi yapmak yoksa yazılı sınava mı girmek istersiniz? Hangisini tercih edelim hocam diye sorarsanız.
+
+258
+00:58:19,155 --> 00:58:24,775
+Bilmiyorum. Yani yazılı sınav ne kadar ağır olur?
+
+259
+00:58:26,739 --> 00:58:36,459
+Sonuçta bilmediğim şeyleri sormam ama sorduğum sorular da öyle kitaptan bakıp arka planda yazabileceğiniz şeyler de olmayabilir.
+
+260
+00:58:36,779 --> 00:58:43,099
+Ama konuları eğer dinlemiş ve iyi bir şekilde hazmetmişseniz yapamayacağınız bir durum yoktur.
+
+261
+00:58:43,099 --> 00:58:50,179
+Rahatlıkla yapabilirsiniz ya da bir proje yazarsınız. Proje birkaç proje konusu ben vereceğim.
+
+262
+00:58:50,339 --> 00:58:54,099
+Yol konuyu seçersiniz ya da kendiniz bir öneri getirirsiniz.
+
+263
+00:58:54,739 --> 00:58:59,919
+Ama onu Mayıs ayı içerisinde halledebiliriz. Önceliğimiz seminer konusu olacak.
+
+264
+00:59:00,379 --> 00:59:05,059
+Evet, şimdi ara veriyorum izninizle. Çeyrek geçe görüşelim.
+
+265
+00:59:06,419 --> 00:59:10,359
+Sorunuz olursa dersin başında sorarsınız. Şimdilik hoşçakalın.
+
+266
+00:59:12,499 --> 00:59:13,459
+Tamam.
+
+267
+00:59:14,579 --> 00:59:15,479
+Tamam hocam.
+
+268
+01:15:34,228 --> 01:15:59,747
+3 dakika geciktim. Kusura bakmayın. Bir yere okumaya dalmışım. Sahte kontrol ediyordum ama sarmıştım. Evet. Geldik mi? 20 kişiydik. 22 olmuşuz. İyi. Şimdi notlarımı da yalana hazırlıyorum. Çünkü bazı şeyleri bazen bakmam gerekiyor.
+
+269
+01:16:01,747 --> 01:16:14,707
+Bunları bitirdik. Okey. Şimdi biriniz ses versin. Tamam. Share Screen diyelim.
+
+270
+01:16:19,287 --> 01:16:28,448
+Dedik. Şunu da şehir ettik. Görüyor musunuz? Evet hocam.
+
+271
+01:16:31,252 --> 01:16:44,292
+Şimdi bu slide'da da, bu da istatistiksel yöntemler 5 diye geçiyor ama 5.1, 5.2 diye koydum. Çünkü çok fazla şekil olduğu için yüklerken problem yaşıyorum bazen. İkiye böldüm.
+
+272
+01:16:46,432 --> 01:16:50,124
+Şimdi bu dersin başında da...
+
+273
+01:16:53,492 --> 01:17:18,952
+Fakslarda ve modemlerde kullanılan sıkıştırma yöntemlerinden bahsedeceğim. Bunlardan bir tanesi MNP5 Microcom Network Protocol diye geçen bir de yine MNP7 diye geçen modemler için geliştirilmiş sıkıştırma yöntemleri.
+
+274
+01:17:19,667 --> 01:17:38,368
+İki versiyonu var dediğim gibi 5 ve 7'si. En çok tercih edilene 5 çünkü 5 daha kolay. 7 ise biraz daha komplike. Daha hızlı ama daha komplike. O yüzden basit olanı tercih ediyorlar genelde.
+
+275
+01:17:38,368 --> 01:17:44,108
+Ve bunlar bazen modemlerin üzerinde seçimlik olarak yer alıyor.
+
+276
+01:17:45,332 --> 01:18:10,772
+MNP5, önce ondan başlayalım. İki aşamalı bir yöntem. İlk başlangıcında Run-Land Coding yapıyoruz. RL yöntemini görmüştük. Arkasından da Adaptive Frequency Encoding geliyor. Adaptive Frequency Encoding görmedik demeyin. Hiçbir şey yok zaten. Frekansa bağlı olarak bir kodlama yöntemi. Örnek üzerinde göstereceğim.
+
+277
+01:18:11,252 --> 01:18:35,832
+RL'nin birkaç tane versiyonu vardı. MNP5'te kullanılan versiyon. Tekrar eden 3 tane şey varsa, sembol varsa onları sıkıştırmadan gönderiyor. Eğer 3 ve 3'den fazla sembol varsa 3 taneyi arka arkaya yazıp 4. baytada tekrar sayısını yazıyor. Bu şekilde çalışıyor.
+
+278
+01:18:37,011 --> 01:18:46,811
+Şimdi bir örnek üzerinde görelim. Yukarıda bir tablo var. Bu tabloyu zaten kitaptan aldım. Baktığınızda da görürsünüz.
+
+279
+01:18:46,811 --> 01:18:52,871
+Önce bu tablodaki olayları bir size anlatayım. Bunlar nedir? Neye karşılık geliyor?
+
+280
+01:18:54,072 --> 01:19:00,811
+İşte iki aşamadan oluşuyor demiştik. Birinci aşamanın sonuçlarını...
+
+281
+01:19:01,363 --> 01:19:25,863
+Alıyorum. Hufman kodunun bir versiyonu olarak anlattığımız bir yönteme uyguluyoruz. Şimdi ilk aşama neydi? İlk aşama elimdeki sembollerin durumlarına bakarak RL'ye göre kodluyorum. RL'ye göre kodlamak neydi? Üç taneden fazla tekrar eden varsa üç tanesini yazıp dördüncü bayrağı frekans değerine koyuyorduk.
+
+282
+01:19:29,363 --> 01:19:42,804
+RL'ye hiç iyi bir sonuç vermiyorken burada neden bunu kullanıyoruz? Çünkü ne modemlerde ne de fakslarda döküman döküman olarak gitmiyor. Resim olarak gidiyor.
+
+283
+01:19:42,804 --> 01:19:57,363
+Ve o resimlerde siyah-beyaz ya da greyscale olarak karşı tarafa gidiyor ve oradaki her bir nokta bir piksele ya da pelse karşılaşıyor.
+
+284
+01:19:57,363 --> 01:20:23,903
+Yani orada gördüğüm şey benim bildiğim karakter değil. Bir I harfi mesela, boşuna bu bilgiyi veriyorum ama mesela şurada I yazdım. Bu I kaç tane scanline'dan oluşuyor? Diyelim ki 1, 2, 3, 4, 5, 6 tane scanline'dan oluşuyor. 6 tane kırmızı nokta ya da 6 tane siyah nokta bana I harfine karşılık geliyor.
+
+285
+01:20:25,460 --> 01:20:30,460
+Peki şu tablo nedir? Bu tablo yine bir hufmanın...
+
+286
+01:20:30,612 --> 01:20:36,451
+Basit bir versiyonunu göstermiştim. Oradaki tablolara benziyor ama biraz daha karışık.
+
+287
+01:20:37,032 --> 01:20:48,832
+256 tane satırı var. 0'dan 255. byte'a kadar 256 tane farklı satırım var. Bunların alt alta konulduğunu düşünün.
+
+288
+01:20:48,832 --> 01:20:58,532
+Zaten 34'ten sonrasını koymamışız. Yani aynı kural gittiği için konulmamış. Ve tablo iki sütundan oluşuyor.
+
+289
+01:20:58,612 --> 01:21:13,791
+Stoon'un bir tanesi frekans değerleri. Başlangıçta bu frekans değerleri sıfır. İkincisi de token adı verilen kodlardan oluşuyor. Bu tokenlar nasıl oluşuyor? Bunlara da geleceğiz.
+
+290
+01:21:15,172 --> 01:21:23,051
+İkinci kolon token dedik. Bu tokenlar da iki bölümden oluşuyor gördüğünüz gibi. Şu aralarda şu çizgiler var.
+
+291
+01:21:24,979 --> 01:21:44,239
+Token'ın sol tarafı başlık header bilgisi. Sağ tarafı da kod bilgisi. Yani bunun şu sol tarafı header, sağ tarafı ise kod bilgisi. Peki bunlar nasıl çıkarılıyor bu kodlar? Oturup ağaç mı oluşturuyorum? Hayır.
+
+292
+01:21:44,979 --> 01:22:09,799
+Bu kodlar çıkarılırken üç tane farklı durum dışında her şey çok kolay. Nedir bu üç tane farklı durum? Şu ilk ikisiyle şu sonuncusu hariç diğerleri aynı. Yani aynı kuralla işleniyor. Nedir bu aynı kural? Şudur. Şuraya bakıyorum.
+
+293
+01:22:11,636 --> 01:22:28,736
+Ne var burada? 3 bit ile yazılmış 1 var. Bu diyor ki senin bir bitlik iki tane kodun var. Bunun bir tanesi 0, bir tanesi 1. Birden sonra 2'ye geldim. Burada 2 var.
+
+294
+01:22:39,283 --> 01:23:03,384
+Yani 4 tane farklı kod yazarsın 2 bit ile 00 01 01 01 01. Yani header'ın şurası 0'dan başlıyor ama burası özel bir durum geçtim. Burada 1 yazıyor, burada 2 yazıyor. Ondan sonra bakın burası 3. Ondan sonra bir yerde 13 14.
+
+295
+01:23:06,068 --> 01:23:08,068
+3, 1 dakika.
+
+296
+01:23:11,068 --> 01:23:15,068
+Burası birdenbire 7'ye geçti diye düşünüyorum.
+
+297
+01:23:15,123 --> 01:23:34,463
+Burada grey kodlama mı yapılıyordu? Tamam sırasıyla gelelim. Şimdi burada bir yazıyor. 2 üzeri birden iki tane kod oluşabilir. Bir bitlik iki tane kod var. Şurada iki yazıyor. 2 üzeri 2'den dört tane kod oluşur. İşte dört tane kod var.
+
+298
+01:23:34,996 --> 01:23:54,015
+2 bitlik uzunluğunda. Şurası 3 yazıyor. 2 üzeri 3'ten 8 tane kod yazılır. 3 bitlik. 3 bitlik 8 tane kod var. 0, 1, 2, 3, 4, 5, 6 ve 7.
+
+299
+01:23:56,884 --> 01:24:22,484
+Ama niye burası 7 oldu? Şimdi onu merak ettim. Gray kodlamaya göre koyuyor. Çünkü prefiks özelliğini sağlaması lazım. Buraya 4 yazamıyorum. Gray kodlamadan da size bahsetmiş miydim? Hayır, bahsetmemiştim. O da gray kodlama da şudur. Şimdi benim binary kodlarım nedir? 00, 01.
+
+300
+01:24:23,891 --> 01:24:34,711
+Ondan sonra 2, 3, 4, 5, 6 ve 7.
+
+301
+01:24:35,731 --> 01:25:03,412
+Bunlar binary kodlama. Şimdi bir koddan bir koda geçerken bir bitten fazla değişmeler olabiliyor. Mesela burada sadece bu değişmiş. Ama bu koddan bu koda geçerken iki bitte değişme olmuş. Bu koddan bu koda geçerken yine bir bitti. Bu koddan bu koda geçerken bir bu bitte değişme, bunda değişme, bunda değişme. Üç bitte değişme olmuş. Burada bir bitti. Burada değişim iki bitti.
+
+302
+01:25:03,731 --> 01:25:23,992
+Fakat grey kodlamada sadece her bir geçişte bir bit de değişim olur. Mesela buraya da grey kodlamayı yapalım. Şimdi bir bit de değişik olacak. İşte bu. Bir bit de değişim oldu. Bir sonraki aşamada sadece bir bitin değişmesini istiyorsam burası bir olur.
+
+303
+01:25:26,068 --> 01:25:36,128
+Bir sonrakinde bir bitin değişmesini istiyorsam, sadece neresi değişir? Şunu değiştiririm.
+
+304
+01:25:40,148 --> 01:25:52,988
+Sonra bir bit de değişme olsa, buraya bir yapsam bununla aynı olur. Buraya sıfır yapsam yukarı ile aynı olur. Öyleyse burasını bir, bunları aynı bırakmalıyım. Bu da grey kodlamadır.
+
+305
+01:25:53,228 --> 01:26:00,988
+İşte burada da aynı şey uygulandı. Buraya daha sonra ne geldi? 7 var.
+
+306
+01:26:06,739 --> 01:26:28,000
+Burada 0, 1, 2, 3, 4, 5, 6, 7, 7 bitlik değer yazıldı. Yani 0'dan 7'ye kadar kod yazıldı. Ondan sonra burada ne var? Bak 7'den sonra ne gelmiş burada da? Burada kaç özü? 4.
+
+307
+01:26:29,971 --> 01:26:36,072
+Bunları tabii kestikleri için gösteremiyorum. Öyleyse ben şunu şuradan okuyayım.
+
+308
+01:26:36,731 --> 01:26:43,631
+İki tane bir bitlik 01 var. İki tane bir bitlik 01 kodu var.
+
+309
+01:26:44,871 --> 01:26:51,391
+Dört tane iki bitlik 03 kodu var. Dört tane iki bitlik. İşte dört tane iki bitlik.
+
+310
+01:26:52,851 --> 01:27:20,851
+8 tane 3 bitlik var. 8 tane 3 bitlik aldım. 0'dan 7'ye kadar geldi. Ondan sonra 16 tane 4 bitlik 0 ile 15 arasında sayılar var. Bakın buraları 0'dan başladı. 15'e kadar geldi. 4 tane bit var. 2 üzeri 4'ten 16 tane sayı yazıldığı için 0'dan 15'e kadar geldi.
+
+311
+01:27:20,851 --> 01:27:34,551
+Sonra 5 bitliklere geçtik. Bunların burası 5 bitlik. 255'ten 32 tane veri yazabileceğime göre orada da 0'dan 31'e kadar yazılmış kodlar var.
+
+312
+01:27:34,551 --> 01:27:48,831
+Onun arkasından 6 bitlik, 64 tane kod yazabilirim. 0'dan 63'e kadar yazılmış yazılar var. Arkasından 7 bitliğe geldik. 7 bitlikte de 120.
+
+313
+01:27:48,851 --> 01:28:09,891
+28 tane farklı kod yazabilirim. Bu kodlarda 0 ile 127 arasındaki kodlar. Yani şu bölünmüş olan yerlerin sağ tarafındaki kodlar bu şekilde yazılıyor. Sol tarafındaki kodlar ise binary'e göre, grey koda göre yerleştiriliyor.
+
+314
+01:28:16,851 --> 01:28:18,531
+özelliğini sağlıyor.
+
+315
+01:28:21,631 --> 01:28:23,671
+Şey dışında olan üç tane
+
+316
+01:28:23,671 --> 01:28:26,591
+şurayı siliyorum.
+
+317
+01:28:27,391 --> 01:28:27,991
+Üç tane
+
+318
+01:28:27,991 --> 01:28:30,591
+pardon
+
+319
+01:28:30,591 --> 01:28:34,651
+üç tane farklı durum var demiştik.
+
+320
+01:28:34,651 --> 01:28:35,651
+Şu ikisi
+
+321
+01:28:36,275 --> 01:29:03,695
+Bu üç tane farklı durum sıfırdan başlatıyor. Sıfır bitlik bir değer olamayacağına göre burası sadece 0-1 diye koyuyor. Bir de en sonda var. En sondakine de bakarsanız bu yukarıdaki bitin aynısı. Fakat başına bir tane fazladan bir ekleniyor. Onun da şurada bir bilgisi vardır. Üç tane farklı kodun ilk iki kodu şu.
+
+322
+01:29:04,659 --> 01:29:30,159
+Son kodda da bu. Bunlar da özel olarak konuluyor. Peki ne oldu? Yani nasıl benim bir önceki bölümde bir Hufman kodu göstermiştim hatırlarsanız. Dört tane sembol vardı. İki, üç ve dört. Bunların başlangıçta frekansları sıfırdı. Sonra bunların yanlarında da bir takım kodlar vardı hatırlarsanız.
+
+323
+01:29:31,923 --> 01:29:45,603
+Bir takım kodlar vardı. Ne yapıyordu? Şu sembolden bir tane geldiğinde bunun kodunu gönderiyor, frekansını bir yapıyor, şunları alıyor, şu yukarıya gönderiyordu fakat kodlar yerinde kalıyordu.
+
+324
+01:29:45,603 --> 01:29:59,823
+Onun gibi bir mantık. Böyle bir tablo oluşturuluyor. Ama bu tablo oluşturulurken frekans değerleri evet sıfır, bu kod değerlerini çıkarırken MNP5 algoritması bu şekilde.
+
+325
+01:30:00,000 --> 01:30:19,379
+Bir header, bir de kod. Kodlar 1 bitle yazılabilen 2 tane, 2 bitle yazılabilen 4 durum, 3 bitle yazılabilen 8 tane durum, 4 bitle yazılabilen 16 tane, 5 bitle yazılan 32 tane, 6 bitle yazılan 64 tane diye bütün kodları çıkarıyor.
+
+326
+01:30:19,379 --> 01:30:28,000
+Şu 255 ile 0-1 özel bir durum. Hiçbir kurala uymuyor. Bunları tabloya ekliyor. Şu baştaki...
+
+327
+01:30:28,000 --> 01:30:53,859
+Bu tablo var. MNP5 de dedik ki, iki adımdan oluşan bir algoritma. Algoritmanın birincisi RLE, ikincisi Adaptive Frequence Enkoding. Adaptive Frequence Enkoding nedir diye bahsetmemiştim.
+
+328
+01:30:56,000 --> 01:31:03,459
+İşte burası. Şu tabloyu kullanarak yapacağım. Tablodaki frekans kolonu sıfırla başlar.
+
+329
+01:31:03,459 --> 01:31:13,099
+Input stream'den okunan ilk byte'a karşılık gelen token tablodan çıkış streamine yazılır ve frekans değeri 1 arttırılır.
+
+330
+01:31:13,339 --> 01:31:20,979
+Aynı o gönderdiğim yöntem gibi. Diyelim ki elime 31 numaralı sembol geldi.
+
+331
+01:31:21,876 --> 01:31:44,556
+31. byte neyse onu alıyorum. Bunu gidiyorum Output Stream'e yazıyorum. Frekans değerini 1 arttırıyorum. Ama artık bunun değeri 1 olduğu için daha az bit ile gösterildiği için yer değiştirme yapıyorum. Bu 31'i alıyorum. Buraya buradakini alıyorum.
+
+332
+01:31:45,811 --> 01:31:58,871
+Sıfır byte ve frekans değerini buraya yazıyoruz. Frekans değeri büyük olan byte, kendi üzerinde yer alan daha kısa token ile gösterilebilmesi için tokenların yeri değiştirilir.
+
+333
+01:31:58,871 --> 01:32:11,891
+Tabi burada pat diye buraya getirdim ama bu adım adım yapılacak. Üstündekine bakacak. Üstündekinden büyük. Önce bununla yer değişecek. Sonra bununla, bununla, bununla, bununla. Ta ki buraya gelinceye kadar.
+
+334
+01:32:13,811 --> 01:32:34,691
+8 bitlik kodda tutulur. Her değişiklikte maksimum değere ulaşıp ulaşmadığı kontrol edilir. Yine aynı problem. Frekans değerlerini tuttuğum değişken, burada tutabileceğim maksimum sayıyı geçip geçmediğine bakacağım. Geçiyorsa bütün frekans değerlerini yarıya bölüceğim.
+
+335
+01:32:35,123 --> 01:32:45,883
+Bundan önce gördüğümde aynı şeyi uyguluyoruz. Şimdi bir örnek yapalım. Keşke buraya o tabloyu da alabilseydim ama döneriz.
+
+336
+01:32:45,883 --> 01:33:02,123
+52-52, 6 geldi. Yani elimde bir input streamim var. Dedik ki modemde de gönderdiğim her şeyi resim gibi algılıyor. Arka arkaya 6-3 de burada 9 tane 52 var.
+
+337
+01:33:02,644 --> 01:33:06,963
+Kodu 52 olan bir sembol var. 9 adet.
+
+338
+01:33:06,963 --> 01:33:18,423
+RL'nin versiyonu ne diyordu? 3'ten fazlaysa ilk üçünü yaz, diğerini de RAM değeri olarak buraya ekle.
+
+339
+01:33:18,423 --> 01:33:24,884
+6 tane 52, 3 kere de burada yazılmış. Demek ki 9 tane 52 değeri var.
+
+340
+01:33:25,108 --> 01:33:46,887
+Algoritmanın ilk aşaması bu. Elimdeki verileri RLE olarak yazıyorum. Şimdi ikinci aşamaya geldik. Adaptive Frequency Encoding'e. Onun da yaptığı şey şu. Şimdi ben bu 52-52-6'yı şuraya alalım. Bu tablonun üzerinden göstereyim ne yaptığımızı.
+
+341
+01:33:52,851 --> 01:34:10,851
+elimde 52, 52, 52 ve 6 var. Şimdi 52. değer. Benim tablom sıfırdan başlıyorsa,
+
+342
+01:34:11,380 --> 01:34:38,380
+52. değer nereye gelir? 52. kod 53. satıra gelir. Gidiyorum 53. satır. Hadi burada onlar yok, şunların hepsi 32 olsun. Tamam mı? Bunlar 32 olsun. 32. Sıfırdan başladığı için geliyorum şu 33. koda. Bunun kodunu alıyorum. Output streme bu kodu yazıyorum.
+
+343
+01:34:39,347 --> 01:34:53,167
+Tamam mı? Output stream'e bunu yazdım. Frekans değerine 1 artırıyorum. Artık bunun frekans değeri 1 olduğu için bu daha küçük bir bitle gösterilmesi gerekir.
+
+344
+01:34:53,908 --> 01:35:20,127
+Bunun yerini değiştireceğim. Bakayım bu nereye gösterir? Bu üstteki kodu gösterebilir mi? Bunun da frekans değeri 0. Bu hepsi 0, 0, 0, 0. Bu öyle bir gelecek ki 33 bundan sonra burayı gösterecek. Çünkü en büyük frekans elimde bu. Ve daha az kodla ifade edilmesi lazım bit olarak. Burayı gösterecek. Sonra ikinci 52 geldi.
+
+345
+01:35:20,659 --> 01:35:42,519
+İkinci 52 neresi? 53. satıra yine bakacak. 53. satırdaki adres nereyi gösteriyordu? Burayı gösteriyordu. Yine bunu alacak. Ama burada frekans bu sefer 2 olacak. 2'den daha küçük varsa o yine yer değiştirme yapacak.
+
+346
+01:35:42,944 --> 01:36:02,684
+Sonra gelecek yine 52. 53. frekansa bakacak. Oradaki değeri yazacak. Gösterdiği kodu frekansını bir arttırdığında yine belki bu kodun yeri değişecek. Belki de değişmeyecek. Ondan daha küçüğü olmadığı için, fazla büyüğü olmadığı için aynı kod yazılacak.
+
+347
+01:36:10,944 --> 01:36:26,904
+Çünkü bu bir run değeri. Run değeri sembol olmadığını düşünüyor. Algoritma öyle kurgulanmış. Run değerinde sadece ilgili kodu alıp yazıyor. Fakat frekans değerini arttırmıyor.
+
+348
+01:36:26,904 --> 01:36:37,664
+Şimdi yeniden buraya dönelim. Burada yaptığımız şey nedir? 52 gelmişti. Tablodaki 53. satırdaki token değerini yazıyorum. Okey.
+
+349
+01:36:38,944 --> 01:37:06,084
+White okunduktan sonra tabloda yer değiştirme olabilir. Anlamı nedir? Çünkü frekans değerini bir arttıracağım. Bu 52. byte'ın frekans değerini bir arttıracağım. Kendisinden küçükler aşağıda kalacak şekilde frekans değeri daha az bit de ifade edilecek koda kadar onun adresini değiştireceğim.
+
+350
+01:37:07,155 --> 01:37:27,216
+Sonra ikinci byte'ı okuyacağım. Artık bir önceki 52'nin koduna sahip değil, bu değiştirmişti. Değişmiş olan kodu Output Stream'e koyacak. Bu da frekansı bir arttıracak. Değişiyorsa kodun geri değişecek, değişmiyorsa yine aynı kalacak. Aynı işlemi bunda yapacağız.
+
+351
+01:37:35,155 --> 01:37:41,136
+Fekans değerini yazacağım. Frekans değerini arttırmayacağım. Algoritma bu şekilde çalışıyor.
+
+352
+01:37:41,971 --> 01:37:56,091
+Çıkış değerlerindeki tokenlar ya 4 bittir ya da 11 bittir. Bu ne demek? Çünkü en küçük bit uzunluğum, kod uzunluğum 4 bit, en büyük kod uzunluğum da 11.
+
+353
+01:37:56,751 --> 01:38:09,851
+Bunları ben byte olarak yazacaksam, yani bazıları 4 bit, bazıları 11 bit gelecek, yazarken output stream'i hep 8 bitlik bloklar halinde yazıyorum.
+
+354
+01:38:09,971 --> 01:38:20,811
+Fakat bazen bu 8 bitlik tamamlanmayabilir. En son 3 bit de gelir. O zaman da bunların sonuna 1 ekliyorum tamamlamak için.
+
+355
+01:38:23,315 --> 01:38:37,056
+En sonunda da dökümanın bittiğinde de 11 tane 1 koyuyorum. Buna da flash token diyorum. Bu 11 tane 1 artık bu dökümanın kodlanmasının bittiğini gösteriyor.
+
+356
+01:38:37,976 --> 01:38:48,516
+MNP5'in iyi bir sonuç vermesi tamamıyla verinin içeriğine bağlı. Verinin içeriğine göre zaten algoritmalarımızı seçiyoruz.
+
+357
+01:38:48,516 --> 01:38:49,916
+Peki.
+
+358
+01:38:50,484 --> 01:39:16,463
+Bu tablonun üzerinde güncellemeler oluyor demiştim. Frekans değerleri arttığında. Şimdi onu bu tabloyla size daha güzel anlatayım. Şöyle düşünün. Şu frekans değeri tablodaki ikinci kolonum. Bu da kodlar. Üçüncüsü. Yani bunlar kod. Bunlar da frekans. Yani oradaki f ile gösterdiklerim bunlar.
+
+359
+01:39:17,332 --> 01:39:29,712
+Kod olarak C ile gösterdiklerim de bu tokenlar. Peki bu P'ler nedir? Bu P'ler de pointerlar. Bunun da pointerına Q demişiz.
+
+360
+01:39:29,712 --> 01:39:42,212
+Şimdi başlangıçta bütün frekanslar sıfır ve her biri karşısındaki kodu gösteriyor. Şimdi bakın bir A geldi. İlk A geldiğinde
+
+361
+01:39:42,608 --> 01:40:06,728
+A'nın kodunu, şuradaki kodu alıyor, Output Stream'e yazıyor. Sonra gidiyor A'nın frekansına 1 diyor. Şimdi A'nın frekansı 1 olunca üzerinde kendisinden daha küçük frekans değerlerine sahipler varsa bu biri onların üzerine çıkması lazım ki tabloya bakın.
+
+362
+01:40:08,020 --> 01:40:10,720
+En yukarıdaki en az bit.
+
+363
+01:40:11,167 --> 01:40:22,167
+Kimler en az bitle kodlanıyordu? Frekans değeri en yüksek olanları daha az bitle kodluyordu. Benim işimin esprisi.
+
+364
+01:40:22,688 --> 01:40:39,167
+Öyleyse bunu alıyor, bakıyor. Bir üstündekinin frekansı sıfır. Bunun artık kodu burayı göstersin diyor. Devam ediyor. Bunun üzerindekinin frekansına bakıyor sıfır. O zaman...
+
+365
+01:40:39,167 --> 01:40:47,287
+Bu sıfır frekansından da daha büyük, bunun kodunu göstersin diyor. Bu işlem şuraya kadar gidiyor.
+
+366
+01:40:47,287 --> 01:40:54,907
+Bir, bütün bu sıfırlardan daha büyük olduğu için artık şunun kodu şurayı gösteriyor.
+
+367
+01:40:56,207 --> 01:41:04,407
+O zaman bunlar da ne oluyor? Bunlar da hep bir aşağıya iniyor. Bu bir aşağıya, bir aşağıya, bir aşağıya. Yani A'nın üzerinde olan
+
+368
+01:41:04,720 --> 01:41:22,900
+A'nın bu kodunu gösterirken A buraya gösteriyor. Sonra A bir yukarı çıktığında burası bunun kodunu gösteriyor. Bir aşağıya böyle indi. Şimdi A evet bu sırada ilk A geldiğinde buradaki kodu output stream'e yazdım.
+
+369
+01:41:23,539 --> 01:41:49,799
+Hani şöyle olsun. A, A, A. Dört tane A olsun. İlk A'da Output Stream'e bunu yazdım. Frekans değerini arttırdım. Bir sonrakinde kod olarak burayı gösterecek. İkinci A geldiğinde buraya gelecek. Hangi kodu gösteriyor? Pointer'ı izleyecek bu. Buradaki kodu yazacak. Frekans değeri 2 olacak.
+
+370
+01:41:50,612 --> 01:41:57,731
+İki olduğunda ama bunun üstünde daha küçük frekanslı değerler olmadığı için bu zaten burada kalacak.
+
+371
+01:41:58,171 --> 01:42:01,711
+Bir sonraki anında değeri bu, bir sonraki anında değeri bu.
+
+372
+01:42:01,971 --> 01:42:04,051
+Ama her zaman aynısı olmayabilir.
+
+373
+01:42:04,771 --> 01:42:10,612
+Çok başka şeyler girecek, çıkacak araya bu anın pointerları da buna göre değişim olacak.
+
+374
+01:42:10,612 --> 01:42:13,791
+Run değeri geldiğinde de gidecek.
+
+375
+01:42:13,951 --> 01:42:15,971
+İşte dördüncü satır diyelim ki burası.
+
+376
+01:42:16,572 --> 01:42:17,811
+Dördü göstersin.
+
+377
+01:42:19,155 --> 01:42:28,435
+Bunun kod değerini gidecek, buradan okuyacak. Frekans değeri değişmediği için burası burayı yine bu şekilde gösterecek.
+
+378
+01:42:29,315 --> 01:42:40,435
+Bakın, bakın burada arkasından A'dan sonra bir tane M gelmiş. M'nin frekansı 1. 1 olunca bu bir yukarıya gitti.
+
+379
+01:42:41,811 --> 01:42:53,571
+Sonra devam etti buraya buraya. En son aşamada M'ye bakın nereye geldi pointer? Geldi A'nın altındaki yere yerleşti. Tamam mı?
+
+380
+01:42:55,031 --> 01:43:07,051
+Sonra ne gelmiş mesela? Sonra X geliyor. X'ler de bir takım yerleşti. Artık A burayı gösteriyordu. M burayı gösteriyor. X de burayı gösteriyor.
+
+381
+01:43:07,699 --> 01:43:23,279
+Bunlardan bir sonrakinde ikinci bir x geldiğinde artık x burayı gösterecek. A bunun aşağısına inmiş olacak. M de bunun aşağısına inmiş olacak. Bu şekilde pointerlar yer değiştirerek devam edecek.
+
+382
+01:43:23,279 --> 01:43:35,279
+Bu mnp5, mnp7'den daha kolay dedik. Kolay dememize rağmen baya pointerlarla işlem yapıyorum. Bir linkli liste.
+
+383
+01:43:35,699 --> 01:43:40,379
+Öyleyse MNP7 bundan daha komplike bir şey.
+
+384
+01:43:49,652 --> 01:44:04,391
+Daha komplike bir şey. Nasıl çalışıyor peki? Algoritmamız daha karışık. Burada yine bir Hufman kodlaması var. Fakat iki boyutlu dinamik Hufman kodlaması kullanıyorum.
+
+385
+01:44:05,108 --> 01:44:19,468
+Hem de dinamik ve arkasından yine bir RL. Yani yine Huffman algoritmasını çıkarıyorum ama bu şekilde bir şey hazırlamıyorum. İki boyutlusunu hazırlıyorum. Bu çünkü tek boyutlu.
+
+386
+01:44:20,724 --> 01:44:36,404
+Onun gibi bir tablo hazırlayacağım. Arkasından da yine RL. Yine RL, aynı bildiğimiz RL. 3 ve 3'den fazla tekrar varsa bunu yazıyorum. Mesela 3 tekrar da 3'ünü yazıyorum. RAM değeri 0 oluyor.
+
+387
+01:44:45,460 --> 01:45:13,460
+Dayanıyor algoritması. First Order Markov modelini hatırlayacaksınız. Şöyle bir şey yapmıştım ben size. Burası white pikseli olsun, burası black pikseli olsun. Ben white'dayken white geliyordu, white'dayken black gelirse, black'dayken black gelirse, black'dayken white gelirse, bir piksele bir değer verirken kendinden önceki pikseli...
+
+388
+01:45:13,460 --> 01:45:23,880
+Piksele bakarak hareket ediyorduk. İşte burada da Hufman'la da bir pikselin değeri bir başka pikselin değerine bağlı olarak değişiyor.
+
+389
+01:45:23,880 --> 01:45:32,760
+Ben burada olayı anlatırken piksel olarak anlatmayacağım da bir karakter ve öncesindeki karakter olarak bakarak anlatacağım.
+
+390
+01:45:33,492 --> 01:45:46,931
+Şöyle düşünelim burada da. İki boyutlu düşünmemizin sebebi şu. İki tane tablo var. Bir şu tablomuz aynı bir öncekine benziyor. İkinci tablomuz da bu.
+
+391
+01:45:47,872 --> 01:45:59,572
+Şimdi yine burada sıfırdan 255'e kadar 256 adet iki boyutlu tablom var. Şimdi şu sıfırdan 255'e kadar.
+
+392
+01:46:00,435 --> 01:46:23,695
+Bu da 0'dan 255'e kadar. Bu da 0'dan 255'e kadar. Ama 0'dan 255'e kadar yani 256 tane şu bir önceki tablodan kullanıyorum. Burada bir tane vardı 0'dan 256'e kadar. Bunun iki boyutta olmasının anlamı
+
+393
+01:46:24,020 --> 01:46:43,539
+Bu sıfırdan 256'ya kadar 256 tane tablo var. Ne demek bu? Şu demek. Öteki tek boyutluydu. Sadece bu vardı. İşte diyelim ki A geliyordu. Ben gidiyordum. A'nın bulunduğu yer neyse. Gidiyordum. Onun kodunu alıyordum.
+
+394
+01:46:43,539 --> 01:46:49,000
+Şimdi iki boyutlu kullandığımda şöyle bir şey var. A ve B var.
+
+395
+01:46:49,524 --> 01:47:01,224
+Benim current karakterim, üzerinde çalıştığım karakter. Yani bunu kodlayacağım. Ondan bir önce de A gelmiş. O da bir önceki karakter.
+
+396
+01:47:01,224 --> 01:47:13,224
+Ben gidiyorum, şuradan A olan karakteri buluyorum. Buradan da B olan karakteri buluyorum. Bunun ortasındaki...
+
+397
+01:47:14,387 --> 01:47:22,568
+Adres neyi gösteriyorsa, gidiyorum şu ikinci tabloda, bu adresin kod değerini okuyorum.
+
+398
+01:47:23,748 --> 01:47:34,908
+Yer değiştirmeler oluyorsa, frekans değeri arttıkça yer değiştiriyordu, onlar da gidiyor o adres yer değiştirmeleri, pointerları bu tablo içerisinde oluyor.
+
+399
+01:47:35,891 --> 01:47:52,452
+Yani olayın rengi biraz daha değişiyor. Aynı şey benzer ama bu sefer iki ayrı tablo kontrol ediyorum. Yani bir öncekinde yapmış olduğum her şey tek boyutlu. Burada ise iki boyuta düşürüyorum.
+
+400
+01:48:01,332 --> 01:48:07,032
+Şuradan önceki karakterin yerini, buradan da şimdiki karakterin yerini buluyorum.
+
+401
+01:48:07,764 --> 01:48:26,944
+Buradaki adres değerini alacağım ama buradaki adres değeri de bana bunun tam arkasındaki bu tabloyu gösteriyor. Buradaki kodu yazıyorum. Yer değiştirme oluyorsa yine o pointerlar üzerinden bu tablo üzerinde bu yer değiştirmeler oluyor.
+
+402
+01:48:35,764 --> 01:48:59,724
+Bu tabloda gideceğim. O adrese bakacağım. Arka mantığı aynı fakat kodlaması tabii ki çok daha zor ve kompleks. Ne zaman tercih edilir? Yani eğer sizin için hız çok çok önemli ise MNP7'yi tercih edersiniz.
+
+403
+01:49:01,587 --> 01:49:16,507
+Ama kodlaması çok daha zor. Neden hız daha önemli size diyoruz. Çünkü eğer ben karakterlerimi ikili ikili olarak alırsam, yani size şimdi nasıl söyleyeyim?
+
+404
+01:49:26,644 --> 01:49:41,568
+B'nin frekansı ve A-B'nin birlikte geçme frekansları aynı değildir. Mesela burada kaç tane A var? 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+405
+01:49:41,568 --> 01:50:06,548
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20, 21, 22, 23, 24, 25, 26, 27, 28. Eğer yalnız saymadıysam 28 tane A var. B daha azdır. B'ye bakalım. 1, 2, 2, 2, 3, 4.
+
+406
+01:50:07,475 --> 01:50:32,907
+4, 5 tane B var. 28, 5, 33 tane AB yok. AB bakalım şimdi. Önce A arkasından gelen B, 1 var. Ondan sonra 2, 2, 3.
+
+407
+01:50:33,844 --> 01:50:50,604
+Gözüm karıştı. Birbirine girdi. Bak, A'yı almıyorum. A, B'yi arıyorum. 2, 2, 3 ve 3. Şimdi A'nın olasılığı çok daha fazladır. B'nin olasılığı...
+
+408
+01:50:50,707 --> 01:51:06,728
+Üçün olasılığına göre daha yüksektir. Bunun olasılığı daha azdır. Eğer ben tek karakterliler alırsam çıkacak olan kodlar farklıdır. Olasılık değerlerine göre Hufman oluşuyor. İkilileri alırsam daha farklıdır.
+
+409
+01:51:07,444 --> 01:51:34,844
+Belki bu dokümanda A, B üç kere varsa B, A üç kere olmayacak. Bunun sayısı daha fazladır. Eğer ben bunları ikili değil üçlü yaparsam çıkacak olan olasılık değerlerim daha farklı olacaktır. Bundan nereye varmak istiyorum? Bu şekilde olasılık değerlerim daha küçüldüğünde daha birbirine yakın kod değerleri çıkabilir.
+
+410
+01:51:35,444 --> 01:52:01,444
+Varyanslar daha küçük olabilir. Varyansların daha küçük olması aslında neydi? İletim hattında eğer dinamik bir ortamda çalışıyorsam ki modemler öyle, daha hızlı kod çözülür. Karşı tarafa gönderdiğim şey anında açılır. Yani aynı zamanda hızlı bir şekilde dikod edilir. Beklemeler azalır. Ama yazmaya kalkarsam bu kodu...
+
+411
+01:52:01,967 --> 01:52:29,967
+Çok meşakkatlidir. Zamanımı alır. Benim için olay çok hızlı değildir. Yani buradaki hız bir dakikalardan falan bahsetmiyorum. Yani milisaniyeler o kadar ölüm kalın bir şey değilse yani bu MNP7'yi de kullanmayabilirim. MNP5'i kullanırım. Dediğim gibi bunlar modemlerde de, faks cihazlarında da, faks sıkıştırmaları da ayrıdır. Seçimliktir. İster onu kullan, ister bunu kullan diye bana seçimlik olarak...
+
+412
+01:52:29,967 --> 01:52:31,927
+Bu hakkı verir.
+
+413
+01:52:32,884 --> 01:52:57,524
+Şimdi modemlerle ilgili de MNP5 ve MNP7'yi gördük. Ama aslında ne görüyorsunuz arkadaşlar? Hep diyorum ki çok bariz algoritmalar var. Size o yüzden bu dersin başında RL'yi, Hufman'ı, Aritmatik Kodink'i, LZV'yi, bir de PPM'yi göstereceğim.
+
+414
+01:53:00,884 --> 01:53:14,844
+Bunların türevleri ya da bunların karışımı. Bakın bir modem sıkıştırma var. İçinde RL var ve Hufman var. Ama adı bir farklı. Ama özünde yatan şey aynı şeyler.
+
+415
+01:53:15,572 --> 01:53:43,372
+Birazcık versiyonları farklı oluyor. Versiyonları da neden değişiyor? Dökümanımın içeriğine bağlı olarak bazen algoritmalar üzerinde oynamalar yapmam gerekiyor. Ya da önüne ekstra bir işlem, arkasına ekstra bir işlem uygulayarak performansımı arttırıyorum. Birdenbire bu algoritmalar ortaya çıkmıyor. Ya bunu diyor işte daha nasıl hızlandırabilirim diye bakıyor.
+
+416
+01:53:43,572 --> 01:54:11,572
+Adam bakıyor MNP5'e. Ya ben bunu iki boyutlu yaparsam, bilmem ne şu olur diyor. Şu olursa bu daha hızlı çalışır, performansı daha yüksek olur diyor. Onu yapıyor. Ya da elindeki inputuna bakıyor. Ya bu inputun içerisinde çok fazla boşluk var diyor. Ya ben bu boşluk verisini, fazla olan boşluk verisini kullanarak bu algoritmaya ekstra bir şey getirsem performansı daha yüksek.
+
+417
+01:54:11,572 --> 01:54:30,391
+Güzeltebilir miyim? diyor. Hop, onu ekliyor ve yükseliyor. Ama algoritmanın adı farklı oluyor. O LZV algoritmasını da göreceksiniz. O kadar çok algoritma var ki, başı LZ, arkasını herkes bir şey yapmış, isminin baş harfine eklemiş.
+
+418
+01:54:39,572 --> 01:54:44,771
+Aşkı parametreyle oynamış. Bu şekilde devam etmiş. Ama özlerimiz aynısı.
+
+419
+01:54:46,072 --> 01:54:56,471
+Şimdi Faksimal Compression'a geleceğim. Yalnız arkadaşlar ben Ramazan'da gerçekten konuşmak çok zor oluyor.
+
+420
+01:54:56,891 --> 01:54:59,492
+O yüzden iki ara vereceğim. Bakın sesim yine gitti.
+
+421
+01:55:00,435 --> 01:55:11,855
+Çeyrek geçe yine gelelim. Tamam mı? Bu konuya da o zaman devam edeyim. Anlaştık mı? Cevap?
+
+422
+01:55:13,195 --> 01:55:16,355
+Anlaştık. Hadi görüşürüz.
+
+423
+02:12:42,771 --> 02:12:44,771
+Evet, bu sefer gecikmedim.
+
+424
+02:12:51,060 --> 02:13:16,060
+Gecikmedik ama mouse gitmiyor. Evet, hazır mıyız? Evet hocam. Şimdi size fak sıkıştırmadan bahsedeceğim. Bu da çok enteresan ve değişik bir yöntem. Burada da bir boyutlu ve iki boyutlu fak sıkıştırma yöntemleri var. İki boyutlusu...
+
+425
+02:13:16,243 --> 02:13:24,323
+Biraz daha böyle komplike ama görsellerle anlatacağım onu. Çünkü çok güzel görseller buldum. Onlar üzerinden anlatmaya çalışacağım.
+
+426
+02:13:25,503 --> 02:13:36,243
+Önce yine faks üzerinden de bir dökümanın gönderilmesi demek, o dökümanın bir resim olarak gönderilmesi demek. Bunu unutmayalım. Resim olarak gidiyor o bilgi.
+
+427
+02:13:39,731 --> 02:14:07,052
+Bunun için geliştirilmiş bir veri sıkıştırma standartı var. İTU diye geçiyor. International Telecommunication Union diye. Bunlar da T1'den bahsedilmiyor da T2 Grup 1, T3 Grup 2 diye iki versiyon var. Bu standartlar geçmişte kullanılıyordu. Bunların yerini T4 Grup 3 ve T6 Grup 4 aldı.
+
+428
+02:14:07,539 --> 02:14:11,179
+T4 dediğimiz grup 3 nedir? Bu bizim.
+
+429
+02:14:11,859 --> 02:14:19,500
+Public Switch Telefon Network dediğimiz PSTN networklerinde kullanılan bir algoritma.
+
+430
+02:14:20,000 --> 02:14:26,979
+Grup 4'te ISDN dediğimiz Integrated Service Digital Network'ta kullandığımız bir yöntem.
+
+431
+02:14:27,399 --> 02:14:31,239
+Her ikisinin de hızları farklı gördüğünüz gibi.
+
+432
+02:14:31,239 --> 02:14:37,659
+Yine her iki yöntemde de sıkıştırma oranları 10'a 1 veya daha yüksek.
+
+433
+02:14:39,859 --> 02:15:03,460
+Bir bite karşı bir bit de ifade ediyoruz veya bunun oranı daha da yüksek olabilir. Hiçbir sıkıştırma yapılmaksızın faks üzerinde bir dosyayı karşı tarafa iletirken bu süre bir dakika sürüyorken kullanılan bu standartlar ile bu süre bir dakikadan daha aza düşürülmüştür.
+
+434
+02:15:03,840 --> 02:15:25,439
+Çok daha hızlı bir şekilde gönderebiliyoruz. Peki, bu grup 3 ya da grup 4 dediğimiz şeyler nedir? Bunlara geçmeden evvel karşımıza Pels diye yeni bir kavram çıkıyor. Pels, Picture, Elements. Bu Elements'in LSS, bu da Picture. Bu nedir?
+
+435
+02:15:26,195 --> 02:15:35,395
+Ben görüntü üzerinde çalışırken nasıl piksellerim vardı ve bu pikseller de renk değerlerine karşılık geliyordu.
+
+436
+02:15:35,395 --> 02:15:49,395
+Fakslarda da gönderdiğim her dosya bir resim olarak görülüyor. Fakat burada piksel yerine parsler kullanılıyor.
+
+437
+02:15:49,908 --> 02:16:05,688
+Kavram olarak. Pixellerden daha farklı bir boyutta. Evet, yine küçük ve siyah-beyaz noktalardan oluşuyor ama pelslerin boyutlarıyla pikselin boyutları aynı değil.
+
+438
+02:16:06,452 --> 02:16:20,692
+Gönderdiğim bir dokümanı satır satır tarıyorum ve satırlar penslere çevriliyor ve karşı tarafa gönderirken her satırı ayrı ayrı kodlayarak gönderebiliyorum.
+
+439
+02:16:21,300 --> 02:16:44,700
+Peki gönderirken yatağı çözünürlük ve dike çözünürlülük kavramları nedir? Yani bir A4 dosyası elimde varsa bu A4 dosyasındaki bir satır kaç PELS'ten oluşacak? Ya da bir sütunda kaç tane PELS yer alınacak? Bunlar hakkında bilgi vermem gerekiyor size.
+
+440
+02:16:49,299 --> 02:16:59,739
+Her bir satıra biz ne isim veriyorduk görüntü şeyinde de bahsetmiştik. Scanline'da her bir satıra scanline diyoruz. Her bir satırın okunması.
+
+441
+02:16:59,739 --> 02:17:03,919
+Şimdi yatar çözünürlülük nedir? Yatar çözünürlülük.
+
+442
+02:17:04,755 --> 02:17:11,275
+İşte soldan sağ okunan şu hat üzerindeki olaydan bahsedeceğiz.
+
+443
+02:17:11,275 --> 02:17:27,475
+Bunun için şunu söyleyebiliriz. T4 standartında tarama için önerilen satır genişliği 8.2 inç. Yani bir sayfadaki bir satır 8.inçtir.
+
+444
+02:17:27,475 --> 02:17:32,155
+T4 standartında her bir standartında bunlar farklıdır.
+
+445
+02:17:32,755 --> 02:17:40,355
+Ama zaten ben ufakta hangi standartta kullanıyorsam arka plandaki işlemler ona göre yapılıyor.
+
+446
+02:17:40,355 --> 02:17:47,155
+Şimdi bir incin 25,4 mm olduğunu biliyoruz.
+
+447
+02:17:47,155 --> 02:17:58,255
+Yok bir inç 24 müydü? Yanlış yazmayın bunu. 2,54'tü. 2,54 müydü bir inç?
+
+448
+02:18:01,556 --> 02:18:13,655
+Bir yerden kopya çekeyim ama yok 25.4 mm. Bir incin içerisinde de 205 pels var.
+
+449
+02:18:15,956 --> 02:18:33,495
+Öyleyse bir incin içerisinde 205 pels var. Bir inçte 25,4 mm'ye karşılık geliyorsa, bir milimetreye de 8,05 pels düşüyor.
+
+450
+02:18:33,907 --> 02:18:51,968
+Yani nasıl bu benim aklımda kalır? Benim aklımda kalması gerekmiyor. Şu kalsın, T4 standartında sayfa genişliği 8.2 inçtir. İnç 25,4 mm. Bunu çarp 25,4 mm ile.
+
+451
+02:19:01,459 --> 02:19:23,939
+Bunu öyle yapmasam, nasıl yapsam bilemedim şimdi. Bu inç 8.2 inç. Bir inçte 205 tane pels var. Bunu 205 ile çarparım. Bir pels de kaç milimetre ise bunu da onunla çarparsam bunun milimetre cinsinden ya da piksel cinsinden değerini bulabilirim.
+
+452
+02:19:24,884 --> 02:19:45,923
+Dikey çözünürlülük nedir? O da yukarıdan aşağı olan okumada burada da üç tane mod var. Yani görüntünün karşı tarafa çok iyi bir şekilde gitmesini istiyorsam Verify modu seçmeliyim. Orta kalitede istiyorsam Fine modu, düşük kalitede istiyorsam Standart modda gönderebilirim.
+
+453
+02:19:46,260 --> 02:20:00,000
+Nedir? Ada üstünde zaten standart bir modda göndereceksem her bir milimetreden 3,85 adet Scanline geçiyor. Yani bu ortalamasını aldık.
+
+454
+02:20:00,000 --> 02:20:08,219
+aldığım için böyle ortalama buna 4'te bir milimetreden dört tane tarama satırım geçiyor demektir.
+
+455
+02:20:08,219 --> 02:20:17,520
+Fine Mode bir üst versiyonu o da bir milimetre 7.7 Scanline'a Verify en üst versiyon.
+
+456
+02:20:17,811 --> 02:20:38,932
+Onda da 1 mm 15,4 scanline geliyor. Kabaca bunlar aslında bana nedir? Bana bir tane A4 verildiğinde ben şunu bilmeliyim. Bu A4'ün satır genişliği 8.2 inçtir. Peki nasıl bir çözünürlülükte göndereceğim?
+
+457
+02:20:44,915 --> 02:21:12,915
+her bir milimetreden 15,4 skenden geçiyor. Bunun da boyutunda kaç tane satır varsa onu da ondan hesaplayacağım. Ortalama bir performans karşıma çıkacak. Bu ne demek karşıma performans çıkacak demekle neyi kastediyorum? Şunu kastediyorum. 10 inç yüksekliğinde bir sayfam var. Yani sayfamın genişliğine 8.2 inç.
+
+458
+02:21:12,915 --> 02:21:34,455
+10 inç demiştim. Yüksekliğine de 10 inç dedim. Yüksekliğinde bir şeyim var, sayfam var. Bunu sıkıştırmadan bu sayfayı gönderdiğimde 10 dakikaları buluyordu süre. Burada bana bunu gösteriyor.
+
+459
+02:21:41,012 --> 02:22:03,531
+Nasıl diyeyim? Bir yerde o bilgiyi yazmıştım ama burada yazmıyor. Tamam. 10 dakika sürüyordu yaklaşık olarak. O yüzden fark sıkıştırmayı ortaya atmışlar. Bu fark sıkıştırmada da 3 modda gönderdiğimde acaba süreler ne oluyor? Bir anlamı var mı? Bir bakalım.
+
+460
+02:22:08,084 --> 02:22:20,684
+Standart modda gönderirsem diyor, şu 385.7.7 15.4 neydi? Standart modun şeyiydi. 1 mm'ye kaç tane scanline düştü?
+
+461
+02:22:21,136 --> 02:22:43,835
+7.7 ve 3.85. Bunlar onlar. 1 mm'ye kaç tane skandan düştü? Bunlar da incin karşılığı. 1 inç 25.4 mm idi. Yüksekliğinde 10 inç olduğu için bunu da çarptım 10 ile. 254 mm çıktı.
+
+462
+02:22:49,136 --> 02:22:58,436
+Standart Mod'da çalışıyorsam 978 satır varken, Verify Mod, bunu yanlış yazmışım.
+
+463
+02:22:59,059 --> 02:23:17,159
+Verify Mode. Eğer Verify Mode'da çalışıyorsam da bir sayfanın içerisinde 3912 tane Scanline oluyor. Çünkü daha çözünürlülüğü yüksek. Peki, Pulse Perline her bir satırda kaç tane Pulse olacak?
+
+464
+02:23:27,059 --> 02:23:53,719
+3 mm'de de kaç tane PELS varsa çarptım 16.064 tane PELS değeri çıktı. Peki bunu sayfa bazında oranladım. Bu bir satır. 978 tane satır var. Çarptım. Şu kadar adet PELS var bir sayfada. Verify Mode'da ise bir satırda bu kadar var.
+
+465
+02:23:54,128 --> 02:24:02,268
+Toplamda bu kadar satır var. Şu ikisini çarptım. Bu kadar da bir peycin içerisindeki satır sayısını buldum.
+
+466
+02:24:02,268 --> 02:24:15,188
+Şimdi bunları sıkıştırmaya kalktığımda bu işte 170 saniye, saniye bilmem bilen bunlar da dakikaları.
+
+467
+02:24:15,808 --> 02:24:21,427
+Süreler bunlar. Bunlar aslında saniye.
+
+468
+02:24:21,791 --> 02:24:44,051
+Eğer sıkıştırılmamış olsaydı bu kadar sürede gidecekti. Yani 11.3 dakikada gidecekti. Ben sıkıştırdım. 678 saniyede gönderdim. Şu kadar dakikada gidecekti. Sıkıştırdım. Şu kadar sürede gönderdim. Sıkıştırmanın ne kadar önemli olduğunu görüyoruz.
+
+469
+02:24:44,468 --> 02:24:57,648
+Peki ben şimdiye kadar ne yaptım? Elimde verilmiş olan bir sayfa var. Bu sayfanın yüksekliğini biliyorum. İçinde okuyacağım her bir satırın genişliğini biliyorum.
+
+470
+02:24:57,648 --> 02:25:12,468
+Buradaki scanline sayılarında her bir scanline'da kaç milimetre olduğunu, her milimetrenin kaç tane pels içerdiği bilgilerini biliyorsam toplam döküman içerisinde...
+
+471
+02:25:12,468 --> 02:25:34,208
+Öniversitesi'ndeki PELS sayımı biliyorum demektir. İşte bunlar da bana bunu gösteriyor. Şimdi bu PELS'lerde nelerden oluşuyordu? Siyah-beyaz noktalardan. Öyleyse benim bu siyah-beyaz noktaların kullanım sayısına göre bir takım kodlar oluşturmam gerekiyor. Bunlar da nasıl oluşturuluyor?
+
+472
+02:25:34,899 --> 02:26:02,899
+Grup 3 üzerinden anlatacağım. Grup 3 kodu birçok döküman üzerinde siyah-beyaz pelslerin rand renklerinin analiz edilmesiyle elde edilir. Bu ne demek? Farklı içeriklere sahip yüzlerce döküman alıyorlar. Bu dökümanların içerisindeki pelsleri sayıyorlar. Kaç tane siyah var, kaç tane beyaz var, kaç tane arka arkaya beyaz gelmiyor.
+
+473
+02:26:02,899 --> 02:26:27,559
+Kaç tane arka arkaya siyah gelmiş? Bunları çıkarıyorlar. Ram değerlerini. Mesela iki tane siyah pers gelmiş. İki tane beyaz pers. Üç tane siyah pers. Üç tane beyaz pers. Bunları çıkarıyor. Olasılıklarını çıkarıyor ki olasılığı yüksek olanları daha az bitle ifade edecek.
+
+474
+02:26:30,899 --> 02:26:45,279
+Huffman algoritması ile değişken uzunluklu kodlar atanıyor. Bu zaten bildiğimiz şey. Elimde bir takım olasılık değerleri var. Bu olasılık değerlerine göre ben Huffman algoritması ile kodlar atıyorum.
+
+475
+02:26:45,279 --> 02:26:55,919
+Ve yine biliyorum ki kısa olan, olasılığı yüksek olan şeyler, ram değerlerine daha az bit atacağım.
+
+476
+02:26:56,308 --> 02:27:06,868
+Ve tabloya baktığımızda şunu göreceğiz. En fazla bu dokümanları tararak çıkardım ya, siyah ve beyaz ranların değerlerini, olasılıklarını.
+
+477
+02:27:06,868 --> 02:27:19,927
+Tabloya baktığımda göreceğim ki yapılan analizlerde en fazla karşıma gelen 2, 3 ve 4 tane ran değerine sahip siyahlar olmuş. Siyah persler olmuş.
+
+478
+02:27:20,659 --> 02:27:36,099
+En fazla iki tane siyah pers var. En fazla üç tane, en fazla dört tane. Mesela dört tane beyaz arka arkaya gelmesi daha küçük olasılıklı. Neden? O dört tane arka arkaya boşluğun olduğunu bana ifade ediyor.
+
+479
+02:27:48,659 --> 02:28:03,159
+Arasındaki ram değerlerine sahip olan beyaz paslerinde daha uzun kotlar atanmış olduğunu göreceğiz. Bunun anlamı nedir? Demek ki arka arkaya iki tane, beş tane, üç tane, dört tane, yedi tane gelen beyaz yok.
+
+480
+02:28:03,860 --> 02:28:09,639
+Yok ki olasılığı az. Az olduğu için bunlara daha uzun kodlar atanmış.
+
+481
+02:28:10,200 --> 02:28:17,600
+Grup 3 nasıl çalışan bir algoritma? Yine öncesi RLE, arkasında Hufman kod geliyor.
+
+482
+02:28:31,860 --> 02:28:35,060
+Siyah 1250 tane, beyaz gelebilir.
+
+483
+02:28:35,620 --> 02:28:47,900
+RAM değerlerinin uzun olacağı düşünüldüğünden Huffman algoritması üzerinde değişiklikler yapılmış ve Modified Huffman diye bir yöntem ortaya atılmış.
+
+484
+02:28:47,900 --> 02:28:51,979
+MH diye geçiyor. Modified Huffman. Nedir bu?
+
+485
+02:28:52,691 --> 02:29:14,431
+Yani modifiye etti de neyi modifiye etti? Yaptığı şey bu. Bulmuş olduğu kodları ikiye ayırıyor. Termination kodlar ve Makeup kodlar. Nedir Termination ve Makeup kodlar? Eğer RAM değerleri 1 ile 63 arasında ise bunlar için Termination kodları oluşturuyor.
+
+486
+02:29:15,059 --> 02:29:29,759
+Eğer 64 ve 64'ün katıysa, 64 işte 2 katı 128, 3 katı nedir? 3 4'ün 12, 3 kere 6 18, 19. Yok.
+
+487
+02:29:30,739 --> 02:29:44,860
+3, 4'ün 12, 3 kere 6, 18, 19, 192. Bilmem ne, 64'ün katları. Bunlara da make-up kodları diyor. Şimdi tablomuza bakalım. Tablomuz bu.
+
+488
+02:29:54,291 --> 02:30:16,072
+64'ün katları. Bunların hepsi de 64'ün katı. Burası da. Bunlar da Makeup Kotlar. Şimdi şuraya bakalım. Şu 0 ile 63 arasındaki ranlarda da 0 tane beyaz olabilir ran değeri.
+
+489
+02:30:16,531 --> 02:30:30,131
+0 tane black olabilir. Ne demek 0 tane? O da şu demektir. Hani şeyi yazıyorduk ya, RL'de 3 tane arka arkaya gelirse 3 tane.
+
+490
+02:30:30,559 --> 02:30:38,719
+Ondan sonra RAM değeri elimde üç tane varsa bunun RAM değeri sıfırdır. İşte burada yazdıklarımda o RAM değerleri.
+
+491
+02:30:50,835 --> 02:31:10,775
+En az kodla ifade edilmiş. Çünkü genelde yazılı bir metin düşünün. Mesela şu önümüzde gördüğümüz şu sayfayı ben faxla gönderiyorsam nedir? Bu siyahlar yazıların olduğu şeyler siyah pelslerle gösterilecek. Geri kalan beyazlar da beyaz pelslerle gösterilmiş olacak.
+
+492
+02:31:10,775 --> 02:31:18,195
+İşte sayılan şeyler bu. Arka arkaya kaç tane siyah var? Arka arkaya kaç tane beyaz var? Bunlar çıkarılmış.
+
+493
+02:31:18,835 --> 02:31:25,495
+Ve bakıyorsunuz, mesela 11 tane beyaz varsa onun yerine bu kod kullanılıyor.
+
+494
+02:31:26,175 --> 02:31:30,255
+11 tane siyah gelmişse onun yerine bu kod kullanılıyor.
+
+495
+02:31:30,255 --> 02:31:37,475
+63 tane beyaz varsa değeri bu. 63 tane siyah varsa değeri bu.
+
+496
+02:31:38,164 --> 02:32:01,224
+63 randan daha büyük ran değerleri olabilir. Onlar da 64'ün katı olarak yazmıştık. Bunların da beyaz olanları ve siyah olanları var. Şurayı görüyorsunuz 1792 olan 64'ün katına geldiğinde siyahlarla beyaz kotlar birbirinin aynı. Neden aynı?
+
+497
+02:32:02,388 --> 02:32:13,988
+Şu yüzden aynı. Aslında bu tip şeylerin beyaz olarak karşıma bu kadar beyazın gelmesi demek bu sayfanın tamamının boş olması demek.
+
+498
+02:32:14,608 --> 02:32:19,488
+Hiçbir kimse de faxta boş bir sayfayı karşı tarafa göndermez.
+
+499
+02:32:19,948 --> 02:32:25,587
+Bunlar için herhangi bir kodla uğraşmıyor. Aynı kodları kullanabilirsiniz diyor.
+
+500
+02:32:30,388 --> 02:32:37,407
+Bir RAM varsa ne yapacağım? Bakıyorum 65'i Termination Code'da yazamıyorum.
+
+501
+02:32:37,791 --> 02:33:00,791
+Bunun içinde bir 64'ün katı var. Yani bu 1 artı 64 demektir. Öyleyse şu biri beyaz ya da siyah olmasına göre termination koddan kodlayacağım. Bu 64'ü de siyah ya da beyaz olmasına göre make up'tan kodlayacağım. O yüzden kodlar ikiye ayrılmış.
+
+502
+02:33:05,791 --> 02:33:31,391
+12.560'a kadar bu kodları böyle çıkaracaktı ve bu kod değerleri daha çok uzayacaktı daha fazla eleman olduğu için. Ama burada olayı biraz daha optimize etmeye çalışmış. Kodları ikiye böldü. 0.64 arası burası. 64'ün katlarına da make-up'tan bakacaksın diyor.
+
+503
+02:33:32,147 --> 02:33:58,807
+Şimdi bununla ilgili şöyle diyelim. Bir rank kodu, yani karşıma gelecek olan kod, bir tane termination koddan meydana gelebilir. Mesela 12. 12 tane beyaz var. Hemen giriyorum buraya. 12'ye geliyorum. 12'nin beyaz kodu neyse. 2 tane 0 ve 1000. Gidiyorum buraya. 2 tane 0 ve 1000'i yazdım. Olay bitti.
+
+504
+02:33:59,891 --> 02:34:24,031
+Eğer RAM 76 tane white diyorsa 64'ün bir katını çıkarıyorum ve artı 12. Benim yapacağım şey artık nedir? Önce Termination Code. Gidiyorum 12'nin Termination Code'una bakıyorum. Tablodan beyazın değerine. Sonra gidiyorum 64. Makeup'dan da gidiyorum. Beyazın kodunu buraya yazıyorum.
+
+505
+02:34:25,871 --> 02:34:36,432
+2 tane 64 var demektir. 128 artı 12. 12'yi Termination koddan, 128'i de Makeup koddan yazdım tabloda.
+
+506
+02:34:37,011 --> 02:34:45,932
+Mesela buraya bakın 64 tane Black var. Sadece Termination kod var. Fakat Makeup kod yok.
+
+507
+02:34:45,932 --> 02:34:48,592
+Ama
+
+508
+02:34:49,056 --> 02:34:55,476
+Pardon, pardon. Termination Code değil bu. 0-63 arasındaydı. Termination Code 0.
+
+509
+02:34:56,147 --> 02:35:13,507
+Makeup kod 64. İşte bu Termination koddaki sıfır. Bunlardan gelir diyorsunuz ya. Nadir de olsa karşımıza gelir. Termination kodu sıfırdan aldı. 64'ü de Makeup'tan aldı. Masumlar da yine gitti.
+
+510
+02:35:24,147 --> 02:35:30,567
+Tam Termination'ı yazıp 2560 tane de make-up'ı yazıyorum.
+
+511
+02:35:31,636 --> 02:35:56,076
+Her bir tarama satırını ayrı ayrı kodluyorum. Yani elimdeki dokümandaki her bir satırı ayrı ayrı kodluyorum. Her bir kodun sonuna da bir end of line kodu koyuyorum. End of line kodu da bu. Yani bu satırın kodlaması end of line kodunu gördüğümde birinci satır bitiyor ve ben ikinci satıra geçiyorum demektir.
+
+512
+02:35:56,628 --> 02:36:20,308
+Bir satır skan edildiğinde her satırın soluna da bir tane beyaz pels ekleniyor. Yani hiç olmasa bile bunun sol tarafına da bir tane beyaz pels koyuyorum. Bu alıcı tarafından kod çözüldüğünde ortadan belirsizliği kaldırmak için kullanılıyor. Ne demek istiyorum?
+
+513
+02:36:24,628 --> 02:36:37,608
+Bu satır sayısı kadar olabilir. Yani her satırın bir tane beyazla her satırın da endofline ile bitmesi gerekiyor. Mesela satır sayısı kadar endofline yoksa bu bozuldu demektir.
+
+514
+02:36:38,932 --> 02:37:04,891
+İşte beyazla, bir tane fazla beyazla başlaması bunların hepsi kontrol mekanizması için kullanılıyor. Bir tane örnek verelim. Mesela elimizde şöyle bir şey var. Pels var. Üç tane black, iki tane white, iki tane black, yedi tane white.
+
+515
+02:37:05,652 --> 02:37:20,812
+Bunu kodlarken başına bir kere bir tane white ekliyorum. Ondan sonra 3 black, 2 white, 2 black, 7 white'ı tablodan alıp yazıyorum ve sonuna da end of line kodunu ekliyorum. Yani şu kod.
+
+516
+02:37:21,912 --> 02:37:31,312
+Kodlamalar bu şekilde oluyor. Veya başka şöyle bir satırım geldi. 3 white var. Pardon 2 white var.
+
+517
+02:37:31,763 --> 02:37:42,103
+2, 4, 5 tane Black, 1, 2, 3, 4, 5 tane White, 2 tane Black var. Kotlarken bunun başına bir tane White koyup 3 tane White yaptım.
+
+518
+02:37:42,515 --> 02:38:04,295
+Sonuna da End Offline ekledim ve ben Output Stream'e bunu gönderiyorum. Şu aralara şeyleri kontrol ederken kolay olsun diye ben koydum. Yani orijinalde bu ayıraçlar yok. Yani bu 3 White tablodan bakarken rahat bakayım diye, 5 Black tablodan bakarken rahat bakayım diye o şekilde ayırmışım.
+
+519
+02:38:05,940 --> 02:38:14,500
+Şimdi bu grup 3 kodda hata düzeltmeye sahip değil ama hataları da bulabiliyor.
+
+520
+02:38:14,500 --> 02:38:23,380
+Hatayı nasıl buluyor? İşte 50 tane satır olması lazım. 50 tane endoflan yoksa burada bir hata var demektir.
+
+521
+02:38:23,760 --> 02:38:27,460
+Ama hatanın nerede olduğunu tam olarak bulamaz.
+
+522
+02:38:28,084 --> 02:38:40,324
+Hufman kodunun doğasından dolayı iletim hattında tek bir hatalı bit gönderilse bile alıcı senkronizasyonun dışına çıkar ve hatalı bit stringini oluşturur.
+
+523
+02:38:40,324 --> 02:38:47,484
+Şimdi bu ne demek? Onda da şunu söylüyorum. Ben karşı tarafa bu satırı gönderiyorum.
+
+524
+02:38:48,275 --> 02:39:03,275
+Evet, Endoflinem'de bozulma olmayabilir ama şu aradaki bitlerde bozulma olabilir. Burası 1 değil de 0 olarak gidebilir. Bunun karşılığı bir başka bit vardır. Alıp onu koyabilir mesela.
+
+525
+02:39:05,108 --> 02:39:31,488
+Bazen hatalı bir bit stringi okunur. O bit stringi başka bir run'a karşılık gelmiştir. Onu koyabilir. Burada hatayı hiç anlayamaz. O bit stringi, yanlış olan bit stringi hiç o tabloda yoktur. Onun yerine bir kod koyamaz. O zaman o satırda yanlış yapıldığını anlar. End of line'e kadar olan kısmı atlar, hatalı olarak kabul eder.
+
+526
+02:39:33,108 --> 02:39:47,868
+End of Line satırından yeniden işlemlerini yapmaya başlar. Yani eğer End of Line'ı göremezse satır sayısı kadar bunun tamamında hatalı gider bu işlem.
+
+527
+02:39:48,667 --> 02:39:54,448
+Çünkü End of Line'ı görene kadar o satırın işlemiymiş gibi devam ettirir.
+
+528
+02:40:00,000 --> 02:40:04,979
+Bitlerde bir bozulma olmuşsa bir tane bit 1 iken 0 olmuş.
+
+529
+02:40:04,979 --> 02:40:11,880
+Fakat bunun yerine değişen bu kodda tabloda varsa belki A yerine E gelecek.
+
+530
+02:40:12,520 --> 02:40:16,299
+Karşı tarafa sadece o satır hatalı gitmiş olacak.
+
+531
+02:40:16,724 --> 02:40:31,164
+Bazen buradaki sembolü de o tabloda hiç bulamaz. Bulamayınca bir hata olduğunu anlar ve karşı tarafa der ki bir hata var. Sen de bu belgeyi bir daha gönder der.
+
+532
+02:40:31,164 --> 02:40:35,523
+İşte burada anlatılan şeylerin hepsi, yazılan şeylerin hepsi bu.
+
+533
+02:40:36,180 --> 02:40:46,680
+Kodlar tablodan yine göreceğiniz gibi 2 ile 12 bit arasında değişiyor.
+
+534
+02:40:46,680 --> 02:40:55,920
+Eğer kullanıcı karşı taraf 12 tane biti okudu okudu da halen geçerli bir kod bulamamışsa hata var diyor.
+
+535
+02:40:56,659 --> 02:41:14,219
+Bu hatayı bildiriyor. Bir sayfanın bittiğini anlamak için sayfanın sonuna 6 tane end-of-line kodunu koyuyor. Yoksa sayfanın bittiğini de anlayamaz. Ve bu yöntem one-dimensional coding olarak adlandırılıyor.
+
+536
+02:41:14,592 --> 02:41:29,812
+One Dimensional Coding, neden One Dimensional Coding? Her bir satırı teker teker okuyor. Her bir satırı kendi içinde işliyor. Tek boyutlu. Her bir satır kendi içinde bağımsız olarak işleniyor.
+
+537
+02:41:31,123 --> 02:41:58,504
+Hatayı neden buluyor? Yeniden söylüyorum. Satır sayısı kadar end offline yoksa bu doküman hatalıdır diyor. Bir daha gönder diyor. Satır sayısı kadar end offline var. Fakat bu gönderilen satır içerisindeki bitlerde bir takım yer değiştirmeler olduğunda 12 bite kadar gelip de halen o bitin karşılığı bir kod bulamıyorsa bu satırda hatalı vardır diyor.
+
+538
+02:41:59,123 --> 02:42:27,123
+Bir satırdaki hatadan bir şey değişmez. Yani şöyle düşün, şunun ortasında şöyle bir çizgi olmuş. Sen bunu okurken de bunu okuduktan sonra diye okuyorsun. Ya da şu skandan gitmiş, senin üst satırı gitmiş. Sen yine bunu sonra diye okursun. O kadar önemli değil. Bir satırda bir bozulma var. End of line'i yakalıyorsa bunu yine karşı tarafa gönderebilir. Ama birden fazla satırda bir bozulma var.
+
+539
+02:42:27,123 --> 02:42:40,664
+Satırda bir türlü kodu bulamıyorsa bu dökümanın bir daha gönderilmesini isteyebilir. 12 tane bite kadar geldi. Halen uygun bir kod bulamıyorsa bu dökümanı yeniden gönder diyebilir.
+
+540
+02:42:41,523 --> 02:42:53,463
+Satır bazında işlemleri okuduğu için One Dimensional Coding dedik. Tek boyutlu kodlama dedik. Buradaki sıkıştırma performansı yine verinin içeriğine bağlı.
+
+541
+02:42:55,123 --> 02:43:10,943
+Ant-White görüntülerde ise başarı yüksektir. Eğer gönderilen greyscale ya da renkli bir resim ise başarı o kadar yüksek değildir tek boyutluda.
+
+542
+02:43:11,667 --> 02:43:33,768
+Çünkü greyscale'lerde RAM değerleri daha küçük olacaktır. Küçük RAM değerlerinde bu tablo Black-White'a göre çıkarıldığı için RAM değerleri daha küçük olacağından çok başarılı bir sonuç alınamaz. Yani başarı oranı düşük olur.
+
+543
+02:43:34,159 --> 02:43:40,759
+Peki, benim bu kodlamada başarıyı daha arttırmak için ne yapmam gerekir?
+
+544
+02:43:41,399 --> 02:43:44,379
+Two Dimensional kodlamaya geçmem gerekir.
+
+545
+02:43:44,379 --> 02:43:47,211
+Two Dimensional kodlamam...
+
+546
+02:43:47,572 --> 02:44:06,792
+Biraz daha karmaşık. Bunları daha detaylı size anlatmam gerekiyor. O yüzden bunları önümüzdeki hafta bununla başlayacağım. Ve devamında aritmatik kodinke geçeceğiz. Aritmatik kodinkten sonra başka bir konuya geçebilirsem geçerim.
+
+547
+02:44:07,156 --> 02:44:34,056
+Geçemezsem de sondaki haftaya kalır. Evet, sizden ricam arkadaşlar, lütfen sizinle paylaşmış olduğum o doküman içerisine seminer konularınızı seçin. İlla benim verdiğim konular olması gerekmiyor makaleler. Siz kendiniz de bir makaleyle karşılaşmış olabilirsiniz, bulabilirsiniz. Oraya makalenin adını ve linkini koyun. Ben baktığımda o linke bir kliklerim.
+
+548
+02:44:35,156 --> 02:44:46,616
+Oysa zaten problem yok. Uygun değilse ya bu çok zor ya da bu çok komplike bunu bırakalım başka makale üzerinde çalışalım size diyeyim. Tamam mı?
+
+549
+02:44:49,043 --> 02:45:06,923
+Bu hafta içinde, çarşambaya kadar eğer seminer şeylerinizi tamamlarsanız çok sevinirim. Ben yine bir hatırlatma maili atarım şimdi gruptan ki diğer arkadaşlar da, derste olmayanlar da görsünler ve değiştirsinler. Sorunuz varsa alayım yoksa dersi bitiriyorum.
+
+550
+02:45:11,443 --> 02:45:17,263
+Peki, sorunuz yok diyorsunuz. Biriniz iyi günler desin ve dersimizi bitirelim.
+
+551
+02:45:18,663 --> 02:45:19,563
+İyi günler hocam.
+
+552
+02:45:19,723 --> 02:45:21,243
+Teşekkür ederim hocam. İyi günler.
+
+553
+02:45:21,363 --> 02:45:21,984
+Görüşürüz.
