@@ -1,0 +1,2011 @@
+1
+00:04:05,204 --> 00:04:21,204
+Günaydın arkadaşlar. İkinci yıl. ARP Teknolojileri dersinin ikinci haftasına hoş geldiniz. Biraz geç kaldık ama İstanbul'da bugün muazzam bir trafik vardır. Onlar da 15 dakikalık yolu.
+
+2
+00:04:23,204 --> 00:04:32,204
+5 dakikada alabildik. Burada evdeki hesap çarşıya maalesef yine de. Evet dersimize başlayalım.
+
+3
+00:04:51,060 --> 00:05:00,060
+OK, everybody. Good morning again. This is our second week in Computer Networking Technologies.
+
+4
+00:05:00,060 --> 00:05:18,668
+These two weeks are introductory weeks. So we are going to give some brief information about a network, briefly, and in detail is going to be given.
+
+5
+00:05:18,708 --> 00:05:45,196
+Bu konuda birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi birçok konuda bahsettiğim gibi
+
+6
+00:05:45,363 --> 00:06:08,363
+This week we are going to continue to our introduction and now we are going to discuss network core, the fundamental technologies in the network. We are going to discuss the structure of the internet and we are going to discuss two governing technologies which is...
+
+7
+00:06:08,480 --> 00:06:13,860
+Bu, paket ve circuit-switching teknolojisi.
+
+8
+00:06:15,640 --> 00:06:18,100
+As you remember,
+
+9
+00:06:18,100 --> 00:06:19,920
+here is our core.
+
+10
+00:06:20,840 --> 00:06:23,680
+There are many networks, as you can see.
+
+11
+00:06:23,680 --> 00:06:28,140
+And the mesh of interconnected routers
+
+12
+00:06:28,140 --> 00:06:29,360
+is our core.
+
+13
+00:06:30,000 --> 00:06:33,320
+So, this core is responsible of
+
+14
+00:06:33,747 --> 00:07:00,747
+forwarding the incoming packet to the outgoing direction. So in the core, packet switching method is used. In packet switching, in application layer, the message break the host.
+
+15
+00:07:00,851 --> 00:07:06,351
+Açıkçası birçokçası birçokçası birçokçası.
+
+16
+00:07:06,351 --> 00:07:10,351
+Ve buçokçası birçokçası.
+
+17
+00:07:10,351 --> 00:07:13,351
+Buçokçası birçokçası.
+
+18
+00:07:13,351 --> 00:07:25,451
+Birçokçası.
+
+19
+00:07:25,908 --> 00:07:35,908
+Each packet transmitted from input port to the output port at full link capacity in the core.
+
+20
+00:07:35,908 --> 00:07:37,908
+OK.
+
+21
+00:07:37,908 --> 00:07:46,908
+So the core is responsible of forwarding packaging from source destination to the...
+
+22
+00:07:46,908 --> 00:07:50,908
+...source to the destination.
+
+23
+00:07:50,908 --> 00:07:52,556
+As you can see here...
+
+24
+00:07:53,939 --> 00:08:06,659
+The core is a mesh of routers. So each router is responsible of forwarding the incoming packet to the outgoing part.
+
+25
+00:08:06,659 --> 00:08:18,420
+All right. So what type of mechanism is used to forward these incoming messages? Each router keeps
+
+26
+00:08:20,779 --> 00:08:22,779
+Birçokçası.
+
+27
+00:08:19,379 --> 00:08:21,799
+Local forwarding table.
+
+28
+00:08:22,480 --> 00:08:29,759
+And the root is calculated or found using routing algorithm.
+
+29
+00:08:29,759 --> 00:08:35,700
+As you can see here, let's say our destination address in here incoming packet,
+
+30
+00:08:35,939 --> 00:08:41,519
+the packet is coming from input port 3, as you can see.
+
+31
+00:08:42,000 --> 00:08:43,960
+The address is 0111.
+
+32
+00:08:44,436 --> 00:08:55,936
+And according to, as you can see, O111, all incoming packets are forwarded to outgoing link 2.
+
+33
+00:08:55,936 --> 00:09:05,736
+So this packet coming from the input port 3 and forwarded to outgoing port 2, as you can see here.
+
+34
+00:09:05,736 --> 00:09:10,936
+Okay. And each router keeps local forwarding table.
+
+35
+00:09:12,371 --> 00:09:24,371
+Routing algorithm is used to calculate or to find the destination between source to the, from source to the destination.
+
+36
+00:09:25,371 --> 00:09:31,771
+So router is responsible of forwarding. In the local action,
+
+37
+00:09:33,371 --> 00:09:38,771
+moves arriving packet from router's input link
+
+38
+00:09:39,059 --> 00:10:00,000
+to appropriate output link according to the address provided by incoming message and by using a local forwarding table. Okay? So as you can see, locally...
+
+39
+00:10:00,000 --> 00:10:27,400
+Forwarding is done from input link to the output link, and routing, local forwarding table is used. Globally, action is routing, determine source destination paths taken by packets. So to find reasonable route, routing algorithms are used.
+
+40
+00:10:28,115 --> 00:10:52,043
+OK? Let's have a look at this example. And let's use analogy. Suppose your aim, OK, to drive St. Joe's to Northampton from west part of USA to the east part of USA, OK?
+
+41
+00:10:52,275 --> 00:11:16,515
+Routing algorithm is responsible of finding available road. As you can see, there are two roads that are available. One is 3,502 miles, which takes 45 hours, as you can see, the blue one. And the grey one,
+
+42
+00:11:17,043 --> 00:11:40,644
+The road is 3309 miles, and this road takes 48 hours. And routing table, sorry, routing algorithm responsible of finding a good road or best road, all right?
+
+43
+00:11:41,491 --> 00:12:08,907
+And forwarding, suppose first road is taken, the red line is followed, and in each direction, STIs are entered in the input road of the STI and output road of the STI. This is routing. Okay? In St. Gilles, as you can see,
+
+44
+00:12:09,587 --> 00:12:15,627
+There are many incoming roads and many outgoing roads.
+
+45
+00:12:15,627 --> 00:12:28,567
+Suppose you have entered from here, input, and you can pick suitable direction to leave out of the steep.
+
+46
+00:12:28,887 --> 00:12:33,048
+So as analogy, this is router retenting.
+
+47
+00:12:35,827 --> 00:13:03,083
+This is router and forwarding algorithm or forwarding table is used to divert incoming packet to outgoing link. This is forwarding. As you can see in Kivlend, you have entered here and you used appropriate
+
+48
+00:13:03,316 --> 00:13:27,724
+output road to leave the steam. This is forwarding. Routing is responsible for finding the best road from source to destination. Forwarding is responsible for local entities. So,
+
+49
+00:13:28,596 --> 00:13:34,596
+We can distinguish now what is booting and what is forwarding, right?
+
+50
+00:13:34,596 --> 00:13:48,596
+And in the network, packet switching is used and each router stores the incoming message
+
+51
+00:13:48,596 --> 00:13:54,596
+and forwards this incoming message to the output link.
+
+52
+00:13:55,635 --> 00:14:21,235
+Let's say in the source, in the host, our message is broken into small junk of packets. Let's say it's divided into three packets. Each packet has L bits and the link.
+
+53
+00:14:22,163 --> 00:14:40,763
+between source to router and router to destination, let's say for the moment, R bit per second. So in each router, it stores the incoming message, as you can see.
+
+54
+00:14:41,011 --> 00:14:46,011
+ve bu şekilde,
+
+55
+00:14:46,011 --> 00:14:53,011
+bu şekilde,
+
+56
+00:14:53,011 --> 00:14:55,011
+L over R,
+
+57
+00:14:55,011 --> 00:15:07,011
+bu şekilde,
+
+58
+00:15:09,331 --> 00:15:14,731
+ADD capacity is R bit per second.
+
+59
+00:15:14,731 --> 00:15:15,731
+OK?
+
+60
+00:15:17,531 --> 00:15:32,131
+Since store and forward is used, entire packet must arrive at the router before it can be transmitted to the output link.
+
+61
+00:15:32,403 --> 00:15:46,403
+OK? So transmission delay equal to L over R, that is the time needs to store all incoming message into the router.
+
+62
+00:15:46,403 --> 00:15:57,403
+That is end-to-end delay. Suppose the link capacity is equal, which is R bit per second, from...
+
+63
+00:15:58,259 --> 00:16:01,860
+SORS TO ROOTER, ROOTER TO DESTINATION.
+
+64
+00:16:01,860 --> 00:16:19,299
+And end-to-end delay basically, so let's say one packet, it takes L over R second to reach to ROOTER, plus L over R second to reach to ROOTER to the destination.
+
+65
+00:16:26,292 --> 00:16:40,012
+to get one L bit packet from source to destination, which is L, which is called end-to-end delay.
+
+66
+00:16:40,012 --> 00:16:49,012
+So in one-hop numerical example in here, one-hop means it contains only one router.
+
+67
+00:16:49,012 --> 00:16:53,412
+L is, let's say, 10 kilobits per second.
+
+68
+00:16:53,716 --> 00:17:21,708
+R is the size of the packet. R is the link capacity, which is 100 megabit per second for the moment. So one hop transmission delay is equal to 100 microsecond or 0.1 millisecond. Okay? Example is very simple. Suppose...
+
+69
+00:17:22,355 --> 00:17:29,675
+In our previous example, we have one source, one router, and one destination, right?
+
+70
+00:17:29,675 --> 00:17:47,355
+Suppose in this time, host A and B connected to router here, okay?
+
+71
+00:17:48,948 --> 00:18:03,748
+Host A wants to send a message to host C on the right side and host B aims to send a message to host E.
+
+72
+00:18:03,748 --> 00:18:04,748
+Alright?
+
+73
+00:18:05,076 --> 00:18:15,596
+Let's say the capacity of each link from host to router is 100 megabit per second.
+
+74
+00:18:15,596 --> 00:18:29,596
+And the capacity of the link between routers is 0.1 megabit, 1.5 megabit per second.
+
+75
+00:18:33,236 --> 00:18:55,236
+The package arrives to router faster than it leaves from the router. So the router now put them into the queue. Okay? So it puts into the queue, then...
+
+76
+00:18:55,667 --> 00:19:17,347
+Forwards to the next router, as you can see in this example. So, queue of packets. So, waiting for transmission over output link in this time. In previous example, only transmission delay exists. Here...
+
+77
+00:19:17,587 --> 00:19:36,788
+Queuing delay is also there because each packet must wait till it leaves from the router to the output link. Okay, queuing is the example of...
+
+78
+00:19:37,491 --> 00:19:51,471
+In the real world here, like Mahmutbey metro tolls, as you can see many cars coming and there are limited number of gates.
+
+79
+00:19:52,291 --> 00:20:02,991
+Or, as you can see, there is only one door to enter the building and only one person can enter the building.
+
+80
+00:20:03,539 --> 00:20:31,139
+At a time, so there's a queuing. Or in UK, as you can see, it's a queue in the bus stop. Queuing a queues when work arrives faster than it can be serviced. Okay? This is the analogy in the real world. So, packet queuing and lossless have a look.
+
+81
+00:20:31,923 --> 00:20:41,923
+As I said earlier, router keeps a buffer or the memory to keep the queue.
+
+82
+00:20:41,923 --> 00:20:52,923
+If the packet arrives and there is no room to put into the queue, some packet can be lost.
+
+83
+00:20:53,491 --> 00:21:17,491
+So if arrival rate, let's say in bit per second to link, exists transmission rate, that is, again, R bit per second of the link for the same period of time, so packets will queue, waiting to be transmitted on output link.
+
+84
+00:21:19,124 --> 00:21:43,124
+There is no room to put a packet into the queue. Packet can be dropped or lost if memory or buffer in routers fills up. Okay? This is two terminologies now we face. Queuing, transmission time and the loss.
+
+85
+00:21:44,756 --> 00:21:49,636
+Alternative to packet switching is circuit switching.
+
+86
+00:21:49,636 --> 00:21:58,756
+In packet switching, what we do, packet arrays, we put them into the queue and waits for its turn.
+
+87
+00:21:58,756 --> 00:22:02,676
+Alternative technology is circuit switching.
+
+88
+00:22:10,675 --> 00:22:36,316
+established between source to destination. End-to-end sources allocated to reserve for call. We use call between source and destination. In diagram here on the right, each link has four circuits. Each router has four circuits.
+
+89
+00:22:40,180 --> 00:23:07,628
+As you can see here in the input, second circuit in the top link and the first circuit in the right link. And the link, links are dedicated and no sharing between source and destination. Okay? In this case,
+
+90
+00:23:08,019 --> 00:23:13,019
+Sources and destinations can use the full capacity.
+
+91
+00:23:14,019 --> 00:23:27,915
+But that optimised because sometimes if there is no message to share between source and destination, the capacity, the entire capacity is rested.
+
+92
+00:23:28,115 --> 00:23:31,115
+Circuit segment, as I said, is idle.
+
+93
+00:23:31,115 --> 00:23:45,115
+Commonly used, this technology, circuit switching technology, is traditionally used in PSDN, public switching network, public telephone networks.
+
+94
+00:23:45,115 --> 00:23:52,115
+Okay? In telephone network, the circuit, dedicated circuit...
+
+95
+00:23:52,276 --> 00:23:58,096
+...is established between your phone or the phone you call.
+
+96
+00:24:00,176 --> 00:24:07,256
+So, in circuit switching, how we can share?
+
+97
+00:24:07,256 --> 00:24:13,436
+As I said, the entire capacity of the link is dedicated.
+
+98
+00:24:13,996 --> 00:24:15,596
+So, how we can share?
+
+99
+00:24:15,956 --> 00:24:17,256
+There are two...
+
+100
+00:24:17,523 --> 00:24:41,523
+Technology is used. First one is FDM, frequency division multiplexing. In here, let's say optical cable, electromagnetic frequencies here, divided into frequency bands, as you can see here, all right?
+
+101
+00:24:41,652 --> 00:24:52,152
+And each call this time, let's see, there are four calls, blue, green, yellow, and pink.
+
+102
+00:24:52,152 --> 00:25:03,951
+Each call allocated its own band and can transmit at maximum rate of that narrow band.
+
+103
+00:25:08,788 --> 00:25:14,508
+If there's a physical link, we divide and the link has a capacity.
+
+104
+00:25:14,508 --> 00:25:25,147
+We divide the link capacity into narrow bands and we dedicate this narrow band into the one core.
+
+105
+00:25:25,948 --> 00:25:27,147
+As you can see here.
+
+106
+00:25:29,203 --> 00:25:39,963
+Each user can use its dedicated narrow frequency bond for all time. Okay?
+
+107
+00:25:39,963 --> 00:25:55,627
+Another method is TDM, time division multiplexing. Again, same graph here. Again, we have four users.
+
+108
+00:25:57,236 --> 00:26:22,915
+And the link has an entire capacity and the time is another variable. So in this case, in time division multiplexing, we divide our link into time slots. Okay? Each call this time allocated periodic slots.
+
+109
+00:26:23,731 --> 00:26:31,731
+Can transmit maximum rate, not the band capacity.
+
+110
+00:26:31,731 --> 00:26:44,731
+This time, at that certain period, the entire capacity of the physical link, which is wider frequency band, can be used.
+
+111
+00:26:44,731 --> 00:26:48,731
+But only limited time.
+
+112
+00:26:48,731 --> 00:26:49,731
+Okay?
+
+113
+00:26:49,971 --> 00:27:01,971
+As you can see here, it is very simple. Top, time-division, frequency-division multiplexing. Bottom, time-division multiplexing.
+
+114
+00:27:01,971 --> 00:27:09,971
+These are used to share the link in the Perkut-Switching Network.
+
+115
+00:27:15,571 --> 00:27:22,531
+So, let's compare circuit-switching network, packet-switching network.
+
+116
+00:27:22,531 --> 00:27:29,011
+Again, we have N number of users.
+
+117
+00:27:29,011 --> 00:27:36,211
+Our output link capacity is 1 gigabit per second.
+
+118
+00:27:36,211 --> 00:27:43,491
+Each user link is 100 megabit per second.
+
+119
+00:27:45,172 --> 00:27:47,172
+VLAN active, right?
+
+120
+00:28:43,727 --> 00:28:44,727
+O
+
+121
+00:28:43,155 --> 00:29:06,155
+Let's say 35 users are in our network. In this case, if 45 users are active, although 10% of time, though each user is active, the probability is...
+
+122
+00:29:06,708 --> 00:29:32,652
+10 active at the same time. So the probability of more than 10 users active at the same time is 0.0004. This probability is too low. Okay? As you can see, packet switching network is superior because
+
+123
+00:29:33,107 --> 00:30:00,000
+Yani, çünkü 10% deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymişimde deymiş
+
+124
+00:30:00,000 --> 00:30:26,571
+10% of the link, okay? 10% they can use the link only 10% of entire time. So the probability is 0.0004. As you can see, in switching network, only 10 users. As you can see, packet switching is superior. So...
+
+125
+00:30:27,188 --> 00:30:47,788
+Paket switching is slum bank winner, is a par and winner. It's a spurious because only 10, in the same system, only 10 users can use, but in paket switching, in full capacity.
+
+126
+00:30:47,887 --> 00:30:57,567
+The probability is too low, which means each user can access the network up to 100 megabit per second.
+
+127
+00:30:58,288 --> 00:31:05,567
+It is great, this packet switching network is great for burst data. What is burst data?
+
+128
+00:31:06,127 --> 00:31:13,567
+The packet arrives in the limited amount of time, the remaining time is idle. Sometimes
+
+129
+00:31:14,132 --> 00:31:29,732
+As data to send, but at other times, not send anything. So in this case, packet switching mechanism allows you source sharing and it is simple.
+
+130
+00:31:31,732 --> 00:31:39,932
+Why simple? Because you receive the packet, put in the queue and forward the packet. So there is no setup code.
+
+131
+00:31:40,147 --> 00:31:51,147
+In circuit switching network, you establish the link, physical link, before you exchange message.
+
+132
+00:31:51,147 --> 00:32:03,051
+That is, excessive congestion possible in packet delay, in packet switching network, because if the capacity of the...
+
+133
+00:32:03,700 --> 00:32:13,000
+Buffer is limited, so packet delay and the loss due to buffer overflow is possible.
+
+134
+00:32:13,000 --> 00:32:25,380
+So in this case, we need protocol for reliable data transfer, plus we need congestion control too.
+
+135
+00:32:25,759 --> 00:32:30,300
+So a question can rise.
+
+136
+00:32:31,059 --> 00:32:38,559
+how to provide circuit-like behavior in packet-switching network.
+
+137
+00:32:38,559 --> 00:32:56,859
+In this case, since somehow we can create virtual circuit-switching, and in this case, it provides reliable data transfer, although we use...
+
+138
+00:32:57,940 --> 00:32:59,940
+paket switching.
+
+139
+00:32:59,940 --> 00:33:03,940
+In this case, bandwidth guarantees traditionally used,
+
+140
+00:33:03,940 --> 00:33:12,940
+this virtual circuit circuitrymetre traditionally used for audio or video applications,
+
+141
+00:33:12,940 --> 00:33:20,940
+because it needs a certain amount of bandwidth.
+
+142
+00:33:24,756 --> 00:33:31,176
+Let's remember again, internet is a network of networks.
+
+143
+00:33:31,176 --> 00:33:39,876
+So hosts connect to internet via access internet service providers.
+
+144
+00:33:40,336 --> 00:33:40,516
+All right.
+
+145
+00:33:41,416 --> 00:33:46,856
+And these providers can be, these access can be residential access,
+
+146
+00:33:47,556 --> 00:33:50,456
+like access to internet through your home.
+
+147
+00:33:51,508 --> 00:33:57,388
+Enterprise access like universities, companies or commercial ISPs.
+
+148
+00:33:57,388 --> 00:34:05,388
+So access ISPs in turn must be interconnected too so that...
+
+149
+00:34:31,248 --> 00:34:33,628
+Current internet structure.
+
+150
+00:34:34,048 --> 00:34:34,168
+Okay.
+
+151
+00:34:35,168 --> 00:34:37,128
+There are millions of.
+
+152
+00:35:02,195 --> 00:35:08,195
+A simpler approach is basically connect one another like a mesh.
+
+153
+00:35:09,195 --> 00:35:10,195
+But,
+
+154
+00:35:11,195 --> 00:35:23,195
+connecting each ISP to each other directly doesn't scale because it requires n square connections.
+
+155
+00:35:23,195 --> 00:35:26,195
+Okay? This is like a mesh.
+
+156
+00:35:26,195 --> 00:35:27,980
+So it is not...
+
+157
+00:35:28,211 --> 00:35:41,332
+So in this case, what we do, each local ISP may connect to global ISP.
+
+158
+00:35:41,332 --> 00:35:49,372
+And global ISP creates a cloud or a network, then you can see in the middle.
+
+159
+00:35:53,811 --> 00:36:16,412
+It's a network of networks. Some ISPs connected to ISP A. These are the global ISPs. The other is ISP B and C. And the global ISPs is valuable business. There will be competitors who will be connected.
+
+160
+00:36:17,331 --> 00:36:36,091
+So, internet exchange point is now among global ISPs, IXPs, the responsible of connecting these global ISPs. These are IXP is internet access points. And...
+
+161
+00:36:36,628 --> 00:36:47,208
+There can also be a particular link among routers, one in the one ISP, global ISP, the other one is the other global ISP.
+
+162
+00:36:47,208 --> 00:36:56,128
+There are two possibilities. One is use IX keys or the other one is use pairing link.
+
+163
+00:37:02,132 --> 00:37:05,132
+...ve some regional ISPs...
+
+164
+00:37:06,132 --> 00:37:08,132
+...that can...
+
+165
+00:37:08,132 --> 00:37:12,132
+...give a service to local access nets...
+
+166
+00:37:13,132 --> 00:37:15,132
+...as you can see here.
+
+167
+00:37:15,132 --> 00:37:18,132
+On top of it...
+
+168
+00:37:18,132 --> 00:37:22,132
+...we have content provider networks...
+
+169
+00:37:22,132 --> 00:37:26,132
+...such as Google, Microsoft, Kamayi...
+
+170
+00:37:26,483 --> 00:37:33,884
+may run their own network on top of this cloud to bring services,
+
+171
+00:37:33,884 --> 00:37:41,203
+let's say Netflix, the content stored there,
+
+172
+00:37:41,203 --> 00:37:50,963
+but to access the content, this content must be close to end user as possible.
+
+173
+00:37:51,923 --> 00:38:00,023
+As possible.
+
+174
+00:38:01,023 --> 00:38:01,123
+Okay?
+
+175
+00:38:02,163 --> 00:38:04,824
+These are how it works.
+
+176
+00:38:05,603 --> 00:38:09,824
+So, the internet is a network of networks.
+
+177
+00:38:10,043 --> 00:38:14,804
+The bottom line, there's a local access ISDs.
+
+178
+00:38:14,804 --> 00:38:16,748
+There are some...
+
+179
+00:38:17,652 --> 00:38:35,051
+ISPs are there, to exchange ISPs is there, and we have Google Tier 1 ISPs. At center, small number of well-connected large networks.
+
+180
+00:38:35,219 --> 00:39:00,219
+So Tier 1 commercial ISPs, such as Level 3, Spring, AT&T, TNT, national or international coverage, and the content provider networks here, such as Google, Facebook, provide network that connects its data.
+
+181
+00:39:01,331 --> 00:39:08,251
+...data center to internet, often bypassing tier 1 regional ISPs.
+
+182
+00:39:08,251 --> 00:39:18,631
+Google or Facebook may govern its own data center, which is directly connected to the network.
+
+183
+00:39:20,551 --> 00:39:22,951
+Okay, let's have a look.
+
+184
+00:39:23,635 --> 00:39:31,755
+This map here, this map is 2019, that is the Tier 1 ISP network map.
+
+185
+00:39:32,532 --> 00:39:41,291
+And these are spin-node, Ethernet POPs, landing stations, and the point of presence POP point is there.
+
+186
+00:39:41,291 --> 00:39:51,731
+And in there, there are many routers linked to peering networks and linked from simple customer network to the local POP.
+
+187
+00:39:51,731 --> 00:39:55,731
+And these are some sort of mesh, okay?
+
+188
+00:39:55,731 --> 00:39:59,972
+Now, we know the core of...
+
+189
+00:40:00,000 --> 00:40:27,820
+internet. Basically, it is the network of network. This time, let's discuss the loss, the wave, and throughput. Okay. As you remember, in packet switching network, packet queue into router buffer
+
+190
+00:40:28,403 --> 00:40:44,403
+waiting for turn for transmission. Okay? And Q length grows when arriving late to link, arriving rate to link.
+
+191
+00:40:44,655 --> 00:41:10,655
+X is output link capacity. If the incoming link capacity is higher than output link capacity, the router keeps incoming packet into the queue. So if the queue is full, packet loss occurs because there is no room to put the packet.
+
+192
+00:41:10,996 --> 00:41:14,996
+The memory to hold queue packets filled up.
+
+193
+00:41:14,996 --> 00:41:15,996
+OK?
+
+194
+00:41:17,996 --> 00:41:26,996
+So, the first packet from the queue will be transmitted.
+
+195
+00:41:26,996 --> 00:41:35,996
+So the transmission delay is the time to put the packet into the output link.
+
+196
+00:41:37,139 --> 00:41:46,440
+So, packets are waiting into the queue that is called queuing delay, all right?
+
+197
+00:41:47,440 --> 00:42:03,307
+So, we now transmission delay and queuing delay. And if the buffer is cool, we now face packet logs because router drops.
+
+198
+00:42:03,315 --> 00:42:09,555
+The packet because there is no room to put incoming packet into the queue.
+
+199
+00:42:11,555 --> 00:42:26,275
+So, the time, the nodal time for each packet equal to the processing time.
+
+200
+00:42:27,956 --> 00:42:53,099
+Because the thumb processing mechanism is done in the router to treat each incoming packet, queuing time plus transmission time and propagation time. Okay? Let's discuss these values. As you can see here,
+
+201
+00:42:55,507 --> 00:43:23,435
+OSI A and B sending messages to our router. Okay? And each release router process incoming data. It's the time required for processing called nodal processing time. And the time to put the message into the link. That is transmission time. And the time requires
+
+202
+00:43:23,699 --> 00:43:45,995
+to travel from source to destination, that is propagation time. So deprocessing or nodal processing, so in that processing router check the message for bit errors and determine
+
+203
+00:43:46,003 --> 00:43:52,803
+İngilizce, forward outpoint link according to forwarding table.
+
+204
+00:43:52,803 --> 00:44:01,603
+And this time, typically less than milliseconds according to the capacity of the router.
+
+205
+00:44:02,803 --> 00:44:10,803
+In the queuing delay, that is the time waiting at output link for transmission.
+
+206
+00:44:12,692 --> 00:44:22,192
+This is the time required to wait into the queue. This time depends on congestion level of router.
+
+207
+00:44:26,356 --> 00:44:45,356
+The transmission delay, let's say you remember the size of our packet is L, L bit per is L bit, and R is the capacity of the link. If you remember...
+
+208
+00:44:45,523 --> 00:45:09,963
+in our previous figure. So, D transmission is equal to L over R to put entire packet into the link. Okay? And propagation delay, D prop, let's say the length of the physical link.
+
+209
+00:45:10,099 --> 00:45:13,499
+And S is the propagation speed.
+
+210
+00:45:13,499 --> 00:45:21,899
+That is the, let's say, this is in three space, it's equal to speed of light.
+
+211
+00:45:21,899 --> 00:45:30,699
+In some physical length, it is around two times 10 power 8 meter per second.
+
+212
+00:45:30,931 --> 00:45:57,531
+So, D propagation is equal to D. D is the length of the length. Let's say, let's say, if we are using the category 6 UTP cable, let's say the D is equal to 100 meter. Then the speed of the wave, let's say, 2 times 10 power 8.
+
+213
+00:45:57,715 --> 00:46:21,551
+Meter per second, depropagation is equal to D over S. Okay? As you can see, detransmission and depropagation are entirely different. Detransmission is the time required to put the message into the output length. So, the time...
+
+214
+00:46:21,552 --> 00:46:23,952
+Depends on the capacity of the line.
+
+215
+00:46:24,351 --> 00:46:24,472
+Okay?
+
+216
+00:46:24,972 --> 00:46:28,512
+Deep propagation is the time required to travel
+
+217
+00:46:28,512 --> 00:46:38,271
+from one end of the line to another end of the line.
+
+218
+00:46:39,952 --> 00:46:40,711
+Okay.
+
+219
+00:46:40,992 --> 00:46:43,351
+Let's give a break for 10 minutes.
+
+220
+00:46:43,351 --> 00:46:44,992
+Then we can continue.
+
+221
+00:57:34,516 --> 00:57:37,076
+OK, everybody. Let's continue.
+
+222
+00:57:38,916 --> 00:57:42,836
+For the moment, let's have a look at this analogy, all right?
+
+223
+00:57:44,195 --> 00:57:46,836
+Suppose we have 10 cars.
+
+224
+00:57:48,916 --> 00:57:57,235
+It's a 10 car of caravan. Let's say this is the analogy also known as 10-bit packet. Tall boot.
+
+225
+00:58:01,300 --> 00:58:06,440
+Marmara motorway
+
+226
+00:58:06,440 --> 00:58:08,120
+ve
+
+227
+00:58:08,120 --> 00:58:13,560
+bir kilometre
+
+228
+00:58:13,560 --> 00:58:15,880
+o karavan
+
+229
+00:58:15,880 --> 00:58:17,120
+bir tanker
+
+230
+00:58:17,120 --> 00:58:19,220
+ve
+
+231
+00:58:19,220 --> 00:58:20,640
+our car
+
+232
+00:58:21,844 --> 00:58:26,003
+100 km per hour.
+
+233
+00:58:26,124 --> 00:58:28,423
+Bu şekilde bir kar var.
+
+234
+00:58:29,204 --> 00:58:32,764
+Ve bu kadar da
+
+235
+00:58:32,764 --> 00:58:34,684
+bir tall boot
+
+236
+00:58:34,684 --> 00:58:37,864
+12 sekunden
+
+237
+00:58:37,864 --> 00:58:40,864
+bir şekilde
+
+238
+00:58:40,864 --> 00:58:42,304
+similar to
+
+239
+00:58:42,304 --> 00:58:44,543
+paket processing
+
+240
+00:58:44,543 --> 00:58:45,204
+in the router.
+
+241
+00:58:46,164 --> 00:59:11,563
+12 seconds, which means you get the ticket and or you pay the price of the motorway. Okay? Each car takes, each tollboot takes 12 seconds to give a service. Okay? So we have 10 cars in our caravan.
+
+242
+00:59:11,668 --> 00:59:34,068
+So 10 x 12, it is 120 seconds. So total service of a packet is two minutes. So how long till caravan is lined up before the second tolbut? So this is our aim.
+
+243
+00:59:39,315 --> 00:59:51,315
+So, time to push entire caravan through tollboot into highway, 12 times 10, 112 seconds.
+
+244
+00:59:51,315 --> 01:00:05,259
+And time required for last car to propagate, to travel from one tollboot to next tollboot, because each tollboot separated.
+
+245
+01:00:05,492 --> 01:00:07,492
+100 km.
+
+246
+01:00:08,412 --> 01:00:09,092
+So,
+
+247
+01:00:09,092 --> 01:00:10,972
+the speed of each car is
+
+248
+01:00:10,972 --> 01:00:13,212
+100 km per hour.
+
+249
+01:00:13,212 --> 01:00:14,972
+So, one hour
+
+250
+01:00:14,972 --> 01:00:16,771
+is required
+
+251
+01:00:16,771 --> 01:00:18,972
+to travel from one boot
+
+252
+01:00:18,972 --> 01:00:20,332
+to another boot.
+
+253
+01:00:20,332 --> 01:00:22,332
+So, total time
+
+254
+01:00:22,332 --> 01:00:24,771
+is one hour
+
+255
+01:00:24,771 --> 01:00:26,652
+plus two minutes,
+
+256
+01:00:26,652 --> 01:00:28,652
+60 minutes
+
+257
+01:00:28,652 --> 01:00:31,212
+to be required.
+
+258
+01:00:31,456 --> 01:00:54,188
+to line up to the next tollboot. So, suppose car now propagates at 1000 km per hour, and suppose tollboot now makes one minute to service a car.
+
+259
+01:00:54,260 --> 01:01:01,940
+So, will car arrive to second boot before all car service at first boot?
+
+260
+01:01:01,940 --> 01:01:15,460
+Yes, because after seven minutes, first car arrives at second boot, three cars still at the first boot because...
+
+261
+01:01:17,523 --> 01:01:36,123
+Seven minutes is required to travel from one tollboot to second tollboot, but one car needs one minute to have a service in one tollboot. So seven cars may reach...
+
+262
+01:01:36,143 --> 01:01:48,143
+to the second tollboot, but still three cars are waiting to be serviced by first tollboot.
+
+263
+01:01:48,143 --> 01:01:49,143
+OK?
+
+264
+01:01:52,143 --> 01:01:56,143
+So, let's discuss packet queuing delay.
+
+265
+01:01:58,143 --> 01:02:02,143
+You remember R is the link capacity.
+
+266
+01:02:02,675 --> 01:02:16,675
+bit per second, L is the bit packet length of, packet length, the bit, and A is the average packet arrived.
+
+267
+01:02:16,675 --> 01:02:30,411
+Right. If L times R over R is less than 1, the average queuing delay is
+
+268
+01:02:31,092 --> 01:02:40,811
+...small if it goes to the one and the delay reach to infinity.
+
+269
+01:02:41,711 --> 01:02:47,891
+If L over R around zero, average queen delay is too small.
+
+270
+01:02:48,391 --> 01:02:50,796
+If L over R...
+
+271
+01:02:50,804 --> 01:02:55,443
+...göz up to 1, average queuing delay getting larger.
+
+272
+01:02:56,083 --> 01:03:02,024
+If L times A over R is bigger than 1,
+
+273
+01:03:02,024 --> 01:03:08,244
+which means work arriving is more than it can be serviced,
+
+274
+01:03:08,864 --> 01:03:13,024
+so average delay is infinite, which means...
+
+275
+01:03:13,907 --> 01:03:18,668
+Pakets are dropped because there is no room in the queue.
+
+276
+01:03:20,548 --> 01:03:37,507
+Like here, in Mahmud Bey, you remember, or in other places, like in Şirinevler, E5 is reasonably limited car on the...
+
+277
+01:03:39,860 --> 01:03:46,860
+E5, but there are many cars waiting to enter to E5 in Shirinavra.
+
+278
+01:03:48,860 --> 01:03:53,860
+Okay? This is LA over R goes to zero. There is no...
+
+279
+01:03:55,860 --> 01:04:01,860
+nothing in the queue, it's free. L over R is larger than one or goes to one.
+
+280
+01:04:01,860 --> 01:04:06,860
+It's a traffic jam at the bottom. Okay?
+
+281
+01:04:07,923 --> 01:04:14,923
+Let's discuss real internet delays and how we can measure.
+
+282
+01:04:17,923 --> 01:04:21,923
+So what do real internet delay and loss looks like?
+
+283
+01:04:21,923 --> 01:04:34,923
+There's a command, trace route, okay? Trace route program that provides delay measurement from source to router along the end.
+
+284
+01:04:35,347 --> 01:05:01,347
+Antenni path towards destination for all I'd host. Okay? So our host sent three packets that will reach router I, let's say, first router, on the path towards destination. Okay?
+
+285
+01:05:02,099 --> 01:05:26,099
+And returns I will return packet to sender. And sender measures time interval between transmission and reply. Okay? In the first router, then second router, send three packet to second router, and third router, and so on.
+
+286
+01:05:26,099 --> 01:05:29,547
+Let's have a look at our example here.
+
+287
+01:05:32,148 --> 01:05:44,547
+suppose you want to measure the delay between GSCS, you must add it to Eurocom trans, okay?
+
+288
+01:05:46,547 --> 01:05:57,748
+Our host GSCW, here is the IP address 125.119.240.254. This is the first
+
+289
+01:05:59,347 --> 01:06:27,052
+router, it spawned three packet, one millisecond, one millisecond, and one millisecond. And the other one is still another gateway in the university again, and so on, goes down. As you can see, some stars here in line 17 and 18, which means
+
+290
+01:06:27,603 --> 01:06:31,483
+There is no response or packet are lost.
+
+291
+01:06:34,523 --> 01:06:36,743
+So let's have a look this time.
+
+292
+01:06:36,863 --> 01:06:39,183
+Let's remember packet loss.
+
+293
+01:06:40,384 --> 01:06:43,203
+Q, also known as buffer.
+
+294
+01:06:44,443 --> 01:06:48,763
+Proceeding link in buffer has finite capacity.
+
+295
+01:06:50,344 --> 01:06:50,623
+Okay.
+
+296
+01:06:51,304 --> 01:06:53,227
+Here is the capacity is...
+
+297
+01:06:53,396 --> 01:06:55,396
+Buffer waiting area.
+
+298
+01:06:55,396 --> 01:07:10,396
+And since the link capacity is lower than the incoming link capacity, so packet transmitted here and wait in the queue.
+
+299
+01:07:10,396 --> 01:07:21,036
+So packet arriving to full queue, so incoming packet will be dropped or lost.
+
+300
+01:07:21,556 --> 01:07:39,556
+Loss packet may be transmitted by previous load, or by source, or by end system, or in some protocol, it may not be transmitted.
+
+301
+01:07:43,556 --> 01:07:48,240
+Let's have a look this time at another terminology, throughput.
+
+302
+01:07:48,239 --> 01:08:01,639
+Throughput is a rate, bits over time unit, bit per second, at which bits are being sent from sender to receiver.
+
+303
+01:08:01,639 --> 01:08:07,559
+That is, there are two types of throughput we may talk about.
+
+304
+01:08:07,559 --> 01:08:14,239
+First one is instantaneous throughput, that is the rate at a given point in a time.
+
+305
+01:08:14,804 --> 01:08:16,344
+ve average,
+
+306
+01:08:16,344 --> 01:08:20,944
+ve rate over a long period of the time.
+
+307
+01:08:20,944 --> 01:08:22,344
+Let's say,
+
+308
+01:08:22,344 --> 01:08:24,644
+this example here,
+
+309
+01:08:24,644 --> 01:08:26,543
+here on the left hand side,
+
+310
+01:08:26,543 --> 01:08:28,144
+there is a server
+
+311
+01:08:28,144 --> 01:08:32,144
+with file of f bit
+
+312
+01:08:32,144 --> 01:08:36,064
+to be sent to the client on the right.
+
+313
+01:08:36,064 --> 01:08:37,064
+Okay?
+
+314
+01:08:37,064 --> 01:08:39,596
+The link capacity,
+
+315
+01:08:39,699 --> 01:09:04,876
+Of the server to router is RS, RS bit per second, right? And link capacity to router to destination is RC, client capacity bit per second. Okay? Again, analogy, this is like a water pipe, thinner pipe.
+
+316
+01:09:05,203 --> 01:09:31,203
+Let's say RS is thinner and RC is larger pipe, fluid pipe or water pipe, okay? And the file is the water to send from the fluid from source to router and router to client. If RS...
+
+317
+01:09:31,471 --> 01:09:40,671
+is smaller than RC, so client capacity is larger than source link capacity.
+
+318
+01:09:42,671 --> 01:09:53,471
+Or if source link capacity is larger than client link capacity. There are two cases.
+
+319
+01:09:54,292 --> 01:10:13,068
+As you can see here in the second example, bottleneck length is there while the source capacity is higher than client capacity. So router must put...
+
+320
+01:10:14,579 --> 01:10:41,996
+Incoming message and because the capacity of the outgoing link is large, lower, so link to end-to-end path that contains end-to-end throughput. Okay? Let's discuss second scenario here. We have n number of servers and n number of servers.
+
+321
+01:10:42,195 --> 01:11:09,995
+A client, let's say 10 connections, 10 servers of the top, each has RS capacity pipe and 10 number of clients, each link capacity is RC and it shares larger R.
+
+322
+01:11:10,579 --> 01:11:34,780
+So, it is shared. Per connection, end-to-end throughput is the minimum capacity. RC, minimum, RC, RS, R over N. Okay? In practice, RC or RS is often bottleneck.
+
+323
+01:11:35,572 --> 01:11:38,652
+Çünkü R over 10
+
+324
+01:11:38,652 --> 01:11:41,012
+is mostly larger.
+
+325
+01:11:41,612 --> 01:11:42,652
+So, the throughput
+
+326
+01:11:42,652 --> 01:11:45,212
+for shared link is the minimum
+
+327
+01:11:45,212 --> 01:11:46,792
+capacity
+
+328
+01:11:46,792 --> 01:11:48,391
+of the link
+
+329
+01:11:48,391 --> 01:11:49,572
+in the path.
+
+330
+01:11:51,971 --> 01:11:53,012
+Okay.
+
+331
+01:11:54,012 --> 01:11:56,192
+Let's continue to our
+
+332
+01:11:56,192 --> 01:11:57,192
+lecture.
+
+333
+01:12:01,844 --> 01:12:09,164
+This time, let's discuss protocol layers and services.
+
+334
+01:12:09,164 --> 01:12:19,363
+As you can see, internet is network of networks. It's a complex subject.
+
+335
+01:12:19,363 --> 01:12:26,924
+And we use packet switching network. It is the best-effort network.
+
+336
+01:12:27,891 --> 01:12:44,891
+You need some service, you must have some sort of protocol, the mechanism. Since it is complex, it's better to make it as layers, okay?
+
+337
+01:12:47,604 --> 01:13:03,764
+As I said, networks are complex. There are many pieces like host, routers, link of various media like Wi-Fi, Ethernet, fiber optics, Coxsills, whatever.
+
+338
+01:13:03,764 --> 01:13:14,644
+There are many sort of applications such as email application, web browser application, ERPs, many things, and many type of protocols.
+
+339
+01:13:15,828 --> 01:13:26,828
+many type of hardware, Cisco's, HP's, interfaces, whatever, and many type of software.
+
+340
+01:13:26,828 --> 01:13:37,828
+The question is there any hope of organizing structure of network or at least our discussion of network?
+
+341
+01:13:37,828 --> 01:13:41,828
+Let's have a look this time at the analogy.
+
+342
+01:13:53,203 --> 01:14:19,851
+First, there are series of steps. You start with buying a ticket. Okay? You pay money so you can buy a ticket. You prepare your baggage and take your baggage to the airport and leave your baggage and you go to gate.
+
+343
+01:14:20,851 --> 01:14:30,971
+...to get on the plane and the plane go to runway to take off.
+
+344
+01:14:31,771 --> 01:14:31,931
+Okay?
+
+345
+01:14:32,971 --> 01:14:34,711
+Be the runway to take off.
+
+346
+01:14:34,711 --> 01:14:42,271
+And let's say from Istanbul to Kayseri, let's say, there is a certain road.
+
+347
+01:14:42,612 --> 01:14:46,112
+And this road, you must have a mechanism for routing.
+
+348
+01:14:46,771 --> 01:14:47,711
+Once you arrive...
+
+349
+01:14:50,260 --> 01:15:17,060
+You land to the airport of Kayseri, and the routing, you runway to the gate, and you go to gate to unload the plane, and you wait for the baggage for claim, and if everything's fine, you tank to the company, or if you have some problem, you complain.
+
+350
+01:15:17,811 --> 01:15:21,311
+As you can see, it's a simple analogy.
+
+351
+01:15:22,311 --> 01:15:24,311
+And there are many steps.
+
+352
+01:15:28,372 --> 01:15:38,872
+Ticket, the company pushes the ticket and complain your ticket, then baggage claim and airplane routing.
+
+353
+01:15:40,872 --> 01:15:41,872
+Okay?
+
+354
+01:15:42,872 --> 01:15:53,672
+So, as you can see, these are layering. Ticketing service, baggage service, gate service, runway service and routing service.
+
+355
+01:15:55,123 --> 01:16:17,996
+implement a service via its own internal layer actions and relying on services provided by layer below. Okay? It is like a cascade. And describe in word the service provided each layer. Okay?
+
+356
+01:16:20,692 --> 01:16:22,891
+So why do we need layering?
+
+357
+01:16:25,872 --> 01:16:28,631
+Internet is network of networks.
+
+358
+01:16:29,391 --> 01:16:31,431
+So it's a complex system.
+
+359
+01:16:31,431 --> 01:16:33,792
+Dealing with complex system,
+
+360
+01:16:35,811 --> 01:16:39,112
+layering is a simple solution.
+
+361
+01:16:39,832 --> 01:16:42,992
+Explicit structure allows identification,
+
+362
+01:16:43,692 --> 01:16:45,431
+relationship of complex...
+
+363
+01:16:46,100 --> 01:16:47,240
+System pieces.
+
+364
+01:16:47,860 --> 01:16:51,640
+So layered reference model of our discussion now.
+
+365
+01:16:52,240 --> 01:16:56,420
+And modularization eases maintenance,
+
+366
+01:16:57,520 --> 01:17:01,040
+updating of system because each layer is independent
+
+367
+01:17:01,040 --> 01:17:05,680
+because each layer takes the parameter from higher layer
+
+368
+01:17:05,680 --> 01:17:07,860
+and give a service to the lower layer.
+
+369
+01:17:08,307 --> 01:17:35,787
+ve birçok
+
+370
+01:17:36,435 --> 01:17:42,195
+Let's discuss the layered internet protocol stack this time.
+
+371
+01:17:42,195 --> 01:17:46,675
+In TCP layers, there are five layers.
+
+372
+01:17:46,675 --> 01:17:57,435
+In application layer, supporting network application, such as HTTPs, IMAP, SMTPs, or DNS.
+
+373
+01:17:57,435 --> 01:18:02,195
+In transport layer, the process data.
+
+374
+01:18:04,148 --> 01:18:31,020
+to transfer because application produce a message, all right, sent to the transport layer, and transport layer process the transfer data and create packets. So in that layer, TCP and UDP are responsible. In network layer, this time, routing of datagram.
+
+375
+01:18:31,731 --> 01:18:34,051
+Söz to destination.
+
+376
+01:18:34,591 --> 01:18:39,771
+In that layer, IP view and routing protocol.
+
+377
+01:18:39,771 --> 01:18:53,931
+In link layer, data transfer between neighboring network elements from source element to first hop, then next hop and next hop.
+
+378
+01:18:54,032 --> 01:18:58,731
+So link layer is responsible of sending one.
+
+379
+01:18:59,220 --> 01:19:03,300
+...element to the next top.
+
+380
+01:19:03,300 --> 01:19:09,239
+Ethernet, Wi-Fi, PPP are used.
+
+381
+01:19:09,239 --> 01:19:12,780
+And physical layer is a bit on the wire.
+
+382
+01:19:13,100 --> 01:19:19,680
+We are talking about, in this case, a signal, electrical signal, or electromagnetic waves.
+
+383
+01:19:20,640 --> 01:19:25,579
+So, let's discuss from source to destination.
+
+384
+01:19:27,828 --> 01:19:49,740
+Our message M, Application Exchange Message, implement some application service using service of transport layer. Okay? This time, our message M. What we do, we put header at transport layer.
+
+385
+01:19:50,547 --> 01:20:17,188
+So, the protocol transfers M message, for example, for reliability, from one process to another using servicedo network layer. This time, the transport layer header is added to our message. Transport layer protocol encapsulates application layer message.
+
+386
+01:20:17,555 --> 01:20:42,755
+M, with transport layer header, HT, to create a transport layer segment. In this time, in application, the data is message. Here, message plus header, this data is called segment. HT is used by transport layer protocol to implement its service.
+
+387
+01:20:43,572 --> 01:21:08,523
+Let's go down this time. Network layer. The protocol transfers network layer segment, HTM, this is the segment, from one host to another using link layer service. So network layer this time encapsulates transport layer segment, which is M plus
+
+388
+01:21:08,692 --> 01:21:27,891
+transport layer header with network layer 8 header HN to create a network layer datagram, message, segment, datagram. HN is used by network layer protocol to implement its service.
+
+389
+01:21:30,891 --> 01:21:34,292
+So let's go down to link layer.
+
+390
+01:21:34,515 --> 01:22:00,515
+Link Layer Protocol transfer datagram this time. Datagram contains message, transport layer header, network layer header, from host to neighboring host using network layer service. So in this time, Link Layer Protocol encapsulates network datagram, so add HL, Link Layer Header.
+
+391
+01:22:01,140 --> 01:22:26,940
+And this time, this entire HL, HN, HD plus M names frame. Message, segment, photogram, and frame. Third, it is like a matryoshka dose in copulation. Our message, okay, go down.
+
+392
+01:22:27,315 --> 01:22:30,515
+Our message, one small baby there.
+
+393
+01:22:30,963 --> 01:22:37,604
+Go down, encapsulated, segment, contains, transport header plus message.
+
+394
+01:22:37,604 --> 01:22:44,283
+And go down and another baby and put into the bigger one.
+
+395
+01:22:44,644 --> 01:22:49,023
+Datagram this time, network header, transport header and message.
+
+396
+01:22:49,363 --> 01:22:58,963
+Go down to link layer, then bigger baby, frame, message, segment, datagram, frame, frame contains.
+
+397
+01:22:58,963 --> 01:23:23,340
+A link layer header, a network layer header, transport layer header plus message. Travel and encapsulate it and this destination application takes the message little baby, red one. So let's have a look at a larger example this time.
+
+398
+01:23:26,228 --> 01:23:36,587
+Our source here, message goes down, encapsulated, and it becomes a segment with transport layer header.
+
+399
+01:23:36,587 --> 01:23:44,028
+Goes down to network layer and network layer header added, and now it's called datagram.
+
+400
+01:23:44,028 --> 01:23:49,667
+Go down to link layer, link layer header is added, and now it's named.
+
+401
+01:23:49,807 --> 01:24:13,407
+It's named frame and go down to switch, router, encapsulated, and processed, and error control, and queue whatever, and go down again and message reach to the destination. It is very simple.
+
+402
+01:24:14,804 --> 01:24:32,804
+OK, let's have a look at another subject this time. As I said, first two weeks are introduction weeks. So we are going to talk about everything about computer networking technology. But the detail...
+
+403
+01:24:33,203 --> 01:25:00,587
+Bu da bu
+
+404
+01:25:01,716 --> 01:25:15,436
+But internet is open area now, then the designers playing catch up and adding security mechanism into the existing protocol.
+
+405
+01:25:15,716 --> 01:25:25,115
+So, field of network security, that is basically how bad guys can attack computer networks.
+
+406
+01:25:25,536 --> 01:25:50,347
+ve nasıl bir hizmetiyle
+
+407
+01:25:52,659 --> 01:26:20,492
+The first problem is packet sniffing. The network is broadcast media, shared media, let's say Ethernet or wireless. So what you do, you send the packet to the network, you just divert to the network, and everybody can see your packet, but only receiver.
+
+408
+01:26:20,724 --> 01:26:22,724
+...and take the packet.
+
+409
+01:26:22,724 --> 01:26:24,724
+But...
+
+410
+01:26:24,724 --> 01:26:26,724
+...Network Interface...
+
+411
+01:26:26,724 --> 01:26:28,724
+...Reit records all packets...
+
+412
+01:26:28,724 --> 01:26:32,724
+...including the password...
+
+413
+01:26:32,724 --> 01:26:34,724
+...by...
+
+414
+01:26:34,724 --> 01:26:36,724
+...passing by the traffic.
+
+415
+01:26:36,724 --> 01:26:40,724
+They say C is attacker here...
+
+416
+01:26:40,724 --> 01:26:44,724
+...and A is sending message to the B...
+
+417
+01:26:44,724 --> 01:26:46,284
+...and everybody can see...
+
+418
+01:26:46,292 --> 01:26:48,792
+Because the media is shared media.
+
+419
+01:26:49,592 --> 01:26:59,092
+And if C is using packet sniffing program, then can collect and encapsulate and can see
+
+420
+01:27:00,792 --> 01:27:05,092
+the packet and may see your password if the transfer open.
+
+421
+01:27:05,092 --> 01:27:10,592
+Let's say B is the payload and destination A is the
+
+422
+01:27:10,800 --> 01:27:35,436
+ve bu paket
+
+423
+01:27:36,180 --> 01:27:40,180
+The security problem is fake identity.
+
+424
+01:27:40,180 --> 01:27:48,180
+Like IP smoothing, spoofing, packet send with false source address.
+
+425
+01:27:48,180 --> 01:27:59,180
+So C may send the packet to A as if this packet is coming from source B.
+
+426
+01:27:59,180 --> 01:28:02,180
+That is fake identity.
+
+427
+01:28:03,956 --> 01:28:29,956
+OK. Another one is denial of service. Attackers may resource, make resources such as service bandwidth unavailable to legitimate traffic by overwhelming source with biggest traffic. Like here is our target. Many.
+
+428
+01:28:31,060 --> 01:28:56,060
+BOTS send a packet to overload the link capacity of the target. And the other one is malware. Malware can get in-host from viruses, WARM or Spiral malware. And also malware can...
+
+429
+01:28:56,212 --> 01:28:59,132
+Bu konuda bir botnet var.
+
+430
+01:28:59,132 --> 01:29:03,532
+Bu konuda bir konuda kullanılıyor.
+
+431
+01:29:03,532 --> 01:29:09,212
+Bu konuda bir deneyim verilen bir deneyim verilen.
+
+432
+01:29:12,212 --> 01:29:15,612
+Bu konuda bir defans verilen.
+
+433
+01:29:15,612 --> 01:29:22,212
+Bu konuda bir konuda kullanılıyor.
+
+434
+01:29:22,644 --> 01:29:28,824
+And in cellular networks provide hardware identity via SIM card.
+
+435
+01:29:28,824 --> 01:29:34,704
+No such hardware assist in traditional internet.
+
+436
+01:29:34,704 --> 01:29:39,684
+Confidential IP can be gained by using encryption.
+
+437
+01:29:39,684 --> 01:29:47,164
+Integrity check can be used, such as using digital signatures.
+
+438
+01:29:47,164 --> 01:29:50,164
+Password.
+
+439
+01:29:50,192 --> 01:29:56,692
+PIN numbers can be used for access control or restricting the access.
+
+440
+01:29:56,692 --> 01:30:09,692
+Or we can also establish firewalls, middle boxes, sandbox, honeypot, whatever to prevent or to detect.
+
+441
+01:30:09,692 --> 01:30:15,692
+Or IPS ideas to detect.
+
+442
+01:30:15,695 --> 01:30:19,296
+İntrision and prevent intrusion.
+
+443
+01:30:21,296 --> 01:30:28,896
+And more. And throughout, it will be done in fourth year fall semester.
+
+444
+01:30:29,936 --> 01:30:38,496
+Here is our last subject of our second week presentation, History of Internet.
+
+445
+01:30:46,587 --> 01:30:50,327
+Bu, ilk paket-switching principle.
+
+446
+01:30:50,987 --> 01:30:55,227
+1991, Krainrock'ın teoriyeti
+
+447
+01:30:55,227 --> 01:30:57,967
+ve Krainrock'ın
+
+448
+01:30:57,967 --> 01:31:00,967
+ve paket-switching
+
+449
+01:31:00,967 --> 01:31:03,007
+ve branşı
+
+450
+01:31:03,007 --> 01:31:05,207
+paket-switching network
+
+451
+01:31:05,207 --> 01:31:07,007
+in military network.
+
+452
+01:31:07,475 --> 01:31:21,075
+In 1967, ARPANET, convinced by Advanced Source Project, ASNC, and 1969, first ARPANET node, become operational.
+
+453
+01:31:21,075 --> 01:31:31,675
+In 1972, ARPANET public demo is done, and ANCP network control protocol is the first.
+
+454
+01:31:32,275 --> 01:31:42,676
+HOST-to-HOST protocol is used, and first email program is used among 15 ARPANET nodes. Okay?
+
+455
+01:31:43,876 --> 01:31:48,275
+Let's have a look at another slot of time in this story.
+
+456
+01:31:48,275 --> 01:31:55,476
+70s OAHANET satellite network is done in Hawaii, and SEF...
+
+457
+01:31:55,539 --> 01:31:59,699
+ve CAN architecture for interconnecting network.
+
+458
+01:31:59,699 --> 01:32:07,699
+And this network is the fundamental of today's internet architecture.
+
+459
+01:32:07,699 --> 01:32:12,739
+So it has some principles like minimalism, autonomy,
+
+460
+01:32:12,739 --> 01:32:17,180
+so no internal change is required to interconnect network.
+
+461
+01:32:17,180 --> 01:32:21,539
+Best of first service model is done by Serpent Khan.
+
+462
+01:32:23,315 --> 01:32:26,315
+Stateless routing and decentralized control.
+
+463
+01:32:26,315 --> 01:32:34,315
+Even these principles define today's network in architecture.
+
+464
+01:32:35,315 --> 01:32:41,315
+17-90s, it was the first deployment of TCP IP in 1982.
+
+465
+01:32:42,315 --> 01:32:48,315
+And SMTP email protocol is also defined and DNS.
+
+466
+01:32:49,779 --> 01:33:01,219
+is also defined. 85 FTP protocol, biotranslat protocol, 88 TCP congestion control is defined.
+
+467
+01:33:02,500 --> 01:33:13,299
+And now in 90s, 100,000 hosts connected to confidential of network in USA.
+
+468
+01:33:15,956 --> 01:33:17,931
+90-2000
+
+469
+01:33:21,492 --> 01:33:38,131
+Commercialization is done, the web, new application. That is the early 90s. ARPANET decommissioned in 91 again, and FNET is decommissioned again. And 90s, the web hypertext.
+
+470
+01:33:39,636 --> 01:34:03,636
+And HTML, HTTP, 94, the browsers, mosaics, and later Netscapes, late 90s, commercialization of the web, and like peer-to-peer sharing, network securities, and this time estimated 50 billion hosts.
+
+471
+01:34:04,212 --> 01:34:17,012
+more than 100 million users and backbone of network operates at the speed of gigabits. Okay? And...
+
+472
+01:34:18,068 --> 01:34:34,467
+2005 and present, now software-defined networks, mobilities, cloud, aggressive deployment of broadband home access, now the home access up to 1 gigabit per second.
+
+473
+01:34:34,467 --> 01:34:44,467
+Now, the normal cases 10 to 100 megabit, but you may have 1 gigabit per second at home access.
+
+474
+01:34:46,707 --> 01:35:00,907
+2008, Software Defined Network is launched and increasing abridged of high-speed wireless access such as 4Gs, 5Gs, and Wi-Fi.
+
+475
+01:35:00,907 --> 01:35:14,307
+And there are larger service providers such as Google, Facebook, Microsoft create their own network by passing commercial internet to connect.
+
+476
+01:35:14,515 --> 01:35:25,036
+close to end user, providing instantaneous access to social media, search engine, and video content.
+
+477
+01:35:25,036 --> 01:35:34,335
+And enterprises run their services in cloud, such as Amazon or Microsoft Azure,
+
+478
+01:35:34,855 --> 01:35:40,955
+and the eyes of smartphones, more mobile than fixed devices in internet.
+
+479
+01:35:41,779 --> 01:35:43,779
+2017.
+
+480
+01:35:43,779 --> 01:35:45,779
+And now
+
+481
+01:35:45,779 --> 01:35:47,779
+2023
+
+482
+01:35:47,779 --> 01:35:51,779
+more than
+
+483
+01:35:51,779 --> 01:35:53,779
+15 billion
+
+484
+01:35:53,779 --> 01:35:55,779
+devices
+
+485
+01:35:55,779 --> 01:35:59,779
+attached to internet.
+
+486
+01:35:59,779 --> 01:36:01,779
+Okay.
+
+487
+01:36:01,779 --> 01:36:03,779
+This is the end of
+
+488
+01:36:03,779 --> 01:36:05,779
+second week.
+
+489
+01:36:08,223 --> 01:36:12,223
+VLAN İNİN 2017.
+
+490
+01:36:12,223 --> 01:36:12,423
+VLAN İNİ 2017.
+
+491
+01:36:07,699 --> 01:36:32,500
+Evet arkadaşlar, bu hafta ile birlikte giriş kısmını bitirmiş olduk. Hepinize OBS üzerinden mail attım. Şimdi de söylüyorum arkadaşlar, uygulama kısmı ile alakalı işlemleri takip edebilmek adına Google Classroom oluşturdu aslanı arkadaşlar.
+
+492
+01:36:33,460 --> 01:36:42,759
+Bütün laboratuvarla alakalı duyurular, kurallar Google Classroom'da paylaşılacak.
+
+493
+01:36:42,759 --> 01:36:48,759
+Dolayısıyla hepinizin hızlı bir şekilde Google Classroom'a dahil olmanız gerekiyor.
+
+494
+01:36:48,759 --> 01:36:55,243
+Laboratuvar uygulamaları şu şekilde yapılacak. 3 ya da 4 tane.
+
+495
+01:36:56,115 --> 01:37:02,836
+uygulamayı online olarak gerçekleştirmenizi isteyeceğiz. Simülasyon ortamları, ayrıntıları var.
+
+496
+01:37:02,836 --> 01:37:15,115
+Ve ikişer kişilik gruplar halinde belirlenen zamanda asistanlar sizlere o uygulamanızı online olarak gerçekleştirdiğinizi görecekler.
+
+497
+01:37:15,115 --> 01:37:24,115
+Ve ondan puanı alacaksınız. Üç ya da dört uygulama yapacaksınız. Artı bir tane de proje yaparak not alacaksınız.
+
+498
+01:37:24,115 --> 01:37:34,315
+alacaksınız ve bu aldığınız not genele %30 katkısı olacak arkadaşlar. O yüzden lütfen hızlı bir şekilde Google Classroom'a
+
+499
+01:37:35,444 --> 01:38:02,444
+dahil olur. Olmazsanız, laboratuvarda uygulama yapmadığınız zaman, o uygulamanın maalesef telafisi yok ve uygulamadan sıfır almış sayılacaksınız ve toplam zaten üç uygulama bir proje. Bunun ayrıntılarını da gene askın arkadaşlar size iletecek. Herhangi bir aksaklık durumunda notunuzun düşmesine sebebiyet verebilir arkadaşlar. Lütfen bu konulara dikkat edelim.
+
+500
+01:38:08,435 --> 01:38:12,435
+Okay. Sorunuz var mı? Any questions?
+
+501
+01:38:16,404 --> 01:38:44,244
+OK, guys. See you next week on Friday at 9 o'clock. In the afternoon, there will be no lecture. The experiments are going to start soon. Please join Google Classroom. I have sent a message and I have sent the link using OBS system.
+
+502
+01:38:44,368 --> 01:38:46,368
+See you next week.
+
+503
+01:38:48,368 --> 01:38:52,368
+Hepinize sağlıklı bir hafta diliyorum arkadaşlar. Görüşmek üzere.
