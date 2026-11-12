@@ -1,0 +1,1539 @@
+1
+00:05:08,052 --> 00:05:19,252
+Evet, merhaba arkadaşlar. Hepinize iyi günler. Geçen hafta meslek etiği ve mühendislik etiği konusuna başlamıştık.
+
+2
+00:05:19,987 --> 00:05:38,987
+Ama tabii ki tamamlayamamıştık. Biraz çenemiz düştü, biraz uzun konu. Anlata anlata bitiremedik. Nereye kadar gelmiştik? Meslek etiği genel olarak ne demektir? Meslek odalarının buradaki rolleri nelerdir? Bunların üzerinde durduk. Sonrasında da mühendislik ne demektir? Mühendislik insan hayatına ne katmıştır?
+
+3
+00:05:40,896 --> 00:05:54,136
+Mühendislik etiği deyince, genel mühendislik etiği deyince ne anlamalıyız? Bunlara baktık. Sonrasında da kendi alanımıza özel, bilgisayar mühendislerine özel bir bilgi sistemi mesela geliştirilirken.
+
+4
+00:05:54,800 --> 00:06:18,800
+Baştan sona doğru her safhada etik olarak nelere dikkat etmemiz gerekir? Etik ilkeler açısından nelere dikkat etmemiz gerekir? Bunların üzerinden geçmeye başlamıştık. Önce işte ön inceleme ve fizibilite kavram çalışması aşamalarından başlayıp analiz, çözümleme, tasarım aşamasında gördükten sonra gerçekleştirme, yani devreye...
+
+5
+00:06:18,963 --> 00:06:38,983
+Almak üzere kodlama ve bunu realize etme yani implementasyon aşamasında kalmıştık. Tam olarak buradan şimdi yolumuza devam edeceğiz. Bu haftanın esas konusu hatırlarsanız kurumsal etik olacaktı. Kurum ve kuruluşların etik ilkeleri nelerdir?
+
+6
+00:06:40,180 --> 00:07:08,139
+Etik olmayan davranışlar nelerdir? Bunların başlıkları üzerinde inceleme yapacaktık. Fakat şimdi haftaya da vize haftası biliyorsunuz. Ben açıkçası biraz daha böyle bir yavaşlatayım istedim dersi. Konular fazla da vizede birikmesin diye. Bu haftaki konuyu yani kurumsal etik konusunu vizeye de dahil etmemek adına haftaya devam ederiz. Yani vizeden sonraki dokuzuncu haftada kurumsal etik.
+
+7
+00:07:08,180 --> 00:07:20,180
+Yolumuza devam ederiz diye düşündüm. Zaten sosyal medya ve e-ticaret etiği gibi ilerideki konularımız belki hatırlarsınız Slip's'tan. Bunlar daha kısa konular olacak. Yine onları tek bir haftada birleştirip...
+
+8
+00:07:20,500 --> 00:07:48,220
+Telafi ederiz aradaki zamanı. O yüzden bugün mesleki etik ve mühendislik etiği, özellikle de bilgisayar mühendisliğine ilgilendiren etik konularını geri kalan slide'larda eğilip tamamlamayı planlıyorum. Ama hani aranızda varsa ki yok hocam biz illa ki kurum etiği, kurumsal etiği de görmek istiyoruz, bilmek istiyoruz. O zaman devam ederiz ama çok büyük bir ihtimalle zaten yine zaman.
+
+9
+00:07:48,500 --> 00:08:16,500
+Bu konularla ilgili konuşuyor. Örnekler üzerinden devam ediyor olacağım. Evet, dersin içeriği bu şekilde olacak diyelim. Ve şimdi neredeydik tekrar hatırlayalım. Yani bu gerçekleştirme başlığı ne demekti? Biz bir bilgisayar mühendisiyiz. Bir projenin içinde yer alıyoruz ve projenin şu anda gerçekleştirme safasındayız. Burada uymamız gereken ya da dikkat etmemiz gereken etik...
+
+10
+00:08:16,500 --> 00:08:21,379
+İlkeler nelerdir mühendislik eti açısından? Bunlara bakmaya devam edelim.
+
+11
+00:08:22,067 --> 00:08:50,067
+Şimdi biliyorsunuz bir bilgi sistemi gerçekleştirilirken doğal olarak hem yazılım hem de donanımı içeriyor. Ve ne yapıyor yazılımı gerçekleştiren ya da geliştiren kişiler, program kodlayıcıları ya da takım diyelim buna, geliştirme takımları kendilerine verilen tasarım belgelerinden yola çıkarak bir önceki adımda, yani geçen hafta bitirdiğimiz...
+
+12
+00:08:50,067 --> 00:09:18,067
+Bu noktadaki tasarım belgelerinden yola çıkarak yazılımı geliştirmeye çalışıyor. Peki istenen şey nedir? Esas hedef nedir? Geliştirdiğimiz yazılımın hatasız olması ve dayanıklı olması istenir. Ama tabii ki hatasız bir yazılım geliştirilir her zaman söylenemez. Daha doğrusu hatasız yazılım yoktur diyebiliriz. Hatasız kul olmaz gibi oldu. Doğrudur. Hatasız yazılım da yok.
+
+13
+00:09:18,067 --> 00:09:42,607
+Tabii hatasız yazılım geliştirmek için bazı araçlardan faydalanıyoruz. İdelerden, case araçlarından faydalanıyoruz ama bunlar aslında hata sayısını mümkün olan en az sayıya indirmeye yarıyorlar. Ama hiç hatasız, yani sıfır hatalı yazılım maalesef her zaman için yapabildiğimiz bir üretim şekli değil.
+
+14
+00:09:43,827 --> 00:09:58,867
+Şimdi peki yazılımın geliştirilmesi aşamasında, yani şu anda üzerinde durduğumuz aşamada, acaba programcılar, program geliştiriciler etik olmayan ne gibi davranışlarda bulunabilirler?
+
+15
+00:10:00,000 --> 00:10:17,920
+Bir, bazı program geliştiriciler mesela kolaya kaçmak adına önceden yaptıkları, kodladıkları program parçalarını, bu tasarımda da zaten bunu aynısını ben yapmıştım ya da çok benzerini yapmıştım, eski projeden alayım, kullanayım şeklinde yamarlar.
+
+16
+00:10:17,920 --> 00:10:26,920
+Yani alıp, lap diye yeni projeye dahil ederler. Şimdi bu, evet, geliştirme hızını bayağı bir arttırır, gerçekleştirmeyi kolaylaştırır ama...
+
+17
+00:10:28,019 --> 00:10:55,740
+Acaba bizim yaptığımız bu yama, buna patch diyelim böyle, bu yama yeni programımıza uygun mu değil mi? Bunu tam olarak incelemeyebilirler. Ya da aman canım zaten ben o zaman test etmiştim deyip unursamadan bunu geçebilirler. Ve böyle bir yama belki de yeni programda zaman içinde sorunlara neden olabilir. Yani bir uyumsuzluk, belki de bir yanlış çalışma, beklendiği gibi çalışmama. Çünkü o başka bir projeydi, bu başka bir proje.
+
+18
+00:10:56,019 --> 00:11:00,200
+Bu bir etik olmayan davranış.
+
+19
+00:11:01,395 --> 00:11:27,716
+İkincisi ne olabilir başka? Ben bunu kendim yapmadım ama başkaları zaten hazır olarak bunu kodlamış. Girdi GitHub'a birilerinin kodunu aldı gibi düşünün. Aldı program parçasını şapadanak yapıştırdı ve kullanıyor. Tamam işte çalıştı mı çalıştı devam et dedi mesela. Fakat çoğu zaman açıp da o kodu incelemez. Yani programın içinde ne olduğunu ayrıntılı bir şekilde incelemez. Ve belki de orada zararlı bir şeyler var. Belki de programın geri kalanını bozan kodlar var.
+
+20
+00:11:29,395 --> 00:11:32,675
+Çok daha büyük, çok daha önemli sorunlara da yol açabilir.
+
+21
+00:11:33,755 --> 00:11:42,955
+Ve biliyoruz ki üçüncü olarak programlarımız belli işlevleri, gereksinimleri yerine getirmek amacıyla hazırlanıyorlar.
+
+22
+00:11:44,415 --> 00:11:49,096
+Ve bu amacı sağlayan her program yeterli olmayabilir.
+
+23
+00:11:49,596 --> 00:11:49,776
+Neden?
+
+24
+00:11:50,964 --> 00:12:18,923
+Biliyoruz ki programın her koşulda çalışması gerekebilir. Yani bazı koşullarda çalışmasını sağlamak için, mesela farklı giriş değerleriyle çalışmasını sağlamak için belki kodda değişiklikler, belki ilaveler yapmamız gerekebilir. Ama işte mesela programcı burada bunları sağ saklayabilir. Nedir? Ya aman tamam işte genelinde çalışıyor. 3-5 tane özel değer için bir daha bu kadar uğraşmayalım. Nasıl olsa zaten kimse onlara girmez.
+
+25
+00:12:18,964 --> 00:12:25,304
+Onları kullanmaz deyip de savsaklayabilir. Bunun yapılmaması lazım. Bu da aslında etikli bir davranış.
+
+26
+00:12:25,908 --> 00:12:51,948
+Dördüncüsü, bunu önceden konuşmuştuk hatırlayacaksınız. Ya ben şimdi buna şunu ekleyeyim de, şu bombayı, saatli bomba kodunu da ekleyeyim de, bakarsın yarın öbür gün beni kovarlar. Ben kovduktan sonra bu program patlasın, adamları da çalışamasın, öyle zarar vereyim, böyle zarar vereyim diye kötü bir düşünceyle ya da böyle hin bir fikirle program içine bomba gömebilirler.
+
+27
+00:12:53,908 --> 00:13:19,728
+Bir zamanda sürekli çalışmasını öteleyebilir. İşten çıkınca da öteleyemeyeceği için o bomba çalışmaya başlayabilir. Bütün bilgi sistemine oldukça büyük zararlar verebilir. Şimdi burada dört tane case'e baktık aslında. Şimdi ilk üçü bunların aslında bir mühendislik eti açısından düşündüğümüzde etik değerlere özen göstermeyen kişilere.
+
+28
+00:13:20,080 --> 00:13:36,079
+Mühendislere verilebilecek örnekler. Nedir? Budur davranışlarda bulunursanız, daha sonrasında sorunlar oluşabilir. Mesela işletme sırasında program çalışırken sorunlar olabilir. Dolayısıyla siz aslında...
+
+29
+00:13:36,628 --> 00:13:55,708
+Etik olarak buradaki davranışlarınızdan sorumlu olmanız gereklidir. Ne dedik? Biz burada etik değerlere özen göstermiyor. İlk üçü dedik. Peki dördüncü yani o bomba programını yerleştirene ne diyebiliriz? Orada çalışan yani mühendis bilinçli olarak meslek etiğini çiğniyor.
+
+30
+00:13:56,115 --> 00:14:15,075
+Önceden bunları çok uzun konuştuğumuz için söyleyebiliriz rahatlıkla. Meslek etiğine aykırı davranıyor ve bunu bilerek ve isteyerek yapıyor. Yani bu sadece etik kuralların çiğnenmesi olarak düşünülmemesi gereken, aynı zamanda bir suç eylemi olarak da görülmesi gereken bir davranış.
+
+31
+00:14:24,115 --> 00:14:29,835
+Aykırı davranma, etik kurallarını çiğneme olarak düşünüyor ama dördüncüsü gerçekten sıkıntılı.
+
+32
+00:14:31,135 --> 00:14:36,475
+Şimdi hep böyle yazılım tarafından gittik ama aslında işin bir de donanım tarafı da var.
+
+33
+00:14:36,835 --> 00:14:45,395
+Biliyorsunuz donanım seçimi, donanım gereksinimlerinin karşılanması yine çok ciddi bir şekilde incelenmesi gereken bir başka konu.
+
+34
+00:14:45,395 --> 00:14:48,395
+Özellikle mesela hani...
+
+35
+00:14:48,532 --> 00:15:06,011
+Teknik özellikleri sağlıyor ama ucuz. Ucuz olduğu için bunu tercih edelim. Her zaman için doğru bir çözüm olmayabilir. İleride yaşanacak daha büyük sorunlara yol açabilir. Daha pahalı çözümlere yol açabilir. Bu yüzden donanım seçiminde de çok dikkat etmek gerekiyor.
+
+36
+00:15:06,011 --> 00:15:16,391
+Ve gerçekleştirme aşamasındaki donanım seçimlerinde bir bilgisayar mühendisi olarak etiğe uygun davranmamız gerekiyor. Şimdi burada iki tane örnek vereceğim.
+
+37
+00:15:16,532 --> 00:15:35,271
+Diğerde tabii daha çok tartışacağız bu örnekleri ama hani şimdiden bilelim gerçekleştirme aşamasına dahil olduğu için bir tanesi uzay çalışmalarından gelecek örneğin, diğeri de havacılıktan gelecek. Çok bilindik ve eski örnekler bunlar. Belki siz de bazı, hatta ikisini de duymuş bile olabilirsiniz.
+
+38
+00:15:36,980 --> 00:15:56,139
+Şimdi Amerika uzay çalışmalarına biliyorsunuz önem veriyor ve çok bu konuda çalışıyor NASA. Şimdi Challenger 8 programı, Challenger 8 roketi mi diyorlar, uzay mekiği mi diyorlar, neyse işte o. Bunu uzay programında uzaya yollayacaklar.
+
+39
+00:16:03,412 --> 00:16:31,412
+İnternet Unstable. Sanırım kesilme olmuş olabilir. O yüzden bekledim. Zoom uyarıyor ya, Unstable Connection diye. Şimdi Challenger 8, belki bilen vardır ya da merak ettiği için araştıran da olmuş olabilir. Fırlatıldıktan 76 saniye sonra yaklaşık 15 bin metre, yani yerden 15 kilometre yükseldikten sonra infilak ederek içindeki 7 astronot.
+
+40
+00:16:31,412 --> 00:16:58,792
+Ölmesine sebep olan, parçalanarak 15.000 fit de patladığı için parçalanarak ölmesine sebep olan çok kötü bir trajediyle sonuçlanan bir program. Şimdi bu tabii patladıktan sonra oturup enkazı inceliyorlar ve felakete neden olan facianın yani facianın sebebinin ne olduğunu öğreniyorlar. Yakıtın sızmasını önlemek amacıyla kullanılan şöyle yuvarlak O şeklinde bir conta var.
+
+41
+00:16:59,443 --> 00:17:24,083
+Bildiğiniz plastik mi diyeyim, lastik mi diyeyim, neden yapıldıysa artık bilmiyorum. Bir conta. Ve bu conta aslında çalışma koşullarındaki beklentileri karşılayacak spesifikasyona sahip değilmiş. Nedir bu? Mesela işte yukarı çıktıkça biliyorsunuz hava soğuyor ya, hani eksi bilmem kaç derecelere çıkıyor. Uzayda daha da bile soğuk ortam var.
+
+42
+00:17:27,443 --> 00:17:35,543
+Çok aşırı soğuklarda iyi çalışmadığı ve hatta kırıldığı, parçalandığı, çatlayarak dağıldığı biliniyormuş.
+
+43
+00:17:36,344 --> 00:17:43,364
+Fakat bu bilgi bilinmesine rağmen roketin yakıt sisteminde sızdırmazlık contası olarak kullanılmış.
+
+44
+00:17:43,364 --> 00:17:51,143
+Ve nihayetinde 15 bin metreye çıktığındaki ani sıcaklık değişimi ve düşüşü yüzünden bu conta çatlıyor.
+
+45
+00:17:51,523 --> 00:17:55,443
+Çatladıktan sonra yakıt sızıyor. Yakıt sızdıktan sonra da havada 15 bin metre.
+
+46
+00:17:55,443 --> 00:18:19,463
+Enflak ediyor Challenger 8. Sonra da tabii uzay çalışmalarında yeni bir aksaklıklar yaşandığı için başka türlü düşünmelere, kontrollere gidilmesine yol açıyor olan 7 kişiye oldu. Rahmetli havada tek bir contanın problemi yüzünden gerçekleştirme aşamasında göz ardı edilen sıkıntısı yüzünden öyle çok acı bir sonuçla karşılaşılıyor.
+
+47
+00:18:23,443 --> 00:18:44,703
+Bu da Türk Hava Yolları'nın çok eski ama tabii uçak kazası. McDonnell Douglas, belki bilen bilir savaş uçakları falan da yapar. McDonnell Douglas firmasının DC-9, DC-10 serisi uçakları vardı. Eski tabii bunlar artık üretilmiyor.
+
+48
+00:18:48,723 --> 00:19:15,343
+Bu yüzden Douglas bu kaza yüzünden aslında iflas etti. Şimdi o olayı anlatacağım. DC-10 büyük boy bir uçak. Ne diyorlar? Geniş gövdeli mi diyorlar ona? Buradan Amerika'ya giden uçaklar gibi düşünün. Şimdi bunun bagaj kapakları var ya aşağıda valizlerimizi yükledikleri yerler. Bunu bir tane firmaya yaptırıyor. Corvair diye bir tane firmaya outsource ediyor. Bagaj kapağının üretimini.
+
+49
+00:19:16,723 --> 00:19:44,123
+Bagaj kapağının, orada işte üretiminden sorumlu olan bir tane mühendis, kıdemli bir mühendis, hatta adı da Dan Applegate. Bu kapakta sorun var. Bu kapağın tasarımında sıkıntı var. Kilitlenme mekanizması yanlış çalışıyor. Özellikle hava basıncı, yukarıda basınç değişikliği olduğunda bu kilidin kırılma ihtimali var. Yüksek bir ihtimal.
+
+50
+00:19:44,723 --> 00:19:53,103
+Burada bir tasarım sıkıntısı var. Bunun yeniden yapılması lazım, yeniden tasarlanması lazım diye bu sıkıntıyı yöneticilere bildiriyor.
+
+51
+00:19:53,103 --> 00:20:00,000
+Şimdi yöneticiler tamam diyorlar, bunu şey yapıyorlar, programa dahil ediyorlar ama bu sırada...
+
+52
+00:20:00,000 --> 00:20:23,259
+Burada tabii bir sürü üretilmiş DC-10 var ve serviste. Bunların da bir tanesi Türk Hava Yolları uçağı. Türk Hava Yolları'nın DC-10'u diyelim. Zaman içinde bunlar şey yapıyor. Hani bir değişim programı, güncelleme programı ilaçlıyorlar. Belli bir sırayla. Artık üretim sırasıyla mı? Neyle?
+
+53
+00:20:24,564 --> 00:20:45,503
+Yapıyorlarsa bilmiyorum. Ve bu olay, yani bu mühendis Applegate'in burada bir sıkıntı var. Bu kapağın değiştirilmesi, kilit mekanizmasının yeniden tasarlanması lazım dediği olayın üzerinden iki yıl geçiyor. Tabii bir program dahilinde kapaklar değiştiriliyor söyledim. Fakat bu sırada bir kaza olması öngörülmüyor bu sebeple.
+
+54
+00:20:46,112 --> 00:21:08,052
+Yöneticiler tarafından. Ve nihayetinde Paris'ten Londra'ya giden Türk Hava Yolları uçağı. Diceceksiniz, Türk Hava Yolları uçağın Paris'ten Londra'ya ne işi var? Büyük bir ihtimalle aktarma yaptı yakıt alarak diye düşünüyorum. Çok detayını bilmiyorum. Çünkü genelde Türk Hava Yolları Türkiye'den bir yerlere uçar ya da bir yerlerden Türkiye'ye gelir ama bazen pit stop yapmak zorunda kalıyorlar.
+
+55
+00:21:08,736 --> 00:21:36,736
+Eski uçaklar herhalde daha fazla yakıt ikmale ihtiyacı vardı. Neyse bu uçak Paris'ten Londra'ya gitmek için havalanıyor ve bir süre sonra bagaj kapağı havada açılıyor. Bagaj kapağının havada açılması demek biliyorsunuz uçak bilmem kaç bin feet'e çıkınca düdüklü tencere gibi oluyor. Kabin basıncı denen muhabbet. Ve havada açıldığı için de hani şey gibi düşünün işte düdüklü tencerenin lastiği yırtıldı, basınç da pıf diye fırladı. Uçak havada parçalanarak kaza yapıyor, kırıma uğruyor.
+
+56
+00:21:36,736 --> 00:21:39,016
+Ve 346 kişi ölüyor.
+
+57
+00:21:39,667 --> 00:22:07,647
+Maalesef. Bu da büyük bir facia. 346 kişi bir DC-10 sivil jetinin yolcu uçağının içinde bilinen, üretimindeki gerçekleştirme aşamasındaki sıkıntısı bilinen ve güncellenmeye, değiştirilmeye başlanan bir kapak yüzünden, bir kapağın kilidi yüzünden şey yapılıyor.
+
+58
+00:22:07,667 --> 00:22:32,147
+346 kişinin hayatı sönüyor. Tabi aileleriyle birlikte düşündüğümüzdeki yıkımı çok çok daha fazla. Özetle ne oldu? Bakın gerçekleştirme aşamasındaki bazı sıkıntılar bazen 7 kişinin, 7 tane astronotun hayatına mal olurken bazen de 346 tane hiçbir günahı olmayan yolcunun ölmesine sebep olabiliyor.
+
+59
+00:22:33,332 --> 00:23:01,032
+Şimdi diyeceksiniz ki, hocam ne olacak? Bunlar fılım açısından ne yapacağız? Yazılımda ne olacak? Aman en kötü çalışmaz diyebilirsiniz. Hayır, öyle değil. Günümüzde artık biliyorsunuz pek çok sistem yazılımlarla denetleniyor ve kontrol ediliyor. İşte bir trafik denetleme, hava trafiği denetleme, trafik ışıklarının yanıp sönmesi, hastanedeki belki oksijen dağıtımı birimlere. Bunların hepsi artık otomasyonlarla yönetiliyor biliyorsunuz. Böyle bir yazılımda böyle bir sıkıntının olduğunu düşünün.
+
+60
+00:23:01,332 --> 00:23:17,491
+Gerçekleştirme aşamasında bu problemi mesela bir mühendisin belli bir şey aman canım ne olacak deyip savsakladığını düşünün canlara mal olabilir. O yüzden bizim mühendislik etiği ilkelerine özellikle gerçekleştirme aşamasında da çok fazla dikkat etmemiz gerekiyor.
+
+61
+00:23:18,711 --> 00:23:25,892
+Bundan sonra biraz hızlanayım. Çok konuştum yine. Sınama, kurulum ve bakım yani test, devreye alma ve bakım aşamaları geliyor.
+
+62
+00:23:27,220 --> 00:23:46,359
+Testler de yine aslında çok önemli. Özellikle büyük ölçekli sistemleri devreye almadan önce mutlaka ve mutlaka test etmemiz gerekiyor. Ve bu testleri sistemi geliştirenlerin dışında, bunlardan bağımsız kişiler tarafından yapılmaları esastır. Yani siz yaptığınız hatayı göremezsiniz. Aynı şey gibi.
+
+63
+00:23:47,635 --> 00:24:14,675
+Mesela tez yazıyorsunuz, bitirme tezinizi yazıyorsunuz. Bir yerde hata yapıyorsunuz. Onu tekrar beş kere de okusanız görmeyebilirsiniz. Çünkü o hatayı siz yaptınız ve onu siz yazdınız, o sizin eseriniz. Farkında olmazsınız. Ama bir başkası, ailenizden birisi ya da bir arkadaşınız okuduğunda şey diyebilir, abi sen burada ne demek istedin, ne diyor burada, bu yanlış ki, böyle olmaz ki diyebilir. İşte o yüzden mutlaka testleri başkalarının yapmaları esastır.
+
+64
+00:24:15,635 --> 00:24:26,755
+Bunların da esas görevi doğal olarak yazılımı, hatta sistemin tamamını, her koşul altında çalışır mı çalışmaz mı diye bütün testlerden geçirmek ve bu sınamaları yapmaktır.
+
+65
+00:24:27,415 --> 00:24:37,415
+Bunların sonucunda kusurlar, hatalar bulunur. İllaki çıkar. Bunların mutlaka geliştiricilere feedback olarak geri bildirilmeleri gerekir ve sorunların giderilmelerinin gerekli.
+
+66
+00:24:37,652 --> 00:24:54,672
+Bu sorunların giderildiğinin de tekrar test edilmeleri gerekir. Ay ben bunu gözümden kaçırdım, ay ben bunu denememişim, görmemişim gibi bir mazeret kabul edilemez. Mesela uçak örneğinde ya da uzay mekiği örneğinde olduğu gibi.
+
+67
+00:24:55,772 --> 00:25:05,572
+Bunun dışında, testlerde çok önemli diyerek burayı özetleyelim. Kurulum aşamasına gelelim. Kurulum ve devreye alma, işletmeye alma sırasında da yine pek çok sorun olabilir.
+
+68
+00:25:05,652 --> 00:25:25,772
+Burada sorunların kaynağını buluruz ve bulduktan sonra ilgili bölüm, kimse bunun yetkilisi, bilgi vererek bu sorunun giderilmesini sağlamalıyız. Bazen ticari kaygılarla bunlar safsaklanabilir. Ya aman tamam abi biz bu lansmanım illaki 23 Nisan'da yapmamız lazım. Yapalım da ondan sonra şurasını burasını düzeltiriz denebilir.
+
+69
+00:25:33,652 --> 00:25:38,652
+Yavuz Selim Köprüsü.
+
+70
+00:25:40,564 --> 00:26:08,564
+Şu tarihte illa açılacak diye açıldılar ama, mesela Osman Gazi Köprüsü açıldı, lansmanı yapıldı. Lansmanı yapıldıktan sonra aylarca inşaat devam etti. Tek şeritten trafik sağlandı falan filan. İşte böyle şeyler olabiliyor. Bazı sorunlar safsaklanabiliyor belli sebeplerle. Sonrasında daha büyük problemler de ortaya çıkabilir. O zaman bundaki safsaklamanın kimin yüzünden oldu şeklinde bir soruşturmayla ne oldu?
+
+71
+00:26:08,564 --> 00:26:13,764
+Olay olduysa kötü olay. Bunun sebebi, müsebibi ya da sorumlusu ortaya çıkartılabilir.
+
+72
+00:26:14,324 --> 00:26:26,084
+Kurulum da aslında yani devreye almada, işletmeye başlatmada yine dikkat etmemiz gereken ve etik kurallara uygun olarak davranmamız gereken bir başka husus, bir başka süreç adımı.
+
+73
+00:26:26,824 --> 00:26:32,304
+Son olarak bakıma gelelim. Bakım ne demektir? İşte bilişim sistemi tamamen çalışıyor ve devrede.
+
+74
+00:26:32,924 --> 00:26:36,024
+Özellikle işte yazılım yüzünden bazı hatalar olduğu.
+
+75
+00:26:36,564 --> 00:27:04,564
+Kullanılırken fark edilebilir. Hem gerçekleştirme hem de test aşamasında, sınama aşamasında bulunamayan bazı şeyler gerçekten çalışırken anlaşılıp mesela yük altında ortaya çıkabilir. Bunun için ne yapılır? Yama, patch, update'ler oluşturulur. Bunları belli bir yere kadar olağan karşılıyoruz. Çünkü hani dedik ya insan emeğiyle ortaya çıkıyor. Hiç kusursuz yazılım diye bir şey söz konusu olmaz ya da böyle bir sistem söz konusu olmaz.
+
+76
+00:27:04,564 --> 00:27:05,284
+Son olmaz dedik.
+
+77
+00:27:06,324 --> 00:27:24,144
+Burada etik olan davranış şudur. Bu bir kusur ortaya çıktığında sistemi kimler kullanıyorsa bunları hemen uyarmalıyız ve gerekli yamalar, güzeltmeler, güncellemeler neyse bunları hemen oluşturmalı ve sunmalıyız. Derhal bunları düzeltmeliyiz, bu yamaları yapmalıyız.
+
+78
+00:27:24,144 --> 00:27:34,263
+Ticari kaygılarla bazen hatalar gizlenebiliyor, bazen zamanında yamalar dağıtılmayabiliyor. Bunlar da yine etik davranışlar değil.
+
+79
+00:27:34,324 --> 00:27:54,783
+Bunları da bu şekilde özetlemiş olalım. İşte bu Intel Mintel biliyorsunuz, hatırlarsınız belki yine işlemcideki o şeyler, sızıntılar falan, güvenlik konusunda çok büyük sıkıntılar oldu. Bilinmesine rağmen bir süre örtbas edilmeye çalışıldı ve güncelleme olayı çok yavaş ilerledi.
+
+80
+00:28:02,324 --> 00:28:09,144
+Ya da ticari kaygılarla bunları duyurmama örneği olarak verebiliriz.
+
+81
+00:28:12,468 --> 00:28:25,347
+Bu kadar. Aslında bakarsanız bizim açımızdan, bilgisayar mühendisliği açısından bir projenin aşamalarındaki dikkat etmemiz gereken adımlardaki etik davranışların üzerinden geçmiş olduk.
+
+82
+00:28:26,107 --> 00:28:29,067
+Şimdi üretim ve uygulamayla ilgili sorumluluklara bakalım.
+
+83
+00:28:29,907 --> 00:28:36,788
+Üretim ne demektir? Üretim aslında bizim açımızdan düşündüğümüzde özellikle bir mühendislik üretimi, bir mühendislik işi.
+
+84
+00:28:40,468 --> 00:29:08,387
+Sadece mühendis olarak karar verip bu kararların uygulanmasını sağlayamayız. Bir de yönetim kademesi var. Hatta uygulayıcılar var. Bunları çalıştıranlar var, operatörler. Demek ki ben mühendis olarak evet bir şeyler kararlar veriyorum ama her zaman bunlar tamamen uygulanmıyor. Çünkü işin içinde yönetici ve uygulayıcılar da var ve bunların da çok büyük sonuç üzerinde yetkileri ve sorumlulukları da hatta var.
+
+85
+00:29:08,915 --> 00:29:33,535
+Genellikle de bilirsiniz yöneticilerin kararı her zaman için çok daha baskın olur. Bunları tekrar ileride birkaç sılay sonra daha detaylı inceleyeceğiz. Şimdi üretim ve uygulama sırasında görev alan her rol üstlendikleri görev ve sorumluluk neyse bununla ilgili bir sorumluluk taşır.
+
+86
+00:29:36,915 --> 00:29:52,275
+Adını veriyoruz. Mesela bahsettik bir bilişim sisteminde bir projenin başından sonuna kadar üretilmesinde kimler nasıl sorumlu, mühendislerin her aşamada ne gibi sorumlulukları var bunlardan bahsettik.
+
+87
+00:29:55,335 --> 00:30:00,000
+Şimdi sadece bilgi sistemi olmasına da gerek yok. Her ürün kullanılmaya başlıyor.
+
+88
+00:30:00,000 --> 00:30:17,640
+Başlandığında bazı sorunlar çıkabilir. Bunu biliyoruz, bunu kabul ediyoruz. İşte bu bir taşıt olabilir, bir araç olabilir, bir üretim sistemi olabilir, bir bilişim sistemi olabilir, her şey olabilir. Tabii bizim beklentimiz aman hiç sorun olmasın. Hiçbir şekilde bu sistem sorun çıkartmasın.
+
+89
+00:30:20,692 --> 00:30:27,112
+Tabi burada sorun ürünün kendisinden de doğabilir ya da kullanım biçiminden de doğabilir.
+
+90
+00:30:27,272 --> 00:30:32,112
+Yani uygun olmayan bir kullanım da problem yaratabilir doğal olarak.
+
+91
+00:30:33,471 --> 00:30:57,351
+Burada yapmamız gereken bir sorun oluştu. Bir sorun oluşunca acaba bu neden oluştu diye mutlaka bunu araştırmalıyız. Ve sonraki çalışmalara da ışık tuttuğu için bunları bir şekilde üzerinde durarak çözmeliyiz. Ayrıca ilgililer kimse, yani bak bu sorun şu yüzden oldu ve bunun ilgilisi sensin diye bunları da mutlaka açıklamalıyız. Bu da ayrı bir sorumluluğumuz.
+
+92
+00:30:57,351 --> 00:31:01,471
+Şimdi genel olarak iki çeşit sorumluluk var. Rol temelde sorumluluk olduğunu söyledim.
+
+93
+00:31:01,471 --> 00:31:08,771
+Üstlendiğimiz görev dolayısıyla buna bağlı sorumluluklar var. Buna da rol temelli sorumluluk dedik.
+
+94
+00:31:08,771 --> 00:31:25,291
+Şimdi temel olarak bir sistem kullanılırken ortaya çıkan sorunda iki tane sorumluluk vardır. Bunu araştırırken, ortaya çıkartırken. Birincisi edilgen sorumluluk, diğeri de aslında etken sorumluluk. Şimdi aradaki fark nedir?
+
+95
+00:31:28,180 --> 00:31:50,780
+Sistem kullanılırken ortaya bir sorun çıktı ve ben bunu araştırıyorum. Buna edilgen sorumluluk diyoruz. Neden? Çünkü ortada bir sistem var. Zaten çalışıyor ve ben sonradan oluşan, ortaya çıkan bir sorunu araştırıyorum. Şu anda daha onu yapmıyorum. Yapmışım zaten. O yüzden edilgen durumdayım. Edilgen sorumlulukla bunu gerçekleştiriyorum.
+
+96
+00:31:51,571 --> 00:32:03,331
+Eğer üretim sırasında sorun ulaştırabilecek şeyleri görüyoruz, görmeye çalışıyoruz ve gerekli önlemleri almaya çalışıyorsak bu da etken sorumluluktur.
+
+97
+00:32:03,331 --> 00:32:11,011
+Yani üretim aşamasında görev alanların yüklendikleri sorumluluklara etken sorumluluk adını veriyoruz.
+
+98
+00:32:11,791 --> 00:32:14,331
+Şimdi şeye baktığımızda işte bu...
+
+99
+00:32:16,852 --> 00:32:36,772
+Örnek vermiştim ya, mesela Challenger faciası dedik. Challenger faciasında olay neydi? Bir tane o conta, yuvarlak conta vardı. Ve bu contanın sıcaklık belli bir değerin altına düştüğünde beklendiği şekilde çalışmayacağı bir mühendis tarafından fark edilmişti.
+
+100
+00:32:36,772 --> 00:32:44,852
+Yani bunu bir mühendis, ya bu conta sıcaklık şu derecenin altına düştüğünde çatlıyor. Çatladığında da yakıt sızıntısı olabilir.
+
+101
+00:32:44,852 --> 00:33:04,672
+Daha bunu proje gerçekleştirilirken, yani üretim aşamasında fark etti. Ve sonrasında da etken sorumluluğu taşıdığı için bunu üstlerine anlattı. Yani aktardı. Ve aslında buradaki görevli mühendis etken sorumluluğunu etik olarak yerine getirmiştir.
+
+102
+00:33:12,852 --> 00:33:14,632
+Yöneticilerine anlatmıştır.
+
+103
+00:33:15,124 --> 00:33:27,264
+Şimdi burada tabii Jonta'yı üreten firma Challenger 8 programının yöneticileri arasında iletişim sorunları ortaya çıkmış.
+
+104
+00:33:27,684 --> 00:33:35,644
+Ve bir yandan da üzerlerinde büyük bir baskı var. Çünkü bu program zaten başka problemler yüzünden birkaç kere ertelenmiş.
+
+105
+00:33:35,644 --> 00:33:43,124
+Yani birkaç kere ertelendiği için artık o roket havada olacak diye böyle herkes bekliyor. O roketi havada göreceğiz.
+
+106
+00:33:43,124 --> 00:33:56,124
+Böyle büyük bir baskı var üzerlerinde. Madem bu kadar ertelendi artık bizim bunu yapmamız lazım deyip bu kadar ufak bir contanın aman canım ne olacak deyip göz ardı edilmesi durumu oluşmuş ve sonuçta...
+
+107
+00:33:56,627 --> 00:34:11,547
+Astronotlar hayatını kaybetmiş. Milyarlarca dolarlık belki proje çöp olmuş. Şimdi burada nasıl bir yorum yapabiliriz? Mühendis mesleki sorumluluğunu yerine getirdi ve etken sorumluluğunu yerine getirdi diyebiliriz.
+
+108
+00:34:24,436 --> 00:34:50,356
+Alev nedir şey yangın oluştu falan filan oradan patladı. Bu ortaya çıkartılmış. Ne oldu? Bakın sonrasında yapıldı bu araştırma. Bu da edilgen sorumluluk. Yani olan olmuş deyip örtbas etmemek gerçekten sorun nereden kaynaklanmış? Bunun ilgilisi kimdi? Bununla ilgili yapılan işlemlerde edilgen sorumluluk kapsamındaki faaliyetler olarak gerçekleştirilmiş Challenger faciasında.
+
+109
+00:34:52,436 --> 00:35:19,336
+Uçağına bakalım. Oradaki olay. Şimdi Dan Applegate'de hatırlarsanız mühendis burada sorun olduğunu görmüş, bulmuş, fark etmiş ve yöneticilere bunu bildirmiş ve kapağın da yeniden tasarlanması gerektiğini söylemiş, bu sıkıntı yaratır demiş. Ne yaptı? Mesleki sorumluluğunu, etken sorumluluğunu tamamen yerine getirdi. Yöneticiler de getirdi ve kapakları yeniden gerçekten tasarlamışlar ve uçakları sırayla, belli bir sırayla takıyorlarmış.
+
+110
+00:35:20,467 --> 00:35:40,207
+Tabii bu sırada herhangi bir kaza riski öngörülmediği için uçağı işletenler, mesela Türk Hava Yolları uyarılmamış. Yani bak böyle bir sıkıntı var, bu bagaj kapağı yüzünden kaza olabilir gibi bir uyarı yapılmamış. Belki yapılsaydı onu şeye çekeceklerdi, angara çekeceklerdi, bekleteceklerdi, operasyonda kullanmayacaklardı.
+
+111
+00:35:48,467 --> 00:36:01,688
+Y9 falan diye gidiyor ya artık onları takip edemiyoruz. 737 serisinin Next Generation dediğimiz yeni kompozit gövdeli, yakıt verimliliği, tavan yapmış modeli vardı.
+
+112
+00:36:02,607 --> 00:36:12,728
+Böyle şey, wingletleri şey gibi böyle bir yukarı bir aşağı falan gidiyordu. Böyle çok süslü. Ama kaç kere düştü. Havada infilak ettiği işte o şey nereden olduğu ortaya çıktı.
+
+113
+00:36:16,467 --> 00:36:22,367
+Farklı veri okuduğunda hız ve yükseklik açısında birkaç sensör var tabii ki uçakta.
+
+114
+00:36:22,768 --> 00:36:25,728
+Bu sensörlerden farklı veriler geldiğinde yazılım sapıtıyor.
+
+115
+00:36:25,728 --> 00:36:34,367
+Sapıtınca otopilota burnunu kaldır ya da aşağı indir gibi yanlış yapmaması gereken komutlar yüklüyor.
+
+116
+00:36:34,827 --> 00:36:37,027
+Sonrasında uçak düşüyor. Böyle şeyler oluyor.
+
+117
+00:36:38,447 --> 00:36:41,587
+Etken sorumluluk burada pek işletilmemiş tabii ki.
+
+118
+00:36:44,467 --> 00:36:58,507
+Buna ne sebep oldu şekildeki incelemelerle ortaya çıkarılmış. Bunu söyleyebiliriz en azından 737 vakasında. Ki ne oldu? Mesela bu bilindiği ve duyurulduğu için dünyanın pek çok havayolu dünyadaki hemen uçuşları durdurdular.
+
+119
+00:37:06,367 --> 00:37:31,927
+Tabii oradan sonra çok kapsamlı yenilikler, güncellemeler, testler falan tekrar yeni sınamalar yapıldı. Şu anda tekrar güvenli sertifikasını aldı o uçak. Fakat Türk Hava Yolları henüz devreye aldı mı almadı mı bilmiyorum. En azından şöyle söyleyebilirim. Yüksek lisans da aynı zamanda pilot olan bir öğrencim var. Danışmanlığını yaptım. O şu anda henüz daha uçmadığını söyledi.
+
+120
+00:37:34,367 --> 00:38:01,827
+Henüz daha tam olarak devreye alınmamış gibi düşünüyorum. Tabi bu biraz pandemi süreciyle de etkili. Uçakların çoğu şu anda yerde. Konuyu dağıtmayalım. DCO'nun bagaj kapağına geri gelelim. Şimdi ne dedik? Etken sorumluluk yerine getirildi. Hem mühendis hem de yöneticiler tarafından yerine getirildi. Kapak değiştirildi ve bir sırayla yeni üretilen kapaklar mevcut uçaklara takılmaya.
+
+121
+00:38:02,239 --> 00:38:27,500
+Bu nedenle, uçak düşünce bunun nedeni toplumla paylaşılmış ve bu kapağın şu tasarım problemi yüzünden olduğu falan filanı paylaşılmış. O yüzden edilgen sorumluluğun da yerine getirildiğini söyleyebiliriz.
+
+122
+00:38:30,239 --> 00:38:56,759
+Üç seviyeli doğrulamada adama SMS yolluyorlardı. Fakat iş birimi şey demişti, ya bu adamlar sürekli cep telefonlarının numaralarını değiştiriyor. O yüzden internetten değiştirebilsinler, internet şubesinden. Oradaki bizim bilgisayar mühendisliği arkadaşlar da bankadaki ne demişti? Kesinlikle olmaz. Anahtar ve şeyi aynı zarf içinde yollamak gibi bu kilidi. Mutlaka başka bir kanaldan.
+
+123
+00:38:57,139 --> 00:39:22,799
+Doğrulanmış başka bir kanaldan telefon numarasının güncellenmesine izin vermelisiniz. Yoksa kötü niyetli birisi telefonu değiştirir ve bunu kullanabilir demişti. İş birimi de hadi oradan bana işimi mi anlatacaksın, ne diyorsam onu yapacaksın demişti değil mi? Şimdi burada mühendislerimiz, bilgisayar mühendislerimiz etken sorumluluklarının sonuna kadar yerine getirmişler. Çünkü kesin bir şekilde bunun sıkıntı olduğunu, bunun yapılmaması gerektiğini defalarca belirtmişler.
+
+124
+00:39:23,568 --> 00:39:32,188
+Ve sonrasında yapılan incelemeyle de edilgen sorumluluk gereği bilgisayar mühendisliğinin haklı olduğu ortaya çıkmış idi.
+
+125
+00:39:33,348 --> 00:39:46,108
+Burada söylememiz gereken şey şu, özet olarak. Bir mühendis olarak bir sistem geliştiriyorsanız, bu sistemi ben geliştirdim, bitti, artık benden çıktı diyemezsiniz.
+
+126
+00:39:51,568 --> 00:39:59,928
+Bu bir araba geliştirirseniz de öyledir. Uçak geliştirirseniz de öyledir. Ya da bir bilişim sistemi geliştirirseniz de bu şekilde.
+
+127
+00:40:00,000 --> 00:40:17,980
+Biz bilişim sisteminde buna ne diyoruz? Bakım ve destek faaliyetleri diyoruz biliyorsunuz. Devreye aldıktan sonraki bütün yaşam ömrüne biz bakım süreci adını veriyoruz. Eğer bir hata varsa bunu gidermekle yine yükümlüyüz. Bir kusur varsa bunu gizlememeliyiz kendi bilişim sistemimizde.
+
+128
+00:40:18,840 --> 00:40:28,000
+Bazıları işte ne yapıyor? Ya kervan yolda düzülür deyip tamam ya biz bunu çıkartalım buyurunu hata oldukça düzeltiriz şeklinde bir yaklaşık.
+
+129
+00:40:28,000 --> 00:40:42,319
+Bu firmanın etik davrandığını söyleyemeyiz. Etik kuralları çiğnediğini rahatlıkla söyleyebiliriz.
+
+130
+00:40:42,771 --> 00:41:01,592
+Gördüğünüz gibi üretim ve uygulama da tamam yaptım bitti değil. Sonrasında da mutlaka bizim bütün sorumluluğumuz aslında devam ediyor. Edilgen sorumluluk haline geliyor ama yine de sorumluluklarımız devam ediyor. Peki hata kaynaklarına bakalım. Biz sorun sorun deyip duruyoruz da nerede sorunlar olabilir?
+
+131
+00:41:10,771 --> 00:41:26,592
+Örnek, roketteki uzay mekiğindeki Jonta'nın yanlış seçimi. Sıcaklıklarda çalışmadığı bilinmesine rağmen onun yanlış olarak seçilmesi. Belki de bilerek yapılmış bir hata. Başka kasıtlar yüzünden.
+
+132
+00:41:26,592 --> 00:41:38,672
+İşte uçağın, McDonnell Douglas'ın bagaj kapağının tasarımındaki hata. Belki bilmeyerek yapıldı ama bir şekilde yanlış. Ama sonuçta etken sorumluluk gereği.
+
+133
+00:41:38,771 --> 00:41:51,952
+Bunlar düzeltilmeye çalışıldı. Ya da internet bankacılığındaki telefon numarasının değiştirilmesiyle alakalı güvenlik kuralının yanlış bir şekilde kurgulanması ve yanlış işletilmesi. Bunlar üretim hatalarıdır.
+
+134
+00:41:53,139 --> 00:42:15,819
+Yanlış kararlar vardır hata kaynağı olarak. Bu da sorunun çıkarabilmesi olasılığı olan bir fiziki donanım ya da parçayı ya da bir yöntemi bilerek uygulatmak ya da uygulamak. Buna yanlış karar adı verilir. Bunlar genellikle yöneticiler tarafından yapılır.
+
+135
+00:42:21,139 --> 00:42:33,299
+Başka panda sorun olduğunu bile bile uçuşlara devam ettirmek ve o uçağa uçuran şeylere, operatörlere, Türk Hava Yolu gibi firmalara yeterli bilgiyi vermemek.
+
+136
+00:42:34,920 --> 00:42:47,420
+Ya da bizim bilgisayar mühendislerinin, bankadaki bilgisayar mühendislerinin bunu yapmayın, bu olmaz, bu güvenlik açığıdır dediği uyarılara uymadan böyle yapılacak kardeşim demek yanlış kararlardır.
+
+137
+00:42:47,420 --> 00:42:49,139
+Bunlar da başka hata, ikinci hata.
+
+138
+00:42:49,139 --> 00:43:05,019
+Üçüncüsü öngörü. Burada üretim sırasında hata ya da yanlış karar sırasında kaynaklı bir sorun olmasa bile, böyle bir durum oluşmasa bile, ürün kullanılırken ortaya çıkabilecek bazı sorunlar olabilir.
+
+139
+00:43:05,019 --> 00:43:08,019
+Tabii bunları öngörmek biraz deneyim gerektirir.
+
+140
+00:43:10,496 --> 00:43:21,635
+Kötü olaylar edilgen sorumluluk gereği incelene incelene deneyimsizlikten ya da öngörü eksikliğinden kaynaklanan hataları da sıklıkla rastlanabilir.
+
+141
+00:43:21,635 --> 00:43:38,215
+İşte ne bileyim hani bir tane çamaşır makinesi yapıyorsunuz diyelim. Çamaşır makinesinin her şeyi doğru. Üretimde bir hata yok. Yanlış verilmiş bir karar yok. Ama biliyorsunuz ki mesela hani bu sonradan tabii deneyimlerle biliniyor ki esasen işte oradaki
+
+142
+00:43:38,496 --> 00:43:55,635
+Bu makinenin motoru çeviren, motordan kazana giden kayış var. Bileniyor ki o kayış aslında sürekli bin devire çıkıp sıfıra inmek, bin devire çıkıp sıfıra inmek gibi bir davranışı mesela bir sene boyunca gerçekleştirdiğinde çatlıyor ya da kırılıyor.
+
+143
+00:43:55,635 --> 00:44:06,496
+İşte bu öngörü olması lazım. Bu malzeme ileride esner, bu malzeme ileride bize sorun çıkartır. Ya da işte bu algoritma ya da buradaki framework ya da bu API ileride bize şöyle...
+
+144
+00:44:06,496 --> 00:44:11,255
+Böyle bir sıkıntı yaratır. Bu da öngörüdür. Bunu öngörememek de bir hata kaynağıdır.
+
+145
+00:44:13,375 --> 00:44:21,175
+Dördüncüsü de eylem özgürlüğü. Ürünün kullanılması sırasında bazı noktalarda uygulayıcıların karar vermesi gerekebilir.
+
+146
+00:44:21,175 --> 00:44:28,175
+Burada karar verme dediğimiz seçenekler var. Seçeneklerden birini seçmek. Kim kullanıyorsa...
+
+147
+00:44:28,916 --> 00:44:46,036
+Buna karar verme özgürlüğüne o kişi sahiptir ve bileverek ve isteyerek yanlış bir şeye sebep oluyorsa kullandığı, seçtiği yol yüzünden bununla ilgili sorunlu sonuçlara da doğal olarak kendisi bağlıdır ve bunlardan sorumludur diyebiliriz.
+
+148
+00:44:46,896 --> 00:44:49,096
+Demek ki hata kaynaklarımız da dört çeşitmiş.
+
+149
+00:44:50,132 --> 00:45:18,132
+Teknik erekler, ambition, erilmek istenen, varılmak istenen hayaller diyelim buna. Genellikle mühendisler biliyorsunuz, bizim gibi arkadaşlar biraz heyecanlı, yeniliğe açık kişiler. Özellikle de gençsek çok böyle şeylerimiz olabiliyor. Uçan kaçan fikirlerimiz ya da hedeflerimiz olabiliyor. Bunlar doğaldır. Hatta bunları desteklemek lazım. Desteklemezseniz ilerleme olabiliyor.
+
+150
+00:45:18,132 --> 00:45:46,132
+Çünkü çoğu buluş aslında bu mühendislerin erekleri sonucunda ortaya çıkıyor. Hatta bu amaçlara ulaşmak, bu hedeflere ulaşmak için hayatını tehlikeye atan ölenler bile var. Biliyoruz bunları. Ama şimdi şunu da biliyoruz. Günümüzde artık böyle tek kişilik icatların dönemi geçti. Takım çalışması var. Çünkü tek başınıza her şeyi yapamazsınız. Bir takım olarak bir mühendislik ürününü ortaya koymanız gerekir. Artık çünkü çok kompozit çok...
+
+151
+00:45:46,132 --> 00:45:49,372
+Karmaşık Halilerdeki yeniliklerden bahsettiğimiz için.
+
+152
+00:45:50,036 --> 00:46:16,496
+Bir takım var diyeyim. Takımın içinde de böyle çok gaz bir arkadaş var. Çok heyecanlı bir mühendis. Doğal olabilir. Fakat bu heyecanlı genç arkadaşın hedef ya da amaç, istek, ereklerini, hayallerini deneyimli mühendisler mutlaka değerlendirmelidir. Yani sırf böyle bireysel heyecanı için mesela projenin içerisinde belli şeyleri değiştiriyorsa bir mühendis, bu etik olarak doğru bir davranış değildir.
+
+153
+00:46:18,036 --> 00:46:46,036
+10.000 fit'e çıkmasın da 15.000 fit'e çıksın. Şu kanadı şöyle yapalım. Ya da orasına şunu da takalım. Bu sistemde şu da olsun, bilmem ne arayüzü için, IOS'u da desteklemek için şunu da ekleyelim. Bu her zaman doğru olmaz. Belki genelinde uygulamanın yanlış ya da sorunlar çıkmasına sebep olabilir. Yazılım, donanım açısından düşündüğümüzde illa heyecanla bir şeyleri değiştirmememiz, eklememiz gerekir. Deneyimli mühendislerin de bunları...
+
+154
+00:46:46,036 --> 00:46:47,576
+denetlemesi gerekir.
+
+155
+00:46:48,724 --> 00:47:04,384
+Kuruluş açısından bunları düşündüğümüzde de aslında bazıları, bazı kişiler diğer çalışanlara göre daha etkindir, daha baskındır. Özellikle de kimdir bunlar? Yöneticilerdir ya da patronlardır, kuruluş sahipleridir. Patron ne derse o olur diyebiliriz burada özetle.
+
+156
+00:47:04,923 --> 00:47:16,724
+Fakat bazı kişiler de uzmandırlar ama yetkileri kısıtlıdır. İşte mühendis mesela, bankadaki mühendis gibi düşünün. Bizim bankadaki bilgisayar mühendisi uyarmış.
+
+157
+00:47:16,724 --> 00:47:36,623
+Hatırlarsanız uzman ama yetkisi kısıtlı. Yani ben bu projeyi yaptırmıyorum, durduruyorum deme yetkisi yok. İş birimi daha baskın, daha etkin konumda onun dediği yapılıyor. Mutlaka etkin kişilerin, uzman kişilerin uzmanlıklarını ve söylediklerini de değerlendirip kararlar almak gerekir.
+
+158
+00:47:44,724 --> 00:47:56,663
+şeklinde projeyi yönlendirmeleri etik bir davranış olarak görülmez ya da görülmemelidir. Çünkü yanlıştır. Örneğine internet bankacılığı örneğinde zaten uzun uzun konuştuk.
+
+159
+00:47:57,940 --> 00:48:15,360
+Şimdi geldik özellikle mühendislik etiği açısından toplumsal açıdan değerlendirmeye, toplumsal bağlam diyelim buna, kontekst. Mutlaka her yaptığınız işte her üründe toplum sağlığını hatırlarsanız ilk önce kamu geliyordu etik değerlerde.
+
+160
+00:48:25,940 --> 00:48:53,940
+İç gücülerin esiri olarak bazen yaptıkları araştırmaların ya da tamamladıkları...
+
+161
+00:48:53,940 --> 00:49:13,119
+Ürünlerin nerede ve ne amaçla kullanılacağını düşünmeyebilir. En güzel örnek 2. Dünya Savaşı. Acayip işte atom bombaları, roketler bilmem neler, mayınlar onlar bunlar. Uzaktan kumandalı bir sürü şey sistemi, silah sistemi. Bunların nerede ne amaçla kullanılacağını düşünmeden mühendisler böyle bir hevesle.
+
+162
+00:49:13,780 --> 00:49:34,179
+Yüksek bir hevesle bunları yapabilirler. Bilişim sistemi açısından düşündüğümüzde, ya hocam ne olacak işte alt tarafı yazılım diyecek olabilirsiniz ama bunu önceden de söyledim ya. İlk bakışta topluma zarar vermeyeceği düşünülebilir ama biliyoruz ki bazı bilişim sistemleri bomba kadar etkili. Hatta daha bile güçlü günümüzde.
+
+163
+00:49:37,179 --> 00:49:37,740
+Mesela...
+
+164
+00:49:38,132 --> 00:49:59,991
+Elektrik dağıtım sistemini yöneten bir şey var, sistem var, yazılım. Bunu izinsiz olarak ele geçiren bir sistem. Hatırlıyorsunuz bu Amerika'da kaç yıl oldu? 10 yıl oldu galiba. Bir enerji krizi yaşanmıştı. Bir yönetim, yine bir yazılım hatası mıydı? Bir santral devreden çıkıyor, bozuluyor. Ondan sonra oluşan yük değişimini...
+
+165
+00:50:00,000 --> 00:50:21,219
+dağıtamıyor grid'e. Sonrasında tak tak tak böyle domino gibi bütün şeyler devreden çıkıyordu. Amerika bir ara elektriksiz falan kalmıştı. Ondan sonra tabii şey işte Stuxnet örneği falan İran'ın şeyini ne biliyorsunuz hacklemişti Amerika nükleer programını. Bir internet hizmet sağlayıcısını düşünün işte.
+
+166
+00:50:21,695 --> 00:50:31,975
+E-postaların içeriklerini okuyup değerlendiriyor. Böyle bir yazılım kullanıyor. Böyle bir sistem kullanıyor. Bu da aslında toplumun geneline zarar veren bir çalışma.
+
+167
+00:50:32,436 --> 00:50:49,876
+Hava trafiği, şehir trafiğini yöneten yazılımların ele geçirilmesini sağlayan kötü niyetli yazılımları hazırlıyorsanız bunlar da aslında etik olarak toplumsal bağlamda yanlış sonuçlar doğuran işleri gerçekleştirdiğiniz için etik davranmadığınızı gösterir.
+
+168
+00:50:49,876 --> 00:50:59,876
+Şunu söyleyemeyiz hiçbir zaman. Yani ben mühendisim, ben işimi yaparım, gerisi beni ilgilendirmez. Ben kodumu yazarım, devam ederim hayatıma diyemezsiniz. Yazdığınız, yaptığınız sistemin...
+
+169
+00:51:00,436 --> 00:51:06,076
+Doğuracağı sonuçların da sorumluluğunu sizin taşıyacağınızı mutlaka bilmelisiniz.
+
+170
+00:51:06,216 --> 00:51:11,136
+Farkında olmalısınız ve bu şekilde çalışmalarınızı gerçekleştirmelisiniz.
+
+171
+00:51:11,136 --> 00:51:15,436
+Yani toplumsal bağlamı mutlaka göz önünde tutmamız gerekiyor.
+
+172
+00:51:17,576 --> 00:51:21,336
+Geldik mühendisler ve yöneticiler başlığımıza.
+
+173
+00:51:22,216 --> 00:51:25,356
+Şimdi bu şey hani roller, baskın roller falan demiştik ya.
+
+174
+00:51:27,539 --> 00:51:49,980
+Doğal olarak pek çok kurumda, kuruluşta, toplumda, mühendislerle diğer çalışan gruplar arasında ilişkiler, iş ilişkileri olacak. Bunların etik olarak, etik kurallara uygun olarak aslında ya da etik değerlere uygun olarak gerçekleştirilmeleri esas bunlar bizim için önemli. Hem mühendis için önemli hem de kuruluş için önemli.
+
+175
+00:51:51,251 --> 00:52:16,771
+İşte mesela neler var? Bir kuruluş düşünelim. Doğal olarak müdürler, CEO'lar, CEO'lar, CTO, CFO, 50 tane CEO var biliyorsunuz. CXO diyelim. Yöneticiler var, mali işlerden sorumlu kişiler var. Yani para trafiğini yönetenler var diyelim. Mühendisler var, üretimde yapan, üretim sorumluları. Bunlar doğal olarak birlikte çalışıyorlar.
+
+176
+00:52:17,748 --> 00:52:36,668
+Ve bu sınıfların hepsinin etkinlikleri ve yeterlilikleri de birbirinden farklı. Şimdi biz nerede uzmanız? Tasarım ve gerçekleştirme konularında uzmanız. Doğal olarak biz üretim sınıfıyız. İşin mutfağıyız yani. Mutfak olmadan üretemezsiniz. Hiçbir şey çıkmaz. O yüzden biz işin mutfağıyız diyebiliriz.
+
+177
+00:52:45,748 --> 00:52:50,528
+Farklı mesleklerden gelebiliyorlar. Mühendis kökenli de olabilirler. Olurlarsa daha iyi bizim açımızdan.
+
+178
+00:52:51,788 --> 00:53:02,748
+Sosyal bilimlerden de gelebiliyorlar. Mali konulardakilerde doğal işletme, iktisat, muhasebe falan filan taraflarındaki eğitimlere sahip oluyorlar.
+
+179
+00:53:04,403 --> 00:53:17,403
+Özellikle yöneticiler mühendislik alanından gelmiyorlarsa mühendislerle çoğu zaman sık sık anlaşmazlığa da düşebiliyorlar. Mesela buna örnek olarak yine bankaları verebiliriz.
+
+180
+00:53:19,344 --> 00:53:47,344
+Ne zamandan beri var? Çok uzun zamandan beri doğal olarak dünyada bankacılık sektörü var. Ülkemize baktığımızda, hadi cumhuriyetle birlikte başladığını düşünelim, Osmanlı Bankası ayrı biliyorsunuz, onu boşverin. 1920'lerden itibaren bankacılık başlıyor. 1960'larda da bilgisayar biliyorsunuz, merkezi bilgisayarlar yaygınlaşmaya ve bankalarda da kullanılmaya başlıyor. O zamanlarda bankacılar için önemli olan her şey bütün...
+
+181
+00:53:47,344 --> 00:54:02,304
+Mali olaylar. Onlar için bilgisayar dediğiniz şey aslında güçlü bir hesap makinesi. Yani bilgi işlem merkezinde çalışan insanlar da bankanın ihtiyacı olan mesela mali bir program var. Bilmem ne faiz hesaplarını yapacak.
+
+182
+00:54:04,532 --> 00:54:30,452
+Gelirlerini, bir şeyini hesaplayacak. Tabloları oluşturacak. Aslında hesapları otomatize etmeye ya da hızlandırmaya çalışıyorlar diyebiliriz. Bunları yazmaktan ve bunları işletmekten sorumlu kişiler olarak görülüyor. Zamanla tabii ne oldu? Bilgisayarlar öyle bir güçlendi ve öyle bir merkeze geldiler ki artık bilgisayarsız hiçbir iş yapılmaz hale geldi. Ve doğal olarak bilgi işlem merkezi de bilgi sistemine dönüştü. Böyle bilgi merkezine dönüştü.
+
+183
+00:54:32,532 --> 00:54:38,952
+Bilgisayar Mühendisliği doğal olarak burada çalışanların ve bilgisayar mühendisleri de teknik erekler falan da dedik ya iki slide önce.
+
+184
+00:54:39,603 --> 00:55:04,043
+Pek çok yeni fikir ve proje üretmeye başladı. Şimdi banka yöneticileri artık mesela aman canım siz zaten kuvvetli bir hesap makinesinden başka bir şey değilsiniz benim için diyemezler. Hani benim istediğimi yapacaksınız, ben ne dersem o olur. Ben sizi dinlemiyorum dediğim gibi siz benim için sağ elimin altındaki bir hesap makinesiniz zaten gibi bir görüş de olmamaları gerekir.
+
+185
+00:55:07,603 --> 00:55:35,603
+Başka bir işiniz yok şeklinde görürlerse, bilgisayar mühendislerimizin bizim yeteneklerimizi görmezden gelirlerse oldukça büyük hatalar yaparlar. İşte örnek, yine aynı örneğe geri döneceğim. Hani farklı farklı çok daha almayalım diye. Bilgisayar mühendisleri ne demişti? Bakın bunu yapmayın, sıkıntı doğurur, bu böyle böyle güvenlik açığı demişti. Hadi oradan demişlerdi ve sonuçta banka zararlı çıktı. Neden? Çünkü hem...
+
+186
+00:55:35,603 --> 00:56:03,523
+Bu suç oluştu ve bundaki sorumluluk da direkt olarak bankanın kendisinde olarak görüldü. Çünkü öyleydi. Şifrenin oradan değiştirilmemesi gerekiyordu. İşte gördüğünüz gibi illaki benim yetkim var ya da benim etkim var şeklinde mühendisleri şey yapmamanız gerekir. Göz ardı etmemeniz gerekir. Yönetici benim, müdür benim, patron benim. Benim dediğim yapılacak mantığı çok büyük.
+
+187
+00:56:03,603 --> 00:56:31,603
+Zararlara neden olabilir. Özetle kuruluş içinde herkes yetki, birikim ve yeteneğini bilmeli ve buna göre çalışmalı, birlikte çalışmalı ve kararları verirken de bu birlikteliğe özen göstermeli. Buna biz ne diyoruz? Görev paylaşımı adını veriyoruz. Neyse ki günümüzde artık bizler de yönetici kademesine geçiyoruz. Özellikle de böyle kuruluşlarda yani patron ya da yöneticilerde mühendis ise çatı...
+
+188
+00:56:31,603 --> 00:56:41,603
+Çatışma biraz daha az oluyor. Tabii ki birlikte çalışılan ortamlar varsa fikir çatışması da olacaktır. Bu fikir çatışmaları...
+
+189
+00:56:41,684 --> 00:57:03,224
+Yani şey mantıklı fikir çatışmaları olabilir ama duygusal fikir çatışmaları da olur. Böyle çatışmalar varsa bunların mantıklı olup olmadığına üst yöneticilere mutlaka düzgün bir şekilde karar vermeleri gerekir. Tabii üst yöneticilerin de her zaman mantıklı kararlar verdiğini ya da mantık çerçevesinde karar verdiğini de söyleyemeyebiliriz. Onlar da bazen duygusal davranabiliyorlar.
+
+190
+00:57:09,684 --> 00:57:17,304
+Başarısının daha düşük olacağını rahatlıkla söyleyebiliriz. Mühendis olarak objektif olmayı her zaman için destekliyorum.
+
+191
+00:57:18,684 --> 00:57:27,864
+Bazen bu duygusallık açısından düşündüğünüzde iş hayatında yarın öbür gün siz de bunları sıklıkla yaşayacaksınız. Bazen birileri başkalarının başarılarını kıskanabilir.
+
+192
+00:57:29,331 --> 00:57:50,811
+Kıskançlık yüzünden onların özellikle başarısız olması için de çalışabilirler. Başarılı kişilerin olumsuz taraflarını, olumsuz yönlerini bulup ortaya çıkarmaya çalışırlar. Buldularsa da bunu abartarak, bire bin katarak üst yönetime aktarmaya çalışırlar. Var olmayan şeyleri de varmış gibi de yalan ve iftirada da bulunabilirler.
+
+193
+00:57:57,331 --> 00:58:04,391
+Bizim açımızdan baktığımızda etik kurallar ile bağdaşmadığını çok rahatlıkla söyleyebiliriz.
+
+194
+00:58:05,172 --> 00:58:15,871
+Mühendisler ve yöneticilerin arasındaki ilişki nasıl olmalı? Şu anda nasıl? Gerçek hayatta nasıl işliyor? Ama aslında nasıl olması gerekir? Görev paylaşımının önemi nedir?
+
+195
+00:58:16,467 --> 00:58:44,427
+Bunları da üzerinden geçmiş olalım. Peki, şimdi mühendislik etiğine biraz daha konuştuk. Yine bizim bir proje açısından her aşamadaki sorumluluklarımızı etik olarak nelere dikkat etmemiz gerektiğini. Şimdi tam olarak böyle bilgisayar ve alakalı mühendislik dalları için. Şimdi biliyorsunuz o bilişim mühendisliği, bilgi sistemleri güvenliği mühendisi, bilişim sistem mühendisi, yazılım mühendisi, ıvır mühendisi, kıvır mühendisi gibi 50 tane.
+
+196
+00:58:44,467 --> 00:59:10,347
+Özetle bilgisayar mühendisi diyelim için ve benzerleri için etik ilkelere bakalım. Şimdi bunları bizim sektördeki, bizim dahil olduğumuz aslında meslek örgütleri ortaya koymuş. Neydi meslek örgütleri? Mesleğin özelliğini de düşünüp meslek hayatımız için ilkeleri belirleyen, uyulması gereken etik ve temel kuralları ilkeleri belirleyen kuruluş organizasyonlardı.
+
+197
+00:59:11,507 --> 00:59:33,067
+Bizim için işte temel kaynak IEEE Computer Section ve ACM, Associated of Computing Machinery. Bunlar temel. Hani biri işte Amerika ve Avrupa kaynaklılar diyebiliriz özetle. Bunlar tarafından hazırlanmış. Bunların hep kendi yazdıklarına direkt olarak böyle tek tek şey yapmayacağım ama bir bileşke.
+
+198
+00:59:33,523 --> 00:59:45,203
+Halinde bunları sunmaya çalışacağım. Amaç ne? Bilişim sistemlerinde çalışan bütün mühendislerin uymaları gereken sorumluluk ve etik kuralları açıklamak. Amacımız bu.
+
+199
+00:59:45,203 --> 01:00:00,000
+Şimdi yazılım diyoruz ama bilgisayar mühendisi olarak bunu genişletebiliriz rahatlıkla. Mesleğin saygın olmasını sağlamak için projenin bütün aşamalarında, önceden bahsettiğim bütün aşamalarında sorumluluklarını bilmeleri ve etik değerlere uygun hareket ediyoruz.
+
+200
+01:00:00,000 --> 01:00:13,980
+Ve bir mühendisin sorumluluğu olarak halkın refahı, kamu önce güvenlik ve sağlığına önem vererek sekiz tane ilkeye bağlı kalmaları istenir. Neymiş bu sekiz ilke? Şimdi onlara bakalım.
+
+201
+01:00:13,980 --> 01:00:28,000
+Kamu birincisi. Neydi kamu? Biliyorsunuz toplum her şeyin üstündeydi. Kamu çıkarlarına uygun davranmalıyız. Yaptığımız işin sorumluluğunun bu nedenle üstlenmeliyiz. Mesela ürettiğimiz bir yazılım.
+
+202
+01:00:28,000 --> 01:00:42,380
+Testler sonucunda ancak şunları sağlıyorsak onay vermeliyiz. Bir, bu sistem güvenlidir ve güvenilirdir. Bu sistem gereksinimleri karşılamaktadır. Bu sistem yaşam kalitesini azaltmamaktadır.
+
+203
+01:00:42,867 --> 01:01:10,748
+Bu sistem özel hayata saygılıdır. Bakın bu da KVKK falan çok açabiliriz burayı. Ve bu sistem çevreye saygılıdır. Eğer bunlara okey diyorsanız onay verin. Kullanırları onayını verin. Eğer bunlara okey demiyorsanız kamu açısından, kamu çıkarlarına uygun olmadığı için etik ilkeler gereğince buna onay vermemeniz ve bunu reddetmeniz gerekir. Ayrıca yazılımınızdaki bütün belgelerde, dokümentasyonda da açık olmalısınız.
+
+204
+01:01:10,867 --> 01:01:15,948
+Sağlıklıca olmamalısınız. Yalan ifadeler barındırmamalısınız. Bu da yine bir kamu sorumluluğu.
+
+205
+01:01:18,108 --> 01:01:31,148
+Müşteri ve işveren ikinci başlığımız. Yine kamu çıkarlarına ters düşmemek koşuluyla, kamuyu her zaman öne koyuyoruz, unutmayalım. Müşteri ve işverenin çıkarlarına uygun davranmamız gerekir.
+
+206
+01:01:33,043 --> 01:01:53,903
+O zaman ne yapacağız? Yani nelere dikkat edeceğiz? Bir, yasa dışı ya da etik olmayan yollarla elde ettiğimiz açık kaynaklı ya da kapalı kodlu programları kullanmamalıyız. Müşteri veya işverenin sağladığı olanaklar, özel olanaklar varsa bunlardan faydalanmamalıyız. Fikri mülkiyet haklarına saygılı olmalıyız.
+
+207
+01:02:01,043 --> 01:02:07,043
+Bir de gizlilik müşteri ve işveren açısından gizlilik kurallarına uymalıyız.
+
+208
+01:02:08,143 --> 01:02:22,783
+Üçüncü ilkemiz ürün ilkesi etik açıdan etik ilkelerimizde. Geliştirdiğimiz ürünün kalitesinin olabilecek en üst düzeyde olmasını hedeflemeliyiz ve bu şekilde çalışmalarımızı gerçekleştirmeliyiz.
+
+209
+01:02:28,467 --> 01:02:42,148
+Bu mantıklı, ölçülü diyelim bir bedel karşılık ve bir zaman talebinde bulunmalıyız. Yani boşu boşuna bilerek ve isteyerek bir ayda yapabileceğimiz bir iş için 8 ay verin bana dememeliyiz. 7 ay yatmamak için.
+
+210
+01:02:43,807 --> 01:02:54,847
+Sonra projeyle ilgili etik, ekonomik, kültürel, yasal, doğayla ilgili çevresel kısıtlar varsa bunları net bir şekilde belirlemeliyiz.
+
+211
+01:02:56,211 --> 01:03:15,291
+Projedeki elemanların gereksinimlere uygun özellikleri taşımasını mutlaka dikkat etmeliyiz. Ürünle ilgili teknik şartlameler varsa bunları kesin olarak yapmalıyız. Kesin olarak anlaşılır halde tutmalıyız. Ve bunları müşteriyle karşılıklı olarak onaylatmalıyız. Bir şartlameye bağlı iş varsa.
+
+212
+01:03:15,291 --> 01:03:24,211
+Ve bütün üretim süreciyle alakalı teknik, maddi, zaman gibi konuların hepsinde yine müşteri ya da işveren ile...
+
+213
+01:03:24,211 --> 01:03:49,472
+Düzgün bir anlaşma sağlamalıyız. Dördüncü ilkemiz yargı. Yargılarımızın tutarlı ve bağımsız olmalarına özen göstermeliyiz. Yani tutarlılık ve bağımsızlık ilkesine uygun yargılarımız olması gerekir. Ve yine yargılarımız her zaman için gereksinimleri, özellikle de insan gereksinimlerini desteklemelidir. Buna yönelik olmalıdır.
+
+214
+01:03:52,211 --> 01:04:00,392
+Özellikle bir yazılımı ya da bir dökümanı mesela değerlendirirken yargı açısından adil bir davranış sergilemeliyiz.
+
+215
+01:04:00,492 --> 01:04:01,612
+Adil davranmalıyız.
+
+216
+01:04:02,892 --> 01:04:08,771
+Rüşvet, sahtecilik gibi uygun olmayan finansal işlere karışmamalıyız.
+
+217
+01:04:08,771 --> 01:04:12,771
+Ve çıkar çatışması varsa bu durumlarda da...
+
+218
+01:04:13,780 --> 01:04:39,460
+Burada bulunmamalıyız, ortamda bulunmamalıyız ya da kendimizi o işten çekmeliyiz. Çıkar çatışması gibi durumlarda. Bu işte en son örnek şey oldu, hatta kabinede değişiklik oldu biliyorsunuz. Bir bakan kendi şirketinden bir ürünü bakanlığa satmış. İşte burada bir çıkar çatışması var aslında. Sizin bunu, yani kendi şirketinizi kendi yönettiğiniz kuruma kullandırmamanız.
+
+219
+01:04:40,052 --> 01:04:49,712
+İyi de olabilir, kötü de olabilir. Çıkar çatışması nedeniyle kullandırtmamanız gerekiyor. Çünkü siz zaten o kurumda da, alıcı tarafta da karar mercisiniz. Burada çıkar çatışması var.
+
+220
+01:04:50,252 --> 01:05:06,712
+Beşinci başlığımız yönetim. Yine yöneticiler yazılım geliştirme ve bakımla ilgili yöntemlere uygun çalışmayı benimsemeli ve etik kurallara da mutlaka uymalıdır. Yönetici açısından baktığımızda, yönetim açısından işte bir, projeyi iyi yönetmeliyiz.
+
+221
+01:05:08,052 --> 01:05:17,332
+Metrikler hakkında çalışanlarımızı, şunlara şöyle uyacağız, hedefimiz şudur şeklinde bunları bilgilendirmeliyiz çalışan bütün mühendislere.
+
+222
+01:05:17,952 --> 01:05:22,132
+Kuruluş politikası varsa bu politikaları yine çalışanlara, mühendislere söylemeliyiz.
+
+223
+01:05:23,592 --> 01:05:26,472
+Eğitim ve becerileri için onlara görevler vermeliyiz.
+
+224
+01:05:27,472 --> 01:05:36,032
+Teklif edilen projeler için zaman, kaynak ve parasal bedel gibi, bunun tutarışı olur gibi önerileri.
+
+225
+01:05:36,052 --> 01:05:38,832
+mantıklı ve gerçekçi bir şekilde yapmalıyız.
+
+226
+01:05:39,791 --> 01:05:43,952
+Çalışanların maaşlarının adil ve haklı olmasını sağlamalıyız.
+
+227
+01:05:46,032 --> 01:05:53,172
+Özellikle çalışanların sağladığı sürece ya da yazılma sağlıkları fikri mülkiyet hakları varsa
+
+228
+01:05:53,172 --> 01:05:57,771
+bunları mutlaka değerlendirmeli ve göz ardı etmemeliyiz yönetim açısından yine.
+
+229
+01:05:59,352 --> 01:06:04,052
+Kuruluş etik değerlerine uygunsuz davranışlar varsa bunlar için...
+
+230
+01:06:04,052 --> 01:06:16,272
+Gerekli eylemleri, işlemleri, mesela disiplin soruşturmasını ya da cezalandırmayı yapmalıyız. Kurallara ters düşen isteklerde bulunmamalıyız çalışanlarımızdan.
+
+231
+01:06:16,980 --> 01:06:44,920
+Böyle isteklerde bulunmamalıyız. Ve etik kaygılarını açıklayanlar varsa hadi oradan dememeliyiz. Bunları kınamamalıyız. Bunları cezalandırmamalıyız. Yani mesela Dehecion'daki mühendis Applegate gelip de size bu kapak yanlış yerinde hadi oradan bizim kapaklarımız hep doğrudur. Git işine otur orada başka iş yap dememeliyiz. Mutlaka yönetim açısından etik olarak bunu değerlendirmeli ve göz önüne almalıyız. Ve tabii ki kınamamalıyız dedik.
+
+232
+01:06:44,980 --> 01:07:04,000
+Altıncısı Meslek Etik İlkesi. Mesleğimizin ününü, toplumun çıkarlarını yine gözeterek yükseltmeliyiz. Bunun için de örgütsel oluşumları desteklemeliyiz. Mesela bilgisayar mühendisleri odasına omuz vermeliyiz diyelim. Kendi mesleğimizi tanıtmalıyız.
+
+233
+01:07:12,980 --> 01:07:14,380
+Farkıt gelmiyor pandemi yüzünden.
+
+234
+01:07:16,639 --> 01:07:19,940
+Diyorsunuz ki işte ne iş yapıyorsun diyor, ne okuyorsun diye size soruyor.
+
+235
+01:07:20,059 --> 01:07:23,480
+Bilgisayar mühendisiyim diyorsunuz ya da bilgisayar mühendisliği okuyorum diyorsunuz.
+
+236
+01:07:24,000 --> 01:07:27,980
+İlk gelen şey şu, ya bizim oğlana da bir laptop alacağız ne alsak?
+
+237
+01:07:28,980 --> 01:07:36,980
+Tabii bizim işimizin tam olarak ne olduğunu, mesleğimizin ne olduğunu düzgün bir şekilde tanıtmamız gerekiyor.
+
+238
+01:07:37,972 --> 01:08:05,892
+Kendi bilgi becerimizi, mesleki bilgi becerimizi arttırmak ve hatta meslekteki toplam bilgi birikimini arttırmak için mesleki toplantılara mutlaka katılmalıyız. Bunlara destek vermeliyiz. Bizim açımızdan örneğin akademik dünyada bunlar sempozyumlarla yaşanıyor. Bunlara katılmak önemli. Mesleğin toplam değerini arttırmak açısından. Mesleğin çıkarlarını işverenin ya da müşterinin çıkarlarının önünde tutmamalıyız.
+
+239
+01:08:05,972 --> 01:08:10,932
+Yine o daha öncelikliydi hatırlarsanız. Yasalara ve yönetmeliklere uygun davranmalıyız.
+
+240
+01:08:10,932 --> 01:08:15,852
+Eğer bir hata görüyorsak, örneğin bir yazılımla çalışıyoruz, yazılım üzerinde çalışıyoruz.
+
+241
+01:08:17,600 --> 01:08:38,819
+Hata bulduysak bunu mutlaka ortaya çıkartmalı ve açıklamalıyız. Gizlememeli, örtbas etmemeliyiz. İş arkadaşlarımız, colleagues açısından baktığımızda da meslektaşlarımıza karşı adil olmalıyız, destekleyici olmalıyız. Arkadaşları da kurallara uymaya özendirmeliyiz. Arkadaşlarımızın gelişimlerine de katkı sağlamalıyız ya da bunları desteklemeliyiz.
+
+242
+01:08:45,600 --> 01:08:49,600
+Arkadaşlarımızın...
+
+243
+01:08:49,876 --> 01:09:09,676
+İş arkadaşlarımızın görüşleri varsa, kaygıları varsa, eleştirileri varsa bunlara saygı göstermeliyiz. Kuruluş politikalarına uygunluk konusunda iş arkadaşlarımızı gerektiğinde uyarmalıyız. Ve eğer yetersiz kalıyorsak o zaman iş arkadaşlarımıza ya da diğer bilenlere bu konu uzmanlarına danışmayı bilmeliyiz.
+
+244
+01:09:17,876 --> 01:09:37,355
+Etik değerlerin geliştirilmesi için, bunların eskimemesi ya da unutulmaması için de çalışmalıyız. Burada da işte mesela yazılım geliştirme süreçlerine ilgili bilgilerimizi sürekli olarak geliştirmeliyiz. Günümüzde ne? Standart işte DevOps mesela, hani CICD. Bunları artık biliyor ve kullanıyor olmamız gerekir.
+
+245
+01:09:39,283 --> 01:10:04,683
+Güvenilir, düşük maliyetle yazılım üretme yeteneklerimizi geliştirmeliyiz. Dokümentasyon yeteneğimizi yazılımla ilgili mutlaka geliştirmeliyiz. Bu konudaki yasaları, yönetmelikleri, ölçütleri, metrikleri, standartları öğrenmeliyiz. Ve ön yargılı olmamalıyız, açık olmalıyız diyerek sekiz tane bilgisayar mühendisi etik ilkesini özetlemiş olalım.
+
+246
+01:10:07,283 --> 01:10:21,163
+Şimdi geldik bizim bilgisayar mühendisliği, meslek ve mühendislik etiği açısından. Bazı konu başlıklarını tekrardan açıklamak lazım. Önce bunlardan bahsedip sonra da yapılmaması gerekenleri söyleyeceğim.
+
+247
+01:10:21,163 --> 01:10:31,644
+Şimdi hepsini tek tek açıklamayayım. Siz sonrasında bir daha isterseniz okursunuz ama meslek etiği, mühendislik etiği açısından temel ilkeler şunlardı. Adalet.
+
+248
+01:10:32,756 --> 01:11:00,756
+Eşit, haklı, sorumluluk paylaşmak. Yöneticiysek de adil bir biçimde dağıtım yapmak. Eşitlik, bu da yine dürüstlük ve adaletle aslında bütün yarar, sıkıntı ve hizmetlerin eşit dağıtılması beklenir. Kayırma ya da ayrım yapılmaması. Dürüst doğru olmak, herkese karşı dürüst olacağız. Tarafsız olacağız, yansız bakacağız iş arkadaşlarımıza. Sorumluluk, belli bir görev isteniyorsa bizden bunu düzgün bir şekilde...
+
+249
+01:11:00,756 --> 01:11:26,296
+Sorumluluk sahibi olarak yerine getireceğiz. Bağlılık, mesleğimize bağlı olacağız. İlerlemelere istekli olacağız. Bunun için toplantıları, yayınlara, kendimizi geliştirmek için gerekli faaliyetlere katılımı sağlayacağız. Sevgi, işimizi seveceğiz ve iş arkadaşlarımızı seveceğiz. Bunların gelişmesi için de istek duyacağız. Hoşgörülü olacağız. Aslında hoşgörülü tam olarak şu. Kendinizi onun yerine koyun.
+
+250
+01:11:26,996 --> 01:11:44,255
+Hoşunuza gidiyor mu, gitmiyor mu? İşte burada hoşgörüyü en güzel bu şekilde özetleyebiliriz. Saygı, işte herkese karşı aslında tabii ki saygılı olacağız. İnsan oldukları için. Tutumlu olacağız, kaynakları verimli kullanacağız. Açık olacağız.
+
+251
+01:11:45,300 --> 01:12:11,639
+Görüşlerimizi açık bir şekilde ifade edeceğiz. Muğlak konuşmayacağız. Birileri de böyle yapıyor zaten demeyeceğiz. Arkadaş sen şunu yapıyorsun, sen şunu yapıyorsun. Bakın bu şekilde diye bunları göstereceğiz. Eleştirilerimizi de yine amacı olan eleştiriler, yansız eleştiriler, çıkarsız ve kişiye özel bir şekilde oluşturmamız gerekir. Bir emek varsa onun mutlaka karşılığını, hakkını ödeyeceğiz.
+
+252
+01:12:13,300 --> 01:12:40,139
+Tabii ödediğimiz miktarda emekle orantılı olacak. Yani bir liralık işe de on lira ödemeyeceğiz. Bir de tabii yasa ve etik dışı emirler, bunu yapacaksın şeklindeki emirlere karşı geleceğiz. Eğer yasalara ve etik kurallara ters olan istekler varsa bunlara direnme hakkınızın olduğunu her zaman unutmadan yol çalışmalarınıza ve yolunuza devam etmeniz gerekir.
+
+253
+01:12:41,300 --> 01:12:49,000
+İşte burada bunlar bizim etik ilkelerimiz, ana temel etik ilkelerimiz dedik ki, Sercan'ın da dediği gibi ilk kural saygı. Çok güzel.
+
+254
+01:12:49,720 --> 01:12:55,760
+Etik olmayan davranışlar nelerdir? Daha da arttırabilirsiniz ama hani temel olarak şunlardan bahsedebiliriz.
+
+255
+01:12:55,760 --> 01:13:07,200
+Bir, iş kalitesini önemsememek. Ürün sorumluluğu ve güvenliğini önemsememek. Kurum varlıklarını kötü biçimde kullanmak. Görevi ihmal.
+
+256
+01:13:07,956 --> 01:13:08,975
+Ayrımcılık
+
+257
+01:13:09,684 --> 01:13:33,224
+Eşit davranmamak, özellikle bir yönetici olarak çalışanlara eşit davranmamak ki bu çok zor bir iş gerçekten de. Birisi çok çalışıyorsa genellikle ya da işi iyi yapıyorsa ona verilir. Bir kişi iyi yapmıyorsa da yatıyorsa da ona az iş verilir. O yüzden eşit davranmak gerçekten kolay yapılabilen bir iş değil. Siz siz olun, burada da dikkatli olun ileride.
+
+258
+01:13:37,684 --> 01:13:51,944
+Bu da etik değil. Özel yaşama müdahale etik değil. Rüşvet, hediye, ağırlama gibi çıkar sağlayan ilişkiler etik değil. Yanlış bilgilendirme yapmak ya da bilgi saklamak etik değil.
+
+259
+01:13:53,332 --> 01:14:16,592
+Belgi ve raporlarda yine çıkar amaçlı değişiklikler. Mesela bir bilirkişi raporu yazıyorsunuz. Çıkar amaçlı. Hani ya sen hocam şurayı şöyle yazsan çok güzel olur işte. O seni de arkadan şöyle görürüz falan gibi şeyler. Etik değil. Yetkisini kötüye kullanmak. Ben güçlüyüm, benim dediğim olacak. Bana ne, bana ne demek. Etik değil. Gördük örneklerini, anlattık.
+
+260
+01:14:21,203 --> 01:14:36,283
+Çikolata kutuları falan. Bunlar doğru değil. Çıkar çatışması. Bakan örneğinden gittik. Kendi şirketinden bakanlığa ürün satmaması gerekir. Çıkar çatışması vardır orada.
+
+261
+01:14:38,323 --> 01:14:53,983
+Ya da şöyle düşünün, mesela ben kendi çevremden örnek vereyim ya da kendi işlerimden örnek vereyim. Diyelim ki ben bir firmaya danışmanlık yapıyorum. Onlarla proje geliştiriyorum. Ya da bir projelerinde bir şeylere üstlendim ve onlara yardımcı oluyorum.
+
+262
+01:14:54,443 --> 01:15:05,804
+Sonrasında bu firma TÜBİTAK'a başvuruyor. Başka bir projenin değerlendirilmesi için TÜBİTAK da beni hakem olarak atıyor. Bu çıkar çatışmasıdır. Bu doğru değildir. Çünkü ben yanlıyım. Onlarla çalışıyorum.
+
+263
+01:15:06,323 --> 01:15:26,663
+Onların her şeyini ya da iş yapış şekillerini de biliyorum. Onlara böyle daha yakın olacak şekilde bir değerlendirme yapmayı tercih edebilirim. Çünkü ben de oradan en nihayetinde para kazanıyorum. İşte o yüzden bu bir çıkar çatışmasıdır deyip benim bu hakikaten eminimini reddetmem lazım. Etik değil çünkü.
+
+264
+01:15:34,176 --> 01:15:35,076
+Etik değil.
+
+265
+01:15:35,891 --> 01:16:01,331
+Bekledim yine bir kopukluk olmuş olabilir. Rakiplerle ilgili bilgi toplanması sırasında etik dışı yöntemlere başvurmak, iş arkadaşlarınızı yalan ithamlarla ya da karalayıcı söylemlerle yermek, hakaret, kaba sözler özellikle kurumdakilere karşı, hele bir de zaten cinsel taciz. Bunlar hepsi etik olmayan davranışlardır.
+
+266
+01:16:03,891 --> 01:16:08,391
+Mantık bu şekilde. Ne doğru ne yanlışı düzgün bir şekilde tartabilmek açısından.
+
+267
+01:16:09,671 --> 01:16:15,731
+Şimdiki slide'mızda bilgisayar etiğinin 10 emri. Böyle şey gibi oldu biraz eski ahit gibi oldu.
+
+268
+01:16:16,471 --> 01:16:25,311
+Computer Ethics Institute, Washington DC'de bir enstitü. Bu şekilde muhseviliğe ithafen diyelim.
+
+269
+01:16:25,771 --> 01:16:31,891
+Hani onlarda da 10 emir var ya. İşte o 10 emri bilgisayar etiği için yorumlanıyor.
+
+270
+01:16:31,891 --> 01:16:45,971
+Ya da değiştirmiş ya da düzenlemişler. Hoşuma gitti koyduk. Kötü bir şey görünmüyor. Hepsi aslında çok mantıklı. Neler varmış bakalım. Yani Bilgisayar Etiği Enstitüsü on emir olarak neleri buyurmuş?
+
+271
+01:16:47,171 --> 01:16:59,891
+Bir, bilgisayarı diğer insanlara zarar vermek için kullanma. Bu direkt kamu farkındasınız değil mi? Onu başka bir dille, daha böyle ne derler, yukarıdan bir dille söylemeye çalışır.
+
+272
+01:16:59,891 --> 01:17:07,891
+İki, başkalarının bilgisayar çalışmalarını engelleme. Burada da yine aslında iş arkadaşları, rakipler gibi bunları...
+
+273
+01:17:08,496 --> 01:17:33,195
+Bunlarla adil bir şekilde çalış, rakip ol demeye çalışıyor. Üç, başkalarının bilgisayar dosyalarını araştırmaya kalkma. İznin olmayan şeylere burnunu sokma. Benim maillerimi okuma gibi. Dört, bilgisayarı hırsızlık amacıyla kullanma. Hackerlık kötüdür demiş oluyor. Beş, yalancı tanıklık için bilgisayarı kullanma.
+
+274
+01:17:33,908 --> 01:18:01,908
+Altı, parasını ödemediğin yazılımı kopyalama ve kullanma. Lisans bedeli, hak hukuk yine burada. Altıncı madde de geldi. Yedi, başkalarının bilgisayar kaynaklarını izin almadan ve ödemeyi yapmadan, gerekli ödemeyi yapmadan kullanma. Bu işte al şu programı kullan, onun karşılığında da ben bitcoin için senin CPU'nu şöyle şöyle kullanacağım gibi düşünebilirsiniz. Sekiz, başkalarının tehlif çalışmalarını üstüne konma. Fikri ve sinayi hakkında.
+
+275
+01:18:01,908 --> 01:18:13,888
+Dokuz, yazdığın programın veya tasarladığın sistemin sosyal sonuçlarını düşün. Yine kamuya gidiyoruz. Ya da atom bombası yapmamayı çalışıyoruz.
+
+276
+01:18:13,888 --> 01:18:28,308
+On, bilgisayarı her zaman insanları düşünerek ve insanlara saygı göstererek kullan. Hem çevre, hem kamu, hem toplum, hem insan önceliğiyle bilgisayarı kullanmamız gerekiyor.
+
+277
+01:18:29,235 --> 01:18:34,175
+Bu şekilde bir 10 emir tasarlamışlar. Benim hoşuma gitti. O yüzden sizlerle de paylaştım.
+
+278
+01:18:35,123 --> 01:19:03,123
+Şimdi geldik davranışlarımızın etik açıdan yargılanmasına. Şimdi ne demek bu? Önce biz ne dedik? Meslek ve mühendislik etiği nedir? Bunu oluşturan bileşenler ve altındaki maddeler nelerdir? Bunlara baktık. Sonrasında işte bir üretimde mesela bir yazılım geliştirilirken ne gibi görev sorumluluklarımız var? Etik olarak nasıl davranmamız lazım? Bunlara baktık. Şimdi sorumluluklarımızı yerine getirmiyoruz diyelim. Etik kuralları çiğniyoruz.
+
+279
+01:19:03,123 --> 01:19:31,123
+Şimdi etik kuralları çiğneyince ne oluyor? Ona bakalım. Ya da nasıl yargılanıyoruz? Onlara bakalım. Öncelikle tabii neden etik kurallar çiğnenir? Değişik sebepleri olabilir. Bir, hırs olabilir. Meslek hırsı olabilir. Rakiplerin önüne geçme hırsı olabilir. Para kazanma hırsı olabilir. Bu bir tane işte Sezercik filmi vardı yine. Eminim hatırlıyorsunuzdur, görmüşsünüzdür. Neydi o? Eşeği açık arttırmayla satıyorlardı. Ne diyordu? Bineceğim üstüne vuracağım.
+
+280
+01:19:31,123 --> 01:19:38,684
+Vuracağım kırbacı, vuracağım kırbacı diyordu. Böyle bir hırs, her şey benim olacak hırsı. Bu etik kuralları çiğnemenin temel bir sebebidir.
+
+281
+01:19:38,684 --> 01:19:59,123
+İki, yönetim gücünü, erkini, erki güç, elinde bulundurma isteği, ben yöneteceğim, patron, ben olacağım, ezeceğim hepsini. Ondan sonra deneyim eksikliği olabilir, bencillik olabilir, teknik yetersizlik olabilir, yasaları, yönetmelikleri ya da standartları bilgisayar.
+
+282
+01:19:59,123 --> 01:20:21,123
+Bilmemek olabilir. Ki bu aslında doğruda karşılanmaz. Eğer bir mesleği yapıyorsanız onun yasalarını, yönetmeliklerini ve standartlarını bilmekle yükümlüsünüz demektir. Bir olayın birini ya da bir kuruluşu korumak amacıyla gizlenmesi ya da gizlemek için tanıklara menfaat sağlanması olabilir. Bunun da örneklerini zaten biliyorsunuz.
+
+283
+01:20:22,644 --> 01:20:50,644
+Özellikle ülkemizde sıklıkla duyuyorsunuz ya da siyasi görüş, etik kuralları çiğnemenin bir nedeni olabilir. Aslında burada söylenecek en güzel şey şu, bir yöneticiye, mühendise ya da uygulamayıcıya, devrede tutan ya da kullanana o anda karşılaştığı durum hakkında bir karar verecek. Bu etik mi değil mi? Şu sorulara cevap verin. Eğer bu sorulara düzgün cevap verebiliyorsanız etik de.
+
+284
+01:20:50,644 --> 01:21:18,224
+Eğer bu sorulara düzgün cevap veremiyorsanız, kaçamak cevap veriyorsanız ya da yanlış cevap veriyorsanız o zaman bu davranış ya da bu karar etik değildir diyebiliriz. İlk soru şu, doğru mu? Bu ne demek? Verilecek karar doğru mu? Tabii bir kararın doğru olup olmadığına karar vermek çok zor ama şöyle düşünebilirsiniz bu soruyu. Aynen şöyle bakın. Bu kararı bir başkası verse sen rahatsızlık duyar mısın?
+
+285
+01:21:18,804 --> 01:21:41,364
+Eğer sen başkası aynı kararı verdiğinde rahatsızlık duymaz isen o zaman bu karar doğrudur diye değerlendirebilirsiniz. Bir alternatif de varsa eğer geçmişte yaşanan olayların sonuçlarına bakıp iyi mi olmuş kötü mü olmuş şeklinde değerlendirmeyle verdiğiniz kararın doğru olup olmadığını tartabilirsiniz etik açıdan.
+
+286
+01:21:41,779 --> 01:22:03,579
+İkinci soru, adil mi? Yine verdiğimiz karar acaba adaletli mi sorusunu şöyle sorabiliriz kendimize. Yine ben bir eyleme karşı bir karar verdim. Acaba bu karar bana karşı uygulansaydı ben bu kararı adil bulur muydum? Yoksa hocam ne yaptın mı derdim?
+
+287
+01:22:03,579 --> 01:22:09,579
+İşte bu çift taraflı düşünme aslında adalet açısından. Verdiğiniz kararın adil olup olmadığını...
+
+288
+01:22:09,779 --> 01:22:34,359
+Belirlemenizi sağlayacak bir ikinci soru. Burada bizim kültürümüzde örf ve adetlerimizde güzel bir söz var. Şöyle söylüyor. Kardeşim bana babamın mirasından kendine istediği kadar pay versin.
+
+289
+01:22:34,739 --> 01:22:56,079
+Ne demek bu? Yani çift taraflı düşünmek. Mesela miras paylaşılacak. İki kardeş var. Diyelim üç tane tarla var. Eğer kardeşiniz iki tarlayı kendine istiyor, bir tarlayı size veriyorsa adil davranmalarını uygun gör.
+
+290
+01:22:56,399 --> 01:23:14,859
+Yani sen kendine iki tarla istiyorsan bana da iki tarla uygun görmelisin. Eşit olmalıyız, adil davranmalıyız. İşte bu cümle aslında hani kültürümüzde de var dedim ya o yüzden bizim adaletli karar vermemizi sağlayacak güzel bir örnek. Sen kendin için ne kadar istiyorsun bana da o kadarını ver.
+
+291
+01:23:15,572 --> 01:23:42,972
+Güzel bir alfasına bakarsanız. Üçüncü soru, etik açıdan düzgün bir karar veriyor muyuz bunu test etmek için? Verilecek karardan birisi zarar görecekse, zarar görecek olan kimdir? Bu böyle şey, faydacılık kuramı aslında. Bu kavrama uygun bir soru. Yani verilecek karardan kim kazançlı çıkacak ya da kim zarar görecek? İkisini çift taraflı olarak sorgulamış oluyoruz.
+
+292
+01:23:43,572 --> 01:23:58,512
+Eğer zarar görecek olan kişi ya da fayda kazanç sağlayacak kişi gerçekten bunu hak ediyor mu? Sorusunun da yanıtına bakmamız gerekiyor burada. Eğer hak ediyorsa o zaman kararımız doğrudur diyebiliriz.
+
+293
+01:23:58,512 --> 01:24:08,112
+Dördüncü soru, eğer verdiğiniz karar basında ön sıralarda yer alırsa kendinizi rahatsız hisseder misiniz?
+
+294
+01:24:09,108 --> 01:24:13,788
+Alamos Gold Madencilik biliyorsunuz. Adam CEO'su çıktı.
+
+295
+01:24:14,323 --> 01:24:42,183
+Bilmem, 30 yıldır bekliyoruz, 3-5 ay daha bekleriz dedi. Değil mi? Yani verdiğiniz bir karar var. Ben bu ormanları keseceğim, ben bu kaz dağlarını kel bırakacağım. Şimdi bu da basında ön sıralarda yer alıyor. Acaba siz bundan kendinizi rahatsız hisseder misiniz, hissetmez misiniz? Eğer verdiğiniz karardan dolayı rahatsız olmayacaksanız, basında yer almasından, herkesin bunu böyle gazetelerin birinci sayfasında çarşaf çarşaf görmesinden rahatsız olmayacaksanız, o zaman...
+
+296
+01:24:42,323 --> 01:24:51,123
+Ne diyebiliriz? Şey, tamam ya da bu kararı niye aldım? Şeklinde yanıtımı düzgün bir şekilde verebilirim demektir.
+
+297
+01:24:51,935 --> 01:25:12,875
+Beşinci sorumuz, aldığımız karar, çevrenizdeki yakınlarınızı rahatsız eder mi? Şimdi eğerse, evetse, pardon eğerse dedim ya, evetse bu sorunun cevabı eğer, sıkıntı var demektir. Aldığımız kararı bir kere daha düşünmeliyiz. Çünkü aldığım karar çevremdeki yakınlarımı rahatsız eder demiş oluyor.
+
+298
+01:25:19,935 --> 01:25:22,015
+Bu kararın oluşturacağı davranışlar.
+
+299
+01:25:22,579 --> 01:25:42,760
+Toplumsal davranışlar mesela ne olabilir? Bunları aslında sezebiliriz ya da öngörebiliriz. Kötü bir şey öngörüyorsak ya da böyle bir durumdan kuşkulanıyorsak, ya bu kararın sonuçları kötü olabilir, şöyle şöyle şeyler olabilir diyorsak bunu mutlaka düzgün bir şekilde oturup tartışmalı ve belki de kararımızı gözden geçirmeliyiz.
+
+300
+01:25:42,760 --> 01:25:50,260
+Yani yargı konusunda da doğru muyuz, yanlış mıyız buna dikkat etmemiz gerekir. Son olarak.
+
+301
+01:25:50,579 --> 01:26:09,659
+Bugün şeyden de bahsedeyim ki zaten saatte buçuğa geliyor. Ara da vermedik. Zaten 10 dakika sonra dersin süresi bitmiş olacak. İyi ki yeni konuya geçmeme kararını vermişim diyeyim. Bunu çok konuştuk yine. Uzun uzun anlattık her şeyi. Ama zevkli oluyor. Bilmiyorum siz ne düşünüyorsunuz.
+
+302
+01:26:17,140 --> 01:26:36,659
+Bilişim sektörü açısından düşündüğümüzde şunu bir tavsiye olarak öneriyorum. Yarın öbür gün inşallah şirket sahibi olursunuz, patron olursunuz, yönetici olursunuz ve bir meslektaşınızı, bir bilgisayar mühendisliğinin ya da başka bir birimi birisini işe alıyorsunuz.
+
+303
+01:26:38,644 --> 01:26:44,503
+İşe alırken bir kişiyi aslında şurada bahsettiğimiz kuralları yazılı olarak vermelisiniz.
+
+304
+01:26:45,063 --> 01:26:51,423
+Ve altına da bunları okudum ve anladım şeklinde ıslak imza atmasını istemelisiniz bence.
+
+305
+01:26:51,423 --> 01:26:57,743
+Bu sayede etik olmayan davranışlarda bulunduğunda çalışan bunları cezalandırabilirsiniz.
+
+306
+01:26:57,903 --> 01:27:02,663
+Kuruluşunuzun etik kurulu tarafından bir ceza verilmesini sağlayabilirsiniz.
+
+307
+01:27:03,743 --> 01:27:06,644
+Kurumlara baktığınızda özellikle kamu kurumlarına...
+
+308
+01:27:06,644 --> 01:27:17,703
+Baktığınızda mesela bunlar biraz daha tabii ki tanımlı. Yönetmeliklerle, mevzuatlarla tanımlı. Örneğin şu anda sizin için önemli olan yönetmelik nedir? Yıldız Teknik Üniversitesi Öğrenci Yönetmeliği.
+
+309
+01:27:18,228 --> 01:27:34,287
+Öğrenci İşlerinin sayfasında var. İşte onun mesela ilgili bölümüne geçerseniz disiplin yönetmeliği diye bir şey var. Ne yapıyor disiplin yönetmeliği? Sizin yanlış etik dışı ya da kurallara uymayan davranışlarınızın cezalarının neler olması gerektiğini açık ve net bir şekilde ortaya koyuyor.
+
+310
+01:27:46,228 --> 01:28:11,567
+Uzaklaştırma alırsınız gibi. Ya da kopya çekerseniz kınama alırsınız ya da neyse bir hafta uzaklaştırma alırsınız gibi. Bunların hepsinin karşılıkları belli. O yüzden işe alırken de tavsiyem bunları okuyup anlattırın ve imza alın. Yani sonrasında dedikodu ya da bilgi çalma ya da bomba yerleştirme gibi bir şey olduğunda en azından çalışanı sorumlu tutabilirsiniz. Nedir bunlar? İşte ayrımcılık.
+
+311
+01:28:13,716 --> 01:28:18,516
+Önyargılı tutumda bulunarak davranış sergileme diyebiliriz.
+
+312
+01:28:18,516 --> 01:28:20,155
+Ayrımcı olmayacak.
+
+313
+01:28:21,155 --> 01:28:22,036
+Kayırma.
+
+314
+01:28:23,283 --> 01:28:44,623
+Aile olabilir, akrabalık olabilir, arkadaşlık bağları olabilir. Yani parasal olmayan çeşitli etkenlere bağlı olabilir. Belli kişilere iş yerinde ayrıcalık tanıma. Yani bu benim arkadaşım, bu benim kanka muhabbetle. Bunu kayırayım. Bu işi yapmasın. Öbürü daha çok çalışsın. Hem ayrımcılık hem de kayırma yapmış olduk.
+
+315
+01:28:45,395 --> 01:28:52,376
+Rüşvet, para, mal gibi, hediye gibi, hediye kisvesi altında maddi çıkarlar karşılığında.
+
+316
+01:28:53,460 --> 01:29:14,020
+Bunu hem verene hem alana karşı aslında bizim bir yaptırım uygulamamız gerekir. Bunlara ayrıcalıklı davranmamalıyız. Rüşvet verene de alana da. Yıldırma, yönetim erkiği elinizde, gücü elinizde. Siz de işte bunu mesela bu gücü birilerine baskı unsuru olarak kullanıyorsunuz. Bu da yanlış.
+
+317
+01:29:17,427 --> 01:29:36,027
+Görev safsaklama, iyi yapmama, uzatma, geciktirme, sömürü. Bu da kötü bir şey tabii. Bir çalışanı ya da başka bir çalışanı ya da bir kaynağı kendi çıkarınız için kullanıyorsunuz.
+
+318
+01:29:36,368 --> 01:29:59,908
+Kendi işinizi de ona yaptırıyorsunuz. Ya da siz mesela bir sunucu var diyelim şeyde. Onu kendi özel işleriniz için kullanıyorsunuz. Bunlar da sömürüye girer. Hem kişi hem de kaynak sömürüsü. Bencillik, bir kişinin sadece kendini ya da kendi çıkarlarını düşünmesi. Burada biliyorsunuz ekip çalışması esas demiştik. Top ve kamu.
+
+319
+01:30:00,000 --> 01:30:21,659
+Hatta şirketin tamamı esas demiştik. Bir diğeri şiddet ve saldırganlık. Bu zaten kesinlikle kabul görmez etik dışı. Kaba ve sert davranışlar. Fiziksel hatta, yani sözel evet ama hatta fiziksel. Bunların hepsi bunun başlığının altına girer. Hakaret ve küfür. Etrafınızdakilere hakaret ve küfür ediyorsanız bu da yine aslında saldırganlıktır.
+
+320
+01:30:22,804 --> 01:30:44,804
+Öncelikle cinsel taciz. Bunu eylem olarak da düşünebilirsiniz ama sözlü cinsel taciz de bu işin içinde var. Yine etik değil. Hatta zaten yasalarla da suç biliyorsunuz. Yetkiyi kötüye kullanmak. Mesela özellikle bir yöneticisiniz ve elinizde bir yetki var, yönetim gücü var. Bunu kendinize ya da...
+
+321
+01:30:45,460 --> 01:30:58,340
+Kendinize çıkar sağlayacak ya da kuruluşa zarar verecek şekilde kullanıyorsunuz. Yetkinizi kötüye kullanıyorsunuz. Bu da yine etik olmayan bir davranış. Dedikodu.
+
+322
+01:31:00,467 --> 01:31:28,248
+Bu da dedikodu işte. Neyini anlatayım? Gerçek olduğunu bilip bilmeden başkaları hakkında konuşmak. Bu da etik değil. Dedikodu yapmayın. Yani iş yerinde. Karalama. Bir iş arkadaşınızı ya da yöneticinizi kınamak, kötülemek ya da suçlamak eylemleri. Yöneticilerle daha iyi olanakları elde etmek için etik olmayan ilişkiler kurmak. Bunu çok çeşitlendirebilirsiniz. Her türlü ilişki olabilir.
+
+323
+01:31:28,467 --> 01:31:37,887
+Bilgi çalmak ve bilgi sızdırmak. Yine iş yerinin sırları da olabilir bunlar. Ama herhangi bir değerli bilgiyi çalmak ya da bunları başkalarına açıklamak yine etik değildir.
+
+324
+01:31:38,676 --> 01:32:06,676
+Saatli bomba yerleştirmek. Bunlardan çok uzun konuştuk. Böyle bir şey sanırım suçtur. Etik değildir ve suçtur. Kötüleme, mesela iş yerinizi, hizmetlerini ya da ürünlerini toplum içinde kötülemek. Ya biz aslında bu ürünü yapıyorduk, bu ürün kötü. Bu iyi bir şey değil. Etik davranış değil. Son olarak da savurganlık. Sömürüye biraz yakın diyebiliriz. Kaynakları bilerek ve isteyerek tutum suçlu.
+
+325
+01:32:06,676 --> 01:32:20,155
+Bu şekilde kullanmak etik olmayan bir davranış olarak karşımıza çıkar çalışanlar açısından. Evet, burada söyleyeceklerimiz bu kadar.
+
+326
+01:32:20,851 --> 01:32:27,791
+Meslek ve Mühendislik Etiği açısından da başlıkları bu şekilde işlemiş olalım.
+
+327
+01:32:28,511 --> 01:32:37,491
+Şimdi gelecek ders şuraya tabii vize ara sınav yazacağız. Ondan sonra da 9. haftada korumsal etik ile yolumuza devam ederiz.
+
+328
+01:32:38,251 --> 01:32:38,931
+Var mı sorunuz?
+
+329
+01:32:40,171 --> 01:32:42,451
+Hocam ben vize ile ilgili şey sorabilir miyim?
+
+330
+01:32:43,071 --> 01:32:43,831
+Bekliyordum bunu.
+
+331
+01:32:44,144 --> 01:32:58,664
+Yok, 12 ile bir arası görünüyor da vize. Sabah da bilgisayar donanma vizesi var. Tam 12'de bitiyor da. Sınav bir saat olmayacaktı süresi. Onu 12 çeyrek gibi başlatmanız mümkün mü? Ara olması açısından.
+
+332
+01:32:59,315 --> 01:33:02,735
+Bilmiyorum şu anda kaç dakika olacağını. Çünkü daha soruları hazırlamadım.
+
+333
+01:33:03,195 --> 01:33:04,135
+Tamam, teşekkür ederim.
+
+334
+01:33:05,095 --> 01:33:07,715
+Diğer sınav 12'ye kadar sürecek mi? Kesin mi?
+
+335
+01:33:08,235 --> 01:33:10,615
+Onu bilmiyorum ama muhtemelen sürer.
+
+336
+01:33:10,615 --> 01:33:13,715
+Kesin sevgilisiniz siz. Erkan Hoca yani bırakmaz onu.
+
+337
+01:33:14,612 --> 01:33:22,731
+Ben, yani bence siz bir görüşün Erkan Hoca'yla, tamam mı? Ne kadar süreceğini bir tam öğrenin. Ondan sonra bu pazarlığa başlayalım bence.
+
+338
+01:33:23,131 --> 01:33:24,231
+Tamam hocam, teşekkür ederim.
+
+339
+01:33:24,291 --> 01:33:28,011
+Değil mi? Yani siz önünü temizlemeden arkasına şey yapıyorsunuz, olmaz ki öyle.
+
+340
+01:33:28,511 --> 01:33:28,771
+Tamam.
+
+341
+01:33:29,431 --> 01:33:36,112
+Yani madem ki birden ene doğru gidiyorsunuz, önce birden başlayın. Evet. Başka?
+
+342
+01:33:36,756 --> 01:33:42,856
+Hocam bu derslerin konusunda şeye girecek miyiz? Kripto paralara, onların etikliği.
+
+343
+01:33:43,196 --> 01:33:46,376
+Yok, girmeyeceğiz. Niye girelim? Ne yapacağız orada? Ne işimiz o?
+
+344
+01:33:46,616 --> 01:33:53,976
+Hocam şu an çalkan, çalkan söyleyemedim. Şu an biraz böyle şey var ya, hani hocam tartışmalı bir konu ya.
+
+345
+01:33:55,596 --> 01:33:56,116
+Yani?
+
+346
+01:33:57,140 --> 01:34:03,340
+Aslında bizim dersimiz kapsamında, bizim mesleki şeyimizle ilgileniyor.
+
+347
+01:34:03,340 --> 01:34:04,539
+Etik kuralları.
+
+348
+01:34:04,539 --> 01:34:07,039
+Neresi ilgili? Finans sektörü o ya.
+
+349
+01:34:07,039 --> 01:34:08,240
+Ya tabii de...
+
+350
+01:34:08,240 --> 01:34:11,039
+Finansal regulasyonlar, onlar bizi bağlamaz ki.
+
+351
+01:34:11,039 --> 01:34:15,039
+Üreticileri developer olarak geçtiği için söyledim.
+
+352
+01:34:16,340 --> 01:34:38,239
+Haa, şey, miner muhabbeti. Onu mu diyorsun? Hem miner hem yeni token çıkartan insanlar, bunu piyasaya süren insanlar. Yok, onlara girmiyoruz ya. Elektrik kullanım açısından doğru değil, evet. Çünkü çok yakıyor. Yani bir bilmem kaç bitcoin üreteceğim diye.
+
+353
+01:34:38,931 --> 01:34:53,887
+Çok daha fazla elektrik harcıyorsunuz. Haberler de kaç kere de çıktı biliyorsunuz. Adam atmış kancayı yüksek gerildim hattımı dimlediğim neyse işte elektrik hattını oradan...
+
+354
+01:34:53,887 --> 01:35:13,988
+Ahırdan bozma yere koymuş bir sürü sunucuyu. Şakır şakır işte bitcoin mining yapıyor. Ama elektrik bedava. Ekim'in bedavası bizim cebimizden çıkan paralarla bedava yani. Öyle etik mi olur? Öyle şey mi olur? Olmaz tabii ki. Onun mine ettiği haram bitcoin oluyor. Hak yemiş oluyor diyelim.
+
+355
+01:35:16,988 --> 01:35:17,748
+Evet.
+
+356
+01:35:18,963 --> 01:35:41,003
+Hocam ben bir soru soracaktım. Hanginiz soruyor şu anda? İkinizin sesi aynı anda geldi. Arkadaş sorsun diye. Sor bakayım. Hocam, bize çoktan seçmeli olacak değil mi? Bilmem. Şöyle, yani 160 nüfus olduğunu göz önünde bulundurarak klasik bir sınav yapmayacağımı söyleyebilirim. Tamam hocam, teşekkürler.
+
+357
+01:35:41,359 --> 01:36:03,979
+Çünkü aslında çok güzel yorum soruları var. Mesela bir case'i veririm. Ondan sonra bunu şu etik bakış açısı ya da şu maddeye göre yorumlayın. Bu doğru mu, bu yanlış mı? Çok güzel şeyler var da maalesef 160 kişinin kağıdını okuyamam ki. Okurum da herhalde 2 ay sürer. O yüzden çoktan seçmeli.
+
+358
+01:36:04,532 --> 01:36:13,032
+Çoktan çok seçmeli, çoktan doğrulu yanlışla seçmeli, boşluk doldurmalı gibi düşünebilirsiniz sınavı. İlla hepsi şık olmaz.
+
+359
+01:36:14,332 --> 01:36:17,192
+Yine 15 dakikada 25 soru geliyor o zaman.
+
+360
+01:36:19,052 --> 01:36:26,772
+Yok, 15 dakikadan uzun sürer. Yani onu söyleyebilirim 15 dakikadan uzun süreceğine.
+
+361
+01:36:28,051 --> 01:36:47,252
+Evet, bu kadar. Yani söyleyeceğimizi hakkında. Dediğim gibi daha soruları hazırlamadım. O yüzden şu anda ne soracağımı tam olarak kurgulamış değilim. Ama derste anlattıklarımızdan sorumlusunuz. Başka hiçbir şey değil. Yani slide'larda olmayan, benim konuşmadığım hiçbir şey yok içinde.
+
+362
+01:36:49,091 --> 01:36:50,811
+Slide'ları paylaşır mısınız?
+
+363
+01:36:52,072 --> 01:36:53,032
+Paylaşmadım mı?
+
+364
+01:36:53,912 --> 01:36:54,912
+Ben bulamadım da.
+
+365
+01:36:55,796 --> 01:36:57,876
+Nereye kadar paylaştım? Bir ona bakalım.
+
+366
+01:37:01,036 --> 01:37:05,315
+Nerede bu ders? Bir dakika bulacağım şimdi.
+
+367
+01:37:07,756 --> 01:37:22,056
+Buldum. Duvar. Duvarda. Bakıyorum. Duvarda hiç slide koymamış mıyım ben ya? Niye söylemiyorsunuz?
+
+368
+01:37:24,532 --> 01:37:26,051
+Hiç söylemiyorsunuz ha.
+
+369
+01:37:30,492 --> 01:37:34,011
+Slide'ları duvara yapıştırırım, tamam?
+
+370
+01:37:35,751 --> 01:37:37,072
+Bugün içinde yaparım.
+
+371
+01:37:40,291 --> 01:37:41,351
+Peki.
+
+372
+01:37:42,431 --> 01:37:45,572
+Slide'ların kaynağını zaten söylemiştim. İndirenleriniz olmuştur.
+
+373
+01:37:45,572 --> 01:37:51,051
+Eşref Hoca'nın sayfasından ama ben sadece çok ufak modifikasyonlar yapıyorum üzerinde.
+
+374
+01:37:52,787 --> 01:37:56,347
+Tamam, peki. O zaman başarılar diliyorum.
+
+375
+01:37:56,707 --> 01:37:59,407
+Hocam, veri yapılar ödeviyle ilgili bir soru sorabilir miyim kısaca?
+
+376
+01:37:59,407 --> 01:38:04,007
+Hayda, ne soracaksın? Ders bitti bu arada, dileyen çıkabilir.
+
+377
+01:38:04,967 --> 01:38:15,427
+Dökümanlar farklı da sizin yayınladığınız dokümanda bu dir komutu için işte bütün dikşinareleri gösterin ağaç yapısıyla denmiş de bu bütün dikşinareleri demek ne demek?
+
+378
+01:38:18,247 --> 01:38:18,967
+Anlamadım.
+
+379
+01:38:19,380 --> 01:38:20,079
+Bir dakika.
+
+380
+01:38:20,699 --> 01:38:25,579
+Dir komutunda hocam, bütün dikişineleri gösteriyor. Direktörleri gösteriyor.
+
+381
+01:38:25,579 --> 01:38:26,139
+Evet.
+
+382
+01:38:26,500 --> 01:38:32,859
+Evet, gösteriyor. Yani bu komuttan bir şeyin altındaki klasörlerin altındaki klasörleri de mi göstereceğiz?
+
+383
+01:38:33,380 --> 01:38:36,460
+Yok, hayır. Sadece o seviyedekileri göstereceksiniz. Derste anlattım ya.
+
+384
+01:38:36,979 --> 01:38:42,300
+Bütün deyince bir de dokümanlar farklı. Diğer hocada bütün diyememiş, farklı bir şekilde ifade etmiş orayı.
+
+385
+01:38:43,091 --> 01:39:06,391
+Belki ufak bir şey eklemişlerdir. Bilmiyorum ben eklememiş olabilirim. Anlattım nasıl olsa diye. Peki. O zaman başarılar tekrardan. Şunu da stop edelim. Evet. Oldu. Görüşmek üzere. Kendinize iyi bakın. Şimdiden başarılar.
