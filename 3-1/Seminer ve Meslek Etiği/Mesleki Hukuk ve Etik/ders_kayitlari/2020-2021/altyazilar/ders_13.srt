@@ -1,0 +1,1971 @@
+1
+00:00:08,147 --> 00:00:09,108
+Hocam merhaba.
+
+2
+00:00:13,779 --> 00:00:14,639
+Merhaba [öğrenci].
+
+3
+00:00:15,000 --> 00:00:18,160
+Derse başlamadan veri yapıları ile ilgili bir soru sorabilir miyim nasılca?
+
+4
+00:00:18,599 --> 00:00:19,059
+Sor.
+
+5
+00:00:19,719 --> 00:00:26,939
+Hocam, biz o gün konuştuktan sonra size cevap gelmeyince başladım. Ben P5 üzerinden yaptım. Yani sonuna kadar da geldim neredeyse.
+
+6
+00:00:27,280 --> 00:00:31,679
+Örnek resimlerim var, ekrana bastırma var. Şimdi bir daha P2'ye dönmek zorunda mıyım?
+
+7
+00:00:32,060 --> 00:00:34,020
+Yani direkt onların not halinde yollasam.
+
+8
+00:00:34,020 --> 00:00:37,100
+P2 yapsan daha iyi olur. Daha basit ya, onu daha şey yaptık.
+
+9
+00:00:37,524 --> 00:00:44,103
+Hocam basit ama belli bir ara kadar ilerlemişim. Bir de işin algoritmik tarafı zaten çok zor değil. İşin dosya okuma kısmı çok zor.
+
+10
+00:00:44,184 --> 00:00:47,544
+Ama vereceğimiz örnekler P2 olacak. O yüzden sıkıntı olur.
+
+11
+00:00:48,084 --> 00:00:51,724
+Peki kendi örnekleri mi koysam? Benim P5 var, resim onlarda.
+
+12
+00:00:54,783 --> 00:00:58,724
+Yok, test imajlarımız var. Kodunuzu patlatmaya yönelik.
+
+13
+00:00:59,892 --> 00:01:08,731
+Olmaz mı hocam? O dosya okuma işlemleri en yerini 10 görünce, en yerini 10 olarak alması falan çok uğraştım onlarla.
+
+14
+00:01:10,292 --> 00:01:12,632
+Olsun, deneyim olmuş. Yaparsın sen.
+
+15
+00:01:13,091 --> 00:01:16,132
+Zaman yok ki hocam. 4 gün var, başka projeler de var.
+
+16
+00:01:16,491 --> 00:01:17,912
+Yaparsın, yaparsın. Hadi bakalım.
+
+17
+00:01:18,739 --> 00:01:21,379
+İstersen öyle versen bilirsin. Bir şey diyemeyeceğim.
+
+18
+00:01:21,420 --> 00:01:22,700
+Çok büyük bir şey yaratır mı?
+
+19
+00:01:23,899 --> 00:01:29,280
+Şöyle, sonuçta değerlendirecek arkadaşlar P2'lerle değerlendirecekler.
+
+20
+00:01:30,179 --> 00:01:33,379
+Dediğim gibi elimizde P2 imajları var. Onlarla değerlendirecekler.
+
+21
+00:01:34,579 --> 00:01:41,340
+P5, ancak sen böyle yaptın ve benim örnek dosyalarım bunlardır dersen öyle olur.
+
+22
+00:01:42,323 --> 00:02:00,263
+Bu patlatmaya yönelttiğiniz kodlar kontrollerle alakalı mı? Yok şey işte ya hani böyle blok halinde siyahın içinde beyaz falan kenara dayalı şeyler gibi öyle düşün. Hani satır patlamada bakalım ne oluyor ne bitiyor muhabbetleri.
+
+23
+00:02:01,683 --> 00:02:02,883
+Anladım hocam ya çok iyi.
+
+24
+00:02:02,883 --> 00:02:03,803
+Yani şey şöyle.
+
+25
+00:02:03,863 --> 00:02:05,023
+Post yokuma işlemleri.
+
+26
+00:02:06,543 --> 00:02:08,543
+Yani şöyle şey yapayım.
+
+27
+00:02:10,259 --> 00:02:28,759
+Dersle de alakalı değil ama şöyle düşün. Mesela şu bir imaj. Onun içine mesela ne bileyim şöyle bir şey koyuyoruz. Ki sen hani şurada bilmem kaç tane yeşil, bilmem kaç tane mavi, bilmem kaç yeşil, bilmem kaç mavi. Şuradaki satır giriş hatlarını falan düzgün yapabiliyor musun diye.
+
+28
+00:02:36,819 --> 00:02:40,280
+Falan. Böyle düşün. Böyle imajlarla test edeceğiz yani.
+
+29
+00:02:41,060 --> 00:02:43,439
+Yani doğru okuduğumuzu test etmek amaçlı bunu yapacağız.
+
+30
+00:02:43,439 --> 00:02:44,319
+Evet, aynen öyle.
+
+31
+00:02:45,860 --> 00:02:49,479
+Normalde P5'e ne fark ediyoruz ki? Zaten ben ekran olarak px'a px'a bastırıyorum.
+
+32
+00:02:49,479 --> 00:02:52,640
+Elimizdekiler P2. Bizim imajlarımız P2.
+
+33
+00:02:54,099 --> 00:02:57,580
+Peki hocam, asistan hocayla hangi hocayla görüşmem gerekiyor?
+
+34
+00:02:58,939 --> 00:03:17,819
+Şimdi Betül Hoca var. Dersle Sevgi Hoca var. Fuat Hoca var. Üçü ilgileniyor. Yani üçü dönüştürerek, paylaştırarak grupları okuyorlar. Şu anda kim hangi grubu okuyacak bilmiyorum. Yani onu söyleyeyim.
+
+35
+00:03:19,668 --> 00:03:22,848
+Yani bütün ödevleri Shift.Ede okutturuyoruz.
+
+36
+00:03:23,288 --> 00:03:25,748
+Tamamdır hocam. Ben bir mail atayım.
+
+37
+00:03:25,748 --> 00:03:28,288
+Artık istersen onlarla bir görüş. Tamam.
+
+38
+00:03:29,168 --> 00:03:32,308
+Peki, o zaman dersimize geçelim arkadaşlar.
+
+39
+00:03:33,128 --> 00:03:37,207
+Bugün 14. haftamız. Yüzlük Yüzlük Kuyruğuna geldik.
+
+40
+00:03:37,908 --> 00:03:40,188
+Dönemi kapatıyoruz artık hayırlısıyla.
+
+41
+00:03:40,723 --> 00:03:54,804
+Umarım mesleki, hukuk ve etik konusunda yeterince bilgi sahibi olmuşsunuzdur. Bugün son haftamızda yasalara bakacağız. Bilişim hukukuna geçen hafta eğilmiştik. Adli bilişim özellikle başlığı üzerinde durmuştuk.
+
+42
+00:03:54,804 --> 00:04:08,704
+Şimdi de ülkemizde, tabii bizim mesleğimize özel hukuka doğru gidecek şekilde genelden başlayacağız. Bilişimle alakalı hangi yasalar, hangi maddeler var? Hızlıca.
+
+43
+00:04:08,723 --> 00:04:24,104
+Ondan üzerinden geçmek istiyorum. Mümkün olduğunca burada hep yasa maddelerini yazmış olacağım sizler için. Yazdım daha doğrusu. Hızlı bir şekilde okuyup eğer tartışma yapacağımız bir nokta olursa orada biraz daha konuyu açabiliriz.
+
+44
+00:04:25,076 --> 00:04:42,115
+Genel olarak baktığımızda bilişim alanında ya da bilişimle ilgili olabilecek alanlarda, bilişimi de içine dahil eden alanlarda işlenen suçlarla ilgili mevcut yasalarımız doğal olarak vardı. Bu yasalara ek maddeler eklenerek güncellemeler yapılıyor.
+
+45
+00:04:42,115 --> 00:04:51,176
+Artı bunun yeterli olmadığı noktalarda yeni bir husus ortaya çıktığında da yeni konuya özel yasalar çıkartılıyor. İşte mesela.
+
+46
+00:04:51,824 --> 00:04:58,103
+Türk Ceza Kanunu zaten vardı ama bilişim ile ilgili maddeler eklendi. TCK 5237.
+
+47
+00:04:58,963 --> 00:05:16,384
+İnşallah hiçbir zaman ihtiyacınız olmaz. Sonrasında bu özellikle adli bilişimin nasıl olacağı, delil toplamanın nasıl yapılması, usulünün ne olması gerektiğiyle alakalı ceza muhakemesi kanunu var. Bunun da 5271 sayısı. Bunda yine bilişimle ilgili maddelerimiz var.
+
+48
+00:05:16,944 --> 00:05:26,264
+Yine eskiden olan ama özellikle yazılım eserleri bir eser olarak kabul edilmesiyle birlikte güncellenen fikir ve sanat eserleri.
+
+49
+00:05:26,963 --> 00:05:54,963
+İmza'da da dava konusu.
+
+50
+00:05:54,963 --> 00:06:21,004
+5.070. İnternet diyoruz ama tabi bu uzun adı internet yoluyla yapılan yayınların düzenlenmesi falan diye gidiyor. 5.651 internet yayınlarıyla alakalı düzenleyici kanun. Sonrasında yine işte son 10 yıl içinde çıktı diyelim KVKK kişisel veriler, kişisel verilerin korunmasıyla alakalı yapılması gerekenler yapılmazsa neler olacak, cezaları nelerdir? 6.698.
+
+51
+00:06:23,091 --> 00:06:49,651
+E-ticaret ortaya çıktı. E-ticaret ile alakalı pek çok sorun oluşmaya başlayınca onunla ilgili bir yasa. 6.563 ortaya çıktı. Bunlarla beraber mesela bir de bilişim yasa taslağı var. Buna girmeyeceğim. Sadece başlıklarını söyleyeceğim. Aslında buradakilerin hepsinin bileşkesi, bilişim alanındaki bütün olayları, tanımları, suçları ve cezalarını yolu yordamı düzenlemesi için hazırlanan bir yasa taslağı var.
+
+52
+00:06:51,091 --> 00:07:10,791
+Bir şekilde o taslaktaki parçalar bu kanunlara parçık pinçik dağıtıldı diyebiliriz aslında. Böyle bir çalışmanın da olduğunu yine de bilmenizi isterim. 2007'de yanlış hatırlamıyorsam başlamıştı. Şimdi tam tarih hatırlamıyorum ama 2007 gibi şu anda aklımda kalan.
+
+53
+00:07:19,091 --> 00:07:40,711
+Bu maddelerde güncellemeler var. Nedir? İntihar, ray yönlendirme, çocukların cinsel istismarı, uyuşturucu ya da uyarıcı madde kullanılmasını kolaylaştırma, sağlık için tehlikeli madde temini, müstehcenlik, fuhuş, kumar oynanması için yer ve imkan sağlama. İşte bu online kazino mazino muhabbetleri madde 228'e direkt olarak giriyor.
+
+54
+00:07:42,036 --> 00:08:02,036
+Yine TCK 5237'de özel hayata ve hayatın gizli alanına, bu biliyorsunuz kişinin özeli konusunu uzun uzun işlemiştik, gizli alanına karşı suçlarda haberleşmenin gizliliğini ihlal, özel hayatın gizliliğini ihlal, kişisel verilerin kaydedilmesi, hukuka aykırı olarak kaydedilmesi tabii, verileri...
+
+55
+00:08:02,740 --> 00:08:23,860
+Hukuka aykırı olarak verme veya ele geçirme, verileri yok etme. İşte bunlar da özel hayat ve hayatın gizliliğiyle alakalı maddeler. Mal varlığına karşı istenen suçlarla alakalı yine bilişim alanında nitelikli hırsızlık ve nitelikli dolandırıcılık konularında güncellemeler var. 141, 142, 157, 158. maddeler.
+
+56
+00:08:25,172 --> 00:08:31,732
+Bilişim alanındaki suçlara baktığımızda da Türk Ceza Kanunu'nda artık bilişim alanında suçlar diye bir yeni bölüm de var.
+
+57
+00:08:32,292 --> 00:08:34,932
+Bilişim sistemlerine girme, madde 243.
+
+58
+00:08:35,372 --> 00:08:42,612
+Bilişim sistemini engelleme, sistemin çalışmasını engelleme, bozma, sistemdeki verileri yok etme veya değiştirme 244.
+
+59
+00:08:43,091 --> 00:08:47,351
+Hacking falan diyelim buna hızlıca hemen öyle aklımızda kalabilir.
+
+60
+00:08:47,351 --> 00:08:53,132
+Ve banka ya da kredi kartlarının kötüye kullanılması da madde 245 olarak karşımıza çıkıyor.
+
+61
+00:08:53,172 --> 00:09:13,012
+5237'de. Şimdi madde 84, intihara yönlendirmede şöyle madde 84'ün birinci fıkrası. İşte ne diyor? İşte buna teşvik eden, azmettiren ya da kararı kuvvetlendiren ya da yardım eden 2 ile 5 yıl arasında hapis cezası.
+
+62
+00:09:13,408 --> 00:09:37,227
+Eğer intihar olursa 4'ten 10'a kadar hapis cezası. Gördüğünüz gibi 2-5, 4-10, çarpı 2 yapmışız durumda. Üçüncü fıkrasında alenen teşvik ediyorsa o zaman 3 yıldan 8 yıla kadar hapis. Bunu bir de basın yayın yoluyla yapıyorsa, hani mesela bir internet ortamından falan yapıyorsa 4 yıldan 10 yıla kadar hapis.
+
+63
+00:09:37,631 --> 00:09:54,771
+Tabii bunlar sonrasında hafifletici nedenler, ıvırlar kıvırlarla biliyorsunuz düşürülebiliyor. Daha önceden suçunuz yok ise işte belirli olan suç maddeleri paraya çevrilebiliyor günlük şu kadar TLT çarparak falan. O konulara şu anda girmiyoruz.
+
+64
+00:10:00,000 --> 00:10:15,779
+Algılama yeteneği olmayan ya da daha henüz o seviyeye gelmemiş olan çocuk gibi kişileri sevk edersen de intihara o zaman diyor ki ben burada artık şunlarla değil seni kasten adam öldürme suçundan sorumlu tutarım.
+
+65
+00:10:16,139 --> 00:10:21,879
+Cinsel istismar madde 103. Gördüğünüz gibi 2014'te bir güncelleme yapılmış.
+
+66
+00:10:22,399 --> 00:10:27,879
+Cinsel istismar, çocuğa cinsel istismar 8 ile 15 yıl arasında hapis.
+
+67
+00:10:28,000 --> 00:10:46,440
+Sadece sarkıntılık olursa 3 yılla 8 yıl arasında hapis cezası. Suçun faaliyenin çocuk olması durumunda o zaman mağdurun velisinin ya da vasisinin şikayetiyle ancak bu şey yapılabilir diyor. Cinsel istismarın burada ne olduğunu da tam anlamış durumda.
+
+68
+00:10:56,000 --> 00:11:05,000
+Başka türlü şeylerle yaparsanız o zaman cezanın yarı oranında yani çarpı bir buçuk olarak yapılacağını, uygulanacağını söylüyor.
+
+69
+00:11:05,960 --> 00:11:16,560
+Yine işte birinci fıkranın A ve B bendindeki şeyleri silah kullanarak yaparsanız çarpı 0.5 artı daha geliyor.
+
+70
+00:11:16,560 --> 00:11:18,560
+Ondan sonra...
+
+71
+00:11:18,580 --> 00:11:30,340
+Ayrıca cebir ve şiddet yapılırken, cinsiz istismar sırasında bir de yaralama falan olursa o zaman bir de ekstra yaralama suçundan sizi şey yapıyorlar.
+
+72
+00:11:30,340 --> 00:11:40,759
+Yani bir suçun iki şeyi olmaz denir ya, burada sen bir de yaralamışsın ayrı bir suç daha var diye iki suçtan aslında cezalandırma yapılıyor.
+
+73
+00:11:41,240 --> 00:11:46,500
+İşte sonuçta bitkisel hayat ya da ölüm sonuçlanıyorsa bu iş, bu eylem.
+
+74
+00:11:46,580 --> 00:11:48,820
+Müebbet hapis cezası veriliyor.
+
+75
+00:11:50,100 --> 00:11:52,940
+Uyuşturucuyla alakalı madde 190.
+
+76
+00:11:53,683 --> 00:12:20,963
+Bunları özendiren ya da bu nitelikte yayın yapan kişiler 5 yıldan 10 yıla kadar hapis cezası ile yargılanıp değerlendiriliyor sonuçları. Bu yakın zamanlarda çok duymuşsunuzdur. Ne diyorlar, YouTube fenomenleri falan bazen şey olabiliyor, böyle madde 190'dan hakim karşısına çıkabiliyorlar. Ondan sonra ben aslında orada onu demek istememiştim deyip bir şekilde savunma yapabiliyorlar.
+
+77
+00:12:21,344 --> 00:12:44,524
+Bunların özellikle bu maddelere erişimi olan meslek grupları tarafından yapılması halinde çarpı 0.5 artı 0.5. 5 yılsa 7.5 yıl olacak. 10 yılsa 15 yıl olacak gibi şey yapılıyor. Yarı oranda cezası arttırılıyor.
+
+78
+00:12:49,344 --> 00:13:08,644
+Bunları tüketime veren ya da tüketime sunan kişi de 6 aydan 1 yıla kadar hapisle cezalandırılıyor. Müstehcenlik 226. madde. Burada da cinsiz istismaların aslında biraz daha hafifi gibi diyebiliriz.
+
+79
+00:13:17,344 --> 00:13:20,404
+Aslında bilişimle alakalı olduğunu söyleyebiliriz.
+
+80
+00:13:20,788 --> 00:13:47,567
+Bunun da bir de çocukları kullanırsanız o zaman işte 5 yıldan 10 yıla kadar hapis ve bunun yanında 5000 güne kadar da para cezası. Devamını siz okursunuz. Hani çok hepsi üzerinde şey yapmayalım. Bir de işte hayvanlar, ölmüş insan bedenleri ya da doğal olmayan yollarla şeyler falanlar filanlar 4 yıla kadar hapis 5000 güne kadar adli para cezası. Yine bunları basın yayın yoluyla yaparsanız şunlar şunlar ilave.
+
+81
+00:13:48,788 --> 00:13:49,515
+Öniversitesi Bilgisayar Mühendisliği, Mesleki Hukuk Ve Etiketlerle anlatacağız.
+
+82
+00:13:49,620 --> 00:13:59,780
+Tüzel kişilikle bu işler yapılıyorsa ona özgü güvenlik tedbirleri, ne yapılacaksa mesela tüzel kişiliğin yetkilileri, sorunları hakkında neler yapılacaksa onlar işletiliyor.
+
+83
+00:14:00,580 --> 00:14:09,760
+İşte bu şekilde. Ne diyor burada? Bilimsel eserlerle üçüncü fıkra hariç olmak. Şuradaki çocukları kullanma vardı ya.
+
+84
+00:14:09,760 --> 00:14:17,620
+Ve çocuklara ulaşması engellenmek koşuluyla sanatsal ve edebi değeri olan eserler hakkında uygulanmaz. Yani bir heykel düşün.
+
+85
+00:14:17,620 --> 00:14:33,640
+İşte o plastik sanat ürünü olduğu için onunla alakalı vay arkadaş internetten heykel şöyle gösteriyorlar, Leonardo'nun David'ini gösteriyorlar deyip orada bir müstehcenlik madde 226'nın işletilmesi söz konusu değildir diyor.
+
+86
+00:14:34,140 --> 00:14:42,020
+Fuhuş konusu madde 227. Yine çocuğu şey yaparsan baya 4 yılla 10 yıl artı para cezası.
+
+87
+00:14:43,956 --> 00:15:06,716
+Yine 2 yılla 4 yıl arasında normal bir kimseyi teşvik ederseniz. Üçüncü madde gördüğünüz gibi 2006'da kaldırılmış. Dördüncü madde yine bunu cebir ve tehdit kullanarak yaparsanız ceza 0.5 ila çarpı 2 arasında arttırılır. Yani 3 kata kadar arttırma şeyi var. İşin zorla yapılması durumunda.
+
+88
+00:15:11,956 --> 00:15:28,495
+Tarafındaki üst soy, kardeş, vasi, evlat edinme, eğitici, örtücü, bakıcı, koruma ve gözetim hükümlülüğü kişiler tarafından ya da kamu görevi ya da hizmet ilişkisiyle olan nüfusu kötüye kullanarak işlenmesi halinde ceza çarpı yarısı.
+
+89
+00:15:28,495 --> 00:15:32,696
+Yani işte 10 yerine 15 yıl gibi bir artım yine söz konusu.
+
+90
+00:15:33,971 --> 00:15:49,011
+Özellikle bakım şeyleri, yurtları ya da bakım evleri gibi yerlerde duyuyoruz. Bunlar da yine biliyorsunuz haberlere konu olan davalarda yer alabiliyor. İşte 5. fıkra.
+
+91
+00:15:52,052 --> 00:16:15,631
+Sonrasında örgütle yapılırsa yine yarı oranında arttırılıyor. Tabi bunlar hep üzerine koya koya gidiyor arkadaşlar. Yani siz mesela kamu görevi yaparken korumanız gereken çocuklara bunu yapıyorsanız, çocuğa yaptığınız için bu. Kamu görevi yaptığınız için çarpı bilmem ne. Ondan sonra bunu bir de örgütlü olarak yapıyorsanız, hani üç kişi bir arada yapıyorsanız çarpı bilmem ne. O şekilde çarpa çarpa gidiyor cezalar. Onları unutmayın.
+
+92
+00:16:20,052 --> 00:16:34,711
+Sorumları hakkında gerekenler yapılır. Bir de şey diyor, fuşu sürüklenen kişiyi tedavi ve psikolojik terapiyede yapabiliriz. Tabii bunların da yine aslında giderlerini suçludan alıyorlar. O şekilde söyleyelim.
+
+93
+00:16:35,052 --> 00:16:43,771
+Kumar ile alakalı madde 228. Bu online kumara giriyor aslında bizim açımızdan. Bir yıla kadar hapis ve adli para cezası.
+
+94
+00:16:44,436 --> 00:17:03,396
+Çocuklara oynatıyorsanız çarpı bir kat yani iki katına çıkartıyor. İki tüzel kişilikse ona göre yine yapılacaklar yapılıyor. Tamam. Burada tabii şey kumar kazanç amacıyla icra edilen ve kar ve zararın talihe bağlı olduğu oyunlardır şeklinde.
+
+95
+00:17:12,435 --> 00:17:21,456
+Kartın gelmesine bağlı ya, orada işte talih dediğimiz şey bu. Bu tip şeyler. Kumar tanımını da öyle yapıyor. Piyangoyu kumar olarak tanımlamamış oluyor aslında madde.
+
+96
+00:17:22,048 --> 00:17:46,968
+Özel Hayata ve Hayatın Gizli Alanına, ikinci alana geçtiğimizde TCK 5237'de haberleşmenin gizliğini ihlal ederseniz madde 132'den yargılanırsınız. Yine bir yıldan üç yıla kadar hapis cezası. Eğer içeriklerin haberleşme içeriklerinin kaydıyla gerçekleşirse o zaman çarpı bir. Bu da aslına bakarsanız işte yine gündemde olan şeylerden biri.
+
+97
+00:17:50,048 --> 00:17:58,948
+Bir kişi herkesle yaptığı telefon görüşmelerini kaydetmiş. Onları yayınlıyor çatır çatır. Aslında mesela orada şunlar işlenmiş oluyor aynı zamanda.
+
+98
+00:18:01,268 --> 00:18:06,908
+Tamam. Hukuka aykırı olarak ifşa edenler 2 yıldan 5 yıla kadar anlayacağız hani.
+
+99
+00:18:07,796 --> 00:18:20,656
+Bir sürü madde burada tanımlanmış durumda. Yine diğer tarafın rızası olmadan ifşa ederseniz de bir yıldan üç yıla kadar basın yayın yoluyla yaparsanız da yine aynı ceza verilir diyor.
+
+100
+00:18:21,376 --> 00:18:26,476
+Hızlı geçiyorum. Maddelerin, detaylarını çok şey yapmaya gerek yok üzerinde durmaya.
+
+101
+00:18:27,256 --> 00:18:31,456
+Kişiler arasındaki konuşmaların dinlenmesi ve kayda alınması da madde 133.
+
+102
+00:18:31,855 --> 00:18:54,475
+Aleni olmayan, yani ortalıkta yapmadığınız konuşmaları işte bir aletle dinlerseniz, yani dinleme cihazıyla ya da işte bir ses alma cihazıyla kaydederseniz iki yıldan beş yıla kadar hapis. Tele kulak davası muhabbetleri bu da. Yine aleni olmayan bir söyleşiyi rıza olmadan kayıt altına alırsanız altı aydan iki yıla kadar hapis.
+
+103
+00:18:55,124 --> 00:19:15,064
+Nasıl bayağı aslında her şey tanımlanmış durumda gördüğünüz gibi. Normalen bizim bu bütün kanunları bir vatandaş olarak bilir olmamız gerekiyor. Bu varsayılıyor, bunu unutmayın. Ondan sonra ben bilmiyordum, kayıt almanın suç olduğunu bilmiyordum gibi bir savunma yapamıyorsunuz. Onu da yine bir ekstra bilgi olarak söyleyelim.
+
+104
+00:19:18,612 --> 00:19:29,311
+Elde edilen verileri hukuka aykırı olarak ifşa ederseniz kayıtlarınızı, işte o zaman da 2 yılda 5 yılda harisinde hapis artı para cezası yapılıyor. Basın yayın yine buna dahil.
+
+105
+00:19:29,311 --> 00:19:41,632
+Madde 134, özel hayatın gizliliğini ihlal etmek. Kişinin özel hayatını gizliliğini ihlal ederseniz 1 yılda 3 yılda harisinde hapis cezası. Görüntü ve ses kaydı ile yapılırsa çarpı 2.
+
+106
+00:19:42,031 --> 00:20:05,711
+Üzerine bir tane daha aynı cezadan veriliyor. Yine ifşa ettiğinizde de aynı şekilde burada da iki yıldan beş yıla kadar hapis. Basın yayında da aynısı söz konusu. Kişisel verileri hukuka aykır olarak kaydederseniz bir yıldan üç yıla kadar hapis. Tabi burada kişisel veri ve kamu alanı konusu işin içine giriyor.
+
+107
+00:20:07,635 --> 00:20:28,855
+Aynı şekilde bu maddenin ikinci fıkrasında da özellikle kişilerin siyasi, felsefi, dini görüşleri, kökenleri, ahlaki eğilimleri, cinsel yaşamları, sağlık durumları ya da sendikal bağlantılarıyla alakalıysa, özellikle bunun için yapıyorsanız o zaman 0.5 oranında ceza arttırılıyor.
+
+108
+00:20:29,855 --> 00:20:32,375
+İşte bir dil bir buçuk yıldan başlıyor alt sınırı.
+
+109
+00:20:34,163 --> 00:20:41,675
+Hukuk kaygır olarak verileri verme ya da ele getirme, madde 136. Bunları da yapan...
+
+110
+00:20:41,940 --> 00:21:09,579
+Yayan ve ele geçiren her iki taraf 2 yıldan 4 yıla kadar hapis cezası. Bir de burada madde 137 var. Nitelikli hal. Buradaki tanımlı suçlar mesela kamu görevlisi tarafından kamu görevlisi olması sebebiyle verilen yetkinin kötü ne kullanılmasıyla yapılırsa ya da yine belli bir meslek ya da sanatın sağladığı kolaylık ile bu yapılırsa ben nasıl olsa bu veriye erişebiliyorum. O zaman alayım da bunu yayınlayayım. Bak bunları ifşa edeyim.
+
+111
+00:21:09,940 --> 00:21:16,900
+Şeklinde bir şey yaparsanız mesleğiniz dolayısıyla o zaman 0.5 kat sayısı ilave geliyor.
+
+112
+00:21:18,019 --> 00:21:20,460
+Verileri yok etmeme. Bu da suç bakın.
+
+113
+00:21:20,460 --> 00:21:27,200
+Kanunların belirlediği sürelerin geçmiş olmasına karşın verileri sistem içinde yok etmekle yükümlü olanlara,
+
+114
+00:21:27,640 --> 00:21:31,279
+eğer yok etmezseniz 1 yıldan 2 yıla kadar hapis cezası veriliyor.
+
+115
+00:21:35,092 --> 00:22:01,412
+Ceza muhakemesi kanunun hükümlerine göre yapılması gereken bir veri ise bir katta arttırılıyor. Yani veriyi yok etmeniz gereken veriler var ve siz onları yok etmiyorsanız, yani imha etmiyorsanız bu da suç. Bu şey işte askerlikte falan çok olur. Böyle evraklar sürelidir. O süre bittiğinde, hani saklama süresi de bittiğinde bir emrin şeyi ondan sonra yakılır kağıtlar.
+
+116
+00:22:01,791 --> 00:22:15,271
+Bayağı bildiğiniz yakılır. Toz olur, kül olur. Mesela siz onları yakmazsanız o zaman gördüğünüz gibi madde 138'den dolayı da suçlanabiliyorsunuz. Bu bizim bilişim alanında da aynı şekilde uygulanabilir.
+
+117
+00:22:16,171 --> 00:22:18,291
+Madde 139'da şikayet var.
+
+118
+00:22:18,932 --> 00:22:45,412
+Kişisel verilerin kaydedilmesi, verileri hukuka aykırı olarak verme, ele geçirme ya da verileri yok etmeme hariç olmak üzere bu bölümde yer alan suçların soruşturulması, kovuşturulması şikayete bağlıdır. Ben kafama göre yapmam, şikayet olursa bunları işletirim diyor. Yine tüzel kişiler için de neyse özgü güvenlik tedbirleri, şirketlere özel bunlar uygulanacaktır diyerek şikayet konusunda bağlamış oluyoruz.
+
+119
+00:22:46,932 --> 00:22:54,932
+Kişisel verilerin kaydedilmesi, verilerin hukuku aykırı olarak verilmesi, ele geçirilmesi ve verileri yok etmeme. Bunlar...
+
+120
+00:22:55,667 --> 00:23:17,367
+Direkt savcılık tarafından soruşturulabilir. Ama bunun dışında benim özel hayatımın gizliliği ihlal edildi. Benim gidip şikayet etmem lazım. Şikayet etmeden buradaki suçlarla ilgili soruşturma ve sonrasında gerçekten yapımcısı kovuşturma yani mahkeme aşaması tamamen şikayete bağlı olarak işliyor.
+
+121
+00:23:18,516 --> 00:23:34,756
+Üçüncü ana şeye geçtiğimizde mal varlığına karşı işlenen suçlar. Hırsızlık bir yıldan üç yıla kadar. Nitelikli hırsızlık. Bu niye böyle ufak olmuş ya? Ben bunu düzeltmiştim. Neyse.
+
+122
+00:23:35,251 --> 00:23:56,351
+Nitelikli olduğunda, hırsızlık bilerek, isteyerek ve organize bir şekilde yapıldığında cezalar artıyor. Şimdi bunu çok ufak oldu. O yüzden siz okursunuz madde 142. Detaylarına oradan bakabilirsiniz. Gördüğünüz gibi böyle özel özel bütün nitelikli şeyleri tanımlamış durumda yasa.
+
+123
+00:24:02,832 --> 00:24:08,232
+Onun veya başkasının zararına olarak kendisine veya başkasına bir yarar sağlamak. İşte bu şey.
+
+124
+00:24:08,660 --> 00:24:34,799
+Çiftlik Bank muhabbeti. Gördüğünüz gibi bir yılla beş yıl arasında hapis, beş bin güne kadar da adli para cezası verilebiliyor. Tabii önce ülkeye giriş yapması gerekiyor suçlumuzun. Bunun nitelikli olduğu da madde 158'de. Yine bunu özellikle bilerek, isteyerek ve bir şeyleri amaçlı olarak kötüye kullanarak yapıyorsanız da yine daha fazla oluyor.
+
+125
+00:24:36,660 --> 00:24:58,799
+Alınan suç karşılığı ceza. Şöyle bakalım hızlıca. 2 yıldan 7 yıla kadar hapis. Yine 5000 güne kadar adli para cezası. Bakın 6 sınır 3 yıldan para cezasının da miktarı suçtan elde edilen menfaatin 2 katından az olamaz diyor. Minimum 3 yıl yatacaksın diyor nitelikli dolandırıcılık yaparsan.
+
+126
+00:24:59,412 --> 00:25:25,172
+Şimdi geldik TCK'daki son ana başlığımızı. Bilişim alanındaki suçlar 243, 244, 245. Bilişim sistemine girme. Ne demek bu? Sistemin bütününe veya bir kısmına hukuka aykırı olarak yani normal olmayan yollarla izinsiz olarak giren ve orada kalmaya devam eden kimseye bir yıla kadar hapis ve adli para cezası verilir.
+
+127
+00:25:26,548 --> 00:25:50,347
+Bedel karşılığı yararlanabilen sistemler hakkında bunları işlerseniz yarı oranında indiriliyor. Yani sizin oraya parayla erişim hakkınız var ama siz onu kötüye kullanarak bir şeyler yaptınız. O zaman işte bir yıl değil de altı ayla başlıyor hapisiyeniz, cezanız. Eğer veriler yok olur veya veriler, sistemdeki veriler değiştirilirse o zaman altı aydan iki yıla kadar hapis.
+
+128
+00:25:52,435 --> 00:26:11,615
+Ek madde 2016'da gelmiş, 4. maddeye fıkra eklenmiş. Bir bilişim sisteminin kendi içinde veya sistemler arasında gerçekleşen verin akillerini sisteme girmeden teknik araçlarla hukuka aykırı olarak izleyen kişiye 1 yıldan 3 yıla kadar hapis cezası ile cezalandırdı.
+
+129
+00:26:11,615 --> 00:26:18,315
+Bu da şey, man in the middle gibi düşünün. Siz network'ü dinliyorsunuz, ondan sonra diyorsunuz ki ben girmedim ki bilişim sistemine.
+
+130
+00:26:18,644 --> 00:26:36,584
+Bu suçtan ben bu maddeye girmiyorum diye kendinizi aklamış oluyorsunuz. Artık o da yok. İlla girmenize gerek yok. Network haberleşmesi ya da sistemler arası giden gelen verileri de hukuka aykırı olarak izlerseniz bu da madde 243'e dahil edilmiş durumda.
+
+131
+00:26:38,836 --> 00:27:01,936
+244 bu çok şeydir. Bir sürü dava vardır bu konuda. Aslında 243, 244 ve hatta 245 hep bir arada oluşur neredeyse. Sistemi engelleme, bozma, verileri yok etme, değiştirme. Zaten veriye eriştiğiniz, yok ettiğinizde giriyor. Uzatmayalım. Bir yılla beş yıl arasında hapis cezası var.
+
+132
+00:27:02,367 --> 00:27:27,448
+Eğer verileri bozarsanız, sistemi engellemek pardon, 1 ile 5 yıl. Verileri bozar, yok eder, değiştirir ya da erişilmez kılarsanız ya da olmayan verileri oraya eklerseniz o zaman 6 aydan 3 yıla kadar hapis. Bunu bir banka ortamında yani bir finans şeyinde ya da kamu kurum kuruluşunda yaparsanız 0.5 kat sayısıyla cezanız arttırılır.
+
+133
+00:27:30,548 --> 00:27:43,307
+Ve başkası ya da siz suçu işleyen haksız çıkar sağlarsa başka bir suç oluşturmaması halinde 2 yıldan 6 yıla kadar hapis ve 5000 güne kadar da adli para cezası veriliyor.
+
+134
+00:27:44,627 --> 00:27:46,367
+Hocam bu cezalar biraz az değil mi?
+
+135
+00:27:47,700 --> 00:28:06,920
+İşte şey oluyor, şöyle düşünün. Bir işim sistemine girmek yüzünden bir yıl. Verileri bozmak, değiştirmek için iki yılda buradan yazdım diyor. Üç yıl oluyor. Ondan sonra işte banka ya da kartın banka sistemine girdi diyelim. Çarpı 0.5'den dolayı dört buçuk yıla çıkıyor. Tamam mı?
+
+136
+00:28:07,019 --> 00:28:08,099
+Kartlanarak gidiyor yani.
+
+137
+00:28:08,099 --> 00:28:15,539
+Evet, böyle böyle. Bir de diyelim ki işte buradan bir şey seçelim. Mesela burada da üç yıl diyor ya. Üç yıl hapiste buradan geldi. Ne oldu?
+
+138
+00:28:15,700 --> 00:28:36,940
+7,5 yıl hapis. Ama ondan sonra hafifletici nedenler, mahkemedeki iyi hal, ceza yarı oranında indiriliyor, öyle oluyor, böyle oluyor. Tutukluk alma süresi göz önüne alınıyor. Tutukluk alma süresi de çarpı 3 gibi düşünün. Bir ay tutukluk aldıysanız 3 ay hapis yatmış gibi oluyorsunuz. O ona sayılıyor yani.
+
+139
+00:28:37,359 --> 00:29:00,799
+Ama nihayetinde serbest kalıyorsunuz en fazla para cezasıyla. Tabi sizciliğinize işleniyor. O ayrı. Sabıkanız oluyor artık. Sabıka kaydınız oluyor. Sabıka kaydınızın olması sizi eğer rahatsız etmiyorsa hayatınıza devam ediyorsunuz. Neyse işte yargılama masrafları ve verilen para cezasını vererek. Ondan sonra o firma.
+
+140
+00:29:01,215 --> 00:29:03,435
+Uluslararası'na verileri getirmek için.
+
+141
+00:29:03,695 --> 00:29:25,395
+Aynen öyle, evet. Şöyle bir şey var ama orası belki bizi ilgilendirebilir. Şimdi mesela böyle bir kovuşturma neticesinde bir ceza mahkemesi sonucunda diyelim ki hakikaten cezalandırıldınız, yani suçlu bulundunuz. Şimdi ben mesela bank olarak ya da ben mağdur olarak size gidip hukuk mahkemesinde tazminat davası açabilirim.
+
+142
+00:29:26,163 --> 00:29:39,423
+Diyorum ki ben bu verileri kaybettiğim için 10 milyon dolar zarar ettim. Tamam mı? Benim zararımı karşıla diye gidip orada şey yapabiliyorum. Siz söyleyin neydi?
+
+143
+00:29:40,115 --> 00:29:56,155
+Tazminat. Tahliye geliyor aklıma da. Tazminat gelmedi. Tazminat davasıyla zararınızı tazmin edebiliyorsunuz. Bir de manevi tazminat var biliyorsunuz. Özellikle kişisel verilerin ifşa edilmesi taraflarında oluyor. Bunlar da en çok.
+
+144
+00:30:00,000 --> 00:30:19,259
+Küçük düşürüldüm, kendimi kötü hissettim, psikolojim bozuldu falan diyerek işte maddi şu kadar, manevi de şu kadar şey istiyorsunuz. Ondan sonra işte avukatlar o öyleydi, bu böyleydi, ıvırdı kıvırdı birbirlerine giriyorlar. Hakimin de kafasına göre bir sonuç veriyor işte teraziyi dengeleyecek şekilde.
+
+145
+00:30:22,439 --> 00:30:26,199
+Mesela bu konuda güncel bir örnek daha dün haber oldu.
+
+146
+00:30:26,576 --> 00:30:43,735
+Bir tane şey, yine sosyal medya fenomeni bir tane artist kızımıza şey yapmış, sosyal medyadan bir laf çakmış. Ondan sonra o da onu şikayet etmiş, bana hakaret etti diye bu TCK kapsamında.
+
+147
+00:30:44,315 --> 00:30:47,895
+İşte soruşturulmuş, kovuşturulmuş mahkeme, ondan sonra bunu suçlu bulmuş.
+
+148
+00:30:48,339 --> 00:31:03,259
+Bir yıl mı ne? Ceza vermişler. Hapis cezası. Ama başka şey olmadığı için ıvır kıvır hafifleti nedenlerle 2000 lira toplam her şey dahil 2000 liraya çevirmişler. Cezayı bitmiş.
+
+149
+00:31:03,700 --> 00:31:30,500
+Tabii şimdi ceza mahkemesi bitince hanım kızımızın, artist kızımızın avukatı da gitmiş 15 bin liralık tazminat davası açmış. Manevi tazminat davası. Sosyal medyada bana öyle dedi, böyle dedi. Bakın bunun suçu da sabit bulundu. Cezası da verildi. Ondan sonra benim manevi örselenmemi gidermek için 15 bin TL istiyorum gibi bir şey açmış. Hakim de bin liraya karar vermiş.
+
+150
+00:31:31,028 --> 00:31:40,347
+Ne oldu? İşte 2 bin lira öbür tarafa, 1 bin lira bu tarafa, 3 bin liraya çakmış oldu lafı. Böyle bir ortam diyelim.
+
+151
+00:31:41,556 --> 00:32:09,355
+Evet, bunu işte 245 bu arada siz okumuşsunuzdur diye düşünüyorum. Bu da direkt banka ve kredi kartlarının kötüye kullanılmasıyla alakalı. 3 yıl, 6 yıl ile başlıyor. Ondan sonra sahte kart mart yaparsanız 3 yılla 7 yıl arttı 10 bin günlük bir para cezası. Bunun günlüğü 20 lira mı ne galiba öyle bir şeyle çarpıyorlar. Yani işte 20 çarpı 10 bin yani 200 bin lira minimum diyelim.
+
+152
+00:32:09,556 --> 00:32:24,836
+O şekilde bir adli para cezası da veriliyor. Ondan sonra özellikle sahte oluşturulan ya da üzerinde sahtecilik yapılan bir kartla yarar sağlarsanız başka ağır ceza gerektiren bir suç yoksa 4 yılla 8 yıla kadar hapis.
+
+153
+00:32:24,836 --> 00:32:31,715
+Bu sahte çalıntı kredi kartları ırlar kıvırlarda gördüğünüz gibi 245. madde de koruma altına alınmış durumda.
+
+154
+00:32:35,700 --> 00:32:57,299
+2016'da eklenmiş. Direkt olarak bir cihazın, bilgisayar programının, şifrenin ya da bunlara benzer bir güvenlik kodunun münhasıran bu bölümde yer alan suçlarla, bilim sistemlerin araç olarak kullanması suretiyle işlenebilen diğer suçların işlenmesi için yapılması ve oluşturması.
+
+155
+00:32:57,807 --> 00:33:04,208
+Nasıl gidiyor? Ne güzel yazı değil mi? Kanunun bunları imal, ithal, sevk, nakleden, depolayan, kabul eden, satan, bilmem ne.
+
+156
+00:33:04,208 --> 00:33:12,567
+Bu işin içinde herhangi bir şekilde bu sürecin bir yerine değen kişilerle bir yıldan üç yıla kadar hapis ve cezalandırılır diyor.
+
+157
+00:33:12,688 --> 00:33:20,827
+Bu nedir? Mesela bir kart kopyalama cihazı olabilir ya da bir şifre kırma yazılımı olabilir gibi düşünün.
+
+158
+00:33:21,167 --> 00:33:25,807
+Bunların hepsi de madde 245'in sonuna eklenmiş. Yine banka ve kredi kartı.
+
+159
+00:33:25,807 --> 00:33:31,428
+İşlemlerinin güvenliğini sağlamak üzere biraz daha genişletilmiş 2016 yılında.
+
+160
+00:33:33,768 --> 00:33:40,788
+Tamam, şu TÜZER kişiler demiştik. Yine madde 246, bilişim alanında yapılan suçlar.
+
+161
+00:33:42,579 --> 00:33:56,059
+Suretiyle yararına haksız olarak menfaat sağladığınız eğer tüzel kişi ise yine onlarla ilgili yapılacak işlemlerde şahıs olmasa bile onun temsilcileriyle alakalı güvenlik tedbirleri neyse onlar da yapılır diyoruz.
+
+162
+00:33:58,819 --> 00:34:02,739
+Ceza kanunu bu kadar. Hızlı bir şekilde bitirmeye çalıştım.
+
+163
+00:34:03,412 --> 00:34:27,112
+5.271'e geldik. Ceza Muhakemesi Kanunu. Burada bizimle ilgili ne var? Madde 134 var. Delillerin toplanması. Bir suçla ilgili soruşturmada başka şekilde delil elde edilemiyorsa, savcının isteği üzerine şüphelinin kullandığı bilgisayar, bilgisayar programları, bilgisayar kütükleri yani dosyalar üzerinde arama yapılması.
+
+164
+00:34:27,731 --> 00:34:46,512
+Kopya çıkartılması ve bunların çözümlerinin yapılmasına hakim karar veriliyor. Yani bunu kafanıza göre savcı git, bunun bilgisayarını kopyala diyemiyor. İstiyor savcı, hakim ancak evet, okey, bu inceleme yapılsın diye bir karar, değişik iş karar denir bunlara. Değişik iş kararı verebiliyor.
+
+165
+00:34:46,996 --> 00:35:13,416
+Yine şifre yüzünden giremiyorsanız ve gizlenmiş bilgilere ulaşamıyorsanız o zaman bu çözümün yapılması için o zaman araç ve gereçe el konulabilir. Eğer şifre çözüldüyse ve gerekli kopyalar alındıysa cihaz hemen gecikme olmadan iade edilir diyor. Yani adamın malına çökme gibi bir şey söz konusu değil. Şifreyi kırmak amacıyla belirli bir süre misafir edebiliriz şeklinde bir usul tanımlanmış durumda.
+
+166
+00:35:14,708 --> 00:35:42,587
+Üçüncü fıkrası, el koyma işlemi sırasında bütün veriler yedeklenir. Bunu geçen hafta uzun uzun konuştuk. O yüzden burada tekrar anlatmaya gerek yok bu işin nasıl yapılacağını. Yine isterse kopya çıkararak verilir ve bu tutanakla imza altına alınır. El koymadan da bütün verilerin tamamının ya da bir kısmının kopyası alınabilir. Neyin kopyası alındığı tutanak altına alınır.
+
+167
+00:35:42,708 --> 00:35:48,647
+İmzalanır diye buradaki usulün nasıl olması gerektiğini madde 134 tanımlamış durumda.
+
+168
+00:35:49,407 --> 00:35:57,708
+5271'de bizi ilgilendiren bu husus var. Sayısal verilerin nasıl toplanacağı ile alakalı düzenleme.
+
+169
+00:36:00,067 --> 00:36:04,447
+Şimdi geldik 5846'ya. Bu bizim için önemli yasalardan biri.
+
+170
+00:36:05,715 --> 00:36:14,896
+Gördüğünüz gibi 1951'de kabul edildi. Ama işte bu son yazılım ve bilişim dünyasıyla birlikte en son 21 Şubat 2001'de değiştirildi.
+
+171
+00:36:16,019 --> 00:36:44,019
+Bu değişiklikle birlikte dediğim gibi bilgisayar programları da artık birer fikir ve sanat eseridir dendi. Şimdi yasanın amacı ne? Fikir, sanat eserlerini meydana getiren eser sahipleri ve bunları icra eden ya da yorumlayan icracıların, yapımcıların işte bu ürünler üzerindeki manevi ve mali haklarını belirlemek, bunları korumak, üründen yararlanma şartlarını düzenlemek ve bunlara aykırı işler yapılır.
+
+172
+00:36:44,019 --> 00:36:48,119
+Ne cezalar, ne yaptırımlar yapılacak bunları belirlemektir diyor.
+
+173
+00:36:49,139 --> 00:36:54,899
+İşte yine tarafları burada kapsamda kimleri kapsadığını, hangilerini kapsadığını tanımlamış durumda.
+
+174
+00:36:55,619 --> 00:37:00,199
+Ve bizimle alakalı olanları sadece şuraya koymak istedim.
+
+175
+00:37:00,679 --> 00:37:06,739
+Bilgisayarla ilgili tanımlar. Bakın G maddesinde, G fıkkı beğendi mi oluyor neyse işte bilgisayar programı.
+
+176
+00:37:07,251 --> 00:37:18,912
+Bir bilgisayar sisteminin özel bir işlem veya görev yapmasını sağlayacak bir şekilde düzene konulmuş bilgisayar emir dizgesini ve bu emir dizgesinin oluşum ve gelişimini sağlayacak hazırlık çalışmalarını.
+
+177
+00:37:19,315 --> 00:37:45,915
+Sadece kod değil gördüğünüz gibi. Sadece executable falan değil. Bütün yani analizi, tasarımı her şeyiyle, bütün süreç ve oradaki bütün emek de bilgisayar programı olarak burada yasada tanımlanıyor. Ama yani koruma bunların bütün hepsi için yapılıyor. Yani siz tasarımı aldınız ya da analizi aldınız. İşte orada aslında bir şekilde maddi ve manevi hakları ihlal etmek suçunu oluşturacaktır.
+
+178
+00:37:47,315 --> 00:38:07,575
+Ara yüzde donanım yazılım unsurları arasında karşılıklı etkilenme ve bağlantıyı oluşturan program bölümleri demektir. Ara işlerlikte bilgisayar program bölümlerinin fonksiyonel olarak birlikte çalışması ve karşılıklı etkilenmesi ve alışverişi yapılan bilginin karşılıklı kullanım yeteneği. Yani ara yüz temas noktaları.
+
+179
+00:38:08,052 --> 00:38:28,892
+Mesela bir ekran ya da bir girdi gibi. Ama ara işlerlik mesela sistemler arasındaki giden gelen veri, servisler. Bunlar da ayrı olarak tanımlanmış durumda. Yine bilgisayar programlarıyla ilgili madde, ilim ve edebiyat eserleri başlığı altında. Şöyle geçiyor madde 2. İlim ve edebiyat eserleri şunlardır. Dedikten hemen sonra.
+
+180
+00:38:31,012 --> 00:38:33,892
+Burada chatte bir şey kalmış. Ben onu kaçırmışım.
+
+181
+00:38:34,931 --> 00:38:48,111
+Hukuka aykırı olup olmaması farkına nasıl karar veriyorlar? İşte izin, yani en temeli izin. Ben bunu rıza gösterdim mi göstermedim mi? Rıza göstermeden kaydettiysen hukuka aykırıdır.
+
+182
+00:38:48,651 --> 00:38:56,611
+Diyelim. Neredeydik? Şuradaydık. İşte şurası. V'den sonrası.
+
+183
+00:38:56,724 --> 00:39:06,543
+Her biçim altında ifade edilen bilgisayar programları ve bir sonraki aşamada program sonucu doğurması koşuluyla bunların hazırlık tasarımları.
+
+184
+00:39:09,764 --> 00:39:12,423
+Bu bizimle alakalı değil.
+
+185
+00:39:13,023 --> 00:39:27,603
+Bunlar da yine, bakayım burada bizimle alakalı bir şey yoktu. Evet, yani şurada Bantı 2'nin birinci fıkkısı da gördüğünüz gibi bilgisayar programları, şuradaki tanımlanan bilgisayar programları bir ilim ve edebiyat eseridir şeklinde eklenmiş durumda.
+
+186
+00:39:28,983 --> 00:39:41,023
+5846'yı incelemenizi isterim. Hani burada biz şey yapacağız ama geçeceğiz. Burada özellikle işte mali haklar nedir, manevi haklar nedir, eser sahibi nedir?
+
+187
+00:39:41,023 --> 00:40:03,884
+Bu konuda,
+
+188
+00:40:03,956 --> 00:40:17,456
+5070-2004'te kabul edilen elektronik imza kanunumuz var. Bu da elektronik imzanın hukuki ve teknik yönleri ve kullanımı ne olacak? Bununla alakalı esasları düzenleyen kanunumuz.
+
+189
+00:40:19,764 --> 00:40:45,344
+Özetle elektronik verinin tanımı var. Elektronik imzanın imza sahibi, imza oluşturma verisi, imza oluşturma aracı, imza doğrulama verisi, imza doğrulama aracı, zaman damgası ve elektronik sertifika tanımları 5070'de yapılmış durumda. Elektronik imzaya çok girmeye gerek yok ama hani burada da eğer ihtiyacınız olursa bakacağınız yer 5070 olduğunu unutmayın.
+
+190
+00:40:46,291 --> 00:40:54,351
+Evet, geldik internet kanununa. 5651 sayılı, şimdi gerçek adını söylüyorum, tam adını.
+
+191
+00:40:54,911 --> 00:41:01,172
+İnternet ortamında yapılan yayınların düzenlenmesi ve bu yayınlar yoluyla işlenen suçlarla mücadele edilmesi hakkında kanun.
+
+192
+00:41:02,511 --> 00:41:07,632
+Başlık sınırı nedeniyle internet kanunu şeklinde bunu kısaltmış durumdayız.
+
+193
+00:41:07,931 --> 00:41:13,791
+Yine amacımız ne? İnternet kanunun amacı ne? İçerik sağlayıcı.
+
+194
+00:41:14,228 --> 00:41:41,208
+Yer sağlayıcı, erişim sağlayıcı ve toplu kullanım sağlayıcı nedir? Bunları tanımlamak. Bunların yükümlülükleri ve sorumlulukları nelerdir? Bunları belirlemek. Yani bu kimin sorumluluğu, şu iş, onların belirlenmesi. Ve yine internet ortamında işlenen belirli suçlara yönelik içerik, yer ve erişim sağlayıcılar üzerinden bu suçlarla mücadele edilmesinin esas ve usulleri.
+
+195
+00:41:42,228 --> 00:42:07,847
+5651'in. Şimdi buradaki önemli maddelerle başlayalım. Bilgilendirme yükümlülüğü. Madde 3. İçerik, yer ve erişim sağlayıcıları. Tabi burada şeyleri, tanımlarını yapmamış mıyım ben burada? Atlamışım onu ya. Şöyle bir hızlıca bakayım. Evet, tamam. Kaçı, onu şey yapmışız, atlamışız.
+
+196
+00:42:08,563 --> 00:42:09,824
+Şurada duralım.
+
+197
+00:42:09,824 --> 00:42:10,824
+Şimdi...
+
+198
+00:42:11,315 --> 00:42:39,035
+Erişim sağlayıcıdan başlayabiliriz. Erişim sağlayıcı, ISS dediğimiz internet servis sağlayıcılar. İşte Türk Telekom, TürkSel, Süper Online, Türk.net gibi. Bunlar bizim internete erişmemizi sağlayan taraf. Ve bunların da kendine göre işte trafiği belli bir süreyle kaydetme, ilerleyen şeyler de üzerine geleceğiz, kaydetme ve gerektiğinde işte böyle bir adli soruşturma yapıldığında onları eksiksiz olarak sunabilme sorumluluğuna sahip.
+
+199
+00:42:39,315 --> 00:42:40,811
+Evet.
+
+200
+00:42:40,980 --> 00:43:03,079
+Bu temeli, erişim sağlayıcılar. İkincisi yer sağlayıcı. Bu da hosting olarak kabaca düşünelim. Bir internet ortamında yayın ya da başka bir hizmetin ya da uygulamanın verilmesi için bu ortamı sağlayan, yani bu yeri sağlayan, alan adlarını ve bunların depolanmasını sağlayan tarafa da yer sağlayıcı deniyor.
+
+201
+00:43:08,980 --> 00:43:18,019
+Hizmeti durdur dediğinde ona ayırdığı yeri o hizmeti kaldırması gerekir gibi. İçerik sağlayıcı da içerik üreten taraf.
+
+202
+00:43:19,987 --> 00:43:29,927
+İçerik üreten de, mesela bir host üzerinde siz haber sitesi işletiyorsunuz, oraya haber giriyorsunuz.
+
+203
+00:43:30,007 --> 00:43:39,027
+Siz içerik girdiğiniz için ya da içeriği sunduğunuz için genel ağ üzerinde, siz de artık içerik sağlayıcı oluyorsunuz.
+
+204
+00:43:39,147 --> 00:43:44,267
+Sizin de özellikle sunduğunuz içerikle ilgili yükümlülük ve sorumluluklarınız var.
+
+205
+00:43:44,267 --> 00:43:47,727
+Mesela içeriğe erişim engelleniyor falan ya.
+
+206
+00:43:47,987 --> 00:43:49,567
+Onları yapmanız gerekecek.
+
+207
+00:43:50,087 --> 00:43:58,947
+Şimdi başlayalım. İlk madde, inceleyeceğimiz ilk madde, madde 3. İçerik, yer ve erişim sağlayıcıları, 3'ü birden.
+
+208
+00:43:59,387 --> 00:44:07,227
+Toplu kullanım sağlayıcıları söylemedik. Bunlar da şey işte bu hani otele gidiyorsunuz, wifi şifresi nedir diye soruyorsunuz.
+
+209
+00:44:07,860 --> 00:44:23,579
+Girerken bir login oluyorsunuz, bir şeyler diyor ya sizi kaydediyorum. En azından yaptığınız, girdiğiniz şeyleri falanı falanı. Toplu kullanım sağlayıcı da bu. Mesela bir kafede, bir restoranda, bir otelde internet hizmetinin paylaştırılması bunun da bir sorumluluğu var.
+
+210
+00:44:25,396 --> 00:44:41,556
+Onu da söyledik. Tamam. Bunların hepsi yine yönetmelikle alakalı. Bundan sonra yönetmelikler yazılır kanundan sonra. Daha açıklayıcı olan yönetmelikler. Daha böyle detaylı yazıların olduğu yerler.
+
+211
+00:44:42,195 --> 00:44:53,916
+Bunlar çerçevesinde tanıtıcı bilgileri kendilerine ait genel ağ ortamında kullanıcıların ulaşabileceği şekilde ve güncel olarak bulundurmakta yükümlüdür. Yani siz mesela bir içerik sağlayıcısınız, künyeniz yok.
+
+212
+00:44:54,324 --> 00:45:20,284
+Bunu yapamazsınız. Mutlaka açık, net görünür bir şekilde kim olduğunuz, tüzel kişilikseniz, ticaret unvanınız, vergi numaranız, hangi vergi dairesine kayıtlı oldunuz, kişiyseniz sizi yeterince açıklayacak, kim olduğunuzu şüpheye yer bırakmayacak şekilde tanımlayacak bilgilerinizin yer alması sitenizde ya da sunduğunuz içerikte erişebilecek şekilde olması gerekiyor.
+
+213
+00:45:22,324 --> 00:45:44,503
+Sağlayıcısınız. Türksel'siniz. Sizin kim olduğunuzu ben şey yapabilmeliyim. İnternet ortamında sizi tanıyabilmeliyim. Bunları açık bir şekilde görebilmeliyim. Eğer bunu yapmazsanız ne oluyor? 2000 lirayla 50 bin lira arasında idari para cezası size uygulanıyor. Yani kim olduğunuzu söylemezseniz diyelim açık bir şekilde.
+
+214
+00:45:47,315 --> 00:46:04,995
+Yurt içinden ya da yurt dışından bu faaliyetleri yürütüyorsanız yine internet sayfanızdaki iletişim araçları, alan adı, IP adresi ve benzeri kaynaklarla elde edilen bilgiler üzerinden e-posta veya diğer iletişim araçlarıyla bildirim yapılabilir diyor. Ne demek bu?
+
+215
+00:46:15,315 --> 00:46:36,175
+Kullanarak yapmalısınız, yapabilmelisiniz. Buna imkan sağlamalıdır karşı taraf diyor. Ben mesela bir yer sağlayıcıya bir şey söyleyeceğim. Mesela orada bir e-posta adresi, iletişim et bilmem ne kon. Oraya gerçekten posta atabilmeliyim ve oradaki posta attığım posta işleme alınmalı. Tam olarak bunu söylüyor buradaki Fıkra.
+
+216
+00:46:38,931 --> 00:47:01,211
+Bu iptal edildi. Tabii 2014'te. O yüzden bu yok. Bunu kaldırmış bilgilendirme yükümlüğünde. Şimdi şeyden başlayalım. İçerik sağlayıcılardan. İçerik sağlayıcının sorumluluğu nedir? Madde 4'te bunlar tanımlanıyor. Bakın, içeriği kullanıma sunduğu her türlü içerikten sorumludur. Yani ben bunu yazmadım gibi bir şey söz konusu değil.
+
+217
+00:47:06,387 --> 00:47:28,387
+Aldığınız ya da gittiğiniz başkasına ait içerikten sorumlu değilsinizdir. Fakat diyor ki, sunuş biçiminden bağlantı sağladığı içeriği benimsediği ve kullanıcının o içeriğe ulaşmasını amaçladığı açıkça belliyse, genel hükümlere göre bu içerik sağlayıcı da sorumludur diyor. Yani siz öyle bir şey yaptınız ki, yani işte...
+
+218
+00:47:28,724 --> 00:47:49,504
+Ben söylemedim, bunu ben yazmadım, [öğrenci] yazdı gibi bir şey ama link bir tane, başka hiçbir şey yok. İlla ki ona gireceksiniz, başka yolunuz yok. Ya da bir iframe'in içinde onu gösteriyorsunuz. Yani açık bir şekilde, bu benim değil, zaten başkasının sitesi diyemezsiniz. Onu oraya bilerek, isterek görünsün diye koyduğunuz durumda siz de sorumlusunuz diyor.
+
+219
+00:47:57,076 --> 00:48:08,516
+Başkanlığın görevini ifası konusunda talep ettiği bilgileri, buradaki iletişim başkanlığı bu tabii ki. Bunu söylemekte fayda var.
+
+220
+00:48:11,411 --> 00:48:36,011
+İletişim Başkanlığı'na teslim etmekte yükümlü. Ve başkanlıkça şu içeriği kaldır şeklinde bir tedbir, ihtiyati tedbir kararıyla bir emir verildiğinde de bu tedbiri yapmakla yükümlü. Yani işte şu sayfaya erişimi kaldır dedin ya da buradaki içeriği yok et dediğinde, erişilemez kıl dediğinde yok ben yapmıyorum kardeşim kafama göre diyemiyorsunuz. Bu sizin içerik sağlayıcı olarak sorumluluğunuz.
+
+221
+00:48:37,427 --> 00:48:58,367
+Şimdi geldik yer sağlayıcılara. Hosting diye özetlemiştik ya. Yer sağlayıcılar, siz bir hostingsiniz. Orada işte bir site yayın yapıyor. Zararlı içerik sunuyor. Siz bu içeriği kontrol etmek ya da burada hukuka aykırı bir faaliyet var mı yok mu diye araştırmakla yükümlü değilsiniz. Yani bu sizin yükümlülüğünüz değil. O içerik sağlayıcının yükümlülüğü.
+
+222
+00:49:05,427 --> 00:49:09,847
+Durum söz konusu değil. Siz ona karışmıyorsunuz. Siz çünkü yer sağlama yükümlüne sahipsiniz.
+
+223
+00:49:11,367 --> 00:49:21,527
+Tamam. Yer sağlayıcı yine ama burada 8. ve 9. maddelere göre haberdar edilirse buradaki yayını durdurmak da yükümlü.
+
+224
+00:49:21,687 --> 00:49:31,087
+Yani oraya erişimi kesmekle yükümlü. Ve kayıt sorumluluğu da var. Şu şekilde.
+
+225
+00:49:32,019 --> 00:49:59,779
+Yer sağladığı hizmetlere ilişkin trafik bilgilerini bir yıldan az ve iki yıldan fazla olmamak üzere yine yönetmelikte belirlenecek süre kadar saklamakta yükümlü. Tamam ve bunu doğru bir şekilde, bütün şekilde, gizli şekilde saklamakta yükümlü. Niye? Sorduğumuzda söyleyebilsin diye. Minimum bir yıl, maksimum iki yıl. Gördünüz mü? İki yılı geçtikten sonra aslında verileri yok etmeniz gerekiyor. Yer sağladığınız hizmetlerin kayıtlarını. Yoksa ne oluyor? Yok etmeme suçunu.
+
+226
+00:50:00,000 --> 00:50:05,000
+Yer sağlayıcılar.
+
+227
+00:50:06,963 --> 00:50:23,203
+Yer sağlayıcıları da yaptıkları işin niteliğine göre, mesela bulut bilmem nesi mi sağlıyor, depolama servisi mi sağlıyor, hosting mi yapıyor gibi bunların niteliklerine göre yönetmelikte sınıflandırabilirim.
+
+228
+00:50:23,203 --> 00:50:33,963
+Ve bu sınıflandırmalara göre bunları farklılaştıracak şekilde tanımlayabilirim. Bu da herkes aynı değil.
+
+229
+00:50:34,963 --> 00:50:55,764
+Yer sağlama konusunda başka hizmetler varsa bunları farklılaştırabilirim diyor dördüncü fıkrası bu yer sağlayıcı yükümlülükleri maddesinin. Yine eğer başkanlık bilgi talep ederse onları mutlaka vermekle yükümlü ve yine bir tedbir alınacaksa o tedbirleri yerine getirmek de yükümlü.
+
+230
+00:50:56,884 --> 00:51:19,583
+Yer sağlayıcılık bildiriminde bulunmazsanız ya da bu söylediğimiz yükümlülükleri bir yer sağlayıcı olarak yerine getirmezseniz 10 bin lirayla 100 bin lira arasında idari para cezası tanımlanmış durumda. Bu kanun 2004'te yazıldığında iyi paraydı. Şu anda biraz daha komik kalmış durumda. Yönetmeliklerle onları bir şekilde herhalde arttırıyorlardır diye düşünüyorum.
+
+231
+00:51:19,583 --> 00:51:24,243
+Şimdi geldik erişim sağlayıcıya yani Hinten Hizmet Sağlayıcıların yükümlülüklerine.
+
+232
+00:51:24,659 --> 00:51:49,859
+İşte bu da mesela kanun uygun olarak haberdar edildiğinde erişimi engellemekle yükümlü. Sağladığı hizmetlere ilişkin kayıtları 6 aydan az olmamak, yani minimum 6 ay, maksimum 2 yıl yönetmelikle belirilecek süre boyunca tutmakla yükümlü. Bu erişim kayıtları, internete erişim kayıtları diyelim özetle.
+
+233
+00:51:50,708 --> 00:52:12,888
+Tamam. Erişme engelleme kararı verilen yayınlarla ilgili alternatif erişim yollarını engelleyici tedbirleri de almalı diyor. Yani işte VPN, VPN. Gerçi VPN'e ne yapacak da farklı bir şekilde erişim sağlanmasını da bir şekilde sağlamakta yükümlü. Onun yapılmaması sağlamakta da yükümlü diyor.
+
+234
+00:52:13,708 --> 00:52:18,208
+Tamam. Yine bir talep ettiğinde bilgi başkanlığa verilmelidir.
+
+235
+00:52:18,708 --> 00:52:30,248
+Tedbir alınacaksa bu işlemleri yerine getirmelidir. Yine içerikle alakalı herhangi bir kontrol yükümlülüğü yoktur. Aynı yer sağlayıcı gibi.
+
+236
+00:52:30,248 --> 00:52:43,788
+Ve eğer sorumluluklarını yerine getirmezse o da işte 10 bin liradan 50 bin liraya kadar idari para cezası ile cezalandırılır diyor. İnternet kanununda erişim sağlayıcılara verilen yükümlülükler ile.
+
+237
+00:52:44,500 --> 00:53:07,719
+Şimdi burada 2014'te bir güncelleme yine. Madde 6a, Erişim Sağlayıcıları Birliği. Ne oldu? 8. madde, 8. maddeyi şuraya koymuştum değil mi? Evet, şuradaki şeyler. 8. madde kapsamında erişim engellenmesi kararlarının uygulanması için Erişim Sağlayıcıları Birliği kurulmuştur. Yani bu şey gibi.
+
+238
+00:53:08,115 --> 00:53:35,655
+Ya arkadaş, bir tane şeyi engelleyeceğiz. Wikipedia'ya erişimi engelleyeceğiz. Türksel'e ayrı yazıyoruz. SuperOnline'e ayrı yazıyoruz. Ondan sonra işte ne bileyim Türk Telekom'a ayrı yazıyoruz. Ivır'a ayrı, kıvır'a ayrı yazıyoruz. Ben anlamam. Bir tane birlik olsun. Ben birliğe yazayım. Ondan sonra o bu işte verdiğim emrin hepsinde otomatik olarak yapılmasından o sorumlu olsun. Buna da erişim sağlayıcı ile birliği deniyor. İşte özel hukuka bağlı bir tüzel kişiliktir. Ankara'dadır.
+
+239
+00:53:36,115 --> 00:53:44,735
+Biz tüzükle bunun nasıl çalışacağını, iletişim başkanlığı mıydı neydi o kurum tarafından belirleniyor.
+
+240
+00:53:49,907 --> 00:54:13,227
+Tüzüğün kurum tarafından incelenek uygun bulunmasıyla faaliyetine başlıyor. 2008 sayılı, 5809 sayılı elektronik haberleşme kanunu kapsamında yetkilendirilmiş olan tüm internet servis sağlayıcıları ile internet erişim hizmeti veren diğer işletmecilerin katılmasıyla oluşan ve koordinasyon sağlayan bir kuruluştur.
+
+241
+00:54:13,227 --> 00:54:17,788
+Ne dedik? Hepsini bir çatı altında topluyoruz. Biz artık birlikle muhatabız.
+
+242
+00:54:17,907 --> 00:54:24,887
+Yani ben bir şeyi söylediğimde erişimi engellenme kararını hepsine lap diye bu birlik sayesinde gitmesini sağlayacağım diyor.
+
+243
+00:54:24,887 --> 00:54:30,288
+İşte yine 8. madde dışındakilerin engelleme kararları birliğe yollanır.
+
+244
+00:54:31,127 --> 00:54:37,187
+Birliğe ben bunu yolladığımda bütün erişim sağlayıcılara bunu söylemiş sayarım kendimi diyor.
+
+245
+00:54:37,811 --> 00:54:51,471
+Birlik kendisine gönderilen ve mevzuata uygun olmadığını düşündüğü kararlara itiraz edebilir. Tabi bu itirazda bir şeye, mahkeme bakıyor, yerinde buluyor ya da reddediyor.
+
+246
+00:54:54,132 --> 00:55:06,152
+Biraz karışık olabiliyor bildiğiniz gibi. Yine bunun gelirleri üyelerden ödenecek ücretlerle oluşturuluyor. Bu ücretler işte buranın giderlerini karşılayacak miktarda belirlenir.
+
+247
+00:55:07,188 --> 00:55:26,168
+Herkes gücü kadar ödeme yapar şeklinde özetleyebiliriz bu maddenin geri kalınlığı. Yeni katılanlar olduğunda da nereden itibaren nasıl ödeyecek falan filan bunları da biz TÜZÜK'te yazacağız. TÜZÜK'ten okuyun onları diyerek Erişim Sağlayıcıları Birliği'nin tanımını yapmış oluyor.
+
+248
+00:55:26,168 --> 00:55:35,028
+Ve bu birliğe üye olmadan herhangi bir şekilde bir hizmet sağlama faaliyeti gerçekleştiremezsiniz diye orada da bir noktayı koyuyor.
+
+249
+00:55:35,188 --> 00:55:37,288
+5651.
+
+250
+00:55:38,068 --> 00:55:40,508
+Toplu kullanım sağlayıcılar
+
+251
+00:55:40,508 --> 00:55:42,688
+dedik işte ne olduğunu tanımladık.
+
+252
+00:55:44,188 --> 00:55:46,688
+Bir kere siz böyle bir toplu
+
+253
+00:55:46,688 --> 00:55:48,728
+kullanım internet erişim hizmeti vereceksiniz
+
+254
+00:55:48,728 --> 00:55:50,508
+mahalli mülkü amirden
+
+255
+00:55:50,508 --> 00:55:52,407
+izin belgesi almanız gerekiyor.
+
+256
+00:55:53,748 --> 00:55:54,688
+Bunlar da
+
+257
+00:55:55,284 --> 00:56:05,824
+30 gün içinde, ya şöyle bir otel, şöyle bir şey, internet hizmeti vermek istiyor ya da şu kafe, restoran bu hizmeti vermek istiyor diye İletişim Başkanlığı'na bunu 30 gün içinde bildiriyor.
+
+258
+00:56:06,724 --> 00:56:13,424
+Ve denetimde yine mahalli, mülki, amir üzerinde, işte hani şey, vali, kaymakam gibi düşünün bunu.
+
+259
+00:56:15,104 --> 00:56:18,004
+Bunlar, tamam. Sonrasında...
+
+260
+00:56:18,516 --> 00:56:32,936
+Suç konusu oluşturan içeriklere erişimin engellenmesi ve kullanıma ilişkin erişim kayıtlarının tutulmasıyla alakalı gerekenleri yapmalılar. Yani bu tedbirleri almaları gerekir diyor. Yine kayıt altına almak için trafiği orada.
+
+261
+00:56:34,315 --> 00:56:44,275
+Yine ailenin ve çocukların korunması, suçun önlenmesi ve suçluğun tespiti kapsamında yapılması gerekenleri de yapmalıdır. Filtrasyon diyelim özetle.
+
+262
+00:56:45,940 --> 00:56:50,340
+Hani kumar sitelerine girişi engellemesi gerekiyor falan diyelim en basında.
+
+263
+00:56:54,612 --> 00:57:13,731
+Bunu, bu maddede söylenenleri yapmadan bu hizmeti sağlarsanız, toplu kullanımı sağlarsanız ya da kayıt olmadan bunları yaparsanız çeşitli cezalar veriliyor. Ya da ticari faaliyetleriniz durdurulabiliyor. Buna da yine Mahalli Mühkamir karar verebiliyor.
+
+264
+00:57:15,507 --> 00:57:33,788
+Şimdi bu madde 7 toplu kullanım sağlayıcılardı. Madde 8'e geldiğimizde bu şey bir madde, hani çok böyle bilinen ve karşılaştığımız bir, sonuçlarıyla karşılaştığımız bir madde. Erişimin engellenmesi kararı ve bu kararın nasıl yerine getirileceğin usulü.
+
+265
+00:57:33,788 --> 00:57:43,507
+Madde 8 okuyalım. İnternet ortamında yapılan ve içeriği aşağıdaki suçları oluşturduğu hususunda yeterli şüphe sebebi bulunan yayınlarla.
+
+266
+00:57:43,507 --> 00:57:57,288
+İlgiyle erişim engellenmesi karar verilir. Nedir bunlar? A şıkkında 5237 TCK'da yer alan, baktık ya sizinle, son yarım saat önce baktık.
+
+267
+00:57:57,844 --> 00:58:12,784
+İntihar, cinsel istismar, uyuşturucu, sağlık için tehlikeli, müstehcenlik, huş, kumar. Şu maddelerle alakalı suçları oluşturduğu hususunda yeterli şüphe varsa ben buraya erişimin engellenmesi kararını verebilirim.
+
+268
+00:58:13,364 --> 00:58:24,604
+Yani B şıkkı, 5816 sayılı Atatürk aleyhine işlenen suçların da direkt olarak erişimin engellenmesi kararının verilmesini gerektirir diyor.
+
+269
+00:58:24,604 --> 00:58:30,784
+Şimdi buradaki suçlar, bu kanunda yer alan suçlar.
+
+270
+00:58:31,123 --> 00:58:59,103
+Diyelim erişime engellenmesi kararı verilecek. Soruşturma evresinde bunu hakim verebilir. Yani savcı kafasına göre ben bu siteye erişime engellettireceğim kardeşim diyemez. Bunu haklı sebepleriyle talebini mahkemeye yani bir suç ceza hakimliğine bildirir. Suç ceza hakimliği buna karar verir. Yani erişime engellensin. Evet burada makul şüphe var. Yeterli şüphe var. Ben de buna ikna oldum. O zaman buna bu sayfaya erişim engellensin denebilir soruşturma aşaması.
+
+271
+00:58:59,123 --> 00:59:11,523
+Eğer bir dava açıldı ve mahkeme sürüyorsa, yani kovuşturma evresindeyse o zaman zaten mahkemenin hakimi var. Mahkemenin hakimi burada erişim engellenmesi kararını verebilir. En azından mahkeme bitene kadar.
+
+272
+00:59:11,523 --> 00:59:27,123
+Eğer Cumhuriyet Savcısı bunu istiyorsa kararını 24 saat içinde hakimin onayına sunması gerekiyor. Hakimin de kararını en geç 24 saat içinde vermesi gerekiyor. Karar onaylanmazsa tedbir hemen kaldırılabilir.
+
+273
+00:59:27,123 --> 00:59:49,283
+Sınırlı, süreyle de erişime engellemesi verilebilir diyor. Burada da yine buna yapılan itiraz usulü de 5271, biraz önce bir maddesini görmüştük. Buradaki hükümlere göre itirazda hakkınız vardır diyor. Yani sizin sayfanıza erişim engellendi.
+
+274
+00:59:50,291 --> 01:00:13,771
+Siz itiraz edebiliyorsunuz. 5271'in ilgili hükümleri gereğince. Ve diyelim ki hakim, mahkeme ya da savcı erişim engellenmesi kararını verdi. Bunun örneğine nereye yolluyor? İletişim Başkanlığı. İletişim Başkanlığı nereye yolluyor? Hizmet Sağlayıcıları Birliği'ne yolluyor. İşte oradan çat diye erişimin engellenmesi kararı veriliyor.
+
+275
+01:00:14,320 --> 01:00:24,180
+Şimdi burada dördüncü madde sekizin dördüncü fıkrasıyla, şöyle burası biraz uzun, gördüğünüz gibi on altı tane fıkrası var. Ama üzerinden geçmek istiyorum.
+
+276
+01:00:25,588 --> 01:00:43,108
+Yani tamam, içerik veya yer sağlayıcı yurt dışında bulunuyorsa ya da içerik yer sağlayıcı yurt içinde olsa bile işte A bendinin 2, 5, 6 numaralı alt bendlerinde yazılı suçları yani şunları 2, 5, 6.
+
+277
+01:00:43,108 --> 01:00:52,788
+Hop nereye gittik ha? Suçları oluşturan yayınlara ilişkin erişim engellenmesi kararını başkanlık direkt reysen verebilir.
+
+278
+01:00:53,523 --> 01:01:06,864
+Yani burada mahkemeyi de, hakimdi, savcıyı da uğraşmayın. Çok hızlı bir şekilde yerine getirmek amacıyla başkanlık tarafından buradaki erişim verilebilir diyor.
+
+279
+01:01:07,543 --> 01:01:13,163
+Çok affedersiniz, cevap vermem gereken bir şey var. Onu hemen halledeyim.
+
+280
+01:01:35,956 --> 01:01:50,456
+Tamam, tamam. Erişim engellenmesi kararı işte kararın bildirilmesinden itibaren 4 saat içinde yerine getirilir. Çok hızlı olması gerekiyor diyor buradaki erişim engellenmesi kararının.
+
+281
+01:01:51,576 --> 01:02:03,956
+Tamam, eğer buradaki yayını yapanların kimlikleri belirlenebiliyorsa bunlar da belirlenince hemen başkanlık, iletişim başkanlığı Cumhuriyet Başsavcılığına suç duyurusunda. Yani bu kişiler bu suçu işlemiştir diye.
+
+282
+01:02:03,956 --> 01:02:06,856
+Suç duyurusunda bulunuyorlar.
+
+283
+01:02:08,148 --> 01:02:26,668
+Bu soruşturma sırasında erişim engellenmişti ve soruşturmanın sonucunda şu ortaya çıktı. Kovuşturmaya gerek yok. Yani aslında burada bir şey oluşmamış, bir suç unsuru oluşmamış diye bir karar verildi diyelim savcılık tarafından. O zaman erişim engellenmesi kararı kendiliğinden hükümsüz kalıyor.
+
+284
+01:02:26,668 --> 01:02:36,128
+Ama bunu da hükümsüz kalarak işletim alınabilmesi için doğal olarak kovuşturmaya yer olmadığına dair kararın savcı tarafından başkanlığa yollanması gerekiyor ki.
+
+285
+01:02:36,148 --> 01:02:51,508
+Hemen şurada 4 saat içinde erişim engeli kaldırıla. Kovuşturma evresinde yani mahkeme sürerken diyelim ki beraat kararı suçsuz bulundu. O zaman yine aynı şekilde erişim engeli kararı hükümsüz kalıyor.
+
+286
+01:02:51,508 --> 01:03:01,168
+Ve bunun için de mahkemenin kararın bir örneğini başkanlığa yollaması gerekiyor. Burada mesela mahkeme yollamayı böyle uzatabilir, uzatırsa ne olur?
+
+287
+01:03:01,715 --> 01:03:21,596
+Erişim engeli, siz beraat etmiş olsanız bile işlemeye devam eder. O konuda ne yapılır? O konuda bir şey yapılmıyor diye biliyorum. Yani öyle ben burada manevi maddi zararı uğradım diyemiyorsunuz. Maalesef orada şey kapalı. Bir yerde kapatmak gerekiyor. Yani aslında sınırları koymak gerekiyor. Tamam.
+
+288
+01:03:22,260 --> 01:03:44,200
+Şimdi bu birinci fıkrada sayılan suçları oluşturan içerik yayından çıkarıldı. O zaman Cumhuriyet Savcısı ya da mahkeme, kimse kavuşturma ya da soğuşturmayı yapan şeyi, tamam buradaki zararlı içerik artık yok, o zaman erişimi kapatmaya da gerek yok, erişimi açalım şeklinde bir karar, yani kaldırma kararı verebiliyor.
+
+289
+01:03:44,692 --> 01:04:03,152
+Bunu yaptık, bir erişim engeli kararı verdik. Bunu yerine getirmezse yer ya da erişim sağlayıcıları o zaman yine işte bakın gördüğünüz gibi 500 günden 3000 güne kadar adli para cezası. Vay arkadaş ben kapat dedim. Sen niye kapatmıyorsun? Al sana ceza şeklinde 10. fıkra da bunu söylüyor.
+
+290
+01:04:04,467 --> 01:04:29,607
+Tamam, tamam. Yine gelişim sağlayıcısına verilecek ceza 11'de tanımlanmış. Eğer itiraz edilecekse onun yolu da işte 2577 sayılı kanun usullerince yapılmalıdır şeklinde 12. fıkra. 13. fıkrada işte yine şey yapılabilir, kararlara itiraz edilebilir diyor. 14. fıkra.
+
+291
+01:04:30,003 --> 01:04:49,823
+Burada da şans oyunları hasılatından alınan vergi fon payların düzenlenmesi hakkında kanundaki tanımlar gereğince orada tanımladığımız kurum kuruluşlar kendi görev alanına giren suçların internet ortamında işlendiğini tespit ederlerse or erişime engellenmesi kararını alabilirler.
+
+292
+01:04:49,823 --> 01:04:56,883
+Bunlar yine iletişim başkanlığına, telekomünikasyon iletişim başkanlığına gönderilir diyor.
+
+293
+01:04:58,003 --> 01:05:10,183
+Piyango diyelim şey yapabilir diyor. Yasa dışı işte piyango sitesi tespit ettiğinde bunu bize şey yapabilir, söyleyebilir ve biz de onu kapatırız.
+
+294
+01:05:10,183 --> 01:05:14,803
+Erişimini engelleyebiliriz diyor 14. fıkra.
+
+295
+01:05:16,148 --> 01:05:31,128
+15'te de soruşturma aşamasındaki hakim kararını suç ceza mahkemeleri verir diyor. Şimdi suç ceza mahkemesi kalmadı. Suç ceza hakimliği oldu bunlar. Sadece bu tip kararları verebiliyorlar.
+
+296
+01:05:32,148 --> 01:05:37,788
+16. şey analisa mahkemesi tarafından iptal edilmiş 16. fıkra internet kanununda.
+
+297
+01:05:38,096 --> 01:06:00,876
+Peki, şimdi madde 8'e devam ediyoruz. Madde 8A'ya geldik. 2015 yılında eklenen madde 8A. Bu da daha hızlı olunması gereken durumlar. Yani gecikmesinde sakınca bulunan hallerde içeriğin çıkarılması ve erişimin engellenmesinin nasıl olacağını tanımlıyor. Nedir bunlar? Yaşam hakkı ile ilgili.
+
+298
+01:06:01,311 --> 01:06:12,152
+Kişilerin can ve mal güvenliğinin korunması. Yani bir aleni tehdit var. Adını, adresini veriyorlar. Gidin bunun evini yakın diye şey yapıyorlar. Sayfa, internette haber mesela.
+
+299
+01:06:14,532 --> 01:06:24,271
+Bu gibi bir korunmanın sağlanması için, milli güvenlik ve kamu düzeninin korunması için, suç işlenmesinin önlenmesi ya da genel sağlığın korunması için.
+
+300
+01:06:24,724 --> 01:06:40,704
+Bunların biri de olabilir, birkaçı da olabilir. Hakim veya gecikmesinde sakınca bulunan hallerde başbakanlık, ki başbakanlık da artık yok biliyorsunuz, ya da milli güvenlik kamu düzenini, gidiyor gidiyor gidiyor gidiyor, şuraya kadar geliyorum.
+
+301
+01:06:40,704 --> 01:06:47,544
+Diyor ki, başkanlık tarafından erişim engeli kararı yine verilebilir.
+
+302
+01:06:48,340 --> 01:07:07,800
+Hiç böyle şeye bakmadan, hakimdi, savcıydı, mahkemeydi, oralara kadar gitmeden iletişim başkanlığı bu kararı verebilir. Derhal hemen şeylere bildirilir ve 4 saat içinde yine buradaki erişim engeli ya da içeriğin çıkarılması talebi yerine getirilir. Sonrasında...
+
+303
+01:07:07,800 --> 01:07:10,880
+Hocam bu erişim engeli, habere erişim engeliyle aynı şey mi?
+
+304
+01:07:11,119 --> 01:07:11,860
+Aynı, evet.
+
+305
+01:07:12,259 --> 01:07:16,300
+Hocam onun mantığı ne ya? Çok garip ve komik bir olay oluyor. Habere erişim engeli getiriliyor.
+
+306
+01:07:16,340 --> 01:07:18,039
+Ama haber her tarafta duyuluyor.
+
+307
+01:07:18,480 --> 01:07:18,659
+Evet.
+
+308
+01:07:19,300 --> 01:07:20,579
+Niye böyle bir engel gel?
+
+309
+01:07:20,820 --> 01:07:23,539
+Engel gelmesen çoğu şeyde kimsenin haberi olmayacak.
+
+310
+01:07:24,059 --> 01:07:25,820
+Şu şu şu haber başlığında hepsini yazıyorlar.
+
+311
+01:07:25,920 --> 01:07:26,659
+Bütün haberi yazıyorlar.
+
+312
+01:07:26,800 --> 01:07:29,619
+Haberine erişim engeli getirir diye bir haber daha yapıyorlar.
+
+313
+01:07:30,059 --> 01:07:30,280
+Evet.
+
+314
+01:07:30,280 --> 01:07:31,800
+O haberde erişim engeli geliyor da.
+
+315
+01:07:32,019 --> 01:07:32,320
+Evet.
+
+316
+01:07:32,500 --> 01:07:33,280
+Komik bir durum oluyor.
+
+317
+01:07:33,760 --> 01:08:01,640
+Yani şöyle, aynen öyle. Yani böyle bir durum var. Siz işte ne kadar engel koyarsanız o engeli aşmanın başka bir yolu bulunur. Değil mi? Ondan sonra kanunlarda böyle oluyor. İşte maddeler fıkra fıkra fıkra fıkra gitmeye başlıyor. Her bir özel koşulu kapatmaya çalışıyorsunuz. Şey gibi işte kedi fare oyunu gibi dediğin gibi mesela bir tane habere erişim engelleniyor. Ondan sonra şu habere erişim engeli getirildi diye başka bir haber çıkıyor dediğin gibi. Ne oldu? Zaten duyulmuş.
+
+318
+01:08:01,760 --> 01:08:16,860
+Yani kanunun koruması burada biraz zayıf kalıyor diyebiliriz aslında. Bu konuda haklısın. Dediğin gibi hiç ellemesek belki daha şey olacak. İnternetin özgür ortamına bıraksak kendimizi belki daha faydalı bile olabilir.
+
+319
+01:08:16,860 --> 01:08:29,720
+Tabii ama şeyler önemli. Şimdi dedim ya, hedef gösteriyorsunuz bir kişiyi ya da işte milli güvenlik ya da kamu düzeni gibi şeylerde bunlar ciddi konular. Bu konularda erişim engeli ya da içeriğin çıkarılması.
+
+320
+01:08:29,760 --> 01:08:57,220
+Kararı yerine getirilmesi gerekiyor. Şimdi ben bunu başkanlık olarak yaptım. Ben yaptım, bitti demiyor. Şeyi de hemen 24 saat içinde hakimliğe ya da işte savcılığa başvuruyor. Yani diyor ki bakın biz şu durumda olayın gecikmesinde sakınca olduğu için 4 saat içinde biz buna erişmeyi engelledik ama buyurun bakın siz de kararınızı söyleyin. Hakim de kararını 48 saat içinde açıklıyor.
+
+321
+01:08:57,760 --> 01:09:08,699
+Ve erişim engeli devam ediyor. Ya da diyor ki, yok olmaz öyle şey. Karar kalkıyor. Yani oraya erişim engeli otomatik olarak açılmış oluyor diyelim.
+
+322
+01:09:09,260 --> 01:09:24,659
+Peki bunlar nasıl yapılabilir erişim engelleri? İhlalin gerçekleştiği yayın, kısım ya da bölüm ile ilgili olarak, mesela belirli bir URL şeklinde içeriye erişimin engellemesi yöntemiyle verilir. Bu şeydi hatırlarsanız.
+
+323
+01:09:24,756 --> 01:09:52,115
+Wikipedia uzun süre kapalı kaldı muhabbeti. Neden? Wikipedia'nın komple domenine erişim engeli getirilmişti. Nihayetinde oradaki o iki tane makalenin zararlı içerik olduğu söyleniyordu. Wikipedia'da onu çıkarmıyordu içerikten. Ne oldu? Sadece o URL'lere, yani o bölümle ilgili, o kısımla ilgili erişim engeli getirilerek kalan içeriğe erişilebilmesi.
+
+324
+01:09:52,756 --> 01:10:11,564
+Bu konuda örneğe bakalım.
+
+325
+01:10:12,212 --> 01:10:24,452
+Sonrasında yine bunu kim yapıyorsa, gerçekten bu içeriği kim yazdıysa, kim oluşturduysa yine başkanlık Cumhuriyet Savcılığına bunlar hakkında suç duyurusunda bulunuyor.
+
+326
+01:10:24,452 --> 01:10:40,212
+Bunların kim olduğunu tespit etmek için içerik sağlayıcı, elindeki bilgileri, kayıtları, yer sağlayıcı ve erişim sağlayıcı IP'sini, bağlandığı şeyini, hangi lokasyonda olduğunu, kullandığı tarih saatleri, hangi hizmetleri aldığı.
+
+327
+01:10:40,212 --> 01:10:56,872
+Hangi yer sağlayıcının buna hizmet verdiğini, ne hizmet verdiğini, ıvırını kıvırını her şeyini dökmekle kayıtlardan yükümlüler. Eğer bunları yapmazlarsa, bir şekilde saklarlarsa onlara da yine şurada gördüğünüz gibi 3 bin gün, 10 bin gün arası para cezası uygulanıyor.
+
+328
+01:11:08,212 --> 01:11:26,051
+Yer sağlayıcılar olarak idari para cezası alıyorsunuz. 5651 madde 8a uyarınca. Madde 8 buydu. Madde 9'da da içeriğin yayından çıkarılması ve erişimin engellenmesi yine düzenlenmiş durumda.
+
+329
+01:11:28,811 --> 01:11:30,752
+Şurada geri gelecek olursak.
+
+330
+01:11:32,020 --> 01:11:47,140
+Burada erişim engellenmesi kararı nasıl verilecek ve bu erişim engellenmesi kimler tarafından nasıl yerine getirilecek? Bu tanımlanmıştı. Madde 9'da da içeriğin yayından çıkartılması ve erişimin engellenmesi nedir? Bunlar tanımlanmış durumda.
+
+331
+01:11:48,060 --> 01:11:55,280
+Şimdi ben yani birisi olarak bunları nasıl yapabilirim? İlla başkanlık ya da soruşturması yani savcılık ya da hakimlik tarafından değil.
+
+332
+01:11:55,731 --> 01:12:01,072
+Bir yayın var internette ve ben burada kişilik haklarımın ihlal edildiğini iddia ediyorum.
+
+333
+01:12:01,072 --> 01:12:04,292
+Yani bu bana küfür ediyor ya da bu beni hedef gösteriyor diye.
+
+334
+01:12:04,912 --> 01:12:10,431
+O zaman içerik sağlayıcısına gidiyorum ben. Gerçek ya da güzel bir kişi olarak.
+
+335
+01:12:10,572 --> 01:12:17,851
+Diyorum ki içerik sağlayıcısı burada benimle alakalı, benim kişilik haklarımı ihlal eden bir yazı var ya da bir içerik var diyorum.
+
+336
+01:12:18,355 --> 01:12:35,456
+Eğer buna ulaşamıyorsam yer sağlayısına gidiyorum. Sayın hosting firması bu sitenin şu sayfasında benimle alakalı şöyle yalan haber var. Bu benim kişilik hakkımı ihlal ediyor. Bunları yayından çıkartın, içeriği oradan kaldırın ya da buna erişimi engelleyin diye bir talepte bulunabiliyor.
+
+337
+01:12:35,840 --> 01:12:46,260
+Direkt olarak içerik ya da yer sağlığına gidip. Ama bunu takmak zorunda değil biraz öyle söyleyelim. Ya da siz yine kişi olarak doğrudan suç ceza hakimliğine gidip.
+
+338
+01:12:46,543 --> 01:13:13,283
+Bakın şu adresle benimle alakalı şöyle şöyle haksız bir şey var. Haklarımı ihlal eden içerik var. Buna erişimin engellenmesini talep ediyorum da diyebilirsiniz. Şimdi ne oldu? Ben artık bir şahıs olarak diyeyim. Şey yaptım. Burada benimle alakalı kötü bir şey var diye söylemiş oldum. Sonrasında yine bunun cevabı 24 saat içinde talep yerine getiriliyor. Hakim yine erişim engeli kararı verebiliyor.
+
+339
+01:13:14,036 --> 01:13:33,855
+Bu aslında yine esas olarak sadece nokta atışı bir içeriğin engellenmesi ya da o içeriğin kaldırılması kararını vermeye çalışıyor. Ama eğer yapamıyorsa o zaman yine bütün içeriği, bütün internet sitesini kapattırabilirsiniz. O da işte biraz tabii kötü niyet oluyor aslında diyebiliriz.
+
+340
+01:13:42,036 --> 01:14:02,976
+Onları biliyorsunuz yine yapıyor. Eğer içerik yayından çıkarıldıysa o zaman hakimin kararı kendiliğinden hükümsüz kalıyor. Yani siz gittiniz gidene kadar adam sildi. Yapacak bir şey yok. O zaman erişim engeli zaten olmadığı için o içerik verilememiş oluyor. Yani hükümsüz kalmış oluyor.
+
+341
+01:14:05,615 --> 01:14:07,735
+İfası da en geç dört saat içinde.
+
+342
+01:14:09,140 --> 01:14:33,159
+Yine erişim sağlayıcı tarafından yerine getiriliyor. Başka internet adreslerinde yayınlanması durumda da şöyle ki siz bir tane haberi engellettiniz. Başka sitelerde de aynı haber yayınlanmaya devam ediyor sizinle alakalı. Birininle ilgili karar çıktı ama diğerlerine de aynı erişim engelli kararını direkt başkanlığa söyleyerek yaptırabiliyorsunuz.
+
+343
+01:14:33,619 --> 01:14:47,359
+Ve bunu yapmayan, oradaki içeriye erişimi engellemeyen ya da içeriği kaldırmayan taraflar, sorumlu olan taraflar yapmıyorlarsa yine 500 günden 3000 güne kadar adli para cezasıyla cezalandırılıyorlar.
+
+344
+01:14:48,839 --> 01:14:57,159
+Tamam, bu da şahıs olarak diyeyim yani. Tamam, yine özel hayatın gizliliğini ihlal nedeniyle de başkanlığa doğrudan başvurabilirsiniz.
+
+345
+01:14:58,739 --> 01:15:11,460
+Hangi açılardan sizin özel hayatınızın gizliliği ihlal ediliyor? Bunları açıklamanız ve kimlik bilgilerinizi ispatlayacak bilgilerinizi vermeniz gerekiyor. Bunları düzgün bir şekilde açıklamazsanız talebiniz işleme konulmuyor.
+
+346
+01:15:11,460 --> 01:15:24,420
+Eğer böyle bir şey varsa nokta atışı esas olmak üzere en geç 4 saat içinde buradaki içeriğe erişim engelleniyor ya da içerik yayından çıkartılıyor.
+
+347
+01:15:25,140 --> 01:15:45,159
+Ve sonrasında ne oluyor? Başkanlık hemen hızlı olsun diye erişimi engelledi ya, yine hakime gidiliyor, suç ceza hakimine. Suç ceza hakimi bakıyor, değerlendiriyor, ona göre karar veriyor 48 saat içinde. Ve sonrasında da başkanlığa tamam, bu erişim engeli devam etsin gibi bir kararını söylüyor.
+
+348
+01:15:45,159 --> 01:15:53,140
+Ya da yok, burada bir sıkıntı yokmuş, erişim engeli kaldırın diyor. Yine erişim engeli otomatik.
+
+349
+01:15:53,140 --> 01:15:57,039
+Teknik olarak hükümsüz ya da kalkmış oluyor diyelim.
+
+350
+01:15:57,859 --> 01:16:07,380
+Tamam. Yine ceza muhakemeleri usulü kanuna göre itiraz edilebilir. Hakimin kararına başkan itiraz edebilir.
+
+351
+01:16:08,840 --> 01:16:16,420
+İçerik yayından zaten çıkarıldıysa o zaman hakimin kararı yine hükümsüz kalıyor. Olmayan içerik hakkında erişim engeli veremeyeceği için.
+
+352
+01:16:16,420 --> 01:16:17,640
+Tamam.
+
+353
+01:16:18,323 --> 01:16:28,123
+Yine özel hayatın gizliğinin ihlaline bağlı olarak gecikmesi sakıncalı olacak şeyler varsa başkanlık direkt olarak şey yapabiliyor.
+
+354
+01:16:28,595 --> 01:16:38,375
+Bu erişim engelini getirebiliyor. Sonrasında yine 24 saat içinde mahkemeye bunu söylemekle mükellef iletişim başkanlığı.
+
+355
+01:16:38,375 --> 01:16:44,535
+Yani özetle kişisel olarak nasıl başvuracağız? Nereye başvurmalıyız?
+
+356
+01:16:46,868 --> 01:17:07,708
+Özel hayatın gizliliği, şuradan şey yapayım, özel hayatın gizliliği ya da işte tehditle alakalı şeyler ne olması gerekiyor ya da kişilik hakları ihlal ediliyorsa siz nereye nasıl başvurmalısınız ve buradaki süreç nasıl işlemeli? Bunlar da madde 9 içinde tanımlanmış. Madde 9 ve madde 9A'da tanımlanmış durumda.
+
+357
+01:17:09,268 --> 01:17:25,828
+5.651'e de aslında bir açıp okursanız mevzuat.gov.tr'den iyi olur. Bu konuda da yine bilgi sahibi olmuş olursunuz bütün tanımlarıyla. Dediğim gibi burada ben bütün tanımlarını, amacını, kapsamını falan filanını vermedim ama bunları da inceleyebilirsiniz.
+
+358
+01:17:26,739 --> 01:17:47,159
+Bizimle alakalı popüler kanunlardan bir tanesi 6698 sayılı kişisel verilerin korunması kanunu. Bu da yine Avrupa Birliği uyum yasaları çerçevesinde 2016'da yürürlüğe girdi.
+
+359
+01:17:47,699 --> 01:18:12,579
+2016'dan beri KVKK gereğince kişisel bilgilerimizin işlendiğini, rızamız olmadan şey yapılmadığını, başkalarına verilmediğini, talebimiz halinde silineceğini, ıvırını kıvırını şey yapıyoruz. İşte bu SMS muhabbetleri azalacak demişlerdi hatırlarsınız. Ondan sonra da siz rıza göstermeden hiçbir şeye katılamadığınız için hiçbir kampanyaya mesela zaten kendi kendine yine hükümsüz kalan bir uygulama şekli oluşuyor.
+
+360
+01:18:15,699 --> 01:18:25,899
+Bu şeylerden çıkabilme şansınız oluyor artık. Yok kardeşim, tamam. Ben artık buradan alışveriş yapmayacağım. Sil beni veri tabanından. Ben senin kişisel verilerimi tutma dediğinizde tutmamakla yükümlü.
+
+361
+01:18:25,899 --> 01:18:41,899
+Evet, yine kişisel verilerin işlenmesi konusunda özellikle özel hayatın gizliliği olmak üzere kişilerin temel hak ve özgürlüklerini korumak için bunları kullanan, bu verileri işleyen kim varsa gerçek kişi ya da tüzel kişi bunların...
+
+362
+01:18:42,676 --> 01:18:50,096
+Yapması gerekenleri, nasıl çalışması gerektiklerine uymaları gerekenleri, usul ve esasların ne olduğunu düzenleyen bir kanun.
+
+363
+01:18:50,836 --> 01:19:18,836
+Yine hükümler kişisel verileri işlenen gerçek kişiler ile bu verileri tamamen veya kısmen otomatik ya da herhangi bir veri kayıt sistemin parçası olmak kaydıyla otomatik olmayan yollarla işleyen, işle de nasıl işlersen işle sen 66978'e tabisin aslında. Gerçek ya da tüzel kişi fark etmiyor. Yine hepsi bu kanunun kapsamı içine girmiş durumda. Ama kişisel veriler gerçek kişilere ait olması gerekiyor.
+
+364
+01:19:18,836 --> 01:19:22,695
+Yani tüzel kişinin kişisel verisinden bahsedilmiyor burada.
+
+365
+01:19:24,515 --> 01:19:30,576
+Açık rıza ne demek? Bir konuya ilişkin bilgilendirmeye dayanan ve özgür iradeyle açıklanan rıza.
+
+366
+01:19:30,576 --> 01:19:40,876
+Yani ben kişisel verilerimin işlenmesini onay veriyorum gibi böyle açık rıza verdim diye yapılan işleme açık rıza adı veriliyor.
+
+367
+01:19:42,707 --> 01:20:03,327
+Anonim hale getirme, kişisel verileri başka verilerle eşleştirerek dahi hiçbir surette kimliği belirli ya da belirlenebilir bir kişiyle ilişkilendirilmeyecek hale getirmek. Yani işte adını, soyadını, kimlik numarasını, belki doğum tarihini değiştirmek ya da saklamak. Yani onları vermemek, kullanmamak. Yani öyle bir veri ki...
+
+368
+01:20:03,600 --> 01:20:31,560
+O veriyi okuduğunda şu kişidir diye diyememeniz gerekiyor. Diyemeyecek hale getirdiğinizde o zaman bu veri anonim hale gelmiştir diyebilirsiniz. Mesela bu en çok çeşitli çalışmalarda harcama verileri var. Bakıyorsunuz şunu şunu harcamış, şurada harcamış, bilmem ne olmuş, kesin budur diye böyle bir çıkarım yapamamanız gerekiyor. Bunların filtrasyonlarının yapılması lazım.
+
+369
+01:20:31,600 --> 01:20:53,520
+Anonim hale getirmek budur. Başkan nedir? KVKK kurumunun başkanı. İlgili kişi veri işlenen, yani mesela ben, benim verilerim bir yerde işleniyorsa ben ilgili kişiyim. Kişisel veriler de benimle alakalı, beni belirleyebilecek bütün bilgilerin tamamı. Kişisel verilerin işlenmesi de bunların kullanılması aslında. Çok uzun, yine siz okursunuz.
+
+370
+01:20:55,028 --> 01:21:05,087
+Kişisel Verileri Korumak Kurulu, Korumak Kurumu, Verileri İşleyen ki tarafa veri işleyen, verilerin kayıt edildiği tarafa da veri kayıt sistemi adını veriyoruz.
+
+371
+01:21:05,748 --> 01:21:20,568
+Veri sorumlusu da bunların işlemenin amacını belirleyen, vasıtalarını belirleyen, neyle işleneceğini, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan kişi ya da kuruluş neyse bu da veri sorumlusu olarak tanımlanmış durumda.
+
+372
+01:21:22,003 --> 01:21:26,844
+Yani kişisel verilerin işlenmesinin de bir sorumlusu var. Demek ki onda yükümlülükleri olacak.
+
+373
+01:21:30,023 --> 01:21:40,884
+Peki, genel ilkeler madde dörtte tanımlanmış. Aşağıdaki ilkelere uyacaksınız. Nedir? Hukuka ve dürüstlük kurallarına uygun olacaksınız. Doğru ve güncel olacaksınız.
+
+374
+01:21:41,652 --> 01:21:54,591
+Belirli, açık ve meşru amaçlar için veriyi işleyeceksiniz. Kötü niyet için işlemeyeceksiniz. İşlediğiniz amaçla bağlantılı olarak bu sınırlar içinde ve ölçülü şekilde veriyi kullanıp işleyeceksiniz.
+
+375
+01:21:58,228 --> 01:22:19,807
+Mesela belirli bir tercih konusunda bir şeyi, veriyi işlemeye çalışıyorsanız bambaşka konulardaki verileri de toplayayım da elimde dursun da belki ileride onu da kullanırım da bakayım ne yapmış da dememeniz gerekir. Ve yine mevzuatta öngörülen ve amac için gerekli olan süre kadar bunları tutabilirsiniz. Ondan sonra bunları kaldırmanız, kişisel verileri yok etmeniz gerekiyor.
+
+376
+01:22:21,007 --> 01:22:22,127
+Beşinci madde.
+
+377
+01:22:22,931 --> 01:22:50,072
+İlk fıkrası diyor ki açık rıza olmadan verileri işleyemezsiniz. Yani ben hayır izin vermiyorum dediğinizde o verileri kullanamazsınız. Fakat bunun bir istisnası var. İşte şurada tanımlanan durumlardan en az biri oluşmuş ise o zaman açık rıza aranmaz. Bu kişisel veriler alenileşmiştir ve bunları siz kullanabilirsiniz. Nedir? Bir, kanunun öngörmesi. Yani kanun diyorsa zaten işleyebilirsiniz.
+
+378
+01:22:50,996 --> 01:23:10,716
+Yine fiili imkansızlık nedeniyle rızasını açıklayamayacak durumda olan ya da rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da bir başkasının hayatı veya beden bütünlüğünün korunması için zorunlu olması durumunda bu açık rıza falan filan aranmaz.
+
+379
+01:23:10,856 --> 01:23:15,116
+Yani bunu yapamıyorsa, açıklayamıyorsa o konuda açık rıza aramıyoruz.
+
+380
+01:23:16,724 --> 01:23:43,663
+Bir sözleşmenin kurulması veya ifasıyla yani işletilmesiyle doğrudan doğruya ilgili olması kaydıyla sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması. Yani siz mesela bir kullanım sözleşmesi ya da üyelik sözleşmesi imzalıyorsunuz. O zaman bu imza attığınız sözleşmenin tarafı olduğunuz için kişisel verileriniz işlenebilir diyor öbür taraf tarafından.
+
+381
+01:23:44,724 --> 01:23:45,824
+Veriler
+
+382
+01:23:46,323 --> 01:24:12,923
+Ama hukuki bir yükümlülüğü yerine getirmek için işlenmek zorundaysa burada da rızayı aramıyor. Yani mesela bir suçla alakalı bir soruşturma var. Savcı diyor ki bana bu bilgileri ver. Sen şey diyemiyorsun orada veri sorumlusu olarak. Ya kardeşim KVKK var ben sana bunu veremem diyemiyorsun. Böyle hukuki bir yükümlülük varsa vereceksin kardeşim kişisel veriyi açacaksın diyor. Buradaki Ç şeyi neydi? Bende.
+
+383
+01:24:13,363 --> 01:24:31,043
+Sonra eğer kişi kendisi verisini zaten alenileştirmişse, yani ben sayfa yapmışım, web sayfasında her şeyimi yazmışım. O zaman zaten bunlar aleni veri, yani public tanım olarak kamuya açılmış veriler. Onlar zaten işlenebilir, haldedir.
+
+384
+01:24:31,796 --> 01:24:58,676
+Bir hakkın tesis edilmesi, bir hakkın kullanılması ya da korunması gerekiyorsa, onun için kişisel veriler kullanılacaksa bu konuda da yine rıza aranmıyor. Bir de veri sorumlusunun meşru menfaatleri için veri işlemek zorunluysa, tabii bu temel hak ve özgürlüklere zarar vermediği müddetçe sadece, bu da zorunluysa, yani bunu işlemeden çalışamıyorsa,
+
+385
+01:24:59,796 --> 01:25:10,435
+O zaman bu da yapılabiliyor. Yani gördüğünüz gibi şunlardan en az bir tanesi olursa açık rıza falan aranmadan kişisel verileriniz işlenebiliyor.
+
+386
+01:25:11,576 --> 01:25:17,735
+Özel nitelikte kişisel veriler nasıl işlenecek? Bunun şartları madde altıda tanıplanmış durumda.
+
+387
+01:25:18,735 --> 01:25:21,096
+Bakın nedir bu özel nitelikli veriler?
+
+388
+01:25:21,908 --> 01:25:47,448
+Bir kişinin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya başka inancı, kılık kıyafeti, dernek vakıf sendika üyelikleri, sağlığı, cinsel hayatı, ceza mahkumiyeti, sabıka kaydı ve güvenlik tedbirleriyle ilgili verileri, biyometrik verileri bunların hepsi özel nitelikli verilerdir.
+
+389
+01:25:47,859 --> 01:26:03,579
+Özel nitelikli kişisel verileri yeterli önlem almadan işleyemezsiniz. Açık rıza olmadan işleyemezsiniz. Yine şunlardan en az biri varsa açık rıza olmadan bunları işleyebilirsiniz. Bir, kanunun söylemesi.
+
+390
+01:26:15,859 --> 01:26:22,319
+Başkalarına kesinlikle açıklanmaması, açılmaması suretiyle kendi üyelerine yönelik verileri işleyebilir diyor.
+
+391
+01:26:23,039 --> 01:26:25,300
+Yani siz mesela siyasi partiye üyesiniz.
+
+392
+01:26:25,300 --> 01:26:39,239
+İşte o siyasi partiye üye olduğunuz için sadece tabii ki amacına uygun olarak ve başkasına şey yapmadan, bunu açıklamadan ya da paylaşmadan size ait özel nitelikli veriler işlenebiliyor.
+
+393
+01:26:40,532 --> 01:26:59,351
+Yine verilerinizi siz aleyinleştirdiyseniz bunlar açıktır. Benim ırkım şu kardeşim, kökenim bu, siyasi düşüncem şu diye web sayfanıza yazmışsınız. Artık bunlar açık veri. Burada bir özen nitelikli veriden bahsedemezsin. Ya da al parmak izin burada duruyor diye resmini koymuşsun. Bu da açık hale getirilmiş bir veri olur.
+
+394
+01:27:08,532 --> 01:27:30,032
+Korumak için. Özellikle tıp alanında ya da hekimlik alanında çalışanlar, kendi yetkileri dahilinde, şurada B fıkhasında, bendinde olduğu gibi sadece kendi şeyleriyle alakalı taraftaki özel nitelikli verileri işleyebiliyorlar.
+
+395
+01:27:30,711 --> 01:27:34,032
+Tamam. Sonrasında da madde 7'de.
+
+396
+01:27:34,804 --> 01:27:40,823
+Kişisel veriler nasıl silinecek, nasıl yok edilecek ya da nasıl anonimleştirilecek bunlar tanımlanmış durumda.
+
+397
+01:27:40,823 --> 01:27:59,243
+Şimdi, diyor ki birinci fıkrası, verinin işlenmesini gerektiren sebepler ortadan kalkarsa, bunlar reysen yani böyle hiçbir şey ortada yokken veya ilgili kişinin talebi üzerine,
+
+398
+01:27:59,699 --> 01:28:26,779
+Ben istiyorum. Silin kardeşim verimlerimde. Veri sorumlusu bunları silmek zorunda, yok etmek zorunda veya anonim hale getirmek zorunda. Başka kanunlarda, başka hükümler varsa onlar da uygulanabilir diyor. Ve yine bunların nasıl yapılacağı, bu işin silme, yok etme ve anonim hale getirme işinin nasıl yapılacağını detaylarını burada yazmıyoruz. Yönetmelik ile bunlar düzenlenecektir diyoruz 7. maddede.
+
+399
+01:28:27,764 --> 01:28:36,464
+Kişisel verileri başka taraflara, üçüncü kişilere aktarılması. Madde 8'de tanımlanmış. Yine açık rıza olmadan aktaramıyorsunuz.
+
+400
+01:28:39,667 --> 01:29:07,647
+Beşinci maddenin ikinci fıkrası şurada demiştik ya, şu şartlarda işlenebilir demiştik ya. İşte onun gibi yeterli önlemler alınmak kaydıyla yine arada hariç tutulanlar var. Bunlar var ise, yani siz açık rıza göstermediniz ama özel koşullar oluştuysa o zaman aynı işleme gibi üçüncü partilere, üçüncü kişilere aktarma da
+
+401
+01:29:07,667 --> 01:29:21,387
+Bu konuda gerçekleştirilebilir. Yine başka kanunlar bu konuda bir şeyler söylüyorsa onların da hükümleri saklıdır. Onlar da yapılacaktır diye burada 6698 aktarımı da tanımlamış durumda.
+
+402
+01:29:25,587 --> 01:29:43,988
+Hani pratikte karşılaştığımız şey diyebiliriz. KVKK kapsamında sizin kişisel verilerinizin ülke sınırları içinde kalması gerekiyor. Madde 9'un birinci fıkrası diyor ki kişisel veriler ilgili kişinin açık rızası olmaksızın yurt dışına aktarılamaz. Açık rıza verdiğinizde tabii aktarabiliyorlar.
+
+403
+01:29:52,756 --> 01:30:03,148
+Peki, aktarılabilir dedik de nasıl aktarılabilir? O zaman şartlar olması gerekiyor. Bir, verinin aktarıldığı yabancı ülke neresiyse orada...
+
+404
+01:30:03,828 --> 01:30:30,048
+Yeterli koruma olması gerekiyor. Yeterli koruma yoksa Türkiye'deki ya da ilgili yabancı ülkedeki veri sorumlusu yeterli korumayı ben yapacağım diye taahhüt etmesi gerekiyor. Ve KVKK kurulda buna izin vermesi gerekiyor. O zaman ancak yurt dışına bu veriler aktarılabiliyor. Bu korumanın hangi ülkelerde yeterli koruma olduğunu kurul belirler ve ilan eder demiş.
+
+405
+01:30:30,931 --> 01:30:52,351
+Tek tek ülke ismi yazamayacağı için sadece onu adreslemiş durumda. Sonrasında bunun yeterli korumanın olup olmaması ya da burada bir veri aktarımına izin verilip verilmeyeceğine uluslararası sözleşmeler, karşılıklılık durumu, yani biz iki taraflı olarak aslında birbirimize veri iletebiliyor muyuz durumunun incelenmesi lazım.
+
+406
+01:30:58,931 --> 01:31:18,811
+Bunlar diğer ülkenin konuyla ilgili mevzuatları ve bu konudaki uygulamaları ve yine veri sorumlusunun taahhüt ettiği önlemler değerlendiriliyor ve gerektiğinde başka kurum kuruluşlarında görüşleri alınıyor ve bu şekilde buna karar veriliyor.
+
+407
+01:31:20,159 --> 01:31:47,239
+Bu yabancı ülkede yeterli koruma var mı yok mu? Bunu nasıl belirleyeceğim? Ya da buradaki verinin bu ülkelere aktarılmasına nasıl izin vereceğim? Bunlar var ise bunları değerlendiririm. Bu değerlendirmemin sonucunda bu veri bu ülkeye aktarılabilir ya da aktarılamaz şeklinde bir karar ortaya koymam gerekir demiş buradaki kanun maddesi.
+
+408
+01:31:48,159 --> 01:31:57,100
+Son fıkrasında da yine veri aktarımı konusunda başka kanunlar, başka şeyler söylüyorsa onların hükümleri de saklıdır demiş oluyor.
+
+409
+01:31:58,239 --> 01:32:02,300
+Haklar ve yükümlülükler tarafında madde 10 var.
+
+410
+01:32:02,300 --> 01:32:06,340
+Şimdi madde 10 veri sorumlusunun yükümlülüklerini söylüyor.
+
+411
+01:32:15,507 --> 01:32:33,287
+Verilerin hangi amaçla işleneceğini, kimlere ve hangi amaçlarla aktarılabileceğini, veri aktarımı üçüncü kişilere, veri toplamanın yönteminin ne olduğunu ve hukuki sebebini, hukuki dayanağını ve yine 11. maddede şu aşağıda sayılan diğer haklar konusunda bilgi vermekle yükümlü.
+
+412
+01:32:33,287 --> 01:32:40,047
+Yani ben bunları sorduğumda bana söyleyebilmeli. Sen bilgimi ne maçla işliyorsun? Kimlere aktarıyorsun?
+
+413
+01:32:40,532 --> 01:33:01,951
+Hangi yöntemle topluyorsun gibi şeyler sorduğumda söylenmesi gerekiyor. Bunlar veri sorumlusunun hükümlülükleri. Kişi olarak benim verileri işlenen taraf olarak ne haklarım var? Bir, benim verilerimi işliyor musun, işlenmiyor musun? Bunu öğrenme hakkım var. Eğer verilerim işlenmişse nasıl işledin diye bilgi talep etme hakkım var.
+
+414
+01:33:02,484 --> 01:33:09,244
+Amacın neydi? Bakalım bunu ama benim verilerimi amacına uygun olarak kullandım mı, kullanmadım mı? Bunu öğrenme hakkımız var.
+
+415
+01:33:10,543 --> 01:33:18,083
+Kimlere aktardığını bilme hakkımız var. Eksik ya da yanlış işlendiyse bunların düzeltilmesini talep etme hakkımız var.
+
+416
+01:33:20,024 --> 01:33:28,684
+Yine şu yedinci maddedeki geçtik orayı biliyorsunuz. Şartlar çerçevesinde verilerinizin silinmesini ya da yok edilmesini talep etme hakkınız var.
+
+417
+01:33:29,363 --> 01:33:52,243
+Yine D ve E uyarınca kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteyebilirsiniz. Yani yapılan işlemleri üçüncü kişilere de aktartmasını isteyebilirsiniz. Otomatik sistemlerle analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkması durumunda buna itiraz etme hakkınız var.
+
+418
+01:33:57,108 --> 01:34:16,868
+Bu ürünü size satmıyoruz kardeşim dedi. İşte ona itiraz edebiliyorsun. Ne biçim işledin kardeşim verileri nasıl satmazsın bana diye. Böyle bir itiraz hakkınız var. Ve yine eğer bunlar kanuna aykırı olarak işlenirse ve ben bu sebeple zarar görürsem tazminat talebi hakkım var. Bunlar da benim haklarım olarak karşıma çıkıyor.
+
+419
+01:34:16,868 --> 01:34:24,807
+Madde 12'de de verinin güvenliğiyle alakalı yükümlülükler mevcut. Bunlar yine tabii ki öncelikle veri sorumlusu doğal olarak hepsinde.
+
+420
+01:34:25,108 --> 01:34:33,108
+Temel sorumlu. Kişisel verilerin hukuka aykırı işlenmesini önlemeli. Verilere yine...
+
+421
+01:34:33,395 --> 01:34:52,335
+Hukuka aykırı erişimi önlemeli ve bunları verileri saklamak için uygun güvenlik düzeyini temin etmeye yönelik gerekli her türlü teknik ve idari tedbiri almak zorunda. Yani bunların bütün hepsinin sorumlusu verinin güvenliğiyle alakalı bütün yükümlülükte yine veri sorumlusunda.
+
+422
+01:34:55,188 --> 01:35:08,908
+Sorumlu kişisel verileri ya kendi adına ya da başka bir gerçek ya da tüzel kişi tarafından bu verilerin işlenmesi halinde o zaman mesela ben işliyorum ama başkası da işliyor ya da birlikte işliyoruz.
+
+423
+01:35:08,908 --> 01:35:15,448
+Müşterek olarak buradaki toplam güvenlikten yine sorumlusunuz. Her taraf bütün halde sorumlu.
+
+424
+01:35:16,787 --> 01:35:27,187
+Tamam. Denetim yapılacağı zaman gerekli denetimleri yapmak ve yaptırmak zorunda veri sorumlusu. Güvenlikle alakalı denetimlerden bahsediyoruz tabii ki.
+
+425
+01:35:29,216 --> 01:35:47,596
+Öğrendiği kişisel verileri yine başkalarına veri sorumluları açıklayamaz ya da kendi kişisel çıkarı için kullanamaz. Ve bu yükümlülük görevden ayrıldım kardeşim ben bıraktım deseniz de yine sizin üzerinizde bu sorumluluk olarak hani ilgili dönem için sorumluluk olarak devam eder.
+
+426
+01:35:47,596 --> 01:35:55,515
+Yani ben artık sorumlu değilim kardeşim yeni adama söyleyin diyemezsiniz. Sizin zamanınızda bir şey olduysa sorumlusu yine sizsiniz.
+
+427
+01:35:56,243 --> 01:36:13,263
+Tamam. İşlenen kişisel verilerin kanun olmayan yollarla başkasının elde edilmesi halinde. Yani işte verilerimiz çalındı, hacklendik durumu oluşursa o zaman en kısa sürede ilgilisine ve kurula bu durumu bildirmek zorunda.
+
+428
+01:36:13,844 --> 01:36:31,083
+Tamam, peki bunları da anlattıktan sonra madde 13'te veri sorumlusuna nasıl başvuracağımız tanımlanmış durumda. Nedir? Talepler yazılı olarak ya da kurulun belirceği diğer yöntemlerle veri sorumlusuna iletilir diyor. Yani yazılı olarak aslında iletiyoruz.
+
+429
+01:36:38,304 --> 01:36:58,703
+Ama maksimum 30 gün içinde ücretsiz olarak yapmakla mükeller. Tamam. Ama işlemin ayrı bir maliyeti varsa o zaman bir ücret alınabilir şeklinde bir ilave burada tanımlanmış durumda. Şimdi veri sorumlusu talebi kabul edebiliyor ya da gerekçesini açıklayarak talebi reddedebiliyor ve bunu ilgili kişiye cevap olarak bildiriyor.
+
+430
+01:36:59,220 --> 01:37:22,980
+Talep kabul edilirse, veri sorumlusu bunu yapmakla mükellef. Eğer veri sorumlusunun hatasından kaynaklanan bir başvuruysa, o zaman bu işle ilgili yapılan bir ücret ödemesi de varsa bu da sahibine iade ediliyor. Yani veri sorumlusunun hatası var ise, bu ücret alınmışsa eğer bir ücret, iade ediliyor.
+
+431
+01:37:22,980 --> 01:37:27,100
+Şimdi geldik kurula şikayet. Yani KBKK kuruluna bir şikayet yap.
+
+432
+01:37:27,220 --> 01:37:47,040
+Bu da madde 14'te tanımlanmış. Şimdi siz başvurdunuz ama reddedildi ya da verilen cevabı yetersiz buldunuz ya da en geç 30 gün içinde sizin başvurunuza cevap verilmedi. O zaman hemen gidip 30 ve 60 gün içinde, 30 ile 60 gün arasında kurula şikayette bulunabiliyorsunuz.
+
+433
+01:37:48,275 --> 01:38:00,596
+Önce veri sorumlusuna başvurmadan direkt kurula gidemiyorsunuz ve buna göre bir hak zedelenmesi, hak kaybı varsa tazminat hakkınız var. Bu durumu ihlal edenlerden tazminat talep edebilirsiniz.
+
+434
+01:38:02,056 --> 01:38:13,235
+Diyelim ki şikayet ettiniz. Reisten inceleme yapılacak. Bu nasıl yapılacak? Bu da madde 15'te tanımlanmış. Kurul görev alanına giren konularda inceleme yapıyor.
+
+435
+01:38:14,068 --> 01:38:24,948
+Yine dilekçe hakkının kullanmasına dair kanun maddesinde belirtilen şartları taşımıyorsa bunu incelemiyorlar. Uygun bir şekilde başvuru şikayetinizi yapmanız gerekiyor.
+
+436
+01:38:27,068 --> 01:38:34,547
+Devlet sırrı niteliğindeki bilgi ve belgeler hariç, devlet sırlarını hariç diyor tabii ki, veri sorumlusu.
+
+437
+01:38:34,847 --> 01:38:53,748
+Kurulun istemiş olduğu bilgileri ve belgeleri 15 gün içinde göndermek zorunda. Hatta gerekiyorsa da yerinde inceleme yapmasına imkan sağlamak zorunda. Tamam, tamam. Şikayet geldi. Kurul talebi inceledi ve ilgililerine bir cevap veriyor.
+
+438
+01:38:54,355 --> 01:39:19,595
+Eğer 60 gün içinde kurul size hiçbir şey söylemediyse otomatik olarak cevap vermek de şey değil, talep reddedilmiştir şeklinde sonucun oluştuğunu düşünebilirsiniz. Yine şikayet ettiniz, inceleme yapıldı ve hakikaten bir ihlal olduğu ortaya çıkartıldı. O zaman hukuka aykırı durum neyse veri sorumlusuna bunlar tebliğ edilir, bunları düzelt diye tebliğ edilir.
+
+439
+01:39:19,988 --> 01:39:27,548
+Yine hemen ama en fazla 30 gün içinde bunlar yerine getirilmesi gerekiyor veri sorumlusu tarafından.
+
+440
+01:39:27,904 --> 01:39:47,284
+Yani yaygın bir ihlal varsa, bu konuda çok fazla şikayet aldılarsa pek çok taraftan o zaman ilke kararı alabilir kurul ve bu kararı yayınlar. Yani bunu böyle yapacaksınız, veri sorumluları sürekli bana bu konuda şikayet geliyor, bu konularda artık bunun yolu yorduğum budur diye düzeltmeler yapabilir.
+
+441
+01:39:48,104 --> 01:39:54,284
+Yine kurul telafisi güç ya da telafisi imkansız zarar doğurması durumunda.
+
+442
+01:39:55,347 --> 01:40:19,707
+Ya da hukuka aykırılık açık ise, kişisel verilerin işlenmesinin ya da yurt dışına aktarılmasının durdurulmasını direkt olarak kararını verebiliyor. Yani burada bir yasa dışı bir durum söz konusu, veriler çalınıyor falan gibi bir durum söz konusuysa, KVKK kurulu direkt olarak bu aktarımın durdurulması ya da bu işlenmenin durdurulmasına karar verebiliyor.
+
+443
+01:40:20,212 --> 01:40:42,112
+Madde 16'da da sicil var. Veri sorumlularını sicile. Dedim ya aslında siz ben görevi bıraktım deseniz bile siciliniz ya da sorumlunuz devam ediyor. Buradaki verileri işleyenler mutlaka bir sicile kayıt olmak zorunda. Ancak kayıtlıysanız veri işleme olanağına sahip oluyorsunuz diyelim.
+
+444
+01:40:42,547 --> 01:40:57,108
+Kişisel verilerin niteliği, sayısı, ya da buradaki kanundan kaynaklanan bir veri işleme durumu olması ve başka taraflara aktarılması durumları gibi durumlar.
+
+445
+01:40:59,636 --> 01:41:22,756
+Kurul da yine aslında verilecek kararlarla istisna haline getirilebilir. Yani sen sadece şunu yapıyorsan ya da şu nitelikte verileri işliyorsan kayıt olmak zorunda değilsin gibi böyle istisnalar tanımlanabilir. Kayıtta neler var? Ona bakalım. Kimlik ve adres bilgileri. Yani veri sorumlusu kim? Bunun adresi ne? Ne amaçlı veri işliyor?
+
+446
+01:41:23,220 --> 01:41:29,019
+Veri konusunun kişi grubu ne ya da grupları ne ya da veri kategorileri ne bunların tanımları?
+
+447
+01:41:29,619 --> 01:41:56,579
+Nerelere aktaracağı, alıcıların kim olduğu, üçüncü taraflar diyoruz ya, üçüncü taraf kim? Yabancı ülkelere bir aktarım olacaksa, nereye ve hangi veriler aktarılacak? Veri güvenliğiyle alakalı hangi tedbirler alınmış? Ne kadar süreyle ya da hangi amaç için ne kadar süreyle işlenecek kişisel veriler? Bunlarla ilgili verilerin mutlaka sicil kaydında tam olarak verilmeleri gerekiyor.
+
+448
+01:41:57,619 --> 01:42:13,099
+Tamam. Sonra burada değişiklik olursa bu değişikliklerinde derhal başkanlığa bildirilmeleri gerek. Başka usul ve esaslar bu konuda hani sicil nasıl tutulacak ıvır kıvır bunlar da yine kanunda değil yönetmelikle belirlenir diyoruz.
+
+449
+01:42:13,619 --> 01:42:29,699
+Geldik, işin suç tarafına. Suçlar ve kabahatler. 17. ve 18. maddeleri KVKK'nın. Şimdi diyor ki, kişisel verilerle ilgili suç oluştuğunda TCK 135 ve 140 hükümleri uygulanır, diyor.
+
+450
+01:42:30,131 --> 01:42:50,471
+Şimdi 7. madde yükbine aykırı olarak bakın kişisel verileri silmeyen ve anonim hale getirmeyenler TCK 138'ye cezalandırılır diyor. Ne güzel değil mi? Direkt TCK'ya atıyor topu. Vay sen bunu yapmadın. İşte suçunun cezası orada tanımlanmış durumda. Kabahatlere gelelim. Bu da şey maddi yükümlülükler.
+
+451
+01:42:50,471 --> 01:42:56,671
+Şimdi 10. maddedeki aydınlatma yükümlülüğünü yerine getirmezsen 5 bin lira ile 100 bin lira arasında ceza.
+
+452
+01:42:58,131 --> 01:43:06,871
+İkinci maddede tanımlanan veri güvenliğiyle alakalı şeyleri yapmazsam şu kadar ceza. Kurul tarafından verilen kararları yapmazsam şu kadar ceza.
+
+453
+01:43:07,507 --> 01:43:26,607
+Sicile kayıt olmazsan ya da değişikliklerini, bildirimlerini düzgün bir şekilde yapmazsan şu kadar ceza şeklinde şeyler tanımlanmış durumda. Birinci fıkrada. İkiye geçtiğimizde yine gerçek kişiler ya da tüzel kişiler fark etmez. Ben idari para cezasını ikisi için de uygulayabilirim diyor.
+
+454
+01:43:27,155 --> 01:43:41,435
+Üçüncü fıkrasında yine buradaki eylemler bir kamu kurumunda ya da kamu kuruluşunda ya da kamu kurumun niteliğindeki meslek kuruluşlarında işte odalarda falan da filan da işlenirse o zaman.
+
+455
+01:43:42,355 --> 01:44:02,336
+Buradaki memurlar için de disiplin hükümleri neyse buna göre işlem yapılması gerekir. Yani kamu kurumunda bu ihlallerin sebebi kim ise, hangi memur ise bunların da ortaya çıkartılması ve burada yapılan disiplin işleminin sonucunda kurula bildirilmesi gerekir diyor.
+
+456
+01:44:02,336 --> 01:44:10,315
+Hani kamu kuruluşundayım, kamu kurumundayım, KVKK ihlal edebilirim gibi şey söz konusu değil. Siz de sorumlusunuz. Sizin de cezanız var.
+
+457
+01:44:10,355 --> 01:44:11,855
+Tamam.
+
+458
+01:44:12,336 --> 01:44:40,076
+Burada bir idari yaptırım kararı verildi ama siz itiraz edeceksiniz. Yani buna itiraz etmek istiyorsunuz. Haksız olduğunu düşünüyorsunuz. Ne yapacaksınız? Dava açacaksınız. Nereye dava açacaksınız? Yani sizin yaptırım kararına karşı itirazınızı nereye yapacaksınız? İdare mahkemesi. İşte idare mahkemesi. Neden idare mahkemesi? Çünkü bir taraf idare. İdare ile taraflar arasındaki uyuşmazlıklar da idare mahkemelerinde giderilir.
+
+459
+01:44:40,336 --> 01:44:52,456
+İşte bu şekilde bir dava açılabilir. Nihayetinde kanun koyucu bir kamu kurumu ya da kamu organı olduğu için idare mahkemesi buradaki çekişmeyi ya da uyuşmazlığı çözmekle mükellef.
+
+460
+01:44:54,916 --> 01:45:06,115
+Peki, şimdi şöyle buradaki, bundan sonraki slide'lar şöyle şeye kadar, sona kadar şeyle devam ediyor.
+
+461
+01:45:06,804 --> 01:45:23,703
+elektronik ticaret kanunuyla devam ediyor. Fakat ben elektronik ticaret kanunu sadece başlıklarıyla geçeceğim. Hani hepsini teker teker uzun uzun okumak istemiyorum. 6563 elektronik ticarette işiniz varsa bunlara çok dikkatli bir şekilde bakmanız gerekiyor.
+
+462
+01:45:24,203 --> 01:45:34,764
+Buradaki tanımlara hızlıca bakalım. Elektronik ticaret nedir? Ticari iletişim nedir? Ticari elektronik ileti nedir? İşte bu SMS muhabbetleri biliyorsunuz buradan geliyor.
+
+463
+01:45:34,804 --> 01:45:41,123
+Hizmet Sağlayıcı kimdir? Ara Hizmet Sağlayıcı kimdir? Bakanlık kimdir? Bunlar tanımlanmış durumda.
+
+464
+01:45:42,547 --> 01:46:03,327
+Bilgi verme yükümlülüğü var. Yine elektronik gelişim araçlarıyla bir sözleşme yapılmadan önce aslında satıcı kim olduğunu, künyesini açıklamakla mükellef. Bunlar çeşitli taraflara bilgilerin sağlanması gerekiyor. Siz bir e-ticaret tarafıysanız bu bilgileri vermekte yükümlüsünüz. Madde 3 bunu tanımlıyor.
+
+465
+01:46:03,627 --> 01:46:10,228
+Madde 4 siparişin detaylarını tanımlıyor. Gördüğünüz gibi zaten başlığı da sipariş.
+
+466
+01:46:10,547 --> 01:46:32,268
+İşte tutarın açıkça görülmesi, bütün ödeyeceğiniz toplam bedel neyse onun açıkça görülmesinin sağlanması, sürpriz şeyler çıkmaması diyelim. Kargo bedeli yazmıyordu sonradan eklemişler falan olmasın diye. Ondan sonra teyit edilmesi, siparişin alındığının teyit edilmesi.
+
+467
+01:46:32,688 --> 01:46:43,188
+Veri giriş hatalarını belirlemek ve düzeltmek için uygun teknik araçların sunulması gibi gidiyor. Bu da siparişle alakalı detaylar.
+
+468
+01:46:43,867 --> 01:46:53,408
+Ticari iletişimle alakalı esaslar 5. maddede. Bunlar nasıl yapılabilir, kimler yapabilir, hangi şeyler altında yapılabilir, neler yapılabilir bunlar tanımlanmış.
+
+469
+01:46:53,408 --> 01:47:00,327
+Ticari elektronik iletinin gönderme şartı 6. maddede. Şurada tanımlanmış durumda.
+
+470
+01:47:00,688 --> 01:47:19,587
+B2B'de onay almaya gerek yok. Özetle ama B2C'de mutlaka onay almak zorundasınız. Hani şeyi tıklıyoruz ya, haberdar et beni ya da mail şeyine yolla ya da bana SMS at atma diye tıklıyoruz ya işte orası. Bu madde altıdan dolayı geliyor.
+
+471
+01:47:20,724 --> 01:47:40,804
+İçerik de yine buradaki onaya uygun olması lazım. Yani siz bir ticari elektronik ileti gönderme şartını onayladınız ama o onaya kullanarak bambaşka şeyler paylaşıyorlar aslında. Bu olmaz. İşte bu madde 7'de içeriği tanımlıyor. Reddetme hakkı, yani ben bundan vazgeçiyorum kardeşim, yollama bana artık hakkı.
+
+472
+01:47:42,292 --> 01:48:10,292
+Madde 8. Gördüğünüz gibi 3 iş günü içinde bu elektronik ileti göndermeyi durdurması gerekiyor gönderen tarafın. Araca hizmet sağlayıcılar da yine aslında şöyle geri geleyim. Araca hizmet sağlayıcı. Başkalarına ait iktisadi ticaret faaliyetlerinin yapılmasına elektronik ticaret ortamını sağlayan gerçek ve tüzel kişiler. Biz bunlara pazar yeri diyoruz şu anda biliyorsunuz. Buna araca hizmet sağlayıcı. Yani ben bir dükkanım var. İşte mesela hepsi burada da ya da N11'de dükkanım var.
+
+473
+01:48:10,292 --> 01:48:27,672
+N11'e de hepsi burada aracı hizmet sağlayıcı oluyor. Doğal olarak onların da yükümlülükleri var. İçeriği kontrol etmek ya da bununla alakalı hukuka aykırı bir şey var mı? Bunu araştırmakla yükümlü değil.
+
+474
+01:48:28,692 --> 01:48:56,412
+Yani sizin oradaki dükkanınıza karışma hakkı aslında yok. Yine KVKK ile alakalı detaylar. Madde 10'da tanımlanmış durumda. Bakanlığın yetkileri madde 11'de tanımlanmış ve cezalar da madde 12'de tanımlanmış durumda. Hızlıca bakalım şöyle cezalara. Yine işte 3, 4 ve 6. maddelerin belli yerlerine ve 7. maddenin yine birincisine uymuyorsanız 1000 ile 5000 Türk Lirası arasında ceza alıyorsunuz.
+
+475
+01:48:56,692 --> 01:49:21,851
+Yine başka bentlerdekilere uymuyorsanız, 1000 ile 10.000 Türk Lirası arasında, 2000 ile 15.000 Türk Lirası arasında, 2000 ile 5.000 Türk Lirası arasında idari para cizası veriliyor. Şurada bir defada birden fazla, bunu okumak lazım, bir defada birden fazla kimseye elektronik ileti gönderirseniz.
+
+476
+01:49:22,452 --> 01:49:33,391
+Öngörülen para cezası 10 kat olarak uygulanıyor. Yani topluluğa yollarsanız, herkese bunu yapmaya devam ediyorsanız çarpı 10 şeklinde arttırılıyor para cezası.
+
+477
+01:49:36,051 --> 01:49:49,311
+Cezayi hükümlerden de bahsettikten sonra bu konudaki detay yönetmelikler madde 13'te kimlerin nasıl tanımlayacağı açıklanmış durumda. Madde 14'te de değişen mevzuatla alakalı kararlar yer alıyor.
+
+478
+01:49:50,072 --> 01:49:59,872
+Geçici maddemiz var bir tane. Onay alınarak oluşturulan veri tabanları. Diyor ki işte bu kanun yürürlüğe girdiği tarihten önce.
+
+479
+01:50:00,000 --> 01:50:11,960
+Onay alınarak oluşturulmuş olan veri tabanlarına 6. madde uygulanmaz. Eski müşteri ise o eski müşteri olduğu için SMS'i almaya devam ediyor. Ama tabii sonrasında iptal etme hakkı var.
+
+480
+01:50:12,851 --> 01:50:40,851
+2015, 1 Mayıs 2015'te de elektronik ticaret kanunumuz yürürlüğe girmiş durumda. Elektronik ticareti çok detayına girmeden hızlıca bitirmek istedim ama siz yine bakın okuyun dediğim gibi. Bilişim yasa taslağımız da 2007 yılında hazırlanmış. Toplamda 7 bölümü var. Yine amaç kapsam tanımları var. Bütün kanunlar aynı şekildedir zaten. Sorumluluklar, yükümlülükler tanımlanmıştır. Denetim mekanizması tanımlanmıştır. İkinci bölümde bunu.
+
+481
+01:50:40,851 --> 01:50:48,831
+Bunlar üçüncü bölümde bilgilerin gizliliği, bütünlüğü ve bilgilerin elde edilmesiyle alakalı tanımlar ve bunların suçları.
+
+482
+01:50:49,332 --> 01:51:05,312
+Dördüncü bölümde bilişim sistemleriyle bağlantılı suçlar tanımlanmış. Beşinci bölümde içerik ile bağlantılı suçlar ve bunların yaptırımları. Hepsinin üzerinden başka kanunlarda geçtik aslında ama burada hepsi bir araya getirilmeye çalışılmıştı.
+
+483
+01:51:05,312 --> 01:51:17,252
+Yine bunların soruşturma ve koruşturması nasıl yapılacak? Altıncı bölüm. Ve yedinci bölümde de çeşitli ve son hükümler. O nedir? Bu ne zaman devreye girer? Hangisi şurada? Hangisi?
+
+484
+01:51:17,332 --> 01:51:22,372
+Hangisi kaldırılmıştır, hangisi eklenmiştir gibi çeşitli hükümler son bölümde yer alıyor.
+
+485
+01:51:24,083 --> 01:51:48,503
+Koymadım artık slide'lara falan. Hani o kadar da şey yapmaya gerek yok. Zaten taslak. Nihayetinde daha şey yapılmadı. Hani hayata geçmedi. Gördüğümüz bu ders kapsamında, bu hafta tanıdığımız kanunlar çerçevesinde ülkemizde özellikle bilişim alanındaki hukuk düzenlemesi, düzenlemeleri diyelim gerçekleştirilmiş durumda.
+
+486
+01:51:52,020 --> 01:52:01,220
+Son. Mesleki Hukuk Ve Etik'in sonuna geldik. Dönemin de sonuna geldik. Katılımınız için teşekkür ediyorum.
+
+487
+01:52:05,268 --> 01:52:25,887
+Ödevlerinizi okuyorum. 149 tane ödev var. Hedefim finallerden önce notlarınızı tamamlayıp girmek sisteme. Anlarsınız ki biraz uzun sürüyor. Kusura bakmayın. Okumaya devam ediyorum diyeyim. Başladım da bitmedi. Peki, sorunuz var mı?
+
+488
+01:52:42,195 --> 01:53:00,296
+Sorunuz yok. Ha, final test mi olacak? Yani vize gibi, evet. Vize gibi olacak. Şey mi istiyorsunuz? Klasik mi istiyorsunuz? Klasik nasıl şey, 160 tane kağıdı? Oku oku bitiremem ya.
+
+489
+01:53:00,916 --> 01:53:18,736
+O yüzden çoktan seçmeli yapacağız yine. Yani vize tarzında yapacağız arkadaşlar sınavı da. Peki, dönem boyunca dinledik. Umarım faydalı olmuştur. Temel bir ders çünkü. Çok farkında olmasak da aslında her iş dönüyor, dolaşıyor. Bir şekilde mesleki hukuka bağlanıyor.
+
+490
+01:53:19,220 --> 01:53:33,900
+Etik, her zaman için mesleki etik önemli. Hem kişisel hem mesleki hem de kuruluş ya da kurum boyutunda düşündüğünüzde. Umarım faydalı olmuştur içerik, farkındalık yaratmıştır.
+
+491
+01:53:36,180 --> 01:53:59,579
+Bundan sonraki hayatınızda da bu mesleki etik ilkelere bağlı olarak ve hukuk kurallarını da unutmadan, göz ardı etmeden söylediğimiz noktalara, üzerinde durduğumuz konu başlıklarına dikkat ederek mesleki yaşamınızı ve özel yaşamınızı devam ettirirsiniz diyerek ben de dönemi ve dersi sonlandırayım.
+
+492
+01:54:00,212 --> 01:54:06,632
+Hepinize şimdiden iyi tatiller. 4 Ekim'den itibaren yüz yüze görüşmek üzere diyelim. Hoşçakalın.
+
+493
+01:54:07,692 --> 01:54:10,832
+Teşekkürler hocam.
