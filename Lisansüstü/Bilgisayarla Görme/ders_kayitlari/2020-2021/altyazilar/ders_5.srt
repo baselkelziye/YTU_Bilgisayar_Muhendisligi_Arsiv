@@ -1,0 +1,1867 @@
+1
+00:03:25,171 --> 00:03:27,091
+Merhabalar arkadaşlar, sesim geliyor mu?
+
+2
+00:03:29,512 --> 00:03:30,311
+Evet, ben de.
+
+3
+00:03:38,836 --> 00:03:40,116
+Ne yaptınız, nasılsınız?
+
+4
+00:04:56,596 --> 00:04:59,375
+Ödev 3'e biraz bakalım. Ne yaptınız, ne ettiniz?
+
+5
+00:05:07,699 --> 00:05:09,644
+Mesela [öğrenci] ne yapmış?
+
+6
+00:05:20,531 --> 00:05:22,151
+Type-Prem'i göndermiş.
+
+7
+00:06:06,771 --> 00:06:07,411
+Aktivite.
+
+8
+00:06:49,331 --> 00:06:53,171
+[öğrenci] orada mısın?
+
+9
+00:06:56,660 --> 00:06:57,660
+Evet, o zaman burada.
+
+10
+00:07:01,875 --> 00:07:04,815
+Derivativleri Filter2D ile aldın.
+
+11
+00:07:06,935 --> 00:07:09,315
+Bunları kullandın, türev için.
+
+12
+00:07:15,220 --> 00:07:17,600
+Derivativleri bir göreyim dedin, öyle mi?
+
+13
+00:07:23,315 --> 00:07:32,575
+Second Moment Matrix için o türevleri Gauss'u yanı ile filtreledin, değil mi?
+
+14
+00:07:32,575 --> 00:07:39,255
+Evet, onlar geçen hafta kullandığımız kodların fonksiyonla alıştırılmış haliydi.
+
+15
+00:07:39,875 --> 00:07:50,055
+Evet, aslında güzel oldu. Yavaş yavaş böyle bir... Aslında ödevler üst üste şey oldu, değil mi? Bu noktaya getirdi.
+
+16
+00:07:56,276 --> 00:07:59,456
+Galasyon Filtredi'yi de kendim oluşturdum diyorsun.
+
+17
+00:08:09,043 --> 00:08:17,243
+Second Moment Matris ne yapıyorsun? Şu vektörlerin çarpımından oluşuyor dedin.
+
+18
+00:08:17,243 --> 00:08:29,343
+Evet. Gradient I, Gradient I'ın Transpose'u dedin. Matmul S-Type.
+
+19
+00:08:34,803 --> 00:08:39,903
+Burada dört tane değere ihtiyacın yok mu senin? Ben yanlış mı görüyorum?
+
+20
+00:08:40,583 --> 00:08:48,703
+Evet ama ikiye birlik matrisle bir de ikilik matrisi çarptığım için yine ikiye ikilik matris oluşuyor. Yani dört değer oluşuyor.
+
+21
+00:08:49,483 --> 00:08:52,063
+Şu bire ikilik mi veriyor?
+
+22
+00:08:53,443 --> 00:09:01,923
+Evet o bire ikilik veriyor. Ama altta onu transpoz edip ikiye birliğe çeviriyorum.
+
+23
+00:09:03,443 --> 00:09:09,243
+Şu derivatirler zaten iki NN'lik değil mi?
+
+24
+00:09:09,903 --> 00:09:10,524
+Evet, NN.
+
+25
+00:09:10,524 --> 00:09:17,644
+İmge sayzına imge sayzı. Bunu bu şekilde verince bu ne oluyor? 3.1 matriz mi oluyor?
+
+26
+00:09:21,299 --> 00:09:33,451
+Yok, yani evet üç boyutlu oluyor. En, en, bir oluyor. Pardon, iki oluyor çünkü hem ix'in deriveti var hem de ey'in deriveti var. O yüzden...
+
+27
+00:09:37,107 --> 00:09:38,747
+And then 2 olmuş oldu.
+
+28
+00:09:44,179 --> 00:10:11,519
+Sonra bunları... Burayı tam çözemedim ya. Burayı... Şöyle yaparsak, print gradient i shape desek... 1'e, 2'ye, 256'e, 256 bir şey çıkıyor bundan.
+
+29
+00:10:11,988 --> 00:10:18,988
+Daha sonra altta onu transpose edip istediğin formatı çevirir.
+
+30
+00:10:18,988 --> 00:10:24,988
+Print, gradient, i, şey diyelim tekrar.
+
+31
+00:10:24,988 --> 00:10:32,988
+Bu sefer 256'ye 206'ya 2'ye 1 oldu.
+
+32
+00:10:38,100 --> 00:10:45,779
+Yani her piksel değeri için hem EX deriveti var hem de EY deriveti var.
+
+33
+00:10:48,300 --> 00:11:01,200
+Bu 3-4 olunca biraz hayal etmekte zorlanıyorum ben. Hangi eksen hangisiydi, neydi? Farkı ne? O biraz zor oluyor benim için.
+
+34
+00:11:02,515 --> 00:11:07,635
+Transpozunu aldım bunun. Transpoz zaten bu şeyleri değiştiriyor.
+
+35
+00:11:08,395 --> 00:11:16,635
+Evet. Bu sefer 1'e 2'ye çevirmiş oldum. Yukarıdaki formüldeki gibi.
+
+36
+00:11:21,203 --> 00:11:32,323
+Zafer 1'e 2'ye çevirmiş oldun. Daha sonra M'de bu yüzden 256-256, 2'ye 2 olmuş oldun. Yani 4 tane.
+
+37
+00:11:39,220 --> 00:11:53,519
+256'ya, 206'ya, 2'ye 2. 2'ye 2 matris gibi düşünebilirsin. Her bir piksel için 2'ye 2 matrislerin oluşmuş olur. Enteresan.
+
+38
+00:11:56,916 --> 00:11:59,556
+Bu transpos fonksiyonu çok karmaşık ya.
+
+39
+00:12:02,196 --> 00:12:03,516
+Hani basit şeylerde
+
+40
+00:12:03,516 --> 00:12:07,196
+basit de
+
+41
+00:12:08,148 --> 00:12:18,827
+Bu şekilde çok boyutlu şeylerde eksenlerin boyutlarını yeniden veriyorsun. Ne yapıyorsun? Eksenleri tekrar sıralıyorsun galiba.
+
+42
+00:12:18,827 --> 00:12:25,307
+Evet. 2 mesela ikinci indisteki eksen, 3'teki indisteki eksen.
+
+43
+00:12:25,307 --> 00:12:29,028
+Eskiden ikinci indekste olan eksen şimdi sıfırınca eksen oluyor.
+
+44
+00:12:29,028 --> 00:12:30,028
+Evet.
+
+45
+00:12:34,772 --> 00:12:38,872
+Şekli falan bozulmuyor mu bunların? Yok hocam, bozulmuyor.
+
+46
+00:12:42,580 --> 00:12:46,580
+Burayı biraz topa öğrenmek gerekiyor tabi.
+
+47
+00:12:48,580 --> 00:12:53,580
+Elinde dolayısıyla Second Moment matrisleri oluyor.
+
+48
+00:12:53,580 --> 00:12:57,580
+256 ya 256 tane Second Moment matrisim var.
+
+49
+00:12:57,580 --> 00:12:59,580
+Peki çok güzel.
+
+50
+00:12:59,580 --> 00:13:04,580
+Bana sorsan ben 4 tane resim koyardım bir kenara.
+
+51
+00:13:04,580 --> 00:13:08,580
+Sonra işte onları her birini çarpı topla bir şeyler yapardım.
+
+52
+00:13:10,004 --> 00:13:18,004
+Algen Belgolarını Linalg Algen Belgoları diye bir fonksiyon var. Oradan buldum diyorsun.
+
+53
+00:13:21,556 --> 00:13:30,976
+Burada ne yaptın? Bunları gösterdin. Neyi gösterdin? EigenValueMax, EigenValueMinimumlarını gösterdin.
+
+54
+00:13:35,976 --> 00:13:41,016
+Burada amacımız Edge Detection değil mi?
+
+55
+00:13:41,016 --> 00:13:41,936
+Evet.
+
+56
+00:13:46,100 --> 00:13:51,299
+Agen velülerin maksimum olduğu yerler de edge olduğu açık değil mi?
+
+57
+00:13:56,563 --> 00:14:00,563
+Burada ne yaptın? Elips çizdirmeye çalışıyorsun değil mi?
+
+58
+00:14:00,563 --> 00:14:09,563
+Evet. Sadece window'lar halinde çizdirdim. Çünkü her piksele bir tane çizdirince birazcık karışıyor resim.
+
+59
+00:14:09,563 --> 00:14:15,563
+Evet. Sadece daha büyük bir grid'e mi çizdirdin?
+
+60
+00:14:15,563 --> 00:14:20,563
+Evet. 7'ye 7'lik window'lar aldım. Onların ortalamasını çizdirdim.
+
+61
+00:14:21,172 --> 00:14:28,332
+Elips çizdirmek için de matplotlib patches'tan elips şeyini kullandın. Değil mi?
+
+62
+00:14:28,332 --> 00:14:29,332
+Evet.
+
+63
+00:14:31,332 --> 00:14:34,932
+Bu ne? Bu baya karışık bir şey olmuş ya. Ne yapmışsın burada?
+
+64
+00:14:36,132 --> 00:14:40,372
+Orası aslında o window'ların ortalamalarını alıyor.
+
+65
+00:14:41,172 --> 00:14:45,012
+Ve şeyleri, elipsin width'ini ve height'ını belirliyor.
+
+66
+00:14:47,572 --> 00:14:50,892
+Ellipse with Eigen Value 1 bölü 2
+
+67
+00:14:55,892 --> 00:15:04,672
+Eksi değil miydi ya? Ben yanlışmadım. Neydi o konu? Eksi 1 bölü 2 değil miydi? Eksi gerekmiyor muydu?
+
+68
+00:15:05,792 --> 00:15:17,211
+Hocam, eksi 1 bölü 2 ama ben eksi 1 bölü 2 ile yaptığımda çok değişik şeyler elde ettim. 1 bölü 2 ile daha iyi çıkıyordu aslında ama eksi 1 bölü 2 olarak bıraktım ben de.
+
+69
+00:15:18,163 --> 00:15:30,344
+Evet, bir bölü kök eigenvalue'yi bayağı karıştırıyor. O yüzden direkt kök eigenvalue olarak kullanılca daha mantıklı çıkıyor.
+
+70
+00:15:30,344 --> 00:15:32,084
+Allah'ım.
+
+71
+00:15:37,683 --> 00:15:42,824
+Bence eksi yapmanız lazım. Şu resme baktığımda eksi daha uygun gibi gözüküyor.
+
+72
+00:15:44,148 --> 00:16:05,788
+Çünkü mesela, pardon. Şurada mesela, şu elips mesela, olması gerekenden dik geliyor bana. Yani şunun gibi olması lazım.
+
+73
+00:16:10,740 --> 00:16:17,420
+Sanki elipsler böyle olması gerekene 90 derece ters görüyorum ben burada.
+
+74
+00:16:20,259 --> 00:16:22,740
+Hocam ben bir şey sorabilir miyim burada?
+
+75
+00:16:23,920 --> 00:16:26,360
+Sen eksi 1 bölü 2 bırakmış mıydın?
+
+76
+00:16:26,860 --> 00:16:30,120
+Bıraktım ama burada şeyi sormak istemiştim ben.
+
+77
+00:16:30,120 --> 00:16:37,819
+Bu elipslerin yönlerini belirtirken eğilme vektörlerden tanımlamamız gerekiyordu değil mi?
+
+78
+00:16:38,803 --> 00:16:44,943
+Tam olarak onu value'lardan mı, vektörlerden mi? Ben sanki şeyde...
+
+79
+00:16:44,943 --> 00:16:46,024
+Agen vektörlerden.
+
+80
+00:16:47,524 --> 00:16:53,963
+Vektörlerden tanımlarken onu tam olarak nasıl tanımlamamız gerekiyordu? Yani ben orada çok şey yapamadım tam olarak onu.
+
+81
+00:17:06,099 --> 00:17:13,779
+Yönünü gösteriyor. Yani elipsinizin eksenlerini veriyor eigenvektörler.
+
+82
+00:17:13,779 --> 00:17:24,259
+Eigenvalue da karşılık geldiği yöndeki elipsin boyunu hesap etmek için kullanılacak.
+
+83
+00:17:24,259 --> 00:17:30,419
+Orasını vermedik. Orasını ben de tam bilmiyorum. Yani onu internetten araştırıp bilmek lazım.
+
+84
+00:17:30,900 --> 00:17:39,100
+İstenilen eksen vektörleriyle elips nasıl çizilebilir? Çok zor olduğunu zannetmiyorum. Burada bir şekilde bulmuşsunuz.
+
+85
+00:17:43,240 --> 00:17:46,988
+Ama o sunuma bakarsak...
+
+86
+00:18:44,723 --> 00:18:46,723
+Buralarda anlatılmıştı.
+
+87
+00:18:59,508 --> 00:19:13,208
+Evet, second moment matrixi buluyoruz. Şu eigenvalue decomposition. Bunlar eigenvalue'lar. Burada eigenvektörler olması lazım.
+
+88
+00:19:13,668 --> 00:19:14,528
+Evet hocam.
+
+89
+00:19:14,528 --> 00:19:21,248
+Eigenvektörleri acaba yanlış mı aldınız? Yatay, dikey, ona dikkat etmek lazım.
+
+90
+00:19:22,163 --> 00:19:28,864
+İkiye iki bir şeyin hangisi aygen vektör veya kullandığınız kütüphane nasıl veriyor bilmiyorum ama.
+
+91
+00:19:30,884 --> 00:19:34,163
+Şimdi aygen vektörlerin büyüğü...
+
+92
+00:19:35,224 --> 00:19:37,163
+Onlar aygen şey...
+
+93
+00:19:37,163 --> 00:19:39,423
+Şu aygen vektörlerin küçüğü şöyle olacak.
+
+94
+00:19:39,663 --> 00:19:41,663
+Aygen vektörlerin büyüğü böyle olacak.
+
+95
+00:19:43,523 --> 00:19:45,163
+Ya aygen vektörlerin küçüğü...
+
+96
+00:19:48,723 --> 00:20:16,003
+Elipsin uzun ekseni ya da primary eksenini veriyor. O şekilde yapmanız lazım. Çünkü eigenvalue değişim miktarını verecek. Elipsin uzun tarafında değişim daha az. Ama eigenvalue'nin büyük olduğu yerde değişim daha fazla değil mi?
+
+97
+00:20:16,980 --> 00:20:17,980
+Evet.
+
+98
+00:20:17,980 --> 00:20:34,980
+O şey de zaten eksiğe koyunca aşağı düşüyor. Küçük değer 1 bölü 6, 1 bölü daha küçük değer daha büyük şey veriyorsun sana. Değil mi?
+
+99
+00:20:34,980 --> 00:20:42,980
+Şuradaki I am value büyüdükçe 1 bölü olduğu için, 1 bölünün altında payda da olduğu için
+
+100
+00:20:43,827 --> 00:20:47,427
+Değerin kendisi daha büyük olacaktır.
+
+101
+00:20:52,852 --> 00:20:53,872
+Tabii olabilir.
+
+102
+00:20:58,291 --> 00:20:59,652
+Geçmiş olsun diyelim.
+
+103
+00:21:00,511 --> 00:21:01,711
+Teşekkür ederim.
+
+104
+00:21:08,948 --> 00:21:10,764
+Evet.
+
+105
+00:21:13,971 --> 00:21:32,951
+Orada eksi var. Şurada eksi 1 bölü 2 var. Resmin de bana aslında doğal gelmiyor. Özgür. Çünkü şu resimde, mesela şuralara bakıyorum.
+
+106
+00:21:40,884 --> 00:21:55,144
+Şurada mesela maksimum renk değişimi bu elipsin bu ekseninde değil de öbür ekseninde gibi geliyor bana.
+
+107
+00:21:55,983 --> 00:22:02,963
+Hocam aslında oradan beyazdan siyaha geçtiği için bana da sanki öyle daha doğru gibi.
+
+108
+00:22:03,347 --> 00:22:14,548
+Diğer o yanan olanlar beyazın üzerinde olduğu için gibi sanki. Yani öyle düşündüğüm için böyle bırakmıştım da olabilir.
+
+109
+00:22:14,548 --> 00:22:27,327
+Yani bence eksiği koyman lazım oraya. Ama buraya kadar gayet güzel gelmişsin. Olabilir böyle şeyler. Bu nedenle gözden geçiriyoruz.
+
+110
+00:22:28,852 --> 00:22:36,692
+Burayı anlamadım. Burada baya karışık bir şey yapmışsın. Neyse bu artık matematiksel bir şey. Elips çizdirmeye çalışıyorsun değil mi?
+
+111
+00:22:36,692 --> 00:22:44,852
+Orada sadece window'ların ortalamasını alıyorum. Orada window'da 7'ye 7'lik bir değer olduğu için.
+
+112
+00:22:44,852 --> 00:22:48,852
+Nereye çindireceğini mi belirliyorsun?
+
+113
+00:22:48,852 --> 00:22:54,852
+Yok, window'un ortalama width değerini ve height değerini alıyorum.
+
+114
+00:22:56,468 --> 00:23:07,428
+Böylece işte oradaki ortalama eigenvalue ve ortalama eigenmax ve eigenminvalue elde edip ona göre çizdiriyor.
+
+115
+00:23:10,148 --> 00:23:13,088
+Ortalama eigenvalue'yu Windows'da.
+
+116
+00:23:13,648 --> 00:23:17,488
+Yani 7'ye 7'lik bir grid oluştuğu için orada.
+
+117
+00:23:18,132 --> 00:23:37,492
+Artık yani o yüzden 49 tane işte piksel değerim var. 49 tane eigenvalue değerim var orada. Onun ortalamasını alıyorum ki şey çıksın. Grid'de tek bir tane gözüksün. Bu ama sadece şey için değil mi? Gösterim amaçlı için. Evet evet sadece gösterim ama.
+
+118
+00:23:37,492 --> 00:23:44,872
+Paris dedektörü şey piksel tabanlı. Evet evet bu sadece şeyleri, elipsleri göstermek için de.
+
+119
+00:23:54,228 --> 00:24:02,088
+Peki, sonra Corner Response Function'ı hesap etmem lazım dedin. Determinantı hesap ettin, Trace'ı hesap ettin.
+
+120
+00:24:08,403 --> 00:24:11,144
+Alfayı 0.4 aldım.
+
+121
+00:24:14,867 --> 00:24:19,367
+Bunlar, şunlar corner response'lar mı?
+
+122
+00:24:21,467 --> 00:24:27,367
+Belirli bir threshold'un altında olan değerlere sıfır attın. Böylece seçmek oldun.
+
+123
+00:24:30,567 --> 00:24:34,367
+Sonra non-max suppression uygulamam lazım dedin.
+
+124
+00:24:35,067 --> 00:24:39,867
+Şöyle bir koddan yararlanıyorum. Genarlı yararlanıyorum dedin.
+
+125
+00:24:40,867 --> 00:24:41,567
+Peki.
+
+126
+00:24:56,531 --> 00:25:02,331
+Evet, yani bulduğum noktalar burası dedin. Peki.
+
+127
+00:25:09,428 --> 00:25:11,728
+Orada hepsini bir fonksiyonun içine atalım.
+
+128
+00:25:14,807 --> 00:25:16,347
+Yukarıdakilerin hangisi yani?
+
+129
+00:25:16,847 --> 00:25:19,668
+Aynı kısımda ama fonksiyon halinde buluyor.
+
+130
+00:25:20,688 --> 00:25:21,208
+Peki.
+
+131
+00:25:22,748 --> 00:25:23,768
+Güzel.
+
+132
+00:25:25,048 --> 00:25:28,108
+Eline, aklına sağlık diyelim.
+
+133
+00:25:30,168 --> 00:25:31,188
+Hoş olmuş.
+
+134
+00:25:40,051 --> 00:25:43,851
+Tamam, bugün böyle bir tane daha bakalım mı?
+
+135
+00:25:50,516 --> 00:25:52,456
+[öğrenci]'e bakalım mesinler.
+
+136
+00:25:56,980 --> 00:26:02,619
+Hocam ben o elips çizdirme kısmını yapamadım dediğim gibi. Olmadı peki.
+
+137
+00:26:03,579 --> 00:26:08,880
+Peki kim yaptı elips çizdirme kısmını? İtiraf edin.
+
+138
+00:26:31,700 --> 00:26:35,519
+Kim beni düzgünce başka kim ne yaptı arkadaşlar?
+
+139
+00:26:43,571 --> 00:26:47,811
+[öğrenci] burada mı? [öğrenci]'e daha önce bakmış mıydık [öğrenci]'in işlerine?
+
+140
+00:26:49,111 --> 00:26:49,672
+Şuraya.
+
+141
+00:26:50,672 --> 00:26:51,551
+Sen yaptın mı?
+
+142
+00:26:53,211 --> 00:26:54,411
+Beni çizdim ben hocam.
+
+143
+00:26:55,011 --> 00:26:55,451
+Sen de mi?
+
+144
+00:26:57,391 --> 00:26:59,411
+Peki, başka kim çizdirdi?
+
+145
+00:27:04,692 --> 00:27:05,371
+[öğrenci].
+
+146
+00:27:13,940 --> 00:27:17,940
+[öğrenci], sen burada mısın? Göndermiş miydin sen?
+
+147
+00:27:25,172 --> 00:27:26,751
+[öğrenci] sen yaptırdın mı?
+
+148
+00:27:28,132 --> 00:27:30,052
+Hocam ben de elipsi yetiştiremedim.
+
+149
+00:27:31,872 --> 00:27:34,492
+Elipsi çizdirme bayağı bir problem olmuş sanki ya.
+
+150
+00:27:41,491 --> 00:27:43,011
+[öğrenci] burada mı?
+
+151
+00:27:53,236 --> 00:28:02,135
+Bu elips çizdirme şöyle, gerek esasen yani belirli bir alana imge üzerinde işaretlemeniz gerek oluyor sık sık.
+
+152
+00:28:04,135 --> 00:28:07,556
+Bunu artık bulabilirsiniz bir şekilde.
+
+153
+00:28:18,675 --> 00:28:20,395
+[öğrenci] sen yaptırdın lan.
+
+154
+00:28:32,596 --> 00:28:43,596
+Çat'tan... Bende elips çizdirme yok. Kimde var? Çete yazdırsın. Elips çizdirmeyi kim yaptı? Çete yazdırsın.
+
+155
+00:28:51,316 --> 00:29:12,736
+Evet. Kimse de yok herhalde hocam. Evet öyle gözüküyor. Enteresan. O kadar zor muydu o ya? Tamam artık. Yani şey o zaman Eera iyi seçmişiz ilk denememizde. [öğrenci]'ünki bayağı ideale yakın bir ödev olmuş.
+
+156
+00:29:14,291 --> 00:29:20,051
+Orada işte elipsi de çizdirme için fonksiyonu da belki görmüşsünüzdür.
+
+157
+00:29:41,652 --> 00:29:50,412
+Yani ellipsi matplotlib batches ellips fonksiyonuyla, kütüphanesiyle çizdiriyor diyelim.
+
+158
+00:29:52,192 --> 00:29:55,692
+Ellips diyorsun.
+
+159
+00:30:00,147 --> 00:30:02,147
+Burada ne veriyorsun buraya?
+
+160
+00:30:03,147 --> 00:30:04,147
+[öğrenci].
+
+161
+00:30:05,147 --> 00:30:07,147
+Orası x, y değerleri.
+
+162
+00:30:08,147 --> 00:30:10,147
+Şunlar x'ler ve y'ler mi?
+
+163
+00:30:10,147 --> 00:30:11,147
+Evet.
+
+164
+00:30:11,147 --> 00:30:13,147
+Yani y'ler veriyoruz.
+
+165
+00:30:15,147 --> 00:30:19,147
+Şu width dediğin şey, şu height dediğin şey değil mi?
+
+166
+00:30:19,859 --> 00:30:24,759
+Ha, şu da bir angle. Dolayısıyla bir angle veriyorsun elipse. Doğru mu?
+
+167
+00:30:24,799 --> 00:30:25,039
+Evet.
+
+168
+00:30:25,939 --> 00:30:31,519
+İşte o angle'ı eigen vektörlerle hesap etmen lazım. Değil mi?
+
+169
+00:30:32,439 --> 00:30:36,579
+Yani eigen vektörler yardımıyla bir angle hesabı yapman lazım.
+
+170
+00:30:37,899 --> 00:30:41,839
+Orada bir tangent'tan bir angle yapılabilir gibi mi geliyor?
+
+171
+00:30:41,839 --> 00:30:42,839
+Yani...
+
+172
+00:30:47,124 --> 00:31:02,423
+Ben internette birkaç baktığım örnekte şey yapmışlardı. Image'in oradaki değeriyle angle vermişlerdi. Ben de öyle verince birazcık hani en azından biraz anlamlı bir şey çıkınca öyle bıraktım.
+
+173
+00:31:02,423 --> 00:31:05,284
+Ya eigenvector yok galiba burada.
+
+174
+00:31:05,784 --> 00:31:07,624
+Yok eigenvector'ları kullandım.
+
+175
+00:31:11,092 --> 00:31:18,692
+Seninki de yaklaşık ama seninki de tam değil. Igen, Igen Max ne? Değerler değil mi?
+
+176
+00:31:19,272 --> 00:31:20,211
+Igen belirler.
+
+177
+00:31:20,812 --> 00:31:32,852
+Igen belirler. Ama Igen vektörler kullanılmamış bu elif siliminde. Dolayısıyla esasen bu da tam uygun değil. Igen vektörlerin şeyi vermesi lazım.
+
+178
+00:31:35,571 --> 00:31:42,471
+Başka bir yoldan yapıyorum tam bilemiyorum. Şimdi burada Windows'lar falan var. Çok parse edemedim bu kodu.
+
+179
+00:31:44,471 --> 00:31:54,091
+Neyse, burada bırakalım. Biraz ders yapalım. Bugün zaten bir saatte eksik yapacağım. Son saat bir toplantıya katılmam gerekiyor.
+
+180
+00:32:33,683 --> 00:32:42,563
+Geçen hafta bu Haris bulucusu üzerine çalışmıştık.
+
+181
+00:33:05,587 --> 00:33:18,468
+Şimdi Harris bulucusu gördüğümüz kadarıyla a fine intensity change'de invariant yani
+
+182
+00:33:21,971 --> 00:33:32,051
+İntensitiler, yani parlaklıklar değiştiğinde genel olarak noktalar yine bulunuyor.
+
+183
+00:33:32,791 --> 00:33:44,531
+Threshold değerine göre. İntensitiyi biraz artırdığınız zaman bir kısım noktalar, önceden bulunmayan noktalar tekrar bulunabiliyor.
+
+184
+00:33:46,259 --> 00:33:53,659
+Yani intensity'ye biraz bağlı ama noktalar çok değişmiyor. Bulunan noktalar çok değişmiyor.
+
+185
+00:33:59,604 --> 00:34:22,364
+Intensity'nin yeri değiştiğinde hiçbir sıkıntı yok. Çünkü türev shift invariant yani ingelerdeki nesneler yer değiştirince türevlere verdikleri cevap değişmiyor.
+
+186
+00:34:22,364 --> 00:34:27,164
+Shift invariant türev, kullandığımız türev.
+
+187
+00:34:28,148 --> 00:34:43,748
+Dolayısıyla orada bir sıkıntı yok. Dolayısıyla yani EFA'nin parlaklık değişikliklerine nispeten invariant diyebiliyoruz.
+
+188
+00:34:55,251 --> 00:34:58,751
+Fakat bulunan bazı noktalar bulunmayabiliyor.
+
+189
+00:35:02,260 --> 00:35:20,380
+Window Function yani o Gaussian da Shift Invariant. Dolayısıyla nesneyi başka bir yere taşısanız da İngede aynı noktalar bu Harris operatörü tarafından bulunuyor.
+
+190
+00:35:27,380 --> 00:35:53,400
+Rotasyonda ne oluyor? Yani nesneleri biraz rotate ettiğimizde şunu görüyoruz. Eigen value'lar aynı kalıyor. Elipsin kendisi dönüyor. Ama eigen value'lar aynı kalıyor. Dolayısıyla rotasyonda da Harris'in invariant, daha doğrusu covariant demiş.
+
+191
+00:35:55,092 --> 00:35:57,092
+Beraber değiştiğini görüyoruz.
+
+192
+00:36:00,092 --> 00:36:03,092
+Köşe lokasyonu covariant kalıyor.
+
+193
+00:36:04,092 --> 00:36:11,092
+Yani Haris'in iyi bir bulucunun bu şekilde covariant ya da invariant olması lazım.
+
+194
+00:36:12,092 --> 00:36:21,092
+Ufak değişikliklere, resimdeki değişikliklerden etkilenmemesi veya mantıklı bir şekilde etkilenmesi lazım.
+
+195
+00:36:25,043 --> 00:36:40,804
+Scaling'e baktığımızda ama, şimdi küçük bir nesne ise, mesela şuradaki imgedeki bir yapı olduğunu düşünün.
+
+196
+00:36:43,163 --> 00:36:48,943
+Bu imgedeki yapı küçük, uzaktan gördüğümüzde bir köşe olarak algılanıyor.
+
+197
+00:36:50,164 --> 00:37:09,884
+Ama zoom in yapılmış şekilde bir fotoğraf çekilmişse ne oluyor? Köşe değil de bir kenar olarak algılanacak veya sınıflanacaktır.
+
+198
+00:37:25,907 --> 00:37:27,907
+Dolayısıyla
+
+199
+00:37:34,228 --> 00:37:46,028
+Scaling için covariant değil. Yani köşenin lokasyonu scale yaptığınızda, scaling ne demek anlıyor musunuz?
+
+200
+00:37:47,028 --> 00:37:56,128
+Yani şöyle bir fotoğrafa ne kadar uzaktan veya bir sahneye ne kadar uzaktan baktığınızdan bahsediyor scaling.
+
+201
+00:37:57,940 --> 00:38:07,539
+Büyük scale'lerde uzaktan bakıyorsunuz varsayın. Küçük scale'lerde sahneye yakından bakıyorsunuz varsayın.
+
+202
+00:38:12,539 --> 00:38:25,340
+Dolayısıyla temel bir problemi esasen Harris nokta bulucusunun bize scale'ı vermiyor veya farklı scale'lerde çalışmıyor.
+
+203
+00:38:26,867 --> 00:38:41,127
+Tabii Haris Nokta Bulucusu temel alınarak yapılan şeyler var. Geliştirilen bulucular var.
+
+204
+00:38:44,851 --> 00:38:46,827
+Ve bunlar...
+
+205
+00:38:55,251 --> 00:39:02,931
+Scale Invariant. Scale'de de çalışıyor. Farklı skellerde de çalışıyorlar.
+
+206
+00:39:28,083 --> 00:39:29,923
+Bir sonraki slide'a bir bakalım.
+
+207
+00:39:34,804 --> 00:39:58,344
+Zeliski'de ilgili bölümü okuyabilirsiniz isterseniz. Bundan sonra ödev vermek istemiyorum. Mevcut ödevlerinizi henüz okumadım. Çok ödev verince aslında bir de şimdi yavaş yavaş proje üzerinde düşünmemiz lazım. En azından bu hafta ödev vermek istemiyorum. Ödevlerinizi okumayı tercih edeceğim.
+
+208
+00:40:06,452 --> 00:40:11,932
+Geçen dersi bir anlatmış. Harris Corner Detektorini anlatmış.
+
+209
+00:40:13,992 --> 00:40:19,172
+Tekrar. Şu ana kadar ne yaptık demiş.
+
+210
+00:40:27,539 --> 00:40:47,440
+X'ye de lokalize edebiliyoruz ama ölçekte lokalize edemiyoruz. Yani ölçekte lokalize etmek ne demek? Doğru şeyi ölçekte o bölge nerede onu belirleyemiyoruz.
+
+211
+00:40:47,440 --> 00:40:53,440
+Ölçekte ne demek birazdan göreceksiniz zamanla. Mesela burada görüyorsunuz.
+
+212
+00:40:54,739 --> 00:41:22,279
+Aynı imgenin, şurada daha yakından büyük ölçekli bir görünümü var. Burada ise küçük ölçekli bir görünümü var. Sorun şu, nokta değil de bölgeyi nasıl bulabiliriz? Yani iki imgede karşılık gelen bölgeyi nasıl bulabiliriz? Sadece noktayı değil.
+
+213
+00:41:23,284 --> 00:41:29,423
+Şurada mesela şu kareyi görüyorsunuz. Burada ise bu kareyi görüyorsunuz.
+
+214
+00:41:32,764 --> 00:41:46,064
+Öyle bir fonksiyon bulmak istiyoruz ki, fikir şu. Öyle bir fonksiyon olacak ki, imgeyi verdiğimizde şu pikselde ve bu pikselde
+
+215
+00:41:46,579 --> 00:42:12,579
+Bize aynı değeri verecek. Yani buralarda aynı şey var diyebileceğiz. Bunu tabii bir ölçek, yani bölgeden çıkarıp da söyleyecek. Bölgeyi de bir window fonksiyonu gibi bir şeyle tanımlayabiliriz. Dolayısıyla diyeceğiz ki bu x de
+
+216
+00:42:14,931 --> 00:42:32,931
+ve Y'de, imgenin burasında şu ölçekteki bölge, imgenin burasındaki şu ölçekteki bölgeye eşittir veya uyar. Öyle bir fonksiyon türetmek istiyoruz.
+
+217
+00:42:43,315 --> 00:42:48,435
+Burada öyle bir fonksiyonun nasıl davranabileceğini gösteriyor sanırım.
+
+218
+00:42:53,364 --> 00:42:54,483
+Öğ...
+
+219
+00:42:57,523 --> 00:43:11,083
+Bir fonksiyonumuz var. Bu fonksiyonun fikir şu. İmgenin değişik ölçeklerinde bu fonksiyonun değerlerini bulalım.
+
+220
+00:43:25,556 --> 00:43:26,796
+Ölçeği diyelim.
+
+221
+00:43:28,996 --> 00:43:41,076
+Ve öyle bir fonksiyon arıyoruz ki, farklı ölçeklerdeki ingeleri aldığında bu fonksiyonun maksimumları yine aynı yerde olacak.
+
+222
+00:43:41,316 --> 00:43:45,356
+Yani bu ingeyi aldığınız değişik ölçeklerine hesap ettiniz.
+
+223
+00:43:53,684 --> 00:43:54,316
+Öğ...
+
+224
+00:44:02,291 --> 00:44:08,471
+değişik ölçeklerinde hesap ettiniz. Bu imgeyi de aldınız. Değişik ölçeklerde hesap ettiniz.
+
+225
+00:44:11,311 --> 00:44:21,911
+O fonksiyon, bulmak istediğiniz fonksiyon, yine karşılık gelen ölçekte maksimum değerini alacak.
+
+226
+00:44:24,820 --> 00:44:33,640
+İmgenin karşılık gelen bölgelerine denk düşecek komşuluk büyüklüğü. Böyle fonksiyona ihtiyacımız var.
+
+227
+00:44:37,480 --> 00:44:40,360
+Bu tarz bir fonksiyon ne olabilir?
+
+228
+00:44:49,139 --> 00:44:53,159
+Difference of Gaussian dediğimiz bir fonksiyon var.
+
+229
+00:44:55,319 --> 00:45:03,319
+Gaussian'ların farkı. İki Gauss'u birbirinden çıkarttığınızda şöyle Meksikalı şapkası gibi bir şekilde oluyor.
+
+230
+00:45:15,284 --> 00:45:15,784
+Ve
+
+231
+00:45:24,115 --> 00:45:38,655
+Bu fonksiyon köşe değil de şeylerde, blop deniliyor. Türkçeye nasıl çevireceğiz?
+
+232
+00:45:49,523 --> 00:46:02,443
+Küçük bir Difference of Gaussian'ı çalıştırdığınızda küçük bölgeler cevap veriyor. Büyük bir Difference of Gaussian'ı çalıştırdığınızda büyük bölgelerden cevap alabiliyorsunuz.
+
+233
+00:46:06,900 --> 00:46:07,852
+Öğren.
+
+234
+00:46:12,500 --> 00:46:29,500
+Burada nasıl elde edebileceğinizi göstermiş. Burada imgeyi birinci Gaussian'a sokuyorsunuz. Burada da ikinci Gaussian'a sokuyorsunuz. İkisinin farkını alıyorsunuz. Dolayısıyla...
+
+235
+00:46:34,036 --> 00:46:38,176
+Difference of Gaussian olmuş oluyor. Yani Gaussian'ların farkı.
+
+236
+00:46:39,976 --> 00:46:47,176
+Gördüğünüz gibi küçük ölçekli bir Gaussian'dan büyük ölçekli bir Gaussian'ı çıkarıyorsunuz.
+
+237
+00:46:47,655 --> 00:46:53,576
+Ölçeğe şimdilik Varyans olarak bakabilirsiniz.
+
+238
+00:46:53,796 --> 00:47:01,176
+Yani büyük ölçekli dediğimde şimdilik büyük Varyanslı bir Gauss filtresinden geçmiş bir...
+
+239
+00:47:01,679 --> 00:47:03,899
+İmge gibi düşünebilirsiniz.
+
+240
+00:47:07,059 --> 00:47:08,979
+Şöyle bir şey çıkıyor.
+
+241
+00:47:13,639 --> 00:47:21,500
+Oluşturulan o filtreyi de geçen ödevlerde yaptığınız gibi 3 boyutlu çizerseniz şöyle bir görünüm alıyorsunuz.
+
+242
+00:47:22,119 --> 00:47:25,539
+Gauss'a benziyor ama şu kenarlarda sıfırın altına iniyor.
+
+243
+00:47:27,155 --> 00:47:31,475
+Yani daha düşük değerler alıyor demek istiyorum. Ortalamadan.
+
+244
+00:47:37,268 --> 00:47:53,127
+Peki, şöyle bir soru soruluyor. Metodik olarak ne yapsak da böyle resimlerin şeyini elde etsek?
+
+245
+00:48:02,675 --> 00:48:14,056
+Doğru ölçekte doğru bölgeyi bulsak. Burada tabii birden fazla örnek var, birden fazla nokta bulucusu da var.
+
+246
+00:48:14,056 --> 00:48:18,056
+Bir tanesi...
+
+247
+00:48:24,148 --> 00:48:26,148
+Bu şey de...
+
+248
+00:48:26,148 --> 00:48:28,768
+Kapanmıyor.
+
+249
+00:48:29,768 --> 00:48:32,208
+Çok ısrarcı.
+
+250
+00:48:35,923 --> 00:48:38,743
+Bir tanesi DOC.
+
+251
+00:48:44,820 --> 00:48:47,640
+Yani Difference of Gaussian'dı bu zaten.
+
+252
+00:48:51,572 --> 00:49:00,592
+Difference of Gaussian. Bunları eficiente bir şekilde nasıl acaba hesap edebiliriz? Hızlı bir şekilde.
+
+253
+00:49:02,811 --> 00:49:06,192
+Fikir şu, orijinal imgeden başlıyorsunuz.
+
+254
+00:49:10,420 --> 00:49:34,124
+Sonra orijinal imgeyi bir gaustan geçiriyorsunuz. Bir gaust filtresiyle filtreliyorsunuz. Sonra o elde ettiğiniz imgeyi bir gaust filtresiyle daha...
+
+255
+00:49:34,164 --> 00:49:56,404
+Sonra bir daha filtreliyorsunuz. Sonra bir daha filtreliyorsunuz. Sonra bir daha filtreliyorsunuz. Şimdi ne oluyor? Her Gauss filtresiyle filtrelediğinizde yeni imgenin, oluşan imgenin ölçeği artıyor.
+
+256
+00:50:00,000 --> 00:50:15,119
+Olduğu Gauss filtresinin varyansı artıyor. Dolayısıyla gittikçe daha büyük varyanslarla filtrelenmiş imgeler var elinizde.
+
+257
+00:50:28,052 --> 00:50:45,692
+Tak, Difference of Gaussian'ı bulmuş oluyorsunuz. Yani bir, iki, üç, dört, beş tane, bir tanesi de orijinal olsun, dört tane diyelim ki şey yaptınız, filtreleme yaptınız.
+
+258
+00:50:50,812 --> 00:50:54,751
+Dolayısıyla beş tane elinizde katman var diyelim.
+
+259
+00:50:55,635 --> 00:51:20,396
+Katman diyelim bunlara. Şimdi katmanların arasındaki katmanları birbirinden çıkararak bir difference of Gaussian buluyorsunuz. Sonra bir difference of Gaussian daha buluyorsunuz. Bir difference of Gaussian daha buluyorsunuz. Bir difference of Gaussian daha buluyorsunuz. Her bir difference of Gaussian'ın varyansını biliyorsunuz.
+
+260
+00:51:21,588 --> 00:51:29,088
+Şu varyanslı ingeden bu varyanslı inge çıkarılarak elde ettiği için buradaki varyansı biliyorsunuz.
+
+261
+00:51:41,684 --> 00:51:42,668
+Bu ne?
+
+262
+00:51:49,172 --> 00:51:59,172
+Şimdi, Efficient olabilmesi için bu işlemin, tabii Gaussiyanlarla...
+
+263
+00:52:03,603 --> 00:52:18,663
+Galatasiyanlarla filtreledikçe renk imge yumuşuyor, yani bulanıklaşıyor. Gittikçe bulanıklaşıyor, bulanıklaşıyor.
+
+264
+00:52:26,900 --> 00:52:49,500
+Mevcut piksel sayısıyla çalışmak gereksiz oluyor. Yani efficient yapmak istiyoruz ya bu işi. Dolayısıyla burada bir sampling yapıyoruz. Nasıl bir sampling yapıyoruz? Satırların birini alıp birini atıyoruz. Sütunların da birini alıp birini atıyoruz.
+
+265
+00:52:53,331 --> 00:52:54,911
+Boyutları yarıya düşüyor.
+
+266
+00:52:58,771 --> 00:53:02,371
+Aynı işlemi bu şekilde, bu sefer burada devam ediyoruz.
+
+267
+00:53:07,971 --> 00:53:22,311
+Mesela sonra beş katman burada oluşturuyoruz. Beş katmandan dört tane Difference of Gaussian da burada elde ettik. Sonra bir yarıya daha düşürüyoruz.
+
+268
+00:53:24,148 --> 00:53:45,188
+Bu şekilde her bir şeye bir oktav deniliyor. Yani her bir yarıya düşürdükten sonra elde ettiğimiz büyüklüğe, büyüklükteki imgelerin topluluğuna bir oktav deniliyor. Böyle bir şey kullanılmış. Burası bir oktav.
+
+269
+00:53:45,811 --> 00:54:11,491
+Burası bir oktav. Bu şekilde imgenin büyüklüğüne göre 4-5-6 oktav gidebilirsiniz. Artık ne kadar büyük imgeler varsa elinizde. Dolayısıyla gitgide dalgacık furya transformunu bilen var mı aranızda? Bir şekilde bir derste vesaire ona rastlamış olan var mı?
+
+270
+00:54:16,851 --> 00:54:23,851
+Sanki onun gibi gitgide daha küçük imgeler oluşturuyoruz.
+
+271
+00:54:26,311 --> 00:54:38,331
+Ve her imgenin de farklı ölçeklerde, burada ölçek dediğim Gaussian'ın varyansından bahsediyorum.
+
+272
+00:54:38,331 --> 00:54:41,171
+Veya standart sapmasından.
+
+273
+00:54:41,940 --> 00:55:01,940
+Gaussian'ın standart sapmasından farklı Gaussian standart sapmaları var. Bu şekilde Difference of Gaussian'lar elde ediyoruz. Ne oldu? Difference of Gaussian bölge bulucusu.
+
+274
+00:55:05,523 --> 00:55:11,364
+Ona aynı imgenin farklı varyanstaki versiyonlarını vermiş olduk.
+
+275
+00:55:13,884 --> 00:55:16,144
+Farklı ölçeklerdeki.
+
+276
+00:55:18,563 --> 00:55:20,384
+Sonra ne yapılıyor?
+
+277
+00:55:23,144 --> 00:55:31,003
+Bu Difference of Gaussian'ın maksimum olduğu yerleri bulalım diye düşünülüyor.
+
+278
+00:55:31,476 --> 00:55:45,056
+Bunu maksimumları yalnız nerede bulacağız? Sadece x, y pozisyonunda değil. Bir de nerede bulacağız artık? Ölçekte bulacağız değil mi? Ölçekte bulacağız.
+
+279
+00:55:51,219 --> 00:55:59,460
+Bir de arada oktavlardan dolayı... Allah Allah. Bu kapanırdı kapattığım zaman. Bugün kapanmıyor ama.
+
+280
+00:56:01,599 --> 00:56:09,739
+Bana kalk biraz gez diye hatırlatıyor normalde. O yüzden bunu ben şey yaptım. Kapanmayacak şekilde ayarladım.
+
+281
+00:56:09,739 --> 00:56:18,839
+Kapandığım zaman başka bir scheduler bunu tekrar uyandırıyor. Yoksa kapatıyorum. Neyse, scheduler da kapattım.
+
+282
+00:56:19,572 --> 00:56:22,972
+Skeçleri de kapattım. Artık herhalde açılmayacaktır.
+
+283
+00:56:28,115 --> 00:56:30,516
+Neredeydik? Ne yapıyorduk?
+
+284
+00:56:47,860 --> 00:56:49,860
+Evet, yani...
+
+285
+00:56:53,652 --> 00:57:20,012
+X, Y ve ölçekte maksimum difference of Gaussian cevabı veren pikselleri bulmak istiyoruz. Lokasyonları diyelim. Aslında piksel değil. Buradaki hesap çünkü lokasyonlar piksellerden de bağımsız oluyor. Yani değer 3.8 falan da olabiliyor. Yani piksellerden daha ayrıntılı değerler.
+
+286
+00:57:20,467 --> 00:57:41,248
+Lokasyon değerleri çıkabiliyor orada. Özellikle şeyi düşünürseniz, mesela gittikçe daha küçük oktavlarda elde ettiğimiz için, şu bir oktav diyelim ki, bunun yarısı olan bir oktav daha var.
+
+287
+00:57:46,036 --> 00:57:56,876
+Şimdi bu oktavdaki piksellerin tanımladığı alanlar orijinal piksellerimizden çok daha büyük.
+
+288
+00:57:57,776 --> 00:58:06,876
+Dolayısıyla şurada diyelim ki 100 piksel varsa bir ende, burada artık 50 piksel oluyor. Dolayısıyla bir pikselin...
+
+289
+00:58:07,539 --> 00:58:20,140
+Kapladığı alan daha büyük. İki katına, hatta iki kere ikiden dört katına çıkmış oluyor alan olarak. Dolayısıyla piksel değil de lokasyon olarak artık bakmamız lazım bu x'ye'lere.
+
+290
+00:58:20,140 --> 00:58:34,720
+Ve scale'de de yine şey yapılıyor. Bu David Löwe'nin çıkarttığı bir paper var. David Löwe.
+
+291
+00:58:40,500 --> 00:59:02,039
+Bunun aslında onu anlatıyor şu anda burada. Orada da, skeylde de direk sadece bu sigma veya bu sigma demeyelim de skeyler üzerinde gittikçe artacak diye hatırlıyor musunuz?
+
+292
+00:59:07,956 --> 00:59:15,635
+Şurada maksimumunu bulacaktık. Yani scale'lerde bu fonksiyon gittikçe artıyor, artıyor, artıyor bir yerden sonra düşmeye başlıyor.
+
+293
+00:59:17,175 --> 00:59:21,016
+İşte o maksimum nerededir?
+
+294
+00:59:21,516 --> 00:59:30,996
+Interpolasyon yardımıyla tahmin edebiliyor. Dolayısıyla scale de şu iki katman arasında bir yerdedir diyebiliyor.
+
+295
+00:59:30,996 --> 00:59:32,796
+Ki diyor, onu yapıyor.
+
+296
+00:59:40,884 --> 00:59:59,124
+Burada ne yapmış? Bunları niye söylemiş onu bilemiyorum şimdi. Dolayısıyla yavaş yavaş şey demek istiyor. Varyansın gittikçe arttığından bahsediyor.
+
+297
+01:00:04,148 --> 01:00:29,668
+Löwe bu Varyans hesabının nasıl olacağını güzelce söylemiş o paperında. Burada tam hatırlamıyorum. Burada Sigma'dan mı bahsediyor, Varyans'tan mı bahsediyor onu da tam anlayamıyorum. Normalde burada Sigma'dır. Yani standart satmadır. Sigma kare Varyans'tır çünkü.
+
+298
+01:00:30,900 --> 01:00:52,599
+Ama bazı yazarlar varyansa direkt varyans üzerinden düşünüyor ve varyansa T diyor. Sigma kare yerine. Löwe sanırım böyle yapıyor. Varyansta düşünmek daha kolay olduğu için. Okuduğunuz paperın ne demek istediğini anlamanız lazım.
+
+299
+01:01:00,275 --> 01:01:16,275
+Şimdi bir de şey yapıyor Löwen'in bu Sift'i tanıttığı paperında anlatmış bunu. Şöyle bir bölge olduğunu bulduk diyelim ki.
+
+300
+01:01:27,188 --> 01:01:49,967
+Böyle bir bölge bulduk. Bu noktayı Haris'le bulabilirsiniz. Haris'i geçen dersimizde görmüştük, ödevde yaptınız. Haris noktasının etrafında bölgeler bulacağım da diyebilirsiniz isterseniz veya direkt Haris'i hiç es geçip,
+
+301
+01:01:52,692 --> 01:02:17,472
+Ben direkt onun maksimum olduğu yerleri bulacağım da diyebilirsiniz. İki olasılık da var. Bir şekilde bölgeyi buldunuz. Şimdi bir de ne diyor Löwe? Bunun oryantasyonunu da bir standartlaştıralım, normalize edelim. Yani bu bölgedeki oryantasyon nedir?
+
+302
+01:02:19,699 --> 01:02:44,519
+X'ye dönme. Bunun için oryantasyon histogramını elde buluyor. Ve bu histogram için de dominant oryantasyonu buluyor. Yani diyelim ki bu bölgede şöyle bir gradiyan var.
+
+303
+01:02:45,364 --> 01:02:59,583
+Şöyle bir gradiyan var, böyle bir gradiyan var. Gradiyanlar bize yön veriyor biliyorsunuz. Yani X ve Y yönünde türev aldığınız için ikisini birden düşündüğünüzde bize bir yön veriyor.
+
+304
+01:03:12,467 --> 01:03:35,188
+Birim daireyi sekize bölüyor veya açıları sekize bölüyor. Sekiz farklı kodrant düşünüyor. Burası, burası, burası. Burası, burası. Sekiz oluyor.
+
+305
+01:03:40,371 --> 01:03:51,651
+Orantasyonları sayıyor. Bu yöndeki orantasyonları sayıyor. Bu yöndeki orantasyonları sayıyor. Bu şekilde bir histogram çıkarıyor.
+
+306
+01:03:54,151 --> 01:04:05,391
+Ve bu histogramda en fazla yönelim hangi yöndeyse diyor ki bu bölgedeki yönelim bu olmalı.
+
+307
+01:04:13,331 --> 01:04:40,611
+Bu şey, David Löwen'in geliştirdiği SIFT diye bir bulucu, bir nokta bulucusu var. Bir de o noktadan özellik çıkarıcı var. İkisini birden SIFT demiş, öyle yayınlamış. O yüzden aslında karışıyor. SIFT bir bölge bulucusu mu, bölgeden özellik çıkarıcısı mı falan diye karışıyor.
+
+308
+01:04:41,748 --> 01:05:03,987
+Orada anlattığı bölge bulucusu, Difference of Gaussian temelli. O yüzden aslında kimisi de buna Difference of Gaussian bölgeleri diyor, bu tarz bulunan bölgelere. Yani Halis'i unutun. Difference of Gaussian bölgeleri deniliyor buna.
+
+309
+01:05:06,132 --> 01:05:19,032
+Oradan bir de Löwe'nin özellik çıkartma yöntemi var. Aynı paperda verdiği. Bu çok seminal bir paper. Önemli bir paper.
+
+310
+01:05:32,019 --> 01:05:37,779
+Verdiği bir yöntem vardı. Bu Watershed segmentasyon algoritması var.
+
+311
+01:05:41,559 --> 01:05:52,019
+Watershed'e dayalı bir algoritma. O da yine şey yapıyor. Watershed'in...
+
+312
+01:05:54,019 --> 01:05:57,859
+Watershed'i daha önce duymuş muydunuz?
+
+313
+01:06:03,155 --> 01:06:06,476
+Watershed şöyle bir şey diyelim ki şöyle bir imgeniz var.
+
+314
+01:06:10,195 --> 01:06:34,976
+İmgenin parlaklığını şöyle çizdirdiğinizde, hani Gaussian'ı 3 boyutlu çizdirmiştiniz ya, o şekilde çizdirdiğinizde, buna intensity diyelim, buna x, buna y diyelim, şöyle 3 boyutlu bir yüzey çıkıyor.
+
+315
+01:06:35,507 --> 01:06:58,487
+Karşınıza. Yani resim aslında üç boyutlu bir yüzey gibi oluyor. Bu üç boyutlu yüzeyde su döktüğünüzü düşünün. Yavaş yavaş ne olur? Şöyle o üç boyutlu yüzeye kenardan bakıyoruz.
+
+316
+01:07:04,148 --> 01:07:07,648
+Derin vadilere dolmaya başlar.
+
+317
+01:07:11,956 --> 01:07:33,195
+Dolayısıyla sulu bölgelerle susuz bölgeleri ayırttığınızda imgeyi segmente etmiş, bölmüş olursunuz. Böyle değişik bölgelere bölmüş olursunuz. Bir nevi aynı renkte olan bölgeleri birleştiriyor öyle bir algoritma.
+
+318
+01:07:38,036 --> 01:08:00,376
+Matas'ın algoritması da uzunca bir süre su dökmenize rağmen sabit kalan bölgeleri buluyor. Yani diyelim ki şurada, şu bölgede biraz su döktünüz, biraz daha su döktünüz, biraz daha su döktünüz.
+
+319
+01:08:00,864 --> 01:08:18,644
+Bu bölge oldukça stable. Yani buralarda bu bölge hep orada. Dolayısıyla o bölgeyi ne yapıyor? Burası oldukça stable bir bölge. Bu bölgeyi alayım diyebiliyor.
+
+320
+01:08:25,011 --> 01:08:49,931
+Misar'ın verdiği bölgeleri görelim. Bu bölgeler şey bölgeler değil. Yani illa elips değil. Şuradaki şekle bakın. Bir nevi parlaklığa dayalı bir bölükleme yapmış gibi değil mi? Dok her zaman elips veriyor.
+
+321
+01:08:50,676 --> 01:08:59,615
+Hatta her zaman daire veriyor. Mıser bu şekilde daha ayrıntılı bölgeler verebiliyor size.
+
+322
+01:09:06,547 --> 01:09:12,347
+Bu şekilde mesela dört farklı bulucunun şeyini karşılaştırmış.
+
+323
+01:09:21,939 --> 01:09:29,299
+Dört farklı bulucunun verdiği şeyleri karşılaştırmış.
+
+324
+01:09:30,180 --> 01:09:35,059
+Paris nokta bulucusunu gördük biz. Ayni İng'e üzerinde şöyle yerleri veriyor.
+
+325
+01:09:36,539 --> 01:09:40,379
+Hesien diye bir nokta bulucusu var. O da buraları vermiş.
+
+326
+01:09:44,459 --> 01:09:47,420
+Log diye bir bulucu var.
+
+327
+01:09:48,275 --> 01:09:58,415
+Leprashian of Gaussian olması lazım bunun. Gördüğünüz gibi bu farklı bölgeleri veriyor.
+
+328
+01:10:02,195 --> 01:10:06,416
+Misery'i az önce görmüştük. Misery'in verdiği bölgeleri karşılaştırmış.
+
+329
+01:10:10,420 --> 01:10:28,280
+Şu adrese giderseniz bunları çıkaran, bu bölgelerin birçoğunu çıkaran çalıştırılabilir programlara rastlayabilirsiniz.
+
+330
+01:10:31,039 --> 01:10:36,180
+Derin öğrenme çıkmadan önce şey buydu.
+
+331
+01:10:36,884 --> 01:10:48,744
+Yani en önemli konu, imgelerde şekil tanıma ile ilgili en önemli yaklaşım buydu.
+
+332
+01:10:52,435 --> 01:11:12,456
+Evet, devam edelim. Şimdi bir bulma meselesi var bölgeleri. Bir de o bölgeden bilgi çıkartma var. Sonra da o çıkarttığımız bilgileri birbiriyle meç etme var.
+
+333
+01:11:20,020 --> 01:11:44,260
+İmgeyi reprezent ederken, işte ne yapıyoruz? Normalde templates'ler kullanılabiliyor. Templates direkt imgenin kendisi demek. Bu imge üzerinden çıkarttığımız orijinal parlaklık değerleri veya hesapladığımız türevler.
+
+334
+01:11:44,851 --> 01:12:07,131
+Bu tarz reprezentasyonlar template diye geçiyor. Bugün göreceğimiz histogram temelli reprezentasyonlarda ise texture'lar, shift tanımlayıcıları ve bu tarz şeyler var.
+
+335
+01:12:13,779 --> 01:12:32,219
+Nedir? Önce onu bir hatırlayalım. Histogram, belirli bir fonksiyon değerinin o bölgede kaç tane olduğunu, her birinin kaç tane olduğunu bize veren listeler.
+
+336
+01:12:38,068 --> 01:12:57,528
+Bol miktarda siyah olduğunu görüyoruz. Dolayısıyla böyle koyu renkler 0 ile daha doğrusu 50 civarındaki koyuya çok yakın renklerin miktarının fazla olduğunu görüyoruz.
+
+337
+01:12:57,528 --> 01:13:05,247
+Yani 5000-6000-5500 tane belki ne var? Koyu siyah çok yakın renkteki piksel var.
+
+338
+01:13:06,804 --> 01:13:12,684
+Buna karşın beyazların sayısının nispeten az olduğunu görüyoruz mesela.
+
+339
+01:13:14,944 --> 01:13:18,623
+Bu bir global histogram. Yani tüm resimden çıkarılmış.
+
+340
+01:13:31,796 --> 01:13:50,816
+Nesneleri bulmak için iyi bir fikir değil. Ama lokal alırsanız histogramı ne olur? Yani sadece şu gagadan bir histogram aldığınızı düşünün. Veya sadece şu gözden bir histogram aldığınızı düşünün. O zaman birden faydalı hale geliyor.
+
+341
+01:13:58,931 --> 01:14:18,771
+Histogramı bir olasılık olarak da görebilirsiniz. Yani sadece sayarsanız histogram diyoruz. Ama şuradaki değerleri toplamı bir olacak şekilde ayarlarsanız tekrar olasılığa dönüşüyor.
+
+342
+01:14:23,923 --> 01:14:39,884
+İşte 0.5 falan, 0.4, 0.3 falan veya 0.05 falan diyebilirseniz, histogram elde etmiş oluyorsunuz. O da çok kolay.
+
+343
+01:14:40,783 --> 01:14:49,724
+Toplamı 1 olacak şekilde, şuradaki değerleri, bölmeniz lazım. O da nasıl oluyor?
+
+344
+01:14:50,996 --> 01:14:52,996
+Eleman sayısına bölüyorsunuz.
+
+345
+01:14:55,336 --> 01:15:02,175
+Yani histogramı bir olasılık dağılımına dönüştürmek çok kolay.
+
+346
+01:15:02,815 --> 01:15:06,175
+Dolayısıyla histograma bir olasılık dağılımı olarak bakabilirsiniz.
+
+347
+01:15:19,028 --> 01:15:30,667
+Burada joint histogramdan bahsetmiş, marginal histogramlardan bahsetmiş. Marjinal histogram yani sadece satırları veya sadece sütunları sayıyorsunuz.
+
+348
+01:15:30,667 --> 01:15:38,667
+Sütunlarda. Joint histogram, grid grid sayıyorsunuz.
+
+349
+01:15:45,203 --> 01:15:58,563
+Burada histogram yanında, histogramı aldıktan sonra sınıflama da kullanılabiliyor.
+
+350
+01:16:04,643 --> 01:16:09,283
+Neyin histogramını alabiliyoruz? Renklerin histogramını alabiliyoruz.
+
+351
+01:16:12,916 --> 01:16:27,556
+Teksturların histogramını alabiliyoruz. Çeşitli tekstur çıkartma fonksiyonları veya yöntemleri var. Filtre dizileri veya gabor filtreleri var.
+
+352
+01:16:29,016 --> 01:16:38,756
+Hop diye çeşitli tekstur çıkartma yöntemleri var. Bütün bunlar bir fonksiyon. Yani her piksel için size bir değer veriyor.
+
+353
+01:16:40,692 --> 01:16:49,811
+Sonra siz bölgelere ayırıp imgeyi, o fonksiyonun o bölgedeki histogramını çıkarabiliyorsunuz.
+
+354
+01:16:52,871 --> 01:16:57,771
+Mesela Sift, tekrar Sift'e geri döndük. Sift ne yapıyor?
+
+355
+01:17:00,091 --> 01:17:08,051
+Gradyan yönelimlerinin histogramını çıkarıyor ve bunu özel bir şekilde yapıyor.
+
+356
+01:17:10,547 --> 01:17:37,727
+Ne yapıyor? Orijinal imgedeki öncelikle gradyanlar bulunuyor. Her bir gradyanın yönü farklı gördüğünüz gibi. Boyutu da farklı. Ne yapıyor? Önce bir window fonksiyonuyla, yani diyelim ki şu nokta için düşünecek. Bu noktada bir gauss filtresinden geçiriyor.
+
+357
+01:17:39,220 --> 01:17:55,220
+Sonra burayı gridlere bölüyor. Bu gridler burada dört tane göstermiş ama normalde 16 grite bölüyor diye hatırlıyorum.
+
+358
+01:17:55,220 --> 01:18:05,132
+128'i 16'ya bölerseniz kaç çıkıyor arkadaşlar?
+
+359
+01:18:07,123 --> 01:18:11,603
+128'i 16'ya bölerseniz 8 mi çıkar?
+
+360
+01:18:15,796 --> 01:18:16,556
+Evet hocam.
+
+361
+01:18:16,996 --> 01:18:18,796
+Evet. Dolayısıyla esasen...
+
+362
+01:18:28,787 --> 01:18:36,467
+Nasıl onu çıkartıyor? Şimdi hatırlayamadım. Çünkü dörde dörtlük pikseller olsa,
+
+363
+01:18:41,207 --> 01:18:48,467
+burayı sekiz farklı histogram var burada. Yani sekize böldü histogram şeyini.
+
+364
+01:18:54,100 --> 01:19:02,360
+Burada da yapmış ya, yani şu yöndekiler, bu yöndekiler, bu yöndekiler, bu yöndekiler, bu yöndekiler, bu yöndekiler, bu yöndekiler, bu yöndekiler.
+
+365
+01:19:02,360 --> 01:19:19,000
+Sekiz farklı yöne bu yönleri grupluyor. Dolayısıyla sekiz farklı yön oluyor. Sekiz değer gelecek oradan.
+
+366
+01:19:20,627 --> 01:19:37,227
+4 tane olursa burası 4 kere 8, 32 yapar. Ama o burada gösterim için 4'e 4'lük yapmış. Toplamda 128 verecek şekilde sanırım 8 parçaya mı bölüyor?
+
+367
+01:19:41,427 --> 01:19:59,907
+Her birinden 8 gelse bu şekilde 16 tane, yani dörde dörtlük böyle bölümlere bölüyor. Her birinden 8 tane değer geliyor. Toplamda 128 tane değer elde etmiş oluyor.
+
+368
+01:20:00,827 --> 01:20:05,847
+İlgilendiği bölgeden. Diyelim ki şu kadarlık bir bölgeden, bölge ile ilgileniyor.
+
+369
+01:20:14,836 --> 01:20:38,756
+Diyelim ki şu kadarlık bir bölge ile ilgileniyor. Bu bölgeyi şuradaki gibi 16 farklı bölgeye bölüyor. Her bölgeden şu şekilde yönelimli histogramları çıkarıyor. Ve bu size 128 tane değer veriyor.
+
+370
+01:20:40,275 --> 01:20:56,475
+Bu şekilde ne yapmış oldu? Bu bölgeyi bize tanımlayan bir descriptir, tanımlayıcı bir dizi çıkartmış oldu. Makine öğrenmesinde buna Feature Extraction diyoruz değil mi?
+
+371
+01:21:05,076 --> 01:21:10,076
+Bu feature'lar, ne diyor?
+
+372
+01:21:24,076 --> 01:21:30,076
+Dediğim gibi bir de Gaussian var burada tabii. Yani şuraya bir de Gaussian yapıştırıyor.
+
+373
+01:21:31,507 --> 01:21:40,768
+Gavsiyanla da çarpınca buradaki değerleri, şuradaki değerler daha önemli olmuş oluyor. Buradaki değerleri biraz söndürmüş oluyor.
+
+374
+01:21:52,180 --> 01:22:17,100
+Burada anlatmış size söylediğim şeyleri. Neden böyle direkt şey üzerinden gidiyor, histogram üzerinden gidiyor? Şöyle uzamsal veyahut spatial'ı uzamsal diye çeviriyoruz Türkçe'ye. Yani XC'deki spatial, spatial, XC. XC uzayındaki yerleşimi
+
+375
+01:22:18,131 --> 01:22:42,931
+Bir bakıma istiyor, almak istiyor. Ona hassas olsun diyor. Ama çok fazla da hassas olmasın diyor. Çünkü aynı cismi farklı fotoğraf makineleriyle çektiğinizde, farklı uzaklıklardan çektiğinizde, farklı ışımalardan çektiğinizde…
+
+376
+01:22:43,891 --> 01:23:01,152
+Resim üzerindeki nesneler aynı yerde gibi ama çok yakın piksellerde de olabiliyor. Yani yakın piksellerde oluyor ama hemen hemen aynı yerde oluyor. Ama tam aynı yerde olmuyor.
+
+377
+01:23:04,756 --> 01:23:10,076
+Lokal bir sensitivity istiyor ama bir bakıma da aşırı sensitivity istemiyor.
+
+378
+01:23:10,076 --> 01:23:29,316
+İşte bu histogram, direkt değerler yerine histogram kullanınca, şöyle gridler içerisinde, o piksellerde, yan pikselde olmuş, hemen üst pikselde olmuş, o ayrıntıyı atıyor.
+
+379
+01:23:30,355 --> 01:23:42,115
+İstagrama dönüştürdüğü için onları o ayrıntıyı atmış oluyor. Böylece fazla hassas da olmamış oluyor. Bu daha iyi olmuş oluyor.
+
+380
+01:23:48,115 --> 01:24:10,515
+Gauss-Suyen ile şey yaptığı için dediğimiz gibi merkeze yakın şeyler daha önemli olmuş oluyor. O da mantıklı değil mi? Etrafında özellik almak istediğimiz pikselin yakınındaki pikseller daha önemli olmalı.
+
+381
+01:24:22,292 --> 01:24:34,752
+Interpolasyon da var diyor. Yani bir gradyant sekiz tane bine katkıda bulunur diyor.
+
+382
+01:24:36,592 --> 01:24:46,672
+Four in space times two in orientation. Yani bu kısmını hatırlamıyordum. Böyle bir şey mi varmış?
+
+383
+01:24:51,859 --> 01:25:12,079
+Yani uzayda dört farklı, oryantasyonda iki farklı gradyanta, bine, yani histogram kovasına katkıda bulunur. Her bir yönelim diyor.
+
+384
+01:25:14,799 --> 01:25:16,579
+Enteresan, bunu bilmiyordum.
+
+385
+01:25:26,131 --> 01:25:27,311
+O nasıl oluyor ki?
+
+386
+01:25:37,908 --> 01:25:59,007
+Onu paypura bakmak lazım şimdi. Burada da yeterince açıklama yok. Burayı artık merak ediyorsanız kendiniz bakabilirsiniz. Veya bir yerlerden okuyabilirsiniz. Bu çok popüler, çok bilinen bir yöntem. Dolayısıyla açıklamışlardır.
+
+387
+01:26:06,163 --> 01:26:30,543
+Her bir gradiyan 8 tane bine katkıda bulunuyor. 8 bin zaten yönelim diye düşünüyordum ben. Yani 2 y yönü. Bunların her birini de şöyle yaptığınızda 8 yön olmuş oluyor. Yani kuzey, güney, doğu, batı, kuzey, doğu, güney, doğu gibi düşünebilirsiniz.
+
+388
+01:26:37,876 --> 01:26:42,956
+Bu toplamayı nasıl yapıyor tam olarak bilmiyorum. Ama sonuçta böyle bir histogram oluyor.
+
+389
+01:26:45,595 --> 01:26:49,435
+Daha sonra ne yapıyor? Elinde 128 tane değer var.
+
+390
+01:26:53,460 --> 01:27:09,960
+Bu 128 değerin toplamını 1 olacak şekilde bunları normalize ediyor. Yani toplama değerleri toplayıp o değere böldüğü zaman 1 olur o.
+
+391
+01:27:15,636 --> 01:27:22,636
+Threshold Gradient Magnitudes to avoid excessive influence of high gradients.
+
+392
+01:27:28,756 --> 01:27:52,496
+Evet. Gradiyant büyüklüklerini bit threshold'tan geçiriyor. Yüksek gradiyantların aşırı etkisini engellemek için. Yani ne demek bu? Çok yüksek olan gradiyantları clamp, yani 0-2'ye indiriyor.
+
+393
+01:27:53,652 --> 01:28:03,872
+Gradyant değerleri, şuradaki değerler 0.2'den 1 yükse 0.2'ye indiriyor. Sonra tekrar bir toplamı 1 olacak şekilde normalize ediyor.
+
+394
+01:28:09,492 --> 01:28:31,452
+Bütün bunları yaptığımızda Keypoint Descriptor dediğimiz bu bölgeden çıkarılmış 128 tane değer oluyor. Bu değerler o bölgeyi bize tarif etmiş oluyor. O bölgeden özellik çıkarttık.
+
+395
+01:28:32,532 --> 01:28:45,932
+Artık bu özellikleri farklı şekillerde ne yapabiliriz, kullanabiliriz. Özellikleri özellikle birbiriyle, bölgeleri özellikle bölgeleri birbiriyle eşleştirmek için kullanacağız.
+
+396
+01:28:53,587 --> 01:28:55,988
+Zaman olarak ne durumdayız?
+
+397
+01:29:04,051 --> 01:29:13,911
+10.30 olmuş. 11'de benim bir toplantım var. Dolayısıyla artık ara vermeyelim. Yaptığımız kadar yapıp bitirelim.
+
+398
+01:29:13,911 --> 01:29:30,091
+10.50'de falan bitiririz. Ben de biraz ara vereyim. Bir 15-20 dakika daha. Zaten burada da 20 slide varmış. Gidebildiğimiz kadar gideriz. Bu slide'ları bitirebilirsek bitiririz.
+
+399
+01:29:32,532 --> 01:29:33,804
+Ö
+
+400
+01:29:53,140 --> 01:30:07,300
+Bu geçtiğimiz birkaç slide'da anlattığımız descriptörü SIFT diye geçiyor. David Levin'in SIFT'i. Buyurun.
+
+401
+01:30:11,636 --> 01:30:33,876
+Evet, ona bir ara bakmaya çalışacağım da şu anda fırsat bulamadım. Ödevleri okuma konusunda geriye düştüm. Dediğim gibi şimdi ödevlere tekrar döndüğümde o sizin itirazlarınıza da bakacağım.
+
+402
+01:30:40,756 --> 01:30:53,136
+Sift'i anlattık. Surf'te bu sift'i benzer bir şey yapalım ama çok daha hızlı olsun. Düşüncesiyle geliştirilmiş bir şey.
+
+403
+01:30:56,655 --> 01:31:02,576
+Box Filters var, kutu filtreleri iki boyutlu. Bunlardan yararlanıyor.
+
+404
+01:31:03,539 --> 01:31:30,520
+Ve integral images diye bir yöntem var. Yine bunlardan yararlanıyor. Shift'ten 6 kat daha hız ve obje bulmak için de hemen hemen aynı şeyi veriyor. Aynı benzer sonuçları diyelim veriyor. Buradan bulabilirsiniz diyor kodunu.
+
+405
+01:31:32,948 --> 01:31:50,788
+Bunun ayrıntısına girmeyeceğim. Merak ederseniz araştırabilirsiniz dediğim gibi. Ben biraz koçluk yapıyorum bu derste. Yönler gösteriyorum size. Sizin gidip araştırabilmeniz lazım.
+
+406
+01:31:53,528 --> 01:31:58,268
+Shape Context diye bir başka tanımlayıcıdan bahsediyor.
+
+407
+01:32:00,020 --> 01:32:24,780
+Burada da yine binlere ayırmış ama binlere şu şekilde ayırmış. Yine ne yapmış? 360 dereceyi 30 derecelik açılara bölmüş. Shift 45 derecelik açılara bölmüş hatırlarsanız. Sonra bir de böyle zonlara bölmüş. Böyle.
+
+408
+01:32:26,131 --> 01:32:34,131
+Bu zonların merkezden uzaklığına yarı çapını gittikçe artırıyor. Bir nevi bu sayede...
+
+409
+01:32:37,555 --> 01:33:01,855
+Önem farklılaştırılması yapmış oluyor. Ve diyelim ki Harris noktaları buldu. Önce diyelim ki Harris nokta bulucusu çalıştırdı burada. O noktaların sayısını hesaplıyor. Her bir bindeki yine şu bir bin oluyor.
+
+410
+01:33:03,315 --> 01:33:16,135
+Mesela bu binde 4 tane var, şurada 10 tane var gibi. Buna Log Polar Bining deniliyor. Yani Polar, neden Polar dediği açık değil mi?
+
+411
+01:33:23,764 --> 01:33:45,744
+Açılara bölmüş. O yüzden polar diyoruz. Log da şu mesafe giderek iki katına çıkıyor. Dolayısıyla yarı çapı logaritmik şekilde artırıyor. Bu neymiş? Yakın noktalarda daha fazla kesinlik sağlıyor.
+
+412
+01:33:48,051 --> 01:34:00,851
+Uzaktaki noktalarda daha flexible oluyor. Böyle bir fikirleri varmış. Yani bunu böyle yapmadaki mantık buymuş.
+
+413
+01:34:03,351 --> 01:34:13,651
+Shape Context Descriptor'ını anlatmış. Şurada verdiği cevap.
+
+414
+01:34:14,292 --> 01:34:19,752
+Burada verdiği cevap, şurada verdiği cevap gibi bu cevapları göstermiş.
+
+415
+01:34:21,811 --> 01:34:25,072
+Açı, tabii histogramı nasıl alıyor?
+
+416
+01:34:25,731 --> 01:34:36,152
+Bir yatayda açı, öbür eksende radyusun logaritmasını almış burada.
+
+417
+01:34:36,872 --> 01:34:40,292
+Logaritmasını aldığı için şöyle düzgün gösterebiliyor.
+
+418
+01:34:41,684 --> 01:34:42,684
+Ön.
+
+419
+01:34:48,404 --> 01:35:06,264
+Bir başka özellik tanımlayıcısından bahsetmiş. Bu, Şektman ve İrani isimli iki araştırmacının bir paper'ından.
+
+420
+01:35:12,564 --> 01:35:13,284
+Ne diyor?
+
+421
+01:35:13,963 --> 01:35:31,923
+These images of the same object, a heart, do not share common image properties, colors, textures, edges, but do share a similar geometric layout of local internal self-similarities.
+
+422
+01:35:34,024 --> 01:35:38,124
+Yani burada kalp var. Dört tane kalp var.
+
+423
+01:35:39,923 --> 01:35:58,543
+Diyor ki, bu kalpleri nasıl tanıyabilirim? Burada bir kalp olduğunu ve bu kalbin benzerinin bu resimde olduğunu ya da bu resimde olduğunu ve hatta belki burada olduğunu nasıl bulabilirim?
+
+424
+01:36:05,587 --> 01:36:29,387
+Ortak bir renk ya da doku ya da ortak böyle şeyler yok, kenarlar. Ama ne var? İmge bölgesi kendi kendine benziyor. Yani şu şuraya benziyor, buraya benziyor.
+
+425
+01:36:30,163 --> 01:36:53,104
+Burası buraya benziyor, buraya benziyor, buralar buralara benziyor falan gibi bir self-similariteden bahsediyor. Okuduğum bir paper değil ama anladığım kadarıyla bu mantıktan yola çıkarak bir tanımlayıcı geliştirmişler. Bence de enteresan bir şey.
+
+426
+01:36:58,931 --> 01:37:22,871
+Nasıl yapmaya çalışmışlar? Mesela burada yine imgenin büyük bir bölümünü alıyor. Buradan bir imge image patch'i alıyor. Patch küçücük bir alan diyebilirsiniz. Karesel alan. Türkçe'de ne diyoruz? Patch'e.
+
+427
+01:37:23,604 --> 01:37:50,384
+Yama deniyor mu? Evet, evet. Küçük bir yama alıyoruz mesela. Burada insanlar var sanki değil mi? İnsanlar bir şekilde oluşturmuşlar sanki. Tabii ayrıntıları burada anlatmış. Ayrıntılarını bildiğim bir paper değil. Bir korelasyona dönüştürüyor. Bir şekilde bir korelasyon sörfüsü elde ediyor. Korelasyon yani kendisine benzeme.
+
+428
+01:37:51,188 --> 01:38:12,167
+O korrelasyon üzerinden yine o logpolar tanımlayıcıyı çalıştırıyor anladığım kadarıyla. Logpolar tanımlayıcıya vermeden önce ama bir korrelasyon yüzeyi elde ediyor.
+
+429
+01:38:19,060 --> 01:38:30,280
+Evet, açıklamış. Bir başka örnek vermiş. Winder ve Brown tarafından 2007'de gerçekleştirilen bir şey.
+
+430
+01:38:38,355 --> 01:39:03,895
+Sift'ten başlamış. Glove'tan bahsediyor. Evet, bu da bildiğim bir şey değil yine ama sonuçta. Buradan çıkaracak şey şu, birçok farklı descriptir var. Dolayısıyla buradaki amaç ne? Belirli bir küçük yama var.
+
+431
+01:39:05,140 --> 01:39:23,140
+O yamayı bir şekilde tanımlayan değerler çıkartmak istiyorsunuz. O değerler daha sonra o bölgeleri birbiriyle eşlemek için, sınıflandırmak için vesaire kullanılabilmeli.
+
+432
+01:39:28,884 --> 01:39:41,583
+Birçok böyle feature, bir template gibi bir şey olarak düşünülebilir veya histogram olarak düşünülebilir veya template'lerle histogramların bir karışımı olarak bölünebilir.
+
+433
+01:39:43,323 --> 01:39:52,983
+İdeal bir bölge tanımlayıcının robust, distinctive, compact ve efficient olması mantıklı deniliyor.
+
+434
+01:39:57,652 --> 01:40:10,791
+Robust burada küçük yerleşim farklılıklarından etkilenmeyecek. Ayırt edici, kompakt yani çok fazla sayıda değer vermeyecek size aşırı.
+
+435
+01:40:12,992 --> 01:40:15,371
+Kompakt ve Efficient ne demek istemiş bilmiyorum.
+
+436
+01:40:18,412 --> 01:40:25,171
+Birçok Descriptor kenar ya da yönelim informasyonundan yola çıkıyor.
+
+437
+01:40:26,771 --> 01:40:40,051
+Bu renk çok nadiren kullanılıyor. Çünkü renk esasen çok karıştırabilecek bir şey. Mesela benim şu anda rengim şu ekranda gördüğünüzde doğal bir rengim yok.
+
+438
+01:40:53,108 --> 01:41:02,907
+Gradiyant, yani renklerin değişimi. Bir şekilde bunlar histograma alınıyor. Oradan descriptörler çıkarılıyor.
+
+439
+01:41:07,907 --> 01:41:14,707
+İlk ikiyi yapmış olduk. Yani noktaların bulunması ve tarif edilmesi.
+
+440
+01:41:16,564 --> 01:41:22,244
+Şimdi bir de matching. Yani bunları birbiriyle match etmemiz lazım. Eşleştirmemiz lazım.
+
+441
+01:41:31,988 --> 01:41:34,848
+Bölgeler var elinizde. Nasıl match edebilirsiniz?
+
+442
+01:41:41,300 --> 01:41:45,279
+Mazum bu arada bir şey oldu. Kendinden geçti.
+
+443
+01:42:01,332 --> 01:42:25,731
+Şimdi elinizde şöyle bölgeler var. Başka bir resimde de böyle bölgeler var. Buralardan güzel özellikler çıkarttınız. Deskriptırlar çıkarttınız. Şimdi bunların birbiriyle eşleştirilmesi sorunu var. Yani bu şuna eştir.
+
+444
+01:42:26,612 --> 01:42:45,072
+Bunun da eşleşir, bu da şunun da eşleşir falan diyebilmeniz lazım. Acaba nasıl yapılabilir sorusu var. En yakın komşuyu seçebilirsin diyor. Yani mesafe tabanlı bir şey yapabilirsin.
+
+445
+01:42:46,612 --> 01:43:08,831
+Bu problem diyor, birçok fotoğrafta kendisine benzerlik var. Bu bir sorun oluşturabilir diyor. Mesela burada gördüğünüz gibi, mesela şunu match edeceksiniz. Buna mı match edeceksiniz? Buna mı match edeceksiniz? Buna mı?
+
+446
+01:43:20,020 --> 01:43:31,460
+Şunun, şuna uzaklığı 0.34, şuna 0.30, şuna 0.40. Bunun, buna uzaklığı 0.61 diyor.
+
+447
+01:43:33,860 --> 01:43:47,240
+Uzaklık, buradaki uzaklık, Descriptor'ların şeyi mi acaba? Descriptor'ların arasındaki mesafe mi? Sanırım öyle olması lazım.
+
+448
+01:43:47,891 --> 01:43:59,291
+Elinizde 128 tane değer var diyelim ki. İki tane descriptor arasında. Ne yapabilirsiniz? Bunları birbirinden çıkarabilirsiniz.
+
+449
+01:44:08,595 --> 01:44:24,496
+Nearest Neighbor Distance Ratio demiş. Bu da şöyle bir şey yapıyor. En yakın uzaklığı ikinci en yakın uzaklığa bölüyor.
+
+450
+01:44:31,891 --> 01:44:45,931
+Buna göre sıralarsanız o zaman eşlemeleri belirli bir güvene göre sıralayabilmiş oluyorsunuz.
+
+451
+01:45:02,260 --> 01:45:26,520
+Yine Löwen'in bir paperından. İkisini karşılaştırıyor sanırım burada. O iki uzaklığı birbirine böldüğü versiyonu burada daha iyi olduğunu anlatmış. Direkt öplüdeğin uzaklığına göre.
+
+452
+01:45:29,876 --> 01:45:39,576
+PDF for Correct Matches, yani düzgün eşlemelerin olasılık dağılımı. PDF for Incorrect Matches.
+
+453
+01:45:45,716 --> 01:45:46,716
+Dolayısıyla
+
+454
+01:45:53,171 --> 01:45:55,171
+Bu oran yükseldikçe...
+
+455
+01:46:04,659 --> 01:46:11,979
+1'e yaklaştığında bu oran, incorrect, yanlış eşlemelerin arttığını görüyor.
+
+456
+01:46:13,079 --> 01:46:21,859
+0.4-0.5 arasında yanlış eşlemelerin az, doğru eşlemelerin ise oldukça yüksek olduğunu görüyor.
+
+457
+01:46:21,859 --> 01:46:25,259
+Bu orantı yaptığında.
+
+458
+01:46:27,639 --> 01:46:31,779
+Dolayısıyla descriptörleri bu şekilde bir oranda.
+
+459
+01:46:32,500 --> 01:46:45,559
+Direkt öklüt uzaklığı değil de iki öklüt uzaklığının en yakını ve en yakını ikincisini kullanan bir ölçüm var. O daha iyi sonuç veriyor demiş.
+
+460
+01:47:00,340 --> 01:47:04,640
+Şimdi kaç slide'ımız kaldı?
+
+461
+01:47:17,939 --> 01:47:40,800
+Evet, gerisini artık gelecek hafta devam ederiz. Çok bir şey kalmamış zaten. Hem bu bugünün bir tekrarı olur. Acil söylemeniz gereken, sormanız gereken bir şey varsa sorun. Ben bir 11'de toplantıya gireceğim. O nedenle dersi bugün burada bitireceğim. Bu hafta ödev yok.
+
+462
+01:47:53,939 --> 01:47:58,639
+Peki öyleyse haftaya görüşmek üzere diyorum arkadaşlar.
+
+463
+01:47:59,819 --> 01:48:00,939
+İyi günler hocam.
+
+464
+01:48:00,939 --> 01:48:01,639
+Görüşürüz.
+
+465
+01:48:01,639 --> 01:48:02,380
+İyi günler hocam.
+
+466
+01:48:02,559 --> 01:48:03,159
+İyi günler.
+
+467
+01:48:03,840 --> 01:48:04,380
+İyi günler hocam.

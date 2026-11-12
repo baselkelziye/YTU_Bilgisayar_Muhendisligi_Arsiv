@@ -1,0 +1,2515 @@
+1
+00:00:32,243 --> 00:00:34,564
+Günaydın arkadaşlar. Sesim geliyor mu?
+
+2
+00:00:36,743 --> 00:00:37,584
+Günaydın hocam.
+
+3
+00:00:37,584 --> 00:00:38,384
+Gidebiliyor musun?
+
+4
+00:00:44,148 --> 00:00:45,428
+Nasılsınız, iyisiniz?
+
+5
+00:01:15,444 --> 00:01:20,424
+Ben de size konda sisteminizi hazırlayın dedim ama kendim hazırlamamışım.
+
+6
+00:01:29,780 --> 00:01:31,468
+Activate
+
+7
+00:01:34,995 --> 00:01:38,575
+Ekonda yazıyormuşuz. Yeni versiyonlarında.
+
+8
+00:01:46,132 --> 00:01:47,132
+[öğrenci].
+
+9
+00:01:47,132 --> 00:01:48,132
+Vision Korsan.
+
+10
+00:02:54,867 --> 00:02:56,247
+Evet, o kura dursun onu.
+
+11
+00:03:10,419 --> 00:03:13,560
+Ne yaptınız? Python sisteminizi kurdunuz mu?
+
+12
+00:03:28,852 --> 00:03:33,112
+Evet, şimdi bir de tabletimi bağlayayım.
+
+13
+00:03:46,515 --> 00:03:59,340
+PC'de sunum yaparken mouse iyi çalışmıyor. O yüzden sunumları...
+
+14
+00:04:03,508 --> 00:04:09,148
+PDF'e çevirip, tablette anlatıyorum.
+
+15
+00:04:14,003 --> 00:04:14,923
+Seylimiz.
+
+16
+00:04:22,291 --> 00:04:38,451
+Size geçen ders yazarak anlatacağım falan dedim ama sonra da ilk derse bakınca dedim bu iş böyle olmaz. Sunumla yapacağız bunu yine diye. Sunumlara geçtim.
+
+17
+00:04:49,716 --> 00:04:53,516
+Bilgisayarla Görme paylaşım diye bir Dropbox linki vardı.
+
+18
+00:04:57,651 --> 00:05:00,471
+Onun içerisinde, VX içerisinde.
+
+19
+00:05:02,251 --> 00:05:04,711
+Bunu VX demeyelim de Subject diyelim.
+
+20
+00:05:09,620 --> 00:05:24,100
+Onun içerisinde bu geçtiğimiz yıllarda, iki yıl önce sanırım bu dersi vermiştim. O zamanki notları buraya, slide'ları vesaire kopyaladım.
+
+21
+00:05:26,600 --> 00:05:36,100
+Bunları zaman içerisinde değiştire değiştire, toparlaya toparlaya gideceğim. Bu yıl öyle bir düşüncem var. Yani bu değişebilir. Belki şunu...
+
+22
+00:05:36,435 --> 00:05:37,315
+Yapmayız.
+
+23
+00:05:39,795 --> 00:05:41,675
+Yaptıklarımız ama burada olacak.
+
+24
+00:05:59,540 --> 00:06:01,540
+Tanışverileri, paketleri.
+
+25
+00:06:10,163 --> 00:06:12,343
+Buradan da bir şeyi açalım.
+
+26
+00:06:15,923 --> 00:06:36,103
+Zeliski kitabının yenisi mi çıkmış? Zeliski kitabı zaten draft halinde sitesinde var, yıllardır var. Adam yavaş yavaş geliştiriyor. Henüz bastım bilmiyorum. 2020 versiyon demek istedim herhalde.
+
+27
+00:06:43,348 --> 00:06:46,348
+Şimdî, Monsepios.
+
+28
+00:07:00,019 --> 00:07:01,995
+Bu soruyu açalım.
+
+29
+00:07:10,675 --> 00:07:17,076
+Bu noktada.
+
+30
+00:07:54,355 --> 00:08:03,596
+Bu derse ilk defa katılan var mı? Geçen hafta gelmeyip de bu hafta gelen var mı? İlk defa gelen.
+
+31
+00:08:14,004 --> 00:08:15,104
+Bir kişi var.
+
+32
+00:08:23,315 --> 00:08:29,315
+Tamam. Şimdi öncelikle hızlıca bir...
+
+33
+00:08:36,211 --> 00:08:38,531
+Tekrar edeyim sılabısı vs.
+
+34
+00:08:51,412 --> 00:08:52,652
+Evet.
+
+35
+00:09:02,899 --> 00:09:23,799
+Şimdi kitabımız bu esasen. Richard Zeliski. Bu kitap kendi hocanın web sitesinde var, draft halinde hala yazıyor anladığım kadarıyla. Belki 10-15 yıldır var ama ya yeni versiyonunu yazıyor herhalde.
+
+36
+00:09:25,491 --> 00:09:40,692
+Umarım bu bizim şeylerde yanlış değildir artık. Zliski diye arattırırsınız. Zliski Book diye çıkıyor. Şurada web sitesi. Ekranı görebiliyorsunuz değil mi her şeyi?
+
+37
+00:09:45,716 --> 00:10:10,775
+Buradan indirebiliyorsunuz ücretsiz olarak PDF'ine. Sanırım bizdeki şu olması lazım. Bakarsınız şeyler değişmiş mi, konu başlıklarının numarası değişmiş mi? Değiştiği ise isminden bulursunuz.
+
+38
+00:10:12,467 --> 00:10:13,907
+Okumalar için diyorum.
+
+39
+00:10:20,275 --> 00:10:30,655
+Dolayısıyla Zeliski'nin kitabını kullanacağız. Bunları yazdım. Güzel kitaplar ama bunları pek kullanacağımızı tahmin etmiyorum.
+
+40
+00:10:33,555 --> 00:10:43,735
+Şimdi iki yıl önce sanırım bu dersi vermiştim. O zaman verdiğimde işte konuları şöyle bir, şu konuları vermiştim yaklaşık olarak.
+
+41
+00:10:45,076 --> 00:10:54,436
+Bu yıl biraz daha bunun yarısını falan çöpe atıp oraya yapay sinir ağlarını derin öğrenmeye eklemeye çalışacağım.
+
+42
+00:10:59,476 --> 00:11:05,276
+Dolayısıyla bu tentatif bir şey oluyor. Konu listesi oluyor.
+
+43
+00:11:11,892 --> 00:11:39,212
+İki tane ödev vereceğim. Bir projeniz olacak, bir vizeniz, bir finaliniz olacak. Proje... Bu yıl şeylere çok merak sardım ben. Yapay sinir ağları ile bir şeyler üretme. Hatta mümkün olursa belki öyle bir ders de açmayı düşünüyorum.
+
+44
+00:11:39,796 --> 00:12:06,536
+Bu yüzden sizden bu konuda yardım almaya çalışacağım, sizi kullanmaya çalışacağım. Yapay sinir ağları ile üretme uygulamaları üzerine projeler yaptıracağım. Araştırma yaptıracağım size. Bunu ben her yıl her derste yapıyorum. Yani yüksek lisans derslerinde öğrencilerden bir paper falan okumalarını ve anlatmalarını istiyorum.
+
+45
+00:12:08,307 --> 00:12:29,347
+Esasen ilk defa bu derste yaptığım bir şey değil de. Sevimler gibi bir şey oluyor. Son dersleri hoşuma gidiyor. Bu yıl ama şeye yoğunlaşmak istiyorum. Yani bu ders için yapay sinir ağları ile üretme, ganlar falan var. Üretici modeller.
+
+46
+00:12:31,124 --> 00:12:40,403
+Onlara yoğunlaşmak istiyorum. Biraz oyun geliştirme ile de ilgim var. Grafik dersi, oyun dersi de verdim, veriyorum.
+
+47
+00:12:58,419 --> 00:13:20,759
+Hatta resimle de şart bağlı kalmak zorunda da değiliz. Yazı üretilmesini falan da yapabilirsiniz. Dersimiz Computer Vision ama işlerin öğrenmeye dönünce zaten çok çok büyük farklar kalmıyor aralarında diye tahmin ediyorum. İsterseniz bu tarz bir şey de yapabilirsiniz.
+
+48
+00:13:26,355 --> 00:13:43,915
+Bu projede konu. Bir de bu birileri Truba'yı bize keşfedip anlatabilirse TR Grid.
+
+49
+00:13:52,884 --> 00:14:17,183
+Ne diyelim? Dağıtık sistem altyapısı. Dolayısıyla birileri, bir grup, grup halinde yapabilirsiniz, iki kişi yapabilirsiniz projenizi. Bir grup burayı keşfedebilirse çok büyük bir fayda sağlamış olur.
+
+50
+00:14:19,700 --> 00:14:23,700
+Bunu da proje olarak kabul ederim. Tam puanda alırsınız.
+
+51
+00:14:25,259 --> 00:14:27,740
+Bunu belirleyelim aslında.
+
+52
+00:14:29,740 --> 00:14:37,820
+Buna gönüllü var mı? TR Grid'e biz orayı keşfedebiliriz, derin öğrenme için kullanabiliriz.
+
+53
+00:14:37,820 --> 00:14:41,860
+Bunu bize anlatabilecek var mı? Gönüllü.
+
+54
+00:14:55,475 --> 00:15:16,016
+Evet, gönüllü yok herhalde. O zaman çekilişle mi, çekilişle şey yapacağız. Bir grup bunu alsın ya, TR GÜRÜ üzerinde bir şeyi alsın bir grup.
+
+55
+00:15:20,307 --> 00:15:27,127
+Dağıtık programlama, paralel programlama falan almış olan birileri var mı daha evvel?
+
+56
+00:15:30,548 --> 00:15:32,172
+Kurban arıyoruz.
+
+57
+00:15:40,692 --> 00:16:00,651
+Bir TR grid'e falan bir bakın bu hafta. Gelecek hafta bir gönüllü olabilir. Yani derin öğrenmeyle vesaire uğraşırsanız tabii sağlam bir altyapı gerekiyor. Donanım altyapısı gerekiyor.
+
+58
+00:16:01,572 --> 00:16:07,911
+Burada da böyle araştırmacıların kullanabileceği bir altyapı var.
+
+59
+00:16:10,035 --> 00:16:26,716
+Bu altyapıyı kullanabilmek de önemli. Bu hafta bir bakın oraya. Gelecek hafta eğer gönüllü olmazsa rastgele veya bu şekilde birini seçmeyi düşünüyorum.
+
+60
+00:16:29,035 --> 00:16:36,875
+Rapor ve sunum %60, uygulama %40 olacak. Programlama dili Python olacak.
+
+61
+00:16:38,484 --> 00:16:41,484
+Temel aklıma gelenler bunlar.
+
+62
+00:16:44,484 --> 00:16:50,484
+Şu info-base içerisinde Python nasıl kurulabilir vesaire onları anlattık.
+
+63
+00:16:51,484 --> 00:16:53,996
+Buradan kurabilirsiniz.
+
+64
+00:16:58,259 --> 00:17:06,719
+Dersin slide'ları falan iki yıl önce şu Hays'ten almıştım.
+
+65
+00:17:12,852 --> 00:17:26,472
+James Heiss. Bu da kendisi de birçok slide'dan toparlamış. Yani slide'larına baktığınızda birçok slide başka hocalardan gelmiş, toparlamış.
+
+66
+00:17:27,552 --> 00:17:34,172
+Brown Üniversitesi'ndeki bir grup bir hoca vardı mesela. O bunun slide'larından biraz kullanıyordu.
+
+67
+00:17:42,612 --> 00:17:55,972
+Slide'ler var burada. Güzel, çok da güzel hazırlanmış. İki yıl önce buradan kullanmıştım. Şimdi bu yılda temelde buradan kullanmayı düşünüyorum.
+
+68
+00:18:02,932 --> 00:18:04,491
+Bunun yanında...
+
+69
+00:18:07,827 --> 00:18:30,048
+Neural Network'lere geçtiğimizde, Feifeili'nin Stanford'da bir grubu var veya işte dersi var. Convolutional Neural Networks for Visual Recognition diye. Bunlar, slide'lar var burada bir de videolar var.
+
+70
+00:18:37,236 --> 00:19:01,635
+Videolar burada yok ama bu sitede bulabilirsiniz. Youtube'a yönlendiriyor sanırım. Bu çok iyi. Yani derin öğrenme ve Computer Vision'ı birleştirmek istiyorsanız, Computer Vision'da derin öğrenmeyle çalışmak istiyorsanız,
+
+71
+00:19:02,867 --> 00:19:28,288
+Bu çok çok iyi. Bunu benim dersime ek olarak bir kenardan da bunları dinleyebilirsiniz. Bir düşüncem de klasik Computer Vision'ı ilk 5-6 haftada bitirirsek, bunlara paralel, bunlara benzer gitmeye başlayabiliriz.
+
+72
+00:19:30,003 --> 00:19:53,403
+Belki bunlara paralel ben de gidebilirim. Bunların ilk 8 haftası falan giriş bölümü. Sonra da 9-10. haftadan itibaren biraz daha özel konulara giriyorlar gibi.
+
+73
+00:19:54,900 --> 00:20:12,340
+Her yılda değiştiriyorlar. Çok hızlı değişen bir şey, konu. Çok çok hızlı değişiyor. Yani her yıl yeni derin öğrenme mimarileri çıkıyor. Yeni uygulama alanları ortaya çıkıyor.
+
+74
+00:20:21,683 --> 00:20:46,923
+Fevfe İliği'nin yanında çalışan birisi. Başka bir üniversitede hoca olmuş. Justin Johnson sanırım. Bu da hemen hemen aynı. Biraz ayrılmaya başlamış olabilir ama bu da kendi slide'larını ve videolarını koyuyor.
+
+75
+00:20:48,243 --> 00:21:01,703
+Üniversite of Michigan'da çalışıyor. Bir kısım şeyler zaten şeyden, direkt o feyfeiliğinin dersine link koymuş. Zaten onun grubunda olduğu için daha evvel.
+
+76
+00:21:03,463 --> 00:21:13,463
+Bunu yeni keşfettim. Çok da fazla bakmadım ama benziyor diye tahmin ediyorum. Bu da güzeldir.
+
+77
+00:21:16,115 --> 00:21:23,056
+Bunlara bakabilirsiniz. Deep Learning for Computer Vision demiş bu.
+
+78
+00:21:30,836 --> 00:21:32,175
+Durum bundan ibaret.
+
+79
+00:21:36,531 --> 00:21:37,867
+Ö
+
+80
+00:21:45,203 --> 00:21:49,144
+Başka anlatılması gereken bir şey var mı bakalım.
+
+81
+00:21:56,596 --> 00:22:02,635
+Evet, yani bunlar bir sorunuz var mı buraya kadar? Yeni gelenler veya eski gelenlerin?
+
+82
+00:22:23,571 --> 00:22:25,571
+Peki, biraz bakalım dersi.
+
+83
+00:22:29,711 --> 00:22:33,271
+Duyamıyorum sesinizi. Biraz daha yüksek sesle konuşabilir misiniz?
+
+84
+00:22:37,511 --> 00:22:46,751
+Şey, kesik kesik geliyor ya. Konuşanlarız herhalde veya çete de yazabilirsin eğer düzgün gelmezse.
+
+85
+00:22:50,483 --> 00:22:53,703
+Tamam o zaman ben çeyse yazarım o zaman.
+
+86
+00:22:55,663 --> 00:22:56,023
+Söyle.
+
+87
+00:23:15,124 --> 00:23:18,284
+Evet, bekliyorum. Ne diyecektin, ne söyleyecektin?
+
+88
+00:23:19,824 --> 00:23:22,844
+Hocam ben söyledim ki mesela,
+
+89
+00:23:25,284 --> 00:23:27,044
+dediğim öğrenme ve
+
+90
+00:23:27,044 --> 00:23:30,963
+yapayısını ağları için hangi
+
+91
+00:23:30,963 --> 00:23:35,264
+ürün hazırlıklar
+
+92
+00:23:35,264 --> 00:23:39,084
+lazım? Onlarda bir şey yapabilir miyim?
+
+93
+00:23:39,084 --> 00:23:40,544
+Mesela bize bir kaynak falan.
+
+94
+00:23:41,107 --> 00:23:44,367
+Yapay sinir ağları ile ilgili kaynak mı sordun?
+
+95
+00:23:45,188 --> 00:23:47,387
+Evet, onlara bir ün hazırlık mısı da yiyor.
+
+96
+00:23:47,748 --> 00:23:58,667
+Evet, şimdi bu derin öğrenme ile ilgili Joshua Benzio'nun Deep Learning kitabı var.
+
+97
+00:24:08,468 --> 00:24:10,468
+Ahtemelen.
+
+98
+00:24:18,708 --> 00:24:31,847
+İnternette ücretsiz okunabiliyor bu kitap. Bunu tavsiye ederim. Bir kitap okumak istiyorum bu konuda diyorsam bunu tavsiye ederim.
+
+99
+00:24:33,807 --> 00:24:42,048
+Onun haricinde temelini biz de burada birazcık anlatacağız muhakkak. Yapay sinir hali nedir, derin öğrenme nedir diye.
+
+100
+00:24:42,867 --> 00:25:04,447
+Fakat zaten çok hızlı değişen bir dal. İnanılmaz hızlı değiştiği için kitap falan yetişemiyor yani. Patlama halinde bir şey. Ama hani temel şeyler bu kitapta vardır.
+
+101
+00:25:08,948 --> 00:25:14,128
+Kitabın kökbesi de vardır demiş bir arkadaşınız ilgilenenler için.
+
+102
+00:25:17,619 --> 00:25:18,119
+Teşekkürler.
+
+103
+00:25:24,564 --> 00:25:28,084
+Tamam, biraz biraz bakalım.
+
+104
+00:25:33,144 --> 00:25:41,624
+Yani Computer Vision ne? Makine öğrenmesinin görsel dataya uygulanmış hali diyelim.
+
+105
+00:25:43,963 --> 00:25:49,824
+Makine öğrenmesi esasen. Yani aslında bir makine öğrenmesi dersi.
+
+106
+00:25:50,612 --> 00:25:59,091
+Ama temel farkı uygulama alanı görseller diyebiliriz.
+
+107
+00:26:05,392 --> 00:26:17,331
+Vision deyince tabii görme. Dolayısıyla bilgisayarların ingeleri veya diğer görsel verileri anlamasından bahsediyoruz.
+
+108
+00:26:19,059 --> 00:26:42,779
+Yani işte böyle bir imgede nasıl bir sahne var? Bu sahnede neler var? Veya arabalarla ilgileniyorsak arabalar nerede? İşte bina kameradan ne kadar uzaklıkta falan gibi şöyle bir insan baktığı zaman birçok bilgiyi iyi kötü toparlayabiliyor.
+
+109
+00:26:44,084 --> 00:26:47,104
+Bu işleri bilgisayara yaptırma.
+
+110
+00:26:50,483 --> 00:26:53,583
+Kolay bir şey değil esasen.
+
+111
+00:26:58,387 --> 00:27:16,367
+Ne diyor? Visual cortex occupies about 50% of makak bireyin diyor. Ne demek soğu? Makak bir hayvansa yani bu görsel işler beyninin %50'sini içeriyormuş.
+
+112
+00:27:18,147 --> 00:27:22,167
+İnsanların da beyninin %1'i bu işe ayrılmış.
+
+113
+00:27:25,332 --> 00:27:48,052
+Yani şöyle bir baktığınızda inanılmaz veri geliyor. Bütün bu verilerin işlenmesi. Çünkü bir kitap okuduğunuzu düşünün. Yani bu slide'daki resimler, resimlerin içerdiği bilgiler rahatlıkla bir tahmin ediyorum. Büyükçe bir kitap kadar bilgi veriyordur.
+
+114
+00:27:49,299 --> 00:28:13,319
+Birazdan resim nedir, ne değildir göreceğiz ama içerisindeki bilgi sayısı inanılmaz fazla. Bir de videoyu düşünün. İnsan bu bilgileri değerlendiriyor, insan sistemi, görsel sistemi ve anlıyor, çıkarımlar yapıyor. Bunu tabii taklit etmek çok kolay değil.
+
+115
+00:28:15,155 --> 00:28:31,395
+Neden önemli? Milyonlarca uygulama alanı düşünülebilir. Güvenlik, sağlık, buna da güvenlik diye çekebileceğiz ama.
+
+116
+00:28:43,763 --> 00:29:03,723
+Yani temizlik falan yaparken gerek oluyor gibi. Excess demiş. Birçok farklı kullanım alanı olabiliyor. Tarihiyle falan uğraşmanın çok fazla anlamı yok. 1966'larda başlıyor.
+
+117
+00:29:09,907 --> 00:29:25,987
+Neredeyiz? Ona bakabilirsek. 2000'lerde işte büyük veri setleri hazır hale geliyor. 2010'larda konuluşunu, neural networkler derin öğrenme.
+
+118
+00:29:33,332 --> 00:29:51,592
+Yurt dışında bunlar çalışıyor diye biliyorum. Google'un arabaları vs. 2030'larda ne olacak bilmiyoruz artık. Robotlar dünyayı ele geçirebilir yani. Yeterli kafalarına koyarlarsa yapabilecek kapabilitede olacaklar bana kalırsa.
+
+119
+00:29:57,172 --> 00:30:00,212
+Şimdilerde nasıl kullanılıyor demiş ama.
+
+120
+00:30:01,172 --> 00:30:27,132
+Bu slide'lar bir 10 sene falan önce hazırlanmış anladığım kadarıyla. Bunlar bile geride kaldı. Ama ne yapılabiliyor? Mesela trafik, araba, ne diyeceğiz ya, kafamdan gitti. Trafik numarası mıydı bu? Plaka.
+
+121
+00:30:28,019 --> 00:30:35,440
+Plaka tanımadan, posta servislerinde karakter tanıma, bunlar kullanılıyor.
+
+122
+00:30:36,980 --> 00:30:42,379
+Cihazlarımızda Face Detection var, direkt yüzü tanıyor cihazlar.
+
+123
+00:30:45,659 --> 00:30:50,779
+Bazı fotoğraf makineleri gülümsemeyi tanıyor, gülümseme olunca çekiyor.
+
+124
+00:30:52,884 --> 00:31:12,663
+Görü, bilgisayarla görü tabanlı biyometrik yani kişi tanıma, kişi algılama. Bunu bilirsiniz. Popüler, ünlü bir Afgan kızı resmi var. Bu eski bir resim.
+
+125
+00:31:14,084 --> 00:31:18,744
+Time'a mı kapak oluyor acaba? Time dergisi yanlış hatırlamazsam.
+
+126
+00:31:19,539 --> 00:31:45,439
+Hatırlamıyorsam. Yıllar sonra bu kızı buluyorlar tekrar. Ama onun o olduğunu bilebilmek için de iris recognition'dan yararlanıyorlar. Zaten kızın en önemli ayırt edici özelliklerinden biri gözleri, o bakışı falan.
+
+127
+00:31:46,644 --> 00:31:59,544
+Dolayısıyla direkt Iris Recognition diye zaten bir uygulama var. Gözden kızı tanıyorlar. Yani yıllar sonra aynı insanı buluyorlar.
+
+128
+00:32:04,531 --> 00:32:12,831
+Şifre yerine parmak izi tanıma ya da yüz tanıma tarzı uygulamalar var bilgisayarlarda.
+
+129
+00:32:16,251 --> 00:32:28,831
+Mobil cep telefonlarında bir resmi çekip direkt Google'da arama ya da Wikipedia'da arama gibi. Dolayısıyla oradan...
+
+130
+00:32:29,236 --> 00:32:46,436
+Şeyini bulma gibi uygulamalar var. Sesim geliyor mu? Normal. Evet hocam. Geliyor hocam. Bu iNaturalist'i bilmiyorum, hatırlamıyorum. Siz bakabilirsiniz.
+
+131
+00:32:50,436 --> 00:32:54,476
+Üç boyutlu model oluşturma uygulamaları var.
+
+132
+00:32:56,403 --> 00:33:10,024
+Yani resimlere bakıp tek bir resme kadar düştü bu. Önceden birçok resim gerek olurdu. Tek bir resme bakıp o resimden üç boyutlu şekil çıkarılabiliyor artık.
+
+133
+00:33:14,900 --> 00:33:16,900
+Öğüm...
+
+134
+00:33:20,051 --> 00:33:25,451
+Motion Capture demiş. Özel efektler, special efektler de filmler için.
+
+135
+00:33:26,151 --> 00:33:33,851
+Yani artistin konuşması ya da hareketleri algılanıyor.
+
+136
+00:33:35,151 --> 00:33:37,651
+Üzerine bile ne giydiriliyor?
+
+137
+00:33:38,251 --> 00:33:41,951
+Tabii kompütür grafikle falan iç içe uygulama bu.
+
+138
+00:33:42,387 --> 00:33:52,627
+Üzerine bir de üst boyutlu model giydiriliyor. Dolayısıyla artist hareket ettiğinde o üst boyutlu model de hareket ediyor.
+
+139
+00:33:56,884 --> 00:34:19,903
+Sporlarda nasıl uygulamalar olabilir? Bunu hatırlamıyorum. Mesela şey gibi uygulamalar oluyor. Tenis maçlarında top kortun dışına çıktı mı yoksa içinde miydi?
+
+140
+00:34:21,748 --> 00:34:26,867
+Bununla ilgili uygulamalar görmüşsünüzdür. Gerçek zamanlı televizyonda oluyor.
+
+141
+00:34:28,988 --> 00:34:31,788
+Bunun yanında şurada sanırım sarı bir çizgi var.
+
+142
+00:34:36,407 --> 00:34:46,907
+Bu tarz karar destek sistemi olarak kullanılma imkanı var Computer Vision'ın.
+
+143
+00:34:48,179 --> 00:35:08,619
+Bir de şeyler var. Reklam yerleştirme gibi kullanılabiliyor. Mesela otomatik olarak sistem boş bir alan buluyor. Şuraya bir reklam koyuyor mesela. O boş alanın bulunması computer vision oluyor. Bilgisayarla göre oluyor.
+
+144
+00:35:12,628 --> 00:35:37,148
+Medikal görüntüleme, biyomedikal uygulamalar çok önemli olmaya başladı. Çok da popüler araştırma konusu olarak bu konularda çalışmayı düşünüyorsanız, bizim hocalarımız arasında da Türkiye'de de popüler, genelde bilgisayar hocaları bir doktor hocayla iş birliğine gidebiliyor, gidiyor.
+
+145
+00:35:40,351 --> 00:36:01,431
+Burada işte kanser veya tümörlü kanserli hücrelerin tespiti, hastalıkların tespiti grafikler üzerinden. Bu tarz birçok uygulama yapılabiliyor.
+
+146
+00:36:06,931 --> 00:36:29,771
+Akıllı arabalar, Mobile ID'ye bir şeyden bahsetmiş, bunu bilmiyorum ama, Intel tarafından 15 milyar dolara satın alındı demiş. Bunlar çok hızlı ilerliyor bu işler. Şu anda bile eski bir hikaye olarak kalmıştır muhtemelen.
+
+147
+00:36:29,771 --> 00:36:31,771
+Google'ın arabaları.
+
+148
+00:36:34,195 --> 00:37:00,315
+Bunlar gördüğünüz gibi 2011'deki muhabbetler. En son ne durumda bilmiyorum. Oyun uygulamaları, yani siz elinize bir tane golf sopası alıyorsunuz. Gerçek golf sopası değil de bir tane araç alıyorsunuz veya hiçbir araç almıyorsunuz. Hareket yapıyorsunuz. Sizin hareketinizi algılıyor.
+
+149
+00:37:01,364 --> 00:37:17,364
+Alet. Sonra hareketlerinizle oyun oynuyorsunuz. Microsoft'un sanırım Kinect diye bir aracı vardı. Hala var mı? Onu da bilmiyorum.
+
+150
+00:37:20,063 --> 00:37:27,583
+Ama çeşitli oyunlar için kullanılabiliyor. Başka araçlar da vardır mutlaka.
+
+151
+00:37:30,356 --> 00:37:39,176
+Ağment Reality, Virtual Reality. Yani artırılmış gerçeklik ya da görsel gerçeklik diyoruz bunlara.
+
+152
+00:37:40,356 --> 00:37:54,316
+Buradaki sahnede gördüğünüz gibi gerçek dünya ama içerisinde zıplayan bir balina hologramı oluşturulmuş.
+
+153
+00:37:57,460 --> 00:38:14,039
+Bu tarz bir şeyin yapılabilmesi için de şey de gerekiyor. Bu da yine bilgisayar grafiği ve bilgisayarla görmenin beraber kullanıldığı bir uygulama.
+
+154
+00:38:25,652 --> 00:38:35,891
+Ortamın algılanması gerekiyor. Veya gerekebiliyor. Bu tür oyunlar vesaire de var.
+
+155
+00:38:40,211 --> 00:38:41,572
+Neidoğ
+
+156
+00:38:46,771 --> 00:38:55,391
+Pikachu falan arıyorlardı. Neydi o arkadaşlar? Öyle bir oyun vardı.
+
+157
+00:38:56,652 --> 00:38:57,731
+Pokemon Go hocam.
+
+158
+00:38:58,051 --> 00:38:59,331
+Pokemon Go değil mi?
+
+159
+00:39:02,835 --> 00:39:13,415
+Ne 2.0'dan sonra güncellenmedi? Selim, [öğrenci], Kinek mi? Evet, yani bir noktadan sonra bıraktılar galiba onu.
+
+160
+00:39:17,915 --> 00:39:30,095
+Ama yani alternatif bir sürü şey oluşmuştur, tahmin ediyorum. O Kinek'te derinlik algılama falan da vardı hatırladığım kadarıyla.
+
+161
+00:39:32,148 --> 00:39:59,208
+Endüstriyel robotlar var. Bu çok olan bir uygulama. Mesela şey çok uygulanıyor. Fabrikada denetim yapan robotlar. Bir kamera konuluyor. Banttan ürünler geçerken kamera bakıyor mesela ürünlere. Çatlaksa, bozuksa, bir sorun varsa üründe.
+
+162
+00:40:00,000 --> 00:40:15,800
+tak diye onu düşürebiliyor veya alarm verebiliyor gibi şeyler yapılabiliyor. O daha basit tabii. Burada biraz daha baya baya robot görerek iş yapıyor. Sanırım bu örnekte.
+
+163
+00:40:17,940 --> 00:40:23,880
+Uzayda kullanıldı diyor. Spirit aracından bahsetmiş.
+
+164
+00:40:27,923 --> 00:40:33,983
+Amazon Prime Air demiş. Bunun Computer Vision'la ne alakası var bilmiyorum.
+
+165
+00:40:36,123 --> 00:40:37,583
+Skydio'yu bilmiyorum.
+
+166
+00:40:40,864 --> 00:40:51,364
+Şimdi State of the Art yani en harika uygulamalar ne durumda diye baktığımızda
+
+167
+00:40:54,931 --> 00:41:16,991
+Veri verdiğinizde, eğitim verisi verdiğinizde artık bilgisayarla görü neredeyse insan görüsünü yakalamaya başlamış durumda. Burada tabii derin öğrenme bir şey oldu. Ortalığı dağıttı. Yani bilgisayarla görü derin öğrenme oldu.
+
+168
+00:41:24,019 --> 00:41:38,579
+Birçok teknikler de derin öğrenmeyle yapılmaya başladı. Mesela, hiç aklınıza gelmeyebilir ama mesela imge yeniden boyutlandırma.
+
+169
+00:41:40,639 --> 00:41:49,659
+Diyelim ki burada işte bir imge var. Onun daha büyük bir versiyonunu merak ediyorsunuz mesela.
+
+170
+00:41:52,724 --> 00:42:05,543
+Onun daha büyük bir versiyonunu derin öğrenmeyle elde edebiliyorsunuz. Bu neden zor bir problem? Çünkü diyelim ki burada bir nesne var.
+
+171
+00:42:09,684 --> 00:42:13,004
+Diyelim ki bunu 2.3 katına çıkarttınız.
+
+172
+00:42:15,064 --> 00:42:18,524
+Şimdi bu pikselin, şurada bu piksel.
+
+173
+00:42:19,923 --> 00:42:24,224
+2.3 katına çıkınca, hani 2 katına çıkarttığımızı düşünelim önce.
+
+174
+00:42:26,184 --> 00:42:28,624
+1 piksel, 2 piksel olacak değil mi?
+
+175
+00:42:28,624 --> 00:42:32,664
+Veya 4 piksel olacak. Yani her boyutta 2 katına çıkarttık.
+
+176
+00:42:33,204 --> 00:42:42,664
+Şimdi birebir aynı rengi buraya koyarsanız bu pikselin rengini kaliteli bir yeniden boyutlandırma olmuyor.
+
+177
+00:42:44,544 --> 00:42:51,144
+Ne yapılması lazım? Çevresindeki piksellere bakarak, çünkü burada dört tane piksel var.
+
+178
+00:42:52,304 --> 00:42:58,784
+Bu dört pikselin farklı renklerle ama uygun bir şekilde renklendirilmesi gerekiyor.
+
+179
+00:43:00,788 --> 00:43:06,887
+Bir de 2.3 katına çıkarttığınızı düşünün mesela. O zaman bayağı iştaha bir karışıyor falan.
+
+180
+00:43:08,407 --> 00:43:13,207
+Mesela bu tür şeyleri artık derin öğrenmeye yaptırıyorlar. Böyle uygulamalar var.
+
+181
+00:43:13,768 --> 00:43:27,948
+Yani sadece bir şeyi görme değil de bu tarz klasik birçok imge işleme uygulaması da artık derin öğrenmeyle yapılabiliyor.
+
+182
+00:43:32,148 --> 00:43:53,967
+Bu derste de tabii kaçınılmaz olarak derin öğrenmeyi ekleyeceğiz, eklememiz gerekiyor. Ama bir taraftan da klasik yöntemleri de oradan da tamamen elimizi tak diye de çekmeyelim diye düşünüyoruz. Oraya da birazcık şeyimiz olsun.
+
+183
+00:44:01,139 --> 00:44:21,519
+Evet, tabii derin öğrenme insanları önemli oldu. Dijital dünyayı kim değiştiriyor diye bir Wild Yüz'ün bir listesi varmış sanırım. Mesela 73 numarada DJ Khalid varmış.
+
+184
+00:44:25,748 --> 00:44:45,807
+69 numarada Jeffrey Hinton var. Bu Hinton duydunuz mu? Derin öğrenmede çok önemli insanlardan biri. Artık böyle ünlü derin öğrenme bilim adamları ilk yüze falan girmeye başladı.
+
+185
+00:44:54,291 --> 00:45:00,491
+Popüler kaynaklarda bu insanları artık çok önemli kabul ediyor. Fark edildi yani.
+
+186
+00:45:02,011 --> 00:45:18,011
+Yan Lecun yine çok önemli bir adam. Derin öğrenme ile ilgili. Evet öyle devam ediyor. Tabii Tyler Swift onlardan daha önemli hala.
+
+187
+00:45:21,172 --> 00:45:23,172
+imiş
+
+188
+00:45:25,172 --> 00:45:27,172
+DeepMind'dan bahsediyor
+
+189
+00:45:30,172 --> 00:45:33,172
+AI tabi uçtu gitti
+
+190
+00:45:33,172 --> 00:45:35,172
+yapay zeka çok
+
+191
+00:45:35,172 --> 00:45:37,172
+başarılı işler çıkarıyor
+
+192
+00:45:40,172 --> 00:45:42,172
+AlphaGo'dan bahsetmiş
+
+193
+00:45:42,172 --> 00:45:43,172
+bunları duymuş muydunuz?
+
+194
+00:45:43,172 --> 00:45:45,172
+AlphaZero, AlphaGo
+
+195
+00:45:45,172 --> 00:45:47,172
+bunlar Google'ın
+
+196
+00:45:48,724 --> 00:46:07,484
+Evet, Google'un şeyleri, Go oyununda mesela şampiyonları falan yenen uygulamalar bunlar. Derin öğrenme uygulamaları. Pekiştirmeli öğrenme temelde var.
+
+197
+00:46:10,784 --> 00:46:13,984
+Bunu niye kompütür vijine koymuş bilmiyorum.
+
+198
+00:46:18,900 --> 00:46:32,799
+Yani şöyle baktığınızda, Computer Vision dediğinizde bir interdisiplineri, farklı disiplinirleri içinde barındıran bir disiplin olduğunu görüyoruz.
+
+199
+00:46:34,940 --> 00:46:45,579
+En temelinde tabii biraz imge işleme var. Geometrik düşünme, recognition çok önemli.
+
+200
+00:46:46,195 --> 00:47:12,475
+Yani tanıma ve deep learning çok önemli oldu ama tabii birçok diğer alanla ilgisi bulunuyor. İşte robotik, insan bilgisayar interaksiyonu, medikal imgelenme, neuroscience demiş, optik, fotoğrafçılık.
+
+201
+00:47:13,460 --> 00:47:37,900
+Bilgisayar grafikleri, makine öğrenmesi. Böyle birçok dall'a ilişkisi bulunan, uygulamaları bulunan bir alan. Bir ara verelim. 10 dakika. Geldiğimizde devam ederiz.
+
+202
+00:59:42,547 --> 00:59:47,307
+Evet, buradayız. Siz de burada mısınız? Başlayalım.
+
+203
+00:59:51,476 --> 01:00:10,696
+Evet. Şimdi textbook yani kitabı, kitap Zeliski söylemiştik. Derste lineerce bir temel kalkulus yani matematik 1-2 ve olasılık gerekebiliyor.
+
+204
+01:00:15,251 --> 01:00:34,632
+Image Processing önemli. Eğer bilgisayarla göre çalışacaksanız, Gonzales'in kitabını okumanız faydalı olur. Eğer ciddi ciddi ben araştırmacı olacağım, Computer Vision'la falan diyorsanız, oturup Gonzales'in bir kitabı var.
+
+205
+01:00:38,579 --> 01:01:02,440
+Digital Image Processing diye. Bu kitabı okumanızı tavsiye ediyorum. Neden? Şimdi makalelerde bol miktarda matematik göreceksiniz. O matematiği anlayamazsınız. Böyle bir kitabı okumazsanız.
+
+206
+01:01:06,867 --> 01:01:15,228
+Biraz daha işin içinde Image Processing varsa, Image Processing Computer Vision'ın bir temeli.
+
+207
+01:01:19,827 --> 01:01:30,347
+Dolayısıyla hani ben bu işte ciddiyim diyorsanız bu kitabı okumanız gerekiyor. Gonzales'in Digital Image Processing kitabı. Sanırım dördüncü versiyonu var şu anda.
+
+208
+01:01:44,755 --> 01:01:50,596
+Biraz matematiği biraz kenara koyabiliyor. En azından uygulamada.
+
+209
+01:01:55,295 --> 01:02:01,795
+Tabii Image Processing ayrı bir ders. Yani o başlı başına. Yani Gonzales'in kitabı bin sayfa falan.
+
+210
+01:02:04,655 --> 01:02:11,936
+O ayrı bir ders tek başına. Ona çok fazla da vakit ayıramayacağız. Çok çok böyle temel üzerinden geçeceğiz.
+
+211
+01:02:14,003 --> 01:02:21,704
+Python ve benzeri bir dille çalışabilmek faydalı olacaktır. Bitti mi? Bitmiş.
+
+212
+01:02:32,947 --> 01:02:34,947
+Bakalım bir sonraki şeyi açalım.
+
+213
+01:02:36,547 --> 01:02:38,547
+Burada ne var, ne koymuşum?
+
+214
+01:02:42,068 --> 01:02:51,548
+Evet. Tamam. Working with Images diye ikinci konuya geçelim.
+
+215
+01:03:31,347 --> 01:03:31,847
+Evet.
+
+216
+01:03:33,847 --> 01:03:35,275
+Şimdi...
+
+217
+01:03:38,804 --> 01:03:48,364
+İmgeler ne? Yani imgeler üzerinde çalışacağız. İmgeler aslında, önce gri seviye imgelerle başlayalım.
+
+218
+01:03:50,183 --> 01:03:58,903
+Gri seviye imge, iki boyutlu bir dizi veya matriks diyebiliriz.
+
+219
+01:04:06,643 --> 01:04:32,603
+Matrisin, tabii matris ne demek? Yani şöyle bir şey aslında. 1, 3, 8, 6, 7, 12, 200, 256, 1, 8, 12, 5 gibi. Bu mesela 3 çarpı dörtlük bir imge.
+
+220
+01:04:33,172 --> 01:04:34,711
+Olarak kabul edebilirsiniz.
+
+221
+01:04:39,731 --> 01:04:40,731
+Dolayısıyla
+
+222
+01:04:40,731 --> 01:04:43,592
+bir
+
+223
+01:04:43,592 --> 01:04:44,512
+matriks
+
+224
+01:04:49,043 --> 01:05:16,144
+Bu matrisi ne yapıyor? Sistemler matriks içindeki her bir sayıya bir renk atıyor. Yani diyor ki ben biri, diyelim ki ışığın miktarı olarak düşünelim bu sayıları. Bir de çok az ışık var, öyleyse onu siyah gösteririm diyor.
+
+225
+01:05:17,652 --> 01:05:31,112
+256'da bol miktarda ışık var. 255 diyelim buna. 255'de çok ışık var. Dolayısıyla ben buna beyaz diyeyim.
+
+226
+01:05:33,411 --> 01:05:40,112
+Bunu da sıfır diyeyim. Sıfırdan başlattığını anlatmak için sıfır siyah, 255 beyaz.
+
+227
+01:05:40,851 --> 01:05:46,411
+Aradaki değerler işte o aralıkta sıfırdan beyaza doğru grinin değişik değerlerini alıyorlar.
+
+228
+01:05:51,699 --> 01:06:11,900
+Tabii görüntüleme sistemleri, ekranlar bunları bir piksele dönüştürüyor. Bir pikseli, belirli bir alanı, ekranın belirli bir alanını bu düşündüğümüz renklere boyuyor. Yani burada sıfır varsa geliyor burayı siyaha boyuyor o sistem.
+
+229
+01:06:13,588 --> 01:06:27,768
+Normalde tabi bunlar bir değer. Sadece bir tane değer var burada sıfır ama görüntüleme amaçlı büyük bir alanı, bir pikselin kapladığı alanı o renge boyuyor sistem.
+
+230
+01:06:31,728 --> 01:06:37,548
+Bu piksel diyor, bunların her birine piksel diyoruz görüntüde.
+
+231
+01:06:39,443 --> 01:06:49,304
+Piksellerin uzaktan bakınca piksel olduğunu fark etmiyoruz. Aslında pikseller orada. Yani karesel küçük alanlar orada oluyor ekranlarımızda.
+
+232
+01:06:53,108 --> 01:07:08,108
+Ama pikseller çok küçük alanlar kapladıkları için biz onları görmüyoruz. Bir resmi falan yeterince büyütseniz, Paint'de falan o pikseli görmeye başlıyorsunuz.
+
+233
+01:07:17,012 --> 01:07:34,552
+Bunları numaralandırmak gerekiyor tabii. Yani matrisleri, mesela şu elemana ulaşmak istiyorsunuz 12'ye. Bu bir matris. Matris A olsun. A'nın kaçıncı elemanı?
+
+234
+01:07:37,012 --> 01:07:43,972
+İndeksleme birçok dilde sıfırda başlar bilirsiniz. Java, C gibi dillerde. Python da öyle bir dil.
+
+235
+01:07:44,367 --> 01:08:03,907
+Dolayısıyla şu eleman sıfırıncı eleman. Sıfırıncı sütun. Bu da sıfırıncı satır. Dolayısıyla A sıfır, sıfır. Python'da tabii köşeli parantez olması lazım.
+
+236
+01:08:07,635 --> 01:08:32,396
+Matlab geçmişimiz olduğu için matlab şeyleri karışıyor. Matlab da birden başlanır. Ama A0, 0. Burası da 0. Öyle rast gelmiş. Mesela 3'e nasıl ulaşabiliriz? A0'a 1 olması lazım. Hep bunu karıştırırım ben. Önce sütunlar mı yazılır, satırlar mı yazılır diye.
+
+237
+01:08:36,435 --> 01:08:37,795
+Doğru hocam öyle.
+
+238
+01:08:38,515 --> 01:08:40,995
+Önce satır numarası yazılıyor diye hatırlıyorum.
+
+239
+01:08:43,175 --> 01:08:45,095
+A013 mesela.
+
+240
+01:08:47,835 --> 01:08:50,635
+Şöyle eşitlik olmasın. Atama yapmayayım da.
+
+241
+01:08:54,355 --> 01:08:55,155
+A013.
+
+242
+01:08:57,075 --> 01:09:03,435
+Python bu şekilde atamaya izin verecek. Python demeyelim de NumPy diyelim.
+
+243
+01:09:04,884 --> 01:09:29,224
+Dolayısıyla indekslemeye sıfırdan başlıyorsunuz. Renkli resimlere geldiğinizde, şimdi renk 3 farklı sayıyla gösteriliyor. Renkte 3 sayı var.
+
+244
+01:09:32,532 --> 01:09:38,152
+Bu üç sayının ne olduğu kullandığınız renk uzayına göre değişiyor.
+
+245
+01:09:38,152 --> 01:09:57,971
+En yaygın olanı bu üç sayının görüntüdeki RGB yani kırmızı, red, yeşil, green ve blue, mavi.
+
+246
+01:10:00,115 --> 01:10:20,556
+komponentler olması. RGB resim diye geçer bu RGB. Fakat sonuçta bu RGB 3 tane sayı. Yani 3, 10, 100 falan gibi 3 tane sayı.
+
+247
+01:10:25,619 --> 01:10:40,399
+Bunlar, bu üç sayı RGB olmak zorunda değil. Başka renk uzayları var. Mesela HSI uzayı var mesela.
+
+248
+01:10:49,876 --> 01:10:51,615
+İntensi olması lazım.
+
+249
+01:10:53,676 --> 01:11:10,896
+Bu 310-100'ü HSI uzayına baktığınızda başka değerlerle, mesela 218-60 falan gibi değerlerle ne yapabiliyorsunuz?
+
+250
+01:11:17,203 --> 01:11:36,884
+Numaralarla, farklı sayılarla belirtebiliyorsunuz. Böyle birçok renk uzayı var. Y, CR, CB var, HSV var. Bu Color Spaces deniliyor.
+
+251
+01:11:40,340 --> 01:11:53,260
+Bunları şimdi ben ders içerisinde bunu siz okuyun deyip geçeceğim bazı şeyleri. Vakit açısından benim bunlara çok fazla değerli vakit ayırma şansım yok.
+
+252
+01:11:58,707 --> 01:12:13,207
+Bunlara girersek konuyu yetiştiremeyiz. Dolayısıyla bu öyle bir şey. Bunu kendiniz okuyun. Araştırın kendiniz. Öğrenin.
+
+253
+01:12:16,564 --> 01:12:43,024
+Şimdi üç renk var dedik. Sonuçta hep üçlü bunlar görüyorsanız. HSV, HSI, RGB, YCRCV. Hep üç tane değer. Şimdi bir piksel için üç değer olması lazım. Bu nasıl gösterilecek? Genel olarak şöyle bir yol izleniliyor.
+
+254
+01:12:50,068 --> 01:13:01,048
+Bu üç değer her bir plane, yani R bir plane oluyor, G bir plane oluyor, B bir plane oluyor.
+
+255
+01:13:01,968 --> 01:13:05,668
+Yani üç tane matriks oluyor. Bunlara plane ya da channel denilebiliyor.
+
+256
+01:13:09,668 --> 01:13:13,668
+Mesela bir resimdeki...
+
+257
+01:13:15,475 --> 01:13:40,195
+RGB'lerin hepsindeki R, R kanalı, R channel ya da başka ne söylenilebiliyor? Page denilebiliyor ama o pek kullanılmıyor. Ama channel kullanılıyor.
+
+258
+01:13:41,908 --> 01:14:07,068
+Kırmızı kanalı, R çanalı. O R çanalıını alıyorsunuz. O bir şey. Sonra G, sonra da B kanalı. Bu kanalları beraber düşündüğünüzde aslında elinizde bir şey oluyor. Böyle üç boyutlu küp gibi.
+
+259
+01:14:11,347 --> 01:14:13,647
+Bir yapı oluyor. Bunlar hep sayı.
+
+260
+01:14:14,667 --> 01:14:17,487
+Farkettiğimiz gibi.
+
+261
+01:14:18,268 --> 01:14:22,108
+Bir renkli resimde aslında elimizde ne var?
+
+262
+01:14:22,608 --> 01:14:24,667
+Böyle bir küp gibi bir şey var.
+
+263
+01:14:25,948 --> 01:14:27,987
+Her piksel için
+
+264
+01:14:28,507 --> 01:14:31,067
+üç tane değer tutulması gerekiyor.
+
+265
+01:14:32,587 --> 01:14:36,188
+Bazen buraya bir de alfa kanalı ekleniyor.
+
+266
+01:14:36,819 --> 01:14:49,059
+O zaman dört kanal oluyor. Alfa kanalı A ile gösterilebiliyor veya alfa ile gösterilebiliyor.
+
+267
+01:14:57,967 --> 01:15:14,507
+Hangisi? 0 mıydı tam saydam yoksa 1 miydi veya 255 miydi? Tam hatırlayamıyorum ama alfa değerini değiştirdiğinizde resmin o kısmının saydamlığını ayarlıyorsunuz bazı sistemlerde.
+
+268
+01:15:18,612 --> 01:15:25,291
+Hocam yanlış hatırlamıyorsam 255'te normal rengi veriyordu. Sıfırda da tam saydam yapmıyordu.
+
+269
+01:15:25,291 --> 01:15:40,291
+Evet, öyle diyor arkadaşlarınız. Yani sıfır saydam oluyor. Maksimum değer de opak oluyor. Saydamlığın tersi opak. Dolayısıyla...
+
+270
+01:15:41,652 --> 01:15:57,311
+Altını hiç göstermiyor diyelim. Bu tabii nerede kullanılıyor? Bilgisayar grafiği gibi sistemlerde hani resim resim üzerine geldiğinde alttaki resim gözükecek mi falan gibi durumlar için kullanılıyor bu.
+
+271
+01:16:00,192 --> 01:16:07,532
+Dolayısıyla elimizde böyle bir veri yapısı var temelde resimde.
+
+272
+01:16:08,180 --> 01:16:33,060
+Tabi bu, peki bu değerler ne oluyor? Hani burada ben 0 gibi, 3 gibi, 8 gibi şeyler yazdım ama. Şimdi gri seviyelerde çok kullanılan değer aralıkları 0.255 aralığı.
+
+273
+01:16:34,228 --> 01:16:47,927
+Neden 0.255 aralı? 8 bitle ifade edilebiliyor çünkü. Yani bir pikseli 8 bitle göstermek istediğimizde.
+
+274
+01:16:51,699 --> 01:16:54,139
+Elimizde 256 tane.
+
+275
+01:16:58,547 --> 01:17:06,927
+O değerleri de 0 ve 255 olarak atıyoruz.
+
+276
+01:17:12,595 --> 01:17:15,675
+Tabi bu kullanım
+
+277
+01:17:19,859 --> 01:17:38,799
+Okuduğunuz zaman imgeleri ilk defa çoğu zaman bu şekilde gelecektir. Yani Python'la vs. birazdan bakarız. Matlab'la Python'la okuduğunuz zaman pikseller 0-255 arası geliyor çoğu zaman.
+
+278
+01:17:47,252 --> 01:17:58,211
+Birçok ekranda, ekrana bu şekilde vermeniz gerekiyor. Şu değerler yani. Bunlardan bahsediyorum. 0-255 arası oluyor.
+
+279
+01:18:00,211 --> 01:18:12,211
+Biz ama çalışırken, görüntülerle imge işleme yaparken ya da computer vision yaparken,
+
+280
+01:18:12,564 --> 01:18:35,244
+0,255 yani 256 değer bize yetmiyor. Çoğu zaman ne yapmamız gerekiyor? Bu aralığı 0,1 arasına normalize etmemiz gerekiyor. Ve değerler de o zaman real sayılar oluyor. Dolayısıyla...
+
+281
+01:18:36,083 --> 01:18:46,304
+O zaman mesela 255, 1 olmuş oluyor, 0, 0 olmuş oluyor. Aradaki değerleri de hesap edebilirsiniz. Basit bir normalizasyon denklemiyle.
+
+282
+01:18:51,507 --> 01:19:06,788
+Normalizasyon ile 0-1 aralığına getiriyoruz. Eğer bu aralıkta değilse. Neden? Şimdi diyelim ki birçok sorun çıkabiliyor. Yani 0-255 arasında kalacağım derseniz birçok sorun çıkabiliyor.
+
+283
+01:19:17,427 --> 01:19:31,788
+İmge işleme ile çalışırken çoğu zaman bir bakıyorsunuz bu aralıkların dışına çıkıyor. O zaman da tekrar arada sırada normalizasyon yapıp 0-1 aralığına geri getirmeniz gerekebiliyor.
+
+284
+01:19:31,788 --> 01:19:44,487
+Yani bir kompüter vizyonda çalışırken bu arada yapmanız gereken bir şey oluyor. Bir de asıl burada az önce söylemek istediğim şuydu. Buradaki 256 değer bize yetmiyor.
+
+285
+01:19:45,363 --> 01:19:59,763
+Biz çok daha fazla değer kullanabilmek istiyoruz. Çeşitli nedenlerle. Bunları toplayıyoruz, çıkarıyoruz, çarpıyoruz, konvolüsyon yapıyoruz. Birazdan göreceksiniz.
+
+286
+01:20:03,923 --> 01:20:13,923
+Virgüllü değerler oluyor. Yani 1.3 var mesela. 1.3 elde ettik. Halbuki bunlar tam sayı. 0-255 arası tam sayı.
+
+287
+01:20:17,939 --> 01:20:31,699
+Bu tam sayılarla ifade edemiyoruz. Dolayısıyla 1.3'ü de kullanmazsak işlem doğruluğu, sonuç doğruluğu azalıyor. Dolayısıyla biz önce bir real sayılara geçiyoruz. 0-1 arasına.
+
+288
+01:20:33,840 --> 01:20:44,699
+Sonra da 0-1 arasında çalışıp tekrar yazarken, resim olarak onu ekranda gösterirken veya kaydederken
+
+289
+01:20:45,587 --> 01:21:05,067
+Ne yapıyoruz? 01 aralığını tekrar 0.255 aralığına döndürüyoruz. O şekilde kaydediyoruz ya da ekranda gösteriyoruz. Böyle bir şey var. Önce oraya, sonra buraya aralıkları normalize ede ede, değiştire değiştire işlem yapmamız gerekiyor.
+
+290
+01:21:10,899 --> 01:21:34,059
+Evet, yani temel burada sanırım şu anda aklıma gelenler bunlar. Resimlerle ilgili. Şimdi imgeleri tabii okumamız gerekiyor. İmgeleri Python ile okurken aslında birden fazla seçeneğiniz var.
+
+291
+01:21:35,123 --> 01:21:44,224
+Bu derste ben direkt Python'ı anlatacağım. Farklı programlama dilleri için farklı kütüphaneler var, fonksiyonlar var.
+
+292
+01:22:02,484 --> 01:22:19,084
+Modülünü mü diyeceğiz? Kütüphanesini mi diyeceğiz? Onu kurmuş oluyorsunuz. CV2'de mesela imread diye bir tane fonksiyon var. Onunla dosyanın petini veriyorsunuz. Onu size okuyor.
+
+293
+01:22:29,427 --> 01:22:34,587
+diye bir kütüphane var. Bu yine imge okuyor.
+
+294
+01:22:41,844 --> 01:22:50,004
+Başka kütüphaneler var. Yani Opel CV'den başka. Mesela bu az önce gördüğüm.
+
+295
+01:22:59,572 --> 01:23:06,072
+Şöyle, şeyi tavsiye etmişler. Mesela şurada bir şeye bakıyorum şimdi de.
+
+296
+01:23:16,819 --> 01:23:27,100
+SciPy ile okumayı tavsiye etmiş. Mesela burada bu OpenSv ile okumaktı. Ekranımı açayım.
+
+297
+01:23:37,811 --> 01:23:41,051
+Mesela buradan iyi tavsiye etmişler.
+
+298
+01:23:49,460 --> 01:23:55,539
+Bir taraftan da slide'ları da toparlayayım diyorum. Hem ders anlatıyorum hem de slide'ı düzelteyim.
+
+299
+01:24:04,916 --> 01:24:11,195
+Mesela Saypay ile koymuş.
+
+300
+01:24:27,188 --> 01:24:28,147
+Bir daha deneyeceğim.
+
+301
+01:24:37,332 --> 01:24:38,012
+Soğum bir şans.
+
+302
+01:24:42,899 --> 01:24:50,659
+Niye bu böyle yapıyor arkadaşlar? Hocam sağ tıklayın istiyorsanız, şeye gelin, o text metnimin içine.
+
+303
+01:24:50,659 --> 01:24:54,939
+Sağa tıklayın, orada yapıştırma seçeneklerinde A'yı göreceksiniz.
+
+304
+01:24:54,939 --> 01:24:57,939
+Yok, oradan farklandı.
+
+305
+01:24:57,939 --> 01:25:07,659
+Microsoft Edge daha mı iyi yapar diye deniyorum ama o da sonuçta Chrome'u alt yapı olarak kullanıyor değil mi?
+
+306
+01:25:10,387 --> 01:25:12,087
+Bir daha deneyelim bakalım.
+
+307
+01:25:16,692 --> 01:25:26,311
+Bak, Microsoft Edge daha biraz topar iyi yaptı. Yok, o da aynı benzer yaptı. Neyse, fark eden bir şey yok.
+
+308
+01:25:27,492 --> 01:25:31,692
+Şey hocam, yapıştırma seçeneklerinde var aslında. Sağ tıklayın istiyorsanız.
+
+309
+01:25:33,692 --> 01:25:37,432
+Yani Word'de var, burada da olması gerek. Ben göremiyorum ama.
+
+310
+01:25:38,804 --> 01:25:43,324
+Sağ tıklayınca yapıştırdığı A var hocam. O düzeltiyordu örneği.
+
+311
+01:25:43,324 --> 01:25:45,444
+Evet, doğru söyledim.
+
+312
+01:25:48,164 --> 01:25:54,324
+Evet, yani mesela üstte OpenCV ile...
+
+313
+01:25:57,908 --> 01:26:19,488
+Open CV ile açmayı görüyorsunuz. Bunu not alabilirsiniz. Altta da SciPy Kütüphanesi ile açmayı görüyorsunuz. Bu da bir başka alternatif. İster öyle açın, ister böyle açın.
+
+314
+01:26:22,420 --> 01:26:33,619
+Bunu da kaydedeyim. Gelecek yıllar için şimdiden toparlamış olayım onu. Başka şeyler de var dediğim gibi.
+
+315
+01:26:37,619 --> 01:26:47,739
+Güzel tarafı, neden birden fazla şeyle açabiliyorsunuz? Birinin açtığını biri açamıyor. Farklı imge formatları var.
+
+316
+01:26:48,467 --> 01:27:00,467
+PNG gibi, JPEG gibi, GIF gibi. Dünya kadar farklı inge formatları var. Bu formatları...
+
+317
+01:27:07,699 --> 01:27:08,879
+Bu formatları
+
+318
+01:27:20,564 --> 01:27:46,484
+Dünya kadar PNG gibi, JPEG gibi, GIF gibi formatlar var. Bu formatların hepsini hepsi açmıyor anladığım kadarıyla. O yüzden farklı açabilen şeyler var. Bir de her bir kütüphane, mesela Open CV'yi yapanlar demiş ki, başkasına niye ihtiyacımız var biz açarız demiş. Onlar kendi imge açma kütüphanelerini hazırlamışlar vesaire.
+
+319
+01:27:49,108 --> 01:28:03,427
+Böyle bir orada fazlalık var. Seçenek fazlalığı var. Ama güzel olan taraf şu ki döndürdükleri şey bir NumPy dizisi.
+
+320
+01:28:07,427 --> 01:28:11,212
+NumPy Python'da bir...
+
+321
+01:28:12,564 --> 01:28:18,564
+Çok boyutlu dizilerle çalışma kütüphanesi ya da lineerce bir kütüphanesi de diyebiliriz.
+
+322
+01:28:22,564 --> 01:28:28,564
+Python ekosisteminde standart diyebiliriz gördüğüm kadarıyla.
+
+323
+01:28:29,564 --> 01:28:35,564
+Pillow da NumPy cinsinden döndürüyor. OpenCV de NumPy cinsinden döndürüyor.
+
+324
+01:28:35,564 --> 01:28:39,564
+SciPy da muhtemelen NumPy cinsinden döndürüyordur.
+
+325
+01:28:40,756 --> 01:28:55,996
+Dolayısıyla işin güzel tarafı bir kere okuduktan sonra elinizde bir nampay ereği oluyor. O nampay ereğiyle artık işlemeye devam edebilirsiniz.
+
+326
+01:29:01,779 --> 01:29:19,539
+NumPy'da imge boyutlarını merak ederseniz Shape diye bir özellik var. O özelliği okuyabiliyorsunuz. Bir kere imgeyi okudunuz. F dediniz mesela. F nokta Shape deyince size bir Tuple döndürüyor.
+
+327
+01:29:22,239 --> 01:29:25,219
+Python'u bilmeyen, öğrenmeyen var mı?
+
+328
+01:29:26,292 --> 01:29:45,952
+Kim bilmiyorsanız, öğrenmiyorsanız, geçen hafta acilen öğrenin demiştim. Bu haftaya kadar öğrenmeniz gerekiyordu. Hala öğrenmediyseniz gelecek haftaya kadar Python'ı öğrenmiş olun. Nasıl öğreneceğinizi artık siz bilirsiniz. İnternetten vesaire.
+
+329
+01:29:48,659 --> 01:30:15,639
+Bir kere imgeyi okuduktan sonra tabii görüntülemek istiyoruz, ekranda görmek istiyoruz. OpenCV'de imshow diye bir fonksiyon bunu yapabiliyor. OpenCV esasen C ile yazılmış bir kütüphane. Birçok dilin ona bindingi var. Javasından tut, C şarpına kadar.
+
+330
+01:30:16,500 --> 01:30:27,440
+Python'un da Binding'i var. Dolayısıyla OpenCV ile ImShow derseniz o kendi bir grafik arayüzü var. Onu açıyor, orada gösteriyor.
+
+331
+01:30:29,539 --> 01:30:39,840
+WaitK demezseniz de hemen geri kapatıyor diye tahmin ediyorum. Dolayısıyla WaitK diyoruz. Tıkladığınız zaman kapatıyor.
+
+332
+01:30:43,412 --> 01:30:48,811
+Bir tıklama bekle. Onu bekliyor. Sonra da Destroy All Windows ile kapatıyorsunuz.
+
+333
+01:30:49,811 --> 01:30:59,212
+Matplotlib, eğer OpenCV ile görüntülemek istemezseniz, yine standart sayılabilecek bir paket Python dünyasında.
+
+334
+01:31:00,792 --> 01:31:08,532
+Grafik çizim paketi esasen 2-3 boyutlu grafikler çizebiliyor. Resim de gösterebiliyor.
+
+335
+01:31:12,564 --> 01:31:29,384
+Dolayısıyla yine bir şekilde okuduktan sonra Macplotlib PLT olarak import ettik. Imshow ile ne yapabiliyoruz? Onu gösterebiliyoruz.
+
+336
+01:31:30,444 --> 01:31:35,444
+Daha sonra mesela buradaki örnekte ne yapmış? Birinci kanalı.
+
+337
+01:31:37,427 --> 01:32:00,667
+Al demiş. Yani bu RGB'de yalnız bunların hepsi RGB sırasıyla döndürmeyebiliyor. Onu dokümentasyona bakmak lazım. Biz hep RGB diyoruz. Red, Green, Blue ama RBG'de olabiliyor. Sanırım RBG Open CV'de diye hatırlıyorum. Yanlış hatırlıyor olabilirim.
+
+338
+01:32:01,619 --> 01:32:15,819
+Benim kendi şimdiye kadar yaptığım uygulamalarda böyle channel'larla tek tek uğraşmadığım için çok aklımda kalmamış. Open CV Dokumentasyonuna bakabilirsiniz onun için.
+
+339
+01:32:22,484 --> 01:32:27,524
+Veya kullandığınız artık SciPy'de farklı bir döndürüş olabilir.
+
+340
+01:32:27,684 --> 01:32:31,224
+SciPy'a onların kendi dokümentasyonuna bakmanız gerekiyor.
+
+341
+01:32:31,344 --> 01:32:34,884
+Ama o kanallardan bir tanesini alabiliyorsunuz bu şekilde.
+
+342
+01:32:36,963 --> 01:32:43,543
+Buna tekrar gireceğiz ama NumPy şöyle çalışmanıza izin veriyor.
+
+343
+01:32:43,543 --> 01:32:47,604
+Mesela bu NumPy dizinin ismi F.
+
+344
+01:32:48,884 --> 01:32:50,724
+İki nokta üst üste ne demek?
+
+345
+01:32:55,423 --> 01:33:07,144
+Sıfırıncı Dimension'daki Dimension'lar da nasıl sayılıyor? Şu taraftan sayılmaya başlıyor diye hatırlıyorum. Emin değilim ona da.
+
+346
+01:33:14,163 --> 01:33:33,503
+Ama şu var, yani bu kanal numarası, channel numarası. Sıfırıncı kanal, 012. Üç tane kanal olduğu için 012 olabilir bu. Sonra tüm satırlar ve tüm sütunlar.
+
+347
+01:33:36,564 --> 01:33:53,064
+Dolayısıyla sıfırıncı kanaldaki tüm satırları ve tüm stünleri al getir buraya ata dedik. Bu ne verdi bize? Gri seviye bir imge verir değil mi? Sonra onu göster diyoruz.
+
+348
+01:34:00,884 --> 01:34:24,884
+Şimdi biz elimizde sayılar var. Yani diyelim ki 300 var, 218 var, 255 var. Neyse. 218'e onu istediğimiz bir renk ile gösterebiliriz. Normalde bu bir...
+
+349
+01:34:25,076 --> 01:34:39,736
+Tek kanallı bir imge olduğu için gri seviye. Normalde bunların hepsi gri olarak gösterilebilir. Ama öyle durumlar oluyor ki gri gösterirseniz hepsini çok iyi görmüyorsunuz.
+
+350
+01:34:40,340 --> 01:35:02,060
+Onun yerine şöyle bir şey isteyebiliyorsunuz. Mesela 218'i ben yeşil göstereyim, 300 ve altını sarı göstereyim, 256, 207'yi kırmızı göstereyim. Ekranda öyle gözüksün, ben öyle anlayayım. Bu işi de Color Map'larla yapıyorsunuz.
+
+351
+01:35:07,956 --> 01:35:22,416
+Color Map ne demek? Hangi değer, sayı değeri hangi renk ile ekranda gösterilecek? Bunu belirliyor. Önceden tanımlı birçok Color Map var.
+
+352
+01:35:29,939 --> 01:35:50,939
+Evet, birisi Saypay'da bulunan İmreit şu anda importlanamıyor demiş. Olabilir. Bu kodu tabii aldığımız kaynak bu Stanford Üniversitesi'nde bir tutorial koymuşlar. Kurulu olduğuna emin misin? Saypay'ı kurmuş muyduk?
+
+353
+01:35:53,652 --> 01:36:03,872
+Onu araştır istersen. Yani onu deprekeyt mi etmişler, ismini mi değiştirmişler? Ne diyorlar?
+
+354
+01:36:08,659 --> 01:36:18,239
+Old Release diyor. İmriyid var burada işte. Deprecated diyor. Niye deprecated etmişler?
+
+355
+01:36:26,579 --> 01:36:45,519
+Bir şey tavsiye ediyor mu? Pili kullanıyormuş zaten. Pil çok popüler bir kütüphane. Yalnız adam bunu update etmeyi bırakmış. O yüzden de pillovu çıkartmışlar. Sanırım gidin pillovu kullanın demek istiyor burada adam.
+
+356
+01:36:49,100 --> 01:36:50,039
+Pil.
+
+357
+01:36:51,604 --> 01:36:58,543
+Pil kütüphanesi update edilmiyor ama çok popüler imge açmak için. O yüzden Pilov'u kullanıyoruz.
+
+358
+01:37:00,543 --> 01:37:08,484
+Pilov kütüphanesini açtığınızda onun dökümantasyonunu okuyabilirsiniz.
+
+359
+01:37:09,304 --> 01:37:13,864
+Pilov kütüphanesiyle okuyabilirsiniz ya da Open CV ile okuyun.
+
+360
+01:37:15,284 --> 01:37:18,864
+Demek ki bu şey geride kalmış, eskide kalmış.
+
+361
+01:37:20,212 --> 01:37:40,452
+Evet. Yani OpenCV ile okuyabilirsiniz ya da Pillow ile okuyabilirsiniz. Dediğim gibi size bir NumPy dizisi veriyor. Her durumda bunlar. Sonra o NumPy dizisi ile uğraşacaksınız artık. Onunla iş yapacaksınız.
+
+362
+01:37:43,283 --> 01:37:53,404
+Color maplarda da işte matplotlib'de tanımlı birçok color maplar var. Burada hat denilen color map'ı kullanmışız.
+
+363
+01:37:55,404 --> 01:37:58,404
+Bakalım matplotlib'de.
+
+364
+01:38:01,908 --> 01:38:04,028
+Color Maps diyelim.
+
+365
+01:38:14,739 --> 01:38:22,839
+Örnek var mı? Mesela evet. Burada bir kısım Viridis, Plasma, Inferno, Magma, Sividis gibi Color Mapları görüyoruz.
+
+366
+01:38:24,299 --> 01:38:28,099
+Grace, Blues falan gibi Color Maplar. Ekranı görüyorsunuz değil mi?
+
+367
+01:38:31,899 --> 01:38:41,579
+Binary vesaire gibi. Hat mesela şu oluyor. Hat ne yapıyor? Sıfıra yakın değerleri siyah veriyor.
+
+368
+01:38:42,100 --> 01:39:07,520
+255'e yakın değerlere beyaz veriyor. Aradaki değerleri de şu değerleri dağıtıyor. İşte diğer Color Map'lar, Cyclic Color Map'lar, HSV. Bazen şunlar işe yarıyor. Mesela bir sürü şeyiniz varsa, önemli olan oradaki değerleri birbirinden ayırt etmekse,
+
+369
+01:39:07,988 --> 01:39:23,048
+Şu tarz bir şey kullanmanız daha çok işe yarayabiliyor. Dolayısıyla buradan bir Color Map seçip, renklerinizi buna göre ne yapabilirsiniz? Ayarlayabilirsiniz.
+
+370
+01:39:28,756 --> 01:39:30,316
+Evet.
+
+371
+01:39:35,923 --> 01:40:00,583
+Sonra Color Bar demeniz gerekiyor ki. Color Bar derseniz Color Map kenarda gözüküyor. O da güzel oluyor. Hangi Color Map'ı kullandığınızı gösterirseniz. Show ile gösteriyorsunuz. Show demezseniz göstermiyor. İlk resmi çizmek bazen sorun olabiliyor Matplotlib'de. Farklı sistemlerde görünüyor, görünmüyor.
+
+372
+01:40:01,108 --> 01:40:09,108
+Bir kısmında bir yerde görünüyor falan. İlk resminizi bir gösterirseniz gerisini göstermeye devam ediyorsunuz.
+
+373
+01:40:11,108 --> 01:40:23,108
+Bir süre uğraştıktan sonra, iş yaptıktan sonra elinizdeki matrisi tekrar bir resme yazmak isteyebiliyorsunuz.
+
+374
+01:40:23,108 --> 01:40:28,108
+O zaman da OpenCV'nin ImWrite fonksiyonunu kullanabilirsiniz.
+
+375
+01:40:30,260 --> 01:40:52,320
+Bazen dosyaya yazarken kaliteyi belirlemeniz gerekebiliyor. Bazı dosya formatları belirli kalitelerde kaydedebiliyor. Bunlar genelde sıkıştırmalı dosya sistemleri, dosya formatları oluyor.
+
+376
+01:40:52,692 --> 01:41:10,692
+Mesela JPEG sıkıştırmaya izin veren bir dosyalama dosya formatı. Dolayısıyla JPEG ile kaydederken ne kadar sıkıştıracağız?
+
+377
+01:41:18,739 --> 01:41:31,659
+Bir kısım veriyi çöpe atıyor JPEG. Sıkıştırma sırasında. Dolayısıyla daha fazla sıkıştırmak isterseniz o sıkıştırıyor ama kaliteyi düşürüyor.
+
+378
+01:41:34,659 --> 01:41:45,659
+Burada şuradaki Q değerini değiştirerek 0 ile 100 arasında değerler vererek OpenCV'de JPEG yazabiliyorsunuz.
+
+379
+01:41:46,387 --> 01:41:50,448
+Değer düştükçe kalitede düşüyor.
+
+380
+01:41:53,327 --> 01:42:02,148
+Biz tabii şeyle çalışırken, Computer Vision'da çalışırken böyle bilgi kaybetmek istemiyoruz.
+
+381
+01:42:02,327 --> 01:42:05,507
+Dolayısıyla kayıpsız formatları tercih ediyoruz.
+
+382
+01:42:06,247 --> 01:42:09,568
+Kayıpsız formatlar ne? PNG mesela.
+
+383
+01:42:10,836 --> 01:42:29,756
+Sıkıştırması olan kayıpsız bir format. Yani sıkıştırmazsanız çok fazla yer kaplıyor. Mesela yanlış hatırlamıyorsam Bitmap sıkıştırılmayan bir format. Dolayısıyla çok fazla yer kaplıyor.
+
+384
+01:42:38,003 --> 01:42:39,923
+Kullanabileceğiniz bir format.
+
+385
+01:42:47,604 --> 01:43:10,684
+Az önce okuduğunuz zaman imge integer olarak geliyor demiştim. Uint8 olarak gelmesi lazım. Bir resmi okuduğunuz zaman data klası Uint8 oluyor ilk okumakta.
+
+386
+01:43:11,155 --> 01:43:38,296
+Onu kontrol etmek lazım. Böyle olabilir diyeyim daha doğrusu. Ne demek? Unsigned Integer 8 bit. 8 bitlik Unsigned Integer tipinde geliyor veri. NumPy'da şu asType çağrısı ile veri tiplerini değiştirebiliyorsunuz. Mesela asType float diyebilirsiniz.
+
+387
+01:43:39,539 --> 01:43:43,480
+x eşittir x as type
+
+388
+01:43:47,475 --> 01:44:02,475
+float derseniz, onu real sayıya çevirmiş oluyorsunuz. Double var mı bilmiyorum burada. Ama float var diye hatırlıyorum. Dolayısıyla...
+
+389
+01:44:06,868 --> 01:44:09,688
+Sonra da float üzerinde çalışabilirsiniz.
+
+390
+01:44:16,659 --> 01:44:42,539
+NumPy çok faydalı. Farklı imge operasyonlarını, imgeyi ters çevirme, bir kısmını alma, bazı satırları seçme, belirli bir satırını seçip gösterme, grafiğini çizme falan gibi.
+
+391
+01:44:43,123 --> 01:45:02,123
+Dünya kadar işi Nampay ile yapabiliyorsunuz. Nampayı Efficient olarak kullanabilmek lazım. Ben şimdi bir cheat sheet indirdim.
+
+392
+01:45:04,123 --> 01:45:05,123
+Dün.
+
+393
+01:45:06,420 --> 01:45:21,779
+Bir ara verelim. Geldiğimizde o cheat sheet üzerinden gidelim. Siz de açıp bir kenarda yapabilirsiniz. Lampayınızı kurmuşsanız sisteminizi gösterdiğim komutlara beraber bakabiliriz.
+
+394
+01:45:23,579 --> 01:45:32,779
+Dediğim gibi bir önemli pakette Matplotlib. Bu ikisini bilmeniz bence faydalı. Matplotlib'de de grafik çizdirebiliyorsunuz.
+
+395
+01:45:34,228 --> 01:45:40,228
+Computer Vision'de, daha doğrusu bilimde grafik çizdirme falan gerekebiliyor.
+
+396
+01:45:40,228 --> 01:45:48,228
+Matplotlib'de çok popüler bir paket güzel şeyler gösteriyor.
+
+397
+01:45:48,228 --> 01:45:53,228
+Galerisi var. Matplotlib galerisine bakarsanız şöyle.
+
+398
+01:46:06,163 --> 01:46:17,884
+Gördüğünüz gibi yapmadığı şey yok. Çeşitli örnekler vermişler. Bu örneklere bastığınız zaman her birinin arkasında kod geliyor.
+
+399
+01:46:21,463 --> 01:46:24,583
+Bunda şey mi ayırmışlar?
+
+400
+01:46:27,043 --> 01:46:32,163
+Heh şöyle. Dolayısıyla her bir grafiği nasıl yaptığınızı
+
+401
+01:46:32,627 --> 01:46:49,268
+Çizdirebileceğinizi, o galeriden gidip bir örnekten yola çıkarak istediğiniz şeyi çizdirebiliyorsunuz. Çok çok kapsamlı gördüğünüz gibi.
+
+402
+01:46:50,627 --> 01:46:58,547
+Şurada üç boyutlu grafikler var. İki boyutlu resimleri, üç boyutlu görüntüleme de bazen işe yarıyor.
+
+403
+01:46:59,539 --> 01:47:16,539
+Yani iki boyutlu var resim ama sonuçta ne bunlar? Değerler. Bu değerleri üç boyutlu yüzeyler olarak görüntülemek bazen faydalı oluyor. Bunu da yapabiliyor. Böyle kapsamlı bir şey.
+
+404
+01:47:18,539 --> 01:47:24,720
+Bir ara verelim. Gelince biraz Python, NumPy onlara bakacağız.
+
+405
+01:47:28,532 --> 01:47:31,212
+10 dakika ara verelim. 11'de başlarız.
+
+406
+01:59:12,372 --> 01:59:13,532
+Merhabalar tekrar.
+
+407
+01:59:20,564 --> 01:59:22,604
+Orada mısınız? Sesim geliyor mu?
+
+408
+01:59:26,228 --> 01:59:27,528
+Merhaba hocam, geliyor.
+
+409
+01:59:28,847 --> 01:59:33,228
+Evet, şimdi...
+
+410
+01:59:52,435 --> 01:59:53,963
+Ne yapıyoruz?
+
+411
+01:59:57,652 --> 02:00:05,652
+Evet, bunu da bitirdik. Bu slide'ı. Biraz NumPy'a bakalım. Python'a, NumPy'a.
+
+412
+02:00:07,652 --> 02:00:20,652
+Evet. Cheat Sheet var demiştik. Buraya linkini koydum. Bunu zaten Dropbox'ta, bu yaptıklarım Dropbox'taki şehrimde sync oluyor.
+
+413
+02:00:21,844 --> 02:00:34,344
+Dolayısıyla oradan direkt bu linki bulabileceğiniz gibi cheat sheet'i oraya indirmiştim. Oradan da bulabilirsiniz. Şu NumPy Python cheat sheet.
+
+414
+02:00:38,100 --> 02:00:41,420
+Bunu yine tabletten açayım.
+
+415
+02:01:19,123 --> 02:01:22,403
+Böyle bir şey yapmışlar. Güzel bir şey yapmışlar adamlar.
+
+416
+02:01:32,851 --> 02:01:46,931
+NumPy ile çalışırken ilk yapmanız gereken NumPy'i import etmek. Genelde de NEP olarak import ediliyor. Import NumPy as NP diyorsunuz. Import ediyorsunuz.
+
+417
+02:01:53,619 --> 02:02:19,880
+Bir boyutlu diziler var, iki boyutlu diziler var, üç boyutlu diziler var. Eksis kavramı var. Eksen. Özellikle diyelim ki minimumu bulacaksınız. Minimumu sıfırınca eksisten bul diyorsunuz. Mesela A diye bir diziniz var diyelim ki. Şöyle bir şey oluyor. Tam birebir hatırlamıyorum da.
+
+418
+02:02:20,532 --> 02:02:30,832
+A min eksis eşittir sıfır dediğinizde size ne döndürecektir?
+
+419
+02:02:32,412 --> 02:02:39,032
+Sıfırıncı eksen yata eksen mi dikey eksen mi oluyor? Onu da karıştırıyorum ama.
+
+420
+02:02:51,796 --> 02:03:16,095
+Emin değilim. Şöyle bir şey döndürebilir. 1,5, 2, 3 gibi. O eksendeki yani eksi sıfır eğer sütunlarsa bu sütundaki minimum, bu sütundaki minimum, bu sütundaki minimum şeklinde düşünebilir.
+
+421
+02:03:17,971 --> 02:03:32,771
+A, min, eksis, bir derseniz o zaman bu satırdaki minimum ve bu satırdaki minimumu getirip o da ne olabilir?
+
+422
+02:03:33,771 --> 02:03:40,092
+2'ye 4 olabilir mesela veya bunun tam tersi.
+
+423
+02:03:43,699 --> 02:03:50,099
+Tabii üç boyuta çıktığınızda bir de eksis iki geliyor. Eksenler gittikçe artıyor.
+
+424
+02:03:53,939 --> 02:04:03,920
+Elinizdeki bir Python listesinden NumPy erayı elde edebiliyorsunuz. Şu şekilde.
+
+425
+02:04:05,460 --> 02:04:11,099
+Bu bir boyutlu dizi. İki boyutlu dizi elde etmek isterseniz
+
+426
+02:04:11,572 --> 02:04:13,572
+Şu şekilde verebiliyorsunuz.
+
+427
+02:04:18,572 --> 02:04:27,572
+Tipini D-type argümanı ile, keyword argümanı ile belirtebiliyorsunuz. D-type, float gibi.
+
+428
+02:04:33,395 --> 02:04:34,395
+Evet, ne diyor?
+
+429
+02:04:35,775 --> 02:04:41,515
+Axis, the first running vertically downwards across rows, axis 0.
+
+430
+02:04:43,015 --> 02:04:45,815
+Yani sütunlar axis 0 mıymış?
+
+431
+02:04:47,775 --> 02:04:51,255
+Öyle gözüküyor. Dikeyler axis 0 gibi gözüküyor.
+
+432
+02:04:52,535 --> 02:04:54,475
+Öyleyse iyi yapmışım galiba.
+
+433
+02:04:56,815 --> 02:04:57,315
+Evet.
+
+434
+02:04:59,604 --> 02:05:09,684
+Benzer şekilde üç boyutlu bir şeyi de şu şekilde yapabiliyorsunuz. Yani bunların örneklerini göstermişler.
+
+435
+02:05:13,043 --> 02:05:27,184
+Elinizde liste halinde veri varsa onları önce NumPy dizisine çevirmeniz gerekiyor ki o şekilde çalışın. Yani bunlar NumPy veriyor size. NumPy dizisi veriyor.
+
+436
+02:05:29,140 --> 02:05:42,680
+Elinizde data yoksa şunlarla hızlı bir şekilde data oluşturabiliyorsunuz. Zero's sıfırlarla dolu bir dizi veriyor. Ones birlerle dolu.
+
+437
+02:05:44,140 --> 02:05:52,699
+E-Range 10'dan 25'e kadar beşer beşer artan sayılarla dolduruyor. Öyle bir dizi veriyor.
+
+438
+02:05:55,283 --> 02:06:05,903
+Yani sıfırdan ikiye kadar dokuz tane sayı veriyor size. Full'u ilk defa görüyorum. Bilmiyorum o yüzden.
+
+439
+02:06:07,403 --> 02:06:20,503
+I birim matris veriyor. Yani I2 ne demek? İkiye ikilik bir birim matris ver demek.
+
+440
+02:06:21,043 --> 02:06:42,903
+Yani 1, 1, 0, 0 verecek bu. I, şu I ile gösterilir ya, onu veriyor. Random değerler veriyor şu. NP random random. Rastgele değerlerle dolduruyor. Şekili 2'ye 2.
+
+441
+02:06:47,828 --> 02:06:53,228
+Veriyor, içini doldurmuyor. İçi çöplük oluyor. Yani hafızada ne varsa onu veriyor.
+
+442
+02:07:00,275 --> 02:07:25,795
+Bunları evde denersiniz. Diskten okuma, diskten yazma. Veri tipleri int64, float32 gibi böyle kaç bit istediğinizi söyleyebiliyorsunuz NumPy'da. Tanımlı int64, float32.
+
+443
+02:07:26,899 --> 02:07:36,039
+Kompleks sayılar, booleanlar, np.object nasıl kullanılıyor tam bilmiyorum. Pek kullanmadım.
+
+444
+02:07:37,219 --> 02:07:49,439
+np.string ve np.unicode da sanırım text ile çalışmak için kullanılanlardır. Onları da pek kullanmadım. Genelde resimlerle çalışmış olduğum için.
+
+445
+02:07:49,439 --> 02:07:53,759
+Esasen yalan söylemeyeyim. Fazla resimlerle de çalışmadım.
+
+446
+02:07:54,228 --> 02:08:17,387
+Kendi master ve doktorumu yaparken MATLAB kullanmıştım. O zamanlar MATLAB çok popülerdi. Python bu işlerde bu kadar popüler değildi. Vardı ama yakın zamanda Python kullanalım diye bir öğrencimle döndük. Bir süredir ufak tefek kullanıyoruz ama sınırlı.
+
+447
+02:08:21,460 --> 02:08:38,019
+Dizinizle ilgili bilgi almak istiyorsanız, A.Shape dizinin boyutlarını veriyor. Length'ini veriyor daha doğrusu.
+
+448
+02:08:46,707 --> 02:09:05,228
+Data Type, veri tipi. Hangi veri tipi? Name de getirirseniz size sanırım bir string falan döndürüyor olabilir. S Type, bunu daha önce görüşmüştük. Bununla ilgili konuşmuştuk. Veri tiplerini birbirine döndürebiliyorsunuz.
+
+449
+02:09:13,587 --> 02:09:38,467
+Yani tabii internetten de araştırabilirsiniz. Şimdi NumPy gibi bir şeyle çalışmanın asıl faydalarından biri şurada ortaya çıkıyor. Matris işlemlerini hiç döngüye gerek kalmadan lineerce bir dersinde gördüğünüz gibi tak yapabiliyorsunuz.
+
+450
+02:09:40,368 --> 02:10:04,908
+A1 mesela 2'ye 3'e matrisse, B de bir 2'ye 3'e matrisse, bunlar tabii NumPy nesnesi olacak. O zaman A-B dediğinizde normal tüm elemanlarını çıkartıyor. Yani matristen matrisi çıkartıyor.
+
+451
+02:10:06,131 --> 02:10:28,131
+Eğer bu B mesela sıkalarsa, bunun çıkarılmasını da biliyor. Yani sıkalarsa o zaman ne yapmam lazım? Diyelim ki bu sadece 2 ise, matris değilse önce bir uygun matris oluşturuyor. Sonra o matristen o matrisi çıkartıyor.
+
+452
+02:10:32,372 --> 02:10:38,032
+NPSubtract demek ki fonksiyon isimleri de varmış böyle operatörlerin.
+
+453
+02:10:49,043 --> 02:11:00,863
+Tabii ki toplama da var. Bölme var. Çarpma var. Bunlar eleman, eleman bölüyor ve çarpıyor.
+
+454
+02:11:01,903 --> 02:11:06,383
+Biliyorsunuz matriz çarpımları ve matriz bölümlerinin özel şekilleri var.
+
+455
+02:11:08,083 --> 02:11:13,863
+Matriz çarpımını nasıl yapıyor? Şununla yapıyor.
+
+456
+02:11:16,275 --> 02:11:16,995
+Şununla.
+
+457
+02:11:20,851 --> 02:11:35,972
+Bu eleman eleman çarpma değil de matriz çarpımı. Bunun yanında trigonometrik şeyler var. Square root, sin, kosinus, logaritma gibi. Square root gibi şeyler var.
+
+458
+02:11:49,011 --> 02:11:57,651
+Yok, bu matlaptaydı değil mi? Sanırım bu şu çalışıyor olması lazım. Üst almak için.
+
+459
+02:12:01,716 --> 02:12:05,155
+Evet, birisi de yazmış oraya.
+
+460
+02:12:12,083 --> 02:12:20,623
+Bunu hatırlamanız lazım. Bu matriz çarpımı, bu Hadamart çarpımı dediğimiz bileşen bileşen çarpımı.
+
+461
+02:12:22,163 --> 02:12:33,304
+Hocam, A çarpı transpor B dersek de matriz çarpımı yapıyor. Yani DAT işleminin aynısını yapıyor. B.T dediğimiz ama.
+
+462
+02:12:34,355 --> 02:12:39,516
+A çarpı, B'nin transpozu derseniz de matiz çarpımı mı yapıyor?
+
+463
+02:12:39,815 --> 02:12:43,235
+Evet, Lampay'da B.T dediğiniz zaman yapıyor.
+
+464
+02:12:43,735 --> 02:12:48,216
+Doğru, transpoz almak için B.T diyoruz. Doğru söylüyorsun.
+
+465
+02:12:48,996 --> 02:12:54,275
+Peki, bunu bilmiyordum. Yazarken daha matematiğe yakın bir şey ama.
+
+466
+02:12:56,756 --> 02:12:57,395
+Evet.
+
+467
+02:13:02,579 --> 02:13:22,400
+Comparison, element-wise comparison, yani A, B'ye eşit mi derseniz size bir matriz döndürüyor. Bileşen bileşen kıyaslıyor. Dolayısıyla bir matriz döndürüyor. Böyle buğlayan elementlere sahip, data tipi buğlayan olan bir şey döndürüyor.
+
+468
+02:13:25,423 --> 02:13:40,724
+İkiden küçük mü dediğiniz zaman da bunu yapıyor. Yani A'nın hangi elemanları ikiden küçük? Onu tak diye çek edebiliyorsunuz. Bu booleanları maske olarak da kullanabiliyorsunuz.
+
+469
+02:13:50,319 --> 02:13:56,719
+İkiden büyük elemanlarına sıfır atamak istiyorsunuz. O zaman şöyle bir şey yapabiliyorsunuz.
+
+470
+02:13:56,819 --> 02:14:08,279
+A, A'da, A küçüktür 2, yani ikiden küçük elemanlar eşittir sıfır diyebiliyorsunuz.
+
+471
+02:14:09,499 --> 02:14:16,459
+A küçüktür 2 size ne veriyor? Şunun gibi bir buğlayan dizisi veriyor.
+
+472
+02:14:17,108 --> 02:14:38,347
+Bu dizideki true olan yerlere sıfıra tanıyor. Bu da çok faydalı bir şey oluyor. Hızlıca matrislerle çalışmak isterseniz. Burada temel amaç bu tarz şeylerde döngü kullanmamak oluyor.
+
+473
+02:14:40,340 --> 02:14:48,899
+Çünkü Python'da döngü pahalı. C'deki gibi, C++'daki gibi değil.
+
+474
+02:15:07,828 --> 02:15:12,088
+For, j, in, range, 3000.
+
+475
+02:15:14,668 --> 02:15:20,188
+If, a, i, j, küçüktür, 2.
+
+476
+02:15:21,088 --> 02:15:26,908
+A, i, j, eşittir, 0.
+
+477
+02:15:27,988 --> 02:15:31,768
+Yazmaktansa şunu yazabiliyorsunuz.
+
+478
+02:15:32,095 --> 02:15:59,375
+Burada iki avantaj var. Bu şekilde yazmak çok daha kolay ve daha anlaşılır olabiliyor. Bir de loop'lar, döngüler Python'da pahalı. Dolayısıyla bu çok çok çok çok daha hızlı çalışıyor. İnanılmaz hızlı çalışıyor. Arada çok büyük bir fark var. Dolayısıyla bu şekilde çalışamıyorsunuz pratikte. Şu şekilde çalışmanız gerekiyor.
+
+479
+02:16:00,564 --> 02:16:06,004
+Dolayısıyla Nampay'ın bu imkanlarını falan öğrenip tak diye kullanabilmeniz gerekiyor.
+
+480
+02:16:17,043 --> 02:16:29,884
+Bunun yanında birçok size gerek bükebilecek istatistiksel şeyler Nampay'da var.
+
+481
+02:16:30,884 --> 02:16:38,123
+Nampay'da yoksa, bakıyorsunuz Nampay'ın kendisinde yoksa çoğu zaman SciPy'da oluyor istatistiksel şeyler.
+
+482
+02:16:39,344 --> 02:16:44,524
+SciPy kütüphanesinde bulabiliyorsunuz veya başka kütüphanelerde bulabiliyorsunuz.
+
+483
+02:16:46,100 --> 02:17:06,340
+NumPy'da Python'da genel olarak esasen ne var? Bunlar Object. Java'daki gibi nesne bunlar. Dolayısıyla bir nesneyi bir nesneyi atadığınızda sadece referansa atanıyor.
+
+484
+02:17:10,772 --> 02:17:28,672
+B eşittir A derseniz ve bu bir NumPy dizisi ise o zaman B A o nesnesine sadece başka bir referans oluyor. Dolayısıyla A'yı değiştirdiğinizde B de değişiyor. B'yi değiştirdiğinizde A da değişiyor.
+
+485
+02:17:30,132 --> 02:17:38,612
+Eğer gerçekten bir kopyasını yapmak istiyorsanız NP copy'yi kullanabilirsiniz. O zaman hakikaten bir kopyasını alıp
+
+486
+02:17:38,672 --> 02:17:58,131
+Ayrı bir hafızada yer veriyor ve onu döndürüyor. Ona bir referans döndürüyor. A kopi de çalışıyormuş sanırım. View o matrise bir görüntü veriyor size. Yeni bir matriz oluşturmuyor.
+
+487
+02:18:06,388 --> 02:18:24,648
+çalışmak istiyorsunuz. Ve burasıyla çalışmak, bu orijinal matris diyelim ki A. A'da burayla çalışmak biraz zor. Onun yerine şöyle yapabilirsiniz. Buraya bir HVV oluşturuyorsunuz.
+
+488
+02:18:25,248 --> 02:18:33,427
+NumPy bundan sonra sizin bunun üzerinde bir matris olarak çalışmanıza izin veriyor. Yani H0.
+
+489
+02:18:36,884 --> 02:18:54,423
+H0'a 0 şurası oluyor. Bu da tabii işinizi kolaylaştırabilir duruma göre. Bunu yaparken hafızada kopyalama yapmıyor. Dolayısıyla hızlı çalışıyor bu işlem.
+
+490
+02:18:59,347 --> 02:19:09,427
+NumPy'de böyle bir şey var. Mümkün olduğunca kopyalama, veri kopyalama yapmaktan kaçınmaya çalışıyorlar.
+
+491
+02:19:10,468 --> 02:19:17,528
+Transpozunu alırken de mesela A'nın transpozu diyorsunuz. A'nın transpozu aslında bir view oluyor.
+
+492
+02:19:18,528 --> 02:19:26,528
+Alttaki veriyi hiç değiştirmiyor. Sadece ne yapıyor? Bu alttaki veriye...
+
+493
+02:19:26,932 --> 02:19:39,492
+Erişmesinde kendisine yardımcı olacak bazı bilgiler var. O bilgileri değiştiriyor. Mesela A'nın stride diye bir şey var.
+
+494
+02:19:41,492 --> 02:19:43,871
+Stride, satır.
+
+495
+02:19:45,780 --> 02:20:03,800
+Uzunluğu gibi düşünebilirsiniz. Daha karmaşık bir şey. Çünkü çok boyutlu verilerle aslında. NumPy çalışabiliyor çok boyutlu verilerle. Yani 10 boyutlu veride de çalışabilirsiniz. O zaman satır sütun değil de artık ne diyeceksiniz 0. boyut, 1. boyut falan demek belki daha mantıklı olabilir.
+
+496
+02:20:05,020 --> 02:20:09,700
+A'nın bir striit'i var. Bir de bilmem nesi var. Birkaç böyle şeyi var.
+
+497
+02:20:10,963 --> 02:20:22,763
+Bunları değiştirdiğiniz zaman NumPy'da, NumPy alttaki hücrelere erişim şeklini değiştiriyor. Hafızayı değiştirmiyor.
+
+498
+02:20:24,043 --> 02:20:36,463
+Bunu yaparak hızlı bir şekilde, çünkü en yavaş şey ne oluyor? Veri kopyalama oluyor. Veri kopyalama yavaş oluyor.
+
+499
+02:20:37,075 --> 02:20:42,275
+Veri kopyalamaya gerek kalmadan farklı view'lar oluşturabiliyorsunuz aynı hafıza bölümüne.
+
+500
+02:20:47,891 --> 02:20:54,912
+Dolayısıyla View'da onu yapabiliyorsunuz. Sort var, sıralama var.
+
+501
+02:21:04,884 --> 02:21:20,344
+Şimdi elemanlara erişim nasıl oluyor? Şimdi A2 dediğinizde iki numaralı elemana geliyoruz. 0, 1, 2 numaralı eleman.
+
+502
+02:21:22,184 --> 02:21:31,763
+1, 2 dediğinizde ne oluyor? 0, 1. eleman. 0, 1. ikinci sütun.
+
+503
+02:21:33,427 --> 02:21:34,907
+Bir, iki.
+
+504
+02:21:37,487 --> 02:21:41,247
+Bu şekilde erişebiliyorsunuz.
+
+505
+02:21:48,180 --> 02:21:57,180
+Çok boyutlu bir dizide tek indeks kullanırsanız size satırı veriyor.
+
+506
+02:21:57,180 --> 02:22:09,299
+Yani aslında mesela B1 dediğinizde size neyi verecektir?
+
+507
+02:22:11,240 --> 02:22:13,780
+B0 dediğinizde diyelim.
+
+508
+02:22:14,227 --> 02:22:40,507
+B0 verdiğinizde size şu satırı verecektir. Çok iki boyutlu dizide. Dolayısıyla bir satırı olduğu gibi lag diye alabiliyorsunuz. Böyle tek indeks kullandığınızda. Ama tabii bu boyuta göre değişiyor. Mesela üç boyutlu bir dizide B1 dediğinizde size bir matriz veriyor o sefer. Yani ona dikkat etmeniz lazım.
+
+509
+02:22:42,963 --> 02:23:07,884
+Slicing diye bir şey var. Bu tabii ki çok çok faydalı. Şu operatör slicing operatörü. Diyorsunuz ki sıfırdan ikiye kadar olan elemanları ver. Yalnız Python'un slicinginde son yazdığınız indis alınmıyor. Böyle bir enteresanlık var. Matlab'dan farklı bu. Matlab'da son eleman da verilir.
+
+510
+02:23:08,819 --> 02:23:17,779
+Sıfırdan başlıyor. Bu size neyi verecek? Sıfırıncı ve birinci elemanları verecek. İkinci elemanı vermiyor.
+
+511
+02:23:20,659 --> 02:23:25,379
+Dolayısıyla şurada yazılan ve şurada yazılan eksi bir.
+
+512
+02:23:31,763 --> 02:23:55,123
+İndisler böyle gidiyor. Slicing'i çok boyutlu dizilerde de kullanabiliyorsunuz. Ne demek bu? Mesela şu dimension'da sıfırdan ikiye kadar olanları istiyorum. Şu dimension'da da birinciyi istiyorum. Ne veriyor size? Bu dimension sütunları veriyormuş.
+
+513
+02:23:56,115 --> 02:24:17,635
+Yani sıfır ve bir. Ve bir dene sıfır bir olduğu için şu sütün. Bu sütunda bu satırlar olmuş oluyor.
+
+514
+02:24:22,708 --> 02:24:30,067
+Ben çok karıştırabiliyorum. Sütunları, satılları falan. Onları hemen bir komut satırında denemen falan gerekebiliyor arada.
+
+515
+02:24:32,488 --> 02:24:37,208
+Slicing'de eğer baştaki değeri yazmazsanız sıfır anlamına geliyor.
+
+516
+02:24:38,828 --> 02:24:43,688
+Sondaki değeri yazmazsanız sonuna kadar anlamına geliyor.
+
+517
+02:24:46,688 --> 02:24:49,907
+Dolayısıyla onu kullanabiliyorsunuz.
+
+518
+02:24:51,443 --> 02:25:03,223
+Şu operatörü ilk defa görüyorum. Bu ne demek? Birinci satırı al. Şu hepsini al demek mi oluyor? Üç nokta ne acaba?
+
+519
+02:25:07,028 --> 02:25:32,228
+Şey diyor. Bir, geri kalan satırların ve sütunların hepsini al demek oluyormuş. Yani burada elimizde üç boyutlu bir dizi var anlaşılan. Üç boyutluysa dizi, diyorsun ki bunu alacağım. Bir bu. Ve geri kalan ne varsa hepsini alacağım diyorsun.
+
+520
+02:25:37,747 --> 02:25:39,747
+NumPy'de şöyle gidiyor bu.
+
+521
+02:25:47,507 --> 02:25:49,048
+En dıştaki
+
+522
+02:25:52,435 --> 02:26:07,115
+Onun içindeki ve onun içindeki gibi böyle iç içe diziler var gibi düşünebilirsiniz. İç içe diziler var gibi düşünebilirsiniz.
+
+523
+02:26:10,695 --> 02:26:19,155
+İlki en dıştaki oluyor. Ben öyle anlıyorum ama emin de değilim. Sonra ikincisi şu.
+
+524
+02:26:19,615 --> 02:26:24,475
+Bir içteki oluyor. Bir üçüncüsü de onun içindeki oluyor.
+
+525
+02:26:24,475 --> 02:26:25,315
+İndiz.
+
+526
+02:26:27,296 --> 02:26:28,775
+Sanırım böyle.
+
+527
+02:26:35,059 --> 02:26:58,399
+Dolayısıyla buna göre düşünebilirsiniz. Mesela C, 1 ve geri kalanının hepsini nasıl anlayabiliriz? Şurada bir tane daha olabilir. Bu sıfırıncısı, bu birincisi. Bunu getir, bunun içerisindekilerin hepsini getir falan gibi düşünebilirsiniz.
+
+528
+02:27:01,811 --> 02:27:10,511
+Bir soru vardı geçen derste. PyCharm niye çok kullanılmıyor hocam falan demişti birisi.
+
+529
+02:27:12,811 --> 02:27:17,191
+Şeyler denemeyi görmeyi çok kolaylaştırıyor.
+
+530
+02:27:17,191 --> 02:27:19,191
+Spider gibi.
+
+531
+02:27:21,120 --> 02:27:37,140
+Bu tarz slicing nasıl çalışıyor ya falan neydi ne değildi hemen orada bir komut satırı oluyor. Tak orada deneyi veriyorsunuz, görüyorsunuz sonra devam ediyorsunuz. Bu tarz çalışmalarda emin olmayı çok kolaylaştırıyor sistemler.
+
+532
+02:27:41,236 --> 02:27:53,636
+Bu olan indexing'den bahsettim az önce. Fancy indexing demiş. Fancy indexing onu ne demek istemiş burada?
+
+533
+02:27:58,675 --> 02:28:03,675
+Yani şunu demek istiyor. Mesela...
+
+534
+02:28:12,244 --> 02:28:36,543
+Birinci satırı istiyorum. Nasıl bu ya? Bunu anlamadım. Select elements 1 0 0 1 1 2 and 0 0 diyor. Yani şu mu? 1 0 0 1 1 2
+
+535
+02:28:38,388 --> 02:28:57,668
+Sıfır, sıfır. Değil mi? Bu elemanları seçebiliyorsunuz diyor. Peki bunu nasıl döndürüyor size? Tek boyutlu bir dizi içerisinde döndürüyormuş. Evet, yani bu şekilde belirli elemanları birden fazla belirli elemanı tak diye seçebiliyorsunuz.
+
+536
+02:29:02,131 --> 02:29:17,291
+Bu neymiş? Deminkine benziyor gibi ama burada şu var. Select a subset of the matrices, matrix, rows and columns. Burada bir subset seçiliyor.
+
+537
+02:29:20,871 --> 02:29:22,572
+Birinci satır.
+
+538
+02:29:29,299 --> 02:29:33,439
+Evet, bunu tam anlayamıyorum şu anda. Ne diyor bu arkadaşlar? Şuna işe yarıyor.
+
+539
+02:29:43,796 --> 02:29:44,976
+B'nin içinde
+
+540
+02:29:49,043 --> 02:30:14,603
+Ha şu bitiyor mu? Şu B şurada bitiyor galiba. Evet. Evet, bu B burada bitiyor. Dolayısıyla şu diyelim ki ne yaptı? Bir şey döndürdü size, bir matris döndürdü. O matrisin üzerinde tekrar bir bölüm seçmeye devam edebiliyorsunuz. Dolayısıyla bu ne oluyor?
+
+541
+02:30:15,956 --> 02:30:39,115
+Birinci satır, sıfırıncı satır. Birinci satırı tekrar kullandı. Sıfırıncı satırı tekrar kullandı. Satır numaraları. Önce onları bir aldı, sonra onların hepsini dedi. O bir view oluşturdu ya.
+
+542
+02:30:40,308 --> 02:30:51,048
+O satırların hepsini, yani burada seçtiği satırların hepsini demek istedi. İndekslemeye devam edebiliyorsunuz yani. Orada sıfırıncı sütün.
+
+543
+02:30:54,995 --> 02:31:02,396
+Birinci sütun, ikinci sütun ve sıfırıncı sütunu tekrar istedi. Sıfırıncı sütun tekrar etti bakın.
+
+544
+02:31:07,056 --> 02:31:16,255
+Şuradaki farkını göstermeye çalışıyor. Burada tek tek, çok benziyor, sayılar çok benziyor. Bir tek şurası farklı, dikkat edersiniz.
+
+545
+02:31:17,556 --> 02:31:22,315
+Burada tek tek sayılar gelirken, şurada bir matriz döndü.
+
+546
+02:31:23,476 --> 02:31:29,056
+Şunu yapmak isterseniz böyle bir şey yapmanız gerekiyor demek istiyor anladığım kadarıyla.
+
+547
+02:31:44,819 --> 02:31:55,739
+Evet, transposing Array demiş. Array manipülasyonu. Transpozunu almak bu şekilde yapılıyor.
+
+548
+02:31:56,959 --> 02:32:08,459
+Ravel kaç boyutlu olursa olsun onu size tek boyutlu olarak döndürüyor. Tek boyutlu bir Array'e dönüştürüyor. Satır satır koyuyor yan yana.
+
+549
+02:32:09,716 --> 02:32:15,616
+Rişeyip ile de istediğiniz boyuta ne yapabiliyorsunuz? Tekrar şekillendirebiliyorsunuz madrize.
+
+550
+02:32:29,780 --> 02:32:32,700
+Eksi 2 niye demiş? Bunu tam anlayamadım ama.
+
+551
+02:32:37,299 --> 02:32:40,180
+Re-Shape'e bakarsınız olmazsa.
+
+552
+02:32:42,000 --> 02:32:43,280
+Resize.
+
+553
+02:32:44,860 --> 02:32:52,240
+Şimdi NumPy dizileri arkadaşlar biraz C dizilerine benziyor.
+
+554
+02:32:54,240 --> 02:32:54,720
+Hafızada.
+
+555
+02:32:58,227 --> 02:33:23,687
+Bölütlenmeyen tek bir hafıza alanı alıyorlar. Nampay dizileri. Yani hepsi tek bir alan. Bir de Nampay listeleri var. Bunlar sanırım şey olmayabiliyor. Hafızada tek bir alan olmayabiliyor. Yani listelerin içerisinde başka listeler olabiliyor falan.
+
+556
+02:33:24,180 --> 02:33:46,420
+Dolayısıyla bunlar işte esasen referans olabiliyor. Burada başka nesnelere referanslar olabiliyor, bir şeyler olabiliyor. NumPy dizisi öyle değil. Bildiğiniz yan yana intijörleri koyuyor. C'deki gibi.
+
+557
+02:33:48,979 --> 02:34:15,020
+Evet, yani NumPy Array'de içinde aynı türde şeyler olması gerekiyor. Hepsi integer olması gerekiyor. List'te ise içeriye ne bulursanız atabiliyorsunuz. Neden böyle bir şey yapmış NumPy? Hız, optimizasyon yapabilmek için çok daha hızlı çalışabiliyor. Arka planda zaten C kullanıyor.
+
+558
+02:34:15,763 --> 02:34:23,903
+Yani siz bir NumPy'de bir şey minimum falan dediğinizde arkada bir kısım C kütüphaneleri çalışıyor.
+
+559
+02:34:26,484 --> 02:34:28,443
+Diye biliyorum.
+
+560
+02:34:29,263 --> 02:34:35,603
+Şimdi böyle olunca yeniden boyutlandırma pahalı bir işlem.
+
+561
+02:34:36,603 --> 02:34:38,475
+Dolayısıyla mesela...
+
+562
+02:34:38,548 --> 02:35:03,427
+Bir dizimiz var, altına bir satır daha ekleyelim, sonra üstüne bir satır daha ekleyelim, altına bir satır daha ekleyelim falan derseniz bu pahalı oluyor. Onun yerine yapmanız gereken şu oluyor. İşin başında kaç satır lazım bana? Bunu hesaplıyorum. Onu bir oluşturuyorum. Sonra içine satır satır yazıyorum.
+
+563
+02:35:05,620 --> 02:35:17,500
+Küçük bir satır oluşturduğunuzda, yeni bir satır eklemek istediğinizde, hafızanın o bölgesinde yeterli yer yoksa, işletim sistemi ne yapmak zorunda kalıyor?
+
+564
+02:35:19,159 --> 02:35:26,540
+Bu ikisinin de sığabileceği büyük bir alan bulup, sonra da bunun içeriğini oraya tek tek kopyalamak zorunda kalıyor.
+
+565
+02:35:28,540 --> 02:35:30,240
+Bu da tabii ki pahalı bir işlem değil mi?
+
+566
+02:35:34,772 --> 02:35:59,952
+Dolayısıyla ne yapmanız gerekiyor? Böyle Resize falan yapmamaya çalışın. Append falan yapmamaya çalışın. Mecbur kalırsanız veya hız önemli değilse yapabiliyorsunuz. Ama şu da öyle. Vertical Stack, Horizontal Stack, Concatenate, bütün bunlar yapabiliyorsunuz. Yani yan yana, dik dikey, dikey dikey.
+
+567
+02:36:02,772 --> 02:36:24,212
+Matrisleri, arrayleri yerleştirebiliyorsunuz. Ama hız için tavsiye edilmiyor. Splitting Array istemiş. Horizontal ve Verstical olarak split edilebiliyormuş. Bunları çok kullanmadım. Şu VStack ve HStack'ı kullanmam gerektiği oldu.
+
+568
+02:36:27,507 --> 02:36:40,327
+Ama dediğim gibi esasen çoğu zaman yapmanız gereken şu oluyor. En sonunda kaç satır, kaç sütün neye ihtiyacınız varsa ona hesap edip onu kullanmanız gerekiyor.
+
+569
+02:36:41,167 --> 02:36:54,227
+Böyle bir şey var. The NumPy Cheat Sheet. Buna bakmış olduk. Şu anda da ona bakabilirsiniz.
+
+570
+02:36:56,819 --> 02:37:14,880
+Ufak bir uygulama yapmaya çalışalım beraber. Bir resim açmaya çalışalım. Göstermeye çalışalım. Sonra da ödeviniz olacak. Ödevler Dok2'si var burada.
+
+571
+02:37:20,852 --> 02:37:25,972
+Bu tabii geçen yıldan kaldığı için bir kısım bilgiler bunda geçerli değil.
+
+572
+02:37:28,912 --> 02:37:33,372
+Geçen yıllardan kaldığı için. Şu yükleme adresi de geçerli değil.
+
+573
+02:37:33,372 --> 02:37:38,072
+Ben yükleme adresini tekrar buraya yazarım, yeni yükleme adresini.
+
+574
+02:37:39,612 --> 02:37:44,072
+Bu dokümanı zaten paylaştım sizinle. Paylaşından görebilirsiniz.
+
+575
+02:37:46,708 --> 02:38:10,708
+Burada 6 tane ödev vermişim o yıl. Şimdi ödevlerde şöyle bir şey yapacağım. Ödevleri 5 gün sonraya son tarih koyacağım. 6. günde yükleyebileceksiniz ama %20 kaybedeceksiniz. 7. günde ders olacak.
+
+576
+02:38:15,540 --> 02:38:42,139
+Hatta bir gün daha öne alabilirim. Yani amacım dersten önce, bir gün önce yüklerseniz, dersten önce ben de göz gezdirebilirim ödevlerinizi. Derste konuşabiliriz. Amacım bu. Dolayısıyla bir hafta süre vermeyeceğim. Yani dört gün ya da beş gün vereceğim. Ona göre haberiniz olsun şimdiden. İş sıralaması yaparken bu ödevi hemen yapıvermeyi düşünün.
+
+577
+02:38:43,283 --> 02:39:07,884
+Dediğim gibi ödev burada olacak. Ödev 1. Şunu anlamadım. Bunu yapan bir program yazacaksınız. Programı bana göndereceksiniz. Dropbox'tan yükleyeceksiniz. Birden fazla dosya varsa zipleyin, öyle yükleyin.
+
+578
+02:39:08,884 --> 02:39:15,543
+Python olsun. Başka şeyle uğraştırmayın beni. Tamam.
+
+579
+02:39:22,772 --> 02:39:50,172
+Hocam bu dokümanları yüklediniz mi? Ben göremiyorum da. Yükledim. Yeniden bir şey yapsanız, Ödevler Docx Infobase'in yerini değiştirdim yalnız. Bilgisayarla görüp paylaşım için de, Subjects'in için de. Hatta şunu da buraya atayım karışmasın, her şey burada olsun.
+
+580
+02:39:51,956 --> 02:40:04,835
+Pay olarak gönderin. IPyNB, tamam IPyNB'yi de kabul edeyim. Pay ya da IPyNB'yi kabul ediyorum.
+
+581
+02:40:08,275 --> 02:40:09,556
+Evet.
+
+582
+02:40:16,468 --> 02:40:22,328
+Mesela, komut satırını açayım.
+
+583
+02:40:26,260 --> 02:40:30,340
+Dropbox linkini tekrar paylaşır mısınız? Demiş tabii ki.
+
+584
+02:40:34,804 --> 02:40:36,263
+Bu ödevler.
+
+585
+02:40:51,891 --> 02:41:19,231
+Dropbox linkini paylaştım. Ben buraya şimdi bir Python environment'ı kurdum, açtım. Spider'ı açayım. İdare eder bir editör. Esasen Visual Studio Code ile kodlama yapmayı daha çok seviyorum ama yazdığını çalıştırmada bu çok daha iyi.
+
+586
+02:41:26,388 --> 02:41:29,468
+Burada yeni bir şey açalım.
+
+587
+02:41:31,508 --> 02:41:33,308
+Kaydedelim.
+
+588
+02:41:46,227 --> 02:41:54,107
+Bunu da demo 1 olarak mesela isimlendirelim. Demo 1.
+
+589
+02:41:54,107 --> 02:41:56,107
+Topla pay diyelim.
+
+590
+02:41:59,891 --> 02:42:06,851
+Hocam Dropbox linki gelmedi demiş. Enteresan. Niye oldu? Özel mesaj mı göndermiştiniz siz bana?
+
+591
+02:42:08,471 --> 02:42:11,891
+Ha evet öyle olmuş saniye. Everyone demem gerekiyormuş.
+
+592
+02:42:13,112 --> 02:42:16,331
+Tamam sanırım [öğrenci] arkadaşınız herkese gönderdi.
+
+593
+02:42:18,452 --> 02:42:22,652
+Evet ben bir şekilde private mesaj göndermişim bir arkadaşınıza.
+
+594
+02:42:25,523 --> 02:42:31,923
+Evet, şimdi bir imge okumayı deneyelim. Burada var mı imge? Demo payın olduğu yerde.
+
+595
+02:42:34,183 --> 02:42:50,963
+Var. Mesela PCB TIF var mesela. Import CV2 diyeceğim önce. Her şeyden önce bunu bir deniyorum. Bakalım CV2 kurulu mu?
+
+596
+02:42:54,772 --> 02:43:02,871
+Kurulu değilse ben bunu import edemeyeceğim diyecektir. Sıkıntı çıkartmadı. Herhalde kurulu. Bir şey de print etmediğimiz için.
+
+597
+02:43:02,871 --> 02:43:10,592
+Print down diyelim buraya. Evet, down dedi. Sıkıntı yok.
+
+598
+02:43:22,291 --> 02:43:23,791
+İm-read.
+
+599
+02:43:27,443 --> 02:43:38,243
+Neydi bunun ismi mesela? pcb.tif. Önce daha basit bir şey olalım. Tif olduğu için tif daha karışık bir şey olabiliyor.
+
+600
+02:43:45,747 --> 02:43:47,724
+Lennatürü Bitmap.
+
+601
+02:44:01,299 --> 02:44:22,259
+Evet, burada da hata görmedik. Şimdi bunu göstermeye çalışacağım. F bir Python. F'in ne olduğunu şuradan bak. Hemen şuradan devam edebiliyorum denemeye sanırım. F şey diyeyim. 480'e 512'ye 3 diyor.
+
+602
+02:44:23,667 --> 02:44:29,507
+Yani 480 satır, 512 sütün, 3 tane de kanalı var.
+
+603
+02:44:31,147 --> 02:44:41,027
+Altta hemen deneyebiliyorsunuz. Bu tarz şeyleri bu yüzden seviyoruz. Bilim adamları bu tarz çalıştıkları için çok fazla.
+
+604
+02:44:42,407 --> 02:44:47,587
+Hemen deneyi vermek istedikleri için indeksleri şunu bunu. Bu komut satırları hoş oluyor.
+
+605
+02:44:50,195 --> 02:45:05,396
+CV2 İmşov. Burada direkt title galiba bu. Title diyelim.
+
+606
+02:45:12,435 --> 02:45:18,076
+Efi koyduk. Bunu çalıştırdığımızda sanırım hemen açılıp kapanacak bu.
+
+607
+02:45:23,924 --> 02:45:24,924
+Belki de açılıp...
+
+608
+02:45:24,924 --> 02:45:26,024
+Çok hızlı hocam.
+
+609
+02:45:27,024 --> 02:45:31,204
+Evet, veya böyle bir sorun oldu.
+
+610
+02:45:31,644 --> 02:45:34,463
+İlk imgeyi çalıştırırken uğraşmanız gerekebiliyor.
+
+611
+02:45:34,783 --> 02:45:35,884
+İlk imgeyi görürken.
+
+612
+02:45:36,963 --> 02:45:40,764
+Python'da böyle bir değişik sistemlerde farklı çalışabiliyor.
+
+613
+02:45:40,764 --> 02:45:43,344
+Onu ne yapıyoruz?
+
+614
+02:45:43,924 --> 02:45:44,963
+CV2
+
+615
+02:45:44,963 --> 02:45:46,844
+Wait
+
+616
+02:45:46,844 --> 02:45:47,804
+K
+
+617
+02:45:47,804 --> 02:45:49,444
+0
+
+618
+02:45:51,827 --> 02:46:00,887
+cv2 destroy all windows dedik. Deneyelim.
+
+619
+02:46:02,887 --> 02:46:16,948
+Bir dakika. Evet bu sefer Lena'yı görebildik. Üzerine tıklayınca da veya bir şeye basınca keyboard'tan ne oldu? Kapandı.
+
+620
+02:46:17,971 --> 02:46:20,531
+Matplotlib'de göstermeye çalışalım.
+
+621
+02:46:27,636 --> 02:46:30,056
+Görebiliyor musunuz yazdıklarımı?
+
+622
+02:46:36,371 --> 02:47:01,991
+Evet, bu kısmına gerek yok. Sonuçta bunu CV2 ile okuduğumuz için ImShow diyeceğiz. PLT ImShow diyeceğiz bu sefer. Şunu istemiyoruz. McPlotlib ile göstermek istiyoruz. Dağını da en son print edebilir. Deneyelim.
+
+623
+02:47:03,924 --> 02:47:09,204
+Şimdi bu şeye, şurada Plots diye bir şey var, burada gösteriyor.
+
+624
+02:47:11,424 --> 02:47:20,104
+Matplotlib. Şurada Color Bar'ı koymuş. Color Bar. Color Map'ı gösteriyor bu Color Bar.
+
+625
+02:47:21,164 --> 02:47:28,024
+Ve Hot Color Map'ını kullandık. Renkler de bu şekilde ayarlanmış. Az önce gri seviyeydi hatırlarsınız.
+
+626
+02:47:30,420 --> 02:47:39,939
+Gerisi artık NumPy. Yani şuraya geldikten sonra, NumPy matrisi elde ettikten sonra gerisi NumPy.
+
+627
+02:47:41,559 --> 02:47:43,420
+Evet, sorunuz var mı?
+
+628
+02:47:51,603 --> 02:48:10,263
+Tamam. O zaman ödevleri dediğim gibi ayarlayacağım birazdan. O ödevler.docx'in içine yazarım yükleme adresini. Oraya dört veya beş gün sonra yüklüyorsunuz. Tamam. Herkese iyi günler diliyorum.
+
+629
+02:48:11,923 --> 02:48:14,484
+İyi günler hocam sağ olun. Görüşmek üzere hocam.

@@ -1,0 +1,1403 @@
+1
+00:05:53,012 --> 00:05:55,572
+Evet, günaydın arkadaşlar. Sesim geliyor ama.
+
+2
+00:05:57,372 --> 00:05:58,771
+Günaydın hocam, sesim geliyor.
+
+3
+00:06:04,244 --> 00:06:09,544
+Günaydınlar. Şimdi nerede kalmıştık, ne yapıyorduk?
+
+4
+00:06:31,187 --> 00:06:32,327
+Vision'da
+
+5
+00:06:38,132 --> 00:06:40,771
+Dren Network'lere biraz bakıyorduk.
+
+6
+00:06:57,843 --> 00:07:01,163
+Temel Nöral Network mantığını görmüştük.
+
+7
+00:07:04,468 --> 00:07:17,028
+Bir Neural Network'ün katmanlarında Backward Propagation formülleri nasıl bulunur? Görmüştük.
+
+8
+00:07:21,427 --> 00:07:47,028
+Bu formüller yalnız pratikte pek bulunmuyor değil mi? Yani PyTorch gibi, TensorFlow gibi şeyler, frameworkler. Bu formülleri bu kendinizin bulmanızı gerektirmeyecek şekilde ayarlanmış. Dolayısıyla aslında pratikte biraz daha az teorik.
+
+9
+00:07:48,339 --> 00:07:53,339
+Onların hazırladığı katmanları, yapıları kullanırsanız...
+
+10
+00:07:59,540 --> 00:08:17,460
+Her yapı, her katman kendi şeyiyle geliyor zaten. Bilgisiyle geliyor. Dolayısıyla o bilgi içerisinde formüller oluyor. Formüllerin tüve alınabiliyor. Sistem kendisi alıyor.
+
+11
+00:08:21,076 --> 00:08:28,916
+Şimdi bugün Convolutional Neural Network'lere bakalım.
+
+12
+00:08:32,851 --> 00:08:52,131
+Convolutional neural networkler çok çok yeni değil esasen. Bu Ian Lecun uzun zamandır çalışıyordu. Çalışıyormuş buna. Ian Lecun ve arkadaşları.
+
+13
+00:08:54,899 --> 00:09:05,299
+Derin öğrenmeden önce ortaya çıkan bir şey yani. Derin öğrenme ortaya çıkmadan yani Lecun ve arkadaşları konu oluşturuyorlarla çalışıyorlarmış.
+
+14
+00:09:09,139 --> 00:09:27,159
+Derin öğrenme ile derin öğrenmenin yapılabileceği anlaşılınca insanlar farklı neural networkleri derin haline getirmeye başlamışlar.
+
+15
+00:09:29,100 --> 00:09:31,539
+Bunlardan bir tanesi de konu oluştu.
+
+16
+00:09:37,076 --> 00:09:43,596
+Şu anda da en popüler, en çok kullanılan networklerden biri. Anladığım kadarıyla.
+
+17
+00:09:47,508 --> 00:10:13,368
+Şimdi şu görüntü normal bizim şeyimiz, şimdiye kadar gördüğümüz neural network. Bir imge düşündüğünüzde, imgeyi bir vektöre çevirdiğinizde, 200 çarpı 200'lik bir imge olduğunuzu düşündüğünüzde, küçük bir imge.
+
+18
+00:10:14,803 --> 00:10:18,124
+Ne yapıyor? 40 bin tane piksel oluyor oradan.
+
+19
+00:10:18,903 --> 00:10:29,403
+200 çarpı 200. 40 bin tane piksel. Her piksel, her pikselden gri seviye olduğunu düşünelim. Renkli resim değil. Bir tane bilgi geliyor.
+
+20
+00:10:33,483 --> 00:10:36,043
+Ve ne oluyor? Bu...
+
+21
+00:10:44,755 --> 00:10:46,295
+Bunların her biri
+
+22
+00:10:55,827 --> 00:11:14,827
+O bağlı bulunduğu katmandaki her bir kat sayıyla çarpılacak. Dolayısıyla her biri için bir veyt parametresi var. Şunun bir veyti var, bunun bir veyti var. Bu şekilde...
+
+23
+00:11:17,491 --> 00:11:24,351
+Şurada kaç tane olduğunu yazmamış ama burada mesela yaklaşık 2 milyar parametre var demiş.
+
+24
+00:11:27,411 --> 00:11:39,351
+Resim işleme gibi tekniklerde baya başka katmanların da olduğunu düşünürseniz çok fazla parametre var.
+
+25
+00:11:40,471 --> 00:11:43,351
+Çok fazla çarpım var, hesaplamalar var.
+
+26
+00:11:44,019 --> 00:12:04,279
+Backpropagation'ı düşünün. Ve bu pratikte tekrar tekrar yani çok fazla veri kullanılması gerekiyor ya da verinin tekrar tekrar verilmesi gerekiyor.
+
+27
+00:12:13,043 --> 00:12:33,723
+Bu tür Fully Connected Layer'a yani tümden bağlı, tüm girdiler, tüm giriş üniteleri, tüm çıkış ünitelerine bağlı. Bu yüzden Fully deniliyor, Fully Connected.
+
+28
+00:12:41,172 --> 00:12:46,772
+Spatial Correlation Local demiş.
+
+29
+00:12:46,772 --> 00:12:51,172
+Burada ne demek istemiş onu anlamadım.
+
+30
+00:12:51,172 --> 00:12:56,772
+Şimdi buna karşı bir fikir,
+
+31
+00:12:56,772 --> 00:13:04,172
+Locally Connected Layer denilen bir yapı.
+
+32
+00:13:12,563 --> 00:13:17,355
+Şu lokalasyondaki, şu lokasyondaki, bu bölgedeki...
+
+33
+00:13:27,539 --> 00:13:48,779
+Girişler, bu girişlerle ilişkili olan bir çıkış ünitesiyle bağlı. Şuradakiler bir başka çıkış ünitesine bağlı.
+
+34
+00:13:55,988 --> 00:13:56,828
+Neyi var?
+
+35
+00:14:05,427 --> 00:14:13,748
+Çıkış Ünitesi var. Bunlara Local Connections deniliyor. Lokal bağlantı.
+
+36
+00:14:15,788 --> 00:14:27,748
+Tabii full olmadığı için buradaki bağlantı sayısı tabii ki daha az.
+
+37
+00:14:31,028 --> 00:14:41,628
+40.000 hidden unit varsa diyor, 200 çarpı 200'lük bir imgede 40.000 giriş ünitesi olur.
+
+38
+00:14:44,327 --> 00:14:49,528
+Kullandığınız filtre boyutu da 10 çarpı 10 ise 4 milyon parametre olur diyor.
+
+39
+00:14:58,196 --> 00:15:04,196
+Yüz tanıma gibi alanlarda başarılıymış.
+
+40
+00:15:12,628 --> 00:15:22,628
+Bu locally connected layer'da şimdiye kadar. Yani her bir çıkış ünitesinin...
+
+41
+00:15:27,635 --> 00:15:30,715
+Her bir giriş bölgesi var gibi.
+
+42
+00:15:39,028 --> 00:15:42,028
+Bunun bir farklı ileri aşaması...
+
+43
+00:15:45,748 --> 00:16:01,748
+Convolutional Layer oluyor. Convolutional Layer da şöyle düşünülüyor. Biz bu çıkış imgesi, çıkış nöronu...
+
+44
+00:16:04,980 --> 00:16:16,620
+Lokal olarak hem şu bölgeye bağlansın, aynı zamanda lokal olarak bu bölgeye de bağlansın. Lokal olarak şu bölgeye de bağlansın şeklinde.
+
+45
+00:16:20,620 --> 00:16:24,620
+Bir yapısı var convolutional layer'ın.
+
+46
+00:16:34,323 --> 00:16:45,523
+İmge'nin hepsinin üzerinde geziyor. Fakat hep lokal bağlantılı.
+
+47
+00:16:53,203 --> 00:16:57,303
+çıkış üniteleri diyelim. Mesela sen yani bir grup çıkış üniteleri.
+
+48
+00:17:05,044 --> 00:17:20,284
+Tabi bu iş nasıl yapılabiliyor? Konvolüsyon ile yapılıyor. Filtre, kernel öğreniliyor. Kernel parametreleri öğreniliyor.
+
+49
+00:17:29,940 --> 00:17:54,740
+arasında paylaşılabiliyor. Tek konvolüsyon filtresi tüm imge üzerinde çalıştığı için imgenin her pikselini bir giriş olarak düşünün.
+
+50
+00:17:57,140 --> 00:18:18,820
+İmge, tüm imge aynı parametrelere cevap vermiş oluyor. İmgenin aynı parametreler için cevabını ortaya çıkarmış oluyoruz. Dolayısıyla bu parametreler imgedeki tüm pikseller tarafından paylaşılmış oluyor.
+
+51
+00:18:24,692 --> 00:18:35,251
+Pratikte bildiğimiz konvolüsyona çok benzer bir şekilde çalışıyor. Elimizde bir konvolüsyon körneli var.
+
+52
+00:18:40,915 --> 00:18:54,435
+Bu konvolüsyon kernel'ı, pardon, konvolüsyon kernel'ı şurada gösteriliyor. Üçü üçlük pencere şeklinde. Buradaki sonuç çıktı imgesi.
+
+53
+00:18:56,835 --> 00:19:07,435
+Girdi imgesi üzerinde konvolüsyon kernel'ı gezdiriliyor. Gezdirdikçe, pencere kaydıkça,
+
+54
+00:19:08,115 --> 00:19:09,496
+Tam merkezinde
+
+55
+00:19:14,355 --> 00:19:23,316
+Bu konvolüsyon sonucu yazılıyor.
+
+56
+00:19:29,044 --> 00:19:31,604
+Bu şekilde ne yapılabiliyor?
+
+57
+00:19:36,019 --> 00:19:37,639
+Tüm...
+
+58
+00:19:40,948 --> 00:19:42,988
+İmgenin konvolüsyona alınıyor.
+
+59
+00:19:53,395 --> 00:20:03,496
+Neden? Dolayısıyla esasen şeye çok benziyor. Yani bir filtreleme işlemi bu. Bildiğiniz konvolüsyona çok benziyor.
+
+60
+00:20:07,996 --> 00:20:13,996
+Örneğin konvolüsyon bir şu tarz bir şey ise bu mesela.
+
+61
+00:20:19,316 --> 00:20:20,076
+Şu yani.
+
+62
+00:20:21,456 --> 00:20:22,875
+Eksi 1, 0, 1.
+
+63
+00:20:26,740 --> 00:20:50,740
+Bu tarz bir şey ise, bir Edge Detection filtresi. Çünkü türev alıyor her satırda. Dolayısıyla tüm imgenin neyi olmuş oluyor? Edge'leri.
+
+64
+00:20:54,804 --> 00:21:09,124
+Yataydaki türevi, ezleri alınmış oluyor. İmge üzerinde yatayda büyük renk değişimi olan noktalar ortaya çıkmış oluyor.
+
+65
+00:21:11,903 --> 00:21:19,463
+Tabi burada convolutional layer'da bir tek değil de birçok filtre öğreniliyor.
+
+66
+00:21:21,268 --> 00:21:37,148
+Fikir de şu, mesela bir filtre yataydaki ecleri ortaya çıkarabilir. Bir filtre dikeydeki ecleri ortaya çıkarabilir. Bir filtre başka bir özelliği ortaya çıkarabilir.
+
+67
+00:21:48,756 --> 00:22:08,756
+Filtre var varsayın. Her filtrenin de 10x10'luk olduğunu sayalım. Kaç tane parametre olur? Burada parametreler tamamen filtre. Filtrenin kat sayılarını öğreneceğiz. Dolayısıyla elimizde...
+
+68
+00:22:12,307 --> 00:22:26,268
+10 çarpı 10, 100. 100 çarpı 100'den de 10 bin tane elimizde parametre olmuş oluyor. Öğrenmemiz gereken 10 bin tane parametre oluyor. Sadece bu lehirden.
+
+69
+00:22:36,788 --> 00:22:43,788
+Komun oluşunun da yerinde bu giriş...
+
+70
+00:22:52,084 --> 00:23:15,244
+İmgesine giriş feature map'i deniliyor bazen. Input feature map. Yani aslında şu düşünülüyor. Convolution neural networkler bizim için özellikle ilk katmanları ne yapıyor? Özellik çıkarıyor.
+
+71
+00:23:16,788 --> 00:23:39,008
+Hatırlarsanız Sift'te vesaire bu tarz şeyler yapmıştık. Dersin o Haris'te vesaire. Orada böyle ne yapmıştık? Haris Corner'da tektirinde ne yapmıştık mesela? Türevleri kullanmıştık. Gaussian'la ağırlıklanmış türevleri kullanmıştık.
+
+72
+00:23:44,948 --> 00:23:50,068
+Harris noktaları bulmuştuk. Daha sonra işte dog bölgelerini görmüştük.
+
+73
+00:23:52,108 --> 00:23:55,568
+O dog bölgelerinden de shift feature'ları çıkartmıştık.
+
+74
+00:23:57,048 --> 00:24:00,827
+Dolayısıyla aslında ne var? Bir özellikler var. Feature Map.
+
+75
+00:24:02,288 --> 00:24:04,568
+Özellik haritası denilebilir.
+
+76
+00:24:06,008 --> 00:24:09,188
+Dolayısıyla Convolutional Layer ne yapıyor sanki?
+
+77
+00:24:10,291 --> 00:24:19,831
+Bir özellik, özelliklerin bir kısmını alıyor. Bir başka özellik grubunu ne yapıyor? Oluşturuyor.
+
+78
+00:24:25,831 --> 00:24:35,031
+Buradaki notasyon, konvolüsyonu anlatan bir notasyon.
+
+79
+00:24:47,571 --> 00:24:52,871
+Şurada yine Reli var. Reli'yi hatırladınız mı? Max 0 diyor.
+
+80
+00:24:57,172 --> 00:25:09,612
+Yani yine şey mantığı var. Önce bir konvolüsyona sokuluyor. Sonra elde edilen sonuçla sonuç ne yapılıyor?
+
+81
+00:25:17,811 --> 00:25:25,611
+Relu'dan, bir non-linearity'den geçiriliyor. Yani sonucun linearlikten çıkması sağlanılıyor.
+
+82
+00:25:29,107 --> 00:25:40,627
+Böylece giriş imgeleri konvolüsyonlarla, kernel ile konvolüsyon sonracısında yeni çıkış imgeleri haline geliyor.
+
+83
+00:25:41,907 --> 00:25:47,748
+Burada her katmandaki imge sayısı değişik oluyor.
+
+84
+00:25:47,748 --> 00:25:51,527
+Bu değişiklik nasıl sağlanılıyor?
+
+85
+00:25:53,268 --> 00:26:13,688
+Zaten filtre sayısı belirliyor buradaki şeyi. Sonuç imgelerinin sayısını. Bir de konvolüsyon burada iki boyutlu gösterilmiş ama üç boyutlu konvolüsyon gibi bir şey de yapılabiliyor.
+
+86
+00:26:19,955 --> 00:26:42,735
+Birden fazla giriş imgesi diyelim, feature map diyelim. Artık en başta imge vardı ama sonra aradakilere imge değil de feature map diyelim. Birden fazla giriş imgesiyle aynı anda konvolüsyon sonucunu veren, konvolüsyona benzeyen bir işlem var.
+
+87
+00:26:50,036 --> 00:26:55,076
+Onu yaparsanız katman sayısını azaltabiliyorsunuz da.
+
+88
+00:27:01,268 --> 00:27:02,907
+Bunu nasıl yapıyorsunuz?
+
+89
+00:27:16,500 --> 00:27:39,779
+Fikir şu, diyelim ki bu bir feature map. Bu da bir başka feature map. Normalde diyelim ki yandan bakıyorum. Bu imge üzerinde şu kernel'ı dolaştıracaksınız. Ve yeni bir imge elde edeceksiniz.
+
+90
+00:27:44,339 --> 00:27:49,339
+Birden fazla imge üzerinde...
+
+91
+00:27:55,604 --> 00:27:58,163
+Şöyle bir filtreyi dolaştırıyorsunuz.
+
+92
+00:28:00,203 --> 00:28:01,740
+Ve
+
+93
+00:28:04,884 --> 00:28:15,384
+Şuradaki çarpımların sonucunu topluyorsunuz. Dolayısıyla bu satırdan tek bir değer elde ediyorsunuz.
+
+94
+00:28:17,943 --> 00:28:30,884
+Dolayısıyla bir nevi birden fazla feature map'i, tek bir feature map'e,
+
+95
+00:28:31,796 --> 00:28:41,975
+Bu yolda eşleyebilirsiniz veya daha az sayıdaki en tane feature map'i eşleyebilirsiniz bu yolda.
+
+96
+00:28:58,900 --> 00:29:00,940
+Burada da sanırım onu anlatmış olabilir.
+
+97
+00:29:11,412 --> 00:29:20,152
+Ana fikir ne burada? Standart nörelne törkler ama imgelere uygulanmış.
+
+98
+00:29:22,772 --> 00:29:30,612
+Ne diyor? Girişin boyutuyla bağlantılı olarak, kuadratik olarak ölçekleniyor diyor.
+
+99
+00:29:35,188 --> 00:29:44,067
+Bu standart nöral networklerden bahsediyor. Sabit özelliklerden faydalanmıyor.
+
+100
+00:29:44,067 --> 00:30:00,067
+Eğer her bir gizli üniteyi girişin küçük bir yamasıyla ilişkilendirirseniz,
+
+101
+00:30:02,771 --> 00:30:13,651
+Ve ağırlıkları uzayda paylaşırsanız iyi bir şey olacaktır. Bu nasıl yapılabilir? Convolutional Layer ile yapılıyor.
+
+102
+00:30:16,631 --> 00:30:25,491
+İçerisinde Convolutional Layer olan networkleri de Convolutional Network deniliyor.
+
+103
+00:30:30,675 --> 00:30:35,455
+Yan Lecun'un makalesini vermiş.
+
+104
+00:30:41,683 --> 00:30:47,323
+Şimdi dolayısıyla ne vardı? Bir konvolüsyon vardı.
+
+105
+00:30:56,627 --> 00:30:59,827
+Sonra bir yine non-linearity.
+
+106
+00:31:02,327 --> 00:31:04,127
+Relu gibi bir şey var.
+
+107
+00:31:09,028 --> 00:31:11,528
+Başka şeyler de olabilir arada.
+
+108
+00:31:13,028 --> 00:31:16,627
+Sonra da bir pooling layer oluyor genelde.
+
+109
+00:31:20,339 --> 00:31:21,451
+Ö
+
+110
+00:31:24,692 --> 00:31:39,852
+Buradaki fikir şu. Diyelim ki bir göz bulucu yapıyorsunuz. Dolayısıyla şu filtre, 3x3'lük bir filtre düşünün.
+
+111
+00:31:43,731 --> 00:31:52,731
+Bu üçe üçlük filtre bir şekilde göze ne yapıyor? Cevap veriyor. Yani göz şekli varsa...
+
+112
+00:31:56,211 --> 00:32:06,032
+Göz şekli varsa, filtre büyük değerler döndürüyor o pikselde. O pikselin etrafında bir göz varsa.
+
+113
+00:32:09,971 --> 00:32:20,032
+Şimdi ama resimler gürültülü. Yani bir dijitizasyon sonrasında elde edilmiş oluyor.
+
+114
+00:32:22,195 --> 00:32:36,635
+Dolayısıyla özelliklerin yeri biraz rastgele olabiliyor. Yani biraz yan piksel, bu piksel, o piksel. Hani çok fazla da şey yapmak istemiyoruz bazı uygulamalarda.
+
+115
+00:32:46,003 --> 00:32:53,523
+Özelliğin tam yeri tam belli olmuyor. Dolayısıyla yere birazcık robust olmasını istiyoruz.
+
+116
+00:32:57,203 --> 00:33:05,644
+Yaptığımız işlemin. İşlemin robust olabilmesi için ne yapılabilir?
+
+117
+00:33:12,564 --> 00:33:21,163
+Hatırlarsanız Hav Transform'u vardı ve Hav Transform'unda oylar yandaki birikeçlere de atılıyordu mesela.
+
+118
+00:33:23,484 --> 00:33:26,144
+Buradaki çözüm şöyle bir çözüm var.
+
+119
+00:33:33,907 --> 00:33:41,547
+Filtre sonuçlarını ne yapalım?
+
+120
+00:33:44,427 --> 00:33:59,667
+Pool edelim. Yani küçük bir şeydeki, penceredeki sonuçları istatistiksel olarak özetleyelim.
+
+121
+00:34:03,380 --> 00:34:14,800
+Bu sayede ne yapalım? Ufak değişikliklerden kurtulalım. Mesela burada Max Pooling denilen.
+
+122
+00:34:57,492 --> 00:34:59,292
+Evet, bunu kapatmayı unutmuşum.
+
+123
+00:35:01,592 --> 00:35:03,372
+Kaç saat şimdi arkadaşlar?
+
+124
+00:35:11,795 --> 00:35:12,555
+Doğru kuzucuk.
+
+125
+00:35:15,827 --> 00:35:21,087
+Bir ara verelim 10 dakika. Gelince devam ederiz arkadaşlar.
+
+126
+00:43:13,268 --> 00:43:20,268
+Evet arkadaşlar, sesim geliyor mu? Geliyor.
+
+127
+00:43:20,268 --> 00:43:36,268
+Şimdi pooling layer'dan bahsediyorduk. Pooling layer ne yapıyor?
+
+128
+00:43:41,108 --> 00:43:57,108
+Diyelim ki bu bir işlemin sonucu. Bu işlemin üzerinde o bölgedeki, mesela Max Pooling, maksimum şeyi...
+
+129
+00:44:04,371 --> 00:44:26,091
+Maksimum pikseli alıyor. Esasen yaptığı bu. Maksimum pikseli aldığı zaman düşünürseniz bu sonuçların, bu piksellerin her biri...
+
+130
+00:44:27,059 --> 00:44:49,079
+Bu bir çıkış katmanı olduğunu düşünün. Giriş katmanındaki bir bölgenin sonucundan elde edilmiş. Dolayısıyla diyelim ki bir komşuluk düşünün. Üçe üçlük komşulukta. Göze orada benzer cevap vermiş.
+
+131
+00:44:50,387 --> 00:44:55,387
+Bunlardan en fazla göze cevap vereni alıyor. Max Filter.
+
+132
+00:44:56,887 --> 00:44:59,387
+Pixeli seçiyor.
+
+133
+00:45:09,619 --> 00:45:20,019
+Burada bu sayede bir invarians içeriye konulmuş oluyor. Yani sisteme bir invarians eklenmiş oluyor.
+
+134
+00:45:20,019 --> 00:45:33,859
+Yani gözün yeri birazcık değişse bile bu bölgenin içerisinde kaldıktan sonra
+
+135
+00:45:36,083 --> 00:45:46,783
+O bölgeden yine ne olacak? Maksimum gelecek. Göz burada göz vardır bilgisi gelecek.
+
+136
+00:45:49,003 --> 00:45:59,923
+Burada bu özellik, pooling özelliği X ve Y'de invarians sağlıyor size. X ve Y'de.
+
+137
+00:46:02,195 --> 00:46:21,315
+Rotasyon İmvaryansı sağlamayabiliyor. Ama şöyle bir şey yapılabiliyor. Rotasyon İmvaryansı içinde eğitim imgeleri mesela rotasyona uğratılıp veriliyor. Dolayısıyla daha fazla veri de elde edilmiş oluyor.
+
+138
+00:46:27,476 --> 00:46:31,695
+Dolayısıyla pooling bize invarians sağlıyor aslında.
+
+139
+00:46:36,016 --> 00:46:45,476
+Convolutional neural networkler, neuroscience'dan en çok etkilenen networkler arasında.
+
+140
+00:46:48,896 --> 00:46:53,136
+Neuroscience'da da şu görülmüş, insan beyin hücreleri.
+
+141
+00:46:55,251 --> 00:46:58,831
+Üzerinde çalışan bilim adamları şunu görmüşler.
+
+142
+00:47:04,351 --> 00:47:08,791
+İlk başta böyle bir edge detektörler var.
+
+143
+00:47:10,631 --> 00:47:13,112
+Gabor filtreleri dediğimiz filtreler var.
+
+144
+00:47:13,112 --> 00:47:18,112
+Bunların cevaplarına benzer cevap veren beynimizde...
+
+145
+00:47:21,523 --> 00:47:25,323
+V1 denilen bir alan olması lazım. V1 alanında
+
+146
+00:47:43,123 --> 00:47:55,384
+Bu ecde detektörlerle başlanılıyor. Sonra bunların tabii katman katman gittiğinizde bir noktada bir kısım beyin hücrelerinin invariant olduğu görülüyor.
+
+147
+00:47:55,384 --> 00:47:56,623
+Yani
+
+148
+00:48:01,364 --> 00:48:05,684
+Aynı şekli dönmüş bir şekilde de olsa tanıyabiliyor.
+
+149
+00:48:07,184 --> 00:48:14,644
+Veya öyle hücreler varmış ki mesela, diyelim ki çikolata dediniz.
+
+150
+00:48:16,503 --> 00:48:20,844
+Çikolatayı yazıda okuduğunda da heyecanlanıyor.
+
+151
+00:48:21,623 --> 00:48:23,123
+Duyduğunda da heyecanlanıyor.
+
+152
+00:48:24,144 --> 00:48:26,483
+Çikolata resmi gördüğünde de heyecanlanıyor.
+
+153
+00:48:28,788 --> 00:48:52,248
+Dolayısıyla invariant hücre. Çikolata mefhumunun nasıl geldiğine, reprezentasyonuna invariant. Çikolata mefhumuna odaklanmış. O mefhum nasıl gelirse gelsin, ona invariant.
+
+154
+00:48:52,884 --> 00:48:59,663
+Pooling Layer da bu tarz bir invariansı network'e katmamızı sağlıyor.
+
+155
+00:49:07,284 --> 00:49:20,524
+Pooling için tabii esasen pooling dediğimiz o bölgeden bir kısım istatistiklerin çıkarılması. Farklı pooling yöntemleri var.
+
+156
+00:49:35,507 --> 00:49:51,747
+Neighborhood'u içerisindeki tüm X bar ve Y barları düşünün. Bu X bar ve Y barların parlaklıklarının maksimumunu alıyor. Yani o bölgedeki maksimum şeyi alıyor.
+
+157
+00:49:53,207 --> 00:50:02,228
+Average pooling, diyelim ki 3'e 3'lük bir bölge, o bölgenin ortalamasını alıyor.
+
+158
+00:50:04,403 --> 00:50:05,523
+Şurada gördüğünüz.
+
+159
+00:50:09,940 --> 00:50:12,940
+Hepsini topluyor, K'ya bölüyor.
+
+160
+00:50:15,940 --> 00:50:20,340
+Bir bölü K ile çarpmış burada, güzel göstermemiş ama.
+
+161
+00:50:24,199 --> 00:50:29,980
+L2 Fulink, L2 normuna hesap ediyor.
+
+162
+00:50:31,359 --> 00:50:32,639
+Yani ne yapıyor?
+
+163
+00:50:33,396 --> 00:50:38,256
+Piksel değerlerinin o bölgedeki karelerini alıyor, topluyor, kare kökünü alıyor.
+
+164
+00:50:48,244 --> 00:50:51,864
+L2 Pulling Over Features. Bu ikisinin farkı ne?
+
+165
+00:51:00,403 --> 00:51:16,604
+Feature uzayında yapıyor sanırım bunu. Yani diyelim ki orijinal imgenizi bir katmanla imgenizi diyelim ki
+
+166
+00:51:21,331 --> 00:51:44,471
+Ne yaptınız? Sekiz tane filtre ile filtrelediniz. Dolayısıyla sekiz tane cevabınız var. Bunların her biri feature oluyor. Over feature dediği, diyelim ki şu feature'ların yani aynı piksel ama farklı feature map üzerinde.
+
+167
+00:51:45,043 --> 00:51:56,543
+Bunlar üzerinde ne yapıyor? El iki norm aldım diyor. Bunlar üzerinde tabii ki Max Pooling de yapabilirsiniz değil mi? Esasen düşünürseniz.
+
+168
+00:52:06,739 --> 00:52:12,739
+Evet. Burada bir hesaplama yapmış.
+
+169
+00:52:16,739 --> 00:52:22,099
+Convolutional Layer. Burada Pooling Layer demiş.
+
+170
+00:52:24,779 --> 00:52:30,959
+Layer sözü çok şey kullanılıyor bu convolutional networklerde.
+
+171
+00:52:34,547 --> 00:53:01,307
+Tanımları var. Kimi yazar konvolüsyon, aktivasyon ve pooling'i tek bir layer olarak düşünüyor. Bunlara layer diyor. Konvolüsyon, aktivasyon ve pooling'i stage diyor. Kimisi de bunların her birini ayrı bir layer olarak düşünüyor.
+
+172
+00:53:02,003 --> 00:53:10,764
+Yani konvolüsyon da bir layer, pooling de bir layer gibi düşünüyor. Burada bu şekilde bir gösterim var. Gördüğüm kadarıyla.
+
+173
+00:53:13,764 --> 00:53:27,443
+Hn-1 katmanında, Hn katmanı konvolüsyon layer ile elde ediliyor. Sonra Hn-1 katmanı pooling layer ile elde ediliyor.
+
+174
+00:53:27,891 --> 00:53:46,891
+Pooling'in bir sonucu, Feature Map'lerin boyutlarının düşmesi oluyor. Yani ikiye ikilik bir Pooling filtresi kullanırsanız, bu ne demek?
+
+175
+00:53:47,891 --> 00:53:55,819
+Dört tane değeri ben bir taneye düşüreceğim. Yani imgenin boyutunu yaklaşık yarıya indireceğim.
+
+176
+00:53:57,331 --> 00:54:22,331
+Bu ne demiş, if convolutional filters have size k times k and stride one and pooling layer has pools of size p times p, then each unit in the pooling layer depends upon a patch of size.
+
+177
+00:54:24,307 --> 00:54:29,007
+P plus k minus 1 times p plus k minus 1.
+
+178
+00:54:34,003 --> 00:54:47,903
+Yani pooling layer'daki her bir ünitenin kaç tane veriye bağlı olduğuna dair bir hesaplama yapmış.
+
+179
+00:54:50,724 --> 00:54:58,364
+Konvolüsyondan geriye doğru da gidiyor. Dolayısıyla şeyi aslında hesap etmiş oluyor. Ne kadar?
+
+180
+00:55:08,148 --> 00:55:20,148
+ne kadar pooling layer'daki bir sonuç ne kadar büyük bir alandan geliyor. Buna hesap etmiş olduğum.
+
+181
+00:55:22,148 --> 00:55:27,148
+Burada stride da... Ne arkadaşlar stride?
+
+182
+00:55:33,331 --> 00:55:37,032
+Hocam, yana doğru birer birer kaydırarak bakıyoruz ya.
+
+183
+00:55:37,591 --> 00:55:37,952
+Evet.
+
+184
+00:55:38,371 --> 00:55:39,032
+O değil mi?
+
+185
+00:55:43,380 --> 00:55:46,659
+Ben de o diye biliyorum.
+
+186
+00:55:57,460 --> 00:55:58,480
+Bir de ne var?
+
+187
+00:56:03,476 --> 00:56:06,796
+Filtre hücreleri arasındaki şey var.
+
+188
+00:56:41,588 --> 00:56:46,188
+Filtre hücreleri arasındaki boşluklar olabiliyor. Onlara ne deniliyor?
+
+189
+00:57:38,036 --> 00:57:46,036
+Konusu bakalım. Mesela ne diyelim? Convolucional.
+
+190
+00:58:11,188 --> 00:58:14,268
+Bir de peding mi var? Peding zaten şey.
+
+191
+00:58:33,523 --> 00:58:35,324
+Heading Border'larla ilgili
+
+192
+00:59:12,820 --> 00:59:17,820
+Evet, o dediğiniz Stripe, Stripe bir de...
+
+193
+00:59:24,980 --> 00:59:27,119
+Şunu görmüştüm de onu merak ettim.
+
+194
+01:00:21,876 --> 01:00:24,876
+Evet, yani imge üzerinde...
+
+195
+01:00:40,947 --> 01:00:44,027
+Diyelim ki önce buraya baktım.
+
+196
+01:00:56,659 --> 01:01:10,659
+Bir sonraki değeri, diyelim ki şuradan alıyorsa hemen bir sonraki piksel değil de üç sonraki pikselden alıyorsa, yani şu pikselden bir değer aldı. Şimdi şu piksele geçti.
+
+197
+01:01:11,659 --> 01:01:15,659
+Stride ne olmuş oluyor? Bir, iki, üç olmuş oluyor.
+
+198
+01:01:21,076 --> 01:01:34,696
+Padding de konvolüsyonu zaten görmüştük. Konvolüsyondaki gibi eğer padding yapmazsak ne yapmamız gerekiyor? Şey boyutu düşüyor gittikçe.
+
+199
+01:01:52,179 --> 01:02:04,479
+Burada kaça kaçlık mesela? 1, 2, 3, 6. 6'ya 5'lik bir imge düşünün. Burada mesela 5'e 5'lik bir filtre gezdirdiğimizi düşünelim.
+
+200
+01:02:07,479 --> 01:02:19,699
+Şöyle. Bu 5'e 5'lik filtre. 5'e 5'lik oldu mu bu? Olmadı. Şöyle 5'e 5'lik oluyor. Şöyle 5'e 5'lik oluyor.
+
+201
+01:02:21,235 --> 01:02:30,655
+Bu 5'e 5'lik filtrenin cevabı burada verilecek. Şuralarda bir cevabı olmayacak.
+
+202
+01:02:34,228 --> 01:03:01,068
+Dolayısıyla imge 4 piksel küçülmüş olacak. 5'e 5'lik bir filtrede. Dolayısıyla bu istemediğimiz bir durum olabilir. Derin bir ağ olduğu için yüzlerce katman olabilir. Yüzlerce azalma sonucunda giriş imgeleriniz...
+
+203
+01:03:01,108 --> 01:03:13,948
+Yok olabilir. Çok çok küçülebilir. O yüzden konu ojüsyondan önce bir padding koyabiliyorsunuz. Buraları sıfırlarla doldurabiliyorsunuz. Buna padding deniliyor.
+
+204
+01:03:17,876 --> 01:03:20,276
+Bir de şunu görmüştüm bir yerde.
+
+205
+01:03:24,692 --> 01:03:30,668
+Diyelim ki 3'e 3'lük bir filtreniz var. Ama 3'e 3'lük filtreniz...
+
+206
+01:03:41,043 --> 01:03:42,683
+Diyelim ki bu imgeniz.
+
+207
+01:03:48,244 --> 01:04:00,244
+3'e 3'lük filtreniz şöyle çalışıyor. Şunu alıyor. Bunu alıyor. Bunu alıyor. Bunu alıyor. Bunu alıyor.
+
+208
+01:04:06,003 --> 01:04:08,463
+Ve çıkış imgesinde şuraya yazıyor.
+
+209
+01:04:10,784 --> 01:04:18,023
+Buna ne denildiğini hatırlayanınız var mı? Şu şeylerin arası açık olursa.
+
+210
+01:04:18,023 --> 01:04:31,304
+Filtre sanki böyle şişirilmiş gibi veya genişletilmiş gibi uygulanıyor. Uygulanabiliyor yani.
+
+211
+01:04:32,820 --> 01:04:39,460
+Buradaki piksellerin aralığına da bir isim veriliyor ama onu unuttum şimdi.
+
+212
+01:04:40,820 --> 01:04:45,539
+Karşılaşırsanız onunla da onu şey yapmış olursunuz.
+
+213
+01:04:46,559 --> 01:04:48,280
+Burada ondan bahsedilmemiş.
+
+214
+01:04:49,880 --> 01:04:54,800
+Çok da sık gördüğümüz bir şey de değil anladığım kadarıyla.
+
+215
+01:04:55,240 --> 01:04:58,179
+Hocam ara değerleme olabilir mi yoksa farklı bir şey mi?
+
+216
+01:05:00,403 --> 01:05:21,743
+İşte hatırlamıyorum neydi ismi. Fakat filtre böyle şey yapılıyor. Yani aslında bu üçe üçlük bir filtre. Ama şu şekilde yani esasen bir, iki, üç, dört, beş, beşe beşlik bir filtreymiş de şuraları hep sıfırmış gibi bir durum oluşuyor.
+
+217
+01:05:28,659 --> 01:05:35,400
+Bir yerlerde görmüştüm ama şu anda atroos veya dilation deniliyor hocam demiş bir öğrenci.
+
+218
+01:05:35,500 --> 01:05:39,680
+Dilation olabilir, evet. Mantıklı geldi ama hatırlamamam bununla beraber.
+
+219
+01:05:41,059 --> 01:05:41,340
+Evet.
+
+220
+01:05:43,019 --> 01:05:44,159
+Dilation olabilir bu.
+
+221
+01:05:53,204 --> 01:06:05,684
+Bir şeyden bahsetmiş. Local Contrast Normalization'dan bahsetmiş. Ne yapıyor?
+
+222
+01:06:09,684 --> 01:06:10,744
+Bu bir işlem.
+
+223
+01:06:12,224 --> 01:06:13,684
+Bir nevi...
+
+224
+01:06:19,572 --> 01:06:23,852
+Standartize ediyor. Yani bir şey var.
+
+225
+01:06:27,507 --> 01:06:28,727
+Penceremiz var.
+
+226
+01:06:29,767 --> 01:06:31,227
+Bu pencerede diyelim ki
+
+227
+01:06:35,572 --> 01:06:39,152
+3'e 3'lük bir filtre düşünelim. Neighborhood düşünelim.
+
+228
+01:06:41,152 --> 01:06:42,692
+Burası X'ye.
+
+229
+01:06:46,195 --> 01:06:51,695
+Bu 3'e 3'lük Neighborhood'un neyini alıyor? Ortalamasını alıyor, mean'ini.
+
+230
+01:06:53,096 --> 01:06:58,295
+Yine bu 3'lü 3'e 3'lük penceredeki değerlerin standart sapmasını alıyor.
+
+231
+01:07:00,195 --> 01:07:04,295
+Şuradaki piksel değerinden ortalamayı çıkarıyor.
+
+232
+01:07:05,096 --> 01:07:10,396
+Ve yine onu standart sapmaya bölüyor.
+
+233
+01:07:11,635 --> 01:07:28,916
+Dolayısıyla o bölge içerisinde bir normalizasyon yapmış oluyor. Buna lokal kontrast normalizasyonu demiş.
+
+234
+01:07:39,219 --> 01:08:04,899
+Buradaki amaç şu olabilir. Değerlerin büyüklüklerini standartlaştırmaya çalışıyor. Yani, respons aynı sonucu istiyoruz diyor. Benzer şeylerin, benzer renk değişimlerinin benzer sonucu vermesini sağlamaya çalışıyor.
+
+235
+01:08:05,684 --> 01:08:09,824
+Bunu da tavsiye etmiş gördüğüm kadarıyla.
+
+236
+01:08:18,676 --> 01:08:42,435
+Bu feature'lar üzerinde de yapılabiliyor diyor. Dolayısıyla buradaki neighborhood, feature uzayındaki bir neighborhood da olabilir. Daha yüksek layer'lerde yapılıyor. Invariance, optimizasyonu ve sparsity'yi improve ediyor diyor.
+
+237
+01:08:45,844 --> 01:08:49,844
+Local Contrast Normalization diye araştırabilirsiniz.
+
+238
+01:08:54,931 --> 01:08:56,235
+Öö
+
+239
+01:09:00,979 --> 01:09:12,539
+Burada şeye bir stage demiş. Dediğim gibi bu jargon biraz değişiyor. Terminoloji biraz değişebiliyor.
+
+240
+01:09:14,939 --> 01:09:26,039
+Konvolüsyon, lokal kontrast normalizasyonu demiş. Araya bir de onu koymuş. Sonra da pooling yapmış.
+
+241
+01:09:27,060 --> 01:09:43,020
+Konu Olysyondan sonra bir de tabii şey vardır. Reli koymamış mı? Koymuş. Rektifikasyon demiş. Dolayısıyla Reli de koymuş.
+
+242
+01:09:44,640 --> 01:09:50,800
+Yani Rektifikasyon ve Kontrast Normalization'ı bir katman olarak düşünmüş.
+
+243
+01:09:52,659 --> 01:09:55,659
+Bir tane imge ile başlıyorsunuz.
+
+244
+01:09:56,940 --> 01:09:59,659
+Veya giriş katmanını düşünün.
+
+245
+01:10:01,500 --> 01:10:03,479
+Bunlar filtreleriniz.
+
+246
+01:10:05,659 --> 01:10:14,119
+Filtreler eğitimden sonra, filtrelerin, diyelim ki lokal neural network'ünüzü eğittiniz.
+
+247
+01:10:15,399 --> 01:10:20,360
+Ne yapıyorsunuz? Eğitim, bu filtrelerin katsayılarını bulmak.
+
+248
+01:10:21,716 --> 01:10:41,416
+O eğitimden sonra bu filtreleri bir resim olarak baktığımız zaman filtrenin neye heyecan duyduğunu, hangi girdide exciting, excite olduğunu görebiliyoruz.
+
+249
+01:10:42,656 --> 01:10:45,656
+Dolayısıyla bu da enteresan bir iş esasen.
+
+250
+01:10:47,859 --> 01:10:55,819
+Şu anda projelerinizle uğraşıyor olmasaydınız bunu yapalım vesaire gibi ödevler düşünülebilirdi.
+
+251
+01:10:57,819 --> 01:11:01,139
+Bu filtreler ne yapıyor? Filterbank.
+
+252
+01:11:02,079 --> 01:11:06,399
+Mesela 200 tane filtre düşünelim. Her bir filtre bir sonuç veriyor.
+
+253
+01:11:07,959 --> 01:11:14,680
+Bunlar ne yapıyor? RELU'dan geçiriliyor. Bir de Local Contrast Normalization'dan geçiriliyor.
+
+254
+01:11:17,555 --> 01:11:32,115
+Sonra da pooling yapılıyor. Diyelim ki 4'e 4'lük max pooling yapılıyor. 4'e 4'lük alanlardan en iyileri getiriyor. Dolayısıyla imge boyutu ne yapmış oluyor? Yarıya düşmüş oluyor.
+
+255
+01:11:39,155 --> 01:11:44,636
+Buradaki olay şeye çok benziyor.
+
+256
+01:11:49,332 --> 01:12:05,332
+Sift'i görmüştük. Sift'e çok benziyor. Hogg'da Sift benzeri bir şey. Özellik çıkarıcı. Region Descriptor diye geçiyor bunlar.
+
+257
+01:12:11,636 --> 01:12:34,604
+Hatırlarsanız, Difference of Gaussian diye bir şey görmüştük. Ne yapıyorduk? Elimizde imge vardı. Orijinal imgeyi bir filtreyle filtreliyoruz. Bir tane daha elde ediyoruz. Bir tane daha elde ediyoruz. Bir tane daha elde ediyoruz. Bir tane daha elde ediyoruz. Bunları...
+
+258
+01:12:39,572 --> 01:13:03,692
+Ne yapıyoruz? Farklı sigma değerindeki gaussiyanlarla filtreleyerek elde ediyoruz. Dolayısıyla farklı sigma değerlerinde elimizde neler oluyor? Farklı ölçeklerde görüntüler oluyordu. Hatırladınız mı? Sonra burada artık ne diyorduk?
+
+259
+01:13:03,984 --> 01:13:23,444
+Filtreyi yarıya indiriyorduk. Subsampling yapıyorduk. Sonra bir daha, bir beş tane mesela filtrelemeyle, sonra bir daha bir yarıya indiriyorduk filtrenin boyutunu, imge boyutunu. Bunların her birine oktav deniliyordu.
+
+260
+01:13:32,083 --> 01:13:56,003
+Çok popüler bir yöntemi. Burada da esasen buna çok benzer bir şey oluyor. Pooling işte bu yarıya düşürme olayı oluyor. Konvolüsyonlar da işte bu şekilde katman katman, çeşitli konvolüsyon katmanları elde ediyoruz. Sonra bunların içerisinde işte özellik arıyorduk.
+
+261
+01:13:58,228 --> 01:14:24,108
+Burası, şunlar XE uzayı oluyordu. Bu da Scale uzayı. Dolayısıyla hem ölçekte hem XE'de özellik arıyorduk. Buna benziyor yapay convolution networkler. Aslında bunu bir nevi şey yapıyor. En büyük farkı ne oluyor?
+
+262
+01:14:24,948 --> 01:14:48,828
+Bu katmanları elde ederken elde ettiğimiz filtreler, burada mesela işte Gauss olacak. Ne bileyim Gauss ve bir türev filtresi beraber olacak falan gibi. Hani insanların tasarladığı filtrelerken, Convolution neural network ne yapıyor? Filtreleri kendisi tasarlıyor.
+
+263
+01:14:51,123 --> 01:14:54,824
+Eğitim setine göre kendisi filtre tasarımı yapıyor.
+
+264
+01:15:03,380 --> 01:15:17,319
+Bu şekilde belirli bir sayıda convolutional katmanlar, stage'ler. Bu yazar bir stage olarak bir convolution, bir LCM, bir pooling demiş.
+
+265
+01:15:17,319 --> 01:15:26,092
+Bu tarz stage, stage belirli miktarda yapıldıktan sonra en son...
+
+266
+01:15:26,868 --> 01:15:49,208
+Sınıf özellikleri, sınıf etiketleri elde etmek için bir tane fully connected layer genel olarak konuluyor. Normal bir neural network ekleniyor en sona. Dolayısıyla şu araya kadar sanki şey gibi oluyor, özellik çıkarma buradan sonrası.
+
+267
+01:15:51,828 --> 01:16:08,468
+Standart Artificial Neural Network, MLP gibi şeyler oluyor. Full Connected Layer'ler oluyor. Burada SVM gibi başka algoritmalar da kullanılabilir esasen.
+
+268
+01:16:13,460 --> 01:16:20,699
+Ama pratikte gördüğüm kadarıyla direkt nörel network olduğu için tüm architecture o devam ettiriliyor.
+
+269
+01:16:27,507 --> 01:16:50,028
+Dediğimiz gibi SIFT'in kullanıldığı, mesela burada ne demiş? Önce bir SIFT özellikleri çıkarılıyor. Sonra K-Means uygulanıyor. Sonra Piramit uygulanıyor. Sonra S-VM uygulanılan bir yöntem gösterilmiş bir zamanlar sunulmuş.
+
+270
+01:16:55,764 --> 01:16:56,484
+Uy, ya.
+
+271
+01:17:02,100 --> 01:17:22,400
+Peki, convolutional neural networkler nasıl eğitilecek? Burada bir fark yok. Full connected networklere göre eğitiminde bir fark yok. Neden? Çünkü her şey yine türevi alınabilir bir durumda.
+
+272
+01:17:27,060 --> 01:17:34,820
+Dolayısıyla türevi alınabildiği için standart backpropagation algoritması yine kullanılabiliyor.
+
+273
+01:17:36,880 --> 01:17:50,820
+Yine bu şekilde backpropagation ile türevi alınabiliyor. Dolayısıyla yine gradient descent, stokastik gradient descent yine uygulanabiliyor.
+
+274
+01:17:54,899 --> 01:18:18,479
+Dolayısıyla genel olarak bir mini batch'ler ile yapılıyor. Tüm veri ile değil veya tek tek değil de bir veri. Mini batch deniliyor ona. Mini batch'lerle bir forward propagation yapılıyor. Sonra back propagation ile türevler bulunuyor.
+
+275
+01:18:19,188 --> 01:18:30,327
+Türevlerden yararlanarak da stokastik gradient descent veya farklı bir yolla parametreler optimize ediliyor, update ediliyor.
+
+276
+01:18:36,724 --> 01:18:45,224
+Evet, genel olarak Convolutional Neral Networkler bu şekilde.
+
+277
+01:19:22,931 --> 01:19:35,211
+Oluşun Neral'in de Türkler bu şekilde. Dolayısıyla burada aslında bunu bitirdik. Bir kısım örnekler vermiş.
+
+278
+01:19:42,100 --> 01:19:48,239
+Tabii başarılı network sonuçlarından bahsediyor. Bu 2012 vesaire geride kaldı.
+
+279
+01:19:54,644 --> 01:19:58,884
+Ama şu ImageNet önemli. Değil mi?
+
+280
+01:20:02,324 --> 01:20:03,244
+Bir
+
+281
+01:20:03,244 --> 01:20:07,463
+Competition var. Ne var arkadaşlar?
+
+282
+01:20:11,667 --> 01:20:32,347
+ImageNet diye bir şeyin kullanıldığı bir competition var. Bu competition yıllardır devam ediyor. Bunları da genelde CNN'ler kazanıyor. Bunun bir veri tabanı var.
+
+283
+01:20:37,460 --> 01:20:38,840
+Büyük bir veri tabanı.
+
+284
+01:20:45,300 --> 01:20:48,200
+Bu 2012'deki bir
+
+285
+01:20:55,891 --> 01:21:19,891
+Papers. CNN'leri popüler eden de bu paper galiba. ImageNet yarışmasında bu Krizevski et al. yarışmada çok çok başarı kazanıyor. Yani hatayı...
+
+286
+01:21:21,652 --> 01:21:39,452
+%25'lerden %16'lara falan düşürüyor sanırım. Bir atlama yapıyor yani bir yıl içerisinde. Bir önceki yıla göre hatada büyük bir indirim yapıyor.
+
+287
+01:21:49,811 --> 01:22:14,592
+Convolution, Local Contrast Normalizasyonu, Max Pooling. Aynısından bir tane daha var. Buna Stage 1 diyelim. Buna Stage 2 diyelim. Sonra şöyle iki tane convolution, bir stage daha olmuş. Bir convolution, sonra bir Max Pooling daha konulmuş.
+
+288
+01:22:15,475 --> 01:22:18,675
+Burada Local Constance Normalizasyonu yok.
+
+289
+01:22:21,275 --> 01:22:25,075
+Sonra Fully Connected Layer'ler var.
+
+290
+01:22:26,075 --> 01:22:32,075
+Linearity'de Linear dediği de şey oluyor. Diyelim ki artık elinizde şuraya kadar
+
+291
+01:22:32,675 --> 01:22:38,875
+Convolutional neural network olduğu için Feature Map'ler var. Yani iki boyutlu düşünüyorsunuz.
+
+292
+01:22:39,891 --> 01:22:48,092
+Lineyere geldiğinizde artık iki boyutlu değil de bunu ben bir tek vektör olarak düşüneceğim diyorsunuz. Tek boyutlu bir vektör olarak düşüneceğim.
+
+293
+01:22:53,811 --> 01:23:03,671
+Bu vektörün boyutunu da kategori sayısına göre ayarlarsanız, kategori tahmininde bulunabiliyorsunuz.
+
+294
+01:23:17,076 --> 01:23:20,496
+Ne yapmış? Parametre sayısı üzerinde düşünmüş.
+
+295
+01:23:23,136 --> 01:23:39,775
+Şurada 35.000 parametre, şurada 307.000 parametre, 880.000 parametre, 1.3 milyon parametre, 442.000 parametre.
+
+296
+01:23:41,652 --> 01:23:47,891
+Fully Connected 37 Milyon Parametre. Gördüğünüz gibi burada şeyi görüyoruz.
+
+297
+01:23:52,659 --> 01:24:10,579
+Convolutional Layer'ların parametre sayısının çok daha az olduğunu görüyoruz. Full Connected Layer 37 milyon, 16 milyon, 4 milyon gibi gidiyor. Bunlar ağırlıklar mı oluyor hocam parametreler?
+
+298
+01:24:23,667 --> 01:24:48,467
+Konu Oluşun'un networklerde de bir yaz var. Konu Oluşun'un layer'larda bir yaz oluyor. Olabiliyor daha doğrusu. Çok fazla ayrıntısını bilmiyorum. Çünkü milyonlarca farklı arkitektür oluyor. Artık herkes, aha ben bu arkitektürü geliştirdim deyip yapıyı koyuyor ortaya.
+
+299
+01:24:49,235 --> 01:24:59,235
+Ama beyaz, beyazı hatırlarsınız. Beyaz, Fully Connected Layer'larda ne oluyor?
+
+300
+01:25:02,235 --> 01:25:06,235
+Weight ile ikisi çarpıyorsunuz, bir beyaz ile topluyorsunuz.
+
+301
+01:25:07,235 --> 01:25:11,235
+Dolayısıyla bu weightler, beyazlar...
+
+302
+01:25:11,412 --> 01:25:21,452
+Convolution Layer'larda bazen tüm filtreler için tek bir beyaz kullanılabiliyor veya her bir filtre için farklı bir beyaz kullanılabiliyor anladığım kadarıyla.
+
+303
+01:25:24,452 --> 01:25:36,452
+Dolayısıyla bunlar, weightler ve beyazlar ve filtrelerin şeyleri, kullandığınız filtrelerin...
+
+304
+01:25:42,420 --> 01:25:43,879
+Değerleri mi diyeceğiz?
+
+305
+01:25:46,460 --> 01:25:47,940
+Komponentleri diyelim.
+
+306
+01:25:49,739 --> 01:25:51,079
+Bunlar parametreler.
+
+307
+01:25:52,460 --> 01:25:54,639
+Bu parametreleri eğitmeniz gerekiyor.
+
+308
+01:25:54,819 --> 01:25:56,879
+Dolayısıyla şöyle bir baktığınızda,
+
+309
+01:25:58,239 --> 01:26:00,840
+şurada 41 milyon, 45 milyon,
+
+310
+01:26:01,979 --> 01:26:03,760
+45 milyon parametre burada.
+
+311
+01:26:05,760 --> 01:26:07,520
+Şurada 1 milyon, şurası
+
+312
+01:26:08,979 --> 01:26:20,019
+2 milyon desek, şuradan da 1 milyon gelse, 3 milyon civarı parametre de burada. Burada 45 milyon parametre var, şurada 3 milyon parametre var.
+
+313
+01:26:21,299 --> 01:26:31,180
+Dolayısıyla hız istiyorsanız esasen mümkünse full connected layer'lardan kaçınmaya çalışmak gerekiyor.
+
+314
+01:26:35,123 --> 01:27:02,543
+Number of Flops ne oluyor? Flops'u nasıl hesap etmiş bilmiyorum. Veri sayısı çarpı parametre sayısı mı acaba? Veya her bir parametre hesabında kaç farklı işlem yapılması gerektiğini de düşünmüşlerdir muhtemelen. Yani bir parametreyi update etmek için kaç farklı işlem yapman gerekiyor?
+
+315
+01:27:03,891 --> 01:27:17,051
+İşte türevler alınacak, çarpılacak vesaire. Bunu da hesap etmiş olabilirler. Bu ayrıntıyı bilmiyorum. Toplamda 832 milyon flops diyor eğitimi için.
+
+316
+01:27:29,108 --> 01:27:31,052
+Optimizasyon için...
+
+317
+01:27:37,587 --> 01:27:47,887
+Stochastic Gradient Descent with Momentum demiş. Learning Rate şu şeydi.
+
+318
+01:28:04,243 --> 01:28:05,644
+X, K'ydi.
+
+319
+01:28:08,023 --> 01:28:08,963
+Learning Rate.
+
+320
+01:28:10,623 --> 01:28:19,384
+Bir de Momentum koyulabiliyor bu denkleme. Şu anda hatırlayamadım Momentum neydi? Hangisiydi Momentum? Nasıl giriyordu o denkleme?
+
+321
+01:29:32,692 --> 01:29:36,692
+Loss Function içerisine...
+
+322
+01:30:33,492 --> 01:30:38,152
+Güzel bir şey çıkmadı. Neydi bunu hatırlayanınız var mıydı arkadaşlar?
+
+323
+01:31:02,484 --> 01:31:14,444
+Momentum fikri esasen şuydu diye hatırlıyorum. Hızı da şu denkleme ekliyorsunuz. Yani bir partiklın hareket ettiğini düşünün.
+
+324
+01:31:18,100 --> 01:31:19,532
+Eeeh...
+
+325
+01:31:22,707 --> 01:31:48,108
+Elinizde bir particle var. Dolayısıyla bu particle diyelim ki bir yerden başlıyor. Yavaş yavaş öyle düşünebilirsiniz. Nereye gidecek? Global minimum'a gidecek veya oradaki lokal minimum'a gidecek. Giderken tabii onu etkileyen ne var? İçerisinde bulunduğu çukurun şekli var.
+
+326
+01:31:49,108 --> 01:32:10,668
+Lokal minimum çukurunun şekli onun gidişini etkiliyor. Momentum da şeyi sağlıyor. Bunun yanında acaba bir de şey yapsak. Mevcut hızını da o gidişe eklesek.
+
+327
+01:32:18,003 --> 01:32:31,484
+Buradaki fayda şu olabiliyor. Daha küçük lokal minimumlar varsa şöyle, bu küçük lokal minimumları bu hızla, momentumla aşabiliyor.
+
+328
+01:32:36,363 --> 01:32:44,283
+Dolayısıyla bu tarz bir işlem yapılıyor diye hatırlıyorum. Şu anda ona bakmam lazım. Ona artık siz bakabilirsiniz.
+
+329
+01:32:45,971 --> 01:33:01,112
+Weight Decay, Dropout, Input Distortions gibi farklı yöntemler geliyor.
+
+330
+01:33:01,112 --> 01:33:12,072
+Dropout, unitlerin bir kısmını bir iterasyonda kullanıp bir kısmını başka bir iterasyonda kullanma.
+
+331
+01:33:13,011 --> 01:33:17,152
+Veyt Dikey, onu hatırlayamadım şimdi tam olarak.
+
+332
+01:33:37,203 --> 01:33:40,644
+Burada çeşitli örnekler verilmiş.
+
+333
+01:33:41,744 --> 01:33:43,683
+Hocam, krom açık.
+
+334
+01:33:44,264 --> 01:33:44,484
+Evet.
+
+335
+01:33:45,324 --> 01:33:45,884
+Pardon.
+
+336
+01:33:50,387 --> 01:34:01,648
+Evet, yani şununla ilgili konuşmuştum. Momentum dediğimiz şey hız esasen. Bir şekilde hızın şu denkleme.
+
+337
+01:34:05,108 --> 01:34:09,028
+Update veya optimizasyon denklemini eklenmesi.
+
+338
+01:34:10,708 --> 01:34:13,108
+Weight Decay de yine bir şekilde...
+
+339
+01:34:22,260 --> 01:34:30,260
+Bu şeyin, optimizasyon denkleminin değiştirilmesi sonucunu veriyor.
+
+340
+01:34:30,260 --> 01:34:33,260
+Weight Decay'de...
+
+341
+01:34:46,484 --> 01:35:01,524
+Optimizasyona farklı bir parametre, farklı bir değer daha ekliyorsunuz. Sabit bir şey. Bu weightlerin daha küçük olmasını sağlıyor. Yani weightlerin parametrelerinizin çok büyümesini engelliyor.
+
+342
+01:35:03,664 --> 01:35:07,344
+Tabii tam denklemleri vs. şu anda hatırımda yok.
+
+343
+01:35:11,123 --> 01:35:34,323
+Buradaki örnekler, mesela Might için, Might, Black Widow, Cockroach, Tick, Starfish olabilir demiş. Bu yarışmada her bir resim için, her bir sınıflayıcı,
+
+344
+01:35:35,220 --> 01:35:50,780
+Beş tane en olası sınıf döndürüyor. Oradaysa doğru kabul ediliyor. Yani o beşten bir tanesi doğruysa kabul ediliyor.
+
+345
+01:36:04,467 --> 01:36:09,028
+Mesela burada Cherry ama Dalmaç yanında burada var değil mi?
+
+346
+01:36:20,020 --> 01:36:37,560
+Nesne belirleme için kullanılıyor. Çeşitli örnekler vermiş. Face Verification and Identification için örnekler var.
+
+347
+01:36:51,572 --> 01:37:12,672
+Burada bitiyor. Şimdi bu şekilde bitirelim bu hafta. Erken bitirmiş olacağız. Haftaya devam ederiz. Sizin bir sorununuz var mı?
+
+348
+01:37:20,724 --> 01:37:21,924
+Yok hocam, teşekkürler.
+
+349
+01:37:22,724 --> 01:37:27,604
+Peki, tamam. O zaman haftaya görüşmek üzere arkadaşlar. Kapatıyorum.
+
+350
+01:37:28,604 --> 01:37:29,364
+Görüşürüz hocam.
+
+351
+01:37:29,364 --> 01:37:30,123
+Görüşürüz.
