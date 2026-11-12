@@ -1,0 +1,2011 @@
+1
+00:05:26,451 --> 00:05:28,492
+Kırma, kırma, yüzü.
+
+2
+00:05:32,339 --> 00:05:34,119
+Evet, bir şarkı sınır.
+
+3
+00:09:10,740 --> 00:09:16,919
+Evet, peki. Katılım süreniz atladı ama bugün müfredatı bitirmeniz lazım. O yüzden ben başlayayım.
+
+4
+00:09:18,840 --> 00:09:22,500
+Ve kaldığımız yerden ilerleyelim ders noktalarımızdan.
+
+5
+00:09:24,080 --> 00:09:27,000
+Yılızın kalitesi ve yazılım ölçütleri diyoruz.
+
+6
+00:09:27,000 --> 00:09:28,840
+Ve başlıyoruz.
+
+7
+00:09:34,388 --> 00:09:42,348
+Bu arada şöyle bir geri dönüp bakarsam. Şimdi yazılım proje yönetimini tabii ki ölçme gerekli.
+
+8
+00:09:48,467 --> 00:10:00,467
+O kısımlarda, Burr Island'ın tırını daha sonra anlatacağımız dediğimiz kısmı, şimdi ölçme odaklı olarak söylemiş olacağız ve başka şeylerden de bahsedeceğiz.
+
+9
+00:10:01,467 --> 00:10:11,307
+Şimdi, öncelikle genel bir kavramları oturtalım yerine. Ölçme, New Zealand'ın içi.
+
+10
+00:10:11,508 --> 00:10:19,128
+Somut veya soyut bir varlığı sahip olduğu bir özelliğini sayısal veya derecelendirilmiş bir veri olarak ifade etmek.
+
+11
+00:10:19,768 --> 00:10:26,088
+Örneğin benim boyum 163 cm dediğimde bu boyumun uzunluğundan bahsediyorum.
+
+12
+00:10:26,567 --> 00:10:34,508
+Somut bir varlık olarak benim uzunluk özelliğimin sayısal bir veri olarak ifade ettim.
+
+13
+00:10:35,608 --> 00:10:38,708
+İkinci örnek, hava bugün 22 cm derecedesi.
+
+14
+00:10:39,475 --> 00:11:00,096
+Hava sıcaklığı, yani havanın, ortamın, aslında ortam somut diyebiliriz yani. Düşünce ürünü olan bir şey değil somut, değil somut. Bunun ısı, sıcaklık özelliği, onların da farklı şeyler var, şeyler, ama o kadar da birbirimiz değilim ben.
+
+15
+00:11:01,096 --> 00:11:06,415
+22 santigrat derecedir dedik. Bunu da yine sayısal bilgileri olarak ifade ettik.
+
+16
+00:11:06,836 --> 00:11:33,556
+Ve de ilk arası çok zordu diyebiliriz mesela. Yine sumut bir varlık sınav. Belli bir sınav. Bunun zorluk derecesini biri de 5 arasında değişen bir ölçekte ki buna da Likert ölçeyi diyorlar. Likert ölçeyince ifade etmiş olduk. Çok kolay kolay, orta, çok zor olmak üzere 5 ayrı kademeden bahsedebiliriz mesela.
+
+17
+00:11:35,124 --> 00:11:39,524
+Fakat burada her birinin sonunda bir birimden de bahsettik aslında.
+
+18
+00:11:39,644 --> 00:11:44,144
+163 cm, 22 cm derece, fakat ikisi de ilk elta ölçüyebilmekti.
+
+19
+00:11:44,624 --> 00:11:47,544
+İşte burada ölçüt kısmı geliyor devreye, metrik.
+
+20
+00:11:48,283 --> 00:11:52,044
+Varlığın ölçülecek özelliğini ölçme biçimimiz ölçüttür.
+
+21
+00:11:53,235 --> 00:12:09,336
+Burada mesela bağlaşım ve uyumu kastederken bunun temel anlamını kastettik ama doğrudan ilişki alıyor muyuz, almıyor muyuz filan birçok şekillerde ölçütmesi değişik kriterlerle güncellediğimizi hatırlatalım.
+
+22
+00:12:09,648 --> 00:12:21,228
+Benzer bir örnek, mesafe ölçütünde, kuş uçuşu mesafe ölçütü ya da o A noktasının o B noktasına gidilecek mesafede biz ne kadar gidiyoruz?
+
+23
+00:12:21,488 --> 00:12:24,427
+Onun ölçü, iki türlü ölçü ile ölçü ile bileniz.
+
+24
+00:12:24,799 --> 00:12:40,720
+A noktası var, B noktası var. A noktasından B noktasından gidiyoruz ama arada bir dağ var mesela. Ya dağın etrafından dolanacağız ya belki tünel vardır, tünelin içinden geçeceğiz ama tünelin içinden geçtik bile ondan sonra belki kırarak gideceğiz.
+
+25
+00:12:40,720 --> 00:12:51,279
+Yani dağın daha uygun yerleri gelinerekten geçemiş olunuz. Bir de zaten gökyüzünde uçuran bir kuşun o noktanın üstünden diğer B noktanın üstünde yolu.
+
+26
+00:12:52,799 --> 00:12:56,740
+Mesafeleri farklı olacak. Hepsi mesafe ama ölçüm etkiliğimiz farklı.
+
+27
+00:12:57,259 --> 00:13:00,919
+Yani sıcaklıklar için Santigrat ve Farnheide farklı ölçüler.
+
+28
+00:13:01,579 --> 00:13:09,980
+Farnheide neye dayandırmışlar bilmiyorum ama Santigrat'ta işte suyun donma noktası ile kaynama noktası arasına sıfır ve yüzlemişler.
+
+29
+00:13:10,220 --> 00:13:13,240
+Deniz seviyesindeki buğduğum tabii ki basınca göre değişiyor çünkü.
+
+30
+00:13:13,240 --> 00:13:19,240
+Ve o aralığı işte yüzle bölmüşler şeklinde bir ölçü.
+
+31
+00:13:19,412 --> 00:13:30,251
+Sıcaklık ölçütü santigrat. Yani ölçü bilim ölçütü. Ölçüm ise, measurement, işte belirli bir ölçüte göre yaptığımız ölçüme eleminin sonucudur.
+
+32
+00:13:31,251 --> 00:13:33,392
+PMS bilimleri pek karıştırmamak lazım.
+
+33
+00:13:34,836 --> 00:13:47,615
+Bu eğlenimin farklı kısmını anlatıyor aslında. Ama kazarla karıştırırsanız ders değil. Çünkü klasasyonelde bile kitaplarda bile karıştırılabiliyorlar bunları bazen. Arada cümle içinden, arada kişinin de kullanılırken filan falan.
+
+34
+00:13:47,615 --> 00:13:53,615
+Bu birçok biraz daha zor geliyor bana belki. Measuring, measurement, metric. Ama...
+
+35
+00:13:54,292 --> 00:14:05,852
+Yani Türkiye'de daha zor olabilir belki ölçme, ölçüt, ölçüm. Yani isim, sıfat, eylem şeklinde bakarsanız daha kolay. Ama bunu hatırlamazsanız daha zor diyebiliriz belki.
+
+36
+00:14:05,852 --> 00:14:17,951
+Böyle bir çok daha değil. Bu dönemli olan şey neden ölçme eylemini yaptığımız kız, bu gerçek dünyayla ilgili işimize yarayacak anlamlı sonuçlar elde etmek için ölçme eylemini üretiyor.
+
+37
+00:14:21,908 --> 00:14:32,908
+Şimdi burada yorumlama engeli diye bir kavram ortaya çıkıyor. Intelligence Variant, İngilizcesi. Ben bunu direkt zeka engeli diye çevirirsem hakaret etmiş gibi oluyor insanlara.
+
+38
+00:14:32,908 --> 00:14:46,748
+Yani hal demiş gibi oluyor. O yüzden yorumlama engeli diye ben çevirmek istiyorum. Yaptığımız ölçüme eleminin sonucu, aladığımız sonuçları elde etmek için şöyle doğrudan bir yol sunmaya bilir.
+
+39
+00:14:48,148 --> 00:14:57,188
+Kimisini de sunar ama kimisini de sunmaz. Yapmamız bu nedenle, birçok durumda yapmamız gereken yorumlama zor olabiliyor.
+
+40
+00:14:58,048 --> 00:15:06,087
+Örnek olarak mesela diyelim ki iki tane kalem bulayım alayım mesela.
+
+41
+00:15:08,548 --> 00:15:15,327
+Diyelim ki şimdi elinde iki tane kalem var. Bir koy şunu kalem, bir de tahta kalem.
+
+42
+00:15:15,615 --> 00:15:27,816
+Şimdi, o iki kaleme baktığımda, beyaz kahta kaleminin, kurşun kalemde daha uzun ve daha kalın olduğunu görüyoruz.
+
+43
+00:15:29,275 --> 00:15:35,255
+Şimdi, bu ölçmeyi yaptım, uzunluğu ve kalınlığı da ölçtüm. Bu ne işlemeye bitecek?
+
+44
+00:15:35,764 --> 00:15:46,824
+Mesela diyelim ki, odayı havalandırmak istiyorum, pencereyi açacağım ama pencereyi çıkartan şundan bundan sürekli kapanmıyor. Bir destek yapmam lazım. Hangisini kullanayım? Daha kalın kullanmam, daha mantıklı.
+
+45
+00:15:47,443 --> 00:15:54,564
+Ya da diyelim ki, bir projeksiyon cihazının açıp kutma düğmesine basacağım, tavanda bir yerde. Çok yüksekte değil ama benim boyum yetmiyor.
+
+46
+00:15:54,564 --> 00:16:02,564
+O zaman biraz da şu kalemleri bastırsam diye. O zaman bu kalemi tutacağım, daha uzun oldu işte.
+
+47
+00:16:03,700 --> 00:16:07,800
+gibi, herif durumları bu daha avantajlı oldu diyelim ki mesela.
+
+48
+00:16:12,180 --> 00:16:19,820
+Ama yazılım gibi, karmaşık işlerde bu yolunlama işlemin bu kadar kolay olmuyor genelde.
+
+49
+00:16:20,640 --> 00:16:25,540
+Benim kurgul sevenler bilirler, Otostop, Galaxie, rehberi diye bir roman var.
+
+50
+00:16:25,540 --> 00:16:29,540
+Aslında bu birkaç çiftlik bir seridir ve sinema uyarlaması da yapılmıştır.
+
+51
+00:16:30,611 --> 00:16:36,611
+O da hikaye olarak da işte. Evlendeki en karmaşık süper bilgisayar yapılıyor.
+
+52
+00:16:38,451 --> 00:16:46,231
+Ve ne kadar sürüyor? Ben diyeyim, aylar, siz diyeyim, birkaç, on sene falan.
+
+53
+00:16:47,351 --> 00:16:54,791
+Yapılıyor bu bilgisayar. Peki şimdi bu deneyen ilk test case sorusu olarak ne soralım? Hayatın anlamı nedir diye soruyorlar.
+
+54
+00:16:55,135 --> 00:16:59,455
+Bilgisayar kısa bir süre düşünüp 42 yanıtını veriyor.
+
+55
+00:17:00,255 --> 00:17:04,695
+Ama şimdi bu 42 ne demek? Bunu da açıkla diye soruyorlar. İkinci soru olarak bilgisayara.
+
+56
+00:17:05,316 --> 00:17:12,275
+Oradan yüz yıllar geçmiş bilgisayar hala bu cevabı vermeye çalışıyor diye bir anekdot vardır.
+
+57
+00:17:12,635 --> 00:17:16,596
+İşte size yorumlama engelinin yüksekliğinin bir örneği.
+
+58
+00:17:17,044 --> 00:17:28,724
+Gerçek hayatta da neden ölçme yapıyoruz? Somut veya soyut varlıklarla birkaç özelliğini ölçüp ondan anlamlı sonuçlar çıkarmaya çalışıyoruz.
+
+59
+00:17:28,724 --> 00:17:34,724
+Bu aşamada doğrudan geçemiyoruz çoğun zaman. Ölçme elimizin sonucunda ortaya çıkan verileri...
+
+60
+00:17:35,476 --> 00:17:45,896
+Matematiksel ve istatistiksel yöntemlerle sayısal sonuçlara çevirip bu sonuçları da yorumlayarak ancak bu sonuçları yorumlayarak anlamlı sonuçlara varabiliyoruz.
+
+61
+00:17:46,016 --> 00:17:58,436
+Oradaki yorumlamada aslında bu önerilen matematiksel ve istatistiksel yöntemler tarafından verilen ipuçları doğrultusunda yapılır bu yorumlama meydanlıyor.
+
+62
+00:17:59,396 --> 00:18:01,896
+Biraz doğan başlıyor, izlemek zorundayız.
+
+63
+00:18:03,923 --> 00:18:25,663
+Yazılım ölçümü de zor. Bunu başka bir değişiklik ifade etmek istersek, yorumlamaya engelli yüksektir diyoruz. Peki neden? Zaten kalmayacak bir iş yapıyoruz. Zihinsel yoğunemek gerektiren bir iş yapıyoruz. Zor problemleri çözmeleri çalışıyoruz. Bu nedenle de zor. Ama bir zorluk daha var. Önerdiğiniz ölçütler eğer nicel kalırsa,
+
+64
+00:18:26,048 --> 00:18:38,907
+Veya sübjektif kalırsa, o zaman yorumlama yapmamız daha zorlaşmaktadır. İleride biraz daha sonuç ölçüt örnekleri vertmeden sonra bu konuları biraz daha tartışacağız.
+
+65
+00:18:39,468 --> 00:18:42,528
+Oraya gelene kadar daha söylememiz gereken şeyler var.
+
+66
+00:18:42,996 --> 00:19:01,336
+Yazılımı neden ölçüyoruz peki? Birkaç neden olabilir. Ne kadar iyi bir ürün ortaya çıkartıyoruz, onu anlamak için ölçebiliriz. Ne kadar iş yapacağımızı kestirmek, tahmin etmek için ölçebiliriz. Buradan da yola çıkartan da ne kadar zaman ve ne kadar para harcayacağımızı anlamak için ölçüme görebiliriz.
+
+67
+00:19:01,336 --> 00:19:08,115
+Ve proje yönetiminde de ölçüm önemlidir. Çünkü ölçülemeyen ilerleme yönetilemez.
+
+68
+00:19:09,587 --> 00:19:12,567
+Bu nedenlerle ölçme eylemleri yaparız.
+
+69
+00:19:15,427 --> 00:19:23,728
+Şimdi ölçme eylemlerini doğrudan veya dolaylı yapılan olmak üzere ikiye ayırabiliriz.
+
+70
+00:19:24,587 --> 00:19:30,168
+Doğrudan ölçümde örnek olarak masraf, harcanan masraf, yapılan masraf gider yani.
+
+71
+00:19:32,948 --> 00:19:41,327
+Ne projenin süresi olarak da düşünebilirsiniz veya belli bir işlemin yürütülmesi için gereken süre olarak da düşünebilirsiniz.
+
+72
+00:19:42,708 --> 00:19:50,648
+Komut satırı, yani yazdığımız programda kaç satır komutular gibi büyük bir şey. Daha sonra konuşacağız, paylaşılabilir.
+
+73
+00:19:51,648 --> 00:19:59,908
+Hız, işlem ne kadar sürede yapılıyor? Yani tamam o zaman demek ki ekstremi hız, agile ve geçine göre demek ki süre kısmında daha çok bir proje.
+
+74
+00:20:00,019 --> 00:20:18,179
+Ölçümlü olarak harcanan süre veya kalan süre hızlı olarak da uygulamanın çalışma hızından bahsediyoruz. Bellek genişliği ya da haberleşme konusunu, hata miktarı, ortaya bulguns hata sayılır gibi nokta.
+
+75
+00:20:19,079 --> 00:20:22,880
+Dolaylı ölçümlerde söz konuları biz örneğin.
+
+76
+00:20:23,604 --> 00:20:41,043
+İçliğe konusunda daha sonra functional point konusundan şey edeceğiz. Daha ayrıntılı o zaman şeyleriz, söyleriz. Nitelik. Çeşitli kalite niteliklerinden bahsedebiliriz.
+
+77
+00:20:43,476 --> 00:21:04,556
+Şimdi, kanlaşıklığı da doğrudan ölçemeyebiliriz. Çünkü bana az kanlaşık gelen size çok kanlaşık gelebilir. Ya da tam tersi mesela. O yüzden dolaylı cümleri doğrudan cümlere çevirmek veya onlar cinsinden ifade etmeye çalışırız. Göreceğiz çeşit örneklerini.
+
+78
+00:21:06,003 --> 00:21:12,803
+Güvenirlik, etkinlik, dayanıklılık bunlardan nispeten dolaylı olarak yapılan ölçümler.
+
+79
+00:21:13,203 --> 00:21:22,543
+Hepsindeki ortak amacımız gerek verimlilik, gerek kalite, gerek gider ve gerek belgeleme masraflarının hesaplanmasıdır.
+
+80
+00:21:23,643 --> 00:21:28,223
+Şimdi doğrudan ölçülen inceliklerden tanımladığımız bazı ölçütleri.
+
+81
+00:21:29,364 --> 00:21:33,004
+Large Line of Code şeklinde on kısaltılmıştır.
+
+82
+00:21:33,423 --> 00:21:35,983
+Bu satırı sayısı denilmiştik.
+
+83
+00:21:36,264 --> 00:21:43,084
+Ama artık programların yazılımlarının hacmi, büyüklüğü çok yüksek olduğu için kilo Line of Code cinsinden söylüyoruz.
+
+84
+00:21:43,164 --> 00:21:45,443
+Yani bin çarpı on k kilo kısaltı için bin.
+
+85
+00:21:46,244 --> 00:21:51,284
+Buradan mesela yola çıkarttığında bir verimlilik ölçü belirleyebiliriz.
+
+86
+00:21:51,864 --> 00:21:54,244
+Kilo Line of Code bölü kişi çarpı ay.
+
+87
+00:21:55,508 --> 00:22:08,768
+Kaç bir şey çalışıyor, şu an kadar ne kadar süre geçti A5'sinde. Kaliteye yönelikçe çalıştığı örgütler tamamlayabiliriz. Bunlardan bir tanesi de hata bölü, kuraline off code. Yani bin satırda yaptığımız hata sayısı.
+
+88
+00:22:11,108 --> 00:22:17,988
+Ve gider diyebiliriz. Toplam gider bir kuraline off code. Yani bin satır kod başına ne kadar masraf yaptığımız.
+
+89
+00:22:19,539 --> 00:22:29,779
+Burada hem en büyük gider kalemiz genelde çalışan masraflarında. Onun dışında o yazılım üretmekte kullandığımız gereksinim lisans bedelleri olabiliriz.
+
+90
+00:22:29,779 --> 00:22:39,740
+Bundan sonra işlemler. Bunların üstünde çalıştığı sunuculardaki çalıştığı süre kapsınlar hakkımızda oransal.
+
+91
+00:22:40,211 --> 00:22:58,392
+Bakım masrafı veya sahiplik masrafı için amortisman kuyaslığı koymasanız veya bir araştırma Amazon Web Services gibi bir bulut üstünde koşturuyorsanız bu yazılımı onun ayrı kılmasraflarını koyabilirsiniz. Çok ilişkiler konulabilir işte. Bütün gider kalemleri eklenir buraya.
+
+92
+00:22:59,059 --> 00:23:10,440
+Belgeleme masrafı, belge sayfası bölü, line of code, masraf olmuyor. Bu belgeleme hacmi şeklinde, büyüklüksel bir şey oluyor.
+
+93
+00:23:12,279 --> 00:23:20,099
+Bu da belgelemeyi ne kadar ağırlık verdiğimizin bir göstergesi oluyor.
+
+94
+00:23:24,019 --> 00:23:45,000
+Şimdi dolaylı bir ölçüm örneği olarak Function Point, fonksiyon noktası ölçümünden bahsetmek istiyorum. Bunu literatürde önerilmesinin sebebi de kiloline of code ölçümünün çeşitli dezavantajlarından dolayı bir alternatif olarak Function Point.
+
+95
+00:23:46,228 --> 00:23:52,867
+Ölçünü önerilmişiz. Bunun da kendi içerisinde dezavantajlar vardır. Birazdan onları da konuşacağız.
+
+96
+00:23:54,367 --> 00:24:00,708
+Şimdi bu function point hesaplamada iki ayrı tablo oluşturmamız gerekiyor.
+
+97
+00:24:01,668 --> 00:24:05,968
+Birinci tablomuz fonksiyon noktası bileşenlerini hesaplamak olacak.
+
+98
+00:24:06,548 --> 00:24:10,928
+Beş ayrı bileşen var. İ eşittir birden beşe kadar. Beş ayrı bileşenlerimiz var.
+
+99
+00:24:11,539 --> 00:24:29,259
+Birinci birleşen, kullanıcının yazılma, giriş sayısı, yazılma yaptığı giriş sayısı, Yuzda. İkincisi, kullanıcının aldığı çıktı sayısı, Yuzda. Üçüncüsü, kullanıcının yazılma sayısı, Q'er. Şimdi Q'er başka, Atuk başka. Atuk bir hesaplanıcının sonucudur.
+
+100
+00:24:40,147 --> 00:25:06,728
+Yani daha mazraflı da sıçtayız. Bundan sonra çöne küçük sayısı, bir kod. Yani eğer database kullanıyorsanız kaç tane tablomuz var gibi. Ve dış arabilim sayısı. Yani bu yazılımın kümleçlik olarak çalışacağı veya işte gütmesi gerektiği veya girdi alması gerektiği çeşitli dış arabilimler nelerse onların sayısı. Bütün bunların.
+
+101
+00:25:07,220 --> 00:25:22,920
+Kaçar adet olduğunu bir yazacağız bu kabloya, dolduracağız. Ama tek başına da değil. Çünkü burada bir de ağırlık faktörü sütunumuz var. Basit, orta ve karmaşık olmak üzere.
+
+102
+00:25:22,920 --> 00:25:34,159
+Şimdi kullanıcının yazılma yaptığı giriş süresinin hepsinin basit ya da hepsinin ortaya da hepsinin karmaşık olmasını bekleyemeyebilirsiniz. Aynı şey diğer nicelikler içinde.
+
+103
+00:25:34,644 --> 00:26:00,784
+Gerek geçerlidir. O zaman bu sayı sütununu da üçe bölebiliriz. Basit olanlar, ortamlar ve karmaşık olanlar. Böylece her bir adet niceliğin hangi ağırlık faktörü ve ne kadar olduklarının sayılarını çarpa çarpa ondan sonra kendi arasında toplayarak da satırlara buluyoruz.
+
+104
+00:26:01,460 --> 00:26:14,660
+Şu satınların değerlerini ve daha sonra bütün bu satınların değerini de kümletif olarak topladığımızda ortaya fonksiyon noktası bileşenlerinden gelen kısım çıkacak.
+
+105
+00:26:15,880 --> 00:26:17,940
+Sonra da ikinci tablomuz gelecek.
+
+106
+00:26:20,403 --> 00:26:44,903
+Bunlar da çeşitli yazılım parametre. 14 tane yazılım parametresi var. Nedir bunlar? Birincisi, güvenli yedekleme ve geri yükleme gerekli. İkincisi, iletişim at yapısı gerekli. Üçüncüsü, dağıtılmış işleme fonksiyonları var mı? Dağıtılmış sistemler, peer-to-peer networkler veya günümüzde daha popüler olan mikroserviş tabelya uygulamalar gibi dağıtılmış işleme fonksiyonları var mı?
+
+107
+00:26:47,988 --> 00:27:01,028
+0 yok, 1 kolay, 5 en zor ya da en karmaşık olmak üzere bunları da yazıyoruz ve bunları da kendi arasında topluyoruz.
+
+108
+00:27:01,028 --> 00:27:09,548
+Ve ikinci bileşenimiz oluyor. Birinci bileşenimiz birinci tablodaki F, P, İ, ötekisi ikinci tablodaki F, İ bileşenimiz oluyor.
+
+109
+00:27:10,036 --> 00:27:16,135
+Bütün bunları topladıktan sonra bu formülü kullanacağız.
+
+110
+00:27:16,276 --> 00:27:28,576
+fp eşittir. Bu toplam fp'i çarpı 065 çarpı sigma f'i hesapladık.
+
+111
+00:27:28,875 --> 00:27:36,076
+Sigma fp'i hesapladık. Onları bu formülü yerine koyduğumuzda ortaya çıkan sayı bizim fp değerimiz olacak.
+
+112
+00:27:37,172 --> 00:27:47,251
+Yani burada, şuradaki şu sigma sizi aldatmasın. Burada tekrar bir sigma toplama işlemi yok. Ya da şurada tekrar bir sigma topla işlemi yok. Toplama işlemleri yok.
+
+113
+00:27:47,251 --> 00:28:02,391
+Derseniz altına üstüne bir şey yazmadık. Bu şu rakam birinci tablodaki çıkan rakam. Hepsi birden. Şunu tablo birden hesaplamıştık. Şunu da tablo ikiden hesaplamıştık.
+
+114
+00:28:03,571 --> 00:28:09,831
+Bu iki rakamı tek ve birer rakam olarak yerine koyduğumuzda olay bu şekilde çıkacak.
+
+115
+00:28:10,751 --> 00:28:13,951
+Şurada da bir şey olmadığı için bu da çarpı anlamına gelmektedir tabii ki.
+
+116
+00:28:17,911 --> 00:28:23,951
+Bunu yaptıktan sonra bunun üstünden...
+
+117
+00:28:24,852 --> 00:28:29,271
+Verimlilik, kalite, gider, belgeleme ölçümlerini yapabiliriz.
+
+118
+00:28:29,731 --> 00:28:35,852
+Daha evvel kiloline of code geçen kısımlarda artık FP'ye geçiyor. Başka bir fark yok.
+
+119
+00:28:39,635 --> 00:28:42,336
+Şu yukarıda olan kısımları da sözle söylemişim oldu.
+
+120
+00:28:43,816 --> 00:28:45,076
+Tabloları gösterirken.
+
+121
+00:28:46,395 --> 00:28:46,516
+Evet.
+
+122
+00:28:46,996 --> 00:28:56,875
+Şimdi, line of code yarışı, daha doğrusu aslında kilolight code ve function point ölçülerini, avantajı ve dezavantajlarından bahsedelim.
+
+123
+00:28:57,536 --> 00:29:03,596
+Bunlar tam olarak birbirinin zıttı şeklinde bir karşılaştırma olmuyor.
+
+124
+00:29:04,031 --> 00:29:19,031
+Bir tanesi hariç. Şimdi Line of Code'un en önemli eleştirisi ki Function Point'ın ortaya çıkmasının sebebi de odur. Birincisi, programlama diline bağımlı olmasıdır.
+
+125
+00:29:30,420 --> 00:29:32,220
+8 komutlu yapıyor olabilirsiniz.
+
+126
+00:29:34,280 --> 00:29:37,420
+Şimdi böyle yola çıkarsak eğer...
+
+127
+00:29:37,971 --> 00:29:54,771
+Ve çeşitli farklı dillerde kodu yazan bir yazılım edilsek de o zaman ne yapmamız gerekiyor? En temel bize ne öğretirdiler? Elmalarla alıpları karşılaştırmayalım dediler. O da da elmalarla alıpları karşılaştırmamak lazım.
+
+128
+00:29:54,771 --> 00:29:59,771
+Farklı programlama dilleri ve farklı geliştirme ortamlarında yaptığımız proje...
+
+129
+00:30:00,000 --> 00:30:17,819
+kendi aralarında değerlendirme şeklinde gidersek eğer, o zaman bu programlama diline bağımlılık özelliğinin getirdiği sıkıncının zararlarını en aza indirebiliriz.
+
+130
+00:30:18,559 --> 00:30:20,519
+Onu da bir parantez içerisinde söyleyeyim.
+
+131
+00:30:24,307 --> 00:30:35,307
+Fakat, bir de şöyle düşünelim. Yine Java'da çalışıyoruz diyelim ki ya da Nesli'nin herhangi bir ortamda çalışıyoruz diyelim mesela.
+
+132
+00:30:38,727 --> 00:30:47,607
+Tamamen aynı işi, tamamen aynı dilde biraz daha az satın konukla ve biraz daha çok satın konukla da üretebiliriz aslında.
+
+133
+00:30:53,172 --> 00:31:17,711
+Kaynak kodu bir metin editörünü açıp kaç fatır sayımız var diye baktığımızda, biz yanıtıcı olabilirsin. Çünkü, örneğin, basit bir tane Getter metodu yazıyorsun. Getter metodunun başlangıç paranteziyle, gövde açılış paranteziyle, gövde bitiş parantezi var. Gövde bitiş parantezini, gövde açılış parantezinin metot adıyla aynı yeri mi yazıyorsun yoksa bir alt satır mı sayıyorsun?
+
+134
+00:31:18,096 --> 00:31:30,336
+Ve o bir tane parantezde bir konut saymıyor musun, saymamalı mısın? Yoksa noktalı virgülleri mi saymalısın? Noktalı virgülleri sayıyorsan, kor dönüşümün iki tane arada noktalı virgül var. O zaman kor dönüşümüne saymalısın.
+
+135
+00:31:30,995 --> 00:31:40,096
+Ya da kor dönüşümün bir başlangıç vergesi var, devam ifadesi var ve artım ifadesi var. Başlangıç vergesi bir kere çalışıyor. Ondan sonra...
+
+136
+00:31:41,523 --> 00:31:53,743
+Fordermist'in içerisinde en iyi 10 tane komut var. Bu 10 tane komut 10 tane mi saymalısın? Fordermist'in kaç kere döneceği çalışma anı da ancak belli olabilir. O zaman o Fordermist'in toplam kaç kere döneceğini bilemezsin mesela.
+
+137
+00:31:53,743 --> 00:32:08,703
+Bu gibi aslında tek bir programlama dilinde bile Line of Code öğretmeni yaparken sorabileceğimiz çok fazla soru var ve farklı farklı tool'lar bu Line of Code'u farklı farklı şekillerde de hesaplıyor olabilirler.
+
+138
+00:32:09,523 --> 00:32:30,003
+Bu kadar farklı çeşitlemeler söz konusu. Yani farklı cetveller söz konusu, farklı cetvellerle yaptığımız ölçümün sonuçları da farklı olacaklar bitti. Bu nedenle mümkün oldukları her şey aynı ölçek, aynı cetvellerle ölçmeyi çalışmaktan da birini söyleyeyim size. Daha başka ne diyebilirim?
+
+139
+00:32:30,451 --> 00:32:53,491
+Ya da işte nesniye yönelimde genelde biraz böl parçalara yönet mantığı söz konusudur. Çok fazla iş yapan uzun karmaşık bir metot yerine bunun alt iş kalemlerini ayrı ayrı metotlara bölmek daha doğru olacaktır. Bu da ister istemez line of code satırını biraz daha arttıracaktır.
+
+140
+00:32:54,003 --> 00:33:02,383
+Belki biraz daha büyük hacim bir şey çıkacak ortaya ama anlaşılması çok çok daha kolay bir şey olmuş olacak.
+
+141
+00:33:03,963 --> 00:33:13,723
+Yani böyle çok durum var. Bütün bu sakıncalar nedeniyle daha değişik ne yapılabilir diye düşünüp function point yaklaşımıyla ortaya çıkılmıştır.
+
+142
+00:33:13,723 --> 00:33:17,883
+Bu da programlama dilinden bağımsızlık sağlamıştır bize.
+
+143
+00:33:20,500 --> 00:33:36,519
+Başka sorunlar ortaya çıkarmıştır. Line of Code ölçeğine geri dönersek. Line of Code ölçeğinin iyi tasarlanmış ama kısa yazımları da yeterince hassas, yeterince doğru değerlendiremediği de sahel çalışmalarıyla anlaşılmıştır.
+
+144
+00:33:36,519 --> 00:33:43,559
+Ve aynı zamanda işlemsel olmayan dillerdeki yazımlar da kolayca uyarlanamaması söz konusu.
+
+145
+00:33:44,000 --> 00:33:55,639
+Normal bizim müfredatımızda bütün bir dil anlatmıyoruz ama zamanla karşılaşabilirsiniz. O zaman anlarsınız diyeyim. Ben de çok anlamını söyleyemiyorum bu noktada.
+
+146
+00:33:56,659 --> 00:34:06,859
+Gelelim, bunların karşımda Function Point güzel oynayırdı, bize programları dinlenmeyi bağımsızlık ortaya çıkardı ama burada sübjektiflik çok önemli bir etken.
+
+147
+00:34:07,284 --> 00:34:24,564
+Orada sıfırdan beşe kadar değerleri atıyoruz ama neye göre atıyoruz? Kime göre, neye göre? Kim atıyor? Neye göre? Kim atıyor? Sorusunun yanıtı verdikten sonra neye görenin yanıtını daha rahat verebiliriz? Kendi deneyimini, bilgilerin bilgilerine göre etmektedir, söylemektedir.
+
+148
+00:34:24,564 --> 00:34:35,284
+İşte orada da o değerleri belirleyen kişiye bir seferci etmelik oluyor. Aynı işte fakir cetveller kullanıyorsak, ya koddan, ders, tahmin.
+
+149
+00:34:35,284 --> 00:34:58,824
+Problem nereye gidiyor? Tahmin hassasiyemiz, tahmin doğruluğunu düşünmek şeklinde getiriyor ortaya aslında. O yüzden olduğu önemli bir sübjektiflik diyor. Ama isterseniz bu sübjektifliği, eliniyet ortadan kaldırabilmek için ya da belirli noktada toparlayabilmek için DELF metodu var. Bunu göreceğiz. Bunu kullanabilirsiniz. Parantel içerisinde söyleyeyim.
+
+150
+00:34:59,380 --> 00:35:06,940
+Doğrudan fiziksel bir ölçüde olmamasının dezavantajları olabilir ve bu verinin toplanması da misleten güçtir.
+
+151
+00:35:08,480 --> 00:35:16,460
+İşte bu verilerin neler olduğunu gördük. Bunları düşündüğümüzde bunun daha net hassas değerlenebilmesi için.
+
+152
+00:35:17,748 --> 00:35:21,368
+Yazılım gereksinimler belgesinin tamamlanmış olması gerekmektedir.
+
+153
+00:35:21,948 --> 00:35:27,467
+Evet, bakın, soyu, input sayısı, output sayısı, küçük sayısı, bütün bunları analizi tamamlamadan,
+
+154
+00:35:27,467 --> 00:35:33,568
+daha belirli bir noktada tasarımı da belli bir yere getirmeden hesaplanması rol olmaktadır.
+
+155
+00:35:34,507 --> 00:35:41,688
+O yüzden ilk başta yaptığımız, SP'ye bile yaptığımız ölçüm ve tahminleri böylece ilerledikçe,
+
+156
+00:35:42,132 --> 00:35:46,412
+Tekrarlamak ve netleştirmek gerekmektedir.
+
+157
+00:35:49,351 --> 00:35:57,412
+Evet, bunların ardından kalite konusundaki ölçütlerden bahsetmek istiyorum.
+
+158
+00:35:58,332 --> 00:36:00,332
+Nijel ölçütlere gelelim.
+
+159
+00:36:01,412 --> 00:36:04,992
+Onları da yine nital ölçütler cinsinden ifade etmeye çalışacağız.
+
+160
+00:36:05,132 --> 00:36:09,231
+Evet ama tanımları nijel şekillerinde.
+
+161
+00:36:09,907 --> 00:36:18,228
+Bu nicel kalitelerini farklı kişiler, farklı gruplar, farklı şekilde hükümetlemekte ve farklı adlarlara bayırmakta.
+
+162
+00:36:19,827 --> 00:36:22,228
+Örneğin ISO 9126 der ki,
+
+163
+00:36:22,804 --> 00:36:44,224
+Kalit ölçüleri, işlevsellik, güvenilirlik, kullanılabilirlik, verimlilik, bakım kolaylığı ve taşınabilirlik ana bölümlerine ayrılmıştır. Bunların da alt bölümleri, işlevselliğin altında uygunluk, doğruluk, güvenlik vs. vs. güvenilirliğin altında uygunluk, hata bağışıklığı vs. vs. daha bir suç şey var.
+
+164
+00:36:45,331 --> 00:37:10,631
+McCall ve ekibi literatürde 3'e ayırmış bu kalite ölçüleri. İşlevsel ölçüde değiştirme ölçüleri ve taşınma ölçüleri olarak. İşlevsel ölçüde ortaya çıkanacak olan yazılım ürününün yaptığı işler sahip olduğu, ortaya çıkardığı işler bu şekilde söyleyeyim.
+
+165
+00:37:13,172 --> 00:37:31,132
+Her bir kullanım senaryosu metnenin gerçeklenmesi bir işlev olarak değerlendirmektedir. Bu işlevlerle ilgili ölçüler doğruluk, güvenilirlik, bütünlük, kullanılabilirlik ve verimlilik olmak üzere ayrı oluştur.
+
+166
+00:37:32,231 --> 00:37:39,551
+Değiştirilme ölçütleri ana başlığında bakım kolaylığı, esnek ve sınırılabilirlik olmak üzere üç ayrı.
+
+167
+00:37:39,764 --> 00:37:51,224
+ölçütü ilenemiştir. Taşınma ölçütleri ana başlığında da taşınabilirik, yeniden kullanılabilirik ve birlikte çalışabilirik olmak üzere üç ayrı ölçütten bahsetmiştik.
+
+168
+00:37:51,923 --> 00:38:05,764
+MacDonald ise benim en çok sevdiğim, çünkü en basit olan, akılda kalmasına en kolay olan, çiçek şekilde iki gruba ayırmıştır kalite ölçütlerinin. İç kalite ölçütleri ve dış kalite ölçütleri olmak üzere.
+
+169
+00:38:05,764 --> 00:38:13,903
+Ve diğer kategorilerdeki alt dalları buna göre çok daha rahat ayırabiliyorsunuz.
+
+170
+00:38:16,052 --> 00:38:36,532
+Ayırma noktası ne? İç kalite ölçütleri yazılımı geniştirenleri ilgilendiririz. Dış kalite ölçütleri yazılımı kullananları ilgilendiririz. Bu bağlamda hangi bir aklınıza gelebilecek kalite itibinin iç veya dış kalite yönelik olduğumu çok kolaylıkla ve netlikle karar verebilirsiniz.
+
+171
+00:38:38,643 --> 00:39:01,423
+Karat ölçütleriyle başlıyorum. Piyazımı, kullananları ilgilendiren ölçütlerle geçtik. Bunların kısa anlamlarını Türkçe ve İngilizce isimleriyle bir söyleyelim. Bunların hepsini ezberlemek zorunda değilsiniz kesinlikle arkadaşlar. Fakat her bir kategoriden birkaç tane aklınızda olsun.
+
+172
+00:39:02,739 --> 00:39:23,479
+Şimdi bu arada final sınavını test usulü yapmaya karar verdik. Klasik olsaydı, bu az önce söylediğim çok geçerliydi. Her birinden 2-3 tane net ezberlimizi yeter diyecektim. Ama şimdi bu kadar emin konuşamıyorum maalesef test usulü final konusunda.
+
+173
+00:39:26,643 --> 00:39:39,123
+Peki, şimdi doğruluk ilgisi korrektiz. Yazılımın hatalar içerisinde ise gereksinimlerde belirtildiği şekilde çalışmaz. Gördüğünüz gibi bu elbette en çok yazılım kullananı ilgilendirecektir.
+
+174
+00:39:41,423 --> 00:39:50,344
+Etkinlik, effeşensi, bellek, işlemci gibi sistem kaynaklarının en az oranda kullanımı. Başka bir deyişle verimli kullanımı.
+
+175
+00:39:51,804 --> 00:39:53,243
+Bu da bizi neyi sağlayacaktır?
+
+176
+00:39:53,632 --> 00:40:17,632
+Diğer çeşitli iç ve dış kalite ölçülerini avantajlar sağlayacaktır. Ortaya çıkacak olan yazılım ürünün, total cost of ownership, yani toplam sahiplik ve idame bedeli düşük olmasını sağlayacaktır. Kaynak israfına engel edecektir. Oradan ve çıkarttık enerji israfına görecektir.
+
+177
+00:40:19,956 --> 00:40:27,756
+Güvenilirlik ve güvenlik var. Bunların Türkçe isimleri birbirine yakın olduğu için belki karıştırılabilirsiniz. Bu konulara dikkat edin arkadaşlar.
+
+178
+00:40:28,275 --> 00:40:38,076
+Türkçe veya İngilizce isimlerinin yakınlığı nedeniyle ya da benzer kavramları anlatması nedeniyle birbirine karıştırılmamasına özen gösterilirsiniz.
+
+179
+00:40:38,775 --> 00:40:41,596
+İngilizce isimlerinden karıştırılmıyor ama Türk isimlerinden karıştırılıyor.
+
+180
+00:40:42,076 --> 00:40:47,596
+Güvenilirlik demek ki sistemin her koşu istenildiği gibi çalışması. Hata oluyorsa...
+
+181
+00:40:47,956 --> 00:40:59,336
+Bu hataları mümkün olduğunca seyrek gerçekleşmesi şeklinde tanımlanırken, güvenlik ise security, yetkisiz ve izinsiz işlemlerin mümkün olmaması demek.
+
+182
+00:41:00,536 --> 00:41:09,056
+Güvenlik dediğimizde bir tane ölçülük tanımlanmış burada. Hatalar arası, o ortalama zaman aralığı.
+
+183
+00:41:09,056 --> 00:41:13,136
+Mean time between failures, MTBP'nin açılımı.
+
+184
+00:41:16,019 --> 00:41:33,019
+Kınıl da belli bir süre içerisinde, kaç, belli bir zaman bilimi içerisinde ya da belki o sistemin o müşter tarafından kullanılmaya başlandığınız süreden şu ana kadar veya belki seninki, 3-6 ay ne belirliyorsanız. O zararlı sürede.
+
+185
+00:41:33,108 --> 00:41:58,528
+Kaç defa arıza oldu? Üç defa diyelim ki birinci ile ikinci arasında geçen doğru çalışma süresi ve ikinci ile üçüncü arasında geçen doğru çalışma süresini bilir. Kaç gün ya da kaç saat. Bu bilgiler elimizde ise işte o sayıyı böldüğümüzde o ortalama zaman aralığına olmuş oluyoruz.
+
+186
+00:42:01,108 --> 00:42:09,388
+Bu yazılımın bir arıza çıkarma, son çıkarma olasılığı var şeklinde bize ölçümü bu şekilde söylüyor.
+
+187
+00:42:10,588 --> 00:42:15,388
+Ve tabii MTBF ne kadar yüksekse o kadar güvenilir diyoruz biz bunu sisteme.
+
+188
+00:42:16,211 --> 00:42:43,412
+Güvenlikte ise, bir atasözümüz vardır, hırsızlık, kilit dayanmaz diye. Bu da öyle. Kırılamayacak güvenlik önlemi yok aslında. Ama bu da önemli olan, kırılmanın ne kadar zor olduğu, her elini konusallayan ya da kısıtlı ölçülerle bu kırma işlemlerini yapamazsa diyelim, ya da yapılsa bile iş işten geçmiş olması durumu da söz konusu olabilir, yeterince zor ise.
+
+189
+00:42:43,824 --> 00:42:54,663
+Şöyle bir örnek vereyim mesela. Para aktarım yapılacak bir hesaplar ile bir hesaba. Aynı banka içerisinde olsun, farklı bankalar arasında olsun, hiç fark etmez.
+
+190
+00:42:55,056 --> 00:43:13,635
+Bu işlemin yapılması için tabii birçok sistemin birçok işi birlikte yürütmesi gerekecektir. Bu gibi ve adım adım, alt işlem adımlarından geçirmesi gerekecektir. Bu tip mantıkla yapılan işlemleri transaction denir aslında arkadaşlar. Hareket diye bir Türkçe'ye geçiriyoruz.
+
+191
+00:43:13,635 --> 00:43:20,256
+Ve bak buradan yine şey, oradan da bütünleri de yapacağız bu arada.
+
+192
+00:43:21,715 --> 00:43:34,475
+Her neyse, şimdi bu süreçlerinde diyelim ki, one time password, tek kullanımlık paralelar üretilmiş, üretiliyor. O sayede bu işlemin hareketin güvenliği sağlanıyor.
+
+193
+00:43:41,844 --> 00:44:03,023
+Ve o haberleşme, haber paketlerinden yola çıkarak da one time password'ı algılamış ve onu kırmaya çalışarak da belki az ya da daha fazla para hareketi sağlayıp aradaki miktarda kendi hesabına aktaracak belki de mesela böyle şeyler yapmaya çalışıyor.
+
+194
+00:44:11,059 --> 00:44:26,279
+Çok güçlü bir bilgisayar sisteminde bile ya da bir bilgisayar ağrında bile 3 saat sürecekse ya da 1 saat sürecekse, halbuki artık para transfer işlemleri 10 dakikada bitebilecek olan bir şey.
+
+195
+00:44:27,940 --> 00:44:36,000
+Yani olan temperatörsatı kırsa bile işten geçmiş oluyor artık, bir işine yaramıyor elde ettiği bilgi gibi durumlar söz konusudur.
+
+196
+00:44:36,851 --> 00:44:43,371
+Bütünlükte ise, integriti, veriler ve işlemler arasındaki tutarlılığın konulması gerekmektedir.
+
+197
+00:44:43,371 --> 00:44:54,552
+Yine aynı örnekte bir A hesabından bir B hesabına bin lira gidiyorsa, bu işlemin sonunda A hesabından bin lira eksilmiş, B hesabına da bin lira.
+
+198
+00:44:55,188 --> 00:45:16,847
+Yatmış olmuş olması gerekiyor. Eğer durum böyle değilse problem var. A hesabından para düşmemiş ama B hesabından yatmış banka zararda. A hesabından para düşmüş ama B hesabına para yatmamış müşteri zararda. Yani bu gibi problemler.
+
+199
+00:45:17,364 --> 00:45:36,824
+Ya da bu hareket mantığından bahsettiğimde alt adımlar yürüttürürken alt adımlardan birisinin gerçekleşmesinde bir problem olursa sistem bir diğer önceki alt adımlar hiç gerçekleşmemiş gibi bir önceki en sağlam doğru duruma geri döndürülebilmelidir.
+
+200
+00:45:37,284 --> 00:45:41,943
+Döndürülemezse de tutarsızlık olmaktadır. Olay bu.
+
+201
+00:45:42,804 --> 00:46:02,003
+Sonra uyarlanabilirlik geliyor. Adaptability İngilizcesi. Sistemin değişik uygulamalar veya ortamlarda kullanılabilmesi için mümkün olduğunca az değişiklik gerektirmesi. Burada taşınabilirlikten bahsetmiyoruz arkadaşlar. Zaten bir kere taşınabilirlik bir iç kalite görüştüğü.
+
+202
+00:46:10,579 --> 00:46:14,940
+Yapılabilecek uyarlama eylemlerinden bahsediyoruz.
+
+203
+00:46:17,759 --> 00:46:27,239
+Hassaslıkta ise, bunu Türkçe tanımlar belirsiz. Sistemin kendisinden bekleyen için mümkün olduğunca iyi yapabilmesi.
+
+204
+00:46:28,460 --> 00:46:37,840
+Hassaslığın esas terimi şudur arkadaşlar. Yapılacak hesaplamanın ve ortaya çıkacak sonucun
+
+205
+00:46:38,612 --> 00:46:50,612
+Yeterli anlamlık düzeyli için o da matematik, saati, terim kavram olacak. Şöyle söyleyeyim. Mesela...
+
+206
+00:46:51,347 --> 00:47:01,887
+Sinansal işlemlerde, her ne kadar para bilimlerinde, bir lira olsun, bir dolar olsun, bir lira yüz kuruştur. Bir dolar yüz centtir.
+
+207
+00:47:02,547 --> 00:47:10,208
+Yani bu da demek oluyor ki, bir gülden sonra iki basamak aslında anlamlıdır biz insanlar için. Boş kuruş kalmadı.
+
+208
+00:47:11,147 --> 00:47:17,047
+İlk çıktığı zamanlarda bile kuruş bugün bir güldü de, YETLTD olduğu zaman her neyse.
+
+209
+00:47:17,684 --> 00:47:43,764
+Bizim için iki basamak anlamlı fiyat. 35.99 ise 35.99 gibi bir fiyat olmaz veya 35.899 gibi bir fiyat olmaz. Ama kur hesaplamalarında oluyor mesela. Ne bir dolar 20.98765.
+
+210
+00:47:44,400 --> 00:47:58,820
+Bankalar arası finansal işlemlerde bu virgüden sonraki 8-10 basamağa kadar hassasiyette, oraya gidecek kadar işlem yapılıyor.
+
+211
+00:47:58,820 --> 00:48:09,820
+İşte bu virgüden sonra kaç basamağa kadar ilerlenmesi gerektiği yapılacak hacimli işlemlerde ortaya çıkacak değerleri farklılaşmasına sebep olacak.
+
+212
+00:48:10,195 --> 00:48:27,896
+Ya da bir çemberin çevresini ya da bir darin alanını hesaplamaya çalışıyoruz. Pi sayısı ondalıklı bir sayı ve sonsuz devreden bir sayı. Bir gün sonra milyonuncu basamağa kadar, belki fazla abarttın, özür dilerim fazla abartıysam, sayı hesaplanıyor.
+
+213
+00:48:27,896 --> 00:48:38,175
+İşte ne kadar, bir gün sonraki kaç basamağa kadar pi'nin değerini alıp da hesaplama yaparsak, ortaya çıkartacağımız çevre, alan gibi bir sonuç.
+
+214
+00:48:38,195 --> 00:48:43,215
+O kadar hassas, yani gerçeğe yakın, öyle diyebiliriz.
+
+215
+00:48:46,615 --> 00:48:53,815
+Sağlamlık ise, sistemin aykırı gelişlere veya güç çalışma ortamlarına karşı çalışmayı sürdürebilmesi.
+
+216
+00:48:54,496 --> 00:48:56,516
+Tabii ki bir noktada çalışmayı kesebiliriz.
+
+217
+00:48:56,735 --> 00:49:04,076
+Ama ne noktada çalışmayı bıraktığını bilmek bizim için yararlı anlamlı, önemli olabilir.
+
+218
+00:49:05,427 --> 00:49:28,147
+Bir sistem aynı anda kaç kullanıcı veya saniyede kaç işlemi destekleyebiliyor. Eğer bu limitlerin üstüne çıkılıyorsa, elimizde ayırabileceğimiz yeni donanım kaynakları varsa, diyelim ki müşterinin o donanım kaynaklarına da sistemi genişletmek gerekebilecektir.
+
+219
+00:49:28,755 --> 00:49:38,195
+Ama ne zaman onun yanıtını verebilmek için sağlamlık ölçüm, son ölçümlerini yürütmek yapmak gerekli olacaktır diyebiliriz.
+
+220
+00:49:47,443 --> 00:49:52,643
+Başka ölçülerde kullanarak da artık dakikalar verebilirim ama bu bilginin de elimizde olması gerekmektedir.
+
+221
+00:49:53,443 --> 00:49:58,643
+Kullanılabilirdik. Yazılım kolay kullanılabilir. Yazılım kullanım kolaylığı arkadaşlar.
+
+222
+00:50:00,000 --> 00:50:03,119
+Hayatta tutulmasında en önemli etkenlerden bir tanesi.
+
+223
+00:50:03,539 --> 00:50:13,759
+Olay kullanılamayan yazılımla önünde sonunda terk edilmeye, daha çok da ön zamanlarda, erken zamanlarda terk edilmeye mahkum oluyor.
+
+224
+00:50:13,759 --> 00:50:22,379
+Hele ki değişim güç bir şeydir arkadaşlar. İnsanların çoğu maalesef değişimden korkar.
+
+225
+00:50:28,052 --> 00:50:35,851
+Değişmemeyi tercih eder. Etkilerini küçük büyük ölçeklerde hep görüyoruz.
+
+226
+00:50:35,851 --> 00:50:40,291
+Ancak neyse, nereden nereye işlettik.
+
+227
+00:50:40,559 --> 00:50:48,559
+Ama böyle psikolojik etken var, değişikliğe karşı direnç psikolojik etkeni var insanın.
+
+228
+00:50:48,559 --> 00:51:05,980
+Her iki mevcut bir bilgi sistemin yerine yenisi geliyorsa, bu yenisi ne kadar daha yetenekli ve iç dış karakteristiklerinden daha iyi olsa bile kullanılabilir olsa, o zaman kullanıcılar yeni sisteme gelişte ayak dirilecekler.
+
+229
+00:51:08,115 --> 00:51:26,695
+Birçok probleme yol açacak mısın? Bir de, şimdi isteyen arkadaşım mesela bana herhangi bir örnek versin, herhangi bir şey anlatsın, bu hangi kalite ölçüne girer diye sorsun, birden fazla aday söyleyebilirim.
+
+230
+00:51:28,351 --> 00:51:39,692
+Onun dahil olacağı kalite ölçüden bir şey, şuna girerim. Öğrencilerin başka adaylığa söyler, o yanıcağım bambaşka adaylığa söyler.
+
+231
+00:51:41,311 --> 00:51:54,672
+Çünkü bu ölçüler kimi durumlarda ölçüşüyor, kimi durumlarda ayrılması bu nedenle birbirinden daha zor olabiliyor. O da ayrı bir gerçek olarak.
+
+232
+00:51:56,239 --> 00:52:18,119
+Yazılım süreç modelleri, yazılımın geliştirenliğe ilgilendiren proje. Örneğin yeniden kullanılabilirlik ve yazılımın başkası parçalarının başka sistemlerde kullanılabilmesinin kolay. Bundan çok konuştuk arkadaşlar. Sonra da tekrar söylemeye gerek yok.
+
+233
+00:52:21,331 --> 00:52:23,871
+Bakım kolaylığı, maintainability.
+
+234
+00:52:25,331 --> 00:52:33,572
+Yazılıma yeni yetenekler eklemek, yazılımdaki hatalar eklemek, yazılımın başarılı arttırmanın mümkün olduğunca kolay olması, bakım olaydı.
+
+235
+00:52:33,572 --> 00:52:44,192
+Sebebi de hatırlarsanız, yazılım yaşam döngüsündeki temel dinleyiniz, yazılım ilerledikçe, hayat dönüşünde ilerledikçe, onlar değişiklik yapma maliyetimiz üstel oluna kalkıyordu.
+
+236
+00:52:44,612 --> 00:52:52,532
+Ve yazılım için harcayan toplam çabaya baktığımızda, yazılım bakım aşamasında gerçekleştiğini görüyorum.
+
+237
+00:52:53,331 --> 00:53:01,331
+Bakım kolaylığını iyileştiren her türlü iş etkenin başımızın üstünde yeri var.
+
+238
+00:53:02,012 --> 00:53:04,632
+Üçüncüsü esneklik, fleksibilite.
+
+239
+00:53:05,192 --> 00:53:14,391
+Yazılımın orijinal olarak tasarlanmış uygulama alanının dışında çalışabilmesi için gerekli olan değişikliklerin mümkün olduğunca az olması.
+
+240
+00:53:17,396 --> 00:53:37,016
+Karıştırmamalıyız arkadaşlar. Yeniden kullanabilmekte sistemin parkaları şeklinde geçen bir anahtar kelime var. Esneklik ise komple o yazılımdan, yazılımı komple yaparak başka ya da farklı uygulama alanlarına taşımak şeklinde geçmektir.
+
+241
+00:53:44,307 --> 00:53:53,367
+Evet, taşınabilirlik, portabilite, yazılımın farklı doğal ve işletim sistemleri gibi değişik çalışma ortamlarına kolaylıkla aktarılabilmesi.
+
+242
+00:53:54,327 --> 00:53:57,048
+Şimdi, bunun bize ne yararı var?
+
+243
+00:53:57,048 --> 00:54:06,467
+Bunun her iki modern, yani günümüz zamanlarında o kadar çok yararı var ki, daha çok şirket düzeyinde.
+
+244
+00:54:06,847 --> 00:54:17,688
+Yazılım Mühendisliği üzerinde güncel programlama dil ve ortamları sanal makineler üzerine kurmuş arkadaşlar, kurmaya başlandı.
+
+245
+00:54:18,488 --> 00:54:26,387
+Java öyle, .NET platformu öyle, Python öyle, birçok dil öyle.
+
+246
+00:54:28,068 --> 00:54:33,688
+Bir yerde yaz, bir daha fazla sistemde çalıştır.
+
+247
+00:54:34,835 --> 00:54:42,215
+Neden? Oktaya çıkartacağımız yazılım ürününü mümkün olduğu kadar geniş bir kitleye hitap etmesini istersiniz.
+
+248
+00:54:42,995 --> 00:54:53,675
+Mümkün olduğu kadar geniş bir kitleye hitap edebilmek için ise o yazılımın farklı donum ve işletim sistemlerinde de görebilmesini istersiniz.
+
+249
+00:54:53,675 --> 00:55:01,675
+O farklı donum ve işletim sistemlerini uyarlama için ne kadar bu iş kolay olursa,
+
+250
+00:55:01,907 --> 00:55:10,047
+O kadar karımız artar. O kadar hızlı bir şekilde daha geniş bir kitleye hitap edebiliriz hale etkileriniz.
+
+251
+00:55:11,827 --> 00:55:18,907
+Bütün bu etkenler göz önünde bulunmaktadır. Taşınabilir ve önemini daha net olarak açıklayabilirim.
+
+252
+00:55:20,047 --> 00:55:22,387
+Bir de kendi başımdan geçen bir şey söyleyeyim.
+
+253
+00:55:24,387 --> 00:55:25,227
+Şimdi
+
+254
+00:55:26,739 --> 00:55:45,500
+İrem Hoca aramıza döndü, hoş geldi. Ben programlama dilleri dersini, daha doğrusu şey diyeyim, yapısal programlama dersini İrem Hoca ve Zeynep Hoca'ya verdiğim dönemde bir sınav sorusu hazırladık.
+
+255
+00:55:46,228 --> 00:55:57,407
+İrem Hoca hazırladı. Ben başka soru hazırlamıştım. İrem Hoca başka soru hazırlamıştım. Belki çok hatırlıyorum her neyse. Ama o soruyu, yani özel bir soru İrem Hoca hazırladı.
+
+256
+00:55:57,407 --> 00:56:10,427
+Ama onun verdiği çözümü, ben kendi yükselimde çalışıyorum. Program patlıyor. Dedim, hocam böyle bir problem var. Ben de çözemedim.
+
+257
+00:56:10,784 --> 00:56:30,943
+Şimdi birlikte çözelim diye bittim yanına. Bir gösterdi İrem Hoca onun bilgi sorununda düzgün çalışıyor. Benim bilgi sorumda patlıyor. Şimdi aynı ideyi ve aynı derleyiciliği kullanıyoruz. Aynı işletim sistemini kullanıyoruz. Bende farklı, onda farklı çalışıyor Allah'ım.
+
+258
+00:56:30,943 --> 00:56:36,844
+Yani epey uğraştık İrem Hoca ile ama bulamadım kökenini.
+
+259
+00:56:37,268 --> 00:56:47,668
+Bu belki de benim bilgisayarımdaki aynı işletme istedim ama hangi servis ve hangi yamaların olup olmadığına kadar inen bir köken belki de.
+
+260
+00:56:47,668 --> 00:56:57,847
+Ve hani bırakın kökenini bulmayı, hani workaround ediliriz onu da iyi bir çözemedik. Yok, böyle bir durum.
+
+261
+00:57:00,211 --> 00:57:08,411
+Neyse, biz de hani ideal halini ben kağıt okurken ideal halinde, yani patlamadığı, orada daha zor oldu tabii.
+
+262
+00:57:08,531 --> 00:57:16,751
+Halbuki kodu kağıttan biz de onu ideye aktarıp da çalıştırıp da daha kolay noktamayı denilden şey kaldım, mahrum kaldım ama ne yapalım?
+
+263
+00:57:16,831 --> 00:57:20,471
+Biraz daha uzun okudum, alıp durun yani nihayetinde ve noktada.
+
+264
+00:57:20,471 --> 00:57:28,191
+Eğer bu bir pazara serenmesi gereken bir yazım olsaydı ne kadar?
+
+265
+00:57:28,211 --> 00:57:30,091
+Ulaşacak tıvallı. Allah Allah eylesin.
+
+266
+00:57:32,051 --> 00:57:34,531
+Evet, okunabilirlik ve anlaşılabilirlik.
+
+267
+00:57:35,831 --> 00:57:38,551
+Okunabilirlik kaynak kodunun incelemesine kolay olması.
+
+268
+00:57:39,031 --> 00:57:50,331
+Anlaşılabilirlik ise yazılımın sistem, bileşen ve kod düzeylerinde ne yaptığının farkına varabilmesinin mümkün olunca kolay olması.
+
+269
+00:57:51,188 --> 00:58:10,987
+Şimdi dikkat ederseniz biraz durakladım. Çünkü alternatif kavramlar üstünde düşünmeye çalıştım. Çünkü bir şeyin tanımını yaparken, açıklamasını yaparken, açıkladığımız şeyin adıyla aynı isim, fiil, sıfatları kullanmak, umarım doğru olmadığını düşünüyorum.
+
+270
+00:58:10,987 --> 00:58:15,067
+Tavuk yumurta problemi. Anlaşabilirlik, bilmem ne bilmem ne anlaşılabilirliğin.
+
+271
+00:58:16,244 --> 00:58:25,664
+Tamam, aslında öyle de bir noktaya kadar anlayabiliyoruz ama yakın kananlarla anlatırsak daha iyi etkiler geliyor diye.
+
+272
+00:58:31,155 --> 00:58:48,155
+Neyse, tamam. Şimdi buradaki aradaki fark şu, bir şeyi okuyabilirsiniz ama okuduğunuzu anlayamayabilirsiniz. O yüzden okumak ve anlamak farklı şeylerdir. Bakmak ile görmek gibi. Etrafa bakılırsınız ama oradaki önemli bir adetyi göremeyebilirsiniz. Bu şekilde.
+
+273
+00:58:55,188 --> 00:59:09,268
+İyileştirmesine götüren bir ölçütlerdir. Ama kendi içerisinde de ayrıca anlam taşımaktadır. Çünkü sadece bakım değil, yazılımın bütün geliştirme sürecinde de şimdi kolaylaştıran ölçütlerdir.
+
+274
+00:59:09,508 --> 00:59:14,948
+Mümkün olduğun için okunabilir ve anlaşılabilir, kod anlaşılabilir, kod yazmaya çalışıyoruz.
+
+275
+00:59:16,596 --> 00:59:31,455
+Burada böyle parçalara yönetin ayrıca bir katkısı olacaktır. Çok uzun, büyük bir şeyi anlamak yerine alt işlemlere ayrılmış bir şeyleri anlamaya çalışmak daha kolaydır.
+
+276
+00:59:33,235 --> 00:59:47,996
+Eğer yine günün sonunda belki yapılan tüm şeyleri anlamak için belki yine aynı çaba harcayacağız ama yine de daha az parça harcarız, daha az çaba harcarız.
+
+277
+00:59:48,576 --> 00:59:57,215
+Tamamen büyük bir lokmayı yemek ile daha küçük lokmalarla böldüğümüzde daha hızlı yiyebilmek örneğini burada vermek istiyorum.
+
+278
+01:00:00,000 --> 01:00:12,360
+Sınanabilirlik, testability. Sistemin isteyen gereksinimleri karşılıp karşılamadığını, sınanabilmesinin, hatta bir şey, oraya gelmeden önce bir şey daha şimdi, bileşen tüm sistemde hiç aklıma geldi söylemediğim.
+
+279
+01:00:12,360 --> 01:00:16,331
+Şimdi şurada...
+
+280
+01:00:17,492 --> 01:00:35,932
+Okunabilirlik kaynak kod düzeyinde tanımlanan bir şey. Anlaşılabilirlik, evet kaynak kod düzeyinde de geçerli ama bileşen ve sistem düzeyinde de çıkıyor bu. Ve sadece kaynak kodların da ibaret değil aslında. Biraz daha fazlası.
+
+281
+01:00:35,932 --> 01:00:41,632
+Evet, sarılabilirliğe girelim. Sistemin istenen gereksinimleri karşılayıp karşılamadığının.
+
+282
+01:00:42,420 --> 01:01:02,039
+Sınama budur zaten aslında. Bileşen ve tüm sistem çöpününün düzeyinde mümkün oldukça kolay olmasıdır. Sınamanın zor bir iş olduğunu gördük. Bu nedenle sinemayı kolaylaştıracak her türlü şeye başımızın üstüne yeri var diyoruz. Bu bağlamda değerlendirebiliriz.
+
+283
+01:01:02,039 --> 01:01:09,039
+Hatta ve hatta test driven design demiştik. Bunun da temel savuşudur.
+
+284
+01:01:09,972 --> 01:01:18,532
+Rahat bir biçimde ve rahat biçimde sınayamadığın bir şeyi doğru tasarlayamamışımdır büyük ihtimalle yaklaşımdan.
+
+285
+01:01:18,712 --> 01:01:23,112
+Kaynaklı fikrinden yola çıkmaktaydı. Burada onu da tekrar hatırlatalım.
+
+286
+01:01:25,132 --> 01:01:33,532
+Evet. Peki. Ölüşmeyi yapacağız. Kafamıza koyduk. Önemli anladık. Ama o da bir süreç olarak tamamlanmalıdır.
+
+287
+01:01:33,532 --> 01:01:36,572
+Bakayım şu an burada daha ne neyimiz kalmadı.
+
+288
+01:01:38,068 --> 01:01:40,148
+Tamam, peki, güzel, iyi.
+
+289
+01:01:42,643 --> 01:02:10,123
+Şimdi kalan kısımın üstünde bir ders saati kadar net konuşabilirim arkadaşlar ya da bir ders saati yakın konuşabilirim. O yüzden bence şimdi bir ara verelim arkadaşlar, bir on dakika. Beş yaz kalmış bitireyim demeyin. Ben her bir yazımın üstünde beş ile on dakika üzerinde konuşabilirim. Hatta ekmiş şeyler de göstereceğim. O yüzden şimdi on dakika ara vermeye zamanımız geldi demek istiyorum size.
+
+290
+01:02:10,643 --> 01:02:13,023
+Bu da mühendisliği bir şey.
+
+291
+01:02:17,139 --> 01:02:32,639
+Aslında pratikte 12 dakika falan olmuş olsun. Fakat 10, 0, 5 diyeyim. Aslında 10, 0, 2, 10, 0, 3 de var neyse. 10, 15. Bunun çeyrekli şeye kadar ala verin arkada. Ondan sonra devam edeceğiz.
+
+292
+01:16:08,884 --> 01:16:13,783
+Evet arkadaşlar, başlayalım kaldığımız yerden. Son yansıla.
+
+293
+01:16:19,859 --> 01:16:28,399
+Ölçme ilkelerinde kalmıştık ve demiştik ki ölçmenin önemini, nelerde kullanabileceğini epey konuştuk.
+
+294
+01:16:28,399 --> 01:16:36,519
+İyi, tamam. Şimdi madem öyle, biz de ölçme etkinlikleri yürütelim. Bunu yaparken arkadaşlar, bunu da bir süreç olarak değerlendirmeliyiz.
+
+295
+01:16:36,979 --> 01:16:47,079
+İşi doğdu düzgün bir biçimde yapabilmek için. Burada beş ayrı adım içeren bir süreç olarak ele alınır ölçme.
+
+296
+01:16:47,891 --> 01:17:05,291
+Ve bunlar sırayla yapılır. Ama tabii yazın yaşam döngüsü süresince sürekli ölçme yapılır. Kendi içerisinde şelale modeli gibi evet ölçme, ama bu ölçme sürekli tekrarlanırız.
+
+297
+01:17:06,231 --> 01:17:09,271
+Şimdi birinci adımız tanımlama adımı. Formulation.
+
+298
+01:17:09,811 --> 01:17:22,391
+Ölçütler, ölçülecek yazılıma uygun bir biçimde tanımlanır. Bu da genelde kendi ölçütlerimizi önermek yerine daha çok literatürdeki hazır ölçütleri kullanırız.
+
+299
+01:17:22,391 --> 01:17:37,531
+Yani bu bir ölçüt önermek. Eğer literatürdeki ölçütler arasında ham olarak sizin ihtiyaçlarınızı hitap eden ölçüt bulamadıysanız ancak o zaman yapmanızın anlamlı olduğu bir şeydir.
+
+300
+01:17:37,811 --> 01:17:50,811
+Bu bağlamda birden fazla ölçük kullanaraktan da ihtiyaçlarımız, tek bir ölçüm ve ölçüm yapılmayacak. Biz yazılım projemizin çok çeşitli...
+
+301
+01:17:51,572 --> 01:18:09,311
+Bakış açılarıyla çok çeşitli yönlerden ölçme ihtiyacımız var. Bu noktada aynı noktaya yönelik ölçümlerimizde bile birden fazla ölçü tüm kullanarak yine ihtiyacımız olan noktaya gelebiliriz.
+
+302
+01:18:09,695 --> 01:18:21,675
+Yine bütün bunlara rağmen çok önemli bir şeyi yorumlamak ve anlandırmakta eksik kalıyorsa literatördeki ölçüde o zaman siz de yeni bir tanesini önerebilirsiniz.
+
+303
+01:18:22,255 --> 01:18:24,876
+Ama tabii bunun bazı zorluklarından bahsedeceğim.
+
+304
+01:18:26,556 --> 01:18:32,536
+Bu da daha şu an somut olarak konuşacağımız şey, ölçülecek yazılıma uygun olmak.
+
+305
+01:18:33,359 --> 01:18:57,099
+Yapısal programlamada ve nesneye yönelik programlamada farklı ölçütler kullanılması gerekebilecektir. Örneğin, Depth of Inheritance Tree diye bir ölçüden bahsedeceğiz. Kalıtım aracının derinliği. Biliyorsunuz kalıtım nesneye yönelimin önemli bir özelliği. Bir saniye arkadaşlar, iki dakika bir içim var kusura bak.
+
+306
+01:20:39,988 --> 01:20:52,408
+Özür dilerim. Devam edelim. Ne diyorduk? Evet, ölçüde ikinci zaman kullanılan programlama diline özel olarak dönüyoruz.
+
+307
+01:20:52,783 --> 01:21:17,623
+Örneğin, nesne yönelinde kalıtım söz konusu ve ifsat loganlarında kalıtım diye bir şey söz konusu değildir. Kalıtımın önemini biliyoruz. Önemli bir gereç. Çok biçimlik gibi önemli yeteneklere bizi götüren bir gereç ama diğer ilişkilerine göre daha ağır bir ilişki olduğunda sadece çok gerekli yerlerde kullanılması gerekiyor gibi konuşup etmiştik.
+
+308
+01:21:18,003 --> 01:21:24,824
+Ve kalıtım hiyerarşisi kurduğumuzda bu hiyerarşinin çok derin olmaması gerektiğini bahsetmiştik.
+
+309
+01:21:25,264 --> 01:21:30,003
+İşte bu nedenle Depth of Inheritory Stree diye bir ölçümüz vardır.
+
+310
+01:21:30,463 --> 01:21:37,203
+Fakat bunu yapısal problemlere uyarlayamayız mesela gibi.
+
+311
+01:21:39,380 --> 01:21:52,680
+Ve ortaya çıkaracağımız yazılımın türü de bizim için önem taşımaktadır. Bu türe göre daha çok önem verdiğimiz konuları, bu sona kritik konuları ölçüme ihtiyacı duyarız.
+
+312
+01:21:53,200 --> 01:22:00,200
+Zaten bu noktada aslında işin içerisine GQM, Goal Question Metric yaklaşımı girmektedir.
+
+313
+01:22:04,960 --> 01:22:11,960
+Bu hedefe ulaşmayı sağlayabilecek...
+
+314
+01:22:13,460 --> 01:22:22,079
+Ne düzeyde ulaştık sorusuna yanıt verebilmek için ne gibi niteliğin niteliklere bakmamız lazım.
+
+315
+01:22:22,520 --> 01:22:27,979
+Ve metrikte işte o nitelikleri ölçen ve bize yorumlayan doğru metrik hangisi şeklinde?
+
+316
+01:22:27,979 --> 01:22:32,680
+Biz yaklaşımlar seçeriz seçimi yaparken.
+
+317
+01:22:33,699 --> 01:22:41,139
+Bu bağlamda işte gerçek zaman uydurulmalarda response time bizim için daha önemliyken, gönüllü yazılımlarda.
+
+318
+01:22:41,460 --> 01:22:54,719
+Performansa yönelik ve işte bu nokta da az sistem kaynağı kullanmaya yönelik ölçüden daha fazla önem taşımaktadır gibi hususları ilk haftalarda konuşmuştuk zaten.
+
+319
+01:22:55,680 --> 01:22:58,039
+İkinci adım toplama adımı Collection.
+
+320
+01:22:59,764 --> 01:23:09,503
+Bu seçilen, kendi taraf ettiğimiz veya seçilen ölçütlerin gerektirdiği veriler neler? Bunları toplama elde etmek aşaması. Collection toplama.
+
+321
+01:23:10,203 --> 01:23:19,963
+Üçüncü aşama hesaplama aşaması. Analysis. Ölçütlerin hesaplanması yani ölçümlerin elde edilmesi. Burada matikmatiksel araçlar kullanmalıyız elbette.
+
+322
+01:23:21,283 --> 01:23:26,963
+Gerek toplama aşamasının, gerek hesaplama aşamasının otomatik yapılması istenmektedir.
+
+323
+01:23:27,604 --> 01:23:30,664
+Ardından yollama aşaması geliyor. Interpretation.
+
+324
+01:23:31,072 --> 01:23:39,871
+Elde edilen ölçüm değerlerinden yararlı anlamlar çıkarılması. Bunu yorumlama engelli konusunda özellikle konuşmuştuk zaten. O işlemleri yapıyoruz.
+
+325
+01:23:39,871 --> 01:23:55,252
+Ve son aşama, geri besleme kullanma aşaması, feedback. Kalktılan sonuçların, elde edilen anlamların yazılım ekibinin bildirilmesi ve yazılım ekibin sonuçları kullanarak yazılımı iyileştirmesi.
+
+326
+01:23:56,072 --> 01:23:58,252
+Sadece ölçmek geri bize getirilmez.
+
+327
+01:23:58,671 --> 01:24:09,251
+Bunu yorumlamak da tek başına bir yeri bize getirmez. O yorumların karşılığında almamız gereken eylemler varsa onları yürütmek bize esas getirir sağlar.
+
+328
+01:24:10,691 --> 01:24:22,811
+Mesela Depth of Inheritance'deydi. Faz özür dilerim. Bu arada şey basmış olur. Neredeyiz? Şuradayız. Örneğin işte şey olabilir mesela.
+
+329
+01:24:25,171 --> 01:24:40,231
+Büyüklük ölçütleri belki kullanıyoruz. Diyelim ki line of code ve number of methods. Uzun metotlardan ibaret sınıfları daha kolay anlaşılan metotlara dönmek.
+
+330
+01:24:40,231 --> 01:24:53,171
+Ya da belki bir sınıftan, bir sınıfa çok fazla sorumluluk verdiysek, uyumlusu sorumluluklar verdiysek, bu sorumlulukları kendi arasında uyumlu art kümeleri ayrılıp her bir art kümeleri farklı bir sınıf.
+
+331
+01:24:53,171 --> 01:25:06,431
+Bu sorumluluklara dağıtmak, büyük çoğu zaman da yeni sınıflar oluşturarak bu sorumlulukları dağıtmak şeklinde çalışmak gibi işler yapmamız gerektiği anlaşılabilecektir. Öyle bir ölçümlerin sonucunun ardından.
+
+332
+01:25:10,031 --> 01:25:15,971
+Ayrıca şimdi bir ölçüm tabii ki amacımıza hitap etmesi çok önemli olduğu gibi.
+
+333
+01:25:16,692 --> 01:25:37,332
+Onun sahip olmasının arzu edildiği bazı özellikler de var. O özellikleri sahip ölçüleri kullanmakta bize avantaj sağlayacak. Nedir bunlar? Öncelikle uygun bir matematiksel özelliğe sahip olmasıdır ki bunlar aslında yorumlama engelini düşüren özelliklerdir.
+
+334
+01:25:37,728 --> 01:25:56,128
+Örneğin, normalize olması tercih edilir. 0-1 arası sonuçlar üretmek gibi. 0 en kötü, 1 en iyi, 0.5 de ortalama bir değer. Bunun ters olantısı da olabilir. 0 en iyi, 1 en kötü ama 0-5 yine arada ortalama bir şey gibi.
+
+335
+01:25:56,851 --> 01:26:13,332
+Öbür türlü anlamlı değerlendirme aralıkları vermeli bize bu ölçü. Örneğin birazdan göreceğiz. Diyeceğiz ki neydi? Elcom, Lekos, Kohejin'in metod.
+
+336
+01:26:13,775 --> 01:26:26,315
+Biri ile en arasında sonuç üretilir. En ne çıkıyor? On çıkar, yirmi çıkar, yirmi çıkar, yüz çıkar. Ama bunlar ne demek o? İki yüz çıkar. Ya sadece yüze kadar değil. İki yüz çıkar. Nedir? Bu anlamı nedir?
+
+337
+01:26:28,095 --> 01:26:41,755
+Bunun hangi aralıklarda iyi, hangi aralıklarda orta, hangi aralıklarda kötü olduğunu değerlendirmesi için bu Erkom Açık'ın önermekinden çok daha sonra yapılan saha araçlı.
+
+338
+01:26:41,775 --> 01:26:52,675
+Malarıyla denilmiş ki 0 ve 20 arasında iyidir. 20-50 arasında ortalama da iyiliğe çekilmesi tercih edilir. Çünkü biliyorsunuz koalicin çok önemli bir karakter oluştu.
+
+339
+01:26:53,095 --> 01:27:00,755
+50'nin de üstündeyse mutlaka mutlaka düzeltilmedir şeklinde sonuçta ortaya çıktı. Ama ilk önceleri de yoktu.
+
+340
+01:27:00,755 --> 01:27:06,475
+Şimdi bir eleştiri olarak söyleyeyim. Zaten son eleştiri kısmında zaten değineceğiz. Bunu tekrar edeceğiz.
+
+341
+01:27:09,775 --> 01:27:18,536
+Doğrulanabilmeli. Yani bir ölçüde verdik, böyle veriler toplanıyor, böyle yolunlanıyor, böyle anlamlandırılıyor.
+
+342
+01:27:19,636 --> 01:27:26,735
+Tamam da, acaba gerçekten o ölçütün önerdiği şekilde yapılan yolunlama, doğru bir yolunlanma mı?
+
+343
+01:27:27,036 --> 01:27:29,815
+Bize verdiği bilgiler doğru bilgiler mi?
+
+344
+01:27:30,216 --> 01:27:33,876
+Onun da ayrıca saha testlerinin yapılması gerekiyor.
+
+345
+01:27:33,876 --> 01:27:35,115
+Doğrulaması.
+
+346
+01:27:35,796 --> 01:27:47,416
+Yapılmamış bir ölçütü kullanıyorsak, onu doğrulayan biz oluyoruz belki de. Ama tabii bu doğrulanma sonuçlarımızı da elbette yayınlarda paylaşasak iyi bir iş yapmış oluruz.
+
+347
+01:27:48,136 --> 01:27:48,736
+Diyelim.
+
+348
+01:27:51,604 --> 01:28:03,284
+Ama her özel şirketim yaklaşmıyor. Onu da zaten en son kısımda tekrar konuşacağız. Onu oraya saklayayım. Önce birkaç ölçüt örneği görelim bakalım. Nesine yönelik bazı ölçütler göreceğiz.
+
+349
+01:28:03,284 --> 01:28:17,404
+Ve ortada nihayetinde iç kalite ölçütleri açısından daha iyi bir yazılma çözülmesini bekliyoruz. Bu ölçütleri herhangi bir aşamada kullanabiliriz.
+
+350
+01:28:19,604 --> 01:28:38,944
+Itibaren kullanmaya başlayabiliyoruz bunlardan bazılarını. Özellikle coupling ile ilgili olanları. Çünkü daha analiz aşamasının sonunda metotları olmasa bile nesneler ve ilişkilerini gösteren sınıf şehrinimiz oluyor. Ve o dair bir yola çıkarak bağlaşım hesabı yapabiliriz pekala.
+
+351
+01:28:39,728 --> 01:28:53,247
+Ama tabii ki süreç içerisinde ilerledikçe farklı kararlar verip analizi tasalıma taşıdığımızda tasarımda değişiklikler yapa yapa ölçüm değerleri değişecektir elbette.
+
+352
+01:28:56,275 --> 01:29:08,076
+Sürekli kaliteli birbirine giden doğru yolda mıyız değil miyiz? sorusunun yanıtını verebilmesi için sürekli de ölçüm sonuçları ile izlenmelidir yazılım projesi.
+
+353
+01:29:09,395 --> 01:29:36,695
+Tabi proje ölçüklerinden de bahsetmiştik. Bir yandan onlar da tutulan bir yeri de biliyoruz. Şu an iç kalite yönelik iç ölçüklerden bahsediyoruz şu an. Burada en yoğun, yaygın olarak kullanılan en eski olmasının nedeniyle, en eski olduğu için de daha fazla geçerleme çalışmasının yapılmış olması nedeniyle, CK ölçükleri kullanılıyor. CK çidanber ve kemeler.
+
+354
+01:29:37,395 --> 01:29:52,595
+Araştırmacının soy isimleri, onun dileşimi. Neler var CK metodisinde? WMC var mesela. Weighted methods per class. Sınıftaki ağırlıklı metod sayısı. Ne anlama geliyor? Birazdan konuşacağız.
+
+355
+01:29:53,175 --> 01:30:02,135
+DIT, Depth of Inheritance Free, kalıtım ağacının derinliği. Dedik yani yediği falan pek geçmesin. Beş, iyidir yediği de geçmesin dedik.
+
+356
+01:30:02,579 --> 01:30:13,340
+NOC, Nambulof, şırkın alt sınıf sayısı, RFC, response for a class, sınıfın yanıt kümesinin eleman sayısı.
+
+357
+01:30:15,731 --> 01:30:26,891
+Bütün metotlarından olabilecek geri dönüşlerin olası aralığına baktığımızda bu aralıklardaki eleman sayılarından temel olarak bahsediyor.
+
+358
+01:30:27,152 --> 01:30:31,372
+Çok antresine girmeyeceğiz de bu ders kapısında merak eden arkadaşlar inceleyebilirler.
+
+359
+01:30:32,211 --> 01:30:37,012
+Sırf merakınızı cezbetme yönü kısa bir şey söylemiş olayım, tanınlarmış olayım.
+
+360
+01:30:37,012 --> 01:30:43,731
+Bunu da değerlendirmesinde 0 ile 50 arasında çıkan değerler iyi, 50 ile 100 arasında çıkan değerler iyi.
+
+361
+01:30:43,731 --> 01:30:49,572
+Orta kadar, 100'den daha büyük bir ölçüden değerler ise kötü olarak değerlendirilir.
+
+362
+01:30:50,131 --> 01:30:53,092
+CBO coupling bağlaşım, sınıflarız bağlaşım.
+
+363
+01:30:53,492 --> 01:30:57,692
+Elkom açılımı lack of cohesion in methods.
+
+364
+01:30:57,872 --> 01:31:03,352
+Yani uyumun eksikliği, biz uyumun yüksek olmasını isteriz.
+
+365
+01:31:03,859 --> 01:31:21,699
+Ama bu alcohol bize uyumun eksikliğinin yüksek olmasını gösterir. Yani alcohol, önce ne istiyoruz? Cohesion'un yüksek olmasını istiyoruz. Cohesion yüksek ise soluk iyi.
+
+366
+01:31:22,228 --> 01:31:34,188
+Erkol ise uyum eksikliği. Bu nedenle eksiğin düşük olması tercih edilir bu noktada. O yüzden Erkol ölçümün sonucu ne kadar düşük, o çıkıyorsa o kadar iyi demektir.
+
+367
+01:31:34,907 --> 01:31:42,788
+Sıfır iyi, 1 ile 20 arasında o hata, 20 ile üstü ise kötü olarak değerlendirilir genelde.
+
+368
+01:31:43,283 --> 01:32:03,283
+Yalnız burada sıfır, isterseniz biraz daha şey yapabiliriz. Yani sıfırla beş arasında iyi. Beş sıfırla yirmi arasında iyi diyelim ki yirmi elli arası orta, on üstü kötü şeklinde de kategori edebilirsiniz. İlk çıktığında bu aralığı verdiler.
+
+369
+01:32:09,492 --> 01:32:14,311
+Sıkıl çıkması belki de bu ölçüt hesaplanamadığı anlamına da gelmektedir.
+
+370
+01:32:15,220 --> 01:32:38,960
+O yüzden o her zaman için bir şüphe uyandırır. Hele ki bu ölçümü yapan çeşitli tool'lar var. Metrik ve ölçümlerine yarayan çeşitli tool'lar var. Belki de o tooldaki bir bug nedeniyle de sıfır çıkmış olabilir. O yüzden sıfır beni her zaman için işkillendirir. Bu durumlarda başka bir gereçle kullanmaktan da ikinci bir fikir almak yararlıdır diye düşünüyorum.
+
+371
+01:32:39,380 --> 01:32:54,079
+Çok çok, tool'un kendisinden de şüpheleniyorsanız ise, elle hesaplama yapmanın daha kolay olduğunuz, ben küçük sınıflar üstünde, elle yaptığınız hesaplamalarla da sağlama işlemleri yürütebilirsiniz isterseniz.
+
+372
+01:32:54,520 --> 01:33:01,739
+Bir kere daha artık güvenmeye başladığınız zaman, tool'a artık bir daha bunları yapmazsınız. Çünkü mümkün olduğu kadar otomatik yapılması gerekiyor dedik bu işlerin.
+
+373
+01:33:03,828 --> 01:33:23,927
+Ve Elkom ölçülerin çeşitli tanım belirsizlikleri nedeniyle alternatif Elkom ölçüleri de önerilmiştir. Kimisi çirdenler ve kemerlerin kendisi tarafından olası eksikler, hata durumları fark edip yeni versiyonlar önerilmiştir. Kimileri de başka araştırmacılar tarafından önerilmiştir.
+
+374
+01:33:31,828 --> 01:33:36,288
+üretilmiş olan literatürde farklı koalicim ölçüleri de var.
+
+375
+01:33:37,847 --> 01:33:40,508
+WMC'yi ayrıntılı olarak iliceleyelim.
+
+376
+01:33:41,088 --> 01:33:49,967
+C1 sınıfımızın M1'den MN'e kadar metotları varsa, bunların da karmaşıklıklarının C1'den CN'e kadar olarak belirlemişsek,
+
+377
+01:33:50,528 --> 01:33:56,688
+WMC'yi eşittir, I eşittir, 1'den N'e kadar bütün Cİ'lerin, küçük Cİ'lerin tüm natif toplamımız.
+
+378
+01:33:57,908 --> 01:34:07,528
+Peki, şimdi burada en önemli problem şu, bu C1'den C'ye ne kadar olan katsayıla neye göre belirleyeceğiz? Başka bir de işte, metot kalmaşıklığını neye göre belirleyeceğiz?
+
+379
+01:34:07,528 --> 01:34:22,268
+Ha, burada DELF yönetiminde konuşmuşuz aslında. Daha evvelden yukarıdan şöyle hızlıca baktım da yoktu. 84, 285. Neredeyim hatırlayayım. Yani renkli bir şekli de vardı kesinlikle ortalığında.
+
+380
+01:34:24,979 --> 01:34:26,979
+Dari bir şey, da bir şey yapıyoruz.
+
+381
+01:34:27,639 --> 01:34:28,979
+Çeviri ve bir şey yapıyoruz.
+
+382
+01:34:34,100 --> 01:34:34,560
+Evet.
+
+383
+01:34:35,828 --> 01:34:57,308
+Evet, tamam. Maliyet tahmininde şey etmişiz. Aynı şeyi buralarda da kullanabiliriz gerçi. Benim az kalmışlık dediğime başkası çok kalmışlık diyebilir. Ama bakın, bu derfi yöntemiyle yaklaştırmaya çalışmak masraflı bir işi yani. Kişilerin göçleri ayrı toplanacak, bakılacak. Bunun bir kere kadar otomatik olması gerekiyor demeliyiz.
+
+384
+01:34:57,828 --> 01:35:03,828
+İşte bu belirlemdeki öznerliği kimisi, ya bu güçlü öndür diye yorumlar kimisi.
+
+385
+01:35:03,828 --> 01:35:30,748
+Onun için de zayıf yön diye yorumlar. Aynı şey iki farklı şekilde mi yorumlarınız? Olabiliyor işte arkadaşlar maalesef. Her şey de olabiliyor. Hayatımızda, karşılaştığımızda, basit şeylerde bile olabiliyor bu. Ben belirlemelerdeki öznerliğin zayıf yön olduğu taraftarındayım ve bu öznerliği mümkün olduğu kadar nesnelleştirmeye, çekemeye taraftarıyım. Bu bağlamda kalmaşıklık belirlemek için.
+
+386
+01:35:31,828 --> 01:35:43,828
+Complexity adı verilen bir hesaplama yöntemi var. Karmaşıklık hesaplama yöntemi var. Ayrıltırı hatırlamıyorum ama bir white box hesaplama yöntemi.
+
+387
+01:35:45,208 --> 01:35:50,748
+Metodun içindeki döngüler, biz konukları, kaç farklı dal var.
+
+388
+01:35:51,136 --> 01:36:01,096
+Farklı farklı şekilde bunların hesaplamalarından yola çıkarak kaynak kod üstünden somut hesaplamalarla yapılan bir ölçümdir bu.
+
+389
+01:36:01,536 --> 01:36:03,776
+Ölçüktür bu, sarkomotik kompleksi.
+
+390
+01:36:04,256 --> 01:36:12,016
+Eğer kendiniz belirlemeyip bu sarkomotik kompleksiteyi veriyorsanız o zaman hiçbir sakıncası kalmaz değil bu ölçüktür.
+
+391
+01:36:12,307 --> 01:36:19,387
+Peki, bu ölçük bize nasıl vehberlik edecek? Söylediği sonuçta nasıl yolumlamayı duruyuz, nasıl anlamlandırmalıyız?
+
+392
+01:36:20,047 --> 01:36:33,768
+WMC bir sınıfın karmaşıklığını belirlemektedir. Ve çok sayıda metodu olan sınıflarında WMC'sinin yüksekliğine olasılığı son derece daha yüksektir, yani eğilimi artmaktadır.
+
+393
+01:36:34,292 --> 01:36:45,692
+Belki az sayıda ve karmaşık metodularda, biz burada mümkün olduğu kadar karmaşıklığı azaltmaya çalışıyoruz. Bakım aşamasında daha çok bu işi kolay bir üretebilmek için.
+
+394
+01:36:47,123 --> 01:37:00,224
+Aynı zamanda WMC yüksekse, LCOM'a da veya başka bir koelcim ölçüsüne de bakmak lazım. O sınıflar çok fazla sorumluluk yüklenmiş de olabiliriz o sınıfta.
+
+395
+01:37:00,904 --> 01:37:08,684
+Yani WMC yüksek çıkıyorsa, yüksek çıkan sınıfları tekrar gözden geçireceğiz. Gerekirse onları refactör edip.
+
+396
+01:37:10,996 --> 01:37:19,956
+Metotlar ekstrakt edeceğiz, aynı sınıf içerisinde kalacağız veyahut da farklı farklı sınıflar da çıkartacağız, oluşturacağız mesela.
+
+397
+01:37:20,736 --> 01:37:24,716
+Yani o sınıftaki fazla sorumluluğunu dağıtacağız, uymadan bakacağız.
+
+398
+01:37:24,716 --> 01:37:38,716
+Ama bu WMC'nin bir eleştir olarak da nispeten uygulamaya özel olduğunu ve bunun bir projede WMC ile ilgili çıkarttığımız sonuçların...
+
+399
+01:37:38,996 --> 01:37:44,016
+Başka projelerde de ayrı anlama gelmeyebileceğini söyleyemiz.
+
+400
+01:37:44,016 --> 01:37:45,016
+Çünkü...
+
+401
+01:37:46,036 --> 01:38:01,436
+Mesela basit bir iş uygulamasında, basit bir bilgi sistemindeki sınıflarımızın WMLS'in yüksek çıkıyorsa bu bizim hatamızdır büyük ihtimalle. Tasarım eksikliğimizdir. Bunları daha iyi tasarlamaya çalışırız.
+
+402
+01:38:14,036 --> 01:38:29,376
+Anlaşık metotlar kodlamak zorunda kalabiliriz. Orada yapacağımız bir şey yok. Yani ne kadar uğraksak bile WMC'yi düşünemeyiz. O gibi bir uygulama alanında, problem alanında WMC'nin yüksek çıkması doğaldır deyip geçmemiz gerekmektedir mesela gibi.
+
+403
+01:38:29,939 --> 01:38:36,559
+Bundan bahsediyorum. Bu son maddeyle uygulamaya özel olması ve yeniden kullanılabilir bir düşük olması açısından.
+
+404
+01:38:36,559 --> 01:38:42,880
+Öte yandan, uygun değer aralıkları nedir? Kaçla kaç arasında iyidir? Kaçla kaç arasında kötüdür?
+
+405
+01:38:43,399 --> 01:38:49,739
+Burada, aynı projenin içerisinde göreceli karar vermeniz gerekmekte arkadaşlar.
+
+406
+01:38:50,359 --> 01:38:57,939
+Bu özellikleri bütün sınıfların WMC'lerine baktığımızda, bir sonraki koşumuzda çevremizde çevrimizde çeşit süreç kullanıyoruz.
+
+407
+01:38:57,939 --> 01:39:10,939
+Ya da şelale süreci kullanıyor olsanız, refactoring için ayırdığınız işler, görevler olabilir. O sürede WMCT en yüksek olan sınıfları...
+
+408
+01:39:11,444 --> 01:39:31,784
+Şu işte rehberlik doğrultusunda müdahale etmek şeklinde kullanırız bunu. Yoksa şu çıkmışsa iyi, şu çıkmışsa kötü gibi bir net bir aralıkta değerlendiremiyoruz. Ne kadar düşük, o kadar iyi diyoruz ve büyük olanları küçültmeye çalışmak şeklinde ilerliyoruz diyebilirim.
+
+409
+01:39:33,864 --> 01:39:34,724
+WMC bu.
+
+410
+01:39:35,731 --> 01:39:59,792
+Başka çeşitli bağlaşım ölçütleri var, uyum ölçütleri var. Ondan sonra sınanabilirlik ölçütleri var. Hastalet önermiş gerçi. Biraz tartışmalı ölçütler ama neyse. Bindirme ölçütleri var. Bakım kolaylığına yönelik ölçütler var ki bu konuda antrenörlüğünün belirli bir standartı var. 982.1 ve 998 versiyonu.
+
+411
+01:40:00,000 --> 01:40:18,380
+Yani nihayetinde literatürü tarayacaksınız arkadaşlar. Yazılım ve tüklü kitaplarına bakacaksınız. Akademik veri tabanlarına bakacaksınız. Yazılım ve ölçüleriyle ilgili kitaplara bakacaksınız. Ve buralardan GQM doğrultusunda ne kullanacağınıza karar vereceksiniz.
+
+412
+01:40:18,380 --> 01:40:26,779
+Ve tabii ki standartlara da bakacaksınız. ATP'nin, ISO'nun, Sİ'nin bu konularda çeşit önerdiği standartlar da var.
+
+413
+01:40:27,956 --> 01:40:54,256
+Fiyasi bitirin. Ondan sonra birkaç ekstra bir şey göstermek istiyorum size. Şimdi, ölçüklerin büyük çoğunu mükemmel değil arkadaşlar. Hatta şeyi hatırlatayım. Gerçi projelerin konusunda söylemiştik. E-Software Engineering Bad diye bir makaleden bahsetmiştik. Hani ölçüklerin amaçlı değil de araç olarak kullanılması gerektiğinden bahsetmiştik. Aynısını burada da bir tekrarlayalım, hatırlayalım.
+
+414
+01:40:58,707 --> 01:41:05,007
+Örstelerin büyük bir çoğu da mükemmel değil ama bir sözde vardı, mükemmel İ'nin katilidir diye.
+
+415
+01:41:05,844 --> 01:41:33,384
+Yine de ölçülerin ortaya koyduğu, sahip olabildiği zayıf noktalar olmakla birlikte. Hem bu zayıf noktalar çok sıkı da karşılaşmayabiliyoruz da hem de bunu genel bir rehberlik amacıyla kullandığımız için, ölçüde amaç değil araç olarak kullandığımız için bu zayıf noktalar, ufak bugları yine de hiç kullanmamaktan iyidir elbette.
+
+416
+01:41:33,844 --> 01:41:40,444
+ediyoruz ve kullanıyoruz. Genel amaçlı rehber olarak kullanmaya çalışıyoruz.
+
+417
+01:41:41,444 --> 01:41:48,484
+Şimdi burada yazılım ölçütleriyle ilgili çalışmalar maalesef istenen yaygınlıkta değil maalesef.
+
+418
+01:41:49,163 --> 01:41:53,644
+Bunun için iki sebep var. Bir, tamam evet bu biraz akademik bir problem ve zor bir iş.
+
+419
+01:41:53,644 --> 01:42:00,503
+Tamam pratik yararlılığı da var, güzel ama akademisyenlerin de şöyle bir problemi var.
+
+420
+01:42:00,815 --> 01:42:09,435
+Örtüt önermeye bayırıyoruz, tamam. Ama geçerleme çalışmalarını yapmakta zorlanıyoruz. Benim gibi adamların tembelliğinden diyelim.
+
+421
+01:42:11,435 --> 01:42:12,376
+Bir saniye.
+
+422
+01:42:21,011 --> 01:42:33,051
+Evet, benim gibi adamların tembelliğinden diyelim. Ama şu da var. Yazılım evleri, niye üstünde yapacağız, geçerleme çalışmaları? Elbette yazılım projeleri üstünde yapacağız.
+
+423
+01:42:33,431 --> 01:42:44,811
+Ve çoğu zaman yazılım evleri kaynak kodlarının bu şekildeki çalışmaları açmaktan çekiniyorlar, taraftar olmuyorlar, imtina ediyorlar.
+
+424
+01:42:45,492 --> 01:42:57,492
+Şimdi tamam, elbette bir yazılımın en önemli kaynağı, en önemli varlığı kaynak kod elbette. Ama bunu hani şey olarak korumaktan...
+
+425
+01:42:57,939 --> 01:43:25,819
+Geçtim. Der ki işte, ben giderim bir yazım evine. O yazım evi bana önüne bir tane notebook bilgisayarı koyar veya masajlı bilgisayarı koyar. Herhangi bir network bağlantısı yoktur. Hatta flash listleri de kapalıdır, şudur budur. Benim onları daha evvel yolladığım ölçüm gereçlerini yüklemişlerdir. Ondan sonra cıma. Hadi bakalım, istediğim gibi ölçü biçgesin bana. Ben bunları istediği gibi ölçü biçeyim.
+
+426
+01:43:25,939 --> 01:43:33,579
+Daha sonra ölçüm sonuçlarını bir text veya Excel dosyası olarak almak için ise biz bunu sana daha sonra yollayacağız.
+
+427
+01:43:33,779 --> 01:43:43,379
+O an için gelir teknisyen USB ilişimine aşağı. Onun gözü önünde ben sadece ölçüm sonuçlarını alırım, kopyalarım diskimi. Eyvallah teşekkür ederim dedim giderim mesela.
+
+428
+01:43:43,379 --> 01:43:53,379
+Böyle bir şey yapılmaz mı? Yapılır. Fakat altta bir yatan diğer bir dünya var. Ya eğer o yazılım evinin ürettiği yazılımların...
+
+429
+01:43:53,939 --> 01:44:01,639
+Kalite değerlerinin güçlük olduğu ortaya çıkarsa ne olacak? Çok büyük bir problem olacak o firma için.
+
+430
+01:44:04,916 --> 01:44:28,476
+O gibi durumda da şey yaparız kardeşim, ben firmanın adını söylemem, ortaya çıkartacağım bildiride ya da makalede. Bir yazılım evinde diye geçeceğim. Ama şimdi sadece bir yazılım evinde deyip geçemem. Çünkü gördük, birçok alanda metriklerin yorumlanmasının problem alanıyla ilişkili olduğu.
+
+431
+01:44:29,235 --> 01:44:54,576
+Bunu söyledim. Eğer o uygulama alanında ülkemizde çok az yazılım var ise, o zaman 3 şirketten biri, hangisi bilinmiyor belki ama 3 şirketten biri, ya da hatta ben 3 şirkette çalışmışsam, 3 ürün devriye bir ülkede çıkmışsam olacak, hepsi birbirinden birer olarak yol bulabilir.
+
+432
+01:44:57,235 --> 01:45:01,636
+Böyle durumlar var ve bu nedenle pek yaklaşmıyorlar arkadaş için maalesef.
+
+433
+01:45:02,655 --> 01:45:11,856
+Peki o zaman bu bir engel mi? O zaman biz de tutan açık kaynaklı yazılım projelerin üstünde bu işlerimizi hesaplamalarımızı yaparız demek istiyorum.
+
+434
+01:45:14,612 --> 01:45:22,051
+Ama tabii ki açık kaynak yazılımın dinamikleri farklı, ticari yazılımların dinamikleri farklı.
+
+435
+01:45:22,471 --> 01:45:26,891
+Nedenle aslında oralarda da yapabilsek iyi olurdu demek istiyorum yani.
+
+436
+01:45:28,492 --> 01:45:36,252
+Evet, bu gerekli çabayı ikna edilmesiyle ilgili, sektör içmirlikliğinin ilgili de böyle temel bir açmazımız da var.
+
+437
+01:45:36,591 --> 01:45:37,171
+Onu da söyleyeyim.
+
+438
+01:45:38,131 --> 01:45:38,752
+Bunlar bunlar.
+
+439
+01:45:41,171 --> 01:45:46,311
+Evet, şimdi bununla birlikte ders içeriğimizin de sonuna gelmiş olduk.
+
+440
+01:45:47,211 --> 01:45:54,451
+Sonunda çıkamadım. Bu ölçüdar konusunda ek birikir bir şey göstermek istiyorum. Ondan sonra sizin genel sorularınızı da alayım.
+
+441
+01:45:54,571 --> 01:45:58,291
+Bazen de ders ve süreçliği projeyle, sınavla falan filan filan haleyse.
+
+442
+01:46:01,460 --> 01:46:11,660
+Üçhanemizde basılı olarak da yer alan ve VETIS üzerinden evden de ilişkerek elektronik olarak da göreceğiniz güzel bir kitabımız var arkadaşlar.
+
+443
+01:46:11,880 --> 01:46:15,700
+Yazılım ölçü ile ilgili. Onu göstermek istiyorum size.
+
+444
+01:46:23,091 --> 01:46:31,151
+Şu arkadaşlar, Object Oriented Matrix in Practice. İkinci yada iki noktası dediği daha uzun bir bilmem ne falanı da var ama.
+
+445
+01:46:31,891 --> 01:46:38,831
+Bunu yazsanız geliyor zaten. Nereye yazarsanız yazın. İşte Google yazın, işte Hikipanli Katalog'un da yazın.
+
+446
+01:46:38,831 --> 01:46:46,211
+Bu kitap arkadaşlar, yazılım ölçüleri ilgilenen meraklı arkadaşlara bu kitabı incelemelerini bir öneririm.
+
+447
+01:46:48,275 --> 01:47:00,655
+Yazılım ölçüleri, nelerdir, neler değildir, nasıl kullanılır, nasıl yorumlanır. Onunla ilgili güzel bir kitaptır. Kendisi de ayrı bir metrik süreti de önermişlerdir bu kitap içerisinde.
+
+448
+01:47:00,655 --> 01:47:07,355
+Ben burada özellikle bir şundan bahsetmek istiyorum. Bir iki şeyden, nispeten başlarında olan.
+
+449
+01:47:10,868 --> 01:47:17,288
+Daha oraya geldik. Bu visualization falan ondan biraz bahsetmek istiyorum.
+
+450
+01:47:18,648 --> 01:47:22,408
+Ve şeyden bahsedelim. Bakın şimdi örnek.
+
+451
+01:47:23,155 --> 01:47:33,055
+Sarklomatik kompleksite nasıl yorumlanmalıdır? Ne zaman iyidir? Ne zaman ortadır? Ne zaman kakiriyoruz? Line of code bölüm metod. Yani her metodu ortamak her satır.
+
+452
+01:47:33,055 --> 01:47:44,835
+Yani ben deyim ya uzun metodlar olmasın, kısa metodlar olsun ama ne uzun ne kısa sayısal ölçüler lazım ondan sonucu. Non number of methods. Yani bir sınıfa ne kadar metod olmamalıdır?
+
+453
+01:47:51,155 --> 01:48:01,775
+Hele ki zaten dedik ya böl parçaların mantığında, number of maps'ın da nispeten yüksek olması gerekiyor. Ama dışarı bölünme de söz konusuysa o zaman ne olacak? Bir şeylere bakmak lazım.
+
+454
+01:48:01,775 --> 01:48:19,155
+İşte mesela bu kitabın yazarları, 45 Java projesini, 37 C++ projesini ve bu projenin kendi içerisinde büyük küçük orta büyük farklı ölçütlerde de projeleri incelemişler ve bize çok güzel değerli...
+
+455
+01:48:19,155 --> 01:48:21,335
+Şöyle bir tabloyla gelmişler mesela.
+
+456
+01:48:24,659 --> 01:48:52,400
+7 satırlık metotlar çok düşük. Yani varsa bunu daha da düşünmeye çalışmayalım. Ortalama 10. Ama 10 işi de yüksek demişler. Yani 10 satırdan yüksek olan metotları bölmeye çalışacağız. Hele ki 15 ise mutlaka böleceğiz gibi. Çok yükseldi. 19,5 demişler mesela. Yani ortalamamız 10. Ondan daha yüksek sayıda satıra sahip metotları bölmeye çalışmak.
+
+457
+01:48:52,659 --> 01:49:06,140
+Anlamlı bir, mantıklı bir işgiz anlamı çıkıyor burada. Sırt last lastre ise rakamlar biraz daha farklı dikkat edersiniz. Ortalama yine 10 ama yüksek ve çok yüksek değerleri farklılaşmıştır mesela.
+
+458
+01:49:06,640 --> 01:49:14,039
+Kullandığımız dil işte Ahex ve Nesli'nin olmakla birlikte böyle farklılıklar çıkmaktadır işte istemez.
+
+459
+01:49:14,804 --> 01:49:42,703
+Ya da işte kod satırı başına Cyclomatic Complexity mesela. Neyi fazla karmaşık tutmuşuz? Ortalama karmaşıklık Java'da 0,20. C++'ın kendisinin zaten daha zor bir dil olduğunu düşündüğünüzde her bir değerin C++'da Cyclomatic Complexity, line of code'da Java'dan daha yüksek olduğunu da zaten görüyoruz mesela. Çok güzel, doğru, mantıklı bir sonuç olarak gelişmiş.
+
+460
+01:49:42,804 --> 01:49:51,724
+Bu da gibi. Bir bundan deneyim. Bir de benzer başka metiklerin de WNC'yi gördükler.
+
+461
+01:49:51,724 --> 01:49:59,783
+EWN'i neymiş? Average Method. Peki. O da bir önceki tabla ki sarkovalatik kompleksü bir metot.
+
+462
+01:50:00,000 --> 01:50:14,019
+Onların da güzel istatistiklerini çıkarmışlar. Şimdi isterseniz siz de benzer istatistik çıkarma çalışmalarınızı yazılım evinizde, şu ana kadar yazılan kodlar kapsamında da yapabilirsiniz.
+
+463
+01:50:15,239 --> 01:50:21,739
+Ve bu sizin için daha anlamlı bir bilgi ifade edebilir.
+
+464
+01:50:22,387 --> 01:50:46,127
+Siz spetifik bir uygulama alanlarla yeni kodlar oluşturuyorsanız, buradaki tablolarda ölçülen projeler ise daha farklı farklı alanlarda projelerden oluşturduğu için, siz kendi eşlik limit belirleyip karar vermede kullanacağınız değer alınlıklarını daha önceki çalışmalarınıza dayanarak tam da belirleyebilirsiniz. Bunu da ayrıca söylemek istiyorum.
+
+465
+01:50:49,587 --> 01:50:54,667
+Başka, evet görselleştirmeye yönelik bir şey söyleyeyim.
+
+466
+01:50:55,407 --> 01:51:06,807
+Evet, şimdi mesela projenizdeki her bir sınıf için birer dikdörtgenle bunu görselleştirebilirsiniz.
+
+467
+01:51:07,627 --> 01:51:16,307
+Her bir dikdörtgenin genişliğinin bir anlamı, yüksekliğinin bir anlamı ve rengi söz konusuysa renginin de başka bir anlamı olabilir.
+
+468
+01:51:16,979 --> 01:51:23,640
+Örneğin, genişlik, Landoff metod, yükseklikte Line of Code olsun.
+
+469
+01:51:23,640 --> 01:51:34,539
+Şimdi, şuradaki A dikdörtgeni ile C dikdörtgeni karşılaştırdığımızda, C dikdörtgeni gibi ortaya çıkan sınıfları pek istemeyiz.
+
+470
+01:51:34,760 --> 01:51:40,659
+Neden? Az sayıda ama çok fazla satıl sayısında metodlar var anlamına gelmektedir.
+
+471
+01:51:41,231 --> 01:51:53,851
+Uzun metotlardan, uzun ve arsayıda metotlardan oluşmuş bir sınıf anlamına gelmektedir bu. Bunu daha kareye yakın ve daha isi daha yatık dikdörtgene yakın bir şeye getirmemiz lazım.
+
+472
+01:51:53,851 --> 01:52:02,992
+Ve biz bir tool kullanarak bütün yazılım projemizdeki sınıflara baktığımızda mesela şöyle bir resim çıkacak karşımıza.
+
+473
+01:52:09,908 --> 01:52:13,428
+Evet, şöyle bir resim çıkacak diyelim ki karşımıza. Büyüteyim resmi.
+
+474
+01:52:14,323 --> 01:52:29,303
+Aradaki şu bağlantı ilişkileri de belki kalıtımdır. Bakıyorum şimdi benim sitemimin resmine. Bir refactoring yapacağım zaman hangi sınıflardan bu refactoring'ime başlamalıyım?
+
+475
+01:52:42,323 --> 01:52:49,403
+Ama uzun metodlardan oluşan karmaşık sınıflarım var. Bu, Röngin'de başka bir anlamı var, şu an onu düşünüyorum.
+
+476
+01:52:49,403 --> 01:53:01,883
+Böyle baktığımda ben bir refactoring yapacağım bir çevrenin varsa, refactoring yapmaya yönelik ilk adaylarımın mesela şu sınıf olduğunu bir düşünüyorum.
+
+477
+01:53:02,423 --> 01:53:10,323
+Ondan sonra cıvı, hatta bir de belki bu koyulukta sarklomatik kompleksiti olsun diye ki, bu burada bakıyorum.
+
+478
+01:53:10,323 --> 01:53:30,323
+Bakın, herhangi bir kağıtın hiyerarşisinin bir ilişki içerisinde bulunmayan şu sınıf anlaştıklılığının da zor olmasıyla direkt sırıtıyor işte. Ama ne güzel sırıtıyor işte. Bir bakışta anlayabiliyorsunuz. Daha böyle refactoring'e ihtiyaç duyar sınıfların neler? İlk adımda bunu refactoring edeceğiz. Daha sonra diğer böyle...
+
+479
+01:53:31,988 --> 01:53:58,948
+Genel'e baktığımızda aşırı uzun dükken sınıfları mesela. Şunu daha sonra yapacağım ama daha çok çubuğa benzeyen ve biraz ufak bir şey. Belki o kadar önemli değil. Burada alaç, nasıl diyeyim, her şeyi mükemmelleştirmek değil ama bu nasıl çabayı en iyi noktaya getirmeye çalışabilmek ve ortalamayı. Bu nedenle şunu şunu da alalım.
+
+480
+01:53:59,796 --> 01:54:07,615
+Daha sonra, ne bileyim, şunu da alırım belki.
+
+481
+01:54:08,243 --> 01:54:25,823
+Ben bunu da şu an görsellikle anlıyorum. Ve bütün sınıflarımın Line of Code, Nambulat, Metod dökümüne de baktığımda, döküme göre sıraladığımda oradan o kaleme değer bulup ve neleri alıp neleri anlamam gerektiğini o şekilde de belirleyelim.
+
+482
+01:54:25,823 --> 01:54:35,923
+Bilirim tabii ki pekala. Ya da her bir tasyonda sınırlı sayıda sınıfı modifiye etmem gerekiyorsa, bakın işte 5 tane sınıf belirledim ilk şeyinde bunu diyeceğim diye.
+
+483
+01:54:36,243 --> 01:54:42,783
+Biraz üstın körü bile olsa ama en iyiye yakın bir karar vermek şeklinde ilerleyebilirim.
+
+484
+01:54:43,643 --> 01:54:44,323
+Durumlar bunlar.
+
+485
+01:54:47,091 --> 01:55:00,192
+Bu konularda merak eden, ileride bu konular üstüne çalışmak isteyen, gerek pratik olarak, gerek bitimli çalışması olarak, gerek lisans üstü çalışmalar olarak, ihtiliki arkadaşlar olabilir.
+
+486
+01:55:00,532 --> 01:55:05,452
+Oya Hoca ile benimle mesela bu konularda çalışabilirsiniz demek istiyorum.
+
+487
+01:55:07,091 --> 01:55:08,271
+Başka ne diyebilirim?
+
+488
+01:55:10,868 --> 01:55:17,988
+Bu kadar diyebilirim. Şimdi sizlerin sorularımız varsa, merak ettiğiniz noktalar varsa buyurun konuşalım.
+
+489
+01:55:26,771 --> 01:55:29,891
+Kusada ben durumu işleyeyim şöyle.
+
+490
+01:55:41,891 --> 01:55:42,212
+Tamamlaya.
+
+491
+01:55:43,572 --> 01:55:57,931
+Ben size hatırlatayım arkadaşlar. OBS'e üstünden size mesaj gönderdim. Proje ödevinin gösterimi, sunumu ve gösterimi açısından.
+
+492
+01:55:59,512 --> 01:56:06,332
+Aşkıdan hocalarını lütfen sayfalarını izleyin. Kendilerinden sunumlandırmış ve kork gösterimi randevularını alın.
+
+493
+01:56:11,572 --> 01:56:22,112
+kod kısmını asistan hocalar değerlendirmiş olacak. Sonra işte noktaları bir araya getirip vereceğiz işte ondan sonra açma.
+
+494
+01:56:23,012 --> 01:56:35,952
+Genel olarak Oya Hocam'la da dönem içi etkinlik olarak 30 puan bize, 30 puan proje, 40 puanda final şeklinde değerlendirme yapacağımızı kararlaştırdık.
+
+495
+01:56:38,676 --> 01:56:48,696
+Başka bir makıma gelen bir şey yok. Bunları da duymaya çalışmıştım zaten. Sizlerin soruları varsa onları çok unutmayacağım.
+
+496
+01:57:01,076 --> 01:57:03,076
+diye kapattım diye kapattım yani.
+
+497
+01:57:03,076 --> 01:57:05,076
+Kafayı söylemiştim aslında.
+
+498
+01:57:05,076 --> 01:57:07,076
+Doğru kadarım da halde.
+
+499
+01:57:19,572 --> 01:57:21,612
+Bu dönem şöyle oldu diyelim.
+
+500
+01:57:25,524 --> 01:57:40,764
+Yüze çarpı 0.30, öne yüze 2 yapmadık. Bir dakika, pardon. Şuradan yapsam daha iyi galiba. Yüze çarpı 0.30 öne yüze 2 yapmadık.
+
+501
+01:57:42,443 --> 01:57:46,943
+Proje çarpı 0.30, fina söpük. Bu dönem böyle.
+
+502
+01:57:53,344 --> 01:58:06,423
+Sorun olmadığına göre, sınav programı belli oldu, final programı belli oldu. Online yapılacak, test usulü yapılacak. Yine final test usulü yapmayı planlıyoruz. O şekilde kararlaştık.
+
+503
+01:58:07,583 --> 01:58:10,943
+Hepinizi başarılar diliyorum. Tekrar görüşmek üzere inşallah.

@@ -1,0 +1,3019 @@
+1
+00:00:04,051 --> 00:00:06,051
+Tamam, bir kere sen alayım canım.
+
+2
+00:00:09,051 --> 00:00:14,051
+Klasiklerden bir ok kafa, bakışız.
+
+3
+00:00:15,051 --> 00:00:17,051
+Şimdi reklam paylaşım yapalım.
+
+4
+00:00:18,051 --> 00:00:19,051
+Eklam.
+
+5
+00:00:21,051 --> 00:00:23,051
+Şimdi önlenelim bakalım.
+
+6
+00:10:33,172 --> 00:10:38,172
+Evet arkadaşlar, artık gelen gelmişti. Derse başlayalım.
+
+7
+00:10:41,172 --> 00:10:46,172
+Şimdi geçen hafta kullanım senaryosu metrinleri yazmıştık.
+
+8
+00:10:47,172 --> 00:10:54,172
+Ve yazarken de ne yapılması gerektiğine dikkatiminize çekmiştim. Onu da unutmayın lütfen.
+
+9
+00:10:57,940 --> 00:11:07,180
+72. yansıtmışız. 72, 73. Tamam, peki. Use get şamadan geçiyoruz. Evet, bunu yaparız.
+
+10
+00:11:08,380 --> 00:11:12,920
+Ardından da bizle birlikte bir çiziriz. Tamam, peki.
+
+11
+00:11:12,920 --> 00:11:22,920
+Şimdi arkadaşlar, bu yaşan hafta gördüğümüz kullanım sahibisi metinleri sistemin davranışını ayrıntılı olarak...
+
+12
+00:11:23,508 --> 00:11:47,788
+Tanımlamak için gayet güzel araçlar. Fakat bu ayrıntılara bakmak da gerekli ama sistemin geneline de bakabilmek gerekli. Bu bağlamda kullanım senaryolarının birbiriyle ilişkileri üzerinde sisteme bir genel bakış yapmamızı sağlayan bu use case şamaları var. Onlarla ilgili konuşacağız şimdi.
+
+13
+00:11:48,628 --> 00:11:57,687
+Bizim öyküsünü yazdığımız her bir kullanım senaryosu bir elips olarak kendini gösteriyor bu işlemalarda.
+
+14
+00:11:57,687 --> 00:12:08,968
+Ve bu kullanım senaryosunun birinci aktörünü ilgili senaryoyla, elipsiyle bir göz çizgi çizerekten bağlıyoruz.
+
+15
+00:12:10,168 --> 00:12:15,508
+Bu aktör eğer insan aktör ise çöp adam ya da çöp kız yaparsınız.
+
+16
+00:12:16,307 --> 00:12:26,727
+Eğer bu başka bir yazılım ya da dolanım birleşenişte, ilk dörtgen içerisinde, UML, stereotip karakterleri içerisinde aktör yazmak koşuluyla yazarsınız.
+
+17
+00:12:28,467 --> 00:12:35,908
+Şimdi burada sadece birinci aktörle ilişkilendirmeyi tercih ediyoruz. Çünkü hepsini ilişkilendirsek çok kalmaşık olacak.
+
+18
+00:12:36,707 --> 00:12:42,128
+Zaten bir sistemde çok fazla sayıda kullanım senaryosu olacağından.
+
+19
+00:12:43,220 --> 00:12:53,220
+Bir de bütün aktörleri ilişkilendirmeye kalksak, Şam'ın okunabilirleri çok düşecek. Çizgiler karışacak falan. Bu nedenle birinci aktörleri gösterelim.
+
+20
+00:12:55,220 --> 00:13:02,220
+Sonra cevap, ne yapayım, şuradan şey mi açayım, alemi açayım, fare oku kaybolunca.
+
+21
+00:13:09,812 --> 00:13:33,672
+include veya extends ilişkisi olabilir. Extends ilişkisi demek, alternatif senaryosudur anlamına gelmektedir. Include ise, içermek anlamına gelmektedir. Yani, hadi yazalım. Extends demek, alternatif senaryosu olmak demektir.
+
+22
+00:13:37,331 --> 00:14:03,652
+Extents demek. Include ise adı üstünde, Share's demektir. Bu içermek ön koşul olarak da düşünülebilir. Yani örneğimizde satış kullanım öksesinin başlamasından önce kasiyerin sisteme login olması gerekiyordu ya, satıştan logine doğru bu şekilde Include oku çizebiliriz.
+
+23
+00:14:05,491 --> 00:14:13,291
+Tabii bunu çizerken, şunu tekrar, ah pardon, yanlış seçtik. Tekrar yapalım.
+
+24
+00:14:17,460 --> 00:14:28,580
+Evet. Şimdi oku çizerken gövdesini keskifli çizgiyle çizmeye dikkat edin. Ve okun yönü de önemli arkadaşlar.
+
+25
+00:14:29,420 --> 00:14:37,220
+Şimdi örnek olarak şu bizim satış senaryomuzsa, aslında ne kılınır ya da bu? Neşil yapsam daha iyi olacaktır. Ötkilerde işletmedi.
+
+26
+00:14:37,220 --> 00:14:40,139
+Bizim satış senaryomuz ise eğer.
+
+27
+00:14:43,443 --> 00:14:59,463
+Bu login senaryosunu da bu yaptıysak, satış senaryosu içeri login senaryosunun şeklinde ilişki olması gerektiğinde bu okun yönü bu tarafa doğru olmadı.
+
+28
+00:15:00,183 --> 00:15:06,163
+İngilizce okursak, sales includes login. O zaman daha yerine oturuyor İngilizce gramerine göre.
+
+29
+00:15:09,875 --> 00:15:13,995
+Öbür tarafa çizersek bu hata olmaz.
+
+30
+00:15:16,035 --> 00:15:23,576
+Öbür türlü ise şu mesela ürün iptal senaryosu olsun.
+
+31
+00:15:28,916 --> 00:15:44,536
+Yine İngilizce okuduğumuzda, ki okunuş gününe göre ok var, işte cancellation extends sales ya da cancellation is an alternative scenario of sales şeklinde.
+
+32
+00:15:45,456 --> 00:15:56,096
+O nedenle bu sefer de bu tarafta olan ok doğru, ötekisinde şu tarafa doğru olan ok doğru, bir iki sene ise bu tarafa doğru olan ok yanlış bulacak arkadaşlar.
+
+33
+00:15:56,596 --> 00:16:01,915
+Yani kullanım şaması çizerken bunlara dikkat etmenizi istiyorum.
+
+34
+00:16:03,816 --> 00:16:08,175
+Include, Extensive ilişkinin isimlerini doğru belirlemek yetmiyor.
+
+35
+00:16:09,056 --> 00:16:14,475
+Oklarının yönünü ve oklarının gövdesini de doğru çizmeniz gerekiyor. Bunların hepsine tek tek bakıyoruz.
+
+36
+00:16:17,036 --> 00:16:18,756
+Şey bu. Bunun tamamen bu.
+
+37
+00:16:20,435 --> 00:16:20,956
+Örneğin.
+
+38
+00:16:22,355 --> 00:16:26,355
+Çınolvisliğe, kanıızı da.
+
+39
+00:16:30,388 --> 00:16:34,567
+Evet, şimdi bunları söyledik, sözle anlatmış oldum.
+
+40
+00:16:36,927 --> 00:16:47,327
+Örneğin, satış senaryomuzda her satış mutlaka bir ödeme içerir. Bu nedenle satış include ödeme şeklinde geçiyor.
+
+41
+00:16:47,327 --> 00:16:51,107
+O kuyruğun da satıştan ödemeye doğru.
+
+42
+00:16:53,748 --> 00:17:10,847
+Ödemenin de bir alternatif senaryosu olarak provizyon almayı düşünüyoruz. Provizyon nedir? Provizyon, pretty kartı ile ödeme yapılacağı zaman ya da başka bir kart ile ödeme yapılacağı zaman. Acaba o kartta yeterli bir arkiye var mı? Kartın paradası doğru girilmiş mi?
+
+43
+00:17:11,763 --> 00:17:29,803
+Kartın süresi hala geçerli mi? Son kullanım tarihinde olmamıştır inşallah. Kart çalıntı olarak, iptal edilmiş olarak işaretlenmemiştir. Bütün bunların doğru olduğuna bakılıyor. Ona göre tamam, ödeme kabul ediliyor.
+
+44
+00:17:30,708 --> 00:17:46,368
+Her ödeme kartta olmayacağından, nakitle de olabileceğinden, yani her ödeme işlemi provizyon gerektirmiyor. Bu nedenle provizyondan ödemeye doğru da extent şeklinde oku, iliçizip o şekilde yazmalıyız.
+
+45
+00:17:52,084 --> 00:18:08,304
+Çözümleme sürecine geçeceğiz ama çözümleme sürecinden önce şu örnek, yani ondan önce şurada şu satış kullanım senaryosu metni üzerinden bir şeyle çizelim.
+
+46
+00:18:09,384 --> 00:18:10,384
+Örnek öykünün.
+
+47
+00:18:10,867 --> 00:18:25,087
+Bütün şu olarak bir şamasını çizin. Gerçi parçalarını söyledik ama bunu biraz isterseniz etkileşimle yaparız. Hocam şöyle bir şey olacağı zaman ne yaparız gibisinden sorularımız olursa lütfen açın sorun. Ona göre yapalım.
+
+48
+00:18:27,208 --> 00:18:37,987
+Şimdi bu raporumuzda da Nesli Yenerim'den bu Tullu'sı tanıkmış olmam lazım. Vali Tuyama. Bütün yanaşlamalarını çizebiliyor.
+
+49
+00:18:38,836 --> 00:18:56,836
+Epey de yetenekli bu konuda. Çok ufak bir iki eksiği kusuru var. Onu da şemayı resim olarak kaydettikten sonra bir resim editörüyle açıp gıda edebilirsiniz ufak tefekli sorularını. Onun dışında epey kullanışlı bir sorgal.
+
+50
+00:18:56,836 --> 00:19:03,836
+Şimdi bir tane sketch diagramımızı yapalım. Tabii bunu yaparken, şunu şöyle yarım yapalım.
+
+51
+00:19:04,756 --> 00:19:17,476
+PowerPoint'i de mi? PowerPoint'i de yapalım mı? Yoksa PDF'i de yapalım mı? PDF'i yaparsam daha iyi olur diye düşünüyorum. Açmış mıydı onu? Açmam. Aa açtım. Tabii şey.
+
+52
+00:19:17,476 --> 00:19:32,476
+Adobe kullanmaya insan alışınca bunu ayıyor. Evet. Şimdi. Azıcık büyük edelim. Sırbı falan mı yok? Sırbı ben daha büyük olmasını istiyorum.
+
+53
+00:19:38,259 --> 00:19:50,259
+PDF'de daha rahat yapalım bu işi. Sonra Color Point'da bu işler daha zor oluyor. Şimdi kullanım öykümüz, satış işlemiz.
+
+54
+00:19:50,259 --> 00:20:05,195
+Seç bir tane use case, koy, çift tıkla, satış. Ondan sonucu var. Birinci aktörümüz kim? Kasiya. Seç aktörü koy, çift tıkla, bu kasiya.
+
+55
+00:20:09,299 --> 00:20:14,699
+Kasiyen ve satış ilişkisi. Yani bakın çizgi bu şekilde, düz çizgi, ok filan yok.
+
+56
+00:20:17,720 --> 00:20:22,960
+Ön koşulda kasiyenin kimliği doğrulanması. Yani kimlik doğrulama diyelim.
+
+57
+00:20:27,092 --> 00:20:52,272
+Yazdığınız içeriğe göre elipsin boyu büyüklü çilebiliyor. Eğer isterseniz yeni satıra geçmek ile belki daha uzun yerine daha tombul elipsi şeklinde ayarlamalar yapabilirsiniz. Her satış mutlaka ön koşul olarak kimliği doğrulanıyor. O yüzden satış, içeris, include. Kimlik doğrulama.
+
+58
+00:20:53,107 --> 00:21:01,607
+Böyle düşünebilirsiniz belki. Hocam, eğer zaten login olmuşsa bir daha zaten login olmaz gibisinden düşünebilirsiniz belki ama.
+
+59
+00:21:02,248 --> 00:21:14,447
+Bakın, bu durum alternatif senaryoda yer alın. Externet ise sadece alternatif senaryoda yer alan olgular için şeyleri düşünelim. O yüzden satış, inkılır, kimlik doğrulama.
+
+60
+00:21:17,844 --> 00:21:31,304
+Diğer ilgilileri, aktörleri göstermiyoruz. Son koşullarda yazan her şey ana metinde de yazıyor. O yüzden ekstra bir şey yok. Ekstra çıkartacağı bir şey yok.
+
+61
+00:21:32,644 --> 00:21:44,423
+Şimdi, şöyle ne demiştik? Kasiye'nin yeni bir satış işlemi başlatması. Aslında bu da anlatılmaya, biraz daha ayrıntılı anlatılmaya ihtiyaç duyuyor demiştik. Onu burada söyleyelim şimdi.
+
+62
+00:21:45,011 --> 00:21:57,331
+Satış başlıyor. Satış bunu içerisinde olmak zorunda.
+
+63
+00:21:57,331 --> 00:22:07,491
+Bankot girmek basit. Bankot okuyucuya gösterecek. Bu ayrı bir use case olmasına gerek yok.
+
+64
+00:22:09,395 --> 00:22:18,036
+Toplam ve hesaplama basit bir artışla. Ödemenin yapılması ama ayrıntılı. O yüzden ödeme diyelim şöyle.
+
+65
+00:22:22,579 --> 00:22:26,339
+Satış içeriyor, ödeme.
+
+66
+00:22:28,299 --> 00:22:29,159
+Ondan sonra,
+
+67
+00:22:30,839 --> 00:22:31,900
+çalışalım şunları.
+
+68
+00:22:35,099 --> 00:22:36,339
+Var da çok karışmasın.
+
+69
+00:22:38,480 --> 00:22:39,859
+Ne var?
+
+70
+00:22:40,339 --> 00:22:59,179
+Gardel hesaplama, basit, ödemeyecek bir işlem olabiliriz. İş vermek, çırtılacak mı? Boş vereyim. Tamam. Bu araş senaryodan bunları çıkartabiliyorum. Ama alternatif senaryoda mutlaka yazın demiştik. Geçersiz barkod olayı olabiliriz. İsterseniz alternatifleri de şuraya tutabilirsiniz.
+
+71
+00:22:59,179 --> 00:23:05,359
+Geçersiz barkod.
+
+72
+00:23:06,771 --> 00:23:13,251
+Geçersiz barcode alternatistten arıyordur. O yüzden ondan da satışa doğru üstten satış edeceğiz.
+
+73
+00:23:19,311 --> 00:23:22,971
+Müşterinin bir kayınmalı araç verişten çıkarmak istemesi.
+
+74
+00:23:25,091 --> 00:23:28,612
+Bunu da yazalım. Ürün iptal diye kısaca yazalım isterseniz.
+
+75
+00:23:37,844 --> 00:23:41,923
+O da externs sonuçma.
+
+76
+00:23:43,224 --> 00:23:47,943
+Ve ödeme ile şu provizyon arasındaki ilişkiyi konuşmuştuk. Ondan onu da yapalım.
+
+77
+00:23:54,483 --> 00:24:01,803
+Pardon, ödeme içermez. Bazen proje yönetimi nakitse mesela şey olmuyor demiştik.
+
+78
+00:24:01,803 --> 00:24:10,603
+Evet, yazıların etiketlerin okunuluğunu ilişkirmek istiyorsanız böyle değişik konuları deneyin.
+
+79
+00:24:11,324 --> 00:24:20,803
+Tamam mı? İşte iyi, tamam. Artık şu açıdan baktığımızda satış ve ilişkili senaryoların...
+
+80
+00:24:22,003 --> 00:24:26,663
+İçerdiği veya alternatif senaryoların şekli olarak yeterlidir diye düşünüyorum.
+
+81
+00:24:27,823 --> 00:24:34,123
+Sizin aklınıza gelen herhangi bir şey varsa, şunu nasıl yapardık hocam, bilininiz bir şey varsa sorun, söyleyin.
+
+82
+00:24:34,123 --> 00:24:41,123
+Ya da şu tarafını anlamadım hocam tekrar vermesiniz diyorsanız lütfen söyleyin.
+
+83
+00:24:47,571 --> 00:24:49,651
+Ben bir bakıyorum şimdi başka ne var da yok.
+
+84
+00:25:08,884 --> 00:25:25,124
+Peki, geçmeden önce şunu söyleyeyim. Şimdi dikkat ederseniz şurada bir generalization okuda var. Söylemişimdir diye tahmin ediyorum ama yeri gelmişken bir daha söyleyeyim. Yüz kesler arasında kalıtım ilişkisi kurabiliyorsunuz arkadaşlar. Yani sınıf düzenliği kalıtımla aynı mantık.
+
+85
+00:25:25,491 --> 00:25:51,991
+Ben bu şekilde, mutlaka bu şekilde gösterilecek, en uygun bu şekilde gösterileceği bir öykü çıkartamıyorum. Yani include ve extents her şeyi kapsıyor. Ve ayrıca bir de buradaki extendi de hani JavaScript'i extents kelimesiyle karıştırmayın lütfen. Hele ki şurada bir de Kılıçdım Oku da görünce ona da bir extents filan yazma durumunuz olabilir. Hayır bir şeye yapmıyorsunuz.
+
+86
+00:25:52,531 --> 00:26:09,851
+Ondan sonra, yani zaten aslında neslinin en iyilik tasarım yaparken de kalıtımın böyle tamcık oturduğu iz-e ilişkisi, sıras konusu değilse kalıtım dışındaki çözümler tercih ediliyor deneyimli tasarımcılar tarafından.
+
+87
+00:26:10,771 --> 00:26:18,311
+O yüzden kalıtımın kullanım şemalarına da sokmaya hiç gerek yok diye düşünüyorum. Sadece olduğunu söyleyeyim.
+
+88
+00:26:18,804 --> 00:26:36,644
+Tamam, biz kullanmayacağız. Siz kullan, hocam şöyle, şöyle, şöyle cuk oturdu dediğiniz yer varsa da lütfen bana bildirim, benimle paylaşın. Ben de böylece derslenecek diğer arkadaşlarım daha sonraki dönemlere yararlı olmuş olursunuz. Peki, bunu hallettik.
+
+89
+00:26:40,500 --> 00:26:42,699
+Orta girelim, kaldığımız yere.
+
+90
+00:26:45,699 --> 00:26:47,619
+Şeyden de gidebiliriz gerçi.
+
+91
+00:26:48,940 --> 00:26:50,299
+Evet, sonra da bunu işleyeceğiz. Tamam.
+
+92
+00:26:51,599 --> 00:26:59,579
+Şimdi, çözümleme aşamasında mesneler ve aralarındaki ilişkileri de belirlememiz gerekiyor.
+
+93
+00:26:59,579 --> 00:27:02,579
+Bunu da sıvı şaması çizerek yapacağız, elbette.
+
+94
+00:27:03,380 --> 00:27:04,256
+Bu konuda...
+
+95
+00:27:04,256 --> 00:27:22,135
+Nesliye Önerim dersinde gerekli bütün güdeleri aldınız. Fakat hani birden fazla tasarım alternatifi varsa bunların hangisinin en iyi olacağı konusunda ayrıntılı bilgi vermedik o ders kapsamında.
+
+96
+00:27:24,403 --> 00:27:45,183
+Öte yandan genelde oradaki sınav sorularınız size zaten bir tasarım verilip onun kodlanması şeklindeydi. Verilen gereksinimlerden acaba nasıl tasarım yapılır konusunda? Aslında bu kod deneyiminiz size bir altyapı sağlıyor. Yani buradan vereceğiniz kararla doğru olacaktır.
+
+97
+00:27:45,779 --> 00:27:57,259
+Fakat daha iyi tasarımı yapmak için, gerçi ders notlarında söylüyorum galiba, tasarım kalıpları konusunu öğrenmeniz yararlı olacaktır.
+
+98
+00:27:58,599 --> 00:28:05,180
+Onu yeri geldiği zaman biraz daha anlatacağım. Bir iki yansıtışımız var. Ufak bir tanıtım yapacağım size.
+
+99
+00:28:05,748 --> 00:28:22,048
+Fakat o noktaya gelmeden, tasarım kırıklığına bakmadan, basit temel bir problem alanı yaptığımız alan modelini eşleştirme konusunda ufak bir iki yöntem söyleyeceğim.
+
+100
+00:28:22,907 --> 00:28:31,788
+Şimdi biz neden yazılımı geliştiriyoruz? Bir gerçek dünya problemini kolaylaştırmak için yazılımı.
+
+101
+00:28:32,372 --> 00:28:46,592
+Bu problem alanımızdaki varlıklar bizim kodumuzda da nesnelere karşılık düşecek. Bu nesneler neler? Bu nesnel arasındaki ilişkiler neler? Ona göre bir sınıf şaması oluşturacağız.
+
+102
+00:28:47,511 --> 00:28:53,211
+Kullanıcı gelip skimleri belgesinden ve kullanım senaryolarında sınıfları çıkarmaya çalışacağız.
+
+103
+00:28:53,211 --> 00:28:59,451
+Bunu yaparken önerilen bir yöntem şu. Bu metinlerdeki bütün isimleri tara.
+
+104
+00:29:00,211 --> 00:29:26,812
+Burada gördüğün isimleri aday sınıf olarak bir kenara yaz. Ondan sonra bu adayları aşağıdaki üç tane kurardan en azından birini sağlıyor mu diye bir bak. Eğer birini sağlıyorsa bu gerekli bir varlıktır. Bu nedenle tasarımımızda yer alacak. Bu nedenle çözümleme aşamasındaki alan modelini.
+
+105
+00:29:27,316 --> 00:29:28,796
+Bu varlıkları koyacağız.
+
+106
+00:29:29,516 --> 00:29:33,655
+Sözünleme aşamasında ne sorusunu soruyoruz, nasıl sorusunu sormuyoruz.
+
+107
+00:29:33,655 --> 00:29:39,215
+Bu nedenle nesneler, üye alanları ve aralarındaki ilişkiler düşünülüyor.
+
+108
+00:29:39,496 --> 00:29:41,735
+Metotlar düşünülmüyor alan modelinde.
+
+109
+00:29:42,496 --> 00:29:51,135
+Daha sonra alan modeli, tasarım aşamasında alan modeli için oluşturduğumuz üye alanlar sınıf şamasını, metotlar da aynı tüm arındırılıyoruz.
+
+110
+00:29:51,635 --> 00:29:54,475
+Ve o şekilde sınıf şamımızı güncelliyoruz.
+
+111
+00:29:55,443 --> 00:30:03,023
+Peki, şimdi nedir bu kurallar? Birincisi saklanan bilgi. Sistemin çalışması süresince bu varlığın durumu saklanmalıdır.
+
+112
+00:30:03,723 --> 00:30:08,943
+2. Gereksinim duyulan hizmetler. Bu varlığın hizmetlerine ihtiyaçlayan başka varlıklar vardır.
+
+113
+00:30:09,503 --> 00:30:16,403
+3. Gerekli varlıklar, problemin çözümüyle ilgili bilgi üreten veya problemin çözümü için bilgi tüketen varlıklar.
+
+114
+00:30:17,783 --> 00:30:20,703
+Şimdi buradan yola çıkarak da şöyle bir yapalım bakalım.
+
+115
+00:30:25,940 --> 00:30:46,279
+Bu arada üye alanları nasıl belirleyeceğiz? Üye alanları da sıfatlara bakacağız. Metotları ise eylemlere bakacağız. Bu aşamada eylemleri düşünmüyoruz. Çünkü daha çözümleme aşamasındayız. Ama tasarım aşamasında bunlara dikkat ederekten metotları oluşturacağız, biriktireceğiz.
+
+116
+00:30:51,092 --> 00:31:10,852
+Bu ikinci dediğim şey de daha çok tasarımla ilgili ama çözümlerle bir tekrarlamakta yarar var. Sorumlulukların doğru dağıtılması önemli arkadaşlar. Genelde olay şu, bir bilgiyle ilgili davranışın o bilgiyle aynı sınıfta yer alması lazım.
+
+117
+00:31:11,124 --> 00:31:25,243
+Bu nedenle aslında analiz aşamasında hangi bilgi, hangi rüyalar, hangi sınıfta yararlıca buna doğru karar vermek önemli. Ama hani eğer yanlış karar verdilsek de, tasarım aşamasında bu kararlarımızı düzeltebiliriz herhalde.
+
+118
+00:31:29,779 --> 00:31:39,779
+Peki, aradaki ilişki ve etkileşimlerin neler olduğunu neslinin en önemli dersinde gördük arkadaşlar.
+
+119
+00:31:39,779 --> 00:31:47,779
+Saatlik, bireçokluğu, birebir, birey, saniyesi, iki yönlü, tek yönlü, bunların hepsini delikli ettik zaten.
+
+120
+00:31:47,779 --> 00:31:51,779
+Ardından kalıtım dedik, özelleşme, genelleşme.
+
+121
+00:31:51,779 --> 00:31:57,644
+Evet, sonrasında şeyimiz var. Şimdi şu şeyi bir yapmaya çalışalım bakalım.
+
+122
+00:31:58,195 --> 00:32:01,655
+Bir yandan şuradan, paranın koyduğum açıyorum.
+
+123
+00:32:03,256 --> 00:32:09,935
+Kurallarımız da kalsın. Ama isimleri yazacağız. Ondan sonra şu kuralları adayla çarpıştıracağız.
+
+124
+00:32:10,395 --> 00:32:20,336
+O yüzden az yukarı gideyim. Şu kullanım, yani gereksinim belgesi ve kullanım senaryosu metnine bakalım.
+
+125
+00:32:21,395 --> 00:32:22,216
+Şu şurada dursun.
+
+126
+00:32:25,683 --> 00:32:29,683
+Yok, ne taşıyabilir? Başka bir şey yok.
+
+127
+00:32:33,971 --> 00:33:00,771
+Bu kadar büyük olmasına da gerek yok ama. Dur bakalım. Sonra şey oluyor. Kontrollerden dolayı şey edemiyoruz. En son şeyi hatırlamaması iyi oldu. Şöyle bir şey yapalım. Tabi biraz uzun olsa daha iyi. Ama çok çok yüksek olması. Peki.
+
+128
+00:33:02,483 --> 00:33:26,304
+Şimdi okuyarak gidelim. İsimleri seçelim. İlk cümle zaten şey, neden bu lazım diye ilk cümleyi atıyorum. Program, program ismi ama zaten yazmaya çalıştığımız, oluşturmaya çalıştığımız sistem o. Kasada, kasada isim tamam, kasa olabilir. Yapılan alışveriş olabilir.
+
+129
+00:33:30,516 --> 00:33:41,316
+Her işlemler yardımcı olmadı. Yapılan her işlem program tarafından saklanmalı. Mali bilgiler, ama neyin mali bilgisi? Satış, fiyat final falan.
+
+130
+00:33:41,935 --> 00:33:44,635
+Çok yuvarlak bir kavram, spesifik bir şey değil.
+
+131
+00:33:44,635 --> 00:33:56,796
+Bir de şey yapacağız, bu aşamada problem alanına odaklanıyoruz arkadaşlar. O yüzden haliç ve sistemleri devre dışı bırakacağım. Bu aşamamı almayacağım şimdilik.
+
+132
+00:33:57,536 --> 00:34:07,115
+Saklanan işlemler, işlem olabilir ama işlem dediğiniz şey zaten alışveriş işlemi. Alışveriş olarak geçiyor bu arada.
+
+133
+00:34:08,052 --> 00:34:23,332
+İşlemler çok yuvarlak bir kelime. Ne işlemi? Bir ayrıntısıyla yatsaydı belki düşünürdük. İşlem program tarafından saklamı, mali bilgi, mali çıkmış, saklamış işleminin üzerinde daha sonra raporlamalar.
+
+134
+00:34:23,332 --> 00:34:29,811
+Biz rapor olabiliriz, yazabiliriz. Ve analizler. Rapor analizler aynı şey.
+
+135
+00:34:30,208 --> 00:34:55,228
+Sistem yapılan alışveriş karşılığında müşteriye fiş vermelidir. Müşteri de bir isim. Yapılan her satış, satış olabiliyoruz. Ondan sonra için KDV de bir isim. Mesela hesaplamak ayrıca belirtilmedi. Şirketimizin, şirketin birden fazla şubesi. Şirket şube.
+
+136
+00:34:57,876 --> 00:35:11,076
+Şöyle yazsak yeter. Şöyle yazılıp, tüm şöyledeki işlemler merkezi sonucu eğitilmiyoruz. Altta belirge kısmına geçiyorum merkezi sonuç kısmına geçiyorum. Tamam, buradan bunları bulduk.
+
+137
+00:35:11,956 --> 00:35:24,695
+Şeye gidelim bakalım bile. Kullanım sanatörsü metnine gidelim isterseniz. Ya da diyelim ki onay gitmeyi unuttuk. Normalde giderdim de. Kasten gitmiyorum.
+
+138
+00:35:25,135 --> 00:35:35,175
+Şey için, şuradaki şu dördüncü maddeyi kendimiz çıkartalım diye. Oraya gitmiyorum.
+
+139
+00:35:47,923 --> 00:35:54,684
+Peki. Şimdi, aha şey, kurallara ineceğiz, tamam.
+
+140
+00:35:59,315 --> 00:36:06,315
+Kasa. Saklanan bilgiye uyuyor mu? Sistemin çalışması süresince bu varlığın durumu saklanmalıdır.
+
+141
+00:36:07,235 --> 00:36:13,595
+Ya şimdi tamam peki aslında kullanım senaryosu o metninde o kısak belki yararlı olabilir.
+
+142
+00:36:13,835 --> 00:36:21,595
+Çünkü hani varlığın durumu ile ilgili oradan da ayrıntı verebiliriz ama neyse hani kafamızda 3 aşağı 5 yukarı senaryo diyelim.
+
+143
+00:36:27,411 --> 00:36:32,711
+Haa, kasiyah. Kasiyah şeyi unuttuk. Geleksin belgesini yazıyor muydu kasiyah diye?
+
+144
+00:36:38,036 --> 00:36:45,235
+Evet, kas verilmesi yardımıyor. Peki, hadi şunu da bir okuyalım. Kullanım senaryosu, bekleyin okuyalım.
+
+145
+00:36:45,235 --> 00:37:04,235
+Kasiyas yazalım. Ondan sonra müşteri dedik, kasiyas dedik. Ödeme, tamam. Ondan sonra satış zaten yazıyor, filç zaten yazıyor, tamam.
+
+146
+00:37:05,907 --> 00:37:15,307
+Devam edelim. Ürün, ha, tamam. Yazalım. Kasa var. Barcode. Barcode bir isim. Hadi ekle.
+
+147
+00:37:15,307 --> 00:37:20,667
+İsteyelim. Ondan sonra şu an. Satış kanalı maddesini geçiyorum şu an.
+
+148
+00:37:27,795 --> 00:37:37,775
+Aklatıklı bir yere katıyorum. KDV yazdık, müşteri dedik, ödeme dedik, ödeme tamam, switch dedik, ürün tadı dedik, tamam peki.
+
+149
+00:37:38,135 --> 00:37:45,536
+Bunun hepsi geçiyor, alternatif şeylere de bakalım. Geçersiz barkod, barkod yazdık, sistem zaten onu kodlamaya çalışıyoruz.
+
+150
+00:37:45,715 --> 00:37:51,275
+Kayıt, işlem, aynı şey, kayıt, işlem, alışveriş dedik, onların kayıtları da bir hayatında.
+
+151
+00:37:51,923 --> 00:37:57,784
+Kasya, barcode, ara, sista, bu kadar başka bir şey gözükmüyor. Şimdi kurallarımıza inelim.
+
+152
+00:38:02,291 --> 00:38:28,072
+Saklanan bilgi sistemin çalışması süresine bu varlığın durumu saklanmalı. Yapılan bütün işlemler saklanacak, volgulanacak ya, her ne kadar harici sistemleri biraz devre dışı bıraktık değil ama sonuçta yapılan işlemle ilgili raporlar falan da tutulacak dedik. Bu nedenle kasa gerekiyor. Birinciyi sağlıyor zaten. Değerlerine bakmaya gerek yok. Değerlerindeki uyuyor.
+
+153
+00:38:29,300 --> 00:38:46,720
+Alışverişe gelelim. Saklanan bilgiye uyuyoruz. Sistemin çalışması süresi arasında bu varlığın durumu saklanmalıdır. Tabii saklanmalı. Çünkü hem tamamlandıktan sonra kayıtlarını tutacağız hem de alışveriş sırasında bunlar ürün ekleyeceğiz, gerekirse ürün seveceğiz falan bu gibi işler yaptıracağız.
+
+154
+00:38:46,720 --> 00:38:57,060
+Bu gibi işler yaptıracağımızdan gereksinim duyulan hizmetlere de uyuyor, saklanan bilgiye de uyuyor, gerekli varlıklara da uyuyor. Yani problem için bilgi üreten varlıklar.
+
+155
+00:38:57,300 --> 00:38:59,640
+Bunu koyalım.
+
+156
+00:38:59,640 --> 00:38:59,900
+Tamam.
+
+157
+00:39:00,680 --> 00:39:01,079
+Vapro.
+
+158
+00:39:02,619 --> 00:39:06,720
+Şimdi, sistemin çalışma süresinin şu varlığında durumu saklanmalıyız.
+
+159
+00:39:07,507 --> 00:39:27,887
+Vapor aslında yapılan işlemlerden yola çıkaraktan üretilen bir bilgidir arkadaşlar. Üretilen bir bilgi olduğu için bu tartışma aynısı FISH-in de geçerli. FISH ise bir kağıt parçası nihayetinde. Bu kağıt parçası sistemde saklanmayacak.
+
+160
+00:39:29,652 --> 00:39:39,971
+Tutukla resmini çekip bir yerde saklanmıyor mesela. Çünkü zaten alışveriş işlemlerin kayıdı saklanmış oraya. Fiş niye ayrıca saklarsın?
+
+161
+00:39:40,211 --> 00:39:52,372
+Raporda, fişte üretilen bilgi arkadaşlar. Mevcut varlıklardan çok rahatlıkla üreteceğimiz bilgi. O yüzden raporu ve fişi dahil etmiyor arkadaşlar.
+
+162
+00:39:52,788 --> 00:39:56,587
+Rapor için aslında şunu da parantez içerisinde yazayım.
+
+163
+00:39:56,967 --> 00:39:59,788
+Farklı türden raporlar olacak ve bu her rapordan...
+
+164
+00:40:00,000 --> 00:40:13,139
+Ne yapılacağı farkı farklı olacak. Ne bileyim, gün sonu raporu, kasiyar raporu, genel satış raporu, birleşik rapor, defteri kebir, bunları tarzlarla salladım ama neyse.
+
+165
+00:40:13,139 --> 00:40:28,000
+O yüzden öyle baktığınızda aslında değişik raporlama türleri olup bunların biçimleri ve içeriklerinin neler olması gerektiği bilgisi illaki bir rapor sınıfında ve büyük olasılıkları onun alt sınıfında,
+
+166
+00:40:28,000 --> 00:40:32,639
+Sınıfları, farklı rapor türleri olacak. O açıdan kullanılır aslında arkadaşlar.
+
+167
+00:40:32,639 --> 00:40:41,420
+Ama çözümü çok karmaşıklaştırmamak için şartlı olarak dahil etmiyorum.
+
+168
+00:40:53,940 --> 00:41:12,239
+Üretilebilir bilgi gerekçesi ile almadım diyorum. Yoksa dediğim gibi gerekçe hiç gerekmeyecek her halde. Üretilebilir bilgidir gerekmez.
+
+169
+00:41:19,956 --> 00:41:30,996
+Tamamen de sadece de yapta. Sadece öğretilebilir bilgi de bekmez. Fişlerin farklı türleri de yok arkadaşlar.
+
+170
+00:41:30,996 --> 00:41:38,536
+Aslında şey olarak baktığımızda, şunu gözlemliyorum marketlerde.
+
+171
+00:41:39,027 --> 00:41:49,787
+Yemek kartıyla filan bir alışveriş yapılacağı zaman, bir nokta buluşuyor yazıcıya, cırt cırt cırt cırt bir fotoğraf, o kocaman bir fotoğraf kesiyorlar filan.
+
+172
+00:41:52,027 --> 00:42:01,007
+Bencil bir insan olarak o cırt cırt bitmesini beklemek, bencil ve sıvılsız bir insan olarak bana çok zul geliyor yani, ağır geliyor ama.
+
+173
+00:42:02,324 --> 00:42:09,463
+Onunla ödeme yapımı da en doğal hakkı. O yüzden saygı duymak lazım. Kendimle eleştirmiş olayım bu vesileyle.
+
+174
+00:42:10,564 --> 00:42:16,483
+Mübarek Ramazan'da. Neyse, şimdi o ayrıntıyı da derece dışı bırakıyorum. Tamam mı?
+
+175
+00:42:28,980 --> 00:42:32,760
+Şunu sesle de alayım. Pardon.
+
+176
+00:42:40,947 --> 00:42:55,707
+Nerede kalmıştık? Tek tip olduğu kabul edilir diyorum. O yüzden kart ödeminin o cılt cılt tıpış basma şeyini ekleyemiyorum.
+
+177
+00:42:56,627 --> 00:43:08,068
+İsterseniz şöyle olabilir. Şuradaki şemama ödemede provizyon var. Bir de yemek kartı. Onların farklı türleri olacak.
+
+178
+00:43:08,563 --> 00:43:34,063
+Belki işte şimdi buradan kalıtım olabilir. Fakat nakitli ödemede provizyon gerekmiyor. Yenide orada bir kalıtım vergi kusurlar olacak. Belki ödemenin farklı türleri olarak nakit bilmem ne bilmem ne. Bir bakalım. Şöyle yapalım. Bunun üstüne çizmek istemiyorum.
+
+179
+00:43:35,284 --> 00:43:50,583
+Şöyle yapmak istiyorum. Şuradan her şeyi seç. Şöyle. Kontrol. Her da sadece şey, ödeme ve provizyon olayını bir seçeyim sadece. Orası için bir alternatif konuşalım diyelim.
+
+180
+00:44:03,092 --> 00:44:09,992
+Trade veya banka kartı ve ticket.
+
+181
+00:44:11,992 --> 00:44:17,811
+Ya da daha, hadi Türkçe konuşalım, yemek kartı diyelim.
+
+182
+00:44:19,112 --> 00:44:20,332
+Ondan sonra işin var.
+
+183
+00:44:21,780 --> 00:44:33,780
+Bu versiyonları var. Şimdi nakitte provizyon olmayacağı için, şu kalıtımı koyarım şöyle. Nakitte provizyon olmayacak.
+
+184
+00:44:33,780 --> 00:44:45,516
+Bakın bunu dedik ki şimdi şunu şöyle dikkatli yapmak lazım. Şimdi provizyonu buraya ekstent dersem, şimdi burada şöyle bir sorun var. Nakitte ödeme yapıldığında bu provizyon olmayacak.
+
+185
+00:44:45,652 --> 00:45:10,431
+Ama zaten provizyondan ödemeye doğru ekstens var. Nakitte provizyon gerekmiyor. Fakat şimdi bu kanıtım olduğu için yukarıdaki her şey aşağıya da kanıtım olarak geçer. O yüzden provizyon ekstensiyonu da burada imiş gibi gözüküyor. Böyle tutsak olabilir belki ama çok beğenmedim.
+
+186
+00:45:10,768 --> 00:45:20,208
+Ve buradan aslında farklı aşağıya çok ödeme yöntemi değil de, fiç ya da fatura basması.
+
+187
+00:45:21,408 --> 00:45:23,408
+Fel yapabiliriz, durdu.
+
+188
+00:45:25,847 --> 00:45:31,248
+Onun bir sade şeydesin, bakın. Yine şu kalıtım işkisine gerek yok şeyine geleceğim şimdi.
+
+189
+00:45:33,072 --> 00:45:41,072
+Bazen provizyon alınıyor. Bu ödeme bazen nakittir, bazen kredi, bank ve kartıdır, bazen yemek kartıdır.
+
+190
+00:45:41,072 --> 00:45:53,452
+Ve şuna bir switch basma use case'i koyalım. Bir tane de fatura basma.
+
+191
+00:45:55,923 --> 00:46:06,443
+Yuskesi koyalım. Hatta büyük yapı marketlerde soruyorlar ki hiçbir fatura mı diyorlar filan mesela. Her seferinde sorarlar yani. Marketlerde sormazlar ama o zaman şöyle yapalım.
+
+192
+00:46:07,104 --> 00:46:14,463
+Şimdi nakit her zaman fiç basma yapar. Ben 40'lik artı her zaman için fiç basma yapar.
+
+193
+00:46:15,507 --> 00:46:39,487
+Market için konuşuyoruz şimdi. Ve yemek kartı işte, satıra basar şeklinde bir şey yapabiliriz mesela. Bu kısmını böyle ayrıntılar dolar biliriz. Ama tabii ki bunu şu an sizlerle, değişik fikir cimnastiği olsun diye konuşuyorum, tartışıyorum. İşleri biraz daha iyi öğrenelim diye tartışıyorum. Yoksa senaryolarda bunların hiçbiri geçmiyor.
+
+194
+00:46:40,019 --> 00:46:46,360
+Bunu tamamen gerçek hayattaki deneyimlerimize dayanarak da böyle sizinle etik ve cimnastiği yapıyoruz.
+
+195
+00:46:47,559 --> 00:46:54,599
+Bakın yine, kalıtım kullanmadan bir şey çözdük. Gayet de ayrıntılı, güzel çözdük diyebilirim.
+
+196
+00:46:57,159 --> 00:46:59,219
+Peki, nerede kaldıydık?
+
+197
+00:47:02,539 --> 00:47:06,800
+Fişin tartışmasını yapmıştık. Peki, gelelim müşteriye.
+
+198
+00:47:07,791 --> 00:47:32,532
+Müşterilerin bilgisini saklamalı mıyız? Yok. Müşteriye, hizmetlerine gerek duyuyor muyuz? Yok, duymuyoruz. Yani müşteri yüksel bir varlık olarak bizim sürecimizin içerisinde ama bunu, yani müşteri geldiğinin bir metodunu çalıştırmak, bir işini yapmak, hayır. Kasiyer zaten satışını başlatıyor, müşteri geldi diye başlatıyor.
+
+199
+00:47:32,896 --> 00:47:44,275
+Bundan sonra, kasada size adınızı söylediğinizi soruyorlar mı? Yok, sormuyorlar. Ha, şu var bakın, sadakat kartı uygulamaları var büyük marketlerde.
+
+200
+00:47:44,996 --> 00:47:50,576
+Büyük marketlerde değil ama büyük marketlerde var. Mikros'ta mesela, Mikros kartınız var mı diye soruyor.
+
+201
+00:47:50,576 --> 00:47:55,556
+Buna işte sadakat kartı uygulamaları deniliyor, İngilizcesi loyalty.
+
+202
+00:47:56,851 --> 00:48:13,291
+Bizim gereksinlerimizde loyalty card olmadığı için müşterinin bilgisinin saklanmasına da gerek yok, hizmetlerine de gerek yok, tenisine de gerek yok. Bu nedenle eksi diyorum. Ama parantez çağısına da yazayım.
+
+203
+00:48:24,851 --> 00:48:52,211
+Bu müşterik kartları da tamamen firmanın kârlığını arttırması için veri elde etmeye yönelik veri madenciliği uygulamalarıyla da değişik kampanyalar, bunlar yapıyorlar.
+
+204
+00:48:53,235 --> 00:49:06,175
+Ne bileyim, işte çikolata alan yanına gofret de alıyor, cips alan yanına gazlı içecek de alıyor. O zaman bu ikisini bir araya getir kampanya yap.
+
+205
+00:49:06,452 --> 00:49:30,231
+Ya işte bunları daha fazla satıp stoklarını eritmek istiyorsan az indirim de yapabilirsin. Ama stok eritmek gibi bir derdin yoksa ikisini birlikte tek tek fiyatlarını toplamaktansa, nasılsa ikisi birlikteyim işte bakmadan alan müştere daha çok üstünden para kazanırsana kadar bir yere de iğneledik. Değişki şeyler yapabilirsiniz.
+
+206
+00:49:31,987 --> 00:49:35,588
+Ama şimdi bunlar bizim gereksinimlerimiz içerisinde yok. Bu yüzden aldım.
+
+207
+00:49:36,628 --> 00:49:45,967
+Peki, satış. Saklanan bilgi, evet yapılan satış işlemleri kaydedilmeli, bunun iknağına falan ihtiyac var, varmalı edeceğiz, iş vereceğiz, gerekli varlık tamam.
+
+208
+00:49:46,148 --> 00:49:52,248
+Fakat şimdi bakıyorum ki, yukarıya çıkıp baktığımda, alış-veriş yani satış. Aynı şey.
+
+209
+00:49:52,755 --> 00:50:19,435
+Eş anlamlı. Yani alışveriş dediğim müşteri açısından baktığımızda alış, market açısından baktığımızda veriş yani satış. Buna eş anlamlı kelimeler. Hangisini tutalım? Ben satışı tutmayı tercih ediyorum. O yüzden alışverişe geri dönüp eksi diyorum. Çünkü satış ile eş anlamlı aynı şey. O yüzden alışverişlerine satış demeyi tercih ediyorum.
+
+210
+00:50:20,467 --> 00:50:37,947
+Ondan sonra, KDV diye girelim. Saklanan bilgi. Sistemin çalışma süresi için, bulanının durumu saklanmalıyız. Evet, saklanmalıdır. Çünkü toplam KDV belirlenmesi konusu. Geksin, duyanın hizmetler, bulanının hizmetlerine ihtiyacı olan başka varlardır.
+
+211
+00:50:38,963 --> 00:51:03,584
+Ve nihayetinde ürünlerin KDV'si var. Ama ürünlerin KDV'si var. Ve bu KDV farklı ürünlerde farklı değer alıyor. KDV ürüne bağlıdır arkadaşlar. O yüzden KDV başlı başına bir şey değil, sınıf değil. Bu ürünün üye alanı olmalıdır.
+
+212
+00:51:03,584 --> 00:51:04,844
+Buna dikkat.
+
+213
+00:51:07,764 --> 00:51:18,204
+Şube, saklanan bilgi, sistemin işe çalışması süresince bu varlığın durumu saklanmalıdır. Bilmiyorum. Buna pek bir şey dayandıramadım şimdi.
+
+214
+00:51:18,931 --> 00:51:32,951
+Gereksin duydan hizmetler. Ama şeyden ihtiyaç duyuluyor aslında. Şorluğunuzda satılan mallar var. Yani bir daha fazla şubis olup bunu boşu boşuna da söylememiş olumsalar.
+
+215
+00:51:32,951 --> 00:51:43,692
+Burada bir şeylere ihtiyaç var diye düşünüyorum. Ve ondan sonra diyelim ki aklıma işte bir tane şöyle.
+
+216
+00:51:44,211 --> 00:52:00,971
+En uzun bir fişimi bulayım mesela. Biraz bir fişi saklıyordum. Ve bir de aslında alırken de şöyle bir sondaki madde tartışması yeri bizden fazla aldığım şey de bulayım da.
+
+217
+00:52:04,971 --> 00:52:07,072
+Efsane şöyle bir market fişi.
+
+218
+00:52:07,072 --> 00:52:08,271
+Şöyle bir.
+
+219
+00:52:10,152 --> 00:52:10,791
+Güzel.
+
+220
+00:52:13,364 --> 00:52:34,824
+Peki, evet. Bir tane mağaza fişi geldi. Bu da Hakaşkay'ın yapmıyordu. Sonuçta isimleri, herkes söylesem bir şey değil. Bin birleşik mağaza AŞ, Yeniçer Mahallesi, Hakkaya, Sokak, Bire, haa, firmanın adı yapıyor, adres yazıyor, vergi adres yazıyor.
+
+221
+00:52:35,380 --> 00:52:50,239
+İşlemi yaptım, tarih yazıyor, saat yazıyor, Fişno yazıyor. Bu bilgiler tamam, tarih, saat, Fişno'nun şube ile alakası yok ama bakın firmanın adı, şubenin adı, adresi ve vergi numarası var.
+
+222
+00:52:50,547 --> 00:53:18,307
+Şimdi şunu bilmiyorum, yani BİM'in tek bir vergi numarası mı var yoksa şubelerin ayrı mı? Herhalde şubelerin ayrı vergi şeyi söz konusu değildir diye tahmin ediyorum. Ana firmanın vardır, vergi numarası mı? Ama adres var yani. Ve bu adres yine BİM AŞ'nin ana müdürünün adresi değil de satışın yapıldığı yerin adresi. Yani aslında şubenin bilgisine ihtiyaç duyuluyor.
+
+223
+00:53:18,547 --> 00:53:30,367
+Yani gereksinim, gerekli varlık, problemin çözümle ilgili bilgi üreten varlık. Bunun bilgisinden yararlanacağız. O yüzden bunu alacağız.
+
+224
+00:53:34,867 --> 00:53:43,287
+Evet, şu fiç olsun. Başka bir şeyleri hatırlatmak için kullanacağım zaten. O yüzden şu D'ye artı diyorum. Gerek.
+
+225
+00:53:45,556 --> 00:54:10,016
+Kasiyer. Şimdi, kasiyer login olacak dedik. O yüzden her bir kasiyerin kullanıcı hesabı olacak. O yüzden bu saklanan bilgi ve gereksinim duyulan hizmetler anlamında gerekli. Ben ne kadar ben bu işi biraz daha basitleştirmek için ders notunu almamışsam da burada sizinle birlikte alın almak istiyorum.
+
+226
+00:54:12,496 --> 00:54:24,735
+Sadeleştirme için anladım ama o kadar da, buradaki daha aile yazılıyor, o kadar da karıştırılmıyor.
+
+227
+00:54:26,735 --> 00:54:28,755
+Sizinle yapalım.
+
+228
+00:54:30,016 --> 00:54:31,875
+Dersleri izleyenlerinde bir farkı olsun.
+
+229
+00:54:33,375 --> 00:54:33,755
+Ödeme.
+
+230
+00:54:36,211 --> 00:54:53,851
+Evet, ödemeler saklanmalı. Gerçi aslında bu ödeme yapılan araç verişinin toplam miktarı olacak ve üretilen bilgidir deyip bunu saklamasak da olur diye düşünebiliriz.
+
+231
+00:54:56,724 --> 00:55:05,104
+Ben bu fişi aldığımda, tabii slip'in de yanında şey etmemişim ya da oradaki bir dolu bir şeyin içerisinde başka bir yerde, her neyse, hiç önemli değil.
+
+232
+00:55:05,644 --> 00:55:14,764
+Fakat ben bunun click kartını aldığım için aslında, click nakitler artık taşımıyor insanlar yanında, bunun bir de slip'i var arkadaşlar.
+
+233
+00:55:18,579 --> 00:55:25,239
+Kasiyar, Fisch ile birlikte, Silib'in bir kopyasını size veriyor, bir kopyasını kasaya koyuyor.
+
+234
+00:55:28,916 --> 00:55:56,316
+Dedim ki, kasiyeri bu kağıtları da ayrıca saklama yükünden kurtarmış. Bu kağıt belki düşer, gider, düşkü olur ya da yazıcının kağıdı bitmiştir. O silbi bir kopyasını basamamıştır. Kalabalıktır falan. O yüzden bu sliplerle ilgili onay kodu mesela. Her bir slihte bir de onay kodu yazıyor. Burası da sınav kredi kartı. Kredi kartının son dört tanesi miktar.
+
+235
+00:55:56,916 --> 00:56:15,636
+kodu yazıyor. Bu bilgilerin de kasada saklanması önemli olacaktır diye düşünüp ödemeye artı koyuyorum. Yani ödemeyle kullanacağız. Bunun varlıklar, verilerine ihtiyaç duyuruyor diyeceğiz.
+
+236
+00:56:15,636 --> 00:56:22,636
+Peki, ürün. Evet, ürün hepsini sağlıyor ama çok fazla uzatmayayım.
+
+237
+00:56:24,052 --> 00:56:48,052
+Evet, ürün sağlıyor. Fiyatı KDV'si olacak. Ondan sonuçta var. Ve barcode. Evet, barcode bilgisayar ihtiyaç var ama barcode ürünle ilişkili şey, ürünün barcode'u oluyor. O yüzden barcode'u eksiliyorum. Bu yine ürünün bir alanı olarak da bu şekilde gerekçemi belirtiyorum.
+
+238
+00:56:52,532 --> 00:56:56,172
+Şöyle yapalım.
+
+239
+00:56:57,431 --> 00:57:11,351
+Alışverişi şu ilk sıtırı almak istiyorum. Biraz düzen sıkıntısı diyebilirsiniz belki ama ders anlatırken, bir şey yaparken ders çalışmaksak.
+
+240
+00:57:13,152 --> 00:57:18,012
+Ama şey şimdi görünüm sözcük kaydırı yapmasın. Bu uzun uzun notları görmenize gerek yok.
+
+241
+00:57:23,284 --> 00:57:46,443
+Evet. Şunu şöyle bir yaparız. Ondan sonra bilmem neyin üyalarını eş anlamında bu şöyle. Evet. Bu daha dağlık yeter diye düşünüyorum. Peki. Şuraya kadar konuştuklarınızdan, söylediklerinizden, hocam şu kafama yatmadı, hiç öyle olmaz mıydı vesaire diye söyleyeceğiniz şeyler varsa lütfen buyurun konuşalım.
+
+242
+00:57:51,123 --> 00:58:02,803
+Aslında verebiliriz de. Yani sonuçları belirledik. Ondan sonra ilişkilerini çekmek için şöyle bir gelinip edip, bir şeyler yapabiliriz.
+
+243
+00:58:04,283 --> 00:58:07,503
+Sorumuz yoksa tabii. Daha sonra konuşalım.
+
+244
+00:58:12,436 --> 00:58:18,436
+8 dakika ara olsun. 55 de kabul edelim şu an.
+
+245
+00:58:20,436 --> 00:58:31,436
+09.55 10.05 şeklinde aramızı verelim. Sonra cevap edelim.
+
+246
+01:06:50,356 --> 01:06:59,356
+Evet arkadaşlar, araçlarımızı doldurduk. Kaldığımız yerden devam edebiliriz. Kaldığımız yer de şurada.
+
+247
+01:07:03,356 --> 01:07:16,236
+Nesneleri belirledik. Oradan yola çıkaraktan yorana sınır çaması çizeceğiz. Şöyle gelsin. Şunu biraz genişleteyim.
+
+248
+01:07:27,188 --> 01:07:28,012
+Evet.
+
+249
+01:07:34,483 --> 01:07:36,104
+ve en sonuç.
+
+250
+01:07:39,764 --> 01:07:41,183
+Evet, şeylerimiz de burada.
+
+251
+01:07:42,304 --> 01:07:43,324
+Kada'ylarımız da bu.
+
+252
+01:07:43,903 --> 01:07:44,983
+Barışveriş almadık.
+
+253
+01:07:45,103 --> 01:07:47,023
+Hasta tamamlar size koyalım.
+
+254
+01:07:50,023 --> 01:07:50,804
+Şimdi,
+
+255
+01:07:53,143 --> 01:07:55,824
+yüya alanları şu aşamada çok düşünmek zorunda değiliz.
+
+256
+01:07:56,203 --> 01:07:59,123
+Hani, solda bulduklarımızı hemen ekleriz.
+
+257
+01:07:59,123 --> 01:08:02,384
+Ama bu aşamada çok yüya alan düşünmek zorunda değiliz.
+
+258
+01:08:02,739 --> 01:08:25,899
+Hadi şurada bir gerçek ki, yani üye alanı olmayan bir sınıf olmaz elbette. Fakat aradaki ilişki bile bir üye alan ile gerçeklendiğinde, o nedenle aslında bir sınıftan diğer bir sınıfta bir ok çizdiğimizde bile zaten aslında okulun başlangıç noktasında bitiş türünden bir üye alan eklemiş oluyoruz.
+
+259
+01:08:26,239 --> 01:08:35,619
+Öte yanda, saklanan bilgi açısından kaydedilse, illa ki o var, bazı programlarla ilgili bazı bilgilerin var.
+
+260
+01:08:36,219 --> 01:08:41,119
+Süper, kullanım servis metninde görememişiz. Zaten kısa bir metin olacak. Ayrıca bir şey değil.
+
+261
+01:08:42,159 --> 01:08:45,459
+Peki, kasayı koyduk. Satış.
+
+262
+01:08:48,787 --> 01:08:59,947
+Şimdi ben bir sınıfı koyunca, daha öncekiler ile aralarında ilişkiler varsa unutmadan onları da koymayı tercih ediyorum.
+
+263
+01:09:00,567 --> 01:09:10,507
+Şimdi yapılan satış işlemleri kasada saklanacak ya, o yüzden kasadan satışa bire Yıldız.
+
+264
+01:09:13,043 --> 01:09:23,783
+Belirli bir kasada o gün herhangi bir satış işlemi yapılmamış olabilir. O yüzden sıfır satışlı kasa olabilir. Bu nedenle Yıldız koyuyor. İlla bir satış olacak diye bir kural yok kasada.
+
+265
+01:09:25,603 --> 01:09:33,023
+Şu an başka bir varlık yok. O yüzden başka düşüneceğim ilişki de yok şu anda. Sıradaki varlığa geçelim. Şube.
+
+266
+01:09:41,876 --> 01:09:58,056
+Şimdi kasalar şubelerde yer alıyor arkadaşlar. Burada da hani bir şubede birden fazla kasa yer alır şeklinde yazabilirim düz ok ile ama yani bir şubede bir kasa olmasıyla ilgili
+
+267
+01:10:00,340 --> 01:10:15,840
+Kurallar daha sıkıdır diye düşünüyorum. Çeşitli mali kurallar şunlar, bunlar. O yüzden arada bir şubede en azından mutlaka bir kasa olmalıdır gibi bazı mantıklı kuralları düşünerekten şubeden kasaya doğru okumu çiziyorum.
+
+268
+01:10:28,340 --> 01:10:31,000
+Koyduruyorum arkadaşlar. Siz de unutmayın lütfen.
+
+269
+01:10:31,940 --> 01:10:37,880
+Şimdi bu ilişkinin özünü de hatırlarsanız şuraya yazmasak bile bir demekti aslında.
+
+270
+01:10:37,880 --> 01:10:49,340
+Ve bir şubeli en azından bir kasa olmalı. Yani sıfır kasalı şube olamaz. O yüzden bir iki noktaya ayırtılır şeklinde de son uçaki olan mühendisliği yazıyorum.
+
+271
+01:10:49,860 --> 01:10:53,659
+Şuradaki biri yazmanız gerekmiyor. Ben sadece hatırlatma için koydum.
+
+272
+01:10:54,228 --> 01:10:57,708
+O da bir vardı hatırlarsınız, Rus Nehmet'in de.
+
+273
+01:10:59,956 --> 01:11:23,536
+Şurbede satışı da oradan ilişkilendirmeyeceğim. Şu şurbede şu satışlar yapıldı diye ayrıca bilgi tutmaya da gerek yok. Çünkü zaten şurbede kasaların bilgisi var, kasalarda da satışların bilgisi var. O yüzden herhangi bir şube nesnesini sende hangi satışlar yapıldı diye sorgulamamız gerektiğinde, oradan öyle bir laf alınması gerektiğinde, kasa nesnileri üstünden kümülatif olarak bu işler yapılır.
+
+274
+01:11:23,536 --> 01:11:27,095
+O yüzden.
+
+275
+01:11:28,500 --> 01:11:34,340
+Şurgenin satışına bir şey koymuyorum bir ilişki. Kasiyan olacak.
+
+276
+01:11:38,515 --> 01:11:45,995
+Şimdi, kasiyerlerin, acaba kayıtları şubede listesi tutulsun mu falan, gerek yok.
+
+277
+01:11:48,155 --> 01:11:58,275
+Bence, bu da benim aklıma gelen, kasiyerlerin kullanıcı hesaplığı bilgileri, kasiyer kasaya blogini oluyor ya, kasada tutulsun, diyelim.
+
+278
+01:11:59,539 --> 01:12:05,219
+Ve her yapılan satışta, bir de fişe de bakıp söyleyeyim.
+
+279
+01:12:06,039 --> 01:12:11,119
+Bu da, bu fişte yazmıyor kası yaratı.
+
+280
+01:12:15,988 --> 01:12:31,328
+Yazıyor, yazıyor. En altta. Çünkü görmüş müdürüm. Bu fişte en altta kasiyer Z yıldız yıldız, A yıldız yıldız yani yazıyor. Bu nedenle mutlaka eğer bir kasiyer login olmuşsa,
+
+281
+01:12:32,275 --> 01:12:54,216
+Onun bilgisi tutuluyor. Şimdi, şeyi düşünmüyorum şu anda arkadaşlar. Kasiyerin kullanıcı hesabı bilgilerinin listesi nerede tutuluyor onu düşünmüyorum. Bu çok altyapıya yönelik bir şey. O kararı tasarım açmasından verilecek bir karar. Ki karmaşıklaştırmamak için o zamanda bile yapmayacağım bunu. Hesaplar nerede tutulduğunu.
+
+282
+01:12:59,604 --> 01:13:07,604
+O anda o kasada herhangi bir kasaya oturum açmamış da olabilir. O yüzden...
+
+283
+01:13:08,884 --> 01:13:30,884
+Şu şekilde yazılıyorum ben. Kasiyerin hangi kasaya oturup açtığını kaydın kasiyer tarafından bilinmesine gerek yok. Varlık olarak şey diyorum, kod varlığı olarak düşünüyorum ama bir kasada bir kasiyerin oturup açmış olması lazım. Açmamışsa ilişkin al ama açmışsa not null şeklinde bir kasiyer nesnesiyle ilişkin.
+
+284
+01:13:31,347 --> 01:13:39,807
+Authentication nasıl yapılacak, bu Casillas bilgiye nerede saklanılacak onu düşünmüyorum şu an kesinlikle. O yüzden ilişkiyi bu şekilde buraya yerleştirdim.
+
+285
+01:13:42,147 --> 01:13:45,768
+Şurada Casillas ve
+
+286
+01:13:47,475 --> 01:13:55,775
+Yapılan işlem de bir her satışta hangi satışın hangi kasiyer tarafından yapıldığı da tutuluyor.
+
+287
+01:13:55,775 --> 01:14:05,575
+Şimdi satış şu an kasiyere herhangi bir ulaşma yolu yok oklardan bakarsanız eğer. Yani satıştan kasiyere gidilmiyor.
+
+288
+01:14:05,956 --> 01:14:10,615
+Satıştan kasaya doğru da bir ok olsaydı o zaman ondan da kasiyere gidilirdi belki.
+
+289
+01:14:11,215 --> 01:14:11,775
+Fakat...
+
+290
+01:14:12,787 --> 01:14:23,867
+Bu ters yönlü ilişkiye kesinlikle gerek yok. Nesli Hanım dersinden hatırlayın. Çift yönlü ilişkilerde tutarlılık kontrolünü yapmak epey bir ek iş çaba gerektiriyordu.
+
+291
+01:14:23,867 --> 01:14:34,707
+Ve biz de KIS ilçesini uyguluyorduk. Keep it simple. Ne istiyorsam işte o. Daha fazlasına ulaşmaya çalışmak son derece mantıksız bir şey. Bu nedenle.
+
+292
+01:14:35,123 --> 01:14:56,923
+Sadece şöyle tutmuyorum. Satıştan da kasiyere yine benzer şekilde her satış mutlaka bir kasiyer tarafından yapılmalıdır. Şimdi bakın oku şu şekilde çizdiğimde bu okun satış ucu çok belli olmuyor. Satışa giren ok ile ondan kasiyere çıkan ok karıştı.
+
+293
+01:15:03,123 --> 01:15:11,984
+Ben style'ını değiştiriyorum. Burada satıştan önce direkt ortasından aşağı insin, vertical, ondan sonra yana doğru gitsin, horizontal.
+
+294
+01:15:12,323 --> 01:15:14,923
+vertical, horizontal seçtim. Bu şekilde yapıyorum.
+
+295
+01:15:16,020 --> 01:15:33,780
+Vertical'la horizontal karıştırıyorsanız seçeneklere tek tek deneyin, hangisi güzel çıkıyorsa onu yapın ama hiç karıştırmaya gerek yok. Şimdi, horizon nedir? Ufuk. Ufuk çizgisi nedir? Yatay. P'nin ortasındaki çizgi ne? Yatay. Horizont'ın, ufuk, yatay.
+
+296
+01:15:43,072 --> 01:16:00,752
+Şey derseniz, tam 90 dereceye bükebilirsiniz mesela. Kuvvetler adını oraya şöyle döküp tam dikkatç yaptığımı düşünün. Tabii H'de dikkatçisi var ama H'nin esas özelliği, ho-ko-rizontun ortasındaki çizgi. Böyle için siz eminimler karıştırmazsınız. Evet.
+
+297
+01:16:02,891 --> 01:16:09,051
+Bir satış mutlaka bir kasiyahla ilişkili olmalıdır demek istiyorum. Peki.
+
+298
+01:16:09,747 --> 01:16:22,487
+KDV, ürünün üye alanı. Ürün de aşağıda geçiyor. Şimdi, ha şu bir kasiyan ödeme. Ürünü koyayım mı ya bozmayayım mı? Ödeme. Tamam peki ödemeyi koyalım.
+
+299
+01:16:26,292 --> 01:16:26,852
+Ödeme.
+
+300
+01:16:28,912 --> 01:16:34,211
+Kayı bir kartı bile olsa, taksit bile olsa mutlaka bir satış bir ödeme içeriyor.
+
+301
+01:16:35,912 --> 01:16:40,032
+Pardon, sürekli yapacağım. Seçip biraz değiştirmek için.
+
+302
+01:16:41,032 --> 01:16:42,332
+Ürün, tamam.
+
+303
+01:16:44,252 --> 01:16:45,512
+Ürünler satılacak.
+
+304
+01:16:47,932 --> 01:16:48,612
+Satışta.
+
+305
+01:16:51,604 --> 01:16:55,304
+Bir satışta bir ya da daha fazla ürün olacak.
+
+306
+01:16:56,504 --> 01:16:58,924
+Bu da çup parça bitum kaynama gerek yok diye düşünüyorum.
+
+307
+01:17:03,796 --> 01:17:19,095
+Sonrasdan açımdan. Ürünün barkodu olacak. Stink. Stink diyorum çünkü bir kere herhangi bir barkod, yani Trump sayıda tutulmak için çok uzun oluyor.
+
+308
+01:17:20,916 --> 01:17:43,095
+Mesela şu tahta kararının barcode'u kaç basamaklı? 1, 2, 3, 4, 5, 6, 7, 6, 7, 8, 9, 10, 11, 12, 13. Yani çok basamaklı. Ekim ileri geçiyor, long. Yani long içinde o kadar bytes tutmaktansa ben bunu string tutarım daha mantıklı. Her ne kadar içindeki vergiler sayı olsa bile bu string olarak tutmak istiyorum.
+
+309
+01:17:46,963 --> 01:18:00,644
+Kitap da satılıyor arkadaşlar. Ve kitapın barkodu değil de ISBN numarası oluyor. ISBN numarasında X'de olabilir. Gerçi rastgele bir kitabımı aldım. Daha yakın da X geçmiyor.
+
+310
+01:18:02,783 --> 01:18:10,283
+Ama barkodla illa sayısal bir string de geçebiliyor arkadaşlar bu arada. Bu barkodla biri. O yüzden.
+
+311
+01:18:14,452 --> 01:18:33,992
+Bu arada saldırıya uğramış olan Cemil Kılıç hocamıza geçmiş olsun diyorum. Kitap öyle denk geldi. Şu zaman için insanlar bölükleri yüzünden şiddet uygulanmamalıdır, uygulanamaz.
+
+312
+01:18:34,612 --> 01:18:42,131
+Müslümanlık bu değil arkadaşlar. Müslümanlık böyle bir benimle aynı görüşten olmayana şiddet uyguluyorum değildir arkadaşlar.
+
+313
+01:18:44,551 --> 01:18:51,092
+Evet, onu da öğretim değil ama eğitim anlamında söylemiş olmak istedim kusura bakmayın.
+
+314
+01:18:51,092 --> 01:18:59,092
+Evet, barcode string olarak değerlendiriyor ve KDV'yi ise.
+
+315
+01:18:59,859 --> 01:19:13,639
+Şimdi normal adlandırma standartının küçük harfle başlıyor alanlarımız ama bu bir kısaltma. Kısaltmalarda büyük harfle yapma alışkanı olanlar. O yüzden burada KDV'yi büyük harfle yapıyorum. KDV'de double ondoluklısı.
+
+316
+01:19:14,399 --> 01:19:27,340
+Aslında float da olur ama yani biliyorsunuz çok fazla hassasiyete gerek yok. Bizde 18, 15, 1 filan gibi şeyler var. İsterseniz float değil. Double çok alışmışım ama burada float değil.
+
+317
+01:19:28,692 --> 01:19:46,032
+Ve fiyat. Ha fiyat da kuruluşlu olabilir. Fiyat, kdm. Yani fiyat kısmı şurada geçmiyor ama yani benim havaya satılmıyor. O yüzden fiyatı da aklıma gelmişken hemen yazılayım şuraya.
+
+318
+01:19:56,256 --> 01:20:12,296
+Ürünle şurdu arasında bir ilişki kurmam gerekir mi falan diye bir düşünüyorum. Bunun gerekebileceğini keşfediyorum. Çünkü şimdi senaryo metnine de bir bakalım isterseniz bu arada.
+
+319
+01:20:24,243 --> 01:20:30,363
+Şu kullanım senaryosu metnini bir okuyalım.
+
+320
+01:20:35,572 --> 01:20:54,092
+Bakın şimdi, kasayar ürünün barkodunu girer, bu madde de ürün tam filan. Şimdi, barkot okutulunca, o barkodun hangi ürüne denk geldiğinin bilgisinin bir yerlerde mutlaka tutulması gerekiyor arkadaşlar. Bunu nerede saklamalıyız acaba? Kasada mı saklamalıyız?
+
+321
+01:20:56,032 --> 01:21:12,592
+Bu çok mantıklı bir şey değil diye düşünüyorum. Çünkü bir mağazaya bir ürün geldiği zaman o ürünün işte bar kodunu ve fiyatını neymiş işte? Kalem, tahta kalemi.
+
+322
+01:21:12,592 --> 01:21:22,311
+Edding 360X ve board marka. Bar kodu 4004 bir şeyler işte. Fiyatı da 20 lira diyelim.
+
+323
+01:21:22,623 --> 01:21:27,623
+Bu bilgiyi bütün kasalara tek tek yüklemekle mi artıklı? Yoksa...
+
+324
+01:21:28,243 --> 01:21:51,363
+Zaten kasa, şubeden, şubenin adresi, madresi falan, onları da ekleyeceğiz zaten de. Bu bilgileri almak için zaten ve ayrıca şu aggregation ilişkisi parça bütünü biliyor anlamında da düşünmekte. Bu elmas da o tarafa bakan bir okucudur. Bu nedenle ben ürün bilgilerini şubeye girsem çok çok daha iyi olur.
+
+325
+01:21:51,731 --> 01:22:19,612
+Aslında merkezi firma da var, şubede merkezi firma ile şube arasında da böyle aggregation var, rada ile ilerletebiliriz ama o kadar darlandırıp dudaklandırmıyor. O yüzden bir şubede ürünler de olacak. Hani birçok bir ürün ekleme satmanın da çeşitli kuralları da oluyor. Bazı ürünler ürekli oluyor orada ama bazıları haftada bir geliyor falan filan bir şeyler var ya.
+
+326
+01:22:19,731 --> 01:22:31,471
+Satıçlar, Çarşambaçı, Bölcü mağazalar, değişik şeyler yapıyorlar. O yüzden HUB'e ürün arasında da şöyle bir yıldız koymak istiyorum.
+
+327
+01:22:31,471 --> 01:22:46,471
+Ve kasa ürünlerin bir barkod girdiğinde ilgili ürünü bu yıldız, bireyıldız...
+
+328
+01:22:46,640 --> 01:22:57,840
+Parça bütün ilişkisi sayesinde bu bütün ürünleri sarayacak ve kasaya, ha bak bu girdiğin bankot, bu ürünün dediği o bilgiyi ona gönderecek, göndermesi lazım.
+
+329
+01:22:58,440 --> 01:23:06,020
+Gerçi biraz tasarımla ilgili konuştuk ama yine de burada şuradaki şu işten ben böyle bir şey yapılması gerektiğini anlıyorum.
+
+330
+01:23:06,579 --> 01:23:11,380
+Bu da çekirdek programlarımızla ilgili bir şey. O yüzden tam o ilişkiyi koydum bir.
+
+331
+01:23:13,811 --> 01:23:17,371
+Bu da her fikir izles diye düşünüyorum.
+
+332
+01:23:18,492 --> 01:23:23,412
+Gelelim şimdi satışa.
+
+333
+01:23:23,412 --> 01:23:33,551
+Şimdi, burada beni düşündüren şey şu.
+
+334
+01:23:41,011 --> 01:23:56,951
+Sudan 12 tane alıyorum. Aldığım zaman 12. Hatta bazı marketler 24'lü alınca biraz indirim yapıyor. 24'lü alınca daha fazla indirim yapıyor.
+
+335
+01:23:58,291 --> 01:24:06,791
+Ben bu sudan aldım mı 12'li ya da 24'lü alıyorum. Ben bundan 12 tane aldım.
+
+336
+01:24:07,444 --> 01:24:20,484
+Diyelim ki ben bundan 12 tane aldığımda, kasiyar belki bunu 12 kere bıp bıp bıp koptur mu? 12 çok.
+
+337
+01:24:20,484 --> 01:24:30,164
+Yani ne bileyim, 2-3 tane mendil almış olsaydım, bu mendiller hafif, bir tanesi alır, cırk cırk sallar.
+
+338
+01:24:30,543 --> 01:24:49,583
+3 tane size 3 kere çır çır çır sallar, ondan sonra 3'ünü denmiş, ödül tarzını atardı. Ama kardeşim, bu sular 12 tane, 24 tane almış. O kadar kere el sallamaktan bile insan düşeni ve bilgiye yorulur. Nedenle klavyede 12'ye basıyor ve ondan sonra bık diye okutuyor.
+
+339
+01:24:51,220 --> 01:24:55,079
+Böyle senaryoların da modellenmesi gerekiyor.
+
+340
+01:24:55,079 --> 01:25:02,380
+Ve ayrıca işte ben on iki tane aldım ama o an susamış birisi, kendisi de çocuğu susamış gitti, bir ya da iki tane aldı.
+
+341
+01:25:02,760 --> 01:25:07,420
+Şimdi bir üründen kaç tane alındığının da tutulması lazım.
+
+342
+01:25:08,220 --> 01:25:09,819
+Toplam fiyatı da belirlemek için.
+
+343
+01:25:10,360 --> 01:25:11,620
+Şimdi onu buraya koydum diyelim.
+
+344
+01:25:12,680 --> 01:25:13,720
+Adet 2.3.
+
+345
+01:25:14,860 --> 01:25:15,460
+Peki.
+
+346
+01:25:16,120 --> 01:25:18,360
+Ben bunu buraya koydum ama şimdi ne oldu?
+
+347
+01:25:18,739 --> 01:25:39,799
+Bir satış işleminde birisi geldi bu sudan 12 tane aldı, öbür satış işleminde bir başkası geldi bundan 2 tane aldı. İlk seferinde burada 12 yazılıyor üründe, sonraki seferinde 2 yazılıyor ama 2, 12'nin üzerine yazılıyor. Eski bilgi gitti. Ne olacak şimdi?
+
+348
+01:25:42,420 --> 01:25:48,079
+Şimdi tutup da şuraya adetler diye bir int dizi koymak hiç doğru bir şey değil arkadaşlar.
+
+349
+01:25:48,880 --> 01:25:56,579
+Nesniye yönelimin çok iyi kavrayamadığınızı gösteren bir code smell diye geçiyor bu.
+
+350
+01:25:57,579 --> 01:25:59,200
+Böyle bir iş yapmış oluruz.
+
+351
+01:26:01,420 --> 01:26:03,380
+Buraya bir adetler dizi koymak hiç doğru değil.
+
+352
+01:26:03,819 --> 01:26:06,979
+Çünkü burada değişen başka bir şey var.
+
+353
+01:26:07,059 --> 01:26:08,200
+Onu keşfetmemiz lazım.
+
+354
+01:26:09,043 --> 01:26:34,844
+Satışa koysak, satışa adetler diye bir şey koysak, adetler dizisi nasıl olsa satışta bir ürünler dizisi olacak. Ya da liste kullansak daha doğru olur. Şimdi diyelim ki, her neyse. Bir ürünler dizisi var. Bir de adetler dizisi koyalım. Her bir ürünün kaç adet satıldığı, iki farklı dizinin aynı indisliği elemanındakiler aslında birbiri ilişkili.
+
+355
+01:26:35,539 --> 01:27:02,180
+İşte bu da yine bir kod simal, Pimik Ops için diye geçiyor. Doğru değil bu yaptıklarımız. Arada başka bir şey var arkadaşlar. Yani bu adet buraya da koysak sırıtıyor, buraya da koysak sırıtıyor, ne yapacağız? O zaman arada aslında bir ilişki var. Ek bir ilişki nesnesi koymamız gerekiyor bu noktada araya.
+
+356
+01:27:03,380 --> 01:27:21,840
+Yapılan satışlarda hangi üründen kaç adet alındığının bilgisi yer almalı. Sadece bunu saklayacak bir ara bir nesneye ihtiyacımız var. O nesnenin sınıfını eklersek çok daha doğru olur.
+
+357
+01:27:21,840 --> 01:27:24,811
+Onun adını da...
+
+358
+01:27:26,707 --> 01:27:48,887
+Belki işlem falan diye koyabilirsiniz adını. Fakat burada işte gereksinim mühendisliğinde konu alan hakkında bilgi sahibi olmak durumu devreye giriyor. İster mağazada yapılan şu alışverişler olsun, marketten yapılan alışverişler olsun. İster muhasebeci olarak çalışın.
+
+359
+01:27:50,100 --> 01:28:04,520
+Bir sefer de film ayar, o ütürden şu kadar demir başvurumun geldiği açısından konuşum. Buna kalem diye geçiyor. Yazı kalemi değil ama bu üründen 10 tane aldım.
+
+360
+01:28:04,979 --> 01:28:18,779
+Satış kalemi diye geçer ya da işte ürün kalemi diye geçer ya da ne bileyim bütçe kalemi diye geçer. Bütçe kalemi, bütçenin alt bütçeleri vardır. Seyahat bütçesi, yatırım bütçesi.
+
+361
+01:28:20,180 --> 01:28:27,220
+Personel bütçesi, güvenlik hakkı bütçesi, filan filan filan gibi. Bunların bütçe kalemleri denir aslında.
+
+362
+01:28:27,880 --> 01:28:39,620
+Kalem bir şey, bir listedeki elemanlar gibi, araççadan gelen bir kullanım. Ama hala bu tip problem alanlarında kullanılıyor arkadaşlar.
+
+363
+01:28:39,620 --> 01:28:48,180
+İşte satış kalemi bu ya da satış kanalı diye de geçebiliriz. Satış kanalı diye nokta söylemiştim. Aslında kalem deseyim şimdi daha...
+
+364
+01:28:48,180 --> 01:29:07,079
+Daha doğru olunmuş. Satış kalemi eklemek istiyorum. Ve bu satış kalemi, hatta şöyle camel casing yapayım. Sununu sunu bu araya ekleyeceğim. Sistem bir satış kanal maddesi olacaktır. Bu madde ürün tanımı fiyatı ve toplam bedel yer alır. İşte bu.
+
+365
+01:29:07,604 --> 01:29:34,703
+Şimdi, gerçi burada yazarken de bunu konu alanı uzmanı yazmış diyelim. Burada ürünün fiyatı aslında, ürünün tanım fiyatı aslında ürünün kendisinde. Yani fiyat kısmını satış, fiyat bilgisini satış kalemine almayacağım. Çekmemeliyim. O ürünle ilgili. Ama o üründen o işlemde kaç adet alındığı bilgisi hiç doğum satış kaleminde yer alacak. Tamam mı?
+
+366
+01:29:34,992 --> 01:29:52,811
+Olay bu. Ve şimdi bir satış işlemi, bir satış işlemi, şimdi hiç bir üründen bir tane bile alınmış olsa adeti bir olan satış kalemi nesnesi oluşturulacak.
+
+367
+01:29:52,811 --> 01:30:00,000
+O yüzden bir satış işleminde en azından bir ürün satılmış olacağından bir satış kalemi bir...
+
+368
+01:30:00,000 --> 01:30:13,400
+Bir satış, bir ya da daha fazla satış kalemi içeriyor olacak. Burada şimdi oku, start'a değil, end'e koymalıydım.
+
+369
+01:30:13,400 --> 01:30:22,680
+Şöyle ve satış kalemi ise sadece o satılan mal ile ilgili olacak. Bire bir.
+
+370
+01:30:23,731 --> 01:30:28,492
+Yapmam gereken, kurmam gereken ilişki böyle arkadaşlar.
+
+371
+01:30:30,192 --> 01:30:33,672
+Satış kalemi burada devreye giriyor.
+
+372
+01:30:33,672 --> 01:30:43,811
+Ve tabii ki mesela işte satış kaleminden ürüne birebir sarkık olduğu için burada aslında tabii ki hani adını ürün koyacağım.
+
+373
+01:30:44,292 --> 01:30:46,492
+Ondan sonra ürün türünden.
+
+374
+01:30:47,475 --> 01:30:58,216
+Herbette nesne de var. Ama bunu biliyorsunuz zaten nesne yönelinde aslında. O yüzden okların simgeleyen üye alanları göstermiyorum.
+
+375
+01:30:58,931 --> 01:31:18,412
+Ve ayrıca kaldı ki, şöyle ki, birey-yıldız ilişkilerinde dizimi kullanacağım, katil ismi kullanacağım, map mi kullanacağım, map kullansam daha iyi aslında. Özellikle şu, şey, şubeli ürün arasındaki ilişkide map kursam daha iyi. Çünkü kasabına ürün barkodunu soracak, o barkodlu ürün aranacak.
+
+376
+01:31:18,412 --> 01:31:26,551
+Bunu mislede aramaya çalışsanız, ardışıl arama yapılacak ama map yapısında direkt T-Value ilişkileri kurulduğu için.
+
+377
+01:31:26,931 --> 01:31:49,132
+Barcode, value, ürün, şart diye getirecek size. Bu da tasarım konusu. Tutamadım kendine, lastiklerim ama hani neyse işte. Evet. Şey bu arkadaşlar. Durum bu. Bu noktada sorusu olan, hocam ben şunu anlamadım falan diye bir arkadaşım varsa konuşalım.
+
+378
+01:31:50,996 --> 01:31:55,496
+Onun dışında, hocam, şu vardı falan filan varsa konuşalım.
+
+379
+01:31:56,036 --> 01:32:08,475
+Bu da tabii ki eğer ders notlarını indirmişseniz bilgisayarınıza, o zaman benim şu anda hangi sayfada olduğumdan bağımsız olarak siz ileri geri yapıp filan filan sorularınızı daha iyi çıkartabilirsiniz.
+
+380
+01:32:09,815 --> 01:32:11,395
+İndirdiyseniz ders notlarını.
+
+381
+01:32:14,387 --> 01:32:31,947
+Bu arada ben ders notumdaki çözüme bakayım. Oradan acaba ne farklı, ne yanlış, ne ettik, ne ettik, bir şey unuttuk mu, unutmadık mı? En son onları söylerim. Ama sizler soru varsa söyleyin.
+
+382
+01:32:59,667 --> 01:33:16,667
+Peki, soru yoksa ben bir parçayaştığımı yapayım bakalım. Şimdi kasiyeri ben şimdi size ne ekledim demiştim. Kasa, satış, ödeme, ödeme de miktar. Aslında miktar hesaplanan bir bilgi fakat…
+
+383
+01:33:18,195 --> 01:33:30,536
+Satış kalemleri de kalıcı, evet ama bu ödemenin ne kadar miktar ödeme alınacak, yani saklanması gereken en önemli bir bilgi. Konuşma aklıma gelmemiş, bunu bir ekleyelim.
+
+384
+01:33:37,363 --> 01:33:49,543
+Bir de şu da var yani, az önceki haliyle bundan hiç dışarı çıkan ok da yok. Bir alan yazmamışım. Ödeminin ne bir şey saklanacak? Ödemi kaydı. Ödeminin tarihi, malihi falan da olabilir belki.
+
+385
+01:33:50,963 --> 01:34:02,844
+Fiş'e baktığımızda orada çeşitli bilgiler var. Onay kodu falan. Daha da bir dolu bir şey yazabilir. En azından miktar yazılacak da diğer o ek bilgiler de yazılacak.
+
+386
+01:34:02,844 --> 01:34:11,524
+Çünkü çok uzatmayalım. Ayrıca zaten kartı, gereksinimler mektvinde de uzun uzun yazmıyor. Ama bunu da şey olarak düşünün.
+
+387
+01:34:12,851 --> 01:34:27,092
+Beklenen gereksinim, expected gereksinim olarak düşünüyorum. Yavruş o kadar yazıyor, o kadar alıyorsunuz hiç görmüyor musun kardeşim? Gerekiyordu, unutmuşuz söylemeyi falan der gelmiş denip. Onu keşfetmek lazımdı diyelim.
+
+388
+01:34:27,912 --> 01:34:39,011
+Son açıma, satışın tarihi doğrudur. Fiş gizmine baktığımızda, fiş basılı, içerisine bilgiler yazıyor diyorduk. Satışın tarihinde bu anlamda gerekiyor.
+
+389
+01:34:42,003 --> 01:34:50,003
+Direkt D, UML kullanacağız. D, Sınırlar. Başka dinlerde de vardır da. Belki D, H, D, T, M, D, Nebilirim Neyse.
+
+390
+01:34:52,383 --> 01:34:59,883
+Ondan sonra, satış kalemi, miktar, adet, int, tamam. Ürün, tanım, fiyat, KDV.
+
+391
+01:35:00,243 --> 01:35:08,883
+Ha, barkodunu yazdık ya, yazdık. Ürün tanımını yazdım. Yani işte, nedir bu? Edding, 360, kalem, final gibi. Evet.
+
+392
+01:35:09,524 --> 01:35:20,243
+Onu yazmaya arttırmışız. Yazalım. O zaman şey, barcode, virgü, tanım diyelim. İkisi de stink ya.
+
+393
+01:35:22,663 --> 01:35:29,503
+Ürün, şurada ad adresi falan yeri o kadar konuştu ki söyledik ama şuraya yazmadık. Yazalım.
+
+394
+01:35:30,503 --> 01:35:36,403
+Ad, adres, belgü, no, stink.
+
+395
+01:35:44,212 --> 01:35:58,472
+Evet, tamam. İlşkilerin yönlerine bir bakalım tekrar. Şube, şey, kompozisyon veya ekmekasyon fark etmez. Bundan sonra şubeden şey, kakası kasaya çekmelik.
+
+396
+01:36:00,072 --> 01:36:06,012
+Ürün. Ha şimdi yerleşmeyi de Şemayla aynı yapsak daha kolay karşılaştırırız ama neyse.
+
+397
+01:36:10,228 --> 01:36:37,347
+Bir yandan da en ötürü şuraya baktık, şuradan kasaya baktık, kasadan satışa. Evet. Ha burada niceliği yazmayı unutmuşum arkadaşlar. Birey Yıldız yazmak lazım. Bundan sonucuma birebire Yıldız. Çok önemli değil bu noktada. Ondan sonra satış kalemi ve satış kaleminden de ürüne birebir.
+
+398
+01:36:37,743 --> 01:36:38,623
+Tamam, peki.
+
+399
+01:36:38,975 --> 01:36:41,815
+Ve şu beden de ürüne şöyle.
+
+400
+01:36:42,256 --> 01:36:43,235
+Ha tamam peki.
+
+401
+01:36:43,695 --> 01:36:46,975
+Şimdi aslında üründen şöyle bir ok olması gerekmiyor.
+
+402
+01:36:47,515 --> 01:36:50,355
+Şu elmas da varsayılan bir demektir.
+
+403
+01:36:50,775 --> 01:36:52,975
+O yüzden hani çok da gerekmiyor.
+
+404
+01:36:53,115 --> 01:36:55,576
+Şuradaki bu açıdan otoslanan daha doğru.
+
+405
+01:36:55,576 --> 01:37:01,376
+Tamam şu bir ürün ekleminin kuralları vardır ama yani ne bileyim çok da şey değil.
+
+406
+01:37:01,996 --> 01:37:05,595
+Burada isterseniz şöyle yapabilirsiniz.
+
+407
+01:37:06,115 --> 01:37:06,975
+Ama sıfır yapabilirsiniz.
+
+408
+01:37:06,975 --> 01:37:19,796
+yazsak, o zaman da olmaz. Tamam, burada kurardan ziyade ilişimin inceliği daha önemli diyorum ve bunu da nam şeklinde yapıyorum. O zaman tabii ki en de yıldız koymam gerekiyor.
+
+409
+01:37:23,252 --> 01:37:36,471
+Hocam, ünlüstü fikirli olur mu dersiniz ama onun da bir artı, ünlüstü kurulu vardır herhalde. Çok bir dinlemeyeyim şimdi. Burada bu şekilde yapsam yeter. Birey Yıldız Pesan'da bir tanem. Evet, pekala.
+
+410
+01:37:38,355 --> 01:37:40,416
+Sizin aklınıza herhangi bir soru geldi mi?
+
+411
+01:37:41,536 --> 01:37:57,056
+Hocam ben bir şey soracaktım. Burada şu bir yedikası arasında diamond da çizdik ya, soldaki diagramda içi dolu şekilde çizilmiş. Biz içi boş şekilde çizdik. Bu sadece diagram programıyla ilgili yoksa anlam farklığı vardı sanırım ikisinin arasında.
+
+412
+01:37:57,056 --> 01:38:06,056
+Evet, çok ufak bir anlam farkı var ama o anlam farkını da farklı ekonomiler farklı şekilde vurguluyorlar.
+
+413
+01:38:06,064 --> 01:38:27,484
+Birisi diyor ki, beyazla siyah arasındaki fark, işin parça kısmına baktığınızda bir parça bütün olmadan tek başına aktif olamaz, olur ya da olamaz diye ikiye ayırıyorlar. Yani beyaz ise tek başına parça olabilir, siyah ise tek başına parça olamaz anlamına geliyor.
+
+414
+01:38:29,064 --> 01:38:31,844
+Bir başkası ise ne diyordu?
+
+415
+01:38:36,020 --> 01:38:49,760
+Unuttum. Neyse. Şu aşamada çok önemli değil. Ben ona o kadar didiklemiyorum. Ama eğer elmas koyarsanız, onun da elmas tarafında bir ok ucu olduğunu bilin ve orada da mutlaka bir yazdığını bilin.
+
+416
+01:38:50,319 --> 01:38:59,600
+Ve bu anlamda eğer o yönde bir ilişki istemiyorsanız, o zaman elmas yerine düz birey ilişkisi koyun şeklinde tavsiyeyle kalmak istiyorum.
+
+417
+01:39:00,180 --> 01:39:07,520
+Teşekkür ederim sorunuz için. Katlediniyormuşsunuz ve nihayet derste bir arkadaşımdan bir soru alabildim. Çok teşekkür ederim.
+
+418
+01:39:07,859 --> 01:39:09,119
+Ben teşekkür ederim hocam.
+
+419
+01:39:10,000 --> 01:39:13,880
+Yani başka soru varsa buyurun.
+
+420
+01:39:19,923 --> 01:39:37,963
+Bir de ders notunda ne var? Arabi Ülütkin'in iç alanındaki adı da yer alıyor. Kasa satışları kaydeder. Ne bileyim, satış kaydımı ürünler içerir. Şubede ürünler, stoklarına falan gibi bunlar tamamen opsiyonel arkadaşlar. Yazsanız da olur, yazmasanız da olur.
+
+421
+01:39:47,923 --> 01:39:59,283
+Büyüktür yazabilirsiniz. Fakat bu küçük ya da büyük karakterleri var, tuyuanlarda biraz sorun çıkartıyor. O yüzden ben küçük ya da büyük bir şey yapacaksam bir tane interfes koyuyorum şuraya.
+
+422
+01:40:00,000 --> 01:40:24,019
+Öncesini açıyorum ve mesela şu tarafa bakan ok için bunu kopyalıyorum kontrol C. Öbür tarafa bakan ok için ötekini kopyalıyorum kontrol C. Çünkü mesela şimdi şuraya bakın, metot yazdım tamam mı? Mesela şu an gözüküyor ama mesela ben şurasına hani şu tarafa ok yapmak için büyük tür işareti basmak istiyorum desem, ben de şurada, evet.
+
+423
+01:40:24,627 --> 01:40:44,108
+Okey dedim. Bu gözüküyor ama öbür tarafa olan ok sorun çıkarttırıyordu. Yani şey, şu büyük işareti. Ha çıkartmıyor. Ama ben galiba okta mı çıkartıyordum. Neyse tamam. Demek ki o problemin geride kaldı bir sonuç. Unuttum dedim.
+
+424
+01:40:45,524 --> 01:41:05,904
+Bir tane ok ya da küçük bir büyüktür. Ama tam da aşağıda yukarı şeyi nasıl çizeceğiz? Aşağı için V harfi, yukarı için de üçün üstündeki şapka tariflerini falan kullanıyorum. Ya da işte daha ayrıntılı bir UML geleceği kullanıyorsanız onu da destekleyebiliriz.
+
+425
+01:41:12,948 --> 01:41:17,688
+Okuda koymak lazım. Okun yönüyle benzer bir işareti koymak.
+
+426
+01:41:20,087 --> 01:41:30,087
+Bu özellikle çift yönlü ilişkilerde bir problem olabilir. İlişkin adının niteliğinin yönlüğü olması söz konusu olabilir.
+
+427
+01:41:31,547 --> 01:41:35,167
+Peki. Bu da bu kadar galiba.
+
+428
+01:41:40,307 --> 01:42:05,528
+Başka bir şeyimiz var mı? Bunlardan bahsettik. Bunlardan bahsettik. Bu arada isterseniz CLC kartları oluşturabilirsiniz arkadaşlar. Her ne kadar aslında sorumluluklar için nasıl ve tasarıma yöneliktir diye düşünseniz de aslında bunun analizle de ilgisi var. O yüzden isterseniz CLC kartları oluşturmaya başlamışken orada sorumluluk da gerekiyor.
+
+429
+01:42:06,868 --> 01:42:24,028
+Öte yandan analiz aşamasında tasarlamaya ilişkin bazı düşüncelerim olmuştur. Bunları unutmadan bir yere not etmek için de CELC kantlığına not edilebilir bu konuya ilgili şeyler ya da daha sonra da yazılabilir neyse işte.
+
+430
+01:42:26,828 --> 01:42:31,608
+Evet, daha dök. Evet, peki.
+
+431
+01:42:31,984 --> 01:42:43,104
+Şimdi böylece analiz açmamızı tamamladık diyelim. Kullanım senaryosu metinleri yazdık. Kullanım şamaları çizdik ve bir sınıf şaması çizdik.
+
+432
+01:42:43,104 --> 01:42:52,884
+Buna ek olarak yapabileceğimiz başka şeyler var mı? Var isterseniz. Mesela veri tabanı işlemleri de olacağından bir iyer diagramı çizebilirsiniz isterseniz.
+
+433
+01:42:54,895 --> 01:43:09,635
+Aslında son halinin elbette tasarım aşamasında yer alacak. Ama madem bu analiz aşamasında nesneler ve aradaki ilişkileri düşünmüyoruz, ER diagramda da ilişki seçenekleri var. İsterseniz bir ER diagramda çizebilirsiniz.
+
+434
+01:43:10,735 --> 01:43:16,035
+Onun dışında işte diyelim ki prototip bir ürün gerçeklemesi yapabilirsiniz çözünürme aşamasında.
+
+435
+01:43:18,771 --> 01:43:31,091
+Raporlamalar veyahut da ne bileyim veri girişi ekranlarının nasıl olacağına ilişkin taslak ekranlar çizebilirsiniz.
+
+436
+01:43:31,771 --> 01:43:38,652
+Mesela bunu isterseniz Word'de hazırlayın. İster işte biraz daha prototipe yakın gibi bir şey olaraktan.
+
+437
+01:43:38,652 --> 01:43:46,631
+Mesela Visual Basic.net'te yazın mesela. Geçenleri sürükleyin bırakın. İşte böyle bir şey olacak.
+
+438
+01:43:46,771 --> 01:44:02,511
+Gireksinimler bir şeyler değil. O da olabilir belki. İhtiyaçlarımızın oğultusunda, yani Software Requirement Specification, SLS, gereksinimler belgesini bu tip yöntemleri kullanmaktan içerik yazabilirsiniz.
+
+439
+01:44:04,652 --> 01:44:06,011
+Ve tasarım olarak geçeceğiz.
+
+440
+01:44:07,011 --> 01:44:08,692
+Anadolu bir hak ettik diyorum.
+
+441
+01:44:09,716 --> 01:44:17,756
+Her ne kadar bunu beş geçeme başladıysak da, tam bir ders saatinde olduğum adaysak da yeni bir konuya geçeceğiz.
+
+442
+01:44:18,176 --> 01:44:22,936
+O yüzden şöyle güzel bir ara vermiş olalım. Saat 10.45 diyelim.
+
+443
+01:44:24,496 --> 01:44:28,576
+Dakika 10.45. 10.55'e kadar 10 dakika.
+
+444
+01:57:27,155 --> 01:57:32,235
+Evet arkadaşlar, adaslarımızı doldurduk. İki dakikada geçmişim. Önce üretilen imk.
+
+445
+01:57:32,235 --> 01:57:38,115
+Ağdığımız yerlerle bahsedelim. Yeni konu olarak tasarım kısmına geçiş yapmıştık.
+
+446
+01:57:47,123 --> 01:57:48,304
+tasarım süreç.
+
+447
+01:57:55,028 --> 01:58:15,028
+Şimdi, işte tasarım sırasında analizde çizdiğimiz çeşitli sistem alanı zenginleştireceğiz elbette. Ama onun dışında hep belgelendirmelerde yapacağız. Çünkü sadece sınıf işlemleri işin nasılını yeterince açık anlatmaz. Sadece kullanım senaryosu, metinleri…
+
+448
+01:58:15,539 --> 01:58:24,539
+Aklını selam etmeli, işin nasılını çok ayrıntılı anlatır. Fakat bunun içerisinde bazı kısımları...
+
+449
+01:58:25,203 --> 01:58:42,963
+Ve bir ilişkili olan senaryolardan bazı kesişen kısımların bir çapraz kesişimini şeklinde bazı olayları, etkinlikleri anlatmamız, anlamamız, tasarlamamız gerekebilir.
+
+450
+01:58:42,963 --> 01:58:52,923
+Sadece nasıl yaptığımızı belgelendirmek şeklinde algılamayın. Bu bir kullanım senaryosu metninin.
+
+451
+01:58:53,203 --> 01:59:07,783
+Önemli bir kısmını belki de daha fazla kişiye sadece okutarak değil de, iç akışının nasıl yürüdüğüne yönelik şemalara eşliğinde de anlatırsak, bu da ek yardımcı olabiliyor.
+
+452
+01:59:07,783 --> 01:59:21,203
+Çünkü bazen görsel zeka daha ağır basıyor okumaya göre. Böyle çok çeşitli nedenlerle çizebileceğimiz daha farklı tasarım şeklindeyiz.
+
+453
+01:59:21,203 --> 01:59:44,003
+Bu arada artifakt tanımını da yapalım. Kod dışında ürettiğimiz her şey artifakt deniliyor. Her türlü belgelendirme, teknik ya da son kullanıcıya yönelik ve diyelim ki işin deployment'a yani sahaya sürülmesiyle ilgili konfigürasyon dosyaları vs. vs. bunlar hepsi de artifakt oluyor arkadaşlar.
+
+454
+01:59:47,475 --> 01:59:51,795
+Tasarımda bu sefer nasıl sorusuna yanıt arıyoruz.
+
+455
+01:59:51,795 --> 02:00:00,000
+Alan modelini geliştireceğiz metotlarla ve artık ilişkilerle.
+
+456
+02:00:00,000 --> 02:00:08,840
+Üstkülerin ve verilerin ne olduğunu, anlız açmasını da tuttuğumuza göre tasarım açmasında bunların ayrıntılarını görüyor olacağız.
+
+457
+02:00:08,840 --> 02:00:15,520
+Ve gerekirse araya ek bazı nesneler de koymamız gerekebilecek.
+
+458
+02:00:16,079 --> 02:00:19,220
+Hele ki sistem tasarımı falan şeklinde düşündüğünüzde.
+
+459
+02:00:19,600 --> 02:00:22,860
+Ve zaten tasarım kendi içerisindeki altları ayrılır.
+
+460
+02:00:23,240 --> 02:00:25,460
+Nesne tasarımı ve sistem tasarımı şeklinde.
+
+461
+02:00:25,840 --> 02:00:28,000
+Nesne tasarımı ile problem alanını...
+
+462
+02:00:28,000 --> 02:00:45,440
+Bu da dahilindeki nesnelerin tasarlanmasından bahsediyorum. Sistem tasarımıyla da etkileşimli olacak diğer gereçler ve tümleştirme, dijit sistemler ve tümleştirme gibi etkinliklerin tasarımını bahsediyoruz.
+
+463
+02:00:46,100 --> 02:01:14,020
+Sistem katmanında bir kere her şeyden önce Yılız'ın mimarisine karar vermemiz lazım. Bu bir istemci sonucu mimarisi mi olacak? Bir merkezi sonucu ona bağlı istemciler mesela. Yoksa eşçiler arası mı olacak? Peer to peer, ne bileyim işte blok zincirlerine katılan makineler gibi veyahut da işte mosya paylaşım ağlarında olduğu gibi diyelim ki onlarda pek kalmadı ya.
+
+464
+02:01:14,100 --> 02:01:30,880
+Mesela bir peer-to-peer network. Olay tabanlı bir mimari mi olacak? Mesela bir veri ve olay iletim hakkı olacak? Onu dinleyen hem sunucular hem islamcılar hakkı mı dinleyecek mesela? Noktadan noktaya iletişim yapmak yerine gibi gibi.
+
+465
+02:01:42,100 --> 02:01:51,000
+Yüzlerine yönelik şeyler ne olabilir? Bunların gerçeklemesi. Mesela camada simit mi kullanacağız ya da başka bir şey mi kullanacağız gibi.
+
+466
+02:01:51,520 --> 02:02:10,100
+Bir de o sorular ve yanıtlarını yapmak ve o an göre tasarım etkinlikleri yapmak gerekecek. Bunların her biri başlı başına apayla konular olduğu için onlar ilgili konularda, ilgili derslerde seçimlik vs. ya da sizin kendinizi geliştirme alanları olarak bu dersin.
+
+467
+02:02:10,100 --> 02:02:16,779
+bir filatının dışında kalıyorlar. Biz nesne tasarımı yani programlarının tasarımının üstünde daha çok konuşacağız.
+
+468
+02:02:17,239 --> 02:02:21,699
+Ve ayrıca kaldık ki sistem tasarımı katmanı çoğunlukla elimiz sıfırdan hazırlamıyoruz.
+
+469
+02:02:22,220 --> 02:02:27,360
+Zaten mevcut olan artyapı programlarımız, frameworkleri kullanarak bu işi hallediyoruz.
+
+470
+02:02:30,360 --> 02:02:34,980
+Şimdi tasarım yapacağız ama nasıl bir tasarım yapacağız?
+
+471
+02:02:35,667 --> 02:02:44,847
+Daha doğrusu acaba yaptığımız tasarım yeterince iyi mi? Çünkü aynı problemi çözmeye yönelik birden fazla tasarım alternatifimiz olabilir.
+
+472
+02:02:45,492 --> 02:03:06,492
+Alan modelinde alternatifimiz yok. Yani varlıklar ve alanlarımız gelişkiler neyse o. Onu birebir aktarıyoruz. Ama iş tasarım kısmına geldiğinde, iş nasıl kısmına geldiğinde müşterinin isteklerini karşılayacak şekilde, problem alanındaki varlıkları da ilişkisini de aynı tutacak şekilde birden fazla...
+
+473
+02:03:06,996 --> 02:03:15,115
+tasarım alternatifimiz olabilir. Bu durumda bu alternatiflerden hangisini seçeceğiz? Bu çok önemli bir konu.
+
+474
+02:03:16,775 --> 02:03:30,595
+Çeşitli tasarım ölçütleri var. Bunu aslında bazılarını yazılım kalitesi konusunda iç kalite ölçütleri şeklinde de inceleyebiliriz ama şu an tasarıma odaklı düşünelim.
+
+475
+02:03:31,295 --> 02:03:34,115
+Bir kere ayrılabilirlik önemli bir kriter.
+
+476
+02:03:34,739 --> 02:03:48,299
+Anlamlı parçalar ayrılabilme düzeyine ayrılabilerek gidiyoruz. Parça denilmişsiz. Kullandığımız programlama yaklaşımına göre bir şey, resmelerini kullanıyorsak, smoothlardan bahsediyoruz.
+
+477
+02:03:48,944 --> 02:04:13,204
+Ve aslında iyi bir tasarımın tanımı da şudur arkadaşlar. Üstünde çalıştığımız problem hangi düzeyde alt problemlere veya alt bileşenlere bölünebiliyorsa tasarımızla aynı düzeyde ayrıştırılabilmelidir. Daha da fazla ayrıştırılabilir mi? Ya da ayrıştırılabilme yerimiz varsa böyle gitmeli miyiz? Bunu bir düşünmek lazım.
+
+478
+02:04:13,971 --> 02:04:25,471
+Bazen sistem tasarımına da baktığımızda belki daha fazla ayrıştırmanın yararı olacağını keşfedebiliriz. Keşfedersek o zaman ayrıştırırız demek istiyorum bu aşamada.
+
+479
+02:04:28,471 --> 02:04:36,471
+Fakat şuradaki bu ayrılabilirlik ve diğer bahsettiğim örgütler biraz…
+
+480
+02:04:36,703 --> 02:04:53,383
+Übjektif ölçütler, yani kişiye göre değişebilen, somut rakamlarla anlatılamayan ölçütler. Bunun daha somut karşılıklarını daha sonra yazılım kalitesi konusunu işlerken görüyor olacağız.
+
+481
+02:04:54,783 --> 02:04:59,863
+Birleştirebilirik ayrı ayrı bir şekilde benzer belki de ama şöyle düşünelim.
+
+482
+02:05:00,192 --> 02:05:11,672
+Bir parçanın başka tasarımlarda da kullanılabilecek şekilde diğer parçalarla birleştirilebilmesi mümkünse, bu yazılım yeniden kullanımına yol açacak ve masrafları düşünecektir.
+
+483
+02:05:12,152 --> 02:05:14,392
+Ama o konuda konuşma şıklar artık derslerimiz.
+
+484
+02:05:15,712 --> 02:05:20,731
+Anlaşılabilerek bir parçanın diğer parçalar hakkında bilgiye gerek duymadan anlaşılabilmesi.
+
+485
+02:05:25,203 --> 02:05:35,103
+Tabii ki bir nesne bir sorumluluğu tek başına yerine getirmiyor. Bazı başka nesnelerle işbirliği yaparak da yerine getiriyor.
+
+486
+02:05:35,103 --> 02:05:51,103
+Fakat o sorumluluğu anlayabilmek için örneğin o CLC kartındaki o diğer işbirliği yaptığı nesneleri, konuları en fazla incelememiz yetiyorsa biz bunu daha iyi anlayabildik diyebilirim.
+
+487
+02:05:53,779 --> 02:05:58,500
+Şöyle de bir şey söyleyebilirim. Artık bu tasarımdan yok, tasarımada gerektiğini birer ettim.
+
+488
+02:06:00,279 --> 02:06:05,479
+Bir işi şey, şöyle söyleyeyim.
+
+489
+02:06:08,519 --> 02:06:19,460
+Otuz satırlık bir metodu mu anlamak daha kolaydır sizce? Yoksa üç tane on satırlık metodu mu anlamak daha kolaydır?
+
+490
+02:06:20,180 --> 02:06:23,340
+Tabii ki daha kısa olan bir şey anlamak daha kolay.
+
+491
+02:06:24,212 --> 02:06:37,552
+Tabii ki eğer ciddi bir problem için belki de o üç metodunun hepsinde ince elektronunda kalacağız ve günün sonunda otuz satır kodunun hepsini incelemiş olacağız belki de.
+
+492
+02:06:37,852 --> 02:06:47,172
+Fakat genelde problemlerimiz daha lokalize olarak daha bir aralık aralarına odaklayabiliyoruz probleminin olası nedenini.
+
+493
+02:06:52,212 --> 02:07:01,032
+metodu debug etmeye çalışmak zorunda kalabiliriz. Ama bu olumlu anlamda zorunda kalabiliriz. Bu yeterli olabilecektir mesela.
+
+494
+02:07:01,752 --> 02:07:08,332
+Bunu da mesela anlaşılabilir ve önemli bir etken olarak söylemek istiyorum. Neslihan Hanım size bunu söyler.
+
+495
+02:07:08,623 --> 02:07:30,304
+Böyle parçalar yönetimi kullanımda. Ve ayrıca kod yazarken de okunabilirlik standartlarına uymak, green trendleme, camel casing vs. ve yorumlama hatta kodun okunabilirliğini iyileştirdiği için anlaşılabilirliği de iyileştireceğiz.
+
+496
+02:07:32,884 --> 02:07:41,763
+Süreklilik yapabilecek küçük değişikliklerin etkilerinin mümkün olan en az sayıda diğer parçayı etkilemesi şeklinde söyleyebiliriz.
+
+497
+02:07:42,803 --> 02:07:46,083
+Konuma da bunun aynı şeyin bir başka bakış açısı.
+
+498
+02:07:46,463 --> 02:07:52,123
+Orası hataların düzeltmesinin yönelik büyük değişikliklerin etkilerinin geniş bir diğer alana yayılmasının önlenmesi.
+
+499
+02:07:52,363 --> 02:07:54,563
+Aslında eksi birbirinin madalyonun iki yüzü gibi bir şey.
+
+500
+02:07:57,140 --> 02:07:59,260
+Haa, burada konuşacakmışız. Tamam, peki.
+
+501
+02:07:59,659 --> 02:08:01,140
+Şimdi bunlar biraz...
+
+502
+02:08:01,876 --> 02:08:08,456
+Soyut kalıyorlar, subjektif kalıyorlar. Bunu daha objektif kriterlerle nasıl belirleyebiliriz?
+
+503
+02:08:09,275 --> 02:08:14,876
+Onunla ilgili olarak sizi daha iyi bir tasarına götürecek iki temel ikiden bahsetmek istiyorum.
+
+504
+02:08:15,536 --> 02:08:23,275
+Bunlardan birincisi bağlaşım. Bağlaşımın düşük olması istiniz. İkincisi uyum. Uyumun da yüksek olması istiniz.
+
+505
+02:08:23,275 --> 02:08:27,076
+İngilizce olarak low coupling ve high cohesion.
+
+506
+02:08:27,731 --> 02:08:42,011
+Bu ilkeler birbirine de bağımlı, uygulama alanına da bağımlı. Başka bir dolu ilkeler de yönetirebiliyoruz. Fakat bu ikisi en temel, en çekirdek ölçüler. Onun hakkında biraz konuşmak istiyorum size.
+
+507
+02:08:43,452 --> 02:08:45,672
+Şimdi, bağlaşım nedir?
+
+508
+02:08:46,260 --> 02:09:04,220
+Sözlük anlamıyla tek anlamı aynı. Bir parçanın diğer parçada bağımlılık oranına bağlaşım deniliyor. Parça ile de bunu ister sınıf düzeyinde ele alabilirsiniz, ister art sistem düzeyinde ele alabilirsiniz, ister paket düzeyinde ele alabilirsiniz. Nasıl ele alabilirsiniz? Olur.
+
+509
+02:09:08,051 --> 02:09:20,571
+Yaklaşım olaraktan. Ben biz de nesne yönünden bahsedelim. Sınıflar arasındaki bağlaşımdan, bağımlılıktan bahsedelim. Bir sınıf diğerine nasıl bağımlıdır? Uzun lafın kısası.
+
+510
+02:09:21,332 --> 02:09:39,731
+Bir UML sınıf şemasında, iki sınıf arasında birinden diğerine doğru bir ok varsa, ne tür olursa olsun, o zaman okun başlangıç noktasındaki sınıf, okun bitiş, ucunun gösterdiği bitiş noktasındaki sınıfa bağımlıdır kardeşim deyip sağlatabiliriz.
+
+511
+02:09:40,435 --> 02:09:57,876
+Ama biraz daha kelimeler dökmek istiyorsak, bir sınıf diğerinin hizmetlerinden yararlanıyorsa, veya iç yapısından haberdar olması gerekiyorsa, veya çalışma kriziplerinden haberdar olması gerekiyorsa, ya da özelleşme genelleşme iş hali varsa, kalıtı müdküsü varsa bunlar biraz bağımlılıktır arkadaşlar.
+
+512
+02:09:57,876 --> 02:10:06,135
+Ve burada önemli olan bağımlılığın ya da bağlaşımın niceliği değil niteliğidir.
+
+513
+02:10:07,188 --> 02:10:18,387
+Yani demek istediğim şu, biraz tartışalım. Sınıf diyagramı üstünden konuşalım.
+
+514
+02:10:22,292 --> 02:10:39,232
+Şimdi, bir tane A sınıfı olsun, bir tane de B sınıfı olsun, bir tane de C sınıfı olsun.
+
+515
+02:10:41,972 --> 02:10:45,012
+Şimdi, diyelim ki,
+
+516
+02:10:48,212 --> 02:11:00,232
+A'dan B'ye, Birebiriz. A'dan C'ye de, Birey Yıldız, bağlaşım olsun.
+
+517
+02:11:00,232 --> 02:11:10,832
+Şimdi acaba A ile B arasındaki bağlaşım daha kuvvetlidir ya da A ile C arasında bağlaşım daha kuvvetlidir?
+
+518
+02:11:11,311 --> 02:11:35,231
+İkisini de aynı olarak değerlendiriyoruz. Her ne kadar kodlama açısından A sınıfında B türünden bir tane fakat C türünden bir dizi olması söz konusuysa da yine de kardeşim.
+
+519
+02:11:36,851 --> 02:11:53,692
+A'yı bir projende kullanmak istiyorsan, B'nin kodunu da C'nin kodunu da import etmelisin. Bu kadar. Bu anlamda bakıyoruz. Bu nedenle A ile B arasındaki ilişkide, A ile C arasındaki ilişkide bir bağlaşım olaraktan sayılır.
+
+520
+02:11:55,591 --> 02:12:00,391
+Peki hocam aynı şeyi kalıtım içinde mi söyleyeceksiniz derseniz eğer?
+
+521
+02:12:03,572 --> 02:12:10,032
+X sınıfı olsun ve A sınıfı da, B'den, A sınıfı da X'ten kalıtımla türetilmiş olsun.
+
+522
+02:12:10,891 --> 02:12:15,492
+Hocam, bunu da mı aynı sayacaksınız, 1 sayacaksınız? Evet, bunu da 1 sayacağım arkadaşlar.
+
+523
+02:12:16,631 --> 02:12:20,612
+A'nın koduna ihtiyacım varsa X'in kodunu da almak zorundayım.
+
+524
+02:12:21,371 --> 02:12:23,851
+Evet, kalıtım daha ağır sıklet bir ilişki.
+
+525
+02:12:24,627 --> 02:12:35,208
+Nesne düzeyinde değil de sınıf düzeyinde etkileri olan ilişki. Fakat arada bağlaşım var mı var? Bunu da bir olarak sayıyoruz. Demek istiyorum.
+
+526
+02:12:37,208 --> 02:12:47,127
+Yani şuradaki bağlaşım türlerinin hepsi. Şurada birinde, şu A tarafında elmas ya da şey olsa o da fark etmiyor.
+
+527
+02:12:48,127 --> 02:12:50,667
+İşte, şurada D koyalım.
+
+528
+02:12:54,131 --> 02:12:56,731
+İçi dolu ya da boş fark etmez.
+
+529
+02:13:01,140 --> 02:13:06,159
+Burada A'nın bağlaşımını 1, 2, 3, 4 demek istiyorum.
+
+530
+02:13:11,159 --> 02:13:15,119
+Bağlaşım A, Ejective 4.
+
+531
+02:13:15,640 --> 02:13:20,779
+Çünkü 4 ayrı sınıfa doğru giden ok var.
+
+532
+02:13:23,819 --> 02:13:24,880
+Durum bu.
+
+533
+02:13:31,347 --> 02:13:44,608
+Düşük bağlaşım neye yarar arkadaşlar? Bir sınıfta yapılan değişikliğin geri kalan sınıfların daha hızını etkilemesini sağlar ve yeniden kullanılabilir ve artmasına sağlar. Bunu buna yara.
+
+534
+02:13:44,608 --> 02:13:51,387
+Çünkü işte ne bileyim bağlaşım ne kadar düşük tutarsak?
+
+535
+02:13:51,731 --> 02:13:58,192
+bağımlı hukuklar az olacağından hata veya istenmeyen yer etki yayılma olasılığı o kadar düşmektir.
+
+536
+02:13:58,192 --> 02:14:16,731
+Şimdi, A'da yapacağım bir değişiklik diğer sınıfların hiçbirini etkilemeyecek. Ama B'de yapacağım bir değişikliğin A'ya etkileme olasılığı yüksek. C'de yapacağım bir değişikliğin A'ya etkileme olasılığı yüksek.
+
+537
+02:14:17,427 --> 02:14:34,627
+D'de yapacağım değişikliğin A'ya etkileme olasılığı yüksek. Aslında şimdi şu durumda A'da yapacağım değişikliğin D'yi etkileme olasılığı da yüksek. Çünkü D'den de A'ya doğru ok var aslında şurada. Elmas, ucu. Ama ben şu an sadece A'nın bağlaşımını saydığım için bağlaşım A'ya 4 dedim.
+
+538
+02:14:34,627 --> 02:14:44,387
+Tamam. Stam bağlaşımını düşündüğünüzde o zaman stam bağlaşımını 5 olarak saymak gerekiyor. D'den de A'ya doğru bir ok var.
+
+539
+02:14:49,908 --> 02:14:54,208
+Peki, şimdi gelelim biraz daha işin tartışmalı kısmına.
+
+540
+02:14:55,268 --> 02:15:03,308
+Şimdi bir problemi çözmek için ABC sınıflarımız olsun.
+
+541
+02:15:12,307 --> 02:15:21,708
+ADC sınıflarını iki kere yapacağım. Çünkü iki farklı tasarım yapacağım. Aynı sınıfları kullanan.
+
+542
+02:15:25,708 --> 02:15:28,268
+Şimdi, bir küm şöyle olsun.
+
+543
+02:15:32,307 --> 02:15:33,228
+Şöyle olsun.
+
+544
+02:15:37,460 --> 02:15:40,219
+İkinci tasarım da şöyle olsun. Tamam mı?
+
+545
+02:15:42,519 --> 02:15:44,099
+Şu birinci tasarım.
+
+546
+02:15:49,460 --> 02:15:50,760
+Şu da ikinci tasarım.
+
+547
+02:16:00,595 --> 02:16:24,235
+Şimdi, iki tasarımla da problemi çözebileceğimiz, aynı problemi çözebileceğimiz lazım. Acaba birinci tasarımımı kullansak daha iyi bir iş yapmış oluruz, ikinci tasarımımı kullansak daha iyi bir iş yapmış oluruz. Ne düşünüyorsunuz? Size bir dakika veriyorum bakalım. Ne düşünüyorsunuz?
+
+548
+02:16:26,707 --> 02:16:28,867
+Oradan bir şeye bakmak istiyorum.
+
+549
+02:16:29,207 --> 02:16:30,147
+Geldiniz size güne.
+
+550
+02:16:42,675 --> 02:16:50,635
+Bu, bu
+
+551
+02:17:53,843 --> 02:18:00,843
+Şimdi, sizler bir şeyler söyleyeceğim de, o yüzden...
+
+552
+02:18:06,548 --> 02:18:17,368
+Daha evvel Snowball diye bir site kullanıyordum. Ay, Poly Pocket Chase oyuncak geldi. Ay, Poly, Anket acaba.
+
+553
+02:18:21,683 --> 02:18:22,623
+Poli Air.
+
+554
+02:18:28,275 --> 02:18:52,716
+...
+
+555
+02:18:56,084 --> 02:19:16,544
+Aplını seç. Neyse, tamam. Olmadı. Şöyle yapsam acaba olur mu? Yok, katılımcı listesi yaramıyor işime. Ha, şurada şöyle bir şeyim vardı. Katılımcı listesi büyü. Şöyle yapayım.
+
+556
+02:19:24,435 --> 02:19:34,595
+Evet. Bakalım şimdi herkesi görebiliyor muyum? Kalpimiz kaçmışız? Yirmi, dört, şartı, beş. İyi, tamam. Peki. Şu an herkesi görebiliyorum.
+
+557
+02:19:38,536 --> 02:19:49,155
+Şu an bir şey soracağım. Siz şu an benim katılımcı ekranımı mı görüyorsunuz? Katılımcıya listelediğimi yoksa onu görüyorsunuzdur değil mi?
+
+558
+02:19:49,652 --> 02:19:53,011
+Yok hocam, şimdi internet sayfasını görüyoruz, browser.
+
+559
+02:19:53,112 --> 02:20:00,612
+Haa, tamam. İyi, çok güzel. O zaman şimdi ben bir yandan şu PowerPoint'te yok.
+
+560
+02:20:00,772 --> 02:20:04,351
+Online'a TÜML'e geri vereyim. Neredesin? Şuradasın? Tamam.
+
+561
+02:20:05,112 --> 02:20:06,831
+Şimdi, azıcık günlüyüm.
+
+562
+02:20:07,412 --> 02:20:17,012
+Bir numaralı sistem mi, iki numaralı sistem mi demiştim. Bir numaralı sistem diyenler el kaldırsın.
+
+563
+02:20:17,012 --> 02:20:22,832
+El kaldırsın. Bir numaralı sistem diyenler el kaldırsın.
+
+564
+02:20:35,059 --> 02:20:53,439
+8, 9, 10. İki katılımcı parmak kaldırdı. Peki. Bakın, kim parmak kaldırdı diye at falan tutmuyorlar yani. Bu noklama değil, bir şey değil. Tamam mı? Sadece bir şey yapıyoruz. Dener yapıyoruz.
+
+565
+02:20:53,439 --> 02:21:02,619
+Ha, biri bursunluğunda arka altyazı bulamadık. Ama şimdi kendinize içe sahip bir şey oldunuz. Neyse tamam, unuttum bile. 3 oy aldı diyor.
+
+566
+02:21:03,283 --> 02:21:17,263
+Birinci sistem 3, 6. Peki. Evet, şimdi kalkan ellerde otomatik binmiş oldu. İkinci sistem için şimdi isteyenler, eğer kaldırsın, ona kadar semine.
+
+567
+02:21:30,675 --> 02:21:38,675
+Bir oy geldi. Arkadaşlar genelde çekimsel kalmış. Neyse rahatlatalım. Genelde öyle oluyoruz.
+
+568
+02:21:40,675 --> 02:21:55,627
+Peki adam, şimdi 500 milyon isterdi. Yarışmacılara sorduk, FG'de sorduk. Çok katılım alamadık ama bir diyen var, bir diyen var. Ne yapsam acaba?
+
+569
+02:21:56,852 --> 02:22:06,391
+Şöyle düşünelim. Bağlaşım dedik ya, bağlaşım hesaplamaya çalışalım şimdi ve daha düşük bağlaşımlı olanı seçelim.
+
+570
+02:22:07,432 --> 02:22:09,452
+Ama nasıl hesaplayacağız? Şimdi mesela o.
+
+571
+02:22:10,652 --> 02:22:15,391
+Şimdi bağlaşım A'ya bakalım.
+
+572
+02:22:17,551 --> 02:22:20,391
+Bağlaşım A eşittir.
+
+573
+02:22:20,972 --> 02:22:23,112
+Şimdi bir B'ye bağlı, bir C'ye bağlı, iki.
+
+574
+02:22:24,595 --> 02:22:36,015
+Ondan sonra bağlaşım B eşittir sıfır ve bağlaşım C eşittir o da sıfır.
+
+575
+02:22:37,115 --> 02:22:42,455
+Peki, şunu kopyalayayım. Şu sisteme bakayım.
+
+576
+02:22:43,655 --> 02:22:46,175
+Bu kadar boy geldi değil mi? Son akşamları yazalım.
+
+577
+02:22:46,955 --> 02:22:50,435
+Şimdi bağlaşım A, 1 B'ye bağlı.
+
+578
+02:22:51,603 --> 02:23:10,563
+Bağlaşım B, C'ye bağlı bir, bağlaşım C'de sıfır. Peki, şimdi bakıyorum, buradan belki çok bir şey çıkartamadım diyelim. O zaman bir de senin toplam bağlaşımına bir bakalım bakalım.
+
+579
+02:23:19,123 --> 02:23:34,903
+Ondan sonra çıkıyor. Burada da toplam bağlaşım 2. Hepsini topladığımızda 2 çıkıyor. Buradan da çok bir şey farklı. Acaba şöyle mi düşünsek?
+
+580
+02:23:35,379 --> 02:23:43,039
+Burada A'yı kullanmak istediğimizde B ve C'ye ihtiyacımız var ama burada da A'yı kullanmak istediğimizde yine B'ye C'ye ihtiyaçımız var.
+
+581
+02:23:43,119 --> 02:23:46,259
+Fakat burada B'yi tek başına kullanabiliriz, C'ye tek başına kullanabiliriz.
+
+582
+02:23:46,619 --> 02:23:53,139
+Burada B'yi kullanmak istediğimizde C'ye de ihtiyacımız var ama C'ye tek başına kullanabiliriz.
+
+583
+02:23:53,419 --> 02:24:02,799
+Böyle baktığımızda minimum bağlaşım ve maksimum bağlaşım diye bir ölçü tanımlası belki o açıdan daha iyi karar verebiliriz.
+
+584
+02:24:03,476 --> 02:24:21,556
+Binman ara sistemde max bağlaşım 5-2. Bağlaşımın düşük olmasını istiyoruz ya, ne kadar yüksek o kadar kötü. Biz de olumsuzluk üzerinden gidelim. Çünkü oyun teorisi onu gerektiriyor.
+
+585
+02:24:27,252 --> 02:24:44,352
+Makul ve mantıklı karar vermek gerektiğinde, hayalcilik ya da kumarbarızlık şeklinde değil, makul ve mantıklı karar vermek gerektiğinde, oturup önümüze hangi yolu izlersek ne kazanırız ne kaybederiz.
+
+586
+02:24:44,672 --> 02:24:49,972
+Seçenek, kazanç, kayıp. Seçenek, kazanç, kayıp. Şekil de bir tablo yaparız.
+
+587
+02:24:53,108 --> 02:25:08,108
+Kayıtlarımızı minimize edecek şekilde davranırız. Dikkatli ve mantıklı bir planlama bu gerektiririz. Oyun teorisi John Nash, bir matematikçi ama aynı zamanda...
+
+588
+02:25:11,603 --> 02:25:17,123
+Şimdi filmin seyircilikleri spoiler vermek istemiyorum. O yüzden aynı zamanda dedim, sustum. Neyse.
+
+589
+02:25:17,583 --> 02:25:27,483
+A Big Full Mind diye bir film var arkadaşlar. Matematikçi John Nash'ın hayatını anlatıyor. Ama belgesel gibi değil kesinlikle. Heyecanlı da geçiyor bence.
+
+590
+02:25:28,323 --> 02:25:33,723
+Biraz eski bir film. Ben sinemada seyretmiştim. Hoşuma gitmişti. Russell Crowe oynuyor.
+
+591
+02:25:36,051 --> 02:25:46,051
+Bir de tabii, Pugliel'e love interest, kadını da bunu unuttu neyse, bayağı sıfır mı unuttu. Yani...
+
+592
+02:25:46,644 --> 02:26:14,004
+İstediği arkadaşım seyredebilir, onun teorisini anlatıyor, biraz böyle bir şeyler. Bu yüzden biz kaybımızı minimize etmeye çalışıyoruz. Yani riskli oynamak istemiyoruz, makul mantıklı oynamak istiyoruz. Kaybımızı minimize etmeye çalışıyoruz. Bu nedenle maksimum bağlaşım diye bakıyorum. Minimum bağlaşım her şey yolunda ise zaten problem yok. O yüzden minimum bağlaşım demiyorum. Maksimum bağlaşım ve kötü olması anlamında bakıyorum. Bu hani istenmez.
+
+593
+02:26:14,644 --> 02:26:29,443
+İstenmez anlamında şöyle, istenmez yer isterseniz. Şimdi, bir numaralı sistemde maksimum bağlaşım 2, iki numaralı sistemde maksimum bağlaşım 1. Tamam mı?
+
+594
+02:26:31,804 --> 02:26:41,064
+İki numaralı sistemde maksimum bağlaşım daha küçük olduğu için ben iki numaralı sistemi tercih ediyorum diyebilirim.
+
+595
+02:26:42,804 --> 02:26:57,504
+Max bar daha küçük olan iki tasarımını tercih ediyorum demek istiyorum.
+
+596
+02:27:00,948 --> 02:27:20,148
+Örneğin, başka bir şeyler düşünebiliriz. Burada bağlaşımları hesaplarken hep doğrudan bağlaşımları düşündük. Ama bu aslında geçişken ilişkidir.
+
+597
+02:27:20,148 --> 02:27:27,968
+Yani A, B'ye bağlı, B'de C'ye bağlı ama A'da C'ye bağlı aslında.
+
+598
+02:27:28,340 --> 02:27:48,739
+Yani A ile C arasında bir olaylı ilişki de var. O nedenle şöyle bir şey çizeyim. Yani bunu kesinlikle UML aşamasındaki şey olarak çizmiyorum. Kullanma ilişkisi olarak çizmiyorum. Sadece dolaylı bağlaşım anlamında çiziyorum.
+
+599
+02:27:55,956 --> 02:28:00,396
+Şöyle bir yazayım, UML, story type notasyonunu kullanayım şöyle bir şekilde.
+
+600
+02:28:06,164 --> 02:28:11,644
+Seçmeden direkt çeşitince on tıklığa koydu. İlişkiyi seçmek istiyordunuz sadece.
+
+601
+02:28:11,644 --> 02:28:13,804
+Under Label'a şöyle dolaylı diyeyim.
+
+602
+02:28:18,204 --> 02:28:26,884
+Dolaylı ilişkiyi de sayacaksak eğer, ama dolaylı bir saymayalım yani doğrudan ilişki kadar kuvvetli.
+
+603
+02:28:28,371 --> 02:28:33,752
+Diz diye düşünüyorsanız o zaman sayın ama dolaylı ilişkileri genelde yarım sayarız.
+
+604
+02:28:34,231 --> 02:28:41,772
+Şimdi o zaman dolaylı ilişkileri de kattığımızda acaba şu ikinci tasarım nasıl değişecek?
+
+605
+02:28:42,391 --> 02:28:46,391
+Notu kontrol C, kontrol V yapıyorum çünkü hesaplama yöntemim değişmiş.
+
+606
+02:28:46,391 --> 02:28:47,932
+Şimdi onu tekrar sayayım.
+
+607
+02:28:48,551 --> 02:28:53,231
+Şimdi artık ağırın bağlaşımı 1-1.5 oldu arkadaşlar.
+
+608
+02:28:55,379 --> 02:29:02,259
+B'nin bağlaşımı 1, C'nin bağlaşımı 0. Toplam bağlaşım ne oldu? 1.5, bir daha.
+
+609
+02:29:02,932 --> 02:29:21,712
+2.5 oldu. Şimdi bakın, toplam bağlaşımlar farklılaştı. Birinci sistemde toplam bağlaşım 2, ikinci sistemde toplam bağlaşım 2.5. Toplam bağlaşıma bakıyorum. Bağlaşımın daha küçük olması tercih edilir. O zaman ben buraya şöyle bir şey de diyebilirim.
+
+610
+02:29:30,995 --> 02:29:45,935
+Saplanınca daha küçük olan iki, yok bir, bir tasarımını tacif ediyorum da diyebiliriz. Oldu mu size beraber? Nereden baktığınıza göre değişiyor.
+
+611
+02:29:46,804 --> 02:30:04,443
+İkisi de makul mantıklı. Yani toplam bağlaşımdan da gitseniz, dolaylı bağlaşımı katmamaktan da... Burada bütün mesele şu oldu, dolaylı bağlaşımları hesaba alacak mıyım, almayacak mıyım? Ona çıktı olay.
+
+612
+02:30:07,443 --> 02:30:11,443
+Max bağlaşım da şurada artık bir buçuk oldu ama...
+
+613
+02:30:13,299 --> 02:30:38,200
+O açıdan hala, max bağlaşım açısından hala, şey, iki numara tasarım daha iyi ama toplam bağlaşım açısından daha kötü. O yüzden burada yine başa baş kaldılar diyelim. Hangisini seçerseniz seçin, çok dert değil. Ama bunları biraz böyle tartışmak istedim. Çünkü kolay şeyler değil böyle şeylere karar vermek ve ayrıntılarının yalanlı olur diye düşünüyorum.
+
+614
+02:30:41,587 --> 02:30:48,027
+Ama bir de şöyle de bağlayabiliriz. Ya hocam, A ne, B ne, C ne Allah sen yani.
+
+615
+02:30:48,167 --> 02:30:56,167
+Diyebilirsiniz. Şimdi, son derece doğru bir şey söylemiş olursunuz. Bunlar problem alanındaki varlıklar ama.
+
+616
+02:30:56,724 --> 02:31:01,484
+Problem alanında bunlar nasıl ilişkiliyse biz de o şekilde ilişkilendirmeliyiz.
+
+617
+02:31:01,584 --> 02:31:07,623
+Yani esas bunlar gerçek dünyada bir sistemindeki gibi ilişkiliyse o zaman böyle ilişkilendirmeliyiz.
+
+618
+02:31:08,064 --> 02:31:13,923
+Yok bunlar bir sistemindeki gibi ilişkiliyse gerçek hayatta o zaman ikideki gibi ilişkilendirmeliyiz.
+
+619
+02:31:14,423 --> 02:31:21,544
+Aslında sorun cevabı bu. Yani biraz yanlış yönlendirme yaptım diyelim size.
+
+620
+02:31:22,036 --> 02:31:44,255
+Ama fakat bazen de özellikle sistem tasarımıyla ilgili durumlarda belki o zaman bu ABC'nin ilişkileri bizim elimizde olacaksa, programların ile ilgili değilse o zaman işte bunlardan hangisinin daha iyi olacağını bir düşünelim lazım. Başkaçlardan da bakarsanız ve bir tanesine karar veririz arkadaşlar. Böyle ya da böyle demek istiyorum.
+
+621
+02:31:44,255 --> 02:31:45,255
+Peki.
+
+622
+02:31:46,388 --> 02:31:54,148
+Bağlaşım bu. Şimdi uyumdan bahsedelim. Ondan sonra da dersi bitiririz.
+
+623
+02:31:57,652 --> 02:32:07,512
+Uyumumda yüksek olması isteniyor arkadaşlar. Uyum nedir? Bir parçanın, yani sınıfın diye anlayalım, sorumlulukların birbirleriyle uyumlu olma.
+
+624
+02:32:07,512 --> 02:32:19,432
+Yani sorumlulukların ana kategorisine baktığımızda, CEC kartları da bunu gayet iyi yapabiliriz aslında.
+
+625
+02:32:22,863 --> 02:32:33,563
+Alakası olmayan alanlarda ise, o zaman uyumu da düşük deriz sorumluluğu. Aksi taktirde uyumu yüksek deriz.
+
+626
+02:32:35,563 --> 02:32:46,164
+Örnek. Programlamadan değil de, gerçek dünyadan örnek vermek istiyorum.
+
+627
+02:32:49,716 --> 02:33:02,355
+Yazılım Mühendisliği olarak bildiğiniz bir firmada yazılım yapıyorsunuz. Yani küçük bir firma ise ya da DevOps mantığıyla çalışıyorsa testi de yaparsanız, deployment'ı da yaparsınız, her şeyi yaparsınız.
+
+628
+02:33:02,355 --> 02:33:10,175
+Uçtanınca bütün işleri yaparsınız. Az kişiliği ise yani az çalışan varsa ya da işte şeyse DevOps düşünülüyorsun.
+
+629
+02:33:10,611 --> 02:33:24,111
+Fakat aynı zamanda tutukla ya resepsiyondaki arkadaş gelemedi, yediye de izinli, hadi sen git bugün kod yazma resepsiyona bak.
+
+630
+02:33:24,171 --> 02:33:30,671
+Ya da sen bir yandan resepsiyonunda bilgisayar da var, sen oradan bağlanır, şekil yaparsın, oradan da biraz kodlara bakarsın, sen orada otur.
+
+631
+02:33:31,092 --> 02:33:45,211
+Şimdi, kod mu yazacaksınız, gelenleri mühendisliğe çalışacaksınız. Birbiriyle tamamen uyumsuz ikiliş yapıyorsunuz mesela. Benimle çalışabilirsiniz. Hayır, mümkün.
+
+632
+02:33:46,260 --> 02:34:08,760
+Benzer şekilde bir sınıfın sorumluluklarına baktığınızda birbiriyle yakın ilişkili sorumlulukları olmasını istersiniz. Birbiriyle alakası işler yapıyorsa o zaman bu sınıfın uygunu düşüktür dersiniz. Tamam da bu bağlaşıma göre çok zunut kaldı.
+
+633
+02:34:09,492 --> 02:34:22,492
+Sayısal olarak ne ifade edebiliriz? Nasıl bir şey ifade edebiliriz? Bu konuda somut rakamlar üreten ölçükler tanımlı arkadaşlar.
+
+634
+02:34:23,531 --> 02:34:28,051
+Genelde de şuna dayanıyorlar, bu tip ölçükte. Çetikli varyasyonlarıyla.
+
+635
+02:34:36,531 --> 02:34:43,651
+Şimdi, yani sadece şekil anlamında şey diyorum, yoksa şey anlamında çizmiyorum.
+
+636
+02:34:44,311 --> 02:34:46,951
+Haa, yok var, daha ne yapayım, keyiften yapayım.
+
+637
+02:34:52,308 --> 02:34:53,132
+Şimdiden.
+
+638
+02:34:59,731 --> 02:35:12,711
+Şöyle alayım. Şekiller çizelim. Mesela, şeyler, yuvarlaklar, üye alanlarım olsun arkadaşlar.
+
+639
+02:35:18,835 --> 02:35:25,295
+Neyse zaten yuvada el içirmek fark etmiyor. Bunlar iyi alan, iyi sınıfın.
+
+640
+02:35:30,004 --> 02:35:31,044
+Son lindulma.
+
+641
+02:35:39,507 --> 02:35:43,507
+38'i gelmiyor. Karışabilir mi? Belki karışabiliriz.
+
+642
+02:35:43,507 --> 02:35:45,507
+Üçgen filan yapar.
+
+643
+02:35:45,507 --> 02:35:51,507
+Ya da şey yaparız, kare ekran. Şöyle.
+
+644
+02:35:51,507 --> 02:35:55,507
+Şunlar da metotlarım olsun. Tamam. Kaç tane metot.
+
+645
+02:36:03,123 --> 02:36:16,123
+Bu kadar yeter herhalde. Şunu alıcık sınıstırsam belki ben daha çizebilirim. Çok abartmaya gerek yok yani 5 tane yeter.
+
+646
+02:36:16,123 --> 02:36:23,884
+Peki, şimdi yapılan şeyler şunlar. Yeme toplar konu alt tezsi.
+
+647
+02:36:27,443 --> 02:36:32,984
+Şimdi, hangi metottan hangi alana erişiliyor? Bunun bir düresini çizelim.
+
+648
+02:36:40,500 --> 02:36:51,399
+Bu için şuna erişiyor. Şöyle diyelim. Şöyle bir şeyler olsun. Şöyle bir şeyler olsun.
+
+649
+02:36:55,924 --> 02:37:04,064
+Şimdi şöyle bir şey yaptım. Hangi metot hangi üye alanı çiziyor? Bunun eşleşmesini yaptım.
+
+650
+02:37:12,659 --> 02:37:26,700
+Bu arada bir de yazılım ölçütüleri konusunda konuşacağız. Bir ölçütü 0 ile 1 arasında ya da %0 ve %100 arasında yani normalize bir aralıkta sonuç vermesi bunun yorumlanmasını gayet kolaylaştırmaktadır.
+
+651
+02:37:26,700 --> 02:37:31,380
+Bu nedenle bağlaşım ölçütü şöyle tanımlıyorum.
+
+652
+02:37:33,659 --> 02:37:38,239
+Üye metod ile üye alan arasındaki eşleşmelerin sayısını sayıyorum.
+
+653
+02:37:40,755 --> 02:38:07,175
+Bütün metotların, bütün üye alanları eşleşseydi, yani bu fully connected olsaydı, 4 kere 5, 20 ilişki kurulabilirdi. Şuraya yazayım. Max ilişki eşitti, 20 olabilirdi. 4 üye alan, 5 üye metot, 5, 20. Fakat burada kaç tane ilişki var? Ona bakalım.
+
+654
+02:38:08,531 --> 02:38:16,171
+Mevcut ilişki eşittir.
+
+655
+02:38:16,891 --> 02:38:19,911
+1, 2, 3, 4, 5, 6, 7.
+
+656
+02:38:20,451 --> 02:38:23,011
+Burada doğduğundan olayları olanları sayılım.
+
+657
+02:38:23,111 --> 02:38:29,711
+Artık dolaylılar için de başka hangi metodu çağırıyorsa mesela öyle bir şey yapılabilirdi.
+
+658
+02:38:29,711 --> 02:38:33,051
+Diyelim ki örnek.
+
+659
+02:38:34,675 --> 02:38:58,675
+Hadi şey elle kalem yapayım çok şey olmuş ama değilim ki bunu da diyelim ki şöyle turuncu ile falan yapayım. Şimdi bu metot bu metodu çağırıyorsa dolaylı olarak bu metot şu üyeyeyle de aslında ilişkilidir diye düşünüyorsa ve bunu da bir mi sayıyorsun ya da 05 mi sayıyorsun gibisinden verdiğin kararlarla
+
+660
+02:38:58,976 --> 02:39:00,976
+Hesaplama yöntemi değişebilir.
+
+661
+02:39:01,416 --> 02:39:03,876
+Bak, hadi 10. kincel, şimdi burada girmeyelim.
+
+662
+02:39:04,335 --> 02:39:05,456
+Ana hatlarıyla konuşalım.
+
+663
+02:39:06,096 --> 02:39:13,195
+O zaman bu durumda bizim bağlaşımımız 7 bölü 20 oluyor.
+
+664
+02:39:13,496 --> 02:39:15,015
+Bu kasarım için.
+
+665
+02:39:16,276 --> 02:39:17,096
+Ay pardon, uyum.
+
+666
+02:39:18,056 --> 02:39:20,116
+Uyum eşitir.
+
+667
+02:39:20,116 --> 02:39:22,515
+7 bölü 20.
+
+668
+02:39:23,123 --> 02:39:36,123
+O da kaç ediyor? 0.35 ediyor. %35.
+
+669
+02:39:36,123 --> 02:39:49,283
+Pardon, şuna tıklamalıydım. %35 pek de güzel bir uyum değil. O yüzden bu tasarımın çok mantıklı gelmedi.
+
+670
+02:39:50,095 --> 02:40:11,536
+Fakat ben bu sınıfı ikiye bölebilirim. Şu anki haliyle bu tek bir sınıf. Şu anki haliyle bu tek bir sınıf. Bu sınıfın uyumu da %35. Fakat ben bu sınıfı ikiye bölersem bu tam bir refactoring eylemi oluyor.
+
+671
+02:40:13,652 --> 02:40:27,652
+A, şöyle seç, ctrl, c, ctrl, v, fakat aşağıya taşı. Şimdi ben bunu iki ayrı sınıf halini olarak düşüneceğim. O yüzden yeşil alayım ve select check, ondan sonra A çiz bir ötkene.
+
+672
+02:40:27,652 --> 02:40:39,871
+Şimdi şu birinci sınıfım olsun, ondan sonra ötekisi de tutuncu olsun, şurada A. Tamam, önce çizmek gerekiyormuş. Sonra şunu da yeşile çizebilirim.
+
+673
+02:40:40,308 --> 02:40:41,968
+Şu da ikinci sınıfım olsun.
+
+674
+02:40:42,208 --> 02:40:43,968
+Tamam mı? Şimdi iki ayrı sınıfım olsun.
+
+675
+02:40:45,768 --> 02:40:52,428
+Buna göre şimdi hesaplamalarım yenilerse, burada uyum eşittir.
+
+676
+02:40:53,888 --> 02:40:58,788
+Dört ilişki olabilir. Burada üç ilişki var. Üç bölü dört. O da eşittir.
+
+677
+02:40:58,948 --> 02:41:01,188
+Sıfır ve bir yetmiş beş yani yüzde yetmiş beş.
+
+678
+02:41:01,808 --> 02:41:03,548
+Bakın gayet iyi bir yere çıktık.
+
+679
+02:41:04,308 --> 02:41:11,148
+Ay pardon, o turuncu ile yazmam gerekiyordu. Bak o turuncuya dönecek mi? İyi döndü. Ondan sonra şunu hesaplayalım bir de.
+
+680
+02:41:11,748 --> 02:41:25,568
+Şimdi bunun en fazla 6 ilişkisi olabilir. En fazla 6 ilişkisi olabilir. 3, 4 tane var. 4 bölü 6. 2 bölü 3. Yani %66.
+
+681
+02:41:31,156 --> 02:41:40,256
+Biri %75, biri %66 uyuma sahip iki sınırsı çıkarttık. Ne kadar ilerleme kaydettik gördüğünüz uyumda, uyumun yüksek olması isteniyordu.
+
+682
+02:41:40,256 --> 02:41:52,456
+İşte size bir uyum hesabı, uyum metriyi, talımı ve refactoring yaparaktan nasıl uyumu yükseltebileceğimizin örneği.
+
+683
+02:41:52,724 --> 02:42:08,724
+Daha ilk tasarım alanında bunu keşfedebiliyorsak yapardık ama keşfedemediysek, diyelim ki hele herkide ECR çalışıyorsak bir refactoring koşusu planlarız ve burada bu şekilde uyumu en güzel bir hale getiririz.
+
+684
+02:42:10,224 --> 02:42:11,064
+Böyle yapabiliriz.
+
+685
+02:42:11,744 --> 02:42:17,244
+Peki, şimdi bu bağlamda bir anket çalışmamız daha olacak.
+
+686
+02:42:20,020 --> 02:42:27,139
+Şimdi ben biraz çizim kolaylığı için 2 numaları sistemi tercih ediyorum.
+
+687
+02:42:28,139 --> 02:42:35,739
+Şimdi kontrol C, şuraya kontrol V. Ama biraz şöyle arayayım çünkü 2 sistem olacak.
+
+688
+02:42:36,360 --> 02:42:39,760
+Ve aynıca şu doğal kısmını siliyorum. Şimdi başka şeyler kullanacağım.
+
+689
+02:42:41,180 --> 02:42:43,380
+Tekrar al kontrol C, kontrol V.
+
+690
+02:42:44,760 --> 02:42:44,979
+Şimdi.
+
+691
+02:42:45,747 --> 02:42:54,747
+Yine burada, bu birinci sistemim olsun. Ondan sonra işe başlıyor da ikinci sistemim olsun.
+
+692
+02:42:57,747 --> 02:43:01,747
+Pek arkan bırakmış olamayacağım ama, olsa yine aynı zamanda vaktimden bırakmışım için.
+
+693
+02:43:01,747 --> 02:43:08,747
+Şimdi, artık işin inşaatını, Virutab'ın katmanı girecek diyelim ki.
+
+694
+02:43:09,523 --> 02:43:13,824
+Şuraya, interface diye de bu bizim için database seçiyorum tamam mı?
+
+695
+02:43:14,963 --> 02:43:15,583
+Değil bitti.
+
+696
+02:43:17,363 --> 02:43:20,004
+Şuraya database'i zingat.
+
+697
+02:43:22,023 --> 02:43:23,304
+Ondan sonra ses şunu.
+
+698
+02:43:24,423 --> 02:43:25,423
+Yapıştırız.
+
+699
+02:43:25,804 --> 02:43:29,004
+Şimdi her iki sistemde database'le etkileşimde olacak.
+
+700
+02:43:30,164 --> 02:43:35,703
+Birinci sistemin ve madem öyle bu ABC nesnelerinde database'e kaydedilmesi gerekecek.
+
+701
+02:43:36,211 --> 02:43:53,871
+Şimdi, acaba bu database'i kaydetme işlerini ABC kendileri mi yapsınlar? Yani bu sorumlulukları, kendilerinin database'i kaydetme, oradan güncelleme, oradan yükleme gibi sorumlulukları bu sınıflara mı verelim?
+
+702
+02:44:04,084 --> 02:44:07,004
+database ile bu D konuşsun.
+
+703
+02:44:10,963 --> 02:44:16,304
+Ve fakat, belki sahiplik ve kelimenin burada tam anlamında,
+
+704
+02:44:16,424 --> 02:44:21,744
+ben son şey yapayım, burada sahiplik diyeyim isterseniz, çünkü oluşturacak bunları edecek ya.
+
+705
+02:44:22,524 --> 02:44:23,744
+Şöyle, şöyle, şöyle.
+
+706
+02:44:24,784 --> 02:44:27,584
+Şimdi bunu yalnız direct yapacağım.
+
+707
+02:44:27,584 --> 02:44:28,564
+Evet, tamam.
+
+708
+02:44:29,864 --> 02:44:30,104
+Şimdi.
+
+709
+02:44:30,708 --> 02:44:48,388
+Bu ABC'yi veri tabanına kaydetmemiz gerekti. Bunu birinci sistemdeki gibi mi yapalım? İkinci sistemdeki gibi mi yapalım? Bir dakika düşünün. Ondan sonra acaba yine hadi bakalım elleri göreyim diyeceğim. Bir dakika süre.
+
+710
+02:44:49,747 --> 02:44:54,768
+Otuz dolar değil mi bilmiyorum sadece sistemin saati ne bakacağım? Konuları tutmayacağım. O kadar da değil yani.
+
+711
+02:44:59,412 --> 02:45:22,412
+Evet, bu saha da katılımcı listesi, penceresinin yok, o değildi. Neydi ya? Ha, şunu şey diyordum. Evet. Saat bile bir dakika dolamadı. Biraz da sabırsız. Biraz bekleyelim bakalım şimdi. Acaba ne düşünecek arkadaşlar?
+
+712
+02:45:29,940 --> 02:45:35,880
+Bunu söyleyeceğim, ondan sonra ders bitecek. Fazla tutmayacağız. 5 dakikası içerisinde bitiriz.
+
+713
+02:45:35,880 --> 02:45:42,260
+Evet, peki. Şimdi, bir numaralı tasarım için oy verenler her kardeş.
+
+714
+02:45:44,659 --> 02:45:56,159
+Bir de orklar söyleyeyim. 1, 2, 3, 4, 5, 6, 7, 8.
+
+715
+02:45:56,915 --> 02:46:03,935
+9, 10. Peki, er kadrağı var. İki numaralı tasarım için er kadrağı var.
+
+716
+02:46:12,352 --> 02:46:23,792
+8, 9, 10. Bir iki şeyler kaldırdık. Bunu doğru yaptığınızı anlayamıyorum. Sayı unutmayın. Bir yandan sayısı bir yandan da kaç gün elini tuttuk o kadar hafızam yok dedim.
+
+717
+02:46:23,792 --> 02:46:38,211
+Peki. Şimdi burada fazla uzatmadan tek bir doğru cevap var. Burada ipin doğrusu iki numaralı sistem olacak arkadaşlar. Bir numaralı değil.
+
+718
+02:46:40,020 --> 02:46:47,700
+Şöyle düşünülebilir belki. Hocam, tamam şimdi uyumluyunuz ama bağlaşımda unutmadan bir baksak.
+
+719
+02:46:47,700 --> 02:47:02,540
+Şimdi daha evvelki toplam bağlaşım 2 idi. Şimdi bu D sınıfını koyunca bağlaşım 5'e fırladı. Hadi nasıl olacak diyebilirsiniz.
+
+720
+02:47:03,056 --> 02:47:18,216
+Çünkü yani şu kesikli çizgiler hani kelimenin tam anlamıyla bağlaşım değil, sınıf değil çünkü database. Ama yine de siz bunu ok olarak saydıysanız, ok olarak saysak, 1, 2, 3, 4, 5 ok var burada, 1, 2, 3, 4, 5, 6 ok var burada.
+
+721
+02:47:18,556 --> 02:47:27,576
+Öyle saysanız bile yine iki numaralı sistemin bağlaşımı daha yüksek oluyor. Fakat yine de yanıtımız iki numaralı sistem.
+
+722
+02:47:28,000 --> 02:47:50,000
+Çünkü arkadaşlar, diyelim ki biz bu database'i şeyde diyelim ki daha ayarlarda, SQL, MySQL, tamam mı? MySQL idi. Böyle yaptık ama sonra fark ettik ki, diyelim ki mesela, hadi bırakın başka bir...
+
+723
+02:47:50,355 --> 02:48:01,355
+SQL sorgulu yazılımını. Relational database değil de non-relational database düşündük. O kadar değerli müsaade farklı database. O zaman...
+
+724
+02:48:01,920 --> 02:48:24,399
+Bizim bir numaralı sistemde A, B ve C sınıflarının hepsinde değişiklik yapmam gerekir. Ben bunu değiştireceksen, sildim, bakın oklar da gitti. Yeni bir şey koyacaksan, başka bir database koyacaksan, bütün o okları yeniden çizmek zorundayım. Yani bütün o kod değişikliklerini bütün üç yerde yapmak zorundayım.
+
+725
+02:48:29,920 --> 02:48:42,959
+Sildimde sadece bir tek yerle ilgili iş bozuldu. Ben bu no SQL data lezimi koyduğumda sadece D'nin kodunu değiştirmem benim içime yetecek.
+
+726
+02:48:45,296 --> 02:49:05,195
+Bağlaşım açısından baktığımızda bir numaralı sisteme, ABC sınıflarına hem problem alanıyla ilgili görevler verdik, hem de sistem katmanıyla ilgili kendini saklama kaydetmeye görevlerini verdik. Yani birbirleriyle uyumsuz iki görev verdik aslında.
+
+727
+02:49:05,940 --> 02:49:33,940
+Fakat 2 numaralı tasarımda ABC iş mantığı katmanında duruyorlar. D ise sistem tasarımında duruyor. D'nin işi sadece sadece veritamalı işlemleri, ABC'nin işleri sadece sadece problem alanı işlemleri. O yüzden burada ilk bağlaşıma bakmaksızın direkt 2 numaralı sistemi seçeceğiz. Çünkü bu bize daha iyi katmanlı bir mimari sunulur.
+
+728
+02:49:33,940 --> 02:49:47,940
+Ve ayrıca bu database işlemleri koduna da bakacağımız zamanda zaten ABC'de duplicate kod vereceğiz. Yani aynı işleri A, B, C'de kopyalabiliyor olacağız.
+
+729
+02:50:00,000 --> 02:50:10,000
+Bu yüzden kalıtımla alalım. Diyelim ki mesela böyle bir şey yaptığımız. Tamam da, java ya da .NET gibi çoklu kalıtım destekleme yani.
+
+730
+02:50:10,164 --> 02:50:24,664
+Bence de doğru bir karar verip çok kalıtım desteklemeyen dillerle çalıştırdığımızda bu D'nin başka kalıtımla iç mantığı, iç kuralları nedeniyle kalıtımla türetilmesi gerektiği başka bir üst soru vardıysa o zaman D'den nasıl olacak bu?
+
+731
+02:50:24,664 --> 02:50:32,463
+O da o D'den kalıtımla alır diyelim ama türültüm daha ağır sıkletme ilişki olarak zaten tercih edilmiyor arkadaşlar.
+
+732
+02:50:32,864 --> 02:50:38,164
+Bunu kalıtım yerine swip ilişkisine çevirdiğinizde de zaten...
+
+733
+02:50:38,164 --> 02:50:42,884
+Bu nedenle her halükarda ikiyi tercih ediyoruz.
+
+734
+02:50:43,864 --> 02:50:51,744
+Bağlaşım önemli bir kavram olmakla birlikte biraz yani aldatıcı bir kavram olabilir.
+
+735
+02:50:52,504 --> 02:50:57,884
+Burada çünkü aslında olması gereken bir bağlaşım düzeyi var.
+
+736
+02:50:58,783 --> 02:51:02,224
+Ama o düzeyin ne olması gerektiğini bilemiyoruz ilk başta.
+
+737
+02:51:02,543 --> 02:51:13,963
+olması gerekenden az bağlaşım da bir problem olabilir. Birbiriyle ilişkili olması gereken ama ilişkili olmayan o ilişkiyi keşfedemeliysek o açıdan da düşünebilirsiniz.
+
+738
+02:51:14,384 --> 02:51:21,384
+Yani bağlaşımı bir gösterge olarak kullanabilirsiniz ama kesinlikle bir amaç olarak kullanmayın.
+
+739
+02:51:21,384 --> 02:51:29,484
+Aynı şeyi bütün metikliği için söylüyoruz. Metikliği için de çalışan insan bunu söylüyor zaten. Bu işin atası bunu söylüyor zaten.
+
+740
+02:51:31,252 --> 02:51:34,051
+Denirik istediğini anlatabilir diye evet istiyorum.
+
+741
+02:51:35,443 --> 02:51:45,304
+Peki arkadaşlar, başka bir şey kalmadığı yorumluyorsam, bununla ilgili tasarım kıtlığı nedir diyeceğiz. Onu da haftaya söyleriz.
+
+742
+02:51:45,304 --> 02:52:01,283
+Çünkü zaten yaptığımız tasarımda genişleteceğiz bu Next Rampos ile ilgili. Bugün bir kadar yeter. Dinlediğiniz için soru soru arkadaşıma ve [öğrenci] arkadaşımına gönülden teşekkür ediyorum. Haftaya inşallah görüşmek üzere. Sağolun.
+
+743
+02:52:04,211 --> 02:52:08,031
+Bir şey mi var? Bir şey mi var? Kıpanmadan önce bir dakika suhabbet.
+
+744
+02:52:09,031 --> 02:52:11,791
+Son hafta 8. hafta değil mi diyor [öğrenci]?
+
+745
+02:52:13,139 --> 02:52:31,299
+Valla şu an net değil. Bakın yani. Sekizinci hafta var sayılım olarak. Ama daha dördüncü haftadayız, beşinci haftadayız, kaçıncı haftadayız? Şu an beşinci haftadayız. Daha aramızda önde üç hafta var. Kim öle, kim kala diyelim. Her şey olabilir.
+
+746
+02:52:41,139 --> 02:52:51,520
+Ya da geçirmeyecek mi? Geçinmese bile sınavlar yüzde olacak mı diyecekler. Ne diyecekler? İnanın hiçbir fikrim yok. O yüzden bizi izlemeye devam edin.
+
+747
+02:52:51,819 --> 02:53:02,200
+Derslere katılın. Gönül ana sayfasındaki duyuruları izleyin. Sosyal medyada yok bunlar. Zaten bir dolu fikrim bırakıyoruz.
+
+748
+02:53:02,200 --> 02:53:08,079
+O ruklardan bize telefonunuzu açtığınızda haberlerin içerisinde okulunlu haberler çıkacak diye geliyor.
+
+749
+02:53:09,139 --> 02:53:12,479
+Biz izlemeyi de harfetim diyoruz.
+
+750
+02:53:13,979 --> 02:53:22,279
+Bayro haftasından son günü, bir tek günü geliyor. Bütün günleri gelmiyor. Cuma günü geliyor. Bilmiyorum yani.
+
+751
+02:53:22,840 --> 02:53:34,819
+Şeyde de bizim bölüm mail ve WhatsApp kanallarımızda da aramızda böyle bir yazışma olmadı. O yüzden benim farkında olduğum bir bilgi yok.
+
+752
+02:53:35,167 --> 02:53:41,347
+Haklısınız ama sadece son günü geliyor. O yüzden kurtarma selamattı.
+
+753
+02:53:42,587 --> 02:53:45,747
+Fiyatı bilmiyorum. Göreceğiz. Şu an hiçbir şey söylemiyorum.
+
+754
+02:53:47,087 --> 02:53:49,087
+Evet. Peki. Var mı başka bir şey?
+
+755
+02:53:50,948 --> 02:53:53,827
+Tamam. Peki. İyi. Şimdilik alarsın artık.

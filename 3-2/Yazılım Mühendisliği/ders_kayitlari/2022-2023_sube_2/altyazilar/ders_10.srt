@@ -1,0 +1,2147 @@
+1
+00:00:03,379 --> 00:00:05,560
+Ah, evet.
+
+2
+00:00:12,243 --> 00:00:19,724
+Evet arkadaşlar, hani 10 dedim ama İstanbul Trafiği bugün daha da olağanüstüydü. Ancak yetişebildim, kusura bakmayın.
+
+3
+00:00:20,423 --> 00:00:32,844
+Hemen ekran paylaşımı falan açayım. Ondan sonra derse başlayalım. Ekran paylaşımını bir açalım. Ondan sonra bakalım nerede kalmışız, ne yapmışız, ne yapmışız.
+
+4
+00:00:32,844 --> 00:00:34,423
+Devam edelim.
+
+5
+00:00:48,979 --> 00:00:49,500
+Evet.
+
+6
+00:01:15,412 --> 00:01:27,372
+Güzel. Post aktivite durumu şamalarını yapmışız. Sınıf şamasıyla devam edeceğiz. İyi peki tamam. O zaman bugün herhalde komple buna ayarlarız diye tahmin ediyorum. Bakalım.
+
+7
+00:01:33,715 --> 00:01:51,635
+Evet şimdi sonraki haftada şey yapıldı, arası yapıldı 9. hafta. 10. haftada P109 diyerekten devam edeceğiz madem öyle. O zaman live 2ML gerekecek bize.
+
+8
+00:01:53,683 --> 00:01:55,704
+Hocam, derse geçmeden bir şey sorabilir miyim?
+
+9
+00:01:55,944 --> 00:01:57,344
+Tabii ki, elbette. Lütfen buyurun.
+
+10
+00:01:57,904 --> 00:02:02,024
+Proje ödevinde sanırım söylemiştiniz ama emin olmak için bir daha soralım istedik.
+
+11
+00:02:02,284 --> 00:02:08,764
+Kodlama kısmı için en az bir modül yeterli mi yoksa bizden istenen tüm projeyi kodlamamız mı bekleniyor?
+
+12
+00:02:08,764 --> 00:02:13,343
+Hala, tüm projeyi kesinlikle kodlamıyorsunuz. Orta kadar bir modül yeterli.
+
+13
+00:02:13,624 --> 00:02:21,543
+Yani sadece login olduğunu başarılı değil de, login olmak da bir use case'dir ama yeterli bir use case değil.
+
+14
+00:02:21,683 --> 00:02:26,403
+diyebilirim. Hani orta kadar bir şey düşünün bakalım.
+
+15
+00:02:26,963 --> 00:02:30,283
+Orada yine kendi belirlediğimiz modüllerden bir tanesi olacak değil mi?
+
+16
+00:02:30,403 --> 00:02:31,903
+Tabii ki hangisini istersiniz.
+
+17
+00:02:32,084 --> 00:02:33,183
+Tamam teşekkürler hocam.
+
+18
+00:02:33,183 --> 00:02:39,824
+Ne kadar yapabilirsiniz, neyle yapabilirseniz, hangi ortamda yapabilirsiniz hepsi kabulünüzdür.
+
+19
+00:02:40,644 --> 00:02:41,504
+Tamam sağ olun hocam.
+
+20
+00:02:41,524 --> 00:02:46,304
+Tabii bir karşılaştırma, değerlendirme yapacağız ama diyeyim ki birisi abarttı, bütün her şeyi programladı.
+
+21
+00:02:46,304 --> 00:02:48,624
+E tamam da kodun ağrı %10.
+
+22
+00:02:49,683 --> 00:03:09,343
+O yüzden diğerleri 9'u düşürmüşse ki kendileri yapmış, o 10'a çıkmış. Ne fark etti? 1 puan için bütün her şeyi ara proje gibi programladı. Hiçbir anlamı yok. O yüzden işte orta kadar her şeyleri yapın yeterli olacaktır. Test kezleri mutlaka. Herkes bir şeyler eklemeyi unutmasın. Ona özel önem gösteriyoruz. Bununla adımlar.
+
+23
+00:03:10,004 --> 00:03:11,163
+Tamam, teşekkürler hocam.
+
+24
+00:03:11,603 --> 00:03:13,384
+Bir şey değil. Şimdi bakalım.
+
+25
+00:03:14,099 --> 00:03:25,800
+Proje konumuzla alakalı bazı kafamıza takılan konular vardı da.
+
+26
+00:03:25,800 --> 00:03:29,180
+Biz de mail yollamıştık. Henüz dönüş alamadık.
+
+27
+00:03:29,319 --> 00:03:33,439
+Tamam, çok kısacık sorun bakalım.
+
+28
+00:03:34,840 --> 00:03:37,451
+Hocam bizim konumuz...
+
+29
+00:03:38,003 --> 00:03:45,743
+Bu yazılım evi konusu. Burada çalışan maaşları iki farklı muhasebe programı ile hesaplanmaktadır diye belirtilmiş.
+
+30
+00:03:45,743 --> 00:03:50,743
+Ve işte hangi çalışan maaşın hangi programla hesaplanacağı.
+
+31
+00:03:51,104 --> 00:04:00,484
+İşe giriş sırasında belirlenmektedir. Web üzerinden sunduğu hizmet diye bir ifade var orada. Onu tam anlayamadık. Onun açıklamasını sormayın.
+
+32
+00:04:00,484 --> 00:04:11,404
+Şöyle düşünün şimdi. Örnek. Daha evvelden şeyler ayrıydı. Emekli sandığı, bağ kurdu ve soyaslı go-tarar kurumu ayrıydı.
+
+33
+00:04:12,175 --> 00:04:30,536
+Öyle bir senaryo mantığında düşünün. Veyahut da belki şöyle düşünebilirsiniz. İki ayrı özlük sisteminiz var. Biri logo, birisi etayla çalıştırıyorsunuz.
+
+34
+00:04:30,720 --> 00:04:40,900
+Ya da ne bileyim, mesela çalışanları uygun projeyle yerleştirmek de deyince biraz da benim aklıma şey geliyor, bir outsourcing firmasıymış gibi de çalışabiliyor.
+
+35
+00:04:41,020 --> 00:04:49,139
+Tamam kendi projeleri de var ama mesela küçük bir yazılım evi fakat daha büyük bir şirkete diyelim ki bir telekom operatörüne proje yapacak.
+
+36
+00:04:49,139 --> 00:04:54,920
+O zaman belli çalışanların bir video o firmanın yerinde mekanında çalıştırıyor.
+
+37
+00:04:55,360 --> 00:04:58,720
+Ya da kısa bir süreliğine o firmaya o çalışanları kiralamış.
+
+38
+00:04:58,720 --> 00:05:26,680
+Bu konuda, yazılım süreç modelleri, başlamış gibi oluyor arka planda. Onun ayrı bir maaş sisteminde hesaplıyordur, tutuyordur. Ötekini, ötekini de tutuyordur gibi. Bunlar çeşitli örnekler. Siz bunlardan hangisini şöyle oluyor dediğinizde, işte o dediğiniz şeyi şu proje bölümleri içerisinde kabuller ve kısıtlar kısmına, nereye? Şurada yazıyordu. Şu, modeller ve tasarım yapan varsayımlar. İşte böyle.
+
+39
+00:05:26,720 --> 00:05:44,339
+gibi şeyleri kabuller, kısıtlar bölümünde bu böyle böyledir, ben de böyle böyle yaptım diyeceksiniz. Fakat mesela tutup da şimdi bu kısmını koda dökmenize gerek yok. Başka bir tarafını koda dökebilirsiniz. Tutup da iki ayrı mesela ETA ve logo mu kuracaksınız bilgisayarınıza, bize de öyle mi göstereceksiniz? Hiçbir anlamı yok gibi.
+
+40
+00:05:45,519 --> 00:05:49,000
+Yani dışarıdan bir hizmet alınıyor gibi mi varsayalım o zaman hocam?
+
+41
+00:05:49,908 --> 00:06:11,608
+Bu lazım sadece bir örnekle. İster öyle varsayın, ister başka türlü varsayın. Tamamen size kalmış ve burada şöyle varsaydım doğru, şöyle varsaydım yanlış diye bir şey yok. Önemli olan varsayınlarımızı doğru dokümanta etmek ve o dokümantasyonu önemli şekilde şemalarınızı, metinlerinizi, şunları, bunları oluşturduğunuzu. Mesele o.
+
+42
+00:06:12,367 --> 00:06:14,588
+Tamam, anladım. Teşekkür ederim.
+
+43
+00:06:15,187 --> 00:06:16,827
+Başka soru sonra
+
+44
+00:06:16,827 --> 00:06:17,527
+vası alabilir.
+
+45
+00:06:26,451 --> 00:06:38,951
+Evet, şunları falan yapmışlar. Şimdi sınıf şans edeceğiz. Evet, bunlar kalsın. Bunlardan da belki bir şeyler yola çıkarız. Ama tabii her şeyden önce soru varsa devam edelim soruyu yanklamakla.
+
+46
+00:06:43,091 --> 00:06:59,992
+Şimdi bu dönem yaptığımız, şu cluster, aa yapmamış mıyız? Bir şey olmamız lazım işler ama, böyle bir nisanım aktarılmadı. Şuraya bir bakayım bakalım. Olmadı, hazır notumuzdan şey ediniz de.
+
+47
+00:07:02,132 --> 00:07:05,992
+Belki, Vile CML'in olduğu yerde, bir bulayım bakalım.
+
+48
+00:07:13,908 --> 00:07:21,308
+Evet, post ayaşıl. Şurada bir şeyler varmış. Bakalım şimdi bir class diagramı.
+
+49
+00:07:21,308 --> 00:07:27,308
+Şimdi kopyalım şuradan. Esas olması gereken yere benim o şey tipi bırakmış.
+
+50
+00:07:27,308 --> 00:07:37,368
+Çalışıyor muyuz burada? Çalışıyor herhalde. Şuraya da bir yapıştır bakalım. Tamam, peki. Post a, budur herhalde.
+
+51
+00:07:47,827 --> 00:07:48,267
+Bu noktayız.
+
+52
+00:07:51,267 --> 00:07:52,947
+Evet, pekala.
+
+53
+00:07:55,627 --> 00:08:00,507
+Şimdi tekrar bir emin olalım. P109, oralarda, 38.
+
+54
+00:08:02,187 --> 00:08:05,048
+Evet, peki. Tamam, bu noktaya geleceğiz. Doğru. Güzel.
+
+55
+00:08:05,968 --> 00:08:10,528
+Peki arkadaşlar, şimdi hatırlayalım bakalım ne yapmıştık, ne etmiştik.
+
+56
+00:08:11,528 --> 00:08:13,427
+Analizden tasarıma geçerken.
+
+57
+00:08:14,836 --> 00:08:32,936
+İşleri sıfırdan yapmıyoruz tabii ki elbette. Tasarımın aşamasındayken analizde oluşturduğumuz artifakların üzerine geliştiriyoruz tasarımımızı. Bu noktada en son analiz aşamasında şöyle biz alan modeli çizmiştik.
+
+58
+00:08:40,000 --> 00:08:44,539
+tartışmış, değerlendirmiş ve şöyle bir modeli getirmiştik.
+
+59
+00:08:45,043 --> 00:08:53,344
+Ardından tasarım ayrıntılarında, yok daha henüz analiz aşamasında, use case diagram da çizmiştik.
+
+60
+00:08:53,504 --> 00:08:56,463
+Onu da açalım bakalım, belki onun da bir yararı olabilir.
+
+61
+00:08:57,524 --> 00:09:00,963
+Bu da varsa tabii o taraftan çekeceğiz.
+
+62
+00:09:01,423 --> 00:09:02,624
+Post bir, use case, post bir.
+
+63
+00:09:02,703 --> 00:09:04,764
+Ha evet hatta tartışmışız be filan.
+
+64
+00:09:04,764 --> 00:09:09,524
+İşte şöyle bir use case şeması çıkartmışız.
+
+65
+00:09:09,903 --> 00:09:12,903
+Şimdi bu yaptıklarımızla tutarlı olacak.
+
+66
+00:09:13,043 --> 00:09:16,303
+Bunların üzerine gidecek şekilde.
+
+67
+00:09:17,971 --> 00:09:21,511
+Sınıf şamamızı metotlarla ayrıntılandıracağız.
+
+68
+00:09:22,052 --> 00:09:31,412
+Bu arada bir şeyleri şöyle yaparız dediğimiz noktalarda net karar verebilmek için sequence değerlemler çizebiliyor olacağız.
+
+69
+00:09:32,451 --> 00:09:43,731
+Bu aşamada lütfen siz de en ufak aklınıza değişik bir şey geldiğinde veya sorunuz olduğunda açın mikrofonu hocam diye bunu biraz etkileşimli yapalım.
+
+70
+00:09:43,731 --> 00:09:45,932
+Değişik varyasyonları üzerinden.
+
+71
+00:09:45,971 --> 00:09:58,692
+konuşalım. Hani proof of concept, koz yazacak noktaya kadar götürmeyiz ama en azından şöyle bir mantıklı bir sınıf şeması nihayet halini getirelim istiyorum.
+
+72
+00:10:00,000 --> 00:10:27,779
+Bu bize yardımcı olabilir. Ondan sonra, activity diagramımız yardımcı olabilir. Hele ki şimdi tasarım aşamasında kod ayrıntılar, bundan sonra da kodu gerçekleşecek. O kodu destekleyecek şekilde tasarım yapmamız gerekmekte. Orada bu activity diagramların bize verebileceği ipuçları olacak. Ondan sonra, state diagramın da bize verebileceği ipuçları olacak.
+
+73
+00:10:28,000 --> 00:10:31,240
+Bunları üstünde oturup ayrıntılı konuştuk, tartıştık çünkü.
+
+74
+00:10:32,740 --> 00:10:37,179
+Bir yerde özel düştüğümüz bir not olmamış ama o da olabilirdi mesela.
+
+75
+00:10:37,179 --> 00:10:43,419
+İşte o notları da değişik şamalarda ayrıntılandırmak şeklinde ilerlerdik.
+
+76
+00:10:44,039 --> 00:10:49,019
+Şimdi madem öyle şunun yerini değiştirebiliyor muyum? Yok, maalesef sekmeleri oynatamıyorum.
+
+77
+00:10:49,220 --> 00:10:51,620
+O halde belki olurdu ama problem değil.
+
+78
+00:10:52,115 --> 00:10:56,415
+Şimdi madem öyle, bir yeni klas diagram oluşturayım.
+
+79
+00:10:56,415 --> 00:11:13,096
+Ve şu analizdeki bütün her şeyi ben seçip, şöyle bir, ondan sonra acaba, ha dur kopyalar, kontrol, c, şuraya kontrol ve edeyim, yine sadece teknisi açtı.
+
+80
+00:11:14,096 --> 00:11:16,555
+Olmadı, tekrar yapalım.
+
+81
+00:11:17,268 --> 00:11:20,348
+Neden sonra bir kere tıkladım? Kontrol C.
+
+82
+00:11:21,148 --> 00:11:28,687
+Evet, gel bakalım. Kontrol V. Tamam, güzel. Bunu ayrıntılandıracağız arkadaşlar. Önce bunu unutmadan kaydedelim.
+
+83
+00:11:31,187 --> 00:11:34,348
+Dersin bulunduğu dizene olsun bu sefer.
+
+84
+00:11:37,228 --> 00:11:39,408
+Şuradayız, şuradayız.
+
+85
+00:11:41,908 --> 00:11:45,447
+Bu da tasarımın T'si olsun.
+
+86
+00:11:47,908 --> 00:11:48,927
+Ondan sonra şuan.
+
+87
+00:11:49,528 --> 00:11:51,508
+Buradan bir bakmaya başlayalım.
+
+88
+00:11:51,947 --> 00:11:53,087
+Bakalım şimdi.
+
+89
+00:11:53,668 --> 00:11:58,227
+Bunu yaparken dediğim gibi, yani nereden başlayalım aslında?
+
+90
+00:11:59,268 --> 00:12:03,988
+Kullanım senarası metnini hatırladığınızda aslında birinci aktörümüz kimdi? Kasiyer'di.
+
+91
+00:12:04,532 --> 00:12:19,692
+O yüzden belki oradan başlamamız mantıklı olabilir ama aslında bütün işlerin en çok yapıldığı odak nokta kasaydı. Kasiyer bu kasaya login olduktan sonra onun çeşitli tuşlarına basarak çeşitli işler yaptıracak kasaya.
+
+92
+00:12:19,692 --> 00:12:32,532
+Yani esas işlerin başlangıç noktası kasa sınıfı olacak. Bu noktada o yüzden isterseniz başlayalım. Biz tartışırken login olmaktan bahsetmiştik.
+
+93
+00:12:32,532 --> 00:12:48,112
+Ve hatta aktif çıyanımızda da var kasiyerin kimliğinin doğrulanması. Şimdi buradaki her bir eyleminizi bir ya da birden fazla metot ile faaliyete geçirmeye çalışacağız, hayata geçirmeye çalışacağız.
+
+94
+00:12:48,307 --> 00:13:01,908
+O yüzden burada bir kere isterseniz şimdi belki daha ayrıntılı üye alan isimlerini de yazabiliriz. Bu bağlamda daha net olması yararlı olacaktır.
+
+95
+00:13:04,244 --> 00:13:12,864
+Hatırlarsanız, daha nesne öyle programlamada, get-it-it-it-it metotlar adlandırırken, üye alan adlarından yola çıkaraktan adlandırıyorduk.
+
+96
+00:13:12,864 --> 00:13:21,283
+O yüzden bu noktada, mümkün olduğu kadar, koda en yakın olacak şekilde bu şemayı ayrıntılandırmak istiyorum.
+
+97
+00:13:22,355 --> 00:13:37,815
+Küçük K ile Kasiyer türünden, Büyük K ile Kasiyer sınıfından bir büyü alanım olacak. Diğerlerini yaptıkça da gidebilirim veya şu an hemen otlara bakaraktan onları bu aşamada koysam iyi olur.
+
+98
+00:13:37,815 --> 00:13:49,415
+Şimdi kasadan şubeye doğru, hangi şubede yer aldığını gösteren şube, iki nokta üstte büyük S ile şube birisi olacak.
+
+99
+00:13:50,004 --> 00:14:01,004
+Ondan sonra yapılan satışlar olacak burada. Şimdi bunu ya bir dizi ile ya bir bağlı liste ile veyahut da…
+
+100
+00:14:01,823 --> 00:14:29,683
+Başka bir veri yapısıyla tutmamız gerekecek. Burada en mantıklısı bir tür bağlı liste kullanmak olacaktır. Çünkü burada herhangi bir satışı sorgulamak gibi bir yüz kezimiz yok. Ne oluyordu? Gün sana raporları alınıyordu en fazla diyelim ki. Orada da bütün raporlar üstünden, bütün satışlar üzerinden sırayla gidilecek bir şey. O yüzden sıralı erişim ihtiyacımız vardı.
+
+101
+00:14:29,823 --> 00:14:38,563
+random last geri erişim ihtiyacımız yok. Ve ayrıca sürekli yeni satışlar eklenecek, eklenecek. Bu durumda en mantıklısı bir linked list olacak.
+
+102
+00:14:38,563 --> 00:14:49,563
+Ve bu noktada da ikinci sınıfta yine Nesne Yenem'de generic linked list de görmüştünüz. Bu bağlamda ben...
+
+103
+00:14:50,131 --> 00:15:09,071
+Satışlar, satışlar diye. Bu arada şunun için de özür dilerim. Ben geçen hafta bir diş operasyonu geçirdim. O yüzden şu an konuşma performansım zaten çok iyi değildir. Şu an ondan da kötü. Sayılar, şeyler falan karışabiliriz. Anlamazsanız lütfen son.
+
+104
+00:15:10,691 --> 00:15:14,971
+Satışlar adı işte şey, Linked List.
+
+105
+00:15:17,971 --> 00:15:41,692
+Ve satış türünden nesneler içecek bir Linked List kullanma en doğrusu olacak. En rahatı olacak. Yoksa biliyorsunuz dizlerle uğraştığımız zaman dizde yağ kalmıyor, genişletiyor. Bir dolu angarya iş. Burası bizim için en mantıklı yapı Linked List kullanmak olacaktır.
+
+106
+00:15:42,196 --> 00:15:56,316
+Peki, şimdi kasadan şöbeye giden okumuzun üyesini yazdık, kasadan satışa gideni yazdık, kasadan kasiyere yazdık. Tamam, yani üye alanlarımızın ayrıntıları bunlar. Şimdi unutmadan metotlarımızı yapmaya başlayalım.
+
+107
+00:15:57,524 --> 00:16:23,063
+Login metodumuz var. Ondan sonra açıdan. Şimdi biraz da hayal gücünüzü kullanacaksınız arkadaşlar. Login, diyelim ki login metodu ne olacak? Bir kullanıcı adı bir de parola alacak. Eğer işlem başarıysa true döndürecek. Aksi taktirde false döndürecek. Bir düşünce tarzı ilk aklımıza geldi. O yüzden useless. Her da biraz kısa olalım.
+
+108
+00:16:23,375 --> 00:16:28,995
+User name, password, ikisi de string.
+
+109
+00:16:29,995 --> 00:16:39,495
+Tabii açık metin yollamayacağız, hash code falan ama ne dersimiz veri güvenliği, ne de dersimiz sistem tasarımı üstüne düşünmek.
+
+110
+00:16:39,495 --> 00:16:45,936
+O yüzden şöyle bir şey yeterli olacaktır bu aşamada demek istiyorum. Peki.
+
+111
+00:16:47,443 --> 00:17:14,503
+Kasiyer'in login olması için böyle bir şey yazdık. Başka ne ihtiyaçlarımız var, ne olacak, ne bitecek? Bu arada kullanım sınavı resumetimizi açayım. Şemalarımı nasıl olsa wilde tiyanlarda açabildim. Yani state diagramımız da burada, activity diagramımız da burada. O zaman ben bir yandan şu ders notlarında kullanım sınavı resumetini açayım. Oradan şey edelim bakalım.
+
+112
+00:17:16,660 --> 00:17:19,759
+Şöyle yukarıdan bir yerden.
+
+113
+00:17:32,339 --> 00:17:54,900
+Evet, şimdi ana öküde kalalım. Ön koşullarda kimlik doğramayı yazdık zaten. Son koşullardaki her şey, şu ödemin tahsildi, mesafiş yazılması bunlar zaten ana senaryo metinlerinde de yazıyor veya alternatif senaryolarda yazıyor. O yüzden şu noktadan itibaren bu da ekranımızda olsun. Buna göre başlayalım.
+
+114
+00:17:55,667 --> 00:18:04,207
+İster buradan yola çıkabiliriz, ister activity diagramdan çıkabiliriz. Zaten activity diagramı bu kullanım servisinin metni üzerinden konuşturmuştuk zaten.
+
+115
+00:18:04,827 --> 00:18:11,967
+Kasiyerin yeni bir satış işlemini başlatması söz konusu. Buradan da baktığımızda yine müşterinin kasaya gelmesi söz konusu.
+
+116
+00:18:12,127 --> 00:18:21,427
+İsterseniz wild to yamalda kalalım, yani şeyde kalalım, activity diagramda kalalım ama sonra bir şey unutmuş muyuz diye belki metnine bakarız.
+
+117
+00:18:21,743 --> 00:18:33,923
+Müşteri kasaya geliyor. Tamam bu kasada yapılacak fiziksel bir şey değil. Ama kasiyerin yeni bir satış başlatması söz konusu. Tamam güzel. O zaman bir satış başlat metodu ekliyorum buna.
+
+118
+00:18:38,067 --> 00:18:54,228
+Şimdi bu metodun herhangi bir parametre almasına gerek var mı? Bence hiç yok. Çünkü işte yeni bir satış nesnesi oluşturacağım kendi içerisinde, bu metodun içerisinde. İşte birazdan ekleriz bir constructiz. Ondan sonra ona göre oluşturur.
+
+119
+00:18:57,107 --> 00:19:22,627
+Peki, her bir satışın özel bir ID'sinin olması falan gerekiyor mu? Gerekmiyor şeylere baktığımızda. Yani sonraki gereksinimlerimize baktığımızda gerekmiyor. Ki, burada bu bağlamda satış için default constructor yeterli olabilecek mi gözüküyor? Satışta şimdi tarih saklanacak tabii ki. Satışın oluşturduğu tarih.
+
+120
+00:19:24,819 --> 00:19:38,819
+Bu satış nesnesi oluşturulduğu anda, ki Java'da öyle, diğer dillerde de herhalde öyledir, bir date nesnesi oluşturulduğumuzda, ilklendirdiğinizde zaten o Constructor metodunun çağrıldığı...
+
+121
+00:19:39,680 --> 00:19:53,380
+Gün ve saat saliniğe neyse orayı gösteriyor zaten. O yüzden satış sınıfına, date vermeye de gerek yok. Bunu kasada yapabiliriz.
+
+122
+00:19:53,380 --> 00:20:00,000
+Yani satış başlat metodunun içerisinde de date oluşturup satışa verebiliriz.
+
+123
+00:20:00,000 --> 00:20:11,240
+Veya bu işi satışın kendi içerisinde yapması daha uygun olabilir. Bu anlamda ben sadece satış başlat şeklinde bir metodumu çağırıyorum.
+
+124
+00:20:11,240 --> 00:20:21,240
+Şimdi bu noktada da acaba işlem başarılı mı, başarısız mı diye bir bulundaya döndürsek mi, döndürmesek mi?
+
+125
+00:20:22,900 --> 00:20:41,040
+Bu bir noktada size kalmış. Çünkü satış başladığı zaman acaba kasa düzeyinde, arka planda, sistem düzeyinde ne oluyor? Bir proses sürekli çalışıyor da, ne bileyim işte klavyeden gelen olayları bekliyor da birili bir iş.
+
+126
+00:20:41,587 --> 00:20:56,807
+Post'taki belirli bir özatışa basıldığında bir şey mi yapılıyor? Arka plan öyle mi? Ya da satış bu iş tamamen satış başlat yeni bir thread oluşturuyor, yeni bir thread de koşmaya başlıyor ve bütün her şeyi bu mu kontrol ediyor?
+
+127
+00:20:57,307 --> 00:21:05,347
+Farklı yaklaşımlar söz konusu olabilir. O yüzden bu noktada bir burin ritörüne gerek var mı yok mu bilemiyorum.
+
+128
+00:21:09,587 --> 00:21:16,407
+Parametresiz ve boş bırakıyorum. Daha sonra yapacağım şeylerde zaten çeşitli parametreler gerekecek.
+
+129
+00:21:16,784 --> 00:21:41,604
+Bu ayrıntıyı sistem düzeyinde ayrıntının ne olduğunu karar vererek de bir activity diagram, bir sequence diagramda falan çizeriz, ederiz. Ama bu noktada o kadar ayrıntılandırmaya gerek yok diye düşünüyorum. O yüzden satış başlatma işini düz bir metot ile kodlamak yeterli olacaktır diye düşünüyorum.
+
+130
+00:21:42,771 --> 00:21:44,631
+Sonra ne yapıyormuşuz?
+
+131
+00:21:47,311 --> 00:21:51,891
+Kasiyen ürün barkodu girecek. Tamam, barkod gir diye bir metot söz konusu.
+
+132
+00:21:58,708 --> 00:22:12,428
+Şimdi, giren barcode bir veri girişi olacak, bir parametre ile bu metoda aktarılmalı. O zaman barcode 2.3. string diyorum.
+
+133
+00:22:12,428 --> 00:22:18,428
+Şimdi barcode girildi. Ondan sonra cemaat.
+
+134
+00:22:21,395 --> 00:22:28,476
+Şimdi bunu bu kadar boş bırakamam diye düşünüyorum. Çünkü işler kafamda ya benim bir noktaya kadar zaten.
+
+135
+00:22:29,115 --> 00:22:34,855
+Barkot geçerliyse sistem satış maddesi oluşturur şeklinde şeman var.
+
+136
+00:22:37,971 --> 00:22:56,112
+Barkodu girince sistemli satış kanalı maddesi oluşturur. Bu kalem maddede ürünün tanımı, fiyatı ve toplam bedel yer alır. E şimdi demek oluyor ki ben barkodun girdiğimde o barkodla ilişkili ürünün ne olduğunun bir şekilde bulunabilmesi lazım.
+
+137
+00:22:56,627 --> 00:23:10,667
+Şimdi bu nokta şu ana kadarki metinlerde pek yer almamış. Neden? Şu ana kadar yaptığımız şeyler daha müşteri odaklıydı. Onun gereksinimleri ve nasıl yapılması istediğine odaklıydı.
+
+138
+00:23:10,667 --> 00:23:24,627
+Fakat şimdi gerçeklemeye geldiğimizde nesne arası ilişkileri düşündüğümüzde birinci anahtar tekir tanımlayıcı ile ona karşı gelen esas nesne gibi ilişkileri düşündüğümüzde.
+
+139
+00:23:24,627 --> 00:23:48,547
+Artık bu noktalar devreye girmeye başlıyor. Bu anlamda şimdi tasarımımıza dönelim ve burada barcode gear metodunun bize parametre olarak bir barcode alması ve geri dönüşünde de ilgili ürünü geri döndürmesi istenecek.
+
+140
+00:23:52,627 --> 00:24:08,207
+Yolu burası. O zaman Barkot-Gir metodu bana bir ürün nesmesi döndürecek. Peki, bu metot Barkot ile ürün arasındaki ilişkiyi nereden bulacak, nasıl sorgulayacak, nereden sorgulayacak?
+
+141
+00:24:08,531 --> 00:24:20,571
+Bu noktada da en uygun yer, bakın zaten şubede satılan ürünler olduğundan bahsetmişiz. Şubelik satılan bütün ürünlerin listesi bu şube sınıfında yer alacak.
+
+142
+00:24:20,880 --> 00:24:48,820
+Ve burada da, şimdi o zaman bu şubeye gelelim. Bu şubeden ürüne doğru olan bire-yıldız ilişkisini neyle tutalım, saklayalım. Şimdi burada da gördüğünüz üzere bizim bar koddan ürüne erişmemiz gerekiyor. Bar kod tekrüt anlayışı üstünden ilgili ürüne erişmemiz gerekiyor. Burada bütün kalitleri tek tek arayıp sığırı arama değil de rastgele doğrudan erişim gerekmekte. Bu bağlamda.
+
+143
+00:24:48,880 --> 00:25:00,200
+Ben şubiyle ürün arasındaki ilişkiyi şöyle ürün, bakayım ne? Çıkçık olarak daha kullanmıyorum değil mi? Peki, ürünler de diyeceğim o zaman.
+
+144
+00:25:00,200 --> 00:25:06,620
+Şey ama küçük bir ürünler. Ürünler, iki nokta üst üste.
+
+145
+00:25:08,307 --> 00:25:17,947
+Java'da bu tip veri yapılarından HashMap ve HashTable olduğunu görmüştük.
+
+146
+00:25:20,592 --> 00:25:41,792
+şeydi, multi-tradit değildi. Multi-tradit olmasına gerek yok. Ve zaten o kadar da düşünmüyoruz bu arada zaten. Sistem katmanı düşünmüyoruz. Multi-tradit mi olacak, tradit mi olacak yoksa ona göre kararlar vermeniz gerekecek elbette. Ama probleme ona odaklanalım. Ben burada HashMap.
+
+147
+00:25:42,579 --> 00:26:02,079
+Ve göstermeniz nasıldı? KeyValue şeklindeydi. Key'imiz barcode, onun türü string. Value'umuz ise bu ürünlerin kendileri, value ise ürün. Bu şekilde biz map yapısıyla, tablo yapısıyla saklayacağız şubedeki ürünleri.
+
+148
+00:26:02,079 --> 00:26:10,199
+Ve kasa ait olduğu şube nesnesine soracak. İlişkili olduğu şube nesnesine soracak. Benim şöyle bir barcode var.
+
+149
+00:26:10,579 --> 00:26:17,499
+Ben bu ürün neymiş, onun bilgisini bana geri döndüğüz gibisinden bir hizmetine ihtiyaç duyacak.
+
+150
+00:26:17,499 --> 00:26:37,059
+O yüzden buraya mesela nedir? Ürün bul diyeyim mesela metodun adına. Parametri olarak barcode 2.3.3.0 alacak. Geriye de o ilgili ürün nesnesi neyse onu döndürecek şekilde böyle bir hizmet metoduna ihtiyacım olacak.
+
+151
+00:26:38,996 --> 00:26:41,336
+Yani.
+
+152
+00:26:42,324 --> 00:26:51,784
+Epey bir şey yaptık. İsterseniz bu söylediğimiz ayrıntılar unutulmasın diye bir de sequence diagram çizelim bununla ilgili yavaş yavaş.
+
+153
+00:26:52,124 --> 00:27:04,683
+Hem bir yandan tasarımımızı yaptıkça asıl bir şeması üzerinden bir yandan bunun ayrıntılarının da bu ana hatlarıyla nasıl olmasına karar verdiğimizi de unutmamak için bir sequence diagramla çizelim.
+
+154
+00:27:05,084 --> 00:27:09,524
+Öbür türlü sağa sola yönelik notları düşe düşe o nottan geçilmeyecek bu şema.
+
+155
+00:27:10,324 --> 00:27:27,824
+Bir tane de sequence diagram oluşturalım. Şimdi bir tane şu kasa nesnimizi koyalım. Ondan sonra onun ilginç kili olduğu şubesini koyalım.
+
+156
+00:27:27,824 --> 00:27:33,403
+Bir yaranan bir şey demiş miydik? Demiştik. Şube demiştik. Şu şekilde.
+
+157
+00:27:34,228 --> 00:27:42,688
+Ondan sonuçta. Şimdi şey üstüne konuşuyoruz ya, barcodegears. Bir dakika ne demiştik, doğru bir şey söyleyelim.
+
+158
+00:27:45,908 --> 00:27:52,048
+Evet, barcodegears metodu üstüne konuşuyoruz. Bunun barcodegearsini bir yapalım bakalım.
+
+159
+00:27:52,048 --> 00:28:01,408
+Şimdi, gel şöyle bir. Bir activation var şuraya lazım.
+
+160
+00:28:06,612 --> 00:28:31,771
+Nereye dedik? Ürün giz, barcode, bu metot, buna bir barcode verildi. Bu durumda nasıl hareket edecek? Bunu konuştuk, onunla ilgili metotları yazdık. Peki o zaman ürün girildiğinde önce kasa ait olduğu şubeye, şube nesnesine, üye alınmadığı şube.
+
+161
+00:28:32,276 --> 00:28:37,215
+Ne demiştik bu arada? Irın bul şeyini.
+
+162
+00:28:37,215 --> 00:28:39,135
+Evet onu çağıracak.
+
+163
+00:28:40,375 --> 00:28:41,155
+Kontrol C.
+
+164
+00:28:43,976 --> 00:28:45,556
+Şuraya kontrol V.
+
+165
+00:28:46,387 --> 00:29:02,487
+Şimdi, şuraya tekrar barcode string dememe gerek yok. Çünkü zaten ürün girme tutuna o barcode string türünden barcode geldiğini biliyoruz. O gelen barcode değeri neyse onu otomatik olarak soracak.
+
+166
+00:29:02,487 --> 00:29:14,387
+O yüzden böyle yazsak yeter ama yazmış sayıda olurdu çok da dertli ama şöyle, daha uygun olduğunu düşündüm şu an. Ürün bu metodu çağıracak ve ilgili şu...
+
+167
+00:29:14,387 --> 00:29:18,267
+O şube de ilgili ürün nesnesini geri döndürecek.
+
+168
+00:29:18,267 --> 00:29:25,847
+Sonra biz büyük ihtimalle bu ürünün fiyatını öğreneceğiz, şu şunu öğreneceğiz falan.
+
+169
+00:29:26,327 --> 00:29:35,647
+O yüzden madem ürün adlı bir nesne oluşturdu, geri döndürürdü, şimdiden onun nesnesini de şuraya göstermekte yarar var diye düşünüyorum.
+
+170
+00:29:36,948 --> 00:29:45,068
+Yani ona bir metot şahsı gösteririz, göstermeyiz. Günün sonunda o da sahi de göstermezsek sileriz. Şimdilik şu şöyle bir dulsun bir kenar.
+
+171
+00:29:48,531 --> 00:30:00,000
+Peki, şeyde anlaştık ümit ediyorum. Kasada barkod gelildiğinde o barkodun ilgili ürünle ilişkislendirmenin nasıl?
+
+172
+00:30:00,000 --> 00:30:19,960
+Nasıl yapılacağının altyapısını sağlam bir şekilde oturttuğumuzu düşünüyorum. Oradan ne var mı diyelim bakalım. Aynı şey de unutmayalım. O kadar şey dedik, bir satış oluşturulacak dedik. Ondan sonra satışa satış kalemi oluşturulacak dedik. Onu da unutmayalım şimdi. Peki.
+
+173
+00:30:24,115 --> 00:30:42,795
+Şöyle bir düşüncem var. Şimdi satışlar Linked List içerisinde saklanacak ama bu Linked List'in içerisinde bence tamamlanan satışlar saklanmış olsun. O anda aktif süregilen satış için ayrı bir nesne olsun diye istiyorum.
+
+174
+00:30:47,443 --> 00:31:02,203
+Esnek çözüm olacak. Eğer arka planda işte mesela her şey satış başlat metodunun içerisinde gerçekleşiyorsa o zaman o metodun içerisinde bir mesle tanımlamak da yeterli olabilir.
+
+175
+00:31:04,468 --> 00:31:25,107
+Bunu üye alan olarak koymuşsak bir kere, ister metot işi, ister metot işi hiç fark etmez. Başka metotlar içinden de erişebiliriz. O yüzden o daha esnek bir şey olacak. Bu nedenle ben şuraya bir aktif satış diyeyim. Tabii şimdi OSEAN'in büyük harfi olması lazım.
+
+176
+00:31:26,099 --> 00:31:34,419
+Aktif satış diye bir nesne koyup satışlarından bu bir söz konusu olsun.
+
+177
+00:31:34,419 --> 00:31:43,159
+O zaman yeni bir satış başlatma olayını da şuraya ilgili madem aktif satış deniyorum ben olarak.
+
+178
+00:31:45,556 --> 00:32:03,956
+Bunun da satış fırından olduğu belli. Adında zaten sınıf adı geçiyor. O yüzden iki nokta üst üste satış dememe gerek yok. Hem zaten ders sağlığı uzun uzun olunca şu şemaya da sığınıyor. O yüzden şöyle yapmam yeterli. Ama şimdi sıralamayı da unutmayalım.
+
+179
+00:32:04,336 --> 00:32:13,395
+Aktiviti diagramımızda da, özür dilerim, şurada, aktiviti diagramımızda ne diyordu? Önce kasiyer yeni satış başlatıyor, ondan sonra ürün barkodu giriliyor.
+
+180
+00:32:13,556 --> 00:32:28,716
+O yüzden aslında atlamış oldum. Hemen şu aktif satışı şuraya, hatta şuraya koyayım. Ve önce New ile şu ilklendirilsin. Ondan sonra geri kalan şeyler olacak.
+
+181
+00:32:29,104 --> 00:32:45,484
+Bakın bunu, UML yapabilmeyin bir avantajı, unuttuğum şeyi sonradan ekleyebiliyorum. Yeter ki ilgili yerden çizgiyi çekeyim. Belki başka bir grafik aracıyla bu kadar rahat olamayabilirdim belki. Bilemiyorum. Neyse.
+
+182
+00:32:45,920 --> 00:33:01,400
+Şimdi bu aktif satış nesnesi ilklendirecek, yani constructor çağıracak ve default constructor da yeterli olur demiştik. İlgili datemate kendisinin içerisinde zaten verir bunu. Haa ama onu da gösterelim. Tamam, onu da gösterelim.
+
+183
+00:33:04,500 --> 00:33:22,139
+Önemli çünkü ne demiş insana? Tarih. Peki, o zaman şöyle bir şey yapacağım. O tarih nesnesini ayrı bir nesne olarak şuraya göstermeme gerek yok. Çünkü daha sonra bunu ayrıca sorgulamayacağız. Yani şu günden önce mi, şu günden sonra mı falan hiç gerek yok.
+
+184
+00:33:32,500 --> 00:33:38,559
+yeni ilklendirildiğini göstermek yararlı olur. Tamam mı?
+
+185
+00:33:38,559 --> 00:33:44,579
+İşte sözle söylediğimiz ayrıntı söz uçar, yazı kalır. İşte burada kendini buldu.
+
+186
+00:33:46,559 --> 00:33:58,099
+Ay pardon, pardon. Bu arada bir yanlış yaptım. Bir dakika. Casier yeni satış başlattı. Ondan sonra ürün barkotu girer. Peki.
+
+187
+00:34:00,307 --> 00:34:24,007
+Önce satış başlat. Bu işler satış başlatın içerisinde olacak. Ben ürün girme şeyine odaklandım. Ürün girin içerisinde değil bu, dışında. Çok özür dilerim. Şöyle yapacağım o zaman. Şunu da bir sil. Yani şunu ürün girin dışına almam lazım.
+
+188
+00:34:26,132 --> 00:34:38,231
+Şöyle bir komplesif, evet. Ondan sonra cemaat. Peki, acaba şuradan şuraya bir şey çeksem olur mu? Olabilir mi? Bakalım. Her şeyden önce satış başlatılacak.
+
+189
+00:34:38,231 --> 00:34:48,971
+Şuradan kasaya. Yok, iyice karıştı. Peki, tamam. Vazgeçiyorum. Şunu sil. Artış satışı şimdilik.
+
+190
+00:34:49,748 --> 00:35:03,547
+Pardon, select. Şöyle, şöyle. Şu şeyi bir tamamlatayım da. Ürün gir bitmiş diyelim ki. Ondan sonra şu yeni satış başlatmak söz konusu olacak.
+
+191
+00:35:04,068 --> 00:35:13,708
+Ve onu da kasa başlatacak ve kasa aktif satış nesnesini bir şeyler yaptıracak. O yüzden şöyle bir yapalım şimdi. Olmadı.
+
+192
+00:35:17,427 --> 00:35:26,367
+Şuraya koysam, active action var ve ona bir şardada bulunsam bakalım olacak mı? Oluyor. Tamam. Kurtartık diyelim.
+
+193
+00:35:26,367 --> 00:35:37,127
+Şöyle şöyle. Tamam. Şimdi satış başlattığınca satış nesnesi oluşturuluyordu. Özür dilerim. Neydi? Satış başlat metod da satış başlat. Güzel.
+
+194
+00:35:43,347 --> 00:36:04,188
+Bunun içerisinde artık şu aktif satış nesnesi ilgilenecek. Ben şunu şöyle çekersem o kendini otomatik yukarı aldı. Şöyle bakalım. Aktif satış ilgilenecek. Az önceki şeyi buraya taşımış oluyorum şimdi. Tekrar çiziyorum gerçi olasayla ama ondan sonra şu da.
+
+195
+00:36:07,827 --> 00:36:13,387
+Ne demiştik, o rüyalana tarih.
+
+196
+00:36:18,452 --> 00:36:19,552
+Tarih eşittir.
+
+197
+00:36:23,052 --> 00:36:27,052
+Peki, güzel. O kusumunu yaptık.
+
+198
+00:36:27,539 --> 00:36:41,119
+Kasa satış başlayan metodu bir yeni satış nesnesini oluşturuyor. O satış nesnesi de kendi içerisinde tarifi ilgilendiriyor. Ondan sonra bu işler bitiyor. Güzel. Sonra geldik ürün girelim. Bakalım. Ürün girelim.
+
+199
+00:36:41,119 --> 00:36:54,840
+Tekrar hatırlayalım. Barcode geliyor. O ilgili barcode'un hangi ürüne denk geldiğini şube üzerinden geri döndürüyor. Daha yapacak şeyimiz var şimdi. Şunu bir oku bir sileyim. Bu daha bitmedi.
+
+200
+00:36:55,891 --> 00:37:16,611
+Ürün girme iş daha bitmedi galiba. Bakalım. Peki. Bağkot geçerliyse satış maddesi oluşturulur diyor. Yani sistem dediği kasa oluşturacak aslında. Yeni bir satış kalemi oluştur diyecek ve bunu ilgili satışa verecek diyelim ki.
+
+201
+00:37:20,532 --> 00:37:45,192
+Kasa satıştan bir satış kalemi maddesi oluşturmasını isteyebilir. Bu da iki yaklaşımda söz konusu olabilir. Bu satışın içerisindeki satış kaleminin ilişkilendirilmesi olayını, acaba kasanın kendisi bir satış kalemi mi oluşturup satışa versin ya da satış mı oluştursun bunu?
+
+202
+00:37:45,523 --> 00:38:07,703
+Şimdi aslında burada en doğru karar, herhangi bir iş yapılacaksa o işle ilgili veri neredeyse orada yapılmasıdır. Ama nadiren bir veri, bir iş için gerekli bütün veri nadiren hepsi birden bir noktada olmaktadır. Bir kısmı bir yerde, bir kısmı bir yerde olabilmektedir.
+
+203
+00:38:09,619 --> 00:38:18,500
+Keza şimdi mesela bu satış işleminin ilk satış kalemindeki ilgili ürünün ne olduğunu kasa öğrendi şimdi şubeden.
+
+204
+00:38:18,500 --> 00:38:32,559
+Ama satış kalemlerinin kendisini saklayacak olan da satış nesnesi aslında. O zaman ne yapalım? Kasa satışa yeni kalemle eklenecek ürünü versin.
+
+205
+00:38:32,896 --> 00:38:38,236
+Satış kariminin kendisini satış nesnesi oluşturup bu ilgili ürünü ilişkilendirsin.
+
+206
+00:38:38,956 --> 00:38:45,376
+En mantıklı ve nesneye yönelimin esas yapmamızı istediği şey bu.
+
+207
+00:38:45,376 --> 00:38:54,376
+O zaman, şimdi bu satış sınıfına bir metot...
+
+208
+00:38:54,643 --> 00:39:12,823
+Kalem oluştur diyeyim. Satış kalemi diye satış kalemi oluştur değil mi? Kalem oluştur diyeyim. Yeterince anlaşılıyor diye düşünüyorum. Ve hangi ürün? İşte kasa bildiği bulduğu ürünü bu satışa versin.
+
+209
+00:39:20,211 --> 00:39:24,432
+Ve bu noktada, tabi şunları şöyle biraz şekelim.
+
+210
+00:39:28,340 --> 00:39:48,760
+Hemen bunu şimdi bir çizelim. Kalem oluşturma işini. Diyeceğim ki, şimdi aktif satış burada tamam. Şu bedal ürünü buldu. Şimdi bu aktif satışı az önce oluşturduğumuz metodunu çağıracak. Ne dedik onun adına? Kalem oluştur dedik. Tamam.
+
+211
+00:39:55,380 --> 00:40:06,519
+Şuraya yapıştır. Şimdi tabii ki o ilgili ürünü buldu. O yüzden bulduğu ürün nesnesini buna verecek şeklinde söylesem. En doğrusu uçak.
+
+212
+00:40:08,340 --> 00:40:14,259
+Select A. Evet. Fena bir yerlere varıyoruz diyelim.
+
+213
+00:40:17,844 --> 00:40:33,764
+Daha iyi olacak. Peki, şimdi kasa sürekli aktif satışa kalem oluşturma durumunu çağırarak ürünü verdi buna. Bu da şimdi ilgili satış kalemini oluşturacak. Hemen bir tane şu nesneyi koyalım.
+
+214
+00:40:36,244 --> 00:40:43,764
+Bir tane yeni bir satış kalemi. Adı önemli değil ama satış kalemi türünden.
+
+215
+00:40:44,403 --> 00:40:46,763
+Şu K harfini de büyük yaptık.
+
+216
+00:40:48,884 --> 00:40:51,683
+Ki onu da aslında ne oldu? Belli.
+
+217
+00:40:51,803 --> 00:40:54,603
+Yalan da aktif kalem dedik ya, o da belli aslında.
+
+218
+00:40:55,283 --> 00:40:57,083
+Yani adı belli, isterseniz yazalım.
+
+219
+00:40:57,643 --> 00:41:00,043
+Ne demiş ki? Aktif, yok pardon, satış belliydi.
+
+220
+00:41:00,403 --> 00:41:03,363
+Satış kalemi belli değildi. Bunun içerisinde oluşturacak.
+
+221
+00:41:03,363 --> 00:41:03,783
+Tamam.
+
+222
+00:41:08,211 --> 00:41:30,391
+Peki, tamam oluşturdu güzel. Fakat buradan adetli almak da söz konusu olabilirdi şimdi. Onu da bir düşünelim. Bir adet alınması ve en adet alınması. İkisi de ayrı ayrı kodlanması gerekebilir. Ama aslında düşündüğümde ayrı kodlanmasına da gerek yok.
+
+223
+00:41:30,900 --> 00:41:42,920
+Eğer bir kere okutulmuşsa aynı ürün, bip der geçer ve ondan bir adet alınır şeklinde geçer. O tamamen Casio'nun asıl kullandığına bakıyor.
+
+224
+00:41:43,080 --> 00:41:54,460
+Şimdi bu kalemi almak istiyorum. İki tane koymuşum. Casio'ya iki basıp bir kere okutup ikisini mi birden geçer? Yoksa iki kere yapmak mı daha kolayına geldi? Hiç fark etmez.
+
+225
+00:41:54,460 --> 00:41:58,900
+Burada daha özel durum en adet yani 2-3-4 adetli alınması.
+
+226
+00:41:58,900 --> 00:42:17,320
+Bir adet alınmışsa da bir parametre seyredeceksiniz. Odur biter. Bu nedenle ben Barcode Gear metronuna aynı zamanda bu üründen kaç adet satılacağı bilgisinin de hemen o aşamada parametre olarak verilmesinin daha avantajlı olacağını düşünüyorum.
+
+227
+00:42:20,083 --> 00:42:27,423
+Adet 2.3 int bilgisi de bu barkod gire parametre olarak verilmiş olacak.
+
+228
+00:42:27,923 --> 00:42:32,023
+Her an o sequence diagrama da bunu koyalım.
+
+229
+00:42:34,523 --> 00:42:37,963
+Adet 2.3 int ondan son açıma.
+
+230
+00:42:38,344 --> 00:42:47,423
+Ve aktif satışa da kalem oluştururken ürünle birlikte adet bilgisi de verilmiş olsun.
+
+231
+00:42:48,244 --> 00:42:53,324
+Bu bağlamda şuraya adeti de koyalım.
+
+232
+00:42:59,539 --> 00:43:10,260
+Böyle daha güzel olacak gibi bir skio. Ki oluşturul oluşturmaz da ilgili Linked List'e bunu atar. Ha Linked List'e de koyalım madem öyle.
+
+233
+00:43:10,260 --> 00:43:23,179
+Şuraya benzer şekilde kalemler diyeyim o da Linked List satış kalemi.
+
+234
+00:43:25,715 --> 00:43:31,255
+Artık Türk şıkartlar kullanmamı yazan gösteriyorum. Sınıf adlarını değiştirmeyeceğim. Varsın öyle kalsın da.
+
+235
+00:43:34,835 --> 00:43:59,675
+Evet, pekala. Güzel. O zaman şimdi bu satış kalemi oluşturmak için, kalem oluşturma metodu hangi üründen hangi adet oluyor? Hepsini biliyor ve ilgili nesni oluşturur. Tamam, satış kalemi de bakın hangi üründe ve kaç adet olduğu bilgisinin bilinmesine ihtiyacı var. O zaman Constructor'da bu gerekir. Satış kalemine hemen Constructor'ı ekliyorum.
+
+236
+00:44:07,668 --> 00:44:08,308
+Kalemi.
+
+237
+00:44:09,728 --> 00:44:10,988
+Nedir?
+
+238
+00:44:13,688 --> 00:44:20,148
+Ürün 2.3'te ürün ve azet 2.3'te int bilgileri.
+
+239
+00:44:20,868 --> 00:44:22,568
+Bunun konstantına verilmeli.
+
+240
+00:44:24,568 --> 00:44:25,148
+Güzel.
+
+241
+00:44:25,619 --> 00:44:35,179
+Gerekli bilgiler kalem oluşturma metoduna var. Satış kalemi listesi oluşturur ve kalemler listesine ekler. Evet, oldu bitti. Olay bu.
+
+242
+00:44:40,608 --> 00:45:08,008
+Evet, satış maddesi oluşturuyor. Evet, şimdi bütün alınacak diğer ürünler için bunlar yürütülüyor. Ondan sonucuma kasire toplamını bildirip ödeme ister diyeceğiz ama burada şeyi hatırladım şimdi tabii ki. Herhangi bir anda alışverişten ürün çıkartabilmeyi ister şeyimiz vardı hatırlarsınız. Alternatif senaryoda. Ve hem geçersiz barkot olayı da vardı gerçi.
+
+243
+00:45:08,608 --> 00:45:20,668
+Geçer spahakodda şey ne, şu B ilgili ürünü bulamazsa, NAL döndürecek, kasada o durumda ilgili bir NAL kontrolü yapar.
+
+244
+00:45:20,668 --> 00:45:23,648
+Ha, onu da yazalım bir yere. Bu arada.
+
+245
+00:45:25,648 --> 00:45:46,748
+Evet, ürün bu, barcode, ürün geldi ama eğer şey ise, null ise ürün, o zaman uyarı ver, şey yapacak ve akış sona erecek. Ama şimdi bu sequence diagramda akışın bir şekilde sona ermesini göstermek biraz sıkıntılı.
+
+246
+00:45:47,048 --> 00:45:53,648
+Aktivite diagramı olsa senaryo sonuna ok çiziyorsunuz ama burada pek öyle bir şey yok. O yüzden...
+
+247
+00:45:53,648 --> 00:45:55,548
+Onu şimdilik göstermiyorum arkadaşlar.
+
+248
+00:45:55,888 --> 00:45:58,668
+Mal kontrolü aklımızda kalsın bir yerde.
+
+249
+00:46:00,608 --> 00:46:02,988
+Ya da en azından bir tane not düşelim şimdi şuraya.
+
+250
+00:46:02,988 --> 00:46:04,008
+Şu noktada.
+
+251
+00:46:09,715 --> 00:46:31,715
+Şöyle bir şey yapalım ben yapmak istiyorum zayağı. Eğer ürün nal ise bu durumda sinyal ver, uyarı ver gibi kendisinin uyarı ver metodu çağrılacak gibisinden biz orayı tutamak istemiyorduk.
+
+252
+00:46:34,996 --> 00:46:39,076
+Diğerleri şöyle bir ilişkilendirelim isterseniz.
+
+253
+00:46:41,156 --> 00:46:44,256
+Şu noktada ya da şuraya olmadı.
+
+254
+00:46:45,156 --> 00:46:46,796
+Şuraya yok yine olmadı.
+
+255
+00:46:48,356 --> 00:46:51,856
+Hayret, şöyle bir şey miyim? Ancak nesneyi ilişkilendiremiyorum. Neyse.
+
+256
+00:46:51,856 --> 00:46:52,816
+Peki.
+
+257
+00:46:56,148 --> 00:47:08,728
+Ben onu ne yapayım? İlişkilendirmeden şurada, ha, şu bir yere gelmiş ama ben görememişim. Tamam. O zaman şöyle şey edebilirim ben bunu. Tamam, iyi. Diyelim.
+
+258
+00:47:11,108 --> 00:47:19,068
+Hatta aslında tam şu noktaya, ürün geldi ama naresli o zaman uyarılar. Bir dakika.
+
+259
+00:47:19,603 --> 00:47:30,364
+Kendi kendisinin metot çağrımı tamam gösteririm de ama ondan sonra o durumda sistem, akış sona evvel ve return edecek o aynısını yazmam lazım.
+
+260
+00:47:34,364 --> 00:47:40,864
+Ama şu iç activation var tam şu araya oturtmam da zor ya şunu sileceğim. Neyse böyle kalsın.
+
+261
+00:47:45,423 --> 00:47:46,364
+Uyarılar ve...
+
+262
+00:47:47,923 --> 00:47:49,103
+Return diyeyim.
+
+263
+00:47:50,384 --> 00:47:51,503
+Bu şekilde yazıyor.
+
+264
+00:47:54,843 --> 00:47:55,003
+Ve
+
+265
+00:47:55,003 --> 00:48:22,288
+ve
+
+266
+00:48:02,516 --> 00:48:22,596
+Evet, böyle uygundur diye düşünüyorum. Nerede kalmıştık? O kadar adet ürünlük satış kalemi oluşturacak, aktif satışa verilecek. Tamam, o şimdi ilgili satış kalemi nesnesini bunun içerisinde oluşturacak dedik.
+
+267
+00:48:26,771 --> 00:48:30,891
+Kendisine gelen üniversite bilgilerini konuşursuna verecek.
+
+268
+00:48:50,579 --> 00:48:53,320
+Evet, tamam. Şöyle daha iyi okunabiliyor diyebilirim.
+
+269
+00:48:54,019 --> 00:48:59,099
+Peki, satış kalemini oluşturdu ilgili ürünün ilgili adet olaraktan.
+
+270
+00:48:59,099 --> 00:49:02,239
+Artık bu metotların bitti diyelim.
+
+271
+00:49:05,079 --> 00:49:07,380
+Ve geri dönelim şu aktivitimize.
+
+272
+00:49:09,139 --> 00:49:12,320
+Ürün silme olacaktı herhangi bir anda.
+
+273
+00:49:13,440 --> 00:49:18,099
+Onu da nasıl göstersek şimdi sequencede.
+
+274
+00:49:22,260 --> 00:49:48,680
+Göstermeksi konularını ayrı bir şemal ile gösterebiliriz arkadaşlar. Her şeyi yani bir senaryoyu hem ana senaryosuyla hem bütün alternatifleri tek bir şamada tek bir sikriştireklama göstermeye çalışmakta bir şey yok arkadaşlar, bir anlam yok. O yüzden onu başka şamaya bırakalım. Belki koyabilirim diye düşünüyorum ama yok pek oturmayacak oraya. O yüzden ana senaryo açısından gidelim.
+
+275
+00:49:49,235 --> 00:49:50,255
+Sakıncası yok.
+
+276
+00:49:52,775 --> 00:49:59,735
+Peki, o zaman bu ana senaryonun en önemli işlerinden birini yaptık.
+
+277
+00:49:59,875 --> 00:50:02,695
+Barkot okutup satışa bir ürünleri eklemek işini.
+
+278
+00:50:03,315 --> 00:50:12,135
+O yüzden artık benim bu ÜrünGir metoduyla ilgili daha başka düşüneceğim bir şey yok kanısındayım.
+
+279
+00:50:12,596 --> 00:50:23,956
+Bu bağlamda o zaman artık şu Barcode Gives ile ilgili ve onun içerisinde yapmam gereken diğer bütün işlerle ilgili metotlarımı da tanımladım.
+
+280
+00:50:24,396 --> 00:50:35,155
+Siklus diagramda bunların ne sırayla çizleyeceğini de gösterdim bir yandan. Bence iyiyiz şu an. Şunu bir seyredeyim. Ondan sonra şunu da bir seyredeyim.
+
+281
+00:50:44,115 --> 00:50:50,875
+Ne diyoruz? Anlasın abi.
+
+282
+00:50:54,643 --> 00:51:07,003
+Ana senaryoyu çekmeye çalışıyoruz. Ana senaryonun tasarımı. Peki, bu kadar ben epey konuştum. Kafamıza yatmıyor.
+
+283
+00:51:07,523 --> 00:51:13,783
+Hocam şöyle olsaydı ne yapardı ne ederdi dediğiniz bir şey varsa bu noktalarda bir sorun bakalım.
+
+284
+00:51:21,108 --> 00:51:25,108
+Yoksa ben biraz bakındayım şimdi. Ne yapalım, ne ederim şimdi diye.
+
+285
+00:51:28,547 --> 00:51:33,427
+Toplam bildirme falan. Evet, bu ara nispeten straightforward. Yaparız bunları.
+
+286
+00:51:35,807 --> 00:51:43,427
+Yapalım o zaman şimdi. Peki, toplam bildirme. Güzel. Toplam bu. Öyle bir metot koyalım.
+
+287
+00:51:49,844 --> 00:51:56,223
+Toplam hesapla. Bunun herhangi bir parametre almasına kesinlikle gerek yok.
+
+288
+00:52:00,340 --> 00:52:16,380
+Zaten ilgili ürünler, Barkot girme metodu sayesinde satışa aktarırdı. O da satış kalemlerine oluşturdu, etti falan. Eşilerin başlatılması için kasanın toplam hesapla metodu olacak.
+
+289
+00:52:16,380 --> 00:52:28,060
+Tabi bu toplamı da hesaplayıp, bize bir fiyat olarak geri döndürecek elbette. Onu da bir şey unutmayalım, göstermeyi unutmayalım. Ama tabi ki esas işlemi yapacak olan satış. Çünkü
+
+290
+00:52:28,340 --> 00:52:34,320
+Satış kalemleri satışla ilişkili o kümülatif toplamı hesaplayacak ve kasaya bildirecek.
+
+291
+00:52:34,420 --> 00:52:40,220
+Ama kasanın da satışı hadi senden artık toplam istiyorum diye metot çağırması gerekecek.
+
+292
+00:52:40,360 --> 00:52:44,880
+O yüzden şimdi hem kasada toplam hesapla adlı metodum olur.
+
+293
+00:52:44,880 --> 00:52:52,980
+Aynı metodu satış sınıfına da ekleyebilir. Metoda da aynı ama tabii ki gövde de çok çok farklı olacak.
+
+294
+00:52:53,876 --> 00:53:08,156
+Kasadaki metodun tek yaptığı şey, satışın toplam hesapla, yani daha doğrusu aktif satış nesnesinin toplam hesapla metodunu çağırmak ve onun geri döndürdüğü şey neyse, direkt o değeri geri döndürmek şeklinde yürüyecek.
+
+295
+00:53:19,123 --> 00:53:40,963
+Bu satış kaleminin bedelini soracak, her bir satış kalemini. Her bir satış kaleminde adet bilgisi onda var. Hangi ürünle ilişki olduğu bilgisi de var. Adet şartlı ürünün fiyatı şeklinde sayıyı geri döndürecek. O zaman her bir satış kaleminin kendi bedeli ara toplam diye adlandırılır terminolojide.
+
+296
+00:53:47,123 --> 00:53:56,163
+İlgili bütün ısıtış kalemleri için ara toplam hesapla metotlarını çağıracak.
+
+297
+00:53:58,003 --> 00:54:01,803
+Herce bildiğimiz kümülatif toplam işi yürütülecek.
+
+298
+00:54:02,563 --> 00:54:04,923
+Hani bildiğiniz diyoruz ama hadi şemayede dökelim.
+
+299
+00:54:06,867 --> 00:54:15,528
+Evet, şimdi uzayacak şama biraz ister istemez ama her bir için ayrı ayrı şamalar da yapabilirsiniz belki.
+
+300
+00:54:15,528 --> 00:54:19,588
+Ama bir kere başladık, bunun üstünde devam edelim.
+
+301
+00:54:20,048 --> 00:54:23,208
+Yoksa mesela işte, şöyle bir çizgi çekeyim şuradan.
+
+302
+00:54:23,907 --> 00:54:26,407
+Şuraya kadar olan kısmı bir şama.
+
+303
+00:54:27,027 --> 00:54:40,107
+Ondan sonra şuraya kadar olan kısmı ikinci ayrı sequence diagram ve birazdan yapacağım toplam hesaplar kısmını da üçüncü sequence diagram olarak da şey edebilirsiniz.
+
+304
+00:54:40,107 --> 00:54:45,147
+Yani ayrı ayrı diagramlar şeklinde de gösterebilirsiniz. Size kalmış artık.
+
+305
+00:54:48,563 --> 00:55:02,183
+Bu arada, nasıl hareket edelim şimdi? Eğer 12'de bölüm toplantısı var, ara verirsek sonra tekrar başladı etti şey olacak.
+
+306
+00:55:02,183 --> 00:55:15,943
+O zaman kaybı düşü biraz verimsiz kullanacağız. O yüzden ben aranı almayalım istiyorum. Şu işi de bir ekleyin. Ondan sonra sizin sorularınızla bugünü kapatırız diye düşünüyorum.
+
+307
+00:55:16,563 --> 00:55:39,783
+O yüzden biraz sabrınızı rica ediyorum. Bu işi de yapalım. Ondan sonra artık herhalde başka bir şey de kalmıyordu. Ödeme tahsi ve fiş bas. Bunlar tek tek birer birer metotlar ayrıntılarını vermeyeceğiz. Tahsin metodunu ayrıntılarını çizmeyeceğiz. Fiş vermenin ayrıntılarını çizmeyeceğiz. Sadece sınıf şamasına ilgili metotları ekleyeceğiz. O kadar. O yüzden başka bir şey kalmadı açıklarsanız.
+
+308
+00:55:41,460 --> 00:55:53,279
+Ne demiştik? Bunlar şimdi toplam hesapla. Peki. Şimdi bakın dikkat ederseniz her aşamada sequence derdown bir metot çağrısı eklemeden önce geri dönüp sınıf diyaklamına bakıyor.
+
+309
+00:55:53,279 --> 00:56:02,739
+Metodun adı tam olarak neydi diye. Orada bir tutarsızlık olmaması lazım. Ki ona göre kontrol edeceğiz ödevleri, projeleri. Peki şimdi.
+
+310
+00:56:03,699 --> 00:56:11,019
+Bunu söylerken de unuttum bu arada. Zaten bakmanın bir avantajı daha copy paste yapabilmek. Gelirdim bakarsınız.
+
+311
+00:56:11,019 --> 00:56:29,639
+Control C'den sonra şuraya da Control V. Evet, toplam hesaplar çağrılacak. Bu ne yapacaktı demiştik? Aktif satışın nasıl olacak? Ona toplam hesaplasını çağıracaktı. Aynı metodlarını kullanmıştık, hiçbir satınca yok.
+
+312
+00:56:31,092 --> 00:56:49,231
+O da kendisinin şu satış kalemlerine, hızası şurada, o da her bir satış kalemi için. Şimdi burada döngü söz konusu olacak. O yüzden yıldız yapmamız gerekiyor. Hatırlayın Nesne Yöneli'nin dersinden.
+
+313
+00:56:49,231 --> 00:56:54,852
+Ve neyini çağıracaktı? Ara toplam bir şey demiştik. Ara toplam hesapla.
+
+314
+00:56:57,456 --> 00:56:59,536
+Şu kadar seç, kontrol C.
+
+315
+00:57:03,096 --> 00:57:04,215
+Şuraya gel.
+
+316
+00:57:06,476 --> 00:57:12,296
+Evet, ara toplam hesaplatacak. Satış, her bir kendi listesindeki her bir satış kalemine.
+
+317
+00:57:12,916 --> 00:57:17,135
+Peki, o nasıl yapacak? İlgili ürünün, ki ürün de şurada duruyor.
+
+318
+00:57:19,251 --> 00:57:26,011
+Fiyatını alacak. Adet çarpı ürünün fiyatını geri döndük. O zaman yazalım.
+
+319
+00:57:30,411 --> 00:57:35,251
+Şimdi bir kere kendisinin şey ne? Get fiyat. Evet tamam peki.
+
+320
+00:57:37,091 --> 00:57:46,631
+Get fiyat. Ondan sonra açıma. Bu ilgili fiyat geri dönecek. Onu şuraya yazmam yararlı olur.
+
+321
+00:57:48,275 --> 00:58:04,096
+Ki bunun da adetle çarpılacağını göstermek için şu geri dönüş okumağı adet çarpı fiyat. Adet zaten kendisinin üye alanın satış kaleminin fiyatta az önce aldığı bilgi bu değer geri dönecek.
+
+322
+00:58:04,096 --> 00:58:09,896
+Ve kümülatif toplamı geri döndürecek.
+
+323
+00:58:13,139 --> 00:58:39,039
+Şöyle bir şey yazabiliriz. Normalde ne yapıyorduk? Toplam eşit, toplam eşit, toplam artı, bu adet şartlı fiyat şeklinde bir şey olacak. Ama hani sequence diagramlarda sadece metot çağrımlarını gösteriyorduk. Burada öyle yazmaya gerek yok. Ama en azından şöyle bir şey yazabilirim. Böyle bir kümülatif toplam diyebilirim en azından. Onun için de şöyle bir sınıf şemasında.
+
+324
+00:58:39,519 --> 00:58:50,160
+Şöyle bir spell type karakteri yazmak istiyorum ya, şöyle bir şey yapıp, şöyle silip, şunları bir ctrl c diyeyim, ama silebilirim şimdi.
+
+325
+00:58:55,827 --> 00:58:59,688
+Şuraya, Cumulatif.
+
+326
+00:59:00,500 --> 00:59:15,859
+Toplamında döndürecek diyelim. Böyle bir şeyim olsun, gösterimim olsun. Ve o kümülatif toplamda toplam hesapla metodunun, satıştaki toplam hesapla metodunun geri döndürdüğü değer olacak.
+
+327
+00:59:15,859 --> 00:59:23,500
+Toplam hesapla da, yani kasadaki toplam hesaplamada artık başka bir şey yok. O kümülatif toplamda neymişse, hop bunlardan geldi, pardon.
+
+328
+00:59:24,947 --> 00:59:28,187
+O kümülatif toplam neyse aynı değer geri dönecek.
+
+329
+00:59:28,187 --> 00:59:30,587
+Çok pardon.
+
+330
+00:59:30,827 --> 00:59:32,447
+Bilin 40'ya ben kaldım.
+
+331
+00:59:33,487 --> 00:59:34,907
+Kaldım duruyorum ben.
+
+332
+00:59:38,487 --> 00:59:39,247
+Kontrol altı.
+
+333
+00:59:41,327 --> 00:59:43,147
+Kontrol ve yeti.
+
+334
+00:59:44,147 --> 00:59:44,407
+Peki.
+
+335
+00:59:46,227 --> 00:59:51,007
+Toplam hesaplamayı da bu şekilde yaptıktan sonra sadece şu.
+
+336
+00:59:53,108 --> 00:59:56,548
+Ödeme tahsil ve fiş verme metotlarını ekleyelim.
+
+337
+00:59:56,548 --> 00:59:57,668
+Unutacağım ama.
+
+338
+01:00:00,528 --> 01:00:02,948
+Ödeme tahsil.
+
+339
+01:00:03,648 --> 01:00:08,328
+Belki başarılı olur, belki başarısız olur, provizyon vermez falan şeyler vardı.
+
+340
+01:00:09,248 --> 01:00:12,148
+Ve ödeme tahsil de başarılıysa da.
+
+341
+01:00:12,692 --> 01:00:35,711
+Fiş bas metodu da basacak fişi. Belki doğrudan basıyorduk ya da belki de o fişte bulunması gereken mitin içeriği neyse onları oluşturup geri döndürüyorduk. Bu ikinci dediğim söz konusuysa işte fiş içeriği stringi geri döndürecek. Yok direkt çatıca da o zaman geriye bir şey döndürmesine gerek yok diye düşünüyorum.
+
+342
+01:00:40,692 --> 01:00:46,491
+Ama getter metotları olacak en azından. İsterseniz boş kalmasın. Oraya bir onları yazalım.
+
+343
+01:00:48,531 --> 01:00:55,491
+Ve ha tabii ki bir de ürün oluştururken bütün şu bilgiler, barcode, tanım, fiyat, KDV bunların verilmesi gerekiyor bir ürüne.
+
+344
+01:00:55,831 --> 01:01:04,011
+Default constructive etmeyecek. O yüzden işte constructive ve getter metotlarıyla bunun değişini doldurmuş oluruz.
+
+345
+01:01:04,467 --> 01:01:11,347
+Ama tabii şimdi bunu biraz uzun olacak ama neyse ne yapalım şunu, kopyalarıp işte yapıyoruz en azından.
+
+346
+01:01:12,447 --> 01:01:31,567
+Barcode da string, ondan sonra cema, tanım da string, sonra fiyat da float, tanım kdv de float, fiyat da, ay o yok şuraya, fiyat da float.
+
+347
+01:01:32,000 --> 01:01:37,239
+ve KDV'de float ve kapa.
+
+348
+01:01:38,480 --> 01:01:44,500
+Okey. Biraz uzun oldu ama şöyle çekersekten aslında yeterli yerimiz var.
+
+349
+01:01:45,039 --> 01:01:46,880
+Bir de get the metotlarını koyalım.
+
+350
+01:01:48,219 --> 01:01:50,380
+Bu arada siz sorularınız varsa bir düşünün.
+
+351
+01:01:50,380 --> 01:01:56,799
+Sorun arkadaşlar. Ben bunları şey derken, yaparken şöyle bir kontrol edeyim.
+
+352
+01:01:58,708 --> 01:02:00,347
+Şuraya şunu da reshati yapın.
+
+353
+01:02:24,788 --> 01:02:33,148
+Şuradan kontrol edeceğiz. Şöyle kontrol edeceğiz. Benzer şekilde diğerlerini de yapacağım. Sizin sorusu varsa sorun lütfen bu arada buyurun.
+
+354
+01:02:49,300 --> 01:02:49,740
+Yapalım.
+
+355
+01:02:54,560 --> 01:02:55,600
+Oldu bence.
+
+356
+01:02:58,680 --> 01:03:06,820
+Satış kalemini adet için getirmekten gerek var mı? Yok. Çünkü ara toplam hesaplamada satış kalemini o bilgiyi kendisine kullanıyor yeter.
+
+357
+01:03:06,820 --> 01:03:15,180
+Yani satışta ürün iptalde belki böyle bir şey olabilir de. Ürün iptali şu an geçeriz geçmeyiz. Olursa ayrı.
+
+358
+01:03:16,179 --> 01:03:18,539
+En azından şunu şu hali bir getirmiş olalım.
+
+359
+01:03:20,119 --> 01:03:20,699
+Save.
+
+360
+01:03:22,500 --> 01:03:23,259
+Şunu da save.
+
+361
+01:03:24,920 --> 01:03:26,619
+Ve şimdi bir tartışalım bakalım.
+
+362
+01:03:26,619 --> 01:03:28,759
+Şimdi henüz derden soru gelmedi.
+
+363
+01:03:29,099 --> 01:03:32,619
+Her şeyden önce şu an sizinle birlikte etkileşimli yaptığım şu tasarım.
+
+364
+01:03:33,420 --> 01:03:39,619
+Acaba nasıl ders notundaki ile karşılaştırdığımda ne farklı ne var ne yok.
+
+365
+01:03:39,920 --> 01:03:42,179
+Bir onları karşılaştıralım bakalım.
+
+366
+01:03:46,420 --> 01:04:03,300
+Tabi şimdi nasıl yapacağız? Biraz şöyle, çok da fark etmiyor. Neyse, ödemi, ödemi, ödemi de mezot koyalım. Konstruktor ve vegeto. Yani pikmişi koyamıyorsak en azından ilgi konstruktor ve vegeto koyalım arkadaşlar. Boş kalmasın.
+
+367
+01:04:08,628 --> 01:04:10,128
+Şimdi, şu nokku bileje.
+
+368
+01:04:10,128 --> 01:04:11,128
+Tak.
+
+369
+01:04:12,228 --> 01:04:13,028
+O, ciak.
+
+370
+01:04:20,884 --> 01:04:24,884
+Get...
+
+371
+01:04:24,884 --> 01:04:25,884
+On, madira palu.
+
+372
+01:04:32,179 --> 01:04:57,179
+Şunu şöyle bir kenara çekeyim. Sonra bir yandan ders notları olsun. Şunu bir height saklayalım. Ödemeyi gizleyebilirim. Ürün de gizleyebilirim. Yani hemen hemen ne olduğu belli üründe. Şöyle odaklansam daha iyi olur diye düşünüyorum. Şimdi inelim bakalım. Şu şamada ne yapmışız?
+
+373
+01:04:58,036 --> 01:05:02,956
+Neyi ne kadar farklı nasıl yapmışız? Onla bir tartışmaya başlayalım.
+
+374
+01:05:05,875 --> 01:05:10,096
+Evet, şu noktadayız. Azıcık büyütelim.
+
+375
+01:05:11,476 --> 01:05:18,215
+25. Tamam, peki. Yeterli olabilir diye düşünüyorum.
+
+376
+01:05:19,815 --> 01:05:21,315
+Evet, peki. Yeterli.
+
+377
+01:05:23,635 --> 01:05:36,015
+Şimdi ne var ne yok bir bakalım. Bir kere ders noktundaki tasarımda şubede bir ürün kataloğu vardır diye bir düşünmüşüz.
+
+378
+01:05:36,015 --> 01:05:47,215
+Yani burada tek bir sınıf olarak düşündüğümüz içeriği iki sınıfa bölmüşüz. Bir class, extra class yapmışız. Olabilir.
+
+379
+01:05:47,764 --> 01:05:57,764
+Bu noktada şöyle bir şey var. Eğer farklı şu belerde, farklı kataloglar söz konusu olabilecekse, yani her...
+
+380
+01:05:57,844 --> 01:06:19,844
+O zaman belki ders notundaki gibi yaptığımız daha mantıklı olabilir. Ama bazen eğer çok büyük bir veri saklama masrafı olmayacaksa satılsın, satılmasın. Herhangi bir şubeti satılabilecek bütün ürünler, tüm şubelerde bilgisi olsun canım olacak gibisinden de düşünebilirsiniz. Çok ders değil.
+
+381
+01:06:20,340 --> 01:06:32,420
+Ürüne bakıyorum, get the metotlarıyla şey etmişiz, tamam güzel. Hatta KDV'yi koymamışız ders modunda, korisaymışız, üye olunmuş. Satış kalemine bakıyorum.
+
+382
+01:06:32,420 --> 01:06:44,220
+Şimdi şu an yapmadığımız ürün sil olayı var, miktar azalt ile gerçekleşecek.
+
+383
+01:06:46,387 --> 01:06:52,068
+Miktar attınmak aslında biraz overkill diye düşünüyorum.
+
+384
+01:06:57,043 --> 01:07:10,223
+Diyelim ki ben şu sudan iki tane aldım ama sonra diyelim ki çoluk çocuk da susamış, onlar da iki tane su daha aldılar geldiler.
+
+385
+01:07:10,223 --> 01:07:19,323
+Yani tutup da benim ilk aldığım iki su ile ilgili satış kalemi nesnesini bulup da onun adetini iki tane daha arttırmak.
+
+386
+01:07:20,179 --> 01:07:33,239
+Bir kenarda, öbür kenarda yine iki kalemlik başka bir satış kalemi daha oluşturmak. Günün sonunda bu benim ödeyeceğim toplama her ikisi de aynı şekilde katkıda bulunacak her iki alternatifte.
+
+387
+01:07:35,380 --> 01:07:48,220
+2x2 su gözükse ne olur? 4x1 su gözükse ne olur? Bir şey fark etmez. O yüzden miktar arttırır, biraz overkill demek istiyorum ama miktar azalt, gerekecek.
+
+388
+01:07:48,220 --> 01:08:03,380
+Hatta çünkü 3 su aldık, bir tane sarzı olmuş, bir tanesini bırakıyorum diyebilmeli müşteri. Veyahut da komple 3 suyla iptal etmek istiyorum diyebilmeli. Onun aynısına sizlerden soru gelmezse...
+
+389
+01:08:03,380 --> 01:08:07,380
+Aklımız kaldıya kadarıyla buraya bir şeyler yapmaya çalışırız. Onunla ilgili.
+
+390
+01:08:08,275 --> 01:08:23,835
+Satışa baktığımda tarih var, evet, kalem oluştur var. Şimdi burada biraz daha fazla şey var. Satış kaleminde, ders notunda getbedel demişim.
+
+391
+01:08:23,916 --> 01:08:35,056
+Yani bu satış kalemin ara toplamı için getbedel demişim. Burada ara toplam hesaplar demişim. Metod isimleri farklı ama yaptıkları iş aynı şey olacak. Adını farklı düşünmüşüm ona da.
+
+392
+01:08:36,692 --> 01:08:46,291
+Satışa geldiğimde, evet kalemler var, vector ya da linked list, multi-tredit olursa vector demiştik. Yoksa linked list demiştik mesela.
+
+393
+01:08:48,391 --> 01:08:55,531
+Peki, şimdi bu linked listi ilklendirmek önemli diye bir default constructor olduğunu göstermişim satışa.
+
+394
+01:08:56,851 --> 01:09:22,051
+Ondan sonra cema, kalem oluşturuz veyahut da ürünekle. Bu şeyde kalem oluşturuz demişim birlikte yaptığımızda. Ürünekle demişim. O mantık. Ondan sonra şu kalem ara dediğim işte miktar azaltmak söz konusu olacaksa, arttırmayı o hükümet dedik ama azaltma söz konusu olacaksa o zaman şu kalem ara.
+
+395
+01:09:22,515 --> 01:09:37,855
+Metodu gerekebilir ama bunu dikkat ederseniz private yapmışız. Çünkü esas ürün eksilt metodu var. Bu ürün eksilt metodu içerisinde çağrılacak bir metot olacak bu kalem ara. Yaparız birlikte. Şimdi vaktimiz varsa.
+
+396
+01:09:45,203 --> 01:10:00,543
+Satış makbuzunu yazarken, şu tarihte, fiş bahs metodunun içerisinde kullanılacak o metot, yani tarih için getiren metodu. O yüzden bir yazalım şimdi, önemli olduğunu düşünüyorum.
+
+397
+01:10:08,787 --> 01:10:30,608
+Döndürecek diyelim. Bundan sonuçta toplam hesaplı o metot var. Ödeme, evet, constat, get, tut. Evet, hemen hemen aynı ürün silme olayı dışında. Şimdi şunu tekrar bir büyüteyim artık. Siteparı açalım.
+
+398
+01:10:31,155 --> 01:10:38,996
+Onun dışında şu yansılara bir döneyim de oradan söylemeyi unuttuğum bir şey olmasın. Ona da bir bakalım.
+
+399
+01:10:52,307 --> 01:10:55,087
+Bazı basit getirde setter metodu gösterilmiş değil, tamam.
+
+400
+01:10:55,727 --> 01:10:58,327
+Tamam, peki. Başka bir şey yok bu aşamada.
+
+401
+01:10:58,327 --> 01:11:07,288
+O zaman şu şey yapabiliriz isterseniz, ürün silme olayını bir düşünelim.
+
+402
+01:11:08,127 --> 01:11:13,427
+Orada da isterseniz biraz notlardaki benzer isimleri şey edelim.
+
+403
+01:11:14,207 --> 01:11:18,407
+Ürün sil metodu var, yani bütün işleri başlatacak yer esas kasa.
+
+404
+01:11:19,731 --> 01:11:36,252
+Şuna en son bir ürün sil metodu vereyim. Hangi ürün silinecek? Onun barkodu söz konusu. Ve kaç adet silinecek? Onun da söz konusu olacak.
+
+405
+01:11:39,507 --> 01:11:47,707
+Bunun bir boolean geri döndürmesine çok gerek yok. Yoksa silmemiştir şeklinde diyebiliriz. O yüzden varsın bu şekilde kalsın.
+
+406
+01:11:48,448 --> 01:11:57,307
+Şeydeki benzer mantığı kullanıyorum. Bankot girildeki benzer mantığı kullanıyorum. En adet girilmesiyle bir adet girilmesi arasındaki tek fark enin bir olması.
+
+407
+01:11:58,007 --> 01:12:06,368
+Benzer şekilde aynı mantıktan gideceğim. Nasıl yaparız bir düşünelim. Tabii ki bu ilgili olay aktif satışa gidecek.
+
+408
+01:12:06,963 --> 01:12:31,543
+Ve o da burada aslında bunu işe koyduğumuzda bu metodu eklediğimizde acaba barkod mu verirsin buna yoksa ürün mü verirsin? Burada pek fark etmiyor.
+
+409
+01:12:31,988 --> 01:12:47,347
+Kalem oluşturuldu, ürün verilmesi gerekiyor. Çünkü ilk defa oluşturulacak bu kayıt ürünün nesnesine ihtiyacım var. Fakat ürün sildi, bankot verilmesi yeterli. Çünkü ürün silinecekse ister istemez o nesne zaten kalemlere eklenmiştir.
+
+410
+01:12:48,212 --> 01:13:07,832
+Diyelim ki alakasız bir şeyin barcode okundu. Yine de barcode yani ürünün kendisinin eşitliği üstünden gitmektense barcode'ları eşit mi, tekrar tanımlayıcıları eşit mi üstünden gitmek hiçbir sakıncası yok. O barcode ürünü kalemlerin arasında bulamazsam zaten olay başarısızlığınız inşallah.
+
+411
+01:13:16,212 --> 01:13:18,392
+Bu metoda.
+
+412
+01:13:18,632 --> 01:13:20,112
+Ve basın, barkot olsun.
+
+413
+01:13:20,312 --> 01:13:23,212
+Tekrar sırf bu bizden şey de tasarruf eder.
+
+414
+01:13:24,052 --> 01:13:26,852
+Veri haberleşme tasarrufu sağlar.
+
+415
+01:13:27,572 --> 01:13:32,452
+Barkota girilen ürünün ne ürün nesnesi olduğunu tekrar şubeye gidip sormaktansa.
+
+416
+01:13:33,460 --> 01:13:42,880
+Direkt satışa stringin iletmesi, barcode stringin iletmesi daha hızlı ve çabuk ve daha az network trafiği doğuracak bir çözüm.
+
+417
+01:13:43,380 --> 01:13:46,699
+Böyle düşündüğümde bu daha iyi olur diye düşünüyorum.
+
+418
+01:13:46,699 --> 01:13:48,240
+Şimdi, peki.
+
+419
+01:13:49,619 --> 01:13:58,000
+Satış nesnesi, kendisine satış kalemleri içerisinde hangisini silmesi gerektiğini, ha şimdi ya belki silicek, belki de adet azaltacak.
+
+420
+01:13:58,180 --> 01:14:01,060
+Hani mesela de o. Şimdi şu kalemden 3 tane alınmış.
+
+421
+01:14:01,471 --> 01:14:12,992
+Bir tane silinecekse, 3 adetini 2'ye düşürecek. Ama bu kalemden zaten bir tane alınmışsa, bir tane sil deminmişse de o zaman bütün satış kaleminin düşürmesi lazım diye düşünüyorum.
+
+422
+01:14:13,351 --> 01:14:27,532
+Hiç listede gözükmesin, 0 adet kalem satıldı, öyle bir şey olmuyor yani. Ha, bedeli 0 olacak, tamam bize ekmaslar ödetmeyecek belki ama satılmamış şimdi 0 adet satıldı diye bir fiş de olması saçma olacak. Bu nedenle.
+
+423
+01:14:28,051 --> 01:14:44,171
+satışla satış kalemler arasında acaba o ürün var mı diye buna bir get ürün barcode diye bir metot eklemek yararı olacaktır.
+
+424
+01:14:44,171 --> 01:14:47,731
+Şu ilgili ürün, onu da şurada göstermemiştim, gösterelim.
+
+425
+01:14:50,228 --> 01:14:56,327
+Gerek yok aslında, ok söylüyor bize zaten bunu zaten ama olsun. Elimizdeymişken gösterdim onu da.
+
+426
+01:14:56,327 --> 01:15:06,007
+Peki, şimdi ürün barkodunu aldı. Bir de adeti de bir get ettirelim ki satış nesnesi karar versin.
+
+427
+01:15:06,067 --> 01:15:11,327
+Hadi ben satış kalemini toptan mı listeden süleyin yoksa sadece adetini mi değiştireyim?
+
+428
+01:15:11,728 --> 01:15:14,847
+Bu bağlamda, get, adet.
+
+429
+01:15:17,587 --> 01:15:21,367
+ve set adet
+
+430
+01:15:25,908 --> 01:15:29,068
+metotlarının olması lazım.
+
+431
+01:15:29,807 --> 01:15:31,788
+Uzadı bu. Şöyle biraz çekeyim şunu.
+
+432
+01:15:32,347 --> 01:15:35,408
+Hatta şöyle yaparsam daha iyi okunacak.
+
+433
+01:15:36,668 --> 01:15:37,427
+Tamam. Peki.
+
+434
+01:15:38,128 --> 01:15:38,908
+O zaman...
+
+435
+01:15:39,136 --> 01:15:44,876
+Diyorum ki artık bir şeylerin silinmesi için bütün altyapıyı oluşturabildim.
+
+436
+01:15:45,596 --> 01:15:52,996
+Şunu bir seyredeyim. Şunu ise bunu kavramışla açtırmaktansa, en iyi bir sequence diagram koyayım buna.
+
+437
+01:16:04,212 --> 01:16:15,052
+Kendi diziline yaptığımız şey. Bunu da alternatif senaryo anlamında, alt senaryo diyeyim, ürün sinme içinse unutmayalım diyelim.
+
+438
+01:16:15,052 --> 01:16:21,012
+Şimdi bu arada şunu değiştirmedim aslında. Bir şey yok.
+
+439
+01:16:27,188 --> 01:16:37,948
+Küçüktür, büyüktür de eklemiştim. Şuna gelelim şimdi. Nelere ihtiyacım var? Aslında birçok şeye ihtiyacım var şuradaki bütün bu nesneleri. O yüzden şöyle yapayım ben.
+
+440
+01:16:43,796 --> 01:16:52,356
+Kontrol A, Ç, Yada şey mi yapayım, ne yapayım.
+
+441
+01:16:56,976 --> 01:16:59,756
+Bir de şuraya fazla bir şey koymuş oldum.
+
+442
+01:17:00,816 --> 01:17:02,456
+Hemen gelin, hemen gelin.
+
+443
+01:17:02,816 --> 01:17:04,336
+Şuraya nasıl gelmiş anlamadım.
+
+444
+01:17:05,043 --> 01:17:06,344
+İlk anlamadım arkadaşlar.
+
+445
+01:17:08,444 --> 01:17:09,283
+Nereden gel?
+
+446
+01:17:09,384 --> 01:17:11,684
+Bunu silmeye kalktığım zaman da her şey gidiyor.
+
+447
+01:17:16,243 --> 01:17:17,283
+Bak, siliyorum.
+
+448
+01:17:18,644 --> 01:17:19,123
+Ha, tamam.
+
+449
+01:17:20,243 --> 01:17:21,703
+Peki, ben size.
+
+450
+01:17:23,344 --> 01:17:25,203
+Şey yapayım ben aslında ya, o zaman.
+
+451
+01:17:25,384 --> 01:17:26,024
+Şöyle yapayım da.
+
+452
+01:17:30,068 --> 01:17:50,807
+Kontrolü basılı tutarak, böyle birini seçebiliyorum. İyi tamam peki. Kontrol C. Kontrol V. İyi tamam, gözleri olmadan sadece nesneli en azından seçtim. Bunları en azından şey etmek zorunda diyelim şimdi. Yapmak zorunda diyelim. Ne demiştik? Ürünsi metodu çağırlayacak kafanın.
+
+453
+01:18:03,636 --> 01:18:07,016
+Şuraya bir şey koymam gerekiyordu.
+
+454
+01:18:09,276 --> 01:18:10,036
+Şöyle.
+
+455
+01:18:12,655 --> 01:18:16,136
+Evet, ürün sil metodu çağırıyor kafanın.
+
+456
+01:18:16,136 --> 01:18:24,816
+Ondan sonucu o da bu çağrıyı satışa yönlendirecekti.
+
+457
+01:18:26,056 --> 01:18:26,916
+Aktif satışa.
+
+458
+01:18:32,948 --> 01:18:35,788
+Bu arada tabii artı olmayacak şeyin içerisinde.
+
+459
+01:18:40,595 --> 01:18:45,235
+Şöyle, public priority göstermenin yeri olası değil tabii ki.
+
+460
+01:18:46,935 --> 01:18:53,195
+Ve gelen bilgi iletildiği için şu türleri görmeye gerek yok.
+
+461
+01:18:54,235 --> 01:18:55,175
+Daha sonucu var.
+
+462
+01:18:56,295 --> 01:18:57,515
+Şurada bir, tamam.
+
+463
+01:18:58,175 --> 01:19:00,095
+O, onunkini çağırdı belki.
+
+464
+01:19:00,855 --> 01:19:02,395
+Şuraya ihtiyacım yok.
+
+465
+01:19:03,395 --> 01:19:06,015
+Ürüne de ihtiyacım yok.
+
+466
+01:19:07,347 --> 01:19:13,368
+Adet bilgisini üründen almayacak, satış kaleminden alacak. Peki, şimdi ne yapacak? Bir bakacağız.
+
+467
+01:19:13,368 --> 01:19:21,100
+Bir kere, ilgili şey...
+
+468
+01:19:21,235 --> 01:19:31,956
+Silinecek ürünün hangi belli satış kalemi nesnesinde olduğunu bulması lazım. Ona belli bir isim verelim. Belli bir referansa saklaması gerekiyor çünkü.
+
+469
+01:19:32,555 --> 01:19:40,576
+Silinecek diyeyim. Tamam mı? Silinecek. Silinecek olan. Peki şuraya boşluk bakırsam aşağıya geçti mi? Geçti. Güzel. Peki.
+
+470
+01:19:44,724 --> 01:19:54,904
+Bu aktif satış, satış kalemlerinin içerisinde listleriki her bir eleman tek tek arayacak ve onu bul bul diyecek.
+
+471
+01:19:55,064 --> 01:19:59,804
+Yani iteratör alacak ve atakürençisi tek tek listin elemanlar arasında for dönmüş bir şey.
+
+472
+01:20:00,000 --> 01:20:19,179
+Bu zaman dolaşacak. Bunu bir isterseniz bir gösterelim. Kendi kendisinin metodunu çağırma şeklinde gösterelim. Ne kadar ayrı bir metod çağırmayacak olsa da bu bağlamda yine şöyle bir tercih koyup şu stereotip'lara bir ihtiyacım var.
+
+473
+01:20:30,836 --> 01:20:50,016
+Çek olanı bulduk diyelim. Tamam. List ekhasını alacak, bulacak, buldu ve silinecek adlı referansa işaretledi diyelim ki. Ondan sonra acaba, buradan bunun kaç adet olduğu bilgisi.
+
+474
+01:20:50,579 --> 01:21:15,140
+O zaman şöyle diyelim. Şu ürün sırrı, barcode adet, buraya silinecek adet diyelim. Tamam mı? Bu silinecek adet. Ama ilgili şu an satış kaleminde de şu an mevcut adet var. Mevcut adetten silinecek kadarı azaltılacak. İkisini de adet dersek bu da anlam karmaşıklığı olacak.
+
+475
+01:21:18,452 --> 01:21:20,552
+Adet diyelim.
+
+476
+01:21:21,552 --> 01:21:22,052
+Şöyle.
+
+477
+01:21:25,908 --> 01:21:31,887
+O da diyelim ki, isterseniz onu da memcudu hedefleyelim. Laus'un isimleri biraz uzun tutalım ne olacak.
+
+478
+01:21:35,764 --> 01:21:47,764
+Mevcut adet bilgisi dönsün diyelim ki. O zaman şimdi burada karar verecek. Eğer sinilecek adet mevcut adetten küçükse...
+
+479
+01:21:48,159 --> 01:21:55,639
+Eşitse nesneyi silecek komple satış kalemini, aksi takdirde adeti azaltacak diyelim.
+
+480
+01:21:55,639 --> 01:22:04,779
+O zaman bu önemli bir iş mantığı ve normalde bir metot çağrımı olmayacak ama yine de metot çağrımı gibi kendisinden kendisini göstermek istiyorum.
+
+481
+01:22:09,579 --> 01:22:15,699
+Önce komple silmeyi göstereyim. Önce komple silmeyi yazayım. Bence özel birisi daha mantıklı olacak.
+
+482
+01:22:16,144 --> 01:22:28,104
+Ama bu satış kalemini kendini sildemeyecek. Satış kalemini kendisi silecek. O yüzden şu tamir alalım. Kendi işinden kendi içerisine yapacağız.
+
+483
+01:22:28,104 --> 01:22:43,604
+Eğer silinecek adet eşitse mevcut.
+
+484
+01:22:44,564 --> 01:22:55,164
+Adete. O zaman listeden silsin. Silineceği listeden sil. Onu da şöyle bir şeyin içerisinde yazmak istiyorum yine.
+
+485
+01:22:56,364 --> 01:22:57,184
+Kontrol C.
+
+486
+01:22:58,704 --> 01:23:01,984
+Öyleyse o zaman bilek olanı.
+
+487
+01:23:04,819 --> 01:23:16,300
+Sil diyeceğim sadece. Tamamen sil diye. Hatta isterseniz bu zaman gerek yok. Tamamen sil. Silinecek. O zaman sil. Ama aksi takdirde de o zaman adeti set edecek.
+
+488
+01:23:16,960 --> 01:23:27,460
+Şöyle, silinecek değil de azaltılacak belki de. Niye silinecek dedik? Silinebilecek diyelim o zaman isterseniz. Adım daha mantıklı olsun.
+
+489
+01:23:32,595 --> 01:23:33,435
+Bilecek.
+
+490
+01:23:33,435 --> 01:23:34,035
+Tamam.
+
+491
+01:23:35,855 --> 01:23:44,935
+O zaman şurada silme, bilecek olanı bul dedim.
+
+492
+01:23:44,935 --> 01:23:45,355
+Tamam.
+
+493
+01:23:46,295 --> 01:23:54,935
+O zaman silme, bilecek olanı silme, bilecek olanı sil.
+
+494
+01:23:57,427 --> 01:24:07,507
+Şimdi, şöyle ben kısaca else demek istiyorum pek uzatmamak için arkadaşlar. Neyin else? Tabii ki bir öncekinin else şeklinde yazayım. Biraz kısa olsun.
+
+495
+01:24:07,507 --> 01:24:24,507
+Aksi taktirde de bu satış kalemine, test adet, mevcut adet, eksi, silinecek adet şeklinde şöyle bir şey yapsak.
+
+496
+01:24:25,427 --> 01:24:32,288
+Şunun geri dönüşünü yapsak, bundan sonra artık bu işler gitti kardeşim diye şöyle bir şey çizebilirim yani.
+
+497
+01:24:36,851 --> 01:24:56,412
+Bu da böyle. Yani anlatmaya çalışmak istediğim şeyler buydu. Bu sınıf şamamda ürün sil metodunun arka planda neleri çalıştırması gerekebileceğini düşündüm ve bu düşüncemi sequence diagrama aktardım.
+
+498
+01:24:56,731 --> 01:25:03,872
+Aktarırken bir şey eksik gelip olduğumu fark etmedim. Fark etseydim giderdim, gelin verdim sınıf şamama onları da eklerdim.
+
+499
+01:25:04,851 --> 01:25:08,872
+Ben bu benzer şeylere çok uzun süreli anlattığım için aklımdaydı. Ekstra bir şey çıkmadı.
+
+500
+01:25:09,311 --> 01:25:13,471
+Sinir değişik sorularımız olsaydı ekstra bir şeyler yapardık elbette.
+
+501
+01:25:14,192 --> 01:25:15,452
+Anlılmak son açıma.
+
+502
+01:25:16,412 --> 01:25:17,051
+Bunlar bunlar.
+
+503
+01:25:20,340 --> 01:25:31,840
+Şeyde öyle bir şey yok. Yani yanlış hatırladınca ders noktasında bu alternatif senaryolarla ilgili sınıf şemasında ekstra bir şey yok.
+
+504
+01:25:31,840 --> 01:25:39,840
+Evet, bu gün şimdi sorumluluğunuz varsa alayım. Bu arada kaldığım yeri de not edeyim.
+
+505
+01:26:14,547 --> 01:26:21,547
+İntro, sequels.
+
+506
+01:26:26,355 --> 01:26:28,315
+Şemal'ı da verip de.
+
+507
+01:26:32,020 --> 01:26:32,620
+tamamlandı.
+
+508
+01:26:39,412 --> 01:26:46,891
+Haftaya yazılım sınımasıyla normal inşallah saatimizde başlayacağız. Sayfa 111'den itibaren.
+
+509
+01:26:50,484 --> 01:26:52,284
+İlahi Çez inşallah.
+
+510
+01:26:54,364 --> 01:26:56,224
+Peki, şunu bir kaydet.
+
+511
+01:26:57,764 --> 01:27:01,043
+Hocam, ikinci vizamız da online olacak değil mi?
+
+512
+01:27:01,503 --> 01:27:05,703
+Şimdi, onu bilmiyoruz. Belki ikinci vize yapmayız.
+
+513
+01:27:06,904 --> 01:27:09,104
+Onu Oya Hoca ile bir koordine edelim.
+
+514
+01:27:09,564 --> 01:27:12,264
+Ayrıca tabii şimdi burada bilinmeyen çok etken var.
+
+515
+01:27:12,564 --> 01:27:13,703
+Bir kere YÖK ne diyecek?
+
+516
+01:27:14,452 --> 01:27:33,092
+Yani cüviyat ne diyecek? Üniversitelere ne kadar esneklik bırakacak? Bizim üniversitemiz, senatomuz ne diyecek? Fakülteleri ne kadar serbest bırakacak? Genelde fakülte düzenine esneklik tanımıyor. Böyle yapılacak diye düşünüyor. Mantıklı da aslında.
+
+517
+01:27:33,092 --> 01:27:36,092
+Yani o yüzden ayrıntılar...
+
+518
+01:27:36,627 --> 01:27:44,287
+Belirli değil. İkinci bize yapılmayabiliriz büyük olasılıkla. Yapılırsa da test usulü yaparız.
+
+519
+01:27:44,756 --> 01:27:58,076
+ve bütün konulardan sorumlu olursanız, bütün ders notları işleminden sorumlu olursunuz ama test usulü olur.
+
+520
+01:27:59,195 --> 01:28:07,715
+Final herhalde, artık o kadar bir olaylıca bir durum yok, klasik usulü yaparız ama orada online olacak, 100% olacak.
+
+521
+01:28:08,340 --> 01:28:09,640
+Bilmiyoruz, bakalım.
+
+522
+01:28:10,079 --> 01:28:16,539
+[kişisel bilgi]
+
+523
+01:28:16,539 --> 01:28:17,440
+Tamam.
+
+524
+01:28:17,920 --> 01:28:44,420
+Evet, bunlar da ha deyince olmuyor, haklısınız. Ama sizin durumunuz tek değil yani. Sizin durumunuzda olan bir dolu insan olacak. Bu bağlamda belki final sınavı için online bir, finalin telafisi bütünleme sınavı olur. Bütünlemeleri online olur desek o zaman insanlar finale girmez. Valla zor bir karar.
+
+525
+01:28:45,920 --> 01:28:50,500
+İnanın bilmiyorum. Bilemedim.
+
+526
+01:28:51,260 --> 01:28:53,860
+Hocam, toplantı falan olmadı değil mi hocalarla?
+
+527
+01:28:54,619 --> 01:28:59,700
+Yok, yok olmadı. Bugün olacak bir toplantımız olacak. Şu toplantının gündemi bu değil.
+
+528
+01:28:59,860 --> 01:29:08,600
+Çünkü hani dediğim gibi biz kendi kendimize ne kadar tartışsak etsek, değişik planlar bulsak etsek, yok dedim mi şöyle yapacaksınız kardeşim.
+
+529
+01:29:09,039 --> 01:29:11,740
+Biz onların hiçbirini uygulayabilecek durumda olmuyoruz yani.
+
+530
+01:29:13,108 --> 01:29:27,788
+Ama ben şimdi madem siz bu resimleri sordunuz, ben de sorayım bakalım ne olacak, hangi bir şey var mı? Ama büyük olasılıkla bölüm başkanlığımın da söyleyeceği şey, benim size söylediğimde aynı şey olacaktır. Daha henüz belli değil, bekliyoruz olacaktır.
+
+531
+01:29:29,547 --> 01:29:30,887
+Tamamdır hocam, teşekkür ederim.
+
+532
+01:29:31,408 --> 01:29:34,568
+Şeydir, kusura bakma yardımcı olamadım ama işte bir belirsizlik bulunu var.
+
+533
+01:29:36,648 --> 01:29:38,467
+Buyurun başka soru soran arkadaşım varsa.
+
+534
+01:29:49,492 --> 01:30:02,051
+Ben size kendi açımdan şöyle söyleyeyim. Yıldışında olsun, yıldışında olsun, gelemeyen, gelemeyecek arkadaşları bir şekilde esneklik tamamlamayı düşünüyorum.
+
+535
+01:30:02,931 --> 01:30:16,091
+Bu esneklik biraz belki dezavantajlı esneklik olur. Orasını da bilemiyorum. Mesela finali test yaptık ama diyelim ki bu bütünlemeyi mecbur, online'de olsa klasik yapıyoruz diyebiliriz yani.
+
+536
+01:30:16,431 --> 01:30:19,192
+Bakacağız.
+
+537
+01:30:21,291 --> 01:30:27,211
+Evet peki o zaman bugünlük bu kadar arkadaşlar. Haftaya normal vaktimizde görüşmek üzere.

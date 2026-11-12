@@ -1,0 +1,1571 @@
+1
+00:03:18,771 --> 00:03:19,371
+Merhaba hocam.
+
+2
+00:03:19,751 --> 00:03:21,572
+Merhaba, günaydın. Nasılsın?
+
+3
+00:03:22,091 --> 00:03:23,591
+Benim teşekkürler. Nasılsınız?
+
+4
+00:03:24,391 --> 00:03:28,311
+Çok şükür. Bildiğin gibi yaramazlık yok. Devam. Problem yok.
+
+5
+00:03:29,651 --> 00:03:35,331
+Evet, şimdi unutmadan ilk ikisini oturum sahibi yapmak gerekiyor.
+
+6
+00:03:36,331 --> 00:03:40,911
+Şöyle tıklıyoruz ve oturum sahibi yap istiyor musunuz? Evet.
+
+7
+00:03:42,003 --> 00:03:51,983
+Tamam, güzel. Hayırlı olsun bakalım. Evet, bırak azıysanız zaten yapmadığı şey değil. Çok yanlış oldu daha önce. Kaç kere oldu? Epey olmuştuk.
+
+8
+00:03:53,223 --> 00:03:55,503
+Uygulamalar mı? Evet, uygulamalar.
+
+9
+00:03:56,084 --> 00:04:00,123
+Vallahi hocam sistem analizinde de yapıyoruz benzer şeylerle.
+
+10
+00:04:00,563 --> 00:04:03,584
+Evet, var. 3-4 senedir herhalde içindeyiz.
+
+11
+00:04:04,043 --> 00:04:14,223
+Olmuştuk. Evet, doğru. Rahat bir rahat olmuştuk sanki. Tamam. Peki, şimdi teşekkür ederiz. Ben şimdi aydanayım mı, çocukları karşılıyorum mı? Seni de tanıyorlar.
+
+12
+00:04:16,524 --> 00:04:23,423
+Aynen hocam. Ben sıkıntı yok. Ben biraz zaten beklerim. Hani 9'u da biraz geçsin. Herkes bir toplansın. 5-10 dakika.
+
+13
+00:04:23,903 --> 00:04:33,704
+Evet, ben de genelde 9-10 geçer başlıyorum. Oradan bir alışkanlık var diyebilirim ama lab olacak. 9'da gelin demiştim. Bakalım. Ancak gelirler.
+
+14
+00:04:34,644 --> 00:04:35,163
+Tamamdır.
+
+15
+00:04:35,244 --> 00:04:37,144
+Tamam, Ancak kolay gelsin. Görüşürüz.
+
+16
+00:04:37,543 --> 00:04:38,944
+Sağ olun hocam. Teşekkürler.
+
+17
+00:04:39,303 --> 00:04:39,624
+Begiriz.
+
+18
+00:13:08,083 --> 00:13:14,543
+Bir iki dakika daha bekleyeceğim arkadaşlar. Sonra başlayacağım uygulamayı anlatmaya uygulama sorusunda.
+
+19
+00:13:15,623 --> 00:13:23,723
+Ekranda siz biraz okuyabilirsiniz. Bugün bir senaryo üzerinden çizeceğimiz bazı diagramlar olacak.
+
+20
+00:13:24,043 --> 00:13:28,303
+Class diagramı, Sequence diagramı, Activate ve State diagramlarını göreceğiz.
+
+21
+00:13:29,703 --> 00:13:32,763
+Uygulama sorumuz ekranda görüldüğü şekilde bir otobüs.
+
+22
+00:13:33,216 --> 00:13:35,916
+Bileti, rezervasyonu ve satış lisesi.
+
+23
+00:14:36,083 --> 00:14:42,243
+Şimdi sorumuzu detaylı şekilde inceleyip okuyarak konuyu, senaryoyu anlayalım.
+
+24
+00:14:43,323 --> 00:15:03,343
+Diyor ki, bir yolcunun gitmek istediği yerle alakalı seferleri listelettiği, hangi otobüsler gidiyor, hangi saatler ve bu listelediği otobüslerde boş koltuklardan birini seçip rezervasyonunu yapmasını sağladığı bir sistem tasarlanmak isteniyor.
+
+25
+00:15:04,628 --> 00:15:08,628
+Bunun bir senaryosu var, kullanım senaryosu. Şu şekilde görelim.
+
+26
+00:15:11,948 --> 00:15:14,868
+Şöyle tamamıyla ekrana sığsın.
+
+27
+00:15:15,928 --> 00:15:19,188
+Otobüs biletinin alımı nasıl oluyor? Bunun senaryosu nasıl?
+
+28
+00:15:19,188 --> 00:15:24,067
+Aktörümüz yolcu. Satış sisteminden bu işi yapacak. Ne yapıyor?
+
+29
+00:15:25,348 --> 00:15:28,968
+Koltuğunu, onun istediği şey ne? Koltuğunu seçip biletini alması.
+
+30
+00:15:29,688 --> 00:15:30,567
+Bunun ön koşulu.
+
+31
+00:15:31,408 --> 00:15:40,708
+Öncelikle sistemde tüm sefer bilgilerinin olması lazım. Şu gün şu otobüs şuradan şuraya gidiyor şeklinde. Bütün bu bilgilerin sistemde bulunması lazım.
+
+32
+00:15:41,888 --> 00:15:50,128
+Ki kullanıcı sistemin yerinde bunları görsün ve seçebilsin. Son koşulda da yolcunun biletini rezervasyonunu yapıp satın alabilmesini istiyoruz.
+
+33
+00:15:51,155 --> 00:15:59,975
+Ana senaryomuz nasıl ilerliyor? Daha sonra aralarında alternatifler neler olur? Bunu da yine ekranda görüyoruz. Ana senaryomuz neler?
+
+34
+00:16:00,980 --> 00:16:22,539
+Yolcunun bir arama yapma modülü var. Buradan kendi nereye gitmek istiyor, ne zaman gitmek istiyor, bunları giriyor. Ve sistem de ne yapıyor? Bu girilen bilgilere göre seferleri listeliyor. Daha sonra ikinci adımda yolcu listelenen otobüslerden birini seçiyor. Daha sonraki adımda yolcu seçtiği otobüste ona...
+
+35
+00:16:22,964 --> 00:16:38,964
+Boş koltuklarda gösterilecek. Bunu seçiyor. Daha sonra yolcu seçimini yaptıktan sonra bazı iletişim bilgilerine giriyor ve artık rezervasyonumu onayla diyor ve o koltuk için rezervasyonu yapılıyor. Son adımda...
+
+36
+00:16:39,347 --> 00:16:51,627
+Bir önceki adımda rezervasyonu yaptım. Son adımda da artık yapılan rezervasyon için ödeme var ve koltuk için artık bu biletin alındığı, koltuğun kesin olarak bu kullanıcıya satıldığının bileti oluşturuluyor ve sisteme işleniyor.
+
+37
+00:16:51,627 --> 00:16:58,247
+Şimdi alternatif neler olabilir? Ne diyoruz? Üçüncü maddede yolcu bir koltuk seçti.
+
+38
+00:16:59,572 --> 00:17:05,632
+Ama sistem bu seçime izin vermeyebilir, orasının dolu olduğunu söyler ve yolcudan yeni bir koltuk seçmesi ister.
+
+39
+00:17:06,172 --> 00:17:17,132
+Veya dördüncü madde için bir alternatif, yolcu rezervasyon yaptı ama ödeme yapmazsa biz bu yolcuya bu koltuğu 12 saat boyunca rezerv ediyoruz.
+
+40
+00:17:17,152 --> 00:17:25,592
+Son 12 saat kalaya kadar rezerve edebiliyoruz. Bundan sonra hala ödeme yapılmamışsa ne yapıyor sistem? Yolcunun rezervasyonunu iptal ediyor.
+
+41
+00:17:26,324 --> 00:17:29,304
+Daha sonra da o koltuk artık boş olarak işaretleniyor.
+
+42
+00:17:30,084 --> 00:17:32,844
+Burada da böyle bir kırılım, böyle bir alternatif var.
+
+43
+00:17:33,284 --> 00:17:37,124
+Yolcunun en az 12 saat kalaya kadar ne yapmasını istiyoruz?
+
+44
+00:17:38,124 --> 00:17:41,724
+O ödemeyi, o rezervasyonla ilgili ödemeyi yapmasını istiyoruz.
+
+45
+00:17:43,604 --> 00:17:48,724
+Genel hatlarıyla ana senaryomuz ve alternatifleri bu şekildeydi.
+
+46
+00:17:50,163 --> 00:17:52,663
+Şimdi senaryoyu anladık, konuyu anladık.
+
+47
+00:17:53,619 --> 00:18:06,440
+Bu senaryomuz için ne yapacağız? 4 farklı UML çizeceğiz. Bunlardan biri sınıf şeması olacak. Şimdi başlayalım. Class diagramımız, sınıf şemamızı çizmeye.
+
+48
+00:18:11,028 --> 00:18:14,688
+Vired UML kullanacağım. Geldim Class Diagramını seçtim.
+
+49
+00:18:16,067 --> 00:18:19,028
+Şimdi benim Class Diagramımda...
+
+50
+00:18:23,155 --> 00:18:28,455
+Şöyle sınıflarımı başlıyorum yazmaya.
+
+51
+00:18:30,099 --> 00:18:58,099
+Biz bu sınıf diagramı çizmeyi bir önceki uygulamada o zaman analiz tarafındaydık. Şimdi tasarım tarafındayız işin. Analiz tarafında da class diagram çizmiştik. Ama orada metotları detaylandırmamıza gerek yoktu. Yani sınıfın adını ve attribütlerini, işte sınıflar arası ilişkileri çizsem bıraksam yetiyordu ama artık tasarım tarafında metotların da detaylarını, yani bu sınıftaki nesneler ne işler yapabiliyor bunu da artık...
+
+52
+00:18:58,099 --> 00:19:14,460
+Göstereceğiz. Tasarım bir sonraki detaylı aşama oluyor. Şimdi ben başlıyorum sınıflarımı yazmaya. İlk sınıfımın yolcu olmasını istiyorum. Yolcunun neleri vardır? Bu attribütlerim neydi? Private yaptığım için başına terex atmıştım.
+
+53
+00:19:25,779 --> 00:19:45,539
+E, C ise olur. Bu işte integer tipinde olabilir veya T, C'yi de aslında string tutmak lazım. Çünkü sayısal işlem yapılacak bir değer değil. Yani toplayıp çıkarılacak bir şey değil. Daha sonra yolcunun neyi vardır? İletişim bilgileri vardır.
+
+54
+00:19:48,539 --> 00:19:52,900
+Burada da işte telefonu, dur adresi de tutabilirim.
+
+55
+00:19:53,395 --> 00:20:01,175
+Daha sonra burada artık getirileri, seterleri ve ekstra bu sınıfta gerçeklenecek metotları yazmam gerekecek.
+
+56
+00:20:03,096 --> 00:20:06,955
+Ben hemen sadece getirilerinden başlıyorum. Seterlerini de yazabilirsiniz.
+
+57
+00:20:07,915 --> 00:20:12,395
+Mesela get at dediğimiz zaman nedir? İsmi döndürecek.
+
+58
+00:20:13,115 --> 00:20:20,855
+String tipinde bir değer döndürecek. Aynı şekilde get soy at dediğimiz zaman o da yine string tipindeki soy atı döndürecek.
+
+59
+00:20:22,036 --> 00:20:32,756
+Bu şekilde bunu uzatabiliriz. İşte get tc no dediğim zaman, o da ne yapacak yine string demiştik tipine, string tipindeki.
+
+60
+00:20:33,956 --> 00:20:43,956
+tc kimlik numaraya dönecek. Aynı şekilde yazmışken hepsini tam liste yazalım. Get iletişim bilgileri.
+
+61
+00:20:45,044 --> 00:20:48,423
+Bu da ne yapacak? Yine iletişim bilgilerini döndürecek bize.
+
+62
+00:20:49,184 --> 00:20:53,684
+Bu şekilde artık hem attributelerini hem metotlarını detaylı olarak yazıyorum sınıflarımı.
+
+63
+00:20:54,284 --> 00:21:00,984
+Şimdi diğer sınıflarımı mantığını göstermek adına önce sınıf isimlerini oluşturup sonra içerilerini dolduracağım.
+
+64
+00:21:00,984 --> 00:21:09,759
+Şimdi diyorum ki yolcunun önce bir rezervasyonu direkt yaptığı değil, rezervasyonları liste, yani...
+
+65
+00:21:09,759 --> 00:21:20,759
+Muhtemel rezervasyonlarını listelettiği, o diğer seferleri görüntülettiği bir ekran var. Burası için rezervasyon ekranı isimli...
+
+66
+00:21:25,556 --> 00:21:42,836
+Bir sınıf olsun diyorum. Burada şimdi ben kullanıcının yaptığı aramaları tutacağım aslında. Yani o bir sefer günü girdi. İşte gideceği yeri, çıkacağı yeri bunları girdi. Buna göre bakalım sistemde kayıtlı seferler var mı?
+
+67
+00:21:43,316 --> 00:21:53,496
+Bunu aratacak sınıf burası. Bu sınıf hangi sınıftan bu seferleri kontrol edecek? Sefer isimli de bir başka sınıf mı olacak?
+
+68
+00:21:53,807 --> 00:22:07,168
+Bu sefer sınıfında ben, dediğim gibi seferin işte nereden kalkacak, nereye varacak, hangi gün tarihte, saatte ve işte hangi otobüs buraya gidecek, otobüs bilgilerini de tutacağım.
+
+69
+00:22:07,307 --> 00:22:18,067
+O zaman bir de seferin bağlantılı olduğu bir diğer sınıfım, burada otobüsü ve koltuğu detaylı olarak sınıflara böleceğim ki, çünkü her birinde ayrı ayrı veriler tutuyorum.
+
+70
+00:22:18,847 --> 00:22:21,788
+Otobüsün içerisinde mesela otobüs verisi nelere tutacak?
+
+71
+00:22:21,807 --> 00:22:34,288
+İşte otobüsün, şoförün, kim, lekkasın, EY. Daha sonra kaç tane koltuk, hangi koltuklar var? Bunun içinde şurada bir koltuk sınıfı olacak. Burada da koltuklarla ilgili detaylı verilerini tutacağım.
+
+72
+00:22:34,288 --> 00:22:48,327
+Yani diyeceğim ki, koltukların numaraları olur, koltukların tipleri olur, ikilimi, teklimi ya da belki bölünmüştür, daha rahat koltuklar vardır, daha ekonomik taraf vardır gibi.
+
+73
+00:22:49,011 --> 00:22:54,172
+Koltuk tiplerine, numaralarını belirlediğim özelliklerini verdiğim sınıf burası olacak.
+
+74
+00:22:55,531 --> 00:22:59,291
+Bunları arasında da şu şekilde ilişki kuracağım.
+
+75
+00:22:59,291 --> 00:23:08,011
+Diyeceğim ki, bir sefer nedir?
+
+76
+00:23:08,367 --> 00:23:30,107
+Bir otobüsle ilişkili, yani bir otobüs verisini tutar bir seferde, bir otobüsle yapılır. Ama bir otobüste birden fazla koltuk olabilir. Hatta burada koltuklar, biz ilişkiler biraz daha kuvvetli olduğunda, şu aşağıda gördüğümüz aggregation composition, bazı böyle daha kuvvetli ilişki biçimleri vardı, bunları kullanırdık.
+
+77
+00:23:30,107 --> 00:23:36,107
+Şimdi koltuk da tek başına var olabilen bir şey olmadığı için, daha kuvvetli bir ilişki olarak ne diyorum?
+
+78
+00:23:36,367 --> 00:23:37,427
+Koltuk otobüsle
+
+79
+00:23:38,579 --> 00:23:54,279
+En kuvvetli ilişki de kompozisyon ilişkisindedir ve bir otobüsün birden çok koltuğu olur. Burada elması her zaman ne tarafta tutuyordum? Bir tarafı elmasta, dolu elmas bir tarafında, çok tarafında da düz bir şekilde iniyordu.
+
+80
+00:23:55,159 --> 00:24:02,119
+Şimdi bunların içeriklerini de dolduralım aslında görelim mesela bir otobüs nesnesi birden fazla koltuk nesnesinin dizisini tutuyor.
+
+81
+00:24:02,119 --> 00:24:04,920
+Bunu da göstermek için yine bir dizi yapısı kullanacağım.
+
+82
+00:24:06,259 --> 00:24:09,579
+Şöyle geleyim mesela, seferle başlayayım yazmaya.
+
+83
+00:24:12,840 --> 00:24:21,320
+Bir seferin tuttuğu veriler, bilgiler, attribütler neler, çıkış yeri oluyor mesela.
+
+84
+00:24:25,875 --> 00:24:37,315
+Varış yere, bunlar işte şehirler, otogarlar vs. gibi düşünebiliriz.
+
+85
+00:24:39,096 --> 00:24:45,655
+Bir tarih saati tutan, veren ve bir de dedim ki bir otobüs, yani hangi otobüs buraya gidiyor?
+
+86
+00:24:51,059 --> 00:25:16,779
+Otobüs tipinde bir nesne tutuyor. Bu atribütler sefere ait. Ben bir sefer nesnesi oluştururken bunun direkt, düşünün sisteme seferler giriliyor. Konstruktör üzerinden direkt bunu yapabilirim. Bir sefer nesnesi oluştururken işte nereye gidiliyor, nereden geliniyor. Direkt yazması için. Benim işte çıkışını versin. Bu bir string değer.
+
+87
+00:25:18,644 --> 00:25:23,844
+Varış yerini söylesin. Bu da bir string değer.
+
+88
+00:25:25,704 --> 00:25:30,003
+Tarih tabii ne zaman gidiyor? Bunu belirtelim.
+
+89
+00:25:30,963 --> 00:25:37,463
+Ve hangi otobüs buraya gidecek? Bunu da söyleyelim ve bu şekilde bir seferi kaydedelim istiyoruz.
+
+90
+00:25:44,948 --> 00:25:59,928
+Peki, otobüste neler olur? Sefer'in tuttuğu bilgiler bunlardı. Otobüsün tuttuğu bilgiler. Onu da yazalım. Otobüs hangi bilgileri var? Onun bir plakası olacak. Otobüsün bir şoför bilgisi olsun.
+
+91
+00:26:03,412 --> 00:26:18,512
+Daha sonra, dedik ki bu otobüste koltuklar var ve bu koltuklar da bir dizide tutulsun. Koltuk tipinde olduğu için şöyle yazıyorum, dizi olarak göstereyim. Otobüs de bunları tutacak.
+
+92
+00:26:25,587 --> 00:26:28,048
+Bunu yazmamız gerekir.
+
+93
+00:26:28,367 --> 00:26:34,027
+İşte getir seterler, get çıkış yeri, set çıkış yeri, get varış yeri, set varış yeri.
+
+94
+00:26:34,107 --> 00:26:36,427
+Buraların hepsini bu şekilde doldurmamız gerekiyor.
+
+95
+00:26:36,527 --> 00:26:39,307
+Ben şimdi çok da uzatıp dağıtmamak için konuyu yazmıyorum.
+
+96
+00:26:39,307 --> 00:26:45,527
+Ama dediğimiz gibi artık üye alanları belirlemişsek bu taraftaki o getir seterlerinde yazılabilir durumda oluyoruz.
+
+97
+00:26:46,347 --> 00:26:50,307
+Burada da otobüsle ilgili işte...
+
+98
+00:26:50,963 --> 00:26:54,884
+Yine dediğimiz gibi get plaka vesaire yazabiliriz bu şekilde.
+
+99
+00:26:59,263 --> 00:27:00,304
+Yazmışken bunu.
+
+100
+00:27:03,743 --> 00:27:10,824
+Bu şekilde yazdığımda ne yapıyorum? Metotlarımda, attribütler üzerinden getiri, setterlerini gösteriyorum.
+
+101
+00:27:12,147 --> 00:27:32,587
+Koltuk, otobüs bu bilgileri tutuyor ve bu şekilde ilerliyor dedik. Bizim burada koltuk sınıfımız vardı. O hangi bilgileri tutuyor onu yazalım. Koltuğun da koltuk numarası olacak. Bunu integer değil, bu da string yapalım. Çünkü işte 1A, 1B gibi şeyler olabiliyor.
+
+102
+00:27:35,307 --> 00:27:38,027
+Koltuk no, koltuk tipi dedik.
+
+103
+00:27:38,836 --> 00:27:49,215
+Teklimi, iklimi vs. Sonra bu koltukla ilgili, şimdi tasarımda şöyle bir şey olacak, koltuklar başlangıçta, default olarak hepsi boş.
+
+104
+00:27:49,836 --> 00:27:57,036
+Ama daha sonra bir kişi rezerve ettikçe ve biletini aldıkça ne olacak bunlar? False olacak, yani doluluk durumunu değiştireceğim.
+
+105
+00:27:57,036 --> 00:28:00,916
+O yüzden böyle bir atribüt tutacağım. Yani koltuk boş mu, boşluk durumu.
+
+106
+00:28:06,036 --> 00:28:12,036
+Geliyorum, boolean bir değerle tutuyorum. True, false olarak değiştireceğim. Bu şekilde tutayım istiyorum.
+
+107
+00:28:13,336 --> 00:28:19,276
+Doğal olarak bunu da hemen işte getter setter'larını yazacak olursam.
+
+108
+00:28:23,476 --> 00:28:47,675
+Bu şekilde işte get koltuk mu, get koltuk tipi. Sonra boşluk durumu, onları da şöyle yazalım. Get koltuk tipi. Bu da yine string. Ondan sonra dedik ki, burada boşluk durumunu şimdi, boşluk durumunu öğrenip daha sonra set etme, setini de ekleyelim, boşluk durumunu. Get boşluk durumu.
+
+109
+00:28:48,756 --> 00:28:52,476
+Dediğim zaman, bunun dönüş tipi, bu diyeyim.
+
+110
+00:28:53,155 --> 00:29:12,516
+Ve bir de bunun mesela seterini de koyalım. Set boşluk durumu dediğim zaman da, artık ilgili o koltuk hangisiyse, koltuk nokta set boşluk durumu ne yapıp, şuraya verdiğim, işte o boşluk neyse, true mu false mu buraya aldığım değer.
+
+111
+00:29:14,132 --> 00:29:30,291
+Şöyle sadece bulayım diyelim yani ne tip bir parametre alıyor. Bu şekilde boşluk durumunu da set edebilirim. Daha sonrasında false'a döndürebilirim. Koltuk rezerv olduğu veya parası ödendiysen.
+
+112
+00:29:31,512 --> 00:29:33,332
+Şöyle toplayalım bunu.
+
+113
+00:29:36,332 --> 00:29:36,812
+Şimdi
+
+114
+00:29:37,683 --> 00:29:42,163
+Seferle ilgili bilgilerim, otobüsle ilgili bilgilerim, koltukla ilgili bilgilerim var.
+
+115
+00:29:43,144 --> 00:29:46,463
+Gelelim şu kısımdaki rezervasyon tarafına.
+
+116
+00:29:47,203 --> 00:29:51,543
+Şimdi dedim ki yolcu, burada dedim gelecek bu yakında bazı aramalar yapacak.
+
+117
+00:29:51,663 --> 00:29:53,963
+Yani yolcunun yaptığı aramaları da ben tutuyorum bir nevi.
+
+118
+00:29:54,364 --> 00:30:03,144
+Sefer günü girdi, nereden nereye gitmek istediğini tercih etti ve ona göre gidip burada ilgili böyle bir sefer var mı yok mu bunu arayacağız.
+
+119
+00:30:04,756 --> 00:30:13,615
+O zaman rezervasyon ekranında ben seferlerin böyle tutulduğu bir dizi de olacak.
+
+120
+00:30:13,776 --> 00:30:17,196
+Sefer tipinde bir dizi yapısı olacak.
+
+121
+00:30:17,696 --> 00:30:20,276
+Burada seferler olacak kullanıcı bunları arayacak.
+
+122
+00:30:20,396 --> 00:30:22,736
+Rezervasyon ekranı da buradan kontrol edecek.
+
+123
+00:30:22,736 --> 00:30:29,496
+Bu kontrolü yaparken rezervasyon ekranı sefer ara diye bir metodu olsun istiyorum.
+
+124
+00:30:31,635 --> 00:30:48,776
+Sefer ara metodu da şunları gerçekleştirsin, şu parametreleri alsın. Ben ona gidişi, gidiş yeri anlamında, işte varış yeri ve günü vereyim.
+
+125
+00:30:50,867 --> 00:31:16,027
+Bana listelesin, ben o tarihi vereyim, bana listelesin, böyle bir sefer var mı, yok mu, turu mu, false mu, hatta öyle bir derd olsun bana, böyle bir sefer, böyle bir gün var mı diye. Daha sonra varsa da bana ne yapsın, o sefer bilgilerini göstersin. Çünkü daha detaylı bilgiler olacak, işte hangi otobüste gidiyor otobüsün şöpörü ney, şuradan.
+
+126
+00:31:16,403 --> 00:31:20,624
+Geldikten sonra bu kısma, buradaki bütün verileri ulaşabilir olacağım artık.
+
+127
+00:31:20,964 --> 00:31:30,764
+Daha sonra göster sefer bilgileri deyip, o sefer nesnesiyle ilgili bütün verileri bana listelesin diyorum.
+
+128
+00:31:30,864 --> 00:31:32,444
+Burada bir dönüş tipi vermeme gerek yok.
+
+129
+00:31:32,564 --> 00:31:35,624
+Çünkü bunun içerisinde sistem altla mesela bir şey yazdıracağım.
+
+130
+00:31:36,324 --> 00:31:37,464
+Dönüş tipi diye bir şey olmaz.
+
+131
+00:31:37,604 --> 00:31:43,524
+Ama içerisinde ben sistem altta bütün verileri, bilgileri, ekranı konsola yazdırırım.
+
+132
+00:31:44,403 --> 00:31:45,983
+Arayüze gönderebilirim.
+
+133
+00:31:46,884 --> 00:31:50,084
+Şimdi göster sefer bilgileri dedim. Bunu da yazdırsın.
+
+134
+00:31:50,743 --> 00:31:54,503
+Ve okeylediğimde şurayı biraz daha düzenli yapayım.
+
+135
+00:31:58,708 --> 00:32:05,708
+Artık benim rezervasyon ekranım var. Bu arada seferlere şurada yine private yapalım. Bu üye alanlar her zaman private.
+
+136
+00:32:07,508 --> 00:32:16,888
+Buraya geldim. Artık diyorum ki yolcu, bir yolcunun birden fazla rezervasyon araması olabilir. Rezervasyon ekranı bunları tutuyordu artık.
+
+137
+00:32:19,768 --> 00:32:23,928
+Ve bu rezervasyon ekranı da ne yapıyor?
+
+138
+00:32:25,044 --> 00:32:30,524
+Birden fazla sefer bilgisini tutuyor ki oradan kontrol etsin seferleri.
+
+139
+00:32:32,724 --> 00:32:38,903
+Şimdi, rezervasyon ekranındayım, sefer aradım, bilgilerini gösterdim.
+
+140
+00:32:39,684 --> 00:32:42,964
+Bundan sonra artık yapacağım şey, kullanıcı seferi gördü.
+
+141
+00:32:42,964 --> 00:32:45,024
+Artık yolcu.
+
+142
+00:32:45,715 --> 00:32:52,455
+Yine bu taraftaki bir metotla otobüsü seçip, orada belki birkaç otobüs farklı, otobüs listelendi.
+
+143
+00:32:53,455 --> 00:32:56,336
+Oradan otobüs seçecek, daha sonra ne yapacak? Koltuk seçecek.
+
+144
+00:32:57,316 --> 00:33:00,195
+O yüzden bunları iki farklı metotla ifade ediyorum burada.
+
+145
+00:33:00,195 --> 00:33:10,975
+Diyorum ki, otobüs seç, işte bir bus x diye bir otobüs diyelim.
+
+146
+00:33:11,635 --> 00:33:13,155
+Bu otobüs tipinde bir.
+
+147
+00:33:13,652 --> 00:33:30,851
+Bunu seç. Bunu seç dediğim zaman artık kullanıcıya, o yolcuya bu otobüsten bir koltuğun gösterilmesini istiyorum. Onu da koltuk seç metoduyla artık listelenecek koltuklar. Daha sonra koltuk seç ile de gelsin diyorum. Kullanıcı oradan.
+
+148
+00:33:43,380 --> 00:33:52,839
+Bu şekilde yaptığımda artık yolcunun listelenen otobüslerden birini seçti. Sonra listelenen koltuklar geldi ekranda, koltuklardan seçti.
+
+149
+00:33:53,500 --> 00:34:00,839
+Ve artık rezervasyona hazır bir ekran oluştu. Yani bu veriler elimde artık benim plancım seçtiği otobüs var, seçtiği koltuk var.
+
+150
+00:34:01,420 --> 00:34:10,140
+Artık rezervasyon yapabileceği bir noktadayım. Bunu da ayrı bir sınıfla ifade ediyorum. Rezervasyonları, yapılan rezervasyonları tuttum.
+
+151
+00:34:10,675 --> 00:34:15,755
+Onun ismi de rezervasyon sınıfı olacak.
+
+152
+00:34:16,916 --> 00:34:21,076
+Rezervasyon sınıfından her bir rezervasyonun neyi olur?
+
+153
+00:34:21,076 --> 00:34:23,076
+İşte bir, ona unique bir...
+
+154
+00:34:24,980 --> 00:34:35,380
+Numarası vardır, bir rezervasyon ailesi vardır. Hatta bunu da belki string vermek daha mantıklı çünkü harf de kullanılabiliyor bu numaralar içerisinde.
+
+155
+00:34:36,420 --> 00:34:41,500
+Rezervasyonun bir numarası var. Daha sonra, şimdi ben bunu okuyayım.
+
+156
+00:34:42,516 --> 00:35:05,376
+Bu rezervasyon yapılıyor. Bir de bizde bir aşama daha vardı. Kullanıcının ödeme yapma aşaması vardı. Yani bir rezervasyon net olarak ona eğlenmesi için bir de kullanıcının ödeme yapması gerekiyordu. Onu da ödeme bilgilerini de ayrı bir sınıfta tutayım diye şuraya bir ödeme sınıfı açıyorum. Burada da ödeme bilgilerini de tutacağım. Bir ödemenin neyi vardır? Tarihi vardır.
+
+157
+00:35:14,068 --> 00:35:16,108
+Bu demek, sütları vardır.
+
+158
+00:35:19,956 --> 00:35:32,996
+Hatta ödemeye de tabii unique bir ID verilmesi daha mantıklı olabilir. Bir makbuz numarası olur, bir fiş numarası olur, bir şey vardır. O da eklenebilir. Ödemenin de böyle bilgileri olduğunu söylüyorum.
+
+159
+00:35:32,996 --> 00:35:47,956
+Ve diyorum ki bir kişi rezervasyonla listelen burada seçilen bazı değerler var. Sefer bilgisi, otobüs bilgisi, koltuk bilgisi. Bundan sonra gelip burada rezervasyon yapılıyor.
+
+160
+00:35:47,956 --> 00:35:57,436
+daha sonra o rezervasyonun da o rezervasyon verisinde bir ne olacak ödemesi olacak.
+
+161
+00:35:57,436 --> 00:36:11,195
+Burada da şunu kullanacağım. Diyeceğim ki rezervasyonun bir ödemesi. Ödeme tipinde bir.
+
+162
+00:36:11,195 --> 00:36:15,796
+Nesneyi bunu da tutması gerekiyor. Eğer ödeme yapılması bu zaten nal bir değerdir.
+
+163
+00:36:16,052 --> 00:36:26,931
+Ve onunla ayrı bir metodu yazılır. İşte şu saate kadar ödeme yapılmalıysa ne olacak? O bilet tekrar buradan eski hale döndürülecek, tekrar rezerveye açık hale gelecek gibi.
+
+164
+00:36:26,931 --> 00:36:35,931
+Şimdi rezervasyonun bir ödeme verisi tuttuğunu biliyorum. Ve diyorum ki rezervasyon sınıfında rezervasyon yap diye bir de...
+
+165
+00:36:43,123 --> 00:36:55,643
+Yukarıdan neler geldi? Bazı bilgiler geldi. Yolcunun bilgisini aldım. İşte seferin bilgisini aldım. Yolcunun seçtiği sefer bilgisini aldım ve koltuk bilgisini aldım. Hangi koltuğu?
+
+166
+00:36:56,019 --> 00:37:16,619
+Tercih etmiş bu yolcu. Bunu biliyorum ve bunlarla bir rezervasyon oluşturuyorum. Bu rezervasyon oluşturduğum sırada bu metodun içerisinde şuradaki rezervasyon numarasını da atamış oluyorum. Bu rezervasyona ait bir şekilde ve ilgili yolcu, ilgili bir rezervasyon numarasıyla ilgili sefer ve seçtiği koltuğa atamış oluyorum.
+
+167
+00:37:17,619 --> 00:37:22,119
+Tabi rezervasyon içerisinde diyorum ki bunun bir de ödemesi var.
+
+168
+00:37:24,788 --> 00:37:38,847
+Ödeme yap metodu var. Bu da seçilen rezervasyon, belirlenen rezervasyon numarasına göre bir ödeme olacağı için o rezervasyon no'ya göre onu parametre alıp onun ödemesini yapsın.
+
+169
+00:37:39,847 --> 00:37:48,768
+Ben düşünün bir şey döndürmesine gerek yok. Ödemesini yapsın ve nereye gönderiyorum aslında şu metodun içerisinde onu şu sınıfa gönderip burada ödeme al.
+
+170
+00:37:50,068 --> 00:38:00,148
+Şeklindeki metoda gönderiyorum aslında. Ödeme alsın ve buraya da işlensin o ödeme tarihi, ödeme tutarı bir ödeme nesnesi olarak tutulsun.
+
+171
+00:38:06,036 --> 00:38:16,476
+Şimdi, rezervasyon ekranımdaki metotlarımı yazdım. Rezervasyon tarafındaki metotlarımı yazdım. Ödemeyi yazdım.
+
+172
+00:38:28,755 --> 00:38:51,836
+Daha sonra sefer bilgileri göstermek için şurada, şu sınıfta şöyle bir metot olsun diyorum. Bana seferle ilgili bilgileri böyle detaylı bir şekilde yazdırsın. Sefer bilgilerini alayım. Bu bilgileri bana göndersin o seferin.
+
+173
+00:38:52,179 --> 00:39:12,119
+Verisini göndersin ki ben burada da onları listeleteyim o sefer bilgilerini. Bu şekilde yaptıktan sonra artık diagramımda koyacağım son işlem, yapacağım son işlem. Şuradaki ilişkilerin kaçak açlık birebir gibi olup olmamaları.
+
+174
+00:39:18,068 --> 00:39:21,387
+Arama yaptırması, rezervasyon ekranı işlem yaptırması mümkündür.
+
+175
+00:39:22,588 --> 00:39:29,847
+Daha sonra diyorum ki bir rezervasyon ekranı birden fazla sefer tutulur. Zaten dizisi de burada görünüyor.
+
+176
+00:39:30,788 --> 00:39:34,068
+Daha sonra diyorum ki bir rezervasyon ekranı bir şey listelenir ve o...
+
+177
+00:39:34,996 --> 00:39:50,695
+Nedir? Bir rezervasyondur. Yani bir listelenen, rezervasyon ekranında listelenen bir nesnenin nedir? Rezervasyonda olma ihtimali ya rezerve edilir, yani ya o kullanıcı tarafından seçilir ya da seçilmez.
+
+178
+00:39:50,695 --> 00:39:59,796
+Burada aslında ya bu rezervasyonu dönüşür ya dönüşmez gibi düşündüğümde 0-1 şeklinde olabilir.
+
+179
+00:40:00,436 --> 00:40:04,396
+Bir rezervasyon ekranı. Ya bir rezervasyona dönüşür ya da dönüşmez.
+
+180
+00:40:05,256 --> 00:40:13,096
+Sonrasında bir rezervasyonun nedir? Bir tane ödemesi vardır. Birden fazla ödemesi olmaz. Bu direkt birebirlik bir ilişki olur.
+
+181
+00:40:14,856 --> 00:40:22,796
+Geldim sefer tarafında. Bir seferde nedir? Bir tane otobüs vardır. Yani bir sefer bilgisi bir tane otobüsü içerir.
+
+182
+00:40:24,851 --> 00:40:30,371
+Onaylıyorum, birebir yaptım. Burası zaten bire çok şeklinde olacak.
+
+183
+00:40:31,671 --> 00:40:34,631
+Şimdi sınıf diagramın genel hatlarıyla bu şekilde.
+
+184
+00:40:35,572 --> 00:40:40,671
+Yolcu arama yapabilir, daha sonra rezervasyon yapabilir, daha sonra ödeme yapabilir.
+
+185
+00:40:41,491 --> 00:40:44,271
+O arama yaptığı ekran nedir? Sefer bilgilerini alır.
+
+186
+00:40:44,751 --> 00:40:49,591
+O sefer bilgilerin içerisinde otobüs bilgileri ve onun içerisinde koltuk bilgileri bulunur.
+
+187
+00:40:50,579 --> 00:40:55,359
+Şimdi class diagramını oluşturduktan sonra benden istediği neydi soruda?
+
+188
+00:40:55,359 --> 00:41:01,159
+Class diagramı istiyordu. Bir de sequence diagramı istiyordu.
+
+189
+00:41:02,079 --> 00:41:05,760
+Sınıf şerbimize göre sequence diagram istiyor.
+
+190
+00:41:06,380 --> 00:41:11,679
+Şimdi sequence diagramda bizim olayımız neydi? Şurada hemen bir sequence diagram.
+
+191
+00:41:14,359 --> 00:41:15,800
+Dynamic viewland.
+
+192
+00:41:16,563 --> 00:41:40,384
+Sekoastiyangram oluşturuyorum. Biz burada bir işleme ait, mesela şimdi rezervasyon yapılma işlemi. Buradaki bu işlem boyunca hangi sınıftaki, hangi nesne, hangi metotlar üzerinden haberleşiyor ve bu akış nasıl oluyor, bu sıralama nasıl oluyor? Önce şu şuna gidiyor, buradan şu metot şunu döndürüyor gibi böyle bir akışta vereceğim burada yapılacak işlere.
+
+193
+00:41:40,384 --> 00:41:42,503
+Şimdi başlıyorum yazmaya.
+
+194
+00:41:44,052 --> 00:41:56,752
+Benim diyorum ki Object Life'la şunu seçtim. Burada her bir sınıftan oluşturduğum nesnelerin aslında hayat döngüleri, onların o akıştaki sıralamalarını göreceğim.
+
+195
+00:41:56,872 --> 00:42:06,292
+Şimdi benim bir yolcu nesnem var. Yolcu isimli bir nesne var. Bu yolcu sınıfından nesne, iki nokta üst üste sınıf.
+
+196
+00:42:06,835 --> 00:42:13,075
+Şimdi ben bu yolcu nesnesinin neler yaptığı, hangi metodları çağırdığı ve neler döndürdüğünü göstereceğim.
+
+197
+00:42:13,075 --> 00:42:22,495
+Bu diyorum ki yine bir başka obje olan nereye gidiyor? Rezervasyon sınıfından bir nesne alacak.
+
+198
+00:42:23,055 --> 00:42:28,955
+Burada eğer bir nesne isim vermem gerekmiyorsa o nesneyi kullanmayacaksam şu şekilde.
+
+199
+00:42:29,652 --> 00:42:39,652
+Kullanmayacaksam derken o nesnenin ismiyle akıştığı bir işlem gerçekleştirmiyorsam, bu şekilde sadece sınıf adını verip,
+
+200
+00:42:42,851 --> 00:42:54,752
+geçiyorum, iki nokta üst üste koydum, bu şu anlama geliyor, buradaki nesne, belli bir ismi yok şu an ama bu bir nesne, rezervasyon ekranı artık bir nesne, onun o sınıftaki metodların gerçekleştirdiği işi yapar anlamında.
+
+201
+00:42:55,987 --> 00:43:17,887
+Yolcu dedim, rezervasyon ekranım vardı. Sonra benim sınıf diagramına tekrar bakayım. Rezervasyon ekranı iletişimde olacağı sınıf hangisi? Sefer sınıfa. Onu da geldim. Buraya bir nesne daha oluşturdum. Bu da Sefer isimli, Sefer sınıfından bir nesne olsun.
+
+202
+00:43:23,572 --> 00:43:37,412
+İlk yaptığı şey neydi? Bu taraftan bir sefer araması yapıyordu. Yani ben, world CSS'i bu taraftan rezervasyon ekranındaki hangi metodu çağırıyor?
+
+203
+00:43:41,012 --> 00:43:47,811
+Sefer arayı çağırıyor. O zaman ben şöyle diyorum, şimdi activation barını şuraya koyacağım.
+
+204
+00:43:48,192 --> 00:43:56,372
+Üstüne tıkladığımda buraya hemen bir aktivasyon varı geldi. Bunlar arasında iletişim kuracağım. Buraya da bir aktivasyon varı koydum.
+
+205
+00:43:57,652 --> 00:44:04,231
+Şimdi bu bunda diyorum ki gidiyor, call message'ı seçtim ve çektim çizgimi.
+
+206
+00:44:13,043 --> 00:44:19,983
+Birilen parametreler nelerdi? Çıkış yeri, varış yeri, tarihi. Ben buraya direkt tüm parametreler diyeceğim.
+
+207
+00:44:22,184 --> 00:44:33,384
+Class diagramından görünen. Sefer ara ilgili parametrelerle rezervasyon ekranına gidildi. Artık burada ne yapılacak? Arama yapılacak.
+
+208
+00:44:34,036 --> 00:44:40,896
+Bakılıyordu, sefer ara nasıl bir metottu? Dönüşte bana bir true mu, false mu şeklinde döndürüyordu.
+
+209
+00:44:41,836 --> 00:44:48,556
+Ben burada o zaman eğer böyle bir sefer varsa, çünkü kullanıcının rezervasyon yaptığı durumu şu an kurguluyorum.
+
+210
+00:44:48,556 --> 00:44:54,615
+Ne yapıyorum? Dönüş mesajı olarak true döndürürüm diyorum.
+
+211
+00:44:59,155 --> 00:45:21,556
+Tıklıyorum ve bunun dönüşü diyorum true olsun. Böyle bir sefer arandı ve var. Şimdi sefer var, o zaman başlıyorum yazmaya. Ne yapacağım şimdi? Gideceğim o seferle ilgili otobüs bilgilerini, ki sonrası da koltuk bilgilerini alabilmek için, sefer bilgilerini al diyeceğim. Şu rezervasyon ekranında.
+
+212
+00:45:22,068 --> 00:45:28,368
+Ne yapacağım? Şuraya gideceğim. Sefer bilgilerini aldayacağım. Seferle ilgili otobüs bilgilerini de çekebilmek için.
+
+213
+00:45:29,108 --> 00:45:35,528
+Geldim o zaman burada diyorum ki, şuraya tabii sefere bir tane de activation barını koymam lazım.
+
+214
+00:45:36,448 --> 00:45:37,548
+Sonra call diyorum.
+
+215
+00:45:39,548 --> 00:45:45,388
+Ve bayağı bir aşağıya çekince bunu nasıl havasını şaşırttık.
+
+216
+00:45:50,452 --> 00:45:51,771
+Bunu şöyle yapalım.
+
+217
+00:45:54,992 --> 00:46:00,932
+Burada yeni bir aktivasyon başlatmış gibi olalım ki, iş bitti çünkü.
+
+218
+00:46:02,012 --> 00:46:11,972
+Şimdi buradan, sefer bilgilerini al ve bana bu bilgileri döndür.
+
+219
+00:46:11,972 --> 00:46:13,231
+Geri gelsin bu bilgiler.
+
+220
+00:46:14,932 --> 00:46:18,012
+Çünkü ben artık otobüs verisine ulaşmak istiyorum.
+
+221
+00:46:19,059 --> 00:46:23,099
+Sefer sınıfı bana bu bilgileri döndürür. Neyi döndürecek?
+
+222
+00:46:23,800 --> 00:46:25,239
+İlgili seferi döndürecek.
+
+223
+00:46:26,019 --> 00:46:27,500
+Onun tuttuğu bilgileri döndürecek.
+
+224
+00:46:29,119 --> 00:46:31,059
+Şimdi, burada...
+
+225
+00:46:35,219 --> 00:46:54,399
+Ben göster sefer bilgileri demiştim. Yani oradaki ekranda kullanılacağı görülmesini istediğim bilgiler vardı. O yüzden buranın kendisinin bir metodu var. Eğer kendi üzerindeki bir metodu çağırıyorsam, yani burada mesela oku çizdiğim zaman gittiğim sınıftaki metodu çağırıyorum manasını.
+
+226
+00:47:01,300 --> 00:47:07,900
+Col dediğim yeri kendi üstümde şöyle tıkladığım zaman ne yapıyor bana?
+
+227
+00:47:08,420 --> 00:47:14,520
+Kendi üzerinde dönen kendi sınıfına ait nesli metodu çağırdığını söylemiş oluyorum bu şekilde.
+
+228
+00:47:14,520 --> 00:47:23,579
+Bunu da azıcık aşağıya kaydıralım sonra şunun ismini girelim.
+
+229
+00:47:24,320 --> 00:47:28,220
+Göster sefer bilgileriyle çağıracağım metot.
+
+230
+00:47:29,268 --> 00:47:41,648
+Kullanıcıya, yolcuya listelenecek bilgilerde hangisine göre? O bana dönen sefer meselesine göre sefer bilgilerini gösterecektim.
+
+231
+00:47:42,648 --> 00:47:50,728
+Şimdi buradan ilgili gösterimi yaptım. Artık kullanıcıda ne işi var yolcu tarafında? Seçim işi kalıyor.
+
+232
+00:47:50,728 --> 00:47:52,228
+Geliyorum.
+
+233
+00:47:56,052 --> 00:48:13,831
+Bu tarafta diyorum ki artık otobüs seçecek. Bilgiler listeli, sefer bilgilerin otobüsler listelendi. Artık bu kullanıcının ne yapmasını istiyorum? Otobüs seçmesini istiyorum. Şuradaki otobüs seç. Bu metot çağrısını istiyorum.
+
+234
+00:48:18,099 --> 00:48:26,159
+Otobüs seç diyeceğim ve oradaki otobüslerden, istelenenlerden mesela lastik seçilmiş olsun diyelim.
+
+235
+00:48:27,639 --> 00:48:31,460
+Şimdi ilgili otobüse gidip ne yapması lazım artık?
+
+236
+00:48:31,460 --> 00:48:37,659
+Bu taraftan şu yolu takip edip benim o ilgili otobüsteki koltuklara ulaşmam gerekecek.
+
+237
+00:48:38,360 --> 00:48:40,900
+Koltukların boşluk durumuna ulaşmam gerekecek.
+
+238
+00:48:41,860 --> 00:48:43,400
+O yüzden otobüs seçtim.
+
+239
+00:48:46,804 --> 00:49:04,503
+Git boşluk durumuna kadar gidebilmem lazım. Ne yapıyorum? Rezervasyon ekranından artık otobüsün, otobüs sınıfının boş koltukları listeli isimli bir metodunun olması lazım. Olmasa yazmamışım burada.
+
+240
+00:49:04,503 --> 00:49:11,284
+Burada şöyle bir metot olmalı. Boş koltukları listeli.
+
+241
+00:49:17,204 --> 00:49:19,563
+Bu listede döndürsün bunu boş koltukları.
+
+242
+00:49:20,344 --> 00:49:22,463
+Boş koltukları listele metoduyla.
+
+243
+00:49:27,476 --> 00:49:39,596
+Benim görebilmem lazım. O zaman rezervasyon ekranından bunu seçebilmem lazım. Bunu çağırabilmem lazım. Benim şuraya bir o zaman otobüs sınıfı, otobüs nesnem gerekiyor. Onu yazayım.
+
+244
+00:49:43,923 --> 00:49:47,903
+Basics otobüsten, hatta koltuğu da kullanacağım.
+
+245
+00:49:50,363 --> 00:49:53,903
+Burada koltuk Y diye bir koltuğum var diyelim.
+
+246
+00:49:54,783 --> 00:49:55,763
+Koltuk sınıfı.
+
+247
+00:49:58,423 --> 00:50:00,923
+Şöyle biraz daha yakın tutalım ki.
+
+248
+00:50:04,384 --> 00:50:07,143
+Biraz daha çünkü bir de en son adım olan.
+
+249
+00:50:08,103 --> 00:50:09,463
+Gelmişken onu da yazalım.
+
+250
+00:50:09,963 --> 00:50:10,723
+Rezervasyonumda.
+
+251
+00:50:11,284 --> 00:50:18,824
+Burada olacak. Rezervasyon içinde belli bir nesna mı belirtmiyorum. Bu şekilde yazıyorum.
+
+252
+00:50:20,423 --> 00:50:27,304
+Şimdi otobüs seçi çağırdım rezervasyonun yakından. Sonra oradan gidip benim otobüs sınıfında bakalım.
+
+253
+00:50:28,983 --> 00:50:33,563
+Boş koltuk ne durumdu? Boş koltukları listelerini yaptırmak istiyorum.
+
+254
+00:50:33,563 --> 00:50:36,563
+Buraya çağırdım.
+
+255
+00:50:37,331 --> 00:50:44,351
+Neydi otobüs sınıfındaki metodun adı? Boş koltukları listele.
+
+256
+00:50:46,591 --> 00:50:53,351
+Bunu okeyladım. Boş koltukları listele dedikten sonra return olarak artık ne döndürmesini bekliyorum?
+
+257
+00:50:54,871 --> 00:51:00,411
+Buradaki koltuk bilgileri. Ama tabii ki bunun bir adımı daha var.
+
+258
+00:51:01,012 --> 00:51:25,351
+Nereden bu boş koltukları listeletecek? Gidecek otobüste koltuk sınıfından tek tek bakacak. Is available mu? Boş mu? Boşluk durumu nedir? Ne değildir? Bunları kontrol edecek. Yani şuradaki koltuk sınıfta dik koltuk nesnelerini tutar. Bunların da her birinin boşluk durumu trofos olarak belirtilmiştir. Bunu da anlayabilmesi için ne yapacak? Git boşluk durumlarına bakacak.
+
+259
+00:51:26,739 --> 00:51:31,539
+O yüzden buradaki otobüs de aslında bir de koltuğa aletmesi gerekiyor.
+
+260
+00:51:37,684 --> 00:51:47,224
+Activation barını koyup, otobüsün de ne yapmasını istiyorum bu şekilde, Git boşluk durumunu koltuktan almasını istiyorum.
+
+261
+00:51:54,132 --> 00:51:57,532
+Git boşluk durumunu aldım. Geriye döndüreceğim.
+
+262
+00:52:01,268 --> 00:52:02,927
+Boşluk bilgisini döndüreceğim.
+
+263
+00:52:05,047 --> 00:52:06,068
+True mu, false mu?
+
+264
+00:52:06,927 --> 00:52:12,608
+Bunu aldıktan sonra artık bunların içinden şey gibi düşünebiliriz, true olanları seçme listeli gibi.
+
+265
+00:52:12,608 --> 00:52:15,088
+O zaman bana döndürecek şey ne artık?
+
+266
+00:52:16,047 --> 00:52:16,907
+Boltuk bilgileri.
+
+267
+00:52:23,411 --> 00:52:34,351
+Bunları da ondurdum. Dediğim gibi, kullanıcı otobüs seçtikten sonra otobüs sınıfına gidip baktım. Daha sonra boşluk durumlarını inceledim. Bunu da koltuk sınıfından yaptım.
+
+268
+00:52:36,092 --> 00:52:41,072
+Ve dönüş verilerini alarak artık listelememi gerçekleştirdim. Boş koltuklar bulunuyor.
+
+269
+00:52:41,911 --> 00:52:50,672
+Sonraki aşamada artık koltuklar listelendikten sonra ne yapılıyor rezervasyon ekranı metodlarından biri? Koltuk seçme var. Koltuk seç kısmı var.
+
+270
+00:52:53,268 --> 00:53:03,308
+Şimdi koltuk seçim, geliyorum yeni bir activation var atıyorum şuraya. Diyorum ki rezervasyon ekranı gibi koltuk seçeceğim artık.
+
+271
+00:53:03,308 --> 00:53:19,408
+Ben şu şekilde veriyorum, gönderiyorum. Koltuk seç. Burada da artık koltuk Y seç. Koltuğu seçtim.
+
+272
+00:53:19,764 --> 00:53:31,264
+Artık koltuğumda seçildikten sonra, şurada bakın, rezervasyon sınıfında ne vardı artık? Yolcu bilgisay elimde, sefer bilgisay elimde, koltuğu da seçmişsem rezervasyon yapma metodunu çağırabilirim.
+
+273
+00:53:32,484 --> 00:53:44,184
+Rezervasyon metodu çağırmak için şuraya bir aktive işin varını attım. Bir mesaj gönderiyorum. Bu da ne olacak?
+
+274
+00:53:46,931 --> 00:54:01,231
+Rezervasyon yap olacak. Gönderdiğim bilgiler yolcu bilgisi, sefer bilgisi ve koltuk yeğenin bilgisi.
+
+275
+00:54:02,152 --> 00:54:07,052
+Buna göre artık rezervasyonum yapılacak dönüş olarak da nedir?
+
+276
+00:54:10,547 --> 00:54:21,427
+Rezervasyonun onayına dair ekrana bir onay kutucu çıkarılır, bir bilgi yazdırılır. Rezervasyon onayı göndermiş olur.
+
+277
+00:54:21,427 --> 00:54:25,419
+Bu şekilde ben...
+
+278
+00:54:25,844 --> 00:54:38,003
+Sekvens diagramımı oluşturabiliyorum. Sıra sıra bakın. Her birinin sıralaması şaşmayacak şekilde. Burada kalkıp da otobüs seçi yukarı yazayım, sonra sefer arayı aşağıya yazayım yapamam. Bu sıralama çok önemli.
+
+279
+00:54:38,643 --> 00:54:49,623
+Hatta okunabilirliği artırmak adına, sıralama şurada belki karıştırılabilir okların yukarısı aşağısı. Şöyle yazmak da ne güzel bir alışkanlık olur.
+
+280
+00:54:51,956 --> 00:55:13,976
+İlk başlangıç değil, bir bu oldu. İşte iki bu mesajı aldım, bu dönüşü aldım. Aynı şekilde burada üç buydu gibi böyle bu sıralamaları vererek dört bu beş bu altı yedi sekiz dokuz on on bir şeklinde o sıralamaları da vererek akışı bu şekilde belirlemek gerekiyor.
+
+281
+00:55:13,976 --> 00:55:17,796
+Burada sıra bizim için çok önemli. Ardışıl, sekvenlik diagramlarda.
+
+282
+00:55:21,460 --> 00:55:37,079
+Evet, bu dediğimiz gibi bir kısmıydı. Programın tamamı değil. Burada yaptığımız şey ne? Bir rezervasyon yapımı aşaması. Ödeme de sayıda, mesela sistemde ödeme de var. Onun için de ya bunun üzerine daha devam ettirerek ya da ödeme için ayrı bir şekilde çizimini yaparak devam ettirirdik.
+
+283
+00:55:38,360 --> 00:55:43,079
+Şimdi class diagramını yaptık.
+
+284
+00:55:43,279 --> 00:55:45,079
+Sequence diagramında...
+
+285
+00:55:45,235 --> 00:55:51,255
+Oluşturulansında tam oluşturulan nesneler, hangi metodları hangi sırayla gerçekleştiriyor bunu gösterdik.
+
+286
+00:55:51,255 --> 00:55:54,475
+Çünkü klas diagramda ne yaptık? Her birini bir anda vermiştik.
+
+287
+00:55:55,096 --> 00:56:01,036
+Sequencing güzelliği burada ne oluyor? Her bir metodu hangi sırada kullandığımı söylemiş oluyorum.
+
+288
+00:56:02,155 --> 00:56:05,875
+Şimdi de diğer soru da bizden istenen.
+
+289
+00:56:10,643 --> 00:56:13,263
+Activity ve State Diagramları geldik.
+
+290
+00:56:14,443 --> 00:56:23,443
+Activity Diagram'da bir işlemi, ben yine rezervasyon yapılma işlemiyle devam edeceğim.
+
+291
+00:56:24,384 --> 00:56:31,864
+Rezervasyon yapılma işleminde hangi işlemler, hangi aksiyonlar, hangi sırayla oluyor?
+
+292
+00:56:31,864 --> 00:56:34,503
+Bir akışta yine bunu gösteriyoruz.
+
+293
+00:56:35,083 --> 00:56:36,043
+Ama bu daha böyle.
+
+294
+00:56:37,652 --> 00:56:41,851
+Programlamadaki o akış diagramlarına benzeyen şekliyle gelecek.
+
+295
+00:56:43,612 --> 00:56:46,592
+Burada activity diagramı seçiyorum.
+
+296
+00:56:46,592 --> 00:56:50,791
+Şimdi benim senaryom rezervasyon yapma senaryosuydu.
+
+297
+00:56:50,911 --> 00:56:54,391
+Bir şeyin startı için önce senaryo startı şunu koyuyorum.
+
+298
+00:56:55,831 --> 00:57:00,791
+Daha sonra diyorum ki, aktivitelerim var, neler var?
+
+299
+00:57:00,971 --> 00:57:02,351
+Mesela kullanıcı.
+
+300
+00:57:03,476 --> 00:57:09,836
+Yolcu diyelim ve sistemimiz yolculardan olacak. Yolcu ne yapıyor diyorum? Sisteme girer diyorum.
+
+301
+00:57:12,176 --> 00:57:28,716
+Sisteme giriş yaptım. Sonra bir başka aktivite olarak yolcudan ne istiyorduk biz? Sefer bilgisi girerdi yolcu. Sefer bilgilerini girerdi. Yani aradığı seferi işte, şuraya gitmek istiyorum şeklinde.
+
+302
+00:57:29,652 --> 00:57:42,732
+Yolcu bu bilgiyle giriyor. Daha sonra bir aktivite daha ne var? Sistem o girilen bilgilere göre ne yapıyor? Kontrol ediyor. Böyle bir sefer var mı yok mu?
+
+303
+00:57:50,068 --> 00:57:56,387
+Sistem bunu kontrol etti. Daha sonra burada, şimdi akış şöyle ilerliyor, evet.
+
+304
+00:57:59,447 --> 00:58:06,947
+Önce bu geldi, sonra bu oldu. Sonra sistem bunu kontrol etti, verilen, girilen verilere göre.
+
+305
+00:58:06,947 --> 00:58:13,487
+Şimdi burada bir karar kısmı çıkıyor ortaya. Sistem bunları kontrol etti.
+
+306
+00:58:14,291 --> 00:58:25,211
+Sefer var mı, yok mu? Her iki duruma göre farklı bir aksiyon alacağım için ne yapıyorum burada? Şunu kullanıyorum. Kulluyorum ki burada bir decision var artık. Geldim elması koydum.
+
+307
+00:58:27,332 --> 00:58:32,492
+Ondan sonra yine bir transition ile.
+
+308
+00:58:33,331 --> 00:58:48,572
+Şurada artık bir belirtici olması adına bu neyi bakıyor, neyi kontrol, neyi karar veriyor anlamında bir açıklama olsun diyebilirim ki sefer var mı? Varsa şu yoksa bu diyeceğim çünkü.
+
+309
+00:58:49,092 --> 00:58:53,572
+Sistem kontrol etti. Sefer var mı? Varsa...
+
+310
+00:58:53,664 --> 00:59:04,023
+Evet, sistem yolcu otobüsünü seçsin, devam etsin diyeceğim. Yoksa tekrardan yolcuya diyeceğim ki, böyle bir sefer yok, sen tekrardan sefer bilgisi gir.
+
+311
+00:59:04,023 --> 00:59:13,244
+O zaman iki aşamalı, iki kırılımda, ya yolcuya tekrar sefer bilgisi girdireceğim eğer böyle bir şey yoksa.
+
+312
+00:59:21,139 --> 00:59:22,920
+Kıra kıra koymak daha iyi.
+
+313
+00:59:24,980 --> 00:59:27,920
+Bunun olayı neydi? Sefer yoksa.
+
+314
+00:59:28,860 --> 00:59:31,340
+O zaman da yok diyelim. Sefer yok.
+
+315
+00:59:32,420 --> 00:59:36,599
+Yoksa tekrar girsin. Varsa program akışa devam etsin.
+
+316
+00:59:37,420 --> 00:59:43,599
+O zaman yeni bir aktivite olarak sefer varsa artık yolcudan ne yapmasını istiyorduk?
+
+317
+00:59:44,820 --> 00:59:46,460
+Otobüs seçmesini istiyorduk.
+
+318
+00:59:51,059 --> 00:59:56,280
+Bu da gelsin şuradan. Artık dedik ki burada var.
+
+319
+01:00:00,755 --> 01:00:04,956
+O zaman yolcu otobüsü seçsin. Şuna da var diyelim.
+
+320
+01:00:08,036 --> 01:00:13,335
+Sefer varsa otobüsünü seçti. Bundan sonra ne oluyordu otobüs seçtikten sonra?
+
+321
+01:00:14,916 --> 01:00:23,795
+Oradaki boş koltuklar, koltuk bilgileri yolcuya el istiliniyordu, gösteriliyordu.
+
+322
+01:00:28,724 --> 01:00:34,903
+Boş koltuk bilgileri yolcuya veriler.
+
+323
+01:00:38,963 --> 01:00:51,224
+Boş koltuk bilgileri yolcuya verildikten sonra, daha sonra yolcu açılan ekranda ne yapıyordu? Koltuğunu seçiyordu.
+
+324
+01:00:51,923 --> 01:00:57,464
+Ve rezervasyon yapması için bir şey daha yapması gerekiyordu. İletişim bilgilerine de giriyordu oraya.
+
+325
+01:00:57,724 --> 01:01:02,244
+İşte adresi, telefonu vs. kendisiyle ilgili bazı kişisel bilgileri de orada alıyorduk.
+
+326
+01:01:02,864 --> 01:01:07,464
+O zaman kullanacağım, burada yolcu hem koltuk seçiyor. Hem de iletişim bilgisi giriyor.
+
+327
+01:01:07,464 --> 01:01:14,764
+Yani burada bir ne var? Bir senkronizasyon, eş zamanlı bir iş var aynı anda yapılmasını istediğimiz işler.
+
+328
+01:01:15,084 --> 01:01:18,344
+Veya ikisi tamamlanmadan bir sonraki aşamaya geçmeyeceğimiz işler.
+
+329
+01:01:19,027 --> 01:01:23,047
+O zaman burada şöyle bir kırılım, bir dallanma oluşturması için.
+
+330
+01:01:23,987 --> 01:01:29,827
+Önce tabii aktivitelerimi yazayım, sonra da onları nasıl eş zamanlıyorum, onu göstereyim.
+
+331
+01:01:30,407 --> 01:01:34,887
+Bunun bir tanesi de ki, bunların şimdi koltuk seçecek, yolcu koltuk seçecek.
+
+332
+01:01:39,027 --> 01:01:46,507
+Yolcu koltuk seçecek, bir de demek ki yolcu kişisel bilgiler, iletişim bilgilerini girecek.
+
+333
+01:01:50,547 --> 01:01:53,268
+Rezervasyon olayına geçebilmek için çünkü.
+
+334
+01:01:54,327 --> 01:02:01,467
+Ve bu X tamamlandıktan sonra benim şuraya geleceğim, rezervasyon yapılıra geleceğim.
+
+335
+01:02:04,127 --> 01:02:07,647
+O zaman buradaki eş zamanlılığı şöyle göstereceğim.
+
+336
+01:02:09,967 --> 01:02:13,708
+Şöyle bir senkronizasyon çizgimi aldım.
+
+337
+01:02:14,867 --> 01:02:16,967
+Buraya diyorum ki, şuna gel.
+
+338
+01:02:38,996 --> 01:03:00,516
+Synchronization barını aldım. Sonra transition'ı buna verdim. Artık burada bir çatallanma, bir dallanma yapacağım. Çünkü bu ikisinin de olmasını istiyorum. Bunu seçsem, bunu da alsın. Bu ikisi olsun.
+
+339
+01:03:01,204 --> 01:03:07,284
+Daha sonra bu ikisi tamamlanıp, o zaman bir synchronization varım daha olsun şurada.
+
+340
+01:03:08,124 --> 01:03:13,664
+Bu ikisi tamamlandıktan sonra ne yapsın?
+
+341
+01:03:14,664 --> 01:03:18,304
+Benim bir sonraki aşama rezervasyon aşamasına geçirsin.
+
+342
+01:03:19,411 --> 01:03:32,551
+Yani bu bilgiler verildikten sonra burada bir çatallanma yapıyorum. Sonra burada bir join yapıyorum. Bunların ikisinin de bitmesini bekliyorum. İkisi bittikten sonra, ikisi tamamlandıktan sonra iki aktivite. Ondan sonra bu aşamaya geçiyorum.
+
+343
+01:03:33,951 --> 01:03:37,271
+Kolduk seçtim, iletişim bilgisi girdim. Artık rezervasyonum yapıldı.
+
+344
+01:03:40,031 --> 01:03:42,371
+Bir de kullanıcı bir onay daha yapsın.
+
+345
+01:03:46,963 --> 01:03:51,443
+Bana tekrardan sorulsun, bu rezervasyonun bu şekliyle kabul ediyor musun?
+
+346
+01:03:54,384 --> 01:04:01,963
+Bunu onayladı. Ondan sonra artık scenario end dediğim, şunu koyabilirim.
+
+347
+01:04:03,544 --> 01:04:06,644
+Onun için de bunları yine planlıyorsunlarına vereyim.
+
+348
+01:04:08,563 --> 01:04:14,943
+Bu şekilde yaptığımda ne oldu? Aktivitelerini göstermiş oldum sistemim.
+
+349
+01:04:17,824 --> 01:04:23,163
+Başladı, bitti ve bu aradaki akış bu şekilde ilerlemiş oldu.
+
+350
+01:04:25,652 --> 01:04:41,632
+Sisteme girdim, bilgileri girdim, sistem kontrol etti. Burada şu kıralım, işte o mu bu mu tercihi. Daha sonra otobüs tercihi ve şuradaki eş zamanlık, bu işlerin aynı anda bu aktivasyonların, bu aktivitelerin.
+
+351
+01:04:42,143 --> 01:04:56,683
+Biri tamamlanmadan diğer aşamaya geçirmemesi durumu var. Bunu da gösterdikten sonra artık olan yapılmış senaryo, yani rezervasyon yapılması senaryosu artık tamamlanmış diyorum. Bu aktivite bu şekilde tamamlanmıştır diyebiliyorum.
+
+352
+01:05:00,179 --> 01:05:05,779
+Şimdi üçüncü istenen şey, activity diagram, onu da yapmış olduk.
+
+353
+01:05:07,859 --> 01:05:13,319
+Ve bizden bir de state diagram, durum diagramı istiyor son olarak.
+
+354
+01:05:13,919 --> 01:05:16,759
+Bu da bir koltuğun içinde bulunabileceği durumlar.
+
+355
+01:05:16,879 --> 01:05:21,299
+Yani bir nesnenin, bir sınıf ayeti nesne hangi durumlarda bulunabiliyor?
+
+356
+01:05:21,299 --> 01:05:26,959
+Biz burada örnek olarak koltuk nesnesi, bunun hangi durumları var?
+
+357
+01:05:27,360 --> 01:05:35,360
+Ve geldim state diyarımı seçtim. Hangi durumlarda, nasıl durumlar arasında geçişi oluyor?
+
+358
+01:05:36,200 --> 01:05:42,599
+Şimdi burada da yine scenario start, scenario end var. Start dediğim, içi dolu, başlangıcım.
+
+359
+01:05:42,860 --> 01:05:46,840
+Ve daha sonra durumlar var. Hangi durumda olabilir bir koltuk?
+
+360
+01:05:54,324 --> 01:06:10,264
+Rezerve olma durumu var değil mi? Rezerve edilmiş olabilir. Bir de artık kesin olarak bir kişiye atanmış yani biletlenmiş diyeceğiz buna. Biletlenmiş olabilir. Geliyorum. Şunların içerikleri yazalım. Boş olabilir.
+
+361
+01:06:22,420 --> 01:06:25,400
+Daha başka birine atanamayacak durumda olabilir.
+
+362
+01:06:25,619 --> 01:06:28,460
+Şimdi bunların arasında geçişleri de imetler, actionlarla.
+
+363
+01:06:28,599 --> 01:06:31,180
+Yani ne olduğunda buraya geçiyor, ne olduğunda buraya geçiyor.
+
+364
+01:06:32,180 --> 01:06:39,420
+Başlangıç durumundan buraya gelebilmem için şöyle çektiğim zaman diyorum ki yolcu...
+
+365
+01:06:43,635 --> 01:06:50,376
+Otobüs seçer ve boş koltukları görüntüler.
+
+366
+01:06:51,896 --> 01:06:58,655
+Yolcu otobüs seçti, koltukları görüntüleri de artık benim bir koltuk nesnemin boş olma durumunu görüyorum.
+
+367
+01:06:58,655 --> 01:07:09,996
+Daha sonra yolcu bir koltuk seçer ve iletişim bilgilerini girerse,
+
+368
+01:07:11,347 --> 01:07:22,467
+Ne yapıyorum? Rezerve durumuna geliyorum. Daha sonra bu kişi ödemesini yaparsa ne yapıyordum? Biletlenme durumuna geliyorduk olduk.
+
+369
+01:07:23,367 --> 01:07:33,827
+Peki şu aşamadayken ödeme yapmazsam ne oluyordu? O zaman yine boş olarak atacağım için tekrar buraya geliyordum. Tekrar boş tarafına geliyordum.
+
+370
+01:07:57,172 --> 01:08:00,692
+Şöyle rezervadan biletlenmeye geliyor.
+
+371
+01:08:02,851 --> 01:08:08,572
+Boştan rezervaya gelmesinin olayı neydi? Onu da yazalım bu açıklamasını, bu mesajını.
+
+372
+01:08:09,092 --> 01:08:16,012
+Yolcu dedi, koltuk seçti ve iletişim bilgisini girdi.
+
+373
+01:08:24,595 --> 01:08:39,315
+Yolcu seçimi yaptı, iletişim ilgisini girdi. Daha sonra bu rezerve oldu ve sonra da ödeme yaparsa ne olacaktı? Milletlenmiş kısmına geçecekti.
+
+374
+01:08:42,739 --> 01:08:48,079
+Yolcu ödemede yaparsa artık biletlenme olacak da. Yani diğer bir duruma geçecek de.
+
+375
+01:08:49,219 --> 01:08:54,000
+Şimdi bunun senaryosunun artık sonuna gelmiş oluyorum şu aşamada.
+
+376
+01:08:54,559 --> 01:08:59,680
+Senaryo end'i koydum. Buraya da artık bir mesaj olarak şöyle diyebilirim.
+
+377
+01:09:00,260 --> 01:09:04,299
+Bilet artık bu koltuk başkasına verilemez.
+
+378
+01:09:07,988 --> 01:09:10,988
+Bu senaryonun bitişi de bu şekilde olacaktı.
+
+379
+01:09:11,948 --> 01:09:15,328
+Şöyle geniş yapalım, yazılar üst üste binmesin.
+
+380
+01:09:26,420 --> 01:09:31,440
+Buradakine de yazalım. Rezerveden boşa dönme durumu nasıl oluyordu? Ödeme yapmamışsa.
+
+381
+01:09:31,440 --> 01:09:40,460
+Yolcu 12 saate kadar ödeme yapmaz.
+
+382
+01:09:44,884 --> 01:09:50,343
+Yolcu 12 saate kadar ödeme yapmaz ve artık rezerv olan koltuk da boşa geçmiş olur.
+
+383
+01:09:51,103 --> 01:09:57,043
+Basitçe bir koltuğun bulma durumları ve bu durumlar arasında geçişlerini de bu şekilde görmüş olduk.
+
+384
+01:09:57,144 --> 01:10:00,884
+Başladık, boş koltukları üsteledik, artık boş bir...
+
+385
+01:10:01,203 --> 01:10:13,183
+Neyim var? Koltuk artık boş durumda. Seçtim ve bilgilerimi girdim bir yolcu olarak. Artık koltuk rezerve. Ödememi yaptım. Artık biletlendi. Başkasına da verilemez. Senaryo bitti.
+
+386
+01:10:13,764 --> 01:10:22,404
+Ama rezerve durumunda ödeme yapılmazsa da ne olur? Tekrar boşa döner diyorum ve bir koltuğun gelebileceği durumları bu şekilde göstermiş oluyorum.
+
+387
+01:10:26,292 --> 01:10:35,811
+Evet, uygulamamızda çizeceğimiz bütün diagramlar bu şekildeydi. Dört farklı UML diagramını da görmüş olduk.
+
+388
+01:10:37,211 --> 01:10:40,292
+Sizin sormak eklemek istediğiniz bir şey var mıdır?
+
+389
+01:10:41,792 --> 01:10:47,072
+Derse katıldığınız için teşekkür ediyorum bu arada. Baya bir az katılımlı bir ders oldu.
+
+390
+01:10:52,243 --> 01:10:56,203
+Eğer bir soru yoksa, eklemek istediğiniz bir şey yoksa bu şekilde bitirebiliriz.
+
+391
+01:10:56,283 --> 01:11:02,263
+Ben Aves'in sayfamdan bu dersin dokümanlarını ve uygulamanın dokümanlarını paylaşıyor olacağım.
+
+392
+01:11:03,503 --> 01:11:06,743
+Ben teşekkür ediyorum bu senar. Sana da iyi günler diliyorum.
+
+393
+01:11:09,283 --> 01:11:14,183
+Evet, projenizde başarılar diliyorum. Sınavlarınızda da başarılar arkadaşlar. Görüşmek üzere.
