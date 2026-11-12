@@ -1,0 +1,2419 @@
+1
+00:14:46,740 --> 00:14:52,299
+Merhaba arkadaşlar. Ses geliyor mu? Geliyor herhalde. Merhaba hocam geliyor.
+
+2
+00:14:54,360 --> 00:14:55,755
+Başlayalım dersimizin.
+
+3
+00:15:41,139 --> 00:16:02,860
+Evet arkadaşlar, bu hafta ikinci dereceden devrelere bakacağız. Birinci dereceden devre dediğimiz aslında, birinci derecedeki, kastımız o TREV'in birinci, first order'ını aldığımızdan dolayı diyorduk. Neydi bu devreler? Enerji depolayan devreler diye tabir ettiğimiz, bobinli ve kondansatörlü devrelerdi.
+
+4
+00:16:03,264 --> 00:16:15,144
+Buradaki türev mantığı neyden geliyordu peki? Formulizasyonda bobin de, bobinin akımı üzerinden işlem yaptığımızda kullandığımız türevli denkleminden dolayı,
+
+5
+00:16:15,144 --> 00:16:23,124
+kondansatörde de kondansatörün üzerindeki gerilimi yapacağımız için DVC bölü DT'den gelen oradaki türev.
+
+6
+00:16:23,475 --> 00:16:46,816
+fonksiyonel değil, bize aslında birinci derecen olmasını sağlayan bir denklem sunuyordu. Bu tabii genelde hep şuna çıkıyorduk, yani biz birinci first order circuit'larda da, şimdi bu hafta işleyeceğimiz second order circuit'larda da yapacağımız işlem esasında kondansatör veya bobinin üzerindeki şarj ve de şarj yerleri.
+
+7
+00:16:47,283 --> 00:17:02,803
+Orada işte şarj, yani birinci orda da, first order da bir devrede sadece bir adet kondansıtır veya bir adet bobinin varlığını analiz etmiştik ve şarj ve deşarja ait denklemler çıkartmıştık.
+
+8
+00:17:02,803 --> 00:17:14,084
+İşte şarj olurken bir eksi e üzeri eksi t bölü to dediğimiz parametre vardı. Deşarj olurken de tabii bu ana V0 geriliminden doğan.
+
+9
+00:17:14,932 --> 00:17:27,072
+bir azalıma sahip olan E üzeri eksi T bölü to dediğimiz parametreyi işleme dahil ettiğimiz, yani o formülleri nasıl çıktığını anlattığımız bir ders olmuştu geçen haftalar.
+
+10
+00:17:28,031 --> 00:17:37,251
+Bu haftada ikinci seviyeden, hani birinci türevi değil, türevin de türevi dediğimiz ikinci dereceden türevini alınan devrelere bakacağız.
+
+11
+00:17:37,971 --> 00:17:58,592
+Bunlarla alakalı labınız bu haftaydı aslında. Aslında yetişecek bir labdı. Yani bugün de yapsaydınız belki iyi de olabilirdi ama yine de biz onu erteledik. Haftaya yapılacak. Yani bugün işlediğiniz dersin labını haftaya yapacaksınız. Bu hafta lab olmayacak. Duyuruyu da koydu arkadaşlar zannedersem.
+
+12
+00:17:59,827 --> 00:18:21,048
+Şimdi geçen haftaki dersi anlamanız önemli demiştim. Çokça üzerinde vurgulamıştım. Hani sorunuz var mı diye. Bunun bir nedeni şuydu. Bu ikinci order dediğim şey aslında birinci derecede devrelerin üstüne binen bir yapı. Esasında temelde o first order'ı iyi anlamış olmamız lazımdı.
+
+13
+00:18:21,440 --> 00:18:30,680
+O yüzden özellikle vurgulamıştım. Umarım bir problem yoktur o dersle alakalı. Varsa kesinlikle dönüp kayıtlarını izleyin arkadaşlar.
+
+14
+00:18:31,920 --> 00:18:40,440
+Çünkü birinci dereceden denklemler, birinci dereceden devreler, tek başına kondansör ve bobinin kullanıldığı devre mimarisi.
+
+15
+00:18:41,519 --> 00:18:47,436
+Biz burada çokça bahsedeceğiz. Yani bunun üzerine kurulacak. Bu ders onun üzerine kurulacak.
+
+16
+00:18:53,460 --> 00:19:04,940
+Evet, bu derste dediğimiz gibi bir ikinci dereceden, yani ikinci dereceden türevle alınan bir, ikinci dereceden türev fonksiyonelliği sunan bir devre analizi yapacağız.
+
+17
+00:19:05,779 --> 00:19:12,680
+Burada geçişleri analiz edeceğiz ama öncesinde, yani geçişten kastımız neydi onu da tekrardan üzerine vurgulayalım.
+
+18
+00:19:17,023 --> 00:19:23,003
+Genelinde, mesela örnek verelim, gerilim beslemesi vardı ama gerilim beslemesini çıkarttık.
+
+19
+00:19:23,155 --> 00:19:29,935
+Veya akım beslemesi vardı, devreyi besleyen bir akım kaynağı vardı, onu çıkarttık veya tam tersini yaptık.
+
+20
+00:19:29,935 --> 00:19:39,855
+Yani devreye dahil ettik. Bu durumda devredeki üzerindeki gerilim ve akımın değişikliğe neden olmasından dolayı,
+
+21
+00:19:39,935 --> 00:19:44,935
+geçiş dediğimiz yani bobin ve kondansör üzerindeki enerjinin,
+
+22
+00:19:45,587 --> 00:19:59,607
+geçişini analiz etmiştik. Yani biz tek başına, First Order'da bunu yapmıştık. Tek başına bobin veya tek başına kondansatörü analiz etmiştik. Burada da yine aynı şekilde böyle bir transiyonu analiz edeceğiz.
+
+23
+00:20:00,147 --> 00:20:15,788
+Ama farkı olarak da bir devrede iki tane bobinin olma durumu veya iki tane kondansatörün olma durumu veya bir bobinin bir kondansatörün seri veya paralel şekilde olma durumunu analiz edeceğiz.
+
+24
+00:20:15,788 --> 00:20:24,707
+Yani işte geçen hafta first order dememizdeki kasıt aslında bir tane bobin ve bir tane kondansatör olan yapılardır.
+
+25
+00:20:24,991 --> 00:20:37,791
+Burada ise second order'ı oluşturan şey ise esasında bir kondansatör, bir bobin olma durumu veya iki indiktör yani iki bobin veya iki kondansatörün yer aldığı durumun analizidir.
+
+26
+00:20:39,511 --> 00:20:44,192
+İkinci dereceden devreleri bu şekilde tamamlandırabiliriz.
+
+27
+00:20:46,516 --> 00:20:56,635
+soldaki RLC, daha doğrusu ismende RL, RLC devreleri dedik zaten First Order'a. Second Order'a biz genelde RLC devreleri diyeceğiz.
+
+28
+00:20:56,635 --> 00:21:06,135
+Yani condoster, bobin ve direnç üzerinden transition yani geçiş analizini yapacağımız devre analizi olacak.
+
+29
+00:21:08,276 --> 00:21:24,176
+Öncelikle aynı RL, RLC'de de bahsettiğimiz gibi bir steady state durumunu burada da belirtmemiz lazım. Yani bu devredeki değişiklik olduğundaki transition'ı tamam bizim hedefimiz bunu bulmak, nasıl değiştiğinin grafiğini veya çizmek.
+
+30
+00:21:35,763 --> 00:21:57,243
+süre sonra ne olacağını belirleyeceğimiz bir koşullarımız olacak. Biz bunlara boundary condition diyeceğiz. Yani RLC devresindeki bu sınır koşullarını belirlemek bizim için ilk etap olacak. Bu sınır koşulları da ne demek oluyor? Stead-a-stead'e geçtiği durum.
+
+31
+00:21:57,779 --> 00:22:09,619
+Sonsuz da bu devre ne olacaktı, ne olacak? İlk başta ben bir switch varsa bu switchi T0 anda değiştiriyorsam, bunu değiştirmeden çok çok önce neydi?
+
+32
+00:22:10,200 --> 00:22:21,500
+Bu iki tanesini boundary condition konseptinde, sınır durumları, koşulları ne derseniz artık şeklinde analiz edeceğim.
+
+33
+00:22:21,500 --> 00:22:25,700
+İlk etapımız bizim bu. Bunu analiz ederken de,
+
+34
+00:22:26,003 --> 00:22:42,823
+İki tane kaydemiz vardı zaten bizim bu devreleri analiz ederken. Eğer ki steady state durumunda konular störü biz analiz ederken o devreyi kesinlikle açık, konular störün bağlı olduğu yere açık devre.
+
+35
+00:22:43,700 --> 00:22:59,000
+Bobinin bağlı olduğu kısmı da kısa devre olarak belirtmemiz lazım. Yani şunu söylemeye çalışıyorum. İşte biz 5 voltluk bir gerilim veriyoruz devre. Devrede de kondansatör, bobin var. İşte T0'anında 5 voltu vermişiz.
+
+36
+00:23:08,948 --> 00:23:28,908
+Yani en final durumunu hesaplarken biz kapasitörleri, o devredeki analizdeki kapasitörleri açık devre yapacağız. Yani oradan bir akım geçmediğini söyleyeceğiz ve işte bu kapasitörün akım geçmediği durumda üzerindeki biriken gerilimini hesaplayacağız.
+
+37
+00:23:29,940 --> 00:23:44,500
+İndiktör için, bobin için ise kısa devre edeceğiz ve bobinin üzerinde herhangi bir gerilimin oluşmadığını, sadece üzerinden bir akımın geçtiğini ve bu akımı da ıd akımı şeklinde hesaplayarak bulacağız.
+
+38
+00:23:45,440 --> 00:23:49,440
+Yani bizim için bu iki kaydı önemli, yeşille belirtilen şurada.
+
+39
+00:23:49,440 --> 00:23:51,559
+Bu iki kaydı...
+
+40
+00:23:51,559 --> 00:23:53,163
+Bir saniye bir tablet yine...
+
+41
+00:24:01,172 --> 00:24:01,652
+Hmm.
+
+42
+00:24:07,028 --> 00:24:19,988
+Bu iki kaydeyi, Statistate durumları için ve Initial durumları için ikisini de göz önünde bulunduracağız. Burası yıldız, önemli. Onları karıştırmayalım, yıldızı da atamadım.
+
+43
+00:24:22,291 --> 00:24:37,291
+Bunları karıştırmayalım. Çünkü daha önceki tecrübelerimde sınavlarda indiktörü açık devre yapan, kapasitörü kısa devre yapan çok öğrenci vardı. Öyle değil. Tamam mı arkadaşlar? Bu ikisini karıştırmayalım.
+
+44
+00:24:39,476 --> 00:25:02,276
+Yani biz final durum, boundary condition'ları belirlerken, boundary iki tane var. Bir, o transition'a girmeden çok önceki durum. İki, transition'dan, yani o geçiş döneminden geçtikten sonraki, çok sonraki durum. Bu iki durumu, initial ve final boundary'leri yani belirlerken kabul edeceğimiz kayda bu. Peki.
+
+45
+00:25:02,867 --> 00:25:09,967
+T0 anında yapılan bir işlemdeki hesaplama ise bizim için transition hesaplaması olacak.
+
+46
+00:25:10,347 --> 00:25:11,447
+Geçiş hesaplaması.
+
+47
+00:25:11,447 --> 00:25:13,807
+Ve biz burada şunu kabul edeceğiz.
+
+48
+00:25:14,307 --> 00:25:16,248
+Bu teorik kısmı gerçi de.
+
+49
+00:25:16,947 --> 00:25:25,047
+Yani her zaman o geçiş aşamasında giriş beslemesi tarafından beslenen, kapasitörün beslendiğini, gerilimine.
+
+50
+00:25:25,407 --> 00:25:28,147
+Bobinin de akımla beslendiğini kabul edeceğiz.
+
+51
+00:25:28,327 --> 00:25:30,947
+Çünkü, yani bunu niye söylüyoruz?
+
+52
+00:25:30,947 --> 00:25:31,347
+Çünkü,
+
+53
+00:25:32,276 --> 00:25:54,016
+Geçiş anında birden bir şey oldu, devrede bağlantı koptu. O zaman benim bütün analizim tabii ki de yapılamaz. Çünkü bobin o an bir impatta neden olacak veya konular üstü bir inmediği çence neden olacak, ani bir değişiklik neden olacak vs. Bunlar out of scope da, bunlar konu kapsam dışında.
+
+54
+00:26:00,276 --> 00:26:09,476
+başka bir dıştan bir bağ olmadığı şeklinde olacak. Kabulümüz bu olacak. Yani transition'ı saf bir geçiş analizi gibi göreceğiz.
+
+55
+00:26:13,875 --> 00:26:24,516
+Initial Condition'la bakacağımız dönem T0 dediğimiz bir değişimin başlangıç noktasından çok önceki bir T domeninde bizim analizimiz olacak.
+
+56
+00:26:24,516 --> 00:26:27,339
+İşte burada da...
+
+57
+00:26:27,827 --> 00:26:36,647
+Dediğimiz gibi işte normalde bir kondansatörü açık devre yapmak demek, kondansatörün üzerinde herhangi bir akımın oluşmadığını kabul etmek demek.
+
+58
+00:26:37,307 --> 00:26:44,087
+Bobini kısa devre etmek demek de bobinin üzerinde gerilimin herhangi bir şekilde olmadığını söylemek.
+
+59
+00:26:44,687 --> 00:26:51,907
+Bu ikisi, bu iki kaideyi zaten open circuit ve short circuit'ı kabul ederek biz bunları kabul etmiş oluyoruz esasında.
+
+60
+00:26:54,483 --> 00:27:02,903
+Son final kondiyonunda ise, yani artık bu değişimin, transition bittikten sonra, transition zaten iki şekilde olabilir değil mi?
+
+61
+00:27:03,003 --> 00:27:07,063
+Ya devrede gerilim kaynağı vardır, onu çıkartmışızdır.
+
+62
+00:27:07,703 --> 00:27:11,603
+Ya da devrede gerilim kaynağı yoktur, gerilim kaynağı bağlamışızdır.
+
+63
+00:27:12,143 --> 00:27:16,403
+Sonuçta iki tarzda bir transition söz konusu, geçiş eğilim söz konusu.
+
+64
+00:27:16,403 --> 00:27:22,483
+Ama ikisinin de final'ında, yani nihaiye ulaşacağı bir değişik farklı durum.
+
+65
+00:27:22,483 --> 00:27:46,603
+Bir tanesinde, misal örnek verelim, devrede hiçbir şey yok, T0 anında gerilim kaynağı bağladık. E tamam, final condition da o zaman şu zaten bellidir. Kondansatör bir gerilime şarj olacak. Neye olacağının analizini yapacağız ama bir şeye şarj olacak. Bobinde o bir şeye şarj olduğundan dolayı o da bir akıma şarj olacak final condition.
+
+66
+00:27:47,155 --> 00:27:52,576
+Eğer gerilim bağlanıyorsa, eğer gerilim sökülüyorsa veya akım kaynağı sökülüyorsa bunun tam tersi olacak.
+
+67
+00:27:53,115 --> 00:27:57,975
+Bunları hesaplayabilmek için bizim iki tane kaydemizi kesinlikle uygulayacağız.
+
+68
+00:27:58,576 --> 00:28:09,615
+Bobinleri kısa devre, kondansatörleri açık devre yaparak aslında kondansatör üzerinde bir akımın olmadığını, bobinin üzerinde bir gerilimin oluşmadığını kabulünü yapacağız.
+
+69
+00:28:09,835 --> 00:28:12,096
+Hem initial için hem final condition için.
+
+70
+00:28:13,107 --> 00:28:34,688
+Örnek verelim, T0 anında açılıyor anahtar. Yani T0 anında gerilim kaynağı devreden sökülüyor demek. Değil mi? Bunun analizini yapmıştık. Buna ne diyorduk? Biz function diyorduk. Yani buna bir fonksiyonla gösteriyorduk bizim ne olacağını.
+
+71
+00:28:35,124 --> 00:28:50,764
+Burada da T0 anında ben anahtarı açıyorum. Yani V1 gerilimim artık T0 anında devrede değil. Ama T0'dan çok çok önceki anlarda V1 benim bu devremi beslemiş diyor.
+
+72
+00:28:50,764 --> 00:29:00,584
+Şimdi burada Find the Boundary Conditions denmiş. Yani sınır değişkenleri, sınır koşullarını bulun demiş.
+
+73
+00:29:02,132 --> 00:29:13,472
+Bunun için kaydemiz belliydi zaten. Bir önce, hani T0'dan çok çok önceki senaryolarda bağladık, devreyi çizdik ve buna göre analiz yapacağız.
+
+74
+00:29:13,711 --> 00:29:23,672
+Kaydemiz şu kondansütör olan kısmı açık devre, bobin olan kısmı da kısa devre yapmaktı. Ona göre çizelim.
+
+75
+00:29:24,412 --> 00:29:29,112
+Buraya da çok büyük bir direnç koyalım. Hani açık devre de yapabilirsiniz şöyle. Hiç önemli değil.
+
+76
+00:29:29,811 --> 00:29:53,751
+Buradan şu analizden ne çıkar? Bir kere IL'nin, yani şuradan geçecek olan akımın sıfır olma durumu var. Neden? Çünkü burası açık devre. Değil mi? Demek ki initial'da IL akımım benim sıfırmış. Tamam mı? Yani bobinin üzerinden geçen akım sıfır ampermiş başlangıçta.
+
+77
+00:29:54,963 --> 00:30:00,443
+Öteki tarafta, VL dediğimiz, zaten bobinin üzerindeki gerilim de 0 volt olacak doğal olarak.
+
+78
+00:30:01,603 --> 00:30:08,583
+Kondansütöre bakalım. Kondansütöre burası açık devre dedik. IC o zaman 0 olacak gene. Kabülümüz böyle.
+
+79
+00:30:10,063 --> 00:30:17,043
+Peki, kondansütönün üzerindeki gerilim ne olacak? Burası en çok karşılaştığımız yapılan hatalardan biri.
+
+80
+00:30:17,779 --> 00:30:26,079
+Devrede arkadaşlar, Initial veya Final'daki kondansatör üzerindeki biriken gerilim hesabında neye bakacağız?
+
+81
+00:30:26,319 --> 00:30:30,839
+Kondansatörün bacaklarının neye paralel olduğuna bakacağız değil mi?
+
+82
+00:30:31,119 --> 00:30:38,699
+Yani misal şu an ben kondansatör üzerindeki gerilimden kastım, şu iki nokta arasındaki gerilim değil mi?
+
+83
+00:30:40,019 --> 00:30:40,920
+Buna şarj olacak.
+
+84
+00:30:45,811 --> 00:30:48,051
+Şu R2'ne paralel.
+
+85
+00:30:49,331 --> 00:30:56,471
+Değil mi? O zaman benim kondansütörüm V1 çarpı R2 bölü R1 artı R2.
+
+86
+00:30:56,592 --> 00:30:59,672
+Yani bir voltage divider devresine döndü.
+
+87
+00:31:00,411 --> 00:31:02,011
+Gerilim bölücü devreye döndü.
+
+88
+00:31:02,011 --> 00:31:12,072
+V1 çarpı R2 bölü R1 artı R2 değerine kondansütörüm initial'da şarj olacak.
+
+89
+00:31:13,268 --> 00:31:39,768
+Neden önemli inişil o zaman? Şu yüzden. Ben bu kondansatörün değişimini analiz edeceğim ama başta neydi ki bu kondansatör nereden nereye gidecek? Şu anahtar açtığımda. Bu transition'ın inişilini bu yüzden belirlememiz lazım. Aynı şekilde bobinin de farklı yapılarda, seri devrelerde bobinde olmuyor ama paralel devrelerde de bobinin akım üzerinden bu işi yapacağız.
+
+90
+00:31:41,587 --> 00:31:53,427
+Evet, yani şu an benim VC dediğim gerilimim, V1 çarpı R2 bölü R1 artı R2 değerine, yani şuradaki değere şarj olacak.
+
+91
+00:31:54,867 --> 00:32:01,127
+Yani ilk etapta anahtarı açmadan çok önce bu şekilde bir kondansatör üzerinde değerim var.
+
+92
+00:32:01,652 --> 00:32:09,332
+Peki final condition'a baktığımızda, yani anahtarı açtığımızda, sonsuza doğru gittiğinde ne olacağını öngörüyorum.
+
+93
+00:32:09,332 --> 00:32:17,192
+Yani ben şu kısmı devreden attım değil mi? Ne kaldı elimizde? Sadece şu sağ taraf kaldı.
+
+94
+00:32:17,352 --> 00:32:21,812
+Bu sağ tarafta herhangi bir gerilim kaynağı var mı? Yok.
+
+95
+00:32:22,228 --> 00:32:35,327
+Bir gerilim beslemesi yok. Yani elinde sonunda kondansütör sonsuzda işte ne kadar zaman geçeceği, 5 to'luk zaman, işte to eşittir, R çarpı c'den vesaire hesaplayacağız ama o geçişi, trans eşini.
+
+96
+00:32:36,708 --> 00:32:49,088
+Yani o geçişten çok çok sonra ben şunu biliyorum, bu kondansütör, bu devrenin bu kısmında herhangi bir gerilim olmadığı için neye doğru gidecek? Sıfıra doğru gidecek.
+
+97
+00:32:50,003 --> 00:33:02,003
+R2 ve R3 dirençleri üzerinden sönümlenerek, I, L'de 0, V, L'de 0, zaten yine aynı kayda bunu short yaptım, bunu...
+
+98
+00:33:02,771 --> 00:33:13,331
+Open Circuit yaptım. Bunu Open Circuit yapmak demek zaten burada bir şeyin dönmemesi demek. O da işte VC'nin sıfıra, I-C'nin sıfıra, yani her şeyin sıfıra gitmesi demek.
+
+99
+00:33:13,431 --> 00:33:23,711
+Ki zaten görüyorum ben burada bir besleme yok yani. Besleme gerilim olsa belki ona göre VC'yi ona eşitleyeceğiz. Örnek verelim, buraya ben bir tane daha gerilim kaynağı koysaydım, 2 volt.
+
+100
+00:33:23,711 --> 00:33:29,419
+O zaman diyecektim ki ben bu VC sıfıra değil, 2 volta düşmesi beklenir diyecektim.
+
+101
+00:33:30,259 --> 00:33:32,000
+Ama şu an senaryomuz öyle değil.
+
+102
+00:33:37,268 --> 00:33:46,328
+Tamam mıyız arkadaşlar? Initial ve Final boundary'ler çok önemli. Bunları yanlış görmemek lazım.
+
+103
+00:33:46,828 --> 00:33:52,668
+Kondansatörün üzerinde Final'da veya Initial'da neye şarj olduğu direkt giriş gerilimi değildir.
+
+104
+00:33:53,468 --> 00:33:57,948
+Mesela örnek bu soruda. Giriş gerilimine şarj olmuyor, V1'e şarj olmuyor.
+
+105
+00:33:58,948 --> 00:34:04,028
+V1R2 çarpı V1 çarpı R2, böyle R1 artı R2'ye şarj oluyor.
+
+106
+00:34:05,875 --> 00:34:07,875
+Bunun analizini yapmak önemli.
+
+107
+00:34:10,376 --> 00:34:28,376
+Başka bir örnek. Bu sefer kondansatörü ortaya almışız ve iki tane de gerilim kaydağımız var. Bu örneği analiz edelim. Bir şey değişmiyor. Yine iki analiz yapacağız. Transition'a daha girmedik. Daha biz Initial ve Final banderileri hesaplıyoruz.
+
+108
+00:34:28,532 --> 00:34:46,431
+Aradaki nasıl geçiş yapacak bu, onun analizini sonra yapacağız. İlk etapta başlangıç ve bitişi bulmamız lazım. Burada da yine aynı şekilde çok çok önce, yani bu anahtarı açmadan önceki, kondansütörün üzerindeki gerilimi, bobinin üzerindeki akımı,
+
+109
+00:34:47,092 --> 00:34:57,851
+bulacağız. Şimdi burada baktığımda 2 volta, şimdi ne dediydik? Konular störü, biz açık devre yaptık, bobin kısa devre yaptık ve T0'dan çok çok önecek. Daha anahtar açılmamış.
+
+110
+00:34:58,872 --> 00:35:06,652
+Bunu analiz ettiğimizde, şunlar birbirine zıt olduğu için 3 volt kaldı, yani daha doğrusu akım şöyle bir şey gittiğini kabul edelim şimdi.
+
+111
+00:35:06,652 --> 00:35:10,992
+Ne olacak? 2-5'den 3 volt.
+
+112
+00:35:11,411 --> 00:35:21,791
+Burada da 5K'ya 5K'dan 10K var. Yani aslında benim şöyle bir, 0.3'üm çıkıyor, 0.3 amperlik bir akımım var. Değil mi?
+
+113
+00:35:21,891 --> 00:35:28,251
+I, L yani benim, tabii buradaki I, L'yi böyle göstermişiz ama çok mühim değil şu soruda.
+
+114
+00:35:29,844 --> 00:35:39,284
+0.3 denmiş ama bu eksi 0.3 olabilir. Yani buradaki ILE'nin göstereme, buradaki yazımı ters düşmüş ama bu eksi 0.3 olmalı yani.
+
+115
+00:35:40,724 --> 00:35:52,744
+ILE'nin üzerinden geçen akım bu, değil mi? Çünkü şu an benim için şu orta kesim bir etkisi yok. Initial pozisyonunda normalde bir ILE akımını bulduk.
+
+116
+00:35:53,139 --> 00:36:05,639
+Bunu bulduktan sonra şimdi şuna bakmamız lazım. Buradan bir akım geçmiyor zaten. Ama bu kondansatörün neye şarj olacağı gerilim olarak. Zaten burada da VLS0 olacak. Çünkü burası kısa devre.
+
+117
+00:36:06,639 --> 00:36:07,800
+Dom da açalım.
+
+118
+00:36:08,371 --> 00:36:22,951
+Buradan Ic'miz sıfır olacak. Ic'den bir akım geçmiyor. Ama nereye şarj olacak? Yani BC üzerindeki gerilimle hesabı yine aynı şekilde şu noktanın analizidir arkadaşlar. Bu noktayı iki şekilde bulabiliriz.
+
+119
+00:36:22,951 --> 00:36:27,931
+Veya şu iki noktanın. İki şekilde bulabiliriz. Nedir? 2 volt eksi.
+
+120
+00:36:28,467 --> 00:36:30,688
+0,3 çarpı 5K.
+
+121
+00:36:31,087 --> 00:36:34,607
+Tabi burada 0,3'ü tersten yazdığım için artı olacak.
+
+122
+00:36:34,807 --> 00:36:41,747
+Yani 2 volt artı 0,3 çarpı 5 kilo ondan 3,5 volt.
+
+123
+00:36:41,887 --> 00:36:44,768
+Zaten öteki taraftan da analiz yaptığımızda ne olacak?
+
+124
+00:36:44,927 --> 00:36:50,747
+5 volt eksi 0,3 çarpı 5'ten yine aynı 3,5 volt.
+
+125
+00:36:55,860 --> 00:37:06,700
+Yani bu kondansör, benim, VC, 3.5 volta şarj olmuş, initial'da, anahtarı açtığımdaki durumu bu.
+
+126
+00:37:07,660 --> 00:37:08,260
+Bunun analizi.
+
+127
+00:37:10,260 --> 00:37:11,220
+Anlaşıldı mı?
+
+128
+00:37:13,940 --> 00:37:18,300
+Peki, T çok çok sonra, anahtar açıldıktan sonraki senaryo için.
+
+129
+00:37:19,092 --> 00:37:45,092
+Yani şurayı da açtığımızı düşünelim. Burada var yalanlar. Bunu kaldırdığımızda ne olacak? Bu kısım iptal zaten. Bizim için sağ taraf kalacak. Ama burada bakın fark edin. Bir gerilim kaynağımız daha olduğundan dolayı şu an kondansütör sıfır olmayacak. Çünkü kondansütörün üzerinde hala bir besleme var. Akım da var. Yani akım var mı peki? Akım yok. Çünkü burası açık devre.
+
+130
+00:37:45,396 --> 00:38:01,736
+Açık devre olduğu için bir akım olmayacak. Yani ÖLM sıfır olacak, IGM sıfır olacak ama VC benim 5 volta eşit olacak. Final durumda da bu. Yani ben bu anahtarı açmam şu anlama gelecek.
+
+131
+00:38:02,316 --> 00:38:07,796
+Kondansörün 3.5 voltluk gerilim üzerindeki gerilim 5 volta artacak.
+
+132
+00:38:08,340 --> 00:38:19,860
+Nasıl artacağını bilmiyorum. Orası transition hesaplamasına giriyor. Ama nihayet sonsuz saniyede bu kondansiyonun üzerindeki gerilim 5 volt olacak. 3.5'dan 5 volta artacak.
+
+133
+00:38:20,640 --> 00:38:29,019
+Akım için ise, bobindeki akım için ise, 0.3 mA'lık bir akım seviyesi 0.0 A'ya kadar düşecek diyeceğim.
+
+134
+00:38:29,780 --> 00:38:36,760
+Peki bunu hani birazdan mantığa tutturalım diye diyorum. Neden böyle olur? Misal bobindeki akım niye düşer? Bakalım.
+
+135
+00:38:37,360 --> 00:38:41,840
+Kondans stürü ben biliyorum ki giriş gerilimine şarj olacak. Yani 5 volta şarj olacak.
+
+136
+00:38:42,659 --> 00:38:54,140
+5 volt, 5 volt olduğunda zaten bir potansiyel fark olmayacağı için zaten akım geçmeyecek. O yüzden bobin sıfıra şey olacak. Yani sıfı volt, sıfı ampere olacak.
+
+137
+00:38:54,452 --> 00:39:09,712
+Öteki taraftan burada niye 0.3? Çünkü burada bu giriş gerilimlerinden ziyade buradaki konular störün şarj eğrisinde 3.5 volta bir potansiyel fark oluşturduğu için buradan ufak bir sızıntı akımı geçecek.
+
+138
+00:39:12,211 --> 00:39:30,532
+Yani mantığına oturtursak, burada bir akımın olması, burada olmaması gayet normal. Burada iki tane gerilim kaynağı ters bağlanmış, bir sızıntı akımı oluşturacak. Çünkü farklı farklı ters bağlanmış. Burada da doyum noktasına eren bir kondansörü var. Initial ve Final Stage banderileri böyle bulacağız.
+
+139
+00:39:32,211 --> 00:39:55,311
+Başka bir örnek, bu sefer bobini paralele, işte Dadoch 2 bobin kullanmış bir örnek. Bunu analiz edelim yine başlangıç ve bitiş noktalarını. Başlangıçta, bakalım, burada tek farkı T0 anında devreye dahil edilmiş. Yani T0 anından çok öncelerde burada 2 volt yok. Yani sadece şu sağdaki devreyi analiz edelim diyor.
+
+140
+00:40:00,000 --> 00:40:25,039
+ne olacak? 5 volt bölü 5 kiloğumdan 1 mili amperlik bir akım akacak. Peki nasıl akacak? Şöyle akması beklenir değil mi? 1 mili amper. Yani benim için IL1-1, IL2'de artı 1 amperlik bir devre. Bu başlangıçtaki durumu.
+
+141
+00:40:25,652 --> 00:40:34,051
+Peki, final stage'de o anahtarı açarsam ne olur? Şuradaki, pardon, kapatırsam ne olur? Devreyi tekrar çizelim. Kısa devre yaptık.
+
+142
+00:40:34,612 --> 00:40:56,032
+Burada yine aynı iki gerilim kaynağı var. Bunu analiz ederken arkadaşlar ne yapıyorduk hatırlarsanız iki kaynak varsa süperpozisyon yapabiliriz. Birinci işte burayı bir analiz ederiz. Burada bir IL-2 buluruz. Sonra burayı analiz ederiz. Buradan da bir IL-2 gelir. İkisini toplarız yazarız değil mi? Buna göre yaparsak ne çıkıyor? 2 volt bölü 5K'dan ne çıkacak?
+
+143
+00:40:56,563 --> 00:41:06,683
+40 mA, öteki tarafta da 5V bölü 5K'dan 1 mA, 0.40 tabii, 1.4 gibi bir şey olması lazım sanki.
+
+144
+00:41:06,683 --> 00:41:15,683
+Evet, L2, 1.4 mA, öteki tarafta sadece ID1'in analizi içinde 5V bölü 5.0'dan,
+
+145
+00:41:15,827 --> 00:41:23,927
+Tabii şöyle akıyordu akım. Bunun tam tersine olduğu için burası 1 mA. Bu da eksi 1 mA'e eşit olan bir akım.
+
+146
+00:41:24,488 --> 00:41:34,228
+Aklını söyleyebiliriz. Yani nihai de, en nihai, yani bittikten sonra bu switch'i oynadıktan sonra çok ilerleyen dönemlerde,
+
+147
+00:41:34,228 --> 00:41:41,007
+I-L1, önceden neydi iniş yılı? Eksi 1 mA'di, yine eksi 1 mA kalacak.
+
+148
+00:41:42,228 --> 00:41:48,967
+Ama IL-2, 1 mA'den 1.4 mA artan bir geçişe sahip olacak.
+
+149
+00:41:49,427 --> 00:41:52,828
+Tekrardan söylüyorum, geçişin nasıl olacağını daha analiz etmedik.
+
+150
+00:41:53,248 --> 00:41:55,148
+Şu an neydi, nereye gidecek?
+
+151
+00:41:55,387 --> 00:41:59,228
+İki bandırıyı hesapladı.
+
+152
+00:42:00,828 --> 00:42:05,188
+Var mı bir sıkıntı arkadaşlar bu noktalarda, bu iki durumda?
+
+153
+00:42:06,420 --> 00:42:32,920
+Yok herhalde. Başka bir örnek, gene boundary condition'larına bulacağız. İki kondansatör bir bobin kullanılmış. Yalnız burada kondansatörlerin arasında herhangi bir yapı olmadığı için aslında ben C1 için ne bulduysam gerilim anlamında, C2 için de onu bulacağım. Değil mi? İkisi de aynı gerilime şarj olacak. Çünkü arada bir sömüren yapı yok. Bunu analizini yapalım. Ne demişiz soruda?
+
+154
+00:42:33,588 --> 00:42:58,788
+T0'ın da açılıyormuş bu. Yani T0'dan önce kapalıymış. Şöyle bir yapı var. Hiçbir şey değişmiyor. 1 volt, 5 volt birbirine zıt olduğu için 4 voltluk bir gerilim kaynağıyla beslenmiş ve 3K'ya 1K, 4 kilo ohmluk bir direnç var. Yani 1 mA ne yapıyor? Değil mi? Evet. Eksi 1 mA'lık.
+
+155
+00:43:00,403 --> 00:43:03,403
+Şöyle yönünü belirtirsek, şöyle akması lazım çünkü.
+
+156
+00:43:04,052 --> 00:43:10,752
+1 mA buradan, eksi 1 mA'lik bir akımdan bahsedeceğiz, initial durumda.
+
+157
+00:43:11,512 --> 00:43:14,492
+Tabi initial'da neye şarj olacak, bunu da hemen hesaplayalım.
+
+158
+00:43:15,332 --> 00:43:21,572
+Sonuçta 3 kilo 1 volt, eksi 1, burası ne olacak, bunu toplayacak, burası 4 volt olacak.
+
+159
+00:43:22,032 --> 00:43:29,932
+Aynı şekilde buraya baktığımızda, burada da zaten 1 mA'da 1 k'nin üzerinde oluşan 1 volt, bunu sömüren nitelikte.
+
+160
+00:43:30,463 --> 00:43:36,804
+O da 4 volt kalacak. Yani benim için VC, 4 volta şarj olacak.
+
+161
+00:43:39,003 --> 00:43:45,384
+En çok problem yaşadığımız VC'nin üzerinde neye şarj olduğunun hesaplanması lazım.
+
+162
+00:43:46,036 --> 00:43:55,735
+Yani direk işte tamam burada belki 5-1, 4 oldu ama bunun nedeni akımın 1 mA çıkmasından ve değerlerin 1'e 1, 3'e 1 olmasından kaynaklı.
+
+163
+00:43:56,516 --> 00:43:59,836
+Yani hep öyle çıkmaz. Yani bunu hesaplamak lazım.
+
+164
+00:44:03,219 --> 00:44:16,579
+Tamam mıyız? Condensatörler, Final'da, Pardon bu Initial'da, Initial'da 4V'muş, akım yani bobinin üzerindeki RL akımı da eksi 1 mA imiş Initial'da.
+
+165
+00:44:17,012 --> 00:44:35,312
+Anahtarı açtıktan sonra, çok çok sonra, anahtarı açınca sağ taraf silindi tabii. Yani burada bir gerilim kaynağı yok. Ne olacak ona hesaplayalım. Direkt belli zaten bir volta şarj olacak. Bu ikisi de akım ne olması beklenir? Akımın da sıfır olması lazım. Çünkü burası açık devre olacak.
+
+166
+00:44:38,900 --> 00:44:40,180
+Tamam mıyız arkadaşlar?
+
+167
+00:44:43,500 --> 00:44:44,220
+Güzel.
+
+168
+00:44:47,039 --> 00:44:49,740
+Bu özetlediğimiz bir bilgi.
+
+169
+00:44:49,940 --> 00:44:56,180
+Demin anlattığımız gibi en önemli kaydımız analiz ederken banderileri, initial ve finalları yani.
+
+170
+00:44:56,596 --> 00:45:12,695
+Kapasitörleri açık devre yapacağız, bobinleri kısa devre yapacağız. Kapasitörleri açık devre yapmamızdaki kaydı IC dediğimiz, konular stör içerisindeki akımı 0 amper kabul etmemiz, bobin üzerindeki gerilimde 0 volt kabul etmemizden dolayı.
+
+171
+00:45:14,635 --> 00:45:19,935
+Şimdi geldik transition hesaplarına, yani o geçişteki hesaplara.
+
+172
+00:45:20,275 --> 00:45:23,336
+Şimdi bu geçişten kastımız aslında bizim şu.
+
+173
+00:45:24,659 --> 00:45:25,699
+Örnek verelim.
+
+174
+00:45:28,219 --> 00:45:32,439
+Şimdi kondansütör enerji depolamıştı, tamam mı?
+
+175
+00:45:32,759 --> 00:45:36,979
+Ve gerilimi biz çektik devreden, gerilim kaynağını kaldırdık.
+
+176
+00:45:36,979 --> 00:45:43,420
+Tamam, kondansütör üzerindeki gerilimi salacak. Direnç üzerinden azala azala inecek değil mi?
+
+177
+00:45:43,880 --> 00:45:50,239
+Normal bir RC devresi olsaydı, yani kondansütör ve direnç var sadece. Bir bobin yok.
+
+178
+00:45:50,643 --> 00:46:03,903
+Böyle bir devrede ben bunu hesaplayabiliyordum. Diyordum ki 5 tau zaman sonra kondansatör üzerindeki bütün yükü, gerilim enerjiyi sıfırlayacak diyordum değil mi?
+
+179
+00:46:03,903 --> 00:46:07,763
+Ve formül de vardı işte, en üzeri, eksi, tebri, to dediğimiz.
+
+180
+00:46:10,579 --> 00:46:20,139
+Deşarj için konuşuyorum. Şarj için de vardı formülü. Deşarjda bir eksi, e üzeri, eksi, tbültü oldu. Şarjda da V0 çarpı, e üzeri, eksi, tbültü oldu.
+
+181
+00:46:20,759 --> 00:46:29,960
+Şimdi bu ikisi belli. Neden? Çünkü başka devrede kondansatörün deşarjıyla şarj olan bir devre elemanı yoktu.
+
+182
+00:46:31,059 --> 00:46:35,259
+Direnç öyle bir enerji depolayan devre elemanı değil. Direnç sömüren bir devre elemanı.
+
+183
+00:46:35,443 --> 00:46:45,884
+Böyle olunca RC ve RL devrelerinde tek derdimiz bizim hangi zaman skalasında bu tamamen şarj olacak, hangi zamanda bu tamamen deşarj olacak sorumsalıydı.
+
+184
+00:46:46,623 --> 00:46:54,583
+Ama RLC'lerdeki en büyük sıkıntı şu, kondansütür, deşarj evlisi için konuşalım, yani gerilim kaynağını çektik devreden.
+
+185
+00:46:55,083 --> 00:46:59,563
+Kondansütür üzerindeki initial gerilimi deşarj edecek, doğru.
+
+186
+00:47:00,244 --> 00:47:05,384
+Ama öteki taraftan bobin, kondansatörün bu deşarjıyla şarj olacak.
+
+187
+00:47:07,024 --> 00:47:11,764
+İşte en büyük sıkıntı bu. Bunlar birbirini nasıl sönümlendirecek?
+
+188
+00:47:12,884 --> 00:47:19,404
+Bir taraftan kondansatör deşarj olurken ki o akım ile bobin şarj olabilir.
+
+189
+00:47:20,324 --> 00:47:27,604
+Ve bobin şarj olurken oluşturduğu, tuttuğu akımı gerilim boyutunda kondansatör tekrar şarj edebilir.
+
+190
+00:47:28,340 --> 00:47:33,400
+Burada biz buna rezonans diyoruz, salınım. Bir salınıma neden olacak.
+
+191
+00:47:34,700 --> 00:47:52,700
+Üç farklı karakteristik tanımlayacağız burada. İleride gelecek ama geçişteki en büyük sorun salınır, aradığımız bizim çizeceğimiz graflar tamamen böyle mi gittik ondan söylüyoruz, bobin şöyle mi gitti, ileride bir yerde bunlar eşitlenmesi lazım.
+
+192
+00:47:54,739 --> 00:48:05,099
+Anlaşabildik mi bu Transition RLC'lerde ne demek? RLC'lerde Transition, bobinle kondansörünün arasındaki iletişimin ne olacağını analiz edilir.
+
+193
+00:48:10,228 --> 00:48:37,007
+Şimdi burada da işte ilk etapta analiz edeceğimiz şey şu, devrede bir gerilim vardı başlangıçta. Sonra o gerilim kaynağını çektiğimdeki transition'ı analiz edeceğim. Sonra da dersin değerli en aşamasında da sonuna doğru tam tersi. Yani devrede bir gerilim yoktu. Ben gerilim bağladığımdaki transition'ı analiz edeceğim. Burada işte o geçiş dediğim o transition 3 tane karakteristik gösteriyor.
+
+194
+00:48:37,492 --> 00:48:44,992
+Bu üç karakteristiğinin gösterme, yani birbirinden farklılaşma nedeni RLC parametrededir.
+
+195
+00:48:45,592 --> 00:48:50,492
+Yani örnek verelim, konular sütlerin parametresi çok yüksekse bir davranış gösterecek.
+
+196
+00:48:50,867 --> 00:49:12,307
+Bobinin parametresi yüksekse başka bir davranış gösterecek. Bunlar tamamen devre içerisindeki RLC'nin hatta R'nin etkisi de var. Direnç, bobin yani Henry, Farad ve On olarak gösterilen RLC parametrelerine göre 3 karakteristik gösterecek.
+
+197
+00:49:12,724 --> 00:49:27,564
+Bu transition. Birincisi, Overdamped dediğimiz, aşırı sönümlenmiş. Critical Damped dediğimiz, kritik sönümlenmiş. Underdamped dediğimiz, sönüm altı kalmış.
+
+198
+00:49:29,884 --> 00:49:33,444
+Tamam mı? Bu üç karakteristik şu an geçişleri analiz edeceğiz.
+
+199
+00:49:34,944 --> 00:49:37,804
+Seri RLC'ye bakalım ilk etapta.
+
+200
+00:49:38,291 --> 00:49:47,731
+Şu neydi zaten hatırlıyoruz. Vs gerilimi besleniyor devreye ama T0 anında eksi U ile gösterilmesi ne demekti?
+
+201
+00:49:48,112 --> 00:49:58,471
+T0 anında ben bu Vs'yi çıkartıyorum, 0. Aslında bir anahtar var. Şu fonksiyonun laf senin izahı neydi? Bir anahtar var. T0 anında anahtarı açıyorum.
+
+202
+00:49:58,471 --> 00:50:05,211
+Ki devreden çıksın mı gerilim kaynağı. Değil mi? Bunları okumayı bileceğiz demiştik zaten.
+
+203
+00:50:06,804 --> 00:50:13,663
+Yani onu soruyor bize, T0'a da ben bu gerilim kaynağı çıkarttığımda bu transition nasıl olur, bunun analizini yapacağız sonra.
+
+204
+00:50:19,347 --> 00:50:30,407
+Şunu biliyoruz ki, T0 anından çok önce, yani şu tekrar grafiği açalım, T0 anından çok önce devrede vs var.
+
+205
+00:50:30,407 --> 00:50:40,628
+Ben biliyorum ki Condonster, Initial Stage'i, yani nasıl bu bandırıyı hesaplarken, Condonster şu an bu devrede neye şarj olacak?
+
+206
+00:50:41,728 --> 00:50:42,407
+Initial'da.
+
+207
+00:50:47,539 --> 00:50:50,340
+V-i-i çarpı R'ye mi şalık olacak?
+
+208
+00:50:56,659 --> 00:50:57,960
+Burada değil miyiz arkadaşlar?
+
+209
+00:51:01,079 --> 00:51:05,400
+Burada olanlar el kaldırabilir mi şeyden? Parti şıklılıklardan.
+
+210
+00:51:06,039 --> 00:51:06,259
+Aynen.
+
+211
+00:51:08,239 --> 00:51:10,440
+15 saniye veriyorum el kaldırmanız için.
+
+212
+00:51:23,347 --> 00:51:31,248
+Evet, şu an ekran görüntüsünü aldım arkadaşlar. Geri kalan, el kaldırmayan arkadaşlara WhatsApp grubunuzdan yazarsınız.
+
+213
+00:51:34,508 --> 00:51:41,988
+Yani bu arkadaşların bir iki puanını kıracağım. Yani kıracağım derken ekstra vereceğim o vize ve final bonus puanlarını.
+
+214
+00:51:44,748 --> 00:51:46,988
+Arkadaşlar, more deyince...
+
+215
+00:51:58,324 --> 00:52:21,324
+Yani dersi zaten hani girmenizde amaç şu olmalı arkadaşlar. Hani bu konuları derste hocaya anlamadığım yerde sorayım. Çünkü sonuçta ben bu sunumları okurken anladım. Çünkü aldığınız skorlar en azından sınavların değerlendirmesine baktığımızda gerçekten bazı problemlerin olduğu gözüküyor. Bunu derste sorayım diye gerilim. Yani...
+
+216
+00:52:22,068 --> 00:52:29,688
+Amacınız bu olsun. Çünkü devre teorisinin de en çok belki de bölümde dersten kalanların olduğu bir derstir devre teorisi.
+
+217
+00:52:33,528 --> 00:52:44,076
+Evet arkadaşlar, burada VSE'ye şarj olacak değil mi? Ta çok çok anahtarı açmadan önce VSE'ye şarj olacak çünkü giriş gerilimde şarj olacak sonuçta.
+
+218
+00:52:46,003 --> 00:52:55,603
+Peki, bunun analizini tabii tekrar bunu açık devre yaparım, bunu kısa devre yapalım. O zamanda da bu taraf açık devre olacağı için I, L'nin sıfır olma durumu var.
+
+219
+00:52:56,083 --> 00:53:06,443
+Yani bizim bu devrenin analizinde initial'larımız I, L'nin sıfır, V, L'nin sıfır, I, C'nin sıfır, V, C'nin de V, S'ye eşit olduğu senaryo.
+
+220
+00:53:08,724 --> 00:53:26,123
+Tabii T0'ı açtıktan sonra, yani şuradaki anahtarı veya işte bu gerilim kaynağını devreden kopardıktan sonra durum ne olacak? Sonsuz da tabii ki de kondansatörün 0'a, gerilimli 0'a, RL'nin 0'a, her şeyin 0'a gitmesine. Çünkü başka bir gerilim kaynağı yok.
+
+221
+00:53:27,603 --> 00:53:36,863
+Yani initial'ları şu an belirledik. Kondansörümüz bizim Vs'den sıfıra inecek bir transiyonu gösterecek.
+
+222
+00:53:37,323 --> 00:53:40,203
+Bobinimiz de sıfır, hep sıfır olarak kalacak.
+
+223
+00:53:43,363 --> 00:53:47,423
+Tabi o arada kondansörle bobin arasında bir iletişim söz konusu.
+
+224
+00:53:47,423 --> 00:53:51,183
+Bu initial ve final'ları bulduk. Şimdi bu aradaki
+
+225
+00:53:51,764 --> 00:53:58,964
+Şu iki duruma baktığımızda değişen tek şeyin aslında konular stönü üzerindeki gerilimin farklılaşması olduğunu görüyoruz.
+
+226
+00:54:00,764 --> 00:54:03,944
+Vs'yi sıfıra doğru geçiriyoruz değil mi?
+
+227
+00:54:04,584 --> 00:54:11,564
+Şimdi Vs'yi sıfıra doğru inmesini sağlayan şey ise tabii ki de devredeki direnç ve bobinin üzerindeki etki.
+
+228
+00:54:12,532 --> 00:54:25,931
+Bu da sadece değişen şeyin VC, yani kondansatör üzerindeki gerilim olduğu için biz denklemimize, yani o geçiş denklemini tamamen aslında kondansatörün gerilimi üzerinden yazabiliriz.
+
+229
+00:54:26,011 --> 00:54:27,231
+Çünkü o değişiyor sadece.
+
+230
+00:54:29,271 --> 00:54:34,491
+Şimdi biz anahtarı açtıktan sonraki, çok çok sonraki değil, sonraki andaki
+
+231
+00:54:35,219 --> 00:54:55,199
+Denklemi yazacağız. Mesela VR artı VL artı VC'nin sıfıra eşitliği denklemi KVL'den geliyordu hatırlarsanız. Bu KVL denklemine göre biz aslında VC'nin değişimini buradan çıkartacağız. Formülüze ediyoruz şu an. Transition'ı nasıl hesaplayabiliriz sorusuna.
+
+232
+00:55:03,155 --> 00:55:08,516
+Benim için sıfıra eşit. Şimdi VR'yi nasıl yazabilirim? R çarpı İ şeklinde yazalım.
+
+233
+00:55:09,076 --> 00:55:16,036
+VL'yi nasıl yazabiliyorum? Yani bobin üzerindeki gerilimi. LDI bölü DT ile yazabiliyordum.
+
+234
+00:55:16,036 --> 00:55:20,335
+VC zaten bizim analiz etmeye çalıştığımız şey. Yani VC şeklinde yazdım.
+
+235
+00:55:20,895 --> 00:55:27,036
+Şimdi şunu biliyorum ki ben IC dediğimiz, yani kondansiyonun üzerinden geçen de, IR'de, IL'de
+
+236
+00:55:27,731 --> 00:55:33,112
+Bob'in üzerindeki akım, kondansatör akım, hep seri devre olduğu için birbirine eşit, aynı IYSH.
+
+237
+00:55:33,112 --> 00:55:40,112
+Öyle olunca benim şu R olan kısmını kondansatör bağımlı bir şey yazabilirim.
+
+238
+00:55:40,307 --> 00:55:48,468
+Nasıl yazacağım bunu? I, C, I, R'ye eşit olduğundan dolayı, I, C'nin ben C, D, V, C bölü, D, T olduğunu biliyorum.
+
+239
+00:55:49,068 --> 00:55:55,688
+Yani konular üstünün içerisindeki akımın hesaplayan denklemin C, D, V, C bölü, D, T olduğunu biliyorum.
+
+240
+00:55:56,148 --> 00:56:05,708
+I, C'yi buldum. I, C, I, R'ye eşit. O zaman ben şuradaki denklemi C, D, V, C bölü, D, T'yi şuraya yazacağım.
+
+241
+00:56:06,420 --> 00:56:19,440
+Neden bunun için uğraşıyorum? Çünkü bütün ben satırlarımı, bütün değişkenlerimi VC parantezine almam lazım ki, konular sütun üzerindeki bu değişimin, işte neydi değişimimiz?
+
+242
+00:56:19,759 --> 00:56:27,159
+VS'den sıfıra inme eğrisini oluşturabilecek bir formül, yani bana bunu çizdirebilmemi sağlayacak bir formül elde edeyim.
+
+243
+00:56:28,739 --> 00:56:30,960
+I ve IC'yi eşittim.
+
+244
+00:56:32,148 --> 00:56:45,588
+İşte VC'yi zaten burada yazdık, bir şey değiştirmedik. LDI, L kısmını CDVCDT'yi yazdım. Yani aslında ikinci türevi. Türevi içerisinde türev demek, ikinci dereceden türev demek.
+
+245
+00:56:46,827 --> 00:56:57,847
+Yani LC parametre başlıkları, yani kasa yolu için direkt türevi dışına çıktı, T tabanlı değil. T tabanlı olan işte VC ikinci dereceden türevi şeklinde kaldı.
+
+246
+00:56:58,291 --> 00:57:11,152
+İkinci dereceden tel domeninde türevini al demek VC'nin. Artık İL kısmına da CDVC bölü DT'yi yazdığımda aslında birinci dereceden türevini, burası zaten RC devresi hatırlarsanız şu kısım.
+
+247
+00:57:11,152 --> 00:57:18,711
+Sadece L bobinden dolayı biz ikinci dereceden türevini almış olduk. Neyin? VC'nin.
+
+248
+00:57:20,179 --> 00:57:37,959
+Second Order'daki kasıt bu arkadaşlar. Yani bobinin içerisinden geçen akımın aslında I, C'ye eşitliğinden dolayı, I, C'nin de DVC bül DT, CDVC bül DT olduğundan dolayı iç içe yazıyoruz ve ikinci dereceden türevini almış oluyoruz.
+
+249
+00:57:41,204 --> 00:57:44,804
+Yani şu kısım benim için ikinci dereceden türev denklemi.
+
+250
+00:57:45,964 --> 00:57:52,164
+Şimdi burada göreceğimiz gibi hani dedim ya bu transition tamamen RL ve C'ye etkili.
+
+251
+00:57:52,164 --> 00:57:56,384
+Buradaki katsayıların ne olduğu ile alakalı bir denklem esasında.
+
+252
+00:57:56,744 --> 00:57:58,424
+Biz bunu çıkartmaya çalışıyoruz şu an.
+
+253
+00:58:00,584 --> 00:58:05,844
+Şimdi VCT kısmına bir değişken atacağım ve ben bu değişkene
+
+254
+00:58:06,387 --> 00:58:21,468
+A, E, S, T diye bir değişken atıyorum. Buna göre tekrar denklemi yazdım da. Yani şuradaki, işte şuralara ben diyorum ki A, E, S, T. Şuraya.
+
+255
+00:58:26,804 --> 00:58:39,744
+Yazdım düşün, düşünelim. Şuraya da yazdım. Bunu niye yazıyorum? Çünkü ortak parantezi alıp sadece parametreleri bir kenara koymak için.
+
+256
+00:58:40,364 --> 00:58:46,943
+Bunu ortak parantezi aldığında tabii şunu ikinci dereceden olduğu için çıkartırken S nasıl çıkacak? S kare şeklinde.
+
+257
+00:58:47,384 --> 00:58:53,584
+Buradaki S nasıl çıkacak? Normal S hani üstsel ya, üst türevini almak demek üstteki sayı kas sayı haline getirmek.
+
+258
+00:58:54,228 --> 00:59:04,028
+T tabanlı bir türevseğer, ki T tabanlı. Bu da SAET olacak. İşte bu da normalde türevi olmadığı için direkt kendisini yazdım.
+
+259
+00:59:06,128 --> 00:59:19,968
+Bunu ortak parantezine alarak, ben amacım şöyle bir S kare artı R bölü L, S artı bir bölü Lc elde etmem. Neden? Çünkü normalde çarpımda olan iki sayının
+
+260
+00:59:20,692 --> 00:59:37,172
+İşte basit eşsizlikleri hatırlarsanız, köklerini bulacaksan, ya burası sıfırdır, ya burası sıfırdır. Değil mi? Burayı sıfıra eşitleyerek ben aslında bu S dediğimiz parametreyi hesaplayabilirim.
+
+261
+00:59:39,123 --> 00:59:57,063
+Burada da 2, hani S kare dediğim işte akare artı B, neydi akare artı 2AB artı B kare denklemi var ya, o denklem formatına sokarsak bunu, yani burası akare artı 2AB artı B kare gibi bir yapıya sokarsak ne olacak şurası?
+
+262
+00:59:57,063 --> 00:59:59,963
+R bölü 2 ile bir parametre.
+
+263
+01:00:00,000 --> 01:00:24,720
+Ötekisi de bir bölü kök LC olacak. B kare. Niye bu formata sokmak önemli? Çünkü diskriminant hesabı yapmamız lazım. Bu kökleri bulmak için bir diskriminant hesabı vardı hatırlarsanız. Neydi o? A kare artı 2AB artı B kare diye bir denklemim var mesela. Böyle bir şey. Bunun diskriminantını nasıl buluyorduk? Eksi A artı eksi.
+
+264
+01:00:25,364 --> 01:00:29,284
+Bu diskriminat neydi? 4AC miydi? Hatırlıyor muyuz?
+
+265
+01:00:32,504 --> 01:00:41,884
+Diskriminat bölü 2A'ydı yanlış hatırlamıyorsam değil mi? Bu diskriminatta neydi? 4AC'di. Yok 4AC değil. Neydi?
+
+266
+01:00:42,943 --> 01:00:44,284
+Hatırlayabiliyor muyuz arkadaşlar?
+
+267
+01:00:45,923 --> 01:00:51,564
+Yani bu diskriminat hesabını B kare eksi 4AC'ı. Aynen. Doğru. B kare eksi 4AC.
+
+268
+01:00:52,724 --> 01:01:04,144
+Bu hesaplamayı, bu şekilde hani şu formattaki yapıyı buna sokabilirsek eğer, 2AB artı B kare formatına, o zaman yapabiliriz.
+
+269
+01:01:04,144 --> 01:01:15,364
+Mesela A kare, zaten S akare olduğundan ona gerek yok. Bu R bölü L'nin 2AB formatına sokmamız lazım.
+
+270
+01:01:20,788 --> 01:01:38,867
+Şurayı yani bir bölü kök LC yazarsam, şurayı ve buna da atıyorum işte V0 diyelim. Bu parametre, bunun karesini aldığımızda bunu vereceği için, bunu şu anlık böyle yazalım. Yani B dediğimiz parametre V0 olabilir.
+
+271
+01:01:46,291 --> 01:01:52,391
+Hayır, hayır. Artı, eksi burada var ya, iki kökü olanlar oradan geliyor. Eksi, B, in yani. B kare, eksi, dört ağacı.
+
+272
+01:01:54,612 --> 01:02:19,352
+gibi bir formalizasyonla çıkartacağız. Ama bu işlemi yaparsanız da bunları bulacaksınız da, direkt bunları parametre haline getirebiliriz. Şöyle ki, biz alfa ve omega diye iki parametreden bahsedeceğiz. Aslında bu iki parametre bizim şu denklemin diskriminat şeklinde çözülebilmesini sağlayacak iki parametre.
+
+273
+01:02:21,427 --> 01:02:31,008
+Alfa dediğimiz R bölü 2 ile, yani bizim devremizdeki R direnç değerinin iki katı bobin değeriyle bölümü benim için bir alfa parametresi olacak.
+
+274
+01:02:31,967 --> 01:02:39,628
+Omega parametresi ise bir bölü kök içinde bobin ve kondansatörün, farad ve herhangi değerlerinin çarpılma şeklinde bulunacak.
+
+275
+01:02:39,628 --> 01:02:41,548
+Ve ben köklerini bulacağım.
+
+276
+01:02:45,364 --> 01:03:04,963
+Kondansör üzerindeki gerilim değişimini hesaplamak için bu kökleri bulmam lazım. Çünkü bu kökler benim için, bu S1 ve S2 benim için önemli. Neden? Çünkü A çarpı E üzere S, T'deki S bu köklerden gelecek. Yani S1 ve S2 şeklinde.
+
+277
+01:03:11,443 --> 01:03:25,423
+Kare ile bulacağım. Şimdi uzun uzun diye yapmadım ama bunu diskriminattan çıkartırsanız aynı şeye geliyor. Yani bu formülleri buluyoruz zaten ama direkt bunları da bu şekilde kullanabiliriz. Yani illa çıkartmanın anlamı yok.
+
+278
+01:03:26,483 --> 01:03:39,943
+S1 ve S2 iki tane kökü söylüyor. S2 neye iki kökten bahsediyoruz burada? Çünkü şurada hatırlarsanız diskriminant formülünde artı eksil dediğimiz yapı bir artılı kökü belirtir, bir de eksili kökü belirtir.
+
+279
+01:03:41,943 --> 01:03:46,223
+O yüzden şurası artı ve eksi şeklinde ayrı ayrı yazılmış formatta.
+
+280
+01:03:48,628 --> 01:03:55,788
+Alfa dediğimiz şey, R bölü 2L'yi söyleyecek. Omega dediğimiz şey de 1 bölü LC, kök içinde LC'yi söyleyecek.
+
+281
+01:03:56,148 --> 01:03:57,628
+Ve buradaki alfa, omegayı...
+
+282
+01:03:58,643 --> 01:04:16,163
+yazarak diskriminant formülünde bizim için S1 ve S2 dediğimiz iki kökünü bulacağız. Bu S1 ve S2'yi biz nerede kullanacağız? Başta söylediğimiz gibi A çarpı E üzeri S, T'di. Mesela bu S1T olacak eğer iki kökü varsa.
+
+283
+01:04:20,500 --> 01:04:39,840
+Bir de S2T olacak. Bu benim için VC'nin T domeyindeki analizini sunacak denklemi verecek. O yüzden bu S1 ve S2'nin bulunması lazım. Bu S1 ve S2 de A ve alfa ve omega 0 parametresine bağlı olacak. Neden? Çünkü işte denklemini buraya da yazmışız zaten.
+
+284
+01:04:41,331 --> 01:04:53,531
+A kare eksi ve S0 kare den bulup S1'i verecek. S2'yi de eksi A eksi A alfa kare eksi omega 0 kare den bulacağız. Bunları bulduktan sonra yerine yazacağız.
+
+285
+01:04:53,951 --> 01:05:00,631
+Ve bizim için bu kondansiyonun üzerinden T domeninde değişen bir denklem verecek.
+
+286
+01:05:00,631 --> 01:05:05,011
+Tabi A1 ve A2'yi hesaplamaya geleceğiz. Bunlar kat sayılar.
+
+287
+01:05:06,003 --> 01:05:11,923
+Şimdi burada alfa ve omega aslında bizim için iki önemli parametre.
+
+288
+01:05:12,583 --> 01:05:18,763
+Alfa, şurada da yazdığımız gibi, alfa benim için sönümlendirici faktör.
+
+289
+01:05:20,003 --> 01:05:24,623
+Zaten bir şeyi sönümlendiren nedir devrede? Dirençtir.
+
+290
+01:05:25,556 --> 01:05:30,096
+Ve o yüzden bu alfa değeri benim için sönümlendirici faktör.
+
+291
+01:05:30,175 --> 01:05:35,496
+Alfa ne kadar yüksekse o kadar sönümlenecek benim kondansatördeki gerilimim.
+
+292
+01:05:35,916 --> 01:05:37,896
+Çünkü şu an biz BC üzerinde iş yapıyoruz.
+
+293
+01:05:40,056 --> 01:05:45,536
+Öteki tarafta V0 ise sönümlenmemiş doğal frekansı söyleyecek.
+
+294
+01:05:46,715 --> 01:05:49,556
+Neden? Çünkü V0 ne kadar yüksekse...
+
+295
+01:05:50,643 --> 01:05:55,363
+Benim o kadar sarılım yapan bir kondansatörde şarj verisi mi olacak?
+
+296
+01:05:57,903 --> 01:05:59,903
+Burası anlaşıldı mı arkadaşlar?
+
+297
+01:06:06,675 --> 01:06:07,655
+Tamam mı? Isso.
+
+298
+01:06:14,003 --> 01:06:17,643
+S1'i hani illa alfa, yani şöyle e yap.
+
+299
+01:06:20,563 --> 01:06:21,784
+Buydu denklem.
+
+300
+01:06:22,163 --> 01:06:24,724
+Alfayı tanımlarken R bölü 2L dedik.
+
+301
+01:06:25,304 --> 01:06:27,583
+Omega sıfırı tanımlarken de ne demiştik?
+
+302
+01:06:27,864 --> 01:06:30,083
+1 bölü kök, LC demiştik.
+
+303
+01:06:32,019 --> 01:06:38,879
+Şimdi bunları böyle direkt yazarsan, hani işte şuradaki denklemde A, R bölüyle yazarsanız bunları elde edeceksiniz.
+
+304
+01:06:39,480 --> 01:06:45,559
+Ama yani ayrı ayrı yazmak bence daha şey, yani karakteristik equation'la göre yazmak daha mantıklı.
+
+305
+01:06:50,483 --> 01:06:53,283
+Tamam mıyız arkadaşlar? Tekrar tekrar soruyorum.
+
+306
+01:06:56,023 --> 01:07:02,083
+Burada alfa ve omega sıfır benim için en kritik parametreler.
+
+307
+01:07:02,343 --> 01:07:05,683
+Kondansatörün üzerindeki gerilim boşaltımı için.
+
+308
+01:07:06,883 --> 01:07:11,863
+Çünkü şunu biliyorum, tekrar söylüyorum, normal bir RC devresi gibi sadece sünümlenmiyor.
+
+309
+01:07:12,183 --> 01:07:14,443
+Bobinin etkisiyle bu salınıma neden oluyor.
+
+310
+01:07:14,683 --> 01:07:17,823
+Ki biz onu V sıfır parametresiyle formülüze ediyoruz.
+
+311
+01:07:21,043 --> 01:07:22,003
+Tamam herhalde.
+
+312
+01:07:24,963 --> 01:07:30,583
+Şimdi iki kökü olan senaryoda, yani işte S1 ve S2'yi bulduk.
+
+313
+01:07:31,063 --> 01:07:36,483
+A1, E, S1, Delta, T, yani T'deki değişim bu, T diye de yazabilirsiniz, çok problem değil.
+
+314
+01:07:36,883 --> 01:07:38,303
+A2, E, S2, T.
+
+315
+01:07:38,900 --> 01:07:49,440
+Bu iki tane benim için VC1 ve VC2. Genel VC'yi bulurken de bu iki tanesini topluyoruz. Bizim için VC'nin üzerindeki değişimi verecek olan formül bu.
+
+316
+01:07:50,300 --> 01:07:57,980
+S1 ve S2'yi bulduktan sonra. Bir de A1 ve A2 var. Bunun için ise initial condition'larına bakmamız lazım.
+
+317
+01:08:02,387 --> 01:08:12,787
+T, yani bu sivilceyi yapmadan önce ve sivilceyi değiştirdikten çok sonra neye eşitleniyorsa biz A1 ve A2'yi buna göre bulacağız.
+
+318
+01:08:12,787 --> 01:08:14,787
+Mesela bu devrede...
+
+319
+01:08:15,967 --> 01:08:42,627
+İlk etapta, yani initial point'te kondansatör vs'ye eşitleniyordu değil mi? O zaman ben diyeceğim ki, t yerine 0 yazarsam, şu denklemde, bu denklemde şurada t yerine 0 yazarsanız, ne olması beklenir? Burasının 1 gelmesi beklenir. O zaman ben şunu biliyorum ki zaten t 0 anında kondansatörünün üzerinde vs gerilimi vardı.
+
+320
+01:08:43,636 --> 01:09:01,695
+O zaman A1 artı A2'nin VSI eşitliğinden bahsedeceğiz. Bu birinci denklemimiz olacak. Bir de şeyimiz vardı bizim, T0 A'nın da bunun akımını, yani kondansiyonun akımına bakacak olursak, formül C, D, V, C bölü D, T idi.
+
+321
+01:09:01,695 --> 01:09:08,336
+Burada V, C kısmına direkt bizim o deminki V, C1, V, C2 formülünü yazacağız yani şuradaki.
+
+322
+01:09:10,355 --> 01:09:18,876
+Bunu yazdığımızda da T0 anda burası birler gidiyor ama tabi bu türevi olacağı için, D bölü TT olduğu için S1 başa gelecek.
+
+323
+01:09:19,355 --> 01:09:24,615
+İkinci formülümüz de bizim S1A1 artı S2A2'nin sıfıra eşit olması.
+
+324
+01:09:25,975 --> 01:09:33,595
+Bunlar tamamen bizim için T0 anındaki kondansatörün değerini bildiğimizden dolayı hesaplayabileceğimiz parametreler.
+
+325
+01:09:34,387 --> 01:09:40,448
+T0 anında kondansiyonun içerisindeki akım 0'dı. Kondansiyonun üzerindeki gerilim Vs idi.
+
+326
+01:09:41,327 --> 01:09:52,608
+T0 anında A1 artı A2 Vs'ye eşit oluyor bu şekilde. Akım için türevini almamız lazım. Şu denklemin türevini alırsanız da S1 S2 başa gelecek.
+
+327
+01:09:55,208 --> 01:09:59,847
+T'ler 0 olduğu için buralar T0 anında analiz ediyoruz. Buralar gidecek.
+
+328
+01:10:00,000 --> 01:10:05,539
+O zaman S1, A1, S2, A2'nin bu sefer sıfıra eşit olmasından bahsedeceğiz.
+
+329
+01:10:05,899 --> 01:10:10,739
+Şimdi S1, S2'yi zaten biliyoruz. Daha önceki stepte hesaplamış olmamız lazım.
+
+330
+01:10:11,340 --> 01:10:16,500
+A1, A2'ye ait iki tane iki bilinmeyen denklemden A1 ve A2'yi çekeceğiz.
+
+331
+01:10:22,068 --> 01:10:23,347
+Tamam mıyız arkadaşlar?
+
+332
+01:10:30,515 --> 01:10:36,275
+Evet, genel olarak tekrardan burada bir formülüze etmişiz S1 ve S2'yi bulmak için.
+
+333
+01:10:36,884 --> 01:10:46,484
+Şimdi üç tane senaryodan bahsetmiştik. Biri aşırı sönümlenmiş, ikincisi sınırda sönümlenmiş veya kritik sınırda diyebiliriz buna Türkçe.
+
+334
+01:10:46,484 --> 01:10:59,283
+Sınırda sönümlenmiş ve üçüncüsü de sönüm altı kalmış yapılar. Şimdi tekrardan belirtiyorum bir şeyi sönümlendiren R direncinin etkisidir değil mi?
+
+335
+01:11:02,224 --> 01:11:04,043
+Şuraya da yazalım formüllerini tekrar.
+
+336
+01:11:04,503 --> 01:11:06,304
+R bölü 2L idi.
+
+337
+01:11:07,103 --> 01:11:08,463
+Omega sıfır da neydi?
+
+338
+01:11:08,644 --> 01:11:12,664
+1 bölü kök LC idi.
+
+339
+01:11:12,984 --> 01:11:14,064
+Şurayı düşünce yazalım.
+
+340
+01:11:14,884 --> 01:11:21,484
+Şimdi alfanın büyük olması V sıfırdan aşırı sönümlenmiş demek olacak bizim için.
+
+341
+01:11:22,543 --> 01:11:26,744
+Alfa V sıfıra eşit ise eğer sınırda sönümlenmiş olacak.
+
+342
+01:11:27,475 --> 01:11:34,635
+alfa V0'dan çok çok düşükse, bu sönüm altı kalmış demek olacak bizim için.
+
+343
+01:11:35,456 --> 01:11:40,216
+Yani bu üç karakteristiği biz yine alfa ve omega 0 parametrelerine göre belirleyeceğiz.
+
+344
+01:11:42,296 --> 01:11:53,435
+Misal, çok sönümlenmiş senaryoda, konular sütü üzerindeki gerilim düşüyor, bobin üzerindeki akım artıyor, bir yerden sonra netleşiyorlar.
+
+345
+01:11:53,779 --> 01:12:15,619
+Şimdi bu çok sönümlenmiş dediğimiz senaryoda alfa omega 0'dan büyük olmalıydı. O zaman hani ben buraya denklemi yazarsam alfayı büyük şeklinde işte R bölü 2L büyüktür 1 bölü KLC yaparsam burada işte karesini alalım iki tarafın.
+
+346
+01:12:16,083 --> 01:12:33,564
+R² bölü 4L² eşittir. 1 bölü DC kalsın. Bu D'lerden biri gitti. V kaldı. C'yi buraya aldım. C neye eşit olacak? Yani 4L bölü R²'ye eşit olacak. Bundan büyük olacak. Pardon, şuralar büyük olacak tabii.
+
+347
+01:12:34,452 --> 01:12:54,912
+Yani ben öyle bir konular stör farat değeri seçersen, nasıl bir şey? Devredeki direncin karesinden, işte bobinin dört katının oranından daha büyük bir konular stör değeri seçersen, benim için bu devre, Ohm overdamped, yani aşırı sönümlenen bir devredir diyeceğim.
+
+348
+01:12:55,188 --> 01:13:02,908
+Ve bunun hesabında, yine hepsinde aynı hesap var ama S1 ve S2'yi normal formülden hesaplayacağım.
+
+349
+01:13:03,028 --> 01:13:07,328
+İşte S1'im neydi? Tekrar tekrar yazıyorum ki siz de ışın neşir olalım.
+
+350
+01:13:12,500 --> 01:13:34,819
+Buna göre öteki de, pardon şurası yine eksi olacak. Şurası sadece eksi artı. S1-S2'yi hesaplayıp yerine yazacağım. Sonra A1-A2'yi hesaplayacağım yerine yazacağım. Bu over-damped senaryosu. Yani size bir soru soruldu. Bir,
+
+351
+01:13:35,667 --> 01:13:54,807
+Bu nasıl bir karakteristikte sönümlenir? Bulun. Tamam buldun. Overdamp. Neden? Çünkü V0, A'dan çok ufak. A parametresi daha yüksek. O zaman sönümleme eğrisini çizin. O senaryoda işte bu formülü bulduktan sonra birkaç farklı T değeri için bunu çizeceksiniz.
+
+352
+01:13:57,492 --> 01:14:14,551
+İkincisi, Critical Dampet senaryosu, A'nın yani Iphone'ın Omega sıfıra eşit olma senaryosu. Bunu eşit derseniz de öyle bir kondansator seçeceksin ki, devredeki işte bobin ve direnç, işte bu zaten A sıfır ve S sıfır eşitliğinden çıkaracağımız şey.
+
+353
+01:14:14,551 --> 01:14:23,672
+Burada S1 ve S2 tabii birbirine eşit çıkacak çünkü şu formülde bu iç taraf A sıfır ve S sıfır birbirine eşit olduğu için ne olacak? Sıfır gelecek.
+
+354
+01:14:25,076 --> 01:14:43,296
+S1'de S2'de benim için eksi A olması lazım. Değil mi? O noktada A1E eksi A alfa artı A2, şuradaki biraz yanlış olmuş, şurasını salla, E üzere eksi A T olacak. Değil mi?
+
+355
+01:14:46,420 --> 01:15:12,819
+Underdamped senaryoda yani bu en problematik bir senaryo. Neden? Çünkü sönüm altı demek şu demek, rezonans yapıyor demek. Yani bir türlü sönümlenemiyor demek. Sönümlenmekten kastımız bir yerden sonra artık işte steady state'e doğru devrede bir stabil bir değerin kalması demek. Ama Underdamped'de bu senaryo olmuyor. Bu senaryo salınıma gidiyor.
+
+356
+01:15:13,684 --> 01:15:24,363
+Ve kondansatör değeri eğer ki devrede kullanılan bobin ve direnç işte 4L bölü R² parametresinden çok ufak bir değerse bu salınıma gidecek demektir.
+
+357
+01:15:25,395 --> 01:15:43,015
+Hatta şöyle diyelim, R hiç olmasa, R parametremiz sıfır olsa ve bobinin değeri konuları störden daha fazlaysa eğer bu sonsuza kadar sönümlenmeden salınım halinde ilerleyen bir devre tasarımına neden olur.
+
+358
+01:15:45,043 --> 01:16:11,283
+Tabii sonuçta her yerde, kabloda bile bir direnç olduğu için, bu gerçek hayatta olmuyor da, teoride eğer ki dirençsiz bir CL devresi olsa, RLC değil de, C ve L devresi olsa ve C parametresi L parametresinden daha az seçilmiş olursa, dört katından daha az, bu sonsuza kadar sanım gösteren bir devre gösterir.
+
+359
+01:16:12,404 --> 01:16:23,364
+Bunun hesaplamasını yaparken de yine S1, S2 için parametreler aynıydı ama alfa bu sefer omega 0'dan ufaksa eğer burası eksi çıkacak değil mi?
+
+360
+01:16:23,764 --> 01:16:41,344
+Neticede. Kökün eksili olma durumunu ben J ile gösteriyordum değil mi? Kök eksi X desem ben buna J X şeklinde dışarıya çıkartabiliyordum değil mi? Yani dal olsun şurasının karesi tabii de şimdilik böyle çıksın şöyle yapalım.
+
+361
+01:16:49,235 --> 01:17:08,735
+Tam tersine, V0'ın karesi, eksi A kareyi, VD'den bir parametre eşitlersem, eksi, şey artı, şuradaki, eksi A artı J omega D ve eksi A eksi J omega D şeklinde bu S1 ve S2'yi bulacağım.
+
+362
+01:17:09,235 --> 01:17:13,476
+Omega D'nin de bunun içerisinin tam tersi olduğunu bileceğiz.
+
+363
+01:17:17,140 --> 01:17:25,500
+Tabi şimdi burada şu S1 ve S2'nin sonuçta bizim hep aynı şeyi yapacağız değil mi?
+
+364
+01:17:25,680 --> 01:17:31,440
+S, T artı A2, E üzeri S, T, 2, 1.
+
+365
+01:17:32,400 --> 01:17:42,360
+Şimdi bu S ne oldu bizim için? Artık eksi A artı J omega D, şuradaki S'te eksi A eksi J omega D oldu.
+
+366
+01:17:42,579 --> 01:17:50,659
+Şimdi J ile gösterilen üstsel ifadelerin aslında bir eşikliği var. Belki trigonometriden hatırlarsınız.
+
+367
+01:17:51,199 --> 01:17:56,920
+E üzeri J omega demek, kosinüs omega artı J sinüs omega demek değil mi?
+
+368
+01:17:57,779 --> 01:18:02,219
+Aynı şekilde E üzeri eksi J, pardon teta oluyor değil mi bu? Omega diyorum da teta.
+
+369
+01:18:02,699 --> 01:18:06,539
+Eksi J teta, kosinüs teta eksi J sinüs teta oluyor.
+
+370
+01:18:07,891 --> 01:18:25,831
+Bu iki kayıdayı bileceğiz. Bizim yazdığımıza göre, şurası yani, bir ortak parantezi alsak, E üzeri eksi A, T ortak parantezini alsak, hatta ilk etaptakini bir buraya yazalım isterseniz. Bizim formülümüz şuydu değil mi? Şuraya yazmıştık ya.
+
+371
+01:18:25,831 --> 01:18:31,072
+Aynen, eksi A artı J.
+
+372
+01:18:34,420 --> 01:18:38,119
+E üzeri, eksi A, eksi G, Omega, D.
+
+373
+01:18:39,639 --> 01:18:46,399
+Evet. Şurası S1, şurası da S2.
+
+374
+01:18:47,300 --> 01:18:48,719
+Tabi bunların bir de T'leri var.
+
+375
+01:18:50,300 --> 01:18:56,000
+Şimdi bunu ortak parantezine almak için E üzeri, eksi A, T'leri ortak parantezine alabilirim değil mi?
+
+376
+01:18:57,559 --> 01:18:59,219
+Şurada aldığınız gibi yani.
+
+377
+01:18:59,475 --> 01:19:08,295
+Şu kısmı ortak mantıse aldıktan sonra benim için A1EJ Omega D, A2I-J Omega D kaldı.
+
+378
+01:19:08,735 --> 01:19:19,395
+Şimdi ben burada şu E üzeri J Omega D'yi aslında kosünüs Omega D delta T artı J sinüs Omega D delta T şeklinde yazabilirim.
+
+379
+01:19:19,555 --> 01:19:22,095
+Çünkü bu trigonometrik olarak bana bunu söylüyor.
+
+380
+01:19:24,851 --> 01:19:50,171
+Theta eksi J sinüs Theta şeklinde yazabilirim. Bunları da ortak parantezine aldığımda, A1, yani kosünüs ortak parantezini alsam, şuradaki kosünüs delta T ile şuradaki konuları, şu ikisini ortak parantezine alsam, A1 artı A2, ötekisini de J sinüs ortak parantezine alsam, şuradaki, o zaman da A1 eksi A2, şuradakinden dolayı, gelecek sinüs omega değil delta T.
+
+381
+01:19:50,688 --> 01:20:13,507
+Parantezinde. Bunları da A1 artı A2'ye B1 diye bir parametre yazsam, A1 eksi A2'de B2 diye bir parametre yazsam, nihayetinde benim için under-damped senaryosu için, yani sünümlenmemiş bir konuları RLC devre yapısında, sünümlenmemiş ne demekti? V0'ın A'dan büyük olduğu senaryo, alfadan.
+
+382
+01:20:14,323 --> 01:20:20,384
+Hesaplamam gereken VCT kondansör üzerindeki değişim grafiğinin formülü bu olacak.
+
+383
+01:20:24,212 --> 01:20:25,532
+Anlaşıldı mı arkadaşlar?
+
+384
+01:20:28,752 --> 01:20:33,672
+Buradaki B1'in içerisindeki A1, A2'leri nasıl bulacağız? Yine aynı şekilde bulacaksınız.
+
+385
+01:20:33,952 --> 01:20:41,192
+Initial Point'teki akım ve gerilim, kondansör üzerindeki akım ve gerilim değerlerine göre.
+
+386
+01:20:45,587 --> 01:20:47,268
+Umarım anlaşılmıştır.
+
+387
+01:20:48,387 --> 01:20:49,807
+Tekrardan burada belirtiyoruz.
+
+388
+01:20:50,207 --> 01:20:58,467
+Omega 0 dediğimiz şey, sönüm altı kalmış, doğal frekans bilgis demek.
+
+389
+01:20:58,467 --> 01:21:03,807
+Yani aslında bu salınımı sağlayan şey, salınım olmasına neden olan parametre.
+
+390
+01:21:04,288 --> 01:21:07,340
+VD ise bu salınımın...
+
+391
+01:21:07,859 --> 01:21:29,819
+Yani sanımı sağlayan o parametrenin sönümlenmesini sağlayan parametre. Çünkü tam tersi aslında birbirinde. Birinde V0 dediğimiz işte bir bölü LC idi. Bu VD dediğimiz ise aslında bizim kök içerisinde VD'nin karesi eksi A'nın karesi. Ben geliyorum.
+
+392
+01:21:31,315 --> 01:21:36,416
+Aslında burada da bir z parametresi var. O yüzden de Ampour Natural Frequence oluyor.
+
+393
+01:21:41,363 --> 01:21:46,843
+Baktığımızda şimdi bu normal bir zaman domeninde, kondansör üzerindeki değişim grafiği.
+
+394
+01:21:47,363 --> 01:21:52,483
+Mavi olan bizim için over-damped dediğimiz, yani aşırı sönümlenmiş.
+
+395
+01:21:53,063 --> 01:21:57,003
+Kırmızı olan gördüğümüz gibi damp olamamış, sönümlenememiş.
+
+396
+01:21:57,163 --> 01:22:00,623
+Yani bir süre daha sarılım yaptıktan sonra oturmuş.
+
+397
+01:22:01,463 --> 01:22:06,463
+Critical dediğimiz yeşil, sönümlenmiş bir şekilde.
+
+398
+01:22:08,992 --> 01:22:18,811
+İşte veya critical neye göre? Şuna göre, en erken optimum seviyeye erişen critical sönümlenme cevabıdır.
+
+399
+01:22:18,891 --> 01:22:26,971
+Yani burada yeşil olan, bakalım, şuralarda herhalde değişmeyen parametreye erişmiş durumda. Hep aynı kalmış durumda.
+
+400
+01:22:27,811 --> 01:22:35,192
+Peki, diğerleri daha geç erişir, mesela kırmızı buralarda erişmiş, mavi de herhalde şuralarda falan erişmiş.
+
+401
+01:22:36,243 --> 01:23:01,884
+İkisi bu over ve under dampedlar daha geç sönüm durumuna gelir. Critical daha erken gelir. Ama over'da, under'da daha erken düşüş yaşar. Critical daha geç düşer ama daha erken sönüme ulaşır. Over veya under dampedlar daha erken düşüşe geçer ama daha geç sönüme ulaşır.
+
+402
+01:23:03,988 --> 01:23:20,988
+Yani ikisi de Over'da, Under'da, ikisi de aslında bir salınım yapıyor. Biri gevşek bir salınım, yani daha erkenden düşüyorum ama daha geç oturuyorum. Öteki daha erkenden düşüyor ve salına salına oturuyor.
+
+403
+01:23:23,488 --> 01:23:24,887
+Tamam mıyız arkadaşlar?
+
+404
+01:23:30,163 --> 01:23:39,163
+Grafin üstünden biraz daha geçebilir miyiz? Ben karşısında [öğrenci]. Şöyle, işte yeşil olan kritik olarak sınırda...
+
+405
+01:23:42,484 --> 01:23:58,844
+Optimum seviye steady state demek. Yani artık doyum, değişim göstermeyecek olan gerilim bu eğrisi demek. Şimdi baktığımızda burada bir gerilim düşümü var. Yani devreden bir gerilim kaynağı çekilmiş ve kondansatör bobin üzerinden salınım yapacak.
+
+406
+01:24:06,036 --> 01:24:30,775
+Over-damped dediğimiz aşırı sönümlenmiş demek. Yani burada sönümleniyor ama optimum seviyeye daha sonra ulaşıyor. Optimum seviyeden kastım ne dersen işte bu normalde denge durumu demek. Denge durumuna sonradan giriyor. Yeşil olan ise kritik olarak yani sınırda sönümlenen cevap demek.
+
+407
+01:24:34,003 --> 01:24:54,984
+Daha geç, yani birden inmiyor ama tabii daha erkenden kritik seviyeye geliyor. Daha erkenden artık denge sağlanıyor devrede. Ötekiler de bu salınımla gösteriyor. Yani salınım olduktan sonra bir süre sonra dengeye oturuyor. Bu dengede anlatırken şöyle söylemiştik.
+
+408
+01:24:55,315 --> 01:25:07,175
+Şimdi normalde RC devresinde, kondansatör direnç devresinde denge demek basit. Neden? Çünkü direnç sömürecek ve bir yerde eğer ki gerilim kaynan yoksa devrede denge dediğim şey 0 volt olacak.
+
+409
+01:25:07,815 --> 01:25:12,775
+Bütün kondansatörün içerisindeki gerilim boşalması olacak. Yani şöyle bir eğri olacak.
+
+410
+01:25:14,395 --> 01:25:22,355
+Kondansatörde hızlıca düşecek sonra şöyle bir eğri olacak ve sıfıra doğru gidecek. Bu RC devresinde veya RL devresinde böyle.
+
+411
+01:25:23,667 --> 01:25:37,307
+Çünkü direnç üzerinden sömürülüyor. Ama şimdi RLC devrelerinde sıfıra inmek zorunda değil. Çünkü devrede bir de bobin var, birbirine besleme, yani ne diyorlar buna?
+
+412
+01:25:38,963 --> 01:25:59,644
+Bir tabir vardı ama Fortnite back miydi neydi hatırlayamadım. Birbirini besleyebilecekler. Çünkü kondansatör deşarj olurken bobin şarj olacak, bobin şarj olurken kondansatör onunla şarj olacak gibi bir yapı içerisindeler. Böyle RLC devrelerinde dengeden kastımız bir zamanda artık bu değişimin olmama durumu.
+
+413
+01:26:00,787 --> 01:26:08,387
+Şimdi bakıyoruz, kırmızı için konuşursak, kırmızı da omega 0 diye tabir ettiğimiz parametre alfadan büyük olan senaryo.
+
+414
+01:26:08,387 --> 01:26:17,267
+Ne demek bu? 1 bölü kök LC'nin R bölü 2L'den büyük olduğu senaryo.
+
+415
+01:26:17,827 --> 01:26:28,467
+Yani ben kondansatör bobin ikilemi dirençten daha ağırlıklı, öyle olunca direnç bunu sönümlendiremiyor, bir yerde sabitleştiremiyoruz.
+
+416
+01:26:29,524 --> 01:26:51,264
+Ama eninde sonunda direncin ağırlığı daha büyük olacak. Neden? Çünkü işte rezidif etkiden dolayı akım azalacak. Öteki tarafta maviyi analiz edersek, aşırı sönümlenmiş, burada da direncin etkisi çok büyük. Yani A büyüktür, omega 0 dersen. O da R bölü 2D demek. Büyüktür, 1 bölü kök, RC.
+
+417
+01:26:52,819 --> 01:26:58,479
+Böyle olunca direnç direkt zaten o aradaki şarj-deşarj eğrisini sönümlendirmiş erkenden.
+
+418
+01:26:59,339 --> 01:27:10,699
+Ama bir seviye sonunda sızıntı akımları, ufacık hava akımlar sayesinde hala kendi içerisinde işte bu dengesizlik söz konusu ileride ancak oturuyor.
+
+419
+01:27:10,699 --> 01:27:18,899
+Yeşil olanda ise yani devre tam balans dengede olduğu durumlarda ise işte R bölü 2L'nin
+
+420
+01:27:19,444 --> 01:27:31,583
+Bir bölü DC'ye iş doldu durumlarda ise, tamam daha geç bir değer kaybı var ama daha erkenden denge durumuna geliyor.
+
+421
+01:27:31,703 --> 01:27:36,724
+Denge durumundan kastımız burada, şurası, şu yeşil çizginin olduğu yer işte.
+
+422
+01:27:37,784 --> 01:27:41,604
+Yani çok burada fark edilmemiş ama bazı durumlar da net fark edilebiliyor.
+
+423
+01:27:49,268 --> 01:27:53,087
+Tamam, bir ara verelim. Bakıyorum bir nerede vereyim diye bekleyeyim biraz.
+
+424
+01:27:54,327 --> 01:27:57,108
+Biraz daha ilerleyelim, vereceğim. Şu konu bilsin.
+
+425
+01:27:59,287 --> 01:28:01,188
+Burada dediğimiz şeyler aslında izah ediliyor.
+
+426
+01:28:01,188 --> 01:28:15,867
+İşte aslında direncin bir kayıp yaşattığını, alfa dediğimiz şeyin bu kayıptan dolayı direnç, direnç aslında R1'i 2L'den dolayı, o değerden dolayı şey yaptığını söylüyor.
+
+427
+01:28:16,404 --> 01:28:27,844
+Eğer ki bu R0 olursa, bir shifted back and forth dediğimiz şey yani bu birbirini besleyen ve sonuçta kadar salınım gösteren bir devre olacağını söylemişiz.
+
+428
+01:28:29,283 --> 01:28:36,064
+Ossyasyon devresi deniyor buna hatta. Under damped cevaplara biz ossyasyon diyoruz arkadaşlar.
+
+429
+01:28:36,243 --> 01:28:42,304
+Yani ossyasyon etkisi gösteriyor diyoruz. Yani salınım demek, salınım etkiye sahip.
+
+430
+01:28:45,619 --> 01:29:05,659
+Burada söylediğiniz gibi işte Critical Dampet devreler en kısa zamanda balans durumuna gelen, steady state'e gelen yapılar. Ama Over Dampet ve Under Dampet'lar daha erkenden hızlıca düşüyor ama daha geç steady state'e duran konuma geliyor.
+
+431
+01:29:11,315 --> 01:29:18,815
+Evet, buraları bahsettik zaten, parametreleri anlattık. Özet olarak bunları buraya koymuşuz.
+
+432
+01:29:22,387 --> 01:29:45,387
+A'ları bulmak için de dediğimiz gibi T0 anını bildiğimiz için devrelerde, işte bu yapıdan mesela, bu konular störün bu tarz bir bağlantı şemasında, RLC seri, RLC devrelerinde konular stör giriş gerilimine şarj olacağından, T0 anında Vs gerilimine, T0 anında 0 akıma, 0 ampere.
+
+433
+01:29:45,387 --> 01:29:50,047
+Ama T sonsuz anda 0 volta, T sonsuz anda da yine 0.
+
+434
+01:29:50,387 --> 01:29:55,108
+Ampere eşit olan bir değişimden bahsedeceğiz.
+
+435
+01:29:56,828 --> 01:30:02,368
+Bunu bulduktan sonra, hani VC'yi bulduktan sonra devre üzerinde başka analizler de istenebilir.
+
+436
+01:30:02,528 --> 01:30:05,188
+Misal örnek verelim, bobin üzerinden geçen akımı soruyor.
+
+437
+01:30:05,828 --> 01:30:09,648
+VC'yi biliyorsak, VC'nin o T zamanındaki akımını istiyor.
+
+438
+01:30:09,648 --> 01:30:13,648
+Yani şunu demeye çalışıyorum, siz şöyle bir denklem yazdık.
+
+439
+01:30:21,939 --> 01:30:42,079
+O, V, C, T'ye göre yazdık. Değerleri de var olduğunu düşünüyorum. S1, S2'yi biliyorum. A1, A2'yi biliyorum. Diyoruz ki, T eşittir 0, 2 saniyedeki ÖD akımını bulumuz. Şimdi bunu bulmak için ilk başta benim T0, 2 saniyedeki V, C'yi bulmam lazım.
+
+440
+01:30:42,416 --> 01:30:57,916
+VC'yi bulduktan sonra o T2 saniyede, şunu biliyorum, bu seri bir RLC devresi olduğundan, I, C, I, L'ye, I, R'ye hepsine birbirine eşit. Oradan ben I, C'yi ilk etapta bulabilirim. Şuraya, V, C, T'ye ben.
+
+441
+01:30:58,515 --> 01:31:09,635
+ve C'nin 0,2 saniyedeki şu cevabı, yani şu formüle koyduğumda, T yerine 0,2 koyduğumdaki değerden elde ettiğim değeri yazarak I, C'yi bulacağım.
+
+442
+01:31:10,195 --> 01:31:13,435
+I, C'yi, I, D'ye eşitleyerek diyeceğim ki, I, D'ye'm benim bu.
+
+443
+01:31:14,899 --> 01:31:25,399
+Veya işte VR'ye sorulabilir. R direnç üzerindeki gerilim. E, I, C'yi buldum. I, R'ye eşit olacağını biliyorum. R çarpı I, R'den V, R'yi bulabilirim.
+
+444
+01:31:25,739 --> 01:31:36,619
+Veya bobin üzerindeki gerilim. I, L'yi buldum. I, R, I, C'ye eşit olduğundan dolayı. I, L'yi buldum. Onun normal L'de, L bölü D, T'den V, L'sini çekebilirim.
+
+445
+01:31:39,731 --> 01:31:54,091
+Devre diagramıyla alakalı diğer istenen değişkenleri, kondansütörün üzerindeki değişim formülü bulunduktan sonra, transition bulunduktan sonra yerine koyup bulabiliyoruz.
+
+446
+01:31:57,587 --> 01:32:02,027
+Bunu bahsettik zaten. İlk hitapta VC, VSE, Eşil Olmur mu vs.
+
+447
+01:32:02,987 --> 01:32:11,108
+Özet olarak da baktığımızda V0 yani Omega 0 ve Alfa'nın kritik olan iki parametre olduğundan bahsettik.
+
+448
+01:32:11,207 --> 01:32:18,467
+Çokça üzerinde durdum. İşte burada Alfa'nın sönümlendireceği V0'nın undamped etkisi olduğunu söyledim.
+
+449
+01:32:26,676 --> 01:32:31,256
+Formülünün ne olacağını çıkarttığımızda izah etmeye çalıştık.
+
+450
+01:32:35,604 --> 01:32:40,684
+Paralel devre yapısına gireceğiz. Girmeden önce bir ara verelim. Saatimiz kaç?
+
+451
+01:32:43,664 --> 01:32:44,344
+Bakalım.
+
+452
+01:32:46,104 --> 01:32:50,584
+3.30, 3.45'te buradayız arkadaşlar. 3.40'ta buradayız, 40'ta 40'ta.
+
+453
+01:32:51,584 --> 01:32:58,364
+Tamam mı? 15.40'ta başlayacağım. Çünkü daha sunumun yarısındayız. Bunları bitirmemiz lazım.
+
+454
+01:32:59,924 --> 01:33:01,044
+3.40'ta buradayız.
+
+455
+01:44:11,667 --> 01:44:13,427
+Evet arkadaşlar, başlayalım.
+
+456
+01:44:16,087 --> 01:44:22,507
+Kondansatör tam olarak hangi edemanla şarj oluyor? Kondansatör uçlarından uygulanan gerilime şarj olur.
+
+457
+01:44:22,507 --> 01:44:30,028
+O yüzden uçlarına, yani kondansatörü sen açık devre yaptığında, open circuit yaptığında,
+
+458
+01:44:30,771 --> 01:44:46,091
+O açık devrenin kablolarının ucu nereye bağlı? Hangi kapalı devrime sahip olan, hangi direncin bağlı? Direnç ise o zaman o direncin üzerindeki gerilme şarjı olacak.
+
+459
+01:44:46,991 --> 01:44:50,491
+Şimdi ileride davar örneklerimiz tekrar üzerinde değiniriz.
+
+460
+01:44:50,491 --> 01:44:54,491
+Şimdi biz seri RL-C devresine bakmıştık.
+
+461
+01:44:55,507 --> 01:45:09,328
+Yani seri olarak bağlanmış, RLC devresini demin analiz ettik. Peki bu RLC yapıları paralel olarak bağlansa ve yine aynı senaryoda yani bir gerilim kaynağı var ve bu gerilim kaynağını çıkarttık.
+
+462
+01:45:10,087 --> 01:45:21,667
+Yani ne demek bu? Bizim kondansatörümüzün üzerinde ilk etapta bir kaynak olduğu için eşeğe şarj olmuş. Çıkarttığımızda deşarj olacak ama nasıl deşarj olacak bunun analiziydi.
+
+463
+01:45:22,163 --> 01:45:26,043
+Seri RLC'de bunu yaptık. Paralelde nasıl yapacağız? Buna bakacağız.
+
+464
+01:45:28,123 --> 01:45:42,524
+Paralel RLC devrelerinde de tabii ki bu paralel devrelerde akım kaynağı olmak zorunda ki bunu ters çelediğimizde seri moda geçirilebilirim.
+
+465
+01:45:43,963 --> 01:45:49,264
+Şimdi T'si bu anda, yani bunu kaynağı devreden çıkarttığımız durumu analiz edeceğiz.
+
+466
+01:45:50,868 --> 01:45:58,748
+Yine aynı şekilde boundary condition'larına bakacağız. İlk etapta yani test fırından önce ne yapıyorduk? Şuralar.
+
+467
+01:46:09,363 --> 01:46:26,763
+Burası açık devre olacak, burası kısa devre olacak ve burası normal yapıda bulunacak zaten. Şimdi burası açık devre olduğu için de burada bir akım geçmeyecek, I, D üzerinden bir akım geçecek. I, D üzerinden geçen akım ne olacak? Tabii ki de I, S akımına eşdeğer olacak değil mi?
+
+468
+01:46:26,763 --> 01:46:36,823
+Çünkü sonuçta şunu biliyorum ben, kısa devre olduğundan dolayı akım her daim yani daha direnci R etkisinin olmadığı yoldan gidecek.
+
+469
+01:46:37,363 --> 01:46:41,423
+Bu yüzden I ve I, S eşit olacak ilk etapta. I, C'miz sıfır olacak.
+
+470
+01:46:42,739 --> 01:46:49,219
+VC'miz tabii ki de açık devre olduğu ve herhangi bir gerilim oluşmadığı için devrede, sonuçta kısa devre var burada.
+
+471
+01:46:49,659 --> 01:46:53,939
+Yani şurada bir direnç olsaydı tamam oluşacaktı ama burada bir direnç yapımız yok.
+
+472
+01:46:54,479 --> 01:46:59,719
+Burada bir, yani buradan direkt kısa devreden dolayı geçen bir akım var.
+
+473
+01:47:00,419 --> 01:47:02,579
+Burada da bir akım, R'de oluşmayacak.
+
+474
+01:47:03,119 --> 01:47:06,279
+Öyle olduğu için de kısa devreler soruları da hatırlarsınız.
+
+475
+01:47:06,960 --> 01:47:08,379
+Vize'de de sormuştuk.
+
+476
+01:47:08,787 --> 01:47:33,867
+Bir direnç yapısının üstünde bir bağlantı varsa buradan bir akım geçmez. Kısa devreden geçer değil mi? Burada da aynı şekilde buradan bir akım geçmeyecek, ÖD'den akım geçecek. İlk etapta initial condition olarak. Ve bu ÖD, ÖS'ye eşit olacak birebir, diğerleri sıfır olacak. Ayrıca VC, kondansiyonu herhangi bir gerilime şarjı olmayacak.
+
+477
+01:47:36,756 --> 01:48:02,815
+Yani paralel bir yapıda biz bobin üzerinden, çünkü initial'da IS'ydi, devreden çıkarttığımda ben kaynağı ne olacak final state'de? Sıfıra inmesi lazım. Çünkü devrede başka kaynak yok. Şunu çıkarttığımda şu kısmı, bu bobinin üzerindeki akım, oluşan IS akımı ne olacak? Deşarj olacak bir şekilde bunun analizi.
+
+478
+01:48:05,779 --> 01:48:18,420
+Yani IS'nin sıfıra inme analizini biz yapacağız. Yani bir IS, bir bobin üzerindeki akım analizinden bahsediyoruz. O zaman biz denklemi not analizine göre yazabiliriz. Ne demek bu?
+
+479
+01:48:19,220 --> 01:48:32,660
+Tabii ki de T0'ndan çıkarttıktan sonraki transişini hesaplayacağımız için, I, R, I, D, I, C'nin toplamının 0 olduğu kaidesi, ki biz buna K, C, D diyorduk, bir noda girenler çıkanlara eşit olacak.
+
+480
+01:48:32,800 --> 01:48:36,900
+Burada hepsi çıktığı için, hani hepsinin toplamı 0'a eşit dedi.
+
+481
+01:48:37,980 --> 01:48:46,160
+Burada I, D'yi biliyoruz zaten. I, D'yemiz bizim zaten o değişime analiz edeceğimiz yapı neydi? Yani I, D'den.
+
+482
+01:48:49,363 --> 01:48:59,903
+Öl, R'nin T0 anlamında, I, S'ye eşit olduğunu biliyorum. Öl, R'nin artı sonsuz da 0 eşit olduğunu biliyorum.
+
+483
+01:49:00,023 --> 01:49:05,903
+Bu aradaki değişimi analiz etmemiz için T'li versiyonunu yazacağız. Öl, R'yi yazdık.
+
+484
+01:49:07,023 --> 01:49:12,243
+Öl, R'yi de nasıl yazabiliriz? V, R bölü T şeklinde yazabiliriz. V, R bölü R şeklinde yazabiliriz.
+
+485
+01:49:18,003 --> 01:49:39,003
+Kondansiyon üzerindeki akımı yazarken de CDVC bölü DT şeklinde yazıyorduk. Ama burada gerilim her yerde aynı olduğu için, yani VL, DVR, hepsi birbirine eşit olduğu için gerilimleri paralel yapıldığı devreler olduğu için, buradaki DVC'yi de DIL şeklinde yazabilirim.
+
+486
+01:49:39,003 --> 01:49:45,184
+Yani şurası benim için VL gerilimi, değil mi? VL gerilimi.
+
+487
+01:49:45,408 --> 01:50:07,328
+Bu VL gerilimini bütün diğer gerilimlerin olduğu yer, işte VL'ye de yazabilirim. LDI, LB, DT'nin R'ye bölümü şeklinde. DVC'deki VC kısmına da yazabilirim. LDI, LB, DT'nin. Böylelikle burada da yine bir ikinci dereceden türevi olacak.
+
+488
+01:50:08,115 --> 01:50:17,996
+Yine aynı şey gidiyoruz. Öteki yapıda sadece burada akım üzerinden, seri devrelerde de kondansatörün gerilme şarjı olmasından dolayı gerilim üzerinden.
+
+489
+01:50:18,115 --> 01:50:28,055
+Yani aslında devrede değişimi ne gösteriyorsa, final ve initial durumlarında değişim nerede oluyorsa ona göre biz devreye uygulayacağız.
+
+490
+01:50:28,055 --> 01:50:36,115
+Mesela burada bobindeki akım üzerinde bir değişim söz konusu. O zaman devremizi bobindeki akımın T'ye bağlı analizine göre yapmıyoruz.
+
+491
+01:50:36,115 --> 01:50:53,215
+Eğer konular störün üzerinde bir değişim varsa, başlangıçta şuna şarj olmuştu, bitişte de şuna deşarj olması beklenir. Diyorsak o zaman konular störün ve C'sinin T'ye bağlı transişimini hesaplamamız lazım.
+
+492
+01:50:57,203 --> 01:51:01,024
+Yine buralar aynı konular arkadaşlar. O yüzden hızlıca geçeceğim.
+
+493
+01:51:01,444 --> 01:51:04,463
+Alfa ve omega dediğimiz iki parametre burada da var.
+
+494
+01:51:04,604 --> 01:51:08,304
+Tek farkı, alfada hatırlarsanız neydi?
+
+495
+01:51:09,304 --> 01:51:11,344
+Yani buradaki parametremiz bizim.
+
+496
+01:51:11,744 --> 01:51:12,923
+R bölü 2L idi.
+
+497
+01:51:13,583 --> 01:51:14,484
+Hatırladık değil mi?
+
+498
+01:51:14,884 --> 01:51:19,524
+L bölü 2R bizim burada 1 bölü 2RC şeklinde olacak.
+
+499
+01:51:20,275 --> 01:51:26,816
+Çünkü burada artık bobinin üzerindeki T'ye bağlı değişim kondansütörün üzerinden de şarj olacak.
+
+500
+01:51:27,016 --> 01:51:32,536
+Yani bobinin üzerindeki akım mı sönümlendiren şey, direnç artık kondansütör.
+
+501
+01:51:32,996 --> 01:51:36,716
+Ötekinde ise sönümlendiren şey direnç ve bobinin etkisiydi.
+
+502
+01:51:38,436 --> 01:51:38,676
+Değil mi?
+
+503
+01:51:40,096 --> 01:51:43,576
+L bölü 2R'de o, bu 1 bölü 2RC.
+
+504
+01:51:45,140 --> 01:51:51,480
+O omega 0 yani sanımlı sahaja şey yine aynı LC yapısı olduğu için bu sabit aynen kalıyor.
+
+505
+01:51:51,980 --> 01:51:58,180
+Diğer 3 tane kriterin olma kriterlerin tanımlaması birebir aynı, bir şey değişmiyor.
+
+506
+01:51:58,680 --> 01:52:03,980
+İşte alfa omega 0'dan büyükse bu over-dampage aşırı sünümlenmiş demek.
+
+507
+01:52:05,080 --> 01:52:08,220
+Çünkü burada bir alfadaki R parametresinin etkisi var.
+
+508
+01:52:08,591 --> 01:52:12,631
+Ve bunu hesaplarken yine S1, S2 katsayalarını bulacağız.
+
+509
+01:52:13,011 --> 01:52:15,491
+S1'i bulmak için formülümüz aynı.
+
+510
+01:52:16,311 --> 01:52:19,051
+S1 ve S2'nin formüllerini de yazalım isterseniz yine.
+
+511
+01:52:20,051 --> 01:52:29,871
+Artı kök içerisinde, eksi kök içerisinde, alfanın karesi, eksi omega sıfırın karesi, alfanın kanalının olma kısağının karesi.
+
+512
+01:52:30,195 --> 01:52:33,755
+S1 ve S2'yi bulurken yine aynı şekilde yapacağız.
+
+513
+01:52:34,135 --> 01:52:42,715
+Ve bunları toplarken de A1, A2'yi bulurken, yani koeficentleri bulurken de yine aynı T0 anındaki analizlerine bakacağız.
+
+514
+01:52:44,975 --> 01:52:52,695
+Sınırda yani sınırda sünümlenmiş analizler, A1 ve Omega 0'ı eşit olma durumuydu zaten söylemiştik.
+
+515
+01:52:54,100 --> 01:53:00,680
+Sanlım yapanlarda da Omega sıfırın büyük olması. Burada da yine aynı şekilde Omega sıfır yazarken biz
+
+516
+01:53:01,043 --> 01:53:08,483
+Yani omega 0 şu iç yapısındaki eksi çıkacağı için biz buraya yeni bir tanımlandırma yapıyoruz.
+
+517
+01:53:08,823 --> 01:53:14,943
+Aynı şekilde olduğu gibi V0 eksi A kareye ben omega D desem diyorum.
+
+518
+01:53:14,943 --> 01:53:27,644
+Ve bu omega D'yi ben alfa eksi alfa artı J omega D artı alfa artı J omega D şeklinde S1 ve S2'yi tekrardan oluşturuyorum.
+
+519
+01:53:28,340 --> 01:53:42,539
+Niye j omega d şeklinde yazdım? Çünkü şunu biliyorum ki ben e üzeri eksi alfa olacak bir de çarpı e üzeri artı j omega d bu bir tanesi şunu ayrı ayrı yazmak.
+
+520
+01:53:42,859 --> 01:53:49,079
+Bunu ortak paranteze aldığımda aslında e üzeri eksi j omega d olacak.
+
+521
+01:53:50,739 --> 01:53:53,520
+Bunların A1A, şurada bir A parametresi var.
+
+522
+01:53:55,507 --> 01:54:03,788
+Bunları yazdığımda şu eksi j omega d'ler, pardon şu a, bu da değil tabii ki şurada olacak, a1 ve a2 için.
+
+523
+01:54:06,467 --> 01:54:22,507
+Bu artı j omega d ve eksi j omega d'leri de sinüs ve kosünüs şeklinde yazacağımızı söyledik ama nihai formülü de işte b1 ve b2 diye numine edersek, kosünüs omega d artı sinüs omega d'yi beraber yazacağımız formülümüz çıkmış olacak.
+
+524
+01:54:24,627 --> 01:54:34,627
+Aynı senaryo, hiçbir şey değişmiyor. Sadece alfadaki parametremiz neydi? 1L bölü 2R idi. Şimdi 1 bölü 2RC oldu.
+
+525
+01:54:37,287 --> 01:54:48,627
+Akımı bulduktan sonra bu akım üzerinden, işte bobinin üzerindeki gerilim de bulabiliriz. Gerilimleri bulduktan sonra buradan ben direncin üzerinden geçen gerilim de buna eşit olacağı için onu da bulabilirim.
+
+526
+01:54:49,332 --> 01:54:53,692
+Bütün denklem sorularını buradan, devre sorularını çıkartabilirim.
+
+527
+01:54:57,108 --> 01:55:24,108
+Evet, genel bir özet tablomuz var. Paralel ve seri bağlanma durumlarına göre, over-damped olma durumu hepsinde aynı. Paralelde de seri de. Bunlar zaten bu kaydeler ortak. Tek değişen alfa parametresi ve burada ben eğer ki over-damped bir kriteri sahipsem devrede, uygulayacağım iki kökü bulmam gerekiyor ve iki kökü bulduktan sonra denkleme yazıyorum.
+
+528
+01:55:24,532 --> 01:55:32,131
+Eğer ki critical damped senaryosuysa zaten alfa omega eşit olduğu için tek bir köküm olacak. O da eksi alfa olacak.
+
+529
+01:55:33,292 --> 01:55:38,912
+Neden? Çünkü zaten eşit. Eşit olduğundan benim şuradaki denklemde şurası sıfır çıkacak.
+
+530
+01:55:39,971 --> 01:55:45,391
+Değil mi? Şurası için bu sıfır çıkacak. Oradan dolayı sadece eksi alfa gelecek buraya.
+
+531
+01:55:48,391 --> 01:55:49,391
+Öteki...
+
+532
+01:55:49,600 --> 01:56:13,000
+Underdamp senaryoda ise, sanım yapan durumda ise, benim kesinlikle kosünüs-sinüs tabanlı bir şey bulmam lazım. O da aslında Omega D diye tabir ettiğim, tam bizim burada bahsettiğimizin tersini çıkartma, o değeri ben J Omega D şeklinde yazarak aslında kosünüs Omega D artı sinüs Omega D'yi bulmuş olacak.
+
+533
+01:56:15,988 --> 01:56:17,428
+Tamam mıyız arkadaşlar?
+
+534
+01:56:21,555 --> 01:56:35,175
+Evet, şimdi bunlar hep bu iki farklı analiz yöntemi, transition geçişteki analizini yaptığımız iki farklı yöntemi aslında devreden bir kaynak çıkartılıncaki analizdi.
+
+535
+01:56:35,655 --> 01:56:43,215
+Peki kaynak eklediğimizdeki, yani işte devrede başta hiçbir şey yoktu, sonra kaynak ekledim, buradaki transition'ı nasıl yapacağız?
+
+536
+01:56:43,335 --> 01:56:46,675
+Burada da yine iki farklı analiz yapacağız, bir seri, bir paralel olacak.
+
+537
+01:56:47,119 --> 01:56:55,199
+Hiçbir şey değişmiyor. Her şey aynı. Sadece ne değişecek arkadaşlar? Size burada bir soru soralım. Ne değişiyor olabilir?
+
+538
+01:57:02,292 --> 01:57:04,992
+Ne değişiyor olabilir arkadaşlar? Fikir yok dünya.
+
+539
+01:57:07,992 --> 01:57:13,332
+Yani birinden gerilim kaynağı, akım kaynağı çıkartıyorduk, birine ekliyoruz. Ne değişmiş olabilir?
+
+540
+01:57:21,844 --> 01:57:28,844
+Finalde iyi çalışın arkadaşlar. Finalde buralardan 2-3 tane soru giyilir ben size söyleyeyim.
+
+541
+01:57:30,344 --> 01:57:31,243
+Direkt geldi.
+
+542
+01:57:32,304 --> 01:57:37,444
+Ne değişecek arkadaşlar? Initial ve final state'ler değişecek değil mi?
+
+543
+01:57:37,503 --> 01:57:44,024
+Birinde kondensör başta şarjlıydı, birinde akım, şey, bobin başta akım içeriyordu.
+
+544
+01:57:44,576 --> 01:57:51,716
+Final Stage'de bunlar sünümleniyordu. Bunda da başta sıfır olacak, sonuçta da bir yükeye yüklenecek.
+
+545
+01:57:56,180 --> 01:58:03,180
+Evet, yani devreye test verenli bir VS gerilinin eklendiği durumda, seri RLC devresini analiz edelim.
+
+546
+01:58:04,600 --> 01:58:12,260
+Başlangıçta herhangi bir şey olmadığı için sıfır ama nihayetinde kondansatörün üzerinde bir VS'ye şarj olma durumu olacak.
+
+547
+01:58:13,363 --> 01:58:24,863
+Değil mi? Çünkü devrede bir gerilim etlendi. Ama yine aynı şekilde açık devre yapacağımız için burayı bir akımın geçmemesi söz konusu.
+
+548
+01:58:25,143 --> 01:58:36,043
+Geçmeyeceği için de bobinle bir değişiklik yok. Sadece o zaman kondansatörün üzerindeki gerilimini sıfırdan VSE'ye geçen bir geçişini analiz etmemiz gerekiyor.
+
+549
+01:58:37,876 --> 01:58:45,155
+Burada yine aynı şekilde bobinin KVL kanunuyla bunu yazacağız. Bir şey değişmiyor yani aynı şekilde bütün her şeyi yazıyoruz.
+
+550
+01:58:46,836 --> 01:59:11,516
+Konular üstünün üzerindeki gerilim, artı bobin üzerindeki gerilimi, L, D, I, L, D, T şeklinde yazıyorduk. Burada İ, L dediğimiz kısım aslında bütün seri devre olduğu için I, C'ye eşit, her şeye eşit. I, C'yi de ben C, D, V, C, D, T şeklinde yazabiliyordum zaten. O zaman bunu buraya yazdığımda ikinci dereceden türevini almış oldum. R, I, L'yi de direkt nasıl yazdık?
+
+551
+01:59:12,020 --> 01:59:21,220
+Ö, D dediğimiz kısım, I, C'ye eşit, burayı da bunu eklediğimde, direk RC, DVC, DT şeklinde yazdık.
+
+552
+01:59:21,660 --> 01:59:24,760
+Burada kritik nokta şu, eksi V, S var.
+
+553
+01:59:27,700 --> 01:59:28,420
+Değil mi?
+
+554
+01:59:29,200 --> 01:59:31,240
+Çünkü K, V, L'yi yazarken,
+
+555
+01:59:31,631 --> 01:59:37,032
+Biz devrede bir gerilim kaynağı olmadığı senaryoda yoktu zaten yazmadık.
+
+556
+01:59:37,131 --> 01:59:46,851
+Ama burada bu üreten, bunlar tüketen gibi yazacağımız için, KVL'de sonuçta enerjinin korunanından, eksi vs şeklinde yazacağız bunu.
+
+557
+01:59:47,851 --> 01:59:56,831
+Bu şeklinde yazdığımızda tek değişen aslında şuradaki bütün yapıların değişimde buna eşitlenecek.
+
+558
+01:59:58,195 --> 02:00:04,895
+Yani bizim nihayetindeki formülümüz, şuraya yazalım, bu olacak.
+
+559
+02:00:07,576 --> 02:00:14,895
+Yine omega sıfırımız var, bir bölü kök L, C. Yine alfamız var, R bölü 2L şeklinde.
+
+560
+02:00:16,416 --> 02:00:21,296
+Yine aynı formüllerle alfa ve omeganın durumuna göre kökleri bulacağız.
+
+561
+02:00:22,036 --> 02:00:42,916
+A1E üzeri S1 delta T artı A2E üzeri S2 delta T. Bunlar eğer ki iki farklı kök ne zaman çıkacak? Overdamped olduğu durumda. Critical damped da zaten birbirine eşli olduğundan dolayı ortak mantıklı sadece A1, A2'nin E üzeri eksi alfasına bakacağız.
+
+562
+02:00:43,539 --> 02:00:55,240
+Eğer ki underdamp durumu varsa, yine tabii kosmüs ve sinüs yani E üzeri omega D dediğimiz parametreden dolayı bu şekilde sinüslü şeklinde yazacağız.
+
+563
+02:00:58,260 --> 02:01:10,820
+Burada final condition önemli. Dediğim gibi bu senaryoda, yani bu gerilim kaynağı bağlanan T0'a'nın da senaryolarda kondansatörümüzde de bir gerilime sonuçta şartılacak.
+
+564
+02:01:13,908 --> 02:01:27,968
+Tek değişen şey arkadaşlar, öteki senaryolardan yani şeyden farklı olarak bir gerilim kaynağını çözdüğümüzde ulaşacağımız nokta sıfırken burada ulaşılan nokta Vs olacak.
+
+565
+02:01:28,788 --> 02:01:38,048
+Ne demek bu? T sonsuzdayken limitini alırsanız Vct'nin aslında Vs'ye eşit olması demek. Değil mi? T sonsuzdayken.
+
+566
+02:01:40,180 --> 02:01:47,039
+T0'dayken de, yani ilk giriş durumunda da, zaten Vs'nin 0 olduğu senaryo.
+
+567
+02:01:49,739 --> 02:01:52,360
+Yani A1 ve A2 eşde olacak.
+
+568
+02:01:53,920 --> 02:01:56,680
+Tamam mıyız? Burada tek fark eden şey bu.
+
+569
+02:02:00,307 --> 02:02:10,108
+Bunu bulduktan sonra da zaten devrede diğer devreyle alakalı akım veya gerilimleri bulabiliyoruz.
+
+570
+02:02:12,207 --> 02:02:25,108
+DVC'nin T zamanında hangi T'si soruluyorsa, VC'nin o T zamandaki gerilimini normalde o kondansmanın üzerindeki akımla bulduktan sonra akım üzerinden yürümek en mantıklı çözüm.
+
+571
+02:02:28,948 --> 02:02:34,268
+Bunları bahsetmiştik zaten. Paralel yapısına bakacağız. Paralel yapısında da hiçbir şey değişmiyor.
+
+572
+02:02:34,268 --> 02:02:38,668
+İşte T0'a devreden çıkarttığımız senaryo öncesinde.
+
+573
+02:02:40,372 --> 02:03:07,332
+T0 anında devreye dahil ettiğimiz senaryo öncesinde devreden çıkartılmış. T0 anında anahtarı açıyorum ki devreye akım gitsin. Bu senaryoda da hiçbir şey değişmeyecek. Sadece alfa parametremiz değişecek ve girişteki başlangıçta, sonuçta şunu biliyorum ben, T0 anında, yani ilk başta buradan bir akım geçmezken, T0 anında bunu devreden ıslayı dahil ettiğimde,
+
+574
+02:03:08,372 --> 02:03:14,972
+Yani aslında burada sıfırdan IS'ye uzanan bir IR eğrisi gözlemlememiz lazım.
+
+575
+02:03:17,792 --> 02:03:27,752
+Yani şurada T0 anında sıfır, T0'dan önceki anında sıfır, sonsuzda da IS'ye geçen bir eğilim, bir transition lazım.
+
+576
+02:03:30,676 --> 02:03:51,216
+Yine aynı şekilde bu sefer önceden I, R, I, L, I, C'yi sıfıra eşitliyorduk. Burada neye eşitleyeceğiz? I, S'ye eşitleyeceğiz. Çünkü noda gidenler çıkanlara eşit olmak zorunda. I, S eşittir. I, R, I, L, I, C diyerek denklemi yazacağız. Nihayetinde bizim için I, S bölü, L, C'ye eşit bir denklem çıkacak.
+
+577
+02:03:54,771 --> 02:04:09,511
+Şey yaparsak, düzenlersek, Omega sıfırımız yine bir bölü kök Lc, Alfamız da yine paralel source free'lerde olduğu gibi, yani gerilim kaynağı olmayan devrelerde olduğu gibi, bir bölü iki RC şeklinde bulacağız.
+
+578
+02:04:09,511 --> 02:04:21,971
+Ve buna göre, alfa ve omega'ya göre, üç tane karakteristiği, yani hangisine giriyor, bunu hesaplayacağız. Bunu bulduktan sonra da onun eğrisini çizebilmek için denklemini oluşturacağız.
+
+579
+02:04:27,091 --> 02:04:39,111
+Burada da tek değişen şey, devrede bir gerilim kaynağı olduğu için ve T'yi sonsuz aldığımda, I, L'nin I, S'ye işle olabilmesini vermek için I, S'yi ekleyeceğiz.
+
+580
+02:04:43,764 --> 02:04:45,104
+Tamam mıyız arkadaşlar?
+
+581
+02:04:49,332 --> 02:04:59,812
+Özet olarak da bahsettiğimiz şeyler yine aynı şekilde burada da var. Yani alfanın ve omega 0'ın etkisi. Alfa sünürlendirir, omega 0 sağınım yaptırır.
+
+582
+02:04:59,812 --> 02:05:05,771
+İşte alfadaki sünürlendiren parametrenin R direnci olduğu bunlardan bahsettik zaten.
+
+583
+02:05:08,404 --> 02:05:36,364
+Bu dualite diye bir kavram var. Çok biz girmiyoruz bu noktaya ama yine böyle kısaca bahsetmek gerekirse diye koydum. Yani eşdeğerlik demek. Ne demek bu? İşte bir gerilim, bir direnç, aslında iletkenlik dediğimiz conductansıyla bir eşdeğeri var. Tersi yani veya öyle diyelim yani doğal eşitlikler. Bobinerin kapasitörle bir eşitliği var. Çok da girmiyor.
+
+584
+02:05:36,404 --> 02:05:36,764
+Zaman.
+
+585
+02:05:41,908 --> 02:05:47,848
+Evet, bunu şunun için koydum arkadaşlar. Normalde RC devrelerde dediğimiz şey şuydu.
+
+586
+02:05:48,468 --> 02:05:54,168
+Ya bellidir, yani bir şarj elisi varsa bir noktadan sonra o girişteki Vs'ye şarj olacak.
+
+587
+02:05:54,168 --> 02:05:59,168
+Ve biz bunun denklemini çıkarttığımızda hatırlarsanız şöyle bir denklem çıkartmıştık.
+
+588
+02:05:59,248 --> 02:06:05,168
+V0 giriş gerilimi 1-E üzeri, eksi T bölü To demiştik.
+
+589
+02:06:06,048 --> 02:06:09,168
+Burada da To dediğimiz şey R çarpı C'ydi.
+
+590
+02:06:09,908 --> 02:06:17,588
+Ya buna göre bir yere oturuyordu. Mesela bu grafikte de böyle bir denklemde gördüğünüz gibi 10 saniye sonra başlanmış.
+
+591
+02:06:18,008 --> 02:06:31,288
+İşte 1K, 2 milifarad, 2 saniye demek. Toru bunun 2 saniyeymiş. Ne olacak o zaman? 5 toğluk zamanda bu fitlenmesi beklenir demiştik derste de.
+
+592
+02:06:35,667 --> 02:06:59,127
+Yere artık yakın sadını burada da görebiliyoruz. Bu RC devrelerinde böyleydi. RL devreleri de aynı şekilde. Hani bunlar zaten bir rezidif etkiye sahip olan direncin üzerinde sönümlenen devreler. Ama RLC'ler de bu şekilde olmuyor. İşte bu misal şarj erisi ise böyle gidiyor. Şöyle biraz sallanıp sonra oturuyor.
+
+593
+02:06:59,699 --> 02:07:05,199
+Veyahut da işte Under Damp'te ise böyle bayağı sonralar oturuyor.
+
+594
+02:07:05,920 --> 02:07:07,380
+Şey, Critical Damp'te ise.
+
+595
+02:07:07,979 --> 02:07:17,960
+Eğer işte Under Damp'te şu yukarıdaki olsana, Over Damp'te birden böyle yükseliyor ama daha geç oturuyor.
+
+596
+02:07:19,412 --> 02:07:35,172
+Anlatabildim mi? Buradaki nominal, optimal seviyede bir şey bu. Yani birbirini besleyen iki tane enerji storage devre elemanı olmasından dolayı bu deminki üç farklı durumu farklı analiz yapmamız lazım.
+
+597
+02:07:40,307 --> 02:07:48,067
+Buna çok gerek yok arkadaşlar. Buna girmeyeceğim çok. Zaten ondan başka da bir konumuz yok bu haftalık.
+
+598
+02:07:49,807 --> 02:07:52,447
+Anlaşıldı mı arkadaşlar bugünkü konumuz?
+
+599
+02:07:53,011 --> 02:08:15,992
+İlk anlattığım konunun üzerine çok uzunca durdum. Çünkü diğer üç tane konu, yani paralel olma durumu, sorsu, kaynağı ekledikten sonraki seri durum ve kaynağı ekledikten sonraki paralel durum. Bunlar zaten ilk başta anlattığım, detaylıca anlattığım her şeyin benzerleri. Ama kesinlikle bunlara çalışmanız lazım.
+
+600
+02:08:17,779 --> 02:08:27,279
+Bunların farklı farklı örnekler çözmeniz lazım. Belki haftaya çözeceğiz biz ama sizin tabii laba da hazırlanmak için bir önceden bakın bunlara lütfen.
+
+601
+02:08:32,564 --> 02:08:44,684
+Sorumuz var mı arkadaşlar? Sorumuz yoksa dersi erken bitirebilirim. [kişisel bilgi] O yüzden dinlenmem lazım. Varsa sorumuz buyurun, yoksa dersi bitireceğim.
+
+602
+02:08:50,355 --> 02:08:51,255
+Yok herhalde.
+
+603
+02:08:55,988 --> 02:08:57,108
+İyi günler arkadaşlar.
+
+604
+02:09:02,036 --> 02:09:13,956
+Kesinlikle üstünden geçin diyorum bakın. En problemli gördüğüm konu öğrenciler açısından bu konu. Ve kesinlikle çıkacak diyorum yani. O kadar net söylüyorum.
+
+605
+02:09:15,956 --> 02:09:21,216
+Ama hadi hepinize iyi günler, sağlıklı günler, iyi çalışmalar.

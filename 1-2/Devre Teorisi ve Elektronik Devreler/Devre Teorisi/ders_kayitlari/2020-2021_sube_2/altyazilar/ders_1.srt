@@ -1,0 +1,2839 @@
+1
+00:07:07,379 --> 00:07:11,659
+Merhaba arkadaşlar, sesim geliyor mu? Merhaba hocam, geliyor.
+
+2
+00:07:13,040 --> 00:07:21,379
+Merhabalar, öncelikli olarak yeni döneminiz, umarım hayırlara vesile olur, güzel bir dönem geçirirsiniz.
+
+3
+00:07:22,759 --> 00:07:32,139
+Yine online bir dönem getireceğiz, o belli oldu zaten. Bu dönemde de umarım hepiniz güzel bir şekilde niticelenirebiliriz.
+
+4
+00:07:33,331 --> 00:07:46,692
+Dersi alan kişi sayısı yine her dönem olduğu gibi fazla cevap var, 100 kişi kadar. Bu dönemde de yine devre teorisini beraber işleyeceğiz.
+
+5
+00:07:49,076 --> 00:08:12,296
+Şimdi ilk hafta tabii ders işleyeceğiz, onu bir söyleyeyim. Çünkü devre teorisinin biraz sıkışık bir programı oluyor. Sıkıştırmaya çalışıyoruz. O nedenle bugünden başlayacağımız bir ders olacak, giriş anlamında. Ama öncesinde tabii dersin işlenişi hakkında, sınav düzeni hakkında vesaire biraz tartışacağız, konuşacağız.
+
+6
+00:08:13,716 --> 00:08:16,816
+Şimdi öncelikle bir ekranımı paylaşayım.
+
+7
+00:08:21,651 --> 00:08:32,251
+Şimdi şöyle bir döküman hazırladık dersin içeriklerini yazan. Bu chat ekranından da size atacağım. Şimdi siz de inceleyebilirsiniz.
+
+8
+00:08:35,091 --> 00:08:51,052
+Tarih tarih yazdık, hani ne işleyeceğimize dair. Tabii bunlar 3 aşağı 5 yukarı kayabilir, şaşabilir. Çünkü süreler noktasında dersin işte ne kadarını tam ilfi kullanabileceğiz. Döneme göre değişkenlik gösteriyor o haftaya göre.
+
+9
+00:08:53,052 --> 00:08:59,052
+Buradan kontrol ederek işte sürecikler akıl daha net kafanızda bir şeyler canlanacaktır.
+
+10
+00:08:59,508 --> 00:09:09,168
+Öncelikli olarak maillerde arkadaşlar bir standart, hani dersle alakalı ise mailiniz, tabii başka konularda da yardım isteyebilirsiniz, hiç problem değil.
+
+11
+00:09:09,748 --> 00:09:20,927
+Ama dersle alakalı ise eğer devre teorisindeki bir soru üzerine bir mail atacaksanız, lütfen burada belirtilen formatta bir mail şablonu hazırlayalım.
+
+12
+00:09:21,331 --> 00:09:38,731
+Öteki türlü çünkü kayıyor aralarda, sort etmemiz için kolaylık sağlıyor. Hatta bizim kullandığımız bir yazılım var. Direkt bu formatı öğren, formatı orada input olarak belirtirsek, bütün o derslerle arkada sorular bize geliyor.
+
+13
+00:09:39,251 --> 00:09:56,331
+Yani buna özel gösterelim. Hani derste alakalı bir sorun, bir sıkıntı, bir soru varsa konu alanına bu başlık yani işte dersin kodunun 2020'yi ikinci dönemde olduğunu belirten tek bir şekilde hazırlayalım mailimizi.
+
+14
+00:09:56,331 --> 00:10:00,000
+Ve işte grup kim...
+
+15
+00:10:00,000 --> 00:10:07,779
+Bu durumda bana mail atmanız çok daha iyi olacaktır.
+
+16
+00:10:09,299 --> 00:10:16,379
+Duyurları Avesis'ten koymaya çalışıyoruz ama arkadaşlar Avesis biraz karışık bir duyuru sistemi var.
+
+17
+00:10:16,639 --> 00:10:26,480
+Hani karışıyor bazı şeyler. Hatta sırasını bir de düzgün koysanız bir şekilde bir karışma söz konusu oluyor başka derslerle.
+
+18
+00:10:26,932 --> 00:10:38,532
+Bunun yerine, biz yine AVS sayfalarımızı buraya yazdık ama, bunun yerine muhtemelen asistanlar, dersin laflarını yürütecek olan asistanlar,
+
+19
+00:10:39,152 --> 00:10:51,692
+sizle bir Google Classroom veya Piazza gibi bir ders paylaşım, sanal sınıfı oluşturabileceğimiz bir platform üzerinde bu duyuruları koyacaklar.
+
+20
+00:10:51,852 --> 00:10:54,052
+Biz de oraya dersin dokümanlarını koyabileceğiz.
+
+21
+00:10:54,495 --> 00:11:03,336
+Şu aşamada onlar bunu açacak ve duyuracaklar zaten. Ama Aves'i de ara ara kontrol etmenizde fayda var bizlerin Aves sistemi.
+
+22
+00:11:04,515 --> 00:11:11,495
+Şimdi dediğim gibi devre teorisi normalde, normal bir elektronik...
+
+23
+00:11:12,244 --> 00:11:24,423
+Bölümünde veya işte daha detaylıca bu dersi işleyen bölümlerde zaten görmüşsünüzdür. Devre teorisi 1, devre teorisi 2 şeklinde. İki farklı sömestrede açılan iki derstir aslında.
+
+24
+00:11:25,011 --> 00:11:38,291
+Biz tabii bu kadar detaylıca anlatmıyoruz. Öncelikle onu söyleyelim. Bizim bilgisayar mühendisliğinde en azından devre mantığının anlaşılması konseptinde biraz giriş yapıyoruz. Biraz AC analize giriyoruz. Çok detaylıca değil.
+
+25
+00:11:39,751 --> 00:11:50,051
+Ve bir şeyler, AC analizle de bir şeyler öğretmeye çalışıyoruz. Öyle olunca çok detaylı da girmesek konular tabii biraz sıkışıyor.
+
+26
+00:11:50,707 --> 00:12:01,508
+Burada dolu dolu olan bir 14 hafta planı var. Tabi bu plan dediğim gibi değişkenlik gösterebilir, ufak tefek şaşabilir. Ama genel hatlarıyla bunları işleyeceğiz.
+
+27
+00:12:01,508 --> 00:12:09,667
+Misal bugün başlayacağımız konu, giriş seviyesinde Ohm yasasına kadar bir kısmı inceleyeceğiz.
+
+28
+00:12:11,347 --> 00:12:28,327
+Haftaya, sonraki haftaya, Kirchhoff akım ve gerilim yasaları, KCL ve KBL kanunları dediğimiz kanunlara bakacağız. Sonra düğüm analizleri, düğüm gelim analizleri, çevre akımları analizi bu. Üçüncü hafta arkadaşlar çok önemli.
+
+29
+00:12:28,851 --> 00:12:45,192
+Hatta onları da belirteyim, hangi haftalar kritik öneme sahip, o haftalara kesinlikle katılın derse. Çünkü ben sunumları paylaşıyorum ama akabinde bu hoca bunu nereden çıkarttı sorusu hep kafanızda kalıyor.
+
+30
+00:12:46,224 --> 00:13:00,963
+Yani derste çözüyoruz. Hatta dersin videosunu izlediğinizde de belki anlaşılabilecek ama real time hani gerçekten derse katılarak orada anlamadığınızı da sormanız çok daha etkin oluyor. Çünkü karışabiliyor bazı konseptler.
+
+31
+00:13:02,183 --> 00:13:10,304
+Üçüncü hafta kritik öneme sahiptir arkadaşlar. Bu konular çok önemli. Bu konular üzerine çok fazla ileride bağlayacağımız işlemler olacak.
+
+32
+00:13:10,803 --> 00:13:22,943
+Bu düğüm gerilimleri analizi önemli bir konu. Onun dışında şurada Thevenin ve Norton teorimleri çok önemli bir konu olacak. Bu kısım önemli.
+
+33
+00:13:25,652 --> 00:13:41,092
+Burada dördüncü haftada zaten bir kısa sınav yapacağız. Kısa sınavdan kastım şu ders sırasında bir iki saatlik bir anlatımdan sonra, zaten üç saatlik bir ders, böyle yarım saat 45 dakikalık bir sınav oluşturup,
+
+34
+00:13:41,427 --> 00:14:05,448
+Bu sınavı yapmak istiyoruz. Yani sınav online olacak tabii. Muhtemelen işte yine kağıt kalemde hesaplamanızın yapıldığı ama testte sadece cevabı gönderebileceğiniz bir yaklaşımla sınav düzenleyeceğiz muhtemelen. Yani test olacak ama tabii çözümlerinizi de yüklemenizi isteyeceğiz.
+
+35
+00:14:06,004 --> 00:14:23,784
+Böyle bir kısa sınav yapacağız dördüncü hafta. Bir Nisan şakası olarak muhtemelen. Size bir şok olabilir. Ama bu kısa sınavlara arkadaşlar iyi çalışmak demek şu olacak. Ben gözlemlediğim kadarıyla genelde olay şöyle dönüyor.
+
+36
+00:14:24,784 --> 00:14:30,264
+Devlet öğreti bir kere öncelikle şunu bir şey yapalım aramızda belki alttan olan öğrenciler var ama.
+
+37
+00:14:30,740 --> 00:14:47,120
+Genelde öğrenci tarafından çok zor görülen bir ders. Ama aslında, esasında çok zor olmayan sadece ince noktalara, akımın yönü gibi, ki akımın yönünü ters almak, bütün soruyu götürüyor mesela örnek vermekte.
+
+38
+00:14:47,120 --> 00:14:51,180
+Yani çok ufak tefek noktalardaki eksikliklerden dolayı,
+
+39
+00:14:51,508 --> 00:15:17,728
+Sıkıntı yaşadığınız bir ders. Bu eksiklikleri de biz ara ara kısa sınavlar yaparak gidereceğiz. Hani bu kısa sınavlara çalışarak aslında siz bu eksikliklere gidermiş olacaksınız. Aksi takdirde vizeye kadar bu ilk kısımlarda öğrendiğimiz konseptler bir şekilde karışıyor. Bunun önüne geçmek için böyle aralarda kısa sınav yapmayı biz uygun gördük. Sizin için daha iyi olacağını düşündüğümüz nedeniyle.
+
+40
+00:15:19,091 --> 00:15:41,211
+5. haftada artık op-amp dediğimiz işlemsel yükselteçlere bakacağız ki bu öğrenci açısından en çok anlaşılan konudur arkadaşlar. En kolay anlaşılan konu op-amp devreleri ve kesinlikle bir tane vize de gelebilecek bir potansiyeli olan bir konudur. Önemlidir yani o açıdan belirteyim.
+
+41
+00:15:41,779 --> 00:16:01,779
+Sonra geldik, biraz daha artık öğrenci boyutunda, hocam, RLC'den sormayın ne olur dedikleri konulara, RL, RLC ayrı ayrı analizlerine bir giriş yapacağız ama nihayette biz en son frekans üzerinde RLC devrelerini üzerinde işlemler yapacağız.
+
+42
+00:16:04,307 --> 00:16:25,508
+İkisi beraber katılımında çok anlamlı. Eğer ki bir tanesini kaçırırsanız, yani finalde ulaşacağımız doğru, LCA yapılarını anlamanız çok güç olacaktır. Onu belirtelim. Sonra bir vize haftamız var. Biz tek vize yapacağız. Öncelikle onu söyleyelim. Tabii kısa sınavların da not katkısı olacak. Aşağıda birazdan belirteceğim ama.
+
+43
+00:16:26,004 --> 00:16:41,244
+Yani vize almamda tek vize yapacağız. Vize haftası olarak birinci vize haftasında yapacağız. İkinci vize haftasında dersin akabinde bir kısa sınav düşünerek bunu bu şekilde uygulayalım dedik.
+
+44
+00:16:42,024 --> 00:16:49,244
+Burada bir haftamız bizim Ramazan bayramına gidiyor. Bu yüzden ders işlenmeyecek. Belki...
+
+45
+00:16:49,440 --> 00:16:57,940
+Tam emin olmamakla beraber, şurada Laplast dönüşümleri, ters Laplast dönüşümü. Yani şu konulara giremeyebiliriz vakitten dolayı.
+
+46
+00:16:59,740 --> 00:17:10,980
+Burası şu an yazıldı ama belki de işlenmeyebilir. Tam şu an bir şey diyemiyoruz. Çünkü şu ana kadar biz en fazla sütsügeç devrelerine kadar gelebiliyoruz.
+
+47
+00:17:11,039 --> 00:17:17,000
+Yani artık bir şekilde tatil oluyor her daim. Bir şey oluyor, ilerleyemiyoruz.
+
+48
+00:17:19,539 --> 00:17:28,619
+Yani uzun lafın kısası iki kısa sınav dönem içerisinde bir de vizemiz olmak üzere, tabii bir de finalimiz olmak üzere, bir sınav düzenimiz olacak.
+
+49
+00:17:29,319 --> 00:17:34,019
+Ve konularımızda konu konu, başlık başlık buraya tariflere göre yazıldı.
+
+50
+00:17:35,519 --> 00:17:37,279
+Şimdi kitaplara bakacak olursak.
+
+51
+00:17:37,652 --> 00:18:02,432
+İnternette çok fazla, YouTube'da da misal önerebileceğim kanallar var, güzel kanallar, derslerle alakalı. Zaten yazdığınızda da bakarsanız izlenme oranlarına vesaire o kanallar çıkacaktı. İşte Khan Akademi'nin var bu kanalda, misal gayet güzel anlatıyor. Yani onlardan da faydalanabilir ama kitapta, eğer kitap üzerinden faydalanmak istiyorsanız bu iki kitabla da bakabilirsiniz.
+
+52
+00:18:04,019 --> 00:18:19,059
+Devamsızlık durumu zaten yönetmelikte bu ibareyi biliyorsunuz hepimiz. Yani devam zorunluluğu uygulanacak. Bizden istemem bu. Laboratuvarlarda da uygulanacak. Laboratuvarlarda şöyle uygulanacak hatta.
+
+53
+00:18:26,768 --> 00:18:48,347
+Yani 10'da 8'i, 5'de 4'ü gibi düşünebilirsiniz. Yani 5 labın 4'ünü katılmanız gerekiyor. Yani bir tane tamam katılmama ihtimaliniz var ama iki tane katılmadığınızda labdaki notunuz 0 olarak bize gelecek. Yani laba katılmamış olarak gelecek diyelim. O yüzden bu önemli lablara katılım sağlayın.
+
+54
+00:18:48,788 --> 00:19:13,107
+Ders noktasında da %70 deniyor. Bize çünkü log kayıtları gönderiliyor bilgi işlemden. Bu log kayıtlarına göre de biz bunları kontrol etmemiz isteniyor arkadaşlar. Lütfen son dakikada hocam ben şundan dolayı katılamadım bilmem ne vesaire vesaire. Yani bizi bağlayan 24. maddedir.
+
+55
+00:19:14,900 --> 00:19:21,820
+Artık nedensellik sizinle alakalı oluyor. Ona yapabileceğimiz bir şey kalmıyor. Buna dikkat edelim.
+
+56
+00:19:29,523 --> 00:19:44,903
+Evet, notlandırmaya bakarsak, ara sınavlar dediğimiz bir tane vize haftasında, yani birinci vize haftasında yapacağımız sınavda, %21 etki oranı olacak. Kısa sınavlar iki taneden, %5'den %10'luk bir etkiye sahip olacak.
+
+57
+00:19:45,763 --> 00:19:53,903
+Robotuarlar, ikinci vize yapmıyoruz. O ikinci vizenin %30'luk kesmini aslında bablardan karşılayacağız. 5 labımız olacak.
+
+58
+00:19:54,963 --> 00:20:00,864
+Ve bir adet de final sınavımız %40 etkiye sahip yapacağız.
+
+59
+00:20:03,503 --> 00:20:12,483
+Lapların genel şeyine baktığımızda da konularına ilk etapta bir Ohm kanunuyla alakalı bir deneyiniz olacak ki bugün giriş yapacağız zaten ona.
+
+60
+00:20:14,143 --> 00:20:17,804
+Yani derste Ohm kanununu biraz izah edeceğiz.
+
+61
+00:20:17,804 --> 00:20:18,804
+Sonra
+
+62
+00:20:20,147 --> 00:20:30,587
+Kirchhoff'un akım, yani KCL ve KVL kanunları, Kirchhoff, Current Law ve gerilim kanunu dediğimiz kanunları işledik, işleyeceğiz.
+
+63
+00:20:30,947 --> 00:20:39,907
+Çevre akımlar, düğüm gerilimleri bunların hep işledikten sonra, yani şurada üçüncü haftanın akabinde siz ikinci labada hazır olacaksınız.
+
+64
+00:20:41,207 --> 00:20:45,768
+Sonra Thevenin ve Norton Teoremleri ile alakalı bir deneyiniz olacak.
+
+65
+00:20:46,259 --> 00:20:56,579
+RC ve RLC devreleriyle alakalı bir deney, en sonunda da op-amp, işlemsel kuvvetlendireceğiyle alakalı bir deneyinizde 5 deneyi bitirmiş olacaksınız.
+
+66
+00:20:57,491 --> 00:21:25,072
+Şimdi normalde bu labın asistanları Mecit ve Kübra, yani şu son ikideki arkadaş. Ama bütün donanım asistanlarına herhangi bir konu için eğer birebir dersin labıyla alakalı değil de, Thevenin'de şu bir problemim var, işte bu neden böyle oldu vesaire gibi danışabilirsiniz. Onların da avestis sayfaları mevcut.
+
+67
+00:21:26,259 --> 00:21:47,180
+İngilizce'de mevcut burada. İngilizce'de buradan bakabilirsiniz durumunuza göre. Böyle bir işleyişimiz olacak. Sizin sorularınız var mı arkadaşlar? Evet, [öğrenci]. Zafer. El mi kavradım ben mi öyle anladım?
+
+68
+00:21:49,743 --> 00:21:57,643
+Usyste dersin İngilizce işleneceği yazılmıştı. Siz Türkçe mi işleyeceksiniz, İngilizce mi?
+
+69
+00:21:58,543 --> 00:22:10,423
+Türkçe işleyeceğim. Şunlarımız İngilizce, sınav da İngilizce. Sorular da İngilizce sorabilirsin, İngilizce de revaplayabilirim ders sırasında.
+
+70
+00:22:12,743 --> 00:22:15,663
+Ama dersin işleyişi genel hafta da Türkçe olacak.
+
+71
+00:22:17,299 --> 00:22:18,679
+Anıtım, [öğrenci], teşekkür ederim.
+
+72
+00:22:24,051 --> 00:22:41,132
+LAP'ta neyden puan alacağız diye bir soru var. LAP'ta bir soru verilecek size. Şurada aşağıda bahsettiğim beş tane deneye ait. Bir deney sorusu verilecek. O deney sorusunu tabii LAP esnasında verilecek. Örnek verelim.
+
+73
+00:22:42,067 --> 00:23:04,228
+Bugün 2 ile 5 arası dersimiz, 5 ile 5 arası lab vardı yanlış hatırlamıyorsam. 5 ile laba, işte sınavdan sonra, şey, dersten sonra laba giriş yapacaksınız. Labun dersini asistan açacak, o ders hali buraya girer gibi gireceksiniz. O labun başında ekrana soruyu yansıtacak, ilgili açıklamalar yapacak.
+
+74
+00:23:04,819 --> 00:23:11,699
+Size bir saat, bir buçuk saat artık ne kadar taktiği bir düşündülerse soru için bir vakit verilecek.
+
+75
+00:23:12,460 --> 00:23:22,360
+Bu bir saat, bir buçuk saatte simülasyon, herhangi bir simülasyon veya asistanların size izah edileceği simülasyon olan Proteus üzerinden.
+
+76
+00:23:22,900 --> 00:23:29,320
+Bir devreyi yapmanız, yani bir problemin, elektronik problemi çözmeniz istenecek.
+
+77
+00:23:29,320 --> 00:23:33,140
+Devre teori, devrenin çizimi, ölçümler neymiş vs.
+
+78
+00:23:33,780 --> 00:23:41,980
+Bunu matematiksel hesaplamasını ilk kağıda yapın, sonra işte bunu devreyi protez üzerinde kurun, ölçümleri gösterin gibisinden
+
+79
+00:23:41,980 --> 00:23:46,500
+bu konularda, bu beş tane konular deney yapacağız.
+
+80
+00:23:47,620 --> 00:23:48,720
+Simülasyonu okuyla.
+
+81
+00:23:49,107 --> 00:24:07,607
+Ve o deneyi raporlayacaksınız. Yani rapor şeklinde yazaraktan veya fotoğrafını çekerek, ben normal bir kağıtla yaptım, fotoğrafını çekip istemeye ekledim gibisinden asistanlara göndereceksiniz. Asistanlar o raporlarınızı değerlendirecek.
+
+82
+00:24:09,447 --> 00:24:12,567
+Ve onun üzerinden lap puanı alacaksınız.
+
+83
+00:24:15,604 --> 00:24:35,903
+Kulaktan muaf olma durumlarınızı kesinlikle kontrol edin. Çünkü ben eminim 100 kişiden muaf olma durumunda olanlar vardır. Yani asistanlara biz liste göndereceğiz, ders listesi daha şu an beklesinler vesaire tamamlamıyla bilsin, düzene girsin diye bekliyoruz.
+
+84
+00:24:36,596 --> 00:24:49,375
+Ders listesini asistanlara gönderdiğinizde asistanlar daha önceki noktalarınıza göre oradan bir screenshot belirleyip, alt limit belirleyip bu alt limitten kesecekler.
+
+85
+00:24:51,155 --> 00:25:03,635
+Ve işte atıyorum örnek verelim, 50 diyelim, EDI'nin üstündekiler listelenecek, muhafif edilecek. EDI'nin altındakiler dersin laflarına girmek zorundadır denecek.
+
+86
+00:25:04,243 --> 00:25:22,864
+Eğer ki 50'nin üstündesiniz, mesela örnek verelim, 50-50'siniz ama LABA'da girmek istiyorsunuz ki, işte notumu yükselteyim, hem LABA'nın %30-70'si var, dersin geçiminde de faydalı olacağını düşünürseniz, bu durumda asistan'a bir danışılısınız.
+
+87
+00:25:22,864 --> 00:25:26,804
+Hani hocam ben LABA'dan muhakkum ama ben LABA katılmak istiyorum.
+
+88
+00:25:27,523 --> 00:25:30,864
+Dene diyebilirsiniz, hani bu durumda eğer ki...
+
+89
+00:25:31,220 --> 00:25:52,639
+Muhtemelen bir problem çıkaracaklarını düşünmüyorum. Çünkü online olduğu için fiziksel olarak bazı istatlarımız vardı burada. İki labda belli başlı cihaz olduğu için bunlara biraz kabul etmemek durumları oluşabiliyordu. Çünkü dolu oluyordu lab.
+
+90
+00:25:52,980 --> 00:26:02,900
+Ama şimdi online olduğunda, simülasyon ortamında olduğunda, muhtemelen bir aksilik, yani bir şeylik, kabul etmeme durumu oluşmayacaktır diye düşünüyorum.
+
+91
+00:26:04,180 --> 00:26:25,040
+Onun dışında raptan muaf olmayıp da kendi rapt notunu bilen arkadaşlarıyla bir an önce, duyurulduğu anda, son dakika değil de duyurulduğu anda bunu itiraz edip, hocam ben şu sene şu notu almıştım deyip işte bunu belirtirlerse tekrar arkadaşlar, çünkü çok öğrenci var, hata yapılabilir.
+
+92
+00:26:26,980 --> 00:26:28,700
+Onun önüne geçmiş olacağım.
+
+93
+00:26:29,299 --> 00:26:39,419
+Bugün daha doğmayacak, muhtemelen haftaya da olmayacak. Ondan sonraki, yani üçüncü hafta başlayacağız gibi gözüküyor şu an. Yani 25 Mart haftası muhtemelen başlar.
+
+94
+00:26:46,612 --> 00:26:47,531
+Evet, [öğrenci].
+
+95
+00:26:48,971 --> 00:26:54,132
+Hocam, kullanacağımız programı siz bize söyleyecek misiniz? Yoksa labda mı söyleyecekler?
+
+96
+00:26:54,132 --> 00:27:07,491
+Yok, ben de söyleyebilirim. Program muhtemelen Proteus olacak. Proteus'un distro'da 6.9 milyon, 7.2 milyon, eski bir versiyonu var mevcut.
+
+97
+00:27:08,084 --> 00:27:21,004
+İlk önce asistanlara söyledik o mevcut lafları, bir kendileri o program üzerinde deneyecekler. Eğer ki bir sıkıntı yaşanmıyorsa eski versiyon nedeniyle.
+
+98
+00:27:24,524 --> 00:27:26,244
+Şu an ses boğuk mu arkadaşlar?
+
+99
+00:27:35,635 --> 00:27:36,475
+Şimdi nasıl?
+
+100
+00:27:39,175 --> 00:27:39,715
+Yine mi bu?
+
+101
+00:27:40,235 --> 00:27:41,215
+Yok hocam, iyi.
+
+102
+00:27:42,135 --> 00:27:42,435
+Tamam.
+
+103
+00:27:43,475 --> 00:27:44,295
+Ne diyorduk?
+
+104
+00:27:44,455 --> 00:27:51,275
+Evet, asistanlara ilk önce o deneyleri, distro.cc.tr diye bir sayfamız var.
+
+105
+00:27:51,515 --> 00:27:52,975
+Biliyorsunuzdur diye düşünüyorum.
+
+106
+00:27:54,135 --> 00:27:54,895
+Bir bakalım.
+
+107
+00:28:04,115 --> 00:28:23,735
+Şuraya girin arkadaşlar. Sizden kullanıcı adı şifresi isteyeceğim. Sizin o STD yıldızı epitörü bilginizle normal ona ulaşmaya yarayan şifreniz login olabilirsiniz. Yani o siz kullanıcı adı şifresiyle giriş yapabilirsiniz.
+
+108
+00:28:38,036 --> 00:28:53,236
+Girdiğinizde orada klasör olarak klasör olarak. Onun içine girdiğimizde 2007'de konulmuş bir program var doğrudur. 6.9 update ile beraber bir klasör sürümü mevcut.
+
+109
+00:28:53,816 --> 00:29:05,355
+İlk etapta hani şu an mevcut olan ellerindeki deneyleri burada bir gerçeklemelerini istedik. Onlar mutlaka lap dine kadar zaten bu işi halletmiş olacaklar.
+
+110
+00:29:05,875 --> 00:29:31,156
+Eğer ki, yani şimdi mesela biz mikroda da, mikro işlemciler dersinde de projörüsü kullanıyoruz ama orada problem 6.9 mikro işlemci modülüyle gelmiyor. Onu kullanamıyoruz yani. O yüzden bunu kullanamıyoruz o mikro işlemci de ama devre teorisinde çok advanced bir şeyler denemiyoruz. Devre teorisine giriş zaten. Öyle olduğu için muhtemelen bizim naflarımız bunda çalışacak.
+
+111
+00:29:31,519 --> 00:29:56,120
+Çalışırsa, sizler diyecekler ki bu risk duranın incelediğiniz proteostu da gerçek değil. Ama illa şart koşacaklar mı, koşmayacaklar mı onların kararı. Ama şart koşmam ihtimalle daha yüksek. İstediğimiz başka bir simülasyon programında da gerçekleyebileceğiniz belki de böyle bir opsiyon da sunabilecekler. Bunu duyuracak arkadaşlar.
+
+112
+00:29:56,372 --> 00:30:02,132
+Şuanlık ama distrol üzerinde, proteot üzerinde yapılabileceğini, kontrol edeceklerini söyleyebilirim.
+
+113
+00:30:09,811 --> 00:30:11,391
+Başka sorunuz var mı arkadaşlar?
+
+114
+00:30:19,892 --> 00:30:23,412
+Başka sorunuz yoksa derse bakmaya gideceğim.
+
+115
+00:31:00,276 --> 00:31:01,456
+Evet, onları da işte.
+
+116
+00:31:15,347 --> 00:31:23,927
+Evet, bu dersimizde bu haftada bir giriş niteliğinde bazı temel kurallara, temel birimler nedir, ne değildir bunlara bakacağız.
+
+117
+00:31:23,927 --> 00:31:32,728
+Yani devre teorisinde temeldeki yaptığım sataları yapmayın diye uygulama gereği duyduk bu noktalara.
+
+118
+00:31:33,647 --> 00:31:37,447
+Bu hele hele işte ölçü birimleri yani.
+
+119
+00:31:38,036 --> 00:32:04,116
+Kilowatt mıdır, yoksa kilovolt mudır, megavolt mudır, megavolt mudır gibisinden bu birimler arasındaki bir hiyerarşiye bakacağız. Bir ölçü birimlerine bakacağız. Ve en sonunda, belki bu kısmı zaten üniversiteye hazırlık döneminde herhalde anlatılan bir kural. Bizim zamanımızda öyleydi en azından. İyitlikleri verdiği bir fizikte konu vardı.
+
+120
+00:32:04,596 --> 00:32:12,195
+Yani muhtemelen bildiğiniz bir Ohm kanun üzerinden bir devrenin analizine giriş yapacağız.
+
+121
+00:32:12,195 --> 00:32:14,695
+Bu hafta.
+
+122
+00:32:15,895 --> 00:32:20,107
+Şimdi ilk başta nicel yani...
+
+123
+00:32:20,276 --> 00:32:34,155
+Bir ölçü birimlerine tanımlayamamız gerekiyor. Yani bir nümerik metrik verirken, işte 5, 10, 20 demiyorum. 5 ne, 10 ne, hani onun bir birimini belirtmemiz gerekiyor.
+
+124
+00:32:34,776 --> 00:32:38,976
+Şimdi sorularda da en çok yaptığımız hatalardan biri bu derste.
+
+125
+00:32:39,988 --> 00:32:55,087
+Demişim, bir soru sormuşuz. Bir şey istiyoruz akım yerinin içine, akım istiyoruz. Akım eşitliği 5 deyip geçiliyor. Mesela 5 ne? Yani bu birimler önemli arkadaşlar. Birimlerle belirtmemiz lazım. Ölçümleri.
+
+126
+00:33:07,188 --> 00:33:22,328
+Birim ve ölçü kaynağı var. Esay ünit diye geçer bunlar. Bu ünitlere baktığımızda, bilimlere baktığımızda ölçü birimlerine, tabii bu bilinen bilimler zaten uzaklık için veya boy için bir metre.
+
+127
+00:33:22,900 --> 00:33:40,079
+Veyahut da bir ağırlık için kilogram zaten kullanılıyor. Bunları biliyoruz. İşte bir insana kaç kilogramsın? Seksen kilogramım diyebiliyor. Bunlar birimler zaten bilinen birimler. Ama şimdi işte yeni tabirleri öğrenince bu derste bunlara da nasıl işte kilogramma bir birim direkt atfedebiliyorsa.
+
+128
+00:33:40,819 --> 00:33:48,720
+Bu elektrik sörkütler, elektrik devrelerindeki birimlere de hemen bir birimle ibare etmemiz lazım.
+
+129
+00:33:48,920 --> 00:33:55,539
+Yani söylerken işte 5 değil, 5 amper veya 5 milivolt gibi birimleri bilmemiz gerekecek.
+
+130
+00:33:56,160 --> 00:33:59,359
+Bilmemizi istiyoruz. Yani bunu bu şekilde bilinmemizi istiyoruz.
+
+131
+00:34:00,339 --> 00:34:06,359
+Biz en çok kullandığımız elektrik akımı diye tabir ettiğimiz bir amper gerilimimiz var.
+
+132
+00:34:07,479 --> 00:34:16,119
+Veyahut da bir tıp zamanı kullanacağız, milisaniye, saniye, yosaniye vs. bu birimlere bir giriş yapacağız.
+
+133
+00:34:16,859 --> 00:34:24,000
+Şimdi bu birimler hep genelde siyah ürünler 10 üzeri şeklinde bir büyüme ve ufaklığını gösteriyor.
+
+134
+00:34:24,596 --> 00:34:31,836
+Burada da bizim, işte burada pek çok 10 üzeri şeklinde bir kademe hiyerarşisi söz konusu sağ tarafta gözüklenen tabloda.
+
+135
+00:34:32,815 --> 00:34:42,676
+Biz burada en çok kullanacaklarımız aslında ve unutmamanız gereken 6-7 tane en önemlileri var bu ders kapsamına kullanacağımız.
+
+136
+00:34:42,796 --> 00:34:47,456
+Birincisi, mili 10 üzeri eksi 3 demek olduğunu bileceğiz.
+
+137
+00:34:49,012 --> 00:34:57,012
+Milli neyse, milli amper ise, aslında bu 10 üzeri eşde 3 amper, amperin binde biri demek olduğunu,
+
+138
+00:34:57,712 --> 00:35:05,512
+milli ile mikro çok karıştırılıyor arkadaşlar, milli de 10 üzeri eşde 3, mikro 10 üzeri eksi 6'yı tabir edecek bizim için.
+
+139
+00:35:06,812 --> 00:35:15,092
+Yani şu sıkıntıyı yaşıyoruz, sınav üzerinde konuşuyorum hep ama, yani çünkü önemli bir nokta.
+
+140
+00:35:16,115 --> 00:35:29,476
+İşte mili demeye çalışıyor arkadaş ama mikro şeklinde işlemleri yapmış. Yani elde ettiği sonuç 5 mikro amper çıkıyor ama aslında o 5 mili amper olması gerekiyor gibi.
+
+141
+00:35:29,476 --> 00:35:40,296
+Bunun sıkıntısını çok çekiyoruz. Bu domeynleri çevirirken birbirini içerisinde işlemi en yukarıdan başladığınız şekilde çevirerek yerleriz gerekiyor.
+
+142
+00:35:41,172 --> 00:36:03,112
+Başka en çok kullandığımız Nano, Pico'yu da belki bir ihtimal işte kondensör mimarı, RLC yapılarında kullanacağız. 10 üzeri X12'yi gösterecek. Kilo 10 üzeri 3'ü yani 1000 katını gösterecek normal değeri. Mega 10 üzeri 6'yı ve Giga 10 üzeri 9'u gösterecek.
+
+143
+00:36:03,668 --> 00:36:08,208
+Burada sembollerde de şu ikisi, yani mili ile mikro her daim karışıyor.
+
+144
+00:36:08,768 --> 00:36:22,368
+Bir sorularda süslü mü dediğimiz, şu işte biraz daha yatay, yani m'ye biraz benziyor ama biraz daha süslü olan bir bari kullanırsa bazı arkadaşlar bunu mide olarak algılıyor.
+
+145
+00:36:22,847 --> 00:36:25,968
+Veya m'yi direkt koyduğumuzda mikro olarak algılanıyor.
+
+146
+00:36:26,260 --> 00:36:34,320
+Bunlar önemli nokta. Bunlara dikkat etmemiz lazım. Çünkü bütün soruyu götüren şeyler aslında. Bu metrikleri bileceğiz.
+
+147
+00:36:36,380 --> 00:36:46,300
+Ve bunları hesaplamalarda zaten hani hesaplama hatası yapmışım. Hocam, bu mevzus çok yaşandığı için dikkat etmemiz önemli.
+
+148
+00:36:47,100 --> 00:36:50,320
+Buraya da özellikle bunları böyle bir nedenle koyduk tekrara.
+
+149
+00:36:51,092 --> 00:37:03,492
+Mesela bir hız formunda, eğer ki bir uzaklık, 4000 metrelik bir uzaklığı bir dakikada alıyorsa bir araç, bunun hızını sorduğumuzda biz 4000 bölü bir yakmıyoruz.
+
+150
+00:37:04,148 --> 00:37:20,148
+Ne yapmamız lazım? Eğer hız, sorulan hız bize birim neyse ona her bir birimi çevirmemiz gerekiyor değil mi? Yani bir saat saat iki kilometresini sormuş, bir saatte ne kadar kilometre gittiği gibi bir bilgi istiyor.
+
+151
+00:37:20,148 --> 00:37:25,688
+Şimdi bunun için bir dakikayı, bir saat formatına getirmemiz gerekiyor.
+
+152
+00:37:26,612 --> 00:37:35,211
+4000 metre, kilometre boyutuna çekmemiz gerekiyor vs. vs. Yani bir işlem, birimler arası geçiş yapmamız gerekiyor.
+
+153
+00:37:36,091 --> 00:37:48,304
+Aynı bu şekilde olduğu gibi biz de sorularda mesela gerilim kaynağı, volt verildi, akım normalde veya direnç işte devrede bir...
+
+154
+00:37:48,304 --> 00:38:14,904
+Kilo 10 olabilir, bir şey olabilir. Farklı bir formatta ve sonuçta elde edeceğimiz akımı bize bir amper şeklinde soruyorsa, biz o formata göre çevirerek ilerleyelim. Bu kaydeyi hiçbir zaman unutmuyoruz. Bu unitsler, birimler, ölçü birimleri devre analizinde çok kritik öneme sahip. Bütün bulduğunuz neticenin farklı olmasını sağlıyor.
+
+155
+00:38:18,516 --> 00:38:30,195
+Burada basamaklarını anlatmıştık zaten. İlk başta bir kere denklemde her bir değişkenin, biriminin aynı olma, düzgün olma durumuna bakmalıyız.
+
+156
+00:38:31,096 --> 00:38:37,235
+Aynı anlamda mı konuşuyorlar? Aynı dilden mi aynı denklem içerisinde? Ona bakmak.
+
+157
+00:38:37,516 --> 00:38:42,956
+Aynı şurada yukarıda olduğun gibi 4000 metrede bir dökükayı aynı formata getirmeye çalışmak.
+
+158
+00:38:43,923 --> 00:38:50,663
+Sonra bunların çiftlisinde, yani bize denklemin neticesinde istenen formatın ne olduğunu bilmek lazım.
+
+159
+00:38:51,264 --> 00:39:01,123
+Misal örneğin, yani siz amper buldunuz sonucu, yani bir akım bulmak istediğinde ve amper olarak buldunuz ama sonra da mili amper istedim.
+
+160
+00:39:01,123 --> 00:39:08,984
+Milli amper formatında yazmamız lazım. Yani sonra da istenen neyse o formatta da çevirmeniz gerekir.
+
+161
+00:39:10,516 --> 00:39:31,096
+Bir de bilimsel anlamda bu metrikler aslında iki farklı yaklaşımla sunuluyor. Birincisi, tam tabiriyle belirtmek. 12 elma gibi bir örnek var. 12 elmadır, 12,5 elma olamaz.
+
+162
+00:39:31,503 --> 00:39:38,864
+Bir de bunu yakınsayarak belirtmek ki bizim aslında elektrik devrelerinde genelde yakınsayarak bazı şeyleri söyleriz.
+
+163
+00:39:39,283 --> 00:39:47,503
+Çünkü tam olarak o an, o T donanında, o zamanda ölçülen değer her zamana hükmeden değer değildir.
+
+164
+00:39:48,144 --> 00:39:53,563
+Değişkenlik gösterebilir. Bu nedenle bir yakınsama üzerine kurulu bilimsel anlamda.
+
+165
+00:39:53,563 --> 00:39:58,003
+Bu yakınsamayı da işte normalde devre teorilerinde kabul edilen.
+
+166
+00:39:58,452 --> 00:40:07,132
+Dijitten sonra, noktadan sonra iki hane olacak şekilde. Yani 3.186 değil de 3.19 şeklinde gösterebileceğiz.
+
+167
+00:40:07,612 --> 00:40:15,532
+Bu sorularda da böyle. Yani round-off dediğimiz bir yuvarlama yapılabilir.
+
+168
+00:40:18,516 --> 00:40:26,315
+Zaten bu onluk gösterimi biliyoruzdur. Çünkü çokça kullanılacak bu onluklar üzerinde değişimi.
+
+169
+00:40:26,315 --> 00:40:33,056
+İşte kilo ondan normal oma döndürmek için on üzeri eksi üçle çarpmamız gerekecek gibisinden.
+
+170
+00:40:34,256 --> 00:40:38,036
+Pardon, on üzeri üçle çarpmamız gerekecek gibisinden bunları kullanacağız.
+
+171
+00:40:41,135 --> 00:40:44,635
+Bir saniye arkadaşlar, bir telefon çalıyor da ağırcık geliyorum.
+
+172
+00:42:16,340 --> 00:42:18,039
+Kusura bakmayın arkadaşlar, tamam.
+
+173
+00:42:19,079 --> 00:42:25,060
+Şimdi tabii bu 10 üzeri işlemleriyle çok işlem yapacağız. Bunları bazen matematiksel olarak da kullanacağız.
+
+174
+00:42:25,060 --> 00:42:30,800
+Bu kısımları zaten haşır neşir biliyorsunuz daha yeni taze bilgisinin için belki birinci sınıf olduğunuzda.
+
+175
+00:42:31,560 --> 00:42:33,579
+Ama tekrardan göstermekte fayda var.
+
+176
+00:42:34,003 --> 00:43:00,963
+Normalde hani yaptığımız işlemlerde ondalık, üstsel sayılarda neyse, biz burada aynı domeyne geçirmeden önce de bu işlemleri yapabiliriz. Örnek verelim. 5 kilo Ohm ile 3, ne olabilir, Mega Ohm'u toplayacağımız vakit, buradaki üstsel olarak her birini Ohm düzeyine aldığımızda, işte 3 çarpı 10 üzeri 3, artı 5 çarpı 10 üzeri 6.
+
+177
+00:43:01,423 --> 00:43:13,784
+dedik. Bunları normal bir aynı şey kısmında, yani normal toplama çarpma işlemi yapacağımız gibi, üstel sayılar işlemlerini de yapabilirsiniz, gerçekleştirebileceksiniz.
+
+178
+00:43:17,384 --> 00:43:21,543
+Ses yine bozuk, şey mi? Boğuk mu geliyor hala?
+
+179
+00:43:22,104 --> 00:43:23,583
+Hocam ses baya boğuk geliyor.
+
+180
+00:43:25,064 --> 00:43:25,724
+Allah Allah.
+
+181
+00:43:27,923 --> 00:43:30,384
+Hocam bence iyi geliyor ama sorun yok.
+
+182
+00:43:31,083 --> 00:43:31,844
+Yani acaba...
+
+183
+00:43:31,844 --> 00:43:33,323
+Bence de şimdi iyi geliyor hocam.
+
+184
+00:43:34,423 --> 00:43:35,363
+Acaba şey olabilir.
+
+185
+00:43:35,363 --> 00:43:35,983
+Şu an iyi bence.
+
+186
+00:43:36,384 --> 00:43:41,344
+Boğuk gelenlerin kendi isimlerinde bir sıkıntı olabilir mi ya?
+
+187
+00:43:41,884 --> 00:43:49,143
+Yok hocam şu an iyi. Normalde gittikçe boğuklaştı, az önce de iyileşmişti. Sonra tekrar boğuklaştı. Biraz anlaşılıyor ama zor anlaşılıyor yani öyle söyleyeyim.
+
+188
+00:43:49,603 --> 00:43:49,863
+Tamam.
+
+189
+00:43:50,900 --> 00:44:01,159
+Valla normalde diğer, yani geçen dönem yaptığımız dersleri yaptığım düzenekle yapıyorum ama tamam biraz daha yakına geleyim.
+
+190
+00:44:02,440 --> 00:44:13,279
+Velhasıl yani bir üstsel sayı sisteminde nasıl bir işlem, matematik işlem yapıyorsak, bu birimler arasında da sonuçta 10'luk taban üzeri bir birim değişimi söz konusu.
+
+191
+00:44:13,940 --> 00:44:16,720
+Bunda da aynı şekilde işlemlerimizi gerçekleştireceğiz.
+
+192
+00:44:18,195 --> 00:44:27,415
+Toplaması, çıkartması, çarpması, bölmesi hepsi aynı şekilde üstsel seylerden nasıl gerçekliyorsak toplamada üstlerinin aynı olma durumuna bakmamız lazım.
+
+193
+00:44:28,135 --> 00:44:41,115
+İşte çarpmada normalde üstlerin hiçbir önemi yok. Üstler zaten toplanacak şekilde A ve B kat sayılarında çarptıracak şekilde işlemen tabi ki bu vesaire aynı şekilde gerçekleştireceğiz bütün işlemleri.
+
+194
+00:44:46,324 --> 00:45:11,276
+Şimdi bilimde ve mühendislikte iki farklı noktalı sayılını göstermiyor söz konusu. Biz genelde tabii saniyatifik anlamda nasıl gösteriyorsa öyle. Hani bu noktayı çok öyle sınavda ya ben bunu göstermem lazım, şu şekilde göstermem lazım diye bir kriter sunmayacağız ama bilmek de fayda var. Hani bu da bir temeldir. Bilimsel gösterimde...
+
+195
+00:45:11,315 --> 00:45:21,795
+Bir adet dijit, bir adet dijitten sonra bir konu ve bu bir adet dijit birden büyük dokuzdan ufak olur.
+
+196
+00:45:22,555 --> 00:45:31,315
+Yani aslında tek bir dijit olacak, sonra nokta konulacak, sonra da işte virgüden sonraki kısmı yazılabilir.
+
+197
+00:45:31,315 --> 00:45:34,035
+Bu bilimsel gösterilir.
+
+198
+00:45:34,612 --> 00:45:43,132
+Ama mühendislik gösteriminde noktada ölçü 3 gizit yer alır maksimum. Yani bine kadar bir gösterim söz konusu.
+
+199
+00:45:44,892 --> 00:45:48,932
+Ve 10 üzeri olarak, şurada E'ler hep 10 üzeri anlamına katar.
+
+200
+00:45:49,612 --> 00:45:57,992
+Bilgisayar da sonuçta 10 üzeri, E üzeri eksi şeklinde, yani şu 10 üzeri 1 demek, 10 üzeri 2 demek, 10 üzeri 3 demek.
+
+201
+00:45:58,771 --> 00:45:59,892
+E üzeri eksi 3.
+
+202
+00:46:00,628 --> 00:46:13,028
+Yani mühendislik anlamında da, 1 ile 1000 arasındaki sayı kadar dijit gösterilir. Ondan sonra 10 üzeri 3 sabitiyle gösterilir her daire.
+
+203
+00:46:13,708 --> 00:46:21,967
+10 üzeri 3 veya 10 üzeri 3 gösterimiyle gösterilir. Bu iki farklı gösterim.
+
+204
+00:46:25,844 --> 00:46:52,103
+Buraya kadar olan kısımları niye anlattık? Genelde yapılan en büyük hata şu gözlemlediğimiz, birimlerde çok büyük sıkıntı yaşayabiliyoruz. Yani birimi yanlış yapmak, ondan sonra yaptığımız işlemlerin yanlış olmasına neden oluyor. Yani 5.2 mA yazmakla 5.2 mA yazmak arasında çok büyük fark var.
+
+205
+00:46:52,563 --> 00:46:57,244
+Ve bu bütün soruyu götürebiliyor bazı sorularda. Basit sorularda en azından.
+
+206
+00:46:57,423 --> 00:47:03,003
+Yani bunu ölçmek için tabii bazı basit sorular sorulabiliyor bizden.
+
+207
+00:47:03,103 --> 00:47:04,443
+Bunu bilmekte fayda var.
+
+208
+00:47:05,123 --> 00:47:11,684
+Bilimleri bilmek ve o dönüşümleri tam olarak yapabilmek önemli.
+
+209
+00:47:12,063 --> 00:47:21,244
+Bunu vurgulamak için bir risk koymuştuk zaten. Çok da detaya inmedim. Ama bunu hiçbir zaman unutmuyoruz bu dirimlerle alakalı kısmı.
+
+210
+00:47:21,784 --> 00:47:37,132
+Şimdi yavaştan biraz daha alana yönelik geliyoruz. Yani devre teorisinin ilk temeli elektriğin ne olduğunu anlatmakla başlar. Biz de yavaştan buna başlayacağız. Elektrik dediğim şey aslında...
+
+211
+00:47:37,172 --> 00:47:44,072
+Elektrinin oluşmasını sağlayan şey aslında elektronların bir hak düzlemi içinde hareketidir.
+
+212
+00:47:44,811 --> 00:47:49,291
+Şimdi burada da bir şu mavi yapıyı, hatta elimde kalem bakayım.
+
+213
+00:47:57,684 --> 00:47:58,412
+Evet, evet.
+
+214
+00:48:22,068 --> 00:48:38,488
+Evet, bu mavi hak arkadaşlar, şuradaki. Aslında bir kablo. Kablonun içi olarak düşünebiliriz. Kablonun içerisinde elektronların hareketiyle oluşan şeydir elektrik esasında.
+
+215
+00:48:38,488 --> 00:48:46,428
+Burada dikkat edeceğim nokta ise elektronların hareketinin tam tersine bir elektrik akımı oluşur.
+
+216
+00:48:49,556 --> 00:48:59,356
+Bu elektronla, zaten elektronların hareketi nasıldır? Çok olan yerden az olan yere doğru. Neden? Dengeyi sağlayabilmek için.
+
+217
+00:48:59,916 --> 00:49:06,175
+Yani burada çok bir elektron varsa, burada az varsa yük buradan bu tarafa doğru kayacaktır.
+
+218
+00:49:07,536 --> 00:49:12,496
+Ama elektronların bu hareketinin tam tersine bir elektrik akımı oluşur.
+
+219
+00:49:13,235 --> 00:49:24,295
+Ve biz burada iki tabilden bahsedeceğiz. Bir natural current, yani doğal akım veya bir diğer ismiyle elektron akımı, ki bu şurada budur.
+
+220
+00:49:25,815 --> 00:49:33,976
+Ve bunu büyük ı dash, yani üstüne bir tane çentik verirse edilir. Bu normal elektron akımı.
+
+221
+00:49:34,416 --> 00:49:52,196
+Tabirini oluşturur. Yani onun da bir akımı var ama elektron akımı. Ama bizim elektrik akımı olarak bu dersin kapsamında her dair işleyeceğimiz şey I ile gösterilir ve elektron akımının tam tersine oluşan akımdır. Elektrik akımı.
+
+222
+00:49:56,467 --> 00:50:15,547
+Burada da aynı şey, yüklerin hareketinden dolan, burada eksiler, öteki artıya, o yüzden false dediğimiz yapıya yapışıyor, direktronlar. O hareketten dolayı ters açıda bir elektrik akımının oluşması söz konusu.
+
+223
+00:50:18,483 --> 00:50:36,544
+Şimdi elektrik akımını tabii elektrik göremediğimiz için biraz bazı konseptleri oturtmak güç olabiliyor. Bunun için bir metafor düşünülmüş. Yani bu alanda çalışan, o size de tavsiye ettiğimiz kitapların birinde var. Bu metafor da su.
+
+224
+00:50:37,023 --> 00:50:43,164
+Su üzerinden bu elektrik akımını inzal etmeye yönelik bazı çalışmalar yapılmış. Biz de oradan gideceğiz.
+
+225
+00:50:43,764 --> 00:50:47,084
+Mesela bir bardaktan öteki bardağa bir su döktüğümüzü düşünelim.
+
+226
+00:50:48,023 --> 00:50:56,784
+Bu aslında suyun bir bardaktan bir bardağa akabilmesi için bir bardağın öteki bardaktan daha yukarıda olması gerekiyor.
+
+227
+00:50:57,235 --> 00:51:11,516
+Bir akım oluşması, yani bir enerji farklılığının oluşması lazım. Daha yukarıda olmasından kastımız, onun potansiyel enerjisini kinetik enerjiye çevireceği vakit bir akım oluşacak, bir akıntı oluşacak, suyun akması söz konusu olacak.
+
+228
+00:51:11,516 --> 00:51:19,775
+Aynı o şekilde de bir iletken düzenenin içerisinde elektronların hareket edebilmesi için,
+
+229
+00:51:20,016 --> 00:51:45,556
+ki elektronların hareket edebilmesi bizim elektrik akımını oluşturmamızı sağlıyor, elektronların hareket edebilmesi için bizim bir tarafta daha yüksek gerilime, öteki tarafta daha düşük gerilime, ki gerilimden kastımız elektron sayıları, bir tarafta daha fazla elektronun olmasına, diğer tarafta daha az elektronun olmasını olarak sağlayan bir sistem düzenlememiz lazım.
+
+230
+00:51:46,612 --> 00:51:53,532
+Ki biz bu sisteme, yani şurayla burası arasındaki farka potansiyel fark diyeceğiz.
+
+231
+00:51:56,132 --> 00:52:07,972
+Yani bir elektriğin oluşabilmesi için bir elektronların hareket etmesi lazım, elektronların hareket edebilmesi için ise iki nokta arasında bir potansiyel farkın olması lazım.
+
+232
+00:52:08,572 --> 00:52:09,812
+Aynı bu yükseklik gibi.
+
+233
+00:52:10,579 --> 00:52:19,239
+Potansiyel fark peki ne demektir? Potansiyel fark ise bir taraftaki elektron sayısından, öteki taraftaki elektron sayısından daha fazla olmalı.
+
+234
+00:52:21,059 --> 00:52:22,500
+Tamam mıyız buradan?
+
+235
+00:52:29,108 --> 00:52:56,208
+Peki ölçüsü nasıl olacak bu iletinin? Hani işte mesela bu su buradan böyle bu kadar debiyle akarken daha güçlü bir debiyle nasıl akabilir? Şimdi normal su örneğinden gidersek, bir işte bu bardağı daha yukarı taşırsam ben, daha yukarıdan boşaltırsam daha çok güçlü bir şekilde buraya inecek değil mi? Birinci bu. Yani aslında farkı arttırıyor.
+
+236
+00:52:56,563 --> 00:53:16,883
+Ki bu örneğimizde normal metafordan gerçek elektriğe geçersek, buradaki potansiyel fark, yani şu aradaki potansiyel farkı arttırmak, yani buradaki elektron sayısını arttırmak, benim daha yüksek bir akım yapmama, elektrik akımının oluşmasını sağlayacak.
+
+237
+00:53:18,203 --> 00:53:22,843
+Bir diğer ne olabilir? Şunun içerisindeki suyu arttırırsın.
+
+238
+00:53:23,507 --> 00:53:32,147
+Yani yükseklik aynı, bunun içerisindeki suyu arttırırsam daha fazla su aynı T-Domein zamanında boşalmış olacak.
+
+239
+00:53:32,147 --> 00:53:47,167
+Aynı şekilde burada da bunun içerisindeki elektron sayısını arttırmak yine potansiyel farkı arttırdığı için daha fazla akım, daha hızlı akım atmasına neden olacak diyeceğiz.
+
+240
+00:53:51,956 --> 00:54:03,596
+Mesela barajlarda da, biliyorsunuz normalde amaç nedir barajın? Şurada duran potansiyeli kinetiğe çevirerek, kinetiğe çevirme esasındaki enerjiyi kullanmaktır.
+
+241
+00:54:04,076 --> 00:54:14,156
+Biz de aslında tamamen iki farklı noktadaki elektron sayılarını değiştirerek o arada bir akımın oluşmasını sağlıyoruz.
+
+242
+00:54:14,376 --> 00:54:16,156
+Yani elektriğin oluşma nedeni bu.
+
+243
+00:54:18,771 --> 00:54:20,032
+Burada da aynı şeyi bahsediyoruz.
+
+244
+00:54:20,112 --> 00:54:28,052
+Tabii biz şimdi normalde iki top düşünürsek, bir tanesini daha yukarıdan bırakırsan yere çarpmanızı daha fazla olur.
+
+245
+00:54:28,152 --> 00:54:34,431
+Neden? Çünkü şuradaki H dediğimiz şey, yani yükseklik, yani bunun potansiyel enerjisi,
+
+246
+00:54:35,371 --> 00:54:44,472
+potansiyel enerjisi, bunun potansiyel enerjisinden daha büyük olduğu için kinetiye döndüğündeki son noktada daha fazla enerji savunma haline geldi.
+
+247
+00:54:44,851 --> 00:54:46,512
+Daha fazla impak yapacak.
+
+248
+00:54:47,192 --> 00:54:55,331
+Bunun gibi de biz de burada mesela bir ground noktası, yani bir referans noktası alıyoruz.
+
+249
+00:54:55,331 --> 00:54:57,552
+Değil mi? Bir şeyin katkıya aslında.
+
+250
+00:54:58,092 --> 00:55:07,211
+Devrede de elektronik ve elektrik yapılarında da biz bir referans noktası dediğimiz ground, yani toprak.
+
+251
+00:55:08,244 --> 00:55:33,004
+noktasını bir referans noktası alıyoruz. Yani işte akımın oluşması için o zaman devreyi bir beslemeyle beslediğimizde bir tarafta kesinlikle o beslemeden daha düşük bir şey koymamız lazım. Elektrik akımı oluşturabilmemiz için. Ve elektrik devrelerinde bu daha düşük nokta her daim bir rand. Referans noktamız bir topraklama olacak.
+
+252
+00:55:35,411 --> 00:55:39,951
+Her zaman çünkü toprak dediğimiz şey, gerilimimiz sıfır volttur.
+
+253
+00:55:40,831 --> 00:55:49,891
+Yani potansiyel fark oluşturmamız için sıfır voltun olduğu bir toprağa bağlamak, en tabircisi basit bir elektrik akımı oluşturmak süreci.
+
+254
+00:55:51,827 --> 00:56:16,827
+Elektrik potansiyel fark diyoruz, elektriğin yükü diyoruz vs. Bunlar aslında volt olarak nitelen dediğimiz tabirler. Mesela bir batarya diyorsunuz 9 volt. Aslında içerisinde 9 volta ölçülen birim şu. İçerisindeki yüklerin toprak dediğimiz, yurant ile alakalı arasındaki fark 9 volt tutmuş.
+
+255
+00:56:18,356 --> 00:56:19,596
+ve birim de bu.
+
+256
+00:56:20,135 --> 00:56:21,576
+Zaten bu.
+
+257
+00:56:25,460 --> 00:56:27,920
+Burada işte bahsettiğimiz durum söz konusu.
+
+258
+00:56:28,640 --> 00:56:31,380
+İşte daha düşük akım, yüksek akım.
+
+259
+00:56:31,380 --> 00:56:40,940
+Dedik birinci kayda aynı yükseklikte olan iki tane bardaktan bir tanesi dolu bardak, biri de yarım bardak su.
+
+260
+00:56:41,556 --> 00:57:04,676
+Yarım su dolu bardak, bir de ful su dolu bardak olsun. İkisini de çevirdiğimizde düşme şeyi yani debisi diyelim daha yüksek olacaktır değil mi öteki dolu bardak? Aynı bu şekilde de yüksek akımdaki bir elektrik akımından bahsedersek biz içerisinde daha fazla elektronun hareket ettiğinden bahsetmiş olacağız.
+
+261
+00:57:15,443 --> 00:57:24,644
+Şimdi biraz da elektrik devreleri dersinde, tabii elektronikte de, ikinci sınıfta siz elektronik dersi de alacaksınız, belki bazılarınız alıyor.
+
+262
+00:57:25,463 --> 00:57:34,884
+Orada da bir, yani daha fazlası var burada bahsedeceklerinizden ama, hani orada da bir tıp kullanacağınız bazı devre elemanlarını tanıtacağız.
+
+263
+00:57:35,380 --> 00:57:57,599
+Bu devre elemanları, bu konsept, yani devre teorisi, bu dersin konseptinde kullanacağınız hepsi, yani bunları kullanacağız. Bunlardan fazla bir şey kullanmayacağız. Ama elektronik de tabii bunlara ekstradan bir de alternatif devre elemanları gelecek. Şu etapta bunlara bir devre teorisi anlamında bahsediyoruz.
+
+264
+00:57:59,599 --> 00:58:02,440
+Elemanlar devre birleşenleri diyelim.
+
+265
+00:58:02,735 --> 00:58:26,276
+Aslında üç başlıkta incelenebilir. Biri aktif devre elemanları. Ne demek bu? Devreyi besleyen şey demek. Yani aktif olarak bu olmazsa devrede bir akımın oluşmayacağı veya oluşsa bile geçici oluşacağı anlamına gelen, bir süre sonra yani, o akımın tamamen sünümleneceği anlamına gelen devre elemanları.
+
+266
+00:58:26,867 --> 00:58:35,467
+Burada işte bağımlılar ve bağımsızlar olmak üzere iki ana başlıkla inceleyeceğiz. Ne demek bu bağımlı, bağımsız? Bahsedeceğiz.
+
+267
+00:58:36,447 --> 00:58:49,227
+Pasif devre elemanları meritik. Yani bunlar devrede sömürücü usulü. Yani devrenin ürettiği elektrik akımını sömüren devre elemanları diye tabir edebiliriz.
+
+268
+00:58:49,619 --> 00:58:56,179
+İşte direnç, kapasitör ve indiktör dediğimiz üç devre elemanından bahsedeceğiz.
+
+269
+00:58:57,599 --> 00:59:10,579
+Bir de devredeki bu elektrik akımına veya voltajı, potansiyel farkı yani ölçmemize yarayan ölçü aletlerimiz var. Bunlardan bahsedeceğiz. Bunların en başında ampermetre.
+
+270
+00:59:11,219 --> 00:59:29,059
+Amper ölçmek için, yani akım ölçmek için, voltmetre ise gerilim ölçmek için kullanacağız. Bunlar devre elemanları. Bunların dışında bir de circuit design yapacaksınız, devre tasarımı yapacaksınız programları kullanarak.
+
+271
+00:59:29,391 --> 00:59:43,051
+Orada bir referans noktası belirtmemiz lazım. Biz genelde aksi belirtilmedikçe referansı toprak dediğimiz 0 volt olarak nitelendirilen noktayı kullanacağız.
+
+272
+00:59:44,291 --> 00:59:48,111
+Kablo zaten devreyi oluşturmak için gerekli olan bir bileşen.
+
+273
+00:59:48,628 --> 00:59:58,927
+Switch'leri belki kullanabilirsiniz, belki bazı deneylerde tam emin değilim. Ne demek Switch? Yani aslında devredeki elektrik akımını açıp kapayan şeyler.
+
+274
+01:00:00,000 --> 01:00:01,619
+Değeneceğiz çok kısaca.
+
+275
+01:00:02,180 --> 01:00:25,140
+Ve bir de sigorta diye tabir edilen Türkçesi, devredeki elektrik akımındaki, devrenin içerisinde akar elektrik akımındaki ani yükseliş ve düşüşlerde devre elemanları olan, direnç, kapasitör, ündüktör gibi, bu devre elemanlarını korumaya yarayan bir mekanizmadır sigorta dediğimiz şey.
+
+276
+01:00:25,748 --> 01:00:39,467
+Yani şimdi gerçeklik lap yapmayacaksınız ama gerçek lap yaksaydınız bu sigortanın ne, yani yapmış olsaydık bu dönem, bu sigortanın ne derece önemli olduğunu lapta anlayacaktınız.
+
+277
+01:00:39,467 --> 01:00:51,847
+Çünkü yanlış bir bağlama yaparak siz devrelerde şeyleri ölçerken, ölçü aletin içerisindeki sigortayı yakıyordunuz. Biz de sizden çatır çatır parasını alıyoruz dedik.
+
+278
+01:00:52,307 --> 01:01:06,047
+Bu devre elemanının içerisindeki eğer bu sigorta yanmasaydı, yanmamış olsaydı, bizim sigorta ölçü aletini yakacaktı, içindeki devreyi yakacaktı.
+
+279
+01:01:06,047 --> 01:01:16,667
+Ki yani oradaki sigortanın maliyeti 3-5 neyse lirayken, ölçü aletinin 800 lira gibi bir maliyeti ne neden olacaktı?
+
+280
+01:01:19,135 --> 01:01:29,415
+dediğimiz füzla bütün elektrik devrelerinde çok önemli bir yere sahip diyeceğiz. Azıcık da buna giriş yapacağız zaten, bahsedeceğiz.
+
+281
+01:01:30,596 --> 01:01:36,096
+Şimdi ilk başta kullanacağımız bağımsız güç kaynaklarına bakalım.
+
+282
+01:01:37,155 --> 01:01:44,875
+Şimdi güç kaynağı dediğimizde aklımıza hep pil gelir, batarya gelir. Yani bir gerilim kaynağı gelir diyelim.
+
+283
+01:01:47,088 --> 01:02:02,848
+Sadece güç demek gerilimle alakalı bir şey değil. Tamam gerilim bir etkidir, yani güçün formülünde de var gerilim ama burada akımın da etkisi var. Yani bir akım kaynağı da güç kaynağı olabilir sadece.
+
+284
+01:02:03,208 --> 01:02:14,828
+Neden? Çünkü zaten on kanuna baktığımızda bir devreyi akımla beslemek demek bir gerilimin oluşmasına neden olmaktadır. Gerilim dediğimiz şey de bir potansiyel farkın oluşmasına neden olmaktadır.
+
+285
+01:02:14,931 --> 01:02:40,091
+Zaten potansiyel fark olmazsa akım oluşmaz. Yani bu iç içe kendisine kısır döngüyü alan bir tabir. Yani sadece güç kaynağı demek bir gerilim kaynağı demek değil, akım kaynağı da bir güç kaynağı olabilir. Burada bağımsızdan kastımış şu, işte sorularda göreceğiz, 5 volt yazacağız veya 3 volt yazacağız veya 3 ampery yazacağız.
+
+286
+01:02:40,596 --> 01:03:03,016
+Burada herhangi bir şeye bağlı değil. Bu kaynak 3 amper veriyor demek. İşte bu kaynak 5 volt veriyor demek. Yani devreyi beslediğimde ben bu kaynakla 5 volt gerilim vereceğim ben bu devreye. Bağımsızdan kastımız bu. Yani herhangi bir değişkene bağlı değil. Neyse değeri onu veriyor demek.
+
+287
+01:03:09,108 --> 01:03:11,768
+Bağımlı sonuna geleceğiz herhalde.
+
+288
+01:03:17,139 --> 01:03:21,239
+Buralar biraz daha formülize edilmiş şeyler ama ona en son değinecektim.
+
+289
+01:03:21,739 --> 01:03:26,059
+Bağımlı kaynaksa arkadaşlar, bakın buraya koymamıştınız ya.
+
+290
+01:03:26,619 --> 01:03:33,739
+Evet, bağımlı kaynaktan kastımız ise, işte misal sembolü böyledir, dörtgen şeklinde bir.
+
+291
+01:03:34,420 --> 01:03:41,559
+İçerinde, normal yuvarlak dediğini hatırlarsınız. Bunun içerisinde yine gerilim ise artı eksi, akım ise ok şeklinde.
+
+292
+01:03:42,059 --> 01:03:49,059
+Ki okun da yönünü her zaman şöyle göstereceğiz. Artıdan çıkan bir kaynak olduğunu göstereceğiz.
+
+293
+01:03:50,860 --> 01:03:58,519
+Akımın yönünü de belirtilen, okla belirtilen bir kaynak. Burada bağımlıdan kastımış, buraya biz 5 volt yazmayız.
+
+294
+01:03:59,059 --> 01:04:09,519
+Buraya biz deriz ki, eğer ki gerilim kontrollü gerilim kaynaysa, devremizde işte bir V1 gerilimi olsun, şurada bir tane çizelim.
+
+295
+01:04:12,699 --> 01:04:22,780
+Buraya V1 değerini. Bu kaynak 5V1 gibi bir şey yazılır. Yani V1'in değeri neyse, sonra da versin 5V değeri.
+
+296
+01:04:25,619 --> 01:04:32,400
+V1 5 volt. O zaman aslında buradaki 5V1 tabiri buranın 25 volt olduğunu söyleyecek.
+
+297
+01:04:33,300 --> 01:04:48,300
+Yani bağımlıdan kastımız başka bir gerilim kaynağına bağlıysa, gerilim kontrolü gerilim kaynağı, başka bir akım kaynağına bağlıysa, yani bağımsız bir akım kaynağına bağlıysa, bu akım kontrolü gerilim kaynağı.
+
+298
+01:04:48,800 --> 01:04:51,519
+İlla kaynak olmak zorunda mı? Değil. Şöyle de olabilir.
+
+299
+01:04:52,115 --> 01:05:02,695
+Soru veya işte şey, yani örneğin, buraya bir direnç koydum ve VR1 dedik. Yani R1 direnç üzerindeki gerilim, ne olduğunu bilmiyorum.
+
+300
+01:05:03,475 --> 01:05:16,795
+Buraya da 5 VR1 diyebilirim. Bu da şu demek, yine bir gerilim kontrollü, gerilim bağımlı gerilim kaynağı ama bu seferki kontrol edeceğimiz gerilim, direncin üzerindeki gerilim.
+
+301
+01:05:19,027 --> 01:05:33,127
+Sorularda zaten sıkça tekrar izah edeceğiz. Şu an bağımlıdan kastımız ne? Başka bir gerilime bağlıysa eğer devre içerisindeki, o zaman bu gerilim kayma, gerilim bağımlı gerilim kayma diye geçer.
+
+302
+01:05:33,127 --> 01:05:41,127
+Eğer ki akım, devre içerisindeki akım kaynağı, geçen bir akıma bağlıysa gerilim boyutu.
+
+303
+01:05:41,876 --> 01:05:50,135
+Akıma bağlı gerilim kaynağı diye, akım kontrolü gerilim kaynağı diye isimlendirilir.
+
+304
+01:05:50,135 --> 01:05:52,135
+Aynı şekilde akım...
+
+305
+01:05:53,300 --> 01:06:11,580
+Kaynaklarında ise, eğer ki bir gerilim kontrolüne bağlıysa, bir gerilime bağlıysa, gerilim kontrolü akım kaynağı, akıma bağlıysa, bir başka devrinin akım içerisinden geçen akıma bağlıysa, akım kontrolü akım kaynağı şeklinde ibare edeceğiz.
+
+306
+01:06:11,980 --> 01:06:18,539
+Evet, ara vereceğiz ama daha herhalde bir saat olmadı ya. Evet, daha bir saat yine oluyor.
+
+307
+01:06:20,340 --> 01:06:28,160
+Şöyle yapalım istiyorum, buçukta ara verelim, üç buçukta. 3.45 gibi başlar, 4.45 gibi bitiririz.
+
+308
+01:06:29,840 --> 01:06:32,360
+Tamam mı? Üç buçukta ara verelim yani.
+
+309
+01:06:34,320 --> 01:06:39,480
+Şimdi önceki sunumlarda da şurada, geçtiğimiz kısımlarda da belirttiğimiz nokta şu esasında.
+
+310
+01:06:40,480 --> 01:06:45,340
+Aklınız, yani şimdi öğrenci tarafında biraz da bazı tabirler tam...
+
+311
+01:06:46,356 --> 01:07:11,296
+Kafada canlanmıyor. O yüzden tekrar burada vurgulayalım. Misal bir gerilim kaynağı devreye bir gerilim beslemesi verirken, akım kaynağı devreye bir akım beslemesi veriyor. Değil mi? Şimdi ikisi aynı anda devrede kullanılabiliyor. Şimdi öğrenci hep kafada ya devreye gerilim veriyoruz. E gerilimden doğan bir akım oluşacak zaten. Bu akım kaynağı niye var? Gibi sorular gelebiliyor.
+
+312
+01:07:11,827 --> 01:07:17,867
+Bu akım, o gerilim kaynağından oluşan akıma destekleyici bir akım kaynağı.
+
+313
+01:07:18,167 --> 01:07:21,767
+Ve gerilim kaynağının bulunduğu devrelerde akım kaynağı da bulunabilir.
+
+314
+01:07:24,267 --> 01:07:26,747
+Burada onu vurgulamaya çalışmışız.
+
+315
+01:07:27,327 --> 01:07:34,387
+Aynı şekilde tam tersi de, yani bir akım kaynağı bulunan devrede akımın yönünü belirleyen şey akım kaynağıdır.
+
+316
+01:07:35,147 --> 01:07:39,027
+Gerilim kaynağı da bulunması o akımın yönünü etki etmez.
+
+317
+01:07:40,371 --> 01:07:53,571
+Öteki tarafta gerilim kaynağı devrede bir kutuplaşmayı neden olur. Yani ilerleyen sorularda göreceğiz. Direncin kutuplaşmasına neden olan şey aslında gerilim kaynağının uçları olacak.
+
+318
+01:07:55,331 --> 01:08:06,711
+Tabirleri soruları çözdükçe bakacağız. Şimdi burada mesela bir akım kaynağı var. Burada da bir şey var. Yani bir tane eleman olsun. Hani şu an direnç demeyelim.
+
+319
+01:08:06,711 --> 01:08:07,451
+Bir sayı.
+
+320
+01:08:08,083 --> 01:08:08,724
+Efendim?
+
+321
+01:08:08,923 --> 01:08:09,184
+Buyurun.
+
+322
+01:08:12,644 --> 01:08:16,564
+Bir soru mu vardı? Yanlışlıkla mı? Herhalde yanlışlıkla oldu.
+
+323
+01:08:20,051 --> 01:08:34,551
+Soru yok herhalde. Evet, akım kaynağı var devrede bir. Akım kaynağı bağlanmış. 3 amperlik. Ve şunu biliyorum ki ben okun yönü her zaman artıyı göstereceğim. Ve bu akım artıdan eksiğe şöyle gitti.
+
+324
+01:08:35,391 --> 01:08:43,971
+Şimdi ona da değinelim. Hatta şöyle bir örnek yapalım. Burası da pilimiz olsun.
+
+325
+01:08:46,547 --> 01:08:47,907
+Artı, Eksi.
+
+326
+01:08:49,228 --> 01:08:54,688
+Pili ben bir tane ampule bağladım.
+
+327
+01:08:54,688 --> 01:08:56,608
+Ampul içilebilir miyim bilmiyorum ama.
+
+328
+01:09:04,884 --> 01:09:23,003
+Şöyle bir ampula bağlı. Şimdi normalde şunu dedik her daim, bu telin içerisinde, kablonun içerisinde elektronlar var değil mi? Hatta biraz daha büyüktürüm, buraya bir zoom yaptığımızı düşünelim. Bu kablonun içerisinde elektronlarımız var.
+
+329
+01:09:26,804 --> 01:09:31,684
+Şimdi şunu dedik, artıyı buraya bağladığımız anda elektriyonlar bu artıya doğru hareket ediyor.
+
+330
+01:09:32,283 --> 01:09:37,824
+Doğru mu? Doğru. Elektron akımı bu şekilde oluştu.
+
+331
+01:09:37,824 --> 01:09:44,164
+Biz ama şunu biliyoruz, elektron akımının tam tersine bir elektrik akımının oluşması bekleniyor.
+
+332
+01:09:44,304 --> 01:09:53,064
+Ve elektrik akımı, bizim sorularda her daim kullanacağımız I, artıdan eksiye bu şekilde oluştu.
+
+333
+01:09:53,555 --> 01:10:00,935
+Yani her daim akım artıdan çıkacak, eksiğe girecek, ta ki beslemeysin.
+
+334
+01:10:02,775 --> 01:10:11,796
+Burada da örnek soruda da, şimdi okun ucu her zaman artıyı gösterdiğiniz kasıt şu, ok akımın bu yanda gideceğini söylemiş, söyler bizim.
+
+335
+01:10:11,796 --> 01:10:16,796
+Bu yanda gidiyorsa o zaman artıdan çıkması lazım, o mantıkla oluşturuyorum.
+
+336
+01:10:17,684 --> 01:10:22,304
+Artıdan çıkan akım eksiğe doğru gidecek. Bu akım bu şekilde devam edecek.
+
+337
+01:10:23,364 --> 01:10:28,504
+Devreye takılan diğer devre elemanları ise bunu sömürmesi bekliyor.
+
+338
+01:10:29,104 --> 01:10:34,043
+Sömürmesi beklediği için de bunun polarizasyonu tam tersi olmak zorunda.
+
+339
+01:10:35,764 --> 01:11:00,064
+Ve buraya da işte 1 voltluk bir gerilim düştüğünü düşünmüşüz. Bunun kodalizasyonunu sağlayan şey de aslında buradaki akım kaynağı olmuş oluyor diyeceğiz. Bunları ileride çok sıkça bahsedileceğiz. Şimdi hani buralarda hızlıca böyle devrede bir akım kaynağının bağlanabilme durumunu izah etmek üzere konmuş örnek bunlar. Sadece bunları şey yapsak yeter.
+
+340
+01:11:02,420 --> 01:11:07,520
+Bir de her devrede arkadaşlar bir enerji korunumu yasası vardır.
+
+341
+01:11:08,579 --> 01:11:11,779
+Misal, 3 amperlik bir akım çıkıyor.
+
+342
+01:11:12,520 --> 01:11:19,139
+Buradan 3 amper şeklinde atıyor ve burada 1 voltluk bir gerilim olduğunu düşünelim.
+
+343
+01:11:20,212 --> 01:11:35,391
+Şimdi normalde enerji dediğimiz formül V çarpı İ'dir. Biraz sonra onu da izah edeceğiz. Burada da İ'miz 3 amper, V'miz de birden 3 wattlık bir enerjimiz var.
+
+344
+01:11:41,268 --> 01:11:54,548
+Akım kaynağındaki ve bu kırmızı eleman neyse, bu kırmızı elemandaki enerjinin ikisinin aynı olması lazım. Yani 3 wattlık bir enerji burada var, 3 wattlık da burada var.
+
+345
+01:11:55,155 --> 01:12:11,456
+Ama bir tanesi üretim yapıyor, bir tanesi sömürüyor. O yüzden üretim yapan ve sömüren şeklinde iki tane enerjinin toplamının sıfır olması kaidesini ileride değiştireceğiz. KVL'de, KCL'de ama burada da hızlıca bahsetmiş olmuş.
+
+346
+01:12:16,020 --> 01:12:28,680
+Şimdi pasif elemanlara bakacağız. Deminkiler güç kaynaklarıydı. Akım güç kaynağı, gerilim güç kaynağı, bağımlı bağımsız olma durumlarını vesaire analiz ettik.
+
+347
+01:12:29,340 --> 01:12:35,100
+Şimdi bir de pasif elemanlar, yani bizim kaynaklarımızı sömüren elemanlarımız var.
+
+348
+01:12:37,239 --> 01:12:40,480
+Burada sömürme işlemi aniden de olabilir.
+
+349
+01:12:41,427 --> 01:13:03,407
+Yani işte direnç gibi mesela, direnç aniden sümürüyor. Veyahut da üzerinde bir miktar bu gücü tutup, enerjiyi tutup, bu enerjiyi sonra yavaştan sünümlendirerek de sümürlenmeyiz. Ki biz bunları kondansatör ve bobin olarak işleyeceğiz. Bobin akımı böyle yapacak, kondansatörde gerilimi böyle yapacak.
+
+350
+01:13:06,100 --> 01:13:16,780
+Şimdi tabii bunların fiziksel yerini burada gösteriyoruz ama labda labımız olsaydı orada daha net haşır neşir olacaktınız. Belki hiç elinizi almayacaksınız bu aletleri ama.
+
+351
+01:13:16,780 --> 01:13:30,900
+İşte direncin normalde gösterimi budur. Üzerindeki renkler aslında bu direncin değerini belirleyen color code dediğimiz. Hatta bunu da şöyle şey yapıyorlardı.
+
+352
+01:13:35,347 --> 01:13:44,927
+Sokakta sayamam diye tabir ettikleri bir kısaltma var. Şu demek, siyah, kırmızı, kahverengi, turuncu, sarı, yeşil.
+
+353
+01:13:45,619 --> 01:14:08,760
+Mavi herhalde böyleydi. Her birinin aslında onluk düzlemde bir ağırlığı var. Mesela mavi en ağır olan, 10 üzeri 6 mı 7 mi ne anlam katıyor gibi böyle bir okuma stratejisi var. Ezberlemenize hiç gerek yok zaten. Biz DAP'ta da ezberletmeyorduk. Direkt denen filmimizin ilk sayfasında bunu ediyorduk.
+
+354
+01:14:09,119 --> 01:14:19,920
+Bunlar ama sonuçta üstündeki renklerden çıkıyor. Mesela hesaplayalım. Burası kırmızı, sokakta sayamam da ikincisiydi o. O da, bir daha yazalım.
+
+355
+01:14:24,799 --> 01:14:34,639
+Sarı, siyah, kırmızı dedik değil mi? Burası sıfır bir oluyor, pardon bir. Burası siyah olduğu için sıfır.
+
+356
+01:14:35,091 --> 01:14:53,332
+Üçüncüsü ise, ilk ikisi direkt buradaki indis bilgisi, 0, 1, 2, 3, 4, 5, 6, 7, indis bilgisi, sonrası, yani üçüncü renk veyahut da en sağdan sonra, en sağdakinin bir solundaki renk ise,
+
+357
+01:14:53,760 --> 01:15:08,840
+Çarpı 10 üzeri 10'un indisi. Mesela şu an yine kırmızı olduğu için 1 diyeceğiz herhalde değil mi? Siyah, kahve kırmızı mıydı? Kırmızı kahve miydi? Kahve kırmızıydı herhalde.
+
+358
+01:15:10,060 --> 01:15:19,979
+Bak ben ezberlemedim. Ama önemli olan şu, çarpan olsun ve 1 olduğunu düşünelim. Yani bu aslında 110'luk bir dirençmiş diyeceğiz.
+
+359
+01:15:20,500 --> 01:15:26,479
+Böyle sayım yapılan üzerindeki renklerden değer okuması yapılan devre elemanları.
+
+360
+01:15:27,119 --> 01:15:33,199
+Bu 100-10, aslında bunun içerisinde ne kadar bir direnci gösterdiğini söyleyen bir metre, bir diren.
+
+361
+01:15:34,039 --> 01:15:39,680
+Yani işte yeri gelecek işte 1 mega ohm diyeceğiz misal, aslında bu 1 milyon ohm demek olacak.
+
+362
+01:15:40,239 --> 01:15:45,079
+Gibi farklı farklı değerleri okunabilen bir hasil devre elemanı.
+
+363
+01:15:47,091 --> 01:16:00,431
+Sizi ilgilendiren biraz daha similatasyon ortamında nasıl gösterildi? Bir zikzaklı tel şeklinde gösteriliyor ve değeri 10 olarak ve sembolü de şu şekilde gösterilen bir pasif devre elemanı.
+
+364
+01:16:01,351 --> 01:16:10,191
+İndiktör dediğimiz, yani bobin, Türkçe ismiyle veya indiktör olarak da aslında çeviriyorlar bazıları ama bobin diye geçer.
+
+365
+01:16:12,368 --> 01:16:20,768
+Bu aslında bakır telin çok sık bir sarımı olarak yapılan bir fiziksel terdir.
+
+366
+01:16:21,968 --> 01:16:31,168
+Bu kadar sık yapma nedenleri şu aslında, geri gelince anlatacağız ama bobin konusunda, bobin akımı üzerinde depolar.
+
+367
+01:16:31,868 --> 01:16:39,087
+Akımdan kastımız ise, bakın gördüğümüz gibi devrenin, yani telin üzerinde herhangi bir fiziksel kılıf yok.
+
+368
+01:16:40,051 --> 01:17:00,351
+Nedeni şu, burada bir manyetik alanı oluşturarak manyetik alan buradan geçen akımı kesecek. Ve akımı kestiğinden akım burada hapis kalacak. Amaç o, yani bobin aslında akımı üzerinde biraz biriktirip sonra savunanını yaparak sününlendirecek bir mimariye sahip.
+
+369
+01:17:00,724 --> 01:17:10,783
+Şehide zaten sembolüne baktığımızda da, yani bir salın ter, sarın terbi gibi bir şekli var ve birimi hendi, heyde gösteriliyor.
+
+370
+01:17:11,524 --> 01:17:19,944
+Kapasitör dediğimiz kapasitans diye de tabir edilen, hatta Türkçesi kondansatör olarak çevirdiğimiz bir devre elemanı.
+
+371
+01:17:21,424 --> 01:17:26,144
+Burada kutuplu, kutupsuz, mercimek, kondansatörler vs. çok çeşidi var.
+
+372
+01:17:26,547 --> 01:17:49,887
+Mesela şu kutu uzun bir şekli. Kutuplu olunca buraya bir artı-eksi koyuyorlar. Veyahut da işte bir tanesini uzun yaparlar şöyle. O uzun olan kısım artıya, kısa olan kısım eksiye tekabül gelir. Böyle gösterimleri var. Normal fiziksel gösterimde de şuradaki eksi çentik, mesela bu bir kutuplu konular sütü.
+
+373
+01:17:50,387 --> 01:18:01,188
+Eksi olarak belirlenen kısım şu bacak yani. Benim eksi bacağım, artı olan kısım, yani normalde hiçbir şey olmayan kısımda artı bacağım olduğunu gösteriyoruz.
+
+374
+01:18:01,667 --> 01:18:06,547
+Birimi farat ve F ile de normal satması mevcut.
+
+375
+01:18:09,547 --> 01:18:15,827
+Başka nelerimiz var? Tabii elektrik telimiz var. Etrafımda bir kıvrıkla.
+
+376
+01:18:16,336 --> 01:18:23,656
+gösterilen, bunun farklı standartları mevcut, iletime etki eden özellikleri mevcut vesaire değineceğiz.
+
+377
+01:18:24,936 --> 01:18:36,976
+Toprak dediğimiz, genelde zaten görürsünüz bu camilerde vesaire minarelerinde, yıldırım düştüğünde, minarenin dibinde toprağa böyle bir kocaman çivi çakarlar.
+
+378
+01:18:37,328 --> 01:18:46,728
+Neden? Topraklansın diye. Aynı onun gibi düşünebiliriz. Burada bir toprağın üzerinde çamak varmış gibi bir gösterimi var.
+
+379
+01:18:48,028 --> 01:18:58,168
+Switch dediğimiz bir anahtar elemanı, devredeki elektrik akımını kesme veya iletime devam etme özelliğini sunan bir yapıya sahip.
+
+380
+01:18:58,612 --> 01:19:08,612
+Bu da sigortayı söylemiştik zaten. Sigortanın çok farklı gösterimleri var ama genelde şu ortadaki daha çok kullanılıyor sigorta anlamında.
+
+381
+01:19:12,500 --> 01:19:13,879
+Switchler dediğimiz...
+
+382
+01:19:13,879 --> 01:19:15,299
+Hocam, sembollerde...
+
+383
+01:19:15,299 --> 01:19:15,699
+Evet.
+
+384
+01:19:16,840 --> 01:19:17,799
+Hocam...
+
+385
+01:19:17,799 --> 01:19:19,239
+Buyurun.
+
+386
+01:19:19,920 --> 01:19:23,460
+Sembollerde iki tane Ground vardı. Bunların arasındaki fark ne?
+
+387
+01:19:23,719 --> 01:19:25,799
+Sembollerde iki tane...
+
+388
+01:19:25,799 --> 01:19:27,239
+Ne vardı dedi?
+
+389
+01:19:28,879 --> 01:19:29,859
+Ground var.
+
+390
+01:19:31,359 --> 01:19:31,719
+Ground.
+
+391
+01:19:32,020 --> 01:19:35,639
+Hocam, açık beyaz, kapalı beyaz ok işaretini diyor Ground.
+
+392
+01:19:36,500 --> 01:19:37,139
+Evet.
+
+393
+01:19:37,652 --> 01:19:57,711
+Aslında bunların hepsi grant ama farklı farklı sembollerde, devrelerde görebilirsiniz. Çeşitlilik çok fazla yani aynı anlama geliyor, öyle diyelim. Bu da misal bir granttır, ört diye tekabül edilmiş ama sonuçta devrede şöyle bir devre tasarımı yapalım.
+
+394
+01:20:03,663 --> 01:20:09,043
+Bunu da koyabilirsin. Yani hiç farkı yok. Devrelerde semboller aynı anlama geliyor burada.
+
+395
+01:20:11,503 --> 01:20:14,663
+Teşekkürler.
+
+396
+01:20:18,003 --> 01:20:28,604
+Switchler, biraz detaylıca bakacak olursak, işte normalde bir elektrik akımın oluşabilmesi için elektronların hareket etmesi lazım demiştik.
+
+397
+01:20:29,043 --> 01:20:36,543
+Elektronların hareket edebilmesi için de bir closed circuit dediğimiz, yani kapalı devre yapısının oluşması lazım.
+
+398
+01:20:36,684 --> 01:20:40,344
+Kapalı devreden kastımız, hiç bir kablo var.
+
+399
+01:20:43,475 --> 01:20:48,076
+Kablonun başı ile ucu arasında dönüp dolaşıp tekrar aynı yere gelmiş olması lazım.
+
+400
+01:20:48,716 --> 01:20:56,735
+Eğer ki işte şöyle bir direnç yaptım, gerilim kaynana koydum, şuraya da bir genli attım.
+
+401
+01:20:57,516 --> 01:21:01,956
+Mesela bu bir closed yapıdır. Neden? Çünkü şöyle artı eksi yapılmakta.
+
+402
+01:21:04,195 --> 01:21:10,655
+Bir dönme evrimli söz konusu değil mi? Ama bir şuraya şey yapalım.
+
+403
+01:21:12,948 --> 01:21:35,628
+Switch yapalım. Bu Switch açıldığı vakit bir closed loop dediğimiz, çevrim kapalı devreyi açtığı için elektrik akımı sekteye uğrayacak. Elektrik akımı sekteye uğradığı için de akım oluşmayacak. Switchlerin mantığı bunu aslında on-off gibi bir yapıda açıp kapamaya yarayan devre eleman.
+
+404
+01:21:37,203 --> 01:21:41,384
+Şimdi iki farklı switch tekniği var, mekanik ve elektronik.
+
+405
+01:21:41,384 --> 01:21:50,384
+Mekanik zaten çokça kullanılan butonlar veya elektrikleri aç kapa yaptığımız, ışıkları aç kapa yaptığımız anahtarlar.
+
+406
+01:21:51,243 --> 01:21:52,684
+Bunlar hep mekanikler.
+
+407
+01:21:53,304 --> 01:22:03,384
+Elektronik olanda bir infrared dediğimiz kısa ötesiyle bir yere sinyal göndererek ve sensör datası okuyarak vesaire yaptığımız on-off eylemi olarak nitelendirebiliriz.
+
+408
+01:22:07,475 --> 01:22:26,435
+Bu devreyi koruyan devre ekipmanlarına bakacak olursak, işte bu yani sigortalara bahsettiğimiz gibi, iki farklı sigorta tipi var. Biri aniden kesintiye uğrayan, yani işte akım koruyucu üçlü kablolar var.
+
+409
+01:22:26,435 --> 01:22:33,435
+Bilmiyorum, görmüşsünüzdür. Onlar biraz daha pahalı. İşte mesela amaç ne orada? Akımlar bazı bölgelerde.
+
+410
+01:22:33,807 --> 01:22:49,307
+elektrik yakınına göre değişkenlik gösterebilir, akım bazı saatlerde çok yüksek birden kit yapabilir, bazı saatlerde düşebilir vs.
+
+411
+01:22:49,307 --> 01:22:56,407
+Bu cihazların, yani beslediğimiz cihazların, bu akımla beslediğimiz cihazların,
+
+412
+01:22:56,884 --> 01:23:23,384
+Şebekeden beslediği cihazları deformasyona, böyle bir bozuntuya sokabilir. Bunu engellemek için bazı aniden kesmesini sağlayan yapılar var. Bazıları da zamana yayarak, yavaşlatarak kesenler var. Bu genelde yüksek akım gelenlerde yapılan bir koruma tekniği. Çünkü kendi içerisinde onu sönümlendiriyor ve yavaş yavaş korumaya alıyor.
+
+413
+01:23:23,956 --> 01:23:28,135
+İki tarz koruma sigortası mevcut.
+
+414
+01:23:30,275 --> 01:23:32,456
+Kablolarda da bir standart var.
+
+415
+01:23:32,915 --> 01:23:39,315
+Amerikan WireGovic'den bir birim tarafından üretilen standarttır bunlar.
+
+416
+01:23:40,815 --> 01:23:45,655
+Burada şimdi normalde evde gündelik olarak, bu standart neye bakıyor ilk onu söyleyelim.
+
+417
+01:23:50,804 --> 01:24:05,724
+Yani o kestiğimizde kabloyu yüzey alanıyla alakalı bir metriktir. Bu yüzey alanı ne kadar büyük olursa veya ufak olursa ona göre farklı bir numaralandırma yapılmış kablolara.
+
+418
+01:24:05,724 --> 01:24:14,503
+Örnek verelim evlerdeki normal işte kullandığımız elektrik tesisatında kullanılan kabloların AVG numaraları 12-14'tür.
+
+419
+01:24:14,996 --> 01:24:29,916
+Telefonlar için kullanılan kablolar var ya, o ince telefonlar, onlarınki 22-24'tür. Yani o aradaki kablonun kalınlığı inceldikçe numara artar ve iletkenliği azalır.
+
+420
+01:24:30,304 --> 01:24:46,884
+Yani bir kablonun AVG numarası ne kadar düşükse yüzey alanı o kadar geniştir demek ve yüzey alanı geniş olduğundan dolayı da daha yüksek elektrik akımlarını destekleyebiliyor demek. Böyle bir standart getirmişler.
+
+421
+01:24:46,884 --> 01:24:55,884
+Burada mesela şimdi tabii nerede kullanılıyor bilmiyorum. En düşük olana bakalım. 0, 0, 0, 0. Yüzey alanı yaklaşık.
+
+422
+01:24:56,496 --> 01:24:59,556
+10 santimlik bir kablo, daha da fazla.
+
+423
+01:25:01,056 --> 01:25:06,756
+Ve bunun iletimi en yüksek iletime sahip olan, yani en çok yükü taşıyabilen bir kablo çekilir.
+
+424
+01:25:06,756 --> 01:25:10,516
+Normal evlerimizdekilerin yüzeyi alınırsa 3 mm'ymiş.
+
+425
+01:25:11,676 --> 01:25:19,236
+Normal telefon hatlarındaki ise yaklaşık 0-2 mm kadar ince kablolar.
+
+426
+01:25:19,615 --> 01:25:35,136
+Bunun taşıdığı elektrik yükü ile bunun taşıdığı elektrik yükü aynı değil. Bu yüzden bu tamamen kullanıma göre, nerede ne kadar yük taşınacağına göre değişen bir kablo kullanımı mevcut olabiliyor.
+
+427
+01:25:36,467 --> 01:25:50,427
+Burada da o deminkilerin, neden yüzey alanına göre bir numara adırma yapılmış? Aslında yüzey alanı arttıkça, büyüdükçe o kablonun direnci azalmış oluyor.
+
+428
+01:25:50,996 --> 01:25:56,596
+Haftaya işleyeceğiz herhalde. Direnci biraz daha detaylıca analiz edeceğiz.
+
+429
+01:25:57,056 --> 01:26:08,176
+Orada da göreceğiz. Direnci sağlayan şey aslında bir maddenin, kullanılan maddenin, bir içerisindeki material, substance, yani içerisindeki katkı maddelerinin,
+
+430
+01:26:08,176 --> 01:26:17,900
+ikincisi ise yüzey alanı ve uzunluğuyla alakalı bir metri var. Burada da yüzey alanı arttığı için direnci azalıyor. Ama yüzey alanı...
+
+431
+01:26:17,908 --> 01:26:44,588
+Ufaldığı zaman, yani daha da düşük yüzey alanlara sahip olduğunda daha fazla direnç, rezidif etki gösteriyor kapma. O yüzden de daha az yük taşıyor. Evet, 31 olmuş. Burada bir ara verelim arkadaşlar. 45 geçe tekrar toplanalım. Yani herhalde bir saatlik bir dersimiz daha var. 45 geçe buradayız.
+
+432
+01:26:47,380 --> 01:26:51,840
+Sorunuz varsa yazabilirsiniz. Gelince cevaplarız.
+
+433
+01:41:25,171 --> 01:41:29,311
+Evet arkadaşlar, başlayalım. 15 dakikamız oldu.
+
+434
+01:41:38,963 --> 01:42:03,304
+Evet, kablolardan bahsedelim. İstik sonra, evet paylaşacağız ama ne zaman paylaşacağız? AWSist de dediğim gibi bir karışıklık oluyor. Yani asistanlar ortamı, portalı oluşturduğu anda bu sistem ben size yani mesaj atarım ve üye olun diye. Bu klasör mü olur yoksa piyazda mı olur bilmiyorum. Orada paylaşırız.
+
+435
+01:42:16,692 --> 01:42:23,552
+Evet, grant dediğimiz şey aslında topraklama diye pek çok evde de mevcut olan bir sistem.
+
+436
+01:42:23,552 --> 01:42:37,072
+Biz devrelerde referans noktası olsun anlamıyla yani elektrik akımının oluşabilmesi için ne yapacağız?
+
+437
+01:42:37,172 --> 01:42:43,351
+Devrelerde bir tarafı gene diye bağlayacağız. Böylelikle bir elektrik akımının oluşmasını sağlayacağız.
+
+438
+01:42:44,275 --> 01:42:54,795
+Şimdi genelde biz bütün sorularda arkadaşlar ders kapsamında bazı kuralları ön kural diyelim buna veya tanımlama diyelim kabul edeceğiz. Birincisi şu.
+
+439
+01:42:55,539 --> 01:43:21,899
+Kabloda, gerçek hayatta, kablo düzleme boyunca bir kayıp kesinlikle olur. Çok çok milivoltlar seviyesinde de olsa bir kayıp olur ama biz sorularda kablo ne kadar uzun olursa olsun, hani kabloda bir başlangıçtaki gerilim ile sonundaki gerilim arasında herhangi bir farkın olmadığı, bütün kablo düzleme boyunca, kablo boyunca aynı voltaj değerinin ölçülebildiğini varsayacağız.
+
+440
+01:43:23,091 --> 01:43:37,671
+Sonra gerilim kaynakları ile alakalı. Tabii gerçek hayatta da, aslında buradaki kurallar bizim standart veya kabul görmüş, kabul edeceğimiz kurallar.
+
+441
+01:43:38,036 --> 01:43:52,996
+Gerilim kaynaklarından misal 5 volt gerilimi vermek için 5.2 gibi bir ayarlama yapmanız gerekir. Çünkü iç direncinden dolayı çıkışlarında tam 5 voltu ölçemezsiniz 5 volt skalasına getirdiğinizde.
+
+442
+01:43:52,996 --> 01:44:03,695
+Ama biz tabii ki de teorik olarak soruları çözerken hiçbir zaman böyle bir şey demeyeceğiz. Üzerinde yazan değer neyse gerilim kaynağının pinleri yani
+
+443
+01:44:04,404 --> 01:44:10,224
+kablo bağlantıları uçlarında her daim o gerilimin verildiğinden bahsedeceğiz.
+
+444
+01:44:10,704 --> 01:44:19,784
+Öyle kabul edeceğiz. Aynı şekilde akım kaynağında da akım kaynağı içerisinden geçen akımın üstünde yazan akım olduğunu söyleyeceğiz.
+
+445
+01:44:20,024 --> 01:44:25,844
+Yani kaynak olarak. Ve ground'ın da her zaman sıfır olduğunu kabul edeceğiz.
+
+446
+01:44:25,844 --> 01:44:31,924
+Bu sorular ve ders kapsamında işlediğimiz bütün şeyler de bu şekilde kabul edilmemiz olacak.
+
+447
+01:44:33,619 --> 01:44:46,800
+Şimdi elektriğin akış kurallarına da bakacak olursak, elektrik her zaman yüksek voltajdan, düşük voltaja veya yüksek gerilim olan bir noktadan, düşük gerilim olan bir noktaya bir güzergah doğrultusunda akacak.
+
+448
+01:44:47,619 --> 01:44:56,340
+Bunu söylemiştik zaten. Yani bir potansiyel farkının oluştuğu yüksek noktadan düşük noktaya gerilim anlamında bu şekilde bir yol izleyecek.
+
+449
+01:44:58,676 --> 01:45:05,596
+Elektrik kablosundan herhangi bir engel, yani bir direnç rezidif etkisi olmadan geçtiğini düşüneceğiz.
+
+450
+01:45:05,596 --> 01:45:25,416
+Demin ki dediğimiz gibi. Ve şunu da kesinlikle kabul edeceğiz. Ohm kanunu kapsamında, ki birazdan ona gireceğiz zaten ne olduğunu, dirençlerin üzerinden akan akımın her zaman bir kısmını orada bıraktığını düşüneceğiz.
+
+451
+01:45:25,908 --> 01:45:34,968
+Ohm kanunu, yani aslında demeye çalıştırılmış şu, bir gerilim birikimi olacak dirençlerin üzerinde. Nasıl? Bir R değerine bağlı olarak.
+
+452
+01:45:36,908 --> 01:45:42,208
+Başka bağımlı kaynakların kullanımından bahsettik zaten.
+
+453
+01:45:45,208 --> 01:45:47,208
+Diğerlerinden bahsettik zaten.
+
+454
+01:45:48,467 --> 01:45:53,667
+Yükü tanımlayalım. Yük dediğimiz şey aslında elektronlar ve protonlar.
+
+455
+01:45:55,227 --> 01:45:58,867
+Ve biz biliyoruz ki elektrik akımı elektronların hareketiyle oluşuyor.
+
+456
+01:45:58,967 --> 01:46:03,387
+Ama elektronlar nasıl hareket ediyor? Protonlara doğru, hallara doğru yani.
+
+457
+01:46:03,387 --> 01:46:07,387
+Ve bu harekette bir yüklenme...
+
+458
+01:46:07,952 --> 01:46:20,432
+Olsun diye var. Yani yüklerin eşit dağılımı oluşması için bir hareketlenme söz konusu. Ve bu yük dediğimiz şey, Kolomb birimi olan bir, C'de gösterilen bir birim.
+
+459
+01:46:21,332 --> 01:46:41,912
+Bunu gösterirken de kolomb biriminden belirtilen bir metrikle sunuluyor yükler. Sembolü Q olarak gösteriliyor. Büyük harfle Q yazılırsa, aslında yükleri biz biraz daha kondansatör konusunda işleyeceğiz. Çünkü orada yükün karşılığı gerilimin depolanması olacak.
+
+460
+01:46:42,387 --> 01:46:56,668
+Burada şu aşamada büyük yönün stabil durumda, ufak yönün de daha tam stabil duruma erişmeden önce gösterilmek için kullanıldığı bir sembol olarak nitelendirebiliriz.
+
+461
+01:46:56,668 --> 01:46:59,668
+Şimdi yükü tanımlarken...
+
+462
+01:47:00,275 --> 01:47:07,115
+Veya akımı tanımlarken şunu demiştik hatırlarsanız, yani elektrik akımını, elektronların hareketiyle oluşuyor.
+
+463
+01:47:07,435 --> 01:47:11,296
+Yani elektronlar hareket ediyorsa aslında yükler değişiyor.
+
+464
+01:47:12,516 --> 01:47:20,895
+Ve formülize ettiğimizde akımı zamandaki değişime göre, yani zaman boyutunda yükteki değişim demek.
+
+465
+01:47:21,576 --> 01:47:26,056
+Değişim, laf zeyen değişim lafı matematiksel olarak türeve denk gelir.
+
+466
+01:47:26,448 --> 01:47:33,087
+Yani aslında akımın formülü zaman düzleminde yüklün türevini almaktır.
+
+467
+01:47:34,268 --> 01:47:40,927
+Yükün türevini almak, yani türev dediğimiz şey ise aslında bir zamandan öteki zamana ne kadar değişti demek oluyor bu.
+
+468
+01:47:41,847 --> 01:47:46,127
+Yani yükteki değişimin zaman düzlemindeki analizidir aslında akım.
+
+469
+01:47:46,739 --> 01:48:00,300
+Örnek verelim, yükler iki noktada da eşitse, bir yük değişimi olmayacağı için, zamanda ne kadar beklersek bekleyelim, bir yük iki nokta arasında yükler eşit olduğunda yük değişimi olmaz.
+
+470
+01:48:00,619 --> 01:48:04,800
+Elektronlar hareket etmez ve böylelikle akım sıfır olur. Akım olmaz.
+
+471
+01:48:05,492 --> 01:48:23,072
+Böyle kafanızda canlandırılır, yani bunu temellendirebilirsiniz. Akımın oluşması için yük farklılıkları olması lazım. Yük farklılığı olduktan sonra da o yük farklılığının dengeye gelmesi için geçecek zaman boyutunda akımın oluşacağını söyleyebiliriz.
+
+472
+01:48:33,011 --> 01:48:34,592
+Bize yükü verecektir.
+
+473
+01:48:35,752 --> 01:48:41,572
+Ve akım için biz I veya ufak I şeklinde tabiri kullanıyoruz.
+
+474
+01:48:41,731 --> 01:48:47,692
+Doğru akımlarda, yani doğru alternatif akım ve doğru akım diye iki tane akım şekli var.
+
+475
+01:48:47,872 --> 01:48:51,912
+Doğru akımlarda büyük, alternatiflerde I, yani ufak akımı kullanıyoruz.
+
+476
+01:48:52,112 --> 01:48:54,112
+Şimdi buna da biraz değinelim.
+
+477
+01:48:54,899 --> 01:49:01,960
+Doğru akım dediğimiz şey aslında bütün zaman düzleminde tek bir değerdeki akım değeridir.
+
+478
+01:49:03,279 --> 01:49:08,559
+Alternatif akım ise zamana göre değişkenlik gösteren bir akım şeklidir.
+
+479
+01:49:08,559 --> 01:49:10,479
+İsterseniz direkt şurada bir şekil var.
+
+480
+01:49:11,139 --> 01:49:17,199
+Misal solda bir doğru akımı oluşturan bir doğru gerilim kaynağı var.
+
+481
+01:49:17,939 --> 01:49:31,299
+Yani şunu demeye çalışıyorum, bir pil bağlamışız, 5 voltluk bir pil. Yani o 5 voltluk pil tabii zamanla içerisi azalacak, akımı değişecek vs. ama öyle düşünmeyin şu etapta. Hani ilk bağladığımız anı düşünün.
+
+482
+01:49:31,699 --> 01:49:46,179
+Burada DC akım dediğimiz şey aslında bu pilin her daim bu R direncine göre bana bir akım, belli bir stabil akım üretmesi, akımı oluşturması. Bu doğru akım.
+
+483
+01:49:46,979 --> 01:49:55,259
+Alternatif akım dediğimiz konsept ise tamamen farklı zaman düzleminde. Şurada şu kısım zaman düzlemi fark ettiyseniz.
+
+484
+01:49:57,747 --> 01:50:17,407
+Zaman düzleminde her bir zaman aralığında farklı bir akım değerinin elde edilmesi, tabii bu gerilim olarak lanse edilmiş ama akım da aynı şey zaten. Pardon, VT zaten akımı verecek, tamam. Buradaki her bir değişken değer benim alternatif akımımı oluşturuyor.
+
+485
+01:50:18,292 --> 01:50:35,872
+Yani alternatif akım dediğimiz şey bizim şu an şebeke dediğimiz o prizlerdeki akım olurken doğru akım daha çok batarya gibi depolaması kolay olan sistemlerdeki akım oluşturuyor.
+
+486
+01:50:35,872 --> 01:50:40,292
+Tabii bu alternatif akımın avantajları var, dezavantajları var.
+
+487
+01:50:43,539 --> 01:50:50,420
+Vesaire vesaire pek çok araştırması var. Biz de alternatif akım konusunda biraz bahsedeceğiz avantajlarından.
+
+488
+01:50:51,920 --> 01:51:03,239
+Ama en büyük avantajı doğru akıma nispeten alternatif akımın uzak bölgelere elektriğin taşınması çok çok daha kolay alternatif akımda.
+
+489
+01:51:04,600 --> 01:51:08,039
+Yani hep derler ya elektriğin babası Tesla mı Edison mu?
+
+490
+01:51:08,467 --> 01:51:18,967
+Şimdi burada Tesla'nın getirdiği yenilik aslında şu. Alternatif akımı kontrol edebilme yetisinden dolayı Tesla elektriğin babasıdır.
+
+491
+01:51:20,287 --> 01:51:28,127
+Ama tabii Edison da doğru akımla yani ampul örneğinde olduğu gibi bir doğru akımla elektrik deneyleri yapmış.
+
+492
+01:51:28,887 --> 01:51:34,228
+Ama alternatif akım bir çığır açan şeydir elektrikten.
+
+493
+01:51:36,724 --> 01:51:42,644
+Bundan sonra değineceğiz alternatif bakıma daha detaylıca. Şu an sadece aradaki farkı bilelim.
+
+494
+01:51:45,623 --> 01:52:02,524
+Volt nedir peki? Volta bakacak olursak normalde Ohm kanununda bir formülü var devrede kullanacağımız ama işin özünde hani fiziğine bakacak olursak volt dediğimiz şey yükün, bir adet yükün çıkarttığı enerjidir.
+
+495
+01:52:03,859 --> 01:52:09,999
+Yani yükteki değişimin enerjiyi de oluşturduğu değişimin birimidir.
+
+496
+01:52:11,999 --> 01:52:28,939
+Yani örnek verelim, yani çok tabiri caiz olur mu bilmiyorum ama, yani enerji ne kadar yüksek çıkıyorsa bir yük değişiminde gerilim o kadar yüksek olmuş oluyor.
+
+497
+01:52:29,684 --> 01:52:39,284
+Neyse örnek vermeyelim, çünkü yanlış bir örnek olabilir o. Enerjiden dolayı bir örnek vermek istiyordum ama ona çok değinmeyelim.
+
+498
+01:52:39,564 --> 01:52:47,083
+Maksat anlaşıldı herhalde. Bir yükteki değişimin oluşturduğu enerji farkı bizim için bir gerilim birimidir.
+
+499
+01:52:48,024 --> 01:52:55,963
+Şimdi tabii bir de güç dediğimiz tabir var. Güç normalde, hani bildiğimiz fizikte nedir?
+
+500
+01:52:59,060 --> 01:53:20,200
+Gerilimin tam tanımı şu, gerilimin tam tanımı, yükteki değişimin oluşturduğu enerjideki değişim. Bunun oranı, yani bu aradaki birbirine oranı, yani 5 konopluk bir yük değişimine ne kadar enerji değişimi oldu, bu bizim için volt dilimi oluşturuyor.
+
+501
+01:53:22,323 --> 01:53:31,463
+Normalde güç dediğimiz şey fizikten neydi? Birim zamanda yapılan enerji, yani birim zamandaki enerjiye biz güçlüyoruz.
+
+502
+01:53:31,724 --> 01:53:41,604
+Oluşan enerjiye güçlüyoruz. Böyleydi. Burada da aslında birim zamandaki enerji değişimi olarak yorumlayacağız biz gücü.
+
+503
+01:53:42,579 --> 01:53:55,539
+Bunu biraz daha açarsak, ben şu kısmı hatırlarsanız bir önceki sunumda V olarak, yani yükteki değişimin, enerjideki değişimi oranı benim için potansiyel fark dediğim gerilimi veriyordu.
+
+504
+01:53:56,699 --> 01:54:04,859
+Daha önceden de şunu söylemiştim, zamandaki değişimi, zaman boyutundaki yüklerin değişimi bana akımı veriyordu.
+
+505
+01:54:05,819 --> 01:54:07,399
+Akım dediğimiz tabiri veriyordu.
+
+506
+01:54:07,823 --> 01:54:18,863
+Ben bunu, bu formülü bile dipek edersem, yani çıkarırsam içinden bunları, bu iki formülü zaten birleştirdiğimde, şunlar gittiğimde şunu veriyor görürseniz.
+
+507
+01:54:18,863 --> 01:54:28,264
+Yani aslında bizim fizikten öğrendiğimiz birim zamandaki çıkan enerji güçü veriyorsa, V çarpı İ de güçü verecek.
+
+508
+01:54:34,100 --> 01:54:52,640
+Bu enerji bağımında analiz etmeyeceğiz. Tamam edilebilir, verilirse o bilgiler buradan da güç bulunabilir ama biz genelde gücü gerilim ve akım bağlı formülle hesaplayacağız. O da nereden geliyor? Gerilimi ben biliyorum neydi?
+
+509
+01:54:53,420 --> 01:54:59,020
+Dv bölü Dq yani yüklerdeki değişimin çıkardığı enerjideki değişim farklılıklarıydı.
+
+510
+01:55:00,148 --> 01:55:15,488
+İ ise, yani akımda neydi? Türevlerini aldığımızda, zamandaki değişimin yüklerdeki değişim, yani yüklerdeki değişimin gözlemlemesi zamanı gözleminde, yani T türevinde yükün türevini almaktı.
+
+511
+01:55:23,279 --> 01:55:29,639
+çıkartabiliriz. Biz de formüllerimizde V çarpı İ'yi genelde kullanacağız. Bu V çarpı İ'nin nereden geldiğini,
+
+512
+01:55:32,919 --> 01:55:42,979
+elektromotor kuvveti aslında burada bir yükün hareket edebilmesi, yani bir, yani bu yüklenme Q dediğimiz şey vardı ya,
+
+513
+01:55:43,439 --> 01:55:48,139
+bu Q'ların hareket edebilmesini sağlayan güç demek elektromotor kuvveti.
+
+514
+01:55:54,868 --> 01:56:00,087
+V çarpı i'nin güç olduğunu bileceğiz yani uzun.
+
+515
+01:56:02,108 --> 01:56:09,528
+Bir de enerji konsepti var. Enerjiyi de fizikten yine hatırlarız. Enerji dediğimiz şeyde güçün zamanla çarpımıydı.
+
+516
+01:56:09,627 --> 01:56:13,747
+Yani tam tersiydi. Yani içler dışlar çarpımı yaptığımızda.
+
+517
+01:56:13,747 --> 01:56:22,688
+Bunun tersiydi. Burada da yine integralini alarak V çarpıyı veya P'yi integral bazında analiz ederek enerjiyi bulabiliyoruz.
+
+518
+01:56:24,212 --> 01:56:33,712
+Tabii integral ve türevi hazır bir bulmuşluk seviyeniz var diye direkt anlatmıyorum ama integral dediğim şey aslında kümülatif toplam demek.
+
+519
+01:56:34,492 --> 01:56:40,612
+Zaman düzleminde V çarpı İ'nin T1-T2 aralıklarında toplamı diye lanse edilir.
+
+520
+01:56:41,172 --> 01:56:45,412
+Şey neydi peki? Türev dediğimizde farkını almaktı hatırlarsanız.
+
+521
+01:56:51,315 --> 01:57:13,456
+Şimdi bir pozitif ve negatif güç durumu söz konusu. Şimdi devrelerde bir güç pozitif yani artı işaretli de olabilir, negatif eksi işaretli de olabilir. Bize bu iki bilgi verecek. Eğer ki güç pozitif işaretliyse bu bir devre elemanı tarafından tüketilen gücü gösterecek.
+
+522
+01:57:14,036 --> 01:57:19,516
+Misal örnek verelim, bir amperlikli devreden akan akıma bir adet direnç bağlanmış.
+
+523
+01:57:20,136 --> 01:57:28,636
+Ben biliyorum ki direnç bir gücü sömürecek. Çünkü direnç pasif devre elemanı, o gücü sömürmek için var.
+
+524
+01:57:29,976 --> 01:57:33,916
+Bu direnç gücü sömüreceği için bunun üzerinde bir güç birikecek.
+
+525
+01:57:34,868 --> 01:57:48,928
+Bu gücü ne kadar biriktiğini artı işaretiyle göstereceğiz biz. Artı neyse, işte mesela 1 amper, P eşittir, I çarpı V'den, 1 amper, 1 volttan 1 wattlık güç sömürüyor bu şu an.
+
+526
+01:57:50,308 --> 01:57:57,908
+Direnç olduğu için. Şimdi ileride de göreceğiz, bu sign'lar çok önemli.
+
+527
+01:58:03,060 --> 01:58:11,020
+Direkt hazır bu şekilde verilmişse eğer ve akım buradan geliyor, artıdan giriyorsa bu direnç sömüren bir dirençtir diyeceğiz.
+
+528
+01:58:12,420 --> 01:58:21,900
+Veya tam tersi, yani bu da da aslında artıdan giriyor. Normalde şunu biliyorum ki ben akım artıdan çıkarsa eğer bu bir kaynaktır.
+
+529
+01:58:22,840 --> 01:58:28,040
+Ama akım artıdan giriyorsa o girdiği şey o akımı sömürüyordur.
+
+530
+01:58:28,692 --> 01:58:44,671
+Böyle bağlantı kurabilirsiniz. Burada da direnç artıdan gelen bir akım olduğu için sömüren durumunda. Sömürdüğü için de artı işaretiyle gösteriyoruz. Bu pozitif güç anlamında.
+
+531
+01:58:46,292 --> 01:58:59,192
+Negatif güçte ise aslında sömülmüyor bu bir üretici anlamında. Şimdi bu direnç diye özellikle bilirmiyorum. Burada bir tane kırmızı bir şey var. Güç kaynağı diyelim.
+
+532
+01:58:59,872 --> 01:59:12,712
+Kırmızı güç kaynağının artısından çıktığı için bu akım, bu aslında sömülmüyor, üretiyor. Ama üretilen tam ters bir şekilde işaretlendirilir elektrik devrelerinde.
+
+533
+01:59:13,235 --> 01:59:21,456
+Eksi demek güçte üretilen gücü gösterir. Artı demek güç hesaplamalarında tüketilen gücü gösterir.
+
+534
+01:59:22,595 --> 01:59:26,515
+Tamam mı? Bu çok önemli bir nokta. Bunu tam oturtturalım.
+
+535
+01:59:28,135 --> 01:59:39,456
+Eğer ki kutuplaşmış bir mimaride akım artıdan giriyor ise o mimarideki o blok gücü tüketiyordur ve işareti artıdır.
+
+536
+01:59:40,148 --> 02:00:00,000
+Eğer ki artıdan çıkıyorsa akım, zaten normal olam da budur. Yani artıdan çıkması neden artıdan çıkıyor elektrik akımı? Çünkü elektronlar artıya doğru hareket ediyor. O zaman bu bir üreticidir artıdan çıkıyorsa. Üretici olduğu için de işareti eksi olacak. Bu aradaki...
+
+537
+02:00:00,000 --> 02:00:09,420
+Farkı şey yapalım, yani üreten artı demek değil. Bu hep karışıyor. Üreten birimler güçte eksiyle gösterilir.
+
+538
+02:00:12,948 --> 02:00:13,948
+Tamam herhalde.
+
+539
+02:00:16,168 --> 02:00:21,467
+Bunun aslında daha bilimsel açıklaması şu, İ çarpı V diyoruz.
+
+540
+02:00:21,547 --> 02:00:25,228
+Bu İ'deki akımın yönü şu an bu cisme göre eksi.
+
+541
+02:00:26,288 --> 02:00:30,948
+Eksi olduğu için aslında biz buraya eksi 1 çarpı 1 volt yazıyoruz.
+
+542
+02:00:31,408 --> 02:00:33,288
+Ve o nedenle buradaki eksilik geliyor.
+
+543
+02:00:34,268 --> 02:00:36,328
+Akımın yönü çıktığı için.
+
+544
+02:00:37,108 --> 02:00:39,408
+Eğer ki cisme, yani nesneye,
+
+545
+02:00:39,712 --> 02:00:56,712
+Devre elemanına akım girecek, yani artısından giriyor şekilliyse eğer onun işareti artı olarak akımın yönünden sevdilir. Bu nedenle üreticiler eksi güçle gösteriliyor.
+
+546
+02:00:59,092 --> 02:01:04,712
+Evet, bir kanun var demiştik. Bu kanun kaide, enerjinin korunumu kaidesi.
+
+547
+02:01:07,091 --> 02:01:14,531
+Bir devrede komponentler ne olursa olsun, şimdi bunlara X, Y, Z diyelim, çok önemli değil, içerinde ne var?
+
+548
+02:01:15,351 --> 02:01:23,471
+Üreticiler ve tüketiciler var sonuçta. Yani bir de enerjiyi üreten grup var, bir de bu enerjiyi tüketen bir denge söz konusu.
+
+549
+02:01:23,471 --> 02:01:28,771
+Ve devredeki enerjinin kurulumu kalunu bize şunu söyler.
+
+550
+02:01:29,811 --> 02:01:36,212
+Devre içerisinde bir kapalı çevrendeki enerjilerin toplamı sıfıra eşit olmak zorunda.
+
+551
+02:01:36,832 --> 02:01:41,072
+Bir saat, burası eksi 2 watt olarak yazılmış. Yani burası bir üretici değil mi?
+
+552
+02:01:42,952 --> 02:01:45,012
+Artı 3 watt yazılmış tüketici.
+
+553
+02:01:51,731 --> 02:02:04,971
+Burası ne olabilir? Soru bu. Şimdi baktığımızda burası bir kapalı çevrim olduğundan 3-5 daha 8, 8 wattlık bir tüketim ruhu var, bölümü var ama 2 wattlık bir üretim söz konusu.
+
+554
+02:02:05,652 --> 02:02:13,431
+Bunun da o zaman eksi 6 watt üretim yapan bir modül olması lazım ki enerjinin korunumu sağlansın.
+
+555
+02:02:15,011 --> 02:02:16,032
+Tamam mı?
+
+556
+02:02:18,612 --> 02:02:45,291
+Basit bir DC devre, yani doğru akım devresi. Nereden anladık doğru akım olduğunu? Şurada herhangi bir alternatif akımda şöyle gösterir söz konusu. Doğru akımda bir batarya modülü çizilir. Doğru akım modülünde neyimiz var? Bir voltluk bir gerilim kaynağımız var, bir ohmluk direncimiz var. Akımın yönünü ilk başta nasıl define ettik? Ben şunu biliyorum.
+
+557
+02:02:46,036 --> 02:02:52,135
+Akım her zaman elektronlar eksiye doğru ilerleyeceği için artıdan çıkacak.
+
+558
+02:02:52,496 --> 02:02:54,595
+Yani elektronların yönünün tersine çıkacak.
+
+559
+02:02:55,015 --> 02:02:56,655
+Bu yüzden akımın yönünü belirledim.
+
+560
+02:02:56,876 --> 02:02:58,815
+Bu tarafa doğru gidecek bir akım.
+
+561
+02:03:01,956 --> 02:03:05,675
+Ve bu akım giderken bu akımın birimi nelere bağlı?
+
+562
+02:03:06,015 --> 02:03:06,956
+Onu bir analiz edelim.
+
+563
+02:03:07,636 --> 02:03:34,155
+Bunun yanındaki hani bir yukarıda bir leğen olduğunu düşünün. Bir deliği var. Aşağıda da başka bir leğene akıyor. Buradaki deliğin boyutu artarsa akım daha çok artacak. Azalırsa daha seyrek akım akacak değil mi? Buradaki deliğin boyutu aslında şuradaki direncin değeridir. Bu direnç değeri ne kadar artarsa bu delik o kadar daralır.
+
+564
+02:03:34,804 --> 02:03:45,064
+Yani bir Ohm mu, On Ohm mu? On Ohm'un yapacağı şey, yani buradaki akım daha kısa, daha az akım akacak.
+
+565
+02:03:45,423 --> 02:03:51,564
+On Ohm'da. Peki buradaki gerilim neyi sağlıyor? Buradaki gerilim de şuradaki suyu sağlıyor.
+
+566
+02:03:51,644 --> 02:03:57,204
+Yani ne kadar çok su varsa burada o kadar hızlı akım akacak. Buradaki dirence sabit tutarsa.
+
+567
+02:03:59,636 --> 02:04:17,496
+Yani kayda tamamen bu. Bu ikisinin arasında bir trade-off var, bir çekişme var. Gerilimi arttırırsam akım artar, direnci düşürürsem akım artar, direnci arttırırsam akım azalır, gerilimi azaltırsam akım azalır.
+
+568
+02:04:18,376 --> 02:04:23,596
+Bunu şöyle dikenli yol gibidir gösterebilirsiniz. Bazı teoremler öyle yapıyor.
+
+569
+02:04:24,340 --> 02:04:42,600
+Mesela 1-10 daha az bir dikenli yol, 10-10, 110 neyse daha fazla bir dikenli yol. Ne kadar diken varsa o yolda o kadar daha zor geçişi olacaktır o yoldan bir kişinin gibi. Böyle bağlayabiliriz yani metaforu.
+
+570
+02:04:46,195 --> 02:05:01,996
+Bu bizi aslında 10 kanununa götürüyor. Zaten yani herhalde ösül sınava, üniversite sınavına hazırlanırken de bu tabiri çok görmüşsünüzdür fizikte.
+
+571
+02:05:02,420 --> 02:05:21,000
+V eşittir I çarpı R. Ana formülümüz bu. Yani biz ileride çok fazla teoremlere gideceğiz. Norton, Thevenin, süperpozisyon, başka not kanunu, KC'de, KV'de ama hepsinin temelinde aslında V eşittir I çarpı R'ye geçecek.
+
+572
+02:05:24,148 --> 02:05:32,047
+Tabi bu V eşitliği çarpı R sadece direnç olan devreler için biz ileride empedans hesaplaması yapacağız, alternatif akımlara gireceğiz vs.
+
+573
+02:05:32,307 --> 02:05:40,007
+Ama neticede R yerine Z olacak veya işte I'nın yerine kondos 4'deki akımın hesabı olacak vs.
+
+574
+02:05:40,248 --> 02:05:42,568
+Ama formülümüz bu ya temel.
+
+575
+02:05:43,528 --> 02:05:45,127
+Neyi söylüyor bize bu?
+
+576
+02:05:45,667 --> 02:05:48,087
+Gerilim eşittir akım çarpı direnç.
+
+577
+02:05:48,564 --> 02:05:52,963
+Direnç artarsa, gerilim sabitse demek ki akımım düşüyor.
+
+578
+02:05:53,804 --> 02:05:59,724
+Değil mi? Direnç artarsa, akım artarsa gerilim de artacağını söylüyorum.
+
+579
+02:06:01,664 --> 02:06:07,184
+Neden? Çünkü direnç artması demek üzerine toplayacağı gerilimi daha da yükseltecek.
+
+580
+02:06:07,744 --> 02:06:12,804
+Direnci üzerine toplanan gerilim üretici ile eşitlenmesi lazım güç anlamında.
+
+581
+02:06:13,064 --> 02:06:14,923
+O zaman üreticinin de gerilim artması lazım.
+
+582
+02:06:16,979 --> 02:06:22,099
+Burada bir örnek var. Mesela 2 ohmluk bir direnç var ve üzerinden 2 amper geçerse diyor.
+
+583
+02:06:23,139 --> 02:06:25,879
+Şurada bir nokta, burada da bir noktamız var.
+
+584
+02:06:26,459 --> 02:06:32,799
+Burada eğer x volt varsa, bunun öncesinde x artı 4 volt olmalı.
+
+585
+02:06:32,799 --> 02:06:42,479
+Neden? Çünkü 2 çarpı 2'den bu direncin üzerine 4 voltluk bir sönümlendirme, bir sömürüme söz konusu yaşayacak.
+
+586
+02:06:43,299 --> 02:06:44,699
+Ve eşitliği çarpı R'den.
+
+587
+02:06:46,420 --> 02:06:58,960
+Bu yüzden x artı 4 voltluk öncesinde 4'ünü burada sömürecek bu direnç. Nasıl? I çarpı R'yi de sömürecek. Sonra geriye benim x kadar voltum kalmış olacak.
+
+588
+02:07:05,363 --> 02:07:19,723
+Buralar zaten o genel kabul göreceğimiz kurallar var demiş. Neydi bir tanesi? Kablonun her yerinde aynı gerilimin olduğunu savunacağız. Burada onu izah etmişiz. Soruları da bu şekilde yapacağız.
+
+589
+02:07:22,663 --> 02:07:28,623
+Burada da yine aynı deminki gibi normalde V1 voltluk ve V1 ohmluk direnç var.
+
+590
+02:07:29,043 --> 02:07:42,083
+Normalde bunun üzerindeki kalacak olan 1 volt sönümlenecek. Öncesinde ne varsa X, burada da X kalacak. 1 voltu bunun üzerinde sönümlendirdiği için.
+
+591
+02:07:44,844 --> 02:07:55,423
+Hocam benim burada bir sorum olacak. 1 volt azalıyor ya, orada bir enerji kaybı söz konusu değil mi? Enerjinin koruması yasasına ters değil mi?
+
+592
+02:07:56,148 --> 02:07:58,148
+Enerji yok mu oluyor? Ne oluyor?
+
+593
+02:07:58,887 --> 02:08:18,507
+Enerji direncin üzerinde sönümleniyor. Yani burada enerjisi ne olacak bunun? İ çarpı V'den 1 volt, 1 ohm, şey 1 amperlik akım geçtiğini düşünelim. Burada sönümlendirdiği için bu artı 1 watt olacak değil mi? Burada 1 wattlık bir enerji sönümlenmesi söz konusu.
+
+594
+02:08:18,880 --> 02:08:29,859
+Burada da bir wattlık bir üretim söz konusu. X burada zaten sıfır şu an. Yani burada şu etapta ürettiğin hepsini bu tüketiyor.
+
+595
+02:08:32,819 --> 02:08:35,140
+Soruları bile miydi? Anlayamadım. Tamam mı?
+
+596
+02:08:36,260 --> 02:08:44,680
+Yok, tamam. Buna yakın da. Mesela bir ışık kaynağı gibi mi o zaman? Işık mesela ampul bırakırsak oraya, bir voltu tüketir, sıfıra gider.
+
+597
+02:08:45,460 --> 02:08:47,100
+Buna benzer bir durum oluyor.
+
+598
+02:08:47,480 --> 02:08:52,439
+Buraya bir ampul takarsak ampulün yanması için verilen watt bir wattlık olur.
+
+599
+02:08:53,300 --> 02:08:58,260
+Yani tüketir derken şu değil, bu beslediği sürece bir wattı da bu tüketecek.
+
+600
+02:08:58,720 --> 02:09:02,340
+Bu beslemeyi kestiği anda sıfır watt'a dönecek, ampul sönecek.
+
+601
+02:09:02,760 --> 02:09:07,680
+Ama beslediği sürece, bir watt'ı ürettiği sürece bir wattlık ampul yanmaya devam edecek.
+
+602
+02:09:12,148 --> 02:09:30,627
+Yani tam anlayamadım ama herhalde böyle bir soruyu sorduk. Yani normalde ürettiğimiz gerilime bağlı olarak üretilen gücü, enerjiyi bizim devredeki pasif eleman sömürecek. Eşitlik böyle.
+
+603
+02:09:33,747 --> 02:09:37,568
+Yani ampulle direnç aynı mı hocam? Aynı işlemi görüyor.
+
+604
+02:09:37,568 --> 02:09:54,427
+Ampul dediğim şey zaten, eğer ki LED ampulden bahsetmiyor birsek, ampul dediğimiz baltlar, eski tip yuvarlak ampuller, içerisinde zaten bir direncin olduğu bir birimdir.
+
+605
+02:09:56,747 --> 02:10:00,000
+Enerji neye dönüşüyor? Enerji orada gene...
+
+606
+02:10:00,000 --> 02:10:10,840
+Aynı şekilde o direncin üzerinde sünümleniyor ama direncin etkisi, orada özel bir direnç var, ısıya dönüşüyor, ısı ışığa dönüşüyor, ışık enerjisiymiş gibi bize yansıyor.
+
+607
+02:10:10,840 --> 02:10:19,819
+Orada bir enerji dönüşümü var ama konsept şu, bir wattlık enerjiyi tüketen şey, bu öyle bir ampul devresinde ampuldür.
+
+608
+02:10:20,340 --> 02:10:46,660
+Onun dışında tabii şimdi biz gündelik biz teorik olarak çalışıyoruz da burada. Tabii kablolar bir vatı tüketmiyor direkt. Yani kablolar işte kablonun uzunluğu, işte tesisatın duvar içerisindeki izolasyonu vesaire. Hani pek çok etmen var. Ama biz teoride şunu diyeceğiz. Bu kablonun her tarafında bir sünüm yok, yani bir enerji yok. Kablonun bir rezitif etkisi yok. Rezitif etkiye sahip olan dirençtir.
+
+609
+02:10:47,252 --> 02:11:04,472
+Ne kullanıldıysa kaç adet ve işte üç tane, bir tane de burada kullanmış olalım isten. Burada ürettiğim şey, bu artı bu iki tanesinde üzerindeki gerilim 10 derecesine yani direncin değerine göre sönümlenecek.
+
+610
+02:11:07,028 --> 02:11:21,208
+Burada işte bir wattlık bir üretim varsa, eksiyle gösteriyoruz üretim olduğu için. Burada işte 0,5 wattı tüketiliyorsa, burada da diğer 0,5 wattı tüketilmek zorunda diyeceğiz.
+
+611
+02:11:22,568 --> 02:11:26,728
+Zaten hatırlarsanız üniversitesinde hazırlık sorularında.
+
+612
+02:11:27,188 --> 02:11:41,248
+Hangi ampul daha fazla yanar mı? Daha güçlü yanar, daha uzun yanar mı? Tarzı sorular vardı. Bilmem ben öyle hatırlıyorum. Bizim zamanımızda vardı en azından. Eski dönem belki sizde yoktu. Tam hatırlamıyorum ama.
+
+613
+02:11:41,248 --> 02:11:45,808
+Burada da işte amaç şuydu aslında o sorularda. Seri olduğu durumlarda.
+
+614
+02:11:46,256 --> 02:12:02,516
+Buradaki enerjiyi ortaklaşa sömürecekleri için daha az parlaklıkta ampul yanacak. Yani daha az üzerinde enerji birikecek ki o enerji aslında ışık enerjisi olarak bize kullanılan direncin özelliğinden dolayı o şekilde yansıyor.
+
+615
+02:12:03,516 --> 02:12:09,356
+İşte paralel bağlasaydık ne olurdu vesaire bunları analiz edeceğiz ama hani mantık şu.
+
+616
+02:12:10,131 --> 02:12:16,971
+Enerjinin korunum, yani enerjilerin eşitlenmesi, sıfıra eşitlenmesi, kaydesi bazında analiz edeceğiz hepsini.
+
+617
+02:12:21,460 --> 02:12:24,019
+Herhalde tamam mıdır arkadaşlar?
+
+618
+02:12:25,380 --> 02:12:26,220
+Anlaşıldı hocam.
+
+619
+02:12:28,679 --> 02:12:38,239
+Burada da bir genede bağladığımızda, genede olan uçlar sıfır, üst taraf 1 volt olacak şekilde olacak.
+
+620
+02:12:38,399 --> 02:12:46,939
+Neden? Çünkü şu tarafı zaten sömürecek, o volt bunun üzerine biriktirecek ve genede de sıfıra verdiği için sıfır volt olacak bu tarafı.
+
+621
+02:12:48,564 --> 02:12:51,064
+Bu tarz soruları zaten çözeceğiz çokça.
+
+622
+02:12:51,864 --> 02:12:57,444
+İşte bu misal bir closed loop değil, yani bir kapalı devre sorusu değil zaten belli yani.
+
+623
+02:12:57,444 --> 02:13:00,144
+Burada gene de olduğu için 0 volt olacak.
+
+624
+02:13:00,804 --> 02:13:08,644
+Buralar bağlanmadığı için, yani şurayı direkt ölçerseniz, şimdi 1 volt deniyor ama, ölçü aleti dediğim bir şey şöyle bir yapı.
+
+625
+02:13:09,144 --> 02:13:10,344
+Bir tane skalası var.
+
+626
+02:13:12,307 --> 02:13:30,728
+Buraya bunu bağladınız, öteki ucu da gene diye bağlamak zorundasınız. Yani bir referans noktası alması lazım. Yani aslında şuradaki 1 volt ölçü haleti üzerinden bizim debreyi tamamlıyor. O yüzden 1 volt okuyabiliyoruz. Yoksa açık debre diye 1 voltu normalde okuyamazsınız.
+
+627
+02:13:32,728 --> 02:13:38,887
+Bu tarafta ise yine aynı şekilde ölçü haletine bağladığınızda 0 volt olduğu için 0 volt değeri okunacak.
+
+628
+02:13:41,684 --> 02:13:53,224
+Başka bir örnekte, yine bu ölçü aletinin üzerinden göstereceğimiz için bir volt değeri okunacak, diğer tarafta bir değer okunmayacak diyeceğiz.
+
+629
+02:13:56,787 --> 02:14:12,787
+Şimdi bu pozitif ve negatif akımlarla alakalı demin gerilimlere baktık. Neydi? Pozitif gerilimler bizim için bir tüketiciydi. Negatif güçler ise bizim için bir üreticiydi.
+
+630
+02:14:13,747 --> 02:14:40,987
+Şimdi burada volt ve gerilimde de bir pozitif negatif söz konusu var. Aslında bu voltta daha çok oturuyor kafalarda ama gerilimde biraz sıkıntı yaşıyoruz. Voltlar şunu söyleyecek bize, bir pili ters takmak demek aslında eksi 9 volt vermek demektir değil mi? Yani o anlamlı bir yapıda kullanacağız. Misal burası artı eksi 2 volt, yani bu şekilde bağlandığında 2 voltsa ben bunu ters çevirdiğimde eksi 2 volt etkisi yaratacağım.
+
+631
+02:14:41,395 --> 02:15:01,975
+Bu da şu yüzden aslında. Normalde akım böyle gidecek değil mi? Devreyi, hatta şuraya bir direnç koyalım. Böyle akmasını istiyorum. Bu 2 volta tekabül geliyor. Ama ben yine direnci böyle koydum. Bu sefer akım böyle gidecek. Böyle gittiği için tersten şuraya bir ölçü aleti koyduğumu düşünelim.
+
+632
+02:15:04,243 --> 02:15:17,804
+Voltmetre koydum. Yani ölçü değeri, gerilimi ölçeceğim ya. Voltmetre koydum. Akım böyle aktığı için voltmetre problarından, bunun da sonuçta bir yönü var. Böyle bağladığımızı düşünelim.
+
+633
+02:15:18,184 --> 02:15:30,384
+Buradan okuduğum değer ile aynı şekilde ben voltmetreyi buraya bağladığımda ölçeceğim değerler tam zıt olduğundan dolayı eksi iki ölçüyoruz.
+
+634
+02:15:31,952 --> 02:15:35,791
+Bir gerilimin eksi olması, ters bağlanması demek bu.
+
+635
+02:15:38,091 --> 02:15:42,631
+Bir amper veya akım için de aynı şey söz konusu zaten.
+
+636
+02:15:43,131 --> 02:15:57,192
+Yani akımını ölçeceğim bir sistemde, bir de ona da değinelim, gerilimi ölçmek arkadaşlar, ölçülecek olan devre elemanının üzerine paralel olarak girilmesi gerekiyor.
+
+637
+02:15:57,876 --> 02:16:08,336
+Şu an misal ben şu direncin üzerindeki gerilimi ölçeceğim. Buna paralel bir şekilde giriyorum. Akımda ise devreye seri olarak girmem lazım.
+
+638
+02:16:08,336 --> 02:16:14,756
+Mesela şöyle bir akım kaynağı koydum. Akım ölçü aleti koydum. Ampermetre.
+
+639
+02:16:17,684 --> 02:16:26,164
+Burada ölçtüğüm değer ile şuraya aynı şekilde bir düzenekte ampermetre koyduğumda ölçtüğüm değer birbirinin zıttı olacak.
+
+640
+02:16:26,744 --> 02:16:35,103
+Çünkü akımın yönü ters. Bunları ileride çok sıkça çözeceğiz. Akımın yönünü neye göre tayin ediyoruz vesaire.
+
+641
+02:16:35,103 --> 02:16:44,984
+Ben şu an diyorum ama belki oturmuyor. İleride oturacak. Çünkü akım aslında burada gerilim kaynağındaki artı eksisine göre belirlenecek bir yapı.
+
+642
+02:16:50,227 --> 02:16:55,367
+Tekrardan gücü belirtmek gerekirse P eşittir V çarpı I'dı formülümüz.
+
+643
+02:16:57,367 --> 02:17:09,887
+Birimimiz vattı ve her daim diyorduk ki eğer ki bir devre elemanının kutuplanmış uçlarında artıdan giriyorsa akım,
+
+644
+02:17:10,708 --> 02:17:19,548
+Ki bu ters bir şey. Yani normalde üretici dediğimiz şey, elektrik akımını üreten şeyin artıdan akıma çıkması lazım.
+
+645
+02:17:19,924 --> 02:17:44,204
+Eksiden girecek, artıdan çıkacak. Bu üretmek demek. Ama tüketenler için artıdan akımın girmesi durumlu söz konusu. Bu tüketen demek. Tüketen devre elemanlarında gücümüz bizim artı ile gösterilecek. Üretenlerde gücümüz eksi P watt yazalım. Bu da artı P watt derecesinde bir değerde gösterilecek.
+
+646
+02:17:52,084 --> 02:18:14,164
+Bu da tekrardan belirttik. Bir örnek soru var. Bir kere zaten formülümüz V'ye eşittir I çarpı R idi. Vır diye de tabir ettiğimiz V'miz 10 voltken 4 çarpı 10 üzeri 3, ki de 10 olduğu için bir 10 birimimiz var.
+
+647
+02:18:14,772 --> 02:18:27,412
+çarpı I diyeceğiz. Buradan I'yı çekersek, 10 bölü 4000'den I'mız 2,5 çarpı 10 üzeri eksi 3 gelecek değil mi?
+
+648
+02:18:27,412 --> 02:18:37,312
+10 üzeri 3, eksi 3 gelecek, bu da 2,5'tan. 10 üzeri eksi 3'ten, bu da I eşittir 2,5 mA şeklinde bulacağımız bir soru.
+
+649
+02:18:38,195 --> 02:19:03,155
+Tamam, bunu buldum. Yönümü nasıl bulacağım? Zaten sonra bana polarizasyon verilmiş, enerji kaynağı için, güç kaynağı için. Bu polarizasyona göre ben akımım böyle hareket ediyor diyorum. Böyle hareket ediyor ama sömüren bir devre elemanı var, direnç. Sömürdüğü için bu. Çünkü sömürülmesi lazım, başka devre elemanı yok devrede.
+
+650
+02:19:03,603 --> 02:19:18,283
+Burada ürettiğim güç sömürülecek, burada sömürülecek. Bunun polarizasyonu böyle olacak diyeceğim. Neden bunu dedim? Çünkü sömüren cisimler de akım artıdan girer, eksiden çıkar kaydesiyle.
+
+651
+02:19:18,283 --> 02:19:26,343
+Bu polarizasyonu şimdiden göstermemdeki neden şu, bunu iyice bir irdeleyelim.
+
+652
+02:19:26,995 --> 02:19:34,935
+Eğer ki devre elemanı sömüren devre elemanıysa akım artıdan gidip eksiden çıkacak.
+
+653
+02:19:35,135 --> 02:19:38,536
+Üreten E devre elemanıysa akım artıdan çıkıp eksideye gelecek.
+
+654
+02:19:39,955 --> 02:19:42,975
+Bunun gücünü de hesaplayalım isterseniz.
+
+655
+02:19:43,376 --> 02:19:45,595
+Üreten ve tüketen watt cinsinden.
+
+656
+02:19:46,075 --> 02:19:47,835
+P eştir, V çarpı, I'dan.
+
+657
+02:19:48,208 --> 02:20:05,847
+10 çarpı 2.5 çarpı 10 üzeri eksi 3 dersek ne olur? 101 watt mı? Yok pardon 25 mili watt diyelim. 25 mili watt üretiyor.
+
+658
+02:20:06,788 --> 02:20:13,427
+Aynı şekilde bu da 25 mili wattı tüketmek zorunda. Tabi bu ürettiği için eksi. Bu da 25.
+
+659
+02:20:14,324 --> 02:20:17,164
+Minibat'ı tükettiği için artı.
+
+660
+02:20:18,664 --> 02:20:19,324
+Diyeceğiz.
+
+661
+02:20:22,184 --> 02:20:24,044
+Tamam mıyız arkadaşlar?
+
+662
+02:20:24,424 --> 02:20:27,544
+Yani bu zamanla çok soru çözeceğiz derste, oturacaktır ama
+
+663
+02:20:27,544 --> 02:20:32,484
+yani şimdilik yine sorunuz var.
+
+664
+02:20:32,504 --> 02:20:33,424
+Hocam bir şey sorabilir miyim?
+
+665
+02:20:33,744 --> 02:20:34,024
+Evet.
+
+666
+02:20:35,064 --> 02:20:37,564
+Ay yerine 4x3 yazdınız ya.
+
+667
+02:20:38,384 --> 02:20:39,443
+Bakayım bir dakika.
+
+668
+02:20:40,000 --> 02:20:43,139
+R'ye yerine, pardon R'ye yerine.
+
+669
+02:20:43,279 --> 02:20:44,239
+R'ye yerine, evet.
+
+670
+02:20:45,899 --> 02:20:48,639
+10 üzeri 3 değil mi hocam o? 10 üzeri 3 değil.
+
+671
+02:20:48,879 --> 02:20:51,319
+Yok, bu 3. Eksi yok orada ya.
+
+672
+02:20:54,099 --> 02:20:55,239
+10 üzeri 3 bu.
+
+673
+02:20:55,919 --> 02:21:03,759
+Eksi 3 şuradan geliyor, şu hani 4 çarpı 10 üzeri 3'den 10 üzeri 3 yukarı eksi 3 şeklinde çıkacak ya.
+
+674
+02:21:04,399 --> 02:21:06,279
+Eksi 2 olmuyor mu o zaman?
+
+675
+02:21:07,028 --> 02:21:17,148
+Yok, iki buçuk yazdım ya. Eğer yirmi beş yazsaydım, o üzeri eksi iki derdim. Pardon, pardon, iki şey, sıfır yirmi beş yazsaydım, o üzeri eksi iki derdim.
+
+676
+02:21:22,036 --> 02:21:25,755
+Tamam mıyız? Sorumuz var mı arkadaşlar?
+
+677
+02:21:29,523 --> 02:21:36,304
+Sorumuz yok ise eğer bugünlük bu kadar yapsak kafidir diye düşünüyorum.
+
+678
+02:21:36,304 --> 02:21:40,063
+Hocam bir şey, önceki slide de geri dönebilir misiniz?
+
+679
+02:21:40,463 --> 02:21:40,943
+Demiyorum.
+
+680
+02:21:41,644 --> 02:21:46,503
+Burada, generate, tamam. Bunu yazacaktım, hızlı geçtiğiniz yazan.
+
+681
+02:21:49,183 --> 02:21:51,304
+Şimdi burada şuna da değinelim.
+
+682
+02:21:52,223 --> 02:21:55,703
+Generate power dediğimiz şeyler, independent.
+
+683
+02:21:59,219 --> 02:22:06,139
+Power Source, şey, Voltaj, Sourceler olabilir.
+
+684
+02:22:08,099 --> 02:22:12,599
+Dependent, Voltaj Sourceler olabilir.
+
+685
+02:22:13,159 --> 02:22:14,739
+Veya Current Sourceler olabilir.
+
+686
+02:22:16,239 --> 02:22:17,779
+Generate Power'lar bunlar olabilir.
+
+687
+02:22:18,059 --> 02:22:19,299
+Şimdi burada bir sıkıntı yok.
+
+688
+02:22:19,299 --> 02:22:21,579
+Hatta ve hatta, ileride göreceğiz.
+
+689
+02:22:22,079 --> 02:22:23,019
+Condensator,
+
+690
+02:22:25,492 --> 02:22:36,211
+Ve bobinde bir tık, bir süre yani generic power olabilecek, göreceğiz. Absorb da, işte burada en büyük sıkıntı yaşıyor.
+
+691
+02:22:36,211 --> 02:22:48,112
+Şu, bir, zaten dirençler tamam, absorb yani üretilen enerji, gücü, absorb eden devre elemanı, direnç kesin, evet.
+
+692
+02:22:50,291 --> 02:22:52,631
+Ve kondansatör de böyle.
+
+693
+02:22:53,371 --> 02:23:01,771
+Ama yeri geldiğinde independent ve dependent
+
+694
+02:23:08,435 --> 02:23:12,416
+Akım kaynağı ve gerilim kaynağı da absorb yapabilir arkadaşlar.
+
+695
+02:23:13,155 --> 02:23:16,216
+Yani şunu örnek gösterelim, ters bağlamak.
+
+696
+02:23:16,216 --> 02:23:21,236
+Yani siz işte bakalım şöyle bir devre yapalım.
+
+697
+02:23:27,603 --> 02:23:36,484
+Artı, eksi, artı, eksi, eksi, artı, artı, eksi diyelim. Böyle bir işaretlenme yapılmış. Soru bu şekilde.
+
+698
+02:23:37,083 --> 02:23:47,824
+Şimdi akımı da şöyle çizmişiz, I diye. Şimdi baktığımda bu akım yönüne göre bunlar generate ediyor değil mi? Çünkü artıdan çıkıyor.
+
+699
+02:23:49,443 --> 02:23:54,103
+Bu absorb ediyor, artıdan, şunu ters yapmışız yani.
+
+700
+02:23:55,123 --> 02:24:15,144
+Artıdan giriyor, direnç, absorb ediyor. Bu da absorb ediyor. Çünkü akımın yönünde bir zıtlık söz konusu. Anlatabildim mi burada? Hatta ve hatta bazı durumlarda direnç bile burada.
+
+701
+02:24:17,203 --> 02:24:25,664
+generate edebilir. Neye? Çünkü daha öncesinden yüklenmiş, daha güçlü bir gerilim kaynağı da polarize olmuş olabilir.
+
+702
+02:24:27,364 --> 02:24:33,923
+Yani neticede bunu daha çok irdeleyeceğiz ileride ama şu etapta bu artı eksilerin çok kritik önemi var.
+
+703
+02:24:34,664 --> 02:24:40,783
+Neden? Akımın yönü için bir, iki, absorb mi, generate mi? Bunu belirleyen şey olduğu için.
+
+704
+02:24:43,156 --> 02:24:44,896
+Tamam arkadaşlar.
+
+705
+02:24:47,296 --> 02:24:49,816
+Tamamsak, sorumuz var mı?
+
+706
+02:24:57,492 --> 02:25:04,871
+Yoksa arkadaşlar, katılımlarınız için teşekkür ettim. Hepinize iyi dersler diliyorum, iyi günler diliyorum.
+
+707
+02:25:05,272 --> 02:25:05,992
+İyi günler hocam.
+
+708
+02:25:06,231 --> 02:25:07,352
+Laf oku yok.
+
+709
+02:25:07,492 --> 02:25:08,211
+İyi günler hocam.
+
+710
+02:25:08,452 --> 02:25:13,352
+Haftaya da olmayacak muhtemelen. Ondan sonraki hafta için bu yılları takip edeceksiniz.
