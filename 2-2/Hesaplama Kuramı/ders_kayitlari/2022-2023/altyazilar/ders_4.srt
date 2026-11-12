@@ -1,0 +1,3547 @@
+1
+00:11:19,028 --> 00:11:21,148
+Arkadaşlar, günaydın. Sesim geliyor mu?
+
+2
+00:11:25,235 --> 00:11:29,176
+Peki.
+
+3
+00:11:43,860 --> 00:11:46,200
+Paylaşım yapayım, ekran paylaşımı.
+
+4
+00:11:53,716 --> 00:12:00,836
+Geçen hafta Non-Deterministic Finite Automata konusunu görmüştük.
+
+5
+00:12:03,956 --> 00:12:15,796
+Bunlar standart DFA, Deterministic Finite Automata'dan nasıl farklılaşıyor?
+
+6
+00:12:20,307 --> 00:12:36,408
+State'deyken, aynı sembolü okuduğunuzda, birden fazla yeni State'de geçebiliyorsunuz.
+
+7
+00:12:36,408 --> 00:12:46,288
+Yani, A sembolü okunmuş bu örnekte. Hem Q1'e geçiyor makine, hem de Q3'e geçiyor.
+
+8
+00:12:48,563 --> 00:12:54,423
+Bu aslında paralel çalışan bir makineye dönüşüyor.
+
+9
+00:12:55,503 --> 00:13:01,603
+Veya şöyle de düşünebilirsiniz. Paralel çalışan iki tane makine oluşuyor.
+
+10
+00:13:06,868 --> 00:13:19,848
+Üst dal artık ayrı bir hesaplama dalı, hesaplama yolu veyahut alt dal ise ayrı bir hesaplama dalı olmuş oluyor.
+
+11
+00:13:34,644 --> 00:13:37,823
+NFA, o girişi kabul etti diyoruz.
+
+12
+00:13:39,803 --> 00:13:41,963
+Herhangi birinin kabul etmesi yeterli.
+
+13
+00:13:44,484 --> 00:13:45,823
+Buradaki örnekteki gibi.
+
+14
+00:13:54,131 --> 00:13:56,692
+NFA'lerde başka farklılık.
+
+15
+00:14:02,100 --> 00:14:28,920
+Null Transition ya da Epsilon Transition dediğimiz şu Epsilon ile genelde gösterdiğimiz şey var. Transition'lar, geçişler var. Null Transition, DFA'lar da yok, NFA'lar da var. Hiçbir şey okumadan direkt state'in değişmesini sağlıyor.
+
+16
+00:14:29,296 --> 00:14:45,756
+Yani, diyelim ki şurada başladınız, Q0'da. A sembolünü okudunuz, scan ettiniz, Q1'e geçtiniz. Şimdi anında Q2'ye geçiyor sistem.
+
+17
+00:14:49,427 --> 00:15:09,528
+Burada da yine esasen paralel makine mantığı burada da var. Çünkü sistem Q2'ye geçtiğinde Q1 hala aktif oluyor. Bir nevi, bu şey gibi düşünün, yine makine burada kendini replike ediyor, ikiye ayrılıyor.
+
+18
+00:15:14,515 --> 00:15:31,816
+İki ayrı makine var şu anda. Biri Q1'de, biri Q2'de. Sonra A tekrar okunduğunda şu A, Q2, Q3'e geçiyor. Bu Q1 ne oluyor? Aktifti.
+
+19
+00:15:40,724 --> 00:15:42,584
+hesaplaması duruyor.
+
+20
+00:15:43,984 --> 00:15:47,444
+Yani o makine duruyor artık veya ölüyor diyebiliriz.
+
+21
+00:15:51,824 --> 00:16:05,284
+Bu örnekte. Ama başka örneklerde öyle durumlar olabilir ki Q1 de A'yı alıyor olabilir. O zaman Q1'den de o hesaplama yolunun devam ettiğini düşünüp
+
+22
+00:16:05,716 --> 00:16:09,155
+neler olacağını düşünmeniz gerekiyor.
+
+23
+00:16:13,779 --> 00:16:17,319
+Bir başka farklılık DFA'lere göre, NFA'lerin.
+
+24
+00:16:21,079 --> 00:16:28,539
+Her state'in, her sembolde nereye gittiğini göstermek zorunda değiliz.
+
+25
+00:16:28,639 --> 00:16:37,859
+Örneğin burada Q1, A gelirse ne olacak onu göstermemişiz.
+
+26
+00:16:40,240 --> 00:16:43,860
+A gelirse ne yapacak onu göstermemişiz.
+
+27
+00:16:44,740 --> 00:16:48,120
+Göstermezsek bir sembolü bu ne anlama geliyor?
+
+28
+00:16:49,240 --> 00:16:53,039
+O state o sembolü alamıyor, kabul edemiyor.
+
+29
+00:16:54,160 --> 00:16:58,840
+O sembol geldiğinde deaktive oluyor.
+
+30
+00:17:00,240 --> 00:17:01,840
+Yani state duruyor.
+
+31
+00:17:02,379 --> 00:17:03,779
+Hesaplama o noktada duruyor.
+
+32
+00:17:05,587 --> 00:17:19,268
+DFA'lerde ise ne yapmamız gerekiyor? Her state için, her sembolü de nereye gideceğini grafiklerde göstermemiz gerekiyor.
+
+33
+00:17:20,847 --> 00:17:30,907
+NFA'lerde bu sıkıntı yok. Dolayısıyla NFA'ler çizim yaparken bir kısım böyle esneklikler sağlıyor bize DFA'ya göre.
+
+34
+00:17:32,559 --> 00:17:34,559
+az kalabalık
+
+35
+00:17:34,559 --> 00:17:38,559
+çizimler yapabiliyoruz.
+
+36
+00:17:42,644 --> 00:17:47,584
+Burada çeşitli örnekler üzerinde görmüştük, çalışmıştık.
+
+37
+00:17:50,163 --> 00:18:02,764
+DFA'lerin bir başka farkı da transition tablosunda ya da fonksiyonunda sonuç bir küme.
+
+38
+00:18:02,764 --> 00:18:05,503
+Bu da basit bir mantıktan.
+
+39
+00:18:08,144 --> 00:18:18,963
+Birden fazla state'e gidebiliyor ya, yani Q0 mesela null aldığında, burada bir state'e gitmiş ama mesela şu Q1'i düşünün.
+
+40
+00:18:20,144 --> 00:18:26,903
+Q1, 0 aldığında buradan Q0'a geliyor ya da şuradan Q2'ye gelebiliyor.
+
+41
+00:18:27,784 --> 00:18:30,483
+Bunu nasıl gösterebiliriz fonksiyonel olarak?
+
+42
+00:18:31,284 --> 00:18:32,663
+Küme ile gösterebiliyoruz.
+
+43
+00:18:32,663 --> 00:18:33,543
+Yani Q1.
+
+44
+00:18:34,451 --> 00:18:53,432
+sıfır sembolü okuduğunda veya geldiğinde sonuç bir state kümesi. Dolayısıyla NFA'ylerde sonuçlar hep bir state kümesi olarak veriliyor.
+
+45
+00:18:59,700 --> 00:19:08,920
+Evet, yine DFA'ler gibi NFA'lerin de dillerinden, language'lerinden bahsedebiliyoruz.
+
+46
+00:19:11,800 --> 00:19:23,059
+Bir NFA'in dili, bir küme esasen. O kümenin içinde de NFA'in kabul ettiği tüm diziler var.
+
+47
+00:19:24,596 --> 00:19:29,336
+Dizeler var, sözcükler diyebiliriz, stringler var.
+
+48
+00:19:36,147 --> 00:19:54,887
+Burada çeşitli örneklere bakmıştık. Sonra bu slide'da kalmıştık. Buraya kadar sorunuz var mı? Açık olmayan bir şey yok sanırım. Buradan devam edeceğim.
+
+49
+00:20:35,028 --> 00:20:40,928
+So NFAs accept the regular languages.
+
+50
+00:20:42,087 --> 00:20:44,508
+What do we mean by that?
+
+51
+00:20:48,067 --> 00:20:53,067
+First, let's define equivalence of machines.
+
+52
+00:20:53,067 --> 00:21:02,508
+We say that machine M1 is equivalent to machine M2.
+
+53
+00:21:03,763 --> 00:21:13,143
+If language of M1 is equal to language of M2.
+
+54
+00:21:13,283 --> 00:21:21,703
+So we say that two machines are equivalent if their languages are same.
+
+55
+00:21:26,675 --> 00:21:33,635
+For example, here, look at this NFA M1.
+
+56
+00:21:36,815 --> 00:21:40,775
+And its language is this.
+
+57
+00:21:40,775 --> 00:21:44,115
+So, we have a star here.
+
+58
+00:21:45,056 --> 00:21:47,076
+Then we have one zero.
+
+59
+00:21:47,275 --> 00:21:52,275
+So, one zero, any number of one zeros, right?
+
+60
+00:21:52,915 --> 00:21:56,135
+This is the language of machine one.
+
+61
+00:21:56,996 --> 00:21:59,536
+Now, let's look at this second machine.
+
+62
+00:22:00,536 --> 00:22:01,795
+This is a DFA.
+
+63
+00:22:04,215 --> 00:22:06,415
+But if you look at it,
+
+64
+00:22:07,816 --> 00:22:10,175
+the language is again
+
+65
+00:22:14,163 --> 00:22:40,663
+1, 0, star. So, the language is same. Right? So, these two machines, M1 and M2, are equivalent because they accept the same language. So, this is very important.
+
+66
+00:22:41,683 --> 00:22:52,864
+When we say two languages are equivalent, we mean that they have the same language, they accept the same language.
+
+67
+00:22:57,864 --> 00:22:58,263
+Now,
+
+68
+00:23:05,076 --> 00:23:17,516
+We will look at this theorem and it says that languages accepted by NFAs are regular languages.
+
+69
+00:23:17,516 --> 00:23:26,496
+Remember that we defined regular languages as languages accepted by DFAs, right?
+
+70
+00:23:27,284 --> 00:23:35,624
+We just, we defined them before in our last lecture as languages accepted by DFA.
+
+71
+00:23:35,624 --> 00:23:39,983
+So, what does that mean?
+
+72
+00:23:40,084 --> 00:23:51,324
+That means that, look at, also look at here, this is, we have a set, we have set symbol here, set braces.
+
+73
+00:23:54,867 --> 00:24:04,248
+What we mean by these set braces is we are talking about all the languages accepted by NFAs here.
+
+74
+00:24:04,248 --> 00:24:17,927
+Like all the languages accepted by NFAs are equivalent to all the languages accepted by DFAs.
+
+75
+00:24:18,927 --> 00:24:21,947
+And they are regular.
+
+76
+00:24:22,867 --> 00:24:26,288
+They are regular. It is the set of regular languages.
+
+77
+00:24:31,731 --> 00:24:39,051
+This means that NFAs and DFAs have the same computation power.
+
+78
+00:24:40,572 --> 00:24:44,351
+They accept the same set of languages.
+
+79
+00:24:44,351 --> 00:24:52,251
+Remember, we are describing problems as languages.
+
+80
+00:24:53,831 --> 00:24:57,871
+And we describe problems as set membership.
+
+81
+00:24:58,579 --> 00:25:09,259
+Remember, so, for example, whether a summation is valid, an addition is valid addition.
+
+82
+00:25:09,259 --> 00:25:17,920
+This problem was expressed as membership of addition language.
+
+83
+00:25:18,920 --> 00:25:21,420
+We did that in our previous lectures.
+
+84
+00:25:26,932 --> 00:25:48,012
+So, this means that even if NFAs are easier for us, it's easier to draw these graphs by NFAs, at the end, they don't give us any additional power.
+
+85
+00:25:53,748 --> 00:25:56,347
+DFA's.
+
+86
+00:25:58,028 --> 00:26:02,387
+So that means NFA's is just a shortcut in a way.
+
+87
+00:26:03,088 --> 00:26:08,288
+They are just a syntactic sugar for DFA's.
+
+88
+00:26:12,180 --> 00:26:25,180
+We need to prove this theorem. And now remember that for proving set equivalency, we have to prove two things.
+
+89
+00:26:25,840 --> 00:26:36,180
+First, we need to show that languages accepted by NFAs is a superset of regular languages.
+
+90
+00:26:38,291 --> 00:26:49,672
+And we also need to show that set of languages by NFAs is a subset of set of regular languages.
+
+91
+00:26:49,672 --> 00:26:53,731
+So we need to do two proves.
+
+92
+00:26:54,672 --> 00:26:57,391
+Let's start with the first one.
+
+93
+00:26:58,711 --> 00:27:04,211
+Here we need to prove that
+
+94
+00:27:05,236 --> 00:27:16,356
+set of languages except by NFA's is a superset of regular set of regular languages.
+
+95
+00:27:23,188 --> 00:27:27,307
+Now, this is trivial actually.
+
+96
+00:27:35,316 --> 00:27:41,155
+Because every DFA is also an NFA.
+
+97
+00:27:46,259 --> 00:27:51,059
+NFA is, NFA adds new notation.
+
+98
+00:27:52,400 --> 00:27:58,099
+So, DFA uses a subset of NFA's notation.
+
+99
+00:27:58,299 --> 00:28:00,900
+So, every DFA is already an NFA.
+
+100
+00:28:04,019 --> 00:28:07,900
+So, DFA's...
+
+101
+00:28:10,420 --> 00:28:36,420
+Languages of DFAs, regular languages, is a subset of sets accepted by NFAs already. We don't need to do a proof here. Any language L accepted by a DFA, since all...
+
+102
+00:28:36,592 --> 00:28:40,052
+DFAs are also NFAs, NFA.
+
+103
+00:28:40,952 --> 00:28:45,392
+Those languages are also accepted by NFAs.
+
+104
+00:28:47,632 --> 00:28:49,751
+This was proof step one.
+
+105
+00:28:52,231 --> 00:28:54,711
+This was the easy part.
+
+106
+00:28:55,412 --> 00:28:57,092
+Let's look at second part.
+
+107
+00:28:57,372 --> 00:28:59,572
+Now, the other part is
+
+108
+00:29:04,660 --> 00:29:07,620
+Set of languages accepted by NFAs.
+
+109
+00:29:09,180 --> 00:29:18,460
+They should be a subset of regular languages, meaning any member in this set.
+
+110
+00:29:19,019 --> 00:29:31,539
+So any language L, which is accepted by an NFA, is also a member of regular languages.
+
+111
+00:29:32,852 --> 00:29:36,932
+Or, is also accepted by a DFA.
+
+112
+00:29:40,311 --> 00:29:59,692
+For this proof, we will first show a method that shows us how to convert
+
+113
+00:30:00,000 --> 00:30:02,239
+An NFA to a DFA.
+
+114
+00:30:03,460 --> 00:30:19,119
+And then we will show that languages are equivalent using this conversion that we construct.
+
+115
+00:30:19,119 --> 00:30:21,119
+So...
+
+116
+00:30:23,508 --> 00:30:27,768
+How can we, can we convert an NFA to a DFA?
+
+117
+00:30:29,087 --> 00:30:32,347
+So here we have this NFA.
+
+118
+00:30:33,688 --> 00:30:39,168
+Why is it an NFA? Because it has this epsilon transition.
+
+119
+00:30:42,768 --> 00:30:44,768
+And for Q0,
+
+120
+00:30:46,644 --> 00:30:51,223
+We don't show what happens when a B is red.
+
+121
+00:30:52,403 --> 00:30:55,463
+What happens when a B is red, right?
+
+122
+00:30:56,403 --> 00:30:59,703
+We didn't, it's not shown here.
+
+123
+00:31:00,763 --> 00:31:02,364
+It's not drawn here.
+
+124
+00:31:04,303 --> 00:31:06,563
+So this is an NFA.
+
+125
+00:31:07,783 --> 00:31:12,823
+Now, can we convert this to a DFA or
+
+126
+00:31:13,268 --> 00:31:36,868
+How can we convert? Now, the method of converting an NFA to DFA is like this. First, you start with the initial state and the label of initial state will be a set.
+
+127
+00:31:39,092 --> 00:31:46,372
+And that set should include the initial state of the NFA, Q0.
+
+128
+00:31:47,592 --> 00:31:51,572
+Then you ask these two questions.
+
+129
+00:31:52,772 --> 00:32:00,312
+What happens if this state reads an A?
+
+130
+00:32:03,251 --> 00:32:08,932
+And what happens, remember, on DFA's, both symbols must shown.
+
+131
+00:32:08,932 --> 00:32:14,811
+So, what happens if this reads an A and then B?
+
+132
+00:32:15,112 --> 00:32:16,811
+What happens if it reads a B?
+
+133
+00:32:18,172 --> 00:32:19,892
+Let's think about it.
+
+134
+00:32:20,771 --> 00:32:30,731
+If Q0 reads an A, here, state changes to Q1, right?
+
+135
+00:32:33,107 --> 00:32:42,687
+But because of this null transition, we also have state Q2, right?
+
+136
+00:32:43,407 --> 00:32:46,288
+There are two active states in NFA.
+
+137
+00:32:46,288 --> 00:32:48,927
+Now, for that,
+
+138
+00:32:53,107 --> 00:33:04,988
+For these two resulting states, we create a single state in the DFA.
+
+139
+00:33:07,708 --> 00:33:10,748
+And again, the label will be a set.
+
+140
+00:33:10,748 --> 00:33:18,347
+But inside that set, now we have both Q1 and Q2.
+
+141
+00:33:20,372 --> 00:33:25,872
+So, remember, comma is N in mathematics.
+
+142
+00:33:26,211 --> 00:33:35,491
+So, we are saying that when Q0 reads A, Q1 and Q2 becomes active.
+
+143
+00:33:37,632 --> 00:33:40,051
+In a way, we are saying that.
+
+144
+00:33:40,051 --> 00:33:43,948
+But we also need to...
+
+145
+00:33:46,259 --> 00:33:49,079
+Tell what happens when we read B.
+
+146
+00:33:50,219 --> 00:33:50,740
+Right?
+
+147
+00:33:51,259 --> 00:34:00,719
+And for Q0, in NFA, there is nothing for B, which means it cannot read B.
+
+148
+00:34:01,379 --> 00:34:05,079
+How do we express that in a DFA?
+
+149
+00:34:06,519 --> 00:34:11,779
+We add a trap state like this.
+
+150
+00:34:13,235 --> 00:34:14,355
+Trap state.
+
+151
+00:34:15,355 --> 00:34:19,195
+And we send the B there.
+
+152
+00:34:20,416 --> 00:34:22,056
+And this trap state,
+
+153
+00:34:23,355 --> 00:34:29,435
+we call these trap states because they have these
+
+154
+00:34:29,435 --> 00:34:33,016
+self loops,
+
+155
+00:34:33,315 --> 00:34:35,115
+loops come back to the moon,
+
+156
+00:34:35,775 --> 00:34:37,096
+and they are not accepting,
+
+157
+00:34:37,096 --> 00:34:38,536
+so they are trap.
+
+158
+00:34:39,347 --> 00:34:43,907
+And the label of a trap state is empty set.
+
+159
+00:34:44,927 --> 00:34:45,228
+Right?
+
+160
+00:34:45,947 --> 00:34:49,188
+So now we process this first one.
+
+161
+00:34:52,387 --> 00:35:03,547
+We draw what happened for the first symbol, A, and then what happened for the second symbol, B.
+
+162
+00:35:05,268 --> 00:35:10,768
+Now, we have two new states that we need to process.
+
+163
+00:35:12,048 --> 00:35:16,288
+Disrupt state and Q1, Q2.
+
+164
+00:35:16,807 --> 00:35:25,948
+So, we will do, we will repeat this action for each state, for each symbol, what happens?
+
+165
+00:35:27,768 --> 00:35:31,007
+So, for this Q1, Q2,
+
+166
+00:35:31,668 --> 00:35:35,128
+If we read NA, what happens?
+
+167
+00:35:36,927 --> 00:35:45,688
+Well, we need to check each of these states in the NFA.
+
+168
+00:35:45,927 --> 00:35:50,148
+So, if Q1 reads A, what happens?
+
+169
+00:35:52,668 --> 00:35:55,188
+If Q1 reads NA,
+
+170
+00:35:58,867 --> 00:36:07,768
+It goes to Q1 again, and because of this epsilon transition, we have Q2 again, right?
+
+171
+00:36:08,867 --> 00:36:11,028
+So let's write them here.
+
+172
+00:36:12,407 --> 00:36:16,347
+We are thinking about first state here.
+
+173
+00:36:16,347 --> 00:36:21,447
+If Q1 reads an A in this NFA,
+
+174
+00:36:23,380 --> 00:36:33,619
+We have Q1 and Q2 as resulting states.
+
+175
+00:36:35,880 --> 00:36:43,240
+Now, there is a second state here, Q2.
+
+176
+00:36:44,460 --> 00:36:49,260
+We also need to consider what happens if Q2 reads A.
+
+177
+00:36:52,148 --> 00:37:05,208
+And if Q2 reads A, nothing happens in the NFA. Q2 cannot read A, meaning the result is an empty set.
+
+178
+00:37:07,367 --> 00:37:15,047
+Now, for the final set, we take the union of these two.
+
+179
+00:37:16,427 --> 00:37:17,728
+So empty set.
+
+180
+00:37:18,356 --> 00:37:43,576
+Q1, Q2. If you take the union, you get Q1, Q2. And since we already have a state with the label Q1, Q2, that means we will not introduce a new set. We will use the existing Q1, Q2. So when we give an A,
+
+181
+00:37:44,436 --> 00:37:46,916
+We come back to Q1, Q2.
+
+182
+00:37:47,916 --> 00:37:49,655
+We have a loop here.
+
+183
+00:37:51,496 --> 00:37:54,815
+Now, we have to ask second question.
+
+184
+00:37:55,256 --> 00:37:58,536
+What happens for B, for this state?
+
+185
+00:37:59,916 --> 00:38:02,996
+And Q1 cannot read B,
+
+186
+00:38:05,556 --> 00:38:09,036
+but Q2 can read B.
+
+187
+00:38:09,036 --> 00:38:10,155
+And what happens?
+
+188
+00:38:11,507 --> 00:38:14,187
+We go to Q0, right?
+
+189
+00:38:14,187 --> 00:38:19,268
+So, now,
+
+190
+00:38:33,460 --> 00:38:36,920
+I think there is a mistake here, slight mistake.
+
+191
+00:38:39,680 --> 00:38:42,680
+Because Q1 cannot read B, right?
+
+192
+00:38:46,931 --> 00:38:48,991
+So, let's fix this mistake.
+
+193
+00:38:57,427 --> 00:38:58,228
+Dömeyiz.
+
+194
+00:39:01,844 --> 00:39:10,984
+Burada slide'da bir hata var diye düşünüyorum. Çünkü Q1, B okuyamıyor. Yani şunun boş küme olması lazım.
+
+195
+00:39:19,443 --> 00:39:20,903
+Yazabilecek miyim bunu?
+
+196
+00:39:36,851 --> 00:39:38,351
+PowerPoint dondu.
+
+197
+00:39:40,631 --> 00:39:49,112
+Çok fazla resim içeren bir slide. Çok fazla resim içeren slide'lar da yavaşlıyor, zorlanabiliyor.
+
+198
+00:39:51,112 --> 00:39:55,411
+Şunu ne yapsam, önce bir sileyim.
+
+199
+00:39:57,572 --> 00:39:59,179
+Sonra oraya bir...
+
+200
+00:40:01,652 --> 00:40:04,771
+Metun kutusu eklemeye çalışayım.
+
+201
+00:40:06,771 --> 00:40:07,731
+Şuraya.
+
+202
+00:40:12,980 --> 00:40:16,500
+Oraya bir denklem eklemeye çalışayım.
+
+203
+00:40:23,027 --> 00:40:36,527
+Hocam, bu durum neden yanlış ki ben tam anlamadım? Mantıken doğru değil mi? Yani Q1 durumundayken bir sonraki okunan B ise Q0'a geçilmez mi?
+
+204
+00:40:48,916 --> 00:41:13,772
+Yani evet, aslında öyle de bakılabilir. Belki de o yüzden öyle yazdı ama ben ayırıyorum. Genel kendi kafamda ayırıyorum Q1 ve Q2'yi. Yani Q1 B okuyamaz ama Null Transition'da Q2 var. Q2 B okuduğu için yine aynı sonuca gidiyor ama...
+
+205
+00:41:13,940 --> 00:41:20,300
+Senin baktığın gibi de bakılabilir. Belki Kostas Bush da o şekilde bakmıştır.
+
+206
+00:41:23,579 --> 00:41:26,940
+Ama Q1'deyken State...
+
+207
+00:41:34,387 --> 00:42:01,788
+Benim bakış açım şu, Q1'deyken, A okudu, Q1'e geldi ya makine, null transition nedeniyle hemen ikiye ayrılıyor. Birinin state'i Q1, birinin state'i Q2 oluyor. O ayrılmış makinede Q1, B'yi okuyamıyor. Ama Q2 okuyabiliyor.
+
+208
+00:42:02,516 --> 00:42:04,115
+Ben böyle yaklaşıyorum.
+
+209
+00:42:13,300 --> 00:42:15,060
+Buraya bir denklem yazalım.
+
+210
+00:42:38,260 --> 00:42:40,260
+Q1
+
+211
+00:42:43,764 --> 00:42:44,963
+B aldığında
+
+212
+00:42:51,315 --> 00:42:52,076
+Boş küme.
+
+213
+00:43:04,436 --> 00:43:06,036
+Renginle siyah yapalım.
+
+214
+00:43:40,884 --> 00:43:44,743
+Bu biçimde PPT ile kaydedemezsin bunu dedi.
+
+215
+00:43:51,027 --> 00:43:53,667
+PPTX olarak kaydetmen gerekiyor.
+
+216
+00:44:34,643 --> 00:44:36,563
+Hala PPT olarak kaydetti.
+
+217
+00:44:42,739 --> 00:44:46,199
+Şurada cinsini PFTX seçmem gerekiyormuş.
+
+218
+00:45:28,724 --> 00:45:32,644
+Evet, başardık.
+
+219
+00:45:56,884 --> 00:46:02,884
+Now, we need to also consider what happens with B, and with B...
+
+220
+00:46:07,764 --> 00:46:09,963
+We go back to Q0.
+
+221
+00:46:11,184 --> 00:46:19,564
+So now we processed this state because we considered what happens for both symbols.
+
+222
+00:46:19,564 --> 00:46:24,064
+Now we need to consider this new state.
+
+223
+00:46:24,423 --> 00:46:28,244
+And this is very easy for both A and B.
+
+224
+00:46:28,824 --> 00:46:31,804
+We come back to this state.
+
+225
+00:46:31,963 --> 00:46:32,923
+It's a trap state.
+
+226
+00:46:33,503 --> 00:46:34,364
+At the end,
+
+227
+00:46:37,396 --> 00:46:46,896
+We see that this NFA can be converted into this DFA.
+
+228
+00:46:47,896 --> 00:46:59,896
+Now, before ending this, notice that this state is the accepting state.
+
+229
+00:47:00,896 --> 00:47:03,896
+Because Q1...
+
+230
+00:47:05,492 --> 00:47:08,412
+is accepting in the original NFA.
+
+231
+00:47:09,112 --> 00:47:09,891
+So since
+
+232
+00:47:09,891 --> 00:47:14,632
+this state includes Q1,
+
+233
+00:47:15,212 --> 00:47:17,311
+it is an accepting state.
+
+234
+00:47:19,391 --> 00:47:23,712
+So this idea is a general idea.
+
+235
+00:47:24,752 --> 00:47:26,412
+So in general,
+
+236
+00:47:26,752 --> 00:47:30,092
+when you want to
+
+237
+00:47:30,092 --> 00:47:32,271
+convert
+
+238
+00:47:33,619 --> 00:47:36,059
+An NFA into a DFA,
+
+239
+00:47:37,859 --> 00:47:39,739
+what you will do is,
+
+240
+00:47:41,340 --> 00:47:45,239
+first, notice that
+
+241
+00:47:45,239 --> 00:47:52,239
+if NFA states are like Q0, Q1, Q2,
+
+242
+00:47:53,239 --> 00:47:57,299
+or new DFA states will be
+
+243
+00:47:58,516 --> 00:48:00,136
+From the power set.
+
+244
+00:48:00,655 --> 00:48:07,876
+So it will be sets that include these states.
+
+245
+00:48:08,436 --> 00:48:18,096
+Like Q0, set that has Q1, set that has Q0, Q1, et cetera.
+
+246
+00:48:19,775 --> 00:48:23,216
+Or DFA states will have these labels.
+
+247
+00:48:29,492 --> 00:48:51,332
+First of all, initially, for the first initial state of NFA, we will create the initial state of DFA, and the initial state of the DFA will include that Q0. It may have some other states too.
+
+248
+00:48:56,724 --> 00:48:57,984
+As we did here.
+
+249
+00:48:59,304 --> 00:49:21,344
+Then, for every new state, for every DFA state, like QI, QJ, QM, we go back to the NFA and see what happens.
+
+250
+00:49:24,563 --> 00:49:27,983
+When that QI receives an A.
+
+251
+00:49:30,703 --> 00:49:34,563
+When that QJ receives an A.
+
+252
+00:49:35,523 --> 00:49:36,304
+Etc.
+
+253
+00:49:36,903 --> 00:49:43,223
+For each of the sets in the label, we go back to NFA.
+
+254
+00:49:44,663 --> 00:49:50,203
+And we understand the resulting sets.
+
+255
+00:49:50,203 --> 00:49:51,203
+And then...
+
+256
+00:49:51,764 --> 00:49:55,144
+We take union of all of these sets.
+
+257
+00:49:56,404 --> 00:50:07,284
+That will give us the final set of states that we reach using symbol A.
+
+258
+00:50:09,784 --> 00:50:18,543
+Now, if this label is not already in the graph,
+
+259
+00:50:20,244 --> 00:50:30,884
+We add that state into the graph, and then we add the transition to the graph again.
+
+260
+00:50:30,884 --> 00:50:35,844
+We connect using this transition.
+
+261
+00:50:39,380 --> 00:50:41,260
+As we did here.
+
+262
+00:50:44,340 --> 00:50:56,060
+Now, all we need to do is repeating the step two for every state and for every symbol in the alphabet.
+
+263
+00:50:57,420 --> 00:51:05,860
+And then at the end, we should obtain a new DFA with the same language.
+
+264
+00:51:09,588 --> 00:51:11,528
+As we did, example.
+
+265
+00:51:12,708 --> 00:51:15,927
+Finally, though, what is missing here?
+
+266
+00:51:16,608 --> 00:51:18,508
+There is no accepting state.
+
+267
+00:51:19,427 --> 00:51:26,508
+So, for each of the accepting states,
+
+268
+00:51:28,508 --> 00:51:36,828
+we make the state in the DFA that has those states accepting.
+
+269
+00:51:38,996 --> 00:51:40,376
+As we did here.
+
+270
+00:51:44,596 --> 00:51:48,355
+So, this is the conversion procedure.
+
+271
+00:51:52,179 --> 00:52:09,460
+Now, we created a conversion procedure, but we still need to prove that this conversion results an automata with the same language.
+
+272
+00:52:10,199 --> 00:52:16,960
+So we still need to show that language of NFA M,
+
+273
+00:52:19,731 --> 00:52:29,251
+And language of NFA, DFA, sorry, DFA and prime are equivalent.
+
+274
+00:52:30,152 --> 00:52:42,612
+And to do that, again, we need to show that each one is a subset of the other again.
+
+275
+00:52:43,331 --> 00:52:46,431
+So we will do that in the next lecture.
+
+276
+00:52:47,731 --> 00:52:53,912
+Do you have any questions so far? Or we are going to give a break.
+
+277
+00:52:57,652 --> 00:53:00,731
+Okay, let's have a break till 10 o'clock.
+
+278
+01:05:10,739 --> 01:05:12,920
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+279
+01:05:18,003 --> 01:05:19,063
+Geliyor hocam.
+
+280
+01:05:20,443 --> 01:05:21,663
+Peki, teşekkürler.
+
+281
+01:05:35,668 --> 01:05:36,668
+Let's continue.
+
+282
+01:05:44,211 --> 01:05:54,731
+We have a procedure that we can use to convert an NFA-M to a DFA-M''.
+
+283
+01:05:54,731 --> 01:06:08,172
+But we still need to prove that these two automata are equivalent.
+
+284
+01:06:09,556 --> 01:06:16,155
+And to show that, we need to show that their languages are equivalent.
+
+285
+01:06:17,516 --> 01:06:23,076
+And remember, languages are sets, sets of strings.
+
+286
+01:06:24,076 --> 01:06:33,755
+To show the equivalence of two sets, we need to show that each is a subset of others.
+
+287
+01:06:34,612 --> 01:06:42,652
+So, we need to show that language of NFA is a subset of language of DFA.
+
+288
+01:06:42,652 --> 01:06:58,372
+And language of DFA is a, which was, sorry, language of NFA is a superset of language of DFA.
+
+289
+01:07:01,108 --> 01:07:02,588
+So let's do this.
+
+290
+01:07:03,688 --> 01:07:11,848
+First, we will show that language of NFA is a subset of language of DFA.
+
+291
+01:07:13,768 --> 01:07:15,688
+Prime is DFA.
+
+292
+01:07:17,008 --> 01:07:19,048
+We converted NFA to DFA.
+
+293
+01:07:22,931 --> 01:07:46,931
+Now, for this, we need to prove that any word, any string, which is an element of language of NFA, is also in the set of, in the language of DFA.
+
+294
+01:07:48,755 --> 01:07:51,855
+So how can we prove that?
+
+295
+01:07:54,076 --> 01:08:03,635
+Let's consider a string W, which is in language of NFA M.
+
+296
+01:08:07,347 --> 01:08:32,667
+What this means is, if we start with the initial state q0, and if the machine reads symbols of w one by one, somehow,
+
+297
+01:08:33,184 --> 01:08:42,784
+From the initial Q0, when reading symbol A1, we go to another state.
+
+298
+01:08:45,184 --> 01:08:50,684
+After reading A2, we go to another state.
+
+299
+01:08:52,043 --> 01:08:54,604
+We continue like that.
+
+300
+01:08:55,604 --> 01:08:59,444
+At the end, after reading the last symbol,
+
+301
+01:09:00,819 --> 01:09:07,279
+We go to a QF such that QF is an accepting state.
+
+302
+01:09:08,440 --> 01:09:10,860
+So we start with Q0.
+
+303
+01:09:11,619 --> 01:09:15,880
+With each symbol, we go to different states.
+
+304
+01:09:16,199 --> 01:09:23,380
+At the end, we reach to an accepting state.
+
+305
+01:09:28,692 --> 01:09:40,731
+And notice that when we say, so you see this dashed arrow here.
+
+306
+01:09:42,012 --> 01:09:51,731
+It's dashed because when we are going from QI to QJ using AI,
+
+307
+01:09:54,228 --> 01:09:59,268
+There might be some null transitions on the way.
+
+308
+01:09:59,988 --> 01:10:04,528
+So this transition may not be direct.
+
+309
+01:10:12,340 --> 01:10:19,719
+Now, we will show that if the string is in the language of NFA,
+
+310
+01:10:23,412 --> 01:10:39,551
+We see that from the initial state using these symbols of this string, we reach to an accepting state.
+
+311
+01:10:44,307 --> 01:11:01,188
+If we can reach to an accepting state, then using our newly created DFA, we also can reach to an accepting state.
+
+312
+01:11:02,648 --> 01:11:11,347
+And we will start again our newly created DFA's initial state.
+
+313
+01:11:12,404 --> 01:11:17,944
+Notice that that initial state includes Q0, right?
+
+314
+01:11:19,044 --> 01:11:32,544
+And notice that the arrows here are not dashed because in DFAs, there is no epsilon transition.
+
+315
+01:11:33,624 --> 01:11:37,384
+So solid, we have solid arrays here.
+
+316
+01:11:38,676 --> 01:11:41,435
+As opposed to dashed arrays here.
+
+317
+01:11:44,095 --> 01:11:57,996
+But at the end, after reading the last symbol again, we should reach to a state that includes this QF accepting state.
+
+318
+01:11:58,996 --> 01:12:00,576
+We will show that.
+
+319
+01:12:02,576 --> 01:12:03,615
+In fact,
+
+320
+01:12:04,979 --> 01:12:10,559
+More generally, we will show that if in the NFA,
+
+321
+01:12:17,140 --> 01:12:18,600
+If in the NFA,
+
+322
+01:12:25,011 --> 01:12:26,931
+We start with Q0.
+
+323
+01:12:28,191 --> 01:12:42,131
+We go to some state QI and QJ and some QL and some QM.
+
+324
+01:12:45,555 --> 01:12:55,435
+In the DFA, we go to the states that include all of those states.
+
+325
+01:12:55,435 --> 01:13:02,675
+So for Q0, we already start with a set with Q0.
+
+326
+01:13:04,055 --> 01:13:12,296
+And somehow if we reach to QI in NFA, in DFA,
+
+327
+01:13:13,011 --> 01:13:16,832
+We reach to a set that includes QI.
+
+328
+01:13:18,412 --> 01:13:24,332
+And somehow if we read A2 and reach to QJ,
+
+329
+01:13:25,891 --> 01:13:30,951
+then in the DFA, if we again read A2,
+
+330
+01:13:31,692 --> 01:13:34,371
+we reach to a state that includes QJ.
+
+331
+01:13:39,028 --> 01:13:43,248
+For each state that we go in the NFA,
+
+332
+01:13:47,764 --> 01:13:56,003
+In the DFA, we reach to a state that includes that state in the labels.
+
+333
+01:13:58,503 --> 01:14:12,684
+Now, this proof will be by induction on the size of the string we read.
+
+334
+01:14:15,188 --> 01:14:22,108
+And now, induction basis is...
+
+335
+01:14:25,460 --> 01:14:34,659
+For v equals to one, size of v equals to one, which means we have only one symbol.
+
+336
+01:14:37,039 --> 01:14:39,280
+Let's check whether this is true.
+
+337
+01:14:41,360 --> 01:14:45,280
+Now, and we are starting from Q0.
+
+338
+01:14:47,100 --> 01:14:49,059
+If we are on Q0,
+
+339
+01:14:52,083 --> 01:15:13,403
+And if we read A1 and we reach to QI in the NFA, remember that we construct DFA such that if we are on Q0 and read A1,
+
+340
+01:15:16,724 --> 01:15:41,324
+We create a new state that includes QI in the list, right? Remember the conversion procedure, construction procedure. So by our construction procedure, this is true because we construct
+
+341
+01:15:42,579 --> 01:15:45,260
+In a way that makes this true.
+
+342
+01:15:46,699 --> 01:15:55,039
+So, our induction basis is true by construction of DFA.
+
+343
+01:15:55,039 --> 01:15:57,699
+By construction of DFA.
+
+344
+01:16:01,939 --> 01:16:27,479
+Now, let's see in the induction hypothesis, hypothesis, we say that we suppose that following hold and here size of the string is between 1 and k.
+
+345
+01:16:31,155 --> 01:16:40,716
+So, it has k symbols in it, more than one. It can be one, but it can be more than one too.
+
+346
+01:16:43,275 --> 01:16:56,835
+And if this is true, if this is true, so we say that if in NFA,
+
+347
+01:16:58,771 --> 01:17:19,592
+We start with Q0, we read QI, we read A1, go to QI, read A2, go to QJ, and at the end, read AK in QC and reach QD.
+
+348
+01:17:26,739 --> 01:17:43,000
+Then, in the DFA, we go these states, we go through these states that includes these states.
+
+349
+01:17:45,639 --> 01:17:48,659
+QC, QC, QD, QD.
+
+350
+01:17:48,659 --> 01:17:53,659
+We go these states that includes these states.
+
+351
+01:17:54,612 --> 01:18:17,652
+If this is true, now we need to prove that in the induction step, if Bayes is true and if the induction hypothesis is true, now we need to prove induction step is true.
+
+352
+01:18:17,652 --> 01:18:20,871
+If we can prove induction step is true,
+
+353
+01:18:21,363 --> 01:18:24,623
+The whole proof is proved.
+
+354
+01:18:25,443 --> 01:18:28,743
+So, the whole proof is done.
+
+355
+01:18:30,743 --> 01:18:42,943
+So, in the induction step, now we consider a string which has a size k plus one.
+
+356
+01:18:42,943 --> 01:18:48,623
+So, it's like it has these k steps.
+
+357
+01:18:51,667 --> 01:19:00,847
+It has these k symbols in the hypothesis, but it has an additional symbol.
+
+358
+01:19:01,667 --> 01:19:11,567
+It's like the previous string concatenated with an additional symbol.
+
+359
+01:19:14,307 --> 01:19:14,667
+Now,
+
+360
+01:19:19,220 --> 01:19:22,960
+We already assumed that this part is true.
+
+361
+01:19:30,996 --> 01:19:34,716
+Because we are using proof by induction.
+
+362
+01:19:35,916 --> 01:19:55,996
+And we assumed that if we can reach to QD by V prime, by V prime, then we can reach to a set that includes QD again by...
+
+363
+01:19:56,564 --> 01:19:58,664
+v'in the DFA.
+
+364
+01:19:59,664 --> 01:20:05,904
+Now, for this new symbol, a k plus 1,
+
+365
+01:20:08,543 --> 01:20:11,963
+if we can reach to QE,
+
+366
+01:20:12,844 --> 01:20:15,604
+starting from QD,
+
+367
+01:20:17,224 --> 01:20:21,644
+when we read a k plus 1,
+
+368
+01:20:25,332 --> 01:20:31,332
+We construct or DFA such that, we constructed or DFA such that,
+
+369
+01:20:36,252 --> 01:20:41,592
+QE will be in the set, in the new state.
+
+370
+01:20:43,132 --> 01:20:47,572
+Or construction is this, this is how we construct.
+
+371
+01:20:48,292 --> 01:20:51,891
+So this is true again by construction.
+
+372
+01:20:54,899 --> 01:20:59,559
+And that concludes the proof.
+
+373
+01:21:01,260 --> 01:21:19,719
+So, we say that if string W is in NFA, meaning we start from Q0 and reach to a accept state.
+
+374
+01:21:20,404 --> 01:21:41,024
+We reach to an accept state when reading this string, then we can start our new initial state in the DFA, and we will get to a state that includes that QF.
+
+375
+01:21:43,572 --> 01:21:48,832
+String W will also be in the language of DFA.
+
+376
+01:21:51,992 --> 01:22:04,771
+We just proved that language of NFA is a subset of language of DFA.
+
+377
+01:22:05,391 --> 01:22:07,492
+For the other part,
+
+378
+01:22:11,188 --> 01:22:35,688
+We can do the same procedure. We can think the same way. We can use again induction, proof by induction, and we can prove that language of our new DFA is a subset of language of NFA.
+
+379
+01:22:36,595 --> 01:22:43,615
+So, we are skipping that. You can take a look at home or you can try to do that at home.
+
+380
+01:22:44,895 --> 01:22:56,615
+But we will assume that we did it. Therefore, the language of this NFA and this DFA is same.
+
+381
+01:22:56,615 --> 01:23:00,615
+So, any...
+
+382
+01:23:02,931 --> 01:23:10,351
+NFA can be converted to an equivalent DFA, and their language will be same.
+
+383
+01:23:19,252 --> 01:23:35,092
+Do you have any questions from this point? This last proof is kind of complicated, but you just need to go through it step by step. You need to think about it carefully. It's not that hard.
+
+384
+01:23:35,572 --> 01:23:44,032
+The procedure to convert an NFA to DFA is important. In the exams,
+
+385
+01:23:44,787 --> 01:23:47,047
+We ask these questions.
+
+386
+01:23:48,287 --> 01:23:51,947
+We want you to convert an NFA to a DFA.
+
+387
+01:23:53,287 --> 01:24:00,347
+Or we ask whether this DFA is equivalent to this NFA, et cetera.
+
+388
+01:24:00,347 --> 01:24:08,847
+So you need to be able to convert an NFA to a DFA.
+
+389
+01:24:18,644 --> 01:24:19,024
+Okay.
+
+390
+01:24:24,340 --> 01:24:28,739
+Let's go to regular properties.
+
+391
+01:24:51,155 --> 01:25:09,335
+I push, delete button. Bu NFA, PPT'yi silmeye çalışıyorum. Sile bastım. Burada öyle kaldı. İptal edeyim. O da iyice öyle kaldı.
+
+392
+01:25:15,283 --> 01:25:19,983
+Büyük PowerPoint'ler olduğunda zorlanıyor.
+
+393
+01:25:21,523 --> 01:25:27,563
+Aslında dosya siliyor. Dosya silmeyle PowerPoint olmasının bir farkı da yok ama.
+
+394
+01:25:29,463 --> 01:25:38,203
+Bu şeyde OneDrive'la da ilişkili ya bu dizin, OneDrive'dan da silmesi gerekiyor falan. Yavaş çalışıyor galiba.
+
+395
+01:25:40,979 --> 01:25:44,119
+Kendine gelebilir sanırım. Şöyle bir dakikanı bekleyelim.
+
+396
+01:25:50,996 --> 01:26:10,756
+Bu dersimizde az önce neyi öğrendik? NFA'yı, DFA'yı çevirebildiğimizi öğrendik. Yani size bir NFA'yı versem onu ne yapabilirsiniz? DFA'yı çevirebilirsiniz. Çevirebilmeniz lazım.
+
+397
+01:26:17,043 --> 01:26:42,343
+Bir kısım egzersizler vardı. Bu egzersizlerin arasında sanırım NFA, DFA'ye çevirme egzersizleri var. Yine Sipser'in kitabında egzersizler var. Buna çalışın. NFA, DFA'ye çevirebilin. Çok basit bir prosedürle çeviriyoruz. Ne yapıyoruz?
+
+398
+01:26:44,051 --> 01:26:46,211
+NFA Q0 ile mi başlıyor?
+
+399
+01:26:47,211 --> 01:26:50,231
+DFA'ya de Q0 ile başlatıyoruz.
+
+400
+01:26:51,051 --> 01:26:58,711
+Ama Q0'ı içeren bir seti, bir set ile temsil eden bir durumla, state ile başlıyoruz.
+
+401
+01:27:00,051 --> 01:27:05,551
+Sonra her bir yeni DFA state'imiz için şu soruyu soruyoruz.
+
+402
+01:27:06,691 --> 01:27:07,791
+Bu yeni state.
+
+403
+01:27:08,787 --> 01:27:23,907
+Alfabedeki A sembolünü alırsa ne olur? B'yi alırsa ne olur? C'yi alırsa ne olur? Yeni bir state oluşacaksa o state'i ekrana, kağıda çiziyoruz, oluşturuyoruz.
+
+404
+01:27:24,707 --> 01:27:32,547
+Yeni bir state oluşmuyorsa, eski state'lerden birine biri oluşuyorsa ona bir hemen transition yapıyoruz.
+
+405
+01:27:33,427 --> 01:27:47,487
+Yeni state oluşturursak da ona transition yapıyoruz. Sonra yeni oluşan her state için bu soruyu tekrar ediyoruz. A alırsa ne olur, B alırsa ne olur, C alırsa ne olur?
+
+406
+01:27:59,764 --> 01:28:19,504
+elde edilmiş oluyor. Bu DFA, NFA ile eşdeğer oluyor. Bazı işlemler için NFA'yı DFA'ye çevirmemiz gerekiyor bazı şeyler için. Mesela bir dilin komplementini bulmak için.
+
+407
+01:28:23,283 --> 01:28:32,783
+Bir dilin komplementini veren otomatayı, otomatonu bulabilmek için ne yapmamız gerekiyor?
+
+408
+01:28:32,783 --> 01:28:35,783
+Diye...
+
+409
+01:28:35,783 --> 01:28:37,384
+Pardon.
+
+410
+01:29:50,387 --> 01:29:51,007
+Evet.
+
+411
+01:29:56,115 --> 01:29:57,615
+Bu şey kendine göremedi.
+
+412
+01:29:59,076 --> 01:30:01,216
+Kapatayım şu Explorer'ı.
+
+413
+01:30:15,731 --> 01:30:17,912
+Yeniden bir Explorer açayım.
+
+414
+01:30:25,908 --> 01:30:30,708
+Explore değil de Q'dir diye bir şey kullanıyorum. O kendine gelemedi esasen.
+
+415
+01:30:32,148 --> 01:30:34,308
+Explore'ı kullanıyor olması lazım.
+
+416
+01:30:36,128 --> 01:30:39,988
+Şimdi bir şeyleri silmeyi bırakıp yeni PPT'yi açayım en iyisi.
+
+417
+01:30:53,108 --> 01:30:53,688
+Evet.
+
+418
+01:30:55,068 --> 01:30:56,248
+Devam edelim.
+
+419
+01:31:01,268 --> 01:31:02,708
+Ekran paylaşımı.
+
+420
+01:31:26,739 --> 01:31:27,000
+Okay.
+
+421
+01:31:28,000 --> 01:31:30,000
+So, we saw that
+
+422
+01:31:34,739 --> 01:31:40,119
+NFA's and DFA's accept regular languages.
+
+423
+01:31:42,239 --> 01:31:43,159
+Regular.
+
+424
+01:31:43,920 --> 01:31:49,100
+So if a language is accepted by NFA or a DFA, it is regular.
+
+425
+01:31:49,920 --> 01:32:00,899
+These regular languages have some properties that becomes very handy when working on some problems.
+
+426
+01:32:02,003 --> 01:32:14,003
+Özellikle, bu bir language, bu bir language, bu bir language, bu bir language, bu bir language, bu bir language.
+
+427
+01:32:14,003 --> 01:32:18,003
+Bu bir soru, bu bir problem.
+
+428
+01:32:18,003 --> 01:32:24,003
+Bu bir language ve bu bir language, bu bir language, bu bir language, bu bir language.
+
+429
+01:32:24,003 --> 01:32:27,916
+Bu bir soru, bu bir soru.
+
+430
+01:32:28,787 --> 01:32:33,347
+It's very helpful to know these properties.
+
+431
+01:32:33,347 --> 01:32:53,907
+And these properties say that if language L1 is regular and language L2 is also regular, then their union is also regular.
+
+432
+01:32:54,707 --> 01:32:57,567
+Their concatenation is also regular.
+
+433
+01:32:59,448 --> 01:33:03,108
+Star operation of any of these is also regular.
+
+434
+01:33:05,167 --> 01:33:08,608
+Their reversal is also regular.
+
+435
+01:33:10,507 --> 01:33:15,608
+Their complement, complement of any of them is also regular.
+
+436
+01:33:15,608 --> 01:33:19,727
+And finally, their intersection.
+
+437
+01:33:20,304 --> 01:33:24,304
+Bu da bu da bu da bu.
+
+438
+01:33:24,304 --> 01:33:32,304
+Ve bu da bu da bu.
+
+439
+01:33:45,619 --> 01:33:49,059
+Regular languages are closed under concatenation.
+
+440
+01:33:49,059 --> 01:34:07,399
+And closed means if you do that operation, if you apply that operation to these regular languages, the result is also regular.
+
+441
+01:34:07,399 --> 01:34:10,399
+So closed from regular these operations.
+
+442
+01:34:11,155 --> 01:34:16,235
+If you give them regular languages, they give you regular languages.
+
+443
+01:34:18,335 --> 01:34:26,456
+We say that because of that, we say that regular languages are closed under these operations.
+
+444
+01:34:29,195 --> 01:34:33,435
+When we try to prove this,
+
+445
+01:34:35,699 --> 01:34:57,719
+There are some very useful transformations. One is this. If your NFA or DFA has more than one state, for example, here we have two accept states.
+
+446
+01:34:59,000 --> 01:35:03,260
+If your NFA has more than one accept state,
+
+447
+01:35:04,564 --> 01:35:15,824
+We can reduce that number into a single accept state using this procedure.
+
+448
+01:35:15,824 --> 01:35:24,604
+We will make original accept states, reject states, or non-accepting.
+
+449
+01:35:25,724 --> 01:35:32,064
+But we will introduce a new accept state.
+
+450
+01:35:32,532 --> 01:35:39,652
+And we will add null transitions from old accept states into this new one.
+
+451
+01:35:40,652 --> 01:35:46,112
+So this NFA is equivalent.
+
+452
+01:35:47,692 --> 01:35:54,132
+And the fact that it has only single accepting state is useful.
+
+453
+01:35:56,212 --> 01:35:58,971
+So in general, again, if you have...
+
+454
+01:36:00,724 --> 01:36:24,844
+Bir sonraki bir
+
+455
+01:36:26,195 --> 01:36:34,235
+And an extreme case is your NFA does not have an accepting state.
+
+456
+01:36:35,456 --> 01:36:46,636
+Even in that case, we can introduce a new accept state, but we will not add any such transition to it.
+
+457
+01:36:47,636 --> 01:36:50,315
+Okay, there will be no transition to it.
+
+458
+01:36:56,083 --> 01:37:08,023
+Now, let's take two languages and these languages are regular languages, L1 and L2.
+
+459
+01:37:10,363 --> 01:37:17,844
+And let's consider the machines, the automatons that accept them.
+
+460
+01:37:19,796 --> 01:37:27,296
+The machine one, let's say, accepts language one, or language of machine one is language one.
+
+461
+01:37:28,615 --> 01:37:30,496
+What that means is,
+
+462
+01:37:34,496 --> 01:37:37,015
+any string in the language,
+
+463
+01:37:39,015 --> 01:37:46,076
+if you read that string and start from the initial state of that automaton,
+
+464
+01:37:46,899 --> 01:37:50,359
+You end up in an accepting state.
+
+465
+01:37:51,619 --> 01:37:54,479
+And the same is true for language 2.
+
+466
+01:37:55,479 --> 01:38:01,459
+So language 2 is accepted by M2, machine 2.
+
+467
+01:38:03,939 --> 01:38:12,679
+And if we start initial state and read any string from this language, L2,
+
+468
+01:38:13,427 --> 01:38:16,108
+We end up in an accepting state.
+
+469
+01:38:21,619 --> 01:38:47,860
+As an example, consider these two languages. L1 is A to N, B, where N is larger than or equal to 0. So let's say for A, A, B. You start from here. One A, two A's, and then a B.
+
+470
+01:38:48,500 --> 01:38:51,460
+You go to accept state.
+
+471
+01:38:53,039 --> 01:38:54,960
+And then L2, for example.
+
+472
+01:38:56,680 --> 01:39:03,500
+So this is a regular language because an automaton accepts it.
+
+473
+01:39:04,760 --> 01:39:07,300
+And language 2 is very simple.
+
+474
+01:39:08,600 --> 01:39:12,579
+It has only one string, ba.
+
+475
+01:39:13,960 --> 01:39:14,520
+And
+
+476
+01:39:17,460 --> 01:39:30,799
+If you start with the initial state, if you scan B and then scan A, you go to an accepting state.
+
+477
+01:39:32,100 --> 01:39:34,539
+So language 2 is regular too.
+
+478
+01:39:34,840 --> 01:39:42,979
+Remember, if a language is accepted by an automaton, DFA or NFA, it is regular.
+
+479
+01:39:45,043 --> 01:39:49,763
+We just saw that these two languages are regular.
+
+480
+01:39:51,763 --> 01:39:54,384
+Now let's consider their union.
+
+481
+01:39:57,023 --> 01:39:57,903
+Union.
+
+482
+01:40:00,403 --> 01:40:02,823
+Now to consider a union.
+
+483
+01:40:05,564 --> 01:40:10,224
+Now if you can write an NFA that accepts the union,
+
+484
+01:40:11,724 --> 01:40:12,103
+then
+
+485
+01:40:12,692 --> 01:40:16,432
+Then that union is also regular.
+
+486
+01:40:16,631 --> 01:40:24,992
+So for each of these, we will try to construct an NFA that accept those.
+
+487
+01:40:25,992 --> 01:40:29,652
+Now consider this NFA.
+
+488
+01:40:30,932 --> 01:40:32,352
+This NFA.
+
+489
+01:40:34,212 --> 01:40:36,752
+It has a new initial state.
+
+490
+01:40:37,572 --> 01:40:38,612
+This one.
+
+491
+01:40:39,220 --> 01:40:51,800
+And with epsilon transitions, that new initial state transitions to initial state of M1 and initial state of M2.
+
+492
+01:40:53,420 --> 01:41:01,840
+And the rest is just M1, copied here, and M2, copied here.
+
+493
+01:41:03,507 --> 01:41:10,868
+And remember, M1 accepts L1, M2 accepts L2.
+
+494
+01:41:18,644 --> 01:41:19,264
+Now,
+
+495
+01:41:23,283 --> 01:41:42,283
+Any string W, if it is in the union, that means it is either in L1, and if it is in L1, because of this epsilon transition,
+
+496
+01:41:45,555 --> 01:42:04,695
+A string will be started to read here, also here. M2 will not accept it, but M1 will accept it, if it is in L1. M2 may or may not accept, we don't know.
+
+497
+01:42:07,755 --> 01:42:10,115
+Or, since it is in the union,
+
+498
+01:42:11,347 --> 01:42:20,528
+If it is not in L1, string is, if the string is not in L1, the string is in L2.
+
+499
+01:42:21,307 --> 01:42:30,728
+And in that case, machine2 will accept it in this lower path.
+
+500
+01:42:31,407 --> 01:42:34,427
+Machine1 may or may not accept, we don't know.
+
+501
+01:42:35,427 --> 01:42:35,807
+So,
+
+502
+01:42:36,500 --> 01:42:43,460
+If string is in the union, what will happen?
+
+503
+01:42:44,140 --> 01:42:49,340
+Either the upper branch or the lower branch will accept it.
+
+504
+01:42:49,860 --> 01:42:52,260
+So this NFA will accept it.
+
+505
+01:42:52,260 --> 01:43:00,620
+So that means there is an NFA that accepts this union, which means union is regular.
+
+506
+01:43:03,412 --> 01:43:28,412
+So, let's look at an example. We are continuing the same example. A to the NB, L1, BA, L2. And we construct this new NFA and upper branch is just M1, lower branch is just M2.
+
+507
+01:43:30,707 --> 01:43:39,507
+And you can just see that this accepts all strings in this union.
+
+508
+01:43:39,507 --> 01:43:47,487
+For example, does it accept A, A, B? Let's check.
+
+509
+01:43:55,699 --> 01:43:58,219
+We will first read A.
+
+510
+01:43:59,659 --> 01:44:01,899
+Before reading anything,
+
+511
+01:44:05,908 --> 01:44:22,108
+Before reading anything, immediately when the machine starts, because of these null transitions, this state and this state becomes active.
+
+512
+01:44:23,388 --> 01:44:28,328
+So in a way, there are two parallel machines here.
+
+513
+01:44:30,148 --> 01:44:31,948
+And we will read A.
+
+514
+01:44:32,248 --> 01:44:33,548
+When we read A,
+
+515
+01:44:35,347 --> 01:44:40,768
+This upper machine come back to this state again.
+
+516
+01:44:42,247 --> 01:44:49,948
+This lower machine cannot read B initially, cannot read A initially.
+
+517
+01:44:50,648 --> 01:44:54,327
+There is no A here like this.
+
+518
+01:44:55,747 --> 01:45:01,188
+That means this lower computation branch
+
+519
+01:45:02,036 --> 01:45:08,756
+Stop, halt, it dies, after reading the first A.
+
+520
+01:45:10,216 --> 01:45:21,356
+But the upper branch is still alive, active, so we read the next symbol, which is another A.
+
+521
+01:45:22,076 --> 01:45:26,456
+So we look back to initial state again.
+
+522
+01:45:27,731 --> 01:45:34,031
+Then we scan B and go to this state.
+
+523
+01:45:34,951 --> 01:45:37,871
+And this state is an accepting state.
+
+524
+01:45:38,451 --> 01:45:42,051
+And we consumed all of the input.
+
+525
+01:45:42,591 --> 01:45:44,371
+There is no more input.
+
+526
+01:45:44,911 --> 01:45:47,571
+So we read all of the input.
+
+527
+01:45:47,931 --> 01:45:49,371
+We read all of the input.
+
+528
+01:45:49,771 --> 01:45:53,571
+And we came to an accepting state.
+
+529
+01:45:55,252 --> 01:46:01,052
+So, this machine accepts AAB.
+
+530
+01:46:02,231 --> 01:46:11,292
+So, for all strings in this union, you'll see the same thing.
+
+531
+01:46:13,332 --> 01:46:14,972
+What's the result?
+
+532
+01:46:17,771 --> 01:46:22,972
+If L1 and L2 are regular, their union...
+
+533
+01:46:23,956 --> 01:46:28,536
+is accepted by an NFA, so the union is regular.
+
+534
+01:46:31,416 --> 01:46:33,576
+Let's look at concatenation.
+
+535
+01:46:34,755 --> 01:46:36,835
+So we have seven minutes.
+
+536
+01:46:38,996 --> 01:46:43,155
+Now consider again a new NFA.
+
+537
+01:46:44,855 --> 01:46:46,715
+This NFA.
+
+538
+01:46:50,707 --> 01:46:55,707
+And we are considering concatenation of L1 and L2.
+
+539
+01:46:58,147 --> 01:47:00,547
+And in this new NFA,
+
+540
+01:47:02,027 --> 01:47:07,027
+the last accepting state of the L1, M1, sorry,
+
+541
+01:47:12,307 --> 01:47:17,207
+is converted into non-accepting, non-accepting.
+
+542
+01:47:18,068 --> 01:47:27,427
+And we add a transition, null transition, from that to the initial state of M2.
+
+543
+01:47:28,768 --> 01:47:36,367
+So again, we are creating new NFA using those two original NFAs.
+
+544
+01:47:38,167 --> 01:47:44,927
+And we can easily see that if a string...
+
+545
+01:47:46,868 --> 01:48:13,108
+is accepted by the concaten, sorry, if a string is in the language, in the concatenation language, because the concatenation language, so let's say L1 includes a string W1.
+
+546
+01:48:14,003 --> 01:48:19,524
+And L2 includes a string W2.
+
+547
+01:48:21,304 --> 01:48:33,184
+Then L1 concatenation L2 will include a string W1, W2.
+
+548
+01:48:37,876 --> 01:48:38,376
+Right?
+
+549
+01:48:40,916 --> 01:48:41,435
+So,
+
+550
+01:48:41,435 --> 01:48:44,155
+let's say W
+
+551
+01:48:48,115 --> 01:49:15,615
+Let's consider any W in this concatenation language. It should be consisting of two parts. Part 1, W1, and part 2, W2. And if we start from this M1 initial state, W1 will bring us to here.
+
+552
+01:49:20,724 --> 01:49:23,224
+And because of the null transition,
+
+553
+01:49:24,744 --> 01:49:32,744
+we will go directly to the initial state of M2 with W1 again.
+
+554
+01:49:35,044 --> 01:49:46,044
+Now, W2 part will start from this initial state and bring us to...
+
+555
+01:49:49,716 --> 01:49:51,356
+This accepting state.
+
+556
+01:49:53,356 --> 01:50:05,316
+So, any string in the concatenation language can be accepted by this NFA.
+
+557
+01:50:05,316 --> 01:50:14,316
+That is a serial, serial, how can we say?
+
+558
+01:50:14,963 --> 01:50:20,263
+serially constructed version of these NFAs.
+
+559
+01:50:21,663 --> 01:50:31,583
+And since concatenate any string in the language is accepted by this NFA, what do we say?
+
+560
+01:50:33,043 --> 01:50:37,344
+This concatenation language is regular.
+
+561
+01:50:38,344 --> 01:50:41,043
+It is accepted by an NFA.
+
+562
+01:50:43,859 --> 01:50:46,639
+Again, we can look at this example.
+
+563
+01:50:48,499 --> 01:50:51,199
+We are continuing the same example.
+
+564
+01:50:52,739 --> 01:50:54,759
+L1 is A to the NB.
+
+565
+01:50:55,239 --> 01:50:56,959
+L2 is BA.
+
+566
+01:50:58,399 --> 01:51:01,919
+So let's consider something like
+
+567
+01:51:04,659 --> 01:51:30,560
+Like this, right? So the concatenation language is A, N, B, and BA. So a string here is A, A, B, B, A, for example. And we can easily see that when reading first two A's, we will be here.
+
+568
+01:51:31,220 --> 01:51:33,220
+Then we will read next B.
+
+569
+01:51:34,140 --> 01:51:36,960
+With epsilon transition, we come here.
+
+570
+01:51:37,720 --> 01:51:39,080
+We read the next B.
+
+571
+01:51:39,660 --> 01:51:41,220
+We read the next A.
+
+572
+01:51:41,680 --> 01:51:44,500
+And we reach to accepting state.
+
+573
+01:51:45,180 --> 01:51:50,620
+So AABBA is accepted by this NFA.
+
+574
+01:51:53,220 --> 01:51:56,740
+So this NFA accepts.
+
+575
+01:51:57,199 --> 01:52:05,539
+All concatenation strings, so the concatenation language is regular.
+
+576
+01:52:07,119 --> 01:52:09,819
+Any question up to this point?
+
+577
+01:52:11,039 --> 01:52:20,579
+Here we are using proof by construction to prove that a language is regular.
+
+578
+01:52:22,131 --> 01:52:33,511
+We are creating an NFA and showing that that language is accepted by that NFA.
+
+579
+01:52:34,631 --> 01:52:40,571
+Since it is accepted, if a language is accepted by an NFA or DFA, it is regular.
+
+580
+01:52:40,571 --> 01:52:41,691
+We use that.
+
+581
+01:52:43,511 --> 01:52:44,651
+And star operation.
+
+582
+01:52:52,627 --> 01:52:53,787
+Start of a Language.
+
+583
+01:52:57,467 --> 01:53:00,467
+Let's do that after the break.
+
+584
+01:53:01,727 --> 01:53:05,187
+Again, let's give a break till 11.
+
+585
+01:53:06,547 --> 01:53:10,007
+Buraya kadar anlaşılmayan bir şey var mı arkadaşlar?
+
+586
+01:53:12,007 --> 01:53:14,087
+Ne yapmaya çalışıyoruz?
+
+587
+01:53:15,647 --> 01:53:18,467
+İki dil, regular ise.
+
+588
+01:53:19,699 --> 01:53:37,840
+Bunların birleşimi, unionı, concatenation'ı yani ekleme diyebiliriz, eklemesi, star'ı, bütün bunlar da regular'dır. Bunları ispat ede de gidiyoruz.
+
+589
+01:53:38,600 --> 01:53:46,199
+İspat etme yöntemimiz ne? Mesela union için, birleşim için ne yapıyoruz?
+
+590
+01:53:47,412 --> 01:54:03,492
+Birleşim dilinin dizelerini kabul eden bir NFA oluşturuyoruz. Eğer böyle bir NFA oluşturabiliyorsak nedir o? Regular'dır.
+
+591
+01:54:04,712 --> 01:54:13,272
+Benzer şekilde eklemeyi de öyle yaptık. Ekleme dilini kabul eden bir NFA oluşturduk. Demek ki ekleme dili regular.
+
+592
+01:54:13,872 --> 01:54:22,352
+Burada da aynısını yapacağız. Star yıldız operasyonunu kabul eden bir NFA oluşturacağız.
+
+593
+01:54:23,052 --> 01:54:30,352
+Diyeceğiz ki yıldız operasyonu sonucu oluşan diller regulardır diyeceğiz. Böyle böyle gideceğiz.
+
+594
+01:54:31,192 --> 01:54:34,692
+Saat 11'e kadar bir ara verelim arkadaşlar.
+
+595
+02:06:05,844 --> 02:06:08,523
+Arkadaşlar, tekrar merhabalar. Sesim geliyor mu?
+
+596
+02:06:15,923 --> 02:06:16,543
+Diliyorum.
+
+597
+02:06:17,743 --> 02:06:18,984
+Peki, teşekkürler.
+
+598
+02:06:21,064 --> 02:06:21,703
+Teşekkürler hocam.
+
+599
+02:06:23,024 --> 02:06:23,663
+Sağ olun.
+
+600
+02:06:34,836 --> 02:06:36,296
+Ekran paylaşmaya payan.
+
+601
+02:06:49,587 --> 02:06:55,467
+So again, let's talk about star operation.
+
+602
+02:06:57,787 --> 02:07:00,907
+Now consider this new NFA.
+
+603
+02:07:05,171 --> 02:07:08,619
+Bu NFA'nin bu NFA'nin o
+
+604
+02:07:12,020 --> 02:07:14,940
+Original automaton that accepts L.
+
+605
+02:07:18,100 --> 02:07:25,980
+And we changed the accepting state into rejecting state.
+
+606
+02:07:26,980 --> 02:07:36,539
+But we add an epsilon, epsilon transition to a new accept state.
+
+607
+02:07:36,539 --> 02:07:38,960
+And this new accept state.
+
+608
+02:07:39,572 --> 02:07:42,671
+will also be the new initial state.
+
+609
+02:07:43,832 --> 02:07:48,591
+And from this new initial state and new accepting state,
+
+610
+02:07:49,412 --> 02:07:54,131
+we add an epsilon transition to the original initial state.
+
+611
+02:07:56,231 --> 02:08:03,771
+And any string in the L star,
+
+612
+02:08:04,884 --> 02:08:07,384
+will be accepted by this NFA.
+
+613
+02:08:10,724 --> 02:08:14,503
+So, L star is regular.
+
+614
+02:08:22,452 --> 02:08:24,852
+Where did this come from?
+
+615
+02:08:26,552 --> 02:08:30,772
+Ekranda bir çizgi var. Herhalde anotasyonla mı çizdim ben onu?
+
+616
+02:08:46,515 --> 02:08:48,215
+Let's look at this example.
+
+617
+02:08:50,335 --> 02:08:57,735
+L1 is the, we know L1, A to the N, B, N, A to the N and B.
+
+618
+02:08:58,735 --> 02:09:04,455
+And let's consider the star of this set.
+
+619
+02:09:05,475 --> 02:09:08,735
+And we create a new NFA.
+
+620
+02:09:13,300 --> 02:09:17,440
+by the way I described before.
+
+621
+02:09:18,820 --> 02:09:24,240
+And let's consider some cases.
+
+622
+02:09:25,060 --> 02:09:38,860
+For example, what happens with A to A, B, A, A, B?
+
+623
+02:09:43,475 --> 02:09:52,036
+And notice that this is concatenation of AB and AAB.
+
+624
+02:09:56,595 --> 02:10:02,275
+Now, initially, we start with an accepting state.
+
+625
+02:10:03,395 --> 02:10:10,435
+Immediately, because of the epsilon transition, we also come here.
+
+626
+02:10:11,507 --> 02:10:19,747
+So, without reading anything, without reading anything, two states are active.
+
+627
+02:10:21,347 --> 02:10:29,728
+This accepting initial state and this rejecting old initial state.
+
+628
+02:10:30,807 --> 02:10:32,887
+And we read this A.
+
+629
+02:10:34,804 --> 02:10:43,804
+So, we are still on the state, this state dies because it cannot consume A.
+
+630
+02:10:43,804 --> 02:10:50,644
+Then with B, we come here, with this B.
+
+631
+02:10:52,003 --> 02:11:00,724
+Immediately, because of this null transition, this activates.
+
+632
+02:11:01,279 --> 02:11:05,380
+And again, because of the null transition, this activates.
+
+633
+02:11:06,380 --> 02:11:15,460
+So when we read AB, all of these three states become active.
+
+634
+02:11:16,119 --> 02:11:17,180
+They are all active.
+
+635
+02:11:21,076 --> 02:11:24,695
+Let me clean this a bit.
+
+636
+02:11:29,295 --> 02:11:29,675
+Okay.
+
+637
+02:11:32,395 --> 02:11:41,275
+So at this point, all three of these states are active and we read A and B.
+
+638
+02:11:42,355 --> 02:11:43,595
+We are here.
+
+639
+02:11:44,475 --> 02:11:46,835
+Now we will read this A.
+
+640
+02:11:47,604 --> 02:11:49,204
+Let me read this A.
+
+641
+02:11:50,464 --> 02:11:51,844
+What happens?
+
+642
+02:11:52,724 --> 02:11:54,184
+This state dies.
+
+643
+02:11:54,964 --> 02:11:59,724
+This state dies because those cannot consume A.
+
+644
+02:12:00,384 --> 02:12:08,024
+But this state reads A and loops back to itself.
+
+645
+02:12:09,024 --> 02:12:12,064
+Now, we read this A again.
+
+646
+02:12:12,724 --> 02:12:16,164
+We look back to the second state.
+
+647
+02:12:17,404 --> 02:12:18,704
+Now we read B.
+
+648
+02:12:20,344 --> 02:12:21,624
+When we read B,
+
+649
+02:12:23,204 --> 02:12:24,624
+let me clean this.
+
+650
+02:12:31,347 --> 02:12:47,667
+When we read B, we enter this state, and because of the null transition, also we enter this state, and because of the null transition, we enter this state too.
+
+651
+02:12:47,667 --> 02:12:56,347
+So again, after we read B, all three of these states are active.
+
+652
+02:12:57,811 --> 02:13:00,391
+All three of these states are active.
+
+653
+02:13:06,163 --> 02:13:09,523
+And we just finished all of the inputs.
+
+654
+02:13:10,843 --> 02:13:17,763
+And amongst these active states, one is accepting.
+
+655
+02:13:18,763 --> 02:13:20,243
+So we accept.
+
+656
+02:13:32,851 --> 02:13:34,131
+Okay, let's continue.
+
+657
+02:13:37,211 --> 02:13:40,731
+Reverse of a language.
+
+658
+02:13:41,431 --> 02:13:43,451
+What was the reverse of a language?
+
+659
+02:13:45,572 --> 02:13:51,811
+So, if W is in language L,
+
+660
+02:13:55,444 --> 02:14:03,083
+W's reverse will be in the language else reverse.
+
+661
+02:14:04,384 --> 02:14:13,484
+So all of the strings in else reverse are reverses of the original language.
+
+662
+02:14:15,484 --> 02:14:18,384
+Now, for this,
+
+663
+02:14:20,532 --> 02:14:23,171
+Again, we will create a new NFA.
+
+664
+02:14:25,731 --> 02:14:27,032
+Like this.
+
+665
+02:14:31,731 --> 02:14:38,452
+But in the new NFA, first, we will reverse all transitions.
+
+666
+02:14:40,072 --> 02:14:43,952
+We will reverse the directions of all these transitions.
+
+667
+02:14:44,952 --> 02:14:47,952
+We will make the initial accept state.
+
+668
+02:14:49,891 --> 02:14:53,332
+We will make initial state accept state.
+
+669
+02:14:53,332 --> 02:14:55,992
+So this original state.
+
+670
+02:14:57,300 --> 02:14:59,659
+will be an accept state.
+
+671
+02:15:00,659 --> 02:15:10,940
+And the final accepting state in the original will be initial non-accepting state.
+
+672
+02:15:13,260 --> 02:15:17,020
+So we are reversing everything.
+
+673
+02:15:19,020 --> 02:15:24,280
+An example here, again, the same.
+
+674
+02:15:25,043 --> 02:15:28,203
+A to the N, B, Langevich.
+
+675
+02:15:29,283 --> 02:15:33,203
+We now recognize this automaton, this machine.
+
+676
+02:15:34,583 --> 02:15:41,724
+The reverse of the Langevich are patterns like this, B, A to the N.
+
+677
+02:15:43,543 --> 02:15:51,063
+And the NFA we construct from original is
+
+678
+02:15:52,916 --> 02:15:57,015
+For this initial state, we create an accept state.
+
+679
+02:15:57,735 --> 02:16:03,956
+For the final accept state, we create an initial state.
+
+680
+02:16:07,636 --> 02:16:13,636
+And since this arrow comes from nowhere, this becomes initial state.
+
+681
+02:16:14,636 --> 02:16:25,636
+And I think it's easy to see that this new NFA accepts L1's universes.
+
+682
+02:16:26,636 --> 02:16:31,636
+Now, since there's an NFA for it, it is regular.
+
+683
+02:16:46,515 --> 02:16:47,876
+Let's look at complement.
+
+684
+02:16:53,012 --> 02:16:55,292
+Komplement of a language.
+
+685
+02:16:58,332 --> 02:17:05,452
+Again, we will create a new automaton for this.
+
+686
+02:17:06,512 --> 02:17:13,652
+This will be our new automaton that accepts as Komplement.
+
+687
+02:17:13,652 --> 02:17:15,652
+And...
+
+688
+02:17:20,051 --> 02:17:21,971
+We need to be careful here.
+
+689
+02:17:23,752 --> 02:17:30,072
+We take a DFA that accepts original language.
+
+690
+02:17:32,211 --> 02:17:38,851
+And we accept, we make accepts non-accepting.
+
+691
+02:17:39,272 --> 02:17:41,971
+We make non-accepting accepting.
+
+692
+02:17:41,971 --> 02:17:45,971
+So, for example, you have a...
+
+693
+02:17:47,987 --> 02:17:57,967
+non-accepting state, it will be accepting. You have an accepting state in the new NFA, it will be non-accepting.
+
+694
+02:17:59,247 --> 02:18:12,647
+But this DFA is written in red. It's emphasized because we cannot do that in NFAs.
+
+695
+02:18:13,587 --> 02:18:19,347
+So, we need to consider a DFA that accepts the language.
+
+696
+02:18:20,347 --> 02:18:23,227
+Let's look at some examples here.
+
+697
+02:18:25,407 --> 02:18:30,027
+For example, A to do and B again.
+
+698
+02:18:31,628 --> 02:18:37,948
+Now, this is a DFA that accepts L1.
+
+699
+02:18:40,027 --> 02:18:40,288
+Okay.
+
+700
+02:18:41,459 --> 02:19:07,279
+And to get to the complement, or to create an NFA that accepts the complement, what do we do? We just change non-accepting to accepting, accepting to non-accepting, non-accepting to accepting. That's all.
+
+701
+02:19:09,299 --> 02:19:10,180
+Very simple.
+
+702
+02:19:11,879 --> 02:19:15,180
+And we see that this language,
+
+703
+02:19:18,039 --> 02:19:26,979
+it's not hard to confirm that this language accepts strings from the complement.
+
+704
+02:19:30,772 --> 02:19:32,852
+And what's the complement, by the way?
+
+705
+02:19:34,592 --> 02:19:41,012
+Complement is star difference originals.
+
+706
+02:19:47,028 --> 02:19:53,927
+So, this one is L1 star.
+
+707
+02:19:57,971 --> 02:20:02,291
+Difference operation and the original L1.
+
+708
+02:20:04,112 --> 02:20:07,031
+This is our complement.
+
+709
+02:20:08,031 --> 02:20:09,711
+Complement language.
+
+710
+02:20:16,724 --> 02:20:33,904
+Now, be careful. NFAs cannot be used for obtaining complements with this method. Let's consider this example. Let's consider this NFA.
+
+711
+02:20:37,427 --> 02:20:49,448
+This NFA, and its language, its language is empty set. It accepts nothing. Okay.
+
+712
+02:20:53,747 --> 02:21:00,007
+And the complement is empty set should be the star.
+
+713
+02:21:02,268 --> 02:21:06,808
+All possible strings that you can obtain with that alphabet.
+
+714
+02:21:08,948 --> 02:21:16,507
+But if we try to convert, if we try to take the complement,
+
+715
+02:21:17,811 --> 02:21:32,231
+Of this NFA, using the technique before, the technique we just learned earlier, we will need to make this non-accepting state accept.
+
+716
+02:21:33,231 --> 02:21:35,971
+And let's see, what will this be?
+
+717
+02:21:36,971 --> 02:21:41,851
+Well, this accepts.
+
+718
+02:21:42,708 --> 02:21:49,468
+only null string, meaning at the beginning, it is accepting without reading anything.
+
+719
+02:21:51,028 --> 02:21:55,028
+But after it reads anything, it rejects.
+
+720
+02:21:56,288 --> 02:22:00,948
+And notice that these two are different.
+
+721
+02:22:01,087 --> 02:22:02,028
+They are not the same.
+
+722
+02:22:04,048 --> 02:22:09,347
+On one side, we have all possible strings.
+
+723
+02:22:10,420 --> 02:22:18,819
+On the other side, we only have a set width element null.
+
+724
+02:22:20,260 --> 02:22:32,080
+So be careful when you want to obtain complement, make sure you start with a DFA, not with an NFA.
+
+725
+02:22:38,388 --> 02:22:38,888
+Okay.
+
+726
+02:22:40,888 --> 02:22:41,747
+Intersection.
+
+727
+02:22:44,328 --> 02:22:47,388
+Now, intersection, again, what do we want?
+
+728
+02:22:47,388 --> 02:22:48,068
+We want,
+
+729
+02:22:51,448 --> 02:22:57,948
+we know that language L1 is regular, language L2 is regular,
+
+730
+02:22:57,948 --> 02:23:01,407
+and we want to show that.
+
+731
+02:23:02,963 --> 02:23:06,543
+The intersection language is also regular.
+
+732
+02:23:08,543 --> 02:23:17,563
+Here, we can use De Morgan's law directly.
+
+733
+02:23:18,943 --> 02:23:25,543
+Now, we know that L1 and L2 are regular, right?
+
+734
+02:23:26,223 --> 02:23:30,123
+Now, De Morgan's law says that
+
+735
+02:23:31,028 --> 02:23:33,768
+Intersection of two sets
+
+736
+02:23:33,768 --> 02:23:37,007
+Is
+
+737
+02:23:37,007 --> 02:23:40,808
+Equal to
+
+738
+02:23:40,808 --> 02:23:44,988
+Union of their
+
+739
+02:23:44,988 --> 02:23:46,167
+Complements
+
+740
+02:23:46,167 --> 02:23:47,247
+Complement
+
+741
+02:23:47,247 --> 02:23:52,727
+So you will take the complement of both sets
+
+742
+02:23:52,727 --> 02:23:54,788
+You will take a union
+
+743
+02:23:54,788 --> 02:23:58,308
+Then take the complement of the union
+
+744
+02:23:59,219 --> 02:24:11,380
+This is called the Morgan's Law. Probably you know this already. If you don't know, there's a rule for sets. This is valid for all sets.
+
+745
+02:24:15,443 --> 02:24:41,723
+So now, using the Morgans law and the previous operations we have, we can come to intersection. So we will start by L1 and L2, and they are both regular. Let's take their complement. We will doing, we are taking their complement.
+
+746
+02:24:42,579 --> 02:24:45,700
+And both complements are regular, we just learned.
+
+747
+02:24:47,139 --> 02:24:51,239
+Now, then we are taking the union, like here.
+
+748
+02:24:52,880 --> 02:25:00,979
+Union of two sets, union of two regular languages is regular, we just learned.
+
+749
+02:25:02,079 --> 02:25:03,239
+So this is regular.
+
+750
+02:25:04,899 --> 02:25:09,239
+And finally, we are taking the complement of this.
+
+751
+02:25:10,611 --> 02:25:20,611
+Here, again, since this union is regular, complement of that will be regular too.
+
+752
+02:25:21,611 --> 02:25:28,611
+And this is now by the Morgan's law, just L1 intersection L2.
+
+753
+02:25:29,611 --> 02:25:36,611
+So, using the properties we already learned, we can easily now show that.
+
+754
+02:25:37,523 --> 02:25:41,291
+İntrolandırma, iki ilgilenme de bir ilgilenme de bir ilgilenme.
+
+755
+02:25:45,172 --> 02:25:48,592
+So, there is an example here.
+
+756
+02:25:50,231 --> 02:25:54,372
+For example, L1 is A to the NB.
+
+757
+02:25:55,812 --> 02:25:59,012
+And let's say L2 has AB and BA.
+
+758
+02:26:00,292 --> 02:26:04,332
+Now, their intersection will be just AB.
+
+759
+02:26:07,012 --> 02:26:09,372
+And it is regular.
+
+760
+02:26:15,316 --> 02:26:22,136
+We can also show this in another way.
+
+761
+02:26:25,195 --> 02:26:27,556
+Let's look at this other proof.
+
+762
+02:26:29,096 --> 02:26:37,216
+So we have machine M1, which is a DFA for language L1.
+
+763
+02:26:38,216 --> 02:26:40,656
+And we have machine M2.
+
+764
+02:26:41,652 --> 02:26:44,132
+DFA, DFA, L2.
+
+765
+02:26:45,432 --> 02:26:52,691
+Now, we want to construct a new DFA, M, that accepts this intersection.
+
+766
+02:26:54,691 --> 02:27:03,932
+Now, M will simulate M1 and M2 in parallel.
+
+767
+02:27:09,492 --> 02:27:31,412
+So, for each state in M1, for each state QI in M1, and for each state PJ in M2, we construct a new state in M.
+
+768
+02:27:32,115 --> 02:27:37,015
+And its label is QI, PJ.
+
+769
+02:27:40,775 --> 02:27:48,155
+And for each transition from Q1 to Q2,
+
+770
+02:27:49,835 --> 02:27:53,456
+when we read the symbol A,
+
+771
+02:27:57,747 --> 02:28:06,207
+We add a new transition for any state that includes Q1 and Q2.
+
+772
+02:28:08,547 --> 02:28:21,667
+And similarly, for each, we also merge P1 to P2 transitions here.
+
+773
+02:28:23,667 --> 02:28:24,468
+So,
+
+774
+02:28:25,332 --> 02:28:30,272
+Q1, P1, Q2, P2.
+
+775
+02:28:30,432 --> 02:28:41,792
+This transition is added because we have a symbol that transitions Q1 to Q2 and Q1 to P2.
+
+776
+02:28:45,203 --> 02:28:58,443
+Now, we will combine two initial states into a new initial state with label Q0 and P0.
+
+777
+02:29:01,443 --> 02:29:08,443
+And for new, for each accepting state,
+
+778
+02:29:12,500 --> 02:29:31,819
+From M1 and M2, we create new accepting states that include QI and PJ, so these two, and QI and PK, so again this QI and this PK.
+
+779
+02:29:36,244 --> 02:29:38,943
+So we create these accepting states.
+
+780
+02:29:41,084 --> 02:29:43,344
+There is an example here.
+
+781
+02:29:50,227 --> 02:29:52,727
+Let's look at these languages.
+
+782
+02:29:57,236 --> 02:30:16,976
+So, this is A to do and B. We know this language. Here is a DFA for it. It reads as much A's as you want. And then with a B, it goes to Q1.
+
+783
+02:30:21,459 --> 02:30:36,840
+And Q1, when read A on A or B, goes to transitions to this trap state, and trap state when read A and B loops back.
+
+784
+02:30:38,139 --> 02:30:48,579
+And the other language is A, B to the M, and M is larger than or equal to zero.
+
+785
+02:30:50,036 --> 02:30:55,335
+So here, initially, we are on P0.
+
+786
+02:30:56,396 --> 02:30:59,396
+When we read A, we go to P1.
+
+787
+02:31:00,335 --> 02:31:04,595
+And P1, P1 is an accepting state.
+
+788
+02:31:05,195 --> 02:31:12,115
+As long as we read Bs, we stay on P1, which is an accepting state.
+
+789
+02:31:13,896 --> 02:31:16,216
+If we read an A,
+
+790
+02:31:17,203 --> 02:31:21,723
+After these Bs, now we go to a trap state.
+
+791
+02:31:23,103 --> 02:31:27,243
+And at the beginning, we must read an A.
+
+792
+02:31:27,363 --> 02:31:31,363
+If we read a B, again, we go to this trap state.
+
+793
+02:31:31,484 --> 02:31:34,683
+So L2 and L1.
+
+794
+02:31:35,463 --> 02:31:40,443
+Now, we'll try to create this intersection.
+
+795
+02:31:42,384 --> 02:31:42,903
+Intersection.
+
+796
+02:31:43,540 --> 02:31:45,380
+NFA or DFA?
+
+797
+02:31:51,987 --> 02:31:57,067
+And this language only accepts, if you think about it,
+
+798
+02:32:02,100 --> 02:32:09,600
+Intersection of A to the end, A to the end, B, and A, B to the end.
+
+799
+02:32:10,600 --> 02:32:14,200
+It gives you this simple language, A, B.
+
+800
+02:32:14,959 --> 02:32:25,040
+Normally, we can write a DFA for this very easily without all this machinery.
+
+801
+02:32:25,040 --> 02:32:27,360
+So, for example,
+
+802
+02:32:29,523 --> 02:32:31,183
+I can write this.
+
+803
+02:32:45,172 --> 02:32:49,551
+A, D.
+
+804
+02:32:51,711 --> 02:33:00,292
+So, since I wrote this DFA, this language is regular.
+
+805
+02:33:00,292 --> 02:33:03,752
+So intersectional Ds are regular, very easy.
+
+806
+02:33:03,752 --> 02:33:08,332
+But, sorry.
+
+807
+02:35:04,659 --> 02:35:05,559
+Evet arkadaşlar.
+
+808
+02:35:11,252 --> 02:35:12,171
+intersection
+
+809
+02:35:16,404 --> 02:35:23,623
+Dillerin intersection'ının da regular olduğunu gösteriyoruz.
+
+810
+02:35:24,664 --> 02:35:39,263
+Demorgans kuralıyla yeni bir DFA oluşturmadan direkt gösterdik ama bir de bir DFA oluşturarak da gösterebiliriz bunu.
+
+811
+02:35:40,659 --> 02:36:02,079
+Ve ihtiyaç da olabilir. Yani iki otomatonun kesişimini bulun gibi bir soru da olabilir. Veya iki dilin kesişimini kabul eden otomatonu bulun gibi bir soru da olabilir.
+
+812
+02:36:08,020 --> 02:36:28,560
+Prosedür verdik. Bir örnek yapıyoruz ama ben örneğe baktım. O prosedüre gerek kalmadan çok basit bir şekilde DFA'yı tak diye yazabiliyoruz. Çünkü intersection çok basit burada ama her zaman da böyle olmayabilir.
+
+813
+02:36:36,180 --> 02:36:43,319
+Bir kesişim elde etmeniz gerekebilir. Belki bunun programını yazmanız gerekebilir.
+
+814
+02:36:45,720 --> 02:36:47,979
+O zaman nasıl yapıyoruz?
+
+815
+02:36:52,200 --> 02:37:00,159
+Tabii bu yan yana olmadığı için bu resimler, bunları anlamakta güçlük çekiyoruz, takip etmekte.
+
+816
+02:37:01,319 --> 02:37:03,319
+Ben şöyle bir bunları...
+
+817
+02:37:05,747 --> 02:37:17,007
+Yan yana görmeye çalışayım. Size de yan yana göstermeye çalışacağım. Nasıl yapabilirim bunu?
+
+818
+02:37:21,012 --> 02:37:22,152
+Nasıl yapabilirim?
+
+819
+02:37:34,739 --> 02:37:35,340
+Slight.
+
+820
+02:37:52,948 --> 02:37:55,228
+Büyüteç'i açmaya çalışıyorum şimdi.
+
+821
+02:38:14,515 --> 02:38:16,975
+Çeçi ortadan çekeyim.
+
+822
+02:38:19,435 --> 02:38:22,835
+Sanırım şu halde gösterebileceğim size.
+
+823
+02:38:23,115 --> 02:38:25,536
+Tabii ekran şeyini de kapattım.
+
+824
+02:38:30,195 --> 02:38:38,396
+Müyüteçi açtığımızda iki tane fare olduğun için aklım gidiyor.
+
+825
+02:38:43,956 --> 02:38:46,976
+Nereydi, nereyi gösteriyordum, neydi falan gibi.
+
+826
+02:38:48,236 --> 02:38:51,115
+Öncelikle ekran paylaşımını açayım.
+
+827
+02:38:54,036 --> 02:38:57,256
+Tekrar tam ekran paylaşım yapacağım.
+
+828
+02:38:58,736 --> 02:39:02,236
+Bir dakika, büyüteçi paylaşabilirim aslında.
+
+829
+02:39:15,700 --> 02:39:24,040
+Neyi görüyorsunuz? Büyütecin büyüttüğü kısmı mı görüyorsunuz yoksa büyütecin kontrollerini mi görüyorsunuz?
+
+830
+02:39:24,500 --> 02:39:26,159
+Büyütecin kontrollerini hocam.
+
+831
+02:39:26,659 --> 02:39:33,200
+Olmadı. O iş olmadı. O zaman tam ekran paylaşma yapmam lazım.
+
+832
+02:39:44,180 --> 02:39:44,799
+Evet.
+
+833
+02:39:45,560 --> 02:39:47,040
+Shingi.
+
+834
+02:39:56,852 --> 02:39:57,492
+Nintendo
+
+835
+02:40:03,123 --> 02:40:08,443
+Evet. Burada iş yapmakta bayağı mesele olacak şimdi ama.
+
+836
+02:40:10,403 --> 02:40:23,324
+Evet, yani şöyle gözümüzle takip etmeye çalışalım. Fareyi oynatınca mühitecin gösterdiği yerler de birbirine karışıyor falan. Ancak bu kadarını yapabildik.
+
+837
+02:40:30,995 --> 02:40:42,895
+Mesela Q0'dan Q1'e B gidiyor. Değil mi? Onu nereye koymuşlar? Q0'dan Q1'e B gidiyor.
+
+838
+02:40:50,291 --> 02:40:51,891
+Aşağıya koymuşlar.
+
+839
+02:40:53,331 --> 02:40:54,671
+Şöyle yapayım ya.
+
+840
+02:40:57,871 --> 02:41:00,592
+Kapatacağım ben. Bu magnifier olmadı.
+
+841
+02:41:11,092 --> 02:41:13,391
+Zoom'un anotasyonlarını kullanalım.
+
+842
+02:41:20,147 --> 02:41:24,387
+Tamam. Burası küçük ama yine de görüyorsunuzdur umarım.
+
+843
+02:41:33,043 --> 02:41:35,783
+Gereğinden fazla uğraştım ama taktım biraz.
+
+844
+02:41:37,703 --> 02:41:41,623
+Şimdi tahminim, siz şu şekilde bayağı bir yük göreceksiniz.
+
+845
+02:42:00,755 --> 02:42:07,955
+Evet, şu anda bayağı büyük görüyorsunuzdur diye düşünüyorum. Çünkü görünen ekranın büyük bir kısmında o şekiller var.
+
+846
+02:42:10,435 --> 02:42:12,075
+Daha da büyütebilirim.
+
+847
+02:42:20,595 --> 02:42:37,036
+Ben biraz gözlerimi kısmam gerekiyor ama sorun değil. Zoom'un da anotasyonlarını açayım. Evet. Şimdi biraz nasıl olmuş takip etmek istiyorum da o yüzden böyle zorladım.
+
+848
+02:42:37,036 --> 02:42:48,155
+Şimdi şurada Q0'dan başlayalım. Q0'ın kendisine bir A var. Burada da P0'dan P1'e bir A var. Değil mi?
+
+849
+02:42:49,203 --> 02:42:53,203
+Şimdi başlangıcımızı Q0 ve P0 olarak oluşturduk.
+
+850
+02:42:56,203 --> 02:43:07,324
+Yani iki şeyin, DFA'nin başlangıcını içeren bir başlangıç oluşturduk. Q0'dan ve P0'dan oluşan.
+
+851
+02:43:08,324 --> 02:43:16,504
+Şimdi şu soruyu soracağız. Bu DFA ya, hem A'da ne yaptığını göstermemiz lazım, hem B'de ne yaptığını.
+
+852
+02:43:17,587 --> 02:43:29,727
+A'da ne yapıyor diye baktığımızda, Q0, A'da Q0'a gidiyor, P0, A'da P1'e gidiyor. Dolayısıyla Q0 ve P1'e gidiyor A.
+
+853
+02:43:32,667 --> 02:43:42,108
+B ne oluyor? B. Q0'da P, Q1'e gidiyor. İyice karıştı.
+
+854
+02:43:43,507 --> 02:43:57,567
+B'de Q0, Q1'e gidiyor, P0, P2'ye gidiyor. Dolayısıyla Q1 ve P2'yi bir araya getirip bu sefer oluşturuyoruz.
+
+855
+02:43:58,427 --> 02:44:07,367
+Şimdi iki yeni state oluştu. Her bir state için A'da ne oluyor, B'de ne oluyor? A'da ne oluyor, B'de ne oluyor? Devam edeceğiz.
+
+856
+02:44:09,556 --> 02:44:16,175
+Bu neydi? Q0, silahimi göremiyorum. P1 mi o?
+
+857
+02:44:21,716 --> 02:44:26,435
+Kalem kayboldu.
+
+858
+02:44:37,780 --> 02:44:40,680
+Örümden tekrar yazıyor. Nasıl geçiyorum acaba?
+
+859
+02:44:46,420 --> 02:44:48,460
+Amotasyum aracını açıp kapatayım.
+
+860
+02:44:48,940 --> 02:44:50,020
+Kalemle geliyor.
+
+861
+02:44:51,020 --> 02:44:52,340
+Şimdi şurayı düşünelim.
+
+862
+02:44:54,240 --> 02:44:55,900
+Q0, P1'deyiz.
+
+863
+02:44:57,780 --> 02:44:59,000
+A alırsa ne olur?
+
+864
+02:44:59,880 --> 02:45:03,700
+Q0, A alırsa yine Q0'a gidiyor.
+
+865
+02:45:05,180 --> 02:45:11,260
+P1, A alırsa P2'ye gidiyor.
+
+866
+02:45:12,595 --> 02:45:17,155
+Q0P2'yi içeren bir yere gidecek. Yeni bir state oluştu.
+
+867
+02:45:17,975 --> 02:45:22,355
+Şimdi bu şekilde devam ediyoruz. Ne zamana kadar?
+
+868
+02:45:24,216 --> 02:45:35,216
+Yeni bir artık, yeni bir state oluşmuyor. Mevcut statelerimizin hepsinin her sembolü de neye geçtiğini gördük, çizdik.
+
+869
+02:45:36,371 --> 02:45:55,432
+En son neyi yapmamız lazım? Accept state'leri yapmamız lazım, belirlememiz lazım. Q1 accept state, P1 accept state. O zaman burada Q1 bulunanlar
+
+870
+02:45:59,059 --> 02:45:59,880
+Ön...
+
+871
+02:46:06,548 --> 02:46:13,567
+Evet, ikisini birden bulunanlar yaptı yalnız. Yani hem Q1 olanları hem de P1 olanları yapmadı.
+
+872
+02:46:17,012 --> 02:46:38,092
+Buna dikkat etmek lazım. Ben de ilk defa görüyorum bu prosedürü, bu slide'da. O yüzden ben de öğreniyorum bir yerde. Yani direkt şey diye girecektim ben. Q1'lerin hepsine accept yapalım falan diye. Fakat hem Q1 hem P1 olursa accept yapıyoruz.
+
+873
+02:48:08,308 --> 02:48:17,808
+Evet. Bu örnek sayesinde neyi görmüş olduk?
+
+874
+02:48:21,299 --> 02:48:23,379
+Tekrar normal moda geçeyim.
+
+875
+02:48:26,079 --> 02:48:45,200
+Bu örnek sayesinde verilen bir DFA'yin başka bir DFA ile kesişimini kabul eden, onların dillerinin kesişimini kabul eden DFA'yı oluşturmayı öğrenmiş olduk.
+
+876
+02:48:46,200 --> 02:48:47,239
+Güzel bir örnek oldu.
+
+877
+02:48:49,652 --> 02:48:58,332
+So here, the whole process is summarized.
+
+878
+02:48:58,332 --> 02:49:06,772
+So let's, since I already showed it on an example, I'll just skip these parts.
+
+879
+02:49:13,332 --> 02:49:28,391
+At the end, this new DFA can accept the intersection of these two languages.
+
+880
+02:49:35,860 --> 02:49:45,220
+Okay, with this, we have finished now regular properties.ppt.
+
+881
+02:49:53,043 --> 02:50:13,703
+[öğrenci], intersection olduğu için ikisinin de ortak olduğu kısım accept olmaz mı sadece demiş. Evet, öyle oluyor. Sanırım bu düşünceniz doğru. Her ikisinin acceptlerini içereni accept olarak kabul ettik en sonunda.
+
+882
+02:50:20,147 --> 02:50:41,147
+En başta, slide'ın başında ne demiştik? Aslında şu slide, bu slide'ı ne yaptık? İspat edeydi gittik. İki düzenli dil varsa, regular language varsa, bunların...
+
+883
+02:50:42,260 --> 02:50:57,060
+Birleşimi, Union'ı regular'dır. Concatenation'ı eklemesi yan yana regular'dır. Star'ı regular'dır. Tersi regular'dır. Komplementi regular'dır. Kesişimi regular'dır dedik arkadaşlar.
+
+884
+02:51:03,796 --> 02:51:21,896
+Bugünlük burada bitireceğim. Paylaşımda bir kısım egzersizler var. Exercises dizinin altında. Onları yapın arkadaşlar. Kitapta da güzel egzersizler var. Sipser'in kitabı çok okunaklı bir kitap.
+
+885
+02:51:22,708 --> 02:51:26,788
+Arkasındaki egzersizleri yapın, derse hazırlanmak için.
+
+886
+02:51:27,868 --> 02:51:33,108
+Bu haftalık bu kadar. Başka sormak istediğiniz bir şey var mı? Konuşacağımız bir şey.
+
+887
+02:51:38,260 --> 02:51:44,540
+Yok gibi gözüküyor. İyi haftalar, iyi günler diliyorum arkadaşlar.
