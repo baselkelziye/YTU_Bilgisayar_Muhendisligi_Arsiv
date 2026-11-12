@@ -1,0 +1,1687 @@
+1
+00:01:49,140 --> 00:02:10,060
+Arkadaşlar, günaydın. Merhabalar. Geçen hafta kaldığımız noktadan devam edeceğiz. Cache yapısına geçmiştik hatırlayacak olursanız. Ön bellek yapısına ve ön bellek yapısıyla ilgili olarak memory hiyerarşisi içerisinde cache'in yerinden bahsetmiştik. Sonrasında cache'in ver erişiminde hız artırımına yönelik bir katkısı olduğunu söylemiştik.
+
+2
+00:02:10,451 --> 00:02:22,271
+Farklı cache tiplerinden bahsetmiştik. DirectMapped bunlardan bir tanesiydi. Diğeri Full Associated ve son olarak Set Associated cache yapılarından bahsetmiştik.
+
+3
+00:02:33,747 --> 00:02:49,327
+Map'leniyordu doğrudan karşılığı bir cache satırı oluyordu. Dolayısıyla dikkat edeceğimiz iki nokta vardı. Bunlardan bir tanesi cache'in blok genişliği. Bu şu demek, bir cache satırı kaç byte veri tutabilir.
+
+4
+00:02:50,747 --> 00:02:58,327
+Bundan dolayı da cache'in satırına adresin hangi bölgesi denk geliyor bunu tanımlamıştık.
+
+5
+00:02:59,183 --> 00:03:25,063
+Buna ilişkin block size 1 byte olan bir örnek üzerinden konuyu anlatmıştık. Sonrasında da 2 byte olursa nasıl ele almalıyız ondan bahsetmiştik. Şimdi buradan kalan noktadan devam edeceğiz. Bir de bugün saat 11'de kısa sınavımız var. Onu tanımladım sistemde. 2 saat dersimiz olacak. Sonrasında kısa sınava zaman ayıracağız. 50 dakika süresince kısa sınav yapacaksınız.
+
+6
+00:03:25,524 --> 00:03:46,584
+Klasik bir sınav olacak. Sistemden dosyayı indireceksiniz, soru dosyasını. Sorulara çözümlerinizi elle veya bilgisayar üzerinde yapıp neyse. Sonrasında tek bir pdf haline getirip bunu tekrar sisteme yüklemeniz gerekiyor. Dolayısıyla kısa sınavımız saat 11'de başlayacak olan bir klasik sınav. Bunu söylemiş olayım.
+
+7
+00:03:46,584 --> 00:03:50,924
+Şimdi kaldığımız noktadan devam edelim geçen hafta itibariyle.
+
+8
+00:03:54,996 --> 00:03:57,555
+Şöyle burayı örneği vermiştik.
+
+9
+00:03:58,915 --> 00:04:07,836
+Şimdi temel olarak bir memory adresinin cache karşılığını bulabilmek için bir partitioning yapıyorduk.
+
+10
+00:04:07,836 --> 00:04:16,456
+Bu partitioning ile ilgili olarak çeşitli alanlarımız vardı. Bu alanlardan bahsedelim şimdi.
+
+11
+00:04:18,355 --> 00:04:36,936
+Kullanılmış olan mimarinin Word genişliği bizim için önemli. Örneğin 8086 mikro işlemcisi toplamda 16 bitlik bir veri yoluna sahip. Dolayısıyla burada Word genişliğinin 16 bit olduğunu veya 2 byte olduğunu söyleyebiliriz.
+
+12
+00:04:46,132 --> 00:05:09,772
+4 word içerecek. Bunun anlamı da şu. 4x2. 2 de nereden geldi? Her bir word'ümüz 2 byte. Toplamda 8 byte veri kaplıyor demek. Öyleyse ben cache'e bir veri çektiğim zaman memory'den, cache'ten erişim yapmak istedim. Cache'te bulamadım. Memory'de gittim, buldum. Sonra cache'e geri çekiyorum. Süreç bir şekilde işliyor. Dolayısıyla cache'e veri çektiğim zaman cache'e bir seferde...
+
+13
+00:05:10,259 --> 00:05:31,420
+8 byte'lık veri aktarıyorum. Bu 8 byte'lık veriyi şöyle değerlendirmem lazım. Birinci word, ikinci word, üçüncü word ve dördüncü word olarak peş peşe adreslerde yerleşik olan bu dört word'ü cache'e çektim. Ama her bir word'de kendi içerisinde bir düşük anlam byte, yüksek anlam byte. Bir sonraki word'ün düşük anlam byte'i yüksek anlam byte olarak.
+
+14
+00:05:31,824 --> 00:05:52,903
+Yerleşiyor. Dolayısıyla biz burada adresleri partitioning için kullanırken yani alt bölümlere ayırırken bir offset kavramı var. Offset kavramı cache'in bir bloğu içerisinde erişmek istediğim byte en düşük adresten itibaren hangi offsette görece olarak hangi offsette yer aldığını veriyor. Yani offset dediğimiz yapı.
+
+15
+00:05:53,279 --> 00:06:05,360
+Cache satırı içerisinde erişmek istediğim byte'ın kaçıncı sırada olduğunu belirtiyor. Dolayısıyla offset'i de aslında ikiye bölebiliriz. Bunlardan birincisi word offset, ikincisi byte offset olarak düşünebilirsiniz.
+
+16
+00:06:06,179 --> 00:06:20,220
+Dolayısıyla byte offset tanımlanan adresin en düşük anlamlı kısmına karşılık gelecek. Şu demek bu, ben bir cache satırındayım, o cache satırında kaçıncı word'e denk geldiğimi buldum. Daha sonra da o word içerisinde kaçıncı byte'de olduğumu buldum.
+
+17
+00:06:20,528 --> 00:06:30,328
+O süreç veya bölümleme buna göre sıralanıyor. Öncelikle neyi bulduk? Hangi satırda olduğumuzu bulduk. Satır daha anlamlı. Adres alanı olarak daha anlamlı.
+
+18
+00:06:31,067 --> 00:06:41,968
+Sonrasında o blok içerisinde kaçıncı word'de olduğumu buldum. Word offset ikinci anlam sırasında. En düşük anlam sırasında da byte offset var. O word'un kaçıncı byte'ındayım şeklinde. Bunu düşünebiliriz.
+
+19
+00:06:42,324 --> 00:06:59,063
+Yine geçen hafta hatırlayacak olursanız, sadece offset ve index partitioning'i adres için yeterli değil. Erişmek istediğim verinin cache'te olup olmadığını anlamak için ekstra bir veriye daha ihtiyacım var. Bunun sebebi de şuydu hatırlayacak olursanız.
+
+20
+00:06:59,683 --> 00:07:06,663
+Düşük anlamlı byte kısmı, düşük anlamlı adres kısmı, yani index ve offset'i içeren kısımlardan bahsediyorum adres alanı için.
+
+21
+00:07:07,088 --> 00:07:23,408
+Düşük anlamlı adres kısmı birbirine eş değer birden fazla adres değeri vardır. Zaten direct map'in anlamı da bu. Farklı adres bölgeleri şurada gösterelim. Hatırlayacak olursanız farklı adres değerleri aynı cache satırına denk geliyordu direct map cache'te.
+
+22
+00:07:26,004 --> 00:07:33,103
+0. indekse veya 0. satıra gittiğim zaman bu aradığım verinin burada olduğu anlamına gelmiyor.
+
+23
+00:07:33,504 --> 00:07:37,632
+Offset ve indeks haricindeki adres bilgisi olan tag alanının da...
+
+24
+00:07:37,632 --> 00:07:56,151
+Cache'te saklanması gerekiyor. Veriyle birlikte saklanması gerekiyor. Burada her bir satır için bir tane tag alanı yeterli olduğunu söyleyebiliriz. Bu direct map cache için. Çünkü ardışık adresler olduğu için bunların yüksek anlamda adres bölgesi hepsi için ortaklı. Dolayısıyla tek bir tag alanı kullanmam yeterli.
+
+25
+00:07:56,151 --> 00:08:02,271
+Bir başka problem de şuydu hatırlayacak olursanız. Cache daha boşken ben gittim cache'e baktım.
+
+26
+00:08:02,576 --> 00:08:26,975
+Şans eseri benim ilgilendiğim satırda benim bulmak istediğim tag alanıyla aynı değer var. Fakat bu veri, içeride yazan veri valid mi değil mi? Bununla rastgele bir veri olduğu için aslında valid değil. Dolayısıyla benim aradığım veri cache'te yok. Ama şans eseri, aradığım indekste aradığım tag değeri bulunabilir. Yani şans eseri. Dolayısıyla başta daha cache boşken, rastgele değerler varken.
+
+27
+00:08:27,444 --> 00:08:54,663
+Cache'te bir de valid bitiyle ilgili satırın daha önceden doldurulup doldurulmadığını tutmamız gerekiyor. Dolayısıyla veriyi cache'te ararken önce valid bitine bakacağım. Valid biti doğruysa, birse daha sonra ilgili satır için valid biti birse daha sonra tag alanlarını karşılaştıracağım. Cache'teki tag alanıyla benim erişmek istediğim adresin tag alanı birbiriyle örtüşüyor mu? Bu da örtüşüyorsa o zaman aradığım veri cache'tedir diye bunu söyleyebiliyor olacağız arkadaşlar.
+
+28
+00:08:55,892 --> 00:09:21,072
+Şurada da gözümüzün önünde canlansın. Adresi bölüştürdüğümüz zaman, böldüğümüz zaman düşük anlamlı adres bitleri offset'e karşılık geliyor. Bunun tamamını offset değer olarak düşünmeyelim. En düşük anlamlı kısmı byte offset, daha yüksek anlamlı kısmı word offset olacak. Daha sonra index, cache'in hangi satırına denk geldiğini belirten bir de tag alanımız olacak.
+
+29
+00:09:21,491 --> 00:09:37,371
+Bu direct map cache de bu şekilde adres bölümlenmesi sağlanıyor. Diğer cache yapılarında ise birebir doğrudan bir indeks karşılığı veya indeks mapping olmadığı için tag alan genişlikleri farklı olacak.
+
+30
+00:09:37,371 --> 00:09:44,831
+Ona biraz sonra değineceğiz. Dolayısıyla burada bu adres partitioning alanlarını tanımlamış olduk arkadaşlar.
+
+31
+00:09:48,628 --> 00:10:15,688
+DirectMap cache ile ilgili olarak geçen hafta da ortaya çıkan bir takım problemler vardı. Örneğin, öyle adrese erişiyor olabilirim ki bu hep indeks olarak aynı satıra denk gelebilir cache'te. Yani cache'in sadece sıfırıncı satırıyla ilgili işleme karşılık gelen adres erişimleri veya referanslar yapıyor olabilirim. Bu cache'in geri kalan kısmının boş olduğu, kullanılmadığı anlamına gelir. Bir problem buydu.
+
+32
+00:10:16,148 --> 00:10:19,807
+Yine şuna bakabiliriz.
+
+33
+00:10:21,467 --> 00:10:30,028
+Cache için, DirectMap Cache için blok genişliğini arttırmak veri erişimini nasıl etkiler? Onu inceleyebiliriz bir grafik üzerinde.
+
+34
+00:10:33,987 --> 00:10:34,747
+Burada
+
+35
+00:10:36,628 --> 00:10:45,807
+Öncelikli olarak cache genişliğinin, blok satır genişliğinin, cache'in satır genişliğinin düşük olduğu durumları ele alalım.
+
+36
+00:10:46,648 --> 00:10:52,628
+Bu durumda cache'in blok genişliği düşük olduğu vakit aradığım verinin...
+
+37
+00:10:52,788 --> 00:11:06,048
+Cache'te olma ihtimalini düşürmüş oluyorum. Çünkü bu durumda blok genişliğini düşürdüğüm zaman daha fazla sayıda adres aynı cache satırına denk gelebilir değil mi? Adres adlarını düşürdüğüm için.
+
+38
+00:11:07,048 --> 00:11:11,508
+Blok genişliğini düşürdüğüm için daha fazla sayıda adres aynı.
+
+39
+00:11:11,984 --> 00:11:39,984
+Cache satırına denk gelecek. O zaman benim aradığım veriyi Cache'te bulma ihtimalim düşüyor. Bu durumda miss rate'i yüksek olarak değerlendirebiliriz. Cache miktarını arttırdıkça bir iyileşme sağlıyoruz. Veri erişiminde bir iyileşme sağlıyoruz. Ama yine blok genişliğini belirli bir optimum değerinin üzerinde yine arttırmaya devam edersek, bu sefer de eriştiğim bir veri, aynı indekse sahip bir başka veri, mevcut veriyi bozma ihtimali artmaya başlıyoruz.
+
+40
+00:11:39,984 --> 00:11:53,984
+Blok genişliğinin artmasıyla burada da bu cache'te bulunan verinin bozulma ihtimali artıyor. Bir başka erişimle bozulma ihtimali artıyor. Bir seferde daha fazla blok değiştiriyorum çünkü artık. Dolayısıyla...
+
+41
+00:11:55,251 --> 00:12:22,692
+Erişimdeki miss rate dediğimiz şey de şu arkadaşlar. Aradığım verinin cache'te olup olmama ihtimali. Bu olasılık bir optimum block size'ına kadar düşüyor. Daha sonra tekrar artmaya başlıyor. Dolayısıyla block genişliğin düşük olduğu kısım spatial lokalitinin çok değerlendirilemediği, block size'ın çok yüksek olduğu durumda temporal lokalitinin çok değerlendirilemediği duruma karşılık gelmiş oluyor.
+
+42
+00:12:23,251 --> 00:12:32,052
+Buna benzer şekilde, bununla orantılı bir şekilde eğer miss rate'imiz düşüyorsa bu durumda ortalama erişim zamanımız da düşecek.
+
+43
+00:12:32,771 --> 00:12:37,171
+Block size'a bağlı olarak birebir doğrudan orantılı bir yapı var aslında.
+
+44
+00:12:38,531 --> 00:12:46,171
+Excess Time'da şunu ifade ediyor. Ben aradığım veriyi cache'te bulma ihtimalimi cache yapısıyla ve block size'la...
+
+45
+00:12:46,548 --> 00:12:53,548
+Kabaca deneysel olarak belirleyebilirim. Dolayısıyla elimde o cache yapısı için bir miss rate değeri var.
+
+46
+00:12:54,048 --> 00:13:05,488
+Ve aynı zamanda teknik olarak o cache'den veri çekme süresi ve aradığım veriyi cache'te bulamadığım zaman memory'den o veriyi çekip çekme süresi de elimde mevcut.
+
+47
+00:13:05,948 --> 00:13:10,687
+Dolayısıyla elimde şu oranlar mevcut. Aradığım veriyi cache'te bulma ihtimalim.
+
+48
+00:13:11,187 --> 00:13:34,887
+Bulduğum zaman bu veriyi ne kadar sürede çekebileceğim ve aradığım veriyi memoriden çekebilme sürem ne kadardır bunlar var. Dolayısıyla bunların orantılı bir şekilde kullanılmasıyla yani aradığım veriyi cache'te bulma ihtimalim x ise x çarpı cache'ten getirme süresi artı 1-x çarpı memoriden getirme süresi gibi kabaca bir.
+
+49
+00:13:35,572 --> 00:14:00,692
+Ortalama erişim süresi tanımlayabiliriz. Bu da eğer miss rate düşüyorsa bu değerinde düşeceğini söylememiz mümkün. Burada bir örneğimiz var arkadaşlar. Bu örnek için az önce anlattığımız kavramları içeren bir yapı. Bunun üzerinde duralım şimdi. Bakın soruyu dikkatlice okuyalım.
+
+50
+00:14:01,683 --> 00:14:09,183
+Direct mapped cache yapısı var. Dolayısıyla adreslerin birebir bir cache satırına denk gelmesi söz konusu.
+
+51
+00:14:09,683 --> 00:14:26,883
+Cache'in blok genişliği 4 word genişliğindeymiş ve toplam kapasitesi de 16 kilobaytmış. Bizim için DirectMapCache'te veya herhangi bir cache yapısı için satır sayısı önemliydi. Satır sayısı doğrudan indeksle alakalı DirectMapCache'te. Bizim burada kaç tane satırımız olduğunu bulmamız gerekiyor.
+
+52
+00:14:26,883 --> 00:14:34,803
+Bakın, burada yalnız cache genişliği, word genişliği olarak verilmiş bir satırda 4 word var.
+
+53
+00:14:35,827 --> 00:14:39,087
+Şöyle o zaman biz cache'imizi kabaca çizecek olursak.
+
+54
+00:14:40,187 --> 00:14:41,668
+Hocam bir şey sorabilir miyim?
+
+55
+00:14:41,687 --> 00:14:48,267
+Cache'imizin içerisinde satırlarımız var. Satırlarımızın her birisi dört tane Word'den oluşuyor. Şunların her birisi Word.
+
+56
+00:14:49,647 --> 00:14:54,467
+Bir Word'ümüzün kaç bitten oluştuğunu çıkartabiliyor muyuz verinenlerden? Bakın.
+
+57
+00:14:55,107 --> 00:14:59,367
+32 bitlik bir mimari kullanılıyorsa 32 bitlik mimariden kasıt şudur.
+
+58
+00:14:59,887 --> 00:15:02,727
+32 bit veri yolu ve
+
+59
+00:15:03,379 --> 00:15:29,580
+32 bit adres yolundan bahsediyor. Bizim için burada veri yolu önemli. Bu şu demek, bizim word genişliğimiz 32 bit. Yani ne demek? 4 byte'dan oluşuyor. Öyleyse bizim bir wordümüz de, onu da şöyle farklı bir renk yapalım. Bizim bir wordümüz de aslında 4 tane byte'dan oluşuyor. Bunu anlıyoruz.
+
+60
+00:15:31,956 --> 00:15:32,995
+Şu eksik oldu ya.
+
+61
+00:15:57,299 --> 00:16:11,539
+Dolayısıyla bizim bir cache satırımız 4 tane Word'den oluşuyor ve her birisi 4 byte'den oluşuyor. Bu verilenlerden bunu anladık. Toplam kapasitemiz de 16 kilobyte'miş. Şimdi buradan bizim bulmak istediğimiz bu cache'in kaç tane satırı olduğu.
+
+62
+00:16:11,539 --> 00:16:22,500
+Şimdi bir satırda 4 tane Word var. Her bir Word değerimiz nereden oluşuyor? 4 tane byte'den oluşuyor.
+
+63
+00:16:23,155 --> 00:16:40,535
+Dolayısıyla bir bloğumuz toplamda 16 byte'dan oluşuyor değil mi arkadaşlar? 16 byte'dan oluşuyor. Bunu elde ettik bir satır. Peki kaç tane satırımız var? Onu da arkadaşlar satır sayısı, onu da şöyle bulacağız.
+
+64
+00:16:48,495 --> 00:17:13,076
+16 çarpı, burada da 16 byte olarak bunu ifade edelim. 16 çarpı 2 üzeri 10 bölü 16. Toplamda 2 üzeri 10 tane satırımız var. 2 üzeri 10 tane satır var. Bu 2 üzeri 10 tane satırı ifade edebilmek için kaç tane adres değerine ihtiyacımız var? O da arkadaşlar, index bit.
+
+65
+00:17:13,491 --> 00:17:39,271
+İndeks bit sayısını buradan log 2, 2 üzeri 10'dan 10 adet olarak bulabiliriz. Şimdi bizim adres genişliğimiz 32 bitli. 32 bitlik kısmı şöyle ele alalım. Bunun bakın her bir satır 4 tane word'dan oluşuyor. Her bir word de 4 tane byte'dan oluşuyor. Demek ki 4 tane byte için byte offset değer bit sayısı nasıl bulunacak onu da yazalım.
+
+66
+00:17:39,663 --> 00:17:42,824
+Number of byte offset bit.
+
+67
+00:17:45,824 --> 00:17:47,543
+Bunu da log 2.
+
+68
+00:17:48,284 --> 00:17:50,703
+Kaç byte var her bir word bloğunda?
+
+69
+00:17:51,223 --> 00:17:51,903
+4 byte var.
+
+70
+00:17:52,043 --> 00:17:54,624
+Dolayısıyla 2 bit olarak bunu da bulabiliriz.
+
+71
+00:17:55,723 --> 00:17:59,663
+Benzer şekilde Number of word offset.
+
+72
+00:18:01,907 --> 00:18:26,527
+Bit dediğimiz zaman bir blokta dört tane word var. O zaman log 2, 4 yine iki bitimizde word offset için ayrılacak. O zaman şurayı böldüm. Burası iki bit genişliğinde. Şurayı da böldüm iki bit genişliğinde. Burası bizim byte offsetimiz. Şurası bizim word offsetimiz.
+
+73
+00:18:27,508 --> 00:18:43,668
+İndeks bit sayımızı 10 olarak bulduk. Burası indeks. Ve son olarak geri kalan kaç bit kaldı? 14, 18 mi kalıyor? 18 bitimiz de arkadaşlar bizim için tag alanını oluşturuyor.
+
+74
+00:18:44,148 --> 00:18:51,447
+Dolayısıyla biz herhangi bir adresle ilgili erişim yapmak istediğimiz zaman, mesela 32 bitlik bir değer oluşturacağız.
+
+75
+00:18:52,692 --> 00:19:16,332
+0, 0, 4, 8, 12, 16, 20, 4, 8, 12, 16, 20, 24, 28, bu da mesela A olsun. Böyle bir adrese erişmek isteyelim. Böyle bir memori adresine erişmek isteyelim.
+
+76
+00:19:17,011 --> 00:19:19,672
+Hegzadesimal olarak verildi ve 32 bitlik bir değer.
+
+77
+00:19:20,307 --> 00:19:36,107
+Bu adrese erişmek isterken bunu aldık, binary formatta yazdık. Tag alanının değeri ne olacak arkadaşlar? 0.0.18 tane 0'dan oluşuyor. İndeks alanına baktık. İndeks alanı 0.0.0.
+
+78
+00:19:36,607 --> 00:19:54,627
+Toplamda 10 tane, bu 18 tane 0'dı, bu 10 tane 0. Daha sonra word offset değerine baktık. Word offset değerimiz artık şu a'yı yazacak olursak 1,0, 1,0 ya. Dolayısıyla word offset değerimiz 1,0, byte offset değerimiz de yine 1,0 değerlerine sahip.
+
+79
+00:19:54,627 --> 00:20:01,968
+O zaman ben cache'e gidiyorum. Kaçıncı satıra gideceğim? Sıfırıncı satıra gideceğim. Sıfırıncı satıra gittim.
+
+80
+00:20:02,836 --> 00:20:11,475
+Daha sonra, WordOffset 1-0. Şu 0-0 WordOffset'i, 0-1 WordOffset'i, 1-0 WordOffset'i, 1-1 WordOffset'i.
+
+81
+00:20:11,859 --> 00:20:34,099
+Bunun bir sıfır sütununa gittim. Şurası. Bu göz içerisindeki bir sıfır yani iki numaralı şu sıfır, şu bir, şu iki, şu üç offseti byte offset olarak. Binary olarak bir sıfır ama decimal olarak iki. Şu numaralı adrese eriştim. Bu numaralı byte'a eriştim burada. Sonra erişim bu şekilde.
+
+82
+00:20:34,675 --> 00:21:01,076
+Aradığım veri bu mu diye anlamak için ne yapacağım? Öncelikli olarak burada valid biti 1 mi diye kontrol edeceğim. Daha sonrasında da tag alanına bakacağım. Burada yazılı olan veri 0.1 ise aradığım veri burada yok. Çünkü tag alanı benim tag alanımla örtüşmüyor. Ama hangi byte'a karşılık geldiğini benim vermiş olduğum adresi kabaca bu şekilde belirtmem uygun oluyor arkadaşlar.
+
+83
+00:21:01,455 --> 00:21:09,515
+Dolayısıyla address partitioning, direct map cache için bu mantık çerçevesinde gerçekleştirecek. Burayla ilgili bir sorumuz var mı? Anlaşıldı mı?
+
+84
+00:21:19,155 --> 00:21:20,875
+Burayla ilgili bir sorunuz var mı?
+
+85
+00:21:25,140 --> 00:21:25,900
+Yok hocam.
+
+86
+00:21:30,099 --> 00:21:31,019
+Yok herhalde.
+
+87
+00:21:33,200 --> 00:21:34,819
+Hocam sesimiz geliyor mu?
+
+88
+00:21:36,879 --> 00:21:40,359
+Dolayısıyla yani bizim yaptığımız gibi işlemleri yapmış oluyoruz.
+
+89
+00:21:45,619 --> 00:21:46,879
+Duyamıyor musunuz ki?
+
+90
+00:21:51,539 --> 00:22:13,799
+Evet, doğru. Biz duyuyoruz da hocam, biz duyuyoruz da siz duymuyorsunuz galiba. Tamam, şimdi evet doğru, hoparlör kısık kalmış. Soru varsa onları kaçırdım arkadaşlar baştan beri. Tekrar sorabilirseniz her şeyi sevinirim. Sınavla ilgili, konuyla ilgili. Teşekkür ederim bu arada uyarı için. Farkında değildi.
+
+91
+00:22:18,195 --> 00:22:35,195
+Tekrar dediğim o zaman. Yani dersin başında kısa sınavı söyledim. Klasik sınav olacağını, 50 dakika olacağını dosyayı indirip çözüm yapı sorunu yükleyecektiniz. Sonrasında da DirectMapCache ile ilgili olarak offsetli örnekten bahsettik.
+
+92
+00:22:35,195 --> 00:22:43,275
+İşte örnek soru çözdük. Buraya kadar olan kısımla ilgili sorunuz var mı diye sordum ama sizin sorularınızı duyamadım. Varsa tekrar alabilirim.
+
+93
+00:22:45,556 --> 00:22:46,576
+Yok herhalde hocam.
+
+94
+00:22:47,215 --> 00:22:47,775
+Peki.
+
+95
+00:22:49,935 --> 00:22:52,635
+Şimdi bunu bahsettik.
+
+96
+00:22:53,495 --> 00:22:56,836
+En son şu bizim zaten bulduğumuz kısımdı.
+
+97
+00:23:03,955 --> 00:23:07,535
+Şimdi bir de erişimle ilgili bir örneğimiz var. Onu gösterelim.
+
+98
+00:23:08,235 --> 00:23:25,816
+Şimdi bu az önce bulmuş olduğumuz direct map cache yapısında yani adres partitioningide 2 bit byte offset için, 2 bit word offset için, 10 bit index için, 18 bit tag alanı için ayrıldığımız yapı için sırasıyla şu erişimleri yapmak isteyelim.
+
+99
+00:23:26,576 --> 00:23:29,995
+Memorilerde yerleşimlerinin bu şekilde olduğunu varsayalım bunların.
+
+100
+00:23:30,996 --> 00:23:42,536
+Burada her bir gösterilen satır bir word'e denk geliyor. Yani A bir word. Word dediğimizde bizde 4 başlık değerlerdi. B de bir word, C de bir word şeklinde bunları düşünebilirsiniz.
+
+101
+00:23:43,571 --> 00:23:59,291
+Dolayısıyla yapımız bu şekilde. Cache'e aktarılırken nasıl aktarılacak? Cache'te de zaten bir seferde 4 word'lük bloklarımız vardı. Öyleyse 10, 14, 18 ve 1C adreslerindeki bu 4 word'ümüz bir seferde Cache'e aktarılacak.
+
+102
+00:23:59,291 --> 00:24:06,571
+Şimdi bu durumda 14 adresine erişim yapmak istersek 14 adresi için...
+
+103
+00:24:09,971 --> 00:24:31,788
+Bu tür sorularda arkadaşlar veya bu tür yaklaşımlarda yapacağımız ilk iş verilen adres aralıklarını adres partitioning yaparak ilgili bölümlerine ayırmak. Biz yaparken byte offset ve word offset olarak ayırdık. Sizle kendi aramızda anlaşalım. Ben bu tür şeylerde word offset ve byte offsetin ayrı olarak verilmesini...
+
+104
+00:24:31,796 --> 00:24:39,855
+Siz de benzer şekilde notasyon kullanabilirsiniz. Offset değerimiz yani bizim Word Offset ve Byte Offset'i içerecek şekilde olsun.
+
+105
+00:24:40,372 --> 00:25:01,572
+Dolayısıyla bu odada yapılan örnek 4 bit offset değeri için. İkisi byte, ikisi word offset. Daha sonraki gelen 10 biti ne için ayırıyoruz? İndeks değeri için ayırıyoruz. 2, 4, 6, 8, 10 tane bitimiz indeks için ayırıyor. Geri kalan adresler de tag alanı. Yani cache'teki verinin bizim erişmek istediğimiz veriyle aynı olup olmadığını anlamak üzere adresi tamamlayan kısım.
+
+106
+00:25:02,132 --> 00:25:13,312
+Şimdi bu noktada boş bir cache ile başladığımızı varsayacak olursak, boş bir cache ile başladığımızı varsayacak olursak, şöyle yapalım buradan.
+
+107
+00:25:15,951 --> 00:25:23,172
+Boş bir cache ile başlayacağımızı varsayacak olursak, şimdi cache yapımızı şöyle çizelim.
+
+108
+00:25:24,132 --> 00:25:26,092
+Burada bir valid bitimiz var.
+
+109
+00:25:27,155 --> 00:25:44,155
+Valid bitimiz başta hepsi sıfır olarak initialize edilmiş durumda arkadaşlar. Bir de her bir satıra karşılık bir de tag alanımız var. Burada da dört tane word'u yerleştirdiğimiz kısım var. Güzel çizemedim.
+
+110
+00:25:48,307 --> 00:26:13,988
+Burası da veriyi sakladığımız kısım. Şimdi cache boş olarak başladığımız için valid bitleri sıfır. Taglarda rastgele değerler var şu aşamada. İlk olarak erişmek istediğimiz değerin indeksi arkadaşlar 1. Yani 0, 1 diye gösterecek olursak bir numaralı satıra denk geliyor. Bir numaralı satırda valid bitine baktım sıfır. Dolayısıyla aradığım veri burada yok. O zaman ben bu veriye ilişkin olarak memurden veriyi getireceğim.
+
+111
+00:26:14,319 --> 00:26:25,119
+Baktığımız adres değeri için bu adres değeri 14 adresi. B içerisinde B word'u var bu adresin içerisinde memoride.
+
+112
+00:26:25,584 --> 00:26:42,204
+Fakat ben bunu cache'e taşırken 4 word, bunun civarındaki 4 word'ü alacağım. Ama burada dikkat etmem gereken ne? İndeks değeri 14 ile aynı olan 4 tane word'ü çekeceğim. İndeks değeri 14 ile aynı olan 4 tane word'ü çekeceğim.
+
+113
+00:26:52,115 --> 00:27:03,875
+Aynı olan bir sonraki basamakları, bir sonraki 10 biti, aynı olan değerleri çekeceğim. Bu şekilde 4 tane adres vardır. Onları çekeceğim demek oluyor bu.
+
+114
+00:27:05,075 --> 00:27:09,815
+Şöyle getiririm. Dolayısıyla ben cache'e getireceğim içerik.
+
+115
+00:27:11,284 --> 00:27:30,704
+14 adresi ve civarındaki değerler olacak. O zaman ben düşük adreste A, B, C ve D wordlerini saklarım. Valid bitini bir yaparım. Tag alanına da bir değerini yazarım. Hexadesimal 10 bitlik. Burası 10 bit. 10 bitlik bir değer olarak bir değerini yazdım. Valid biti bir bit.
+
+116
+00:27:32,276 --> 00:27:47,115
+Buraya da bir bitlik değeri sakladım. Daha sonraki erişimimize bakıyoruz arkadaşlar. Fakat şu boş başladığımız için ilk adres erişimimiz bizde bir misle sonuçlandı. Aradığımız veri keşti olmadığı için.
+
+117
+00:27:47,407 --> 00:28:08,607
+Bir sonraki veriye bakıyoruz. Bir sonraki verimiz yine indeks değeri 1 olan bir değer. Tag alanı da 0 olan bir değer. Bir sonraki adres erişim için bir numaralı satıra gittim. Valid bitine baktım 1. Tag alanını kontrol ettim. Tag alanı 0'mış. Pardon ya bir öncekinde. Şu değer 0 ya. Şu değeri yazacaktık. Onu yanlış bir değer yazmışım.
+
+118
+00:28:08,960 --> 00:28:34,519
+Tag alanına baktım. Sıfırla örtüştü. Daha sonra word offsetine bakıyorum. 3 yani D word'ü içerisinde en düşük anlamlı byte'ına erişeceğim. Yani D'nin düşük anlamlı byte'ına erişeceğim. Bu var. Dolayısıyla bu hit olarak değerlendiriliyor. Daha sonrasında yine başka erişim için bakalım. Bu sefer 3 numaralı indekse gideceğim. 3 numaralı indeks, valid biti 0.
+
+119
+00:28:35,380 --> 00:28:55,040
+3 numaralı cache satırının. Dolayısıyla burada kesinlikle miss var. Fakat bu miss ile birlikte benim cache'e getireceğim veriler neler bakalım. Bir sonraki yapacağım erişim 34 civarındaki erişimlerdi. Dolayısıyla son 4 biti haricindeki
+
+120
+00:28:55,443 --> 00:29:20,544
+Kalan adresleri, en düşük 4 anlamlı biti haricindeki adres değeri aynı olan 4 tane word'u çekip memoriden cache'e koyacağım. Bunlar E, F, G, H diye gelmiş. Dolayısıyla ben buna erişmek istediğim zaman cache'te bulamadım. Mis oldu. Memoriye gittim. Memoriden veriyi getirdim. Getirdiğim verili cache'e yazıyorum. Daha sonrasında da cache'ten erişeceğim.
+
+121
+00:29:21,107 --> 00:29:33,788
+Cache'e getirdiğim veriler E, F, G ve H değerleri. Valid bitini 1 yaptım getirdiğim için. Artık bu veri tag alanında 0 değerine sahip tag alanında. Dolayısıyla 0'da yerleştirdim.
+
+122
+00:29:34,548 --> 00:30:01,128
+Ve dolayısıyla bu da MIS oldu. Bir sonraki adres yarışımımız arkadaşlar yine bakın bir indeksine gittim. Valid biti 1 çok güzel. Ama tag alanındaki değer 2. Burada 0 var. Dolayısıyla bu da bir MIS ile sonuçlandı. MIS olmakla birlikte ben artık cache'den şu verisini kaldırıp yeni bir veri koyacağım. Valid biti zaten 1. Burada ABCD'yi bozup yerine ne yazacağım arkadaşlar bu sefer bakın.
+
+123
+00:30:01,519 --> 00:30:29,519
+Son 4 erişmek istediğim adres şuydu. Son 4 biti haricindeki adres değerleri aynı olan 4 tane word'ü çekeceğim. Yani I, J, K, L değerlerini çekip cache koymam lazım bu sefer. Ve bunu hangi satırda yapacağım? Bunu bir numaralı satırda yapacağım. Dolayısıyla I, B, C, D, A, B, C, D'yi kaldırıp I, J, K ve L şeklinde burayı güncelledim. Tag alanını da artık 2 olarak güncelledim.
+
+124
+00:30:29,519 --> 00:30:43,780
+Fakat, memoriden getirmek zorunda kaldığım için bu veriyi öncelikli olarak, bu da mis olarak sonuçlanmış oldu. Dolayısıyla bu 32 bitlik mimaride kullanmış olduğumuz direct map cache yapısında,
+
+125
+00:30:44,160 --> 00:31:04,540
+Ardışık bu adreslere erişim yapmak istediğimizde 3 tane miss, 1 tane hit ile sonuçlanan bir durum olmuş oldu. Hit dediğimiz şey aradığımız veri cache'te var ve hızlıca cache'ten eriştik. Miss dediğimiz durumlar aradığımız veriyi cache'te bulamadık. Memoriye gidip daha uzun bir süre harcamak zorunda kaldık. Bu anlama gelen satırları oluşturmuş oluyor arkadaşlar.
+
+126
+00:31:06,680 --> 00:31:08,259
+Süremize bir bakalım güzel.
+
+127
+00:31:11,827 --> 00:31:36,688
+Şimdi bu kavramlara bakalım şimdi. Biz bir veriye erişmek istediğimiz zaman, bunu cache'te aradığımız zaman bunun dört tane sonucu olabilir. Bunlardan birisi cache loading dediğimiz durum. Cache daha boşken ilk durumda, başladığımız durumda cache'te aradığımız verinin olup olmadığını anlamak ve cache'e ilk defa veri getirmek.
+
+128
+00:31:37,172 --> 00:31:47,911
+Cache boşken aradığımız veri cache'te yok. Çünkü cache boş ve valid bitleri sıfır. Aradığımız veriyi cache'te bulamadığımız için memory'den cache'e ilk defa veri getirdiğimiz durum. Bu cache loading olarak isimlendiriliyor.
+
+129
+00:31:53,151 --> 00:32:03,291
+Bununla birlikte aradığımız veri cache'te yoksa bu cache miss olarak isimlendiriliyor ve bunun sonucunda memory'den veriyi getirmemiz lazım. İlkinde cache zaten boştu.
+
+130
+00:32:04,276 --> 00:32:10,695
+Üçüncü durum cache hit. Aradığımız blog cache içerisinde var. Dolayısıyla ben gidip cache'ten bu veriyi okuyabiliyorum.
+
+131
+00:32:15,796 --> 00:32:37,476
+Bir de tag alanının uyuşmaması sonucunda oluşan miss ile birlikte cache'teki bloğun değişmesi söz konusu olabilir. Dolayısıyla tag alanı uyuşmadığı için veriyi gidip değiştirmem gerekiyor ve bunu bloğu replace etmem gerekiyor. Dolayısıyla bu dört farklı durumla karşılaşma ihtimalimiz var.
+
+132
+00:32:38,387 --> 00:32:44,867
+Cache loading dediğimiz temel olarak valid bitine bakarak yürütülen bir süreç.
+
+133
+00:32:45,367 --> 00:32:52,647
+Valid biti, cache'te aradığımız veri anlamlı daha önceden memori'den çekilmiş ve o anda güncel bir veri olup olmadığını belirtiyor.
+
+134
+00:32:52,647 --> 00:32:56,167
+Cache boş iken bu valid biti sıfır değerine sahip oluyor.
+
+135
+00:32:56,788 --> 00:33:07,708
+Valid biti sıfırken otomatik olarak cache miss oluşuyor arkadaşlar. Dolayısıyla daha anlamlı veri o satır için çekilmemişken dahi gidip memoriden bunu getirmemiz gerekiyor.
+
+136
+00:33:09,368 --> 00:33:23,648
+Yine az önceki örnek üzerinden hareket edecek olursak her bir direct map cache yapısında toplam 2 üzeri 10 tane satırımız var. Bu indeks alanlarını ifade etmek için 10 bite ihtiyacımız var.
+
+137
+00:33:24,147 --> 00:33:44,067
+Valid bitimiz bir bitlik bir değer tag alanımızı yine belirtmiş durumdayız. Her bir blokta dört tane word saklı, her bir word'te de adres değeri olarak düşük anlamlı dört bit olarak sıfır sıfır sıfır sıfır sıfır bitinden bir bir bir bir adres bitle binary gösterilme kadar değerler mevcut şekilde bunu yazabiliriz.
+
+138
+00:33:44,727 --> 00:33:47,048
+Başta valid biti sıfır olarak set ediyoruz.
+
+139
+00:33:50,900 --> 00:34:15,560
+Aslında bu bizim az önce yaptığımız şeyin adresleri nasıl yerleştiğini hızlıca gösteriyor. Resim üzerinde görelim. Valid biti 0 olduğu için tag alanını uygun şekilde set edip veriyi çekti. Daha sonra B verisine, B wordüne erişti. Bir sonraki adres değeri yine aynı tag alanı ve aynı indekse sahip. Dolayısıyla burada bir hit oluyor. Veriyi de verisi olarak erişmiş oldu. Bir sonraki erişimimiz.
+
+140
+00:34:15,936 --> 00:34:33,936
+Farklı bir adresten, yine burada miss değeri var. Çünkü indeks değeri valid biti 0'da olan bir satıra denk geliyor. Veriyi memori'den çektikten sonra, yerleştirdikten sonra cache, cache'ten erişim yapılıyor. Hangi offsette erişim yapılacağı düşük anlamda 4 bitte saklı. Son erişim ise...
+
+141
+00:34:35,199 --> 00:34:42,899
+Birinci satıra, birinci indekse karşılık geliyor. Fakat tak alanlarını karşılaştırdığımızda bir uyumsuzluk var. Dolayısıyla bu veriyi kaldırıp replace ediyor.
+
+142
+00:34:43,500 --> 00:34:49,059
+Ve cache'e yerleştirmiş olduğu veriden ilgili offsetten veriye erişmiş oluyoruz.
+
+143
+00:34:51,939 --> 00:35:01,059
+Şimdi bir başka noktada arkadaşlar, eğer ki biz cache yapısıyla ilgili bir bilince sahip olursak, cache'in ne şekilde...
+
+144
+00:35:01,280 --> 00:35:09,380
+Performanslı bir şekilde kullanılabileceğinden haberdar olursak yazdığımız programlar bununla ölçülü bir şekilde daha hızlı çalışabilir.
+
+145
+00:35:10,060 --> 00:35:15,940
+Örneğin burada bir yapımız var. Bir kod örneğimiz var. Bu kod örneğini inceleyelim.
+
+146
+00:35:16,739 --> 00:35:24,560
+Burada yine 64 kilobaytlık direct map cache yapısı ve her bir satırda da line size dediğimiz block size'a da denk geliyor.
+
+147
+00:35:24,659 --> 00:35:28,260
+Dolayısıyla her bir satırda 16 byte olan bir duruma karşılık geliyor.
+
+148
+00:35:28,884 --> 00:35:43,864
+Burada bir fonksiyonumuz var. Fonksiyonumuz iki tane float diziyi alıp bunlar üzerinden bir ilgili gözlerini, x ve y'nin ilgili gözlerini çarpıp bunları bir toplam değişkeninde biriktiriyor.
+
+149
+00:35:44,604 --> 00:35:50,943
+Şimdi böyle bir yapıya ilişkin olarak en iyi senaryo ve kötü senaryoyu belirlememiz mümkün.
+
+150
+00:35:54,931 --> 00:35:56,652
+Eğer ki veri yerleşimi
+
+151
+00:36:02,228 --> 00:36:15,748
+Veri yerleşimine baktığımız zaman ilgilendiğimiz blok kısımları eğer üst üste denk geliyorsa burada tekrar tekrar veriyi değiştirmemiz gerektiği için kötü durum senaryosuyla karşılaşacağız.
+
+152
+00:36:15,908 --> 00:36:23,847
+Yani eğer ki X ve Y'nin indeksleri birbiriyle çakışık gelirse kötü durum senaryosu, çakışık gelmezse iyi durum senaryosuyla karşılaşacağız.
+
+153
+00:36:23,847 --> 00:36:26,367
+Burada öncelikli olarak şunu söyleyelim.
+
+154
+00:36:26,704 --> 00:36:39,144
+Toplamda 16 byte olarak bir cache satırını belirledik. 16 byte ve bizim bir float değerimiz 4 byte'dan oluşuyor. Dolayısıyla bir seferinde eğer ben x'in mesela x0
+
+155
+00:36:39,603 --> 00:36:52,043
+İndeksinden itibaren, İ eşittir sıfırdan itibaren erişim yapmaya başlarsam, X'in sıfırına erişmek istediğimde, X'in sıfırıyla birlikte 0, 1, 2, 3 numaralı indisleri cache'e çekilecek.
+
+156
+00:36:52,184 --> 00:37:03,123
+Benzer şekilde Y'nin sıfırına erişmek istediğim zaman, Y'nin 0, 1, 2, 3'ü cache'e çekilecek. Daha sonra X'in birine erişmek istediğimde, örneğin X'i cache'e çekmişim, X'in birine erişmek istediğimde zaten bu cache'de var.
+
+157
+00:37:03,123 --> 00:37:07,603
+X'in erişmek istediğimde cache'de var, 3'üne erişmek istediğimde cache'de var. Fakat 4'ü erişmek istediğimde...
+
+158
+00:37:07,603 --> 00:37:30,623
+Bu cache de yok. Tekrar memory'den gelip cache'e çekmem gerekecek. Yani dörderli float değerler olarak bunları çekebiliyoruz cache'e. Bir seferde dört tane değer çekebiliyoruz bu mantık çerçevesinde. Çünkü bir float'un genişliği dört byte, cache'imizde on altı byte olduğuna göre bir satırı. Bir seferinde bu dizilerin dört tane elemanını bir seferde çekmemiz mümkün.
+
+159
+00:37:31,987 --> 00:37:36,387
+Şimdi iyi durum senaryosu ve kötü durum senaryolarına bakalım.
+
+160
+00:37:40,247 --> 00:37:47,427
+Şimdi X0'a erişmek istedik ve Y0'a erişmek istedik. Çünkü X0 ile Y0'ı çarpıp sum değişkeni de biriktirecek.
+
+161
+00:37:47,947 --> 00:37:55,507
+X0'a erişmek istediğimiz zaman 0, 1, 2, 3'ü cache'e yükledi. Y'nin 0'ına erişmek istediğimizde Y'nin 0, 1, 2, 3'ünü cache'e yükledi.
+
+162
+00:37:58,255 --> 00:38:20,031
+Olmasın. Bunu varsayalım. Bu durumda X0 için bir mis durumu söz konusu, Y0 için bir mis durumu söz konusu. Fakat bir sonraki iterasyonda X1 cache de var, Y1 de cache de var. X2 cache de var, Y2 cache de var, X3 cache de var, Y3 cache de var. Bu hangi durumda söz konusu? X ve Y'lerin...
+
+163
+00:38:20,032 --> 00:38:40,652
+İndeks yakışması olmaz ise. Bu durumda 8 tane veriye eriştim, 8 tane float'a eriştim. Bunlardan 2 tanesi için miss var, geri kalan 6 tanesi için hit var. Demek ki burada bizim miss rate'imiz 1 bölü 4. Yani 2 bölü 8. Yani bu 8 tane veri erişimden sadece 2 tanesi de miss oldu. Onlar da X0 ve Y0'dı.
+
+164
+00:38:42,532 --> 00:38:47,652
+Dolayısıyla her 4 iterasyonda bir bizim bir miss durumumuz söz konusu.
+
+165
+00:38:48,307 --> 00:38:49,907
+Bunu ortaya koymuş oldum.
+
+166
+00:38:50,947 --> 00:38:52,748
+Kötü durum senaryosuna bakalım.
+
+167
+00:38:53,487 --> 00:39:03,487
+Kötü durum senaryosunda ise X ve Y'nin memurda yerleşim itibariyle aynı indekslere gelecek şekilde adreslerde yerleşik olduğunu varsayalım.
+
+168
+00:39:03,567 --> 00:39:08,228
+Bu durumda X'e erişmek istediğim zaman, X0'a erişmek istediğim zaman bu zaten miss, cache de yok çünkü.
+
+169
+00:39:08,367 --> 00:39:10,087
+0, 1, 2, 3'ü X için çektik.
+
+170
+00:39:10,835 --> 00:39:32,535
+Y'yi çekmek istiyorum. Y'de cache de yok. Y'yi de cache'e çekeceğim. Y sıfırla birlikte 0, 1, 2, 3 de geldi ama şans eseri, kötü durum senaryosu aynı cache satırına denk gelmiş olabilirler. Bu durumda az önce koymuş olduğum X'in üzerini Y'lerle replay setmiş olabilirim. Bu durumda tekrar X1'e erişmek istediğimde.
+
+171
+00:39:33,012 --> 00:40:00,000
+X1 ve civarındaki aynı tag offset haricindeki adres değerine sahip blok. Yani 0, 1, 2, 3 yine cache çekilecek. Bu çekmiş olduğum veride indeks olarak yine az önceki Y'leri replace eder. Dolayısıyla indeks çekiştiği için. Dolayısıyla tekrar bir miss. Y'de çekerken bu sefer yine üzerine yazdı. Bu da bir miss. Bu şekilde her bir erişimi miss ile sonuçlanabilir. Buradaki miss oranımda %100.
+
+172
+00:40:00,000 --> 00:40:13,359
+%100 miss oranıyla sonuçlanmış oluyor. Her veri erişimi bir missle sonuçlanıyor. Bu da demek oluyor ki her veriyi ben memoriden okuma süresi kadar vakit ayırmam gerekiyor. Bu da kötü durum senaryosuna karşılık gelmiş oluyor.
+
+173
+00:40:28,211 --> 00:40:46,632
+Tur'da, kaç cycle'da veri okuyabiliriz. Ona ilişkin hesap yapmak da mümkün. Bu noktada şimdi Average Access Time dediğimiz kavramın nasıl hesaplanabildiğini değerlendirelim. Şimdi burada şu ortalama erişim süremizi arkadaşlar bizim için şu şekilde tanımlı.
+
+174
+00:40:53,972 --> 00:41:12,752
+Veriyi cache'te bulma ihtimalimle cache'ten veriyi çekme süresini çarpıp cache'ten erişim süremi ortalama olarak bulabilirim. Değil mi? Ama aradığım veri cache'te yoksa memoriye gideceğim, memoriden veriyi cache'e çekeceğim, cache'ten tekrar okuyacağım. Dolayısıyla erişim süremi bu şekilde özetlemem mümkün. Bunu düzenleyecek olursak şöyle ifade edelim.
+
+175
+00:41:17,235 --> 00:41:41,675
+Bizim bir miss rate'imiz var. Bir de hit rate'imiz var. Miss rate ile hit rate'inin toplamı bir. Ben veriyi çekerken şöyle ilerliyorum. Önce cache'e bakıyorum. Cache'te varsa çekiyorum. Cache'te yoksa bu sefer memory'den çekiyorum. Cache'e getiriyorum. Daha sonra cache'den okuyorum. Böyle bir süreç.
+
+176
+00:41:43,603 --> 00:42:00,364
+Dolayısıyla aradığım veri cache'te varsa ve cache'ten erişim sürem TC ile ifade edeceğim bir süre, memory'den erişim sürem TM ile ifade edeceğim bir süre ise buradaki hesabı şöyle yapabiliriz. Benim hit rate'im neyse TC'ye kadar bir sürede ortalama bunu getiririm.
+
+177
+00:42:10,804 --> 00:42:35,484
+Önce memory'den getireceğim. Daha sonra da cache'e getirip cache'den bunu okuyacağım. Toplamda bu kadar süre harcarım. Bu durumda bunu umarım ifade edebilmişimdir. Burası önemli çünkü. Aradığım veri cache'de olma ihtimali hit oranıyla belirli. Bununla birlikte eğer cache'de bulduysam cache'den getirme sürem de bu. Eğer aradığım veri cache'de yoksa
+
+178
+00:42:36,115 --> 00:42:45,955
+Önce memory'den cache'e getireceğim. Sonra da cache'den okuyacağım. Toplamda memory'den getirip işlemciyi aktarabilmek için cache'den de geçmesi lazım. Toplam bu kadar süre harcıyorum.
+
+179
+00:42:45,955 --> 00:42:54,495
+Bunu düzenlediğimiz zaman arkadaşlar, H tarifi TC artı MTM artı MTC olarak.
+
+180
+00:42:54,996 --> 00:43:19,316
+Sonucu elde ediyoruz. Bunu TC parantezine alacak olursak da H artı M gibi bir sonuç ortaya çıkıyor. H artı M 1'di zaten. Dolayısıyla MIS çarpı TM şeklinde bir sonuç elde etmiş oluyoruz. Bu 1. O zaman elde edeceğimiz sonuç TC artı yani cache'ten çekme süresi artı veriyi aradığımda cache'te bulamama ihtimalime karşılık TM oranıyla da.
+
+181
+00:43:19,764 --> 00:43:31,764
+Bunu ortalama erişim süresine hesaplamış olduk. Burada önemli olan şurası. Veriyi memoriden çekiyorum cache'e daha sonra cache'den işlemciyi aktarıyorum. Bu süreç böyle yürüyor.
+
+182
+00:43:32,384 --> 00:43:43,764
+M dediğimiz değerde 1-H oranı şu formülden dolayı. Dolayısıyla formülü bu şekilde elde etmemiz mümkün. Bu önemli bir noktaydı. Bunu tanımlamış olduk.
+
+183
+00:43:43,764 --> 00:43:46,924
+Şimdi örnek üzerinden inceleyelim.
+
+184
+00:43:48,275 --> 00:44:07,875
+Hit oranı 0.85 olarak verilmiş bir cache yapısı söz konusu. Bu 0.85 neye bağlı? Cache'in tipine, cache'in blok genişliğine, ondan sonra cache'in toplam boyutuna gibi durumlara bağlı.
+
+185
+00:44:10,900 --> 00:44:32,660
+Bulunan bir değer. Yani farklı farklı programlar bu mimaride çalıştırılmış. Ortalama miss ve hit rate'lerine bakılmış ve hit rate'inin 0.85 olduğu bulunmuş. Hit rate ne demek? Aradığım veri cache'te var. Her 100 adres erişimimde, her 100 adres referans yapmamda 85 tanesini cache'te bulabiliyorum.
+
+186
+00:44:33,396 --> 00:44:53,116
+Bu öyle bir yapıda memoriden veri getirme süresi 50 nanosaniyemiş. Ben memoriden cache'e veriyi 50 nanosaniyede getirebiliyorum. Ve cache'ten veriyi işlemciye ise 5 nanosaniyede getirebiliyorum. Bu durumda ortalama erişim süresini nasıl hesaplayabiliriz? Verilen formül çerçevesinde bunu yürütelim.
+
+187
+00:45:00,532 --> 00:45:22,952
+Miss rate'imiz yani 1-0.85 çarpı buradan da 50 nanosaniyelik erişim süresi var. Ne çıkıyormuş buradan? Ne çıktı? 0.15, 7.5 çıkar. Yani 5 nanosaniye artı 7.5 nanosaniye o da 12.5 nanosaniyelik bir süre yapar. Bakın.
+
+188
+00:45:23,539 --> 00:45:46,219
+Çıkan sonuca bakın. %85 hit rate'ine sahip küçük bir cache koydum. Bununla birlikte memoriden 50 ns ortalama sürede getirebileceğim bir veri. Hiç cache olmasaydı her bir veri erişimim 50 ns olacaktı. Fakat araya küçük bir cache koyarak 5 ns erişim süreli ortalama erişim süresini 12.5 ns indirgememiz mümkün olmuş oluyor.
+
+189
+00:45:50,804 --> 00:45:55,903
+Kabaca böyle bir performansı da görmüş oluyoruz. Bir sonraki de geçelim.
+
+190
+00:46:02,483 --> 00:46:19,683
+Bu yine aynı çözümü farklı bir bakış açısıyla elde ettiğimiz durum. Şu gösterimin bir başka yazım şekli de şudur. Dolayısıyla aynı örnek olduğu için, benzer bir örnek olduğu için tekrar üzerinde durmayacağım.
+
+191
+00:46:20,340 --> 00:46:35,860
+Formülün nasıl çıkarıldığını gösteriliyor. Asıl burası bizim için önemli. Burada arkadaşlar, bizim az önce yaptığımız örnek tek seviyeli bir cache içindi. Fakat günümüz mimarilerde çok seviyeli cache yapısı kullanılabilir durumda.
+
+192
+00:46:36,400 --> 00:46:43,560
+Buna ilişkin olarak, çok seviyeli bir cache varsa buradaki ortalama erişim süresi nasıl değişiyor?
+
+193
+00:46:43,967 --> 00:47:11,567
+Bununla ilgili olarak şunu yapacağız. Her bir seviye için hit ve miss ratelerini hesaplayacağız. Ve her bir seviye için ortalama erişim seviyesini hesaplayıp bunu bir üst seviyeye doğru aktaracağız. Yani bizim mimarimiz şu anda gördüğünüz yapı itibariyle şöyle. Sorudan da anlaşılacağı üzere. İki seviyeli cache var. L1 cache'imiz var. L2 cache'imiz var. Bir de memory'imiz var. Biz burada şöyle bir yaklaşım izleyeceğiz.
+
+194
+00:47:12,083 --> 00:47:30,563
+Aradığım verim L2'de var mı? Varsa bunun bir erişim süresiyle, hit rate ile orantılı olarak bir ortalama erişim süresi olacak L2'den. Eğer yoksa da memory'den getirip daha sonra buradan okuyacağım. Dolayısıyla şu bloğun kendi içerisinde bir TA L2'si var.
+
+195
+00:47:32,943 --> 00:47:36,903
+Şimdi bunu tek unikleştirdiğim zaman artık şu anlama geliyor zaten.
+
+196
+00:47:37,300 --> 00:47:41,300
+Bunun anlamı şu oluyor. Benim aradığım verinin...
+
+197
+00:47:41,780 --> 00:48:00,440
+Az önceki örneklerde direkt L1. cache ile bulamadığım zaman memori'den getiriyordum ya artık ona dönüşmüş oldu. Yani ben bu blok için bir ortalama erişim süresi hesapladığım zaman sonrasında da şurası için bir ortalama erişim süresi hesaplayabileceğim. Bu da CPU'ya ortalama erişim süresini verecek.
+
+198
+00:48:08,371 --> 00:48:26,672
+Hit time'ını, miss rate'ini ve miss penalty değerlerini değerlendireceğim. Burada miss penalty dediği, L2'nin miss penalty dediği aradığım veriyi eğer L2 cache'inde bulamazsam gidip bunu memory'den L2 cache'ine getirme süresi. Yani şu 100 cycle dediğimiz şey.
+
+199
+00:48:28,403 --> 00:48:43,703
+Memory'den L2 cache'e veri aktarma süresi. Bu durumda şu ilk çizmiş olduğumuz blok için, şöyle yapalım. İlk çizmiş olduğumuz blok için ortalama erişim süresi olan TA L2'yi, TAverage, ortalama erişim süresi L2'yi bulalım.
+
+200
+00:48:44,844 --> 00:48:53,523
+İzleyeceğimiz yol aynı. Aradığım veri L2'de var mı? Var. Varsa erişim süren 5 çevrim.
+
+201
+00:48:54,099 --> 00:48:59,099
+Aradığım veri eğer ki şeyde yoksa, L2'de yoksa gidip bunu...
+
+202
+00:48:59,360 --> 00:49:20,360
+Memoriden L2'ye getirmem lazım. Bu 100 cycle sürüyor. Bu 100 cycle'a yüzde kaç ihtimalle maruz kalırım? L2'de bulamadığım sürece. Yani 0.15 ihtimalle buna maruz kalırım. Buradan elde ettiğimiz sonuç 15 artı 5 20 cycle'lık bir süre. Demek ki TA L2 20 cycle'mış.
+
+203
+00:49:20,360 --> 00:49:27,280
+Şimdi bu durumda artık yine sanki bir cache ve memori varmış gibi bir duruma denk geldik. Şimdi bunun çözümlemesini yapalım.
+
+204
+00:49:27,360 --> 00:49:31,600
+Bunun çözümlemesini de şöyle farklı bir renk olarak şununla işaretleyelim.
+
+205
+00:49:32,400 --> 00:49:36,460
+Şimdi şu kısmı bulduk 20 cycle olarak.
+
+206
+00:49:37,680 --> 00:49:41,020
+Aradığım veri bu sefer L1 cache'te olabilir mi? Olabilir.
+
+207
+00:49:43,827 --> 00:50:03,347
+Ne kadar bir sürede veriyi L1 cache'e getirebiliyorum? 20 cycle'da getirebiliyorum. Ve bu 20 cycle'lık maliyete ne zaman katlanmam gerekiyor? Aradığım veri cache'de L1 cache'inde yoksa. Yani 0.05 durumu. O zaman buradan da hesap yaptığımız zaman ne olacak? 0.512.
+
+208
+00:50:04,019 --> 00:50:13,019
+2 cycle'lık bir süre oldu. Bakın, eğer ben küçük 2 seviye cache kullanırsam, normalde 100 cycle'da veri erişimi yaptığım bir işlemi...
+
+209
+00:50:13,556 --> 00:50:27,736
+Ortalama 2 cycle'da sonuçlandırabiliyorum. Çok iyi bir performans sağlama durumu söz konusu olmuş oluyor. Bu örnek önemli arkadaşlar. İki seviye cache için ortalama erişim süresini nasıl hesaplarız ona ilişkin bir örnekti.
+
+210
+00:50:41,556 --> 00:50:42,176
+yapıyoruz.
+
+211
+00:50:44,176 --> 00:50:45,316
+Tamamladık.
+
+212
+00:50:48,947 --> 00:51:09,947
+Şimdi bu noktada saatimiz kaç oldu? 54 olmuş. Tamam. Şimdi bu noktada bir ara verelim arkadaşlar. Aradan sonrasında ise diğer memory tiplerine, diğer cache tiplerine bakacağız. Yani full associative ve associative yapılara bakacağız. Onlardaki adres partitioning nasıl oluyor? Onları değerlendireceğiz.
+
+213
+00:51:10,356 --> 00:51:28,736
+Veri erişimi durumları nasıl oluyor? Veri erişimiyle ilgili aradığımız veriyi bulmak için hangi işlemleri yapmalıyız? Onlardan bahsedeceğiz. Ama şimdi bir ara verelim. Ne zaman devam edeceğiz? Saat kaç şimdi? 54 geçiyor. 10-5 geçe devam edeceğiz arkadaşlar.
+
+214
+00:51:34,036 --> 00:51:36,175
+Sorunuz varsa alabilirim.
+
+215
+00:51:37,615 --> 00:51:38,695
+Yoksa aramızı verelim.
+
+216
+00:51:45,876 --> 00:51:46,755
+Görüşürüz hocam.
+
+217
+00:51:48,235 --> 00:51:50,376
+Tamam. 10 dakika sonra görüşmek üzere.
+
+218
+01:02:23,987 --> 01:02:30,763
+Evet arkadaşlar, tekrar merhaba. Geçen ders itibarence Direct Map Cache yapısı için...
+
+219
+01:02:30,867 --> 01:02:44,507
+Veri nasıl değiştirilir? Replacement nasıl yapılıyor? İlk defa veri çekerken cache loading nasıl yapılıyor? Hit ve miss durumları nasıl ortaya çıkıyor? Kabaca bunları vermiştik.
+
+220
+01:02:44,507 --> 01:02:51,907
+Şimdi o zaman bir özet soru olarak, direct map cache yapısında replacement polisi nedir? Sormuş olsam ne dersiniz?
+
+221
+01:02:53,172 --> 01:02:58,411
+DirectMapCache yapısında replacement policy nedir diye sorsam ne dersiniz?
+
+222
+01:02:59,572 --> 01:03:07,331
+Replacement öncelikli olarak neydi? Cache'te valid ve anlamlı bir veri var. Tag alanı ise bizim eriştiğimiz veriden farklı.
+
+223
+01:03:07,891 --> 01:03:17,251
+Bu durumda o veriyi kaldırmak gerekiyorsa tag alanları uyuşmak için onu kaldırıp yerine yeni veriyi koyuyoruz.
+
+224
+01:03:20,211 --> 01:03:24,851
+Peki, DirectMap Cache'in replacement polisi ne? Var mı böyle bir şey?
+
+225
+01:03:26,091 --> 01:03:39,672
+Hocam, bir satırdaki herhangi bir blok, daha doğrusu bir satır erişeceğimiz zaman orada istemediğimiz bir şey varsa, tag alanı varsa yani komple hepsini replace ediyoruz.
+
+226
+01:03:40,016 --> 01:03:50,896
+Evet, yani dolayısıyla burada aslında direct map, cache yapısının mappingi nasılsa, yani o adres partitioning'de indeks alanı neye denk geliyorsa, oradaki satırı değiştiriyoruz.
+
+227
+01:03:51,016 --> 01:04:02,916
+Yani temel olarak böyle bir yapı var. Mappingi direkt kullanıyoruz. Bu bizim için şundan dolayı önemli. Biraz sonra göreceğimiz cache yapılarında, yani fully associative ve set associative yapılarda bu durum biraz daha farklı.
+
+228
+01:04:06,003 --> 01:04:28,304
+Bir mapping yok. Yani her bir adres bloğu hangi cache satırına denk geliyor buna ilişkin bir mapping yok. Bundan dolayı bu önemli bir kısım. Özellikle bu set associative ve full associative cache yapılarında şunları göreceğiz. Bir kere mesela full associative'de hiçbir indeks alanı yok. Yani bir satır alanı yok. Ve dolayısıyla cache satırındaki verilerin birbirine göre değişme özelliği var.
+
+229
+01:04:28,623 --> 01:04:46,623
+Bunun temel çıkış sebebi de geçen derste de ortaya konmuştu. Arkadaşlarımız söylemişti yine derste bu bir problem oluşabilir diye. Temel olarak mapping varsa mappingden dolayı şans eseri bütün erişimlerimiz aynı satıra denk gelebilir. Cache'in diğer kalan kısmını hiç kullanmamak durumunda kalabiliriz.
+
+230
+01:04:46,992 --> 01:04:54,472
+Böyle bir senaryo olabilirdi. Dolayısıyla diğer cache yapıları da buradaki problemleri gidermek yönüne ortaya çıkmış yapılar.
+
+231
+01:04:54,972 --> 01:05:05,932
+Öncelikli olarak arkadaşlar Full Associative cache yapısından bahsedelim. Sonrasında da diğer yapıdan, Set Associative'den bahsederiz.
+
+232
+01:05:05,932 --> 01:05:13,932
+Şimdi temel yapı itibariyle bir şey üzerinden anlatacağım. Bizdeki slide'lar da geçerli ama biraz daha...
+
+233
+01:05:15,059 --> 01:05:19,320
+Anlaşılabilirlik açısından burası daha uygun gibi geliyor bana. O yüzden bu tarafa geçtim.
+
+234
+01:05:20,019 --> 01:05:25,660
+Şimdi, Full Associative Cache yapısında arkadaşlar temel olarak mantık şu şekilde.
+
+235
+01:05:26,300 --> 01:05:30,059
+Yine bir cache büyüklüğümüz var. Yani cache'in bir toplam kapasitesi var.
+
+236
+01:05:30,599 --> 01:05:38,280
+Her bir cache satırının depolayabileceği veya tutabileceği bir blok genişliği, line size, block size hepsi aynı şeyi ifade ediyor.
+
+237
+01:05:41,684 --> 01:06:00,904
+Bu multibyte sistem olabilir. Yani word genişliği 4 byte'dan, 5 byte'dan, 6 byte'dan oluşuyor olabilir. Dolayısıyla cache'in bir satırına baktığımızda bir cache bloğu veya bir cache line'ı en adet word'den, her bir word'ümüzde en adet byte'dan oluşuyor olabilir. Bunlarla ilgili bir problem yok.
+
+238
+01:06:01,300 --> 01:06:28,680
+Fakat geldiğimiz noktada bir memory adreslemesi yapmak istediğimiz zaman bu memory adresinin hangi cache satırına denk geleceğine dair herhangi bir önceliğimiz veya atamamız yok. Bir mapping yok. Dolayısıyla cache kısmen boş diyelim. Kısmen boş, kısmen dolu. Aradığım veri cache'te var mı yok mu diye aramak istiyorsam, herhangi bir indeks alanı yoksa bu cache'te aradığım verinin olup olmadığını nasıl anlayabilirim?
+
+239
+01:06:30,228 --> 01:06:44,307
+Bir Full Associated Cache yapısından bahsediyoruz. Burada önemli olan herhangi bir mapping yok. Dolayısıyla cache satırına karşılık gelecek bir indeksleme, indeks mappingi yok. Yani adresin içerisinde indeks alanı yok.
+
+240
+01:06:44,820 --> 01:07:12,820
+Bunu söylemek istiyorum. Ama tıpı direct map cache yapısında olduğu gibi bir cache satırı yapısından bahsedebiliriz. Bir cache satır genişliğinden bahsedebiliriz. Bu cache genişliği içerisinde, satır genişliği içerisine birden fazla word denk geliyor olabilir. Ve her bir word de birden fazla byte'dan oluşuyor olabilir. O tarafta sıkıntı yok. Ama farklılık nerede? Farklılık sadece indeks erişiminde. Arkadaşlar, iki dakika süre istiyorum. Hemen bir telefon...
+
+241
+01:07:12,820 --> 01:07:13,960
+Ançal'da önemli, döneceğim size.
+
+242
+01:10:26,195 --> 01:10:52,336
+Özür dilerim arkadaşlar. Önemli bir telefon da. Şimdi tekrar sorumuza gelelim. Full associative cache yapısında cache satır yapısı değişmiyor. Fakat adres partitioning'de indeks kısmı yok. Bunun anlamı da şu. Herhangi bir adresten cache satırına mapping yok. Ve bunun nihai anlamı da şu. Cache satırlarının birbiri arasında bir önceliği yok. Bu anlama geliyor. Bu durumda.
+
+243
+01:10:52,720 --> 01:11:00,780
+Aradığım, boş kısmen dolu olan Full Associative cache yapısında bir adres referanslaması yapacağım.
+
+244
+01:11:01,399 --> 01:11:05,520
+Ve aradığım veri cache'te var mı yok mu bunu bulmak için nasıl bir yol izleyebilirim? Sorumuz bu.
+
+245
+01:11:07,100 --> 01:11:10,880
+Cache yapısında şurada görebilirsiniz. Full Associative cache yapısında böyle görebilirsiniz.
+
+246
+01:11:11,420 --> 01:11:16,159
+Aslında bizim anlattığımız yapıda buradaki her bir way dediğimiz kısım biraz satıra denk geliyor.
+
+247
+01:11:18,195 --> 01:11:29,615
+Hocam, burada şunu yapmamız gerekiyor galiba. Bir defa tag alınımda biz adresin tamamını tutacağız. Yani tamamı değil de işte blok sayısı kadar. Orada eğer blok mesela 2 byte, 4 byte tutuyorsa.
+
+248
+01:11:30,235 --> 01:11:34,255
+Oste tarci kısmı, oste tarcının tamamı tagı oluşturacak. Çok doğru, evet.
+
+249
+01:11:34,876 --> 01:11:46,195
+Ve de bulmak için yani bir şekilde tabii burada tek tek hani her sıferinde birbirini karşılaştırmak yerine belki bilmiyorum böyle bir şey var mı ama donanımda hani hepsini birden böyle karşılaştırmak.
+
+250
+01:11:46,195 --> 01:11:52,716
+Karşılaşmak şansımız varsa hepsini birden karşılaştırırız. Adresimiz tutuyorsa birbirine şey yaparız.
+
+251
+01:11:52,755 --> 01:11:53,636
+Aradığım cevap buydu.
+
+252
+01:11:53,855 --> 01:11:57,916
+Vardır şeklinde bir yanıt veririz ve orada erişiriz.
+
+253
+01:11:58,484 --> 01:12:26,484
+Tam olarak aradığım cevap buydu. Aslında yapmamız gereken bütün cache satırları için tag alanını referans ettiğimiz adresin tag alanıyla birebir karşılaştırarak var olup olmadığını bulmamız lazım. Eğer herhangi bir yerde denk geliyorsak vardır. Yok diyebilmek için bütün cache satırlarının taglarına bakıp hepsini bitirdikten sonra yok diyebiliriz. Full associative yapıdaki mantık bu. Dolayısıyla buradan yola çıkarak aradığım...
+
+254
+01:12:26,484 --> 01:12:36,384
+Yardığımız bir veya referans ettiğimiz bir adresi full associative cache yapısında adres partishing'ini yapmak istersek şöyle bir senaryoyla karşılaşıyoruz.
+
+255
+01:12:36,384 --> 01:12:48,524
+Yine az önceki örnek gibi bir örnek olsun. Şöyle yazalım. Toplamda 16 kilobyte boyutunda full.
+
+256
+01:12:50,547 --> 01:13:09,827
+Associative, associative değişme özelliği hatırlarsınız matematikten falan değişme özelliği. Fluor associative cache yapısı var. Blok genişliği 16 byte olsun. Bu durumda adres partitionini yapalım. Sistemimiz 32 bit bir sistem. 32 bit sistem mimarisi var.
+
+257
+01:13:15,380 --> 01:13:20,559
+32 bitlik bir sistem mimarisi var şu T. Bu durumda adres partitioning nasıl olur buna bakalım.
+
+258
+01:13:21,260 --> 01:13:34,420
+Şimdi toplamda her bir block size 16 byte ise tamam. Az önceki yapıya benzer bir yapı kurmuş olduk değil mi? Oradan yana bir sıkıntı yok. Tamam.
+
+259
+01:13:35,559 --> 01:13:39,819
+Şunu yapacağız. Her bir satırımız 16 byte ise toplamda kaç satırımız var?
+
+260
+01:13:41,555 --> 01:13:52,715
+Bunu bulacağız mı? Satır sayısını bulmamıza gerek var mı artık? Bu yapıda artık satır sayısını bulmamıza gerek yok. Çünkü satır sayısı indekse karşılık geliyordu ya. Dolayısıyla satır sayısı bulmamıza gerek yok.
+
+261
+01:13:52,715 --> 01:14:06,235
+Şimdi şunu yapacağız. Toplam adres genişliğimiz 32 bit. Bunun 16 byte'lık kısmına karşılık gelen yani log 2 16'lık kısım ne yapar bu? 4 bit.
+
+262
+01:14:06,623 --> 01:14:29,583
+Offset kısmı için ayrılmış. Bu offset kısmının da baktığımız zaman 16 byte içerisinde 32 bitlik bir sistemse 4 byte, bir word 4 byte yapıyor. Dolayısıyla her word'te de 4 byte var. Dolayısıyla 2 byte ayrılacak. Az önceki yapının aynısı yani 2 byte. Şu byte offset, şu word offset'e karşılık gelecek.
+
+263
+01:14:30,195 --> 01:14:50,515
+Geri kalan adreslerin tamamı tag alanını oluşturacak arkadaşlar. Yani 28 bit tag alanını oluşturacak. Dolayısıyla bir veriyi aradığımız zaman cache'te var mı yok mu diye bu 28 biti her bir verinin her bir satırın tag alanıyla karşılaştırmam gerekiyor. Tabi valid biti tutuyorsa böyle bir yapı söz konusu.
+
+264
+01:14:54,195 --> 01:15:19,075
+Veriyi cache'te ararken böyle bir yapımız var. Referans yaparken böyle bir durum söz konusu. Peki veriyi aradık, cache'te bulamadık. Cache tamamen dolu olsun. Biraz çalışılmış bir cache. Cache dolu. Aradığımız veri cache'te yok. Memory'den veriyi cache'e getireceğiz. Nereye koyabiliriz bunu? Bunu nereye koyabiliriz? İşte burası DirectMapCache'den farklı bir replacement polisinin olduğu durum.
+
+265
+01:15:19,796 --> 01:15:40,216
+Şunları yapabiliriz. First in, first out diyebiliriz. Yani cache'e ilk defa veri hangi satırına yazılmışsa full SSH eğitirdi. Onu kaldırıp onun yerine memori'den getirdiğimizi koyabiliriz. Bu olabilir birinci senaryo. First in, first out. İkincisi least recently used olabilir. Least recently used şu arkadaşlar.
+
+266
+01:15:40,979 --> 01:15:55,819
+Tam çalışılmış bir cache'im var, dolu yani. Fakat bunlara erişim zamanlarını tutuyorum. Bunlara erişim zamanı olarak baktığımda cache'e ilk attığım veri bir önceki adımda tekrar erişmişim. Dolayısıyla o az önce eriştiğim bir veri.
+
+267
+01:15:56,756 --> 01:16:04,236
+Dolayısıyla şunu söylemek istiyorum. First in first out mantığında cache'e ilk attığım veri least recently used olmak zorunda değil. Bunu söylemek istiyorum.
+
+268
+01:16:04,736 --> 01:16:11,936
+List recently used şu demek. Cache'teki satırlardan hangisini en uzak geçmişte adreslemişsem en son.
+
+269
+01:16:12,496 --> 01:16:19,756
+Yani hangisiyle ilgili işlemi uzun bir süredir yapmıyorsam bu benim için least recently used'dur. Onu kaldırıp onun yerine...
+
+270
+01:16:20,159 --> 01:16:29,979
+Memori'den çektiğim veriyi koyabilirim. Dolayısıyla Full Associative Cache yapısında ve Set Associative Cache yapısında replacement polisler bu mantık çerçevesinde gerçekleşiyor.
+
+271
+01:16:29,979 --> 01:16:38,940
+Veya ne yapabilirim? Random olarak değiştirebilirim. Rastgele bir satırı çıkartıp onun yerine Memori'den çektiğim veriyi koymam mümkün olabilir.
+
+272
+01:16:39,079 --> 01:16:44,440
+Mesela onunla ilgili olarak şuradaki polisleri tam olarak listeleyebilmek adına neredeydi onlar?
+
+273
+01:16:49,043 --> 01:17:04,623
+Şurada first in, first out, random veya least recently used mantığında bunları replacement polisileri tanımlamamız mümkün. Bu fluo associative ve set associative yapısı için replacement polisileri tanımlayan yapılar.
+
+274
+01:17:04,923 --> 01:17:11,523
+Şimdi bir de arkadaşlar set associative cache yapısına bakalım. Bu niye gelmiyor?
+
+275
+01:17:15,604 --> 01:17:21,324
+Yapımız neredeydi? Şöyle bir yapımız var. Şunu dikkate alalım arkadaşlar burada.
+
+276
+01:17:22,344 --> 01:17:29,463
+Şimdi Full Associated Cache yapısında güzel. Satırların birbirine göre önceliği yok.
+
+277
+01:17:29,844 --> 01:17:39,384
+Herhangi bir boş yere, tabii bu Full Associated Cache yapısının bir güzelliği de sıradaki boş bir satır varsa yeni gelen veriyi çat diye oraya atabiliriz. Hiçbir sıkıntı yok.
+
+278
+01:17:39,828 --> 01:18:06,247
+Ama aradığım veriyi cache'te bulabilmek için bakın ne yapıyorum? Bütün satırlara tek tek bakmam gerekiyor. Direct map cache yapısındaki sıkıntı ne? Şans eseri bütün indeksler aynı şekilde çakışık gelirse bu sefer de şunu yapmamız lazım. Cache'in sadece bir satırını kullanıyorum geri kalanı boşta kalıyor. Dolayısıyla bu ikisinin problemlerine ziyade olumlu yönlerine odaklanarak ikisini birleştirmek söz konusu olabilir.
+
+279
+01:18:07,828 --> 01:18:34,448
+Direct Map cache yapısında mappingin bir belirli tanımı var. Dolayısıyla bu belirli tanımı kullanarak veriyi aramam hızlı oluyor. Bütün satırlara tek tek bakmam gerekmiyor. Ama Full Associative cache yapısında da bir aralarında bir değişim özelliği var. Sıradaki boş yeri kullanabilirim. Orada da bir serbestlik var. Dolayısıyla bu ikisini birleştiren yapı Set Associative cache yapısı olarak tanımlanabiliyor arkadaşlar. Bu durumda şöyle bir senaryoyla karşılaşıyoruz.
+
+280
+01:18:35,028 --> 01:18:46,628
+Bizim bir cache yapımızın bir blok genişliği var. Bu blok genişliği o cache'in satırda depolayacağı toplam veriye denk gelmiyor artık.
+
+281
+01:18:47,528 --> 01:18:50,731
+Burada gördüğünüz gibi cache'in bir satırında...
+
+282
+01:18:50,739 --> 01:19:08,139
+Bir associative mantık oluşturuyorum. Satırlar associative, sütunlar, yanlış söylemişim pardon, bir satırda iki tane veri, yan yana iki tane veri birbiriyle associative oluyor ama satırlar birbiriyle direct map mantığında bağlı. Yani şu demek.
+
+283
+01:19:08,595 --> 01:19:21,015
+Ben bir satırda bir cache bloğu yerine birden fazla cache bloğu tanımlıyorum. Bu cache blokları birbirleri içerisinde bir satırdaki bloklar birbirleri içerisinde full associative mantıkla çalışıyor.
+
+284
+01:19:21,655 --> 01:19:34,555
+Satırlar ise birbirleri çerçevesinde direct map mantığında çalışıyor. Bu ne demek? Ben bir satıra farklı taglara sahip ama indeks değeri aynı olan farklı taglara sahip veri bloklarını koyabiliyorum.
+
+285
+01:19:34,895 --> 01:19:59,895
+Bir başka bakış açısıyla benim bir satırda sakladığım veri bir bloktan fazla. Kaç bloktan oluşuyor? Mesela two way set associative diyorsak her bir satırda iki tane küme var anlamına geliyor. Birinci küme ve ikinci küme. Birinci küme ile ikinci kümenin bu way olarak isimlendiriliyor aynı zamanda. İki kümenin indeksleri aynı. Dolayısıyla ben verinin...
+
+286
+01:20:00,000 --> 01:20:04,579
+Adres partitioningini yapıp index kısmını aldığım zaman cache'in belirli bir satırına gideceğim.
+
+287
+01:20:05,020 --> 01:20:12,579
+O cache'in satırı içerisinde tag alanın benim aradığım veriyle örtüşüyor mu? Bununla örtüşen bir veri var mı diye satır boyunca arayacağım.
+
+288
+01:20:12,760 --> 01:20:18,600
+Dolayısıyla two-way set associative cache mantığında bir satır kendi içerisinde full associative mantıkla bağlı.
+
+289
+01:20:19,180 --> 01:20:26,640
+Satırlar ise birbiri arasında direct map cache mantığında bağlı olmuş oluyor arkadaşlar. Bu önemli bir noktaydı.
+
+290
+01:20:27,283 --> 01:20:36,323
+Şimdi tekrar az önceki örneğimiz çerçevesinde bunu bir örnekle somutlaştıralım.
+
+291
+01:20:36,323 --> 01:20:44,203
+Yine örneğimiz şu. 16 kilobayt büyüklüğüne sahip.
+
+292
+01:20:49,332 --> 01:20:54,492
+4 set veya 4 way olarak da isimlendiriliyor bu.
+
+293
+01:21:06,515 --> 01:21:09,555
+Böyle bir cache yapısında blok genişliği
+
+294
+01:21:13,076 --> 01:21:19,735
+16 byte olsun. Sistem 32 bitlik bir mimari ise
+
+295
+01:21:25,011 --> 01:21:27,031
+Adres partitioning nasıl olur?
+
+296
+01:21:33,971 --> 01:21:41,691
+Şimdi, 4-way Stasciative Cache yapısı olduğu için bunu şöyle çizeceğiz arkadaşlar.
+
+297
+01:21:43,911 --> 01:21:51,591
+Bizim 4-way bir mantığımız var. Yani bir satırda 4 tane farklı taga sahip veri yerleşebilir.
+
+298
+01:21:51,731 --> 01:21:56,431
+Ama bunların bir satırın ortak özelliğine bunların indeksleri hep aynı. Aynı indekse karşılık geliyor.
+
+299
+01:21:56,948 --> 01:22:02,828
+Her bir bloğumuz 16 byte. 32 bitlik bir mimari olduğu için bizim word genişliğimiz 4 byte.
+
+300
+01:22:02,828 --> 01:22:08,847
+Word genişliğimiz var. Dolayısıyla word offset'i belirtmek için 2 byte ihtiyacımız var.
+
+301
+01:22:09,328 --> 01:22:14,868
+Byte offset'i belirtebilmek için de 16 byte olduğu için 16 byte'a 4 tane word sağar.
+
+302
+01:22:16,888 --> 01:22:22,128
+Her bir word'e de 4 byte düşer.
+
+303
+01:22:22,431 --> 01:22:46,692
+Bu durumda byte offset değerimiz 2 bit. Az öncekinin aynısı olduğu için çok tekrar üzerinde durmuyorum. Word offset'imiz 2 bit. Bunları belirledik. Şimdi, indeks kısmı, indeks mantığı bu yapıda var demiştik. İndeks mantığı bizim kaç satırdan oluştuğunu caching belirlememize karşılık geliyordu. Her bir blok genişliğimiz 16 byte olduğuna göre, yani birinci set için 16 byte burada.
+
+304
+01:22:47,152 --> 01:23:09,172
+İkinci set için 16 byte burada, üçüncü set için 16 byte burada, dördüncü set için 16 byte burada. Dolayısıyla cache'in bir satırında 16x4 adet veri tutabiliyoruz. Bunlar birbirleri arasında değişim özelliğine sahip. Bir satır kendi içerisinde full associative, satırlar birbiri arasında direct map.
+
+305
+01:23:09,456 --> 01:23:23,851
+Dolayısıyla burada bu kadar byte tutabiliyorum bir satırda. Toplam kapasiten 16K byte olduğuna göre byte'lar gitti, 16 gitti. 2 üzeri 10 bölü 2 üzeri 2 ne kaldı? 2 üzeri 8 kaldı. Demek ki...
+
+306
+01:23:24,564 --> 01:23:42,824
+2 üzeri 8, 256 tane satırdan oluşuyor bizim bu cache'imiz. 0'dan 255'e kadar. 0'dan 255'e kadar olan sayıları ifade etmek için bizim kaç bite ihtiyacımız var? Log 2, 2 üzeri 8, 8 bit bizim indeks alanımızı verdi arkadaşlar. Bakın aynı mantık.
+
+307
+01:23:43,136 --> 01:24:04,716
+OneWaySatAssociative veya DirectMap yapı kullandığımızda İndeks alanı 10 bitti. Ama şimdi bizim her satırımızda 4 tane küme var. 4 kümeden oluşuyor. Dolayısıyla zaten 2 bit böylelikle harcanmış oldu. Bir satıra harcanmış oldu. Şimdi mappingi yapalım. Adres partitioni yapalım.
+
+308
+01:24:06,707 --> 01:24:20,347
+byte offset'e gitti. 2 bit, word offset'e gitti. İndeks için 8 bit, tag alanına kalan kısım ne oldu? 10, 12, 20 bit de tag alanı için kaldı.
+
+309
+01:24:20,847 --> 01:24:30,307
+Şimdi ben bir adres değeriyle ilgilendiğim zaman, bir adresi referans etmek istediğim zaman ne yapacağım? Adresin partition'ini yapacağım. Böyle adresi böleceğim.
+
+310
+01:24:30,307 --> 01:24:34,047
+Daha sonra indeks değeri işte şu numaralı bitler.
+
+311
+01:24:34,836 --> 01:24:55,216
+Cache'in bu numaralı satırına gideceğim. Bakın, Full Associative'de herhangi bir satıra gitmek yoktu ama DirectMap'te direkt o satıra gidiyorduk. Şimdi DirectMap'le benzerlik o satıra gittim. İndeksten dolayı o satıra gittim. Peki benim aradığım veri bu satır içerisindeki Full Associative 4 tane set içerisinde hangisinde? Bunu anlamak için.
+
+312
+01:24:55,583 --> 01:25:22,923
+Bu sefer bu dört tane set içerisindeki tagları tek tek benim referans ettiğim adresin tagıyla karşılaştırıyorum. Aradığım veri varsa bir yerde bulduysam onu bulmuş oluyorum. Yok demeyebilmek için bu dört tane setin tamamına da bakmam lazım. Bu da set associative yapının full associative tarafından gelen özelliği. Bunu söyleyebiliriz. Full associative'den farkı ne? Buyurun soru var galiba.
+
+313
+01:25:24,500 --> 01:25:29,960
+Hocam siz devam edin, ben sandım bununla ilgili bir sorun vardı yapıyla ilgili.
+
+314
+01:25:29,960 --> 01:25:42,860
+Tamam, ben konu anlatımına devam ediyorum. Full Associative'den farkı ne? Full Associative'de bütün cache gözleri için, cache blokları için, yani az önce yaptığımız örnekte ne kadar satır çıkmıştı?
+
+315
+01:25:46,068 --> 01:25:59,068
+10 muydu? Neyse işte bütün gözler için tek tek tagları karşılaştırmam lazım. 1024 tane gözün tag alanını karşılaştırmam gerekiyordu. Ama associative yaptığım zaman bu verinin...
+
+316
+01:25:59,104 --> 01:26:16,224
+Belirli bir kısmına kendimi odaklamış oluyorum. İndeks kısmı örtüşen 4 tane kümem kaldı geriye. Sadece 4 tane küme içerisinde tag alanını karşılaştırmam yeterli olmuş oluyor. Dolayısıyla set associative cache yapısı full associative ile direct mapped arasındaki olumlu yönleri birleştiren bir mantık.
+
+317
+01:26:16,524 --> 01:26:26,444
+Temel mantık burada bir indeks mappingi var ama bir satır içerisinde de kendi içerisinde full associative bir mantık var.
+
+318
+01:26:26,836 --> 01:26:39,016
+Nasıl birleştirmiş? Bütün cache gözlerinde tek tek veri aramak zorunda değilim. Bu noktadan full associative'i iyileştirmiş. Diğer yandan da her bir satır içerisinde kendi arasında full associative mantık olduğu için.
+
+319
+01:26:39,359 --> 01:26:54,339
+DirectMap cache mantığını da bu noktada iyileştirmiş olduğunu söylememiz mümkün. Bu noktada arkadaşlar, DirectMap, Full Associative ve Set Associative cache mantıklarının adres partitioning'i nasıl oluyor bunu net bir şekilde anlamış olmamız lazım.
+
+320
+01:26:55,000 --> 01:27:04,859
+İkincisi, aradığımız bir adres için, referans ettiğimiz bir adres için veri erişimi veya aradığım veriyi bulmak nasıl oluyor onu anlamış olmak lazım.
+
+321
+01:27:07,359 --> 01:27:25,359
+Polisi nasıl oluyor onu anlamış olmak lazım. DirectMap için anlattık, Full Associative için anlattık, Set Associative için bahsedelim. Set Associative için de benzer şekilde aradığım veriyi bulabilmek için indeks, ilgili adresin indeksine gidiyorum. O satır içerisindeki bütün setlerde verimi arıyorum. Yoksa...
+
+322
+01:27:26,228 --> 01:27:52,467
+Buradaki, bu indeks satırındaki, çünkü indeksleri ortaktı bu setlerin hatırlayacak olursanız. Bu satır içerisindeki aynı indekse sahip değerler içerisinden bir tanesini kaldırıp memori'den getirdiğim veriyi buraya koyacağım. Hangisini kaldıracağım? First in, first out olabilir, random olabilir, least recently used olabilir. Ama bu sadece bu satır içerisinde çalışıyor. Bütün veri üzerinde least recently used hesabı yapmamıza gerek yok.
+
+323
+01:27:54,228 --> 01:28:20,307
+Bu cache yapıları için net bir şekilde kavramış olmamız çok önemli arkadaşlar. Çünkü bir sonraki hafta göreceğimiz konu virtual memory konusu. Kendi başına ikinci veri birimlerinden, depo birimlerinden memoriye verinin aktarımını ifade etmekle birlikte biz bu sistemi ele alırken tam bir sistem olarak ele alacağız. Yani page table içinde kendi cache'i olacak.
+
+324
+01:28:20,735 --> 01:28:39,296
+Memoriye getirdiğimiz veri içinde veri cache'imiz olacak. Dolayısıyla böyle komple bir sistemi görüyor olacağız. Bu kısmı kendi özelinde memoriden işlemciye veri aktarırken ki kullanılan cache yapısının kendi içerisinde çok iyi kavramamız önemli. Bu noktada önem arz ediyor. Tekrar vurgulamış olayım.
+
+325
+01:28:39,956 --> 01:29:00,196
+Dolayısıyla şimdi 3 cache yapısını da gördük. Fakat dikkat edin, şu ana kadar yapmış olduğumuz işlemler veri okuma ilişkindi. Yani read işlemlerinde cache kullanımıydı. Hep şu ana kadar read işlemiyle ilgili düşündük. Peki yazma işlemi söz konusuysa neyle karşılaşıyoruz? Ona bakalım şimdi.
+
+326
+01:29:02,516 --> 01:29:05,196
+Bunu yaptık, bunu yaptık, bunu yaptık. Şundayız.
+
+327
+01:29:12,627 --> 01:29:17,288
+Yazma işlemleriyle ilgili hangi senaryolarla karşılaşıyoruz? Bu bizim için önemli.
+
+328
+01:29:17,627 --> 01:29:25,608
+Şimdi yazma işlemi dediğimiz zaman, elimizde bir cache var, bir memory var. Mantık olarak düşündüğümüzde biz sürekli cache ile ilgili işlem yapıyoruz.
+
+329
+01:29:25,728 --> 01:29:32,608
+Dolayısıyla biz aldığımız bir memory adresindeki veriyi güncellemek istediğimiz zaman yapabileceğimiz iki tane şey var.
+
+330
+01:29:32,608 --> 01:29:38,448
+Bunlardan birincisi, biz doğrudan memory ile çalışmadığımız için birincisi veriyi cache'te güncellerim.
+
+331
+01:29:38,511 --> 01:29:55,351
+Ve o güncel veriyle zaten cache'ten erişiyorum. Giderim cache'ten tekrar okurum yazarım. Ama belirli bir zaman sonra örneğin o değiştirdiğim verinin cache'ten kalkması gerekiyorsa bunun işte o zaman memoriyle güncellenmesi gerekebilir.
+
+332
+01:29:55,351 --> 01:30:01,332
+Yani ne yaptık burada? Veri cache'te güncellendi ve o cache'teki güncel haliyle ben devam ettim.
+
+333
+01:30:01,747 --> 01:30:25,427
+Fakat cache'e yazmış olduğum veri şu anda memori'de yok. Cache'e yazdığım veriyi de kaldırmak gereken bir komut yürütmüşsem, bir referanslama yapmışsam işte o zaman memori de güncelleyebilirim. Bu bir senaryo. İkinci senaryo da şu. Veriyi aldım işledim. Cache'teki memori içeriğini güncelleyeceğim. Cache'i güncellerken memori'yi de aynı anda güncelliyorum. İkinci senaryo da bu olabilir.
+
+334
+01:30:25,876 --> 01:30:46,096
+Birincisinin avantajı şu, memoriye erişim biraz maliyetli. Dolayısıyla cache'te veriyi tutup, güncel veriyi tutup onunla ilgili devam etmek erişim hızı açısından pratiklik oluşturuyor. Bununla birlikte cache'teki veri, güncel veri değişecek mi, kalkacak mı, replace olacak mı bunu takip eden bir kontrol koymam lazım.
+
+335
+01:30:46,579 --> 01:30:55,960
+Diğer taraftan ikinci senaryoda işlem maliyeti biraz yüksek. Hem cache'i güncelliyorum hem memori'yi güncelliyorum. Fakat böyle bir takiple ilgilenmem gerekmiyor.
+
+336
+01:31:01,844 --> 01:31:19,184
+Şimdi, yine bu okumayla ilgili kısma karşılık gelen bir senaryo. Verinin nasıl kalkacağına ilişkin olarak devam ediyoruz aslında. Veri okuma kısmında. Burada işte senaryolarımız şunlar olabilir.
+
+337
+01:31:27,712 --> 01:31:41,772
+En eski veri hangisi ise onu kaldırıp yerine yeni veriyi koyabilirim. Bunlar neresi için geçerli bu mantıklar? Bunlar içerisinde associative mantık içeren cache'lerde. Yani set associative ve full associative mantıklarda geçerli.
+
+338
+01:31:43,232 --> 01:31:51,772
+Zaten direct mapped cache'te zaten birebir mapping olduğu için orada replacement policy doğrudan index kısmıyla ilgili satıra gitmek şeklinde.
+
+339
+01:31:52,467 --> 01:32:01,708
+Ne olabilir mesela? Koyduğum en eski veriyi kaldırıp yerine yeni veriyi koyabilirim. Başka random, rastgele herhangi bir satırı kaldırıp yeni çektiğim veriyi koyabilirim.
+
+340
+01:32:01,708 --> 01:32:04,807
+Least recently used olabilir. Bu şu demekti zaten.
+
+341
+01:32:05,167 --> 01:32:32,147
+En uzak geçmişte referans ettiğim veri hangisi ise onu kaldırırım. Yani uzun süredir ilgilenmediğim veri hangisi ise onu kaldırıp onun yerine veriyi koyabilirim. Bunlar hep geçmişe yönelik bakış açıları. Bir de ileriye yönelik bir projeksiyon koyarak yani çalıştırmayı bekleyeceğim komutları dikkate alarak ileriye yönelik olarak en az kullanmayı beklediğim komut satır adres hangisi ise onu kaldırabilirim.
+
+342
+01:32:32,916 --> 01:32:38,576
+Bu şekilde bir seçim söz konusu olabilir, replacement polisi açısından.
+
+343
+01:32:41,096 --> 01:32:47,216
+Bunlara ilişkin nasıl gerçeklenebileceğini burada biraz ifade etmeye çalışmışız.
+
+344
+01:32:47,336 --> 01:32:51,756
+Bunların, nedir onun adı, ilgili donanım karşılıklara bakılabilir.
+
+345
+01:32:52,336 --> 01:32:58,916
+Mesela first in first out'da her bir ilgili cache gözü için bir counter tutulup,
+
+346
+01:32:59,188 --> 01:33:12,707
+Her cache erişiminde o counter arttırılıp, counter'lardan en büyük hangisi ise ilk olarak cache'e konulmuş olan veri odur diye bunu söyleyebiliriz. Random'da rastgele herhangi bir blok üretiyoruz.
+
+347
+01:33:14,328 --> 01:33:26,207
+ListRecentlyUced'da ise burada arkadaşlar bir tane bit ile listRecentlyUced olan şeyi tutmamız lazım. Nedir onun adı? Satırı belirlememiz gerekiyor.
+
+348
+01:33:26,707 --> 01:33:36,607
+Bunlar dediğimiz gibi hep okumaya yönelik kısımlardı. Peki, yazma kısmında ben veriyi güncelleyecek olursam bununla ilgili ne gibi bir senaryoyla karşılaşıyorum?
+
+349
+01:33:38,947 --> 01:33:45,707
+Birinci problem, ben doğrudan cache ile muhatabım. Memory ikinci planda, yani cache ile bulamazsam...
+
+350
+01:33:46,163 --> 01:34:12,423
+Erişiyordum memoriye. Aynı şey yazma için de geçerli. Dolayısıyla ben cache'te bir veriyi güncellediğim zaman, yeniden yazdığım zaman, yani işlem sonucunda bir cache adresini güncellediğim vakit bu memori de yazılmamış olabilir. Dolayısıyla bizim başka bir program memori'den bu veriye erişmek istediğinde tutarlılığını sağlamamız lazım. Bu consistency denilen terim. Cache ile memori arasındaki tutarlılığı sağlamamız lazım.
+
+351
+01:34:13,171 --> 01:34:34,491
+Burada iki farklı senaryo var demiştik. Bunlardan bir tanesi write-through mantığı. Write-through mantığı bizim ikinci senaryo olarak anlattığımız. Yani hem cache hem de memory aynı anda güncelleniyor. Write-back mantığında ise cache'e veriyi yazıyoruz. Bu güncelleme bilgisini bir dirty biti olarak tutuyoruz.
+
+352
+01:34:34,868 --> 01:34:46,088
+Dirty biti bir olan bir satırın replacement durumu söz konusu olmuşsa işte o zaman veriyi memoride güncelliyoruz. Böyle bir senaryoda writeback durumu olarak isimlendiriliyor.
+
+353
+01:34:48,648 --> 01:34:55,028
+Dolayısıyla write true ve writeback ile ilgili olarak durumlarımız bunlar. Dirty bit ortaya çıktı writeback için.
+
+354
+01:34:55,667 --> 01:35:10,187
+Bunlara ilişkin genel şematik yapıdan bahsetmek gerekirse, write-through mantığında hatırlayacak olursanız hem cache hem de memory veri güncellemesinde aynı anda güncelleniyordu. Dolayısıyla biraz zaman kaybımız var.
+
+355
+01:35:13,967 --> 01:35:21,867
+Burada veri cache'te güncellenirken memory'de de aynı anda güncelleniyor. Dolayısıyla her ikisine de birer yol söz konusu.
+
+356
+01:35:22,452 --> 01:35:44,712
+Rightback'te ise veriyi cache ile güncelliyoruz. Veriyi 4-bit ile değişen, güncellenen satırları belirliyoruz. Eğer 4-bit 1 olan bir satır için replacement söz konusuysa bu durumda cache ile memoriye doğrudan bir aktarım yaparak 4-bit 1 olan verinin memori ile de güncellenmesini sağlamış oluyoruz.
+
+357
+01:35:48,243 --> 01:36:07,823
+Gördüğümüz konular read ile ilgiliydi. Store ile ilgili veya güncelleme ile ilgili durumlara bakacak olursak bir örnek üzerinden bunu ele alalım. Write true örneğini inceliyoruz. Burada bir memory yapımız var. 16 byte'lık bir, 16 gözlü bir memory'miz var.
+
+358
+01:36:12,500 --> 01:36:28,100
+Full Associative bir adres, cache yapısı söz konusu. Cache yapımız Full Associative cache yapısı. Ve burada iki tane cache gözümüz var, iki tane cache bloğumuz var. Cache bloklarının her birisi iki byte veri kaplayabiliyor.
+
+359
+01:36:31,731 --> 01:36:35,332
+Sırasıyla erişimlerimizde şunlar, yürüteceğimiz komutlar.
+
+360
+01:36:35,412 --> 01:36:36,931
+Bir numaralı içeriye erişmek istiyorum.
+
+361
+01:36:37,132 --> 01:36:41,832
+Bir adresine, yedi adresine, sıfır adresine, beş adresine ve on adresine erişmek istiyorum.
+
+362
+01:36:42,351 --> 01:36:45,992
+Fakat burada dikkat edecek olursanız veri oku, veri oku, bir de veri yaz var.
+
+363
+01:36:46,092 --> 01:36:47,572
+Bakın burada bir veri yaz var.
+
+364
+01:36:48,072 --> 01:36:49,792
+Ne yapıyoruz yani netice itibariyle?
+
+365
+01:36:50,391 --> 01:36:57,252
+Yedi numaralı adresten okuduğumuz veriyi R2 yazmacına aktarıp, R2 yazmacındaki veriyi memorinin sıfır adresinde güncellemek istiyoruz.
+
+366
+01:36:57,252 --> 01:36:59,712
+Dolayısıyla burada bir store işlemi var.
+
+367
+01:36:59,731 --> 01:37:25,032
+Store işlemi aynı zamanda cache'teki veriyi de güncellemekle sonuçlanacak bir senaryo oluşturuyor. Yine işlemci içerisindeki registerlarımız da burada. Yani yürüteceğimiz komutlar bunlar. Memorimiz 16 gözden oluşuyor. İçeriği bu. İki satırlı bir cache'imiz var. Bunlar kendi içerisinde full associated mantıkla bağlı. Bir satırımız 2 byte'den oluşuyor. Başlangıçta boş bir cache ile başlıyoruz. Valid bitlerimiz 0. İlk yürüteceğimiz komut.
+
+368
+01:37:25,359 --> 01:37:41,599
+Memorinin bir numaralı adresini R1 yazmacına oku. Yürütmek için bir adresine referans yaptığımız zaman aradığımız veri cache'te yok. İlgili tag alanı yok. Dolayısıyla gidip Memorinin bir numaralı adresini alıyoruz.
+
+369
+01:37:42,195 --> 01:38:05,895
+Offset bit sayımız 1. Dolayısıyla en düşük anlamlı biti haricindeki adres değeri aynı olan veriyi 1 adresini referansladığımızda cache'e çekmemiz lazım. Bu 0 numaralı adrese karşılık geliyor. Yani 0 ile 1'in en düşük anlamlı biti haricindeki adres değerleri aynıdır. Dolayısıyla 78 ve 29 verisini cache'e çektik. Valid bitini 1 yaptık. Tag değeri 0.
+
+370
+01:38:06,319 --> 01:38:18,880
+Bunun tag değeri 0, 1, 2, 3, 4, 5, 6, 7 diye gidecek tag alanları. R1 yazmacında da 29'u aktardık. Daha sonra 7 numaralı adres içeriğini okuyacağız.
+
+371
+01:38:18,880 --> 01:38:31,019
+7 numaralı adres içeriğini okurken, bakın şöyle bir şey yaptık. Veriyi buraya attığımız vakit, veriyi buraya attığımız vakit en uzak geçmişte referans edilen,
+
+372
+01:38:31,412 --> 01:38:39,312
+Cache gözü alttaki göz oldu. İkinci satırımız oldu. Dolayısıyla RISC recently used olarak burayı işaret etmeye başladık.
+
+373
+01:38:40,435 --> 01:39:01,795
+7 numaralı memory içeriğini R2 yazmacına aktarabilmek için 7 numaralı adrese gittiğimizde 6 ve 7 birlikte cache'e aktarılacak. Dolayısıyla onları cache'e aktardık. Tag alanı 1, 2, 0, 1, 2, 3. 3 numaralı tag değerine sahip. Valid bitini 1 yaptık. R2'ye de 173 değerini aktardık. Şimdi write true'nun etkisini göreceğimiz.
+
+374
+01:39:03,796 --> 01:39:28,916
+Write-thru'nun etkisini göreceğimiz bir store işlemi var. R2 yazmacını, memory'nin 0 numaralı gözüne aktaracağız. 0 numaralı adres gözünü partitioning'e tabi tuttuğumuzda şunu göreceğiz. Bu tag alanı 0 olan bir değere karşılık geliyor. Tag alanı 0, offset değeri de 0. Yani şu numaralı adrese denk gelecek. Cache'in şu numaralı gözüne denk gelecek. Store işlemiyle ilgili. Şunu yapıyoruz.
+
+375
+01:39:29,460 --> 01:39:46,739
+Tag alanını karşılaştırdık. Tag alanını karşılaştırdık. Bizim verimiz de tutarlı. Dolayısıyla bizim aradığımız veri burada olmalı veya biz buraya yazacağız daha doğrusu. Bu göze yazacağız. Bunun sıfır numaralı offsetine yazacağız. Burada baktık tag alanı.
+
+376
+01:39:52,115 --> 01:39:56,415
+Şimdi ben mouse'dan bir kere basıyorum. İki üç kere şey oynuyor da onu düzeltmeye çalışıyorum.
+
+377
+01:39:57,995 --> 01:40:01,115
+Şey içerisindeki, R2 yazmacı içerisindeki veriyi...
+
+378
+01:40:02,676 --> 01:40:21,976
+İlgili tag değerine sahip olan ve ilgili offsetteki veri gözüne yazdık. Bunu yazarken aynı zamanda memoriye de güncelledik. Dolayısıyla write true'yu bu şekilde store işleminde gerçeklemiş olduk. Şu anda cache'in içeriği bu. Bir sonraki işlemimiz yine store ve 5 numaralı adrese bir değer yazacak.
+
+379
+01:40:29,043 --> 01:40:31,484
+Tag alanına bir veri yazmak istiyorum.
+
+380
+01:40:32,444 --> 01:40:36,003
+Şimdi aradığımız veri cache'te yok.
+
+381
+01:40:36,644 --> 01:40:38,684
+Öncelikli olarak veriyi cache'e çekeceğiz.
+
+382
+01:40:39,963 --> 01:40:40,564
+Şurada bakın.
+
+383
+01:40:41,323 --> 01:40:43,123
+Sıfır ve üç numaralı değerler vardı.
+
+384
+01:40:43,724 --> 01:40:45,264
+Aradığımız veri. Bunun tagı iki.
+
+385
+01:40:46,100 --> 01:41:13,580
+Cache içerisinde tag-ı 2 olan bir değer yok. O zaman aradığım veriyi memori'den çekeceğim. Ondan sonra güncelleyip tekrar memoriye yazacağım. Bunun için hangisini kaldırmalıyım? LISCRECENTLY USED biti o anda hangi satır gösteriyor? Bu satır gösteriyor. Veriyi öncelikli olarak buraya çekeceğim. Tag alanını güncelledim. LISCRECENTLY USED diğer cache gözü oldu. Daha sonrasında R1 değerini bunun bir offsetine yazmam lazım. Yani şu göze yazacağım.
+
+386
+01:41:14,484 --> 01:41:28,663
+Burayı güncelledim. Write true olduğu için memoride de aynı satırı güncellemek zorunda kaldım. Son olarak 10 numaralı adres içeriğini R2'ye okuyacağım. 10 numaralı adres içeriği 0, 1, 2, 3, 4, 5 tagına sahip.
+
+387
+01:41:31,391 --> 01:41:56,452
+5 tagıyla ilgili işlem, read işlemi yapacağım. Bakıyorum, 5 tagı yok. LISC recently used burası. Dolayısıyla 5 tagına sahip olan bu veriyi cache'in üstteki satırına aktarmam gerekiyor. Buradan da mikro işlemci içerisinde R2 yazmacını aktarmış oluyoruz. Dolayısıyla toplamda bakacak olursak, boş cache ile başladım. Bir mis oldu buradan.
+
+388
+01:41:57,011 --> 01:42:17,911
+İkinci load işleminde o da miss oldu. Üçüncü store işleminde bu cache de vardı burada. Dolayısıyla bundan dolayı hit oldu. Üçüncü işlemimiz 5 adresiyle ilgiliydi. Bu da miss olacak. Son olarak load işlemi bu da miss ile sonuçlanacak. Dört tane hit ile bu write true sürecini tamamlamış olacağız.
+
+389
+01:42:22,963 --> 01:42:49,064
+Bir de writeback işlemine bakalım. Writeback işlemi için ek olarak cache'te bir de 4 ibiti tutmamız gerektiğini söylemiştik. 4 ibiti ne işe yarıyordu? Veriyi cache'te güncelledim anlamına geliyordu. Eğer ki ben cache'te 4 ibiti bir olan bir satırı replace etmem gerekirse bu durumda ilgili adres içeriğini memoride de güncellemek adına bu 4 ibiti tutuyorum. Aynı referanslamalar.
+
+390
+01:42:49,652 --> 01:43:16,652
+Şunun tagı 0, bunun tagı 0, 1, 2, 3, bunun tagı 3, bunun tagı 0, bunun tagı 2, bunun tagı 5. Onları da aklımızda tutalım. İkişer ikişer veri tutaklandığı için. Şimdi birinci referansımız bir adresini R1'e aktarmak. Boş bir cache ile başlıyoruz. Valid bitlerimiz 0, 4'ü bitlerimiz 0. Dolayısıyla ilk işlemimiz bir miss olacak.
+
+391
+01:43:17,716 --> 01:43:32,536
+Veriyi getiriyorum. Tag alanı 0 olan, tag alanı 1 adresiyle aynı olan diğer adres 0 adresi. Dolayısıyla 0 ile 1 aynı anda bunlardan herhangi bir referans edildiğinde ikisi birden cache'e aktarılıyor. Çünkü bizim cache'imizin block genişliği 2 byte.
+
+392
+01:43:33,636 --> 01:43:43,256
+Ve byte offset bit sayımız 1. Dolayısıyla en düşük anlamlı bit haricindeki adres değerleri aynı olan içerik aynı cache satırlarına aktarılır.
+
+393
+01:43:43,699 --> 01:43:59,519
+Birinci işlemimiz bir miss oldu. Daha sonra ikinci işlemimiz tag alanı 0, 1, 2, 3 olan bir veriyi almak. List recently used boş bir satırımız var zaten orayı gösteriyor. Veriyi oraya çektik bu da miss oldu.
+
+394
+01:44:00,307 --> 01:44:18,287
+Bir sonraki işlemimiz bir store işlemi. Store işlemi hangi taga yazacak? Sıfır adresinin tag değeri sıfırdır. Dolayısıyla sıfır taglı olan bir adrese yazacak. Bu işlemi yürütebilmek için full associative cache içerisinde tag alanı sıfır olan bir göz arıyorum, buldum.
+
+395
+01:44:18,287 --> 01:44:23,287
+Bu işlemi yapabilmek için, yani store işlemini yapabilmek için valid bitine baktım.
+
+396
+01:44:24,115 --> 01:44:38,996
+4 ibiti de 0. Ben burada güncelleme yapıyorum. Güncelleme yaptığım zaman R2 yazmacının 0 offsetine yazdım. 4 ibitini 1 yaptım. Ama memoride güncelleme yapmıyorum bu aşamada. Bir sonraki store işlemi 5 adresiyle ilgili işlem yapacak.
+
+397
+01:44:49,332 --> 01:45:13,352
+Store işlemi yapabilmek için bakıyorum verimi, tag alanlarını karşılaştırıyorum. Tag alanı 2 olan bir cache gözü var mı? Yok. O zaman memoriden veriyi cache'e getireceğim. Cache'ten getirdikten sonra güncelleyeceğim ve cache'te bu güncel haliyle devam edeceğiz. Hangisinin kalkması lazım? LISC, RISC, USPOLIS'i kullanıyorum. O zaman şu alttaki kalkacak.
+
+398
+01:45:13,811 --> 01:45:39,032
+5 ve 4 birlikte geliyor cache. Bunları getirdim. Daha sonra R1'i bir offsetinde güncelledim. 4'ü bitini 1 yaptım. Tag alanı 2 oldu. Bu veri memoriden farklı olduğu için 4'ü biti 1 oldu. Son işlemimiz bir load işlemi. 10 numaralı içeriği R2 yazmacına aktaracağım. 0, 1, 2, 3, 4, 5. Tag değeri 5.
+
+399
+01:45:40,435 --> 01:45:46,515
+Bir load işlemi. Tag değeri 5 olan bir veri var mı?
+
+400
+01:45:46,931 --> 01:46:09,631
+Yok. O zaman bir tane satırı kaldıracağım ve 10 ve 11 adreslerini cache'e aktarmam lazım. Hangisini kaldırayım? LISC, RISC, LISC satır, üstteki satır. Bunu kaldıracağım. Ama bunu kaldırabilmek için 4'ü bitine bakıyorum. 4'ü biti 1. O zaman bu veri cache'te memory'den daha güncel durumda. O zaman memory'yi buna göre güncellemem lazım öncelikli olarak.
+
+401
+01:46:11,011 --> 01:46:13,731
+Öncelikli olarak memory'yi güncelliyorum.
+
+402
+01:46:14,355 --> 01:46:32,095
+Sonrasında bu veriyi kaldıracağım artık ve 10 ve 11 içeriğini buraya aktaracağım. Aktardım. Tag alanını güncelledim 5. Veri zaten validdi. Ama memoriyle uyumlu veriye düştüğüm için artık 4 bitimi 0'a çektim ve işlemi sonlandırdım.
+
+403
+01:46:33,015 --> 01:46:41,555
+Bu da right back'in çalışma mantığını full associative cache mantığı çerçevesinde tanımladığımız bir durumu oluşturuyor arkadaşlar.
+
+404
+01:46:42,079 --> 01:47:01,979
+Kabaca bu haliyle farklı 3 cache yapısını görmüş olduk. Load işlemlerinde referanslama nasıl oluyor, address partitioning nasıl oluyor onları anlatmış olduk. Daha sonrasında ise veri store işlemlerinde cache kullanımı nasıl oluyor onu gördük.
+
+405
+01:47:02,323 --> 01:47:11,363
+Store işlemlerinde DirectMap biraz farklı bir yapı çünkü doğrudan adres indeksiyle satır birebir eşleştiği için bir replacement policy'den bahsedemiyoruz.
+
+406
+01:47:11,723 --> 01:47:14,763
+Veyahut da basit bir replacement policy'den bahsedebiliyoruz.
+
+407
+01:47:15,343 --> 01:47:19,903
+Fakat Full Associated ve Set Associated yapılar için ise
+
+408
+01:47:21,043 --> 01:47:31,043
+Temelde least recently used first in, first out, random gibi replacement policy'ler olduğu için bu durumda verinin...
+
+409
+01:47:31,423 --> 01:47:45,724
+Cache'te ve memoride uygun şekilde tutarlılığını sağlamak adına write true ve write back mantıklarını gördük. Bunların birbirine göre trade offları var. Dediğimiz gibi bir tanesi her güncellemede memoriye de yarışıyor write true işlemi.
+
+410
+01:47:49,055 --> 01:48:05,815
+Cache'te güncel verinin replacement durumu söz konusu olduğunu anlamak üzerine ekstra bir takım kontrollere ihtiyaç duyuyor. Dolayısıyla bunlar arasındaki polislerin trade-offlarını da karşılaştırarak hangisi daha avantajlıdır duruma göre karar vermek söz konusu olabilir.
+
+411
+01:48:06,387 --> 01:48:28,387
+Buraya kadar olan konuyla ilgili sormak istediğiniz bir şey var mı? Çünkü bu haliyle cache konusunu, iki haftalık cache konusunu tamamlamış olduk. Önümüzdeki hafta virtual memory konusuna geçiyor olacağız. Virtual memory konusu da aslında burada da görmüş olduğumuz cache yapısına bağlı olacak. Dolayısıyla biz bir verinin...
+
+412
+01:48:28,591 --> 01:48:38,731
+İşlemci'de işlenebilmesi için gerekli veri akışını gerek virtual memory gerekse cache mantığı çerçevesinde bütüncül olarak değerlendireceğiz.
+
+413
+01:48:38,731 --> 01:48:55,991
+Ve büyük ihtimalle de böyle bütüncül bir final sorusu olur. Hem virtual memory hem cache içeren bir sorumuz olur. O yüzden buradaki cache yapısını iyi bir şekilde anlayıp bir sonraki haftanın konusuna da taşımanız gerekiyor. Şimdiden söyleyeyim. Var mı sormak istediğiniz bir şey?
+
+414
+01:48:58,420 --> 01:48:59,119
+Yok hocam.
+
+415
+01:49:00,260 --> 01:49:04,979
+Tamam. Yine sorunuz olursa sorabilirsiniz. Ben bir açıklamada sınavla ilgili tekrar yapayım.
+
+416
+01:49:05,619 --> 01:49:08,899
+Saat 11'de sınavı tanımladım. Klasik sınav şeklinde olacak.
+
+417
+01:49:11,479 --> 01:49:17,519
+Sınav süresi 50 dakika. Toplamda 4 soru var. 2 tanesi basit ve bonus sorular.
+
+418
+01:49:18,199 --> 01:49:21,300
+Yani 100'ün üzerinde puan alma şansımız var. 2 tane ana sorumuz var.
+
+419
+01:49:21,684 --> 01:49:43,583
+Uygun zamanda bunları tamamlayıp, el ile çözüm yapıp veya bilgisayarda da tablet üzerinden yazarak da yapabilirsiniz. Daha sonra çözümlerinizi bir PDF dosyası olarak sisteme tekrar yüklemenizi bekliyorum. Sınav süresi içerisinde bunları tamamlamaya gayret edelim arkadaşlar. Ekstradan, mailden, şuradan, buradan gelmesi gelmezse iyi olur. Sisteme yüklemeye çalışalım.
+
+420
+01:49:44,020 --> 01:49:58,440
+Dediğim gibi iki tane bonus soru var, iki tane ana sorumuz var. Toplamda 120 puanlık bir kısa sınav olmuş olacak. Onu söyledim. Bunun haricinde soracağınız bir şey yoksa da dersi tamamlayalım. Biraz soluklanın sonra da sınav başlayacak zaten.
+
+421
+01:50:02,323 --> 01:50:11,623
+Sorumuz yok herhalde arkadaşlar. Sınavda başarılar. Haftaya görüşmek üzere öyleyse.
+
+422
+01:50:12,663 --> 01:50:14,003
+Teşekkürler. Görüşmek üzere.
