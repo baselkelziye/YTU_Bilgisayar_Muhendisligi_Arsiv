@@ -3264,6 +3264,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Say%C4%B1sal%20Video%20%C4%B0%C5%9Fleme)
 
 
+#### 📘 Seminer 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Seminer)
+
+
 #### 📘 Sistem Simülasyonu 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
