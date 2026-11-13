@@ -1,0 +1,1259 @@
+1
+00:00:38,771 --> 00:00:41,739
+Şimdi şurada başlıyoruz.
+
+2
+00:01:05,587 --> 00:01:07,327
+Günaydın hocam. Sesim geliyor mu?
+
+3
+00:01:07,527 --> 00:01:09,128
+Hoş geldin [öğrenci]. Geliyor, evet.
+
+4
+00:01:10,347 --> 00:01:11,587
+İyiyim hocam. Siz nasılsınız?
+
+5
+00:01:12,387 --> 00:01:24,367
+Teknede yok [öğrenci]. Şimdi işte biraz erken açtık. O yüzden eğer mesela başlamak istersen bugün başlayabilirsin. Keza [öğrenci] için de aynı şey geçerli ama.
+
+6
+00:01:25,620 --> 00:01:30,020
+Sen daha üstte ol geçtiğin için istersen ilk sözü sen alabilirsin.
+
+7
+00:01:30,520 --> 00:01:31,980
+Önemli hocam, başlayabilirim ben.
+
+8
+00:01:32,439 --> 00:01:35,140
+Tamam, peki ben şimdi bir paylaşımı durdur yapayım.
+
+9
+00:01:35,740 --> 00:01:37,040
+Sen başlayabilirsin diyor.
+
+10
+00:01:38,240 --> 00:01:39,540
+Hocam ben de ekran paylaşayım.
+
+11
+00:01:56,052 --> 00:01:56,731
+Gözüküyor mu hocam?
+
+12
+00:01:57,192 --> 00:01:57,632
+Gözüküyor.
+
+13
+00:02:01,072 --> 00:02:02,391
+Bir saniye hocam.
+
+14
+00:02:10,036 --> 00:02:30,216
+Bahsedeceğim konu Docker. Docker nedir? Docker bir konteyner teknolojisidir. Aynı işletim sistemi üzerinde yüzlerce hatta binlerce birbirinden izole ve bağımsız konteynerler çalışılabiliriz. Nasıl yani? Docker imajlardan ve konteynerlardan oluşur.
+
+15
+00:02:33,300 --> 00:02:50,160
+Python olabilir, MySQL olabilir, Linux olabilir. Bir image üzerine benzettiğimiz konteynerları bir işletim sistemi üzerinde birbirinden bağımsız bir şekilde çalıştırabiliriz. Örneğin hocamıza bir ödev göndereceğiz ya da bir proje göndereceğiz ve kurduğumuz bir sürü kütüphane, bir sürü framework olabilir.
+
+16
+00:02:52,627 --> 00:03:13,487
+Bu frameworkleri, bu kütüphaneleri hocamızın bilgisayarında olmayabilir. O yüzden bir proje geliştirdiysek, bunun Docker failini kurarak sadece Docker faili hocamıza göndermemiz source sosyalarla beraber yeterli oluyor ve sadece bunu bu ilet edip çalıştırabiliyorlar. O yüzden ulaşılması kolay, dağıtılması kolay oluyor.
+
+17
+00:03:14,099 --> 00:03:30,000
+Dockerfile nedir? Dockerfile aslında verdiğimiz bir dizi komutlardır. Bu komutlar, Docker hangi image üzerinden boyut edilecek ya da konteynerın çalışma şekli, çalışma prensibi nasıl olacak gibi şeylere kadar belirlenebilir.
+
+18
+00:03:35,475 --> 00:04:01,735
+Diyelim ki bir sürü mikroservisten oluşan bir proje hazırlıyoruz. Bunların hepsi birbirine bağlı. Birine çıkacak bir hata diğerlerinin de runtime error vermesine ya da başka şeyler de birbirini etkilemesine sağlayabilir. O yüzden bunları bir sürü Docker konteynera bölüp ayrı ayrı izole bir şekilde çalıştırabiliyoruz. Örneğin birisi patlasa bile ya da birisi dursa ya da virüs kürsü bile diğerlerini etkilemiyor. Aynı zamanda Docker kendi kendine tekrardan yeniden başlatabiliyor.
+
+19
+00:04:02,740 --> 00:04:28,960
+Saniyeler içinde başlıyor. Image etmemizden, bu ülke etmemize kadar çok hızlı bir süreç ve başlaması da çok hızlı. Çok hızlı kapatılabiliyor. Bir şey kuracağız ve bir sürü dosyaya ihtiyaç duyuyor. Hepsini tek bir dakır içinde kurup daha sonrasından ihtiyacımız kalmadan sadece dakırı yok etmemiz yeterli olabiliyor. Çok kolay yönetiliyor. Ne üzerinden kuracağımız, nasıl çalıştıracağımız, içinde ne olacağı gibi her şeyi çok kolay yönetebiliyoruz.
+
+20
+00:04:30,100 --> 00:04:54,019
+Ve aynı zamanda Linux üzerinde, Windows üzerinde de çalışabiliyor. Ama kendisi Linux çekerleri üzerinde çalışan bir teknoloji. Sanal makine ve Docker'ın farkıysa, sanal makine tam işletim sistemini kullanıyor ama Docker kendi küçültülmüş işletim sistem imajını kullanabiliyor. Yani bunu demiştim zaten, Python, MySQL, Alpine, fark etmez bir sürü şey üzerinde çalışabiliyor.
+
+21
+00:04:55,699 --> 00:05:16,819
+Çalışır hale gelmesi, Virtual Machine'in dakikaların normal bir bilgisayara açılır gibi işletim sisteminin kendine gelmesi varken, Docker'ın saniyeler olması. Bunu bin tane konteynerden bahsedersek bu önemli bir detay haline geliyor. Kolay paylaşılabilir yüksek dediğim gibi herhangi bir bilgisayarda Docker yüklüyse ben sadece source dosyalarına Docker file'ı o bilgisayara götürüp sadece onu bugül etmem yeterli oluyor.
+
+22
+00:05:24,115 --> 00:05:35,915
+Bu nedenle arkadaşlarımla söz hakkı vereyim. Sorusu olan arkadaşım varsa lütfen buyursun. Çünkü kenarda sürekli hak yerini kullandı.
+
+23
+00:05:43,956 --> 00:06:03,336
+Ben sorayım. Peki, şimdi diyelim ki yazılım projeni, araya da bir tane projeni bir Docker image üzerinde gerçekleştirdim diyelim. Peki, bunun başka bir bilgisayarda çalışabilmesi için diğer bilgisayarlarda ne olması gerekiyor? O konuda biraz bilgi verilmesi.
+
+24
+00:06:11,283 --> 00:06:39,283
+Kendi üzerindeki Linux şeklinde üzerinde çalıştırıyor. Yani işletim sisteminden tamamen bağımsız ama Docker'ın kurulu olması gerekiyor. Ve o bilgisayarı o projeyi aktarırken hem source dosyalara hem de kesinlikle bir Docker file'ın olması gerekiyor. Hazır bir Docker file'ın. Ve bunu sadece taşıdıktan sonra bir image üzerine build ediyorum ve onun konteynerını oluşturup çalıştırıyorum. Şu anda çalıştığım yerde de bir sürü mikroservis kullanıyoruz ve hepsini bir sürü Docker'larda...
+
+25
+00:06:39,283 --> 00:06:57,723
+Her bir Docker, server da kendi içinde kapalı bir şekilde çalışıyor. Bazen server'a kodu taşırken sintaks hatası yapıldığı bile oluyor. Sintaks hatası yapılsa, runtime, error bile olsa Docker kendini tekrardan yeniden başlatıyor ya da diğerlerini etkilemiyor. Bu yüzden çok çok avantajlı buluyorum ve çok beğeniyorum.
+
+26
+00:06:58,675 --> 00:07:25,735
+Peki, o zaman şöyle sorayım. Şimdi Docker üstüne önce bir kere kendi işletim sistemine sahip, onun üstüne çeşitli yazılımları ekleye ekleye bir full stack bir sistemi oluşturmuş olabiliyorsun. Peki bu full stack sistemin çeşitli runtime gereksinleri olabilir. Mesela belli bir kapasitede depolama alanı, belli bir kapasitede renbelik, bunların bir garantileme yolu var mıdır?
+
+27
+00:07:26,675 --> 00:07:32,495
+Hatta bunların runtime'da arttırıp azaltılabilmesinin bir yolu var mıdır? Onlardan biraz bahseder misin?
+
+28
+00:07:33,139 --> 00:07:46,620
+Çok iyi. Çünkü genelde kullandığımız projelerde gereksinimler çok düşük oluyor. Yani maksimum kullandığımız şey bir görüntü işlemede bir TensorFlow üzerinde build edilmiş bir konteyner olabilir.
+
+29
+00:07:47,379 --> 00:07:55,959
+Bunun dışında ben RAM'ini ya da GPU, CPU kullanımını değiştirecek herhangi bir şey daha önce kullanmadım. Ama mutlaka ayarlanıyordu diye düşünüyorum.
+
+30
+00:07:57,555 --> 00:08:06,036
+Yani konteynerı da sonuçta belli bir kapasitelerle kendisi otomatik mi ayarlıyor yoksa bizim veriyoruz? Bunu hiç düşünmedim. Şu an benim için çok da önemli bir soru oldu bu.
+
+31
+00:08:06,036 --> 00:08:25,555
+Ona bir bak. Ben de henüz konteyner ve mikroservisler üstüne ciddiyken kendim pratik hands-on çalışmaya başlamadım. Ama başlamam gerekiyor. Şu an dinleyen ve daha sonra da dinleyecek olan bütün arkadaşlarımı önerim. Şu an bu konteynerlaştırma ve özellikle mikroservisler üstünden küçük...
+
+32
+00:08:25,555 --> 00:08:34,076
+Çünkü dinamik hizmetler sunma. Şu an en hızla ivme kazanan mimari yaklaşımlardan bir tanesi. Hatta o diyebilirim.
+
+33
+00:08:34,915 --> 00:08:39,655
+Onun için de peki şimdi sen de laf arasında söyledin, ben de laf arasında söylemiş oldum.
+
+34
+00:08:40,596 --> 00:08:46,235
+Konteynerlerden mikroservisler genellikle el ele gidiyorlar. Bunların birbirini tamamlayacağı yönleri nelerdir?
+
+35
+00:08:46,596 --> 00:08:50,275
+Birlikte kullanılmasının avantajı nelerdir? Biraz da onlardan bahset lütfen.
+
+36
+00:08:50,899 --> 00:08:57,379
+Örneğin bir mesajlaşma uygulaması yazıyoruz. Bu diyelim ki bir Facebook'ta sadece bir mesajlaşma bölümü olabilir.
+
+37
+00:08:57,379 --> 00:09:09,019
+Ve burada çalışacak şeyler birbirlerine mesaj yollama, mesajın gelmesi, bildirim gönderme gibi bir sürü çalışan arka planda farklı kod parçası olabilir, bir servis olabilir.
+
+38
+00:09:10,120 --> 00:09:15,500
+Şimdi diyelim ki eğer bunları konteynerlerde değil de sadece kendi bilgisayarım üzerinde çalıştırırsam.
+
+39
+00:09:16,755 --> 00:09:39,275
+Tek bir parça halinde. O zaman mesaj gelme kodunla bir hatayla karşılaşırsan, o zaman bana bildirim ne düşmez. O zaman kod komple patlar. Diyelim ki o zaman bunları parçalara böleyim. Her bir servisi kodları farklı farklı çalıştırayım. Farklı bir terminalde çalıştırayım. Bu şekilde evet birisi patladığı zaman diğerleri çalışmaya devam edebilir ama peki bilgisayarıma bir şey olduğunda ne olacak?
+
+40
+00:09:44,755 --> 00:09:59,755
+Tekrardan hepsi komple patlar. Ama biz bütün servisleri, mesaj gönderme, mesaj gelmesi, bildirim gibi servislerin hepsini ayrı ayrı konteynerlarda bir sonucuda ya da kendi bilgisayarımda fark etmez çalıştırırsam, birisinde hata olduğu zaman bile...
+
+41
+00:10:00,000 --> 00:10:04,579
+O konteyner tekrardan kendini ayağa kaldırabiliyor. Bir restart metodumuz da var aslında.
+
+42
+00:10:05,900 --> 00:10:10,240
+Ve bu şekilde hepsi birbirinden izole oluyor. Birisinin içine virüs kesin ve diğerlerini etkilemiyor.
+
+43
+00:10:11,019 --> 00:10:14,200
+Diğeri patlasa diğerini etkilemiyor. Çok avantajlı.
+
+44
+00:10:14,200 --> 00:10:16,480
+Evet, tamam. Peki, teşekkür ederiz.
+
+45
+00:10:16,980 --> 00:10:17,480
+Ben teşekkür ederim.
+
+46
+00:10:17,500 --> 00:10:21,180
+Bu öğrencilerimin bilmesi gerekiyor diye özellikle üstüne durdum.
+
+47
+00:10:21,539 --> 00:10:28,000
+Onun dışında fark ettiğiniz gibi konteynerlar, yazılımları hızlı bir şekilde...
+
+48
+00:10:28,000 --> 00:10:40,000
+Her özellikle açık kaynak hızında bir araya getirip kullanıma alma açısında şu anki en yüksek çevikliği ve esnekliği sunuyoruz.
+
+49
+00:10:40,199 --> 00:10:51,299
+Ki mikroservislerde bir uygulamanın mümkün olduğu kadar en hafif sklet servislere bölünüp o servisler üstünden uygulamanın sunulması yönelik bir yaklaşımdır.
+
+50
+00:10:51,299 --> 00:10:55,939
+Bunun zıt tarafında monolitik yani her bütün servisler hepsi bir adet.
+
+51
+00:10:56,000 --> 00:11:22,919
+Komple bir uygulama kullanımı daha eski yaklaşımdı. Onun çok önemli dezavantajları var. Günümüzün esnekliğine ve çevikliğine yakışmayan ya da yetişemeyen, günümüzün ihtiyaçlarını yetişemeyen model olduğu için şu an konteynerlar üstünde çalışan mikrosayar diziler üstünden yazılım gelişimi epey önemli bir konu. Mutlaka bunu öğrenmeye yatırım yapın diyorum. Benden size tavsiye.
+
+52
+00:11:23,731 --> 00:11:38,192
+Peki hala. Şimdi normalde bugünün programına şimdi şöyle bir tekrar bakayım. Sıradan gittiğimde güneş su açıkı görüyorum. Burada da katılımcı olarak görüyorum. Müsait misiniz?
+
+53
+00:11:38,871 --> 00:11:41,172
+Evet hocam müsaitmiş. Şu an başlayabilirim.
+
+54
+00:11:41,331 --> 00:11:42,351
+Tamam o zaman buyurun bakalım.
+
+55
+00:11:43,271 --> 00:11:46,111
+Hemen ekranımı paylaşıyorum. Bir saniye.
+
+56
+00:11:59,155 --> 00:12:05,535
+Bir saniye, şu an izinle ilgili bir sorun var. Başkası varsa o da şey yapabilir veya hemen açıyorum.
+
+57
+00:12:06,740 --> 00:12:12,960
+Bakalım. Aynı anda Ağzı'dan fazla katılıp açımda bulunabilir ayarımda var. Bir daha dene bakalım.
+
+58
+00:12:13,620 --> 00:12:18,799
+Hocam, zoom'u kapatıp tekrar açmamı söylüyor izin vermek için. Çıkıp geri gelsem olur mu?
+
+59
+00:12:18,840 --> 00:12:28,500
+Tamam, tamam. Tabii o zaman sonraki öğrencimi alalım. Meceddin girmiş olduğunu görüyordum. Evet. Sen buyur istersen Meceddin.
+
+60
+00:12:29,240 --> 00:12:30,299
+Evet hocam, buradayım.
+
+61
+00:12:30,919 --> 00:12:31,699
+Buyur bakalım.
+
+62
+00:12:43,028 --> 00:12:45,548
+İngilizce de yapacağım hocam.
+
+63
+00:12:46,128 --> 00:12:48,548
+Olur, no problem. We can understand.
+
+64
+00:12:48,728 --> 00:12:49,447
+Quiet, please.
+
+65
+00:12:50,748 --> 00:12:53,108
+Hello, my name is [öğrenci].
+
+66
+00:12:53,548 --> 00:12:58,687
+And I'm going to present you a simple overview of stochastic computing.
+
+67
+00:13:00,128 --> 00:13:02,128
+So, what is stochastic computing?
+
+68
+00:13:02,128 --> 00:13:03,128
+It was...
+
+69
+00:13:03,635 --> 00:13:23,339
+Bu konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda
+
+70
+00:13:24,436 --> 00:14:13,740
+Bu, bu
+
+71
+00:14:14,515 --> 00:14:29,387
+ve de
+
+72
+00:14:29,908 --> 00:14:48,488
+It's usually used because of its smaller hardware footprint. So it's known in conventional computing that arithmetic units are very complex on the hardware side, especially multiplication and division.
+
+73
+00:14:48,488 --> 00:14:52,868
+As we can see here, whereas in stochastic computing,
+
+74
+00:14:53,296 --> 00:14:57,296
+Bu örneğin, birçok yaratı birçok yaratı yapabilecek birçok yaratı.
+
+75
+00:14:57,296 --> 00:15:00,296
+Bu örneğin, birçok yaratı.
+
+76
+00:15:00,296 --> 00:15:06,296
+Bu örneğin, iki bitstreamsiyonu 0.5'da 0.25'de 0.25'de.
+
+77
+00:15:06,296 --> 00:15:09,296
+Bu örneğin, birçok yaratıcı yaratıcı.
+
+78
+00:15:09,296 --> 00:15:14,296
+Bu örneğin, birçok yaratıcı yaratıcı yaratıcı.
+
+79
+00:15:14,772 --> 00:15:22,372
+Bu, bu iki bit streams are perfectly uncorrelated. Bu, bu, bu birbirine birleştir.
+
+80
+00:15:24,372 --> 00:15:29,812
+Ve birçok önemli birleştir, birerror birleştir.
+
+81
+00:15:29,812 --> 00:15:36,772
+Çünkü birçok birleştir, birleştir birleştir.
+
+82
+00:15:37,203 --> 00:16:01,644
+Bu, bu konuyu örneklerle anlatacağım.
+
+83
+00:16:02,995 --> 00:16:12,875
+Ve bu konuyu örneğe alakalı ve bu konuyu örneğe alakalı.
+
+84
+00:16:12,875 --> 00:16:19,515
+Ve bu konuyu örneğe alakalı, özellikle de enge-detektiğinde, ve bu konuyu örneğe alakalı.
+
+85
+00:16:19,515 --> 00:16:26,555
+Ve bu konuyu örneğe alakalı ve enerji-efficient sistemlerle anlatacağım.
+
+86
+00:16:50,292 --> 00:16:58,732
+Bu hale gelişimde, daha fazla haleştirmeyi ve daha fazla haleştirmeyi ve daha fazla haleştirmeyi ve daha fazla haleştirmeyi.
+
+87
+00:16:58,732 --> 00:17:07,052
+Çünkü bu haleştirmeyi bir haleştirmeyi bir haleştirmeyi ve daha fazla haleştirmeyi ve daha fazla haleştirmeyi.
+
+88
+00:17:11,988 --> 00:17:37,128
+Arithmetic operations are not 100% accurate, as they can be affected by the correlation of the bit streams. For example, if the streams are positively correlated, if there is a positive correlation between the two bit streams and function and gate, which I said to behave as a multiplier, it behaves as a minimum function.
+
+89
+00:18:14,228 --> 00:18:14,628
+Hello?
+
+90
+00:18:17,528 --> 00:18:29,188
+Evet, sesi kapamıştım. Özür dilerim. Ondan sonra açmayı unuttum. Evet, soru soran arkadaşım varsa lütfen buyursun. [öğrenci]'in soru soran arkadaşım varsa isterse Türkçe'de sorabilir arkadaşlarım.
+
+91
+00:18:29,567 --> 00:18:33,528
+Tabii [öğrenci] ne kadar yanıtlar herhalde değil mi [öğrenci]? Türkçe sorarlar.
+
+92
+00:18:33,567 --> 00:18:33,927
+Evet, evet.
+
+93
+00:18:34,927 --> 00:18:36,367
+Buyurun bakalım, var mı soru?
+
+94
+00:18:39,251 --> 00:18:51,531
+Olmazsa ben soracağım şimdi. Değişik bir programlama yaklaşımı. Avantajlarından da bahsettiniz, dezavantajlarından da bahsettiniz. Eğer dezavantajı demeyizlediniz, dezavantajı ne diyecektim? Peki o zaman şöyle sorayım.
+
+95
+00:18:54,483 --> 00:19:05,384
+Şimdi, bu approach is somewhat randomized, because it's based on probability calculation. Am I right?
+
+96
+00:19:05,743 --> 00:19:08,604
+Yes, exactly. And that's why it's called stochastic.
+
+97
+00:19:08,604 --> 00:19:10,083
+Stochastic, yes.
+
+98
+00:19:10,387 --> 00:19:15,788
+Bu bir soru bir soru, ama bir soru soru.
+
+99
+00:19:16,707 --> 00:19:22,967
+Bir soru, hafifli bir soru ve kandımla ve kandımla formlarla ilgili bir soru soru soru soru?
+
+100
+00:19:26,288 --> 00:19:30,288
+Evet, aslında ikinizde de kandımla ilgili bir soru soru soru,
+
+101
+00:19:30,288 --> 00:19:34,008
+ama ikinizde de kandımla ilgili bir soru soru soru soru soru.
+
+102
+00:19:34,367 --> 00:20:00,000
+Well, maybe it can be. I would ask that to you. Because, for example, you don't know where exactly an electron is or where exactly a particle is. Or you have some probability distribution in quantum computing. So maybe this probabilistic nature of quantum computing is not.
+
+103
+00:20:05,000 --> 00:20:12,000
+Bu konuyu örneğe bir şey.
+
+104
+00:20:12,000 --> 00:20:17,000
+Ama bu konuyu örneğe değil mi?
+
+105
+00:20:17,000 --> 00:20:21,000
+Bu konuyu örneğe.
+
+106
+00:20:21,000 --> 00:20:25,000
+Bu konuyu örneğe bir şey.
+
+107
+00:20:26,324 --> 00:20:28,884
+I will try to research on it.
+
+108
+00:20:30,104 --> 00:20:32,824
+Maybe this is just a random thought on me.
+
+109
+00:20:33,704 --> 00:20:40,724
+I'm not an expert in any of these fields, but both have some probabilistic nature.
+
+110
+00:20:40,724 --> 00:20:45,484
+So maybe there can be some good fits between them.
+
+111
+00:20:45,944 --> 00:20:46,504
+Yes, exactly.
+
+112
+00:20:47,844 --> 00:20:49,464
+Okay, thank you, Mejletten.
+
+113
+00:20:49,804 --> 00:20:50,404
+Thank you, sir.
+
+114
+00:20:51,028 --> 00:21:01,067
+Evet, peki hala. Şimdi Mecreddin de hemen yaptığını zaten işaretlemişim. Güneş su geldiniz mi? Ne yaptınız? Buyurun bakalım.
+
+115
+00:21:01,087 --> 00:21:03,687
+Evet hocam, geldim. Şu an paylaşabilirim.
+
+116
+00:21:03,867 --> 00:21:04,567
+Tamam, buyurun bakalım.
+
+117
+00:21:07,615 --> 00:21:12,436
+Merhabalar herkese. Ben yapay zeka konusunda sunumumu yapıyor olacağım bugün.
+
+118
+00:21:12,936 --> 00:21:19,976
+Yapay zeka çok derin bir konu. Bunun farkındayım. Üç tane temel ve giriş kısmını anlatmak istedim.
+
+119
+00:21:20,296 --> 00:21:24,516
+Yapay zeka nedir? Geçmişten bugüne yapay zeka ve yapay zekanın uygulama alanları.
+
+120
+00:21:24,516 --> 00:21:34,836
+İlk olarak yapay zeka nedir? Yapay zeka görevleri yerine getirmek için insan zekasını takdir eden ve topladıkları bilgilere göre kendilerini geliştirebilen sistemler.
+
+121
+00:21:34,836 --> 00:21:47,536
+Yani aslında yapay zeka makinelerin deneyimden öğrenmesini, yeni girdilere uyum sağlamasını ve insan benzeri görevleri insan zekasını özgü olan bilisayar fonksiyonları geliştirmesini mümkün kılıyor.
+
+122
+00:21:47,956 --> 00:21:52,615
+Ve bunu da aslında derin öğrenme ve doğal dil işleme gibi teknolojiler kullanarak sağlıyor.
+
+123
+00:21:53,652 --> 00:22:03,551
+Tarihtesinden bahsedecek olursak da aslında yapay zeka makineler düşünebilir mi sorusunun ortaya atılmasıyla başlıyor. Bu soruyu da aslında Alan Turing ortaya atıyor.
+
+124
+00:22:03,551 --> 00:22:14,511
+Ve 1943'te 2. Dünya Savaşı sırasında üretilen bazı makinelerde aslında bilgisayar bilimi, yapay zeka kavramı ve makine zekası kavramlarının oluşmasında önce oluyor.
+
+125
+00:22:15,988 --> 00:22:25,068
+İlerleyen dönemlerde de idealize edilmiş tanımıyla yapay zeka konusunda ilk çalışmalardan birini MacClock ve Pits tarafından Pits yapıyor.
+
+126
+00:22:25,068 --> 00:22:30,648
+Ve bu araştırmalarda yapay sinir hücrelerini kullanan hesaplama modeli üretiliyor.
+
+127
+00:22:30,988 --> 00:22:38,808
+Ve bu çalışmalarda da aslında ağ yapılarının uygun şekilde tanımlanması durumunda beceri kazanabileceği ileri sürülüyor.
+
+128
+00:22:39,228 --> 00:22:43,748
+Ve bunun üstüne hep kendisi bir nöropsikolog ortaya bir teorem atıyor.
+
+129
+00:22:43,988 --> 00:22:54,128
+Bu attığı teoremde de sinir hücreleri arasındaki bağlantıların, şiddetlerin değişmesine göre yapay sinir ağlarının öğrenebilmesinin mümkün olduğunu iddia ediyor.
+
+130
+00:22:54,996 --> 00:23:22,816
+Ve ilk yapay sinir ağa temelli bilgisayar snark da 1951'de üretiliyor. Ve 1956'da iki aylık bir açık çalışma düzenleniyor. Bu çalışmada birden fazla insan katılıyor ve birden fazla önemli ilerleme kaydediliyor. Ama en önemli noktalardan biri de yapay zeka ismi bu çalışma sırasında konuluyor. Ve ilk kuram ispatlayan programlardan, nocük teorisi de burada Neville ve Simon tarafından tanıtılıyor.
+
+131
+00:23:22,996 --> 00:23:42,576
+Yine aynı bilim insanları tarafından insan gibi düşünme yaklaşımına göre üretilen ilk program, genel sorun çözülücü geliştiriliyor. Ve fiziksel simge varsayımının ortaya atılmasıyla da beraber, insandan bağımsız zeka sistemler yapma çalışmaları başlamış oluyor aslında, hızlanmış oluyor.
+
+132
+00:23:43,176 --> 00:23:50,916
+Genel olarak yapay zekanın tarihçesini üç ana döneme ayırabiliyoruz. Bu nöral ağlar.
+
+133
+00:23:50,996 --> 00:23:55,656
+Makine öğrenmesi ve derin öğrenme olarak bahsedebiliriz buradan.
+
+134
+00:23:56,339 --> 00:24:06,839
+Uygulama alanlarına geçecek olursak da ses tanıma. Burada aslında bilgisayarların sesleri tanıyabilmesi için mikrofon ve ses dijital hale getiriliyor ve frekanslar oluşturuluyor.
+
+135
+00:24:06,839 --> 00:24:21,879
+Ve bu frekanslar harfler ya da kelimeler kavranmaya çalışılıyor ve sayılara dönüştürülüyor. Böylelikle yapay zeka sesi tanıyabiliyor, anlayabiliyor ve cevap verebiliyor. Bu özelliği kullanan programlara da Siri, Eko ve Cortana örnek verilebilir.
+
+136
+00:24:24,339 --> 00:24:49,799
+Bu kodlar da yapay zeka algoritmaları tarafından yorumlanıyor. Buna örnek olarak da sürücüsüz araçlar örnek verilebilir. Doğal dil işlemede bu aslında insan ve bilgisayar etkileşimini üst seviyeye çıkarmak veya farklı dilde konuşan insanlar arasındaki iletişimi geliştirmek için çözümler üretiliyor.
+
+137
+00:24:52,339 --> 00:25:14,319
+Makine öğrenmesi ve istatistik analiz ve kural tabanlı yaklaşımlar kullanılıyor. Doğal dil işleme sayesinde yazım hataları düzeltilebiliyor. Otomatik çeviri sistemleri kullanılabiliyor. Dil öğrenimi uygulamaları ve kişisel asistan uygulamaları kullanılabiliyor. Burada örnek olarak da Google'ı, Yandex'i, Siri'yi, Alexa'yı, Google Asistan'a örnek verebiliriz.
+
+138
+00:25:20,339 --> 00:25:48,319
+Yerken yargıya varabiliyor ve bunu yapay zeka kendi başına yapabiliyor ve bu sayede bunu yapmak için de mevcut verileri kullanan çeşitli algoritmalar oluşturuluyor ve en rasyonel karar verilebiliyor. Tabii ki insan kadar olmasa da belirli seviyede rasyonel kararlar verilebiliyor. Öneri sistemleri de kullanıcıların geçmiş davranışları inceleniyor ve bu davranışlar üzerinden çıkarımlar yaparak yeni içerikler öneriliyor.
+
+139
+00:25:48,339 --> 00:26:11,959
+Burada da sosyal medya sitelerinde arkadaş önerileri veya mağazalarda ürün önerileri, gazetelerde haber önerileri, bunlar örnek olarak verilebilir. Regresyon analizi var. Regresyon analizde geçmiş verilere dayanılarak bir değişkenin gelecekteki değerinin tahmin edilmesi için kullanılıyor. Burada da ekonomik öngörüler ve üretim miktarı öngörüleri örnek olarak verilebilir kullanım alanında.
+
+140
+00:26:16,339 --> 00:26:39,559
+Kısaatında sayılabilir ama bu da iki farklı dildeki cümlelerin, kelimelerin birbirlerine çevrilmesinde de yapay zeka kullanılıyor. Bu şekilde diyebilirim. Biraz kısa bir sunum oldu ama dediğim gibi yapay zeka çok derin bir konu. O yüzden çok derine giremediğim için daha giriş kısmını kısmına bırakmak istedim. Sorumun bu kadarı. Dinlediğiniz için teşekkür ederim.
+
+141
+00:26:39,559 --> 00:26:44,279
+Teşekkürler. Güneş suya soru soran arkadaşım varsa önce onları lütfen.
+
+142
+00:26:44,339 --> 00:26:46,439
+konuşalım biraz.
+
+143
+00:26:53,652 --> 00:26:56,032
+Yoksa hani illa ki ben bir şey sorabilirim yani.
+
+144
+00:26:56,452 --> 00:26:56,852
+Evet.
+
+145
+00:27:00,339 --> 00:27:21,139
+Yok, pekala. Arkadaşlardan gelen bir şey olmadı. Ben şöyle sorayım. Yapay zeka genelde belirli bir alanda uzmanlaşan bir yapay zekadan bahsediyoruz. Belirli uygulamalar üzerinden giden yapay zekadan bahsediyoruz genelde. Uygulamalarını saydınız, yönü tutanıma, karar destek sistemleri vs. vs.
+
+146
+00:27:23,380 --> 00:27:37,480
+Gerçi burada şimdi bir soruyu biraz daha genele taşıyalım. Mesela satranç oyununda insan ustayı yenen bilgisayarlar yapıldı. Ama bu da daha çok yapay zeka tekniklerinden ziyade algoritmik yaklaşımla da bu çözülebilir.
+
+147
+00:27:51,380 --> 00:28:06,600
+O problemi çözebilecek olan bir insan ile karşılaştırdığımızda kapasite ve performans ve başarımını ne düzeyde karşılaştırabiliyoruz? Bu konuda bir şeyler söyleyebilir misiniz?
+
+148
+00:28:11,412 --> 00:28:25,991
+Aşırı hakim olmadığım bir soru aslında bu ama yapay zeka kendini geliştirebilen bir sistem. En başında da ana kısmında da diyordum. Verdiğimiz girdilerle beraber sürekli kendini geliştirebilen bir sistem.
+
+149
+00:28:25,991 --> 00:28:38,991
+Ve aslında belli bir noktadan sonra insanın kendini geliştirmesiyle yapay zekanın kendini geliştirmesi çok daha farklı oluyor. Çünkü insanın kendi zekası ve kapasitesi belli bir yerle...
+
+150
+00:28:39,412 --> 00:28:58,211
+Belli bir noktaya kadar ilerleyebilse de yapay zeka bana bir noktada aslında sınırsız gibi geliyor. Çünkü insanlar tarafından oluşturuldu ama çok farklı öğrenme yöntemleri var ve bu kendi kendini öğrenip kendini geliştirmesi bana açıkçası çok ucu açık gibi geliyor.
+
+151
+00:28:58,211 --> 00:29:07,012
+Çünkü hala çalışmalar devam ediyor. Hala bahsettiğiniz algoritmalar, derin öğrenmeler ve hala çok ciddi bir şekilde çalışmalar devam ediyor.
+
+152
+00:29:07,412 --> 00:29:24,352
+Aynı olaya çözüm olarak yaklaştığımızda belki de bazı noktada yapay zeka insandan bir adım öne gidebilir. Tamamen kendini geliştirme sisteminin daha sistematik, daha bilimsel ve daha teknolojik ilerlediği için diye düşünüyorum.
+
+153
+00:29:24,991 --> 00:29:29,532
+Peki, teşekkür ederim. Onun dışında bilim kurgu sever misiniz?
+
+154
+00:29:30,708 --> 00:29:32,228
+Yani evet, biraz.
+
+155
+00:29:32,228 --> 00:29:56,908
+Tamam, çünkü hani yapay zekarda ister kitap, ister film değişik mecralarda, değişik bilim kurgu mecralarında çok işlenen bir konu. Yani değişik değişik fikirlerde yollanabilir ama çok fazla dağıtmayalım. Bu kadar yeter. Teşekkür ederim. Özellikle şu an soracağım dediğim bir şey yok.
+
+156
+00:29:58,291 --> 00:30:08,711
+Şimdi, teşekkür ederim. Normal sırada [öğrenci] var. [öğrenci] burada mısınız? Burada görüyorum siz isminizi.
+
+157
+00:30:09,432 --> 00:30:10,692
+Buradayım hocam, merhaba.
+
+158
+00:30:11,152 --> 00:30:12,551
+Müsaitseniz buyurun başlayın.
+
+159
+00:30:12,872 --> 00:30:15,471
+Tabii, önceki hepinize merhaba, günaydın.
+
+160
+00:30:17,271 --> 00:30:18,771
+Ben hemen sunumu açıyorum.
+
+161
+00:30:20,692 --> 00:30:22,231
+Ekran paylaşımında geçersen.
+
+162
+00:30:28,084 --> 00:30:49,144
+Bugün sizlere İnternet Mahir'i tanıtacağım. İnternet Mahir kimdir? İnternet Mahir bilinen adıyla, Asıl Adı Mahir Çağrı'dır. Kalasim'de dünyaya gelmiş. Babası öğretmen, kendisi öğretmen. Babası ötürü birçok yeri gezmiş. Sosyal bir albimizdi zamanında.
+
+163
+00:30:49,875 --> 00:30:51,256
+Öğretmenlik yapmış.
+
+164
+00:30:51,256 --> 00:30:52,675
+[öğrenci], özür dilerim.
+
+165
+00:30:52,935 --> 00:30:57,836
+Şimdi sen sunum moduna geçtin mi? Biz senin şu an sadece yansıda tasarım modunu görüyoruz.
+
+166
+00:30:58,296 --> 00:31:05,395
+Ama eğer sunum moduna geçtiysen, ya önce bir paylaşımı, ekran paylaşımını durdur ve tam ekran şeklinde paylaş.
+
+167
+00:31:05,816 --> 00:31:10,776
+Yine de sunumda ilerlediğini görmezsek artık tasarım modundan yansıları elle tıklarak.
+
+168
+00:31:11,155 --> 00:31:12,915
+Şu an tam ekran modunda aslında ama.
+
+169
+00:31:13,395 --> 00:31:23,895
+Biz öyle görmüyoruz. Bir paylaşımını kapat. Ekran paylaşımını bırak. Tekrar ekran paylaşımı aç ama PowerPoint'te değil de tüm ekran şeklinde seç paylaşımını. Ve öyle bir başla bakalım.
+
+170
+00:31:24,515 --> 00:31:27,675
+Tamam, ekran paylaş. Şu an görüyor musunuz?
+
+171
+00:31:27,855 --> 00:31:28,715
+Evet, şimdi oldu.
+
+172
+00:31:29,635 --> 00:31:37,076
+Tamam. Mahir Çağrı aslında bir öğretmen. Anadolu'nun birçok yerinde öğretmenlik yapmış.
+
+173
+00:31:37,811 --> 00:32:02,811
+Ve yaşamını memuruat, sürede eden bir abimiz zamanında. Nasıl ünlü olması da biraz ilginç. İnternet aslında bir anda kadınlarla flörtmeleşmek için kullandığı programla keşfediyor. Arkadaşlar oluyor bir sürü. Ondan sonra herkesin kişisel bir web sayfası olduğunu görüyor.
+
+174
+00:32:03,316 --> 00:32:07,316
+Sonra internetten tanıştığı arkadaşlarından yardım olarak kendi web sitesini kuruyor.
+
+175
+00:32:07,316 --> 00:32:23,316
+İşte web sitesinde çok ilkel, çok az içerik var. Sadece Welcome to my page yazıyor, altında da iKissu yazıyor ve kendini tanıtıyor, hobilerini anlatıyor ve fotoğraflarını koyuyor birkaç tane.
+
+176
+00:32:23,316 --> 00:32:27,211
+Çok sade bir şekilde, hepinize de bir de iKissu diyor.
+
+177
+00:32:27,476 --> 00:32:47,056
+Aslında baktığınızda bugün şartlarında böyle bir şey yapsak baya komik dururdu herhalde. Yani şey olurdu. İlginç dururdu. O zaman içinde yeni bir şey bu arada. Bu medeni cesareti, insanlarla entiyatik ilişkisi falan. Ondan sonra bir de numarasını ekliyor altına. İnternet sayfası da şunun gibi bir şey.
+
+178
+00:32:50,675 --> 00:33:16,355
+Hatta en ilginç şey de işte böyle birçok ülkeyi gezmiyor zaten arkadaş. Sonra bu Mahir Çağrı'nın internet sesi çok kısa sürede patlıyor. Çok ilgi duyuyor herkes. O zamanın için inanılmaz rakamlara ulaşıyor tıklanma sayısı olarak. İlk gün 50K tıklanıyor. Japonya, Avustralya, Afrika, Finlandiya telefona gelen armanlar artık yetişemiyor. Telefonu açamıyor. Zaten kendisinin bir belgeseli var. Şöyle açıklıyor.
+
+179
+00:33:16,751 --> 00:33:34,731
+İlk gün anlayamadım diyor. Telefonlar geliyor, açıyorum falan ama anlamıyorum diyor. Millet Japonca konuşuyor, İngilizce konuşuyor, Fransızca konuşuyor. Ben anlamıyorum onları. Sadece çağrı kelimesini alıyorum. Mahir kelimesini alıyorum diyor. Ondan sonra çok kısa bir sürede tüm dünyada ünlü oluyor bu Mahir Çağrı.
+
+180
+00:33:36,051 --> 00:33:50,971
+Hatta o kadar ünlü oluyor ki, Hollywood'dan aktörler bunu tanıyor. Dünyanın birçok yerinden oyuncular, siyasetçiler, gazeteciler bir anda tanıyor bunu. Dünyanın en önemli haberlerinde çıkıyor.
+
+181
+00:33:51,508 --> 00:34:16,068
+İşte bu Mahir Çağrı kimdir? İşte bu yeni bir fenomen doğdu. Hatta şöyle diyebiliriz, ilk internet fenomeni diyebiliriz bu arkadaşa. Dünyaca tanınan bir isim oluyor ve hatta Forbes'un söylediğine göre bir anda dünyada 800 milyon kişi tarafından tanınıyor. Muazzam bir rakam o zamana bakmayınca. Yani internet daha yeni yeni gelişiyor, televizyonculuk gelişmiş ama şu anki mesela o kadar da hızlı.
+
+182
+00:34:16,431 --> 00:34:37,571
+Değil haber yayılma işi. Mesela bir kişinin bu kadar ünlü olması çok garip o zaman için. Haberlerde boy boy fotoğrafları, röportajlar için tabii sıra alıyorlar. Hep size röportaj yapıyor. Öyle ki mesela Brezilyalılar bunu son 50 yılın en meşhurları listesine alıyor. İngiltere'de internet ödülleri alıyor. Guinness Rekordar kitabına geliyor.
+
+183
+00:34:38,612 --> 00:34:45,612
+Dünyanın birçok yerinden davet alıyor. Onun için partiler düzenleniyor, seminerler düzenleniyor.
+
+184
+00:34:45,612 --> 00:34:52,612
+Zaten görüyorsunuz aşağıda şu konferanslardan, partilerden, şeylerden falan.
+
+185
+00:34:52,612 --> 00:35:03,500
+Hatta bu adam özellikle sektör oluşuyor. Bu adam fotoğrafların olduğu tişörtler, kahve bardakları, şapkalar falan oluşuyor ve deri gibi satıyor bunlar.
+
+186
+00:35:03,635 --> 00:35:25,916
+Bayağı da para kazanıyorlar ama tabii bizim hayır hiçbir şey kazanamıyor. Dini inancı veya şey şeklinden dolayı gelen birçok teklifi reddediyor. Bu bir ekibi olmadığı için, bir menajeri olmadığı için ve o parayı kendisine çekemiyor. Millet bunun üzerinden kazanıyor ama bu çekemiyor. Mesela Hollywood'dan özellikle yüz milyonlarca dolarlık teklifleri reddediliyor.
+
+187
+00:35:26,708 --> 00:35:53,268
+Film teknikleri, reklam teknikleri. Mesela kendi sitesine banner koyalım diyorlar. Çok para kazanırsın diyorlar ama bunu kabul etmiyor mesela. Bu kendi kişisel karakteriyle ilgili. Hollywood'dan film teknikleri geliyor. İçerini beğenmediği için kabul etmiyor. Ondan sonra tabii süreçte, bu süreçte süreci iyi yönetemediği için 5-6 yıl sonra artık unutulmaya mahkum bir hale geliyorum.
+
+188
+00:35:53,907 --> 00:36:04,047
+Bunun dışında bir de şey var. Son olarak şunu söylemek istiyorum. Bu adamın karakterini yansıtan bir film var. Boyan diye. Yanlış hatırlamıyorsam Boyan diye bir film var.
+
+189
+00:36:04,532 --> 00:36:23,032
+Bu yanda, aslında bu yandaki adam Mahir'in tıp atıp aynısı. Hareketleri, kıyafetleri, giysileri falan. Hatta sonra davalık oluyorlar. İnternet diye. Mahir çağırıp buna dava açıyor. Benim senaryom yaptı diye. Hatta Times'de falan çıkıyor bu. Mahir'in kopyası filme dönüştü diye. Ama tabii bizim Mahir hiçbir şey yapamıyor.
+
+190
+00:36:25,192 --> 00:36:27,652
+Benim sonumum bu kadar bu arada. Dinliğiniz için teşekkür ederim.
+
+191
+00:36:27,652 --> 00:36:28,652
+Teşekkür ederim.
+
+192
+00:36:29,599 --> 00:36:43,879
+Şimdi önce soru soran arkadaşım varsa buyursun lütfen. Ben bir şeyler soracağım edeceğim de. Ben bir ekran paylaşayım bu arada.
+
+193
+00:36:45,268 --> 00:36:49,928
+Çünkü şunun üstünden soracağım. Bu Borat'ı mı diyorsunuz?
+
+194
+00:36:50,188 --> 00:36:50,827
+Evet, Borat.
+
+195
+00:36:51,548 --> 00:36:54,588
+Borat, tamam. Bunun ikincisi de çıktı Borat'da.
+
+196
+00:36:54,867 --> 00:36:55,268
+Öyle mi?
+
+197
+00:36:55,788 --> 00:37:04,448
+Evet, şey, Borat Subsequent, bu nefretim yakınlarda çıktı 2020, geçen sene çıkmış. O yüzden bir tekrar aklıma gelmişti.
+
+198
+00:37:04,448 --> 00:37:09,688
+Yani şey bu arkadaşlar, olay bu, sevmedim gerçi ama belki bir anam bakalım, bilmiyorum.
+
+199
+00:37:10,268 --> 00:37:10,928
+Ben de bakacağım.
+
+200
+00:37:10,928 --> 00:37:13,208
+Sevdim ve Dokan filmini, Borat'ın.
+
+201
+00:37:13,268 --> 00:37:34,367
+Ben ilkini izleyecektim. Bir türlü fırsat bulamadım. İkincisini de izlemedim. İkisini de izleyeceğim ama. Bu karakter çok ilginç. Hem de şöyle bir özelliği var. Biz aslında mahiyeyi çağırıp tam anlayamadık. Ülke olarak anlayamadık. Çözemedik yani. Adamın aslında getirdiği şeyleri anlayamadık. Mesela internetin önemini, internetin gücünü tam kavrayamadık.
+
+202
+00:37:34,751 --> 00:38:01,472
+Mesela bunun üzerine bir sürü makale yazdılar, çalışma yapmışlar, şey yapmışlar. Hani bu adamın nasıl bu kadar ünlü olduğu, insanlar üzerindeki etkisi. Hatta bunun üzerine Twitter, Facebook ve Instagram'ın aslında gelişmesi bu tür uygulamadan ortaya çıkış amacı bu adamın üzerine erilir. Biz bunları çok şey yapamadık. Mesela o zamanlarda belki biz de bu adamın önemini kavrasak ki zaten bu adam Times'da falan reklamlara, gazetelere falan çıkarken biz de bilinmiyor bu adam.
+
+203
+00:38:02,099 --> 00:38:15,500
+Yurt dışında büyük tirajlı gazetelerde çıktıktan sonra biz diyoruz ki bu haber olurmuş. Hadi bunu da haber yapalım diye. Önemini anlayamıyoruz mesela. Keşke zamanında anlasaydık da belki de çok başka yerle de evrilirdi yazılımdan mesela.
+
+204
+00:38:16,820 --> 00:38:19,579
+Evet, takiple. Tamam peki. Teşekkür ederim [öğrenci].
+
+205
+00:38:20,320 --> 00:38:22,260
+Müsaadenin bilmediği için teşekkür ederim bu arada.
+
+206
+00:38:23,952 --> 00:38:38,532
+Şimdi, sırada, şu an aramızda olmayan sunum sırasında, sunum sırası olup da aramızda olmayan arkadaşlar var. O yüzden ben şu an listede en önde [öğrenci]'ı görüyorum. Siz hazır mısınız [öğrenci]?
+
+207
+00:38:38,932 --> 00:38:40,072
+Hazırım hocam, merhabalar.
+
+208
+00:38:40,072 --> 00:38:49,311
+Diğer arkadaşların arasında sunum sırasını aldığım yok herhalde. İsimlerden ve egzardörsüsünden takip edebildiğim kadarıyla. Bazı da söylesinler.
+
+209
+00:38:50,228 --> 00:38:51,867
+Yok, buyurun barış. Sıra size.
+
+210
+00:38:52,268 --> 00:38:52,947
+Aynen şuan ama.
+
+211
+00:38:57,684 --> 00:39:05,844
+Geliyor mu şu an hocam? Geliyor. Bir de sun moduna geçin bakalım. O şekilde de görebilecek miyiz? Bakalım. Evet, güzel.
+
+212
+00:39:08,044 --> 00:39:18,464
+Merhabalar, ben [öğrenci]. Bugün size Formula 1 araçlarında lastiklerden bahsedeceğim. İlk olarak günlük olarak kullanılan araç lastikleriyle farklarından bahsederek başlamak istiyorum.
+
+213
+00:39:18,900 --> 00:39:29,800
+Normal hayatta kullandığımız lastikler çok uzun ömürlüyken Formula 1 araçlarındaki lastikler kısa ömürlüdür. Neredeyse yaklaşık 20-40 tur arasında dayanabilecek şekilde tasarlanmıştır.
+
+214
+00:39:31,080 --> 00:39:41,460
+Günlük hayatta kullandığımız lastikler uzun ve derken Formula 1 araçlarının lastikleri kısa ve geniştir. Bunun sebebi yol ile lastik arasındaki temas düzeyini artırıp yol tutuşunu artırmaktır.
+
+215
+00:39:42,132 --> 00:40:02,731
+Normal lastikler sıcaklıktan minimum düzeyde etkilenirken Formula 1 araçları için, lastikler için daha doğrusu sıcaklık çok önemlidir. Belli bir aralıkta tutulması gerekir. Eğer bu sıcaklığı aşarsa, yol tutuşu ne kadar fazla da olsa lastik aşınması çok olacaktır. Eğer düşük olursa ise yol tutuşu çok az olacaktır.
+
+216
+00:40:03,219 --> 00:40:12,360
+Normal lastikler darbelere dayanıklı iken Formula 1 araçlarının lastikleri darbelere aşırı dayanıksızdır. Kazalardan oluşan araç kıymetlerinden bile patlayabilir.
+
+217
+00:40:14,440 --> 00:40:23,360
+Araçlar için lastiklerin önemine gelecek olursak, lastiklerin böyle tasarlanmasındaki temel sebep, virajlardan aşırı hızlı dönüş sağlamaktır.
+
+218
+00:40:24,019 --> 00:40:42,079
+Yarış boyunca takım stratejistleri ve takım kaptanları pilotlara iletmek amacıyla çeşitli lastik türlerine ve aşınmasına göre stratejiler belirler. Pilotlar takımdan bu stratejileri aldıktan sonra uygular ve yarışı en kısa sürede bitirmeye veya belirli pozisyonları almayı hedefler.
+
+219
+00:40:43,668 --> 00:41:06,168
+Bu stratejilerde pilotların lastikleri koruma yetenekleri çok önemlidir. Çünkü bir pilot lastiklerini ne kadar korursa o kadar az aşınır yarış boyunca ve o kadar uzun süre boyunca hızlı tur atmasına sebep olur. Bunun dışında pit stop süreleri de çok önemlidir. Bir araç lastiğini değiştirmek için pite girdiğinde durgun olduğu süre boyu süre ne kadar uzunsa yarışta doğal olarak o kadar zaman kaybetmiş olur.
+
+220
+00:41:07,284 --> 00:41:11,884
+O kadar kısa olursa da çeşitli pozisyonlar kazanır, yarışı o kadar erken bitirir.
+
+221
+00:41:13,944 --> 00:41:21,104
+Lastik aşınmasına gelecek olursak, lastikler yarış ilerledikçe elde olmayan sebeplerden dolayı kuvvet veya sıcaklık aşınır.
+
+222
+00:41:21,624 --> 00:41:27,504
+Aşınma tur sürelerini düşürür, araçları yavaşlattığından. Araçlar daha uzun sürede turları tamamlamaya başlar.
+
+223
+00:41:28,628 --> 00:41:35,487
+Bu yüzden araçlar zorunlu olarak en az bir kez her yarışta daha hızlı lastikler takmak için pist tutuba gider.
+
+224
+00:41:37,168 --> 00:41:46,847
+Yarış için zorunlu lastik setleri lastik sağlayıcıları tarafından yarış öncesinde belirlenir ve takımların bu lastik setlerinden başka setler kullanması yasaktır.
+
+225
+00:41:48,851 --> 00:42:04,211
+Tarihçesine bakacak olursak, geçmişte spora dair olan ancak günümüzde olmayan bazı markaları var. Bunlardan birkaçı. Avon, Gristone, Continental, Dunlop, Engelbert, Firestone, Guldier ve Mischland'dir. Bunun dışında tarihte sadece bir durumda.
+
+226
+00:42:04,608 --> 00:42:17,347
+6 tane aracın yarışa başlamasına sebebiyet veren 2005 ABD Grand Prix olayı var. Bu olay çok uzun ancak şu an süren kısıtlı olduğunu anlatamıyorum. Araştırmanızı bir tavsiye ederim. Çok iyi bir olay.
+
+227
+00:42:18,487 --> 00:42:29,347
+Bunun dışında günümüzdeki gibi sadece bir tane Pirelli lastik sağlayıcısı yoktu geçmişte. Birden çok lastik sağlayıcısı vardı. Takımlar araçlarının...
+
+228
+00:42:29,907 --> 00:42:47,687
+Özelliklerine göre bu lastik sağlayıcılarından istediklerini seçip lastiklerini ona göre seçmekteyizler. Bu sayede markalar arasında bir rekabet oluşmaktaydı doğal olarak. İstatistik olarak en başarılı markalara baktığımız zaman ilk üçte Goodyear, Pirel ve Bristol'a görüyoruz.
+
+229
+00:42:49,527 --> 00:42:52,687
+Son olarak da günümüz lastiklerine baktığımızda...
+
+230
+00:42:54,356 --> 00:43:08,288
+Günümüzde sadece bir tek Pirelli rastlık sağlayışı olarak çalışıyor Formula 1'e. Her yarıştan önce pistin özelliklerine ve materyallerine göre...
+
+231
+00:43:08,288 --> 00:43:24,868
+Pirelli 3 tane temel lastik seti belirler, kuru hava lastikleri. Bunlar soft, medium ve hard'tır. Soft daha yüksek yol tutuşu sağlarken hard daha uzun süre aşınmadan kullanılabilir. Medium ise bunların karışımı olan hibret ya da dengeli bir lastiktir.
+
+232
+00:43:29,523 --> 00:43:53,043
+Ağır yağış durumlarında kullanılır.
+
+233
+00:43:53,619 --> 00:44:19,940
+Son olarak ise her yarıştan önce, Pirelli tarafından, her yarış hafta sonundan önce diyeyim. Her session için, her gün için Pirelli tarafından lastik setleri belirlenir şu şekilde. Bir sessionin lastik setlerini başka bir session'da kullanamazsınız. Ancak bu yarış için geçer değil. Yarışta Q1, Q2, Q3 sıralama türlerindeki lastikleri de kullanabilirsiniz.
+
+234
+00:44:21,139 --> 00:44:24,019
+Dinlediğiniz için teşekkür ederim. Sorularınız varsa hadi.
+
+235
+00:44:24,660 --> 00:44:34,559
+Evet, teşekkür ederim. Buyurun. Son yansı da ilginçmiş. Sorusu olan arkadaşım varsa, duran duyuyorsun, konuşalım biraz. Soracağım illa ki aklıma takılan bir şey oldu.
+
+236
+00:44:38,931 --> 00:44:58,311
+Peki, şimdi ben sorayım öncelikle madem öyle. Şimdi şu an tek lastik sağlayıcısı Pirelle dediniz. Bunun sebebi nedir? Ve ayrıca mesela bir organizasyon hayatında değişik senelerde değişik lastik üreticiliğiyle anlaşma mı yapıyorlar? Nedir nedir? Biraz açıklar mısınız?
+
+237
+00:44:58,611 --> 00:45:06,391
+Doğrudur hocam. Sadece bir sene anlaşmalara dayanmıyor bu aslında. Çoklu seneli kontratlar da yapılabiliyor.
+
+238
+00:45:06,880 --> 00:45:25,840
+Ancak şu anda günümüzde sadece Pirelli lastik sağlayısı olarak çalışıyor. 2010 senesinden beri yanlış hatırlamıyorsam. Bunun sebebine gelecek olursak Bridgestone ve Michelin, ondan önceki iki lastik sağlayısı F1'le anlaşma yapamamasından dolayı oluyor.
+
+239
+00:45:26,643 --> 00:45:27,563
+Bu şekilde.
+
+240
+00:45:28,463 --> 00:45:40,403
+Anladım. Peki. Şimdi acaba bu Bridgestone ve Michelin'in işlerine mi gelmedi ya da şartlarda mı anlaşamadılar? Arka planına hiç baktınız mı?
+
+241
+00:45:41,623 --> 00:45:48,603
+Michelin hakkında bir fikrim yok da Bridgestone sanırım daha çok NAS kariyer işlerine önem verdi. O yüzden F1'den çekildi diyebiliyorum.
+
+242
+00:45:48,943 --> 00:46:02,344
+Evet, doğru. Farklı yarıştırılığı da var. F1, F3 falan değişik değişik. Doğru. Peki. O zaman bir şey daha sorayım. Siz genel olarak da F1 sporlarıyla ilgileniyor musunuz?
+
+243
+00:46:02,344 --> 00:46:13,344
+Evet hocam. Yani şey, bir 5 yaşından falan abim sayesinde F1 hakkında bilgim var ama aktif olarak 2017'den beri kendimi izliyorum. Yani hiç yarışı kaçırmadım 2017'den beri.
+
+244
+00:46:13,615 --> 00:46:21,556
+Peki. O zaman şöyle söyleyeyim. Ben şunu çok takip etmiyorum ama sosyal medyadan şuradan, haberlerden okuduğum kadarıyla.
+
+245
+00:46:41,615 --> 00:47:02,655
+Bunu okumuştum. Şimdi Kezar lastik de aynı olmuş. Pirelli. Üç tip lastik var. Birisi bir tarafa doğru daha kendini optimize edemiyor. Çok standartlaşmış oldu. Diyelim ki işin mekanik kısmı, araç, motor ve lastik. İşte buna karşı çıkanlardan, çıkmayanlardan siz ne düşünüyorsunuz, nasıl değerlendiriyorsunuz merak ediyorum.
+
+246
+00:47:02,655 --> 00:47:09,615
+Aslında ben de karşı çıkıyorum hocam. Şimdi geçmişte daha çok markanın olması rekabeti artırıyordu ve lastiklerin bu sayede...
+
+247
+00:47:09,615 --> 00:47:27,155
+Markalar tarafından daha iyi üretilmesine, daha performanslı veya daha teknoloji üretilmesine sebep oluyordu. Rekabet doğal olarak bunu sağlıyordu yani. Şu anda günümüzde sadece Pirelli'nin olması aslında birazcık tembelleştirdi diyebilirim Pirelli'yi. Yani zaten benim elimde ben sallıyorum lastikleri şeklinde.
+
+248
+00:47:28,032 --> 00:47:45,431
+Fazla da rekabete girmeden, düzenli olarak geliştirmeden lastikleri sağlıyorlar aslında. Bunun dışında bütün Formula 1 geliştirmelerine baktığımızda ise kurallar baya bir katı herhangidir. Her yarış öncesinde araçların başında hakemler olur. Bu hakemler araçları kontroller.
+
+249
+00:47:45,952 --> 00:47:59,152
+Herhangi bir illegal kurallara, regulasyonlara uymayan bir parça veya mekanizma tespit ettiklerinde parça değiştirmeden tutun, yarıştan hatta sezondan diskalifiye kadar cezalar verebiliyorlar.
+
+250
+00:48:00,172 --> 00:48:08,832
+Bunun sebebi saniyenin onda biri kadar önemli olan bir sporda. Çünkü saniyenin onda biri yaklaşık 100 metre eğitim kabul ediyor. Neredeyse.
+
+251
+00:48:09,588 --> 00:48:15,648
+Saniye'nin onda biri kadar önemli olan bu sporda herhangi bir ilegal zaman kazancını engellemek.
+
+252
+00:48:16,828 --> 00:48:18,868
+Peki, tamam. Teşekkür ederim.
+
+253
+00:48:19,468 --> 00:48:20,908
+Ben teşekkür ederim hocam.
+
+254
+00:48:21,288 --> 00:48:23,708
+Şimdi son olarak [öğrenci] var.
+
+255
+00:48:23,828 --> 00:48:27,168
+Udur geliştirme. Sunumunuzu aldım ben buraya. İlme de geçti.
+
+256
+00:48:27,568 --> 00:48:29,368
+Müsaitseniz sizi de dinleyelim [öğrenci].
+
+257
+00:48:30,268 --> 00:48:31,928
+Tabii hocam, ben de sunabilirim şu an.
+
+258
+00:48:32,868 --> 00:48:33,708
+Tamam, buyurun o zaman.
+
+259
+00:48:38,547 --> 00:48:51,687
+Ekran geldi mi hocam? Geldi. Bir de sunum moduna geçelim bakalım. Önleri gelecek mi onu da görelim. Geldi mi? Gelmedi. Ha şimdi geldi. Geldi. Devam edebiliriz.
+
+260
+00:48:51,687 --> 00:48:55,687
+Hocam internetin de çok stabil olmadığı için belki ondan da gecikme kaynakları.
+
+261
+00:48:56,851 --> 00:49:10,192
+Tamam, peki. Eğer çok bir takılırsa çete yazalım ve sesle de uyaralım. Başka bir alternatif düşünürüz. Tam ekran paylaşmazsınız da sadece PowerPoint'e tıklayıp o şekilde de gidebilirsiniz belki. Neyse, başlayalım şimdi bakalım.
+
+262
+00:49:11,511 --> 00:49:15,471
+Merhaba, ben [öğrenci]. Sağlıyorum. Bugün vücut geliştirme hakkında sunum yapacağım.
+
+263
+00:49:16,947 --> 00:49:25,788
+İlk olarak sonun içeriğini göstermek istiyorum. Vücut geliştirme nedir? Vücut geliştirme tarihi, vücut geliştirme de destanmenin önlüğünü, vücut geliştirmenin faydaları.
+
+264
+00:49:27,487 --> 00:49:36,668
+Vücut geliştirme nedir? Vücut geliştirme ağırlık kaldırma, kalori alımı ve diğer unsurları bir araya getirerek kasların geliştirilmesidir.
+
+265
+00:49:37,027 --> 00:49:43,148
+Bir spor olan vücut geliştirme 50 yaşındaki bir kişinin haftada 3 gün düzenli sabah koşusu yapması gibidir.
+
+266
+00:49:43,456 --> 00:49:50,235
+Yani bir kişi haftada üç gün sabahları bir bitki makinesinde ağırlık çalışarak ve vücudunu geliştirerek spor yapmış olur.
+
+267
+00:49:50,775 --> 00:49:53,855
+Kendi sağlık programlarına göre herkes vücut geliştirme yapabilir.
+
+268
+00:49:55,076 --> 00:50:00,000
+Profesyonel anlamda bir vücut gelişimi için bunun bir eğitimle birlikte kişiye özel oluşan...
+
+269
+00:50:00,000 --> 00:50:16,380
+Vücut geliştirmenin tarihi.
+
+270
+00:50:18,099 --> 00:50:37,980
+Tarihte ekipman kullanılarak taştan yapılmış ilkel damla ve benzeri ağırlıklar daha büyük ve daha güçlü görmek için bilinçli olarak vücut geliştiren bir toplum var. Hintlilerdir. 11. yüzyıldan başlayarak 16. yüzyıla kadar ağırlık kaldırmak ve bu yolla vücut geliştirmek Hintli askerler arasında bir risk maalini almıştır.
+
+271
+00:50:38,516 --> 00:50:49,136
+Fakat Hindiler'deki amaç tahmin edileceği üzere en estetik vücudu inşa etmek değil, en güçlü ve iri görünmek olduğu için modern vücud geliştirmeyi başlatan Hindiler'dir diyebiliriz.
+
+272
+00:50:49,836 --> 00:50:57,056
+Kendin olarak refah düzeyinin yükselmesi ve bilimin gelişmesiyle insan kendi vücudunun sınırlarını merak etmeye başladı.
+
+273
+00:50:57,056 --> 00:51:05,476
+19. yüzyılda Amerika'da ve nispeten ehzamanlı olarak Avrupa'da da Sundropman adıyla güç gösterili yapan adamlar ortaya çıktı.
+
+274
+00:51:05,811 --> 00:51:15,611
+Bu kişiler, siliklerde ve meydanlarda ağır cisimleri kaldırarak, çekerek ve güç gösterisi yaparak kalabalıkların ilgisini çekiyorlardı.
+
+275
+00:51:19,059 --> 00:51:29,460
+Vücut geliştirmede beslenme yenilimi çok büyük. Çünkü spordan sonra, vücuda hasar verdikten sonra kasları tekrardan kendini yenilemesi gerekiyor.
+
+276
+00:51:29,460 --> 00:51:44,200
+Ve bu yenilemeye göre çeşitli beslenme programları var. Kişiye özel oluşturuluyor hepsi. Bulk olarak beslenilir, definasyon olarak beslenilir. Bunlar kalori açığı ve kalori fazlası olarak oluşturuluyor.
+
+277
+00:51:44,851 --> 00:52:11,811
+Tamamen kişiye özgü olduğu için burada hepsini ayrı ayrı bahsedemeydim. Ama önemli olan burada kişinin yeteri kadar protein alması ve kalori alması, geri kalan yağlar ve karbonhidrat bu kadar önemli değil. Vücut geliştirmene faydaları sadece dış görünüş olarak da değil. Bir sürü faydası var. İnsünün dengesinin sağlanmasını sağlayan insünün şeker aslığı.
+
+278
+00:52:11,840 --> 00:52:33,559
+Vücut geliştirme ile kanser ihtimali azaltır. Vücut geliştirme depresyonu engeller. Vücut geliştirme ile duruşumuz düzelip beladığımız asılır. Ağırlık çalışmak vücuttaki kemik oranını arttırır. Vücut geliştirme kanser ihtimalini azaltır. Vücut geliştirme kaliteli uykuya destek olur. Benim söyleyeceklerim bu kadar. Sorularınız varsa da gönül.
+
+279
+00:52:33,907 --> 00:52:49,028
+Tamam, teşekkür ederiz. Evet, şimdi [öğrenci] süresini verimli kullandı. Soru soran arkadaşım varsa lütfen bir bu yulsunla konuşalım. Yoksa yine ben illaki bir şeyler sorarım yani. Önce sizlerin varsa buyurun.
+
+280
+00:52:52,563 --> 00:53:01,903
+Yok galiba. Şey yapalım [öğrenci], sen şimdi ekran paylaşmanı durdur. Bu senin band genişliğinde daha verimli kullanmanı sağlayacaktır. Konuşaraktan şey edemez.
+
+281
+00:53:05,907 --> 00:53:06,487
+Bakalım şimdi.
+
+282
+00:53:09,619 --> 00:53:29,159
+[öğrenci], [öğrenci] size adil, daha fazla ve dur bakayım. Katılımcı paylaşıyorum, dur dur. Tamam, ben senin sayısını paylaşım, ben durdum. Ben dur, kendim durdum. Konuşalım. Peki, şimdi vücut geliştirmenin yararlarından bahsettiniz. Zararları var mı? Dezavantajları var mı? Biraz ondan bahsedebilir misin?
+
+283
+00:53:29,159 --> 00:53:34,699
+Aslında var. Profesyonel olarak vücut geliştirme yapan insanlar çok uzun süre ağırlıklarla uğraşmış olduğu için.
+
+284
+00:53:35,380 --> 00:53:52,179
+Sporu bıraktıktan sonra ve bir yaştan sonra omurilik ağrıları oluyor ve belli kemik sıkıntıları yaşıyorlar. Çünkü vücut çok fazla trence maruz kalıyor. Her insan bunu kaldıramıyor. Biraz da gemidin çok yakınlar. Yani zararları da var.
+
+285
+00:53:52,851 --> 00:54:17,011
+Anladım. Ama bunu daha çok profesyonel ve profesyonel olduğu için belli bir limitin üstünde fazla çalışmaktan kaynaklanan bir sakınca bu. Yoksa herhalde normal bir insanın aşırı abartmadan vücut sağlığını geliştirmesi için işte depresyon hatta Alzheimer yani bu gibi hastalıkların önemlisi için vücut aktivitesinin çok önemli olduğunu biliyorum.
+
+286
+00:54:20,851 --> 00:54:25,132
+Aktif bir hayatta futbol, basketbol, değişik sporlar, yürüyüş bile dediğim gibi yeterli.
+
+287
+00:54:25,132 --> 00:54:37,771
+Ama vücut geliştirmede bu açıdan hobi olarak bakıldığında ve kişisel sağlığı bir adım ileride tutabilme açısından bakıldığında bir zırarı yok diye düşünüyorum.
+
+288
+00:54:37,851 --> 00:54:38,571
+Bilmiyorum, inanılıyorum.
+
+289
+00:54:41,492 --> 00:54:53,052
+Hocam, aslında birazcık haklısınız ama her insanın açıma geçerli değil. Çünkü bazı insanların genetiği gerçekten çok elverişli değil. Ufak ağırlıklarla çalışsalar bile hemen bir sakatlık yaşanabiliyor.
+
+290
+00:54:53,052 --> 00:55:06,512
+Bu profesyonellerin bu kadar fazla sorun yaşamasının sebebi aldıkları staviklerden dolayı oldu. Çünkü limitleri zorluyorlar. Yoksa normal bir insan dediğiniz gibi kolay kolay bir sorun yaşamasın.
+
+291
+00:55:07,827 --> 00:55:11,807
+Peki, siz kendiniz fitness veya vücut geliştirme yapıyor musunuz?
+
+292
+00:55:13,227 --> 00:55:15,887
+Evet hocam, ben yaklaşık 7,5 senedir konuşuyorum.
+
+293
+00:55:16,647 --> 00:55:17,607
+Kaç senedir anlamadım.
+
+294
+00:55:18,675 --> 00:55:19,836
+Bir buçuk senedir.
+
+295
+00:55:20,155 --> 00:55:27,896
+Bir buçuk, tamam. Yüz yüze olsaydı endamınızı da görürdük bakalım da. Ama çok böyle olunca görülmüyor. Anlaşılmıyor. Neyse boş verin bana.
+
+296
+00:55:28,275 --> 00:55:35,775
+Peki, bizim spor salonuna üniversitedeki hiç gittiniz mi? Ne düşünüyorsunuz hakkında?
+
+297
+00:55:37,356 --> 00:55:43,695
+Hocam ben okuldakine birazcık baktım da okul çok aşırı kalabalık olduğu için çok kullanışlı olmuyor aslında. Biraz da.
+
+298
+00:55:44,211 --> 00:55:50,851
+Sıra beklerken çok vakit kaybediliyor, namız düşüyor. İstenilen performans elde edilmiyor.
+
+299
+00:55:51,059 --> 00:56:16,220
+Anladım. Tabii işin içinde Covid de var, şu da var, bu da var ama o dediğinizde önemli bir etkendi. O zaman hani saat yakalamak lazım. Daha boş saatleri yakalayabilmek. Size de uyup uyumaması meselesi var mesela. Bu durumda böyle. Peki şeyden de bahsettim. Başka sunucuk arkadaşım yok diye biliyorum. Saatleri daha on bile etmedik ama isteyen arkadaşım varsa çıkabiliriz.
+
+300
+00:56:16,220 --> 00:56:19,000
+Şey sorayım. Şimdi Strongman'lardan da bahsettiniz.
+
+301
+00:56:19,059 --> 00:56:36,920
+Hatta ben bir aralar history channel'da dönüyordu. Dört tane profesyonel strongman, macerarları vardı. Tarihteki meşhur strongmanlerin şovlarını tekrarlamaya çalışıyorlardı falan. Ona hiç denk geldiniz mi?
+
+302
+00:56:41,556 --> 00:56:43,436
+Yokoyama, non izdeva.
+
+303
+00:56:43,635 --> 00:57:05,976
+Tamam, peki. Orada bir şey öğrenmiştim mesela. Şimdi adamlar gerçekten çok iliyalı ve kuvvetli adamlar. Strongman adı üstünde. Fakat mesela yüksek rakımlı eyaletlere, şehirlere falan gittiklerinde gece rahat uyuyabilmek için mesela nefes maskesi, solunum maskesi taktıklarına denk gelmiştim mesela. Enteresan bir şey. Bir onu paylaşayım.
+
+304
+00:57:11,635 --> 00:57:38,059
+Bu konuda örneğe bakalım.
+
+305
+00:57:38,068 --> 00:57:55,468
+Şimdi haftaya ne olacak? Haftaya şimdi sınma ve parti hocalarla da koordine edeceğiz. Bir kere birinci vizeye mazeret nedeniyle katılamayanların mazeret sınavı yapılacak. Bu resmi süreçten geçen arkadaşlar için geçerli olacak. Ve o da yüz yüze olacak.
+
+306
+00:58:06,068 --> 00:58:26,108
+Bu grubumuz online olmasına rağmen sınavlar yüz yüze olduğu için bu mazeret sınavı da yüz yüze olacak. Onu artık ya belki [öğrenci] veya Sırnav hocalarımın veyahut da bir asistanın gözetiminde yine bir sınav olacak. O konudaki ayrıntılar için duyuruyu yapacağız.
+
+307
+00:58:34,068 --> 00:58:55,028
+Sunum yapacakları bir hafta olacak. Önümüzdeki hafta. Hiç öyle bir şey olmazsa da bir merhaba ve güle güle deriz. Şu anki programa göre özellikle önümüzdeki haftaya ayarlanmış bir sunum yok. Ama dediğim gibi geçmişte yapamayan bazı arkadaşlarlar onlarla da ayrıca görüşeceğiz. Durum bu.
+
+308
+00:58:56,028 --> 00:59:00,888
+Gelelim şeye, final sınavına ve bu dersin raporuna.
+
+309
+00:59:02,068 --> 00:59:25,608
+Dersin başında söylemiştik. Bu anlattığımız sorunlardan bir rapor hazırlayacaksınız. O da final zamanı falan olacak demiştim. Çok aşırı yoğun bir çalışma olmayacağından biraz geç hatırlatma olmamızın bir sakıncası yok diye düşünüyorum. Bunu da [öğrenci] ve Sınır hocalarla tekrar bir koordinat edip yakında kısa süre içerisinde online yıldızda dersin ödevi şeklinde bir ödevi açacağız.
+
+310
+00:59:25,608 --> 00:59:30,028
+Son dersin ilk haftalığında söylediysek söylediğimiz.
+
+311
+00:59:30,068 --> 00:59:37,088
+Yoksa karlaştıracağımız tarihe kadar raporlarınızı yükleyeceksiniz. Olup bitecek.
+
+312
+00:59:37,619 --> 01:00:00,000
+Final sınavına geldiğimizde ise final sınavında bütün içeriklerden sorumlusunuz elbette. Fakat tabii ki vize de sormadığımız birincisi hayat boyu öğrenme, ikincisi girişimcilik, üçüncüsü sürdürülebilir kalkınma. Onlardan illaki çıkacak. Üçünden de çıkar mı bilmiyorum artık. Birinden, ikisinden, üçünden çıkar bilmiyorum. Ama illaki.
+
+313
+01:00:00,000 --> 01:00:25,399
+Çıkacak. Genelde de 3, en fazla 4 soru sorduğumuz zaman ağırlık bu konuları yapın ama ön çıkı taraflardan da kesinlikle sorabiliriz. Örneğin araştırma teknikleri, sunum daha yapılması yapılmaması gerekenler falan. Onları da unutmayın ama ötekilerinden illa ki en az 1, belki 2, en fazla 3 soru çıkacak. Çok da açıklayıcı olmadı ama en azından ufak bir ipucu vermiş olmak istedim.
+
+314
+01:00:27,219 --> 01:00:35,980
+Peki, o zaman dersi kapatabiliriz. Haftaya görüşmek üzere. Görüşemezsiniz bile. Sağlıcakla kalın. Şimdilik ağzına aldık.
+
+315
+01:00:36,900 --> 01:00:37,260
+İyi günler.
