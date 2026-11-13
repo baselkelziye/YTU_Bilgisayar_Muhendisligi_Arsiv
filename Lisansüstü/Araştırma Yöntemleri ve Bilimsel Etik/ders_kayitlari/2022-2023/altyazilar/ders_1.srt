@@ -1,0 +1,771 @@
+1
+00:02:37,747 --> 00:02:39,108
+Arkadaşlar, merhabalar.
+
+2
+00:02:41,507 --> 00:02:42,947
+Merhaba hocam.
+
+3
+00:02:45,007 --> 00:02:46,507
+Merhaba, hoş geldiniz.
+
+4
+00:02:49,847 --> 00:02:52,828
+Sayımız biraz az, edilir.
+
+5
+00:02:53,627 --> 00:02:55,987
+Kükürt küsür kişiden herkes gelmemiş.
+
+6
+00:02:58,207 --> 00:02:59,907
+Şöyle bir ekran paylaşımı yapalım.
+
+7
+00:03:07,412 --> 00:03:09,231
+Ekran geldi değil mi arkadaşlar?
+
+8
+00:03:11,012 --> 00:03:12,092
+Geldi hocam.
+
+9
+00:03:12,391 --> 00:03:12,611
+Evet.
+
+10
+00:03:16,512 --> 00:03:32,451
+miz BLM 5004 kodlu ders. Bu dersi Cihan Hocam'la birlikte iki grup halinde vereceğiz. İsmim Ahmet, bu ismim Erdir. Zaten seçerek geldiğiniz için ismimi biliyorsunuzdur.
+
+11
+00:03:33,395 --> 00:03:52,155
+Bu dersi ben ilk defa bu grupta veriyorum. Biraz kendimi tanıtayım, dersin bir şeyini tanıtacağım. Kısa bir ders olacak belki bugün için. Dersin değerlendirme hedeflerinden bahsedeceğiz. Daha sonra bugünkü oturumu tamamlarız.
+
+12
+00:03:53,171 --> 00:04:04,331
+Bu bölümde 2013 yılından beri çalışıyorum. Genellikle işaret işleme, veri analizi, görüntü işleme gibi konular üzerinde şu ana kadar çalışmalar yaptım.
+
+13
+00:04:05,692 --> 00:04:17,971
+Lisansta ağırlıklı olarak ders veriyorum. Bizim lisans öğrencilerimiz beni daha çok görüyorlar. Sizden ufak da. Bu süreçten sonra biraz daha yüksek isterseniz ağırlık, radios.
+
+14
+00:04:20,660 --> 00:04:26,259
+Benim e-mail adresimi chat kısmına yazayım. Burada bu slide Cihan Hoca tarafından hazırlandığı için.
+
+15
+00:04:32,531 --> 00:04:41,351
+Bu e-mail adresimden ulaşabilirsiniz. AWS sayfamda vardı. AWS sayfamı çok duyuru amaçlı kullanmıyorum. Duyuru yapacağım zaman ben size mail göndereceğim ayrıca.
+
+16
+00:04:44,031 --> 00:04:56,391
+Bu ders içeriğiyle alakalı dersin amacı nedir? Şimdi hepiniz buraya yüksek lisans veya doktora yapma hevesiyle o hedefle geldiniz.
+
+17
+00:04:57,076 --> 00:05:05,576
+Bu yüksek lisansın ve doktoranın süreci boyunca makaleler yazmanız gerekecek, mezun olmanız için tez yazmanız gerekecek.
+
+18
+00:05:06,156 --> 00:05:17,156
+Danışmanınızı isterse size proje yaptıracak. Bunların hepsini göz önüne alınca akademik olarak bir metin ortaya koymanız gerekiyor.
+
+19
+00:05:17,716 --> 00:05:34,536
+Bunu bilimsel araştırma yöntemleri başlığı altında inceleyeceğiz. Burada bu başlık altında gördüğünüz şeyler size akademik araştırma nasıl yapılır, tez nasıl yazılır, makale nasıl yazılır, proje nasıl yazılır, bununla alakalı bilgi ve beceri kazandırmayı düşünüyoruz.
+
+20
+00:05:35,196 --> 00:05:41,576
+Tabii bu işi yaparken mesleğimizin gereği etik sınırlarımız var, uyumamız gereken kurallar var.
+
+21
+00:05:41,968 --> 00:05:57,968
+Bilimsel olarak, bilimsel etik kavramı nedir? Bunun altını nasıl doldurabiliriz? Dersinin içerisinde bunları da amaçlıyoruz. Bilimsel araştırmanın kapsamı ve temelleri, bilgiye erişim, veri toplama özellikle veri toplama yöntemleri çoğumuzun...
+
+22
+00:05:58,672 --> 00:06:18,971
+Tez aşamasında başvuracağı şeyler. Bunları öğreneceğiz. Bilimsel bir metin nasıl okunur? Şimdi bilimsel metinden kastımız bu bir makale olabilir, bildiri olabilir, proje olabilir, editöre mektup olabilir, tez olabilir. Bunların okunması, anlaşılması, veri analizinin yapılması veya nasıl yazılabilir o şekilde de değerlendiriliriz.
+
+23
+00:06:19,379 --> 00:06:43,159
+Araştırma, raporu, hazırlama nasıl gerçekleştirecek? Etik konularında, bilimsel etik nedir? Bu konuda neler yapılır? Karşımıza çıkacak problemler nelerdir? Bu konuyla alakalı ülkemizde yürürlükte olan madde, kanuni mevzuat nedir? Bunları derste sizlerle paylaşmayı, bilgilerimizi aktarmayı düşünüyoruz.
+
+24
+00:06:44,660 --> 00:07:11,300
+Genel amacımız bu şekilde. Şimdi dersin kapsamına baktığımızda araştırmada etik sorunlar, etik dışı davranışlar ve önlenmesi. Bir araştırma yaparken etik olarak nelere dikkat etmeliyiz? Örneğin kaynak gösterme çoğunuzun belki bildiği veya duyduğu bir şey ama bunun kaynak göstermenin sınırları var. Neler kaynak göstermelidir veya göstermeye gerek yoktur? Bu sınırlara bakacağız. Bu sorunlar neler? Onları inceleyeceğiz.
+
+25
+00:07:11,764 --> 00:07:17,884
+Karşımıza ileride problem çıkmasın diye bunları önleyecek bazı şeylerden bahsedeceğiz.
+
+26
+00:07:18,904 --> 00:07:24,064
+Bilimsel araştırma yöntemleri, bilimsel araştırmaların planlanması başlığımız var.
+
+27
+00:07:24,627 --> 00:07:50,647
+Araştırma problemleri nelerdir, hipotezler ve amaçlar nelerdir, bilimsel yöntem nedir den başlayıp bunları detaylandıracağız derslerimizde. Sonra bilimsel bilgiye erişim için nerelerden faydalanabiliriz? Çoğunuzu belki Google kullanıyorsunuz ama Google'dan daha pratik, aramak istediğiniz şeyi daha sizi rahat götürecek ortamlar var. İşte bu basılı ortamlardan elektronik ortamlara çeşitlenebilir.
+
+28
+00:07:51,103 --> 00:08:01,564
+Bunlarla alakalı konuşacağız. Sonra veri toplama ve veri ölçme yöntemleri, veri analiz yöntemleri ve sunum. Burada şu da var.
+
+29
+00:08:02,067 --> 00:08:22,687
+Ortaya bir makale, tez, bir şey ortaya koyduk. Proje. Bunu bir yerlerde sunmanız gerekecektir illa ki. Tez yaptıysanız, tez sunumunuz olacak. Makale yazdıysanız, belki bir konferansta onu sunacaksınız. Veya bir proje hazırladığınız, işte TÜBİTAK projesi. Gideceksiniz, onu bir savunmanız gerekecek. Bununla alakalı sunum tekniklerinden bahsedeceğiz.
+
+30
+00:08:23,636 --> 00:08:44,556
+Araştırma önerisi yazma, işte bir özet öneri hazırlama demişiz. Araştırma raporu hazırlama, raporlama metotları, makale yazımında temel kurallar ve örnekler başlığımız var. Biraz önce mevzuat diye bir şeyden bahsetmiştim. İşte Yüksek Öğretim Kurulu YOK tarafından yayınlanmış, resmi gazeteden geçirilmiş.
+
+31
+00:08:45,011 --> 00:08:57,491
+Bilimsel Araştırma ve Yayın Etiği Yönergesi dediğimiz, hepimizin uyması gereken, uyulmadığında farklı yaptırımları olan bir yazılı metin var. Bunun üzerinden ilerleyeceğiz.
+
+32
+00:08:58,331 --> 00:09:06,791
+Çünkü bu konu 2017 veya 2016 yılından sonra Yöntemleri'nde yapılan değişiklikle bu ders.
+
+33
+00:09:07,379 --> 00:09:15,339
+Bütün yüksek lisans ve doktora programına, tezli programlara ve testsiz programlara zorunlu bir ders olarak getirtildi.
+
+34
+00:09:15,419 --> 00:09:23,639
+Önceden şey yoktu, yani bazı bölümler bu dersi zorunlu kılıyordu, bazı bölümlerde seçmeli, bazı bölümlerde yoktu.
+
+35
+00:09:25,259 --> 00:09:31,839
+Akademik araştırmaların daha nitelikli ve kurallarına uygun, belli standartlara uygun.
+
+36
+00:09:32,307 --> 00:09:48,788
+Yapılması için bu ders bütün programlarda zorunlu halde şu an. Dolayısıyla hepimizin uyması gereken plan ve prensipler var. Bunu bir metnin içeriğinden tutun, metnin şekline kadar çeşitli şekillerde inceleyeceğiz.
+
+37
+00:09:49,528 --> 00:09:59,947
+Yani metni yazarken mesela sağa sola yatıp yazmak bile akademik metnilerin direkt göze çarpan şeydir. Siz bir makale gönderdiğinizde veya bir proje önerisi gönderdiğinizde
+
+38
+00:10:00,436 --> 00:10:24,196
+İlgili hakemler veya ilgili editörler önce onun şekline bakarlar. Derler ki genel prensipleri, rapor formatına uygun yazılmış mı? Eğer uygun yazıldıysa daha sonra içeriye veya diğer kriterlere geçilir. Şekil baştan uygun değilse doğrudan reject dediğimiz ret verilir veya revizyon verilir. Tekrar baştan bu işlemleri yaptığınız gerekir.
+
+39
+00:10:28,416 --> 00:10:40,096
+Hızlı bir şekilde niyetlediğiniz, amaçladığınız sonuca ulaşmanız için bu derste anlatılacak kavramları, bilgileri çok iyi özümsemeniz gerekiyor.
+
+40
+00:10:40,596 --> 00:10:51,696
+Genel olarak içerimiz bu şekilde. Bunun bir sürü kaynağı var arkadaşlar. Araştırma yöntemleri, bilimsel etiklerinizde farklı bölümlerin ders notlarını, makaleleri inceleyebilirsiniz. Kitaplar var.
+
+41
+00:10:51,836 --> 00:11:00,316
+İşte TÜVAN'ın bastığı bir kitap var 2002 yılında açıkmış. Daha böyle güncel yeni kitaplarımız da vardı. Bir de bizim kendi ders notlarımız da olacak.
+
+42
+00:11:00,316 --> 00:11:06,995
+Kendi ders notlarımızı önümüzdeki günlerde ben size Cihan Hoca ile bazı değişiklikler yapıyoruz.
+
+43
+00:11:07,392 --> 00:11:13,112
+Bunları toptan paylaşacağım. Bir klasör paylaşacağız sizinle. Klasörün içerisinde bütün ders notlarımızı görebilirsiniz.
+
+44
+00:11:14,012 --> 00:11:25,152
+Ders notları tabii bu ders şey değil, böyle hani notları okuyayım, ezberleyeyim tarzında işte bir mevzuat var, kurallar var, bunları ezberleyeyim tarzında böyle bir ders çıkışı hedefimiz yok.
+
+45
+00:11:25,600 --> 00:11:38,520
+Elinizin altında bulunacak şeylerdir bunlar. Size kolaylık sağlayacak şeylerdir. Yeri geldiğince okursunuz ama bu alanda birkaç farklı kaynaktan faydalanmak sizin için iyi olur diye düşünüyoruz.
+
+46
+00:11:38,520 --> 00:11:45,520
+Dersin çıktılarına baktığımızda temel olarak şunları yazmışız. Bilimsel araştırmanın kapsamı ve temelleri.
+
+47
+00:11:45,779 --> 00:11:55,759
+Bilgiye erişim ve veri toplama yöntemleri, bilimsel metinlerin okunması, anlaşılması, veri anadizeyi, araştırma raporu hazırlama, bilimsel etik konularına hakimiyet.
+
+48
+00:11:56,519 --> 00:12:02,219
+Yani şu dört başlığı yine bilimsel etik kuralları çerçevesinde ele alıyor olacağız.
+
+49
+00:12:04,019 --> 00:12:21,039
+Şimdi burada değerlendirme, bu slide eski bir geçmiş, geçen sene'nin slide'ı. Online eğitimle beraber bizim şöyle bir düşüncemiz oldu. Geçen senelerde bu derste proje veriliyordu. Yine proje vereceğiz ama bize yapmama kararı aldık.
+
+50
+00:12:29,395 --> 00:12:35,575
+Sonuçta bir proje yazacaksınız, tez yazacaksınız. O tezin içerisinde belki bir proje olacak.
+
+51
+00:12:36,395 --> 00:12:42,555
+Çünkü Tubitap projeleri içerisinde chat kısmına yazıyorum. Tubitap 1001 diye bir proje var.
+
+52
+00:12:46,755 --> 00:12:56,595
+Çalışmak istediğiniz, ileride tez yapmak istediğiniz bir konu vardır. Şimdiden danışman belirlediniz büyük ihtimalle çoğunuz veya belirleyeceksiniz.
+
+53
+00:12:57,043 --> 00:13:16,183
+Ne konuda çalışıyorum, ben doğal dil işleme üzerinde böyle bir veri madenciliği uygulaması yapacağım dediğiniz. Bununla alakalı TÜBİTAK 1001 projesi hazırlamanızı istiyoruz bu ders kapsamında. Biz bunun nasıl hazırlanacağına dair önümüzdeki haftalarda bir şeyler anlatacağız. Biraz da siz araştırma yapacaksınız.
+
+54
+00:13:16,912 --> 00:13:25,852
+Bu Binbir projesini hazırlayıp bize sunuyorsunuz. Hazırlarken tek başınıza yapmayacaksınız bunu. Dört kişilik ekipler olmasını isteyeceğiz.
+
+55
+00:13:26,388 --> 00:13:42,248
+Önümüzdeki hafta veya daha sonraki hafta ekibinizin kimlerden oluşacağını ve konumuzun ne olduğunu sizden bir form aracılığıyla toplayacağız. Elektronik bir form olacak. Oraya işte kişiler, ekipteki kişilerin isimleri ve konularını yazacaksınız.
+
+56
+00:13:42,248 --> 00:13:49,967
+Ve o konuyu biz onaylarsak, tamam bu konuda bir TÜBİTAK BİMİ projesi önerisi hazırlayabilirsin dersek.
+
+57
+00:13:50,355 --> 00:14:13,676
+O işe koyulacaksınız. İşte 4 kişi burada bir iş paylaşımı yapacaksınız. Bu yapılacak iş sizin dönem sonu, dönem içindeki %60 notunuzu etkileyecek. %60'ı da şu şekilde etkileyecek. %30 raporttan puan alacağız. %30 da raporun sunumu.
+
+58
+00:14:16,980 --> 00:14:22,620
+Bunu daha sonra ben bir metin halinde yine size de paylaşırım da burada şimdiden kayıtlara geçsin diye söylüyorum.
+
+59
+00:14:22,820 --> 00:14:26,340
+Bu Binbir projesini hazırladık. Bunun zaten kendisi bir raporu vardır.
+
+60
+00:14:27,100 --> 00:14:29,920
+Hazırladığımız şeyin %30'undan bir puan alıyoruz.
+
+61
+00:14:30,560 --> 00:14:32,500
+Bir de bunu ekiple beraber sunum yapacağız.
+
+62
+00:14:32,620 --> 00:14:36,400
+Son 4 hafta veya 5 hafta bu sunum için ayıracağımız bir süre olacak.
+
+63
+00:14:37,260 --> 00:14:39,360
+%30 puanı da oradan alacağız.
+
+64
+00:14:40,560 --> 00:14:43,080
+Geri kalan %40 da arkadaşlar.
+
+65
+00:14:44,788 --> 00:14:59,128
+Final sınav olacak. Final büyük ihtimalle test olur ama o zamana geldiğimizde finalin şekliyle alakalı, işte online olursa belki başka türlü, yüz yüze olursa başka türlü gibi dönemin şartlarına, işte o zamanki durumlara göre ayrıca bilgilendirme yaparız.
+
+66
+00:15:00,107 --> 00:15:08,548
+Değerlendirmemiz de temel olarak bu şekilde arkadaşlar. Dersin içeriğini söyledik. Ders notlarını daha sonra paylaşacağımı söyledim.
+
+67
+00:15:08,927 --> 00:15:22,628
+Dersin nasıl değerlendirileceğini ifade ettim. Şimdi sizin sorularınız varsa sorularınızı alalım. Benim aklıma gelen bir iki bir şey olabilir. Onları söylüyorum. Onlusunda dersi bitirebiliriz.
+
+68
+00:15:29,460 --> 00:15:38,360
+Tavsiyem şimdiden ekip arkadaşlarınızı, yani burada 42 miydi kişi sayısı tam hatırlamıyorum.
+
+69
+00:15:39,220 --> 00:15:44,060
+Yani 4 kişilik olacak şekilde ekip arkadaşlarınızı şimdiden ayarlayın arkadaşlar.
+
+70
+00:15:44,980 --> 00:15:49,220
+Daha sonra hani bu konuda ben ekip arkadaşım bulamadım derseniz biz rastgele atama yaparız.
+
+71
+00:15:49,900 --> 00:15:52,080
+Derse devam önemli.
+
+72
+00:15:53,460 --> 00:16:03,360
+Online Yıldız üzerinden ne kadar süre derse bağlı kaldığınızı görüyoruz. Bugün devam almayacağım ama dersin içerisinde zaten iki saatlik bir ders.
+
+73
+00:16:04,120 --> 00:16:09,940
+Rastgele bir zamanda işte diyeceğim ki chat ekranına öğrenci numaranızı yazın şeklinde devam alacağım.
+
+74
+00:16:10,700 --> 00:16:17,660
+Bu devam bilgisiyle ne kadar süre kaldığınızı karşılaştırarak derse devam edip etmediğinizi o hafta için ben kararlaştıracağım.
+
+75
+00:16:18,048 --> 00:16:29,208
+Örneğin, çete baktığında numara yazılmış ama online yıldızda 2 saatlik dersin 10 dakikasında aktif kalmış. Bu devamsızlık olarak görülecek.
+
+76
+00:16:29,928 --> 00:16:42,048
+Veya devam tarafında 2 saatin tamamında buradasınız ama çete hiçbir şey yazmamışsınız. Sadece ekran açık, burada aktif olarak yoksuz. Bu da devamsızlık olarak görülecek. İki şartı da...
+
+77
+00:16:42,292 --> 00:17:04,451
+Yaptığım bütün yoklamaları ve sistemde kalma süremizi dikkate alarak devam alacağım. Bu devam şartı işte %70 zannediyorum. %70'in altında olursa işte 14 haftanın %70'ini hesaplayın. Onu da yukarıya yuvarlayın. Örneğin 4.8 olsun. Yani 5 hafta devamsızlık yaparsanız devamsızlıktan kalmış olursunuz.
+
+78
+00:17:09,844 --> 00:17:37,584
+Yani projenin aslında iki notunuz var. İkisinin de olması gerekiyor. Final ve proje girdileriniz. Dolayısıyla sunuma da girmeniz gerekiyor. Sunuma girmediğiniz takdirde devamsız olacaksınız. Rapor vermediğiniz takdirde zaten sunum yapamayacağınız için devamsız olacaksınız. Finale girmezseniz bütünlemeye girme hakkınız var. Dönem şartını, dönem içerisindeki şartları yerine getirmek kaydıyla. Bütünlemede finalin telafisi gibi düşüneceğiz.
+
+79
+00:17:37,844 --> 00:17:41,483
+Bütünlemeye de girmezseniz notumuz yine F0 olur. Onu da söyleyelim.
+
+80
+00:17:43,284 --> 00:17:45,104
+Genel kaidelerimiz bu şekilde.
+
+81
+00:17:50,420 --> 00:17:51,700
+Sizden bir soru var mı?
+
+82
+00:17:51,940 --> 00:17:52,780
+[öğrenci], merhabalar.
+
+83
+00:17:53,000 --> 00:17:53,280
+Merhaba.
+
+84
+00:17:53,800 --> 00:18:01,900
+Ders üzerinde değil ama genel bir şeyi sorsam çekiniyorum da spesifik derslerle ilgili olmadığı için ama [kişisel bilgi].
+
+85
+00:18:03,300 --> 00:18:07,460
+Cihan Hoca'dan almak gibi bir zorunluluğum var mı? Sizden de alabiliyor muyum?
+
+86
+00:18:07,460 --> 00:18:16,820
+Yok. Bu Bilimsel Etik dersi, bilgisayar mühendisliği altında, sizin bölümünüz de bilgisayar mühendisliği altında. İkimizden de bu dersi alabilirsiniz.
+
+87
+00:18:17,460 --> 00:18:36,619
+Tamamdır. İlk sorum buydu. Teşekkür ediyorum bunun için. Bir de aslında Cihan Hoca'ya sormayı düşünüyordum ama belki bilginiz varsa size de sormuş olayım. Bazı dersleri kontajandan dolayı alamadığımı düşünüyordum ama OBS'de gözükmeyip online yıldızda gözüküyor. Bununla alakalı bölüme mi?
+
+88
+00:18:36,639 --> 00:18:41,980
+Ben onu bilemem. Sekreter Hanım'lara veya koordinatör kimse ona sorarsanız daha doğru.
+
+89
+00:18:42,451 --> 00:18:46,311
+Teşekkürler. Gruplar bazen karışabiliyor. Benim o yüzden bunu öncelikle.
+
+90
+00:18:46,551 --> 00:19:05,632
+Online yıldızda bir güncelleme yapılıyor. Yani mesela OBS'de grup değiştirdiniz veya ders değiştirdiniz. Bu geçen pazartesi OBS'den veri çekildi. Belki bununla alakalı olabilir. Sonra bir diğer haftada veri çekilecek. İşte bu pazar veya cumartesi günü de veri çekilecek.
+
+91
+00:19:06,099 --> 00:19:11,940
+Sürekli orayı takip edersiniz, güncellendiğini görürsünüz. Olmadı, online yıldızın veya uzame mail atarsınız.
+
+92
+00:19:12,460 --> 00:19:15,719
+Bu hafta yoklama almıyorum arkadaşlar, gelecek haftadan itibaren alacağım.
+
+93
+00:19:16,960 --> 00:19:21,500
+Gelecek haftadan itibaren 13 haftamız olursa hesaplayalım.
+
+94
+00:19:22,980 --> 00:19:26,279
+Yani burada da söylemiş olalım. 13 çarpı 0,7.
+
+95
+00:19:27,316 --> 00:19:41,996
+Ne oluyor? 9.1. Yani bunu 13'ten çıkartırız, şey yaparsak, işte 9 hafta katılmanız gerekiyor. 4 tane katılmazsanız notunuz F-S-PRO oluyor arkadaşlar. Bu haftayı devamdan ayrı tutuyoruz.
+
+96
+00:19:43,976 --> 00:19:50,076
+Teşekkür ederim hocam. Ben önce bu durumları netleştirdikten sonra takip edeyim. Sağ olun.
+
+97
+00:19:52,339 --> 00:19:56,779
+Dersle alakalı [öğrenci] Bey, buyurun söyleyin.
+
+98
+00:19:58,000 --> 00:20:03,680
+Şey hocam, öncelikle merhabalar.
+
+99
+00:20:05,639 --> 00:20:08,500
+Benim de merak ettiğim şey aslında şey bu.
+
+100
+00:20:10,099 --> 00:20:14,779
+Sonunlarda acaba zamansal açıdan herhangi bir kısıtlama var mı?
+
+101
+00:20:14,779 --> 00:20:18,779
+Çünkü fark ettiğiniz üzere ben...
+
+102
+00:20:19,251 --> 00:20:30,372
+kekimedeki yaşayan bir bireyim. Zamansal açıdan eğer bir kısıt varsa benim için açıkçası biraz zor oluyor da.
+
+103
+00:20:30,372 --> 00:20:40,312
+Tamam, onu çözeriz. Size en uygun olacak şekilde ekip arkadaşlarınızla da birlikte en uygun olacak şekilde onu hallederiz.
+
+104
+00:20:42,592 --> 00:20:45,771
+Tamamdır hocam, çok sağ olun.
+
+105
+00:20:47,731 --> 00:20:55,432
+Dert edecek bir şey değil. Siz yeter ki ekip arkadaşlarınızı ayarlayın. Gerisini bana bırakın. Ben onu planda uygun bir zamana yazarım.
+
+106
+00:20:57,692 --> 00:20:59,051
+Evet, başka sorumuz var mı?
+
+107
+00:21:01,832 --> 00:21:08,352
+Şimdi slide'ların bazıları örneğin şurada birinci hafta ne ile başlayacağız?
+
+108
+00:21:09,428 --> 00:21:24,128
+Bilgiye nasıl erişilebilir bununla alakalı şey var? İşte kütüphane, dijital kütüphaneler ve indeksler nelerdir? Gelecek dersimizde bu kavramların neler olduklarını konuşacağız.
+
+109
+00:21:24,788 --> 00:21:35,508
+Genellikle siz şu an araştırmalarınızı dijital olarak yapıyorsunuz. Çoğu kimse açıp da kitaptan bir veya işte ansiklopediden bir şey aramıyor.
+
+110
+00:21:36,019 --> 00:21:46,099
+Bu bizim bir kısmen avantajımız. Fen bilimleri ve bilgisayar okuduğumuz için internette bulduğumuz herhangi bir veriyi veya bilgiyi test edebilme imkanımız var.
+
+111
+00:21:46,200 --> 00:21:50,859
+İşte bir kod veya algoritma görüyorsunuz, onu test edip doğrulama imkanımız olabiliyor.
+
+112
+00:21:51,720 --> 00:21:59,159
+Fakat bu sosyal bilimlerde böyle değil. Özellikle tarih gibi, felsefe gibi şeylerde mecburen ana kaynağa inmeniz gerekiyor.
+
+113
+00:21:59,159 --> 00:22:03,379
+Burada da bilimsel araştırma teknikleri açısından ve etik açıdan,
+
+114
+00:22:03,743 --> 00:22:31,463
+Hiçbir zaman ikinci el bilgiye, bir yerde duydum, bir blogda duyduğum, gördüğüm bilgi veya YouTube'da gördüğüm, çahit olduğum bir şeye güvenmemem gerekiyor. Her ne kadar doğru da olsa akademik metinlerde citation dediğimiz, referans verme dediğimiz bir şey var. Bir algoritmayı referans vereceksek o referansın ana kaynağına erişmemiz gerekiyor. Ana kaynağına erişmek için de eğer bu basılı bir kitapsa basılı kitap...
+
+115
+00:22:31,743 --> 00:22:42,903
+Kütüphane üzerinden cilt numarasına kadar vermek lazım. Basılı kitap değilse elektronik kaynaktan farklı formatlar var. Citation'ımızı yapmamız gerekiyor.
+
+116
+00:22:43,543 --> 00:22:58,683
+Hiçbir şekilde citation mesela şey olmaz. Bilmem ne kişinin, bilmem kimin blog sayfası, falancanın YouTube sayfası, böyle şeyler tezlerde, makalelerde, proje önerilerinde, akademik olan hiçbir metinde.
+
+117
+00:22:59,188 --> 00:23:20,347
+Kabul edilmez. Aksine red sebebidir. Öyle bir kaynağı ben makale olarak gördüğümde doğrudan mesela reddedelim. Çünkü bu bilimsel yönteme uygun hazırlanmamış bir çalışma olarak nitelendirilir. Gelecek dersten itibaren işte bu araştırma nasıl yapılır detaylarını konuşacağız, konuşuyor olacağız.
+
+118
+00:23:26,420 --> 00:23:38,099
+Geçen senelerden bu ders online olarak açıldı bildiğim kadarıyla. Beri ambarı diye bir şey görüyor olmanız lazım. Belki hem de açılmamıştır. Görüyor musunuz? Bir bakar mısınız arkadaşlar?
+
+119
+00:23:44,276 --> 00:23:45,556
+Ben göremedim hocam.
+
+120
+00:23:46,116 --> 00:24:01,696
+Tamam. Muhtemelen henüz erişiminize açılmamıştır. Hangi derslere kaydolduysanız, o dersin pandemizyon zamanından bugüne kadar daha önce açılmış uzaktan versiyonları varsa, videoları varsa onları izleyebiliyorsunuz.
+
+121
+00:24:01,696 --> 00:24:07,436
+Bunu şunun için söylüyorum. Bu dersi benden daha tecrübeli olan Cihane hocam veriyor.
+
+122
+00:24:08,051 --> 00:24:27,371
+Benim anlattığımı zaman zaman anlayamamış veya yeterince bir şeyler öğrenememiş hissedebilirsiniz. Normaldir. Derste öncelikle bana sorun, detaylandırmaya çalışayım. Ama bir de bir başkasının yorumuyla, yani dersler genelde 1-1,5 saatlik zaten çok yorucu değil.
+
+123
+00:24:27,859 --> 00:24:37,599
+Hızlandırılmış bile olsa Cihan Hocam'dan da dinlemenizi tavsiye ederim. Dediğim gibi ben bu konularda ders verdim ama ilk defa bu kapsamda yüksek sansta ders veriyorum.
+
+124
+00:24:39,220 --> 00:24:48,940
+Tecrübeli olduğu için kendisi benden 10 yıl, akademik anlamda daha tecrübeli birisi. Onun tecrübelerine faydalanmak adına kayıtlarına erişebilirsiniz.
+
+125
+00:24:52,660 --> 00:24:56,540
+Video linklerini almanız bile bir çözüm olabilir. Bunu da tavsiye ederim.
+
+126
+00:24:58,180 --> 00:25:02,460
+Evet, arkadaşlar benim söylemek istediklerim bugünlük bu kadar.
+
+127
+00:25:03,460 --> 00:25:04,280
+Gelecek hafta.
+
+128
+00:25:05,340 --> 00:25:10,740
+O kısmı kaçırdım da Cihan Hoca ile birlikte mi bu ders gidecekti yoksa sadece siz?
+
+129
+00:25:10,740 --> 00:25:16,280
+Yok, yani diğer grup kendisi dersini işletiyor. Ben burada kendim derslerimi yapıyorum.
+
+130
+00:25:17,320 --> 00:25:19,520
+Projeleri de kendi grubumuz içerisinde.
+
+131
+00:25:20,531 --> 00:25:35,351
+Derse kayıtlı arkadaş sayısı 52 idi galiba. Yani 13 farklı grup olacak şekilde. Biz yine değerlendirmemizi, sınavlarımızı kendimiz yapacağız. Ama biz mesela final sınavını Cihan Hoca ile beraber hazırlayacağız. Ders notları ortak.
+
+132
+00:25:35,731 --> 00:25:39,652
+Her şeyimiz ortak. Onun grubu ayrı, bizim grubumuz ayrı devam edeceğiz.
+
+133
+00:25:40,152 --> 00:25:44,551
+Yani bizim sunumlarımızı ve raporlarımızı siz puan vereceksiniz.
+
+134
+00:25:44,551 --> 00:25:49,432
+Tabii ki. Yoksa iki grup olmasının bir anlamı olmaz.
+
+135
+00:25:52,271 --> 00:26:01,551
+Şimdi Clinton Binda, Türkçe, anlıyorsunuz ki yazabiliyorsunuz, ders notlarını...
+
+136
+00:26:01,779 --> 00:26:27,360
+Ayrıca paylaşacağım. Bir klasör halinde. Bunu da şuradan paylaşacağım. Online yıldız'a girdiğinizde sizin ekranınıza ne geliyor bilmiyorum da. Şöyle verdiğim dersler diyeyim. Ders duvarı diye bir şey var. Buraya bir link koyacağım, bir duyuru koyacağım. O linkin üzerinde bütün ders notlarınız olacak. Oradan indirebilirsiniz. Tamam mı?
+
+137
+00:26:27,667 --> 00:26:48,347
+Bir diğer alternatif de eğer burada bir problem olursa, OBS Yıldız'da ders ayrıntıları diye bir bölüm var. Oradan da indirilebilir. Şunları birkaç düzeltme yapmam gerekiyor. Burada çok fazla kaynak var, size paylaşacağım. Hatta şöyle biraz göstereyim.
+
+138
+00:26:50,740 --> 00:27:16,059
+Şimdi biz size Latec kananını da anlatacağız. Normalde 6 haftalık bir sunum dosyalarımız var. Sonra bilimsel konferans sunumları, Latec nasıl kullanılır, Latec'le nasıl rapor yazılır? Çünkü biz raporları Latec kullanarak yazmanızı isteyeceğiz. Tez zamanına geldiğinizde hepiniz Latec kullanmak zorundasınız. Wordle bu olmuyor. Onun için şimdiden Latec'e başlamanız iyi olur.
+
+139
+00:27:16,468 --> 00:27:29,008
+Latex ile alakalı bir eğitim videosu var. Ben size paylaşacağım. Ben kendim burada bölümde proje koordinatörü olduğum için kendi lisans öğrencilerimize Latex videosu hazırlamıştık. Onun videosunu izlemeniz yeterli.
+
+140
+00:27:29,008 --> 00:27:39,887
+Çünkü bizim bölüm proje formatımızda sizin yazacağınız fen bilimler enstitü test formatı 3 aşağısı 5 yukarısıyla aynı özelliklere sahip. Ondan faydalanabilirsiniz.
+
+141
+00:27:41,427 --> 00:27:42,927
+Sonra şu neymiş?
+
+142
+00:27:44,276 --> 00:27:54,596
+Yani şurada 7-8 tane doküman var. Bunları bir derli toplu hale getirip size toplu olarak bir klasör altında paylaşacağım. Oradan doğrudan hepsine edinebilirsiniz.
+
+143
+00:27:56,436 --> 00:27:57,516
+Başka sorumuz?
+
+144
+00:28:02,548 --> 00:28:09,647
+Hocam, ben şey için soracaktım aslında sorum arkadaşlara, proje grubu için nasıl bir şey yapabiliriz?
+
+145
+00:28:10,867 --> 00:28:21,387
+Yani dersi alan, şöyle, bir WhatsApp grubunuz falan kendi içinizde vardır veya yoksa da burada siz vesile olun, kurun.
+
+146
+00:28:22,687 --> 00:28:27,468
+Yani sizin nezdinizde belki diğer arkadaşlar kurmak ister, onu ben karışmayayım.
+
+147
+00:28:28,084 --> 00:28:38,244
+Yani yüz yüze olsaydı belki birbirinizle etkileşiminiz daha rahat olabilirdi. Ama yani burada teknolojiden faydalanıp WhatsApp grubu gibi bir şey kurabilirsiniz.
+
+148
+00:28:38,424 --> 00:28:41,704
+Dersin bir WhatsApp grubu var. Ben şimdi mesaj attım oraya.
+
+149
+00:28:41,944 --> 00:28:43,104
+Bir yanım söyledi.
+
+150
+00:28:43,644 --> 00:28:44,744
+Tamam, teşekkür ederim.
+
+151
+00:28:46,036 --> 00:29:06,456
+Yani buradan sonra zaten ben size bir şey paylaşacağım. Elektronik form paylaşacağım. Orada birinci öğrencinin numarası, birinci öğrencinin adı, birinci öğrencinin soyadı, ikinci, üçüncü, dördüncü öğrenci için şeyler. Sonra konu ismi, işte konu, proje konusu. Bunu oraya gideceksiniz. Buraya da link paylaşabilirsem bir yansana da anlayayım.
+
+152
+00:29:10,612 --> 00:29:21,052
+O konuda ben rastgele atama yapmak isterim ama benim için de sizin için de belki daha kolay olur ama bu da ekip arkadaşınızı kendi seçme imkanınızı size tanımıyor.
+
+153
+00:29:21,612 --> 00:29:34,652
+Bu da çok tatsız bir şey olabilir. Dolayısıyla burada ne kadar siz kendiniz ekip arkadaşlarınızı belirlerseniz o kadar daha güzel olması gereken de o şekilde zaten.
+
+154
+00:29:37,556 --> 00:29:38,836
+Başka sorumuz var mı?
+
+155
+00:29:42,548 --> 00:29:43,488
+[öğrenci].
+
+156
+00:29:44,048 --> 00:29:51,608
+Hocam merhaba. Ben de arkadaşlarla aynı soruyu soracaktım da [kişisel bilgi].
+
+157
+00:29:51,708 --> 00:29:59,567
+Tabii online ile başladığımız için hiç kimseyi tanıyamadık. O zaman sizin dediğiniz gibi WhatsApp grubundan bir tanıyacağız.
+
+158
+00:30:00,148 --> 00:30:05,468
+Yani WhatsApp grubunun linkini bana da paylaşırsanız ben de bütün herkese mail göndereyim.
+
+159
+00:30:09,907 --> 00:30:17,867
+Bu işi böyle biraz daha şey yapabiliriz, sistematik, herkesin görebileceği bir şey olabilir.
+
+160
+00:30:24,147 --> 00:30:25,107
+Duyam, duyuyor musun?
+
+161
+00:30:27,887 --> 00:30:29,427
+Evet hocam, ben.
+
+162
+00:30:31,427 --> 00:30:32,427
+Copy link.
+
+163
+00:30:33,787 --> 00:30:37,107
+Akademisyen, hemen ben buradayken siz mail göndereyim.
+
+164
+00:31:05,268 --> 00:31:06,248
+50400
+
+165
+00:31:33,907 --> 00:31:49,387
+Şöyle genel kuralları yazayım. Hatta siz de kayıtlara geçsin. Yazdığımı görün. Gelecek haftadan itibaren devam yorumunu açılacaktır. %70 diyorum.
+
+166
+00:31:53,387 --> 00:31:54,147
+Değerlendirme.
+
+167
+00:31:56,728 --> 00:32:00,587
+QBITAK 1001 projesi.
+
+168
+00:32:01,140 --> 00:32:18,700
+İndi de opus raport, raport, İndi de opus sistemom, artı, günüte, günüte.
+
+169
+00:32:21,971 --> 00:32:25,932
+Yani şunu da yıl içi diye paranteze alırsak.
+
+170
+00:32:28,872 --> 00:32:29,932
+Yıl içi.
+
+171
+00:32:38,867 --> 00:32:58,367
+Proje 4 kişilik, bisikten, yol açacak. Ekip arkadaşımları, marka, daha içini de ayarlanmak için, bu arka sat, kurulu aşağıya.
+
+172
+00:33:03,827 --> 00:33:09,827
+Proje önüne yapısı, vermeyeyim veya devam etmeyen,
+
+173
+00:33:27,604 --> 00:33:32,064
+Evet, sizlerin huzurlarınızda, hani şu an, şimdiden gelmeye başlamıştık. Evet, Razi.
+
+174
+00:33:33,748 --> 00:33:45,428
+Hocam ben derste geç katıldım. Eğer bahsetmişsiniz sorun için kusura bakmayın, şey soracaktım. Online durumunu devam etmezsen insanın evinden sonra derslerce, online olarak devam edecek yüzde olarak?
+
+175
+00:33:46,348 --> 00:33:56,148
+Eğer yüzde yapılsın diye üniversite yönetmeliği ve YÖP tarafından üstten gelen bir karar olursa elbette yüzde olacak.
+
+176
+00:33:58,648 --> 00:33:59,928
+Teşekkür ederim hocam.
+
+177
+00:34:06,003 --> 00:34:06,943
+Başka sorunuz?
+
+178
+00:34:08,703 --> 00:34:13,644
+Hocam, bir sorun var. Proje sunum raporları İngilizce yapabilir miyiz?
+
+179
+00:34:13,644 --> 00:34:20,644
+Yani ekip olarak bunu kendiniz kararlaştırma, TÜBİTAK 1001 başvurusu Türkçe yapılıyor.
+
+180
+00:34:21,943 --> 00:34:29,083
+Yani anlatmak istediklerinizi Türkçe olarak ifade edebilirsiniz ama rapor ve sunum dosyalarını Türkçe istiyoruz.
+
+181
+00:34:30,228 --> 00:34:50,228
+Bu konuda yine bir Cihan Bey ile görüşürüz. Böyle bir esneklik sunumda. Şimdi raporun kendisi Türkçe olacağı için sunumu tekrar İngilizceye çevirmenize gerek yok. İki defa zahmet etmenize gerek yok. Ama anlatmak istediklerinizi İngilizce anlatabilirsiniz. Orada problem olmaz.
+
+182
+00:34:52,847 --> 00:34:57,667
+Bildiğim kadarıyla TÜBİTAK 1001 Türkçe yazılıyor. [öğrenci] sen buradasın doğru mudur?
+
+183
+00:35:01,748 --> 00:35:08,467
+Ben de öyle biliyorum hocam. Emin olmamakla yani kesin yargı kesin yargıya var.
+
+184
+00:35:08,467 --> 00:35:18,387
+Yani benim bildiğim Türkçe'ye başka dilden kabul edilmiyor diye biliyorum ama yine teyit ederim. Ama siz şu an için her şeyi Türkçe olarak düşünün.
+
+185
+00:35:23,123 --> 00:35:44,023
+Yakın çalışma alanlarınızla alakalı ekipler kurarsanız tabii daha faydalı. Biriniz NLP çalışıyordur, öbürünüz Web Mining çalışıyordur. Bunlar birbiriyle yakın. Ama birisi işletim sistemi veya netweb çalışırken öbürünün görüntü işleme çalışması bu ekibi çok homojen kılmaz.
+
+186
+00:35:44,447 --> 00:35:54,607
+Ekip arkadaşlarınızda tez yapmayı düşündüğünüz alanları da dikkate alarak ekip arkadaşı oluşturmak size proje yazma açısından kolaylık sağlayacaktır.
+
+187
+00:35:59,956 --> 00:36:01,576
+Tamam, herhalde sorunuz yok başka.
+
+188
+00:36:04,155 --> 00:36:14,456
+Peki, katıldığınız için teşekkür ederim arkadaşlar. Gelecek hafta derste görüşmek üzere. Kendinize iyi bakın. Tekrardan hayırlı bir dönem diliyorum. Görüşmek üzere.
+
+189
+00:36:15,195 --> 00:36:17,336
+Teşekkürler hocam, sağ olun. İyi günler.
+
+190
+00:36:18,256 --> 00:36:19,176
+Sağ olun, iyi günler.
+
+191
+00:36:19,176 --> 00:36:19,716
+Görüşürüz.
+
+192
+00:36:22,076 --> 00:36:22,756
+Teşekkürler.
+
+193
+00:36:23,376 --> 00:36:24,155
+Thank you hocam.
