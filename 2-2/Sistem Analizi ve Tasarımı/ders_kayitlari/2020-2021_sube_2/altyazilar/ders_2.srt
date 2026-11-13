@@ -1,0 +1,2051 @@
+1
+00:06:29,396 --> 00:06:47,836
+Merhaba arkadaşlar, iyi günler dileyelim. İkinci dersimize, ikinci haftamıza hoş geldiniz. 14 haftanın ikinci haftasındayız. Maratonun ve sistem analizi tasarımı safhalarının başındayız.
+
+2
+00:06:54,036 --> 00:07:18,136
+Bu derste ne yapacağız? Ya da geçen derste ne yapmıştık? Önce onu hatırlayalım. Bir giriş yapmıştık. Dersimizin ne olduğu, kapsamının hedeflerinin neler olduğundan bahsetmiştik. Planımızı, kriterlerimizi gözden geçirmiştik. Dikkat edeceğimiz noktaları, projemizi biraz konuşmuştuk ama daha detaylarını biliyorsunuz. Ben size bir döküman olarak zaten yayınlayacağım.
+
+3
+00:07:18,548 --> 00:07:25,668
+Bu hafta ya da önümüzdeki haftaya kadar derste, duvarda paylaşmış olurum dokümanı.
+
+4
+00:07:27,228 --> 00:07:32,268
+Gidişatta, evet safaları görecektik. Her safada neler olduğunu, neler yapıldığını öğrenecektik.
+
+5
+00:07:32,927 --> 00:07:36,648
+Fakat ilk önce bu sürecin ne olduğunu tanımamız gerekiyor.
+
+6
+00:07:37,067 --> 00:07:39,627
+İşte bu hafta bilgi sistemi geliştirme süreci nedir?
+
+7
+00:07:40,019 --> 00:07:59,579
+Bir bilgi sistemi projesi baştan sona nasıl yürütülür ya da hangi adımlardan geçilir, neden bu sırayla yapılır, her adımda neler yapılması beklenir gibi ve bunların hangi modelleri vardır, yani nasıl akışları vardır, alternatifleri nelerdir bunları tartışacağız.
+
+8
+00:08:02,004 --> 00:08:12,084
+Yine geçen hafta başladığımız sistem bilgi sistemi tanımlarını biraz daha genişleteceğiz ve bu derste yine ilk önce bilgi sisteminin türlerini öğreneceğiz.
+
+9
+00:08:12,224 --> 00:08:21,304
+Yani bunları biraz bir kategorize edeceğiz. Sonrasında da bu kategoriler niye var ya da birbirleriyle nasıl ilişki içindeler bunları göreceğiz.
+
+10
+00:08:28,596 --> 00:08:33,436
+Bileşiğini acaba, ilgi sistemlerinde hangi rollere sahip?
+
+11
+00:08:34,355 --> 00:08:44,216
+Ne gibi sorumlulukları var, neler bekliyoruz onlardan ya da ne gibi özelliklerin olmasını bekliyoruz gibi tanımları bu derste yine yapacağız.
+
+12
+00:08:44,355 --> 00:08:58,775
+Ve bu sayede üç başlı üzerinden geçerek türler, bilgisayarın türleri, tarafları ve geliştirme süreci, süreç adımları, süreç modellerine hızlı bir bakış ile bu haftaki dersimizi tamamlayacağız ve önümüzdeki haftada süreci işletmeye başlayacağız.
+
+13
+00:08:59,183 --> 00:09:11,303
+Evet, şimdi hatırlamak için tekrardan bir bilgi sistemleri neydi acaba? Bir kere her bir sistemin mutlaka amacı olması gerektiğini söylemiştik. Amacı olmayan bir sistem olamaz demiştik.
+
+14
+00:09:11,956 --> 00:09:30,536
+Bilgi sistemleri de yine girdi, işlemler ve çıktı şeklinde çalışan süreçlerden oluşan çözümlerdi. Tam olarak işte problemleri analiz etmek, yeni ürünü oluşturmak, karmaşık nesneleri canlandırmak, onları kontrol ve koordinasyon sağlayarak.
+
+15
+00:09:30,964 --> 00:09:39,244
+çalışmasını sağlamak ve bununla birlikte ileriye dönük kararlar almamıza destek olmak için bilgi sistemlerini kullanıyoruz.
+
+16
+00:09:39,244 --> 00:09:48,344
+Yani birden fazla amacı var. Herhangi biri olabilir ya da birden fazla amacı bir arada da barındırabilir bir bilgi sistemi çözümü.
+
+17
+00:09:48,804 --> 00:09:53,184
+Fakat bunları yapmak için de yeni ürünü oluşturmak olabilir örneğin.
+
+18
+00:09:53,304 --> 00:09:58,684
+Ya da dediğim gibi karmaşık bir prosesin kontrolü ya da koordinasyonunu sağlamak olabilir.
+
+19
+00:09:58,964 --> 00:10:05,804
+Bir kararın alınması için destekleyici çıktılar üretmek olabilir gibi amaçları vardır.
+
+20
+00:10:06,264 --> 00:10:11,944
+Ve bu amaçları girdi işlem çıktı zinciri şeklinde işleyerek sonuçlarını üretir.
+
+21
+00:10:12,864 --> 00:10:17,684
+Bu gibi sistemlere temelde bilgi sistemi adını veriyorduk.
+
+22
+00:10:18,163 --> 00:10:22,444
+Peki, şimdi hızlıca bilgi sistemi türleri nelerdir?
+
+23
+00:10:23,124 --> 00:10:28,423
+Neden bu türler böyle tanımlanmıştır? Biraz bunlara bakalım.
+
+24
+00:10:28,903 --> 00:10:31,124
+Şimdi genel olarak geçen haftada
+
+25
+00:10:31,124 --> 00:10:42,163
+Hatırlayacak olursanız, bilgisayar ve işlerin kolaylaştırılmasını, yürütülmesini sağlamak için bunlardan faydalananını söylemiştik.
+
+26
+00:10:42,163 --> 00:10:44,163
+Şimdi
+
+27
+00:10:47,539 --> 00:11:06,679
+Bilgi sistemi türleri temelde şurada gördüğümüz 6 başlıkta inceleniyor. Biz bunları alttan başlayıp tabandan, taban derler ya tabandan başlayıp yukarı doğru, yönetim kademesine doğru inceleyeceğiz.
+
+28
+00:11:06,679 --> 00:11:15,539
+Şimdi, ilk bilgi sistemi türümüz, göreceğimiz ilk bilgi sistemi türü, IBS dediğimiz ya da TPS İngilizcesi.
+
+29
+00:11:15,539 --> 00:11:20,279
+Transaction Processing Systems dediğimiz işlemsel bilgi sistemleridir.
+
+30
+00:11:20,692 --> 00:11:48,692
+Bunlar aynı zamanda şu işte böyle bir piramit gibi bir şey düşünün. Hani bilgi sisteminin türlerini tabandan başlayıp, işlevsel kademelerden başlayıp yönetim kademesine doğru ufalarak gittiğini düşündüğümüzde şuradaki pembe bölge bizim işlemsel bilgi sistemlerimizin bulunduğu yer oluyor. Ne demek bu? Demek ki bu işlemsel bilgi sistemleri, bu türe ait olan sistemler bir şekilde işlem yapılmasını sağlar.
+
+31
+00:11:48,692 --> 00:12:14,872
+İşlem de transekşin aslında, yani bir işin yerine getirilmesini sağlıyor. Ve bunlar bir işletmede farklı farklı birimlerde de kullanılabilir. Örneğin, çok basit bir örnek olsun, bizim bir fabrikamızın olduğunu, bir ürün ürettiğimizi düşünelim ve bu sürecimizi desteklemek üzere çeşitli bilgi sistemlerinden yararlanmamız gerekir. Örneğin, bizim satış ve pazarlama birimimiz vardır.
+
+32
+00:12:15,327 --> 00:12:33,447
+Bunlar işte ürettiğimiz ürünlerin satılmasını ya da işte reklam ve pazarlama faaliyetlerinin yürütülmesini sağlar. Üretimimiz vardır, üretim hattımız var. İşte finans tarafımız var, bankalar bilmem neler tarafı mesela ya da dış paydaşlar ya da ortaklar olabilir, yatırımcılar olabilir.
+
+33
+00:12:43,327 --> 00:12:51,127
+Bu insan kaynaklarının hepsini de yürütmek için ayrı bir birimimiz olduğunu düşünelim.
+
+34
+00:12:51,127 --> 00:13:09,307
+İşte buradaki işleri yapmamızı sağlayan, gündelik hayatımızı çözen, bize işlem gücüyle yani bilgisayarın işlem kapasitesi ve gücünü kullanarak işlerimizi yerine getirilmesini sağlayan bütün sistemlere işlemsel bilgi sistemi adını veriyoruz.
+
+35
+00:13:11,327 --> 00:13:14,008
+Bir satışçı
+
+36
+00:13:14,032 --> 00:13:28,272
+Müşterileriyle olan ilişkisini takip ediyor bir bilgi sistemi kullanarak. Müşteriler bir yerden sipariş giriyorlar. Bunları e-ticaret uygulamalarında da aslında birer bilgi sistemi olarak, işlemsel bilgi sistemi olarak görüyorsunuz ve kullanıyorsunuz.
+
+37
+00:13:28,272 --> 00:13:42,032
+İşte oradaki mesela siz görüyorsunuz sayfaları, ürünler listeleniyor. İşte beğendiğiniz bir üründen beş tane şey yapıyorsunuz, kredi kartı ödeme falan filan ve sonrasında o işte üreticiye ya da...
+
+38
+00:13:42,032 --> 00:13:50,932
+O kimse, dağıtıcısı, onun önüne düşüyor. Yani bir sipariş olarak geliyor. Şimdi ben bu siparişi işleyeceğim. Belki elimde hazır var.
+
+39
+00:13:51,539 --> 00:14:07,759
+Belki elimde hiç yok, ürettirmem gerekecek kendi içimde. Yani ya depodan çekeceğim ve yollayacağım, sevkiyatını sağlayacağım ya da bunun üretilmesini sağlayacağım. Belirli bir süre içinde, teslimat süresi neyse o kadar süre içinde bu teslimatın gerçekleştirilmesini sağlayacağım.
+
+40
+00:14:07,759 --> 00:14:18,699
+Ne oldu? Üretimle alakalı ve satışla alakalı bir işler takip edilmesi gerekiyor. Bununla ilgili bilgilerin tutulması, bununla ilgili işlemlerin yapılması gerekiyor.
+
+41
+00:14:19,539 --> 00:14:27,459
+Bir yerde saklanması, işlenmesi gerekiyor. Bu gibi işlemleri burada yapabiliriz. Bir işlemsel bilgi sistemi kullanarak.
+
+42
+00:14:27,939 --> 00:14:34,179
+Ya da üretim tarafında makineler var. Makinenizin kontrol mekanizması, kontrol sistemi olabilir.
+
+43
+00:14:34,720 --> 00:14:38,699
+Makinenin ne zaman nasıl çalışacağını, hangi hızda çalışacağını denetleyebilir.
+
+44
+00:14:38,699 --> 00:14:47,379
+Bu da mesela amaçlarından biri kontrol olan bir işlemsel bilgi sistemi olarak karşımıza çıkabilir.
+
+45
+00:14:47,539 --> 00:15:15,000
+Finans tarafına bakalım. Burada da mesela dedim ya ortaklarınız var, yatırımcılarınız var, belki borsaya açıksınız, borsayla ilgili işlemleriniz var. Bir yandan işte siparişlerden, ödemelerden para geliyor. Belki bunların vadeleri var. Hani çekle bilmem neyle ödeniyor, taksitle ödeniyor. Bunların takip edilmesi gerekiyor. Bir yerlerde bizim de madde, ham madde almak için ödeme yapmamız gerekiyor. Yani girdiler var, çıktılar var.
+
+46
+00:15:15,539 --> 00:15:34,539
+kayıtlarının tutulması gerekir. Bunların denetlenebilmesi ve işte mali raporlarının oluşturulabilmesi gerekir. Böyle bir sürü hani tabiri caizse sıkıcı işlerin düzenli, düzgün ve doğru şekilde yapılmasını sağlayan bilgi sistemleri yine burada bu kademede karşımıza çıkıyor.
+
+47
+00:15:34,539 --> 00:15:42,840
+Muhasebe tarafına geçtiğimizde işte mesela çalışanlarınızın maaşları var. Çalışanlarınızın maaşlarının yönetilmesi gerekiyor. Nedir mesela?
+
+48
+00:15:43,539 --> 00:15:50,860
+Kaç gün çalıştığını biliyor olmanız lazım. Bir yerlerden veri alıyor olmanız lazım. Bir şekilde insan kaynaklarından mesela.
+
+49
+00:15:51,519 --> 00:15:55,919
+Ondan sonra işte hani hastalandı diyelim bir hafta çalışmadı ya da iki hafta çalışmadı.
+
+50
+00:15:55,919 --> 00:16:02,379
+Onun parasını normalde işte sigorta sisteminin ödemesi lazım. Çalışan işverenin ödememesi lazım.
+
+51
+00:16:03,080 --> 00:16:11,539
+Onun dışında belki işte avans aldı, kesinti yapılıyordu bir şeyler vardı. Vergileri var biliyorsunuz gelir vergi.
+
+52
+00:16:11,539 --> 00:16:20,379
+bilgilerin hesaplanması bilmem nesi, borçlar alacaklar onlar bunlar. Bir şekilde çalışanların bordrolarının üretilmesi bile başlı başına bir iş.
+
+53
+00:16:20,788 --> 00:16:43,268
+Çok fazla bilgi, veri toplaması gerekiyor değişik kaynaklardan. Sonrasında hesaplamaları yapması gerekiyor. İşte mesela o hangi kategoride bir işçi kaç saat çalıştığı, fazla mesaisi ne kadar, belki fazla mesaide katmanlar olabilir. Hani bir gün fazla mesai yaptıysa şu kadardır ama iki gün yaptıysa bu kadardır gibi böyle farklı farklı kararlarında işletilmesi gerekebilir.
+
+54
+00:16:48,788 --> 00:17:16,768
+Bordrolar haline döken, hem mesela belki kağıda döküp işçilerinize de verebilirsiniz. Aynı zamanda hani e-arşiv falan deyip de başka sistemlerde depolanmasını, arşivlenmesini sağlayabilirsiniz. Bir yandan finans tarafına al bu ödemeleri yap diye bordroları yollayabilirsiniz. Bir yandan üst yönetime bak biz işte bu ay şu bölümdeki personele şunları harcadık, bu bölümdekilere bunları harcadık, şurada artış var, şurada azalma var diye çıktılar üretebilirsiniz.
+
+55
+00:17:16,788 --> 00:17:17,608
+gibi
+
+56
+00:17:18,132 --> 00:17:35,472
+Hani kullanılabilir çıktılarda üretebilirsiniz. Hem işin yapılmasını sağlayıp hem de böyle bir yerleri besleyecek, farklı sistemleri besleyecek çıktılarda üretebilirsiniz. Bu da yine bir işlemsel bilgi sistemi olarak pembe kademede karşımıza çıkıyor.
+
+57
+00:17:35,472 --> 00:17:45,751
+İnsan kaynaklarında da işte mesela çalışanlarınızın kayıtlarını tutuyorsunuz. Hangi eğitimleri aldı? Hangi şeyleri ne bileyim sertifikaları aldı? Tazminatı var mı?
+
+58
+00:17:46,132 --> 00:18:03,211
+Bunların takibinin yapılması gerekiyor. Kaç gün izin kullandığı kadar. Bu işlemlerin yapılmasını sağlayan bilgi sistemleri de yine işlemsel bilgi sistemi.
+
+59
+00:18:14,132 --> 00:18:40,552
+Bütün işlemlerimizin yürütülmesini sağlıyor. Yine burada işlem kelimesini kullanmamak durumundayız. Neden? Çünkü siz öğrenci olarak mesela belli bir ders planına tabisiniz ve o ders planını ancak tamamlarsanız, belli kredileri, belli yükümlülükleri yerine getirirseniz diploma hakkı kazanıyorsunuz. Bu sizin sürecinizin bir şekilde takip edilmesi lazım. Bu süreç içinde sizin bazı işlemler yapmanız lazım. Mesela ders seçmeniz lazım.
+
+60
+00:18:40,928 --> 00:18:57,248
+Derslere katılmanız, devam etmeniz lazım. Benim de o derse devam durumlarını bir şekilde işlemem lazım. Sizin değerlendirme notlarınızı girmem lazım. Ondan sonra sistemin bir şekilde ortalama hesabı, çan eğrisi hesabı yapıp da harf notlarını vermesi lazım.
+
+61
+00:18:57,788 --> 00:19:07,408
+Sonrasında sizin harf notlarınızı dönem dönem toplayıp ağırlıklı not ortalamalarınızı hesaplaması ve ağırlıklı genel not ortalamanızı hesaplaması lazım.
+
+62
+00:19:07,908 --> 00:19:08,928
+Stajlarınızı takip edin.
+
+63
+00:19:08,928 --> 00:19:14,128
+Birilerinin staj bilgilerini buraya bilgi olarak, veri olarak girebiliyor olması lazım.
+
+64
+00:19:14,528 --> 00:19:25,488
+Ders, seçeceğiniz derslerin bile listelerinin, günlerinin, saatlerinin, sınıflarının birileri tarafından bu sisteme belirli modüllerle girilebiliyor olması lazım gibi.
+
+65
+00:19:25,668 --> 00:19:33,608
+Ne oluyor sonuçta? Sizin, bizim ve üniversitenin bütün işte öğrenci işleri ya da ders yönetim işlerinin yapılmasını sağlıyor.
+
+66
+00:19:33,608 --> 00:19:41,988
+Bu işlemleri yönetiyor, yürütüyor. Buna da bir işlemsel bilgi sistemi adını verebiliriz. İşte USIS ya da GESIS her neyse.
+
+67
+00:19:42,528 --> 00:19:47,088
+İlgisi de yine bu kademede, pembe kademede yer alan bilgi sistemi türlerinden.
+
+68
+00:19:48,588 --> 00:19:59,528
+Şimdi buradan biraz aslında ofis otomasyon sistemlerinin tam bir yeri yok, her yerde kullanılabiliyor ama genellikle şu seviyede, dediğim gibi pembe ve yeşil seviyeler arasında bunları...
+
+69
+00:20:00,019 --> 00:20:19,380
+gösteriyoruz. Burada bilgi seviyesindeki sistemlerden bahsediyoruz. Şimdi ne demek bu bilgi seviyesindeki sistemler? Bunlar aslında işlemsel seviyedeki sistemlerden yani işlemsel bilgi sistemlerinin ürettiği çıktılardan yararlanarak çalışıyorlar. Bir nevi böyle düşünebilirsiniz.
+
+70
+00:20:19,380 --> 00:20:27,519
+Şimdi ofis otomasyon sistemleri direkt olarak bu bir sistemlerden aslında tam olarak beslendiğini söyleyemeyiz.
+
+71
+00:20:28,019 --> 00:20:31,940
+Bunlar, çok beylik örnek vereyim, işte Microsoft Office uygulamaları.
+
+72
+00:20:32,256 --> 00:20:39,076
+Ya da ne bileyim, LibreOffice, OpenOffice gibi paketler halinde daha çok bulunuyor.
+
+73
+00:20:39,496 --> 00:20:44,456
+Ve gündelik ofis işlerinin yapılmasını, yürütülmesini sağlıyor.
+
+74
+00:20:44,516 --> 00:20:48,196
+Nedir? Kelime işlemcisi, elektronik takvim uygulamaları.
+
+75
+00:20:48,716 --> 00:20:56,536
+Artık günümüzde takvim uygulamaları biliyorsunuz e-postalarla, Zoom'la, orayla, burayla pek çok yerle entegre olarak çalışıyor.
+
+76
+00:21:00,256 --> 00:21:09,076
+Ne dersim var? Hangi toplantılarım var? Hangi proje görüşmelerim var? Gibi şeyleri mesela elektronik takvim uygulamasında görebiliyorum.
+
+77
+00:21:09,596 --> 00:21:21,256
+Ofis uygulaması genel olarak çok fazla beslenmiyor desek bile bu tarafıyla düşündüğünüzde pek çok farklı bilgi sisteminden de veri çekerek çalışıyor olabilirler.
+
+78
+00:21:23,392 --> 00:21:51,392
+Ofis otomasyon sistemleri hakkında çok daha fazla bir şey söylemeye gerek yok. Bilgi tabanlayış sistemlerine geldiğimizde yine bunlar da aslında işlemsel bilgi sistemleriyle bir arada çalışıyor diyebiliriz. Çok basit bir iki örneğini yeri geldiğinde vereceğim. İlgili slide geldiğinde vereceğim. Şu anda hepsine genel olarak bir bakıyorum. Hepsini birlikte anlatmaya gayret ediyorum. Bunlar da işte mesela sanal gerçeklik uygulamaları, simil.
+
+79
+00:21:51,392 --> 00:22:05,612
+Simülasyonlar nedir? Verileri alıyor mesela, üretim hattındaki verileri alıyor ve bir şekilde sizin ne kadar hatalı ürün ürettiğinizin tahminlemesi için böyle simülasyonlar yapabiliyorsunuz.
+
+80
+00:22:05,612 --> 00:22:14,692
+Ne yaptı? İşlemsel bilgi sistemlerinden veri toplayarak beslendi ve işte çeşitli simülasyonların yapılabilmesini sağladı.
+
+81
+00:22:15,112 --> 00:22:19,072
+Ya da bilgisayar destekli tasarım ya da üretimler, üretim sistemleri.
+
+82
+00:22:19,392 --> 00:22:47,392
+CAM dediğimiz sistemler. Bunlar da yine bilgi sistemlerinden bir şeyleri toplar. Örneğin siparişleri, hangi parçadan kaç tane üretmemiz gerekiyor? Onları gidip makinede üretilmesini sağlar. Özellikle torna falan gibi tezgahları düşünün. Üretim yapılan, parça üretimi yapılan şeyleri düşünün. Çok beylik bir örnek olduğu için bunu söylüyorum. Ne oldu? Değişik bilgi sistemlerinden aldığı verilerle üretimi gerçekleştirdi. Yani buradan yine beslendi.
+
+83
+00:22:47,392 --> 00:23:04,152
+Bilgi kullandı. Bu yüzden de bunlara bilgi tabanlı iş sistemi adını veriyoruz. Genel olarak CAD CAM sistemleri, simülatörler ya da sanal gerçeklik uygulamaları gibi sistemler, bilgi sistemleri burada BTIS olarak karşımıza çıkıyor.
+
+84
+00:23:07,796 --> 00:23:30,076
+Şimdi mavi kademeye böyle bir üst seviyeye çıkarsak eğer burası böyle işin mutfağı demiştik pembe yer. Burada fabrikanın üretim hattı da var, stok da var, satış da var, insan kaynakları, muhasebe böyle aklınıza gelen bütün departmanlarda birçok işlemsel bilgi sistemi hem bir arada hem de tekil olarak çalışabilir.
+
+85
+00:23:30,644 --> 00:23:58,644
+Bir üste geçtiğimizde biraz daha böyle bu işlerin işlemsel seviyedeki sistemleri de kullanarak hem iş yapılmasını hem de üretkenliğin sağlanmasını sağlayan sistemlerimiz var. Yani bilgi tabanlı iş sistemleri ve ofis otomasyon sistemleri burada karşımıza çıkıyor. Bir üste geçtiğimizde artık böyle ara kademeden sonra yönetim kademesine doğru geçiyoruz. Buradaki ilk yönetim kademesi aslında birimlerin yönetilmesini sağlayan orta kademe.
+
+86
+00:23:58,644 --> 00:24:01,644
+Orta seviye yönetim diyebileceğimiz bir kademe.
+
+87
+00:24:01,984 --> 00:24:06,564
+Buraya yönetim seviyesindeki sistemleri konumlandırıyoruz.
+
+88
+00:24:06,564 --> 00:24:09,564
+Yönetim seviyesindeki...
+
+89
+00:24:11,316 --> 00:24:22,635
+Sistemler deyince de karşımızda temel olarak iki tane bilgi sistemi türü var. Biri yönetim bilgi sistemleri. Hatta bunu belki şeyde üniversite tercihlerinizi yaparken görmüş bile olabilirsiniz.
+
+90
+00:24:22,635 --> 00:24:33,576
+Ben bunu biliyorum yönetim bilgi sistemleri diye bölüm vardı. İşte Boğaz içinde vardı gördüm ben onu falan. MIS diye bölümler vardı diye belki hatırlayabilirsiniz. Evet bunlar bizim için aslında.
+
+91
+00:24:34,259 --> 00:24:46,319
+Bir bilgi sistemi türüdür. Yani bütün bilgisayar mühendisliği ekosistemini düşündüğünüzde yönetim bilgi sistemleri aslında bir bilgi sistemidir ve bilgi sisteminin bir alt türüdür.
+
+92
+00:24:46,500 --> 00:24:55,279
+Yani bir çeşididir ve belirli bir amaca yöneliktir. Belli bir hizmeti sağlamaya çalışır. Yaptığı hizmette aslında yönetimi beslemek.
+
+93
+00:25:02,259 --> 00:25:05,419
+Bu işlerin yürütülebilir olmasını sağlamaktır.
+
+94
+00:25:05,419 --> 00:25:14,539
+Şimdi mesela analizler yapılabilir gibi ama bunda artık yönetim bilgi sisteminin biraz daha dışına çıkıyoruz.
+
+95
+00:25:14,799 --> 00:25:23,779
+Yani işin içine analizler, tahminlemeler falan girdiğinde biz artık yönetim bilgi sistemi değil karar destek sistemlerinden bahsediyoruz.
+
+96
+00:25:24,240 --> 00:25:27,699
+Bu da Decision Support Sistemi ama DDS diye yanlış yazmışız buraya.
+
+97
+00:25:28,199 --> 00:25:29,679
+DSS olacak bu tabii ki.
+
+98
+00:25:31,251 --> 00:25:43,392
+Şimdi hem yönetim bilgi sistemleri hem de karar destek sistemleri dediğim gibi ikisi de aslında orta kademe yönetim işlerinin yürütülmesini, işletilmesini sağlamak için çalışırlar.
+
+99
+00:25:43,892 --> 00:25:48,552
+Nereden de bilgi alacaklar? Tabii ki alt kademelerden de bilgi alacaklar.
+
+100
+00:25:48,552 --> 00:25:59,231
+Yani hem bütün işlemsel bilgi sistemlerini kullanabilirler hem de bilgi tabanlı iş sistemlerini de kullanabilirler ve buralardan aldıkları verilerle yönetimin bilgilenmesi.
+
+101
+00:25:59,251 --> 00:26:00,031
+...beni sağlarlar.
+
+102
+00:26:00,811 --> 00:26:02,892
+Dashboardlar, böyle hani...
+
+103
+00:26:02,892 --> 00:26:05,051
+...grafikler, ibreler...
+
+104
+00:26:05,051 --> 00:26:07,251
+...çubuk grafikleri, pay çartları...
+
+105
+00:26:07,771 --> 00:26:09,251
+...işte anlık...
+
+106
+00:26:09,251 --> 00:26:11,432
+...izleme ekranları gibi düşünebilirsiniz...
+
+107
+00:26:11,432 --> 00:26:13,432
+...bunları. Şu andaki, son bir haftadaki...
+
+108
+00:26:13,432 --> 00:26:15,251
+...siparişlerin gidişatı şu şekilde...
+
+109
+00:26:15,251 --> 00:26:17,251
+...ya da işte üretimdeki...
+
+110
+00:26:17,251 --> 00:26:19,051
+...fire artışı ya da...
+
+111
+00:26:19,051 --> 00:26:21,071
+...fire miktarı işte gün bazında...
+
+112
+00:26:21,071 --> 00:26:23,251
+...ya da saat bazında şu şekilde ilerliyor...
+
+113
+00:26:23,251 --> 00:26:25,351
+...gibi izlemelerin ya da işte...
+
+114
+00:26:25,351 --> 00:26:27,251
+...toplamda kullanılan izin...
+
+115
+00:26:27,251 --> 00:26:46,432
+Personelerin çalıştığı fazla mesai şu, toplam birim başına ya da kişi başına, çalışan başına verimlilik oranı şu gibi bütün alttaki verileri süzerek yönetimin istediği raporlar ya da gözlemler haline getiren sistemlere yönetim bilgisayar adını veriyoruz.
+
+116
+00:26:46,432 --> 00:26:55,251
+Peki karar destek sisteminin farkı ne? İşte burada artık bu verileri de kullanarak analizler yapılabiliyor. Hani mesela gidişat konusunda belki...
+
+117
+00:26:55,251 --> 00:27:17,172
+Belki tahminlemeler yapabiliyorsunuz. Ben böyle gidersem biliyorum ki mesela stoklarım 3 ay sonra eriyecek ya da bitecek. Neden? Çünkü ham madde gelmiyor, gitgide azalıyor. Ondan sonra siparişler böyle artmaya başlamış. O zaman ben orada bir yönetici olarak burada bu analizi yapınca benim kararıma bir destek olmuş olacak.
+
+118
+00:27:23,251 --> 00:27:32,832
+Yeni bir tedarikçi bulmaya çalışalım gibi kararlar vereceğim. Bu kararları vermem için de bana bu analizlerle buradaki bilgi sistemleri destek olacak.
+
+119
+00:27:33,052 --> 00:27:44,132
+İşte bu yüzden adı tam olarak karar destek sistemi olarak isimlendiriliyor. Maliyet olur, fiyat kar olur, üretim programlaması olur, satışlar olur, dediğim gibi stok tahminleri olur.
+
+120
+00:27:44,132 --> 00:27:51,251
+Bu konunun hepsinde, pek çok konuda, bunların dışında başka şeyler de olabilir, çalışan sistemlere karar vereceğiz.
+
+121
+00:27:51,251 --> 00:27:53,052
+destek sistemi adını veriyoruz.
+
+122
+00:27:54,211 --> 00:27:56,672
+Mesela şöyle bir şey olsa.
+
+123
+00:27:57,056 --> 00:28:12,736
+Yani, USİS'te mesela herkesin her dönem hangi dersin açıldığı, işte mesela BLM 2042 açılıyor, her sene bu dersi kaç öğrencinin aldığı, hangi not ortalamalarıyla geçtiği, bunların hepsi USİS'te var.
+
+124
+00:28:12,736 --> 00:28:24,976
+Yani çekilebilir ya da üretilebilir bilgiler. Bu bilgileri kullanarak örneğin şunu söylese, sen böyle gidersen, bir grafikle mesela bunu gösterse,
+
+125
+00:28:25,056 --> 00:28:39,536
+Üç sene sonra bu dersi alan toplam öğrenci sayısı 200'ü geçecek. Bu durumda benim artık bir aslında planlama yapmam lazım. Ben bu dersi iki grup değil, üç grup açmalıyım. Ne oldu? Bir karar vereceğim. Bu karar konusunda bana destek oluyor.
+
+126
+00:28:39,536 --> 00:28:52,756
+Hani sadece şey gibi işletme olarak düşünmeyin. Bir üniversitede ya da bambaşka bir ortamda da karar destek sistemleri ya da yönetim bilgi sistemleri çalışabilir. Mesela üniversiteyi yine düşünelim.
+
+127
+00:28:53,056 --> 00:29:14,256
+Şöyle, dekanların önünde ya da bölüm başkanlarının önünde böyle bir ekran olduğunu düşünün. Bütün derslerdeki devam durumlarını, başarı durumlarını, öğretim üyelerinin proje sayılarını ya da verdikleri ödev sayılarını, bunların hepsini izleyebilse mesela bu bir yönetim bilgi sistemi olur.
+
+128
+00:29:14,607 --> 00:29:31,768
+Ama bir yandan da bak mesela işte şu derslerde gidişat kötü, hani böyle devam ettirdiğimde burada başarının düşeceğini görüyorum gibi şeyler çıktılar üretiyorsanız, analizler yapıyorsanız o zaman da bu bir karar destek sistemi haline gelir.
+
+129
+00:29:32,248 --> 00:29:41,748
+Ama hani bir bilgi sistemin içinde farklı parçalar da tabii ki bunlar olabilir ama bir alt sistem olarak yine bunu türlere ayırabiliriz.
+
+130
+00:29:42,355 --> 00:30:00,000
+Mavi kademe de bu şekilde. Yani işin yönetim kademesine hitap eden bilgi sistemleri. Peki, turuncu kademede neler var? Yani en üstteki, en ufak gördüğümüz stratejik seviyedeki sistemlerde neler var? Burada aslında tek bir çeşit bilgi sistemi türündeki.
+
+131
+00:30:00,000 --> 00:30:17,819
+Bu da üst yönetim bilgi sistemleridir. Üst yönetim bilgi sistemleri böyle biraz daha şey gibi, holding patronu gibi düşünün tamam mı? Hani sizin böyle birçok işletmeniz olabilir, birçok biriminiz olabilir ya da karmaşık bir yapınız olabilir, bilmem ne grup olmuş olabilirsiniz.
+
+132
+00:30:17,819 --> 00:30:27,759
+Bir kere altta pek çok yerden besleneceksiniz, farklı yerlerden veriler gelecek size ve size çıkarımlar yapacak. Ne çıkarımları yapacak?
+
+133
+00:30:28,000 --> 00:30:45,199
+stratejik seviyede tahminler ya da kararlar almanızı sağlayacak, çıkarımlar yapacak. Bunun için diğerlerinden de farklı olarak, diğer bütün bilgi sistemi türlerinden de aslında biraz farklı olarak, üst yönetim bilgi sistemleri sadece kendi içinden beslenmez.
+
+134
+00:30:45,615 --> 00:31:13,556
+Yani alttaki bütün şeyleri kullanmaz. Dış sistemleri de kullanır. İşte örneğin borsayı takip eder. Örneğin dövizi bilmem neyi takip eder. Belki haberleri takip eder. Başka sektörleri belki onların verilerini ya da metriklerini de takip eder. Bunları da aslında harmanlar ve bu şekilde sizin stratejik olarak planlar yapmanıza yarayacak ya da burada size destek olacak çıktılar.
+
+135
+00:31:13,615 --> 00:31:28,615
+Mesela 5 yıllık bir satış planlaması ya da satış tahmini ya da biz şu şu ürünleri üretiyoruz ya da bu şekilde çalışıyoruz ama biz 5 yıl içinde ya da 10 yıl içinde her neyse şu dönüşümü yapmalıyız.
+
+136
+00:31:29,635 --> 00:31:41,556
+Artık şunları üretmeliyiz ya da şunlardan vazgeçmeliyiz gibi böyle stratejik çıktıları üretmemizi ya da kararları vermemizi sağlayacak çıktılar üreten sistemlere de.
+
+137
+00:31:41,615 --> 00:31:51,056
+Üst yönetim bilgi sistemi, Executive Information System adını veriyoruz. Burada da kimisini şey yazmışım.
+
+138
+00:31:52,276 --> 00:31:59,215
+İngilizce, bu da Türkçelerini yazmışım. Şurada karar destek sistemi olacak. Bu da decision support ile beraber karışmış.
+
+139
+00:31:59,715 --> 00:32:17,375
+Özetle, executive information systems, management information systems, decision support systems, knowledge based systems, office automation systems and transaction processing systems olarak bunları kategorize ediyoruz.
+
+140
+00:32:19,251 --> 00:32:21,251
+Gündelik hayatımızda aslında en çok...
+
+141
+00:32:34,867 --> 00:32:48,307
+En çok kullandığımız farkınız. Dediğim gibi o zaman iyi tabanlı iş sistemi olur. Yönetim kursunu ilgilendiriyorsa, çıkkılar üretiyor yönetime.
+
+142
+00:32:57,652 --> 00:33:04,251
+izlenmeyi ve yönetmeyi sağlayabiliyorsa,
+
+143
+00:33:21,971 --> 00:33:24,971
+Geri geldim sanıyorum arkadaşlar. Bir bağlantı koptu.
+
+144
+00:33:27,731 --> 00:33:29,072
+Şu an iyi hocam sizsiniz.
+
+145
+00:33:29,612 --> 00:33:35,852
+Tamam. Yok zoom kapandı da. Zoom kendi kendine çöktü. Maalesef. Kusura bakmayın.
+
+146
+00:33:37,072 --> 00:33:47,192
+Arada bir yaşıyoruz bunu. İkinci kere çökerse yalnız kendine gelemiyor. Haberiniz olsun. O zaman başka bir... Şey yapmayın. Bekleyin. Ben bir şekilde yeniden bağlanırım.
+
+147
+00:33:47,539 --> 00:33:50,360
+Arada bir ufak da olsa böyle sorunlar yaşayabiliyoruz.
+
+148
+00:33:50,867 --> 00:34:18,748
+Evet, nerede kaldık? Bu yönetim seviyesini söyledik. Yönetimin izlemesini ve işleri kontrol etmesini, yürütmesini sağlıyorsa yönetim bilgi sistemi, analizler yaparak ya da öngörülerde bulunarak destek oluyorsa karar vermeye, karar destek sistemi ve üst yönetimin stratejik kararları vermesini ve ileriye yönelik planlamalar yapmasını sağlıyorsa, dış sistemlerden, bambaşka kaynaklardan da beslenerek bunları destekliyorsa da
+
+149
+00:34:18,867 --> 00:34:22,427
+Üst yönetim bilgi sistemi adını veriyoruz bu sistemlere.
+
+150
+00:34:22,804 --> 00:34:38,804
+Dediğim gibi yine en çok buradayız. En çok kullanacaklarımız bunlar olacak. Bunlar genellikle daha özel sistemler. İşletmeye özel, in-house yani böyle işletme içindeki bilgi teknolojileri, grupları ya da işte yazılımcılar tarafından üretilen sistemlerdir.
+
+151
+00:34:39,724 --> 00:34:50,804
+Hani buralarda çok fazla böyle hazır uygulama ya da işte şey çözüm hani pazarda mevcut ya da satılabilir çözümler bulmanız biraz daha zor. Bunu tabii ki yaptırabilirsiniz.
+
+152
+00:34:50,804 --> 00:35:03,644
+Birilerine proje olarak da gerçekleştirebilirsiniz ama genellikle bunların işte büyük işletmelerde çalışmasından ötürü işletme içinde yaratıldıklarını, kullanıldıklarını söyleyebiliriz.
+
+153
+00:35:03,743 --> 00:35:08,743
+Yani buralar biraz daha böyle özelleştirilmiş sistemler olarak karşımıza çıkıyor.
+
+154
+00:35:10,867 --> 00:35:38,748
+Evet, aslında hepsinden bahsettik. Şimdi hepsinin slide'larını şöyle üzerinden bir daha bir geçelim, hatırlamış da olalım. İşlemsel bilgi sistemleri hep böyle bir input process output'u yine işletirler. Verileri toplarlar, veri girişi sağlarlar, verilerin hazırlanmasını ya da değiştirilmesini belki sağlarlar. İşlem olarak da bu verileri saklar, geri çağırır, sınıflar, sıralar, günceller, kullanır. Onlar üzerinde hesap yapar, işlem yapar.
+
+155
+00:35:38,867 --> 00:35:48,807
+Neyse, bu gibi işlemleri gerçekleştirir. Yani bizim işlerimizin bilgisayar sistemleri, bilgi sistemleri aracılığıyla gerçekleştirilebilmesini, yapılmasını sağlar.
+
+156
+00:35:48,807 --> 00:36:02,208
+Bunun için de tabii çıktılar üretir. İşte raporlar üretir, sorgu cevapları üretir, başka sistemlere girdi olacak şeyler üretir, çıktılar üretir. Belki de bir ürün bile ortaya çıkartabilir tabii ki işlemsel bilgi sistemi.
+
+157
+00:36:06,867 --> 00:36:07,367
+sistem.
+
+158
+00:36:07,860 --> 00:36:34,280
+Bu turnikelerde bastığınız kartlar var ya mesela az da olsa bastınız. Mesela onun kartın okunmasının sağlanması, sizin kim olduğunuzun geçebilir geçemez, buraya girebilir giremez şeklindeki kontrolün yapılması ve bu kontrol işlemi sonrasında turnikenin yeşil ışık yakarak kilidini açması ve sizin geçmenize izin vermesi.
+
+159
+00:36:35,860 --> 00:36:42,380
+Beklemesi, turnike döndüyse eğer bu içeri girdi diye artık sizi içerdi diye işaretlemesi ya da takip etmesi.
+
+160
+00:36:42,840 --> 00:36:46,360
+Mesela bir işlem ve girdisi de aslında kartın okunması.
+
+161
+00:36:46,760 --> 00:36:49,200
+Bunun dışında mesela aynısının çıkışı da var tabii.
+
+162
+00:36:49,619 --> 00:36:52,480
+Ne yapabilir? Raporlar üretebilir böyle bir sistem.
+
+163
+00:36:52,480 --> 00:37:03,860
+Hani mesela 16 Mart 2021 tarihinde sabah 8 ile akşam 17 arasında kaç kişi girdi, nereye girdi, kimler girdi, kaç kişi girdi.
+
+164
+00:37:03,860 --> 00:37:13,360
+Şu anda içeride kaç kişi var gibi böyle raporlar üretebilir, çıktılar üretebilir ve bunlarla da mesela bir yönetim bilgi sistemini besleyebilir.
+
+165
+00:37:14,228 --> 00:37:40,667
+Ya da bir karar destek sistemini besleyebilir. Bu şekilde sadece bir şeyleri kağıt üzerinden okuyan ya da verileri girdik, veri tabanına kaydettik, sonra da geri çağırdık değil. Gerçekten işlevsellik sağlayan sistemler de yine işlemsel bilgi sistemlerinde yer alabilir. Sadece yazılım değil, donanımsal bileşenlerle de doğal olarak etkileşime geçebilir bu sistemler.
+
+166
+00:37:42,260 --> 00:38:07,300
+Yönetim bilgi sistemlere de hızlıca bakacak olursak, bunu farklı boyutlarda tabii şey yapabiliriz, inceleyebiliriz daha detaylı. Biri işlem boyutu. Ne yapar? Dediğim gibi yöneticileri besler, yöneticilere raporlar, yöneticilere analizler, yöneticiler için karar desteği sağlar. Karar destek sistemi ise eğer. Bunlar için de doğal olarak aşağıdaki verileri ve aşağıdaki bilgi sisteminin ürettiği çıktıları kullanır.
+
+167
+00:38:07,664 --> 00:38:15,344
+Bir veri ambarı kullanabilir, veri tabanı kullanabilir. Bunların hepsinden faydalanabilir yönetim bilgi sistemleri.
+
+168
+00:38:17,231 --> 00:38:28,132
+Yönetim boyutundan baktığımızda da işlemleri kontrol etmek, kaynakları kontrollü paylaşmak, yani mesela dengeli dağıtmak kaynakları gibi işlemlerin yapılmasını sağlar.
+
+169
+00:38:28,132 --> 00:38:33,831
+Eğer bu bir üst yönetim bilgi sistemi ise de stratejik planlama ya da hedeflerin yapılmasını sağlar dedik.
+
+170
+00:38:35,051 --> 00:38:45,231
+Bir yönetim işlevi açısından baktığımızda da özellikle kurumsal açıdan bizim birimlerimiz arasındaki bilgi farklarının birleştirilmesini bir araya...
+
+171
+00:38:45,231 --> 00:38:55,431
+araya getirilmesini ve de yönetim katmanı ufaldıkça ya da genel müdür, CEO tarafına doğru gittikçe bunların birleştirilmesini sağlar yönetim bilgi sistemleri.
+
+172
+00:38:55,891 --> 00:39:02,192
+Ofis otomasyonundan bahsettik. Biro işlemlerinin, günlük ofis işlemlerinin yapılmasını sağlar dedik.
+
+173
+00:39:02,771 --> 00:39:09,571
+Word, Excel, PowerPoint. Bak PowerPoint şu anda sizin de karşınızda ders yapmamızı bile sağlıyor yeri geldiğinde.
+
+174
+00:39:10,311 --> 00:39:18,451
+Tablo, işte grafikler, elektronik post uygulamaları, bununla birlikte şey uygulamaları da tabii ki takvim uygulamaları da var.
+
+175
+00:39:18,451 --> 00:39:22,851
+Faks artık pek kalmadı şeyler haricinde sanıyorum.
+
+176
+00:39:23,219 --> 00:39:50,500
+Bu neydi? Türk Telekom, D-Smart, Digiturk gibi abonelik iptalini bin bir dereden su getirerek yapan, mutlaka faks çekmelisiniz falan diyen yerler haricinde faks günümüzde pek kalmadı. Elektronik belge geçer olarak da bilinir. Bir belgenin taranıp telefon hattı üzerinden başka bir cihazda, başka bir ortamda tekrar kağıda, termal bir kağıda basılması aslına bakarsanız. İşte bir zamanlar, 90'larda çok mudaydı.
+
+177
+00:39:51,891 --> 00:40:13,452
+İşte sunum programlarından bahsettik. Telekonferans, Zoom'da mesela aslında bir artık ofis otomasyon sistemi. Neden? Artık ofisler evlerde. İşte günümüzün getirdiği bir değişiklik. Çok hızlı bir sene içinde yaşadığımız bir değişiklik. Herkes işini neredeyse evden yapıyor. Biz de işte derslerimizi uzaktan yapıyoruz.
+
+178
+00:40:15,539 --> 00:40:21,420
+Bir şekilde bu işlemlerin yapılmasını, toplantı diye düşünün mesela, bir şirket toplantısı olduğunu düşünün.
+
+179
+00:40:21,819 --> 00:40:33,480
+Ofiste yapacağınız işlemlerin otomatik olarak ya da otomasyon sayesinde uzaktan da yapılmasını sanal olarak bir araya gelmeyi sağlayan sistemler yine burada yer alıyor.
+
+180
+00:40:35,519 --> 00:40:41,079
+Karar destekten yine bahsettik. Burada ekstra özel bir şey söylemek istiyorum.
+
+181
+00:40:41,523 --> 00:40:58,743
+Şimdi karar destek sistemleri ne dedik? Analizler, simülasyonlar yapar ve sizin kararlarınızı destekler. Şimdi bu aslında şöyle, analizi yapar, o işte şeyi yapar, simülasyonu yapar mesela fakat karar almaz aslında. Kararı siz verirsiniz.
+
+182
+00:41:00,275 --> 00:41:11,755
+Buradaki çıktılardan birini mesela seçmeye karar verebilirsiniz ya da buradaki çıktıları inceleyerek biz batıyoruz gibi bir şey karar, buna göre şöyle yapayım kararını siz verirsiniz.
+
+183
+00:41:12,244 --> 00:41:27,203
+Bunun yanında bir de uzman sistemler vardır. Şurada soru işaretiyle verdiğimiz kısım. Uzman sistemler de yine bir karar destek sistemi olarak görülür ve bu şekilde kategorize edilir ama uzman sistemler burada kararın işletilmesinden de sorumludur.
+
+184
+00:41:34,195 --> 00:41:41,436
+Fabrik örneği vermeyeyim, ev örneği vereyim. Mesela işte bu akıllı buzdolapları falan çıktı ya, şey yapıyor diye düşünün.
+
+185
+00:41:42,376 --> 00:41:55,836
+Rafı inceliyor, raftaki işte süt şişesindeki miktarı takip ediyor. Sizin günlük olarak ne kadar bunu hızlı azalttığınızı, bir hafta içindeki dalgalanmalarıyla birlikte nasıl gittiğini mesela takip ediyor.
+
+186
+00:41:56,224 --> 00:42:17,483
+Ve sonrasında mesela şey yapıyor, her çarşamba 1 litre süt sipariş et, her işte ne bileyim cumartesi günü 2 litre süt sipariş et gibi böyle direkt şey yapıyor. Hani internet üzerinden ya da bir yerlere bir şekilde süt gönder diye şey yapıyor. Çıktı üretiyor, karar veriyor ve bu kararın sonucunu uyguluyor.
+
+187
+00:42:24,224 --> 00:42:35,423
+tedarikçilerin bilgi sistemlerine yeni şu kadar, ne bileyim 10 ton bilmem ne maddesinden, 20 ton bilmem ne maddesinden bana bir hafta içinde gönder diye sipariş oluşturuyor.
+
+188
+00:42:35,764 --> 00:42:52,384
+Bunları kendisi yapıyorsa bir uzman sistemdir. Ama bunların yapılmasını sadece gözlemleyip bırakıyorsa ve kararı siz veriyorsanız, yani işisiz yapıyorsanız, yok ya ben bunu yapmak istemiyorum deyip bırakıyorsanız, o zaman da bu bir karar destek sistemi olarak karşımıza çıkıyor.
+
+189
+00:42:54,483 --> 00:43:08,244
+Üst yönetim bilgi sistemlerinde stratejik seviyede olduğunu söyledik. Burada ekstra olarak şunu söyleyebiliriz. İşletme dışı, işletme içi ve alttaki bütün yönetim bilgi sistemi karar destek sistemlerinden de bilgi aldığını söyledik.
+
+190
+00:43:09,583 --> 00:43:13,244
+Üst yönetim bilgi sistemlerinde özel olarak veri madenciliği,
+
+191
+00:43:14,324 --> 00:43:26,864
+Olap uygulamaları, drill down analizleri gibi şeyler ya da günümüzde daha popüler olan tahminleme, derin öğrenme, makine öğrenmesi gibi teknikler burada sıklıkla kullanılır.
+
+192
+00:43:27,344 --> 00:43:42,203
+Bunlar biraz daha işin içine bilimsel yapay zekayı da katarak aslında yönetim ya da karar destek sistemlerinden farklı olarak stratejik kararların verilmesine destek olmaya gayret eder.
+
+193
+00:43:42,324 --> 00:43:52,263
+Bunu da, hepsinin ne olduğunu söyledik ama ilave olarak bunu da notunu düşmemiz gerekir. Üst yönetim bilgi sistemleriyle ilgili olarak.
+
+194
+00:43:53,396 --> 00:44:01,596
+Bilgi tabanlı iş sistemleri de dediğimiz gibi işlemsel bilgi sistemlerinin sonuçlarını alır, bunları işe dönüştürür.
+
+195
+00:44:01,596 --> 00:44:10,876
+İşte CAT CAM üretim sistemlerinden bahsettik. MR sistemleri bu. Mesela hastane bilgi sisteminden ya da hasta bilgilerinden bir şeyler alıp.
+
+196
+00:44:11,251 --> 00:44:28,472
+MR konusunda, MR çekilmesi ya da işte bu manyetik şey nedir, elektronik görüntüleme sistemleri var ya tıpta kullanılan. Bunların işte neresi hastanın mesela bacağı mı, kolu mu MR çekilecek? Ona göre işte kaç bilmem ne radyasyon verilecek, verilmeyecek atıyorum şu anda radyasyonu da.
+
+197
+00:44:29,952 --> 00:44:36,852
+Makinenin ayarlarının yapılmasını sağlayacak falan gibi düşünün. Bunların yapılmasını sağlıyor aldığı hasta verileriyle.
+
+198
+00:44:37,072 --> 00:44:48,811
+İşte benim kafama mı MR'ı çekilecek, bacağımın mı çekilecek, özel olarak belli bir şeyinin mi çekilmesi, belli bir açıdan mı çekilmesi gerekiyor gibi şeyleri bilgi sisteminden alır, hasta bilgi sisteminden.
+
+199
+00:44:49,291 --> 00:44:55,572
+Ondan sonra ona göre makinede bu işin mesela görüntüleme cihazında düzgün bir şekilde işletilmesini sağlar.
+
+200
+00:44:56,211 --> 00:45:01,311
+Alıp bir şeyleri çalıştırıyor ya da alıp bir şeyleri ürettiriyor gibi düşünebilirsiniz bu sistemleri.
+
+201
+00:45:03,092 --> 00:45:29,452
+Temel bir tablo haline getirecek olursak da, işte kim ne alıyor? Üst yönetim bilgi sistemleri, Executive Information Systems, içeriden ve dışarıdan besleniyor. Grafikler, simülasyonlar, etkileşimli analizler ve makine öğrenmesi yöntemlerini kullanıyor. Çıktığı olarak da bunları görsel ya da sorgu cevapları halinde sunuyor ve üst yönetim bunları kullanıyor.
+
+202
+00:45:31,092 --> 00:45:33,092
+Yönetim bilgi sistemidir.
+
+203
+00:45:33,092 --> 00:45:36,192
+Tam böyle analitik uygulamalar yönetim bilgi sistemidir.
+
+204
+00:45:36,412 --> 00:45:40,291
+Dediğim gibi dashboardlar falan direkt olarak bir yönetim bilgi sistemidir.
+
+205
+00:45:40,992 --> 00:45:44,512
+Yine burada analizler yapılabilir ya da simülasyonlar yapılabilir.
+
+206
+00:45:45,556 --> 00:45:59,416
+Sorgu yine cevabı. Burada da uzman ya da yöneticiler kullanır. Yönetim bilgi sistemlerini söyledik. Bilgi tabanlı sistemlerini uzmanlar ve teknik personel kullanır dedik. Hani bir ara kademeyi de hatırlarsanız.
+
+207
+00:45:59,416 --> 00:46:13,056
+Ofis otomasyon sistemini neredeyse herkes kullanır ama hani sekreter, muhasebeci, alt kademe yönetici daha çok kullanır. Rapor, mapor bir şeyler ürettiği için ya da analizleri belki tablolaştırdığı için.
+
+208
+00:46:14,228 --> 00:46:23,967
+Burayı da personel kullanır, işletim personeli yani çalışan personel işlemsel bilgi sistemlerini, Transaction Processing Systemları kullanır.
+
+209
+00:46:23,967 --> 00:46:34,648
+Burada da olaylar, işlemler, maddeler, her şey veriler girdi olarak kullanılır. İşlemlerden genel olarak bahsettik.
+
+210
+00:46:35,027 --> 00:46:47,367
+Çıktıları da rapor olabilir, liste olabilir, özet olabilir, iş olabilir ya da başka bir sistemin tetiklenmesi için gerekli veriler olabilir. Bu gibi işlenerek oluşturulan çıktıları üretir bu sistemler.
+
+211
+00:46:52,947 --> 00:47:09,127
+Özel olarak başka bir şey değinmeye gerekliyle, mademki işte bu çeşitler var dedik, 6 çeşit var dedik, 6 çeşit acaba birbirleriyle nasıl iletişim halindedir? Yani kim kimden beslenir? Ona bakabiliriz.
+
+212
+00:47:09,876 --> 00:47:26,276
+Burada 6 çeşit dedim ama 5 tane halka görüyorsunuz. Neden? Çünkü bilgi tabanlayış sistemleri ve ofis otomasyon sistemleri hep birlikte bilgi sistemleri diye böyle özetledik. İkisini birleştirdiğimiz, bir tane daha aynısından koymak istemedik.
+
+213
+00:47:26,276 --> 00:47:35,656
+Şimdi şey vermiyor gördüğünüz gibi. Hani sadece üst yönetim bunu kullanıyor ama alttan besleniyor ve de tabii göstermedik ama dışarıdan besleniyor demiştik.
+
+214
+00:47:36,115 --> 00:48:02,375
+Yönetim bilgi sistemleri nereden bilgi alıyor? Alttaki her şeyden bilgi tabanlı iş sistemleri, ofis otomasyon sistemleri ve işlemsel bilgi sistemlerinden veri alıyor. Peki başka neleri besleyebilir? Buradaki yönetim bilgi sistemi mesela şuradan bilgi tabanlı iş sistemini bir çıktı belki üretebilir olur neden olması. Ya da bir ofis otomasyon sistemi uygulamasına bir çıktı üretebilir bu da olur.
+
+215
+00:48:02,751 --> 00:48:07,371
+Ve tabii ki üst yönetimi besler demiştik. Yani şu ve şu çıktılarıdır.
+
+216
+00:48:08,152 --> 00:48:13,032
+Karar destek sistemine geldiğimizde bu yine kendi tabii orta kademe kullanıcılarına hitap ediyor.
+
+217
+00:48:13,032 --> 00:48:22,491
+Bunun dışında üst yönetimi besliyor. Çalışmak için de alttakilerden ve aynı zamanda yönetim bilgi sistemi işte analitiklerinden.
+
+218
+00:48:22,864 --> 00:48:35,543
+Oradaki izlenen raporlardan da beslenmesi gerekiyor. Yani buradaki üç tane ok giriyor ama çıktısı sadece üst üyünün bilgi sistemine doğru hizmet sunuyorsa eğer buraya doğru bir çıktı üretiyor.
+
+219
+00:48:37,143 --> 00:48:46,543
+İşlemsel bilgi sistemlerine geldiğimizde bu garibim diyeyim ya da gariplerim çalışan emekçi sistemler.
+
+220
+00:48:47,603 --> 00:49:06,263
+Bunlar emek harcıyorlar ve herkesi besliyorlar gördüğünüz gibi. Buna da çıktı üretiyor, buna da çıktı üretiyor, buna da çıktı üretiyor. Buraya da aslında çıktı üretiyor ama sonuçta şunların üzerinden gittiği için burada ayrı bir ok, direkt olarak holding patronuna konuşmuyor gibi göstersek daha doğru olur.
+
+221
+00:49:06,867 --> 00:49:25,487
+Bilgi tabanlı iş sistemleri, ofis otomasyon sistemleri de yine üst tarafı, üst kademeyi besliyorlar ve çalışmak için dediğim gibi işlemsel bilgi sistemlerinden girdi, bekliyorlar ki bu şekilde işlevlerini yerine getirebilsinler.
+
+222
+00:49:25,487 --> 00:49:30,327
+Bu şekilde bilgi sistemlerini kategorize edebiliriz.
+
+223
+00:49:33,043 --> 00:49:58,043
+Bilgi sistemi türleri bu kadar. Ne işe yaradı? Biz bunları bu kadar ayırdık. Niye ayırdık? Dediğim gibi hepsinin aslında girdi, işlem çıktı sıralamasında yaptıkları ve amaçları birbirinden farklı. Hedef kitleleri birbirinden farklı. Yani hizmet ettikleri uçlar birbirinden farklı. Bu yüzden aslında bunları kategorize ediyoruz.
+
+224
+00:50:00,000 --> 00:50:08,019
+Bunların hepsi birer bilgi sistemi ama sadece daha özel hallerini, işte bu şunları şunları yapıyorsa işlemsel bilgi sistemidir.
+
+225
+00:50:08,400 --> 00:50:11,240
+Ya da bu şekilde çalışıyorsa bilgi tabanlı iş sistemidir.
+
+226
+00:50:12,211 --> 00:50:22,391
+Çıktısını şu şekilde şunlara veriyorsa ve şunlardan besleniyorsa bu tip çalışan sistemlere biz yönetim bilgi sistemi adını veriyoruz diyoruz mesela.
+
+227
+00:50:22,891 --> 00:50:31,791
+Ya da işte karar destek sistemi ya da uzman sistem adını veriyoruz. Bu şekilde bilgi sistemlerini kategorize edebiliriz.
+
+228
+00:50:32,531 --> 00:50:36,071
+Şimdi bilgi sistemi türleriyle ilgili sorunuz var mı?
+
+229
+00:50:45,043 --> 00:50:46,963
+Var mı, yok mu, yok.
+
+230
+00:50:47,463 --> 00:50:48,324
+Yok, ok.
+
+231
+00:50:49,063 --> 00:50:50,123
+Tamam, ok.
+
+232
+00:50:51,304 --> 00:50:59,324
+Şimdi ikinci olarak bilgi sisteminin tarafları deyince ne anlamalıyız?
+
+233
+00:50:59,403 --> 00:51:07,143
+Bunlar kimlerdir? Ne iş yaparlar? Niye varlar? Ne gibi özellikler vardır? Bunların ne özellikleri vardır?
+
+234
+00:51:07,143 --> 00:51:11,324
+Ve tam olarak ne yaparlar? Biraz bunları incelemeye başlayalım.
+
+235
+00:51:11,603 --> 00:51:25,663
+İlk olarak bilgi sistemi taraflarında toplamda alt dallanmaları olacak ama 6 çeşit bilgi sistemi tarafı vardır. Yani bunları da 6 kategoriye ayırabiliriz.
+
+236
+00:51:26,243 --> 00:51:31,123
+Birinci bilgi sistemin ilk tarafı yani paydaşı diyelim ya da kullanıcıdır.
+
+237
+00:51:31,603 --> 00:51:50,763
+Bu müşteri olacak aslına bakarsanız biraz sonra da. İkincisi yöneticilerdir. Bunların da bir iki çeşidi var. Onların farklarından bahsedeceğiz. Üçüncüsü sistem analistidir ya da sistem analistleridir. Bunları da kendi içindekiye bölebiliriz. Konuşacağız, tartışacağız özellikleriyle birlikte.
+
+238
+00:51:51,599 --> 00:52:10,539
+Bir diğeri, dördüncü kategori, sistem tasarımcılarıdır. Madem ki sistem analizi ve tasarımı diyoruz, demek ki analizini yapanlar olduğuna göre tasarım yapanların da olması bekleniyor. Buradaki tasarım deyince hangi tasarımlar var, her bir tasarımı kim yapar ya da bunların ünvanı nedir, bunlara bakacağız.
+
+239
+00:52:10,992 --> 00:52:38,212
+Beşinci başlığımız, beşinci kategorimiz yazılımcılar olacak. Yazılımcı deyince de yine neler var içinde, neleri kapsıyor bunlara bakacağız. Ve son olarak altıncı başlığımız, altıncı kategorimiz destek personeli. Bir bilgi sistemini destekleyen kişiler kimlerdir? Nasıl bir destek veriyorlar ve omuz mu atıyorlar bilgi sistemine sağdan soldan? Ona bakacağız. Bu şekilde bilgi sisteminin taraflarını da öğrenmiş olacağız.
+
+240
+00:52:38,992 --> 00:53:00,732
+Burada yine bir kategorize edeceğiz. Saat şey oldu, 13.51. Şimdi kısa bir ara vereyim, bir 10 dakika. Saat 14'te tekrar görüşürüz. Çok konuşunca boğazım ağrıyor, bir şeyler içeyim ben de. Yani derste içiyorum ama yeterli gelmedi. Biraz dinleneyim. 10 dakika sonra görüşürüz. Saat 2'de.
+
+241
+01:01:50,708 --> 01:01:59,568
+Evet arkadaşlar, aradan sonra tekrar birlikteyiz ve bilgi sisteminin taraflarını şimdi teker teker tanımaya başlayalım.
+
+242
+01:02:01,396 --> 01:02:17,976
+İlk bilgi sistemi tarafımız, paydaşımız diyelim paydaş aslında daha da doğru bir kelime olur. Kullanıcı. Kimdir kullanıcı? Aslında sistemin varoluş sebebidir. Yani aslında sistemin bu açıdan baktığınızda en önemli parçasıdır.
+
+243
+01:02:18,236 --> 01:02:27,724
+Kullanıcı yoksa ya da bir diğer de işte müşteri yoksa, isteyen yoksa o zaman zaten bilgi sistemi de yok demektir. Bu sistemin olma...
+
+244
+01:02:27,795 --> 01:02:30,675
+Pardon, olmasının bir amacı yok demektir.
+
+245
+01:02:31,775 --> 01:02:43,855
+Şimdi bir kullanıcı sistemi gözlerken ya da sisteme bakarken biraz daha böyle kapalı kutu ya da kara kutu şeklinde bekler,
+
+246
+01:02:43,976 --> 01:02:49,615
+beklentileri ya da çalışma şeklini bu şekilde izlenmesini esas olarak gerçekleştirir.
+
+247
+01:02:51,076 --> 01:02:52,615
+Tekniğin ne olduğu ile...
+
+248
+01:02:53,103 --> 01:03:12,103
+Çok da fazla aslında genellikle ilgilenmez. Yani siz bir işin, işlevin ve sistemin kullanımının ne olacağını, nasıl olacağını kullanıcı olarak beklersiniz. İçeride o işi nasıl yaptığıyla, hangi atıyorum...
+
+249
+01:03:12,532 --> 01:03:22,012
+Programlama dilinin kullanıldığı, hangi versiyonunun kullanıldığı, hangi kütüphanelerin kullanıldığıyla açıkçası çok da fazla ilgilenmez.
+
+250
+01:03:22,132 --> 01:03:30,731
+Çünkü kullanıcı için önemli olan işlevsellik, yani kullanım tarzı ya da kullanım olanaklarıdır sistem açısından.
+
+251
+01:03:30,731 --> 01:03:40,512
+Ve tabii ki siz kullanıcıya tam olarak ben bunu yaptım, isteklerini yerine getirdim ya da senin beklentilerini karşılayan sistem.
+
+252
+01:03:40,532 --> 01:03:47,912
+Sistem budur diyebilmeniz için mutlaka başarı kriterlerinizin de önceden tespit edilmiş edilebiliyor olması lazım.
+
+253
+01:03:48,492 --> 01:03:58,292
+Yani sistem ne zaman ya da nasıl başarıya ulaşacak? Bu sistem hangi durumda ya da hangi şartlar altında başarılıdır diyeceğiz ya da değildir diyeceğiz.
+
+254
+01:03:58,292 --> 01:04:05,132
+Bu sistem başarılı çalışmıyordur diyeceğiz, başarısızdır diyeceğiz. Bunların mutlaka daha en baştan...
+
+255
+01:04:05,427 --> 01:04:18,228
+tespit edilmeleri gerekir ve önemlidir. Bir yandan da bununla birlikte bir müşterinin ya da bir kullanıcı tarafının paydaşının, kullanıcı rolünün sistemimizden
+
+256
+01:04:18,512 --> 01:04:26,831
+Bilgi sistemimizden olan beklentilerinin tam olarak belirlenmiş olması da mutlaka önemlidir.
+
+257
+01:04:27,572 --> 01:04:43,271
+Bu belirlenmemişse, yani beklentiler başta tam olarak kesinleştirilmemişse, o zaman sizin geliştirme sürecinde oldukça sıkıntılı zamanlarınız ya da sancılı süreçleriniz olacağını daha en baştan söyleyebiliriz.
+
+258
+01:04:46,512 --> 01:05:12,231
+İsteklerle başa çıkmak, bunları karşılamak oldukça zordur ve sürekli olarak da bunlar değişiyorsa ya da tam olarak anlatılamamışsa sizin analiz modelinizin ya da sizin tasarım modelinizin düzgün olmamasına, sürekli değişmesine ve bu da kalitesiz bir ürünün ortaya çıkmasına sebep olacaktır.
+
+259
+01:05:14,099 --> 01:05:14,980
+Evet.
+
+260
+01:05:15,539 --> 01:05:28,680
+Siz benim için çalışacaksınız, siz benim için bilgi sistemini gerçekleştireceksiniz dese bile tam olarak ne beklediğini, ne istediğini açıklayabilmeli, bunları aktarabilmeli.
+
+261
+01:05:29,220 --> 01:05:39,099
+Hangi durumda sistem başarılıdır, hangi durumda başarısızdır bunları baştan net ya da kesin bir şekilde ifade edebilmeli.
+
+262
+01:05:43,539 --> 01:05:51,280
+Sistemin çok fazla ilgilenmez ama tam olarak ne yaptığıyla ve nasıl kullanıldığıyla daha fazla ilgilenir buradaki paydaş.
+
+263
+01:05:52,200 --> 01:05:59,860
+Ama tabii ki dediğimiz gibi sistemin en önemli parçası da aslında bir bakıma ve varoluş sebebi olduğu için buradaki kullanıcıdır.
+
+264
+01:06:03,860 --> 01:06:09,800
+İkinci paydaşımız yönetici. Kim bu yönetici? Aslında iki çeşit yönetici vardır.
+
+265
+01:06:10,228 --> 01:06:19,307
+Şimdi birincisi, biraz önce bilgi sistemi türlerini de izlerken, öğrenirken ya da bunları incelerken zaten görmüştük.
+
+266
+01:06:19,668 --> 01:06:30,228
+Üst düzey yöneticiler. Kimdir bu üst düzey yöneticiler? Aslında bize kaynak sağlayan ya da paraları, proje bütçesini finanse eden taraf diyebiliriz.
+
+267
+01:06:30,807 --> 01:06:34,987
+Sistemin geliştirmesi için gerekli bütün kaynakları üst düzey yönetici sağlar.
+
+268
+01:06:34,987 --> 01:06:37,987
+Üst düzey yönetici sisteme baktığında neye baktığında?
+
+269
+01:06:38,228 --> 01:06:53,288
+Maliyet fayda analizine bakar. Yani fiyat performans dengesine bakar. Ben ne kadar kaynak ayırıyorum ya da ne kadar para harcıyorum, ne kadar zaman, ne kadar iş gücü harcıyorum ve bunun karşısında ne alıyorum? Yani bana bu bilgi sisteminin getirisi nedir?
+
+270
+01:06:53,715 --> 01:07:02,415
+Verim mi arttıracak, karımı mı arttıracak, işlem süresini mi kısaltacak, müşteri sayısını mı arttıracak, bunları yapacaksa da ne kadar yapacak?
+
+271
+01:07:03,355 --> 01:07:12,195
+Yani hani attığım taş, ürküttüğüm kuşa değecek mi, değmeyecek mi analizini yapar. Maliyet fayda analizi üst düzey yönetici rolü için önemlidir.
+
+272
+01:07:12,884 --> 01:07:32,884
+Bir diğer yönetici rolü ise bizim artık böyle daha aramızda olan, sistem geliştiren takımın içinde ya da başında yer alan kişidir. Bu kişiye de proje yöneticisi adını veririz. Proje yöneticisi bizim yürütücümüzdür. Projenin başarıya ulaşmasından sorumludur.
+
+273
+01:07:33,300 --> 01:07:40,020
+Kullanıcının başarılıdır diyebileceği bir ürünün, bir hizmetin sunulmasından, geliştirilmesinden birebir sorumludur.
+
+274
+01:07:40,980 --> 01:07:45,040
+Kelle gidecekse ilk önce bu yöneticinin kellesinin gitmesi gerekir.
+
+275
+01:07:46,060 --> 01:07:49,540
+Tabii bizde ülkemizde pek böyle olmuyor biliyorsunuz.
+
+276
+01:07:49,600 --> 01:07:54,120
+Yönetici yerine at kademinin harcanması daha revaçta olabiliyor.
+
+277
+01:07:54,800 --> 01:07:57,620
+Bilgi sistemleri geliştirme sürecinde de çok farklı olmayabilir.
+
+278
+01:07:58,280 --> 01:08:01,180
+Kabak genelde şeyin başına patlar.
+
+279
+01:08:01,300 --> 01:08:03,220
+En alt kademedekinin başına patlar.
+
+280
+01:08:04,300 --> 01:08:05,920
+Peki proje yöneticisi ne yapar?
+
+281
+01:08:06,100 --> 01:08:09,580
+Proje ekibini ya da ekiplerini, tek bir ekip olmak zorunda değil.
+
+282
+01:08:11,920 --> 01:08:13,620
+Bunların sevk ve idaresini sağlar.
+
+283
+01:08:13,620 --> 01:08:23,440
+Yani yönetilmesini, işletilmesini, işlerin takibini, her şeyin düzgün şekilde yürütülmesini ve istenenlerin yerine getirilebilmesini sağlar.
+
+284
+01:08:23,828 --> 01:08:35,088
+Bu rol, yani proje yöneticisi gözüyle bilgi sistemine baktığımızda da en önemli şeyler bir işlev, işlevsellik ve plan.
+
+285
+01:08:35,508 --> 01:08:43,688
+Plana uygunluk, hem zaman planına, hem para planına, nakit akışına ya da başka kriterlerimiz varsa planlanmış.
+
+286
+01:08:43,688 --> 01:08:51,768
+Bu planla uygun olarak sürecin işletilmesi ve sonuçta sistemin ortaya çıkartılması proje yöneticisinin.
+
+287
+01:08:51,828 --> 01:08:57,788
+Bakış açısıyla gözlemlediği ya da değer verdiği taraflarıdır bir bilgi sisteminin.
+
+288
+01:08:58,728 --> 01:09:08,208
+Özetle iki çeşit yöneticiden de bahsedebiliriz. Bir patron, iki proje yöneticisi, ekip lideri ya da öyle söyleyeyim.
+
+289
+01:09:09,716 --> 01:09:33,496
+Şimdi geldik üçüncü kullanıcı tipimize. Üçüncü kullanıcı tipimiz sistem analizleri. Sistem analizi ve tasarımı dediğimize göre, dersin başında da sistem analiziyle başladığımıza göre lafa. Demek ki bu bizim aslında dersimizin odak noktası ve hem bütün bilgi sistemi projelerinin hem de bizim ders kapsamında yapacağımız projenin de aslında kilit üyesidir.
+
+290
+01:09:37,716 --> 01:09:51,435
+Aslında baktığınızda böyle farklı mühendislik dallarından ya da matematik mühendisliğinden gelen mezunların daha fazla yaptığı işler olarak görülür. Bilgisayar mühendisleri sistem analizliğini biraz böyle hafif olarak görürler.
+
+291
+01:09:51,435 --> 01:09:59,435
+Ama aslında şöyle bir gerçek vardır. Yükselen, yönetici tarafa doğru gitmesi en olası olan rollerde.
+
+292
+01:10:00,051 --> 01:10:07,031
+Sistem analistleri rolleridir ya da işte bu şekilde çalışan rollerdir. Bunun da bir sebebi var.
+
+293
+01:10:07,667 --> 01:10:35,407
+Sebebi şu, siz bir sistem analisti olarak aslında bir tercümansınız. Yani bir tercümanlık hizmeti veriyorsunuz bilgi sisteminizde ekibinize karşı. Ne demek bu? Şimdi bir tarafta müşteri var ya da kullanıcı var, kullanıcı rolü var, onu gördük zaten. Bir tarafta da teknik ekip var, böyle işte hani analistler var, ondan sonra tasarımcılar var, yazılımcılar var, test ekibi var, hatta destek personeli bile bir yere kadar var.
+
+294
+01:10:35,667 --> 01:10:48,768
+Bir taraf, terazinin bir tarafı iş tarafı, business tarafı diyeyim. Terazinin diğer kefesinde ise oturanlar da şey, teknik elemanlar.
+
+295
+01:10:49,872 --> 01:11:16,032
+Bir sistem analisti aslında bu iki grup arasındaki dil dönüşümünü, konuşma ve işlev dönüşümünü yapmakla sorumludur. Temel işi budur aslında. Bu nedenle de iki tarafın da dilinden anlaması gerekir. Yani hem işletme yönetimi biliyor olması lazım, işin nasıl yapıldığını biliyor olması lazım, bilmiyorsa bile öğrenebiliyor olması lazım. Bu açık gözlük özelliğe sahip olması lazım.
+
+296
+01:11:17,872 --> 01:11:35,452
+Yani işin teknik dilini de bilmeli, bu detaylarını da bilmeli, teknolojileri de bilmeli, hangisinin olup hangisinin olmayacağını, hangi durumda, hangi ortamda neyin kullanılıp kullanılmayacağını ya da hangi çözümün daha doğru olabileceğini analizini yapabilmesi gerekli.
+
+297
+01:11:36,307 --> 01:11:48,747
+İşletmenin nasıl çalıştığını, sorunlarının neler olduğunu, neye ihtiyacı olduğunu, hani kullanıcı tam olarak işlevselliği belirlemelidir dedik ya, tam olarak her zaman kendisi başına söyleyemez.
+
+298
+01:11:48,747 --> 01:12:04,307
+Sistem analisti bunların ortaya çıkartılması için de böyle ne derler bir katalizör mü diyeyim, hani bir görev alarak hızlandırır ya da bu işi kolaylaştırır ve ihtiyaçların net bir şekilde ortaya çıkartılmasında yine çok önemli bir destek sağlar.
+
+299
+01:12:04,307 --> 01:12:32,307
+Bir yandan da iş akışlarını da belirleyebilmeli. İş akışı aslında bütün bilgi sistemlerindeki akışlarında özeti ya da kökünü oluşturur, temelini oluşturur diyebiliriz. Çünkü gerçek hayatta işler nasıl işliyorsa bilgisayar ortamında da aynı şekilde işlemeleri beklenir. Çünkü oradaki çözüm bilgisayara taşınmış olacak aslında. Hızlandırılacak, kalitesi arttırılacak, doğruluğu arttırılacak gibi artılarıyla birlikte bilgisayar ortamında da bir şey.
+
+300
+01:12:32,307 --> 01:12:39,087
+Bu nedenle iş akışlarını da mutlaka düzgün bir şekilde sistem analizinin belirleyebiliyor olması lazım.
+
+301
+01:12:39,539 --> 01:13:07,539
+Ve bunlarla birlikte işi anladı, iş akışını anladı, ihtiyaçları anladı, işin nasıl yapıldığını anladı, sorunları da öğrendi. Şimdi artık bunları kafasında hani süzüp, analizini gerçekleştirip bir bilgi sistemi çözümü haline getirebilmeli. Yani bu iş için şunlara ihtiyaç var, şunlar yapılmalı, şunlar okunmalı, şunlar hizmet olarak alınmalı, şöyle olmalı, böyle olmalı, şu iş vardır, bu iş vardır, şu gereksinimler.
+
+302
+01:13:07,539 --> 01:13:20,139
+Bunlar ortaya koyulmuştur. Bunlarla birlikte şunların yapılması da gerekmektedir gibi bunların hepsini ortaya çıkartabilmesi ve bunları teknik ekibin anlayacağı dile dönüştürebilmesi gereklidir.
+
+303
+01:13:20,479 --> 01:13:31,059
+Yani şöyle yapacaksınız. Bu iş aslında şu demek. Yani şöyle kayıtlar oluşturmamız gerekiyor. Bu kayıtları şu şekilde güncellememiz gerekiyor gibi dönüşümü de yine sistem analizinin yapması gerekecek.
+
+304
+01:13:32,115 --> 01:13:49,595
+Ya da tek cümle, özetle buradaki son cümleyi okuyabiliriz. Bir problemi görüp anlamalı, anlayabilmeli ve çözüm için gerekli bilgi sisteminde bir metodolojiye, seçilen ya da istenen metodolojiye uygun olarak oluşturabilmesi gerekiyor.
+
+305
+01:13:50,336 --> 01:14:00,056
+Dediğim gibi, çok fazla iş tarafı da olduğu için bilgisayar mühendisliği açısından biraz böyle konu dışı ya da alan dışı ya da alanı destekleyen bir aktivite olarak görünür.
+
+306
+01:14:00,115 --> 01:14:05,935
+Biz direkt böyle o kütüphaneler, API'ler, programlama dilleri, kodlar havada uçlusunu severiz.
+
+307
+01:14:06,416 --> 01:14:08,775
+Algoritma tasarlayalım, öyle yapalım, böyle yapalım.
+
+308
+01:14:08,775 --> 01:14:16,015
+İşte bilmem ne verisini şöyle saklayalım, oradan dönüştürelim, bilmem ne servisiyle şöyle konuşalım, onu yapalım, bunu yapalım.
+
+309
+01:14:16,536 --> 01:14:17,775
+Evet, çok güzel zevkli işler ama...
+
+310
+01:14:18,463 --> 01:14:35,744
+Bütün bunların çalışabilmesi ya da işleyebilmesi için iş olması lazım. İşin de bir şekilde anlaşılabiliyor olması, aktarılabiliyor olması, problemin anlaşılabiliyor olması lazım. O yüzden sistem analisti buradaki anlama ve dönüşüm işinden sorumlu. Bir analistin problem çözüm yöntemine bakarsanız çok özel bir şey yok.
+
+311
+01:14:36,148 --> 01:15:00,748
+Problemi araştırabilmesi lazım, anlayabilmesi lazım. Maliyet fayda analizini çözüm için gerçekleştirebiliyor. Tabii ki belli bir şeye kadar. Hani böyle inci cinciyle yapmasına çok fazla gerek kalmayabilir ama temel maliyet fayda analizini yapabiliyor olması lazım. Gereksinimleri belirleyebiliyor olması lazım. Alternatif sunabiliyor olması lazım. Yani ben bunu böyle çözerim ama alternatifleri de şunlardır.
+
+312
+01:15:03,923 --> 01:15:21,443
+Bu alternatifleri değerlendirerek en iyi duruma göre, ortama göre, bütçeye göre, zamanı göre pek çok kısıt olarak en iyi çözümün ne olacağını belirleyebiliyor olması lazım.
+
+313
+01:15:22,884 --> 01:15:26,583
+Seçilen çözümün ayrıntılarını oluşturabiliyor olması lazım.
+
+314
+01:15:32,243 --> 01:15:46,523
+Benim analiz yaptığım modelle problemle uygun mu? İstekleri karşılıyor mu? Ve sonuçlar istediğim gibi elde edilebilir olması lazım. Bu şekilde bir yoldan giderek bir problemi analist çözebilir.
+
+315
+01:15:47,243 --> 01:15:55,403
+Peki, bu durumda analistin ne gibi görev becerileri olması lazım ve ne gibi görevleri vardır? Şimdi bunlara bakalım.
+
+316
+01:15:58,420 --> 01:16:20,720
+Aslında hep anlatırken sistem analizlerinin bunların çoğuna değdik. Bir kere analitik düşünme becerisinin olması ve bu bilgiye sahip olması lazım. Burada işin içine biraz mühendislik aslında formasyonu giriyor diyebiliriz. Problemi belirleyebilmesi tanımlayabiliyor, düzgün tanımlar yapabiliyor olması lazım.
+
+317
+01:16:21,203 --> 01:16:33,923
+Problemi parçalayabiliyor olması lazım. Örneğin işte bu sistemin modülleri neler olmalıdır? Ne gibi hizmetlerimizin olması gerekir? Bunların birbirleriyle olan ilişkileri nelerdir? Bunları ortaya koyabilmesi lazım.
+
+318
+01:16:33,923 --> 01:16:46,683
+Ve çözüm alternatiflerini de biraz önce bahsettim. Oluşturabiliyor. Yani şöyle de yapabiliriz, şöyle de yapabiliriz ya da şu şekilde de çözebiliriz şeklinde alternatifleri de gösterebiliyor olması lazım.
+
+319
+01:16:47,380 --> 01:17:09,800
+Bunlar için de teknik bilgi beceriye de ihtiyaç var. O yüzden de genellikle bilgi teknolojileriyle alakalı ya da yakın alanlardaki mühendislik dalları, elektronik mühendisliği bazen olabiliyor, matematik mühendisliği sıklıkla olabiliyor gibi dallar daha çok sistem analizi çözümlerini yerine getiriyor.
+
+320
+01:17:12,724 --> 01:17:24,744
+Donanımımız olsun, programlama dilleri, ortamları, kütüphaneleri, işletim sistemleri, veri tabanları, belki başka büyük veri tabanları artık günümüzde, haberleşme protokolleri,
+
+321
+01:17:25,140 --> 01:17:38,239
+Gibi konulardaki temelleri bir kere biliyor olması lazım. Bunları bilmeden zaten bir çözüm öneremez. O yüzden şu şekilde çözeceğim diyemez. Bu nedenle de bu protokoller hakkında mutlaka bilgi sahibi olması beklenir.
+
+322
+01:17:38,819 --> 01:17:51,659
+Farklı teknolojileri biliyor olması lazım. Modern teknolojileri takip edebiliyor olması lazım. Entegrasyonların farklı hibrit sistemlerde ya da hibrit çözümlerdeki entegrasyonların nasıl olabileceğini de bilebiliyor olması lazım.
+
+323
+01:17:53,140 --> 01:18:05,620
+Bu tarafta sürecin tamamı için bir bilgisinin olması, en azından fikrinin olması, okuryazarlığının olması gerektiğinde bunları araştırarak da öğrenebilmesi gerekir.
+
+324
+01:18:05,984 --> 01:18:28,804
+İşin teknik tarafının haricinde yönetim ve iş bilgi becerisinin yine olması lazım. Neden? Çünkü iş tarafıyla, iş birimleriyle, iş kollarıyla ya da müşteriyle görüşüyor. Bu yüzden de nasıl işler yürür, organizasyon yapısı nedir, kimin ne rolü vardır bunları fark edebiliyor ya da çıkarabiliyor, anlayabiliyor olması lazım.
+
+325
+01:18:32,895 --> 01:18:42,296
+Hedefleri, kurumun bulunduğu sektör, işi nereye yapıyoruz, buradaki değerler nelerdir, bunları biliyor ya da en azından bulabiliyor olması lazım.
+
+326
+01:18:44,216 --> 01:18:53,555
+Yönetim konusunda da kaynaklar nasıl yönetilir, proje nasıl yönetilir, riskler nasıl yönetilir, alternatifler ne olursa nasıl değiştiririz.
+
+327
+01:18:54,452 --> 01:19:14,412
+Ve değişim ve konfigürasyon yönetimi konusunda bilgilerin olması lazım. Ve bunların hepsiyle birlikte insan ilişkilerinde çok iyi olması lazım. Neden? Müşteriyle konuşacak, müşteriyi anlayabilmeli, onun dilinden konuşabilmeli, işleri nasıl yaptığını, nasıl davrandığını belirleyebilmeli, gözlemleyerek ortaya koyabilmeli.
+
+328
+01:19:14,868 --> 01:19:35,908
+Çalışanların, yani iş tarafındaki insanların becerileri nelerdir, hangi teknolojileri var, neler kullanmışlar, bunlar hakkında fikirleri olması lazım. İletişim konusunda hani presentable diyorlar ya böyle rahat iletişim kurması, insanları dinlemeyi bilmesi ve sorunları anlayıp aktarmayı bilmesi lazım.
+
+329
+01:19:36,368 --> 01:19:43,388
+Ve bir yandan bunların hepsini dokümante edebiliyor olması, raporlayabiliyor, belgeleyebiliyor olması lazım.
+
+330
+01:19:43,828 --> 01:19:52,028
+Ve projenin diğer paydaşlarıyla bu bilgileri aktararak, onlara sunarak paylaşabiliyor olması lazım.
+
+331
+01:19:52,028 --> 01:20:00,000
+Bayanasına. Yani hem işi bilecek, hem tekniği bilecek, insan ilişkileri iyi olacak, analiz...
+
+332
+01:20:00,000 --> 01:20:14,960
+Politik düşünecek. Bir önceki slide'da da şöyle tekrar baktığımızda maşallah yani şey böyle bir insan varsa bana da haber verin gibi bir durum oluyor. Evet o full stack dedik neredeyse full stack developer'a doğru gittik.
+
+333
+01:20:28,000 --> 01:20:32,520
+Sucüme hizmetlerini sunan taraf olarak da sistem analizlerini düşünebilirsiniz.
+
+334
+01:20:32,979 --> 01:20:37,960
+Şimdi burada şeyden bahsedebiliriz. Sistem analizi rolü bir kişiden mi oluşur?
+
+335
+01:20:38,100 --> 01:20:42,399
+Hani böyle bir, tabii ki birden fazla kişi çalışabilir ama bir rol müdür?
+
+336
+01:20:42,600 --> 01:20:47,699
+Şimdi günümüzde artık bu da aslında ikiye bölünmüş durumda.
+
+337
+01:21:22,195 --> 01:21:24,576
+Teknik arızamız oldu. Sesim geliyor mu?
+
+338
+01:21:28,243 --> 01:21:28,904
+Geliyoruz.
+
+339
+01:21:29,083 --> 01:21:29,724
+Şu an geliyor hocam.
+
+340
+01:21:29,804 --> 01:21:33,283
+Geliyor mu? Ha tamam. Ya bugün bir sıkıntılı, neyse idare edin.
+
+341
+01:21:35,283 --> 01:21:55,083
+Nerede kaldık? Analist süper kahraman Mario dedik. Ama dediğim gibi tek rol olmak zorunda değil. Günümüzde mesela artık bu rolde ikiye bölündü. Şu şekilde bir sistem analisti, daha doğrusu bir ilk rol iş analisti, iki sistem analisti.
+
+342
+01:21:55,083 --> 01:22:02,823
+Şimdi demek ki bu her şeyi bilecek all in one yazıcı gibi olan arkadaş çok da kolay bulunmuyor demek ki.
+
+343
+01:22:03,283 --> 01:22:08,163
+Dolay böyle bir insan olunmuyor. Olsa da zaten kendi şirketini kurar, kendi işini yapar diyeceğiz.
+
+344
+01:22:10,547 --> 01:22:15,747
+İş tarafını daha fazla anlayan ya da buraya yakın olanlara iş analisti adı veriliyor.
+
+345
+01:22:15,747 --> 01:22:31,047
+Şimdi iş analisti aslında yine iki hafta sonra görmeye başlayacağımız işin anlaşılması, problemin öğrenilmesi ve bunun bir şekilde formal halde dokümante edilmesi gibi rollerden ya da işlemlerden sorumlu oluyor.
+
+346
+01:22:31,547 --> 01:22:35,747
+İşte bu biraz daha farklı disiplinler bu konuda çalışabiliyor.
+
+347
+01:22:35,747 --> 01:22:37,507
+Ama bir de sistem analisti var.
+
+348
+01:22:38,547 --> 01:22:41,207
+İş analisinin ürettiği çıktıları kullanarak
+
+349
+01:22:41,587 --> 01:22:57,967
+Aslında daha teknik analizler yapıyor ve analiz modeli oluşturuyor. Yani aslında mesela bir nesne modeli oluşturuyor diyebiliriz. Kavramsal bir nesne modeli ki bu ders kapsamında yapacağız. Basit örnekleriyle de olsa bu işin nasıl yapıldığını öğreneceğiz.
+
+350
+01:23:09,587 --> 01:23:15,747
+Sonduğu olanaklar gibi şeyleri de kullanarak analizi gerçekleştiren sistem analizleri var.
+
+351
+01:23:16,208 --> 01:23:34,307
+Yani iş analisti ve sistem analisti şeklinde ikiye de bölünebilir ya da hem projenin boyutuna hem de işin karmaşıklığına göre bir sistem analizi rolüyle, paydaşıyla bunların hepsi bir kerede de gerçekleştirilebilir.
+
+352
+01:23:35,028 --> 01:23:43,388
+Tek bir analist olmak, tek bir analist rolü olmak zorunda değil. Dediğim gibi iş analizi ve sistem analizi şeklinde günümüzde ikiye bölündü.
+
+353
+01:23:43,388 --> 01:23:45,388
+Bir diğer...
+
+354
+01:23:45,876 --> 01:24:03,256
+Rolümüz, sıradaki dördüncü başlığımız, paydaşımız, tasarımcılar. Tasarımcılar deyince de işte sistem tasarımı, sistem analizi ve tasarımı diyoruz ya, işte sistemin tasarımı tarafında çalışan bütün rolleri görüyoruz.
+
+355
+01:24:03,256 --> 01:24:04,235
+Şimdi burada...
+
+356
+01:24:05,811 --> 01:24:21,031
+Altı tane başlık var, aslında yedi kişiler. Şimdi bir slide sonra da diğer ana tasarım tarafına geçeceğiz. Veri tabanı yöneticileri. Yani veri tabanının, bilginin durduğu, verilerin saklandığı ortamların nasıl olması gerektiğini kurgulayan.
+
+357
+01:24:21,619 --> 01:24:31,979
+Bunların yapılarını tasarlayan ve bunların işlevsel halde kalması için yönetimlerini gerçekleştiren kişilere veritabanı yöneticisi, özetle adı veriliyor.
+
+358
+01:24:32,539 --> 01:24:37,359
+Günümüzde işte veritabanları da değişmeye başladı. İşlevsel, pardon.
+
+359
+01:24:38,068 --> 01:25:06,008
+İlişkisel veri tabanları, relational database'ler artık günümüzde değişiyor. Sizler de eminim duyuyorsunuzdur. NoSQL veri tabanları artık revaçta olmaya başlıyor. Çünkü verinin boyutları ve verinin hızı değişiyor. Veri üzerinde yapılan işlemlerin doğası değişiyor. Sorgulama çeşitleri değişiyor. Bu nedenlerle de veri tabanı artık günümüzde büyük veri tarafına da kaymış.
+
+360
+01:25:06,068 --> 01:25:19,868
+durumda. Sadece böyle ilişkisel veritabanı, tabloları bilmem neleri yöneten değil, bu gibi büyük verileri de aslında yöneten insanlara kabaca veritabanı ve bunları tasarlayan insanlara da veritabanı yöneticisi ismini veriyoruz.
+
+361
+01:25:20,404 --> 01:25:41,624
+Bir diğeri, network arkitektler ve ağa mimarları. Bunlar da tamamen bir bilgi sistemin iletişim altyapısını tasarlarlar. Nasıl bir band genişliği olması lazım, nasıl bir bağlantı türü olması lazım gibi. Bunlar yine networkteki tasarımlar, network tasarımlarını yapan rol.
+
+362
+01:25:42,131 --> 01:25:57,651
+Eğer bir web arayüzünüz varsa, bu web arayüzünün nasıl olması gerektiğiyle ilgili UI, UX falan taraflarını yapanlara da web mimarları adını veriyoruz. Bir yandan bunların görsel tasarımlarını yapanlar var.
+
+363
+01:25:57,651 --> 01:26:09,031
+İşte butonlar şöyle olsun, temalar şu şekilde olsun, arka plan rengi böyle, alttaki yazılar şu şekilde, ne bileyim sayfa geçişlerinde dönerek bilmem ne gidiyor falan gibi.
+
+364
+01:26:09,747 --> 01:26:19,207
+Grafik işlemlerimiz varsa, tasarımlarımız, görsel tasarımlarımız, bunları yapanlara da grafik sanatçıları ya da grafik tasarımcıları adını veriyoruz.
+
+365
+01:26:19,923 --> 01:26:47,923
+Günümüzde artık bilişim sistemleri güvenliği tamamen kendi içinde alt başlıklarıyla birlikte bir konu olarak ele alınıyor. Bilgi sisteminin güvenliği konusundaki tasarımları yapanlar, erişim güvenliği, modül güvenliği ya da bunlara haklar, hak verilmesi, bunların takip edilmesi, raporlanması, kayıt altına alınması, gerektiğinde müdahale edilmesiyle ilgili yapılacak işlemleri tasarlayanlar ya da işte bu.
+
+366
+01:26:47,923 --> 01:26:51,804
+Bu ortamları tasarlayanlara da güvenlik uzmanları adını veriyoruz.
+
+367
+01:26:52,283 --> 01:26:54,743
+Bir de bunun dışında özel teknolojilerimiz olabilir.
+
+368
+01:26:55,423 --> 01:26:58,644
+Özel teknolojilerle ilgili tasarımlar yapmamız gerekebilir.
+
+369
+01:26:58,644 --> 01:27:10,203
+Ne bileyim işte bir tane termal printerınız vardır ya da bir robot kolu bir şekilde ne bileyim hani stok depolarında ışıklara göre yönlendirip bir şeyleri yukarı aşağı hareket ettirip toplamanız gerekebilir.
+
+370
+01:27:10,583 --> 01:27:13,184
+İşte burada mesela bir robotik entegrasyon söz konusu.
+
+371
+01:27:13,644 --> 01:27:15,603
+Bununla ilgili tasarımları yapanlar olabilir.
+
+372
+01:27:15,923 --> 01:27:22,983
+Projeye özel teknolojiler konusunda bunlar da özel teknolojik uzmanlar ya da bunları tasarlayanlar olarak karşımıza çıkarlar.
+
+373
+01:27:24,115 --> 01:27:52,115
+Peki, her tarafına değdik de hocam kodlar nerede? Hani sistem çalışacak da program şey kodlarını nasıl yapacağız? Yazılım nerede diye soruyorsunuzdur eminim. Çünkü 6 tane başlığa baktık, hiçbirinde doğru düzgün yazılımdan bahsetmedik. Hep etrafında dolaştık. Şimdi bir de sistem tasarımcısı deyince aslında Software Architect diye bir rolümüz var. Yani paydaşımız var ya da yazılım mimarı. Ne demek bu yazılım mimarı? Duyan var mı yazılım mimarı?
+
+374
+01:27:52,115 --> 01:27:58,096
+Mimar diye bir kavram. Software Architect. Hocam biz mühendis değil miydik? Nereden çıktı mimari falan?
+
+375
+01:27:59,316 --> 01:28:04,115
+Hocam, benim staj yaptığım kurumda direkt departmanı vardı. Software Architecture departmanı.
+
+376
+01:28:04,655 --> 01:28:05,296
+Güzel.
+
+377
+01:28:05,939 --> 01:28:33,559
+Oluyor genellikle, evet. Duydum ama detayını bilmiyorum. Peki, şimdi detay çok aşırı detay olmasa da kim olduğunu ya da bunun ne yaptığını tanıyalım. Bir yazılım mimarı, aslına bakarsanız tam olarak şunu yapar. Şimdi sistem analizi modeli oluştu diyelim, tamam mı? Analiz çalıştı ve çıktılarını üretti. Hani şimdilik ne çıkarttığını bilmiyoruz ama analiz modelinin oluştuğunu ve raporlandığını, grafik diyagramların çizildiğini düşünelim. Gereksinimler ortada.
+
+378
+01:28:33,939 --> 01:28:38,939
+Bu gereksinimler altında yazılımın, yani bilgi sisteminin...
+
+379
+01:28:39,283 --> 01:28:57,683
+Bütün diğer, önceki slide'daki taraftaki tasarımcıların da yapacakları işleri bir arada düşünerek, onları da göz önünde, masanın üzerine onları da koyup düşünerek, bilgi sistemimizin bütün bilişim modelinin kurgulanmasını sağlar yazılım mimarları.
+
+380
+01:29:07,283 --> 01:29:12,983
+Kapsamında yapılan gelişmelerle ortaya konan çeşitli mimariler vardır.
+
+381
+01:29:13,483 --> 01:29:24,463
+Ve bu yazılım mimarilerine uygun olacak şekilde gereksinimleri oradan alıp bir mimari içinde çalışacak haline dönüştürülmesini,
+
+382
+01:29:24,843 --> 01:29:34,843
+bunun altyapısının nasıl olması, yazılım altyapısının nasıl olması gerektiğiyle ilgili kararların verilmesini ya da tasarımların yapılmasını sağlar yazılım mimarları.
+
+383
+01:29:35,283 --> 01:29:43,203
+Demek ki bilinen yazılım mimarları var. Bu yazılım mimarlarına bir kere hakim olması gerekiyor yazılım mimarının.
+
+384
+01:29:43,203 --> 01:29:55,743
+Örneğin, belki ucundan biraz şey yaparız ama zaten öğreneceksiniz başka derslerde ya da yaparken bazı projeleri.
+
+385
+01:29:56,203 --> 01:29:59,083
+Mesela MVC diye bir yazılım mimarisi var.
+
+386
+01:30:00,000 --> 01:30:08,240
+Hani günümüzde ne derler? Çok aşırı normal, standart, belki de sizin de yaptığınız ama farkında olmadığınız bir mimari.
+
+387
+01:30:08,240 --> 01:30:18,660
+Şimdi burada olay şudur. İşte görünüm, görünümün kontrolü ve iş katmanı ve veri birbirinden tamamen ayrıştırılsın ister bu mimari.
+
+388
+01:30:19,347 --> 01:30:33,927
+Neden? Çünkü bunların her birini birbirinden bağımsız olarak değiştirebilmek ister. Şu şekilde düşünelim. Diyelim ki sizin bir veriniz var. Bu veri bir yerde dursun ve kendi içinde değişsin. Yani ben bunu bir uygulama için veriyi sürekli değiştirmeyeyim.
+
+389
+01:30:42,899 --> 01:31:10,899
+lisans öğrencilerine yönelik hizmetlerimiz var. Bir de yüksek lisans öğrencilerine yönelik hizmetlerimiz var. Şimdi bunlar benim iş modelim aslında. Çünkü lisanstaki gidişat başka türlü, yüksek lisanstaki gidişat başka türlü. Biri işte 4 sene belli krediler belli, stajlar, yükümlülükler onlar bunlar takip edilecek. Not ortalamalarının belli şeyleri sağlaması istenecek öğrenci bazında falan. Ama öbür tarafta işte tez var, başka yükümlülükler var, alınması gereken sunum.
+
+390
+01:31:10,899 --> 01:31:18,339
+bulması gereken şeyler var. Seminerler falanlar filanlar. Bunların takibi gerekecek. Yani aslında iş modelleri birbirinden farklı.
+
+391
+01:31:19,091 --> 01:31:45,511
+Demek ki benim iş katmanlarımın birbirinden ayrı olması lazım ve bunların çakışmıyor ya da yanına yenileri koyulabiliyor olması lazım. Başka işte mesela diyelim yarın öbür gün benim yeni bir iş gereksinimim doğdu ya da yeni bir bilgi sistemi gereksinimim doğdu. Artık işte yabancı uyruklu ya da işte Erasmus öğrencileri için de yeni bir bilgi sistemi kullanmak istiyorum. Onları da ayrı bir yerde çalıştırmak istiyorum. Onların süreçleri tamamen başka. İş süreçleri diyelim.
+
+392
+01:31:47,091 --> 01:31:48,792
+Yani örnek olsun diye bunları söylüyorum.
+
+393
+01:31:49,391 --> 01:31:54,172
+Ve o zaman ben onun içinde yeni bir iş katmanı oluştururum.
+
+394
+01:31:54,271 --> 01:31:55,572
+O da orada çalışmaya devam eder.
+
+395
+01:31:55,692 --> 01:31:58,311
+Arka planda yine veri tarafı aynı kalır.
+
+396
+01:31:58,712 --> 01:32:00,112
+Onunla başka türlü haberleşir.
+
+397
+01:32:00,792 --> 01:32:04,252
+Ve ön taraflarında mesela şöyle olmasını istiyorum.
+
+398
+01:32:04,252 --> 01:32:07,252
+Mesela şey...
+
+399
+01:32:08,659 --> 01:32:36,639
+Lisans öğrencileri için kullandığım iş katmanının ön yüzünün sadece web olmasını istiyorum. Tamam. Yüksek lisans öğrencileri için web bile atıyorum, istemiyorum. Sadece benim orada kiosklarım var, o kiosklarda çalışmasını istiyorum. Ve Erasmus için de sadece mobil ön yüzünün olmasını istiyorum. Ne oldu? Ön yüzlerin de birbirinden tamamen farklı olmasını istiyorum ve bunların da ayrı şekillerde kalmasını istiyorum.
+
+400
+01:32:36,659 --> 01:33:04,339
+Yani bir mobil ön yüz var. Bu mobil ön yüz işte şeyle hani Erasmus için yapılan mobil ön yüz sadece Erasmus'un iş katmanıyla konuşuyor. Onun iş katmanı da gidip arkada veriyle haberleşiyor. Tamam mı? Mesela istekler değişti. Yarın öbür gün dediler ki ya biz bu Erasmus'u sadece mobille yapamıyoruz. Hadi buna bir de web arayüzü olsun. Ne oldu? Ben mobil arayüzüm burada dururken tamam mı? Nerede dursun? Şurada dursun. Tamam mı?
+
+401
+01:33:04,659 --> 01:33:18,659
+Şunun yanına bir de web arayüzünü koydum. Şimdi bu iki tane arayüz birlikte hop Erasmus iş modeliyle konuşacaklar. İkisi ayrı kanallardan konuşacak. İşte bu sayede ne yapmış oldum? Ben ön yüzü...
+
+402
+01:33:19,220 --> 01:33:45,539
+İH modelini, yani süreçlerimi ve verilerimi birbirinden ayrı tuttum. İşte bu bir mimari. Bu mimariye uygun olarak şunlar olması lazım, şu modüller şöyle yapılması lazım, şu veriyle şöyle, şun kullanarak haberleşilmesi lazım, bunları şu şekilde ayrıştıracaksınız, ön yüzler şunlar şunlar olacak falan gibi dağılımları yapan, bunların kararlarını veren kişilere biz yazılım mimarı adını veriyoruz.
+
+403
+01:33:47,220 --> 01:34:01,220
+Bu olarak bir kere yazılım mimarileriyle birlikte yazılım teknolojilerine de hakim olması gerekiyor. Network ve donanım kaynaklarını iyi bilebiliyor olması gerekiyor. Şu şekilde düşünelim işte benim...
+
+404
+01:34:02,739 --> 01:34:09,339
+MVC mimarisi dedik ama mesela burada iş katmanımı da farklı bir mimariyle modellemem gerekiyor.
+
+405
+01:34:09,499 --> 01:34:14,919
+Servis tabanlı bir oluşuma dönüştürmem gerekiyor diye düşünelim. Ne demek bu?
+
+406
+01:34:15,699 --> 01:34:21,619
+En basit anlamıyla öğrencinin bilgilerini sorgulayan bir servisim olsun.
+
+407
+01:34:22,039 --> 01:34:27,339
+Öğrencinin notlarını hesaplayan başka bir servisim, öğrencinin derslerini sorgulayan başka bir servisim olsun diyebilirim.
+
+408
+01:34:27,339 --> 01:34:30,739
+Şimdi ders seçimleri için de ayrı bir servis olsun isteyebilirim.
+
+409
+01:34:30,739 --> 01:34:47,559
+Ve bunlar işte servis çalışıyor ve bunların daha atomize hallerinin oluşturulmasını da isteyebilirim ki bunlara da mikroservis adını veriyoruz. İleride bunlardan da öğreneceksiniz bunların da neler olduklarını.
+
+410
+01:34:48,212 --> 01:35:06,351
+Şimdi burada mesela burada bir şey ortaya çıkıyor, problem. Ben bunları evet servislere bölüyorum ya da ben bunları evet daha da ufak servislere, mikro servislere bölüyorum. Ama bunları ben nasıl yöneteceğim, nasıl birleştireceğim, hangi sırayla işleteceğim, bunların kontrolü, bunların verileri ne olacak, birine veriyi yazarken öbürü veriyi bozarsa ne olacak.
+
+411
+01:35:07,072 --> 01:35:33,811
+Gibi gibi şeyler, problemler doğmaya başlıyor. İşte bu problemlerin çözümü için yöntem geliştirmesi gerekiyor. Ya da nasıl çalışılması gerektiğini tanımlaması, anlatması ya da oluşturması gerekiyor yazılım mimarlarının. O yüzden de öyle çok da basit bir iş. Ne var zaten bilinenin koyuyor işte tak tak tak şöyle yapın diyor. Geçin gidin değil. Duruma göre çok fazla problem de çözmesi gerekebiliyor. Bunun dışında niye donanım kaynaklarını falan da biliyor olması lazım?
+
+412
+01:35:35,072 --> 01:35:56,832
+Bu servisleri yaptınız. Mesela ders seçimlerini ben mikro servis halinde modellediğimi düşünelim. Tamam mı? Şunu biliyorum ki ben her sene yaşanan bir problem var. İşte belirli bir zaman içinde, atıyorum işte bir dakika içinde on bin request'ten fazlası geldiğinde bizim ders seçim modülümüz patlıyor değil mi? Hani çünkü limitleri belli.
+
+413
+01:35:57,167 --> 01:36:17,247
+İşte mesela bunu ben mikroservis ve çoğullaştırılabilir hani konteynerler halinde mesela modellediğimde ben mesela işte 3. sınıflar dersi seçmeden önce ya da 2. sınıflar ders seçimleri işte sabah 8'de başlamadan önce normal yükü karşılayan yerine işte 10 kat fazla konteyner ayağa kaldırırım.
+
+414
+01:36:17,551 --> 01:36:33,111
+Yani 10 ayrı kopyasını çalıştırırım ve bu sayede işte mesela her biri 5000 kişiye hizmet verebiliyorsa ben artık 50.000 request'i karşılayabilir hale gelirim. Ama bunun için bir network tarafını da konfigüre edebiliyor olmam lazım.
+
+415
+01:36:45,551 --> 01:36:51,211
+tasarlarının, limitlerinin, hizmetlerinin neler olduğunu biliyor olması lazım. Bunlara göre ancak bu tasarımları yapabilir.
+
+416
+01:36:51,771 --> 01:37:02,811
+Bir yandan da işte veri yönetimi. Dedim ya, siz mesela bir dersi seçmek istiyorsunuz ve işte her bir mikroservis instansında bir tane öğrenci gelmiş, şans eseri.
+
+417
+01:37:03,751 --> 01:37:13,551
+Sizin diyelim ki 50 tane instansınız var ve 50 tane işte bu dersi istiyorum request'i geldi ve hepsi bağımsız birbirinden.
+
+418
+01:37:13,551 --> 01:37:25,851
+Ben habersiz olarak da çalıştığı için mimarinin doğası gereği. Şimdi kontenjan 30 iken ne yapacağız? 50 tane istek geldi, 50 sene de okey dönersek bizim kontenjanımız 30 iken 50 kişiye ders seçtirmiş oluruz.
+
+419
+01:37:25,851 --> 01:37:41,391
+Veri yönetiminde sıkıntı, anlatabiliyor muyum? Kısıtları aşmak. Bunlar nasıl kontrol edilecek? Bunlar için mekanizmalar ne olması lazım? Bunun için yazılım nasıl olması lazım? Servislerin, hizmetlerin nasıl tanımlanması lazım? Gibi gibi gibi pek çok konuda.
+
+420
+01:37:41,551 --> 01:37:47,511
+Yani yazılımın her yerine değen bütün konular hakkında fikrinin sahibi bilgisinin olması gerekiyor.
+
+421
+01:37:47,671 --> 01:37:50,471
+Yazılım mimarı dediğimiz sistem tasarımcı rolünün.
+
+422
+01:37:50,971 --> 01:37:54,811
+İşte bizim mesela bilgisayar mühendisleri için baya havalı bir iştir bu.
+
+423
+01:37:55,411 --> 01:38:00,411
+Eğer bu konularda çalışacaksanız ileride iyi paralar kazanabilirsiniz.
+
+424
+01:38:00,411 --> 01:38:01,411
+Öyle söyleyeyim.
+
+425
+01:38:04,851 --> 01:38:06,911
+Yani şöyle söyleyeyim ya da.
+
+426
+01:38:07,123 --> 01:38:21,003
+Yazılım mimarı olarak çalışıp da 4.0'ın altında maaşı olan tanımıyorum. Neredeyse böyle 5 haneli rakamların ortalarında bile gezebiliyorlar.
+
+427
+01:38:22,643 --> 01:38:29,243
+İyileri. O yüzden güzel şeyler olabiliyor. İyi paralar dönebiliyor burada. Onu da unutmayın.
+
+428
+01:38:30,323 --> 01:38:58,323
+Evet, geldik yazılımcılara. Software developer diyebileceğimiz kısım. Yazılım geliştiriciler desek daha doğru olur. Yazılımcı biraz böyle avani bir tarif kalıyor ama idare edin. Hani kısa olsun diye böyle yazdım. Bunlar kim? Kodlamacılar, kodlayanlar, sistemi yazanlar, gerçekleyenler. Ne yapıyorlar? Elimizde süreçler var, problem gereksinimlerimiz var. Analizin ürettikleri ve tasarımcının üreticilerini.
+
+429
+01:38:58,323 --> 01:39:22,883
+Bunları kullanarak sistemin çalışan halini ortaya koyarlar. Yani kodlamaları gerçekleştirirler. Tabii ki software architect ne dediyse ya da ne tasarladıysa ona uygun olarak bu işlemleri gerçekleştirmeleri gerekir. Bu yönüyle de yine hani mimariler konusunda da fikir sahipliğinin olması gerekir yazılımcıların tabii ki.
+
+430
+01:39:23,636 --> 01:39:41,056
+Ama daha çok bunlar böyle alıp geliştiren taraf gibi düşünebilirsiniz. İyileştikçe artık mimarilere hakim oldukça, çalıştıkça ne var bunları ben de tasarlayabilirim deyip işin mimari tarafına da kayabilirsiniz. Hani işin mutfağından yetişerek de doğal olarak bunu öğrenebilirsiniz.
+
+431
+01:39:44,979 --> 01:40:01,039
+Tabii ki. Mimarlarda anasının karnından yazılım mimarı olarak doğmuyor. Çoğunlukla yazılım geliştire geliştire yazılım mimarı tarafına kayıyorlar. O yüzden biraz daha böyle üst kademeli şeyler, roller olarak karşımıza çıkıyor. Her şeyi bilmeleri gerektiği için.
+
+432
+01:40:01,876 --> 01:40:20,355
+Günümüzde ID'eler var, case araçları var. Computer Aided Software Engineering demektir case. ID'de de Integrated Development Environment, tümleşik geliştirme ortamları şeklinde araçlarımız var. Bu araçları kullanarak artık kod üretimi de bayağı bir kolaylaştı.
+
+433
+01:40:29,876 --> 01:40:32,296
+Framework'ünü çıkartan uygulamalar bile var.
+
+434
+01:40:33,076 --> 01:40:42,716
+Siz sadece içini kodluyorsunuz, metotları dolduruyorsunuz, algoritmalarınızı gerçekliyorsunuz gibi düşünebilirsiniz. O yüzden kod üretimi de artık kolaylaştı, kalite de arttı, eskiye göre daha iyi.
+
+435
+01:40:43,836 --> 01:40:54,836
+Tabii bir yazılım geliştirici için en önemli husus nedir aslında? Kod optimizasyonudur ve entegrasyonlardır. Yani birlikte çalışabilirliktir.
+
+436
+01:41:01,076 --> 01:41:15,395
+Ve kodunuz ne kadar optimize, yani karmaşıklığı ne kadar az ya da performansı ne kadar yüksek yazdığınız kodun ya da yazdığınız kod sayesinde oluşan sistemin bunlar da önemli noktalar olarak karşımıza çıkıyor.
+
+437
+01:41:17,395 --> 01:41:19,076
+Bunun dışında...
+
+438
+01:41:20,404 --> 01:41:34,404
+Sistem yazılımlarını geliştirenler dışında tabii ki bir de şey var. Sistem programcıları var. Bunları da unutmayalım. Sistem programı dediğimiz husus şudur. İşletim sistemi ile...
+
+439
+01:41:34,996 --> 01:41:46,655
+Sizin bilgi sisteminizin arasında bilgi sisteminin çalışabilmesini sağlayan ara uygulamalar bütününe sistem programları adını veriyoruz.
+
+440
+01:41:46,815 --> 01:41:53,855
+Örneğin, siz bir bilgi sistemi, UCS yazdınız, UCS gibi bir bilgi sistemi, web arayüzüyle çalışıyor.
+
+441
+01:41:54,556 --> 01:41:59,155
+Belirli bir şeyde, doğal olarak, mesela atıyorum Java ile yazıldığını düşünelim, tamam mı?
+
+442
+01:42:02,996 --> 01:42:18,576
+üzerinde hizmet alıyor olması lazım. Yani uygulama sunucusu üzerinde koşuyor, çalışıyor olması lazım. Peki bu uygulama sunucusu ne? Atıyorum işte Tomcat mesela. Hani basit bir örnek olsun diye. Şimdi Tomcat'i kim kuracak?
+
+443
+01:42:18,975 --> 01:42:37,055
+Tomcat'i kim konfigüre edecek? Bizim istediğimiz girdileri, çıktıları, bilmem neleri sağlayacak şekilde ayarlarını kim yapacak? Ya da bunların için yapılması gereken özel kodlamalar varsa bunları ya değişiklikler bunları kim yapacak? İşte bunları yapan kişilere sistem programcısı adını veriyoruz.
+
+444
+01:42:41,072 --> 01:42:50,452
+Uygulamalarımızın çalışması için gerekli sistem uygulamalarının kurulması, ayağa kaldırılması, yönetilmesi, gerekse değişikliklerinin yapılması gibi işleri yaparlar.
+
+445
+01:42:51,052 --> 01:42:52,931
+Bir yandan veri tabanı programcıları var.
+
+446
+01:42:53,555 --> 01:42:57,155
+Şimdi veri tabanı programlısı deyince de aslında şunu anlamalıyız.
+
+447
+01:42:59,715 --> 01:43:04,855
+Bazı işlemler, veri üzerindeki işlemleri veri tabanı üzerinde çözebilirsiniz. Veri katmanını da direkt çözebilirsiniz.
+
+448
+01:43:05,315 --> 01:43:11,575
+Yani oraya da aslında işlevsellik koyulabilir ki eski yazılım mimarilerinden biriydi bu.
+
+449
+01:43:12,435 --> 01:43:16,535
+Data-driven falan şeklinde, dizayn şeklinde isimlendirilirdi.
+
+450
+01:43:16,535 --> 01:43:20,095
+Ama günümüzde çok tercih edilmiyor.
+
+451
+01:43:21,555 --> 01:43:47,975
+Sıklama şekli de biraz değişti. Fakat veri üzerinde işte stored procedure'larla ya da function'larla işlem yapmanız falan gerekebilir. Bu gibi işlemleri yazanlara, hatta tabloları gerçekleyen insanlara da, trigger'ları olsun, indeksleri olsun, farklı farklı yönleriyle bu veri tabanı gerçekleştirilmesi olsun, bu işlemleri yazanlara da veri tabanı yazılımını veriyoruz programcısı. Bir de test personelimiz var, test mühendisi.
+
+452
+01:43:48,787 --> 01:43:50,908
+olarak isimlendiriliyor artık bunlarda.
+
+453
+01:43:51,967 --> 01:43:53,387
+Test personeli de
+
+454
+01:43:54,420 --> 01:43:59,300
+Tabii ki herkes önce kendi yazdığı kodu kendisi test edecek ama birim testlerini falan yapacak.
+
+455
+01:43:59,760 --> 01:44:15,059
+Genel olarak bilgi sistemindeki bütün parçalardan başlayıp birimlerden modüllere, modüllerden daha büyük yapılara ya da servislerden daha büyük serilere, servis serilerine kadar.
+
+456
+01:44:15,960 --> 01:44:19,000
+Gereksinimleri karşılıyor muyu sonuna kadar?
+
+457
+01:44:22,420 --> 01:44:36,219
+Başka pek çok yönüyle birlikte testlerinin yapılmasını sağlayan kişilere de test personeli ya da test mühendisleri adını veriyoruz. Bunların da hepsini yazılım geliştiricileri arasında sayabiliriz.
+
+458
+01:44:36,576 --> 01:44:48,475
+Test personeli de yine bizden, bilgisayar mühendisliğinden olabileceği gibi şeyden de olabiliyor. Farklı disiplinlerden de test konusunda kendini geliştirenler olabiliyor.
+
+459
+01:44:48,595 --> 01:44:57,675
+Günümüzde tabii test otomasyonu önemli bir konu. Bu işin otomatik hale getirilmesi ya da robot uygulamalarla yapılması gibi şeyler var.
+
+460
+01:44:57,675 --> 01:45:04,576
+Bu işi yapan Google'ın bile çok bilindik çözümleri var. Ama hepsi her şeyi yapamıyor tabii ki.
+
+461
+01:45:04,576 --> 01:45:20,036
+O yüzden de mutlaka yine bir test personeline ihtiyaç ya da test birimine ihtiyaç duyuyoruz. Yazılım bilgi sistemi geliştirme sürecinde özellikle de yazılım geliştirici rolü altında, tarafı altında.
+
+462
+01:45:20,692 --> 01:45:48,612
+Yazılımcılardan sonra son olarak altım oldu. Altıncı galiba bilgi sisteminin tarafı, paydaşı, destek personelleri. Destek personeli de aslında geliştirilmiş ve işleyen bir sistemin, bilgi sisteminin çalışır halde kalmasını, devamlı olmasını, sürekliliğinin sağlanmasını garanti eden hayatı boyunca, yani devredeyken bu sistemin çalışmasını sağlayan insanlar.
+
+463
+01:45:48,692 --> 01:46:16,292
+Neler yaparlar? Bir kere network'ün düzgün kalmasını, iletişimin sağlanmasını, bozukluk varsa giderilmesine, giderilmiyorsa yani bir geliştirme yapılması gerekiyorsa geriye doğru feedback verilmesini sağlarlar. Donanımın ayakta kalması, sistemci deriz, sistem tarafı deriz, sunucuların ve diğer bütün mekanizmaların, donanımların çalışmasını ve işlemesinin devamını sağlarlar.
+
+464
+01:46:16,692 --> 01:46:22,311
+Yazılımın aynı şekilde, parametrelerin aynı şekilde yapılmasını sağlarlar.
+
+465
+01:46:22,311 --> 01:46:25,612
+Aynı zamanda mesela bu bilgi sistemi yeni bir müşteriye kuruluyor diyelim.
+
+466
+01:46:25,692 --> 01:46:30,791
+Onun kurulması, devreye alınması, ayarlarının, konfigürasyonlarının yapılması destek personel işidir.
+
+467
+01:46:31,872 --> 01:46:34,251
+Çıktıları düzenleyebilirler. Bu da olabilir.
+
+468
+01:46:35,072 --> 01:46:38,992
+Bunun dışında bir de işin destek tarafı var, support tarafı.
+
+469
+01:46:39,331 --> 01:46:43,051
+Birileri, kullanıcılar size bir şey sorduğunda, ben bunu nasıl yapacağım?
+
+470
+01:46:43,359 --> 01:47:00,859
+Bunu nasıl çözeceğim? Bunları anlatan kişiler, işte bu hani call center gibi çalışan mesela, bunlar da yine destek personeli. Güvenliğin sağlanması, izlenmesi gerektiğinde gerekli önlemlerin alınmasıyla ilgili yine hayatı boyunca sistemin çalışanlar destek personelinin görevleridir.
+
+471
+01:47:03,439 --> 01:47:16,300
+Düzgün kalması, işlevha olması, bir değişiklik olduğunda bunun dediğim gibi yine geriye bildirim olarak söylenmesi, gerekirse bununla ilgili geliştirmelerin yapılmasının sağlanmasını başlatan taraf destek personeli.
+
+472
+01:47:16,800 --> 01:47:31,439
+Ve yine dış sistemlerle entegrasyon konusunda yapılması gereken işler varsa çalışmamız esnasında bunların yapılmasını sağlayanlar da yine buradaki destek paydaşımız olarak karşımıza çıkıyor. Bunların da görevleri sorumluluyor.
+
+473
+01:47:31,439 --> 01:47:53,439
+Temel olarak bunlar. Bilgi sistemini hayatta işlevsel yaşar ve düzgün şekilde çalışır halde tutanlar. Bir yandan da paydaşları ya da kullanıcılara bilgi verenler, eğitim ya da bir şey takıldığında, bir sorun olduğunda danışılan, sorulan insanlar olarak burada karşımıza çıkıyorlar. Destek personelleri.
+
+474
+01:47:55,119 --> 01:47:58,139
+Evet, taraflarımız ve rollerimiz de temel olarak bu kadar.
+
+475
+01:47:59,123 --> 01:48:05,283
+Soru var mı? Bilgi sistemi taraflarıyla alakalı.
+
+476
+01:48:08,404 --> 01:48:23,884
+Niye bunları kategorize ediyoruz? Çünkü gördüğünüz gibi hepsinin görevleri, yetkileri, sorumlulukları yapması gerekenler ve bilmesi gerekenler birbirinden farklı. Bu yüzden de bunları roller halinde, taraflar ya da paydaşlar halinde ayırıyoruz.
+
+477
+01:48:23,884 --> 01:48:36,404
+İşte müşteri ya da kullanıcı kimdir, yönetici ya da yönetici türleri nedir, sistem analisti yine kendi içinden nasıl bölünebilir, görevleri nelerdir, tasarımcı deyince neyi anlamalıyız, bunun altında.
+
+478
+01:48:36,404 --> 01:48:53,044
+Aslında neler neler tasarlıyoruz, hangi çeşit roller var orada da, alt roller, yazılım geliştirme deyince neler var ve destek deyince neler var şeklinde kategorize ediyoruz paydaşlarımızı.
+
+479
+01:48:53,684 --> 01:49:20,743
+Peki, şimdi o zaman bilgi sistemi geliştirme sürecine geçiyoruz. Bu hafta tabii konular yine sarktı yetişmedi. Haftaya bunu bitireceğiz çünkü çok az bir vaktimiz kalmış, 3 dakikamız kalmış. Fakat genel olarak bakalım. Şimdi bilgi sistemi geliştirme süreci ne demektir? Son başlığımız aslında bu haftada ama dediğim gibi bu hafta yetişmez, önümüzdeki haftaya devam edeceğiz.
+
+480
+01:49:21,684 --> 01:49:35,663
+Bir bilgi sisteminin geliştirilmesi için, aslına bakarsanız sadece bilgi sistemi değil, bütün ürün çıkarttığınız bütün proje süreçlerinde kullanabilirsiniz ama biz burada bilgi sisteminin özeline bakacağız.
+
+481
+01:49:35,663 --> 01:49:39,243
+Sistemin geliştirilmesi için yapılması gereken,
+
+482
+01:49:39,572 --> 01:49:57,511
+atılması gereken adımlar. Bunların hangi sırayla yapılacakları? Bunlar için gerekli süreç ve bir metodoloji, yani yol yordam, şekil önerisine ya da sunumuna bilgi sistemi geliştirme süreci adını veriyoruz.
+
+483
+01:49:57,511 --> 01:50:00,000
+Temel bir bilgi sistemi geliştirme sürecinin...
+
+484
+01:50:00,000 --> 01:50:26,079
+Bu adımlar vardır. Bütün süreç modelleri bunları bir şekilde evirip çevirir. Yani onun içine koyar, bunu bunun dışında tutar ya da bunları birleştirir, yuvarlak halde tekrar tekrar yapar, döne döne yapar. Bu şekilde ama nihayetinde bizim bir süreçte mutlaka bir şekilde bu adımlardan geçmemiz gerekir. Nedir bu adımlar? Bir, problemi tanımlamamız lazım. Fizibilite çalışması yapmamız lazım.
+
+485
+01:50:27,667 --> 01:50:38,247
+Analiz yapmamız lazım, değişik seviyelerde tasarım yapmamız lazım, gerçekleştirmemiz lazım ve sonra da devreye almamız yani bakım sürecini işletmemiz lazım.
+
+486
+01:50:39,107 --> 01:50:47,367
+Şimdi problemi tanımlamak ne demektir? Problemi anlamak, problemi ortaya koymak ve aslında ihtiyaçların neler olduğunu belirlemek.
+
+487
+01:50:48,692 --> 01:51:10,551
+Bir yandan da biz bu işi yapabilir miyiz acaba? Yapalım mı, yapmayalım mı daha doğrusu? Bunun kararını vermek. Sonrasında fizibilite çalışmasıyla biz yapılabilir mi diye bakarız. Biz bunu yapabilir miyiz ya da bunu yapmak için neler gerekir? Bu ne gibi şekillerde yapılabilir? Hangi alternatiflerle gerçekleştirilebilir? Hangisi bizim için daha iyidir?
+
+488
+01:51:11,475 --> 01:51:18,715
+Hangi şartı altında hangisi daha doğrudur? Bunları da fizibilite çalışması raporuyla ortaya koyarız.
+
+489
+01:51:19,123 --> 01:51:40,643
+Analizde bir problem uzayı, problem çözümü ortaya koyulur. Bu da çözümün lojik modeli diyebiliriz çıktısına. Tasarıma geldiğimizde de nasıl gerçekleştirilecek ve bunun detayları neler olacak, nasıl çalışacağının, nasıl gerçekleneceğinin detayları neler olacak. Bunlarla ilgili tasarım modeli ortaya koyulur.
+
+490
+01:51:41,243 --> 01:51:47,063
+Gerçekleştirme aşamasına geldiğimizde program yazılır. Hani uygulamalar, kodlar gerçekleştirilir.
+
+491
+01:51:47,123 --> 01:51:49,863
+Pek çok kod yazmamız farklı ortamlarda gerekebilir.
+
+492
+01:51:50,363 --> 01:52:06,243
+Sistemi olsun, veri tabanı olsun, servisleri olsun, entegrasyonları olsun, sadece oturda modül yaz değil, Java'da bilmem neleri yaz değil ya da .NET'te pek çok şeyi yazmak ve bir araya getirmek gerekiyor.
+
+493
+01:52:06,743 --> 01:52:11,403
+Bunların yüklenmesi ve testlerin yapılması da yine gerçekleştirme aşamasında yapılır.
+
+494
+01:52:12,103 --> 01:52:14,403
+Buradan da çalışan bir sistem aslında ortaya koyulur.
+
+495
+01:52:14,963 --> 01:52:33,844
+Ve bunun dokümentasyonu tabii ki çıkar. Ve bakım aşamasına geldiğimizde de sistem sürekli desteklenir bakım yapılarak ve yaşayan, çalışan, hayatını sürdüren bir sistem buradaki son bakım sürecinin çıktısı olarak karşımıza gelir.
+
+496
+01:52:36,083 --> 01:52:43,244
+Bilgi sistemini özellikle de sistem geliştirmenin yaşam döngüsüne baktığımızda genel olarak şöyle bir döngü görürüz.
+
+497
+01:52:44,095 --> 01:53:10,755
+Önce bir aslında bir öncekine geldiğimizde ne dedik? Problem tanımı, fizibilite, analiz, tasarım, gerçekleştirme, bakım dedik. Bunu şu şekilde de okuyabiliriz. Kapsam ve planlama. Ne dedi? Problem tanımı, fizibilitesi nasıl yapılabilir mi? Yapılırsa nasıl yapılır? Bunun belirlenmesi. Sonra bir gereksinim analizi. Analiz sonucunda tasarım yapılır. Tasarımdan sonra gerçekleştirme ve test operasyonları. Bunun sonucunda kurulum ve dağıtım, devreye alma.
+
+498
+01:53:11,252 --> 01:53:16,492
+Ve operasyon, işletme ve bunun bakımının yapılması olarak da görebilirsiniz.
+
+499
+01:53:16,832 --> 01:53:20,012
+Şimdi ne gördük? Birinde böyle...
+
+500
+01:53:20,083 --> 01:53:28,884
+Fizibilite, analiz, tasarım falan derken burada biraz kapsam planlama, kurulum, dağıtım gibi biraz daha farklı isimlendirmeler görebiliyoruz.
+
+501
+01:53:28,884 --> 01:53:41,443
+Ama nihayetinde aslında adımlar 3 aşağı 5 yukarı gördüğünüz gibi aynı. Problemi tanımına fizibilitesini yap, analiz, tasarım, gerçekleştir, kur yani devreye al ya da dağıtımını yap.
+
+502
+01:53:41,743 --> 01:53:48,023
+Sonrasında da devrede tut ve bakımını yap. Sonra ne oldu? Hoppa buradan yine bilgiler geldi. Hoppa buraya.
+
+503
+01:53:48,083 --> 01:54:05,903
+Yeniden yeni kapsam, yeni plan, yeni değişiklikler belki olarak geldi. Bunun analizi, tasarımı, gerçekleştirmesi, dağıtımı yapıldı. Tekrar bak devrede yine değişiklikler oldu. Böyle gördüğünüz gibi arkadaşlar bir sistem geliştirme yaşam döngüsü bir sonsuz döngü şeklinde yoluna devam eder.
+
+504
+01:54:15,572 --> 01:54:24,572
+Artık operasyon bakımından sonra bir öldürebiliriz. Bitecekse eğer döngü burada bitecektir. Düzgün şekilde işletiliyorsa süreç.
+
+505
+01:54:26,792 --> 01:54:33,412
+Saat şey olmuş, biraz geçmişiz, kusura bakmayın. Tamam, peki o zaman bu haftalık burada keselim.
+
+506
+01:54:34,003 --> 01:54:43,403
+Haftaya da sistem geliştirme yaşam döngüsünde temel model olan süreç, klasik süreç, waterfall modeli nedir? Bunu inceleyeceğiz.
+
+507
+01:54:43,764 --> 01:54:49,863
+Ve alternatifleri neler? Bunları bakacağız, öğreneceğiz. Daha modern alternatifleri neler? Bunları tartışacağız.
+
+508
+01:54:50,243 --> 01:54:55,403
+Hızlıca tartışacağız. Çok detaylarına girmeden sadece farkında olma açısından tartışacağız.
+
+509
+01:54:55,403 --> 01:54:58,220
+Yoksa bütün değerleriyle bunları...
+
+510
+01:54:58,260 --> 01:55:00,059
+Anlatmak birkaç hafta sürer.
+
+511
+01:55:01,500 --> 01:55:06,819
+Ve yazılım mühendisliğinde daha detaylarını öğreneceksiniz diyelim bu süreçlerin.
+
+512
+01:55:07,380 --> 01:55:15,680
+Sonrasında da ön inceleme ve fizibilite çalışmalarıyla yolumuza devam edeceğiz önümüzdeki hafta.
+
+513
+01:55:16,119 --> 01:55:22,819
+Peki bu haftalık bu kadar. Haftaya salı öğlen görüşmek üzere. Kendinize iyi bakın. Hoşçakalın.

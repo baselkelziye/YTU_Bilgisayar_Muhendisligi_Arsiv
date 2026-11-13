@@ -1,0 +1,2303 @@
+1
+00:05:34,259 --> 00:05:35,959
+Evet, iyi günler arkadaşlar.
+
+2
+00:05:38,599 --> 00:05:45,300
+10. haftamız mı oldu, kaç oldu? Yok, 11. haftadayız. Evet, 11. haftamız. 10. haftayı pas geçtik.
+
+3
+00:05:48,980 --> 00:06:08,680
+Sistem Analizi Tasarımında tasarım aşamasına devam edeceğiz. Özellikle nesne yönelik olarak modelleme yaparken, yani tasarımı gerçekleştirirken nelere dikkat etmemiz gerektiği konusunda geçen hafta bir giriş yapmıştık hatırlarsanız ve hangi diagramları neden ürettiğimiz konusunda da geçen iki hafta önce konuşmuştuk.
+
+4
+00:06:09,300 --> 00:06:26,780
+Sonrasında da bu iş nasıl yapılır? Yani sorumlulukların atanması, senaryolardaki bulduğumuz sorumlulukların, eylemlerin, fiillerin, yapılması gerekenlerin, bilinmesi gerekenlerin, bulunması gerekenlerin kime nasıl atanmaları gerekir?
+
+5
+00:06:26,780 --> 00:06:37,300
+Ya da neye dikkat ederek bu sorumlulukları ilgili nesnelere, daha doğrusu sınıflardan türeyen birimler olan nesnelere vereceğiz. Bununla alakalı şimdi dokuz...
+
+6
+00:06:37,300 --> 00:06:51,740
+9 adet genel sorumluluk atama prensibinden bahsedeceğim. Aslında yani birebir bunlardan hani mesul değilsiniz ama özellikle tasarım yaparken size yardımcı olması için, yol gösterici olması için bunlardan bahsetmeyi ekstra olarak istedim.
+
+7
+00:06:52,439 --> 00:07:00,420
+Hatırlarsanız GRASP tasarım kalıpları demiştik bunlara. General Responsibility Assignment Sort of Patterns demektir.
+
+8
+00:07:01,012 --> 00:07:10,252
+Yani genel sorumluluk atama yazılım kalıpları olarak biliniyor ama bunları aslında temel prensipler de diyebiliriz.
+
+9
+00:07:10,651 --> 00:07:18,891
+Tabi nesne yönelik çözümlemeden bunların çoğunu aslında biliyorsunuz fakat burada biraz daha formal olarak tanımlarını vermiş olacağız.
+
+10
+00:07:19,111 --> 00:07:28,971
+Şimdi temel prensip şu olması lazım. Yani bir iş yapılacak, bir sorumluluk var. Birileri bir hizmet vermek zorunda. Bunu acaba kim yapacak?
+
+11
+00:07:29,012 --> 00:07:56,391
+Yani ben bu metodu kime atamalıyım? Bu işi başlatacak olan esas metot, örneğin satışın toplam tutarını hesaplama örneğini vermiştik ya, bir sürü satış kalemi vardı, satış ürünleri vardı. Bunların her birinin kendi fiyatları ve miktarları vardı. Bir şekilde onların çarpılıp toplanmaları, sonrasında bir vergi hesabı yapılması ve toplam tutarın ekranda gösterilmesi bir şekilde ya da başka bir sisteme aktarılması.
+
+12
+00:07:57,012 --> 00:08:16,771
+Muhasebe Sistemi gibi bir yere bu bilginin verilmesi gerekiyordu. Peki, yani toplam tutarı hesapla diye bir sorumluluğumuz var. Biz bunu kime atacağız? İşte ilk kalıp aslında bizim temel prensibimiz olarak karşımıza çıkıyor. Buna da uzman adını veriyoruz. Yani expert adını veriyoruz bu prensibe. Tam olarak şunu söylüyor.
+
+13
+00:08:17,331 --> 00:08:31,891
+Bir sorumluluk atanacaksa onu bilginin uzmanına. Ne demek bilginin uzmanı? Bu işi yerine getirecek veriye kim sahipse, ona kim erişebiliyorsa, bunun sahibi kimse, o sınıfa bu sorumluluğu atamanız gerekir.
+
+14
+00:08:31,891 --> 00:08:39,052
+Şimdi nasıl yapacağız biz bunu? Hatırlarsanız analiz modelimizde bir kavramsal sınıflarımız vardı, kavramsal sınıf diagramımız vardı.
+
+15
+00:08:39,423 --> 00:08:43,483
+İlk önce daha tasarımda varsa yazılım sınıflarımıza bakarız.
+
+16
+00:08:44,343 --> 00:08:49,423
+Yoksa o zaman analiz modelimize geri dönüp kavramsal sınıflarımızı inceleriz.
+
+17
+00:08:49,423 --> 00:08:58,823
+Neler bulmuştuk? İşte kasiyer vardı, kasa vardı, satış vardı, satış satırları vardı, ürün vardı, ürün tanımı vardı gibi.
+
+18
+00:08:59,343 --> 00:09:02,803
+Acaba bunu kim bilir? Yani bu veriye kim sahiptir?
+
+19
+00:09:03,203 --> 00:09:07,144
+Bunu alırız kavramsal modelden yazılım modeline.
+
+20
+00:09:07,423 --> 00:09:15,264
+Yani analiz modelinden alıp tasarım modeline artık yazılımı gerçekleştireceğimiz uzaya bunu taşımış oluruz ve bir yazılım sınıfı haline getiririz.
+
+21
+00:09:15,264 --> 00:09:35,423
+Yani analiz modelimizdeki en uygun kavramsal sınıf bu işin uzmanı olarak, bu sorumluluğun uzmanı olarak hop diye bizim tasarım modelimize gelir ve böylece gösterim açısından gerçek dünyayı modellediğimiz hal ile yazılım arasında az farklılık yani düşük bir fark olması.
+
+22
+00:09:35,423 --> 00:09:37,124
+Bu konusunu sağlamış oluruz.
+
+23
+00:09:37,903 --> 00:09:40,923
+İşte satışın toplam bedeli demiştik hatırlarsınız.
+
+24
+00:09:41,303 --> 00:09:44,983
+Satış vardı, satış satırları vardı, bir de ürün tanımları vardı.
+
+25
+00:09:46,103 --> 00:09:50,723
+Şimdi ben get total diye bir tane bir sorumluluk, bir metot yazmak zorundayım.
+
+26
+00:09:51,264 --> 00:09:53,323
+Kim bilecek bunu, uzman kim?
+
+27
+00:09:53,663 --> 00:09:54,043
+Satış.
+
+28
+00:09:54,243 --> 00:09:54,403
+Neden?
+
+29
+00:09:54,624 --> 00:09:57,243
+Çünkü satışla ilgili bütün nesnelere o sahip.
+
+30
+00:09:57,903 --> 00:09:59,624
+Her bir satırı o biliyor, o görüyor.
+
+31
+00:10:00,000 --> 00:10:08,559
+O yüzden de bunun yani get total dediğimiz sorumluluğun burada satıştan türüyecek olan bir nesneye verilmesi doğru olacaktır.
+
+32
+00:10:08,920 --> 00:10:18,620
+O zaman ben satışı kavramsal uzaydan hop diye alıp yazılım uzayına getirdim ve üçüncü tarafını, kutusunu oluştururum ve ilk sorumluluğumu ona atamış olurum.
+
+33
+00:10:18,620 --> 00:10:23,440
+Neden atadım? Uzman olduğu için atadım. Uzman prensibine göre atadım. Bu kadar.
+
+34
+00:10:23,923 --> 00:10:39,943
+Satış get totalden sorumludur. Yani bu işi bu yapabilir. Bu metodun sahibi bu sınıftan türeyen nesne olacak dedik. Nasıl çalışacak peki? Tabii ki nesneler birlikte ih yaparak aslında bir sorumluluğu yerine getirecekler.
+
+35
+00:10:39,943 --> 00:10:48,163
+Yani siz sale get total dediğinizde tamam buyur al verdim sana cevabı diyemeyecek. Neden? Çünkü kendisinin de aslında
+
+36
+00:10:49,268 --> 00:11:06,408
+Sorması gereken, yani öğrenmesi gereken veriler var. Ne demektir? İşte bakın mesela buradaki diagramda görüyorsunuz bir yıldız var. Neydi bu? Döngü. Yani bütün hepsi için. Ne yapacağız? Bütün satış satırlarına teker teker diyeceğiz ki,
+
+37
+00:11:07,028 --> 00:11:34,528
+Alt toplamını ver. Get sub total diyeceğiz. Hadi ne oldu? Neden böyle bir şey yaptım? Çünkü ben onun kaç para olduğunu bilmiyorum. O bilgiye o sahip. Onun uzmanı da kendisi. Her bir satış satırı, yani o fişteki her bir satır kaç para olduğunu, kaç adet olduğunu aslında kendisi, kaç adet olduğunu değil, kaç para olduğunu kendisinin bir şekilde biliyor olması lazım. O zaman ben bunu ona sorarım. Yani sen toplam tutarını ver kardeşim.
+
+38
+00:11:35,028 --> 00:11:36,928
+Toplamını ver kardeşim diye ona sorarım.
+
+39
+00:11:37,288 --> 00:11:49,648
+Ne oldu? Bir metot bununla sorumluluk atadık ama o da çalışması için de kendi içindeki bütün koleksiyona teker teker senin alt toplam tutarın ne kadardır diye sormak zorunda kaldı.
+
+40
+00:11:49,648 --> 00:11:54,807
+Ve bu sayede bakın burada da bu konunun uzmanı kendisi bildiği için miktar burada.
+
+41
+00:11:56,028 --> 00:12:00,628
+O yüzden get sub totali buraya bir metot olarak atadık. Hadi bakalım.
+
+42
+00:12:00,912 --> 00:12:08,692
+Ama şimdi bu yeterli olacak mı? Doğal olarak bu da yeterli olmayacak. Neden? Çünkü her bir satış satırı o ürünün kaç para olduğunu bilmiyor.
+
+43
+00:12:09,052 --> 00:12:19,032
+Kim biliyor? Uzmanı kim bu bilginin? Sahibi kim? Ürün tanımları, product description diye hatırlarsınız yine kavramsal modelimizde bir tane sınıf vardı.
+
+44
+00:12:19,032 --> 00:12:25,032
+İşte her bir satış satırı, koleksiyondaki her bir nesnede kendisi için get subtitle çağrıldığında,
+
+45
+00:12:26,100 --> 00:12:52,819
+Kendi içinde bakın 1.1 olarak get price yapması gerekiyor. Ne oldu? Product description'ında get price diye bir sorumluluğun olmasını ortaya çıkardık ve onu da buraya koyduk. Neden? Çünkü price burada tanımlı bakın uzman bu. Bu sınıf, bunun sahibi, bu bilginin uzmanı bu. O yüzden de get price buraya gelmiş oldu. Ne yaptık? Biz burada şöyle gösterecek olursak.
+
+46
+00:12:53,364 --> 00:13:10,124
+Get Total diye bir sorumluluk ama bunu kime verdik? Satış sınıfına verdik. Satış sınıfı bunu yapacak ama bunu yapmak için sahibi olduğu bütün listenin her birine ya senin toplam alt tutarın ne kadar?
+
+47
+00:13:19,135 --> 00:13:35,975
+Sadece yazalım. Ondan sonra ikinci nesnenin de atıyorum. İşte silgi olduğunu biliyorum. Yani kalem senin top totalin ne kadardır, silgi senin top totalin ne kadardır diye hepsini teker teker sorup burada şu metodun içinde bunları bir şekilde toplamam gerekiyor.
+
+48
+00:13:48,083 --> 00:13:49,923
+Etkileşim diyagramında gösteriyorum.
+
+49
+00:13:50,483 --> 00:13:58,803
+Şimdi bu da kendi içinde, sale get total dedik, onun için de, yani şöyle hatta pseudocode tarzı bir şey yazalım buraya.
+
+50
+00:14:00,483 --> 00:14:13,124
+Şöyle işte, sale.get total çağırdığımız zaman, aslında bu da kendi içinde bir yerlerde işte for each yapacak.
+
+51
+00:14:13,524 --> 00:14:29,204
+Diyelim şöyle basit bir şekilde, for each item in diyelim tamam mı? Sales line item, sales lines diyelim.
+
+52
+00:14:29,204 --> 00:14:39,823
+Şöyle, bunun içinde get subtotal, şey işte st eşittir, get subtotal diyeceğiz.
+
+53
+00:14:41,971 --> 00:15:03,912
+Tamam. Ondan sonra işte şunu kapattık. Bunun içinde de orayı şöyle göstereyim. Şuradan şöyle bir ok çıkartalım ve bu da kendi içinde, onu da başka bir renkle yazalım şöyle maviyle yazalım.
+
+54
+00:15:09,844 --> 00:15:15,964
+P eşittir, işte product description.getPrice.
+
+55
+00:15:17,744 --> 00:15:26,943
+Çağırmak zorunda, tamam. Hatta belki P eşittir, bilmem ne. Ondan sonra da çok basit olsun, return P gibi bir şey yazması gerekecek.
+
+56
+00:15:27,303 --> 00:15:29,964
+Tamam, ben burada algoritma, mesela burada şeyi falan yazmadım.
+
+57
+00:15:30,192 --> 00:15:58,152
+Tabii bu örnek pseudokot gibi bir şey yazdığım için, bunun için de doğal olarak bir değişkende bunların hepsini teker teker toplamanız gerekecektir. Belki bir vergi hesabı yapmanız gerekecektir. O detaylar burada yok. Nihayetinde ben burada aslında bir işi yapmak için, senaryodaki bir sorumluluğu yerine getirmek için bir nesneye sorumluluk verdim. O da başka bir sorumluluk sahibi uzmana bir şeyler sordu. O da başka bir sorumluluk sahibi uzmana, sen fiyatın nedir diye.
+
+58
+00:15:58,192 --> 00:16:06,772
+Sordu, aldı, geri verdi, geri verdi, topladı ve bu işin yapılmasını, buradaki yet total sorumluluğunun yerine getirilmesini sağladı.
+
+59
+00:16:06,772 --> 00:16:18,912
+Yani 3 tane ayrı uzmana sorumluluklarını atamış olduk ama sadece senaryodaki toplama hesaplama metodu sahibi buradaki seyir nesnesi oldu.
+
+60
+00:16:19,371 --> 00:16:21,251
+Export ya da uzman kalıbı gereğince.
+
+61
+00:16:21,971 --> 00:16:40,172
+İkinci prensibimiz yaratma prensibi, creator kalıbı diyoruz biz buna. Buradaki soru da şu, diyelim ki bir nesne yaratacağız, bir örnek yaratmamız gerekiyor. Bunu kim yaratacak? Yani hani new bilmem ne satırını nerede yazmamız gerekiyor? Nesnenin sahibinin kim olması gerekiyor?
+
+62
+00:16:49,971 --> 00:17:07,912
+B, A nesnelerini içermelidir. İçeriyorsa dedik. Ya da bunların kaydını tutuyorsa ya da bunları kullanıyorsa ya da yaratmak için başlangıç verilerine sahipse. Demek ki siz bir nesneye başlangıç verilerine sahipseniz.
+
+63
+00:17:08,435 --> 00:17:21,496
+Ya da onu içinizde kaydını tutuyorsanız, ya da onu içinizde barındırıyorsanız, ya da onu sürekli kullanıyorsanız, onun sahibi siz olmalısınız, onun yaratıcısı siz olmalısınız diyoruz buradaki yaratıcı kalıbı gereğince.
+
+64
+00:17:21,940 --> 00:17:39,140
+Şimdi bunun örneğine bakalım. Elimizde işte yine satış var. Bir de okuttukça, bar kodu okuttukça mesela her bir satırın yaratılması gerekiyor değil mi? Şu sale line item dediğimiz bir nesnenin yaratılıp koleksiyona, mesela diziye eklenmesi gerekiyor.
+
+65
+00:17:39,763 --> 00:18:04,243
+Peki bunları kim yaratacak? Şimdi kasa mı yaratsın? Neden? Çünkü kasa okuyor değil mi? Aslında ama kasa yapsın dersek o zaman kasa gidip gereksiz yere satışın iç detaylarıyla ilgilenmeye başlar. Bunun sahibi olur. Halbuki bunun sahibi aslında satış nesnesinin kendisi olması lazımdır. Yani çok sayıda satış kalemini, satış satırını kim içeriyor?
+
+66
+00:18:04,788 --> 00:18:18,148
+Buradaki satış nesnesi içeriyor. O yüzden ben buradaki yaratma sorumluluğunu, şuradaki create quantity'yi ben burada satış sınıfından türeyen nesneye vermek durumundayım.
+
+67
+00:18:18,327 --> 00:18:23,188
+Buna verirsem ne olur? Dediğim gibi gereksiz yere bunu buna bağlamış olurum.
+
+68
+00:18:23,407 --> 00:18:36,967
+Sonrasında satış, kendi içindeki get price, get sub total dedik ya, bu gibi şeyleri yaparken her bir seferinde gidip kasaya, ya kasa şunu bana versene diye sormak zorunda kalacak.
+
+69
+00:18:37,268 --> 00:18:41,728
+Bunu engellemek için aslında bir çeşit yaratma uzmanı olarak da düşünebilirsiniz.
+
+70
+00:18:42,447 --> 00:18:49,127
+Bir nesnenin yaratma sorumluluğunu onu en çok kullanana, içinde barındırana vermemiz gerekir diyoruz.
+
+71
+00:18:49,811 --> 00:19:16,672
+Bununla beraber aslında yine temel prensiplerden bir tanesi az bağımlılık, low coupling dediğimiz konu. Bu da aslında değişimlerden etkilenmememizi sağlıyor. Soru da bu. Değişimlerden nasıl etkilenmeyiz? Ya da biz yarattığımız bu sınıfları, kavramsal sınıflardan türettiğimiz yazılım sınıflarını başka uygulamalarda da tekrar kullanabilir miyiz? Başka modüllerimizde belki tekrar kullanabilir miyiz? Bunlara nasıl kolaylık sağlayabiliriz?
+
+72
+00:19:17,683 --> 00:19:27,023
+Cevap şu, sınıfların arasındaki bağımlılığı en aza mümkün olduğunca en aza indirecek şekilde sorumlulukları atamanız gerekir.
+
+73
+00:19:27,023 --> 00:19:41,083
+Bakın biraz önce ben aslında bunu da söylemiş oldum, yaratma konusunda. Kasa yaratabilirdi ama kasa yaratırsa ona bağımlı hale gelirdi. Her seferinde satış gidip kasaya satırları için, kalemleri için bir şeyleri sormak zorunda kalacaktı.
+
+74
+00:19:45,683 --> 00:19:52,623
+Kasa kendisinden attı, kime verdi? Satışa verdi ve satış onu New Sale Line Item olarak yaratmış oldu.
+
+75
+00:19:53,324 --> 00:20:01,723
+Az bağımlılığı neden istiyoruz? Değişim diğerlerini etkiler. Bir sınıfın değişmesi, bağlı diğer sınıfların değişmesini gerektirir.
+
+76
+00:20:02,123 --> 00:20:08,864
+Hepsinin test edilmelerini gerektirir ve sınıfların ayrı ayrı anlaşılırlıklarını ve kullanılırlıklarını azaltır.
+
+77
+00:20:10,548 --> 00:20:16,387
+Biz mümkün olduğunca az bağımlı grupla, az bağımlı birimler üretmeye çalışıyoruz.
+
+78
+00:20:17,087 --> 00:20:21,768
+Nasıl bağımlılık ortaya çıkar sınıflar arasında, daha doğrusu nesneler arasında?
+
+79
+00:20:22,927 --> 00:20:31,728
+Eğer siz A'nın B'ye bağımlılığından bahsederken, B cinsinden bir üyeniz varsa, yani onu barındırıyorsanız bağlısınızdır.
+
+80
+00:20:32,488 --> 00:20:37,288
+Metodunu kullanıyorsanız o zaman işte metot bağımlılığı kapsamında bağımlısınızdır.
+
+81
+00:20:38,132 --> 00:20:48,132
+Eğer bir metodunuzda o nesne tipinden bir parametre aktarıyorsanız doğal olarak ona bağımlı ama parametre bağımlılığı olarak daha kısıtlı da olsa bağımlısınızdır.
+
+82
+00:20:48,711 --> 00:20:55,392
+Kendi içinizde B tipinden, B sınıfından türeyen bir nesne tipinde bir değişkeniniz varsa bağımlısınızdır. Yine sahibi olduğunuz için.
+
+83
+00:20:55,923 --> 00:21:07,003
+Doğrudan ya da dolaylı olarak B'den türetilmişse, bir alt sınıfıysa o zaman yine A'nın B'ye bağımlılığı söz konusudur.
+
+84
+00:21:07,563 --> 00:21:10,144
+Mümkün olduğunca bunu azaltmaya çalışıyoruz.
+
+85
+00:21:10,144 --> 00:21:16,824
+İşte mesela burada da hani satış kalemini yaratma örneğini vermeyelim de ödeme nesnesine örneğini verelim.
+
+86
+00:21:17,144 --> 00:21:22,103
+Aslında biz kasa ödemeyi nereye yapıyoruz? Kasaya yapıyoruz değil mi? Make payment aslında register'a geliyor.
+
+87
+00:21:23,923 --> 00:21:42,043
+Ne yapması lazım? Bir tane payment nesnesini önce yaratması lazım. Bunu yarattıktan sonra da satışa eklemesi lazım. O zaman nasıl olacak? Satışa bir önce yaratıp ondan sonra buraya eklerse ne olacak?
+
+88
+00:21:51,316 --> 00:22:08,255
+Kendi üzerimden atsam ne olur? Ben register'a hani make payment geldi. Bakın hiçbir şey yapmadan direkt olarak satışa bunu aktardı. Hiç içi boş yani sadece make payment direkt s.make payment'ı çağırdı. Olay bu kadar. Ve bu sayede yaratma.
+
+89
+00:22:09,011 --> 00:22:31,871
+Sorumluluğunu satışa gördüğünüz gibi aktardım. Birinin içinde 1.1 bunu create ediyor. Yani new payment yapıyor. Bu sayede ben kasa olarak gereksiz yere bir ödeme işlemiyle bağımlı halde kalmamış oluyorum. Yani yarın öbür gün başka türlü bir ödeme belki olacak ve ben buna bağımlı halde kalmamış olacağım. Mümkün olduğunca az bağımlı kalmaya gayret ediyoruz.
+
+90
+00:22:36,084 --> 00:22:51,783
+Bu da karmaşıklığın idaresi için aslında ortaya koyulmuş bir prensip. Ne demektir? Sınıfın içindeki karmaşıklığı nasıl idare edebilirim? Bir birim olarak sınıfın içindeki karmaşıklığı nasıl idare edebilirim? Cevap da şu.
+
+91
+00:23:04,084 --> 00:23:07,104
+Uyum olacak şekilde atamalarınızı gerçekleştirin.
+
+92
+00:23:07,483 --> 00:23:12,364
+Alakasız çok farklı işleri bir sınıfın içine sorumluluk olarak koymayın.
+
+93
+00:23:12,683 --> 00:23:13,523
+Ne demek oluyor bu?
+
+94
+00:23:13,903 --> 00:23:19,864
+Her bir kavramın belirli sorumlulukları, birbiriyle ilgili ya da benzer konularda sorumlulukları olsun.
+
+95
+00:23:19,864 --> 00:23:25,864
+Eğer birbiriyle ilişkisi olmayan işler yapan bir sınıfınız varsa, içindeki uyum kötü olacaktır.
+
+96
+00:23:26,771 --> 00:23:48,311
+Kendi içindeki uyum. Ve o kavram aslında bileşik bir kavram demektir. Hem anlaşılırlığı zorlaşacaktır. Hem bakım yapması zorlaşacaktır. Farklı farklı hizmetler verdiği için. Hem de bunu alıp başka bir yerde aynı sınıfı kullanma ihtimaliniz zorlaşacaktır. Çünkü o hizmetlerin hepsini başka yerde de aynı şekilde sağlıyor olmanız gerekecektir.
+
+97
+00:23:54,771 --> 00:24:04,672
+Çeşitliklerden etkilenmek demekti. Bunlardan korunmak için de mümkün olduğunca sınıf içindeki uyumu iyi olacak şekilde sorumlulukları atamamız gerekir.
+
+98
+00:24:05,112 --> 00:24:10,072
+Burada bir nokta var yalnız dikkat etmemiz ya da farklı bir şekilde davranmamız gereken.
+
+99
+00:24:11,316 --> 00:24:16,855
+Ben mesela bir yerlere veri kaydedeceğim, bir veri tabanına falan veri kaydedeceğim.
+
+100
+00:24:17,336 --> 00:24:22,596
+İşte ödeme kendi kaydını yapması beklenir, kendi sorumluluğu, uzmanı kendisi.
+
+101
+00:24:23,036 --> 00:24:29,036
+Ondan sonra işte satışın bir şeyler kayıtlarını veri tabanına yazması gerekiyorsa kendisinin yazması gerekir.
+
+102
+00:24:30,056 --> 00:24:38,516
+Onun dışında işte ne bileyim hani vergiyle ilgili şeyler kendi veri tabanına okumalarını yazmalarını kendisinin yapması gerekir değil mi?
+
+103
+00:24:39,316 --> 00:24:53,355
+Kendi sorumlulukları, uzmanı da kendisi ama herkes, bütün sınıflar mesela böyle bir veri tabanı bağlantısıyla alakalı işlemleri kendi içinde yaparsa esas uzmanı oldukları işten biraz da uzaklaşmış oluyorlar.
+
+104
+00:24:53,436 --> 00:24:57,375
+Sınıf içinde uyumsuz, alakasız başka işler de yapmış olabiliyorlar.
+
+105
+00:24:58,296 --> 00:25:07,296
+Özellikle hani çok beylik bir örnek olduğu için işte veri erişimi konusunda mesela veri tabanı işlemlerini tek bir ekibin ya da programcının da sorumluluğuna vermek için de
+
+106
+00:25:07,316 --> 00:25:27,036
+Aynı zamanda iyi uyum özelliğini ya da bu prensibi biraz bozabiliriz. Ne yaptık? İşte belirli şeyleri uzmanından alıp başka birisine, yapay bir uzmana vermiş olduk. Yeter ki bütün veri tabanı işlemleri bir yerde kalsın diye.
+
+107
+00:25:35,316 --> 00:25:56,776
+Normal C'deki fonksiyonlardan bir farkınız kalmaz. Nesne mantığınız direkt olarak fonksiyon mantığına dönmeye başlar. O yüzden bunu mümkün olduğu noktalarda yeteri kadar kullanalım. Sürekli olarak böyle yapay sınıflar üzerinde çalışmayalım diyoruz veri tabanı gibi örneklerde.
+
+108
+00:25:56,776 --> 00:26:02,956
+Bir de ikinci şey, dağıtık sistemlerde özellikle belki network trafiğini azaltmak ihtiyacınız olabilir.
+
+109
+00:26:03,316 --> 00:26:09,855
+Böyle bir durumda da yine iyi uyumu bozabilirsiniz. Ama mümkün olduğunca bozmamaya gayret edin diyoruz.
+
+110
+00:26:10,836 --> 00:26:21,655
+Aynı örnek burada da geçerli. İşte ödeme yapıldığında şimdi ne yapabilir? Register yani kasamız ödeme yaratıp ondan sonra buraya verebilir.
+
+111
+00:26:21,756 --> 00:26:25,496
+Ama gördüğünüz gibi kendi içinde bir de ödeme yaratma işini.
+
+112
+00:26:26,132 --> 00:26:47,112
+sahibi oldu. Ama o kasanın işi aslında başka şeylerdi. Esas sorumlulukları başka şeyler olması gerekirdi. O yüzden make payment buna geldiği anda hiçbir şey yapmadan direkt olarak bunu satışa delege ediyor. Ve satış nesnesi esas buradaki uyum kendi içindeki ödeme ile alakalı işlemler de kendisiyle alakalı olduğundan dolayı kendisiyle
+
+113
+00:26:47,539 --> 00:26:57,380
+Uyumlu olacak şekilde, kasanın uyumsuzluğunu, uyumluluğunu bozmayacak şekilde ödeme nesnesine bu yaratıyor diyebiliriz.
+
+114
+00:26:57,799 --> 00:27:01,600
+Dediğim gibi yani birbiriyle uyumlu işleri sınıflarda tutun.
+
+115
+00:27:01,971 --> 00:27:06,892
+Eğer birbiriyle çok uyumsuz işler varsa büyük bir ihtimalle orada farklı bir kavram vardır.
+
+116
+00:27:07,451 --> 00:27:15,672
+Orada yeni bir belki yazılım sınıfına ihtiyaç duyuyor olabilirsiniz diyerek ilk dört prensibin üzerinden tekrardan bir hızlıca geçmiş olduk.
+
+117
+00:27:17,172 --> 00:27:20,791
+Beşinci başlığımız, beşinci prensibimize geldiğimizde
+
+118
+00:27:20,791 --> 00:27:26,392
+Burada controller dediğimiz
+
+119
+00:27:27,028 --> 00:27:44,647
+Yapı karşımıza çıkıyor. Özellikle olay tabanlı sistemlerde ya da hizmetlerde sistemde bir sürü olay yaratılıyor. Peki bu olayları kim karşılayacak? Yani sistem olaylarıyla ilgili işleri kim yapacak? Bunun sorumlusu kimdir? Bunun uzmanı kimdir diyebilirsin.
+
+120
+00:27:46,256 --> 00:27:55,776
+Ben burada normalde kavramlarımda yer almayan ama yazılım sınıfı olarak bir şekilde ihtiyaç duyduğum yeni bir yapay uzmana ihtiyaç duyuyorum.
+
+121
+00:27:55,856 --> 00:27:58,716
+Bu yapay uzmana da denetçi ya da kontrolör adını veriyorum.
+
+122
+00:27:58,716 --> 00:28:01,856
+Bunu farklı farklı şekillerde yapabilirsiniz. Mesela.
+
+123
+00:28:03,124 --> 00:28:27,564
+Ufak bir sistemdir, ufak bir problemdir ya da bir alt sistemdir. Bütün sistem ya da alt sistem için bir tane tek bir kontrol, fasad kontrol gibi bir şey yapabilirsiniz. Ya da bu nedir? Yapay bir sınıf aslında ve bütün kontrol işlemleri, olay kontrolleri, olayları karşılayacak olan ve ilgilisini aktaracak olan yapay uzmanımız bir tane olabilir.
+
+124
+00:28:31,124 --> 00:28:41,024
+use case controller'lar ya da session controller'lar yaratabilirsiniz. Yani daha fazla controller, daha fazla yapay sınıf, daha fazla yapay uzman da yaratabilirsiniz.
+
+125
+00:28:41,423 --> 00:28:51,804
+Projenin ya da problemin boyutlarına göre. Olay dediklerimiz de aslında aktörler tarafından üretilen ve sistemdeki bütün işlemlerle ilgili olan olaylar.
+
+126
+00:28:51,804 --> 00:28:53,304
+Mesela birisi butona tıkladı.
+
+127
+00:28:53,940 --> 00:29:19,779
+Ya da işte bar kodu BIP dedi okuttu. Ya da bir bar kod numarası girdi, tak diye bir tuşa bastı, enter tuşuna bastı. İşte bunların hepsi birer olay aslında, olay yaratmış oluyoruz. Controller buradaki yapay uzmanımız, bu olayı algılayıp bazı özellikle denetimler yaptıktan sonra, mesela bar kod numarası doğru mu falan gibi denetimleri yaptıktan sonra bunu esas sorumluluk sahibine, uzmanına aktarır.
+
+128
+00:29:19,779 --> 00:29:20,440
+Tamam.
+
+129
+00:29:21,940 --> 00:29:35,860
+Denetçiyi aslında söyledik, nasıl? Eğer çok fazla olay yoksa tek bir denetçi yeterlidir. Olay sayısı bu denetçinin uyumunu bozacak kadar fazlaysa, iyi uyumu bozacak kadar fazlaysa birden fazla denetçi kullanabilirsiniz.
+
+130
+00:29:36,756 --> 00:29:43,876
+Sistem kontrolleri yapacaksak senaryonun içinde o zaman her senaryo için ayrı denetçiler olması gerekli olabilir.
+
+131
+00:29:43,876 --> 00:29:48,056
+Burada dikkat edilmesi gereken şey işi denetçi yapmıyor, hizmeti denetçi sunmuyor.
+
+132
+00:29:48,716 --> 00:29:53,876
+Sadece aktarıyor ama kime aktarılacağına karar veriyor. Böyle bir gateway gibi düşünebilirsiniz.
+
+133
+00:29:54,376 --> 00:29:58,636
+Hani ha şu olay oldu, bunun sonucu şu nesne, al sen bunu yap.
+
+134
+00:30:00,000 --> 00:30:05,380
+İptale bastı, iptalin sorumlusu bilmem kim, al sen bunu yap şeklinde düşünebilirsiniz.
+
+135
+00:30:05,539 --> 00:30:19,700
+Ya da işte mouse bir şeyin üzerini tuttu seçti, o zaman onun ilgilisi şu nesnedir, al sen bunu olduğu için bu işlemleri yap şeklinde ilgili sorumlu nesneye siz bu mesajı aktarmakla yükümlüsünüz denetçi olarak.
+
+136
+00:30:20,920 --> 00:30:23,759
+Dediğim gibi tek yapmanız gereken belki basit denetimler olacaktır.
+
+137
+00:30:24,756 --> 00:30:43,736
+Denetçi ya da kontrolör sayesinde siz arayüzünüzle, yani girdi çıktı arayüzünüzle uygulama katmanızı da birbirinden ayırmış olursunuz. Hatta programlarınızı diyelim arayüzünüzden, business logic katmanızı arayüzünüzden ayırmış halde tutabilirsiniz.
+
+138
+00:30:45,907 --> 00:31:08,548
+Tabii denetçiyi direkt arayüze de verebilirsiniz. Fakat hani şey diyelim bir tane Windows formunuz var diyelim ya da bir web sayfanız var. Denetçi direkt olarak o da olabilir ama mümkünse ayrı tutmakta hani Viva kontrollerı ayrı tutmakta fayda var. Çünkü yarın öbür gün hani Windows form diye özellikle söyledim. Belki yarın öbür gün aynı uygulamanın bir mobil ön yüzü olmasını isteyeceksiniz.
+
+139
+00:31:13,907 --> 00:31:15,327
+Bir yerde çalışmasını isteyeceksiniz.
+
+140
+00:31:15,747 --> 00:31:17,927
+İşte o zaman bunları yeniden kullanamazsınız.
+
+141
+00:31:18,028 --> 00:31:19,087
+Esnekliğiniz azalır.
+
+142
+00:31:19,087 --> 00:31:25,307
+Bu nedenle denetçileri arayüz nesnelerinde tutmak çok da doğru olmayacaktır.
+
+143
+00:31:26,687 --> 00:31:30,747
+Bir de işlemlerin sırasını da denetçi kontrol edebilir.
+
+144
+00:31:30,927 --> 00:31:32,087
+İşte mesela...
+
+145
+00:31:33,076 --> 00:31:44,816
+Bir ödeme, payment'ı create ediyoruz ya, daha satış bitmeden ödeme yapmaya çalışıyor. Bunu engelleyebilir. Böyle kontrolleri de yine kontrollerin içinde yapabilirsiniz.
+
+146
+00:31:45,364 --> 00:31:55,204
+Mesela sistem tipinde bir denetçi var diyelim. Bu tabii sistem yazıyor ama gerçekten mesela bunları, bu sorumlulukları büyük bir ihtimalle kasaya vereceğiz.
+
+147
+00:31:55,204 --> 00:32:04,944
+Satışı tamamla, yeni bir ürün gir, satış başlat, ödeme yap. Hatırlarsanız ödemeyi yap dediğinde direkt olarak satışa bunu aktarmıştık.
+
+148
+00:32:05,344 --> 00:32:12,204
+İşte bu bir sistem denetçisi. Aslında kasa buradaki bizim sistemimizde, ödeme sistemimizde ya da işte...
+
+149
+00:32:12,564 --> 00:32:17,124
+Market sistemimizdeki sistem denetçisi olarak çalışabilir.
+
+150
+00:32:17,724 --> 00:32:24,144
+Ya da bu büyük bir sistemdir ve kendi içinde bakıyorsunuz ki uyumu bozuyor.
+
+151
+00:32:24,264 --> 00:32:29,824
+Aynı şey ama hani satışla ilgili işler yapıyor, ödeme ile ilgili işler var ya da kontroller var diyelim.
+
+152
+00:32:31,004 --> 00:32:37,684
+İade ile ilgili işlemler var, o var bu var derken çok farklı farklı sorumluluklar almaya başlıyor bu denetçi.
+
+153
+00:32:40,564 --> 00:32:42,504
+İşlemleri bir satış denetçisine koyayım.
+
+154
+00:32:43,344 --> 00:32:46,204
+İade ile ilgili işlemleri bir iade denetçisine koyayım.
+
+155
+00:32:46,284 --> 00:32:49,764
+Belki ödemeyi ayrı bir denetçiye koyayım gibi bir şeyler yapabilirsiniz.
+
+156
+00:32:49,764 --> 00:32:58,004
+Böyle hani mantıksal ayrımlarda yapabilirsiniz ve bunlar da ayrı senaryo denetçileri olarak kullanılabilir.
+
+157
+00:32:58,244 --> 00:33:02,564
+Esnek yani tamamen probleme göre, problemin boyutlarına göre değişebilir.
+
+158
+00:33:03,008 --> 00:33:22,768
+İlla olmak zorunda da değil. Dediğim gibi bunu direkt bir arayüz nesnesine de verebilirsiniz. Ama mümkün olduğunca bunu bir yapay uzmana, böyle bir denetçiye vermek daha doğru olacaktır. Hem sisteminizin bakım yapılabilirliğini hem de yeniden kullanılabilirliğini arttıracaktır diyoruz.
+
+159
+00:33:22,768 --> 00:33:30,768
+İşte mesela burada bakın bir tane şey var, basit bir örnek. Kasiyerimiz var burada, aktörümüz. Tamam mı? Çok şey yani bir tane basit bir...
+
+160
+00:33:31,008 --> 00:33:35,588
+Windows 4 mu olsun Java'da yazılmış. Direkt bar kod numarasını buraya tıkır tıkır yazıyoruz.
+
+161
+00:33:36,208 --> 00:33:40,948
+3 tane diyoruz. Tamam mı? İşte kalemin bar kodunu yazdık. 3 şey dedik ve Enter Item.
+
+162
+00:33:41,311 --> 00:33:52,391
+Enter item'a bastığımda, tıkladığımda ya da işte gerçek marketlerde bildiğiniz gibi barcode'u bip diye okuttuğumda bir ses geliyor ya işte ne oldu? Ürün okundu, barcode numarası okundu.
+
+163
+00:33:53,311 --> 00:34:02,351
+Olayı yaratılıyor. Bakın action perform ne? Bir şey oldu diye karşılayıcıya verecek. Karşılayıcıya vermeden önce tabii doğal olarak bu nerede oluyor? İşte bir tane J-frame'de.
+
+164
+00:34:04,096 --> 00:34:18,956
+Kimi çağıracak? Denetçiyi çağıracak. Denetçiye diyecek ki bir ürün girildi. Denetçinin içinde bir sorumluluk vardı ya, yeni ürün okutuldu. Barkod numarası bu, miktarı da bu. İşte bu denetçi.
+
+165
+00:34:19,923 --> 00:34:35,603
+Artık bu işlemleri gidip kendisi yapmayacak. Product specification'dan bunun fiyatını bulayım, fiyatını şu nesnenin içine fişteki satırını yaratayım, KDV'sini hesaplayayım, ıvırını kıvırını yapayımı, register yapmayacak.
+
+166
+00:34:41,360 --> 00:34:49,400
+Bir tane seninle alakalı yeni bir ürün girdi. Buyur. Barkodu bu, miktarı bu diye sadece aktaracak.
+
+167
+00:34:50,260 --> 00:34:59,940
+Hiçbir şey yapmadan, belki şey kontrol edebilir, hani barcode bilmem 8 hane 10 hane midir falan gibi bir şey kontrolü ya da miktar eksi girilmiş midir gibi kontrolleri yapabilir.
+
+168
+00:35:00,360 --> 00:35:11,140
+Ama onun dışındaki işlemi direkt olarak buraya aktaracak. Bu nereden ne okuyacaksa, ne yaratacaksa, ne yazacaksa, ne çarpıp bölecekse bunların hepsini ilgilisi yapacaktır, uzman yapacaktır.
+
+169
+00:35:11,539 --> 00:35:13,440
+Kasa burada denetçi olarak çalışıyor.
+
+170
+00:35:13,807 --> 00:35:27,387
+Okey, yani ön yüzümüz var. Ön yüzden gelen bütün eventleri aslında bu karşılıyor ve ilgililerine al sen bunu yap, al sen bunu yap, al sen bunu yap diye dağıtan bir böyle hub gibi çalışan bir denetçi.
+
+171
+00:35:29,492 --> 00:35:44,351
+Denetçi, yapay uzman aslında dedik. Altıncı başlığımız, altıncı prensibimiz de polimorfizm ya da çok şekillilik. Tabii bunu çok detayına girmeyeceğim. Nesne'in yönelik programlama da zaten yeterince biliyorsunuz.
+
+172
+00:35:44,351 --> 00:35:55,391
+Elimizde tiplere bağlı alternatiflerimiz varsa bunları biz nasıl ele almalıyız? Problemimiz bu. Ya da sistemimize kolayca monte edebileceğimiz yazılım parçalarını nasıl gerçeklemeliyiz?
+
+173
+00:35:57,492 --> 00:36:04,952
+Sınıflara bağlı, alternatif davranışların sınıflara bağlı olarak değişiklik gösteriyorsa bunları polimorfik metotlarla gerçekleyin diyoruz.
+
+174
+00:36:05,427 --> 00:36:33,347
+Yani if'ten else gibi böyle koşullarla metot çağırmak iyi bir yöntem değildir. Bunun yerine polimorfik olmak gerekir. Bunun tabii esas golf tarafında çok farklı 3-5 kalıbı var. Hani strateji gibi, kompozit gibi kalıpları var. Onlara şu anda tabii ki girmiyoruz. Ama sadece hani eğer değişen davranışlarınız varsa, şöyle de olabilir, böyle de olabilir. Yarın öbür gün bu türlü de olabilir gibi davranışlarınız varsa.
+
+175
+00:36:33,427 --> 00:36:50,608
+Bunları polimorfik olarak gerçeklemeniz gerekecektir. Eğer tek bir davranış varsa ve değişmeyecekse çok şekilde olmanıza gerek yok. Ama mesela diyelim ki işte vergi hesaplıyoruz tamam mı? Vergi hesaplayan bir şey var, web servisi var. Biz ondan hizmet alıyoruz.
+
+176
+00:37:01,427 --> 00:37:12,307
+Ödeme alacağım. Visa'nın bir otentikasyon sistemi var. Bana okutulan Visa kartının bilgisini oraya yollamalıyım. Bana Mastercard okutulursa Mastercard'a yollamalıyım.
+
+177
+00:37:12,307 --> 00:37:24,847
+Ama yaptığım şey aslında kredi kartını doğrulamak. Değil mi? Geçerli mi diye sormak. Sorumluluk bu. Ama Visa başka türlü çalışıyor, Mastercard başka türlü çalışıyor, American Express başka türlü çalışıyor.
+
+178
+00:37:29,427 --> 00:37:33,648
+Troy mesela yerli kart sistemimiz.
+
+179
+00:37:34,007 --> 00:37:35,688
+Mesela Troy bambaşka bir şekilde çalışıyor.
+
+180
+00:37:35,768 --> 00:37:42,027
+Bambaşka bir sunucudan, bambaşka protokolle, belki de bambaşka parametrelerle bir şeyleri isteyip cevap veriyor.
+
+181
+00:37:42,787 --> 00:37:46,127
+Yani yarın öbür gün değişebilecek, ilave olabilecek.
+
+182
+00:37:46,127 --> 00:37:48,367
+Ama aslında bizim için tek bir iş.
+
+183
+00:37:49,523 --> 00:37:55,443
+Kredi kartı doğrulama işi yapılacaksa bunları polimorfik olarak gerçekleştirmemiz gerekecektir.
+
+184
+00:37:55,823 --> 00:38:05,423
+Hele bir de burada dış sistemlerle konuşuyorsak konuştuğumuz her bir dış sistemin ya da yabancı tarafın önüne bir adaptör koymalıyız.
+
+185
+00:38:05,523 --> 00:38:10,543
+Bir adaptör sınıfı koymalıyız ve bu adaptör sınıfı ile aslında biz konuşmalıyız.
+
+186
+00:38:10,623 --> 00:38:17,063
+Bu sayede uygulamamızı dış uygulamaya da bağımlı halde tutmamış, az bağımlı halde kalmış oluruz.
+
+187
+00:38:17,523 --> 00:38:39,304
+Şöyle, işte mesela vergi hesabı dedik ya burada. Ben burada vergi hesabı için işte Tax Master diye bir tane sistemle konuşurken GetTaxousSales diye bir şey veriyorum. Bir metodun var, onu bir şekilde çağırıyorum. Başka bir sistemle konuşurken başka bir sınıf. Yarın öbür gün başka bir şey, başka bir sınıf.
+
+188
+00:38:39,583 --> 00:38:46,243
+Bu ne demek? Ama hepsi benim için bir interfeysten türemiş ve şuradaki hizmeti vermekle yükümlüler.
+
+189
+00:38:46,804 --> 00:38:53,264
+Bunun içinde ne olduğu, kimlerle nasıl konuştuğu, hangi sistemle, hangi protokolle konuştuğunu ben bilmek zorunda değilim.
+
+190
+00:38:53,264 --> 00:39:01,764
+Ben kendi sistemim olarak, hani sistem şu yukarıda olsun ya da şu çaprazdan ya, sistem olarak ben bu interfeyse ile muhatap.
+
+191
+00:39:02,099 --> 00:39:09,940
+Yani ne demek istiyorum ben aslında burada bununla muhatabım derken? Benim için sadece önemli olan şu hizmetin verilmesi.
+
+192
+00:39:10,547 --> 00:39:28,847
+Bunu nasıl verirsen ver kardeşim. Yani sen bu mesela visa şeklinde bir hizmet versin ama ben bu tipten bir şey geri dönüşü bekliyorum. Bu Mastercard ile nasıl konuşsa konuşsun beni ilgilendirmiyor. Bu implementasyon detaylarını ben kendi uygulamamdan, kendi uygulama mantığımdan soyutlamış oluyorum.
+
+193
+00:39:38,547 --> 00:39:50,847
+Ya da verginin hesaplanması. Bunları da böyle polimorfik yani aslında interfesi implement edecek şekilde gerçeklememiz daha doğru, daha iyi bir tasarım yapmamızı sağlayacaktır.
+
+194
+00:39:52,167 --> 00:39:59,447
+Yedincisi bundan bahsettik aslında ama yine de hani kalıp olarak, prensip olarak da bir daha anlatmış olalım.
+
+195
+00:39:59,447 --> 00:40:03,587
+Pure Fabrication yapay sınıf. Ne demek yapay sınıf? Şu.
+
+196
+00:40:04,052 --> 00:40:13,052
+Uzman kalıbımız bir çözüm öneriyor bize. Hani işte veritabanım işlemlerini satış kendisi yapsın, ödeme kendisi yapsın diyor ama...
+
+197
+00:40:13,492 --> 00:40:30,371
+Bu sınıf içindeki uyumu bozuyor ve bağımlılığı da arttırıyor. Durup dururken satış veri tabanıyla bağımlı hale geliyor falan. Buradaki çözüm, uzman çözümü iyi uyum ve az bağımlılık kalıpların önerileriyle çelişiyorsa ne yapacağız?
+
+198
+00:40:41,492 --> 00:41:09,072
+sorumlulukları gerçekte var olmayan yapay bir sınıfa atayabilirsiniz diyoruz. Uzun uzun konuştuk, tekrar etmeye gerek yok. Çok kullanmayın, çok kullanırsanız direkt işlevsel çözümlemeye gitmiş olursunuz. Yani işte bir şey hizmetleri sınıfı, satış hizmetleri sınıfı, ödeme kayıt hizmetleri sınıfı, ürün okuma sınıfı, ürün okuma hizmetleri sınıfı gibi hep böyle fiillerden oluşan sınıflar yaratmaya başlarsınız.
+
+199
+00:41:09,492 --> 00:41:21,271
+O yüzden mümkünse, sadece gerekiyorsa kullanın, gerekmediği yerde mümkün olunca bunu kullanmayıp gerçek dünya modellemesini, kavramsal sınıflardan türettiğiniz yazılım sınıflarına öncelik verin diyoruz.
+
+200
+00:41:22,632 --> 00:41:34,851
+Sekizinci başlığımız, dolaylılık, ara birim, in direction. Bundan da adaptör diye bahsettim aslında. İki tane birim var. Bu birimler değişebilirse ne yapacağız?
+
+201
+00:41:35,507 --> 00:41:57,567
+Değişim demek tehlike. Bir yer değişirse ben de değişmeliyim, ona uyum sağlamalıyım. Örneğin işte bir ifi değiştirdi ya da bir parametre ekledi. O zaman ben de onu çağırırken ekstra bir eklediği parametreyi de koyarak çağırmalıyım. Bu da benim bütün belki de bağlı olan bütün sınıflarımın tekrardan elden geçirmelerini ve test edilmelerini yetirecek.
+
+202
+00:41:58,036 --> 00:42:08,556
+İşte böyle kolay değişebilecek birimleriniz varsa, bunların arasındaki bağımlılığı azaltmak adına bir ara birim nesnesi kullanabilirsiniz.
+
+203
+00:42:09,476 --> 00:42:18,456
+Yine buna veri tabanına örnek verebiliriz. Bizim bir uygulamamız var, satış var, ödeme var, ne bileyim ürünler var, onlar bunlar var.
+
+204
+00:42:19,096 --> 00:42:22,416
+Bir yandan da işte bir yerlerde bunu kayıt ediyoruz, veri tabanında kayıt ediyoruz.
+
+205
+00:42:22,880 --> 00:42:50,840
+Yarın öbür gün, bugün MySQL'de tutuyorum, yarın öbür gün Postgre'ye geçebilirim ya da bambaşka ne bileyim Mongo'yu Atlas'a geçebilirim. Mongo değil, bir Atlas'a geçtim hadi bir de şey de Cloud'da çalışıyor. Şimdi ben ne yapacağım Mongo değil, bir Atlas'a geçtim diye bütün uygulamamdaki veri tabanı erişimine ihtiyaç duyan bütün birimleri elden mi geçireceğim? Hayır. İhtiyacı var mı? Sadece oku, yaz diye şey yapacak, konuşacak. İşte adaptör burada veri tabanı ara.
+
+206
+00:42:50,880 --> 00:42:52,880
+Birimi ne yapacak? Ben bugün...
+
+207
+00:42:53,503 --> 00:43:04,243
+Mesela MySQL'le konuşurken, select bilmem ne from bir şey bir şey yazarken, yarın Mongo'ya gittiğimde başka şeylerle, NoSQL'e çevirip belki onu yazmış olacağım.
+
+208
+00:43:04,243 --> 00:43:20,303
+Böyle gördüğünüz gibi değişebilecek yerler arasındaki değişimi, uyumu sağlayacak şekilde, sınıf içi uyumları, pardon, uygulama içi uyumu arttıracak ve bağımlılıkları azaltacak şekilde, yani az bağımlılığı sağlayacak şekilde.
+
+209
+00:43:20,980 --> 00:43:28,200
+Ara birim nesneleri kullanmamız gerekebilir. Bu şöyle, bu da bir yapay uzmanı aslında bakarsanız. Aynı kontrolür gibi.
+
+210
+00:43:31,200 --> 00:43:41,480
+Olmayan bir kavram, yani gerçek hayatta var mı bu? Böyle bir kavram. Her şeyin arasına bir adaptörü koymalı mıyız? Yani gerektiği yerde koymalıyız diyebiliriz.
+
+211
+00:43:42,291 --> 00:43:59,131
+Yine pek çok GoF kalıbı bununla alakalıdır. İşte adapter kalıbı, observer kalıbı, fasad kalıbı gibi şeyler yine bu indirection ile alakalı, bu prensiple alakalı GoF kalıpları. Bunlara da yine şimdilik girmiyoruz ama sadece değişim olabilirse mutlaka araya bir tampon koyun diyoruz.
+
+212
+00:43:59,131 --> 00:44:03,491
+Şey gibi bu işte en güzel örnek. Şimdi laptop var.
+
+213
+00:44:04,307 --> 00:44:12,947
+Elinizde bir sistem olarak laptopu düşünelim, donanımsal bir sistem olsun. Şimdi laptop 19 voltla çalışıyor.
+
+214
+00:44:13,876 --> 00:44:41,876
+Ama duvardaki elektrik 220 volt. Bir taraf 220 volt AC ama sizin sisteminiz 19 volt DC bekliyor. Biz ne yapıyoruz? Araya adaptör koyuyoruz değil mi? Fişe takıp, arada bir kutu var, adaptör. İşte bu adaptör nesnesinin tam olarak yaptığı şey bu. Taktığınız fişe 220 volt, öbür ucundan 19 volt DC çıkıyor. İşte adaptör nesnesi bunu yapıyor. Peki, değişimden beni nasıl koruyor ya da bağımlılığı nasıl azaltıyor?
+
+215
+00:44:41,876 --> 00:44:53,476
+Amerika'ya gittiniz, koydunuz laptopu çantaya, Amerika'ya uçtunuz. Amerika'da duvardaki gerilim 110 volt. Ne oldu?
+
+216
+00:44:53,967 --> 00:45:16,327
+Çalışmıyor adaptörünüz. Adaptör nesnenizin değişmesi gerekecek. Laptopu mu değiştireceksiniz? Hayır. Ne oluyor? Amerikan sistemine uygun bir adaptör alıyorsunuz. 110 voltla konuşan bir adaptör. Onu takıyorsunuz. Bir taraf 110 volt. Adaptör, yeni adaptör, alternatif adaptör. Takıyorsunuz laptopunuza yine 19 volt DC.
+
+217
+00:45:21,967 --> 00:45:38,427
+Değişebilecek iki birim ya da iki sistem arasındaki bağımlılığı azaltan yapay sınıflara ara birim sınıfı adı veriyoruz. Daha doğrusu adaptör tam olarak sınıfı adı veriyoruz. Buna da yine tasarımlarınızda dikkat etmeniz gerekir.
+
+218
+00:45:38,947 --> 00:45:48,228
+İşte ben burada vergi hesabı için bir adaptör koydum. Aslında bu da biliyorsunuz bir interface implement ediyordu. Ben aslında o sadece metoduyla konuşuyorum. GetTaxes.
+
+219
+00:45:48,916 --> 00:46:02,096
+Bu gidip ne yapıyor? TCP üzerinden soket haberleşmesi yapıyormuş başka bir sistemle. Belki başka bir adaptör, dedim ya işte HTTP ile bilmem ne, REST API ile birileriyle bir şeylerle konuşuyor olabilir.
+
+220
+00:46:05,076 --> 00:46:23,556
+Farklı farklı sistemlerle konuşuyor olabilir. Ben sadece buradan bir şey alıyorum geriye. Toplam hesaplanmış vergi miktarını. Dış dünya ya da dış sistemlerin değişiminden korumuş oluyorum. Buradaki kendi iş katmanımı ya da uygulamamın kendi mantığını.
+
+221
+00:46:24,675 --> 00:46:30,556
+Son kalıbımız 9 tane demiştik hatırlayacak olursanız. Değişimlerden korunma.
+
+222
+00:46:30,976 --> 00:46:39,375
+Protected Variation diyoruz buna. İşte bu da aslında öncekilerin bir özeti gibi düşünebilirsiniz.
+
+223
+00:46:40,235 --> 00:46:49,536
+Nesnelerinize değişim ve kararsızlıklar, o nesnelerde oluşabilecek tabii ki değişimler ve kararsızlıklar birbirini en az etkileyecek şekilde nasıl tasarlanmalı?
+
+224
+00:46:50,164 --> 00:46:56,764
+Nasıl tasarlayacağız? Öğrendik. Dış sistemdeki değişimden nasıl korunuyorduk? Adaptör, araya ara birim koyuyorduk.
+
+225
+00:46:57,204 --> 00:47:09,824
+Aslında burada da kendi uygulamanızın içinde bile değişime açık, kararsız noktalar olacaksa, bunları sorumluluklarını etrafında kararlı bir arayüz oluşturacak şekilde atamanız gerekir.
+
+226
+00:47:11,304 --> 00:47:15,824
+Şimdi şey gibi düşünebiliriz bunu. Mesela...
+
+227
+00:47:16,340 --> 00:47:40,240
+Sizin sisteminizde müşteriyle konuştunuz. Dedi ki, ya işte biz nakit ve kredi kartı çalışıyoruz dedi. Tamam dediniz, değişecek mi dediniz? Yok yok değişmiyor, kesin bu kadar dedi. Tamam mı? Peki. Ama yarın öbür gün, daha siz hani uygulamayı bitirmeden önce adam geldi, dedi ki ya arkadaş bir bitcoin diye bir şey varmış, kripto parayla da biz ödeme almak istiyoruz.
+
+228
+00:47:41,043 --> 00:48:00,003
+Ya da check ile atıyorum işte ne bileyim ya da şey hani sodexo gibi şeylerle, multinetle bilmem neyle ödeme almak istiyoruz dedi. Ne yapacağız? Bakın ödeme ile alakalı farklılıklar oluşmaya başladı. Değişiyor. Duruma göre değişebiliyor. O zaman ben burada hani polimorfik zaten yapacağım.
+
+229
+00:48:00,596 --> 00:48:09,135
+Buradaki kararsız noktaları belirleyerek bunların da aslında kararlı bir arayüz oluşturacak şekilde sorumluluklarını atamam gerekir.
+
+230
+00:48:09,255 --> 00:48:16,735
+Sanki kendi uygulamanızın içinde iç adaptörler yapmak gibi düşünebilirsiniz.
+
+231
+00:48:16,735 --> 00:48:22,896
+Tabi bu pek çok prensibin ve kalıbın da yine temelini oluşturuyor. Mesela encapsulation.
+
+232
+00:48:23,215 --> 00:48:44,896
+Kavramı ya da veri gizleme yani data hiding tabi security değil bu yani karışmasın ya da polimorfizm gibi pek çok prensibinde temelini oluşturuyor değişimlerden korunmak. Zaten bizim mümkün olduğunca yapmaya çalıştığımız şey şu. Bir uyumlu olalım, kendi içimizde uyumlu olalım. İki, mümkün olduğunca başkalarına az bağımlı olalım. Üç,
+
+233
+00:48:45,235 --> 00:49:03,235
+Az bağımlı olalım ki onlardaki değişim bizi çok fazla etkilemesin. Mümkün olduğunca kendimizi az değiştirebilelim. Değişmesi daha zor olan yapılar tasarlamaya gayret edelim. Mesela polimorfizm denen nedir? Hedef, compile ederken değil de çalıştırırken aslında runtime'da belli olsun diyoruz.
+
+234
+00:49:03,235 --> 00:49:11,995
+Yani ben kredi kartıyla ödeme alacaksam bu Visa mı, Master mı, Troy mu, American Express mi bunlardan etkilenmemeliyim.
+
+235
+00:49:12,467 --> 00:49:23,007
+Hangisi olursa ona göre gel kardeşim deyip çağırıp al bu işte bana kararı kartını doğrula ya da provizyon numarasını ver diye bir şey hizmeti alabilmeli.
+
+236
+00:49:23,380 --> 00:49:30,820
+değişimlerden korunma prensibi de özetle bu şekilde umarım şey olmuştur.
+
+237
+00:49:30,820 --> 00:49:47,400
+Bu dokuz tane kavram çoğunu zaten biliyorsunuz ama tasarımlarınızı yaparken, sorumluluklarınızı atarken, senaryolardaki yapılması gerekenleri gerçekleştirirken mümkün olduğunca bu kriterleri, bu prensipleri göz önünde tutarak yapmak daha iyi olacaktır.
+
+238
+00:49:47,820 --> 00:49:49,579
+Yapmazsanız ne olur? Kötü tasarım olur.
+
+239
+00:49:50,099 --> 00:49:51,380
+Yaparsanız ne olur? Daha iyi.
+
+240
+00:49:51,380 --> 00:50:04,260
+daha iyi bir tasarım elde edersiniz. Sürekli değiştirmek, sürekli güncellemek ya da sürekli yeni versiyon çıkmak ya da bug fix yapmak zorunda kalmazsınız ya da bu ihtiyacınızı mümkün olduğunca azaltırsınız.
+
+241
+00:50:05,523 --> 00:50:21,403
+Son olarak burada bağımlılıkla alakalı yine söyleyeceklerimizden bir tanesi yabancılarla konuşma prensibi. Don't talk to strangers diyoruz biz buna. Sadece kısıtlı bir hedefe mesaj gönderebilmelisiniz. Yani metot çağrısı yapabilmelisiniz. Kim bunlar? Kendiniz.
+
+242
+00:50:22,324 --> 00:50:40,844
+Bir metodunuzun parametresi olan bir nesne, hani ona bağımlısınız ya, bir özelliğiniz olan nesne, kendi içinizde sahip olduğunuz bir nesne ya da sahip olduğunuz bir koleksiyonun, bir grubun elemanı olan bir nesne, işte satış satırları vardı ya onlardan her biri.
+
+243
+00:50:46,931 --> 00:50:50,471
+Metodunuzun içinde yarattığınız bir nesne, siz yarattınız zaten.
+
+244
+00:50:55,092 --> 00:51:17,632
+Bunlarla mesajlaşabilirsiniz. Ama bunların dışındakiler aslında yabancı nesnelerdir. Daha doğrusu tanıdığınızın tanıdığı nesnelerdir. O yüzden bunlarla konuşmamak gerekir. Konuşursanız bağımlısınızdır. Bağımlılık ne yapıyordu? O değiştiğinde ben de patlıyorum. Kendimi kontrol etmem, belki de güncellemem gerekiyor.
+
+245
+00:51:18,195 --> 00:51:23,455
+Bundan kaçınmak için mümkün olduğunca başkalarıyla, yabancılarla konuşmamaya gayret ediyoruz.
+
+246
+00:51:23,615 --> 00:51:29,596
+Mesela şöyle, hepimiz yazıyoruz aslında böyle şeyleri hızlı ve kolay göründüğü için.
+
+247
+00:51:30,255 --> 00:51:33,915
+Mesela para sınıfı türünden bir tane miktar eşittir.
+
+248
+00:51:34,495 --> 00:51:37,615
+Sale.getpayment.gettenderedamount diyoruz.
+
+249
+00:51:37,675 --> 00:51:43,475
+Nedir? İşte satışın içindeki, ödemenin içindeki şu ana kadar ödenen toplam tutarı al.
+
+250
+00:51:44,980 --> 00:52:03,440
+Evet, çalışır ama ya satış nesnesi değişirse, yani şuradaki hizmet değişirse ne olacak? O zaman ben farkında değildim ama payment'a bağlı hale gelmişim ve payment değiştiğinde ben patlayabilirim. Buradaki amount değişkenim yüzünden. Ne yapacağım?
+
+251
+00:52:03,791 --> 00:52:23,892
+O zaman ne yapmalıyım? Ben kimi tanıyorum? Satışı tanıyorum sadece. Ötesi beni ilgilendirmez kardeşim. Eğer ben satışın kendi sahibi olduğu dıdısının dıdısına erişeceksem sadece satışa sormalıyım. Satış, sen bana kalan ödeme miktarını ver. Bakın yeni bir sorumluluk aslında bu, değil mi?
+
+252
+00:52:24,724 --> 00:52:52,724
+Ama ne yaptım? Ben paymentla konuşmuyorum artık. Payment değiştiğinde satış değişir zaten. Ben satışla buradaki arayüz üzerinden, buradaki hizmet üzerinden konuşuyorum. Tamam. Eğer gerçekten bu paymentla illa erişecekseniz o zaman onu bağlı yapacaksınız. Yani onu bir şekilde tanıdık hale getireceksiniz ve sorumluluk olarak paymenttan işte onun tendered amountunu alma sorumluluğunu vereceksiniz. O zaman da sınıf diagramı da biçim.
+
+253
+00:52:52,724 --> 00:52:55,704
+İzgi daha eklemiş olacaksınız diyebiliriz.
+
+254
+00:52:57,204 --> 00:53:00,224
+Evet, prensiplerimiz bu kadar.
+
+255
+00:53:01,124 --> 00:53:04,144
+9 artı 1 oldu aslında, 10 prensip söylemiş olduk değil mi?
+
+256
+00:53:04,483 --> 00:53:06,304
+Don't Talk to Strangers ile birlikte.
+
+257
+00:53:07,463 --> 00:53:13,943
+Senaryoları gerçeklerken de işte burada bahsettiğimiz prensiplere kalıp demeyelim de prensip diyelim.
+
+258
+00:53:13,943 --> 00:53:15,184
+Prensiplere uygun olarak.
+
+259
+00:53:15,860 --> 00:53:23,300
+Yazdığımız bütün use case'leri, bütün kontratları varsa hepsinin üzerinden geçip bunlardaki bütün sorumlulukları gerçekleştirmemiz gerekiyor.
+
+260
+00:53:23,840 --> 00:53:26,860
+Dediğim gibi uzman, yaratıcı...
+
+261
+00:53:27,188 --> 00:53:44,988
+İyi uyum, az bağımlılık, denetçi, yapay sınıf, değişimlerden korunma, ara birim gibi işte polimorfizm gibi her şeyi düşünüp, 9-10 tane prensip düşünüp, sorumlulukları böyle önce analiz modelindeki kavramsal sınıflardan yola çıkıp alıp yazılım sınıfı haline getiriyoruz.
+
+262
+00:53:44,988 --> 00:53:54,988
+Ne yapıyoruz? Metotları aslında ilgilerine atamış oluyoruz. Metot demek, algoritma demek değil. Sadece hangi nesneler iş birliği yaparak bir...
+
+263
+00:53:55,188 --> 00:53:57,128
+hizmet sunacaklar, bunu gösteriyoruz.
+
+264
+00:53:57,648 --> 00:54:03,408
+Hala o metodun içindeki yapılması gerekenlerle alakalı bir algoritma tasarlamak zorunda kalabilirsiniz.
+
+265
+00:54:04,968 --> 00:54:13,788
+Evet, her bir iş birliğinde yer, birlikte çalışmayı da sınıf diagramında sınıflar arasındaki bağlantılar olarak göstermemiz gerekiyor.
+
+266
+00:54:14,804 --> 00:54:41,644
+Bununla birlikte elimizde başlangıç işlemlerimiz de var. Başlangıç işlemlerimizde aslında sistem ilk çalışmaya başladığında yapılacaklar. Hani main metot çalışıyor ya, ilk main metot çalıştığında ne olacak? Bunları da aslında bir senaryo grubu olarak yazabilirsiniz. Yani önce kim yaratılacak, hani o listeyi kim yaratacak, nereden okuyacak, kime bağlayacak, hani ürün kataloğu işte kasaya nasıl tanıtılacak gibi.
+
+267
+00:54:42,099 --> 00:54:57,980
+Bunları genellikle tasarımın son aşamasında yaparız. Yani önce bir iş katmanının her şeyini, bütün sormaklarını bitiririz. Ondan sonra da ya bu nasıl çalışmaya başlayacak onu ortaya koyarız. Belki dediğim gibi onu da bir use case olarak yazabiliriz.
+
+268
+00:54:59,259 --> 00:55:06,980
+Öncelikle bir initial domain object dediğimiz bir başlangıç nesnesi. Yani main nerede duracaksa.
+
+269
+00:55:07,827 --> 00:55:18,367
+Bunu belirleriz ve program çalışınca öncü doğal olarak bu nesneyi yaratırız ve içeride bütün nesneleri bu nesne yaratır, aralarındaki bağlantıları sağlar.
+
+270
+00:55:18,607 --> 00:55:28,547
+Hani al bu, hani bunun şeyi bu, adresi bu diye ya da listeyi yaratır, doldurur, işte ürün katılığını okur, her bir ürün katılığını bir koleksiyona atar bilgiyi.
+
+271
+00:55:28,547 --> 00:55:35,047
+Ondan sonra da onu işte kasaya al bak benim bildiğim barcode numaralı ürünler bunlar diye verebilir mesela.
+
+272
+00:55:35,456 --> 00:55:41,136
+İşte bu şekilde aradaki bağlantıları da sağlar. Bu program denetçisi gibi düşünebilirsiniz.
+
+273
+00:55:42,696 --> 00:55:48,956
+Tabi arayüzün ya da arayüz denetçisinin referanslarını falan da bağlamanız gerekecek burada.
+
+274
+00:55:49,536 --> 00:55:56,936
+Yani başlangıç işlemleri klasik ve bunları da eğer sisteminiz büyükse ve karmaşıksa ayrı bir senaryo gibi yazabilirsiniz.
+
+275
+00:55:57,096 --> 00:55:59,176
+Ayrı bir use case olarak gerçekleyebilirsiniz.
+
+276
+00:56:03,456 --> 00:56:22,756
+Önce store create ediliyor. Store yaratılınca o kataloğu yaratıyor. Katalog yaratılınca ne yapıyormuş? Katalog ilk önce şeyi yaratıyor, boş bir ürün tanım listesi yaratıyor. Ondan sonra ürün tanımlarını belki de veri tabanından okuyor.
+
+277
+00:56:25,331 --> 00:56:29,311
+Her bir product specification'ı yaratıyor ve bunları listeye ekliyor.
+
+278
+00:56:30,391 --> 00:56:39,092
+Ve bu işlemler bittikten sonra, yani katalog, her bir katalogdaki ürün tanımı koleksiyonu tamamlanıp yaratıldıktan sonra da kasayı yaratıyor.
+
+279
+00:56:39,211 --> 00:56:41,211
+Kasayı yaratınca da kataloğu ona veriyor.
+
+280
+00:56:42,291 --> 00:56:59,012
+Tamam. Bu şekilde katalog yaratılmadan kasanın yaratılmaması gerekir gibi işlemlerin sırasını, mantık sırasını buradaki ilk domain objemiz, initial domain objemiz olan işte store sırasıyla yapmış oluyor.
+
+281
+00:56:59,271 --> 00:57:06,032
+Bunu da dediğim gibi ayrı bir senaryo gibi gerçekleyebilir ve sonuçta böyle bir etkileşim diyagramıyla bunu da modelleyebilirsiniz.
+
+282
+00:57:09,652 --> 00:57:14,791
+Bağımlılıkla alakalı aslında görünürlük, yani fizibiliteyle bahsetmekte fayda var.
+
+283
+00:57:17,711 --> 00:57:23,172
+Görünürlük dediğimiz kavramda, eğer bir B nesnesi, A nesnesine görünür ise,
+
+284
+00:57:24,148 --> 00:57:28,568
+A nesnesinin B nesnesine erişebildiğini tanımlamış oluruz.
+
+285
+00:57:28,568 --> 00:57:36,068
+Şimdi ne demek bu? Ben A olarak B'ye mesaj göndereceksem ancak B'ye görünür ise mesaj gönderebilirim.
+
+286
+00:57:36,128 --> 00:57:40,588
+Yani ondan bir metot çağrısını falan yapabilirim. Bunun çeşitli kademeleri var.
+
+287
+00:57:41,228 --> 00:57:43,668
+Şimdi birincisi özellik görünürlüğü.
+
+288
+00:57:43,764 --> 00:58:06,344
+Bu işte B nesnesi, A nesnesinin bir üyesidir. İçinde yer alır ve A nesnesi, daha doğrusu B nesnesi, pardon, sahip olan A nesnesi yaşadığı müddetçe ona sahip olduğu için, kendi içinde bir organ gibi düşünün, ona sahip olduğu için doğal olarak siz yaşadıkça o da bağlı, görünür olarak size B nesnesi görünür olur.
+
+289
+00:58:07,059 --> 00:58:14,219
+Bir diğeri parametre görünürlüğü. Bu daha az bir görünürlüktür. Daha bir tercih sebebidir. Neden? Bağımlılığımızı azaltır.
+
+290
+00:58:15,039 --> 00:58:20,739
+B nesnemiz metodumuzda bir parametre ise sadece metot çalıştığı sürece biz ona bağımlı oluruz.
+
+291
+00:58:21,199 --> 00:58:24,779
+İşte bu da daha az bağımlılık demektir. Bu yüzden daha tercih sebebidir.
+
+292
+00:58:24,939 --> 00:58:31,479
+Hani her şeyi nesnenin içine doldurmayın. Mümkün olduğunca parametreler de bırakın demeye çalışıyoruz aslında.
+
+293
+00:58:34,271 --> 00:58:43,991
+Kendi lokal bir değişkenizi atarsanız, o zaman işte parametrede görünürlüğünü özellik görünürlüğü haline değiştirmiş olursunuz.
+
+294
+00:58:44,191 --> 00:58:48,011
+Hatta bunu lokal bir değişkene ya da global bir değişkene atayabilirsiniz.
+
+295
+00:58:48,731 --> 00:58:50,711
+Aman diyorum globallere fazla gitmeyin.
+
+296
+00:58:51,491 --> 00:58:57,131
+Ne kadar böyle globale bağlarsınız, bağımlılığınız o kadar fazla artacaktır.
+
+297
+00:58:57,131 --> 00:58:58,811
+Mesela burada.
+
+298
+00:59:00,115 --> 00:59:22,056
+Kasaya ürün okutulduğunda ne oluyor? Barkod numarası ve miktarını biliyorsunuz. Ekrandan girmiştik basit olarak. Bu ne yaptı? Kataloğa, product katalogdan get product specification'ı çağırdı. Neyle çağırdı? Item ID ile çağırdı. Tamam. Yani buradan item ID, okuduğu item ID buna verdi.
+
+299
+00:59:22,579 --> 00:59:36,539
+Ve bu sayede ne yapmış olduk? Biz bir nitelik görünürlüğü, yani şurada özellik demiştik pardon, özellik görünürlüğü olarak bunu içinde bakın spek eşittir bilmem ne diye buraya atamış olduk.
+
+300
+00:59:37,579 --> 00:59:48,279
+Lokal bir değişkenime bakın atamış oldum. Atadığım için artık ben yaşadığım müddetçe bu da benimle birlikte yaşamaya devam edecektir.
+
+301
+00:59:48,884 --> 01:00:15,783
+Ama parametre görünürlüğü şöyle olacaktı. Enter item dedik. Product'tan spesifikasyonu aldı. Biraz önceki özellik görünürlüğü işte. Sonrasında bunu, bakın bu spesifikasyonu birisine yolladı. Ben de satış olarak bunu hiçbir şey yapmadan, içimde bakın bana geldi. Direkt olarak başka bir line'a, başka bir nesneye yolladım.
+
+302
+01:00:16,596 --> 01:00:39,836
+Bu sayede ben parametre görünürlüğünde kaldım. Yani bir product specification nesnesiyle sadece bu metodun çalışması süresince görünür oldum. Bunun dışında ona erişmiyorum, ona bağlı değilim, onu kullanmıyorum ve bu sayede bağımlılığım daha bir az. Sadece bu metod çalıştığı süre boyunca olacak şekilde kısıtlanmış oldu.
+
+303
+01:00:43,039 --> 01:01:00,180
+Dikkat etmekte fayda var. Ne kadar çok böyle lokal değişkenlerinize bir şeyler atarsanız o kadar sınıfla bağlı hale gelirsiniz. Onlar size görünür olarak kalırlar. Mümkün olduğunca az görünür, kalsınlar. Parametre seviyesinde kalmaları tercih sebebidir diyoruz.
+
+304
+01:01:00,180 --> 01:01:06,380
+Tabii bunu yine %100 kanun değil bu ama yaparsanız iyi olur diyerek bunu özetleyebiliriz.
+
+305
+01:01:08,403 --> 01:01:29,823
+Şimdi geldik şeye, sorumlulukları atadık peki, prensiplerimiz de üzerinden geçtik. Bir yandan da biz tasarım sınıf diagramını oluştururuz. Zaten az çok konuşmaya başlamıştık. Metotları buldukça yazılım sınıflarından oluşan bir yazılım sınıfı ya da tasarım sınıf diagramı oluştururuz.
+
+306
+01:01:36,403 --> 01:01:51,203
+Hem ne diye yazacağımız yazılım sınıfları yer alır. Bunların özellikleri, özelliklerin tipleri, metotları, metotların parametreleri ve bunların erişim hakları tabii mümkün olduğunca büyük ölçüde hala eksikler kalabilir, belirtilir.
+
+307
+01:01:51,203 --> 01:02:00,603
+Buradaki ilişkileri ve bağımlılıkları da yönlü olarak, bu buna bağlıdır, bu bunu ilişkilidir diye, bu bunu çağırıyor diye yönlü olarak gösteririz.
+
+308
+01:02:00,663 --> 01:02:02,884
+İşte burada bir örnek. Bakın işte.
+
+309
+01:02:03,795 --> 01:02:27,055
+Dükkanımız var, adresi ve adı varmış. Satış ekleme şeyi var, metodu. İçini şimdilik yazmadık. Çok da aşırı karışık olmasın diye. Ondan sonra bu dükkanın product kataloğu varmış. Neden? Bunu kullanıyor. Nasıl kullanıyor? İşte buradaki spesifikasyonları okuyor. Bu işte bunları içeriyor. En tane product specification içeriyor.
+
+310
+01:02:30,036 --> 01:02:54,876
+Ev sahipliği yapıyor kasaya. Kasanın içinde burası bizim kontrollerimiz. Satışı başlatıyor, bitiriyor, yeni bir ödeme alıyor ya da yeni bir ürün okutuyor gibi. Bu işte satışı aslında içeriyor. Bu da satış kalemlerinin yaratılması, toplam tutarın hesaplanması, ödemenin alınması ile alakalı sorumluluklara sahip.
+
+311
+01:02:55,219 --> 01:03:00,859
+Gördüğümüz gibi işte tarihi, bitti mi ve buğlayın cinsinden, işte zamanı gibi.
+
+312
+01:03:01,239 --> 01:03:03,299
+Bunu işte satışın içinde satış kalemleri var.
+
+313
+01:03:03,399 --> 01:03:09,279
+Satış kalemlerinin miktarı var ve biraz önce üzerinden uzman kalıbında geçtiğimiz GetSupp Total sorumluluğu gelmiş.
+
+314
+01:03:11,059 --> 01:03:27,139
+Product Specification'a bağlı. Çünkü buradan price'ı falan okuyor hatırlarsanız. Burada da get price, get description bilmem ne bir sürü metodu olması gerekecek. Satış, burada işte make payment yaptığına göre bir de payment ile ilişkisi olması gerekiyor.
+
+315
+01:03:39,059 --> 01:03:48,659
+ile birlikte yaptığımızda, gösterdiğimizde artık bir yazılım sınıf diagramı ya da tasarım sonunda elde ettiğimiz sınıf diagramını oluşturmuş oluyoruz.
+
+316
+01:03:51,840 --> 01:03:56,860
+Bağlantı, yani bağlılık, bağımlılık konusunda navigability adını veriyoruz.
+
+317
+01:03:57,780 --> 01:04:00,260
+Bunu şöyle hızlıca aslında geçeyim.
+
+318
+01:04:02,643 --> 01:04:11,703
+Yani bu özellik görünürlüğüyle oluşan bağlantılar. Fakat burada esas önemli olan bağımlılıklar.
+
+319
+01:04:12,628 --> 01:04:25,628
+Dadısının dadısı diye yazıyoruz ya, hani kodda, işte onu yapmamamız gerekiyoruz diyoruz ya, onları da bağımlılık ilişkisi olarak modelimizde göstermemiz gerekiyor. Hızlı geçtim özellikle şunun üzerinde kalmak için.
+
+320
+01:04:25,628 --> 01:04:34,868
+İşte mesela kasa, product katalog üzerinden product specification'a erişti. Yani aslında kasa buraya bağımlı.
+
+321
+01:04:35,219 --> 01:04:41,939
+Bunu böyle gösterebiliriz. İlk bakışta görünmüyor ama aslında bunu biliyoruz ki içinde mesela bir şey var.
+
+322
+01:04:42,719 --> 01:04:47,559
+Product specification'lar var. O zaman buradaki bağımlılığı da göstermemiz gerekecek.
+
+323
+01:04:47,679 --> 01:04:53,219
+Aynı şekilde satış, şu satış kalemlerinin şeyi üzerinden product specification'e bağımlı.
+
+324
+01:04:54,259 --> 01:04:59,219
+O yüzden burada da bir bağımlılık ilişkisi var. Bunları da böyle kesik çizgilerle gösterebiliriz.
+
+325
+01:05:00,371 --> 01:05:20,511
+Bu kesik çizgiler ne kadar fazla olursa aslında dediğim gibi tasarımınız o kadar kötü demektir. O kadar bağımlısınız demektir. Yarın öbür gün şu değiştiğinde normalen şu ve şu hani baktığımızda kim bağlı buna? Şöyle şeyini çizelim. Şöyle bunu işaretlediğimizde kim bağlı buna?
+
+326
+01:05:21,715 --> 01:05:47,675
+Bu bağlı, contains ile, bu da describes ile bağlı. Sadece şunu ve şunu normalen kontrol etmem gerekir. Fakat görüyorum ki aslında register ve sale da buna bir şekilde bağımlı. O zaman bunları da kontrol etmem gerekecek. Gördüğünüz gibi böyle o onu, o onu, o onu diye gitmeye başlıyor. Bağımlılığı arttırıyor. Mümkün olduğunca bu kesik çizgileri kullanmamaya, yaratmamaya, oluşturmamaya gayret etmemiz gerekiyor.
+
+327
+01:05:48,371 --> 01:06:06,991
+Evet, bu şekilde de bir nesneye yönelik yazılım tasarımını oluşturmuş ve sonrasında da ifade etmiş oluyoruz. Tekrar üzerinden geçecek olursak, bütün senaryolardaki sorumlulukları bulmalıyız. Bu sorumlulukların her birini bir uzmana atamalıyız.
+
+328
+01:06:08,340 --> 01:06:18,420
+Sorumluluk yerine getirilirken hangi nesneler bir arada nasıl çalışacaksa bunları da işbirliği ya da ardışıl diagramlarla ifade etmeliyiz.
+
+329
+01:06:18,640 --> 01:06:24,720
+Ki o zaman demek ki tasarım yaparken sorumluluk sayısı kadar ardışıl diagrama ihtiyaç duyuyorum.
+
+330
+01:06:24,840 --> 01:06:28,820
+Ya da sorumluluk sayısı kadar işbirliği diagramına ihtiyaç duyuyorum.
+
+331
+01:06:28,920 --> 01:06:31,540
+Ya da ikisine birden etkileşim diagramı demiştik hatırlarsanız.
+
+332
+01:06:32,420 --> 01:06:35,860
+Sorumluluk sayısı kadar etkileşim diagramı yaratmam gerekiyor.
+
+333
+01:06:36,820 --> 01:06:47,920
+Ve bunların hepsini de bir tasarım sınıf diagramı ile göstermem gerekiyor ki artık yazılımın gerçekleşmesine yani kodlama aşamasına geçebilelim.
+
+334
+01:06:48,600 --> 01:06:56,200
+Biz burada kodlamayı yaparken sınıflarımızın tanımlarını yaptığımız Design Class diagramdan yararlanarak oluşturmamız gerekiyor.
+
+335
+01:06:57,268 --> 01:07:04,587
+Metotları da yine etkileşim diagramlarındaki birlikte çalışma şeklinde oluşturmamız gerekiyor.
+
+336
+01:07:04,587 --> 01:07:11,607
+Eğer bu diagramları düzgün çizerseniz bunu hazır böyle bu şablonları oluşturan şeyler de var, case araçları da var.
+
+337
+01:07:13,047 --> 01:07:23,567
+Hani interaction diagramı verdiğiniz zaman oradaki hani bütün koleksiyona döngüyle yolluyor, hepsini değerini alıyor falan diye yaptık ya satış toplam tutlarda.
+
+338
+01:07:24,067 --> 01:07:25,268
+Onları tıkır tıkır oluşturuyor.
+
+339
+01:07:25,268 --> 01:07:36,067
+Siz sadece o değişkeni toplamasını, belki çarpmasını, çıkartmasını, neyse oradaki algoritmada yapılması gerekenler, onları yazarak, kodlayarak işi tamamlayabiliyorsunuz.
+
+340
+01:07:36,688 --> 01:07:44,288
+Kodlama da yine gerçeklerken, mümkün olduğunca en az bağımlı sınıftan başlayıp, en çok bağımlı sınıfa doğru gitmek doğru olacaktır.
+
+341
+01:07:45,007 --> 01:07:51,268
+Ki çok bağımlı olan, ihtiyacı olan diğer şeyleri bulabilsin, görebilsin, siz de onları kullanabilirsiniz.
+
+342
+01:07:52,148 --> 01:08:10,268
+Mutlaka her sınıfınızı unit testten geçirin, birim test kesin olarak yapın. Hatta test driven development vardır. Orada da test programlarını daha kendi uygulamanızı yapmadan önce yazabilirsiniz. Bu test uygulaması sınıfınızda nesneleri yaratır.
+
+343
+01:08:12,052 --> 01:08:16,311
+Ve bütün mesajların sonuçlarıyla birlikte çalıştırıp test eder, kontrol eder.
+
+344
+01:08:16,731 --> 01:08:19,952
+Tabi bu ekstra, hani iki kat belki iki buçuk kat efor demek.
+
+345
+01:08:20,612 --> 01:08:25,192
+Ama böyle bir yaklaşım da yine mevcut karşımıza çıkıyor.
+
+346
+01:08:25,192 --> 01:08:30,192
+Evet, şimdi...
+
+347
+01:08:36,435 --> 01:08:37,056
+Şöyle
+
+348
+01:08:37,056 --> 01:08:40,996
+yeni bir
+
+349
+01:08:40,996 --> 01:08:43,255
+slide'a geçelim.
+
+350
+01:08:47,699 --> 01:08:53,659
+Tamam. Şunu kapatayım. Bir saniye hemen şey yapacağım.
+
+351
+01:08:57,555 --> 01:09:04,155
+Geri döneceğim. Şimdi tasarım konusunu, daha doğrusu uygulama tasarımı konusunu tamamlamış olduk.
+
+352
+01:09:06,155 --> 01:09:12,376
+Ve dersimizin ikinci yarısında da veri tasarımına başlayacağız. Veri tabanı özellikle. Veri modellemesi nedir?
+
+353
+01:09:12,835 --> 01:09:19,815
+Veri yapısı ve veri tabanımız bir bilgi sisteminde nasıl tasarlanmalıdır? Bu detaylara bakacağız.
+
+354
+01:09:21,235 --> 01:09:23,315
+Tamam, peki.
+
+355
+01:09:24,372 --> 01:09:39,532
+Bu hafta bunu tamamlarız. Ara vermeyeyim ki konumuzu tamamlayabilelim. Önümüzdeki hafta biliyorsunuz 11 Mayıs'taki ders iptal olduğu için, tatil olduğu için biraz sıkıştık.
+
+356
+01:09:42,739 --> 01:10:00,000
+25 Mayıs oluyor değil mi haftaya? 25 Mayıs'taki derste de yeni bir sisteme, daha doğrusu test süreçleriyle başlarız. Kodlama ve test süreçleri, yazılım kalitesiyle alakalı bazı başlıklara bakacağız. Sonrasında yeni sisteme nasıl devreye alabiliriz? Yani geçiş türleri...
+
+357
+01:10:00,000 --> 01:10:02,220
+nelerdir, ne farkları var, bunlara bakacağız.
+
+358
+01:10:02,899 --> 01:10:06,899
+Ve bakım destek süreci nedir, ne gibi bakımlar yapılır bir bilgi sistemine.
+
+359
+01:10:07,360 --> 01:10:11,180
+Bu konulara baktıktan sonra, yaklaşık bir saat bunlar tutar.
+
+360
+01:10:12,300 --> 01:10:19,899
+Son bir saatte de basit de olsa bir şey, böyle veri akış diyagramı ve yapı diyagramı ile beraber,
+
+361
+01:10:19,899 --> 01:10:27,860
+işte use case ile hatta bir iki artificial diyagramı ile beraber bir ufak, basit bir çözüm.
+
+362
+01:10:28,000 --> 01:10:40,800
+Daha doğrusu case study diyelim bir vaka çalışması yapıp dersi tamamlamak istiyorum. 25 Mayıs'tan sonra iki haftamız daha var. 1 Haziran ve 8 Haziran derslerimiz var.
+
+363
+01:10:41,203 --> 01:10:46,064
+1 ve 8 Haziran'daki derslerde söz sizde olacak biliyorsunuz, projelerinizi sunacaksınız.
+
+364
+01:10:46,804 --> 01:10:52,384
+Sunum planını daha oluşturmadım ama haftaya kadar oluşturup sizinle paylaşmış olurum.
+
+365
+01:10:52,764 --> 01:10:55,744
+Biliyorsunuz 1 Haziran'da proje raporlarınızı da teslim edeceksiniz.
+
+366
+01:10:55,744 --> 01:11:09,203
+Ve bu sayede de en azından bugün zaten yazılım tasarımında tamamladığımıza göre artık baya bir ilerlemiş olmanız, haftaya kadar baya bir ilerlemiş olmanız gerekir diye düşünüyorum.
+
+367
+01:11:09,203 --> 01:11:20,443
+Evet, şimdi bu bilgileri de arada biraz da dinlenme katına söyleyip de verdikten sonra ikinci saatimizdeki konumuza geçelim.
+
+368
+01:11:22,943 --> 01:11:31,163
+Dediğim gibi yazılım tasarımını tamamladık. Yani fonksiyonel çözümleme ile yapı diagramları ve ipolar üzerinden nasıl yapabiliriz?
+
+369
+01:11:31,891 --> 01:11:45,451
+Ya da alternatif olarak nesneye yönelik bir çözümlemeyi kavramsal modelimizden, yani kavramsal sınıf diagramımızdan ve use case'lerimizden faydalanarak nasıl yaratabiliriz, nasıl oluşturabiliriz?
+
+370
+01:11:46,260 --> 01:12:06,539
+Bunların detaylarını inceledik ve bunu nasıl ifade etmeliyiz? Bunlardan da bahsettik. Şimdi geldik, işin bir de veri tarafı var. Yani veriyi nasıl modellemeliyiz? Veriyi nasıl tasarlamalıyız? Veri yapılarımızı, veri tabanımızı nasıl ifade edebiliyoruz? Bununla ilgili neler çizmemiz yine yaratmamız gerekiyor? Bu derste de bunlara bakacağız.
+
+371
+01:12:06,539 --> 01:12:10,899
+Şimdi önce bir veri tabanı tasarım aşamalarına hızlıca bakalım.
+
+372
+01:12:11,731 --> 01:12:31,031
+Burada analizde aslında başlıyoruz. Ne yapıyoruz? Biz burada bir şeyleri belirliyoruz. Maliyet analizlerini falan fizibilite de zaten biliyorsunuz yapmıştık. Bunların hepsi analiz aşamasında da veri tabanı tasarımına ışık tutmaya başlıyor. Yani sizin neyle ilgili bilgi tutmanız gerekecek konusu analizde ortaya çıkıyor.
+
+373
+01:12:31,391 --> 01:12:57,011
+Sonrasında kavramsal tasarım ve mantıksal tasarıma geçtiğimizde, hani ön tasarım, ayrıntılı tasarıma geçtiğimizde artık bizim bir yandan işlevlerimiz, sorumluluklarımız yaratılırken, sınıflarımız mesela yaratılırken ya da modüllerimiz oluşturulurken buradaki varlıklar neler olacak, bu varlıkların hangi özellikleri olacak, öz netelikleri olacak, bu varlıklar arasındaki ilişkiler neler olacak.
+
+374
+01:12:57,811 --> 01:13:19,311
+Nasıl bir ilişki modelinde yer alacak bu varlıklar? Bunları oluşturmaya başlarız. Sonrasında bunu gerçekleştirme aşamasına taşırız. Bu kısmı tabii ki biz yapmayacağız ama bunlar veritabanı yönetim sistemlerinin işi. Bunları normalize ederiz. Yani daha bir iyileştiririz, optimize ederiz diyelim basitçe.
+
+375
+01:13:19,712 --> 01:13:30,931
+Belli kuralları var tabii ki burada da yapı uyulması gereken ama onlara biz bu ders kapsamında hiç değinmeyeceğiz. Sonrasında bunları gerçekleştiririz. Ne yaparız?
+
+376
+01:13:31,539 --> 01:13:58,699
+Bir yandan kodlamaya geçtiniz ya, aslında veri tabanı tarafında gerçekleştirilme aşaması vardır. Burada tablolar, kısıtlar yaratılır, güvenlik ve haklar tanımlanır. Sistemin çalışması için gerekli tablolara ilk verilerin yüklenmesi işlemleri gerçekleştirilir. Ondan sonra da yine use case'lere göre belki uygulama programının içinde hizmet sunacak olan bazı kodlar da yine veri tabanı üzerinde gerçekleştirilebilir.
+
+377
+01:13:59,539 --> 01:14:11,159
+Raporlama konularında falan stored procedure'lar oldukça faydalı olabiliyor. Yani veri tabanı, veri katmanı üzerinde de bazen biraz uygulama geliştirmeniz gerekebilir.
+
+378
+01:14:11,300 --> 01:14:17,539
+Bazı çözümlerde biz yine o tarafına daha fazla girmeyeceğiz. Şimdi bizim odak noktamız aslında şurası olacak. Yani ben...
+
+379
+01:14:18,387 --> 01:14:41,188
+Bir yazılımı tasarlıyorum, bir sistemin tasarımını yapıyorum ama bir yandan da bunun verisi var. Bu veriyi nasıl tasarlayacağım? Onun üzerinde dururuz. Biz veri tasarımımızı yani veri modelimizi bir varlık ilişki modeli kullanarak gösteririz. Buna Entity Relationship yani ER modeli adı verilir. ER model ya da varlık ilişki modeli adı verilir.
+
+380
+01:14:41,747 --> 01:14:57,247
+Burada aslında veri tabanında gerçekten tabloları halinde tutulacak verilerin daha üst seviyeli, daha kavramsal olarak tasarımda ifade edilmeleri sağlanır. Bunlar doğal olarak kavramsal tasarımda en çok kullandığımız, en popüler modeller.
+
+381
+01:14:57,760 --> 01:15:25,760
+Model, pardon, modeller değil. Başka ne var peki? Hani Entity Relationship model dışında neler var diyecek olursanız, eskiden kalma sıra düzensel model var. Bu aslında C'deki strakları düşünün. Strakları bir file'a yazdığınızı düşünün. Bunlar kayıt kütükleri diyoruz biz buna. Direkt dosya halinde tutmak. Buna biz sıra düzensel erişim adını veriyoruz. Pardon bir saniye. İki dakikanızı rica edeceğim.
+
+382
+01:16:43,539 --> 01:17:00,760
+Kusura bakmayın, ısrarla kapı çaldı. Bakmak durumunda kaldım. Evet, ne dedik? Varlık ilişki modeli çok popüler, en çok kullandığımız model. Bunun dışında eskiden kalma diyelim, sıra düzensel kayıt kütüklerimiz, CDK, Strat'ları dosyaya yazdık dedik.
+
+383
+01:17:01,427 --> 01:17:06,768
+Semi-structured dediğimiz yarı yapılı veri modelleri var. Bunların en güzel örneği XML.
+
+384
+01:17:07,387 --> 01:17:21,008
+XML'leri bir yerde tutuyorsanız, veri olarak kullanıyorsanız, özellikle de sistemler arasında verinin aktarımında tabii ki daha çok kullanırız ama buradaki modelde, XML modeli gibi ortamlarda yarı yapılı demektir.
+
+385
+01:17:21,716 --> 01:17:31,456
+Neden yeri yapılı? Çünkü veriyi tanımlayan veriyi de aslında ve geçerleyen veriyi de birlikte tanımlamış ya da tasarlamış oluyorsunuz.
+
+386
+01:17:31,859 --> 01:17:46,220
+Bir diğeri nesneye dayalı model. Burada da kavramsal nesneler, nesne veri tabanları söz konusu. Bu 2000'lerde bir yaygınlaşmaya çalıştı 90'ların sonunda ama bir türlü oturmadı.
+
+387
+01:17:46,220 --> 01:17:57,699
+Hani nesne yönelik programlama çok oturdu artık de facto ama nesne yönelik veri modeli kavramsal nesne veri tabanları pek tutmadı.
+
+388
+01:17:59,859 --> 01:18:13,239
+İlişkisel veri tabanı, yani bu ER ile tasarladığımız veri çok daha eskilerden gelen, çok daha güçlü bir çözüm olduğu, çok daha efektif çalışan bir çözüm olduğu için bu nesne veri tabanları maalesef çalışmadı.
+
+389
+01:18:14,260 --> 01:18:24,859
+Fakat şöyle bir şey var, Object Relational Mapping kullanılıyor. Nedir Object Relational Mapping? Artık ilerideki uygulama geliştirmelerinizde...
+
+390
+01:18:25,235 --> 01:18:52,495
+Tamamen böyle standart olarak hiç farkında olmadan zaten kullandığınız bir şey haline gelecek. Bir çözüm haline gelecek. Altta bir veri var, veri katmanı. Bu veri katmanı işte mesela ilişkisel bir veri tabanında duruyor ve üzerinde bir veri dönüşüm katmanı var. Bu katmanda sizin verilerinizi, işte ilişkisel veri tabanındaki tablolardaki verilerinizi nesneler haline, kavramsal nesneler haline getiriyor. İşte getleri, setleri bilmem neleri olan.
+
+391
+01:18:53,235 --> 01:19:15,075
+Böyle bir mapping yapan hazır şeyler var, frameworkler var. Siz de onları kullanıyorsunuz ve böylece kavramsal modelinizde, hani biz de kavramsal sınıflar yaptık ya, onların verilerinin dolmasını sağlıyorsunuz ya da onların verilerinin veri tabanına yönderilmesini bir şekilde kayıt altında tutulmalarını düz tablolarda, ilişkisel tablolarda sağlıyorsunuz.
+
+392
+01:19:15,835 --> 01:19:21,075
+İşte böyle bir ara çözüm aslında yaratılmış oldu. Nesneye dayalı model.
+
+393
+01:19:21,235 --> 01:19:41,035
+Bu konusunda saf nesne veri tabanları maalesef yaygınlaşmadı. Maalesef demeyeyim, yaygınlaşmadı. Özellikle performans yüzünden. Son başka alternatif ne var? Artık günümüzde böyle yapılanmış bellek dediğimiz çözüm modelleri var.
+
+394
+01:19:41,984 --> 01:19:55,764
+En çok bildiğiniz, duyduğunuz NoSQL veritabanları. MongoDB, Allegro Graph gibi, Graph veritabanı gibi yapılar. Bunlara da yapılanmış bellek adını veriyoruz.
+
+395
+01:19:55,764 --> 01:20:08,004
+Günümüzde hatta in-memory redisler falan daha da bir revaçta. Ya da şeyler, Firebase gibi çözümler.
+
+396
+01:20:09,011 --> 01:20:37,011
+Yapılanmış bellek dediğimiz veri modelini oluşturuyor. Şimdi biz nereye odaklanıyoruz? Bunların sıra düzenli yarı yapılıya, nesneye dayalıya da yapılan bir şey değil. Biz burada varlık ilişki modeline, en çok kullanılan, en popüler model olan varlık ilişki modeline odaklanıyoruz. Peki ben bilgi sistemimde kullanacağım verileri nasıl modelleyeceğim? Bunların ilişkilerine, bu verilerle varlık adını veriyoruz. Varlık kümesi adını.
+
+397
+01:20:37,011 --> 01:20:50,891
+Adını veriyoruz. Varlık kümelerimi nasıl göstereceğim? Varlık kümelerimin taşıdığı özellikleri, yani tutmam gereken değerlerini, verilerini nasıl göstereceğim? Bunların arasındaki ilişkileri nasıl ifade edeceğim? İşte varlık ilişki diagramını nasıl oluşturacağım?
+
+398
+01:20:51,604 --> 01:21:19,564
+Bu sembollerle. Yine her şey çok basit. Hiç aslında zor bir şey değil. Sadece biraz mantıklı düşünmek yeterli oluyor bu modeli kurbulamak için. Varlıkları dikdörtgenle gösteriyoruz. Varlıkların sahip olduğu özellikleri ya da öz nitelikleri o elipslerle gösteriyoruz. Özel bir öz nitelik olan birincil anahtarı, detaylarını birazdan gireceğiz, benzersiz tanımlayıcı diyelim. Bunu altını çizerek gösteriyoruz. Önemli şeylerin altı çizilir.
+
+399
+01:21:19,604 --> 01:21:26,604
+Aralarındaki ilişkileri, yani bağıntıları da eşkener dörtgenlerle gösteriyoruz. Bu kadar.
+
+400
+01:21:26,804 --> 01:21:33,624
+Tabii bir de çizgilerimiz var. Varlık ve ilişkileri birbirine bağlayan. Bunun dışında bir şey yok.
+
+401
+01:21:33,824 --> 01:21:37,124
+Bir de çoğullamalarımız var. Aynı sınıf diagramlarımızda olduğumuz gibi.
+
+402
+01:21:38,044 --> 01:21:43,444
+Bunları tanılayalım. Varlık nedir? Varlık bizim varlık ilişki modelimizin en temel üyesidir.
+
+403
+01:21:45,492 --> 01:21:50,911
+Tanımı da şu, var olan ve benzerlerinden ayırt edilebilen her şey bizim için bir varlıktır.
+
+404
+01:21:51,471 --> 01:21:56,731
+Örnek, mesela bir kütüphane bilgi sistemi yapıyorsanız kitaplar sizin varlıklarınızdır.
+
+405
+01:21:57,771 --> 01:22:03,931
+Neden? Çünkü kitaplarla ilgili bilgi tutmanız, bunları kullanarak işler yapmanız gerekir.
+
+406
+01:22:04,532 --> 01:22:21,591
+İşte hiçbir şey yoksa mesela yazara göre arama yaptırabilirsiniz diyelim. Bir hizmet. Öğrenci. İşte bilgi sistemi yapıyorsanız öğrenci sizin için bir varlıktır. Örtü mülüsü bir varlıktır. Ders bir varlıktır. Not bir varlıktır. Belki. Belki de değildir. Bilmiyorum.
+
+407
+01:22:21,952 --> 01:22:38,272
+şeye göre değişir, modele göre değişebilir. İşte ne bileyim araba, böyle bu da bir varlıktır. Dediğim gibi benzerlerinden ayırt edebilen ve var olan, uygulamada hakkında veri tutmanız gereken bütün her şey sizin için varlıktır.
+
+408
+01:22:38,644 --> 01:22:55,384
+Bunları dikdörtgenle gösterdiğimizi söyledik. Bunu gerçeklediğimizde, yani bir veri tabanı olarak gerçeklediğimizde bu şekilde düşünürsek de aslında bir veri tabanı tablosu dediğimiz yapı varlıklardan oluşan bir kümedir. Her bir satırında bir varlık, tekil bir varlık yer alır.
+
+409
+01:22:56,884 --> 01:23:16,804
+Her bir sütünü da o varlığın özellikleridir ya da öz nitelikleridir. Şimdi ona bakalım. Varlıkların özelliklerine nitelik adını veriyoruz. İşte mesela öğrenci varlığımız var. Öğrencimizin adı var, öğrencimizin soyadı var, öğrencimizin numarası var, öğrencimizin doğum tarihi var, ev adresi var gibi gibi.
+
+410
+01:23:17,199 --> 01:23:18,840
+İstediğiniz kadar arttırabilirsiniz.
+
+411
+01:23:19,640 --> 01:23:29,180
+Hakkında tuttuğunuz bütün veriler, öğrenci varlığıyla ilgili tutmanız gereken bütün verilere biz nitelik, özellik ya da öz nitelik adını veriyoruz.
+
+412
+01:23:29,500 --> 01:23:33,020
+Bunları da oval şeklinde gösterip içine de isimlerini yazıyoruz.
+
+413
+01:23:33,159 --> 01:23:34,420
+Bayağı yaratıcı gördüğünüz gibi.
+
+414
+01:23:35,100 --> 01:23:41,920
+Yine veri tabanına açısından düşündüğümüzde de tablodaki her bir sütun bizim için bir niteliktir ya da bir özelliktir.
+
+415
+01:23:44,083 --> 01:24:02,543
+Anahtar nitelik demiştik, primary key demiştik hatırlarsanız. Bu öyle bir niteliktir ki, yani varlığın sahip olduğu öyle bir niteliktir ki, her bir tekil varlık için benzersizdir, birbirinden farklıdır.
+
+416
+01:24:02,912 --> 01:24:23,832
+İşte bu özelliği taşıyan özelliğe, niteliğe anahtar nitelik, primary key adını veriyoruz. Nasıl göstereceğiz? Altını çizerek. Yani işte bir varlık kümesi var, personel. Bakalım personelin ne gibi özelliklerini tutmamız gerekiyormuş çalışmak için. Adını, görevini.
+
+417
+01:24:24,176 --> 01:24:40,956
+Maaşını tutmamız gerekiyor. Bir de ID'sini, sicil numarasını tutmamız gerekiyor. Biliyoruz ki sicil numarası her bir personel, tekil personel için ayrıktır. Kimlik numarası gibi düşünebilirsiniz bunu.
+
+418
+01:24:40,956 --> 01:24:48,596
+İşte benzersiz tanımlayıcı olan özelliğe anahtar nitelik adını veriyoruz. Neden böyle bir şeye ihtiyaç duyuyoruz?
+
+419
+01:24:51,572 --> 01:25:08,551
+Veri tabanındaki her bir tekil varlığa benzersiz olarak bir şekilde erişebilmeliyim. Değil mi? Mesela Türkiye'deki bütün vatandaşların her birine tekil teker teker ayrı ayrı erişebilmeliyim. Nasıl yapacağım ben bunu?
+
+420
+01:25:19,731 --> 01:25:37,552
+Türk, Ahmet Türk oğlu. Ahmet Türk oğlu olsun. Tamam mı? Eminim ki baya bir şey vardır böyle. Baya bir isim vardır. O zaman bu yeterli değil. E ne yapacağız? O zaman babasının adını da koyalım. Ali oğlu Ahmet Türk oğlu.
+
+421
+01:25:38,100 --> 01:26:06,100
+Eminim ki babasının adı Ali olan da bir sürü vardır. O zaman annesinin adını da koyalım. Haydi doğum yerini koyalım, onu koyalım, bunu koyalım. Nereye kadar gideceksiniz? Kaç tane özelliği bir arada bir benzersiz tanımlayıcı olarak kullanabilirsiniz? İşte bu biraz sıkıntı olabilir. O yüzden mümkün olduğunca biz ID gibi, kod numarası gibi, sicil numarası gibi genellikle sayısal tekrar etmeyecek olan değerleri anahtar nitelik olarak kullanıyoruz.
+
+422
+01:26:06,100 --> 01:26:31,380
+seçmeyi tercih ederiz. Sizin için mesela basit ya da ufak bir şeyiniz vardır, personel kümeniz. Ad benzersizdir ya da ad soyad yeterli oluyordur sizi ayırmak için. O zaman bu ikisini birlikte işte ad soyad ikisi birlikte bir anahtar niteliktir diyebilirsiniz. Farklı farklı örnekler yaratabilirsiniz bu şekilde. Ama
+
+423
+01:26:32,180 --> 01:26:37,739
+Genellikle dediğim gibi biz bunları böyle tekil kodlar halinde tutmayı daha çok severiz.
+
+424
+01:26:38,099 --> 01:26:42,920
+Ve genellikle de veri tabanlarında işte otoinkrement, otomatik artım şeklinde bunlar tanımlanır.
+
+425
+01:26:43,800 --> 01:26:46,500
+Ve hiçbir şekilde tekrar etmezler.
+
+426
+01:26:46,680 --> 01:26:52,619
+İşte mesela birden başlayıp n'e doğru müşteri numarası verirsiniz insanlara gibi düşünebilirsiniz.
+
+427
+01:26:53,652 --> 01:26:59,792
+Varlıklar bunlardı. Varlıkların özellikleri ya da niteliklerini de tanıdık. Şimdi geldik ilişki ne demektir?
+
+428
+01:27:01,172 --> 01:27:12,112
+Farklı varlıklar arasında, daha doğrusu varlık kümeleri arasındaki ilişkileri, ifade arasındaki bağıntılara diyelim ilişki adını veriyoruz.
+
+429
+01:27:12,595 --> 01:27:16,715
+Şimdi bir öğrenci varlık kümemiz olsun, bir de ders varlık kümemiz olsun.
+
+430
+01:27:17,515 --> 01:27:22,155
+Hakkında bilgi tutmamız gereken bunlar kavramlarımız, varlıklarımız.
+
+431
+01:27:22,695 --> 01:27:27,415
+Şimdi öğrenciler, biliyoruz ki işte öğrenci bilgi sistemi yapıyoruz diyelim.
+
+432
+01:27:28,475 --> 01:27:29,595
+Öğrenciler ders alıyor.
+
+433
+01:27:30,100 --> 01:27:48,300
+Öğrenciler ders aldığına göre öğrenci varlığı ile ders varlığı arasında alma ilişkisi vardır. Alır ilişkisi vardır. Ya da kayıt ilişkisi vardır diyebilirsiniz. Bunları da biz eşkener dörtgen ya da baklava dilimi neyse onunla gösteririz.
+
+434
+01:27:49,268 --> 01:28:03,008
+İçine de ilişkinin adını yazarız. İlişkiler genellikle bire bir, genellikle değil her zaman, bire bir, bire en ya da tersi n'e bir ya da n'e m şeklinde olur. Bunların detaylarına şimdi bakacağız.
+
+435
+01:28:05,828 --> 01:28:16,728
+Hemen bir varlık ilişki örneğine bakalım. Sol tarafta personel varlığımız var. Personelimizin sicil numarası varmış. Bakın bu anahtar. Primary key.
+
+436
+01:28:17,332 --> 01:28:20,112
+İsim varmış, bir de personelimizin kazancı varmış.
+
+437
+01:28:21,112 --> 01:28:22,552
+İşte maaşı mesela.
+
+438
+01:28:24,292 --> 01:28:25,492
+Bölüm varmış, departman.
+
+439
+01:28:25,752 --> 01:28:27,712
+Departmanın da bir numarası varmış.
+
+440
+01:28:28,452 --> 01:28:31,851
+Mesela bizimki işte 110 ya da 011 neyse.
+
+441
+01:28:34,592 --> 01:28:37,052
+Onu BLM'ye çevirdiler gerçi sonra.
+
+442
+01:28:38,412 --> 01:28:39,851
+Departmanın adı varmış.
+
+443
+01:28:40,532 --> 01:28:42,271
+Bir de departmanın bütçesi varmış.
+
+444
+01:28:42,739 --> 01:28:49,960
+Bunlar arttırabilirsiniz, hiç önemli değil şu anda basit olsun diye böyle üçer tane özelliği var.
+
+445
+01:28:52,239 --> 01:28:59,500
+Peki, personel ile departman arasında bir ilişki var. Nedir? Çalışma ilişkisi. Buna da çalışan demişiz.
+
+446
+01:29:00,279 --> 01:29:09,860
+İşte personel, bağlantı, ilişki, bağlantı, başka bir varlık. Ne oldu? Personel çalışır departmanda. Çalışma ilişkisi.
+
+447
+01:29:10,260 --> 01:29:28,060
+İşte ilişki bu. Bu kadar. İlişkilerin de kendine öz netelikleri olabilir. O zaman onu da buradan böyle bağlayarak gösterirsiniz. Mesela bir personelin bir departmanda hangi tarihten başlayarak çalıştığı bilgisi, özelliği kime aittir? İlişkinin kendisine aittir.
+
+448
+01:29:28,060 --> 01:29:34,100
+Personele koyarsak doğru olmaz. Birden fazla departmanda çalıştığını düşünün.
+
+449
+01:29:34,515 --> 01:29:59,555
+O zaman ne olacak? Üzerine veriyi tekrar mı yazacaksınız? Adamı kopyalayamazsınız, seçim numarası benzersiz. O zaman demek ki bu personelde durabilecek bir veri değil. Aynı şekilde departmanda da duramaz bu bilgi. Neden duramaz? Çünkü bu personel departmanda çalışmıyorsa bunu nasıl göstereceğiz? İşte bu çalışmanın, çalışma ilişkisinin kendi özelliği.
+
+450
+01:30:00,020 --> 01:30:16,920
+Yani işte ben işte bu departmanda işte satış departmanında 2011'den beri çalışıyorum. Yine ben aslında ayrı bir satır gibi oluşuyor gördüğünüz gibi. Ne bileyim pazarlama departmanında 2014'den beri çalışıyorum gibi.
+
+451
+01:30:18,676 --> 01:30:28,256
+Bu şekilde aslında ilişkinin de kendine has özellikleri olabilir. Bunu özellikle çoka çok ilişkilerde sıklıkla kullanırız.
+
+452
+01:30:31,256 --> 01:30:37,376
+Tamam, şimdi bu birebir, bire n, bire n, m dedim ya, bunlara bir bakalım ilişki tiplerine.
+
+453
+01:30:37,836 --> 01:30:42,296
+Sınıf diagramında aslında üzerinden geçtik ama bir de varlık ilişkisi açısından bakalım.
+
+454
+01:30:42,996 --> 01:30:45,115
+Birebir ilişki genellikle çok fazla olmaz.
+
+455
+01:30:45,587 --> 01:30:54,347
+Ama böyle iki tane varlık kümemiz olsun. Bir tarafta erkek varlığı, bir tarafta kadın varlığı. Bu da evlilik ilişkisi. Bir erkek bir kadınla evlidir.
+
+456
+01:30:55,208 --> 01:31:03,168
+İşte böyle bir küme var. Varlıklar burada noktalar. Burada da başka bir küme var. Burada da başka noktalar. Her bir nokta sadece biriyle ilişkide.
+
+457
+01:31:04,007 --> 01:31:10,028
+Tamam mı? Bu. Bu dediğim gibi çok fazla kullanılan bir ilişki türü değildir.
+
+458
+01:31:11,283 --> 01:31:33,384
+En çok olanlardan biri, 1'e N ilişkidir. Bir kümedeki varlık ya da ilk kümedeki varlık, ikinci kümedeki ya da diğer kümedeki en çok bir varlık dayıntıdır. Ne demek bu? Şöyle, 1'e M ilişki. Bakın, bir varlık burada bir tane ilişkili.
+
+459
+01:31:33,908 --> 01:31:38,348
+Buradaki bir varlık, bakın burada iki tane ile ilişkili.
+
+460
+01:31:39,208 --> 01:31:45,648
+Buradaki bir varlık belki, şöyle çizelim, rengini de tutturalım.
+
+461
+01:31:47,788 --> 01:31:52,388
+Mesela bu varlık belki şöyle bir şey olacak, olabilir.
+
+462
+01:31:53,939 --> 01:32:19,799
+Böyle bir ilişkide, dört tane varlıklı ilişkide olabilir. Nedir bu mesela? Bölümle öğrenci ilişkisi. Çift anadal yok, tamam mı? Öyle bir kavramın olmadığını düşünelim. Bir bölümde, yani aslında şuraya sanki bir yazmışız, tamam mı? En tane öğrenci okur. Ama bir öğrenci sadece bir bölümde okur. Birden fazla bölümde okuyamaz. Tamam mı?
+
+463
+01:32:20,180 --> 01:32:35,859
+Olay bu. Hani bizde üniversitelerde belki çok geçerli olmayabilir ama şey, liseleri düşünün. Siz ya fen şeyindesinizdir. Ne diyorlar ona? Fen alanı mı, bölüm? Ne deniyordu ona ya?
+
+464
+01:32:36,212 --> 01:33:00,512
+Sınıf? Yok. Şube mi deniyordu? Neyse. Ya sosyalcisinizdir ya Türkçe matematikcisinizdir. Neyse işte. Ya da yabancı dilcisinizdir. Hani bunların hepsinde aynı anda olamazsınız. İşte bir bölümde. Ama o bölümde en tane öğrenci olabilir. Ali olabilir, Ayşe olabilir, Ahmet olabilir. Tamam. Burada birden fazla öğrenci varlığı sadece tek bir işte fen bölümünde olabilir. Buna da okuma ilişkisi adını veriyoruz.
+
+465
+01:33:02,515 --> 01:33:17,755
+İkinci, üçüncü pardon ilişki türümüz de çoka çok ilişki, NEM ilişki türü. Burada da ilişkide herhangi bir kümede bulunan varlıklardan her biri, diğer kümedeki varlıklardan herhangi biriyle birden çok varlık değintili olabilir.
+
+466
+01:33:31,060 --> 01:33:43,580
+Sağdaki kümeden iki tane ile ilişkiliyken, sağdaki kümedeki birinci varlık da soldakinden birinci ve üçüncü, dördüncü ile ilişki içinde. Ne demek bu? Mesela ders ve öğrenci varlıkları.
+
+467
+01:33:44,480 --> 01:33:52,340
+Tabi bu böyle birden çok ders şeklinde gösterilmez ama özellikle ayrı ayrı dersler olduğunu anlatmak için şey yaptım, bu şekilde ifade ettim.
+
+468
+01:33:52,340 --> 01:33:57,720
+Yani aslında buna birinci ders diyelim.
+
+469
+01:33:58,676 --> 01:34:25,476
+Buna ikinci ders diyelim, buna üçüncü ders diyelim. Yine şey olarak bakalım, işte hani Türkçe, matematik, müzik diyelim bu derslere basit olsun. Burada da öğrenciler var Ali, işte ondan sonra Burcu ve Cemil var. Tamam mı? Öğrenciler olarak da. Şimdi mesela birinci dersi Ali ile Burcu alabilir.
+
+470
+01:34:26,195 --> 01:34:31,956
+Ama Ali aynı zamanda ikinci dersi de alabilir. Hatta üç dersi de alıyor olabilir.
+
+471
+01:34:32,695 --> 01:34:43,576
+Tamam, bu şekilde bir tarafta N tane, bir tarafta da M tane varlık ilişki içine giriyorsa buna da çoka çok ilişki adını veriyoruz.
+
+472
+01:34:44,355 --> 01:34:52,475
+Burada ben peki, bire N daha kolay çünkü bir taraf sabit, diğer tarafa ilişki kurabilirim.
+
+473
+01:34:52,752 --> 01:35:02,672
+Ama çoka çok ilişkilerde benim bunları gerçeklerken, şimdi bu varlık kümesi bir tane veritabanı tablosu haline gelecek.
+
+474
+01:35:03,632 --> 01:35:03,832
+Değil mi?
+
+475
+01:35:05,312 --> 01:35:08,292
+Bu varlık kümesi de başka bir veritabanı tablosu haline gelecek.
+
+476
+01:35:09,912 --> 01:35:10,572
+Şöyle.
+
+477
+01:35:10,572 --> 01:35:11,592
+Peki.
+
+478
+01:35:12,180 --> 01:35:34,440
+Buradaki çok dersi, buradaki çok öğrenciyle nasıl eşleştireceğim? İşte burada benim üçüncü bir bağlantı tablosuna ihtiyacım olur ve bu bağlantı tablosunun her bir satırı da aslında buradaki A öğrencisi birinci dersi şu dönemde aldı.
+
+479
+01:35:34,836 --> 01:35:51,076
+A öğrencisi ikinci dersi şu dönemde aldı, B öğrencisi birinci dersi şu dönemde aldı, B öğrencisi üçüncü dersi şu dönemde aldı diye birleştirdiğim bir üçüncü tablo tanımına ihtiyaç duyarım.
+
+480
+01:35:51,195 --> 01:35:57,076
+Yani buna da şuradaki ilişki tablosu ya da bağlantı tablosu adını veririm.
+
+481
+01:36:01,844 --> 01:36:24,083
+Benzersiz tanımlayan mesela öğrenci numarasını ve ders kodunu almalıyım. İki taraftaki varlığın da anahtarlarını, primary key'lerini, birinci anahtarlarını alıp bunları burada yabancı anahtar olarak tutan bir bağlantı tablosuna ihtiyaç duymam gerekir. Şimdi onlara bakalım.
+
+482
+01:36:24,851 --> 01:36:37,471
+Ona geçmeden önce bir varlık ilişki örnek bir tane diagram görelim. Daha gerçekçi bir örnek olsun. Şimdi, kitap, bir kitap bilgi sistemimiz var. Bir kitap eviyle alakalı diyelim.
+
+483
+01:36:40,979 --> 01:36:56,420
+Buradaki tutmamız gereken varlıklar ve hakkında tutmamız gereken verileri şöyle bulmuşuz. Kitaplar hakkında bilgi tutmalıyım. Kitap bir varlık. Yazarlar var, yazarlar hakkında bilgi tutmalıyım. Bir de yayın evleri var, yayın evleri hakkında bilgi tutmalıyım.
+
+484
+01:37:07,604 --> 01:37:09,604
+Birden fazla kitap yayınlayabilir.
+
+485
+01:37:11,024 --> 01:37:16,923
+Ve yazar konusunda da çok yazarlı kitap olabilir ve bir yazar birden fazla kitap da yazabilir.
+
+486
+01:37:17,323 --> 01:37:20,903
+Tamam. O zaman burada N'e N ilişki var gördüğünüz gibi.
+
+487
+01:37:21,503 --> 01:37:23,543
+N ya da sonsuz koyabilirsiniz.
+
+488
+01:37:24,404 --> 01:37:31,324
+Buradaki ilişki tarafından yazılmış ilişkisi. Mesela yazım tarihi gibi bunu buraya özellik olarak ekleyebilirsiniz.
+
+489
+01:37:32,003 --> 01:37:36,204
+Kitabın benzersiz tanımlayıcısı ISBN numarasıymış. İşte başlığı varmış.
+
+490
+01:37:36,819 --> 01:37:57,239
+Fiyatı varmış. Bakın bu bire en ilişkide burada yayın evi ID'yi görüyorsunuz. Yayın evi ID bunun primary key'i yani benzersiz tanımlayıcısı. Buna biz foreign key'i adını veriyoruz. Yani aslında kitaptaki bire en ilişkiyi şuradaki yayın evi ID sayesinde.
+
+491
+01:37:58,163 --> 01:38:23,763
+sağlamış oluyoruz. Yani ben bunu aslında şöyle yazayım, ifade edeyim. Mesela kitap 1 kodu, kitap 1 olsun, tamam mı? Başlığı, başlık 1 olsun. Ondan sonra yayın evi ID'si Y1 olsun. Ondan sonra başka bir kitap, kitap 2, başlık, ondan sonra yayın evi 1.
+
+492
+01:38:25,171 --> 01:38:51,011
+Ne oldu? Bakın, Yayın Evi 1 aslında iki tane kitabı sahip oldu. Kitap 3 de Yayın Evi 1'in olsun. Şöyle olsun, şöyle. Yayın Evi 1. Ondan sonra başka bir kitap, kitap 4. O da başka bir başlığa sahip. Yayın Evi 2'ye ait. Tamam. Bu sayede ben neyi takip edebiliyorum? Şuradan bakıyorum.
+
+493
+01:38:52,564 --> 01:39:10,064
+Kitap 1, Yayın Evi 1'de. Kitap 2, Yayın Evi 1'de. Bir de tabii şey Yayın Evi'nde yazalım şu tarafa. Yayın Evi 1, adı ne? İşte Altın Kitaplar. Ondan sonra Yayın Evi 2, Gümüş Kitaplar. Tamam mı? Olsun. Ben burada neyi görüyorum?
+
+494
+01:39:20,948 --> 01:39:32,088
+Şöyle göstereyim. Bunların hepsi burada bir tane. Bir yayın evi en tane kitap. Tamam. Burada da bir yayın evi bir tane kitap olmuş.
+
+495
+01:39:46,195 --> 01:39:51,355
+N ilişkiyi ortaya koyabiliyorum ya da gerçekleyebiliyorum.
+
+496
+01:39:51,796 --> 01:39:54,676
+Fakat buraya geldiğimizde tabii ki durum biraz daha farklı olacak.
+
+497
+01:39:55,155 --> 01:40:02,735
+Neden? Çünkü ben burada kitap ve yazarı bir arada, hani K1, Y1'den 1'den fazla olacak.
+
+498
+01:40:02,735 --> 01:40:07,235
+O zaman ben bunları ayrı bir yerde bir şekilde tanımlamam gerekecek demiştim.
+
+499
+01:40:07,676 --> 01:40:08,556
+Şimdi onlara bakalım.
+
+500
+01:40:09,876 --> 01:40:28,316
+Nasıl yapacağız biz bunu? Gerçeklemeyi nasıl yapacağız? Adım adım şeyden başlayalım, bire birden başlayarak her birini tablolar haline getirelim. Varlık kümelerimizin hepsini veri tabanındaki tablolarımıza dönüştüreceğiz. Niteliklerimizi de özelliklerimizi de sütunlara dönüştüreceğimizi söylemiştik.
+
+501
+01:40:29,652 --> 01:40:40,012
+Tabloların ilişkileri ve doğal olarak anahtar sütunlar tablolarda belirlenecek. Nereden belirlenecek? Varlık ilişki modelindeki primary keyler sayesinde belirlenecek.
+
+502
+01:40:40,912 --> 01:40:56,632
+Şimdi birebir ilişkide sorun değil. Bir taraf, diğer taraf, ikisinden birini seçersiniz. İkisi de birebir olduğu için. Birisinin birinci anahtarı, birinin yabancı anahtarı olarak seçip kullanabilirsiniz. Tamamen size kalmış.
+
+503
+01:40:57,108 --> 01:41:07,728
+Bire n ilişkide ise n tarafındaki tabloda, biraz önce kitap örneğinde gösterdim, bir tarafındaki tablonun birinci anahtar sütununu yabancı anahtar olarak eklersiniz.
+
+504
+01:41:07,728 --> 01:41:08,768
+Şöyle.
+
+505
+01:41:09,555 --> 01:41:22,995
+Personel üzerinden örneğimizi daha detaylı verelim. Bir bölümde en tane personel çalışıyormuş. Bölüm ID'si ve adı varmış. Burada da personelin adı, ID'si, adı, soyadı, adresi ve maaşı varmış.
+
+506
+01:41:28,627 --> 01:41:47,427
+Personel tablosuna dönüşecek. Bunun bir primary key var. Primary key, personel id'si. Nereden anlıyorum? Altı çizili. Adı soyadı, adresi, maaşı var. Bir de foreign key var. Aslında bunun üstünü çizmemiz gerekiyordu. Burada altını çizmişim, yanlış olmuş.
+
+507
+01:41:55,252 --> 01:42:21,432
+Tamam, bu da ince oldu. Biraz daha kalın çizelim de daha belli olsun. Şöyle, tamam. Bunu da böyle gösterdik. Yani şu anda çok detayına girmemize gerek yok. Peki ben bunun foreign key olduğunu nereden anladım? Şuradan anladım. Bakın buradaki primary key neydi? Bölüm adıydı, bölüm id'siydi pardon, bölüm id. Şimdi ben onu burada, şuradan.
+
+508
+01:42:23,315 --> 01:42:48,096
+Şöyle göstermiş oldum. Bunu buna bağladım. Demin örneğini yaptım ya, kitap bir, yayın evi bir gibi. Burada da bölüm ID'si şöyle olsun. Bölüm tablosunda işte bölüm ID'si 011 bilgisayar mühendisliği, işte 012 elektronik haberleşme mühendisliği.
+
+509
+01:42:49,619 --> 01:43:15,420
+Yazalım şöyle. Tamam, tamam. Bunlar var. Öbür tarafa da geldiğimizde personel. Personel ID ise 1, 2, 3. Adı işte ben olayım. Ondan sonra bölüm ID'sine 0, 11. Başka işte 1, 2, 4. Kim olsun? Oya Hoca olsun. Bunun da bölümü 0, 11. Başka işte başka bir personel 1, 2, 5. Kim olsun?
+
+510
+01:43:15,891 --> 01:43:41,791
+A diyelim, şöyle farklı olsun, 0.12. Tamam. Başka bir A'ydi, 126, bu da AB olsun, bu da 0.12. Ne oldu? Ben burada, şurada, oku alabilirsem, 0.11'i, çok kalın oldu.
+
+511
+01:43:45,716 --> 01:44:00,956
+0-11'i buna bağladım, 0-11'i buna bağladım, 0-12'yi buna bağladım, 0-12'yi buna bağladım. Böyle bir bölümde en tane personel çalışıyor şeklinde bu bağlantıyı gerçeklemiş, kurmuş, kurgulamış oldu.
+
+512
+01:44:00,956 --> 01:44:02,296
+Peki.
+
+513
+01:44:04,851 --> 01:44:14,591
+Çoka çok ilişkileri nasıl yapacağız, nasıl gerçekleştireceğiz? Dediğimiz gibi yine önce varlık kümelerimizi tablolara dönüştüreceğiz ve ilişkiyi de bir tabloya dönüştüreceğiz.
+
+514
+01:44:14,591 --> 01:44:23,871
+Yine özellikleri tabloların sütunları haline getireceğiz ve tanımlayıcı nitelikleri de yani anahtar nitelikleri de.
+
+515
+01:44:23,923 --> 01:44:33,824
+İlişki tablosuna sütunlar olarak ekleyeceğiz ve buradaki tabloların birinci anahtarlarını yabancı anahtar, foreign key olarak işaretleyeceğiz.
+
+516
+01:44:34,484 --> 01:44:41,304
+Buradaki ilişki tablosunun birinci anahtarı bu iki yabancı anahtarın birleşiminden oluşur.
+
+517
+01:44:41,864 --> 01:44:47,184
+Eğer yetmiyorsa o zaman yeni bir primary key de orada yaratabilirsiniz.
+
+518
+01:44:47,184 --> 01:44:51,264
+Hemen örnek üzerinden göstereyim daha rahat anlaşılsın.
+
+519
+01:44:51,923 --> 01:45:10,744
+Filmlerimiz var. Filmlerimizin ID'si, adı, yayın tarihi ve yönetmenleri varmış. Bir de sinemalarımız, sinema salonlarımız var. Sinema ID'si var, adı var, adresi var, telefonu var. Şimdi biliyoruz ki bir film birden fazla salonda, sinemada oynuyor ve bir sinemada birden fazla film oynuyor.
+
+520
+01:45:11,539 --> 01:45:17,699
+O zaman bunun da oynama ilişkisi var ve tarih saati kendine ait başka özellikleri var.
+
+521
+01:45:17,699 --> 01:45:25,579
+Şimdi bakalım burada film için, film ID şurada gördüğümüz gibi primary key nasıl anlıyoruz? Burada.
+
+522
+01:45:26,199 --> 01:45:31,439
+Herhangi bir foreign key var mı? Yok. Tamam. Foreign key yani şu oynamayı burada yapacağız.
+
+523
+01:45:31,939 --> 01:45:34,347
+Sinemaya bakalım. Sinemada da...
+
+524
+01:45:34,420 --> 01:45:50,079
+Turuncu ile işaretleyelim. Cinema ID vardı. Bunu da Cinema ID olarak burada, Primary Key olarak bu tabloda tanımladım. Peki, güzel. Şimdi gelelim oynama ilişkisine. Oynama ilişkisinde de tarih ve saat var.
+
+525
+01:45:57,811 --> 01:46:04,631
+Tabii ben üstünü çizmemişim ama ve cinema ID'yi onu da üstünde şöyle çizip gösterelim.
+
+526
+01:46:04,631 --> 01:46:06,351
+Siyahla.
+
+527
+01:46:10,963 --> 01:46:20,923
+Bu bir foreign key, bu da bir foreign key. İkisi buradaki kırmızı kırmızı, turuncu turuncunu aynısı olacak şekilde foreign key'ler halinde tuttuk.
+
+528
+01:46:20,923 --> 01:46:35,243
+Şimdi normalde mesela şurayı kaldırayım. Pardon kaldıramadık. Çünkü yanlış aracı seçmişiz. Şöyle.
+
+529
+01:46:35,663 --> 01:46:45,803
+Yok edeyim onu tamam mı? Normalde benim için buradan da şöyle yapayım şu ikisi birlikte
+
+530
+01:46:47,283 --> 01:47:08,663
+Bir primary key olabilir. Film ID, cinema ID ikisi birlikte benzersiz bir tanımlayıcıdır. Ve tarih saat diyebilirim. Ama biliyorum ki işte film ID, cinema ID bir arada yeterli olmayacak. Nereden biliyorum? İşte A filmi, B sinemasında şu tarih, şu saatte oynayacak. A filmi, B sinemasında başka tarih saatlerde de oynayabilir.
+
+531
+01:47:15,283 --> 01:47:24,543
+Ben burada bu primary key değil, başka bir primary key, Oynar ID diye bir şeyi seçmeliyim. Neden? Tekrar şuraya yazayım.
+
+532
+01:47:24,543 --> 01:47:40,543
+İşte film 1, sinema 1, ne zaman olsun işte 18.05.2021'de. Aynı film, yazamadık, aynı film, yine yazamadık.
+
+533
+01:47:42,484 --> 01:47:53,684
+Aynı film, aynı sinemada, ya niye basmıyor bu tuş ya, aynı sinemada, yarın da oynayabilir.
+
+534
+01:47:55,404 --> 01:48:01,384
+Ne oldu? Bakın, bu ikisini birlikte primary 2 yapabilirdim ama yaptığımda bu yeterli olmadı benim için.
+
+535
+01:48:01,384 --> 01:48:09,384
+İşte o yüzden ben buraya şöyle bir id1 koydum, buraya da bir id2 koydum.
+
+536
+01:48:10,176 --> 01:48:34,376
+Tamam mı? Dıdıdı yapalım. İşte bu ID, ne bileyim ID 45 oldu ileride. Film 1, sinema 1, ne bileyim bir ay sonrası belki 19.06.2021. Böyle gitti. Başka bir ID, ID ne bileyim 67, film 2, sinema 1.
+
+537
+01:48:36,212 --> 01:48:38,252
+Yine 19.06.2021.
+
+538
+01:48:39,712 --> 01:48:51,772
+Tamam, işte bu şekilde ben çoka çok ilişkiyi ayrı bir tablo halinde, burada böyle göstereyim, ayrı bir tablo halinde gerçeklemiş olacağım.
+
+539
+01:48:52,672 --> 01:48:58,592
+Film ID'ler nereden geliyor? Buradan, kırmızıdan. Onları da hemen gösterelim.
+
+540
+01:48:59,492 --> 01:49:02,372
+Şöyle, film 1, film 1.
+
+541
+01:49:03,155 --> 01:49:04,916
+Film 1 ya da Film 2.
+
+542
+01:49:05,896 --> 01:49:10,136
+Sinema idlenlerden geliyor. Onlar da turunculardan geliyor.
+
+543
+01:49:11,256 --> 01:49:13,016
+Sinema 1, hep Sinema 1 gelmiş.
+
+544
+01:49:13,456 --> 01:49:30,016
+İşte bu. Böylece ben çoka çok ilişkili bir varlık kümelerini aslında üçüncü bir varlık tablosu oluşturarak, bir ilişki tablosu oluşturarak gerçekleyebilirim.
+
+545
+01:49:32,948 --> 01:49:43,247
+Veri modelimizde oluşturmak bu şekilde. Yani varlıkları ve varlıklar arasındaki ilişkileri ve bunların taşıdığı bütün özellikleri ifade etmek şeklinde oluşuyor.
+
+546
+01:49:43,908 --> 01:49:52,867
+Bu gösteriliyor diyelim. Yani ER diyagramının temeli bunlar. Ne kadar varlığınız varsa veya bunların arasında ne ilişkiler varsa öz nitelikleriyle birlikte,
+
+547
+01:49:53,028 --> 01:49:59,608
+yani bir yerde, veri tabanında ya da dosyada saklamanız gereken bütün özellikleriyle birlikte bu şekilde tasarlayabilirsiniz.
+
+548
+01:50:00,020 --> 01:50:18,320
+Şimdi burada bir de zayıf varlıklarımız var. Ondan da hızlıca bahsedelim. Mevcudiyeti tek başına anlam ifade etmeyen, başka bir varlık türüne bağlı olarak yaşayabilen varlıklara zayıf varlık adını veriyoruz. Ne demek bu? Şöyle, bir varlık var, varlık kümesi var, yani bir dikdörtgeniniz var.
+
+549
+01:50:27,252 --> 01:50:49,271
+Anlamlı bir anahtar oluşturmuyorsa eğer, işte biz bunlara zayıf varlık adını veririz. Örneğin fakülte. Şimdi diyeceksiniz fakülte ID koyarız hocam. Evet koyabilirsiniz de. Fakültelerin isimleri var diyelim. Bir üniversitedeki fakülte isimleri benzersizdir. Ama biliyoruz ki işte mesela mühendislik fakültesi dediğinizde mühendislik fakültesi 50 tane üniversitede var.
+
+550
+01:50:49,811 --> 01:51:17,811
+İşte bu tek başına bir anlam ifade etmiyor. Her şeyinde koysanız, bütün özelliklerini bile alsanız, kendi başına bir varlık anlamı ifade etmiyorsa, bir üniversiteye ancak bağlı olarak bir fakülte varlığını sürdürebiliyorsa buna bir zayıf varlık kümesi adını veririz. Nasıl gösteriyoruz? Varlık ilişki diagramında varsa zayıf varlıklarınız şöyle çift çizgili dikdörtgenle, iç içe iki dikdörtgenle gösteriliyor. Başka bir özel gösteriliyor.
+
+551
+01:51:17,811 --> 01:51:37,011
+söz konusu değil. Nasıl gerçekliyoruz? Üniversite sahiptir fakülteye demiştik. Fakültenin kendi kodu var ya mesela bakın şöyle. Üniversite için, üniversite numarası benzersiz tanımlayıcı ya, fakülte için sadece fakülte numarasını değil,
+
+552
+01:51:37,747 --> 01:51:52,107
+Üniversite numarasıyla birlikte ikisini birlikte bir primary key haline getiriyorsunuz. Bu da bir zayıf varlık olduğunu ve zayıf varlıkların gerçeklenmeleriyle ilgili detayı gösteriyor bize.
+
+553
+01:51:53,555 --> 01:52:17,475
+Bu karşılaşacağınız bir durum değildir diye düşünüyorum ama hani olursa böyle bütün her şeyi alsak bile kendi başına bir anlam ifade etmiyor. Hala bunun bir benzeri çıkabiliyor diyorsanız o zaman bu bir zayıf varlıktır. Onu mutlaka bağlı olması, yaşamak için bağlı olması gereken neyse o varlık onun IDC ile birlikte, onun primary key ile birlikte tanımlamanız gerekecektir.
+
+554
+01:52:17,475 --> 01:52:18,735
+Evet.
+
+555
+01:52:20,051 --> 01:52:29,391
+Varlık ilişki diyagramı ya da varlık ilişki diyagramı ile gösterdiğimiz varlık ilişki modelimiz ile ilgili anlatacaklarım bu kadar.
+
+556
+01:52:30,571 --> 01:52:35,591
+Hakkında bilgi tutmamız gereken ne kadar çok şey varsa varlık olarak modelliyoruz.
+
+557
+01:52:36,151 --> 01:52:38,831
+Aralarındaki bağıntıları da ilişki olarak modelliyoruz.
+
+558
+01:52:38,831 --> 01:52:47,731
+Taşıması gereken özellikleri ve çoğullamalarını da yine elipsler ve oklar halinde, bağlantılar halinde gösteriyoruz.
+
+559
+01:52:48,180 --> 01:53:11,159
+Bunların hepsini bir araya getirdiğimizde de aslında biz veri yapımızı ya da veri tasarımımızı ifade etmiş oluyoruz. Bunları bir de şöyle, hani burada basit şekillerde gösterdim ama veri tabanı tabloları haline getirip de gerçeklediğimizde karşımıza bunların implementasyonları yani gerçekleştirilmiş halleri de çıkıyor.
+
+560
+01:53:16,180 --> 01:53:20,239
+tasarımını, veri modelini gerçek hale dönüştürmüş oluyoruz.
+
+561
+01:53:21,400 --> 01:53:21,600
+Evet.
+
+562
+01:53:23,779 --> 01:53:26,079
+Dersimiz zaten sonuna gelmişiz.
+
+563
+01:53:26,739 --> 01:53:27,659
+Geçmişiz.
+
+564
+01:53:29,400 --> 01:53:32,079
+Yine bir fazla yaptık, arada vermedik.
+
+565
+01:53:32,079 --> 01:53:34,028
+Önümüzdeki hafta...
+
+566
+01:53:34,420 --> 01:53:57,539
+Kodlama tekniklerinden biraz bahsedeceğim. Çok hızlı, çok detaya girmeden. Yine yazılım kalitesi ile ilgili birkaç temel kavramdan bahsedeceğim. Bizi nasıl etkiliyor bunlara bakacağız. Test teknikleri nelerdir, temel testler nelerdir ve bunlar hangi bilgi sistemi geliştirme sürecindeki hangi adımı nasıl karşılıyor bunlara bakacağız.
+
+567
+01:54:02,420 --> 01:54:15,340
+Ne gibi farklılıkları vardır, ne gibi geçiş yöntemleri vardır buna bakacağız. Bakım süreci ne demektir ve hangi bakımlar yapılır, neden yapılır bunlara bakıp son olarak da dediğim gibi örnek bir vaka çalışması üzerinden çok basit bir örnek üzerinden.
+
+568
+01:54:16,148 --> 01:54:32,168
+Birlikte bir ufak analiz tasarım modeli gerçekleştirmeye hızlıca, bütün detaylarıyla değil ama en azından birer örnek oluşturacak şekilde hem işlevsel hem de nesne yönelik olarak çözümlemeye çalışacağız. Bir case study yapacağız.
+
+569
+01:54:33,448 --> 01:54:44,148
+Ondan sonraki iki haftada da dediğim gibi 25 Mayıs'ta bunlar ve 1-8 Haziran tarihlerinde de sizler ekip olarak sunumlarınızı gerçekleştireceğiz.
+
+570
+01:54:44,148 --> 01:54:50,427
+Gerçekleştireceksiniz. Sizlere denetim vereceğim ve sunum hızlı bir şekilde gerçekleştireceksiniz.
+
+571
+01:54:51,768 --> 01:54:57,408
+Toplam bizim kaç tane grubumuz vardı? Hemen ona da bir bakalım.
+
+572
+01:54:59,248 --> 01:55:10,028
+Şöyle bir sayalım. Biraz kalabalıktık. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.
+
+573
+01:55:10,739 --> 01:55:20,739
+14, 15, 16 tane grubumuz var. 16 grup ne demektir? Her hafta 8 grup demektir. 8 grup toplam işte...
+
+574
+01:55:21,939 --> 01:55:49,859
+100 dakikamız olduğuna göre en fazla 10 dakika düşecektir her bir gruba gibi biliyorsunuz girdisi çıktısı diyelim aralarıyla birlikte. 10 dakika içinde bütün sürecinizi anlatacak şekilde sunumlarınızı oluşturmanızı istiyorum. Ekibin katkı sağlayan bütün üyelerinin rol almasını ve sunum yapmasını, sunumda kendi yaptıklarını anlatmasını, aktarmasını da talep.
+
+575
+01:55:49,939 --> 01:55:58,299
+ediyorum diyerek detayları haftaya daha da merak ettiğiniz sorular varsa konuşuruz. Bugün dersimizin sonuna geldiğimiz için burada durabiliriz.
+
+576
+01:55:59,679 --> 01:56:08,799
+Evet, peki o zaman haftaya görüşmek üzere. Kendinize iyi bakın. İyi günler.

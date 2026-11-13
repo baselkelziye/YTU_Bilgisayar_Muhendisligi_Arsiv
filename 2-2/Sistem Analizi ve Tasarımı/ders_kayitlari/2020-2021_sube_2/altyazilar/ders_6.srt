@@ -1,0 +1,1947 @@
+1
+00:08:34,004 --> 00:08:41,964
+Evet, merhaba arkadaşlar. İyi günler dileyelim. Salı günü öğlenki seansımıza başladık.
+
+2
+00:08:43,124 --> 00:08:51,604
+Altıncı haftadayız ve sistem analizi tasarımı dersinde bu hafta sistem analizi konusuna devam edeceğiz.
+
+3
+00:08:51,844 --> 00:08:54,923
+Geçen hafta iş analizi konusuna eğilmiştik hatırlarsanız.
+
+4
+00:08:55,392 --> 00:09:22,832
+Yani iş nedir ya da hani biznes model nedir ya da iş nasıl yapılıyor? Bizim çözmeye çalıştığımız bilgi sistemi sayesinde çözmeye çalıştığımız problem nedir? Bunu nasıl anlarız, nasıl algılarız, nasıl öğreniriz? Detaylarını gerçek iş yapan insanlardan ya da birimlerden nasıl alabiliriz? Sonrasında da bunları nasıl raporlayabiliriz? Buna bakmıştık.
+
+5
+00:09:23,392 --> 00:09:42,792
+Ve sonuçta bir business requirements document şeklinde bir çıktığıyla iş analizi sonuçlarını raporlayabileceğimizi ve gereksinim analizinin özellikle de fonksiyonel çözümleme ya da kavramsal model oluşturma aşamasına geçmeden önce bunlara nasıl zemin oluşturacağını açıklamıştık.
+
+6
+00:09:47,988 --> 00:09:53,807
+Artık biraz daha teknik tarafa doğru geçiyoruz. Ne yapacağız? Fonksiyonel çözümlemeye bakacağız.
+
+7
+00:09:53,807 --> 00:09:59,968
+Ve sonrasında da SRS dediğimiz Software Requirements.
+
+8
+00:10:00,000 --> 00:10:28,000
+Specification, yani yazılım, gereksinim tanımları belgesi nedir? Nasıl bir standardı, nasıl bir formatı vardır? Birkaç yine örneğiyle birlikte hem böyle standart örnek hem de çeşitli projelerden canlı ve ülkemizde insanlar neler yapıyor, bu konuda neler yazıyor, bakalım taze bilgi var mı? Onları size paylaşıp az çok neye benzediğini ya da nasıl bir çıktı üretmeniz.
+
+9
+00:10:28,000 --> 00:10:55,940
+gerektiğini aktarmaya çalışacağım. Bu hafta kavramsal model oluşturulmasına geçmeyiz. Onu haftaya bırakacağım. Çünkü temel olarak sistem analizinde bir analiz modeli yani bir problem uzayı modellemesi yaparken temelde iki tane yaklaşım var. Birincisi yapısal ya da geleneksel yaklaşım ya da işlevsel ya da burada slide'da gördüğünüz gibi fonksiyonel çözüm.
+
+10
+00:10:56,000 --> 00:10:59,980
+Bir diğer yaklaşım ise nesne yönelik bir çözümleme yapmak.
+
+11
+00:11:00,179 --> 00:11:13,399
+Şimdi nesne yönelik çözümleme yapacaksak eğer o zaman daha farklı bir şekilde problemi ele almamız ve bunları gerçek dünya nesnelerini soyutlayarak yazılıma taşımak üzere modellememiz gerekecek.
+
+12
+00:11:13,399 --> 00:11:26,059
+Bunun için de yine geçen hafta gereksinimlerin neler olduğunu raporlama yöntemlerinden biri olan use case'leri yani kullanım senaryolarını kullanacağız.
+
+13
+00:11:28,179 --> 00:11:31,279
+Bir kavramsal model nasıl oluşturulur?
+
+14
+00:11:32,019 --> 00:11:45,419
+Ve problem uzayı nasıl modellenir? İşte use case modeliyle problem ya da domain model dediğimiz, domain space dediğimiz model nedir? Nasıl ilişkidedir?
+
+15
+00:11:45,839 --> 00:11:53,839
+Sonrasında bunlar tasarıma doğru nasıl değiştirilir ya da tasarımda daha başka neler yapılır konusuna doğru ilerlemeye başlayacağız.
+
+16
+00:12:00,019 --> 00:12:04,799
+Temel yöntem nedir? Sistem analizi modelini oluştururken buna bakacağız.
+
+17
+00:12:05,379 --> 00:12:10,639
+Çıktısıyla birlikte haftaya da nesne yönelik olarak acaba bunu nasıl yaparız?
+
+18
+00:12:10,960 --> 00:12:17,599
+Yol yordamı nedir? Ya da nelere dikkat edelim? Nasıl bir model oluşturalım? Bu konuda 2 saat geçiririz.
+
+19
+00:12:17,599 --> 00:12:24,319
+Şimdi gereksinim analizini tekrar hatırlayacak olursak bizim bir amacımız var değil mi? Burada bir model oluşturuyoruz.
+
+20
+00:12:27,923 --> 00:12:37,563
+Formal bir şekilde, resmi bir şekilde ya da değişmeyecek, herkesin okuduğunda aynı şeyi anlayabileceği şekilde açıklamak, bunları oluşturmak.
+
+21
+00:12:37,563 --> 00:12:53,743
+Ve bununla birlikte artık teknik detayları da vermeye başlamak. Bir tasarımın, yani bir çözüm önerisinin, böyle gerçekleştirilecek, kodlanacak bir çözüm önerisinin nasıl oluşturulacağına dair temelleri ortaya koymaya çalışıyoruz.
+
+22
+00:12:55,923 --> 00:13:09,384
+Aslında sürecin daha başlarındayız ya, sürecin en sonundaki test ya da onaylama mekanizmaları içinde birer denetim unsurunu da yaratıyoruz aslında.
+
+23
+00:13:09,683 --> 00:13:20,503
+Yani ben burada ihtiyaçları açıklıyorum, ihtiyaçları listeliyorum, belirliyorum, tanımlıyorum ya, sonunda her şey oldu bitti ve uygulamayı, bilgi sistemini devreye aldığınızı düşünün.
+
+24
+00:13:21,203 --> 00:13:49,203
+Acaba gerçekten burada devreye aldığınız bilgi sistemi ihtiyaçları karşılıyor mu? İstekleri yerine getiriyor mu? Ve bunları düzgün bir şekilde yapıyor mu? Ben bunları nasıl kontrol edeceğim? İşte geri döneceğim analiz modelime ve bakacağım işte mesela senaryolarıma. Senaryolarda olması gerektiği gibi işler yapılıyor mu? Bilgi sistemi girdileri alarak gerekli işlemleri yapıp gerekli çıktıları ya da hizmetleri yapıp.
+
+25
+00:13:49,203 --> 00:14:07,943
+üretimleri üretebiliyor mu? Bunları da kontrol etmemi sağlayacak. Yani aslında bir de bir yandan da bir onay kontrol ve takip listesi gibi de bir çıktı üretmiş olacağız. Gereksinim analizi, özellikle de analiz uzayını, yani problem uzayını modellediğimiz zaman.
+
+26
+00:14:08,863 --> 00:14:14,343
+Peki, şimdi burası biraz teorik.
+
+27
+00:14:14,836 --> 00:14:26,076
+Fakat en azından nihayetinde mühendis olarak yetişiyoruz. Buradaki teori yani sistem teorisi ya da sistem analizi ve tasarımının altında yatan teknik nedir? Bunu da biliyor olmamız lazım.
+
+28
+00:14:29,716 --> 00:14:50,895
+Gereksinim analizi modelini biz şöyle bir çember mi diyeyim buna daire mi diyeyim tekerlek değil mi tekerleğe daha çok benziyor. Böyle yuvarlanan bir tekerlek ile modellemeyi tercih ediyoruz. Ne demek bu? Şöyle. Şimdi burada 3 tane gördüğünüz gibi eşit parça var aslında. Okuyalım.
+
+29
+00:14:51,443 --> 00:15:09,303
+Bir tarafta süreç spesifikasyonu yazmışız. Süreç ne demek? İş akışları. Belirli bir zaman içinde belirli eylemlerin yapılmasıyla ortaya konan iş diyebiliriz süreçlere. O zaman bunları bir tanımlamamız gerekecek bir analiz modeli oluştururken.
+
+30
+00:15:09,303 --> 00:15:18,563
+Bununla birlikte bu süreçlerde ya da bu işleri yaparken kullanacağımız, yararlanacağımız acaba veriler ne ya da veri nesneleri neler olacak?
+
+31
+00:15:19,187 --> 00:15:33,187
+Nesneye yönelik, nesne gibi de düşünebilirsiniz ama kavramlarımız mesela hakkında bilgi tutmamız gereken, kayıt altına almamız gereken, bir yerlerde onları yazılı ya da basılı saklamamız gereken neler var acaba?
+
+32
+00:15:33,187 --> 00:15:45,487
+Ve bunlar birbirleriyle nasıl bir ilişki içindeler? Bunların tanımlanmalarının yapılması gerekecek. Demek ki ben hem süreci tanımlayacağım hem de kullanacağım veri modelini tanımlamam gerekecek.
+
+33
+00:15:45,908 --> 00:15:57,728
+Bunun dışında bir de süreç ve verileri birlikte harmanlayarak kullanırken, acaba benim çeşitli kontrol mekanizmalarına ihtiyacım olacak mı?
+
+34
+00:15:58,067 --> 00:16:07,367
+Belirli bir durumda, belirli bir uyaran geldiğinde mesela, acaba benim sistemimin hangi parçaları ne gibi durumlara geçmesi gerekecek?
+
+35
+00:16:07,367 --> 00:16:16,028
+Ya da hangi, mesela işte bekleme durumundan işleme durumuna, mesela bir yazıcıyı düşünün, yazıcının işi nedir?
+
+36
+00:16:16,187 --> 00:16:25,528
+İşte data'yı, şey alır, binary sinyali alır, ondan sonra onu bir şekilde ya toner vasıtası ya da mürekkep vasıtası ile kağıda basar.
+
+37
+00:16:26,067 --> 00:16:45,048
+gibi düşünün. Normalde idle state de beklerken bir anda oradan sinyali yediği zaman yani veri akmaya başladığı zaman kontrol şeyiyle birlikte artık ben çalışıyor moduna geçtim. O zaman başka bir şeyler olmaya başladı. Çarklar dönüyor, motor bir şey yapmaya başlıyor falan gibi. Hani böyle fiziksel bir örnek vereyim dedim. Demek ki benim sistemimde.
+
+38
+00:16:45,620 --> 00:16:50,720
+Süreçlerimi işletirken, verileri kullanarak çeşitli durum geçişleri yaşayabilirim.
+
+39
+00:16:50,820 --> 00:16:53,180
+Hani belli bir durumdayken başka bir duruma geçebilirim.
+
+40
+00:16:53,559 --> 00:16:55,559
+Bunun için bazı tanımlar yapmam gerekebilir.
+
+41
+00:16:55,940 --> 00:16:58,860
+İşte bu da kontrol spesifikasyonu olarak tanımlanıyor.
+
+42
+00:16:59,100 --> 00:17:09,460
+Demek ki süreç, veri nesneleri ve kontrol bir arada tanımlandığında tam bir analiz modeli ortaya koyulabiliyor.
+
+43
+00:17:10,160 --> 00:17:12,619
+Peki, ben bunları nasıl yapacağım? Neyle yapacağım?
+
+44
+00:17:13,619 --> 00:17:22,859
+Mesela süreçleri modellemek istiyorsanız, temel kullanacağımız yöntem veri akış diyagramlarını yaratmaktır.
+
+45
+00:17:23,279 --> 00:17:25,719
+Data flow diagram olarak bunu biliriz.
+
+46
+00:17:26,379 --> 00:17:28,500
+Burada bir şey olmuş, kariplik olmuş.
+
+47
+00:17:29,539 --> 00:17:32,659
+Nedense burada İngilizcelerini yazıp burada Türkçesini yazmışım.
+
+48
+00:17:32,659 --> 00:17:35,879
+Buna da DFD yazsaydık daha doğru olacaktı.
+
+49
+00:17:36,819 --> 00:17:39,759
+Orayı şöyle hemen kalemimizi alıp düzeltelim.
+
+50
+00:17:40,756 --> 00:17:52,196
+Değil mi? Yanlış kalmasın. Şuraya şöyle bir D yazalım. Şuraya F yazalım. Şuraya da D yazalım. Data flow diagram. Evet, tamam. Şimdi daha iyi oldu.
+
+51
+00:17:55,036 --> 00:18:02,736
+Veri nesneleri nasıl tanımlayacağım? Bunun için de varlık ilişki diyagramını kullanacağım. Entity relationship diyagram. Veri nesneleri nelerdir?
+
+52
+00:18:03,188 --> 00:18:09,948
+Ne gibi özellikleri vardır ve aralarındaki bağlantılar, ilişkiler nasıldır? Bunlara da ilerleyen haftalarda bakacağız.
+
+53
+00:18:10,451 --> 00:18:36,972
+Şimdilik buraya girmiyoruz. Ve de bir de durum geçiş diyagramı. Dediğim gibi sistem mesela dış olaylar sonucunda nasıl hareket edecek, ne tepkileri verecek, hangi durumlara geçecek. Bunları da bir durum geçiş diyagramıyla ya da diyagramlarıyla, state transition diyagramı olarak da bunun İngilizcesini söyleyelim. Bunları da kontrol spesifikasyonu tanımlamak için ortaya koymamız ya da çizmemizi oluşturmamız gerekiyor.
+
+54
+00:18:38,451 --> 00:18:41,112
+Şuraya odaklanacağız.
+
+55
+00:18:41,907 --> 00:19:06,307
+Yani biz şu anda gereksinim analizi modeli oluştururken bizim için önemli olan süreçlerimizi şöyle bir modelleyeceğiz. İlerleyen haftalarda veri nesnelerini de tanımlayacağız. Yani özellikle de tasarım aşamasında bundan bahsetmek isteyeceğim. Bir varlık ilişki diagramı nedir ve nasıl oluşturulur? Buna da ileride bakacağız. Birkaç hafta sonra bunu görmüş olacağız.
+
+56
+00:19:06,736 --> 00:19:12,556
+Şurası ise şu anda bizim Autoscope, şuraya bir çarpı koyalım.
+
+57
+00:19:12,980 --> 00:19:37,780
+Şu anda tekerleğin alt tarafını düşünmeyeceğiz. Bunların hepsini uzun uzun anlatırsak çok güzel olur. Fakat o kadar detaya inebilecek kadar vaktimiz yok. Bugün anlattığım kadarıyla bile bir model ortaya koysanız çok fazla bilgiyi tasarım oluşturmak üzere üretmiş olursunuz. Peki ben bunu bunu ve bunu oluşturdum diyelim.
+
+58
+00:19:38,324 --> 00:19:58,003
+Bunların tanımlarını nerede tutacağım, nerede barındıracağım? İşte ona da biz veri sözlüğü adını veriyoruz ve şöyle merkezde tekerleğin odak noktasında veri sözlüğünü barındırıyoruz.
+
+59
+00:20:00,000 --> 00:20:05,460
+Ürettiğiniz, yaptığınız, yarattığınız bir model kurgularken yaptığınız her şey aslında bir veri sözlüğünü oluşturuyor.
+
+60
+00:20:06,000 --> 00:20:10,079
+Ve veri sözlüğünde bunların detaylı tanımlarını yapmamız gerekiyor.
+
+61
+00:20:10,199 --> 00:20:12,259
+Buna da metadata adını verebilirsiniz.
+
+62
+00:20:12,440 --> 00:20:18,000
+Yani veriyi tanımlayan veriler üst veri olarak da düşünebilirsiniz.
+
+63
+00:20:18,199 --> 00:20:26,139
+Bunun da girdileri nedir, nasıldır, neye benzer taslak halde sizinle bu dersin sonunda paylaşmış olacağım.
+
+64
+00:20:27,380 --> 00:20:43,240
+Evet, özetle dediğim gibi bir gereksinim analizi modeli bu parçalardan oluşur. Her şey şurada durur. Fakat şunu ders kapsamında eğilmeyeceğiz şu kısmına. Bu kısmını ilerleyen haftalarda bir göreceğiz. Özellikle tasarımla beraber göstermek istiyorum.
+
+65
+00:20:43,240 --> 00:20:55,280
+Şurası şu anda bizim odak noktamız olacak. Akışları, veri akışlarını, işlevleri, süreçleri yani aslında senaryolarda yapmam gerekenleri mesela nasıl modellerim?
+
+66
+00:20:55,380 --> 00:21:08,660
+Bunlara bakacağız. Geçebilirsem. Geçtim. Peki, şimdi geldik hemen ilk parçamız ya da bugünkü odak noktamız olan veri akış diyagramlarına.
+
+67
+00:21:09,107 --> 00:21:27,987
+Hemen böyle bir basit çizim gösteriyorum size. Slide'da sağ tarafında görüyorsunuz. Bu bir veri akış diyagramı. Bitti. Hadi bakalım dağılabiliriz. Konu bu kadar deyip şey yapabiliriz aslında. Ama tabii bunun bir yolu yordamı var, bir mantığı var. Niye çiziyoruz biz bunu? Neye dikkat edeceğiz? Nasıl modelleyeceğiz?
+
+68
+00:21:28,756 --> 00:21:55,236
+Bu konudaki detaylara girmemiz gerekecek. Bir veri akış diyagramı niçin kullanılıyordu? Tekrar ediyorum, süreç spesifikasyonu için kullanıyordu. Tamam, ben süreçleri tanımlamaya çalışıyorum. Süreçler ne? Aslında benim işlevlerim, benim modüllerim, hani böyle kabaca, çerçeve halinde modül düşünelim. Benim şu işlem grubum var, bu işlem grubum var, şunları yapmam, bunları yapmam lazım gibi. Böyle benim sistemin parçaları aslında.
+
+69
+00:21:56,756 --> 00:22:17,396
+İşte bunlara şuralardaki süreçler ya da işlemler adını vereceğiz. O zaman ben gerçekleştirmeye çalıştığım sistemdeki keşfettiğim, iş analizi sayesinde keşfettiğim varlıklar neler? Ki bunlar aslında aktörlere böyle karşılık geliyor gibi düşünebilirsiniz.
+
+70
+00:22:17,971 --> 00:22:30,491
+Süreçler ve işlemler neler? Benim sorumluluklarım neler? Benim senaryolarım neler? Benim hangi işlevleri yerine getirmem gerekiyor? Fonksiyonel çözüm değil mi ya? İşlev diyorum o yüzden. Hangi fonksiyonları yerine getirmem lazım?
+
+71
+00:22:30,963 --> 00:22:38,163
+Bunlar da tabii aslında kompozit yapılar. Kendi içlerinde yine başka süreçleri barındıracaklar. Detayına gireceğiz.
+
+72
+00:22:39,003 --> 00:22:46,043
+Veri depoları neler? Yani ben bir şeyleri bir yerlerde tutmam gerekiyor verileri. Acaba oralar neresi olması lazım?
+
+73
+00:22:46,603 --> 00:22:52,463
+Hani bir veri tabanı tablosu mu olsun, bir JSON dosyası mı olsun, bir web servisine basılan bir veri mi olsun?
+
+74
+00:22:58,963 --> 00:23:19,123
+MongoDB Atlas'ın bilmem nesi mi olsun ya da işte Amazon'daki, neyse MongoDB Atlas da Amazon'da durabilir. Öyle bir cloud storage mı olsun gibi düşünebilirsiniz. Bunlar her şey olabilir. Kağıt da olabilir. Öyle söyleyeyim size. Formlar mesela çıktı olarak form basıyorsunuz. Öğrenci karnelerini bastınız. Onlar da olabilir.
+
+75
+00:23:26,336 --> 00:23:34,675
+Varlıklarımız, süreç işlemlerimiz, süreçler işlemler aynı şey, bazen süreçlerim bazen işlemlerim karışıklık olmasın, tamamen aynı şeyi söylüyorum.
+
+76
+00:23:34,675 --> 00:23:43,296
+Tamam mı? Şuradaki kenarları yuvarlatılmış dörtgenlerden bahsediyorum. Veri depoları, bu temel üç bileşen ve aralarındaki verinin akışı.
+
+77
+00:23:43,756 --> 00:23:49,735
+Ooo, biz zaten veri akış diyagramı diyorduk. O zaman bu diyagramdaki en önemli şeyler oklarmış meğerse.
+
+78
+00:23:50,099 --> 00:24:08,759
+Bunlar kutucuklar falan filan bir anlam ifade ediyor. Evet, bunlar işte varlıklar, aktörler, bunlar işlemler, fonksiyonlar, bunlar da veri depoları ya da işte saklama ortamları gibi düşünüyoruz ama esas olan aslında burada süreci işletmek üzere akışların neler olduğu. Bunlar da veri akışı.
+
+79
+00:24:08,759 --> 00:24:16,740
+Şimdi ben bunu gördüğümde aslında şu şekilde okumam gerekiyor. Yani böyle bir gösterim şu demektir. Bir öğrenci varlığı var.
+
+80
+00:24:17,203 --> 00:24:28,083
+Bu öğrenci varlığı bir işleve, şurada gördüğüm mesela yeni öğrenci kaydı demişiz buna, öğrenci kayıt işleminin şakır şakır çalışması için bir girdi sağlıyor.
+
+81
+00:24:28,596 --> 00:24:49,236
+Bu veriyi buradan alıyorum. Demek ki öğrenci bana bir şeyler verecek. Ne verecek bilmiyorum. Nasıl bileceğim? İşte analizi yapacağım, iş analizini ve bu işlemin çalışması için şu şu şu verileri almam lazım diye bilmem ne verisi diye bunun üzerine ismini yazmam gerekiyor. Tamam. Bunlar tekil verilerde olabilir.
+
+82
+00:24:49,748 --> 00:25:05,748
+kompozit veriler de olabilir. Yani bir öğrencinin transkripti bile olabilir. Anlatabiliyor muyum? İlla ki öğrenci know gibi, at soyat gibi böyle integer string şeyler düşünmeyin. Burası böyle kavramsal bir dünya. Buradaki oklar...
+
+83
+00:25:06,963 --> 00:25:12,603
+Çok büyük veri blokları, tablolar bilmem neler dahi olabilir.
+
+84
+00:25:12,784 --> 00:25:17,663
+Ama buradan şunu üst seviyeli olarak modellemeye çalışıyorum.
+
+85
+00:25:18,203 --> 00:25:24,284
+Dediğim gibi bu işlevin çalışması için, bu sürecin yürütülebilmesi için öğrenciden bir veri akışı sağlamam lazım.
+
+86
+00:25:25,123 --> 00:25:33,824
+Keza bir süreçten bir ok çıkıyorsa, veri akışıydı bu oklar, demek ki bu da bir output üretiyor ve bunu bir yerlere yolluyor.
+
+87
+00:25:34,291 --> 00:26:01,471
+Mesela bir yere kaydedebilir. Öğrencinin bilgilerini öğrenci dosyasına, öğrenci tablosuna kaydedebilir. Pardon. Ya da başka bir sürece bunu, al kardeş ben bunları ürettim, bak şimdi yeni yeni kompozit veriler var. Senin çalışman için de bunları sana veriyorum. İşte örneğin yeni öğrenci kaydından sonra ne olur? Diyelim mesela işte danışman atama işlemleri. Sizi kaydettik.
+
+88
+00:26:01,807 --> 00:26:25,548
+Ama şimdi size bir danışmanı bulup atamamız lazım. Acaba kimi atacağız? Ali mi, Veli mi, Ahmet mi? Bunun bir karar mekanizması, bir süreci olması lazım. Bakın süreç dedim. İşte o zaman buyurun yeni öğrenci bilgileri size veriyi aktarıyorum. İşte şimdi siz de danışman ataması yapın. Burada böyle mesela 1.2 danışman ataması. Şöyle bir şey hemen çizelim.
+
+89
+00:26:25,940 --> 00:26:52,059
+Burada kenarı şeyli yok. Anıtabildim mi? Yuvarlatılmış dikdörtgen yok. Kusura bakmayın. Şöyle idare edin diyelim. Bunu kenarları yuvarlatılmış gibi düşünelim. Mesela ben burada hemen şeyi ekleyeceğim şuraya. Ekleyemeyelim. 1.2. Ne dedik? Danışman ataması dedik. Tamam.
+
+90
+00:26:52,468 --> 00:26:55,468
+Sığmadı, idare edin, siz güzel olduğunu düşünün.
+
+91
+00:26:55,788 --> 00:27:07,548
+Ve sonrasında da yine mesela ben bu yeni öğrenci bilgisini, aynı bilgiyse eğer buradan böyle, bir dakika güzel çizemedim, şöyle yapalım.
+
+92
+00:27:07,928 --> 00:27:11,728
+Aynı oku ikiye bölerek mesela şuraya da yolladım.
+
+93
+00:27:12,084 --> 00:27:23,243
+Ne oldu? Mesela ben şimdi öğrenciden bir şeyleri almıştım. Mesela buraya da şey yazabiliriz. Kimlik bilgileri. Tamam.
+
+94
+00:27:23,763 --> 00:27:41,763
+Mesela böyle bir örnek olsun. Bu kimlik bilgileri verilirse bu veri öğrenciden bize aktı. Biz öğrencinin kayıt sürecini yaptık. Bakın içinde algoritma falan daha hiçbir şey konuşmuyoruz. Burada kabaca böyle bir süreç var diye bunu modellemeye çalışıyoruz. Ve bu çalışıp bittikten sonra da yeni öğrenci bilgisini...
+
+95
+00:27:42,240 --> 00:27:57,799
+işletilmiş, o yaratılmış öğrenci bilgisini hem bir dosyaya kaydetti, örneğin bir veritabanı tablosuna, hem de başka bir sürece buyurun, siz de çalışın, sizin çalışmanız için gerekli bir öğrenci, yeni öğrenci bilgisini size veriyorum diye yollamış oldum.
+
+96
+00:27:58,132 --> 00:28:13,971
+Böyle bütün süreçlerinizi, bütün işlevlerinizi, bütün varlıklarınızı, süreçlerin işletilmesi için gerekli veri akışlarınızı, ürettiğiniz çıktıların nerelere akacağını, hangi verilerin olduğunu ve nerelere eğer veri depolarını ya da süreçlere ya da dış varlıklara, örneğin bir dış sisteme de yollayabilirsiniz.
+
+97
+00:28:15,192 --> 00:28:25,352
+Mesela, hadi orayı da çizelim. O da şöyle olsun. Şuradan, şuraya mesela şey yazalım.
+
+98
+00:28:27,604 --> 00:28:45,864
+YÖK yazalım, Yüksek Öğretim Kurumu. Tamam mı? Ve sizin, o demin mesela şuradaki kayıt bilgileriniz vardı ya, onları şöyle çizeyim. Yeni öğrenci bilgisini, aslında onu da kalın çizselik daha iyiydi. Hepsini kalın çizmiştik.
+
+99
+00:28:45,864 --> 00:28:52,124
+Tamam, şöyle şuradan YÖK'e de yolladınız. Ne oldu?
+
+100
+00:28:52,596 --> 00:29:15,495
+Siz yeni öğrenci bilgisini mesela bir dış varlığa yolladınız. İşte bu da örneğin yarın öbür gün tasarımda ve gerçekleştirmede belki bir web servisine bir JSON dosyasının verilip ondan sonra buyurun çalışın size bu datayı işte REST API ile yolluyorum şeklindeki gerçekleştirmeye doğru gidecek.
+
+101
+00:29:15,495 --> 00:29:20,556
+Şu anda ben problemi modelliyorum. O yüzden de ortada ne REST API var.
+
+102
+00:29:20,596 --> 00:29:46,215
+Ne JSON dosyası var, ne içeriği var. Üst seviyeli olarak bu süreçten çıkanlar bir yere kaydediliyor, bir dış paydaşa, bir varlığa gönderiliyor, başka bir sürece çalışması için input olarak veriliyor gibi böyle anladığım problemdeki süreçleri, varlıkları ve veri depolarını ve veri akışlarını aralarındaki modellemeye çalışıyorum.
+
+103
+00:29:48,468 --> 00:30:04,627
+Aslında işin özü bu. Tamamen bu slide'da her şeyin üzerinden çok temiz bir şekilde, böyle hani clean bir şekilde şeyini tam bunu, pure, pack mı diyeyim ne diyeyim, fazla dolandırmadan işi anlatmaya çalıştığım.
+
+104
+00:30:04,627 --> 00:30:10,284
+Doğal olarak birden fazla varlığımız olabilir. Oklar bir süre sonra...
+
+105
+00:30:10,420 --> 00:30:33,480
+Oraya ok, buraya ok, bilmem nereden süreç, oraya gitti, buraya geldi. Çok fazla çakışma olabilir. O yüzden bazen şu varlığı, mesela öğrenciyi şuradan kopyalayıp şuraya bir tane daha yapıştırabiliriz. Öyle şeyler olabilir. Hani varlık, bu öğrenci, burada bir tane daha öğrenci gördüm, bu başka bir öğrenci mi, ne oluyor burada, başka bir varlık mı var demeyin. Hepsi öğrenci, aktör yani aslında.
+
+106
+00:30:34,867 --> 00:30:44,907
+Tekrarlar bu nedenle olabilir. Okların mutlaka tek yönlü olmalarına dikkat edin. Bakın bunlar veri akışı. Kaynaktan hedefe gider. İki tarafa birden gitmez.
+
+107
+00:30:44,907 --> 00:30:57,567
+Yani böyle evet gidebilir ama o zaman bu başka bir oktur. Şöyle çizeyim tamam mı? Ya da bunu başka bir renkte çizelim. Ne ile çizelim? Kırmızı ile çizelim tamam mı?
+
+108
+00:30:58,483 --> 00:31:09,343
+Buraya mesela onay ya da şey, öğrenci kimlik kartı. Anlatabildim mi? Buradan böyle bir başka bir veri gitti buraya işte. Mesela öğrenci numarası buna yollandı diyebilirsiniz.
+
+109
+00:31:09,875 --> 00:31:25,655
+Ya da kayıt belgesi gibi bir şey verdiniz diyelim. O zaman bu kimlik bilgileriyle aynı veri akışı değil, farklı bir veri akışı, ismi de farklı. O yüzden farklı bir yöne sahip, ayrı bir okla göstermesi gerekir.
+
+110
+00:31:26,355 --> 00:31:37,395
+Bir de bu işlemleri hiyerarşik olarak numaralandırırız. Bu özellikle birinci ve ikinci seviye akış diyagramlarına geçtiğimizde, veri akış diyagramlarına geçtiğimizde anlam kazanacak.
+
+111
+00:31:37,875 --> 00:31:46,775
+Üst seviyeli, işte mesela modül dediğimiz genel sorumluluklarımızı 1, 2, 3, 4 diye numaralandırırken, yani 1, 0, 2, 0, 3, 0, 4, 0 gibi.
+
+112
+00:31:47,556 --> 00:31:54,875
+Mesela yeni öğrenci kaydının içinde, örneğin sizin önce bir gidip mernis sorgulaması yapmanız gerekiyordur.
+
+113
+00:31:55,635 --> 00:32:02,415
+Ondan sonra ÖSYM'den puan bilgisini sorgulamanız ya da kazandığı bölüm bilgisini sorgulamanız gerekiyordur.
+
+114
+00:32:02,804 --> 00:32:07,744
+Sonra gidip öğrenci işlerinden bilmem ne dosya açma sürecini işletmeniz gerekiyordur.
+
+115
+00:32:08,203 --> 00:32:11,964
+Gördüğünüz gibi böyle alt işlevler var bu modülün içinde.
+
+116
+00:32:12,964 --> 00:32:15,484
+Ya da bu sorumluluğun sürecin içinde.
+
+117
+00:32:15,943 --> 00:32:22,344
+Bunlara da 1.1, 1.2, 1.3 gibi mantıklı hiyerarşik numaralar vermeye çalışırız.
+
+118
+00:32:26,996 --> 00:32:52,116
+Şimdi bunları silelim. Tamam. Burada tekrar slide'da kalsın diye uzun uzun anlattım ama öğelerimiz neler? Varlıklarımız var. Bunlar her şey olabilir. Kişi olabilir, kurum olabilir, birim olabilir, sistem olabilir. İlla böyle insan olacak diye bir şey yok. Birinci aktör diyebiliriz bunlara kullanım senaryolarındaki. Ya veri sağlarlar ya da veri alırlar. Örneğini gösterdik.
+
+119
+00:32:52,511 --> 00:33:10,271
+Veri akışlarını da uzun uzun söyledik. Bir kaynaktan bir hedefe diyelim şuna, bir yerden başka bir yere diye hızlı yazmışım. Hareket eden veriler. Mesela tek bir barkod numarası da olabilir ya da bir rapor çıktısı da olabilir. Yani böyle kompozit yapılarda olabilir, bir koleksiyonda olabilir.
+
+120
+00:33:17,488 --> 00:33:24,607
+Elle ya da bilgisayarla yürütülen etkinlik ya da fonksiyondur. Bazen bu süreçler manuelde olabilir, onu da veri akış diyagramı da yeniden gösteririz.
+
+121
+00:33:25,807 --> 00:33:36,248
+Genellikle, değil aslında her zaman, bunları emir kipinde yüklemlerle isimlendirmek daha doğru olacaktır. Örneğin işte randevu al. Randevu alma işlemleri orada yapılıyor gibi.
+
+122
+00:33:37,011 --> 00:33:56,072
+Ve her bir sürecin içinde tekil bir etkinlik olması gerekir. Böyle bilmem ne ve bilmem ne işlemleri olmasın. Yani bilmem ne işlemleri şurada, bir süreç mesela 3.0, o diğer bilmem ne ile de 4.0 ayrı bir süreç olarak modellenmeleri gerekir.
+
+123
+00:33:56,072 --> 00:33:59,632
+Ve veri depoları da verilerin kalıcı olarak bulunduğu yerler dedik.
+
+124
+00:33:59,983 --> 00:34:19,503
+Bunlar da yine kompozit yapılar gibi düşünebilirsiniz. Yani dosya olur, klasör olur, veri tabanı olur, veri tabanı tablosu olur, webde bir cloud bir şey olur, form olur, çıktı olur, kare kod olur. O bile olabilir. Niye olmasın? Yani bu da bir veri deposu olarak kullanılabilir nihayetinde. O da bir veriyi kodluyor.
+
+125
+00:34:27,983 --> 00:34:29,224
+Geçmeye gerek yok.
+
+126
+00:34:29,923 --> 00:34:35,163
+Şimdi farklı kaynaklarda veri akış diyagramlarını çizerken, daha doğrusu farklı demeyeyim de iki tane temel yaklaşım var.
+
+127
+00:34:35,264 --> 00:34:36,824
+Sembol ailesi var kullanılan.
+
+128
+00:34:37,172 --> 00:34:59,612
+Birincisi Demarko ve Yordon semboldür. Yani yarın öbür gün demeyin bana, hocam siz bize kenarları yuvarlatılmış şeyleri süreç dediniz ama ben böyle yuvarlak gördüm süreç için. Veri depolarını şöyle şöyle gösterdiniz ama ben üstünde altında çizgi olan şeyler gördüm diyebilirsiniz. Bu Demarko ve Yordon ailesi olarak geçer şu sütun.
+
+129
+00:34:59,987 --> 00:35:26,807
+Bu da Gain ve Sars'ın sembolleri olarak geçer. Biz genellikle bunu kullanıyoruz. Araçlarda da genellikle bu daha çok var. Çizim araçlarında falan, case araçlarında. Burada işte mesela sürecin adı var, numarası yok. Fakat Gain ve Sars'ın da hiyerarşik numaralandırma da mevcut. Veri akışları aynı. Üzerine, okun içlerine ismini yazıyoruz. Burada da dikkat edilmesi gereken en önemli husus bunların isim olmalarıdır.
+
+130
+00:35:27,219 --> 00:35:52,099
+Örneklerine bakacağız ne doğru ne yanlış diye ama burada fiil varsa bir sıkıntı var demektir. Fiil nedir? Eylem. Eylem nedir? İş. Eğer bir iş ise bu iştir, süreçtir. Tamam mı? O zaman o bir proses olarak modellenmesi gerekir. Burada mutlaka isim yani böyle bir veri olması beklenir. Veri depoları bu işte D1, D2, D3.
+
+131
+00:35:52,947 --> 00:36:19,667
+DN'e kadar gidebilirsiniz. Veri deposun adını, bilmem ne dosyası, bilmem ne tablosu, bilmem ne servisi gibi bunları söyleyebilirsiniz. Harici varlıklarımız da dikdörtgenlerle belirtiliyor. Bir ilave, eğer bunlar tekrar edebilir dedim ya, karmaşayı azaltmak açısından o okları falan çok dolaştırmamak için. O zaman tekrar ediyorsa en azından şunun kenarını kesin. Şöyle çentik atın şuraya tamam mı?
+
+132
+00:36:20,947 --> 00:36:35,067
+Şöyle bir çizgi çizin oraya. Şöyle. Bakayım çizeyim. Çok kalın oldu. İdare edin. Anlatabildim. Böyle bir şeyi alın. Hatta bir de onu da dikdörtgeni alayım da. Daha da güzel olsun.
+
+133
+00:36:37,447 --> 00:36:44,707
+Tamam. Böyle yapın. Böyle yapınca bu tekrar eden varlık anlamına gelir. Diagramda bu şekilde kullanabilirsiniz.
+
+134
+00:36:45,619 --> 00:36:48,639
+Şimdi silelim. Örnekler de burada işte profil bilgileri gir.
+
+135
+00:36:51,380 --> 00:36:55,979
+Sosyal medya uygulaması gibi bir şey belki. Orada profil bilgilerinizin girilmesi için gerekli işlemler.
+
+136
+00:36:57,799 --> 00:37:01,839
+Doğrula. Bu ne? Fiil. Yanlış. Bakın bu kötü bir örnek.
+
+137
+00:37:02,679 --> 00:37:05,099
+Hemen üzerine çarpımızı koyalım.
+
+138
+00:37:07,199 --> 00:37:11,859
+Doğrulanmış veri. Doğrulanmış bilmem ne verisi olsaydı daha doğru olacaktı.
+
+139
+00:37:12,371 --> 00:37:27,391
+İşte hasta kimlik dosyası. Tamam. Burada da hasta diye bir şey varmış. Harici bir varlığımız varmış. Bunlar sembollerimiz. Şimdi geldik biraz kurallara.
+
+140
+00:37:28,864 --> 00:37:42,864
+Aslında çoğunu söyledik fakat atlamış olmayalım diye bir de böyle tablo halinde bir daha bir bakalım. İşlemlerin sadece çıkışı olmaz. Ne demek bu? Input, process, output şeklinde çalışmamız lazım. Yani process, output hiç işe girdi olmadan olmaz.
+
+141
+00:37:45,184 --> 00:37:56,344
+Doğrusu nedir? Bir şey girer, işler, bir şey çıkar. Böyle görmeniz doğru değildir. Sadece girişi var, çıkışı yok. Ben bu işlemde bir şey yapmıyorum.
+
+142
+00:37:56,719 --> 00:38:08,759
+Çıktı üretmiyorum, uzay boşluğu böyle bir şey olmaz. Yine bir üsttekiyle aynı olacak şekilde bir veri akışının bir şekilde çıkması, hiç yoksa bir yerlere kayıt altına alınması gerekir.
+
+143
+00:38:10,759 --> 00:38:12,219
+İşlem girişleri.
+
+144
+00:38:12,851 --> 00:38:24,791
+Burada tabii bir üst seviyeli modelleme yapıyoruz dedik ama istenen çıkışı verecek kadar da yeterli detayı göstermelidir ya da bu detaya sahip olmalıdır.
+
+145
+00:38:25,192 --> 00:38:37,572
+Mesela maaş hesaplama diye bir tane prosesiniz var. Ona dediniz ki çalışma dosyası var bende bir tane. Çalışma dosyasında saatleri alacağım. Saatleri buradan aldım ve maaşı hesaplayacağım. Tamam da.
+
+146
+00:38:37,940 --> 00:38:57,460
+Siz sadece saatle maaş hesaplayabilir misiniz? Hayır. Çalışanın başka bilgilerine de ihtiyaç duyarsınız. Örneğin bu adamın hiçbir şeyi yoksa görevi nedir, ünvanı nedir? İşte hani muhasebeci midir, büro elemanı mıdır, teknisyen midir, genel müdür müdür? Müdür müdür oldu.
+
+147
+00:39:01,172 --> 00:39:17,172
+Birim yöneticisi midir? Onlara göre belki maaş kat sayıları, çarpanları bilmem neleri değişecek. Mesai saatinde fazla mesai ücretinin hesaplanmasında bir şeyler yapmanız gerekebilecek. O yüzden ben saati aldım, maaşı hesapladım diyemezsiniz. Burada...
+
+148
+00:39:17,748 --> 00:39:33,599
+Hem saat hem de çalışan verilerini almanız gerekir. Farklı kaynaklardan, farklı veri depolarından alarak şuradaki işlemi gerçekleştirmeniz gerekir. Dediğim gibi burada eksik bir modelleme yapmış oluruz. Fakat şurada...
+
+149
+00:39:33,599 --> 00:39:55,760
+En azından ileride tasarımı yapacak ya da programı gerçekleştirecek, kodlayacak insanlara, detaylarını da yine vereceğiz bunların ama, bunun çalışması için hem bir saatlere erişmen lazım hem de verilere erişmen lazım, bunları çekip kullanman lazım şeklinde bir yol gösterici de olmuş oluruz.
+
+150
+00:39:55,760 --> 00:39:57,260
+Şimdiden daha analiz modelinden.
+
+151
+00:39:58,559 --> 00:39:59,319
+Başka?
+
+152
+00:40:01,012 --> 00:40:04,771
+Bir veri deposundan, hop diye başka bir veri deposunda veri akışı olmaz.
+
+153
+00:40:05,552 --> 00:40:09,872
+Şey gibi hani tablodan aldım, öbür şeye tabloya yazdım.
+
+154
+00:40:09,992 --> 00:40:11,932
+Hayır, mutlaka arada bir işlem olur.
+
+155
+00:40:12,412 --> 00:40:14,152
+Bir süreç yaşanması gerekir.
+
+156
+00:40:14,572 --> 00:40:16,692
+O yüzden işte şu gelir, bir şeyler olur.
+
+157
+00:40:16,912 --> 00:40:17,992
+Tabii başka şeyler de gelebilir.
+
+158
+00:40:19,476 --> 00:40:30,876
+Ufaltılmışı bu. Şuradan bir şey çıkar ya da birkaç şey çıkar. Bu şekilde bir yapı kurulamanız gerekir. Aynı şekilde veri deposundan veri deposuna veri akıtamayacağınız gibi bir kaynaktan
+
+159
+00:40:31,699 --> 00:40:59,579
+Bir veri deposuna da direkt veri akışı olmaz. Şey gibi düşünün, öğrenci işte kaydoluyordu ya demin, siz geldiniz, elinizdeki kimlik bilgilerinizi, ÖSM bilgilerinizi girdiniz üniversitenin veri tabanına, tabloya insert into student table bilmem ne bir şey yazmaya başladınız. Olur mu öyle şey? Hayır olmaz. Bu bir süreç. O yüzden yine araya bir, en azından bir işlem girmesi beklenir. Burada da bunun girdisi yok demeyin, yer yok çizecek.
+
+160
+00:40:59,699 --> 00:41:07,319
+Tabloda yer olmadığı için esas burada anlatmaya çalıştığımız şeyi, arada bir işlem var olması gerekir diye göstermeye çalıştık.
+
+161
+00:41:08,539 --> 00:41:15,819
+İki yönlü ok kullanmayın dedik. Çünkü bunlar farklıdır, farklı olmalıdır.
+
+162
+00:41:15,819 --> 00:41:25,800
+Aynı hocam o yüzden yaptık demeyin. O zaman bile en azından buradan bir şeyin geldiğini, buradan da başka bir veri akış şeklinde bunun gittiğini göstermeniz daha doğru olacaktır.
+
+163
+00:41:26,324 --> 00:41:30,764
+İki yönlü ok kullanmayın diyerek burayı özetleyebiliriz.
+
+164
+00:41:31,724 --> 00:41:34,623
+Pardon yüzümü kaçtı.
+
+165
+00:41:35,764 --> 00:41:36,283
+Kaşındı.
+
+166
+00:41:37,483 --> 00:41:38,483
+Tamam.
+
+167
+00:41:40,483 --> 00:41:42,083
+Kurallar da bu şekilde.
+
+168
+00:41:45,619 --> 00:42:09,239
+Bir işlemden mesela farklı işlemlere aynı veri gidecekse bunları ayrı ayrı göstermek yerine tekil bir veri akış şeklinde göstermek daha iyi olacaktır. Okunaklı olacaktır. Hani bu aynı veri aslında diye. İlk slide'da daha bu veri ve akış diyagramlarını anlatırken aslında verdiğim örnekte bunu gördünüz. Direkt okun içinden okları bağladım. Ayrı oklar şeklinde çıkartmadım. Bir veri.
+
+169
+00:42:09,748 --> 00:42:19,908
+Burada bir rekürsif yapı var görüyorsunuz. Kendine besleme yapıyor işlem. Olabilir neden olmasın ama bu çok doğal bir durum değil.
+
+170
+00:42:20,320 --> 00:42:39,940
+Bu ancak şeyde görülebilir. Aslında bunun içinde bir proses, 1.1 var, bir de 1.2 var. 1.1'den çıkıp 1.2'ye gidiyor aslında falan diyebilirsiniz. Ama onu da göstermenin yeri burası değildir. Zaten ikinci seviye akış diyagramını çizdiğinizde onu zaten orada modellemiş olacaksınız.
+
+171
+00:42:39,940 --> 00:42:48,320
+O yüzden hiçbir işlemden geçmeden böyle olduğu gibi kendine dönen veri doğru ya da mantıklı bir gösteri.
+
+172
+00:42:48,320 --> 00:43:02,440
+Bir işlem olmayacaktır. Beklenen şudur, işte bir işlem bir başka işleme veri akışı sağlar. O işlemde başka bir işleme ya da kendisine geri başka bir veri akışı sağlar şeklinde bir modelleme mantığı olması beklenir.
+
+173
+00:43:03,220 --> 00:43:13,340
+Bunu söyledik ama yine tabloda son şey olarak bulunsun. Veri akışlarının üzerinde sadece isim formatı olması beklenir. Bakın mesela siparişi doğrula.
+
+174
+00:43:14,291 --> 00:43:34,771
+Bu yanlış. Neden? Burada bir işten bahsediyorsunuz. Siparişi doğrulama. Hayır. Bu ancak olsa olsa mesela doğrulanmış sipariş olabilir. Bakın bu yine kompozit bir veri. Kendi içinde belki siparişin ID'si var, tarihi var, saati var, içindekiler listesi var, belki tutarları var.
+
+175
+00:43:35,152 --> 00:43:50,452
+Ne bileyim adres bilgisi var, ödeme bilgisi var, ödemenin yapıldığına dair bir banka onayı bilgisi var. İçinde pek çok veri olabilir ama bu doğrulanmış sipariş şeklinde bir isme sahip olmalıdır. Eylem değil.
+
+176
+00:43:51,032 --> 00:43:59,072
+Zaman çizelgesini tamamla. Bu da yine bir fiil. Hayır. Bunun yerine tamamlanmış zaman çizelgesi ya da zaman çizelgesi diye.
+
+177
+00:44:00,019 --> 00:44:04,300
+Bir veri akışı isimlendirmesi yapmamız gerekiyor.
+
+178
+00:44:05,588 --> 00:44:14,268
+Evet, veri akış diyagramlarının ne işe yaradığını, hangi mantıkla yaratılmaları ve oluşturulmaları gerektiğini söyledik.
+
+179
+00:44:14,808 --> 00:44:29,748
+Sonrasında da veri akış diyagramları oluştururken nelere dikkat edelim, ne doğrudur, ne yanlıştır, mantıklıdır ya da değildir, bu kavramların üzerinden yine teker teker geçerek kurallarını en azından size tanıtmış oldum.
+
+180
+00:44:30,963 --> 00:44:53,243
+Bir örnek yapmadık. İleride bir hafta boyunca bir case study düşünüyoruz. İnşallah yetiştirip bunu da daha böyle canlı bir örnekle size göstermek isteriz. Şimdi veri akış diyagramını küt diye bir kere de çizemezsiniz. Aslında bunu seviyelendirmemiz lazım. Kaldı ki yine süreçlerin içinde alt süreçler vardır diyerek bunun zaten sinyalini vermiş oldum size.
+
+181
+00:44:56,467 --> 00:45:11,287
+Analizin en başında, daha böyle hani şey, ön inceleme safhasında bile bunu yapabilirsiniz diyebiliriz. İlk önce ya da ilk böyle business analizi yaptığınız, business requirementları ortaya çıkardığınız şeyde de bunu çizebilirsiniz.
+
+182
+00:45:13,204 --> 00:45:27,484
+İlk çizilmesi beklenen veri akış diyagramı taslak veri akış diyagramıdır. Ne demektir taslak veri akış diyagramı? Genel olarak sistemimiz bir prosestir. Şöyle ortada bakın tek bir tane.
+
+183
+00:45:29,144 --> 00:45:37,724
+Sistemin ana aktörleri, mesela işte doktor, hasta, sigorta. Bu neymiş? Mesela bir hastane için faturalama sistemiymiş.
+
+184
+00:45:38,963 --> 00:45:56,703
+Ayrıntılı şeyler yok, süreçler yok, veri depolarımız yok. Çünkü veri depoları yine bizim süreç iç işleyişimiz için gerekli depolar. Sadece bütün sistem bir proses olarak yer alır.
+
+185
+00:45:57,076 --> 00:46:02,675
+Ve sistemin ana aktörleri etraftaki varlıklar olarak bulunur.
+
+186
+00:46:03,096 --> 00:46:12,956
+Doğal olarak buradan hani esas faydayı kim sağlayacak ya da esas bilgileri kim verecek şeklindeki temel veri akışları burada gösterilir.
+
+187
+00:46:13,115 --> 00:46:16,816
+Şimdi ben mesela buna baktım. Bunun adı Taslak Veri Akış diyagramı.
+
+188
+00:46:17,496 --> 00:46:19,976
+Buna konteks diagram da deniyor.
+
+189
+00:46:20,820 --> 00:46:25,340
+Türkçesi de işte bağlam diyagramı olarak Türkçe'ye çevirebiliriz.
+
+190
+00:46:25,720 --> 00:46:31,680
+Hepsini duyabilirsiniz. Yani konteks diyagram duyarsanız o bu aslında.
+
+191
+00:46:32,240 --> 00:46:36,780
+Ya da işte taslak veri akış diyagramı diye bir şey duyarsanız o da bu.
+
+192
+00:46:37,059 --> 00:46:40,920
+Hep aynı şey aslında. Başka bir şey değil. Tamam.
+
+193
+00:46:41,160 --> 00:46:46,960
+Bu bir genel kuş bakışı ana resim. Sistem burada.
+
+194
+00:46:47,668 --> 00:46:57,288
+Ana varlıklar etrafında, dış varlıklar ve bu dış varlıklar sistemin çalışabilmesi için temel olarak ne veriyor ve ne bekliyor?
+
+195
+00:46:58,448 --> 00:47:07,888
+Örneğin, buradaki faturalama sistemi için hastadan sigorta formunu almamız gerekiyormuş ve ona bir fatura gönderiyormuşuz.
+
+196
+00:47:08,436 --> 00:47:24,976
+Doktordan muayene bilgilerini almamız gerekiyormuş. Bir de sigorta varlığı var. Sigorta varlığı da bir fatura alıyormuş. Yani mesela burada aslında sigortayla hasta arasında da belli işlemler olabilir ancak biz ona karışmıyoruz. O bizim sistemimizin sınırları içinde değil.
+
+197
+00:47:36,467 --> 00:47:46,987
+Şuradakinin başka bir tanesi sigortalama sistemi diye dışarıda kalması gereken, beni ilgilendirmeyen, benim doktorumun falan içine girme diye bambaşka bir sistem olarak karşıma çıkıyor.
+
+198
+00:47:47,668 --> 00:48:00,047
+Burada benim aslında anladığım temel olarak şey şu, biz bir muayenehane için, özel bir muayenehane ya da özel bir klinik için bir faturalama sistemi gerçekleştirmeye çalışıyoruz.
+
+199
+00:48:00,047 --> 00:48:04,467
+Bizim çözmeye çalıştığımız problem budur. Benim doktorlarım var, görüyoruz.
+
+200
+00:48:04,467 --> 00:48:20,467
+İş analizini yaptığımda, klinikte doktorların olduğunu görüyorum. Mesela diş kliniği olsun, iki tane diş hekimi varmış. Bunlar hastaları muayene ediyormuş ama işin güzelliği, sigortayla anlaşmaları varmış özel sigortalarla.
+
+201
+00:48:22,467 --> 00:48:32,467
+Ve özel sigortalar belli oranda bazı şeyleri karşılar ya, mesela bilmem ne tedavisinin %50'sini verir. Başka bir tedavinin %100'ünü verebilir.
+
+202
+00:48:32,467 --> 00:48:52,567
+Mesela diyelim ki bir tedavi yapıyor, dolgu yaptık. Burada dolguların yapıldığını falan ben yine iş analiziyle izledim. Sonrasında doktorların bir şekilde oradaki belki sekreter var, ona muayene kayıtlarını verdiğini gördüm.
+
+203
+00:49:00,467 --> 00:49:19,847
+İşte oradaki ne olsun? Şeydeki arkadaşın adı. Orada bu işlemleri yapan, faturayı hazırlayan kişinin adı ne olsun? Şöyle bir rastgele isim seçeyim listeden. İpek olsun. Tamam. İpek Hanım burada oturuyor. Doktordan şeyleri aldı. Doktor da kim olsun?
+
+204
+00:49:22,195 --> 00:49:45,115
+Onur olsun, tamam mı? Doktor Onur Bey'den İpek Hanım muayene bilgilerini aldı. Hasta da ben olayım, tamam mı? Bana mesela şeyi sordu, sigortanız var mı? Aa evet ben işte bilmem ne sigortam var, buyurun bilgileri bunlar diye verdim. Aa teşekkür etti bana. Ben dediğim gibi iş analizde oturdum, kenarda gözleme metodumuz vardı ya onunla seyrediyorum mesela bunları görüyorum.
+
+205
+00:49:49,807 --> 00:50:09,627
+Sigortacı ile konuşuyor. Hani şu şu yapıldı, buna kaç yüzde indirim yapacağız, ne kadarını siz vereceksiniz falan. O işlemleri bakın bir süreç işletiyor. Sonrasında da iki tane fatura üretiyor. Bir tanesi hasta faturası. Diyor ki işte dolgu işlemi, hasta payı ne bileyim işte 50 lira.
+
+206
+00:50:10,099 --> 00:50:33,099
+Tamam. Ondan sonra aynı şeyden mesela işleme dair dolgu işlemi bedeli sigorta payı 150 lira. Hoppa onu da sigortacıya yolluyor. Tamam. Mesela zarfa koyuyor, postaya veriyor. Bunu da direkt olarak benim elime tutuşturuyor ya da bir ödeme yaptırıyor bana orada kredi kartıyla ya da nakit olarak bir şey ödüyorum, faturayı ödüyorum.
+
+207
+00:50:33,460 --> 00:51:00,019
+Ben bunu böyle oturdum, gözledim. İpek Hanım'ın çalışma şeklini gördüm. Belki İpek Hanım'ın yanında Recep Bey var, başkaları var. Ne bileyim, başka kim varmış? Semih var, Seray var. Onlar da böyle yan yana, hepsi böyle daha büyüdükçe işler. Belki de beraber çalışıyorlar. Belki iş bölümü yapmışlar, bir tanesi dolgulara bakıyor, bir tanesi diş teline bakıyor, ıvır kıvır. Böyle bir ayrım da yapmış olabilirler.
+
+208
+00:51:01,460 --> 00:51:04,099
+Şunu görmüşüm bu iş analizini yaptığımda.
+
+209
+00:51:04,619 --> 00:51:08,119
+Burada bir fatura problemi var, faturalama problemi var.
+
+210
+00:51:08,519 --> 00:51:12,559
+Bu faturalama probleminde yürütülmesi gereken çeşitli süreçler var.
+
+211
+00:51:13,639 --> 00:51:16,759
+Temel olarak ben doktordan ve hastadan bir şeyler alıyorum.
+
+212
+00:51:18,519 --> 00:51:20,980
+Hastaya ve sigortaya bir şeyler üretiyorum.
+
+213
+00:51:21,920 --> 00:51:23,559
+Bunu böyle oturdum, çizdim.
+
+214
+00:51:24,000 --> 00:51:33,019
+Çok basit değil mi? Harika. İşte buna biz konteks diyagram ya da taslak seviyeli veri akış diyagramı adını veriyoruz.
+
+215
+00:51:33,019 --> 00:51:38,019
+Ben bunu müşteriye göstersem, işte kliniğin şeyine diyelim ki...
+
+216
+00:51:38,579 --> 00:51:52,000
+Kimdi? Onur muydu? Doktor Onur buranın sahibi olsun. Onur Bey, bakın ben böyle böyle bu işi yaptığınızı modelledim. Ha evet diyebilir. Ya da aa yok olur mu? Biz işte burada SGK bilmem nesi de var.
+
+217
+00:51:52,467 --> 00:52:18,208
+Diyebilir. Pardon diyorum. O zaman işte SGK şeyi nasıl oluyor ki falan. Onun için de şöyle şöyle bilmem ne işlemi yapılıyor ama onu biz akşam yapıyoruz. Her gün çıkmadan önce yarım saat İpek Hanım onlarla uğraşıyor falan diyor. Hadi bakalım. O zaman ben mesela buraya bir tane daha şey çiziyorum. Bir dış nedir? Varlık. Ok biraz büyük oldu idare edin. İçine de işte mesela şey yazıyorum.
+
+218
+00:52:18,543 --> 00:52:46,043
+SGK yazıyorum ve buraya da veri olarak ne bileyim işte SGK gün dökümleri atıyorum şu anda tamam mı? Böyle bir şey yolluyormuşum, böyle bir form yolluyormuşum. Bunu da buraya yolluyorum. Bakın ne oldu? Azıcık hemen modeli güncelledim ama bu hala bir taslak seviyeli bir diagram. Bunun içini hiç açmadık. Süreçler neler daha bakmadık.
+
+219
+00:52:46,452 --> 00:52:52,291
+Bu sistemimizin kuş bakışı görünümü. Buna bir Taslak veri akış diyagramı adını veriyoruz.
+
+220
+00:52:53,492 --> 00:53:01,052
+Bundan sonra, eğer mouse'a geçebilirsem, evet, birinci düzey veri akış diyagramı geliyor.
+
+221
+00:53:01,052 --> 00:53:06,771
+Bu Taslak düzeye sıfırıncı düzey de denir arkadaşlar. Bu da olabilir. Bunu da duyabilirsiniz.
+
+222
+00:53:07,552 --> 00:53:12,532
+Olası, hani hocam biz sıfır diye bir şey duyduk demeyin. O da şey, Taslak'la aynı şey.
+
+223
+00:53:12,851 --> 00:53:20,791
+Bazen taslak 0, 1 diyenler de var. Taslağa taslak deyip 1'e 0 deyip 2'ye de 1 diyenler var.
+
+224
+00:53:21,631 --> 00:53:30,831
+Fakat hani şey sonuçta ya 0, 1, 2'dir ya da taslak 0, 1'dir fark etmez bir şekilde 3 seviye veri akış diyagramlarını da temel olarak tanımlanmıştır.
+
+225
+00:53:31,831 --> 00:53:32,371
+Peki.
+
+226
+00:53:33,043 --> 00:53:49,163
+Birinci düzeye geçiyorum. Ne yaptım aslında? Benim yaptığım şey tam olarak şu. Geri geliyorum. Şunu böyle sanki çift tıklıyorum. Tamam mı? Tık tık. Sonra onun içini görüyorum. Şey gibi olacak. Pandora'nın kutusu diyeceğim de alakasız olacak. Kutuyu açıyorum.
+
+227
+00:53:49,907 --> 00:54:03,824
+Neydi o bir tane yarışma vardı, kutu açıyorlardı, içinden para çıkıyordu. Onun gibi düşünün. Tamam mı? Kutuyu açıyorsunuz, hop idik kutunun içinde ne varsa onu görüyorsunuz. İşte bunlar varmış. Demek ki benim...
+
+228
+00:54:03,824 --> 00:54:30,603
+Aslında o fatura sisteminde mesela muayene kaydı inceleme ve ücret hesabı. Burada V kullanılmış, iyi bir şey değil. Bu hani muayene kaydı ile ücret hesabı gibi düşünün. Hani muayene kaydını doktordan alıyordum, bir şeyler yapıp çarpıp bölüp şu malzemeyi kullanmış bilmem ne diyordum ya. Onun gibi düşünebilirsiniz. İşte burada belli işlemler yapılıyormuş. Bunun için aslında ben doktordan mesela muayene kayıtlarını alıyormuşum.
+
+229
+00:54:30,900 --> 00:54:44,760
+Ve bunu bir yere yazıyormuşum mesela. Ya da burada başka bir dosyadan kullanılan sarf malzemelerinin fiyat listelerinden belki bir şey alabilirim. Burada yok şu anda.
+
+230
+00:54:44,760 --> 00:54:56,380
+Ve bu işlevin, sürecin çalışmasıyla beraber doğrulanmış bir ücret çıkıyormuş. Sonra onun içinde bir fatura hazırlama modülüne gidiyormuş. Fatura hazırlama süreci çalışıyormuş.
+
+231
+00:54:56,788 --> 00:55:23,007
+Fatura hazırlama süreci bakın hastadan sigorta formunu alıyormuş. Mesela sigorta şirketleri dosyasından şirketin adını, adresini bilmem nesini alıyormuş. Bunun illa bu olması gerekmiyor. Tamamen sizin yaptığınız analize göre değişebilir. Bu bir örnek. Hastalar dosyasından da hastamızın adresini alıyormuş. Sonrasında hem hastaya faturayı hem de sigorta şirketine faturayı iletiyormuş.
+
+232
+00:55:23,539 --> 00:55:39,579
+Bunun dışında işte sistemin içinde hani ben orada bir faturayı ödüyordum ya bakın hastanın bir ödeme işlemi varmış. Kenarı şöyle çantik atılmış tekrar ettiği için. Hasta ödeme işlemleri işte muhasebe kayıtlarına gidiyormuş.
+
+233
+00:55:41,088 --> 00:55:49,088
+Sigorta şirketinin yaptığı ödeme işlemleri de yine aynı muhasebe kayıtları dosyasına yazılıyormuş ama bunlar farklı süreçler. O yüzden böyle modellenmişler.
+
+234
+00:55:49,088 --> 00:56:04,387
+Yani ben aslında faturalama sistemin içinde 4 tane temel modüle sahip olmalıyım. Biri muayeneden ücret hesabı, biri fatura hazırlama, sonrasında da hastanın ödemeleri ve sigorta şirketinin ödemeleri diye temel 4 tane süreç bulmuşum.
+
+235
+00:56:05,460 --> 00:56:21,239
+Bu süreçlerin çalışması için kimden hangi veri akışlarına ihtiyacım var? Bu süreçler çalıştığında hangi süreçlere, hangi kaynaklara ya da hangi veri depolarına hangi verileri akıtacaklar? Bunları modelliyorum iş analizinden yola çıkarak.
+
+236
+00:56:22,643 --> 00:56:36,423
+Şu anda aslında hala ben sistemimin biraz daha detaylı bir taslağını, bir resmini çizmeye çalışıyorum. İşlevsel kırılımlarını ortaya çıkartmaya çalışıyorum. Buradaki en önemli şey buradaki prosesler aslında.
+
+237
+00:56:36,423 --> 00:56:49,163
+Ve bu proseslerin çalışmak için ihtiyaç duyduğu temel veri akışları ve veri depoluyla olan ilişkileri ve birbirleriyle olan ilişkileri. Bu şekilde buna...
+
+238
+00:56:49,780 --> 00:57:08,060
+Düşünüp de tabii ki tasarlayarak oluşturduğunuzda en azından işte iş analiziyle ortaya koyduğunuz, gördüğünüz, öğrendiğiniz ya da işte anketle bilmem neyle veri toplayarak bulduğunuz gereksinimleri burada yapmam gereken, işletmem gereken süreçler şeklinde modell ediniz.
+
+239
+00:57:08,700 --> 00:57:11,900
+Buna da birinci düzey veri akış diyagramı adını veriyoruz.
+
+240
+00:57:12,659 --> 00:57:34,699
+Bir sonraki düzey, tabii ki ikinci düzey veri akış diyagramı. Mesela şuraya geri geldiğimizde, fatura hazırlama. Eğer ki bir prosese böyle birkaç tane veri akışı giriyorsa, birkaç tane veri akışı çıkıyorsa, anlayın ki o kompleks bir prosestir. O zaman bunun aslında içinde böyle alt işlemler yapılması, alt modüllerin oluşması gerektirir.
+
+241
+00:57:35,155 --> 00:57:45,755
+Mesela burada, tabii bu afaki biraz olmuş ama işte hastanın sigorta durumunun incelenmesi, listelenen miktarla faturanın kıyaslanması.
+
+242
+00:57:46,356 --> 00:58:11,896
+Hastanın ödemesi gereken tutarın faturalandırılması gibi, biz fatura hazırlıyoruz ama onun için önce şunu yapmamız lazım. Bunun yapılmasıyla beraber şu bilgileri oluşturup şu işlemleri yapmamız lazım. Sonrasında hem şunu hem şunu alarak şunları hesap edip bir şekilde şunu üretmemiz lazım diye düşünüp biz kutuyu tekrar açıyoruz. 2.0'ı açtık. 2.0'ın içini modelledik.
+
+243
+00:58:14,356 --> 00:58:19,956
+Bunun da dış parçalar. 1-0 başka bir dış kaynak, dış işlem.
+
+244
+00:58:20,628 --> 00:58:33,968
+Hasta bir dış varlık gibi. Bu şekilde ikinci düzeyde de ben birinci düzeyde yaptığım, ortaya koyduğum işlemlerin içindeki alt işlemleri kırılımlarını gösteriyorum.
+
+245
+00:58:34,468 --> 00:58:41,448
+Şimdi şurada şöyle bir ifade yazdık ama birinci düzeydeki her süreç için bir ikinci düzey vat çizilir. Her zaman olmak zorunda değildir.
+
+246
+00:58:48,628 --> 00:58:51,308
+Mesela bir senaryoyla bu işi halledebiliyorumdur.
+
+247
+00:58:51,668 --> 00:58:58,028
+O zaman ya da biraz sonra göreceğiz tek bir süreç formu hazırlayarak bu işlemi modelleyebiliyorum.
+
+248
+00:58:58,268 --> 00:59:02,288
+Yani kodlamasına geçirtmeye doğru ya da tasarımını yapmaya geçirtmeye hazır olabiliyorum.
+
+249
+00:59:02,748 --> 00:59:06,108
+O zaman onun için ikinci düzey veri akış diyagramını çizmenize gerek kalmayabilir.
+
+250
+00:59:06,108 --> 00:59:11,268
+Fakat genellikle gerçek sistemlerde bu düzey yeterli kalmaz.
+
+251
+00:59:11,668 --> 00:59:18,108
+Bunların her birinin de içlerinin oluşturulmaları, iç süreçlerinin modellenmeleri gerekir.
+
+252
+00:59:18,516 --> 00:59:36,516
+Tamam, detaylardan bahsettik. Öncesinde dedik ki 0 ise 1, yoksa 2. Yani taslak 1, 2 de olabilir. 0, pardon 0, 1, 2 de olabilir. Taslak 0, 1 de olabilir. İsimlendirmeler biraz karışabiliyor. Fakat nihayetinde bu...
+
+253
+00:59:36,947 --> 00:59:53,647
+Bir daha detaylı kademe. Bunun bir daha üçüncü düzeyine geçmiyoruz. Artık bu kadar yeterli bizim için. Yani hani sistem, ana modüller, alt modüller şeklindeki kırılım bizim için en azından problemi modellemek için yeterli olacaktır.
+
+254
+00:59:54,867 --> 00:59:59,747
+Evet, veri akış diyagramlarının düzeyleriyle alakalı da söyleyeceklerimiz bunlar.
+
+255
+01:00:01,667 --> 01:00:03,307
+Buraya kadar sorunuz var mı?
+
+256
+01:00:06,516 --> 01:00:09,156
+Ya da hala benimle misiniz? Takip edebiliyor musunuz?
+
+257
+01:00:15,380 --> 01:00:21,800
+Ses yok mu? Buradayız. İpek sen şeydesin. Dişçinin muhasebe şefi yaptım seni.
+
+258
+01:00:24,639 --> 01:00:34,119
+Okey, helal. Hadi bakalım. Saat kaç oldu? Tamam, şunu da yapalım. Sonra bir ara verelim.
+
+259
+01:00:34,931 --> 01:01:02,211
+Şimdi bakın, burada bir hata var. Hata nerede? Kim söyler? Bu üstteki, çizginin üst tarafı kontekst ya da taslak ya da bağlam veri akış diyagramı. Bu benim sistemim. Sistemin iki tane dış varlığı varmış. Varlık birden A geliyormuş sistemime. Ben de varlık 2'ye B veri akışını üretiyormuş. Şimdi ben bununla oturup düzey sıfır vadını çizmişim analist olarak ve bunu ortaya koymuşum.
+
+260
+01:01:03,411 --> 01:01:04,612
+Burada bir hata var mı?
+
+261
+01:01:13,588 --> 01:01:15,728
+Yok mu? Var mı?
+
+262
+01:01:19,380 --> 01:01:25,000
+Hadi düşünün. 10 dakika sonra geliyorum. 10 dakika ara.
+
+263
+01:12:38,100 --> 01:12:46,220
+Evet arkadaşlar, aradan sonra, pardon yine birlikteyiz. Burada hata var mı? Nerede hata? Ulan oldu mu?
+
+264
+01:12:52,948 --> 01:12:53,888
+Kimse bulmadı mı?
+
+265
+01:12:56,048 --> 01:12:58,708
+Şimdi o zaman ben söyleyeyim.
+
+266
+01:13:00,668 --> 01:13:13,168
+Özellikle veri akış diyagramlarında seviyelendirme yaparken bir alt seviye ya da bir önceki seviye ve bir sonraki seviye arasında bir tutarlılık olması esastır.
+
+267
+01:13:13,168 --> 01:13:19,308
+Yani ben bir kontekst veri akış diyagramında sadece varlık 1 ve varlık 2 varken
+
+268
+01:13:19,828 --> 01:13:37,188
+ve sadece varlık 1'den A verisini, varlık 2'den Y'de V verisini sunarken bir anda işte düzey sıfıra geçtiğimizde varlık 3 bir anda ortaya çıktı, varlık 4 bir anda ortaya çıktı, varlık 4 hiç yoktu.
+
+269
+01:13:37,368 --> 01:13:47,828
+C diye bir veri akışı ortaya çıktı. Bu olabilir. Süreç 1-0-2-0 tamam içimde olabilir. A türevi, B türevi gibi farklı veri akışları da üretilmiştir.
+
+270
+01:13:47,828 --> 01:13:53,828
+ona yollayabilirim. Varlık ikiye de B'ye yollamışım. Burada da bir sıkıntı yok. Ama...
+
+271
+01:13:53,844 --> 01:14:09,004
+Varlık 1'i demiştim, burada Varlık 3 demişim. Bunlarda da bir tutarsızlık var. Burada Varlık 1 yok, burada da Varlık 3 ile Varlık 4 yok ve C yok burada doğal olarak Varlık 4'ten gelen.
+
+272
+01:14:09,004 --> 01:14:21,844
+O yüzden ya Varlık 3'ü ve Varlık 4'ü de biz kontekstimize yani taslak ya da bağlam veri akış diyagramıza almalıyız şu şekilde ya da
+
+273
+01:14:21,844 --> 01:14:41,963
+Bu varlık 3 zaten yoktur. O zaten varlık 1'dir. Belki ben bir hata yapmıştım. Orada varlık 1 ya da varlık 3'den sadece A gelecektir. Fakat varlık 4 ve C veri akışını da ben aslında kontekste bulundurmam gerekirdi. Yani hiçbir şey yoktan var olmuyor. Hiçbir şey de bir anda yok olmuyor aslına bakarsanız.
+
+274
+01:14:48,884 --> 01:15:07,623
+İşte birinci ve ikinci düzey veri akış diyagramları diyelim. Hani sıfır, bir ve ikinci düzey veri akış diyagramları arasında tutarlılık olması esastır. Özellikle de harici varlıklar ve bu harici varlıklarla olan veri akışlarımızın tutarlılığı açısından. Tamam, peki.
+
+275
+01:15:08,243 --> 01:15:35,463
+Anladık değil mi bunu? Yani aradaki geçişlerde yeni varlıklar türetmemeniz, yeni veri akışları üretmemeniz lazım dış varlıklarla birlikte. Ama sistemde mesela iç varlıklar ya da iç varlık diyorum, iç süreçlerimiz, veri akışlarımız ve veri depolarımız olabilir. Bunlar hani bağlamda yoktur ya da kontekste ya da level 0'da yoktur. Ama level 1'de bunlar oluşabilir. Bunlar normal, bunlar okey.
+
+276
+01:15:35,923 --> 01:15:37,384
+Peki burada bir sorun var mı?
+
+277
+01:15:43,412 --> 01:15:44,912
+Şöyle çekeyim görünmüyorsa.
+
+278
+01:15:46,952 --> 01:15:48,152
+Düzey sıfıra bakıyorum.
+
+279
+01:15:49,652 --> 01:15:51,192
+Süreç x diye bir şey var.
+
+280
+01:15:51,372 --> 01:15:52,252
+A ve B gelmiş.
+
+281
+01:15:53,512 --> 01:15:55,051
+Düzey 1'e baktığımdaysa,
+
+282
+01:15:55,652 --> 01:15:59,811
+işte x nokta 1'e A, x nokta 2'ye de B geldiğini görüyorum.
+
+283
+01:16:03,636 --> 01:16:04,796
+Bir sıkıntı var mı?
+
+284
+01:16:09,011 --> 01:16:35,271
+Sence yok, bence var. Şunu A ve B diye tek bir okta göstermişiz. Biz ne dedik? Bunlar tekil olsun dedik değil mi? Yani kompozit yapıları olabilir ama iki farklı kompozit yapıyı aynı şeyde göstermeniz doğru olmaz. Burada aslında olması gereken, burada da düzey sıfırda da bir A oku, bir de B oku. Şuraya ayrı ayrı girmesi gerekirdi. Yani şöyle.
+
+285
+01:16:36,083 --> 01:16:48,583
+Ve bunun üzerinde şunu şöyle şey yapalım, şurayı karalayalım. Bunun A olması ve bunun da B olması gerekirdi.
+
+286
+01:16:49,884 --> 01:17:02,543
+Neden? Çünkü biri A veri akışı, biri de B veri akışı. Ve bunlar birbirinden farklı veri akışları. Bu nedenle de ikisini ayrı ayrı göstermemiz gerekir.
+
+287
+01:17:03,412 --> 01:17:07,891
+Diyebilirsiniz ki, hocam yani bunu buldun, bunu yapanı buldun.
+
+288
+01:17:08,192 --> 01:17:33,551
+Şimdi ayrı olanını mı istiyorsun? Evet istiyorum. Çünkü kurallara uygun olanı ayrı ayrı olandır. Bu doğru bir gösterim değildir. Yani evet ben burada biraz tasarruf yaptım, bir oku az çizdim gibi gözükse de aslında ben iki tane farklı veri akışını sanki aynı veri akışıymış gibi birleştirmiş oldum. O yüzden burada da bir sorun mevcut diyebiliriz.
+
+289
+01:17:34,131 --> 01:17:36,152
+Düzeltmenin de yolunu konuştuk.
+
+290
+01:17:38,731 --> 01:17:44,391
+Peki, şimdi tekerleğimizin üçte birlik kısmını gördük.
+
+291
+01:17:44,911 --> 01:17:53,971
+Hatırlayacak olursanız süreç spesifikasyonlarını, süreç tanımlamalarını veri akış diyagramlarıyla yaptığımızı söyledik.
+
+292
+01:17:53,971 --> 01:17:54,571
+Şimdi.
+
+293
+01:17:55,072 --> 01:18:19,012
+Bir de kavramsal veri modelimiz var. Bunu da varlık ilişki diagramlarıyla oluşturacağımızı ve modelleyeceğimizi söyledik. Bunlar da yine aslında yüksek seviyeli gösterime sahip olan diagramlardır. Yine geniş bir kullanıcı topluluğuyla daha rahat bir anlaşma, iletişim kolaylığı sağlamak amacıyla aslında yine buradaki diagramlar çizilir.
+
+294
+01:18:23,072 --> 01:18:31,692
+Tasarımın ne olacağı gibi böyle detay bilgiler ya da tasarımı ilgilendiren detaylar yer almaz. Ancak...
+
+295
+01:18:32,083 --> 01:18:47,923
+Bir sistemin çalışması için gerekli veri modeli neyse, bilgi gereksinimi neyse, bunların ne gibi özellikleri varsa ve bunların arasında ne gibi ilişkiler varsa bunların düzgün ve gerçek bir şekilde gösterilmesine fayda sağlar.
+
+296
+01:19:00,083 --> 01:19:18,047
+Yorumlarınızı işleyebilirsiniz.
+
+297
+01:19:18,047 --> 01:19:32,887
+Henüz böyle yazılım detaylarına dair çok detaya falan girmiyoruz. Ama problemde bunlar var. Bunlar problemin önemli parçaları. Bunlar hakkında veri tutmam lazım. Bu veri için de şunları şunları biliyor olmam lazım.
+
+298
+01:19:46,047 --> 01:20:05,899
+ortaya koyduğumuzda aslında bir kavramsal veri gösterimi oluşturmuş oluyoruz. Bununla birlikte işte mesela bir ders verisi var. Bu dersin de işte kodu var, adı var, kredisi var, uygulama kredisi var, kimin verdiği var, belki kapasitesi var, belki hangi sınıfta verildiği var gibi gibi. Sonra...
+
+299
+01:20:06,131 --> 01:20:18,831
+Öğrenci ile ders arasında da aslında biliyorum ki bir öğrenci verisi tutabiliyorum. Hatta pek çok öğrencinin verisini modelleyerek aynı modelle tutabiliyorum. Pek çok dersin verisini de aynı şekilde modelleyerek tutabiliyorum.
+
+300
+01:20:20,671 --> 01:20:20,831
+Fakat...
+
+301
+01:20:21,136 --> 01:20:34,756
+Aralarındaki ilişki ne olacak şimdi? Öğrenci ders alacak ya da dersi öğrenci kayıtlı olacak. Bunların arasındaki ilişki nedir? Nasıl bir ilişki tipi olması lazımdır? Bunlar da yine varlık ilişki diagramlarında gösterilir.
+
+302
+01:20:34,756 --> 01:20:48,776
+Bu sayede kavramsal bir veri modeli oluşturmuş oluruz. Yani süreç modeli, veri modeli, kontrol modeli. Üç tane modelimiz var. Şimdilik süreç ve veriye odaklanıyoruz. Kontrolü kapsam dışında tuttuk, ders kapsamı dışında.
+
+303
+01:20:49,136 --> 01:21:04,656
+Bunu da varlık ilişki diagramlarında şu anda görmeyeceğiz. İleriki haftalarda özellikle tasarım tarafında biraz daha geri dönüp özellikle veri modeli nasıl oluşturulur, nasıl tasarlanır konusunda bundan bahsedeceğiz ve varlık ilişki diagramlarının temel özelliklerini öğreneceğiz.
+
+304
+01:21:04,656 --> 01:21:16,656
+Bu veri tabanı yönetim sistemi dersinin aslında konusuna girecek. Varlık ilişki diagramlarının oluşturulması, nasıl yapılacağı, normalizasyonları falan onlara şu anda biz girmiyoruz. Biz sadece...
+
+305
+01:21:17,011 --> 01:21:28,271
+Bir bilgi sisteminde kullanacağımız verileri modelleyecek kadarını bilsek yeterli deyip temel mantığını öğreneceğiz. Ama sonrasındaki bütün detayları tabii ki veri tabanına bırakmak zorundayız.
+
+306
+01:21:29,431 --> 01:21:40,311
+Şimdi bu noktada ben ne yaptım? Süreçlerimi bir şekilde modelledim. Veri modelini de şimdilik bir kenara koydum. Tamam mı? Benim için şu anda hala önemli olan süreçlerimi modellemek.
+
+307
+01:21:40,724 --> 01:22:06,604
+Burada iki çeşit veri akış diyagramından söz edebilirim. Bu bir yaklaşım. Nedir bu? Ben veri akış diyagramlarını kullanarak aslında tasarımı da gösterebilir miyim? Sorusunun cevabı. Evet, bir yere kadar gösterebilirsiniz. İşte o zaman ben analiz safhasında ürettiğim veri akış diyagramlarına mantıksal, logical data flow diyagramı adını verebilirim. Bu nedir? Aslında prosesler, işler nelerdir?
+
+308
+01:22:07,039 --> 01:22:15,200
+Yani faaliyetlerimiz nelerdir, varlıklarımız, veriler, veri akışları nelerdir bunları tanımlıyoruz. Biraz önce detaylarıyla birlikte işlediğimiz konu.
+
+309
+01:22:16,404 --> 01:22:24,384
+Buna bazı eklentiler yapabilirsiniz, ileriye taşıyabilirsiniz ve sistemin nasıl uygulanacağına yönelik yeni yönergeler de ekleyebilirsiniz.
+
+310
+01:22:24,584 --> 01:22:29,944
+Mesela işte donanım, yazılım, dosya ya da insan kaynaklarıyla alakalı detayları da verebilirsiniz.
+
+311
+01:22:29,944 --> 01:22:40,624
+O zaman buna bir fiziksel VAT adını veririz ve bu da artık aslında tasarım aşamasının bir ürünü ya da bir çalışması olarak karşımıza çıkabilir.
+
+312
+01:22:41,244 --> 01:22:43,324
+Şimdi nedir bu? Arasındaki fark ne?
+
+313
+01:22:43,663 --> 01:22:56,763
+Şimdi mesela bir hastane bilgi sistemimiz olsun. Hastane bilgi sistemimizin içinde bir veri akış diyagramı parçası çizelim. Ne olsun? Hastanede eczane var. Eczaneden ilacı temin edeceğiz.
+
+314
+01:22:57,199 --> 01:23:16,600
+Peki, nasıl bir akışı varmış? Yani aslında ben bunun analiz modelini çizdiğimde acaba nasıl bir veri akış diyagramı elde ederim? Mesela ben burada yaptığım iş analizi sonucunda bir hastanın hastadan gelen ilaçlar listesiyle birlikte mesela ilacı bulmak için bir şeyler yapıyorum. Bir süreç işletmem gerekiyor.
+
+315
+01:23:16,600 --> 01:23:25,199
+Hani reçeteyi eline alıyor birisi, gidiyor. Mesela işte hangi rafta durduğunu belki bir yerden bakıyor.
+
+316
+01:23:25,199 --> 01:23:53,180
+Yani hangi kategoride olduğunu önce bir tablodan bakıyor. Ona göre hangi koridorda, hangi rafta durduğunu belki buluyor gibi. Demek ki burada yapılması gereken işlemler varmış. Ve bunun sonucunda ben ilaç numaralarını buluyormuşum. İlaç numaralarını da mesela fiyat bulmak için ayrı bir sürece veriyormuşum. Bu da mesela İpek olmasın, Berke bu sefer yapıyor olsun bu işi de. Berke işte şey hastanedeki eczanenin fiyat listeleriyle ilgilenen.
+
+317
+01:23:53,199 --> 01:23:55,380
+O da işte
+
+318
+01:23:55,840 --> 01:24:04,039
+Bir dosyadan fiyatları alıyor ve bununla ilgili ilaç numaralarıyla fiyatları arıyor. Yani bu ilacın fiyatı kaç paradır falan gibi.
+
+319
+01:24:04,460 --> 01:24:15,619
+Nihayetinde buradan ilaçlar ve fiyatlar gibi bir kompozit veri oluşturulmuş durumda. Adı kötü, idare edin, daha iyi isimlendirmemiz gerekiyordu. İlaç fiyatları gibi bir isim daha güzel olacaktı.
+
+320
+01:24:16,840 --> 01:24:23,840
+Sonra işte reçetenin toplam tutarının hesaplanması gerekiyormuş. Belki bir ilaçtan birkaç doz bir arada verilmiş.
+
+321
+01:24:23,840 --> 01:24:36,559
+3 kutu bilmem ne, 5 kutu bilmem ne gibi. Burada bir toplam tutar hesabı yapılması gerekiyormuş. Belki burada SGK indirimi odur budur gibi bir şeyler yapılıyordur. Bilmiyorum. Ve sonunda ödenecek miktar bulunuyor.
+
+322
+01:24:37,235 --> 01:24:52,115
+Ödenecek miktar bilgisi de ödeme alıp fatura basma işlem prosesine, sürecine yollanıyor. Burada da hastadan ödeme alınıyor. Bu ters olmuş. Aslında fatura hastaya gidiyor. Şunu ters çevirmekte fayda var gibi.
+
+323
+01:24:52,115 --> 01:25:05,235
+Yani böyle ben iş modelini biraz daha böyle görselleştirdim ve biraz daha formal hale getirdim. Yani şununla ilgili süreçlerim olsun. Bunu yapan sürecim var. Bu süreç çalışmak için şunları almak zorunda.
+
+324
+01:25:05,235 --> 01:25:10,536
+Ya da şundan şu verileri akıtmak zorundayım gibi bunu modelledim.
+
+325
+01:25:10,775 --> 01:25:14,115
+Şimdi ben bunu bir adım şöyle geri ve ileri yapayım.
+
+326
+01:25:14,515 --> 01:25:14,995
+Yapamadım.
+
+327
+01:25:15,655 --> 01:25:16,095
+Yaptım mı?
+
+328
+01:25:16,376 --> 01:25:17,015
+Hah, yaptım.
+
+329
+01:25:17,515 --> 01:25:27,155
+Böyle bir adım ileriye taşırsam, hatta belki daha da fazla detay verirsem, bu artık tasarıma da bana, yani gerçekleştirme yönelik bir tasarıma da yol göstereceği olabilir.
+
+330
+01:25:27,296 --> 01:25:30,395
+Ya da burada ben şöyle bir tasarım yaptım diye de kullanabilirim.
+
+331
+01:25:31,675 --> 01:25:31,855
+İşte.
+
+332
+01:25:32,692 --> 01:25:39,692
+Burada mesela bakın, ilaç barkodu tarama. Demek ki burada barkod işlemleriyle alakalı detaylar olacakmış.
+
+333
+01:25:40,471 --> 01:25:49,612
+Burada fiyatı aramak için ben ilaç numarasını bir şekilde sorguda bu tabloya vermem gerekiyormuş. Sonunda ilacın tanımı ve fiyatları geliyormuş.
+
+334
+01:25:50,420 --> 01:26:18,420
+Alt tarafı düzeltmiştik. Mesela burada bakın toplam maliyet için bir ne bileyim işte geçici dosya kullanılıyormuş. İlaçlar, fiyatlar ve alt toplamlar gibi bir yapı buraya gönderiliyormuş. İlaç fiyatları tablosu diyelim o da buradan geri geliyormuş gibi. Biraz daha böyle bakın el ile yapılan fatura ödeme işlemleri, nakit ödeme bu tarafa geliyor, fatura bu tarafa gidiyor gibi. Yani böyle mantıksal da bazı şeyleri ufak tefek kaçıran.
+
+335
+01:26:18,420 --> 01:26:33,659
+Şurada da biliriz. Şurada mesela bir şeyi yanlış yapmıştık. Ama fiziksele geçtiğimizde biraz daha implementasyon detaylarını da ilave ederek buradaki modelimize şey yapabiliriz.
+
+336
+01:26:34,068 --> 01:26:45,528
+Tasarıma yönelik bunu şu şekilde gerçekleyelim şeklinde veri akış diyagramlarını da kullanabiliriz. Bu da bir yol. Her zaman yapmıyoruz ama yapılırsa da şaşırmayın.
+
+337
+01:26:45,528 --> 01:26:55,648
+O fiziksel veri akış diyagramı diye bir şey var. Burada tasarımı da ifade edebiliyormuşuz. Evet, yapabilirsiniz. Bu da bir yaklaşım. Bilin diye bunu da söyledim.
+
+338
+01:26:55,768 --> 01:27:02,068
+Ama biz aksi söylenmediği sürece aslında veri akış diyagramı deyince hep mantıksal veri akış diyagramı.
+
+339
+01:27:02,068 --> 01:27:10,188
+Yani analiz modelini, problem uzayını gösteren veri akış diyagramını ifade etmeye çalışıyoruz.
+
+340
+01:27:10,347 --> 01:27:16,868
+Ya da hani aksini söylemediğim sürece hep mantıksal veri akış diyagramıyla ilgili konuştuğumu söyleyebilirim.
+
+341
+01:27:19,060 --> 01:27:32,060
+Genel olarak resim çizdik, bir sistemin yapısının ne olduğunu, varlıklarının neler olduğunu, ondan sonra...
+
+342
+01:27:33,427 --> 01:27:55,547
+Veri akışlarının neler olması gerektiğini gibi ve veri depolarının nasıl olması gerektiğini gördük. Bir sürecin işlemesi için şunlara şunlara ihtiyacımız var, bunları alacağız, bunları çıkaracağız gibi temel modellemeyi yaptık. İyi, güzel. Peki ben o dikdörtgenin içini acaba nasıl modelleyeceğim? Yani ben süreçleri nasıl modelleyebilirim, bunun için neler kullanabilirim?
+
+343
+01:27:55,731 --> 01:28:03,231
+Gördüğümüz gibi biz süreçleri tanımladık ama henüz daha bir açıklama yok. Nasıl yapılacaklarına dair hiçbir yöntem ya da hiçbir yaklaşım, hiçbir algoritma akış vermiyoruz.
+
+344
+01:28:03,699 --> 01:28:15,480
+Şimdi burada işte mantıksal bir veri akış diyagramı modellemesinde buradaki proseslerimizin, süreçlerimizin iç yapılarını ve fonksiyonlarını, işlevlerini de bir şekilde ifade etmemiz gerekir.
+
+345
+01:28:15,480 --> 01:28:31,380
+Ki düzgün bir model tanımı ortaya koymuş olalım. Bunun için süreç tanımlama formu diye basit bir form var. Tablo yapısı göstereceğim şimdi. Bugün bir formlar kullanılabilir ve buradaki mantığı da hani iş akışının ne olacağını.
+
+346
+01:28:31,699 --> 01:28:38,960
+Business Logic dediğimiz, mesela algoritmanımızın ya da akışımızın ne olacağını tanımlamak için de 3 tane temel yöntem var.
+
+347
+01:28:38,960 --> 01:28:46,960
+Akış diyagramı tabii kullanabilirsiniz ya da karşılığı olan yapısal dil ya da PÜSÖDO kod gösterimini kullanabilirsiniz.
+
+348
+01:28:47,579 --> 01:28:56,720
+Bunun dışında karar tabloları ya da karar ağaçları da süreçleri modellemek için, karmaşık süreçleri modellemek için kullanılabilir.
+
+349
+01:28:57,520 --> 01:28:59,680
+Çok affedersiniz, 1-2 dakika.
+
+350
+01:28:59,699 --> 01:29:00,920
+Keseceğim dersi.
+
+351
+01:29:25,939 --> 01:29:53,939
+Kusura bakmayın. Dediğim gibi 3 tane yöntemle süreci aslında tanımlayabilirim formun içinde. Yani oradaki esas akışın ne olması gerektiğini tanımlayabilirim. Bakalım nasıl bir şeymiş bu form. Dediğim gibi böyle bir şey. Bu arada şeye uyumlusu olsun diye böyle kırmızı yaptım ama güzel oldu mu olmadı mı ona da emin değilim. Siyah yapsak daha mı iyiydi acaba? Neyse. Süreç tanımlama formu. Bakın numara 4. Ne bu? Sürecin numarası. Ondan sonra adı.
+
+352
+01:29:53,939 --> 01:30:20,619
+Burada aslında şeydeki, veri akış diyagramındaki isim. Tanım. Bir tanım yapıyoruz. Aslında bir iş analizinden gelen bir parça. Biz nasıl regalment gibi düşünebilirsiniz. Reçetedeki ilaçların toplam maliyetine bağlı olarak hasta ödemesi nakit ya da kart ile tahsil edilecek ve fatura verilecek. Tamam. Ben aslında hani gözlem yaptım ya, orada nasıl yapıldığını bu işin sürecini gördüm. Burada tanımladım. Girdi veri akışı. Süreç 3'ten.
+
+353
+01:30:20,960 --> 01:30:27,760
+Hesaplanarak gelecek olan ne kadar ödeme yapılacağı bilgisi, hastadan yapılacak tahsilat, bunlar geridilerimmiş.
+
+354
+01:30:28,280 --> 01:30:33,880
+Çıktı veri akışı neymiş? Fatura. Bunları da yine veri akış diyagramında zaten okların üzerine yazmıştık.
+
+355
+01:30:34,240 --> 01:30:42,300
+Sürecin tipi. Bakın, online, otomatik, el ile. Bu ne demek? Ben bunu istediğimde çalıştıracağım. Menüden seçip çalıştıracağım mesela.
+
+356
+01:30:42,804 --> 01:31:01,403
+Bu eliyle çalışma. Otomatik çalışabilir ya da insanlar bunu kendisi kullanabilir. Kullanıcılara siz bunu hizmet olarak sunabilirsiniz. Otomatik de mesela her günün sonunda otomatik olarak faiz hesabı yapması, bilmem ne hesabı ya da her dönemin sonunda sizin genel not ortalamanızı hesaplaması gibi düşünebilirsiniz.
+
+357
+01:31:02,224 --> 01:31:10,403
+Süreç mantığı, bakın işte burası business logic. Tamam, process logic. Buraya bakın ben bir psodokod yazmışım.
+
+358
+01:31:11,123 --> 01:31:35,123
+Buraya akış diyagramı da koyabilirdim. Buraya bir karar tablosu da koyabilirdim. Buraya bir karar ağacı da ekleyebilirdim. Ama genellikle formda yazarken metin şeklinde oluşturulduğu için pseudokot gösterimi sıklıkla kullanılır. Nedir? Read bilmem ne, take bilmem ne, sonra select case yapmışım. Bakın bir çoklu durum var. Ödeme büyüktür, ödenecek miktarsa para üstü ver, ödemeyi tamam de.
+
+359
+01:31:35,572 --> 01:32:02,112
+Ödeme eşitse ödenecek miktara para üstü verme, ödemeye tamam de. Bunu tabii daha iyi modelleyebilirdiniz, idare edin, böyle şey olsun diye basit bir örnek. Ödeme küçüktür ödenecek miktardan, ödeme eşit tamam değil. Yani ne oldu? Aslında burada ödeme tamamlanmadı. Eğer ödeme tamamsa fatura veriyorum, eğer değilse hastaya bilgi veriyorum. Belki burada başa dönmem gerekecek, tekrar ödeme alma şeyine geri bir gidiş yapmam gerekecek.
+
+360
+01:32:02,452 --> 01:32:18,112
+Çözülmeyen sorunlar. Bakın, burada ben bir akış, bir mantık verdim ama nakit ödeme dışında, burada ben demiştim ki nakit ya da kart ile bilmem ne, nakit ödeme dışında ödeme biçiminin kabul edilip edilmeyeceği belli değil. Onunla ilgili hiçbir şey süreç mantığında yer almıyor.
+
+361
+01:32:18,484 --> 01:32:45,283
+Reçete yok ya da reçete kayıp, reçete unutuldu. Adam diyor ki ben unuttum reçeteyi, ne yapacağız? Örneğin mesela belki başka bir veri kaynağına gidip ya da başka bir sürece şunu verip bu arkadaş kimlik numarası bu, şunun son bir ya da üç reçetesini bana yolla diye belki bir iş çalıştırılması gerekecek. İşte bu orada yok. Bunlar da ileriye yönelik bizim niyet beyanlarımız. Yani böyle bir sürecim var.
+
+362
+01:32:45,684 --> 01:32:56,863
+Faturalandırma ile alakalı. Ama burada henüz daha çözmediğim ya da üzerinde durmadığım şunlar da var şeklinde çözülmeyen sorunları da süreç tanımlama formunda iletebiliriz.
+
+363
+01:32:58,515 --> 01:33:13,455
+Peki, mantık bu yani, anlatabiliyor muyum? Veri akış diyagramındaki bütün prosesleriniz için, bütün süreçleriniz için böyle birer tane form oluşturmanız gerekir ki buradaki akışı görelim. Burada tabii bu neye benziyor biraz? Hani şey gibi.
+
+364
+01:33:13,823 --> 01:33:36,243
+Yani use case'ler gibi, değil mi? Biraz use case'leri de andırıyor. Ama use case'ler bundan daha üst seviyeli, daha böyle kavramsal kalıyor. Bu biraz daha böyle implementasyona daha yakın, yani böyle şu olsun, bu olsun, bilmem neden, bilmem ne şeklinde seçenekler halinde tanımlanmış bir mantık gösterimi.
+
+365
+01:33:36,724 --> 01:33:43,743
+Şimdi başka neler olabilir dedik. Aslında yapısal dil ya da pseudokodu baktık. Tekrar ama tanımını vereyim.
+
+366
+01:33:43,743 --> 01:33:57,516
+İşte şuradaki geri geldiğimizdeki şurada gördüğünüz parça. Mantıksal olarak bir ifadeyi standart İngilizce kelimelerinin bir sapsetiyle, alt kümesiyle tanımlarsınız. Neler vardır burada? Aslında...
+
+367
+01:33:57,876 --> 01:34:13,556
+Normal sıralı işlemler, ardışlık işlemler vardır. Durum ya da karar vardır. Bir karara göre, duruma göre bir karar verilip bir şey yapılması. Bir de döngüler vardır. Tekrarlı, şu kadar dön ya da şu doğru olduğu sürece dön şeklinde.
+
+368
+01:34:25,876 --> 01:34:29,876
+Akışının nasıl olması gerektiğini ifade edebiliriz.
+
+369
+01:34:30,496 --> 01:34:33,155
+Neler var? İşte ardışık blok yapıları var dedik.
+
+370
+01:34:33,416 --> 01:34:38,316
+Eylem 1, eylem 2, eylem 3, eylem 4, böyle onu yap, bunu yap, şunu oku, bunu hesapla gibi.
+
+371
+01:34:39,376 --> 01:34:48,396
+Kararlar if koşul doğruysa, then bilmem ne eylemi, else koşul yanlışsa bilmem ne eylemi, end if diye bitirebilirsiniz.
+
+372
+01:34:48,895 --> 01:34:54,455
+Kontrolleri işte select case, case case case case, end case de yapabilirsiniz.
+
+373
+01:34:55,275 --> 01:34:59,155
+Bunu aslında ikisi aynı yani hani farklı olarak da düşünmenize gerek yok.
+
+374
+01:34:59,255 --> 01:35:02,415
+Bunu is, if, else if, else if diye de oluşturabilirsiniz.
+
+375
+01:35:03,275 --> 01:35:04,335
+Bir de döngüler var.
+
+376
+01:35:05,335 --> 01:35:07,955
+İşte ne var? Do while koşul doğru oldukça.
+
+377
+01:35:08,368 --> 01:35:14,328
+Ya da işte do until koşulu doğru oldukça ya da burada for da ekleyebilirsiniz.
+
+378
+01:35:14,668 --> 01:35:23,988
+İşte for işte bütün elemanlar için ya da 100 kere bunu tekrarla gibi döngü blok yapısında, yapısal dil bloklarında kullanabilirsiniz.
+
+379
+01:35:25,619 --> 01:35:35,119
+Akış diyagramları da ifade etmemeniz için bir neden yok. Yani algoritmalarınızın akış diyagramlarını burada da yine kullanabilirsiniz aslında.
+
+380
+01:35:35,700 --> 01:35:47,480
+Fakat burada biraz daha böyle algoritmik değil de biraz daha akış anlattığımız için, proses anlattığımız için özür dilerim, süreci anlattığımız için bunu daha çok böyle pseudokotla ifade etmeyi tercih ediyoruz.
+
+381
+01:35:48,020 --> 01:36:06,400
+Burada da başka bir örnek, case'lere göre. Stok miktarını karşılaştırıyor. Stok miktarı yeterince varsa, kritik stoktan fazlaysa hiçbir şey yapmıyorum. Kritik stok eşitse çalışana bildirim sunuyorum. Şu ilaçta kritik stok var diye.
+
+382
+01:36:07,731 --> 01:36:22,072
+Eğer daha da düştüyse otomatik sipariş üretilmesini sağlıyorum. Bu otomatik süreç hani vardı ya süreç tipi diye söylemiştik. Eğer sıfırlandıysa stok miktarı muadil yaşları gösteriyorum.
+
+383
+01:36:22,448 --> 01:36:34,268
+İlacın üretimi durduysa, bu case'lerin dışında mesela o zaman ilacın resete yazılmasını engellemem gerekiyor gibi böyle kontrol mekanizmalarını tanımlamış olabilirim.
+
+384
+01:36:34,488 --> 01:36:35,948
+Püsöde kod kullanarak.
+
+385
+01:36:37,307 --> 01:36:41,467
+Evet, başka ne var peki? Karar tablolarımız var.
+
+386
+01:36:41,587 --> 01:36:47,307
+Karar tablosu dediğimiz şey aslında yine püsöde kodla anlatabileceğimiz bir şey.
+
+387
+01:36:47,467 --> 01:36:49,728
+Sadece yazması biraz daha uzun sürüyor.
+
+388
+01:36:50,079 --> 01:37:11,840
+Genellikle karmaşık kararlarımız oluyor, biliyor. Karmaşık kararlarda, böyle çoklu bileşge kurallar ve durumlar olduğunda hangisi işletilecek, ne yapılacak, ona nasıl karar verelim? Bir tablo halinde, bir eşleşme tablosu yaratarak böyle bir mekanizmayla yapılması gereken, süreçte işletilmesi gereken şeyleri, adımları.
+
+389
+01:37:12,627 --> 01:37:29,867
+Söyleyebilir ya da anlatabiliriz. Neler vardır burada? Durumlarımız, kurallarımız, işlemlerimiz ve kararlarımız vardır. Şimdi bunu böyle bir tablo halinde de gösterebiliriz. Pardon, sonrasında atmışım. Şimdi bakalım durumlarımız nelermiş?
+
+390
+01:37:37,203 --> 01:37:45,103
+Giriş puanının bölüm ortalamasından büyük olması. Böyle üç tane durumu kontrol etmek istiyormuşum. Bu üç duruma göre bir karar vereceğim.
+
+391
+01:37:45,587 --> 01:38:11,967
+Ve bu 3 durumun bileşkesine göre vereceğim kararlar kaç tane kombinasyonu var? Disiplin cezası 2, not ortalaması da 2, 70'den büyüktür ya da küçük eşittir. Ne oldu? 4. Giriş puanının ortalamadan büyük olması da 2, evet ya da hayır şeklinde. Ne oldu? 8 tane aslında olası kombinasyonum var değil mi? 8 farklı işlem yapabilirim.
+
+392
+01:38:13,587 --> 01:38:19,247
+İkizine ayrı işlem tanımlanmaz. Bazıları bileşke işlemler şeklinde bırakılabilir.
+
+393
+01:38:20,247 --> 01:38:29,688
+Şimdi mesela disiplin cezası almışsa diğer başka hiçbir şeye bakmadan otomatikman burs alamaz şeklinde bir işlem yapıyorum.
+
+394
+01:38:30,207 --> 01:38:34,007
+Yani bunun çalışmasını istiyorum. Tamam mı? Yani bu karışık if öyle söyleyeyim.
+
+395
+01:38:40,623 --> 01:39:08,224
+Not ortalaması, şurası zaten tümleyen şeklinde gidiyor. 70'in üzerinde olabilir, altında olabilir. Üzerinde olabilir, altında olabilir. Ama iki evet, iki hayırım var. Fakat burada farklı farklı şeyler yapabilirim. Demek ki ben bu durumda bir şeye daha bakıyorum. Giriş puanı ortalamadan büyük mü, küçük mü? Buna bakıyorum. Bunlar da yine evet evet, hayır hayır şeklinde. Aslında şurada evet evet, hayır evet, hayır hayır, hayır hayır tablosu şeklinde bir alt tablo oluşturmuş.
+
+396
+01:39:08,756 --> 01:39:18,916
+Ve aslında karar tablosunda şurada bir dörtlü var. Artı bir tane de beşincisi bu evetten geliyor. Böyle düşünebiliriz. Daha sadeleştirebiliriz aslında bu tabloyu.
+
+397
+01:39:19,996 --> 01:39:27,636
+Okul süresince tam burs alacakmış. Eğer notu yetmişten büyükse, puanı da ortalamadan, giriş puanı da ortalamadan yüksekse.
+
+398
+01:39:28,516 --> 01:39:32,936
+Eğer not ortalaması düşükse, bir yıl yarım burs verilecekmiş.
+
+399
+01:39:33,684 --> 01:40:00,000
+Neyse, o süreç o şekilde işletilecek. Diğer durumda notu yüksek ama puanı ortalamadan düşük, giriş puanı. O zaman yarım burs veriyoruz. Notu da yüksek değil ve giriş puanı da ortalamadan yüksek değil ama disiplin cezası da almamış olmasına rağmen buna da burs vermiyoruz. Bu öğrenci de burs alamaz şeklinde bir karar verip bir işlem gerçekleştiriyoruz.
+
+400
+01:40:00,000 --> 01:40:19,340
+değiştirmesini sağlıyoruz. Böyle tabii daha fazla durum, daha fazla kural oluştuğunda if, else if yapıları artık içinden çıkılmaz hale gelebilir. Bunları daha böyle okunaklı halde gösterebilmek, modelleyebilmek için karar tablolarını kullanırız. Burada da benzer.
+
+401
+01:40:20,467 --> 01:40:42,127
+Aslında bunu da sadeleştirebiliriz. Bakın, çalışan hasta, emekli hasta. Bunlar zaten mutually exclusive. Ne demek? Biri doğruyken öbürü yanlış olmak zorundadır. Ya da biri doğruyken öbürü doğru olamaz. Yani hastaya çalışandır ya emeklidir değil mi? Şu iki satırı sadece çalışan hasta mı deyip evet, hayır diye şey yapabilirim, indirgeyebilirim.
+
+402
+01:40:42,707 --> 01:41:08,427
+Ve toplam tutar 50'den küçük eşit, toplam tutar 50'den büyük. Bunlar da yine gördüğünüz gibi mutual, explosive, ikisi aynı anda doğru olamaz. O yüzden de bunu da tek satıra indirebilirim. O zaman ben aslında sadece iki koşulla bunu kontrol edebilirim. Basit örnek. İki koşulla kaç tane kombinasyon çıkıyor? Dört kombinasyon. O zaman ben dört karardan birini vereceğim. Ama burada da mesela fark ne? Bakın birden fazla, dörtten fazla eylem var.
+
+403
+01:41:08,819 --> 01:41:30,239
+Şu durumda şu indirim oranı, bu durumda bu indirim oranı böyle böyle gidiyor. Mesela şu durumda bakın, emekliyse ve toplam tutar 50'den büyükse hem mesela indirim oranı 4'ü uyguluyorum hem de üzerine ek %10 indirim daha uyguluyorum. Böyle bir şey yapmışım.
+
+404
+01:41:30,579 --> 01:41:53,500
+Olabilir. Canım öyle istemiş. Mesela ben şöyle diyebilirdim. Aynısını çalışanda da yapmak istiyorum. O zaman şuraya da bir çarpı koyardım. Şöyle gelir. Şuraya da bir çarpı koyardım. Ne oldu? Eğer çalışansa ve 50'den büyükse fatura, o zaman ona da ikinci oranı uygulayıp ekstra %10 indirim uygulayabilirdim.
+
+405
+01:41:53,811 --> 01:42:03,191
+Böyle işte karmaşık yapıları karar mekanizmalarını biraz daha okunaklı hale getirmek için karar tablolarını kullanabiliriz.
+
+406
+01:42:05,108 --> 01:42:23,468
+Alternatifi de karar ağaçlarını kullanmaktır. Bu biraz daha az karmaşık yapılar için daha uygun. Burada olasılıklar falan da kullanılmıyor. Görsel aslına bakarsınız. Karar tablosu ile karar ağacı birbirine direkt olarak dönüştürülebilir. Bu daha basit gösterimler için kullanılır.
+
+407
+01:42:29,684 --> 01:42:49,083
+Onun aynısının karar ağacı. Disiplin cezası almış mı, almamış mı? Almışsa burs alamaz. Sonrasında not ortalaması 70'in üzerinde mi diyeyim. Not ortalaması 70'in altındaysa giriş ortalamasına bakıyoruz. Bakın bununla bu aynı. Evet ise bir yıl yarım burs.
+
+408
+01:42:49,423 --> 01:42:53,384
+Hayırsa bu da burs alamaz. Aynı şu eylem burada da geçerli oluyor.
+
+409
+01:42:55,123 --> 01:43:01,823
+İşte ortalamadan büyükse yarım burs değilse tam burs. Bunu ters yazmışım galiba. İdare edin.
+
+410
+01:43:01,823 --> 01:43:12,384
+Yani sonuçta evet mi hayır mı, evet mi hayır mı, o mu bu mu şeklinde dallanarak hangi işlemin, hangi eylemin yapılması gerektiğini burada gösterebilirsiniz.
+
+411
+01:43:13,264 --> 01:43:17,184
+Bir diğer ikinci tablonun örneği işte hasta tipi.
+
+412
+01:43:17,423 --> 01:43:24,283
+Çalışan olabilir, emekli olabilir. Gördüğünüz gibi ya bu ya bu. İkisi aynı anda olamıyordu. Buna kök, buna birinci düzey dal diyebiliriz.
+
+413
+01:43:24,659 --> 01:43:31,720
+Sonra ikinci düzeye baktığımızda yine toplam tutarı karşılaştırıyoruz. İkisi için de 50'den küçük ya da büyük olma durumu var.
+
+414
+01:43:32,199 --> 01:43:37,359
+Şimdi burada bakın iki tane eylemi bir arada gösterecektim ya iki tane çarpı koymuştum ne dedim?
+
+415
+01:43:37,920 --> 01:43:43,079
+İndirim oranı 1, indirim oranı 2, indirim oranı 3, indirim oranı 4 ve ek yüzde 10 indirim.
+
+416
+01:43:43,079 --> 01:43:51,720
+Yani ben burada esasen şurada iki tane ayrı eylemi bir arada yaptığımı göstermiş oldum.
+
+417
+01:43:51,859 --> 01:43:53,640
+Şunu da şöyle yapalım.
+
+418
+01:43:56,100 --> 01:43:58,079
+Tamam. Daha güzel oldu değil mi?
+
+419
+01:43:59,260 --> 01:44:00,619
+Tamam. Karar ağacı da bu.
+
+420
+01:44:01,000 --> 01:44:03,119
+Gördüğünüz gibi tablo ile ağaç dönüştürülebilir.
+
+421
+01:44:03,119 --> 01:44:10,039
+Tablo genelde daha karmaşık yapılarda, daha çok fazla bileşge koşulu oluştuğu durumlarda kullanılır.
+
+422
+01:44:10,399 --> 01:44:13,220
+Daha basit yapılarda karar ağacı yeterli olacaktır.
+
+423
+01:44:13,380 --> 01:44:17,579
+Bunu daha görsel bir şekilde takip edilmesini sağlayabilirsiniz.
+
+424
+01:44:20,051 --> 01:44:26,271
+Son olarak şimdi bugün şeye bakalım.
+
+425
+01:44:26,911 --> 01:44:31,731
+Hatırlarsanız biz önce bir şöyle çember çizmiştik.
+
+426
+01:44:32,271 --> 01:44:37,091
+Ondan sonra bu çemberi şöyle 3'e bölmüştük.
+
+427
+01:44:37,971 --> 01:44:39,611
+Şöyle çizeyim.
+
+428
+01:44:40,771 --> 01:44:42,731
+Tamam. Şuraya süreç demiştik.
+
+429
+01:44:42,731 --> 01:44:43,723
+Onu da...
+
+430
+01:44:44,148 --> 01:44:56,608
+Elimle S yapayım. Şuna veri demiştik. Buna da kontrol demiştik hatırlarsanız. Şu taraf bizim dersimizin kapsamı dışında buralara girmeyeceğiz dedik. Şurayı bitirdik.
+
+431
+01:44:57,971 --> 01:45:14,692
+Bunu da bahsettik ve ileride biraz daha detaylı anlatacağım dedim. Tasarımla beraber anlatmak istiyorum dedim. Bunu da anlatsak tabii tam bir analiz modelini, gereksinim modelini oluşturmuş oluruz ama şimdilik o detaya girmemize ihtiyaç yok. Peki, ben bunları yaptım yaptım da.
+
+432
+01:45:15,091 --> 01:45:40,551
+Sadece çizip bırakacak mıyım? Hayır. Sadece veri akış diyagramlarını falan çizip bırakmak ya da varlık ilişki diyagramını çizip bırakmak yetmiyor bize. Mutlaka şuraya oturup bir merkeze bunların hepsini formal olarak bağlayacak ve tanımlayacak veri sözlüğünü oturtmam gerekiyor. Burada şu ana kadar yaptığım bütün bilişim maddelerinin hepsi için tanım yaparım. Eşin en sevimsiz.
+
+433
+01:45:41,908 --> 01:46:02,908
+Böyle yazısı bol, şeyi bol bir yapısı, veri sözlüğü. Neler vardır veri sözlüğün içinde? Veri akışları vardır, veri depoları vardır, veri yapıları vardır. Veri yapıların içindeki elementer yapılar, yani veri elemanlarımız vardır. Bir de proseslerimiz vardır. Bunların şu ana kadar yaptığımız her şey için...
+
+434
+01:46:03,155 --> 01:46:23,115
+Birer madde tanımlamamız gerekiyor. Veri akışları, işlemler, bunların da detayları sözlükte tanımlı olarak verilmesi bekleniyor. Bunlar niye var? Dokumentasyon için var. Mesela diyelim ki yarın siz bu ekipten ayrıldınız ya da işi bıraktınız, başka yere geçtiniz.
+
+435
+01:46:23,636 --> 01:46:36,736
+Proje ne olacak? Sizin analiz kafanızdaki o pek çok bilgi, analiz bilgisi ne olacak? Onların bir yerde tutuluyor olmaları lazım ki başkaları da kalınan noktadan okuyarak bunları öğrenip devam edebilsin.
+
+436
+01:46:36,736 --> 01:46:51,636
+Ya da yarın öbür gün gerçekten geri dönüp de bir şeylerin düzelteceği bir bakımlara yapılması gerekirse, yenilenmesi gerekirse o zaman bunun da bir şekilde neydi bunlar diye tanımlarının görülmesi gerekir.
+
+437
+01:46:51,636 --> 01:47:13,036
+O yüzden biz böyle bir veri sözlüğü oluşturulmasını tavsiye ederiz. Genellikle az yapılır. Daha çok böyle yine kontratlı, formal, ihale tarzı işlerde daha çok yapılır. Ama özellikle çevik yaklaşımla birlikte veri sözlüğü yazan da pek kalmadı diyebiliriz. Fakat kurumsal hafıza açısından, proje hafızası açısından oldukça önemlidir.
+
+438
+01:47:13,423 --> 01:47:30,483
+Sıkıntısı şudur, siz modelde güncellemeler yaptıkça, modifiye ettikçe çözümünüzü maalesef bunların da hepsini bir kontrol edip üzerinden bir daha geçip neler değişti, neleri güncellemem lazım diye bunların üzerinde bir çalışma gerçekleştirmek zorundasınız.
+
+439
+01:47:30,483 --> 01:47:34,764
+Şimdi bakalım, veri akışlarını sözlük girişlerine teker teker bakalım.
+
+440
+01:47:35,252 --> 01:47:55,352
+İlki veri akışları, data flowlar. Böyle veri akış sözcük girişi gibi bir başlığı var. Bunu böyle bir kart gibi bir döküman bu, belgenin bir sayfası. Böyle düşünebilirsiniz. Adı, veri akışın adı. Bu veri akış diyagramından geliyor. Tanım. Bu ne veri akışı? İşte mesela müşteriye fatura edecek döküman için gerekli bıdı bıdı bilmem neler, bilgiler.
+
+441
+01:47:55,891 --> 01:48:16,212
+Kaymış şuradan idare edin. Nereden geliyor? Şuradan geliyor. Nereye gidiyor? Şuraya gidiyor. Bu veri akışında hangi veri yapıları var? Fatura ve müşterinin detayları var. Bunlar kompozit verimi, elementer verimi, daha detaylı açıklamalar gibi. Veri akışlarının tanımlarını, detay tanımlarını yapıp sözlüğe koyduk.
+
+442
+01:48:16,692 --> 01:48:42,851
+Veri depolarımızı da tanımlarız. Bu da biliyorsunuz yine veri akış diyagramlarındaki bir diğer elemanımızdı. Veri deposunun adı, tanımı, içinde tuttuğu veri yapıları ne kadar boyutta olacak? Mesela günde yaklaşık 100 kayıt geliyormuş. Kim erişecek buna? Kimlerin görme yetkisi ya da değiştirme yetkisi var? Başka detaylı açıklamalar gibi. Yani böyle veri deposuyla alakalı bir tanım kartı.
+
+443
+01:48:43,475 --> 01:49:09,195
+Veri yapılarınız. Veri yapılarımız neydi? Bizim veri akışlarımızda tuttuğumuz, kullandığımız veri yapıları. Mesela bir işte her kompozit için bunu yapmak zorundayız maalesef. Satış sipariş kayıtları, bunun tanımı, içindeki elemanlar, aynı bir struct gibi, struct'ın içindeki field'lar gibi düşünebilirsiniz. Bakın bunlar mesela yıldız koyulmuş, açıklama yazmışım. Yaşında yıldız olanlar her bir parça kaydı için oluşturulur demişim.
+
+444
+01:49:09,456 --> 01:49:22,576
+Ve bunlar nedir? Elementer midir? Yoksa kompozit midir? Mesela tarihte kompozitmiş. O zaman ben gidip buradaki bütün elemanlar içinde birer kompozit içinde şey tanımlamam gerekecek.
+
+445
+01:49:22,576 --> 01:49:29,416
+Elemanları tanımlayacağım. Mesela geri geliyorum. Şuradaki müşteri no elementerdi. Müşteri no.
+
+446
+01:49:30,100 --> 01:49:55,380
+Tanımı ne, tipi ne, uzunluğu ne, hangi aralıkta değer alabilir, başka verilmesi gereken detaylar var mı? Örneğin işte son 3 rakam ya da son rakam bilmem ne CRC check kodu ile oluşturulur falan gibi. Her bir elementer veri yapısı için de bunları koymanız gerekir. Eğer sadece bir değer tutuyorsun, mesela işte ilk kodları, ilçe adları gibi, o zaman buraya bir tablo da koyabilirsiniz. Bunun alacağı değerler şu aralıktadır diye.
+
+447
+01:49:57,108 --> 01:50:14,148
+Bunlar şimdiye kadar o veri akışlarıyla alakalı alt kırılımlardı. Bir de proseslerimiz var. Şu kenarı yuvarlatılmış 2.0, 3.0 diye süreçlerimiz var dedik ya. Onları da yine veri sözlüğünde tanımlamalıyız.
+
+448
+01:50:14,528 --> 01:50:28,528
+Veri sözlüğünde bunlar da işte işlem olarak geçer. İşlem sözlük girdileri, işlemin adı, numarası, adı, ne giriyor, burada neler var, çıktısı ne? Aslında bu süreç tanımlama formumuz var ya, işte onu belki de buraya yapıştırabiliriz.
+
+449
+01:50:29,528 --> 01:50:36,528
+Direkt olarak, daha detaylı bilgileri de içeride için. Böyle bir veri sözlük girişi hazırlamamız gerekir.
+
+450
+01:50:42,292 --> 01:50:43,492
+Modelimizde
+
+451
+01:50:43,823 --> 01:51:05,003
+Bütün bilişim maddeleri, veri akışlarımız, veri depolarımız, veri yapılarımız, veri yapılarını oluşturan veri elemanlarımız ve proseslerimiz, bütün hepsini tanımlayarak, sistemimizin içindeki parçaları tanımlayarak bunların neler olduğunu bir sözlük halinde, bir külliyat halinde barındırmamız gerekir.
+
+452
+01:51:05,003 --> 01:51:08,903
+Şimdi problem uzayını modellenmesine bu hafta geçmeyeceğim.
+
+453
+01:51:11,823 --> 01:51:26,183
+Onu hemen şuradan en azından bir tanesinin örneğini göstereyim. Son böyle bir dakikamız falan kalmış. Nerede o? Şurada. Şu ekranı paylaşayım. Şunu kapatayım. Tamam.
+
+454
+01:51:27,083 --> 01:51:37,263
+Şimdi mesela bakın bu gerçek bir projenin, tabii çok küçük görünüyor şu anda, onu biraz büyüteyim size. Gerçek bir projenin Business Requirement listesi. Bakın gereksinim numaralarını koymuşlar.
+
+455
+01:51:37,716 --> 01:52:03,276
+Gereksinim tipini koymuşlar. Bunlar non-functional, functionalları birlikte söylemiş. Bakın, mesela kullanıcılar, roller, kullanıcıya atanan roller istenildiği kadar güncellenebilecektir. Kullanıcıya rol atanabilecektir. İşte ne bileyim, kullanıcı oluşturma ve rol oluşturma aksiyonları yalnızca belirlenmiş role sahip kullanıcılar tarafından yapılacaktır gibi. Sonrasında bunların önem derecesi, bunlar kritik. Bunların hepsini konuşmuştuk geçen hafta. Örnekleye bir daha göstereyim.
+
+456
+01:52:03,699 --> 01:52:14,119
+Durumu ne? Yeni mi var mı? Zorunlu mu? Yoksa opsiyonel mi? Şeklinde böyle liste oluşturulmuş. Mesela işlevsel olmayan gereksinim nerede var? Mesela şuna bakalım.
+
+457
+01:52:17,908 --> 01:52:34,108
+Bakın, bir kullanıcı aynı anda birden çok oturumda aktif giremeyecektir. Başka bir PC'den girildiğinde aktif oturum sonlanacaktır. Birden fazla veri tabanı sağlayıcısına destek verecek bir yapı olacaktır.
+
+458
+01:52:34,612 --> 01:52:40,692
+Ne oldu? Bunlar bakın benim işlevlerim değil ama işlevsel olmasa da tasarımımı etkileyen faktörler.
+
+459
+01:52:40,792 --> 01:52:46,351
+Birden fazla veri tabanıyla konuşmamı istiyor. O zaman ona göre adaptörlerimi yazmalıyım falan. Aklıma bu gelecek.
+
+460
+01:52:46,804 --> 01:53:05,684
+İşte bir sayfanın output cache olarak saklanması sağlanacaktır. Yazması çok kolay. Oluştururken bütün cache mekanizmasını mı tasarlayacağız şimdi, nasıl yapacağız bunu, ne kullanalım orada falan diye sizi bayağı bir yoracak olan parçalar. İlla sadece işlevsel değil, işlevsel olmayanlar da böyle bir business requirement list de olabilir.
+
+461
+01:53:06,104 --> 01:53:11,064
+Şimdi esas söylemek istediğim şey, burada da başka bir gereksinim analizi, SRS var.
+
+462
+01:53:11,456 --> 01:53:33,636
+Örneklere bakacağım ama. Şimdi SRS dokümanının IEEE standardı, IEEE 830. Şöyle şu şekilde bir şablonu var. Arar bulursunuz siz de. SRS. Aslında şey, buraya kadar yaptığımız bütün gereksinimi yazdığımız, anlattığımız, çizdiğimiz, her şeyini barındırdığımız kısmı. İçeriğine bakarsanız.
+
+463
+01:53:34,463 --> 01:53:42,063
+Giriş, amacı, dokümanın gidişatı, kim ne ilgilendiği, scope'un ne olduğu ve varsa referanslar.
+
+464
+01:53:42,523 --> 01:53:55,243
+Sonrasında product perspective, product functionları, varsa classlar mesela ya da sizin süreçleriniz, prosesleriniz nasıl bir ortamda işleyecek.
+
+465
+01:53:55,243 --> 01:54:02,283
+Ondan sonra kısıtlar, tasarım ve gerçeklemeye dair varsa kısıtlar, dokümentasyonlar, varsayımlar.
+
+466
+01:54:02,463 --> 01:54:29,103
+Ara yüzler, kullanıcı ara yüzleri ne olacak, nasıl olacak? Belki bunların mock-up'ları, böyle taslak çizimleri. Donanım ara yüzleri, yazılım ara yüzleri, iletişim ara yüzlerinin neler olacağı, nasıl tanımlanacağı. Ve dördüncü kısım, direkt olarak gereksinim analizi. Bütün süreçleriniz, süreç formlarınız mesela, içlerindeki o şeylerle, pseudokodlarıyla birlikte. Ya da use case'leriniz burada olacak.
+
+467
+01:54:29,876 --> 01:54:44,876
+Ve varsa işte deminki gibi performans falan filan kriterleri, yazılım kalite kriterleri, onlar da beşinci başlık. Bu şekilde bir yapısı var. Herkes ne tarihte ne değişiklik yaptı, hangi versiyona geldi diye mutlaka bir revision history tutulur.
+
+468
+01:54:45,595 --> 01:54:53,536
+Buna bakarsanız dediğim gibi internetten IEEE 830 dediğinizde zaten çıkar. Detaylarına, şimdi daha fazla vaktinizi almayayım.
+
+469
+01:54:53,840 --> 01:54:56,279
+Buradan erişip görebilirsiniz.
+
+470
+01:54:57,460 --> 01:55:03,659
+İşte şunların hepsi bizim requirementlarımız. Bunlar liste halinde burada yer alır.
+
+471
+01:55:04,500 --> 01:55:08,420
+Sonra bunun işte basit bir örneği, bakın buna benziyor.
+
+472
+01:55:08,420 --> 01:55:16,819
+Nedir? Personal Investment Management System, kişisel harcama yönetim sistemi için bir SRS dökümanı hazırlanmış.
+
+473
+01:55:18,039 --> 01:55:20,260
+Amacı ne? Kapsamı ne?
+
+474
+01:55:20,724 --> 01:55:26,284
+Tanımlar ne? Buradaki kısaltmalar ne demektir? Pardon, affedersiniz.
+
+475
+01:55:44,948 --> 01:56:12,448
+Biri geldim. Tanımlarımız nelerdir? Varsa işte hangi ekler var? Genel bir tanım ve sonrasında da işte ürünün mesela bakın use case'lerini şurada bir tablo halinde vermiş. Hangi use case neyle alakalı? Adı ne? Kısa bir tanımı ne? Tabii sonrasında bütün use case'leri böyle işlevsel gereksinimler başlığı altında. Bakın use case 1, primary actor, precondition.
+
+476
+01:56:12,863 --> 01:56:32,743
+Main senaryo, ondan sonra alternate senaryo, use case 2, use case 3, use case 4, use case 5, 6, 7, 8, 9, 10, 11 böyle gidiyor. Tamam mı? Bütün use case'leri verdiniz. Ondan sonra gerekiyorsa işte performans ve tasarım kısıtlarını bilmem nelerini tanımladınız.
+
+477
+01:56:33,199 --> 01:56:46,500
+Ve burada ek vermişler. Mesela belli işlemlerin yapılması için işte bilmem ne faizin hesabı için şu formül kullanılmalıdır, bilmem ne için şu formül kullanılmalıdır diye detaylar da burada ekler de tanımlanmış.
+
+478
+01:56:47,060 --> 01:56:49,940
+Mesela kullanıcı arayüzlerinin taslak çizimleri.
+
+479
+01:56:50,387 --> 01:57:06,868
+Yukarıda şöyle şöyle butonlar olsun, solda şöyle bir izleme menüsü olsun, ana ekran şu şekilde tasarlansın, altta da şu bilmem ne şeyleri olsun şeklinde, düğmeleri, navigasyonları olsun şeklinde böyle ekranlarıyla birlikte tanımlanmış bir doküman.
+
+480
+01:57:07,475 --> 01:57:31,455
+İşte bu şekilde gidiyor. Bunlar da başka mesela bakın yine şeyler, business rule'lar, business requirement'lar. Hangi functional mı, non-functional mı, ne olacakları, beklenen iş gereksinimleri. Sonrasında hangi kullanıcılarımız var diye koymuşlar. Sonra kullanım senaryoları, kullanım senaryoları, işte use case'ler neler. Sonra oturmuşlar, bütün use case'leri yazmışlar. Böyle gördüğünüz gibi.
+
+481
+01:57:32,500 --> 01:57:44,619
+Adım adım tablo yapısında yazmışlar. Olabilir. Text de yazabilirsiniz, tablo da yazabilirsiniz. Bu şekilde gidiyor. Böyle böyle böyle. Bunların detaylarını haftaya tekrar daha detaylı bir şekilde bakacağız.
+
+482
+01:57:49,363 --> 01:57:57,203
+Problem uzayını nesne yönelik bir tasarımla gerçekleştirmek üzere analiz modelini nasıl oluştururuz?
+
+483
+01:57:57,323 --> 01:58:02,063
+Ya da kavramsal modeli sınıf bazında, sınıf temelinde nasıl ifade ederiz?
+
+484
+01:58:02,383 --> 01:58:07,683
+Ve bunlar için de senaryoları nasıl kullanırız? gibi detaylara haftaya eğileceğiz.
+
+485
+01:58:07,683 --> 01:58:16,683
+Bu şekilde şimdilik fonksiyonel çözümlemeyi ve SRS'in ne olduğunu biraz da bakarak bu haftamızı tamamlamış olalım.
+
+486
+01:58:17,363 --> 01:58:19,263
+Soru var mı?
+
+487
+01:58:26,996 --> 01:58:44,376
+Sorumuz yok galiba. Tamam. Peki o zaman bu haftalık dersimiz tamamlandı. Haftaya da bunları nesne yönelik olarak analizi nasıl yaparız konusuyla yolumuza devam edeceğiz 7. haftada. Kendinize iyi bakın. İyi günler.
