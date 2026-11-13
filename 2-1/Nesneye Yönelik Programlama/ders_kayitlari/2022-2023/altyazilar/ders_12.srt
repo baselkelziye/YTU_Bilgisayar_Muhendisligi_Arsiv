@@ -1,0 +1,3971 @@
+1
+00:00:09,428 --> 00:00:11,288
+Şimdi, birka alpayı birşim.
+
+2
+00:00:16,083 --> 00:00:17,024
+İnsanlar.
+
+3
+00:00:20,820 --> 00:00:22,740
+Enfantasy, devam yaselene.
+
+4
+00:00:32,307 --> 00:00:37,368
+Artikel 10, 21, 21, 18'den, mutfada, ingilizces, ekana.
+
+5
+00:00:48,500 --> 00:00:55,240
+Evet, peki. Çiftçiler sonra, şey mi diyeceğiz, neyiniz? Çiftçiler falan aktı. Tamam, bu güzel.
+
+6
+00:00:57,740 --> 00:01:01,840
+Hocam, merhaba. Ders başlamadan önce bir şey sorabilir miyim?
+
+7
+00:01:02,500 --> 00:01:02,859
+Tabii ki.
+
+8
+00:01:03,740 --> 00:01:14,780
+Ben size mail attım da görmediğiniz sanırım. Projede GUI için JavaFX ve veri kaydetmek için, JSON dosyalarını kullanmak için JSON isimli Google'ın kütüphanesini kullanabilir miyim?
+
+9
+00:01:15,871 --> 00:01:18,371
+Java serialization kullanmak zorunda değiliz yani.
+
+10
+00:01:19,251 --> 00:01:43,371
+Hayır, zorunda değilsiniz. Yani, bir de zaten Java ve Fikri Java ile ama direkt gelmiyor. Ayrıca kullanınız yani daha doğrusu projeyi ona eklemeniz lazım. Onun dışında istediğiniz kütüphaneleri kullanabilirsiniz. Fakat günün sonunda bu projeyi dağıtımlar çıktığınız zaman yani çalışabileceği Java dosyasını yapıyoruz. O çift olarak çift çalışmak zorunda.
+
+11
+00:01:47,251 --> 00:01:57,852
+Yüklerken, bu kullandığınız ek kütüphanelerin de car dosyalarını herhalde car dosyası şeklinde dahil ediyorsunuz. Onları da eklememizi isterim.
+
+12
+00:01:57,852 --> 00:02:10,951
+Ayrıca bir o yük dosyasının kök düzenine bir de şu şunlarda bir ürkete eklenmelidir şeklinde ufak açıklamayla o şekilde ilerlemeniz lazım.
+
+13
+00:02:11,091 --> 00:02:14,391
+Yoksa Açıtan Ocağı değerlendirme de güçlü çeker.
+
+14
+00:02:15,252 --> 00:02:19,831
+Çektiğimiz şeylerde de siz son yaşarsınız. O yüzden o şekilde yapalım.
+
+15
+00:02:19,912 --> 00:02:23,752
+Kullanabilirsiniz ama mutlaka bağımlı kütüphaneleri de karnık kuduruyla birlikte koyun ve
+
+16
+00:02:23,752 --> 00:02:30,352
+executable olanın ve jadus miklasını ondan mutlaka olmalı. Çift tıklayınca çalıştırabilmeli.
+
+17
+00:02:30,652 --> 00:02:36,812
+Anladım bir şey. Ben Gradle kullanmayı düşünüyordum da. Gradle'la yükleyecek olsam da yine de vermem gerekir mi?
+
+18
+00:02:36,812 --> 00:02:41,852
+Çünkü Gradle otomatik olarak indiriyor projeyi eğer bir idede açarsanız bu kütüphaneleri.
+
+19
+00:02:43,252 --> 00:02:49,292
+Bilemiyorum. Her tür uyumsuzluk olabilir. Zaten ben oranla çalışmadığım için bilemiyorum.
+
+20
+00:02:49,671 --> 00:03:04,072
+Anladım. Yine de koyarım. Bir de şey soracaktım. O projenin PDF'inde ABVN sayılarını açıklamıştınız da ben tam olarak orayı anlayamadım. Tam olarak nasıl bir soru soruyoruz çocuğa?
+
+21
+00:03:04,532 --> 00:03:05,792
+Yani pek anlayamıyorum.
+
+22
+00:03:05,812 --> 00:03:10,391
+Öyle. Yani çarpım tablosunu ezberleyecek ve çarpım tablosu nedir?
+
+23
+00:03:10,812 --> 00:03:14,032
+1'ler 2'lerden 10'lara kadar olan çarpım tablosu.
+
+24
+00:03:14,111 --> 00:03:15,671
+Mesela 7 kere 5, 35.
+
+25
+00:03:16,092 --> 00:03:19,852
+Yani 1 kere 1, 1 kere 2, 1 kere 3, nokta nokta nokta, 1 kere 10.
+
+26
+00:03:20,192 --> 00:03:22,671
+2 kere 1, 2 kere 2, nokta nokta, 2 kere 10.
+
+27
+00:03:22,972 --> 00:03:25,431
+3 kere 1, 3 kere 2, nokta nokta, 3 kere 10.
+
+28
+00:03:25,771 --> 00:03:29,171
+En sonunda 10 çarpı 1, 10 çarpı 2, nokta nokta, 10 çarpı 10.
+
+29
+00:03:29,312 --> 00:03:32,532
+Yani bütün o çarpım tablosundan lastikleri soran soruyorum.
+
+30
+00:03:32,532 --> 00:03:45,592
+Örneğin A sayısı 2 diyelim, B 5 diyelim. Bu şey değil mi demek? İşte birden 2'ye kadar bir rastgele sayı, bir de birden 5'e kadar bir rastgele sayı, onların ikisinin çarpımını soracak değil mi?
+
+31
+00:03:47,312 --> 00:03:58,211
+Evet, yani nihayetinde bu bir çarpı bizde 10 şartı ona kadar çarpım tablosunu öğrenmeye yönelik bir proje. O konuda istenenlerini tarif etmeye çalıştım.
+
+32
+00:03:58,632 --> 00:03:59,032
+Anladım.
+
+33
+00:04:01,491 --> 00:04:02,651
+Teşekkür ederim hocam.
+
+34
+00:04:03,292 --> 00:04:16,132
+Evet, bu şekilde. Bir de şöyle söyleyeyim, normalde bunlar rastgele ama belki de şimdi diyelim ki ben çocuğun yedilerin çarpımında zayıf olduğunu düşünüyorum. O yüzden özellikle ağa sabit kalacak yedi.
+
+35
+00:04:16,660 --> 00:04:29,560
+Ama B'de birden 10'a kadar da önce 7 kere 5 soracak. Sonra 7 kere 3 soracak diyelim ki. 7'ler ve 8'ler ağırlıklı A7 veya A8 olabilir gibi.
+
+36
+00:04:30,911 --> 00:04:37,751
+Biraz artık sizin yaratıcılarınıza kalmış burada ne kadar esnek alıştırma tanımlayabileceksiniz bakalım.
+
+37
+00:04:38,111 --> 00:04:40,891
+Bu da projelere birbirinden farklılaştırılacak bir şey olacak.
+
+38
+00:04:41,331 --> 00:04:45,671
+İstersek Aralık tanımlayacağız, istersek bir tane sayıda seçmesini sağlayacağız. O bize kalmış.
+
+39
+00:04:46,551 --> 00:04:47,531
+Evet, evet.
+
+40
+00:04:47,831 --> 00:04:49,491
+Tamamdır. Teşekkür ederim hocam.
+
+41
+00:04:50,531 --> 00:04:52,991
+Bir şey değil. Başka soru varsa buyurun bakalım.
+
+42
+00:04:57,363 --> 00:05:05,483
+Ben biraz da gelenek oldu. Belki de bilmiyorum. O yüzden insanlar biraz geç gelebiliyor ama yumurta tavuk misal meselesi mi bilemiyorum.
+
+43
+00:05:06,003 --> 00:05:09,183
+Bir üç dakika daha bekleyelim bakalım. Belki katılımcı sayımız artar.
+
+44
+00:05:09,903 --> 00:05:14,883
+O da demek oluyor ki on dört ona kadar beş dakika daha bekleyelim bakalım. Kaç kişi olacağız?
+
+45
+00:11:11,412 --> 00:11:30,612
+Ok, I guess I should begin. There is no need to wait for more. I wish we would have been more crowded, but that's it. So we had to finish the curriculum, so I have to begin. Let's see.
+
+46
+00:11:36,916 --> 00:11:45,716
+Now we will work with inner classes. What do they mean? What they are useful? What can we do about that? Let's check.
+
+47
+00:11:48,236 --> 00:11:57,416
+At the meantime, let me open the Eclipse on the side and continue with the lecture.
+
+48
+00:11:58,416 --> 00:11:59,236
+Okay.
+
+49
+00:12:01,576 --> 00:12:03,456
+Inner class is a class.
+
+50
+00:12:03,807 --> 00:12:05,927
+Kodet within another class.
+
+51
+00:12:07,847 --> 00:12:12,647
+Therefore, an inner class is kodet within an outer class.
+
+52
+00:12:13,407 --> 00:12:16,307
+What can we do with an inner class?
+
+53
+00:12:17,447 --> 00:12:22,627
+Think about an inner class as a member of the outer class.
+
+54
+00:12:23,967 --> 00:12:30,947
+Therefore, it is meaningful for that inner class to be able to access every member.
+
+55
+00:12:31,635 --> 00:12:35,975
+Every member of the outer class, including the private ones.
+
+56
+00:12:37,495 --> 00:12:44,155
+You know, a class can access its private members, its own private members, as it reaches.
+
+57
+00:12:46,096 --> 00:12:56,955
+And when you think an inner class as being a member, then it is meaningful for it to access all the private members of the outer class too.
+
+58
+00:12:58,515 --> 00:13:11,115
+Inner classes can be hidden from the other classes of same package, just as if were defined as private numbers.
+
+59
+00:13:13,135 --> 00:13:18,375
+And actually, inner classes do not need to have a name.
+
+60
+00:13:19,495 --> 00:13:23,155
+We will mostly work with inner classes having a name.
+
+61
+00:13:23,504 --> 00:13:29,683
+But you can optionally skip a name, a class name altogether in a class.
+
+62
+00:13:29,683 --> 00:13:34,183
+This is used in multi-threading and GUI programming.
+
+63
+00:13:34,783 --> 00:13:38,544
+Therefore, we will talk about them too.
+
+64
+00:13:39,183 --> 00:13:45,984
+But mostly, we will demonstrate them in multi-threading.
+
+65
+00:13:46,740 --> 00:13:49,900
+As far as I remember.
+
+66
+00:13:50,460 --> 00:13:54,000
+Therefore, we need to be aware of them too.
+
+67
+00:13:55,539 --> 00:13:56,500
+What can we do?
+
+68
+00:13:56,500 --> 00:13:58,700
+These are the things that we can do.
+
+69
+00:13:58,799 --> 00:14:06,379
+But what we cannot do is we cannot define any static method in an inner class.
+
+70
+00:14:08,160 --> 00:14:12,379
+Because the inner class...
+
+71
+00:14:13,139 --> 00:14:19,839
+Being like a number is always connected to the outer class.
+
+72
+00:14:24,000 --> 00:14:31,360
+Maybe you can define static number fields, but you cannot define static number methods in an inner class.
+
+73
+00:14:32,099 --> 00:14:35,420
+Maybe we will demonstrate to I don't remember for now.
+
+74
+00:14:36,779 --> 00:14:39,159
+Let's give our first example.
+
+75
+00:14:39,635 --> 00:14:42,255
+A person class and an employee class.
+
+76
+00:14:43,135 --> 00:14:52,096
+Normally, regularly, and let's examine them in, not from the eclipse because I have highlighted something.
+
+77
+00:14:52,692 --> 00:15:13,812
+Remember our previous examples such as we have created the class employee by extending the person class and from the employee class by using inheritance we have created the manager class. This is how we do things normally.
+
+78
+00:15:14,548 --> 00:15:30,827
+There is nothing wrong with that, but in order to be able to demonstrate the use of inner classes, now I will quote the employee class as an inner class of the person class.
+
+79
+00:15:30,827 --> 00:15:33,327
+You can see the quote in the slide.
+
+80
+00:15:34,327 --> 00:15:36,556
+First, we define a...
+
+81
+00:15:36,724 --> 00:16:04,684
+Class, person here. This is person.java file because every class should be contained in its own same named Java file. Therefore, this is the person.java file and within it, I have defined a person class, a name as the only member field and there's a construct.
+
+82
+00:16:04,724 --> 00:16:07,264
+Kodak, which initializes that name.
+
+83
+00:16:08,704 --> 00:16:10,944
+This is an optional annotation.
+
+84
+00:16:11,604 --> 00:16:14,264
+I will talk about it later.
+
+85
+00:16:15,044 --> 00:16:19,304
+And then now we are beginning to call another class.
+
+86
+00:16:19,304 --> 00:16:27,164
+See, there is a class employee written the scope within the curly braces of the class person.
+
+87
+00:16:27,924 --> 00:16:31,784
+We can define an inner class, private or public.
+
+88
+00:16:32,224 --> 00:16:38,004
+There will be different effects related to this choice.
+
+89
+00:16:38,244 --> 00:16:39,424
+We will cover them all.
+
+90
+00:16:44,755 --> 00:16:59,015
+This way, if we define an inner class as private, we keep this class hidden from any other classes except personal class.
+
+91
+00:17:00,375 --> 00:17:06,855
+Therefore, being an employee is related with being a person.
+
+92
+00:17:06,855 --> 00:17:08,855
+But...
+
+93
+00:17:13,044 --> 00:17:20,503
+In this case, in this example, every person is also an employee.
+
+94
+00:17:21,503 --> 00:17:23,544
+We will go step by step.
+
+95
+00:17:23,983 --> 00:17:28,284
+So first we will demonstrate this within the same outer class.
+
+96
+00:17:28,764 --> 00:17:33,084
+Then we will demonstrate it from other classes as well.
+
+97
+00:17:33,704 --> 00:17:38,824
+And within this inner class, I have the salary number field.
+
+98
+00:17:39,827 --> 00:17:44,688
+A constructor for the inner class which initializes the salary.
+
+99
+00:17:45,208 --> 00:17:51,148
+There is nothing funky or weird or new about the constructor of the inner class.
+
+100
+00:17:51,768 --> 00:17:59,067
+It is as if it's the constructor of a regular class, nothing different in here.
+
+101
+00:17:59,067 --> 00:18:03,867
+I have a get-run setter method for the salary member field.
+
+102
+00:18:04,447 --> 00:18:07,827
+And the string method demonstrates that.
+
+103
+00:18:07,827 --> 00:18:14,028
+The inner class can access the private member field of its outer class.
+
+104
+00:18:14,528 --> 00:18:21,327
+I can direct the right name here, which means the member field of the outer class.
+
+105
+00:18:22,067 --> 00:18:30,927
+I can directly and easily, without anything else, I can access this member field of the outer class from the inner class.
+
+106
+00:18:31,700 --> 00:18:55,700
+And sorry, it's all numbered well, so there is nothing wrong with that. And this curly brace marks the end of the inner class. Now let's demonstrate. I am going with the authors here. I define an array of type employee.
+
+107
+00:18:56,192 --> 00:18:59,351
+which is able to hold three objects.
+
+108
+00:19:00,132 --> 00:19:03,032
+And I define a personal object here.
+
+109
+00:19:03,652 --> 00:19:12,152
+This is mandatory to do so because as this class employee being an inner class,
+
+110
+00:19:12,572 --> 00:19:17,132
+it is called as if a member of the art class.
+
+111
+00:19:17,132 --> 00:19:17,771
+Therefore,
+
+112
+00:19:18,259 --> 00:19:23,839
+It can be only accessed by a reference of the outer class.
+
+113
+00:19:23,839 --> 00:19:33,960
+So first I define a person and I initialize this person with its regular abstract.
+
+114
+00:19:34,639 --> 00:19:35,839
+Then...
+
+115
+00:19:36,019 --> 00:19:56,019
+In order to be able to obtain an employee reference, which is tied to that person, I can write, I should write, the object reference, dot mu, and the rest is the constructor call of the inner class.
+
+116
+00:19:56,019 --> 00:20:00,000
+I define another class.
+
+117
+00:20:00,000 --> 00:20:14,000
+As a person here and I assign it to the array as being a new employee and another author is here.
+
+118
+00:20:14,000 --> 00:20:24,000
+He is also employed in the array that using the for each loop I can revisit every element in the array.
+
+119
+00:20:24,531 --> 00:20:27,931
+There is nothing different in this for each loop.
+
+120
+00:20:27,931 --> 00:20:36,331
+I could direct write the inner class name here because it is in the outer class of scope.
+
+121
+00:20:36,331 --> 00:20:39,331
+There is nothing wrong with that. We can do it.
+
+122
+00:20:39,331 --> 00:20:45,731
+Let's try and run this example. This is package 13a.
+
+123
+00:20:45,731 --> 00:20:50,132
+So let's open it.
+
+124
+00:20:58,099 --> 00:21:10,539
+As you can see, I have suppressed all warnings here. I will shortly turn it off.
+
+125
+00:21:23,059 --> 00:21:27,779
+And please let me do all the Turkish characters here.
+
+126
+00:21:33,172 --> 00:21:34,172
+Okay.
+
+127
+00:21:36,172 --> 00:21:41,172
+This is the same quote as shown in the slide.
+
+128
+00:21:43,172 --> 00:21:52,172
+There's only more specific Southwest learnings here and there's a larger Southwest learnings here.
+
+129
+00:21:52,172 --> 00:21:55,172
+Let me first run this quote.
+
+130
+00:21:58,836 --> 00:22:09,076
+And you can see that we can access every element of the type in the class within this main method.
+
+131
+00:22:10,355 --> 00:22:14,836
+What happens when I remove that annotation?
+
+132
+00:22:17,235 --> 00:22:18,836
+It tells me that
+
+133
+00:22:19,508 --> 00:22:28,447
+The get-seller method and set-seller method, get-seller and set-seller of the number field of the inner class, is never used.
+
+134
+00:22:31,867 --> 00:22:32,867
+Well...
+
+135
+00:22:33,971 --> 00:22:37,112
+There should be nothing wrong with that.
+
+136
+00:22:37,391 --> 00:22:47,271
+Actually, we are not using it, you know, in the two-street, because I directly write the name and salary member fields.
+
+137
+00:22:48,951 --> 00:22:52,391
+So I am turning this off first.
+
+138
+00:22:53,172 --> 00:22:56,851
+Then let me open my test project.
+
+139
+00:22:57,911 --> 00:22:59,771
+This is week 13.
+
+140
+00:23:06,996 --> 00:23:14,496
+Let me call this A. I will work with different versions of that in the class.
+
+141
+00:23:14,496 --> 00:23:17,115
+So, okay.
+
+142
+00:23:19,956 --> 00:23:33,996
+Okay, let's assume that I have removed this annotation and then use the getSeller method within the...
+
+143
+00:23:34,511 --> 00:23:39,831
+Now, one warning is over.
+
+144
+00:23:43,028 --> 00:23:56,168
+It's actually interesting that if I quote this employee class as an author class, as a normal class, then such unused methods do not give any warning.
+
+145
+00:23:56,168 --> 00:24:06,108
+And why is Java using, giving these warnings for these methods? I'm not so sure.
+
+146
+00:24:07,548 --> 00:24:10,168
+In that case, I guess...
+
+147
+00:24:11,316 --> 00:24:24,556
+This number method of the inner class is also not directly but indirectly a member field of the outer class.
+
+148
+00:24:24,556 --> 00:24:34,195
+So it is something like you define a member field that you don't ever use, such as this for example.
+
+149
+00:24:36,195 --> 00:24:38,436
+If I want int.
+
+150
+00:24:39,316 --> 00:24:57,716
+Man, let's just say. See that the same one is also here. The value of field person man is not used. And the set salary method of type person that employee is never used. Those are quite similar warnings.
+
+151
+00:24:58,223 --> 00:25:06,583
+Arkadaşlar, this is not a member field. This is a network. However, it is a member of the inner class, so it's giving that warning.
+
+152
+00:25:08,323 --> 00:25:12,483
+There is nothing wrong with suppressing that warning, in my opinion.
+
+153
+00:25:15,412 --> 00:25:27,872
+And maybe this is an overkill, suppressing all warnings, so that I could just use this unused suppression here.
+
+154
+00:25:27,872 --> 00:25:39,092
+And to the original file, let's paste it here and remove this one.
+
+155
+00:25:39,092 --> 00:25:40,492
+Okay.
+
+156
+00:25:42,579 --> 00:26:07,480
+And for this one, I can delete that. Okay. Right. What else, for example? Let me... Well, okay, this is weak and this is... All right.
+
+157
+00:26:12,884 --> 00:26:29,723
+What else? For example, if I wish, let me watch members of the employee element class that I can use. For example, this in the mom.
+
+158
+00:26:31,124 --> 00:26:39,323
+I can use the getCellery method if I wish. It's available here, accessible. SetCellery is also accessible.
+
+159
+00:26:39,323 --> 00:26:47,923
+And the others are the methods of the object class. So, that's it.
+
+160
+00:26:47,923 --> 00:26:49,923
+But...
+
+161
+00:26:50,208 --> 00:26:57,228
+What can we do when it comes to reference these objects?
+
+162
+00:26:57,228 --> 00:27:03,908
+We will go step by step and let's continue from the lecture on.
+
+163
+00:27:08,980 --> 00:27:19,379
+What you have just learned is how to define a new class, how to access the outer object, outer instance from the inner object, inner instance.
+
+164
+00:27:21,039 --> 00:27:29,019
+Okay, it was typed, so it's hidden from all classes, including the ones in the same package.
+
+165
+00:27:29,680 --> 00:27:34,440
+This means that we cannot code the main method anywhere else.
+
+166
+00:27:35,059 --> 00:27:39,899
+It should reside in that personal class.
+
+167
+00:27:40,679 --> 00:27:42,899
+This is all we can do.
+
+168
+00:27:44,159 --> 00:27:45,599
+Just a moment.
+
+169
+00:28:01,875 --> 00:28:27,211
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+170
+00:28:27,700 --> 00:28:30,539
+Of the class person, which is the art class.
+
+171
+00:28:32,399 --> 00:28:33,000
+Sorry.
+
+172
+00:28:39,220 --> 00:28:44,420
+I define the inner class as public this time.
+
+173
+00:28:47,140 --> 00:28:55,539
+The rest of the code is the same as the previous one related to that inner class.
+
+174
+00:28:56,900 --> 00:29:04,420
+Then in another class which is called testInnerClassDirectly.
+
+175
+00:29:04,420 --> 00:29:05,940
+Let's enlarge this one.
+
+176
+00:29:09,875 --> 00:29:10,875
+For there.
+
+177
+00:29:10,875 --> 00:29:18,875
+In this one, we have a mandatory import here.
+
+178
+00:29:18,875 --> 00:29:35,851
+Although this test class directly is written the same package as the person class, I had to manually import the inner class of the outer class.
+
+179
+00:29:36,115 --> 00:29:51,695
+Why? Because remember that when there is a package within a package, importing the package by using the star notation does not automatically import the sub-packages.
+
+180
+00:29:52,076 --> 00:29:54,076
+This is a similar logic.
+
+181
+00:29:55,076 --> 00:29:59,975
+Therefore, if we need to access a public...
+
+182
+00:30:00,000 --> 00:30:07,299
+class, of some class, then we have to issue an import statement like this.
+
+183
+00:30:09,759 --> 00:30:10,099
+Okay.
+
+184
+00:30:10,700 --> 00:30:18,059
+In the main method, I can now define a personal object.
+
+185
+00:30:19,859 --> 00:30:27,999
+I don't have to write, for example, okay, this is the person object.
+
+186
+00:30:28,419 --> 00:30:37,799
+I will use this person object to have some employee instances bind to it.
+
+187
+00:30:37,799 --> 00:30:42,799
+So I again initialize the person.
+
+188
+00:30:44,596 --> 00:30:48,456
+And then how can I define an employee object?
+
+189
+00:30:49,176 --> 00:30:57,696
+Again, by relating it with a personal object and calling the inner class constructor.
+
+190
+00:30:59,836 --> 00:31:01,656
+The rest is the same.
+
+191
+00:31:03,976 --> 00:31:09,416
+Now let's first run this and compare it with its previous version.
+
+192
+00:31:16,531 --> 00:31:18,531
+Now what is this?
+
+193
+00:31:18,531 --> 00:31:22,531
+Ah, I have just written that one, okay.
+
+194
+00:31:24,531 --> 00:31:30,531
+And in here, I have the inner class as public.
+
+195
+00:31:30,531 --> 00:31:35,531
+Let me compare those two versions of the person class.
+
+196
+00:31:35,531 --> 00:31:38,531
+Compare it to each other.
+
+197
+00:31:41,076 --> 00:31:45,776
+Ok, I have an extra warning here. The class is now public.
+
+198
+00:31:47,395 --> 00:31:50,855
+The constructor is actually the same.
+
+199
+00:31:52,516 --> 00:31:54,895
+However, there is only a white space here.
+
+200
+00:31:55,996 --> 00:31:58,556
+Ok, let me do this.
+
+201
+00:31:59,675 --> 00:32:00,615
+It's interesting.
+
+202
+00:32:01,556 --> 00:32:09,455
+In comparison, Eclipse highlights the white spaces too, although it doesn't mean anything to the compilers.
+
+203
+00:32:09,455 --> 00:32:14,596
+And now in this new version, I have removed that inner class.
+
+204
+00:32:14,995 --> 00:32:23,975
+So let's compare it with the other class and see the differences if there are any.
+
+205
+00:32:32,372 --> 00:32:36,752
+And now, let's compare this and this.
+
+206
+00:32:39,092 --> 00:32:42,112
+Let's compare it with each other.
+
+207
+00:32:45,875 --> 00:32:47,875
+Let me enlarge it first.
+
+208
+00:32:47,875 --> 00:32:50,875
+And then check out the main method.
+
+209
+00:32:50,875 --> 00:32:51,875
+Ah.
+
+210
+00:32:53,875 --> 00:32:55,875
+Okay. Check the main method.
+
+211
+00:32:56,875 --> 00:32:58,875
+They are the same.
+
+212
+00:32:58,875 --> 00:33:02,875
+Only the Turkish characters are different.
+
+213
+00:33:02,875 --> 00:33:05,875
+They are all the same.
+
+214
+00:33:05,875 --> 00:33:10,875
+And there is manual coding of the two sitting method here.
+
+215
+00:33:10,875 --> 00:33:12,875
+It is not necessary.
+
+216
+00:33:12,912 --> 00:33:22,072
+There is nothing wrong if I remove that. So, actually, those main methods are logically the same.
+
+217
+00:33:29,140 --> 00:33:31,839
+Let me collect those.
+
+218
+00:33:37,715 --> 00:33:41,915
+Evet, [öğrenci] abimizde de kırgınım ama neyse.
+
+219
+00:33:51,604 --> 00:33:53,604
+Evet, ok.
+
+220
+00:34:02,163 --> 00:34:05,163
+As you see, there are no problems.
+
+221
+00:34:05,163 --> 00:34:07,163
+It's the same.
+
+222
+00:34:07,163 --> 00:34:15,163
+But however, what if that public class, public inner class were private?
+
+223
+00:34:15,163 --> 00:34:17,644
+Then now...
+
+224
+00:34:17,876 --> 00:34:26,796
+Every object reference to this employee type gives me a compile error.
+
+225
+00:34:26,796 --> 00:34:34,076
+Therefore, it should be published in order to be able to do something like that.
+
+226
+00:34:37,492 --> 00:34:37,851
+Ok.
+
+227
+00:34:41,684 --> 00:34:42,644
+In this version,
+
+228
+00:34:48,755 --> 00:35:05,195
+The inner class is used as a type of its own. However, we always have to associate it with object reference from the type of the outer class, in this case first.
+
+229
+00:35:08,628 --> 00:35:17,748
+Now, let's use that employee so that we can have that employee to do something.
+
+230
+00:35:18,828 --> 00:35:19,708
+How can we do that?
+
+231
+00:35:20,668 --> 00:35:28,887
+How can we define people that are unemployed and people that are employed?
+
+232
+00:35:30,108 --> 00:35:31,948
+In order to be able to do that,
+
+233
+00:35:32,755 --> 00:35:42,376
+I will have a member field from the type of the inner class within the outer class. Let's see it now.
+
+234
+00:35:48,307 --> 00:36:14,387
+Ah, what else? You know, if you don't want to make such an import statement, then instead of writing person in every instance here, sorry, instead of writing employee in every instance here, you should write person.employee everywhere. This is a no longer thing to do, so let's just import that, okay?
+
+235
+00:36:18,420 --> 00:36:38,780
+Okay. Now, we will learn how to access a private inner class from any other class. You cannot do it directly. You can do it indirectly via public methods of the outer class.
+
+236
+00:36:40,211 --> 00:36:47,431
+It's very meaningful if you think in terms of regular objects and classes.
+
+237
+00:36:48,271 --> 00:37:01,992
+You cannot access the private member fields of any object, but if you write getter and or settle methods, public getter and settle methods to that private member field, you can access it.
+
+238
+00:37:02,387 --> 00:37:11,807
+This is more or less the same when it comes to the inner class elements, inner class member fields.
+
+239
+00:37:14,288 --> 00:37:14,887
+Okay.
+
+240
+00:37:15,827 --> 00:37:21,327
+We have the person class, outer person class, and we have the private inner class.
+
+241
+00:37:22,068 --> 00:37:26,887
+Private inner class employee is just the same as the previous one.
+
+242
+00:37:27,288 --> 00:37:31,168
+However, now the source code of the class person changes.
+
+243
+00:37:32,347 --> 00:37:42,748
+I have added a member field, memberships are always private members, of the type of the inner class, having the name employee.
+
+244
+00:37:44,083 --> 00:37:51,443
+Now, how can we make a person to get to work, be an employee also?
+
+245
+00:37:52,203 --> 00:37:58,503
+For this purpose, I have coded a method that I have named as enlist.
+
+246
+00:37:59,163 --> 00:38:03,804
+Enlist means işe almak, asker almak gibi şeyler içinde kullanılıyor.
+
+247
+00:38:03,804 --> 00:38:09,223
+Enlist to join to a company or army, for example.
+
+248
+00:38:09,715 --> 00:38:12,056
+And with a salary, of course.
+
+249
+00:38:13,215 --> 00:38:23,175
+Between this method, I use the constructor and initialize my member field of the type inner class.
+
+250
+00:38:24,175 --> 00:38:28,376
+Call it constructor having a salary.
+
+251
+00:38:29,652 --> 00:38:35,652
+And when you check the source code of this start employee class, it's very straightforward.
+
+252
+00:38:36,412 --> 00:38:41,372
+There is nothing interesting here, all regular members.
+
+253
+00:38:44,731 --> 00:38:49,092
+When I enlist a person to be also an employee,
+
+254
+00:38:50,195 --> 00:38:58,635
+What I do is only to initialize the member field of the type inner class.
+
+255
+00:38:59,695 --> 00:39:02,195
+And let's check the string method.
+
+256
+00:39:03,235 --> 00:39:07,315
+First, the name will be added to the introduction string.
+
+257
+00:39:07,315 --> 00:39:16,996
+And if that person is working, which means we have initialized and assigned an employee object.
+
+258
+00:39:17,780 --> 00:39:20,020
+It's employee member field.
+
+259
+00:39:20,820 --> 00:39:24,280
+So if this is assigned, it's not now.
+
+260
+00:39:24,480 --> 00:39:26,800
+But if it's not assigned, then it's now.
+
+261
+00:39:27,180 --> 00:39:32,480
+So I check if the employee member field here is not now.
+
+262
+00:39:32,980 --> 00:39:35,740
+This means that he or she has been enlisted.
+
+263
+00:39:35,740 --> 00:39:44,220
+So I also add the salary of that person as an employee.
+
+264
+00:39:45,364 --> 00:39:52,804
+Okay. So, let's check the main method in order to demonstrate.
+
+265
+00:39:54,963 --> 00:40:05,764
+It is named testInnerClass via outer class because we will be accessing the employee class by using the person class, it's outer class.
+
+266
+00:40:07,764 --> 00:40:08,804
+In the main method,
+
+267
+00:40:09,300 --> 00:40:16,820
+I define an array of the R2 class type.
+
+268
+00:40:18,280 --> 00:40:22,960
+Because now a person can be employed or unemployed.
+
+269
+00:40:26,547 --> 00:40:38,228
+To the beginning of the array, I add a person and I am enlisting that person with this salary.
+
+270
+00:40:39,607 --> 00:40:48,667
+Then I enlist to other person and when I visit them all in the forage loop.
+
+271
+00:40:49,748 --> 00:40:53,967
+The Bintalan method will call the two-pickering method.
+
+272
+00:40:53,967 --> 00:41:01,587
+So, if a person is enlisted, then both name and salary will be listed.
+
+273
+00:41:02,407 --> 00:41:06,127
+Otherwise, his or her only name will be listed.
+
+274
+00:41:08,748 --> 00:41:15,108
+For example, let's demonstrate this 13C.
+
+275
+00:41:16,851 --> 00:41:18,112
+This one.
+
+276
+00:41:21,032 --> 00:41:24,452
+This is the same source code as seen in the slide.
+
+277
+00:41:27,172 --> 00:41:29,211
+And here.
+
+278
+00:41:36,371 --> 00:41:37,771
+Save this and RAM.
+
+279
+00:41:41,396 --> 00:41:47,896
+As you can see, I can access every object's salary too.
+
+280
+00:41:48,896 --> 00:41:56,896
+Now let's, as you know, Memati has died in the latest seasons. Spoiler alert.
+
+281
+00:41:57,896 --> 00:42:02,896
+I guess everyone knows this, so it's not actually a spoiler, I guess.
+
+282
+00:42:03,315 --> 00:42:11,795
+Now, I am not an instinctive remati. Therefore, only his name will be written. Let's test.
+
+283
+00:42:15,284 --> 00:42:27,024
+As you see, Nemati is listed because he's a person, but he isn't, he doesn't have a salary because he is not unlisted.
+
+284
+00:42:31,304 --> 00:42:37,604
+I'm sorry, there's an important message, it can be important, I have to look at it.
+
+285
+00:42:39,903 --> 00:42:41,403
+Okay, no problem.
+
+286
+00:42:45,139 --> 00:42:55,619
+Evet. Şimdi mesaj gelince, erken almak gerekir. Merekir. Problem yok dersimizi. Yaşlar kraladığımız gibi yapabileceğiz.
+
+287
+00:42:59,476 --> 00:43:23,476
+Ok, that's it. In this case, if I can actually define a private inner class and I can open it up to the outer world via some methods of the outer class. This is the most meaningful and useful.
+
+288
+00:43:23,840 --> 00:43:29,039
+thing to do so with an inner class.
+
+289
+00:43:30,679 --> 00:43:35,820
+But what being inner class brings to the class employee?
+
+290
+00:43:36,320 --> 00:43:42,840
+Now, I cannot think of an...
+
+291
+00:43:45,579 --> 00:43:46,579
+...employ...
+
+292
+00:43:46,579 --> 00:43:47,639
+...iştirecek ya.
+
+293
+00:43:49,320 --> 00:43:49,659
+Şöyle.
+
+294
+00:43:50,228 --> 00:44:05,688
+When I compare this design with the regular design of using inheritance, if you define an employee, it will always stay an employee because of inheritance.
+
+295
+00:44:07,148 --> 00:44:12,808
+If I want to make this employee unemployed or retired,
+
+296
+00:44:13,811 --> 00:44:29,231
+I should create a completely new object of type Puzzle or of type B Tile and copy the state information to that new type.
+
+297
+00:44:31,284 --> 00:44:42,724
+If that new type is of the upper class type, then I remove the extra information of the subclass.
+
+298
+00:44:43,384 --> 00:44:56,244
+But if it is the new migrator type is of the type of a subclass, then I copy all the existing information of that.
+
+299
+00:44:56,672 --> 00:44:58,672
+employee class.
+
+300
+00:44:58,672 --> 00:45:03,672
+And nothing else. The rest will stay now.
+
+301
+00:45:04,851 --> 00:45:18,572
+However, when I use inner classes, I can easily have a person to be employed or unemployed just by running this method.
+
+302
+00:45:18,572 --> 00:45:25,072
+Now, how can I unemployed a person? By adding a new method, of course.
+
+303
+00:45:26,211 --> 00:45:27,572
+Let's...
+
+304
+00:45:31,539 --> 00:45:35,299
+Create a new package here.
+
+305
+00:45:36,299 --> 00:45:39,739
+Or let me just copy this package first.
+
+306
+00:45:40,259 --> 00:45:43,539
+We want to change this one.
+
+307
+00:45:44,379 --> 00:45:46,539
+So we want to change this one.
+
+308
+00:45:47,219 --> 00:45:51,779
+And let's rename this to
+
+309
+00:45:53,460 --> 00:45:54,659
+or which J.
+
+310
+00:45:57,139 --> 00:45:58,419
+Okay, continue.
+
+311
+00:45:59,251 --> 00:46:01,012
+Now, close everything.
+
+312
+00:46:02,291 --> 00:46:02,452
+Okay.
+
+313
+00:46:03,672 --> 00:46:15,012
+And here, let's say, public void, resign, for example, or shire.
+
+314
+00:46:17,512 --> 00:46:18,832
+Let's say, Delist.
+
+315
+00:46:18,832 --> 00:46:19,211
+Okay.
+
+316
+00:46:19,412 --> 00:46:20,072
+Let's keep it on.
+
+317
+00:46:20,791 --> 00:46:21,271
+Delist.
+
+318
+00:46:23,507 --> 00:46:27,247
+I don't have to give any parameters here.
+
+319
+00:46:28,027 --> 00:46:35,767
+And in that case, employee equals to now.
+
+320
+00:46:36,907 --> 00:46:40,127
+Let's give a now reference to the membership.
+
+321
+00:46:40,707 --> 00:46:45,747
+Now, this person is not an employee anymore.
+
+322
+00:46:47,787 --> 00:46:50,907
+So let's try it like this.
+
+323
+00:46:53,364 --> 00:47:08,864
+And for example, let's just write star one dot delist and then run this for loop again.
+
+324
+00:47:16,884 --> 00:47:21,263
+As you see, in the first listing, Mehmeti is listed with a salary.
+
+325
+00:47:21,803 --> 00:47:26,143
+But in the second listing, Mehmeti is listed without salary.
+
+326
+00:47:26,803 --> 00:47:31,983
+Therefore, he is not an employee in that second round.
+
+327
+00:47:39,219 --> 00:48:01,960
+All right. What if you need to have a reference to the outer class from the inner class? Let me demonstrate this too. I can do it, but I cannot at the time think of a very useful example.
+
+328
+00:48:02,675 --> 00:48:06,955
+So, I don't have one in the lecture, no?
+
+329
+00:48:08,115 --> 00:48:09,415
+For example,
+
+330
+00:48:14,996 --> 00:48:16,195
+What can I do?
+
+331
+00:48:20,195 --> 00:48:26,195
+Here, let me just write something such as...
+
+332
+00:48:43,347 --> 00:48:53,028
+Let's change the name of a person when that person is enlisted.
+
+333
+00:48:54,908 --> 00:49:08,228
+It's a stupid thing to do so, and I cannot change back from here, but if I wish, for example, name plus equals.
+
+334
+00:49:08,947 --> 00:49:12,027
+Let's add an asterisk to the name, okay?
+
+335
+00:49:17,807 --> 00:49:21,527
+Well, actually, I can directly accessing here.
+
+336
+00:49:21,987 --> 00:49:23,427
+What do I mean?
+
+337
+00:49:25,827 --> 00:49:30,727
+Turn reference to the outer class from the inner class.
+
+338
+00:49:32,007 --> 00:49:32,947
+Ha, ha, ha, ha, ha.
+
+339
+00:49:34,627 --> 00:49:35,347
+Okay.
+
+340
+00:49:35,824 --> 00:49:42,064
+Remember the dispointers, for example, dispointer here.
+
+341
+00:49:43,104 --> 00:50:01,004
+In the construct of class person or in any method of the class person, dispointer shows the method of the object whose method is being whole.
+
+342
+00:50:02,784 --> 00:50:12,784
+Can I also obtain this reference from a method of the in class? If I wish, I can.
+
+343
+00:50:16,284 --> 00:50:19,923
+How can I do this, for example?
+
+344
+00:50:29,300 --> 00:50:47,300
+And here let's just write, need for the, after class, person that, this for example, this reference, I can, for example, I can write something such as,
+
+345
+00:50:57,492 --> 00:51:05,932
+person.hashcode, for example.
+
+346
+00:51:14,260 --> 00:51:15,679
+Let's just
+
+347
+00:51:20,755 --> 00:51:29,855
+Write something such as in the constructor method, the same thing, the same thing.
+
+348
+00:51:36,275 --> 00:51:51,275
+And in order to show everything in detail, let's just use this tool, okay?
+
+349
+00:51:51,275 --> 00:52:01,275
+Now, the three hashcodes will be printed. The first one will be the hashcode of the person instance.
+
+350
+00:52:02,132 --> 00:52:05,672
+The second will be again the H code of the first instance.
+
+351
+00:52:06,251 --> 00:52:11,492
+And the third one will be the H code of the inner class employee instance.
+
+352
+00:52:12,492 --> 00:52:17,172
+So in a class with a main method.
+
+353
+00:52:19,352 --> 00:52:21,012
+You know, class.
+
+354
+00:52:23,332 --> 00:52:25,552
+Test this, for example.
+
+355
+00:52:26,812 --> 00:52:28,132
+It's in a main method.
+
+356
+00:52:30,547 --> 00:52:44,147
+Let's just like the person, you can search to new person.
+
+357
+00:52:44,147 --> 00:52:46,947
+Well, it's not good.
+
+358
+00:52:51,284 --> 00:52:52,744
+Instaq ends.
+
+359
+00:52:54,304 --> 00:52:56,324
+For example, this.
+
+360
+00:52:57,544 --> 00:52:58,644
+Lots will happen.
+
+361
+00:53:04,052 --> 00:53:21,251
+As you see, the first two hash codes are the same because the first one is the hash code method called in this line here, line-seller, in the constructor of the person.
+
+362
+00:53:22,371 --> 00:53:28,771
+And the second thing I did in this test list code is to call the endless method of the person.
+
+363
+00:53:29,364 --> 00:53:33,103
+And this method calls the constructor of the inner class.
+
+364
+00:53:34,203 --> 00:53:35,503
+And we go to the inner class.
+
+365
+00:53:36,303 --> 00:53:43,384
+The first printed hash code is the hash code of the outer class instance.
+
+366
+00:53:44,023 --> 00:53:48,864
+And the final one is the hash code of the inner class instance.
+
+367
+00:53:49,811 --> 00:53:55,392
+The outer class instance and also this instance, those are the same and this is different.
+
+368
+00:53:57,192 --> 00:54:02,452
+I hope I could tell you what I need to do.
+
+369
+00:54:03,291 --> 00:54:04,952
+Yeah, a lot of good things.
+
+370
+00:54:11,987 --> 00:54:36,447
+Peki. Şimdi iç sunuslar bu kadar arkadaşlar. Şimdi matutrading'e başlayabiliriz. Ama bir adem edip başlayalım. 10 dakikada verelim. Bu ademi okuluyor ki 14.55'ten 15.05'e kadar 10 dakika.
+
+371
+01:05:22,036 --> 01:05:24,036
+I'm sorry, I am again two minutes late.
+
+372
+01:05:24,416 --> 01:05:25,056
+I'm going to sorry.
+
+373
+01:05:25,556 --> 01:05:26,336
+Let's continue.
+
+374
+01:05:36,916 --> 01:05:42,016
+Now, we will cover the multi-threading topic briefly.
+
+375
+01:05:43,016 --> 01:05:49,576
+It's a much larger topic than multi-threading is.
+
+376
+01:05:49,576 --> 01:05:52,775
+Actually,
+
+377
+01:05:58,264 --> 01:06:05,264
+Bir sonraki ve ülke ve abroad, múltiçledik programma dersi, birçok çalışma çalışma çalışma.
+
+378
+01:06:21,556 --> 01:06:32,096
+Now, I want to clear out the different terminology, the different terms, which are multitasking, multiple processing, multiple trading.
+
+379
+01:06:34,516 --> 01:06:41,155
+Multitasking is the ability to have more than one program working at the same time.
+
+380
+01:06:42,615 --> 01:06:45,416
+In order to be able to actually do that,
+
+381
+01:06:46,291 --> 01:06:56,891
+A computer must have multiple computing core, which has CPUs, central processing it.
+
+382
+01:06:57,891 --> 01:07:07,192
+Before multiple CPU systems have ever been developed, there was multitasking.
+
+383
+01:07:07,192 --> 01:07:12,092
+How could that be achieved?
+
+384
+01:07:13,619 --> 01:07:20,219
+There are multiple processes. Process means a useful task which is awaiting to be done.
+
+385
+01:07:22,659 --> 01:07:29,219
+For example, let's assume that some you...
+
+386
+01:07:30,804 --> 01:07:34,283
+There's a backup operation, for example, on the files.
+
+387
+01:07:35,243 --> 01:07:43,743
+And although these backup operations are being done, some other tasks can be done in the same computer too.
+
+388
+01:07:44,223 --> 01:07:47,943
+For example, moving the mouse, for example.
+
+389
+01:07:48,763 --> 01:07:52,344
+Or if this is a dump terminal and...
+
+390
+01:07:52,735 --> 01:07:59,096
+There is a mainframe connected to the multiple dump terminals.
+
+391
+01:07:59,735 --> 01:08:05,115
+Other dump terminals, for example, one of them can show the date.
+
+392
+01:08:05,655 --> 01:08:10,695
+The other can open, for example, a management kind of text page, of course.
+
+393
+01:08:11,275 --> 01:08:11,596
+Exactly.
+
+394
+01:08:12,724 --> 01:08:21,304
+Although there is only one processor, how can this mainframe computer do multi-testing?
+
+395
+01:08:21,304 --> 01:08:22,304
+Well, actually...
+
+396
+01:08:23,444 --> 01:08:36,783
+It does a little of task 1, then it switches to task 2, it does a little bit of task 2, then it does a little bit of task 3, etc.
+
+397
+01:08:37,224 --> 01:08:43,364
+And it turns back to task 1 again and does a few of its statements too.
+
+398
+01:08:43,728 --> 01:09:06,347
+Actually, it is only doing one thing at a given instance. However, this switching is too fast. So fast that we normal people think that they are actually running in parallel. It's not the case.
+
+399
+01:09:09,407 --> 01:09:10,380
+However...
+
+400
+01:09:10,676 --> 01:09:22,036
+If the computer system has multiple CPUs, then it can actually do multiple things at the same time.
+
+401
+01:09:23,256 --> 01:09:27,876
+Even if a computer has only one central processing unit.
+
+402
+01:09:29,300 --> 01:09:34,159
+I don't know whether you have taken a microprocessor's course or not.
+
+403
+01:09:34,260 --> 01:09:40,699
+I don't remember the circle, but a central processing unit has its subunits.
+
+404
+01:09:40,699 --> 01:09:49,659
+For example, integer operations, floating point operations, logic operations, etc.
+
+405
+01:09:50,420 --> 01:09:52,492
+And if you...
+
+406
+01:09:53,140 --> 01:09:55,140
+Have a list of statements.
+
+407
+01:09:55,640 --> 01:09:57,940
+Some of them are arithmetic operations.
+
+408
+01:09:58,220 --> 01:10:00,380
+Some of them are floating point instructions.
+
+409
+01:10:00,380 --> 01:10:04,680
+And some of them are logic instructions.
+
+410
+01:10:04,920 --> 01:10:19,180
+Then, as the only single CPU has these three different subunits, it can run those different subunits simultaneously.
+
+411
+01:10:20,243 --> 01:10:44,423
+Therefore, a clever compiler can dissect the unrelated parts of a computer code, and it can distribute those different subtasks to different subunits, therefore, increasing the performance, the runtime performance of the code.
+
+412
+01:10:46,836 --> 01:10:48,836
+Those are some new clever tricks.
+
+413
+01:10:48,836 --> 01:11:00,836
+But nowadays, even a central processing unit on a cellular phone has four calls, at least four calls, for example.
+
+414
+01:11:00,836 --> 01:11:07,836
+So the importance of multi-trading is constantly increasing.
+
+415
+01:11:07,836 --> 01:11:10,836
+It is not decreasing, it is increasing.
+
+416
+01:11:12,851 --> 01:11:17,311
+But there is a catch, as in most cases.
+
+417
+01:11:18,832 --> 01:11:22,572
+Let's assume that you have four cores of CPUs.
+
+418
+01:11:23,531 --> 01:11:30,311
+And you divide a processing job to four parts and you run them in parallel.
+
+419
+01:11:30,311 --> 01:11:39,311
+You don't have four times less computing time because even you...
+
+420
+01:11:39,475 --> 01:11:45,775
+Divide, create some subtasks from the main task.
+
+421
+01:11:46,895 --> 01:11:52,555
+At some points, those subtasks must coordinate with each other.
+
+422
+01:11:54,295 --> 01:11:57,835
+All parallel processing algorithms require to do so.
+
+423
+01:11:59,515 --> 01:12:06,456
+Therefore, if you add a second CPU core, for example,
+
+424
+01:12:07,091 --> 01:12:10,871
+You don't get 100% of increase.
+
+425
+01:12:11,431 --> 01:12:15,631
+You get about 80% increase, for example.
+
+426
+01:12:18,252 --> 01:12:22,211
+And if you add the third core, third CPU,
+
+427
+01:12:23,731 --> 01:12:28,692
+you don't have a three-fourth of increase.
+
+428
+01:12:29,591 --> 01:12:33,211
+You have about 2.5.
+
+429
+01:12:33,684 --> 01:12:37,684
+6 or 7 times of increase in performance.
+
+430
+01:12:38,684 --> 01:12:53,452
+This is why you cannot give 100 calls and have 100 times of acceleration, but you can have, for example, about 7 times of acceleration, which is also great.
+
+431
+01:12:56,659 --> 01:12:59,959
+Yani bu kadar anlatabileceğim arkadaşlar, öyle söyleyeyim.
+
+432
+01:13:01,760 --> 01:13:07,959
+Doğan'ın mat, bunlar benim şoklus mat alanım değil ama temel olarak bunu söyleyebilirim sizlere.
+
+433
+01:13:12,564 --> 01:13:15,684
+What else? I have read the slide now.
+
+434
+01:13:17,604 --> 01:13:28,384
+Creating a process or a new parallel task, which is a thread, it also takes some execution time from the central processing unit as well.
+
+435
+01:13:28,724 --> 01:13:41,784
+Therefore, this is another reason of why you don't get many orders of performance, but you lose some small percentage of that.
+
+436
+01:13:44,703 --> 01:13:54,644
+And the actual things are more complicated than that. I have just given a simplified explanation.
+
+437
+01:13:55,475 --> 01:14:00,055
+Ders okuracağım bu basiteşlerinin kendisi nasıl karışıklıymıştım zaten.
+
+438
+01:14:01,575 --> 01:14:02,296
+Okay.
+
+439
+01:14:03,975 --> 01:14:13,376
+Before anything else, I want to, I need to show you the life cycle of a thread.
+
+440
+01:14:17,076 --> 01:14:40,095
+You can begin with the main method of your program and from there on you can create multiple threads and you can assign some code to those different threads and you can have them run in parallel.
+
+441
+01:14:40,787 --> 01:14:54,807
+You can, the computer system, the virtual machine, can run as many threads parallel as possible as there are available cores in that computer.
+
+442
+01:14:55,387 --> 01:14:59,927
+However, some of the cores will be occupied by doing some other things too.
+
+443
+01:14:59,927 --> 01:15:02,907
+There is an operating system running on that computer.
+
+444
+01:15:03,467 --> 01:15:04,947
+It has a kernel.
+
+445
+01:15:05,227 --> 01:15:08,268
+It has a graphical user interface process.
+
+446
+01:15:08,787 --> 01:15:19,747
+For example, anti-virus process is going on in the backend, arkeplan, in the background.
+
+447
+01:15:21,407 --> 01:15:27,867
+There may be an operating system update process operating in the background.
+
+448
+01:15:28,724 --> 01:15:36,443
+There's also a printer's process going in backwards, in the background.
+
+449
+01:15:37,123 --> 01:15:41,623
+There are maybe some of them are not running constantly, but from time to time,
+
+450
+01:15:42,344 --> 01:15:51,863
+the operating system has the CPU to run some pieces of those tasks.
+
+451
+01:15:53,844 --> 01:15:59,104
+You are not controlling the entire computing system of course with your threads.
+
+452
+01:16:00,123 --> 01:16:02,584
+And now onto the lifecycle of threads.
+
+453
+01:16:03,363 --> 01:16:12,963
+When you initialize a thread by calling its constructor, it is in the new state.
+
+454
+01:16:13,884 --> 01:16:16,484
+It is just ideally waiting.
+
+455
+01:16:17,144 --> 01:16:18,144
+It's not doing anything.
+
+456
+01:16:18,144 --> 01:16:20,144
+If you want...
+
+457
+01:16:20,608 --> 01:16:24,847
+Some code related to this thread to be executed.
+
+458
+01:16:24,847 --> 01:16:31,007
+Then you must start this thread.
+
+459
+01:16:31,847 --> 01:16:35,888
+When you start this thread, it doesn't begin running immediately.
+
+460
+01:16:36,468 --> 01:16:43,448
+It only becomes runnable, which means it is available to be run.
+
+461
+01:16:44,787 --> 01:16:54,647
+What decides which thread or other processes of the operating system to run?
+
+462
+01:16:54,647 --> 01:16:59,287
+It is the scheduler of the host operating system.
+
+463
+01:17:01,007 --> 01:17:07,347
+The host operating system decides what to run when and for how long.
+
+464
+01:17:08,528 --> 01:17:09,007
+Therefore,
+
+465
+01:17:10,644 --> 01:17:21,244
+The threads you start in your Java code does not immediately run, but they become possible to run, available to run, which is called the runnable state.
+
+466
+01:17:21,684 --> 01:17:34,324
+When the scheduler of the operating system takes one of your threads and begins executing it, then your thread is in the running state.
+
+467
+01:17:37,203 --> 01:17:44,243
+No thread runs forever or until its completion.
+
+468
+01:17:47,843 --> 01:17:56,963
+Mostly there is a time slice assigned by the operating system for your thread.
+
+469
+01:17:56,963 --> 01:18:02,163
+So when this time slice expires,
+
+470
+01:18:03,347 --> 01:18:07,247
+The computer starts running off your code.
+
+471
+01:18:07,948 --> 01:18:16,127
+And again, the computer, the scheduler puts your thread into the runnable state.
+
+472
+01:18:16,847 --> 01:18:22,907
+Now it's waiting at the background for his turn again, for its turn again.
+
+473
+01:18:23,847 --> 01:18:30,087
+When its turn comes again, the scheduler takes this thread and it continues to run.
+
+474
+01:18:31,859 --> 01:18:42,079
+Or maybe you can manually use the yield statement, which is being nice to other threads.
+
+475
+01:18:42,639 --> 01:18:52,019
+If you determine somehow that there is synchronization time, for example.
+
+476
+01:18:52,448 --> 01:19:02,007
+According to your algorithm, you can call the yield method if you wish. We will not demonstrate this, but it's possible. Therefore, it's shown.
+
+477
+01:19:03,288 --> 01:19:18,608
+Or while your thread is running, maybe you need to read something from the disk or you need to write something to the disk, which means you need an input-output operation.
+
+478
+01:19:19,475 --> 01:19:25,956
+You know that input output operations are much slower than memory operations.
+
+479
+01:19:27,155 --> 01:19:43,795
+Therefore, while waiting for some bytes from the disk, for example, your thread will be wasting precious calculation time.
+
+480
+01:19:45,524 --> 01:19:58,984
+If your thread needs an I.O. operation, the scheduler issues that I.O. operation, but it puts your thread back to the runnable state again.
+
+481
+01:19:58,984 --> 01:20:07,783
+And at the background, it waits this input or output operation to be completed.
+
+482
+01:20:13,460 --> 01:20:21,559
+Maybe immediately or after some time. We don't know. It depends on the current load of the computer.
+
+483
+01:20:22,920 --> 01:20:36,000
+Takes your thread from the runnable list again and puts it back to the running mode and supplies the result of the input or output operation to your thread.
+
+484
+01:20:36,000 --> 01:20:38,960
+And your thread runs a little bit more.
+
+485
+01:20:40,435 --> 01:20:52,635
+Well, actually, if you need an IO operation to be completed, it doesn't go back to the runnable state.
+
+486
+01:20:52,635 --> 01:20:54,536
+It goes to the blocked state.
+
+487
+01:20:54,835 --> 01:20:55,456
+I'm very sorry.
+
+488
+01:20:55,995 --> 01:20:56,815
+I did it wrong.
+
+489
+01:20:56,935 --> 01:20:58,335
+I mentioned it wrong.
+
+490
+01:20:58,835 --> 01:21:04,935
+When you need an IO operation to be completed, it goes to the blocked state.
+
+491
+01:21:05,555 --> 01:21:12,435
+Until this IO operation is completed, it stays in the block phase.
+
+492
+01:21:12,435 --> 01:21:19,655
+And once operation is complete, it is automatically put back into the runnable state.
+
+493
+01:21:20,275 --> 01:21:25,155
+And when the time comes, schedulers may pick you outside and it continues running again.
+
+494
+01:21:28,307 --> 01:21:43,707
+Other than an input-output operation, maybe your scanner, your algorithm, needs this thread to go to sleeping.
+
+495
+01:21:44,507 --> 01:21:50,707
+Why? You do this trick a lot in computer games.
+
+496
+01:21:51,796 --> 01:21:57,236
+You have a character on screen and you are commanding it with the arrow keys, for example.
+
+497
+01:21:58,896 --> 01:22:14,236
+You need to handle each key press and understand which key is pressed and then you follow the player character in that direction.
+
+498
+01:22:14,236 --> 01:22:15,176
+However,
+
+499
+01:22:15,731 --> 01:22:19,471
+You shouldn't do it too fast or too slow.
+
+500
+01:22:20,791 --> 01:22:24,711
+If you do it too slow, the game becomes unplayable.
+
+501
+01:22:25,611 --> 01:22:27,671
+And if it...
+
+502
+01:22:28,340 --> 01:22:37,119
+This is done too fast, done graphic tiers or some, it doesn't look smoothly running.
+
+503
+01:22:37,600 --> 01:22:38,420
+What should you do?
+
+504
+01:22:38,420 --> 01:22:48,180
+You should put some additional delay when drawing two sequential pictures.
+
+505
+01:22:49,319 --> 01:22:50,880
+But how long to wait?
+
+506
+01:22:53,555 --> 01:22:59,275
+You should keep an accurate time for that purpose.
+
+507
+01:22:59,815 --> 01:23:05,655
+You cannot, for example, do some idle things such as counting to one million.
+
+508
+01:23:05,655 --> 01:23:11,595
+Well, in my computer, my computer is very fast, very slow, for example.
+
+509
+01:23:12,036 --> 01:23:15,595
+So counting up to the 10,000 is enough.
+
+510
+01:23:16,055 --> 01:23:21,255
+But in a faster computer, you should count up to the million, for example.
+
+511
+01:23:21,555 --> 01:23:24,175
+How can you know that?
+
+512
+01:23:25,215 --> 01:23:27,635
+There is no way to know it for sure.
+
+513
+01:23:28,255 --> 01:23:33,075
+That background processes can also flow your computer too.
+
+514
+01:23:33,675 --> 01:23:38,215
+Therefore, you shouldn't do some unnecessary things.
+
+515
+01:23:38,315 --> 01:23:39,655
+You shouldn't do busy waiting.
+
+516
+01:23:39,795 --> 01:23:40,835
+This is called busy waiting.
+
+517
+01:23:40,835 --> 01:23:45,415
+But you should actually wait for a fixed amount of time.
+
+518
+01:23:46,335 --> 01:23:48,395
+The sleep statement does this.
+
+519
+01:23:49,076 --> 01:24:01,755
+It makes your thread wait for as long as the millisecond number you give to the slip method.
+
+520
+01:24:03,675 --> 01:24:13,595
+That slip thread becomes blocked and when the slip time runs out, it again becomes runnable.
+
+521
+01:24:14,068 --> 01:24:17,648
+Then the scheduler will pick it up.
+
+522
+01:24:19,148 --> 01:24:22,028
+And we'll need for a little more too.
+
+523
+01:24:22,515 --> 01:24:31,135
+Or maybe you need to wait some other threads to complete a calculation, for example.
+
+524
+01:24:31,135 --> 01:24:34,075
+Then you call the wait method.
+
+525
+01:24:34,695 --> 01:24:37,655
+Then again this thread becomes blocked.
+
+526
+01:24:38,355 --> 01:24:46,135
+And when the waiting conditions are met, every waiting thread becomes runnable again.
+
+527
+01:24:46,579 --> 01:24:50,799
+And it is run whenever the scheduler seems refitter.
+
+528
+01:24:52,319 --> 01:24:53,420
+Okay, finesse, man starts.
+
+529
+01:24:57,739 --> 01:25:11,559
+In this cycle, in this loop ends when every statement in your thread is completed, then the thread is terminated.
+
+530
+01:25:12,159 --> 01:25:15,159
+If you wish, you can terminate a thread manually through.
+
+531
+01:25:15,939 --> 01:25:18,199
+We'll see some examples.
+
+532
+01:25:18,739 --> 01:25:23,059
+And then your thread becomes a dead thread.
+
+533
+01:25:23,479 --> 01:25:25,299
+It goes into the dead state.
+
+534
+01:25:27,799 --> 01:25:28,859
+One more.
+
+535
+01:25:36,756 --> 01:25:45,096
+I will remind you those state transitions when we make some demonstrations.
+
+536
+01:25:50,260 --> 01:25:56,920
+This is about weighting, weighting. I have talked about much of it.
+
+537
+01:25:58,140 --> 01:26:03,860
+But let me remind you two things.
+
+538
+01:26:03,860 --> 01:26:08,440
+When the threat is sleeping, it is not consuming any system resources.
+
+539
+01:26:08,979 --> 01:26:14,780
+Therefore, it's a good thing for the threat to sleep if necessary.
+
+540
+01:26:16,275 --> 01:26:23,136
+And maybe a thread that is sleeping may not awake.
+
+541
+01:26:23,136 --> 01:26:23,675
+Okay.
+
+542
+01:26:24,315 --> 01:26:33,695
+For some bugs maybe or some kernel processes, unexpected crashes, anything can go wrong.
+
+543
+01:26:34,536 --> 01:26:41,195
+If a sleeping thread cannot awake, then you come up with the interrupt exception.
+
+544
+01:26:42,003 --> 01:26:55,603
+And this is a checked exception. Therefore, we must catch this one. We will demonstrate such exception handling in our examples.
+
+545
+01:26:58,603 --> 01:26:59,564
+Just a moment.
+
+546
+01:27:12,724 --> 01:27:21,444
+Alright, let's continue. Now we will learn how to actually code a thread and run it.
+
+547
+01:27:22,963 --> 01:27:39,203
+First, let's learn what we should do. First, we have to place this code into the run method of a class that implements the runnable interface, which means
+
+548
+01:27:39,764 --> 01:27:45,884
+We will write a class. This class should implement the runnable interface.
+
+549
+01:27:45,884 --> 01:27:52,564
+And the only method defined in that runnable interface is the public void run method.
+
+550
+01:27:54,264 --> 01:28:00,324
+We overwrite the run method with the code that we want to run in parallel.
+
+551
+01:28:01,876 --> 01:28:08,255
+Then in second step, of course, it should be obvious, we create an object of that class.
+
+552
+01:28:10,655 --> 01:28:12,916
+This is the business logic part.
+
+553
+01:28:13,695 --> 01:28:19,036
+And then comes the multi-trading system part.
+
+554
+01:28:21,036 --> 01:28:27,675
+There's a class named runnable in the JavaLang package, I guess.
+
+555
+01:28:29,395 --> 01:28:30,876
+It is called Threat.
+
+556
+01:28:31,755 --> 01:28:47,815
+This Threat class models the background tasks that a virtual machine should do in order to able to interact with the scheduler of the host operating system.
+
+557
+01:28:50,695 --> 01:28:55,415
+So we can use this Threat class as a black box.
+
+558
+01:28:56,467 --> 01:29:00,347
+We don't have to know its inner working details.
+
+559
+01:29:00,988 --> 01:29:10,387
+All we need to know was the state transmission diagram that we have just seen in the previous slide.
+
+560
+01:29:11,208 --> 01:29:11,667
+This one.
+
+561
+01:29:13,387 --> 01:29:17,628
+Other than that, we don't need to know anything else.
+
+562
+01:29:19,327 --> 01:29:21,288
+I'm sorry, I kind of shouldn't say.
+
+563
+01:29:24,020 --> 01:29:25,020
+Arkadaşlar, çöğrenlik.
+
+564
+01:29:25,020 --> 01:29:30,020
+Arkadaşlar, other than that, we don't need to know a lot more.
+
+565
+01:29:30,020 --> 01:29:31,020
+Uh...
+
+566
+01:29:34,771 --> 01:29:43,771
+That thread object expects a runnable object in its constructor.
+
+567
+01:29:44,391 --> 01:29:53,112
+Therefore, we give the object that is created in step two to the class created in step three.
+
+568
+01:29:54,391 --> 01:30:01,911
+Then, we will start the thread by using the start method of the thread class.
+
+569
+01:30:02,612 --> 01:30:14,931
+We shouldn't for the run method of the class we write because in that case it will not run in a multi-treaded fashion. It will run as if it is single-treaded.
+
+570
+01:30:17,072 --> 01:30:22,872
+We should follow these tasks in this exact order.
+
+571
+01:30:24,211 --> 01:30:29,751
+Let me add just one more thing. Create a thread object from the runnable.
+
+572
+01:30:30,771 --> 01:30:35,992
+Ya çok da sözlerdenme gerek yok. Tamam. Uygun durun.
+
+573
+01:30:35,992 --> 01:30:38,992
+Zaten kodu izvarken daha ayrıntılı bir geliştir.
+
+574
+01:30:38,992 --> 01:30:39,992
+Zaten.
+
+575
+01:30:42,551 --> 01:30:50,551
+It is possible to create your own class by invading from the thread class.
+
+576
+01:30:50,551 --> 01:30:52,992
+But it is not...
+
+577
+01:30:52,992 --> 01:30:56,851
+Nasıl deneydi?
+
+578
+01:30:56,948 --> 01:31:01,448
+It is not suggested. Önerildo, it is not suggested.
+
+579
+01:31:01,908 --> 01:31:05,307
+Because you only have one right of inheritance.
+
+580
+01:31:06,168 --> 01:31:07,948
+You cannot use multiple inheritance.
+
+581
+01:31:08,248 --> 01:31:10,368
+We can only use single inheritance.
+
+582
+01:31:11,448 --> 01:31:16,368
+Therefore, if I inherit my class from the threat class,
+
+583
+01:31:16,368 --> 01:31:21,948
+then I couldn't inherit from any other class.
+
+584
+01:31:22,707 --> 01:31:39,667
+However, my business logic may require that I am inheriting from a superclass, so I shouldn't waste my only right by extracting the thread class.
+
+585
+01:31:40,587 --> 01:31:47,487
+Instead of this, implement the runnable interface is a wiser choice.
+
+586
+01:31:48,659 --> 01:31:51,060
+Now, let's make the demonstration.
+
+587
+01:31:53,000 --> 01:31:59,859
+It's a little bit of a nonsense example, but I don't have a better example.
+
+588
+01:32:01,500 --> 01:32:09,760
+Let's quote some few people watching a football match, for example.
+
+589
+01:32:11,220 --> 01:32:15,100
+Every person will count for the team they support.
+
+590
+01:32:15,731 --> 01:32:18,192
+When that person becomes excited.
+
+591
+01:32:19,631 --> 01:32:30,332
+And it is possible for someone to become excited between 0 and 1000 milliseconds.
+
+592
+01:32:32,112 --> 01:32:40,872
+Yani en fazla bir saniye içerisinde ülke rastgele edileceği de heyecanı fezalat edebilecek şimdi.
+
+593
+01:32:42,036 --> 01:32:44,355
+And it will not run indefinitely.
+
+594
+01:32:45,015 --> 01:32:50,095
+Each person becomes exhausted after shouting 10 times.
+
+595
+01:32:51,115 --> 01:32:52,496
+This is the example.
+
+596
+01:32:53,256 --> 01:32:54,336
+Let's examine it.
+
+597
+01:32:55,855 --> 01:33:03,576
+I am giving the source code and where these four steps are coded.
+
+598
+01:33:06,195 --> 01:33:08,376
+This is package 14A.
+
+599
+01:33:09,043 --> 01:33:10,243
+Temizvanı var.
+
+600
+01:33:16,148 --> 01:33:21,268
+Package 14A, I am calling the class soccer fan.
+
+601
+01:33:22,287 --> 01:33:31,347
+You know, British people and Europeans call football, but in the United States, they call soccer.
+
+602
+01:33:32,568 --> 01:33:35,367
+When they say football, they mean American football.
+
+603
+01:33:36,083 --> 01:33:45,983
+And this is from the example, and this example is from the core Java book, and writers of this book are American, so they are calling this the Strucker fan.
+
+604
+01:33:46,823 --> 01:34:03,304
+Okay, step one should, step one is that we must implement the runnable interface in our business logic code, and this is our business logic code, so the class Strucker fan implements the runnable interface.
+
+605
+01:34:04,115 --> 01:34:08,235
+That interface has the public void run method here.
+
+606
+01:34:08,235 --> 01:34:15,895
+And in the body of this run method, I will quote the scenario that I have described to you.
+
+607
+01:34:18,175 --> 01:34:23,536
+Every fan will make 10 shots.
+
+608
+01:34:24,083 --> 01:34:29,583
+ve büyük bir şeyde de bir şeyde de bir şeyde.
+
+609
+01:34:49,684 --> 01:34:51,684
+Ve bir şarkı bir şarkı soruyor.
+
+610
+01:34:53,684 --> 01:34:59,684
+Bir de bir şarkı soruyor.
+
+611
+01:34:59,684 --> 01:35:03,684
+Şarkı soruyor.
+
+612
+01:35:03,684 --> 01:35:12,396
+Bir de bir şarkı soruyor.
+
+613
+01:35:12,532 --> 01:35:17,832
+But another, for example, people supporting Fenola say,
+
+614
+01:35:19,771 --> 01:35:21,952
+Yönkanarya diyecek mesela, bakteri.
+
+615
+01:35:23,172 --> 01:35:24,391
+Değişik şey, aslında iyi bir.
+
+616
+01:35:24,652 --> 01:35:28,212
+Therefore, we have a team name and chart please.
+
+617
+01:35:28,992 --> 01:35:30,952
+There are regulars, members here.
+
+618
+01:35:31,511 --> 01:35:36,532
+Constructors takes this information, team name and chart please.
+
+619
+01:35:36,532 --> 01:35:38,992
+And then let's examine the run method.
+
+620
+01:35:39,408 --> 01:35:44,908
+What do we need to do in parallel, in a multi-threaded fashion?
+
+621
+01:35:45,828 --> 01:35:53,528
+Well, first of all, we should have a random delay time.
+
+622
+01:35:54,007 --> 01:36:04,028
+In order to have a random number, we can use the next int method of the random class.
+
+623
+01:36:04,756 --> 01:36:09,036
+In the Java Util package, we have this random class.
+
+624
+01:36:09,836 --> 01:36:17,896
+First, we need to initialize, define and initialize a random object by using its default constructor.
+
+625
+01:36:18,516 --> 01:36:29,996
+Afterwards, if we want a random integer from zero up to a certain up limit, we can use the next int method of that random object.
+
+626
+01:36:30,612 --> 01:36:35,032
+There are different methods such as next double, next float, etc.
+
+627
+01:36:35,612 --> 01:36:46,351
+If you don't give any parameter, for example, next double gives you from 0.0 to 0.9999.
+
+628
+01:36:47,612 --> 01:36:55,292
+But if you give a parameter, this works as an upper limit to that random number.
+
+629
+01:36:57,108 --> 01:37:08,168
+For step times, this sakura fan will shout with the team name and the freeze.
+
+630
+01:37:09,168 --> 01:37:19,028
+And then that person should wait for a random amount of time up to 1000 milliseconds.
+
+631
+01:37:19,028 --> 01:37:23,988
+In order to do that, in order to do that,
+
+632
+01:37:24,756 --> 01:37:27,516
+We use the sleep method of the thread class.
+
+633
+01:37:28,376 --> 01:37:30,996
+This is a static method.
+
+634
+01:37:31,436 --> 01:37:38,056
+Therefore, we access it directly from the class reference, thread.sleep.
+
+635
+01:37:39,916 --> 01:37:46,336
+And we have taught that a sleeping thread may not get awakened.
+
+636
+01:37:46,556 --> 01:37:50,856
+So we have to catch the interrupted exception.
+
+637
+01:37:51,475 --> 01:37:53,515
+If something goes wrong.
+
+638
+01:37:54,435 --> 01:37:56,355
+That's all for our business logic.
+
+639
+01:37:56,555 --> 01:38:02,575
+Now, how can we use the other steps, initializing and running those objects?
+
+640
+01:38:03,515 --> 01:38:08,355
+And it is in the class match, which has the main method.
+
+641
+01:38:10,595 --> 01:38:17,555
+In the main method, step two is to create an object of our class.
+
+642
+01:38:18,676 --> 01:38:20,676
+created here.
+
+643
+01:38:22,276 --> 01:38:25,236
+New sacrifice instance is being created.
+
+644
+01:38:25,236 --> 01:38:33,316
+And this object is directly given to the constructor of the thread class.
+
+645
+01:38:33,316 --> 01:38:42,436
+Now, and we have a thread reference, thread pointer, that surround
+
+646
+01:38:43,475 --> 01:38:46,796
+BusinessLogic object that we have created.
+
+647
+01:38:47,655 --> 01:38:51,016
+Then, this is step three.
+
+648
+01:38:52,056 --> 01:38:53,195
+This is step three.
+
+649
+01:38:54,336 --> 01:39:02,056
+And then, as step four, we use the start method of the thread object.
+
+650
+01:39:02,756 --> 01:39:04,475
+This is not a static method.
+
+651
+01:39:05,076 --> 01:39:06,395
+This is a regular method.
+
+652
+01:39:07,539 --> 01:39:17,279
+However, we don't need as many thread objects as the number of the business logic objects.
+
+653
+01:39:17,279 --> 01:39:27,260
+We can reuse only one thread pointer here as that constructor call is creating an entirely new object.
+
+654
+01:39:27,779 --> 01:39:34,340
+Therefore, this is the step two for the second one.
+
+655
+01:39:35,507 --> 01:40:00,307
+And this is step three for the second far. And this is the step four for the second far. And we repeat those steps for the third far and the fourth far. And let's check what happens.
+
+656
+01:40:01,427 --> 01:40:04,748
+First, clear the drawings, then go to equities.
+
+657
+01:40:11,123 --> 01:40:12,184
+Şunları bir kapatalım.
+
+658
+01:40:16,404 --> 01:40:27,824
+I should not pick it. Okay, now let's, I will toy with those examples, so let's create a package on it there, for example.
+
+659
+01:40:29,284 --> 01:40:38,084
+And have this snatch and circle fat classes here, control chair, control there.
+
+660
+01:40:39,524 --> 01:40:42,724
+Let's see, circle fat.
+
+661
+01:40:43,444 --> 01:40:51,584
+This is as in the slide, the same as the one in the slide, and match is also the same.
+
+662
+01:40:52,124 --> 01:40:53,884
+Now let's run this match class.
+
+663
+01:40:59,347 --> 01:41:07,728
+You see some chartings are going on in some random intervals and the code has stopped.
+
+664
+01:41:08,787 --> 01:41:09,887
+How many chartings?
+
+665
+01:41:10,527 --> 01:41:17,807
+There are four person and four multiplied by ten, there should be 40 lines.
+
+666
+01:41:17,807 --> 01:41:18,567
+Okay.
+
+667
+01:41:19,367 --> 01:41:24,807
+And when I copy those and...
+
+668
+01:41:25,043 --> 01:41:27,224
+Tasted to load, for example.
+
+669
+01:41:36,467 --> 01:41:40,827
+And the object, you see that there are 40 lines, okay?
+
+670
+01:41:41,387 --> 01:41:47,787
+Every chart is in its own separate line. There are 40 lines, which means there are 40 counts.
+
+671
+01:41:51,367 --> 01:41:56,707
+Biz çok fazla satın alakoyacağız, biz belki bir anda göremiyoruz ama şöyle yaparsak da.
+
+672
+01:41:56,707 --> 01:42:00,007
+Ayrıca zaten yanlış sayması da mümkün değil de yani.
+
+673
+01:42:00,007 --> 01:42:01,608
+Bunu saymıştık.
+
+674
+01:42:02,036 --> 01:42:06,615
+40 adet fezalar burada yer alıyor.
+
+675
+01:42:18,547 --> 01:42:25,487
+Now let's keep a time of how long does it take to run this code.
+
+676
+01:42:35,252 --> 01:42:54,252
+In order to do that, we can use this statement, long, begin for example, equal to system.current time milliseconds.
+
+677
+01:42:56,252 --> 01:43:02,252
+The public static method of the current time milliseconds of the system class.
+
+678
+01:43:03,220 --> 01:43:15,680
+Measures the time until a fixed time in the past, which is January 1st, 1970, if I remember it correctly.
+
+679
+01:43:16,260 --> 01:43:18,980
+Up to this time that statement is run.
+
+680
+01:43:20,079 --> 01:43:23,579
+How many milliseconds has passed since then?
+
+681
+01:43:24,480 --> 01:43:27,180
+First, I take this number.
+
+682
+01:43:28,083 --> 01:43:32,663
+Then I take this number again at the end of my code.
+
+683
+01:43:34,103 --> 01:43:40,443
+And I can write how many milliseconds it took for me to run this code.
+
+684
+01:43:48,787 --> 01:44:05,267
+I could write, for example, polymorphism, plus this amount of milliseconds.
+
+685
+01:44:05,267 --> 01:44:06,107
+Okay.
+
+686
+01:44:08,247 --> 01:44:10,467
+Let's save it and run it again.
+
+687
+01:44:19,923 --> 01:44:31,463
+Well, no. Actually, I can't actually do it because those threads are running separately from the main thread.
+
+688
+01:44:31,463 --> 01:44:41,483
+Therefore, see that all threads have just started in 4 milliseconds and now those threads are running separately.
+
+689
+01:44:42,452 --> 01:44:52,391
+So actually, I cannot do this now, but soon we will learn a way to do so, but not just now, I am sorry.
+
+690
+01:44:52,391 --> 01:45:00,292
+I have taught a little bit earlier. Excuse me. I pardon. Still don't choose.
+
+691
+01:45:03,532 --> 01:45:08,512
+But you can feel that this code is running fast, quite fast.
+
+692
+01:45:09,716 --> 01:45:11,435
+Let's run it again.
+
+693
+01:45:14,516 --> 01:45:18,176
+You see, the printouts are quite fast.
+
+694
+01:45:20,036 --> 01:45:26,996
+Now let's see what happens if we do not use start but use the run method.
+
+695
+01:45:28,435 --> 01:45:31,956
+Control J, Control V, March Everages.
+
+696
+01:45:32,884 --> 01:45:42,804
+We are not using the start method, but we are using the run method, for example.
+
+697
+01:45:45,604 --> 01:45:55,884
+Either the run method of the trade, or, for example, I could write something such as,
+
+698
+01:45:55,884 --> 01:45:58,963
+Öncü beligden de, ondan sonsun gösterim.
+
+699
+01:45:59,380 --> 01:46:02,660
+I am replacing start with the round.
+
+700
+01:46:05,220 --> 01:46:14,000
+So that in this time, they will not be run multi-treadily, but they will be run synchronized.
+
+701
+01:46:14,000 --> 01:46:14,720
+Let's see.
+
+702
+01:46:16,404 --> 01:46:22,904
+You know, the slowness and first, the first fan has began and end.
+
+703
+01:46:23,123 --> 01:46:24,904
+Now the second fan is shouting.
+
+704
+01:46:25,344 --> 01:46:27,024
+Now the third fan is shouting.
+
+705
+01:46:27,644 --> 01:46:33,244
+And soon the fourth one will be shouting because they are not running in a multi-traded fashion.
+
+706
+01:46:33,564 --> 01:46:33,663
+Okay.
+
+707
+01:46:34,344 --> 01:46:41,704
+In order to be able to run in a multi-traded fashion, we must, we have to use the start method, not run method.
+
+708
+01:46:42,452 --> 01:46:45,532
+I have taught this in the lecture notes.
+
+709
+01:46:46,811 --> 01:46:53,332
+Or maybe we can do such thing without a compile error, but it's not a good thing to do so.
+
+710
+01:46:53,332 --> 01:47:01,032
+For example, I'm not using a track, but I'm just using new circle sign.
+
+711
+01:47:02,899 --> 01:47:10,479
+That run method, I am using the run method of every object as soon as it is being created.
+
+712
+01:47:18,100 --> 01:47:19,100
+Şöyle gidelim ben.
+
+713
+01:47:21,820 --> 01:47:22,680
+Daha hızlı yapalım.
+
+714
+01:47:41,524 --> 01:47:46,104
+I am not, I shouldn't execute the run methods directly.
+
+715
+01:47:47,043 --> 01:47:50,644
+Again, as you see, this is run in a single-treaded fashion.
+
+716
+01:47:52,484 --> 01:47:54,184
+I am stopping the code.
+
+717
+01:47:54,524 --> 01:48:00,644
+The correct way to do this is by using the...
+
+718
+01:48:01,300 --> 01:48:11,900
+Creating a thread object by supplying a runnable object of our business logic to that thread object.
+
+719
+01:48:12,120 --> 01:48:14,960
+And then we should run the start method of the thread.
+
+720
+01:48:15,320 --> 01:48:16,220
+This do not forget.
+
+721
+01:48:24,020 --> 01:48:36,240
+That's it. I will tell you one more trick. For example, this is a soccer fan, but maybe there can be a referee too, for example.
+
+722
+01:48:37,040 --> 01:48:46,020
+Or some person who is not very excited in the sport, but that person should remind the fans to be...
+
+723
+01:48:46,144 --> 01:48:48,164
+Cool down a little bit.
+
+724
+01:48:48,524 --> 01:48:48,664
+Okay.
+
+725
+01:48:49,184 --> 01:48:56,704
+So, if I wish, I can create another runnable class.
+
+726
+01:48:57,644 --> 01:49:01,624
+Let's name this as Referee, for example.
+
+727
+01:49:03,684 --> 01:49:08,524
+It again implements the runnable interface.
+
+728
+01:49:09,064 --> 01:49:11,744
+Steps and delays should be the same.
+
+729
+01:49:12,164 --> 01:49:13,868
+I'm not changing, but...
+
+730
+01:49:13,908 --> 01:49:18,448
+It will just have a chart list, for example.
+
+731
+01:49:20,108 --> 01:49:23,888
+So I remove the other parameters.
+
+732
+01:49:26,888 --> 01:49:31,588
+I will just say something, okay?
+
+733
+01:49:32,948 --> 01:49:34,188
+This is it.
+
+734
+01:49:35,248 --> 01:49:38,188
+And then, to do match, I can also...
+
+735
+01:49:39,796 --> 01:49:46,616
+In the same fashion as the sacrifice, I can create a reflux.
+
+736
+01:49:46,616 --> 01:49:57,816
+And reflux, let's say, take it easy people.
+
+737
+01:49:58,816 --> 01:50:00,256
+For example.
+
+738
+01:50:03,256 --> 01:50:06,276
+And let's run this match.
+
+739
+01:50:11,507 --> 01:50:18,627
+Okay, now you see some, you know, time to time, you can see the ticket is the people's statement.
+
+740
+01:50:19,347 --> 01:50:25,067
+Now, another important thing.
+
+741
+01:50:29,363 --> 01:50:38,803
+There is absolutely no guarantee of the order of the threads to begin running.
+
+742
+01:50:39,403 --> 01:50:47,243
+Remember that every thread begins its life in a runnable state, not running state.
+
+743
+01:50:47,243 --> 01:50:53,123
+And the schedule of the operating system will select one thread.
+
+744
+01:50:54,083 --> 01:50:54,683
+Therefore,
+
+745
+01:50:55,380 --> 01:51:13,520
+The order of creating those different threads, we are creating these threads in this order, but the actual running order is not the same as the order we call this.
+
+746
+01:51:23,028 --> 01:51:25,228
+line in our code.
+
+747
+01:51:26,148 --> 01:51:27,307
+It began first.
+
+748
+01:51:28,368 --> 01:51:35,108
+And remember that first the object prints out, then it waits.
+
+749
+01:51:35,807 --> 01:51:38,467
+It doesn't begin its life by waiting.
+
+750
+01:51:38,847 --> 01:51:42,887
+It begins, it doesn't begin running by waiting.
+
+751
+01:51:42,887 --> 01:51:45,288
+It begins running by shouting.
+
+752
+01:51:45,708 --> 01:51:48,328
+Therefore, therefore.
+
+753
+01:51:49,524 --> 01:51:58,764
+See that the third created object is selected to run first.
+
+754
+01:51:59,944 --> 01:52:00,043
+Okay.
+
+755
+01:52:00,944 --> 01:52:03,944
+And then let's copy the first lines.
+
+756
+01:52:10,707 --> 01:52:13,307
+And then, let's run this again.
+
+757
+01:52:17,876 --> 01:52:20,775
+Now, first the referee has begun.
+
+758
+01:52:22,456 --> 01:52:28,975
+Let's copy the first lines in another, for example, text editor.
+
+759
+01:52:38,131 --> 01:52:42,431
+See, the order is different. Let's run again.
+
+760
+01:52:52,020 --> 01:52:53,480
+Take the first lives.
+
+761
+01:52:59,859 --> 01:53:00,920
+Evet, let's start this.
+
+762
+01:53:05,171 --> 01:53:08,271
+Let's minimize everything.
+
+763
+01:53:09,311 --> 01:53:10,811
+I am not saying this one.
+
+764
+01:53:11,292 --> 01:53:12,591
+Let's minimize everything.
+
+765
+01:53:19,444 --> 01:53:33,444
+See that each time the actual running order is different than the order of my definition of the form.
+
+766
+01:53:34,707 --> 01:53:42,567
+Maybe in one run it will be the same as my coding order, but it's only one instance.
+
+767
+01:53:43,167 --> 01:53:47,707
+There will be many other more instances that the order is different.
+
+768
+01:53:48,687 --> 01:53:57,987
+Why? I again tell you because the threads don't begin running immediately.
+
+769
+01:53:58,547 --> 01:54:07,307
+They begin waiting in a queue, then the scheduler runs, whichever threat it seems fit.
+
+770
+01:54:07,307 --> 01:54:08,307
+Okay.
+
+771
+01:54:08,307 --> 01:54:10,307
+Of the case negative.
+
+772
+01:54:10,307 --> 01:54:12,307
+Okay.
+
+773
+01:54:13,716 --> 01:54:26,356
+And the rest is after five statements, because there are five different threats in that case, including the referee.
+
+774
+01:54:26,916 --> 01:54:34,896
+After the first five shots, the rest will be completely random, because sleeping time is completely random.
+
+775
+01:54:39,252 --> 01:54:49,832
+Even sleeping times were equal, then the scheduler will introduce another layer of randomness.
+
+776
+01:54:51,347 --> 01:54:59,887
+dedik ya keyfine göre seçiyor, bekleme süreleri aynı olsaydı bile, hepsini aynı süre bekletseydim bile çalışma sınavı farklı olabilirdi.
+
+777
+01:54:59,887 --> 01:55:07,408
+Bir seferinde başka bir tanesini seçebilecekti çünkü. Bu konuda bir çalışma sınavının garanti yok kesinlikle.
+
+778
+01:55:07,847 --> 01:55:11,188
+Martitale problemleri düşünürken mutlaka bu kafanızı tutmuyorsunuz.
+
+779
+01:55:11,628 --> 01:55:18,988
+You should always remember that you can make no assumptions on the execution order.
+
+780
+01:55:19,347 --> 01:55:20,128
+Of the track.
+
+781
+01:55:21,488 --> 01:55:23,887
+You have no control of it.
+
+782
+01:55:25,608 --> 01:55:29,467
+Other than that, you can use some sleep, weights, etc.
+
+783
+01:55:29,608 --> 01:55:36,708
+But other than that, you don't have any guarantees.
+
+784
+01:55:37,688 --> 01:55:42,528
+Even you use the sleep, etc., you don't have 100% guarantee.
+
+785
+01:55:43,168 --> 01:55:45,948
+You don't have 100% control.
+
+786
+01:55:46,707 --> 01:55:53,247
+This is why joining and waiting for other threads is necessary.
+
+787
+01:55:55,867 --> 01:56:02,527
+Peki, soru var mı arkadaşlar? Şu an anlattığım bu master's thread çalışmak ile ilgili.
+
+788
+01:56:08,595 --> 01:56:32,275
+Yoksa arayı hak edecek. Aradan sonra thread bunları göreceğiz. Ondan sonra thread synchronization, race condition, onları göreceğiz. Bugün hepsi biter ama bilmiyorum. Belki biter. Bitmese de dert değil. Hastaya bir dersimiz daha var. Problem yok. Şimdi on dakikalarımızı verelim.
+
+789
+01:56:32,756 --> 01:56:35,396
+Yani tamamen kapatmayalım dersi.
+
+790
+01:56:35,396 --> 01:56:39,356
+Olur mu olmaz. Belki bir aksesik olarak değerli Allah korusunlar. Neyse.
+
+791
+01:56:39,356 --> 01:56:42,356
+10 dakikalarımızı verelim.
+
+792
+01:56:42,356 --> 01:56:46,156
+Pardon çok mutluyum. Az gittim.
+
+793
+01:56:46,156 --> 01:56:49,756
+Evet şu noktadan itibaren. 10 dakikalarımızı verelim.
+
+794
+01:56:49,756 --> 01:56:54,556
+Saat 16.00 diyelim.
+
+795
+01:56:54,556 --> 01:56:58,156
+16.00 ile...
+
+796
+01:56:58,612 --> 01:57:00,731
+16-10 arasında.
+
+797
+01:57:01,212 --> 01:57:01,832
+Allah'a kal.
+
+798
+02:10:00,000 --> 02:10:04,399
+Ok, people. Let's begin our final session.
+
+799
+02:10:09,811 --> 02:10:16,231
+And we'll continue by learning about thread pools.
+
+800
+02:10:18,131 --> 02:10:20,671
+Let me go to the demonstration mode.
+
+801
+02:10:22,351 --> 02:10:22,611
+Okay.
+
+802
+02:10:24,291 --> 02:10:29,871
+Our previous examples had four or five tasks running.
+
+803
+02:10:31,811 --> 02:10:32,351
+However,
+
+804
+02:10:32,724 --> 02:10:44,584
+The real power of mass trading is running a lot of more private tasks.
+
+805
+02:10:51,347 --> 02:11:12,828
+In terms of hundreds of nouns, if you are making a complex and hard scientific or engineering calculation, you may want as many threads as possible that your computer can handle.
+
+806
+02:11:12,828 --> 02:11:15,828
+However,
+
+807
+02:11:16,564 --> 02:11:22,444
+Creating a new thread has also its overhead.
+
+808
+02:11:23,444 --> 02:11:32,864
+It brings additional load to the processor, even if this processor has multiple cores.
+
+809
+02:11:36,275 --> 02:11:45,695
+And sooner or later, you will outrun the number of the available cores and threads.
+
+810
+02:11:50,096 --> 02:12:01,115
+Therefore, you need to, you want to decrease that additional overhead that comes with each thread.
+
+811
+02:12:03,572 --> 02:12:12,931
+If you want to execute a large number of tasks or threads, it's better to use a thread pool instead.
+
+812
+02:12:14,036 --> 02:12:26,856
+Java gives us the executor interface, the executor service interface, and executors class for this purpose.
+
+813
+02:12:26,856 --> 02:12:31,776
+They are all in the JavaUtelConcurrent package.
+
+814
+02:12:32,436 --> 02:12:36,735
+After importing this package, we can use those types.
+
+815
+02:12:44,148 --> 02:12:47,908
+The class that we will use is named executors.
+
+816
+02:12:48,408 --> 02:12:55,568
+It implements the executor service interface and this inherits from the executor interface.
+
+817
+02:12:56,148 --> 02:13:02,568
+The execute method of the executor interface accepts a runable object.
+
+818
+02:13:03,060 --> 02:13:07,860
+And it is similar to the run method of the thread class.
+
+819
+02:13:07,860 --> 02:13:27,740
+But now instead of creating different thread objects yourself, you just give vulnerable objects to the pool and the executors class handles the rest.
+
+820
+02:13:29,300 --> 02:13:37,860
+And the executor interface has the shutdown, shutdown now, is shutdown and is terminated method.
+
+821
+02:13:42,260 --> 02:13:51,940
+The shutdown method sends the pool a signal that you want this pool to be closed.
+
+822
+02:13:52,680 --> 02:13:55,240
+However, it isn't closed immediately.
+
+823
+02:13:56,659 --> 02:14:09,079
+It closes after every task that is given to it is finished, then the pool is closed.
+
+824
+02:14:10,179 --> 02:14:19,259
+However, if you really want this pool to be shut down immediately, then you have the shutdown now method.
+
+825
+02:14:20,051 --> 02:14:38,631
+It closes the pool immediately and the uncompleted tasks is returned in a generic list containing these runnable objects that haven't finished their tasks yet.
+
+826
+02:14:40,115 --> 02:14:51,096
+And if you want to check whether a pool has been received a signal of shutdown, you can use the isShutdown method.
+
+827
+02:14:51,096 --> 02:14:53,096
+If the shutdown...
+
+828
+02:14:54,739 --> 02:14:56,680
+So it has been previously called.
+
+829
+02:14:57,220 --> 02:14:58,819
+This method returns true.
+
+830
+02:14:59,239 --> 02:15:01,180
+Otherwise, it returns false.
+
+831
+02:15:01,760 --> 02:15:06,980
+And this terminated method checks whether actually this pool has been closed or not.
+
+832
+02:15:06,980 --> 02:15:11,420
+If it is actually closed at this moment, it will return true.
+
+833
+02:15:11,840 --> 02:15:13,880
+Otherwise, it will return false.
+
+834
+02:15:14,899 --> 02:15:18,980
+And we have two basic different types of red pools.
+
+835
+02:15:20,423 --> 02:15:24,423
+Bir de bir şarkı soruyor.
+
+836
+02:15:19,636 --> 02:15:39,276
+Bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir
+
+837
+02:15:39,636 --> 02:15:43,116
+The executor service interface is the shutdown method.
+
+838
+02:15:43,276 --> 02:15:49,556
+Okay, it shuts down the executor, the pool, but it allows the task currently in the pool, completed.
+
+839
+02:15:51,216 --> 02:15:53,996
+And new threads are not accepted to the pool.
+
+840
+02:15:54,096 --> 02:15:57,996
+Now, that's an important detail that I didn't tell you previously.
+
+841
+02:15:59,056 --> 02:16:01,456
+So, it's good to remind you this.
+
+842
+02:16:02,131 --> 02:16:08,491
+We should use this method for a safe shutdown, for a safe ending of our code.
+
+843
+02:16:13,043 --> 02:16:14,583
+Yes, unclamaganddy searches.
+
+844
+02:16:14,963 --> 02:16:15,064
+Okay.
+
+845
+02:16:15,543 --> 02:16:20,564
+But if you wish, if you want to shut down immediately, we use the shutdown now method.
+
+846
+02:16:20,744 --> 02:16:24,503
+It stops the unfinished threads and returns them in a list.
+
+847
+02:16:24,984 --> 02:16:38,263
+So that maybe we can execute them in another pool or we need actually a turnoff of the computer so we can serialize them to this and then later we can run the rest.
+
+848
+02:16:38,263 --> 02:16:40,484
+If you wish, for example.
+
+849
+02:16:41,139 --> 02:16:46,699
+And it's shut down and it's terminated methods as they have told you.
+
+850
+02:16:49,919 --> 02:16:51,059
+Okay, roll over.
+
+851
+02:16:52,500 --> 02:16:57,719
+I thought that we should execute the shutdown method.
+
+852
+02:16:58,260 --> 02:17:06,080
+When we create a pool and give tasks to it, after that, we must use the shutdown method.
+
+853
+02:17:06,500 --> 02:17:12,159
+Otherwise, even though these threads are completed, the pool stays active.
+
+854
+02:17:13,159 --> 02:17:20,840
+Therefore, after we add those threads to our pool, we will use the shutdown method.
+
+855
+02:17:23,504 --> 02:17:25,704
+The pool is actually terminated.
+
+856
+02:17:26,443 --> 02:17:30,783
+For this purpose, we can use this terminated method in a while.
+
+857
+02:17:30,783 --> 02:17:37,344
+We can wait until this pool is actually terminated.
+
+858
+02:17:42,195 --> 02:17:48,815
+Okay. The executor method is similar to the run method of the runable.
+
+859
+02:17:49,620 --> 02:18:15,260
+And we have two different type of pools. One is reuses a fixed number of threads and the other one creates a dynamic pool. It can add new threads as needed. But if previously used threads are finished and become available, it reuses those threads.
+
+860
+02:18:18,868 --> 02:18:22,988
+So, let's modify our example to be run in a pool.
+
+861
+02:18:23,968 --> 02:18:27,427
+We will not change the source code of the saccharine class.
+
+862
+02:18:27,427 --> 02:18:32,528
+This is a good thing because we are not changing the business logic.
+
+863
+02:18:32,888 --> 02:18:39,128
+We are only changing the underlying thread running infrastructure.
+
+864
+02:18:40,468 --> 02:18:40,907
+Therefore,
+
+865
+02:18:44,211 --> 02:18:51,531
+These sacrafan classes, which mean our business logic, does not need to be changed.
+
+866
+02:18:51,531 --> 02:18:54,291
+We will only change the main method.
+
+867
+02:18:55,311 --> 02:18:58,711
+We will not change the sacrafan class.
+
+868
+02:18:59,291 --> 02:19:08,171
+And we will make some experiments with different pool sizes, fixed pool sizes and the paced pool.
+
+869
+02:19:09,291 --> 02:19:09,871
+Let's begin.
+
+870
+02:19:13,907 --> 02:19:17,507
+So, our main code will look like this.
+
+871
+02:19:21,203 --> 02:19:30,904
+It doesn't have any high-class, so let's look at them in the eclipse.
+
+872
+02:19:32,484 --> 02:19:33,984
+Burada şuna da bakıyorum da.
+
+873
+02:19:33,984 --> 02:19:36,804
+On da hakka bakacağız, et cetera.
+
+874
+02:19:36,804 --> 02:19:42,703
+And this is 14A.
+
+875
+02:19:44,804 --> 02:19:45,684
+Okay.
+
+876
+02:19:46,684 --> 02:19:47,004
+Now,
+
+877
+02:19:48,724 --> 02:19:55,524
+So far, the name is Blowsing for the value. Match with pool. Okay. Match with pool.
+
+878
+02:19:59,283 --> 02:20:13,524
+This one. Okay. Okay, now I can measure for the execution time. And let's copy this.
+
+879
+02:20:15,507 --> 02:20:19,668
+Paste it to our package.
+
+880
+02:20:22,268 --> 02:20:25,347
+Close all and check this.
+
+881
+02:20:27,188 --> 02:20:34,788
+Now first, the commands are the unnecessary lines.
+
+882
+02:20:40,628 --> 02:20:42,087
+Okay, I guess that's
+
+883
+02:20:49,363 --> 02:20:52,304
+Hmm, okey, şartlarla kadar. O kadar şey etmeyelim.
+
+884
+02:20:58,772 --> 02:21:01,072
+Okay, let's see what happens.
+
+885
+02:21:06,324 --> 02:21:11,824
+Now, this is a cache thread pool, therefore we don't have to manually manage anything.
+
+886
+02:21:14,824 --> 02:21:21,324
+It's running at the same pace, the same speed as the previous ones.
+
+887
+02:21:21,824 --> 02:21:25,324
+But the first line is shutdown complete.
+
+888
+02:21:25,324 --> 02:21:29,324
+Ah, şimdi komment edecektim, ya da elke saçmalamış. Pardon.
+
+889
+02:21:29,824 --> 02:21:31,324
+Tekrar çalıştım.
+
+890
+02:21:33,587 --> 02:21:39,387
+Okay, let's see. Stretz-run running again as fast as the previous examples.
+
+891
+02:21:39,387 --> 02:21:52,387
+Now, every soccer fan has finished starting and the program has successfully been terminated.
+
+892
+02:21:52,387 --> 02:21:57,988
+If I also comment this line, the shutdown statement, let's see what happens.
+
+893
+02:22:02,324 --> 02:22:04,543
+Ok, charting began.
+
+894
+02:22:06,443 --> 02:22:08,484
+And now charting has ended.
+
+895
+02:22:09,263 --> 02:22:11,644
+There are no new printed outlines.
+
+896
+02:22:11,984 --> 02:22:14,724
+However, our code is currently running.
+
+897
+02:22:14,943 --> 02:22:18,083
+See that this stop button is still active.
+
+898
+02:22:18,744 --> 02:22:20,664
+Therefore, this code is still running.
+
+899
+02:22:21,024 --> 02:22:21,263
+Why?
+
+900
+02:22:21,724 --> 02:22:24,484
+Because the thread tool is still active.
+
+901
+02:22:25,384 --> 02:22:28,664
+It is awaiting new threads.
+
+902
+02:22:29,139 --> 02:22:32,139
+Bu konuda da bu konuda var.
+
+903
+02:22:32,139 --> 02:22:36,139
+Bu konuda, bu konuda,
+
+904
+02:22:36,139 --> 02:22:40,139
+bu konuda,
+
+905
+02:22:40,139 --> 02:22:41,139
+bir şeyin bir şeyin
+
+906
+02:22:41,139 --> 02:22:44,139
+var.
+
+907
+02:22:44,139 --> 02:22:46,139
+Bu konuda,
+
+908
+02:22:46,139 --> 02:22:56,139
+bu konuda,
+
+909
+02:22:56,531 --> 02:23:06,831
+It doesn't shut down immediately, but it lets all the tasks, all the threads do their job, and it safely closes itself.
+
+910
+02:23:07,731 --> 02:23:08,611
+That's another game.
+
+911
+02:23:16,628 --> 02:23:20,988
+As you see, the program has terminated, finished successfully.
+
+912
+02:23:23,268 --> 02:23:23,587
+Okay.
+
+913
+02:23:25,427 --> 02:23:30,548
+Now, let's try to measure how long it takes to execute all the threads.
+
+914
+02:23:36,371 --> 02:23:38,992
+I am taking the beginning time.
+
+915
+02:23:43,507 --> 02:23:46,707
+And I am having the ending time.
+
+916
+02:23:48,448 --> 02:23:50,647
+And having them printed out.
+
+917
+02:23:53,707 --> 02:23:57,487
+It will not work as I desire, but I want to show you.
+
+918
+02:24:00,915 --> 02:24:07,315
+Ok, shuttings are complete, but there is no time displayed here.
+
+919
+02:24:07,315 --> 02:24:12,915
+However, at the very first line, I have 8 milliseconds.
+
+920
+02:24:12,915 --> 02:24:22,915
+Ok, so what happened after those threads are being added to the pool and the shutdown signal is sent?
+
+921
+02:24:23,283 --> 02:24:29,824
+Then it calculates the ending time. However, at the background, those threads are still running.
+
+922
+02:24:30,984 --> 02:24:39,004
+I want to wait until every thread stops and the pool has been shut down.
+
+923
+02:24:39,903 --> 02:24:49,183
+Therefore, I will use this for loop. I will not do anything in that main method.
+
+924
+02:24:49,716 --> 02:24:51,655
+Until the pool is terminated.
+
+925
+02:24:52,015 --> 02:24:57,876
+If that pool is not terminated, then I will continue waiting.
+
+926
+02:25:00,695 --> 02:25:03,815
+After all of this, the shutdown will be completed.
+
+927
+02:25:05,036 --> 02:25:08,195
+I can add those additional lines.
+
+928
+02:25:08,855 --> 02:25:15,315
+And after that, I will print out the actual duration.
+
+929
+02:25:18,963 --> 02:25:20,644
+Okay, that's the amount now.
+
+930
+02:25:32,051 --> 02:25:47,051
+I have about 6.2 seconds, which means 6,220 seconds. Miniseconds means 6.2 seconds.
+
+931
+02:25:47,051 --> 02:25:55,691
+Okay. And when I look at the printout, first, shutdown initiated is print start.
+
+932
+02:25:56,308 --> 02:26:03,128
+I am waiting in the main method. However, those parallel threads are being run.
+
+933
+02:26:03,988 --> 02:26:08,408
+But I am waiting in the main method until the pool is terminated.
+
+934
+02:26:08,768 --> 02:26:14,448
+After the termination, I display the actual execution type.
+
+935
+02:26:16,188 --> 02:26:17,368
+Let's run it again.
+
+936
+02:26:26,579 --> 02:26:30,579
+Ok, this time it took fast 0.8 seconds.
+
+937
+02:26:30,579 --> 02:26:34,579
+And because the slip times are completely random.
+
+938
+02:26:36,579 --> 02:26:38,579
+Let's learn it again.
+
+939
+02:26:44,564 --> 02:26:53,123
+Okay, 5.2 seconds. About 5 and 6 seconds everything finishes.
+
+940
+02:26:53,123 --> 02:27:10,404
+Now let's try with the X size of thread pool. In order to use it, we have this constructor, fixed thread pool and number of threads.
+
+941
+02:27:13,876 --> 02:27:18,076
+Let's just paste it here.
+
+942
+02:27:29,203 --> 02:27:35,783
+And let's give a number of four here, because we have four tracks running in parallel.
+
+943
+02:27:37,743 --> 02:27:38,783
+Save it and learn it.
+
+944
+02:27:46,739 --> 02:27:50,700
+Okay, it's about 5.58 seconds.
+
+945
+02:27:50,700 --> 02:27:51,899
+And again.
+
+946
+02:27:59,987 --> 02:28:01,047
+5.9.
+
+947
+02:28:01,487 --> 02:28:02,507
+And again.
+
+948
+02:28:10,067 --> 02:28:20,387
+We have approximately the same duration with cached pool and a large enough size of fixed pool.
+
+949
+02:28:21,108 --> 02:28:34,307
+However, if I decrease this number to three, for example, now although I initiate four threads, only three of them will begin running.
+
+950
+02:28:35,028 --> 02:28:44,028
+As soon as RAM OF DAN is finished, the remaining thread will be executed.
+
+951
+02:28:44,028 --> 02:28:51,028
+And of course, it will take us longer to finish this code. Let's do it.
+
+952
+02:28:58,899 --> 02:29:02,279
+And we will examine the output to it.
+
+953
+02:29:07,283 --> 02:29:15,684
+Ok, you see, it's nine seconds. It was five or six seconds and now it's nine seconds. And let's see.
+
+954
+02:29:19,283 --> 02:29:27,684
+Feb is the best thread has been run in the last, in the least orders.
+
+955
+02:29:28,884 --> 02:29:32,459
+And, I'm sorry, I should have checked.
+
+956
+02:29:33,523 --> 02:29:48,903
+In here, we have the exact, not exact, but these first three sets, although within those three, the beginning order is random.
+
+957
+02:29:50,043 --> 02:30:00,000
+The fourth one is put to the end of the queue, of the pool, and after those three...
+
+958
+02:30:00,000 --> 02:30:04,760
+As the last one has been finished, the last one begins its task.
+
+959
+02:30:04,760 --> 02:30:05,760
+Okay.
+
+960
+02:30:05,760 --> 02:30:08,523
+Let's run it again.
+
+961
+02:30:19,956 --> 02:30:22,775
+Now it takes 7.7 seconds.
+
+962
+02:30:23,376 --> 02:30:30,095
+And it's a coincidence that one of the threads has stopped earlier.
+
+963
+02:30:30,095 --> 02:30:35,655
+And finally, the last thread has begun running.
+
+964
+02:30:37,556 --> 02:30:44,175
+And you see that the final seconds are all from the last thread.
+
+965
+02:30:46,227 --> 02:30:48,628
+Let's start again, make it three times.
+
+966
+02:30:57,907 --> 02:31:01,307
+And it's 8.5 seconds.
+
+967
+02:31:02,307 --> 02:31:09,247
+Much slower than enough number of space in the pool.
+
+968
+02:31:09,567 --> 02:31:12,967
+Let's decrease it further.
+
+969
+02:31:13,867 --> 02:31:16,727
+Let's make it two threads at the same time.
+
+970
+02:31:17,727 --> 02:31:18,407
+And let's start.
+
+971
+02:31:28,915 --> 02:31:32,075
+It's still on, yeah, it took about 10 seconds.
+
+972
+02:31:34,315 --> 02:31:34,896
+One again.
+
+973
+02:31:47,540 --> 02:31:50,860
+10 seconds, a little bit more than 10 seconds.
+
+974
+02:31:50,860 --> 02:31:53,980
+And rest for the third and final time.
+
+975
+02:32:06,067 --> 02:32:08,067
+9.2 seconds.
+
+976
+02:32:08,687 --> 02:32:11,067
+First one was about 5 and 6 seconds.
+
+977
+02:32:11,587 --> 02:32:19,027
+With size of 3, we get several 8 seconds front.
+
+978
+02:32:19,027 --> 02:32:26,527
+And with size 3, we have 9 or 10 seconds of execution time.
+
+979
+02:32:27,247 --> 02:32:27,427
+Okay.
+
+980
+02:32:28,608 --> 02:32:29,948
+So that's it.
+
+981
+02:32:30,608 --> 02:32:33,507
+If you have any questions, please ask.
+
+982
+02:32:37,811 --> 02:32:42,472
+Evet, varsa sorumuz. Buyurun arkadaşlar. Üstünden geçelim.
+
+983
+02:32:45,971 --> 02:32:48,572
+Bu sırada kaldığımız yeri de atıyorum.
+
+984
+02:32:53,299 --> 02:33:07,299
+Bu, 235'e kadar.
+
+985
+02:33:07,299 --> 02:33:11,299
+Bunu sonraki dersin başında söyleniyor.
+
+986
+02:33:11,299 --> 02:33:15,299
+Sonunda, sinklonizasyon kals.
+
+987
+02:33:25,299 --> 02:33:25,799
+Güzel.
+
+988
+02:33:32,520 --> 02:33:33,539
+Evet, buyurun.
+
+989
+02:33:33,719 --> 02:33:34,419
+Bağlı sorumuz.
+
+990
+02:33:34,419 --> 02:33:35,239
+Yağlı çalışalım.
+
+991
+02:33:38,360 --> 02:33:41,779
+Çok sonra artık bugün bu kadar deriz yani.
+
+992
+02:33:42,559 --> 02:33:43,539
+Evet, arınca çalıştık.
+
+993
+02:33:49,139 --> 02:34:01,319
+Peki o zaman bugün bu kadar. Haftaya dersimizi bitireceğiz inşallah. O zaman kadar hoşçakalın. Paylaşımı duyduralım. Oturumu sonlandı.

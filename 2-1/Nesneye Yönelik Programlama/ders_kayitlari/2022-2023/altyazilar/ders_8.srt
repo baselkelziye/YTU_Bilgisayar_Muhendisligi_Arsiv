@@ -1,0 +1,4299 @@
+1
+00:00:24,628 --> 00:00:26,628
+Bu şey değil şimdi.
+
+2
+00:00:28,628 --> 00:00:34,628
+Ekran paylaşım, ben şunu azıcık küçüksam, şu işleri, şu küçük ne işlerini yapsam.
+
+3
+00:00:34,628 --> 00:00:36,628
+Olabilir yani.
+
+4
+00:00:38,628 --> 00:00:39,628
+Değil mi?
+
+5
+00:00:40,628 --> 00:00:42,628
+Şöyle bir şey yapıyorum.
+
+6
+00:00:42,628 --> 00:00:44,628
+Doğrusu.
+
+7
+00:00:44,628 --> 00:00:46,628
+Peki.
+
+8
+00:00:46,628 --> 00:00:51,628
+Kran paylaşım falan başladı.
+
+9
+00:11:37,652 --> 00:11:46,592
+Evet arkadaşlar, zaten geleneksel 10 dakika aramızdan sonra 2-15'e yaptık. Artık başlayabiliriz.
+
+10
+00:11:50,740 --> 00:11:53,039
+En son interface ile bitirmiştik.
+
+11
+00:11:53,860 --> 00:11:57,000
+Şimdi diğer konularla devam edeceğiz.
+
+12
+00:11:59,988 --> 00:12:03,548
+Now we will continue with enums.
+
+13
+00:12:04,688 --> 00:12:15,768
+After enums, the following subjects will be more or less more advanced features of the Java language.
+
+14
+00:12:15,768 --> 00:12:26,328
+And the more the features become more advanced, the less common they become among different programming languages.
+
+15
+00:12:27,251 --> 00:12:38,251
+Every object-to-the-art language would have the enum type, but maybe including enum, the details...
+
+16
+00:12:38,836 --> 00:12:40,375
+May become less common.
+
+17
+00:12:40,936 --> 00:12:45,196
+For example, I don't remember the enough implementation in C Sharp.
+
+18
+00:12:46,696 --> 00:12:53,456
+Maybe this code that you are seeing now is not directly portable to C Sharp.
+
+19
+00:12:53,456 --> 00:13:03,816
+But the topics that we have studied so far are more or less common with other similar programming languages.
+
+20
+00:13:04,336 --> 00:13:06,776
+Mostly, I mean the C Sharp programming language.
+
+21
+00:13:06,836 --> 00:13:13,596
+Ok, what about enums?
+
+22
+00:13:15,176 --> 00:13:16,735
+Ok, şuradan başlıyoruz.
+
+23
+00:13:21,596 --> 00:13:24,816
+Ok, beginning with enums.
+
+24
+00:13:27,816 --> 00:13:32,676
+Enum is the shorthand for enumeration.
+
+25
+00:13:35,059 --> 00:13:54,259
+Which means, enum is a special kind of class, yes, class, so that the instances of this class can have only a few number of different states.
+
+26
+00:13:54,259 --> 00:13:55,839
+For example,
+
+27
+00:13:57,395 --> 00:13:59,115
+You are saying pizza.
+
+28
+00:14:00,055 --> 00:14:04,155
+Then there are only four sizes of the pizza.
+
+29
+00:14:04,295 --> 00:14:08,415
+You are saying small, medium, large, and extra large, for example.
+
+30
+00:14:10,611 --> 00:14:19,312
+Maybe you are sending some clocks and the sizes are x small, small, medium, large, x large.
+
+31
+00:14:19,771 --> 00:14:23,731
+Maybe you can have additional x large, x, x large, etc.
+
+32
+00:14:24,192 --> 00:14:28,231
+But, for example, you cannot have a size of t.
+
+33
+00:14:28,991 --> 00:14:32,152
+There is no kind of size like t, for example.
+
+34
+00:14:34,851 --> 00:14:35,971
+If you wish.
+
+35
+00:14:36,384 --> 00:14:44,923
+If you don't know anything about enups, you can encode these sizes in terms of integers, for example, 1, 2, 3, 4, etc.
+
+36
+00:14:45,624 --> 00:14:50,635
+Or with one character, small, medium, large, x, and...
+
+37
+00:14:51,475 --> 00:14:54,696
+If just one character, then x.
+
+38
+00:14:55,655 --> 00:15:03,796
+But, for example, if you have extra small or x, x, large, etc., then char is not enough.
+
+39
+00:15:03,796 --> 00:15:08,016
+Then you will have some strings in code sizes.
+
+40
+00:15:09,115 --> 00:15:13,895
+Or if you are using integers, you can use any number you want.
+
+41
+00:15:14,235 --> 00:15:17,796
+But this is a very error-prone setup because...
+
+42
+00:15:18,292 --> 00:15:34,792
+It becomes very easy to assign a variable to assign a long value such as zero or such as small case m because Java is a case sensitive language.
+
+43
+00:15:34,792 --> 00:15:42,792
+And in terms of size, you are using the character m with capital M, but maybe some...
+
+44
+00:15:42,927 --> 00:15:48,587
+A user or some programmer unknowingly enters small case app.
+
+45
+00:15:49,028 --> 00:15:50,967
+Then this is a bug.
+
+46
+00:15:52,908 --> 00:15:56,427
+How can you define enums in Java?
+
+47
+00:15:57,028 --> 00:16:04,587
+Either you can use primitive, kind of primitive enums or direct object enums.
+
+48
+00:16:06,707 --> 00:16:29,727
+If you wish, if you only use, if you only want to use enum as a type identifier, then you just write, you define an enum, having a name, for example, public enum size, and you give some constant values here. You can write anything you want, but
+
+49
+00:16:30,932 --> 00:16:35,432
+Traditionally, we use all capital cases for enum values.
+
+50
+00:16:36,351 --> 00:16:45,951
+If you define such a value, then, for example, you can type on variable of type size and name it S.
+
+51
+00:16:45,951 --> 00:16:50,632
+Then what values can you give that variable?
+
+52
+00:16:51,132 --> 00:16:56,711
+You first use the enum name, which is, in fact, a class name, dot.
+
+53
+00:16:57,120 --> 00:17:00,819
+One of the possible values, such as medium.
+
+54
+00:17:03,399 --> 00:17:06,559
+But these are all case sensitive.
+
+55
+00:17:07,180 --> 00:17:12,400
+So you cannot write size dot medium in lowercase.
+
+56
+00:17:13,019 --> 00:17:23,819
+Or you cannot write only medium because this medium, in fact, is an instance of the size enough, which is medium.
+
+57
+00:17:25,844 --> 00:17:26,963
+This is the syntax.
+
+58
+00:17:28,044 --> 00:17:33,963
+In fact, in this example, small, medium, large and extra large are in fact instances.
+
+59
+00:17:34,544 --> 00:17:35,524
+They are objects.
+
+60
+00:17:36,163 --> 00:17:39,244
+Therefore, they can have member fields.
+
+61
+00:17:39,963 --> 00:17:42,044
+They can have constructors.
+
+62
+00:17:42,244 --> 00:17:45,943
+They can have methods as you will just be seeing.
+
+63
+00:17:48,468 --> 00:18:03,028
+This is, yes, in fact, a class. Each member of an anon is, in fact, an instance of the class. There cannot be any other members of an anon except ones that you have already called it.
+
+64
+00:18:05,148 --> 00:18:11,028
+Okay. There is one rule about non-pylimitive enums.
+
+65
+00:18:11,316 --> 00:18:13,236
+Constructor must be private.
+
+66
+00:18:13,936 --> 00:18:21,956
+This is the only case that we will see that the constructor is private.
+
+67
+00:18:22,695 --> 00:18:32,836
+Yes, the constructor is private because we shouldn't be able to define any other values except the defined ones at the first line.
+
+68
+00:18:32,836 --> 00:18:33,456
+Okay.
+
+69
+00:18:37,663 --> 00:18:42,043
+Instance definitions must be the first line of your code.
+
+70
+00:18:43,364 --> 00:18:53,463
+Let's assume that you are a telecom operator and you are selling some access packages for end users.
+
+71
+00:18:54,784 --> 00:19:02,503
+Therefore, you need to define a tariff having different options.
+
+72
+00:19:03,604 --> 00:19:21,644
+For example, you have net free, net fall, net six, these are the names that you assign, and the values after the names are actually constructor calls with three parameters.
+
+73
+00:19:23,024 --> 00:19:24,344
+What do they mean?
+
+74
+00:19:24,915 --> 00:19:27,695
+You can examine the constructor, which is private.
+
+75
+00:19:28,315 --> 00:19:33,036
+The first parameter is the quota of that subscription.
+
+76
+00:19:33,695 --> 00:19:37,875
+The second one is the speed of this subscription, of this tariff.
+
+77
+00:19:37,875 --> 00:19:49,875
+And the final one is the fee of that tariff, which means that net free is there is no quota, zero.
+
+78
+00:19:50,355 --> 00:19:57,796
+It supports 4 megabits per second and it costs 60 LRAS.
+
+79
+00:19:59,096 --> 00:20:03,496
+The net 4 tariff has 4 GB of quota.
+
+80
+00:20:04,436 --> 00:20:10,296
+It is faster, it has 8 megabits of speed and its fee is 30 LRAS.
+
+81
+00:20:10,296 --> 00:20:12,296
+And net 6 is...
+
+82
+00:20:12,627 --> 00:20:29,627
+It has 6 GB of quota. It has 8 Mbps speed and its fee is 40 EUR. This code tells me that. And if you wish, you can add getters. Don't add setters.
+
+83
+00:20:32,115 --> 00:20:47,695
+If you do it, as there are only three instances of that, of those objects, then like, let's not say static because there's actually not anything static here.
+
+84
+00:20:48,915 --> 00:20:53,695
+Every instance of that object will be...
+
+85
+00:20:54,195 --> 00:20:55,556
+Change too, of course.
+
+86
+00:20:56,096 --> 00:20:58,635
+If this is the case you want, then you can do it.
+
+87
+00:20:58,975 --> 00:21:00,576
+Otherwise, you shouldn't.
+
+88
+00:21:03,875 --> 00:21:06,295
+Let's try it with the example.
+
+89
+00:21:08,615 --> 00:21:15,415
+Well, we will be sending some tariffs to some people, person instances.
+
+90
+00:21:16,051 --> 00:21:23,751
+But, different people can subscribe to different tariffs, of course.
+
+91
+00:21:24,751 --> 00:21:32,911
+And, a subscription should have a beginning date and an ending date, vice versa.
+
+92
+00:21:32,911 --> 00:21:42,911
+Therefore, instead of directly associating a person with a tariff, I also introduce a subscription class here.
+
+93
+00:21:43,316 --> 00:21:49,256
+Every person will have subscription and every subscription will be associated with a tariff.
+
+94
+00:21:50,336 --> 00:21:52,155
+Now let's quote this.
+
+95
+00:21:56,056 --> 00:22:07,056
+First, please examine it from the slides because I have highlighted the important lines related to that enums.
+
+96
+00:22:09,076 --> 00:22:15,135
+This is a test class and in the main method, first I define a tariff object.
+
+97
+00:22:15,816 --> 00:22:23,615
+I can give any name I want to that object, but the value should be one of the inarm values.
+
+98
+00:22:23,615 --> 00:22:26,956
+And in that case, it's tariff.net4.
+
+99
+00:22:27,476 --> 00:22:33,155
+As this is net4, then I rename that as tariff4.
+
+100
+00:22:33,735 --> 00:22:35,536
+And I define a person.
+
+101
+00:22:36,084 --> 00:22:40,903
+And I have a person subscribed to that tariff.
+
+102
+00:22:41,403 --> 00:22:43,364
+I have another person here.
+
+103
+00:22:43,903 --> 00:22:46,844
+And this person has subscribed to another tariff.
+
+104
+00:22:46,844 --> 00:22:55,664
+And let's run those people's to-think methods.
+
+105
+00:22:55,864 --> 00:22:58,804
+And let's see that everything is fine.
+
+106
+00:23:01,564 --> 00:23:02,604
+Okay.
+
+107
+00:23:03,380 --> 00:23:05,640
+Now we can go to Eclipse.
+
+108
+00:23:07,780 --> 00:23:09,380
+Which package is this?
+
+109
+00:23:10,900 --> 00:23:12,559
+8, package 8, okay.
+
+110
+00:23:18,836 --> 00:23:20,036
+Pickage 8.
+
+111
+00:23:21,036 --> 00:23:21,296
+Here.
+
+112
+00:23:22,476 --> 00:23:22,956
+Okay.
+
+113
+00:23:26,556 --> 00:23:28,596
+Let me just copy this.
+
+114
+00:23:29,635 --> 00:23:33,476
+Because I will play a little bit with this example.
+
+115
+00:23:33,476 --> 00:23:34,296
+Just a moment.
+
+116
+00:23:44,660 --> 00:23:49,660
+When you get old, you need more than one set of glasses.
+
+117
+00:23:53,907 --> 00:23:54,907
+Ok.
+
+118
+00:23:56,407 --> 00:24:05,907
+If you wish, it is possible to add a setter method, because why not? There is no against it.
+
+119
+00:24:06,907 --> 00:24:14,907
+Maybe, for example, you wish to update the field, or you wish to update the speed, for example.
+
+120
+00:24:15,476 --> 00:24:23,936
+But mostly I will not be increasing speed, but I have to increase the fees, for example.
+
+121
+00:24:24,476 --> 00:24:30,655
+Therefore, in addition to the code in the slide, I have added a setter method here, if possible.
+
+122
+00:24:30,655 --> 00:24:40,276
+And I have coded overridden the two sitting methods describing every member's value.
+
+123
+00:24:41,619 --> 00:24:49,079
+As for the subscription, there is a beginning date. There is no ending date.
+
+124
+00:24:51,439 --> 00:24:56,839
+I will talk about the date class in detail later in the later slides.
+
+125
+00:24:57,579 --> 00:25:03,859
+But for now, I can say that this class is in the JavaUtil package.
+
+126
+00:25:04,271 --> 00:25:20,231
+And when you initialize a date object with the default constructor, then this object shows the exact date and time of the initialization.
+
+127
+00:25:21,268 --> 00:25:23,148
+Both the date and the time.
+
+128
+00:25:23,427 --> 00:25:32,447
+Although the name is date, the date class in Java also holds the hour, minute, second, millisecond, etc.
+
+129
+00:25:33,387 --> 00:25:35,887
+Therefore, it's date and time, in fact.
+
+130
+00:25:39,107 --> 00:25:42,007
+And the code of person is very straightforward.
+
+131
+00:25:44,127 --> 00:25:47,007
+And let's check the...
+
+132
+00:25:48,723 --> 00:25:49,963
+Test code.
+
+133
+00:25:52,183 --> 00:25:52,804
+Okay.
+
+134
+00:25:55,523 --> 00:26:03,824
+If you wish, you can, for example, sell this tariff to multiple people, multiple persons, of course.
+
+135
+00:26:04,623 --> 00:26:07,804
+Or if you wish, you can increase the fee.
+
+136
+00:26:08,211 --> 00:26:24,692
+Of any tariff, for example. Now let's see what we have done in here. This is already an example that has more in it than the slide. In here, I find the network tariff.
+
+137
+00:26:25,203 --> 00:26:34,864
+I define a person and subscribe to Tavif4. I define another person and subscribe that person to the same criteria.
+
+138
+00:26:34,864 --> 00:26:44,063
+Then I use the setter method of Tavif4 and make five data of...
+
+139
+00:26:44,276 --> 00:27:13,276
+Ne?
+
+140
+00:27:12,031 --> 00:27:15,072
+You can use a reference such as this.
+
+141
+00:27:15,771 --> 00:27:19,331
+I have defined a tariff object in line 6.
+
+142
+00:27:19,831 --> 00:27:21,451
+I have defined a reference.
+
+143
+00:27:21,711 --> 00:27:26,827
+If you wish, you can use any method from the reference or...
+
+144
+00:27:27,059 --> 00:27:34,960
+Directly from the enum name, that object name reference, port r, LO.
+
+145
+00:27:34,960 --> 00:27:53,759
+So, at the end of the day, although the first fee was, yes, the first fee was 30 Liras at the beginning, later that fee will be increased to 40.
+
+146
+00:27:55,188 --> 00:27:56,088
+Two steps.
+
+147
+00:27:58,608 --> 00:28:10,568
+In order to make sure of that, if you wish, I can print out one person, Golcan, here.
+
+148
+00:28:11,348 --> 00:28:16,548
+After the fee becomes 35, then at the end,
+
+149
+00:28:18,195 --> 00:28:23,795
+You will see that the fee for netfall tariff will be increased again.
+
+150
+00:28:25,516 --> 00:28:29,016
+And back-end has been subscribed to Netfree.
+
+151
+00:28:30,775 --> 00:28:32,155
+And that's it.
+
+152
+00:28:34,496 --> 00:28:35,855
+Let's save.
+
+153
+00:28:37,135 --> 00:28:37,775
+And run.
+
+154
+00:28:44,243 --> 00:28:51,183
+At the beginning, the tarif for net worth that Olcan has is for 35 lirans.
+
+155
+00:28:53,323 --> 00:29:00,683
+And you can see the date time is Wednesday, April 19th.
+
+156
+00:29:00,683 --> 00:29:05,863
+It's just the exact moment, 14.27.
+
+157
+00:29:06,663 --> 00:29:07,803
+And this is the second.
+
+158
+00:29:08,703 --> 00:29:10,763
+TRT means Turkish time.
+
+159
+00:29:11,104 --> 00:29:23,364
+Okay. As you know, we don't have any daylight sailing time for quite some time.
+
+160
+00:29:24,243 --> 00:29:32,503
+Well, I am against that decision, but there are other people who like that decision.
+
+161
+00:29:32,824 --> 00:29:45,503
+O kadar uzatmayayım ben tartışmasını. Amacımız o olmasın ama eğer öyle bir zaman şeylerimizi değiştirmemiş olsaydık orada GMT-62 yazacaktı.
+
+162
+00:29:46,503 --> 00:29:51,703
+Ama şimdi orada TRT yazıyor. Turkish Time anlamına geliyor.
+
+163
+00:29:52,211 --> 00:29:53,211
+Ok.
+
+164
+00:29:53,211 --> 00:29:58,211
+And after the second increase, the fee becomes 40.
+
+165
+00:29:58,211 --> 00:30:07,211
+And then, U also has been subscribed to the same tariff and of course the fee is the same.
+
+166
+00:30:07,211 --> 00:30:15,084
+And Berkin has been subscribed to another tariff and the fee is 40.
+
+167
+00:30:16,435 --> 00:30:34,135
+As you see, when you alter the state of any, when you alter the state of a tariff instance, then every similar references will be again updated.
+
+168
+00:30:35,220 --> 00:30:41,400
+Then what about, let's think about a case, a valued customer case.
+
+169
+00:30:41,980 --> 00:30:54,720
+For example, UMLN is a subscriber for a much longer time and you wish to add a discount for UMLNs, but not for Olca.
+
+170
+00:30:55,560 --> 00:30:56,720
+How can you do this?
+
+171
+00:30:58,132 --> 00:31:02,692
+The best place to do is to use the subscription classes.
+
+172
+00:31:03,332 --> 00:31:12,132
+You can add a discount rate value here, member field, and then...
+
+173
+00:31:13,203 --> 00:31:22,023
+You have to, but then, when calculating the exact fee, you should always use a subscription record.
+
+174
+00:31:22,483 --> 00:31:31,483
+Not, you shouldn't use the fee directly, but you should use the subscription object, subscription instance.
+
+175
+00:31:34,303 --> 00:31:40,663
+I can give this as an example to you, to do yourself.
+
+176
+00:31:43,955 --> 00:31:45,555
+Okay, any questions?
+
+177
+00:31:47,955 --> 00:31:57,155
+It's not much that complicated. You already know the enum from the C language. Now you have learned it's object-oriented version.
+
+178
+00:31:58,115 --> 00:32:10,355
+And enum can have a constructor, but it should be plugged. Then you can code that enum as we are coding a regular class.
+
+179
+00:32:11,251 --> 00:32:18,311
+Ok, the constructor must be private and that definition, that object definition must be the first line.
+
+180
+00:32:18,311 --> 00:32:25,551
+Other than that, you can quote any object-oriented quote in that inner.
+
+181
+00:32:34,836 --> 00:32:41,635
+If you do not have any questions, we can continue. Just a moment, please.
+
+182
+00:32:50,756 --> 00:32:55,476
+Okay, exception handling. Now this is a serious topic.
+
+183
+00:33:00,019 --> 00:33:06,539
+An exception means some unexpected event occurs.
+
+184
+00:33:08,360 --> 00:33:12,779
+You should be familiar with the Murphy's Law.
+
+185
+00:33:13,428 --> 00:33:21,607
+If you haven't heard about Murphy's law yet, please make a Google search.
+
+186
+00:33:22,607 --> 00:33:29,127
+It's a topic that every technical person, including computer engineers, should know.
+
+187
+00:33:32,188 --> 00:33:34,627
+Murphy is a...
+
+188
+00:33:34,627 --> 00:33:36,208
+Ok, ok, not say that well.
+
+189
+00:33:36,887 --> 00:33:38,147
+Achenkenis bakım baya şimdi.
+
+190
+00:33:39,428 --> 00:33:40,188
+Geyesami.
+
+191
+00:33:40,884 --> 00:33:58,083
+When a software is being run, we can see many different types of error sources.
+
+192
+00:33:58,083 --> 00:34:03,083
+For example, if you are expecting an error,
+
+193
+00:34:03,667 --> 00:34:20,927
+integer form a user, but if the user enters some characters, then your code will not be able to process that wrong input, and the program flow will halt.
+
+194
+00:34:22,068 --> 00:34:35,048
+In fact, for example, when we are trying to execute a method of a null object, then we have seen the null pointer exception.
+
+195
+00:34:35,552 --> 00:34:51,971
+Or, when we are trying to, for example, when we were trying to make a two-way association between the class car and person, in some places, we have come up with step overflow exception.
+
+196
+00:34:54,211 --> 00:34:58,971
+But those problems were related with ArrayList.
+
+197
+00:35:00,403 --> 00:35:01,403
+buggy code.
+
+198
+00:35:02,403 --> 00:35:07,804
+Therefore, we have covered the wrong input by the user and the buggy code written by us.
+
+199
+00:35:09,403 --> 00:35:15,604
+Less probable options are maybe there is a bug in the Java virtual machine.
+
+200
+00:35:16,903 --> 00:35:20,804
+This is why we have come up with some specific exception.
+
+201
+00:35:21,203 --> 00:35:22,304
+This is also possible.
+
+202
+00:35:22,835 --> 00:35:28,175
+And of course, X of God, because we cannot control everything.
+
+203
+00:35:28,775 --> 00:35:31,855
+For example, we cannot control the internet traffic.
+
+204
+00:35:32,955 --> 00:35:36,395
+We cannot control file access rights, et cetera.
+
+205
+00:35:36,395 --> 00:35:46,395
+For example, okay, we'll be studying how to make file operations later, but maybe we are trying to keep some...
+
+206
+00:35:47,923 --> 00:35:50,663
+Applicational settings in a text file, for example.
+
+207
+00:35:51,027 --> 00:35:56,027
+But if and when we run the code, it works fine.
+
+208
+00:35:56,247 --> 00:35:59,927
+Okay, we give our code to another user, for example.
+
+209
+00:35:59,927 --> 00:36:18,507
+But if that user does not have the administrator privileges such as ours, and if that program has been installed to a restricted order, then that user will not run that user.
+
+210
+00:36:19,027 --> 00:36:20,987
+Tries to execute that program.
+
+211
+00:36:22,187 --> 00:36:29,947
+This specific file cannot be accessed because of the user's less privileges.
+
+212
+00:36:30,667 --> 00:36:30,907
+Okay.
+
+213
+00:36:31,947 --> 00:36:34,787
+But we cannot control this.
+
+214
+00:36:35,155 --> 00:36:37,315
+If we wish, we can write additional code.
+
+215
+00:36:37,435 --> 00:36:47,015
+But there will be much more, many, many more scenarios that may occur and we cannot foresee all of them.
+
+216
+00:36:48,195 --> 00:36:50,675
+But we should be aware of them.
+
+217
+00:36:51,615 --> 00:36:58,135
+We should know that they are possible and many more different things are possible.
+
+218
+00:36:58,135 --> 00:37:01,555
+So we should deal with them.
+
+219
+00:37:01,940 --> 00:37:20,520
+We don't have to solve every problem, but at the very least, we should inform the user that something has gone wrong, and what is the probable case, and then safely end the program. This is our job.
+
+220
+00:37:22,900 --> 00:37:41,440
+There are multiple ways of dealing with errors. One of them is Boolean returns. We have used this technique. For example, some methods will return a Boolean type if the operation is successful, but false otherwise.
+
+221
+00:37:43,956 --> 00:37:57,836
+We will not be learning the GUI topics such as string, but form components have their built-in error checking mechanisms.
+
+222
+00:37:58,855 --> 00:38:02,775
+For example, if the program is expecting a number.
+
+223
+00:38:03,215 --> 00:38:06,655
+But the user tries to enter a text.
+
+224
+00:38:06,996 --> 00:38:12,855
+But if we define the property of a text area, such as there should be an integer here,
+
+225
+00:38:13,375 --> 00:38:25,235
+then although the user enters a string, that form component will not accept it and will revert back to default value zero, for example.
+
+226
+00:38:26,291 --> 00:38:31,331
+And the third technique that we will be studying now is exception handling.
+
+227
+00:38:32,112 --> 00:38:38,652
+It is a form of error tracking, or you can say error sensing and detection.
+
+228
+00:38:39,551 --> 00:38:48,271
+And when we detect an error, we usually, as I've taught, inform the user about something has gone wrong.
+
+229
+00:38:48,820 --> 00:38:54,500
+And Y, if we can say it, and then safely terminate the program.
+
+230
+00:38:58,612 --> 00:39:05,972
+Each exception is modeled by a class in Java, and there is an inheritance hierarchy for that.
+
+231
+00:39:07,112 --> 00:39:12,052
+At the root of the hierarchy, we have the throwable class.
+
+232
+00:39:12,752 --> 00:39:16,172
+It has subclasses of error and exception.
+
+233
+00:39:17,851 --> 00:39:25,012
+That error class is used for, for example, bugs in the Java virtual machine.
+
+234
+00:39:26,195 --> 00:39:37,855
+And then the second class is exception. That exception has two subclasses. First one is the IOException and the second one is RuntimeException.
+
+235
+00:39:38,515 --> 00:39:51,956
+We will be using the leave classes, which are error, IOException, and RuntimeException. And actually we will not be dealing with error because it's optional to handle that.
+
+236
+00:39:52,500 --> 00:39:57,460
+Notice that unchecked and checked notes.
+
+237
+00:39:57,920 --> 00:40:02,220
+If an exception is unchecked, we don't have to handle it.
+
+238
+00:40:02,820 --> 00:40:04,579
+If we wish, we can.
+
+239
+00:40:05,880 --> 00:40:18,539
+However, if an exception is a checked exception, then we have to handle that exception in every possible place that this exception can occur.
+
+240
+00:40:19,987 --> 00:40:23,067
+And also we can write our own exceptions too.
+
+241
+00:40:23,807 --> 00:40:31,827
+And in order to do that, we will select a suitable child exception and extend from that.
+
+242
+00:40:32,407 --> 00:40:33,487
+Okay, inherit from that.
+
+243
+00:40:33,967 --> 00:40:42,627
+If we want to create a checked exception, our own type of checked exception, then we will inherit from the ArrayException class.
+
+244
+00:40:43,251 --> 00:40:48,412
+Otherwise, we will inherit from the runtime exception class.
+
+245
+00:40:52,788 --> 00:40:59,828
+Okay, for example, there is a subclass of that error, JavaLang unsupported class version error.
+
+246
+00:41:01,108 --> 00:41:07,268
+You can come up with that exception when you move your code between different versions of Eclipse.
+
+247
+00:41:09,028 --> 00:41:13,268
+You don't see it every time, but if the...
+
+248
+00:41:14,384 --> 00:41:18,304
+Old version is very old, for example, 10 years old.
+
+249
+00:41:19,083 --> 00:41:28,144
+And you are trying to move your code from that 10 years of old idea to the latest idea.
+
+250
+00:41:28,144 --> 00:41:30,744
+Then you can come up with that exception.
+
+251
+00:41:31,184 --> 00:41:37,144
+I have come up with that once in my lifetime in such a scenario.
+
+252
+00:41:38,387 --> 00:41:50,528
+And the runtime exception, also the packages are important too. The error and runtime exception classes are in the Java land package, so you don't have to import anything in order to use them.
+
+253
+00:41:50,528 --> 00:42:06,387
+But the IO exception class resides in the Java IO package. Therefore, you should import the Java IO package if you will be dealing with IO exception or its subclasses or any checked exception that...
+
+254
+00:42:06,387 --> 00:42:07,387
+You will be coding.
+
+255
+00:42:09,528 --> 00:42:11,408
+What about runtime exception?
+
+256
+00:42:11,408 --> 00:42:14,408
+This one is mostly caused by our buggy code,
+
+257
+00:42:14,408 --> 00:42:19,148
+such as malpointed exception, index out of bounds exception,
+
+258
+00:42:20,948 --> 00:42:24,268
+stack overflow exception, et cetera.
+
+259
+00:42:26,127 --> 00:42:29,748
+They were exactly created by our buggy code.
+
+260
+00:42:30,948 --> 00:42:32,467
+What about the IO exception?
+
+261
+00:42:32,692 --> 00:42:50,532
+This means that something went wrong during a file operation or a network operation because Java considers command line, files, network packets, all the same as input and output source.
+
+262
+00:42:52,431 --> 00:42:57,612
+Such operations, file operations and network operations are always risky.
+
+263
+00:42:57,983 --> 00:43:08,103
+There can be many things that can go wrong. Therefore, we must have an alternative plan in case of something goes wrong.
+
+264
+00:43:10,224 --> 00:43:17,743
+If that alternate plan is mandatory, then the exception must be defined as checked exception.
+
+265
+00:43:18,771 --> 00:43:30,311
+And our alternative plan is, I repeat, to inform the user about the problem and have a safe exit from our company.
+
+266
+00:43:34,195 --> 00:43:39,516
+How can we handle an exception? We do it by using a try-catch block.
+
+267
+00:43:40,876 --> 00:43:45,796
+There will be some error-prone method that can generate an exception.
+
+268
+00:43:47,235 --> 00:43:54,615
+If those are check exceptions, then we have to use that try-catch block.
+
+269
+00:43:55,355 --> 00:44:00,876
+Otherwise, if this is an unchecked exception, then this try-catch handling is optional.
+
+270
+00:44:02,260 --> 00:44:10,200
+We wrap all the error-prone methods within a try block, and then we open a catch block.
+
+271
+00:44:11,660 --> 00:44:22,860
+The parameter of that catch block is the exception that can be created while running those error-prone methods.
+
+272
+00:44:23,640 --> 00:44:28,340
+And in the body of that catch block, we deal with that exception.
+
+273
+00:44:33,300 --> 00:44:58,180
+Okay. If there's an exception within these error-prone methods and if this is a check exception, maybe we choose not to handle it here. In that case, we should define our method that includes those error-prone methods as with a special case. It will be coming soon.
+
+274
+00:44:58,543 --> 00:45:05,663
+But somebody should have to handle that eventually.
+
+275
+00:45:08,783 --> 00:45:10,384
+Okay, now it's here.
+
+276
+00:45:11,103 --> 00:45:15,224
+If those error-prone methods are written, a method named a method,
+
+277
+00:45:16,743 --> 00:45:20,123
+and if we don't want to handle it here,
+
+278
+00:45:20,755 --> 00:45:23,015
+Handle that check exception here.
+
+279
+00:45:23,015 --> 00:45:32,375
+That after the method parentheses and before the block parentheses, we write truth and exception.
+
+280
+00:45:32,875 --> 00:45:34,935
+Whatever exception it is.
+
+281
+00:45:35,315 --> 00:45:38,475
+Now, we don't have to use that try-catch block.
+
+282
+00:45:38,895 --> 00:45:47,775
+But in that case, wherever that method is called, then the try-catch block should be called.
+
+283
+00:45:48,659 --> 00:45:53,500
+Or, that method should say that was an exception.
+
+284
+00:45:54,179 --> 00:45:58,659
+But in that case, the color of that method should use the tri-catch.
+
+285
+00:45:59,299 --> 00:46:03,799
+Somebody has to eventually handle that.
+
+286
+00:46:09,108 --> 00:46:13,728
+Now, if you wish, you can handle multiple exactions too.
+
+287
+00:46:15,348 --> 00:46:26,228
+This is the preferred way because whenever you open a tri-block, this introduces a runtime overhead.
+
+288
+00:46:27,308 --> 00:46:33,676
+Therefore, instead of using multiple tri-blocks, grab...
+
+289
+00:46:33,684 --> 00:46:46,644
+Every wrap, all the methods that can create any exceptions in one big trial block.
+
+290
+00:46:47,564 --> 00:46:53,564
+For example, there are 10 statements here, but only the first.
+
+291
+00:46:54,000 --> 00:46:59,119
+And the tenth method can generate an exception.
+
+292
+00:46:59,119 --> 00:47:22,000
+In that case, the first and then other statements and the tenth, instead of wrapping the first statement in a separate tri-block and the tenth statement in a separate tri-block, take all those ten statements, put it into one larger tri-block, and...
+
+293
+00:47:22,000 --> 00:47:27,880
+Catch the multiple different exceptions that can be generated, that can be thrown.
+
+294
+00:47:31,480 --> 00:47:35,059
+And you can use multiple catch blocks.
+
+295
+00:47:36,579 --> 00:47:41,820
+If there are different exceptions that can be thrown,
+
+296
+00:47:42,160 --> 00:47:48,840
+then you can handle them all separately in their own catch blocks.
+
+297
+00:47:50,612 --> 00:48:11,452
+If there is an inheritance relationship between those different exceptions, you can put all those parent and child exceptions into one catch statement, if you wish.
+
+298
+00:48:12,083 --> 00:48:32,883
+But although those exceptions have the easy relationship or the superclass subclass relationship, if you wish to inform the user differently in case of different exceptions, then you will quote different catch blocks as well.
+
+299
+00:48:38,516 --> 00:48:40,516
+What should we do in a catch block?
+
+300
+00:48:40,516 --> 00:48:53,516
+We will inform the user about the error by using the printStickTrace method of the exception reference that we have defined in the catch parentheses.
+
+301
+00:48:53,516 --> 00:48:56,516
+Then maybe we can log this error.
+
+302
+00:48:56,516 --> 00:48:59,516
+And how will we do it?
+
+303
+00:48:59,516 --> 00:49:02,188
+We will do it by printing out to the console.
+
+304
+00:49:02,708 --> 00:49:07,348
+But if you wish, you can block logs in a temporary file, for example.
+
+305
+00:49:08,708 --> 00:49:15,208
+Or there are some different logging libraries that you can add to your project and use.
+
+306
+00:49:16,528 --> 00:49:29,648
+But in our lectures, just printing out information should be enough by writing the print stack trace.
+
+307
+00:49:32,563 --> 00:49:38,163
+And sometimes the error can be very serious.
+
+308
+00:49:39,123 --> 00:49:45,043
+And there may be some system resources that you have allocated.
+
+309
+00:49:45,603 --> 00:49:48,283
+In that case, you should deallocate.
+
+310
+00:49:48,543 --> 00:49:50,483
+You should clear those resources.
+
+311
+00:49:51,203 --> 00:49:52,143
+How can you do it?
+
+312
+00:49:52,583 --> 00:49:57,363
+How can you make a clean exit from the exception?
+
+313
+00:49:57,683 --> 00:50:00,000
+In that case, you will use the...
+
+314
+00:50:00,000 --> 00:50:00,840
+Finally block.
+
+315
+00:50:01,860 --> 00:50:06,579
+At the very end of the catch blocks, you can add the finally block.
+
+316
+00:50:07,539 --> 00:50:13,980
+And that finally block executes whether the exception is strong or not.
+
+317
+00:50:14,900 --> 00:50:24,920
+Therefore, you can free those resources even if something wrong occurs or doesn't occur.
+
+318
+00:50:29,427 --> 00:50:38,847
+This is the syntax. You have some error-prone methods. You have handled them by appropriate catch blocks.
+
+319
+00:50:38,847 --> 00:50:45,507
+But what will happen in case something goes wrong or in case something doesn't go wrong?
+
+320
+00:50:56,275 --> 00:51:02,376
+Now, let's assume that, okay, we begin our code.
+
+321
+00:51:05,876 --> 00:51:06,396
+Sorry.
+
+322
+00:51:06,775 --> 00:51:11,576
+Now we have entered the try block, for example.
+
+323
+00:51:12,135 --> 00:51:15,316
+And let's assume that something goes wrong.
+
+324
+00:51:16,336 --> 00:51:23,715
+In that case, whatever exception it is, it will be handled in the appropriate cache block.
+
+325
+00:51:24,851 --> 00:51:36,652
+Then, the finally block will be executed and the freeing statements will be here, will reside here.
+
+326
+00:51:36,652 --> 00:51:47,951
+We will deallocate, we will free to some system resources and then finally, the program will terminate.
+
+327
+00:51:50,260 --> 00:51:55,800
+But what happens if everything goes correctly and nothing happens?
+
+328
+00:51:56,000 --> 00:51:58,240
+Then all methods are executed.
+
+329
+00:51:58,240 --> 00:52:02,340
+Then again, the finally block is executed.
+
+330
+00:52:03,139 --> 00:52:06,599
+We deallocate our resources without any problem.
+
+331
+00:52:07,180 --> 00:52:12,240
+And the code continues after the finally statement.
+
+332
+00:52:13,240 --> 00:52:13,400
+Okay?
+
+333
+00:52:16,788 --> 00:52:21,447
+Final block runs, always, always runs.
+
+334
+00:52:21,607 --> 00:52:29,367
+So you can quote your deallocation statements, freeing statements safely in that final block.
+
+335
+00:52:35,891 --> 00:52:36,331
+Thank you.
+
+336
+00:52:39,860 --> 00:52:53,860
+You may have some questions, but first, let's give an example. Let's give an example of how to use some readily available exception.
+
+337
+00:52:53,860 --> 00:53:01,860
+For example, you are calling this exception example. You have a graphics object and a file object.
+
+338
+00:53:02,708 --> 00:53:08,688
+For example, you are trying to parse a CAD file.
+
+339
+00:53:08,688 --> 00:53:17,528
+You will be parsing that file for different graphic elements.
+
+340
+00:53:17,528 --> 00:53:24,407
+And you are trying to draw those elements in a three-dimensional fashion.
+
+341
+00:53:24,407 --> 00:53:26,407
+But...
+
+342
+00:53:28,083 --> 00:53:31,663
+There are some problems that can occur.
+
+343
+00:53:32,263 --> 00:53:37,543
+The first one is, for example, the file may be correct.
+
+344
+00:53:39,623 --> 00:53:49,223
+Or maybe the file belongs to a much older version of our file format, which is incompatible with Arco.
+
+345
+00:53:50,303 --> 00:53:53,123
+Anything can go wrong in that fashion.
+
+346
+00:53:54,123 --> 00:53:54,443
+However,
+
+347
+00:53:55,315 --> 00:54:08,996
+You need a graphics object to render those drawing, but this is a scarce system resource.
+
+348
+00:54:09,516 --> 00:54:17,335
+If you don't free that resource, for example, the application, the operating system may crash.
+
+349
+00:54:18,335 --> 00:54:19,755
+In that case,
+
+350
+00:54:23,827 --> 00:54:33,288
+Those statements, those five statements, are statements, regular statements that you need to hold.
+
+351
+00:54:34,068 --> 00:54:38,827
+However, when opening this CAD file,
+
+352
+00:54:39,539 --> 00:54:54,199
+Some problems may occur, such that, işte, dedikya, işte, as I have told, maybe the file is corrupt, or you don't have the necessary file privileges, etc.
+
+353
+00:54:54,199 --> 00:55:02,420
+If something goes wrong, then you will catch the exception.
+
+354
+00:55:03,315 --> 00:55:12,076
+This is mostly about something goes wrong during the input output operations. Therefore, we are catching the IO exception.
+
+355
+00:55:14,395 --> 00:55:22,596
+And here we inform the user about what has happened while opening or leaving from that file.
+
+356
+00:55:22,596 --> 00:55:28,556
+And I also try to give some more information to the user, such as the file name.
+
+357
+00:55:29,780 --> 00:55:37,179
+Therefore, the user may try to go to that file and see whether that file actually exists.
+
+358
+00:55:38,719 --> 00:55:44,539
+Then, if that file exists, the user may try to open it with a different editor.
+
+359
+00:55:45,679 --> 00:55:53,300
+If this is not a binary file, this is a text file, for example, an XML file, you can open it in a notepad.
+
+360
+00:55:53,972 --> 00:56:02,712
+Or you can open it with some XML checking tool, whether all the texts are properly opened and closed, etc.
+
+361
+00:56:06,712 --> 00:56:12,652
+And then maybe the user try to check the file privileges, etc.
+
+362
+00:56:12,652 --> 00:56:16,712
+And if the user finds a...
+
+363
+00:56:18,099 --> 00:56:20,019
+Remedy to that problem.
+
+364
+00:56:20,400 --> 00:56:25,360
+Then the user fixes that problem and runs our code again.
+
+365
+00:56:25,539 --> 00:56:27,779
+Then our code will run flawlessly.
+
+366
+00:56:29,719 --> 00:56:41,360
+But if everything goes correctly and nothing wrong happens, then, sorry, in case of an exception, we have to free that graphics object.
+
+367
+00:56:41,360 --> 00:56:42,360
+Therefore,
+
+368
+00:56:43,123 --> 00:56:58,463
+Next statement will be going to the final block and then the graphics object will be freed and finally the program will end.
+
+369
+00:56:59,543 --> 00:57:06,623
+But if nothing goes wrong, after the file is closed, the code goes to the final block.
+
+370
+00:57:06,976 --> 00:57:13,556
+Again, the resources are released and then the program continues.
+
+371
+00:57:14,695 --> 00:57:15,235
+That's it.
+
+372
+00:57:19,764 --> 00:57:25,903
+In here, for example, the open file statement can lead to some errors.
+
+373
+00:57:26,523 --> 00:57:31,123
+Or maybe you cannot close that file either.
+
+374
+00:57:32,403 --> 00:57:34,344
+Something may go wrong here too.
+
+375
+00:57:35,143 --> 00:57:43,703
+Therefore, instead of coding a separate try block for this statement and this statement,
+
+376
+00:57:44,820 --> 00:57:53,060
+I have read entire five lines of statement in the same tri-block.
+
+377
+00:57:53,820 --> 00:58:00,760
+Maybe I can put that first statement out of the tri-block, if I wish.
+
+378
+00:58:02,240 --> 00:58:07,640
+But I have thought that those are all closely related with each other.
+
+379
+00:58:07,760 --> 00:58:11,300
+Then I have put that first statement in the tri-block too.
+
+380
+00:58:11,795 --> 00:58:24,615
+This one is optional, but keeping those four statements in the same tri-block is a wiser thing to do.
+
+381
+00:58:26,295 --> 00:58:26,975
+Okay.
+
+382
+00:58:28,195 --> 00:58:30,655
+Do you have any questions up to now?
+
+383
+00:58:32,475 --> 00:58:33,275
+For us to follow.
+
+384
+00:58:33,679 --> 00:58:41,960
+Hazır bu exception'den kullanma ile ilgili. Yoksa şimdi biz de kendi exception sınıflarımızı nasıl odlarız ona bakacağız şimdi.
+
+385
+00:58:44,339 --> 00:58:47,039
+Faktimiz var mı? Var zaten 10 dakika geç başlamıştık.
+
+386
+00:58:48,279 --> 00:58:49,379
+Ona bakıyoruz öyle.
+
+387
+00:58:49,379 --> 00:58:51,559
+Ara veriyoruz diye düşünüyorum.
+
+388
+00:58:58,931 --> 00:59:00,751
+Evet, yapalım böyle halen.
+
+389
+00:59:03,512 --> 00:59:03,971
+Okay.
+
+390
+00:59:05,192 --> 00:59:09,152
+If you wish, you can create your own exception classes as well.
+
+391
+00:59:10,431 --> 00:59:14,612
+You should inherit from IOException, if you want your exception to be checked.
+
+392
+00:59:15,231 --> 00:59:19,871
+Or you can inherit from RuntimeException, if you want an unchecked exception.
+
+393
+00:59:22,324 --> 00:59:26,443
+For example, what about this my file format exception?
+
+394
+00:59:27,884 --> 00:59:31,603
+You are trying to call the file format exception example.
+
+395
+00:59:32,384 --> 00:59:37,143
+And this is also related with the previous example.
+
+396
+00:59:38,103 --> 00:59:47,184
+Because as I have inherited the exception, exception, exception class, then
+
+397
+00:59:47,923 --> 01:00:06,524
+MyFileFormatException, that file format exception, that file format exception, can be used here in that cache block because MyFileException is subclass of IOException.
+
+398
+01:00:13,204 --> 01:00:15,424
+Okay, the first step.
+
+399
+01:00:16,144 --> 01:00:18,804
+Select an appropriate parent class.
+
+400
+01:00:19,564 --> 01:00:29,384
+Then, if your JDK is older than 5, you should add this default constructor.
+
+401
+01:00:30,484 --> 01:00:37,504
+But in our lectures, we'll be using 5 of newer editions.
+
+402
+01:00:37,504 --> 01:00:39,504
+Therefore, you will not...
+
+403
+01:00:40,179 --> 01:00:42,059
+Code those.
+
+404
+01:00:43,099 --> 01:00:48,280
+But you have to code this, this constructors.
+
+405
+01:00:50,159 --> 01:00:54,340
+Have a string parameters in that constructors.
+
+406
+01:00:54,340 --> 01:01:06,239
+Then use the super constructors and forward that string to that base class constructors.
+
+407
+01:01:06,708 --> 01:01:09,867
+And if you wish, you can do some other thing as well.
+
+408
+01:01:10,827 --> 01:01:17,947
+You can give, I don't know yet, but if you wish, you can write some additional code to.
+
+409
+01:01:17,947 --> 01:01:34,268
+However, those are this one extending something and this one having this non-defaught constructor and having this.
+
+410
+01:01:34,931 --> 01:01:38,471
+Supercore a mandatory.
+
+411
+01:01:45,844 --> 01:01:51,764
+And what about that process file method?
+
+412
+01:01:53,804 --> 01:01:55,724
+Was it named as such?
+
+413
+01:01:57,844 --> 01:01:58,604
+Hold on.
+
+414
+01:01:59,764 --> 01:02:01,403
+Or maybe, for example,
+
+415
+01:02:04,628 --> 01:02:14,228
+If we are using this, for example, Drawfugles method, it should be coded like this too.
+
+416
+01:02:20,467 --> 01:02:44,987
+In a class that you are writing, if an unexpected situation occurs, for example, you have checked the file and it's pulled out, you have seen that it's pulled out, then you can manually generate an exception, you can throw an exception by using the throw statement.
+
+417
+01:02:45,907 --> 01:02:50,427
+That true statement expects an exception object.
+
+418
+01:02:50,427 --> 01:02:59,567
+Therefore, you initialize one by using new statement and calling the constructors with the string parameters.
+
+419
+01:03:00,188 --> 01:03:08,467
+And you give some exponential information as parameters of type string.
+
+420
+01:03:09,108 --> 01:03:10,108
+That's it.
+
+421
+01:03:10,987 --> 01:03:13,188
+Now let's make an example.
+
+422
+01:03:14,643 --> 01:03:22,143
+We want to quote an exception which is named Impossible Info.
+
+423
+01:03:22,143 --> 01:03:32,744
+We will be using this for checking some inappropriate values in terms of a person's age.
+
+424
+01:03:35,155 --> 01:03:45,576
+The main code will be to create some person instances having some particular age.
+
+425
+01:03:45,576 --> 01:04:02,036
+But if that age value is something nonsense, for example, a minus value or a value greater than 150, for example, we want to throw an exception.
+
+426
+01:04:02,804 --> 01:04:05,264
+Then first we have to call that exception.
+
+427
+01:04:06,683 --> 01:04:09,884
+I have named it as impossible info.
+
+428
+01:04:10,643 --> 01:04:13,063
+I want that information to be checked.
+
+429
+01:04:13,623 --> 01:04:18,324
+Therefore, I extend from the IO exception class.
+
+430
+01:04:21,463 --> 01:04:27,463
+And I add this string parameter constructors and make the super call.
+
+431
+01:04:28,043 --> 01:04:29,844
+That's all I have to do.
+
+432
+01:04:30,900 --> 01:04:41,280
+If I do just this, I have a warning, a suppress warning, which is called serial something blah, blah.
+
+433
+01:04:42,099 --> 01:04:46,800
+We'll be seeing it when learning file operations.
+
+434
+01:04:48,099 --> 01:04:52,320
+This warning is completely unnecessary.
+
+435
+01:04:53,260 --> 01:04:58,340
+Therefore, I turn off those warnings for that class.
+
+436
+01:04:58,900 --> 01:05:05,420
+In order to be able to do this, I give that at suppressed warnings statement.
+
+437
+01:05:05,420 --> 01:05:08,039
+This is called annotation.
+
+438
+01:05:09,380 --> 01:05:19,420
+An annotation means this is a special statement for a compiler or any other...
+
+439
+01:05:22,931 --> 01:05:28,531
+A software that is using the false thought of my thought.
+
+440
+01:05:29,871 --> 01:05:32,731
+I will talk about this later.
+
+441
+01:05:33,731 --> 01:05:35,951
+And this is just a small introduction here.
+
+442
+01:05:38,151 --> 01:05:39,692
+And what about our thought?
+
+443
+01:05:40,251 --> 01:05:44,011
+We have a person of name and age.
+
+444
+01:05:44,563 --> 01:05:52,943
+We have the name constructor, getter for the name and the age, and the two string method displaying the name and the age of the person.
+
+445
+01:05:53,443 --> 01:05:54,723
+And what about the setter method?
+
+446
+01:05:56,003 --> 01:06:04,243
+Now this setter method is a little bit more complicated because I want to handle some impossible age values.
+
+447
+01:06:05,243 --> 01:06:06,083
+In that case,
+
+448
+01:06:07,507 --> 01:06:29,087
+If the age has been entered as a negative value or greater than 150, then I will create a new exception by using the true statement, instantiating a new object of that impossible type, and I write impossible age of whatever it is.
+
+449
+01:06:31,443 --> 01:06:37,564
+Otherwise, if no exception occurs, then the setting operation will commence.
+
+450
+01:06:38,503 --> 01:06:50,664
+As this is a checked exception, the compiler will want me to handle that statement, that exception here.
+
+451
+01:06:50,664 --> 01:06:53,664
+But I don't want it to be handled here.
+
+452
+01:06:57,139 --> 01:07:07,139
+The person who has assigned that observed value should be responsible for handling this exception.
+
+453
+01:07:07,679 --> 01:07:17,139
+Therefore, I only declare that this method can't draw an impossible info exception.
+
+454
+01:07:18,480 --> 01:07:22,159
+And when writing my main method, I will handle it there.
+
+455
+01:07:26,708 --> 01:07:54,327
+which is here. A test exception class in the main method. I initialize the scanner object. I ask the person's name and then I create that person. Then I ask the age of the person. I take this age and set the age of that person and print out information about that person. Those four statements are left in a try block.
+
+456
+01:07:55,155 --> 01:08:01,036
+Because this setAge method can generate a problem here.
+
+457
+01:08:02,455 --> 01:08:03,076
+This method.
+
+458
+01:08:05,135 --> 01:08:18,995
+And as this is related with the age value, I have put those statements about the age input into the tri-block as well.
+
+459
+01:08:20,884 --> 01:08:30,164
+Maybe I could take this statement out of the... out of where?
+
+460
+01:08:30,164 --> 01:08:35,844
+Nowhere, maybe here, if I wish.
+
+461
+01:08:35,844 --> 01:08:36,844
+Here.
+
+462
+01:08:36,844 --> 01:08:41,283
+But here is a much better place.
+
+463
+01:08:41,283 --> 01:08:46,324
+And if something wrong happens, actually...
+
+464
+01:08:46,351 --> 01:08:52,971
+Then the sketch block will be executed and the print spec trace method will be executed.
+
+465
+01:08:53,572 --> 01:08:55,611
+This is the least that we can do.
+
+466
+01:08:55,992 --> 01:09:02,271
+And finally, we mustn't forget to close that scanner's object.
+
+467
+01:09:03,771 --> 01:09:12,971
+If I don't use that finally block, then the in-close should be here.
+
+468
+01:09:13,844 --> 01:09:27,623
+But if something goes wrong, if an inappropriate edge has been entered, then the program should halt here, and then the closed method should never run.
+
+469
+01:09:27,623 --> 01:09:35,804
+But this is not a thing that we want. So this is the best way to code our exam.
+
+470
+01:09:37,076 --> 01:09:45,195
+And I will run it and I will check for short names too in terms of impossible information.
+
+471
+01:09:46,076 --> 01:09:46,716
+Let's do it.
+
+472
+01:09:52,627 --> 01:09:56,387
+What package is this? 9, package 9.
+
+473
+01:09:58,948 --> 01:10:00,547
+Let's close this.
+
+474
+01:10:05,268 --> 01:10:05,768
+Okay.
+
+475
+01:10:07,007 --> 01:10:12,028
+Impossible exception, xxy exception, and string constructor is here.
+
+476
+01:10:14,028 --> 01:10:15,427
+As for the person,
+
+477
+01:10:20,340 --> 01:10:24,780
+name, H, constructors, yetermetrop, kustitl metal.
+
+478
+01:10:25,220 --> 01:10:29,300
+Now, I have coded for that impossible name too.
+
+479
+01:10:30,000 --> 01:10:32,460
+How can a name be impossible?
+
+480
+01:10:32,920 --> 01:10:34,060
+It may be too short.
+
+481
+01:10:36,040 --> 01:10:46,600
+In Turkey, the smallest name that I can imagine of is Suak, name and surname.
+
+482
+01:10:47,072 --> 01:10:57,832
+And the addition of a space, then any name, including a surname, should be at least five characters long.
+
+483
+01:10:58,752 --> 01:11:05,332
+Therefore, if somebody enters a name such as AB, then this is not a proper name.
+
+484
+01:11:06,612 --> 01:11:08,332
+In that case, if...
+
+485
+01:11:09,108 --> 01:11:12,768
+The length of that string is smaller than five.
+
+486
+01:11:13,188 --> 01:11:19,828
+Then I generate that impossible info exception and say that name is too short.
+
+487
+01:11:21,408 --> 01:11:23,028
+I think there is to check.
+
+488
+01:11:23,927 --> 01:11:29,048
+Name is too short, whatever it is.
+
+489
+01:11:31,380 --> 01:11:37,780
+And as for the edge, we have already saw that in PowerPoint.
+
+490
+01:11:40,620 --> 01:11:45,940
+And what about the main one?
+
+491
+01:11:46,880 --> 01:11:48,420
+Ah, no, here's this one.
+
+492
+01:11:50,180 --> 01:11:50,780
+Okay.
+
+493
+01:11:51,347 --> 01:12:00,288
+Now, in that case, I have wrapped both name input operations too.
+
+494
+01:12:01,628 --> 01:12:05,128
+There's something that I shouldn't skip.
+
+495
+01:12:07,887 --> 01:12:09,948
+Look at the constructor here.
+
+496
+01:12:10,868 --> 01:12:16,827
+The constructor takes a name as a parameter and will assign that name.
+
+497
+01:12:19,155 --> 01:12:31,395
+If maybe that name given to the constructor can be too short too, what should I do then? Should I code everything in here too? No.
+
+498
+01:12:32,136 --> 01:12:42,796
+Just for the set method within the constructor, this is enough. But also as this set name method can generate that.
+
+499
+01:12:43,444 --> 01:12:45,963
+Impossible info exception.
+
+500
+01:12:46,484 --> 01:12:56,844
+Therefore, I should declare that my constructor to the person type may show impossible info exception too.
+
+501
+01:12:58,123 --> 01:13:00,164
+This is how I should do it.
+
+502
+01:13:02,043 --> 01:13:08,984
+When adding some integrity code to any method.
+
+503
+01:13:10,387 --> 01:13:14,667
+Then consider, check the constructor as well.
+
+504
+01:13:15,807 --> 01:13:21,927
+Maybe the constructor can become a way to bypass this integrity check.
+
+505
+01:13:22,127 --> 01:13:24,188
+Do not allow it to be useful.
+
+506
+01:13:29,011 --> 01:13:35,871
+And again, for the input set edge method, we have the necessary statements here.
+
+507
+01:13:36,572 --> 01:13:39,092
+And let's test them.
+
+508
+01:13:42,420 --> 01:13:57,180
+I have imported the Java 2 package because I will need both the IA exception because I have extended it within the impossible for exception and I need it for the skin of class.
+
+509
+01:13:58,180 --> 01:14:05,100
+Okay, in that case, after initializing the scanners, I have began my type block.
+
+510
+01:14:05,779 --> 01:14:10,979
+I ask the person's name, I obtain the name and generate that person.
+
+511
+01:14:11,519 --> 01:14:17,920
+Then I ask for the age, take the age and set it and then print out that person.
+
+512
+01:14:20,559 --> 01:14:24,639
+If something goes wrong, the input info is tall.
+
+513
+01:14:25,500 --> 01:14:30,019
+And then I will run the print stack trace method.
+
+514
+01:14:30,899 --> 01:14:31,859
+And then finally,
+
+515
+01:14:32,467 --> 01:14:38,067
+I should close that scanner's object by using the in-close statement.
+
+516
+01:14:38,587 --> 01:14:44,067
+In order to show you that it is being actually closed, I have that printout to the console.
+
+517
+01:14:44,827 --> 01:14:46,327
+Now let's try this.
+
+518
+01:14:51,283 --> 01:14:56,804
+Okay. First, let's have appropriate information.
+
+519
+01:15:03,155 --> 01:15:06,595
+Ok, there is nothing wrong with that and scanner is plastic.
+
+520
+01:15:12,212 --> 01:15:24,212
+The person's name is A. Ah, there's no problem. Impossible info, name is too short, A. Scanner closing because the final log has been executed.
+
+521
+01:15:24,212 --> 01:15:32,212
+And then that output, those three lines of outputs are the...
+
+522
+01:15:33,427 --> 01:15:39,788
+They have been printed out because of that print stack trace statements.
+
+523
+01:15:43,028 --> 01:15:44,907
+That's it for the name.
+
+524
+01:15:45,327 --> 01:15:47,528
+And let's check for the age too.
+
+525
+01:15:55,091 --> 01:16:01,572
+Okay, now in that case, impossible age, and the rest is the same.
+
+526
+01:16:04,051 --> 01:16:08,771
+That's it. If you have any questions, you are free to ask.
+
+527
+01:16:14,051 --> 01:16:20,771
+Just one more thing. Let's comment out this one and open this and then execute.
+
+528
+01:16:28,532 --> 01:16:38,011
+Look, in that case, we didn't override the string method of the exception.
+
+529
+01:16:39,572 --> 01:16:51,891
+Therefore, the default behavior is only having that appropriate information here.
+
+530
+01:16:52,256 --> 01:16:57,796
+The more detailed trace is not being written.
+
+531
+01:16:59,336 --> 01:17:02,156
+If you wish, you can use both too.
+
+532
+01:17:02,156 --> 01:17:03,956
+No problem about that.
+
+533
+01:17:04,516 --> 01:17:19,016
+But I always ask you to print that printstack trace method and overwrite this string construct.
+
+534
+01:17:30,515 --> 01:17:36,735
+Well, in that case, this information is duplicated, but there's nothing wrong with that.
+
+535
+01:17:37,735 --> 01:17:49,475
+And I am rather inclined to have those red lines shown too, so that a regular user can understand better that something has gone wrong.
+
+536
+01:17:49,971 --> 01:18:00,051
+If you wish it to be happen, then use clean stack trace or otherwise use the to string method.
+
+537
+01:18:00,591 --> 01:18:01,332
+Either way you wish.
+
+538
+01:18:01,931 --> 01:18:04,611
+But please use any of them.
+
+539
+01:18:05,291 --> 01:18:07,131
+Otherwise I will break some points.
+
+540
+01:18:10,031 --> 01:18:10,891
+That's it.
+
+541
+01:18:13,471 --> 01:18:13,971
+Right.
+
+542
+01:18:14,931 --> 01:18:16,251
+Söyle varsa buyurun arkadaşlar.
+
+543
+01:18:20,787 --> 01:18:23,647
+Soru yoksa da ara verme vaktimiz gelmiştir.
+
+544
+01:18:26,047 --> 01:18:32,467
+Bunun için de, 10 dakika, 15, 17, 15, 20 diyelim.
+
+545
+01:18:32,587 --> 01:18:33,967
+Biraz aramızda doğrusu.
+
+546
+01:18:36,067 --> 01:18:42,507
+15, 20 ile 15, 30 arasında al.
+
+547
+01:31:44,020 --> 01:31:47,300
+Okay, class break time is over. We can continue.
+
+548
+01:31:51,123 --> 01:31:53,123
+Ok, after announce, what do we have?
+
+549
+01:31:54,804 --> 01:32:04,484
+Now we will learn about how to make unit tests. Unit testing is an important topic in coding and software development.
+
+550
+01:32:06,323 --> 01:32:07,123
+Up to now,
+
+551
+01:32:07,359 --> 01:32:09,359
+How did we make our tests?
+
+552
+01:32:10,359 --> 01:32:22,359
+We have coded a class having a main method and created some objects related down with each other, then run some methods of them.
+
+553
+01:32:23,359 --> 01:32:34,359
+And in every running of a particular method, we have checked the output of that method, the return of that method, and according to its return.
+
+554
+01:32:35,359 --> 01:32:40,619
+We have determined either the test is successful or not.
+
+555
+01:32:43,000 --> 01:32:54,019
+What we did is in fact called unit testing, but there should be a way of automating those unit testing.
+
+556
+01:32:54,739 --> 01:32:55,819
+Well, don't get me wrong.
+
+557
+01:32:55,899 --> 01:33:00,587
+We will continue to write some unit tests, but...
+
+558
+01:33:00,756 --> 01:33:08,756
+We will have an assistance while evaluating the test results.
+
+559
+01:33:11,756 --> 01:33:16,756
+For that case, we need a unit testing tool.
+
+560
+01:33:16,756 --> 01:33:24,756
+And we will learn how to use the JUnit library, the JUnit tool, for this purpose.
+
+561
+01:33:25,747 --> 01:33:32,307
+And also, you will use this tool in your project assignment too.
+
+562
+01:33:33,207 --> 01:33:40,527
+You will be required to add some unit cases to your project work as well.
+
+563
+01:33:41,307 --> 01:33:45,268
+And this is a mandatory part of your project assignment.
+
+564
+01:33:49,171 --> 01:33:55,031
+There are different versions of that JUnit library.
+
+565
+01:33:55,811 --> 01:34:01,711
+We will learn about two versions of it, version 3 and version 4.
+
+566
+01:34:03,131 --> 01:34:15,711
+They are backwards compatible, so we should first learn about version 3, and then on top of it, we will learn...
+
+567
+01:34:15,891 --> 01:34:17,051
+version 4.
+
+568
+01:34:19,252 --> 01:34:30,951
+The JUnit framework package is the main package that we will use in order to be able to use that JUnit framework.
+
+569
+01:34:32,011 --> 01:34:36,471
+There's a class named testcase in that package.
+
+570
+01:34:37,363 --> 01:34:46,263
+We will write our test classes by extending from this test case class.
+
+571
+01:34:47,163 --> 01:34:52,724
+If our code to be tested, which means our application,
+
+572
+01:34:53,199 --> 01:34:58,500
+For example, consists of two classes such as AppClass1 and AppClass2.
+
+573
+01:34:59,159 --> 01:35:13,299
+We will create one class, one test class for each of our application classes that we want to test in general.
+
+574
+01:35:13,299 --> 01:35:17,260
+And if we are using version 3,
+
+575
+01:35:17,747 --> 01:35:23,228
+The names always should begin with the word test.
+
+576
+01:35:23,867 --> 01:35:32,608
+If we are about to test app class 1, then our test class should be named test app class 1, etc.
+
+577
+01:35:33,827 --> 01:35:42,447
+And in that test class, we will quote some methods beginning the word test.
+
+578
+01:35:45,460 --> 01:35:54,380
+We will test every responsibility of that app class in separate test something methods.
+
+579
+01:35:56,500 --> 01:36:08,220
+And, but before testing, we have to generate some application logic objects and associate them with each other.
+
+580
+01:36:08,760 --> 01:36:09,800
+Where can we do it?
+
+581
+01:36:09,800 --> 01:36:12,800
+We will do it in that test class.
+
+582
+01:36:13,363 --> 01:36:24,043
+Where exactly we had to override that setup method inherited from the test case in our test classes.
+
+583
+01:36:24,863 --> 01:36:32,844
+This is the place that we should generate the necessary objects and build the relationships.
+
+584
+01:36:33,439 --> 01:36:42,899
+After that, we will be calling those test something methods in order to test the responsibilities of that app class 1, for example.
+
+585
+01:36:44,479 --> 01:36:49,800
+And how actually can we determine whether a test is successful or not?
+
+586
+01:36:49,800 --> 01:36:58,519
+We will use the static methods of the assert class of the JUnit Framework Package.
+
+587
+01:36:59,859 --> 01:37:07,719
+The general way of testing is first you have an expected result.
+
+588
+01:37:08,219 --> 01:37:13,539
+Then you create, you learn some method and obtain a generated result.
+
+589
+01:37:14,259 --> 01:37:20,659
+If the generated result is the same as the expected result, then we say that the test is successful.
+
+590
+01:37:21,539 --> 01:37:24,319
+In order to make some assessment,
+
+591
+01:37:24,948 --> 01:37:28,348
+We will use the assert equals method.
+
+592
+01:37:29,508 --> 01:37:37,148
+This method will take expects two parameters of type object.
+
+593
+01:37:38,248 --> 01:37:41,688
+Remember that object is the cosmic superclass in Java.
+
+594
+01:37:41,688 --> 01:37:49,588
+Therefore, you can give any type of objects, in fact, if you wish, here as parameters.
+
+595
+01:37:50,931 --> 01:38:06,391
+If the expected object does equal to the obtained object, then assertEqualism method returns true, and we will assume that this test is successful.
+
+596
+01:38:07,531 --> 01:38:13,351
+If you wish, this in the reverse logic.
+
+597
+01:38:14,036 --> 01:38:20,036
+So you are trying to determine whether an object is not null.
+
+598
+01:38:20,036 --> 01:38:24,036
+If that object is not null, then the test is successful.
+
+599
+01:38:24,036 --> 01:38:27,036
+Otherwise, the test fails.
+
+600
+01:38:27,036 --> 01:38:30,036
+In that case, you can use assert not equals.
+
+601
+01:38:30,036 --> 01:38:36,940
+One object is the tested object and the other one is null, for example.
+
+602
+01:38:38,131 --> 01:38:56,031
+Or if you want to be a test to successful if returns a true value, for example, you can give the return value of that method to the assert true method of the assert class.
+
+603
+01:38:56,331 --> 01:39:04,211
+If that Boolean statement is true, then assert true will say that this test is successful.
+
+604
+01:39:04,979 --> 01:39:08,359
+And the reverse logic is the assert-force method.
+
+605
+01:39:09,719 --> 01:39:18,359
+Well, if you wish, instead of using assert-not-requals with a null parameter, we have two additional methods as well.
+
+606
+01:39:18,359 --> 01:39:24,999
+The assert-null method expects an object, and if that object is null, then the test is successful.
+
+607
+01:39:25,879 --> 01:39:30,839
+And the reverse logic is assert-not-null method.
+
+608
+01:39:32,756 --> 01:39:37,596
+Well, considering this, okay, one more thing to do.
+
+609
+01:39:38,376 --> 01:39:49,756
+When you write test up class one and test up class two, et cetera, you can right click on them in Eclipse and run them as test cases, JV test cases.
+
+610
+01:39:50,536 --> 01:39:59,756
+But if you wish multiple test cases to be grouped in a suite, then you can...
+
+611
+01:40:00,000 --> 01:40:07,639
+We can create a class named such as testO and add a suite method to that class.
+
+612
+01:40:07,639 --> 01:40:09,759
+I will show the details in code.
+
+613
+01:40:09,759 --> 01:40:14,000
+It's rather cumbersome to show it in the UML class there.
+
+614
+01:40:17,332 --> 01:40:21,332
+And one more thing, one more important thing to say.
+
+615
+01:40:21,752 --> 01:40:31,672
+This setup method overridden in your test classes will be executed each time before a test something method executes.
+
+616
+01:40:32,252 --> 01:40:37,172
+This is an important information to build your test cases.
+
+617
+01:40:40,851 --> 01:40:55,011
+And I will also show you about the version 4, which is backwards compatible with version 3, but it gives you two important new features.
+
+618
+01:40:55,692 --> 01:41:01,391
+First one is you don't need to inherit from the test case class.
+
+619
+01:41:07,731 --> 01:41:15,032
+And moreover, you don't need to begin your test method names with the name test.
+
+620
+01:41:15,032 --> 01:41:32,032
+But if you are not doing this, then you have to add an annotation to the beginning of your every test method with the having at test annotation.
+
+621
+01:41:33,492 --> 01:41:37,852
+And you don't have to override the setup method as well.
+
+622
+01:41:38,132 --> 01:41:42,252
+But in that case, you have to add the atB4 annotation.
+
+623
+01:41:43,172 --> 01:41:46,231
+Those annotations are actually case sensitive.
+
+624
+01:41:46,912 --> 01:41:50,532
+Therefore, the correct versions are third letter encrypted case.
+
+625
+01:41:51,192 --> 01:41:55,752
+So let me please collect this in the slide too.
+
+626
+01:41:55,752 --> 01:42:00,772
+And here.
+
+627
+01:42:02,868 --> 01:42:03,288
+Okay.
+
+628
+01:42:09,076 --> 01:42:32,076
+I have to save it. Don't forget to save it. Okay. And our test code becomes something like that. And version 4, you can test for exceptions as well. In version 3, you can't do such a thing, but in version 4, you can do it. For example,
+
+629
+01:42:32,692 --> 01:42:45,351
+If you want a test to be successful, if a specific exception is true, then you can add a parameter to the test annotation.
+
+630
+01:42:45,871 --> 01:42:51,171
+You write expected equals to some exception, that class, and write in parentheses.
+
+631
+01:42:52,011 --> 01:42:56,951
+This means that you are passing, you are giving a parameter to the test annotation.
+
+632
+01:42:56,951 --> 01:42:58,951
+The expected parameter is...
+
+633
+01:42:59,347 --> 01:43:01,648
+The exception that you want to test for.
+
+634
+01:43:03,347 --> 01:43:11,448
+And in a test, in this test method, well, actually you don't have to name it with beginning with test, but
+
+635
+01:43:11,448 --> 01:43:16,047
+Alışkanlık, alışkanlık.
+
+636
+01:43:17,136 --> 01:43:28,496
+Arkadaşlar, therefore, in order for your test code to begin more backwards compatible with previous version, keep that tradition too.
+
+637
+01:43:29,496 --> 01:43:38,116
+You can, although you are using the at-test connotation, you can name your method as test something as well.
+
+638
+01:43:38,716 --> 01:43:40,776
+This is a good practice, in my opinion.
+
+639
+01:43:41,524 --> 01:43:46,604
+Okay. Whether that exception is checked or unchecked.
+
+640
+01:43:47,572 --> 01:43:56,132
+You can, if you wish, add the truth statement. If this is checked, you have to add the truth statement, of course.
+
+641
+01:43:57,012 --> 01:44:06,172
+And you can do something that creates this exception. In that case, if this exception is strong, then this case is successful.
+
+642
+01:44:06,172 --> 01:44:15,552
+And the good thing is the test for to flow does not halt. Normally, when an exception occurs, either
+
+643
+01:44:15,572 --> 01:44:23,972
+Çekkeşt or unchecked, the execution is halted. The execution stops. However, the Tesla...
+
+644
+01:44:24,243 --> 01:44:28,423
+We deliberately trying to generate that exception.
+
+645
+01:44:28,843 --> 01:44:32,023
+If that exception is strong, then the test is successful.
+
+646
+01:44:32,443 --> 01:44:34,963
+Please continue testing some other things.
+
+647
+01:44:36,783 --> 01:44:43,283
+Therefore, there is no problem in version 4 when testing for exceptions.
+
+648
+01:44:44,563 --> 01:44:44,703
+Okay.
+
+649
+01:44:46,703 --> 01:44:50,699
+Now, I will give a...
+
+650
+01:44:50,804 --> 01:45:03,104
+More complex example for unit testing, but before that, we have just tried some test code, as you see.
+
+651
+01:45:04,364 --> 01:45:11,044
+This is the person Java having some impossible name of age.
+
+652
+01:45:11,804 --> 01:45:18,104
+Now, let's try to make some unit testing in here.
+
+653
+01:45:18,931 --> 01:45:21,751
+About exceptions, if you wish.
+
+654
+01:45:23,191 --> 01:45:30,771
+And let's use that version 4, JNUT version 4 for this purpose.
+
+655
+01:45:31,131 --> 01:45:35,351
+Let's do it first, then check the example.
+
+656
+01:45:36,571 --> 01:45:41,171
+For this purpose in the Denomelar project.
+
+657
+01:45:42,899 --> 01:45:56,759
+I copy this package to here and refactor rename.
+
+658
+01:45:56,759 --> 01:46:04,659
+After simple sequence, continue.
+
+659
+01:46:04,659 --> 01:46:07,139
+Okay, now close all.
+
+660
+01:46:09,460 --> 01:46:13,560
+And have this, for example.
+
+661
+01:46:14,979 --> 01:46:25,720
+Now, to my main project, this Denamela project, I have to add the JUnit framework here.
+
+662
+01:46:30,899 --> 01:46:39,460
+If you wish, you can use the buildpad, configure buildpad, or you can go to properties, then go to the Java buildpad.
+
+663
+01:46:39,460 --> 01:46:56,420
+In the libraries, you can, in here, classpad part, you can click add, not add variable, add library.
+
+664
+01:46:57,108 --> 01:46:58,807
+And select JUnit here.
+
+665
+01:46:59,328 --> 01:47:06,268
+It comes bundled with AdWords, so you don't have to download the latest.
+
+666
+01:47:06,627 --> 01:47:16,127
+If you wish, you can download the latest jar file for the JUnit and add it by using add external jars.
+
+667
+01:47:16,788 --> 01:47:21,528
+Or, this is not necessary, you click add library, then JUnit.
+
+668
+01:47:22,771 --> 01:47:26,311
+Then you write the version.
+
+669
+01:47:26,931 --> 01:47:29,332
+Well, now we will be using version 4.
+
+670
+01:47:33,268 --> 01:47:34,508
+Webline Close.
+
+671
+01:47:35,728 --> 01:47:38,248
+Now we can make our tests.
+
+672
+01:47:42,963 --> 01:47:52,403
+New class, test, person, info, for example.
+
+673
+01:47:57,684 --> 01:48:19,884
+Now, I have to import something from that. I have to import that annotations from the Jaint library. How can we do that? I don't remember. Let's just look at this. Okay. Jaint framework.
+
+674
+01:48:24,059 --> 01:48:25,059
+Ne?
+
+675
+01:48:23,315 --> 01:48:26,475
+Şimdi test testten import etmesem olmuyor muydu?
+
+676
+01:48:26,475 --> 01:48:27,475
+Bakalım.
+
+677
+01:48:28,315 --> 01:48:29,475
+Şöyle yapayım da.
+
+678
+01:48:30,076 --> 01:48:31,635
+Arkadaşlar şundan çok emin değilim.
+
+679
+01:48:31,635 --> 01:48:33,876
+O yüzden biraz da karmaşık olduğu için bir şey geçiyorum.
+
+680
+01:48:33,876 --> 01:48:34,555
+Özür dilerim.
+
+681
+01:48:34,555 --> 01:48:37,435
+Yani karmaşık bir şey yaparken hem de çok yani...
+
+682
+01:48:38,155 --> 01:48:39,555
+İngilizce geçemiyorum.
+
+683
+01:48:39,555 --> 01:48:40,235
+Şuraya bakmayın.
+
+684
+01:48:40,235 --> 01:48:41,876
+Sonra belki İngilizce toparlarım.
+
+685
+01:48:43,515 --> 01:48:44,876
+Import tabii.
+
+686
+01:48:51,444 --> 01:49:01,344
+Peki. Şimdi şöyle bir şey yapacağız. Setup metodunu başına annotation koyarak yapacağız. Tamam peki.
+
+687
+01:49:01,884 --> 01:49:06,364
+Şimdi oradan da kopyalacak mimasını da şuradan şey san daha iyi olur tabii ki.
+
+688
+01:49:08,704 --> 01:49:15,744
+Şuradan söylediklerin gibi. Evet, ihnet etmek gerekmiyordu ama bir import gerekiyor muydu bakalım şimdi.
+
+689
+01:49:20,148 --> 01:49:20,927
+Bakalım şimdi.
+
+690
+01:49:24,167 --> 01:49:27,728
+Let's use the at before annotation.
+
+691
+01:49:29,208 --> 01:49:32,528
+But, niye anladı?
+
+692
+01:49:32,927 --> 01:49:34,148
+Bunu şimdi sana bakın ama.
+
+693
+01:49:40,051 --> 01:49:54,011
+Ya da bir metot ekledikten sonra bunu koyalım. Bakalım. Şimdi setup metodumuzun imzası neydi? Public or set up peki. Ha ya da inherit etmek gerekiyor muydudur?
+
+694
+01:50:07,764 --> 01:50:09,963
+Ah, shit. Almadım.
+
+695
+01:50:11,963 --> 01:50:14,163
+Ne yapmam gerekiyor burada? Şimdi bakalım.
+
+696
+01:50:20,463 --> 01:50:24,563
+Evet, bak, hiçbir arada annotation'lar koydu. 3x versiyonuna göre yapmışım.
+
+697
+01:50:24,663 --> 01:50:25,963
+Ne yapıyorduk? Bunu bir...
+
+698
+01:50:28,463 --> 01:50:29,563
+Çekmek lazım.
+
+699
+01:50:30,355 --> 01:50:51,255
+Yani olmadı. Extraction şeyini biraz sonra yaprakıp, J3, 3'e göre bir şeyden gerek. Bu ayrı kısım. Unutmuşum. Bu kullanı, kullanı, kullanı. Peki, şey yapsak yine şu, test kerifler, Extranse X'e. O önemli olacak kaç yolda. Ama olmasın aslında ama.
+
+700
+01:50:56,819 --> 01:50:59,260
+Evet, hala şu annotation ile bağlı.
+
+701
+01:50:59,479 --> 01:51:00,100
+Bir yakın falan.
+
+702
+01:51:00,199 --> 01:51:01,519
+Üç müde bir simbol oluştururken.
+
+703
+01:51:02,559 --> 01:51:03,720
+Dört demiş olmam lazım.
+
+704
+01:51:07,796 --> 01:51:08,796
+Neyse, dupakala.
+
+705
+01:51:13,652 --> 01:51:22,612
+Confirure, build-pets, confirmure build-pets, bakalım. Evet, şeyin 4 aslında.
+
+706
+01:51:23,752 --> 01:51:40,212
+Bakın, 4'ü unutmuşum diyelim. Öyle söyleyelim. Evet, bir dakika, yoksa şey mi? Yoksa bir dakika, onu bir annotation yapmam gerekiyor.
+
+707
+01:51:41,684 --> 01:51:44,684
+Annotation'da da item import ediyorduk.
+
+708
+01:51:47,684 --> 01:51:49,684
+Şimdi bakalım.
+
+709
+01:51:53,300 --> 01:51:55,300
+Onu zaten .yadız dedim.
+
+710
+01:51:55,300 --> 01:52:00,300
+.yadız. Ondan sonra ciharlar edip, yemedim.
+
+711
+01:52:00,300 --> 01:52:02,300
+Sevinmem gerekiyor.
+
+712
+01:52:02,300 --> 01:52:06,300
+Peki. Extensions değil.
+
+713
+01:52:06,300 --> 01:52:10,300
+Render değil zaten. Textor zaten değil.
+
+714
+01:52:10,300 --> 01:52:12,300
+Ama filanın acaba alt paketi mi var?
+
+715
+01:52:12,300 --> 01:52:15,300
+.yok.
+
+716
+01:52:15,300 --> 01:52:17,100
+Mesela tamam.
+
+717
+01:52:20,692 --> 01:52:29,852
+Bunu unutmuşum arkadaşlar. 3x'e göre yapacağız. Öyle söyleyeyim. 4x ile 3x'e geriye doğru uyumlu olduğu için.
+
+718
+01:52:31,412 --> 01:52:41,312
+Evet ama madem XF'ini test etmeyeceğiz o zaman şunun bir şeyine bakmalının bir anlamı yok. Yani şu versiyonunda kalsın.
+
+719
+01:52:41,852 --> 01:52:47,852
+Tamam peki söylediğimi geri alıyorum arkadaşlar. Maalesef. Ben şimdi şöyle bir...
+
+720
+01:52:47,872 --> 01:52:50,152
+Şey yapayım, şimdi silmadım.
+
+721
+01:52:51,052 --> 01:52:52,532
+Şuraya de bir noktışayım.
+
+722
+01:53:00,467 --> 01:53:00,967
+Evet.
+
+723
+01:53:12,500 --> 01:53:14,699
+Gözler meşe bir tane açıklama koyayım.
+
+724
+01:53:17,699 --> 01:53:18,139
+Şaba.
+
+725
+01:53:20,699 --> 01:53:21,300
+Şey.
+
+726
+01:53:49,043 --> 01:54:10,764
+Peki. Böyle yapacağız. Sonraki dönemler için. Ama ona bir baksan iyi olur. Yani ya da şey deriz ya projelerinde. Exceptionlara şey etmenize gerek yok. Exceptionlar, o. Evet, demenize gerek yok. Peki tamam. Öyle olsun.
+
+727
+01:54:14,868 --> 01:54:16,868
+Şuradan devam edelim.
+
+728
+01:54:16,868 --> 01:54:18,868
+Okey.
+
+729
+01:54:18,868 --> 01:54:23,868
+Şimdi en son kaçta başlamıştık bu arada?
+
+730
+01:54:23,868 --> 01:54:24,868
+Buçukta başlamıştık.
+
+731
+01:54:24,868 --> 01:54:26,868
+Tamam yani.
+
+732
+01:54:26,868 --> 01:54:28,868
+Dört buçağa kadar şeyimiz var.
+
+733
+01:54:28,868 --> 01:54:30,868
+Hatta buna göre...
+
+734
+01:54:30,868 --> 01:54:34,868
+Buçukta bitiririm.
+
+735
+01:54:34,868 --> 01:54:38,508
+Class'la yakın ziyaçla.
+
+736
+01:54:44,115 --> 01:54:46,296
+Evet, bu.
+
+737
+01:54:46,296 --> 01:54:49,296
+Evet.
+
+738
+01:54:52,756 --> 01:54:58,756
+Tamam, şimdi şimdi.
+
+739
+01:55:05,587 --> 01:55:10,628
+Windows 10'nin bazı şeylerin alışı oluşuyor da şu çocuk mesela engelliyor sunum moduna girmeme rağmen.
+
+740
+01:55:11,188 --> 01:55:13,828
+Ama neden böyle yapıyorsun? Alınamadım yani.
+
+741
+01:55:18,644 --> 01:55:19,644
+Shimlod.
+
+742
+01:55:21,144 --> 01:55:22,144
+Okay.
+
+743
+01:55:23,144 --> 01:55:24,144
+Let's go back.
+
+744
+01:55:24,543 --> 01:55:43,115
+Now, in order to make a more meaningful unit testing, which incorporates, for example, a larger class or multiple classes, first let's examine a simple code.
+
+745
+01:55:43,444 --> 01:55:48,564
+This quote is obtained from Martin Fogler's Refactoring Book.
+
+746
+01:55:49,264 --> 01:55:51,144
+This is a different subject.
+
+747
+01:55:52,684 --> 01:55:58,963
+This is a topic of a graduate course of mine.
+
+748
+01:55:59,475 --> 01:56:05,975
+But the factoring is also done by using small step-by-step tests.
+
+749
+01:56:05,975 --> 01:56:12,975
+So this book, this example is not taken from a testing book, but from that book.
+
+750
+01:56:12,975 --> 01:56:20,875
+Well, our domain model is in Nehyurama class diagram.
+
+751
+01:56:20,884 --> 01:56:44,703
+We have a customer. First of all, this application is a movie rental example. Back in the days, we had some VHS video cassettes. Maybe you don't, you have never seen such VHS recorders or VHS player, but I did. Then came Netflix.
+
+752
+01:56:45,216 --> 01:56:54,576
+Netflix was first shipping physical DVDs to the clients, then internet revolution.
+
+753
+01:56:55,507 --> 01:57:02,507
+ve şimdi, bu konuda da
+
+754
+01:57:02,507 --> 01:57:05,148
+Netflix'in
+
+755
+01:57:05,148 --> 01:57:06,507
+elektronik
+
+756
+01:57:06,507 --> 01:57:08,507
+ve
+
+757
+01:57:08,507 --> 01:57:10,507
+bu konuda
+
+758
+01:57:10,507 --> 01:57:19,507
+birçok
+
+759
+01:57:19,507 --> 01:57:21,507
+bu
+
+760
+01:57:23,507 --> 01:57:24,868
+Zdan, Sinanas.
+
+761
+01:57:26,427 --> 01:57:26,728
+Okay.
+
+762
+01:57:27,108 --> 01:57:31,248
+We have customers and we have movies.
+
+763
+01:57:31,923 --> 01:57:38,123
+Each customer can rent a different movie for different durations.
+
+764
+01:57:38,123 --> 01:57:42,583
+Therefore, we also need to have a rental class.
+
+765
+01:57:43,244 --> 01:57:52,064
+One customer will have multiple rentals and each rental is for one particular movie.
+
+766
+01:57:53,984 --> 01:57:58,824
+The statement method of the customer gives us an output.
+
+767
+01:57:59,283 --> 01:58:01,783
+Bu birçok birçok, birçok.
+
+768
+01:58:02,783 --> 01:58:13,903
+Bu birçok.
+
+769
+01:58:14,452 --> 01:58:42,452
+ve sonraki bir diğer filmi için bir daha fazla bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için bir günler için
+
+770
+01:58:42,452 --> 01:58:52,792
+This statement method will, in fact, return a string that contains the contents of that statement.
+
+771
+01:58:54,731 --> 01:58:57,632
+And what about the rental class?
+
+772
+01:58:57,972 --> 01:59:00,872
+It has a how many days rented member field.
+
+773
+01:59:02,552 --> 01:59:04,592
+It has three methods.
+
+774
+01:59:05,392 --> 01:59:09,452
+GetCharge returns the fee of that rental operation.
+
+775
+01:59:10,100 --> 01:59:14,320
+GetBonus returns the points earned from this rental.
+
+776
+01:59:14,860 --> 01:59:20,220
+And GetMovieTitle returns the title of the movie which has been rented.
+
+777
+01:59:21,240 --> 01:59:25,079
+Because it will be written in the statement.
+
+778
+01:59:26,140 --> 01:59:27,420
+And what about the movie?
+
+779
+01:59:28,079 --> 01:59:30,660
+There is a price code for the movies.
+
+780
+01:59:30,660 --> 01:59:35,760
+There are three different kinds of movies in our application.
+
+781
+01:59:36,176 --> 01:59:46,636
+First one is regular movies. Second one is new released movies. And the third one is child movies, movies for children.
+
+782
+01:59:46,636 --> 01:59:55,476
+The rental fees and the obtained bonuses are different for each different type of movie.
+
+783
+01:59:55,476 --> 02:00:00,000
+Well, actually, this design is not as far...
+
+784
+02:00:00,000 --> 02:00:01,000
+Artlon Perfect.
+
+785
+02:00:01,000 --> 02:00:06,000
+This design is not optimal because it's taken from manufacturing.
+
+786
+02:00:06,000 --> 02:00:12,000
+This design will be defined step by step.
+
+787
+02:00:12,000 --> 02:00:27,000
+For example, instead of using a price code here in the movie class, we should better use an enum or much better
+
+788
+02:00:27,828 --> 02:00:38,448
+We can make this movie class as abstract and have these three different types of movies as subclasses of that movie.
+
+789
+02:00:39,868 --> 02:00:45,128
+Maybe I have the better designs later or maybe not.
+
+790
+02:00:45,847 --> 02:00:47,148
+I will see about that.
+
+791
+02:00:48,087 --> 02:00:51,528
+If I don't, then I will show you better designs.
+
+792
+02:00:52,115 --> 02:00:55,715
+Let's consider this version for now, okay?
+
+793
+02:00:56,315 --> 02:01:00,115
+We want to be able to test our system.
+
+794
+02:01:01,115 --> 02:01:10,115
+We want to be able to test, collect rental fees for each different types of movies, etc.
+
+795
+02:01:12,115 --> 02:01:17,115
+You can see the sequence diagram of the state movement on the right hand side.
+
+796
+02:01:18,100 --> 02:01:22,500
+But if you wish, we will look at the source code too.
+
+797
+02:01:25,620 --> 02:01:30,060
+And then we will examine the test code.
+
+798
+02:01:32,500 --> 02:01:34,460
+Bakalım şimdi bu neredeydi?
+
+799
+02:01:35,980 --> 02:01:37,820
+Bakalım, aynı paketteymiş.
+
+800
+02:01:37,820 --> 02:01:40,040
+Belki testing paketindesi lazım.
+
+801
+02:01:44,148 --> 02:01:46,768
+Ah, okay, so there's unit testing by forms.
+
+802
+02:01:47,088 --> 02:01:47,208
+Okay.
+
+803
+02:01:48,568 --> 02:01:51,408
+Let's check the customer class.
+
+804
+02:01:52,788 --> 02:01:54,128
+Customer has a name.
+
+805
+02:01:55,008 --> 02:02:02,208
+Well, actually, the name of that member field begins with an underscore.
+
+806
+02:02:03,408 --> 02:02:04,408
+Why underscore?
+
+807
+02:02:05,488 --> 02:02:10,388
+This is a tradition from the C++ language.
+
+808
+02:02:11,764 --> 02:02:24,284
+Moreover, it may become handy, it may be useful when your ide is not making some highlights and coloring.
+
+809
+02:02:25,963 --> 02:02:37,463
+In the days of old ides, for example, this is a member field, so it is colored with blue, red or blue.
+
+810
+02:02:37,971 --> 02:02:43,171
+But assume that this is a monochrome computer.
+
+811
+02:02:43,612 --> 02:02:49,051
+Then how can you easily understand whether something is a member field or not?
+
+812
+02:02:49,612 --> 02:02:55,391
+Then you begin all member fields with the underscore character.
+
+813
+02:02:56,051 --> 02:02:57,831
+This is why it is S here.
+
+814
+02:02:58,951 --> 02:03:03,791
+It isn't necessary to do so, but in that example, it is done this way.
+
+815
+02:03:06,739 --> 02:03:08,739
+And we have a...
+
+816
+02:03:08,739 --> 02:03:15,739
+Okay, we haven't studied those generic classes yet.
+
+817
+02:03:15,739 --> 02:03:24,739
+So maybe it should be better to move this after the generic classes.
+
+818
+02:03:24,739 --> 02:03:28,739
+Can we do it? Let's check it for a moment, please.
+
+819
+02:03:34,963 --> 02:03:49,963
+Aslında bundan sonra taşısaymışız ve hayır olmamış ama proje ödevini erken vermişiz geçen senede. O yüzden böyle kuralara mı taşımışız? Belki de öyle ama ondan sonra direkt bakın şeylere başlıyoruz.
+
+820
+02:03:52,104 --> 02:04:02,024
+Evet, evet. Assert şuradaymış. Impostive Assert. Aa, evet. Ya, buradaymış işte. Aman peki. Hemen onu öyle bir şey diyeyim, notumu düzelteyim.
+
+821
+02:04:02,484 --> 02:04:07,244
+Şu 179. yansıta olduğu gibi.
+
+822
+02:04:08,204 --> 02:04:11,364
+Tamam. 179. yansıta bir portası değilmiş.
+
+823
+02:04:35,828 --> 02:04:36,688
+Mekanada.
+
+824
+02:04:40,595 --> 02:04:42,935
+Şimdi örneğimize geri dönelim.
+
+825
+02:04:53,011 --> 02:05:10,332
+Peki, şuradaki yumurta tavuk meselesini nasıl çözeceğiz? Yani önce şey, genelik class, ondan sonra test. Peki, o zaman sözler söyleyeceğiz sadece.
+
+826
+02:05:20,404 --> 02:05:21,124
+Dikki.
+
+827
+02:05:22,644 --> 02:05:23,324
+Herşey burada.
+
+828
+02:05:25,724 --> 02:05:26,124
+Dikki.
+
+829
+02:05:27,224 --> 02:05:27,584
+Tamam.
+
+830
+02:05:30,384 --> 02:05:30,804
+Sonra.
+
+831
+02:05:32,804 --> 02:05:33,564
+Daha.
+
+832
+02:05:38,444 --> 02:05:39,164
+Dikki.
+
+833
+02:05:40,284 --> 02:05:42,264
+Ve buradaki ikinci.
+
+834
+02:05:42,824 --> 02:05:44,804
+Notum olarak.
+
+835
+02:05:46,004 --> 02:05:47,244
+Şey.
+
+836
+02:05:50,612 --> 02:05:52,612
+Yıldız peşi.
+
+837
+02:05:55,612 --> 02:06:00,612
+Sıfı bile yok ama daha görmedik.
+
+838
+02:06:02,612 --> 02:06:04,612
+Yıldız peşi.
+
+839
+02:06:08,612 --> 02:06:12,612
+Sıfı bile yok ama daha görmedik.
+
+840
+02:06:19,796 --> 02:06:28,376
+Peki. Nasıl çözelim bilmiyorum şimdi bunu. Ama en azından notum düşeyim. Daha sonra başka bir zaman bakalım.
+
+841
+02:06:33,176 --> 02:06:46,816
+Now, just let me explain it as this. Vector is a data structure which is very similar to a single linked list.
+
+842
+02:06:47,315 --> 02:07:03,455
+Ok. You have the data structures lectures. Bu veri yapılarında şeye geçtiniz mi? Bu listeleri falan filan yaptınız mı arkadaşlar? Gördünüz mü? Görüşmanız lazım diye düşünüyorum.
+
+843
+02:07:08,307 --> 02:07:27,188
+Haberiniz var mı? Şey, liste hepsinden, linked list, tek yönlü, tek yönlü bağlı liste. Olması lazım. Olduğunu şey ediyorum, kabul ediyorum. Ya da şöyle azıcık hızlı ilerlersen, şöyle söyleyeyim.
+
+844
+02:07:28,787 --> 02:07:32,747
+Gördük hocam ya. Geçen yıl almışsın ben deyorsam. O yüzden yorum yapmak istedim.
+
+845
+02:07:34,036 --> 02:07:50,476
+Tamam, peki. Hani bu dönem alan varsa hocam ben bunu bilmiyorum. Varsa desin muhtemelen? Ama yani şöyle bir sıra işte. Düğümlerden oluşuyor. Her düğümün bir verisi ve sonraki düğümü gösteren bir işaretçisi var. İlk düğüm önemli.
+
+846
+02:07:50,996 --> 02:07:59,395
+Çünkü veri yapısına nereden başlar? İlk kere zincirin bir şey kaçırsan daha sonra bulmak mümkün olmuyor. O yüzden ilk düğümün emniyor.
+
+847
+02:07:59,395 --> 02:08:03,895
+Bu şekilde herhalde bir eleman, bir sonraki eleman gösterilir. O yüzden bir veri yapısı bu.
+
+848
+02:08:03,895 --> 02:08:08,895
+Şimdi bu veri yapısında bizim bu düğümlerimiz buradaki örnekte tam sayı.
+
+849
+02:08:08,895 --> 02:08:16,496
+Peki ya ondaklı sayı içeren düğümden oluşturmanız gerekirse ne olacak? Bir de onun için ayrı bir tip yazmanız gerekiyor.
+
+850
+02:08:17,043 --> 02:08:26,884
+Fakat sonra şimdi burada bizim farklı sınıflarımız oldu. Rental'ları tutacağız. Ondan sonra ne bileyim daha bir önceki örnekle tarifleri tutacağız.
+
+851
+02:08:27,103 --> 02:08:39,304
+Diyelim ki ya daha da subscription'ları tutacağız falan filan. Envartor sınıf yazabiliriz. Yazacağımız Envartor sınıf için bu veri yapılarının kodunu tekrar tekrar mı yazmamız gerekiyor? Böyle bir şey olmamalı.
+
+852
+02:08:39,764 --> 02:08:51,184
+Buradaki veri düğümünün, yani verinin türünden bağımsız olarak bu veri yapısı ile ilgili işlemler hep aynı şekilde kodlanıyor.
+
+853
+02:08:52,243 --> 02:08:59,243
+Biz de ona uygun bir notasyon, öyle bir kodlama yapabilmeliyiz diye düşünüyoruz.
+
+854
+02:08:59,243 --> 02:09:03,203
+Ve işin içerisine jenerik sınıflar giriyor arkadaşlar.
+
+855
+02:09:04,043 --> 02:09:05,163
+Bu da şu demek oluyor.
+
+856
+02:09:05,876 --> 02:09:08,275
+Bu vektör bunu linked list olarak düşünün.
+
+857
+02:09:09,376 --> 02:09:11,876
+Bu linked list içerisinde,
+
+858
+02:09:12,275 --> 02:09:16,155
+virtual tool'dan objeler yer alacağının beyanını yapmış oluyoruz.
+
+859
+02:09:16,275 --> 02:09:17,836
+Böyle bir devinle arkadaşlar.
+
+860
+02:09:19,435 --> 02:09:22,695
+Ve bu zaten vektörde linked list desek,
+
+861
+02:09:23,336 --> 02:09:27,216
+hiç şey etmeyecek, bozmayacak, öyle çalışacak.
+
+862
+02:09:28,416 --> 02:09:31,056
+En azından şunu da şöyle not bir şey.
+
+863
+02:09:31,996 --> 02:09:32,815
+Oyağız ya.
+
+864
+02:09:33,184 --> 02:09:34,104
+Diyelim ki
+
+865
+02:09:34,104 --> 02:09:37,144
+Şurada
+
+866
+02:09:42,195 --> 02:09:51,615
+Vary Vector'larını NinketList'de. En afından bunu görmüş oluyorlar.
+
+867
+02:09:51,615 --> 02:09:53,295
+Oluyorsunuz.
+
+868
+02:09:58,739 --> 02:10:03,119
+Evet, okey. Şimdi daha iyi anlaşacağız inşallah.
+
+869
+02:10:07,252 --> 02:10:18,132
+Evet, pekala. İşte aynı YMNS'ın püçemesinde gördüğünüz gibi kira kayıtları tutuluyor. Bir linked list içerisinde. Rental tümden nesneler içilecek.
+
+870
+02:10:18,632 --> 02:10:27,572
+Bastımın ismini alan konstantiz. Yeni bir kira kaydı eklemek için ekleme metodu. İsim öğrenmek için geçtiği metod.
+
+871
+02:10:27,572 --> 02:10:32,332
+Şimdi şu statement metoduna bir bakalım. Ne yapıyormuş bu statement metodu?
+
+872
+02:10:32,720 --> 02:10:59,200
+Öncelikle bu listenin elemanlarını bir alıyor. Ondan sonra yavaş yavaş bu makbuzu oluşturmaya başlıyor. Bu result stringin içerisinde tutuyor makbuzun içeriğini. İşte bilmem kim için kira kaydı ilk satırı oluşturuyor. Sonra var dönüşü içerisinde bu iteratördeki bütün elemanlar için sırayla.
+
+873
+02:10:59,572 --> 02:11:22,492
+Öncelikle elemanı alıyor. Ondan sonra şu film için şu kadar bedel ödenecek şeklinde bunları bütün kira işlemleri için yaptıktan sonra toplam bu kadar borcumuz var ve toplam şu kadar da bonus kazandınız gibisinden çıktığı ekliyor string'e ve onu geri döndürüyor.
+
+874
+02:11:23,220 --> 02:11:47,659
+Peki, toplam bedel nasıl bulunur? Tek tek bütün kira kayıtlarının bedellerini alarak öğreniliyor. O da her bir kira kaydı için 10 geçer alıp, kümülatif toplamını alıp, onu gönderiyor. Bonus resatlamak da yine benzer şekilde kira kayıtlarının üzerinden yapılıyor. Böyle bir yapısı var aslında.
+
+875
+02:11:52,851 --> 02:12:04,291
+Hangi filmi kaç gün kiraladığının bilgileri tutuluyor. Constructor bir ikisini de alıyor. Getter metotları var. Get-charge metodu toplam bedeli hesaplamak için.
+
+876
+02:12:05,051 --> 02:12:15,371
+Orada da şöyle bir durum var aslında. Farklı film türlerinin farklı ücretleri vardı ya. Burada da o devreye giriyor. MULİ sınıfına da bakalım.
+
+877
+02:12:17,011 --> 02:12:36,152
+Şimdi, Moïse'nin üç tane türü vardır demiş ve bu şekilde Fabric, Finance, Statik üyeler vermiş. Aslında bunu umum yapsak daha iyi. Yani daha iyi bir tasarım ve kod onu gerektirir aslında. Fakat işte düzeltilecek diyelim.
+
+878
+02:12:36,787 --> 02:12:49,847
+Madem şimdi o vektörü listat falan diye elimdeymişken, onu da bari enum yapsak diyeyim yani. Madem elimizdeymişken.
+
+879
+02:12:54,427 --> 02:12:55,307
+Peki.
+
+880
+02:12:58,587 --> 02:13:00,467
+Elimdeymişken.
+
+881
+02:13:02,148 --> 02:13:02,868
+Bu değeri inşallah.
+
+882
+02:13:03,828 --> 02:13:05,948
+şey
+
+883
+02:13:05,948 --> 02:13:15,708
+bu yanlış kullanıma primitive obsession deniliyor arkadaşlar.
+
+884
+02:13:18,707 --> 02:13:32,028
+Bu bir kod sınavı. Tadil aslında ama daha iyi yapılabilecekken tasarım daha kullanılan programlama dilinin önerilerini çok dinlemeden yapılmış bir tasarım ve kodlama.
+
+885
+02:13:32,507 --> 02:13:43,307
+Bu yaptığımızda primitive profession deniliyor. Orada ya bir elum kullanmak daha doğru ya da işte bir movie-soyut sınıfı kullanıp onun somut art sınıfları olması daha doğru bir tasarım aslında.
+
+886
+02:13:46,707 --> 02:13:53,688
+Nasıl iyi tasarım yapılır bu derste anlatmıyoruz ama genelde yaptığımız tasarımlar hep iyi tasarım türünde oluyor.
+
+887
+02:13:54,028 --> 02:13:59,747
+Şimdi burada böyle bir örnek gelince de o an daha yaptıklarımız bozulmuş olmasın diyelim.
+
+888
+02:14:11,747 --> 02:14:13,927
+Evet, o da öyle olsun.
+
+889
+02:14:15,891 --> 02:14:21,011
+Sonra, şurada kalayım da, geri döndüm ama neyse.
+
+890
+02:14:22,072 --> 02:14:22,591
+Evet, peki.
+
+891
+02:14:23,311 --> 02:14:27,631
+Ondan sonra filmin adı ve fiyatı, buna korsak da dağılıyor.
+
+892
+02:14:28,243 --> 02:14:48,043
+Fiyat kodu için getirde Settler Method. Settler Method'u da lazım. Çünkü ilk başta New Release diye girdiğimiz film. Aradan ne bileyim, ben diyeyim 3 ay, sen de 6 ay. 6 ay mantıklı. Bakın sadece Türkiye özel streaming platformlarında sinemadan çıkan filmler 6 ay sonra NRK'a yayınlanabilir.
+
+893
+02:14:49,043 --> 02:14:52,163
+Elin Amerika'sında Avrupa'sında böyle bir kural yok ama.
+
+894
+02:14:52,916 --> 02:15:19,456
+Telif hakları falan filan daha çok önem verilen odalarda öyle bir kural yok ama burada var. Neyse, bir şey etmeyeyim, giyeri sarmayalım. En azından altı ay sonra mesela bir Nürnülis olacak size Regulus olacak. O yüzden buna Settler metodu lazım. Ama işte burada çok kolayca hata yapılabilir işte Elum kullanmazsak. Beş verirsek bu koda ne olacak? Yani yanlış bir hatalar olabilecek.
+
+895
+02:15:21,043 --> 02:15:25,243
+Ama şu sabitleri kullanırsak daha yanlışsız kodu yazarız.
+
+896
+02:15:25,243 --> 02:15:29,023
+Sonra bu sabitler yerine de en umu kullanmak daha doğru olacaktır.
+
+897
+02:15:29,443 --> 02:15:33,043
+Bunlar sabit olduğu için hem final hem statik tanımlayabiliriz.
+
+898
+02:15:33,903 --> 02:15:42,184
+Ve bu ikisi olarak da tanımlamışken de bari elimizdenmişken bunları ayrı ayrı getiriler, metkiler yazmaktan sonra bunları public yapabiliriz.
+
+899
+02:15:42,304 --> 02:15:45,644
+Bu durum için deyip öyle devam etmişiz.
+
+900
+02:15:47,699 --> 02:15:53,860
+Get Charge metoduna bakıyorum. Bu önemli çünkü test ederken biraz ona göre test edeceğiz.
+
+901
+02:15:53,860 --> 02:15:59,779
+Şimdi test yaparken iki yaklaşım var. Beyaz kutu yaklaşımı, karı kutu yaklaşımı.
+
+902
+02:16:00,275 --> 02:16:23,895
+Yani kara kutu yaklaşımında bazı tahmini girdi değerleri verirsen karşında doğru değerler çıkıyor. Ona bakarsın ama bu girdi değerlerinin veriliş şekli senin kaynak kodunun yüzde kaçını ne kadar çok yoğunlukla test edebildiğinle de doğru olan tadı aslında. O yüzden kaynak koduna baktığımızda görüyoruz ki mesela.
+
+903
+02:16:24,851 --> 02:16:36,531
+Ve zaten ayrıca kaynak ve içerisinde kendinizi bir switch case kullanıyorken görüyorsanız, bu aslında sizin kalıtı ve çok biçimini kullanmanız gerektiğinin bir işaretidir zaten.
+
+904
+02:16:37,112 --> 02:16:42,932
+O yüzden en başta öyle söyledim. Bu muy iyi afsat da olsun, sunut alt sınıfda da olsun diye.
+
+905
+02:16:42,932 --> 02:16:51,092
+Ama neyse, biraz acemice de olsa kodumuzu yazdık. Ama acemice bile olsa bu yolu çalışmadığını test etmemiz gerekecek.
+
+906
+02:16:51,531 --> 02:16:52,711
+Bakıyoruz işte fiyat koduna.
+
+907
+02:16:52,852 --> 02:17:14,512
+Eğer normal film ise, bir kere bunu bir günlüğüne bir kira alsan kirada 2 lira veriyorsun kardeşim. Sonra, ama bu 2 lirayı vererekten 2 gün kiralama hakkı kazanmış oluyorsun. Daha sonra 2 günü geçen her gün için ise 1,5 lira veriyormuş. Peki. Yeni film ise o zaman her gün 3 lira ödüyorsun.
+
+908
+02:17:20,512 --> 02:17:25,731
+3 gün kiralama hakkında oluyor. 3 gün geçen her gün için ise 1.5 lira veriyormuş.
+
+909
+02:17:27,212 --> 02:17:29,472
+Buna göre biz de testlerimizi buna göre yazacağız.
+
+910
+02:17:30,192 --> 02:17:34,372
+Yani hem Nebul'un hem Nebul'un hem Çığlık'un kimleri bir daha tane tanımlayacağız.
+
+911
+02:17:35,012 --> 02:17:35,948
+Bunları bir...
+
+912
+02:17:36,371 --> 02:17:41,871
+Uzun süre, bir de kısa süre, yani şuradaki VLA rakamlara göre uzun süre, kısa süre gibi.
+
+913
+02:17:42,211 --> 02:17:49,651
+Gerçi Nürniz'in uzun kısası yok ya, regular ve çiftçiler kısası uzun süre ve kısa süre kiraları doğru yapılıyor mu diye test edeceğiz.
+
+914
+02:17:49,771 --> 02:17:52,011
+Mümkün olduğu kadar ayrıntılı bir test yapmaya çalışacağız.
+
+915
+02:17:53,211 --> 02:17:54,912
+Nasıl basit? Ha şey ne basit.
+
+916
+02:17:55,331 --> 02:17:59,211
+Get bonus metodu da benzer şekilde demiştim müşterimiz bize.
+
+917
+02:17:59,211 --> 02:18:01,412
+Bonus mekanizması şöyle olacak.
+
+918
+02:18:04,115 --> 02:18:09,896
+Yeni film kiralamışsa ve bir günden fazla kiralamışsa iki puan kazanacak.
+
+919
+02:18:10,216 --> 02:18:15,355
+Aksi taktide bir puan kazanacak gibisinden bir kurar vermiş. Biz de onu buraya kodlamışız.
+
+920
+02:18:16,236 --> 02:18:20,095
+Peki, biz şimdi bütün bunu. Ha, rental'a da bir geri dönelim bakalım.
+
+921
+02:18:20,275 --> 02:18:22,795
+Evet, get, charge, get, bonus bu şekilde.
+
+922
+02:18:22,955 --> 02:18:26,056
+Şimdi, burada bir film şu kadar gün kiralanıyor.
+
+923
+02:18:26,595 --> 02:18:31,315
+Filmin türünü filmin kendisi biliyor. Kaç gün kiralandığınızı rental biliyor.
+
+924
+02:18:31,695 --> 02:18:56,095
+Bu yüzden toplam beledi ve toplam bonusunu hesaplar etmek için ihtiyacımız var. İki bilginin birisi bunda, birisi onda. O yüzden Rental'da Moody'ye kaç gün kiralandığı bilgisini veriyor. Moody'de o bilgiyi alıp ona göre hesaplamasını yapıp, o bilgiyi alıp, şurada daysLentled ve daysLentled alıp hesaplamasını yapıp Rental'a geri bildiriyor.
+
+925
+02:18:58,164 --> 02:19:02,164
+Peki, böyle bir kodumuz var. Bunları nasıl test ederiz?
+
+926
+02:19:03,264 --> 02:19:10,504
+Bir kere, daha ayrı tırı test için, her sınıfımızın ayrı ayrı test bilmem ne metotlarını ekleyelim.
+
+927
+02:19:12,104 --> 02:19:20,463
+Gerçi burada tam mesela personal şey, pardon o personal değil tabii ki ya, customs.
+
+928
+02:19:22,868 --> 02:19:35,587
+custom'ı yeterince uzun test ediyoruz. Kısa bile olsa test edilir yani. Ondan sonra cıma. Rental ve evet, bütün bu işlemleri test edeceğiz.
+
+929
+02:19:37,728 --> 02:19:41,548
+Custom, yani rental için aynı cihazı oluşturmamışım.
+
+930
+02:19:42,868 --> 02:20:09,768
+TestCast sınıfı. Çünkü hani kaç gün kiralandırım meselesi var. Başka bir şey yok. O onunla ilgili sorumlulukları movie ile birlikte yerine getiriyor ya. TestCastMovie yaptığımda aslında bir nevi rental da test etmiş oluyorum. Orada işleri doğru yapıp yapmadığımı test etmiş oluyorum. TestCastMovie ve TestMovie sınıflarımız var. Bakalım TestCastMovie nasıl yapmışız. JNTrenware paketini import ettim.
+
+931
+02:20:10,227 --> 02:20:12,067
+Ondan sonra cıma.
+
+932
+02:20:12,867 --> 02:20:16,567
+Bakın burada astrofler yok ama ötekisinde...
+
+933
+02:20:16,567 --> 02:20:19,087
+Nerede astrof vardı? Neyse, bakarız yani.
+
+934
+02:20:19,527 --> 02:20:20,807
+Peki, bakıyoruz şimdi.
+
+935
+02:20:22,387 --> 02:20:25,127
+Bu 3x versiyonunu yaptık diyelim.
+
+936
+02:20:26,307 --> 02:20:28,547
+3x versiyonuna göre anlatıyoruz.
+
+937
+02:20:29,547 --> 02:20:31,327
+Çünkü şunu yapmış zorunlu.
+
+938
+02:20:31,927 --> 02:20:34,527
+Test kastımlı sınıfı, test kastımlı kartımı üretiyoruz.
+
+939
+02:20:35,252 --> 02:20:52,912
+Şimdi yapacağımız test ne mantıklı olacak? İşte söylemiştim. Birkaç tane film oluşturacağız farklı türlerden. İnsan demişleri oluşturacağız. Bu farklı türler filmleri farklı sürelerde ödünç vereceğiz, edeceğiz. Böylece acaba doğru maklumlar basılıyor mu, basılıyor mu? Bunu kontrol edeceğiz. Teknede konuşmuştuk.
+
+940
+02:20:54,472 --> 02:20:58,072
+Şimdi şunu da bir düzeltelim bence.
+
+941
+02:21:09,780 --> 02:21:19,299
+Evet, bakıyoruz şimdi. Bir tane karşıt, birkaç tane movie. Setup metodu her bir test bilmem ne metodundan önce otomatik olarak çalışacak.
+
+942
+02:21:19,700 --> 02:21:43,860
+O yüzden burada sadece nesneleri oluşturuyoruz. Henüz ilişkileri kurmuyoruz. Çünkü yapacağımız bütün testler ilişkiler üstünden gidecek. Yani farklı sürelerde farklı kira ilişkileri kurmak üzerine gidecek. O yüzden setup metodunda herhangi bir ilişki kurmamız yok. Ama gerekiyorsa kurabiliriz de elbette. Yani sinaryolarımızı oluştururken onu da nasıl işimize geliyorsa öyle yaparız.
+
+943
+02:21:44,884 --> 02:22:09,203
+Şimdi bak burada test getneği diye bir metod var. Ya hocam sadece onun için test kodu yazılır mı? Ya yazabilirsiniz. Acaba üç karakterler doğru ele alıyor mu, alınmıyor mu? Bunu test etmiş olursunuz bir yandan da. Demek istiyorum. Bakalım şimdi bu test metoduna. Test ile başlıyor. Neyi test ediyor? Getneği metodunun doğru çalışıp çalışmadığını test ediyor. Elde ettiğim sonuç bu.
+
+944
+02:22:09,876 --> 02:22:17,795
+Rüyalan olarak tanımladığım ve setup metodunda oluşturulmuş olan Yunus nesnesinin abstract'e de null pointer exception alındık.
+
+945
+02:22:18,056 --> 02:22:19,416
+Pet name metodu çağırılıyor.
+
+946
+02:22:20,695 --> 02:22:22,876
+Bu elde edilen sonuç stringi...
+
+947
+02:22:22,995 --> 02:22:29,615
+Böyle işte tırnak içerisinde Yungus Emre Selçuk ise, yukarıda böyle oluşturdum ve bunu ben buraya kopyalayıp buraya alıştırdım.
+
+948
+02:22:29,975 --> 02:22:37,875
+Eğer bu iki string birbireyini eşit ise, aynısı o zaman bu test başarılı, aksi takdirde test başarısız demek istiyor bu.
+
+949
+02:22:40,015 --> 02:22:41,555
+Sonra geldik şuna.
+
+950
+02:22:43,135 --> 02:22:46,175
+Ben hiç kiraya yapmadım.
+
+951
+02:22:47,156 --> 02:22:50,656
+Borcumun da sıfır olması lazım, bonusum da sıfır olması lazım.
+
+952
+02:22:51,515 --> 02:22:57,896
+O zaman, daha direkt hiçbir kira vermeden, kira kaydı oluşturmadan Yunus'un makluluğunu bastıyorum.
+
+953
+02:22:58,324 --> 02:23:04,844
+Boş makbufta şurada görüldüğü gibi olacak. Onu elle yazıyorum bir kenara. Böyle böyle olması gerekiyor.
+
+954
+02:23:04,844 --> 02:23:17,144
+Toplam borcumuz 0. Toplam borcumuz 0. Bonusumuz da 0. Acaba elde ettiğim sonuç risit beklenen statementla aynısı. O zaman testi geçti.
+
+955
+02:23:19,244 --> 02:23:22,584
+Sonra işte filmin uzun süre kiralayınca ne olacak?
+
+956
+02:23:23,007 --> 02:23:44,927
+Normal film, çocuk filmi ve New Release. Ben okudu yazarken, Sargerates filmi New Release'miş. Bruce Willis'in, şimdi rahmetli değil ama çok hasta malumunuz. Artık film filan çeviremiyor. Enteresan bir filmidir. Bilmeyen arkadaşlara tavsiye edilir. Sargerates filmi.
+
+957
+02:23:46,987 --> 02:23:49,727
+Bruce Willis, Baba Yonelik.
+
+958
+02:23:51,347 --> 02:24:19,167
+3 tane film değişik türlerden değişik ama uzun sürelerde kira kaydı ekliyorum müşterime. Ondan sonra makbuzu elde ediyorum. Makbuzun olması gerektiği de bu şekilde diye ayrıca hesaplıyorum. Ve beklenen ifadeyle elde ettiğim sonuç birbirinin aynıysa test başarılı, aksi takdirde test başarısız diyorum. Benzer verasyon kısa süre kira işlemleriyle de yapılmış durumda. Ondan sonra cemaat.
+
+959
+02:24:19,572 --> 02:24:32,332
+Yeni Luisa aldığın zaman, şimdi aslında bir nevi şu yukarki long rent, short rent ile aslında bir nevi bonusları da test etmiş oluyoruz aslında. Tamam mı?
+
+960
+02:24:33,459 --> 02:24:47,659
+Fakat yine de spesifik olarak Neal Leads'deki kiram acaba doğru hesaplanıyor mu diye bir de bir test kodu yazmışım. Benzer mantıkla. Bunları böyle oluşturmuşum.
+
+961
+02:24:48,139 --> 02:24:53,919
+Hadi bakalım şimdi çalıştırayım. Her şey doğru mu? Bunun için üstüne sağ tıklıyorum.
+
+962
+02:24:54,519 --> 02:24:59,759
+Şimdi Java application yok ama J'nin test var. Çünkü neren işte? X'ten test kestirdik.
+
+963
+02:25:00,211 --> 02:25:02,131
+JNTest olarak çalıştınız.
+
+964
+02:25:03,951 --> 02:25:05,811
+Şöyle, şöyle.
+
+965
+02:25:10,271 --> 02:25:14,191
+Şimdi, yeşil çubuğu gördüm, içim rahat.
+
+966
+02:25:15,072 --> 02:25:17,351
+Yani testlerin hepsi başarılı anlamına geliyor.
+
+967
+02:25:17,876 --> 02:25:36,096
+Bunun içerisinde aslında 5 tane test var. Bakın 5 bölü 5 diyor. Şuradaki alt dalları göster dediğimde de buradaki test custom'ın içerisindeki 5 testinde neler olduğunu böyle aynı türü gösteriyor. Hepsi yeşil, problem yok. İşim rahat, her şeyi doğru kodlamışım.
+
+968
+02:25:44,884 --> 02:26:08,203
+Normal filmlerde, diyelim ki, 2 lira verip 3 gün kiralıyorsun, sonra 2 gün geçen her gün için 1,5 lira ödüyorsun. Ben bunu yanlış algılayıp, mesela diyelim ki, şey, 2 lira değil de 3 lira verip 2 gün kiralıyorsun dediği de diyelim ki, ben bunu o yüzden bu şekilde kodladım diyelim ki.
+
+969
+02:26:11,316 --> 02:26:19,076
+Şimdi tekrar çalıştırdığımda, bakın artık kırmızı çubuk, bir hata var.
+
+970
+02:26:19,076 --> 02:26:27,376
+Ve otomatik olarak da expand edecek zaferlisliği. Kırmızı olunca çubukları otomatik olarak genişletiyor.
+
+971
+02:26:27,636 --> 02:26:30,675
+Ve son olanları bakın şurada şöyle mavi işaretliyor.
+
+972
+02:26:31,335 --> 02:26:35,656
+Bu yeri shortland ve longland kirama testlerinde problem var diyor.
+
+973
+02:26:36,175 --> 02:26:37,216
+Şunu bir tıklayın bakalım.
+
+974
+02:26:38,036 --> 02:26:56,436
+Ve bakın, altta da bir failure trace veriyor bana. Normalde iki stringi karşılaştırma idei ya bu. Bakın, beklenen şey şuydu diyor bana, işte Yunus Emre Selçuk, işte Binali Emre Selçuk, Matrix 2, Monsters 1.5, Sargates 3, toplam borcu 6.5 bekleniyor.
+
+975
+02:27:01,567 --> 02:27:11,948
+Sadece işte Matrix 3 sıfı, Sargüet 1.5, Sargüet, şey Matrix 3, Monsters 1.5, Sargüet 3, Amantor 7.5 ve 3 puan kazanmışız.
+
+976
+02:27:12,207 --> 02:27:15,687
+Fakat bu çıktı karşıma diyor. Ve bana bakın bir güzellik ne yapıyor?
+
+977
+02:27:16,387 --> 02:27:24,527
+Bu iki beklenen ve sonuç nereden itibaren farklılaşıyorsa o noktadan itibaren bir tane köşeli parantez koymuş.
+
+978
+02:27:25,139 --> 02:27:37,319
+Bunu ben kendim yapmak zorunda değilim. Ya nerede farklılaşıyor acaba falan diye. Oturup uzun uzun düşünmek zorunda değilim. Bu metinleri de incelemek zorunda değilim. Bana otomatik bir high grade ediyor yani, vurguluyor.
+
+979
+02:27:37,319 --> 02:27:49,680
+Şu noktan itibaren, yani ilk filmden, ücretinden itibaren değişmeye başlamış. Değişikliğin bittiği yer ise şu köşeli paratizin kapandığı yerden sonra.
+
+980
+02:27:50,164 --> 02:28:03,684
+Ben de buradan anlıyorum ki ilk değişiklik Matrix filmiyle başlamış. Matrix benim nasıl bir filmimdi? Normal bir filmimdi. Normal filmin günlük kiralanmasıyla ilgili bir sorunum olduğunu anlıyorum hemen.
+
+981
+02:28:03,684 --> 02:28:17,684
+Ve oraya gidiyorum. Nureye, Regal's'ın Get Charge'ına. İki lira olacaktı günlük. Tüh ben buraya üç yazmışım diyorum. Hemen düzeltmeyi yapıyorum. Ondan sonra...
+
+982
+02:28:18,164 --> 02:28:34,404
+İster bunu tekrardan et veyahut da yine bunun üstüne geldiği sağ tıkla RANES J-YUNIT testi de ve şu bakın şimdi hata düzeldi, yeşil çubur gördü, işin rahat görevimi yetenece iyi yerine getirebilmiş. Bunu anlıyorum.
+
+983
+02:28:35,763 --> 02:28:43,283
+Bu kadar arkadaşlar. Durum bu. Bir de şeyi göstereyim işte. Ötekini de göstereyim. Test movie.
+
+984
+02:28:44,115 --> 02:28:54,396
+Muy basit yani bunun nesi test edilir ya da işte zaten ölünç vermede bunu test ettik diyebilirsiniz ama aslında hani ikide yazmışım şu import statikleri gördük.
+
+985
+02:28:54,396 --> 02:28:55,855
+Daha sonra.
+
+986
+02:28:59,700 --> 02:29:00,364
+Arkadaşlar, class, object,
+
+987
+02:29:03,412 --> 02:29:04,952
+Aslında bu...
+
+988
+02:29:04,952 --> 02:29:05,412
+Neymiş?
+
+989
+02:29:05,412 --> 02:29:05,891
+Şöyle ses var.
+
+990
+02:29:06,011 --> 02:29:06,691
+Şöyle görülenmeyelim.
+
+991
+02:29:07,691 --> 02:29:08,592
+Bakın ne yapmışım?
+
+992
+02:29:10,112 --> 02:29:12,092
+Farklı türler filmler tanımlamışım.
+
+993
+02:29:12,092 --> 02:29:13,092
+Ve...
+
+994
+02:29:15,219 --> 02:29:23,879
+Farklı türden filmlerin gerçekten birbirinden farklı mı ele alınıyor? Aynı türden filmler de gerçekten birbiriyle aynı mı ele alınıyor diye.
+
+995
+02:29:24,340 --> 02:29:33,579
+Dört tane farklı filmin setup metodunu da inişlaz etmişim. Birisi Rigor'u, birisi Chardon, ikisi New Relis. Ondan sonra test movie task metodunda.
+
+996
+02:29:33,579 --> 02:29:40,899
+Şimdi birden fazla assert kullanmışım. Normalde tek bir test metodunda tek bir assert kullanmak.
+
+997
+02:29:42,131 --> 02:29:51,731
+Bu test metodunu da bir daha fazla asortik kullanabiliyorsunuz. Biraz da onu göstermiş olalım burada böyle.
+
+998
+02:29:51,731 --> 02:29:57,731
+Şimdi ne bileyim, Sardegret'in fiyat koduyla terminatorin fiyat kodunun birbirinden farklı olması lazım.
+
+999
+02:29:57,731 --> 02:29:59,731
+Çünkü Sardegret'in örgüdeyiz.
+
+1000
+02:30:00,020 --> 02:30:02,020
+Pardon eşit olması lazım.
+
+1001
+02:30:02,020 --> 02:30:03,020
+Estratil kodu diyorum.
+
+1002
+02:30:03,020 --> 02:30:08,020
+Sagittarius'in fiyat kodu ile terminerin fiyat kodunun birbirine eşit olması lazım. Terminerdansal bir eşit.
+
+1003
+02:30:08,020 --> 02:30:11,020
+Bundan sonra başka terörler çıkmıştır.
+
+1004
+02:30:11,020 --> 02:30:13,020
+O kadar eski yani.
+
+1005
+02:30:13,020 --> 02:30:17,020
+Bu ikisinin neyliği bunun eşit olması lazım. O yüzden estratil kodu.
+
+1006
+02:30:17,020 --> 02:30:23,020
+Masos çocuk filmi Matrix'in regular risk bu ikisinin eşit olması lazım.
+
+1007
+02:30:23,283 --> 02:30:32,103
+Evet, aslında bu şekilde de değişik ifadelerle test etmişim. Bunların da doğru çalıştığımdan emin olalım.
+
+1008
+02:30:34,003 --> 02:30:43,283
+Ne için? Neden bir tane gösteriyor? Çünkü bir tane test metodu var. Aslında içerisinde dört tane astrolik var ama bir tane test metodu olduğu için bir tane test şeklinde söylüyor aslında.
+
+1009
+02:30:47,200 --> 02:31:04,260
+Tek bir tıklayışta hem test customı hem test mühiyeti bizden içlerindeki bütün testlerle çalıştırmak istiyorsam da bir suite oluşturacağım. Onun içine test all diye bir sınıfım var. Oradaki de yazım tarzım bu şekilde arkadaşlar. Kullanım tarzı bu şekilde.
+
+1010
+02:31:04,819 --> 02:31:12,239
+Şu imzaya sahip bir metot kodluyorsunuz. İçerisinde bir tane test script'inden bir tane nesne oluşuyorsunuz.
+
+1011
+02:31:12,420 --> 02:31:23,700
+Bunu bir isim veriyorsunuz constructlarında. Ondan sonra zaten hazırlamış olduğunuz bilim sınavası sınıflarınızı işte buna test script diyerekten sınıfa da nokta class diyerekten ekliyorsunuz.
+
+1012
+02:31:23,700 --> 02:31:28,492
+Ondan sonra script'i geri döndürüyorsunuz. Bunun ardından...
+
+1013
+02:31:28,564 --> 02:31:32,804
+Artık bunu çalıştırdığımızda start-up, ne kadar ne? J-U test.
+
+1014
+02:31:33,704 --> 02:31:35,244
+Mesela 6 oldu lan. Neden?
+
+1015
+02:31:35,623 --> 02:31:39,623
+Şöyle 5 tane birimde, 1 tane birimde, bakın 5 tane birimde, 1 tane birimde.
+
+1016
+02:31:39,904 --> 02:31:42,004
+5 tane doğum çalıştı. Yeşil çubuk.
+
+1017
+02:31:42,184 --> 02:31:45,344
+İşler yolunda geçmiş olsun. Sen sağa ben selam etsin.
+
+1018
+02:31:46,103 --> 02:31:46,504
+Çok şükür.
+
+1019
+02:31:48,783 --> 02:31:50,744
+Evet. Şeyler bunlar arkadaşlar.
+
+1020
+02:31:51,744 --> 02:31:54,923
+Durumlar bunlar. Bakalım söylemeyi unutun bir şey var mı?
+
+1021
+02:31:58,772 --> 02:32:02,092
+Yok, işte böyle böyle yaptık, bunları söyledik.
+
+1022
+02:32:03,332 --> 02:32:03,512
+Evet.
+
+1023
+02:32:04,084 --> 02:32:29,724
+Neden elleri test etmek daha sıkıntılı? En başta söylemiştik. Bazı şeyleri kendimiz ayrıntılı incelememiz gerekiyor. Hatta şey bile yapmıştık. Hatırlıyorsanız bu galeri araba şeyini yaparken bir ardı yüzünden bile test senaryomu yanlış yazmışım da yanlış sonuçlar elde ediyordum falan filan. Yani test kodu hazırlamak da kolay bir şey değil.
+
+1024
+02:32:32,084 --> 02:32:49,144
+Değerlendirmek de kolay bir şey diye. Buralarda mümkün olduğu kadar destekleyecek bir araç kullanılsak işimizi az da olsa bir miktarda olsa kolaylaştırmış oluruz. O bir miktarda kolaylık bile bizim işimize yarayacak kolaylık lazım demek istiyorum.
+
+1025
+02:32:52,468 --> 02:32:58,568
+Bunlar bunlar. Bu saatten sonra da generic classlara falan girmek istemiyorum.
+
+1026
+02:32:59,087 --> 02:33:04,128
+Düzene sorularımız varsa konuşalım. Yoksa da bugünlük bu kadar diyeceğiz. Buyurun.
+
+1027
+02:33:04,608 --> 02:33:07,688
+Hocam sınavla ilgili bilgi verebilir misiniz?
+
+1028
+02:33:07,688 --> 02:33:17,676
+Evet. Şöyle olacak. Kolaylık olması için hem size hem bize kolaylık olması için vizeyi test tutup öyle düşünüyoruz.
+
+1029
+02:33:18,291 --> 02:33:36,131
+Finali şey yaparız, yapabiliriz, klasik yapabiliriz. Ama vizeyi test husurlu hazırlayacağız. Kaç soru olacağından şu an emin değilim. Bakacağız. Geçen senelerde ikinci vizeyi test husurlu yapıyorduk.
+
+1030
+02:33:36,628 --> 02:33:44,268
+Şimdi dönem için tek bir proje de vereceğimiz için zaten ikinci vize gerek yok.
+
+1031
+02:33:44,388 --> 02:33:52,488
+Madem öyle bizde ve online'da yapılıyor sınavlar madem öyle birinci vizeyi test kurulu yapalım diye adımızla paraya başladık.
+
+1032
+02:33:52,799 --> 02:33:59,159
+Artık 20 soru mu olur, 25 soru mu olur? En fazla 50 soru olur arkadaşlar.
+
+1033
+02:33:59,739 --> 02:34:02,959
+Soru sayısına göre de süre ona göre belirlenecek.
+
+1034
+02:34:02,959 --> 02:34:05,899
+Denemeyelim 50 soruysa 75 dakika gibi.
+
+1035
+02:34:07,319 --> 02:34:10,719
+Online bize gireceksiniz, test tutulur olacaksınız.
+
+1036
+02:34:12,279 --> 02:34:15,119
+Sorular 4 şıklı olacak.
+
+1037
+02:34:16,399 --> 02:34:19,219
+Her sorunun sadece bir tane doğru şıklı olacak.
+
+1038
+02:34:20,051 --> 02:34:27,031
+Sorular herkese rastgele karışık sırada gelecek. Aynı soruları çekeceksiniz ama cevaplayacaksınız.
+
+1039
+02:34:27,171 --> 02:34:30,491
+Ama rastgele karışık sırada cevaplayacaksınız.
+
+1040
+02:34:31,211 --> 02:34:34,471
+Ve cevabınızı dikkatli düşünün verin.
+
+1041
+02:34:34,912 --> 02:34:41,092
+Çünkü bir sorunun cevabını verdikten sonra, başka soruya geçtikten sonra geriye dönmek olmayacak.
+
+1042
+02:34:41,092 --> 02:34:44,752
+O yüzden düşünüp taşınarak lütfen verin yanıtımızı.
+
+1043
+02:34:46,804 --> 02:34:53,304
+Yanlışların doğruyu götürmesini planlamıyoruz. O yüzden atış sabbest vermişim.
+
+1044
+02:34:54,724 --> 02:35:02,603
+Allah sana şima. Bunlar böyle yani. Bilmiyorum. Umutluğum, atladığım bir şey var mı? Ya da başka bir konumuz var mı?
+
+1045
+02:35:08,180 --> 02:35:14,040
+Teşekkürler hocam. Son konular dahil miydi bu unit testing?
+
+1046
+02:35:14,040 --> 02:35:33,380
+Ya, onu bakacağız. Şimdi sadece, unit testing dahil olmayabilir ama en azından benim düşüncem, onu teyit etmedim diğer hocalarla ama, interface ve soyut sınıflar dahil olacak.
+
+1047
+02:35:34,131 --> 02:35:42,072
+exception handling, distinct, o konular dahil olmayacak. Enum'u da dahil etmeyeceğiz herhalde.
+
+1048
+02:35:42,072 --> 02:35:54,492
+Yani yeni bir bölüm eklemişiz ya, advanced topic demişiz. O yüzden benim tahminim, düşüncem, fikrim işte interfezler dahil olacak şekilde.
+
+1049
+02:35:55,347 --> 02:36:01,648
+Diğer hocam da sağ olsunlar, bu dersi iklim vermeye başladığına, fikirlerine değer gösteriyorlar ama
+
+1050
+02:36:01,648 --> 02:36:08,427
+hani başka hocam, hocam şu da olsun, elumu da olsun bari falan yoksa soru sayısına ilişkileme diklam falan derlerse de
+
+1051
+02:36:08,427 --> 02:36:12,007
+tabii ki onu da öyle söyleyeceğiz ama şu an için öyle bilin.
+
+1052
+02:36:12,847 --> 02:36:16,027
+İnterfizler dahil, interfizlere kadar o kadar.
+
+1053
+02:36:17,308 --> 02:36:18,268
+Teşekkürler hocam.
+
+1054
+02:36:19,108 --> 02:36:19,628
+Hoşçakalın.
+
+1055
+02:36:20,027 --> 02:36:21,347
+Evet, buyurun başka sorusu soru.
+
+1056
+02:36:37,332 --> 02:36:38,332
+66,
+
+1057
+02:36:39,332 --> 02:36:40,332
+Evet,
+
+1058
+02:36:40,332 --> 02:36:45,332
+Tamam.
+
+1059
+02:36:46,332 --> 02:36:47,332
+Evet.
+
+1060
+02:36:48,332 --> 02:36:50,332
+Bakın, inheritance her halde kalda dahil.
+
+1061
+02:36:51,332 --> 02:36:54,332
+Soyut sınıflar internetiyesinde ben dahil olacağını düşünüyorum.
+
+1062
+02:36:55,332 --> 02:36:56,332
+Bakacağız.
+
+1063
+02:36:57,332 --> 02:36:58,332
+Evet.
+
+1064
+02:37:03,924 --> 02:37:05,324
+Zaten kaydetmiştim.
+
+1065
+02:37:06,204 --> 02:37:07,304
+Peki. Evet.
+
+1066
+02:37:07,664 --> 02:37:10,724
+Başka soru yoksa arkadaşlar, o zaman bugün bu kadar yeter.
+
+1067
+02:37:11,204 --> 02:37:12,664
+Yeterce çalıştık diye düşünüyorum.
+
+1068
+02:37:14,044 --> 02:37:15,804
+Herkese iyi bayramlar diliyorum.
+
+1069
+02:37:16,504 --> 02:37:19,123
+Daha geç dinleyeceklerim geçmiş bayramlar diliyorum.
+
+1070
+02:37:19,804 --> 02:37:21,884
+Sınavda da herkese başarı veriyorum.
+
+1071
+02:37:22,444 --> 02:37:23,344
+Şimdilik alasın artık.
+
+1072
+02:37:23,604 --> 02:37:24,123
+Teşekkür ederim.
+
+1073
+02:37:24,864 --> 02:37:25,924
+İyi bayramlar hocam.
+
+1074
+02:37:26,444 --> 02:37:26,864
+İyi günler.
+
+1075
+02:37:26,864 --> 02:37:27,884
+Teşekkür ederim arkadaşlar.
