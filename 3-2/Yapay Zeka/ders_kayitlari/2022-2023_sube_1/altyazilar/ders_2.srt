@@ -1,0 +1,2075 @@
+1
+00:01:09,620 --> 00:01:11,060
+Günaydınlar arkadaşlar.
+
+2
+00:01:14,060 --> 00:01:15,020
+Gördünürüz.
+
+3
+00:01:18,579 --> 00:01:21,439
+Biraz bekleyin, beş geçe başlayacağız dersen.
+
+4
+00:01:23,859 --> 00:01:24,939
+Az sonra görüşmek üzere.
+
+5
+00:04:39,475 --> 00:04:41,735
+Evet, günaydın arkadaşlar.
+
+6
+00:04:49,779 --> 00:04:50,899
+Sesim geliyor mu?
+
+7
+00:04:52,059 --> 00:04:52,879
+Günaydın hocam.
+
+8
+00:04:57,555 --> 00:05:09,156
+Bugün 9 Mart yapay zekaya giriş kısmını tamamlayacağız. Bugün geçen hafta başlamıştık zaten. Bu hafta bu slide'ları tamamlamayı planlıyorum.
+
+9
+00:05:17,172 --> 00:05:17,932
+Teşekkürler.
+
+10
+00:05:25,459 --> 00:05:51,819
+Geçen hafta neler yaptık diye bir kısaca bakarsak, dersin içeriğinden biraz bahsetmiştik. Zekanın tanımını birazcık yapmaya çalıştık. Yapay zekanın tanımını biraz yapmaya çalıştık. Yapay zekaya ulaşmak için böyle dört tane okul olduğundan bahsettik. Temel hedeflerden bahsetmiştik. Bir tanesi işte makinelerde daha akıllı, işimize yarar hale getirmek dedik.
+
+11
+00:05:52,723 --> 00:06:07,524
+Kendimizi anlamak, bizim zekamız nasıl çalışıyor bunun üzerine. Çalışmak, Yapay Zeka'nın çalışma türlerinden bir tanesi. En sonunda bir düşünce deneyi yapmıştık.
+
+12
+00:06:10,264 --> 00:06:19,435
+Önce bin yıl öncesindeki insanların yanına bir tane laptopu götürüp onun yaptıklarını gösterdik. Ondan sonra da...
+
+13
+00:06:20,435 --> 00:06:40,795
+İşte size belli bir süre ders anlattım. Bunun sonucunda en sonunda da ben kendimin Android bir robot olduğunu göstersem bana hala zeki der misiniz? Bu sorunun üzerine birazcık konuşmuştuk.
+
+14
+00:06:41,620 --> 00:06:50,819
+Ondan sonra işte yapay zeka ile ilgili disiplinlerinde bu konuşulmuş şeyler bağlamında bayağı geniş bir kapsam da olduğunu bahsetmiştik.
+
+15
+00:06:51,899 --> 00:06:56,560
+Ve en sonunda da şu Turing testine gelmiş. Turing testine geçmemiştik değil mi? Doğru hatırlıyorum.
+
+16
+00:06:58,800 --> 00:06:59,759
+Hayır, geçmedik hocam.
+
+17
+00:07:00,600 --> 00:07:00,860
+Tamam.
+
+18
+00:07:02,860 --> 00:07:07,579
+Şimdi bu bir şeye zeki der miyiz demez miyiz?
+
+19
+00:07:08,755 --> 00:07:35,515
+Ne zaman deriz? Bir sisteme zeki sıfatını ne zaman yapıştırırız? Bunun üzerinde düşünen, çalışan bir sürü insan var. Bu sıfatı bir sisteme vermek için bir test şu anda karşımızda var. O testi düşünen kişi, testi zaten ismini veren kişi, Alan Turing.
+
+20
+00:07:36,819 --> 00:07:44,819
+Hepiniz muhtemelen daha önceden duymuşsunuzdur diye tahmin ediyorum. Ama yine de birazcık açıklayalım.
+
+21
+00:07:44,819 --> 00:07:49,819
+Şimdi şunu tam ekran yapsam bir sıkıntısı olmaz herhalde.
+
+22
+00:07:49,819 --> 00:07:55,819
+Evet, yine rahat görüyorsunuz değil mi arkadaşlar? Bir sıkıntı yok.
+
+23
+00:07:59,572 --> 00:08:00,912
+Evet hocam, bu istiyor.
+
+24
+00:08:01,711 --> 00:08:17,012
+Tamam. Şimdi Turing bir test öneriyor. Bu test deminki, daha doğrusu geçen derste de konuştuğumuz şeyle alakalı, biz teminiz zaman zeki diyebiliriz sorusuna bir cevap veriyor aslında.
+
+25
+00:08:18,292 --> 00:08:20,512
+Cevap öneriyor daha doğrusu öyle söyleyelim.
+
+26
+00:08:21,427 --> 00:08:42,927
+Turing bu tesli 1950 yılında yazdığı Makine Düşünebilir Mi adlı makalesinde tanımlamış. Oradaki tanımladığı hali buradakinin birebir aynısı değil ama fikir olarak birebir aynısı. Fikren aynı öyle söyleyeyim. Şeklendiril ama. Burada iki tane oda var.
+
+27
+00:08:49,299 --> 00:08:50,819
+Masum gözüküyor değil mi?
+
+28
+00:08:54,484 --> 00:08:55,324
+Evet hocam.
+
+29
+00:08:56,923 --> 00:09:20,004
+İki tane oda var, birbirinden bir duvarla ayrılmış. Bu bizim duvarımız. Bu tarafta bir insan sorgulayıcı var, bu tarafta ise ya bir insan ya da bir makine var. Şimdi bu insan sorgulayıcının görevi, karşı odadakinin bir insan mı, bir makine mi olduğunu anlamaya çalışmak. Ve buna göre de bize diyecek ki bu karşımdaki bir insan ya da karşımdaki bir makine diyecek.
+
+30
+00:09:23,539 --> 00:09:40,519
+Yani biz diyeceğiz ki insan sorgulayacağı, sen diğer odadakinin bir insan makine olduğunu söyle. Şimdi bu insan makine olduğunu söyle kısmında da onun o odayla iletişim kurabilmesinin bir tane yolu var. O da yazışmak. Chat yapı, yani yazışıyor.
+
+31
+00:09:41,799 --> 00:09:47,519
+Oradan bir şeyler yazıyor, karşı taraf görüyor, karşı taraf bir şeyler yazıyor, o görüyor. Böyle bir şey yapı.
+
+32
+00:09:49,779 --> 00:10:07,819
+Thuring'in önerdiği test şu, eğer ki bir sistem, bu taraftaki bir sistem, insan sorgulayıcıya yanlış karar verdirebiliyorsa ya da karar veremiyor hale getirebiliyorsa, öyle de söyleyebiliriz.
+
+33
+00:10:08,244 --> 00:10:19,644
+O zaman bu karşıdaki sistemde gerçekten bir makineysa o zaman ona da bir zeki demeliyiz diyor. Zeka sahibi ya da işte düşünce sahibi demeliyiz diyor.
+
+34
+00:10:20,644 --> 00:10:24,624
+Bu ne demek? Kabucam...
+
+35
+00:10:24,624 --> 00:10:46,744
+Buradaki insan sorular soruyor, çeşitli sorular soruyor. Bu sorulara insandan ayırt edilemeyecek şekilde cevap verebiliyorsa, yani dışarıdan baktığımızda ölçebildiğimiz şeyler cinsinden, insandan ayırt edilemeyen bir seviyedeyse, o zaman buradaki insan sorgulucu buna karar veremeyecektir.
+
+36
+00:10:46,744 --> 00:10:50,544
+Ve bu durumda da eğer burada gerçekten bir makine varsa, o durumda.
+
+37
+00:10:51,187 --> 00:11:09,907
+Bu sisteme zeki deriz diyor Turing. Niye böyle diyor? Çünkü diyor bizim diğer bütün insanlara hakkındaki bu sıfatı veriş şeklimiz de aynı şekildedir diyor. Yani ne demek istiyorum?
+
+38
+00:11:11,412 --> 00:11:21,412
+Diğer insanların da dışarıdan ölçülebilen şeylere bakarak biz aslında onların davranışlarına çeşitli sıfatlar yakıştırırız.
+
+39
+00:11:22,592 --> 00:11:33,292
+Yoksa o davranışın arka tarafta nasıl üretildiğiyle alakalı bir bilgimiz olmadığından dolayı sadece dışarıdan ölçebildiğimiz şeyler üzerinden bir fikir yürütürüz.
+
+40
+00:11:33,292 --> 00:11:38,032
+Temelde dayanağı bu Türengin.
+
+41
+00:11:38,964 --> 00:11:50,964
+Turing bu testi 1950'de önerdikten sonra tabi ortada daha öyle bilgisayar vesaire gibisinden şeyler yoklar. Yani daha doğrusu bildiğimiz manada, dijital manada bilgisayarlar yoklar. Daha analog şeyler var henüz.
+
+42
+00:11:54,484 --> 00:12:13,464
+Belli bir zaman sonra bu testi geçebilmeyecek mi sistemler diye yarışma düzenlenmeye başlıyor. İşte bu Lokmada yarışması da bunlardan bir tanesi. Bu epey bir uzun süre sürmüş bir yarışma. Her yıl belli şeyler kazananlar oluyor vesaire vesaire.
+
+43
+00:12:14,084 --> 00:12:21,204
+Turing testini geçmek o noktada yapay zeka araştırmacıların böyle epey bir gündemini meşgul etmiş bir şey.
+
+44
+00:12:21,600 --> 00:12:37,680
+Ama genel manada düşünürsek günümüzde string testini geçebilmiş herhangi bir makine yok. En azından bildiğim kadarıyla yok.
+
+45
+00:12:43,731 --> 00:13:11,271
+Turing testinin önerilmesinin arkasından daha sonra dediğim gibi bilgisayarlar yavaş yavaş ortaya çıkmaya başlıyor. Dijital bilgisayarlar programlanabilen bilgisayar vesaire. Ve karşımıza bir şekilde bilinen ilk chatbotlardan biri olan Eliza çıkıyor. 1965 yılında geliştiriliyor ve bir terapisti simre ediyor. Şimdi burada kırmızılar ve siyahlar var. Onlardan bir tanesi bir taraf, bir tanesi diğer taraf.
+
+46
+00:13:11,700 --> 00:13:16,779
+Yani hangisi insan hangisi makine bakıp anlayabiliyor musunuz?
+
+47
+00:13:24,403 --> 00:13:26,064
+Siyahlar Makine Gibi hocam.
+
+48
+00:13:26,783 --> 00:13:30,303
+Siyahlar Makine Gibi. Başka fükür olan?
+
+49
+00:13:46,740 --> 00:13:54,960
+Bir kişi mi düşünüyor buna? Fazladır ya. 45 kişi var sınıfta diyor ama.
+
+50
+00:13:57,259 --> 00:13:59,619
+Bence de öyle hocam. Siyahların.
+
+51
+00:14:02,319 --> 00:14:07,279
+Peki, siyahlar. Tahmininiz tahmin ettiğiniz gibi doğru.
+
+52
+00:14:07,923 --> 00:14:14,683
+Tabii buna dair birçok ipucu söyleyebilirsiniz. Neler olabilir mesela? Nereden anladınız?
+
+53
+00:14:19,187 --> 00:14:26,187
+Bir terapist olduğunu söylüyor ve karşıdakinin söylediklerine bir soru sorarak...
+
+54
+00:14:27,187 --> 00:14:30,227
+Terapistlikten yakaladım diyorsun.
+
+55
+00:14:31,327 --> 00:14:31,867
+Yani evet.
+
+56
+00:14:32,467 --> 00:14:33,167
+Peki, başka?
+
+57
+00:14:35,507 --> 00:14:41,567
+Hocam, en son da bayağı bozulmuş gibi ya. Yani son beş cümle falan.
+
+58
+00:14:42,707 --> 00:14:44,248
+Orada birazcık sırıtıyor.
+
+59
+00:14:44,748 --> 00:14:47,368
+Bu ne sırıtıyor? Tamam, onu soruyorum.
+
+60
+00:14:48,008 --> 00:15:00,408
+Hocam, işte bana ailenden bahset demiş. Sonra karşısındaki insan da sanırım bana annem bakıyor gibi bir şey demiş. Sonra soru soruyor. Kim bakıyor sana ailenden falan?
+
+61
+00:15:01,628 --> 00:15:07,327
+Sonra babam diyor. O da senin baban diye cevap veriyor. Bir devamlılık bir şey yok gibi.
+
+62
+00:15:07,956 --> 00:15:10,556
+En sonunda. Anladım. Peki.
+
+63
+00:15:13,056 --> 00:15:20,816
+Hocam, bir önceki cümleye tek bağlı kalmış. Yani hiç şeyi yakalayamamış gibi, kontekst yakalayamamış gibi.
+
+64
+00:15:21,275 --> 00:15:25,255
+İnsan cevap veriyor, o insanın verdiği cevaba göre bir sonraki cümleyi oluşturmuş.
+
+65
+00:15:26,255 --> 00:15:30,556
+Çok refleks bu, hani anlık refleks gibi. Aynen.
+
+66
+00:15:31,176 --> 00:15:33,916
+Tamam, peki. Başka? Bir şey olan?
+
+67
+00:15:40,884 --> 00:15:43,820
+Peki, tamam. Şimdi...
+
+68
+00:15:48,436 --> 00:15:49,324
+Evet.
+
+69
+00:15:53,652 --> 00:16:02,451
+Şimdi Erizi Hanım, peki nasıl çalışıyor Erizi Hanım? Çalışma mekanonuna baktığınızda tüm etkileyiciliğini biraz kaybederdi.
+
+70
+00:16:02,532 --> 00:16:06,392
+Şimdi buradaki etkileyiciliğin içerisinde bir soru işareti var ki bundan birazcık bahsedeceğiz.
+
+71
+00:16:07,132 --> 00:16:12,312
+Ama nasıl çalışıyor? Tahmin ettiğiniz gibi demin de eşyalbon tabanında çalışıyor.
+
+72
+00:16:13,235 --> 00:16:40,235
+Yani soldaki şablonlardan, yani kullanıcının söylediği şey, soldaki şablonlarına hangisine uyuyorsa onun karşındaki şeyi ver, yapıyı ver. Yani I remember X derse, why do you remember X just now? Bunu söyle. My family member is Y derse, where is your family is Y? Gibi gibi anlatabilir mi? Buradaki şablonlardan uygun olanını belirleyip ona göre kullanıcı cümlesini dönüştürerek kullanıcıya tekrardan geri soruyor.
+
+73
+00:16:40,628 --> 00:16:46,348
+Bunlara uygun bir şey yoksa elinde de o zaman da yaptığı şey, işte genel amaçlı cevaplardan bir tanesini vermek olur.
+
+74
+00:16:47,700 --> 00:17:08,340
+1965 yılında bazı insanları bu sistem kandıramış. Kandıramışların kastım şu, hani insanlar oturtmuşlar, bir tane makinelerle konuşurtmuşlar. Daha sonra senin konuştuğun şey işte insan değildi, bir makinaydı demişler. Fakat bazı insanları ikna etmek güç olmuş biraz. Niye böyle olabilir acaba?
+
+75
+00:17:17,556 --> 00:17:23,155
+En çok ihtiyacı olduğu anda mı konuşmuş hocam? Çok böyle düşüktüyken belki makine iyi şeyler söylemiştir.
+
+76
+00:17:23,155 --> 00:17:28,316
+Vallahi öyle değil mi? Çok ihtiyacı vardır. En küçük bir supportu bile.
+
+77
+00:17:29,076 --> 00:17:37,735
+Evet doğru. Başka? Bir de şöyle bir şey düşünüyorum. 1965'ın solaktaki insanından bahsediyoruz.
+
+78
+00:17:40,476 --> 00:17:42,316
+O da sağlam bir kriter olabilir belki.
+
+79
+00:17:43,220 --> 00:17:48,500
+İlk defa karşılaştığı için. Muhtemelen o kişi zaten bilgisayarlarla ilgili muhtemelen ilk defa karşılaşıyordur.
+
+80
+00:17:48,500 --> 00:17:50,220
+Diye düşünebilirsiniz.
+
+81
+00:17:50,220 --> 00:17:57,220
+Neyse, sonuç olarak bu sistemin turing testini geçmesi mümkün mü?
+
+82
+00:17:57,220 --> 00:18:01,220
+Diye sorsam.
+
+83
+00:18:01,220 --> 00:18:07,220
+Demin geçemedi zaten. Fark ettiniz mi?
+
+84
+00:18:07,220 --> 00:18:10,220
+Zedemi şurada turing testi yaptırdım aslında makine için.
+
+85
+00:18:10,932 --> 00:18:26,412
+Hangisi insan, hangisi makine diye değil mi? Siz mesela burada şey diyemeseydiniz, yani karar veremiyoruz falan, o zaman şey diyebiliriz. Bu örnek için hakikaten tüm testine geçer bir şey var burada. Durum var burada diyebilirdik.
+
+86
+00:18:27,072 --> 00:18:35,412
+Neyse, şimdi dolayısıyla tüm testin geçemiyor. Az da olsa kandırabildiği insanlar var. Burada Eriza'nın...
+
+87
+00:18:35,731 --> 00:18:44,092
+Bir terapist olduğundan bahsettim ama terapistin özel bir ismi, daha doğrusu terapistin yönteminin özel bir ismi var.
+
+88
+00:18:44,672 --> 00:18:58,231
+Roger Young Psikoterapi Tekniği. Roger Young Psikoterapi Tekniği aslında şu, danışana, yani karşınızdaki size gelmiş o aynı kişiye, onun söylediklerini aynen tekrarlayın.
+
+89
+00:18:59,112 --> 00:19:00,432
+Yani bir aynen vazifesi görün.
+
+90
+00:19:00,819 --> 00:19:07,799
+Bu zaten çok yeterli bir şey sağlayacaktır, terapi sağlayacaktır. Bir görüş var.
+
+91
+00:19:08,948 --> 00:19:30,708
+Görüşün doğrulu yanlış, orası ayrı değil ama güzel tarafında programlanması çok kolay bir şey değil mi? Karşı tarafın söylediğini ona geri söyle. Bir şekilde birazcık değiştirerek tabii. Uygun bir şekilde değiştirerek. Programlama açısından oldukça basit bir teknik olduğu da değil. Otomatik değiştirmek için çok uygun bir psikoterapi tekniği öyle söyleyelim.
+
+92
+00:19:37,652 --> 00:20:02,251
+Söylediği, yani Turing testinden bahsediyoruz. Turing testini geçen bir sisteme zeki deriz. Turing testini de gördük. Şimdi burada karşıt bir görüş göreceğiz. Daha doğrusu birkaç tane karşıt bir görüş göreceğiz arka arkaya. Bunlardan ilki Searle'nin Çin Odası fikri. Bu da bir düşünce deneyi aslında. Searle diyor ki varsayalım ki diyor bizim bir odamız olsun.
+
+93
+00:20:02,644 --> 00:20:26,724
+Bu odanın içinde de bir insan olsun, insan otursun işte bir tane bir koltukta otursun. Elinde de bir tane kural kitabı olsun. Ve bu odanın bir ekranı olsun. Bu ekranda input dediğimiz kısım orası zaten. O ekranda belli şekiller gözüksün. Daha sonra o kural kitabını açsın, baksın o kural inputun karşılığında output'a şu data çekmecelerinden.
+
+94
+00:20:27,316 --> 00:20:48,115
+Hangisindeki kaçıncı çekmecedeki kaçıncı sıradaki kağıdı alıp output'a atması gerektiği de yazıyor olsun. Yani kural kitabı şunu söylüyor. Inputta şöyle bir şeyler görürsen o zaman git işte bilmem kaçıncı da çekmecesinin içerisindeki bilmem kaçıncı kağıdı al, output'tan dışarıya at. Tamam, kural kitabı bu.
+
+95
+00:20:52,195 --> 00:20:54,655
+Şimdi vesaire diyor ki.
+
+96
+00:20:55,188 --> 00:21:03,528
+Bu sistemin bir Çinli insanla konuşabildiğini varsayalım diyor.
+
+97
+00:21:06,468 --> 00:21:08,387
+Konuşabildiğini varsayalım.
+
+98
+00:21:09,968 --> 00:21:20,807
+Konuşabildiğini varsayarsak, yani Çinli insan bu odayla konuşurken hiçbir sıkıntı yaşamasa, yani hani karşısındakini...
+
+99
+00:21:21,364 --> 00:21:47,284
+Turing testi açısından baktığımızda evet, Turing testine göre geçebiliyor olsa. Tamam mı? Bu durumda bu bize ne söyler? Şimdi birkaç tane tabii ekstra soru da var burada. Çinli bir insanla konuşabilen bir odadan bahsediyoruz. Yani Çinli bir insanı simül edebilen bir odadan bahsediyoruz.
+
+100
+00:21:48,884 --> 00:21:51,384
+Bu odadaki, içindeki insan Çince biliyor mu?
+
+101
+00:21:56,339 --> 00:21:57,240
+Yok, bilmiyorum.
+
+102
+00:21:58,400 --> 00:22:01,159
+Yani ne yaptığından, ne ettiğinden hiçbir şekilde haberi bile yok değil mi?
+
+103
+00:22:01,719 --> 00:22:05,079
+Orada belli şekiller görüyor. O şekilleri, işte kural kitabına bakayım.
+
+104
+00:22:05,619 --> 00:22:09,000
+Aslında bakarsanız oradaki insandan kastımız ne bizim burada?
+
+105
+00:22:09,839 --> 00:22:11,159
+Yani neyi temsil ediyor o insan?
+
+106
+00:22:12,619 --> 00:22:13,179
+Algoritma.
+
+107
+00:22:13,819 --> 00:22:14,380
+Neyi?
+
+108
+00:22:15,139 --> 00:22:16,400
+Algoritma veya kodu.
+
+109
+00:22:17,059 --> 00:22:17,339
+Hayır.
+
+110
+00:22:18,804 --> 00:22:22,144
+Onu temsil eden başka bir şey orada. İnsan neyi temsil ediyor?
+
+111
+00:22:22,423 --> 00:22:23,644
+Bilgisayara, işlemciyi.
+
+112
+00:22:24,884 --> 00:22:29,443
+İşlemciyi temsil ediyor, işlemciyi. O kural kitabı neyi temsil ediyor?
+
+113
+00:22:31,104 --> 00:22:33,284
+Kod O, evet. O kodu temsil ediyor.
+
+114
+00:22:33,304 --> 00:22:36,384
+Kod, program. Data neyi temsil ediyor?
+
+115
+00:22:37,504 --> 00:22:37,923
+Datayı.
+
+116
+00:22:38,064 --> 00:22:38,923
+O da remi falan.
+
+117
+00:22:40,004 --> 00:22:45,624
+Neyse. Sonuç olarak belli anolojiler yapılabilir. Şimdi sorumlu şu, içerideki insan Çince biliyor mu?
+
+118
+00:22:45,920 --> 00:22:48,880
+Hayır. Peki o da Çince biliyor mu?
+
+119
+00:22:53,268 --> 00:22:59,048
+O da Çince biliyor musun sorusuna? Turing'in cevabı ne olur?
+
+120
+00:23:01,048 --> 00:23:02,228
+Biliyor olur hocam.
+
+121
+00:23:02,948 --> 00:23:03,128
+Niye?
+
+122
+00:23:04,948 --> 00:23:12,608
+Çünkü makineyi biliyor olarak düşünebiliyorduk zeki olarak. O da da makine gibi bir şey aslında. Ondan dolayı biliyor olur.
+
+123
+00:23:13,228 --> 00:23:20,028
+Yani dışarıdan bakıldığında Çinli bir insandan farkı yok makinenin.
+
+124
+00:23:21,523 --> 00:23:45,843
+Dolayısıyla o insana verdiğimiz Çince biliyor sıfatı, yani bu insan Çince biliyor sıfatını veriyoruz ya bir insana. Dışarıdan baktığımızda da o insandan farkı yoksa o zaman o sisteme de, artık o her neyse, o sisteme de Çince biliyor demeliyiz diyor Thuring. Dolayısıyla o da Çince biliyor mu sorusunu, Thuring'in vereceği cevap evet olacaktır.
+
+125
+00:23:47,539 --> 00:24:13,679
+Bilmiyorsa da biliyor gözükmesi yetmez mi vs. vs. Şimdi buradaki seherlenin takıldığı yer neresi olabilir? Yani bu sistem kabaca Turing testini geçiyor. Öyle söylüyor. Yani şeyimiz o. Fikrimiz bu. Turing testini geçiyor. Turing testini geçen bir şeye zeki deriz diyor. Turing. Düşünüyor deriz vs. vs.
+
+126
+00:24:17,332 --> 00:24:18,711
+İsteyerler burada ne diyorlardır?
+
+127
+00:24:40,884 --> 00:24:57,584
+Sen de burada şey söyleme bakın. Böyle bir sistem oluşturulamaz gibisinden bir şey söylemiyorum. Böyle bir sistem oluşturulsun ve trüntesini geçsin ama biz hala ona zeki diyemeyiz diyecek. Niye acaba?
+
+128
+00:24:59,827 --> 00:25:11,288
+Hocam, sistem birazcık karar ağaçlarının mantığına benziyor. Atada ya da kural kitabında yazılı olmayan bir şeyin çıktısını üretemez. Kendisi bir şey üretemez yani.
+
+129
+00:25:11,288 --> 00:25:26,288
+Bak, şöyle, kendisi bir şey üretemez falan noktasına hiç takılmayalım. Tamam mı? Bakın, normal bir insan dediğimiz, Çinli bir insanla konuşabildiğimiz kadar onları konuşabiliyoruz. Tamam mı? Dışarıdan baktığımızda...
+
+130
+00:25:27,284 --> 00:25:52,164
+Herhangi bir şey yok. Yani hani kural kitabında şöyle eksiklik olur, şöyle olur, böyle olur falan gibisinden bir şey değil. Dışarıdan baktığımızda insandan herhangi bir ölçülebilen şeyler anlamından bahsediyorum. Fiziksel şeyden bahsetmiyorum. Ölçülebilir nokta anlamında herhangi bir farkı yok. Tamam mı? Ve Turing testini geçiyor. Ama Seher'le diyor ki hayır hala biz bu odaya zeki diyemeyiz diyor. Niye?
+
+131
+00:25:57,523 --> 00:26:01,523
+Çünkü hocam sonuca odaklı değil, nasıl erkeli olduğuna bakıyor.
+
+132
+00:26:01,523 --> 00:26:03,523
+Bir daha söyle.
+
+133
+00:26:03,523 --> 00:26:08,523
+Sonuca odaklı değil, sonuca bakmıyor, sonuca nasıl vardığına bakıyor.
+
+134
+00:26:08,523 --> 00:26:11,523
+Arkadan neler gerçekleştiğine bakıyor.
+
+135
+00:26:11,523 --> 00:26:17,523
+Evet, yani burada şimdi böyle bir sistem, tünün testinin geçtiğini varsayalım.
+
+136
+00:26:17,523 --> 00:26:22,443
+Bu durumda sistem nasıl bir şey? Çok basit bir şey değil mi?
+
+137
+00:26:22,451 --> 00:26:46,831
+Basit, böyle dümdüz programlar var. Bir input var. Şöyle bir input gelirse şöyle bir şey yapacaksın. Şöyle bir şey gelirse şöyle bir şey yapacaksın. Dümdüz bir şey. Böyle bir şeye zeki demek hiç de mantıklı bir hareket değildir. Yaptığı şey ne olursa olsun, dışarıdan bakıldığı nasıl gözükürse gözüksün. İçeriden baktığımızda olaya bu korkunç dereceli basit bir şey.
+
+138
+00:26:47,796 --> 00:27:06,476
+Bu kadar basit bir şey zeki diye adlandırmamız mümkün değil. Bir programı izleyen bir şey, bir algoritma izleyen bir şeyi zeki diye adlandırmamız mümkün değil. O zaman kabaca söylersek hesap makinelerine da zeki deriz, bir tane termostatı da zeki deriz falan gibisinden şeylere varıyor iş. Anlatabildim mi?
+
+139
+00:27:07,536 --> 00:27:14,395
+Neyse, şimdi bu konuda yine daha devam edeceğiz. Birkaç şeyimiz daha var.
+
+140
+00:27:15,220 --> 00:27:16,460
+Bir şey sorabilir miyim?
+
+141
+00:27:17,779 --> 00:27:18,180
+Evet.
+
+142
+00:27:19,500 --> 00:27:24,919
+Bir şeye zeki deyip diyememe olayını niye bu kadar tartışıyoruz? Bunun önemi ne?
+
+143
+00:27:27,879 --> 00:27:39,139
+Çünkü ileride karşımıza böyle bir şeyler çıkarlarsa, bunlara karşı insanlar nasıl haklar verecekler, vermeyecekler, onlar oldukça önemli bir şeye doğru gidiyor sanki.
+
+144
+00:27:41,076 --> 00:27:55,996
+Yani muhtemelen belli bir zaman sonra kendisinin zeki olduğunu iddia eden makineler karşımıza çıkacak. Ve muhtemelen argümanlarla onları yenmemiz pek mümkün olacak gibi gözükmüyor argüman bazında. Onu demek istiyorum.
+
+145
+00:27:55,996 --> 00:28:06,676
+Ve o günler geldiğinde işte bunlara işte belli haklar verilecek mi, verilmeyecek mi? Bunlar epey böyle bir şey olacaklar. Ne der ona?
+
+146
+00:28:09,619 --> 00:28:17,720
+Ön plana çıkacak gibi gözüküyor. Biraz anlatabildim mi? Teşekkür ederim. Rica ederim.
+
+147
+00:28:21,779 --> 00:28:26,360
+Kural kitabında olmayan bir durumda, ilerleyicilerin kullanan yeni bir output üretemediği için zeki diyemeyiz.
+
+148
+00:28:27,540 --> 00:28:44,660
+Şimdi, [öğrenci] öyle demiş ama hani şey, [öğrenci]'ın bakış açısı dediğim gibi, dışarıdan baktığımızda hani bir şey yapamıyor olduğundan dolayı ona zeki diyemeyiz demiyor. Öyle bir şey yok. Dışarıdan bakıldığında yapabiliyor. Anlatabildim mi?
+
+149
+00:28:45,715 --> 00:29:12,055
+Yani dışarıdan baktığımızda bir insandan ayırt edemiyoruz. Anlatabildim mi? İnsan ne kadar bir şeyler yapabiliyorsa o da o kadar yapabiliyor. Anlatabildim mi [öğrenci]? Buradaki hikaye şey değil, yapabilip yapamıyor olmak değil. Nasıl yapıyor olması? [öğrenci]'ın takıldığı yer orası.
+
+150
+00:29:14,644 --> 00:29:21,644
+Devam edelim. Şimdi bununla alakalı küçük bir hikaye anlatacağım.
+
+151
+00:29:25,683 --> 00:29:26,523
+Şey, deşen.
+
+152
+00:29:30,387 --> 00:29:36,727
+Şimdi hikayemiz büyük bir ihtimalle çoğunuz duymuşsunuzdur.
+
+153
+00:29:46,740 --> 00:29:56,740
+Gaus diye birisi var. Bir alma matematikçi. Yani tahtik en önemli matematikçilerden birisi herhalde.
+
+154
+00:29:58,740 --> 00:30:14,060
+Gaus'un çocukluğuyla alakalı bir hikaye anlatılır. Doğruluğu yanlışı tabii ki tartışılır. Orası önemli değil ama bizim ders açısından önemli. Bir örnek olarak önemli daha doğrusu.
+
+155
+00:30:14,771 --> 00:30:39,111
+Şimdi, hikaye şu. Gauss ilkokulda ve ilkokuldaki öğretmenlerinin o gün bir işi var ama yapması gereken bir işi var ama sınıftan da ayrılmaması gerekiyor. Sınıftan da ayrılmadan işi yapması için öğrencilerin sessiz durması gerekiyor. Öğrencilerin sessiz durması için de onları oyalayacak bir şey arıyor, tarıyor, buluyor. Diyor ki birden yüze kadar anlarsaları toplayın çocuklar diyor.
+
+156
+00:30:39,488 --> 00:30:59,628
+Öğrenciler de başlıyorlar toplamaya. Bu epey uzun sürebilecek bir şeydi. İlkokul çağındaki çocuklar için çok da sıkıcı bir şeydi düşünürseniz. Ama pratiktir. Neyse öğrenciler yapmaya başlıyorlar. Öğrencilerin içerisinden bir tanesi kalkıyor diyor ki, öğretmenim şöyle şöyle diye cevap veriyor.
+
+157
+00:30:59,628 --> 00:31:05,048
+Şimdi tabii bu nasıl yapıyor? Hepiniz muhtemelen şey yapmışsınızdır.
+
+158
+00:31:05,567 --> 00:31:07,508
+Biliyorsunuz durumu şöyle bir şey değil.
+
+159
+00:31:16,531 --> 00:31:25,211
+Gautz kafasında hiç bir şey yapıyor, bu sayıları gözünün önüne getiriyor. Bunlar için kim toplayacak Allah aşkına?
+
+160
+00:31:25,584 --> 00:31:34,584
+Acaba daha kısa bir yol olabilir mi diye düşünürken, sonra birden işte bunun en başındakiyle en son dağının toplamı, ne diyor? 101 bu.
+
+161
+00:31:34,584 --> 00:31:43,584
+Buna bir ekleyip bir çıkarttığın zaman bu hala 101 ediyor. Bir ekleyip bir çıkarttığın zaman böyle böyle yani n ile n-k rakamlarının toplamı hep aynı oluyor diyor.
+
+162
+00:31:43,584 --> 00:31:52,556
+O zaman diyor burada 50 tane diyor 101 var. O zaman bunları çarparsam ben sonucu bulurum diyor.
+
+163
+00:31:53,875 --> 00:32:04,076
+Öğretmenin söylüyor ve öğretmenin büyük takdiri kazanıyor. Vesaire vesaire hikaye böyle. Şimdi bu hikayenin bir versiyonunu oluşturacağız. Bu hikayenin versiyonunu Gauss'un başka bir tane sınıf arkadaşı var.
+
+164
+00:32:04,723 --> 00:32:30,823
+Bu sınıf arkadaşının çok enteresan bir özelliği var. Şu, korkunç derecede hızlı toplama yapabiliyor. Yani Gauss'un bu birden yüze kadar anlı sayıların toplamının formülünü keşfedip, hesaplamasını yapmasından onda birlik süre içerisinde çok çok hızlı bir şekilde, çok hızlı bir şekilde toplama yapıp ve yanlışsız bir şekilde toplama yapabilme kabiliyetine sahip. Tamam mı?
+
+165
+00:32:32,180 --> 00:32:43,600
+Ve Gauss'ta düşünürken, acaba bununla bunu toplasam, ne yapsam falan diye düşünürken elini kaldırıyor, hocasına söylüyor, hocasının takdirini alıyor.
+
+166
+00:32:50,132 --> 00:32:58,872
+Hatta şöyle bir şey de olabilir. Mesela Gauss, insan. Bu 50 ile 101'i çarparken hata yapabilir mi?
+
+167
+00:33:01,471 --> 00:33:02,231
+Yapabilir mi?
+
+168
+00:33:02,711 --> 00:33:07,451
+Yapabilir yani. 5050 ile 5050 falan bile diyebilir değil mi? Olabilir. Mümkün.
+
+169
+00:33:09,192 --> 00:33:15,872
+Şimdi karşımızda iki tane öğrenci var. Bu öğrencilerden bir tanesi...
+
+170
+00:33:16,627 --> 00:33:26,527
+Çok hızlı işlem yapabilen ve hatasız işlem yapabilen birinci öğrenci. İkinci öğrenci de Gauss. Gauss daha yavaş yapıyor ve sonucu da yanlış.
+
+171
+00:33:31,380 --> 00:33:35,340
+Turing'e sorsak hangi öğrenci daha zekidir diye ne der?
+
+172
+00:33:44,276 --> 00:33:46,916
+Büyük ihtimalle birinci öğrenci daha zekidir.
+
+173
+00:33:47,976 --> 00:33:48,276
+Niye?
+
+174
+00:33:49,536 --> 00:33:51,276
+Sonuca baktığı zaman...
+
+175
+00:33:52,336 --> 00:33:54,596
+Sonuca odaklanırsak, değil mi?
+
+176
+00:33:54,616 --> 00:33:54,816
+Evet.
+
+177
+00:33:55,196 --> 00:33:59,736
+Sonuca odaklanırsak hem daha hızlı hem daha doğru.
+
+178
+00:34:01,476 --> 00:34:03,976
+Ötekisi iki açıdan da baktığınızda fail.
+
+179
+00:34:05,216 --> 00:34:09,796
+Yani hız açısından baktığınızda daha yavaş, doğruluk açısından baktığınızda daha yavaş.
+
+180
+00:34:09,796 --> 00:34:10,496
+Değil mi?
+
+181
+00:34:11,956 --> 00:34:29,316
+Peki, o zaman böyle yapmak çok mantıklı bir hareket oldu mu? İçinize sindi mi mesela Gauss yerine bu öğrenciyi seçmek? Ki buradaki bu öğrenci aslında ne? Bir adet. Neyi temsil ediyor?
+
+182
+00:34:30,096 --> 00:34:30,695
+Makine.
+
+183
+00:34:31,235 --> 00:34:32,936
+Bir makineyi temsil ediyor. Aynen öyle.
+
+184
+00:34:33,331 --> 00:34:58,452
+Çok daha hızlı yapıyor, çok daha doğru yapıyor. Ama yeni bir yöntemle değil. Yani yeni bir yöntemle yapmıyor. Ötekisi de yeni bir yöntem buluyor, keşfediyor. Ama sadece sonuca odaklanırsak böyle şeyleri ne yapamayabiliriz? Göremeyebiliriz. Bu oldukça sıkıntılı bir durum. Sadece sonuca odaklanmak bakış açımızı çok çok daraltır. Bu peki niye önemli?
+
+185
+00:34:59,507 --> 00:35:16,107
+Yani arkadaşınız diyoruz zeki diyelim demeyelim tartışması çok mu önemli falan gibisinden. Aslında şöyle hani buradaki belki tartışmanın bir boyutu şey ya süreç mi sonuç mu?
+
+186
+00:35:16,563 --> 00:35:37,224
+Süreç mi, sonuç mu noktası korkunç derecede hayatlarımızı etkileyen bir şey. İnsan ilişkilerimizi düşünün, insanları değerlendirmelerimizi düşünün, ne bileyim çalışanların performans değerlendirmelerini düşünün vs. vs. vs. Sürece bakalım, sonuca bakalım. Yani birçok insan ne yapar?
+
+187
+00:35:38,387 --> 00:35:54,068
+Ya tamam böyle oldu ama bak işte o sürecin içerisinde bunlar da yaşandı da o yüzden de böyle oldu vesaire vesaire. Sonuca baktığınızda bir şey yok mesela sallıyorum. Ama sürecin içinde bir şeyler gözüküyor. Dolayısıyla bu sonuç mu, süreç mi tartışması...
+
+188
+00:35:54,320 --> 00:36:21,539
+Zaten bir tartışma değil, çok temel olarak düşünürsünüz. İkisi de çünkü kritik bir açıdan baktığınızda. Ama sadece sonuca odaklanmanın çok çok da doğru olmayabileceğini söyleyebiliriz gibi gözüküyor. Ama tabii günümüz dünyası sürecin sıkıntısı ne arkadaşlar? Süreci objektif olarak ne yapamıyorsunuz? Çok sayıda bire için objektif olarak değerlendiremiyorsunuz.
+
+189
+00:36:21,887 --> 00:36:44,148
+O yüzden sonuçlara bakmanız gerekiyor temelde. Öyle bir şey var. Değerlendirmenin objektifliği mevzusu var. O yüzden süreci değerlendirme çok çok daha zor bir şey sonucu değerlendirmeye göre. Ama dediğim gibi sadece sonuca odaklanmak da çok doğru bir şey değil. Böyle bir şey var.
+
+190
+00:36:49,695 --> 00:36:55,976
+İkinci öğrenci, ben bu sonucuna başka nasıl ulaşabilirim? Tarzına bir yaklaşım sunmuyor mu?
+
+191
+00:36:56,476 --> 00:36:57,296
+Evet, doğru sunuyor.
+
+192
+00:36:58,556 --> 00:37:08,016
+Yani burada amacımız birazcık farklılık katmak ya da o farklı bir düşünce sunmak gibi geliyor bana.
+
+193
+00:37:10,695 --> 00:37:11,775
+Kimin amacı?
+
+194
+00:37:12,876 --> 00:37:14,935
+Burada iki öğrenciyi karşılaştırdık.
+
+195
+00:37:15,443 --> 00:37:40,764
+Evet. Şimdi sonucu doğru ya da hatalı. Bir tanesi daha kısa süre. Yani siz burada süreye bizi düşündürttünüz. Süre ve doğruluk ha o açıdan. Bu şekilde düşünürtünüz. İkinci öğrencinin amacı ben bu doğruya başka türlü ulaşabilir miyim? Belki daha kısa yol, amaç farklı da olabilir ama ben bu doğruya başka bir şekilde test edebilir miyim de olabilirdi o zaman.
+
+196
+00:37:42,804 --> 00:37:59,463
+Yani sonuç açısından şey mi söylemeye çalışıyorsun? Doğru mu anlıyorum? Sonuca baktığımızda sonuçta ortaya da hani ötekisi yeni bir yöntem üretmedi ama bu yeni bir yöntem üretti. Bu da sonuçtur. Onu mu demeye çalışıyorsun?
+
+197
+00:37:59,463 --> 00:38:07,764
+Ya da klasik anlamda bu öğrenci çarpmayı biliyor bu. Ya da bizim bilgisayarlarımız çarpmayı bilmiyor. Normalde toplama yapıyor ya da çıkarma yapıyor.
+
+198
+00:38:09,523 --> 00:38:35,864
+Bu deviri düşünürsek, geçmişi düşünürsek o zamanki bilgisayar sadece toplama yapıyordu. Sadece hızlı yapıyordu. Bu işlemi yaptığımız zaman, o zaman da süreç geçmiş oldu. Veya tarihsel olarak baktığımızda, dersimizle alakalı olarak zaten 60'lı yıllarda yapay zeka vardı ama teknoloji yetmediği için şu anda çok popular oldu yapay zeka. İsmi değişti.
+
+199
+00:38:36,179 --> 00:38:54,539
+değiştiriliyor. Bize tekrar sunuyor eski teknoloji. Ben ondan o kadar emin değilim ya. Şu andaki son sistemlerin 1960'lardaki sistemlerle aynı olduğunu söylemek çok doğru değil bence. Sadece isim değişikliği olduğunu söylemek doğru değil bence.
+
+200
+00:38:55,920 --> 00:38:58,119
+Mantık olarak, yaklaşım olarak.
+
+201
+00:38:59,860 --> 00:39:27,500
+Tabii ki farklılıklar vardır. Yaklaşım olarak dersek, her şey yaklaşım açısından bir de çok benzetiliyor olabilir. Eğer kastettiğim yapay sinir ağları ifadesiyse, onu mu demeye çalışıyordun bilmiyorum tabii de. Yapay sinir ağları diyorsa, birazdan göreceğiz. Bilgisayarların öncesinde başlayan bir yapay sinir ağlarını simüle etme derdi var, çalışmaları var.
+
+202
+00:39:27,891 --> 00:39:39,891
+Dolayısıyla bilgisayarlardan da öncesine gidiyor yapay sinirat çalışmaları. Onlar 1943'ten beri aşağıya varlar.
+
+203
+00:39:39,891 --> 00:39:44,891
+Ama isimleri değişiyor falan gibisinden bir şey de yok o açıdan düşünürsen.
+
+204
+00:39:45,844 --> 00:39:47,583
+Hala yapay sinir ağları.
+
+205
+00:39:47,764 --> 00:40:05,664
+Yapay sinir ağları. Rafa kaldırılıyor ama sonra teknoloji geliştirilince işte yapay zeka diyoruz. Yapay sinir ağları diyoruz. Yapay zeka diyoruz ama altında işte yapay sinir ağları gibi düşünüyorum ben. Fazla böyle miyim hocam dersiniz? Kusurmak mıyım.
+
+206
+00:40:06,503 --> 00:40:08,583
+Çok fazla önyargım var gibi geldi ya bana.
+
+207
+00:40:09,684 --> 00:40:30,644
+Neyse, yine konuşuruz. Yok, estağfurullah ders bölmek değil. Dersi konuşun, katın istiyorum ben zaten. Onda bir sıkıntı yok. Şunu demeye çalışıyorum burada. Temel olarak süreçte sonucun ikisinin de önemli olduğunu temelde anlatmaya çalışıyorum.
+
+208
+00:40:34,271 --> 00:40:58,291
+Bir öğrenciyi sınavdan aldığı not üzerinden sadece değerlendirmek çok doğru bir hareket olmayabilir. Onu anlatmaya çalışıyorum. Sonuç olarak başka şeyler tanımlayabiliyorsanız, ölçebileceğiniz onları da koyun zaten. O çok şey değil. Ama çoğu durumda süreç denilen şey çok kolayca ölçülebilen bir şey değil. Yani sürecin öneminin herkes farkında. O konuda zaten şey değil.
+
+209
+00:41:00,659 --> 00:41:27,420
+Önemli olduğunu herkes söylüyor ama süreci şey yapabilmek, objektif olarak değerlendirmek çok çok kolay bir şey değil. Neyse, şimdi bu iki öğrenciden sonra, yani eğer ki iki öğrenciyle alakalı şeyimiz de şu aslında, orada öğretmen sürece hiç odaklanmadan nasıl bunu yaptığın gibisinden bir şey sormadığında
+
+210
+00:41:28,596 --> 00:41:46,315
+Tamam mı? Öğrencilerin ikisinin arasında işte dediğim gibi isteyeceğimizden farklı bir sıralama oluşabilir. Öyle bir durum oluşabilir. O yüzden süreç de nasıl bunu yaptım, bu nasıl oldu ve biraz da odaklanmak gerekiyor.
+
+211
+00:41:51,443 --> 00:42:18,184
+Argüman Netblock'un soru cevap ağacı. Bu da işte bir tane bir ağacımız olsun. Diyalog ağacı aslında. Bu şunu derse şunu de, ondan sonra onu derse. Yani böyle bire birlik şeyler değil de, yani şunu derse şunu de değil de, birkaç böyle derinliği birden işin içine kadar. Yani önce şunu, sonra şunu, sonra şunu, sonra şunu dedikten sonra şunu derse, ondan sonra sen de şunu de. Fena gibisinden yapılır da işin içine alabilen, o çok kompleks bir yapıdan bahsedelim. Bir ağaç ama bunun, en nihayetinde bir ağaç.
+
+212
+00:42:18,739 --> 00:42:43,179
+Ve burada ilk zaten az mümkün her söyleşiyi, iki insan arasında geçebilecek söyleşinin içinde yer aldığını varsayalım. Böyle bir ağaç kesinlikle zaten depolayabileceğimiz falan büyüklükte bir ağaç değil herhalde. Çok kabaca düşünürsek. Ama diyelim ki varsayalım ki öyle bir ağaçı oluşturduk biz. Bu ağaç trüntesini geçer mi? Evet geçer.
+
+213
+00:42:43,987 --> 00:42:59,347
+İki insan arasındaki bütün diyalogların hepsini, olası bütün diyalogların hepsini o ağacın içerisinde toplayabilirseniz, evet geçer. Ama Tuning testinin geçmiş olmasına rağmen…
+
+214
+00:42:59,668 --> 00:43:27,388
+[öğrenci]'le dediği gibi, çok basit bir yapı. Burada zeki dememizin gerektirecek hiçbir şey yok burada. Bir if yapısı var sadece. Biz bunun nasıl zeki diyebiliriz. Netbrook'un da yine söylediği şey bu. Netbrook'un söylediği şey şu temelde. Zeka yalnızca soruları zeki bir insanı ayırt edilemeyen bir yol yanıtlama yeteneği değil. Bir davranışı zeki diye adlandırmak, bu davranışın nasıl üretildiği hakkında bir önermede bulunmaktır.
+
+215
+00:43:27,668 --> 00:43:42,128
+Şeyimiz bu. Süreç önemlidir. Nasıl üretildiğine biz sıfat yakıştırırız diyor. Output'a değil, sürece bir sıfat veririz diyor.
+
+216
+00:43:43,048 --> 00:43:47,348
+Yine bunun destekleyicilerinden bir tanesi.
+
+217
+00:43:51,123 --> 00:44:08,384
+Şöyle bir söz var ilk önce ondan bahsedelim. Zekanın çözebildiği her problemin sadece zeka ile çözeceğini söylemiş. Yani bir problem zeka ile çözülebiliyor mu? Evet çözülebiliyor. Bir sistem yani insan mesela o problemin zekasını kullanarak çözüyor. Başka bir sistem de...
+
+218
+00:44:08,820 --> 00:44:24,820
+O problemi çözebiliyorsa, o zaman ona da zeka sahibidir dememiz yanlış bir şeydir diyor. Neden? Çünkü zekanın çözebildiği her problemi sadece zeka ile çözeceğini söyleyemeyiz. Başka yollardan da zekayı kullanmadan da aynı problemi çözebilirsiniz diyor.
+
+219
+00:44:25,820 --> 00:44:33,820
+Hani oradan oraya atlatmak doğru bir hareket değildir diyor. Ve şu birazcık enteresan cümlesini kuruyor. Diyor ki...
+
+220
+00:44:34,068 --> 00:44:55,888
+Zihinsel süreçler çıktıkları aracılığıyla tanımlanmadıkça, bu aslında Turing gibi düşünmediğiniz sürece diyor. Yani zihni çıktıkları aracılığıyla tanımlamadığınız sürece, sadece çıktıkları aracılığıyla değerlendirmediğiniz sürece diyor. Turing gibi düşünmediğiniz sürece ya da.
+
+221
+00:44:56,179 --> 00:45:02,559
+Zekanın işleyişine daha görüşümüz mekanist bir niteliğe kavuşmadıkça, yani zekanın algoritmasını bulmadığımız sürece,
+
+222
+00:45:03,635 --> 00:45:24,976
+Bilgisayarların kullandığı yöntemi zekice diyemeyiz. Ya Turing gibi düşünürseniz diyor zeki diyebilirsiniz ya da günün birinde insan zekasının işleyişine dair bir algoritma ortaya çıkarsa o zaman da yine zeki diyebiliriz. Çünkü o zaman ne olur? Zekalı, Yapay Zeka diye iki tane kavram zaten kalmazlar kabaca düşünürsek.
+
+223
+00:45:30,420 --> 00:45:32,420
+Burası klasik.
+
+224
+00:45:33,420 --> 00:45:40,420
+Hocam bu IQ, EQ'ya da benziyor mu orada sadece mantıkla? Çözüyor da öncekinde.
+
+225
+00:45:42,420 --> 00:45:47,420
+Zeka ile çözüleceğin. Mesela orada zeka dediğimiz yapay zekadaki de mantık oluyor genelde.
+
+226
+00:45:47,420 --> 00:45:53,420
+Yani duygusal zeka dediğimiz o insanlarda olan şeyden de muzdarip genellikle yani şöyle.
+
+227
+00:45:55,420 --> 00:45:57,068
+Gibi düşünüyorum.
+
+228
+00:45:59,155 --> 00:46:10,576
+Ya şöyle söyleyeyim, hani trünççü bir açısıyla bakarsam olaya, duygusal zeka, şöyle zeka, böyle zeka falan da hiç onları birbirine ayırt etmeye uğraşmam.
+
+229
+00:46:11,796 --> 00:46:20,476
+Yani hani hepsinin birden gösterilebiliyor olması gerektiği zaman da gerekenin kullanılması falan gibisinden bir şey arka tarafta dönüyordur.
+
+230
+00:46:20,816 --> 00:46:23,096
+Ama arka tarafla hiç beni ilgilendirmediği için.
+
+231
+00:46:23,476 --> 00:46:39,096
+Anlatabildim mi demek istediğimi? Yani hani insan bazen şu tür zekasını, eğer böyle zeka türleri varsa bilmiyorum. İşte bazen gerektiği durumda şu zekasını, gerektiği durumda şu zekasını falan kullanıp işler yapıyorsa da türik bunların hiçbiriyle ilgilenmiyor aslında.
+
+232
+00:46:41,076 --> 00:46:57,476
+Anlatabildim mi? Anladım. Süreç onun için hiçbir şekilde önemli değil. Neyin benzettiğin, arka tarafta neyi kullandığın falan hiç önemli değil. Onun derdi dışarıdan bakıldığında insandan ayırt edilemez bu. İnsan kadar o işi yapabiliyor olsun.
+
+233
+00:46:57,476 --> 00:46:58,796
+Anladım.
+
+234
+00:47:05,108 --> 00:47:10,604
+Yapay Zekanın gerçekleştirmesi için iki tane şey var. Yine...
+
+235
+00:47:11,923 --> 00:47:38,623
+Donanım, yazılım anlamında ikiden var. Bu aşağıdan yukarıcılar var ki aşağısı burada donanım diye ifade ediyor. Yukarısı da yazılım diye düşünebilirsiniz. Bu aşağıdan yukarıcılar şey, insan zeki ya, o zaman insanın beyninin insanı zeki yapıyor. O zaman insanın beyninin donanımını yani sinir ağlarını biz model olarak almalıyız. Sinir ağları üzerinde çalışarak anca biz bu yapay zekaya sahip bir şeylere erişebiliriz.
+
+236
+00:47:38,623 --> 00:47:39,923
+Aşağıdan yukarıcıların şey.
+
+237
+00:47:39,923 --> 00:48:03,864
+Fikri bu. Diğer tarafta ise, yukarıdan aşağıya yıcaların fikri ise, biz nasıl ki uçarken uçaklarımızın kanatlarını çırparak uçmuyoruz. Aynı şekilde yapay zeka gerçekleştirmek için de illa ki doğanın bulmuş olduğu çözümleri ya da doğada gördüğümüz çözümleri kullanmamız şart değil. İlla ki yapay sinyalarını falan kullanmamız şart değil.
+
+238
+00:48:04,467 --> 00:48:25,688
+Bizim amacımız işi yapmak. Arka tarafta donanım olarak illa yapay sinyaların şuna buna falan bağlı kalmamız gerekmiyor. Tamam mı? Onların da fikri bu şekilde. Biz işin kendisini yapmalıyız. Donanıma odaklanmamalıyız. Ama yukarıdakiler yapay sinyalarını biz mutlaka kullanmalıyız. Çünkü insan zeki vesaire insan da bunları kullanıyor.
+
+239
+00:48:27,148 --> 00:48:30,527
+Yapay zekanın karşılıkları işte seyreden bahsettik.
+
+240
+00:48:31,795 --> 00:48:39,515
+Tek başına sentaks, şekilsel, program, algoritma, sentaksan kastımız bu. Nen miktarda oluşturursun semantiği ortaya çıkartmak. Semantik ve anlam.
+
+241
+00:48:41,015 --> 00:48:54,155
+Tabii anlam demek ne demek? Orası da biraz soru işaretli bir kısım ama. Sonuçta seher de diyor ki bir programı takip eden bir şey, zeka falan diyemeyiz.
+
+242
+00:48:54,155 --> 00:48:58,095
+Bilgisayarlarımızın da tek yapabildiği şey program takip etmek ise.
+
+243
+00:48:58,835 --> 00:49:03,835
+O zaman bilgisayarlarında hiçbir zaman zeki olamayacağını rahatlıkla söyleyebiliriz.
+
+244
+00:49:05,835 --> 00:49:16,835
+Bir başka aynı fikirde olan kişi John Lucas ama John Lucas bir teoreminin göz önüne alınıyor. Gödel Teoremin.
+
+245
+00:49:17,835 --> 00:49:20,747
+Bu teoremin bir yorumu...
+
+246
+00:49:21,492 --> 00:49:44,912
+Bunu söylüyor. Şöyle bir şey aslında. İnsanların doğruluğunu bildiği ama makinelerin bunu ispatlayamadığı doğrular vardır. Aşağı yukarı bu anlama gelecek bir şey var. Göder'in teoremi var. O zaman bu teoreme göre ve bunu ispatlıyor da.
+
+247
+00:49:50,387 --> 00:50:09,407
+Fikir değil bu, onu demek istiyorum. Bu bir matematikçi zaten. Matematik dünyasında bayağı alt üst eden bir şey. Bir sistemin içinde doğru olduğu bilinen ancak onun doğru olduğu ispatlanamayan doğrular vardır gibisinden böyle eksiklik teorini falan kanıtlayan kişi.
+
+248
+00:50:09,887 --> 00:50:30,228
+Bir tek yapay zeka ile alakalı değil, bütün matematiğin mantıksal temellere oturtulma çalışmalarının hepsini bayağı bir sarsan bir şey. Matematikte mantık birbirine eşit midir, dil midir? Aslında çalıştığı konu o ve olmadığını en azından gösteriyor.
+
+249
+00:50:30,228 --> 00:50:37,099
+Neyse, şeyimiz şu, Göden'in teorimi böyle bir şey varsa, insanların doğrulu bilgi ama makinelerin...
+
+250
+00:50:37,139 --> 00:50:42,280
+Hesaplamanın, işte mantığın, öyle söyleyelim, mantığın ispatlayamadığı doğrular var.
+
+251
+00:50:43,460 --> 00:50:48,280
+O zaman böyle doğrulu olduğuna göre insan zihni makinenin kapasitesinin üzerinde olacaktır, üzerinde kalacaktır.
+
+252
+00:50:48,280 --> 00:50:53,720
+Dolayısıyla şey yok, ne derler ona. Böyle makinenin oluşması falan bir müfing değil.
+
+253
+00:50:54,619 --> 00:50:56,039
+İçer bunlar, karşılıkları da.
+
+254
+00:50:57,492 --> 00:51:10,112
+Sonuçta makine düşünebilmesi olursa felsefi bir yaklaşımdan ziyade deneysel bir yaklaşımla ele alınmıyor. Çünkü iyi ki sonuç vermiyor diyor. Turing serledi. Deneysel bir yaklaşım olmaz çünkü programı takip eden şey asla düşünemez. Serne şey de bu.
+
+255
+00:51:10,112 --> 00:51:18,752
+Tabi burada aklımıza gelebilecek şey insanlar da bir programı takip ediyor olabilirler mi? E diyorlarsa zaten bu tartışmanın hiçbir manası da kalmıyor değil mi o noktada?
+
+256
+00:51:19,251 --> 00:51:43,251
+İnsanlar bir programı, benzer programları takip ediyor olabilirler mi? Program mı demeyelim ona? Hani insanlar benzer durumlarla benzer şekillerde davranırlar mı? Çok farklı kültürlerde de olsalar. Olabiliyorlar yani hakikaten. Biyolojik yapıdan gelen bazı refleksler var. Temel şeyler var. Bir program takip ediliyor mu?
+
+257
+00:51:43,795 --> 00:52:09,795
+Belli bir gelişim evresi falan adım gidiyor gibi gözüküyor. Ama bütün düşünce süreçlerinde belli bir algoritmayı takip etmek anlamında söylemek çok yanlış olur diye düşünüyorum. Ama çok kaba da olsa belli bir yapı ilerliyor gibi gözüküyor. Ama bunun cevabı…
+
+258
+00:52:10,228 --> 00:52:31,428
+Henüz bilinen bir şey değil. Aksi de yok, kendisi de yok. Ama çeşitliliğimizi görüp dünyanın çok çok da sıkıcı, çok çok da tahmin edilebilir bir yer olmadığını görüp böyle program takip edilmiyor herhalde falan gibisinden çıkarımlar yapmak mümkün olabilir.
+
+259
+00:52:31,428 --> 00:52:34,528
+Neyse, şimdi arkadaşlar bir ara vereceğiz.
+
+260
+00:52:36,275 --> 00:52:52,036
+10'u 5 geçe kadar verelim. 10'u 5 geçe kadar bir ara verelim. Ondan sonra yapay zekanın talihçisinden başlayacağız. 1943'e geçeceğiz. Oradan günümüze doğru yavaş yavaş geleceğiz.
+
+261
+00:52:52,036 --> 00:52:57,096
+Dediğim gibi saat 10'u 5 geçe kadar bir ara verelim.
+
+262
+00:53:05,588 --> 00:53:28,888
+[öğrenci], niye konuşmuyorsun da yazıyorsun buradan? Hocam bir varlık organik bazlı süreçler dışında bir yanıt oluşturuyorsa zeki değildir desek sorun çözülmüş olmaz mı? Organik bazlı süreçler dışında bir yanıt oluşturuyorsa ne demek o [öğrenci] anlamadım ben. Ama şimdi konuşmayalım, bir sonraki dersin başına konuşalım tamam mı?
+
+263
+01:04:23,891 --> 01:04:29,591
+Tekrardan merhaba arkadaşlar. [öğrenci] burada mısın?
+
+264
+01:04:46,996 --> 01:04:49,476
+Sesim geliyor mu arkadaşlar?
+
+265
+01:04:51,036 --> 01:04:51,736
+Geliyor.
+
+266
+01:05:01,715 --> 01:05:02,876
+[öğrenci] burada gözüküyor.
+
+267
+01:05:06,135 --> 01:05:08,096
+Evet, yazmış kulaklılım o zaman.
+
+268
+01:05:10,755 --> 01:05:17,755
+Şimdi [öğrenci] şöyle bir şey sormuş, görmüşsünüzdür. Organik bazı süreçler dışında bir yanıt oluşturuyorsa, dedi ki değildir desek, sonuç çözülmüş olmaz mı?
+
+269
+01:05:18,275 --> 01:05:28,976
+Pek olmuyor sanki. Niye? Şöyle bir şey düşünün. Mesela bizim değerlendirme kriterimiz böyle değil insanların.
+
+270
+01:05:29,588 --> 01:05:48,908
+Yani günümüzde öyle söyleyeyim. Mesela birisiyle sadece chat yaptığınızı düşünün. Tamam mı? Yani hiç görmediniz, etmediniz falan. Onunla epey bir zaman konuşuyorsunuz. Arkadaş oluyorsunuz vesaire vesaire.
+
+271
+01:05:51,380 --> 01:06:16,860
+Bu süreçte karşınızdakinin organik bir sürecin sonucunda mı o cevapları ürettiğinden emin olabilir misiniz? Olamazsınız. Bir makine olabilir mi? Evet, olabilir. Ama sizin bundan hiçbir şekilde haberiniz olmuyor. Neden olmuyor? Dışarıdan bakıldığın, yani sizin dışarıdan bakabildiğiniz kadar ölçebildiğiniz şeylerin hiçbiri şey değil. Organikliğe dair bir şey söylemiyor. Değil mi?
+
+272
+01:06:17,460 --> 01:06:31,360
+Dolayısıyla organik mi değil mi kararın sonucunu vermek, yani bunu tek kriter olarak kullanmak pek mümkün değil gibi gözüküyor. Biraz eksik kalıyor gibi. Anlatabildim mi?
+
+273
+01:06:33,940 --> 01:06:44,540
+Ve işte ne bileyim işte bir yıl boyunca chat yaptığınız birisinin makine olduğunu öğrenseniz bayağı bir kötü olur. Hatta onunla alakalı bir film var.
+
+274
+01:06:45,231 --> 01:07:06,991
+Her diye bir film vardı galiba, yanlış hatırlamıyorsam. Buna benzeyen bir, aşık oluyor bir tane makinaya. Daha sonra işte onun bir program olduğunu öğreniyor tabii. İlk önce öyle olduğunu bilmiyor tabii. Onun da olduğunu öğrendikten sonrası falan da baya enteresan.
+
+275
+01:07:07,059 --> 01:07:31,059
+Sonuç olarak sadece organik bazı süreçler, dediğim gibi benim sınıfta size dersler anlattığımı düşünün. Dışarıdan bakımda insandan hiçbir şekilde ayırt edilemiyorum. O zaman bir makineymişim. Sonuçta siz benim beynimin içine ne bittiğini bilmiyorsunuz kabaca. Ben organik bazlı bir şey miyim? Yoksa işte birileri mi yapmış beni falan gibisinden o manada bir şey bilmiyorsunuz. Ona rağmen...
+
+276
+01:07:31,507 --> 01:07:40,748
+Şey diyorsunuz, bu insan gibi davranıyor. İnsana verdiğimiz sıfatı da buna verebiliriz gibisinden düşünebiliyorsunuz.
+
+277
+01:07:44,467 --> 01:07:58,208
+Bu konu hakkında, yani şimdi geçen ders ve bugünkü dersteki konuştuğumuz konuların hepsi, ama hepsi doğrusu, yanlışı vesairesi falan olan şeyler.
+
+278
+01:07:58,327 --> 01:08:01,347
+Doğru cevap şudur diyebileceğimiz bir durum değil bunlar hiçbir.
+
+279
+01:08:01,347 --> 01:08:09,407
+Tamamen spekülasyonlardan oluşan şöyle şöyle olsa, şöyle şöyle olsa diye durmadan spekülasyon üretip üretip durdum farkındaysanız.
+
+280
+01:08:10,132 --> 01:08:33,031
+Dolayısıyla aslında bu konu üzerinde nasıl fikirler var, bu fikirlerinin dayanak noktaları neler? Bunları size birazcık açıklamaya çalıştım. Bu neden de önemli? Dediğim gibi muhtemelen önümüzdeki birkaç yıl içerisinde daha çok şeyde makinelerle karşılaşacağız gibi gözüküyor.
+
+281
+01:08:34,068 --> 01:08:45,908
+Ve bu demin bahsettiğim konular muhtemelen bayağı bir şeyin içine girecek, hayatımızın içine girecek gibi gözüküyor.
+
+282
+01:08:46,908 --> 01:08:54,908
+Şimdi bu spekülatif epey su kaldıran örneği şeylerden sonra...
+
+283
+01:08:55,252 --> 01:09:11,552
+Yapay Zeka'nın tarihçesine geçelim. Neler varmış, neler yokmuş. Yapay Zeka'nın tarihçesinde oradan ilerleyeceğiz. Tabii bu tam bir tarih değil. 1943'ten başlıyor burada iki tarih ama fikri manada çok daha eskileri gidiyor.
+
+284
+01:09:12,212 --> 01:09:20,992
+1943'te başlıyor olmasının sebebi işte transistörlerin bulunduktan sonra o transistörleri kullanarak ilk yapay nöronun yapılması.
+
+285
+01:09:20,992 --> 01:09:25,752
+Tarihi 1943, o yüzden 1943'ten başlıyor.
+
+286
+01:09:27,492 --> 01:09:30,712
+Ve MacGlock ve Bits ilk yapay nöronları tasarlıyorlar.
+
+287
+01:09:30,832 --> 01:09:34,391
+Şimdi bu ilk yapay nöron tasarımındaki yaptıkları şey şu aslında.
+
+288
+01:09:36,192 --> 01:09:36,992
+Bir yapay nöron...
+
+289
+01:09:37,811 --> 01:09:55,612
+Simülasyonuyla da diyebiliriz, gerçek implementasyon da var da, bizim AND, OR gibisinden ve bunların çeşitli birbirlerine bağlanmasıyla oluşabilecek kararların bir nöron tarafından da temsil edilebilirliğini gösteriyorlar.
+
+290
+01:09:55,612 --> 01:10:00,000
+Yani AND kapısı yapıyorlar nöronlar, OR kapısı yapıyorlar.
+
+291
+01:10:00,000 --> 01:10:16,260
+Nöronlar, antler, orlar gibisinden yapılar bizim mantıksal sürecimizin, düşünce süreçlerimizin temel yapıtaşlarıysa işte bu nöronlar da bunları ne yapabiliyorlar? Gerçekleyebiliyorlar. Olduğunu gösteriyorlar.
+
+292
+01:10:24,819 --> 01:10:29,920
+Öğrenme dediğimiz şeyin fiziksel altyapısını açıklıyor.
+
+293
+01:10:31,979 --> 01:10:41,159
+Öğrenme denilen şeyin beynlerdeki hücrelerin birbirleriyle olan bağlantılarındaki değişim olarak tanımlıyor.
+
+294
+01:10:41,159 --> 01:10:43,019
+Ne demek istiyorum?
+
+295
+01:10:43,619 --> 01:10:47,119
+Şimdi Pavlov'un köpekleri vardır bilirsiniz şartlı refleks olayı.
+
+296
+01:10:47,923 --> 01:11:02,243
+Zil çaldıktan sonra köpeğe yemek veriyor. Zil çalıyor, köpeğe yemek veriyor. Zil çalıyor, köpeğe yemek veriyor. Zil çalıyor, köpeğe yemek veriyor. Böyle böyle bir süre hayvanı şartlıyor. Daha sonra sadece zil çalıyor.
+
+297
+01:11:06,260 --> 01:11:23,520
+Ağzın hazırlanması denilen şey nedir? İşte hayvanlarda salya akıtmaktır. Ağzı daha ıslak hale, besinleri daha kolay sindirebilir hale getiriyor. Daha sonra zil çalıp yemek vermese bile hayvanın ağzının sulandığı, ağzının salya akıttığını falan gözlemliyor.
+
+298
+01:11:24,340 --> 01:11:48,420
+Pavlov'un köpeklerine yaptığı şey bu. Şimdi peki bu arka tarafta nasıl oluyor? Beyinde bu iş nasıl oluyor? Aslında Hebian'ın kuralı açıklıyor. Şöyle bir şey düşünebilirsiniz kabaca. Zil sesini duyan nöron, Hebian kuralı ne? İki nöron aynı anda ya da çok kısa aralıklarla aktif olurlarsa aralarındaki bağ güçlenir.
+
+299
+01:11:49,171 --> 01:12:13,111
+Demin ki Paulo'nun köpeklerini uyarlarsak şöyle bir şey denk geliyor. Aslında zil sesi duyulduğunda uyarılan nöronlar var bir tarafta. Bir tarafta da ağızdan salya akıtılmasının emrini veren motor nöronlar var diyelim ki. Bunlar es zamanlı olarak yani bir tanesi uyarıldıktan sonra diğeri de uyarılıyorsa.
+
+300
+01:12:13,716 --> 01:12:27,855
+Çünkü normalde başlangıçta bu iki tane nöron ağının, iki tane nöron yumağının arasında bir ilişki yok. Normalde bu deneyi yapmasanız, şart refleksi oluşturmasanız, zil çalsanız hiçbir şekilde hayvanın ağzı falan sulanmıyor.
+
+301
+01:12:28,180 --> 01:12:35,739
+Ama bu iki şey, iki olay arka arkaya defalarca geldiğinde aralarında bir bağ oluşuyor.
+
+302
+01:12:35,880 --> 01:12:40,899
+Ya da işte var olan çok minik ağlar, bağlar öyle söyleyeyim. Onlar güçleniyorlar.
+
+303
+01:12:40,899 --> 01:12:51,899
+Ve bu sayede işte normalde aralarında bir ilişki olmayan, zil sesi duyulduğunda uyarılan nöronlarla...
+
+304
+01:12:53,171 --> 01:13:07,291
+Salya akıtmayı tetikleyen nöronların arasına bir bağ kurulduğundan sonra artık zil sesi ne zaman duyulsa işte onlara bağlı olan nöronlar da direkt aktivite olacağı için aymanın ağzından salya akıması.
+
+305
+01:13:07,728 --> 01:13:33,467
+Gerçekleşiyor. Dolayısıyla Hebbian aslında bu öğrenme dediğimiz şeyin fiziksel olarak nasıl meydana geldiğine dair bir teori ortaya atıyor. Bu çeşitli şeylerde de gözüküyor, deneylerde vesaire. Yani öğrenme ağırlık güncellemedir. Yapay zekanın, yapay sinir ağlarının terminolojisiyle konuşursak.
+
+306
+01:13:34,003 --> 01:13:49,943
+1950'de Thüringen makalesi çıkıyor. 1951'de ilk yapay sinira bilgisayarı ortaya çıkıyor. İlk yapay nörondan 8 yıl sonra, yani tek bir tane nöron değil, birçok nöronundan oluşan bir yapay sinira. Bununla biraz daha kompleks problemleri çözebiliyorlar. Öyle bir söyleyeyim.
+
+307
+01:13:51,667 --> 01:14:08,107
+Bu ilk küçük kıvılcımlar ortaya çıktıktan sonra büyük bir beklentiler dönemi ortaya çıkıyor. Trink diyor ki aynı o makalesinde 50 yıl içerisinde sıradan sorgulayacağını en az %35'lik bir diyalogdan sonra doğru karara veremeyecek. Karar dediğimiz şey ne? Karşı odadaki bir insan mı, makinem.
+
+308
+01:14:08,463 --> 01:14:09,904
+Onun kararını veremeyecek diyor.
+
+309
+01:14:10,443 --> 01:14:14,543
+57'de Neville ve Simon diyorlar ki 10 yıl içinde Dünya Satran Şampiyonu bir bilgisayar olacak.
+
+310
+01:14:14,783 --> 01:14:18,203
+50-60 arasında da diyorlar otomatik değil çevresi çok yakın bizden.
+
+311
+01:14:18,764 --> 01:14:20,183
+Şimdi bunların hiçbiri gerçekleşmiyor.
+
+312
+01:14:20,583 --> 01:14:22,423
+Yani dedikleri zaman içerisinde gerçekleşmiyor.
+
+313
+01:14:23,683 --> 01:14:26,264
+Turing testi dediğim gibi hala geçirebilmiş değil.
+
+314
+01:14:27,043 --> 01:14:30,904
+Neville ve Simon'ın söylediği şey 10 yıl içinde değil, 40 yıl sonra oluyor.
+
+315
+01:14:31,384 --> 01:14:35,423
+1957'den 1997'de gerçekleşiyor Dünya Satran Şampiyonu bir bilgisayar oluyor.
+
+316
+01:14:36,372 --> 01:15:00,772
+Otomatik dil çevirisi günümüzde az çok editleme ile işimize yeter ölçüde sistemler var mı şu anda? Evet, var. O zaman için gerçekleşmemelerinle alakalı sebepler neler? Bir tanesi dünya bilgisi ki bunu biraz dersin en sonunda tekrardan ele alacağız.
+
+317
+01:15:01,471 --> 01:15:15,871
+Henüz tam çözebilmiş bir problem değil. Problemlerin karmaşıklığının üstel olması, yani mesela satrancın 10 yıl içinde çözebileceğini düşünüyorlar ama 10 yıl içinde değil de 40 yıl içinde çözülüyor.
+
+318
+01:15:15,871 --> 01:15:22,871
+Çünkü algoritma manasında çok büyük gelişmeler değil de…
+
+319
+01:15:23,600 --> 01:15:42,860
+Hesaplama kabiliyetleri anlamında çok büyük gelişmelere ihtiyaç duyuluyor. Onlar gerçekleştirdiği zaman, dediğim gibi algoritm olarak çok büyük gelişmeler yaşanmadan da bu Dünya Satran Şampiyonluğu'nun bir makine olması sağlanabiliyor.
+
+320
+01:15:43,988 --> 01:16:01,888
+Kısıtlı dünyaların, yani simülasyonların, öyle söyleyeyim, gerçek dünyaya model olamaması, dünyanın simülasyonunun yapılamaması, gerçekçi, çok gerçekçi bir simülasyonun yapılamaması, oyunlarda çalışan algoritmaların gerçek hayatta çalışmaması gibi düşünebilirsiniz bunları.
+
+321
+01:16:18,247 --> 01:16:21,247
+Yapay Zeka dersi.
+
+322
+01:16:21,247 --> 01:16:34,635
+Bu epey bir şey oluşturuyor. Yapay Zeka dersi.
+
+323
+01:16:36,435 --> 01:16:53,935
+Fonların durması, araştırmacıların ilgisinin azalmasına sebep oluyor. Aynı yıl 1969'da Bryson ve Hall çok katmanlı yapay sinyalarını ki biz onları bugün derin öğrenmek diyoruz. Derin yapay sinyaları diyoruz.
+
+324
+01:16:57,619 --> 01:17:22,260
+Onların bu problemleri çözebildiklerini gösteriyorlar. Yani Minsky'nin ve Pepperd'ın bu problemi yapay sınavları çözemez dediği problemleri derin mimarların çözebildiğini gösteriyorlar. Fakat oradaki sıkıntı şu, o problemi çözmek için yapay sınavların ağırlıklarını insanlar buluyorlar o zamanlar.
+
+325
+01:17:22,739 --> 01:17:42,500
+Yani yapay sinir ağlarının eğitim algoritmaları, bugün bildiğimiz adıca backpropagation gibisinden algoritma yoklar. Onlar dediğim gibi 80'lerin başında ortaya çıkıyorlar. O zamanlarına kadar yapay sinir ağlarının problem çözmesi için o probleme uygun ağırlıkların insanlar tarafından atanması gerekiyordu. Düzenlenmesi, fine tune edilmesi gerekiyordu.
+
+326
+01:17:43,412 --> 01:18:04,172
+O yüzden hani böyle bir mimari var, bu problemi çözebiliyor ama bu mimariyi nasıl eğiteceğimizi bilmiyoruz. Böyle bir sıkıntı var. 80'lere kadar o çok fazla ilgi çekmiyor. Ama tabii bunun etkisi, 80'leri de geçelim, belki hani 2012'ye kadar hani genel manada söyleyeyim, yapay sinirlen olan ilgi.
+
+327
+01:18:04,608 --> 01:18:25,028
+Daha azdı, şeye göre, diğer makine öğrenmesi algoritmalarına göre. Ama 2012'deki başarıların arkasında bayağı bir kişiyi kendi tarafına çekebildi, yapay zeka programı, öyle söyleyeyim.
+
+328
+01:18:26,899 --> 01:18:50,599
+Otomatik çeviri sistemlerinde oldukça kötü sonuçlar elde ediliyor. Bu 1966-1973 arasında kötü zamanlar o manada düşünürsek. Sonra işte bu uzman sistemler o taşı. Uzman sistemler kural tabanlı sistemler. Kural tabanlı sistemlerin anlamı sonuçları insanlarca kolaylıkla anlaşılabilen ve kısıtlı alanlarda uzmanlığa sahip.
+
+329
+01:18:51,475 --> 01:18:58,975
+Bir doktor uzman sistem yapmıyorsunuz da, ne bileyim işte X hastalığının uzman sistemini yapıyorsunuz.
+
+330
+01:18:59,015 --> 01:19:04,615
+Böyle spesifik bir alanda uzman sistemler ortaya çıkıyor. Onların belli başarıları oluyor.
+
+331
+01:19:06,755 --> 01:19:17,055
+Kural tabanlı sistemlerin yapay sinir ağlarına göre bir avantajı var. Ne olabilir?
+
+332
+01:19:20,435 --> 01:19:22,095
+Açıklayabilir olmaları.
+
+333
+01:19:23,796 --> 01:19:31,415
+Açıklayabilir olmaları. Yani kararlarını neden öyle verdiklerini net bir şekilde söyleyebiliyor olmaları.
+
+334
+01:19:31,855 --> 01:19:32,136
+Evet.
+
+335
+01:19:32,876 --> 01:19:34,495
+Bu önemli mi?
+
+336
+01:19:40,212 --> 01:19:43,792
+Sonuç açısından değil. Ama süreç açısından önemli.
+
+337
+01:19:44,612 --> 01:19:49,352
+Doğru. Sonuç açısından da önemli olabilir mi? Şunu demeye çalışıyorum.
+
+338
+01:19:52,352 --> 01:19:59,272
+Mesela hukuk sisteminde uzman sistem oluşturacaksınız.
+
+339
+01:20:00,000 --> 01:20:09,960
+Bu uzman sistem kural tabanlı da olabilir, şey de olabilir, işte Black Box şey yaparsından gibisinden bir şey de olabilir hukuk sisteminde.
+
+340
+01:20:09,960 --> 01:20:17,159
+Bir karar verecek sistem. Şimdi bu kararın ne olmasını hukuk sisteminde isterseniz, istersiniz.
+
+341
+01:20:17,652 --> 01:20:37,252
+Bu gerekçesinin de olmasını istersiniz değil mi? Yani şu kararı verdim dese bu bizim şu andaki mevcut hukuk sistemimizde çok yeterli olmaz. Bizim sistemimizde derken insanlar için de çok yeterli. Yani sana şu ödülü veriyorum ya da sana şu cezayı veriyorum. İnsanlar doğal olarak ne yapıyorlar? Niye? diye bir şey sorabilirler.
+
+342
+01:20:37,811 --> 01:20:56,811
+Soruyorlar. En azından öyle söyleyelim. Hatta mahkeme kararları falan açıklanırken ilk önce karar açıklanır ondan belli bir zaman sonra gerekçeli karar yazıdır. Yani o karar çıktı ama neye dayanar, dayanar neydi? Onun üzerine bir şey oluşturulur. Dolayısıyla o süreç de bana enteresan geliyor biraz ama yani gerekçeli karar...
+
+343
+01:20:57,395 --> 01:21:16,335
+Niye sonradan yazıyorlar acaba? Önceden yazıp sonucu öyle varılması gerekmiyor mu bilmiyorum ama. Neyse, önce karar verip sonra gerekçesinin yazılması bilmiyorum yani bürokratik olarak doğru olabilir ama süretsel olarak çok doğru gibi gözükmüyor. Neyse, oraya takılmayalım.
+
+344
+01:21:17,332 --> 01:21:43,092
+İnsanların neden sorusuna zaafı var. Biz neden neden diye sora aslında ilerliyoruz kabaca. Dolayısıyla bir kararın neden alındığı bizim için önemli. Ama bu çok da biricik kriter mi değil. Ne demek istiyorum?
+
+345
+01:21:44,083 --> 01:21:56,523
+Mesela bir sistem var, kararlarının başarısı %90 ama kararlarını açıklayamıyor. Başka bir sistem var, kararlarının başarısı %70 ama kararlarını çok güzel açıklıyor. Hangisini kullanmak mantıklı?
+
+346
+01:21:58,355 --> 01:22:17,956
+Anlatabildim mi? Dolayısıyla hani tek kriter şey de değil, açıklanabilir olmak da değil ama açıklanabilir olmanın çok önemli olduğu noktalar da var. Bu konuda epey bir çalışmalı sürüyor zaten. Kural tabanlı senler dediğim gibi bu açıklanabilir kararları sebebiyle oldukça popüler olmuşlar vakti zamanında.
+
+347
+01:22:20,467 --> 01:22:44,068
+Daha sonra 81-91'de yine kural tabanlı yapılarla çalışan prolog şeyler var. Ne derler? Generation Projesi'ni duyuruyor Japonya. Japonya minyatürizasyon, yani teknolojik anlamda minyatürizasyondan bahsediyorum. O konuda çok büyük bir devrim gerçekleştirdiği için, onu sürdürmek için aslında bu projeye başlıyor.
+
+348
+01:22:48,467 --> 01:23:12,587
+Burada da geride kalmamak için bu sefer Japonya'daki bu yapay zeka doğru atılımından sonra yapay zeka projelerine onlar da büyük bir ayırmaya başlıyorlar. Yazılımda yenikleşen NaviTi vesaire. Şu anda yine bu tarz şeyler görebilirsiniz, görüyorsunuz. Daha da göreceksiniz gibi gözüküyor belli bir süre boyunca. Yapay zeka firmanın sayısında büyük artış oluyor falan filan.
+
+349
+01:23:12,948 --> 01:23:30,948
+Böyle biraz dalgalı bir zamanlar. Ondan sonra yine tersi oluyor. Yine Generation duruyor. Prolog tamamlı sistemlerin, mimarilerin öyle söyleyeyim, çok beklenen sonuçlara erişemediğini görüyorlar. Daha sonra işte yapay zeka'yı böyle...
+
+350
+01:23:31,380 --> 01:23:44,700
+Yani bildiğimiz problemlere uygulayalım. Belli konularda işimize eriyan bir şeyler yapalım. Daha mütevazi bir hedeflere dönüyor.
+
+351
+01:23:46,220 --> 01:23:57,760
+Tabii günümüzde bu birazcık değişmiş gibi gözüküyor. Şu anda bir genel yapay zeka noktasında epey bir çalışma sürüyor. Baya etkileyici sonuçlar da alınmaya başlandı.
+
+352
+01:23:58,131 --> 01:24:22,851
+Gelecek bayağı bir şey gözüküyor. Heyecan verici gözüküyor. Şimdi, ben şunu şöyle yapayım. Günümüz tabii bu günümüz tam günümüz değil. 97'de yakın günümüz öyle söyleyeyim. Yakın geçmiş. Deep Blue 97 Kaspar'ı yeniyor. Satranç karmaşıklığındaki bir oyunda bilgisayarlar bizi yeniyorlar.
+
+353
+01:24:23,315 --> 01:24:34,755
+Ama satrançtan çok daha karmaşık olan oyunlar var. Go var, Starcraft var. Ki dersin ilerleyen zamanlarında oyundan slide'larında bu karmaşıklığın ne anlama geldiğini, başımıza nasıl bir şeyler açabildiğini göreceğiz.
+
+354
+01:24:35,335 --> 01:24:46,536
+Go ve Starcraft satrançtan çok çok daha karmaşık oyunlar ve bu karmaşık olmaları sebebiyle 2018'e kadar insanlar dayanabiliyorlar.
+
+355
+01:24:52,051 --> 01:25:16,931
+Birinciliklerini kaybediyorlar. Öyle söyleyeyim. Sürücüsüz arabalar var. Epey bir zamandır. Gerçekten çok uzun zamandır geliştirilmeye uğraşılıyor. Ama hiç bu kadar, şu zamanki kadar olabilirliğe yakın olmamıştı gibi gözüküyor. Size şey sorayım. Sürücüsüz bir arabaya biner misiniz şu anda? Ya da bindiniz mi hiç?
+
+356
+01:25:25,747 --> 01:25:26,707
+Binerim hocam.
+
+357
+01:25:27,707 --> 01:25:28,567
+Kim dedi?
+
+358
+01:25:29,067 --> 01:25:29,867
+Ben dedim, [öğrenci].
+
+359
+01:25:30,627 --> 01:25:33,907
+[öğrenci]. Yani biner de o sürecek, o götürecek seni.
+
+360
+01:25:34,507 --> 01:25:35,127
+Evet hocam.
+
+361
+01:25:36,108 --> 01:25:38,947
+Tamam, evet. [öğrenci] ben binerim dedi. Başka?
+
+362
+01:25:40,067 --> 01:25:40,887
+Ben de binerim.
+
+363
+01:25:42,027 --> 01:25:45,907
+Kim binerim dedi? Ağustos'u de. İki kişi binerim dedi. Evet, başka.
+
+364
+01:25:48,427 --> 01:25:49,768
+Ben de binerim hocam.
+
+365
+01:25:50,899 --> 01:25:55,159
+[öğrenci]. Peki, bilmem diyen yok mu ya?
+
+366
+01:25:56,100 --> 01:26:02,879
+Hocam ben yolcu koltuğuna oturmazdım muhtemelen. Şoför koltuğuna otururdum yine. Durdurabilmek için en azından.
+
+367
+01:26:04,819 --> 01:26:21,899
+Durdurabilmek için. Ya zaten hani şu andakilerde öyle bir şey var da, şart falan var gibi söyleniyor da. Bilmiyorum tabii. Hangi konumda derken [öğrenci] sen şey mi yani? Sürücü konusunda değil, arka tarafta oturacaksın. Tamam öyle. Olur mu?
+
+368
+01:26:26,612 --> 01:26:43,231
+Hangi konuda? Haa, şey demek istiyorsun, nerede? Amerika, Türkiye, Hindistan o çok doğru bir hareket. Yani şey değil yani hepsinin çok uygun ve hiç uygun olmayan yerleri var gibi. Mesela otobanda gitmesini daha kabul mü edersiniz?
+
+369
+01:26:47,859 --> 01:26:49,859
+Otobanda daha rahat mı gidebilir?
+
+370
+01:26:53,043 --> 01:27:02,463
+Hız limiti varsa binilir. Hız limiti varsa binilir. Peki. Ya ben hayatta binmem falan diyen yok mu kimseye? Yani ben güvenemem daha.
+
+371
+01:27:05,304 --> 01:27:12,064
+Hocam zaten tamamen kontrol. Ona bırakmıyorsunuz. Şimdi sana direksiyona dokunmanı istiyor bir dakikada bir falan.
+
+372
+01:27:12,623 --> 01:27:16,263
+Ya tamam da işte ben sana diyorum ki sen buna biner misin? Dokunmayacaksın da şeye.
+
+373
+01:27:18,323 --> 01:27:20,243
+Onu soruyorum. Güvenirmiyorsun diyorum.
+
+374
+01:27:20,503 --> 01:27:24,183
+Bir tane video Romanya'da mıydı? Vardı böyle, şu dokunmadan taksiler vardı.
+
+375
+01:27:24,643 --> 01:27:24,903
+Evet.
+
+376
+01:27:24,903 --> 01:27:27,743
+Yazın götürüyordu seni, şu direksiyona falan dokunamayan şeyler de vardı.
+
+377
+01:27:27,763 --> 01:27:28,463
+Evet, var.
+
+378
+01:27:29,483 --> 01:27:32,383
+Güzel duruyordu hocam, direksiyon kendi kendine dönüyor. İlginç yani.
+
+379
+01:27:32,803 --> 01:27:33,483
+Heyecan verici.
+
+380
+01:27:34,183 --> 01:27:38,143
+O direksiyon niye dönüyor ben onu da anlamıyorum. O direksiyona falan ne gerek var ki?
+
+381
+01:27:40,283 --> 01:27:44,103
+Aslında bakarız atıcın manası yok değil mi? Sadece görsellik için var.
+
+382
+01:27:44,532 --> 01:27:49,851
+Bir manada düşündüğünüzde bizim görmemizin ne manası var ki direksiyonun döndüğünü.
+
+383
+01:27:50,932 --> 01:27:51,612
+Neyse.
+
+384
+01:27:51,612 --> 01:27:53,452
+Ne yazıklarımızı görüyoruz hocam yine en azından.
+
+385
+01:27:54,012 --> 01:27:57,311
+Herhalde gerektiğinde müdahale falan edebilmek için falan diye düşünüyor da.
+
+386
+01:27:57,592 --> 01:28:04,351
+Ama herhalde yeterince olgunlaştığında o tarz sistemler öyle bir direksiyonu görmemizin bir manası olmaz herhalde değil mi?
+
+387
+01:28:06,612 --> 01:28:10,192
+Peki. Ama bilmem falan diye çıkmadı herhalde.
+
+388
+01:28:11,271 --> 01:28:11,512
+Tamam.
+
+389
+01:28:12,180 --> 01:28:39,020
+Peki. Neyse, sonuçta oldukça efektif olabilecek gibi gözüküyorlar. Ama hani insanlarla ya da insanların kullandığı arabalarla bu tarz makinelerin aynı ortamda bulunmasının belli sıkıntıları olabilecek. Oldu da doğrusu. Ama hani vadettiği faydaları düşündüğümüz zaman hakikaten çok şey mantıklı gözüküyor. Yani herkesin bir tane arabasının olması şudur, budur, bilmesinler şeyleri hiçbir.
+
+390
+01:28:40,307 --> 01:28:51,128
+Manası yok. Arabalar normal zaman yani, çok büyük bir kısmı arabaların %90'ını da bekleyerek duruyorlar öyle söyleyeyim.
+
+391
+01:28:53,908 --> 01:29:04,148
+İnsanlar o kadar koordine hareket edemiyorlar. Yani mesela tek şeritli bir yolda araçlar birbirlerine koordine hareket edebiliyor olsalar, çok kabaca, %100'e gidebilirsiniz.
+
+392
+01:29:04,851 --> 01:29:14,851
+Ama öyle bir şey olmuyor. Birisi şunu yapıyor, bunu yapıyor. İnsan faktörü olduğu zaman insan bayağı şey yani... Ne diyelim?
+
+393
+01:29:18,131 --> 01:29:44,291
+Tahmin edilemez yönleri var. Bazı umursamaz yönleri var. Kendini düşünen yönleri var. Sadece kendini düşen yönleri var vs. O yüzden koordine olmasında bazı sıkıntılar olabilir. Ama makinelerde öyle bir sıkıntı olmayacağı için koordinasyon noktasında trafiği optimize etmek, yani bütün araçların hepsini tek bir noktada optimize etmeyi düşündüğünüzde mükemmel sonuçlar elde edebilirsiniz.
+
+394
+01:29:45,363 --> 01:30:00,000
+Mars'ta otonom bir robottan bahsetmişiz ki Mars'taki bir robotun otonom olması niye gerekli olabilir? Çünkü siz işte Mars'taki bir robotu onun kamerasından gelen görüntünüz sizin ekranınıza yansımış hali...
+
+395
+01:30:00,000 --> 01:30:12,100
+Özerinden elinizdeki kumandayla kontrol etmeye kalktığınızda, mesela diyelim ki ekranda şey gördünüz, robot bir tane krater'e doğru yaklaşıyor, derin bir krater'e doğru yaklaşıyor.
+
+396
+01:30:12,960 --> 01:30:17,980
+Onu gördüğünüz, sizin gördüğünüz anda aslında o robot nerede? O kraterin dibinde düşmüş.
+
+397
+01:30:18,452 --> 01:30:31,372
+Neden? Çünkü arada ne var? Gecikme var. Gecikmeyle kontrol mümkün mü? Mümkün ama çok efektif bir şey değil. Özellikle...
+
+398
+01:30:31,444 --> 01:30:58,684
+Dinamik ortamlarda, hadi stabil ortamlarda çok çok büyük sıkıntı değil belki ama dinamik ortamlarda hele mümkün değil. Mars oldukça stabil bir ortam, hani o açıdan düşünürsek orada bile sıkıntı olabilirken biraz daha dinamik, biraz daha hareketli falan bir yer olsa orada uzaktan kontrol etmek falan pek mümkün bir şey değil. O yüzden belli bir ilikten ne olması gerekiyor? Otonomuna sahip olması gerekiyor bu tarz robotların. Konuşmayı yazıya çeviren programlar var.
+
+399
+01:30:59,444 --> 01:31:16,396
+Bu durumlar artık çok daha çözünürlüğü yüksek şeyler söyleyebiliyorlar. Yani ne demek istiyorum? Yarın saat 13'de yağmur başlayacak, 14.30'a kadar sürecek. Mesela hani böyle bir şeyler söyleyebiliyorlar. Eskiden öyle bir şeyler söyleyemiyorlardı.
+
+400
+01:31:16,435 --> 01:31:30,695
+Ama hala günümüzde, ne bileyim, bir ay sonrasının hava tahminini iyi yapabilen sistemler var mı? Yok. Hani hala gelişmeye açık epey bir şey var. Ki hava çok çok kritik bir şey. O açıdan düşünürseniz.
+
+401
+01:31:34,739 --> 01:31:49,059
+Tabii burada şeyden de bahsetmek mümkün biraz. Kasım 2022 Çet-GPT olayında. Şimdi herkes konuşur mu Çet-GPT ile?
+
+402
+01:31:52,659 --> 01:31:57,859
+Konuşmayan var mı? Daha doğrusu öyle söyleyeyim. Her şeyin de cevabını alamıyorum. Herkes...
+
+403
+01:32:03,923 --> 01:32:21,944
+İki kişiyi mi konuştu? Sadece. Değildir yani. Konuşmayan çok şey kaybeder. Ne kaybeder [öğrenci]? Merak ettim.
+
+404
+01:32:33,300 --> 01:32:36,220
+Ben bir şeyim morayla, terbiye haptenek ne kadar.
+
+405
+01:32:37,260 --> 01:32:38,420
+Ben de şeyim varmışım.
+
+406
+01:32:42,100 --> 01:32:44,780
+Sadece örneğe, sen dinlisliği.
+
+407
+01:32:49,555 --> 01:32:55,695
+İkinciyi geçen üçüncü olur dedi. Olmaz mı?
+
+408
+01:33:01,779 --> 01:33:21,579
+Şimdi şey çok iyi. Ne derler ona. Tabii ki çok komik komik hatalar yapıyor falan. Ama mevcut hali değil de potansiyelini burada belki değerlendirmek lazım.
+
+409
+01:33:27,579 --> 01:33:29,579
+Çünkü şu anda çok...
+
+410
+01:33:29,652 --> 01:33:37,532
+Sağlam bir, belki de daha önce hiç toplanmamış büyüklükte bir veri toplanmıştı.
+
+411
+01:33:38,112 --> 01:33:44,312
+Fark ettiniz, fark etmişsinizdir. Bu halka açılması sayesinde.
+
+412
+01:33:45,692 --> 01:33:50,532
+Halka açılmadan önce de veri toplanarak bu işi yapıldı tabii ki insanlardan.
+
+413
+01:33:50,532 --> 01:33:52,532
+Ama...
+
+414
+01:33:53,300 --> 01:34:05,300
+Bu halka açılması sonrasında Facebook'tan ya da işte Twitter'dan, Twitter zaten gelişimi çok çok hızlı değil de, Facebook'un mesela kullanıcı sayısının artışı çok yüksekti.
+
+415
+01:34:05,300 --> 01:34:15,780
+Bununki Facebook'u da geçti ve şimdi dev gibi bir yeni datayla bunu tekrardan eğitimimiz falan gibisinden bir süreçte sürüyor.
+
+416
+01:34:16,340 --> 01:34:27,099
+Dolayısıyla hani sonraki versiyonları şimdikinden çok çok daha iyi olacak gibi gözüküyor. Bunun çok çok daha iyisi de nasıl bir şeyler olacak? Orasını da yavaş yavaş göreceğiz.
+
+417
+01:34:27,099 --> 01:34:29,099
+Ama hani en...
+
+418
+01:34:32,756 --> 01:34:44,756
+En azından etkileyici bir sistem olduğunu söyleyebiliriz gibi düşünüyorum en azından. Zekidir, değildir falan tartışmasının çok bir manası yok.
+
+419
+01:34:47,756 --> 01:34:54,756
+Sonuçta buradaki hikaye, yani yöntem de şudur budur falan bilmem ne ama hani...
+
+420
+01:34:56,851 --> 01:35:23,092
+Mesela ben kişisel olarak bunun bu kadar kısa sürede, bu kadar iyi bir sistemin bu kadar kısa sürede ortaya çıkabileceğini çok düşünmüyorum. Birazcık da canımı da sıktı aslında. Yani canımı sıkmasını sebebi o değil. Canımı sıkmasını sebebi şey. İnsanlar bu kadar mı tahmin edilebilirlerdi? Kendimize yönelik bir eleştiri, onu demeye çalışıyorum. Ama tabii şöyle bir gerçek demeyelim de.
+
+421
+01:35:23,667 --> 01:35:31,987
+Bütün insanlar birbirlerine bayağı bir benziyormuş gibi.
+
+422
+01:35:35,412 --> 01:35:55,192
+İnsanların genelde yaptıkları işler, öyle diyelim, buldukları çözümler vs. Bayağı bir şeymiş. Yani böyle korkunç bir dağılım falan gibisinden değilmiş gibi gözüküyor. En azından şu yaptığı, benim en azından denediğim sorgularda vs. birazcık öyle bir şey gördüm.
+
+423
+01:35:58,899 --> 01:36:09,279
+İnsanların yaptıkları işlerin de çok çok büyük bir kısmının hakikaten robotlar tarafından yapılabileceği argümanını bayağı bir destekliyor bence.
+
+424
+01:36:09,279 --> 01:36:19,800
+Çetçebit'in kendisi. Onu demeye çalışıyorum aslında. Bu noktada tabii hani yazılımcılar sevmezse şudur budur bir sürü şey var, tartışma sürüyor.
+
+425
+01:36:20,176 --> 01:36:45,316
+Tabii bu tartışmada insanların yerini alacak, almayacak falan mevzusu. Ama en azından şunu söyleyebilirim. Yazılım tarafından bakarsak, işleri hızlandıracak. Yani beş kişinin yaptığı işi, bir kişi yapacak falan. Kabaca belki. O noktada bir soru işareti oluşabilir. Ama tabii orada şey de var.
+
+426
+01:36:49,395 --> 01:36:58,735
+Bir tek yazılımcı diye ifade etmedim de onu belki rutin işi yapan, yani yaptığı işi sürekli aynı şekilde yapan.
+
+427
+01:37:02,676 --> 01:37:08,436
+Aynı şeyi izleyen, aynı yolu izleyen, sürekli aynı yolu izleyen, öyle söyleyelim.
+
+428
+01:37:08,976 --> 01:37:12,596
+Yani ne bileyim, birisi web sayfası yapıyor mesela, işte A müşterisi için yapıyor.
+
+429
+01:37:12,596 --> 01:37:16,756
+Sonra B müşterisi için bunu yaparken çok çok da bir şey yapmıyor aslında.
+
+430
+01:37:17,296 --> 01:37:20,736
+İşte aynısını C'ye çevirirken çok çok da bir şey yapmıyor. Sallıyorum tamam mı?
+
+431
+01:37:20,776 --> 01:37:23,236
+Ya da işte bir reklam hazırlayacak, bir grafik hazırlayacak.
+
+432
+01:37:23,396 --> 01:37:30,536
+İşte A işte sektöründeki bir firma için yaptığı şey yine o sektördeki başka bir firma için uyarlama gibisinden şeylerdi.
+
+433
+01:37:30,676 --> 01:37:54,856
+Böyle çok standart, rutin süreçler izliyorsa, bu tarz işler sanki hani makinanlara bayağı bir devredilebilir gibi gözüküyor şu anda. Yani böyle standart işi yapıyorsanız, rutin işi yapıyorsanız, onun makinan tarafından yapılması nasıl bir şey olursa olsun.
+
+434
+01:37:55,636 --> 01:38:17,355
+Anlatabildim mi? Bayağı şey gibi gözüküyor, mümkün gibi gözüküyor. Çünkü verinin toplanması noktasında da çok daha farklı farklı yönlere gidecek muhtemelen dünya bu data mevzusundan. Dolayı yani ne kadar verirseniz o kadar işinize yarayacaksa vermeye devam edeceksiniz. Neyse.
+
+435
+01:38:17,775 --> 01:38:39,176
+Dolayısıyla önümüzdeki birkaç yılı bu noktada oldukça heyecan verici buluyorum. Baya bir değişim olacak gibi gözüküyor. Bakalım etkilenecek meslekler şunlar bunlar. Ama bir şeylerin değişeceği bence kesin gibi.
+
+436
+01:38:42,036 --> 01:38:48,576
+Bakalım, göreceğiz hep beraber. Neyse, şimdi bu mevzudan sonra şeye geçelim.
+
+437
+01:38:50,260 --> 01:39:12,380
+Makinelere göre kolay, insanlara göre zor görevler neler olabilir? İnsan için zor olan şeyler neler? Çok fazla veri değişen. Yani insan için düşünürseniz, satranç oynamak insan için hakikaten zor bir iştir. Ya da planlama yapmak, yani mesela ders programı planı yapmak bir insan için hakikaten zor bir şey. Haftalık programını çıkartmak, bilgisayar oyunları.
+
+438
+01:39:12,884 --> 01:39:39,604
+Ya da işte rakamları ilerleye çarpmak falan gibisinden şeyler. Bunlar aslında formal tanımlarla bütün durumları erişilebilen sistemleri, simülasyon dünyalarını falan aslında çok kabaca tanımlıyor. Bunlar da makineler oldukça iyiler insanlara göre. Peki tersi bir durum var mı? Yani makineler için zor, bizim için kolay neler olabilir?
+
+439
+01:39:40,948 --> 01:39:46,368
+Şimdi mesela şöyle bir sayı dizisi olsun. Bu sayı dizisindeki bir sonraki soru işaretinin yerine gelecek arkadaşlar.
+
+440
+01:40:03,412 --> 01:40:04,452
+Sesim geliyor mu?
+
+441
+01:40:14,931 --> 01:40:15,611
+Teşekkürler.
+
+442
+01:40:22,899 --> 01:40:48,759
+Peki. Şimdi gördüğünüz gibi insanlar bunu çözebiliyorlar. Makinalar bunu çözebilirler mi? Şimdi burada şeyden bahsedeceğim ama hani bu problem makinalar için niye zor? Şimdi dersin ilerleyen haftalarında konuşacağız bunların hepsini. Yeni bir durum elinize geldi. Onun aklına kaybedeceksiniz.
+
+443
+01:40:49,235 --> 01:41:00,095
+O duruma çok benzeyen durumları daha önceden gördüyseniz, o zaman bu evimizdeki durum hakkında kahve vermen çok çok kolaylaşır.
+
+444
+01:41:01,735 --> 01:41:11,336
+Yani bir tane bir kedi resmi gördünüz mesela, ona kedi deyip dememeniz aslında ona benzeyen, ne kadar benzeyen bir şeyler gördünüz.
+
+445
+01:41:11,756 --> 01:41:14,916
+Onunla alakalı bir durum.
+
+446
+01:41:17,300 --> 01:41:32,260
+Kediler birbirlerine benzerler. Ama şu sayı dizisindeki bir sonraki sayı bulma problemleri birbirlerine öyle benzemezler.
+
+447
+01:41:35,840 --> 01:41:43,440
+Yani iyi bir problem aslında daha öncekilere en az miktarda benzeyendir.
+
+448
+01:41:43,807 --> 01:41:51,807
+İfade edebiliriz. Dolayısıyla makineler örneklerin arasında benzerliklerin çok olduğu...
+
+449
+01:41:53,076 --> 01:42:18,376
+Bu problemlerde oldukça iyilerdir. Benzerlerini gördükleri problemlerde oldukça iyilerdir. Ama bu tarz problemler o tarz problemler değiller. Dolayısıyla bunları çözmek çok kolay değil. ChatGPT'ye sorsanız bunu işte devamında ne diye gelecek bunu söyler mi size? Tabii ki söyler. Bu zaten internette her yerde var. Anlatabildim mi? Hani internette olmayan yepyeni bir durumdan bahsedelim. Öyle bir problem siz ona verdiniz. Kendiniz öldürdünüz.
+
+450
+01:42:19,028 --> 01:42:24,308
+Arkadaşlar, makineye verdiğiniz çözemeyecek. Ondan bahsedelim.
+
+451
+01:42:25,668 --> 01:42:28,068
+Bir diğer problem, Bongard problemi.
+
+452
+01:42:28,068 --> 01:42:31,108
+Bongard problemleri için şunu birazcık büyüteyim.
+
+453
+01:42:31,507 --> 01:42:48,107
+Bongart bir insan. İnsanlar için bir test hazırlamış. Bongart problemi birerine hazırlamış. 62 nolu problem şu gördüğünüz problem. Problem de şu aslında. Bu soldaki altı şekli sağdaki altı şeklinden ne ayırıyor?
+
+454
+01:42:56,724 --> 01:42:57,284
+Ne dersin?
+
+455
+01:43:09,268 --> 01:43:16,988
+Sağdaki resimde çizgilerin başlangıcı ve bitişi yakın, soldaki uzak.
+
+456
+01:43:17,388 --> 01:43:19,028
+Uzak değil mi? Mesela bu.
+
+457
+01:43:19,608 --> 01:43:27,688
+Hocam ben de bir şey söyleyeceğim. Makinaların söyleyemeyeceği bir cevap. O defterin telleri ayırıyor. Makine bunu söylemez mesela.
+
+458
+01:43:30,208 --> 01:43:33,688
+Valla şöyle bir şey söyleyeyim. Şimdi...
+
+459
+01:43:34,032 --> 01:43:49,992
+Makine bunu söylemez dedin ya. Makine bunu söylemez mi? Makine bunu söyler. Nasıl söyler biliyor musun? İnternette birisi buna böyle bir cevap yazdıysa söyler.
+
+460
+01:43:50,652 --> 01:43:51,852
+İşte yazmamıştır bence.
+
+461
+01:43:52,272 --> 01:43:53,932
+Anlatabildim mi demek istediğimi?
+
+462
+01:43:57,112 --> 01:43:59,252
+Dolayısıyla demek istediğimi çok iyi anladım.
+
+463
+01:44:01,363 --> 01:44:28,643
+Ama sen de böyle bir demek istediğimi anladın herhalde. İnternette olan bir şey ise bu. Yani makinelerin o noktada kısmı önemli. İnternetik bilgi kullanmaları noktası çok çok kritik herhalde burada. O yüzden şey var, ne derler ona. Öyle bir ihtimalde var. Ama dediğin gibi yani kimse yazmazsa tabii ki söylemez. Yani umarım.
+
+464
+01:44:29,011 --> 01:44:38,632
+Bu soru pek bu şekli bizim gördüğümüz şekilde mi makineye soruluyor yoksa her imaj ayrı verilerek mi soruluyor? O da önemli.
+
+465
+01:44:40,391 --> 01:44:46,032
+Yani 6 tane şekil bir tarafta veriliyor.
+
+466
+01:44:46,032 --> 01:44:52,931
+Yani arkadaşımız burada tel dedi ya, belki makine telin olduğunu bilmiyor zaten. Bizim gördüğümüz gibi mi görüyor?
+
+467
+01:44:53,619 --> 01:45:20,500
+Tabii, ona göre de değişir. Dediğin şey de haklısın. Orası da doğru. Telleri vermezsen zaten tellerle alakalı ne söylesin değil mi? Orası da var. Ama takılmayalım oraya. Buradaki önemli olan şey ne? Onu söylemeye çalışıyorum size. Bu problemler de, bu problemler gerçekten zor problemler. Niye makineler için zor bu problemler? Demin söyledim aslında.
+
+468
+01:45:27,891 --> 01:45:36,071
+Makinenler bu problemi zor, bu problemi çözemezler en azından. Daha doğrusu hani karşına ilk defa çıkarsa.
+
+469
+01:45:37,971 --> 01:45:40,431
+Daha önceden verilmiş bir cevap olması lazım.
+
+470
+01:45:41,071 --> 01:45:41,471
+Efendim?
+
+471
+01:45:42,451 --> 01:45:44,351
+Daha önceden verilmiş bir cevap mı olması lazım?
+
+472
+01:45:45,431 --> 01:45:50,871
+Daha önceden benzeren bir problemi görüp onun çözümünü yapmış olması lazım. Tamam mı?
+
+473
+01:45:51,192 --> 01:45:54,831
+Ama bu problemler birbirine benzemiyorlar. Tamam mı?
+
+474
+01:45:55,572 --> 01:46:13,131
+Mesela bu problemde şey var, şekillerin başlangıç ve bitiş noktanın uzaklığı kriter. Sol tarafı ve sağ tarafı birbirine ayıran şey. O değil mi? Başka bir problem de sol tarafta ve sağ taraftakileri başlangıç ve bitişlerin şeyi ayırmıyor.
+
+475
+01:46:13,503 --> 01:46:29,943
+Mesela bu problemi çözdürdük ve yine mesela şekilsel anlamda farklı bir şeyler koyduk ama başlangıç ve bitişleri kriteri var yine soruda. Yani bulunması gereken şey yine o diyelim ki. Onu çözebilirim muhtemelen. Anlatabildim mi demek istediğimi?
+
+476
+01:46:41,503 --> 01:46:53,683
+Daha zor makineler için. Tamam mı? Bizim insanların adaptasyon kabiliyeti daha güzel. Şimdi dünya bilgisi kısmına gelelim.
+
+477
+01:47:00,148 --> 01:47:05,467
+Burada bir resim var. Bu resimde ne oluyor bana söyler misiniz?
+
+478
+01:47:17,076 --> 01:47:22,076
+Obama arkadaşına şaka yapıyor.
+
+479
+01:47:22,076 --> 01:47:25,076
+Peki.
+
+480
+01:47:27,076 --> 01:47:33,076
+Bir politikacı terazi tartılıyor. Obama da arkadan ağlanım arttırıyor o politikacının.
+
+481
+01:47:33,076 --> 01:47:36,076
+Evet, şaka yapıyor yani değil mi?
+
+482
+01:47:37,076 --> 01:47:40,908
+Peki, güzel. Bunu nasıl anladınız?
+
+483
+01:47:45,171 --> 01:47:47,171
+Ağırlığını arttırdın da sandınız.
+
+484
+01:47:49,611 --> 01:47:54,491
+Ayağını koyunca ağırlığım artıyor.
+
+485
+01:47:55,391 --> 01:48:01,211
+Durumu çoğumuz yaşamıştır hocam. Evde tartılırken biri basıyor genellikle.
+
+486
+01:48:03,252 --> 01:48:16,471
+Şunu demeye çalışıyorum. Buradaki olayı anlamak için o tartı aletinin nasıl çalıştığını, mekanizmasını temel manada bilmek gerekiyor değil mi?
+
+487
+01:48:16,471 --> 01:48:29,471
+Yani o tartının üstüne ayağını bastırdığında oradaki ağırlığın yükseleceğini bilmeden...
+
+488
+01:48:30,003 --> 01:48:36,583
+Buradaki espriyi anlamak mümkün mü? Oradaki tartı aleti nasıl çalışıyor bilmeden buradaki espriyi anlamak mümkün mü?
+
+489
+01:48:39,743 --> 01:48:40,764
+Değil hocam.
+
+490
+01:48:41,583 --> 01:48:54,323
+Değil yani, onu demeye çalışıyorum. Dolayısıyla buradaki dünya bilgisi dediğimiz şey, dünyanın nasıl çalıştığı hakkında, dünyanın nasıl bir yer olduğu hakkında bilgiden bahsediyorum.
+
+491
+01:48:58,996 --> 01:49:15,296
+Gelişmiş Görüntü İşlemi Araçları bize şunları yapabilir. Bu resmi ona verdiğimizde buradakilerin kim olduklarını, hangi okullardan mezun olduklarını, yüzlerinden tanıyıp vs. vs.
+
+492
+01:49:15,855 --> 01:49:38,336
+Vücut pozisyonlarını, konumlarını, birbirlerine göre konumlarını, etrafta neler olduğunu, dolap var, aynalar var, tartı var gibi. Hatta buradaki insanların yüzleri gülüyorlar gibi. Bir tane gülmeyen adam var herhalde. O da tartılan adam. Neyse.
+
+493
+01:49:40,724 --> 01:50:06,163
+Gerçi elinde dosyayla tahtiye çıkmıştı. Neyse, şimdi bunları söyleyebilirim ama resmin bütününün anlattığı şey başka bir şey. Yani burada bütün parçaların toplamından daha büyük bir şey. Anlatabiliyor muyum? Yani bir tahti var işte, burada güldüren şey ne? Bunu anlamak için dünya bilgisine ihtiyaç var.
+
+494
+01:50:06,579 --> 01:50:30,519
+Şimdi bu resmi anlayabilen programlar oluşturabilir mi? Evet, oluşturabilir. Demin bahsettiğim gibi o 62 nolu Bongart problemini çözen, şu nolu, şu problemi çözen, bunlar yapılabilir mi? Yapılabilirler. Buradaki olay ne? Yepyeni bir şey geldiğinde, mesela başka bir şaka içeren bir şey var diyelim ki, onu acaba makineler yapabilirler mi sorusu.
+
+495
+01:50:31,507 --> 01:50:47,747
+O henüz çok çok şey değil. Ne der? Ona iyi halde değil diyebiliyorum ama çok büyük bir şey, çok geniş noktada düşünmemek gerekebilir belki. Çok büyük laflar etmemek gerekebilir. Onu demek istiyorum.
+
+496
+01:50:49,887 --> 01:50:53,807
+Çünkü şey gibi bir ihtimali var mı bilmiyorum. Hani demin bahsettim ya.
+
+497
+01:50:54,095 --> 01:51:08,355
+Benim canım sıkıldı aslında. Dedim ya, fazla tahmin edilebilirmişiz, fazla kolay modellenebilirmişiz gibi. Öyle bir hissiyat oluştu.
+
+498
+01:51:11,875 --> 01:51:21,315
+Ama mesela bu iyi espri yapan kişiler için ne deriz genelde? İyi espri yapan kişiler nasıl olurlar, nasıl kişiler olur?
+
+499
+01:51:22,515 --> 01:51:36,576
+Zeki. Zeki olurlar değil mi? Çok iyi espri yapan bir adam çok büyük ihtimalle zeki bir adamdı. Şaka yapabilme, şakaları anlayabilme gibi bir şekilde zeka ile korele diye düşündüm.
+
+500
+01:51:36,916 --> 01:51:53,695
+Ama hani bu mekan ileride günümüzde insanlar kadar iyi zeki şaka falan yapabilecekler mi? Şakaları bizim anlayabildiğimiz kadar. Bazen biz de bazı şakaları anlamıyoruz da neyse kötü olabiliyor. Onları yapabilecekler mi?
+
+501
+01:51:56,884 --> 01:52:15,783
+Dünyadaki ne bileyim işte yüz bin tane şakayı, bütün açıklamaları da sisteme verdikten sonra yepyeni şakalar versek bile o yeterli anlayışa kavuşabilecek. Yani hani o yüz bin tane şaka belki bütün insanların şaka üretme varyasyonlarını öyle söyleyeyim.
+
+502
+01:52:16,724 --> 01:52:22,423
+Belki de içerebilecektir. Buna çok çok da emin değilim açıkçası.
+
+503
+01:52:22,423 --> 01:52:27,203
+Hocam ya da kara mizah yapabilecek mi böyle başka şeyleri yoksa?
+
+504
+01:52:27,403 --> 01:52:35,963
+Evet yani bir milyon tane kara mizah öyküsü verdiğinde ya da işte karikatürü verdiğinde, resmini verdiğinde vesaire vesaire.
+
+505
+01:52:36,543 --> 01:52:44,684
+Bunlar hani insanların ürettiği, bugüne kadar ürettiği dünya kadar şey. Bunları kullanarak.
+
+506
+01:52:44,724 --> 01:52:59,623
+yepyeni bir şeyler üretebilir mi? Sorumuz bu değil mi? Hayır demek çok kolay değil gibi geliyor bana. Peki.
+
+507
+01:53:04,500 --> 01:53:20,600
+Yani şu liste giderek azalacak gibi olabilir zaman içerisinde. Peki. Ama merak etmeyin, hala neydi? İkinci geçince kaçıncı oluyorsun diyordu?
+
+508
+01:53:22,180 --> 01:53:22,720
+Üçüncü.
+
+509
+01:53:22,960 --> 01:53:25,000
+Üçüncü oluyor değil mi? Hala onu diyorlar.
+
+510
+01:53:25,640 --> 01:53:27,199
+Bir de açıklamak gerekiyor uzun uzun.
+
+511
+01:53:27,619 --> 01:53:28,000
+Efendim?
+
+512
+01:53:28,979 --> 01:53:43,159
+Bir de kısaca cevap vermiyor. Bunun için açıklama yapıyor. Diğer arkadaşlar da deneyebilir. Yarışmada ikinciye geçersen kaçıncı olursun diye. İkna etmek de zor değil mi? Ama insanlarda birinci diyor zaten. O da insanlarda yanlış cevap veriyor.
+
+513
+01:53:45,659 --> 01:53:51,759
+İkinciye geçince insanlarda birinci. Oradaki olay muhtemelen çok muhtemelen şey olabilir.
+
+514
+01:53:52,287 --> 01:54:19,188
+Ne derler ona? İnternetteki üzerinden, topladığı bilgiler üzerinden ilerlediği için, arka tarafta mantıksal bir çıkarım mekanizması işlemiyor. İnternette o konudaki yazılmış olan şeylerde en fazla gözüken şey neyse kabaca, anlatabildim mi? Biraz onu veriyor. Dünyanın hepsinin yanlış bildiği bir şeyin doğrusunu söyleme ihtimali yok yani, onu demeye çalıştım az önce. Anlatabildim mi?
+
+515
+01:54:22,195 --> 01:54:27,256
+Peki arkadaşlar, bugünkü dersimiz burada bitiyor. Sorunuz var mı?
+
+516
+01:54:33,587 --> 01:54:41,967
+Peki, hepinize katılmanız için teşekkür ediyorum. Haftaya aynı gün aynı saatte kısmetse görüşmek üzere. Hoşçakalın, sağlıcakla kalın.
+
+517
+01:54:42,028 --> 01:54:43,287
+Görüşmek üzere hocam.
+
+518
+01:54:43,627 --> 01:54:44,387
+İyi günler.
+
+519
+01:54:44,907 --> 01:54:46,367
+İyi günler, iyi günler.

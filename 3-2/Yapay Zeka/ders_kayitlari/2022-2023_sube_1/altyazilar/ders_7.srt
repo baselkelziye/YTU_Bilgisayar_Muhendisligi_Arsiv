@@ -1,0 +1,2203 @@
+1
+00:00:19,187 --> 00:00:20,427
+Günaydın arkadaşlar.
+
+2
+00:00:45,427 --> 00:00:47,587
+2-3 dakika sonra başlıyoruz arkadaşlar.
+
+3
+00:04:46,995 --> 00:04:49,815
+Evet, terklarından merhaba arkadaşlar.
+
+4
+00:04:54,324 --> 00:05:09,824
+Önce hafta içeriği açalım. Bugün 13 Nisan oyunlara bakacağız. Geçen hafta genetik albetmeyi tamamlamıştık ve ödev biri vermiştim.
+
+5
+00:05:11,584 --> 00:05:18,064
+Bu hafta salı günü ödev bir ile alakalı bir toplantı yaptık. Sonra onlar sordular.
+
+6
+00:05:19,411 --> 00:05:25,631
+Hala soru soranlar varsa dersin sonunda tekrardan sorabilirler. Onu bir hatırlatırsınız.
+
+7
+00:05:27,671 --> 00:05:33,371
+Önümüzdeki hafta yine konumuz var. Dersi yapacağız.
+
+8
+00:05:35,851 --> 00:05:41,351
+Online zaten olacak yine ve ondan sonraki hafta da bizim var.
+
+9
+00:05:41,351 --> 00:05:42,431
+Tamam.
+
+10
+00:05:45,131 --> 00:05:46,211
+Peki.
+
+11
+00:05:47,252 --> 00:05:55,091
+O zaman başlayabiliriz. Oyunlar, slaytımıza başlayabiliriz.
+
+12
+00:05:57,252 --> 00:05:59,012
+Slayt geldi mi arkadaşlar?
+
+13
+00:06:00,472 --> 00:06:00,951
+Gözüküyor.
+
+14
+00:06:02,032 --> 00:06:03,232
+Geldi hocam.
+
+15
+00:06:17,812 --> 00:06:28,211
+Şimdi aslında bugünkü oyunlar slaytıyla bu beş haftadır içinde bulunduğumuz bir konuyu tamamlamış olacağız.
+
+16
+00:06:28,211 --> 00:06:39,891
+Arama konusunun. Yapay zekanın en temel mevzularından bir tanesi olan aramadan ile alakalı kısmı tamamlamış olacağız.
+
+17
+00:06:45,555 --> 00:07:09,675
+Diskret uzaydaki arama kısmını tamamlamış olacağız. Öyle söyleyeyim. Çünkü dersin ilerleyen haftalarında üzerinde duracağımız makine öğrenmesi kısmı da aramanın kontinyus uzayda olan hali. O şekilde düşünebiliriz.
+
+18
+00:07:11,827 --> 00:07:22,607
+Tabi problem türleri falan farklılaşacak ama arama süreci ortada, diğeri gibi oldukça sağlam bir şekilde yer alıyor.
+
+19
+00:07:22,607 --> 00:07:35,607
+Neyse, şimdi bugünkü konumuz oyunlar. Burada tabi oyunları anlatırken...
+
+20
+00:07:36,307 --> 00:07:52,987
+İşte grafiksel oyun nasıl yapılır falan gibisinden şeylere odaklanacak. Bizim odaklanacağımız kısım bilgisayarların insanlara ya da birbirlerine karşı nasıl oyun oynayabildikleri burada kullanılan algoritmaların neler oldukları.
+
+21
+00:07:53,687 --> 00:08:02,788
+Bu bağlamda oyunları incelemeye kalktığımızda iki tane farklı boyuta göre inceleme yapacağız. İlk önce.
+
+22
+00:08:04,627 --> 00:08:26,187
+Şu deterministlik ve şans içerisi. Yani işin içerisine zar atmaktır, kart çekmektir vesaire vesaire gibisinden oyuncuların belirlemedikleri, daha doğrusu oyuncuların belirleyemedikleri öyle söyleyelim, kesin olarak belirleyemedikleri bileşenler varsa işin içerisinde bunlar şans oyunları oluyor.
+
+23
+00:08:26,867 --> 00:08:35,028
+Deterministik oyunlar ise, tamir edeceğiniz gibi içinde şans içermeyen oyunlar. Bir de Perfect Information, Imperfect Information mevzusu var.
+
+24
+00:08:35,127 --> 00:08:45,288
+Ki Perfect Information, oyuncuların oyunun tamamı hakkında bilgi sahibi oldukları oyunlar. Örneğin bir satranç tahtasını düşünün.
+
+25
+00:08:45,367 --> 00:08:52,067
+Satranç tahtasında sizler kendi taşlarınızın yerini karşıladıkları tarafın taşlarını yerini erişenebilirsiniz. Bu Perfect Information.
+
+26
+00:08:52,596 --> 00:09:11,415
+Ama ne bileyim şimdi okey düşünün ya da poker düşünün. Burada izleninize kartlar var ya da kendi ıslakınızdaki taşlarınız var. Ama diğer oyuncuların ellerindeki taşları, kağıtları vesaire ya da yerdekileri göremiyorsunuz. Bu da imperfect information'a denk geliyor.
+
+27
+00:09:13,275 --> 00:09:17,135
+Şimdi hem deterministik hem de şans içeren oyunlardan.
+
+28
+00:09:18,644 --> 00:09:34,504
+Şimdi ilk konumuz, yani ilk slide'ımız aslında bilgisayarlarla oyun oynamanın en temel veri yapısını gösteriyor. Bir oyun ağacından bahsediyoruz burada.
+
+29
+00:09:35,723 --> 00:09:44,183
+Bu oyun ağacımızda iki tane oyuncu var. İki oyuncunu bir oyun için oyun ağacı daha doğrusu bu, öyle söyleyelim.
+
+30
+00:09:44,820 --> 00:09:55,860
+3 oyuncu, 4 oyuncu oyunlar da olabilir. Onlar da birazcık daha farklılaşacaktır bu. Ama temel olarak 2 oyuncu için düşündüğüm şeyi çok oyuncuya da genelleyebiliriz.
+
+31
+00:09:56,980 --> 00:10:03,820
+Şimdi biz burada boş bir tahtayla başlıyoruz. Buradaki oyunumuz tiktak to oyunu. Tiktak to oyunun amacı...
+
+32
+00:10:04,436 --> 00:10:31,895
+Bir taraf X koyarken, karşı taraf O koyabiliyor sadece. Yani siz X koyabilirsiniz ve sadece karşı tarafta O koyabiliyor sırası geldiği için. Ve amacınız yatayda, dikeyde ya da çaprazda üç tane kendi şeklinizi elde etmek. Yani mesela işte şu orta sütunda üç tane O'yu görüyorsunuz. Bu da O'yu çizen kişi kazanmış.
+
+33
+00:10:33,875 --> 00:10:38,776
+Bunun çeşitli versiyonları da var ama burada yapacağımız, inceleyeceğimiz oyun böyle.
+
+34
+00:10:39,735 --> 00:10:47,336
+Şimdi, oyun boş bir tahta ile başlıyor. Boş bir tahta. Bu durumda biz mesela, bizim yapabileceğimiz hamleler olsun.
+
+35
+00:10:47,475 --> 00:10:53,675
+Biz burada bilgisayarız. O şekilde düşünün. Bizim yapabileceğimiz hamleler var. Bizim yapabileceğimiz hamle 9 tane.
+
+36
+00:10:53,895 --> 00:10:56,515
+Şurada görüyorsunuz. Ben bu 9 tane hamle yapabilirim.
+
+37
+00:10:57,460 --> 00:11:02,900
+Ben bu hamlelerden her birini yaptığımda, karşı tarafın yapabileceği hamleler oluşur.
+
+38
+00:11:02,900 --> 00:11:06,860
+Yani mesela ben bu hamleyi yaparsam, karşı taraf şu hamleleri yapabilir.
+
+39
+00:11:07,259 --> 00:11:09,759
+Burada kaç tane olasılık var? Şu seviyede.
+
+40
+00:11:13,395 --> 00:11:23,816
+8 tane. Bunların her birinden 8 tane çıkıyor değil mi? Şurada gördüğünüz her birinden 8 tane çıkıyor. Peki bunların her birinden kaç tane çıkacak?
+
+41
+00:11:25,655 --> 00:11:26,596
+7 tane.
+
+42
+00:11:27,115 --> 00:11:37,995
+7 tane çıkacak. Şimdi bu ağacı düşünün, hayal edin. Oldukça büyük bir ağacı olacaktır. Şimdi bir terminal notlarımız var. Terminal notlarımız oyun sonu demek.
+
+43
+00:11:38,995 --> 00:11:59,615
+Şimdi burada bu üç tane oyun sonu verilmiş. Örnek oyun sonu verilmiş. Biz X'iz. Öyle düşünün. X olduğumuz için kazandığımız durum artı bir, kaybettiğimiz durum eksi bir, beraber kaldığımız durumda sıfır olarak bu terminal not'un bizim açımızdan iyiliğini gösteren bir değerimiz var. Buna da utility diyoruz.
+
+44
+00:12:00,659 --> 00:12:05,879
+Bu utility, bu terminal notların bizim açımızdan iyiliğin kötüünü gösteriyor.
+
+45
+00:12:06,359 --> 00:12:09,379
+Şimdi bu terminal notlar, 3 tane var burada, bunlar yan yana var.
+
+46
+00:12:10,519 --> 00:12:15,179
+Peki bir soru sorsam, bu terminal notlar, bu ağacın hepsi aynı seviyesindeler mi?
+
+47
+00:12:18,868 --> 00:12:19,807
+Neyedim hocam ben?
+
+48
+00:12:21,588 --> 00:12:30,848
+Değiller değil mi? En baştakine baktığınız zaman bu ağacın aslında 6. seviyesinde, bu 9. seviyesinde ki bu ağaç en fazla 9'lerimde olabilir.
+
+49
+00:12:31,488 --> 00:12:33,548
+Buradaki ise bu da 7. seviyesinde demek.
+
+50
+00:12:34,228 --> 00:12:37,048
+Bu da yan yana gözüküyor ama aslında ağacın farklı seviyelerinde.
+
+51
+00:12:37,567 --> 00:12:39,968
+Oyun yani her zaman aynı adımda bitmiyor.
+
+52
+00:12:40,807 --> 00:12:42,548
+Onu buradan görebiliriz.
+
+53
+00:12:43,155 --> 00:12:46,795
+Ama bu ağacın epey büyük bir ağaç olacağını hayal edebilirsiniz.
+
+54
+00:12:47,596 --> 00:12:51,895
+Şimdi burada ağacın seviyelerinin yanlarında bir şeyler yazılıyor.
+
+55
+00:12:52,115 --> 00:12:54,336
+Max diyor, min diyor vs. vs.
+
+56
+00:12:54,995 --> 00:13:00,375
+Bu max dediği şeyler bizim yapacağımız hamlelerin yanında,
+
+57
+00:13:00,495 --> 00:13:02,875
+yani bizim hamle yapacağımız seviyelerin yanında max,
+
+58
+00:13:03,395 --> 00:13:06,775
+karşı tarafın hamle yapacağı seviyelerin yanında ise min yazıyor.
+
+59
+00:13:08,532 --> 00:13:28,792
+Yapı bu. Şimdi bunu kullanacağız. Şimdi bu MinMax MinMax diye giden yapı aslında 1950'de Shannon ve Trink tarafında ortaya konan bir algoritmanın birleşenleri.
+
+60
+00:13:35,635 --> 00:13:59,395
+Elimizde oyun ağacının tamamı varsa ideal bir strateji. Nasıl ideal bir strateji olduğundan bahsedeceğiz. Ama dediğim gibi oyun ağacının tamamı elimizde ise bu algoritmayı kullanarak mükemmel şekilde oyunu oynayabiliriz.
+
+61
+00:14:01,556 --> 00:14:17,855
+Ama tabii bir varsayımı var. O varsayım da şu. Karşı tarafında oyunu kazanmak istediğini varsayıyoruz ki bu oldukça güçlü bir varsayım değil.
+
+62
+00:14:17,855 --> 00:14:27,820
+Yani yüklerken olmayacak bir şey değil. Çok çok genelde olacak bir şey değil. Dolayısıyla karşı tarafında kazanmak istediği durumda...
+
+63
+00:14:30,388 --> 00:14:55,927
+Bu, olabilecek en iyi stratejiyi minimax algoritmasıyla gerçekleştirebilir. Peki nasıl bir strateji bu? Onu bir örnek üzerine göreceğiz. Burada şu kısımda küçük bir oyun ağacı var. Yani şu oldukça büyük bir oyun ağacı. Bu küçük oyun ağacımızın oyunu şöyle bir şey.
+
+64
+00:14:56,467 --> 00:15:22,887
+Ben A seviyesindeyim. Bu durumda benim yapabileceğim üç tane hamle var. Bunlar biri A1, biri A2, biri A3. Ben A1 hamlesini yaparsam, karşı tarafın yapabileceği B1, B2, B3 hamlesi var. Ben A2 yaparsam C1, C2, C3. Ben A3 yaparsam D1, D2, D3 yapabilirim. Ve bu hamleleri yaptıktan sonra da oyun bitiyor.
+
+65
+00:15:23,475 --> 00:15:43,656
+Oyun bittiğinde de benim o durumlardaki, o hallerdeki, gittiği hallerdeki kazanacağım puanlar şu altta yazılanlar. Yani utility değerli oluyor da şunlar. Şuradaki şu son seviye terminal seviyesi. Terminal noktaların hepsi. Yani çok basit bir oyunu ama ben bir hamle yapacağım, kaç tane bir hamle yapacağım ve on bitiyor. Bu kadar. Bu kadar basit bir oyun.
+
+66
+00:15:45,491 --> 00:16:03,932
+Dediğim gibi bunlar terminal notlar ve altındakiler de utility değerleri. Şimdi ne demiştik? Max ve min diye bir şey yazacağız demiştik. Ne zaman, nereye max yazacağız? Bizim hamle yapacağımız seviyelerin yanına. Burada ben hamle yapacağım için ben dediğim bilgisayar, öyle bir şey. Max yazayım. Bu da min yaz.
+
+67
+00:16:14,196 --> 00:16:26,995
+En alttan başlamak üzere. Şimdi şuranın değerini bulmak istiyorum. Buranın değerini bulurken, burası eğer min seviyesiyse altındaki değerlerin minimumunu alıyorum.
+
+68
+00:16:28,276 --> 00:16:35,196
+Yani 3, 12, 8 bunun minimumu, 2, 4, 6 bunun minimumu, 14, 5, 2 bunun minimumu.
+
+69
+00:16:35,196 --> 00:16:40,896
+Max seviyesindeyse bu aşağıdaki değerlerin maksimumunu alıyorum. 3, 2, 2, 3.
+
+70
+00:16:41,395 --> 00:16:55,235
+Bu üçü sağlayan hareket hangi hareketti? Şu hareketti. O zaman bu durumda benim yapmam mantıklı olan hareket A1 hareketidir. Minimax algoritması bunu söylüyor.
+
+71
+00:16:56,244 --> 00:17:09,963
+Şimdi bu nereden çıkıyor? Nasıl bir şey? Şimdi şöyle bir şey düşünün. Ben bu A1'i yaptığım durumda buradaki puanlardan birini kazanacağım değil mi? A2 yaptığım durumda buradaki puanlardan birini kazanacağım. A3'i yaptığım durumda buradaki puanlardan birini kazanacağım.
+
+72
+00:17:10,463 --> 00:17:20,644
+Şimdi mesela ben A1'i yaptığımda ya burada 14 puanlık bir şey var. Yani hani çok iyi optimal bir strateji diyoruz da burada 14 puanlık kaçırıyoruz gibisinden bir durum düşünebilirsiniz.
+
+73
+00:17:24,243 --> 00:17:31,144
+Tamam mı? Karşı taraf D1 yapacak, D2 yapacak ya da D3 yapacak. Sizce hangisini yapar karşı taraf?
+
+74
+00:17:36,564 --> 00:17:37,324
+D3.
+
+75
+00:17:38,364 --> 00:18:03,824
+D3'ü yapacaktır değil mi? Kendi açısından en iyi, sizin açınızdan en kötüyü yapacaktır. Dolayısıyla karşı taraf için kısımda mini seçiyorsunuz. Karşı tarafın size en kötü olacak hamleyi yapacağını, yani aslında demin bahsettik ya varsayımın mini max'ın, karşı tarafın da oyunu kazanmak istiyor olması. Rastgele oynamıyor.
+
+76
+00:18:04,723 --> 00:18:26,743
+Yani rastgele oynuyor olsa minimax algoritması ideal bir algoritma değil. Yani B1, B2, B3'ü seçme, yani daha doğrusu bunların hepsini seçme şanslı birbirine eşitse, öyle söyleyeyim, bunların hepsini seçme şanslı birbirine eşitse, o zaman bu durumda bunların ortalamalarına bakıp bir hareket yapmak mümkün.
+
+77
+00:18:26,743 --> 00:18:31,163
+Ama karşı taraf rastgele oynamıyor. Oyunu kazanmak için oynuyorsa.
+
+78
+00:18:31,700 --> 00:18:58,600
+Bu durumda yapmanız gereken şey bunların minimumunu seçmek olacaktır. Sizin açınızdan ise maksimum seçmek olacaktır. Ve dolayısıyla buradaki doğru hareket A1 hareketi olacak. Çünkü ben A1 hareketi yaptığımda karşı taraf muhtemelen B1 yapacak ve ben 2 puan kazanacağım. Çünkü A2 yapsa 2 puan kazanacağım, A3 yapsa 2 puan kazanacağım. Ama ben A1 yaptığımda en azından 3 puan alacağım. Anlaşıldı mı? Oldukça basit bir algoritması var.
+
+79
+00:19:00,339 --> 00:19:03,339
+Neden Min-Max yaptığımız anlaşıldı mı?
+
+80
+00:19:08,980 --> 00:19:27,740
+Peki. Burada WinMax'ın birleşenleri var ki bunlar zaten konuştuğumuz şeyler. Max bizim olası hamlelerimizden, kendi açımızdan en iyi sonucu vereni seçilmesi. Min, rakibin olası hamlelerinden, kendi açısından en iyi, bizim açımızdan en kötü sonucu vereni seçmesi. Utility dediğimiz şey oyun sonucunu gösteren durum.
+
+81
+00:19:28,276 --> 00:19:51,916
+Min Max Veri'ye dediğimiz şey, şuradaki şu değerler, şuradaki şu 3, 2, 2 ve 3 değerleri. Eğer ki minimum seviyesindeyse N, yani bizim nodumuz minimum seviyesindeyse Ardılların, yani oradan çıkanların minimumlarını, Max seviyesindeyse oradan çıkanların maksimumlarını, oyun sonu seviyesindeyse zaten Ytl.T. değeri oluyor.
+
+82
+00:19:52,660 --> 00:19:57,780
+Ardol N durumdan gelebilecek tüm durumların değerleri olarak bunu düşünebiliriz.
+
+83
+00:19:57,900 --> 00:20:01,440
+Minimax algoritması burada yazıyor. Anlattığım şeyin aynısı zaten.
+
+84
+00:20:02,400 --> 00:20:05,280
+Burada çok kompleks bir şey var mı?
+
+85
+00:20:06,380 --> 00:20:09,240
+Derinlemesini arama yapıyoruz zaten.
+
+86
+00:20:09,240 --> 00:20:17,480
+Hesaplama yaparken, yani şuradaki değerleri bulurken algoritma derinlemesini aramayla çalışıyor.
+
+87
+00:20:18,516 --> 00:20:42,615
+Şurakiler zaten derinlemesini aramanın özellikleri. En iyi çözüm mü? Evet, optimal bir çözüm bu. Kendisi için her zaman en iyisini yapan rakibe karşı. Dediğim gibi rakibin rastgele oynaması durumunda optimal bir çözüm değil. O türlü de optimal çözüm farklı bir algoritma olurdu. Peki güzel. Yani elimizde bütün oyun ağacı varken varsa.
+
+88
+00:20:44,276 --> 00:21:11,236
+Optimal stratejiyle oynayan bir algoritmamız var. Çok iyi. Ama bir sıkıntımız var. Elimizde oyun ağacı varsa diye bir laf ettim. Elimizde oyun ağacının olduğu oyunların sayısı çok çok azdır. Satranç bunlardan biri değil. Neden değil?
+
+89
+00:21:11,827 --> 00:21:34,528
+Şimdi satrançta ortalama hamle sayısı 40. Yani oyun 40 derinlikte bitiyor. Yani oyun ağacının derinliği 40. Ortalama tabii. Bütün oyundan aynı şey olmuyor. Ortalama. Derinliği 40. Her bir durumda yapılabilecek hamle sayısının ortalaması da 32. Dolayısıyla oyun ağacımızın büyüklüğü 32 üzeri 40.
+
+90
+00:21:36,211 --> 00:21:56,351
+Şimdi 32 üzeri 40 tane nodumuz olacak. Bu notların değerlendirme işlemini yapmanız gerekiyor. Yani şundan bahsediyorum. Böyle bir ağacı düşünün. Bunun en sonunda 32 üzeri 40 tane not var. Bunların utility değerlerini hesaplamanız gerekiyor. Sonra yukarıya doğru çıkacaksınız.
+
+91
+00:21:58,559 --> 00:22:05,919
+Bu utility değerlerimizin açımızdan, oyun kazandık mı, kaybettik mi, şöyle mi oldu, böyle mi oldu falan gibisinden şeyleri, hesaplanma işlemi.
+
+92
+00:22:06,819 --> 00:22:11,879
+Bayağı hızlı yaptığımızı düşünelim. Yani saniyede 3 milyar tane durumu işlesek.
+
+93
+00:22:11,879 --> 00:22:23,619
+Mesela saniyede 3 milyar tane durumu işlesek. Bu 32 üzeri 40 tane durumu işlememiz 10 üzeri 43 yıl sürüyor. Evrenin yaşı 10 üzeri 10 yıl.
+
+94
+00:22:25,203 --> 00:22:34,883
+olduğu tahmin ediliyor. Dolayısıyla, böyle bir oyun ağacını ne elde etmemiz, ne işlememiz hiçbir şekilde mümkün değil.
+
+95
+00:22:34,883 --> 00:22:46,323
+Yani 32 üzeri 40'lık bir oyunda bunu yapmamız mümkün değil. Şimdi satranç için böyle de diğer oyunlar için nasıl?
+
+96
+00:22:46,323 --> 00:22:51,203
+Tabii bunların daha kompleks ya da bundan daha basit oyunlar var mı? Var.
+
+97
+00:22:51,263 --> 00:23:06,263
+Ama insanların stratejik kabiliyetlerini göstermek isteyecekleri oyunlarda aslında oyun ağacının elde olması pek mümkün bir şey değil.
+
+98
+00:23:06,803 --> 00:23:09,903
+Yani oyun ağacı elde ise zaten oyun oldukça sıkıcı bir oyundur.
+
+99
+00:23:10,723 --> 00:23:12,323
+Her iki deterministlik falan bir oyun ise.
+
+100
+00:23:12,323 --> 00:23:15,063
+Yani mesela şimdi taş, kağıt, makas gibi bir oyun düşünün.
+
+101
+00:23:15,083 --> 00:23:17,323
+Şimdi taş, kağıt, makas rastgele içerdiği için.
+
+102
+00:23:17,748 --> 00:23:25,748
+Bir öyle olabilir, bir böyle olabilir vs. vs. Ama o demek ki mesela, o tiktakta oyunun stratejisi belli zaten. Ne yapmanız gerektiği şey belli.
+
+103
+00:23:25,748 --> 00:23:35,748
+Bunu defalarca oynamanın falan bir espirisi yok ama satrancı düşündüğün zaman iki insanın satrancı oynamasında farklı farklı şey olabilirler.
+
+104
+00:23:35,748 --> 00:23:39,748
+Farklı farklı durumlar sürekli ortaya çıkartmıyor. Dolayısıyla sık bir gün değil.
+
+105
+00:23:40,016 --> 00:23:56,016
+Aynı durumda sürekli oluşmuyor. Çok basit stratejilerle çözülebilecek bir problem değil. O yüzden zevkli. Farklı farklı sonuçlanabiliyor. Hep aynı şekilde sonuçlanmıyor. İki kişi belki oynarken...
+
+106
+00:23:56,660 --> 00:24:01,640
+Bir o kazanıyor, bir o kazanıyor. İkisi de falan başka durumlar görev her seferinde.
+
+107
+00:24:02,079 --> 00:24:12,259
+Dolayısıyla bir oyunun sıkıcı olmaması, oynanabilir olması için, insanlar tarafından tercih edilmesi, oynamak için tercih edilmesinin sebebi aslında bu oyun ağacının elde olmayışı.
+
+108
+00:24:12,259 --> 00:24:18,039
+Oyun ağacı elde olsa dediğim gibi çok basit bir şeyimiz olur. Oyunumuz olmak zorunda olur.
+
+109
+00:24:18,900 --> 00:24:35,480
+Bilgisayarlar tabii ki insanlardan çok daha büyük oyun ağaçlarını tutabilirler ama satranç mesela bunlardan biri değil. Ya da işte o tahtada oynanabilecek birçok oyun, o tarz bir oyun değil. Peki, satrançta böyle bir sınır var.
+
+110
+00:24:37,619 --> 00:25:01,180
+Minimax algoritmasıyla satrancı oynayamıyoruz. Ama bu pratik sebeplerden dolayı. Yoksa teorik olarak mükemmel bir stratejimiz var elimizde aslında. Minimax algoritmasının yeterince zamanımız, şuradaki kadar zamandır, donanımızı daha da iyileştirirsek bunu biraz daha azaltabiliriz ama yani.
+
+111
+00:25:01,683 --> 00:25:10,347
+Hiçbir şey düşünün. Bunu işte on katına çıkarsanız bu da bir tane inecek. Yani dolayısıyla...
+
+112
+00:25:14,740 --> 00:25:39,740
+Evet, çözüm bulunabilir ama pratikte mümkün değil, teorik olarak. Şimdi, ama bilgisayarla satranç oyuncular mı? Evet, oynuyorlar. Hem de canavar gibi oynuyorlar. Peki bunu nasıl yapıyorlar? Yani minimax algoritmasını bizim satranç gibi bir oyunda kullanmamız mümkün değil. O zaman işin içine...
+
+113
+00:25:41,044 --> 00:25:45,663
+Daha önce kullandığımız bir yaklaşım gelecek, çok temel bir yaklaşım gelecek.
+
+114
+00:25:48,423 --> 00:25:56,604
+Biz arama sürecini kısaltmak için ne tür yöntemler kullanıyorduk?
+
+115
+00:25:57,163 --> 00:25:57,884
+Oturuyor musunuz?
+
+116
+00:25:59,423 --> 00:26:02,023
+Arama sürecini kısaltmak için.
+
+117
+00:26:02,836 --> 00:26:03,956
+Sezgi mi hocam?
+
+118
+00:26:04,296 --> 00:26:08,836
+Sezgi, aynen öyle. Sezgisel yöntemler işin içerisine girecekler.
+
+119
+00:26:08,836 --> 00:26:29,176
+Exact yöntemlerle, yani oyun ağacının tamamının elimizde olup tam olarak utility değerlerine, yani o oyunu kazandığımız ya da kaybettiğimiz kesin bilgisine sahip o bilgiyi kullanmadan,
+
+120
+00:26:29,844 --> 00:26:51,663
+Ne yapmaya çalışacağız biz? Oyunun sonu gelmeden, oyun sonu olmayan bir tahtanın bizim açımızdan iyi midir, kötü müdür? Bunu tahmin edeceğiz. Tamam. Amaç bu.
+
+121
+00:26:52,084 --> 00:27:02,784
+Buna sınırı denilikle arama ve değerlendirme fonksiyonu diyeceğiz. Ki bu değerlendirme fonksiyonu dediğimiz şey bizim sezgisel fonksiyonumuz olacak. Bir de alfabet abudamasından bahsedeceğiz.
+
+122
+00:27:04,244 --> 00:27:16,464
+Şimdi sezgisel arama. Yani sezgisel fonksiyon kullanacağız. Peki bu sezgisel fonksiyon nasıl bir şey? Mesela bir örnek.
+
+123
+00:27:17,683 --> 00:27:40,903
+Satranç için diyelim ki değerlendirme fonksiyon olarak şöyle bir şey kullanabiliriz. Bir tahtada, mesela bu bir tahta, bir durum. Bu durumun siyahlar açısından iyiliğini ya da beyazlar açısından iyiliğini, iyilik derken şundan kastediyorum. Hani beni bu tahta iyi bir yere götürür mü götürmez mi?
+
+124
+00:27:42,036 --> 00:27:51,316
+Onu anlamak istiyorum. Çünkü bu terminal bir not değil. Terminal not olmayan durumlar için de ben bir şeyi hesaplamak istiyorum derdim bu. Tamam mı?
+
+125
+00:27:52,516 --> 00:28:01,396
+Çok basit olarak şöyle bir şey yapabilirsiniz. Taş yerlerini kullanarak sayabilirsiniz. Piyonlara 1, at ve fillere 3, kaleye 5, vezire 9 puan verirseniz.
+
+126
+00:28:01,844 --> 00:28:18,084
+Yerlerinin neresi olduğuna hiç bakmadan çok basit bir mantıkta düşünürseniz siyahların 18 puanı oluyor burada, beyazların ise 10 oluyor. Siyahlar için bu durum 18'e 10, 8'lik bir fazlalık var. Beyazlar için ise daha kötü bir durum var.
+
+127
+00:28:20,404 --> 00:28:23,864
+Siyahlar için daha iyi bir durum, beyazlar için daha kötü bir durum var.
+
+128
+00:28:24,147 --> 00:28:43,387
+Dolayısıyla ben burada aslında çok basit bir şekilde, şimdi değerlenen fonksiyonumuz çok iyidir, çok kötüdür falan ondan bahsetmiyorum. Sadece bir örnek vermesi açısından. Böyle bir değerlenen fonksiyonu kullanabilirsiniz. Böyle bir değerlenen fonksiyonu kullandığınızda dediğim gibi oyunun sonuna varmadan da bir...
+
+129
+00:28:43,796 --> 00:28:53,096
+Tahminde, bizim açımızda, iyi midir, kötü müdür, bu tahmini kullanarak, minimax algoritmasını hala kullanabilir hale gelmeye çalışacağız.
+
+130
+00:28:54,096 --> 00:29:05,895
+Şimdi, gerçekte satranç için konuşmak gerekirse, birçok değerlendirme fonksiyonu birleştirilerek bu yapılar oluşturuluyor.
+
+131
+00:29:10,548 --> 00:29:34,668
+F2 dediğimiz şey, mesela F1 mesela şey olabilir. Şu olabilir. Yani şu puanlara göre taşların puanı, benim puanımdan karşı tarafın puanı çıkar. Mesela bu bir F1 olabilir. F2 mesela ne bileyim şey, beyaz vezir sayısından siyah, beyazı biz kendimiz olarak düşünürsek, beyaz vezir sayısından karşı tarafın vezir sayısını çıkart.
+
+132
+00:29:35,316 --> 00:30:02,536
+Ya da başka başka, şurada yazılı olduğu gibi etrafı boş olan piyonların kötü olduğunu ifade edecek değerlendirme fonksiyonu. Şahın etrafı dolu mu, boş mu? Kaç tane hareket yapabiliyorsun şu anda? Tahtanın ortasının kontrolü sen midir, sende midir, değil midir? Gibisinden farklı farklı F'leriniz ne olabilir? Olabilirler. Ve bu F'ler birbirleri ağırlıklandırılarak.
+
+133
+00:30:03,316 --> 00:30:04,515
+Birleştir diyorlar.
+
+134
+00:30:06,056 --> 00:30:08,576
+Ki asıl iş burada F'ler ve W'ları.
+
+135
+00:30:09,015 --> 00:30:22,255
+Bu F'leri ve W'ları belirlediğinizde bir şekilde sizin elinizde aslında S tahtasının sizin açınızdan iyi mi kötü mü olduğuna dair bir tahmin elinizde oluyor.
+
+136
+00:30:22,255 --> 00:30:23,255
+Tamam mı?
+
+137
+00:30:23,635 --> 00:30:48,696
+Şimdi satranç için değerlendirme fonksiyonu yazmak çok çok kolay bir şey değil. Yani buna ikinci derste geleceğiz. Ama demin konuştuğumuz tiktak to oyunu için bunu yazabiliriz. Daha doğrusu yazabiliriz derken basit tane değerlendirme fonksiyonu var. Neo ve oldukça da etkili.
+
+138
+00:30:49,619 --> 00:30:56,619
+Şimdi TikTok şu oyun için yani hani şu en başta bahsettik ya. Bu oyun için değerlendirme fonksiyon alacağım.
+
+139
+00:31:00,307 --> 00:31:13,048
+Şimdi burada böyle bir tahta var elimde. Bu tahtanın bakın, bu tahtanın iyiliğini bulmaya çalışıyorum ben. Yaptığım şey şu. Ben X'im. X'i koyan kişiyim öyle söyleyeyim.
+
+140
+00:31:13,460 --> 00:31:37,500
+Benim bu oyunu kazanmak için kaç tane çizgi çekme ihtimalim var? Yani nelerden kazanabilirim ben bu oyunu? Mesela şuradan kazanabilirim, şuradan kazanabilirim, buradan kazanabilirim. Yani şu anda benim X olarak kazanma ihtimalim olan yerler nereler? Bunların sayısı kaç tane? Mesela burada X 6 tane kazanma çizgisi var. Görüyor musunuz? O onun ise 5 tane var.
+
+141
+00:31:38,836 --> 00:31:46,676
+O zaman benim kazanma çizgimden karşı tarafın kazanma çizgisini çıkartırsam bu benim açımdan bu tahtanın iyiliğini gösteriyor.
+
+142
+00:31:47,216 --> 00:31:54,376
+Mesela şu tahtaya bakarsam burada x'in kazanabileceği 4 tane çizgi var ama onun kazanabileceği 6 tane var.
+
+143
+00:31:54,376 --> 00:32:02,256
+Dolayısıyla bu tahta benim açımdan kötü bir tahta. Bu tahtaya bakarsam burada yine benim 5 tane karşı tarafım 4 tane var. Bu tahta benim açımdan iyi bir tahta.
+
+144
+00:32:04,084 --> 00:32:13,063
+Şimdi bu bir değerlendirme fonksiyonu ve bu değerlendirme fonksiyonunu kullanarak ben şimdi tiktakta oyununu oynayacağım.
+
+145
+00:32:13,063 --> 00:32:19,663
+Ama tiktakta oyununu oynarken tüm oyun ağacı elimde olmadan oynayacağım.
+
+146
+00:32:20,624 --> 00:32:25,384
+Tüm oyun ağacı elimde olmayacak ama belirli bir derinlik belirleyeceğim.
+
+147
+00:32:25,483 --> 00:32:27,864
+Ne demiştik stratejimize?
+
+148
+00:32:29,044 --> 00:32:50,304
+Sınırlı derinlikli arama ve değerlendirmek. Değerlendirmek fonksiyonumuz belli. Değerlendirmek fonksiyonu dediğim gibi herhangi bir tahtanın iyiliğine tahmin eden bir şey. Şimdi sınırlı derinlikli arama yapacağız. Sınırlı derinlikli arama, yine Depth First Search ile yapılan bir arama burada. Şimdi bakalım.
+
+149
+00:32:53,203 --> 00:33:14,384
+İki derinlikli aramak yapacağım, onu unutmayalım. Şimdi mesela ben buradan başladım, start not'tan başladım. Burada yapabileceğim aslında dokuz tane hamle var ama burada bu dokuz tane hamleyi jenerik olarak aslında şu üç tane hamleyi gösterebiliriz. Yani ne demek istiyorum? Aslında şurada gördüğünüz şey dört tane şeyi ifade ediyor. Bu da dört tane. Bu tek başına zaten.
+
+150
+00:33:15,384 --> 00:33:20,364
+Yani köşelerde olması, ondan bahsedebilirsiniz. Köşelerde olmasının her biri aynı durum.
+
+151
+00:33:20,672 --> 00:33:22,112
+Maşallah, denk geçecek.
+
+152
+00:33:27,443 --> 00:33:33,324
+Şimdi benim burada bu hamleyi yaptıktan sonra karşı tarafı yapabileceği hamleler bunlar.
+
+153
+00:33:33,824 --> 00:33:36,104
+Ben bu hamleyi yaparsam karşı tarafı yapabileceği hamleler bunlar.
+
+154
+00:33:36,263 --> 00:33:38,783
+Ben bu hamleyi yaparsam karşı tarafını yapabileceği hamleler bunlar.
+
+155
+00:33:40,344 --> 00:33:43,824
+Ben bu hamleyi, karşı taraf bunu yaparsam benim buradan yapabileceğim hamleler de var.
+
+156
+00:33:43,824 --> 00:33:45,503
+Ama ben burada şeyi kestim.
+
+157
+00:33:46,144 --> 00:33:47,543
+Derinliği ikide kestim.
+
+158
+00:33:48,324 --> 00:33:48,523
+Tamam.
+
+159
+00:33:49,983 --> 00:33:51,824
+Çünkü ben...
+
+160
+00:33:53,011 --> 00:34:08,032
+Sınırlı derinlikte arama yaparak bu oyunu hala oynayabileceğimi iddia ediyorum. Daha derinlere gidebilir miyim? Gidebilirim. Daha derinlere gidersen daha iyi oynayabilir miyim? Oynayabilirim. Ama şu anda ikide kestik. Tamam mı?
+
+161
+00:34:09,108 --> 00:34:11,068
+kesmeseydik de olabilir miydi?
+
+162
+00:34:11,128 --> 00:34:13,288
+Olabilir. Daha basit oyunun için üç derinlikle
+
+163
+00:34:13,288 --> 00:34:15,327
+gitmek çok çok büyük bir sıkıntı değil.
+
+164
+00:34:15,807 --> 00:34:16,827
+Şimdi bakalım ne oluyor?
+
+165
+00:34:17,347 --> 00:34:19,288
+Şimdi şu anda ilk önce
+
+166
+00:34:19,288 --> 00:34:21,028
+olay şu. Buradan işte
+
+167
+00:34:21,028 --> 00:34:23,148
+depth first ile yaptığımızda ilk önce
+
+168
+00:34:23,148 --> 00:34:25,168
+şu hareket oluşuyor. Bu
+
+169
+00:34:25,168 --> 00:34:26,988
+harekete karşı şu hareketler oluşuyor ve bitti.
+
+170
+00:34:27,768 --> 00:34:29,108
+Bu hareketler oluştuğu anda
+
+171
+00:34:29,108 --> 00:34:30,868
+daha doğrusu ilk önce bu hareket oluştuğu
+
+172
+00:34:30,868 --> 00:34:33,288
+bu hareketin değerlendirmesini
+
+173
+00:34:33,288 --> 00:34:34,508
+yapıyorum. Yani ilk önce şunu
+
+174
+00:34:35,411 --> 00:34:57,951
+Buluyorum. 6-5. 6-5 nereden geldi? Benim yapabileceğim hamlelerin sayısı 6 karşı tarafın yapabileceği hamlelerin sayısı, daha doğrusu hamle ederken yanlış söyledim. Benim kazanabileceğim çizgilerin sayısı 6 karşı tarafın kazanabileceği çizginin sayısı 5. 6-5 bu 1. Ben ve karşı taraf burada beraberiz. Burada ben yine iyiyim. Burada beraberiz. Burada kötü bir durum. Tamam mı?
+
+175
+00:35:00,820 --> 00:35:19,119
+Burası bittiği anda, burası bittiği anda, ben burası 1, burası 0, burası 1, burası 0, burası eksi 1. Dolayısıyla hepsi bunların neyini alacağım ben? Minimumunu alacağım değil mi? Çünkü burası min seviyesi bakın. Bunların minimumunu alacağım, burası eksi 1 olduğunu bulacağım.
+
+176
+00:35:20,115 --> 00:35:38,135
+Ama daha buranınkini bulamam. Çünkü buranın değerini bulmak için bunlara da ihtiyacım var. Neyse, aşağıya bir sonraki hamleyi oluşturdum. Buradan yapılabilecek hamleri buldum. Bunların değerlendirme fonksiyonlarını hesapladım. Bunların minimumunu aldım buraya yazdım. Sonra bu hareketi yaptım. Bu hareketin değerlendirmesini yaptım ve bunun işte minimumunu yazdım bir.
+
+177
+00:35:38,135 --> 00:35:48,115
+Şimdi eksi bir buldum, eksi ikiyi buldum, biri buldum. Dolayısıyla bunların arasında maksimum alacağım bir maksimum hareketi. Dolayısıyla benim şu durumda yapmam gereken hamle...
+
+178
+00:35:48,115 --> 00:35:57,496
+Şu anda. Başlangıçta ortaya bir çarpı atmak benim açımdan stratejik olarak en anlamlı hareket olarak gözüküyor.
+
+179
+00:35:59,795 --> 00:36:02,315
+Anlaştık mı arkadaşlar? Buraya kadar bir sıkıntı var mı?
+
+180
+00:36:07,347 --> 00:36:08,167
+Yok hocam.
+
+181
+00:36:08,987 --> 00:36:15,847
+Tamam. Şimdi ben burada boş tahtada hangi hamleyi yapmam gerektiğini buldum.
+
+182
+00:36:16,648 --> 00:36:21,347
+Yaptım. Oyun bitti mi? Yok daha yeni başladı. Bir tane hamle yaptım.
+
+183
+00:36:21,688 --> 00:36:26,907
+Ben bu hamleyi yaptıktan sonra ne olacak? Karşı taraf bir hamle yapacak. Oyuncu.
+
+184
+00:36:27,707 --> 00:36:31,927
+Diyelim ki o şu hamleyi yaptı. Şu hamleyi yaptı.
+
+185
+00:36:32,851 --> 00:36:53,631
+Bu hamleyi yaptıktan sonra şimdi sıra yine bende. Sıra bende olduğunda ben yine sınır edinikler ama yapacağım. Yine iki derinliğe kadar gideceğim. Yani ben bu durumda yapabileceğim işte bir, iki, üç, dört tane hamle var. Bu dört tane hamlenin her birinden yapabileceğim işte burada gördüğünüz gibi altı yedişer tane hamle var. Burada biraz daha üç tane varmış sadece.
+
+186
+00:36:55,347 --> 00:37:22,467
+Ve daha sonuçta bunların altındaki değerlendirmeleri hesaplayacağım. Bunların minimumlarını alacağım. Üstlerine yazacağım. Sonra 1-0, 1-0 çıkmış. Bunlardan maksimum olan ya bunu seçeceğim ya da bunu seçceğim. Bu iki hareketten bir tanesini yapmak benim açımdan en iyisi. Mesela bunu seçtiğim varsayalım. Bunu seçtim. Ben buraya bir tane x'i koydum. Karşı taraf muhtemelen x, x olduğu için buraya bir tane o koyacaktır. Ve muhtemelen o durumda yapmam gereken hamle herhalde şuraya bir tane x koymak olacaktır vs.
+
+187
+00:37:23,347 --> 00:37:40,068
+Dolayısıyla şu anda şeyi gördük. Oyunu oynayabiliyorum. Bütün oyun ağacı elimde olmasa bile bunu oynayabiliyoruz.
+
+188
+00:37:40,068 --> 00:37:45,507
+Bu neyin sayesinde oluyor? Bir değerlendirme fonksiyonu sayesinde oluyor. Değerlendirme fonksiyonu neydi?
+
+189
+00:37:47,603 --> 00:37:51,743
+Bizim açımızdan budur. İyi mi kötü mü? Bunun bir değerini söylemesi.
+
+190
+00:37:52,683 --> 00:37:56,683
+Aynen daha önceki şey. Fitness fonksiyonu, genetik algoritmada fitness fonksiyonu.
+
+191
+00:37:57,963 --> 00:38:01,483
+Ya da işte kuş kümesafe gibisinden daha önce kullandım.
+
+192
+00:38:01,483 --> 00:38:05,384
+Seyrisel fonksiyonlar gibi tahmini bir değer kullanılıyor.
+
+193
+00:38:05,483 --> 00:38:10,483
+Bu tahmini değer kullanımı sayesinde de...
+
+194
+00:38:10,931 --> 00:38:19,411
+Bütün oyun ağacı elimizde olmadan bile oyunu oynayabiliyoruz. Anlaşıldı herhalde arkadaşlar.
+
+195
+00:38:20,331 --> 00:38:24,271
+Hocam burada niye 4 noktaya bakıyor da 6 noktaya da bakmıyor.
+
+196
+00:38:25,551 --> 00:38:27,811
+6 nokta dediğim anlayamadım.
+
+197
+00:38:27,811 --> 00:38:30,931
+X'i sağ taraflara da koyabiliyoruz ya. Sağ yukarı, sağ yana.
+
+198
+00:38:32,391 --> 00:38:33,051
+Bir dakika.
+
+199
+00:38:34,003 --> 00:38:35,703
+Bundan mı bahsediyorum? Nereye bahsediyorum?
+
+200
+00:38:35,723 --> 00:38:38,483
+Evet hocam. O çizgiden.
+
+201
+00:38:38,623 --> 00:38:41,823
+Burada, evet burada. X'i...
+
+202
+00:38:41,823 --> 00:38:43,823
+Sağ yukarı da koyabilirim.
+
+203
+00:38:43,823 --> 00:38:46,143
+Ben bu hamleyi yapabilirim. Evet. Başka?
+
+204
+00:38:47,623 --> 00:38:48,764
+Diğer üçü de var.
+
+205
+00:38:49,823 --> 00:38:54,403
+Şunu demek istiyorsun sen. Mesela bu X'i ben şuraya da koyabilirim.
+
+206
+00:38:55,523 --> 00:38:56,123
+Evet.
+
+207
+00:38:56,603 --> 00:38:58,304
+Değil mi? O burada niye yok diyorsun?
+
+208
+00:38:58,835 --> 00:39:07,435
+Evet. Şimdi o durum aslında buradaki hangi duruma karşılık geliyor? İlk sene şuna karşılık geliyor. Onunla aynı durum aslında.
+
+209
+00:39:09,815 --> 00:39:18,035
+Şey yansımasından dolayı değil mi? Evet, evet. Mesela bak şu anda şurada da aynısını yaptık. Bak dikkat edersen. Aslında burada yapılan dokuz tane hamle var değil mi? Olabilecek.
+
+210
+00:39:18,755 --> 00:39:26,255
+Evet. Ama ben buraya üç tanesini yazdım. Yani üç tanesini yazdım derken aslında şu durum dört tane durumu temsil ediyor dedim ya.
+
+211
+00:39:27,860 --> 00:39:55,000
+Evet hocam. Anlatabildim mi? Bu da dört tane durumu temsil ediyor. Bu tabii bir tane. Tamam mı? Yani gerçekte bunu yaparken böyle yapmıyorsunuz bilgisayar yaptırırken ama iş çok karışık gözükmesin diye böyle gösterim var. Bilgisayarda yaparken bunu, bilgisayarda bunu kodlarken tabii ki buradaki bütün hamlelerin hepsini yapmanız gerekir. Tamam mı? Burada iş daha basit gözüksün diye böyle gösterilmiş. Tamam mı?
+
+212
+00:39:56,563 --> 00:40:00,643
+Peki. Şimdi o zaman başka soru soğan var mı arkadaşlar?
+
+213
+00:40:04,820 --> 00:40:17,140
+Peki, o zaman bir ara verelim. 9 dakika aramız olsun arkadaşlar. Az sonra görüşmek üzere.
+
+214
+00:51:00,563 --> 00:51:02,384
+Merhaba arkadaşlar.
+
+215
+00:51:08,403 --> 00:51:09,684
+Slide geldi mi?
+
+216
+00:51:11,983 --> 00:51:12,764
+Gözüküyor hocam.
+
+217
+00:51:16,692 --> 00:51:42,291
+Peki, şimdi bu iki derinlik dedik. Yani bir sınır çektik ve iki derinliği kullanarak bir süreç ilerlettik. Peki bu iki derinliğinin bizim alacağımız kararda bir etkisi olur mu? Olur mu? Yani ben üç derinlikli yapsaydım.
+
+218
+00:51:42,708 --> 00:51:47,368
+Burada mesela seçeceğim hamle bu değil de başka bir tanesi olabilir miydi?
+
+219
+00:51:48,988 --> 00:51:55,148
+Bunu incelemek için, bu oyunda bunu görmek çok kolay değil, bunu incelemek için satrançtan bir örnek vereceğiz.
+
+220
+00:51:56,188 --> 00:52:02,307
+Şimdi sınır deniklerle ufuk etkisi diye ifade ediliyor bu. Aramayı farklı deniklerde yapmanın etkisinden bahsediyoruz.
+
+221
+00:52:02,307 --> 00:52:09,164
+Şimdi burada bir tahtamız var. Bu tahtada biz beyazız. C2'deki kalenin...
+
+222
+00:52:09,523 --> 00:52:17,903
+C2'deki beyaz kaleminin, A2'deki bu siyah piyonu alma kararını inceleyeceğiz.
+
+223
+00:52:18,403 --> 00:52:21,263
+Farklı derinliklerde düşündüğümüzde.
+
+224
+00:52:22,643 --> 00:52:25,083
+Değerlendirme fonksiyonumuz çok basit olarak şey olsun.
+
+225
+00:52:25,083 --> 00:52:30,223
+Bu piyonların, ne piyonu yok, taşların puan değerleri olsun.
+
+226
+00:52:30,963 --> 00:52:32,423
+Puanlarını biliyoruz işte.
+
+227
+00:52:33,403 --> 00:52:36,443
+Piyon bir, at fil üç falan gibisinden.
+
+228
+00:52:38,036 --> 00:52:56,896
+Bunlara göre bir değerlendirme fonksiyonumuz olsun. Şimdi bir derinlikli arama yani sınırı birden çekmenin anlamı şu. Ben bir hamle yapacağım ve bitecek. Tamam mı? Ben bir hamle yapacağım ve bitecek. Şimdi burada bir derinlikte bu işi yaparsam ben.
+
+229
+00:53:00,403 --> 00:53:20,403
+Bu kalemin bu piyonu alması durumunu düşünelim. Ne olacaktır? Karşı tarafı bir tane piyonu azalacak, benimse hiçbir taşım azalmayacak. Değil mi? Dolayısıyla ben bir derinlikle düşünürsem bunu, sadece bir derinlikle düşünürsem, bu piyonu alırım. Tamam mı? İki derinlikle düşünürsem...
+
+230
+00:53:21,427 --> 00:53:41,508
+Şimdi ben bu hamleyi yaptığımda muhtemelen karşı taraf ne yapacak? Şuradaki siyah kalemi, benim beyaz kalemi alacak. Tamam mı? O zaman ben bir kale kaybedeceğim, karşı taraf bir piyon kaybetmiş olacak. İki derinlikte o zaman bu çok manalı bir şey gözükmüyor. O zaman iki derinliği düşündüğümde benim bu hareketi yapmamın bir anlamı olmayacaktır.
+
+231
+00:53:41,780 --> 00:53:54,000
+Üçlerin neyi düşünürsem, yani o siyah kale benim beyaz kalemi aldıktan sonra ben bu beyaz kalemle, buradaki beyaz kalemle, onun siyah kalesini alacağım. Dolayısıyla karşı taraf bir kale bir kiyon kaybedecek. Ben size sadece bir kale kaybetmiş olacağım. Mantıklı.
+
+232
+00:53:55,347 --> 00:54:14,927
+Dördüncü derinliğe gidersen, o durumda da benim beyaz kalemi buradaki siyah kaleyle alacak. Dolayısıyla ben iki tane kale kaybetmiş olacağım. Karşı tarafa bir kale bir piyon kaybetmiş olacak. Dolayısıyla yine benim açımdan çok da anlamlı gözüküyor. Dolayısıyla bakın, alır almaz, alır almaz. Burada şeyi rahatlıkla görebiliyoruz.
+
+233
+00:54:15,380 --> 00:54:23,460
+Derinlik değiştikçe bakın benim yapacağım hareket de ne yapabiliyor? Değişebiliyor. Görüyor musunuz?
+
+234
+00:54:26,547 --> 00:54:46,987
+Peki, işin çözümü ne? Çözümün zaten mümkün olduğu kadar derine gitmek makul bir şey. Yani gidebildiğiniz kadar, elinizdeki donanımın size izin verdiği kadar derine gitmek en makul hareket. Ne kadar derine giderseniz o kadar anlamlı bir, doğru bir hareket yapmış olursunuz, öyle söyleyeyim.
+
+235
+00:54:54,547 --> 00:55:00,807
+Mükemmel hareketi zaten belirlerseniz, gur yaparsınız. Ama gidemiyoruz. Oysa belli bir yere kadar gitmektir.
+
+236
+00:55:00,807 --> 00:55:07,208
+Belli bir yerde dediğim gibi elimizdeki donanımın bize izin verdiği maksimum seviye olmalı.
+
+237
+00:55:22,420 --> 00:55:49,260
+Nasıl bir şeylere izin veriyor? Şimdi şöyle bir şey düşünelim. Hamle yapma süresi 100 saniyesi. Yani insanlara karşı satranç oynayan bir makine yapacağız ve insanların da 100 saniyelik bir bekleme süresi olduğunu düşünelim. Bu 100 saniyeyi daha da arttırabilirsiniz ama 10 üzeri 43 yıla falan çıkaramazsınız. Dolayısıyla 100 saniye gibisinden bir şey seçmişiz.
+
+238
+00:55:49,780 --> 00:55:59,260
+Ve her saniyede de işte 10 bin tane düğümü inceleyebiliyor olduğumuzu düşünürsek, her hareket için 1 milyon tane düğümü inceleyebiliriz. 1 milyon tane düğümü açabiliriz. Tamam, 1 milyon.
+
+239
+00:56:00,059 --> 00:56:07,920
+Şimdi B üzeri M dediğimiz şey, o üzere 6 ile sınırlıysa ve B 35 ise, 32 demiştik de 35 ise, M 4 olabiliyor.
+
+240
+00:56:07,920 --> 00:56:16,880
+Yani M'nin 4 olmasının anlamı şu, ben bu donanımla 100 saniye içerisinde 4 derinliğe gidebiliyorum satrançla.
+
+241
+00:56:17,556 --> 00:56:35,435
+Dört derinlik dediğimiz şey ne? İşte şurada gördüğünüz yani ben bir hamle yapacağım, karşı taraf bir hamle yapacak, ben bir hamle yapacağım, karşı taraf bir hamle yapacak. Bu. Bu dört kat ileriye bakış dediğimiz şey aslında amatör bir insanlığına denk geliyor. Yani bir aylık veya bir saat saniye, onu siz de düşünün. Tamam mı?
+
+242
+00:56:37,076 --> 00:57:00,675
+Ama gerçekte dört kat ileriye bakabilen bir makineniz varsa elinize sadece, bu en fazla. Amatör oyuncuları falan yenebilir. Senelerini bu işe vermiş master seviyesindeki insanlar ya da ömürlerini bu işe vermiş grandmaster seviyesindeki insanlarla karşılaşması.
+
+243
+00:57:01,684 --> 00:57:28,304
+Mümkün değil. Bunlarla herhangi bir başa başa yön çıkartması mümkün değil. Dört kat ileriye bakışta. Peki bunu nasıl aşabiliriz? Bir miktarda aşabilir miyiz? Burada karşımıza bir algoritmik güzellik çıkacak. Bu algoritmik güzelliğin ismi alfa, beta, budama. Bu da yine 1965'lerde falan bir anlaşılırmış. Keşfedilen bir algoritma. Bakalım neymiş?
+
+244
+00:57:29,588 --> 00:57:53,168
+Şimdi çok basit bir şeyimiz olsun. Ne der? Oyun ağacımız var. İki derineye kadar gitmişiz. İlk önce başlangıçta şuraya açmışız, sonra buraya açmışız, sonra bu ikisinin minimumu almışız, bu iki olmuş. Sonra şuraya gelmiş, sonra buraya açmışız, bir olmuş.
+
+245
+00:57:53,972 --> 00:58:17,832
+Şimdi bu durumda enteresan bir şey karşımıza çıkıyor. Nasıl bir şey bakalım. Burası 2, burası 7 iken ikisinin minimum burası 2 değil mi? Burada bir şey yok. Burası 2 ise, bakın burası 2 ise, burası kesinlikle 2'den daha büyük müdür? Büyük eşit midir? Çünkü bakın 2 ile bir şeyin neyini alacak bu? Maksimumunu alacak değil mi?
+
+246
+00:58:18,239 --> 00:58:37,819
+İkili bir şey maksimini aldığınızda bulacağınız şey ikiden büyük eşit olmak zorunda değil mi? Doğru mu? Bakın onun ikiden büyük eşit olduğunu belirlemiş oluyoruz. Bakın şu iki ve yedi bulduğum anda, burasının iki olduğunu bulduğum anda burasının ikiden büyük eşit olduğunu da bulmuş olurum ben. Doğru mu?
+
+247
+00:58:39,731 --> 00:58:48,592
+Tamam. Şimdi ben şu anın bir olduğunu bulduğumu düşünelim. Tamam mı? Burası bir olduğunu düşünelim. Burası bir olduğu anda burasının da birden küçük eşit olacağı kesin mi?
+
+248
+00:58:54,132 --> 00:59:11,752
+Çünkü minimumunu alacak ya, burası ne olursa olsun, burasının değeri birden küçük eşit olacak. O zaman burası birden küçük eşit bir şeyse ve burası da ikiden büyük bir şeyse, o zaman burasının hiçbir şekilde seçilme ihtimali, şu yolun seçilme ihtimali nedir arkadaşlar artık?
+
+249
+00:59:16,252 --> 00:59:19,072
+Kalmamıştır, buradan gitme ihtimali yok artık.
+
+250
+00:59:21,331 --> 00:59:30,912
+Yani bizim şurayı seçme ihtimalimiz yok. Burayı seçme ihtimalimiz yoksa eğer artık şu anda bizim burayı değerlendirmemizin bir anlamı var mı?
+
+251
+00:59:33,791 --> 00:59:34,192
+Yine yok.
+
+252
+00:59:34,192 --> 00:59:48,351
+Yine yok. Dolayısıyla ben aslında bir, iki, üç tane tahtayı değerlendirdikten sonra şu dördüncü tahtayı değerlendirmemin bana bir katkısının olmadığını keşfetmiş durumdayım.
+
+253
+00:59:49,364 --> 01:00:14,123
+Tamam mı? O zaman ben iki derinlikli aramada, işte burada dört tane tahtaya bakacağım, üç tane tahtaya bakarak ne yapabildim? İşimi görebildim. Ama bu dediğim gibi özel bir durum. Yani şunu da bahsetmiyorum. Mesela diyelim ki burası iki, yedi, yani şuralarını boş vermiyorum. Mesela burası sıfır olsaydı, mesela burası ikiliydi, burası sıfır olsaydı ben buraya bakmam gerekir miydi? Bir düşünün bakalım.
+
+254
+01:00:14,579 --> 01:00:17,860
+Yani şurası sıfır olsaydı, burası sıfırdan büyük işle olacaktı.
+
+255
+01:00:21,972 --> 01:00:22,992
+Evet hocam, gerekirdi.
+
+256
+01:00:23,252 --> 01:00:44,212
+Burası gerekecekti. Çünkü burası bir olabilir değil mi? Şurası sıfırsa burası bir olabilirdi o durumda. Tamam. Dolayısıyla burayı seçme ihtimali mi olabilir? Dolayısıyla bu her zaman olan bir şey değil. Ama bunun oluştuğu durumlar var. Yani öyle durumlar var ki benim tahtadaki, pardon AİŞ'teki bazı durumlara bakmamın bir anlamı yok. Tamam mı?
+
+257
+01:00:44,563 --> 01:01:04,903
+İşte buna alfa beta budama deniyor. Bu alfanın ve betanın ne olduğunu şimdi göreceğiz. Mantık kavradık mı? Yani olayı kavradık mı daha doğrusu öyle söyleyeyim. Bazen öyle durumlar oluşuyor ki benim bazı tahtalara bakmamın hiçbir anlamı yok.
+
+258
+01:01:05,396 --> 01:01:28,396
+Buraya baksam da yapacağım hareket aynı, bakmasam da yapacağım hareket aynı. O zaman ben diyelim ki bir zaman harcıyoruz. Tahtaları değerlendirmek bir zaman alıyor. O zaman ben iki derinlikle arama yaptığımda bütün tahtalara bakmak...
+
+259
+01:01:30,003 --> 01:01:48,811
+Yerine bazı tahtalara bakıp hala aynı hareketi yapabiliyorsam, dolayısıyla burada artan bir zaman kalıyor bana, değil mi? Bunu değerlendirmediğim için artan bir zaman kalıyor. Bunu ben daha derin yapılar kullanarak belki de...
+
+260
+01:01:49,331 --> 01:02:02,331
+Ne derli ona? Aynı sürede iş çıkartabilirim. Yani şunu demek istiyorum. Mesela belki 3 derinlikli arama yapıp, 2 derinlikliğinin fulü kadar süren bir şey oluşturabilirim.
+
+261
+01:02:02,331 --> 01:02:13,512
+Ki bunun şey olduğunu, yani ne derli ona, bakabileceğimiz derinlik sayısını baya azaltabildiğini göreceğiz.
+
+262
+01:02:14,068 --> 01:02:29,268
+Şimdi bir örneğini yapacağız bunun. Adım adım. Birlikte takip edelim. Şimdi Depth First algoritması kullanıyoruz dedik. Depth First algoritması kullanıyoruz. Ve iki derinliğe iniyoruz. Bunu da biliyoruz. Şu anda bizim bu Max ve Min notlarımız var.
+
+263
+01:02:30,835 --> 01:02:55,096
+Şuradaki yanlara ikişer tane değer yazdık. İkişer tane değerde ilki alfayı gösteriyor, ikincisi betayı gösteriyor. Aslında alfa ve beta dediğimiz şeyler şunlar. Alfa buranın alabileceği minimum değer, beta ise buranın alabileceği maksimum değer. Minimum ve maksimum değerleri gösteriyor bunlar. Şu anda hiçbir şey bilmediğim için ben ikisi de eksi sonsuz, artı sonsuz halindeler. Tamam mı?
+
+264
+01:02:59,059 --> 01:03:20,719
+Ve ben şu tahtayı değerlendirdim. Şu tahtayı değerlendirdim. Şimdi bu tahtayı değerlendirdim de burası 3 olduğunu anladığım anda. Şurasının 3 olduğunu anladığım anda. Burası ne haline geliyor? Eksi sonsuza 3 haline geliyor. Burası 3'ten küçük. Çünkü burası minimum ya. Yani buradakilerin hepsini birden, bunların 3 ve bu ikisinin minimumunu alacağım ya.
+
+265
+01:03:21,172 --> 01:03:28,952
+3 çıktıysa o zaman buradaki değer mutlaka 3'den daha büyük bir şey olma ihtimali var mı artık buranın? Yok.
+
+266
+01:03:29,492 --> 01:03:55,471
+Minimumunu bilmiyorum. Daha eksi sonsuz olduğu için. Orası eksi sonsuz kalmış. Minimum bilmeni için eksi sonsuz yazmış ama maksimum biliyorum artık. Burası maksimum 3 olabilir. Burasının maksimum 3 olduğunu biliyorum. Bu ikisini kullanarak, bu bilgileri kullanarak buraya bir şey yapabilir miyim? Yapamam. Daha burası maksimumda neler çıkıyor, buraların ne çıkacağı falan belli değil. Burasına dokunabileceğim bir şey yok. Peki bir sonraki adım. Burasının 12 olduğunu düşünelim.
+
+267
+01:03:55,764 --> 01:04:23,004
+Burası 12 olduğunda burada herhangi bir değişiklik olacak mı? Yok. 3, 12. Eğer mesela 3'den daha küçük bir şey olsaydı bir değişiklik olacaktı. Ama burada 3'den daha büyük bir şey olduğu için, zaten minimum alıyorum, herhangi bir şey değişmiyor hiçbir yerde. Bir sonraki adımda buranın 8 olduğu ortaya çıktı. Şimdi buranın 8 olduğu ortaya çıktığı anda artık şurasının 3 olduğunu direkt biliyorum bak. Burası kesinlikle 3. Tamam mı?
+
+268
+01:04:23,295 --> 01:04:39,855
+Burasının kesinlikle 3 olduğu ortaya çıktığı anda burasının, şurası bakın, minimum 3 maksimumun artı sonsuz olduğunu söyleyebilirim. Eksi sonsuz bu sefer 3 ile değişti. Neden? Çünkü burada maksimum alacağım ya, burası 3 çıktı. 3'den daha küçük bir şey zaten olamaz burası artık.
+
+269
+01:04:42,035 --> 01:04:45,275
+Birlikte miyiz? Şu ana kadar?
+
+270
+01:04:46,515 --> 01:04:46,975
+Evet hocam.
+
+271
+01:04:47,435 --> 01:04:47,715
+Evet.
+
+272
+01:04:48,495 --> 01:04:48,815
+Tamam.
+
+273
+01:04:50,036 --> 01:05:06,976
+Şimdi bir sonraki adımda ben şurayı oluşturdum, tonu şurayı oluşturdum ve şurasını değerlendirdiğimizi düşünelim. Burası diyelim ki 2 çıktı. Burası 2 çıktığı anda burası eksi sonsuza 2 olacak değil mi? Burası eksi sonsuza 2 olacak. Tamam mıyız?
+
+274
+01:05:10,931 --> 01:05:24,551
+Minimum ne olacak ya? İki ile bunların, buradakiler artık her neyse, onların minimum ne olacak ya? Burası eksi sonsuza iki. Şimdi bu çıktığı anda aslında şu belli oldu. Şu yolun seçilme ihtimali yok oldu. Niye?
+
+275
+01:05:29,940 --> 01:05:32,780
+Üçten istiyorsan küçük bir şey gelmeyecek o yoldan.
+
+276
+01:05:33,240 --> 01:05:37,120
+Buradan gelmeyecek. Yani üçü aşabilecek hiçbir şey gel.
+
+277
+01:05:38,340 --> 01:05:46,519
+Dolayısıyla şurasıyla şurasının kesişim kümesi boş küme olduğunda tamam, alfabete budama bunu yapıyor.
+
+278
+01:05:47,123 --> 01:06:00,963
+Burasıyla, burasının kesişim kümesi boş küme olduğunda zaten bu yolun seçilme ihtimali kalmamış demektir. Bu yolun seçilme ihtimali kalmadığı durumda artık benim şu x'lere bakmamın bir anlamı var mı?
+
+279
+01:06:06,900 --> 01:06:23,180
+Yok, o tahtalara bakmamın hiçbir anlamı yok. Onları sildim gitti. Tamam mı? Ama işim bitti mi bitmedi? Daha buradan yapabileceğim. Bu hamleyi yaptım, bu hamleyi yaptım, bu hamleyi de yaptım, ürettim daha doğrusu.
+
+280
+01:06:23,891 --> 01:06:42,311
+Değerlendirmesini de yaptım. Ama başka bir hamle daha var. Onu da yapacağım. Bu hamleyi yapacağım mesela. Sonra buna bakacağım. Burasınınki on dörtmüş. Burası on dörtken burasının on dörten küçük eşit olduğunu söyleyebiliriz. Ama burası için çok da fazla bir şey değiştirmiyor. Bir saniye arkadaşlar.
+
+281
+01:07:29,907 --> 01:07:51,627
+Geldim arkadaşlar. Şimdi buradaki, dediğimiz gibi 14, burasının 14'ten küçük eşit olduğu ortaya çıktı. Ama hala sabit bir şey söylemiyorum. Sonra burasının 5 olduğu ortaya çıktığında burasının 5'ten küçük olduğu ortaya çıkacak. Burası hala kesişimleri var. Kesişimleri olduğu sürece bakın, burası ile burasına bakıyorsunuz. Görüyor musun? Kesişim var mı bunların hala?
+
+282
+01:07:54,612 --> 01:08:21,872
+Var değil mi? 3, 5, eksi sonsuz 5. Kesişimleri var. Kesişimleri olduğu için devam ediyorsunuz. Burası zaten 2 çıktı anda burasının 2 olduğu belli oldu. Burası 2 olduğu belli oldu anda artık zaten burada maksimum burası 2 çıktığı için işte 3. 2'den küçük bir şey burasının ne olduğuna zaten hiç bakmıyoruz artık. Burası da 2 çıktı. 2 çıktığından dolayı 3 mi 2 mi 3. Dolayısıyla bu hareketi yapıyoruz. Tamam mı?
+
+283
+01:08:22,515 --> 01:08:24,315
+Dolayısıyla bunu... Evet.
+
+284
+01:08:25,015 --> 01:08:29,735
+Hocam, biz burada ilk adımda hani minimumu güncelliyorduk ya, tepenin minimumunu sürekli.
+
+285
+01:08:30,135 --> 01:08:35,015
+Hani 3'ü bulduk, tepenin minimumu 3 oldu. 12 bulduk hala 3, 8 bulduk hala 3.
+
+286
+01:08:35,995 --> 01:08:44,275
+En sağda maksimumunu güncelledik ama. Bu son node olduğunu bildiğimiz için mi, Orun? Yoksa başka bir olayı var mı yani?
+
+287
+01:08:45,215 --> 01:08:48,635
+Maksimumunu güncelledik derken neyle mi istiyorsun? Bir saniye, dursana.
+
+288
+01:08:48,635 --> 01:08:50,215
+Tamam hocam.
+
+289
+01:08:50,484 --> 01:09:15,684
+Şurası mı? Yani hocam burada şey yapıyoruz. On dört geldi. İşte beş geldi. On dört geldi. Hem burası, bir dakika doğru. On dört geldi. Evet. Evet. On dört geldiğinde üçten on dört kadar oldu kökümüz. Evet. Burası üçte on dört oldu. Eksi sonsuzdan artı sonsuza kadarken şeydi. İlk adımda üç geldiğinde üçten artı sonsuza kadardı. Hani orada minimumunu güncellemiştik.
+
+290
+01:09:16,095 --> 01:09:19,395
+En küçük alabileceği değeri. Burada en yüksek alabileceği değeri güncelledik.
+
+291
+01:09:21,575 --> 01:09:28,595
+E tamam, maksimum seviyesindeyken şeyi güncelliyorsun, maks'ı güncelliyorsun.
+
+292
+01:09:28,855 --> 01:09:31,695
+Min seviyesindeyken dördüncü bir not olacaktı.
+
+293
+01:09:32,695 --> 01:09:35,175
+Buradan çıkan mı? Buradan çıkan mı?
+
+294
+01:09:35,615 --> 01:09:35,775
+Evet.
+
+295
+01:09:36,015 --> 01:09:43,115
+Anladım demek istedi. Tamam, tamam. Evet, tam şuna denk geliyor aslında. Şurasına da denk geliyor bak.
+
+296
+01:09:44,180 --> 01:10:07,220
+Bir dakika. Ben şimdi bu sekizi buldum ya, değil mi? Bu sekizi bulduğum anda burasını direkt üç yaptım, değil mi? Bak. Gördün mü? Artık bitti. Bittiğini biliyorum. O yüzden burası üç oldu. Anlatabildim mi? Yani bittiğini, başka bir hamle olmadığını biliyorum artık. O durumda burası zaten üçe dönüşüyor.
+
+297
+01:10:08,787 --> 01:10:12,987
+Anladım. O bittiği için o şekilde oldu. Yoksa maksimum güncel diyemezdik.
+
+298
+01:10:13,007 --> 01:10:22,487
+Tabii tabii. Burada daha başka bir şeyler olsaydı, çıkabilseydi buradan başka bir şeyler, o zaman ben burayı böyle yapamazdım direkt.
+
+299
+01:10:23,287 --> 01:10:23,627
+Anladım.
+
+300
+01:10:23,627 --> 01:10:34,127
+Yani yapılabilecek hamleleri üretiyorum, yapılabilecek hamleler sonrası oluşabilecek tahtaları üretiyorum ama o tahtaları değerlendirmiyorum.
+
+301
+01:10:34,496 --> 01:10:58,716
+Tamam mı? Yani Depth First nasıl çalışıyordu? Hatırlayın. Bir şey var, bir durum var. Bu durumdan yapılabilecek bir tane hamle var. Tamam, maksimum iki derinlikli Depth First'i düşünün. Bundan ürettim. Bundan yapılabilecek durumları üretiyorum. Tamam mı? Ama ürettim sadece. Herhangi bir şekilde bunların değerlendirmesini yapmadım daha. Değerlendirmeyi teker teker yapıyorum zaten. Tamam mı?
+
+302
+01:11:01,587 --> 01:11:08,847
+Bu şekilde ilerleyeceğiz. Yani hani ağaçtan çekme gibi düşünün onları. Tamam mı?
+
+303
+01:11:10,515 --> 01:11:29,935
+Şimdi o zaman benim, burada da mesela bunun bir örneği var. Burada mesela eline bilecek daha büyük dalların olduğunu falan da görebiliyorsunuz. Tamam mı? Bunu çalıştırırsanız kendinizi adım adım görürsün. Mesela şurası eleyebiliyor. Şurasını toptan eleyebiliyor ki buradaki bunların hiçbirine erişmesine gerek kalmıyor.
+
+304
+01:11:38,515 --> 01:11:48,095
+Karmaşıklığı arkadaşlar satraş gibi bir oyunda B üzeri M bölü 2'ye kadar düşürebiliyor. Bakın B üzeri M bölü 2'ye kadar düşürmenin anlamı şu.
+
+305
+01:11:51,923 --> 01:12:00,884
+Sekiz derinlikli aramayı dört derinlikli arama kadar sürede gerçekleştirebiliyorsunuz.
+
+306
+01:12:01,543 --> 01:12:04,344
+Tamam. Bu müthiş bir şey.
+
+307
+01:12:05,144 --> 01:12:12,824
+Ve bunun güzel tarafı bu işlem, bu budama işlemi seçilen hareketi etkilemiyor.
+
+308
+01:12:14,203 --> 01:12:18,963
+Yani hani mesela derinliği değiştirmek seçilen hareketi etkiler mi?
+
+309
+01:12:19,376 --> 01:12:46,335
+Evet, etkiler. Derinliği değiştirmek etkiler. Ama siz alfabete budama yapacaksınız diyelim ki. Dört derinlikle yapacaksınız. Dört derinlikle arama yaparken alfabete budamayı kullansanız da kullanmasanız da, tamam, kullansanız da kullanmasanız da seçici ailesi hareket değişmiyor. Anlatabildim mi? Bakın derinlik değiştirir. Ama aynı derinlik için alfabete budamayı kullanmak ve kullanmamak seçici ailesi hareketi değiştirmiyor.
+
+310
+01:12:47,247 --> 01:13:08,087
+Ve dediğim gibi çok daha hızlı bir şekilde bunu gerçeklememiş sağlıyor. Bu gerçekleme sayesinde araba demin dediğim gibi iki katın açıp iki satranç için düşünürsek bu deminki donanım aynı donanımda kaldığımız durumda dörtten sekize çıkmak çok büyük bir şey. Semasta seviyesine ben insana erişmek mümkün oluyor.
+
+311
+01:13:08,967 --> 01:13:13,007
+Alfa betalarının ayvı verilmesi burada. Bunu sizler inceleyin.
+
+312
+01:13:13,344 --> 01:13:18,564
+Bu yaptığımız şeyin adım adım implementasyonu burada var.
+
+313
+01:13:19,315 --> 01:13:41,615
+Şimdi rastgele olmayan oyunlarda insanlara karşı bilgisayarların durumu nasıl? İşte Dama gibi bir oyun mesela yine rastgele olmayan bir oyun, deterministlik oyun. China Hook adlı oyun, 94'te dünya şampiyonu başa başa oynuyor. Neyse, onlar o günden beri, 94'ten beri Dama'da bilgisayarlar insanlarla iyiler. Satlaştı 97'den beri iyiler.
+
+314
+01:13:50,484 --> 01:14:14,084
+Başka bir oyun Go. Go oyunu da insanlar üstünlükleri 2016'da kaybettiler. Yani şimdi satranç da 1997'deydi bakın bu. 1997'de. Go'da ise 2016, arada epey bir zaman var. Yani niye böyle diye düşünürsek, bunun sebebi ne olabilir?
+
+315
+01:14:15,188 --> 01:14:42,127
+Oyunun daha karmaşık olması olabilir. Oyunun daha karmaşık olması. Ne demek oyun daha karmaşık olması? Aroma üzerinin daha büyük olması. Hakikaten baktığımızda Go oyununda 19'a 19'luk bir tahtada oynanıyor. Ve B 250 seviyelerinde. B'nin 250 olmasının anlamı şu. Şurada bizim şeyimiz var ya. Mesela burada bir tanesinden böyle 3 tane çıkmış ya. Bir tanesinde 250 tane okutuyor.
+
+316
+01:14:43,539 --> 01:15:10,960
+Tamam mı? Ve bunun nasıl bir şey olduğunu hayal edin. Yani 250 tane okçukta her birinden de 200 tane çıkıyor. Ne kadar çok olasılığın olduğunu düşünün. Bir arama algoritması için bir kabus. İki derinlik için bile 250 üzeri iki tane şey var. Durum var. Sadece iki derinlik için bile. Ve dahası oyun derinliği de 150'lerde. Yani satrançta 40'taydı bu hatırlarsanız.
+
+317
+01:15:11,456 --> 01:15:29,996
+Burada 150 derinlikli bir ağaç ve her bir nodundan 250 tane yeni nod çıkıyor. Tamam mı? 250 üzeri 150. Yani demin saatten için 32 üzeri 40'ı hesaplamıştık. 10 üzeri 43 yıl sürmüştü. Burada hayal edin artık nasıl bir şey olacak.
+
+318
+01:15:38,931 --> 01:15:47,072
+97 satranç çözülebilmiş olmasına rağmen Go'nun çözülebilmesi 2016'ya kadar sürdü.
+
+319
+01:15:48,572 --> 01:16:03,451
+Peki daha da karmaşık oyunlar olabilir mi? Olabilir. Bunda hiçbir şey yok. Ama zaman içerisinde muhtemelen yavaş yavaş çözülecektir.
+
+320
+01:16:08,851 --> 01:16:14,112
+Bilgisayarlar ve satan çöğlenin tahliyesine birazcık bırakacağız. Bu bize bir bakış açısı birazcık sağlayacak aslında.
+
+321
+01:16:15,492 --> 01:16:25,391
+57'de bu tahmini görmüştük. Neville ve Simon 10 yıl içinde dünyada satan çöğlenin bilgisayar olacağını tahmin etmişlerdi. Olmamıştı. 40 yıl sonra oluyor.
+
+322
+01:16:26,492 --> 01:16:34,631
+58'de, bakın 57'de bu tahmin yapıldıktan sonra 58'de satan çöğlenin ilk bilgisayar IBM 704 donanımı üzerine çalışan bir program.
+
+323
+01:16:35,252 --> 01:16:54,952
+58'de ortaya çıkıyor. 67'de MacAX, insanların katıldığı bir turnuvada başarıda yarışıyor. Yani ancak bu olabiliyor 10 sene içerisinde. İnsanlarla yarışabilen, turnuvalarda yarışabilen bir seviyeye çıkıyor. Turnuvalarda yarışabilen bir seviyeye. 83'te master ünvanını kazanan ilk program var.
+
+324
+01:17:02,036 --> 01:17:24,115
+Deep Blue'ya dönüşecek çalışmayı başlatıyorlar. 89'da projeyi IBM devralıyor. 89'dan 97'ye kadar IBM'de bu iş yürüyor. 6 oyunluk bir maç. Deep Blue'ya 3.5'a 2.5'lu. Bunun anlamı şu 2 oyunu Deep Blue'yu kazanıyor, 1 oyunu Kasparov kazanıyor, 3 tane oyun ise beraber bitiyor.
+
+325
+01:17:25,043 --> 01:17:46,123
+Ezici bir şey değil yani. O manada düşünmeseyim. Ama şu anda artık bir şey yok. Yani şu anda standart bir oyunun da bilgisayarlara karşı bir şey yok. İnsanların bir varlık göstermesinin bir mümkünatı yok. Ama dikkat ederseniz standart bir satranç oyunu da dönüyor.
+
+326
+01:17:46,123 --> 01:17:49,963
+Şimdi bu tahtaya bakarsanız, tahtaya bakarsanız, ne görüyorsunuz?
+
+327
+01:17:50,868 --> 01:17:53,428
+Buradakiler kimler? Bana söyleyebilir misiniz?
+
+328
+01:17:56,916 --> 01:18:02,376
+Geri Kasparov'la Deep Blue'da hamleleri yapan bir insan var.
+
+329
+01:18:09,587 --> 01:18:11,707
+O insan aslında bir arayüz değil mi?
+
+330
+01:18:14,327 --> 01:18:17,188
+Aynen canım. Bilgisayarın hesapladığı...
+
+331
+01:18:17,188 --> 01:18:24,688
+Evet, bilgisayarın yaptığı şeyi Kasparov'a Kasparov'un yaptığı şeyi bilgisayara söylüyor bir tane arayüz sadece.
+
+332
+01:18:25,448 --> 01:18:28,427
+Neyse, tabii Aylör ekibinden birisi o.
+
+333
+01:18:28,427 --> 01:18:36,207
+Şimdi bu tarihçinin yöntemsel olarak tarihçisine baktığımızda şöyle söyleyelim.
+
+334
+01:18:36,692 --> 01:18:44,051
+Shannon ve Thuring minimax'ı 50'de buluyorlar. Kotak ve McCarthy alfabete bulunduğum lanet işleri 1966'da buluyorlar.
+
+335
+01:18:44,731 --> 01:18:49,372
+Maccae'de dönüşüm tabloları var. İteratif deepening var giderek daha derinlere bakmasını sağlayan.
+
+336
+01:18:49,432 --> 01:18:53,832
+75'e kadar bunlar var. 75'e kadar metotlar geliştiriyor.
+
+337
+01:18:53,832 --> 01:19:00,092
+Daha sonraki kısım, şu daha sonraki kısım, donanımsal ilerlemeler kaydediliyor.
+
+338
+01:19:00,252 --> 01:19:03,572
+Yani algoritmik ilerlemeler değil, donanımsal ilerlemeler.
+
+339
+01:19:03,828 --> 01:19:26,888
+Doğumsal ilerleme noktasında en son boyutta CHES çipler yapıyorlar. CHES çipten kasıt şu, yani çip tasarlıyorlar ve bu çipin tek görevi satraj tahtalarının bu değerlendirme fonksiyonlarını hesaplamak.
+
+340
+01:19:27,923 --> 01:19:48,811
+Buna özel donanım tasarlıyorlar. Anlatabildim mi? O kadar işi ciddiye alıyorlar. Donumsal olarak korkunç bir yatırım yapıyorlar. Ve en sonunda, 97 Deep Blue, bu hem donumsal...
+
+341
+01:19:48,851 --> 01:19:54,992
+Gerçeklemeler hem de algoritmik gerçeklemelerle, geliştirmelerle öyle söyleyelim.
+
+342
+01:19:55,652 --> 01:20:00,391
+Şeyi kazanıyor. Kaspro'u yeniyor.
+
+343
+01:20:01,172 --> 01:20:08,871
+Şimdi bu tabii bilgisayarlarla satranç oynamak niye böyle bir şey olmuştur?
+
+344
+01:20:08,871 --> 01:20:09,672
+Ne derler ona?
+
+345
+01:20:12,731 --> 01:20:14,871
+Yani sonuçta şöyle bir şey düşünün.
+
+346
+01:20:15,475 --> 01:20:26,835
+Aslında fiziksel dünyada çok da işe yaramayan bir program oluşturuyorsunuz. Yani hani eğlence amaçlı falan belki ama hani IBM'in falan böyle bir şey yapıyor olması.
+
+347
+01:20:27,515 --> 01:20:32,523
+Yok da işte bakın yani şu tarihçiye bakın. Yani 57'de...
+
+348
+01:20:32,595 --> 01:20:47,935
+Den başlayan, öyle söyleyeyim belki, motivasyon anlamında diyelim. Kırk yıl süren bir şey, bir yolculuk. Bu yolculukun motivasyonları neler olabilir diye düşündüğümüzde. İyi ki aslında birazcık şeyden geliyor herhalde.
+
+349
+01:20:59,568 --> 01:21:15,208
+Defalarca Dünya Sattan Şampiyonu ile makineler oynuyorlar. Yani ilk defa Kasparovla karşı, 97'de bu oyundan önce Kasparovla da bu oyun oynanıyor. Kasparov yenilemiyor.
+
+350
+01:21:15,568 --> 01:21:40,888
+Başka daha önceki Dünya Saltan Şampiyonları ile oynanıyor, yenilemiyor vs. vs. En sonu 97'de bu iş başarılıyor. Yani sürekli bir yenilgi var. 40 yıl boyunca, bakın 57, hadi 58'de başlayalım. 40 yıl boyunca Dünya Saltan Şampiyonluğu yenme hedefi, hep başarısızlıkla sonuçlanıyor.
+
+351
+01:21:41,876 --> 01:21:52,216
+Ve bu süre boyunca aslında bir taraftan da şöyle bir şey var. Satranç insanların arasında bir şekilde zeki olmanın ölçütü olarak görülüyor mu arkadaşlar?
+
+352
+01:21:53,175 --> 01:22:03,255
+Yani mesela ben şöyle bir şey desek. Kasporov'u satrançta yenen birisi zeki midir diye bir soru sorsam size. Ne dersiniz?
+
+353
+01:22:04,148 --> 01:22:31,988
+Kesinlikle evet dersiniz değil mi? Yani hani Dünya Satran Şampiyonu'nu bir zamanlar ki, Dünya Satran Şampiyonu'nu şu anda yenseniz, tamam Dünya Satran Şampiyonu olmazsınız ama kesinlikle zeki birisinizdir. Dolayısıyla satranç dediğimiz şey insanları işte zeki olarak değerlendirmek için kullanan bir ölçü gibi bir şey. Ve uzun yıllar, çok uzun yıllar bilgisayarların asla ve asla satrançta insanı yenemeyeceğini.
+
+354
+01:22:32,032 --> 01:22:41,072
+Çünkü satrancının zeka gerektirdiğini, stratejik bir düşünme gerektirdiğini, bakın çok uzun bir süreden bahsediyoruz, 40 yıl boyunca uğraşılıyor ve başarılamıyor.
+
+355
+01:22:42,579 --> 01:23:08,700
+Yani şey değil, olayı hani böyle bir şu anda biz geçmişe direkt bakıyoruz. O yüzden hani tuhaf geliyor olabilir ama 40 yıl boyunca ciddi uğraşılıyor bu işle ve 40 yıl boyunca başarılamıyor. Ve başarısızlığın sonucunda da hep şey ne derler? Bir taraftan da şehrin sesler yükselmeye başlıyor. Yani gördüğünüz gibi bilgisayarlar asla ve asla satranışta insanları yenemeyecekler. Tamam mı? Böyle bir şey oluşuyor.
+
+356
+01:23:09,492 --> 01:23:33,231
+Yargı oluşmaya başlıyor. Çünkü santran şöyledir, böyle. Bu da hemen devam ediyor. En sonunda bu yenme mevzusu gerçekleşiyor. Tabii burada başka bir motivasyon daha var bence. O motivasyonun kaynağı bu resimde aslında gizli. Daha doğrusu şöyle, Dünya Santran Şampiyonu kim olduğu ile alakalı. Bence burada birazcık şey de var. Ne derler ona?
+
+357
+01:23:33,747 --> 01:23:42,627
+Bu soğuk savaşın bir uzantısızlığında bir motivasyon kaynağı olduğunu düşünüyorum. Bu benim kişisel fikrim.
+
+358
+01:23:43,107 --> 01:23:49,627
+Dünya saattan şampiyonu, Ronald Reagan olsaydı ya da Tom Cruise olsaydı ya da McGrane olsaydı bilmiyorum ki olursa.
+
+359
+01:23:49,627 --> 01:23:58,667
+Ama Rus olmasaydı, öyle söyleyeyim tamam mı? Muhtemelen bu kadar şey olmayabilirdi. Ne der bana?
+
+360
+01:24:00,340 --> 01:24:22,780
+Bu konuda takılmayabilirdi belki. Ya da bu kadar çabuk çözülmeyebilirdi. Belki öyle söyleyeyim. Daha doğrusu bu donanımsal IBM'in devralması özel bir firması olmuş. Devlet falan değil bu. Öyle düşünün. Devlet destekler tabii ki var. Ama bununla bu kadar uğraşmak, bu kadar büyük yatırımlar yapmak çok şey olmayabilir.
+
+361
+01:24:23,380 --> 01:24:49,040
+Ki kaldı ki IBM bunu yaptıktan sonra hani IBM bundan çok nemalandı mı diye düşündüğümüzde, yani reklam anlamında evet bir miktar şey yapmıştır. Ama değmiş mi de, değinemiş mi de bilmiyorum. Yani belki dediğim gibi yani dünyası satran şampiyonu bir Rus olmasaydı belki 97'de olmazdı bu iş de 2007'de olurdu. Anlatabildim mi? Evet, birisi bir şey diyecekti galiba.
+
+362
+01:24:49,684 --> 01:24:54,304
+Hocam zaten bayrak koymuşlar şöyle yapay zeka. Amerika, Rusya bayrağı var yani.
+
+363
+01:24:55,564 --> 01:25:01,524
+Evet, orada da var değil mi? Rusya Federasyonu. Eski Rus şey değil, Rus bayrağı değil ama.
+
+364
+01:25:04,904 --> 01:25:09,644
+Siz Rusya'nın Rusya olduğu zamanı bilmiyorsunuz değil mi? Federasyonu görüyorsunuz.
+
+365
+01:25:09,764 --> 01:25:10,804
+Sovyetler miydi bu?
+
+366
+01:25:11,363 --> 01:25:14,863
+Sovyet Sosyalist Cumhuriyetler Birliği, SSCB.
+
+367
+01:25:16,212 --> 01:25:30,092
+O zaman da siz bilmiyorsunuz. Neyse. Asıl soğuk savaşın bitişidir o. Öyle söyleyeyim. Zaten Rusya'nın parçalanması.
+
+368
+01:25:30,092 --> 01:25:40,532
+Şimdi devam edelim. Bu küçük aradan sonra.
+
+369
+01:25:41,939 --> 01:25:58,739
+Peki, bizim oyunlarımızın hepsi... Ya da şöyle bir şey yapayım, burası birazcık uzun sürebilir, bölmeyelim orayı. Küçük ara verelim, ondan sonra devam edelim.
+
+370
+01:26:00,739 --> 01:26:08,539
+Şimdi saat bakıyorum, on birini, on kırka kadar, on üç dakika.
+
+371
+01:26:09,140 --> 01:26:10,579
+Ara diyorum. Tamam mı?
+
+372
+01:26:12,739 --> 01:26:14,100
+Az sonra görüşmek üzere arkadaşlar.
+
+373
+01:41:40,180 --> 01:41:41,440
+Arkadaşlar tekrardan.
+
+374
+01:41:48,659 --> 01:41:49,659
+Sly geldi mi?
+
+375
+01:41:51,159 --> 01:41:52,079
+Geldi hocam.
+
+376
+01:41:52,079 --> 01:41:53,000
+Tamam.
+
+377
+01:41:53,960 --> 01:42:05,920
+Şimdi işin içinde şans faktörü girdiği durumdaki oyunlarda acaba biz bu yöntemi kullanabilir miyiz?
+
+378
+01:42:07,399 --> 01:42:13,003
+Şimdi burada oyun ağacını oluştururken…
+
+379
+01:42:13,268 --> 01:42:24,268
+Bir şey daha yapmamız gerekecek. Bir ilişkiler takmamız gerekecek. Terminal düğümler ya da sınırlı bir derinlikte düşünürseniz daha farklı yapılarınız olabilir.
+
+380
+01:42:24,851 --> 01:42:47,251
+Min düğümü var, Max düğümü var. Bir de şans düğümlerimiz olacak. Şimdi şans düğümü dediğimiz şey gelebilecek zar, kağıt vesaire gibi durumlar olasılıklarına göre dizilirler. Örnek işte tavladığın 21 tane çift zar için 20 tane değişik durum var. Alt tane aynısı 15 tane değişik. Her bir seviye için 21 tane şans düğüm var. Şimdi bu ne demek?
+
+381
+01:42:49,587 --> 01:42:57,587
+Oyun ağacın içine min ve max'ın haricinde bir de şans düğümleri eklenecektim.
+
+382
+01:42:58,347 --> 01:43:02,047
+Ve bu durumda algoritmamızın ismi Expect Minimax haline geliyor.
+
+383
+01:43:02,228 --> 01:43:08,667
+Expect Minimax algoritmamızda bakın max ve min'lerin arasında şans düğümleri de var.
+
+384
+01:43:08,667 --> 01:43:09,547
+Görüyor musunuz?
+
+385
+01:43:11,220 --> 01:43:31,400
+Peki şimdi burada neyi ifade ediyor bunlar? Şimdi Max dediğimiz şey, şuradaki belli bir durumdayız. Bizim yapabileceğimiz hamleler. Biz bu hamleleri yapabiliriz. Bu hamleleri yaptıktan sonra mesela zar açısından düşünürsek, şans düğümlerinin her birinde o durumda karşı tarafın atabileceği zarlar var. Karşı tarafın atabileceği zarlara baktığınızda şurada bakın.
+
+386
+01:43:31,923 --> 01:43:38,323
+1-1 atabilir, 1-2 atabilir, 6-5 atabilir, 6-6 atabilir gibisinden burada gözükmeyen birçok şey var.
+
+387
+01:43:38,323 --> 01:43:45,724
+Ve bunların her gün üzerinde de olasılıklar var. 1-1-36 olasılık da bunu atabilir, 1-1-18 olasılık da bunu atabilir falan gibisinden bunlar da yazılırlar.
+
+388
+01:43:47,252 --> 01:44:12,332
+Bunların her birine atıldığı durumda, o durumdaki her birisi için karşı tarafın yapabileceği hamleler var. Karşı tarafın yapabileceği hamlelerden sonra benim atacağım zarlar var. Ondan sonra benim atacağım zarlarla sonra benim yapacağım hamleler var. Şeklinde en sonları bir yerde durduracaksınız. O terminal not olabilir ya da sınırlı bir derinlikte arama yapıyorsanız, o cutoff kesimindeki notlar olabilir. O değerlendirme fonksiyonu kullanırsınız ya da utility kullanırsınız.
+
+389
+01:44:13,728 --> 01:44:35,659
+Şimdi peki bu yapıyı oluşturabilir miyiz? Evet, oluşturabiliriz. Peki değerleri nasıl hesaplayacağız? Yani yükselti zaten belliydi. Max ve min zaten biliyordu. Peki şans düğümündeysek ne yapacağız? Şans düğümünde ardılarını, her birini olasılıkları da çarparak toplayacağız. Yani şundan bahsediyorum. Burada mesela şans düğümünde şunun değerini...
+
+390
+01:44:35,667 --> 01:44:42,347
+Şunun değerini bulurken, şunların değerlerini her birinin olasılığıyla çarparak bulacağız.
+
+391
+01:44:43,487 --> 01:44:54,947
+Yani burasının değeri çarpı 1 bölü 36, artı burasının değeri çarpı 1 bölü 18, artı işte bir sürü işler var, artı burasının değeri çarpı 1 bölü 18 şeklinde burasının değerini belireceğiz.
+
+392
+01:44:54,947 --> 01:44:58,727
+Daha sonra bunların değerlerinden maksimum kınavara burası seçilecek.
+
+393
+01:44:59,107 --> 01:45:00,947
+Bunu bir örnek üzerine görmek istersek.
+
+394
+01:45:01,747 --> 01:45:24,307
+Daha basit bir oyun ağacımız olsun. Ben bir zar atıyorum ki bu zar olmasın da yani zar biraz komik bir şey. İki yüzü olan bir zar ya da bunu para olarak da düşünebilirsiniz. Yazı tura gibi. Ama yazı turanın gelme olsakları eşit değiller. Mesela bir taraf daha ağır olsun. Bir tarafın gelme olsak da 9, diğer tarafın gelme olsak da 1 olsun. Tamam.
+
+395
+01:45:24,884 --> 01:45:52,144
+Böyle bir durumda benim yapabileceğim hamler var. Benim yapabileceğim hamlerden sonra karşı tarafı atacağı zar var. Karşı tarafı zar attıktan sonra yapacağı hamleler var. Ve burada da bitiyor. Ve burada da benim açımdan durum skorları var. Tamam mı? Şimdi burada ben burada şeyleri nasıl hesaplayacağım? Min, max ve şans skorlarını nasıl hesaplayacağım? Şimdi min seviyesindeyken zaten altta girelim. Min bunu seçiyoruz. Yani şu 2, 3, 1 ve 4'ün seçimi zaten belli.
+
+396
+01:45:53,492 --> 01:46:11,612
+Şu ana kadar hiç yapmadığımız şey şu şansın değerliğinde, şansı bulmak. Şansı bulurken benim bahsettiğim gibi altındakinin değeri çarpı olasılığı artı altındakinin değeri çarpı olasılığı. Yani 2 çarpı 0.9 artı 3 çarpı 0.1 bulup işte 2.1 ediyor. Onu buraya yazıyorsunuz.
+
+397
+01:46:12,112 --> 01:46:17,292
+1 ile 0.9'u çarp artı 4 ile 0.1'i çarp onların ikisini topla 1.3 ediyor.
+
+398
+01:46:17,939 --> 01:46:33,859
+2.1'e 1.3. Burada da max'ı bulduğunuz zaman işte bunu yapmak daha mantıklıymış. Tamam mı? Yaptığımız şey, bütün mekanizma bundan ibaret. Dolayısıyla içine şans girdiğinde de bu sefer minimax algoritması, expect minimax algoritmasına dönüşüyor.
+
+399
+01:46:35,219 --> 01:46:39,859
+Burada tabii B üzeri M'nin yanına bir de en üzeri M diye bir şey geliyor ki,
+
+400
+01:46:41,811 --> 01:47:00,292
+Buradaki en üzeri M, aslında bizim M dediğimiz şey, şans faktörünün kaç tane farklı şey var. Mesela Zal 2.21 değişik durum var ya, oradaki en dediğimiz şey 3.21 olur. Dolayısıyla şey baya bir artıyor.
+
+401
+01:47:01,072 --> 01:47:06,512
+Karmaşıklığı düşündüğümüz zaman, B üzeri M çarpı en üzeri M şeklinde baya bir artıyor.
+
+402
+01:47:08,051 --> 01:47:14,271
+İşte pratikte en fazla 3 seviye mi? Tavla gibi bir oyun için düşünürsek, B'nin 20 olduğu bir oyun.
+
+403
+01:47:16,351 --> 01:47:22,192
+En fazla 3 seviye pratiklerinin. Teddy Gammon adlı bir oyun ki onun çene girmeyeceğim, detayına girmeyeceğim ama
+
+404
+01:47:22,192 --> 01:47:29,271
+iki derinlikle bir arama yapıyor. Yani çok basit bir arama yapıyor. İyi bir değerlendirme fonksiyonu. Sonuç dünya şampiyonu.
+
+405
+01:47:29,271 --> 01:47:30,987
+Şimdi...
+
+406
+01:47:31,188 --> 01:47:37,587
+Tavla da Dünya Şampiyonu bir oyun yani onu demek istiyorum.
+
+407
+01:47:37,587 --> 01:47:44,188
+Peki, Dünya Tavla Şampiyonu ile Dünya Satran Şampiyonu arasında bir fark var mı?
+
+408
+01:47:46,688 --> 01:47:53,188
+Şöyle bir şey düşünün yani Dünya Satran Şampiyonu ile siz 100 kez maç yapsanız kaç karesini kazanırsınız?
+
+409
+01:47:55,380 --> 01:47:56,380
+Sıfır.
+
+410
+01:47:56,619 --> 01:47:57,579
+Sıfır değil mi?
+
+411
+01:48:00,600 --> 01:48:04,220
+Dünya tavla şamponyayla yüz tarmaş yapsanız kaç nesini kazanırsınız?
+
+412
+01:48:08,404 --> 01:48:09,944
+En az bir tane olur hocam.
+
+413
+01:48:10,644 --> 01:48:27,124
+Ya herhalde bir 10 tane falan kazanabilirsiniz belki. Bilmiyorum yani şansa bağlı. Tamam mı? Yani aşırı derece şanslıysanız belki 10 tane, 15 tane falan kazanabilirsiniz. Bu olabilecek bir şey. Ama dünya zaten şampiyonuyla oynadığınız maçta bunun mümkünatı yok. Dolayısıyla ne?
+
+414
+01:48:28,083 --> 01:48:50,144
+Tabloda dünya şampiyonu demek her maçı kazanan bir şey anlamına gelmiyor. Satrançta bile bazen ufakta bekliyor ama genelde öyle değil. Satrançta şey neden? Dünya satranç şampiyonu 100 tane maç oynasınız hepsini kaybedersiniz. Burada hiçbir şansınız olamaz. Şansınız olamaz yani o manada. Ama tabloda şansınız olabilir.
+
+415
+01:48:53,844 --> 01:49:18,844
+Bu noktadan başka bir tarafa doğru hareket edeceğiz. Tahmin ve öğrenme. Tahmin ve öğrenme aslında makineler sizinle oyun oynarken size göre oynamayı öğrenebilirler. Ne demek istiyorum? Sizin yaptığınız hareketlerdeki patternları bulup bu patternları…
+
+416
+01:49:19,828 --> 01:49:31,588
+Kendi arama süreçlerini iyileştirmek için kullanabilirler. Mesela diyelim ki, Virtual Fighter diye bir oyun var eskilerden, konsol oyunlarından bir tanesi.
+
+417
+01:49:31,588 --> 01:49:43,068
+Orada dövüşlüyorsunuz, orada yapabileceğiniz hamleler var. Low kick, low punch, aparken gibisinden değişiklikler var. Vuruş türleri falan var. İki kişilik bir oyun.
+
+418
+01:49:44,243 --> 01:49:55,323
+Burada diyelim ki siz low kick, low punch'tan sonra yaptığınız hareketlerin %50'si aparkat, %35'i low punch, %15'i de low kick olsun.
+
+419
+01:49:55,323 --> 01:50:08,384
+Mesela siz oynarken bu istatistikleri makine çıkarabilir mi? Çıkarabilir. Siz de oynamaya başladıktan sonra. Bu istatistikleri elde ettikten sonra bu bilgiyi nerede kullanabilir? Bir düşünün bakalım.
+
+420
+01:50:14,484 --> 01:50:16,484
+Bu bir ne için kullanabilir?
+
+421
+01:50:25,492 --> 01:50:28,212
+Bir sonraki adıma karşı atak yapmak için hocam.
+
+422
+01:50:29,692 --> 01:50:39,052
+Tamam da arama stratejisini iyileştirmek için nasıl kullanabilir? O oyun ağacında nasıl kullanabilir bunu?
+
+423
+01:50:41,632 --> 01:50:46,632
+Zardaki oran gibi burada da bir oran verebilir hocam. Yapma olasılığı şu kadar artar şu hareket diye.
+
+424
+01:50:46,632 --> 01:50:47,372
+Tamam.
+
+425
+01:50:49,684 --> 01:51:15,963
+Peki buradan nasıl bir strateji izleyebilir? Mesela şöyle bir şey düşünebilir miyiz? Muhtemelen bunun yapacağı hareket bu karşılarda. O yüzden onun yapacağı taraf, yapma ihtimali yüksek olduğu taraf, daha doğrusu düşük olduğu taraf şu hareket. Bu hareketin değerlendirmesi için çok da derinlere gitmeme gerek yok.
+
+426
+01:51:16,404 --> 01:51:37,724
+Ama asıl yapacağını beklediğim hareket şu, orada daha derine gideyim. Yani aramasının derinlikleri ne yapabilir? Ayarlayabilir sizden öğreneceği istatistiklerle. Anlatabildim mi? Yani büyük ihtimalle yapacağınız hareketin devamındaki ağacı daha uzatabilir.
+
+427
+01:51:38,355 --> 01:51:58,135
+Daha küçük olasılıkla yapacağınız taraftakinin derinini ne yapabilir? Azaltabilir. Bu da bir şekilde sizinle oynadıkça stratejisini, bir şekilde arama stratejisini değiştirmesini, iyileştirmesini, size karşı oynamayı öğrenmesini sağlayabilir.
+
+428
+01:51:58,775 --> 01:52:05,895
+Cenerik olarak oyunu oynamak değil de size karşı oynamayı da öğrenebilir. İnsanlar da bunu yapabilirler tabii ki.
+
+429
+01:52:06,707 --> 01:52:17,707
+Şimdi, öğrenme demişken, Deep Blue'nun değerlendirme fonksiyonundan...
+
+430
+01:52:17,971 --> 01:52:39,311
+Birazcık bahsetmiştik, değerlendirme fonksiyonundan bahsetmiştik daha doğrusu ama dip blonunkiden bahsetmiştik. Dip blonun değerlendirme fonksiyonu şurada gördüğünüz gibi bir fonksiyon aslında. Şu p bir tahta, o tahtanın çeşitli f'ler var. Demin bahsetmiştik. Tahtanın kontrolü, sen demin taşların puanlarına göre senin avantajın nedir, ne değildir vs. vs.
+
+431
+01:52:39,828 --> 01:53:06,288
+Bunlar hep sabit olarak, sabit demeyelim de hani uzman kişiler tarafından, insan uzmanlar tarafından belirlenen fonksiyonlar. Şu başındaki W'lar ise bunların ağırlıkları. Bu ağırlıkların ne olacağını Deep Blue'yu öğrenmiş. Yani uzmanlar söylememişler bu ağırlıkların ne olması gerektiğini ama kendisi öğrenmiş. Kendisi öğrenmiş derken bu öğrenme işlemini nasıl gerçekleştirmiş?
+
+432
+01:53:07,572 --> 01:53:19,572
+Yaptıkları şey şu, satanlık tarihçesi oldukça eskilere kadar gidebiliyor. Çok eski zamanlarda oynanmış oyunların bile kayıtları mevcut o manada.
+
+433
+01:53:19,572 --> 01:53:27,572
+Dolayısıyla tarihteki çok çok iyi insanların oynadıkları bir sürü oyun var. Binlerce, on binlerce belki oyun.
+
+434
+01:53:27,667 --> 01:53:48,108
+Ve orada işte oyundaki her an benim de yer aldım. Mesela şöyle bir durumda bu iyi olan insanlar şu hareketi yaptı, şu durumda şunu yaptı, şu durumda şunu yaptı gibisinden bir database var ellerinde. Daha sonra bu durumda bunu yaptığı sağlayacak W'ları ne yapıyorlar? Optimize ediyorlar. Anlatabildim mi yaptıkları işe?
+
+435
+01:53:55,028 --> 01:54:04,468
+Dipbülüğü'nün içerisinde Kasparov'un da bir sürü oyunu var. Anlatabildim mi?
+
+436
+01:54:07,468 --> 01:54:21,968
+Yani dipbülüğü yaparken mühendisler daha önce satrancı çok çok iyi oynayan insanların oyunlarını simüle etmeye çalışmışlar.
+
+437
+01:54:24,979 --> 01:54:42,439
+İnsan uzmanların bilgilerini kullanarak bu işi gerçekleştirmişler. Tamam. Şimdi bu bir yaklaşım. Yani uzman bilgisini kullanarak hareket etmek. Bu benim gibi Deep Blue'da da kullanılan temel bir yaklaşım.
+
+438
+01:54:51,956 --> 01:55:10,615
+Kendi kendine oynamak. Sertle. Şimdi bu çeşitli bu konuda belgeselleri falan bile var. AlphaGo var, AlphaZero var vs. vs. bunun belgeselleri falan da vardı yanlış hatırlamıyorsam. Seyretmediyseniz de seyredin.
+
+439
+01:55:19,760 --> 01:55:41,539
+Satrancı oynarken ya da herhangi bir oyunu oynarken öyle diyelim, o oyunu iyi oynayan uzman insanların bilgisinden, o oyunu nasıl oynadıkları bilgisinden hiçbir şekilde faydalanmıyor. Yani oyunun kuralları makineye veriliyor, oyunun kuralları şunlardır. Şu durumda kazanırsın.
+
+440
+01:55:41,887 --> 01:56:06,007
+Böyle bir durumda kazanırsın, böyle bir durumda kaybedersin. Bunlar veriliyor. Ama uzman insanlar şu durumda şunu yaptılar ya da senin tahtanın değerlendirme fonksiyonu şöyle olmalı, yani eflerin şunlar olmalı gibisinden, yani tahtayı şunlara göre değerlendirmelisin gibisinden hiçbir bilgi yok içeride. Anlaşıldı mı? Önceki mekanizmanın ne kadar farklı olduğunu.
+
+441
+01:56:06,644 --> 01:56:20,224
+Bir tarafta iyi oynayan insanlardan faydalanmak var. Diğer tarafta ise, kendi kendine oynamakta ise böyle bir şey hiç yok. Sadece oyunun kurallarını biliyorsunuz.
+
+442
+01:56:22,364 --> 01:56:27,224
+Sert play ne? Sert play kendi kendine oynamak. Kendi kendine oynarken...
+
+443
+01:56:28,212 --> 01:56:43,492
+Yapılacak hamle, işte buradaki kritik algoritma Monte Carlo Tree Search algoritması. Detaylarla çok çok girmeyeceğim ama kabaca anlatmaya çalışacağım kavramsal olarak ne yaptığını.
+
+444
+01:56:45,192 --> 01:56:52,792
+Yapılacak hamleyi seçerken rastgele hareketlerle oyun sonuna kadar ilerliyor. Oyun sonucuna göre yaptığı hamleyi değerlendiriyor. Bu ne demek?
+
+445
+01:56:54,068 --> 01:57:19,407
+2006 başlangıçta Go ile popüler. Go oyununda işte Monte Carlo, Arama Ağaçları falan kullanıyor. Büyük Arama Ozalyo için tasarlanmış. Şimdi burası bakın kritik bir ima. Sınırlı bir derinlikteki her olasılığı denemek yerine bakın şimdi sınırlı bir derinlikte mükemmel hareketi bulmak istiyorsunuz siz. Bir derinlik belirliyorsunuz ve orada o mükemmel hareketi bulmaya çalışıyorsunuz.
+
+446
+01:57:21,108 --> 01:57:47,008
+O derinlik için. Bunun yerine Monte Carlo arama ağacında oyun bitene kadar rastgele hamlelerle ilerleniyor. Şimdi rastgele hamleyle ilerlersem bu sene ne sağlar ki? Yani rastgele hamle, yani karşı tarafta, yani karşı tarafta sensin, öyle söylüyor. Kendine oynuyorsun ya. Sen rastgele hareket etiyorsun, karşı tarafta rastgele hareket etiyorsun. Sen rastgele hareket etiyorsun, karşı tarafta rastgele hareket etiyorsun. En son oyun bitiyor.
+
+447
+01:57:48,243 --> 01:57:49,563
+Peki, ondan ne öğreneceksin?
+
+448
+01:57:51,463 --> 01:57:55,143
+Burada ki olay aslında şu.
+
+449
+01:57:56,383 --> 01:57:57,243
+Bu oyunu ben...
+
+450
+01:58:01,076 --> 01:58:07,476
+Mesela işte bir hamleyi yaptım. O hamleden sonrasını tamamen rastgele oynamaya başladım. Tamam mı?
+
+451
+01:58:08,176 --> 01:58:18,456
+Ve diyelim ki bin kez oynadım. Ve bin tane oyunun yedi yüz tanesini de kazandım, üç yüz tanesini de kaybettim.
+
+452
+01:58:19,576 --> 01:58:21,395
+Tamamen rastgele oynayarak ama. Tamam mı?
+
+453
+01:58:22,292 --> 01:58:38,764
+700'e 300 ise o zaman bu harekette bir şey var. Ama mesela işte 550 tanesine kazandım, 450 tanesine kaybettim. Burada birçok bir şey yok. Ya da işte 300 tanesine kazandım, 700 tanesine kaybettim. Burada da yine bir şey var. Tamam mı? Dolayısıyla...
+
+454
+01:58:38,996 --> 01:59:00,916
+Monte Carlo yöntemi zaten sayma üzerine bir yöntemdir. Monte Carlo'nun bir sürü şey var, uygulaması var. Arama ağacında Monte Carlo'yu kullanmak aslında defalarca rastgele oyna oynayıp o oynadıklarından bir istatistik çıkartıp bunu hareketin iyiliğini ya da kötülüğünü belirlemek için kullanılıyor.
+
+455
+01:59:01,235 --> 01:59:27,775
+Şimdi burada aslında Montekarlı'da A durumundayız. Yapabileceğim üç tane hamle var. Burada bir sınırlı bir derinlik seçiyorsunuz aslında. İlk önce küçük bir derinlik seçiyorsunuz. Mesela burada bu iki derinlik seçilmiş. G durumundayım ben. Şimdi G durumundayken yapabileceğim hamlelerden bir tanesi J tamam mı? Şimdi bu J hamlesinin iyi bir hamle olup olmadığını belirlemek istiyorum ben. Tamam mı? Bu J hamlesinin iyi bir hamle olup olmadığını belirlemek için
+
+456
+01:59:28,467 --> 01:59:44,187
+Oyun bitene kadar tamamen rastgele oynuyorum. Ama bunu binlerce kez yapıyorum. Şuradaki şu rastgele. Bu yaptığım işlem hiç de fazla zaman almıyor. Niye? Burada bakın hiçbir değerlendirme fonksiyonu şudur budur hiçbir şey yok.
+
+457
+01:59:44,724 --> 02:00:08,224
+Tamamen rastgele oynuyorum, iyi hareket etmeye çalışmıyorum hiçbir şekilde. Rastgele oynadığım için korkunç, hızlı bir şekilde oynuyorum. Zaten bilgisayar kendi kendine oynadığı için hani grafiktir, şudur budur gibisinden bir şeyleri hiçbir şekilde ihtiyar. Çok arka tarafta tahtalar var sadece. Tahtaların tefsirleri var. Rastgele korkunç, hızlı bir şekilde üretiliyor bunlar ve burada dediğim gibi binlerce oyun oynayıp o binlerce hareketin sonuçlarını
+
+458
+02:00:09,043 --> 02:00:30,684
+Alıp bu J hareketini yapmamın sonucunda ben 700 kere kazandım, 300 kere kaybettim. Bu bilgiyi alıp ne yapıyorsunuz siz? Yukarıya doğru yayıyorsunuz. Yukarıya doğru yaydıkça bunu, yani burada işte G'nin iyiliğini etkiliyor, bu B'nin iyiliğini etkiliyor, bu B'nin iyiliği de işte bu hareketi yapmanın iyiliğini etkiliyor.
+
+459
+02:00:31,604 --> 02:00:35,863
+Dolayısıyla yapılan işlem tamamen şey üzerinden.
+
+460
+02:00:36,340 --> 02:00:42,300
+Rastgele hareketler üzerinden bir istatistik çıkartmayı kullanıyor.
+
+461
+02:00:43,199 --> 02:00:49,900
+Şimdi, burasının geçen çok kritik değil. Oyun algoritmanında temel yaklaşım bu.
+
+462
+02:00:49,900 --> 02:00:54,539
+Ve işin güzel tarafı burada, paralelleştirmesi çok kolay.
+
+463
+02:00:55,720 --> 02:00:57,579
+Tamamen rastgele bir şey yaptığınız için.
+
+464
+02:00:58,931 --> 02:01:21,252
+Yani şuradaki şu simülasyonu binlerce makinayı rahatlıkla dağıtabilirsiniz. Çünkü birbirini bekleyen, birbirini tetikleyen hiçbir süreç yok burada. Binlerce makine derken, binlerce CPU ya da GPU artık neyse bu, onların üzerine dağıtabiliyorsunuz. Bu da işi dediğim gibi aşırı derecede şüphareleştirilebilir olması çok kolaylaştırılıyor.
+
+465
+02:01:23,292 --> 02:01:23,931
+Şimdi.
+
+466
+02:01:28,243 --> 02:01:54,663
+Tekrardan dipgülü kısmına dönüyoruz. Ya da makinaya dönüyoruz öyle söyleyeyim. Makinaların satraşta insanlara gelmeleri bir şey ifade eder mi, etmez mi? Bunun üzerine çok tartışmalar var. Yani kimisi diyor ki dipgülü ya da işte sizin alfa go'nuz her neyse. Bunlar, buradaki olay aslında yenem tasarımcılar ve teknoloji aslında yapılan sadece özel bir hesap makinesi.
+
+467
+02:01:55,539 --> 02:02:09,380
+Öteki taraftan işte birim MacDermott bu dip blonun ekibindeki birisi. Dip blonun gerçekte saptanışlar anlamadığını söylemek, bir uçağın kanatlarını çırpmadığı için uçmadığını söylemeye benzer.
+
+468
+02:02:09,380 --> 02:02:21,039
+Şimdi bu lafın şeyi, ne derli ona? Anlatmak istediği şey.
+
+469
+02:02:22,804 --> 02:02:39,184
+Bir probleme, illa onun doğadaki çözümünü kullanarak yaklaşmamız şart değil. Biz ondan daha farklı ve daha iyi belki çözümler bulabiliriz. Bunu söylüyor.
+
+470
+02:02:39,844 --> 02:02:50,064
+Nereden buraya atladım? Şimdi Deep Blue ya da AlphaGo ya da AlphaZero neyse makine diyelim. Satrancı ya da herhangi bir oyunu.
+
+471
+02:02:50,384 --> 02:03:17,284
+İnsanların oynadığı gibi oynamıyor. Kesin. Yani ne bileyim Kasparov kırk kat ileriye bakarak falan bir arama yapmıyor. Kafasında bir arama ağacı oluşturup dev gibi onun üzerine bir şeyler yapmıyor. Ya da Alfa Zero falan gibi random simülasyonlarla milyonlarca simülasyonla bir şeyleri yapmıyor. İnsanların kesinlikle farklı oynuyorlar. Tamam mı? Burası belli.
+
+472
+02:03:17,716 --> 02:03:20,775
+Ama insanlar daha iyi oynuyorlar. Burası da belli.
+
+473
+02:03:21,956 --> 02:03:25,836
+Şimdi burada Drew McDermott'ın dediği şey de buna denk geliyor.
+
+474
+02:03:25,836 --> 02:03:31,395
+Yani hani demin dedim ya, kuşlar kanat çırparak uçluyorlar.
+
+475
+02:03:32,456 --> 02:03:36,176
+Kanat çırparak uçluyor. Yani uçma problemi ne?
+
+476
+02:03:36,815 --> 02:03:41,771
+İlla kuşlarınki gibi ya da doğanın bulmuş olduğu...
+
+477
+02:03:42,228 --> 02:04:03,828
+Gözlemlediğimiz çözümlerle yaklaşmamız şart değil. Başka türlü şekillerde de bu işi yapabiliriz. Derdimiz uçmaksa uçuyor. Kuşlardan daha mı hızlı uçuyor? Evet. Satrendi insanlardan daha mı yoğunluyor? Evet. Onlar gibi mi yapıyor? Hayır. Ama derdimiz zaten o problemin kendisini çözmek. O yüzden oraya takılmayalım. Ondan bahsediyor.
+
+478
+02:04:10,131 --> 02:04:31,652
+Uzaylılar dünyaya gelse bize satranışa meydan okusalar. Hakikaten geliyor uzaylılar, diyorlar ki biz geldik size bir şans veriyoruz. Bizden önce geldiklerine göre bizden ileri bir teknolojiye sahipler epey var ama diyorlar ki size bir şans vereceğiz. Size bir satranış oynayacağız. Satranış maçı sonucunda biz kazanırsak dünyanızı yok edeceğiz.
+
+479
+02:04:33,779 --> 02:04:38,260
+Siz kazanırsanız da gideceğiz. Bir daha da gelmeyeceğiz. Söz.
+
+480
+02:04:39,819 --> 02:04:45,619
+Şimdi böyle bir durumda kavuşmaya Deep Blue'u mu gönderirseniz Kasparov mu gönderirseniz?
+
+481
+02:04:46,899 --> 02:04:47,399
+Soru bu.
+
+482
+02:04:48,779 --> 02:04:49,380
+Ne dersiniz?
+
+483
+02:04:52,884 --> 02:05:06,603
+Bu bir savaşa elinde silah varken yumrukla koşmaya benziyor. Elimizde dipbülü varken niye kullanmayalım derdim ben. Çünkü o da bizim bir ürünümüz nihayetinde.
+
+484
+02:05:07,683 --> 02:05:15,743
+Tamam canım, sonuçta gönderebilirsin. Dipbülü'ü de gönderirsin, Kasparo da gönderilirsin. Dipbülü'ü göndermek daha mantıklı olur diyorsun. Başka fikirler?
+
+485
+02:05:17,743 --> 02:05:19,243
+Bir elektrik kesintisi olmayacak.
+
+486
+02:05:32,275 --> 02:05:34,275
+Başka kimse bir şey söylemiyor mu ya?
+
+487
+02:05:36,775 --> 02:05:38,775
+Hocam ben de Deep Blue'yu gönderirdim.
+
+488
+02:05:39,775 --> 02:05:40,775
+Niye?
+
+489
+02:05:41,775 --> 02:05:43,435
+Yani hocam çünkü daha iyi.
+
+490
+02:05:50,100 --> 02:05:54,220
+Peki, Deep Blue'yu gönderiz diyorsunuz. Peki.
+
+491
+02:05:55,500 --> 02:06:11,700
+Hocam, siz böyle deyince aklıma şey geldi. Bu Deep Blue'yu insanlardan öğrenmişse ve başka tekniklerle oynayacaklarsa uzaylılar, bence Kasparov'un uyması, ayak uydurması daha hızlı olabilir onlara.
+
+492
+02:06:12,340 --> 02:06:15,520
+Yani onların hareketlerini daha iyi analiz edebilir makineye göre.
+
+493
+02:06:15,855 --> 02:06:18,115
+Çünkü makine insanlara göre tasarlanmış.
+
+494
+02:06:19,555 --> 02:06:24,975
+İnsan satranç oyuncularının oyunlarına bakarak tasarlanmış.
+
+495
+02:06:25,456 --> 02:06:30,456
+Evet, dipgülü. Evet, Kasparov belki başka tekniklere göre daha...
+
+496
+02:06:30,456 --> 02:06:41,235
+Tamam, peki o zaman şey yapalım. Bu dediğin nokta doğru olabilir. O zaman dipgülü demeyelim de şey demeyelim, mesela alfa ziro diyelim.
+
+497
+02:06:42,515 --> 02:07:06,815
+Alfa Zira şeye bakmıyor. Hiçbir insan bilgisi yok içerisinde. İnsan satranç oynamışlığı yok onun içerisinde. Anlatabildim mi? Evet. O zaman daha çok güvenirim hocam. Yani oyunu çözmüş o daha çok insanlardan ziyade. İnsanlar gibi oynamıyor. Peki tamam. Evet başka fikir var mı?
+
+498
+02:07:10,068 --> 02:07:37,068
+Peki, devam edelim. Şimdi, Deep Dote, Deep Blue'un bir önceki versiyonu. Yani Deep Blue 97, Deep Dote 96 falan herhalde. Oldukça iyi bir satranç motoru. Grandmaster seviyesinde gibi çok...
+
+499
+02:07:37,279 --> 02:08:01,119
+İnsanı yenmiş bir makine. Bu makine ya, şu tahtayı verdiğimizde. Şimdi satıraşlar anlayanlar, anlamayanlar vardır illaki ama şöyle bir şey söyleyeyim. Şimdi burada oyun sırası beyaz da ve dipdot da beyaz. Gidiyor şurada, şu kaleyi alıyor dipdot. Tamam, şu piyonla şu kaleyi alıyor.
+
+500
+02:08:02,003 --> 02:08:20,623
+Şimdi normalde bu satranç tahtasının şu anki hali şöyle bir şey. Beyaz hiç bu ne diyeyim, baraj diyeyim buna. Bu barajı bozmazsa, tamam şu barajı bozmazsa siyahların bu tarafa geçme ihtimali yok.
+
+501
+02:08:22,996 --> 02:08:45,996
+Yani siyahlar hiçbir şekilde bu beyazların oluşturduğu barajı aşamazlar şu anda. Görüyor musunuz? Zaten oynayanlar görüyorlar. Ama gidip bu hareketi yaptığı anda, şu hareketi yaptığı anda bu barajı ne yapmış oluyor? Yıkmış oluyor. Ve bunu yıktığı anda...
+
+502
+02:08:47,028 --> 02:08:52,868
+Buradaki siyah birliklerin hepsi buradan geçip artık oyunu kesinlikle siyah kazanacak.
+
+503
+02:08:53,328 --> 02:08:55,608
+Yani bunu yapması çok büyük bir hata.
+
+504
+02:08:56,608 --> 02:09:01,048
+Şimdi tabii bu insanların yapmayacağı bir hata.
+
+505
+02:09:01,248 --> 02:09:06,252
+Yani burada şöyle bir durum varken gidip bunu açıp da...
+
+506
+02:09:06,420 --> 02:09:26,199
+Buradan hani surda bir gedik açtık vardır ya hani öyle bir gediyi açıp kendi elinle bunu yapmak çok büyük bir hata. Ve bunu insanlar çok kolay fark ediyorlar. Tamam mı yani? İnsanlar böyle bir hata yapmıyorlar. Yani amatör seviyedeki insanlar bile böyle bir hata yapmıyorlar. Böylece grub master falan olmasa gerek yok. Ama dipdolat yapıyor.
+
+507
+02:09:27,123 --> 02:09:40,403
+Bunu çözmek için ne yapabilirsiniz? Yeni bir F ekleyebilirsiniz. Eğer ki şey kullanıyorsanız, derlerine fonksiyonu kendisi tasarlıyorsanız yeni bir F ekleyebilirsiniz. Olabilir yani bir barajı bozma falan.
+
+508
+02:09:42,036 --> 02:10:06,216
+Ona eklediniz, mesela böyle bir tahtaya geçelim. Böyle bir tahtada da aslında yapılması gereken şey şu, baraj yok. Barajın oluşmasından bir an öncesi var. Şu fili alıp şuraya koyarsanız o barajı oluşturmuş olursunuz ve bundan sonra zaten oyunu şeye götürebilirsiniz, beraberliğe götürebilirsiniz. Hiçbir şey olmuyor. Yani barajı bozmamanın yanına bir de bu da barajı oluşturma üzerinden bir efekt verebilir.
+
+509
+02:10:07,796 --> 02:10:33,596
+Ama tabii burada bir soru şu, nereye kadar bu iş yapabiliriz? Şimdi bu sorular, niye ilk önce size böyle bir soru sordum da daha sonra şunları gösteriyorum. Şimdi buradaki tahtalar bakın, standart bir satranç maçında karşınıza çıkacak tahtalar değiller. Yani dipdot niye burada oluyor ki? Dipdot Grandmaster'ları gelen bir program bakın. Tamam mı?
+
+510
+02:10:34,771 --> 02:10:57,091
+Ama normal satranç oyununda inanmıyor. Bu gördüğünüz şeyler satranç oynamak değil. Bunlar satranç problemi. Satranç ilgi vermeniz varsa yine bilirler. Mesela işte bunlar ütopik tahtalar. Satranç oynarken böyle bir tahta oluşamaz. Tamam mı? Ve böyle bir durumu daha önceden ne yapmış olamaz?
+
+511
+02:10:57,684 --> 02:11:21,804
+Gözlemlemiş ve buna göre hareket etmeyi öğrenmiş olamaz sistem. Anlatabildim mi problemi? Yani gerçek satranç oynarken çok iyi oynayacak. Çünkü gerçek satrançta oluşabilecek durumları ya da ona benzeyen bütün durumları aşağı yukarı görmüş geçirmiş. Ama burada yepyeni tamamen ütopik bir tahtadan bahsediyoruz.
+
+512
+02:11:22,579 --> 02:11:26,480
+Böyle bir durumda ne yapması gerektiğine dair bir şey yok elinde.
+
+513
+02:11:27,000 --> 02:11:28,940
+Dönesi çok fazla yok.
+
+514
+02:11:29,560 --> 02:11:31,739
+Ve derinliğin de fazla olması gerekiyor.
+
+515
+02:11:31,739 --> 02:11:33,220
+Yani şunu demek istiyorum.
+
+516
+02:11:35,100 --> 02:11:38,579
+Şu kadar derine git falan diye bir sınır koyuyoruz ya mecburen.
+
+517
+02:11:39,420 --> 02:11:43,659
+Burada kötü sonu görebilmek için derinliğin biraz fazla olması gerekiyor.
+
+518
+02:11:44,199 --> 02:11:49,359
+Ama buradaki olay aslında birazcık şey.
+
+519
+02:11:49,971 --> 02:12:04,192
+Mesela Kasparov falan hayatında böyle bir tahtayı hiç görmemiş olsa bile, böyle bir tahtada böyle bir hatayı yapar mı? Kasparov olmaya bile gerek yok dediğim gibi. Amatör bir satranç oyuncusu bile bu hatayı yapmayacaktır.
+
+520
+02:12:05,452 --> 02:12:17,412
+Uzaylılar kısmına geri dönelim. Diyelim ki uzaylılarla oynamaya işte Alfa Zero'yu gönderdik.
+
+521
+02:12:17,887 --> 02:12:35,547
+Tamam mı? Sonra dediler ki bize, bizim satranç dediler sizin sekizde sekizlik tahtadaki gibi değil de, biz mesela onu on ikiye, on altıya on altılık bir tahtada oynuyoruz. Ve taşlar da şöyle şöyle der. Tamam mı?
+
+522
+02:12:37,608 --> 02:12:44,528
+Böyle bir değişikliğe adapte olma noktasını düşünelim şimdi. Tamam mı?
+
+523
+02:12:45,555 --> 02:12:49,275
+Bu durumda oraya Al-Fazir'i göndermese pişman olur musunuz?
+
+524
+02:12:58,963 --> 02:13:03,363
+Oluruz herhalde hocam. Çünkü o da onu bilmiyor daha. Öğrenmemiş.
+
+525
+02:13:04,783 --> 02:13:14,043
+Peki Kasparov 8'e 8'likte eski dünyanın şampiyonu bu 16-16'lık oyunda adapte olması kolay olur mu onun için?
+
+526
+02:13:15,844 --> 02:13:17,363
+Daha kolay olur hocam.
+
+527
+02:13:17,923 --> 02:13:21,903
+Çok çok daha kolay olacaktır değil mi? Makinenin ona adapte olmasıyla.
+
+528
+02:13:22,836 --> 02:13:41,456
+Kasparum'un adapte olması arasında korkunç bir fark olacaktır. Yepyeni bilinmeyen bir durum, tabii ki bilinmeyen bir durum. Ama bu durumdaki adaptasyon kabiliyeti noktasında makineler henüz o seviyede değiller.
+
+529
+02:13:43,296 --> 02:13:49,456
+Yani orada şöyle bir şey istek, bize bir ay falan bir müsaade edin.
+
+530
+02:13:49,792 --> 02:14:16,792
+Bunu bizim makine öğrensin deme şansımız olursa makineyi o yeni durumda oynatmak makul bir şey olabilir. Ama 5 dakika içinde oyun başlayacak. Böyle bir durumda Kasparov'un öyle bir oyuna adapte olma kabiliyeti çok çok daha, bir insanın yanı daha doğrusu, sıradan bir insanın bile öyle söyleyeyim. Adaptte olma kabiliyeti çok çok daha yüksek olacaktır.
+
+531
+02:14:18,484 --> 02:14:39,484
+Hocam, ben zaten şey duymuştum. Dünyadaki en yüksek IQ'lu insanlar genellikle satrançlılar oluyordu. Siz niye bu kadar satranç öğrenmeye çalışıyor makineler demişsiniz de şey düşünmüştüm bir de. O zeki insanlardan da zeki onları bu oyunda yenebiliyor gibi. Ama işte bizdeki IQ'nun yüksek olması belki her türlü...
+
+532
+02:14:40,083 --> 02:14:50,723
+İlk defa karşılaştığımız duruma daha hızlı adapte olmayı sağlarken makinelerdeki bu öğrenme belirsiz, sadece o oyunda bir alanda spesifikleşme üzerine gibi anladım şimdi. Siz bir de böyle deyince.
+
+533
+02:14:51,323 --> 02:15:03,283
+Evet, yani dediğim bir şey bu aslında adaptasyon kabiliyeti öyle söyleyeyim. Yepyeni bir durumda çok saçma sapan davranmamak. O duruma hızlı adapte olabilmek.
+
+534
+02:15:03,923 --> 02:15:15,764
+Tabi son dönemki belli yeni yaklaşımlarla belli adaptasyon kabiliyetlerinin sağlanabildiğini görebiliyoruz.
+
+535
+02:15:16,787 --> 02:15:41,408
+Ama tabii bu adaptasyon kabiliyetlerinin range'i çok çok aşırı derecede yüksekmiş gibi görünmüyor şimdilik. İleride ne olur bilmiyoruz. Ama şimdisi için hep konuşabilirim en fazla. Şu anda adapte olma kabiliyeti açısından evet insanlar çok çok daha iyiler.
+
+536
+02:15:45,140 --> 02:16:02,220
+Evet, bunlar var. Reinforcement Örneği daha sonra zaten oyunlarda kullanılan, şu anda en temelde kullanan yaklaşılan bir tanesi. Bu dersin içerisinde yok, bu sayhtarın içerisinde yok. Ama daha sonra karşımıza çıkacak makine öğrenmesini. Üçüncü partında onu size anlatacağım.
+
+537
+02:16:02,600 --> 02:16:11,120
+Peki arkadaşlar, bugünkü dersimiz bu kadar. Sorularınız varsa almak isterim. Bu dersle alakalı ya da ödevler alakalı.
+
+538
+02:16:15,956 --> 02:16:21,716
+Hocam ben şey sorabilir miyim? Final yüzde olduktan sonra bir ağırlıkla değişiklik yok değil mi?
+
+539
+02:16:25,395 --> 02:16:31,455
+Şu anda evinizi yapmadım ama yaparsam size haber vereceğim. Sizin hareketinizi etkileyecek bir şey değil bu zaten.
+
+540
+02:16:38,195 --> 02:16:39,115
+Başka?
+
+541
+02:16:45,075 --> 02:17:04,595
+Hocam, bunlar üzerine çalışma var mı? Mesela insanların neden bir olaydan daha fazla çıkarım yaptığı üzerine? Yani makineler de böyle öğrenebilir mi diye. İnsanlar çünkü hiçbir zaman o kadar milyar tane, milyon tane oyun oynamıyor ama daha fazla şey öğreniyorlar yani bir oyunda büyük ihtimalle.
+
+542
+02:17:06,735 --> 02:17:08,955
+Var tabii ki var. Var da.
+
+543
+02:17:09,343 --> 02:17:28,423
+Buna sample efficiency deniyor. Yani ne bileyim ben, bir insanın bir kediyi tanıması için milyonlarca kedi resmi görmesi gerekmiyor.
+
+544
+02:17:29,483 --> 02:17:34,123
+Ya da satrancın iyi oynaması için milyonlarca kez oyun oynaması gerekmiyor. Değil mi?
+
+545
+02:17:34,932 --> 02:17:47,711
+Bunu biliyoruz. Bunu ne sağlıyor? Noktası üzerine epey sağlam çalışmalar var ama çözele geçmiş bir şey değil.
+
+546
+02:17:47,711 --> 02:17:52,572
+Ama bu konu üzerinde çok sağlam çalışmalar var.
+
+547
+02:18:00,948 --> 02:18:03,108
+Evet, başka soru soran.
+
+548
+02:18:12,915 --> 02:18:17,315
+Sosyal birisi vardı ödevle alakalı.
+
+549
+02:18:28,051 --> 02:18:38,612
+Peki o zaman arkadaşlar, bunu bir bu kadar. Hepinize çok teşekkür ediyorum. Haftaya görüşmek üzere diyorum kısmetse.
+
+550
+02:18:40,031 --> 02:18:40,731
+İyi günler hocam.
+
+551
+02:18:41,072 --> 02:18:41,772
+İyi günler.
