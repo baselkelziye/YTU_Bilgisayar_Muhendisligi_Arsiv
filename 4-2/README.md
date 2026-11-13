@@ -66,6 +66,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Bitirme Çalışması Ders Kayıtları](../Bitirme%20%C3%87al%C4%B1%C5%9Fmas%C4%B1/ders_kayitlari/) ✨
 - 📄 **Proje:** [Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=jdYA1Jk1HWM&ab_channel=YunusKaratepe) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
