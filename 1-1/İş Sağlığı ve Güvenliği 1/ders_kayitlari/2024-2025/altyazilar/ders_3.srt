@@ -1,0 +1,1411 @@
+1
+00:03:13,460 --> 00:03:15,020
+Evet, merhaba arkadaşlar.
+
+2
+00:03:17,840 --> 00:03:24,520
+Geçen hafta eğitim saatiyle alakalı sanırım bir sıkıntı vardı. Ondan dolayı bir araya gelemedik.
+
+3
+00:03:25,319 --> 00:03:32,200
+Bu hafta kısmet olursa derslerimize ve iş sağlığı, güvenliğindeki süreç serüvenimize hep beraber başlayacağız.
+
+4
+00:03:33,100 --> 00:03:39,000
+Başlamadan önce hem sunumu hazırlarken hem de birkaç arkadaşımızın daha gelebilmesiyle birkaç dakika daha bekleyeceğim.
+
+5
+00:03:41,075 --> 00:03:42,536
+Dersimize başlamış olacağız.
+
+6
+00:04:20,115 --> 00:04:26,495
+Aramızda yapay zeka mühendisliğinden kimse var mı? Sadece bilgisayar mühendisliğinden var. Hangi bölümler var şu an burada?
+
+7
+00:04:31,668 --> 00:04:39,987
+Ben yapay zeka sınıfından da arkadaşlar gönderdiğim bağlantı linkiyle rahatlıkla katılabilirler değil mi?
+
+8
+00:04:43,427 --> 00:04:44,807
+Galiba hocam ben oradan katılırım.
+
+9
+00:04:45,447 --> 00:04:46,228
+Tamam çok güzel.
+
+10
+00:04:46,228 --> 00:04:48,228
+Çünkü...
+
+11
+00:04:49,055 --> 00:05:16,015
+Bizim online platformumuzda bilgisayar mühendisliği sınıfı ve onun süreci kayıtlı. Sizin taraf tanımı değil. Geçen hafta sizinle dersimizi işleyebildik ama bilgisayar mühendisliğindeki bu ders saati çakışmasından dolayı işleyememiştik. O yüzden bu hafta başlarken ilk hafta konuyu tekrar ederek başlayacağız. Ardından zamanımız kalırsa ikinci haftanın konusuna da başlayarak devam edeceğiz. Sunum şu an geldi mi? Ekranlarınıza görebiliyor musunuz?
+
+12
+00:05:17,812 --> 00:05:18,432
+Teşekkürler.
+
+13
+00:05:26,803 --> 00:05:28,383
+Evet, ekrandan görebiliyor musunuz?
+
+14
+00:05:31,303 --> 00:05:32,463
+Evet, görünüyor.
+
+15
+00:05:32,883 --> 00:05:36,163
+Tamam, çok güzel. Arkadaşlar, sunuma geçmeden önce kendimden bahsedeyim.
+
+16
+00:05:37,024 --> 00:05:43,963
+Akbey Elçi ben. 2014 yılından beri İş Sağlığı ve Güvenliği bölümünde derslere girmekteyim.
+
+17
+00:05:43,963 --> 00:05:46,963
+Aynı zamanda Akya, Health and Safety, HECS diye bir...
+
+18
+00:05:48,148 --> 00:05:59,468
+kurduğum Yıldız Teknoparkı'da yer alan bir firma ve bir girişimim var. Daha önce yurt dışında ulusal ısı projelerde iş sağlığı, güvenliği ve enerji ve elektromekanik sistemlerin
+
+19
+00:05:59,903 --> 00:06:13,963
+yürütücülüğünü ve yöneticiliğini yaptım. Şu anda hali hazırda Dünya Bankası'nın enerji projelerini ve aynı zamanda da iş sağlığı, güvenliği ile alakalı süreçleri yapmaya devam etmekteyiz.
+
+20
+00:06:14,564 --> 00:06:18,324
+Üçüncü havalimanının ilk kurulduğu zamanki danışmanlarından bir tanesi bendim.
+
+21
+00:06:18,771 --> 00:06:34,591
+Üçüncü köprü, Avrasya Tüneli, Marmaray, O Halen'in hızlı tren hattı gibi Türkiye'deki büyük projelerde yine iş sağlığı, güvenliği tarafında süreçlerin yönetilmesi konusunda kendim ve ekibimle beraber oradaki süreçleri yönettim.
+
+22
+00:06:34,591 --> 00:06:38,591
+A sınıfı iş güvenliği uzmanıyım. Aynı zamanda da...
+
+23
+00:06:41,427 --> 00:06:50,567
+Sağ süreçlerini bu anlamda yönetmekte ve yürütmeye devam etmekteyim. Bu konuyla alakalı yazılmış bir kitabım ve bir dergide de köşe yazımı bulunmakta.
+
+24
+00:06:52,067 --> 00:06:58,268
+10 yıldan fazla süredir de iş sağlığı ve güvenliği üzerine hem sağ çalışmaları hem de akademik çalışmaları yapmaya devam etmekteyim.
+
+25
+00:06:58,707 --> 00:07:03,827
+Kısmet olursa bu yılda sizlerle beraber iş sağlığı ve güvenliği süreçlerini birlikte yürüteceğiz.
+
+26
+00:07:09,427 --> 00:07:26,088
+karşılıklı, interaktif olmasını planlamaktayım. Önce mevzuat çerçevesindeki müfeyat konularımızı, ardından da örnek yaptığımız işlere dair vakaları ve bunların hukuki süreçlerini değerlendireceğimiz bir süreç olacak.
+
+27
+00:07:26,088 --> 00:07:37,088
+Çok ezbere dayalı yapılar ve olan süreçleri çok aslında tercih etmiyor ve sevmiyorum. Onun yerine mantığını kavradığımız neyin neden olduğu, nedensellik...
+
+28
+00:07:37,427 --> 00:07:44,927
+sonuç ilişkisinin birbiriyle örtüştüğü süreçlerin daha akılda kalıcı ve daha sağlıklı olacağını düşünmekteyim.
+
+29
+00:07:45,468 --> 00:07:55,327
+Sadece bunu bir ders gibi düşünmenizi çok da istemem. Evet, geçmeniz gereken belki bir ders olabilir ama ve lakin bu dersin sonucunda size katacağı emin olun çok şey olabilecektir.
+
+30
+00:07:55,327 --> 00:08:05,427
+Sadece bu iş sağlığı, güvenliği anlamıyla ilgili kendi mesleğinizi icra ederken mesleğinizle alakalı kullanabileceğiniz süreçler de bu dersin çerçevesi içerisinde irdebiliriz.
+
+31
+00:08:05,427 --> 00:08:20,768
+Çünkü sahanın içerisinden gelen biri olarak bunu da çok da görebiliyorum. Çünkü bu konuyla da alakalı ciddi anlamda bir ihtiyaç da var. İş Sağlığı ve Güvenliği süreçleriyle ilgili ciddi yazılım ihtiyaçları ya da teknolojiyle alakalı süreç yazılımlarımız devam ediyor.
+
+32
+00:08:24,468 --> 00:08:42,048
+UpGant, yani bir saçları kıvırma makinesinin önündeki sensör ve o sensörün arka planındaki yazılım, aslında baktığınız zaman bir iş güvenliği önlemi gibi görünse de aslında arka planında elektronik bir sistem ve bir yazılımla ikleniyor ve destekleniyor.
+
+33
+00:08:43,668 --> 00:08:52,048
+Yine bariyer sistemleri, yine RFID sistemlerini kullandığımız yapılarla, iş makineleriyle o iş makinesini...
+
+34
+00:08:52,467 --> 00:09:20,467
+Bu sistemlerin hem elektronik altyapısı ayrı bir alan hem de bunların yazılımla ilgili tarafları bambaşka bir alan. Onun haricinde hala daha hala hazırda kullandığımız sistemlerin içerisinde her kurumun kendisine göre kullanacağı temel yazılım ihtiyaçları ya da oradaki süreçle alakalı kendi teknolojisini buna uygulayabilir.
+
+35
+00:09:20,467 --> 00:09:36,887
+İhtiyaçlar da mevcut. Bu mevzuata başladığınız zaman ve girdiğiniz zaman iş sağlığı ve güvenliği süreçinin içerisinde geniş perspektiften baktığımız zaman, evet hem kendimizi hem çevremizi korumak adına, hem sağlıklı bir şekilde çalışmak adına, hem yasal olarak zarviyetlerimizi bilmek adına
+
+36
+00:09:37,395 --> 00:09:51,015
+Bu süreçleri değerlendireceğiz ama bir yandan da bu sürecin içerisindeki farklı geliştirmeye açık fırsatları da görebilme eğilimine girdiğimiz takdirde o zaman sürecimiz daha sağlıklı bir zemine oturacaktır.
+
+37
+00:09:51,096 --> 00:10:00,000
+Çünkü ben sahanın içerisinde bunun çok büyük bir ihtiyaç olduğunu görüyorum. Bununla alakalı çözüm önerisi getiren firmalar çok hızlı bir şekilde...
+
+38
+00:10:00,000 --> 00:10:15,220
+büyüyüp çok hızlı bir şekilde dönüş alabiliyorlar. Çünkü işin ucunda can sağlığı var ve hatta şu an piyasada yapılan birçok güvenlik önlemeyle alakalı süreçlerin tamamının kökünde temelinde iş sağlığı, güvenliği süreçleri bulmakta.
+
+39
+00:10:17,039 --> 00:10:20,759
+Şimdi bununla alakalı baktığımız zaman teşekkür ederim.
+
+40
+00:10:23,988 --> 00:10:34,988
+İlk olarak aslında bir sürecin temelinden, kökünden inerek ilerlememiz gerekiyor. Bu sürecin tarihsel gelişimine baktığımız zaman, tarihsel gelişiminde...
+
+41
+00:10:36,019 --> 00:10:53,900
+3 döneme ayırmak doğru olabilir. Sanayi devrimi öncesindeki süreç. Çünkü ondan önceki süreçte avcı, toplayıcı, dönem, ondan sonra yerleşik hayata geçmiş insan tarihi boyunca, evet yine iş güvenliği önemli bir haldeydi. Acaba o zamanlar hangi seviyede ve neler yapılıyordu?
+
+42
+00:10:56,299 --> 00:10:57,440
+Online toplantıda.
+
+43
+00:10:59,379 --> 00:11:17,519
+Sanayi devrimi döneminde süreçler nasıl ilerledi ve nasıl yürüdü ve günümüzdeki yaklaşım ve bu yaklaşım farklılık nelerdir ve bunlarla beraber dünyada bu işi yapan, çalışmalar yapan kurumlar, kuruluşlar, çalışma örgütleri nelerdir? Bunların üzerinden yavaş yavaş geçeceğiz arkadaşlar.
+
+44
+00:11:29,779 --> 00:11:34,779
+Yerli şikayete geçen bir toplum haline geçtik. Bu sürecin içerisinde de...
+
+45
+00:11:36,884 --> 00:12:04,884
+İş güvenliği noktasında da özellikle maden işlerini yapanlarda güvenlik alma ihtiyacının hasıl olduğu ortaya çıkıyor. Mesela şöyle düşünün, adam Çin setini yapıyor ama Çin setini yaparken oradaki sürecin içerisinde de insanların ölmesini adam şundan dolayı arzu etmez. Çünkü kendi işlerini kaybediyor, işçilerini kaybediyor. Oradaki emek gücünü kaybediyor ki hele emeğin yoğun bir şekilde çalışıyor.
+
+46
+00:12:04,884 --> 00:12:23,324
+Yardaki emeği kaybetmek çok daha telafisi zor bir süreçtir. M.Ö. 2000 yılına baktığımız zaman Hamurabi kanunlarında ilk olarak eğer bir işin yapımının sonucu negatifse bunun karşı tarafa da kısas ilkesiyle uygulanmasını emretmiştir.
+
+47
+00:12:23,423 --> 00:12:32,284
+Yani eğer ki bir kişi ev yapmışsa ve o evin çatısı çökmüş o altındaki kişi ölmüşse o evin müteahhitini de öldürüyorlar.
+
+48
+00:12:32,851 --> 00:12:55,832
+Kısasa kısas. Yani aslında bir yerde iş sağlığı ve güvenliğinde bu işi yapan kişinin ehemmiyetli ve doğru işi yapmasını, tekneye uygun iş yapmasını, sağlam iş yapmasını ortaya koyan o günün koşullarına göre normal, bugünün koşullarına göre de katı sayabileceğimiz kurallar çerçevesinde bu süreci uykuyor.
+
+49
+00:12:58,388 --> 00:13:09,148
+Bunun dışında Roma ve Mısır toplukları altın, gümüş ve kurşun madenlerinin çıkartılması çalışmalarında gene iş güvenliği ile alakalı çok ciddi sıkıntılar çıkıyor.
+
+50
+00:13:09,148 --> 00:13:11,019
+Şimdi tarihte bildiğimiz büyük...
+
+51
+00:13:11,220 --> 00:13:23,279
+Felsefeci, filozof, bilim adamlarına baktığımız zaman aslında bunların her birinin iş güvenliğine yönelik tespitlerinin ve çözüm önerilerinin olduklarını görebiliyoruz.
+
+52
+00:13:23,639 --> 00:13:26,920
+Mesela Aristoteles'e baktığımız zaman koşucuların hastalıklarından
+
+53
+00:13:27,700 --> 00:13:35,620
+Söz etmiş, gladiatörler için diyet tanımlamış. Yani gladiatörler diyet yaparlarsa daha sağlıklı bir vücuda ve fiyatı sahip olabilirler diye.
+
+54
+00:13:36,240 --> 00:13:48,480
+Herodoski tarihçiliğiyle ön plana çıkan, M.Ö. 484 yılında, 420 yılına kadar yaşamış bir filozof, bir tarihçidir.
+
+55
+00:13:48,480 --> 00:13:55,059
+İlk kez işçilerin yeterli besin verilmesinin üzerinde durmuştur. Ne kadar çok besin veriyorsan o kadar çok verim alabilirsin.
+
+56
+00:13:55,700 --> 00:14:02,039
+Aslında ilk o döneme göre belki de büyük sayılabilecek. Bugün için de baktığımız zaman normal.
+
+57
+00:14:02,440 --> 00:14:09,919
+Bu zaten bildiğimiz bir şey gibi de düşünebiliriz ama o günün koşullarına bakıldığı zaman demek ne kadar önemli olduğunu fark edebiliyoruz.
+
+58
+00:14:10,803 --> 00:14:21,783
+Aynı şekilde Hipokrates, ki biliyorsunuz tıbbın kurucularından sayılır, Hipokrat yeminiyle özellikle tıp camiasında adından söz ettirir.
+
+59
+00:14:22,083 --> 00:14:28,563
+İlk kez kurşunun zararlı etkilerinin üzerine durmuş, felç ve görme bozukluklarıyla kurşuna maruz kalma arasındaki ilişkiyi ortaya koymuş.
+
+60
+00:14:29,144 --> 00:14:38,803
+Sağlıkla ilgilendiği için. Peki kurşun nerede kullanıyoruz? O dönemde kurşun madeni üzerinden kullanılan ve yapılan el aletlerinden vesairesinden...
+
+61
+00:14:38,803 --> 00:14:46,103
+Bunlarla alakalı yapım sürecindeki kurşunun zararlı etkilerinden dolayı insanların görme bozuklarına ve ferç kaldıklarını tespit etmiş.
+
+62
+00:14:47,223 --> 00:14:54,803
+Yine Nikander, kurşunun zehirlenmesi, karın ağrısı, kabızlık ve yüz soğukluğu arasındaki ilişkiyi kesinleştirmiş.
+
+63
+00:14:54,803 --> 00:14:56,803
+Yani kurşun eğer bir kişiye maruz kalıyorsa...
+
+64
+00:14:57,683 --> 00:15:08,224
+Bu maruz kalan kişi de belirtiler olarak yüzde soğukluk, karın ağrısı, kabızlık vs. gibi süreçlerin başladığını ispat edebilmiş kişidir M.Ö. 200 yılında.
+
+65
+00:15:09,203 --> 00:15:19,344
+Pilatus, esnaf ve sanatkarların pozisyonlarının vücut genel görünümlerine etki ettiğini ortaya koymuş. Yani aslında ergonomiyle alakalı bir çalışma yapmış.
+
+66
+00:15:19,827 --> 00:15:26,067
+Pliny'de en çok gene eski bakanlık sınavlarında, uzmanlık sınavlarında sorulan bir bilim adamıydı.
+
+67
+00:15:30,004 --> 00:15:37,004
+Toz, tozu zararlı etkileri ve buna maruziyetin süreçlerini incelemiştir Plinyoze. Yani toz ve...
+
+68
+00:15:38,515 --> 00:15:42,555
+tozun etkileri yeni tarafından ortaya koyulmuştur.
+
+69
+00:15:43,355 --> 00:15:44,935
+Tabii bunlarla sınırlı kalmıyor.
+
+70
+00:15:44,935 --> 00:15:59,435
+M.S. 1494 yılında Agrikola'nın maden işçileriyle alakalı ilk yaptığı gözlemlerine tozun zararlı etkilerini ve bundan korumak için havalandırma yapmaları
+
+71
+00:15:59,923 --> 00:16:07,483
+ile işçilere maske taktırmayı önererek buradaki çalışanların sağlıklı bir yaşam sürmesine katkı sağlamayı hedeflemiş.
+
+72
+00:16:08,303 --> 00:16:12,583
+Aynı şekilde Paraselsus'ta gene madenlerde iş yeri hekimi olarak çalışmaya başlamış.
+
+73
+00:16:12,723 --> 00:16:16,723
+Madencilerin meslek hastalıkları ve koruma yolu hakkında kitap yazmış.
+
+74
+00:16:16,723 --> 00:16:19,627
+Ramazani bu adamın bazı...
+
+75
+00:16:19,700 --> 00:16:31,020
+İsimler önemli, onların üzerinde özellikle durarak gideceğim arkadaşlar. Ramazzini dediğimiz adam 1633 yılından 1714 yılına kadar duran İş Sağlığı ve Güvenliği'nin kurucusu olan bir hekim aslında.
+
+76
+00:16:31,760 --> 00:16:37,540
+İş güvenliğinin temel ilkelerini ve meslek hastalıkları işin yaptığı işle bağlantısıyla ilgili bir kitap yazmış.
+
+77
+00:16:37,540 --> 00:16:43,280
+Ve bu yazdığı kitapla İş Sağlığı süreçlerinin babası, kurucusu ünvanını almış.
+
+78
+00:16:45,043 --> 00:16:57,783
+Şimdi sanayi öncesi dönemde baktığımız zaman hani cılız da olsa insanların yaptığı işleriyle ilgili olarak meslek hastalığı yaşama durumları da ortaya koyulmuş.
+
+79
+00:16:59,187 --> 00:17:16,067
+Ama bununla beraber sanayi devrimi başladıktan sonra özellikle kadın, çocuk, genç ve yaşlı çalışan kişilerin de çalışma hayatına aktif katılımıyla beraber yaptıkları iş, yoğun çalışma saatleriyle beraber hastalandıkları ve iş yaparken kaza geçicileri ortaya çıkıyor.
+
+80
+00:17:16,067 --> 00:17:27,067
+Şimdi bunun artmasıyla beraber başlangıca çok önemli arz etmiyor çünkü işçiliği çok ama zaman içerisinde bunun artmasının maliyet kaybıyla beraber birleşince bunu engellemek için...
+
+81
+00:17:27,188 --> 00:17:49,668
+Çözümlerine gidiyor. Şimdi hep söyledim, iş güvenliğinin kuralları kanuna yazılmıştır diye. Her bir mevzuattaki standartın altında ya da müfredatta o süreçle alakalı muhakkak yaşanmış bir hikaye, süreçle alakalı bir yaşanmış örnek olay mevcuttur.
+
+82
+00:18:20,084 --> 00:18:44,604
+Evet. Şimdi Brezilya'da bir gece kulübünde yangın çıkıyor. Çıkan yangında insanlar can havliyle kendilerini kapıya doğru ileri atıyorlar. Önden insanlar kapıyı kendilerine doğru çekip açıp çıkmaya çalışırken arkadaki insanların da izlahımla beraber sıkıştırma sonucu kapıyı açamıyorlar.
+
+83
+00:18:45,107 --> 00:19:11,288
+Kapı açılamadığı için birçok insan dumandan zehirlenerek bir kısmı yanarak hayatını kaybediyor. 287 kişi vefat ediyor. Sonra bakıyorlar, araştırıyorlar. Ne oldu da, niye oldu da bu insanlar bu kadar hayatını kaybediyor? Biz neyi yanlış yaptık, neyi farklı yapsaydık bu insanları kurtarabilirdik? Sorusunun cevabı üzerine başlıyorlar sıralamaya.
+
+84
+00:19:13,107 --> 00:19:20,447
+sonucu olarak, evet, panik bardı kapı dışarı açılsaydı, yani acil durum kapılarına baktığınız zaman hepsi dışarı açılır.
+
+85
+00:19:21,748 --> 00:19:44,688
+Eğer kapı dışarı açılsaydı, içeri açma zorunluğu olmayacağı için insanı daha rahat açardı. Evet, kapıyı kol yerine panik barla açsaydık daha rahat açılabilirdi. Yeterli sayıda insan sayısına uygun şekilde ve aralıklı mesafede fazla sayıda çıkış kapısı olsaydı, insanlar kapılara yığılma noktasında sıkıntı yaşamaz, daha rahat kaçabilirlerdi.
+
+86
+00:19:49,748 --> 00:20:01,648
+İnsanlar içeride oluşan zararlı gazlardan etkilenip zarar görmezlerdi ve hayatlarını kaybetmezlerdi. Yangınla beraber elektriği...
+
+87
+00:20:01,903 --> 00:20:19,203
+kesilmesiyle içeride kendinden kitle ve 2 saat boyunca yanabilecek yönlenme revalarıyla insanlar kendi yönlerini doğru bir şekilde bulabilirlerdi gibi soruların cevapları bugünkü mevzuatımızın aslında ya da uluslararası standartların temelini oluşturmakta.
+
+88
+00:20:25,236 --> 00:20:30,276
+Yani dediğim gibi iş güvenliğindeki süreçler hep kanla yazılmış maalesef.
+
+89
+00:20:52,819 --> 00:20:55,879
+Hareket etmedi. Tekrar sunumu açıp kapatayım.
+
+90
+00:20:59,159 --> 00:20:59,799
+Evet.
+
+91
+00:21:08,147 --> 00:21:09,007
+Evet, tamam.
+
+92
+00:21:17,268 --> 00:21:32,087
+Belli bir süre sonra iş kazaları sanayi devrimiyle beraber özellikle sanayi devriminin yoğun yaşandığı Amerika gibi, İngiltere gibi ülkelerde toplumsal sorun haline gelmeye başlıyor.
+
+93
+00:21:32,087 --> 00:21:39,567
+Çünkü insanların yaşamlarını kökten değiştiren ve etkileyen bir yapı halinde çalışma hayatları.
+
+94
+00:21:44,596 --> 00:21:58,296
+Bununla alakalı sanayi devrimi döneminde Edwin Chadwick, çalışan nüfusun sağlık durumunu ortaya koymak için hazırladığı raporlar, çevre ve barınma koşullarının insan sağlığı için önemine değinmiş.
+
+95
+00:22:00,715 --> 00:22:06,456
+İngiltere'deki emekçi sınıfının durumunu ve işçi sınıfının çalışma koşullarını anlatan bir kitap yazmış.
+
+96
+00:22:12,147 --> 00:22:37,687
+İngiltere bu konuyla ilgili yasalar düzenlemeye başlamış. Bugün için baktığımız zaman anlamakta belki de zorluk çekeceğimiz, belki de tam olarak idrak edemeyeceğimiz ama o dönem için çok önemli olan adımlar atıyorlar. Mesela 1788 yılında Baca Temizleme Kanunu ile beraber Baca'da çalışan çocukların çalışmalı hayatı düzenleniyor. Bakın sağdaki resimde.
+
+97
+00:22:38,675 --> 00:22:49,635
+O dönemde, yani 1700'lerin sonu, 1800'lerin başında ki bundan çok değil, 200 sene önce çocukları bacalardan, ayaklarından bağlayıp
+
+98
+00:22:49,680 --> 00:23:11,200
+Fizikleri zayıf olduğu için bacıların içerisine sarkıtarak, bir yandan da temizlik yapmaları sağlanarak orada çocukların çalışması, bacı temizlemesi yapılıyordu. Bu bacı temizliği kanun ile beraber bu süreç ortadan kaldırıldığı daha farklı şekillerde, daha düzenli ve daha güvenli şekilde çalışmalarınız, çocukların sağlanmaya çalışıldı.
+
+99
+00:23:11,700 --> 00:23:35,700
+Yine 1802 yılında Sağlık ve Ahlakın Korunması Kanunu çerçevesinde bu süreçler toparlamaya başladı. Bakın mesela 1833 yılındaki kanunda en küçük çalışma yaşı 10 olarak sınırlanıyor ve günlük çalışma süresi 10 saat olarak sınırlanıyor. Yani bu şu demek, 10 yaşının altında çok sayıda çalışan varmış ve bu konu çok suistimal ediliyormuş ki devlet 10 yaşından aşağısını çalıştırmama...
+
+100
+00:23:36,019 --> 00:23:40,479
+için kanunu çıkartmış. Demek ki o kadar önemli ve hayatı etkileyen bir unsubur.
+
+101
+00:23:43,659 --> 00:23:53,779
+Yine çalışma saatinin 10 ile sınırlanması, günlük çalışma içerisinde insanların ne kadar uzun saatlerde ve sürelerde çalıştığı konuşuluyor.
+
+102
+00:23:53,839 --> 00:24:00,979
+Peki arkadaşlar, bugünkü hayatımız içerisinde günlük çalışma süresi ne kadardır biliyor musunuz? Var mı bununla alakalı bir sınır, 6 sınır, 3 sınır?
+
+103
+00:24:04,339 --> 00:24:05,299
+6 saat.
+
+104
+00:24:06,619 --> 00:24:08,199
+12 saat falan da ölçtüm.
+
+105
+00:24:08,339 --> 00:24:09,219
+6 saat.
+
+106
+00:24:09,559 --> 00:24:10,259
+Ne kadar iyiyim sen?
+
+107
+00:24:10,779 --> 00:24:11,239
+Başka?
+
+108
+00:24:16,596 --> 00:24:20,056
+Şimdi gerçi nasip olur da mezun olduktan sonra uzaktan çalışırsanız.
+
+109
+00:24:20,056 --> 00:24:20,296
+8-8.
+
+110
+00:24:21,076 --> 00:24:29,276
+8 saat. Genelde 8 saat olarak bir algı vardır ama Türkiye'de bile şu anki mevzuatla da maksimum günde 11 saate kadar çalışabilir kişi mesai yapabilir.
+
+111
+00:24:29,276 --> 00:24:40,336
+Ama önemli olan aslında günlük saat çalışma süresi değil, haftalık çalışma süresidir. Haftalık çalışma süresi arkadaşlar maksimum 45 saattir.
+
+112
+00:24:41,875 --> 00:24:50,195
+45 saati işveren günde 11 saati geçmeyecek şekilde farklı şekillerde bölebilir, çalışanla anlaşabilir, çalışanla bu süreci yürütebilirler.
+
+113
+00:24:50,875 --> 00:24:58,415
+Bu süre 45 saatin altında olabilir, günlük 6 saatte olabilir, 4 saatte olabilir, kısmi zamanla da kişisel işe çalışabilir.
+
+114
+00:24:59,316 --> 00:25:00,875
+Ama ve lakin tam tersine...
+
+115
+00:25:01,907 --> 00:25:16,367
+8 saatten yukarıda olur mu? 11 saate kadar maksimum mesai ile beraber olabilir. Ama bu da süreklilik arz etmek durumu itibariyle ama zaten her harikarda haftada 45 saati geçmez. Peki bunun istisnaları var mı? Var.
+
+116
+00:25:16,847 --> 00:25:26,207
+Hocam, böyle söylüyorsunuz ama doktor var, gün 24 saat nöbet tutuyor ya da ambulansta çalışanlar 24 çalışıyor, 48 dinleniyor.
+
+117
+00:25:29,907 --> 00:25:56,327
+çalışma mevzuatındaki karşılığındaki süreler biraz daha farklı. Ama yine de günlük çalışma süresi değişir. Haftalık çalışma süresindeki 45 yine değişmez. Yani haftada 45 daha çalışması gerekir. Evet. Devam ediyoruz. Mesela fabrika kanunuyla beraber işe girişte sağlık muayenezi yapma, yani işe uygunluğun değerlendirmesi ortaya çıkıyor. Aslında baktığımız zaman hani
+
+118
+00:25:56,688 --> 00:26:02,428
+Bundan 200 sene öncesinde aslında durumun ne kadar vahim ve korkunç olduğunu görüyoruz.
+
+119
+00:26:02,928 --> 00:26:16,228
+Peki Türkiye'deki ya da bu topraklardaki iş sağlığı, güvenliği süreçleri ne zaman başlamış diye baktığımız zaman aslında Osmanlı dönemindeki bu esnaf kuruluşlarının yaptığı ev sanatlarında
+
+120
+00:26:18,804 --> 00:26:26,124
+O dönemde kendi şartlarına göre basit de olsa üretim yapan sanayi kuruluşlarında buna dair çalışmalar yapılıyor.
+
+121
+00:26:27,324 --> 00:26:41,224
+Ama ve lakin bu konuyla ilgili en önemli çalışmalar 1865 yılında Dilaverpaşa Nizamnamesi ile madendeki işçilerin çalışma hayatındaki süreçlerin düzeltilmesi için ortaya çıkıyor.
+
+122
+00:26:41,224 --> 00:26:43,984
+Günlük çalışma süresini 10 saatle sınırlıyoruz.
+
+123
+00:26:46,548 --> 00:27:01,087
+Hangi tarihteydi? 1833. Bizdeki 1865. Takribi olarak aynı zamanlar, yani aynı tarihler. Arada 30 yıl var ama 3 aşağı 5 yukarı yakın dönemlerde çalışma süresini kısıtlamışlar.
+
+124
+00:27:01,087 --> 00:27:10,788
+Aynı zamanda işçilerin çalışma sürelerinin dışındaki dinleme sürelerinin verilmesi, yatacak yer sağlanması, işçi ücretlerinin öncelikli olarak ödenmesi ve işe hazırlık.
+
+125
+00:27:13,652 --> 00:27:21,972
+hazır bekleyen işlerin çalıştırmasaları dahi ücret ödenmesi gibi temel değerleri Lava Paşa'nın nizamnamesi kendi içinde içeriyor.
+
+126
+00:27:22,052 --> 00:27:28,211
+Yani bu topraklardaki asıl büyük adım 1865 yılında Osmanlı dönemindeki Lava Paşa nizamnamesiyle atılmış.
+
+127
+00:27:28,292 --> 00:27:34,592
+Ama çok değil, 4 yıl sonra bakıyorlar ki çok güzel oldu, daha da geliştirilmesi gerekiyor.
+
+128
+00:27:35,211 --> 00:27:41,652
+Madendeki çalışma sürelerinin değişmesi vesaire değişmesi, her ne kadar süreler azalsa da aslında bakıyorlar ki verimler...
+
+129
+00:27:41,652 --> 00:27:52,211
+arttı, kazalar azaldı, süreç daha sağlıklı bir zemine indi. 4 yıl sonra Madin Nezavnamesi ile beraber süreci daha da genişledip daha da güzel bir hale sokuyorlar.
+
+130
+00:27:56,392 --> 00:27:58,272
+Cumhuriyet dönemine geldiğimiz zaman
+
+131
+00:27:58,900 --> 00:28:14,360
+İlk olarak 1921'de Ereğli Kömür Havzası Kanunu, 1936'da İş Kanunu, 1930 Umumu Hafızası Kanunu var. Bu kanunda 50'den fazla personel bulunan ve sanayiden sayılan işletmelerin işyeri hekiminin bulunmasını zorunda kılıyor.
+
+132
+00:28:14,940 --> 00:28:21,600
+Bu da şu demek aslında, işyeri hekiminin bulunması demek, çalışanlarının sağlığını yakından takip et demek için aslında bulunuyor.
+
+133
+00:28:26,900 --> 00:28:30,280
+Kanunu'nun 1970'li iş kanunuyla da iş sağlığı ve güvenliği süreçleri devam ediyor.
+
+134
+00:28:30,760 --> 00:28:39,780
+Şimdi biraz bu kısımlar hikaye gibi gelebilir işin tarihsel süreci ama işin ilerleyişini kavramak adına geçmişini bilmeden de geleceğine de yön veremeyiz.
+
+135
+00:28:39,780 --> 00:28:53,220
+Yani bu topraklarda öyle dün ortaya çıkmadı bu süreç. 1860'lardan beri iş sağlığı ve güvenliği ile alakalı resmi ve saha operasyonları çalışılmakta, yapılmaktaydı.
+
+136
+00:28:54,516 --> 00:28:55,016
+Evet.
+
+137
+00:29:11,251 --> 00:29:16,251
+Ama asıl süreç, burası önemli, 2012 yılında...
+
+138
+00:29:16,627 --> 00:29:28,707
+İş Sağlığı ve Güvenliği kanunlaştı. Kanun olarak karşımıza çıktı. Avrupa Birliği'nin uygun direktifleri buna zorunlu kılıyordu. Bir türlü ama kamuoyu oluşup da mecliste bununla alakalı aktif ve yoğun bir çalışma yapılamıyordu.
+
+139
+00:29:32,307 --> 00:29:39,327
+2002 yılında Marmara Park'ta bir yangın çıktı. Bu yangında 10 işçi elektrikten yanarak hayatını kaybetti.
+
+140
+00:29:39,763 --> 00:29:59,583
+Bugün işte Davut Paşa'dan Belikdüzü'ne doğru giderken sağda kalan Büyük AVM'den bahsediyorum. O yangından sonra basının da bu sürecin üzerine gitmesiyle beraber meclisteki bu kanun hızlıca değerlendirmeye alındı ve onaylanarak hayatımıza girdi.
+
+141
+00:30:00,051 --> 00:30:20,051
+Kanunun girmesi şöyle değişiklikler getirdi. İlk olarak bundan önce yönetmeliklerle yürütülmeye çalışan bir süreç artık kendi şahsına münasir bir kanunla yürütülmeye başladı. Ne demek bu? Tüm taraflara, çalışana, işverene, iş güvenliği süreçlerini yöneten kimselere, yöneticilere...
+
+142
+00:30:20,884 --> 00:30:38,304
+Herkese, iş hayatında bulunan herkese ayrılsız olmak üzere belli sorumluluklar getirdi. Herkesin pozisyonuna göre, yaptığı işe ve işin niteliğine göre belli sorumluluklar olmaya başladı. Bu sorumlulukları yerine getirmeyene ağır cebri mühide,
+
+143
+00:30:38,816 --> 00:31:01,915
+Ve maddi mühede uygulama zaruriyetleri getirdi. Yani ne demek istiyorum? Eğer ki siz İş Sağlığı ve Güvenliği Kanunu'ya alakalı Türkiye'nin neresinde çalışırsanız çalışın ve ne iş yaparsanız yapın, herhangi bir uygunsuzluk olması halinde işveren vekili sıfatı kazanacağınız için bu kanun çerçevesinde yaptığınız iş eylem ve fiilden şahsi olarak sorumlusunuz.
+
+144
+00:31:02,915 --> 00:31:04,456
+Yani ne demek bu?
+
+145
+00:31:04,912 --> 00:31:14,971
+Bu kişi bu konuyla alakalı herhangi bir hata ya da bir uygulamada kusur yaptığı zaman hapis cezası almak ihtimali ve süreci oldukça yüksektir.
+
+146
+00:31:15,380 --> 00:31:32,360
+Bu kanunun getirdiği en büyük farklardan bir tanesi bu. Onun dışında çok ciddi anlamda dokümentasyon yükü getirdi. Her işletmede, işletme ne olursa olsun ki beraber zamanı uzun olursa ilerleyen süreçlerle birlikte de yapacağız, değerlendireceğiz. Risk değerlendirmesi yapma zaruriyeti doğdu.
+
+147
+00:31:32,920 --> 00:31:43,360
+Acil durum planı yapma, acil durum ekiplerine eğitimler verme gibi iş sağlığı ve güvenliği süreçlerin içerisinde birçok zaruriyet karşımıza çıkardı. O yüzden bu kanunun çıkmasın.
+
+148
+00:31:43,380 --> 00:31:58,519
+önemliydi. Ve iş hayatında çalışan birisi An'ın en tehlikeli ya da en böyle problem yaşayabileceği iki tane temel kanundan bir tanesi İş Sağlığı ve Güvenliği Kanunu, diğer de kişisel verilerin koruması kanundur diyebiliriz.
+
+149
+00:31:59,508 --> 00:32:09,728
+Evet, tabii bu süreç sadece Türkiye'de değil, dünyada da benzer şekilde ilerliyor ve bununla da alakalı sürekli regulasyonlar, bu süreçleri iyileştirmeye yönelik çalışmalar ortaya çıkıyor.
+
+150
+00:32:09,728 --> 00:32:25,448
+Şimdi Ulusal Çalışma Örgütü İLO dediğimiz süreç, ülkelerdeki çalışma yasalarında ve bu alana ilişkin uygulamalarda standartları geliştirmek ve ileriye götürmek için 1919 yılında
+
+151
+00:32:26,003 --> 00:32:47,383
+Cenevri'de, İsviçre'nin Cenevri kentinde kurulan bir kuruluş. Şu an 187 ülke kayıtlı Türkiye'de 1932 yılında buraya kaybolmuş vaziyette. Ve işçi işverenin ve hükümetlerin yer aldığı tek Birleşmiş Milletler Kuruluşu.
+
+152
+00:32:51,251 --> 00:33:17,932
+İş Sağlığı ve Güvenliği süreçleriyle alakalı temel regülasyon talepleri ve süreçle alakalı takibi İLO yapmakta. İLO'nun dışında özellikle bu pandemiyle beraber çok gündeme de geldi. O yüzden bilinirleriyle çok arttı. Dünya Sağlık Örgütü, Birleşmiş Milletlere bağlı olan toplum sağlığıyla, namı diğer halk sağlığıyla ilgilenen bir süreç.
+
+153
+00:33:18,963 --> 00:33:22,004
+Bir örgüt
+
+154
+00:33:22,740 --> 00:33:40,220
+Pandemi zamanında ne yaptığı, nasıl ilerlediği ve süreçle alakalı nasıl öneriler yaptığını hep beraber gördük. Dünya Sağlık Örgütü 1945 yılında kurulmuş, 197 üyesi olan ve Türkiye'nin 1948 yılında resmen üye olduğu bir kuruluş.
+
+155
+00:33:40,820 --> 00:33:50,240
+Avrupa İş Sağlığı ve Güvenliği Ajansı var, OSHA UAE. Kuruluşun amacı Avrupa Birliği'ni iş yerlerinin daha sağlıklı ve güvenliği ve üretim olmalarına katkıda bulmak.
+
+156
+00:33:50,740 --> 00:33:59,080
+Peki arkadaşlar, niye bu adamlar iş güvenliğinde bu kadar önem veriyor da katkı sağlamak istiyor ya da bu işin sürecin içerisinde daha düzgün gitmesini istiyorlar?
+
+157
+00:34:09,940 --> 00:34:11,159
+Birkaç tane temel...
+
+158
+00:34:11,159 --> 00:34:11,840
+Soru mu hocam?
+
+159
+00:34:12,460 --> 00:34:12,860
+Efendim?
+
+160
+00:34:14,699 --> 00:34:15,940
+Soru muydu hocam?
+
+161
+00:34:16,659 --> 00:34:18,699
+Evet, sordum. Size soruyorum.
+
+162
+00:34:19,340 --> 00:34:27,340
+Diyorum ki, Avrupa Birliği mesela bununla alakalı bir ajans kurmuş. İş Sağlığı ve Güvenliği ile alakalı bir ajans kurmuş ve bu sürecin üzerine sürekli bir çalışma yapıyor.
+
+163
+00:34:27,480 --> 00:34:34,760
+İLO'yu kurmuşlar, Dünya Sağlık Örgütü'nü kurmuşlar. Yani niye bu adamlar bu kadar masraf edip de bu sürecin içerisinde iş kazalarını önlemeye çalışıyorlar?
+
+164
+00:34:36,371 --> 00:34:46,532
+Yani öyle sayısı da az olsun diye başkanın, ankeşi olabilir ki. İnsanlar da az ölsün, daha ısınlar, kazalar olsun.
+
+165
+00:34:50,483 --> 00:34:51,024
+Evet.
+
+166
+00:34:58,516 --> 00:35:00,596
+Arkadaşlar, temelinde baktığımız zaman şu.
+
+167
+00:35:04,115 --> 00:35:13,155
+Bir, bu konuyla alakalı ülkeler kendi çalışanlarına ve kendi ülke vatandaşlarına değer veriyorlar.
+
+168
+00:35:13,376 --> 00:35:16,716
+Ve o ülke vatandaşlarının zarar görmesini istemiyorlar.
+
+169
+00:35:17,735 --> 00:35:22,396
+İki, işletmelerinin bu süreçten dolayı zarar görmesini istemiyorlar.
+
+170
+00:35:23,916 --> 00:35:24,836
+Üç,
+
+171
+00:35:25,331 --> 00:35:36,951
+İşletmenin verimini arttırmak istiyorlar. Bugün günümüzde en değerli ve en pahalı şey aslında eğitilmiş, herhangi bir işte fayda üretebilecek, katma değer üretebilecek insan.
+
+172
+00:35:37,431 --> 00:35:43,692
+Çünkü bunun değeri pahalı içinmez. Sana ne getirebileceğini, ne kadar kazandırabileceğini bilemiyorsun. Adam bir yazılım yapıyor.
+
+173
+00:35:44,208 --> 00:36:02,367
+Dünyanın pırası satıyor. İşte bunu kaybetmemek için ve verimi arttırmak, ülkeye katma değer sağlamak ve o kendi ülke vatandaşına o değeri hissettirmek için iş sağlığı, güvenliği süreçlerine önem arz edip bu kadar değer veriyorlar ve bu kadar masrafa giriyorlar.
+
+174
+00:36:03,367 --> 00:36:07,327
+Türkiye, Oşa, UA'ye gözlemci statüsünde katılmış vaziyette.
+
+175
+00:36:08,532 --> 00:36:21,432
+kuruluş amacı iş sağlığı ve güvenliğindeki yasal düzenlemeleri çıkarmak. Bunun da Türkiye'deki karşılığı Çalışma Sosyal Güvenlik Bakanlığı. Çalışma Sosyal Güvenlik Bakanlığı kendi içerisinde
+
+176
+00:36:22,867 --> 00:36:28,387
+İş Sağlığı ve Güvenliği Genel Müdürü, İş Teftiş Kurulu Başkanlığı ve SGK alınım üzere 3 ana birimden oluşuyor.
+
+177
+00:36:29,228 --> 00:36:37,768
+Şimdi İş Sağlığı ve Güvenliği Genel Müdürü ile İş Teftiş Kurulu direkt aslında bizim işimizi ilgilendiriyor. SGK kişinin emeklilik süreçlerini ve hastane masraflarını ilgilendiren bir süreç.
+
+178
+00:36:43,795 --> 00:37:11,675
+Eğitim Kurumu'dur, Çalışma ve Sosyal Güvenlik Bakanlığı'nın eğitim ve araştırma merkezleri yazken. Bir de ölçüm, test ve muayene analizleri yapan iş güvenlardır. İş Sağlığı ve Güvenliği Merkezi Müdürlüğü diye geçer. İş Sağlığı ve Güvenliği Genel Müdürlüğü'ne bağlıdır. Çalışma Bakanlığı'nda, iş sehtiş kurularda müfettişlerin bağlı olduğu, bağımsız o işletmeyi değerlendirebilecek yapılardır. Çalışma Bakanlığı'nda bu konudaki karşılığı budur.
+
+179
+00:37:11,795 --> 00:37:23,855
+Mevzuat üretmek, bu mevzuatların uygulanmasını sağlamak ve konuyla alakalı süreci takip edip geliştirmek İş Sağlığı ve Güvenliği Genel Müdürlüğü'nün temel görevidir.
+
+180
+00:37:26,036 --> 00:37:35,215
+Evet, İSKÜ, İŞİ, CASKEM Ankara'da olan bir kurum. İnceleme yapmak, eğitim programları düzenlemek gibi faaliyetleri yürütür.
+
+181
+00:37:39,568 --> 00:37:51,068
+Mevzuatın uygulamasını izlemek, denetim, inceleme ve soruşturma yapmak, denetim sonuçlarına ilişkin listesizler tutmak, çalışma hayatına ilişkin mevzuat çalışmaları yapmak onun temel gereği olabilir.
+
+182
+00:37:51,748 --> 00:37:58,668
+SGK iki tane temel gereği vardır. Bir, herhangi bir sağlık problemi durumunda hastane masraflarını karşılamak.
+
+183
+00:37:59,092 --> 00:38:09,752
+Bir diğer durum bu da işinin belli bir çalışma süresini doldurduktan sonra emekliliğiyle beraber hayatının geri kalanında insan gibi bir yaşamasını sağlamak adına bir maaş bağlamaktır.
+
+184
+00:38:09,752 --> 00:38:19,132
+Bu süreç içinde çalışma hayatı boyunca buraya bir bedel öder ki ilerleyen zamanda herhangi bir sıkıntı yaşamasın ve bu süreç kendini döndürsün diyelim.
+
+185
+00:38:21,332 --> 00:38:25,332
+Evet, işin en sıkıcı taraflarından bir tanesi olan
+
+186
+00:38:29,268 --> 00:38:32,988
+Bu sürecin tarihsel gelişimini toparladık diyebiliriz arkadaşlar.
+
+187
+00:38:39,860 --> 00:38:42,539
+Şimdi hemen fişine bir sorumuz daha ekleyelim.
+
+188
+00:39:22,835 --> 00:39:25,555
+Evet arkadaşlar, ikinci bir sınıf daha koydum. Geldim mi?
+
+189
+00:39:30,739 --> 00:39:34,159
+Ertan Hocam.
+
+190
+00:39:34,879 --> 00:39:43,899
+Tamam, çok güzel. Yaklaşık 40 dakika oldu arkadaşlar, dersimize başlayalım. Bir 10 dakika ara verelim, 10 dakika sonra tekrar devam edelim.
+
+191
+00:39:46,399 --> 00:39:47,719
+İkinci üniteyle beraber.
+
+192
+00:44:54,708 --> 00:44:57,387
+Evet arkadaşlar, ikinci ünitemizde devam ediyoruz.
+
+193
+00:45:00,028 --> 00:45:02,948
+Dünyada ve ülkemizde iş kazaları ve meslek hastalıkları.
+
+194
+00:45:08,340 --> 00:45:16,680
+Bu arada bu gördüğünüz resimlerin hepsi bizim personellerimizin sahada uyguladığı hizmetler üzerinden çekilmiş gerçek resimler.
+
+195
+00:45:17,239 --> 00:45:21,840
+Burası da İstanbul'un kuzey tarafında bulunan çok büyük bir maden tesisi, kum eleme tesisi.
+
+196
+00:45:22,640 --> 00:45:25,520
+Orada yapılan çalışmaları göstermeyen bizim arkadaşımız.
+
+197
+00:45:26,300 --> 00:45:28,960
+Şimdi ünitelerimizde neler isteyeceğiz bu ünitede?
+
+198
+00:45:28,960 --> 00:45:31,960
+Sağlık ve güvenlik kavramlarını, iş sağlığı ve güvenliğinin...
+
+199
+00:45:32,532 --> 00:45:42,912
+Tanımını, amacını, işçi sağlığı ve güvenliği etkileyen temel faktörler, iş kazası, tanımı ve meslek hastalığı tanımı, dünyada Avrupa Birliği ülkelerinde ve ülkemizdeki iş kazası ve meslek hastalığı inceleyelim.
+
+200
+00:45:42,992 --> 00:45:51,672
+Şimdi arkadaşlar, sağlığın genel bir tanımı var. İlk önce eskiden sağlık, bireyin sakat ve hasta olmaması şekle tanımlanırdı.
+
+201
+00:45:51,672 --> 00:45:56,792
+Ama Dünya Sağlık Örgütü bu konuyla alakalı çizgiyi çekti ve konuyu netleştirdi.
+
+202
+00:45:58,675 --> 00:46:25,036
+Fiziksel, ruhsal ve sosyal yönden tam bir iyilik hali. Bakın burada şey çok önemli. Sosyal yön ve ruhsal yönden de sadece fiziksel olarak olması yeterli değil. Kişinin ruh sağlığını da ve sosyal, çevresel anlamda da sosyal yönden bunu iyilik halini algılaması çok önemli. Dünya Sağlık Örgütü'nün bu anlamdaki tanımı kısa, çok net ve çok kapsayıcı bir tanım.
+
+203
+00:46:26,452 --> 00:46:27,992
+Bu üçünün varlığı
+
+204
+00:46:28,563 --> 00:46:36,244
+Kişiyi sağlıklı bir birey yapar. Bunlardan herhangi birinin noksanlığı kişinin sağlığını zaman içerisinde sıkıntıya sokar.
+
+205
+00:46:36,963 --> 00:46:48,043
+Peki iş sağlığı ve güvenliği süreçlerimizin amacı nedir? Sanayi ve teknolojinin hızla gelişmesi, yeni modeller, yeni üretim teklifleri, küresel rekabet koşullarındaki işletmelerin dolayısıyla çalışmaları zorlanmaktadır.
+
+206
+00:46:48,043 --> 00:46:56,563
+İşte iş sağlığı ve güvenliğinde yeterli önlemlerin alınmaması durumda çalışan sağlığı ve güvenliğini tehdit eden koşulların ortaya çıkabilmektedir. Bu ortaya çıkan.
+
+207
+00:46:56,563 --> 00:47:04,563
+tehlikeli durumlardaki oluşabilecek iş kazası ve meslek hastalıklarının ortadan çıkması için de yapılacak çalışmalardır.
+
+208
+00:47:06,023 --> 00:47:15,224
+İş Sağlığı ve Güvenliği tanımına baktığımız zaman iş yerinde işin yürütümü sırasında çeşitli nedenlerden kaynaklanan, sağlığa zarar verebilecek koşullardan
+
+209
+00:47:15,664 --> 00:47:37,463
+Korunmak amacıyla yapılan sistemli ve bilimsel çalışmalara iş sağlığı ve güvenliği denilmektedir. Eğer ki bu süreç sistemli bir çalışma değilse bizim için sadece bir önlem almadır. Ama bir iş sağlığı ve güvenliği çalışması değildir. Bir iş sağlığı ve güvenliği süreci değildir. Peki iş güvenliği amacına baktığımız zaman
+
+210
+00:47:38,195 --> 00:47:49,195
+İşletmedeki güvenliği sağlamak, üretim güvenliğini sağlayarak verimi artırmak ama en önemlisi çalışanların iş kazası ve meslek hastalıklarından korunmasını sağlamaktır.
+
+211
+00:47:49,195 --> 00:47:57,255
+Eğer ki biz çalışanlarımızı herhangi bir iş kazası ve meslek hastalıktan koruyor isek, bu bizim ister istemez üretimimizin de sağlıklı olması,
+
+212
+00:47:58,003 --> 00:48:10,184
+verimli olması ve aksamaması, bu da dolaylı olarak da işletmenin güvenliğini arttıran, ayakta kalmasını arttıran, karlını arttıran bir süreçtir.
+
+213
+00:48:11,124 --> 00:48:14,204
+İş Sağlığı ve Güvenliği çalışmalarında henüz bir tehlike oluşmamış.
+
+214
+00:48:14,708 --> 00:48:24,927
+İşletmede bir olay meydana gelmemişken bile işletmede var olan tehlikelerin belirlenmesi ve ulaşabilecek risklerin öngörülerek bunların askeri düzeye indirilmesi çalışmalarını beraberinde getirileceğiz.
+
+215
+00:48:27,923 --> 00:48:51,304
+Reaktif yaklaşım modeli dediğimiz bir model vardı. Reaktif yaklaşım şuydu. Önce realde bu süreç gerçekleşirdi. Eğer ki bir süreçle alakalı bir kaza olacaksa o kaza meydana gelir. İnsanlar reaktif modeli onu görür ve ondan sonra öndem alırlardı. Ama daha sonra Avrupa modeli yaklaşımla beraber proaktif yaklaşım modeline geçildi. Proaktif yaklaşım nedir? Süreç daha ortaya çıkmadan önce
+
+216
+00:48:52,244 --> 00:49:08,923
+Sezgisel ve bilimsel teknik olarak yapılan değerlendirme ve inceleme sonucunda olası iş kazalarının önceden gidermek adına, olmasını engellemek adına bir yapı, bir süreç kurmaktır.
+
+217
+00:49:11,347 --> 00:49:22,219
+Proaktif bir yaklaşım. Kaza olmadan önce o kazayı önleyecek bir yaklaşım yapmaktır. Hani bir hikaye vardır. İşte Nasrettin Hoca...
+
+218
+00:49:22,228 --> 00:49:32,907
+Bir de alakalıydı galiba. Biliyor ki testiyi gönderiyorlar, testi kırılıyor ama çocuğu göndermeden önce tokatlıyorlar. Diyorlar ki niye tokatlıyorsun? Testi kırıldıktan sonra bir anlamı yok.
+
+219
+00:49:32,907 --> 00:49:50,208
+Haslı bu da bir proaktif yaklaşım modeli. Yani kırdıktan sonra bir anlamı yok. Kırmaması için önceden yapılmış bir çalışma gibi. Proaktif yaklaşım modeli de bir yerde kaza olmadan, problem olmadan önce oradaki süreci değerlendirmek ve kaza olmaması için önlemler alınması süreci.
+
+220
+00:49:50,228 --> 00:50:11,027
+İş Sağlığı ve Güvenliği'nin kendi içinde iki temel boyutu vardır. Bunlardan birincisi iş yerinde işlerin sağlığını bozabilecek risklere karşı tıbbi koruma yöntemlerini uygulamak, iş yerinde ortaya çıkabilecek hastalıklara yapılan işle ilgisini araştırmak, yani bir nevi sağlık süreçlerini değerlendirmek, meslek hastalığı süreçlerini değerlendirmektir.
+
+221
+00:50:12,248 --> 00:50:14,188
+İş Güvenliği'nin diğer boyutu da
+
+222
+00:50:14,643 --> 00:50:28,083
+İş Sağlığı ve Güvenliği boyutudur. İşler iş kazasına uğramalarını önlemek amacıyla düzenli çalışma ortamını oluşturmak için alınması gereken önlemler dizisinde de iş güvenliği diyoruz.
+
+223
+00:50:28,083 --> 00:50:34,083
+İş güvenliği boyutu, iş sağlığı ve güvenliğinin bu anlamda daha çok teknik boyutta...
+
+224
+00:50:34,483 --> 00:50:46,703
+İlgelendirmektedir. Aslında işin teknik tarafı, mühendislik tarafı, iş güvenliği tarafındadır ve bir kazanın, olası bir kazanın olmasını engellemek amacıyla ortaya koyulmuştur.
+
+225
+00:50:48,483 --> 00:50:54,963
+İş kazalarına baktığımız zaman iki tane temel faktör karşımıza çıkıyor. Bunlardan birincisi kişiye bağlı faktörler.
+
+226
+00:50:59,699 --> 00:51:15,159
+Kişisel alışkanlıklar, beslenme, uyku düzeninin kötüsü olması, kötü alışkanlıklar. Bir diğer süreçte fiziksel ve zihinsel yetersizlikler, eğitim eksikliği, yaş, cinsiyet.
+
+227
+00:51:15,699 --> 00:51:35,939
+Yapılan işe uygun olmayan fiziksel durum, yani aşırı kilo olumlu olmak ya da aşırı zayıf olmak gibi yapılan işe uygunsuz kişinin kendisine bağlı olan faktörleri. Bir de çevresel faktörlerimiz var. Bunlar da fiziksel risk etmenleri, kimyasal risk etmenleri, biyolojik risk etmenleri, ergonomik risk etmenleri ve psikolojik risk etmenleri olarak karşımıza çıkıyor.
+
+228
+00:51:36,436 --> 00:51:56,155
+Şimdi bir kazanın oluşumunda birçok teori var ama en çok kullanılanlarından bir tanesi domino etkisidir. Şimdi tek faktör teorisi, enerji teorisi, insan faktör kuramı, olay kaza kuramı, sistem kuramı, kombinasyon kuramı gibi birçok kuram var ama domino etkisi içerinde en çok kamu görenlerden bir tanesi.
+
+229
+00:52:04,436 --> 00:52:18,135
+Şunu düşünsen bir de bu daha sonra daha büyük bir etkiye, daha büyük bir etkiye ve daha büyük bir etkiye sahip olarak ilerlemeye devam eder. O yüzden bu 5 dominonun arka arkaya gelmesini engellemek.
+
+230
+00:52:22,112 --> 00:52:42,231
+Yani 5 domini taşının, 5 tane sürecin arasına bir separatör koy ya da aradan bir tanesini çıkar, ortadan risk olmasından çıkar. Tekrar ortada böyle bir süreç çıkmasın. Yani kaza zincirini kır, kaza zincirini boz ki kaza süreç kazaya kadar ilerlemesin.
+
+231
+00:52:45,231 --> 00:52:45,912
+Evet.
+
+232
+00:52:49,780 --> 00:53:03,340
+Bu teoriye göre birincisi arkadaşlar insan. Yani insanın etkisi, hani az önce de bahsetmiştik ya, kişisel faktörler ve kişisel faktörlerden dolayı ulaşıcı bir kazanın ortaya çıkması.
+
+233
+00:53:09,268 --> 00:53:21,128
+Bir diğer konu arkadaşlar, dikkatsizlik, pervasızlık, asabiyet, dalgınlık, önemsenme ve ihmal gibi kişisel kusurların kazalamasının bir diğer sebebidir.
+
+234
+00:53:24,868 --> 00:53:35,408
+Bir diğer süreç, güvensiz davranışlardır. Güvensiz davranışların mevcudiyeti kazanın ortaya çıkmasını sağlar.
+
+235
+00:53:35,956 --> 00:53:43,655
+Bir sonraki basama kaza olur. En son domino taşımızda da bu süreçte eğer sen önlem almasan bu kaza yeniden illaki tekrarlanır.
+
+236
+00:53:43,655 --> 00:53:53,336
+Bu tekrarlanma süreci önemli. Şimdi buna baktığımız zaman özellikle kazadan sonra tekrarlanma sürecinde şunu diyebilir, şunu görebiliriz aslında.
+
+237
+00:53:54,056 --> 00:53:56,396
+Geçmişte yaşanan kazalara bakarak...
+
+238
+00:53:57,043 --> 00:54:12,143
+tekrarlanmaması için ulusal anlamda bununla alakalı süreçler yapabiliriz. Yani mesela herhangi bir sektörle ilk defa çalışacaksak o sektördeki istatistiksel verilere dayanarak o sektördeki kazaları analiz edip ki bunların analizleri zaten mevcut da var.
+
+239
+00:54:12,659 --> 00:54:35,659
+Ona göre hareket edebilmek. Mesela Türkiye'de baktığımız zaman en çok kazalanma, işte yapı işlerinde meydana geliyor. Ölümlü kaza oranı itibariyle. Ölümlü kazalara baktığımız zaman yapı işlerinde en çok karşımıza çıkan yükseklik faktörü. Yaklaşık %45 yüksekte çalışma, insanların düşmesi, %15 civarında da malzeme düşmesi var. Topladığın zaman...
+
+240
+00:54:36,115 --> 00:54:57,755
+Yaklaşık %60'a yakın bir fark getiriyor. Yani ben yükseklik kavramını bir yapı sektöründe ortadan kaldırırsam bir risk olarak, tabii yüksekliği kaldıramayacağı mısın? Önlemlerle bunu kaldırmak mümkün. O zaman ben %60 ölümlü kazalanma ihtimalimi aşağıya indirmişim demektir. Yani ben bir teknik gözlemci olarak...
+
+241
+00:54:58,239 --> 00:55:06,439
+Kısıtlı ve sınırlı zamanımı ve imkanlarımı daha verimli yerlere kullanabilmek adına böyle bir şeyi değerlendirebilirim.
+
+242
+00:55:07,999 --> 00:55:16,239
+Geçmişteki istatistikal verilere bakar, bir sonraki süreçteki olası kazaları önlemek adına gereken yaptırımları uygularım.
+
+243
+00:55:16,788 --> 00:55:28,927
+Şimdi iş kazasını tanıma baktığımız zaman İLO yani Uluslararası Çalışma Örgütü planlanmamış ve beklenmeyen bir olay sonucunda sakatlanmaya ve zarara neden olan durumdur diye tanımlamış.
+
+244
+00:55:30,307 --> 00:55:34,347
+Dünyasal Örgütü insanların yaralanmasına veya ölmesine
+
+245
+00:55:36,916 --> 00:55:44,996
+Malzemelerin hasarına, maddi kayıplara neden olan, önceden planlanmayan, kasıtlı olmayan, beklenmedik olaylar diye tanımlamış.
+
+246
+00:55:47,856 --> 00:55:58,296
+Bizim İş Sağlığı ve Güvenliği Kanunu muysa, iş yerinde veya işin yürütümü nedeniyle meydana gelen, ölüme sebebiyet veren veya vücut bütününü ruhe veya bedenen özürlü atan olay olarak tanımlamış.
+
+247
+00:56:03,251 --> 00:56:19,711
+İş yerinde, yani iş yeri saha sınırları içerisindeki olan her şeyi demek ki iş kazası olarak kabul ediyor ve işin yürütümü nedeniyle yani buradan biz bir arkadaşımızı işe aldık ve İstanbul'dan İzmir'e gönderdik. İşin yürütümü nedeniyle gitti.
+
+248
+00:56:20,431 --> 00:56:28,091
+Bu kişi gece eğlenmeye, İzmir gece hayatını görmeye herhangi bir kulübe gitti ve orada bir kavgaya karıştı ve bıçaklandı.
+
+249
+00:56:29,619 --> 00:56:31,379
+Sizce arkadaşlar iş kazası mı?
+
+250
+00:56:35,123 --> 00:56:35,943
+Hayır hocam.
+
+251
+00:56:36,943 --> 00:56:40,723
+Değildir. Kendisi gitti, kendisi eğlendi. Başka fikr olan var mı?
+
+252
+00:56:46,547 --> 00:56:48,547
+Ses çıkmadığına göre diyor ki herkes...
+
+253
+00:56:48,547 --> 00:56:55,067
+Yani iş kazasından daha çok önlemsizlikten olan bir olay.
+
+254
+00:56:56,067 --> 00:57:04,547
+Yani baktığın zaman adam iş yerinde mi? Değil. Dışarıda gece eğlenmeye gidiyor. İzmir'de. İzmir'e iş için gitmişti.
+
+255
+00:57:06,007 --> 00:57:07,467
+İş kazasını iş işmali.
+
+256
+00:57:08,587 --> 00:57:09,387
+Efendim?
+
+257
+00:57:10,287 --> 00:57:13,627
+İş kazasını iş ihmali sınıfına girer herhalde.
+
+258
+00:57:16,947 --> 00:57:18,427
+İş ihmalı nedir peki?
+
+259
+00:57:20,927 --> 00:57:24,748
+Şey yani, bu durumdaki mi genel olarak mı?
+
+260
+00:57:27,728 --> 00:57:28,248
+Hocam.
+
+261
+00:57:28,627 --> 00:57:42,228
+Evet, bakın, şimdi 6331 sayılı madde çok açık bu konuda. Ne demiş? İş yerinde. Yani iş yerinde sağ sınavlar içerisinde bir şey varsa hiç tartışmayın, konuşmaya gerek yok. Devam etmiş ya da işin yürütümü nedeniyle meydana gelen.
+
+262
+00:57:42,835 --> 00:58:04,835
+Yani sen İzmir'e ne için gitmişti o kişi? İşini yapmaya, görevlendirilerek gitti. Yani bir, iş sorunu üzerine gitti. Ama gece kalktı eğlenmeye gitti. Alkol aldı ve o alkolle kavgaya karıştı. Ve yaralandı. Arkadaşlar çok ilginçtir ama işin yürütülü sebebiyle gittiği için...
+
+263
+00:58:05,300 --> 00:58:06,940
+Bu da iş kazası sınıfına girer.
+
+264
+00:58:07,380 --> 00:58:09,820
+Heh, işveren bundan ne kadar etkilenir o ayrı.
+
+265
+00:58:10,220 --> 00:58:16,600
+Ama velakin işçinin alacakları ve hakları noktasında herhangi bir kayba uğramamış olur.
+
+266
+00:58:17,180 --> 00:58:17,880
+O noktada önemli.
+
+267
+00:58:18,452 --> 00:58:43,872
+Çünkü her iş kazasının değerlendirmesi illa işverene bunu yansıtalım ve işverenden bununla alakalı bir maddi para alalım değil. İşin doğru yapılması. Bu anlamda teknik olarak ve hukuki olarak da böyle bir örnekte o kişi İzmir'e giderken eğer görevi olarak gittiyse İzmir'e atıyorum gündüz bir yazılım firmasının atıyorum server ile alakalı bir problemi gidermek için gitti oraya.
+
+268
+00:58:45,811 --> 00:58:52,411
+Ama orada gece kavgaya karıştı. Bu iş kazası sayılır. Çünkü işin yürütümü sebebiyle oraya gitmiştir. Ama işveren bundan çok da mesul değildir.
+
+269
+00:58:53,371 --> 00:59:04,851
+Çünkü işverenler de adama nasıl zaplıraplı tutamayacağı için işveren açısından iş kazası konusu değildir. Ama işçi açısından, alacak açısından iş kazasıdır.
+
+270
+00:59:07,351 --> 00:59:12,831
+Şimdi sigortanın bakın, 5.000-10 sayılı kanunu da açıklamış. Demiş ki
+
+271
+00:59:15,827 --> 00:59:34,927
+Sigortalı iş yerinde bulunuyorsa ya da işveren tarafından yürütülmek olan bir iş nedeniyle kendine bir yere gidiyorsa ya da bir yerde çalışıyorsa bir işverene bağlı olarak çalışan sigortalı görevli olarak iş yeri dışında veya başka bir yerde görevlendirmesi nedeniyle asıl işi yapmaksızın geçen zamanlarda.
+
+272
+00:59:35,860 --> 01:00:00,800
+Emziren kadın sigortalının iş mevzuatı gereğince çocuğuna süt vermek için ayrılan zamanlarda günde 2 saate kadar emziren kadınlara süt verme izni verilir. O sürede başına bir iş gelirse gene iş kazası sayılır. Sigortalının işveren için sağlanan bir taşıtla bir yerden bir yere gidiş veya geliş sırasında herhangi bir kaza olsa yani servise, işverene sağladığı bir serviste bir kaza olursa bu iş kazası sayılır.
+
+273
+01:00:03,092 --> 01:00:15,891
+Kendi arabasıyla gidip gelen ya da toplu taşımayla giden bir adam bir kazaya karışırsa onun için iş kazası değildir. İşverenin sağlığı servisle yapmak iş kazasıdır. Arada büyük fark var.
+
+274
+01:00:20,628 --> 01:00:33,807
+Meslek hastalığı, sigortalının çalıştığı veya yaptığı işin niteliğinden dolayı tekrarlanan bir sebeple veya işin yürütümü şartı yüzünden uğradığı geçici ve sürekli hastalık, bedensel ve ruhsal özürlülük halinde diyoruz.
+
+275
+01:00:35,568 --> 01:00:45,847
+Meslek hastalıkları önlenebilir nitelikte olan bir olgudur. Hastalığa neden olan etkinin vücuda giriş yolu bilinmesi ve bunu engelleyecek koruyucu önlemlerinin alınması yeterlidir.
+
+276
+01:00:51,219 --> 01:01:11,619
+Şimdi iş kazası ile meslek hastalıkları arasındaki farklara bakalım. İş kazası vücudun dış yüzüne zarar verirken meslek hastalığı genellikle içine işler. Kan dolaşımı bu konuda en çok kan dolaşımıyla meslek hastalığı.
+
+277
+01:01:12,211 --> 01:01:35,311
+Herhangi bir vücutta bir organı etkileyebilir. Ama iş kazası genellikle dışarıdan olan, meslek hastalıkları genellikle içeriden olan problemlerdir. İş kazaları aniden ortaya çıkar. Sonuçları görmezden gelinebilecek gibi değildir. Ama meslek hastalıkları yıllar içerisinde, hatta bazen 10 yıllar içerisinde ortaya çıkar ve etkileri de oldukça büyüklür.
+
+278
+01:01:38,195 --> 01:01:49,476
+en önemli bir şey, kolayca gözden kaçınılabilmesidir. Bu konuda yeterli bilgisi olmayan doktorlar, hastalığın yakınmalarının mesleğiyle olan ilgisini kuramayabilir.
+
+279
+01:01:53,364 --> 01:02:03,624
+Türkiye'de iş kazalarının raporlanmasını ve takibini SGK yapar. Çünkü bu süreçlerle alakalı ödemelerde o yaptığı için süreçin takibini ve kontrolünü o yapıyor.
+
+280
+01:02:13,972 --> 01:02:24,492
+İş kazalarının SGK bildirimi ilgili SGK mevzuatına göre 3 iş günü içerisinde e-bildirge veya e-kiki adı verilen iş kazası ve meslek hastalığı bildirim formuyla yapılmaktadır.
+
+281
+01:02:25,152 --> 01:02:29,972
+Bu bildirimdeki veriler SGK, SSK ve hukuki durumları için veri oluşturmaktadır.
+
+282
+01:02:31,432 --> 01:02:38,392
+Dünyaya baktığımız zaman her yıl iş kazasıyla alakalı 3.2 milyondan fazla kişi kazadan hayatını kaybediyor.
+
+283
+01:02:38,864 --> 01:02:46,404
+Her yıl 160 milyon kişide meslek hastalığı geçiriyor. 300 milyonlarla fazla ölümcülü olmayan iş kazası meydana geliyor.
+
+284
+01:02:47,584 --> 01:02:57,984
+İşle ilgili hastalıklar ve ölümlerin bakıldığı zaman ekonomik yük kaybı ve daire safi milli hastalığının, çok ciddi bir rakamları bu, %4'üne tekabül ediyor.
+
+285
+01:02:58,644 --> 01:03:03,184
+Şimdi Avrupa Birliği'ndeki iş kazaseliklere baktığımız zaman 2017 yılında
+
+286
+01:03:04,980 --> 01:03:16,560
+İş kaza, iş hayatında 3552 kişi ölümcül bir şey geçirmiş. 2015'in tüm kazalarının 5'te 1'i de inşaat sektöründe meydana gelmiş.
+
+287
+01:03:18,240 --> 01:03:22,120
+Türkiye'ye baktığımız zaman, benzer dönemde.
+
+288
+01:03:25,972 --> 01:03:33,792
+Ölümlü kazalarda toplamda yıllara göre fazla olduğumuzu görüyoruz arkadaşlar.
+
+289
+01:03:40,275 --> 01:03:40,775
+Evet.
+
+290
+01:03:45,427 --> 01:03:55,287
+Şimdi her yıl Bakanlık, SGK, 2 yıl öncesinin verilerini istatçil olarak analiz eder ve serbest eder.
+
+291
+01:03:56,083 --> 01:04:01,543
+Şu an biz 2024 yılındayız. En güncel 2022 verilerini alabiliriz.
+
+292
+01:04:02,364 --> 01:04:04,903
+2022 verilerini almak ne işimize yarayacak?
+
+293
+01:04:05,483 --> 01:04:17,123
+2022 yılındaki ölümlü ve yaralanmalı kazaların neler olduğunu, bir sonraki basamakta benzerinin tekrarlanması için neler yapılması gerektiği konusunda önemli ipuçları vermektedir.
+
+294
+01:04:28,884 --> 01:04:37,583
+Türkiye'de iş kazalarına ilişkili seslere baktığımız zaman iş kazasıyla ölen sigortalı sayısının 10 yıllık verilerin ortalaması 1365.
+
+295
+01:04:38,244 --> 01:04:49,384
+2011 yılında 1700, 2012 yılında 744, 2013'te 1365, 2014'te 1626.
+
+296
+01:04:50,083 --> 01:04:55,003
+Baktığınız zaman çok ciddi rakamlar ve her biri bir insan, aile sahibi olan insanlar.
+
+297
+01:04:55,764 --> 01:05:05,403
+En son 2020'de o 1240 kişi hayatını kaybederek efal ediyor.
+
+298
+01:05:13,844 --> 01:05:22,844
+Aynı şekilde meslek hastalıklarına yakalanlar da zaman içerisinde değişimi buradaki tavloda görebiliyoruz.
+
+299
+01:05:24,403 --> 01:05:28,283
+Peki en çok iş kazası ne olmuş baktığımız zaman?
+
+300
+01:05:29,223 --> 01:05:31,083
+İşte bu iş sesler bunları sağlıyor arkadaşlar.
+
+301
+01:05:31,743 --> 01:05:39,723
+%75 oranında bir veya birden fazla cismin sıkıştırması, ezmesi, batması, kesmesi, makinelerinin sebep olduğu kazalar.
+
+302
+01:05:40,159 --> 01:05:55,960
+Düşen cisimlerin çarpıp devrilmesi, bakın çok ilginçtir. Düşen cisimlerin çarpıp devrilmesi bile bayağı ciddi fark etmiş. Kişilerin düşmesi ve taşıt kazaları olmak üzere %75 kazalar ve problemler buradan meydana geliyor.
+
+303
+01:06:00,596 --> 01:06:07,675
+İç kazaların tabii bir de maliyeti var. Baktığımız zaman maliyetinin kendi içinde bir görünür maliyeti, bir de görünmeyen maliyeti var. Aslında bu görünmeyen maliyeti daha büyüktür.
+
+304
+01:06:08,736 --> 01:06:16,876
+Tedavi harcamaları, çalışmayan sürelerin ücretleri, dava giderleri ve malum mesule sigortası işin görünen tarafıdır.
+
+305
+01:06:17,536 --> 01:06:24,596
+Ama bir de işin görünmeyen tarafı var. Yani gizli maliyet tarafımız var. Bu da kaza araştırma maliyetleri, kazadan dolayı duran işin...
+
+306
+01:06:25,715 --> 01:06:46,256
+Etkisi, kazadan dolayı zaman maliyeti, yerine geçen işçinin öğrenme süreci, fazla mesai, yöneticilerin bu konulu süreciyle alakalı harcadığı zaman, ölüm varsa işe ara verme, soruşturmalarda üst düzey zaman kaybı, işletmelerde.
+
+307
+01:06:46,931 --> 01:06:52,811
+Prestij kaybı gibi çok ciddi problemler ile karşımıza çıkabiliyor iş kazaları.
+
+308
+01:06:53,691 --> 01:07:01,431
+Şimdi büyük firmalar, mesela Zara gibi, büyük firmalar kendi tedarikçilerini denetlerler.
+
+309
+01:07:02,251 --> 01:07:07,851
+Denetlemelerinin de sebebi, baktığımız zaman iş sağlığı ve güvenliğinde kendi süreçlerin daha sağlıklı olması içindir.
+
+310
+01:07:10,927 --> 01:07:19,508
+Kapanmaman, süreci sağlıklı bir şekilde yürütüyor olman ve bundan dolayı çok da etki almaman ve sağlıklı bir iş ortamı hazırlaman gerekiyor.
+
+311
+01:07:20,588 --> 01:07:27,728
+Bundan dolayı gidip tedarikçilerin hepsini detaylı bir şekilde denetler.
+
+312
+01:07:29,068 --> 01:07:35,807
+Tedarikçisini çok sevdiği için değil, aslında kendi ürününü sağlıklı ve düzgün bir şekilde alabilmesi adına ve bu denetimler de çok da sıkı geçer.
+
+313
+01:07:48,019 --> 01:07:48,599
+Evet.
+
+314
+01:08:25,555 --> 01:08:29,095
+Arkadaşlar, iş kazalarıyla alakalı tarihsel gelişimi, sürecin
+
+315
+01:08:29,524 --> 01:08:36,844
+İlk başta, işte M.Ö. dönemde başladığını, ilk bilim adamları filozoflardan bugüne kadar ki süreçlerde değerlendirildiğini birlikte gördük.
+
+316
+01:08:37,623 --> 01:08:51,264
+Ardından İLO, Dünya Sağlık Örgütü ve bunların Türkiye'deki karşılığı Çalışma Bakanlığı ve Çalışma Bakanlığı içerisindeki İş Teftiş Kurulu ve İş Sağlığı Güvenliği Genel Müdürlüğü ve bunların çalışma süreçlerini beraber konuştuk.
+
+317
+01:08:52,024 --> 01:08:57,444
+Ardından Türkiye'de ve dünyadaki iş kazası, meslek hastalıkları nelerdir?
+
+318
+01:08:57,524 --> 01:08:59,904
+Bunlar niçin?
+
+319
+01:09:04,340 --> 01:09:31,980
+Bu kadar önemli ve hassas ve bunların oranları nedir? Onlara da karşılıklı istişare etmiş olduk. İş kazaları gerçekten bilirkişlikle yapıyorum. Zaman zaman dava dosyaları geldiğinde insan gerçekten süreç için çok üzülüyor. Kimi zaman insanların ailelerinden yakınlarını kaybettiklerini görmek çok acı bir durum. Bununla alakalı süreçlerin bazılarının içerisinde yer aldığım için durumun ne kadar vahim ve önemli olduğunu görüyorum.
+
+320
+01:09:32,340 --> 01:09:49,560
+Hatta bazen bazı önlemler çok kolay halledilebilecekken birilerinin bu konuyla alakalı gerekli hassasiyeti göstermemesi ve bu konuyla alakalı süreci yeterince ciddiye almaması yüzünden iş kazaları yaşanmakta ve karşımıza kötü sonuçlarla beraber çıkabilmekte.
+
+321
+01:09:49,560 --> 01:09:59,420
+Ben ya bilgisayar mühendisliğinde çalışıyorum ya da ofiste çalışıyorum. Benim çok fazla kazayla ilişkim olmayabilir diye düşünebilirsiniz.
+
+322
+01:10:00,000 --> 01:10:04,100
+Bundan 3 ya da 4 sene önce bana bir bilirkişilik dosyası gelmişti.
+
+323
+01:10:04,760 --> 01:10:09,399
+Gelen dosyada kadın bilgisayar mühendisi çalışan Türkiye'nin en büyük kurmalarından bir tanesinde çalışıyor.
+
+324
+01:10:10,139 --> 01:10:17,420
+Yere koydukları prizler yerden, zeminden gelen prizler ve bundan dolayı zeminde kalabalık kablo birikintisi var.
+
+325
+01:10:18,199 --> 01:10:27,059
+Kadın çalışan yandaki personele, arkadaşa ya da çalıştığı kişisini kendi bilgisayarını kaldırıp uzatmak isterken yerdeki kabloları ayağa takılıyor.
+
+326
+01:10:27,507 --> 01:10:34,087
+Ayağa takıldığı için düşüyor ve ayak bileği çatlıyor. Meslek'te %13 kazanç gücü kaybı vardı.
+
+327
+01:10:36,167 --> 01:10:41,108
+Ve diyorsunuz ki, işte ofis çalışanınız ne kadar etkileyebiliriz?
+
+328
+01:10:42,028 --> 01:10:51,787
+Yine keza aynı şekilde, belki direkt kaza olarak etkilenmese de, meslek hastalığı olarak, şöyle düşünün, günde 8 saat, haftada 45 saat dedik, ayda 180 saat yapar.
+
+329
+01:10:54,543 --> 01:11:08,543
+Çarpı 12 ay, çarpı en az 20 sene. Bu işi yaptığınızı düşündüğünüz zaman kaç saat o pozisyonda kaldığımızı hayal ettiğimiz zaman aslında hayatımızın ciddi bir kısmını işte geçirip burada da ciddi bir...
+
+330
+01:11:11,091 --> 01:11:26,152
+Yapısal bozukluğunun aslında temelini yarattığımızı da ortaya çıkabiliyor. Bu noktada kişi ister mühendislik yapsın, ister dışarıda farklı bir iş yapsın, kendi mesleğiyle alakalı muhakkak kazalanma ihtimalleri olabiliyor.
+
+331
+01:11:26,311 --> 01:11:34,072
+İşte bu süreçte bunu azaltabilecek önlemleri almaya çalışmalarını da iş sağlığı ve güvenliği diyoruz. Önümüzdeki haftalarda birlikte risk anizini işleyeceğiz.
+
+332
+01:11:34,072 --> 01:11:39,072
+Risk anizini önce yasal altyapısına aranılan teknik altyapısına birlikte değerlendireceğiz.
+
+333
+01:11:39,091 --> 01:11:45,891
+Ve niçin yapılır, nereden yapılır, ne yapılırken nelere dikkat etmesi gerektiği konularını beraber işleyeceğiz.
+
+334
+01:11:46,391 --> 01:11:49,711
+Orada sürecin proaktif yaklaşımını daha iyi anlayacaksınız.
+
+335
+01:11:49,811 --> 01:12:01,531
+Çünkü olayın önceden öngörerek kazalanmayı engelleme çalışmaları olarak karşımıza çıkıyor ki bu kazaları engel diyelim.
+
+336
+01:12:01,912 --> 01:12:06,451
+Kazalarla alakalı herhangi bir olumsuz süreç içerisine girmeyelim diye.
+
+337
+01:12:07,028 --> 01:12:11,587
+Bu hafta anlattıklarımla alakalı sormak istediğiniz herhangi bir şey var mı arkadaşlar?
+
+338
+01:12:17,203 --> 01:12:22,323
+Hocam, bu anlattıklarınıza nereden ulaşabiliriz? Yani nereden okuyabiliriz?
+
+339
+01:12:22,823 --> 01:12:33,384
+Arkadaşlar, çok güzel. Bu anlattığım tüm konuları online Yıldız Edu.tr'deki ders sayfanıza yüklüyor olacağım.
+
+340
+01:12:35,043 --> 01:12:37,243
+Yapay Zeka Grubu'ndan arkadaşlar var.
+
+341
+01:12:37,747 --> 01:12:48,108
+Onlar 7 kişi, onlar portalında görünmüyor. Onlara ayrıca WhatsApp grubu üzerinden, onlarla miz üzerindeki WhatsApp grubundan onlarla bunu ayrıca paylaşacağım.
+
+342
+01:12:48,747 --> 01:13:02,667
+Ama bilgisayar mühendisliği öğrencileri için kendi ders sayfamızın duvarındaki ders notları kısmına, doküman kısmına işlediğimiz her şeyi yüklüyor olacağım arkadaşlar.
+
+343
+01:13:04,916 --> 01:13:05,755
+Teşekkür ederim.
+
+344
+01:13:06,296 --> 01:13:06,815
+Rica ederim.
+
+345
+01:13:08,435 --> 01:13:09,796
+Başka not olan var mı?
+
+346
+01:13:12,695 --> 01:13:16,655
+Arkadaşlar, şimdi sohbet kısmına mail adresimi yazacağım.
+
+347
+01:13:26,068 --> 01:13:26,507
+Evet.
+
+348
+01:13:29,087 --> 01:13:48,568
+Herhangi bir şey için ulaşmak isterseniz mail adresine ulaşabilirsiniz. Kurumsal okulum verdiğim mail adresini çok aktif kullanamıyorum. Ama bu mail adresini çok daha aktif kullanıyorum. Her gün sürekli açık. Herhangi bir şeyle alakalı ilerleyen zamanda da olsa herhangi bir şekilde ulaşmak isterseniz buradaki mail adresin üzerinden hızlıca dönüş alabilirsiniz.
+
+349
+01:13:51,308 --> 01:13:52,808
+Hepinize kolaylıklar diliyorum.
+
+350
+01:13:53,876 --> 01:13:55,275
+Görüşmek üzere tekrar haftaya.
+
+351
+01:13:55,416 --> 01:13:56,096
+Çekil sürelerim.
+
+352
+01:13:56,336 --> 01:13:57,195
+Görüşürüz.
+
+353
+01:13:58,576 --> 01:13:58,855
+Bağ.
