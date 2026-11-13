@@ -1,0 +1,2351 @@
+1
+00:18:38,579 --> 00:18:39,403
+Baba.
+
+2
+00:18:56,531 --> 00:18:58,531
+Arkadaşlar merhabalar.
+
+3
+00:19:01,531 --> 00:19:02,531
+Sesim geliyor mu?
+
+4
+00:19:05,971 --> 00:19:07,971
+Merhaba hocam, sesiniz geliyor.
+
+5
+00:19:09,971 --> 00:19:10,971
+Peki.
+
+6
+00:19:21,236 --> 00:19:34,696
+Şimdi, so today, we will start the next chapter, which is Limit Teorems and Convergence in Probability.
+
+7
+00:19:44,723 --> 00:19:52,983
+So, these are some fundamental results in the probability theory limit theorems, r.
+
+8
+00:19:59,983 --> 00:20:09,223
+We will see two very important theorems, two very important limit theorems.
+
+9
+00:20:10,324 --> 00:20:15,884
+Law of Large Numbers and Central Limit Teorem.
+
+10
+00:20:24,500 --> 00:20:33,819
+Now, for that, first, we need to define sample mean.
+
+11
+00:20:36,160 --> 00:20:40,779
+So, this is something you already know.
+
+12
+00:20:42,059 --> 00:20:50,920
+Simply, you are summing all values that come from each random variable.
+
+13
+00:20:52,915 --> 00:21:14,915
+IID random variables, meaning independent and identically distributed. So, they are independent and their distribution are identical. They have the same distribution. So, we have these IID random variables.
+
+14
+00:21:21,907 --> 00:21:35,767
+And if you sum these iid random variables from x1 to xn and divide by n, you get sample mean.
+
+15
+00:21:37,147 --> 00:21:41,087
+So x bar is sample mean.
+
+16
+00:21:43,028 --> 00:22:00,188
+Now, in probability books, you can see, or even yourself, you can obtain these results, but expected value of sample mean is just mean.
+
+17
+00:22:04,788 --> 00:22:24,307
+So, what's the difference between sample mean and mean? Now mean, mu, is the theoretical mean. It's the mean of all the population.
+
+18
+00:22:28,756 --> 00:22:53,756
+In frequentist theory, we never know this. Sorry. We never know what mean is. Instead, we try to estimate mean using sample mean. Okay. And...
+
+19
+00:22:54,067 --> 00:23:02,028
+Sample mean is like, is an estimator of mean that you calculate from a sample.
+
+20
+00:23:11,155 --> 00:23:26,827
+So, expected value of sample mean is population mean, we said that. Now, a variance of sample mean is…
+
+21
+00:23:31,635 --> 00:23:55,435
+Varyans, Population Varyans, Divided by N. N is the number of samples we have. And this Sigma square is Population Varyans, just like Population Mean. We will never know what it is.
+
+22
+00:23:58,804 --> 00:24:01,204
+ve o dağılımı ulaştığımızı,
+
+23
+00:24:17,587 --> 00:24:40,460
+Now, we see something very obvious here. Varyans of sample mean is population variance divided by n. Now, if this n
+
+24
+00:24:43,508 --> 00:24:52,307
+If the number of samples goes to infinity, what will happen?
+
+25
+00:24:57,044 --> 00:24:57,964
+Aşılık Hesu
+
+26
+00:25:02,355 --> 00:25:06,096
+First, varyans will go to zero, right?
+
+27
+00:25:23,508 --> 00:25:31,988
+Second thing is, varans of sample mean will go to zero.
+
+28
+00:25:32,948 --> 00:25:44,827
+Second, expected value of varans, sorry, expected value of sample mean will be really, really, really close.
+
+29
+00:25:51,412 --> 00:25:54,192
+The true mean, the population mean.
+
+30
+00:25:58,483 --> 00:26:24,483
+So, that means you should have as many samples as you can. So, number of samples, n, is important. If you can gather more samples, then your estimate...
+
+31
+00:26:26,067 --> 00:26:40,907
+Your sample mean's variance will go to zero, so your estimates will be better, and mean will be...
+
+32
+00:26:45,940 --> 00:27:04,800
+expected value of sample mean will be closer to true mean, and varian of your expectations, varian of your estimates will go down.
+
+33
+00:27:23,827 --> 00:27:49,387
+So, that was sample mean. And we will need sample mean. So, we have to do that. We have to learn it. Now, I said to you we will learn two important laws.
+
+34
+00:27:51,700 --> 00:27:56,700
+Bir de, weak love of large numbers.
+
+35
+00:27:58,700 --> 00:28:03,700
+Bir de, strong love of large numbers, too.
+
+36
+00:28:03,700 --> 00:28:06,700
+They are very close to each other.
+
+37
+00:28:08,700 --> 00:28:11,700
+I'm not sure what their differences are.
+
+38
+00:28:11,700 --> 00:28:17,700
+Here we will learn weak love of large numbers.
+
+39
+00:28:20,564 --> 00:28:25,564
+Now, what does this Vehicle of Large Numbers Theorem say?
+
+40
+00:28:28,564 --> 00:28:34,564
+Let's see. So, you have, we have again a sample.
+
+41
+00:28:37,564 --> 00:28:39,564
+A sample of N.
+
+42
+00:28:42,564 --> 00:28:46,564
+And these are IID, independent.
+
+43
+00:28:47,667 --> 00:28:50,667
+ve identikleri distribütüde.
+
+44
+00:28:50,667 --> 00:28:53,667
+These are random variables.
+
+45
+00:28:53,667 --> 00:28:59,667
+Their expected value is finite.
+
+46
+00:28:59,667 --> 00:29:09,667
+So, here it's shown as less than, sorry, less than infinite.
+
+47
+00:29:12,435 --> 00:29:20,035
+So, less than infinite is a short shortcut notation, short hand notation for finite.
+
+48
+00:29:20,035 --> 00:29:37,235
+So, this is a finite number, expected value of these xi, x1, x2, etc. is finite.
+
+49
+00:29:38,132 --> 00:30:04,132
+and let's call it Mu. Then, for any epsilon larger than 0, so for any given number epsilon, what does this law say? It says that as n goes to infinity,
+
+50
+00:30:05,587 --> 00:30:18,467
+As we have more and more samples, the difference between true mean and sample mean
+
+51
+00:30:25,779 --> 00:30:35,139
+being larger than that epsilon value, so the probability of that goes to zero.
+
+52
+00:30:41,011 --> 00:30:57,331
+So, probability of the difference being large goes to zero. So, if this goes to zero, the inverse will go to one, right?
+
+53
+00:30:59,471 --> 00:31:06,331
+So, in a way, probability of the difference being...
+
+54
+00:31:06,516 --> 00:31:11,756
+Any value you give it, any epsilon will be 1.
+
+55
+00:31:18,644 --> 00:31:20,183
+So you can imagine that
+
+56
+00:31:25,683 --> 00:31:27,683
+Bu sadece...
+
+57
+00:31:32,147 --> 00:31:42,147
+Probabilty of sample mean, being very very very close to mu, the true mean, is
+
+58
+00:31:46,163 --> 00:31:55,284
+true mean of these IID variables is very high.
+
+59
+00:31:57,683 --> 00:32:02,644
+So this is the weak law of large numbers.
+
+60
+00:32:06,740 --> 00:32:10,500
+Now, this notation
+
+61
+00:32:15,859 --> 00:32:17,940
+can be written as this way.
+
+62
+00:32:21,748 --> 00:32:35,427
+So, and we read it as, sample mean converges in probability to mu.
+
+63
+00:32:57,811 --> 00:33:03,371
+So basically this is just a short notation for this.
+
+64
+00:33:07,763 --> 00:33:11,383
+Ve bu, sample mean,
+
+65
+00:33:12,523 --> 00:33:13,463
+converges,
+
+66
+00:33:14,483 --> 00:33:15,443
+improbability,
+
+67
+00:33:16,403 --> 00:33:16,863
+to mean.
+
+68
+00:33:17,843 --> 00:33:18,203
+Now,
+
+69
+00:33:21,243 --> 00:33:23,063
+this can be,
+
+70
+00:33:23,303 --> 00:33:25,663
+this weak law of large numbers
+
+71
+00:33:25,663 --> 00:33:27,323
+can be proved
+
+72
+00:33:27,323 --> 00:33:29,863
+using Chebyshev's
+
+73
+00:33:29,863 --> 00:33:30,703
+inequality.
+
+74
+00:33:35,284 --> 00:33:44,084
+This is Chebyshev's inequality. This is a well-known inequality.
+
+75
+00:33:51,220 --> 00:33:55,320
+You can find it in the previous chapter in the book.
+
+76
+00:34:00,531 --> 00:34:25,652
+You can find this in the book. And it basically says that probability of sample mean minus mean, so the difference, probability of the difference being larger than epsilon is less than or equal to
+
+77
+00:34:27,539 --> 00:34:36,539
+Varyans of sample mean divided by epsilon square.
+
+78
+00:34:36,539 --> 00:34:48,539
+This is Chebyshev's inequality. You can find it in the books, in internet, etc. It's a well-known inequality.
+
+79
+00:34:52,500 --> 00:34:59,579
+So, if you start with Cevişev's inequality, you see that this part is almost same, right?
+
+80
+00:35:01,099 --> 00:35:05,059
+We have the same thing here, same probability.
+
+81
+00:35:07,079 --> 00:35:08,880
+So, these are same.
+
+82
+00:35:12,639 --> 00:35:17,324
+Now, variance of sample mean is...
+
+83
+00:35:18,003 --> 00:35:45,003
+true varyans divided by n. We have epsilon squared here. So, then n is in the denominator and n divides. And this value is constant. So,
+
+84
+00:35:45,876 --> 00:36:11,876
+true varyans is constant. We just don't know what it is. And epsilon is a constant. So, variance divided by epsilon square is a constant. And then we are dividing that constant with n.
+
+85
+00:36:16,820 --> 00:36:38,820
+ve now, this is clear, it is clear that constant divided by n goes to 0, converges to 0, as n converges to, or as n goes to infinite, right? As n goes to infinite, this will be 0.
+
+86
+00:36:43,059 --> 00:36:50,059
+The proof directly comes from Chebyshev's inequality.
+
+87
+00:37:16,947 --> 00:37:23,707
+ve we can actually visualize this, we can run some simulations,
+
+88
+00:37:28,387 --> 00:37:33,907
+you can simulate this actually very easily,
+
+89
+00:37:35,027 --> 00:37:39,067
+you will write a computer program,
+
+90
+00:37:42,627 --> 00:37:44,627
+that will create
+
+91
+00:37:48,211 --> 00:38:15,931
+let's say 20 random numbers, right, and get their sample mean, then you will create 100 sample numbers and get their sample mean, and of course there will be a mean, right.
+
+92
+00:38:16,436 --> 00:38:18,735
+There should be a mean.
+
+93
+00:38:24,500 --> 00:38:29,500
+ve bu komputer programı yazmak zorunda olabiliyor.
+
+94
+00:38:31,500 --> 00:38:33,500
+Can I write it?
+
+95
+00:38:37,500 --> 00:38:39,500
+Do I have a...
+
+96
+00:38:49,300 --> 00:38:52,300
+Let me try to write it. So first...
+
+97
+00:39:01,235 --> 00:39:04,036
+Create a Folders.
+
+98
+00:39:13,811 --> 00:39:17,811
+Kortz 09.
+
+99
+00:39:17,811 --> 00:39:18,811
+Example.
+
+100
+00:39:37,235 --> 00:39:38,188
+Hmm.
+
+101
+00:41:15,315 --> 00:41:16,043
+Töööö
+
+102
+00:41:36,340 --> 00:41:47,780
+I just opened a new code, let me call this main.py.
+
+103
+00:42:01,427 --> 00:42:04,427
+So, I want to simulate...
+
+104
+00:42:08,179 --> 00:42:11,699
+Ve büyük bir növbe.
+
+105
+00:42:14,159 --> 00:42:14,659
+So,
+
+106
+00:42:17,500 --> 00:42:22,119
+first I need to be able to create some random numbers.
+
+107
+00:42:22,799 --> 00:42:27,599
+And in Python, how do we create random numbers?
+
+108
+00:42:28,739 --> 00:42:29,899
+Does rand work?
+
+109
+00:42:32,819 --> 00:42:33,619
+Print.
+
+110
+00:42:45,588 --> 00:42:47,340
+Rinse rand.
+
+111
+00:42:59,860 --> 00:43:26,140
+I need to find, I didn't code in Python forever, since forever. So let me ask, how do I create a random number in Python? In Python, how do I create a random number in Python?
+
+112
+00:43:26,804 --> 00:43:28,084
+Random
+
+113
+00:43:30,124 --> 00:43:31,164
+Bumper
+
+114
+00:43:38,739 --> 00:43:40,739
+Okay, derize random.
+
+115
+00:43:45,396 --> 00:44:07,396
+Random, random. Okay. So first you need to import the random library. Import random. Okay, so, random, random. Okay.
+
+116
+00:44:10,804 --> 00:44:23,604
+So we then define this function runt, which just calls random random, and this just returns numbers between 0 and 1.
+
+117
+00:44:28,884 --> 00:44:32,876
+And will I be able to run this?
+
+118
+00:44:39,987 --> 00:45:05,467
+So, Python 3, main.py. Good. So, I have a, I can create random numbers between 1 and 0. And let's say, let's, let's, let us create some,
+
+119
+00:45:08,019 --> 00:45:17,019
+Let's create a function that will give us an observation. So def observe.
+
+120
+00:45:21,811 --> 00:45:41,411
+Now, observation is, this will give us one observation, so, let's say, or mu is three.
+
+121
+00:45:45,972 --> 00:45:47,972
+Bu, bu, true mean.
+
+122
+00:45:56,659 --> 00:45:58,659
+Bu, bu, actual true mean.
+
+123
+00:46:00,659 --> 00:46:15,659
+But, when we observe somehow, because of some problem, when you observe something, you always have some error, right?
+
+124
+00:46:19,668 --> 00:46:21,483
+Some random error.
+
+125
+00:46:24,820 --> 00:46:28,000
+Let's say that error is random.
+
+126
+00:46:35,155 --> 00:46:46,155
+So, if you print observe, we will get numbers close to 3, but never 3, right?
+
+127
+00:46:59,635 --> 00:47:04,016
+I didn't return anything in observe, so return.
+
+128
+00:47:06,956 --> 00:47:18,275
+So, what we will observe is the real true mean plus some kind of error.
+
+129
+00:47:22,260 --> 00:47:27,260
+ve, and that error is random.
+
+130
+00:47:27,260 --> 00:47:28,260
+Okay.
+
+131
+00:47:28,260 --> 00:47:41,260
+So, let's see, 3.7, 3.3, 3.5, 3.5 again, 3.9.
+
+132
+00:47:41,260 --> 00:47:48,260
+So, these random numbers are between 0 and 1.
+
+133
+00:47:48,692 --> 00:48:13,672
+We never get negative values. So let's subtract 0.5 from this. And now our random numbers will be between minus 0.5 and positive 0.5.
+
+134
+00:48:15,956 --> 00:48:19,776
+So this way it can be less than 3 too, right?
+
+135
+00:48:20,635 --> 00:48:22,236
+3 is our true mean.
+
+136
+00:48:23,756 --> 00:48:29,476
+So 2.7, 3.3, 3.2.
+
+137
+00:48:29,476 --> 00:48:38,175
+So this error defines our variance, right?
+
+138
+00:48:39,115 --> 00:48:43,476
+If we maybe, let's say...
+
+139
+00:48:45,907 --> 00:48:54,387
+Let's multiply this with some number so we can change the variance. Let's say
+
+140
+00:48:59,347 --> 00:49:19,347
+Varyans. I am not sure if this is, this would be variance or standard deviation. So, I will just say this mag from magnitude. And let's say magnitude is 2.
+
+141
+00:49:26,643 --> 00:49:30,143
+So, first let me multiply this by 2.
+
+142
+00:49:32,503 --> 00:49:38,583
+This way, this part will be values between minus 1 and 1.
+
+143
+00:49:40,304 --> 00:49:49,943
+And then, when I multiply it with whatever value I want, let's say 5.
+
+144
+00:49:52,307 --> 00:49:56,688
+The values will be between minus 5 and 5.
+
+145
+00:49:57,887 --> 00:49:59,608
+So, let's see.
+
+146
+00:50:01,148 --> 00:50:02,027
+7.
+
+147
+00:50:03,088 --> 00:50:04,407
+So, remember 3.
+
+148
+00:50:06,208 --> 00:50:09,728
+And values between minus 5 and 5.
+
+149
+00:50:09,867 --> 00:50:11,847
+So, maximum it can be 8.
+
+150
+00:50:12,668 --> 00:50:17,788
+Minimum it can be 3 minus 5 minus 2.
+
+151
+00:50:18,612 --> 00:50:22,032
+Values should be between minus 2 and 8.
+
+152
+00:50:33,043 --> 00:50:35,043
+Ok.
+
+153
+00:50:35,043 --> 00:50:37,043
+So...
+
+154
+00:50:41,108 --> 00:50:56,044
+So, magnitude is related to variance somehow. I am not sure is, will that be variance or standard deviation? We will see. So, let's try to...
+
+155
+00:50:59,443 --> 00:51:26,443
+get a sample, right? So let's write a function called sample. And sample will get a number. So n, how many observations we will have. So let's say we have some observations.
+
+156
+00:51:26,579 --> 00:51:43,579
+We have an empty list of observations and we will add n observations into this array and then we will return it.
+
+157
+00:51:43,579 --> 00:51:53,324
+So now let's print some samples. Let's print sample of just one.
+
+158
+00:51:54,387 --> 00:51:56,331
+Orada, orda, let's say.
+
+159
+00:52:03,539 --> 00:52:04,539
+Right.
+
+160
+00:52:06,539 --> 00:52:11,539
+This is a, these are samples of two observations.
+
+161
+00:52:18,387 --> 00:52:19,340
+Now,
+
+162
+00:52:27,059 --> 00:52:41,059
+true mean was, what was true mean? 3. So let's try to calculate sample mean. So def sample mean.
+
+163
+00:52:49,492 --> 00:53:05,492
+It will get the observations, and it will sum all the values in the observations, and divide by number of elements in the observations, very simple, and return it.
+
+164
+00:53:05,492 --> 00:53:12,492
+So, then let's do this, let's print the sample.
+
+165
+00:53:12,492 --> 00:53:16,140
+So, let's do something like this.
+
+166
+00:53:20,179 --> 00:53:26,179
+S, S is a sample of 2.
+
+167
+00:53:30,579 --> 00:53:51,979
+ve samplemean, let's call it samplemean, is just a samplemean of s, then we can print samplemean, we can print the sample and then samplemean.
+
+168
+00:53:55,315 --> 00:54:13,315
+So basically, we want to create a sample and then find its mean. And we want to see how close that mean is to 3. Because true mean is 3, right?
+
+169
+00:54:15,315 --> 00:54:23,211
+So, we start with only n equals to 2 sample.
+
+170
+00:54:23,795 --> 00:54:28,475
+So, let me write even that as two.
+
+171
+00:54:42,068 --> 00:54:43,068
+Okay.
+
+172
+00:54:45,668 --> 00:54:52,068
+Okay, so we have two samples and sample mean was 4.
+
+173
+00:54:55,268 --> 00:54:57,748
+Sample mean was 0.7.
+
+174
+00:54:59,068 --> 00:55:02,068
+Sample mean was 1.4.
+
+175
+00:55:04,868 --> 00:55:06,068
+So as you see,
+
+176
+00:55:19,699 --> 00:55:21,699
+or sample mean
+
+177
+00:55:23,139 --> 00:55:26,139
+is not really close to 3,
+
+178
+00:55:26,139 --> 00:55:31,139
+but if we get more sample, let's say we get 20 samples
+
+179
+00:55:32,419 --> 00:55:33,931
+instead of 2.
+
+180
+00:55:37,492 --> 00:55:40,252
+Now, sample mean is 2.6.
+
+181
+00:55:46,252 --> 00:55:48,552
+Now, 3.6.
+
+182
+00:55:48,552 --> 00:55:53,572
+So, it is closer to 3, right?
+
+183
+00:55:57,204 --> 00:55:58,764
+It's closer to 3 now.
+
+184
+00:56:00,944 --> 00:56:04,664
+Let's get 200 samples.
+
+185
+00:56:04,664 --> 00:56:09,744
+A sample of 200 observations.
+
+186
+00:56:13,844 --> 00:56:17,984
+Now 2.7.
+
+187
+00:56:19,704 --> 00:56:22,364
+3.04.
+
+188
+00:56:23,507 --> 00:56:25,507
+3, basically.
+
+189
+00:56:28,507 --> 00:56:34,507
+Again, basically 3.
+
+190
+00:56:34,507 --> 00:56:38,507
+So, as we increase number of samples,
+
+191
+00:56:39,507 --> 00:56:41,507
+the sample mean
+
+192
+00:56:41,507 --> 00:56:47,507
+start to get really close to our true mean, right?
+
+193
+00:56:47,507 --> 00:56:49,507
+True mean was 3.
+
+194
+00:56:50,963 --> 00:56:54,963
+ve 2000'ler,
+
+195
+00:57:01,364 --> 00:57:12,524
+3.06, 2.9, 3.0.
+
+196
+00:57:12,524 --> 00:57:25,364
+So, where you see that the mean and variance,
+
+197
+00:57:30,675 --> 00:57:34,095
+Let's say, let's make this 20.000.
+
+198
+00:57:47,923 --> 00:57:51,923
+Right. So, the mean...
+
+199
+00:57:56,371 --> 00:58:23,371
+ve samplemein. Şimdi, notice, every time we run this program, samplemein, is different, right? Samplemein, every time we run the program, every time we get a new sample, we get a new sample mean. So, in a way,
+
+200
+00:58:23,760 --> 00:58:31,760
+Eğitim, bir sample mean we have is actually a random variable, right?
+
+201
+00:58:32,760 --> 00:58:44,760
+So, what we actually need to do is, what is the expected value of sample means, right?
+
+202
+00:58:44,760 --> 00:58:49,760
+So, how can we calculate that?
+
+203
+00:58:51,380 --> 00:58:53,380
+We will actually
+
+204
+00:58:59,987 --> 00:59:02,987
+Let's do something like this. Let's create...
+
+205
+00:59:13,172 --> 00:59:16,612
+Let's create a sample mean sample.
+
+206
+00:59:18,612 --> 00:59:20,251
+So def.
+
+207
+00:59:23,987 --> 00:59:31,987
+So, instead of a single sample mean, let's do this.
+
+208
+00:59:31,987 --> 00:59:33,987
+Def.
+
+209
+00:59:43,764 --> 00:59:44,764
+Ok,
+
+210
+00:59:54,771 --> 00:59:55,771
+Sample
+
+211
+00:59:59,668 --> 01:00:04,268
+Min, Of
+
+212
+01:00:10,643 --> 01:00:11,643
+SampleMe.
+
+213
+01:00:20,371 --> 01:00:20,871
+So,
+
+214
+01:00:32,884 --> 01:00:51,755
+So here, instead of a single sample, we will create m samples, then we will get their means, right? And we will...
+
+215
+01:00:57,043 --> 01:01:09,963
+we will get their means. So, let's call this sample of sample means first. Sample of sample means. And...
+
+216
+01:01:15,860 --> 01:01:38,300
+So, let's get a sample of sample means. Let me call this SSM from sample of sample means. And here, I want to have samples of size 2, and I want to have 5 of those.
+
+217
+01:01:42,291 --> 01:01:44,291
+ve bunu izledim.
+
+218
+01:01:52,275 --> 01:02:08,355
+So, we have this. Notice, these are all sample means themselves. So, we got five sample means.
+
+219
+01:02:10,855 --> 01:02:17,076
+Because, remember, we are interested in expected value of sample mean.
+
+220
+01:02:19,251 --> 01:02:27,251
+expected value of sample mean will be estimated by
+
+221
+01:02:31,572 --> 01:02:33,572
+Sample mean of this.
+
+222
+01:02:35,572 --> 01:02:35,891
+So,
+
+223
+01:02:38,292 --> 01:02:38,752
+now,
+
+224
+01:02:40,692 --> 01:02:41,412
+this will be
+
+225
+01:02:42,412 --> 01:02:43,412
+sample mean.
+
+226
+01:02:51,860 --> 01:03:03,140
+So, sample mean of sample means. Or we can say, yes, sample mean of sample means.
+
+227
+01:03:07,284 --> 01:03:15,404
+ve altyazı, bir
+
+228
+01:03:27,860 --> 01:03:35,600
+So, I will write the sample mean here, and next to it sample mean of these samples.
+
+229
+01:03:50,260 --> 01:04:11,260
+So, sample mean of samples is around sample mean of sample means. So, this will be estimating mean of the sample, expected value of these sample means. So, this estimates...
+
+230
+01:04:13,260 --> 01:04:15,260
+Estimates...
+
+231
+01:04:19,572 --> 01:04:28,512
+expected value, or let me write this way, expected value of,
+
+232
+01:04:34,195 --> 01:04:35,195
+Sample mean.
+
+233
+01:04:42,516 --> 01:04:45,576
+So, let me, let me
+
+234
+01:04:50,228 --> 01:04:54,068
+Share, the whole screen.
+
+235
+01:06:46,643 --> 01:06:48,643
+Sesim geliyor mu arkadaşlar.
+
+236
+01:06:52,500 --> 01:06:53,500
+Evet hocam.
+
+237
+01:06:55,699 --> 01:06:59,500
+Sağ olun, bir düştüm, bağlantım kesildi.
+
+238
+01:07:03,155 --> 01:07:08,155
+So, let me retry.
+
+239
+01:07:22,483 --> 01:07:32,983
+Bu program we are writing, and this is the slide.
+
+240
+01:07:58,771 --> 01:08:02,091
+I am trying to
+
+241
+01:08:05,492 --> 01:08:06,492
+Evet.
+
+242
+01:08:11,315 --> 01:08:27,135
+So, remember, so, we had n observations from, so we had n observations in a sample.
+
+243
+01:08:40,083 --> 01:08:48,363
+So, we have a sample of n, this function gives us this sample.
+
+244
+01:08:49,983 --> 01:09:00,683
+Then we can get its mean, sample mean, by just summing and then dividing by number of elements n.
+
+245
+01:09:02,283 --> 01:09:06,583
+Now, what we are interested in is,
+
+246
+01:09:07,347 --> 01:09:33,728
+expected value of these sample means. For that, to get an expected value, now an expected value is a true value, we never know it, so to create a simulation, we will also, we should also have a sample mean of this.
+
+247
+01:09:35,667 --> 01:09:59,507
+Ok, so, so we have sample mean of these samples. That's what I am trying to do here. It will not be exact mean, but it will estimate it, right? It will estimate the expected value.
+
+248
+01:10:04,340 --> 01:10:29,380
+And let's also try to write the variance. Now, how do we calculate variance of a sample? Let's define sample variance. Very nice. It understood.
+
+249
+01:10:30,868 --> 01:10:57,788
+So, sample variance would be, we first get the sample mean, then we subtract mean from each x, and take the square, where x is in one of these observations, and then we sum them.
+
+250
+01:10:58,195 --> 01:11:04,816
+Then we divide by n-1, sample variance. I think we didn't learn it yet.
+
+251
+01:11:16,275 --> 01:11:21,775
+Did you guys learn sample variants? I think you should have learned it so far.
+
+252
+01:11:29,171 --> 01:11:31,731
+Sample varyansı öğrendiniz mi arkadaşlar?
+
+253
+01:11:49,203 --> 01:11:51,563
+Sample variyans,
+
+254
+01:11:54,963 --> 01:11:58,724
+Sample variance estimates variance.
+
+255
+01:11:58,724 --> 01:11:59,724
+Okay.
+
+256
+01:12:00,923 --> 01:12:03,164
+So sample variance.
+
+257
+01:12:06,452 --> 01:12:08,452
+Estimate variance.
+
+258
+01:12:08,452 --> 01:12:21,452
+So, what you do is, subtract from the value, subtract the mean, take the square,
+
+259
+01:12:27,764 --> 01:12:29,764
+sum all of these
+
+260
+01:12:33,747 --> 01:12:45,547
+and divide by, you might guess where we should divide by n, but we will divide by n minus 1.
+
+261
+01:12:50,515 --> 01:13:06,715
+We will learn why this is the case later. And let's call this for the time being Sv, sample variance. Okay. And this estimates variance of x.
+
+262
+01:13:17,619 --> 01:13:19,779
+varianz of x.
+
+263
+01:13:19,939 --> 01:13:23,159
+So, it's not exactly varianz of x,
+
+264
+01:13:23,800 --> 01:13:30,239
+but it gives us an idea of what varianz would be.
+
+265
+01:13:31,699 --> 01:13:34,600
+Now, what I want is,
+
+266
+01:13:34,880 --> 01:13:36,559
+I get the sample mean,
+
+267
+01:13:36,559 --> 01:13:40,479
+and now I want to get sample,
+
+268
+01:13:41,079 --> 01:13:43,300
+varianz of sample means.
+
+269
+01:13:44,212 --> 01:13:46,060
+Bu, bu
+
+270
+01:13:50,707 --> 01:13:55,707
+So, sample, varyans of, sample, means.
+
+271
+01:13:57,707 --> 01:13:59,707
+And I will use the,
+
+272
+01:14:00,707 --> 01:14:03,707
+Varyans calculator, I just,
+
+273
+01:14:04,707 --> 01:14:05,707
+Coded.
+
+274
+01:14:06,707 --> 01:14:07,707
+And I will write,
+
+275
+01:14:08,707 --> 01:14:09,707
+Those.
+
+276
+01:14:09,707 --> 01:14:10,707
+So,
+
+277
+01:14:11,707 --> 01:14:12,707
+Let me write some,
+
+278
+01:14:13,707 --> 01:14:16,707
+Information here, let me write,
+
+279
+01:14:22,579 --> 01:14:26,880
+Sample mean, of sample means.
+
+280
+01:14:30,195 --> 01:14:31,948
+bu şekilde
+
+281
+01:14:35,283 --> 01:14:37,983
+And this is sample of sample means.
+
+282
+01:14:39,443 --> 01:14:40,763
+And now,
+
+283
+01:14:43,683 --> 01:14:49,283
+Variance of sample of sample means.
+
+284
+01:14:50,603 --> 01:14:53,123
+Let me write it this way.
+
+285
+01:14:54,863 --> 01:14:56,663
+And let me run this.
+
+286
+01:15:05,555 --> 01:15:11,395
+So, I have these five sample means.
+
+287
+01:15:13,915 --> 01:15:22,735
+Their mean is 3.9 and their variances 1.90.
+
+288
+01:15:23,235 --> 01:15:30,195
+Now, what our lecture says is, is f as n goes to infinity,
+
+289
+01:15:31,796 --> 01:15:33,796
+2 things should happen.
+
+290
+01:15:33,796 --> 01:15:34,796
+1.
+
+291
+01:15:35,996 --> 01:15:39,996
+Sample mean should get closer to true mean.
+
+292
+01:15:39,996 --> 01:15:41,996
+So, in our case,
+
+293
+01:15:44,596 --> 01:15:49,596
+Sample of sample means, this one should be very close to 3.
+
+294
+01:15:50,396 --> 01:15:52,195
+And variance,
+
+295
+01:15:52,396 --> 01:15:54,396
+this variance
+
+296
+01:15:54,596 --> 01:15:55,996
+should be
+
+297
+01:15:56,659 --> 01:15:59,420
+0, değil mi?
+
+298
+01:16:19,347 --> 01:16:32,948
+ve, let's say, 100% of these to get a better expectation estimate. So, let's do that.
+
+299
+01:16:35,448 --> 01:16:40,648
+Now, sample of sample means is very close to 3.
+
+300
+01:16:41,460 --> 01:16:55,460
+Varyans of sample means is close to 0.3. Let's have 200. n is 200. n is 200.
+
+301
+01:17:13,140 --> 01:17:19,140
+Varyansı 0.04, sample mean 2.99.
+
+302
+01:17:19,140 --> 01:17:22,140
+Let's have 2000.
+
+303
+01:17:28,307 --> 01:17:31,628
+Varyansı now 0, 0, 0, 3.
+
+304
+01:17:31,628 --> 01:17:35,128
+This is again very close to 3.
+
+305
+01:17:35,128 --> 01:17:44,148
+Let's have 20,000 observations.
+
+306
+01:17:44,148 --> 01:17:50,388
+Now we have 3 zeros after 0.
+
+307
+01:17:50,388 --> 01:17:52,388
+Sample mean.
+
+308
+01:17:53,076 --> 01:18:11,475
+Varyans of the sample means is going to zero, as you see. And now sample means mean is 3.00 something. It's very close to true mean, right? Let's have 200,000.
+
+309
+01:18:15,604 --> 01:18:20,604
+Now it's taking a bit because it's creating a lot of random numbers.
+
+310
+01:18:26,604 --> 01:18:35,363
+Notice that variance is now e to the minus 5, so very close to zero.
+
+311
+01:18:36,804 --> 01:18:40,604
+Anyways, I hope this was a nice...
+
+312
+01:18:44,404 --> 01:19:09,836
+Bu güzel bir örneğin, bu nasıl bir örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin
+
+313
+01:19:11,731 --> 01:19:26,012
+Ah, we could have also see weak love of large numbers, but you can simulate this yourself based on this example.
+
+314
+01:19:26,731 --> 01:19:35,532
+We will be losing a lot of time if we continue the simulation, but I hope it gave you some idea.
+
+315
+01:19:39,956 --> 01:19:44,775
+And we were here. We were doing a simulation like this.
+
+316
+01:19:45,516 --> 01:19:51,735
+All we needed to is, after we creating these numbers, we need to draw a plot.
+
+317
+01:19:51,735 --> 01:19:53,416
+And it's not that hard.
+
+318
+01:19:55,036 --> 01:19:58,355
+In Python, you have libraries for this.
+
+319
+01:20:00,136 --> 01:20:04,976
+And then we are going to central limit theorem.
+
+320
+01:20:05,619 --> 01:20:07,619
+Bu önemli bir şey.
+
+321
+01:20:07,619 --> 01:20:11,619
+Let's have a break till 10.20.
+
+322
+01:20:11,619 --> 01:20:16,619
+And after that we will continue with central limit theorem.
+
+323
+01:33:21,747 --> 01:33:24,467
+Arkadaşlar, merhabalar, sesim geliyor mu?
+
+324
+01:34:06,612 --> 01:34:08,612
+Evet, şimdi
+
+325
+01:34:18,996 --> 01:34:25,996
+So, we will look at this very important central limit theorem.
+
+326
+01:34:25,996 --> 01:34:38,996
+So, this says that, again, let's say we have a sample of n observations.
+
+327
+01:34:38,996 --> 01:34:41,996
+Again, these are iid.
+
+328
+01:34:44,851 --> 01:34:51,311
+independent, identically distributed, random variables.
+
+329
+01:34:52,311 --> 01:34:56,912
+They have a finite expected value.
+
+330
+01:34:58,291 --> 01:35:01,711
+They have a finite variance.
+
+331
+01:35:04,211 --> 01:35:05,311
+Now,
+
+332
+01:35:09,300 --> 01:35:11,300
+Look at this.
+
+333
+01:35:14,300 --> 01:35:22,300
+We are subtracting expected value from random variable.
+
+334
+01:35:25,619 --> 01:35:31,640
+Then dividing by this sigma over square root of n.
+
+335
+01:35:33,039 --> 01:35:35,119
+And you can recognize this.
+
+336
+01:35:35,239 --> 01:35:40,159
+This is variance of, sorry, this is standard deviation of sample mean.
+
+337
+01:35:40,960 --> 01:35:49,460
+So basically, we are subtracting the mean of sample mean and dividing by its standard deviation.
+
+338
+01:35:52,467 --> 01:35:54,467
+normalizing it.
+
+339
+01:36:02,355 --> 01:36:09,255
+And this, let's call this Z of n.
+
+340
+01:36:10,755 --> 01:36:11,115
+Okay.
+
+341
+01:36:12,115 --> 01:36:22,175
+This Z of n converges in distribution to standard normal random variable.
+
+342
+01:36:31,988 --> 01:36:41,488
+The distribution looks like a normal distribution, where mean is 0, standard deviation is 1.
+
+343
+01:36:59,764 --> 01:37:22,164
+What does this say? It says that equivalently as n goes to infinite, probability of z n being smaller than a value is few of x. Few of x is a standard normal cumulative distribution function.
+
+344
+01:37:27,636 --> 01:37:29,636
+Cumulative distribution
+
+345
+01:37:31,636 --> 01:37:32,636
+of this
+
+346
+01:37:33,636 --> 01:37:36,636
+becomes standard normal's cumulative distribution
+
+347
+01:37:38,636 --> 01:37:39,636
+for all x.
+
+348
+01:37:48,948 --> 01:37:49,836
+Uhhh...
+
+349
+01:37:52,884 --> 01:37:54,884
+So, this is a...
+
+350
+01:37:55,884 --> 01:37:59,884
+This says that the sum...
+
+351
+01:37:59,884 --> 01:38:02,663
+Remember, there is a sum there.
+
+352
+01:38:03,224 --> 01:38:06,564
+Or if you are talking about averages, again you have a sum.
+
+353
+01:38:07,884 --> 01:38:13,764
+The sum of random variables become approximately normal.
+
+354
+01:38:15,123 --> 01:38:19,884
+So, if you sum something, their distribution...
+
+355
+01:38:21,524 --> 01:38:23,524
+normal distribution.
+
+356
+01:38:25,524 --> 01:38:31,524
+The sum will be, if you have enough n, the sum will be normal distribution.
+
+357
+01:38:33,524 --> 01:38:42,524
+And, this is very general, meaning, the xi can be discrete, continuous, or mixed.
+
+358
+01:38:44,524 --> 01:38:48,524
+And, original distribution doesn't need to be
+
+359
+01:38:49,363 --> 01:38:55,963
+in any form, it can be skewed, uniform, discrete, continuous.
+
+360
+01:38:56,963 --> 01:39:00,763
+This result holds as n go to infinity.
+
+361
+01:39:08,979 --> 01:39:17,979
+For example, let's say you have x1, x2, xn, each is a Bernoulli.
+
+362
+01:39:20,979 --> 01:39:33,979
+Then their expected value, each of these have expected value p, each of these has variance p times 1 minus p.
+
+363
+01:39:35,188 --> 01:39:42,188
+Now, if you sum them, you get a binomial distribution, remember?
+
+364
+01:39:42,188 --> 01:39:53,188
+Now, if you normalize that, how do you normalize? Pardon, sorry.
+
+365
+01:39:53,188 --> 01:40:01,188
+Mean of binomial distribution would be np.
+
+366
+01:40:02,804 --> 01:40:18,923
+ve varyansı, binomiyal distribisyon, n times p times 1 minus p, to get standard deviation, you take the square root,
+
+367
+01:40:22,884 --> 01:40:29,443
+and as n goes to infinity, this goes to normal distribution. So, if you look at this,
+
+368
+01:40:29,939 --> 01:40:34,100
+Graph, it looks like normal distribution.
+
+369
+01:40:38,003 --> 01:40:47,003
+ve if you have more and more samples, this will be really looking like normal distribution.
+
+370
+01:40:57,332 --> 01:40:58,332
+Şimdi,
+
+371
+01:41:05,587 --> 01:41:28,587
+In the problems when you need to use or apply the CLT or central limit theorem, in general you will have a sum, so you write your sum, you find expected value and variance of this sum.
+
+372
+01:41:31,539 --> 01:41:33,640
+And you do this normalization.
+
+373
+01:41:35,239 --> 01:41:38,840
+So, you subtract expected value.
+
+374
+01:41:40,380 --> 01:41:43,739
+Divide by standard deviation.
+
+375
+01:41:45,180 --> 01:41:50,000
+After that, you can assume this Z is normal.
+
+376
+01:41:51,859 --> 01:41:53,840
+In fact, it's standard normal.
+
+377
+01:41:55,840 --> 01:41:58,619
+Meaning, mean is 0.
+
+378
+01:41:59,988 --> 01:42:26,468
+variyansı 1. So, that's the idea. Now, one thing you need to be careful is, we are doing, and this will be an approximation. What we will do is, when we are approximating discrete variables,
+
+379
+01:42:27,891 --> 01:42:34,011
+ve normal dağılım, normal dağılım,
+
+380
+01:42:35,612 --> 01:42:37,771
+ve normal dağılım,
+
+381
+01:42:47,252 --> 01:42:53,092
+Now we want to approximate it with a continuous distribution.
+
+382
+01:42:53,092 --> 01:42:56,612
+So
+
+383
+01:43:03,060 --> 01:43:04,500
+Remember that
+
+384
+01:43:18,996 --> 01:43:27,336
+Remember that, let's consider this value, let's say this is 2.
+
+385
+01:43:30,036 --> 01:43:32,816
+So this here is 2, here is 2, 2.
+
+386
+01:43:32,816 --> 01:43:33,855
+Okay.
+
+387
+01:43:35,136 --> 01:43:35,976
+2.
+
+388
+01:43:41,235 --> 01:43:53,235
+Now, probability in discrete random variables at 2, at this discrete random variable at 2, the probability will not be 0.
+
+389
+01:43:53,235 --> 01:44:02,235
+But in continuous distribution, the probability of 2 is what? Just 0.
+
+390
+01:44:09,108 --> 01:44:35,908
+Um, so, we need a, we need a, correction. We need a correction. Um, what we can do is, let's assume that the two is,
+
+391
+01:44:38,323 --> 01:44:54,724
+In continuous case, instead of 2, let's use probability of being, value being between 1.5,
+
+392
+01:45:04,692 --> 01:45:06,539
+ve 2.5
+
+393
+01:45:12,756 --> 01:45:14,216
+And this is not 0.
+
+394
+01:45:15,716 --> 01:45:16,275
+Right?
+
+395
+01:45:17,655 --> 01:45:23,956
+And it will be approximately equal to probability of 2.
+
+396
+01:45:23,956 --> 01:45:24,976
+Okay?
+
+397
+01:45:25,496 --> 01:45:38,336
+So, what we do is we are subtracting 0.5 and adding 0.5.
+
+398
+01:45:41,684 --> 01:46:09,404
+We are subtracting 0.5 from the lower bound. We are adding 0.5 to upper bound. So we are kinda making the width larger so that we can add these parts, right?
+
+399
+01:46:09,652 --> 01:46:11,311
+We can add these parts.
+
+400
+01:46:13,431 --> 01:46:16,471
+This is called continuity correction.
+
+401
+01:46:18,051 --> 01:46:27,212
+And you have to do it whenever you approximate a discrete random variable with a continuous random variable.
+
+402
+01:46:28,131 --> 01:46:30,771
+So this is discrete.
+
+403
+01:46:41,108 --> 01:46:48,108
+Bu, normal random variable is a continuous random variable.
+
+404
+01:46:48,108 --> 01:46:50,108
+So, we have to do this.
+
+405
+01:46:50,108 --> 01:46:54,108
+We have to do continuity correction.
+
+406
+01:47:04,787 --> 01:47:07,467
+Let's look at an example.
+
+407
+01:47:15,828 --> 01:47:41,828
+So, we have a bank teller service. So, there is a bank teller, and he or she serves customers independently. So, the serving time of one customer doesn't...
+
+408
+01:47:42,484 --> 01:47:47,704
+or doesn't depend on serving time of another customer.
+
+409
+01:47:49,044 --> 01:47:58,884
+For each customer, service time XI has mean two minutes.
+
+410
+01:48:00,564 --> 01:48:06,564
+So he or she, the bank teller, serves each customer.
+
+411
+01:48:08,595 --> 01:48:30,995
+around 2 minutes, sometimes less, sometimes more, but in the mean is 2 minutes. And varian is 1. And let's say we are interested in the total time.
+
+412
+01:48:33,524 --> 01:48:48,404
+for serving 50 customers and let's call it y, right? So, what is the probability that serving 50 customers
+
+413
+01:48:53,427 --> 01:49:00,988
+...takes time between 90 minutes and 110 minutes, right?
+
+414
+01:49:01,627 --> 01:49:04,523
+So, what is the probability that...
+
+415
+01:49:07,731 --> 01:49:30,611
+Time for serving is this. Now, let's look at this solution. So, y is the sum of these 50. So, this is customer 1, customer 2, customer 3. This is customer 50.
+
+416
+01:49:32,180 --> 01:49:37,680
+ve 2 minutes, 1.8 minutes, 3 minutes, et cetera.
+
+417
+01:49:37,680 --> 01:49:41,680
+The total serving time is y.
+
+418
+01:49:41,680 --> 01:49:47,680
+So, what is the expected time?
+
+419
+01:49:47,680 --> 01:49:55,680
+Well, we have 50 customers, expected serving time for each is two.
+
+420
+01:49:55,680 --> 01:49:59,980
+So, normally we expect
+
+421
+01:50:00,051 --> 01:50:05,572
+The expected time for y is 100.
+
+422
+01:50:08,411 --> 01:50:10,011
+And what is variance?
+
+423
+01:50:11,152 --> 01:50:14,811
+Again, 1 was the variance of 1 customer.
+
+424
+01:50:15,951 --> 01:50:18,511
+We are multiplying that with 50.
+
+425
+01:50:19,031 --> 01:50:21,572
+So 50 minutes will be the variance.
+
+426
+01:50:23,347 --> 01:50:30,067
+ve standard deviation is just square root of variance, so that's 7.07.
+
+427
+01:50:33,524 --> 01:51:01,024
+7.07. Now, how will we use CLT? We are interested in this, probability of y being between 90 and 110. We do the normalization, so we subtract mean from 90, we divide by standard deviation.
+
+428
+01:51:02,771 --> 01:51:25,771
+We will do this for both lower and upper bounds. So we have 0, we have minus 1.45 and plus 1.45, right? So probability of being...
+
+429
+01:51:35,796 --> 01:51:36,796
+binom,
+
+430
+01:51:39,496 --> 01:51:41,496
+between these two values.
+
+431
+01:51:43,596 --> 01:51:45,296
+Let me clean this a bit.
+
+432
+01:51:50,452 --> 01:51:54,731
+So basically, now z
+
+433
+01:52:02,579 --> 01:52:10,579
+Z is this and it's Z is distributed by standard normal distribution.
+
+434
+01:52:14,804 --> 01:52:17,804
+Bayes Central Limit Teorem, CLT
+
+435
+01:52:26,804 --> 01:52:32,203
+So, standard normal distribution is symmetric around zero.
+
+436
+01:52:35,083 --> 01:52:35,463
+Right?
+
+437
+01:52:36,863 --> 01:52:37,564
+And
+
+438
+01:52:37,564 --> 01:52:41,144
+Let's say this is
+
+439
+01:52:41,144 --> 01:52:43,123
+minus
+
+440
+01:52:43,123 --> 01:52:46,904
+1.41
+
+441
+01:52:51,060 --> 01:52:57,540
+ve bu, 1.41.
+
+442
+01:53:17,171 --> 01:53:22,171
+Bu, bu bölümde ihtiyacımız var.
+
+443
+01:53:28,595 --> 01:53:48,595
+Um, now, what you can do is, you can take the cumulative value of 1.41, which would be this.
+
+444
+01:53:54,452 --> 01:53:55,452
+Evet, let me...
+
+445
+01:54:00,051 --> 01:54:01,931
+So, which would be
+
+446
+01:54:05,171 --> 01:54:05,831
+This.
+
+447
+01:54:17,203 --> 01:54:18,203
+Evet.
+
+448
+01:54:25,524 --> 01:54:30,524
+Cumulative value of 1.45, this guy here.
+
+449
+01:54:32,524 --> 01:54:41,524
+And you can subtract cumulative value of lower bound, which would be this here.
+
+450
+01:54:56,083 --> 01:55:09,083
+ve if you do that subtraction, you end up with this area, from minus 1.45 to positive 1.45.
+
+451
+01:55:12,083 --> 01:55:17,083
+And now these values...
+
+452
+01:55:27,220 --> 01:55:54,476
+Bu, bu
+
+453
+01:55:56,243 --> 01:55:59,003
+if it has this list
+
+454
+01:56:29,460 --> 01:56:31,460
+Bu da bu da bu da.
+
+455
+01:56:32,020 --> 01:56:34,460
+Bu da bu da.
+
+456
+01:56:57,779 --> 01:57:14,779
+In old books, usually they gave these tables lists, but this author just gave matlab function for obtaining these.
+
+457
+01:57:20,979 --> 01:57:24,979
+So, instead of MATLAB, I am using Python.
+
+458
+01:57:25,979 --> 01:57:30,979
+So, let's try to find it using Python.
+
+459
+01:57:34,979 --> 01:57:40,979
+Let me first learn what is the function to use for this in Python.
+
+460
+01:57:43,979 --> 01:57:45,867
+I will write
+
+461
+01:57:48,787 --> 01:58:02,787
+standard normal CDF values in Python.
+
+462
+01:58:35,539 --> 01:58:36,539
+So,
+
+463
+01:58:41,908 --> 01:58:47,308
+We will need to use something called stats.
+
+464
+01:58:49,308 --> 01:58:51,708
+So let me, let me...
+
+465
+01:59:02,131 --> 01:59:07,131
+Let me share the whole screen.
+
+466
+01:59:43,060 --> 01:59:45,820
+So, let me create a new...
+
+467
+01:59:50,644 --> 01:59:51,644
+Function
+
+468
+01:59:55,539 --> 01:59:57,539
+Anew script.
+
+469
+01:59:58,979 --> 02:00:04,539
+Let me call this cdf.py
+
+470
+02:00:09,011 --> 02:00:15,771
+Now, we need, so from SciPy.
+
+471
+02:00:19,060 --> 02:00:20,524
+Seipi.
+
+472
+02:00:24,532 --> 02:00:28,791
+Import Stats
+
+473
+02:00:38,547 --> 02:00:39,979
+ve...
+
+474
+02:00:43,731 --> 02:00:59,012
+Now, we need to, this scipy library doesn't come with Python distributions, we must install this package.
+
+475
+02:01:00,292 --> 02:01:07,372
+So, for that, I will first create a Python environment, Python.
+
+476
+02:01:18,739 --> 02:01:21,515
+Virtual environment
+
+477
+02:01:26,547 --> 02:01:30,147
+Let's activate that virtual environment.
+
+478
+02:01:45,332 --> 02:01:47,332
+Let's activate it.
+
+479
+02:01:50,131 --> 02:01:57,332
+Now, in this activated virtual environment, let's install SciPy.
+
+480
+02:01:59,332 --> 02:02:04,332
+Normally, I think there shouldn't be SciPy here for the time being.
+
+481
+02:02:05,332 --> 02:02:12,332
+So, let's say pip3 install.
+
+482
+02:02:14,644 --> 02:02:15,644
+Say, Bay.
+
+483
+02:02:25,300 --> 02:02:28,300
+So, SciPy now downloads.
+
+484
+02:02:43,572 --> 02:02:45,572
+And SciPy now came here.
+
+485
+02:02:48,451 --> 02:02:51,572
+So it's installed in this virtual environment.
+
+486
+02:02:55,539 --> 02:03:18,860
+Now, let's, so, from SciPy, we import stats, and let's define a function called cdf. And basically, it just calls this from stats, starts norm cdf. So, this gives us,
+
+487
+02:03:24,916 --> 02:03:34,396
+bu, cdf of x, hopefully, and
+
+488
+02:03:43,507 --> 02:03:46,108
+So we have 1.45.
+
+489
+02:03:47,307 --> 02:03:52,347
+So, and minus, minus 1.45, right?
+
+490
+02:03:52,868 --> 02:03:54,347
+Let's try to do that.
+
+491
+02:03:56,467 --> 02:03:58,467
+Uh, print.
+
+492
+02:04:14,260 --> 02:04:15,260
+coin45.
+
+493
+02:04:20,180 --> 02:04:31,360
+minus, right, cdf minus 1.45. Let's run this.
+
+494
+02:04:39,091 --> 02:04:55,431
+3, ccdf.py, 0.84, and here 0.84.
+
+495
+02:04:55,431 --> 02:05:02,551
+So, these standard normal values,
+
+496
+02:05:05,268 --> 02:05:08,727
+You need to somehow get it from somewhere.
+
+497
+02:05:09,727 --> 02:05:14,448
+In some books you have a table up there.
+
+498
+02:05:17,327 --> 02:05:24,987
+Or if you have a computer, you can just use Python or something to get them.
+
+499
+02:05:25,907 --> 02:05:28,844
+And then you can do the calculation.
+
+500
+02:05:31,475 --> 02:05:36,495
+And this part 2 times 1.45 minus 1.
+
+501
+02:05:36,595 --> 02:05:37,536
+How does it work?
+
+502
+02:05:42,475 --> 02:05:43,395
+Because.
+
+503
+02:05:45,735 --> 02:05:48,255
+So basically it's saying that.
+
+504
+02:05:50,295 --> 02:05:53,275
+This here let me call it A.
+
+505
+02:05:56,195 --> 02:05:57,655
+So this is A.
+
+506
+02:06:02,355 --> 02:06:11,115
+CDF 1.45. Notice that this is a2.
+
+507
+02:06:17,460 --> 02:06:22,460
+So, if we subtract two a's, we from...
+
+508
+02:06:30,547 --> 02:06:31,500
+Hmm.
+
+509
+02:06:35,347 --> 02:06:37,347
+No, it's not doing that.
+
+510
+02:06:40,347 --> 02:06:42,347
+It's doing this.
+
+511
+02:06:42,347 --> 02:06:43,347
+So...
+
+512
+02:06:52,724 --> 02:07:06,123
+Let's say you get this part, you get twice this part, so you will have this a, and let's call this x.
+
+513
+02:07:12,851 --> 02:07:29,731
+So, let's say this is a, this is also a, and let's call this part, I don't want to call it x because it's used here, let's call it b.
+
+514
+02:07:32,612 --> 02:07:35,412
+And basically, we want to find b.
+
+515
+02:07:40,051 --> 02:07:52,051
+So, if we get, if you do this, we are having two times a plus b.
+
+516
+02:08:00,148 --> 02:08:13,708
+Alright, so you have 2 a's plus 2 b.
+
+517
+02:08:24,595 --> 02:08:50,876
+ve if you subtract 1, now 2a plus b is 1, because this is the probability distribution, the whole area is 1, so 2a plus 1b is just 1.
+
+518
+02:08:51,347 --> 02:09:07,627
+ne kadar dağılık, bir tane daha dağılık, bir tane daha dağılık. Bu, bu, bir tane daha dağılık. Ve bu, bir tane daha dağılık, 0.8414.
+
+519
+02:09:16,819 --> 02:09:22,319
+We can just call the function and find the result.
+
+520
+02:09:33,619 --> 02:09:36,399
+Bu, bu sınırsız idea.
+
+521
+02:09:38,260 --> 02:09:40,199
+Central Limit Teorem.
+
+522
+02:09:43,891 --> 02:09:54,091
+In the book, there are a lot of different examples, take a look at them.
+
+523
+02:09:54,091 --> 02:09:59,891
+Here, they have an example with continuity correction.
+
+524
+02:10:10,996 --> 02:10:30,996
+Sorry, instead of 120, they are using 120.5, right? So, this 0.5 here, this is the continuity correction.
+
+525
+02:10:37,460 --> 02:10:40,460
+Bu result of continuity correction.
+
+526
+02:10:48,115 --> 02:11:10,515
+So, you can take a look at the examples in the book. You should. Let's continue with the class. We will talk about different type of these convergences. We have seen, I think, convergence in probability.
+
+527
+02:11:15,507 --> 02:11:22,568
+There are three others, like convergence in distribution, almost sure convergence and convergence in mean.
+
+528
+02:11:24,247 --> 02:11:31,367
+And these can be, like some of them are stronger than others.
+
+529
+02:11:31,367 --> 02:11:37,827
+So convergence in distribution is the weakest.
+
+530
+02:11:39,207 --> 02:11:42,608
+Convergence in probability is higher than that.
+
+531
+02:11:43,507 --> 02:11:49,867
+almost sure convergence is stronger than convergence in probability.
+
+532
+02:11:49,867 --> 02:11:55,187
+Again, convergence in mean is stronger than convergence in probability.
+
+533
+02:11:59,060 --> 02:12:03,060
+First, let's take a look at convergence in distribution.
+
+534
+02:12:08,060 --> 02:12:23,060
+We say that a sequence of random variables, x1, x2, et cetera, converges in distribution to x, and we write it this way.
+
+535
+02:12:26,452 --> 02:12:51,372
+converges in distribution to x if at the limit infinity cumulative distribution value of xn is cumulative distribution value of x.
+
+536
+02:12:53,332 --> 02:13:03,332
+So, when n goes to infinity, cumulative distribution function value converges.
+
+537
+02:13:03,332 --> 02:13:12,332
+And cumulative distribution function is continuous in this case.
+
+538
+02:13:12,332 --> 02:13:20,204
+This is the weakest form of convergence, CDF convergence.
+
+539
+02:13:21,460 --> 02:13:36,460
+CLT is an example of this. Central Limit Teorem is an example of convergence in distribution.
+
+540
+02:13:39,731 --> 02:14:06,912
+There is also convergence in probability. We have seen that too. We say that xn converges in probability to x if for all epsilon larger than 0, if n goes to infinity,
+
+541
+02:14:07,604 --> 02:14:21,104
+The difference between Xn and X is probability of difference being larger than epsilon is 0.
+
+542
+02:14:21,104 --> 02:14:22,923
+As n goes to infinity.
+
+543
+02:14:23,304 --> 02:14:31,824
+So you can consider any constant epsilon.
+
+544
+02:14:35,572 --> 02:14:41,572
+less than Epsilon. Probability of difference being higher is zero because...
+
+545
+02:14:46,963 --> 02:15:04,644
+Remember, we learned weak low of, what was it, weak low of large numbers, right? Weak low of large numbers. This was an example of convergence in probability.
+
+546
+02:15:10,676 --> 02:15:12,216
+Sample mean
+
+547
+02:15:16,243 --> 02:15:23,423
+The nth sample mean, when n goes to infinity, goes to true mean.
+
+548
+02:15:29,076 --> 02:15:55,076
+Now, almost sure convergence, we are just learning this, we write it as xn, convergence, almost surely, to x, if, so let me look at this, so we have a w,
+
+549
+02:15:56,180 --> 02:16:10,760
+We have a set, set of w such that, as n goes to infinity, xnw goes to xw.
+
+550
+02:16:13,760 --> 02:16:21,220
+And if this probability is 1, we say that there is almost sure convergence.
+
+551
+02:16:24,884 --> 02:16:42,263
+So, interpretation, what does say? For almost every outcome w, the sequence of numbers x1, x2, up to xn, converges to this xw.
+
+552
+02:16:47,603 --> 02:16:50,904
+We didn't see strong level of large numbers.
+
+553
+02:16:53,075 --> 02:16:56,175
+But we are learning it here now.
+
+554
+02:16:57,175 --> 02:17:02,635
+Strong love of large numbers is an example of almost sure convergence.
+
+555
+02:17:04,735 --> 02:17:06,375
+And what does it say?
+
+556
+02:17:28,308 --> 02:17:54,448
+It says that we have x1, x2, up to xn, their iid, independent, identically distributed, their expected value is mu, and we have a not infinite, so,
+
+557
+02:17:57,108 --> 02:17:59,347
+Bounded, Mu.
+
+558
+02:18:01,667 --> 02:18:05,747
+So, this strong-low large number says that
+
+559
+02:18:10,324 --> 02:18:21,564
+Sample mean, as n goes to infinity, sample mean, convergence, almost surely, to n.
+
+560
+02:18:31,540 --> 02:18:35,460
+And the final one is called convergence in mean.
+
+561
+02:18:37,500 --> 02:18:55,460
+So we say that xn, convergence, lr, instead of that we can say in mean to x, for r larger than or equal to 1 if,
+
+562
+02:18:58,164 --> 02:19:22,044
+xn minus x is absolute value, power, expected value, so the difference basically, right? Difference between xn and x, sorry,
+
+563
+02:19:24,819 --> 02:19:27,399
+Difference between xn and x
+
+564
+02:19:31,188 --> 02:19:43,188
+x is square actually, absolute value n square, that difference, the expected value of that difference goes to zero.
+
+565
+02:19:46,515 --> 02:19:53,515
+If r is 2, we call that mean square convergence.
+
+566
+02:19:53,515 --> 02:20:01,515
+So, they say this is stronger than convergence in probability.
+
+567
+02:20:01,515 --> 02:20:04,515
+Um...
+
+568
+02:20:11,476 --> 02:20:14,476
+So, we have an example of its application.
+
+569
+02:20:14,476 --> 02:20:24,436
+Let's say, xn is uniform numbers between 0 and 1 over n.
+
+570
+02:20:37,907 --> 02:20:42,768
+convergesin mean to 0, with L1.
+
+571
+02:20:44,087 --> 02:20:47,268
+So, expected value of,
+
+572
+02:20:49,788 --> 02:20:51,987
+Xn minus 0,
+
+573
+02:20:54,128 --> 02:20:55,768
+let's see,
+
+574
+02:20:59,763 --> 02:21:12,183
+That will give us expected value of xn, that is 1 over n, where does 2 come?
+
+575
+02:21:20,211 --> 02:21:38,471
+It's from uniform distributions expected value. 1 over 2 come from there. Now as n goes to infinity, clearly this goes to infinity. So we have this convergence in mean here.
+
+576
+02:21:49,268 --> 02:22:06,827
+As a summary, we learned law of large numbers, we learned central limit theorem, very important central limit theorem, a lot of applications, it has a lot of applications.
+
+577
+02:22:08,108 --> 02:22:16,667
+We learned types of convergence, almost sure, convergence in probability, convergence in distribution.
+
+578
+02:22:17,203 --> 02:22:19,203
+Konvergence in mean.
+
+579
+02:22:20,603 --> 02:22:23,603
+We learned that CLT is
+
+580
+02:22:25,403 --> 02:22:28,403
+an example of convergence in distribution.
+
+581
+02:22:28,804 --> 02:22:30,804
+It says CLT provides.
+
+582
+02:22:32,004 --> 02:22:37,603
+And it's very applicable, especially CLT and the others too.
+
+583
+02:22:38,804 --> 02:22:43,403
+These convergences give us a lot of tools.
+
+584
+02:22:44,203 --> 02:22:45,004
+Right?
+
+585
+02:22:48,659 --> 02:22:54,420
+CLT, Central Limit Teorem, give us a lot of applications.
+
+586
+02:22:54,420 --> 02:22:59,220
+You should take a look at the examples and problems in the book.
+
+587
+02:22:59,220 --> 02:23:05,868
+This is the end for today. Any questions, anything we need to talk?
+
+588
+02:23:15,891 --> 02:23:19,371
+Tamam, sonra, görüşmek üzere.

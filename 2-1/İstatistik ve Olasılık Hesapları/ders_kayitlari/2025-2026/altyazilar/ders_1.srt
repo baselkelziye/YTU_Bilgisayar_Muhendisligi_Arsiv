@@ -1,0 +1,2415 @@
+1
+00:02:18,068 --> 00:02:20,888
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:02:36,979 --> 00:02:38,731
+Evet hocam, sizinle geliyorum.
+
+3
+00:02:51,123 --> 00:02:54,443
+Peki, dersimize başlayalım.
+
+4
+00:03:05,331 --> 00:03:13,731
+So, I wanted to make a review of probability mass function and cumulative distribution function.
+
+5
+00:03:24,852 --> 00:03:28,852
+So, a PMF, or Probability Mass Function,
+
+6
+00:03:31,652 --> 00:03:32,352
+uh,
+
+7
+00:03:44,627 --> 00:03:52,467
+...gives us the probability that a discrete random variable is exactly equal to some value.
+
+8
+00:03:55,347 --> 00:03:59,467
+Basically, it gives us the probability of...
+
+9
+00:04:03,955 --> 00:04:04,955
+A value.
+
+10
+00:04:04,955 --> 00:04:06,955
+For example,
+
+11
+00:04:10,707 --> 00:04:13,747
+Eğer bir fair die,
+
+12
+00:04:16,187 --> 00:04:24,887
+bir ölçü,
+
+13
+00:04:24,887 --> 00:04:27,687
+ve PMF
+
+14
+00:04:27,687 --> 00:04:31,747
+bir ölçü
+
+15
+00:04:31,747 --> 00:04:33,588
+bu ölçü,
+
+16
+00:04:33,588 --> 00:04:35,747
+bir ölçü,
+
+17
+00:04:37,971 --> 00:04:44,971
+ve bu durumda, bu durumda, bu durumda, 0.17.
+
+18
+00:04:50,163 --> 00:04:51,264
+Um,
+
+19
+00:04:57,588 --> 00:05:23,888
+For example, in the binomial distribution, we have seen binomial distribution, PMF is probability of random variable x having value k, and it has this equation, where n is number of trials,
+
+20
+00:05:24,980 --> 00:05:41,139
+ve k is number of successeses, ve p is the success probability, ve k or x is the number of successeses, as I said.
+
+21
+00:05:52,564 --> 00:06:01,864
+It's not written here, but for 0, well, in this case, PMF is just equation.
+
+22
+00:06:01,864 --> 00:06:10,463
+Since we have equation, we can just write the value K, for example, 0 here, as K.
+
+23
+00:06:11,444 --> 00:06:14,324
+N is 10, P is 0.3.
+
+24
+00:06:19,295 --> 00:06:23,276
+VALUE, EACH PROBABILITY VALUE IN THE PMF.
+
+25
+00:06:31,891 --> 00:06:57,292
+Now, there is a CDF. This is related to PMF, but it's related to this way. CDF over random variable is usually noted by F.
+
+26
+00:06:58,803 --> 00:07:22,583
+So, CDF of random variable x, x, having value x, is probability that, that random variable x having value x or less.
+
+27
+00:07:29,971 --> 00:07:30,971
+Öğrençler,
+
+28
+00:07:47,283 --> 00:08:07,283
+Bu, eğer, in a fair die role, bu graph is not exactly right, but let me show you somewhere else. This is better.
+
+29
+00:08:17,971 --> 00:08:22,971
+Assume you have this PMF, right?
+
+30
+00:08:25,971 --> 00:08:41,971
+And CDF is probability that random variable gets this value or less. So CDF of 0 is 0.
+
+31
+00:08:48,083 --> 00:08:49,083
+Çünkü,
+
+32
+00:08:49,083 --> 00:08:50,783
+there is no value,
+
+33
+00:08:51,783 --> 00:08:53,823
+possible outcome,
+
+34
+00:08:54,863 --> 00:08:56,523
+that is zero or less.
+
+35
+00:08:59,423 --> 00:08:59,963
+And,
+
+36
+00:09:02,543 --> 00:09:05,063
+when we get to one,
+
+37
+00:09:07,703 --> 00:09:09,663
+CDF jumps to,
+
+38
+00:09:11,743 --> 00:09:13,123
+this value.
+
+39
+00:09:15,028 --> 00:09:40,028
+seems like 0.5 or something. And when we get to 2, now CDF jumps to this probability plus this probability. So this looks like 0.5, sorry 0.1.
+
+40
+00:09:40,692 --> 00:09:56,460
+Bu, 0.3 olarak olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak 0.4 olarak
+
+41
+00:09:59,475 --> 00:10:14,556
+And the interesting thing is, when x is 1.5, for example, between 1 and 2, PMF is just 0 there.
+
+42
+00:10:17,056 --> 00:10:21,596
+There is no probability.
+
+43
+00:10:22,484 --> 00:10:49,744
+1.5 is not a possible outcome, so its probability is just zero, but CDF of 1.5 is not zero, why? CDF says probability of x having value 1.5 or less.
+
+44
+00:10:51,091 --> 00:11:16,892
+1.5, 1.5 probability is 0, but there is 1, which is less than that. So, we have a non-zero probability at 1, so CDF becomes that 1's value. So, CDF is like that.
+
+45
+00:11:20,148 --> 00:11:40,148
+ve 0 başlayan, ve 1 başlayan, çünkü, baktığınızda, bazı probabilitelerden, bazı probabilitelerden, bazı probabilitelerden, bazı probabilitelerden, bazı probabilitelerden, bazı bir maksimum 1.
+
+46
+00:11:46,419 --> 00:11:56,419
+CDF is a, for discrete probability CDF is a step function like this. It looks like steps.
+
+47
+00:12:11,283 --> 00:12:24,364
+Now, as we said, CDF is probability of having random value x or less.
+
+48
+00:12:28,364 --> 00:12:37,923
+So, for discrete probability, this means we have to sum, right? We have to sum...
+
+49
+00:12:38,419 --> 00:12:40,419
+bu değerlerden bu.
+
+50
+00:12:42,419 --> 00:12:43,419
+O yüzden
+
+51
+00:12:48,148 --> 00:12:56,788
+Bu sum'i bu sum'i kullanmak için,
+
+52
+00:12:56,788 --> 00:13:01,788
+bu sum'i ne yazıyor?
+
+53
+00:13:14,451 --> 00:13:24,032
+x is, you need a loop, loop iteration value.
+
+54
+00:13:27,572 --> 00:13:47,072
+ve on each loop iteration, you will sum probability of k, right? Ve k can be x or less.
+
+55
+00:13:50,964 --> 00:14:14,644
+So, in this example you have 0, 1, 2, 3, 4, 5, 6. And what you are doing is you are summing them. So, for 2, let's say, for x equals to 2,
+
+56
+00:14:19,283 --> 00:14:24,163
+1 ve 2, bu kadar dağılım,
+
+57
+00:14:24,163 --> 00:14:26,163
+1 ve 2.
+
+58
+00:14:28,323 --> 00:14:34,091
+Bu, if you know PMF, you can calculate CDF, bu şekilde.
+
+59
+00:14:38,131 --> 00:14:46,511
+Şimdi, bu şekilde, if you know CDF, you can calculate PMF.
+
+60
+00:14:46,511 --> 00:14:57,031
+Ve discrete random variables, you obtain it by just this easy subtraction.
+
+61
+00:15:00,596 --> 00:15:02,275
+So,
+
+62
+00:15:06,131 --> 00:15:10,131
+Bu çok kolay, bunu düşünüyorsunuz.
+
+63
+00:15:14,131 --> 00:15:20,831
+CDF of x is just probability up to and including x.
+
+64
+00:15:22,631 --> 00:15:30,072
+And CDF of x minus 1 is probability up to and including x minus 1.
+
+65
+00:15:32,491 --> 00:15:41,131
+So if you take the difference, if you take this difference, you should get probability of
+
+66
+00:15:42,515 --> 00:16:06,775
+x, right? And as an example for a die rule, if you want to, let's say, you want to calculate probability of x and CDF of, sorry, probability of 3 or PMF of 3,
+
+67
+00:16:10,772 --> 00:16:34,872
+And if you subtract CDF of 2 from CDF of 3 and CDF of 3 is 0.5, CDF of 2 is 0.333.
+
+68
+00:16:36,211 --> 00:16:48,211
+0.16666 ve 0.17.
+
+69
+00:16:48,211 --> 00:16:56,211
+So, PMF ve CDF ve CDF ve
+
+70
+00:17:04,019 --> 00:17:08,019
+Aplı bir parçası.
+
+71
+00:17:11,955 --> 00:17:28,955
+ve in de books, or when people are talking about, when people are talking, you can hear the distribution, probability distribution.
+
+72
+00:17:34,003 --> 00:17:48,003
+So, the probability distribution can be specified by both PMF and CDF, since they can be converted to each other.
+
+73
+00:17:48,003 --> 00:17:56,003
+So, people may be talking about PMF or they may be talking about CDF.
+
+74
+00:17:56,003 --> 00:18:00,003
+You should be able to understand.
+
+75
+00:18:00,403 --> 00:18:04,804
+kontekstinden, neyden bahsediyor.
+
+76
+00:18:36,596 --> 00:18:38,876
+As a summary,
+
+77
+00:18:42,644 --> 00:19:10,163
+PMFs give probability of exact values, like what is the probability of X. CDF or cumulative distribution gives cumulative probability, meaning you accumulate, you sum.
+
+78
+00:19:11,796 --> 00:19:29,356
+So, probability of x having value x or less, here exactly x. In PMF we have exact x, in CDF x or less, that's the basic difference.
+
+79
+00:19:33,356 --> 00:19:37,836
+And the relationship is like this.
+
+80
+00:19:38,483 --> 00:19:53,483
+If you know the probabilities PMF, you can just sum them to obtain CDF.
+
+81
+00:19:53,483 --> 00:20:03,483
+And if you know the CDF, you can subtract to get the PMF.
+
+82
+00:20:08,084 --> 00:20:25,844
+Um, so PMF is individual probabilities, CDF is like a running total, you are running, you are summing, always summing up to that point.
+
+83
+00:20:25,844 --> 00:20:34,364
+Uh, so I want to give this, uh,
+
+84
+00:20:48,884 --> 00:21:02,884
+Okay, so this was PMF vs CDF. Probability mass function vs Cumulative distribution function.
+
+85
+00:21:04,884 --> 00:21:12,395
+So let's continue from where we were last week.
+
+86
+00:21:22,291 --> 00:21:25,291
+Let me open another slide.
+
+87
+00:22:36,692 --> 00:22:48,692
+Last week, we talked about discrete random variables and special distributions.
+
+88
+00:22:53,692 --> 00:23:02,692
+We saw what a random variable is. Basically, it was a random number.
+
+89
+00:23:02,692 --> 00:23:04,364
+Right?
+
+90
+00:23:04,660 --> 00:23:09,160
+If you have a random number, we call that random variable.
+
+91
+00:23:11,160 --> 00:23:18,660
+And, we have seen that, each random variable has a range.
+
+92
+00:23:21,811 --> 00:23:35,211
+Range is a possible outcomes of that random variable, right? Possible values it can take.
+
+93
+00:23:44,115 --> 00:24:08,635
+So, if you are tossing coin 100 times, and you are counting number of heads, the range can be from zero, maybe none of them is heads, or up to 100, which is all of them, maybe is heads and everything in between. That is the range.
+
+94
+00:24:12,819 --> 00:24:19,900
+Orada, bazen, you are interested in toss until first head.
+
+95
+00:24:19,900 --> 00:24:29,860
+So, you want to know how many tosses you would need until you get the first head.
+
+96
+00:24:29,860 --> 00:24:38,619
+So, in that case, range would be one. Maybe you will get a head in the first toss.
+
+97
+00:24:39,731 --> 00:25:00,131
+Or, infinity, meaning, maybe you will never get ahead. That is very low probability, but it is still probable. So, this range starts from 1 and goes to infinity. And this is just the natural numbers.
+
+98
+00:25:02,516 --> 00:25:09,516
+Or maybe you are interested in time until next earthquake in Türkiye.
+
+99
+00:25:09,516 --> 00:25:19,516
+And it can be right now, it can start, there can be an earthquake right now.
+
+100
+00:25:19,516 --> 00:25:26,380
+Or, I wish that was true, but possibly...
+
+101
+00:25:27,476 --> 00:25:33,476
+Türkiye'de, belki, Türkiye'de, artık, ırkçaklar yok.
+
+102
+00:25:52,884 --> 00:25:56,204
+Rangeler çok önemli.
+
+103
+00:25:56,204 --> 00:26:02,204
+Bu, randamın ne olduğunu düşünmeli.
+
+104
+00:26:02,204 --> 00:26:06,347
+Rangelerin ne olduğunu düşünmeli.
+
+105
+00:26:11,763 --> 00:26:12,763
+Şimdi,
+
+106
+00:26:14,763 --> 00:26:16,763
+we will see two,
+
+107
+00:26:16,763 --> 00:26:20,763
+we will see discrete and continuous random variables.
+
+108
+00:26:21,763 --> 00:26:22,763
+And,
+
+109
+00:26:25,763 --> 00:26:30,763
+we will look at continuous random variables later.
+
+110
+00:26:31,731 --> 00:26:42,832
+If a random variable is discrete though, its range is a countable set, like a finite set, 1, 2, 3, 4, 5 is a countable set.
+
+111
+00:26:46,572 --> 00:26:56,991
+Or it may be an infinite set, but it may be countable, like natural numbers, 1, 2, 3, 4, 5, 6, up to infinity.
+
+112
+00:26:57,587 --> 00:27:10,687
+et cetera. These are countable sets. And if a random variable's range is countable, we say that it is a discrete random variable.
+
+113
+00:27:15,604 --> 00:27:20,604
+ve, sorry,
+
+114
+00:27:23,604 --> 00:27:33,604
+for discrete random variables, we will talk about PMFs, probability mass functions.
+
+115
+00:27:43,508 --> 00:27:45,508
+Probabilitesi,
+
+116
+00:27:46,628 --> 00:27:48,628
+for that value.
+
+117
+00:27:48,628 --> 00:27:53,188
+So, if that value can take value 0, 1, and 2,
+
+118
+00:27:53,988 --> 00:27:55,988
+it gives us
+
+119
+00:27:57,028 --> 00:27:59,028
+all three probabilities.
+
+120
+00:28:06,675 --> 00:28:16,675
+ve aslında, PMF'nin, a probabiliteliği, yöntem 0 ve 1, you know that.
+
+121
+00:28:16,675 --> 00:28:22,675
+Ve if we sum up all the probabilities in a PMF, we get 1.
+
+122
+00:28:22,675 --> 00:28:25,611
+These are all things you already know.
+
+123
+00:28:29,460 --> 00:28:31,460
+Let me, so...
+
+124
+00:28:38,163 --> 00:28:46,163
+Bu birçok örnekleri.
+
+125
+00:28:58,740 --> 00:29:02,740
+We talked about independence of random variables.
+
+126
+00:29:04,740 --> 00:29:20,740
+If probability of random variable x, x having value x and random variable y having value y is this multiplication,
+
+127
+00:29:21,971 --> 00:29:27,723
+You are just multiplying individual probabilities here.
+
+128
+00:29:31,508 --> 00:29:47,548
+So, probability of n is just individual probabilities multiplication. In that case, we say that these x and y are independent.
+
+129
+00:29:51,548 --> 00:29:55,147
+And intuitively, we are just saying that
+
+130
+00:29:59,347 --> 00:30:08,347
+The fact that we know x happened doesn't change y's probability.
+
+131
+00:30:11,347 --> 00:30:24,347
+So x and y are independent, so x can happen or not, so it doesn't really change y's probability that we know.
+
+132
+00:30:34,675 --> 00:30:51,675
+So, we have seen some discrete distribution, special discrete distributions, like Bernoulli, Geometric, Binomial, Pascal, Hypergeometric. We didn't see Poisson.
+
+133
+00:31:02,132 --> 00:31:06,092
+What's going on behind each of these distributions?
+
+134
+00:31:07,592 --> 00:31:12,392
+So basically, if you see a problem,
+
+135
+00:31:12,392 --> 00:31:18,731
+you should be able to tell which special distribution
+
+136
+00:31:18,731 --> 00:31:22,372
+suits that problem.
+
+137
+00:31:23,731 --> 00:31:24,392
+Or...
+
+138
+00:31:25,332 --> 00:31:30,332
+Eğer bu bir şeyin hiçbir şeyin, bu sebebiye yazabilirsiniz.
+
+139
+00:31:39,988 --> 00:31:48,988
+The first of these was Bernoulli. Bernoulli distribution is like Bayes.
+
+140
+00:31:52,180 --> 00:31:56,259
+And it actually has just two outcomes.
+
+141
+00:31:56,259 --> 00:32:00,740
+So if an experiment has just two outcomes,
+
+142
+00:32:03,140 --> 00:32:10,039
+is the kid of a family, newborn, is the newborn a girl or a boy?
+
+143
+00:32:11,460 --> 00:32:12,759
+That's pardonli.
+
+144
+00:32:14,279 --> 00:32:18,539
+You pass this Probabilitem Statistics course.
+
+145
+00:32:20,968 --> 00:32:21,968
+bir
+
+146
+00:32:20,403 --> 00:32:24,403
+You either pass or you fail, that's a Bernoulli.
+
+147
+00:32:26,403 --> 00:32:39,403
+You apply for a job and you are accepted to the job and you start the job or you don't.
+
+148
+00:32:39,403 --> 00:32:43,403
+There are only two outcomes, so that's a Bernoulli.
+
+149
+00:32:45,715 --> 00:32:58,715
+It rains tomorrow or not, that's a Bernoulli. So if you have two outcomes from an experiment, that's a Bernoulli trial.
+
+150
+00:32:58,715 --> 00:33:12,363
+Now, remember that for random variables we need numbers. We need numbers. And in Bernoulli,
+
+151
+00:33:13,236 --> 00:33:25,236
+O, each of these outcomes are associated with a number and that's usually the, they are always associated with 0 and 1.
+
+152
+00:33:27,236 --> 00:33:40,236
+So, if you get the job, you apply it for the job, if you get the job, that's a 1, you assume it's a 1. If you can't get the job,
+
+153
+00:33:40,339 --> 00:33:43,339
+Bu, bu sonuçta 0.
+
+154
+00:33:43,339 --> 00:33:49,339
+Bu sonuçta 0 ve 1'e map edebilirsiniz.
+
+155
+00:33:49,339 --> 00:33:53,339
+Eğer yeni bir çocuk bir kız, 1.
+
+156
+00:33:53,339 --> 00:33:56,339
+Eğer bir kız, 0.
+
+157
+00:33:58,339 --> 00:34:02,339
+Eğer yarınlar, 1.
+
+158
+00:34:02,339 --> 00:34:04,339
+Bu, 1.
+
+159
+00:34:04,339 --> 00:34:07,339
+Çünkü yarınlar iyi.
+
+160
+00:34:07,796 --> 00:34:34,796
+...
+
+161
+00:34:35,860 --> 00:34:42,860
+Bu, Bernoulli'nin
+
+162
+00:34:42,860 --> 00:34:44,860
+distribiücüsü, ve
+
+163
+00:34:44,860 --> 00:34:48,860
+experimenten benolulu'nin
+
+164
+00:34:48,860 --> 00:34:50,860
+trial.
+
+165
+00:34:50,860 --> 00:34:54,860
+Now, in Bernoulli'nin
+
+166
+00:34:54,860 --> 00:34:56,860
+we write it this way,
+
+167
+00:34:56,860 --> 00:35:00,860
+you have only one parameter, P,
+
+168
+00:35:01,748 --> 00:35:06,248
+If you know p, you know everything about Bernoulli.
+
+169
+00:35:08,248 --> 00:35:13,628
+Because the p is probability of 1.
+
+170
+00:35:15,768 --> 00:35:24,668
+And since there are only two possible outcomes, probability of 0 is 1-p.
+
+171
+00:35:29,556 --> 00:35:40,556
+Ve bu çok çok ilginç, gördüğünüz gibi birçok de,
+
+172
+00:35:40,556 --> 00:35:54,380
+birçok de, birçok de, birçok de, birçok de,
+
+173
+00:35:54,708 --> 00:35:58,467
+Bernoulli Distribution or Bernoulli Trials.
+
+174
+00:36:02,003 --> 00:36:05,003
+For example, in Geometric Distribution,
+
+175
+00:36:08,003 --> 00:36:11,003
+the story or the random experiment is,
+
+176
+00:36:15,003 --> 00:36:21,003
+you repeat independent Bernoulli trials until first success.
+
+177
+00:36:24,003 --> 00:36:27,003
+And x is total trials needed.
+
+178
+00:36:31,987 --> 00:36:54,987
+Let's say you want your kid to be a girl, how many children you would need to conceive to get the first girl, right? Or,
+
+179
+00:36:58,195 --> 00:37:23,980
+How many goal kicks you need to kick to get the first goal in a soccer match? Or how many times you need to get probability and statistics scores? How many times you need to register to this course to pass it? Right?
+
+180
+00:37:24,244 --> 00:37:35,804
+Hopefully, you would need just one, but some of you will need to register twice or even more, right?
+
+181
+00:37:38,804 --> 00:37:42,923
+These are geometric distributions.
+
+182
+00:37:49,460 --> 00:37:57,460
+The range is from 1 to infinity, so k can be 1.
+
+183
+00:37:59,460 --> 00:38:13,460
+Maybe you obtain your success in your first Bernoulli trial, or second or third, and possibly never. So this goes to infinity.
+
+184
+00:38:18,099 --> 00:38:25,099
+Geometric distribution has this interesting property called Memorialist property.
+
+185
+00:38:25,099 --> 00:38:38,099
+It says that the past doesn't affect the future. So, you want to have a girl, right?
+
+186
+00:38:38,099 --> 00:38:45,099
+And you want to have a girl.
+
+187
+00:38:46,036 --> 00:38:48,036
+Yeni çocuklar.
+
+188
+00:38:48,036 --> 00:38:51,036
+Ve çocuklar yapmanızı.
+
+189
+00:38:51,036 --> 00:38:53,036
+Ve çocuklar.
+
+190
+00:38:53,036 --> 00:38:56,036
+Bir çocuklar yapmanızı.
+
+191
+00:38:56,036 --> 00:38:58,036
+Ve bir çocuklar.
+
+192
+00:38:58,036 --> 00:39:00,036
+Şimdi...
+
+193
+00:39:03,123 --> 00:39:16,123
+Bu üçüncü çocuk, bir kızın bir kızı olaylar, bir kızın bir kızı olaylar, çünkü diğer kızları var.
+
+194
+00:39:18,123 --> 00:39:21,123
+Bu geçenleri unutmayın.
+
+195
+00:39:32,980 --> 00:39:39,980
+Another distribution is a binomial distribution.
+
+196
+00:39:42,980 --> 00:39:57,180
+Now, the story or the random experiment is, you perform an independent Bernoulli trials and x is the number of successes.
+
+197
+00:40:00,211 --> 00:40:26,211
+So, like, success is a baby girl, let's say, and you have two kids, and n is two here, number of girls is binomial.
+
+198
+00:40:28,436 --> 00:40:38,436
+Or, you toss 10 coins, and number of heads is binomial.
+
+199
+00:40:38,436 --> 00:40:53,316
+Or, let's say you are a sales person, you are selling something, you are selling goods, and...
+
+200
+00:40:54,675 --> 00:41:04,675
+You are calling people by phone and you are you are telling you are trying to sell them right.
+
+201
+00:41:07,675 --> 00:41:13,675
+And let's say you call 100 people.
+
+202
+00:41:17,748 --> 00:41:19,748
+N is 100,
+
+203
+00:41:22,748 --> 00:41:25,748
+Probabilen, N is 100,
+
+204
+00:41:26,748 --> 00:41:27,724
+N is 100,
+
+205
+00:41:32,851 --> 00:41:51,851
+5 people buying your product, you are selling to 5 people out of that 100, that's binomial. Probability of number of cells being 5 is binomial.
+
+206
+00:41:56,115 --> 00:42:05,215
+Bu güzel bir ekonomik ekonomik.
+
+207
+00:42:06,295 --> 00:42:08,275
+Ve neyden?
+
+208
+00:42:23,315 --> 00:42:50,027
+If you are an excellent salesperson or the product is awesome, maybe you call 100 people and all 100 buys your product. And in between there are other numbers. And you have this...
+
+209
+00:42:50,164 --> 00:43:09,844
+ve each call is Bernoulli, so the P here is Bernoulli, the P parameter is Bernoulli success probable, and n is the number of trials.
+
+210
+00:43:15,219 --> 00:43:23,879
+İntro bir şey, bir binomial distribisyen olarak birçok birçok birçok birçok birçok birçok birçok birçok.
+
+211
+00:43:24,659 --> 00:43:30,279
+İçok birçok birçok birçok birçok birçok birçok.
+
+212
+00:43:30,279 --> 00:43:41,359
+Birçok birçok birçok birçok birçok.
+
+213
+00:43:42,931 --> 00:43:48,171
+And they can buy the product or reject.
+
+214
+00:43:49,011 --> 00:43:50,971
+Now, that is a Bernoulli.
+
+215
+00:43:52,871 --> 00:43:54,931
+So, that's one Bernoulli.
+
+216
+00:43:56,211 --> 00:43:59,811
+Now, you can call the second phone number.
+
+217
+00:44:00,692 --> 00:44:07,411
+And when you call your second phone number, they will either accept or reject.
+
+218
+00:44:07,951 --> 00:44:10,251
+Again, that's your second Bernoulli.
+
+219
+00:44:12,019 --> 00:44:21,019
+ve bu renolidlerden bütün bu renolidlerden bir şekilde, bu renolidlerden bir şekilde,
+
+220
+00:44:25,588 --> 00:44:32,588
+Bernoulli ve binomiyat bu kolay bir ilişki bir ilişki.
+
+221
+00:44:42,324 --> 00:45:09,324
+Pascal distribution, or negative binomial distribution, this is related to geometric distribution, again number of trials until success, but remember geometric distribution was number of trials until first.
+
+222
+00:45:09,684 --> 00:45:25,464
+Bu, Geometric Distribution M, bu M was 1. Şimdi, Pascal Distribution M can be any number.
+
+223
+00:45:37,012 --> 00:45:45,012
+to score two goals, let's say. That's m equals to two.
+
+224
+00:45:51,572 --> 00:46:13,172
+How many people, you are a salesperson, how many people you need to call to obtain, to sell five products, right? That's again Pascal, or the negative binomial.
+
+225
+00:46:16,916 --> 00:46:44,716
+ve ne kadar range? Minimum, to sell M products, you need to call M people, right? That's the best case. In the worst case, you will call infinitely, but nobody will buy your product. So, there are other numbers in between.
+
+226
+00:46:44,947 --> 00:46:46,947
+are in range.
+
+227
+00:46:49,947 --> 00:47:02,947
+and it has this equation you can you can it's not that hard you can think how this equation is found you can try to find it it's not that hard.
+
+228
+00:47:04,947 --> 00:47:08,947
+and there is a nice picture here.
+
+229
+00:47:10,324 --> 00:47:26,704
+Pascal'ın distribisyonu, M 3, P 0.5. Bu şekil var. Bu, infinity'ye geçiyor ama, bu şekil yok.
+
+230
+00:47:47,891 --> 00:47:51,651
+Another one, hypergeometric distribution.
+
+231
+00:47:52,651 --> 00:47:54,651
+In this case,
+
+232
+00:47:56,651 --> 00:48:01,451
+you are choosing K marbles without replacement.
+
+233
+00:48:02,891 --> 00:48:08,651
+You are not putting the marbles back to the back.
+
+234
+00:48:18,708 --> 00:48:20,708
+So you have this bag.
+
+235
+00:48:23,708 --> 00:48:27,708
+It has blue marbles and blue marbles and red marbles.
+
+236
+00:48:30,708 --> 00:48:34,708
+And you are getting a sample of let's say three.
+
+237
+00:48:38,099 --> 00:48:43,599
+ve nelerin de buçukları, hypergeometrik.
+
+238
+00:48:52,851 --> 00:48:58,851
+Bu, bu, we didn't see before, Poisson Distribution.
+
+239
+00:49:17,811 --> 00:49:21,172
+Number of successes in a given time.
+
+240
+00:49:24,172 --> 00:49:28,271
+Let's say you are working in a call center.
+
+241
+00:49:30,311 --> 00:49:37,152
+Customers are calling in and you are answering their questions.
+
+242
+00:49:37,311 --> 00:49:38,891
+You are supporting them.
+
+243
+00:49:40,891 --> 00:49:41,172
+And
+
+244
+00:49:46,068 --> 00:50:12,812
+How many customers call in an hour, let's say? That's Poisson. So you are given a time. How many events occurs in that time? Probability of three person calling in an hour is...
+
+245
+00:50:14,324 --> 00:50:22,324
+Poisson. Poisson distribution has this lambda parameter.
+
+246
+00:50:26,324 --> 00:50:30,324
+It's called average rate per interval.
+
+247
+00:50:32,324 --> 00:50:40,324
+To calculate Poisson, you need to know the average.
+
+248
+00:50:42,387 --> 00:51:08,467
+On average, let's say, in an hour, 10 people calls this call center, right? From historical data, you know that. So, historically, each hour, 10 people called this call center.
+
+249
+00:51:11,764 --> 00:51:38,764
+Or, let's say, 5, like this graph. Historically, Lambda is 5. So, in an hour, historically, 5 people calls in. Now, that's an average, meaning...
+
+250
+00:52:04,467 --> 00:52:30,907
+So, what is this probability, right? This probability, let's say, if the average is 5, the probability of two people calling, what's that probability? That's Poisson. And it's calculated this way.
+
+251
+00:52:31,731 --> 00:52:56,652
+e to the minus lambda, lambda to the k, divided by k factorial. And what is the range? Minimum zero. So, in your call center, in an hour, nobody calls. Possible. One person can call, two person can call.
+
+252
+00:52:57,492 --> 00:53:03,312
+And this is an unbounded, so this can goes to infinity, right?
+
+253
+00:53:03,312 --> 00:53:13,312
+Possibly, I mean, in some...
+
+254
+00:53:18,708 --> 00:53:25,428
+Problems, in some problems, possibly, infinite people can call in.
+
+255
+00:53:29,460 --> 00:53:43,460
+Similar experiments. How many meteors collapsed to the world in a year? Right?
+
+256
+00:53:52,947 --> 00:54:19,288
+So, we are computer scientists, we are computer engineers, you are writing a network product, maybe you are writing a router, a router software, what should be capacity of that router, right?
+
+257
+00:54:19,987 --> 00:54:23,307
+Er, how many packets?
+
+258
+00:54:27,284 --> 00:54:33,284
+bir dakika beklenmeniz, değil mi?
+
+259
+00:54:36,284 --> 00:54:39,284
+Bu, ne?
+
+260
+00:54:39,284 --> 00:54:45,036
+100 net bir paketler, bir dakika beklenmeniz.
+
+261
+00:54:49,204 --> 00:55:01,684
+You are in a shop, how many customers come into the shop in a day? I don't know what's radioactive decay is about.
+
+262
+00:55:04,564 --> 00:55:12,644
+So that was Poisson distribution. We didn't see this so far. This one was new.
+
+263
+00:55:17,331 --> 00:55:23,331
+Now, there is a relationship between Poisson and binomial distributions.
+
+264
+00:55:23,331 --> 00:55:42,331
+And the thing is, when the, when n is very large, and p is very small in a binomial distribution,
+
+265
+00:55:44,019 --> 00:55:47,280
+ve n is large is like more than 20.
+
+266
+00:55:49,360 --> 00:55:52,519
+Some people say more than 30.
+
+267
+00:55:53,719 --> 00:55:55,740
+Some say more than 100.
+
+268
+00:55:57,240 --> 00:56:00,340
+Let's say for this course more than 20.
+
+269
+00:56:01,240 --> 00:56:02,780
+And when P is small,
+
+270
+00:56:04,360 --> 00:56:07,780
+probability of success is less than 0.05.
+
+271
+00:56:10,003 --> 00:56:25,063
+And then this Bernoulli, this binomial can be approximated by a Poisson distribution.
+
+272
+00:56:36,500 --> 00:56:40,039
+You can assume in your binomial,
+
+273
+00:56:51,827 --> 00:56:59,347
+Sorry, you can assume in your Poisson, Lambda is n times p.
+
+274
+00:57:01,347 --> 00:57:16,148
+So, remember, approximating by Poisson means, you will use Poisson instead of binomial. And to use Poisson, you need Lambda.
+
+275
+00:57:19,092 --> 00:57:21,851
+ve lambda n times p.
+
+276
+00:57:21,851 --> 00:57:26,652
+Yani, binomiyat, n, n, p,
+
+277
+00:57:26,652 --> 00:57:29,512
+ve
+
+278
+00:57:33,108 --> 00:58:00,708
+So, n times p gives you lambda for your Poisson distribution. And why would you do that? Why would you do that? Because when n is large, calculating binomial CDF is hard.
+
+279
+00:58:01,300 --> 00:58:05,900
+Çünkü çok büyük numarlar, veya çok küçük numarlar.
+
+280
+00:58:05,900 --> 00:58:08,500
+Let's look at binomial.
+
+281
+00:58:11,635 --> 00:58:39,235
+binomial, um, equation, PMF equation. Now, assume n is very large, uh, like 200. N is like 200. You are, you have 200, uh, or 500, or 1000.
+
+282
+00:58:39,923 --> 00:58:41,923
+Bernoulli trials.
+
+283
+00:58:44,923 --> 00:58:48,923
+Now, this n choose k here.
+
+284
+00:58:51,923 --> 00:58:53,923
+This n choose k in the beginning.
+
+285
+00:58:56,923 --> 00:58:58,923
+What's its equation? Do you remember?
+
+286
+00:59:00,923 --> 00:59:03,923
+n choose k involves n factorial.
+
+287
+00:59:07,380 --> 00:59:34,699
+Evet, ve remember, faktoriyelsin, çok quickly, 1000! Bu, bunu kullanmıyor, 32 bit integers, örneğin, 32 bit, İntegersin, örneğin, I guess.
+
+288
+00:59:36,211 --> 00:59:40,211
+...you will have numerical overflow.
+
+289
+00:59:47,635 --> 00:59:54,036
+And so, when n is very large, calculating binomial CDF.
+
+290
+00:59:54,036 --> 00:59:59,876
+So, when you calculate CDF, you need to sum these, right?
+
+291
+01:00:00,456 --> 01:00:10,036
+You need to calculate a lot of these very large factorials.
+
+292
+01:00:11,976 --> 01:00:14,275
+K can be very large too.
+
+293
+01:00:15,027 --> 01:00:17,027
+since n is large.
+
+294
+01:00:17,027 --> 01:00:19,027
+And
+
+295
+01:00:19,027 --> 01:00:25,027
+when you calculate these PMFs, these CDFs,
+
+296
+01:00:25,027 --> 01:00:30,027
+your computer will have problem.
+
+297
+01:00:30,027 --> 01:00:32,027
+You may have
+
+298
+01:00:32,027 --> 01:00:37,027
+numerical overflows or underflows.
+
+299
+01:00:38,452 --> 01:01:02,452
+overflows, mostly, because you have large factorials. And to calculate them, you will need to use special software, special libraries. But those will be slower. So one thing we can do is,
+
+300
+01:01:03,092 --> 01:01:15,092
+Instead of binomial, instead of binomial, we just use Poisson. We approximate by Poisson.
+
+301
+01:01:15,092 --> 01:01:30,092
+And calculating Poisson is much easier. You don't have n factorial, right? You have a k factorial, but
+
+302
+01:01:30,516 --> 01:01:56,268
+Hopefully, that's easy. And I think it's not here, but Poisson CDF has a nice equation. Let me try to find that in internet. Poisson CDF. Poisson CDF.
+
+303
+01:01:59,380 --> 01:02:00,300
+Bu yüzden.
+
+304
+01:02:05,715 --> 01:02:08,275
+Poisson distribution CDF.
+
+305
+01:02:49,523 --> 01:02:57,883
+Wikipedia'a, Poisson distribution, bu ekonomik
+
+306
+01:02:57,883 --> 01:03:01,563
+know for PMF.
+
+307
+01:03:01,563 --> 01:03:07,163
+And you have some different PMF graphs.
+
+308
+01:03:07,163 --> 01:03:11,163
+And
+
+309
+01:03:14,804 --> 01:03:15,804
+No.
+
+310
+01:03:23,572 --> 01:03:30,452
+Bu, bu, ben de güzel bir cdf'i var.
+
+311
+01:03:42,771 --> 01:03:47,692
+I think it's, so I don't remember.
+
+312
+01:04:51,027 --> 01:04:52,027
+Sıdır.
+
+313
+01:05:33,907 --> 01:05:41,587
+I guess I am remembering wrong. I don't see a nice CDF here.
+
+314
+01:05:54,675 --> 01:06:06,675
+Anyways, I thought it had a nice CDF, but I didn't see a nice CDF. Maybe we can find somewhere else.
+
+315
+01:07:07,380 --> 01:07:13,019
+Evet, ben de yanlış hatırladım.
+
+316
+01:07:13,019 --> 01:07:18,579
+Anyway, devam edelim.
+
+317
+01:07:26,036 --> 01:07:37,195
+So, even if it doesn't have a very nice CDF, PMF is easy to calculate.
+
+318
+01:07:39,936 --> 01:07:50,195
+So, instead of binomial, when n is very large, you can use...
+
+319
+01:07:52,851 --> 01:07:56,851
+You can use Poisson where lambda is n times p.
+
+320
+01:08:07,507 --> 01:08:08,648
+So, um,
+
+321
+01:08:12,340 --> 01:08:16,340
+Bu, last lecture'nin review.
+
+322
+01:08:18,340 --> 01:08:20,340
+Let's have a break.
+
+323
+01:08:23,340 --> 01:08:26,340
+Let's have a 10-min break until...
+
+324
+01:08:30,036 --> 01:08:34,036
+10.25
+
+325
+01:26:53,684 --> 01:26:57,164
+Hi again. So let's continue.
+
+326
+01:27:09,876 --> 01:27:15,876
+We will look at continuous random variables and their distributions.
+
+327
+01:27:20,876 --> 01:27:25,876
+Now, we have seen discrete random variables.
+
+328
+01:27:28,876 --> 01:27:31,876
+Their range was countable.
+
+329
+01:27:34,195 --> 01:27:42,915
+So, they were numbers from possible countable sets.
+
+330
+01:27:46,868 --> 01:27:59,868
+Şimdi, continuus random variables, we see them when the range is uncountable.
+
+331
+01:27:59,868 --> 01:28:05,868
+So, you have an interval.
+
+332
+01:28:05,868 --> 01:28:09,868
+This can happen sometimes when...
+
+333
+01:28:11,956 --> 01:28:36,556
+Fizikal measurements, you can have uncountable values. For example, height of a person, right? Height of a person can get any real number. So, in reality, so...
+
+334
+01:28:42,996 --> 01:29:06,996
+Now, one thing interesting is with continuous random variables, probability of a single value is always zero. So, what is the probability of a single value?
+
+335
+01:29:07,475 --> 01:29:30,435
+My height, or you will select somebody in the class, and what is the probability of his or her height being 1.7 exactly? That's zero.
+
+336
+01:29:35,507 --> 01:29:49,887
+I think this comes from the fact that between any two numbers in real line there are infinitely many points.
+
+337
+01:29:49,887 --> 01:29:59,927
+So if the probability of these points is not zero, then
+
+338
+01:30:01,460 --> 01:30:05,460
+bu sumin daha fazla bir noktası.
+
+339
+01:30:07,460 --> 01:30:08,460
+Bu,
+
+340
+01:30:10,460 --> 01:30:12,460
+bu,
+
+341
+01:30:12,460 --> 01:30:16,460
+bir noktası var,
+
+342
+01:30:16,460 --> 01:30:18,460
+bir noktası var.
+
+343
+01:30:18,460 --> 01:30:19,460
+Bu,
+
+344
+01:30:21,460 --> 01:30:27,460
+bu,
+
+345
+01:30:26,644 --> 01:30:29,604
+Continuous Variable Topics
+
+346
+01:30:29,604 --> 01:30:32,984
+We will be talking about
+
+347
+01:30:32,984 --> 01:30:36,083
+Probabilities of a Range
+
+348
+01:30:36,083 --> 01:30:39,543
+So what is the
+
+349
+01:30:39,543 --> 01:30:41,984
+Probability of
+
+350
+01:30:41,984 --> 01:30:47,884
+A person's height
+
+351
+01:30:47,884 --> 01:30:50,884
+Being between
+
+352
+01:30:51,475 --> 01:31:03,796
+1.70 ve 1.80, right? So, what is the probability of being in that range?
+
+353
+01:31:05,935 --> 01:31:15,235
+And also, so, that's a bit different from discrete random variables.
+
+354
+01:31:15,923 --> 01:31:22,923
+In discrete random variables, for each x you have a positive probability.
+
+355
+01:31:22,923 --> 01:31:33,923
+Also in continuous random variables, we have this thing called probability density function.
+
+356
+01:31:33,923 --> 01:31:40,923
+We don't have direct probabilities.
+
+357
+01:31:42,387 --> 01:32:00,327
+Since direct probability is always zero, and we want to have probability of ranges, we have this function, and we will integrate this function to find the probability.
+
+358
+01:32:00,327 --> 01:32:06,327
+So,
+
+359
+01:32:07,859 --> 01:32:28,859
+Remember that for some things like when for calculating CDFs in discrete random variables, we used sums, right? We summed in discrete random variables.
+
+360
+01:32:31,699 --> 01:32:40,579
+For continuous random variables, instead of some, a lot of times, we will use integrals.
+
+361
+01:32:43,699 --> 01:32:51,319
+İntegrals are like sums in continuous spaces.
+
+362
+01:33:11,380 --> 01:33:36,680
+In discrete probabilities, we have PMFs, remember PMF? Probability, mass, function. So, it's like we have masses, these masses of probabilities at specific locations in discrete probability.
+
+363
+01:33:38,515 --> 01:33:48,355
+But in continuous probability, there is no such mass, there is no singular mass, points.
+
+364
+01:33:48,355 --> 01:33:53,876
+There is no points where these masses are gathered.
+
+365
+01:33:55,036 --> 01:34:05,855
+Instead, all the probability is distributed on all points in the range.
+
+366
+01:34:07,380 --> 01:34:18,000
+And so we can talk about probability between A and B in the range of A to B.
+
+367
+01:34:20,159 --> 01:34:31,119
+And now in discrete case, when we talk about probability,
+
+368
+01:34:32,243 --> 01:34:33,783
+X'e bir altyazı var.
+
+369
+01:34:33,783 --> 01:34:42,923
+A' ve B'ye bir altyazı var.
+
+370
+01:34:42,923 --> 01:34:59,051
+A' ve bir altyazı var.
+
+371
+01:35:00,083 --> 01:35:14,083
+Now, in continuous probability, we are doing an area calculation. Remember, the area is the...
+
+372
+01:35:19,988 --> 01:35:46,988
+İntegration, between a to b of the curve, right? If you integrate the curve, you get area. So, from a to b, from a to b, we will integrate. What will we integrate? We will integrate probability density function.
+
+373
+01:35:47,252 --> 01:35:49,132
+f of x.
+
+374
+01:35:53,716 --> 01:35:57,096
+ve x'e sadece bir dama variable.
+
+375
+01:35:58,656 --> 01:36:02,756
+Instead of x, you can use y, z, it doesn't matter.
+
+376
+01:36:07,015 --> 01:36:09,256
+So, that's very important.
+
+377
+01:36:09,976 --> 01:36:16,515
+To calculate probabilities in continuous problems, in continuous probabilities,
+
+378
+01:36:17,515 --> 01:36:21,015
+you use integration of the density function.
+
+379
+01:36:29,716 --> 01:36:52,516
+Now, remember that PMF and CDF has a relationship. Similarly, CDF and PDF has relationships too. And...
+
+380
+01:36:53,684 --> 01:37:10,684
+Now, in continuous distributions, continuous random variables, if you know CDF, cumulative distribution functions, you can obtain PDFs by this derivative.
+
+381
+01:37:21,140 --> 01:37:33,140
+Bu şekilde yazılır.
+
+382
+01:37:33,140 --> 01:37:35,140
+PDF.
+
+383
+01:37:35,140 --> 01:37:37,140
+Tabii ki,
+
+384
+01:37:37,140 --> 01:37:39,140
+bu şekilde çalışır.
+
+385
+01:37:43,731 --> 01:37:51,731
+Cumulative function needs to be differentiable, because we are differentiating here, we are doing differentiation.
+
+386
+01:37:56,659 --> 01:38:03,699
+Bu şekilde bu şekilde cdf'ye gittik.
+
+387
+01:38:05,460 --> 01:38:08,979
+Ve en çok problemlerden birçok soru var.
+
+388
+01:38:10,199 --> 01:38:13,239
+Bu cdf'ye gittik.
+
+389
+01:38:13,439 --> 01:38:19,779
+Bir sonraki cdf'ye gittik.
+
+390
+01:38:23,604 --> 01:38:49,579
+Now, what are some properties of PDF's? PDF's are always zero or more. They cannot be negative. If you integrate PDF from minus infinity to positive infinity,
+
+391
+01:38:50,484 --> 01:39:00,484
+You guessed right, you get 1. So it's similar to discrete probabilities. The sum is 1.
+
+392
+01:39:00,484 --> 01:39:02,484
+And...
+
+393
+01:39:06,515 --> 01:39:20,875
+To obtain the probability of random variable having values between a and b, you basically, as I said before,
+
+394
+01:39:26,899 --> 01:39:31,899
+İnteklendirmeyi, A'ya B'ye, bu pdf.
+
+395
+01:39:33,899 --> 01:39:34,635
+Şimdi,
+
+396
+01:39:37,908 --> 01:39:43,408
+I said that PDF and CDF are related.
+
+397
+01:39:43,628 --> 01:39:51,228
+If you know cumulative distribution, you can obtain PDFs.
+
+398
+01:39:51,888 --> 01:39:58,608
+If you know cumulative distributions, actually you can directly calculate probabilities too.
+
+399
+01:39:58,748 --> 01:40:00,048
+You don't need integration.
+
+400
+01:40:08,180 --> 01:40:18,860
+You can simply subtract cumulative distribution of a from cumulative distribution of b.
+
+401
+01:40:20,960 --> 01:40:25,899
+You can simply subtract and it will give you the probability.
+
+402
+01:40:29,811 --> 01:40:35,811
+ve, where'd that come from? That comes from actually this.
+
+403
+01:40:39,811 --> 01:40:48,811
+Now, if you know CDF, you can obtain PDF by differentiation.
+
+404
+01:40:50,996 --> 01:41:17,476
+Now, if you can go to go in the other way, so if you know PDF, if you know PDF, you can just integrate PDF to get CDF. So if you know density, PDF is density.
+
+405
+01:41:19,764 --> 01:41:44,064
+You integrate from minus infinity to x, and that gives you cumulative distribution value, or cumulative probability of x. And if now, if you think about this,
+
+406
+01:41:45,939 --> 01:41:57,139
+ve if you play with this a to b fx dx, you can get to this, this different, this taking the difference.
+
+407
+01:42:02,931 --> 01:42:25,931
+CDF is related to probabilities. If you take the difference, you get probability. If you get the derivative, you get density. And if you integrate density, you get cumulative.
+
+408
+01:42:29,811 --> 01:42:31,811
+These things are all related.
+
+409
+01:42:45,427 --> 01:42:49,427
+Let's look at an example.
+
+410
+01:42:52,427 --> 01:43:00,427
+One of the well-known distributions, continuous distributions, is uniform distribution.
+
+411
+01:43:01,147 --> 01:43:02,407
+This is very simple.
+
+412
+01:43:04,167 --> 01:43:05,807
+We write it this way.
+
+413
+01:43:06,587 --> 01:43:11,967
+So, X is distributed by uniform distribution with parameters A and B.
+
+414
+01:43:13,203 --> 01:43:24,123
+And now the density is very, very simple.
+
+415
+01:43:25,503 --> 01:43:31,543
+From A to B, the density is constant.
+
+416
+01:43:31,543 --> 01:43:36,323
+It's always 1 minus, sorry, 1 over.
+
+417
+01:43:36,916 --> 01:43:49,836
+B minus A. So, in this A to B range, the density is always the same value, it's constant.
+
+418
+01:43:51,976 --> 01:44:02,656
+So, density of A is, what is this? I think it's 0.35 or something.
+
+419
+01:44:04,756 --> 01:44:16,615
+At B, the density is same, and in between again the density is same. It's uniform, same, uniform, uniform, same. So,
+
+420
+01:44:19,891 --> 01:44:21,891
+constant, uniform.
+
+421
+01:44:30,996 --> 01:44:57,995
+Now, you can easily obtain CDF yourself. You can do it as an exercise at home. As I said, since you know this density, you integrate it from minus infinity to x. Dummy variable is u here, and that gives you...
+
+422
+01:45:00,435 --> 01:45:10,815
+CDF, Cumulative Distribution. So, you can obtain this CDF easily. Try that at a later time.
+
+423
+01:45:13,395 --> 01:45:25,435
+And you get this x minus a divided by b minus a if x is between a and b. If x is smaller than a,
+
+424
+01:45:27,380 --> 01:45:36,659
+It's always 0. If x is larger than or equal to b, cdf is always 1.
+
+425
+01:45:38,539 --> 01:45:41,319
+So, this is wrong actually. This should be 1.
+
+426
+01:46:16,884 --> 01:46:19,384
+Bu, bu, bu, bu, bu, bu.
+
+427
+01:46:28,340 --> 01:46:29,539
+Bu, bu part is wrong.
+
+428
+01:46:49,108 --> 01:46:54,588
+Now, you can calculate expected value.
+
+429
+01:46:57,467 --> 01:46:58,148
+Sorry.
+
+430
+01:46:59,948 --> 01:47:01,228
+What happened there?
+
+431
+01:47:20,819 --> 01:47:24,199
+You can calculate expected value and variance.
+
+432
+01:47:25,539 --> 01:47:33,079
+In discrete, for expected value, you summed.
+
+433
+01:47:33,079 --> 01:47:43,760
+Now here, the expected value of random variable X is,
+
+434
+01:47:45,043 --> 01:48:08,203
+From minus infinity to positive infinity, you'll integrate. And what will you integrate? You will multiply x with density. F of x being x. And dx, of course. So that will give you expected value.
+
+435
+01:48:09,427 --> 01:48:14,448
+Variances remember varians was just expected value.
+
+436
+01:48:15,327 --> 01:48:16,127
+Of.
+
+437
+01:48:17,167 --> 01:48:19,307
+X minus me axis square.
+
+438
+01:48:20,747 --> 01:48:23,228
+So using this.
+
+439
+01:48:28,948 --> 01:48:32,768
+Top 10 varyans, we will use Lotus.
+
+440
+01:48:35,587 --> 01:48:45,228
+This is a funny name for this equation, Law of the Unconscious Statistician.
+
+441
+01:48:46,667 --> 01:48:49,948
+I don't know why they gave this name.
+
+442
+01:48:51,948 --> 01:48:54,488
+So if you have a function g of x,
+
+443
+01:48:55,636 --> 01:49:20,876
+Like here, x minus mu x square is g of x, let's say. Expected value of g of x is, again you will take the integral from minus infinity to positive infinity. You will multiply g of x with the density and dx.
+
+444
+01:49:22,163 --> 01:49:44,623
+inside the integral. So, basically, to find variants, you can just apply LOTUS. In this case, G of X will be this. X minus mu axis is square.
+
+445
+01:49:46,228 --> 01:49:51,228
+ve yine de bu şekilde, minus infinity to positive infinity.
+
+446
+01:49:58,771 --> 01:50:02,771
+Densi ve dx.
+
+447
+01:50:02,771 --> 01:50:16,771
+Now, if you play with this, if you massage this, if you work on this a bit, you get this nice version.
+
+448
+01:50:21,395 --> 01:50:47,355
+So, varyans of x can be written in this way, expected value of x minus mu x is square, or equivalently, varyans of x is expected value of x is square minus expected value of x is square.
+
+449
+01:50:49,268 --> 01:50:54,188
+So you have two different equations.
+
+450
+01:50:54,667 --> 01:50:57,887
+You can obtain each from the other.
+
+451
+01:50:59,167 --> 01:51:10,148
+And for some problems, using the second equation is easier, better.
+
+452
+01:51:11,967 --> 01:51:15,887
+For some problems, you will need to use this first one.
+
+453
+01:51:28,819 --> 01:51:33,479
+So, there is a simple example here.
+
+454
+01:51:37,140 --> 01:51:55,140
+So, we have this random variable x. Its density is 2x, for x between 0 and 1. So, what is the expected value and what is the variance?
+
+455
+01:51:59,140 --> 01:52:01,140
+Expected value...
+
+456
+01:52:02,355 --> 01:52:06,636
+Minus infinity to positive infinity, remember the equation?
+
+457
+01:52:09,296 --> 01:52:13,036
+We had minus infinity to positive infinity.
+
+458
+01:52:14,395 --> 01:52:20,355
+But in the solution here, we see that it's from 0 to 1, right?
+
+459
+01:52:21,036 --> 01:52:22,115
+Why is that?
+
+460
+01:52:23,195 --> 01:52:24,756
+Well, because...
+
+461
+01:52:29,363 --> 01:52:55,344
+Density is defined between 0 and 1 as 2x. Since they don't say anything else, implicitly they are saying that for values less than 0, density is just 0. And for values larger than 1, density is 0.
+
+462
+01:52:56,627 --> 01:53:06,027
+ve if you integrate anything by multiplying by 0, you get 0.
+
+463
+01:53:06,027 --> 01:53:18,227
+So, instead of minus infinity, from minus infinity to 0, this integration is just 0.
+
+464
+01:53:18,227 --> 01:53:22,427
+So, instead of minus infinity, we are writing 0 here.
+
+465
+01:53:23,891 --> 01:53:30,152
+And again, from 1 to positive infinity, the integration is just 0.
+
+466
+01:53:31,231 --> 01:53:33,912
+So we ignore that part too.
+
+467
+01:53:34,452 --> 01:53:38,051
+So we are writing from 0 to 1.
+
+468
+01:53:39,011 --> 01:53:40,952
+From 0 to 1.
+
+469
+01:53:42,652 --> 01:53:46,371
+We are multiplying x with the density.
+
+470
+01:53:46,692 --> 01:53:49,051
+Density is 2x and dx.
+
+471
+01:53:49,551 --> 01:53:50,971
+And we are taking the integral.
+
+472
+01:53:52,340 --> 01:53:55,660
+ve 2 over 3.
+
+473
+01:53:57,340 --> 01:54:03,180
+Now, that's expected value. We also need to find varianz.
+
+474
+01:54:03,180 --> 01:54:10,700
+And for the varianz, using the second varianz equation is easier.
+
+475
+01:54:11,980 --> 01:54:15,020
+Here, because we already have e to the x.
+
+476
+01:54:15,620 --> 01:54:17,020
+And calculating...
+
+477
+01:54:17,264 --> 01:54:44,584
+X-squares expected value is usually easier than directly calculating this X-mu-squares, because the integration you will do is much easier. This multiplication becomes kind of hard. If there is just X-squares here, it's much easier.
+
+478
+01:54:46,612 --> 01:54:54,992
+So, we go in that route, we find expected value of x squared.
+
+479
+01:54:54,992 --> 01:55:07,192
+For that, we multiply x squared with 2x, the density, and dx, and take integrate, take the integration, we integrate, and we get 1 over 2.
+
+480
+01:55:08,412 --> 01:55:12,672
+And now we apply, we subtract.
+
+481
+01:55:14,899 --> 01:55:19,259
+And we get 1 over 18 as the variance.
+
+482
+01:55:21,920 --> 01:55:25,399
+I think this graph is somehow wrong.
+
+483
+01:55:28,340 --> 01:55:35,759
+So that was a simple example of calculating expected value and variance.
+
+484
+01:55:46,868 --> 01:56:10,028
+Now, sometimes, you know density of x, and there is a related random variable y, and somehow you can obtain y from a function of x, like g of x, right?
+
+485
+01:56:11,764 --> 01:56:17,524
+And let's assume G is strictly monotonic and differentiable.
+
+486
+01:56:20,164 --> 01:56:29,404
+And monotonic means it only increases or it only decreases.
+
+487
+01:56:37,235 --> 01:56:38,235
+Şimdi,
+
+488
+01:56:40,635 --> 01:56:43,635
+biz yi denciyi bulunduruz.
+
+489
+01:56:43,836 --> 01:56:44,635
+Densiyle,
+
+490
+01:57:03,060 --> 01:57:08,640
+And there is a nice way to obtain that density.
+
+491
+01:57:08,640 --> 01:57:13,640
+You will divide...
+
+492
+01:57:22,644 --> 01:57:49,283
+The axis density, you will divide the axis density, density of x, by this thing. What is this? This is, we have a derivative here, derivative of g of x. Since there is no division, we only see apostrophe.
+
+493
+01:57:49,583 --> 01:57:55,583
+Bu, derivatiği ile x'e yapıyoruz.
+
+494
+01:57:58,583 --> 01:58:03,583
+Ve bu, bu, absolute value.
+
+495
+01:58:03,583 --> 01:58:07,583
+Derivatiği ve absolute value.
+
+496
+01:58:09,583 --> 01:58:16,583
+Eğer x'e yi'ye çeşitli, yi'ye çeşitli, yi'ye çeşitli.
+
+497
+01:58:17,108 --> 01:58:23,587
+But this is a piecewise function. So this is when where
+
+498
+01:58:29,171 --> 01:58:31,612
+g of x equals to y.
+
+499
+01:58:34,612 --> 01:58:40,371
+So, if this equation has a solution, we have this.
+
+500
+01:58:41,331 --> 01:58:43,751
+But if it doesn't have a solution,
+
+501
+01:58:47,283 --> 01:58:47,947
+Uhhh...
+
+502
+01:58:51,731 --> 01:58:53,644
+bu, 0.
+
+503
+01:58:58,036 --> 01:59:10,036
+This is called method of transformation. We are transforming x's density to y's density.
+
+504
+01:59:16,036 --> 01:59:22,036
+And if you have a function that is not strict, sorry.
+
+505
+01:59:23,731 --> 01:59:26,051
+Bu, monotonic değil.
+
+506
+01:59:44,756 --> 01:59:54,756
+A part will be always increasing, another part will be always decreasing, another part will be always increasing.
+
+507
+01:59:54,756 --> 02:00:03,756
+So you can divide it like that. You can obtain n monotonic parts.
+
+508
+02:00:03,756 --> 02:00:10,700
+And now you can do the same division.
+
+509
+02:00:11,923 --> 02:00:35,264
+You can divide density of x with g's derivative in absolute value for each of those n monotonic parts and you can sum them, right? And that will give you f's density.
+
+510
+02:00:38,355 --> 02:00:43,435
+And here you actually need to.
+
+511
+02:00:45,296 --> 02:00:47,635
+So this gives you a direct equation.
+
+512
+02:00:49,076 --> 02:00:49,775
+Here.
+
+513
+02:00:57,876 --> 02:01:20,876
+Bu, bu aynı olay da, bu aynı olay da, bu olay da, bu olay da, ve x1, x2, x, yukarıda, n part, x, yukarıda, x ve x'i koyun.
+
+514
+02:01:23,252 --> 02:01:32,072
+X is density at that xi, and g is derivative at that xi.
+
+515
+02:01:43,252 --> 02:01:49,712
+Bu da bu yorumlar ve bu da bu da bakın.
+
+516
+02:01:50,872 --> 02:01:53,332
+Bu da çok güzel.
+
+517
+02:01:57,272 --> 02:01:59,792
+Bakın nasıl bu da bakılıyor?
+
+518
+02:01:59,792 --> 02:02:05,512
+Bu da bu da bu da bu da bakılıyor.
+
+519
+02:02:08,916 --> 02:02:36,236
+Ok, they do an example actually. So, let's look at exponential distribution, exponential transformation. So, we have learned uniform distribution a couple of slides ago. What was it like? It was like this, uniform distribution.
+
+520
+02:02:37,460 --> 02:02:39,780
+always constant
+
+521
+02:02:43,507 --> 02:03:05,947
+Ah, this was not wrong, sorry. CDF, this is not CDF, this is a PDF, so this graph is right. I thought this was the graph of CDF then. Can I clean this somehow?
+
+522
+02:03:19,444 --> 02:03:21,444
+ve erasörler.
+
+523
+02:03:29,043 --> 02:03:32,863
+Anyway, so, um...
+
+524
+02:03:41,203 --> 02:04:05,323
+Bu, bu
+
+525
+02:04:06,260 --> 02:04:10,260
+Density is like between a and b.
+
+526
+02:04:10,260 --> 02:04:12,260
+The density is constant.
+
+527
+02:04:12,260 --> 02:04:16,260
+It's always one over b minus a.
+
+528
+02:04:16,260 --> 02:04:18,260
+We have seen that.
+
+529
+02:04:23,412 --> 02:04:31,812
+So now, we have a situation where we have this x.
+
+530
+02:04:42,963 --> 02:04:53,123
+But, we have a variable y, random variable y, and it's e to the x.
+
+531
+02:04:53,123 --> 02:05:09,123
+So, basically, to get a y, we start from x, we get a random x, and then take the exponential of that random variable.
+
+532
+02:05:11,220 --> 02:05:13,220
+Ve y'ye görebiliyoruz.
+
+533
+02:05:13,220 --> 02:05:17,220
+Şimdi, bu y'ye görebiliyoruz.
+
+534
+02:05:17,220 --> 02:05:19,220
+Bu y'ye görebiliyoruz.
+
+535
+02:05:19,220 --> 02:05:21,220
+Y'ye görebiliyoruz.
+
+536
+02:05:21,220 --> 02:05:25,220
+Şimdi, bu y'ye görebiliyoruz.
+
+537
+02:05:25,220 --> 02:05:29,220
+Ve bu y'ye görebiliyoruz.
+
+538
+02:05:29,220 --> 02:05:30,731
+Bu y'ye görebiliyoruz.
+
+539
+02:05:33,427 --> 02:05:56,427
+So, what are the ranges? X range is from 0 to 1. We already know it from this parameter. X is defined between 0 and 1. What is Y's range? For X equals to 0, we have E to the 0, which is 1.
+
+540
+02:05:57,363 --> 02:06:07,063
+x equals to one, we have e to the one, which is e. So, the range of y is from one to e.
+
+541
+02:06:10,931 --> 02:06:21,771
+And the function between them is e to the x.
+
+542
+02:06:22,771 --> 02:06:26,572
+And this is a strictly increasing function.
+
+543
+02:06:26,751 --> 02:06:27,612
+It's monotonic.
+
+544
+02:06:27,851 --> 02:06:29,771
+It always increases.
+
+545
+02:06:30,572 --> 02:06:32,051
+It never decreases.
+
+546
+02:06:32,051 --> 02:06:38,211
+So we can use transformation directly.
+
+547
+02:06:40,148 --> 02:06:47,268
+And we need to find first remember that derivative.
+
+548
+02:06:48,728 --> 02:06:55,228
+And the nice thing about e to the x is its derivative is itself.
+
+549
+02:06:57,068 --> 02:06:58,868
+So that's nice.
+
+550
+02:07:01,927 --> 02:07:02,807
+And.
+
+551
+02:07:06,195 --> 02:07:23,795
+g of x or y is e to the x and then what is x? x is ln y. So from this equation we need to obtain x, x's equation.
+
+552
+02:07:25,955 --> 02:07:33,315
+And that's ln. ln log is like inverse of exponential, you know that.
+
+553
+02:07:34,515 --> 02:07:36,515
+So,
+
+554
+02:07:52,435 --> 02:07:53,435
+Um,
+
+555
+02:07:58,163 --> 02:08:07,923
+Now, the density of x is just 1, because 1 over 1 minus 0 is just 1.
+
+556
+02:08:09,804 --> 02:08:13,243
+So, what will density of y be then?
+
+557
+02:08:15,444 --> 02:08:22,724
+We will, it will be density of x at ln y.
+
+558
+02:08:24,435 --> 02:08:26,435
+Divided by G's
+
+559
+02:08:31,412 --> 02:08:37,012
+derivatif, which is e to the x, but x is y.
+
+560
+02:08:37,012 --> 02:08:52,412
+So, since we have to write everything in terms of y here, y, because this is the density of random variable y.
+
+561
+02:08:53,203 --> 02:09:20,203
+So, we have to write everything in terms of y. We cannot have x here. So, we need to convert all x's to y's, everything to y's. So, a to the x becomes a to the ln y, and that's inside absolute value.
+
+562
+02:09:21,203 --> 02:09:44,803
+F of x is always 1, so we will just write 1. Exponential and ln simplifies to y, and y is always positive, so we don't need absolute value 2.
+
+563
+02:09:49,555 --> 02:09:56,555
+Y'de 1 ve E'ye tanıyoruz.
+
+564
+02:09:56,555 --> 02:09:59,339
+1 üzeri y'ye tanıyoruz.
+
+565
+02:10:10,868 --> 02:10:11,868
+Bu,
+
+566
+02:10:15,667 --> 02:10:41,948
+If you didn't know, if you didn't take this course, it's easy to get confused and say that since y is e to the x, pdf of y is e to the pdf of x. Somebody that didn't take this course would say that.
+
+567
+02:10:42,163 --> 02:10:43,703
+But that would be wrong.
+
+568
+02:10:44,184 --> 02:10:44,523
+Okay.
+
+569
+02:10:44,943 --> 02:10:46,463
+You have to do this.
+
+570
+02:10:46,943 --> 02:10:49,163
+You have to take the derivative.
+
+571
+02:10:49,804 --> 02:10:51,144
+Take the absolute value.
+
+572
+02:10:52,323 --> 02:10:56,823
+Convert x to y's.
+
+573
+02:10:58,963 --> 02:11:03,264
+You need to find the right range.
+
+574
+02:11:07,572 --> 02:11:08,460
+OK.
+
+575
+02:11:17,300 --> 02:11:26,600
+So, we will start looking at special distributions, special continuous distributions.
+
+576
+02:11:27,500 --> 02:11:39,380
+We have seen special discrete distributions like binomial, Bernoulli, geometric, etc.
+
+577
+02:11:40,739 --> 02:11:44,360
+Similar to those, there are some well-known.
+
+578
+02:11:44,884 --> 02:11:47,884
+Continuous distributions.
+
+579
+02:11:47,884 --> 02:11:52,884
+And first of them is uniform distribution.
+
+580
+02:11:52,884 --> 02:12:00,884
+And we have already seen this actually.
+
+581
+02:12:00,884 --> 02:12:08,884
+As an example, we write as x is distributed by uniform distribution.
+
+582
+02:12:11,680 --> 02:12:27,680
+Its density was this, if x, so this is uniform means constant, so between a and b, density is always constant, and everywhere else density is just zero.
+
+583
+02:12:29,360 --> 02:12:39,140
+And that constant value can be obtained from a and b, so you will subtract a from b,
+
+584
+02:12:39,764 --> 02:12:42,923
+And you will divide 1 by that.
+
+585
+02:12:43,463 --> 02:12:46,344
+That will give you density of x.
+
+586
+02:12:48,444 --> 02:12:56,783
+And from there you can obtain mean or expected value.
+
+587
+02:12:58,264 --> 02:12:59,064
+Variance.
+
+588
+02:13:01,064 --> 02:13:05,804
+Mean is a plus b divided by 2 as you might expect.
+
+589
+02:13:07,667 --> 02:13:20,068
+Varyansı b minus a squared divided by 12. These are exercises for you. They are easy to find. You can find them later yourself.
+
+590
+02:13:20,728 --> 02:13:32,568
+Again, cumulative distribution function can be obtained easily. You will integrate and you can easily find this.
+
+591
+02:13:46,036 --> 02:13:52,036
+This is used a lot for random number generation in computer programming.
+
+592
+02:13:55,476 --> 02:13:59,156
+You get random variables from uniform distribution.
+
+593
+02:14:01,236 --> 02:14:04,196
+As another example we have here,
+
+594
+02:14:06,356 --> 02:14:09,676
+waiting times with equal probability.
+
+595
+02:14:11,116 --> 02:14:11,296
+So,
+
+596
+02:14:11,988 --> 02:14:14,208
+Bu modeler.
+
+597
+02:14:28,756 --> 02:14:32,996
+Now, I think this is enough for today.
+
+598
+02:14:35,395 --> 02:14:41,476
+Starting next week, we will see other special distributions like exponential, normal, gamma,
+
+599
+02:14:42,756 --> 02:14:55,956
+and we will see mixed random variables that are in some ranges discrete and in some other ranges continuous.
+
+600
+02:14:57,203 --> 02:14:58,203
+Um,
+
+601
+02:15:02,579 --> 02:15:30,180
+But let's stop here. And again, I want to remind you that I am just doing a summary here. This is just an overview, just a summary. There are a lot that you need to learn. A lot more that you need to learn. And you should be studying.
+
+602
+02:15:30,739 --> 02:15:41,739
+Pişronik's book to learn those and you should be doing the exercises, problems, et cetera, there.
+
+603
+02:15:45,339 --> 02:15:50,199
+Any questions? I'll finish, I'll end the lesson here.
+
+604
+02:15:57,108 --> 02:16:00,108
+Tamam, iyi günler.
