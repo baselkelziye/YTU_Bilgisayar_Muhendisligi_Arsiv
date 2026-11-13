@@ -1,0 +1,1047 @@
+1
+00:00:21,780 --> 00:00:23,320
+Merhaba arkadaşlar, hoş geldiniz.
+
+2
+00:00:24,560 --> 00:00:25,300
+Hocam geliyor mu?
+
+3
+00:00:26,260 --> 00:00:27,080
+Evet hocam, geliyor.
+
+4
+00:00:27,740 --> 00:00:28,900
+Tamamdır, sağ olun.
+
+5
+00:00:30,260 --> 00:00:33,060
+Şimdi sunumlara başlayacağız.
+
+6
+00:00:34,100 --> 00:00:39,840
+Sunumlara geçen hafta [öğrenci] Bey yapamamıştı, onunla başlayalım.
+
+7
+00:00:40,019 --> 00:00:40,880
+[öğrenci] Bey, hazır mısınız?
+
+8
+00:00:41,380 --> 00:00:42,359
+Merhaba hocam.
+
+9
+00:00:43,795 --> 00:00:48,435
+Ekran paylaşıyorum. Sesim biraz kötü. Kusura bakmayın. [kişisel bilgi]
+
+10
+00:00:48,435 --> 00:00:53,615
+Geçmiş olsun. Bir problem yok. Rahatlayabiliyoruz. Hazırsanız ekran paylaşımıyla başlayalım.
+
+11
+00:00:54,115 --> 00:00:56,235
+Tamam. Ekranım geldi sanırım.
+
+12
+00:00:56,795 --> 00:00:59,595
+Evet. Tamamdır. Başlayabilirsiniz.
+
+13
+00:00:59,875 --> 00:01:06,835
+Tamam. [kişisel bilgi]
+
+14
+00:01:07,700 --> 00:01:29,620
+Bu kapsamda mobil robotlarla ilgili bir araştırma yaptım. Sonra yol bulma algoritmalarıyla ilgili bir araştırma yaptım. Sonra da engelden sakınma algoritmalarla ilgili bir araştırma yaptım. Seminer konusunda bunlardan bahsedeceğim.
+
+15
+00:01:30,995 --> 00:01:46,855
+Mobil robotlar kısmında insansız kara araçları, İHA'lar, insansız sava araçları, insansız deniz araçları, bina için otonom taşınma araçları, otonom sürü mobil robot sistemleriyle ilgili kısa bilgiler vereceğim.
+
+16
+00:01:48,075 --> 00:01:57,855
+Yol bulma algoritmalarıyla ilgili de lokalizasyon, zikra algoritması, a yıldız algoritması, karınca algoritması ve genetik algoritma ile ilgili.
+
+17
+00:01:58,420 --> 00:01:59,800
+Bilgiler vereceğim.
+
+18
+00:02:02,680 --> 00:02:15,360
+Engelden sakınma algoritmaları konusunda da böcek algoritmaları var. Potansiyel alan yöntemi, vektör alan histogramı, dinamik pencere yaklaşımıyla ilgili algoritmalar var. Bunlara değineceğim.
+
+19
+00:02:19,252 --> 00:02:20,012
+Evet.
+
+20
+00:02:21,683 --> 00:02:31,983
+Mobil robotlar, robot kelimesi ilk olarak 1921 yılında Çek oyun yazarı Karel Katekin, Rosum Universal Robots adlı oyununda kullanılmış.
+
+21
+00:02:32,883 --> 00:02:45,004
+Günümüzdeki tanımına bakacak olursak, bilgisayar yardımıyla kontrol edilebilen veya otomatik olarak çalışan insanların gerçekleştirdikleri işleri yerine getiren araçlar olarak tanımlanıyor.
+
+22
+00:02:45,004 --> 00:02:49,683
+Webster sözlüğünde. Oxford sözlüğünde ise karmaşık bir dizi işlevi otomatik.
+
+23
+00:02:49,683 --> 00:03:07,544
+Otomatik olarak icra edebilen makine olarak tanımlanıyor. Kendi kendine çalışabilen makine kavramı 13. yüzyılda El Cezeri'nin Mahirateli Mekanik Cihazların Bilgisinin İçer'in Kitap eserinde tarif edilmiş. El Cezeri, sibernetik kurucusu olarak da geçiyor aynı zamanda.
+
+24
+00:03:08,020 --> 00:03:17,879
+Robotların insanlara yaptığı işlerde yardımcı olduğu ve katkı sağladığı çalışmalar 18. yüzyıldaki dokuma tezgahlarında ilk olarak görülüyor.
+
+25
+00:03:19,379 --> 00:03:41,639
+İlk programlanabilen makine ile ilgili patent 1954 yılında George Deo tarafından alınmıştır. Yine bunlar bir tane robot geliştirmişler. 17. yüzyılda başlayan kara araçlarındaki gelişimler 20. yüzyılda hareket kabiliyetine sahip insansız kara araçlara çalışmalarına imkan sağlamıştır.
+
+26
+00:03:48,532 --> 00:04:11,872
+Mobil özelliğiyle endüstri, savaş, afet, tarım, uzay çalışmalarında insanların ulaşamayacağı veya güvenlik problemi yaşayacağı alanlarda kullanılabilir mobil robotlar. Yine donanımların kullanılmasını sağlayan ve insan zekasını takdir eden yazılımlar ile etkili donanım birleşimlerinin insansız kara araçlarıyla birlikte insansız deniz ve insansız hava araçlarının gelişmesine de sağlanmıştır.
+
+27
+00:04:13,235 --> 00:04:27,456
+Mobil robotları üç şekilde kontrol edilebiliyor. Bunlar haptik, otonom, yarı otonom. Yani tamamen kendisi otonom olarak hareket edebiliyor. Ya da bir insan tarafından kullanılabilen robotlar var şu an günümüzde.
+
+28
+00:04:32,019 --> 00:04:44,179
+5'e ayırmıştık mobil robotları. İnsansız kara araçları zemin ile temas halinde olan ve üzerinde insan bulundurmadan uzaktan ve otonom olarak yönetilen araçlar olarak tanımlanmaktadır.
+
+29
+00:04:44,480 --> 00:04:53,180
+İlk çalışmalar askeri alanda, tehlikeli bölgelerde insan kaybını azaltma kamadıyla kişi mühimmat taşıma karşı saldırılarda bulunma görevlerinde kullanılmıştır.
+
+30
+00:04:53,960 --> 00:05:00,120
+Hani bu robotlar zaten günümüzde de gördüğümüz gibi insansız robotlar şeklinde olabiliyor.
+
+31
+00:05:00,259 --> 00:05:04,080
+Ya da işte bir köpeğe benzer şeklinde görevlerini icra edebiliyor.
+
+32
+00:05:04,200 --> 00:05:11,820
+Ya da tamamen tekerlekli olup karada hareket edebilen robotlar olabiliyor bu insansız kara araçları.
+
+33
+00:05:12,255 --> 00:05:22,795
+1915 yılında Fransızlar tarafından geliştirilen torpile Terestre adlı uzaktan kumanda edilen askeri tecrüatlı robot bu alanda bilinen ilk robot örneğidir.
+
+34
+00:05:23,875 --> 00:05:38,115
+1960'lı yıllardaki yapay zeka tam otonom araçlara kadar 1920'lerdeki ilk radyo frekansıyla kontrol edilen Chandler, 1930'da Ruslar tarafından yüksek patlayıcılı bir başka tanktan kontrol edilebilen Teletank,
+
+35
+00:05:38,516 --> 00:06:03,096
+İkinci Dünya Savaşı'nda İngilizlerin geliştirdiği Matilda, Almanların küçük tank şeklindeki Goliath adlı insansız kara araçları geliştirilmiştir. Bu robotların, daha doğrusu kara araçlarının gelişim süreçleri bunlar. 1960 yılında DARPA tarafından yapay zeka ile kontrol edilebilen bir insansız kara aracı olan Chakey'in gelişmesini sağlamıştır.
+
+36
+00:06:03,475 --> 00:06:13,636
+Bundan sonraki süreçte artık robotlar daha da hızlanabilir ve otonom şekilde hareket edebilir şeklinde geliştirilmektedir.
+
+37
+00:06:15,016 --> 00:06:18,375
+Bunlar da yine insansız kara araçlarının ilk örnekleri.
+
+38
+00:06:18,375 --> 00:06:28,375
+Şu anki gelişmene baktığımız zaman tamamen insanı taklit edebilen tekerlekli ya da insansız robotlar şeklinde kara araçlarını tanımlayabiliriz.
+
+39
+00:06:28,788 --> 00:06:51,207
+Ama insansız hava araçları kısmına gelecek olursak, insansız uçuş özelliğine sahip hava araçlarıdır. Şu an zaten günümüzde bayağı popüler insansız hava araçları. Bunlar savaşlarda özellikle kullanılıyor. Ya da yangın gibi, keşif gibi ya da hobi amaçlı kullanım amaçları var.
+
+40
+00:06:57,139 --> 00:07:16,279
+İHA'lar uzaktan kumanda veya otonom olarak iki şekilde kontrol edilebilirler. Otonom olarak görev tanımları, yol tanımaları ve hedefleri belirtilerek herhangi bir insan müdahalesi olmadan amaca ulaşması beklenmektedir. Bunlar da insanız tavır araştırma ile ilgili görseller.
+
+41
+00:07:17,939 --> 00:07:31,400
+Haritalama, orman yangınlarının tespitiyle başlayan çalışmalar günümüzde çeşitli boyutlardaki yapılarıyla hobi amaçlı kullanımlarından görüntü kaydetmeyi, lojistikten sarıma kadar birçok alanında kullanılıyor şu an günümüzde.
+
+42
+00:07:32,435 --> 00:07:46,475
+Bunlar dış ortamda GPS gibi konum sistemleriyle hareket edebilirken, iç ortamda ise ağ sinyalleri, kamera, lazer, kızılötesi, lidar gibi sensörler vasıtasıyla konumlanmaktadır.
+
+43
+00:07:47,836 --> 00:07:57,475
+İnsansız deniz araçları, İHA ve insansız kara araçlarına göre gelişimi daha yavaş ve sonradan gelişen.
+
+44
+00:07:58,740 --> 00:08:17,319
+Bir ortam olmuştur. Burada da su üstündeki bazı enerji hareket noktaları gibi problemler sebep olmuştur bu gelişimin yavaş olmasında. Son yıllarda bu problemlerin açılmasıyla insansız deniz araçlarıyla ilgili de gelişim hızlanmıştır.
+
+45
+00:08:20,319 --> 00:08:25,020
+Burada da yine insansız deniz araçlarıyla ilgili görsellerimiz var.
+
+46
+00:08:26,675 --> 00:08:43,975
+İlk insansız deniz aracı çalışması 1950'li yıllarda Amerika ve İngiltere tarafından mayın temizleme ve keşif amaçlı uzaktan kumandalı deniz araçlar olarak görülmektedir. ABD donanmasında kör bir insansız deniz aracı kaybolan atom bombasını 1966'da çıkarma başarısı göstermiştir.
+
+47
+00:08:45,620 --> 00:08:56,519
+Günümüzde bilimsel çalışmalarda ticari petrol aramaları deniz tabanlı haritalamada kullanılmak üzere birçok su üstü ve su altı insansız araçlar benzer yapılarda şu an kullanılmaktadır.
+
+48
+00:09:01,076 --> 00:09:26,516
+Bina içi otonom taşıma araçları da bunlar tamamen bina içinde kullanılan, insana yardımcı olan, yük taşıyan ve otonom hareket edebilen, şarjı bittiği zaman gidip kendi kendini şarj edebilen ya da evlerimizde kullandığımız araçları mutfak robotlarla veya süpürgelere örnek verebiliriz.
+
+49
+00:09:28,532 --> 00:09:38,972
+Otonom sürü mobil robot sisteminde ise birden fazla aynı özellikteki robottan oluşan robot gruplarına sürü robot sistemi denir.
+
+50
+00:09:38,972 --> 00:09:45,132
+Tek robot sistemlerin özelliklerini genişleterek etkinliğinin arttırılması çabaları vardır.
+
+51
+00:09:45,812 --> 00:10:01,111
+Maliyet, hareket kısıtlılığı, enerji gereksinimi, tek sistemini getirdiği işlem mülki ve kapasite sorunlarına büyüyen, doğrulaşan yapılar hatalara karşı alternatif oluşturma, bozulma durumlarında görev kısıtlılığı gibi sorunları getirmiştir.
+
+52
+00:10:01,524 --> 00:10:16,323
+Otonom sürümobil robot sistemleri daha çok doğadaki arı, karınca, balık, yarasa gibi canlıların görevini yapmasını taksit ederek şu an bu şekilde geliştiriliyor.
+
+53
+00:10:18,623 --> 00:10:26,603
+Sürümobil robotlardan beklenen mevcut kaynakları en iyi şekilde kullanarak sağlam, esnek ve ölçeklenebilir olarak görevlerini tamamlayabilmeleridir.
+
+54
+00:10:26,964 --> 00:10:37,804
+İletişim çarpışmadan kaçınma, ortak hareket planlama, grup yerleşimleri, görev paylaşımı, robot sayısı, ortam dinamiklerine karşı grup halinde cevap verme başlıca sorunlarındandır.
+
+55
+00:10:44,307 --> 00:11:02,687
+Yol bulma kısmına gelince iki nokta arasında en kısa ve en az maliyetle gidilebilen yolun belirlenmesi olarak açıklanabilir. Bu basit olarak ifade edebiliyor ama robotların bunu gerçekleştirebilmesi için çok karmaşık işlemleri yerine getirmesi gerekiyor.
+
+56
+00:11:03,892 --> 00:11:16,172
+Otonom bir robot bir noktadan başka bir noktaya giderken algılama, lokalizasyon, yol bulma, engelden sakınma gibi görevlerini başarıyla yerine getirmesi gerekiyor.
+
+57
+00:11:19,508 --> 00:11:37,187
+Lokalizasyon, robotun kendi konumunu nerede olduğunu bilmesidir. Hani bu dış ortamda GPS'lerle yapılabileceği gibi, işte iç ortamda robot harita çıkartıp nerede olduğunu konumlandırıyor. Lokalizasyon buna deniyor.
+
+58
+00:11:38,292 --> 00:12:03,932
+Izgara tabanlı haritalamada metodunda ortamdaki engeller ve robot hücreleri bölünmüş bir gömücük alan üzerinde takip edilmektedir. Ortam haritasının hücretel bir ızgara tabanlı haritaya aktarılmasının ardından ortam bilgileri bir maddesi olarak elde ediliyor. Burada harita ne kadar detaylı olursa, bu haritada bulunan bilgilerin tutulması o kadar çıyo oluyor. Hem maliyetli oluyor hem de.
+
+59
+00:12:04,288 --> 00:12:11,148
+Biraz daha zor oluyor. Ama bunun da avantajı daha detaylı bir harita çıkartmış oluyor.
+
+60
+00:12:14,676 --> 00:12:24,396
+Öz nitelik tabanlı haritalamada nesnelerin ortam içindeki şekli hakkında fikir veren ve bu nesnelerin konumlarına göre ortamın belirlendiği haritalardır.
+
+61
+00:12:24,976 --> 00:12:30,156
+Öz nitelikler robotun konumunun belirlenmesi aşamasında birer yer gösterici olarak kullanılmaktadır.
+
+62
+00:12:30,736 --> 00:12:33,796
+Robotun konumu bu yer göstericilere göre belirlenmektedir.
+
+63
+00:12:33,796 --> 00:12:40,536
+Yer gösterici olarak kapı, pencere gibi doğal yer göstericiler olduğu gibi GPS rubusu gibi yapay yer göstericiler de olabilir.
+
+64
+00:12:42,035 --> 00:12:57,415
+Yol bulma konusunda yapılan çalışmalar sonucunda dijit, A yıldız, D yıldız ve potansiyel olan metodu gibi çeşitli yol bulma amaçlı algoritma ve yöntemler geliştirilmiş.
+
+65
+00:12:58,115 --> 00:13:04,615
+Ayrıca optimizasyon amaçlı geliştirilmiş genetik algoritma ve karınca kolonisi gibi algoritmalar da yine bu amaçla kullanılmıştır.
+
+66
+00:13:05,620 --> 00:13:10,320
+Bu algoritmalar genellikle graf teorisi ve yapay dökület tabanlı algoritmalardır.
+
+67
+00:13:13,299 --> 00:13:17,480
+Her bir metodun kendine göre avantajı olduğu gibi dezavantajı da vardır.
+
+68
+00:13:17,919 --> 00:13:24,179
+Aslında burada hangi algoritmayı kullanacağımızı probleme yönelik olarak belirlememiz gerekiyor.
+
+69
+00:13:25,320 --> 00:13:31,919
+Yol bulma algoritmaları ortam hakkındaki bilgiye göre çevrim içi veya çevrim dışı olarak sınıflandırılabilir.
+
+70
+00:13:33,268 --> 00:13:42,888
+Eğer çevre hakkında tam bilgi mevcut ise ve engellerin konumları önceden biliniyorsa bu durumda kullanılan algoritma çevrim dışı yol bulma algoritmasıdır.
+
+71
+00:13:45,844 --> 00:14:07,344
+Çevre hakkında kısıtlı bilgi olması durumunda yol bulma algoritması robotun algılayıcılarına dayalı bir şekilde çalışmak durumunda kalacaktır. Bu tür algoritmalarda da çevrim içi yol bulma algoritmalara denmektedir. Burada robot kendisi aslında hiçbir şeyi tanımadan direkt sensörler ve algılayıcılarla yolu buluyor.
+
+72
+00:14:08,788 --> 00:14:25,268
+Yol bulma algoritmalarına şey yapmıştık. Zizikstra algoritması ilk geliştirilen algoritmalardan bir tanesidir. 1959 yılında Zizikstra tarafından geliştirilmiştir. Başlanmış düğümden hedef düğümü en kısa yolu bulmak için kullanılmaktadır.
+
+73
+00:14:36,788 --> 00:14:40,028
+Algoritma verimsiz olarak değerlendiriliyor.
+
+74
+00:14:41,888 --> 00:14:49,528
+A-Yıldız algoritması 1968 yılında geliştirilmiş, sergisel bir yol bulma algoritmasıdır.
+
+75
+00:14:49,528 --> 00:14:55,427
+Toplam mesafe değerleri serplanırken gerçek mesafenin yanı sıra sergisel mesafe de dikkate alınıyor.
+
+76
+00:14:58,899 --> 00:15:15,659
+Karınca algoritması, burada karıncalar taklit edilerek geliştirilmiş bir algoritma. Tamamen sezgisel olarak hiçbir görsel yıkucu olmaksızın karıncaların yiyecek kaynağını bulmasına dayanıyor.
+
+77
+00:15:16,139 --> 00:15:26,659
+Karıncalar yiyecek aramaya çıktıkları zaman bir hormon salgılıyorlar. O yoldan ne kadar çok karınca giderse diğer karıncalar da...
+
+78
+00:15:26,899 --> 00:15:30,960
+O yolu takip ediyor. Bunun üzerine de alabilir algoritma.
+
+79
+00:15:33,539 --> 00:15:34,899
+Genetik algoritma...
+
+80
+00:15:38,196 --> 00:16:00,316
+1975 yılında Holland tarafından ortaya çıkılmış. 1992 yılında da Koda tarafından programlamada kullanılarak genetik programlama adını almıştır. Bu da yine günümüzdeki aslında genetik bilimine dayanıyor. Burada iyi özelliklerin korunması, kötü özelliklerin elinimine edilmesi modellenerek geliştiriliyor.
+
+81
+00:16:05,875 --> 00:16:16,795
+Şimdi yol bulma algoritmaları bunlar da bile robot hareket ederken dinamik olarak karşısına bir engel çıktığı zaman engelden sakınma algoritmaları geliştirilmiş.
+
+82
+00:16:23,347 --> 00:16:35,187
+Robot, dediğim gibi bir dış ortamda ya da iç ortamda hareket ederken bilmediği bir engel çıktığı zaman bu engele çarpmadan hareket edebilmesi için bazı algoritmalar geliştirilmiş.
+
+83
+00:16:36,127 --> 00:16:47,387
+Yine bununla robot üzerindeki sensörler, lider ya da kamera görüntü işleme araçlarını kullanarak bu engelleri tanıyaraktan engellerden kaçınıyor aslında.
+
+84
+00:16:49,556 --> 00:16:59,396
+Burada en bilinen ve en basit olanı böcek algoritmaları. Burada da yine böcek 1, böcek 2 ve disk bug olmak üzere 3 tur bulunmaktadır.
+
+85
+00:17:03,283 --> 00:17:28,683
+Böcek bir algoritma aslında en basit engeller satınma algoritmasıdır. Buradaki ana fikir robot yolun üstündeki bir engelle karşılaştığı zaman tamamen engellin etrafından dönüyor. Şurada şekil de var. Sonra tam tur attıktan sonra hedef noktaya ayrılacağı yolu buluyor ve hedef noktaya tekrar ilerliyor.
+
+86
+00:17:30,099 --> 00:17:53,699
+Böcek İlgi algoritması, Böcek İlgi algoritmasına göre daha efektif. Yine burada şekil üzerine baktığımız zaman, yine bir engelle karşılaştığı zaman engelli etrafında dönüyor. Burada tam trot atmıyor aslında. O daha önceki konum çizgisini takip ediyor. O çizgiye geldiği zaman engelden ayrılarak ilerliyor.
+
+87
+00:17:54,867 --> 00:18:20,447
+Dizbock algoritması yine bu bir önceki böcek iki algoritmasına göre daha efektif çalışıyor. Burada da engelle karşılaştığı zaman engelle etrafında dönüyor. Eğer daha kısa bir yol bulduğu zaman bu yol üzerinden devam ediyor. Bir önceki yolu takip etmiyor. Kendine yeni bir yol çiziyor aslında.
+
+88
+00:18:22,996 --> 00:18:43,036
+Bu yöntemde de robotun çalışma alanının yapay bir potansiyel alanına dolu olduğu kabul ediliyor. Hedef çekici bir vektör olarak oluşturuluyor. Robot bu hedefe doğru ilerliyor. Engeller de itici bir vektör olarak robotu itiyor gibi.
+
+89
+00:18:43,604 --> 00:18:59,544
+Bu potansiyel alan yönteminin en zayıf noktası U harfi şeklindeki engellerin tuzağına düşmesidir. Burada da şekil olarak göreceğimiz gibi vektörler hedefe doğru yönlendiriliyor. Engellerden de kaçınıyor robot.
+
+90
+00:19:01,140 --> 00:19:15,240
+Vektör alan histogramı da, bu da robot yine sensörler aracılığıyla karşısındaki nesneleri tanıyıp, işte engel var mı yok mu şeklinde, engel varsa histogram şeklinde bir...
+
+91
+00:19:15,539 --> 00:19:33,880
+Şöyle bir grafik çiziyor. İşte burada geçip geçemeyeceği ile ilgili bir threshold seviyesi var. Eğer kendisi geçebilecekse bu threshold seviyesine göre vektör olan histogramı dediğimiz algoritma da bu şekilde robot engelden sakınarak ilerleyebiliyor.
+
+92
+00:19:37,044 --> 00:20:00,000
+Kabarcık bağlı tekniği bir robotun engellere çakmaksızın herhangi bir yönde serbestçe ilerleyebileceği boş olan olarak tanımlanıyor. Kabarcık robotun haritası ve mesafe bilgileriyle birlikte robotun basitleştirilmiş bir modeli olarak oluşturuluyor. Robotun fiziki şeklinin iz düşümü de kabarcığın büyüklüğünü belirlemektedir. Oluşturulan kabarcıklar robotun ilk pozisyondan son pozisyonu.
+
+93
+00:20:00,000 --> 00:20:05,000
+Bu şekilde serbest zamanlar tespit edilir.
+
+94
+00:20:05,000 --> 00:20:21,000
+Yine burada da şekil üzerinde görebiliriz. Robot bir engel gördüğü zaman kendi iz düşünmüyle engele çarpmayacağı ya da engelden sakınmayacağını adım adım ilerleyerek hareket ediyor.
+
+95
+00:20:24,435 --> 00:20:52,395
+Dinamik pencere yaklaşımı, dinamik pencere engelden sakınma yöntemi, robotun kinematiklerinin dikkate alınarak alan bir yöntem. Bu yaklaşımda en azından belirli bir zaman diliminde robotların dairesel yaylar şeklinde hareket ettikleri varsayılmaktadır. İlk olarak bir sonraki örnekleme periyodu içinde kullanılacak tüm veriler ele alınır. Bu verilerde ivmelenme, robotun özellikleri ve periyodun zamansal uzunlukları da dahil edilmektedir. Yine burada da dinamik pencere yaklaşımı değil.
+
+96
+00:20:52,435 --> 00:20:54,695
+Görselimiz mevcut.
+
+97
+00:20:57,515 --> 00:21:06,336
+[kişisel bilgi]
+
+98
+00:21:07,336 --> 00:21:09,115
+Soru varsa alabilirim.
+
+99
+00:21:12,015 --> 00:21:13,615
+Sonu için teşekkürler.
+
+100
+00:21:14,735 --> 00:21:16,096
+Sorusu olan var mı arkadaşlar?
+
+101
+00:21:19,827 --> 00:21:36,008
+Şey sorayım, şimdi araştırmanızda ne yapmaya çalışıyorsunuz? Şimdi burada algoritmalardan bahsettiniz. Yeni bir yaklaşım mı, yeni bir algoritma mı veya bir bunların kombinasyonu gibi bir şey mi yoksa henüz o aşamada değil misin?
+
+102
+00:21:36,008 --> 00:21:47,548
+[kişisel bilgi]
+
+103
+00:21:47,827 --> 00:22:07,327
+Bir de ROS diye bir şey var. Robot Operating Sistem diye. [kişisel bilgi] Orada Linux üzerinde ortamında geliştirmeleri yapıyoruz. Orada işte engelden sakınma olsun, yol bulmayla ilgili olsun.
+
+104
+00:22:07,796 --> 00:22:26,036
+Ama daha şu an dediğim gibi çok başında olduğum için sadece bunları araştırmış oldum. Bir de işte Rost'ta bunları yavaş yavaş uygulamaya çalışıyorum. [kişisel bilgi]
+
+105
+00:22:29,096 --> 00:22:31,196
+Teşekkürler. Var mı başka sorusu olan arkadaşlar?
+
+106
+00:22:34,003 --> 00:22:40,183
+Sanırım yok. O zaman bir sonraki sunuma geçelim. Berkaya Rızcan. Hazır mıydınız?
+
+107
+00:22:41,683 --> 00:22:43,683
+Hocam hazırım. Hemen ekran yansıtayım.
+
+108
+00:22:44,103 --> 00:22:45,583
+Tamam. Başlayabiliriz.
+
+109
+00:22:50,355 --> 00:22:52,355
+Geldim ekranım. Görebiliyor musunuz?
+
+110
+00:22:52,355 --> 00:22:53,056
+Şimdi geldi.
+
+111
+00:22:55,995 --> 00:22:59,755
+[kişisel bilgi]
+
+112
+00:23:00,755 --> 00:23:02,675
+San Hüseyin Balık Hoca ile çalışıyoruz.
+
+113
+00:23:03,675 --> 00:23:04,655
+Erkaya suçam ben.
+
+114
+00:23:11,092 --> 00:23:35,872
+Öncelikle şundan bahsetmek gerekiyor. 2018 yılından, hatta bu daha geriden de alınabilir ama bulabildiğim bir statistik bu şekildeydi. 2018'den 2023'e gelen periyotta sürekli bir internet ortamını kullanan user sayısı, yani kullanıcı sayısında bir artış söz konusu. Buna tabii pandemi etkisi burada çok büyük bir etmen oldu.
+
+115
+00:23:36,564 --> 00:24:03,584
+Kullanıcı sayısının artışı, e-ticaretin artışı vs. gibi etkenler. Bir diğer buradaki artışın kaynağı da aslında özellikle şu an Avrupa ülkelerinin 5G'yi kullanması ve bizim de yavaş yavaş geçecek olmamızla birlikte IoT sektörünün gelişmesi, burada da yeni aslında kullanıcıların oluşması internet ekosistemini gittikçe büyütür bir hal aldı.
+
+116
+00:24:04,276 --> 00:24:26,995
+Bu ekosistemin büyümesinin tabii avantajlarının yanında dezavantajları da var. Avantajları nedir? Kullanıcı faydası bunlar sonuçta. Her biri IoT cihazlar olsun, e-ticaret olsun ve sağlık sistemleri, sağlık kullanımı olsun. Bunlar hepsi sonuçta kullanıcıların faydasına.
+
+117
+00:24:27,476 --> 00:24:43,536
+Fakat bir yanda bu artış, bir yandan da saldırganların da iştahını kabartır durumda. Netice itibariyle geniş bir yüzey alanı onlar için de olmuş oluyor. Bu artışla birlikte saldırılar da bir şekilde yine artış göstermiş oluyor.
+
+118
+00:24:43,876 --> 00:24:53,916
+Burada bizim de değineceğimiz konu da aslında birçok yakınlarımızdan da duyduğumuz, işte telefonuma bir şey geldi, tıkladım, şöyle oldu, böyle oldu.
+
+119
+00:24:54,867 --> 00:25:03,788
+Gibi şeyler duyuyoruz illaki. Burada da aslında o sahtecilikten bahsedeceğiz. Oradaki sahte URL'lerden bahsedeceğiz.
+
+120
+00:25:05,968 --> 00:25:18,768
+URL nedir tabi öncelikle? URL aslında bizim gitmek istediğimiz, browser'a verdiğimiz adresler. Burada 3 part halinde toplayabiliyoruz URL'leri. İki protokol kısmı.
+
+121
+00:25:19,155 --> 00:25:42,816
+Bu da HTTP, HTTPS mi, Secure bir kanal mı var? Secure olmayan, güvenli olmayan bir kanal mı var? Bu burada bir etap. Bir diğer başlık, hostname tarafı, bu da direkt adresi aslında, IP adresini veren bir DNS kaydı. Bir diğeri de file name verdiğimiz, bu hostname'in ardından gelen.
+
+122
+00:25:43,251 --> 00:25:55,871
+Uzantı kısımları. Bunların birleşimi URL'i oluşturuyor. Burada tabii birçok alanda sahtecilik yapılabilir. Bunlardan da bahsediyor olacağız şimdi.
+
+123
+00:25:58,571 --> 00:26:02,751
+Bunları nasıl tespit edeceğiz, nasıl başa çıkacağız sorunu, konusu.
+
+124
+00:26:03,451 --> 00:26:09,251
+Burada bir örnek görüyoruz aslında. Bir spoof edilmiş URL örneği var burada.
+
+125
+00:26:11,412 --> 00:26:25,952
+Aslında baktığı zaman en başa belki de biraz bilinçliyse bakıyor ve diyor ki HTTPS, ha tamam bu sekür bir kanal. Sekür bir kanal olması gideceğimiz adresin tamamen güvenilir olduğu anlamına gelmiyor.
+
+126
+00:26:46,872 --> 00:26:58,572
+Senaryo şu şekilde işliyor. Kullanıcılara öncelikli olarak saldırgan tarafından bir mailine veya SMS'le bir metin hazırlanıyor.
+
+127
+00:26:58,572 --> 00:26:59,772
+Şurayı tıklayınız.
+
+128
+00:27:00,276 --> 00:27:21,916
+Belki de Amazon'dan size kopon tanımladık. Bu adresten giriş yaparak kullanabilirsiniz. Kullanıcı da bilinçli değilse bu konuda veya az bilinçliyse dikkatsizlik de yapmış olabilir. Kullanıcı bilinçli olup buradaki ne harfini fark etmemiş de olabilir. HTTPS'e direkt bakmış olabilir vs.
+
+129
+00:27:22,592 --> 00:27:33,352
+Burada direkt username, password'ünün giriş yaptığında kullanıcı saldırgan, bu senaryoda Amazon hesap bilgilerini ele geçirmiş oluyor.
+
+130
+00:27:46,992 --> 00:27:49,392
+Bu böyle bir örnek bir senaryo.
+
+131
+00:27:50,900 --> 00:28:02,200
+Tabi bu senaryolar çoğaltılabilir. Burada Amazon örneğini verdik ama belki de daha kıymetli veriler içerisinde olan şeyler de olabilir.
+
+132
+00:28:03,579 --> 00:28:12,039
+Kazanımlar da olabilir burada saldırgan tarafından. Peki savunma tarafında bu gibi saldırılar var ama biz savunma tarafında neler yapıyoruz?
+
+133
+00:28:12,039 --> 00:28:17,680
+Burada geçmişten günümüze süre gelen senaryolar var.
+
+134
+00:28:18,099 --> 00:28:25,599
+Örneğin en basic olanı burada ve en eski kullanılan aslında en temel olanı Blacklist Detection.
+
+135
+00:28:26,799 --> 00:28:32,079
+Kullanıcılar bu tip durumlarla karşılaştığında bunu bildirirdiği senaryoda ne yapılıyor?
+
+136
+00:28:32,160 --> 00:28:41,460
+İşte bu adresler Blacklist'e alınıyor ve bir daha bir kullanıcı bu adrese gitmek istediğinde gidemiyor, erişemiyor.
+
+137
+00:28:42,291 --> 00:28:50,652
+Veya işte uyarı veriliyor. Böyle bir hassas saldırı içerikli bir siteye yönlendiriliyorsunuz gibi bir uyarı.
+
+138
+00:28:51,912 --> 00:28:56,612
+Tabii bu çözüm değil. Sonuçta ilk kurban buradan etkilenmiş oluyor.
+
+139
+00:28:57,711 --> 00:29:05,152
+Buradaki zero-day ataklar engellenemiyor bu saldırı tespitinde, yönteminde, savunma yönteminde.
+
+140
+00:29:05,587 --> 00:29:27,587
+Bir diğer Rule-Based Detection. Rule-Based Detection burada ne olabilir? Kullanıcı sadece HTTPS sitelere yönlenebilsin. HTTP'de kullanıcıya bir uyarı çıksın. Fakat HTTPS'te de az önceki örnekte de gördüğümüz gibi tam ana güvenilir diyemeyiz. Orada da aldatmacalar olabilir. Aslında bu aldatmacalar da...
+
+141
+00:29:27,700 --> 00:29:33,500
+Bu savunma sistemlerini atlatmaya yönelik zaten ortaya çıkan yaklaşımlar oluyor.
+
+142
+00:29:34,040 --> 00:29:54,020
+Rule-based detection'da şöyle bir rule var ise, güverelin içerisinde tira geçiyorsa veya güverelin boyutu, domain name'in boyutu 50 karakterden uzunsa, bu bir sahte güverel olabilir gibi bir kural varsa, saldırganlar da bunları önlem almak için tabii ki sürekli kendilerini güncelliyorlar.
+
+143
+00:29:54,740 --> 00:30:07,920
+Yöntemlerini değiştiriyorlar. Burada aslında şu an güncelde en çok kullanılan ve en verim alınan yöntemde makine öğrenmesi tabanlı, bitip detection yapılması.
+
+144
+00:30:09,140 --> 00:30:13,180
+Burada da hangi aşamalar var, biz neleri kullandık onlardan bahsedeceğim.
+
+145
+00:30:16,211 --> 00:30:24,251
+Burada aslında aşamaları görüyorsunuz. Dört farklı aşama var. Öncelikle burada en temel konu aslında bir veri setine sahip olması.
+
+146
+00:30:25,751 --> 00:30:42,512
+Sahip olabilmemiz bu çok önemli. Hem temiz URL'e hem de spoof edilmiş zararlı URL'e sahip olabilmek ve bunu bir şekilde etiketlendirebilmiş olmak.
+
+147
+00:30:42,864 --> 00:30:52,524
+Dataset tarafı için yeterli oluyor. Biz de burada oluşturduğumuz modelde algoritmaları eğitmek, test etmek için bir veri seti kullandık.
+
+148
+00:30:53,663 --> 00:31:03,264
+Burada bu veri seti oluşturulurken, Fishtank, zararlı yöreller için Fishtank, temiz yöreller için de Yandex Search API kullanılmış.
+
+149
+00:31:03,264 --> 00:31:09,784
+Ve yaklaşık %50-%50 oranında 73.000 yörel mevcut burada.
+
+150
+00:31:10,259 --> 00:31:35,920
+İlk 10 satırını da örnek olarak koydum. Burada da görebiliyorsunuz. Tire işaretleri kullanılmış. Bazı özel karakterlerin kullanılması. Aslında bir ipucu veriyor. Tabii ki bir tespit yöntemi değildir tek başına. Ama bize birer ipucu veriyor ve bunlar ve bu öz niteliklerin her biri az sonra göreceğiz. Aslında her bir makine öğrenmesinin bir kolonu temsil ediyor olacak.
+
+151
+00:31:37,587 --> 00:32:02,107
+Öz nitelik çıkarımı tabii çok önemli. Bir veri seti var önümüzde ama hiçbir anlam ifade etmiyor. Tek başına bunların etiketlenmiş olması. Burada hangi öz niteliklere bakacağız? Burada hangi özelliklere bakacağız? Burada neler çıkarabiliriz? Burada biz 8 tanesi direkt URL adreslerinden 11 tanesi de URL adresi işleyerek olmak üzere 19 tane öz nitelik kullandık.
+
+152
+00:32:02,804 --> 00:32:05,184
+URL adreslerini işlemek ne demek?
+
+153
+00:32:06,344 --> 00:32:17,403
+İşte HMI sorguları veya farklı sorgular yaparak, yani dış şeyler kullanarak, burada kaynaklar kullanarak URL'ler hakkında bilgi toplamak.
+
+154
+00:32:17,403 --> 00:32:23,364
+Ne gibi bilgiler olabilir? Bu alınan domain name henüz yeni mi alınmış?
+
+155
+00:32:23,604 --> 00:32:30,264
+Örneğin ne kadar süre olmuş? Domain name satın alınalı ve domain name ne kadar süreli satın alınmış?
+
+156
+00:32:30,900 --> 00:32:48,880
+Yani 3 aylık satın alınan bir domenliyim saldırıya daha meyilli olabilir. Ama 3 yıllık satın alınan bir domenliyim burada satın alan kişi bunu daha geniş perspektifte düşünmüş ve bu temiz olmaya daha yatkın.
+
+157
+00:32:48,880 --> 00:32:55,259
+Tabii bunlar tek başına yine ifade ettiğim gibi bir anlam ifade etmez. Yani 3 ay alınan kesinlikle.
+
+158
+00:32:55,667 --> 00:33:03,927
+Spoof edilmiştir, bu saldırga amaçlı satın alınmıştır diyemeyiz. Ama makine öğrenmesinde bu da bir kolonu temsil ediyor olacak.
+
+159
+00:33:05,747 --> 00:33:16,667
+Burada görüyoruz ki aşağıdaki görselde de bazı örnekler verdik. İşte URL'leri bölüyoruz, parçalıyoruz, özel karakterleri ayıklıyoruz, kelimeleri ayıklıyoruz, sözlüklerle eşleştiriyoruz.
+
+160
+00:33:21,076 --> 00:33:41,375
+Parçaladığımız kelimelerin tek başına anlam ifade edebiliyorlar mı, edemiyorlar mı? Sözlükte bu kelimeler bulunuyor mu? Sözlükteki iki kelimenin birleşmesiyle mi oluşmuş? İçinde benzer kelimeler var mı? Sözlükte ki bir kelimeye, örneğin benzeme oranı kaçtır?
+
+161
+00:33:42,516 --> 00:34:08,811
+Bu örneğe bakalım.
+
+162
+00:34:09,235 --> 00:34:24,855
+Birçok öz nitelik çıkartılabilir, çoğaltılabilir aslında ama çoğaltılması, makine öğrenmesi modelimize katkı sağlamıyorum. Ona bakarak aslında bazılarını da eledik. Daha fazla öz nitelikte tabii çıkartılabilir.
+
+163
+00:34:27,536 --> 00:34:33,435
+Yapılan bu öz nitelik çıkarımının adından oluşturulan bunlardaki satırlar 0 ve 1'lerden.
+
+164
+00:34:33,876 --> 00:34:38,876
+Ya da bazı tümler de olduğu gibi araları birbirine yakalanan sayılardan oluşuyor.
+
+165
+00:34:38,876 --> 00:34:46,876
+Bundan dolayı herhangi bir encoding işlemine gerek duymadan sadece ölçekleyici kullanarak verileri birbirine yakın patenine getirilmesi yeterli oldu.
+
+166
+00:34:46,876 --> 00:34:57,876
+Burada da standart scalar kullanmış olduk. Öncelikle veriyi makine öğrenmesi, modeline sokmaya hazır hale getirmek için veri ön işleme kısmında.
+
+167
+00:34:58,291 --> 00:35:04,992
+Burada ölçeklendirilmiş verilerin de dörtte birini test için ayırdık. Geri kalan da eğitim kümesi olarak makineye verdik.
+
+168
+00:35:05,751 --> 00:35:14,932
+Orada da Random Forest, Decision Tricks, G-Boost ve Deep Learning buna ilave eden emme gibi yöntemler kullanarak sonuçlar eline ettik.
+
+169
+00:35:14,932 --> 00:35:19,731
+Burada tabii Supervised Learning.
+
+170
+00:35:20,371 --> 00:35:27,711
+Şeyler kullandık. Unsupervised yöntemlere değinmedik burada. Çünkü etiketli bir veri seti üzerinde işlem yapıyoruz.
+
+171
+00:35:31,251 --> 00:35:52,211
+Sonuçlar da gayet aslında tatmin edici. Tabi accuracy tek başına anlam ifade etmiyor ama burada precision, f-measure, sensitivity gibi değerlerde sonuçlara perçinlemiş oldu bizim için. Yöntemimizin başarılı olduğunu, daha başarılı olduğunu göstermek için.
+
+172
+00:35:53,751 --> 00:35:58,151
+Şu anlık sonuçlar bu şekilde üzerinde çalışmalar tabi devam ediyor arttırmaya yönelik.
+
+173
+00:36:00,596 --> 00:36:04,655
+Teşekkür ederim dinlediğiniz için. Soru varsa cevaplayabilirim.
+
+174
+00:36:08,083 --> 00:36:09,003
+Teşekkürler.
+
+175
+00:36:09,903 --> 00:36:11,303
+Bu sorun falan var mı arkadaşlar?
+
+176
+00:36:15,443 --> 00:36:38,023
+URL'lerden bir makine öğrenimi çalışması yapmak aslında biraz da zor bir şey. Çünkü URL'deki o içerik bir modeli eğitmek için genel bir bilgi sağlıyor mu size? Sadece feature'larınız olarak URL'in içeriği var değil mi? Başka bir şey yok.
+
+177
+00:36:39,027 --> 00:36:59,787
+Hocam dediğim gibi, direkt URL'deki o stringten aldığımız şeyler de var ama farklı araçlar kullanarak, HWMI sorguları yaparak vs. oradan da bazı öz nitelikler çıkartıyoruz. Bunların hepsinin birleşimi olarak bir karar veriyor aslında makine öğrenmesi, modelimiz.
+
+178
+00:37:00,947 --> 00:37:13,947
+Evet, çünkü başka feature'lara ihtiyaç var. URL sadece bunu çözmek için çok başarılı olmayabilir. İzlenimim öyle. Çünkü o URL'de illa anlamlı kelimeler olacak diye bir şey de yok.
+
+179
+00:37:14,164 --> 00:37:32,304
+Bu çok uzun da olabilir, çok kısa da olabilir. Bu belki uzunluk bir bilgi sağlar ama yeterli bir çıkarım yok. Bir de URL'ler başka domen altında da kısaltılabiliyor. Kısa, short URL'ler falan da var biliyorsunuz.
+
+180
+00:37:33,524 --> 00:37:41,304
+Öz niteliklerimiz aslında her biri tek başına baktığımızda anlamsız. Hiçbir değer ifade etmeyen ama…
+
+181
+00:37:41,583 --> 00:38:07,083
+Toplamına baktığımız zaman, hepsinin ortak arasına baktığımız zaman %90'ları aşan bir şey görmüş olduk orada. Bunu farklı şekilde de test ettik. [kişisel bilgi] Oradaki veri setimizle de test ettiğimizde yine 88'e aşan sonuçlar elde ettik. Bu veri seti haricinde de çalışma yapmış olduk.
+
+182
+00:38:07,380 --> 00:38:09,539
+Anladım. Oradaki veri ne kadar büyüktü?
+
+183
+00:38:11,079 --> 00:38:17,400
+Orada da bir yirmi bin de yaptık testimiz. Yirmi bin tane veri vardı orada.
+
+184
+00:38:18,300 --> 00:38:33,519
+Anladım. Peki böyle yeni türlü yörellerde bu model çalışıyor mu? Çünkü biraz şeyler değişiyor. Yörel paternleri falan. Hatalar bunlarda mı oluyordu daha çok? Nasıl oluyordu? Baktınız mı? Ne tür şeyleri hata yapıyor model?
+
+185
+00:38:34,675 --> 00:39:00,155
+Evet hocam, bahsettiğiniz şekilde de var. Tabii false pozitiflerde oluşuyor ister istemez. Yani dediğim gibi tüm şartları sağlayan tamamen temiz bir öznite URL'de muhakkak ki var. Ama burada da double check yapıyoruz. Belki de bu şirketlerde kullanılıyor olduğunda bir double check de yapılıyor.
+
+186
+00:39:01,556 --> 00:39:06,856
+Geri besleme de o şekilde yapıyor olacağız. Onun üstünde de çalışıyoruz.
+
+187
+00:39:08,596 --> 00:39:17,936
+Teşekkürler. Sanırım başka sorusu olan yok. O zaman bir sonraki sunuma devam edelim. [öğrenci] burada mı?
+
+188
+00:39:17,936 --> 00:39:24,715
+Bakalım. Yok gözükmüyor. O zaman [öğrenci] ile devam edelim. [öğrenci] başka ben.
+
+189
+00:39:25,576 --> 00:39:26,416
+Tamam hocam.
+
+190
+00:39:27,188 --> 00:39:28,548
+Merhaba, hazır bir gün.
+
+191
+00:39:28,548 --> 00:39:31,288
+Merhaba, evet hocam. Ekranım paylaştı.
+
+192
+00:39:33,628 --> 00:39:35,748
+Şimdi geldi, başlayabilirsiniz.
+
+193
+00:39:37,808 --> 00:39:45,268
+[kişisel bilgi]
+
+194
+00:39:47,347 --> 00:40:06,627
+Son zamanlarda bildiğimiz üzere gelenler makine öğrenimi konularında çalışan insanlar için önemli bir konu haline gelmiştir. Aynı zamanda son birkaç yılda da özellikle graflar NLP alanında da kullanmaya başlanmıştır.
+
+195
+00:40:10,739 --> 00:40:34,879
+NLP'ler için graf oluşturma ile ilgili bir çalışma yaptık. Bir derleme çalışması gibi. Burada ilk olarak graf ne dedi diye bakacak olursak verilerin düğümler ve kenarlar arasındaki ilişkilerle görselleştirildiği çok karmaşık sistemleri tanımlayabilen ve modelleyebilen genel bir dil olduğunu söyleyebiliriz.
+
+196
+00:40:36,724 --> 00:40:59,584
+Neden doğal dil işlemede de graf kullanıyoruz? Çünkü bu grafların kullanılması makine öğrenimi, algoritmalarının metinleri daha iyi anlamasına, daha iyi analiz etmesine ve işlemesine yardımcı olabiliyor. Bu sebepten NLP'de de graf kullanımı önemlidir diyebiliriz.
+
+197
+00:41:04,724 --> 00:41:26,024
+Sorgulama gibi şeyler de yapılabilir. Buraya ben bir çalışmadan alınmış bir görsel koydum. Bu görsel bir şirketin mail grubundan elde edilmiş metin verilerinin graf haline dönüştürülmüş hali. Burada farklı tiplerde olan nodları görebiliriz.
+
+198
+00:41:32,724 --> 00:41:43,244
+Küçük bir örnek. Aslında çok daha büyük, çok daha karmaşık oluyor. Graflarla çalışmak bu şekilde olabiliyor ama çok da faydası oluyor tabii ki.
+
+199
+00:41:44,083 --> 00:42:05,724
+Grafların kullanım alanlarına bakacak olursak da aslında birçok alanda kullanılabilir. Mesela sosyal ağlarda, biyolojik ağlarda, finansal işlemlerde, biyomedikal alanda gibi.
+
+200
+00:42:05,724 --> 00:42:11,764
+Hatta bunun yanı sıra örnek verecek olursam mesela dolandırıcılık tespitinde.
+
+201
+00:42:12,083 --> 00:42:21,463
+Trafik tahmini, konuşma tanıma, tavsiye sistemleri gibi konularda da graflar kullanılabilir.
+
+202
+00:42:21,463 --> 00:42:28,643
+Fakat NRP'de hangi alanlarda kullanılıyor diye baktığımızda da metin analizinde,
+
+203
+00:42:28,884 --> 00:42:40,083
+işte anlamsal rol etiketleme, ilişki çıkarımı, cinsiyet tespiti, duygu analizi gibi alanlarda da kullanılabiliyor graflar.
+
+204
+00:42:40,083 --> 00:42:45,043
+Son yıllarda yani bunlarla ilgili çalışmalar da yapılmış.
+
+205
+00:42:49,536 --> 00:43:07,315
+Biraz detaylandırmak istedim kullanım alanlarını aslında. Şöyle mesela sosyal ağ analizinde örneğin Facebook, Twitter, LinkedIn gibi sosyal ağlardaki ilişkileri analiz etmede grafları kullanabiliriz.
+
+206
+00:43:17,536 --> 00:43:33,936
+Graf yapıları kullanılabilir. Yine diğer alanlarda da kullanabiliriz. Mesela finansal analizde örneğin borsa ve hisse senetleri arasındaki ilişkileri görselleştirmek için grafları kullanabiliriz.
+
+207
+00:43:33,936 --> 00:43:42,275
+Bu şekilde burada çalışmanın amacından bahsedecek olursak.
+
+208
+00:43:43,188 --> 00:44:03,887
+Araştırmalarımız neticesinde bildiğimiz kadarıyla genelde graf oluşturma yöntemlerini özellikle dinamik ve hibrit graf oluşturma yöntemlerini odağına alan, statik yöntemle karşılaştırmasını yapan pek fazla çalışma bulunmamaktadır.
+
+209
+00:44:11,188 --> 00:44:27,947
+Birleşimi olan hibrit graf oluşturma yöntemiyle alakalı bir araştırma çalışması yaptık. Bunun amacı da bu alanda çalışan insanlara rehber olması amacıyla.
+
+210
+00:44:32,019 --> 00:44:39,159
+Fakat graf oluşturmada, NLP'de graf oluşturmada birçok problemle karşı karşıya kalabiliriz.
+
+211
+00:44:39,159 --> 00:44:51,299
+Yani her ne kadar az önce saydığım kullanım alanlarında graflar başarılı olsa da bu başarılara rağmen hala birçok zorlukla karşı karşıya kalıyor.
+
+212
+00:44:51,679 --> 00:44:53,719
+Özellikle graf oluşturma kısmında.
+
+213
+00:45:00,019 --> 00:45:15,199
+Zor olduğunu biliyoruz. Bunun için de alanında uzman kişilere ihtiyacımız oluyor. Bu da ekstra maliyet ve zaman ihtiyacı ortaya doğuruyor.
+
+214
+00:45:15,880 --> 00:45:26,079
+Graf oluşturmanın diğer zorluklarına bakacak olursak da, mesela veri bütünlüğü. Bu oldukça önemlidir.
+
+215
+00:45:27,635 --> 00:45:50,556
+Veri setinin doğruluğu, eksiksizliği, hatasızlığı gözetilmelidir. Yani graf oluşturmak için. Bu problemi çözmek için belki pre-processing gibi işlemler de yapılabilir. Ama bu da graf oluşturmayı zorlayan bir şeydir.
+
+216
+00:45:55,635 --> 00:46:18,256
+İkinci olarak veri boyutu. Büyük ölçekli veri setleri de graf oluşturmayı zorlaştırabiliyor. Çünkü veri seti çok büyük olduğunda o grafı oluşturmak ve yönetmek için çok fazla bellek ve hesaplama gücü ihtiyacı doğuyor.
+
+217
+00:46:19,987 --> 00:46:32,647
+Üçüncü olarak da veri karmaşıklığı. Bu da verilerin karmaşık bir şekilde bağlı olduğu veri setlerinde graf oluşturma zor olabilir.
+
+218
+00:46:33,547 --> 00:46:46,167
+Dördüncü olarak da düzgün olmayan veri formatları. Yani veri kaynaklarından gelen verilerin çeşitli formatlarda olması sebebiyle veri formatlarını birleştirmek gerekiyor.
+
+219
+00:46:47,987 --> 00:46:52,427
+Bu yüzden bu örneğe bakalım.
+
+220
+00:46:52,755 --> 00:47:13,855
+Beşinci de optimal graf yapısının seçimi. Burada doğru graf yapısının seçilmesi, yani kullandığımız veri seti için önemlidir. Yani o veri setine özel doğru graf yapısının seçilmesi gerekiyor. Bu da her zaman kolay olmayabiliyor.
+
+221
+00:47:20,755 --> 00:47:34,935
+Bu durumda graf oluşturmak ve yönetmek daha da karmaşık hale gelebiliyor. Bu da yine zorlaştıran başka bir faktör diyebiliriz.
+
+222
+00:47:37,615 --> 00:47:44,715
+Burada bu problemlere baktıktan sonra şimdi graf oluşturma yöntemini inceleyelim.
+
+223
+00:47:46,643 --> 00:48:00,643
+Graf oluşturma dediğimiz bir veri setini graf yapısına dönüştürme süreci. Burada yan tarafta işte bir makaleden alıntıladığım bir şekli görüyoruz. Bu şekil...
+
+224
+00:48:01,652 --> 00:48:25,332
+NLP için GNN'leri sistematik olarak 4 eksende düzenleyen bir taksonama olduğunu söylemişler. İlk kısım Graph Construction kısmı. Burada 3 farklı yöntemin olduğunu. Daha sonra ikinci aşama olarak Graph Representation Learning kısmı.
+
+225
+00:48:29,652 --> 00:48:43,472
+Graph to sequence, graph to tree, graph to graph olan modellerin olduğunu ve son olarak NRP alanında graphların kullandığı alanları göstermişler bu şemada.
+
+226
+00:48:46,804 --> 00:49:04,003
+Biz bu şemadaki Graph Construction kısmıyla ilgileneceğiz. Yani iki ana grafik oluşturma yöntemi olan Static ve Dynamic Graph Construction'ın birleşimi olan bir de Hybrid Graph Construction'ı inceleyeceğiz.
+
+227
+00:49:05,235 --> 00:49:20,056
+Statik graf oluşturma. Burada manuel olarak tanımlanmış kurallardan yararlanarak ön işleme sırasında graf yapılarını oluşturmayı amaçlıyor statik graf oluşturma yöntemi.
+
+228
+00:49:21,972 --> 00:49:41,972
+Bu örneğe, kendine has özelliği olarak veri setinin bir anlık görüntüsünü kullanarak graf yapısını oluşturmuş oluyor. Yani sadece bir anlık görüntüsünü kullanıyor oluştururken. Bu da yani graf zaman içinde değişmiyor.
+
+229
+00:49:41,972 --> 00:49:49,892
+Yani herhangi bir sebepten, veri setleri güncellendiğinde, değiştiğinde de bu graf değişmemiş oluyor. Bu da aslında statik.
+
+230
+00:49:49,972 --> 00:50:06,492
+Graf oluşturma yönteminin dezavantajı olarak görebiliriz. Ayrıca da şu şekilde zorlukları da var. Bu yöntem alanında uzman kişileri gerektiriyor.
+
+231
+00:50:07,891 --> 00:50:15,211
+Aynı zamanda yapılan bu graflar hataya eğilimli de olabiliyor. Çünkü manuel olarak oluşturuluyor.
+
+232
+00:50:15,211 --> 00:50:31,211
+Bunun yanı sıra da bu graf oluşturma yöntemiyle aşamasıyla grafik representation learning aşaması ortak olduğundan...
+
+233
+00:50:31,443 --> 00:50:40,683
+Bir aşamada olan hata varsa o hatalar sonraki aşamalarda da ekleniyor. Bu da performansın düşmesine sebep oluyor.
+
+234
+00:50:42,291 --> 00:51:01,751
+Dinamik graf oluşturmada statik graf oluşturmanın, yani statik graf oluşturmadaki zorlukların üstesinden gelmek için, yani insan çabasına ve uzmanlığına ihtiyaç duymadan bir graf oluşturma yöntemi.
+
+235
+00:51:02,963 --> 00:51:17,423
+Statiğin tersine burada zamanla değişen veri setine göre graf da değişiyor. Bunun avantajı o şekilde. Dinamik olarak graf da değişiyor, güncelleniyor.
+
+236
+00:51:19,599 --> 00:51:35,599
+Bir örnek verecek olursak, bir sosyal ağdaki ilişkileri temsil eden grafik yapısında yeni bir kullanıcının eklenmesi veya kullanıcıların ilişkilerinin güncellenmesi durumunda dinamik graf oluşturma kullanılabilir.
+
+237
+00:51:35,599 --> 00:51:41,599
+Çünkü burada bir güncelleme işlemi var. Yine başka bir çalışmada da...
+
+238
+00:51:42,579 --> 00:51:48,579
+Bu konuşmayı anlama çalışmasında da...
+
+239
+00:51:49,364 --> 00:52:10,483
+Dinamik graf oluşturma yöntemi kullanılabilir. Çünkü şu önemli konuşmayı anlamada, sadece kelimelerin direkt anlamı değil, bir önceki cümledeki cümlelerin, geçmiş cümlelerin anlamları ve o anki cümlenin anlamı da önemli.
+
+240
+00:52:10,483 --> 00:52:17,364
+Bu bütün bir çalışma olduğu için de burada da dinamik graf oluşturma yönteminin kullanılabilir.
+
+241
+00:52:17,364 --> 00:52:18,324
+Bu sorunması öneriliyor.
+
+242
+00:52:19,891 --> 00:52:41,851
+Hibrit graf oluşturmada da iki tane yöntemin birleştirilmesi, ikisinin de aynı anda kullanılması. Onu da şu şekilde yapıyorlar. İlk başta statik graf oluşturma yöntemiyle temel bir graf oluşturuluyor.
+
+243
+00:52:47,699 --> 00:53:09,819
+Dinamik graf oluşturma yöntemiyle de graf güncelleniyor. Yani ikisi bir arada karma bir graf oluşturma yöntemi oluşturulmuş oluyor. Bu yöntem de işte son zamanlardaki çalışmalarda önerilen bir yöntem.
+
+244
+00:53:11,891 --> 00:53:21,891
+Burada da şu önemli aslında, şu üçünün farkı olarak tekrar gelecek olursam, statik graf oluşturma güncel...
+
+245
+00:53:22,900 --> 00:53:34,400
+Veriler güncellendiğinde de değişmediği için genelde hangi veri tiplerinde kullanılıyor? Sabit ve yavaş değişen veri setleri üzerinde kullanılması uygun.
+
+246
+00:53:34,400 --> 00:53:44,400
+Dinamikte, yani güncellenen veriler de olsa büyük ölçekli veri setlerinde de kullanımı uygun.
+
+247
+00:53:50,900 --> 00:53:59,699
+Yine güncellenen eğer veri setleri varsa onlarda da hibrit graf oluşturma yöntemi öneriliyor.
+
+248
+00:54:00,980 --> 00:54:05,340
+Burada da literatürde yapılan bazı çalışmaları görebiliriz.
+
+249
+00:54:09,492 --> 00:54:20,492
+Statik ve dinamik graf oluşturmanın birleştirilmesi öneriliyor. İkincide de benzer şekilde...
+
+250
+00:54:21,172 --> 00:54:29,251
+Grafları bir araya getirerek melez graf oluşturma konusunda yaklaşımları olduğunu söylüyorlar.
+
+251
+00:54:30,571 --> 00:54:44,031
+Yani genel olarak aslında şu son 2-3 senede, yani 3-4 senede bu hibrit yöntemin iyi sonuçlar getirdiğiyle alakalı çalışmalar oluyor.
+
+252
+00:54:47,795 --> 00:55:11,975
+NLP'deki çeşitli graf oluşturma yöntemlerine detaylı bir genel bakış sunduğumuzu ve bunların avantajlarına ve dezavantajlarına değindiğimiz, hangi veri setleri için hangi yöntemlerin uygun olduğunu, bunların yanı sıra da graf oluşturmadaki zorlukların ne olduğu ile ilgili bir çalışma yapılmıştır.
+
+253
+00:55:15,795 --> 00:55:32,835
+Bu da bu alanda çalışan insanlar için biz bilgi sağlayacağına inanıyoruz. Benim anlatacaklarım bu kadar hocam. Teşekkür ederim.
+
+254
+00:55:34,056 --> 00:55:39,355
+Teşekkürler sunum için. Soru soranı var mı arkadaşlar?
+
+255
+00:55:43,572 --> 00:56:07,911
+Şimdi şeyle ilgili graf verilerle ilgili en temel problem aslında graf verisinin oluşturulması. Yani bir öncelikle bunun graf şekli dönüştürülmesi. Sonrası da bunun incelenmesi. Peki graf haline dönüştürmenin nasıl avantajları var? Biraz onlardan bahseder misiniz? Yani graf değil de normalde başka bir formatta bu veri tutulsa, doğal bir işleme işlemleri yapılsa.
+
+256
+00:56:08,563 --> 00:56:14,563
+Hangi avantajlardan kayıplar söz konusu olurdu?
+
+257
+00:56:15,188 --> 00:56:31,367
+Aslında ilk başta da söylediğim gibi metin verilerinde bu grafların kullanılması makine öğrenmesi algoritmalarında makine öğrenmesi algoritmalarının daha iyi anlamasına yardımcı oluyor.
+
+258
+00:56:31,367 --> 00:56:42,947
+Yani bu görselleştirme bu sebepten bizim için önemli. Bu konuda çalışan insanlar için de o bütünü graflarla görmesi verileri.
+
+259
+00:56:43,188 --> 00:56:50,427
+İlişkileri bu şekilde görmesi daha iyi olur diye düşünüyorum. Diğer yöntemlerim.
+
+260
+00:56:51,527 --> 00:56:54,447
+Güzel, teşekkürler. Başka soru sorun var mı?
+
+261
+00:56:59,731 --> 00:57:16,032
+Bugünlük sunumlarımız bu kadardı. Haftaya yine sunumlarımız devam edecek. Dört tane sunumumuz olacak. Başka sunumumuz olmadığı için bugünlük burada sonlandırabiliriz. Haftaya kaldığımız yerden devam edeceğiz. Kendinize iyi bakın. Görüşmek üzere. Hoşçakalın.
+
+262
+00:57:16,112 --> 00:57:18,872
+Teşekkür ederiz hocam. Görüşmek üzere hocam.

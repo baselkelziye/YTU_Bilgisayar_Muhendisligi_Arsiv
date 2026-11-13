@@ -1,0 +1,891 @@
+1
+00:00:18,388 --> 00:00:20,108
+Merhaba arkadaşlar, hoş geldiniz.
+
+2
+00:00:22,188 --> 00:00:23,148
+Hoş bulduk hocam.
+
+3
+00:00:25,628 --> 00:00:26,408
+Sesim geliyor mu?
+
+4
+00:00:27,048 --> 00:00:27,688
+Geliyor hocam.
+
+5
+00:00:32,276 --> 00:00:33,376
+Şimdi...
+
+6
+00:00:39,219 --> 00:00:45,439
+Şimdi ders programının sunum programını online yapacağız arkadaşlar. Onu bahsetmiştim.
+
+7
+00:00:45,439 --> 00:00:54,319
+Şimdi ilk sıradaki arkadaşımız buradaydı. Online katılacağı için daha sonra katılacak şeye, o kararları falan bulmaya çalışıyor.
+
+8
+00:00:55,420 --> 00:01:03,739
+Biz sırayla devam edelim isterseniz. Sonrasında kendisi sunum yapar. Zaman kaybetmemek açısından.
+
+9
+00:01:05,140 --> 00:01:18,480
+Şimdi [öğrenci], sanırım [öğrenci]'de henüz gelmedi. Hazırsan sen de başlayalım. Hızlıca zaman kaybetmeyelim. Katılınca hızlıca. Tamam, teşekkürler. Bir ekran paylaşmayı dene.
+
+10
+00:01:18,480 --> 00:01:19,719
+Tamam.
+
+11
+00:01:23,987 --> 00:01:28,527
+Şimdi geldi. Görebiliyoruz. Hazırsan bahşişe edersin onu.
+
+12
+00:01:29,247 --> 00:01:36,927
+Tamam hocam. Şöyle tam ekran yapayım. Merhaba, ben [öğrenci]. Bu seminer sonunda Text Augmentation Method'larını sunacağım.
+
+13
+00:01:38,067 --> 00:01:41,467
+[kişisel bilgi]
+
+14
+00:01:42,427 --> 00:01:48,147
+Öncelikle Data Augmentation nedir? Türkçesi veri arttırma olarak geçiyor.
+
+15
+00:01:51,951 --> 00:02:18,852
+Data Augmentation'a neden ihtiyaç var?
+
+16
+00:02:19,252 --> 00:02:38,672
+Şimdi genel olarak şeyi söyleyebiliriz. Derin öğrenmede daha çok data daha iyi model oluşuluyor. Eski makine öğrenmesi yöntemlerine göre farkının ve daha iyi olmasının sebebi genelde bu olduğunu söylüyoruz. Yeni veri toplamakta herhangi bir sıkıntı yok. Toplayabiliriz. Ancak bir yerden sonra bu toplaması maliyetli olabilir. Etiketi maliyetli olabilir.
+
+17
+00:02:39,443 --> 00:02:55,063
+Bu yüzden Data Augmentation'ı kullanabiliriz. Tabi tek sebebi bu değil. Çok verimiz olsa da kullanabiliriz. Bu overfitting'i azaltıyor. Veriyi tek bir açıdan değil, daha farklı açılardan görmesini sağlıyor. Regülizasyon tekniği olarak da kullanılıyor.
+
+18
+00:02:56,915 --> 00:03:23,695
+Text Augmentation'ı, öncelikle Augmentation bütün veritikler için yapılabilir. Hani resim, metin, ses veya herhangi bir tablo için de yapılabilir. Şu ana kadar literatürde hep resimlerde yaygın. Başarıyı da çok ciddi oranda arttırıyor. Ama metinler için o kadar da çok çalışılmamış ve yapması da zor açıkçası.
+
+19
+00:03:25,012 --> 00:03:35,012
+Burada bir metnin ufak örneklerini görüyoruz. Bu az çalışma olması da umut vadeden bir alan olduğu için bu çalışmayı yapmak için bizi motive etti bu.
+
+20
+00:03:37,235 --> 00:03:52,615
+Text Argumentation kendi zorluklarıyla birlikte geliyor. Örneğin yine resim örneğinden gidersek, bu resmi gri skele çevirdiğimizde hala bir kedi veya ayna görüntüsünü aldığımızda çevirdiğimizde, çeşitli geometrik değişimler uyguladığımızda hala kedi olmuş oluyor.
+
+21
+00:03:52,615 --> 00:03:58,656
+Ama örneğin mimetle bunları yapamıyoruz. Yani döndüremiyoruz, zoomlayamıyoruz.
+
+22
+00:03:59,475 --> 00:04:03,635
+Ya da bir kısmını alsak anlamı değişiyor. Kelimenin yerini değiştirecek anlamı değişiyor.
+
+23
+00:04:03,635 --> 00:04:07,716
+Anlam değişince de aslında o veri faydalanan çok zararı olmuş oluyor.
+
+24
+00:04:09,475 --> 00:04:15,876
+Daha sonra mesela türev işlemleri resimler üzerinde uygulanabiliyorken, metniler üzerinde bunları uygulamak daha zor.
+
+25
+00:04:15,876 --> 00:04:19,716
+Böyle metninin kendine özgü zorlukları var.
+
+26
+00:04:21,012 --> 00:04:31,192
+Ama literatürde yöntemler öneriliyor. Bunlardan bahsedeceğim. Daha sonra bunların karşılaştırılmasından, bizim önerdiğimiz tekniklerden bahsedeceğim.
+
+27
+00:04:32,632 --> 00:04:37,531
+Önceki bir çalışma var. En temel diyebileceğimiz. İsmi EDA, Easy Data Augmentation.
+
+28
+00:04:38,451 --> 00:04:45,531
+Burada şu yöntemleri kullanıyorlar. Random Insert, Random Delay, Random Swap ve Synonym Replacement.
+
+29
+00:04:46,432 --> 00:04:47,572
+Örnek bir cümlemiz var.
+
+30
+00:04:48,244 --> 00:04:53,724
+Bu cümleyi veri tabanına rastgele bir kelime çekip rastgele bir yere yerleştirmeye random insert diyoruz.
+
+31
+00:04:53,884 --> 00:04:57,324
+Rastgele bir kelime seçip bunu silmeye random delete diyoruz.
+
+32
+00:04:58,384 --> 00:05:02,384
+Cümle içindeki kelimelerin yerini rastgele değiştirmeye random insert diyoruz.
+
+33
+00:05:02,384 --> 00:05:12,484
+Bir de bu çalışmada WordNet'i kullanarak rastgele seçtiğimiz bir kelimeyi WordNet'teki muadili, benzeri ya da sinonimi kelimelerle
+
+34
+00:05:13,043 --> 00:05:21,043
+Değiştirerek Argumentation yapılıyor. Biz bunları uyguladık zaten onların kodunu alıp bir de ekstra bu değiştirmeyi WordTurEq kullanarak yaptık.
+
+35
+00:05:21,043 --> 00:05:29,043
+Bu da aslında WordTurEq bir kelimeye en yakın kelime vektörlerini vuruyor. Buradan bir tanesini seçip o kelimeyi değiştiriyoruz.
+
+36
+00:05:29,043 --> 00:05:38,891
+Daha sonra bu çalışmadan sonra En Easy Data Argumentation diye benzer bir çalışma çıkıyor. Bunlar daha da basit bir şekilde işte kelimeler aslında
+
+37
+00:05:39,060 --> 00:05:48,060
+Burada orijinal cümle buyken rastgele bir yerlere noktalı bir, bir, iki nokta atıyorlar ve başarılı olduklarını söylüyorlar.
+
+38
+00:05:48,060 --> 00:06:01,060
+Burada, onu birazdan bahsedeyim. Diğer yöntemlere bakacak olsak, mesela backtranslation de yergün olarak kullanılan bir yöntem.
+
+39
+00:06:04,947 --> 00:06:10,608
+Başka bir dile çeviriyoruz. Sonra o dilden tekrar orijinal dilimize çeviriyoruz.
+
+40
+00:06:10,608 --> 00:06:20,528
+Ve cümle az da olsa değişmiş oluyor. Bu şekilde de yeni bir cümle oluşturmuş oluyor. Bunu verisletimize dahil edebiliyoruz.
+
+41
+00:06:21,548 --> 00:06:30,367
+Burada yine araştırılabilecek şeyler, hani bu dil aileleri var, benzer dillerden gitmek lazım, alakasız dillerden gitmek lazım. Bunun gibi çalışmalar olabilir.
+
+42
+00:06:31,891 --> 00:06:54,812
+Bir sonraki şey söyleyeceğimiz GPT. GPT, şu anda da çok kopyalar. Önündeki kelimelere göre bundan sonraki hangi kelimenin gelebileceğinin olasılığını söyleyen bir model. Bu çok özgün, yeni cümleler üretebiliyor. Biz bu çalışmada bunu şu şekilde kullandık. Elimizdeki veri setini rastgele bir yerden böldük.
+
+43
+00:06:55,156 --> 00:07:12,896
+Kalanı da devam ettir şeklinde kullandık. Devamı farklı devam ettireceği için elgin bir cümle oluşmuş oldu. Burada yöntemlerde şunu da söylemem gerek. Burada şimdi metnin çok değiştirmek aslında iyi bir şey değil. Yani çok değiştirirsek metni.
+
+44
+00:07:13,331 --> 00:07:36,912
+Anlam gidebilir, etiket gidebilir. Az değiştirsek de modelin başarısına katkısı olmuyor. Birbirine çok yakın iki cümle yeni bir veri de değilmiş gibi oluyor. Modelin ağırlıklarını çok değiştirmemiş oluyor. Böyle bir ikilenma. Hem etiketi korumalıyız ama çok değiştirmeden etiketi korumalıyız ama yetenekli değiştirmeliyiz ki modelin ağırlıkları değişsin.
+
+45
+00:07:38,291 --> 00:07:43,731
+Bundan sonra iterative mask feelingden bahsedeceğim. Bu bizim önerdiğimiz konferanste sunduğumuz bir çalışma.
+
+46
+00:07:44,632 --> 00:07:49,632
+Bunun için öncelikle bir mask modeli gerekiyor. Mask modeli ne demek? Aslında dil modeli.
+
+47
+00:07:51,091 --> 00:08:00,091
+Herhangi bir cümlede bir kelimeyi maskla değiştirdiğimizi düşünelim. Bu mask'e gelebilecek kelimeleri tahmin ediyor model. Her birine olasılık değeri atıyor.
+
+48
+00:08:00,564 --> 00:08:09,363
+Eğitildiği kelimelerde. Örneğin, The Mask Barked at Me dediğinde bu mask gene gelebilecek kelimeler işte Wolf, Dog, Cat, Fox ve Square almış bu olasılık değerleriyle.
+
+49
+00:08:10,903 --> 00:08:14,663
+Şimdi bizim yöntemimizde bunu kullanıyoruz. Önce Fill Mask modelinden bahsettim.
+
+50
+00:08:16,524 --> 00:08:24,223
+Bu iterative Mask Feeding de şu şekilde yapıyoruz. Burada bir örneğine bakalım. Şu ilk cümleyi şu en alttaki cümleye çevireceğiz.
+
+51
+00:08:25,747 --> 00:08:33,127
+Bunu yaparken şöyle yapıyoruz. Bu da Bert'in abstraktlığından alınmış bir cümle. We introduce a New Language Representation Model called Bert.
+
+52
+00:08:33,987 --> 00:08:44,447
+Burada şimdi yöntemimizde öncelikle birinci kelimeyi maskla değiştiriyoruz. Sonra bu cümleyi bu mask dil modeline veriyoruz.
+
+53
+00:08:44,447 --> 00:08:49,847
+Bu mask için bize tahminler üretiyor. V'nin kendisini de üretiyor olabilir, başka bir şeyler de üretiyor olabilir.
+
+54
+00:08:50,484 --> 00:09:08,764
+Bunların skoruna göre her birinin skoru da vardı. Olasılık değerinden yüksek olanın seçilmek ihtimalle yüksek olacak şekilde normalize edip bir seçme yapıyoruz. Örneğin bu örnekte VD'ye dönüşmüş. Daha sonra cümlemiz şey oldu. Daha sonra ikinci kelimeyi geçiyoruz. İkinci kelimeyi maskla değiştiriyoruz.
+
+55
+00:09:09,268 --> 00:09:23,207
+Daha sonra yine olasıksa seçim yapıyoruz. Burada işte dediğim gibi kelime değişebilir, değişme edebilir. Burada üçüncü kelime E değişmiş. Mesela burada E gelmesi var. İşte langiş değişmemiş. En son cümlemiz şu alttaki olmuş oluyor.
+
+56
+00:09:23,988 --> 00:09:42,347
+Bu yöntemin diğer yöntemlerden avantajı cümleyi çok değiştiriyor. Aynı zamanda dezavantajı. İlk cümlemize göre bir tane kelimeyi alıp sinonimiyle değiştirmekten çok daha fazla değişiyor cümle. Bu da model başarısını arttırabiliyor.
+
+57
+00:09:43,923 --> 00:09:53,943
+Şeyler de kötü oluyor. Uzun paragraflarımız varsa bu mask işlemi uzun sürdüğü için tahmini bir paragraf için bunu yapmak mantıklı oluyor. Cümle bazlı çalışması daha uygun.
+
+58
+00:09:57,812 --> 00:09:59,192
+Ve şeyi söyleyebilirim.
+
+59
+00:10:06,611 --> 00:10:22,991
+Bu haber veri setlerinde biz bununla daha yüksek başarıları aldık. Örneğin bir siyaset spor gibi bir haber metni düşünün. Burada kelimeleri bu şekilde değiştirdiğimizde o hala o konuyla ilgili olmuş oluyor. Ama sentment analizi veri setlerinde başarıyı düşürdü.
+
+60
+00:10:22,991 --> 00:10:32,991
+Onu da incelediğimizde mesela bu film çok iyi dediği şey buradaki iyi kötüyle değişebiliyor ve bunu oraya kötü gelmesi de mantıklı olduğu için değiştiremiyoruz.
+
+61
+00:10:34,707 --> 00:10:42,647
+Böyle bir dezavantajı var. Daha sonra diğer yöntemler, metnin kendisini değiştirmeye yönelik yöntemlerdi. Yani yeni bir cümle oluşturuyor.
+
+62
+00:10:42,767 --> 00:10:51,567
+Yani okuyabildiğimiz, anlamlı bir bakabildiğimiz. Ama Augmentation vektör tabanlı da yapılabilir. Burada üç tane de vektör tabanlı Augmentation'dan bahsedeceğim.
+
+63
+00:10:52,019 --> 00:11:02,979
+Bir tanesi Dropout. Dropout'u biliyoruz. Bu ağlarda bazı eğitilirken bazı nöronlar aktif edilmesi, bazılarının deaktif edilmesi. Bu şekilde overfitting önleyip daha başarılı modeller elde edilmesi.
+
+64
+00:11:02,979 --> 00:11:13,439
+Ama örneğin mesela bir cümlenin BERT temsilini alacağız. Burada eğitim bitikten sonra Dropout'tan kapatılıyor. Hepsi açıkken yeni bir temsil oluşturuluyor.
+
+65
+00:11:14,100 --> 00:11:27,960
+Biz burada dropout eğitim bittikten sonra da tekrar açıp aynı cümle için farklı temsiller oluşturdum. Dropout'ı açtığımızda her cümlenin vektörü farklı gelebiliyor oldu. Bu her farklı vektöre de augmentation gibi davrandık.
+
+66
+00:11:28,879 --> 00:11:32,960
+Daha sonra mixup önerilen bir yöntem. Mixup'da iki tane...
+
+67
+00:11:33,076 --> 00:11:59,836
+Eğitim örneğimiz var burada i ve j. Şu sayı 0 ile 1 arasında bir sayı. Bu ikisinin aslında iki noktanın ortasındaki bir değer alıyoruz ve label'larını da ona göre değiştiriyoruz. Bu yeni örnek bir agvante cümle olmuş oluyor. Daha sonra yine cümle vektörlerini oluşturduğumuzda bunlara bürültü ekleyerek modeli eğitirsek bu da bir agvanteş olarak düşünülebilir.
+
+68
+00:12:01,299 --> 00:12:27,519
+Biz bu çalışmamızı da şöyle kurguladık. Bütün augmentation yöntemlerini uyguladık. Bunun için, yani uygulayıp çokça veri seti bulup bunu karşılaştırmak istedik. Bunun için 10 tane veri seti seçtik. Bunları seçerken farklı sınıf sayılarına sahip olmalarına, farklı görevlerde olmalarına dikkat ettik. Ama her birinin bir alt kümesini kullandık. Her birinden 1000 eğitim örneği ve 4000 test örneği aldık.
+
+69
+00:12:28,340 --> 00:12:55,080
+Veri set 50 bin, 100 bin örnek içerse de biz 1000 tanesini aldık. Bunun sebebi de şu. Şimdi en başta demiştik ya, deep learning de veri arttıkça başarı artıyordu. Şimdi biz zaten 50 bin örneği kullanıp bunu augmentation yaparsak, başarısı anlamlı bir şekilde değişmiyor. Mesela şöyle söyleyeyim. 10 bin örneğe tekrar 10 bin örnek eklersek, gerçek örnek bile eklesek, bunun başarısı anlamlı bir şekilde değişmiyor. Bu yöntemlerin başarılarını görebilmek için.
+
+70
+00:12:55,508 --> 00:13:13,348
+Az sayıda veri eklediğimizde ciddi bir fark olup olmadığına baktık. Öbür türlü yaptığımızda istatistik olarak da herhangi bir fark olmuyor. Gerçek örnek eklediğimizde bile bir fark olmuyordu. Gerçek örnekten de daha iyi örnek üretemeyiz gibi düşünüp her birinden bir alt kümü alıp onlar üzerinde testler yaptık.
+
+71
+00:13:14,451 --> 00:13:37,391
+Yine derin öğrenen modeller her çalışmada farklı sonuçlar üretebiliyor. O yüzden farklı başlangıçlarla 20 kez çalıştırdık her yöntemi. Her yöntemi çalıştırdık dediğim şu 1000 tane ana örneğimiz vardı. 1000 tane de Augmentation yöntemiyle biz ürettik. Bu 2000 tane eğittik. Vanilla dediğimizde Augmentation kullanmaya sadece gerçek verilerle eğitilen yöntem.
+
+72
+00:13:41,716 --> 00:14:05,336
+Eğittik ve T-Test ile karşılaştırdık. T-Diğeri 0.05 olacak şekilde. Burada tablo çok uzun oluyor diye aslında kaybetmeyenleri koydum sadece. Şu Noise 3 galibiyeti bir kaybı var Vanilla'ya göre. GPT-2'nin 1 galibiyeti 0 dosu var. Random Insert, Random Swap'ın 3 galibiyet, 2 malibiyet bu şekilde gördüğünüz gibi.
+
+73
+00:14:07,028 --> 00:14:34,307
+Daha sonra, burada şey de söylemem lazım. Mesela bu çalışmalarda, Easy Data Augmentation'a veya diğerlerinde kullanılan cümle temsileri çok fark ediyor. Biz BERT temsillerini kullandık cümlelerin ve en başarılısı o çıktığı için onu kullandık. Örneğin, hani işte yeni kendimiz Word DM'de geittiğimiz, RNL, STM kullandığımız veya TF-IDF kullandığımız yöntemlerde bütün yöntemler başarılı çıkıyor. Burada saydığımız her yöntem aslında başarıyı arttırıyor.
+
+74
+00:14:34,868 --> 00:14:59,788
+Ama mesela vanilya başarısı %70-80 oluyor. Ama Bert Vektör'ünü kullandığımızda vanilya başarısı %90-95'lere çıkıyor. Biz buradaki bu %90-95'i arttırmaya çalıştık. O yüzden de aslında mesela en başta uyguladığımızda neredeyse hiçbiri çok ciddi bir artış sağlamadı. Daha sonra dedik, şimdi biz augmented cümleleri oluşturduk. Bunlarla bir şey eğitebiliyoruz.
+
+75
+00:15:00,467 --> 00:15:16,567
+Ama bunları aynı davranıyoruz. Gerçek örneklerle, augment örneklerin biz farkını biliyoruz. Hangisi hangisi onu da biliyoruz. Ama onlara aynı davranıyoruz. Acaba eğitim sıralamalarını değiştirsek veya bunlara farklı şekilde muamele yapsak başarıyı arttırabilir miyiz?
+
+76
+00:15:17,748 --> 00:15:45,008
+Burada Vanilla, işte zaten yine Augmentation olmayan X-Train ve Y-Train ile eğittiğimiz model. Mixed, bir önceki deneylerde kullandığımız X'in birleştirildiği model. Daha sonra öncelikle şunları denedik. Augmente veriyi önce eğitsek. Yani modeli X ve Augmentation ile birlikte eğitsek. Sonra bu kaldığı yerden devam edecek şekilde gerçek veri ile eğitsek. Augmentation ortaya alsak, Augmentation'ı daha sonra eğitsek gibi.
+
+77
+00:15:45,812 --> 00:15:58,131
+Denemeler yaptık. Bu denemelerde iyileşmeler oldu ama asıl iyileşmeler şu altta göstereceğim şeylerde oldu. Onlardan da bahsedeyim. Bir de körükılım nördün diye bir kavram var. Bu da daha önce önerilmiş.
+
+78
+00:15:58,836 --> 00:16:13,456
+Bu modelin başarısını arttırabilen bir yöntem. Şuna dayanıyor. Veri setini kolaydan zora sıralıyorsunuz. Bazı örneklere kolay, bazı örneklere zor diyorsunuz. Daha sonra modeli öncelikle kolay örneklerle, ortalarını daha sonra hepsiyle eğitiyorsunuz gibi bir mantık.
+
+79
+00:16:14,855 --> 00:16:21,235
+Bu kolaylık zorluğu da Vanilla modelinin verdiği loss değerlerine göre eğitiyorsunuz. Yani normal veri setiyle bir kere eğitiyorsunuz.
+
+80
+00:16:21,587 --> 00:16:32,907
+Daha sonra LOS değerlerine bakıyorsunuz. LOS'u ne kadar düşük o kadar kolay bir örnek diyorsunuz. Daha sonra bu eğittiğiniz sırayla tekrar modele veriyorsunuz. Onun da çok kabaca Pisa'da okudu bu şekilde.
+
+81
+00:16:34,419 --> 00:16:56,599
+Kör kılımın örnek buydu. Bunun tersi anti-kör kılımın örnek. Önce zorlarla eğitmek. Random kör kılımda herhangi bir alt kümeyi alıp daha sonra birleştirmek. Kör kılım var ama bu sefer rastgele oluşturulmuş gibi. Bu aslında yine insan öğrenmesinden ilham alan bir yöntem. Biz de herhangi bir konsepti öğrenirken önce temel, daha basit olanları öğrenip daha sonra giderek zorlarla eğitim yapıyoruz.
+
+82
+00:16:57,203 --> 00:17:14,223
+Bu Cyclical Curriculum Learning ise yine bizim önerdiğimiz bir yöntem. Daha önce yayınladığımız bir yöntemde. Onu da burada denedik. Bu yöntemde de kolaylar hepsi, daha sonra kolaylar, daha sonra yine hepsi bu şekilde döngüsel olarak değişen bir sırada kullanıyoruz.
+
+83
+00:17:14,223 --> 00:17:23,063
+Bu çalışmalı kullandığımız Modified versiyonu ise aslında eğitim kısmı tamamen aynı ama bu zorlukların, kolaylıkların belirleneceği kısımda bir farklılık var.
+
+84
+00:17:24,211 --> 00:17:44,471
+O farkı da şu. Şimdi orijinalinde yine şu ikisinin hem augmented'in hem gerçeğin birleştirildiğinden skorlar alıyorduk. Önce bu model eğitiyorduk. Daha sonra her birine skor veriyorduk. Burada ise bunu eğitirken şu vanilla modeli sadece gerçek örnekleri kullanarak vanilla modelini eğittik. Ama skorları bütün augmented'leri de dahil ederek aldık.
+
+85
+00:17:52,019 --> 00:18:13,700
+Her epokta veri setinin hepsini kullanıyor. Hiçbir sıralama gözetmiyor. Curriculum ise veri setini giderek arttırıyor kullanımla. Kolaylardan başlayıp giderek arttırıyor. Daha sonra bir yerden sonra hepsini kullanıyor. Circlecle ise ufak bir şeyle başlıyor. Daha sonra %50'sini kullanıyor. Daha sonra hepsini kullanıyor. Daha sonra yine azalıyor, yine azalıyor. Bu şekilde devam ediyor.
+
+86
+00:18:14,836 --> 00:18:30,176
+Burada da teorik açıklaması var aslında. Neden saygıdıklığının daha iyi çıkacağına dair. Verisetin normalde alırken Vanilla uyguladığımızda half normale dönüyor. Tekrar bunu kolaylara uyguladığımızda tekrar normale dönüyor. Ve işte böyleyken onu öyleyken onu uygulamak mantıklı oluyor gibi bir açıklamamız vardı.
+
+87
+00:18:31,716 --> 00:18:34,836
+Bu şekilde uyguladığımızda aldığımız sonuçlar bu şekilde.
+
+88
+00:18:35,667 --> 00:18:55,887
+Burada diğer yöntemlerle 3'e 0, 1'e 0 gibi şeyler alırken CCL ve Modified CCL'de çok daha iyi sonuçlar alıyoruz. Yani 10.000 görebildiğimiz durum bile oluyor. Bu şeye göre bayağı artmış oluyor diğer kullandığımız karışıklık duruma göre. Yani sıralamanın burada önemini görmüş oluyordunuz.
+
+89
+00:18:55,887 --> 00:19:02,707
+Burada tabii şey de denilebilir. Bu gelişmeler sadece eğitim algoritmasından kaynaklanıyor da oluyor.
+
+90
+00:19:03,251 --> 00:19:04,332
+Oluyor denilebilir.
+
+91
+00:19:05,372 --> 00:19:11,192
+Ne demek istiyorum? Biz hiç Augmentation içine girmeseydik de Vanilla yerine CCR kullandığımızda da başarımız artıyor mu?
+
+92
+00:19:11,231 --> 00:19:15,731
+Evet artıyor aslında. Vanilla'yı 7'ye 0 gibi bir şekilde yeniyor.
+
+93
+00:19:15,731 --> 00:19:24,971
+Ama burada Modified CCR kullandığımızda o sayı 10'a ve 9'a çıkabildiği için ikisinin birleşimi aslında daha da iyileştirmiş oluyor.
+
+94
+00:19:25,051 --> 00:19:27,932
+Augmentation'da bu şekilde bir katkısı olmuş oluyor.
+
+95
+00:19:29,268 --> 00:19:47,407
+Bir de Augmentation yöntemlerinde süre önemli. Buradaki süreler benim bilgisayarımdaki çalışma süreleri. 1000 örnek için ilk veri setimde. Şu aslında daha basit diyebileceğimiz yöntemler hiçbir maliyeti yok aslında. 0.0 milisaniyelerle şey oluyor. Yine Noise ve Mixup da bu şekilde.
+
+96
+00:19:48,019 --> 00:20:01,819
+Ama diğer başka bir modele ihtiyaç duyan yöntemlerde sürelerin giderek arttığını görüyoruz. Bu da aslında dikkate alınması gereken bir durum. Çünkü çok uzun zaman alıyorsa bunu eğitemeyebilirsiniz duruma göre.
+
+97
+00:20:02,199 --> 00:20:13,619
+Şunu tekrar söylüyorum. Bu ufak modellerde hepsi arttırabiliyorken çok iyi modeller, daha iyi temsil, en iyi temsil kullandığımızda artması güç oluyor başarının.
+
+98
+00:20:21,652 --> 00:20:32,731
+Sonuçlara bakacak olursak, biz özellikle çalışmamızın bu alanda diğer çalışmalara ışık tutabileceğini düşünüyoruz.
+
+99
+00:20:33,951 --> 00:20:41,071
+Önemini vurguluyoruz. Bir metin üretirken performans ve hızı önemli.
+
+100
+00:20:42,932 --> 00:21:02,011
+Ve aynı zamanda sıralaması ve eğitim algoritması da önemli aslında. Hani sadece Augmentation değil. Bu arada şeyi de söyleyebilirim. Bu limitasyon olarak yine resim bir setlerinde Augmentation kullanırken online Augmentation kullanılıyor. Yani her epoktan önce ve her batchtan önce yeni Augmentation eğitim anında üretiliyor.
+
+101
+00:21:02,740 --> 00:21:26,619
+Bizim bu çalışmamızı da biz önce ürettik. Hani bin örneğimiz vardı. Bin örnek yerini ürettik ve onda artık eğitime geçtik gibi. Hani online augmentation yapmadık. Bunun bir sebep buradaki bazı yöntemlerin online augmentation ile çalışamayacak olması çok uzun zaman aldıkları için. Hani böyle bir aslında limit ver. Hani online augmentation da incelenebilecek bir yöntem. Dinlediğiniz için teşekkür ederim. Benim anlatacaklarım bu kadardır. Sorunuz varsa cevaplayabilirim.
+
+102
+00:21:29,076 --> 00:21:36,076
+Bunun için teşekkürler [öğrenci]. Sınıftan sorusu olanlar var mı arkadaşlar?
+
+103
+00:21:42,675 --> 00:21:58,635
+Güzel. Bir şey sorayım [öğrenci]. Bu analizlerin özellikle yayınladığınız çalışmalar için de tebrikler. Bundan sonraki aşamada yeni başka ne gibi nobelüler eklemeyi tanıyorsunuz? Var mı böyle bir şey?
+
+104
+00:22:00,315 --> 00:22:03,695
+Hocam sonunda söyledim. Online'a bakabiliriz diye düşünüyoruz.
+
+105
+00:22:06,900 --> 00:22:13,320
+Ama bu alanda bundan sonra direkt aslında Türkçe, GPT gibi modellerin eğitimine geçeceğiz gibi.
+
+106
+00:22:15,320 --> 00:22:20,040
+Bunları da, arkadaşlar ürettik sadece sınıflandırma başarımız artıyor gibi değil de.
+
+107
+00:22:20,040 --> 00:22:27,140
+Bunun daha useful kullanılabileceği bir alanlara geçmeyi düşünüyoruz.
+
+108
+00:22:28,660 --> 00:22:49,980
+Burada tabii şöyle bir problem oluyor. Eğitim için chat GPT ve benzeri large language modelleri için aslında çok ciddi bir işletim gücüne de ihtiyaç var. Bunları eğitebilmek, bunları test edebilmek büyük bir verilerde. Buradaki zorlukları nasıl açıyorsunuz? Model eğitim aşamasını nasıl gerçekleştiriyorsunuz? Lokalde mi oluyor?
+
+109
+00:22:51,099 --> 00:22:56,279
+Açıkçası ben şöyle yapıyorum. Lokalde çalıştırabileceğim büyüklükte bir modelde her şeyi deniyorum. Çalışacağına emin oluyorum.
+
+110
+00:22:56,660 --> 00:23:13,759
+Şu ufak verilerle. Daha sonra projemizde alınan bir bilgisayar vardı. İşte Colab Pro var. Hani oralarda olabildiğini şey yapıyorum. Bazı kısımlar gerçekten olmuyor. O ikisine rağmen olmuyor. Hani erişebildiğim en iyi bilgisayarla da olmuyor. Colab'la da olmuyor. Ama olabildiği şekilde devam etmeye çalışıyoruz.
+
+111
+00:23:14,299 --> 00:23:15,960
+Orada veriyi nasıl küçültüyorsunuz?
+
+112
+00:23:16,880 --> 00:23:18,279
+Veriyi nasıl küçültüyoruz?
+
+113
+00:23:21,011 --> 00:23:43,971
+Colab'da şeyden çekebiliyor, Drive'dan. Büyük veriyi Drive'a atıp şey yapıyoruz. Ya da mesela çok çok büyük bir veri ise bunu byte byte dosyaya yazıp sadece eğitecek hale getirip, o dosyadan eğitecek şekilde artık devam ediyoruz gibi oluyor. Bir kere hazırlayıp, GPU'da, TPU'da çalışamayacak hale getirip o şekilde çözümler deniyoruz.
+
+114
+00:23:46,003 --> 00:23:54,203
+Benim de şu an en çok kafama takılan şey bu. Modellerin büyüklüğü nasıl eğiteceğiz ve şey olması aslında tıkandığımız yerlerden biri.
+
+115
+00:23:55,163 --> 00:24:03,423
+Evet, orada bir iteratif öğrenme süreci mimarız tasarlamak gerekiyor. Çünkü gerçekten dosya dosya öğreniyorsa ama bütün veriyi aynı anda görmüyor.
+
+116
+00:24:05,003 --> 00:24:11,223
+Bu öğrenmeleri pekiştirecek şekilde bir tasarım. Bu da bir yeni bir işlik aslında.
+
+117
+00:24:11,892 --> 00:24:22,392
+Burada da özellikle büyük bir mimarisi üzerine bir şeyler, bir yenilikçi yaklaşım çıkabilir. Ama zor bir problem çünkü bunun için mimariye ihtiyaç var, bilgisayara ihtiyaç var.
+
+118
+00:24:22,392 --> 00:24:28,392
+Böyle zorluklar var. Umarım daha güzel bir şekilde temin edebileceğiniz bilgisayarlar bulabilirsiniz.
+
+119
+00:24:28,392 --> 00:24:37,392
+Ya da işte Bulut'ta, en azından orada ücretsiz veya ücretsiz yakın hesaplar oluşturabilme imkanı olur projelerden.
+
+120
+00:24:37,392 --> 00:24:38,892
+Olur hocam.
+
+121
+00:24:39,539 --> 00:24:41,539
+Güzel, teşekkürler. Başka sorusu olan var mı?
+
+122
+00:24:41,539 --> 00:24:42,380
+Teşekkür ederim.
+
+123
+00:24:44,019 --> 00:24:49,180
+Tamam, sanırım yok. O zaman [öğrenci]'le devam edelim. [öğrenci], verebiliyor musun bizi?
+
+124
+00:24:50,519 --> 00:24:52,319
+Evet hocam. Merhaba hocam.
+
+125
+00:24:52,700 --> 00:24:56,039
+Hoş geldin. Hazırsan ekran paylaşımıyla devam edebiliriz [öğrenci].
+
+126
+00:24:56,700 --> 00:24:57,579
+Hazırım hocam, hemen.
+
+127
+00:25:03,700 --> 00:25:04,460
+Şimdi geldi.
+
+128
+00:25:05,100 --> 00:25:06,260
+Geldi ekranda değil mi?
+
+129
+00:25:06,840 --> 00:25:09,320
+Evet, görebiliyoruz ekranda. Başlayabilirsin, hazırsın.
+
+130
+00:25:13,940 --> 00:25:40,660
+Bu, bizim bu ojegi. İçindekileri bilgi güvenliği keberle ve bilgi güvenliği amacı, task type of tereste, dahili tehdit olasları, hargi tehdit olasları, yangın, diş tehdit şu anlardarı için tehditler karşı kurulma, diş tehdit kurulma, sade türü içindeki tehdit.
+
+131
+00:25:41,332 --> 00:25:57,892
+Bilgi güvenlik kavruma giriş gibi yenilen bir işin öneleri cihazlarıyla bu cihazlarında işlemekten olan verilen butonları ve sertlerini kuruma amaçlı çalışma alandır.
+
+132
+00:25:59,827 --> 00:26:13,447
+Bilgi güvenliği amacında veri bütünlerinin kurulması, erişim, yönetim, mahremiyet ve gizliliğinin kurulması, sistem devamlılığını sağlaması.
+
+133
+00:26:15,048 --> 00:26:27,127
+Task Type of Terrest'te iki tür var. Dahili ve harici ulaşları. Dahili tehdit bilgisi ve bilgisayarını kullanın.
+
+134
+00:26:27,488 --> 00:26:43,488
+Kutu niyet hareketi yaklaşık %80 çıkıyor. Harici tehdit olasılığı, hedef yönelmişi saldırı ve hedef gözetme yerine saldırı. Ondan yaklaşık %20.
+
+135
+00:26:46,675 --> 00:27:12,535
+Dahili tehdit ulaşları, yangın için tehdit ulaşları, bunlar yeteksizliği ilişkileri, virus olabilir bilgisiz ve bilgisiz kullanıcı çalışının veri taban sistemi, veri imhalisi, kutuniyet, hareket olabilir gelişlerin oradığını bilen rakip.
+
+136
+00:27:12,948 --> 00:27:25,788
+Kurması, satması, iddiat eriştili sistem çökmüşü, dönemin arazi, o hepsi dahil tehdit olabilir.
+
+137
+00:27:27,108 --> 00:27:37,228
+Harici tehdit ulaştırıcı iki tür var. Saldırın ağı eriştiliği elden etmek için kullanıcı manipüle eder.
+
+138
+00:27:37,779 --> 00:27:52,259
+Bir de uzak bir konumundaki bilgisayar kurusunda bağlısı yasadışı elde etmek için teknik yönetimlerini kullanır.
+
+139
+00:28:04,692 --> 00:28:24,031
+Sonuçları veya diğer internet kursallığı araçları. İçinde tehditle karşı kurma yönetim büyük olçlar teknolojiyle çok biletikleri bağıldır.
+
+140
+00:28:25,844 --> 00:28:52,104
+Ağda hediye tehdit kurmak için standart uygulaması gerekmektedir. Şefre değişiyor, kullanıcı hesap, denetim, şahsi hesap, grup oluşu, uzaktan bilitlikleri, hata toleransı, hepsi onlar için tehdit karşı kurma olabiliyor.
+
+141
+00:28:53,619 --> 00:28:58,619
+Bir de diş tehditlerinden korunan aşağıda...
+
+142
+00:28:59,796 --> 00:29:25,195
+Ağda tehtikleri kurulma için şunlar da sağlamasınız gerekmektedir. Viziksel kurulma sonuçları, kilitleni, güvenlik davranları, şifreleme, kimlik, doğrulama, genel anahtar ve şifreleme ve virtual LAN önemlidir.
+
+143
+00:29:27,155 --> 00:29:53,615
+Saldırılan türler birkaç tür vardır. Profesyonel sunuşları, genç göçlü saldırgan, kuruma çalışmaları, endüstri ve teknoloji casusları, dış ülke yönetimleri. Bu türler salgın tür olabilir.
+
+144
+00:29:54,708 --> 00:30:11,488
+Bunlar bir küçük sönuç çektim. Mesela şunlar yüzlerce yaklaşık orta seviye, binlerce yaklaşık yaratıcı.
+
+145
+00:30:12,019 --> 00:30:30,019
+Onlar, yaklaşık onlar orta seviye. Ama milyonlar başlayınca düzlüğünden. O, yani bir küçük sürü çektim. Yaklaşık bunlara kadar ona kaynaklı. Teşekkür ederim hocam.
+
+146
+00:30:39,124 --> 00:30:40,124
+Yılmazlarmışım.
+
+147
+00:30:44,948 --> 00:30:51,627
+Teşekkürler sunum için [öğrenci]. Sorusu olan var mı arkadaşlar?
+
+148
+00:30:54,627 --> 00:31:01,268
+Peki bununla ilgili bir simülasyon bir şey yaptın mı [öğrenci]? Var mı böyle bir hedefi? Nasıl bunu test edeceksin?
+
+149
+00:31:02,668 --> 00:31:04,107
+Nasıl hocam? Bir daha sorar mısın?
+
+150
+00:31:05,188 --> 00:31:06,888
+Feasibility çalışman var mı?
+
+151
+00:31:06,888 --> 00:31:10,208
+Bir simülasyon, have you performed any simulation?
+
+152
+00:31:11,571 --> 00:31:27,731
+Evet hocam, [kişisel bilgi] Biz Simulation yaptı. [öğrenci] bir program var, bir de Dalind bir program yaptı. Onlar yüksek lisans.
+
+153
+00:31:29,031 --> 00:31:34,871
+Peki, simülasyonla ilgili bulgularını hatırlıyor musun? Ne buldunuz?
+
+154
+00:31:35,827 --> 00:31:42,108
+Onlar ne yaptı? Onlar herhalde yaptı. Bilgisayar hareket gibi.
+
+155
+00:31:42,108 --> 00:31:46,548
+Simülasyon yaptı. Yirmi bilgisayarlar hareket eder.
+
+156
+00:31:46,548 --> 00:32:01,988
+Ve bakacak nasıl bir sıkıntı hem şebeket, hem ağları hem de kuvvetli bağlıldı. Öyle bir simülar yaptı.
+
+157
+00:32:04,019 --> 00:32:06,019
+Yani bu ikisi anlatıyor yani.
+
+158
+00:32:08,019 --> 00:32:16,019
+Şimdi burada çalışmanın orijinalliği nereden geliyor? Nasıl bir novelty ekliyor? Biraz bunu hatırlatır mısın bize?
+
+159
+00:32:17,019 --> 00:32:20,019
+Bir doktorada bir novel çalışma yapmanız gerekiyor.
+
+160
+00:32:20,019 --> 00:32:27,887
+[kişisel bilgi]
+
+161
+00:32:27,887 --> 00:32:39,287
+[kişisel bilgi]
+
+162
+00:32:41,047 --> 00:32:48,767
+Öyle düşünüyorum. Ama bir şey sormak istiyorum hocam. [kişisel bilgi]
+
+163
+00:32:53,776 --> 00:33:01,655
+Kısım kim? Hocalar ilgi var. Ben tam olarak bilmiyorum hocalar.
+
+164
+00:33:04,692 --> 00:33:09,052
+Tam olarak sorunu anlayamadım. Belki iyice sorabilirsin eğer daha rahat.
+
+165
+00:33:09,052 --> 00:33:25,872
+Yok hocam, sıkıntı yok. [kişisel bilgi]
+
+166
+00:33:27,531 --> 00:33:32,692
+Ağ Güvenliği sanırım Hasan Hüseyin Hoca, Hasan Hüseyin Balık çalışıyordu ama o emekli…
+
+167
+00:33:32,692 --> 00:33:40,072
+Bu soru oldu. Dışarıdan ders veriyor. Belki hala şey yapabilir. Ama onun dışında Cihan Hoca diyebiliyorum. Cihan Tayşi.
+
+168
+00:33:40,552 --> 00:33:41,112
+Cihan Hoca.
+
+169
+00:33:41,511 --> 00:33:49,432
+Beyi onunla konuşabilirsiniz. Başka aklıma gelmeyen var mı arkadaşlar? Sizin hatırladığınız birisi var mı? Ağ güvenliği sanırım başka çalışan yok.
+
+170
+00:33:51,892 --> 00:34:03,792
+[öğrenci] ben tanıyım ama büyük etmez. Az önce bahsettiğim emekli. Onlar az rahatlar alıyoruz acaba? Yani tanışmanı alıyoruz acaba şu anda?
+
+171
+00:34:04,492 --> 00:34:15,592
+Galiba olmuyor. Yani hocanın izin vermesi lazım ama muhtemelen emekli olduğu için almaz artık. O yüzden Hasan Hüseyin Hoca olmaz. Ama Cihan Hoca ile belki görüşebilirsiniz. Cihan Tayşi.
+
+172
+00:34:17,712 --> 00:34:19,712
+Nizamet Hoca çalışıyor mu bilmiyorum.
+
+173
+00:34:19,891 --> 00:34:26,851
+Zaman Diyan Hocam başka bir sistem. Hemhalde El Gersin. Bunlar sistemleri.
+
+174
+00:34:28,291 --> 00:34:34,072
+O da ilgilenmiyor. Toprak, siz hatırlıyormuşsunuz var mı başka network çalışan?
+
+175
+00:34:34,612 --> 00:34:38,511
+Hocam ben de düşündüm. Ali [öğrenci] vardı, o da gitti.
+
+176
+00:34:40,659 --> 00:34:43,579
+Ben network çalışan başka kimse yok diyebiliyorum ben.
+
+177
+00:34:43,579 --> 00:34:45,619
+Yani evet Cihan Hoca direkt akla geliyor.
+
+178
+00:34:45,619 --> 00:34:49,619
+Cihan Hoca geliyor akla. Belki Cihan Hoca ile görüşebilirsin.
+
+179
+00:34:49,619 --> 00:34:51,619
+Belki Cihan Hoca ile konuşulmuşlar.
+
+180
+00:34:51,619 --> 00:34:58,899
+Ya da o an iyi yönlendirebilir varsa önerisi. Bilmiyorum başka birisi çalışıyor ama benim çalıştığını hatırladığım başka birisi yok.
+
+181
+00:34:58,899 --> 00:35:05,139
+Belki ama şeyden bir AVSistan'da kontrol ettir. AVSistan search et.
+
+182
+00:35:05,396 --> 00:35:13,756
+Bizim hocaların research alanlarını. Belki şu an çalışmıyordur ama çalışmıştır geçmişte yine çalışabilir. Bilemiyorum.
+
+183
+00:35:14,655 --> 00:35:16,356
+[öğrenci] ne der hocam? Bu hoca esin ne der?
+
+184
+00:35:17,516 --> 00:35:22,096
+Web sayfasından. Üniversiteye gidiyoruz.
+
+185
+00:35:23,176 --> 00:35:31,696
+Üniversiteye web sitesinde hocaların çalışma alanları yazıyor. Oradan bakabilirsin. Oradan da bizim unuttuğumuz birisi vardır ama.
+
+186
+00:35:32,175 --> 00:35:33,435
+Başka aklıma gelmiyor.
+
+187
+00:35:33,995 --> 00:35:35,555
+Bekle, bekle. Teşekkür ederim hocam.
+
+188
+00:35:35,895 --> 00:35:36,395
+İnşallah.
+
+189
+00:35:36,395 --> 00:35:47,535
+O yüzden hani bir onu şey yap. Biraz da ama kendinde şey, yani hocayla görüşmeden önce, hani hoca danışmanızı hiç kadar önce bir ön hazırlık yaparsan iyi olur.
+
+190
+00:35:48,019 --> 00:36:03,639
+Ağ güvenliği çok geniş ama burada ne yapacaksın? Bunun bir data analiziyle mi ağ güvenliğine çalışacaksın? Machine Learning olacak mı? Yoksa bir simülasyonla mı bunu göstereceksin?
+
+191
+00:36:03,639 --> 00:36:05,239
+Ağ güvenliğiyle mi?
+
+192
+00:36:05,239 --> 00:36:12,299
+Mümkün machine learning olabilir, ağ güvenliği olabilir. Öyle düşünüyorum.
+
+193
+00:36:12,819 --> 00:36:16,019
+Evet, bunu biraz daha kafanda netleştirsem. Paper oku.
+
+194
+00:36:16,019 --> 00:36:21,019
+Birkaç tane makale biraz netleştirsen, sonra hocalara gidersen biraz daha...
+
+195
+00:36:22,759 --> 00:36:32,019
+Çünkü öbür türlü çok muğlak olunca, hocalarda kendisinin danışmanlık yapacağı bir alan mıdır, değildir, söylemekte zorlanabilir.
+
+196
+00:36:33,699 --> 00:36:36,679
+Öncelikle ona öneririm, bol bol makale okuyup öyle gitmenize.
+
+197
+00:36:38,139 --> 00:36:41,719
+Onun dışında benim başka bir şeyim yok, aklıma gelen bir şey yok.
+
+198
+00:36:44,019 --> 00:36:58,119
+Tamam, teşekkürler. Şimdi bir arkadaşımız [öğrenci] da sunum yapacak ama şu an yoldaymış. O yüzden başka sunum yapmak isteyen var mı bugün? İsterseniz bugün de sunabilirsiniz.
+
+199
+00:37:02,867 --> 00:37:07,127
+Ya da günümüzde de sunabilirsiniz, sorun yok. Sadece tercih ediyorsanız şu an sunabilirsiniz.
+
+200
+00:37:07,547 --> 00:37:09,887
+[kişisel bilgi]
+
+201
+00:37:10,367 --> 00:37:11,027
+Tamam, mazalan.
+
+202
+00:37:11,027 --> 00:37:11,967
+Dolayısıyla sunamayacağım.
+
+203
+00:37:12,747 --> 00:37:16,267
+[öğrenci], var mı sizin tercihiniz?
+
+204
+00:37:17,187 --> 00:37:19,547
+[kişisel bilgi]
+
+205
+00:37:20,167 --> 00:37:20,407
+Tamam.
+
+206
+00:37:20,980 --> 00:37:25,480
+Problem değil, sorun değil. Eğer sunmak istiyorsanız öyle bir seçenek olsun diye söyledim.
+
+207
+00:37:26,420 --> 00:37:31,900
+Şeyle ilgili raporu da yavaş yavaş hazırlamanızı göndermeniz gerekecek arkadaşlar.
+
+208
+00:37:33,440 --> 00:37:34,960
+Onun linkini paylaştım.
+
+209
+00:37:36,039 --> 00:37:39,300
+İşte bu sunumlarınız var, bir de rapor var. Onun dışında başka bir şey yok.
+
+210
+00:37:39,780 --> 00:37:43,740
+Final takviminde gözüküyor ders ama ayrıca bir sınav yapmayacağız.
+
+211
+00:37:43,900 --> 00:37:45,800
+Yani onu da şimdiden hazırlatmış olayım.
+
+212
+00:37:46,612 --> 00:37:49,751
+Benim söyleyeceklerim bu kadar. Var mı sorunuz?
+
+213
+00:37:57,076 --> 00:37:58,496
+Tamam, o zaman şöyle yapalım.
+
+214
+00:37:58,516 --> 00:37:59,296
+Hocam, sesim geliyor mu?
+
+215
+00:37:59,755 --> 00:38:00,896
+Şu an geliyor sesimiz.
+
+216
+00:38:00,916 --> 00:38:03,796
+Hocam, finaller belli oldu mu? Takvim dediniz de.
+
+217
+00:38:04,396 --> 00:38:06,396
+Yani açıklayacağız bu hafta.
+
+218
+00:38:06,436 --> 00:38:07,115
+Tamam hocam.
+
+219
+00:38:07,215 --> 00:38:12,436
+O yüzden hani şey olacak, orada göreceksiniz, görseniz şaşırmayın.
+
+220
+00:38:14,576 --> 00:38:18,936
+Ama yüzde bir sınav olmayacak yani semiller için, onu söyleyeyim.
+
+221
+00:38:20,135 --> 00:38:22,615
+Onun için başka bir şey yok yani bu ders kapsamında.
+
+222
+00:38:23,155 --> 00:38:31,295
+Biz diğer sonumuzu da haftaya yapalım. Seminer'de yolunu beklemek için yapmayalım. O zaman haftaya görüşmek üzere aynı saatte.
+
+223
+00:38:31,876 --> 00:38:33,356
+Görüşürüz. Hoşçakalın.
