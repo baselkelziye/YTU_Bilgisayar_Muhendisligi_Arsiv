@@ -175,6 +175,7 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AÖ
 - ZCT
+- AEL
 
 ### 📘 Bilgisayar Güvenliği ve Kriptografi
 
@@ -233,6 +234,9 @@
 - 📄 **Not:**[Zehra Aksoy'un Notları](./Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2024/zehra_aksoy) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- HHB
 
 ### 📘 Bilgisayarda Bulanıklık ve Belirsizlik
 
