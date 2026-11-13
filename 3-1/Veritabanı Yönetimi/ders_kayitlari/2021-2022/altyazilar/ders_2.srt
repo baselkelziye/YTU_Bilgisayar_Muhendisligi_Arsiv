@@ -1,0 +1,3447 @@
+1
+00:00:32,628 --> 00:00:38,408
+Merhaba arkadaşlar. Sesim geliyor mu? Beni duyabiliyor musunuz?
+
+2
+00:00:38,887 --> 00:00:39,688
+Merhaba hocam.
+
+3
+00:00:39,688 --> 00:00:40,527
+Evet hocam geliyor.
+
+4
+00:00:41,427 --> 00:00:43,828
+Tamamdır, teşekkürler. Hoş geldiniz.
+
+5
+00:00:46,807 --> 00:00:49,987
+İki dakika bekleyelim. Başka yakıtlar arkadaşlar da olur.
+
+6
+00:01:15,635 --> 00:01:37,816
+Hocam beklerken bir şey sorsam. Lab tarihleri belli oldu mu? Lab tarihleri mi? Lab tarihleri belli olmuş muydu? Evet, geçen hafta başladı lablar. [kişisel bilgi] Tamam. Şeye bakarsan OBS'ye, orada tarihler var.
+
+7
+00:01:38,224 --> 00:01:52,171
+LAB'lar sizin için bugün, saat 7'de, şey 5'te, 17'de yani. Üçüncü grup için LAB saat 5'te başlıyor, 5'te 7 arasında. O BSE'den...
+
+8
+00:01:52,371 --> 00:02:11,311
+Takviminize bakabilirsiniz. Duyuru için asistan arkadaşlar, dersi veren arkadaşların, OVS'inden dersin işleniğiyle ilgili duyurular paylaşılıyor. Oradan da takip edebilirsiniz. Yanlış hatırlamıyorsam, 3. grup için İdris Demir lab hocasıydı.
+
+9
+00:02:17,556 --> 00:02:21,056
+Kendisiyle de iletişmeye geçebilirsiniz. Zoom üzerinden yapılıyor eğitim.
+
+10
+00:02:21,796 --> 00:02:30,556
+Lab dersi. Saat 5 gibi katılım yaparsınız. Sizinle link paylaşılacaktır. Oradan erişebilirsiniz.
+
+11
+00:02:31,828 --> 00:02:33,168
+Tamam, teşekkür ederim.
+
+12
+00:02:33,527 --> 00:02:39,427
+Rica ederim. [öğrenci] link paylaştı. Bu neydi [öğrenci]? Ben de bir bakayım.
+
+13
+00:02:40,328 --> 00:02:47,788
+Evet, lab dersi için teşekkürler. Derslerin saatlerini, derslerin tarihlerini ve içeriğini paylaşmış [öğrenci] arkadaşımız.
+
+14
+00:02:47,968 --> 00:02:51,888
+Oradan da gördüğünüz gibi, geçen hafta başladı, bu hafta da olacak.
+
+15
+00:02:53,768 --> 00:02:58,187
+Geçen hafta da resmi tatil vardı. Üçüncü hafta olacak.
+
+16
+00:02:59,027 --> 00:03:01,807
+Lab'ların konularını da takip edebilirsiniz.
+
+17
+00:03:03,427 --> 00:03:07,767
+Şimdi başka sorusu olan var mı? Derse başlamadan önce.
+
+18
+00:03:11,699 --> 00:03:16,699
+ÇED'den [öğrenci] yazmış. [kişisel bilgi] Eski ders kayıtını göremiyorum.
+
+19
+00:03:17,739 --> 00:03:27,179
+Evet, GESİS'ten onlar yansımıyor. Online, Yıldız'dan belki erişebilirsiniz. Orası güncellenmiş olabilir.
+
+20
+00:03:28,819 --> 00:03:35,159
+Online'da güncel değilse, e-mail atarsanız, ben paylaşırım. Eski linkler olması lazım.
+
+21
+00:03:35,159 --> 00:03:39,159
+Bir de paylaşabilirim. Bilimsel hazırlıkla maalesef...
+
+22
+00:03:39,828 --> 00:03:50,928
+Online'a iki haftalarda geçmiş olmamıştı. Dolayısıyla kayıtlara erişimde problem yaşayabilen arkadaşlar oldu. Sizde de aynı sorun oluyorsa bana haber ederseniz paylaşırım.
+
+23
+00:03:52,428 --> 00:03:57,428
+O zaman şimdi ekranıma paylaşayım. Şu an görüntü geldi mi?
+
+24
+00:04:04,147 --> 00:04:07,207
+Sanırım görebiliyorsunuz ekrana. Teşekkür ederim.
+
+25
+00:04:10,567 --> 00:04:17,207
+Geçen hafta tatilden önce, aradan önce biz SQL programımı diline giriş yapmıştık.
+
+26
+00:04:17,807 --> 00:04:21,827
+Hatırlarsanız genel SQL yapılarını konuşmuştuk.
+
+27
+00:04:23,768 --> 00:04:28,007
+En son sanırım burada mı kalmıştık, hatırlayan var mı?
+
+28
+00:04:30,548 --> 00:04:31,888
+SAM'ları görmüş müydük?
+
+29
+00:04:36,627 --> 00:04:38,267
+Tekrar bir bakayım chatte.
+
+30
+00:04:39,067 --> 00:04:44,367
+Hocam, 3.39'da kaldı. Tamam, teşekkür ederim.
+
+31
+00:04:44,908 --> 00:04:48,747
+[öğrenci], [öğrenci] de hatırlatma yaptı. Demek ki doğru yerde biz.
+
+32
+00:04:49,187 --> 00:04:51,347
+Buradan kaldığımız yerden devam edeceğiz.
+
+33
+00:04:56,211 --> 00:05:03,572
+Önceki dersimizde bir SQL'e genel giriş yaptık. Burada kullanılan aggregate fonksiyonlarını inceledik.
+
+34
+00:05:04,312 --> 00:05:08,951
+Hatırlarsanız order by, group by, HAVING, clauselarını incelemiştik.
+
+35
+00:05:09,731 --> 00:05:16,271
+Şimdi bir de özellikle iki tabloyu karşılaştırmak için ya da iki değeri karşılaştırmak için
+
+36
+00:05:18,067 --> 00:05:26,648
+Bazı klauslar var. Burada exist, some, all gibi şeyler var. Anahtar kelimeler var.
+
+37
+00:05:27,888 --> 00:05:44,788
+Some isimden de tahmin edileceği gibi şunu yapıyor. İki tane kümeyi ya da iki tane tabloyu karşılaştırıyorsanız verileri, bunlar içinde bir şey var mı? Örtüşen kısım var mı?
+
+38
+00:05:45,331 --> 00:06:02,312
+Sandank asımız şu, bunların en az bazılarından daha büyük, küçük ya da eşit gibi bir eşitlik durumu söz konusu. Mesela örneğimiz şu olsun, maaşı işte belli bir değerden yüksek olan,
+
+39
+00:06:02,720 --> 00:06:14,600
+En azından biyoloji bölümünden yüksek olan hocaların, biyoloji bölümünden herhangi bir tanesinden en azından yüksek olan hocaların isimleri nelerdir?
+
+40
+00:06:15,680 --> 00:06:20,880
+Burada şunu yapıyoruz. Yukarıdaki gibi aslında şöyle yapabilirsiniz.
+
+41
+00:06:20,880 --> 00:06:25,680
+Burada bir tane tablomuz var, istiraktör.
+
+42
+00:06:26,644 --> 00:06:54,144
+SELECT, JOIN yapıyoruz, Instraktor'a. Birisine T, birisine de S diye isimlendirdik. Şimdi T'dekilerin maaşı, S'dekilerden yüksek olması lazım. S'dekiler hangi bölüm? Biyoloji bölümü. Yani biyoloji bölümünde hocalardan bazılarından yüksek olanları gösteren bir sorgu. Aynı sorguyu SAM kullanarak daha açık bir şekilde yapabilirsiniz. Yani SAM kullandığınız zaman şöyle oluyor.
+
+43
+00:06:55,315 --> 00:07:00,475
+Bir iç içe sorgu şeklinde. İç içe sorgu burada neye getirecektir bize?
+
+44
+00:07:03,096 --> 00:07:08,336
+Biyoloji bölümünde bütün hocaların maaşlarını getirecektir.
+
+45
+00:07:08,716 --> 00:07:11,315
+Kimisi daha yüksek olabilir, kimisi daha az olabilir.
+
+46
+00:07:11,875 --> 00:07:15,315
+Ama bütün biyoloji bölümündeki hocaların maaş listesine getirecektir.
+
+47
+00:07:17,036 --> 00:07:18,076
+Sol taraf ne yapacak?
+
+48
+00:07:21,267 --> 00:07:48,027
+Bunlardan büyük olanların maaşını getirecek. Yani şöyle olacak. Bunların bazıları küçük olanlardan büyük değerler. Yani en küçük olandan bazıları daha büyük olacaktır. Yani en azından biyoloji bölümünde alan hocaların bazılarından daha yüksek maaş alan hocaların listesini getirecektir.
+
+49
+00:07:49,812 --> 00:07:59,652
+Bu şekilde self-con yapmadan da yapabilirsiniz. Sam'ın temel fikri bu. Yani bütün biyoloji bölümündeki hocaların hepsinden maaşı daha yüksek olanını istemiyoruz.
+
+50
+00:08:00,232 --> 00:08:08,912
+Ya da diğer bir ifadeyle en azından en düşük biyoloji bölümündeki hocanın maaşından yüksek olanları istisneye edilecektir bize.
+
+51
+00:08:11,315 --> 00:08:12,815
+Tam klasuda bu şekilde kullanılır.
+
+52
+00:08:13,435 --> 00:08:21,935
+Bunu sayısal olarak ifade etmek gerekirse, mesela elinizde sağ taraftaki küme böyle olsun, 0, 5, 6 gibi maaş değerleri olsun.
+
+53
+00:08:22,875 --> 00:08:26,235
+Sol taraftaki 5'ten büyük olanlar hangileri?
+
+54
+00:08:27,355 --> 00:08:30,915
+Burada herhangi bir 5'ten büyük olan var mı?
+
+55
+00:08:31,915 --> 00:08:36,895
+Var. Bir tane 6 değeri olduğu için bu sum sorgusu doğru.
+
+56
+00:08:38,451 --> 00:08:52,851
+Eğer burada 6 olmasaydı birincisinde bunun sonucu false olacaktı. Yani şuradaki herhangi bir tanesi 5'ten büyük mü? 5'e eşit olan var ama büyük olan yok. Dolayısıyla bu false ya da yanlış olacaktı.
+
+57
+00:08:54,912 --> 00:09:03,192
+Buradaki sorguda eşitlik olduğu için 0 ve 5 değerinden en az bir tanesi 5'e eşit olduğu için bunun sonucu doğru olarak gelecekti.
+
+58
+00:09:05,139 --> 00:09:13,379
+Bunu farklı varsiyonlarda da kullanabilirsiniz. Eşittir, eşit değildir gibi ya da not in gibi şeyler düşünebilirsiniz.
+
+59
+00:09:14,799 --> 00:09:24,119
+Mesela 5 eşit değildir, sum, 1, 0. Bunun sonucu da doğru. Çünkü bunlardan bir tanesi 5 değil. 5 olmayan da var. En azından bir tanesi 5 değil.
+
+60
+00:09:24,779 --> 00:09:28,339
+Dolayısıyla bunun sonucu da doğru. Başına dikkat etmek lazım.
+
+61
+00:09:28,851 --> 00:09:45,951
+SAM NOT IN ile eşit değil. SAM olmayan NOT IN ile eşit değil. Yani SAM ile IN biraz eşittir bir tanesi. Eşit değil aslında. Çünkü en azından bir tanesi bununla içeriyor demek. Bunların en azından bir tanesi 5'e eşit demek.
+
+62
+00:09:54,323 --> 00:10:19,484
+5'e eşit değil. Dolayısıyla bunun sonucu doğru. Ama NOT IN deseydik bu doğru olmayacaktı. 5 NOT IN 0 ile 5 deseydik bu yanlış olacaktı. Çünkü 5'ten bir tanesi en azından 5. Dolayısıyla bunlar birbirine eşit. Bunun sonucu bu mesela TRUE iken buradaki FALSE olacaktı. Ama SOME ile IN DENK sonuç olarak bu şekilde DENK diye ifade ediyoruz.
+
+63
+00:10:22,067 --> 00:10:32,908
+Tabi SAM biraz kafa kastırıcı olabiliyor. O yüzden bazı durumlarda SAM yerini direkt IN kullanmak daha mantıklı olabiliyor ama her zaman birebir eşit değiller onlar.
+
+64
+00:10:35,067 --> 00:10:42,048
+Bunun yanında SAM ile birlikte ALL clause da var. ALL clause'u daha kesin kısıtlar sağlıyor.
+
+65
+00:10:42,867 --> 00:10:49,067
+Örneğimiz şu olsaydı, herhangi bir tanesinin biyoloji bölümünde herhangi birisinden daha çok maaş alan hoca değil de.
+
+66
+00:10:49,524 --> 00:11:07,464
+Biyoloji bölümündeki bütün hocalardan daha çok maaş alan hocalar kimler diye sormuş olsaydık, o zaman o koyacaktık SAM yerine. Bu da şunu getiriyor, biyoloji bölümündeki bütün hocaların listesini getiriyor, işte birisi 30 bin, 35 bin, 50 bin, 100 bin neyse.
+
+67
+00:11:16,563 --> 00:11:18,323
+Sol taraftaki soru bitirecekler.
+
+68
+00:11:19,524 --> 00:11:28,744
+Small olduğu zaman minimumundan yüksek, all olduğu zaman maksimumundan yüksek olan bir değeri çermesi gerekiyor diye düşünebilirsiniz.
+
+69
+00:11:29,563 --> 00:11:31,203
+Yani şurada bir örnek gösterelim.
+
+70
+00:11:36,724 --> 00:11:38,724
+Instructor tablosu.
+
+71
+00:11:41,124 --> 00:11:43,624
+Burada farklı farklı kolonlar var.
+
+72
+00:11:43,624 --> 00:11:45,548
+İşte bölüm diyelim buna.
+
+73
+00:11:52,947 --> 00:11:54,668
+Bu da saleri olsun.
+
+74
+00:11:58,995 --> 00:11:59,656
+Şurada
+
+75
+00:12:03,604 --> 00:12:30,524
+Biyolojiyi B ile gösteriyorum. Bu 70.000. Burası bilgisayar olsun, computer science. Bu 50.000. Burası fizik olsun, 90.000. Burası biyoloji olsun, 30.000. Burası da diyelim ki kimya olsun.
+
+76
+00:12:32,371 --> 00:12:33,631
+Burada 60 bin.
+
+77
+00:12:35,971 --> 00:12:46,192
+Şimdi sağ taraftaki sorgu, biyoloji bölümü sorgusu, hangi maaşları getirecektir?
+
+78
+00:12:52,403 --> 00:13:05,923
+bize şu iki değeri getirecek. 70 ile 30. 70, bu da 30. Sol taraftaki sorgulu bize hangi değerleri getirecek?
+
+79
+00:13:11,956 --> 00:13:13,936
+Sol taraftaki sorgu hepsini getirecek.
+
+80
+00:13:15,495 --> 00:13:24,355
+70, 50, 90, 30, 60.
+
+81
+00:13:26,015 --> 00:13:32,235
+Burası all olduğu için, sorguya bakalım, bu taraf all olduğu için hepsinden büyük olan.
+
+82
+00:13:33,036 --> 00:13:35,436
+Bunların içinde bu hepsinden büyük mü?
+
+83
+00:13:37,015 --> 00:13:39,056
+Değil, eşit 70 olduğu için.
+
+84
+00:13:39,956 --> 00:13:49,275
+Bu, onsuz. Peki bu hepsinden büyük mü? Hayır, bundan büyük ama bundan değil. Dolayısıyla bu da onsuz.
+
+85
+00:13:50,155 --> 00:13:57,716
+Bu, hem bundan hem de bundan büyük. Dolayısıyla bu sorgu doğru.
+
+86
+00:14:01,620 --> 00:14:23,500
+Şöyle yapayım. Yani burası O diyelim. Büyük eşittir, büyüktür. Burası doğru. Peki 30 eksinden büyük mü? Değil. Bunun da eşit. Bunun da küçük. Dolayısıyla bu da değil. 60 sağlıyor mu bunu? Bunu sağlıyor ama bunu sağlamıyor. Dolayısıyla bu da değil.
+
+87
+00:14:23,988 --> 00:14:32,308
+Demek ki sadece 90.000 maaş alan hocayı getirecekti. Bu da fizik bölümünden gelen hocaydı.
+
+88
+00:14:35,988 --> 00:14:39,227
+Aynı şey all, sam için olsaydı nasıl gelecekti?
+
+89
+00:14:40,347 --> 00:14:40,947
+Şurada.
+
+90
+00:14:43,447 --> 00:14:45,368
+Burası sam olsaydı.
+
+91
+00:14:56,052 --> 00:15:21,192
+Nasılım diyelim? 70, burada herhangi bir tanesinden büyük mü? Bundan değil, bundan büyük. Dolayısıyla bunu getirecekti. 50, herhangi bir tanesinden büyük mü? Bundan büyük, bundan değil. Bu da geldi. 90, 90 ikisinden de büyük. Bu da geldi. Peki 30?
+
+92
+00:15:22,419 --> 00:15:37,839
+30 bundan küçük, buna da eşit. Dolayısıyla bundan da büyük değil. Bu da gelmeyecek. Bu gelmeyecek. Ama 60 en azından bundan birisinden büyük olası gelecekti. Bu durumda sum dediğimiz zaman bu 4 kayıt gelirdi.
+
+93
+00:15:42,707 --> 00:16:00,647
+70 ile 90 ve 60'ı biteren değerler, bu P oluyor, bu C, bu biyoloji, bu da kimya. Bu hocaların listesini getiren sorguluk.
+
+94
+00:16:04,692 --> 00:16:20,912
+Bu da bunların karşılaştırmasını gösteriyor. Buradaki örneğin, resmi göstermiş olsaydık, ALL dediğimiz zaman, bütün hepsinin bu şartı sağlaması lazım. Bütün sağdaki kümedeki sayılar sağlıyor mu? Sağlamıyor.
+
+95
+00:16:21,812 --> 00:16:30,772
+5 buna eşit, 0 bundan küçük, dolayısıyla sağlamıyor. Bu ise sağlar, çünkü 6 da, 10 da, 5'ten büyük, dolayısıyla burası true.
+
+96
+00:16:31,860 --> 00:16:40,740
+Burası da false. Çünkü 4, 5'ten eşit değil, 5 eşit değil. 5 eşit ama 5'ten farklı olan bir yerine sayımız var 4. Bunu da sonuca.
+
+97
+00:16:42,000 --> 00:16:58,800
+Bu arada eşittir, all demekle, anlatayım biraz da aynı şey. Çünkü 5 dışında, 5 all değil demek şu oluyor. 5 bunun içinde değil. Yani birisinden farklı.
+
+98
+00:16:59,264 --> 00:17:07,744
+NOT IN ile aynı mantıkta. Gördüğünüz gibi 5, 4'ten de farklı, 6'dan da farklı. Yani 5 bunun içinde değil. Dolayısıyla bu doğru.
+
+99
+00:17:09,124 --> 00:17:24,724
+Ama tam tersi doğru değil. Yani ALL ile denk değil. Çünkü ALL da IN de bunun içinde geçebilir ama ALL da bütün hepsinden farklı olması gerekebiliyor.
+
+100
+00:17:26,548 --> 00:17:27,788
+Bir şey değil, bu değil.
+
+101
+00:17:32,660 --> 00:17:43,720
+Bunun yanında bir de exist ilişkisi var. Yani küme ilişkisinde bu bunun içinde. Var mı, yok mu? Yani ya hiç var ya hiç yok gibi düşünebilirsiniz.
+
+102
+00:17:44,160 --> 00:17:56,396
+Bununla inle de özdeştirilebilirsiniz ama exist kullanılır. Exist sadece true false gibi bir değer dönüştürüyor ama eğer boş küme...
+
+103
+00:17:56,692 --> 00:18:05,632
+Yoksa exist oluyor. Eğer sonucun karşılığındaki, sorgunun karşısındaki boş gibi değilse exist true, eğer değilse false oluyor.
+
+104
+00:18:06,211 --> 00:18:16,672
+Aynı zamanda siz tam tersini de sorgulayabilirsiniz. Not exist diyebilirsiniz. Yani bunun olmamasını istiyorsanız, o zaman boş gibi ise doğru, değilse yanlış.
+
+105
+00:18:17,892 --> 00:18:22,612
+Örnekle şey yapalım. Sizin aradığınız sorgu bu olsun.
+
+106
+00:18:24,019 --> 00:18:40,599
+2017 semestrında ve 2018 spring semestrında aynı anda verilen bütün derslerin listesini bulmuş olsaydık.
+
+107
+00:18:41,820 --> 00:18:45,200
+Bu şekilde yapabilirdik. Öncelikle ne diyeceğiz?
+
+108
+00:18:45,779 --> 00:18:49,599
+Semestrı fall ve...
+
+109
+00:18:49,951 --> 00:19:16,951
+Senesi 2017 olanlar, o size 100 dönemindeki dersleri gösterir. Bir diğer şartımız ne? Exist. Exist şartı da şunu sağlıyor, aynı zamanda Spring 2018 dönemindeki dersleri sağlayan sorgunun sonucu. Hem burada olacak hem de exist, yani boş bir olmayacak. Dolayısıyla ikisinde de olan değerleri...
+
+110
+00:19:18,099 --> 00:19:19,479
+Bunu başka nasıl yapabiliriz?
+
+111
+00:19:30,003 --> 00:19:42,003
+Başka nasıl yapabildik? Başka nasıl yapabildik? JOIN ile yapabildik. EXIST yerine IN kullanabilir miydiniz?
+
+112
+00:19:46,771 --> 00:19:48,011
+İndi en azından tak.
+
+113
+00:19:50,131 --> 00:19:51,271
+Ve ayıya pabiliyormilik.
+
+114
+00:19:56,403 --> 00:19:59,084
+Bu sorguyu inle yazacak olan var mı?
+
+115
+00:20:03,188 --> 00:20:05,087
+Exist yerine in kullansayız.
+
+116
+00:20:07,508 --> 00:20:09,728
+Yine iç içe sorgu kullanabilirsiniz.
+
+117
+00:20:18,355 --> 00:20:42,955
+Evet, [öğrenci]'ın yaptığı asıl doğru. Ne yapacaktık? Burada ikisinde de kesişen nedir? Course ID. Dolayısıyla, bu sorunu sağlayan Course ID, IN, burada SELECT, STAR olmazdı. Sadece Course ID'yi çekerek veririz. SELECT, COURSE ID, FROM, SECTION.
+
+118
+00:20:43,571 --> 00:21:02,451
+İlerdiniz, semester, spring ve year 2018. Bu oradaki kısma ihtiyacımız var mıydı? Course ID, T-Course ID'ye eşittir. Ya da buna neden ihtiyacımız var burada? Şu an neden ihtiyacımız var? İn olsaydı ihtiyacımız olur muydu?
+
+119
+00:21:12,852 --> 00:21:15,372
+IN olsaydı ihtiyacımız olmazdı bence.
+
+120
+00:21:16,412 --> 00:21:17,451
+Neden olmazdı [öğrenci]?
+
+121
+00:21:18,312 --> 00:21:28,072
+IN zaten şey, ortakları direkt getiriyor. Burada da eşitlemek için, aynı dersleri maplemek için ihtiyacımız oldu.
+
+122
+00:21:28,819 --> 00:21:44,559
+Aynen öyle. Yani in olsaydı zaten bu soldaki queryde, course ID'lerin burada olması şartını sağlayacaktı. Dolayısıyla ayrıca explicit bir course ID eşitlemesine ihtiyacımız olmazdı.
+
+123
+00:21:44,559 --> 00:21:54,900
+Yani şurayı silecektik, buraya gerek kalmazdı. Sadece SELECT course ID, FROM, SECTION, SPRING, AND, HERE. Yani isterseniz yazalım.
+
+124
+00:21:59,443 --> 00:22:00,443
+Buradaki soru.
+
+125
+00:22:15,955 --> 00:22:21,035
+Burada gözükmüyor. Şöyle bunun için neye zimna kolay olur.
+
+126
+00:22:29,875 --> 00:22:32,655
+Evet, ne yazayım? O daha açık olsun.
+
+127
+00:22:50,708 --> 00:22:52,008
+Şu anki sorgumuz bu.
+
+128
+00:23:15,539 --> 00:23:21,620
+ID, burasını SELECT, EXIST,
+
+129
+00:23:25,044 --> 00:23:26,884
+Bu, şu anki hali bu.
+
+130
+00:23:37,236 --> 00:23:50,455
+Bu sorgu çalışır. Burada bir sıkıntı yok. Ama bu kısmı eklemezseniz bir sorun ortaya çıkar. Şunu kaldırsa dedik ne olacaktı? Bu sorgu doğru çalışır mıydı?
+
+131
+00:23:55,412 --> 00:24:20,052
+Çalışmazdı. Neden çalışmazdı? Çünkü bu ikisi birebir aynı dönemde olan dersleri getirmezdi. Şu hali ne yapıyor? Diyor ki, 2018, Sink Semester'ındaki bütün dersleri getirin. Bu bir boş güme mi? Değil. Burada herhangi bir sayıda ders gelecektir. Ama burada rastgele bir ders sayısının burası ile bir ilişkisi yok.
+
+132
+00:24:20,932 --> 00:24:22,692
+Diyelim ki burada 5 ders var.
+
+133
+00:24:23,056 --> 00:24:32,796
+Burada 7 ders var. Bunlar örtüşen dersler olmak zorunda değil. Bizi sadece bu sorgu boşluğunu döndürüyor mu, döndürmüyor mu buna bakar.
+
+134
+00:24:34,476 --> 00:24:42,836
+Burada bir şart olmadığı durumda bu derslerle bu dersler örtüşmeyecektir. Sadece bir ders alması yeterli. Ama bu doğru sonuçları getirmeyecektir.
+
+135
+00:24:42,836 --> 00:24:47,819
+Bunu sağlamak için, değer için de diyoruz ki...
+
+136
+00:24:48,243 --> 00:24:55,343
+Yani Spring dönemindeki derslerle Fall dönemindeki dersler aynı şey olması lazım bu işleye sorgudan.
+
+137
+00:24:55,763 --> 00:25:00,743
+Dolayısıyla buradaki derslerle buradaki dersler örtüşü olsa sadece boş küme dışında bir şey gelir.
+
+138
+00:25:01,363 --> 00:25:02,043
+Bunu sağlar.
+
+139
+00:25:02,703 --> 00:25:06,563
+Bunun yerine aynı sorguyu şöyle yapabildik.
+
+140
+00:25:06,723 --> 00:25:06,963
+IN.
+
+141
+00:25:08,143 --> 00:25:09,343
+Ama ne IN olacak?
+
+142
+00:25:09,703 --> 00:25:10,943
+Course ID'si IN.
+
+143
+00:25:11,643 --> 00:25:13,323
+Bu Course ID nereden gelecek?
+
+144
+00:25:14,383 --> 00:25:15,123
+Şuradan gelecek.
+
+145
+00:25:17,332 --> 00:25:28,652
+Spring döneminde, 2018'de verilen dersler, artık buna ihtiyacımız yok. Çünkü bu zaten Spring döneminde verilen derslerin listesini getirecek, 2018.
+
+146
+00:25:29,711 --> 00:25:39,211
+Aynı dersler, şuradaki, Fall dönemindeki ile aynı olması zorunda. Çünkü Course ID'leri in ile bunların içindekilerden oluşmak durumunda sadece.
+
+147
+00:25:40,312 --> 00:25:43,272
+Bu durumda aynı soruncu dönüştürdü.
+
+148
+00:25:49,683 --> 00:26:01,524
+existing kullanımı da biraz bu. Yani aynısını biz şey yapabilirdik, join ile de yapabilirdik, subquery ile de yapabilirdik. Burada herhangi bir problem olmaz.
+
+149
+00:26:03,423 --> 00:26:11,244
+existing dışında bunun karşıtı olarak not exist'i de kullanabilirsiniz. Not existing kullanımında aklımız şey şu.
+
+150
+00:26:14,195 --> 00:26:22,455
+Biyoloji dersinde, Biyoloji departmanından belirlen dersleri, bütün dersleri alan öğrenciler kimler?
+
+151
+00:26:23,115 --> 00:26:40,075
+Bunun için şunu yapıyoruz, diyoruz ki, Biyoloji dönemindeki dersler, ne oluyor? Biyoloji bölümündeki dersler, burası bütün dersler, Biyoloji dönemindeki dersler,
+
+152
+00:26:40,884 --> 00:26:59,163
+ne yapıyor? Şuradaki sorgudan gelen bunlar haricindekileri alıyor. Çünkü öğrenciler bir öğrenci departmandaki dersleri almışsa, şu an o bölümden ders almıyor olması lazım.
+
+153
+00:27:00,307 --> 00:27:21,807
+Mantık olarak, bilmiyorum anlaşılıyor mu, zaten bütün dersleri almışsa, şu an zaten almıyor olması lazım. Yani, bu öğrenciler, natheksist olması lazım. Nereden natheksist? Biyoloji departmanında alan derslerden, farklı olması lazım. Bu course ID'leri zaten almış olması lazım.
+
+154
+00:27:26,003 --> 00:27:35,423
+Sadece biyoloji bölümünde açılan dersleri. İkinci sorguda bu derslerdeki öğrencileri sorguları.
+
+155
+00:27:36,344 --> 00:27:50,443
+Yani biraz tersten yapıyoruz. Birinciden, ikinciden fark ediyoruz. Üç küme. Dolayısıyla bu şekilde de not exist kullanılarak yazılabilir. Bunun başka bir yöntemi var mıydı?
+
+156
+00:27:52,723 --> 00:27:55,284
+Hocam, EXAP kullanmak yerine, VERE şart koysak bende?
+
+157
+00:27:56,223 --> 00:28:00,864
+Onu da yapabilirsiniz, aynı. VERE şart koyup da yapabilirsiniz. O durumda ne yapmanız lazımdı?
+
+158
+00:28:07,220 --> 00:28:14,180
+Bu öğrenciler daha önce biyoloji bölümünde dersleri almışlar. Artık başka bir ders almalarına gerek yok.
+
+159
+00:28:26,771 --> 00:28:32,271
+Evet, EXCEPT'i daha önce işledik [öğrenci]. Video kayıtlarına bakarsanız oradan cevap verirsiniz.
+
+160
+00:28:34,011 --> 00:28:41,932
+EXCEPT şu oluyor, fark oluyor. Yukarıdaki kümenin aşağıdaki kümeden farkı. Yani burada olup, burada olmayan.
+
+161
+00:28:46,036 --> 00:28:55,036
+İkinci sorgunun döndürdüğü hariç ikinci sorgulu. Burada ikisi de örtüşen bir şey var gelmez. Sadece bu ilinci sorguları.
+
+162
+00:28:55,036 --> 00:29:10,036
+Yani kümelerde A fark B gibi düşünüyor. Kümede bu A kümesi, bu da B kümesi. Şimdi burası A, burası B, burası C gibi olsun. A fark.
+
+163
+00:29:11,763 --> 00:29:15,163
+B sadece A'daki değerleri çelir.
+
+164
+00:29:15,864 --> 00:29:19,543
+A farkındalığının şeyi birinci sorgu, except.
+
+165
+00:29:23,667 --> 00:29:34,347
+İkinci sorgu. Bu ikisi aynı şey demek. Birinci sorgudakiler hariç, ikinci sorgudakiler. İkinci sorguda da örtülen B olduğu için B'yi çıkarır sadece A part B. Burası.
+
+166
+00:29:35,407 --> 00:29:39,747
+Except da aynı mantıkla çalışıyor. Rica ederim.
+
+167
+00:29:41,927 --> 00:29:47,207
+Burada başka bir şey yapabilir miydik? Ver yapabilirdik değil mi? Az önce [öğrenci] mı söylemişti?
+
+168
+00:29:47,207 --> 00:29:50,247
+[öğrenci].
+
+169
+00:29:50,480 --> 00:29:55,899
+İnanılmaz, hatırlamadım. Verdi. İnanılmaz, şansınız var mıydı?
+
+170
+00:30:02,132 --> 00:30:03,092
+Bence evet.
+
+171
+00:30:04,192 --> 00:30:07,232
+IN ile de yapabilirdik. Nasıl yapabilirdik? Hatırlatabilirsin.
+
+172
+00:30:08,632 --> 00:30:10,172
+COSID, NOT IN değil.
+
+173
+00:30:10,492 --> 00:30:11,092
+Aynen, öyle.
+
+174
+00:30:12,172 --> 00:30:14,452
+NOT IN gibi yapacaktık. Sadece IN değil.
+
+175
+00:30:15,132 --> 00:30:18,872
+EXIST ile NOT IN aslında eşitlik olarak kullanılabilir.
+
+176
+00:30:19,272 --> 00:30:23,432
+Yani COSID diyecektik. NOT IN sağ taraftaki biyolojide ettiği dersler.
+
+177
+00:30:24,092 --> 00:30:25,552
+Daha basit bir şekilde yapabilirdik.
+
+178
+00:30:27,251 --> 00:30:37,251
+Not Exist'de kullanabilirsiniz. Bazen şey yapabiliyor yani. Anlamsal olarak ters gelebiliyor ama kullanım alanı vardır.
+
+179
+00:30:41,251 --> 00:30:45,251
+Bir de bunun yanında Unique diye bir...
+
+180
+00:30:46,195 --> 00:31:10,395
+şey daha var. Unique diye bir clause daha var. Unique'de subquire'den duplicate geliyor mu, gelmiyor mu? Yani sağ tarafta duplicate diyorsa post, duplicate diyorsa sadece benzersiz değerler diyorsa true oluyor. Şöyle öyle görelim. Mesela sorgumuz olsun.
+
+181
+00:31:12,307 --> 00:31:29,768
+17 yılında en fazla bir defa verilmiş, açılmış dersler. Yani diğer bir ifadeyle, 2001 yılında her iki dönemde açılan dersleri istemiyoruz. Sadece bir dönemde açılan dersler hangileri? Bunları sorgulamak için yapıyoruz.
+
+182
+00:31:39,124 --> 00:31:51,724
+ile isimlenmedik, ve Course ID'sini buluyoruz. Şartımız, sağ tarafta iç içe gelen sorguda buradan gelenlerin, unique olması. Yani sadece bir defa gerçekleşmiş olması lazım.
+
+183
+00:31:52,163 --> 00:32:00,124
+Buradaki Course ID ile buradaki Course ID aynı. Yıl 2017, sectionlara bakıyorum, bunların Course ID'lerimi...
+
+184
+00:32:00,819 --> 00:32:06,779
+sağ taraftan, yani bu iç içe sorgudan gelen force ID'ler sadece bir defa geçmiş olması lazım.
+
+185
+00:32:07,199 --> 00:32:12,279
+Her iki dönemde verilmiş olsaydı iki defa geçecekti. Dolayısıyla Unite olmayacaktı.
+
+186
+00:32:12,799 --> 00:32:16,219
+Bu da sorgulunlukta dersleri göstermeyeceği anlamına gelirdi.
+
+187
+00:32:16,219 --> 00:32:22,539
+Bu sadece bir defa gösterilen dersleri. Burası olmasaydı ne olurdu?
+
+188
+00:32:25,491 --> 00:32:26,871
+Kartezyen çarp mı olurdu?
+
+189
+00:32:27,271 --> 00:32:38,931
+Aynen, yani şu Kartezyen çarp mı gibi olurdu. Buradaki korslarla buradaki korslar ölçmesi gerekmiyor. 2017 yılındaki bütün dersleri gösterildi. Bu ikisi eşleşmezdi.
+
+190
+00:32:39,763 --> 00:32:57,844
+Dolayısıyla iç içe sorgularda buna dikkat etmek lazım. Eğer iki şeyde bahsettiğinizde, iç içe sorgudaki bahsettiğiniz değerler eşleşmesini istiyorsanız, eşleşen değerler istiyorsanız, bunları SAPQL içinde eşleştirmeniz lazım.
+
+191
+00:33:00,323 --> 00:33:06,543
+Bu sorguyu başka temle yapma şansınız var mıydı? Mesela JOIN ile yapabilir miydiniz?
+
+192
+00:33:23,443 --> 00:33:25,483
+Veya grup by ile yapabilir miydiniz?
+
+193
+00:33:32,243 --> 00:33:55,604
+Biraz daha karmaşık olurdu ama yapabilirdiniz. Ne yapacaktık? Group BY yapardık. Hatta JOIN gibi yapabilirsiniz. Bu ne de bu şekilde olabilir? Group BY yaparsınız. Bu arada Course ID üzerine Group BY yaparsınız. Kaç defa geçiyorsa sayıyı bir ya da iki gibi yanına bir kolon gibi atabilirsiniz. Course ID, number of offer gibi bir kolon eklediniz.
+
+194
+00:33:56,276 --> 00:34:03,635
+Eğer birden çok tabağa geçmişse, bu sayı iki ya da üstü gibi sayılar nefret edecekti? Bir defa geçmişse, sadece bir defa yazacaktı.
+
+195
+00:34:04,195 --> 00:34:14,355
+Burada da işte, course awkward eşit bir gibi. Bu sorguda da onu ekleyebilirdiniz. Bu da bir yöntem olurdu.
+
+196
+00:34:14,756 --> 00:34:17,976
+Ama günlükle yapmak, bunu daha kolay bir sorgu yöntemi.
+
+197
+00:34:23,027 --> 00:34:32,087
+Şimdi az önceki sorumla da aslında söylediğim from'u içinde de, from içinde de subquery, yani iç içe sorgu yapabilirsiniz.
+
+198
+00:34:32,087 --> 00:34:42,927
+Bu örneği, şu örneği, bu kısmı from'un içine atarak da yapabilirsiniz. İsterseniz biraz örnekleri çeşitlendirelim.
+
+199
+00:34:49,204 --> 00:34:54,484
+hem FROM kısmında hem de SELECT kısmında olabilir. Bunu söylemiştik.
+
+200
+00:34:55,764 --> 00:35:03,244
+FROM kısmında olduğu zaman bunun bir JOIN işlemi gibi kullanımı söz konusu olabiliyor.
+
+201
+00:35:04,604 --> 00:35:08,963
+Örnek verelim. Buradaki sorguya bakalım. Bu sorgu ne yapıyor?
+
+202
+00:35:16,275 --> 00:35:31,475
+Hocalardan maaşları 42.000'den büyük olanları buluyor değil mi? Ne yapıyoruz? Departman bölüm içinde bütün bölümlere göre pay yapıyoruz. Bölüm ismi ortalama maaş.
+
+203
+00:35:33,331 --> 00:35:49,251
+Ortalama maaş, bölüm başına ortalama maaşı. Ne yapacaktım? Mesela bilgisayar bilimi 5.000, fizik bölümü 30.000, kimya bölümü 50.000 gibi size bölüm ortalama maaşı, bölüm ortalama maaşı gibi bir değer ödeyecek.
+
+204
+00:36:06,867 --> 00:36:18,507
+Bu kısmın sonucu, işçe sorgunun sonucu nedir? Şöyle değerler.
+
+205
+00:36:31,059 --> 00:36:38,219
+Bu da böyle, computer science, bilim, seç,
+
+206
+00:36:44,052 --> 00:37:09,391
+Kimya 37 bin. Böyle bir tablo ortaya çıkacak. Bu sorgun sonucu bu aslında. Ve şey eşit olacak. Böyle bir tablo yapısın. Aslında bunun yerine bu tablo yapısının geldiğini varsayalım. Bu kısım böyle bir şey. Bunun normal bir tablodan bir farkı var mı sizin kısımdan?
+
+207
+00:37:13,331 --> 00:37:26,891
+Bir tablodan farkı yok değil mi? Burada bir tablo ismi diyelim ki, salary tablosu yerine bu sorgunun çıkısı aynı şey ifade ediyor. Şimdi bunun üzerinden from'u kurgulayabilirsiniz.
+
+208
+00:37:37,012 --> 00:37:41,372
+Hocam, yukarıdaki dil kısımından dolayı aslında. Language kısmından SQL sesseniz kaydetmenize gerek yok.
+
+209
+00:37:41,912 --> 00:37:43,252
+Öyle mi? Bakalım.
+
+210
+00:37:45,152 --> 00:37:46,192
+Burada...
+
+211
+00:37:46,192 --> 00:37:46,932
+T'ye gelin hocam.
+
+212
+00:37:49,352 --> 00:37:56,792
+Burada ses kaybettim. Aynen. Burada renklendirmesini yaptık. Teşekkürler. Böyle daha okuması kolay.
+
+213
+00:37:56,792 --> 00:38:00,556
+Şimdi buradaki örnekle, şuraya bakarsak...
+
+214
+00:38:00,755 --> 00:38:21,715
+Artık sadece benim bir tablom var gibi. Teşekkürler. [öğrenci]'ın bu da not ettiğin güzel bir özellikmiş. Bu arası benim aslında bir saleri tablomla ek gibi düşünün. Artık bunu yazmakla bir saleri tablosuna referans vermek arasında bir fark yok.
+
+215
+00:38:28,371 --> 00:38:42,551
+Filtreleme yapacağım. Bunlar için de 42.000'den fazla olan hangileri? İlk ikisi. Dolayısıyla bunun sorgu sonucu olarak bizim elde edeceğimiz değerler böyle bir konu olacak.
+
+216
+00:38:42,551 --> 00:38:52,811
+Department name, çünkü SELECT'de department name var, evresiyatı konuları var. Computer science 50, physics 45. Bu sonuçları yansıtacak.
+
+217
+00:38:54,452 --> 00:39:01,012
+Gördüğünüz gibi, ilişki sorguları, FRON tarafında aynı bir tablo ile bir ilişki gibi kullanabiliyoruz.
+
+218
+00:39:02,952 --> 00:39:06,612
+Burası bir tablo gibi değerlendirildiği için, JOIN işlemi de yapabilirsiniz.
+
+219
+00:39:06,612 --> 00:39:20,312
+Yani bunu, işte diyelim ki, başka bir tablo ile, IN JOIN deyip, işte, dediğim, Instructor tablosuna transferip, buraya İ diyebilirsiniz.
+
+220
+00:39:21,427 --> 00:39:27,427
+i.instagram.id eşittir.
+
+221
+00:39:29,427 --> 00:39:34,427
+Tabi önce burada departmana da referans vermemiz lazım.
+
+222
+00:39:34,427 --> 00:39:39,307
+Buraya departman, name eşittir.
+
+223
+00:39:50,675 --> 00:39:53,576
+yazdırabilir, İ.Name.
+
+224
+00:39:55,076 --> 00:40:04,435
+Bu şekilde hem hocanın ismini, hem ortalama bölümdeki maaşı, bölümün ismini gibi şeyleri de yansıtabilirdik.
+
+225
+00:40:08,596 --> 00:40:12,135
+Diğer bir sorgu kısmına örneğini verelim.
+
+226
+00:40:16,135 --> 00:40:21,695
+Burada bizim HAVING kullanmamız ihtiyacımız yok. Neden buna ihtiyacımız yok?
+
+227
+00:40:26,068 --> 00:40:28,968
+Ya da diğer bir ifadeyle bunu having ile yapabilir miydik?
+
+228
+00:40:31,288 --> 00:40:33,688
+Şu sorguyu having ile yapabilir miydik?
+
+229
+00:40:42,900 --> 00:40:45,200
+Bu sorgunun aynısını havingle yazabilir misiniz?
+
+230
+00:40:53,844 --> 00:40:56,884
+Hocam, GROUP BY'den sonra kullanarak mı acaba?
+
+231
+00:40:57,584 --> 00:40:58,464
+Evet, aynen öyle.
+
+232
+00:40:59,403 --> 00:41:03,744
+İşte sorgu yapmamıza gerek yoktu aslında. Bunu biz havingle yazabilirdik. Nasıl yazardık?
+
+233
+00:41:05,124 --> 00:41:07,403
+GROUP BY dedikten sonra o şekilde herhalde.
+
+234
+00:41:07,844 --> 00:41:10,731
+Aynen öyle. Yani buradaki sorguda...
+
+235
+00:41:15,347 --> 00:41:16,307
+Şöyle izleyeyim.
+
+236
+00:41:17,787 --> 00:41:20,467
+Burada GROUP BY dedikten sonra ne dememiz lazım?
+
+237
+00:41:21,187 --> 00:41:23,867
+HAVING, şartımız ne?
+
+238
+00:41:26,527 --> 00:41:28,987
+EVERYSARY, büyüktür.
+
+239
+00:41:31,567 --> 00:41:35,587
+SORGUMUZ aslında bundan ibaret olacak.
+
+240
+00:41:40,244 --> 00:41:42,244
+Peki buraya bir de...
+
+241
+00:41:42,244 --> 00:41:47,244
+...instructor name...
+
+242
+00:41:47,244 --> 00:41:52,244
+...ya da instructor name, öyle diyelim tamam.
+
+243
+00:41:52,244 --> 00:41:56,244
+Name konuları olsaydı, sadece name olsaydı. Bu şekilde çalışır mıydı?
+
+244
+00:42:00,596 --> 00:42:05,596
+Ya da de yapman bütçesi olsaydı. Bu sorgu çalışır mıydı?
+
+245
+00:42:06,036 --> 00:42:09,536
+Hocam, GROUP BY yaptığımız şey ve fonksiyonlar dışında yapamıyorduk galiba.
+
+246
+00:42:10,115 --> 00:42:17,715
+Aynen öyle. Şimdi GROUP BY, biz grubu neye göre yaptık? Departmana göre yaptık. Ama burada budget kolonu yok.
+
+247
+00:42:17,956 --> 00:42:24,496
+Budget kolonu SELECT istiyoruz ama GROUP BY'in bir parçası değil. Ona göre gruplanmamış. Dolayısıyla bu çalışmaz, hata verir.
+
+248
+00:42:24,496 --> 00:42:28,112
+Bunu çözmek için ne yapmak lazım? Burada geçen...
+
+249
+00:42:28,112 --> 00:42:31,751
+şeyi aynı zamanda grup kayıt eklemek lazım. Bu durumda bu çalışımda.
+
+250
+00:42:34,231 --> 00:42:37,391
+Burayı, geri kolonunu eklememiz gerek var mı?
+
+251
+00:42:39,291 --> 00:42:41,831
+Yoktu herhalde çünkü ortalama aldığımız için.
+
+252
+00:42:42,472 --> 00:42:43,032
+Aynen öyle.
+
+253
+00:42:43,764 --> 00:42:54,523
+Bu aggregate fonksiyonları kullandığımız average, count, minimum, maximum gibi şeyleri biz adlandırırken aggregate fonksiyonu diyorduk.
+
+254
+00:42:55,043 --> 00:42:59,643
+Eğer o kolon aggregate fonksiyonu içinde geçiyorsa group by yapmanıza gerek yok.
+
+255
+00:42:59,784 --> 00:43:03,204
+Zaten bunun üzerine toplamları uyguluyor. Bunun için gerek yok.
+
+256
+00:43:03,324 --> 00:43:08,284
+Ama diğer kolonları aggregate uygulamıyorsanız group by da belirtmeniz gerekecektir.
+
+257
+00:43:09,108 --> 00:43:28,368
+Peki bu sorgu, şuradaki sorguya göre daha verimli çalışır, daha hızlı çalışır, daha basittir. Bunu yapmak daha uygun. Ama bazen buradaki basit bir sorgu ama onun için de biz başka kolonlara da getirebilirdik. Durumda grup by ile bu şekilde yapmak mümkün olmayabilirdi. Ama bu sorgu için ikisi de geçerli.
+
+258
+00:43:31,368 --> 00:43:32,848
+Sorusu olan var mı arkadaşlar?
+
+259
+00:43:39,315 --> 00:43:42,435
+Sorunuz yoksa o zaman ara verelim.
+
+260
+00:43:43,215 --> 00:43:46,575
+Zamanı olarak uygun bir noktadayız.
+
+261
+00:43:47,175 --> 00:43:50,755
+O zaman saat 2'de kaldığımız yerden devam edin.
+
+262
+00:43:50,835 --> 00:43:51,675
+Yükselere görüşürüz.
+
+263
+00:43:56,115 --> 00:44:02,415
+Linki kapatıp açmayacağım. Bu link üzerine devam edeceğiz. Sadece görüntüyü kapatacağım. Aradan sonra yine devam edeceğiz aynı link.
+
+264
+00:59:06,612 --> 00:59:13,612
+Merhaba arkadaşlar. Şimdi kaldığımız yerden devam edelim. Ekranım yansıtı mı size?
+
+265
+00:59:18,099 --> 00:59:19,000
+Evet hocam.
+
+266
+00:59:19,480 --> 00:59:20,179
+Teşekkürler.
+
+267
+00:59:22,360 --> 00:59:28,280
+Şimdi aradan önce iç içi sorguların from kısmında yazılması üzerine konuşmuştuk.
+
+268
+00:59:29,079 --> 00:59:32,159
+Aynı sorguyu başka ifadelerle de yazabiliriz.
+
+269
+00:59:32,199 --> 00:59:35,980
+Bunu zaten grup baylağı yapınca yazmasını konuşmuştuk.
+
+270
+00:59:37,039 --> 00:59:40,159
+Şimdi bir de with clause'u var.
+
+271
+00:59:40,159 --> 00:59:43,500
+Bu da aslında faydalı bir şey.
+
+272
+00:59:46,612 --> 00:59:55,992
+Sorgularınız karmaşık hale gelince bunları bir tablo gibi özetlemek için with clause'ı kullanılabilir.
+
+273
+00:59:56,992 --> 01:00:03,112
+With clause'ı böyle geçici tablo gibi düşünebilirsiniz ama sorgunun bir parçası halinde.
+
+274
+01:00:04,771 --> 01:00:05,492
+Şöyle göstereyim.
+
+275
+01:00:07,332 --> 01:00:08,612
+With dediğiniz zaman...
+
+276
+01:00:09,043 --> 01:00:26,763
+Burada tablo ismi veriyorsunuz. Mesela MaxBuget diye bir tablo gibi düşünün. Burada as ile tanımladıktan sonra, WIT'in içinde burada bir sorgu yazabilirsiniz. Bu sorgu uzun, kısa, fark etmez ama bir sorgunun bütün niteliklerine sahip olacak.
+
+277
+01:00:28,283 --> 01:00:32,243
+Sonrasında WIT SELECT ile takip edilmeli.
+
+278
+01:00:32,947 --> 01:00:44,387
+Şimdi SELECT kısmında ben artık bu MaxBudget dediğim ifadeyi, sorguyu bir tablo ile aynı mantıkla kullanabiliyoruz.
+
+279
+01:00:45,687 --> 01:00:49,927
+Artık MaxBudget, burada bir öncelikle sorgulama işlemi yaptım.
+
+280
+01:00:50,767 --> 01:00:54,967
+Departmanlara göre en yüksek bütçesi olanların değerini buldum.
+
+281
+01:00:55,767 --> 01:00:59,667
+Sonrasında bunu bir tablo gibi başka bir tablo ile JOIN ettim.
+
+282
+01:01:00,755 --> 01:01:07,596
+Bu şekilde de bir ön işlem yaparak sonra sorgu şeklinde bunları ekleyebilirsiniz.
+
+283
+01:01:08,135 --> 01:01:11,395
+Aynı işi ROM içinde yapabilir miydik?
+
+284
+01:01:14,355 --> 01:01:18,395
+MaxBudget ile WIT ile yazdığımız şeyin aynısını...
+
+285
+01:01:21,844 --> 01:01:25,663
+Bunu hiç hiç sorgulayabilir miydik?
+
+286
+01:01:39,987 --> 01:01:56,387
+Şuraya bakarsanız, şöyle düşünün, WIT'in içindeki bu sorgu bir tablo ile aynı ifade. Bunu biz başka bir gösterimle yapabilir miydik?
+
+287
+01:01:58,027 --> 01:02:04,087
+Yapabilirdik. Bunu bir sorgu şeklinde alabilir miydim? Bunun yerine koyabilirdim.
+
+288
+01:02:09,876 --> 01:02:17,615
+Ne yapıyor bu? Burada max budget kısmını biz diyelim ki value diye isimlendireceğiz.
+
+289
+01:02:18,996 --> 01:02:21,596
+Buradan bir departman diyelim buna.
+
+290
+01:02:22,916 --> 01:02:24,715
+Buna D diyelim.
+
+291
+01:02:26,016 --> 01:02:28,036
+Buna da B diyelim.
+
+292
+01:02:29,235 --> 01:02:35,296
+Bu çözüme sorunumuzu ya da bunu max budget diye ifade edelim.
+
+293
+01:02:39,731 --> 01:02:40,751
+Bu yeterli mi?
+
+294
+01:02:48,628 --> 01:02:50,388
+Yeterli değil. Neden değil?
+
+295
+01:03:04,179 --> 01:03:19,659
+Yani bunu burada da yapabilirdiniz. Ayrıca burada da yapabilirdi. Ama bunların eşlenik olması lazım. Değil mi? Yani burada belki departman bilgisine de ihtiyacınız var.
+
+296
+01:03:22,459 --> 01:03:31,099
+Sadece hangi en yüksek bütçeye sahip olan departmanı görmek istiyorsanız, şunu da yapabilirdik. Join diyebilirdik buna.
+
+297
+01:03:35,315 --> 01:03:49,695
+bir join de yapabilirdik. WHERE klausu olmayan edildi. Burada on da diyebilirdiniz. Ya da şu haliyle olur, joinsiz. Zaten bir join işlemi yapılıyor burada.
+
+298
+01:03:52,195 --> 01:03:57,695
+Departman gibi. Tek bir değer olduğu için problem yok. Ama eğer...
+
+299
+01:03:59,411 --> 01:04:14,971
+Burada bir ID filan çekmiş olsaydınız, burada bir grup olsaydı, diyelim ki, partimmanlara göre, bu durumda yapabilir miydiniz?
+
+300
+01:04:20,916 --> 01:04:30,155
+Olmazdı. Burada bir GROUP BY'a ihtiyacınız var. GROUP BY, AGROUP, DEPARTMENT ismine göre bu aggregation yapacaktınız.
+
+301
+01:04:30,835 --> 01:04:48,416
+Belki burada da, bunu yaptıktan sonra da, burada DEPARTMENT NAMELERİNİ DE, D.DEPARTMENT NAME, BİTTER, MAX, BACET,
+
+302
+01:04:50,036 --> 01:04:53,876
+O da, part name, and check.
+
+303
+01:04:56,815 --> 01:04:59,175
+Bunu SELECT için de yapabilmemeydik.
+
+304
+01:05:04,820 --> 01:05:05,580
+Ben şurayı siliyorum.
+
+305
+01:05:21,876 --> 01:05:23,876
+SELECT içinde yapabilir miydik?
+
+306
+01:05:25,876 --> 01:05:27,876
+Yapı yapsak ne olurdu? Şöyle yapsaydım.
+
+307
+01:05:35,123 --> 01:05:36,323
+Bu sorgu çalışır mıydı?
+
+308
+01:05:44,755 --> 01:05:51,755
+SELECT tarafında da çalışırdı ama bu sorgu bize istediğimiz sonucu getirmezdi. Neden getirmezdi?
+
+309
+01:05:54,155 --> 01:06:04,755
+Her bir departman için maksimum değeri sadece gösterdi. Computer Science bütün maksimum değer neyse o, FIY 70.000 ise her birisi için aynı değeri getirdi.
+
+310
+01:06:04,755 --> 01:06:09,579
+Biz sadece bir tane değer getirmek istiyorsak buradaki gibi yapmamız lazım.
+
+311
+01:06:09,876 --> 01:06:18,876
+Maksimum olan departmanın bilgisini görmek istiyorsak sadece, bu ikisinin maksimumla eşleşen, budget'ı eşleşen şey getirmemiz lazım.
+
+312
+01:06:18,956 --> 01:06:25,036
+SELECT içinde olsaydı, burada her bir departman için bir satır görecektik.
+
+313
+01:06:29,588 --> 01:06:51,348
+Buna da dikkat etmek lazım. Bit faydalıdır. Özellikle içerideki sorgu karmaşıklaştıkça, iç içe sorgularla bu anlamlandırmakta zorluk yaşayabileceğiniz bir şey oluyor. Bit kullanarak, daha geçici bir ilişki tanımlayarak bunu hesabını verirsin. Sen de sadeleştirme işlemi yapmak zorunda.
+
+314
+01:06:54,428 --> 01:06:56,688
+Mesela bu biraz daha karmaşık bir örnek.
+
+315
+01:06:57,172 --> 01:07:02,351
+Buraya bakarsanız, bit kullanımının faydasını biraz daha görebiliyorsunuz.
+
+316
+01:07:02,452 --> 01:07:04,751
+Gördüğünüz gibi, bizim sorgumuz ne?
+
+317
+01:07:06,811 --> 01:07:19,932
+Toplam maaşı, bütün maaşların, bütün departmanlardaki toplam maaşın ortalamasından daha yüksek olan departmanlar ne?
+
+318
+01:07:24,083 --> 01:07:36,203
+departmanları bulmak ama bu departmanların özel değil de toplam maaş değeri diğer departmanların ortalama maaş değerlerinden daha yüksek.
+
+319
+01:07:37,324 --> 01:07:39,183
+Bir departman hangisi?
+
+320
+01:07:41,012 --> 01:07:48,211
+Burada sorgu biraz daha kırışık gördüğünüz gibi. Onun için WIT kullanarak ayrı bir tablo gibi gösterebiliyoruz.
+
+321
+01:07:48,552 --> 01:07:56,272
+Burada iki tane sorgumuz var WIT kısmında geçecek. Birinci sorgu şunu yapıyor. Mesela Department Portal diye bir sorgumuz olsun.
+
+322
+01:07:57,172 --> 01:08:08,272
+Bütün hocaların öncelikle ne yapmamız lazım? Maaşlarını bulacağız. Toplam maaşını bulacağız. Ama neye göre? Departmana göre.
+
+323
+01:08:08,884 --> 01:08:29,084
+Dolayısıyla bu sorgu ne yapıyor? İşte bilgisayar mühendisliği toplam maaş 50 bin, 100 bin neyse. İşte kimya toplam maaş 250 bin, fizik toplam maaş 300 bin, matematik toplam maaş 500 bin gibi bölüm ve toplam maaşı gösteriyor.
+
+324
+01:08:34,260 --> 01:08:52,900
+Ortalama toplam maaşların ortalaması. Toplamda 10 tane bölüm varsa bunların ortalaması diyelim ki 150.000 gibi bir ortalama. Bu sadece önceki tabloda her bir bölüm için olan toplamların ortalamasını alıyor.
+
+325
+01:08:55,400 --> 01:08:59,900
+Ortalama maaş diyelim ki 150.000. Şimdi 150.000'den fazla...
+
+326
+01:09:00,819 --> 01:09:18,420
+Toplam ortalama maaşı olan departmanlar hangisi? Son sorgu bizim asıl sonucu getirecek sorgumuz. Bu da bu iki tabloya da gördüğünüz gibi aslında join yapar gibi düşünüyorsunuz. Bunlar bir tabloymuş gibi değerlendiriliyor.
+
+327
+01:09:18,420 --> 01:09:19,619
+WIT kullanılarak.
+
+328
+01:09:20,212 --> 01:09:29,811
+İkinci tablo, ikinci tablo, birinci tablodaki value değeri, ikinci tablodaki ortalama value değerinden yüksek olanları istiyorum.
+
+329
+01:09:30,592 --> 01:09:36,772
+Bu da sadece ortalama'dan yüksek toplam maaşı olan bölümleri listesine yedirir.
+
+330
+01:09:37,332 --> 01:09:42,912
+Hocam, VIT'ten sonra, tablo ismini tanıdıktan sonra parantez içinde kolumları yazmışız ya, bunlara gerek var mı?
+
+331
+01:09:43,512 --> 01:09:46,212
+Gerek yok. Aslında gerek yok onlara.
+
+332
+01:09:46,560 --> 01:09:49,560
+Hatta alttaki SELECT'e S kullansak yine aynı asalama mı gerekecek?
+
+333
+01:09:51,060 --> 01:09:51,680
+Nerede?
+
+334
+01:09:52,220 --> 01:09:54,000
+Evet, S desek yeterli.
+
+335
+01:09:55,440 --> 01:09:58,560
+Mesela SELECT, DEB, NAME, VIRGÜL, SAM var ya, 2. satır.
+
+336
+01:09:59,040 --> 01:10:02,260
+S kullansak, SAM, SALERI, S desek, VALUE, MESLA, aynı işe mi yarayacak?
+
+337
+01:10:03,060 --> 01:10:08,560
+Yani şöyle, WITH, DEB, TOTAL, S deyip burada sorguyu yazsanız yeterli.
+
+338
+01:10:10,000 --> 01:10:11,039
+Burada da...
+
+339
+01:10:11,039 --> 01:10:27,340
+Şimdi value diye bir şey isimlendirmeniz gerekmiyor. Deptotal, Average, As, buradaki SELECT sorgusu. Virgülle iki tane ayrı sorgu olduğunu sadece belirtmeniz gerekiyor. Burada da ismini yazmanız lazım. Bu şekilde ortaya çıkabiliyor.
+
+340
+01:10:29,719 --> 01:10:36,739
+Sorun şu, burada SAM, SALERI dediğiniz şeyin bir karşılığı yok, kolon karşılığı.
+
+341
+01:10:37,427 --> 01:10:46,927
+O yüzden bunu isimlendirmek lazım ama burada SELECT'in içinde, SON, SOLERY, EZ deseniz, buraya da VALÜ deseniz aynı şey olur.
+
+342
+01:10:46,927 --> 01:10:48,427
+Anladım hocam.
+
+343
+01:10:48,427 --> 01:10:54,427
+Burada stesifik bir isimlendirmiş ama siz bunu sorgun içine de koyabilirsiniz.
+
+344
+01:10:54,427 --> 01:11:01,427
+Gördüğünüz gibi bir daha çok sorgu yapabiliyorsunuz, geçici sorgu yazabiliyorsunuz.
+
+345
+01:11:02,068 --> 01:11:10,748
+Bu da işit bu araştır. Şimdi bit kullanmasaydınız bu sorgu yine yapabilirdiniz ama bir defa FROM içinde bu sorguları iç içe sorgular şeklinde yapacaktınız.
+
+346
+01:11:12,328 --> 01:11:20,007
+Karmaşık sorgularda okuması biraz zorlaşıyor. O yüzden bit kullanabilirsiniz bu tarz karmaşık sorgularda.
+
+347
+01:11:23,572 --> 01:11:38,051
+Eğer bir skalar, yani bir değer, bir sabit bir değer gibi bir şey çekiyorsanız, bu tarz subqueryleri SELECT'in içinde yazmak mantıklı.
+
+348
+01:11:39,712 --> 01:11:43,752
+Az önceki örnekte bunu aslında göstermeye çalıştım ama bu örnek daha uygun bir örnek.
+
+349
+01:11:44,180 --> 01:12:06,340
+Şimdi bizim departman bilgilerimiz var. Departmanlarda ben şunu merak ediyorum. Her bölümde kaç tane hoca var? Bölüm başı hoca sayısı. Bunu biz yine şey yapabilirdik, join yaparak, sert join ile departmandan istirahatla gidip orada join yaparak bunu sayabilirdik.
+
+350
+01:12:11,988 --> 01:12:14,507
+İç sorgu yazarak da yapabiliriz. Nasıl oluyor?
+
+351
+01:12:16,528 --> 01:12:20,007
+Dış sorgu sadece bölümlerin isimlerini getiriyor.
+
+352
+01:12:21,208 --> 01:12:24,448
+Virgülle buraya da aynı zamanda ben neye getirmem lazım?
+
+353
+01:12:24,667 --> 01:12:28,948
+Her bir bölüm için kaç tane hoca var? Bunun sayısını getirmem lazım.
+
+354
+01:12:29,808 --> 01:12:36,788
+Dolayısıyla bir count işlemi gerçekleşecek ama instructor tablosundan gerçekleşecek.
+
+355
+01:12:38,163 --> 01:12:52,603
+Dikkat etmeniz gereken şey şurası, bu iç sorgudaki departman name ile dış sorgudaki departman name'in aynı içerik olması lazım. Eğer bu ver şartını yazmazsanız size ne getirecektir?
+
+356
+01:12:54,195 --> 01:12:55,556
+Şurası olmasaydı ne olurdu?
+
+357
+01:12:56,076 --> 01:12:59,876
+Tüm instructor, yani şeyler gelmeyecek mi hocam? Instructor'da kaç tane instructor var?
+
+358
+01:13:00,296 --> 01:13:07,456
+Aynen, yani o okulda kaç tane instructor varsa onun toplam sayısını, bölüm başı instructor sayısını getirmeyecekti.
+
+359
+01:13:07,456 --> 01:13:10,876
+Yani diyelim ki Yıldız Teknik'te 500 tane hoca var.
+
+360
+01:13:11,412 --> 01:13:28,352
+Bilgisayar mühendisi için de 500'ü yazacaktı, kimya için de 500'ü yazacaktı, fizik için de, matematik için de 500'ü yazacaktı. Bizim aslında istediğimiz bu değil. Bizim istediğimiz kimyada kaç hoca var, fizikte, bilgisayarda kaç hoca var, bunu görmek istiyoruz. Dolayısıyla burada bu şartı yazmak zorundasınız.
+
+361
+01:13:34,836 --> 01:13:58,816
+Henüz hoca olmayan departman bulabilir. Yani yeni bir bölüm açıldı. Aslında bölümde hoca olmak zorunda ama diyelim ki böyle bir durumunuz var. Sol tarafta bir departman var, sağ taraftaki instructor tablosunda departmanı olmayan hocalar var. Ya da bazı departmanlar için hoca yok. Daha doğru ifade edelim.
+
+362
+01:13:59,604 --> 01:14:09,504
+Bu durumda, sol tarafta diyelim ki yeni bir bölüm açıldı, oyun geliştirme bölümü. Ama hocası yok. Bunun için bir satı gelir mi bu sorguda?
+
+363
+01:14:10,543 --> 01:14:11,824
+Gelir hocam, sıfır gelir orada.
+
+364
+01:14:12,664 --> 01:14:26,844
+Aynen, gelir ama boş gelir, nal gelir. Dolayısıyla bunun için de onu düşünmek lazım. Yani sol taraftaki her satı için bir değer tesis gelecek. Ama sağ tarafta sayı olarak boş gelebilir.
+
+365
+01:14:28,083 --> 01:14:28,923
+Bu da önemli.
+
+366
+01:14:31,103 --> 01:14:33,123
+Ama şuna dikkat etmeniz lazım.
+
+367
+01:14:33,783 --> 01:14:36,863
+İç içe sorgular eğer SELECT tarafında kullanılıyorsa,
+
+368
+01:14:37,863 --> 01:14:46,463
+eğer sağ taraftaki riskalar değer birden çok sayı içeriyorsa hata alırsınız.
+
+369
+01:14:47,863 --> 01:14:54,763
+Yani bu eşleniği bir departman için birden çok karşılık geliyorsa,
+
+370
+01:14:55,380 --> 01:15:14,520
+İlgisayar bölümü 5 hoca, İlgisayar bölümü 50 hoca gibi iki tane satır olsaydı, iki satır döndürecek olsaydı bu hata verildi. Bu sadece bir satıra karşı da bir satır olacak gibi düşünmeniz lazım. Ona da dikkat etmek lazım.
+
+371
+01:15:15,220 --> 01:15:32,540
+Bu count olduğu için bir problem yok ama mesela şey olsaydı, burada SELECT, STAR gibi bir şey olsaydı, burada iki tane departman entriste olmuş olsaydı, instraktifle yanlışlıkla, o durumda gelebilirdi, bu da ortaya çıkarabilirdi.
+
+372
+01:15:38,260 --> 01:15:39,960
+Buraya kadar sorsan var mı?
+
+373
+01:15:43,507 --> 01:16:00,507
+Tablolarda çeşitli operasyonlar gerçekleştirmek gerekebilir, düzeltmeler. Database içerisinde bazı kayıtları silmeniz gerekebilir, bazı kayıtları eklemeniz gerekebilir, güncellemeniz gerekebilir. Bunları da yapmak SQL ile mümkün.
+
+374
+01:16:01,368 --> 01:16:10,927
+Şimdi delete operasyonu, delete operasyonu şunu yapıyor, o tablodaki kayıtları siliyor. Truncate ile delete'in farkı nedir?
+
+375
+01:16:16,659 --> 01:16:17,960
+Truncate ya da drop.
+
+376
+01:16:19,699 --> 01:16:22,619
+Drop tabloyu siliyordu, delete satırları.
+
+377
+01:16:23,399 --> 01:16:29,380
+Aynen. Drop bütün o tabloyu yok ediyor. Dolayısıyla o tablo ile ilgili bir şema kalmıyor.
+
+378
+01:16:30,440 --> 01:16:40,699
+Delete ise sadece satır siler. Satır değerlerini siler. Bir de truncate diye bir şey var. Truncate'i hatırlıyor musunuz veya gördünüz mü?
+
+379
+01:16:51,315 --> 01:17:06,216
+[öğrenci] görmedik demiş. Sanırım henüz konuşmadık. Trankate de kayıt silme işlemi yapar. Trankate tabloyu yok etmez, drop gibi. Ama farkı şu, deliklesiz belli satırları silebilirken, Trankate ile bütün tabloyu silersiniz.
+
+380
+01:17:06,996 --> 01:17:19,415
+Yani delete ile ben sadece şu şartları sağlayanları silmek istiyorum diyebiliyorsunuz. Sadece bir satırı, 500 satırı, 1000 satırı herhangi bir şartı sağlayan şeyleri silmeniz mümkünken, truncate bütün tablo isler.
+
+381
+01:17:21,395 --> 01:17:27,796
+Truncate yerine delete from, o tablonun tamamını aslında aynı işlef fonksiyon olarak gerçekleşmiş oluyor.
+
+382
+01:17:32,851 --> 01:17:39,731
+yaşanması uygun olmayan bir şey olabilir. Yani o tablonun tamamını silmek çoğu kez istemediğimiz durumdur.
+
+383
+01:17:40,172 --> 01:17:47,351
+Belli kayıtları silmek isteyebilirsiniz. Bunun için de WHERE klausu kullanarak spesifik olarak seçmeniz lazım.
+
+384
+01:17:48,471 --> 01:17:55,591
+Mesela bütün hocaları silmek yerine sadece bir bölümdeki hocaları veya belli ID'si olan hocayı silmek için
+
+385
+01:17:55,591 --> 01:17:59,931
+DELECT FROM, işte INSTRUCT'a diyoruz hangi tabloyu sileceksek.
+
+386
+01:18:00,467 --> 01:18:06,148
+VER içinde de artık burada kaç şart varsa onu sağlamanız gerekecektir.
+
+387
+01:18:07,967 --> 01:18:13,128
+Yıldız dememize gerek var mı? Delete yaptığımız zaman bu saat. Mesela SELECT, FROM diyorduk ya.
+
+388
+01:18:14,568 --> 01:18:16,387
+Burada kolon belirtmemize gerek var mı?
+
+389
+01:18:16,807 --> 01:18:18,927
+Kolon çalışmaz zaten herhalde. Satır sildiğimiz çalışmaz.
+
+390
+01:18:18,927 --> 01:18:25,708
+Çalışmaz. Aynen. Bütün satır sildiği için kolon bilgisine gerek yok. Dolayısıyla direkt DELETE FROM demeniz gerekiyor.
+
+391
+01:18:26,739 --> 01:18:33,939
+Çünkü hücre hücre silmiyor. Satır satır siliyor delete. Bu da dikkat etmesi gereken bir şey.
+
+392
+01:18:36,340 --> 01:18:52,619
+Delete'te de sorgularda olduğu gibi bir iç içe sorgu yazabilirsiniz. Yani belli şartları sağlayan özelliklerdeki şeyleri silmek istiyorsanız bunu iç içe sorgular şeklinde yapabilirsiniz. Örnek vermek gerekirse.
+
+393
+01:18:53,108 --> 01:19:03,128
+Ben Watson binasında bulunan departmanlardaki hocaları silmek istiyorum.
+
+394
+01:19:04,708 --> 01:19:11,307
+Yani tablo, istiradörsü edeceğim ama o hocaların departmanı şunlar içinde olsun.
+
+395
+01:19:11,927 --> 01:19:19,247
+Bu Watson binası içinde bulunan bölümlerdeki hocaların silinmesini istiyoruz.
+
+396
+01:19:19,828 --> 01:19:24,228
+Ne yapıyoruz? Şimdi silinen şey, burası belli.
+
+397
+01:19:24,228 --> 01:19:33,028
+Lead from instructor, yani instructor sileceğiz. Ama instructor hangi özellikler? Departmanın bu binada olanlar.
+
+398
+01:19:33,028 --> 01:19:41,828
+Bunun için ne yapmamız lazım? Bir join yapmamız gerekir ya da bir in yapmamız gerekiyor. Yani departman tavlosuna gitmemiz lazım.
+
+399
+01:19:41,828 --> 01:19:45,028
+Çünkü building kolonu departmanın içinde.
+
+400
+01:19:45,652 --> 01:19:56,051
+Burada Building, Watson, bu bize sadece bu departmanları getirecektir. İşte 5 departman olabilir. Sonrasında bu 5 departmandaki bütün hocaları silebiliriz.
+
+401
+01:20:00,627 --> 01:20:12,927
+Başka karmaşık şartlar da sağlayabilirsiniz. Diyedebilirsiniz ki, mesela maaşı belli bir değerden düşük olanlar, ortalama maaştan küçük olanlar, bilemiyorum. Bunun gibi bir sürü iç içi sorgular yazabilirsiniz.
+
+402
+01:20:13,427 --> 01:20:21,627
+Mesela şey yapmış olsaydık, ortalama maaşı, dışın aşağısında maaş alan hocaları silelim.
+
+403
+01:20:28,532 --> 01:20:32,211
+Öncelikle ortalama maaşı bulmamız lazım. O değerden küçük olan.
+
+404
+01:20:32,652 --> 01:20:39,252
+Hocam bu sorguda şey olmaz mı? Yani eğer keşlenmiyorsa sağdaki kısım, ortalama sürekli artmış olur işlem yapılırken.
+
+405
+01:20:40,391 --> 01:20:44,152
+O önce hatırlarsanız, iç içe sorgular önce sonuçlanır.
+
+406
+01:20:45,076 --> 01:21:07,976
+Ondan sonra dışarıdaki sorgu gerçekleşir. Bunu konuşmuştuk. Dolayısıyla önce iç içe sorgu bitiyor. Onun sonucunu alıyorsunuz. Yani buradaki örnekte iç içe sorgu hangisi? Burası. Buranın sonucunu elde ediyoruz. Diyelim ki 50.000. Artık tekrar bunun içine gitmiyoruz. Sadece buradaki 50.000'den küçük olanlara bakıyoruz.
+
+407
+01:21:10,452 --> 01:21:15,891
+Şöyle bir şey geldi aklıma. Yani bu satır satır çalıştığı için delete, her satıra tekrar ver çalışmayacak mı?
+
+408
+01:21:17,412 --> 01:21:25,311
+Ver çalışacak ama sağ taraf standart. Artık 50 bin sayısıyla karşılarsız. Ortalamaya tekrar gidip sorguyu çalıştırmıyor.
+
+409
+01:21:26,231 --> 01:21:26,891
+Anladım hocam.
+
+410
+01:21:27,551 --> 01:21:28,252
+Yani şöyle.
+
+411
+01:21:31,891 --> 01:21:46,551
+Hatırlarsanız, dediğimiz gibi, iç içi sorgularda önce iç içteki sorgu çalışır. Mesela delete, on dedik. Burada instructor.
+
+412
+01:21:51,412 --> 01:21:53,252
+Burada da var şartımız var.
+
+413
+01:21:53,992 --> 01:21:59,032
+Solerisi şu değerden, iç sorgu selector.
+
+414
+01:22:01,292 --> 01:22:03,752
+Average, salary.
+
+415
+01:22:05,131 --> 01:22:06,471
+Detaylı yazmayacağım artık.
+
+416
+01:22:06,471 --> 01:22:07,471
+Burası from.
+
+417
+01:22:10,432 --> 01:22:11,131
+Böyle bir sorgu.
+
+418
+01:22:11,532 --> 01:22:15,492
+Şimdi ilk önce burasını çalıştırmadan önce burası çalışır.
+
+419
+01:22:15,992 --> 01:22:17,772
+Burası çalışır, tabloya gider.
+
+420
+01:22:18,484 --> 01:22:45,203
+Farklı değerler var. 50, 70, bir sürü hoca var. Her birisinin maaşı burada yazıyor. Ve bir ortalama bulundu. Diyelim ki ortalama A ve G değerimiz 55.300. Buranın sonucu tek bir değer olduğu için artık buranın sonucunu bir çalıştırmamıza gerek yok. Bu buraya gelir. Bu sorgu şu dönüştü artık.
+
+421
+01:22:46,260 --> 01:22:47,239
+Burayı siliyorum.
+
+422
+01:22:54,452 --> 01:23:12,192
+uğrayayım. Artık bu sorgunun yerine sabit bir değerle karşılaştırıyorum. Gibi düşünün. İç içe sorgu tekrar tekrar iteratif bir şekilde çalışmaz. Zaten deklaratif diller iteratif çalışmaz.
+
+423
+01:23:22,003 --> 01:23:30,263
+Structure tablosundaki silinecek şeyler şu değerden küçükse, büyükse diye sadece karşılaştırılır.
+
+424
+01:23:30,863 --> 01:23:33,583
+Burada da denk gelen şu satılar varsa bunlar silinecek.
+
+425
+01:23:36,948 --> 01:23:54,948
+Yani, iç içe sorgu tekrar tekrar, bir bunu çalıştırdım, bir bunu çalıştırdım, bir bunu çalıştırdım, çekle çalışmaz. İteratif işlem için hani, for döngüleri gibi yapıyorsunuz ya, böyle çalışmaz tekrar. SQL böyle çalışmaz. Bunu yapabilirsiniz ama...
+
+426
+01:23:55,475 --> 01:23:57,075
+İççe sorgu şeklinde değil.
+
+427
+01:23:57,435 --> 01:24:01,415
+Şimdi, SELECT, NEXT gibi bazı mekanizmalar kullanmak gerekir.
+
+428
+01:24:02,095 --> 01:24:03,715
+SQL için çok verimli değil, yapılabiliyor.
+
+429
+01:24:04,036 --> 01:24:05,175
+Onları da daha sonra konuşuruz.
+
+430
+01:24:10,355 --> 01:24:12,435
+Ama sorduğun soru önemli bir soruydı.
+
+431
+01:24:13,536 --> 01:24:18,355
+Şimdi, bunun için hani...
+
+432
+01:24:18,899 --> 01:24:30,519
+Az önceki probleme karşılık gelecek şekilde, iteratif olmasını engelleyecek bir şekilde, öncelikle ortalama sayı bulunur, sonra bütün değerler bu ortalamadan çıkar.
+
+433
+01:24:31,139 --> 01:24:39,519
+Ya da diğer bir yöntem, ondan sonra o ortalama değeri bir daha hesaplamadan işlemler gerçekleştirebilir.
+
+434
+01:24:44,275 --> 01:25:01,456
+Tekrar tekrar ortalama yaparak sıkıntı ortaya çıkabilir. Siz bunu ayrı bir değer olarak da yapabilirsiniz. Öncelikle bu kısmı bir sorgu şeklinde getirin. Bunu bir değişken atayım. X gibi değişken, sonra o X gibi değişken, sahip değişkenler bunu da çıkarabilirsiniz.
+
+435
+01:25:04,216 --> 01:25:09,395
+Nasıl bir şekilde insertion da yapılabilir? Insertion dediğimizde veri kayıdı eklemek.
+
+436
+01:25:10,163 --> 01:25:24,983
+Veri kayıdı eklerken şu oluyor, eğer o tabloda bütün kolonlara karşılık gelecek değerleri diyecekseniz, artık bunun içinde kolon ismini belirtmenize gerek yok.
+
+437
+01:25:25,503 --> 01:25:35,083
+Yani eğer bütün course tablosundaki 4 kolona da iş yapacaksam, bunu ayrıca yazmama gerek yok.
+
+438
+01:25:35,347 --> 01:25:50,407
+direkt insert into course derim, burada bütün değerleri yazarım. Ama buradan şunu yapmamış olsaydık, database system dediğimiz title bilgisine girmemiş olsaydık, bu durumda tam olarak çalışmazdı.
+
+439
+01:25:51,528 --> 01:26:01,708
+Ne olacak bu bölüm? Eğer burası nullable ise, yani null olamıyorsa, herhangi bir şey eklenemeyecekti.
+
+440
+01:26:02,420 --> 01:26:08,520
+Eğer null değer alabiliyorsa, mesela siz buna null verisi girebilirsiniz.
+
+441
+01:26:09,299 --> 01:26:12,840
+Bunu girmiyorsanız, o noktada hata alırsınız.
+
+442
+01:26:12,840 --> 01:26:18,680
+Yani, üç tane kolon girişi yaptınız ama o tabloda dört tane kolon var.
+
+443
+01:26:19,079 --> 01:26:24,100
+Hangisi hangisine denk gelecek, bu tarz tablo ismi belirttiğimiz zaman anlaşılmıyor.
+
+444
+01:26:25,000 --> 01:26:26,299
+Bu da hata çıkarır.
+
+445
+01:26:26,707 --> 01:26:32,847
+O yüzden belirtmeniz lazım. Tablodaki kolon isimlerini belirtmeniz lazım.
+
+446
+01:26:35,627 --> 01:26:41,487
+Bu Null işi eğer bilmiyorsanız, ben daha sonra bunu değiştireceğim diyorsanız, o zaman Null girebilirsiniz.
+
+447
+01:26:41,727 --> 01:26:46,287
+Ama şuna dikkat etmek lazım. Bu kredit kolonunun Nullable olması lazım.
+
+448
+01:26:46,647 --> 01:26:49,307
+Eğer Null olamıyorsa, Null girerseniz ne olur?
+
+449
+01:26:51,060 --> 01:26:57,560
+Hatta adırsınız. Size database diyecektir ki bu kolonla girilemez bir değer girmek zorundasınız.
+
+450
+01:27:00,979 --> 01:27:10,539
+INSERT işlemini siz bir SELECT sorgusuyla da yapabilirsiniz. Bu sorgu karmaşık da bir sorgu olabilir, basit bir sorgu da olabilir.
+
+451
+01:27:11,459 --> 01:27:20,299
+Mesela buradaki örnekte biz bütün bu 4 kolon bilgisine gidiyoruz ama INSERT INTO'da sadece tablo ismini belirtmemiz yeterli.
+
+452
+01:27:21,019 --> 01:27:24,179
+Sonrasında SELECT öğrenci tablosundan.
+
+453
+01:27:24,564 --> 01:27:41,244
+Müzik bölümünde ve kredi sayısı 114'dan fazla olan öğrencileri insert etsin diye bir sorgu yapıyorum. Bu da kaç tane öğrenci varsa bu şartı sağlayan insert işlemi gerçekleştirdik.
+
+454
+01:27:45,587 --> 01:27:55,407
+Şey de yapabilirsiniz, eğer iki tablo birbiriyle uyumluysa, yani Instructor tablosu, SQL tablosu birbirinden farklı olabilir.
+
+455
+01:27:55,407 --> 01:28:07,807
+Ama Instructor tablosuna, Instructor tablosuna insert yapıyorsanız ve aynı kolon isimleri tabii ki örtüşeceği için burada SELECT, STARD diyebilirsiniz.
+
+456
+01:28:11,060 --> 01:28:37,460
+Çünkü bir aynısı olacaktır. Ama eğer isimler örtüşmüyorsa orada bir problem olacaktır. Mesela farklı bir tabloda, farklı bir tablo yapıyorsanız orada bir problem olacaktır. Bir de isim olarak kolonu belirtmeniz gerekir. Yani diyelim ki SELECT, bu soru biraz geniş bir soru olsun. İki tane ID kolonu geliyor.
+
+457
+01:28:38,195 --> 01:28:41,036
+Bu tablo ile birlikte.
+
+458
+01:28:42,456 --> 01:28:48,695
+Ama insort tablo dediğimiz zaman iki tane ID var. Hangisini kullanacağım diye hata verecektir.
+
+459
+01:28:49,435 --> 01:28:54,615
+Dolayısıyla o sorguda her birisi birer tane değer getirecek şekilde yapmak lazım.
+
+460
+01:28:54,735 --> 01:28:58,235
+O yüzden star kullanmayın. Bunu çok önermiyorum.
+
+461
+01:28:59,615 --> 01:29:04,556
+Yani tablo isimlerini birebir olarak yazmanızda fayda var. Özellikle insort işlemi yaparken.
+
+462
+01:29:09,811 --> 01:29:32,252
+Güncellemeyi de update ile yapıyorsunuz. Update sorguları çok yaygın bir şekilde yapacağınız bir işlemdir. Update ederken de şuna dikkat etmek lazım. Eğer şartları düzgün belirtmezseniz bazen yanlışlıkla bütün kolon değerlerini update edebiliyorsunuz. Ona dikkat etmekte fayda var.
+
+463
+01:29:33,587 --> 01:29:44,948
+Update ve Delete ve Insert işlemi yapmadan önce size şunu öneririm. Öncelikle bunun SELECT versiyonunu yazın. Mesela diyelim ki böyle bir sorgunuz var.
+
+464
+01:29:56,787 --> 01:30:09,527
+Ne yapmaya çalışıyorsunuz? Maaşı, 7000'den küçük olan hocaların maaşlarını %5 zam verdiniz gibi bir örnek var.
+
+465
+01:30:10,147 --> 01:30:19,127
+Bu, bütün hocalarımı etki edecek, bütün değerlerimi etki edecek, hangi satıları etki edecek, biraz görmekte zorlanabilirsiniz.
+
+466
+01:30:20,047 --> 01:30:23,747
+O yüzden, bunun bir önce SELECT versiyonunu yazın.
+
+467
+01:30:24,500 --> 01:30:52,039
+Mesela SELECT, INKİ, SALADY. Hatta bunun yanında SALADY çarpılmış versiyonunu da görebilirsiniz. Sonra FROM, INSTRUCTURE. Bu size kaç satır etkilemesi gerektiğini gösterecek. Kaç satırın değişeceğini gösterecek. Sonra aynısını, text statement'a yazarsınız. Burada gerçekten hafif edilince aynı satırlar mı etkilenmiş, onu da etkilenen açısından faydası.
+
+468
+01:30:52,659 --> 01:31:03,319
+Update işlemi iki aşamalı. Bir tablonun ismini yazmanız lazım. Update ile birlikte, iki, edeceğiniz ya da güncelleyeceğiniz değer yazmanız lazım.
+
+469
+01:31:05,199 --> 01:31:11,340
+Set ile birlikte birden çok kolonda güncelleme yapabilirsiniz. Mesela bunu şöyle diyebilirsiniz.
+
+470
+01:31:11,939 --> 01:31:18,059
+Salary işte %5 alsın, ondan sonra başka bir kolon daha olsun.
+
+471
+01:31:21,524 --> 01:31:28,864
+Ne diyelim, Promotant gibi bir konumuz daha var. O da True Olsun.
+
+472
+01:31:32,595 --> 01:31:38,335
+Bunları, şartları virgüllerle çoğaltabilirsiniz. Yani birden çok kolonu güncelleyebilirsiniz.
+
+473
+01:31:39,295 --> 01:31:51,015
+Ama bu ver kılazı her şart için geçer olacaktır. Yani o satır bulacak, satır sayılarını bulacak şartları sağlayan, sonra oradaki kolonları güncelleyeceksiniz.
+
+474
+01:31:51,675 --> 01:31:56,995
+Aynı satır üzerinde birden çok sütün güncelleyebilirsiniz aynı anda ya da tek bir sütün güncelleyebilirsiniz.
+
+475
+01:32:00,435 --> 01:32:03,415
+Söyleyebilirsiniz. Bunu mesela bir diye de yapabilirsiniz. Bilmiyorum.
+
+476
+01:32:06,775 --> 01:32:14,075
+Klaus'u değiştireceğiniz kolon ismiyle aynı olması lazım.
+
+477
+01:32:14,615 --> 01:32:22,115
+Sol taraftaki işlem kolonun ismi olarak gösterilen kolondur.
+
+478
+01:32:22,804 --> 01:32:30,283
+Sağ tarafta sadece 500, 1000 artı gibi bir şey de yapabilirsiniz. İlla aynı konu kullanmak durumunda değilsiniz.
+
+479
+01:32:31,144 --> 01:32:47,743
+Bunu başka isimlerle, başka versiyonlarla yapabilir miydiniz? Yapabilirdiniz. Bu mesela ne yapıyor? Bütün hocalara %5 zam yapıyor. O sadece 70 bin'den azalanları %5 zam yapıyor.
+
+480
+01:32:48,159 --> 01:32:52,880
+Bu ise ortalamadan az alan kucaları %5 san yapıyor.
+
+481
+01:32:52,880 --> 01:33:00,560
+Burada ne yapıyoruz? Yine salerik kolonunu gördüğümüz gibi burada duruyor. Ortalama istiraklara gidiyoruz. Ortalama saleri kaç?
+
+482
+01:33:00,560 --> 01:33:05,228
+İşte 50.000'den küçük alanlara sadece %5 san yapıyor.
+
+483
+01:33:10,420 --> 01:33:17,060
+İki tane sorgu şeklinde de yazabilirsiniz, update şeklinde de yapabilirsiniz.
+
+484
+01:33:17,060 --> 01:33:28,060
+Mesela bu sorgumuz şu olsun, hocaların 100 binden fazla alan hocaları %3, diğer geri kalanına da %5 tane yapar.
+
+485
+01:33:28,680 --> 01:33:32,180
+Gibi bir sorgumuz olsaydı.
+
+486
+01:33:33,220 --> 01:33:34,260
+İkinci sorgu ne yapıyor?
+
+487
+01:33:35,039 --> 01:33:36,060
+Öncelikle...
+
+488
+01:33:36,095 --> 01:33:45,695
+100.000 alanlara %3 yapıyor. Dolayısıyla zam yaptık, %3. Ama maaşı %100.000'den fazla olanlara.
+
+489
+01:33:47,595 --> 01:33:53,435
+Sonrasında maaşı 100.000'den bitmeyen düşük olanlara %5 yapıyoruz.
+
+490
+01:33:54,495 --> 01:33:59,115
+Bunu önce, şunu sonra yapsaydık, sorun ortaya çıkardı.
+
+491
+01:33:59,859 --> 01:34:24,639
+Hocam, maaşlar artmış olacaktı zaten, 100.000'i geçecekti. 100.000'i geçenlere bir daha ikinci bir %100 zam yapacaktık. Bu sıkıntılı bir sonuç ortaya çıkarırdı. Bu şekilde çalışır ama bunu daha iyi bir şekilde yapmak mümkün.
+
+492
+01:34:25,460 --> 01:34:37,099
+Bunu yapmak için de bir case statement ya da case ifadesi kullanmak gerekiyor. Case de çok faydalı bir şeydir. Onu da isterseniz nasıl çalıştırmayı gösterelim.
+
+493
+01:34:38,539 --> 01:34:42,099
+Case aslında switch...
+
+494
+01:34:42,195 --> 01:34:58,215
+Var ya işte programlama dillerinde, Switch Case gibi, işte Java'da, C++'da kullanırız ya, Case, işte bu değerse, Switch'in içinde, Case 1 ise bunu uygula, Case 3 ise şunu uygula. Aynı mantık, bunun SQL versiyonu.
+
+495
+01:34:59,435 --> 01:35:06,615
+Çalışma yöntemi şu şekilde, biz marj değerini hesap edeceğiz.
+
+496
+01:35:23,956 --> 01:35:31,976
+Bu arada yazma işleminde böyle yazdığınız zaman bunlar çok iş işe girebiliyor. Genel pratik kullanım açısından şey öneririm.
+
+497
+01:35:32,676 --> 01:35:44,556
+Boşlukları, aynı şeyde çalışacak sorguları, aynı seviyede çalışacak sorguları, boşlukları da ona göre ayarlarsanız okunabildiğini artırırsınız.
+
+498
+01:35:45,216 --> 01:35:50,976
+O yüzden mesela şunu öneririm. Bu çalışır ama bunun yerine parantez kullanmanız daha iyi olur.
+
+499
+01:35:52,500 --> 01:35:54,340
+Önce okunabilirliği daha artıyor.
+
+500
+01:35:55,479 --> 01:36:01,779
+Şimdi bakalım, biz maaşı güncelleyeceğiz. Ama maaşı neye göre güncelleyeceğiz?
+
+501
+01:36:01,859 --> 01:36:06,140
+Bir şarta, bir condition'a göre güncelleyeceğiz. Hocaların, bütün hocaların.
+
+502
+01:36:06,720 --> 01:36:10,619
+Bu update, gördüğümüz gibi burada bir ver klasumuz yok.
+
+503
+01:36:11,479 --> 01:36:15,399
+Herhangi bir filtreleme uygulamıyoruz. Yani bütün hocaların maaşı değişecek.
+
+504
+01:36:15,956 --> 01:36:20,836
+Ama değişme şartlarını hocanın maaşına göre belirleyebilirim.
+
+505
+01:36:21,195 --> 01:36:26,155
+Burada da case ifadesi oldukça faydalı bir şekilde kullanılıyor.
+
+506
+01:36:27,916 --> 01:36:41,876
+Case şunu yapıyor, eğer hocanın maaşı, hatırlarsanız, işte Java'da switch, diyelim ki switch, S, pardon.
+
+507
+01:36:43,764 --> 01:36:49,564
+Aslında bu sorgunun birebir karşılığı gibi düşünemiyorsunuz. Switch nasıl çalışıyordu?
+
+508
+01:36:49,564 --> 01:36:53,364
+Case, 100 mesela.
+
+509
+01:36:56,144 --> 01:36:57,924
+Burada bir işlem yapıyorsunuz.
+
+510
+01:36:58,124 --> 01:37:02,444
+Sadece eşittir, çarpı.
+
+511
+01:37:02,824 --> 01:37:05,944
+Bu switch case de eşitlik oluyor. Biz büyüktür, küçüktür istedik ama.
+
+512
+01:37:06,899 --> 01:37:09,539
+Switchcase'de ne oldu anlamadım.
+
+513
+01:37:10,079 --> 01:37:15,699
+Eşit olduğu durumlara bakıyor sadece şu an. Saleri 10.000 ise bir işlem yapıyor. Yani büyüktür, küçüktür şeklinde değil şu an.
+
+514
+01:37:17,720 --> 01:37:19,500
+Bu işçisi sorgulmuyoruz.
+
+515
+01:37:19,579 --> 01:37:21,220
+Bak hocam, Java versiyonu verdiğinizde.
+
+516
+01:37:21,420 --> 01:37:31,659
+Java versiyonu, aynen aynen. Burada sadece eşittir. Evet. Bunu şey diyebiliriz. Saleri büyük gibi. Aynen. Veya işte burada.
+
+517
+01:37:34,484 --> 01:37:36,444
+Yapma böyle aslında, bunun gibi düşünün.
+
+518
+01:37:41,747 --> 01:37:44,027
+Burada, case, salary.
+
+519
+01:37:45,307 --> 01:37:47,287
+Default derseniz zaten, ikinci kısmı.
+
+520
+01:37:47,507 --> 01:37:48,847
+Aynen, burada böyle oluyor.
+
+521
+01:37:48,847 --> 01:37:52,407
+Ama örnek zaten ikinci kısmı yok.
+
+522
+01:37:52,527 --> 01:38:01,887
+Ama bunun gibi çok sayıda, işte mesela 100.000 ile 150.000 arasında şu değer.
+
+523
+01:38:02,087 --> 01:38:04,127
+150.000 ile 170.000 arasında.
+
+524
+01:38:04,640 --> 01:38:15,420
+5 zam, 250 ile 250 arasında %1 zam gibi çok sayıda keyizimiz olsaydı, bunun gibi aslında böyle değer değer yapacaktık.
+
+525
+01:38:16,420 --> 01:38:17,260
+Bu gibi devam edecektik.
+
+526
+01:38:18,020 --> 01:38:21,360
+Mesela default değerimiz olsun. Burada default değere gerek yok.
+
+527
+01:38:22,940 --> 01:38:23,840
+Bu kadar böyle oluyor.
+
+528
+01:38:24,159 --> 01:38:26,520
+Burada işte sadece eşittir.
+
+529
+01:38:28,404 --> 01:38:52,304
+Aynı mantık. Yani switch'in içine girince bu sadece bir tane keyse karşılık edilir. Birden fazla keyse tekabül edemez. Bu da az önceki problemi engelliyor. Yani hem 100.000'in altında zam alıp hem de 110.000'un geçtiği için bir daha zam almasının engelleme durumu oluyor. Aynı mantık, switch'teki mantık bu keyseminin içine geçerli.
+
+530
+01:38:52,851 --> 01:39:05,691
+Bende sadece bir tane değere karşılık gelebilir. Burada aynı mantık, gördüğümüz bir case statementı geçiyor. Burada ben, ben, ben gibi şeyler var.
+
+531
+01:39:08,391 --> 01:39:11,591
+Şu olsaydı yüzünden küçük.
+
+532
+01:39:17,268 --> 01:39:18,328
+Doğlayı, pöbber mi?
+
+533
+01:39:23,347 --> 01:39:25,067
+Case 1'den fazla destekliyor mu ki?
+
+534
+01:39:25,407 --> 01:39:26,427
+Şey gibi, switch case gibi.
+
+535
+01:39:26,447 --> 01:39:27,007
+Destekliyor.
+
+536
+01:39:27,487 --> 01:39:32,067
+Switch gibi destekliyor. Case ben, case ben gibi yapabilsin. Hatta bunu şöyle yapabilirsiniz.
+
+537
+01:39:33,927 --> 01:39:38,927
+30 bine kadar.
+
+538
+01:39:39,367 --> 01:39:41,787
+5 bine kadar.
+
+539
+01:39:48,500 --> 01:39:55,859
+Şu an çakışma olur mu sizce? Olmaz hocam, sıra doğru çünkü küçükten büyüyor. Sıra doğru. Evet, sıra doğru. Küçükten büyüyor olduğu için çakışma olmaz.
+
+540
+01:39:56,679 --> 01:40:14,099
+Çünkü öncedekine bu şart sağlayacak değil mi? Şimdi 30.000'den küçükse otomatik olarak bu şart sağlanacak. Eğer bundan büyük, 30.000'den büyükse artık bu sağlanmıyor. Ve geçecek, üstüne geçecek.
+
+541
+01:40:14,368 --> 01:40:36,128
+İkincisi, eğer 50.000'li maaş olsaydı bu sağlayacak mıyım de? Evet, burası sağlayacak. Çünkü 70.000'den küçük. Birincisi zaten geçtik buraya gelmek için. Haliyle burası uygulanacak. Ama diyelim ki ben 90.000 maaş alan bir hocaysam, o zaman buna da pas geçiyor, buraya nef geliyor. Değil mi? Demek ki burası olacak.
+
+542
+01:40:36,528 --> 01:40:45,428
+120.000 alan bir hocanın olacaktı, 3'ün de pas geçecekti. Else, yani default yerine denk gelecekti. Artık 100.000'in üzerindeki bütün hocalar %3 olacak.
+
+543
+01:40:47,528 --> 01:40:54,808
+Aslında, sonuç olarak bu şartların dışında, case'in hepsini silip, böyle bir şey olmuş oluyor.
+
+544
+01:40:55,648 --> 01:41:01,768
+Yani, her hocaya göre, sonuç olarak, update, instructor, salary, 1.3 gibi.
+
+545
+01:41:03,636 --> 01:41:22,816
+Hoca 90.000 alıyorsa, sonuç ne oluyordu? Bu hoca için bu ifade oluyor. Eğer hoca, hiçbir günden az, fazla alıyorsa, onun sorgusu bu oluyor. Dinamik olarak değiştiriyor keynesi.
+
+546
+01:41:24,036 --> 01:41:31,236
+Hoca sadece bir kez, talebi anlamında zam alabilir bu ifadeye göre.
+
+547
+01:41:38,195 --> 01:41:52,115
+Aynen öyle. Yani ilk önce bunu sağlayan, aslında sıralı bir şekilde gider. İlk sağlayan sorguya girdiği zaman diğerlerini pas geçiyor. Zaten bu beni sağladığı zaman bunun karşısındaki diğer geldi. Diğerlerini bir daha teker teker geçmiyor.
+
+548
+01:41:53,336 --> 01:42:05,115
+Sağlayan sorgumuzu sağlıyor. Ama şöyle olsaydı, yeri değişik olsaydı, bu en başta olsaydı, bu durumda ne olurdu?
+
+549
+01:42:08,435 --> 01:42:13,815
+O zaman hepsi zaten, yani 100.000'den küçük olan her şey ilk başta görüldüğü için iki şey komple geçmiş oluyor zaten.
+
+550
+01:42:13,955 --> 01:42:18,515
+Aynen öyle. Bu hiçbir anlamı kalmazdı [öğrenci]'un dediği gibi. Bunun hiçbir anlamı yok.
+
+551
+01:42:18,655 --> 01:42:28,955
+Çünkü zaten 100.000'den, iki ifade de 100.000'den küçük olduğu için, tek 100.000'in altındaki her şey bunu sağlayacak.
+
+552
+01:42:29,235 --> 01:42:34,095
+Yani %3 zaman alacak dediği geri kalan her şey, geri kalanları da else içinde ne varsa onu sağlayacak.
+
+553
+01:42:34,707 --> 01:42:43,027
+Birinden yukarıdakilerde ELSI şartları salacaktı. Burada dikkat etmek lazım. Yani küçükken büyüğe gidiyorsanız, CASEMAN bu şekilde çalışır.
+
+554
+01:42:47,283 --> 01:42:55,883
+Bununla ilgili sanırım açık bir örneği daha yapalım. Bu CaseBend daha uygun bir yöntem. Conditional Update yapıyor.
+
+555
+01:42:57,403 --> 01:43:08,803
+Eğer tek bir değeriniz varsa, yani tek bir değerle bir karşılık yapıyorsanız, şey de yapabilirsiniz. CaseBend gibi yapmak için işçi sorguda yapabilirsiniz.
+
+556
+01:43:08,803 --> 01:43:11,243
+Yani Update içinde de işçi sorgu yapılabilir.
+
+557
+01:43:11,796 --> 01:43:35,136
+Diyelim ki toplam kredisi, bir güncellemek istiyorum. Toplam krediyi de bütün öğrenciler için toplam alması gereken krediyi hesap ediyorum. Bu bütün öğrencilere uygulanacak. Dolayısıyla gidiyorum burada. Öncelikle toplam kredi değerini hesap ediyorum. İçişe sorguda. Sonra bütün öğrenciler için bu değeri hesap ediyorum.
+
+558
+01:43:38,355 --> 01:43:55,415
+Onun dışında, eğer şey yapsaydık, SAMKREDI, bütün öğrencilerin için alması gereken, hesaplamak yerine, EZVAN şeklinde kullanabilirdik. SAMKREDI, NAL değilse, o zaman hesap et, NAL ise sıfır yazsın gibi.
+
+559
+01:43:55,415 --> 01:44:03,415
+Yani çünkü NAL geldiği zaman, burası boşluk olacaktır, NAL yazacaktır. NAL yazmak yerine sıfır yazmak istiyorsam, bu durumda...
+
+560
+01:44:03,760 --> 01:44:17,160
+Böyle bir case man işareti de yapabiliriz. Yani bu update'in içinde bir subquery yazılabilir. Ya da case man, case man gibi bir şekilde yazabiliriz.
+
+561
+01:44:19,280 --> 01:44:22,980
+Basit bir sorsa olan var mı? Araya geçmeden önce, ara vermeden önce.
+
+562
+01:44:25,220 --> 01:44:28,840
+Orada küçüktür büyüktür ne anlama geliyor? Text not to great, küçüktür büyüktür.
+
+563
+01:44:29,640 --> 01:44:30,220
+Burası mı?
+
+564
+01:44:30,739 --> 01:44:33,039
+Değilir oluyor aslında. Olmayanlar.
+
+565
+01:44:34,099 --> 01:44:35,039
+Is not line o zaman.
+
+566
+01:44:35,619 --> 01:44:42,019
+Aynen, is not line. Ama bu eşit. Is not null, null olmayan anlamına geliyor.
+
+567
+01:44:42,559 --> 01:44:52,119
+Büyüktür, küçüktür işareti. Bunun dışındakiler. F olmayanlar şeklinde. Yani is not F de diyebilirsiniz.
+
+568
+01:44:52,384 --> 01:44:55,203
+Ünlem eşittir de aynı anlamda değil mi?
+
+569
+01:44:55,203 --> 01:45:13,863
+Ünlem eşittir, aynen. Ünlem eşittir. Mesela SQL'de bunun karşılığı ünlem eşittir SQL Server'da. Bazılarına büyüklü küçüktür de yapabiliyorsunuz. Bu biraz sinsel alakalı ama aslında bunun karşılığı ünlem eşittir. Yani grade ünlem eşittir demek.
+
+570
+01:45:20,692 --> 01:45:23,412
+ve olmayanlar, P olmayanlar.
+
+571
+01:45:23,972 --> 01:45:28,231
+Demek ki, normalde deseydik, P olanlar, olmayanlar için ünlümeştir.
+
+572
+01:45:28,231 --> 01:45:31,632
+Bunun, şununla bir farkı yok.
+
+573
+01:45:36,884 --> 01:45:40,324
+Soru soran var mı arkadaşlar? Ara vermeden önce.
+
+574
+01:45:43,324 --> 01:45:46,003
+Tamam, sorunuz yoksa o zaman bir ara verelim.
+
+575
+01:45:47,324 --> 01:45:53,024
+Saat 3'te de kaldığımız yerden devam edeceğiz. Yeni bir kısmında SQL ile devam edeceğiz.
+
+576
+01:45:54,463 --> 01:45:56,644
+O zaman, sonra görüşmek üzere.
+
+577
+02:00:45,171 --> 02:00:52,151
+Merhaba arkadaşlar. Şimdi kaldığımız yerden devam edelim. Ekran görüntüm geldi mi?
+
+578
+02:00:54,431 --> 02:00:55,291
+Geldi hocam.
+
+579
+02:00:55,811 --> 02:01:09,171
+Teşekkürler. Şimdi başlayalım isterseniz. SQL üzerinden devam ediyoruz. Biraz daha ileri kavramları konuşmaya başlayacağız. Özellikle...
+
+580
+02:01:10,931 --> 02:01:29,591
+Konuşmak gerekirse JOIN'lerden bahsedeceğiz. View'lar, transaction'lar, integrity kısıtları, SQL veritipleri, şemalar, indeksler ve yetkilendirme dediğimiz kısımları konuşacağız. İlk olarak JOIN'lerden başlayalım.
+
+581
+02:01:31,667 --> 02:01:40,327
+SQL'de JOIN operasyonu birden çok tablonun ya da birden çok ilişkinin bağlanması için kullanılan yapıdır.
+
+582
+02:01:41,148 --> 02:01:49,427
+JOIN'ler de hatırladığınız gibi FROM isminde, FROM kısmında, FROM klasının bir parçası olarak oluşturulabilir.
+
+583
+02:01:49,427 --> 02:01:58,447
+JOIN'leri siz direkt tabloya da bağlayabilirsiniz ya da bir iç içe sorgunun parçası da JOIN olarak.
+
+584
+02:01:58,868 --> 02:02:01,608
+sorguya dahil edilebiliyor.
+
+585
+02:02:03,428 --> 02:02:06,608
+JOIN'ler de kendi arasında birkaç parçaya ayrılır.
+
+586
+02:02:08,308 --> 02:02:12,088
+Natural JOIN dediğimiz bir JOIN tipi var.
+
+587
+02:02:12,508 --> 02:02:15,968
+Inner JOIN ya da Outer JOIN dediğimiz JOIN'ler var.
+
+588
+02:02:16,968 --> 02:02:25,528
+Outer JOIN de kendi içinde Left JOIN, Right JOIN, Full Outer JOIN gibi isimlerle isimlendirilebiliyor.
+
+589
+02:02:26,836 --> 02:02:32,856
+Şimdi isterseniz ilk olarak natural join nedir? SQL'de neye karşı geliyor? Bunu konuşalım.
+
+590
+02:02:34,016 --> 02:02:53,336
+Natural join şu oluyor, birden çok ilişkide, ortak, birden çok tabloda, ortak isimde en az bir tane kolon varsa, bu kolon üzerinde otomatik olarak bunları birleştirir.
+
+591
+02:02:53,728 --> 02:03:06,588
+Şöyle örnek verelim. Eğer siz tablolara isim vermiyorsunuz, yani join isimlendirmiyorsanız, bu natural join olarak zaten çalışıyor.
+
+592
+02:03:07,508 --> 02:03:15,528
+Mesela iki tane tablomuz var, student tablomuz ve text tablomuz. Buradaki student ID'leri de text ID'leri de eşit.
+
+593
+02:03:22,484 --> 02:03:48,984
+Burada teksten gelen ne? Instructor ID'si ve o dersin ID'si, o dersin kimlik bilgisini yansıtmak istiyorum. Böyle bir sorgumuz olsaydı, birinci tablo, birgül, ikinci tablo demekle onun arasında student, natural join, text demek arasında bir fark yok.
+
+594
+02:03:50,036 --> 02:04:06,356
+Natural Join şu oluyor, eğer iki tablo arasında aynı isimde kolon varsa, burada aynı isimde kolon ne var? ID kolonu her iki tarafta da aynı. Dolayısıyla Natural Join otomatik olarak bu kolon üzerinde çalışır.
+
+595
+02:04:09,300 --> 02:04:34,960
+Şuna dikkat etmek gerekiyor, National Join'in çalışabilmesi için iki tabloda da aynı isimle ve aynı veri tipiyle eşlenik uyumlu kolon olması lazım. Böyle bir isimlendirme yapılmamışsa National Join çalışmaz. Yani şunu söyleyeyim, sol taraftaki ID kolon olabilir, sağ taraftaki de Instagram ID'si olsaydı.
+
+596
+02:04:35,796 --> 02:04:51,436
+Bu ikisi aynı veri olabilir ama isimlendirmesi aynı değilse bu kolon bunu diğer tablodaki kolona eşlenik olmaz. Natural join çalışmaz. Bu açıdan buna dikkat etmek lazım.
+
+597
+02:04:57,332 --> 02:05:14,192
+[öğrenci]'ın sorusu da önemli. Natural Join'de birden çok kolon varsa birden çok kolonu eşleştirip yapıyor. Eğer orada sadece buna göre yapsın demiyorsanız hepsi örtüşen bütün kolonlara göre eşittir işareti oluyor. Bu da dikkat edilmesi gereken başka bir noktası.
+
+598
+02:05:21,152 --> 02:05:39,131
+isim vermiyorsanız, o zaman orada NATURAL JOIN olduğunu varsaymanız gerekiyor. Eğer kolon isimleri birebir örtüşüyorsa, birden çok kolon da olabilir, örtüşüyorsa, o zaman o kolonlar üzerinde bu işlem gerçekleşir.
+
+599
+02:05:39,551 --> 02:05:46,891
+Hocam, birden fazla NATURAL JOIN kullanırsak, bu yeni gelenler ilk tablo ile mi işlenecek, yoksa hepsi birbiriyle mi?
+
+600
+02:05:47,507 --> 02:05:50,927
+Hepsinde ortak varsa, hangisinde ortaklar varsa, diyelim ki şu.
+
+601
+02:05:52,587 --> 02:05:57,807
+Birinci tablo, natural join, ikinci tablo. Birinci tablo ile ikinci tablo da örtüşenler.
+
+602
+02:05:58,448 --> 02:06:02,047
+Üçüncü tablo, bu ikisiyle örtüşenler gibi böyle çoğalıyor.
+
+603
+02:06:03,007 --> 02:06:09,427
+Ama bu kafa karışıklığına yol açabiliyor. O yüzden natural join, implicit join işlemi yapıyor.
+
+604
+02:06:09,528 --> 02:06:14,248
+Implicit dediğimiz, kendi kendine arka planda örtüşmelere göre yapıyor.
+
+605
+02:06:14,644 --> 02:06:23,464
+Ama bu çok doğru bir yaklaşım değil. Sizin beklemediğiniz kolonlarla sırf isim benzerliğinden yola çıkarak bir join işlemi yapabilir bu.
+
+606
+02:06:24,164 --> 02:06:34,724
+Bunun yerine ben genel olarak size inner join ya da outer join yapacaksanız, outer join işlemini yapmanız gerekir.
+
+607
+02:06:35,064 --> 02:06:38,804
+Aslında natural join ile inner join arasında bir fark yok. Tek fark şu.
+
+608
+02:06:38,804 --> 02:06:41,004
+Şöyle göstereyim.
+
+609
+02:06:51,123 --> 02:06:54,423
+Whiteboard'da. Elimizde birden çok olan var.
+
+610
+02:06:56,923 --> 02:06:57,683
+Sileyim.
+
+611
+02:07:05,235 --> 02:07:06,815
+Şimdi iki tane tablomuz var.
+
+612
+02:07:10,739 --> 02:07:12,239
+Bu da, sizinle student olsun.
+
+613
+02:07:16,212 --> 02:07:22,532
+Burası da, işte, Korsos.
+
+614
+02:07:25,032 --> 02:07:25,972
+Evet, X.
+
+615
+02:07:29,779 --> 02:07:32,100
+Yani öğrencilerin aldığı dersleri gösteriyor.
+
+616
+02:07:33,300 --> 02:07:36,020
+Burada bir ID kolonu var.
+
+617
+02:07:38,180 --> 02:07:39,859
+Burada işte
+
+618
+02:07:40,579 --> 02:07:42,380
+Student ID
+
+619
+02:07:42,980 --> 02:07:44,659
+ve Course diyelim buna.
+
+620
+02:07:45,060 --> 02:07:47,060
+Course name ismi var.
+
+621
+02:07:47,140 --> 02:07:48,340
+Bir de burada
+
+622
+02:07:48,940 --> 02:07:50,060
+ne olsun
+
+623
+02:07:50,420 --> 02:07:51,859
+Semester
+
+624
+02:07:53,699 --> 02:07:54,827
+Semester, bilgisayar.
+
+625
+02:07:57,171 --> 02:08:07,171
+Burada bir ID var. Öğrencin, name olsun. Bir de apartment.
+
+626
+02:08:13,716 --> 02:08:15,776
+SELECT.
+
+627
+02:08:19,412 --> 02:08:27,811
+Start from, Dilim, Student, Virgül, X.
+
+628
+02:08:30,836 --> 02:08:32,536
+Herhangi bir fikre uygulamadım.
+
+629
+02:08:34,815 --> 02:08:38,355
+Bunun sorgusunun türü şöyle bir şey olacak, bir ikisini bileştirecek.
+
+630
+02:08:40,095 --> 02:08:40,695
+Ortak.
+
+631
+02:08:44,275 --> 02:08:57,676
+ortak kolonları üzerinden birleştirecek. Yani buradan ID var.
+
+632
+02:09:02,579 --> 02:09:03,619
+Name var,
+
+633
+02:09:06,100 --> 02:09:06,680
+Department,
+
+634
+02:09:07,720 --> 02:09:08,220
+Name,
+
+635
+02:09:11,636 --> 02:09:13,316
+ID'yi bir tane yazacak mı sizce?
+
+636
+02:09:22,068 --> 02:09:25,028
+Hocam, buradan o JOIN kullanmıyoruz değil mi şu an?
+
+637
+02:09:25,887 --> 02:09:28,268
+Aslında bura kullanıyoruz. Burası Natural JOIN.
+
+638
+02:09:33,427 --> 02:09:36,507
+Bunu yazmakla ilgili yok. Arkadaşlar, bir fark bu. Bu iki tane şey.
+
+639
+02:09:43,444 --> 02:09:46,704
+Birbiri yazmakla buraya şunu demek aynı şey.
+
+640
+02:10:06,612 --> 02:10:09,952
+Şimdi, bunu, National Join ile,
+
+641
+02:10:18,579 --> 02:10:20,000
+Aslında Enerjoin,
+
+642
+02:10:24,532 --> 02:10:28,572
+Birkaç fark var. İsterseniz onları konuşalım.
+
+643
+02:10:28,692 --> 02:10:33,332
+Inner join, her iki tarafta da olan kolon üzerinden olur.
+
+644
+02:10:33,692 --> 02:10:38,852
+Inner join'de siz explicit olarak ya da dışsal olarak yazmanız lazım.
+
+645
+02:10:38,852 --> 02:10:41,652
+Hangi kolonda birleştireceksiniz.
+
+646
+02:10:42,072 --> 02:10:45,492
+Şimdi aynı şeyi biz şeyde yazmış olsaydık.
+
+647
+02:10:46,812 --> 02:10:47,732
+Inner join'i saydık.
+
+648
+02:10:52,083 --> 02:11:06,484
+JOIN, TEXT, şimdi INNER JOIN'de bu şartı belirtmeniz lazım. Hangi kolonların birleşeceğini yazmamız lazım. Onun için de 10 kullanıyorsunuz.
+
+649
+02:11:19,444 --> 02:11:24,064
+Yani bu kısmı belirtmeniz lazım. Hangi konuda bu birleşme işlemi gerçekleşecek?
+
+650
+02:11:24,064 --> 02:11:32,344
+Bir de Natural Join ile Inner Join arasında gösterim, yani sonucun gösterimi arasında bir fark var. O da şu.
+
+651
+02:11:37,460 --> 02:11:46,679
+İnerJoin, ikinci kart kısmı burası, İnerJoin, bu birinci kısımda, sonuçları olsun, ID yazıyor, name,
+
+652
+02:11:50,228 --> 02:11:50,948
+Department.
+
+653
+02:12:12,564 --> 02:12:35,083
+Mesela bunun birincisi, star derseniz, hepsini ID, ID getirir, aynısını da getirir. Star değil de bunları yazmış olsaydınız, işte s.id as bir değer, sonra s.name, s.departmentname, t.id as text ID diyebilirsiniz, gibi gibi yazabilirdiniz. Star derseniz, birebir aynısını dair.
+
+654
+02:12:42,484 --> 02:13:07,484
+Yani Natural Join ile Inner Join büyük oranda aynı şey. Ama birkaç farkı var. Natural Join'de eşlenik kolon aynı isimde, aynı tipte kolon varsa veya kolonlar varsa orada siz Join'de bunları yazmak zorunda değilsiniz. Otomatik olarak kendiniz uygulanır. Ama Inner Join'de bunu yazmak zorundasının isimler aynı olsa da Natural Join'de
+
+655
+02:13:07,488 --> 02:13:19,488
+Aynı isimde kolon varsa bunlar tekrar etmeyen şekilde sonuçlar getirilir. Burada iki tane ID var, sadece bir tanesini getiriyor. Ama INNER JOIN'de getirilir.
+
+656
+02:13:19,488 --> 02:13:27,488
+Onun dışında da, mesela INNER JOIN'de biz burada bir kolonda ID olsaydı,
+
+657
+02:13:31,155 --> 02:13:43,155
+Burada da diyelim ki CID, İngilizce olsaydı yani SID. Ya da diyelim ki bu ID yerine de StudentID olsaydı.
+
+658
+02:13:45,155 --> 02:13:53,155
+İşte buradan NaturalJoin çalışmazdı. Çünkü ikisi arasında aynısında bir kolon yoktu. Dolayısıyla bulamayacaktı.
+
+659
+02:13:53,155 --> 02:13:57,155
+Ama InnerJoin'de siz bunu diyebilirsiniz.
+
+660
+02:13:58,163 --> 02:14:04,743
+SELECT, SID ile işlendirdiğim şey, T'deki T.StudentID aynı şey.
+
+661
+02:14:06,563 --> 02:14:08,243
+İzlediğiniz için de yazabiliriz.
+
+662
+02:14:08,823 --> 02:14:13,803
+Hocam, TİK tavlosunda zaten foreign key olduğu için, yani zaten StudentID demek daha iyi olmaz mı?
+
+663
+02:14:15,283 --> 02:14:22,683
+Bence öyle demek lazım. Zaten size önerim de o olur. Aynı isimlerle yazmak çok doğru değil.
+
+664
+02:14:23,188 --> 02:14:35,228
+Burada student ID'de tek bir ID varsa o tablonun ID'si. Ama burada bir foreign key olarak ID varsa o foreign key'nin tablo ismiyle birlikte ID yazmak gerekiyor.
+
+665
+02:14:35,748 --> 02:14:45,388
+Name de aynı şekilde. Şimdi name'i burada yazdınız ve name burada varsa, bu name burada student neyse, öğrenciden gelen bir neyse, text içinde name gibi yazmamanız lazım.
+
+666
+02:14:45,908 --> 02:14:50,688
+Student name ya da department name gibi bir şey olması lazım. Mesela burada department değil, doğru bir şey.
+
+667
+02:14:51,123 --> 02:15:11,692
+Şimdi, department bir diğer tabloda name'dir. Bu arada name derseniz, bu şimdi departmentın mı name mi yoksa öğrencinin mi name? Bu karmaşıklık yaratıyor. O yüzden adlandırırken çok dikkatli davranmanız faydalı. Sorgularda bu karmaşıklıklar ortaya çıkabilir. O açıdan, natural join çok...
+
+668
+02:15:12,404 --> 02:15:21,264
+Doğru bir joinleme yöntemi değil. Yani ben size öneride bulunacak olursam, natural join değil, inner join.
+
+669
+02:15:21,844 --> 02:15:27,044
+Ya da outer join kullanmanız gerekiyorsa bunu böyle spesifik bir şekilde belirtmenizde fayda var.
+
+670
+02:15:27,524 --> 02:15:33,204
+Çünkü bu sorguları okurken unutacaksınız. Bu tabloda hangisi örtüşüyordu, hangisi örtüşmüyordu, çok ciddi bir problem.
+
+671
+02:15:34,836 --> 02:15:57,956
+Ve bunu hatırlamak durumunda da değilsiniz. Yani bu sorguları yazdınız, sizin dışınızda insanlar da kullanacak. Belki tablolar, başka view'larda referans verilecek. O açıdan natural join gibi, böyle bir gülüş gibi yazmak çok doğru bir yaklaşım değil. Yapılabilir, bazen işi sadeleştiriyor basit sorgularda. Ama karmaşık sorgularda başınıza bela açar.
+
+672
+02:15:58,579 --> 02:16:22,939
+Ona da dikkat etmek lazım. Uzun uzun yazın yani sorgularınız açık olsun. Okunabilirliği çok önemli. Inner join yazın, on yazın. Bunların isimlerini detaylı bir şekilde belirtin. Uzun vadede sizin için çok daha güvenli bir şey olacak. Okunabilirliğinizin, kutunuzun da okunabilirliğini yükseltecektir. Buna da dikkat etmek lazım. Çünkü natural join buradaki örnek mesela.
+
+673
+02:16:23,923 --> 02:16:34,843
+ID, name, department, name, public credit. Sağ tarafta da tags var. ID, course ID, section ID, semester ID, year ID gibi.
+
+674
+02:16:35,403 --> 02:16:42,004
+Şimdi buradaki ID ile buradaki ID aynı ama bu tags'in ID'si mi yoksa süreç'in ID'si mi?
+
+675
+02:16:42,923 --> 02:16:48,004
+Bu çok anlamak kolay değil çünkü aynı isim kullanıyorsunuz ama bunlar farklı tablolar.
+
+676
+02:16:48,691 --> 02:16:59,291
+Burada daha anlamlı ifades etmek için Student ID demek lazım. Ama Student ID deyince de bu ikisi aynı isimde olmayacak. Bu da bir problem.
+
+677
+02:16:59,291 --> 02:17:10,291
+Bu ikisini birleştirince, National Join dediğimiz zaman gördüğünüz gibi sadece bir tane ID kolonu getirdi. Geri kalan hepsini ayrı bir şekilde yazdı.
+
+678
+02:17:13,012 --> 02:17:16,851
+risk ve potansiyel problem barındırır.
+
+679
+02:17:18,972 --> 02:17:25,172
+Mesela buradaki örnekte olduğu gibi, bizim Natural Join diyoruz.
+
+680
+02:17:25,672 --> 02:17:32,031
+İşte Course ID, burada da Course ID'miz var.
+
+681
+02:17:33,172 --> 02:17:36,132
+Şimdi, 1 tane Join yaptığımız zaman,
+
+682
+02:17:37,731 --> 02:17:40,031
+Şimdi, Student Natural Join.
+
+683
+02:17:40,788 --> 02:18:02,788
+Bir tane ÇOJ, FORCE dediğimiz zaman nasıl bir problemle ortaya çıkabiliyoruz? Öğrencilerin listesiyle yani aynı isimdeki etmenler problem ortaya çıkarabiliyor. Çünkü bir defa öğrencinin diyemiyle şeyi ortadan çıkarabiliyor. Dersin ismi.
+
+684
+02:18:08,691 --> 02:18:22,671
+karışabiliyor. İkisinde de örtüşen, natural join, bunun dışında de natural join oluyor. Bu ikisinin de örtüşen kolonlarına göre yapıyor. Bunlar problem ortaya çıkarıyor.
+
+685
+02:18:23,331 --> 02:18:32,651
+Bunun yerine baya detaylıca açıklamanız gerekir. Hangisi, hangisinden geliyor, işte...
+
+686
+02:18:32,915 --> 02:18:40,155
+Hangi şartı sağlıyor? Inner Join'da bunu yaparsanız çok daha mümensiz bir şekilde bu işlemi yaparsınız.
+
+687
+02:18:41,376 --> 02:18:47,036
+Natural Join'da bunu da çözmek için Using Cloud'ını kullanabilirsiniz.
+
+688
+02:18:47,515 --> 02:18:50,935
+Bu tarz problemleri azaltmak için. Ama bu bile yeterli değil bence.
+
+689
+02:18:52,175 --> 02:18:53,495
+Yine okunabilir, düşülüyor.
+
+690
+02:18:53,971 --> 02:19:01,971
+Fusing'de de aslında 10 gibi hangi kolon üzerinde birleştireceğinizi yazıyorsunuz.
+
+691
+02:19:01,971 --> 02:19:10,971
+Student, NationalJoin, TX, VX'i önce birleştiriyor. Sonra bunu join ile Corsa yapıyor. Önce bu ikisi join deniyor.
+
+692
+02:19:10,971 --> 02:19:15,971
+Sonra bu sol taraftaki tabloyu sağ taraftaki Corsa join ediyor.
+
+693
+02:19:16,884 --> 02:19:25,423
+Burada da using Cloud'un içinde de course ID's, yani course'tan gelen course ID ve buradan eksten gelen course ID aynı şey.
+
+694
+02:19:25,423 --> 02:19:34,884
+Tek bir kolon üzerinden yapabilirsiniz. Sadece bir tane kolon, sizin belirttiğiniz kolon üzerinden birleşme yapılabilir.
+
+695
+02:19:34,884 --> 02:19:42,731
+Ama bu bile bir problem çünkü bu ikisi arasındaki işlem nasıl birleşti şu an sorgun içinde göremiyoruz. O tabloya gidip bakmanız lazım.
+
+696
+02:19:46,644 --> 02:19:52,804
+O yüzden benim genel önerim mümkün oldukça inner join kullanın.
+
+697
+02:19:53,203 --> 02:19:56,863
+Join olarak 10 kelimesiyle de yapabilirsiniz. Using yerine.
+
+698
+02:19:57,484 --> 02:20:02,824
+Natural join de. Inner join de aynı şekilde. Ama inner join de bunu yazmak zorundasınız.
+
+699
+02:20:03,703 --> 02:20:05,363
+Bu aslında bir inner join işlemi.
+
+700
+02:20:05,775 --> 02:20:17,095
+student, inner join, text, OM, student ID, text ID eşit. Burada gördüğünüz gibi bunların eklenik olanları yazılıyor.
+
+701
+02:20:17,775 --> 02:20:22,595
+Veya natural join gibi yazsaydınız bunu da WHERE klausunda yazmamız gerekirdi.
+
+702
+02:20:23,072 --> 02:20:33,832
+Bu durumda da sizin ID eşittir. Teksten gelen ID diye yazmanız lazım. Yazmazsanız ikisinde de aynı ID ismi olmadığı için bulamayacak. Hata çıkacak.
+
+703
+02:20:39,667 --> 02:20:53,407
+Yine aynı örneğin burada diğer bir, gerçi bu ikisi aynı örnekmiş. Tekrar etmiş. Bunun yanında bir de outer join var. Outer join'i daha önce duymuş muydunuz?
+
+704
+02:20:54,567 --> 02:20:57,448
+Hocam bu sağa sol yani, hangi tabloda karşılığı var sadece onu alayım.
+
+705
+02:20:58,247 --> 02:21:05,087
+Hemen öyle. Outer join tam olarak bunu yapıyor. Şimdi inner join ne yapıyordu? Aslında filtreleme uygulayalım.
+
+706
+02:21:06,260 --> 02:21:08,500
+EnerJoin filtreleme uygular.
+
+707
+02:21:09,299 --> 02:21:11,400
+O tarafta işte ID var.
+
+708
+02:21:20,180 --> 02:21:33,799
+Diyelim ki burada farklı farklı öğrenciler var ama işte ID'si 1, 1, 5 olsun, 1, 1, 3 olsun, 1, 1, 2 olsun. Böyle öğrenciler var. Bir de burada 1, 1, 0 olsun.
+
+709
+02:21:35,040 --> 02:21:42,240
+Şimdi bu tarafta, sağ tarafta da o öğrencilerin aldığı ders var.
+
+710
+02:21:44,724 --> 02:22:09,424
+İşte coğrafya dersini almış olsun, 115 matematik dersini almış olsun, 113 işletim sistemi dersini almış olsun, bir de 112 de mühya dersini almış olsun. Bütün dersler bunlar. 110. öğrenci herhangi bir ders almamış. Önem pas geçiyor.
+
+711
+02:22:10,260 --> 02:22:12,959
+Şimdi burada bir diğer join işlemi uygularsanız,
+
+712
+02:22:20,468 --> 02:22:31,668
+bir inner join'ı kuruladınız. Bu ikisi de olan südürünün daha tek size inner join yaptınız. Yani SELECT, STAR diyelim buna kısa yazmak için.
+
+713
+02:22:31,668 --> 02:22:32,468
+WRONG.
+
+714
+02:22:37,843 --> 02:22:57,263
+S, buna da T diyorum, on, S.ID, and ID.
+
+715
+02:23:01,075 --> 02:23:04,175
+Şimdi burada İNR JOIN sonucunda hangi satırlar bize gelecek?
+
+716
+02:23:06,495 --> 02:23:09,795
+110 gelmeyecek, diğerleri sağlı solu eşleşenler gelecek.
+
+717
+02:23:10,735 --> 02:23:14,895
+Aynen öyle, 110 dışındaki bütün sağda solda olan satırlar gelecek.
+
+718
+02:23:15,555 --> 02:23:18,855
+Yani 115'den kaç satır gelecek?
+
+719
+02:23:20,695 --> 02:23:21,395
+2 satır.
+
+720
+02:23:21,395 --> 02:23:22,695
+2 satır gelecek.
+
+721
+02:23:23,815 --> 02:23:26,255
+115, 115, 115.
+
+722
+02:23:27,827 --> 02:23:52,507
+Bunun ismi, soy ismi, her şeyi gelecek bu tablodan. Sonrasında 113 geldi bir kez. 112 gelecek ama 110 gelmeyecek. Çünkü 110 karşılığında diğer tabloda eflinik bir değer yok. Sadece bir tane tabloda değer varsa, inner join bunu filtreler, bunu dışarı atar, bunu getirmez.
+
+723
+02:23:53,012 --> 02:23:54,532
+sadece örtüşen değerler.
+
+724
+02:23:54,952 --> 02:23:58,472
+110 Nm'den 2 tane olduğu için 2 defa burası tekrar eder.
+
+725
+02:24:00,332 --> 02:24:01,572
+ETH, JOIN bunu yapıyor.
+
+726
+02:24:02,532 --> 02:24:10,932
+Ama bazı durumlarda biz sağ tarafta ya da sol tarafta boş olan değerleri de görmek isteyebiliriz.
+
+727
+02:24:12,032 --> 02:24:18,632
+Bu durumda ETH, JOIN değil, mesela bunu LEFT JOIN yapsaydık.
+
+728
+02:24:26,611 --> 02:24:51,831
+LEFT, AUTHOR JOIN. Bu arada LEFT JOIN de diyebiliriz. AUTHOR JOIN'i sinteks olarak yazmanız gerekiyor. Birçok veritabanı sisteminde AUTHOR yazmasanız da LEFT JOIN, RIGHT JOIN demekle LEFT AUTHOR JOIN demek arasında bir farkı. İkisini de kabul eder. Ama isterseniz kısaca LEFT AUTHOR JOIN diyebilirsiniz.
+
+729
+02:24:52,659 --> 02:25:06,000
+Left, Auto, Join yapsaydık. Şimdi satır getirecekti. 110 da gelecekti bu sefer. Toplam 5 satır. 5 mi 6 mi neyse artık. Sağ tarafta boş yani oralarda olmayacaktı.
+
+730
+02:25:06,860 --> 02:25:14,380
+Aynen. Az önce 4 satır geliyordu. Şimdi 5 satır gelecek. 5. satırda 110 da gelecekti.
+
+731
+02:25:16,819 --> 02:25:23,399
+Ama 110'un sadece sol tarafındaki bilgiler dolu, sağ taraftakiler nal gibi gelecektir değil mi?
+
+732
+02:25:24,319 --> 02:25:29,479
+Çünkü sağ tarafta buna karşılık gelen bir 110 değeri yok. Buradaki değerlerin karşılığı nal olacak.
+
+733
+02:25:29,699 --> 02:25:41,619
+Ama sol taraftaki tabloda nal değerleri yok. Çünkü bunun karşılığında 110'un değerlerini içeren bir tabloda satır ve sütun bilgileri var.
+
+734
+02:25:42,579 --> 02:26:00,439
+LEFT JOIN'ı ne oluyor? LEFT JOIN'ı şu ne yapıyor? Sol taraftaki bütün kayıtlar kesin gelecek. Bütün sol taraftaki kayıtlar gelecek. Sağ tarafla birleştireceğiz. Sağ tarafta boş da olabilir, bir kayıt da olabilir. Bunlarla eşitlik şekilde gelecek demek.
+
+735
+02:26:11,188 --> 02:26:12,487
+Right join olsaydı.
+
+736
+02:26:13,268 --> 02:26:18,308
+Bu inner line'ı çalışıyor şu an hocam. Sağ tarafta şey olmadığı için. Yani sağda olup solda olmayan olmadığı için.
+
+737
+02:26:19,507 --> 02:26:30,167
+Evet. Bu defa 4 tane satır gelecekti. Aslında inner'la aynı çalışacaktı. Çünkü sağ tarafta olup da sol tarafta olmayan yok.
+
+738
+02:26:31,252 --> 02:26:42,692
+Herkes otomatik olarak eşitlik. Sadece 110 sol tarafta var, sağ tarafta yok. Ama bunun benzeri şöyle bir şey olsaydı. Sağ tarafta, tabii öğrenci mantıksız oluyor ama...
+
+739
+02:26:42,692 --> 02:26:44,512
+Öğrenci sistemden silinmiş olabilir aslında.
+
+740
+02:26:44,891 --> 02:26:50,372
+Silinmiş olabilir, evet. Mesela 109 diye bir öğrenci var. Dersi almış.
+
+741
+02:26:51,028 --> 02:27:15,028
+Ya da kaçak almış. Son tarafta böyle bir öğrenci yok. Öğrenciyi sildik. Böyle 119 diye bir şey yok. Dolayısıyla burası boş. Bu durumda yine 5 tane satır gelirdi. Bu defa sağ tarafta buralar boş olurdu. Burada 109 ile ilgili dersle ilgilerini görürdük. Right Join'de bu şekilde çalışırdı.
+
+742
+02:27:19,252 --> 02:27:37,372
+RIGHT JOIN ve LEFT JOIN'da tabloların sırası önemli. Sağa ya da sola koyduğunuz tabloların sırası önemli. Şunu diyebilirsiniz, aslında RIGHT JOIN'a ya da LEFT JOIN'a gerek var mı? İki tane ayrı. Çok da gerek olmayabilir. Sadece yerlerini değiştirerek LEFT JOIN gibi kullanabilirsiniz.
+
+743
+02:27:37,372 --> 02:27:46,112
+Yani STUDENT TEX yerine TEX ve STUDENT'ın yerini değiştirip yine LEFT JOIN yapabilirdik.
+
+744
+02:27:46,739 --> 02:27:47,739
+Değil mi?
+
+745
+02:27:49,739 --> 02:27:51,739
+Aynı mantık olacak. Değişen bir şey yok.
+
+746
+02:27:51,739 --> 02:27:55,739
+Sadece tabloların yerlerini değiştirecektik.
+
+747
+02:27:55,739 --> 02:28:05,739
+Yani left join, right join yapmak yerine tabloların yerlerini değiştirseydik aslında sol left join, right join yerine geçecektik.
+
+748
+02:28:10,355 --> 02:28:11,695
+Bu da diğer bir şey.
+
+749
+02:28:14,076 --> 02:28:19,275
+Karşılık gelmeyenler NAL olarak ifade edilir. İsterseniz bunu bir örneğin daha yapalım.
+
+750
+02:28:20,155 --> 02:28:22,595
+İlişkilerimiz Course ve prerequisite.
+
+751
+02:28:23,315 --> 02:28:28,556
+Course'ta alınan dersler, burada ismi, bölümü, kredisi.
+
+752
+02:28:29,296 --> 02:28:34,835
+Requisite tablosunda da o derslerin bir öncül koşulu var mı?
+
+753
+02:28:38,227 --> 02:29:01,227
+bir yol, 101 almak gibi bir koşul varmış. CS190'ın 101 gibi, CS347'in ve CS101 gibi bir koşul varmış. Şimdi bu ikisini birleştirecek olsaydık, şimdi Kors'ta gördüğünüz gibi CS347'nin bilgisi yok. Burada bilgi yok. Aynı zamanda...
+
+754
+02:29:01,876 --> 02:29:13,115
+CS315 diye bir ön koşulumuzda, bunun da bir ön koşulu yok. Haliyle hem RightJoin hem de LeftJoin'i gösterebileceğimiz bir seçenek var.
+
+755
+02:29:13,115 --> 02:29:15,051
+Şimdi LeftJoin...
+
+756
+02:29:15,188 --> 02:29:19,988
+dediğimiz zaman, natural left join dediğimiz zaman artık bir daha olan ismi yazmamıza gerek yok.
+
+757
+02:29:20,108 --> 02:29:27,667
+İşte course ID'yi de önerilecektir. Ama natural yazmasaydık, left join, left out of join'i desettik, bunları belirtmemiz gerekecek.
+
+758
+02:29:27,827 --> 02:29:29,047
+Course ID eşittir.
+
+759
+02:29:32,108 --> 02:29:38,427
+Gördüğünüz gibi left join olunca sol taraftaki course ID, course içinde olanların hepsi tekrar yazılır.
+
+760
+02:29:38,427 --> 02:29:42,347
+Yani sol taraftaki course olduğu için, course'taki bütün...
+
+761
+02:29:42,739 --> 02:29:53,420
+satırlar yazıldı. Sağ tarafta 315 dersinin gördüğünüz gibi bir prerequisite yok. O yüzden orası null olarak geldi.
+
+762
+02:29:55,819 --> 02:30:03,639
+Diğer bir örnekte de outer join örneğine bakalım. Burada da sağdakinden yola çıkarak soldakini birleştiriyor.
+
+763
+02:30:03,639 --> 02:30:08,180
+Şimdi prerequisite tablosuna gidelim. Bütün bunlar yazılacak.
+
+764
+02:30:08,564 --> 02:30:35,963
+Bu prerikası değerleri olacak. Sol tarafta prerikası olmayan neydi? 315. Dolayısıyla sol tarafta 315 ile ilgili olan kısımlar nal gelecek. Gördüğünüz gibi 315 ile ilgili bir şey gelmedi. Çünkü sağ tarafta 101 şeyler var, sol tarafta 315 dersi, CS315 dersinin bir prerikası yoktu. Onu görmüyoruz.
+
+765
+02:30:38,067 --> 02:30:47,167
+Şimdi bir de full outer join dediğimiz bir örnek var. Full outer join de bu ikisinin de hem sağdan hem soldan birleştirilmesi.
+
+766
+02:30:47,167 --> 02:30:58,587
+Yani şu örnekte sağ tablosunda right join olduğu gibi bütün değerler var. Sol tarafta da left join olsaydı bütün değerlerin toplamı gelecekti.
+
+767
+02:30:59,108 --> 02:31:02,628
+Yani left join'de burada feririkası olmayan şu 15 vardı.
+
+768
+02:31:03,763 --> 02:31:21,675
+SALECT, WHERE, JOIN'de de CS101 dersleri vardı ama karşılık gelen 347'nin dersleri yoktu. Bu ikisinin birleştirilmesi gibi düşünüyoruz. Hem left join hem right join birlikte uygulanıyor gibi düşünüyoruz.
+
+769
+02:31:25,652 --> 02:31:37,971
+Bunun dışında, yani bahsettiğimiz gibi, inner join, jointlerimiz inner join, left outer join, right outer join, full outer join gibi okulabilir.
+
+770
+02:31:39,112 --> 02:31:44,231
+Şartlarımız natural join olduğu zaman, burada bir şey bilinmek zorunda değilsiniz.
+
+771
+02:31:44,811 --> 02:31:47,652
+Ya da bunu on ismini kullanarak...
+
+772
+02:31:47,904 --> 02:31:51,263
+bir ifade eşleniğini sağlayabilirsiniz.
+
+773
+02:31:51,864 --> 02:32:03,463
+Ya da using kelimesini kullanarak, işte, natural join ile birlikte A1 attribute'üne göre yap, A2 attribute'üne göre yap, ya da A1, A2'ye göre yap gibi şeyleri belirtebiliyorsunuz.
+
+774
+02:32:04,043 --> 02:32:09,324
+Bunlar da join operasyonlarının genel bir özeti olarak ifade edebiliriz.
+
+775
+02:32:12,115 --> 02:32:20,115
+Burada da örnekleri çoğaltmak istiyorsa, RIGHT JOIN ile FULL OUTER JOIN arasındaki farkı gözlemleyebilirsiniz.
+
+776
+02:32:20,716 --> 02:32:27,536
+Şimdi, RIGHT OUTER JOIN olduğu zaman, sadece sağ taraftaki tablo, yani rekustive tablosunu baz alıyor.
+
+777
+02:32:28,475 --> 02:32:32,335
+Buna göre sol taraftaki tablo duruyor ve bunlar eşitiyor.
+
+778
+02:32:33,155 --> 02:32:39,195
+FULL OUTER JOIN'ı hem sağa hem solu göz önüne alarak, gördüğünüz gibi satır sayısı da daha çoğalıyor.
+
+779
+02:32:41,940 --> 02:32:59,380
+Inner join tarafına bakacak olursak, burada da gördüğünüz gibi her ikisinde de olanları sağlayan koşulları içerdiği için, bu durumda sadece prekosit tablosunda bulunan, hem de course tablosunda bulunan konuları getiriyor.
+
+780
+02:32:59,380 --> 02:33:07,540
+Burada da gördüğünüz gibi daha az sayıda, yani null değeri olmayacak şekilde bu iki tabloyu eleştiriyor.
+
+781
+02:33:09,587 --> 02:33:26,707
+Bu da sol taraftaki left outer join örneğine göre yapılmış bir örnek. Left outer join de left tarafını baz alıyor. 315 dersi gördüğünüz gibi inner join şartını sağlamıyor. Çünkü onun bir prediklusif dersi yok.
+
+782
+02:33:30,772 --> 02:33:31,972
+Çet, vana.
+
+783
+02:33:36,628 --> 02:34:00,628
+[öğrenci]'in bir sorusu var. Alter joint için başına natural joint yazmazsak ve iki tabloda da aynı simli stonlar varsa hiçbir şeyi belirtmesek de onları baz alır. Evet, şimdi right joint, alter joint'lerde eğer belirtmezseniz natural olarak kabul ediyor. Aynısını da varsa yapar. Ama dediğim gibi bunu çok...
+
+784
+02:34:02,388 --> 02:34:16,708
+kullanmamak gerekiyor. Bu çok doğru bir çözüm olmayacaktır. Onun yerine LEFT ve RIGHT JOIN'ler yapıyorsanız, AUTHOR JOIN kullanıyorsanız, kesin ve kesin hangi kolonu kullanmanız gerekiyorsa onu belirtin.
+
+785
+02:34:17,008 --> 02:34:25,668
+Yani burada USING içinde, parantez içinde de yazabilirsiniz ama ya da direkt ON ifadesini kullanıp iki taraftakini de yazabilirsiniz.
+
+786
+02:34:25,668 --> 02:34:27,508
+Bence ON şeklinde yazın.
+
+787
+02:34:28,244 --> 02:34:39,884
+Sol taraftaki kolon ve tablo ismi, sağ taraftaki kolon ve tablo ismini belirterek bunu açık bir şekilde yazmamız aksi halde okunabilirliğini çok düşürüyor.
+
+788
+02:34:43,412 --> 02:34:45,731
+Buraya kadar sorusu olan var mı?
+
+789
+02:34:50,227 --> 02:34:50,947
+Bakayım.
+
+790
+02:34:56,067 --> 02:34:58,787
+Sanırım başka bir sorumuz yok.
+
+791
+02:35:00,367 --> 02:35:02,787
+O zaman bir de view'ları da konuşalım.
+
+792
+02:35:03,327 --> 02:35:06,127
+View'lar ne oluyor? View yapısı ne işe yarar?
+
+793
+02:35:07,567 --> 02:35:08,787
+Bu da önemli bir şey.
+
+794
+02:35:08,787 --> 02:35:17,007
+Şimdi view yapısı veritabanlarında birçok problemi çözmede bizim yardımcımız olarak kullanılan bir yapı.
+
+795
+02:35:18,036 --> 02:35:34,796
+View yapısı bir sorgunun sanal karşılığı gibi düşünebilirsiniz. Yani bir logik ya da bir mantığı bir sorgu şeklinde tabloya dönüştürecek şekilde bunu eklemeniz anlamına geliyor.
+
+796
+02:35:35,796 --> 02:35:42,135
+View mekanizmasının şöyle bir avantajı var. Şimdi benim elimde bazı tablolar var.
+
+797
+02:35:49,876 --> 02:35:53,056
+Şimdi bir veren tamamen, emploi et aldığımızda.
+
+798
+02:36:00,595 --> 02:36:03,376
+Çeviri ve işim, employece, tamam.
+
+799
+02:36:10,932 --> 02:36:26,452
+Burada ID, çalışanların, dedim ki burada TC kimlik numarası, 1000, onun dışında doğum yeri diyemiyorum, bir sürü bilgi. En sonunda da maaş bilgisi var.
+
+800
+02:36:29,299 --> 02:36:43,439
+Tablomuzda bu var. Bir personel işe alırken, işte ID'sini, TC kimlik numarasını, ismini, adresini, e-mail adresini, bütün bu detaylara sahip oluyorsunuz ve bunları veritabanına girdiniz.
+
+801
+02:36:44,559 --> 02:36:52,359
+Ama siz bu tablolardaki bütün bu bilgileri, mesela uygulamalarınız var, diyelim ki bir web uygulamanız var.
+
+802
+02:36:56,115 --> 02:37:12,675
+personellerin, işte, ne olsun, personellerin kaç saat mesai yaptığını, mesai yaptığını gösteren bir tablo.
+
+803
+02:37:14,056 --> 02:37:18,675
+Bu tabloda, ya da doğrusu böyle bir...
+
+804
+02:37:19,188 --> 02:37:30,047
+Toplamda işte [öğrenci] 70 saat mesai yapmış, [öğrenci] 30 saat, [öğrenci] 3 saat, [öğrenci] 4 saat gibi bir mesai tablonuz var ve bunları göstereceksiniz.
+
+805
+02:37:30,987 --> 02:37:33,827
+Kimler daha çok tabloda mesai yapmış.
+
+806
+02:37:35,427 --> 02:37:42,067
+Şimdi böyle bir uygulama için sizin bu employee tablosuna erişime ihtiyacınız var değil mi?
+
+807
+02:37:42,148 --> 02:37:44,628
+Çünkü personellerinizin isimleri bu employee tablosundan.
+
+808
+02:37:47,028 --> 02:38:08,188
+Bütün kolonları bu uygulama geliştiricilere veya buradaki uygulamaya açmak istemiyorsunuz. Bu çok doğru bir yaklaşım olmaz. Yani sizin elemanlarınızın bütün kimlik bilgisi, TC kimlik numarasını, kaç maaş aldığını diğer personellerin görmesini istemeyebilirsiniz.
+
+809
+02:38:11,347 --> 02:38:31,528
+Uygulamaları kullanacağı veya diğer personelere erişeceği tabloya, bütün tabloya erişim vermek yerine, buradaki erişimleri kısıtlarsanız bütün herkes veya belli personeli veya belli uygulamalara, bunun yerine bir view oluşturursunuz.
+
+810
+02:38:42,195 --> 02:39:00,776
+Employee view buradaki tabloyu kullanır ama bütün tabloları, diyelim ki buna as diyoruz, ID, Name, belki bir de E-mail. E-mail bilgisine sadece ihtiyacımız var.
+
+811
+02:39:08,788 --> 02:39:17,548
+Şimdi bu tabloda, bu tabloda çekilen verilerden uçturulan view sadece 3 tane kolona sahip.
+
+812
+02:39:17,548 --> 02:39:31,808
+ID, Name, E-mail. Bu tabloya direkt vermek için uygulamalara ya da diğer kullanıcılara bu view'a erişim verebilirsiniz.
+
+813
+02:39:32,340 --> 02:39:44,280
+Böylelikle buradaki maaş bilgisini görmemiş olacak. Veya uygulamaların direkt olarak bu kolona erişim sağlanmamış olacak ama gerekli belirleri bu view'dan temin edebilirler.
+
+814
+02:39:45,200 --> 02:39:56,139
+View aslında o tabloya bir arayüz. Burada tabloları kısıtlayabilirsiniz, belli kolonları gösterebilirsiniz. Siz bu view'dan bir sorgul yapabilirsiniz. SELECT.
+
+815
+02:40:00,000 --> 02:40:01,500
+SELECT, START, FROM,
+
+816
+02:40:05,716 --> 02:40:08,596
+FROM, şöyle yazayım.
+
+817
+02:40:09,636 --> 02:40:11,175
+Şöyle bir sorgu yazsaydım.
+
+818
+02:40:11,316 --> 02:40:22,136
+SELECT, STAR, FROM, EMPRORIVE, VIEW diye bir sorgu yazsaydım.
+
+819
+02:40:23,416 --> 02:40:28,776
+Ve gelecek kolonlar ID, NAME ve EMAIL diye soru.
+
+820
+02:40:32,084 --> 02:40:39,144
+Bu sorguyu çalıştırınca arka plan aslında bu sorgunun kendisi şunu çalıştırıyor.
+
+821
+02:40:40,824 --> 02:40:43,263
+SELECT, arka planı, employee.
+
+822
+02:40:44,943 --> 02:40:47,824
+Burada da sadece ID, name.
+
+823
+02:40:48,755 --> 02:41:14,615
+Arka planda aslında çalışan bu. Bu employee demek şu sorguya gider ve bu sorgunun kendisini çalıştırır. Yani sorgumuz ne aslında bu view'un sorgusu? Şurada gösterdiğimiz sorgu çalışır. Bu view'un kendisi veri taşımaz. İçinde veri yok. Siz view'a her sorgu yaptıkça view gider, view tanımı bu, tanımının olduğu tabloya gider ve bu kolonları çeker.
+
+824
+02:41:17,012 --> 02:41:43,552
+Anlatabildim mi? Yani view'un temel özelliği bu. Sanallaştırılmış tabloya erişim gibi bir düşünün. Bu da sizin virtual sanal ilişki gibi bir şey oluyor. Arka plandaki sorgu, bütün konulara erişme olabilir. Ama siz view'la birlikte bir ona arayı sağlayıyorsunuz. View'un alan büyüklüğü olarak bir katkısı veya dezavantajı yok.
+
+825
+02:41:43,987 --> 02:41:56,987
+Ama view'un bir kavramsal birisi var. Ya da şunu yapabilirsiniz. Mesela çok karmaşık bir sorgunuz var. Karmaşık sorgu sonucunda elde ettiğiniz satırları bir view olarak...
+
+826
+02:41:58,355 --> 02:42:10,135
+tanımlayabilirsiniz. Böylelikle siz o sorgunun bütün lojiğini görmek yerine sadece o view'un içindeki verileri sorgulayabilirsiniz. Bu açıdan sadeleştirme anlamında da faydası var.
+
+827
+02:42:10,135 --> 02:42:18,615
+View'un. Hem veri gizleme hem de veriyi sorguları sadeleştirme için kullanılabilir view'lar.
+
+828
+02:42:19,156 --> 02:42:29,376
+Normal bir SQL sorgusu gibi yazabiliyorsunuz. View tanımını sadece şunu dikkat etmeniz lazım. CreateView kelimesine girdikten sonra buna bir isim veriyorsunuz.
+
+829
+02:42:29,596 --> 02:42:38,836
+V dersiniz, employee view dersiniz, neyse. Siz yazıyorsunuz. Deri kalanı herhangi bir SQL sorgusu olabilir.
+
+830
+02:42:40,116 --> 02:42:44,636
+Masselekle başlayacak bir sorgu olması lazım. Örnek vereyim.
+
+831
+02:42:45,139 --> 02:42:58,139
+İşte, faculty diye bir tane. ViewOcean with viewfaculty as, tamamlamam şu, SELECT ID name, department name, instructor'da geliyor. Mesela orada salary konunu göstermiyorum.
+
+832
+02:43:01,043 --> 02:43:05,103
+Sonrasında bu sorguyu ben view üzerine yapabilirim.
+
+833
+02:43:05,224 --> 02:43:08,623
+SELECT, NAME, FACULTY, VERCULOUS, DEPARTMENT, BIOLOJY.
+
+834
+02:43:08,684 --> 02:43:13,543
+Yani şu view'un üzerinde biyoloji bölümünden gelen ucaların isimlerini gösterebilirsiniz.
+
+835
+02:43:16,628 --> 02:43:29,087
+Ayrıca view'un içinde de başka aggregate standartı yapabilirsiniz. Mesela departmanlara göre salarileri gösteren bir view oluşturuyorum. Department name total salari.
+
+836
+02:43:29,087 --> 02:43:41,347
+İki tane klon vardı bu view'da. Department name virgül, toplam maaş olan grup pay yaparak istediğim, bilginin sonucu bir view. Artık.
+
+837
+02:43:41,631 --> 02:43:52,131
+Daha sorguyu iç içe sorgu bir şekilde almama gerek yok. Sadece bu viewdaki sonucu bir inner join gibi kullanabiliriz.
+
+838
+02:43:54,391 --> 02:43:56,031
+Buraya kals-soros olan var mı?
+
+839
+02:44:00,244 --> 02:44:23,783
+[öğrenci] soruyoruz. Sanki yeni bir şey. Yani class gibi düşünmemek lazım. Sadece view buna bir arayüz sağlıyor. Yani veriyi soykulaştırarak arka planda sorgunun kendisiyle değil de sorgunun ismiyle etkileşme haline giriyoruz. Yani interface gibi bir şey düşünebilirsiniz aslında. O açıdan classlara ben diyor ama bir arayüz gibi düşünün.
+
+840
+02:44:24,755 --> 02:44:30,695
+DTO'ya benzeri aslında. Veri maripule edebiliyoruz. Yani kendi kendisinin şeklinde.
+
+841
+02:44:31,076 --> 02:44:44,716
+Evet. Ama şuna dikkat edin. View'da fiziksel olarak veri tutulmuyor. Yani insert, update, delete gibi işlemler yapmıyorsunuz. Bunlar datanın kendisinde, tabloda yapılabilir. Ama View'da yapılmaz. Siz sadece View'da SELECT yapıyorsunuz.
+
+842
+02:44:46,716 --> 02:44:47,855
+Buna dikkat etmekte fayda var.
+
+843
+02:44:48,819 --> 02:44:53,680
+Başka sorun yoksa, günlük sonlandıralım arkadaşlar. Benim söyleyeceklerim bu kadar.
+
+844
+02:44:54,279 --> 02:44:59,599
+Yalnız yerden devam ederiz. Yine bir yolları konuşarak haftaya başlarız.
+
+845
+02:45:00,659 --> 02:45:04,360
+[öğrenci]'in sanırım sorusu var. [öğrenci], daha bir sorun vardı.
+
+846
+02:45:09,907 --> 02:45:17,628
+Var mıydı arkadaşlar sorunuz? Lab linkini paylaşacağım, size şeyden göndereceğim arkadaşlar.
+
+847
+02:45:20,108 --> 02:45:21,847
+BES'eden birazdan göndereceğim.
+
+848
+02:45:22,768 --> 02:45:28,448
+[kişisel bilgi] Nasıl alabilirim ben?
+
+849
+02:45:28,768 --> 02:45:33,687
+O zaman şuradan hemen 2 saniye beklerseniz paylaşayım.
+
+850
+02:45:38,355 --> 02:45:42,695
+3. grubun online'dan, 2. grup.
+
+851
+02:45:46,932 --> 02:45:49,292
+Siz 3. grubsınız. Arayın mı?
+
+852
+02:45:52,472 --> 02:45:56,932
+Bu 2. grubunun linki bende çıktı. Sanırım 3. grubu...
+
+853
+02:45:58,112 --> 02:45:59,231
+Kocada mı çıkıyor?
+
+854
+02:46:13,363 --> 02:46:20,023
+dersin kendi diki bende de, lab iki galiba şu an bende değil. Etkinlik takmaya bakalım.
+
+855
+02:46:31,123 --> 02:46:54,623
+Grubunki bende gözüküyor, üçüncü bende gözükmüyor. Onu şey yaparız, ben şimdi asistan arkadaşlarla konuşurum. Utkoca da gözüküyorsa o sizinle paylaşır. Asistan arkadaşlarla artık gizlisinden de yazabilirler. Size gizlisinden geliyor değil mi? Bilimsel hazırlıklıktan. Yoksa gizlisinden de mı ulaşamıyorsunuz?
+
+856
+02:46:57,940 --> 02:47:05,380
+Şöyle yapalım, siz lab'a girdiğiniz asistan arkadaşlara e-mail atarsanız onlar sizinle paylaşırlar.
+
+857
+02:47:07,040 --> 02:47:10,340
+OBS'den zaten e-mail gelecek arkadaşlar için bir problem yok.
+
+858
+02:47:10,940 --> 02:47:16,420
+Ama şey için bilimsel hazırlıktaki arkadaşlar OBS'den e-mail almıyor.
+
+859
+02:47:17,220 --> 02:47:19,280
+Onlar için şeyden ulaşmak lazım.
+
+860
+02:47:22,835 --> 02:47:23,855
+Tamam hocam, sağ olun.
+
+861
+02:47:23,855 --> 02:47:36,295
+Siz hocalarınıza e-mail atarsanız hatırlatma için onlar sizinle linki paylaşırlar. Ben şimdi dersten sonra kontrol edeceğim. Utku hocadaysa, Utku hocada değilse ben bir toplantı linki oluşturup sizinle paylaştırırım.
+
+862
+02:47:40,211 --> 02:47:48,951
+Teşekkürler arkadaşlar. Onun dışında sorunuz yoksa haftaya görüşmek üzere. Kendinize iyi bakın. Dediğim gibi satınleştikli lamplarınız var. Görüşmek üzere. Hoşçakalın.

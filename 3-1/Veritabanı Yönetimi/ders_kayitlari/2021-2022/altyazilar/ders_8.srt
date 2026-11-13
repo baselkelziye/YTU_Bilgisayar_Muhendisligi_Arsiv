@@ -1,0 +1,2635 @@
+1
+00:03:29,235 --> 00:03:31,795
+Hocam teşekkür ederiz. Hayırlı yolculuklar diliyorum.
+
+2
+00:03:41,075 --> 00:03:41,995
+C'est sümgelerim.
+
+3
+00:04:02,611 --> 00:04:04,451
+Arkadaşlar, birazdan başlayacağız.
+
+4
+00:04:06,632 --> 00:04:07,991
+Sesim geliyor mu?
+
+5
+00:04:15,219 --> 00:04:16,220
+Evet hocam.
+
+6
+00:04:16,220 --> 00:04:19,220
+Tamam, 3 dakika bir hazırlık yapmamız lazım.
+
+7
+00:07:14,324 --> 00:07:17,984
+Evet arkadaşlar, dersimize başlayabiliriz.
+
+8
+00:07:22,355 --> 00:07:23,956
+Ekran paylaşımı yapıyorum.
+
+9
+00:07:51,956 --> 00:07:53,536
+Ekranı görüyor musunuz?
+
+10
+00:07:58,771 --> 00:07:59,891
+Sesim geliyor mu?
+
+11
+00:08:01,771 --> 00:08:03,632
+Geliyor hocam, görüyoruz.
+
+12
+00:08:03,932 --> 00:08:05,012
+Ekranı görüyoruz, tamam.
+
+13
+00:08:05,731 --> 00:08:10,072
+Evet, şimdi bu hafta normalizasyon konusunu işleyeceğiz.
+
+14
+00:08:10,611 --> 00:08:14,072
+Bu kavramsal tasarımın ikinci bölümü.
+
+15
+00:08:16,211 --> 00:08:21,491
+Ve içerisinde bazı teorik, bazı konular var.
+
+16
+00:08:22,995 --> 00:08:36,035
+İşin çok teorisine tabii girmeden ama literatürde geçen bazı terminolojileri burada anlamaya çalışacağız manalarını.
+
+17
+00:08:38,915 --> 00:08:45,855
+Bugünkü dersimizde böylece kavramsat asırımı sonlandırmış olacağız bu kavramlarla beraber.
+
+18
+00:08:46,419 --> 00:09:00,779
+Önümüzdeki hafta malum ilan edilmiş olması lazım veya edilecektir. Cuma günü zaten bir sınavımız var. O yüzden paşam bir gün ders olmayacak. Cuma günü saat 10'da zannedersem bakarsınız dersleriniz yerine falan.
+
+19
+00:09:02,059 --> 00:09:12,619
+Ara sınav 2 olacak. Bütün ders konularını kapsıyor gene sınav. Yani işte SQL, kavram, sağ tasarım, normalizasyon, bugün işleyeceğimiz konular.
+
+20
+00:09:13,172 --> 00:09:20,372
+Ondan sonraki iki haftada kaldığımız yerden devam ederiz. Fiziksel tasarımla ilgili bazı tanımlarımız, kavramlarımız olacak.
+
+21
+00:09:22,231 --> 00:09:29,711
+Şimdi bugünkü dersimizde kavramsal tasarımın yani ilişkisel model tasarımının iyi olması.
+
+22
+00:09:30,259 --> 00:09:50,079
+noktasında. Yani bu kelime burada seçilmiş. Yani burada çünkü bir tasarım çok farklı şekillerde olabiliyor. Fakat bu tasarımın iyi olması ne demek? Ondan bahsedeceğiz. Yani belki en mükemmeli olmasa da iyi bir tasarım yapmanın manası nedir?
+
+23
+00:09:50,464 --> 00:09:58,244
+Burada bu iyi tasarımın veri tekrarının minimize edilmesine bakıyor esasında.
+
+24
+00:10:00,104 --> 00:10:07,423
+Bu veri tekrarı sistemde, tasarımımızda istemediğimiz bir nokta. Bundan bahsedeceğiz.
+
+25
+00:10:10,868 --> 00:10:29,448
+Bunun için iyi bir hale getirmesi için veritabanı tasarımının normalizasyon adımlarından bahsedeceğiz. Burada birçok normalizasyon formları var. Yani normalizasyon şekilleri, yani bunu iyi bir hale getirmek manasında bu ifade kullanılıyor, normalizasyon ifadesi.
+
+26
+00:10:30,488 --> 00:10:37,328
+Bunlar böyle klasik literatürde 5 tane normal form. Bunlar ek olarak başka normal formlar da var.
+
+27
+00:10:38,868 --> 00:10:56,568
+Endüstride yaygın olarak kullanılan BCNF denilen ilk 3 normal formu kapsayan bir tanım söz konusu. Bu en azından buraya kadar kısmı böyle kafamızda canlanması önemli oluyor.
+
+28
+00:10:58,611 --> 00:11:10,451
+Diğer taraftan bu olayın, yani bu normalizasyonla iyi bir veri tabanı tasarımı yapılmasının altında yatan bazı böyle düzenlemeler var.
+
+29
+00:11:10,631 --> 00:11:19,211
+Yani yapılması gereken şeyler var. Burada da fonksiyonel bağımlılık, functional dependency, fonksiyonel bağımlılık meselesi ortaya çıkıyor.
+
+30
+00:11:19,211 --> 00:11:25,831
+Yani fonksiyonel bağımlılık tanımı yaparak, onları kullanarak normalizasyon yapıyoruz.
+
+31
+00:11:27,572 --> 00:11:50,132
+Normalizasyon da diğer bir mesele, diğer bir kavram öğreneceğimiz. Bu fonksiyonel bağımlılıklara bağlı olarak yaptığımız normalizasyon tabloların, mevcut olan ilk yaptığımız, tanımladığımız tabloların parçalanması, dekompose edilmesi dayanıyor.
+
+32
+00:11:51,031 --> 00:11:55,572
+Fakat bu parçalama esnasında bizim maksadımız işte...
+
+33
+00:11:55,572 --> 00:12:18,851
+Normalize etmek, iyi bir tasarım yapmak olmakla beraber bu parçalama bazen yitimli, yani lossy veya yitimsiz, lossless olması durumları söz konusu. Burada tabii isminden anlaşılacağı gibi bu normalizasyon yaparken yaptığımız o parçalamanın lossless, yani yitimsiz olmasını ümit ediyoruz.
+
+34
+00:12:23,572 --> 00:12:28,791
+Normal forma dönüştürüyoruz. Hem de yitim olmuyor, veri kaybı olmamış oluyor.
+
+35
+00:12:28,791 --> 00:12:42,791
+Diğer bir kavram da dependency...
+
+36
+00:12:50,323 --> 00:12:53,803
+O şeyi de öğreneceğiz.
+
+37
+00:12:55,083 --> 00:12:56,543
+Dependency preservation.
+
+38
+00:12:57,723 --> 00:12:59,563
+Bir de bu mesele var.
+
+39
+00:12:59,703 --> 00:13:06,903
+Demek ki, yani kullanacağımız, yapacağımız tanımlarda bu kavramlardan bahsedeceğiz.
+
+40
+00:13:07,523 --> 00:13:08,403
+O zaman ne dedik?
+
+41
+00:13:09,203 --> 00:13:11,323
+Good relational model.
+
+42
+00:13:11,827 --> 00:13:15,427
+Yani iyi bir karnasal model nasıl oluyor, bu ne demektir?
+
+43
+00:13:16,427 --> 00:13:21,288
+Veri tekrarının ortadan kaldırılması, veri tekrarının zararları nelerdir, ondan bahsedeceğiz.
+
+44
+00:13:21,728 --> 00:13:30,268
+Bunun için normalizasyon, yani normal forma dönüştürmek, bu da tabloların parçalanmasını gerektiriyor.
+
+45
+00:13:30,268 --> 00:13:31,468
+Decomposition.
+
+46
+00:13:31,988 --> 00:13:43,748
+Bu decomposition'da parçalamalarda yitimli veya yitimsiz olabiliyor. Biz yitimsiz olanı tabii ki lossless olan decomposition'i tercih edeceğiz.
+
+47
+00:13:43,848 --> 00:13:55,688
+Aynı zamanda bu parçalamada dependency preservation denilen yani bu fonksiyonel bağımlılıkların, çünkü bütün bu işlemleri arkada fonksiyonel bağımlılık esası üzerine yapacağız.
+
+48
+00:13:59,988 --> 00:14:02,028
+ile yapılması gerekiyor.
+
+49
+00:14:03,408 --> 00:14:12,588
+İşte bu bahsettiğimiz kavramlar, bu normalizasyonun, yani iyi bir veritabanı tasarımının esasları.
+
+50
+00:14:12,807 --> 00:14:14,468
+Bunun bir de teorisi var tabii.
+
+51
+00:14:14,948 --> 00:14:22,848
+Yani bunu ders kitabından veya herhangi bir veritabanı kitabına bakarsanız, bu kullanılan terminoloji, bunlar da bu bahsettiğim kavramlar.
+
+52
+00:14:23,327 --> 00:14:24,908
+Bunların bir de algoritmaları var.
+
+53
+00:14:26,131 --> 00:14:33,571
+Yani tasarım yaparken bu algoritmalara göre tabloların parçalanması gerekiyor.
+
+54
+00:14:33,911 --> 00:14:37,931
+Yani öyle biz şimdi mesela dönem başında biraz hazara konduk.
+
+55
+00:14:38,531 --> 00:14:41,491
+Elimizde bir ilişkisel model tablosu var İDE.
+
+56
+00:14:41,631 --> 00:14:44,391
+Hatırlıyorsunuz, üniversite tablosu. Çok güzel bir veritabanı İDE.
+
+57
+00:14:44,951 --> 00:14:48,971
+Yani gerçekçi bayağı. Öyle eksik, çok fazla bir şey yok.
+
+58
+00:14:48,971 --> 00:14:53,911
+Yani bir öğrencinin aldığı dersler, aldığı notlar, hocaları, bölümleri falan.
+
+59
+00:14:54,131 --> 00:14:58,631
+Böyle oldukça gerçek hayatı, o küçük dünyayı yansıtan bir veri tabanıydı.
+
+60
+00:14:58,931 --> 00:15:01,011
+Orada kavramsal tasarım yapılmış.
+
+61
+00:15:01,392 --> 00:15:23,592
+Yani ER diyagramları yapılmış, onu görmüştük. O ER diyagramlarından sonra da normalizasyon. Yani normalizasyon bir cila gibi esasında. Yani bir şey ortaya çıkıyor. Ondan sonra onu iyi bir hale getiriyoruz veya oradaki bazı böyle muhtemel arızaları gideriyoruz.
+
+62
+00:15:29,392 --> 00:15:38,971
+bir cidden de biraz daha böyle orta halde mütevazı bir veri tabanıysa, yani çok böyle piyasaya şey olmayacaksa, şartı olmayan bir şey belki.
+
+63
+00:15:39,352 --> 00:15:46,852
+Yani bizim kendi küçük makinemizde yaptığımız bir veri tabanı için belki normalizasyon yapmazsak çok tehlikeli olmayacak.
+
+64
+00:15:47,211 --> 00:15:52,872
+Ama bu gerçek bir veri tabanıysa, bu normalizasyonun yapılması elzem olabilir.
+
+65
+00:15:52,872 --> 00:15:56,872
+Yani duruma göre artık, biraz böyle yuvarlak konuşuyorum.
+
+66
+00:15:57,392 --> 00:16:00,951
+Şimdi
+
+67
+00:16:00,951 --> 00:16:06,732
+Zoom'u kullanmak da yani
+
+68
+00:16:18,131 --> 00:16:31,731
+Tamam, ben şeyi açmışım. Kitabı siz de görüyorsunuz zaten herhalde. Ben şu anda ders kitabındaki, ders kitabını da açıyorum. Bu ders kitabından da okuyabilirsiniz normalizasyonu. Herhalde görüyorsunuz şu anda. Üzerinden geçiyorum ders kitabından.
+
+69
+00:16:33,552 --> 00:16:43,572
+Bu da ders notları. Bir de benim kendi ders notlarım var. Onu da paylaşırım birazdan sizinle. Chatten de paylaşılıyor herhalde. Oradan da takip edebilirsiniz.
+
+70
+00:16:43,572 --> 00:16:45,871
+Şimdi, evet, bu kavramlar.
+
+71
+00:16:46,131 --> 00:16:50,011
+Yani iyi bir ilişkisel model tasarımı, fonksiyonel bağımlılık nedir?
+
+72
+00:16:51,751 --> 00:16:56,351
+Decomposition, fonksiyonel bağımlılıkları kullanarak decomposition yapmak.
+
+73
+00:16:56,471 --> 00:17:00,351
+Yani kompozisyon birleştirmek, decomposition parçalamak.
+
+74
+00:17:01,292 --> 00:17:05,552
+Yani o tabloları parçalıyoruz, ikiye bölüyoruz, üçe bölüyoruz falan.
+
+75
+00:17:06,132 --> 00:17:14,692
+Daha sonra normal formları ve fonksiyonel dependency teori buraya kadar işleyeceğiz. Bu da ilk otuz sayfaya denk geliyor. Sonurlarda ilk otuz sayfa.
+
+76
+00:17:16,332 --> 00:17:24,332
+Daha sonra bunların algoritmaları falan var. Biraz daha başka normal formlar falan var. Biraz daha olayın teorisi, biraz advanced konulara giriyor.
+
+77
+00:17:24,692 --> 00:17:30,711
+Ama en azından biz bir giriş yapmış oluyoruz. Şimdi problem nedir? Problemi burada özetliyor.
+
+78
+00:17:35,059 --> 00:17:43,460
+Evet. Ses geliyor değil mi arkadaşlar? Ben de emin olmak istiyorum çünkü. Evet, oradasınız değil mi?
+
+79
+00:17:44,119 --> 00:17:45,559
+Geliyoruz. Evet hocam.
+
+80
+00:17:45,559 --> 00:17:52,139
+Arada bir. Şimdi öteki türlü hakikaten çok sıkıntı oluyor. Kopya yarım saat boşa anlatmış oluyorsun falan ne bileyim.
+
+81
+00:17:52,243 --> 00:18:01,443
+Hocam, pdf'te bazı yerleri atlamışı galiba. Site de gizli, gizli, pdf'teki bazı yerleri. Sayfa atlamış yani, bilmiyorum.
+
+82
+00:18:02,884 --> 00:18:07,483
+Sayfa atlama, nasıl yani anlamadım?
+
+83
+00:18:07,864 --> 00:18:10,703
+Yani hocam mesela 7.2'den 7.4'de atlıyor direkt.
+
+84
+00:18:11,623 --> 00:18:14,503
+Haa evet, evet doğru dediğiniz gibi doğru evet.
+
+85
+00:18:15,092 --> 00:18:22,092
+Ama o şeyde bir problem. Yani normal akışında bir problem yok.
+
+86
+00:18:22,092 --> 00:18:29,092
+Şimdi siz öyle deyince ben de şüphelendim. Niye öyle olmuş ki bu?
+
+87
+00:18:29,092 --> 00:18:34,092
+Hocam, HPT dosyası var ya, onu da şey, gizliye almışlar. O sayfaları yanlışlıkla galiba.
+
+88
+00:18:34,092 --> 00:18:38,092
+Slide'da düzgün. Slide, sayede uygun bu değil mi gösterdiğim?
+
+89
+00:18:39,539 --> 00:18:43,420
+Hocam, slide'da gözüken şeyler bazen burada gözükmüyor. Orada gizli almışlar.
+
+90
+00:18:43,720 --> 00:18:47,539
+Yani 7-3 burada gerçekten atlanmış mı?
+
+91
+00:18:48,440 --> 00:18:52,480
+7-3 yok hocam işte. 7-3 var slide'da. Burda yok ama sadece başlık mesela ne kadar önemli değil.
+
+92
+00:18:53,880 --> 00:18:55,940
+Yani PowerPoint'i açayım mı?
+
+93
+00:18:57,059 --> 00:18:58,920
+Bence hocam PowerPoint'den daha iyi olabiliyor.
+
+94
+00:19:02,519 --> 00:19:05,980
+Hani PowerPoint'te daha çok gözüküyor diyorsun değil mi?
+
+95
+00:19:07,155 --> 00:19:07,915
+Evet, evet.
+
+96
+00:19:09,915 --> 00:19:11,675
+Yani burada gözükmüyor.
+
+97
+00:19:13,795 --> 00:19:20,056
+Ben de Linux'dayım da, o PowerPoint'leri çok düzgün göstermiyor diye şey yaptım. Neyse bakalım bir de onu açalım.
+
+98
+00:19:52,948 --> 00:19:55,327
+Evet, dediğin gibi, atlıyor.
+
+99
+00:20:03,827 --> 00:20:04,387
+Evet.
+
+100
+00:20:06,827 --> 00:20:08,288
+PPT'den devam edelim.
+
+101
+00:20:08,467 --> 00:20:10,708
+Şeyde PDF'se atlamalar olmuş.
+
+102
+00:20:13,148 --> 00:20:15,567
+Bu sunumları ben de görmedim bazıları.
+
+103
+00:20:15,648 --> 00:20:15,907
+Neyse.
+
+104
+00:20:16,788 --> 00:20:18,867
+Evet, şimdi bunu ben paylaşayım sizinle.
+
+105
+00:20:20,108 --> 00:20:21,288
+İyi oldu bunu söylediğinle.
+
+106
+00:20:21,347 --> 00:20:22,467
+Ben bunu fark etmemiştim.
+
+107
+00:20:42,771 --> 00:20:44,731
+Evet, şimdi PPT'yi paylaşıyorum.
+
+108
+00:20:49,395 --> 00:20:49,895
+Evet.
+
+109
+00:20:55,380 --> 00:21:03,559
+Şimdi burada iyi bir ilişkisel model tasarımıyla ilgili sunu gözüküyor. Şimdi burada bir tane tablomuz var.
+
+110
+00:21:04,819 --> 00:21:17,619
+instructor ve departmentla bizim tablolarımız vardı. Mesela gerçek ilk tasarımıza baktığımız zaman, o tasarım önünüzde ise göreceksiniz.
+
+111
+00:21:17,719 --> 00:21:27,980
+Instructor tablosuyla department tablosu ayrı ayrı tablolar idi. Yani kavramsal tasarımda ayrı ayrı entitiler, varlık setleriydi.
+
+112
+00:21:32,819 --> 00:21:38,859
+İlişkisel model dönüşümünü yaptığımız zaman Instraktor için bir tablo, Department için başka bir tablo olacak idi.
+
+113
+00:21:39,296 --> 00:21:52,096
+ilişkisel model tablolarımız öyle olacak. Şimdi biz burada iki tane o tabloyu bir araya getirsek, yani instructor ile departmana bir araya getirsek, niye getirmek isteriz?
+
+114
+00:21:52,096 --> 00:22:07,096
+Çünkü burada instructor ile departman üzerine çok fazla sorgu vardır. Yani bu ikisi ünlü birleşimi, join yapılmasını gerektirecek birçok sorgu varsa, esasında bu birleşim de benim...
+
+115
+00:22:07,296 --> 00:22:28,076
+İçin, yani performans noktasında da ideal bir durum. Yani cazip gözüküyor esasla bunları birleştirmem. Böylece ben bunları yani ilişkisel model tablosu noktasında birleştirirsem aynı bilgiyi burada tutmuş oluyorum. Yani işte instructorlar da var bakın. Hem de departmentlar da var.
+
+116
+00:22:29,076 --> 00:22:52,996
+Gayet güzel buraya kadar her şey. Ve işte dediğim gibi performans noktasına cazip oldum. Ancak burada ilk maddede söylediğim gibi there is a repetition of information. Yani burada Computer Science Departmanı'nda mesela hocalar var, kimler var, Katz var, Srivina var ve Brandt diye hocalar varmış.
+
+117
+00:22:53,172 --> 00:23:01,892
+Bunlar burada bu tabloda yer aldığı zaman bunların bağlı bulunduğu departman bilgileri de tekrar ediyor.
+
+118
+00:23:01,892 --> 00:23:13,472
+Yani Computer Science'da bunlar tamam ama bu Computer Science'ın bilgileri, Tyler işte 100.000, buradaki Tyler 100.000, buradaki Tyler 100.000 tekrar ediyor.
+
+119
+00:23:13,903 --> 00:23:25,884
+Burada bir yer kaybı söz konusu bir. Hani bu çok böyle masumane bir zarar esasında. Tamam, yer kaybını göz ardı edebiliriz. Ne olacak?
+
+120
+00:23:25,884 --> 00:23:40,123
+İkinci önemli, daha önemli olan problem ise burada bu veri tekrarının update'lerde, yani veri güncellemelerinde konsistensiyi muhafaza etmeyi zorlaştırması.
+
+121
+00:23:41,903 --> 00:24:07,784
+korunmasının zor bir hale getirmesi. Yani tutarlı da korur muyuz? Koruruz ama bu çok böyle gerçekçi olmayacak. Çok daha zor olacak. Çünkü burada biz bir tane Computer Science Departmanı'nınla ilgili bir değişiklik yapmaya kalktığımız zaman, sadece Computer Departmanı'na ilgili bir hadise söylüyorum. Computer Science Departmanı'nın işte budgetini
+
+122
+00:24:08,531 --> 00:24:36,531
+Bütçesini işte 200 bin yapmaya kalktığımız zaman hem bunu, hem bunu, hem bunu değiştirmem lazım. Yani bu değişikliği buna göre yapmam lazım. Yani instructor'ı da dahil ederek, yani oradaki bütün instructor'lar için şey yaparak o kullanacağım update lojiyine instructor içerenleri, içeren computer science...
+
+123
+00:24:36,531 --> 00:24:37,531
+departmanındaki,
+
+124
+00:24:38,051 --> 00:24:41,112
+Instagram'ın sayısı kadar,
+
+125
+00:24:41,112 --> 00:24:45,771
+Instagram'ın sayısı kadar burada update'e maruz kalacak.
+
+126
+00:24:46,291 --> 00:25:03,071
+Diğer taraftan, tamam bu da belki şey, bir zarar ama hadi bunu da çarptık. Çünkü burada da işte tutarlılık noktasında bir anda böyle hepsi değişmeyecek veya hepsinin bir anda değişmesini düşünmem gerekiyor.
+
+127
+00:25:03,071 --> 00:25:14,071
+Tamam bunu da hazmettik diyelim, bunu da kabul ettik diyelim. Diğer taraftan, burada yeni bir departman açıldığı zaman o departman...
+
+128
+00:25:14,291 --> 00:25:26,871
+bilgilerinin, yani building, hangi binada, bütçesi nedir, bilgilerinin velitabanına eklenebilmesi için bu departmanda bir hocanın olması lazım mutlaka.
+
+129
+00:25:27,412 --> 00:25:38,892
+Eğer hoca yoksa daha, onu buraya eklemek için de tablonun instructor kısmına bu bilgilere NAL girerek ekleme yapmam lazım.
+
+130
+00:25:40,251 --> 00:25:55,251
+Burada da işte bu tablonun anahtarı ID ve Department Name, şey ID olduğu için, orada ID şey, oraya NAL girmeme de müsaade etmeyecek.
+
+131
+00:25:55,412 --> 00:26:23,412
+Ne oldu bakın, işler biraz zorlaştı. Yeni bir departman eklemek oysa, benim evvelki ilk orijinal tasarımımızda, bu iki tablo parçalı olduğu zaman çok kolaydı departman. Eğer hoca yoksa da o departmanda, ben oraya yeni bir search department, building'ini girecektim. Hocası olmasın, önemli değil. Ama burada bu iki varlığı aynı tabloya alakalı.
+
+132
+00:26:23,412 --> 00:26:31,311
+alınarak, almaya kalkarak, başımıza iş açtık esasında. Esasında cazip de gözüken bazı noktalar oldu.
+
+133
+00:26:32,571 --> 00:26:43,491
+İşte burada veri tekrarı bir, işte consistency ikinci problem, üçüncü problem, yeni bir departman eklerken veya yeni bir instructor eklerken departmanına da girmem lazım.
+
+134
+00:26:43,491 --> 00:26:51,412
+Yani diğer taraftan, bu taraftan da olaya bakarsak, yeni bir instructor girdiğim zaman, girmeye kalktığımız zaman bunların...
+
+135
+00:26:51,412 --> 00:26:52,352
+olması lazım.
+
+136
+00:26:53,236 --> 00:27:20,996
+İşte böyle NAL zorunlulukları da gene problemin başlangıç noktası. Yani hiçbir zaman veya çoğu zaman biz NAL görmek istemiyoruz. Çünkü NAL belirsiz bir durum. Daha da kötüsü, bakın adım adım en kötü duruma doğru gidiyorum. Burada beklenmedik şekilde bir bilgi kaybı da olabilir. Mesela şöyle bir bilgi kaybı olabilir. Nasıl bir redandonsu vardı? Şimdiye kadar redandonsu da bahsettik.
+
+137
+00:27:21,236 --> 00:27:27,796
+İlgi kaybı da beklenmedik bir şekilde şöyle olabilir. Mesela Computer Science Department'ında tek bir hoca kaldıysa,
+
+138
+00:27:28,079 --> 00:27:54,960
+Ben o burada bir hocayı da, bir hoca da oradan ayrıldıysa, o zaman departmanına ilgili, Computer Science departmanına ilgili bilgiler de uçmuş oluyor. Oysa oraya yeni hocalar gelecek belki. Yani ben oysa oradaki niyetim bilgisayar, Computer Science'daki bilgilerin kaybolması değil idi. Bir hoca oradan ayrıldı sadece. O hoca bilgisini silmeyi ben esasında niyet ediyordum.
+
+139
+00:27:56,079 --> 00:28:07,460
+Burada da veri kaybı ortaya çıkmış oluyor. Aynı şekilde bir departmanı silmekle de arka planda hocaları silmiş oluyorum.
+
+140
+00:28:07,460 --> 00:28:15,680
+Oysa bir hoca belki onun bilgilerini silmek istemiyorduk. Çünkü o hoca başka bir departmana gidecekti belki falan.
+
+141
+00:28:17,019 --> 00:28:24,079
+Hani bir parça hissettiniz herhalde. Arkada bizim bu masumane yaptığımız bu iyileştirmede veri bütün...
+
+142
+00:28:24,079 --> 00:28:51,779
+Bütünlüğü noktasında birçok problemler ortaya çıktı. Bunları böyle, bu problemler, veli bütünlüğü noktasında problem oldu. Kazanç ne oldu burada? Bu tabloları JOIN yapmadan, aynı fiziksel olarak, aynı tabloda tutmak girişimimiz oldu yani. Bu buradan kaynaklandı. Ama veli bütünlüğü noktasında bu problemler ortaya çıktı.
+
+143
+00:28:52,079 --> 00:28:53,600
+Evet.
+
+144
+00:28:54,880 --> 00:28:55,880
+Sorusu olan.
+
+145
+00:28:57,600 --> 00:28:57,819
+Evet.
+
+146
+00:29:01,240 --> 00:29:06,079
+Diğer taraftan, bu sunuyu da ben şimdi yeni görüyorum. Bakalım burada ne diyor.
+
+147
+00:29:06,480 --> 00:29:10,059
+Not all combined schemas without a repetition of information.
+
+148
+00:29:10,612 --> 00:29:21,872
+Yani biraz önce bu şey oldu, başımıza geldi, birleştirdiğimiz zaman ama bu kombinasyon da demek ki bazen bütün kombinasyonlar repetition manası olmuyor.
+
+149
+00:29:21,872 --> 00:29:29,972
+Mesela consider combining relations, section class, section ID, building rule number.
+
+150
+00:29:30,420 --> 00:29:43,307
+Bu, section'ın, belirli sınıf ve belirli binadaki sınıf, section'ın...
+
+151
+00:29:43,443 --> 00:29:55,463
+Course ID'si, Section ID, Semester Year. Bu section'ın şeyi, diğer özellikleri. Bunları biz aynı şeyde topladık burada.
+
+152
+00:29:56,943 --> 00:30:03,083
+Section ID, Course ID, Section ID, Semester Year ile beraber şu building ve room number'ı.
+
+153
+00:30:03,407 --> 00:30:23,347
+Aldığımız zaman, burada bir veri tekrarı yok. Yani her bir section için, o section'un bağlı bulunduğu core side, section'un numarası, o section hangi semester açıldı, hangi sene açıldı ve hangi binada verildi ve room number.
+
+154
+00:30:23,827 --> 00:30:49,807
+Yani şundan farkı, burada department name'e bir ID, bir department name'e bağlıydı burada. Ve o department name'le ilgili burada ona has böyle bilgiler vardı, nitelikler. Sadece department name'i, o departmana ait olan bilgiler vardı. Yani bu şemo üzerinde şu, diyeceğiz ki daha sonra buna, department name, building ve budget'ı belirliyor.
+
+155
+00:30:50,240 --> 00:30:54,320
+Veya Building ve Budget Department'in eme fonksiyonel bağımlı diyeceğiz.
+
+156
+00:30:54,500 --> 00:31:00,460
+Yani şimdi daha tam tanımını yapmadık ama burada işte böyle bir şey söz konusu değil.
+
+157
+00:31:00,880 --> 00:31:06,020
+Yani burada bunlar kendi aralarında bir bağımlılık söz konusu değil.
+
+158
+00:31:06,300 --> 00:31:08,300
+Bunların hepsi section'a bağlı.
+
+159
+00:31:09,580 --> 00:31:12,940
+Evet, o zaman işte burada bir repetition bilgisi yok.
+
+160
+00:31:13,100 --> 00:31:16,240
+Yani bir veri tekrarı tehlikesi yok.
+
+161
+00:31:18,228 --> 00:31:43,347
+Şimdi, işte bu veri tekrarı olduğu zaman, biz bu tabloları normalize ismi altında, normal formal ismi altında böyle decompose edeceğiz. Bu decompose ederken de verinin kayıp, yitimli veya yitimsiz olması, kaybolması, kaybolmaması noktasında lossy veya lossless decomposition diye tanımlarımız var.
+
+162
+00:31:43,347 --> 00:31:46,148
+Şimdi, burada bunun ne demek?
+
+163
+00:31:46,228 --> 00:31:53,087
+olduğunu anlamak adına buraya bunu ilk olarak bir tanımlayalım. Daha sonra bunu kullanacağız normalizasyonda.
+
+164
+00:31:54,327 --> 00:32:04,648
+Şimdi, the only way to avoid the repetition of information problem in the in-depth schema is to decompose it into two schemas, instructor and department schemas.
+
+165
+00:32:05,203 --> 00:32:16,163
+Yani burada iki tane varlık var. İki varlıkla ilgili tabloları bir araya getirmiştim. O zaman onları parçalamamız lazım.
+
+166
+00:32:17,715 --> 00:32:33,756
+Şimdi buradaki bütün parçalamalar, yani bu parçalamayı hani biz burada böyle mantıksal olarak düşündüğümüz zaman hani Instructor şu bilgiler, department'ta bunlar olacak şekilde ikiye bölmemiz lazım.
+
+167
+00:32:33,756 --> 00:32:45,215
+Ama bunu hani şaması biraz daha karmaşık olan yani bunu formalize etmemiz, bunu böyle bir kurallar, bir kural olarak tanımlamaya kalktığımız zaman en iyi parçalama ne olacak?
+
+168
+00:32:45,715 --> 00:33:08,596
+diye bunu formalize etmemiz lazım. İşte burada acaba niye bütün parçalamalar, decomposition'lar iyi değil? Bununla ilgili burada güzel bir örnek var. Şimdi burada bir tane işçi tablomuz olsun. Bu işçi tablomuz ID, NAME, STREET, CITY ve SALARY bilgilerini içeriyor.
+
+169
+00:33:09,172 --> 00:33:27,552
+Ve parçalamamız şöyle olsun. Employee 1 tablomuz, yani şemayı parçalıyorum. Yani horizontal bir parçalama yapıyoruz. Horizontal, yani şemayı parçaladım. Çünkü yukarıdaki meselemiz de bunun üzerine dönüyordu zaten.
+
+170
+00:33:37,172 --> 00:33:40,251
+STREET CITY SALARY, yani şu kısmı aldık.
+
+171
+00:33:40,980 --> 00:34:02,120
+Ve bu kısmı aldık. Şimdi burada ortak bir nokta olması lazım ki ben bunları tekrar birleştirip orijinal employee tablosuna oluşturabileyim. Yani şema noktasında böyle olurken bu şemayı böyle ortak olmayan bir noktadan parçalamıyorum. Ortak olan bir noktayı ikisine de koymam lazım.
+
+172
+00:34:02,120 --> 00:34:08,480
+Ta ki işte yabancı anahtarla o iki tabloyu birleştirebileyim. Yani join yapabileyim. Değil mi?
+
+173
+00:34:08,980 --> 00:34:12,199
+İki tabloya dağılmış olan bilgileri JOIN ile birleştiriyorduk.
+
+174
+00:34:12,199 --> 00:34:25,900
+O zaman burada name üzerinden, yani ortak olan name esaslı olarak bunu parçaladığımız zaman, burada karşımızda lossy bir decomposition çıkacak.
+
+175
+00:34:26,320 --> 00:34:31,480
+Yani verinin kaybolduğunu göreceğiz. Bakın nasıl kaybolacak.
+
+176
+00:34:35,795 --> 00:34:52,135
+Eğer employee tablomuzda, orijinal employee tablomuz böyleyse, parçalamada şu hale geliyorsa, birleştirdiğimiz zaman burada veriyi kaybettiğimizi gösteren bir sunu bu.
+
+177
+00:34:52,135 --> 00:34:58,916
+Şöyle, eğer aynı isimli iki tane employee var ise,
+
+178
+00:34:59,295 --> 00:35:26,255
+Kim diye burada. Biz bunları parçaladığımız zaman ID name şeması, yani tablonun bu kısmı şu halde olacak. Yani ID'si farklı olmak üzere iki tane burada şey var. Diğer parçalamada burada ise bu tabloda iki tane kim isimli satır çıkacak.
+
+179
+00:35:26,708 --> 00:35:32,728
+Diğer satırlar da böyle. Yani diğerleri nokta nokta, işte diğer bilgiler de burada olacak.
+
+180
+00:35:33,908 --> 00:35:40,988
+Yani toplam satır sayısı, buradaki toplam satır sayısına aynı. Yani sadece gerçekten bıçakla keser gibi şöyle şu kısmı alıyorum.
+
+181
+00:35:40,988 --> 00:35:47,927
+Burada bu tablo var. Burada da yine satır sayısı aynı. Bu şekilde yani parçalamayla kastettiğimiz bu.
+
+182
+00:35:48,387 --> 00:35:54,708
+Tamam parçaladık ama biz burada yani şu tabloyu elde etmek...
+
+183
+00:35:54,708 --> 00:36:13,068
+Dikkat etmek için bunları name üzerinden birleştirmem gerekiyor. Name üzerinden natural join yapmamız gerekiyor. Madem aynı isimli tablolarda aynı isimler var. Natural join yaptığımız zaman o zaman karşımıza şöyle bir şey çıktı bakın.
+
+184
+00:36:13,588 --> 00:36:29,788
+Yani buradaki name ile buradaki iki name eşleştiği için şu kişinin adresi hem burada gözüküyor, bu kişinin adresi hem de burada gözüküyor.
+
+185
+00:36:30,108 --> 00:36:33,648
+Yani hem Perry Rich hem de Hampton'da gözüktü.
+
+186
+00:36:34,036 --> 00:36:44,315
+Oysa şu kişinin adresi sadece Perry Ridge'de olması gerekiyor. Yani şu Hampton'daki o kim değil? Başka kim?
+
+187
+00:36:44,655 --> 00:37:11,755
+Yani şurada şu şeyden doğru. Burada problem şu kim isimli iki kişinin olması bize böyle bir problem ve sebebiyet verdi. Eğer olmasaydı, yani bütün isimler birbirinden farklı olmuş olsaydı, bunlar gerçekten kendileriyle birleşecek idiler. Ama bunu garanti edemeyiz. Çünkü neyim elbette bir şirkette aynı isimli birçok insan var.
+
+188
+00:37:12,655 --> 00:37:17,335
+Böyle olunca bunun farklı olması için bir beklentimiz olmaması lazım.
+
+189
+00:37:17,711 --> 00:37:26,112
+Şimdi öyle olduğu için de, aynı isimli kişiler olduğu için de, burada esasında bir veri kaybı oldu.
+
+190
+00:37:26,112 --> 00:37:39,832
+Hem ne kadar daha çok veri elde ettiysek de, yani normalde tablomuzun bu kısmı böyleyken, ben sadece bu kısmıyla ilgili Natural John yaptığım zaman şunları elde ettim.
+
+191
+00:37:40,092 --> 00:37:43,211
+Bunları elde ettim, daha çok bilgi elde ettim, sanki daha iyi gibi.
+
+192
+00:37:43,652 --> 00:37:45,711
+Ama esasında arka planda kimin...
+
+193
+00:37:45,711 --> 00:38:02,292
+Kimin adresini kaybettim. Çünkü burada kimin adresi iki yerde gözüküyor, hangisi? Artık bu tablo yok. Yani bunu dekompose ettik, bundan var elimde. Ben kimin nerede oturduğunu, kim isimli işçinin nerede oturduğunu burada kaybetmiş oluyorum.
+
+194
+00:38:03,188 --> 00:38:31,088
+Evet, işte problemin veri bütünlüğü noktasındaki şey, örnek bu. Şimdi bunların bize bir fikir vermesi lazım. Bu tasarımda işte dekompose ederken tabloları, bu dekomposition nasıl yapılması gerektiği, o dekomposition'ın işte lossy veya lossless olması noktasında ki bir örnek olarak bize fikir.
+
+195
+00:38:31,188 --> 00:38:34,828
+Bize bir fikir veriyor olması lazım. Bir fikir verdi diye ümit ediyorum.
+
+196
+00:38:36,768 --> 00:38:39,608
+Burada kafamıza takılan bir şey var mı?
+
+197
+00:38:42,387 --> 00:38:47,927
+Tablomuzun şeması. İki tane bu şemayı ortadan ikiye ayırdım.
+
+198
+00:38:48,271 --> 00:39:03,152
+Ve bu şemalardaki bilgileri birleştirdiğimiz zaman, demek ki bu böyle iyi bir decomposition olmamış, yani iyi bir good relation'ın şema olmadı ve karşımıza böyle bir bilgi kaybı çıktı.
+
+199
+00:39:04,511 --> 00:39:13,831
+Oysa parçalamadan bu tablomuz, bu bilgileri içeriyordu, o bilgileri kaybetmiş olduk.
+
+200
+00:39:15,123 --> 00:39:26,443
+Şimdi, Lostless Decomposition, yani kayıpsız, yitimsiz parçalama için, şu formal olarak şöyle ifade edebiliriz.
+
+201
+00:39:26,523 --> 00:39:36,743
+Mesela, R diye bir şemamız var. Bunu ben R1, R2 formlarına decompose edeceğim. R1 ve R2 alt şemalarına.
+
+202
+00:39:43,123 --> 00:40:00,223
+büyük R'ler şemayı ifade ediyor. Küçük R'de o tabloyu ifade ediyor. O tablonun şeması. Yani R'ye bir şeması, R'ye iki şeması. Yani notasyonu bu şekilde böyle isimlendirebiliriz.
+
+203
+00:40:00,223 --> 00:40:07,563
+We say that the decomposition is lost, the composition, if there is no loss of information by replacing R,
+
+204
+00:40:08,047 --> 00:40:30,427
+R şemasını, with the two relational schemas, R1 and R2. Yani R1 ve R2'yi birleştirdiğim zaman, R1 ve R2 şamalarını birleştirmek, buradaki union şamalarını birleştirmek, bunun bilgi noktasında, içerdiği veri noktasında bunu natural join yapmak demek oluyor.
+
+205
+00:40:31,027 --> 00:40:50,568
+Bunu natural join yaptığım zaman bu R'yi elde etmem lazım. Eğer burada şey çıkmamış, işte PDF'de de o çıkıyor esasında. O cidden PDF'de daha iyi. Şuraya bakıyorum. Evet, PDF'de de o çıkıyor. Şeyde de o çıkmıyor.
+
+206
+00:41:03,668 --> 00:41:06,288
+Hocam, kalem yukarıda bir yerde var galiba.
+
+207
+00:41:06,728 --> 00:41:07,087
+Efendim?
+
+208
+00:41:07,668 --> 00:41:09,248
+Kalem yukarıda bir yerde var herhalde.
+
+209
+00:41:10,028 --> 00:41:10,788
+Kalem mi?
+
+210
+00:41:12,547 --> 00:41:14,028
+Kalemi yazacaksın sanırım.
+
+211
+00:41:14,288 --> 00:41:22,268
+Yok, kalemi yazmayacağım. PPT'de bu sefer bazı operatörler çıkmıyor da problem o.
+
+212
+00:41:22,268 --> 00:41:29,327
+Yani Linux'un PPT'si olduğu için bu sefer onları göstermiyor. PDF'de onlar görünüyor mesela.
+
+213
+00:41:29,760 --> 00:41:53,440
+Neyse, sizin önünüzde açıktır. PDF'den de bakarsınız. Yani ikisini birden. Burada eğer decomposition'da ortaya çıkan tablomuz, ortaya çıkan natural join, evvelki orijinal tablodaki satırlardan daha fazla ise burada bir loss var, bir kayıp var yani.
+
+214
+00:41:53,440 --> 00:41:57,760
+Ama burada sayı olarak daha fazla...
+
+215
+00:41:57,760 --> 00:42:07,300
+satır çıktı ama bilgiyi kaybettik. Yani enteresan bir durum, değişik bir durum yani. Çünkü örneğimizde kimin gerçek adresini kaybettik yani.
+
+216
+00:42:13,331 --> 00:42:13,831
+Evet.
+
+217
+00:42:19,092 --> 00:42:31,652
+Şimdi, evet, buradaki şu örneğimizde, R'nin ABC şeması içeriyor, bakın. R1, AB ve R2, BC olarak bunları parçalayalım, bu iki şemayı.
+
+218
+00:42:34,771 --> 00:42:50,931
+ABC mesela eğer şöyle bir snapchat'ı varsa, böyle bir durumu state'i söz konusuysa, bunu parçaladığımız zaman alfa 1, beta 2 ve 1A, 2B olarak parçalandı.
+
+219
+00:42:51,731 --> 00:43:02,771
+Yani şemayı AB ve BC olarak parçaladık. Yani zor bir şey yok. Yani buradaki kurallar diyelim notasyon noktasında gerçekten hani şey için demiyorum bir zor bir şey yok.
+
+220
+00:43:02,771 --> 00:43:26,172
+Ama tabii onun arka planındaki şeyi, manayı bazen hissetmek zor, onu yakalamak zor oluyor. En azından kurallar noktasını şey yapalım yani ve işte onların da manasını anlamaya çalışalım. Burada şemayı işte bu şekilde parçaladık ve o tablonun o şemasındaki bilgileri de buraya taşıdık.
+
+221
+00:43:30,771 --> 00:43:31,092
+Ne olacak?
+
+222
+00:43:31,603 --> 00:43:58,903
+Yani böyle ortadan ikiye böldük bunu, karpuz gibi. Bunun taşıdığı manayı, taşıdığı bilgiyi yakalamak için de bunu Cartesian, Natural John yaptığımız zaman, yani şöyle Natural John yaptığımız zaman, bu iki tabloyu, burada ortak olan B üzerinde, hepsi unique olduğu için, yani B'de bir tekrar olmadığı için,
+
+223
+00:43:59,603 --> 00:44:14,183
+Aynı şeyleri yakalayacaktır. Yani aynı tabloyu elde ettik bakın. Aynı tabloyu da alfa 1A, beta 2B'yi elde ettik. Biraz önceki problem, buradaki bu B'nin içerisinde B'nin anahtarı olmaması idi.
+
+224
+00:44:14,708 --> 00:44:41,648
+Şimdi daha o tanımları yapmadım yani anahtar, fonksiyonel bağımlılık falan yapmadım ama bu olgu üzerinde, bu instance üzerindeki bu parçalamada bir yitim olmadı. Yani lossistic composition'a bir örnek oldu bu, bir yitimimiz olmadı. Ama evvelkinde ki bu örneğimizde şurada şu veri tekrarı yani aynı isimli veri tekrarı da yok burada esasında.
+
+225
+00:44:42,708 --> 00:45:10,188
+bir şey. Yani gerçek hayatta olabilecek bir şey. Aynı isimli işçi var burada. Bunların adresleri farklı. Yani burada bütün satır tekrar etmiyor. Aynı isimli bir işçi var sadece. Adresleri farklı. Ama biz bunu göz ardı ederek böyle kafamıza göre belli bir bazı noktalara dikkat etmeden bunu decompose ettiğimiz zaman da veri kaybı oldu. Bu olgu için, bu instance için, bu durum için, bu durum lost as bir decomposition oldu.
+
+226
+00:45:11,635 --> 00:45:31,295
+Şimdi normalizasyonumuzda yapılması istenen bunun tablolarımızın her bir şema, yani şema içerisindeki her bir tablomuzun, tablomuzun, R tablomuzun iyi formda olması, good form. Bu good form işte veri tekrarı olmaması.
+
+227
+00:45:31,711 --> 00:45:48,692
+Veri tekrarı içeriyor ise, bunu decompose etmek. Yani, decompose into set of relations, R1, R2, Rn. Yani, ikiye böldük. Bir tanesinde tamam, veri tekrarını ortadan kaldırdık, diğerinde veri tekrarı var. O zaman onu da decompose edeceğiz. Bunların hep kuralları var tabii.
+
+228
+00:45:48,692 --> 00:45:58,871
+Yani, hepsi böyle, işte zaten burada çok, yüz sayfalık bir sunu var zaten. Yani, arkada birçok algoritma var bunun yapılması için.
+
+229
+00:45:59,711 --> 00:46:13,791
+O zaman burada each relation, her bir relation'ın iyi bir formda olması için ve yani veri tekrarın ortadan kalkması ve yitimsiz decomposition olması için, yani veri kaybının da olmasını istemiyorum.
+
+230
+00:46:14,192 --> 00:46:21,271
+Tamam, normal forma getirmeye kalkıyorum ama yitimsiz bir şekilde decompose etmesini istiyorum.
+
+231
+00:46:21,811 --> 00:46:30,192
+İşte bunu da bazı böyle bağımlılık tanımları ne yapacağız? Fonksiyonel bağımlılık ve çok değerli bağımlılık.
+
+232
+00:46:30,304 --> 00:46:34,243
+Şimdi biz bu ders kapsamında sadece fonksiyonel bağımlılıklardan bahsedeceğiz.
+
+233
+00:46:34,804 --> 00:46:43,563
+Yani ilk 3 normal form için veya BCNF için, Boyce Code normal form için yeterli olan fonksiyonel bağımlılıklar.
+
+234
+00:46:43,563 --> 00:46:50,703
+Diğer 4NF ve 5NF için, 4 ve 5. normal formlar için şu multivereit kullanılıyor.
+
+235
+00:46:51,223 --> 00:46:54,603
+Onu işlemeyeceğiz. Biraz daha zorlaşıyor o zaman şeyler.
+
+236
+00:46:55,283 --> 00:46:56,643
+Şimdi fonksiyonel bağımlılık.
+
+237
+00:46:57,523 --> 00:47:10,244
+esasında ek bir tanım olacak bizim için. Çünkü bu makamda, bu manada bir tanım yaptık. O da anahtar tanımı.
+
+238
+00:47:11,443 --> 00:47:28,804
+Şimdi anahtardan farkı, anahtar tanımı ne demekti? Anahtar için şöyle bir ifade kullanabiliriz. Anahtarı şöyle tanımadık. Super key veya key, yani genel manada anahtar, bizim o tablomuzdaki bir grup nitelik.
+
+239
+00:47:28,804 --> 00:47:38,804
+İşte o bir grup nitelik, yani bir grup nitelik, bir nitelik veya birden çok nitelikten oluşan kompozit bir nitelik. Bu nitelik grubu benim...
+
+240
+00:47:39,443 --> 00:47:44,764
+O tablodaki satırı belirliyordu.
+
+241
+00:47:45,543 --> 00:47:49,264
+Yani bu ne demek? Bu cümleden anlıyoruz.
+
+242
+00:47:50,264 --> 00:47:56,164
+O nitelik grubu o tablodaki bir satırı belirliyor.
+
+243
+00:47:56,423 --> 00:48:00,264
+Yani o anahtar belirliyorsa ona anahtar diyoruz.
+
+244
+00:48:00,483 --> 00:48:04,143
+Yani anahtar bir daha tekrar etmiyor.
+
+245
+00:48:04,724 --> 00:48:24,664
+bir daha tekrar etmiyor. Tekrar ediyorsa, o tapılın, aynı tapılın ortaya çıkması lazım. Ama aynı tapılda olmuyor. Yani formal ilişkisel modelde aynı tapıl tekrar etmiyor, satırlar tekrar etmiyor. O zaman demek ki o süper key'i ben bir kez göreceğim. O anahtarı.
+
+246
+00:48:27,251 --> 00:48:39,311
+Fakat buna ek olarak, yani bu ifadede anahtar ve bir tablonun, bir satırının belirlenmesi mevzusundan bahsettim.
+
+247
+00:48:39,635 --> 00:48:55,635
+Buna ek olarak burada tablo içerisinde bazı nitelikler bazı nitelikleri belirleyebilir. Yani bir A niteliği B niteliğini belirleyebilir. Yani veya B A'ya fonksiyonel bağımlıdır diyeceğiz. Bu ne demek?
+
+248
+00:49:07,635 --> 00:49:13,096
+Tekrar etmesi lazım. Yani A, B'yi belirlemiş oluyor o zaman.
+
+249
+00:49:14,356 --> 00:49:42,356
+A'nın aynı değerleri için aynı B'ler karşıma çıkıyor ise burada bu olabilir. Yani anahtarda bu olmadı. Çünkü anahtar olduğu için dedik yani burada aynı satır tekrar etmediği için bu olmayacak dedik anahtarda. Ama fonksiyonel bağımlılık meselesinde bu olabilir. Yani tablo içerisindeki bütün nitelikler arasında bu fonksiyonel bağımlılıkları kurabiliriz. Bunlar nereden geldi desek bunlar gerçek hayatta.
+
+250
+00:49:42,356 --> 00:49:59,635
+Yani o küçük dünyadan gelen bağımlılıklar. Örneğin, burada aşağıda bazı bağımlılıklar ifadeleri var. Yani işte öğrenciler ve hocalar bir ID tarafından belirleniyor.
+
+251
+00:50:00,000 --> 00:50:25,179
+olarak. Esasında bu da, bu da fonksiyonel bağımlılık tamam. Ama esasında bir anahtar üzerinden bir bağımlılık. Yani anahtar da bir nevi fonksiyonel bağımlılık esasında. Çünkü orada anahtar olan ID, benim diğer bütün nitelikleri, yani o topalı belirliyor. Yani diğer bir şey, each student and instructor has only one name.
+
+252
+00:50:26,579 --> 00:50:50,099
+Yani her bir öğrencinin, her bir hocanın bir tane ismi var. Bir tane ismi var. Yani isim tekrar etmiyor bu küçük dünyada. Demek ki isim benim isimde anahtar olabilir. Yani böyle bir şey.
+
+253
+00:50:50,579 --> 00:50:54,500
+Each instructor and student is associated with only one department.
+
+254
+00:50:55,639 --> 00:51:01,920
+Her bir hoca ve öğrenci sadece bir tane departmanda bulunuyor.
+
+255
+00:51:01,920 --> 00:51:11,139
+Yani bu hocanın veya instructor'ın ID'si neyi belirliyor? Departmanı belirliyor.
+
+256
+00:51:12,211 --> 00:51:28,072
+Aynı isimli öğrenci geçtiği zaman bir tabloda, o küçük dünya için konuşuyorum, o aynı isimli instructor geçtiği zaman mesela, o zaman onun departmanı aynı olması lazım. O onu belirliyor çünkü.
+
+257
+00:51:28,947 --> 00:51:45,748
+Each department has only one value for its budget and only one associated building. Her bir departman için bir budget var. Yani aynı departman karşıma çıkıyorsa, aynı bütçe karşıma çıkacak, aynı building karşıma çıkacak.
+
+258
+00:51:45,748 --> 00:51:56,927
+Yani şuradaki, bu bizim şuradaki şeyde mesela bakıldığı zaman burada bir ID, buradaki bütün satırı belirliyor.
+
+259
+00:51:56,947 --> 00:52:14,628
+Çünkü bu öğrencinin, instructor'ın, hocanın bağlı bulunduğu bir departman var. Bu ID, işte name'i belirliyor. Bu ID'ye ait bir tane isim, bir hoca var.
+
+260
+00:52:17,139 --> 00:52:34,119
+Veya işte Department Name, Building'i belirliyor veya Budget'ı belirliyor veya cümleyi diğer taraftan kursak, Building, Department Name'e fonksiyonel bağımlı, Budget, Department Name'e fonksiyonel bağımlı.
+
+261
+00:52:34,119 --> 00:52:38,979
+Ama Department Name, Budget'a fonksiyonel bağımlı değil.
+
+262
+00:52:39,539 --> 00:52:54,920
+Yani Budget Department'ı belirlemiyor, Building Department'ı belirlemiyor. Çünkü aynı Watson'da mesela, Watson Building'inde farklı departmanlar var, fizik var, biyoloji var.
+
+263
+00:52:55,295 --> 00:53:16,215
+Yani bu tekrar ettiği zaman bu department name değişebiliyor. Ama bu tekrar ettiği zaman, yani fizik mesela burada, bir fizik olduğuma Watson'ın aynısı çıkması lazım. Çünkü fiziğin yeri belli. Yani gerçek hayattan alınan bazı esaslara dayanarak bu fonksiyonel bağımlılıklarını ifade ediyoruz.
+
+264
+00:53:16,992 --> 00:53:35,992
+Bir departman diyorsan, fizik departmanı, bunun binası belli. Burada, Watson'da. O zaman bir daha fizik karşıma çıkarsa Watson diye görmem lazım. O zaman department name, building'i belirliyor. Ama diğer taraftan building, department name'i belirlemiyor. Çünkü o binada başka departmanlar da var.
+
+265
+00:53:36,628 --> 00:53:51,628
+İşte Watson'da hem fizik varmış hem biyoloji varmış mesela. Aynı şekilde diğer nitelikler, diğer nitelik ikiliğleri veya diğer nitelik grupları arasında da bu tür böyle bağımlılık ifadeleri kullanabiliriz.
+
+266
+00:53:51,967 --> 00:53:59,248
+Ve bunlar da işte nereden geliyor? O küçük dünyadaki gerçek olan şeylerden geliyor yani.
+
+267
+00:54:00,248 --> 00:54:04,628
+Burada biz tasavvur ediyoruz yani bir tasavvurumuza o küçük dünyaya bağlı olarak bunları söylüyoruz.
+
+268
+00:54:04,628 --> 00:54:05,168
+dedim zaten.
+
+269
+00:54:07,387 --> 00:54:07,728
+Evet.
+
+270
+00:54:08,947 --> 00:54:18,567
+Şimdi, o zaman, an instance of a relation that satisfies all such real world constraints is called a legal instance of the relation.
+
+271
+00:54:18,567 --> 00:54:36,947
+Yani bizim buradaki bütün bu küçük dünyaya, burada ufak bir snapchat'ı var bunun tabii, o küçük dünyadaki, gerçek dünyadaki kısıtların hepsini sağlayan bir şeyse, o relation tablo ise, o tablomuz bu bağımlılıklar üzerinde,
+
+272
+00:54:36,947 --> 00:55:03,947
+üzerine tanımlanmış o tablomuz. Ve ortaya çıkan instanslar da hep legal olacak. Yani o düşündüğüm o küçük dünyaya uygun olacak. Yani şurada mesela burada kalkıp da buraya bir fiziks desem ve işte x başka bir building yazsam o zaman böyle bir şey bu instans legal olmayacak.
+
+273
+00:55:04,307 --> 00:55:20,688
+Instant State yani olgusu. Bu geçerli bir veri tabanı durumu olmayacak yani. Çünkü o küçük dünyadaki o bağımlılığa uygun bir bilgi olmadı orada.
+
+274
+00:55:21,588 --> 00:55:24,948
+Evet, burada bu tanımı yaptı.
+
+275
+00:55:25,028 --> 00:55:30,948
+A legal instance of a database is one where all the relation instances are legal instances.
+
+276
+00:55:32,408 --> 00:55:39,588
+Bütün veritabanı noktasında böyleyse o zaman bizim o veritabanımızın...
+
+277
+00:55:40,480 --> 00:55:51,339
+Gerçi illegal olduğu, yani o küçük düğeneyi tam yansıttığı, yani bütün şemadaki diğer tablolar için, bütün relation'lar için bunu söylediğimiz zaman da bu veritabanımız şey olmuş oluyor.
+
+278
+00:55:52,420 --> 00:56:01,299
+Constraints on the set of legal relations required that the value for a certain set of attributes determines uniquely the value for another set of attributes.
+
+279
+00:56:02,019 --> 00:56:06,500
+Neyi gerektiriyor bu? Yani bir grup niteliğin,
+
+280
+00:56:06,963 --> 00:56:10,684
+diğer bir grup niteliği unique olarak belirliyor.
+
+281
+00:56:10,943 --> 00:56:14,943
+The term is uniquely valued for another set of attributes.
+
+282
+00:56:16,244 --> 00:56:22,603
+İşte bu manadan yola çıkarak biraz daha bunu formal bir notasyonla ifade edeceğiz birazdan şurada.
+
+283
+00:56:24,596 --> 00:56:27,155
+Ama işte şeyler çıkmıyor burada da.
+
+284
+00:56:28,475 --> 00:56:38,195
+A functional dependency is a generalization of the notion of key. O zaman anahtar kavramının genelleştirilmiş hali oluyor fonksiyonel bağımlılık.
+
+285
+00:56:38,195 --> 00:56:52,275
+Yani illa anahtardaki gibi bir nitelik grubu, o tablodaki bütün tapılı, o tablonun tapılarını unik olarak belirlemek.
+
+286
+00:56:52,596 --> 00:57:19,315
+Bu biraz kısıtlı bir tanım. İşte bunu biraz daha gevşettik. Dedik ki anahtar değil, anahtar olmak değil, yani bütün tabloyu unique olarak satırlarını belirlemek değil. O tablo içerisindeki herhangi nitelik grupları arasında, işte bir nitelik grubu, başka bir nitelik grubunu, işte biraz önce ne dedik? Department Building'i. Yani tek nitelik örneklemek daha kolay oluyor.
+
+287
+00:57:20,596 --> 00:57:27,516
+Building'i Unique olarak belirliyor. Yani department fizik olduğu zaman onun şeyi Watson.
+
+288
+00:57:29,516 --> 00:57:34,335
+Öyle ikisi beraber ortaya çıkabilir yani.
+
+289
+00:57:36,036 --> 00:57:45,096
+Fizik gördüğüm zaman yani bu şöyle burada gözükmüyor da şu şeye geçeyim o zaman.
+
+290
+00:57:46,036 --> 00:57:46,895
+Burada gözüküyor.
+
+291
+00:57:47,411 --> 00:58:00,871
+Ben o zaman şurada şey yapayım, desktop olarak yapayım. Tamam, şu anda PDF'i açtım. PDF'i, görüyor musunuz? PDF'i.
+
+292
+00:58:02,132 --> 00:58:02,672
+Evet.
+
+293
+00:58:02,832 --> 00:58:03,112
+Rüzgün.
+
+294
+00:58:03,112 --> 00:58:11,272
+Tamam. Soru gelmiyor herhalde. Takip edebiliyorsunuz yani olayın tanım kısmını anlamak gerekiyor en azından.
+
+295
+00:58:11,812 --> 00:58:24,232
+Şimdi fonksiyonel bağımlı da notasyonları içeren şu şeyde, alfa ve beta benim re şemasının alt grupları, alfa kısmı, beta kısmı.
+
+296
+00:58:30,132 --> 00:58:43,712
+olması durumunu, if and only if, for any legal relation, whenever any two tuples T1, T2 are agree on attributes alpha,
+
+297
+00:58:44,436 --> 00:59:02,376
+Yani T1, T2 tapılarının aynı alfa nitelik değerleri için, T1, T2 tapılarının aynı alfa niteliği değerleri için, beta niteliğinin değerleri de aynı olması.
+
+298
+00:59:02,376 --> 00:59:05,376
+Burada AB'yi belirliyor ise,
+
+299
+00:59:05,715 --> 00:59:24,576
+AB'yi belirliyor ise, bakıyoruz 1, 1, 4, 5. O zaman AB'yi belirlemiyor. Çünkü aynı A değerleri için B'ler aynı olmadı. Yani şu iki satırdan A'nın B'yi belirlemediğini, çıkarımını yapabilirim.
+
+300
+00:59:24,576 --> 00:59:30,336
+Ve diğer taraftan, burada BA'yı belirliyor mu?
+
+301
+00:59:31,155 --> 00:59:55,495
+BA'yı belirlemesini bozacak bir durum olmadığı için BA'yı belirliyor. Yani BA hold. BA arasındaki bu bağımlılık şu anda korunuyor. Çünkü onu bozacak bir durum söz konusu değil. Bu olgu için, bu snapshot için, bu durum için bunu koruyabiliriz. Çünkü 4 için 1 olmuş, 5 için 1 olmuş, 7 için 3 olmuş.
+
+302
+00:59:55,856 --> 01:00:04,336
+4 için burada 2 görseydim, yani şurası 4, burası 2 olmuş olsaydı, o zaman BA da hold etmiyor.
+
+303
+01:00:04,696 --> 01:00:10,336
+Yani ne AB'yi belirliyor, ne BA'yı belirliyor diyecek idim.
+
+304
+01:00:10,336 --> 01:00:13,336
+Evet, şimdi...
+
+305
+01:00:13,588 --> 01:00:28,968
+Burada bu fonksiyonel bağımlılıkların o setten yola çıkarak burada bu tablo üzerinde veya bu tablo üzerinde bunun kapanışı deniyor.
+
+306
+01:00:28,968 --> 01:00:41,588
+Yani o fonksiyonel bağımlılıkları, o küçük dünyadan aldığım o fonksiyonel bağımlılıklardan ben olabilecek bütün diğer fonksiyonel bağımlılıkları türetirsem buna fonksiyonel bağımlılıkları...
+
+307
+01:00:41,588 --> 01:00:54,628
+bağımlılığının kapanışı deniyor. Yani closure ifadesi kullanılıyor. Given a set of f, set of functional dependencies, there are certain other functional dependencies that are logically implied by f.
+
+308
+01:00:55,347 --> 01:01:13,968
+Niye? Çünkü burada mesela en bunun için, yani bu kapanışı bulmak için, türetmek için diğer fonksiyonel bağımlılıkları, elimizde bazı böyle kurallar var esasında. Bunlara Armstrong kuralları deniyor. Bu sununun ileriki teori kısmında daha detaylandırılıyor.
+
+309
+01:01:23,411 --> 01:01:31,311
+BC'yi belirliyor ise, o zaman A'nın C'yi belirlediğini çıkarım yapabilirim.
+
+310
+01:01:31,991 --> 01:01:38,651
+Yani bir tabloyu düşünün, oradaki tapıları düşünün, A'nın B'yi belirlemesini hayal edin.
+
+311
+01:01:39,131 --> 01:01:45,631
+B'de C'yi belirliyorsa, o zaman A, C'yi belirleyecektir. O zaman bu da bir kural olarak yazılabilir.
+
+312
+01:01:51,411 --> 01:02:06,471
+Lojik olarak, mantıksal olarak mevcut olan, yani o küçük dünyada benim düşündüğüm mevcut olan o fonksiyonel bağımlılıklardan türetilmiş böyle daha kabarık, bütün kapsamlı bir şey.
+
+313
+01:02:06,811 --> 01:02:16,511
+Bunu da şöyle F artı ile şu notasyonla ifade ediyoruz. O tabloya ait olan bir kapanış seti olarak ifade ediyoruz.
+
+314
+01:02:19,059 --> 01:02:31,519
+Evet, iyi burada düzeldi bizim sayfa numaraları. PDF'de de düzeldi artık. O demek ilk sayfalarda varmış. Evet, o zaman PDF'den devam edebiliriz. Çünkü bu operatörler, notasyonlar burada çıkıyor.
+
+315
+01:02:31,519 --> 01:02:35,519
+Evet, şimdi...
+
+316
+01:02:36,244 --> 01:02:46,924
+Key is a super key for relation, şimdi burada normalizasyonla ilgili bazı şeyleri yapabilmek için burada anahtar ve candidate key'leri hatırlamamız lazım.
+
+317
+01:02:48,144 --> 01:03:01,004
+Key is a super key for relation schema, R, if and on if, K, R'yi, yani anahtarımız bütün o tablodaki satırları belirliyorsa ona süper key diyoruz.
+
+318
+01:03:04,244 --> 01:03:24,424
+Z'yi belirlerken, aynı zamanda herhangi bir K'nın alt şeması, K nihayetinde bir nitelik grubu, K'nın bir alt nitelik grubu yok ki Z'yi tam belirlesin.
+
+319
+01:03:26,867 --> 01:03:41,487
+K nitelik grubu anahtar süper key. O süper key'in herhangi bir alt şeması, alt nitelik grubu yok ki o R'yi belirlesin.
+
+320
+01:03:41,487 --> 01:03:51,807
+Yani demek ki süper key'i eğer minimal ise, minimal ise o zaman buna kendi de etki ediyoruz. Minimal olması ne demek?
+
+321
+01:03:52,244 --> 01:04:10,384
+O süper key'in, o süper key'den bir nitelik çıkardığım zaman, herhangi bir nitelik çıkardığım zaman artık geriye kalanlar anahtar olma özelliğini kaybediyor ise, kaybediyor ise demek ki minimalmiş benim o K. Daha fazla ufaltamıyorum yani.
+
+322
+01:04:10,867 --> 01:04:14,027
+Tamam mı? İşte bu tanımı zaten yaptık.
+
+323
+01:04:14,287 --> 01:04:20,707
+Functional dependencies allow us to express constraints that cannot be expressed using supercase.
+
+324
+01:04:21,588 --> 01:04:44,648
+Bunu daha önce söyledim, yani fonksiyonel bağımlı. Burada mesela şöyle bir in-depth, bizim o kritik olan, arzalı olan şemamız bu. Şunun ilk bahsettiğim şey bu. Burada ID ve Department Name'ler, burada Department Name'i, Building'i belirliyor. Department Name'e fonksiyonel bağımlı.
+
+325
+01:04:45,204 --> 01:04:59,724
+Yani anahtar değil, department name. Yani anahtar tanımlarıyla bunu yapamadım. Ekstradan işte fonksiyonel tanımlılık, fonksiyonel bağımlılıkla bu tanımı yaptım. Aynı şekilde budget da gene department name tarafından belirleniyor.
+
+326
+01:05:00,820 --> 01:05:28,760
+Ama bunların arasında hiçbir bağıntı yok, building ile budget arasında. Yani o binayla budget. Çünkü budget tamamıyla departmanla ilgili bir şey. Yani bazen böyle nitelikler arasında hiçbir alaka olmayabilir. Alaka olabilir ama bağımlılık olmayabilir. Ne A ne B'yi ne A'yı belirleyebilir. Yani olayın o semantik kısmında işte bu gibi tanımlarımız var, bu gibi durumlarımız var. Bu bizim.
+
+327
+01:05:28,820 --> 01:05:55,960
+Yani şey yapacak, özetleyecek olacak. Bu bize ne yapıyor işte? Veri tekrarına sebebiyet veriyor. Veri kaybına, yitime sebebiyet veren durumlar ortaya çıkmış oluyor. Evet, burada Department and Building'i belirliyor. ID'de Building'i belirliyor. Yani bu ID, Department ID'de bu Instructor'da bir binaya ait bir hoca.
+
+328
+01:05:56,384 --> 01:06:05,164
+Yani odası orada olduğu için ID de building'i belirliyor diyebiliriz. Yani bu fonksiyonel bağımlılıkları ifade edebiliriz.
+
+329
+01:06:06,864 --> 01:06:15,704
+Ama işte department name salary'i belirlemiyor. Yani işte bizim biraz önceki verdiğimiz örnekte de şunlar, bu iki sarısını belirleme söz konusu değil.
+
+330
+01:06:17,844 --> 01:06:21,384
+Bu fonksiyonel bağımlılıkların kullanımı...
+
+331
+01:06:22,608 --> 01:06:30,988
+We use functional dependencies to test relations to see if there are legal under a given set of functional dependencies.
+
+332
+01:06:33,588 --> 01:06:53,048
+Yani verilen bir fonksiyonel bağımlılık seti için bu tablomuz doğru mu? Yani o küçük dünyadan aldığım fonksiyonel bağımlılık kriterlerini sağlıyor mu o R'nin o R tablosu?
+
+333
+01:06:53,652 --> 01:07:03,352
+Diğer taraftan bir tabloya bakarak o tablodan ben fonksiyonel bağımlılık setini üretebilirim.
+
+334
+01:07:03,635 --> 01:07:21,615
+To specify constraints on the set of legal relations. O legal olan, o küçük dünyadaki o tablolara, o küçük dünyadan ortaya çıkan veriye bakarak bu constraintleri tanımlayabilirim.
+
+335
+01:07:21,615 --> 01:07:28,476
+We say that F holds on R, if all legal relations on R satisfy set of functional dependencies.
+
+336
+01:07:29,076 --> 01:07:37,976
+Specific instance of relation schema may satisfy functional dependency, even if the functional dependency does not hold all legal instances.
+
+337
+01:07:38,376 --> 01:07:47,295
+Yani herhangi bir instansta bir bağımlılık gözüküyor olabilir, ancak bu gerçekçi olmayabilir.
+
+338
+01:07:47,775 --> 01:07:59,635
+Mesela spesifik bir instance mesela düşünelim, instructor'ın bir olgusunu düşünelim, instance'ını düşünelim.
+
+339
+01:07:59,635 --> 01:08:08,596
+Burada mesela hiç isim tekrar etmiyor ise, name, id'yi belirliyor gibi gözükecek.
+
+340
+01:08:09,331 --> 01:08:30,072
+Oysa bu çok gerçekçi değil. Yani sadece bu instanslara bakarak da böyle bu F setini, yani constraint functional dependencies setini, F setini o tablo için tanımlamak da çok isabetli olmayacak.
+
+341
+01:08:30,072 --> 01:08:35,072
+Çünkü bazı olgularda veya birçok olguda mesela böyle gözüktü.
+
+342
+01:08:37,332 --> 01:09:01,752
+ID'yi belirliyor gibi gözüktü. Çünkü buna aksi bir durum ortaya çıkmadı. Yani aynı isimli kişilerle farklı ID'ler gözükmedi. Böyle oluyorsa bunu yazacağız. Ama bu kavramsal, mantıksal olarak düşünüyoruz. Bu gerçekçi mi? Bu gerçekçi değil. Çünkü aynı isimli hocalar olması bekleniyor yani. Ama ortaya çıkmamış yani şu anda.
+
+343
+01:09:04,659 --> 01:09:16,760
+Diğer bir şey, trivial denilen, yani basit, çok kolay ortaya çıkartılabilecek olan şeyler var, fonksiyonel bağımlılıklar var.
+
+344
+01:09:17,139 --> 01:09:22,920
+Mesela şöyle bir fonksiyonel bağımlılıkta ID ve NAME'in ID'yi belirlemesi.
+
+345
+01:09:23,680 --> 01:09:28,199
+Yani şu iki nitelik grubu, ID ve NAME, ID'yi elbette belirler.
+
+346
+01:09:32,404 --> 01:09:59,984
+İsim tekrar etsin veya etmesin yani. ID tekrar ettiği zaman aynı ID gözükecek yani. Bu trivial. Yani göz ardı edilebilir. Bunu düşünmeye gerek yok. Çünkü bütün nitelikler arasındaki, bütün nitelik kombinasyonları arasındaki bağımlılıkları düşünmeye kalktığımız zaman bunların işte bir kısmı trivial olacak. Yani bahsetmeye değmez yani bunu. Diğer taraftan bu da tabii neyimi belirliyor olacak.
+
+347
+01:10:00,000 --> 01:10:14,000
+Eğer alfa beta fonksiyonel bağımlılık ifadesinde beta alfanın alt kümesi ise, yani şema noktasında beta alfanın alt kümesi ise o zaman bu trivial olacaktır.
+
+348
+01:10:17,939 --> 01:10:43,159
+Kayıplı, kayıpsız dekomposition için, şimdi daha tam normalizasyona şey yapmadık ama kayıpsız olabilmesi için burada şöyle bir tanımımız var. Yani bir parçalamayı, dekomposition'ı tanımsız yapabilmemiz için kuralımız burada J1 ve J2'nin kesişiminin,
+
+349
+01:10:45,939 --> 01:11:02,519
+Yani R2 is lost to decomposition if at least one of the following dependencies is in F plus. Yani F'in kapanışında, F fonksiyonel bağımlılık setinin kapanışında bütün F artı onu ifade ediyordu. F artı.
+
+350
+01:11:09,583 --> 01:11:20,323
+Eğer ya R1 ya R2 belirliyor ise, yani onun anahtarı ise, kendi de etkiyi, anahtarı ise, bütün o R tablosunu belirlemesi anahtar oluyor.
+
+351
+01:11:21,804 --> 01:11:30,583
+İşte fonksiyonel bağımlılık olarak o R1'i belirliyorsa, bütün o tabloyu belirlediği için anahtar ise, o zaman bu...
+
+352
+01:11:31,091 --> 01:11:44,431
+Bu parçalamamız, lostless, kayıpsız bir parçalamadır. Yani ben bunları join ettiğim zaman bir bilgi kaybım olmuyor. Lostless join decomposition olmuş oluyor.
+
+353
+01:11:44,431 --> 01:11:46,431
+Burada...
+
+354
+01:11:48,212 --> 01:12:16,092
+Buradaki bu şart, buradaki şeyin, fonksiyonel bağımlılıkların, fonksiyonel bağımlılık olması. Çünkü bir de başka bağımlılıklar var. Multi-value dependencies var. Onlar 4NF, 5NF'ye baktığı için onlar şu anda, onları hiç düşünmeyelim yani şu günlerin şu kısmını ihmal edebilirsiniz. Onları şey yaptık, düşünmüyoruz.
+
+355
+01:12:16,212 --> 01:12:36,612
+Sadece fonksiyonel bağımlılıklar noktasında değerlendiriyoruz. Yani burada bu parçalama yaptığım zaman kesişimi, o şemanın kesişimi, eğer her iki tablodan bir tanesini fonksiyonel olarak belirliyor ise, o zaman burada bir veri kaybı olmayacak.
+
+356
+01:12:38,496 --> 01:12:48,755
+El kaybı olmayacak. Mesela şöyle bir parçalama düşünelim. ABC şeması, AB ve BC fonksiyonel bağımlılıkları var.
+
+357
+01:12:49,587 --> 01:13:00,147
+Yani gerçek hayatta tam yola çıkarak işte bunu basitleştirdik. A, B, C isimleri dedik burada. Şöyle bir fonksiyona bağımlılık setimiz olsun.
+
+358
+01:13:00,747 --> 01:13:14,287
+Burada eğer şöyle bir parçalama yaparsak, A, B ve B, C diye yaparsak, bunun iki şemanın kesişimi olan B, R1 veya R2 belirliyor mu? Bunu belirliyor.
+
+359
+01:13:14,703 --> 01:13:37,523
+Yani şuradaki B, R1, R2'nin kesişimi olan B, şu R2'yi belirliyor. B, BC'yi belirliyor. B, C'yi belirlendiği için B'de BC'yi belirliyor. Çünkü hem B, B'yi belirliyor, B, C'yi belirliyorsa, B, BC'yi belirliyordur. Böyle olunca o zaman bu lost is decomposition.
+
+360
+01:13:38,100 --> 01:13:51,180
+O zaman buraya siz ne yazarsanız yazın, yani B için burada tekrar olsun. Biraz önce kim örneğini vermiştik, kim isim neler olduğu zaman, aynı isimler olduğu zaman, yitim olmuştu.
+
+361
+01:13:51,180 --> 01:14:06,100
+Burada B için, yani bu tabloya hangi veriyi yazarsanız yazın, B, C'yi belirlediği için, burada zaten kimden iki tane gözükmeyecek, iki tane...
+
+362
+01:14:06,100 --> 01:14:13,520
+Aynı kim gözükmeyecek yani. O yüzden burada bir şey, o bilgi kaybı olmayacak.
+
+363
+01:14:16,659 --> 01:14:21,399
+Bu şekilde parçaladığımız zaman, demek ki yitimsiz bir parçalama olacak.
+
+364
+01:14:22,920 --> 01:14:30,380
+Diğer taraftan şöyle bir parçalama olsun, A, B, A, C, A, B, A, C olarak parçalama olsun.
+
+365
+01:14:30,380 --> 01:14:38,360
+O zaman bunun iki şamanın kesişimi olan A, ne yapıyor?
+
+366
+01:14:41,140 --> 01:15:01,579
+A kesişimi burada AB'yi belirlediği veya AB'yi belirlediği için, AB'yi belirliyor veya AAB'yi belirlediği için, yani kesişimi olan AR'ye 1'i belirlediği için, anahtar olduğu için, o zaman yine yitimsiz bir parçalama oldu.
+
+367
+01:15:01,952 --> 01:15:10,631
+Buraya hangi veriyi, instansı düşünürseniz düşünün, hangi siteye durumu örneklendirirseniz örneklendiririn fark etmez.
+
+368
+01:15:10,631 --> 01:15:18,432
+Bu iki tabloyu JOIN yaptığınız zaman bir yitim görmeyeceksiniz. Bunu deneyin mesela.
+
+369
+01:15:23,347 --> 01:15:44,688
+Diğer bir, şimdi hep burada tanımlar var. Birazdan bunları kullanarak BCNF'yi tanımayacağız. Yani şimdiye kadar ne tanımları yaptık? Fonksiyonel bağımlılık, anahtar ve yitimli ve yitimsizlik kompozisyon tanımları yaptık ve bununla ilgili bir örnek verdik.
+
+370
+01:15:44,688 --> 01:15:50,967
+Ve şimdi de dependency preservation ile ilgili bir tanımımız var.
+
+371
+01:15:51,347 --> 01:15:53,667
+Burada
+
+372
+01:15:53,667 --> 01:15:55,907
+Şimdi
+
+373
+01:15:55,907 --> 01:15:59,827
+Saat 2.10 geçiyor. Şimdi bir ara verelim arkadaşlar.
+
+374
+01:16:01,087 --> 01:16:02,608
+Hattı da koparmadan çünkü
+
+375
+01:16:02,608 --> 01:16:03,868
+Host
+
+376
+01:16:03,868 --> 01:16:07,127
+Olduk biz şimdi tekrar host olmazı olur.
+
+377
+01:16:07,547 --> 01:16:08,528
+Siz orada durun.
+
+378
+01:16:10,108 --> 01:16:10,948
+20 dakika
+
+379
+01:16:10,948 --> 01:16:14,768
+20 dakika kadar bir ara verelim. Olur mu?
+
+380
+01:16:16,688 --> 01:16:17,567
+Görüşmek üzere.
+
+381
+01:39:46,163 --> 01:39:47,884
+Evet arkadaşlar, devam ediyorum.
+
+382
+01:39:53,908 --> 01:40:14,128
+Diğer bir kriterimiz de dependency preservation. Bu decomposition'da bazen decomposition'dan dolayı, bu tablonun parçalanmasından dolayı dependency'leri tek bir tabloda preserve edemiyoruz.
+
+383
+01:40:14,543 --> 01:40:16,624
+Bu manayı taşıyor.
+
+384
+01:40:16,923 --> 01:40:17,724
+Tek bir tabloda.
+
+385
+01:40:18,364 --> 01:40:28,484
+Çünkü fonksiyonel bağımlılıkların tek tabloda kalması bunların kontrolü noktasında oldukça işi kolaylaştırıyor.
+
+386
+01:40:28,916 --> 01:40:42,716
+Yani farklı tablolara dağıldığı zaman bu fonksiyonel bağımlılığın, bağımlılık meselesi farklı tablolara dağıldığı zaman bunun, bu kriterin check edilmesi.
+
+387
+01:40:44,787 --> 01:41:02,467
+Sistem için daha fazla bir yük olmuş oluyor. Şimdi burada zaten bütün meselemiz, bahsettiğimiz kavramlar ne üzerine dönüyor? Anahtar ve fonksiyonel bağımlılık. Bunlar esasında bir veri tabanı bütünlüğü noktasında kısıtlarımız.
+
+388
+01:41:02,467 --> 01:41:12,567
+Yani olayın teorisinde veya böyle formal ifadelerinde bu geçen kavramlar esasında veri bütünlüğü, doğruluğu, bütünlüğü noktasında.
+
+389
+01:41:12,787 --> 01:41:17,807
+kısıtları aynı bir check kısıtı gibi, bir association gibi, bir trigger gibi mesela.
+
+390
+01:41:19,636 --> 01:41:23,416
+Yani oradaki yaptığımız o kısıtlar veya yabancı anahtar kısıtı gibi.
+
+391
+01:41:23,876 --> 01:41:28,355
+Yani onlardan farklı bir şey, yani kavram olarak farklı bir şey söylemiyoruz esasında.
+
+392
+01:41:28,355 --> 01:41:34,936
+Fakat ekstra buna ek olarak anahtarla beraber kendi de etkiyi ve fonksiyonel bağımlılıktan bahsettik.
+
+393
+01:41:35,275 --> 01:41:42,456
+Bu fonksiyonel bağımlılık, bağımlılığı esas alarak bu normalizasyonu yapıyoruz.
+
+394
+01:41:42,836 --> 01:41:46,576
+Bu normalizasyonda da işte verinin parçalanması söz konusu.
+
+395
+01:41:47,636 --> 01:41:49,976
+gereksiz yine nemeler var.
+
+396
+01:41:50,644 --> 01:42:18,644
+O gereksiz yinelemeleri için decomposition yapmam lazım. O decomposition'da da işte iki tane mesele karşıma çıktı. O da lossless, yani yitimli, yitimsiz durumu. Bir de ikinci mesele de işte şimdi dependency preservation. Yani bu konunun böyle kendine göre bir terminolojisi var, bir şeyi var. İşte manası da yani böyle dilimiz döndüğü kadar bu manayı yani tabanına.
+
+397
+01:42:18,644 --> 01:42:40,324
+doğruluğunu esas alan bir, iyi bir tasarım olması noktasında. Şimdi burada bir örnek var, o daha güzel istiyor da şurada şu maddeleri okuyalım. Ben de eksik benim anladığımı ben sizinle paylaştım. Şimdi şurayı okuyalım, eksik olan bir şey var mı? Ona bakalım. Testing functional dependencies constraints each time the database is updated can be costly.
+
+398
+01:42:40,916 --> 01:42:49,836
+İşte trigger gibi mesela, değil mi? Diğer şeylerde mesela bahsettiğimiz o, bunun veritabanı noktasında, her bir işlemde bunun test edilmesi kolay değil.
+
+399
+01:42:50,316 --> 01:42:54,876
+It's useful to design the database in a way that constraints can be tested efficiently.
+
+400
+01:42:55,656 --> 01:43:03,856
+If testing a functional dependency can be done by constantly just one relation, then the cost of testing this constraint is low.
+
+401
+01:43:04,192 --> 01:43:12,952
+Biraz önce söylediğim gibi, demek ki bu kısıtın test edilmesi, yani bu bir trigger'lı olabilir, bu test etme şekillerini gördük zaten.
+
+402
+01:43:13,952 --> 01:43:22,432
+When decomposing a relation, it is possible that it is no longer possible to do the testing without having to perform a Cartesian product.
+
+403
+01:43:26,392 --> 01:43:28,312
+When decomposing a relation,
+
+404
+01:43:30,068 --> 01:43:41,568
+bir relationı decompose ettiğimiz zaman, it is possible that it is no longer possible to do testing without having to perform Cartesian product produced.
+
+405
+01:43:41,568 --> 01:43:56,328
+Yani biz bir tabloyu ikiye ayırdığımız zaman, bütün kısıtlar tek bir tabloda kalıyor ise, bütün fonksiyonel bağımlılık kısıtlarımız kendi tablolarında kalıyor ise,
+
+406
+01:43:59,572 --> 01:44:17,212
+O zaman bir naturally join veya cartesian product arkada yapmaya gerek duymadan bu testleri yapabiliriz. Beklentimizde ideal durumda bu zaten istenilende. İşte burada bu kavram ortaya çıkıyor. Dependency preserving. İşte şu son madde.
+
+407
+01:44:27,572 --> 01:44:43,351
+Burada benim dependency, fonksiyonel bağımladıklarım, decomposition neticesinde farklı tablolara dağıldıysa, o zaman buna dependency preserving, maalesef dependency preserve olmadı diyoruz.
+
+408
+01:44:44,735 --> 01:45:10,796
+O zaman bunu şöyle şekillendirdiğin örnekle şey yaptığımız zaman tabii daha iyi anlaşılıyor. Burada şöyle bir şema olmuş olsun. Bu şema esasında bir törneri bir bağıntının bir şeması. Bunu kitapta, bunun küçük dünyasını güzel açıklıyor. Merak edenler oraya bakabilirler. Veya hemen açayım şurada. Şuraya bakıyor.
+
+409
+01:45:19,891 --> 01:45:24,431
+Şöyle bakıyor, öyle şekil görüyorsunuz değil mi? Kitapta şekil 7-6.
+
+410
+01:45:26,652 --> 01:45:33,951
+Buradan böyle bir küçük dünyadan yola çıkarak şöyle bir tablo oluşturduğumuzu düşünelim.
+
+411
+01:45:34,551 --> 01:45:37,811
+Bu tablodaki fonksiyonel bağımlılıklar şöyle olmuş olsun.
+
+412
+01:45:38,323 --> 01:45:42,323
+instructor, department name'i belirliyor.
+
+413
+01:45:42,643 --> 01:45:47,523
+Instructor, department name'i. Yani bir instructor, bir departmana ait.
+
+414
+01:45:48,063 --> 01:45:54,323
+Bununla beraber bir öğrenci, bir departmanda bir instructor'a bağlı.
+
+415
+01:45:54,323 --> 01:46:05,923
+Şimdi burada, advise etme, yani danışmanlık hadisesini takip ediyor bu şamanın bu kısmı, bu tablo.
+
+416
+01:46:06,323 --> 01:46:30,603
+Ve kısıtlarımızda bunlar. Yani bir instructor, bir departmana ait ve bir öğrencinin de, student ifade ediyor, instructor değil, bir öğrencinin de bir departmanda bir tane hocası var. Oldukça gerçekçi. Ama bir studentın birçok advisori de olabilir bu arada. Ama farklı departmanlardan.
+
+417
+01:46:31,028 --> 01:46:57,327
+Her hocada farklı departmana bağlıysa, her hocanın bir tek departmanı var ise, o zaman bu double major müessesesi diyelim, yani bir öğrenci double major yapıyorsa veya işte birçok major varsa, aynı anda iki tane bölümü bitirmeye çalışıyorsa, o zaman her bölümde şeyi var, danışmanı olabilir.
+
+418
+01:46:57,855 --> 01:47:12,015
+Şimdi bu bizim ilk tasarımımızdan, yani bu üniversite veritabanı şemasına baktığımız zaman orada bir öğrencinin bir danışmanı vardı. Bir danışman da birçok öğrenciyi idare edebilirdi. Yani bire enlik bir bağıntı vardı orada.
+
+419
+01:47:12,467 --> 01:47:32,087
+O nispeten kolaydı ama double major'ı, double major'ı, buradaki bu senaryoyu ifade edemiyordu. Şimdi eğer böyle bir küçük dünya olmuş olsa, işte buna ait olan eternity şemimiz de böyle olacak. Yani bir öğrencinin bir departmanda bir tane instructor var.
+
+420
+01:47:32,532 --> 01:47:40,432
+Bir öğrencinin, buradan bir numune aldık, bir departmanda bir tane instructor'ı var. Şu biri ifade ediyor.
+
+421
+01:47:41,432 --> 01:47:52,912
+Gene instructor'ın bir departmanda birçok öğrenci idare edebilir. Bir öğrencinin, işte bir instructor, bir departmanda danışmanı olacaktır.
+
+422
+01:47:52,912 --> 01:47:57,572
+Yani bizim önceki yaptığımız şeyle esasında tanıma da denk geliyor.
+
+423
+01:47:59,699 --> 01:48:10,019
+Burada, in the above design, we are forced to repeat the department name once for each time an instructor participates in a department-advisor relationship.
+
+424
+01:48:10,019 --> 01:48:25,380
+Yani bir öğrenci için, instructor, we are forced to repeat the department name once for each time an instructor participates in a department advisor.
+
+425
+01:48:25,859 --> 01:48:27,699
+Yani bir öğrencinin bir...
+
+426
+01:48:27,699 --> 01:48:34,739
+bölümde bir danışmanına, bir danışması olmasını enforce ettik yani, onu zorladık.
+
+427
+01:48:38,036 --> 01:48:56,516
+To Fix This, buradaki parçalama neticesinde herhangi bir parçalama, herhangi bir parçalama da SID, Department Name, ID, bu fonksiyonel bağımlılığı aynı tabloda tutmamız mümkün olabilir mi?
+
+428
+01:48:57,203 --> 01:49:20,844
+Olamaz. Çünkü, yani burada hangi parçalama yaparsak yapalım, şu fonksiyonel bağımlılık, yani SID, Department Name'in, Instructor ID belirlemesi, yani şu ikisi şunu belirliyor. O zaman, herhangi bir decomposition'da, burada dependency preservation yapamayacağız.
+
+429
+01:49:22,228 --> 01:49:39,448
+Örneğin mesela işte şu ikisini şöyle parçaladık. Örnek var mı arkada? Örnek. Şu şey de var. Boyz kodu tanımadıktan sonra var. Şurada var. Şurada karşımıza çıkıyor.
+
+430
+01:49:41,011 --> 01:49:57,731
+O yeri geldiği zaman, BCNF tanımını yaptıktan sonra, buradaki bunun BCNF olmadığını ve parçalama neticesinde de dependency projel etmediğini söyleyeceğiz.
+
+431
+01:49:58,031 --> 01:49:59,831
+Tamam mı? Şimdi bu burada kalsın.
+
+432
+01:50:00,000 --> 01:50:21,779
+Yani ama şu anda bu tablomuzda eğer böyle bir küçük dünya için böyle bir fonksiyonel bağımlılık seti ortaya çıktıyse o zaman bu fonksiyonel bağımlılık seti ile ben buradaki herhangi bir parçalamayı, decomposition'ı ona niye gerek duyduk?
+
+433
+01:50:21,840 --> 01:50:28,000
+Çünkü işte formu sağlamıyor, normalize edilmesi lazım. Tamam onu göreceğiz şimdi. Herhangi bir parçalama yapmam lazım.
+
+434
+01:50:28,000 --> 01:50:38,000
+Herhangi bir parçalamada, hiçbir parçalamada bu fonksiyonel bağımlılığı, şu fonksiyonel bağımlılığı tek bir tabloda muhafaza edemedik.
+
+435
+01:50:38,368 --> 01:50:46,728
+Muhafaza edemediğimiz için de bu tür parçalanmaya dependency preservation olmadığına dair söyleyeceğiz.
+
+436
+01:50:46,807 --> 01:50:50,668
+Dependency preservation olmadığını söyleyeceğiz.
+
+437
+01:50:51,208 --> 01:50:54,788
+Yani bağımlılığı tek tabloda koruyamadık.
+
+438
+01:50:55,148 --> 01:51:01,228
+Şimdi yapacağımız tanımlar da, normalizasyon tanımlarında BCNF ve 3NF var.
+
+439
+01:51:01,228 --> 01:51:02,868
+Bunlar en yaygın kullanılanlar.
+
+440
+01:51:03,568 --> 01:51:06,047
+Diğer 1NF, 2NF'den de bir parça bahsedeceğim.
+
+441
+01:51:06,368 --> 01:51:21,668
+Tekisunuda. Fakat BCNF, 3NF, 2NF, 1NF bunlar bu sırada birbirlerini teyit ediyorlar, kapsıyorlar. Yani BCNF ise bir form, aynı zamanda 3NF. 3NF ise aynı zamanda 2NF. Böyle.
+
+442
+01:51:22,420 --> 01:51:29,460
+O zaman en katısı, yani en böyle kısıtı ağır olan BCNF formu.
+
+443
+01:51:29,720 --> 01:51:42,760
+BCNF formu sağlıyorsa fakat bu biraz önceki yaptığım mesela dependency preservation'ı sağlayamıyor.
+
+444
+01:51:42,760 --> 01:51:45,740
+Yani o noktada bir yük oluyor sisteme.
+
+445
+01:51:46,160 --> 01:51:46,860
+Çünkü bu ne dedik?
+
+446
+01:51:50,420 --> 01:52:10,900
+Bu dependency, fonksiyonel bağımlılık birçok tabloya dağılması nedeniyle de bunun takibi noktasında bir performans problemi ortaya çıkıyor. Ama kısıt noktasında, veri bütünlüğü noktasında BCNF en ideali veya en kapsamlısı. Çünkü 3NF'yi falan kapsıyor.
+
+447
+01:52:11,347 --> 01:52:20,087
+Şimdi bu tanımlara gelelim ve BCNF ile de 3NF arasındaki farkı değinelim ve birkaç örnek yapıp dersimizi bitireceğiz.
+
+448
+01:52:21,368 --> 01:52:25,807
+Yani işte bir 5-6 sunu burada var, bir de benim kendi sunularımdan örneklere bakacağız.
+
+449
+01:52:25,948 --> 01:52:33,887
+Şimdi burada kurallar var fakat bu kuralların tatbiki noktasında da bunun teorisi de var.
+
+450
+01:52:34,887 --> 01:52:39,347
+Onlar sonraki sunularda onlara girmeyeceğiz ama arkada öyle bir şey olduğunu da...
+
+451
+01:52:39,347 --> 01:52:43,328
+söyleyeyim veya onu düşünerek bu kuralları tatbik ederim.
+
+452
+01:52:43,328 --> 01:52:56,748
+Erudation schema R is in BCNF with respect to a set of F of functional dependencies for all functional dependencies in F plus of the form alfa beta.
+
+453
+01:52:57,288 --> 01:53:07,328
+Alfa ve beta için şu kurallar ise, bu kurallar sağlanıyor ise alfa ve beta, yani bu tablo üzerinde birim...
+
+454
+01:53:07,347 --> 01:53:16,488
+tanımladığı, ortaya çıkan fonksiyonel bağımlılık seti için alfa, beta, trivial ise zaten bir problem yok.
+
+455
+01:53:16,587 --> 01:53:23,087
+Trivial o. Yani beta, alfanın alt kümesi falan ise burada zaten bir problem yok.
+
+456
+01:53:23,087 --> 01:53:26,347
+Ama böyle bir şey değil ise, trivial değil ise,
+
+457
+01:53:27,155 --> 01:53:44,836
+non-trivial ise, yani önemli bir fonksiyonel bağımlılık ise, işte burada alfa, süper key olması, yani bütün fonksiyonel bağımlılıklarda, sol taraf alfa, anahtar ise, süper key ise, o zaman bu BCNF'dir.
+
+458
+01:53:45,184 --> 01:54:05,243
+Kural böyle. Şimdi bakalım, burada bu bizim şemamız için, bu BCNF mi? Buradaki bağımlılıklarım Department Name, Building ve Budget'ı belirliyor. Bu Department Name, Super Key olmadığı için bu BCNF değil. Bu kadar.
+
+459
+01:54:05,648 --> 01:54:24,448
+bunun BCNF olmadığını hükmettik. BCNF olmadıysa da, demek ki bu normal formu sağlamıyor, o zaman parçalamam gerekiyor. Bunun parçalanmasında parçalama algoritması var. Şimdi ona girmeyeceğim işte, ondan bahsetmeyeceğiz, o kısım zor.
+
+460
+01:54:33,648 --> 01:54:59,908
+Burada BCNF'yi sağladığını göreceğiz. Bu parçalamayı şöyle şu ve department name bu kısım olmak üzere ikiye ayırsak. Bu parçalamanın kuralı belli ama o kural nasıl oluyor? Şimdi bu kural burada yazıyor ama bunun işte sebebinin sebebi noktasında başka şeyler de var.
+
+461
+01:55:01,648 --> 01:55:10,207
+Let R be a schema R that is not in BCNF, let alfa, beta be the FD that causes the violation of BCNF.
+
+462
+01:55:11,167 --> 01:55:14,247
+We decompose R into alfa ve beta.
+
+463
+01:55:15,967 --> 01:55:29,127
+Alfa ve alfa beta, eğer BCNF kuralını bozan bir bağımlılık ise, alfa, betayı aynı şemada topluyorum.
+
+464
+01:55:29,568 --> 01:55:43,087
+Ve diğer parçaya, şemanın parçaladığım diğer kısma ise şu gruplara, şu niteliklere atıyorum.
+
+465
+01:55:43,627 --> 01:55:49,568
+Yani beta'dan alfayı çıkartıyoruz ve R'den de onu çıkartıyoruz.
+
+466
+01:55:50,195 --> 01:56:17,135
+Geriye alfa kalıyor. Yani çıkardıktan sonra alfa, bizim o yabancı anahtar olmuş oluyor. Yani iki tablo arasındaki şey olmuş oluyor. Şimdi bizim biraz önceki şu örneğimizde bozan, yani şurasıydı. BCNF'yi bozan burasıydı. Çünkü department name alfa burası, beta burasıydı. Beta'dan şu alfayı çıkardığımız zaman şu kalıyor zaten.
+
+467
+01:56:18,195 --> 01:56:27,395
+Beta burası oldu. Building ve Budget kalıyor. İşte bunu, bunu şuradaki Z'den,
+
+468
+01:56:27,695 --> 01:56:48,195
+Bütün R'den çıkardığımız zaman da bu kalmış oluyor. O yüzden bunu, bununla beraber şu olmuş oldu, ID, NAME, Department, NAME, Salary, şuna, şu kısım oldu, ID, NAME, Department, NAME, Salary, değil mi? ID, NAME, Department, NAME, Salary oldu.
+
+469
+01:56:55,695 --> 01:57:12,315
+alfa, beta fonksiyonel bağımladığı için şemayı, ikisini birleştirdim. Yani burada alfa, beta ne? Boğazan kısım şurası, burası. O zaman üçünü birden birleştirdik. Bu oradan geldi. Daha sonra şu formülü tatbik ettik. Bu buradan geldi.
+
+470
+01:57:12,703 --> 01:57:32,344
+Böylece bu iki parçalama neticesinde BCNF'yi bozulan herhangi bir şey kalmadı. Çünkü burada Department of Building ve Budget'ı belirliyor. Fonksiyonel bağımlılıklar bunlar. Başka fonksiyonel bağımlılık yok. Çünkü bize verilen şuradaki şey de fonksiyonel bağımlılıklar bunlar.
+
+471
+01:57:33,984 --> 01:57:44,864
+Bunlar. O zaman burada kalmadı. Burada da BCNF'yi bozacak bir şey kalmadı. Çünkü buradaki bütün fonksiyonel bağımlılıklarda alfa olan taraf her zaman anahtar.
+
+472
+01:57:45,864 --> 01:57:51,864
+Mesela şöyle bir işlemi düşünelim. AB'yi belirliyor, BC'yi belirlesin.
+
+473
+01:58:02,739 --> 01:58:20,279
+Şuradayız değil mi? Burada mesela, AB'yi belirliyor ise, buradaki alfa olan A, A, A, anahtar mı? Yani bütün tabloyu belirliyor mu? Kısıtımız şuydu.
+
+474
+01:58:26,815 --> 01:58:44,775
+Bu fonksiyonel bağımlılıklardan yola çıkarak A'nın A, B, C'yi belirlemesi sağlanıyor mu? Yani bütün tabloyu belirlemesi. A, B, B, C olduğu için A bütün tabloyu belirliyor.
+
+475
+01:58:45,844 --> 01:59:00,604
+Evet, o zaman burada BCNF'yi bozan bir durum yok. Peki burada B'nin C'yi belirlemesinde bir problem var mı? B, C'yi belirliyor ama C, A'yı belirlemiyor.
+
+476
+01:59:01,460 --> 01:59:17,820
+Yani takiben B anahtar olduğunu hükmedebileyim. Demek ki burada B bu alfa beta bağıntısında, buradaki B anahtar olmadığı için bu B, CNF değil.
+
+477
+01:59:17,820 --> 01:59:24,820
+Yani bu fonksiyonel bağımlılıklar altında bu şemamız B, CNF formunda olmadığına...
+
+478
+01:59:25,268 --> 01:59:30,787
+Kanatımız haslı oldu. Böyle olduğu için burada bunu parçalamam gerekiyor.
+
+479
+01:59:31,731 --> 01:59:56,892
+Şimdi parçalayalım. Bunun kesişimi, bir kere BC'yi aldık. BC'yi aldık. Alfa, beta'yı alıyoruz. Daha sonra beta'dan alfayı çıkartıyoruz. Yani C'den B'yi çıkardık. Yine C kaldı. Ve bunu da R'den çıkartıyoruz. Yani şu R'den C'yi çıkardık. Şu kısım kaldı. Yani parçalamamız, BCNF formu için parçalamamız böyle oldu.
+
+480
+02:00:00,000 --> 02:00:27,980
+Bakacağımız şey ise, bunun acaba iki tane kritere bakacağız bu parçalamamızda. Acaba yitimli mi oldu, yitimsiz mi oldu? Lostness dependency. Evet, bu yitimsiz oldu. Evet, yitimsiz oldu. Yitimli olmadı. İyi yani. Bunun kriteri neydi? Bu parçalamada, bu R1, R2 parçalamasında ortak olan nokta B, o B, R1 veya R2'yi belirliyor mu? Evet, R2'yi belirliyor.
+
+481
+02:00:28,000 --> 02:00:50,400
+Yani şu, bu kriteri, bu testi yapmıştık daha evvelden. İşte o yüzden bu bizim bu parçalamamız nispeten şimdilik iyi gidiyor. Yani hem BCNF'yi sağlamadı, tamam onu hallettik, BCNF haline getirdik ve bu hale getirdiğimiz zaman lostless join oldu. Tamam bir de dependency preserve ediyor mu?
+
+482
+02:00:56,000 --> 02:01:13,060
+her bir bağımlılık tek tabloda halloluyor mu? AB, AB, evet oluyor. BC, BC oluyor. Demek ki burada da dependents'ı prozerv edilmiş. Yani şu, şuradaki işlemimiz başarılı bir şekilde tamamlandı.
+
+483
+02:01:14,400 --> 02:01:14,760
+Ancak
+
+484
+02:01:16,212 --> 02:01:34,992
+Şöyle bir parçalama yapmış olsaydık, yani bize verilen kuralların haricinde şöyle bir parçalama yapmış olsaydık, A, B, A, C diye parçalamış olsaydık, bu gene itimsiz, tamam ama dependency preserving şey olmadı.
+
+485
+02:01:36,992 --> 02:01:39,372
+Bu dependency preserve edilmedi.
+
+486
+02:01:39,760 --> 02:01:56,779
+Niye? Çünkü bu parçalamada A, B'yi burada yakalıyorum ama B, C'yi tek tabloda yakalayamıyorum. Burada B buradayken C'ye burada. Bunun test edilmesi biraz zor olduğu için buna da Dependency Proje edilmedi diyoruz.
+
+487
+02:01:57,203 --> 02:02:08,343
+Fakat burada BCNF'yi sağlatmak için yaptığım parçalama da bu değil bu arada. Ama böyle parçalamış olsak problem olacaktır.
+
+488
+02:02:08,343 --> 02:02:24,343
+Şimdi BCNF'deki problem ise, BCNF'nin çok katı olması, bunun sebebinde bazı parçalamaların, BCNF decomposition'larının bazılarının maalesef dependency producer edememesi oluyor problemi.
+
+489
+02:02:25,203 --> 02:02:33,263
+Ama her zaman lossless join ediyor bu parçalama. Lossless join ediyor. Ama dependency preserve etmiyor.
+
+490
+02:02:33,684 --> 02:02:52,583
+Mesela, işte biraz önceki örneğimizde şu, bu örneğimizi tekrar buraya taşıdık. Bunun BCNF olmadığını görmemiz lazım. Bu da bu bağımlılıklar altında, şu fonksiyonel bağımlılıklar altında, yani o da, bunlar da o küçük dünyadan alındı.
+
+491
+02:02:52,583 --> 02:03:01,024
+Yani bir öğrencinin bir bölümde en fazla bir danışmanı olmasını yansıtan fonksiyonel bağımlılıklar.
+
+492
+02:03:01,684 --> 02:03:09,243
+Farklı bölümlerde farklı danışmanları olabilir. Farklı hocalar, o bölüme ait olmak üzere kendi danışmanları olabilir dedik.
+
+493
+02:03:10,804 --> 02:03:19,364
+Şimdi burada o zaman bu fonksiyonel bağımlılıklara bakarak bunun BCNF olup olmadığına bakalım.
+
+494
+02:03:19,923 --> 02:03:28,043
+Mesela şu alfa, beta. Alfa, beta. Alfa burada anahtar mı? Instructor ID anahtar mı?
+
+495
+02:03:28,916 --> 02:03:40,136
+Bu EID, EID, Department name'i belirliyor fakat Instructor ID burada anahtar değil.
+
+496
+02:03:41,136 --> 02:03:42,195
+Anahtar değil.
+
+497
+02:03:44,819 --> 02:04:01,719
+EJNF olması için bu alfanın anahtar olması gerekiyordu. Anahtar değil. Çünkü burada instructor ID tekrar ediyor. Yani bir öğrencinin, bu bir instructor sadece bir öğrencinin hocası değil. Başka öğrencilerin de hocası.
+
+498
+02:04:02,095 --> 02:04:19,635
+O cihetten bakıldığı zaman şurası anahtar. O zaman bunun BCNF'yi bozan bir şey bu. Şu. BCNF'yi bozan bir şey, fonksiyonel bağımlılık kısmı burası. BCNF'yi bozan kısmı burası.
+
+499
+02:04:19,635 --> 02:04:30,095
+Buna baktığımız zaman burada SID ve Department Name AID'yi belirlemesi. Yani bir öğrencinin...
+
+500
+02:04:30,095 --> 02:04:52,015
+SIL departmanda bir tane instructor'ın olması hadisesi. Burada alfa olan, alfa taraf bu taraf. Alfa, süper keyimi, SIL departman sadece bir kez tekrar ediyor. Yani bir öğrencinin bir departmanda bir hocası olması. Evet, gerçekten bu bir kez ortaya çıkıyor. O zaman burası anahtar.
+
+501
+02:04:52,435 --> 02:05:04,215
+Anahtar olduğu için burası BCNF'yi bozmuyor. Ama nihayetinde bu fonksiyonel bağımlılık seti için, böyle bir küçük dünya için bu tablomuz bizim BCNF'yi sağlamıyor.
+
+502
+02:05:04,215 --> 02:05:05,215
+Yani...
+
+503
+02:05:05,231 --> 02:05:24,231
+Veri tekrarı var. Arkada gizli bir veri tekrarı var. İşte bu da ta dersin başında bahsettiğim işte consistency problemi veya işte yer kaybı veya işte bilgi kaybı gibi durumlara sebebi. Yani bunu örneklendirebiliriz. Oraya benzer şekilde örneklendirebiliriz burada da.
+
+504
+02:05:24,231 --> 02:05:31,811
+Şimdi o zaman bunu, konuyu dağıtmayalım. O zaman bunu BCNF'e yapmak için BCNF'yi bozan kısım neydi? Buydu.
+
+505
+02:05:32,159 --> 02:05:54,000
+İşte bunu alıp bir tablo yaptım. Bir. Diğer tablo ise alfa, beta, beta x alfa, yani department name'i buradan çıkarmak olacak. Yani SID, EID olacak.
+
+506
+02:05:56,079 --> 02:05:57,800
+SID, EID.
+
+507
+02:05:58,484 --> 02:06:10,484
+ve EID, department name. Yani bunun decomposition'ında karşıma çıkacak olan şey ne? Tablolar. Burada yazılmış gerçi ama ne olacak?
+
+508
+02:06:12,864 --> 02:06:22,484
+Bir daha söyleyelim. R'den department name'i çıkartacağım. Yani SID, EID olacak ve
+
+509
+02:06:22,863 --> 02:06:42,843
+Alphabet'ın kendisi zaten. EID Department'in bulacak. Yani bu iki tablo şeklinde, bu iki şema, alt şema şeklinde bunu ifade ettiğim zaman zaten BCNF'yi bozacak bir durumda söz konusu olmamış oluyor. Çünkü her iki tabloda da o belirleyenler anahtar olmuş oldular.
+
+510
+02:06:50,863 --> 02:07:12,143
+Fonksiyonel bağımlılık, dependency preserve olmadı. Çünkü bu bütün nitelikleri içeren bir fonksiyonel bağımlılık. Benim tablolarımda parçalandığı zaman EID bir tarafa gitti, department hem diğer tarafa gitti. Yani bunu ikisini, iki tarafı da aynı tabloda toparlayamamış olduk.
+
+511
+02:07:13,140 --> 02:07:41,020
+Evet, BCNF bu cihetten biraz ağır, yani kısıtı ağır diyelim. Buna alternatif olarak da diğer bir hafif versiyonu olan bir 3. normal form var. Bu 3. normal form da BCNF'nin biraz gevşek hali. İlk iki maddesi BCNF ile aynı. Fakat bunlar olmuyorsa, şu sağlanıyorsa bu 3NF'dir diyoruz.
+
+512
+02:07:41,140 --> 02:08:03,880
+Yani, at this one of the following holds, yani bizim R şeması üzerindeki, R şemasındaki tanımlanan bir F fonksiyonel bağımlılık seti için, bu R'nin 3NF olması için,
+
+513
+02:08:04,243 --> 02:08:12,223
+Yani BCNF'nin bir gevşek formu olan 3NF olabilmesi için aşağıdakilerden bir tanesini sağlaması lazım.
+
+514
+02:08:12,627 --> 02:08:29,707
+Bunlardan bakın, dikkat ederseniz, ilk iki madde BCNF. Yani bunları sağlasa tamam, gayet güzel. Demek ki zaten BCNF yani. Dedik ya çünkü BCNF aynı zamanda 3NF'yi sağlıyor. Yani onu kapsıyor. O zaman zaten BCNF olmuş oluyor.
+
+515
+02:08:29,707 --> 02:08:38,707
+Ama tek şey, kriter de bu kadar ağır değil. Bunlar sağlanmıyorsa da şöyle bir gevşeklik, şu da olsa olur. Yani...
+
+516
+02:08:39,007 --> 02:09:03,587
+İç atribüt, B'den, şuradan B'den alfayı çıkardığım zaman, geriye kalan her bir nitelik, eğer bir anahtar, bir anahtar, aday anahtar içerisinde, yani minimal süper key içerisinde geçiyor ise, o zaman bu 3NF'dir.
+
+517
+02:09:04,819 --> 02:09:26,139
+Nereden çıktı diyeceksiniz veya buradaki bu şeyi, bunun sebebini anlamak tabii çok kolay değil. Arkada üstü örtülü bir şey var. Ama hani çok da gerek yok şu anda. Hani onu o şeyi iyi hata etmek şeyi. En azından bunu bir de şöyle ifade edebiliriz.
+
+518
+02:09:28,948 --> 02:09:51,668
+anahtar dışındaki, anahtar olmayanlar, yani onlara asal olmayan deniyor, diğer bir ifadeyle, asal olmayan nitelikler arasında geçişli bağımlılık olmamasına denk geliyor bu esasında. Yani arkadaki lojik onu gerektiriyor.
+
+519
+02:09:54,452 --> 02:10:10,552
+Geçişli bağımlılık yok ise, asalı olmayan nitelikler arasında, herhangi bir anahtara dahil olmayanlar arasında, geçişli bağımlılık yok ise, o zaman 3NF'dir diyoruz. Bu şu ifadeye denk geliyor.
+
+520
+02:10:12,595 --> 02:10:21,216
+If a relation is in BCNF, it is in 3NF. Yani BCNF, bunu zaten sağlar.
+
+521
+02:10:21,216 --> 02:10:28,435
+Third condition is minimal relaxation of BCNF to ensure dependency preservation.
+
+522
+02:10:29,095 --> 02:10:32,176
+İşte burada bunu niye yaptık?
+
+523
+02:10:32,560 --> 02:10:53,360
+BCNF'yi böyle gevşeterek esasında dependency preserving'i sağlamış olduk. Bu ciltte bir şey var, avantajı var. Şimdi 3NF önleni de verip bu sunuyu bitirmiş olacağız.
+
+524
+02:10:58,612 --> 02:11:05,552
+Yani 3NF ile BCNF ile hafif bir karşılaştırma yapışı ilk 31 sunuyu bitirmiş olacağız.
+
+525
+02:11:07,220 --> 02:11:26,420
+Evet. Bundan sonra 4NF'lere falan gidiyor. Daha yüksek NF formulara falan gidiyor. Oralara girmeyeceğiz. Buraya kadar yapmış olalım. Bakın 3NF örneği. Bu kuralın tatbik edilmesi. Şimdi yine aynı örneğimiz şu öğrenci danışmanlık hadisesi. Fonksiyonel kısıtlarımız bunlar idi.
+
+526
+02:11:26,899 --> 02:11:46,239
+Buradaki candidate keylerimiz de bunlar. Yani anahtar olabilecek olanlar bunlar. SID Department Name. Bunların da belirlenmesi tabii belli bir kuralla oluyor. Gerçi burada hemen bunu bulabiliriz.
+
+527
+02:11:46,239 --> 02:11:54,899
+Çünkü kombinasyon çok fazla olmadığı için hangileri anahtar olabilir dediğimiz zaman teker teker tek lider'e bakacağız. İki lider'e bakacağız.
+
+528
+02:11:54,899 --> 02:12:02,119
+Üçlülere bakacağız zaten. Eğer ikilerde de yoksa üçlüler olabilir. Yani minimal süper key olacak.
+
+529
+02:12:02,440 --> 02:12:16,060
+Candidate key dediğim zaman. Yani SID Department name mesela. Burada o küçük dünyaya göre SID Department name o tablonun tapılarını unik olarak belirliyor.
+
+530
+02:12:16,060 --> 02:12:21,920
+Çünkü öğrencinin bir departmanda bir tane instructor olabilir. Ama bu minimal mi? Evet.
+
+531
+02:12:22,899 --> 02:12:48,440
+Öğrenci tekrar edebilir mi? Evet, edebilir. Çünkü double major yapıyor ya, bir öğrencinin başka bir departmanda hocası olabilir. SID tekrar edebiliyor. Yani şunu çıkardığım zaman bu anahtar olamadı. Bunu çıkardığım zaman departmanda da tabii birçok öğrenci var. Bu da tabii ki tekrar edecek. Bu da anahtar olamadı. O zaman demek ki bu minimal süper key. Tamam. Diğer bir minimal süper keyyim, yani candidate keyyim, SID, EID.
+
+532
+02:12:49,395 --> 02:13:13,355
+SID, ikisi birden. Bu ne demek? Bir hocanın, bir öğrencinin bir şeyi, bir öğrencinin bir danışmanı. Bu tekrar edebilir mi? Bu tekrar edemez. Yani başka departmanlardaki danışmanlık noktasında da tekrar edemez. Çünkü instructor bir departmana ait.
+
+533
+02:13:14,131 --> 02:13:42,072
+Yani dedik ya, bir öğrencinin başka bölümlerde hocaları olabilir. Eğer şu kısıt olmasa, bu öğrencinin başka bölümlerde aynı hocası danışman olabilir idi. Ama şu da onu ortadan kaldırmış oldu. Çünkü bir instructor bir departmana ait. O zaman bir kişi double yapıyorsa, başka departmandaki hocası da farklı bir hoca olmaya durumu söz konusu oldu.
+
+534
+02:13:42,131 --> 02:13:50,011
+O zaman SID, EID bir daha tekrar etmeyeceği için şu, bir daha tekrar etmeyeceği için bu da anahtar oldu.
+
+535
+02:13:50,891 --> 02:13:58,011
+Diğer anahtar, diğer candidate anahtarlar zaten ne bu tek başına, ne bu tek başına.
+
+536
+02:13:58,452 --> 02:14:24,832
+instructor tek başına, ne student tek başına olmuyor. Yani ikililere baktık. Diğer son kalan ikili ise o da anahtar olamayacağını söyleyebiliriz. O da ne? Şu ikiliyi aldık, bu ikiliyi aldık, şu instructor department name. Şuradaki instructor department name niye candidate key olmadı? Instructor department name candidate key olmadı.
+
+537
+02:14:25,619 --> 02:14:27,340
+O da olabilir esasında sanki.
+
+538
+02:14:29,399 --> 02:14:49,659
+Instructor ID, Department Name, bu minimal süper key mi, candidate key mi, bu bir kere, yani süper key değil.
+
+539
+02:14:51,155 --> 02:14:58,216
+Instructor ve Department name. Bu zaten kendisi Superkey değil. Minimal olsun. Minimal değil.
+
+540
+02:14:59,028 --> 02:15:17,007
+Minimal olmamak da veren kendisi de hatta değil. Çünkü bir departmanda bu instructor birçok öğrenciye zaten danışmanlık yapıyor. O zaman bu zaten tekrar ediyor. O yüzden bunu şuradaki candidate key listemize almadık.
+
+541
+02:15:27,028 --> 02:15:55,007
+setlerini bulmam lazım. Candidate key setlerini bulmam lazım. Bunu biraz daha kural haline ben getirdim veya başka bir yerden bulmuştum onu. Diğer sunuda var o. Ona açınca bakacağız ama böyle ufak olan bir tablo için bu yani o kurallara çok muhtaç olmadan diyelim burada bunu halledebildik. O zaman Candidate setimiz böyle. Şimdi bakalım 3NF'nin kuralına.
+
+542
+02:15:55,028 --> 02:16:15,828
+Burada bir kere bunun BCNF olmadığını zaten hükmettik. Çünkü şu anahtar, şu anahtar değil, şu anahtar olmadığı için bunun şey olmadığına, BCNF olmadığına hükmettik. Peki, 3NF'ye mi?
+
+543
+02:16:16,372 --> 02:16:43,051
+3NF için de bir gevşek olan üçüncü bir maddemiz var idi. Bu BCNF'yi bozan, neydi o? BCNF'yi, iç attribüt şu, buradaki, iç attribüt B-alpha, candidate key içerisindeyse,
+
+544
+02:16:43,440 --> 02:16:46,440
+R'de, candidate key, içerisindeyse.
+
+545
+02:16:49,100 --> 02:16:53,560
+Each attribute, farklı candidate keylerde olabilir.
+
+546
+02:16:55,400 --> 02:17:01,340
+Bu, her bir, her bir fonksiyonel bağımlılık için buna bakacağız.
+
+547
+02:17:02,260 --> 02:17:08,780
+Her bir fonksiyonel bağımlılık için, beta-alpha'nın, candidate key olup olmadığına bakacağız.
+
+548
+02:17:08,780 --> 02:17:09,960
+Mesela burada,
+
+549
+02:17:10,420 --> 02:17:28,360
+Beta X'e alfa dediği şu, department name, department name bir candidate key'in içerisinde mi? Evet, içerisinde. Şuradaki beta X'e alfa ne? EID içerisinde mi? Evet, şurada kendi etkin içerisinde.
+
+550
+02:17:28,360 --> 02:17:37,860
+İşte böyle olduğu için, yani burada onu söylüyor, SID department name is a super key.
+
+551
+02:17:38,291 --> 02:17:45,511
+EID Department'ı belirliyor.
+
+552
+02:17:49,587 --> 02:17:53,987
+Evet, bu hesabı, yani beta x alfayı yaptı, department name.
+
+553
+02:17:55,887 --> 02:18:02,987
+Evet, department name de, şuradaki department name de, candid etkin içerisinde.
+
+554
+02:18:04,268 --> 02:18:07,148
+Evet, şundan bahsediyoruz.
+
+555
+02:18:07,148 --> 02:18:09,948
+Şu department name.
+
+556
+02:18:10,451 --> 02:18:38,451
+den şunu çıkardık. Yani beta, eksi, alfa, department name. Department name de şu şeyin içerisinde olduğu için, bir kendi detkinin içerisinde olduğu için o zaman bu bizim 3NF'yi sağlıyor. O zaman netice itibariyle şuradaki bizim bu formumuz, bu tablomuz BCNF'yi sağlamadığını neden dolayı? Şundan dolayı. Çünkü EID süper.
+
+557
+02:18:38,451 --> 02:18:46,531
+süper key değil. EID süper key değil. Ama SID departmentı değil mi süper key? Orada bir sorun yok.
+
+558
+02:18:46,531 --> 02:18:57,271
+Şunu, onu söyle. SID departmentı değil mi süper key? Orada bir sorun yok. Ama burada EID süper key değil. O zaman BCNF'yi sağlamıyor.
+
+559
+02:18:59,796 --> 02:19:21,136
+İşte burada da onu söylüyor, EID, NATA, SUPERKey. Fakat buradaki beta-alpha formulizasyonunda neticesinde, yani şuradaki bu kuralı tatbik ettiğimiz zaman, beta-alpha dediğimiz zaten department name. Department name'i kendi de etkiyle geçtiği için bunun 3NF olduğuna hükmettik. 3NF olduğunu söyledik.
+
+560
+02:19:27,123 --> 02:19:37,943
+Bu gevşeklikten dolayı problem ne? Redundancy. BCNF katı olduğu için orada bir problem yok.
+
+561
+02:19:39,523 --> 02:19:45,484
+Yani eğer fonksiyonel bağımlılıklar söz konusuysa, yani bizim konu kapsam içerisinde sadece onları değerlendirdik.
+
+562
+02:19:45,763 --> 02:19:52,824
+Başka multi-value tarzında bağımlılıklar var, onu tanımlamadık. Onlar söz konusuysa BCNF de yeterli olmayacak.
+
+563
+02:19:52,824 --> 02:19:55,023
+4NF, 5NF ve başka diğer.
+
+564
+02:19:55,123 --> 02:20:12,903
+Normalizasyonlar var. Onlar konu harici. Onu söyledik. 3NF'li demek ki problem redundancy problemi. Fakat avantaj ne? Dependancy preservation. Yani bağımlılıkların tek tabloda korunması.
+
+565
+02:20:19,252 --> 02:20:29,252
+Advantage to 3NF over BCNF, it's always possible to obtain 3NF design without sacrificing lostness or dependency preservation.
+
+566
+02:20:29,531 --> 02:20:36,891
+Hem dependency preservation hem lostness, kayıpsız parçalamayı 3NF muhafaza ediyor.
+
+567
+02:20:37,363 --> 02:20:48,984
+Ama 3NF'de ne var? Problem ne? Null value'lar, we may have to use null values to represent some of the possible meaningful relationships among the items.
+
+568
+02:20:48,984 --> 02:21:00,363
+Ve aynı zamanda kısıtlar gevşediği için biraz daha veri bütünlüğü noktasında repetition of information mevzusu karşımıza çıkabiliyor.
+
+569
+02:21:01,907 --> 02:21:22,407
+Mesela bir R şemasında, şöyle bir R'de, şöyle bir F fonksiyonel bağımlılıkları olmuş olsun. Yani C, K, L'yi belirliyor, L'de K'yı belirliyor olsun. Bu BCNF değil.
+
+570
+02:21:23,059 --> 02:21:30,459
+Örneği yapın artık, bunun niye BNF olmadığını. Artı, fakat 3NF olduğunu söyleyebiliriz.
+
+571
+02:21:30,995 --> 02:21:57,235
+3NF ise, bu şöyle bir instance, böyle bir olgu noktasında, böyle bir olgu olabilir. Çünkü madem böyle bir şemamız var, bu şema 3NF'yi sağlıyor, parçalamadım. Yani 3NF'ye kanaat ediyorsam, BCNF olmasını istemiyorsam, 3NF'ye kanaat ediyorsak, bu bir derece normalizasyonu sağlıyor.
+
+572
+02:21:58,995 --> 02:22:14,675
+Burada bazı instanslarda şöyle nulllar olabilir ve bilgi tekrarı olabilir. Mesela işte şurada L1K1, L1K1, L1K1 bunların bilgi tekrarı ve null değerler ortaya çıkabilir.
+
+573
+02:22:15,252 --> 02:22:33,152
+Evet, o zaman buradaki sunuları karşılaştırmayı da yapmış olduk. Buraya kadar o zaman anlatmış olduk. 7.31, yani ilk bu sunudaki 31 sayfayı, 7. çeptirdeki ilk 31 sayfayı anlatmış olduk.
+
+574
+02:22:43,252 --> 02:22:46,852
+Şunu açıyorum.
+
+575
+02:22:50,211 --> 02:22:56,352
+Evet. Burada da şimdi
+
+576
+02:22:57,971 --> 02:23:25,112
+Burada Türkçe bir sunu bu. Burada bunları çalışırsınız. Yani aynı şeyler tekrar ediyor burada konunun işte ana hatlarıyla. Bunlara anomallik deniyor. İşte iyi bir ilişkisel model şaması için guideline'lar. Eğer burada bir yer kaybı veya update anomalliler var ise bu iyi değil. Bunu iyileştirilmesi gerekiyor, normalize edilmesi gerekiyor.
+
+577
+02:23:25,971 --> 02:23:39,631
+Bu da anamori ifadesi geçiyor. Biraz önce kullanmadık. O kitapta kullanmıyordu anamori ifadesini. Yani bu nihayetinde işte şu, aynı kapıya çıkıyor. Yani eklemelerde veya çıkarmalarda veya bilgi update'lerinde.
+
+578
+02:23:44,340 --> 02:23:50,819
+Böyle anormallikler oluyor gibi. Burada bununla ilgili bir örnek var, bunu anlarsınız.
+
+579
+02:23:52,819 --> 02:23:59,500
+Ben kolay, yani evvelten anlattıklarımızdan yola çıkarak anlayabileceğiniz kısımları hızlı geçiyorum.
+
+580
+02:24:01,108 --> 02:24:22,227
+Burada işte veriyi birleştirdiğimiz zaman, yani aynı tabloda hem employee hem departmentı aynı tabloda birleştirmek yaptığımız zaman veya employee ile projeyi birleştirme yaptığımız zaman normalizasyon ihtiyacı ortaya çıkıyor. Veya işte buradaki problemleri görüp bunu parçalamamız gerekiyor.
+
+581
+02:24:22,543 --> 02:24:30,363
+O zaman demek ki, yani ilk etapta biz böyle bir kavramsal tasarım, ER diyagramından sonra
+
+582
+02:24:32,211 --> 02:24:38,932
+Malum olan, daha önceden gördüğümüz bir takım kurallarla, işte bir enlik şöyle oluyor dedik, en enlik böyle oluyor dedik mesela.
+
+583
+02:24:39,451 --> 02:24:42,151
+Değil mi? Onlara bakarak böyle dönüşüm kuralları tanımamıştık.
+
+584
+02:24:42,252 --> 02:24:46,551
+Karşımıza böyle bir ilişkisel model tabloları çıkıyor esasında.
+
+585
+02:24:46,551 --> 02:24:57,391
+İşte bu tabloların üzerinde eğer işte böyle bir durum söz konusuysa bunları tespit etmek.
+
+586
+02:24:57,811 --> 02:25:03,691
+Bir de işte her bir tabloda o küçük dünyaya has olarak fonksiyonel bağımlılık setini tanımlamak.
+
+587
+02:25:04,404 --> 02:25:31,043
+O fonksiyonel bağımlılıklar içerisinde o tablolarımız bizim işte BCNF mi, değil mi, onları tespit etmek. Değil ise işte parçalama yapmak, daha da parçalama yapmak. Yani dediğim gibi bu normalizasyon meselesi bizim bu normal tasarımımızdan sonrasında oluşturduğumuz ilişkisel model tabloları üzerine bir cila gibi. Onu böyle daha emniyetli hale getirmek maksadıyla yapılan bir işlem.
+
+588
+02:25:31,424 --> 02:25:50,184
+Burada işlevsel bağımlılıkları tanımlıyor. Burada bir olgu üzerinde işlevsel bağımlılıkla ilgili şeyler var. Burada biraz önce tanımladığımız o trivial, non-trivial, geçişli, biraz daha bunları maddeler halinde ifade etmiş. Bunları örneklendirmişiz.
+
+589
+02:25:55,343 --> 02:26:02,963
+Bu dönüşlülük, arttırma, geçişlülük, günleşim, bunun hepsini zaten intüitif olarak söyleyebiliriz.
+
+590
+02:26:04,543 --> 02:26:08,304
+Yani Y, X'in alt kümesi ise X, Y'yi belirliyor.
+
+591
+02:26:08,755 --> 02:26:20,075
+X, Y'yi belirliyorsa, X, Z, Y'yi belirliyor mesela. Değil mi? Bu X, Y'yi zaten belirliyorsa, X'in yanına bir tane nitelik koyduğun zaman, tabii ki X, Z, Y'yi belirliyordur.
+
+592
+02:26:20,075 --> 02:26:34,515
+Yani hepsinde böyle, tabii ki diyebileceğim ifadeler bunlar. Geçişliği de bahsetmiştik zaten. Birleşim de gene öyle. Yani X, Y ve X, Z ise X, Y, Z'de bunu böyle yazabilirim.
+
+593
+02:26:34,995 --> 02:26:40,295
+Ayrıştırmada ise bunu böyle ayrıştırabilirim.
+
+594
+02:26:41,475 --> 02:26:44,095
+Ve geçişicilik noktasında da şunu da yazabilirim.
+
+595
+02:26:44,175 --> 02:26:45,915
+Şunlardan yola çıkarak bunları da yazabilirim.
+
+596
+02:26:45,915 --> 02:26:55,115
+O zaman şöyle bir R şeması üzerinde, şöyle bir fonksiyonel bağımlılık seti ise acaba bunlar olabilir mi?
+
+597
+02:26:55,507 --> 02:27:18,268
+Bunları, bu çıkarımı yapabilirsiniz artık. Yani yukarıdaki bu kurallara, bunlara da Armstrong aksiyonları deniyor. Yani oldukça kolay. Yani çok zor bir matematiksel veya düşünsel olarak çok zor bir şey yok burada. Bu çıkarımları yapabiliriz. İşte bu çıkarımları kullanarak bu fonksiyonel bağımlılıklar altında bu fonksiyonel bağımlılık var mı?
+
+598
+02:27:18,644 --> 02:27:27,004
+İşte bunlardan yola çıkarak da bize verilen bir F seti için F artı yani kapanışı.
+
+599
+02:27:27,379 --> 02:27:50,579
+kapanışını bulabiliriz. Bir setin, bir fonksiyonel bağlamak setinin tam closure'ı, kapanışını bulabiliriz. Bununla ilgili, yani bu algoritma diyor ama, bu ileride bahsettiğim, biraz önce bahsettiğim, bu konunun zor olan, çok, yani biraz daha zor olan algoritmalarından değil, basit algoritmaları ben buraya sadece almışım.
+
+600
+02:27:50,896 --> 02:28:00,936
+Böylece şöyle bir R şeması içerisinde verilen şu fonksiyonel bağımlılıklardan yola çıkarak bunun böyle kapanışını bulabiliriz.
+
+601
+02:28:01,587 --> 02:28:20,108
+Diğer bir tanım, kanonik örtü. Yani minimal F seti, minimal fonksiyonel bağımlılık seti. Bu da tam tersi. Yani bize verilen bir, o küçük dünyadan yola çıkarak tanımladığımız bir fonksiyonel bağımlılık seti var.
+
+602
+02:28:20,564 --> 02:28:33,943
+Acaba o minimal mi? Onun minimal olması için de şu aşamalar, bu şartların olması gerekiyor. Yani işlevsel bağımlıklarının sol tarafı birbirinden farklı değil mi?
+
+603
+02:28:34,420 --> 02:28:49,319
+ve artık işlevsel bağımlılık var mı? Artık var ise o artıyı çıkarmamız lazım ki kanonik örtüyü bulayım. Bu kanonik örtüminin anahtarları belirlememde kullanıyoruz.
+
+604
+02:28:49,319 --> 02:28:54,319
+Yani biraz önce bahsettiğim nokta burasıydı. Biz biraz önceki örneğimizde...
+
+605
+02:28:55,156 --> 02:29:07,416
+Candidate key'leri öyle düşünerek bulduk. Yani şeyde de herhalde sınavda da öyle olur. Yani tabii tam da kesin konuşmayayım yani.
+
+606
+02:29:07,416 --> 02:29:22,296
+Kanonik örtü bulma noktasında, şey, Candidate anahtarları bulma noktasında, yani o küçük dünyaya bakarak, o kombinasyonları değerlendirerek hangilerinin Candidate key olduğunu tespit edebilirim.
+
+607
+02:29:23,156 --> 02:29:49,636
+3NF'de kullanacağım. 3NF olup olmamada kullanacağım. BCNF'de değil de, 3NF'yi tespit ederken kullanacağız onu. Ama eğer şemamız biraz daha karmaşıksa, şöyle bir şey ise mesela, bize verilen fonksiyonel bağımlılıklar böyleyse, burada kanonik örtüden yola çıkarak, burada kendi etkiyileri bulacağız.
+
+608
+02:29:50,164 --> 02:29:58,324
+İşte artık şuradaki, şurada zannedersem, süper anahtar.
+
+609
+02:30:01,704 --> 02:30:06,344
+Neyse, burada da bayağı notlar var imiş. Hepsini tabii yapmayacağım da.
+
+610
+02:30:14,899 --> 02:30:18,319
+Aday anahtarların belirlenmesine düşmüş, şurasıydı.
+
+611
+02:30:30,227 --> 02:30:45,707
+Şunu tanımlayalım, şu kanonik örtüyü. Kanonik örtüyü anahtar tanımlamada kullanacağız. Burada kanonik örtü dediğimiz zaman şu kriterlerin sağlanması gerekiyor.
+
+612
+02:30:45,707 --> 02:30:55,947
+Mesela bunlar için BC, CA olduğu için sadece BA var, onu çıkardık o zaman.
+
+613
+02:30:57,523 --> 02:31:00,304
+ve CA.
+
+614
+02:31:02,203 --> 02:31:09,703
+BCA'yı da
+
+615
+02:31:09,703 --> 02:31:12,323
+hem bunu çıkardık. Çünkü
+
+616
+02:31:12,323 --> 02:31:14,843
+BCA'da
+
+617
+02:31:14,843 --> 02:31:18,144
+BA'yı, CA'yı belirliyor.
+
+618
+02:31:19,144 --> 02:31:20,523
+BA'yı,
+
+619
+02:31:20,523 --> 02:31:23,563
+CA'yı belirliyor.
+
+620
+02:31:24,884 --> 02:31:33,403
+Pardon. Şu BC ve BC'yi belirliyor, CA'yı belirliyor.
+
+621
+02:31:37,583 --> 02:31:38,423
+BC.
+
+622
+02:31:41,484 --> 02:31:47,243
+Bize verilenler bunlar. Bize verilenler bunlar değil mi? Fonksiyonel bağımlık seti bunlar.
+
+623
+02:31:48,443 --> 02:31:50,743
+Buradan şu
+
+624
+02:31:51,443 --> 02:31:53,004
+Şu kanonik örtüyü bulacağız.
+
+625
+02:31:54,123 --> 02:31:58,423
+Bulduğumuz kanonik örtü, önemsiz, kısmı ve geçişli bağımlılık olmamalı.
+
+626
+02:31:58,504 --> 02:31:59,304
+Geçişli bağımlılık.
+
+627
+02:31:59,363 --> 02:32:02,703
+Burada mesela geçişli bağımlılık var mı?
+
+628
+02:32:03,144 --> 02:32:03,384
+Var.
+
+629
+02:32:04,023 --> 02:32:07,523
+Yani BC, CA, BA.
+
+630
+02:32:08,063 --> 02:32:09,304
+O zaman şunu çıkartıyoruz.
+
+631
+02:32:09,683 --> 02:32:10,763
+Bir kere bunu çıkarmamız lazım.
+
+632
+02:32:10,863 --> 02:32:11,703
+Geçişli bağımlılık.
+
+633
+02:32:15,028 --> 02:32:24,968
+Bununla beraber neyi çıkardık? Şunu da çıkardık, şunu. Çünkü bunu şunlardan yola çıkarak türetebiliriz. Nasıl türettik?
+
+634
+02:32:28,907 --> 02:32:40,968
+B, C, B, A. Yani B, A'yı belirliyorsa, C, A'yı belirliyorsa, B, C'de A'yı belirliyordur. Değil mi? Yani B, A'yı, C, A'yı belirliyorsa.
+
+635
+02:32:42,064 --> 02:32:48,684
+Şuna benzer şekilde şuradaki BA'yı
+
+636
+02:32:48,684 --> 02:32:53,584
+şu ifade
+
+637
+02:32:53,584 --> 02:32:58,744
+BA'yı, CA'yı belirliyorsa, BC'de A'yı belirliyordur.
+
+638
+02:33:03,123 --> 02:33:03,504
+Sure.
+
+639
+02:33:07,059 --> 02:33:32,860
+Yani çok ifade edince sanki zormuş gibi gözüküyor. Sadece çok da zor değil. Hem geçişliliği kaldırdık hem de şuna ihtiyaç kalmadı. O zaman şu ikisi kaldı. BC ve CA bunlar kalmış oldu. İşte bu benim kanonik örtü. Çünkü artık bu artıkları attıktan sonra geriye kalan bunu, bütün bu kriterleri sağlıyor.
+
+640
+02:33:34,592 --> 02:33:49,211
+Bu işlevsel bağımlılıklardaki sol taraf birbirinden farklı oluyor. Burada daha biraz daha güzel bir örnek var. Bunu da bu çıkarım yapabilirsiniz. Şurada yaptığımız gibi. Ona benzer şekilde bu çıkarımı yapabiliriz.
+
+641
+02:33:49,211 --> 02:33:52,372
+Şimdi bunu geçtim. Bu örneği yaparsınız.
+
+642
+02:33:58,388 --> 02:34:10,688
+F'den, F setinden bir tane eser bağımlılığı çıkardığım zaman, eğer bu F tekrar üretilebiliyor ise, o zaman F artık bağımlılıktır diyor.
+
+643
+02:34:11,067 --> 02:34:17,768
+Biraz tabii burada işin teorisine giriyor. Esasında buraya çok girmeyecektim de.
+
+644
+02:34:17,768 --> 02:34:25,268
+Esen de şunları ben yapacaktım. Tabii onlardan önce bunları şey yaptığı için, bunları şey yaptık.
+
+645
+02:34:25,551 --> 02:34:42,772
+Yani genel olarak esasında şunu sadece yapalım, sadece bu kısmı yapalım. Normalizasyon adımlarında 1NF, 2NF, 3NF ve BCNF'den bahsettik.
+
+646
+02:34:45,907 --> 02:35:04,887
+İLİN sağlıyorsa, diğerleri zaten sağlanıyordur. Bunlardan bahsettik. Ve sadece BCNF ve 3NF'yi tarif ettik. Diğerlerini bunları tarif etmedik. Çünkü zaten otomatik olarak bunları da sağlıyor. Burada onlarla ilgili tanımlar da var. Yani 2NF ile ilgili tanımlar da var şurada.
+
+647
+02:35:05,396 --> 02:35:29,996
+Bunları da okuyabilirsiniz. Ama kitapta hiç bunları bahsetmemiş zaten. Şimdi onlara da, bunları da tanımlarsak biraz da kafa karışacak. O yüzden bu örnekleri de sadece BCNF, 3NF noktasında değerlendirip yaptığımız örnekten yola çıkarak bu çıkarımları da yapabilirsiniz diye düşünüyorum.
+
+648
+02:35:30,995 --> 02:35:36,235
+Evet, burada işte Elma Aslında Metin'in kitabından alınmış örnekler var.
+
+649
+02:35:40,095 --> 02:35:48,515
+Evet, burada da yine ilişkilerin ayrıtırılmasıyla ilgili LOST'ız veya LOSİ'ler var.
+
+650
+02:35:49,175 --> 02:35:54,515
+Yitimsizlik koşulları var. Bunları anlattık yani. Anlattığımız kısımlar bunlar.
+
+651
+02:35:56,468 --> 02:36:02,048
+Evet arkadaşlar, tersi bitiriyorum o zaman, sizden de bir şey gelmeyince.
+
+652
+02:36:03,868 --> 02:36:04,608
+Hocam bir şey sorayım mı?
+
+653
+02:36:05,148 --> 02:36:05,708
+Evet.
+
+654
+02:36:06,408 --> 02:36:07,747
+Haftaya ders olacak mı?
+
+655
+02:36:08,148 --> 02:36:10,988
+Yok, olmayacak. Cuma günü sadece sınav 10'da.
+
+656
+02:36:14,548 --> 02:36:14,988
+Tamam.
+
+657
+02:36:16,868 --> 02:36:17,788
+Tamam hocam, sağ olun.
+
+658
+02:36:18,747 --> 02:36:20,548
+Oldu, iyi çalışmalar, görüşmek üzere.
+
+659
+02:36:20,548 --> 02:36:21,708
+İyi günler.

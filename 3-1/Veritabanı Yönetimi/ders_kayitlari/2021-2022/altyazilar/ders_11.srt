@@ -1,0 +1,1811 @@
+1
+00:01:16,596 --> 00:01:17,956
+Arkadaşlar, merhabalar.
+
+2
+00:01:21,811 --> 00:01:23,712
+Ses kontrol sesim geliyor mu?
+
+3
+00:01:33,012 --> 00:01:34,971
+Ses, kontrol, sesim geliyor mu?
+
+4
+00:01:37,971 --> 00:01:39,712
+Ben sizi duyabiliyorum.
+
+5
+00:01:40,152 --> 00:01:40,492
+Tamam.
+
+6
+00:01:47,156 --> 00:01:51,736
+Seç kontrolü yaptık. Şimdi paylaşım kontrolü yapalım.
+
+7
+00:01:55,396 --> 00:02:03,956
+Bugünkü dersimizde arkadaşlar B plus 3 indeksiden bahsedeceğiz.
+
+8
+00:02:06,676 --> 00:02:14,596
+Chapter 14, Silbert Schatz'ın kitabında 14. chapterdaki indeksin konusu.
+
+9
+00:02:15,539 --> 00:02:18,620
+Paylaşımı açıyorum sunuyu.
+
+10
+00:02:26,388 --> 00:02:38,247
+Evet, herhalde görüyorsunuz. Şimdi burada geçen hafta genel olarak dosya tiplerini görmüştük.
+
+11
+00:02:38,644 --> 00:03:01,003
+Dosya malum diskteki saklanan mantıksal bir düzenleme neticesinde ortaya çıkan bir yapı dosyalar. Bunlar diske saklanan aynı şemaya sahip olan kayıtların bir eleye getirdiği
+
+12
+00:03:02,451 --> 00:03:16,051
+Bir bilgi topluluğu, işte dosya, bu disteki dosyalar, disteki dosyalarımız, veritabanın tablolarına denk geliyor dedik.
+
+13
+00:03:17,171 --> 00:03:23,031
+Eğer tek bir tabloya denk geliyorsa, buna işte homojen tablo dedik.
+
+14
+00:03:23,512 --> 00:03:28,812
+Veya birden çok tablo, aynı dosya içerisindeyse, bunlara homojen olmayan,
+
+15
+00:03:30,611 --> 00:03:45,471
+Tablolar dedik. Bunların da maksadı işte performansa arttırma odaklıydı. Fakat işte değişkin uzunluklu kayıtlar ortaya çıkacağı için bu da gerçekleşme karmaşıklığını arttırıyordu falan.
+
+16
+00:03:45,919 --> 00:04:06,560
+Bunlardan bahsettik. Geçen haftaki özeti geçiyorum. Geçen hafta yine neden bahsettik? Dosya tipleri olarak homojen olmayan dedik ve yine heap file'dan bahsettik, sequential file'dan bahsettik, clustered file'dan bahsettik, bplustery ve hashing'den bahsettik.
+
+17
+00:04:13,919 --> 00:04:30,240
+Yani heap, file, sequential, file ile ek olarak onların daha ötesinde diyelim onlardan daha da böyle özel bazı yapılar var. Onlar da ağaç yapıları ve hash yapıları.
+
+18
+00:04:31,699 --> 00:04:53,039
+Ağç yapıları dediğimiz zaman bir plastik aklımıza geliyor. Hash yapıları dediğimiz zaman ise static hash veya extendable hash, linear hash gibi böyle yapılar var. Bunlar bu bahsettiğim yapılar veri yapıları ama disk esaslı veri yapıları.
+
+19
+00:04:59,699 --> 00:05:06,411
+göz önüne alarak tasarlanan veriyapıları. Malum veriyapıları ve algoritmaları...
+
+20
+00:05:06,899 --> 00:05:15,199
+Sistemin böyle dönen esas çarkları, böyle esas sistemin core merkezi yani.
+
+21
+00:05:15,739 --> 00:05:31,539
+Severitabanı sistemi içerisinde de bu sistemin böyle gerçek zamanlı, online, işte böyle hızlı çalışmasına imkan sağlayan, olmazsa olmaz olan veri yapıları.
+
+22
+00:05:34,899 --> 00:05:55,159
+İlkdeki tanımlarımız, elimizdeki malzemeler, böyle kavramlar, oldukça böyle üst seviyeyle, uygulamaya kullanıcı tarafına yakın olan yapılardı. Yani biraz daha mantıksal organizasyon. Hani işte view'lar olsun, fonksiyonlar olsun, trigger'lar olsun veya işte tablolarımız olsun falan, şemalarımız.
+
+23
+00:06:02,899 --> 00:06:30,779
+yakın olan yapılardan bahsediyoruz. Bunlar tabii çekirdek olduğu için, o yüzden olmazsa olmaz tabiri kullandım. Ama üst taraftaki böyle şeyler, belki bir view'lar olmasa, veritabanımız yine çalışır. Yani işte bir sürü şey yapabiliriz. Ama bu fiziksel şey olduğu için, fiziksel merkezindeki şey olduğu için oldukça önemli ve oldukça klasik tabii.
+
+24
+00:06:30,899 --> 00:06:40,519
+bu şey, B-Plast 3. Yani B-Plast 3 böyle 80'lerden, 70-80'lere kadar dayanıyor, veri yapısı olarak tasarımı.
+
+25
+00:06:41,179 --> 00:06:50,179
+Ve birçok günümüzde, birçok sistemde kullanılıyor. Evet, çok da şey yapmayalım, uzatmayalım.
+
+26
+00:06:52,115 --> 00:07:07,495
+Burada indeks konusunda genel olarak indeks kavramını görmeye çalıştık. Temel kavramlar, sırada indeksler, B plus 3, B3 ve daha sonra HASHING'den bahsediyor burada.
+
+27
+00:07:15,827 --> 00:07:42,048
+Arama yaptığımız, yani bir sorgulamada üzerinde arama yaptığımız anahtara, SELECT, arama anahtarı diyoruz. Eğer üzerinde arama yaptığımız o anahtar üzerine bir veri yapısı varsa, bir organizasyon varsa, yani B3 veya işte HASH gibi, işte bu aramamız bizim bu veri yapısı sayesinde hızlı olacaktır.
+
+28
+00:07:42,351 --> 00:08:05,072
+Hatta şöyle bir örnek vermiştik. Yani SELECT, FROM, WHERE bir cümlesi düşünelim. Burada bir öğrenci, instructor tablosuna veya şurada, şöyle bir instructor tablosunda, örneğin mesela işte şu şahsı arıyoruz. Kaliferiye arayalım mesela, böyle bir şahsı arayalım.
+
+29
+00:08:05,459 --> 00:08:12,139
+Böyle bir dosya, tabii bu temsili bir dosya. Yani burada milyonlarca kayıt olduğunu düşünün yani burada.
+
+30
+00:08:13,219 --> 00:08:28,919
+Biz böyle bir kaydı arıyorsak, yaptığımız, yani şöyle bir sorgu yazıyorsak, SELECT, FROM, SELECT, işte, SALARY, FROM, INSTRUCTOR, WHERE, NAME, KALİFERİ desek mesela.
+
+31
+00:08:29,919 --> 00:08:33,059
+Tekrar ediyorum. SELECT, SALARY.
+
+32
+00:08:33,460 --> 00:08:40,340
+FROM, INSTRUCTOR, WHERE, NAME, EŞİTTİR, KALIFERİ, DESEM.
+
+33
+00:08:40,620 --> 00:08:46,259
+Yani KALIFERİ isimli hocanın maaşını arıyoruz.
+
+34
+00:08:46,840 --> 00:08:49,960
+Bu INSTRUCTOR, İSTUCTOR tablosundan böyle.
+
+35
+00:08:49,960 --> 00:08:57,860
+Burada böyle bir sorguda arkadaşlar, biz salariyi aramıyoruz.
+
+36
+00:08:58,820 --> 00:09:00,700
+KALIFERİ isimli hocayı arıyoruz.
+
+37
+00:09:01,460 --> 00:09:28,080
+neyim üzerine bir indeksin bir manası var. Burada milyonlarca, diyelim, instructor arasında biz kalifeliye arıyoruz. Arama anahtarımız kalifeli. Arama anahtarımız salary değil. Ama kalifeliye ben eriştikten sonra onun herhangi bir niteliğini öğrenmek istiyorum. Yani kalifelinin maaşını öğrendim. Kalifelinin bağlı bulunduğu departmanı öğrendim, ID'sini öğrendim vs.
+
+38
+00:09:28,724 --> 00:09:45,884
+O yüzden burada o noktaya dikkat etmek gerekiyor. Böyle bir sorguda search key'imiz nedir? Ve o search key'in üzerine indeksin olmasıyla buradaki arama hızımızın son derece artması.
+
+39
+00:09:46,932 --> 00:10:06,792
+Şimdi burada tabii bu artım hani olaya böyle uzaktan baktığımız zaman bu artma miktarı neye bağlı desek? Bu artma miktarı buradaki dosyanın büyüklüğüne bağlı. Yani bu dosya ne kadar büyük ise bu indeksin bize vereceği katkı, fayda o nispetle artacaktır.
+
+40
+00:10:07,135 --> 00:10:14,055
+Ama bu dosyamız ne kadar ufak ise, o zaman o indeksin bir katkısı olmayacak, hatta bir manası olmayacak, hatta zararı olacak.
+
+41
+00:10:14,295 --> 00:10:17,275
+Yani burada ben daha hızlı bulabileceğim onu.
+
+42
+00:10:17,275 --> 00:10:30,715
+Diğer bir unsur, bu birisi de birincisi, yani dosyamızın büyük olması ile indeksin katkısı artıyor, indeksin manası artıyor.
+
+43
+00:10:31,235 --> 00:10:35,095
+Çünkü ben burada indeks kullanmazsam eğer indeksin değil kapalı kutu olsun.
+
+44
+00:10:35,135 --> 00:11:01,855
+bizim için. Birazdan içini açıp bakacağız. Eğer o indeks olmazsa, biz buradaki dosyamızda, biz buradaki dosyamızda, bütün kayıtları sırayla aramamız gerekecek. Bu da son derece yavaş. Ama bir kişi mi kaldı?
+
+45
+00:11:03,316 --> 00:11:04,316
+Herkes çıktı mı?
+
+46
+00:11:07,416 --> 00:11:07,995
+[öğrenci].
+
+47
+00:11:09,776 --> 00:11:11,676
+[öğrenci], sesim geliyor değil mi?
+
+48
+00:11:11,716 --> 00:11:14,176
+Evet, evet. Benim sesim geliyor mu size?
+
+49
+00:11:14,475 --> 00:11:17,156
+Geliyor, geliyor da. Niye diğer arkadaşlar çıktılar?
+
+50
+00:11:17,836 --> 00:11:18,756
+Hocam, bilmiyorum.
+
+51
+00:11:19,876 --> 00:11:23,196
+Ben de bazen kopuyorum da, internetim çok hızlı değil.
+
+52
+00:11:23,936 --> 00:11:24,176
+Evet.
+
+53
+00:11:25,115 --> 00:11:25,916
+Neyse, ben anlatayım.
+
+54
+00:11:25,916 --> 00:11:28,756
+Herhalde, finallere çalışıyorlar.
+
+55
+00:11:29,652 --> 00:11:39,992
+Yani sonuçta bu da dersimizin son dersi. Neyse biz yapalım dersimizi. Artık belki kayıtlardan dinlerler.
+
+56
+00:11:42,580 --> 00:11:59,520
+O zaman demek ki burada böyle bir sırada aramaya alternatif olarak yani bir indeks üzerinden, name indeksi üzerinden burada binlerce kat daha hızlı bir şekilde bu aradığımız kaydı bulabiliriz.
+
+57
+00:12:00,520 --> 00:12:03,700
+Ve onun işte istediğimiz diğer niteliğine erişebiliriz.
+
+58
+00:12:10,580 --> 00:12:17,760
+Bu tablo içerisinde, yani bu tabloda bu kolon içerisinde kaç kez bulunduğu, bu da önemli bir faktör.
+
+59
+00:12:17,760 --> 00:12:27,840
+Bir indeksin bana vereceği fayda noktasında. Eğer bu aradığım o, bu kalifer, kalifer diyelim, bu kalifer burada çok geçiyorsa,
+
+60
+00:12:28,628 --> 00:12:48,488
+Bunun bir tabii ölçütü bir ismi olacak. Buna SELECT, VİT deniyor. Burada çok geçmiyor da ana hatlarıyla yine ben tarif ediyorum. Eğer burada kalifeli çok geçiyorsa o zaman indeksinde bize vereceği fayda gene azalacak. Çünkü ben sequential access yani sırayla buradaki kayıtlara baktığım zaman çok yerde kalifeli yakalayacağım zaten.
+
+61
+00:12:49,203 --> 00:13:09,524
+O zaman indeks üzerinden gidip de daha böyle işi dolaylı olarak böyle indeks üzerinden gidip de buradaki kayıtlara erişmek, ki bunlar da artık kaliteliği dağılmış vaziyette dosyanın her tarafına, o da indeksin kullanım ihtimalini gene azaltacaktır.
+
+62
+00:13:09,748 --> 00:13:37,748
+Evet, o yüzden burada indeks ana haddıyla bakıldığı zaman şöyle, hızlandırıyor. Tamam hızlandırıyor ama böyle çok da masum bir şey de değil. Yani bir dezavantajı mutlaka var. İki önemli dezavantajı var. Bunlardan bir tanesi daha böyle hafif ve o da yer kaplaması. Bu yer meselesi bu dosyaya göre yani dosyalaki nitelik sayısına bağlı olur.
+
+63
+00:13:37,748 --> 00:13:50,067
+Sadece bir nitelik ve bir pointer sakladığı için buradaki şema 10 nitelikten oluşuyorsa, indeksimiz bu dosyanın 10'da 1'i kadar falan olacaktır.
+
+64
+00:13:50,608 --> 00:13:55,388
+50 nitelik içeriyorsa 50'de 1'i kadar falan olacaktır yaklaşık olarak yani.
+
+65
+00:13:55,388 --> 00:14:05,008
+Çünkü indeks dediğimiz şey, veri yapısı, nihayetinde bir dosya, ufak bir dosya.
+
+66
+00:14:05,748 --> 00:14:28,748
+Dosyamızın da bir şeması var. Nasıl bu veri dosyamızın bir şeması olduğu gibi. O dosyamızın da şeması SEARCH KEY, ART, ERID. İşte şurada yazan SEARCH KEY, POINTER. SEARCH KEY'ler, POINTER'ları içeren bir şemada bir dosyamız var. Bu dosyamız...
+
+67
+00:14:29,524 --> 00:14:51,563
+Tabii daha ufak olacak işte. Bir yer kaplayacak. Tamam. Birinci dezavantaj buydu. İkinci önemli dezavantaj tabii burada bir veri tekrarı olması. Yani search key burada bulunuyor. Bir de bu dosyanın üzerinde bir indeks varsa o indekste de o search key tekrar ediyor.
+
+68
+00:14:52,148 --> 00:15:09,548
+Bu tekrar meselesi updatelerde problem oluyor bu seferde. Çünkü ben bu veriye, bu dosyaya bir kayıt eklediğim zaman veya çıkardığım zaman veya bu dosyadaki bir kaydın name niteliğini değiştirdiğim zaman o indeksi değiştirmem gerekiyor.
+
+69
+00:15:09,548 --> 00:15:20,148
+Çünkü artık indeks üzerinden ilişimlerde hatalı olacak. Yani bir tutarlılık, konsistence olması lazım. İki aynı veriyi ben bir...
+
+70
+00:15:20,148 --> 00:15:36,687
+Eğer yazıyorsam, bir dosyaya, bir de indekse yazıyorsam, burada bir veri tekrarı var. Bu da update'lerde konsistensi problemini ortaya çıkaracaktır. İşte ana hatlarıyla bakıldığı zaman indeksimizin, indeks konusundaki böyle temel kavramlar bunlar, bunlar üzerine gidiyor.
+
+71
+00:15:37,107 --> 00:15:55,827
+Burada, indeks için tabii bir performans ölçütleri falan var. Nasıl dosyaya kayıt ekledik, çıkardık, sildik, update ettik, bunun bir gecikme maliyeti var.
+
+72
+00:15:57,587 --> 00:16:14,527
+Onunla ilgili bazı metrikler var. Aynen onun gibi, indeksin de değerlendirilmesinde, yani seçiminin yapılmasında verimli olup olmadığını tespit etmek adına bazı böyle ölçütler var, kriterler var.
+
+73
+00:16:14,947 --> 00:16:24,827
+Bu kriterleri kim kullanıyor desek, bunları veritabanında optimizer, planlayıcı, bu esaslara göre indeksi kullanıp kullanılmayacağına karar veriyor.
+
+74
+00:16:26,611 --> 00:16:37,851
+Evet, böyle temel kavramlarımız bunlar ve burada farklı indeks yapılarından bahsettik. Dense indeks, sparse indeks gibi.
+
+75
+00:16:38,388 --> 00:16:54,448
+ve secondary index gibi. Şimdi kısaca dense index buradaki farklı bütün değerleri, farklı olan bütün niteliklerin indekste bulunması demek oluyordu.
+
+76
+00:16:56,052 --> 00:17:18,592
+Burada mesela şu, şurada ilk olarak şuradaki tabloya bakalım. Bu Instructor tablosunda şu ID'ye göre, şu ID üzerinde bir indeksimiz var. Çünkü bu ID niteliği burada tekrar ediyor ve bir pointerla bu ID'yi içeren kayda gidebiliyoruz.
+
+77
+00:17:18,932 --> 00:17:37,791
+Zaten indeksin manası o. İndekste SEARCH KEY artı POINTER RID var. O zaman o SEARCH KEY benim üzerinde indeksemi yaptım, o niteliği alıyorum. Yani şu değeri aldım, buraya koydum ve oraya gitmek için gerekli olan pointer'ı, bağlantı bilgisini şey yaptım.
+
+78
+00:17:45,119 --> 00:18:07,299
+Bulduğum zaman, direkt dosyaya jump, zıplamak için, böyle direkt gitmek için imkan sağlanıyor. Pointerim oldu. Zaten ana fikrimiz de buydu. Çünkü bu dosya ufak, bu dosya kocaman. Yani ufak olması ve artı, ordered, yani sırada olması, burada aramayı son derece hızlandırıyor.
+
+79
+00:18:08,756 --> 00:18:18,916
+O zaman burada sırada olmasını niye hızlandırıyor desek? Çünkü sırada olduğu zaman binary search yapabiliyoruz veya bitre index'e bunu koyabiliyoruz.
+
+80
+00:18:18,996 --> 00:18:28,936
+Birazdan söyleyeceğimiz nokta olacak. Şimdi burada işte böyle bir yapıda, index'i böyle oluşturuyorsak eğer, böyle bir index organizasyonunda,
+
+81
+00:18:36,756 --> 00:18:47,635
+içerisine geçiyorsa, o zaman buna dense index diyoruz. Geçmediği zaman da, mesela şurada, böyle bir yapıya da sparse index diyoruz.
+
+82
+00:18:47,635 --> 00:19:02,435
+Eğer benim search key'im üzerinde, index oluşturacağım nitelik değeri, eğer burada böyle sıralıysa, buradaki bu dosyamızın,
+
+83
+00:19:03,284 --> 00:19:17,024
+Bazı niteliklerini alıp burada indekse koyduk. Bunu ancak buradaki niteliğin sıralı olmasıyla yapabiliriz.
+
+84
+00:19:17,359 --> 00:19:19,739
+Aksi taktirde diğer kayıtlara erişemem.
+
+85
+00:19:21,339 --> 00:19:30,939
+İşte spars indeksin olabilmesi için burada üzerinde indeks oluşturulan niteliğe göre dosyanın sıralı olması lazım.
+
+86
+00:19:30,939 --> 00:19:34,939
+Çünkü burada eğer...
+
+87
+00:19:35,471 --> 00:20:00,471
+Bu nitelik üzerinde sıraladık söz konusuysa ve bu dosyamızda da şu aralıktaki kayıtlar bir disk sayfasına yerleşiyor ise, malum ondan geçen hafta bahsetmiştik, dosyalarımız böyle disk sayfalarından oluşuyor, peycilerden oluşuyor ve bu peycilerimiz.
+
+88
+00:20:01,491 --> 00:20:10,991
+ana hafızaya getirilip orada işlem yapılıyor. Yani okuma veya yazma gibi işlemler orada yapılıyor. Yazma yapılıysa tekrar o dosya, bunu geri yazıyoruz.
+
+89
+00:20:11,471 --> 00:20:29,271
+İşte burada eğer benim bu dosyam böyle ID niteliğine göre sıralıysa ve bir disk sayfasında işte 4 tane veya bazen 5 tane işte böyle bir şu aralıklarla disk sayfalarında
+
+90
+00:20:29,491 --> 00:20:57,451
+kayıtlar tutuluyorsa, o zaman buradaki sayfaların, disk sayfalarının başındaki değerleri ben sadece şey yapsam, onları indekse koysam, o zaman buna da sparse indeks diyoruz. Yani bunun gerçeklenmesi noktasını söyledim. Yani arka planda burada bu sadece veya şart değil yani disk sayfasının başındaki.
+
+91
+00:20:57,491 --> 00:21:24,951
+değerlerin burada olması şart değil. Yani disk sayfası tanımını unutun mesela. Burada ben bazı nitelikleri bu indeksin içerisine koymakla bunu sparse yaptım. Ancak bunun tek şartı buradaki ID niteliğine göre sıralı olması. Çünkü o zaman buradaki kayıtlara erişebilirim. Yani burada mesela 20 bin ID, ID'si 20 bin olan bir kaydı ararken
+
+92
+00:21:25,491 --> 00:21:37,091
+Bu sefer 20.000'i burada bulamadım ama 20.000 olsa olsa nerededir? 10.000 ile 32.000 arasında şurada bir yerdedir. O zaman şu pointer'a gitmem lazım.
+
+93
+00:21:37,651 --> 00:21:50,731
+Çünkü sırada olduğunu artık biliyorum. Bu spars index olduğu için. Ve 20.000 varsa buradadır diyeceğim. Ama buraya gittikten sonra da burada 20.000'in olmadığını anlıyorum.
+
+94
+00:21:53,491 --> 00:22:20,551
+indeks ve siparişinin önemli bir farkı da açığa çıkmış oluyor. Mesela lookup sorguları denilen böyle sorgular var. Yani bunu bir dosyaya bir kayıt eklerken lookup sorgusu yapıyor sistem. Çünkü eklediğim o kaydın primary key acaba eğer böyle seri değilse, sequential değilse, hani otomatik değilse.
+
+95
+00:22:21,491 --> 00:22:30,051
+Eğer kullanıcı kendisi giriyorsa, o primary key'in tabloda gerçekten olup olmadığını anlamak için lookup yapıyor otomatik olarak.
+
+96
+00:22:30,051 --> 00:22:43,051
+Ve primary key üzerinde de default olarak bir veri yapısı olduğu için bu veri yapısında, bu tabloda kaydın olup olmadığını...
+
+97
+00:22:44,084 --> 00:23:12,084
+anlayabiliyoruz. İşte lookup sorgularında, burada mesela şuradaki, şurada, indekste işi bitirilme imkanı var. Yani index only evaluation yapıyoruz. Yani burada mesela 20.000 arıyorum diyelim, 20.000 ID'si. 20.000 burada olmadığını anlayabiliyorum. Çünkü bu dense index. Ama 20.000'in burada olmadığını anlamak için bu aralıkta
+
+98
+00:23:12,084 --> 00:23:38,443
+olabileceğini tahmin edip buradan dosyaya gidip orada aramam lazım. İşte sparsindex'in bir dezavantajı veya bir şeyi ama tabii önemli bir avantajı ne? Bunun böyle elimdeki kaynak ne kadar olanak veriyorsa yani indeks saklamak için aynı dosyayı bu da bir indeks, aynı dosya bu da bir indeks, bu da bir indeks. Yani bunların hepsinin büyük yükleri farklı.
+
+99
+00:23:40,084 --> 00:23:42,743
+ZV, index bana daha az hizmet verdi.
+
+100
+00:23:45,107 --> 00:24:10,528
+Ama daha az yer kapladı. Evet. Böylece SPARCE ve DENSE indekslerden bahsettik. Bir de primary index ve secondary index demiştik. Primary indexler veya clustering indexler, index search key üzerine sıralı olan dosyalar.
+
+101
+00:24:11,028 --> 00:24:14,628
+dosyada search key'in sıralı olması demek idi.
+
+102
+00:24:16,596 --> 00:24:42,935
+Bunun tabii aramada, yani özellikle aralık sorgularında önemli bir faydası var. Burada mesela bunlar bir primary indeks. Çünkü search key bu dosyada sıralı. O yüzden zaten bu oklar da böyle paralel oldu. Yani buradaki sıralılığa uygun bir sıralılık var. İndeks zaten sıralı. Dosyadaki aileler de bu şekilde sıralı olduğu için böyle oldu.
+
+103
+00:24:44,596 --> 00:24:53,615
+Yine primary index. Yani şöyle bir organizasyonda böyle birbirine paralel oklar görüyorsanız buna direkt olarak primary index diyebiliriz.
+
+104
+00:24:53,968 --> 00:25:21,068
+Ama şöyle bir şey var ise, böyle bir yapı var ise, buna da secondary index diyoruz. Yani ikinci indexler. Burada search key bakın, şuradaki maaş üzerine bir index bu. Bu maaş üzerine index de, buradaki maaş bilgileri sıralı gene bu index ise mutlaka öyle. Yani hash index değil ise.
+
+105
+00:25:21,968 --> 00:25:41,088
+Bu böyle sıralı ama dosyada böyle sıralı değil. O zaman demek ki buradaki bu her bir salari için eraydiği beni dosyanın bir yerine götürecek. Başka başka yerlere gideceğiz yani böyle. İşte o yüzden burası paralel olmadı buradaki oklar böyle paralel olmamış oldu.
+
+106
+00:25:41,088 --> 00:25:43,756
+O zaman...
+
+107
+00:25:44,339 --> 00:25:52,620
+Buradaki secondary index olmuş oluyor. Bunlar da böyle primary index olmuş oluyorlar.
+
+108
+00:25:53,759 --> 00:25:58,620
+Secondary index olduğu zaman bu secondary index'in...
+
+109
+00:25:58,895 --> 00:26:26,895
+Dense olması mecbur. Have to be dense. Niye? Çünkü burada ben belli bir sıralama söz konusu olmadığı için, şu salarilere göre sıralama söz konusu olmadığı için, buradaki bütün nitelikleri bu indekse dahil etmem lazım. Ama burada, şurada mesela bir sıralılık söz konusu olduğu için, burada bazılarını alabildim.
+
+110
+00:26:26,895 --> 00:26:36,476
+Yani böyle sample'lar alıp, bunun sıralı olmasından yola çıkarak, burada bir aramayla yine işimi görebildim.
+
+111
+00:26:36,695 --> 00:26:43,895
+Yani 20.000 kaydını burada, yolumu bulabildim. Yani 20.000 şu ikisi arasında dedim. Yani buraya hiç bakmadım.
+
+112
+00:26:44,756 --> 00:26:49,716
+Yani indeksin bir manası ortaya çıkmış oldu. Yani sadece bu kısımda varsa vardır dedik yani.
+
+113
+00:26:49,716 --> 00:26:54,716
+Bu ancak demek ki Sparse Index'in primary index...
+
+114
+00:26:54,895 --> 00:27:06,056
+olması ile mümkün. Ama Dense Index, Secondary Index olduğu zaman Dense Index olması mecburi olmuş oluyor.
+
+115
+00:27:06,463 --> 00:27:32,064
+Evet, primary index'te de demek ki dense de olabilir, sparse de olabilir. Primary index olduğu zaman, mesela burada primary index ve dense. Ama primary index de burada sparse de olabilir. Şurada olduğu gibi mesela burada sparse de olabilir. Ama secondary index de mutlaka dense olması lazım.
+
+116
+00:27:33,364 --> 00:28:00,163
+Evet, şimdi buradaki bizim arkada çalışması, fiziksel olarak çalışma tarzı bunun. Biz bir arama yapıyoruz. Yani bir sorgu geliyor bize. Bu sorgudaki arama anahtarı üzerine böyle bir indeks var ise bu dosya ufak. Burada binary search yapıyorum ve buradan bana gelen pointerlarla dosyada direkt olarak hedefe ulaşıyorum.
+
+117
+00:28:01,215 --> 00:28:06,675
+Mesela şöyle bir örnek versek. Burada bu dosyamız 2.
+
+118
+00:28:07,188 --> 00:28:35,188
+disk sayfasına yerleşiyor olsa şöyle, hani kaç, 2, 4, 6, 8, 10, 11 var. Bir disk sayfası 5 tane indeks kaydı alsa, 6 tane alsın diyelim. Burada 2 sayfalık bir dosya var. 2 disk sayfalık bir dosya var. Ama buradaki nitelikler böyle kaç tane olduğunu bilmiyoruz. O yüzden burada hani bir...
+
+119
+00:28:35,188 --> 00:28:45,768
+disk sayfasına 5 indeks kaydı sığarken, burada bir disk sayfasına 2 tane sığsın mesela. 5 tane sığamaz artık. Çünkü burada başka nitelikler de var.
+
+120
+00:28:46,847 --> 00:28:52,107
+Tabii bu arada disk sayfalarımız 4 kilobayt falan olduğu için buradaki verdiğim örnek de temsili bir örnek.
+
+121
+00:28:53,288 --> 00:29:02,928
+Yani burada tabii 4 kilobayt, 4000 byte falan tabii ki hepsi sığar yani ama burada olayı biraz daha yakınlaştırmak adına
+
+122
+00:29:03,188 --> 00:29:30,888
+ufak örnekler veriyorum. Burada disk sayfası iki sayfaya yerleşti diyelim. Burada ise bir disk sayfası, örneğin iki kayıt alsa, o zaman burada biz şurada, örneğin şu clique erişmek istesek, buradan sequential arama yapacağız, indeks olmasa, bir, ikinci disk gelişimi, üçüncü disk gelişimi, dördüncü disk gelişimi, beşinci disk gelişiminde ben,
+
+123
+00:29:31,188 --> 00:29:38,948
+Şu click'i bulmuş olacağım. Ama indeks var ise, burada binary search yaparak, bir disk ilişiminde bunu bulacağım.
+
+124
+00:29:38,948 --> 00:29:48,708
+Yani ortadaki eleman, işte, pardon ben burada salari üzerine, değil mi? Şöyle örneğin, aramayı yanlış yerde yaptım, click üzerine yaptım, yanlış yaptım.
+
+125
+00:29:48,988 --> 00:29:58,607
+Örneğin, 72.000'i arayalım mesela, 72.000'i. Burada 72.000'i olan, maaşı 72.000'i olan bir kişiyi arasak, bir hocayı arasak,
+
+126
+00:29:59,188 --> 00:30:05,248
+iştis gelişimli olacak. Ama bu indeks üzerinden aramaya kalktığımız zaman burada
+
+127
+00:30:06,259 --> 00:30:34,259
+Bir disk ilişimiyle, yani ortadakinden daha küçük, ortadaki değerden daha küçük olan, işte bunu buldum. Bir. İkinci disk ilişimiyle buraya erişmiş oldum. Yani 5'ten 2'ye düşmüş oldu, index ilişimimiz. İşte arkada böyle bir performans iyileşmesi var. Yani tabii burada 5'ten 2'ye düştü ama, işte gene bu temsilci bir şekil olduğu için burada milyonlarca kayıt olduğu zaman, yani binlerce sayfa olduğu zaman, işte sequential error.
+
+128
+00:30:34,259 --> 00:30:45,320
+arama yapsak, böyle sırayla arama yapsak, ortalama 5000 sayfa varsa, ortalama 2500 sayfada bulacağım. Burada 5-10 disk gelişimiyle bulacağım mesela.
+
+129
+00:30:45,844 --> 00:31:13,804
+Şimdi bu bahsettiğim şu ana kadar ki temel yapı böyle. Bir sorunuz yoksa devam ediyorum. Burada simple indeks yapısı söz konusu. Burada simple bir indeks var. Yani eğer bu bizim bu indeksimiz de eğer ana hafızaya sığıyor ise o zaman hiçbir disk yani bu tarafta hiçbir disk erişim yok. Sadece bize gelen ERID'i de üzerinden.
+
+130
+00:31:13,844 --> 00:31:14,824
+dosyaya erişeceğiz.
+
+131
+00:31:15,824 --> 00:31:17,764
+Şimdi burada eğer
+
+132
+00:31:17,764 --> 00:31:21,484
+eee
+
+133
+00:31:21,523 --> 00:31:34,483
+Eğer indeksimiz ana hafızaya sığmıyor ise, yani şuradaki indeksimiz ana hafızaya sığmıyor ise, o zaman aynı bu dosyanın başına gelenler bunun başına gelmiş oluyor tabiri caizse.
+
+134
+00:31:35,143 --> 00:31:49,303
+Ama bu daha ufak bir dosya. Ama bu dosya o kadar büyük ki, bunun indeks dosyası da, bu indeks dosyası da, buna ait olan bu indeks dosyası da kocaman büyümeye başladığı için
+
+135
+00:31:49,523 --> 00:31:56,223
+Onu da ana hafızada tutamıyor isek, o zaman bu dosyayı da, bu dosya üzerinde de indeks oluşturabiliriz.
+
+136
+00:31:56,223 --> 00:32:06,383
+Şimdi bu noktada artık bunun üzerine oluşturacağım indeksler, sıralı bir nitelik üzerine olacağı için zaten primary indeks olacak.
+
+137
+00:32:06,703 --> 00:32:12,483
+Yani sıralı, değil mi? Burada sıralı olduğu zaman onun üzerine indeks oluşturmak, primary indekslemiştir.
+
+138
+00:32:12,563 --> 00:32:16,583
+İşte bunun üzerine de indekslerimiz sıralı olacak ve sparse indeks olacak.
+
+139
+00:32:17,523 --> 00:32:45,523
+Ki bir azalma olsun. İşte buna multi-level index diyoruz. Burada bir outer indeximiz olacak, bir inner indeximiz olacak. Yani bu dosyamızın, veri dosyamızın ilk indexi, inner index. Burada böyle işte çok sayıda bloklarımız var, index blokları var. Ama işte bu da artık çok büyüdü, ana hafızaya sığmaz oldu. Buradaki erişimi de iyileştirmek adına bir outer index.
+
+140
+00:32:45,523 --> 00:33:11,003
+Sıraindex tanımlıyoruz. İşte bu, şu kısım belki dense olabilir veya sparse olabilir ama bu kısım mutlaka sparse olması gerekecek ve bu mümkün. Çünkü buradaki sıralı, indeksimiz buradaki sıralı olduğu için, kayıtlar zaten sıralı olduğu için indeks tanımı gereği, o zaman bu kısım zaten sparse olacaktır.
+
+141
+00:33:11,220 --> 00:33:18,259
+İşte bu yapılara böyle multi-level index diyoruz. Anahtarıyla bu şekilde.
+
+142
+00:33:19,763 --> 00:33:47,503
+Şimdi diğer bir, şimdi B3'de işte zaten böyle bir multilevel indeks üzerine B3 oluştureceğiz. Yani B3, bir multilevel indeks esasında. Bir de şu nokta var, bu arada onu da halledelim, o da geçiyor. Biz her zaman tek bir nitelik üzerine, search keyimiz tek bir nitelik olmak zorunda değil.
+
+143
+00:33:47,763 --> 00:33:55,143
+birden çok nitelikten oluşabilir. Yani buna kompozit indeks diyoruz.
+
+144
+00:33:55,143 --> 00:33:56,363
+Kompozit indeks.
+
+145
+00:33:57,844 --> 00:34:15,003
+Veya kompleks indeks veya kompozit indeks olabilir. Böyle bir indeks bana nerede, hangi aramalarda fayda sağlayabilir diye düşünürsek, ilerken böyle bir indekste sıralama noktası nasıl hallolacak?
+
+146
+00:34:15,003 --> 00:34:25,844
+Çünkü bir search key'i üzerine bir indeks oluşturmak demek, o search key'in sıralanabilir olmasını gerektiriyor. Yani bu bir...
+
+147
+00:34:25,844 --> 00:34:38,384
+İşte integer olabilir, bir string olabilir, date olabilir falan. Hepsi bunların sıralanabilir. Peki acaba kompozit olduğu zaman, yani iki tane nitelik bir araya geldiği zaman bu nasıl sıralanacak?
+
+148
+00:34:38,384 --> 00:34:53,663
+İşte bu sıralama ya da lexikografikal sıralama. Yani ilk olarak ilk niteliğe göre sıralıyorum. Daha sonra ilk nitelikte, ilk nitelikte yerlere aynı olanların
+
+149
+00:34:53,844 --> 00:34:56,384
+İkinci nitelik değerlerine göre sıralıyorum.
+
+150
+00:34:58,064 --> 00:34:58,304
+Evet.
+
+151
+00:34:59,539 --> 00:35:27,539
+Böyle bir sıralı yoksa burada ben sıralamayı işte name'e göre ve id yani name ve id'den oluşan bir kompozit search key varsa burada name'e göre bir sıralama ancak mümkün. Yani bütün veriye bakıldığı zaman ancak name'e göre bir sıralama mümkün olacak, söz konusu olacak. Bunun aynı zamanda id'ye göre sıralanması mümkün.
+
+152
+00:35:27,539 --> 00:35:36,220
+Bütün değil, aynı anda. Yani çok denk gelmesi lazım. O olasılığı da hiç düşünmüyoruz. Yani düşünün böyle bir tabloda milyon tane kayıtlar.
+
+153
+00:35:36,660 --> 00:35:47,660
+Name'e göre sıraladı mı? Baktım ID'ye göre de sıralı oldu. Bu ancak ID değerinin name'e bağlı olmasıyla, üretilen bir şey olmasıyla söz ediyoruz.
+
+154
+00:35:47,660 --> 00:35:55,539
+Ama bu ihtimali düşünmüyoruz. O zaman demek ki buradaki lexikografical sıralaması demek aynı...
+
+155
+00:35:55,539 --> 00:36:03,400
+name'ler içerisinde bir ID'nin sıralanması söz konusu. Nihayetinde bu bir sıralama olmuş oluyor.
+
+156
+00:36:04,660 --> 00:36:11,000
+Yani burada bu bundan daha küçük bir değer olarak değerlendirilecek.
+
+157
+00:36:12,275 --> 00:36:27,275
+Bu zaten, şu zaten, C, P'den küçük olduğu için bu da bundan küçük olacak. Her ne kadar şu değer bundan küçük olsa da ilk olarak şu bundan küçük olduğu için bunun solunda kaldı, daha küçük oldu.
+
+158
+00:36:27,275 --> 00:36:39,396
+İşte böyle bir search key üzerine bir indekste name ve id üzerine bir arama yapıldığı zaman bu indeks faydalı, çok faydalı.
+
+159
+00:36:40,275 --> 00:36:52,056
+ID üzerine, yani işte Peter, 11.223'ü arıyorsak mesela, bu indeks bize bir fayda sağlayacak. Bunların tabii detayları var yani, sadece bu konuya giriş tabii.
+
+160
+00:36:53,172 --> 00:37:20,351
+Ama gene sadece name için bir arama yapıyorsak, bu indeks gene bize bir fayda sağlayacak. Çünkü name'e göre sıralı. Ama sadece name'e göre, singular bir indekse göre biraz daha az fayda sağlayacaktır. Çünkü bu indeksimiz name ve idden oluştuğu için biraz daha büyükçe bir indeks. Yani daha fazla şeması daha büyük yani. O zaman o indeksin de faydalılığını azalttı.
+
+161
+00:37:20,735 --> 00:37:23,235
+Eeeh,
+
+162
+00:37:21,876 --> 00:37:27,496
+Ama gene name'e göre bir aramada bu kompozit indeks yine fayda sağlayacak.
+
+163
+00:37:27,836 --> 00:37:32,576
+Ama ID'ye göre bir aramada bu indeks hiçbir fayda sağlamayacak.
+
+164
+00:37:33,936 --> 00:37:38,296
+Çünkü bu kayıtlarımız ID'ye göre sıralı değil.
+
+165
+00:37:39,176 --> 00:37:44,356
+ID'ye göre bir arama yani bütün veri üzerinde ID'ye göre bir arama yapmam mümkün değil.
+
+166
+00:37:44,356 --> 00:37:49,016
+ID sadece aynı name'ler içerisinde bir sıralanması söz konusu.
+
+167
+00:37:49,876 --> 00:37:53,996
+Ayrı'na şöyle bütün tabloda baksak, Ayrı'nın sırada olmadığını göreceğiz.
+
+168
+00:37:54,452 --> 00:38:03,732
+Evet, o zaman demek ki bizim indekslerimiz böyle indeks çeşitlerimizin böylece bir tane daha bir şey daha katmış olduk.
+
+169
+00:38:03,732 --> 00:38:12,032
+Ne dedik işte dense indeks, sparse indeks dedik, primal indeks, secondary indeks, clustered indeks dedik.
+
+170
+00:38:12,852 --> 00:38:22,312
+Ve gene bu da singular ve composite indeks olmak üzere bir isimle.
+
+171
+00:38:22,452 --> 00:38:27,772
+Bunu da şey yapabiliriz. Böyle bir kategori açabiliriz. Şimdi gelelim Bplus3'ye.
+
+172
+00:38:28,159 --> 00:38:52,679
+Şimdi BPLAST3'nin genel yapısı böyle bir ağaç organizasyonu. Ağaç dediğimiz zaman bir kökü var ve yapraklar var. Yani isme de tam denk gelmiş oluyor bir ağaca benzetirsek. Ağacın kökü yukarıda, yaprakların aşağıda. Ve bu yapraklarda ve bütün bu BPLAST3 ağacı içerisinde search keyler var.
+
+173
+00:38:56,159 --> 00:38:58,719
+bu traktının name'i üzerine bir indeks
+
+174
+00:38:59,059 --> 00:39:27,059
+ve ordered bir indeks. Çünkü B3, B3, ordered bir indeks. Yani sıralı. O zaman ne demek? Burada ben ağacın yapraklarına baktığım zaman sıralı olduğunu göreceksiniz. Yani B, C, C, E, E, G, K, K. Diğer seviyedeki indekslere, yani bu bir multilever indeks. Bu birinci seviyedeki inner indeks dedik. Bu da outer indeks.
+
+175
+00:39:27,059 --> 00:39:45,779
+Yükarıdaki multi-indeksle öyle bir tanım yapmıştık. İşte buradaki indeks, bu seviyedeki indeks, üzerindeki bu indeks, bu da sıralı EGS. Bunun üzerine zaten tek bir tane var M. Burada buna root, buna yaprak, bunlara da internal düğümler diyoruz.
+
+176
+00:39:47,603 --> 00:39:59,903
+Burada ve bu bu acaba primary index mi, secondary index mi diye baktığımız zaman da bu bir secondary index. Çünkü bu
+
+177
+00:40:00,000 --> 00:40:27,519
+name'e göre, search key olan name'e göre bu dosyamız sıralı değil. O zaman bu bir secondary index diyeceğiz. Ve aynı zamanda gene secondary olduğu için bunun yaprak düğümlerinin dense index olması gene zaruri. Çünkü sıralı olduğu zaman ancak spars gibi bir lüksümüz oluyor. Yani daha bütün o nitelikleri almadan bazılarını almak. Ama burada
+
+178
+00:40:28,000 --> 00:40:30,879
+Dağınık olduğu için hepsine erişme yolu bulmam lazım.
+
+179
+00:40:31,599 --> 00:40:32,819
+Hepsine eriştim bakın.
+
+180
+00:40:33,559 --> 00:40:37,099
+Gerçi burada böyle paralel gibi gözüküyor ama paralel değil yani şöyle.
+
+181
+00:40:38,319 --> 00:40:39,639
+Hepsi farklı farklı yerlere gidiyor.
+
+182
+00:40:39,699 --> 00:40:42,339
+Bu dosyanın sonuna gitmiş, bu başına gitmiş yani.
+
+183
+00:40:42,835 --> 00:41:10,695
+Buradaki bu paralelik sizi aldatmasın. Yani şöyle çevirdiğimiz zaman, karman çorman bir gidişat var. O zaman bu seviyede secondary bir indeks ve dense bir indeks. Fakat bu yaprakların üzerindeki bu indeks ise, yani internal notlar ve rootlar, internal kısmı ise, bu da sparse indeks olmuş oluyor. Sparse indeks.
+
+184
+00:41:10,835 --> 00:41:17,596
+Ve gene şu kısım primary index olmuş oluyor. Çünkü burası sıralı. Hani bu da bir dosya nihayetinde. Şu kısım da bir dosya gibi.
+
+185
+00:41:18,115 --> 00:41:26,496
+Sıralı, arama anahtarına göre sıralı olduğu için primary index, şu kısım primary index ve sparse gibi olmuş oluyor.
+
+186
+00:41:26,496 --> 00:41:37,056
+Evet, yani bütün definition'ları, öğrendiğimiz o tanımları her seviye için kullanabiliriz. Bu ifadeleri burada kullanabiliriz bu dosya için.
+
+187
+00:41:37,715 --> 00:42:05,655
+Bu organizasyon için. Şimdi burada B3'nin genel yapısını şu şekli oluşturmak için bazı kurallarımız var. Bu kurallar, bir kere ağacımız bakıldığı zaman dengeli bir ağaç. Yani bu ne demek? Ağacımızın kökünden yapraklara, dosyaya kadar hep aynı adımda gidiyoruz. Yani 1, 2, 3, 4 adımda buraya eriştim.
+
+188
+00:42:05,715 --> 00:42:30,855
+Başka bir kanaldan gene dört adım değiştirdim. Ama bütün veri yapıları böyle değil. Hatırlarsınız. Örneğin binary search tree var. Değil mi? Veya işte böyle farklı ağaç yapıları var. Bir yerden bir yere giderken farklı aramalar yaptığımız zaman burada dengesiz böyle şey o dengesiz olabiliyor.
+
+189
+00:42:31,827 --> 00:42:59,827
+Dengesiz bir ağaç olabiliyor yani. Bu ağacımız, burada bir terinin en önemli özelliği dengeli olması. Bu worst case'i, worst case analizini, yani en kötü durum, en kötü durumu iyileştiren bir şey. Yani dengesiz bir ağaçta en kötü durum senaryosu daha kötü olacak. Belki en iyi, daha iyi olacak ama.
+
+190
+00:42:59,827 --> 00:43:04,788
+Ama en kötü durumu iyileştiren bir yapı söz konusu olmuş oluyor burada.
+
+191
+00:43:06,547 --> 00:43:16,127
+All pets from root to leaf are the same length. Each node that is not a root or leaf has between n, böyle iki, n, n children.
+
+192
+00:43:17,940 --> 00:43:20,539
+Ve yaprak düğümleri şu kadar.
+
+193
+00:43:21,980 --> 00:43:26,940
+O zaman burada bu isimlendirmelere göre de kapasiteleri...
+
+194
+00:43:28,559 --> 00:43:56,539
+Burada İfade ediyor. Bir kere, bundan önce şunu da söylemekte fayda var. En önemli bir nokta. Buradaki bizim dosyamız nasıl böyle disk sayfalarından oluşuyorsa, B3'de böyle disk esaslı bir veri yapısı olduğu için, bu B3'nin düğümleri, bunlara düğüm dersek, yani ağacın kökü, not düğüm demek değil mi? Ağacın kökü.
+
+195
+00:43:56,559 --> 00:44:04,059
+ve buradaki düğümler. Bu düğümlerin her birinin bir disk sayfasına denk geldiğini tahmin edebiliriz.
+
+196
+00:44:04,239 --> 00:44:14,420
+Yani söyleyebiliriz. Bu bir triğinin genel olarak tanımı içerisinde değil ama çoğu zaman da böyle olduğunu söyleyebiliriz.
+
+197
+00:44:14,420 --> 00:44:24,420
+O zaman yani buradaki disk sayfası içerisinde kaç tane yani bu buradaki...
+
+198
+00:44:24,559 --> 00:44:30,039
+değerler neye göre belirlenecek? Benim o disk sayfasının kapasitesine göre belirlenecek.
+
+199
+00:44:31,139 --> 00:44:43,799
+4 kilobytes ise buradaki SELECT, ne kadar bytes ise SELECT, POINT, PK, ikileri kaç tane ne kadarsa o kadar PK biz buraya yazabiliriz.
+
+200
+00:44:45,652 --> 00:45:06,992
+Evet, işte bunlar, yani bu kısıtlar nihayetinde disk sayfasının büyüklüğünden, yani bilinen bir büyüklüğü, sabit bir büyüklüğü var, önceden bildiğimiz bir büyüklük var. O büyüklüğe göre kaç tane alabiliyorsa o disk sayfası, ona göre bu değerleri yazıyoruz.
+
+201
+00:45:08,307 --> 00:45:26,307
+O zaman burada eğer root veya leaf değil ise, yani kök veya yaprak değil ise, buradaki aradaki internal şeyler, en az n bölü 2, en fazla n tane çocuğu olmalı.
+
+202
+00:45:28,607 --> 00:45:33,447
+Buradaki pointerların sayısı noktasında bir kısıt var.
+
+203
+00:45:33,876 --> 00:45:48,115
+En fazla N tane, minimum N bölü 2 tane. Eğer N tek ise, 2'ye bölünmüyorsa, bunu üste tamamlayarak, yani 5 ise mesela, en az 3 tane, en fazla 5 tane pointer olması lazım.
+
+204
+00:45:50,715 --> 00:45:56,916
+Yaparak düğümlerinde ise, bu sefer N-1 bölü 2 tane,
+
+205
+00:45:59,443 --> 00:46:11,384
+Veya en fazla en eksi bir tane değer olması lazım. Yani burada pointerlara göre bir kısıt söz konusu oldu. Burada değerlere göre bir kısıt söz konusu oldu.
+
+206
+00:46:16,371 --> 00:46:20,011
+Şunlar tabii bunlara geçmeden önce belki şundan bahsetseydik.
+
+207
+00:46:20,011 --> 00:46:24,591
+Yani tipik olarak bir not, bir düğümde şöyle bir yapı söz konusu.
+
+208
+00:46:24,731 --> 00:46:27,511
+PK, ikililerinden oluşuyor.
+
+209
+00:46:28,751 --> 00:46:32,851
+Bu zaten bizim Simple Index'te gördüğümüz bir şeydi.
+
+210
+00:46:33,211 --> 00:46:35,491
+Yani SEARCH KEY ve POINTER.
+
+211
+00:46:35,971 --> 00:46:37,711
+Şöyle SEARCH KEY, POINTER.
+
+212
+00:46:38,391 --> 00:46:39,291
+SEARCH KEY, POINTER.
+
+213
+00:46:40,291 --> 00:46:41,228
+Son...
+
+214
+00:46:41,235 --> 00:47:01,855
+Pointer'ın, son Pointer'a ait search key yok. Çünkü buna ihtiyaç kalmamış oluyor. Yani şu Pointer'a ait olan anahtar buysa, yani bu Pointer diyor ki, şu Kabir'den daha küçük olan değerler bu alt ağaçta.
+
+215
+00:47:05,780 --> 00:47:16,400
+P2, K2'de, K2'den daha küçük olanlar, P2'nin işaret ettiği yerde, yani alt ağaçtaşma organizasyonu göreceğiz birazdan.
+
+216
+00:47:16,400 --> 00:47:21,340
+İşte böyle olunca, o zaman şu K1,
+
+217
+00:47:21,907 --> 00:47:38,067
+K1'den daha büyük olanların olduğu yere işaret ediyor bu P2. O zaman bu PN'de K-2'den daha büyük olan anahtarlara işaret ediyor. O zaman daha burada ek bir anahtar yazmama gerek kalmamış oluyor.
+
+218
+00:47:39,027 --> 00:48:03,307
+O yüzden burada son KN'i yazmıyoruz. Veya gerek olmuyor onu yazmaya. Bu işte biraz önce dediğimiz gibi ağacın her bir noktasında sıralılık söz konusu. Bu düğümün içerisinde de veya bu disk sayfası içerisinde de böyle anahtarlar sıralı. K1, K2, K3, KN-1 diye böyle sıralı.
+
+219
+00:48:05,748 --> 00:48:29,528
+Şimdilik duplicate'ler olmadığını düşünelim. Yani tekrar unique değerler olduğunu düşünelim sadece. Duplicate'leri değerlendirmeye gerek yok. Yani belki önemli bir şey ama çünkü secondary indekslerde veya işte tekrarlı olan niteliklerin üzerine bir nitelikler de mutlaka oluyor tabii. Onun gerçeklemede biraz da karışık. Biz esaslarına ayrılmayalım şimdilik.
+
+220
+00:48:29,528 --> 00:48:30,448
+Evet.
+
+221
+00:48:32,724 --> 00:48:33,564
+Böylece
+
+222
+00:48:33,564 --> 00:48:38,664
+Buradaki, burada P'yi
+
+223
+00:48:38,664 --> 00:48:43,244
+Are pointers to children or pointers to records
+
+224
+00:48:43,244 --> 00:48:46,204
+Eğer bu bir yaprak düğümü ise
+
+225
+00:48:46,204 --> 00:48:48,784
+Bu P1
+
+226
+00:48:49,204 --> 00:49:03,983
+K1 kaydını, K1 search key'ini içeren, K1'da bir pointer olmuş oluyor. Şurada, K1 search key'ini içeren, K1'da bir pointer olmuş oluyor. Bu bir lift düğümü ise, yaprak düğümü ise.
+
+227
+00:49:03,983 --> 00:49:11,003
+Eğer yaprak düğümü değil, internal düğüm ise, o zaman biraz önce dediğim gibi bu K1'den daha küçük olan.
+
+228
+00:49:11,507 --> 00:49:25,147
+değerleri içeren bir alt ağaca işaret ediyor. Peki ise K1'den büyük eşit değerleri içeren. Burada tabii küçüğü ben bu tarafa attım, büyük eşitliği bu tarafa attım.
+
+229
+00:49:25,967 --> 00:49:36,507
+Burada da, sunuda da zaten öyle. Yani bu düzenleme burada öyle. Ama bu farklı bilgilerde, gerçeklemelerde farklı olabilir. Yani küçük olan taraf...
+
+230
+00:49:36,820 --> 00:49:53,619
+tarafa eşitliği koyabilirim. Büyük olan tarafa eşitliği koymayabilirim. Ama bir şekilde bu K1'i sola veya sağa dahil etmem lazım. Bu search key, sola veya sağa dahil etmem lazım.
+
+231
+00:50:00,000 --> 00:50:18,059
+tarafa, yani eşitliği büyük olan tarafa atmak şeklinde oldu. O zaman demek ki burada gerek düğümlerden oluşan bu ağaç yapısı içerisinde root ve yapraklar için şu kısıtlarımız söz konusu oldu.
+
+232
+00:50:18,739 --> 00:50:36,839
+Yaprak düğümleri için değerler esaslı bir şey söz konusu. Çünkü onun da bir sebebi var, biraz daha söyleyeceğim. Değerlerin işte, yani n-1 değer var. Çünkü burada ne kadar değer var? n-1 tane key var, n tane pointer var.
+
+233
+00:50:37,168 --> 00:50:55,128
+İç kısımlarda N pointer'a göre N bölü 2, N sınırı altında bu kısıtlar altında pointer bulunması lazım. Yapraklarda ise V alıyorlar. Değerlere göre, keylere göre şu iki aralık arasında bulunması lazım.
+
+234
+00:50:56,884 --> 00:51:23,044
+Şimdi tabii böyle bir yapıda şöyle özel durumlar da var. Eğer kökümüz yaprak değil ise, bu ne zaman olabilir? Kökün yaprak olması veya olmaması. Eğer daha indeks daha boş ise, yani yeni kayıtlar gelmeye başlıyorsa, o zaman burada bir tane düğüm olacak.
+
+235
+00:51:23,539 --> 00:51:33,579
+Bu düğümde de daha çocukları yok bu düğümün. Bu düğümde çok bir kısıt olmayacak.
+
+236
+00:51:33,579 --> 00:51:45,299
+Yani işte şurada söylediği gibi o düğümde 0 tane kayıt var veya en eksi 1 tane kayıt olacak. Söğüşkiyle bu kadar olacak.
+
+237
+00:51:45,715 --> 00:52:07,715
+Ama eğer bu rootumuz artık leaf olmaktan çıktıysa, yani bu ağaç böyle artık genişlemeye başladı. Birazdan göreceğiz nasıl genişlediğini. Genişlemeye başladıysa o zaman bu rootumuzun en az 2 çocuğu,
+
+238
+00:52:07,775 --> 00:52:14,815
+Ve en fazla da en eksi bir tane çocuğu olacak şekilde kayıt tutması söz konusu oluyor.
+
+239
+00:52:15,975 --> 00:52:25,615
+Bunun da sebebi tabii bu expansion'ın yani indeksin büyümesinin nasıl olduğunu anlayınca ortaya çıkacak.
+
+240
+00:52:28,947 --> 00:52:56,947
+Büyümesiyle, yani root'un ikiye bölünmesiyle yeni bir seviye ortaya çıkıyor. Yeni bir seviye ortaya çıkması demek, yeni bir root'un ortaya çıkması ve iki çocuğun olması demek yani. Ancak böyle oluyor. Böyle olduğundan dolayı da, yani ağaç böyle aşağıdan yukarı doğru büyüdüğü için, yani yeni bir root'un ortaya çıkmasıyla yeni bir seviye ortaya çıkıyor. Böyle olduğu için de, ancak root'un...
+
+241
+00:52:56,947 --> 00:53:03,187
+Minimum eğer yaprak değil ise, root'un minimum iki çocuğunun olması bile mümkün oluyor.
+
+242
+00:53:03,860 --> 00:53:25,300
+Evet, tabii şekillerde bu konuda daha iyi pekiştiriliyor. Şimdi burada yaprak düğüm ve yaprak olmayan düğümler için kısıtları biraz daha açmış. Yaprak düğümünde burada işte son pointer bir sonraki yaprağa işaret ediyor.
+
+243
+00:53:26,608 --> 00:53:42,668
+Yani burada şöyle bir yapıda, bakın yaprak düğümleri içerisinde böyle pointer'larla birbirine bağlanmış. Ama yaprak olmayan internal düğümlerinde böyle pointer şeyler, düğümler birbirine bağlı değiller.
+
+244
+00:53:44,467 --> 00:54:12,287
+Buradaki bütün pointer'lar kullanılıyor. Yani çocuk olarak kullanılıyor. Çocuklara gitmesi için child pointer olarak kullanılıyor. İşte o yüzden buradaki son pointer bir sonraki yaprağı işaret ettiği için buradaki kısıtımız da key'lere göre yapıldı biraz önce. Yani buradaki, şuradaki kısıtımız children pointer'lara göre yapıldı.
+
+245
+00:54:12,467 --> 00:54:22,907
+leaflerde ise, value'lara göre yapıldı. Çünkü son pointer, biz bir sonraki leaf'e gitmek için kullandık.
+
+246
+00:54:23,443 --> 00:54:39,063
+İşte burada, o zaman, buradaki pointerlarımızda, pointer pay, points to a file record, buradaki her bir pointer, o K'yı içeren şeye gidiyor.
+
+247
+00:54:39,063 --> 00:54:50,844
+Yani şurada yaprak düğümü içerisinde böyle bir anahtar var, search key. O search key'in eşi olan pointer, bizi Brent kaydına götürecek.
+
+248
+00:54:51,443 --> 00:55:10,208
+SELECT, KEEN'i içeren kayda götürecek. İşte burada bakın pointer buraya gitti. Şu pointer, CRIC'i içeren yere götürdü bizi. Ve şu son pointer ise bizi bir sonraki yaprak düğümüne aktaracak. Böyle bir organizasyon oldu. Esasında yani...
+
+249
+00:55:10,208 --> 00:55:21,047
+Organizasyonumuz oldukça düzenli. Yani çok karışık değil. Bunlar organizasyonun detayları olmuş oluyor.
+
+250
+00:55:21,947 --> 00:55:28,507
+Non-IF notelarda ise, yani internal düğümlerde ise,
+
+251
+00:55:32,980 --> 00:55:57,960
+P1, points are less than K1. Yani şuradaki pointer bizi şuradaki search keyden küçük olanlara gönderiyor. Biraz önce söylediğim gibi. Buradaki anahtardan küçük olanlara. Buradaki K2 de, K2, P2 ikilisi de, P2 nereye gidecek? K2'den daha küçük olanlara gidecek. Böylece
+
+252
+00:55:58,255 --> 00:56:15,596
+Şu pointer, bunlar da kendi içerisinde böyle sırada olduğu için bu pointer aynı zamanda K1'den büyük eşit olan alt ağaca, K1'den büyük eşit olan değerleri içeren alt ağaca bir işaret olmuş oluyor.
+
+253
+00:56:15,596 --> 00:56:20,596
+Evet, burada da onu söylüyor, şurada şu paragraf da onu söylüyor.
+
+254
+00:56:26,255 --> 00:56:49,155
+Böyle olduğu için de, yani şu, bunun bir indeksi, bir büyük olan, indesi, bir büyük olan pointer şunun, büyük eşit olan, bundan büyük eşit olan alt ağaca işaret ettiği için de, işte gene şurada da son pointer, bize bundan daha büyük eşit olan, alt değerleri içeren alt ağaca götürmüş oluyor.
+
+255
+00:56:51,731 --> 00:56:54,612
+Evet, burada N6 olsun.
+
+256
+00:56:55,155 --> 00:57:15,036
+Yani N dediğimiz böyle B3'nin order'ı deniyor buna bazı kaynaklarda. Bu ne demek? Yani bir düğüm, bir düğüm 6 tane pointer içerebiliyor. 6 tane pointer. Yani burada da görüldüğü gibi bakın 2, 4, 6 pointer var.
+
+257
+00:57:23,155 --> 00:57:26,596
+Bu değerler tabii 200-300'lere kadar varabiliyor yani.
+
+258
+00:57:28,895 --> 00:57:37,255
+Şimdi bu tabii öyle olunca, yani gerçek değerlere bakınca çok böyle verimi çok çok arttıran bir yapı esasında bu B3.
+
+259
+00:57:37,335 --> 00:57:42,815
+O yüzden çok böyle yaygın kullanımı var. Yani o da çok önemli.
+
+260
+00:57:44,175 --> 00:57:47,655
+Burada tabii temsili olarak basitleştirdik biz şeyi.
+
+261
+00:57:49,652 --> 00:57:56,211
+Şimdi burada en altı olduğu için acaba bizim verilen kurallara uygun mu bu dediğimiz zaman?
+
+262
+00:57:58,431 --> 00:58:25,831
+olan düğümler için neydi kuralımız? N-1 bölü 2. Yani N-1 buradaki anahtarların sayısı 6. 5 tane anahtar olabilir. Kayıtlı anahtar olabilir, SELECT olabilir. 5 bölü 2'den, onun da 3'e tamamlıyor böylece. En az 3 tane, en fazla 6 tane, en fazla 5 tane V alıyor olabilir.
+
+263
+00:58:26,431 --> 00:58:32,371
+Yani yaprak düğümlerinde en az 3 tane, en fazla 5 tane. Yani n-1 bölü 2'den n-1'e kadar.
+
+264
+00:58:33,139 --> 00:58:45,439
+yaprak olmayan düğümlerde, burada root çıktı karşıma veya diğer internal katmanları olmuş olsaydı, bu sefer pointerler üzerinde bir kısıt ortaya çıkartacağız.
+
+265
+00:58:45,439 --> 00:58:55,939
+Yani M bölü 2, yani 6 tam 2'ye bölünüyor. En az 3 pointer, en fazla 6 pointer olacak şekildeydi.
+
+266
+00:58:56,339 --> 00:59:01,139
+Şimdi bu kuralı da sağlamış oluyor. Yani 3 ile 6 arasında.
+
+267
+00:59:01,139 --> 00:59:11,139
+3 tane pointer var. Ama 2 tane de olabilirdi. Çünkü burada şöyle bir special case exception var. Çünkü burada...
+
+268
+00:59:12,467 --> 00:59:19,628
+internal düğüm, root olduğu için bu rootumuzda da şöyle bir exception var idi.
+
+269
+00:59:20,347 --> 00:59:21,108
+Hatırlıyorsunuz.
+
+270
+00:59:21,467 --> 00:59:26,367
+If the root is not leaf, yaprak olmadığı için demek ki altında ağaçlar var.
+
+271
+00:59:26,728 --> 00:59:28,548
+It has at least two children.
+
+272
+00:59:29,148 --> 00:59:31,387
+En az iki tane children olması lazım.
+
+273
+00:59:31,387 --> 00:59:34,387
+O zaman burada üç tane var ama hani şu...
+
+274
+00:59:34,900 --> 01:00:01,800
+Olmamış olsaydı, yani o kadar daha kayıt gelmemiş demek ki dosyamıza, o zaman bu olmamış olsaydı, o zaman bu iki pointer olacaktı. Ama hiçbir zaman bir rootta bir tane pointer olması söz konusu değil. Bu root en az iki tane yaprağı, en az iki tane alt ağacı içermesi lazım. Ki burada rootun manası olsun. Aksi takdirde bu root olmazdı zaten.
+
+275
+01:00:02,483 --> 01:00:02,923
+Evet.
+
+276
+01:00:17,748 --> 01:00:27,028
+Arkadaşlar, yine bir ara vereceğim ben, tek blok yapmayacağım. Bir 15-20 dakika ara vermem gerekiyor.
+
+277
+01:00:27,507 --> 01:00:41,307
+2.20 geçe gibi başlarız. Bu arada yarın mazeri sınavı olacak. Yarınki derste de yine 9'da başlayıp işte 10.30 gibi falan bitiririz. 10.30, 11'e doğru bitiririz.
+
+278
+01:00:41,307 --> 01:00:54,567
+Yani bu dersi yarın yapacağız yine 100 yüze. 11'de de bir şey olacak, mazeri sınavı olacak. Serkan Hoca yapabilirsiniz mazeri sınavı için. Eğer raporunuz varsa tabii.
+
+279
+01:00:55,507 --> 01:00:56,487
+Görüşmek üzere.
+
+280
+01:19:26,292 --> 01:19:27,231
+Evet arkadaşlar.
+
+281
+01:19:33,555 --> 01:19:43,536
+Burada ağacımızın yüksekliği 2. 2 seviyeli bir ağaç görüyoruz. Dengeli bir ağaç. Bir root ve 3 tane yapraktan oluşuyor.
+
+282
+01:19:44,275 --> 01:19:51,036
+Ve order'ı, yani bu ağacın structure'ını belirleyen gene bir parametre olan N'de 6.
+
+283
+01:19:52,075 --> 01:19:59,775
+Bu N'in 6 olması nereden geliyor desek, yani bu tipik değeri bunun gerçek hayatta işte 100-200, onu da.
+
+284
+01:20:00,083 --> 01:20:04,683
+O kısıtı koyan da nedir desek, o da disk sayfasının büyüklüğü.
+
+285
+01:20:04,683 --> 01:20:10,283
+Çünkü buradaki SELECT ve POINT'ır nihayetinde 8-10 byte olsa,
+
+286
+01:20:10,771 --> 01:20:27,992
+Burada işte bu düğün ne kadar büyüklüğünde olacak? 50 byte falan olacak. Ama işte gerçek hayatta bu 4 kilobyte olduğu için buradaki N değeri de daha tabii yüzlere kadar falan varmış oluyor.
+
+287
+01:20:27,992 --> 01:20:33,992
+Evet. B plus 3 için böyle...
+
+288
+01:20:34,707 --> 01:20:52,707
+üzerinde söylenecek çok şey var tabii. Yani çok kapsamlı bir şey, konu ve çok detayları var. Ana hatlarıyla çok verimi arttıran bir organizasyon. Bunun böyle biraz daha...
+
+289
+01:20:53,268 --> 01:21:11,327
+BİKO notasyonuyla veya asimtotik analizi yapıldığı zaman ne kadar bir fayda sağlıyor? Bu tabii ağacın yüksekliğine bağlı. Yani buradaki ağacın bize vereceği katkı ağacın yüksekliğine bağlı.
+
+290
+01:21:11,327 --> 01:21:19,487
+Zaten bu ağacın ekleme, çıkarma ve erişim noktasındaki vereceği bütün hizmet de ağacın yüksekliği kadar oluyor.
+
+291
+01:21:21,268 --> 01:21:40,167
+Hep dengeli olduğu için ağaç, hep aynı. Yani ağacın yüksekliği her yerde aynı olduğu için de hep aynı. İşte bu düzenlilik sayesinde bitiri çok kıymetli oluyor. Burada eğer şöyle bir analiz yapılsa, şu üçüncü madde oldukça önemli.
+
+292
+01:21:41,811 --> 01:21:55,172
+Bu da işte gerçek hayatta böyle 100-200'lere, 300'lere varan bir N değeri olduğu için genel olarak tipik değerlerin B-TRED'in acili yüksekliği oldukça düşük.
+
+293
+01:21:55,311 --> 01:21:58,371
+Yani 2, 3, 4 gibi rakamlar oluyor.
+
+294
+01:21:58,971 --> 01:22:03,371
+Ve yani ne kadar dosyamız da çok büyük dosya yani inanılmazca kayıt içeriyor.
+
+295
+01:22:03,371 --> 01:22:07,371
+Bunun sebebi burada işte ifade ediyor, bu fikri veriyor.
+
+296
+01:22:09,811 --> 01:22:31,471
+Yani, root'tan sonraki şeyde, root'un bir aşağısındaki seviyede, n bölü 2 çarpı 2 tane değer var. Toplam değerlerin sayısı bu kadar. Çünkü 2 tane çocuğu varsa en az, en az 2 çocuğu varsa, 2 çarpı n bölü 2.
+
+297
+01:22:31,471 --> 01:22:36,432
+Bir aşağıdaki seviyede ise gene, bir n bölü 2 daha.
+
+298
+01:22:36,979 --> 01:22:51,884
+Yani kaç tane düğüm var? M bölü 2, M bölü 2, çarpı 2 şeklinde değer olacak. Yani şu kısım, RUT'tan...
+
+299
+01:22:51,891 --> 01:23:04,251
+RUT'dan aşağıdaki değerlerin sayısı. Bu bir soldaki, bir taraftaki değerler. Bir de sağdakiler olunca çarpı ilgi de oradan geliyor.
+
+300
+01:23:06,111 --> 01:23:16,492
+Böylece en kötü durumda, en için, en kötü durumda ağacın yüksekliği bundan daha kötü olmayacaktır.
+
+301
+01:23:16,916 --> 01:23:34,756
+Çünkü her seferinde M bölü 2 kadar azalıyor. Şuradaki kayıtlar, yani buradaki toplam kayıtlar M bölü 2 oranında azalmış oluyor.
+
+302
+01:23:35,515 --> 01:23:43,655
+Veya şöyle desek, her adımda biz burada aramaya her zaman root'tan başlıyoruz.
+
+303
+01:23:44,079 --> 01:23:59,659
+Bize bütün ağaçla ilgili özet bilgiyi bu veriyor, root veriyor. Root'tan başlıyoruz ve her adımda, aramamızın her adımında buradaki pointer'ların bir tanesine gidiyoruz.
+
+304
+01:24:02,228 --> 01:24:14,628
+Burada da minimum M bölü 2 tane pointer olduğu için aramamızda veri setinin M bölü 2'lik kısmına gidiyoruz.
+
+305
+01:24:14,628 --> 01:24:23,827
+Yani bütün veri setinin M bölü 2'lik kısmına gidiyoruz. Her adımda en kötü durumda M bölü 2'lik kısmına indiğimiz için
+
+306
+01:24:25,184 --> 01:24:36,424
+O zaman toplam k search key verilirleri varsa bir dosyada, buradaki arama adım sayımız logaritma m1'i 2k olmuş oluyor.
+
+307
+01:24:36,904 --> 01:24:46,144
+Binary search'ta hatırlarsınız, binary search'un maliyeti logaritma 2k diyelim, k tane anahtar varsa logaritma 2k idi.
+
+308
+01:24:47,564 --> 01:24:52,864
+Çünkü her seferinde o k listenin yarısına bakıyorum.
+
+309
+01:24:53,184 --> 01:25:20,404
+Sonra, diğer yarısına bakıyorum. Böyle böyle her seferinde 2'ye bölüyoruz. Burada her seferinde artık 2'ye değil de buradaki artık en bölü 2 tane minimum pointer içerdiği için, en bölü 2 pointer içerdiği için her adımda en bölü 2'lik listenin, yani aşağıdaki listenin en bölü 2'lik kısmına erişiyoruz.
+
+310
+01:25:21,184 --> 01:25:27,364
+Bu neticeyi vermiş oluyor. Ağacın maliyeti bu da oldukça başarılı bir rakam.
+
+311
+01:25:27,364 --> 01:25:38,644
+Yani çünkü en gerçek hayatta buradaki verdiğimiz örneklerde tabii daha böyle iskelet yapısı anlaşılması için verilen örnekler.
+
+312
+01:25:39,984 --> 01:25:47,984
+Yani prototip örnekler. Ama gerçek hayatta bu değer mesela iki üste mesela burada logaritma 100K olacak.
+
+313
+01:25:48,448 --> 01:25:55,208
+Daha da bunu örneği açarsak, birazdan onunla ilgili örnek var, oraya gelince bakarız.
+
+314
+01:25:56,728 --> 01:25:59,368
+Yani çok verimli bir yapı olmuş oluyor.
+
+315
+01:25:59,891 --> 01:26:09,671
+Gene burada ilişim noktası böyle olduğu gibi, insertion ve directionler da gene ağacın yüksekliğine bağlı olarak hallediliyor.
+
+316
+01:26:11,351 --> 01:26:18,992
+Onu da şimdi sorgulamadan sonra, query'ler var ve insertion'lar var.
+
+317
+01:26:19,531 --> 01:26:25,031
+Direction'ları yapmayacağım. Sadece query ve insertion meselesiyle ilgili birkaç şey söyleyeceğiz.
+
+318
+01:26:28,304 --> 01:26:30,724
+Yerim saat içinde biter maksimum.
+
+319
+01:26:31,244 --> 01:26:39,604
+Şimdi, sorguların çalışması, BPLASTir'in bizim sorgumuza hizmeti bu şekilde görüldüğü gibi oluyor.
+
+320
+01:26:40,363 --> 01:26:46,184
+Burada arama algoritması, find ve, yani ve aradığım kelime.
+
+321
+01:26:46,184 --> 01:26:53,064
+Yani burada, search key'imiz, name, buradaki nitelik değerlerimiz, name.
+
+322
+01:26:53,684 --> 01:26:56,184
+Herhangi bir ismi arıyorsak, o aradığım ismi...
+
+323
+01:26:56,304 --> 01:27:14,164
+V değeri oluyor. Bu ismi ararken şu algoritmaya göre aramayı yapıyoruz. Ama hani şimdi algoritmadan önce şurada, şu yapı üzerinde bir arama yapalım mesela.
+
+324
+01:27:23,695 --> 01:27:25,015
+instructor arayalım.
+
+325
+01:27:25,395 --> 01:27:50,915
+Burada her zaman dedik, root'tan başlıyoruz. Çünkü yolumuzu böyle root'tan başlayarak tayin edeceğiz. Hedefe doğru gideceğiz. Yapraklarda bir yaprağa ulaştığımız zaman da o aradığım search key oradaysa o search key'in yanındaki pointerla dosyada o search key içeren kayda gidiyoruz.
+
+326
+01:27:53,395 --> 01:28:06,216
+aradığımız nitelik, search key burada varsa, dosyada, o pointer sayesine gideceğiz. Şimdi biz burada, örneğin şu, der demeyelim de, click'i arayalım mesela, şu click'i arayalım.
+
+327
+01:28:06,836 --> 01:28:11,895
+Root'tan başladığımız zaman, bu click nerede olabilir desek, biraz önce demiştik, buradaki,
+
+328
+01:28:12,916 --> 01:28:39,596
+anahtarlar sıralı ve şu taraftaki pointer bu alt ağaçta Mozart'tan daha küçük olan instructorları içeriyor. Bu pointer ise Mozart'tan büyük eşit olan kayıtları içeren. O zaman biz KRIK'i arıyorsak eğer, KRIK olsa olsa bu taraftadır. Sol tarafta olması gerekiyor.
+
+329
+01:28:40,916 --> 01:29:07,195
+Bu tarafta olamaz. Bu organizasyonumuzun neticesi bu oldu yani. Öyle olunca bakın listemin, dosyamın yarısından kurtulduk. Yani yarısına hiç bakmama gerek kalmadı. Çünkü KRIK ancak bu tarafta olabilir. Bu tarafta budamamız daha kuvvetli olacak. Çünkü bu tam dolu bir ağaç. Altı ağaç. Burada dört tane pointer var. Ve ben KRIK'i arıyorum. KRIK,
+
+330
+01:29:08,916 --> 01:29:23,655
+L'den daha küçük değil, Einstein'dan daha küçük buldum. O zaman KRIK şu pointer'ın olduğu yerde. KRIK varsa buradadır. O zaman buraya iliştim.
+
+331
+01:29:24,032 --> 01:29:36,731
+Ve burada sıralı olduğu için de binary search yaparak click'i bulmuş oldum. Click'i bulduktan sonra ona ait olan pointer'la da click'i içeren dosyadaki kayda erişmiş oldum.
+
+332
+01:29:37,112 --> 01:29:50,572
+Eğer buradaki her bir düğümü disk sayfası olarak temsil etsek, kabul etsek o zaman burada 1, 2, 3, 4 tane disk erişimiyle click'i bulmuş oldum. Click dosyada nerede olursa olsun.
+
+333
+01:29:51,091 --> 01:29:59,091
+Şimdi bunu yaparken bunu böyle hani makineye nasıl anlatacağız? Böyle bir sözde, kodla.
+
+334
+01:30:00,000 --> 01:30:11,839
+Yani pseudokodda bunu şöyle ifade edebiliriz. Bu while döngüsü ağacın yüksekliği kadar, yaprağa ulaşıncaya kadar, yani ağacın yüksekliği kadar dolaşıyor, adım atıyor.
+
+335
+01:30:12,799 --> 01:30:27,839
+C, root'tan başlıyoruz ilk olarak. C, yaprak düğüm değilse devam ediyoruz. Ve her adımda, burada dikkat ederseniz her adımda, C, bir alt pointer'a, yani o düğüm...
+
+336
+01:30:28,000 --> 01:30:37,119
+ünün pointer neyse, şunlar pointerlarda, o alt ağacı bizi götürüyor. Ya P-1'e götürüyor ya da P-i'ye götürüyor.
+
+337
+01:30:37,536 --> 01:31:03,775
+Şu andaki Uncurrent düğümümüz ise C ile temsil ediliyor. İlk olarak Root'tan başlıyoruz. Eğer burada ilk olarak bir düğümün içerisindeysek, o düğümde aradığım anahtardan daha büyük olan en küçük search key buluyorum. Aradığım anahtar V idi.
+
+338
+01:31:04,307 --> 01:31:16,868
+O aradığım anahtardan büyük eşit olan, büyük eşit olan, yani ona eşit veya ondan daha büyük olan bir değer arıyorum.
+
+339
+01:31:19,315 --> 01:31:45,615
+Hangi tarafa gideceğimi tayin edebileyim? Eğer, tabii burada bunun en küçük olanını buluyoruz. Çünkü bu V'den büyük bir sürü şey olabilir. Bir sürü anahtar var. İşte böyle soldan doğru giderken, yani düğüm içerisine soldan sağa doğru giderken, benim aradığım o V'yi arıyorum. O V'den büyük olan bir anahtar arıyorum.
+
+340
+01:31:47,315 --> 01:32:06,315
+anahtar olmuş oluyor bu. Eğer böyle bir şey bulabiliyorsam, buradan böyle devam ediyoruz, eğer bulamıyorsam, eğer böyle bir şey bulamıyorsam, yani o zaman demek ki benim bu şu anda üzerinde olduğum düğümde en son pointer o zaman...
+
+341
+01:32:06,899 --> 01:32:24,839
+O pointer'ın olduğu yerdedir. Yani mesela ben Z'yi arıyorum burada. Z'den daha büyük olan bir anahtar olmadığı için şurada bir şey bulamadım. O zaman Z olsa olsa Mozart'ın sağında bu taraftadır. Çünkü zaten büyük eşit olanlar için bu tarafa gitmiştik.
+
+342
+01:32:31,536 --> 01:32:59,516
+Bu Z değil de mesela şimdi C'yi arayalım gene, şurada KRIK'i arayalım. KRIK'ten daha büyük olan ilk bulduğum anahtar Mozart oldu. İşte eğer o aradığım o KRIK Mozart'a eşit değil ise, eşit değil ise, şurada eşittir ise, eşittir ise demek yani KRIK bu taraftakiler büyük eşit oldu.
+
+343
+01:32:59,536 --> 01:33:11,416
+için bu tarafa gidecektik. Ama şimdi o eşitlik olmadığı için demek ki Krik, Mozart'tan küçük zaten bu tarafa gittim. Yani şunun manası da eşitliği halletmek adına.
+
+344
+01:33:13,684 --> 01:33:29,344
+O aradığım search key'den bulduğum en küçük anahtar, eğer search key'e eşit ise o zaman beni sağa atıyor. Eğer ona eşit değil ise sola atmış oluyor.
+
+345
+01:33:30,163 --> 01:33:48,384
+Evet, şu kısım yani çok daha olasılığı yüksek, bu kısma uğramamın olasılığı daha yüksek. Bu kısma uğramamın olasılığı çok büyük bir, yani şuradaki değerlerin hepsinden daha büyük bir şey arıyorsam o zaman son pointerla şeye gideceğiz. Sağ alt ağaca gideceğiz.
+
+346
+01:33:48,384 --> 01:33:58,064
+O zaman bizim CRICK'i aramamızda şuradayız. Yani PI pointerına gideceğiz, buradayız. Burada CRICK'i ararken,
+
+347
+01:33:58,163 --> 01:34:07,403
+KRIK'ten daha büyük olan ilk bulduğum anahtar, KRIK'ten daha büyük olan ilk bulduğum anahtar Einstein.
+
+348
+01:34:09,203 --> 01:34:11,340
+Einstein KRIK'e eşit...
+
+349
+01:34:11,380 --> 01:34:19,380
+Olsaydı değil, olsaydı bu tarafa gidecektim. Olmadığı için bu tarafa gittik. O zaman CRIC olsa olsa buradadır.
+
+350
+01:34:19,779 --> 01:34:30,300
+Ve burada dolaşırken de bu pointerlerden hangisi? CRIC'ten daha büyük eşit olan aynı şu algoritma burada da oluyor.
+
+351
+01:34:30,460 --> 01:34:39,000
+CRIC'ten daha büyük eşit olan bir anahtar buldum. O da CRIC. Eğer eşit olduğu için de solundaki pointerı, yani bunun eşi olan pointerı olmuş oldu zaten.
+
+352
+01:34:39,380 --> 01:34:50,880
+Burada P, K'lar var. Bu P için bu P, 42 içeren K'yı da bizi götürmüş oldu. Evet, işte algoritma bu şekilde.
+
+353
+01:34:55,412 --> 01:35:09,532
+Ve herhangi bir anda bu yaprağa eriştikten sonra bu K'ya eşit olan, o V'ye eşit olan bir K'yı bulabiliyor isek, o zaman demek ki bulduk aradığımız K'yı da.
+
+354
+01:35:09,532 --> 01:35:13,532
+Yani olabileceği yere ulaştık. Oradaysa...
+
+355
+01:35:13,823 --> 01:35:23,863
+Bulduk ama oraya ulaştık, olabileceği bir yer, yani bu yapıya uygun olan olabileceği bir yer burası. Eğer orada bulamadıysak o zaman bu kayıt yoktur diyeceğiz.
+
+356
+01:35:24,523 --> 01:35:31,183
+Evet, sorgulama bu şekilde. Bu tip sorgulamada biz sadece tek bir değeri aradık.
+
+357
+01:35:31,699 --> 01:35:44,380
+Yani buna point query de deniyor. Yani name eşittir, crick mesela onu aradık. Ama eğer name büyük crick deseydik veya crick ile Mozart arasındaki kayıtlara bana bul deseydik.
+
+358
+01:35:44,380 --> 01:35:59,380
+Yani bu sonuçta bu name niteliği sıralanabilir bir nitelik. Crick ile Mozart arasındaki kayıtları bana bul dediğim zaman o zaman bu bir aralık sorgusu. Bu aralık sorgusunda aralığın en küçük olan...
+
+359
+01:35:59,699 --> 01:36:02,460
+tarafına gittikten sonra
+
+360
+01:36:03,680 --> 01:36:19,620
+Burada yaprak düğümlerinde dolaşarak, bu bir dense indeks olduğu için, yaprak düğümlerinde dolaşarak, her bir Krik ile Mozart arasındaki her bir anahtara ilişmiş oluyorum.
+
+361
+01:36:20,000 --> 01:36:24,300
+Yani tekrar indeksin diğer üst katlanlarına çıkmama gerek kalmamış oluyor.
+
+362
+01:36:24,800 --> 01:36:28,040
+Bu imkanı bana sağlayan da şuradaki ufak pointerlar oldu.
+
+363
+01:36:28,040 --> 01:36:31,680
+Bu bize range querylerde aralık sorgularında.
+
+364
+01:36:31,680 --> 01:36:48,520
+Bu hizmeti vermiş oldu. O zaman, burada böyle bir sorgu olsa, KRIK ile Mozart arasındaki hocaların maaşına erişmek istesek, o zaman 1, 2, 3 adımda buraya eriştik, KRIK'in maaşına eriştik.
+
+365
+01:36:48,927 --> 01:37:09,747
+Daha sonra buraya eriştik. Einstein ve El Said'in maaşlarına eriştik. Daha sonra buraya zıpladık. Bunların maaşlarına eriştik. Buraya zıpladık. Mozart'a eriştik. Mozart son sınırdı. Mozart'ın maaşına eriştik. İşte arka planda fiziksel olarak bu adımlarla iş dönüyor.
+
+366
+01:37:10,163 --> 01:37:34,384
+Yani bizim bu ders kapsamı içerisinde böyle bir sorgumuz, SELECT, FROM, WHERE, NAME, CRICK ile Mozart arasındaki kayıtlara bana eriştiğiniz zaman arkada bu iş nasıl dönüyor olan sualin böyle çok özet cevabı bu şekilde görünmüş oluyor. Yani bu konu kapsamı içerisinde böyle bir şey dönüyor arkada.
+
+367
+01:37:36,884 --> 01:37:57,943
+Evet, aralık sorgusu içinde, aralık sorgusunu burada ifade ediyor. Biz bir örneğini verdik o zaman, burayı da geçiyorum. Burada böyle biraz önceki şeye biraz daha açarsak, yani sayısal bir örnek verirsek, logaritman n bölü 2K demiştik. Yani performans analizi logaritman n bölü 2K.
+
+368
+01:37:59,604 --> 01:38:18,003
+kadar bir şey var. Bu oldukça başarılı olduğunu söyledik. Bunun sebebini burada ifade ediyor. Eğer 1 milyon tane kaydımız varsa ve işte N'nin tipik değeri de 100 olsun ki bu hani çok şey, iyimser.
+
+369
+01:38:26,771 --> 01:38:40,652
+Hani, index entry'ler 40 byte olsa, 4000 byte'lık bir diz sayfası olsa, tamam 100 oradan geliyor. Yani, 4000 bölü, 40, 100 oluyor. 100 tane anahtar anca serbilir ama...
+
+370
+01:38:40,692 --> 01:39:07,291
+Buradaki, hani, index entry'ler de, bir takım böyle data compression yöntemleriyle, daha da sıkıştırılabilir. Bir de, vezi tabanlarında, tipik disk sayfası büyüklüğü, 4K değil de 8K. O yüzden bu rakam böyle 500'lere kadar ulaşabilir. Böyle olduğu için, en kötü durumda, hani biz gene 100 olsun, kabul edelim. En kötü durumda, bu ağacı yüksekliği 4 oluyor.
+
+371
+01:39:07,712 --> 01:39:32,772
+Ve çoğu zamanda bu ağacımızın yani kök ve köke yakın olan seviyeler çok erişildiği için, onlar da genelde ana hafızada tutulduğu için böyle yani 1 milyon tane kayda yaklaşık olarak işte 1-2 disk erişimiyle erişebiliyoruz.
+
+372
+01:39:32,772 --> 01:39:35,712
+Yani 1 milyon tane kayıt içerisinde bir ara...
+
+373
+01:39:35,712 --> 01:39:57,852
+arama yapmak, 1-2 tane disk erişimi gerektiriyor. 1-2 disk erişimi. Bu çok oldukça başarılı. Yani 1 milyon kayıt daha da artsa, bu 2-3 olacak falan sonuçta. Aksi takdirde bunu biz sequential arama yapsak, bütün dosyanın kayıtlarını taramamız gerekecek.
+
+374
+01:40:00,000 --> 01:40:12,199
+sayfa var orada. Yani onu da sayısal örneklene verebiliriz. Bu konular tabii daha detaylı olarak işleniyor. Yani bizim veri tabanı sistem gerçekleştirme de mesela daha detaylı olarak.
+
+375
+01:40:17,652 --> 01:40:31,372
+Daha detaylı işliyoruz. Burada eğer böyle bir B3 değil de böyle bir binary search tree yapsak, o da balans olsa ki binary'yi balans tutmak çok kolay bir şey değil.
+
+376
+01:40:31,372 --> 01:40:39,372
+Yani önce bir sıralamak gerekiyor, sonra dengeli bir ağaç oluşturmak gerekiyor. Bunlar tabii...
+
+377
+01:40:40,051 --> 01:40:57,835
+Yeni tabanı noktasında çok kolay şeyler değil. Çünkü disk ortamındaki verimizi nasıl sıralayacağız? Yani çok masraftaydı. Nasıl sıralayacağımızı öğrendik ama biliyoruz yani. Ama şey bunun dengeli, bunun yapılması o duygusun masrafı. Onun yerine...
+
+378
+01:40:57,844 --> 01:41:12,584
+Yani böyle iyimsel bir varsayımda bulunarak balans olduğunu söylesek, böyle bir BUNE editriği olsa, burada işte yaklaşık 20 tane, yani logaritma 2, 1 milyon dediğimiz zaman bu 20'ye denk geliyor.
+
+379
+01:41:14,104 --> 01:41:17,923
+20 tane look up disk erişim yapmamız gerekiyor.
+
+380
+01:41:19,484 --> 01:41:24,224
+Evet, o zaman sorgulama da bu şekilde.
+
+381
+01:41:24,800 --> 01:41:32,079
+Bu tekrarı içeren organizasyonu atlıyorum, ona gerek yok. Böylece son olarak B-plastilerde insertion'a bir bakalım.
+
+382
+01:41:32,700 --> 01:41:39,880
+Insertion'da ise ağacımızın büyümesi yapraklardan köke doğru oluyor dedik.
+
+383
+01:41:39,880 --> 01:41:46,380
+Ve yeni bir kayıt eklendiği zaman ilk olarak nereye eklenmesi gerektiğini buluyoruz.
+
+384
+01:41:46,860 --> 01:41:52,800
+Hangi yaprağa eklenmesi? Bu bir search nihayetinde. Yani biraz önceki...
+
+385
+01:41:52,800 --> 01:42:17,880
+şu fonksiyonla, şuradaki algoritmayla nereye eklemem gerekiyorsa o düğümü buluyorum. Eğer orada boş yer var ise eklemeyi yapıyoruz. Eğer yok ise o zaman yani yer olmaması işte bunun kısıtı vardı değil mi? İşte n bölü 2, n-1 bölü 2'den n'e kadar n-1 bölü 2'den n'e kadar bir değer içermesi lazım.
+
+386
+01:42:20,020 --> 01:42:42,940
+Örneğin burada 4 olduğu için işte 3 bölü 2, yani 1.5, 2'ye tamamladık. 2 ile 3 arasında değer içermesi lazım. Mesela yine bir kayıt geldi, buraya eklendi. Burada yer var, buraya ekliyoruz, iş bitiyor. Ama eğer buraya bir kayıt gelirse, yani dolu olan bir yere bir kayıt gelirse, o zaman bu düğümü split ediyoruz.
+
+387
+01:42:45,235 --> 01:42:55,235
+Bu düğümü ortadan ikiye bölüp kayıtlarını yeni gelen bir disk sayfasına, yeni gelen bir düğme...
+
+388
+01:42:55,792 --> 01:43:03,192
+soldakileri kendi yerinde bırakıp ikiye böldükten sonra sağdakileri de yeni düğme aktarıyoruz.
+
+389
+01:43:04,572 --> 01:43:09,731
+Bu nihayetinde yeni bir anahtarın ortaya çıkmasına sebebiyet veriyor.
+
+390
+01:43:09,731 --> 01:43:20,811
+Yani burada ilk olarak ilk bizim şuradaki şeyde, şuradaki organizasyonumuzda,
+
+391
+01:43:27,764 --> 01:43:35,764
+İlk olarak mesela düğümümüz Brand, Kalifer ve Crick'i içerdiğini düşünelim.
+
+392
+01:43:37,324 --> 01:43:46,423
+Yani gene bu ağacımızın en değeri 4, minimum 2 tane value, 3 tane value içermesi lazım.
+
+393
+01:43:46,423 --> 01:43:48,764
+Ve bu yaprak düğümü ekleniyor.
+
+394
+01:43:49,199 --> 01:44:02,239
+Bu yaprak düğümde ilk olarak bu değerler varsa biz Adams'ı ekliyorsak eğer, yani bu ağacın sadece ufak bir kısmını almış sadece, burada tam hali gözüküyor. Yani şöyle bir durum var ilk olarak.
+
+395
+01:44:02,644 --> 01:44:13,083
+Brand, Kaliferi, Crick'in bulunduğu şöyle bir düğüm var. Böyle bir düğüme biz Adams eklediğimiz zaman, Adams ekliyoruz, evet.
+
+396
+01:44:13,604 --> 01:44:22,764
+Adams nereye eklenecek ilk olarak? Onu bulduk, buraya eklenecek. Çünkü A bizi sola götürdü. Burada işte Einstein'i bulduk, onun soluna geldik, buraya geldik.
+
+397
+01:44:22,764 --> 01:44:27,743
+O zaman Adams buraya eklenecek, Adams da buraya eklenecek. Yani Adams, ama yer yok.
+
+398
+01:44:28,180 --> 01:44:47,940
+Yer olmadığı için de burada 4 tane değeri ortadan 2'ye veriyoruz. Yani Adams, Brandt sola geldi. Kalifer ve Crick de sağ olacak şekilde yeni bir tane düğüm ortaya çıktı. Yani burada 5 tane toplam yaprak düğümü varken burada 6 tane oldu. İşte o düğüm de buraya eklendi.
+
+399
+01:44:48,351 --> 01:44:50,771
+Çünkü artık bu düğümün yeri burası.
+
+400
+01:44:52,552 --> 01:45:01,431
+Ve bu düğümün buraya eklenmesiyle bu iki düğümü, yeni olan bu iki düğümü birbirinden ayırt edecek bir anahtara ihtiyaç var.
+
+401
+01:45:01,431 --> 01:45:10,592
+Çünkü buradaki bakın bütün yaprakların veya her seviyedeki bütün düğümleri birbirinden ayırt edecek bir anahtar görüyorsunuz yukarıda.
+
+402
+01:45:10,952 --> 01:45:15,872
+Yani Morzat mesela şu iki alt ağaca ayırıyor. Einstein şu iki alt ağaca ayırıyor.
+
+403
+01:45:16,351 --> 01:45:34,351
+SLEVİN SAN, şu iki ağaç. İşte o zaman burada da şu yeni bir düğüm olduğunuz zaman bu iki yeni düğümü birbirine ayırt edecek bir anahtara ihtiyacım var. O da ne olacak? Bizim buradaki ağacımızın kurallarına göre bu anahtar, şuradaki anahtar, buradaki onun sağ alt...
+
+404
+01:45:34,484 --> 01:45:41,844
+Çocuğunun, oradaki alt ağacın, en küçük elemanının tekrarı şeklinde.
+
+405
+01:45:42,144 --> 01:45:51,423
+Çünkü bu pointer bize ne diyordu? Şu anahtarın, anahtardan büyük eşit olanları için buraya git diyordu.
+
+406
+01:45:51,744 --> 01:45:58,304
+O zaman bu alt ağacın, ki orada da yaprak var, bu alt ağacın en küçük elemanı, kalifeli buraya taşıyoruz yani.
+
+407
+01:45:58,671 --> 01:46:04,619
+İşte insert ederken demek ki yaprağı bulduk. Eğer yer yok ise...
+
+408
+01:46:04,851 --> 01:46:30,432
+Yer var ise zaten sorun yok. Yer yok ise böyle ikiye ayırdık ve bu iki düğümü ayırt edecek olan anahtarı da bir üst seviyeye eklemem lazım. Allah'tan burada bir yer var. Yani kalifleri buraya ekledik çünkü evvelde ilk hali böyle. Kalifleri buraya eklemek için yer oldu. Eğer burada da yer olmamış olsaydı, o zaman bunu ikiye bölecektik. Yani burada var, kalifleri yerleştirdik, işimiz bitti.
+
+409
+01:46:30,996 --> 01:46:43,735
+eklemeyi yaptık. Çünkü bu yeni düğme oluştu. Onları birbirinden ayırt edecek olan anahtarı da buraya ekledik. Artık bütün mekanizma burada düzgün çalışıyor. Ama burada da yer olmamış olsaydı o zaman bunu ikiye bölecektik.
+
+410
+01:46:44,340 --> 01:47:03,579
+Bunun ikiye bölünmesiyle yeni bir tane anahtar ortaya çıkıyor. Onu yukarıya propagail edecektik. Yani şuradaki bahsettiği, SPREIT and propagate the SPREIT further up. Yani o SPREIT'i yukarıya doğru taşımam lazım. Yani yeni bir anahtar yukarıya taşımamız lazım.
+
+411
+01:47:05,300 --> 01:47:21,079
+O anahtarda da en son, en nihayetinde Ruhut'a gelecek, olay dayanacak. Yani nihayetinde bunların başına gelenler, en son Ruhut'un başına gelecek. Ruhut'ta da yer kalmayınca Ruhut bu sefer ikiye ayrılıp, iki tane çocuğu olan yeni bir Ruhut oluşacak.
+
+412
+01:47:22,707 --> 01:47:29,347
+Daha konunun başındaki, şuradaki root'taki exception'ı herhalde daha iyi anlamış olduk.
+
+413
+01:47:29,347 --> 01:47:41,427
+Yani if the root is not a leaf, yani root leaf değil ise, yaprak değil ise, yani demek ki root artık yaprak olmaktan çıkmış, yeni yeni seviyeler ortaya çıkmış.
+
+414
+01:47:41,807 --> 01:47:47,148
+O zaman en az iki çocuğu olması kaçınılmaz. Yani zaruri, bunun başka yolu yok yani.
+
+415
+01:47:48,467 --> 01:47:50,707
+İşte burada da onu görmüş olduk.
+
+416
+01:47:50,707 --> 01:47:59,528
+Bu şekilde Adams eklendiği zaman ağacımızın yapısı böyle olmuş oldu.
+
+417
+01:48:00,887 --> 01:48:05,028
+Evet, bir tane daha ekleme yapalım. Burada da şuraya bir ekleme olmuş olsun.
+
+418
+01:48:07,427 --> 01:48:10,327
+LAN portu ekleyelim. LAN portu nereye eklemem lazım?
+
+419
+01:48:10,707 --> 01:48:19,887
+L harfiden büyük olan ilk bulduğum şey M burası. O zaman buraya geldim.
+
+420
+01:48:20,243 --> 01:48:41,643
+Burada L harfinden büyük ilk bulduğum SELECT key ne? Einstein, GOLD, L'den büyük bulamadım. O yüzden en son pointer'a gittim. Buraya geldim. O zaman L'yi buraya ekliyorum. LAN portu buraya ekliyorum. Buraya eklemek ne demek LAN portu? G, K, K, L.
+
+421
+01:48:42,079 --> 01:49:06,339
+Yani bu sırayı bozmadan ekleyeceğim. Ama burada yer yok. O zaman buradaki kapasite sınırı 2-4 idi. O zaman 4 tane anahtar oldu. İkiye böleceğiz. GOLD ve CUTS bir tarafa geldi. KIM ve LAMPORT da buraya geldi. Yani iki düğüme ayrıldı ve birer tane boşluk ortaya çıkmış oldu.
+
+422
+01:49:07,859 --> 01:49:34,539
+İşte bu iki düğümü birbirinden ayet edebilecek olan anahtar da sağ alt çocuğun en küçük elemanı olan kim. Kimi o yüzden buraya yazdık. İşte burada ta ki bizim bu bitiridik arama mekanizma bizde çalışmış oluyor. Yani kimden büyük eşit olanlar bu tarafta, kimden küçük olanlar da bu tarafta olmuş oluyor. Yani şu katsı yazsam olmaz.
+
+423
+01:49:35,091 --> 01:49:48,591
+Bu sağ alt ağaçtaki en küçük elemanı yazmam lazım. O da kim oldum? Evet, böylece şöyle bir eklememizde etkilenen düğümleri burada gösteriyor yani.
+
+424
+01:49:48,591 --> 01:49:59,591
+Buradan anlaşılıyor ki bu Beatree eklemede de performansı oldukça iyi. Çünkü etki en fazla ağacın yüksekliği kadar bir...
+
+425
+01:50:00,000 --> 01:50:18,800
+Yol izleyerek ağaçta bir etki oluşturuyor. Yoksa böyle yatay bir etkisi yok. Yani burada şu kayıtlar, ağacın bu tarafındaki veya dosyanın bu tarafındaki kayıtlar çok etkilenmediler. Ağacın yüksekliği kadar bir etki söz konusu oldu.
+
+426
+01:50:28,000 --> 01:50:45,859
+Birçok dosyadaki birçok kayda aşağıya shift etmem gerekiyor bunu sorted tutmak için. Ama burada ana dosyamız bakın hiç sorted falan değil. Ana dosya bir yerde kendine göre hızlı bir ekleme çıkartması var. Yani sıralama değil heap file olarak çoğu zaman oluyor. Bu heap file.
+
+427
+01:50:56,000 --> 01:51:07,760
+imkan sağlamış oluyor. Hem de ekleme ve çıkartması da, her ne kadar sort bir dosya olsa da, ekleme çıkartması da oldukça linear.
+
+428
+01:51:07,960 --> 01:51:12,920
+Yani tam linear değil ama logaritmik gene. Yani ağacın yüksekliği kadar olmuş oluyor.
+
+429
+01:51:14,480 --> 01:51:18,000
+Evet, bunlar tabii böyle...
+
+430
+01:51:18,420 --> 01:51:23,960
+Oldukça önemli bir veri yapısı haline getirmiş oluyor bu özellikleri bir treni.
+
+431
+01:51:25,800 --> 01:51:28,539
+Evet, Derection'dan bahsetmeyeceğim.
+
+432
+01:51:29,380 --> 01:51:35,099
+Çünkü gerçekte Derection'da belki çoğu zaman gerçeklenmiyor.
+
+433
+01:51:35,536 --> 01:51:45,015
+Yani bir dosyada, veritabanında bir truncate yaptığımız zaman veya bir drift operasyonu yaptığımız zaman daha ufak olsun mesela.
+
+434
+01:51:45,015 --> 01:51:47,015
+Arka planında...
+
+435
+01:51:48,564 --> 01:51:56,123
+Çünkü delete oldukça karmaşık, yani ağacın tekrar restructure edilmesi, işte bu sefer split yerine merge yapıyoruz.
+
+436
+01:51:56,623 --> 01:52:04,104
+Bazı kayıtları, bazı düğümleri bir araya getiriyoruz. Böylece ağacın yüksekliği bu sefer azalmaya başlıyor.
+
+437
+01:52:04,104 --> 01:52:16,404
+Fakat gerçekleme karmaşıklığından dolayı bunu gerçeklemek yerine, burada indekste ağacın, indeksin ufalması yerine,
+
+438
+01:52:16,564 --> 01:52:29,524
+İndeksi öyle mevcut halinde tutup, öyle bırakıp, çünkü yeni gelen kayıtları, bundan sonra yeni gelen kayıtları da o indekse, o hazır yapıya eklemek tarzında oluyor.
+
+439
+01:52:30,564 --> 01:52:38,304
+Bunun sebebi tabii, çünkü bu ekleme çıkarmalar birbirini takip ediyorlar. Yani çoğu zaman gerçek hayatta biz bir kayıt çıkartıyoruz.
+
+440
+01:52:38,304 --> 01:52:43,484
+Bazı kayıtlar çıkardık ama birazdan yeni kayıtlar eklenecek.
+
+441
+01:52:44,083 --> 01:52:52,800
+Yani silme de karmaşık, maliyetli olduğu için burada ayrı bir sisteme yük getiriyor. Onun yerine öyle bırakıp...
+
+442
+01:52:52,800 --> 01:53:14,440
+Yani mevcut yapıyı bırakıp belki biraz boş kalacak. Yani yer verimliliği bayağı azalacak. Ama yeni gelen kayıtlar içinde hazır olacak. Yani delete etmeyle çok masraf yapmamış olacağız. Bu onu şeyi telafi etmiş oluyor. Yani o yer kaybının bir parça telafi etmiş olacak.
+
+443
+01:53:19,220 --> 01:53:44,520
+Böylece bu sunularda da beni bir yol katettik. Yani hashingden artık bahsetmeyelim. B-plastırı zaten yeterli bir fikir verdi. Hache yapıları da sıralama değil de bu sefer belli bir fonksiyonla kayıtları sepetlere dağıtmak tarzında.
+
+444
+01:53:44,960 --> 01:53:56,960
+Bunun statik versiyonu tabii çok şey değil. Çünkü evvelden ne kadar şey olduğunu bilmiyoruz. Ne kadar kayıt olduğunu bilmiyoruz.
+
+445
+01:53:59,819 --> 01:54:11,239
+Ve bu yüzden de bunun extendable, yani B3 gibi adaptif olan hash versiyonları var.
+
+446
+01:54:11,636 --> 01:54:33,876
+Bunlar, Extendable, Hash ve LinearHash, bunlar da gene biraz karmaşık veri yapıları. Ama oldukça böyle şey, akıllıca tasarımlar. Bunları gene veri yapılarında, bunlar disk esaslı veri yapıları olduğu için, DataStructure algoritmalar dersinde görmüyorsunuzdur diye düşünüyorum.
+
+447
+01:54:33,876 --> 01:54:36,015
+Dynamic Hashing, Linear Hashing'i.
+
+448
+01:54:36,304 --> 01:54:50,503
+Bunlar yine günümüzde veri tabanlarında kullanılan, gerçek hayatta kullanılan veri yapıları. Bunları da merak ederseniz, bunları da öğrenmenizi tavsiye ederim.
+
+449
+01:54:51,384 --> 01:55:03,184
+O zaman bir tiri bizim için yeterli şimdilik bu ders için. Zaten veri yapılarına çok, bu ders çok kaldırmıyor veri yapılarını. Biraz bu son dersler biraz şey oldu.
+
+450
+01:55:03,636 --> 01:55:28,556
+Fiziksel tasarım tarzında oldu. Evet. Benim anlatacaklarım bu kadar. Eğer sorunuz yoksa dersi bitireceğim. Geçmiş olsun dönümü böylece bitirmiş olduk. Sınavlar ilan edildi herhalde zannedersem. Bizim başlarda sınav, pazartesi günü zannedersem.
+
+451
+01:55:30,420 --> 01:55:38,400
+Evet, iyi çalışmalar diliyorum. Sorunuz yoksa bitiriyorum o zaman. Yani chatte bir şey mi yazılmış?
+
+452
+01:55:44,659 --> 01:55:47,900
+Peki ben teşekkür ederim. Başarılar diliyorum.
+
+453
+01:55:51,475 --> 01:55:52,415
+Görüşmek üzere.

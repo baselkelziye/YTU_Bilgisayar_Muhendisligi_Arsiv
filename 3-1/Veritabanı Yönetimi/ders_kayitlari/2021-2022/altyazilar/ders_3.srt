@@ -1,0 +1,3191 @@
+1
+00:00:25,588 --> 00:00:52,567
+Arkadaşlar, sesim geliyor mu? Duyabiliyor musunuz beni? Hoş geldiniz. Kusura unutmayın, online. Yıldız biraz çalışıyordu. Başlatmam, biraz zaman aldı. İsteydikten 2 dakika, biraz bir fan duyabiliyor musunuz beni? Ses net geliyor mu? Kabukle bağlanmayı deneyeceğim. Bir saniye.
+
+2
+00:01:04,275 --> 00:01:06,435
+Şimdi bir değişiklik var mı sesleriyle?
+
+3
+00:01:12,275 --> 00:01:13,335
+SeleCT, İlhamo.
+
+4
+00:01:17,555 --> 00:01:20,735
+Duyabiliyor musunuz? Ses kötü mü? Aynı şekilde mi?
+
+5
+00:01:23,316 --> 00:01:25,216
+Kablo ile bağlamayı denedim ama.
+
+6
+00:01:28,216 --> 00:01:28,975
+Duyuyor musunuz? Tamam.
+
+7
+00:01:31,615 --> 00:01:36,596
+Daha iyi olmasını bekliyorum ama belki lütfen birazdan eğer.
+
+8
+00:01:37,156 --> 00:01:41,515
+Sesle ilgili bir... Tamam, güzel. Şu an duyabiliyor musunuz?
+
+9
+00:01:42,096 --> 00:01:44,176
+Sesle ilgili bir problem olursa lütfen.
+
+10
+00:01:44,724 --> 00:01:51,243
+Tekrar haber verin. Ona göre ayar değişikliği yapmaya çalışıyorum.
+
+11
+00:01:52,204 --> 00:01:57,724
+Şimdi tekrar hoş geldiniz. Bugün, geçen hafta kaldığımız yerden devam edeceğiz.
+
+12
+00:01:58,683 --> 00:02:07,324
+Öncelikle SQL konusunu işlemeye başlamıştık. Çeşitli SQL kavramlarını inceleme imkanımız oldu.
+
+13
+00:02:12,288 --> 00:02:32,487
+JOIN'ler işlemiştik geçen hafta. Değişik JOIN tiplerini özellikle konuştuk. Burada NATURAL JOIN vardı. NATURAL JOIN'in yanında INNER JOIN, OUTR JOIN gibi konuları işledik. NATURAL JOIN ile INNER JOIN arasında nasıl bir fark vardı hatırlayan var mı?
+
+14
+00:02:37,876 --> 00:02:38,996
+Temel farkı nedir?
+
+15
+00:02:39,516 --> 00:02:41,235
+Initial join ile inner join'in.
+
+16
+00:02:50,484 --> 00:03:05,804
+[öğrenci]'den cevap var. Birinde eşitlik belirtmeliyiz. Hangisinde eşitlik belirtmekten neyi kastediyorsun? Belki biraz daha detaylı paylaşabilirsen. Bu arada konuşmak isterseniz mikrofonunuzu açıp konuşabilirsiniz. Daha kurtulabilir.
+
+17
+00:03:06,704 --> 00:03:12,463
+ATWELL'da kendi eşleştiriyor. Energroinde biz eşleştiriyoruz. ON deyip, ID'leri.
+
+18
+00:03:13,587 --> 00:03:17,827
+Evet, aslında [öğrenci]'in de söylediği gibi [öğrenci] da şimdi söyledi.
+
+19
+00:03:18,387 --> 00:03:27,327
+Inner join'de sizin bu eşleştirmeyi explicit, yani dışsal olarak belirtmeniz lazım, bir ifadeyle belirtmeniz gerekiyor.
+
+20
+00:03:28,307 --> 00:03:30,507
+Natural join'de böyle bir durum yok.
+
+21
+00:03:30,507 --> 00:03:39,407
+Natural join'de eğer kolonlar iki tarafta değişitse ve aynı isimde ise otomatik olarak bunlar üzerinde bağlama, join işlemi yapar.
+
+22
+00:03:40,051 --> 00:03:41,271
+Başka bir fark var mı?
+
+23
+00:03:52,627 --> 00:03:54,448
+Şimdi ekranını da paylattım bu arada.
+
+24
+00:03:59,060 --> 00:04:00,620
+Ekranımı görebiliyor musunuz?
+
+25
+00:04:03,140 --> 00:04:04,300
+Evet hocam.
+
+26
+00:04:05,020 --> 00:04:05,300
+Tamam.
+
+27
+00:04:06,879 --> 00:04:08,920
+[öğrenci], gösterim farkı da var.
+
+28
+00:04:09,180 --> 00:04:11,960
+Gösterim farkından neyi kastediyordun?
+
+29
+00:04:12,340 --> 00:04:14,060
+[öğrenci], biraz da detaylı söyler misiniz?
+
+30
+00:04:17,019 --> 00:04:18,680
+Evet, Aslında [öğrenci] de söylemiş.
+
+31
+00:04:18,680 --> 00:04:19,939
+Enjoy'inde.
+
+32
+00:04:20,367 --> 00:04:26,587
+Eğer örtüşen kolonlar varsa, bu örtüşen kolonları tekrar yazar.
+
+33
+00:04:26,668 --> 00:04:37,227
+Yani SELECT, STAR, FROM diyorsunuz ve iki tane tabloyu JOIN diyorsanız, ikisinde de bağlanan kolon isimleri aynıysa iki defa yazar.
+
+34
+00:04:37,747 --> 00:04:44,387
+Ama NATURAL JOIN'de bu böyle değil. NATURAL JOIN'de aynı isimde ve tekrar eden kolon olduğu için bağlanıyor zaten.
+
+35
+00:04:45,207 --> 00:04:48,367
+Bunlardan tekrar edeni göstermiyor. Yani sadece bir tanesini göstermiyor.
+
+36
+00:04:48,367 --> 00:05:08,107
+göstererek son gösterimde ekranımıza bu şekilde yansıtıyor diye söyleyebiliriz. Bu da diğer bir fark. Ekranım sanırım şu an yansıdı. Natural Join'in tabii taşıdığı bazı riskler var. Ne tür risklerle karşılaşabilirsiniz Natural Join'de?
+
+37
+00:05:10,607 --> 00:05:12,327
+Yanlış mapleme olabilir.
+
+38
+00:05:13,363 --> 00:05:33,403
+Aynen öyle. Yanlış meklene olabilir. Çünkü mek ettiği tek şey ne? Kolonun ismi. Eğer isimler örtüşüyorsa ve uyumluluk açısından verinin tipi de örtüşüyorsa başka bir şeye bakmıyor. Ama şimdi iki tane tablonuz var. Bir teacher ID'si var, bir de student ID'si var.
+
+39
+00:05:34,196 --> 00:05:58,076
+İkisi de ID, ikisi de nümerik bir değer çeliyor. Dolayısıyla bu iki tabloyası join ederseniz, sadece ID demişseniz bu ikisine, o ikisi birleşir natural join'de. Ama aslında teacher ile öğrenci, student aynı şey değil. Dolayısıyla bu ikisi örtüşmeyecektir. Yanlış bir şeyle MF etmiş oluyorsunuz. Bu da natural join'in taşıdığı bir risk olarak konuşmuştuk. Dolayısıyla...
+
+40
+00:05:58,355 --> 00:06:20,355
+Mümkün olduğunca, inner join ile veya natural join kullanıyorsanız da, using gibi ifadeler var natural join'de. Bunlarla spesifik bir şekilde belirtmeniz önemli. Aksi halde, beklemediğiniz mappingler, beklemediğiniz örtüşmeler meydana gelebilir. Bu da sonuç olarak...
+
+41
+00:06:20,911 --> 00:06:27,831
+Farklı sorgu sonucu size döndürebilir, böyle dezavantajları olabiliyor.
+
+42
+00:06:29,051 --> 00:06:31,931
+Outer join ile inner join arasında nasıl bir fark vardı?
+
+43
+00:06:43,124 --> 00:06:49,924
+Neden outer joint kullanabiliriz? Kullanmak ihtiyacı duyuyoruz veya hangi durumlar?
+
+44
+00:06:49,924 --> 00:06:53,963
+O zaman gelmek için outer joint kullanıyoruz.
+
+45
+00:06:54,564 --> 00:07:02,564
+Evet, yani inner joint şunu yapıyor. İki tane tablonuz var. A tablosu ve B tablosu. Bu ikisinde de ortaksa kolonlar.
+
+46
+00:07:03,156 --> 00:07:05,795
+Bu durumda size sorgu sonucu döndürüyor.
+
+47
+00:07:06,435 --> 00:07:10,135
+Eğer bir taraftaki değerlerin karşılığında boşluk varsa,
+
+48
+00:07:11,235 --> 00:07:20,875
+diyelim ki siz işte departman tablosuyla ders tablosunu veya işte öğrenci tablosunu, ders tablosunu paylaşalım diyelim.
+
+49
+00:07:21,656 --> 00:07:25,315
+Şimdi bütün departmanların departman tablosu getirecektir.
+
+50
+00:07:25,315 --> 00:07:29,315
+Ama bazı departmanlar henüz ders açmamışsa bu...
+
+51
+00:07:29,684 --> 00:07:49,564
+departmanları siz şeyde görmeyeceksinizdir. O sorguda eğer SELECT, STARP, DEPARTMENT, INNER JOIN, COURSE derseniz, burada ders açmayan, yani departman ID'leri departmanla şeye match etmeyen,
+
+52
+00:07:51,391 --> 00:08:10,252
+KORS'lara meşhet etmeyen bazı departmanlar sorgunun sonucunda gözükmeyecektir. Ama siz bunları da görmek isteyebilirsiniz. Yani hangi departmanlar henüz ders açmamış, hangileri ders açmış gibi bir sorgu ihtiyacınız varsa bu sonuç beklediğiniz şekilde dönmeyecektir.
+
+53
+00:08:10,252 --> 00:08:18,492
+Bunu çözmek için Outer Join kullanıyoruz. Outer Join şunu yapıyor, boşluk da olsa sonucu getiriyor.
+
+54
+00:08:19,124 --> 00:08:23,963
+Yani örtüşen, MF etmeyen ID'ler de olsa, bunun sonucunu döndürür.
+
+55
+00:08:24,343 --> 00:08:32,443
+Outer join'e de birden fazla türü var. Left join, right join ve full outer join vardı. Bunlar arasındaki fark nedir?
+
+56
+00:08:33,683 --> 00:08:35,943
+Mesela left join ile right join'in farkı ne?
+
+57
+00:08:43,028 --> 00:08:46,028
+Hangi durumda left-to-one kurulmuş, hangi durumda right-to-one kurulmuş sanırız.
+
+58
+00:08:49,028 --> 00:08:49,867
+Tekrarına bakayım.
+
+59
+00:09:01,556 --> 00:09:02,496
+Şöyle yapalım.
+
+60
+00:09:03,996 --> 00:09:05,396
+Şimdi burada,
+
+61
+00:09:06,115 --> 00:09:08,396
+değil mi aslında, belki daha çok kolay olacaktır.
+
+62
+00:09:09,196 --> 00:09:10,096
+Tablolarımız var.
+
+63
+00:09:11,936 --> 00:09:12,855
+A tablosu.
+
+64
+00:09:18,292 --> 00:09:21,572
+B tablosu. Ekranı görüyorsunuz değil mi Whiteboard'ta?
+
+65
+00:09:26,131 --> 00:09:28,751
+Bu A tablosu, bu da B tablosu.
+
+66
+00:09:33,268 --> 00:09:36,988
+ID, name.
+
+67
+00:09:41,268 --> 00:09:46,827
+Bu da işte salary gibi bir kolon, bu da başka bir kolon.
+
+68
+00:09:53,235 --> 00:09:54,816
+Diyelim ki buranın yeri.
+
+69
+00:09:58,131 --> 00:10:03,711
+ID değeri var. Bir de şurada B ID. Daha doğrusu A ID.
+
+70
+00:10:09,620 --> 00:10:21,879
+ID diye bir şey var. Bu arada da başka bir kolon var. Aslında şuranın B ID'si buranın A ID'sine eşit. Bir sürü kolon var.
+
+71
+00:10:25,331 --> 00:10:30,951
+1, 2, 3, 4 satırlarımız olsun.
+
+72
+00:10:30,951 --> 00:10:35,272
+1, 2, 3, gibi satırlarımız var.
+
+73
+00:10:38,752 --> 00:10:42,951
+4'ünün burada bir karşılığı var.
+
+74
+00:10:45,091 --> 00:10:52,032
+Ama şu 5. kolonun, diyelim ki, ID'si burada yok.
+
+75
+00:10:52,692 --> 00:10:54,632
+Şu 5. colon ID'si burada yok.
+
+76
+00:10:56,012 --> 00:11:03,892
+Bu durumda inner join, daha doğrusu auto join yaptığımız zaman, ben A tablosundaki her şeyi görmek istiyorum.
+
+77
+00:11:03,892 --> 00:11:07,491
+Ama B'de bunlar olabilir, olmayabilir.
+
+78
+00:11:08,552 --> 00:11:11,012
+Bu durumda left join mi kullanmam lazım?
+
+79
+00:11:20,563 --> 00:11:38,163
+[öğrenci], LEFT JOIN dedi. Right join diyen var mı? [öğrenci] sağa da LEFT JOIN dedi. Doğru cevap LEFT JOIN. Çünkü ben soldaki her şeyi kıramak istiyorum. Sağda bu olabilir, olmayabilirse bunun için LEFT JOIN kullanmamız lazım.
+
+80
+00:11:47,379 --> 00:12:10,220
+Kolon daha var. Mesela şurada, şurada 6. satır var. Bu 6. satır burada var ama burada olmayabilir. Her şey B tarafındaysa o zaman da right way kullanabiliriz. Peki ben her ikisinin boşluklar...
+
+81
+00:12:10,323 --> 00:12:17,403
+Olabilir. Bu iki tablonun birleşmesini istiyorsam bu durumda hangi bir oyun kullanmam lazım? Nasıl bir şey kullanmamız gerekiyor?
+
+82
+00:12:23,155 --> 00:12:28,955
+Hem sağda boşluk olabilir, hem solda boşluk olabilir benim için. Önemli olan bir tarafta var olması yeterliyse.
+
+83
+00:12:30,515 --> 00:12:39,035
+Evet, o zaman da full outer join oluyor. Bir tarafta da dolu olabilir. Yani burada boş, burada dolu olduğu zaman da gelecektir.
+
+84
+00:12:39,515 --> 00:12:42,555
+Burada boş, burada dolu olduğu zaman da gelecektir. Bunun için de full outer join.
+
+85
+00:12:42,815 --> 00:12:48,435
+Yani joinler genel olarak özetlemek bilirse, bu saydığımız örneklerden oluşuyor.
+
+86
+00:12:49,524 --> 00:13:01,724
+Kaldığımız yerden devam edelim. Sonrasında bir genel giriş yapmıştık, viewlar için. View dediğimiz yapı ne oluyor? View aslında bir sanal tablo.
+
+87
+00:13:02,772 --> 00:13:25,632
+Bu sanal tablo mantık ya da logical bir model, yani mantıksal bir model. Aslında fiziksel bir veri tutmuyoruz view'da. View'un bütün şartı ilişki olarak, bunun sanal bir ilişki yaratarak fiziksel olarak tutmadığı şeyi konsept olarak tutmamızı sağlıyor.
+
+88
+00:13:26,196 --> 00:13:35,896
+Peki, view'u neden yaratmak ihtiyacımız olabilir veya neden böyle bir sanal view'un bir katkısı olabilir? Nasıl bir katkısı olabilir daha doğrusu?
+
+89
+00:13:37,336 --> 00:13:45,316
+Bu ihtiyaç hangi özelliklerden yola çıkarak, hangi şartlardan yola çıkarak meydana gelmiştir veya gelmiş olabilir?
+
+90
+00:13:51,251 --> 00:13:56,851
+Bunu biraz açıklayabilir misin? Hangi açıdan güvenlik? Nasıl bir güvenlik katkısı olabilir?
+
+91
+00:14:05,395 --> 00:14:16,035
+Mesela tablonun tüm satırlarını göstermek istemeyebiliriz. Belli bir view oluşturup onları gösterebiliriz. Genelde salari, ücret gösterilmiyor.
+
+92
+00:14:17,235 --> 00:14:25,035
+Doğru. Aslında ikiniz de doğru örnekleri paylaştınız. Mesela bir tabloda...
+
+93
+00:14:25,172 --> 00:14:36,612
+Bir işçi, bir çalışan hakkında çok fazla bilgi olabilir. Yani onun TC kimlik numarası, maaşı veya işte evlilik durumu bilememeyiz. Yani birçok.
+
+94
+00:14:36,879 --> 00:15:00,740
+bilgisi tutuluyor olabilir. Veya işte annesinin kızlık soyadı. Bunlar çok daha özel şeyler. Bilemiyorum. Bunun gibi birçok özel bilgi olabilir. Bunun herkesin erişimine açık olması doğru bir şey değil. Bu bilgiler kişisel bilgiler ve sadece erişim hakkı olan insanların bunları görebiliyor olması lazım.
+
+95
+00:15:01,940 --> 00:15:14,320
+Ama mesela işçi tablosunu birçok uygulamada kullanacaksınız. Mesela işçiler giriş kartı gibi bir sistemde sonuçta işçi bilgileri olması lazım.
+
+96
+00:15:14,880 --> 00:15:19,540
+Veya işçilerin primlerini hesaplıyorsunuz. Bunun için de işçi tablosuna.
+
+97
+00:15:19,988 --> 00:15:43,588
+Erişim ihtiyacınız var. Veya işçilerin nerede bulunduğu, hangi servisleri kullanması gerektiği bilemiyorum. Birçok uygulamada aslında böyle bir tabloyu kullanacaksınız. Ama bütün tabloya izin vermek çok doğru bir yaklaşım değil. Böylelikle sadece personelin ismini görmesi gereken bir uygulamada neden bu kişinin TC'yi kullanıyor?
+
+98
+00:15:44,307 --> 00:16:03,988
+maaşı gözüksün diyebilirsiniz. Bu tarz şeyleri kısıtlamak açısından bir view yaratmak avantajlı bir şey. Çünkü view arka planda o göstermek istemediğiniz tabloları filtreleyebilir. Böylelikle siz sadece göstermek istediğiniz veya uygulama bazlı.
+
+99
+00:16:04,659 --> 00:16:31,360
+View'lar oluşturarak o tabloda o uygulamanın veya o kişilerin görmesi gerektiği kadar bilgiyi paylaşabilirsiniz. Bu arada birden fazla view oluşturabilirsiniz bir tablo için. Yani bir view birden fazla tablo üzerinde olabileceği gibi bir tablo üzerine de birden çok view olabilir. Yani işte employee tablosuna bir view sadece operasyon departmanı için oluşturabilirsiniz.
+
+100
+00:16:31,956 --> 00:16:43,096
+Başka bir view, satıştaki bilgileri, uygulamaları kullanmak için oluşturabilirsiniz. Başka bir view da, ne bileyim, veri analizi sistemleri kullanmak için oluşturabilirsiniz.
+
+101
+00:16:43,216 --> 00:16:45,536
+Ve her birisindeki kolon veya şartlar farklı olabilir.
+
+102
+00:16:46,696 --> 00:16:52,956
+Bir view, aynı zamanda JOIN'lerle herhangi bir geçerli SELECT...
+
+103
+00:16:54,451 --> 00:17:02,331
+sorgusunda olduğu gibi tasarlanabilir. Yani view'u oluştururken tek bir tabloda kullanmak zorunda değilsiniz. Bu mesela bir örnek.
+
+104
+00:17:03,331 --> 00:17:17,771
+Instructor tablosunda bizim saleri kolonunu gizleyerek bir view oluşturduğumuzu düşünelim. Burada işte Instructor IDC, MAME ve departmanı bu uygulama için yeterliyse sadece bunları gösterecek bir view oluşturabiliriz.
+
+105
+00:17:18,355 --> 00:17:26,536
+Bunu başka bir tabloyla join ederek belki o hocanın gösterdiği, verdiği dersleri de paylaşabilirsiniz.
+
+106
+00:17:27,375 --> 00:17:31,735
+Bu birinci faydası ve birinci özelliği. View'un başka bir avantajı var mı?
+
+107
+00:17:32,255 --> 00:17:35,855
+Veya başka durumlar içinde gereklilik taşıyor olabilir mi?
+
+108
+00:17:44,915 --> 00:17:47,235
+Başka hangi amaçla view yaratmak istersiniz?
+
+109
+00:17:59,731 --> 00:18:09,211
+Bakıyorum. Çok sık yapılan sorgular için. Olabilir. Neden peki böyle bir soru için bir yaratırız [öğrenci]?
+
+110
+00:18:14,259 --> 00:18:17,980
+Tekrar tekrar aynı sorguları yazmamak için.
+
+111
+00:18:20,340 --> 00:18:41,139
+Doğru. Aslında diğer bir kullanım amacı da sorguları sadeleştirmek. Yani siz çok sayıda karmaşık sorgular oluşturuyorsanız, diyelim ki işte bu sizin bir tane view'unuz, bir empty table'ınız var, sonra yine join yapıyorsunuz.
+
+112
+00:18:47,796 --> 00:18:51,796
+Mesela adres kolonuna geliyorsunuz.
+
+113
+00:18:55,796 --> 00:18:57,796
+A diyelim, A diyelim.
+
+114
+00:18:57,796 --> 00:19:12,796
+Sonra bunların A nokta, M, F, B nokta, E nokta, ID oluyor.
+
+115
+00:19:14,976 --> 00:19:33,876
+Telefon veya başka bir tabloya gittiniz. Diyelim ki, departman tablosuna gittiniz. Sonra bir sürü başka, işte left joinler yaptınız. Burada belki birim yöneticisine tekrar gittiniz, başka bir şey.
+
+116
+00:19:41,491 --> 00:19:57,572
+Yöneticisinin bilgisini yansıtacaksınız. Bilemiyorum. Ondan sonra bir sürü ver konuşacaktınız. Burada işte diyelim ki e.name ya da departman ID şu olsun.
+
+117
+00:19:59,711 --> 00:20:03,291
+İşte 3. satış departmanı.
+
+118
+00:20:04,051 --> 00:20:11,971
+3 olsun, başka başka oyunlarımız olabilir. Bu sorgular gittikçe karmaşık hale gelebiliyor.
+
+119
+00:20:12,871 --> 00:20:24,571
+Ve sonrasında bu sorguları belki siz bir kez oluşturduktan sonra, bu şartları sağlayan insanları oluşturduktan sonra,
+
+120
+00:20:30,163 --> 00:20:54,663
+view as diye bir şu view'u oluşturuyorsunuz. Sonrasında buradaki view'dan direkt sorgu çekiyorsunuz. Yani belki de diyelim ki onun dışında siz şöyle bir şart uygulayacaksınız. İsmi Ahmet olan kişileri sorgulayacaksınız.
+
+121
+00:20:55,188 --> 00:21:08,876
+Bunun üzerine başka sorgular uygulayacaksınız. Bu ne yapıyor? Şimdi öncelikle arka planda bu view tanımında olan tablolara gidiyor. Verileri buralardan çıkıyor. Sonrasında yani şunun aslında...
+
+122
+00:21:11,923 --> 00:21:29,423
+Bundan bir farkı yok. Sorgu, mantığı ve metrezması ve çalışması olarak baktığınız zaman bundan bir farkı yok. Ama bu karmaşık sorguları giderek daha çok sayıda kullandığınız zaman ne yapıyorsunuz? Burada hata yapma şansınız çok yüksek.
+
+123
+00:21:30,259 --> 00:21:42,219
+Dolayısıyla hem hata oranını arttırabilirsiniz. Bir de şimdi bu sorgunun başka bir versiyonu başka bir kişi yazıyor olabilir.
+
+124
+00:21:42,219 --> 00:21:57,139
+Zaman kaybı. Dolayısıyla hala buradaki şeyi kullanmak yerine aynı zaman kaybını başka bir personel, başka bir sorgu, başka bir uygulamada yapacaktır. Bu toplamda ciddi bir fark aradır.
+
+125
+00:21:57,940 --> 00:22:01,420
+ve potansiyel olarak farklı tanımları kullanmanızı da azaltır.
+
+126
+00:22:01,520 --> 00:22:11,900
+Yani, eğer herkes bu view'dan gelen sonuçlara göre bir rapor oluşturuyorsa, tutarsızlık meydana gelmeden bunu çözmeye imkan verir.
+
+127
+00:22:13,172 --> 00:22:28,012
+Bunun diğer bir amacı da budur. Tablolar arasındaki bu bağlantıları, çok sayıda joininiz varsa, çok sayıda condition şartlarınız varsa bunları sadeleştirmek için özellikle avantajlı bir şeydir biliyorum.
+
+128
+00:22:28,692 --> 00:22:36,132
+Arka plandaki o join'i genellikle bir kez oluşturursunuz ve bunu daha çok veritabanı yöneticileri oluşturur.
+
+129
+00:22:36,132 --> 00:22:39,092
+Mesela bir uygulama kullanıcısı, bir developer.
+
+130
+00:22:39,796 --> 00:23:00,656
+Buradaki altyapıda hangi joinlerin olması çok bilmemesi de gerekmiyor. Daha erişmesi gereken bilgiyi bu view'da eriştirebiliyorsa bunu kullanması yeterli olabilir. Yani bunu yazmak yerine çok daha sade bir versiyonda bunun üzerinde işlem yapmak daha vantajlı bir şeydir.
+
+131
+00:23:03,443 --> 00:23:21,023
+Bu da diğer bir örnek. [öğrenci]'nın bir sorusu var. View'lardaki verilerde değişiklik yapabiliyor muyuz? Yapılabiliyorsa tablo etkilemiyor. Yapılmıyor [öğrenci]. Tek bir özel durum var. O da Materialist View. Onu da biraz sonra konuşacağız.
+
+132
+00:23:21,023 --> 00:23:29,023
+Onun dışında özel bir durumu olarak ifade edebiliriz Materialist View. Onun dışında fiziksel olarak...
+
+133
+00:23:29,907 --> 00:23:49,647
+View'lar tutulmuyor. Fiziksel olarak tutulmadığı için güncelleme de yapamıyorsunuz. Yani yaptığınız güncelleme diye bir şey anlamlı değil. Çünkü siz sadece arka planda view çalıştırdığınız zaman sorguyu çalıştırıyorsunuz. O SELECT sorgusu. Dolayısıyla bunun bir update olması mümkün değil.
+
+134
+00:23:50,259 --> 00:23:55,640
+Materyaliz view farklı çalışıyor. Onu konuşacağız. Orada update mümkün ama o da çok anlamlı değil.
+
+135
+00:23:55,900 --> 00:24:03,839
+İşleti açısı mahkum mümkün ama çok anlamlı değil. Bazı durumlarda gerekebiliyor. Onu da biraz sonra konuşacağız.
+
+136
+00:24:04,019 --> 00:24:14,339
+Ama view derken arka planda bir fiziksel verinin tutulmadığını düşünün. Fiziksel veri olmadığı için orijinal tablolarda da güncelleme, silme olmayacaktır.
+
+137
+00:24:15,284 --> 00:24:38,923
+Onları yapmak için orijinal arka plandaki tabloları, mesela adres tablosuna değişiklik yapmak istiyorsanız orada update yapmanız lazım. Departmanda öyle veya employee da öyle. Ama şu geçerlidir. Şimdi siz, ben bu video çalıştırdım. Buradan bir sorgu elde ettim. İki dakika sonra tekrar çalıştırayım. Bu sonuç farklı olabilir. Neden farklı olabilir? Mesela adres tablosuna yeni bir değer gelmiş olabilir.
+
+138
+00:24:39,604 --> 00:24:43,104
+Adres davrosunda bir değer silinmiş veya değiştirilmiş olabilir.
+
+139
+00:24:44,124 --> 00:24:51,584
+Haliyle her defa siz, yani her SELECT sorgusu Vivo yaptığınız zaman, sorgu yaptığınız zaman ne oluyor?
+
+140
+00:24:52,004 --> 00:24:55,564
+Öncelikle bu sorgu tekrar ediyor. Bunun sonucu tekrar ediyor.
+
+141
+00:24:56,364 --> 00:24:59,903
+Tekrar tekrar ettiği için, dolayısıyla ne yapıyorsunuz?
+
+142
+00:25:01,407 --> 00:25:07,807
+o alttaki SELECT sorgusunu çalıştırmış oluyorsunuz ve her defasında farklı bir sonuç elde edebilirsiniz.
+
+143
+00:25:09,727 --> 00:25:16,507
+View'un bir avantajı da şu, şimdi sorguyu siz, arka plandaki sorgu sabit olduğu için, değişmediği için,
+
+144
+00:25:16,884 --> 00:25:43,144
+Çok sayıda sorgu yaparsanız bu SELECT, VU'a bir yerden sonra aynı sorgular geldiği için onu veritabanı cache'ler. Yani o bilgileri cache'e atmaya çalışır. Haliyle sık sık yaptığınız sorgularda bunun birçok kez direkt arka plandaki join'den değil de cache'den de gelebilir. Bu öyle bir hızlandırıcı etkisi olabilir ama normal şartlarda arka plandaki sorguyla bir fark olmaz performans açısından.
+
+145
+00:25:46,451 --> 00:26:08,172
+Bunlar temel şeyleri, temel katkıları, view'ların. O yüzden view çok yaygın kullanılır. Özellikle çok sayıda kullanıcısı olan firmalarda, kurumlarda, kuruluşlarda ve bunların farklı hak ve yetkileri varsa çok sayıda view kullanılır. Çünkü bu hakları tanımlamak view üzerinde daha kolay.
+
+146
+00:26:08,592 --> 00:26:35,211
+Bir de ana tabloya genellikle erişim vermek sadece çok üst yetkileri olan süper kullanıcılar dışında mantıklı bir şey değil. Çünkü siz ana veritabanını aslında elle değiştirmek değil, uygulamalarla değiştirmek istersiniz. Uygulamanın kendisi kullanıcıdan bağımsız olarak değiştirmesi lazım. Aksi halde manuel olarak bazı değiştirmeler sonucu değiştirebilir. Bu da istemediğiniz bir şey olur.
+
+147
+00:26:37,811 --> 00:26:48,811
+Burada mesela bir view ile ilgili dediğimiz gibi yeni bir view oluşturduk. Create view, fakülte diye Instraker tablosundan geliyor.
+
+148
+00:26:48,811 --> 00:27:01,811
+Bu da bir kez oluşturduktan sonra siz oluşturulan view üzerinden filtreleme yapabilirsiniz. Bunun üzerinden ver yapabilirsiniz, başka şeyler yapabilirsiniz. Bunun gibi.
+
+149
+00:27:02,612 --> 00:27:16,672
+Çeşitli sorgular yapmak mümkün. Bunun üzerinden grupa yapabilirsiniz. Yani, view'un kendisi de bir sonucu olabilir. Yani, aggregate veriler üzerinde de gerçekleştirmek mümkün.
+
+150
+00:27:20,552 --> 00:27:27,492
+Şimdi, view'lar başka view'lar üzerine de kurulabilir. Yani, ben şimdi burada employee view kullanıyorum.
+
+151
+00:27:28,660 --> 00:27:38,060
+Şurada employee view diye bir şey var. Mesela bu employee adres, bu bir view adresten geliyor olabilir.
+
+152
+00:27:38,060 --> 00:27:53,660
+Bir bir view olabilir. Yani aslında arka planda, peki de şöyle bir tablolar, create address view. Bu da işte id, address, street.
+
+153
+00:27:55,508 --> 00:28:17,707
+virgül, city gibi bir şey olabilir. Burada belki adres tablosunda, bunun altında da ver kılanıza var. Belki de sadece, işte city, f'tir, işte İstanbul gibi bir kenek de olabilir. Bu view da başka bir view var.
+
+154
+00:28:21,683 --> 00:28:36,723
+bağlantı yaparak kullanılabiliyor. View'lar birbiri arasında böyle bir ilişkiye sahip olabilir. Veya dolaylı olarak da olabilir. Yani başka bir view'a, o view'da başka bir view'a bağlantı yapabilir.
+
+155
+00:28:38,743 --> 00:28:46,723
+Kendisine de kullanabilir. Bunlar da recursive deniyoruz ama bu çok doğru bir yaklaşım değil. Yani kendisine referans vermesi...
+
+156
+00:28:47,380 --> 00:28:51,560
+Çok uygun bir şey değil. Onun yerine filtre uygulayabilirsiniz. En mantıklısı.
+
+157
+00:28:51,920 --> 00:28:57,360
+View başka bir şeye bağımlı olabilir ama kendisi üzerinde filtre uygulamak daha mantıklı.
+
+158
+00:28:57,520 --> 00:29:03,480
+Yani o filtreleri başka bir view olarak tanımlamak kafa karıştırıcı olabilir.
+
+159
+00:29:07,059 --> 00:29:14,259
+View'larla ilgili, mesela bu View'un başka bir tanesi View'u kullanıyor, örnek vermek gerekirse az öncekine.
+
+160
+00:29:14,259 --> 00:29:22,759
+İşte, Create View'de, Fizik, 2017, Fall dersiydi, Fall dönemiyle ilgili bir örnek bu.
+
+161
+00:29:23,200 --> 00:29:31,400
+İşte burada şartlarımız da Section ve Course tablolarına gidiyor. Bunun bilgilerimiz Course ID, Section ID, Building ID gibi şeyler var.
+
+162
+00:29:33,107 --> 00:29:44,747
+Sonrasında, korsunda, 2017, göz dönemi ve fizik dersi üzerine bir filtresine göre bir tablo, view oluşturmuşuz.
+
+163
+00:29:45,247 --> 00:29:49,147
+Sonrasında, bu view'un da, üzerine başka bir filtre uygulayabiliriz.
+
+164
+00:29:49,147 --> 00:29:52,807
+Bu, başka bir view. Bu, Fall 2017'yi kullanıyor.
+
+165
+00:30:00,000 --> 00:30:18,740
+Bölümler için başka bir view olarak tanınlanmış. View'larda dikkat etmeniz gereken bir şey şu. View'da mesela şunu diyeyim. Şurada mesela bu ID var. Şuraya bakalım.
+
+166
+00:30:26,291 --> 00:30:42,291
+Burada işte, e.image, a.city gibi şeyler var. Mesela burada bir de e.id.
+
+167
+00:30:45,844 --> 00:30:53,364
+E2.name, sonra işte buna da D diyelim ben.
+
+168
+00:30:57,523 --> 00:30:58,347
+Dr.
+
+169
+00:31:04,307 --> 00:31:05,368
+ID olsun bu.
+
+170
+00:31:16,819 --> 00:31:17,359
+Aynı.
+
+171
+00:31:21,460 --> 00:31:44,460
+D.EV, bu view, çalışır mıydı?
+
+172
+00:31:51,220 --> 00:31:52,220
+sorun var mısınız?
+
+173
+00:31:55,220 --> 00:31:56,379
+Her şeyin olay gözüküyor.
+
+174
+00:32:06,228 --> 00:32:09,608
+Söylüyor musunuz veya sorun olur mu? En azından öyle söyleyeyim.
+
+175
+00:32:23,539 --> 00:32:24,539
+Sesim geliyor mu?
+
+176
+00:32:32,307 --> 00:32:40,508
+Tamam. [öğrenci] EQ yukarıda kullanılıyor. İdai, konsümer şu an çakışıyor. Evet.
+
+177
+00:32:40,508 --> 00:32:49,288
+Ne sıkıntı verebilir? Ne sıkıntı verir? Veya bu sıkıntı ise nasıl çözülebilir?
+
+178
+00:32:57,076 --> 00:33:03,456
+Sıkıntımız ne? Öncelikle yukarıda kolon isimlerinin bulunmasından bahsetti [öğrenci].
+
+179
+00:33:03,655 --> 00:33:05,115
+[öğrenci], yok [öğrenci].
+
+180
+00:33:06,155 --> 00:33:07,336
+[öğrenci] isimler çıkışıyor demiş.
+
+181
+00:33:12,243 --> 00:33:16,784
+Bir tupla da aynı kolon ismini yaklaşabilir misiniz?
+
+182
+00:33:23,571 --> 00:33:48,871
+Mesela employee tablosunda iki defa ID kolonunu kullanabilir misiniz? Kullanamayız. Olmaz değil mi? Bir tablo da aynı isimde sadece bir tane kolon olabilir. View'lar için de geçerli. Aynı view içinde sadece bir defa aynı kolon ismi kullanılabilir. Mesela burada bunun kolon olarak gösterdiği nedir? ID. Burada bir name var.
+
+183
+00:33:49,523 --> 00:34:00,883
+Burada da name var. Burada da iki defa id var. Hangi id, ne id'si? Bunlar olmaz. Evet, bunları ne yapmak lazım? İsimlandırmak lazım.
+
+184
+00:34:00,883 --> 00:34:10,483
+Buna ne diyebiliriz? Manager id diyebiliriz. Buna da as manager name.
+
+185
+00:34:11,059 --> 00:34:13,440
+Şimdi artık bir çatışma var mı? Yok.
+
+186
+00:34:13,779 --> 00:34:18,359
+Belki şu an bu view'u oluşturabiliriz. Aksi halde oluşturamazdık.
+
+187
+00:34:23,239 --> 00:34:29,000
+Oluşturmakta, view oluşturmak mantık olarak aynı mantığı taşıyor.
+
+188
+00:34:29,159 --> 00:34:36,800
+Yani sorgu olarak oluşturursunuz ama sonuç olarak tablodaki mantık ve kurallar burada da dışarıda.
+
+189
+00:34:36,800 --> 00:34:38,220
+Sadece bir kolon olabilir.
+
+190
+00:34:38,708 --> 00:34:45,708
+Aynısında eğer birden farklı sayıda, enisinde kolon varsa değiştirmeniz gerekiyor.
+
+191
+00:34:48,708 --> 00:34:53,708
+Yani dediğim gibi, bu view'u böyle tanıttıktan sonra böyle bir view oluşturduk.
+
+192
+00:34:53,708 --> 00:35:02,708
+İşte Watson diye ayrı bir view oluştuk. 2017'yi kullanan ama 2017'nin Watson binası olan için başka bir view oluşturduk.
+
+193
+00:35:02,708 --> 00:35:05,675
+Bununla şunun arasında hiçbir fark yok.
+
+194
+00:35:06,708 --> 00:35:14,467
+Yani, o view'u bu şekilde de kullanabilirdiniz, yazabilirdiniz ya da buradaki gibi de yazabilirsiniz. Herhangi bir fark yok.
+
+195
+00:35:18,356 --> 00:35:29,136
+View expansion dediğimiz şey şu, yani o view'un isminin yerine aynı sorgusunu, SELECT sorgusunu koyarak o ilişkileri açabilirsiniz.
+
+196
+00:35:29,136 --> 00:35:39,276
+Dolayısıyla ilişkin bakımından onun view ismini kullanmakla arkadaki sorguyu kullanmak arasında herhangi bir fark yok.
+
+197
+00:35:44,692 --> 00:35:59,192
+Herhangi bir spesifik şey belirtmiyorsanız, sanal, sanal view, yani virtual view oluşur. Virtual view da esasen sadece gösterimsel bir etki sağlar.
+
+198
+00:36:07,188 --> 00:36:08,523
+Davranır ama...
+
+199
+00:36:50,003 --> 00:37:09,703
+Sesin geliyor mu şu an? Şu an geliyor hocam. Tamam sanırım geçici sürede. Şu an duyabiliyor musunuz beni? Evet şu an net bir şekilde duyuyoruz. Tamam süper. Teşekkürler. Ekranım da geldi mi? Geldi. En son sanal dediniz ve gitti. Öyle mi? Tamam. İnternet kopmuş bu arada.
+
+200
+00:37:10,452 --> 00:37:32,372
+Şimdi normalde view standart hali, varsayılan hali sanal bir yapıdır. Bu sanal view'da arka planda bir veri tutmaz. Sadece o sorguların bulunduğu tablolara gidip sonucunu getirir. Bütün sorgu asıl tablolarda gerçekleşiyor. Fiziksel bir veri kopyası yok yani.
+
+201
+00:37:38,431 --> 00:37:45,051
+Fiziksel olarak o sorguda çekilen veriler kopyalı halde saklanır.
+
+202
+00:37:46,291 --> 00:37:51,391
+Yani şöyle göstereyim. Sizin arka planda diyelim ki sorgunuz bu olsun.
+
+203
+00:38:01,940 --> 00:38:02,680
+Sizin sorgunuz.
+
+204
+00:38:13,492 --> 00:38:23,932
+Şimdi tablomuz bu. View'umuz bu. Employee View'umuz var. Employee View'un arkasında ID gibi kolonlar var.
+
+205
+00:38:23,932 --> 00:38:36,112
+Burada. Bakalım yapıştıracak mı? Evet. Bu şekilde yapıştırıyor. Şimdi bunu şöyle alayım.
+
+206
+00:38:42,387 --> 00:38:47,667
+Bu kolonlardan oluşan ID kolonu.
+
+207
+00:38:50,228 --> 00:38:52,667
+ID, burada name.
+
+208
+00:38:56,596 --> 00:39:08,235
+Bütün bunlar içeren kolonlar, işte e-mail, burada siti gibi değerler olacak.
+
+209
+00:39:08,235 --> 00:39:18,655
+Ama şöyle bir farkla, bu sorgu sonucu fiziksel olarak veritabanınızda, big law şeklinde duruyor.
+
+210
+00:39:20,371 --> 00:39:43,791
+Yani bu fiziksel olarak burada bir kopya halinde tutuyor. Bu ana tablolar işte, MPI tablosu. Bir tablo var mı burada fiziksel olarak tutuyor? Yani aslında veriyi ne yapmış oluyorsunuz? Kopyalamış oluyorsunuz. Aynı verinin birden çok kopyesi var. Ama siz sorguyu yaptığınız zaman materyaliz diyorlar.
+
+211
+00:39:47,987 --> 00:39:48,707
+ne dedik?
+
+212
+00:39:51,967 --> 00:39:52,767
+Materialize.
+
+213
+00:39:57,811 --> 00:40:13,911
+view, siz buna, dediğim ki, mview diye bir isim verdiniz. Ben select, start from dediğim zaman, normal view'daki gibi, ne yapıyorum, mview diyorum.
+
+214
+00:40:15,231 --> 00:40:20,683
+Burada herhangi bir fark yok, ama artık arka plandaki sorguların geldiği...
+
+215
+00:40:20,820 --> 00:40:39,120
+Employee tabloları gitmez. Sadece şuradaki kopyalan veriler gelir. Buradaki kopyadaki veriler size yansıtılır. Böyle bir fark var. Hangi amaçla kullanılır bir Materialist View? Şu amaçla kullanılır, sorguların performansını artırmak amacıyla.
+
+216
+00:40:39,120 --> 00:40:46,340
+Ben tekrar tekrar tekrar bu sorguları çalıştırmak yerine Materialist View'da bir kez kopyalıyorum.
+
+217
+00:40:46,739 --> 00:40:59,719
+Artık her ardışık sorguda tablolara gitmek yerine direkt olarak sorguların sonucunu burada kopyalı hali duran Materialist View'dan çekiyorum.
+
+218
+00:41:00,939 --> 00:41:07,339
+Avantajı ne oluyor? Performans olarak çok daha dramatik bir performans sağlıyorsunuz.
+
+219
+00:41:07,379 --> 00:41:11,659
+Çünkü her defasında o tablolara gitmek ve JOIN'i çalıştırmak uzun sürer.
+
+220
+00:41:12,148 --> 00:41:18,008
+Çok sayıda kullanıcınız ve sürekli bu view kullanıyorsa çok çok büyük bir fark verilir.
+
+221
+00:41:20,528 --> 00:41:23,008
+Ama işte siz ne yapıyorsunuz?
+
+222
+00:41:23,668 --> 00:41:24,988
+Taviz verdiğiniz şey ne?
+
+223
+00:41:25,568 --> 00:41:31,268
+Verinin ikinci bir kopyası, yani saklama alanı olarak bir maliyetiniz var.
+
+224
+00:41:31,808 --> 00:41:33,348
+Bunun karşılığında kazanımınız ne?
+
+225
+00:41:34,188 --> 00:41:35,148
+Performans, hız.
+
+226
+00:41:35,568 --> 00:41:40,668
+Yani hız kazanmak için veri saklama alanına taviz veriyorsunuz diye düşünebilirsiniz.
+
+227
+00:41:41,308 --> 00:41:48,828
+Bu ama sizin için normalde gerçek dünyada hız daha önemli saklama alanına göre.
+
+228
+00:41:49,028 --> 00:41:53,948
+Tabii ki çok çok büyük tablolar olursa bunları yönetimi biraz sıkıntı çıkarabiliyor.
+
+229
+00:41:53,948 --> 00:41:58,228
+Ama genel olarak saklama alanından daha önemli.
+
+230
+00:42:00,596 --> 00:42:26,295
+Güzel bir soru [öğrenci]. Ana tablo değiştiği anda değişmez. Materialist view'ların şöyle bir mantığı var. Siz materialist view'u olarak hoşlanırsınız, hatta bir kopyalama işlemi gerçekleşiyor. Bunu periyodik olarak, mesela diyebilirsiniz, periyodik olarak, periyodik update diyebilirsiniz. Mesela create diyorsunuz ya, create.
+
+231
+00:42:26,931 --> 00:42:54,231
+TLS view ediyorsunuz. Burada mesela update seçeneğini işte update her gün. Her gün saat 8'de, sabah 8.00'da bu view baştan yaratılıyor. Önce siliniyor, sonra tekrar sıfırdan o SELECT şartımızı alacak şekilde sıfırdan yaratılıyor.
+
+232
+00:42:55,092 --> 00:43:01,331
+Ondan sonra mesela saat 8'de bu view'u oluşturduğunuz, yarım saat bunu oluşturması sürdü veya 10 dakika sürdü.
+
+233
+00:43:02,032 --> 00:43:06,092
+Şimdi view'u oluşturduğunuz, 8-15'den sonra bu sorgu kullanımına açılıyor.
+
+234
+00:43:07,311 --> 00:43:13,692
+Bir sonraki gün 8-15'e kadar, 8'e kadar sadece bu gösterim, bu versiyon üzerinde çalışıyorsunuz.
+
+235
+00:43:13,791 --> 00:43:17,612
+Yani ana tabloyu, employee tablosunu değiştirdiniz, burada yeni kolonlar eklendi.
+
+236
+00:43:18,152 --> 00:43:19,311
+Bu buraya yansımaz.
+
+237
+00:43:19,695 --> 00:43:30,996
+Ta ki bir sonraki gün aynı saatte çalıştırana kadar. Şunu da yapabilirsiniz. View'u ila günlük olarak değil, belli saatler aralığında da yapabilirsiniz. Mesela her saatte bir güncelle.
+
+238
+00:43:32,476 --> 00:43:41,956
+Dolayısıyla ana tablodaki güncellemeler bir saat sonraki güncellemede, materyalizm güncellemesinde yansır. Bir sonraki güncellemeye kadar yansımaz.
+
+239
+00:43:42,356 --> 00:43:48,635
+Bunun yanında incremental yapabilirsiniz. Yani, materials view baştan silinip yeniden oluşturabilir.
+
+240
+00:43:49,076 --> 00:43:53,996
+Ya da, işte, belli periyotlarda yeni eklenen kolonlar buraya güncellenebilir.
+
+241
+00:43:54,096 --> 00:43:57,396
+Bunda iki tane farklı stratejisi var. Bunları da detaylıca konuşacağız.
+
+242
+00:44:01,556 --> 00:44:27,816
+[öğrenci], aslında bu sorunu da biraz sonra konuşacağız. Bu soru insert yapılabilir, Materialist View'a ama bu insert ana tablolara etkilemez. Sizin yaptığınız insert sadece Materialist View'daki insert olur. Ana tablolara etkilemez. O açıdan insert, update, delete bu işlemler sadece Materialist View üzerinde.
+
+243
+00:44:28,224 --> 00:44:51,244
+gerçekleşir. Bunların gerçek tablolara bir etkisi olmaz. Çok anlamlı şeyler değil bu arada. Materializ view üzerinde update, delete, insert bunları yapmak. Çünkü siz sadece o anki gösterimi üzerinde materializ view'un değişiklik yapıyorsunuz. Materializ view güncellenince yaptığınız değişiklikler gidecek. Hiçbir yerde kayıt altında bulunmayacak.
+
+244
+00:44:52,307 --> 00:45:03,288
+Şu açıdan sadece kullanımı mantıklı olabilir. Şimdi Materials View'u başka bir raporda veya başka bir sorguda kullanıyorsunuzdur. Mesela şurada bir e-mail ile ilgili bir hata buldunuz. Bazıları nal geliyor.
+
+245
+00:45:04,115 --> 00:45:30,155
+O gün içinde kullanımda bunun NAL olarak değil, aslında doğru olması gereken gibi yaparsınız, göstermesi istiyorsanız, öyle bir view var, update, insert dediği işlemi yaparsınız. O gün içinde, o güncelleme öncesi, zaman dediğim için kullanımını düzeltebilirsiniz. Ama asıl problemi çözmez. Yani ana tablodaki problem aynen devam eder, oradaki problemi çözmek lazım.
+
+246
+00:45:33,139 --> 00:45:49,679
+Bununla ilgili soru sorun var mı? İsterseniz bir 15 dakika sonra kaldığımız yerden devam edeceğiz. 2-5 geçe devam edeceğiz. Sonrasında bunun üzerine daha detaylıca koşacağız. Şimdi görüntüyü kapatıyorum. Görüşmek üzere.
+
+247
+01:00:52,820 --> 01:00:54,260
+Tekrar hoş geldiniz arkadaşlar.
+
+248
+01:00:55,200 --> 01:00:56,780
+Şimdi sesini geliyor mu size?
+
+249
+01:01:05,780 --> 01:01:09,960
+Teşekkürler, sesim de geliyor. Görüntü de yansımış olması lazım. Tamamdır.
+
+250
+01:01:11,100 --> 01:01:15,720
+Hatırlarsanız, aradan önce Materials View'ları konuşmaya başladık.
+
+251
+01:01:16,780 --> 01:01:24,420
+Materials View, fiziksel olarak o sorgunun sonucunda oluşan veriyi kayıt altına alır.
+
+252
+01:01:25,320 --> 01:01:30,900
+Bunu güncellemek gerekecektir. Belli aralıklarla bu güncellik dışı kalacak.
+
+253
+01:01:32,947 --> 01:01:38,847
+Periyodik olarak güncellemeniz lazım. Bu güncelleme işlemini farklı mekanizmalarıyla yapabilirsiniz.
+
+254
+01:01:40,128 --> 01:01:51,028
+Yani şu yapılabilir, toptan silinip tekrar bunlar ortaya çıkarılabilir, baştan yükleyebilirsiniz.
+
+255
+01:01:51,887 --> 01:01:58,487
+Ya da sadece son olarak eklenenleri ekleyebilirsiniz. Buna FAST.
+
+256
+01:01:58,900 --> 01:02:12,800
+FAST UPDATE deniyor. Aslında FAST UPDATE, INCREMENTAL UPDATE demek daha doğru. Yani var olan kayıtlar üzerine yeni eklenmesi şeklinde düşünebiliriz.
+
+257
+01:02:13,400 --> 01:02:19,840
+Şimdi bir view, INSERTEDO VIRSISM MATERIALS VIEW'da veya bunu değiştirebilirsiniz.
+
+258
+01:02:24,563 --> 01:02:30,563
+İhtiyacınız sadece geçici olarak o view üzerinde değişiklik yapmanız gerekiyorsa yapabilirsiniz.
+
+259
+01:02:31,443 --> 01:02:38,543
+Bu açıdan bir sıkıntı olmaz ama dediğim gibi view güncellenince o verilerde değişiklikler de kaybolacaktır.
+
+260
+01:02:38,623 --> 01:02:39,883
+Bunu da akılda tutmak lazım.
+
+261
+01:02:42,283 --> 01:02:52,103
+Yani view üzerinde bir instrument işlemi yaparsanız eğer null olması mümkün değilse o kolonun hata alırsınız.
+
+262
+01:02:52,532 --> 01:03:00,532
+Ama null olabiliyorsan, o kolon eksik olursa, bu veriyi, insert işlemi yapabilirsiniz.
+
+263
+01:03:03,532 --> 01:03:16,492
+Bir de, view üzerinde tek bir tabloysa, tek bir tablo gibi bir join'iniz varsa, mesela burada, bu view üzerinde 2-3 tane kolon var.
+
+264
+01:03:16,692 --> 01:03:40,211
+Bunun üzerinde siz view'u update ediyorsunuz, insert ediyorsunuz. Materials view'da var. Hangi riskler ortaya çıkar? Mesela şöyle diyelim, şimdi ana tablonuzda, materials view'da Taylor diye bir tane bina eklediniz. Buraya instructor ismi eklediniz. Adam ismi, hocanın ismi, white olsun. Bu da ID'si.
+
+265
+01:03:41,043 --> 01:03:46,483
+Ya birden çok departman varsa, o şeyde,
+
+266
+01:03:46,483 --> 01:03:57,943
+Aslında, veya böyle bir departmanın olmadığı, yani şöyle kastediyorum, ana tablo, departman tablosunda böyle bir,
+
+267
+01:03:58,963 --> 01:04:25,103
+Bina yoksa ve siz burada aslında ne yapıyorsunuz? O ilişkiyi bozuyorsunuz değil mi? Materyaliz, view'da bunu ekleyerek, view'da bir imkan var ama orijinal tabloda buna böyle bir imkan yok. Böyle problemler ortaya çıkabilir. View'la şey tam anlamıyla birbirini yansıtmayabilir. Arka planda çalışan tablolar birbirini tam olarak yansıtmayabilir.
+
+268
+01:04:28,179 --> 01:04:35,579
+Bu arada, Materialist view her veri tabanı tarafından implement edilmiş bir şey değil.
+
+269
+01:04:35,579 --> 01:04:43,039
+Mesela şeyde vardır, Oracle Materialist view oluşturmaya izin verir.
+
+270
+01:04:43,899 --> 01:04:48,399
+Ama SQL Server'da Materialist view yoktur, sadece virtual view.
+
+271
+01:04:48,559 --> 01:04:53,739
+Yani varsayın olarak sadece sanal view'lar oluşturabilirsiniz.
+
+272
+01:04:55,251 --> 01:05:04,592
+fiziksel olarak Materialist View oluşturamazsınız. Ama birçok veritabanı sistemi de Materialist View'u destekler. Mesela Oracle bu şekilde destekliyor.
+
+273
+01:05:07,711 --> 01:05:13,471
+Onun dışında diğer bir problemde şu olabilirsiniz. Şimdi siz View oluşturuyorsunuz.
+
+274
+01:05:14,391 --> 01:05:21,851
+View'da mesela tarih departmanına gelen şeyler var. Hocalar var.
+
+275
+01:05:22,420 --> 01:05:27,679
+Ama insert yaparken bunun biyoloji insert'ü yapmanızı engelleyecek bir şey yok.
+
+276
+01:05:27,679 --> 01:05:37,900
+Çünkü arka planda bu şartı departman tablosu ya da bu tablonun kendisinde yapmıyorsunuz.
+
+277
+01:05:37,980 --> 01:05:43,299
+View üzerinde yaptığınız için burada işlemin gerçekleşmesini engelleyen herhangi bir kısıt yok.
+
+278
+01:05:47,123 --> 01:05:51,864
+Bu da Materials View'lerle ilgili anlatabileceğimiz özel karardan bir tanesi.
+
+279
+01:05:55,143 --> 01:05:57,623
+Sesim geliyor mu? Şu an bir problem var mı?
+
+280
+01:06:00,443 --> 01:06:11,983
+Yani dediğim gibi bir de Materials View'larda hani böyle primary key, tamam teşekkür ederim [öğrenci], primary key, foreign key bu tarz bağlantılarımız da yok.
+
+281
+01:06:12,123 --> 01:06:14,043
+Yani Materials View'u daha çok ne için kullanılır?
+
+282
+01:06:14,835 --> 01:06:23,556
+sorguların performansını artırmak için kullanılır. Bunu artırmakta da şunu yapıyorsunuz. Çok sayıda veri tablosunu denormalize ediyorsunuz.
+
+283
+01:06:23,915 --> 01:06:30,096
+Yani joinleri yaparak joinlerin sorgusunun sonucunu bir fiziksel tabloya kaydediyorsunuz.
+
+284
+01:06:30,615 --> 01:06:39,475
+Haliyle o sorgularınız daha çok o materializ view'un içinde bulunan ilişkiler tanımlandıktan sonra gerçekleşiyor.
+
+285
+01:06:40,019 --> 01:06:49,099
+Bu da şu demek oluyor, zaten foreign key ilişkileri, joinler üzerinde o materyali bir ziyo oluşturulmadan sağlanmış olması lazım.
+
+286
+01:06:49,940 --> 01:06:57,059
+Diğer bir ifadeyle, böyle bir foreign key, primary key gibi constraintleriniz ya da kısıtlarınız olmayacak demek.
+
+287
+01:06:57,659 --> 01:07:02,639
+Mantıklı değil, materyali ziyo buradaki tabloların birleştirilmesi gibi.
+
+288
+01:07:04,148 --> 01:07:08,508
+Şurada örnek vereyim. Yani materializ bir sorgumuz aslında.
+
+289
+01:07:17,139 --> 01:07:19,079
+Bu bizim materyalist view.
+
+290
+01:07:23,476 --> 01:07:24,276
+yapımız.
+
+291
+01:07:27,756 --> 01:07:29,956
+Bu veriyi belki işte employee.
+
+292
+01:07:31,956 --> 01:07:34,496
+Sonra adres.
+
+293
+01:07:39,827 --> 01:07:46,587
+Belki, onun dışında başka hangi, onu bir daha SELECT, JOIN yaptığımızı varsayalım, 2 tane versiyonu kullanıyoruz.
+
+294
+01:07:46,587 --> 01:07:49,987
+Onun dışında sorgumuzda ne vardı başka?
+
+295
+01:07:49,987 --> 01:07:53,387
+Bir departman tablosu var.
+
+296
+01:07:58,291 --> 01:08:04,192
+Bu tablolar birleştirildikten sonraki versiyonunu biz Materializ Viva kopyaladık.
+
+297
+01:08:06,231 --> 01:08:20,192
+Ve dolayısıyla buradaki değerler, arka planda bütün bunların joininin sonucunda oluştuğu için sorgular sadece bu tablonun, bu Materializ Viva üzerindeki...
+
+298
+01:08:23,891 --> 01:08:25,412
+JOIN işlemi yapmanız gerekmiyor.
+
+299
+01:08:26,412 --> 01:08:31,051
+Ve burada mesela 3 kolon var. Burada 3 kolon var.
+
+300
+01:08:31,051 --> 01:08:33,091
+Burada çok daha fazla sayıda kolon olabilir.
+
+301
+01:08:33,252 --> 01:08:42,912
+Çünkü bunların JOIN'i sonrasında ortaya çıkan bir ortak yapı olduğu için MaterialsView daha geniş bir yapı olabilir.
+
+302
+01:08:43,011 --> 01:08:45,051
+MaterialsView'da şimdi bir de şöyle bir...
+
+303
+01:08:46,100 --> 01:08:54,100
+Veri tekrarı da mevcut olabilir. Çünkü birden çok tablodan join ile çektiğiniz için bazı kolonlar tekrar edebilir.
+
+304
+01:08:54,100 --> 01:09:02,100
+Çünkü siz aslında veri geliştirmek yapıyorsunuz burada. Bunları join yaparak. Dolayısıyla burada mesela işte departman kolonu
+
+305
+01:09:04,100 --> 01:09:11,756
+aynı bölümden hocalar için tekrar edecek. Bunda herhangi bir sorun yok. Amacımız performans arttırmak.
+
+306
+01:09:15,347 --> 01:09:23,827
+Veri tabanlarında çok anlamlı bir etkisi var materyali, özellikle performans artırıcı.
+
+307
+01:09:23,908 --> 01:09:28,228
+Sorguların performansını artırıcı anlamda çok yoğun bir şekilde sıklıkla kullanılır.
+
+308
+01:09:30,068 --> 01:09:57,068
+SQL Server'da nasıl çözümler yapabiliyoruz? SQL Server'da temp tabler oluşturulabilir. Bu bir seçenek. Ya da SQL Server daha çok materials view oluşturmak yerine bunları tablo şeklinde kaydetmeye daha yatkın bir seçenek sunuyor. Bu da onların izlediği bir yöntem. Yani tablo oluşturmakla materials view oluşturmak açısından fiziksel olarak bir fark yok. Sadece...
+
+309
+01:09:58,131 --> 01:10:13,871
+Bakım maliyetleri oradaki endeks yapısını oluşturmaya gerek kalmayacaktır. Bazı kaynak kullanımı ile ilgili farklar oluşacaktır. Bu da bir veri tabanı sistemini tercih olarak değerlendirebiliriz.
+
+310
+01:10:15,211 --> 01:10:19,511
+Buraya kadar sorusu plan var mı? Materials view ile normal view arasındaki farklar.
+
+311
+01:10:23,444 --> 01:10:47,904
+Materializ tablo olmuyor aslında. Materializ view oluyor. Fiziksel tablo ile Materializ view birbirinden biraz farklı. O açıdan Materializ view diyorsan tablo ismi çok karışıklı yaratabilir. Materializ view ile normal view arasında birden çok fark var.
+
+312
+01:10:48,336 --> 01:11:07,275
+Öncelikle normal view'da ya da biz sanal view diyelim, normal view'dan kastlı olarak, sanal view'larda veri kayıt olmaz. Yani veri aslında fiziksel olarak arka planda tutulmuyor. Sanal view'da o sadece onun bir erişim.
+
+313
+01:11:08,979 --> 01:11:33,979
+Gösterimi ya da sanal view, arka planda bir maskeleme yapıyor. Arka plandaki tabloya maskeleme yapıyor ya da sağ değiştirme yapıyor. Materialist view da bu işlemi yapıyor ama materialist view da veriler fiziksel olarak kopyalanır. Hem fiziksel olarak kopyalanır hem de yine bir maskeleme, bir filtreleme yapabiliyorsunuz. Ama normal view'larda ya da
+
+314
+01:11:35,507 --> 01:11:39,087
+Dediğim gibi şeydi, Sanal View'da böyle bir şey söz konusu değil.
+
+315
+01:11:42,676 --> 01:11:44,676
+Yazım olarak bir fark yok.
+
+316
+01:11:44,676 --> 01:11:50,676
+Sadece Materials view oluştururken, Create view deyle materialized view yazıyorsunuz.
+
+317
+01:11:52,676 --> 01:12:01,644
+Yani, şöyle, burada Create materialized view.
+
+318
+01:12:02,707 --> 01:12:28,407
+diyerek yazıyorsunuz. Normalde Create View değil de Create Materialize. Bunun materialize olduğunu belirtmeniz lazım. Bir de Materials View oluştururken nasıl güncelleneceğinizi yazıyorsunuz. Mesela Refresh, ne kadar sıklıkla, burada filtrelememiz işte Everyday, Refresh On.
+
+319
+01:12:30,996 --> 01:12:57,015
+Evrede bilmem, saat 8 gibi. Böyle şartlarınız olabiliyor. Sinteks olarak, mesela BTIME STAMP gibi belirtebilirsiniz. Yani bunu güncelleme periyodunu da belirtmeniz gerekiyor. Sorguda böyle bir fark var. Onun dışında herhangi bir fark oluşturur.
+
+320
+01:12:57,247 --> 01:13:04,247
+Sorguyla, SELECT statementı, SELECT herhalesi kullanıyorsunuz. Tek fark ne kadar sıkılıkla refresh edeceğinizi yazıyoruz.
+
+321
+01:13:06,644 --> 01:13:14,463
+Rica ederim. Bu arada, bu Materials view, sinteksi, veri tabanından veri tabanına farklılık gösterebilir. Yani PostgreSQL'de farklıdır.
+
+322
+01:13:15,804 --> 01:13:27,923
+Hafif farklılık taşıyabilir, Oracle'da. Ama genel yapayınca, Materials view, view ismi as diyorsunuz. SELECT ifadesi, sonra bir de refresh periyodunu etmeniz lazım.
+
+323
+01:13:29,503 --> 01:13:33,543
+İsterseniz, Oracle'daki örneğine bakalım.
+
+324
+01:13:36,180 --> 01:13:46,540
+Refresh Schedule'ı nasıl biletmesi lazım? Mesela burada sintekse bakarsanız, başka parametreler de biletiliyorsunuz.
+
+325
+01:13:59,859 --> 01:14:04,939
+Evet, yani burada refresh yapacağınız periyot, metodunu seçiyorsunuz.
+
+326
+01:14:04,939 --> 01:14:11,000
+Metodu olarak bu incremental olabilir ya da out of place olabilir.
+
+327
+01:14:11,199 --> 01:14:17,039
+Out of place demek önce o view'u fiziksel olarak drop eder, sonra yenisini oluşturur.
+
+328
+01:14:17,920 --> 01:14:19,939
+Ya da incremental olarak seçebiliyorsunuz.
+
+329
+01:14:20,679 --> 01:14:24,679
+Rude değil de false derseniz increment yapıyor gibi düşünüyorsunuz.
+
+330
+01:14:24,719 --> 01:14:26,439
+Onun dışında başka parametreleri de var.
+
+331
+01:14:26,880 --> 01:14:41,279
+Ama genel olarak Refresh yöntemi bu. Yani Fast Refresh ya da Complete Refresh olabiliyor. Bu, sinteks olarak küçük bir farklar taşıyabilir. Aslında sizin sorgunuzun sonucu eklediğiniz şey bu.
+
+332
+01:14:41,279 --> 01:14:53,680
+Bunu Refresh edeceğim. Tablon ismi bu. Daha doğrusu View ismi bu. True, False gibi parametrelerle bunu belirtebiliyorsunuz. Oluştururken büyük bir fark yoktur.
+
+333
+01:15:03,539 --> 01:15:05,600
+Burası ile ilgili sorusu olan var mı başka?
+
+334
+01:15:07,659 --> 01:15:10,680
+Şimdi o zaman bir de transaction'lardan bahsedelim.
+
+335
+01:15:11,920 --> 01:15:17,279
+Şimdi transaction'ları daha önce de genel olarak bahsetmiştik ama daha detaylı konuşmak gerekirse.
+
+336
+01:15:18,340 --> 01:15:19,520
+Şimdi transaction şu oluyor.
+
+337
+01:15:20,520 --> 01:15:27,659
+Bir SQL işlemi, bu insert, update, delete herhangi bir işlem olabilir.
+
+338
+01:15:28,539 --> 01:15:30,020
+Birden çok parça içeriyorsa.
+
+339
+01:15:30,547 --> 01:15:56,467
+Birden çok parça dediğim, önce bir işlem gerçekleşiyor, sonrasında başka bir işlemle takip ediliyorsa, bunun aynı anda gerçekleşmesi gerekiyorsa. Yani ya tamamı gerçekleşecek ya da gerçekleşmeyecekse. Yani bunu tek bir birim olarak düşünürsek, bu durumlarda bir transaction işlemi yapmak gerekiyor. Yani örnek vermek gerekiyordu. Hatırlarsanız para transferi konuşmuştuk.
+
+340
+01:15:58,420 --> 01:15:59,559
+Şöyle göstereyim.
+
+341
+01:16:01,639 --> 01:16:04,819
+Para transferi örneğinde, işte benim hesabım var.
+
+342
+01:16:09,140 --> 01:16:23,140
+Benim banka hesabım. Bankam hesap bilgisi burası. Hesap tablom. İşte diyelim ki 500 TL'm var. Bu 500 TL'nin 100 TL'sini...
+
+343
+01:16:27,891 --> 01:16:29,112
+Ahmet'e göndereceğim.
+
+344
+01:16:33,076 --> 01:16:36,115
+Ahmet'in de hiç parası yok. Mesela 0 TL'si var.
+
+345
+01:16:38,775 --> 01:16:41,076
+Bu 100 TL Ahmet'in hesabına...
+
+346
+01:16:45,524 --> 01:16:46,284
+Art.
+
+347
+01:16:51,731 --> 01:17:01,451
+Buradan buraya para giderken, nasıl işlem gerçekleşiyor? Aslında ne yapmamız lazım? İşlem gerçekleşecek, update,
+
+348
+01:17:03,451 --> 01:17:09,731
+işte diyelim ki account olsun bu. Account tablosu, set.
+
+349
+01:17:11,531 --> 01:17:14,531
+Benim balansım ne olacak? Eşittir.
+
+350
+01:17:17,011 --> 01:17:19,611
+İşte, Balance, Eksi, Yüz.
+
+351
+01:17:25,587 --> 01:17:28,268
+İşte benim ID'im dedikleri.
+
+352
+01:19:09,043 --> 01:19:10,103
+Bakmayın, geldim şimdi.
+
+353
+01:19:10,404 --> 01:19:11,123
+Duyuyor musunuz?
+
+354
+01:19:12,923 --> 01:19:16,344
+Şimdi, ikinci işlem ne olacak? Bu birinci işlem.
+
+355
+01:19:17,043 --> 01:19:18,583
+Benim ID'm diyelim ki 15.
+
+356
+01:19:20,363 --> 01:19:22,484
+Benim hesabımdan 100 TL çıkacak.
+
+357
+01:19:23,783 --> 01:19:24,963
+Diğer işlem ne?
+
+358
+01:19:26,543 --> 01:19:27,384
+Burada da,
+
+359
+01:19:28,904 --> 01:19:29,484
+Update,
+
+360
+01:19:32,404 --> 01:19:32,764
+Yine,
+
+361
+01:19:33,443 --> 01:19:35,023
+Account diyelim ona, kısaca.
+
+362
+01:19:36,184 --> 01:19:36,564
+Set,
+
+363
+01:19:38,931 --> 01:19:42,931
+Balans, Ahmet'in balansı ne olacak? Balans artı...
+
+364
+01:19:46,996 --> 01:19:47,876
+Kaydırım alacak.
+
+365
+01:19:53,876 --> 01:19:56,775
+Balans artı 100 TL.
+
+366
+01:20:00,532 --> 01:20:06,471
+Ver diyorum size, ID eşittir, Ahmet'in ID'si de 20 olsun.
+
+367
+01:20:08,952 --> 01:20:20,372
+Şimdi buraya kadar, gördüğünüz gibi, Cem'in iki bacağı var. İkincisi hesabından önce para çekilecek, sonra Ahmet'in hesabına para eklenecek.
+
+368
+01:20:20,851 --> 01:20:46,731
+Bu iki işlem tamamlandığı zaman bu işlemin kendisi tamamlanacak. Ama problem şu, mesela benim hesabımdan çekilirken o arada bir hata meydana geldi. Uygulamanız sıkılaşıldı. Bu başka bir sıkıntı yavakta çıktı. Ve benim 100 TL'im havadayken benim buradan silindi. Ama Ahmet'in hesabına yatmadan işlem gerçekleşmedi.
+
+369
+01:20:47,507 --> 01:21:05,128
+Bu durumda ne olur? Bizim 100 TL havada kaybolacak. Bunun gerçekleşmemesi lazım. Aslında bu iki işlemin birbiriyle atomik ya da bir işlem olarak gerçekleşmesi gerekiyor değil mi? Yani bu işlem ya hep gerçekleşmeli ya da hiç gerçekleşmeli.
+
+370
+01:21:05,887 --> 01:21:11,427
+gerçekleşirse, önce benim ikisinden 100 TL çıkacak, Ahmet'in hesabına 100 TL girmiş olması lazım.
+
+371
+01:21:11,987 --> 01:21:13,228
+Sonrasında bir işlem biter.
+
+372
+01:21:13,728 --> 01:21:16,648
+Ya da herhangi bir işlem hatası olursa ne olması lazım?
+
+373
+01:21:17,128 --> 01:21:19,148
+Benim 100 TL'm geri gelmesi lazım.
+
+374
+01:21:20,247 --> 01:21:26,087
+İşte bunu sağlamak için transaction dediğimiz bir yapı var ilişkisel veritabanlarında.
+
+375
+01:21:26,087 --> 01:21:28,208
+Bu işlemi sağlıyor.
+
+376
+01:21:28,827 --> 01:21:29,868
+Ne yapıyor aslında?
+
+377
+01:21:33,747 --> 01:21:37,247
+Bu ikisini tek bir yapı olarak birleştiriyor.
+
+378
+01:21:37,587 --> 01:21:39,547
+Yani şöyle göstereyim.
+
+379
+01:21:42,047 --> 01:21:42,947
+Transaction.
+
+380
+01:21:47,956 --> 01:21:50,956
+olarak, bunu bir yapı olarak düşünüyoruz. Önce birinci update.
+
+381
+01:21:54,931 --> 01:22:09,931
+Update 1, kısaca Update 1 diyorum buna. Bu. Sonra Update 2, bu gerçekleşecek. Eğer bu ikisi gerçekleşirse...
+
+382
+01:22:15,572 --> 01:22:41,572
+Bu ikisi gerçekleşirse, yani bu transaction commit olacak. Diğer bir durumda, aksi halde bu işlem commit olacak ya da rollback olacak. Rollback. Rollback olduğu zaman şu oluyor, işlemlerin tamamı iptal edilir. Önceki...
+
+383
+01:22:42,192 --> 01:22:44,871
+Duruma, önceki hale geri döner.
+
+384
+01:22:46,891 --> 01:22:51,511
+Yani SQL yapısı içinde tutuluyor bu.
+
+385
+01:22:51,931 --> 01:22:53,951
+Bütün bu iki tane işlem de olmak zorundayız.
+
+386
+01:22:54,011 --> 01:22:54,771
+Birçok işlem olabilir.
+
+387
+01:22:54,912 --> 01:22:58,131
+Mesela öncelikle para benim hesabımda silindi.
+
+388
+01:22:58,611 --> 01:23:00,572
+Ahmet'in hesabına girdi o para.
+
+389
+01:23:01,211 --> 01:23:03,511
+Üçüncü bir aşamada belki log'u da update edeceğiz.
+
+390
+01:23:03,611 --> 01:23:04,391
+Log'u da güncelleyeceğiz.
+
+391
+01:23:04,492 --> 01:23:06,291
+Diyeceğiz ki gerçekleşen işlemler.
+
+392
+01:23:06,672 --> 01:23:07,672
+Bir log tablosu.
+
+393
+01:23:08,435 --> 01:23:16,415
+Olsaydı olan blog konusu da ortaya çıkacaktı. Bütün bir işlem ya gerçekleşir ya hiç gerçekleşmez. Buna transaction diyoruz.
+
+394
+01:23:18,876 --> 01:23:29,415
+Transaction syntax'inde transaction diye bir kelime var. Onu girerek o kod bloğunu transaction parantezi içinde çok sayıda...
+
+395
+01:23:30,608 --> 01:23:40,347
+İşlem yapabilirsiniz. Insert, Delete veya işte herhangi bir işlem orada konularında gerçekleşebilir.
+
+396
+01:23:44,180 --> 01:24:01,220
+Şimdi veritabanlarında, ilişkisel veritabanlarında bazı constraint ya da kısıtlar uygulayabilirsiniz. Bunları veritabanı tabloları oluştururken o kolonlara has, o kolonun, o verinin bütünlüğünü sağlamak için bazı şeyler yapabilirsiniz.
+
+397
+01:24:01,819 --> 01:24:08,220
+Kısıtlar uygulayabilirsiniz. Mesela örnek verelim. Şimdi şuradaki örnekte. Benim hesabımda...
+
+398
+01:24:10,195 --> 01:24:16,976
+Para yoksa, benim hesabım sıfırsa, buradan, Mete 100 TL para gönderebilir miyim?
+
+399
+01:24:21,300 --> 01:24:35,960
+göndermemem lazım değil mi? Yani benim buradaki hesabımdaki para negatifse veya burada hesap numaram balansın sıfırdan küçükse, küçük eşitse bu tarafa o büyüklükte para gönderememem lazım.
+
+400
+01:24:37,079 --> 01:24:43,880
+Belki sizin şu balans kolonunu belli bir aralığa göre
+
+401
+01:24:45,587 --> 01:24:54,507
+Sıklıkla kontrol etmeniz lazım. Eğer bunun belli bir değerin altında düşüyorsa, bu işlemlerin yapılmıyor olması lazım.
+
+402
+01:24:55,547 --> 01:25:05,627
+Veya bu yaşla ilgili bir şey. Yaş kolonunun 0 ile 150 arasında bir değer olması lazım.
+
+403
+01:25:05,627 --> 01:25:08,787
+Şimdi negatif yaş kolonunu insert.
+
+404
+01:25:09,779 --> 01:25:26,119
+INTO yapıyor, IH kolonuna negatif 100 yazamaması lazım. Ya da yazarsa bunu insert edememesi lazım. Değil mi? O kolon üzerinde bazı tutarlık şartları sağlayabilirsiniz. Bunları veri tabanında gerçekleştirmek mümkün.
+
+405
+01:25:32,832 --> 01:25:56,592
+10.000'den daha yüksek olmaması veya maaşın 4 dolardan daha az olmaması veya customer isminin null olmaması veya telefon numarası veya TC kimlik numarasının boş olmaması gibi kuralları herhangi bir tablo üzerindeki kolon üzerinde uygulayabilirsiniz.
+
+406
+01:25:58,100 --> 01:26:05,440
+Integrity constraint diyoruz. Ve bunlar yanlışlıkla o veritabandaki veriyi bozmayı, kirletmeyi engelleyici özellikler.
+
+407
+01:26:05,880 --> 01:26:18,480
+Aslında uygulama tarafında bir şey gibi düşüncelisiniz. Uygulamada bir kod yazarken de formlarda herhangi bir değeri girmesine izin vermiyorsunuz ya mesela bir web sitesi geliştirdiniz.
+
+408
+01:26:18,480 --> 01:26:20,480
+Burada kullanıcı adının...
+
+409
+01:26:20,787 --> 01:26:26,947
+belli şartları sağlaması lazım. Validasyon olarak bu veridü tarihini sağlamak için kullanılabilir.
+
+410
+01:26:28,768 --> 01:26:39,507
+Çok yaygın kullanılan constraintlere örneği vermek gerekirse, mesela not null bir constrainttir, primary key bir constrainttir, unique olması bir constraint.
+
+411
+01:26:39,520 --> 01:26:56,579
+CHECK diye bir constraint boxı. Bunun içine de herhangi bir şart girebiliyorsunuz. Yani birden çok şartı, karmaşık şartı CHECK içinde yazabilirsiniz. Daha özel sorgular için. Mesela NATMAL en bilindeki constraintlerden bir tanesidir.
+
+412
+01:26:58,899 --> 01:27:23,299
+Null olmaması lazım. Eğer bir tabloya isim giriyorsanız, mesela personal ismi veya işte bölüm ismi gibi şeyler, burada ismin Null olarak yanlışlıkla girilmemesini sağlamak için böyle bir constraint tanımlanır. Bunu genelde bu tabloyu oluştururken belirtmeyiz lazım. Şöyle diyeyim. Table diyoruz.
+
+413
+01:27:27,028 --> 01:27:38,507
+NetTableEmployee'de mesela farklı farklı kolonlarımız var ya, ID kolon.
+
+414
+01:27:39,768 --> 01:27:43,507
+ID kolonu, bu bir integer değer.
+
+415
+01:27:44,628 --> 01:27:47,148
+Primary key, bilan yapacaksınız belki.
+
+416
+01:27:48,068 --> 01:27:52,587
+Sonra işte başka net kolonumuz var, name, varcar.
+
+417
+01:27:53,716 --> 01:28:04,716
+İsim 50 kadar karakter olabilir. Ama bu NAL olmamız lazım. NAL, NAL, boş girmemiz lazım. Eğer NAL, NAL demiyorsanız bu kolon NAL olabilir demek.
+
+418
+01:28:04,716 --> 01:28:18,916
+Mesela department gibi bir şey olsun. Bu da department. NAME. TAMNET department ya da ID'si olsun. Bu da mesela var, bu da integer olsun.
+
+419
+01:28:21,332 --> 01:28:29,912
+boş diyorsam, bu kolon null girilebilir demektir. Veya bunu pek null diyebiliyorsunuz, null olabilir demek.
+
+420
+01:28:30,272 --> 01:28:45,332
+Not null diyorsanız, o zaman null olamaz demek oluyor. Bunun gibi, mesela diyelim ki, primary key diyorsunuz, primary key'imiz id kolonu olacaksa,
+
+421
+01:28:50,163 --> 01:28:53,163
+Constraint. Primary key de bir Constraint.
+
+422
+01:28:55,423 --> 01:29:04,404
+Ne oluyor? Diyor ki, primary key bu tabloda ID kolonu ve bu bir unique değer olması lazım.
+
+423
+01:29:04,543 --> 01:29:10,123
+Mesela primary key değerin kendisi, az da unique. Ama bunun dışında da unique olabilir.
+
+424
+01:29:10,123 --> 01:29:15,583
+Mesela herkesin ismi farklı olacak bir şey yapabilirsiniz. Unique.
+
+425
+01:29:18,771 --> 01:29:37,612
+Unique için primary key olmak zorunda değil, ama primary key olmak için Unique olması gerekiyor. Mesela başka hangi anahtarlar vardı Unique olan ama tamam, illa bir primary key olmak zorunda olmayan başka hangi anahtarları konuşmuştuk? Ne tür anahtarlar var?
+
+426
+01:29:44,051 --> 01:29:48,131
+Mesela aday anahtar. Bunun primary key'den farkı neydi?
+
+427
+01:29:51,988 --> 01:30:01,648
+Foreign key, evet. Foreign key ama aslında başka bir tabloya ilişki yapıyor. O da bir anahtar, primary key ama başka bir tablo da bir anahtar.
+
+428
+01:30:02,347 --> 01:30:11,507
+Doğru, yine bir unit değer ama başka tabloya referans veriyor. Mesela bunun içinde biz primary key'yi hangi anahtarlardan seçiyorduk?
+
+429
+01:30:12,628 --> 01:30:15,788
+Kendisindeki ya da aday anahtar diyorduk. Aday anahtarın özellikleri neydi?
+
+430
+01:30:25,268 --> 01:30:30,347
+Aday anahtarı da kendi key aslında bir unique değerdi ama çok sayıda kendi key olabilir.
+
+431
+01:30:30,708 --> 01:30:34,667
+Evet, [öğrenci]'ın da söylediği gibi unique olması. Aday anahtarın temel şartı bu.
+
+432
+01:30:34,667 --> 01:30:42,608
+Mesela ID artı name aslında belki uniktir. ID kendi başına da uniktir. ID name department da uniktir.
+
+433
+01:30:43,427 --> 01:30:48,667
+Muhtemelen hepsi unique olabilir ama biz sadece bir tanesini bunların içinde...
+
+434
+01:30:48,895 --> 01:30:51,815
+Seçebiliyoruz primary key olarak.
+
+435
+01:30:51,815 --> 01:31:01,475
+Ve en az, daha da azaltamayacağımız olanı seçmeye yatkın bir seçenek olması gerekiyor hatırladığınız gibi.
+
+436
+01:31:04,575 --> 01:31:07,575
+Bu az önceki bahsettiğimiz not-not constraint.
+
+437
+01:31:07,835 --> 01:31:11,055
+Bunun dışında unique olarak dediğimiz gibi belirtebilirsiniz.
+
+438
+01:31:13,716 --> 01:31:17,816
+Null olabilir. Ama primary key'ler Null olamaz bildiğiniz gibi.
+
+439
+01:31:19,076 --> 01:31:22,536
+Kansas key'i de Unique bir değer olacak. Yani Unique değer de bir kez Null olabilir.
+
+440
+01:31:23,516 --> 01:31:31,736
+Burada Unique dediğimiz anahtar kelimeyi kullanarak, burada işte birinci etribüyük, ikinci etribüyük ya da sadece bir etribüyük de edebilirsiniz.
+
+441
+01:31:31,736 --> 01:31:37,496
+Ya da Composite olarak, yani çok sayıda anahtar da etribüyük de bir anahtar.
+
+442
+01:31:37,904 --> 01:31:49,524
+yapısını oluşturabilir. Yani şurada örneği tekrar vermek gerekirse. Burada UNIQ için de şunu diyebilirim. ID, name ve department.
+
+443
+01:31:49,524 --> 01:31:51,724
+ID.
+
+444
+01:31:51,724 --> 01:31:58,184
+UNIQ'de yer olabilir. Ya da sadece şunu diyebilirim. Bu da bir seçenek.
+
+445
+01:31:58,184 --> 01:32:05,224
+ID ile department. ID de UNIQ olabilir. Veya sadece department ID de UNIQ olabilir.
+
+446
+01:32:06,579 --> 01:32:09,760
+Bu tarz kısıtları uygulamak mümkün.
+
+447
+01:32:10,860 --> 01:32:13,840
+Diğer bir kısıt türüne bakacak olursak,
+
+448
+01:32:14,840 --> 01:32:17,547
+ÇEK dediğimiz...
+
+449
+01:32:17,587 --> 01:32:42,467
+Cloud Check dediğimiz yapı daha kapatmak şeyleri yapmamız durumunda işin içine giriyor. Örnek vermek gerekirse, mesela ben primary key'yi seçtim. Burada gördüğünüz gibi primary key biraz kompozit değerlerle oluşuyor. Bütün bu var karlar girdi. Gördüğünüz gibi bunların hepsi nal olabilir tek başına ama toplamın nal olamaz.
+
+450
+01:32:43,636 --> 01:33:01,576
+Şimdi check şunu yapıyor, herhangi bir şartı sağlaması lazım. Mesela burada semester dediğimiz bir değer var. Bu semester'ın şuradaki 4 değerden birisi olmak durumundaysa, mesela başka bir mevsim yok, winter, fall, spring, summer, bunlardan birisi olacak ya da null olacak.
+
+451
+01:33:02,716 --> 01:33:09,736
+Dolayısıyla böyle check constraint'i uygulayarak yanlış bir değerle girilmesi engelleyebilirsiniz.
+
+452
+01:33:10,484 --> 01:33:25,244
+Çek bu işleri. Aynı zamanda sadece böyle katagorik değerler olmak zorunda değil. Mesela bu in kısmının içinde SELECT, bilmem, SELECT, SELECT, SELECT, SELECT, SELECT, SELECT, SEMESTER, FROM, bir tane başka tablodan da çekebilirsiniz.
+
+453
+01:33:26,264 --> 01:33:30,364
+Bu daha karmaşık sorgular olabilir. Mesela şunu göstereyim. Şunu yapabilirsiniz.
+
+454
+01:33:37,043 --> 01:33:49,483
+Semester, in dedik ya. Bunun için de sadece kategorik değerli olmak zorunda değil, mesela bu başka bir vurgu da olabilir.
+
+455
+01:33:49,483 --> 01:33:55,423
+Semester, diyelim ki, name from semesters diye.
+
+456
+01:33:59,731 --> 01:34:12,672
+Başka bir tablonuz olursa, işte bunu da uygulayabilirsiniz. Bunlardan bir tanesi olacak gibi diye de yapabilirsiniz. Check Constraint'i o açıdan daha esnek bir yapı sağlıyor.
+
+457
+01:34:18,420 --> 01:34:23,579
+Bu kısıtların bir tane özel versiyonu da referential integrity diyoruz buna.
+
+458
+01:34:24,220 --> 01:34:30,100
+Yani bütünlük, ilişkilerden kaynaklanan bütünlüğü sağlamak için de bir kısıt uygulayabilirsiniz.
+
+459
+01:34:30,760 --> 01:34:35,859
+Örnek vermek gerekirse siz bir foreign key ile başka bir tabloya bağlanıyorsunuz.
+
+460
+01:34:35,940 --> 01:34:38,699
+İki tablo birbirine bağlanıyor.
+
+461
+01:34:39,859 --> 01:34:54,599
+Departman ID'niz var. Diğer tarafta da işte Course ID'niz var. Departman ID bir foreign key departman tablosunda. Ama şimdi insert yapacaksınız, bir şey yapacaksınız o instructor tablosuna veya Course tablosuna.
+
+462
+01:34:55,475 --> 01:35:02,315
+Şimdi biyoloji diye bir departmanla ilgili bir insert yapıyorsunuz ama öyle bir departman yoksa o departmanlar içinde.
+
+463
+01:35:02,676 --> 01:35:09,796
+Bu durumda ne yapıyorsunuz? Instructor geçerli bir değer ama bunun bulunan departman geçersiz.
+
+464
+01:35:09,796 --> 01:35:19,275
+Bu veride tutarsızlık yaratır. Bu tarz tutarsızlıkları engellemek için bir referensyal integrity.
+
+465
+01:35:19,764 --> 01:35:37,943
+dediğimiz kısıt uygulanır. Yani veri tabanlarında bunu otomatik olarak sağlayan mekanizmalar vardır. A tablosu ile B tablosuna bakar. Eğer A tablosu B tablosuna bir foreign key ilişkisine bağlıysa orada bunun karşılığının olması zorunludur.
+
+466
+01:35:38,868 --> 01:35:58,868
+Yoksa insert yaptığınız zaman veya silme işlemi yaptığınız zaman hata alırsınız. Şöyle örnek vereyim. Şimdi sağ tarafta o biyolojiyi sileceksiniz, sol tarafta biyoloji kalacak. Yani aslında biyoloji diye bir departman yok ama bunun referans verdiği diğer tabloda böyle bir...
+
+467
+01:35:59,247 --> 01:36:07,807
+Satır varsa burada ilişkiler arasında kopukluk ortaya çıkabiliyor. Referential integritinde bunu sağlamak için var.
+
+468
+01:36:08,507 --> 01:36:14,147
+Şükürhalde bunu nasıl yazıyoruz? Aslında foreign key oluşturunca referential integritinde olmuş oluyor.
+
+469
+01:36:14,147 --> 01:36:22,207
+Foreign key içinde ne yapıyorsunuz? Diyorsunuz ki bu departman tablosu, mesela bu instructor tablosundayız.
+
+470
+01:36:22,567 --> 01:36:26,147
+Şuna bakalım. Foreign keyleri nasıl oluşturuyorsunuz? Foreign key de...
+
+471
+01:36:26,868 --> 01:36:49,868
+primary key gibi yazılır. Burada sadece şunları belirtmek lazım. Öncelikle hangisi, core key, şu anki tablada kullandığımız ismiyle bunun, department ne? Neye referans veriyor? Department neye referans veriyor.
+
+472
+01:36:53,043 --> 01:36:58,864
+Bu departman tablosundaki name ile şu anki instructor tablosundaki departman name aynı şey.
+
+473
+01:36:59,384 --> 01:37:01,944
+Ve burada yapılacak değişiklikler burayı etkiler.
+
+474
+01:37:03,944 --> 01:37:07,304
+Bunun için de belirttedebilirsiniz.
+
+475
+01:37:08,384 --> 01:37:09,244
+Burada olduğu gibi.
+
+476
+01:37:09,844 --> 01:37:21,844
+Yani birden çok attribute de olabilir referansı ile. Burada spesifik olarak da edebilirsiniz ya da aynısı zaten bir problem. Burada belirttiğiniz zaman burada yazmanız da gelir.
+
+477
+01:37:23,844 --> 01:37:34,844
+Aynı tabloda birden çok referans foreign key olabilir mesela. Şimdi burada department name'i referans et. Hayır, burada bir de course diyebilir.
+
+478
+01:37:35,347 --> 01:37:38,268
+foreign key'imiz var. Bu da cost.
+
+479
+01:37:38,268 --> 01:37:44,707
+Bunun dışında belki adres ID'imiz vardır.
+
+480
+01:37:48,020 --> 01:37:50,319
+adres tablosuna referans verirsiniz.
+
+481
+01:37:51,319 --> 01:37:57,739
+Aynı zamanda o tablolara forank olarak referans verilmeli.
+
+482
+01:38:04,083 --> 01:38:23,043
+Yani, [öğrenci] sorusu doğru, department name, o tablo için primary key'dir. Şuradaki departmandaki primary key'e biz transferiyorsak, başka bir tabloda, o zaman o bizim foreign key'imiz oluyor. Şurada şekil olarak çizeyim, rica ederim.
+
+483
+01:38:26,484 --> 01:38:29,484
+Yani bizim şu an oluşturduğumuz tablo
+
+484
+01:38:33,108 --> 01:38:34,568
+Instagram tablomuz.
+
+485
+01:38:38,899 --> 01:38:56,419
+Burada mesela department tablomuz var. Buranın primary key'si, primary key'si, buna ID de diyebilirsiniz veya department ID de olabilir.
+
+486
+01:38:58,919 --> 01:39:00,419
+Department ID olsun.
+
+487
+01:39:04,595 --> 01:39:14,095
+Şurada bulunan depart id, depart id, burada key, primary key'ye referans veriyor.
+
+488
+01:39:14,095 --> 01:39:19,215
+O aynı key burada foreign key, burada primary key.
+
+489
+01:39:20,015 --> 01:39:23,755
+Bunun dışında belki başka bir adres tablomuz da vardı.
+
+490
+01:39:25,935 --> 01:39:31,735
+Bunun da bir id'si var, bu da burada. Primary key, burada foreign key.
+
+491
+01:39:32,435 --> 01:39:39,035
+Birden çok foreign key, primary key ilişkisi vardır. Bunun kendi ailesi var, bu da buranın primary key'si.
+
+492
+01:39:41,435 --> 01:39:45,035
+Şimdi foreign key işleminin şöyle bir...
+
+493
+01:39:47,035 --> 01:39:54,635
+...liği olabilir. Şimdi siz bu tabloyu açtığınız zaman, sadece SELECT, LOGUS yapıyorsanız, sadece clone ismini görüyorsunuz.
+
+494
+01:39:54,635 --> 01:39:59,235
+Foreign key var mı? Bu tablo burada foreign key mi, primary key mi?
+
+495
+01:40:00,416 --> 01:40:26,896
+Neye bakmanız lazım? Bu tablonun şemasına bakmanız lazım. Şema ya da ingilizcesi, schemasına baktığınız zaman, neye görüyorsunuz? Create table detaylarını görüyorsunuz. Yani şuradaki detayları, şemasına bakınca görüyorsunuz. Sorgu yaparken bunu görmüyorsunuz. Dolayısıyla siz bazen unutarak silme işlemi yaparsınız. Burada silmeye kalkarsınız.
+
+496
+01:40:28,307 --> 01:40:40,988
+O zaman buradaki ilişkiyle ilgili problemler yaşayabilirsin. Mesela burada biz biyoloji departmanını silmeye kalktık yanlışlıkla.
+
+497
+01:40:42,268 --> 01:40:50,427
+Diyecek ki, eğer burada biyoloji departmanıyla ilgili referans varsa, önce biyolojiyi referans veren bu tabloyu silmeniz lazım.
+
+498
+01:40:50,899 --> 01:40:59,319
+Sonra burayı silmeniz lazım. Yani buradaki değere referans veren, frankie olan tablodaki değerleri önce silmeniz lazım.
+
+499
+01:40:59,879 --> 01:41:05,999
+Burada buna referans bir değer kaldıktan sonra ona tabloyu silebilirsiniz. Aksi halde silmez.
+
+500
+01:41:08,939 --> 01:41:12,759
+Primary key, deysa hatta verilir mi? Soruyu tekrar baştan okuyayım.
+
+501
+01:41:17,716 --> 01:41:41,055
+Unique olması lazım, evet. Primary key olmak zorunda değil ama zaten genellikle primary key üzerinde belirlenir. Yani o foreign key bir kompozit değer de olabilir ama o bahsettiğimiz tabloda unique olması lazım. Genel yaklaşım primary key olması yönünde. Zaten çünkü o primary key üzerinde sorgular yapılır.
+
+502
+01:41:41,844 --> 01:41:52,123
+Şöyle ifade edeyim, primary key aynı zamanda indeks yapısı için kullanıldığı için, buradan buraya sorgu yapmak için, index ve hızlı yapabilmek için primary key üzerine yapılır.
+
+503
+01:41:53,423 --> 01:41:56,963
+Ama primary key dışında da sorgu yapılabilir.
+
+504
+01:41:57,243 --> 01:42:01,323
+Yani foreign key başka bir unik anahtara kandilir diye referans verebilir.
+
+505
+01:42:01,323 --> 01:42:04,963
+Ama genel yaklaşım buranın primary key olması yöndedir.
+
+506
+01:42:05,064 --> 01:42:09,323
+Hem sorgunun hızlı olması açısından hem de genel olarak primary key...
+
+507
+01:42:09,652 --> 01:42:16,371
+Dışında bir değerini seçmek çok bir mantık olmuyor. O da da primary key olarak. O oluşturması mantıklı.
+
+508
+01:42:18,591 --> 01:42:21,331
+Ama doğru bir soru soruldu.
+
+509
+01:42:26,911 --> 01:42:29,531
+Sanırım tamam ona cevap verdik. Başka soru var mı?
+
+510
+01:42:34,644 --> 01:42:35,964
+Başka soru görmüyorum.
+
+511
+01:42:38,864 --> 01:42:40,244
+Ben teşekkür ederim.
+
+512
+01:42:41,284 --> 01:42:41,884
+Şimdi,
+
+513
+01:42:43,364 --> 01:42:45,124
+foreign key yapısı da bu oluyor.
+
+514
+01:42:48,164 --> 01:42:51,044
+Şimdi, işlem yapabilmek için
+
+515
+01:42:53,076 --> 01:43:04,756
+silme işlemi, update işlemi, cascade diyoruz buna. Referential integrity'yi sağlamak için cascading delete ya da cascading update. Cascade dediğimiz altlara aktarım yaparak.
+
+516
+01:43:04,756 --> 01:43:18,596
+Yani orada bir referential integrity şey oluyorsa, buzuluyorsa, bunu öncelikle referans veren tabloya giderek silebilirsiniz veya
+
+517
+01:43:20,148 --> 01:43:24,507
+ya da hata alırsınız. Hatta aldığınız için silemiyorsunuz. Bunun için ne yapmanız gerekiyor?
+
+518
+01:43:25,608 --> 01:43:41,007
+Mesela burada gördüğünüz gibi, şu ne bakalım? Şu ne yapıyor? Foreign key'de siz şöyle keski diyerek, on delete keski diyorsanız ya da on update keski diyorsanız, önce gidip diğer tabloyu silmek yerine şu şartı verebilirsiniz.
+
+519
+01:43:46,543 --> 01:43:56,024
+Siyeretebilirsiniz. Mesela delete işlemi on dediğiniz zaman referans verdiği tablodakini de siler. On update, referans verdiğiniz tablodakini de update eder.
+
+520
+01:43:56,903 --> 01:44:07,043
+Ama bunu çok şey yapmamak lazım, kullanmamak lazım. Çünkü istemediğiniz yanlışlıkla istemediğiniz satırları silebilirsiniz.
+
+521
+01:44:07,043 --> 01:44:13,724
+Buna da emin olmak lazım. O yüzden bunun yerine daha dikkatli silmek direkir. Belki şunu yapabilirsiniz.
+
+522
+01:44:14,224 --> 01:44:26,804
+Null yapabilirsiniz. Sonrasında silebilirsiniz. Bu değer Null olabilir. Dolayısıyla Null olduğu için diğer tarafı silebilirsiniz ya da bir default değerini sağlayarak bu işlemi yapabilirsiniz.
+
+523
+01:44:27,484 --> 01:44:37,363
+Ya da öncelikle o tabloyu da silinebilmesi mantıklıysa silme işlemi yaptıktan sonra bu referençli integratiyi bozmadan işlem yapabilir.
+
+524
+01:44:42,484 --> 01:44:48,224
+Soruya bakalım, referans verilen yerlerdeki silince mi? Yoksa referans veren silince mi?
+
+525
+01:44:48,224 --> 01:45:04,324
+İşte burada mesela şeye bakarsak, [öğrenci], siz ana tablosu, burada mesela, kurs tablosu şeye referans veriyor, departman tablosuna referans veriyor.
+
+526
+01:45:05,064 --> 01:45:07,623
+Diyor ki, eski et işlemi yapabilir.
+
+527
+01:45:08,212 --> 01:45:13,912
+ana tabloda silme işlemi gerçekleştiği zaman buradaki teref siliyor.
+
+528
+01:45:14,732 --> 01:45:21,872
+Ve ana tabloda update işlemi gerçekleşiyorsa, o ID değerinin karşındaki değer değiştiyse, bir şey oluyorsa, burada da etki oluyor.
+
+529
+01:45:21,872 --> 01:45:24,772
+Her zaman istemeyebilirsiniz bunu.
+
+530
+01:45:26,252 --> 01:45:33,112
+Bu yüzden şey yapmakta fayda var, bu cascade opsiyonu olmadan yapmakta fayda var.
+
+531
+01:45:34,963 --> 01:45:39,163
+Burada veriyi şey yapabilir, istemediğiniz değişiklikleri uygulayabilir.
+
+532
+01:45:39,303 --> 01:45:42,923
+Öncelikle ana tablodaki değişiklik buraya yansıyor, referansa yansıyor.
+
+533
+01:45:51,475 --> 01:46:17,515
+Rica ederim. Mesela burada başka bir örnek daha verebiliriz. Şu olabilir. Mesela siz aynı tabloya referans verebilirsiniz foreign key olarak. Bu da mümkün. Self-join gibi düşünün aslında. Şöyle, sizin person tablonuz var. Person içinde anne baba bilgileriniz olabilir. Ama o anne baba da bir person. Onlar da aslında bu tabloya.
+
+534
+01:46:18,068 --> 01:46:24,688
+bağlı, onların da annesi babası var gibi düşünebilirsiniz. Primary key'iniz, ID, rank key'iniz ne oluyor?
+
+535
+01:46:24,868 --> 01:46:30,887
+Father, buradaki father kullanımlı, sin foreign key'iniz, anneye foreign key, kendisine foreign key.
+
+536
+01:46:32,068 --> 01:46:43,908
+Dolayısıyla burada person içinde name'in de birçay olması lazım. Yani bu father ismindeki dediğimiz kişinin aynı zamanda person içinde bulunmasını sağlıyor bu foreign key.
+
+537
+01:46:44,724 --> 01:46:57,364
+Mother için tane şey sağlıyor. Şimdi şöyle bir şey yaparsınız. Yeni bir kişi eklediniz ama bunun Mother ya da Father'ı bu tablonun içinde değilse ne olur? Hatı alırsınız.
+
+538
+01:46:59,124 --> 01:47:08,144
+Ne yapmanız lazım? Önce annesini ya da babası, annesinin ve babasını tabloya eklersiniz. Sonra çocuğunu ekleyebilirsiniz. Bu zaman böylelikle hatı almazsınız.
+
+539
+01:47:08,144 --> 01:47:09,764
+Diğer bir seçenek ne olabilir?
+
+540
+01:47:10,239 --> 01:47:19,459
+Öncelikle anne ve baba kısmını null'a eşitlersiniz. Çünkü gördüğünüz gibi bunlar null olabiliyor. Çünkü herhangi bir not null ifadesi yok. Not null ise null olabilir demek.
+
+541
+01:47:20,559 --> 01:47:29,039
+Dolayısıyla bunları önce mesela Ahmet dersiniz. Şöyle göstereyim. Şu tablonun yapısını isterseniz kopyalayalım şuraya.
+
+542
+01:47:36,372 --> 01:47:37,092
+Hablamos bu.
+
+543
+01:47:45,332 --> 01:47:51,092
+Bunun içinde çok olanlar var.
+
+544
+01:47:55,604 --> 01:48:12,184
+Create table first. Şimdi normalde şunu desek, insert into person. Burada işte ID primary key olduğu için buna girmemiz gerekmiyor.
+
+545
+01:48:18,355 --> 01:48:33,416
+Bunları gireceğiz değil mi? Şimdi True Values diyoruz. Burada, şimdi Ahmet diye birisini ekleyeceğim. Ahmet, Virgül.
+
+546
+01:48:42,547 --> 01:48:46,627
+Mesela, Jane'in babası da Joe olsun anlıyor.
+
+547
+01:48:47,887 --> 01:48:53,728
+Eğer Jane ve Joe, person tablosunda yoksa, bunu insert ederken hata alırsınız.
+
+548
+01:48:53,988 --> 01:48:59,868
+Diyecektir ki, böyle birisi person ya da, işte böyle birisi Jane ya da Joe tabloda yok.
+
+549
+01:49:00,148 --> 01:49:00,988
+O zaman hata alırsınız.
+
+550
+01:49:01,876 --> 01:49:13,036
+Seçenekleriniz ne? Öncelikle C'yi eklemek. Insert into diyeceksiniz. C'nin annesini babasına ekleyeceksiniz. Joe'nun annesini babasına ekleyeceksiniz. Sonra bunu eklerseniz problem olmaz. İkinci ödem şu olabilir.
+
+551
+01:49:14,376 --> 01:49:21,775
+Bu anne ve baban nal olabildiği için, çünkü buradan nal demiyor, demediği için bu ikisinin nal olabilir.
+
+552
+01:49:25,427 --> 01:49:28,467
+Null değerlerle Ahmet'i ekleyebilirsiniz.
+
+553
+01:49:29,328 --> 01:49:33,528
+Ekleme işlemini gerçekleştikten sonra gidip update yapabilirsiniz.
+
+554
+01:49:35,108 --> 01:49:39,568
+Bu Jane ve Joe eklendikten sonra bunları güncelleyebilirsiniz. Bu öyle bir şey söz konusu.
+
+555
+01:49:42,728 --> 01:49:48,828
+Onun dışında ya da bu client'i kaldırabilirsiniz. Bu da başka bir teşenek.
+
+556
+01:49:55,764 --> 01:50:00,583
+Evet, aslında person name gibi. O name'in referansız person name.
+
+557
+01:50:03,283 --> 01:50:04,564
+Kaydının olması lazım.
+
+558
+01:50:06,844 --> 01:50:09,503
+Yani burada person.
+
+559
+01:50:13,332 --> 01:50:14,311
+Şükür, İki Böşç.
+
+560
+01:50:19,220 --> 01:50:20,060
+Öyle olması lazım.
+
+561
+01:50:21,960 --> 01:50:24,019
+Ben de bir şey sorabilir miyim hocam?
+
+562
+01:50:24,739 --> 01:50:30,500
+Burada name olarak bakıyoruz ama bunların tabii ki de unique olmasını biliyoruz o yüzden, değil mi?
+
+563
+01:50:30,720 --> 01:50:33,079
+Yani foreign key verdik, unique olması lazım.
+
+564
+01:50:36,600 --> 01:50:37,979
+Foreign key, evet.
+
+565
+01:50:39,699 --> 01:51:03,699
+Yani, unique olması lazım. Dolayısıyla, şöyle düşünün, Jane'in annesi, babası eşit olması lazım. Daha doğrusu, Jane isminde aynı anne, babadan ikinci bir kişi olamaz değil mi? Annesinin, babasının farklı olması lazım. Dolayısıyla, o unique'lik eğer isimden kananmıyorsa, o zaman sadece...
+
+566
+01:51:04,435 --> 01:51:18,536
+NAME değil de şu şekil olur. NAME, MOTHER, MOTHER gibi düşünebilirsiniz. Yani onun tamamının UNIQ olması gerekir. Ya da sadece NAME UNIQ ise her bir kişi için o zaman NAME şekli olur.
+
+567
+01:51:22,804 --> 01:51:25,083
+Hemen bakalım, başka bir soru var mı?
+
+568
+01:51:31,347 --> 01:51:37,528
+Çocuğun anne babası da, evet onların anne babası var. Dolayısıyla onların da annesinin babasının burada oluyor olması lazım.
+
+569
+01:51:39,728 --> 01:51:44,108
+Yani annesiz babası kimse olmadığına göre bu bir şekilde böyle devam eder.
+
+570
+01:51:44,868 --> 01:51:50,908
+Ama annesinin babasının zaten var olduğu, mesela Jamie Joe'nun annesinin babasının zaten burada var olduğunu düşünürsek.
+
+571
+01:51:51,688 --> 01:51:52,148
+O şekilde.
+
+572
+01:51:53,228 --> 01:51:58,188
+Recursive bir durum var. Aslında çok doğru bir yaklaşım değil tabii ki ama olabilir yani. Bunu da sağlayabilirsiniz.
+
+573
+01:52:01,203 --> 01:52:07,203
+İkisinin olması lazım bu durumda çünkü iki tane foreign key var. Hem mother var hem de father var.
+
+574
+01:52:09,203 --> 01:52:15,203
+Sadece bir tane foreign key olsaydı o zaman father olması lazım ya da mother olması lazım.
+
+575
+01:52:16,203 --> 01:52:18,123
+Ki foreign key yapısına bağlı.
+
+576
+01:52:22,707 --> 01:52:24,047
+Bununla ilgili sorsu olan var mı?
+
+577
+01:52:34,579 --> 01:52:45,019
+O zaman bir ara daha verelim arkadaşlar. Bir 10 dakika gibi ara verelim. 3'e 10 geçe devam edelim. Sonra geri kalan kısmını şey yapacağız.
+
+578
+01:52:45,019 --> 01:52:53,380
+Bitirmeden şu son constraint ile konuşalım. Sonrasında ara verelim. Bir dakika daha bekleteyim ben size.
+
+579
+01:52:54,420 --> 01:53:00,019
+Check constraint'i daha karmaşık olabiliyor. Dediğim gibi mesela burada işte time slotu.
+
+580
+01:53:00,532 --> 01:53:09,731
+Başka bir sorgu için de time slotlarına bakıyorsunuz. Bunların ID'siyle match etmesi gerekiyor gibi şeyler uygulayabilirsiniz.
+
+581
+01:53:10,512 --> 01:53:13,351
+Karmaşık şeyler uygulayabilirsiniz.
+
+582
+01:53:16,052 --> 01:53:19,592
+Bu şart mesela şuna da dikkat etmek gerekiyor.
+
+583
+01:53:20,252 --> 01:53:27,532
+Eğer bu time slot tablosu değişiyorsa buradaki slot ID'leri değiştiği için burayı da etkiler.
+
+584
+01:53:28,340 --> 01:53:43,340
+Ona da diklemek lazım. Yani her check işlemi yaparken aslında burayı sorgulayacaktır bu. Buradaki şeyler, SELECT'in içindeki şeyler değişebilir. Bu mevcut olduğu sürece sorun çıkarmaz.
+
+585
+01:53:43,340 --> 01:53:53,340
+Çeki daha karmaşık şartlar için kullanıyoruz. Diğerleri daha spesifik örneklerde kullanılır. Biraz daha karmaşık durumlarda kullanılır.
+
+586
+01:53:53,971 --> 01:54:06,011
+Şimdilik isterseniz bir ara verelim. Sorunuz yoksa. O zaman 3-10 geçe kaldığımız yerden devam edeceğiz. Bir 10 dakikalık yaklaşık ara verip devam edeceğiz. Görüşmeleriniz.
+
+587
+02:06:22,420 --> 02:06:32,239
+Arkadaşlar, ekranımı paylaşıyorum. Şimdi aradan önce en son constraint'leri ya da kısıkları oluşmaya başlamıştık.
+
+588
+02:06:33,319 --> 02:06:39,739
+Bunun üzerine devam edelim. Assortion diye bir yapı var. Assortion şu anlamda kullanılıyor.
+
+589
+02:06:40,819 --> 02:06:47,980
+Bir kolon ya da bir attribute üzerinde, bir değişken üzerinde daha karmaşık,
+
+590
+02:06:48,079 --> 02:07:00,520
+sorgu şeklinde şartları uygulamaya yarıyor. Mesela şunu örnek verebiliriz. Bir hoca aynı zamanda iki sınıfta ders veremez. Değil mi? Bunun olmaması lazım.
+
+591
+02:07:00,520 --> 02:07:06,060
+Veya bir öğrencinin aynı zamanda üç tane farklı derslikle dersi olmaması lazım.
+
+592
+02:07:07,680 --> 02:07:12,960
+İşte belli maaşı negatif olmaması lazım.
+
+593
+02:07:13,279 --> 02:07:16,739
+Veya belli bir değerden yüksek olması gerekiyor.
+
+594
+02:07:16,980 --> 02:07:26,859
+Veya buradaki örnekteki gibi bütün filmlerin toplam süresi belli bir saatten daha az.
+
+595
+02:07:27,264 --> 02:07:43,123
+olmalı gibi şartlar uygulayabilirsiniz. Bunlar için Assortion kullanılır. Yapı olarak şöyle SQL'de yazılma, create, Assortion, check, salary, burası tek komutu üzerinde herhangi bir şeyi uygulayabiliyorsunuz.
+
+596
+02:07:43,323 --> 02:07:50,083
+Filtreyi uygulayabiliyorsunuz. Yani Assortion'un ismi, check işleminin ayrı bir şekilde kullanım şeklinde oluyor.
+
+597
+02:07:50,996 --> 02:08:14,555
+Bu arada, asorşın kelimesi, modern veritabanlarına pek kullanılmaz. Yani çok implement edilen bir şey değildir. Hem blok edici şeyleri olabiliyor, hem de yavaş, hem de bunun yerine genellikle trigger dediğimiz bir yapı kullanılır. Trigger'ları daha sonra konuşacağız.
+
+598
+02:08:18,484 --> 02:08:30,104
+insert, update ya da delete işlemi gerçekleştirildiğinde arka planda çalıştırılacak olan kod olarak ifade ederiz.
+
+599
+02:08:30,104 --> 02:08:42,024
+Yani bir fonksiyon gibi düşünün trigger'ı. O tablo üzerinde herhangi bir satır için insert ya da herhangi bir kolonda güncelleme, silme işlemi varsa
+
+600
+02:08:42,804 --> 02:08:57,563
+Burada trigger otomatik olarak çalışır. Çalıştırabilirsiniz daha doğrusu. Her bir şart için ayrı bir trigger yazmanız lazım. Mesela silme işlemi için bir trigger, insert için ya da update için başka bir trigger yazabilirsiniz.
+
+601
+02:08:58,503 --> 02:09:07,323
+Bu da birden çok o sildiğiniz değeri valide etmek için kullanabilirsiniz trigger'ı. Ya da arka planda loglar tutmak için kullanılabilir.
+
+602
+02:09:07,855 --> 02:09:13,355
+Birçok amacı var trigger'ın. Assortion yerine genellikle trigger dediğimiz yapı kullanılır.
+
+603
+02:09:13,355 --> 02:09:16,268
+Yani benim...
+
+604
+02:10:58,068 --> 02:11:01,667
+Merhaba arkadaşlar, şimdi sesim geliyor mu? Merhaba hocam, geliyor.
+
+605
+02:11:04,028 --> 02:11:07,988
+Her internet koptu, şu an mi yansıyorum.
+
+606
+02:11:11,467 --> 02:11:14,247
+Az önce sesimi duyabiliyor muydunuz? En son... Yok.
+
+607
+02:11:14,927 --> 02:11:23,007
+Öyle mi? Asansion kısmını duydunuz mu? Burayı konuşmuştuk, duydunuz mu? Evet, Asansion'dan sonrası yok hocam.
+
+608
+02:11:23,007 --> 02:11:24,207
+Teşekkürler o zaman.
+
+609
+02:11:24,724 --> 02:11:29,663
+Veri tipleri olarak SQL'de tanımlı çeşitli veri tipleri var. Teşekkürler.
+
+610
+02:11:30,612 --> 02:11:49,432
+Bunlar için de integer, bahsettik, nümerik değerler olabilir, varkar gibi karakter değerleri olabilir. Bunun yanında tarihle ilgili şeyler de var. Mesela bir tarih, bir zaman dilimini bir tarih olarak tutabilirsiniz.
+
+611
+02:11:49,432 --> 02:11:57,572
+Ya da işte time olarak, zaman olarak tutabilirsiniz veya timestamp olarak tutabilirsiniz veya interval olarak.
+
+612
+02:11:58,612 --> 02:12:25,912
+belli tarihler arasındaki mesafe gibi. Zaman dilimi. Tarih mesela burada yıl olarak, ay veya gün olarak seçebiliyorsunuz. Time, saniye, saat ve dakika içecek şekilde olabilir. Aynı zamanda tabii salise de olabiliyor. Sonrası da son üç.
+
+613
+02:12:26,612 --> 02:12:35,891
+saniyeye kadar bunu yapabiliyorsunuz. Ama çok daha detaylı, anlık olarak, milisaniyeye kadar bütün veriyi tutmak istiyorsanız, bu timestamp oluyor.
+
+614
+02:12:35,891 --> 02:12:45,891
+Timestamp'te gördüğünüz gibi, işte, 2005, 727, saat 9, 30 saniye geçer.
+
+615
+02:12:46,547 --> 02:13:01,927
+751 saniye gibi gösterebiliyorsunuz. Burada da veri özellikle tarih anlamında gerçekleşen işlemlerde özellikle timestampi tutmakta fayda var.
+
+616
+02:13:02,988 --> 02:13:14,208
+Yani şöyle diyeyim, mesela log tuttuğunuz tablolarda log kolonları, log ettiğiniz, monitör ettiğiniz, takip ettiğiniz kolonları timestamp olarak girmek
+
+617
+02:13:14,543 --> 02:13:39,484
+tutmak avantajlı. Çünkü aynı dakika, aynı saniye içinde birden çok işlem gerçekleşebilir. Çok daha detaylı bilgi tutmak için timestamp. Ama sizin için mesela tarih çok daha genel olarak o gün bazında tutuyorsanız date olarak tutmak daha avantajlı. Çünkü date'in alanı daha az olduğu için daha az saklama alanına ihtiyacınız var, fiziksel alanına. Biraz o kolonun detayı da ilgili.
+
+618
+02:13:40,212 --> 02:13:51,652
+şöyle, en sonrası önemli, date formatını istediğiniz gibi güncelleyemiyorsunuz. Onun standart hepsi var ama SELECT için de güncelleyebilirsiniz.
+
+619
+02:13:51,652 --> 02:14:06,912
+Mesela şöyle göstereyim, normalde gösterimi mesela şu şekilde gösterirse, şöyle yıl, ay, gün gibi. Ama siz bunu gösterirken şöyle göstermek istiyorsanız.
+
+620
+02:14:15,667 --> 02:14:28,768
+Bu şekilde değil de, şimdi de, DATI, şunu yapabiliyorsunuz, CONVERT yaparak, DATI format içinde gösterebilirsiniz.
+
+621
+02:14:28,768 --> 02:14:40,827
+Mesela şunu, şu şekilde görmek istiyorsanız, öncelikle, işte, DAY, DAY, MM, MONTH ve YEAR şeklinde görmek istiyorsanız,
+
+622
+02:14:41,460 --> 02:14:47,520
+O zaman mesela bu, işte, SHIPTEAT'i bu şekilde dönüştürebilirsiniz.
+
+623
+02:14:49,060 --> 02:14:49,260
+Evet.
+
+624
+02:14:51,900 --> 02:14:55,539
+Şimdi bu şekilde göstermeyecek de bu şekilde gösterecek.
+
+625
+02:14:55,539 --> 02:15:05,380
+Mesela SHIPTEAT'ınız aslında 27,27 gibi olacak.
+
+626
+02:15:05,716 --> 02:15:18,716
+Hatta bunun farklı farklı formatları var. SQL'de sarı şekli farklı, Oracle'da farklı. Bunların hatta numaraları da var. Onları daha spesifik yapabilirsiniz.
+
+627
+02:15:18,716 --> 02:15:32,364
+Bu şekilde göstermeniz de mümkün. Mesela, 8 gibi göstertebilirsiniz. Bu formatı çekilen türü veya...
+
+628
+02:15:32,659 --> 02:15:47,419
+Arka yanda tutma şekli aynı. Date olarak dediğiniz zaman tek bir format tutar. Ama bunu yansıtırken farklı format seçebiliyorsunuz.
+
+629
+02:15:48,119 --> 02:15:55,419
+Format seçmek gerekiyor. Date ile ilgili kısım da burası. Bazen...
+
+630
+02:15:55,764 --> 02:16:14,144
+Çok daha büyük verileri tutmanız gerekebilir. Obje şeklinde tutmanız gerekecek verileri birer tabanda. Mesela bir web sitesi tutuyorsanız, web sitesinin içinde HTML'in kendisini tutmanız da gerekiyorsa, HTML'i mesela şey olarak tutabilirsiniz.
+
+631
+02:16:15,188 --> 02:16:25,807
+bir CLOB ya da BLOB gibi yapılarda tutabiliyorsunuz. Yani BINARY olarak, OBJET olarak tutabiliyorsunuz. Ya da CLOB, yani özellikle metin verilerinden oluşuyor sadece.
+
+632
+02:16:26,507 --> 02:16:39,188
+KARAKTER, LARGE OBJET, Kırcısı, Türkçesi, İngilizcesi. Ne yapıyorsunuz? Bütün web sitesini, işte mesela 2 MB'lık bir text verisini veya bir...
+
+633
+02:16:39,412 --> 02:16:59,812
+tweet tutuyorsanız, gerçi tweetler çok uzun olmuyor. Şey belki Facebook postları, club olabilir. Onun dışında ne bileyim uzun metinler olabilir başka. Bunlar için club yapısı tutabilirsiniz. Bunları yapısal olmayan şekilde tutuyorsunuz. Karakter sayısı çok uzun oluyor demek.
+
+634
+02:17:03,156 --> 02:17:17,216
+Objeleriniz sayısal değil de veya metin değil de bir video veya işte bir imajsa bunları da bu objeleri de verinabanla tutabilirsiniz.
+
+635
+02:17:17,216 --> 02:17:23,136
+Ama bunlar üzerinde sorgu yapmanız mümkün değil. Bunları binary, obje şekil atıyorsunuz binary olarak.
+
+636
+02:17:23,376 --> 02:17:30,596
+Yani bir imaj JPEG ya da bir PNG dosyasını.
+
+637
+02:17:30,927 --> 02:17:41,608
+Binary'e dönüştüyorsunuz, Binary versiyonunu, Blob olarak o kolonu tutabilirsiniz. Kolonun tipi, bir Blob oluyor.
+
+638
+02:17:41,608 --> 02:17:54,687
+Yani, düşünmekte fayda var. Video olabilir, fotoğraf olabilir, ses dosyası olabilir, müzik olabilir. Bu tanes, geniş objeleri Blob ya da Cloth tutabilirsiniz.
+
+639
+02:17:57,172 --> 02:18:08,572
+Bir dosya, dosyanın kendisi içerisinde bir sürü detaylar varsa, metin verileri varsa, bunu da CLOB şeklinde tutmakta, diyebiliriz.
+
+640
+02:18:11,391 --> 02:18:15,772
+Ayrıca, kendiniz de bazı veritifleri tanımlayabilirsiniz.
+
+641
+02:18:15,772 --> 02:18:19,032
+Yani şunu ifade edelim, tamam.
+
+642
+02:18:25,268 --> 02:18:35,247
+oluşturacaksınız. Bunları da user-defined type diyoruz bunlara. Yani kullanıcı tanımlı özel bir klas gibi düşünebilirsiniz.
+
+643
+02:18:37,047 --> 02:18:41,268
+Object-oriented mantığında kendiniz bir klas oluşturuyorsunuz. O klas da ifade ediyorsunuz.
+
+644
+02:18:41,367 --> 02:18:45,047
+Yani mesela ben dolar diye bir tane bir tip oluşturabilirim.
+
+645
+02:18:45,827 --> 02:18:48,587
+Burada türü şöyle create artıyorsunuz.
+
+646
+02:18:50,036 --> 02:18:59,815
+Numerik, integer olabilir, bilemiyorum. Başka değerler de içerebilir. Text olabilir, varkar olabilir. Özel bir özellik olarak tanımıyoruz.
+
+647
+02:18:59,815 --> 02:19:02,236
+Final dememizin amacı şu.
+
+648
+02:19:02,995 --> 02:19:23,775
+Bu doların da bir türetimi olmasın demek. Yani bu dolar veritipi başka bir türünün alt türü olmasın demek. Eğer final demezseniz, mesela doların ne diyelim, bir de cent gibi bir şey oluşturabilirsiniz. Cent de doların bir alt kümesi gibi. Aslında hani inheritance mantığı gibi düşünebilirsiniz.
+
+649
+02:19:25,664 --> 02:19:32,504
+Doları da başka bir veri tipi yaratmakta kullanabilir misiniz? Kullanma atlasız. Onunla ilgili bir şey, final kelimesi.
+
+650
+02:19:32,504 --> 02:19:39,024
+Finalse, dolar, başka bir veri oluşturmakta kullanamazsınız. Aksi halde kullanabilirsiniz.
+
+651
+02:19:40,084 --> 02:19:42,463
+Bütün mantık bu. Mesela şuradaki bir tabloya bakın.
+
+652
+02:19:43,084 --> 02:19:45,923
+Creative Department, bir departman tablosu oluşturuyorum.
+
+653
+02:19:46,923 --> 02:19:51,084
+Bina ismi Varkar 20, bina ismi Varkar 15, bir de bütçe.
+
+654
+02:19:51,440 --> 02:20:02,840
+Bütçeyi normalde biz nasıl tutuyoruz? Nümerik diye bir yerde tutacağız. Onun yerine ben dolar olarak bir ifade verici tipi geliştirdim. Bu defa bacın da alırız diyorum.
+
+655
+02:20:03,400 --> 02:20:16,560
+Dolayısıyla bu dolar olarak gelecek ifade nümerik gibi şartı sağlıyor olması lazım arka planda. Bazen kolaylaştırıcı özellikleri oluyor.
+
+656
+02:20:18,036 --> 02:20:44,556
+veritibilerinin o açıdan önemli diye konuşabiliriz. Bunun yanında bir de domain diye bir yapı var. Domain de aslında user defined şey gibi düşünün, veritibi. Tek farkı şu, yani domainde aslında bazı constraint'ler de ekleyebiliyorsunuz. Mesela not null diyebiliyorsunuz, aralık verebiliyorsunuz. Az önceki user defined dedi type'dan bir farkı yok onun dışında.
+
+657
+02:20:46,015 --> 02:20:56,015
+Kayıt demiyorsunuz mesela dolar gibi. Olsaydı dolar mesela negatif bir değer olamazdı gibi bir şartımız olsaydı bunun için domain oluşturmanız gerekiyordu.
+
+658
+02:20:56,015 --> 02:21:08,015
+Örnek verelim nasıl yapıyoruz? Kayıt domain, Relevel diye bir tane veri tipik oluşturuyorum SQL'de. Bunun değeri 10 birimlik bir barcar olacak.
+
+659
+02:21:08,468 --> 02:21:15,868
+Şöyle bir şart ekliyorum. Diyorum ki bu değer, Bachelor, Master ya da Doctora gibi bir şey olması zorunluluğumuz var.
+
+660
+02:21:15,868 --> 02:21:21,868
+Yani bir constraint ekledik. Mesela, NATNAL da diyebiliriz buna. Bu da bir şey olabilirdi.
+
+661
+02:21:21,868 --> 02:21:29,268
+Yani NATNAL için burada bitmeye de çok gerek yok. Tabloyu oluştururken NATNAL gibi bir şey yapabilirsiniz.
+
+662
+02:21:29,268 --> 02:21:33,668
+Buradaki özellikle çektiğim şeylerde şu oluyor. Ama hani...
+
+663
+02:21:34,420 --> 02:21:42,040
+Çok da gerekli değil. Bazı veritabanları domain olarak implement etmiyor. Ama hepsinde şey vardır, user defined data type vardır.
+
+664
+02:21:46,484 --> 02:21:52,904
+Bunun dışında veri tablosu oluştururken indeks yapıları da oluşturmak gerekir.
+
+665
+02:21:52,943 --> 02:22:00,924
+Çoğu kez oluştururuz çünkü sorguların hızlı gelmesini sağlamak için bu indeks yapılarını indeksle oluşturmak çok avantajlı bir şey.
+
+666
+02:22:01,584 --> 02:22:09,884
+Bunları çok detaylı konuşacağız. İndekslerin türlerini, indeksin amaçlarını, indeksle ilgili sorguların performans farklarını.
+
+667
+02:22:09,884 --> 02:22:12,587
+Bunları daha sonra detaylı inceleyeceğiz ama...
+
+668
+02:22:12,915 --> 02:22:26,376
+Şimdilik sadece, indeks oluşturma nasıl oluşturuluyor? Onu göstermek için bahsediyoruz. Burada bir indeks oluştururken, tablo oluşturur gibi, ama indeks komutunu beklemeniz lazım.
+
+669
+02:22:26,376 --> 02:22:38,815
+Create index, indeksin ismi mesela, IDX, işte employee derseniz, bu indeksin kendi ismi, 10 dediğinizde hangi tablo olacak?
+
+670
+02:22:39,476 --> 02:22:46,476
+Sonrasında da, birçok isimli görmek istihaz. Şurada bir örneği var. Örneğin, bir student tablomuz var.
+
+671
+02:22:51,120 --> 02:23:07,080
+Şeması bu. Bu kolonlarımız var. NM20 karakterden oluşuyor. NAL olamaz. Departman karakterden oluşuyor. Toplam kredi nümerik bir değer ve default değeri 0. Primary key olarak da ID bilirmişiz.
+
+672
+02:23:07,080 --> 02:23:15,420
+Şimdi ID üzerinde çok fazla sorgu yapılıyordur. Haliyle bunun için bir indeks oluşturmamız gerektiğini varsayalım.
+
+673
+02:23:15,891 --> 02:23:26,391
+Aslında primary key olduğu zaman otomatik olarak burada bir klaserindeks oluşturulur. Bu kendinden gerçekleşir ama buradaki örnekte mantıklı bir şekilde oluyor aslında.
+
+674
+02:23:26,391 --> 02:23:34,891
+Daha detaylı konuşacağız dediğim gibi indeks yapsın mantığını. Ama create index, student ID index diyoruz. Student ID üzerinde bir indeks oluşturuyorum.
+
+675
+02:23:40,352 --> 02:23:50,272
+Burada birden çok kolon da olabiliriz. Yani ID artı name artı, ID artı name gibi birden çok kolon üzerinde de indeks oluşturabilirsiniz.
+
+676
+02:23:50,992 --> 02:24:00,432
+Şimdi bir kez indeks oluşturduktan sonra burada ID kolonunu kullanan bir sorgunuz varsa performansı ciddi anlamda hızlanacaktır. Bunu fark edeceksiniz.
+
+677
+02:24:04,244 --> 02:24:07,764
+Buraya kadar sorusu olan var mı?
+
+678
+02:24:10,164 --> 02:24:16,204
+Tamam. Son olarak bir otorizasyon, yani yetkilendirme işleyelim.
+
+679
+02:24:17,012 --> 02:24:29,352
+Yetkilendirme de çok detaylı bir şeydir. Genellikle yetkilendirme görevi veritabanı yöneticilerinin yani database admin ya da DBA dediğimiz görevdeki kişilerin yaptığı bir şeydir.
+
+680
+02:24:29,352 --> 02:24:44,272
+Yani developer genellikle bu işle uğraşmaz. Kod geliştirici, uygulama geliştirici bu hakları kullanır ama kendisi hak vermez. Bu daha çok o veritabanın yöneticilerinin verdiği kararıdır ama ne tür kararlar var onları konuşalım.
+
+681
+02:24:45,012 --> 02:24:52,012
+Bir tablodan veya bir view'dan, bu bütün kurallar aslında veritabandaki bütün kaynaklar için geçerli.
+
+682
+02:24:52,891 --> 02:25:11,792
+Tablo, view, prosedür veya bir trigger, bütün bunların hepsi üzerinde veya şema, pardon, veya bir tablo şeması veya bütün bir tablonun kendisine veya database'in kendisine.
+
+683
+02:25:12,724 --> 02:25:19,824
+kısıtlar veya haklar verilebiliyor. Otorizasyon çok detaylıca uygulanabiliyor.
+
+684
+02:25:21,404 --> 02:25:36,824
+Şimdi bir tabloda ya da bir okuma yetkisi görürsünüz. Okuma yetkisi şu oluyor, sadece SELECT sorguları çalıştırabilir bu kullanıcı ama bu veriyi değiştiremez. Silemez, değiştiremez, değiştiremez.
+
+685
+02:25:40,564 --> 02:25:46,564
+Insert yetkisi var. Bu da yeni bir skole etkilebilir ama var olanı değiştirebilecek hakkı.
+
+686
+02:25:46,564 --> 02:25:58,564
+Ve var olanı değiştirebilir ama silememe hakkı. En son olarak da delete hakkı. Bu da oradan verileri silme hakkı demektir.
+
+687
+02:25:59,860 --> 02:26:17,680
+Bütün bu yetkilere biz privilege diyoruz. Veritabanı isminde de bu privilege kelimesi kullanarak bunlar verilir. Şu olabilir, bir kullanıcıya bütün yetkiler verilebilir, hiçbirisi verilmeyebilir ya da bunların belli bir kombinasyonu veriliyor olabilir.
+
+688
+02:26:22,227 --> 02:26:27,707
+İsterseniz bazı örneklerini konuşmadan önce hangi tür kaynaklar olduğunu bahsedelim.
+
+689
+02:26:27,707 --> 02:26:38,947
+Şimdi, indeks üzerinde otorizasyon verebilirsiniz. İndeksi silme, oluşturma gibi ya da yeniden geliştirme gibi bir yetki olabilir.
+
+690
+02:26:39,587 --> 02:26:47,727
+Kaynaklar dediğimiz tablolar, view'lar, prosedürler, bütün bunların hepsi bir kaynak oluyor.
+
+691
+02:26:48,435 --> 02:26:56,435
+Alteration ya da update de belli bir attribute'ü silme, düzeltme veya ekleme gibi şeyler.
+
+692
+02:26:56,435 --> 02:27:05,435
+Drop da bütün bu tabloyu drop etme yetkisi ya da silme yetkisi gibi.
+
+693
+02:27:05,435 --> 02:27:11,435
+Genel yapısı SQL'de şöyledir, grant iklimesi kullanılır, grant komutu.
+
+694
+02:27:13,727 --> 02:27:24,727
+Hangi yetkiyi vereceksiniz? Burada yetki listesi dediğimiz şey. Delete, SELECT, UPDATE ya da INSERT gibi bir yetki olabilir.
+
+695
+02:27:25,787 --> 02:27:35,147
+10 kelimesini kullanıyorsunuz. 10 kelimesi de şu oluyor. Hangi tablo, hangi kaynak, hangi view, bu yetkiyi hangisini üzerine veriyorsunuz?
+
+696
+02:27:35,636 --> 02:27:40,436
+Bu kelimesi de kullanıcı ismi. Hangi kullanıcıya veya kullanıcılara veriyorsunuz?
+
+697
+02:27:41,056 --> 02:27:44,416
+Şimdi kullanıcı ismini ekleyebilirsiniz burada ya da public diyebilirsiniz.
+
+698
+02:27:45,332 --> 02:27:58,312
+O veritabanına erişimi olan herkese vermek demek. Bu genellikle tercih edilen bir şey değildir. Bu arada onu da söyleyeyim. Bunu yerine genellikle bir kullanıcı ismi ya da rol ismi verirsiniz.
+
+699
+02:27:58,312 --> 02:28:13,312
+Rol ismini de konuşacağız. Roller de kullanıcı bazlı değil de bunları daha yetki bazlı tanımlamak için kullanılan bir yapıdır. Genellikle veritabanlarında birebir spesifik kullanıcılara vermek yerine kullanıcı...
+
+700
+02:28:13,332 --> 02:28:15,872
+gruplarına ya da rollerine göre yetkiler verilir.
+
+701
+02:28:16,391 --> 02:28:20,791
+Kullanıcılara yetki vermek şu durumlarda faydalı olabiliyor.
+
+702
+02:28:21,551 --> 02:28:27,512
+Belki uygulamadan bağlanan kullanıcılar, uygulamadan veritabanına, diyelim ki mobil
+
+703
+02:28:27,512 --> 02:28:30,391
+uygulamadan veritabanına bağlanan bir kullanıcınız vardır.
+
+704
+02:28:31,332 --> 02:28:34,211
+Diyelim ki mobil user diye bir kullanıcınız var.
+
+705
+02:28:34,211 --> 02:28:38,211
+O spesifik uygulamaya verilen hakları...
+
+706
+02:28:38,899 --> 02:28:44,439
+Özel bir şekilde tanımlamak için kullanıcıya vermek mantıklı. Ama onun dışında rollere vermek daha uygun.
+
+707
+02:28:44,540 --> 02:28:52,579
+Yani rollerden kastımız şu, veri analistlerinin bir rolü vardır. Veri tabanı geliştiricilerin bir rolü vardır.
+
+708
+02:28:52,879 --> 02:29:01,319
+Üst yöneticilerin veya developerların başka bir rolü vardır. Ve onların belli tablolara erişim, belli yetkileri olacaktır.
+
+709
+02:29:01,319 --> 02:29:04,619
+Bu amaçla rollere vermek daha mantıklı.
+
+710
+02:29:05,459 --> 02:29:15,459
+Ama spesifik kullanıcılar da vermek mümkün. Örnek verelim, Grant Select On Department, Amit ve Satoche diye bir sorgu ne yapıyor?
+
+711
+02:29:16,840 --> 02:29:25,119
+Okuma yetkisini, SELECT yapma yetkisini, departman tablosunda Amit ve Satoche gibi iki tane kullanıcıya bu hakkı veriyor.
+
+712
+02:29:26,979 --> 02:29:29,879
+Ama şu, bu demek değildir.
+
+713
+02:29:31,731 --> 02:29:39,991
+Şimdi departman bir view olsaydı, departman view'una bu yetki veriyor.
+
+714
+02:29:41,551 --> 02:29:48,171
+Daha doğrusu bu departman view'un altında başka bir model varsa onlara yetki vermiyor. Anlatabiliyor muyum?
+
+715
+02:29:48,979 --> 02:29:59,540
+Eğer bu verdiğimiz yetki ilişkisi bir view ise ve bunun altında başka tablolar varsa bu yetkiyi o tablolara vermiyor. Sadece o view'un kendisine veriyor demektir.
+
+716
+02:30:01,119 --> 02:30:09,479
+Ayrıca şimdi genellikle dediğim gibi bunları bir database administrator bu hakları verir. Bu hakkı veren kişi de şunu yapabilir.
+
+717
+02:30:12,051 --> 02:30:19,451
+Ben mesela SELECT hakkını AMIT'e verdim. AMIT de o hakkı başkasına varsa ilgisi verebilir.
+
+718
+02:30:19,451 --> 02:30:22,451
+Oradan ilgisini başkasına da verebilir.
+
+719
+02:30:22,451 --> 02:30:25,252
+Bu gibi kullanıcıya da verebilir.
+
+720
+02:30:25,252 --> 02:30:37,851
+Yani şöyle gösterelim. Birden çok kullanıcıya verebilir. Genel yapısı GROUP SELECT ON STRUCTURES TO. Bu da birinci kullanıcı, ikinci kullanıcı, üçüncü kullanıcı gibi.
+
+721
+02:30:38,067 --> 02:30:53,747
+Aynısında, INSERT, ON, INSERT, ON, UPDATE, ON ve ALL diyebilirsiniz. Burada GRANT ALL ON, INSERT, UPDATE, DELETE, hepsine vermesine emek olacak.
+
+722
+02:30:59,316 --> 02:31:13,995
+Bir de kullanıcıdan bu yetkileri almak da mümkün. Mesela şimdi, Tatoşi diye bir kullanıcıya bu yetkiyi verdik ama sonrasında bu kişinin onu artık, gerçekten ayrıldı bu kişi.
+
+723
+02:31:14,932 --> 02:31:29,452
+X şirketinde çalışıyordu, veritabanla erişimi vardı, sonra şirketi terk etti. Artık o kişinin, o kullanıcının o veritabanına, tabloya veya view'a erişimi olmaması lazım. Bunun da kaldırılması için revoke komutu kullanıyoruz.
+
+724
+02:31:30,832 --> 02:31:31,772
+Revoke diyoruz.
+
+725
+02:31:32,147 --> 02:31:42,547
+Hangi yetkiyi kaldıracağız? SELECT yetkisini kaldıracağız. Hangi tabloda veya kaynakta? Student. Kimden alacağız bir yetkiyi? From diyoruz. To değil, from diyoruz.
+
+726
+02:31:42,987 --> 02:31:53,467
+İşte, kullanıcı bir, kullanıcı iki, kullanıcı üç, public. O yüzden, Vivoq'la Grant'ın da böyle bir farkı var.
+
+727
+02:31:54,291 --> 02:32:05,891
+Az önce belirttiğim gibi bu yetkileri alma ve verme yetkisine daha çok kullanıcı değil de rol bazlı ya da yetki seviyesi bazlı yapmak lazım.
+
+728
+02:32:06,051 --> 02:32:14,412
+Yani işte burada rolünüz instructorlar bir roldür, öğrenciler, studentlar bir roldür, adminler bir roldür.
+
+729
+02:32:14,891 --> 02:32:16,912
+Her birisinin farklı yetkisi olması lazım.
+
+730
+02:32:21,072 --> 02:32:26,831
+şeyleri değiştirebilirken, derslerin içeriğini değiştirebilirken, öğrenciler değiştirememesi gerekiyor.
+
+731
+02:32:26,952 --> 02:32:31,592
+Yani öğrencinin SELECT hakkı olacak, hocanın UPDATE ve INSURT hakkı olacak gibi.
+
+732
+02:32:32,211 --> 02:32:34,252
+Ayrıca SELECT hakkı olacak gibi düşünebilirsiniz.
+
+733
+02:32:35,612 --> 02:32:38,671
+Bunun için de öncelikle bir ROL tanımlamanız gerekiyor.
+
+734
+02:32:39,112 --> 02:32:43,731
+ROL'ün de yaratılmanız şöyle, KAYIT ROL diyorsunuz.
+
+735
+02:32:43,731 --> 02:32:47,432
+Kelime olarak, tamamen olarak, unutarak, KAYIT ROL.
+
+736
+02:32:47,860 --> 02:33:00,420
+ROL'ün ismi, ROL'ün ismi, ROL'ün ismi herhangi bir şey olabilir. Sonrasında da ne yapıyorsunuz? Brand, ROL, TO diyorsunuz. Bu kullanıcılara o ROL'ü atıyorsunuz.
+
+737
+02:33:01,860 --> 02:33:12,659
+Yani, işlem sırası şöyle gerçekleşiyor. Önce ROL'ü oluşturuyorsunuz. Sonra o ROL'ü KULLANIcılara atıyorsunuz. Sonrasında da
+
+738
+02:33:13,172 --> 02:33:17,012
+O role belli yetkileri veriyorsunuz.
+
+739
+02:33:18,252 --> 02:33:21,332
+İşte SELECT, UPDATE, INSERT gibi yetkiler veriyorsunuz.
+
+740
+02:33:22,032 --> 02:33:28,272
+Daha sonra o rolü içeren bütün kullanıcılara otomatik olarak bütün bu yetkiler atanır.
+
+741
+02:33:29,072 --> 02:33:34,551
+Yani siz teker teker kullanıcılar değil de o role sahip bütün kullanıcılara atamış oluyoruz.
+
+742
+02:33:36,884 --> 02:33:50,804
+Örnek verelim. İşte bizim rolümüz Instructor. Instructor diye bir rol oluşturduk. Grant Instructor to Amit diyorum. Yani Amit kullanıcısını Instructor olarak Instructor'a atıyorum.
+
+743
+02:33:51,684 --> 02:33:57,404
+Sonrasında diyorum ki bu Instructor'ların X tablosunda SELECT takmaması lazım.
+
+744
+02:33:59,083 --> 02:34:03,504
+Bu tuşu Grant, Side on, X to Instructor. Instructor bizim rolümüz.
+
+745
+02:34:04,147 --> 02:34:29,707
+TEXT tablonun ismi ve yetkimi SELECT. Başka bir yetki daha oluşturabilirsiniz. Diyelim ki, Create Roll, Teaching Assistant. Yani rol oluşturdum. Bu Teaching Assistant'ı da Instructor atadım. Rolü de başka bir rolü atabilirsiniz bu arada. Bunun yetkilerini inek edecek. Instructor ne yapıyor? Teaching Assistant'ı.
+
+746
+02:34:30,260 --> 02:34:49,260
+ilgilerini istirakta da atıyoruz. Aslında zincir şekilde ilgiler atanabilir. Şöyle örnek verelim. Dekan diye bir rol verdik. Dekan aynı zamanda istirakta olduğu için istirakta da sahip olması lazım.
+
+747
+02:34:49,652 --> 02:34:55,652
+Ne yapıyoruz? Istraktur'daki yetkileri, role'daki yetkileri, grant, din diyoruz.
+
+748
+02:34:55,832 --> 02:34:59,492
+Ama dekan aynı zamanda istrakturun yetkilerine sahip oluyor.
+
+749
+02:34:59,992 --> 02:35:04,551
+Sonrasında Satoshi ile din olarak atıyoruz.
+
+750
+02:35:05,471 --> 02:35:11,211
+Satoshi kullanıcısı din olarak atanınca istrakturun haklarına sahip olmuş oluyor.
+
+751
+02:35:15,443 --> 02:35:31,383
+[öğrenci]'in sorusuna bakalım. Rolleri uygulama kullanıcılardan ziyade DB adminlerinin kendi arasında düzenlemesi gerekmez mi? Evet, yani kullanıcılar yapmıyor zaten bunu. Veritabanı yöneticileri bunu yapıyor.
+
+752
+02:35:39,667 --> 02:36:02,987
+Son kullanıcı müşterileriniz değil. Veritabanı kullanıcısı şu oluyor, sizin veritabanına erişen uygulamalarınız ya da o şirkette çalışan gerçek kişiler olabilir. Diyelim ki bu gerçek işler siz developers'ınız, bağ şirketinde çalışıyorsunuz. Sizin o tablolara erişim hakkınız varsa sizin o tablo için bir kullanıcısınız.
+
+753
+02:36:04,051 --> 02:36:13,092
+Bu yetkiyi size kim veriyor? O veritabanını oluşturan veritabanı yöneticileri veriyor. Siz onlara talepte bulunuyorsunuz, onlar size bu yetkileri veriyor.
+
+754
+02:36:14,164 --> 02:36:37,344
+Ve haliyle burada size bir rol atıyorlar ya da kullanıcı bazı da bazı şeyler yapılabilir. Kullanıcıların kendileri belli bir role adaptörlülür. Mesela diyelim ki o veritabanında bir de developer diye bir rol vardır. Ahmet diye kullanıcı, yani developer işe girdi. Ahmet'i o role atıyor. Dolayısıyla o rol içindeki bütün hepsi etkiliyor.
+
+755
+02:36:41,075 --> 02:36:51,536
+Rolleri ve rollerin sahiplerini şeyden görebilirsiniz. Veritabanın yönetim sisteminde bunlar gösterilir. Tablo üzerinde gösterilmez.
+
+756
+02:36:52,575 --> 02:36:58,975
+Şimdi SQL Server'ı açarsam gösteririm. Zamanınız sanırım yetmeyecek ama yeterse gösteririm.
+
+757
+02:36:59,379 --> 02:37:10,680
+Bunları ayrı bir sistem tarafında, veritabanın sistem tarafında yönetim kısmında ayrı bir şeyde görebiliyorsunuz.
+
+758
+02:37:11,479 --> 02:37:18,959
+Hangi tabloda etkileri var, hangi delete, select gibi etkiler var, bunları ayrı olarak görebiliyorsunuz.
+
+759
+02:37:19,319 --> 02:37:21,859
+Ama her veritabanın sisteminde bir şeyde görebiliyorsunuz.
+
+760
+02:37:22,219 --> 02:37:25,539
+Bu yapabilirsiniz yani. Sorgularla bunu yapabilirsiniz.
+
+761
+02:37:27,059 --> 02:37:50,180
+Teşekkürler. Şimdi view'lar üzerinde de aynı şey geçerli. Yani view'a aslında bir tablodan bir fark yok o anlamda. Mesela burada işte diyelim ki jeoloji departmanı için bir view oluşturdunuz. Burada da mantık aynı mantık. Bu view'a SELECT, ikisi veriyorsunuz, bu kullanıcılar için.
+
+762
+02:37:53,843 --> 02:38:12,003
+Kullanıcıların, Instructor tablosuna yetkisi yoksa ne olacak? Bu kullanıcıların, siz View'a etkisini veriyorsunuz. Yani View'un kendisi bunu görebiliyorsa, yeterli. Aynı zamanda Instructor'a bir yetki vermek zorunda değilsiniz.
+
+763
+02:38:18,992 --> 02:38:29,572
+O açıdan şöyle, ama bu view'u oluşturan kişinin, şunu söyleyeyim ona, kullanıcıyla view'u oluşturan kişinin bir farkı var.
+
+764
+02:38:29,992 --> 02:38:35,851
+Şimdi bunu oluşturan kişi, kendisinin instrahlifle yetkisi yoksa bu view'u oluşturamaz.
+
+765
+02:38:36,851 --> 02:38:41,891
+Ama bu view'u oluşturan, database etmede kendisinin yetkisi var.
+
+766
+02:38:42,708 --> 02:39:08,208
+Sizin başka kullanıcıyı, bu view'a yetki veriyor. View'a yetki verilen kişi, yani Ahmet kullanıcı olarak yeniden bu şeye dahil edildi. Ahmet'in kendisinin veri tabanına yetkisi varsa, extract ve tablosuna da yetkisi olması gerekmiyor. Ama Ahmet'i atayan kişi, bu view'u oluşturan kişinin aynı zamanda extract ve yetkisi olması lazım.
+
+767
+02:39:10,388 --> 02:39:12,568
+Bilmiyorum burası açık oldu mu.
+
+768
+02:39:16,979 --> 02:39:21,700
+Böyle bir yapan kişiyle şey yapalım.
+
+769
+02:39:22,079 --> 02:39:27,540
+Onun dışında şimdi bu References diye bir yetki de var.
+
+770
+02:39:28,040 --> 02:39:31,659
+Şimdi siz yetkileri de bilirsiniz.
+
+771
+02:39:31,659 --> 02:39:32,399
+Yani şöyle.
+
+772
+02:39:34,515 --> 02:39:49,595
+Yetkilerine transfer edebilirsiniz. Ben Ahmet'i yetki verdim. Ahmet de başkasına yetki verebiliyorsa, o zaman şöyle, grant option diyoruz. Yani şunu yapıyorum, grant select bunu unuttu Amit.
+
+773
+02:39:49,716 --> 02:39:58,675
+With grant option dediğim zaman şu oluyor, Amit'e grant yetki. Bu demek, Amit kendisi de başkasına grant yapabilir demek.
+
+774
+02:40:00,000 --> 02:40:09,600
+Revoke ettiğiniz zaman, cascade yaptığınız zaman, şimdi Amit'in yetki verdiklerinin de SELECT ilgisi silinir.
+
+775
+02:40:10,600 --> 02:40:18,200
+Restrict dediğiniz zaman sadece Amit'in kendisi o yetkilerden mağruf edilir ama onun verdiklerinde yetkiler silinmez.
+
+776
+02:40:18,200 --> 02:40:20,200
+İyi düşünebilirsiniz.
+
+777
+02:40:21,799 --> 02:40:25,708
+Veritabanı açıldı, isterseniz SQL'deki örneğini göstereyim.
+
+778
+02:40:28,500 --> 02:40:42,619
+Şimdi bir veritabanı yapısını açınca, mesela SQL Server da böyle gösteriyor. Bu benim tablom. Tablom, veritabanım. Burada tablolar var.
+
+779
+02:40:44,220 --> 02:40:51,739
+Nereden çok tablo alabilir? Bak, bak tablolar. Burada mesela security var. Bu veritabanına...
+
+780
+02:40:51,891 --> 02:41:04,891
+Erişen kullanıcılar. Mesela DBO diye bir kullanıcı varmış. Information Schema, Guest diye kullanıcılar var. Ve roller var. Burada database roller var. Farklı farklı.
+
+781
+02:41:04,891 --> 02:41:16,891
+DBAccessAdmin rolleri var. Data Writer, Data Reader rolleri var. Mesela şu Guest'e Data Reader rolünü atabilirim. Dolayısıyla bu Data Reader'in bütün rolleri, yetkileri...
+
+782
+02:41:17,459 --> 02:41:20,860
+Aynı zamanda, GEST'e aktif buluş olacak gibi düşünüyorum.
+
+783
+02:41:21,860 --> 02:41:32,860
+İşinle ilgili roller da atabilirsiniz. Ama dediğim gibi, ver tabanında ayrı bir kısımda, sistem tarafında, security tarafında bunlar gösterilir.
+
+784
+02:41:35,603 --> 02:41:49,903
+Ayrıca bütün veri tabanı sistemleri için, yani bu sadece bu tablo database için değil de ben bütün instance için bunları uygulayabilirim. Bu instance seviyesinde de burada server rollerı da verilebilir.
+
+785
+02:41:50,843 --> 02:42:01,963
+Daha farklı loginler olabilir servera. Yani bir server seviyesinde verebilirim bu yetkileri, rollerı. Bir de database seviyesinde veririm. Genellikle database seviyesinde verilir.
+
+786
+02:42:02,868 --> 02:42:11,788
+SORO'daki bütün database'lere erişim hakkı vermek istiyorsanız. Genellikle sistem yöneticileri sadece bunlara sahip olacak. Rica ederim.
+
+787
+02:42:12,288 --> 02:42:20,488
+Ama dediğim gibi bunlar SQL'deki gösterimiyle Oracle'ın gösterimi farklı. Oracle'da kullandığınız arayüze göre değişiklik gösterir. Ama genel mantık budur.
+
+788
+02:42:22,448 --> 02:42:25,508
+Bugünlük benim söyleyeceklerim bu kadar arkadaşlar. Var mı sorusu olan?
+
+789
+02:42:29,203 --> 02:42:32,484
+Sorumuz yoksa o zaman hafta görüşmek üzere arkadaşlar.
+
+790
+02:42:33,804 --> 02:42:36,203
+Bildiğiniz gibi iki hafta sonra midterm'imiz var.
+
+791
+02:42:37,184 --> 02:42:39,083
+Midterm takvim ise duyurulacak.
+
+792
+02:42:40,504 --> 02:42:45,344
+Yani 22 sınavımız oluyor bildiğiniz gibi.
+
+793
+02:42:46,863 --> 02:42:52,164
+Muhtemelen biz iki hafta sonra 25'inde midterm sınavımız olacak.
+
+794
+02:42:54,451 --> 02:42:59,851
+şeyleri paylaşacağım. Siz 25'i gibi düşünebilirsiniz. 2 hafta sonra videomuzda var.
+
+795
+02:43:01,851 --> 02:43:03,671
+Ve iyi akşamlar. Hoşçakalın.
+
+796
+02:43:04,031 --> 02:43:05,551
+İyi akşamlar hocam. Teşekkürler.
+
+797
+02:43:05,592 --> 02:43:06,191
+Teşekkürler.
+
+798
+02:43:07,111 --> 02:43:08,051
+İyi akşamlar hocam.
