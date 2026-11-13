@@ -1,0 +1,1719 @@
+1
+00:04:18,163 --> 00:04:22,524
+Evet, merhaba arkadaşlar. Sesim geliyor mu? Öncelikle onu bir sorayım.
+
+2
+00:04:24,524 --> 00:04:25,483
+Geliyor hocam.
+
+3
+00:04:25,843 --> 00:04:36,723
+Tamam, süper. Biraz farklı bir bilgisayardan bağlıyorum. Ubuntu var. O yüzden ben kendi sesimin gelmesinde bir sıkıntı olmuş olabilirse diye sormuş oldum. Tamam, süper.
+
+4
+00:04:37,463 --> 00:04:44,683
+Şimdi chat'e bazı arkadaşlar şey yazmış, modeliyle ilgili soru sorabilir miyiz yazmış. Buyurun, sizleri dinliyorum.
+
+5
+00:04:47,220 --> 00:04:58,080
+Hocam, öncelikle ben şey soracaktım da, ödevi tam olarak nasıl yapacağımızı anlamadım da şey soracaktım, DOSBox'u kullanmamıza gerek var mı teknik olarak yoksa yalnızca Instruction Set'i kullanarak bitirebilir miyiz ödevi?
+
+6
+00:04:58,320 --> 00:05:00,700
+Sadece Instruction Set'i kullanarak bitirebilirsiniz.
+
+7
+00:05:02,259 --> 00:05:13,219
+Tamamdır. Bir de şey soracaktım, şimdi hani şey bekliyorsunuz değil mi? Bu kodu makine kodundan alıp instruction set ile gerçek koda, SMD koduna çevirip ondan sonra onu yorumlamamızı istiyorsunuz değil mi teknik olarak?
+
+8
+00:05:13,240 --> 00:05:18,560
+Tabii. Akış diagramını çiziyorsun, üst seviye kavramları kodan. Yani akış diagramında push yazma, onu demek istiyoruz.
+
+9
+00:05:19,920 --> 00:05:21,000
+Ne demek istediğinizi anlamadım.
+
+10
+00:05:21,360 --> 00:05:35,160
+Yani akış diagramında push yazma. Mesela orada bir komut vardır push diye, pop diye. Ama yüksek seviye tarafta, üst seviye kavramlarla bunu açıklarken bunları kullanmazsın akış diagramında yani. Onları anlatmaya çalışıyoruz. Orada yapılan bir lojik var.
+
+11
+00:05:35,636 --> 00:05:44,696
+bir iş gerçekleştiriliyor, o işi gerçekleştir temelde. Yoksa alt seviyede kullandığın PUSH'lar, POP'lar bunları akış diagramında çizmene gerek yok.
+
+12
+00:05:45,176 --> 00:05:50,336
+Yani gidip COM tipi programın nasıl çalıştığını anlatmayalım, yalnızca algoritmasını anlatalım.
+
+13
+00:05:50,496 --> 00:05:55,576
+Anlatın tabii ki. Birisi akış diagramını çizmek ya, bir akışını çizin diyor, orada kastediyorum.
+
+14
+00:05:56,660 --> 00:05:57,280
+Anladım.
+
+15
+00:05:57,560 --> 00:06:14,759
+Yani ne yaptığını orada söylemeniz lazım tabii ki programın. Bunu zaten anlayabilmiş olmanız lazım ki, stack full dolu olduğunda, siteyin ne kadar dolu olduğunu, işte değişkenlerin değerleri nelerdir bunları falan analiz edebilin yani.
+
+16
+00:06:18,228 --> 00:06:23,947
+Anladım hocam. Hem bir sorum daha var da, dersle alakalı değil. Başka arkadaşlarının sorusu varsa onlar sorsunlar.
+
+17
+00:06:25,088 --> 00:06:27,247
+Tamam, başka sorusu olan arkadaşımız var mı?
+
+18
+00:06:28,067 --> 00:06:29,348
+Hocam, ben de bir şey sorabilir miyim?
+
+19
+00:06:29,788 --> 00:06:30,168
+Buyurun.
+
+20
+00:06:31,067 --> 00:06:39,307
+Şimdi hocam, ben HEX kodunu komple SM'li koduna çevirdim. Birebir dump ettiğim zaman, display ettiğim zaman aynı görseli alıyorum.
+
+21
+00:06:40,108 --> 00:06:40,367
+Tamam.
+
+22
+00:06:40,884 --> 00:06:49,283
+Ama benim iki word'lık bir kodu display ettiğim zaman loop 9 diye bir şey çıkıyor.
+
+23
+00:06:50,884 --> 00:06:58,884
+Şimdi yani burada ödevi şöyle yaptım bakın kodların satırları tamamen böyle diye diğer arkadaşlara da tabii ne çıktığını söylemenin bir mantığı yok.
+
+24
+00:06:58,884 --> 00:07:07,283
+Öncelikle onu söyleyeyim. Loop 9 çıkıyorsa loop 9'dur yani. Oradaki 9 ne? Biz ne yaptık şimdiye kadar hatırlarsan?
+
+25
+00:07:07,519 --> 00:07:16,339
+bir loop'un sonunda hep gelen şey label'du. Loop'un sonrasında gelen şey label. Label ne demek? Programın offset adresi.
+
+26
+00:07:17,419 --> 00:07:25,919
+Evet hocam. Ama ben direkt komple şey yaptığım zaman label olarak da çıkmıyor. Sadece direkt 9 bir decimal değer olarak çıkıyor.
+
+27
+00:07:27,379 --> 00:07:29,839
+Acaba başka arkadaşlar da mı öyle yaptı bilmiyorum ama.
+
+28
+00:07:30,579 --> 00:07:32,740
+Ben de onu diyorum sana. Loop 9 ne demek?
+
+29
+00:07:33,331 --> 00:07:38,632
+Yanına label yazıyoruz demedim mi? İşte 9 label. Yani label'un offset adresi.
+
+30
+00:07:39,752 --> 00:07:42,851
+Label denilen şey bir satırı biz etiketliyoruz.
+
+31
+00:07:44,552 --> 00:07:46,672
+Anladım hocam. Bir tekrar bakayım o zaman.
+
+32
+00:07:46,831 --> 00:07:50,372
+Tamam, tekrar bir bak sen. Yani label denilen şey satıra etiketliyoruz.
+
+33
+00:07:50,771 --> 00:07:53,912
+Ha satır numarasını yazmışsın oraya, ha label ismi yazmışsın.
+
+34
+00:07:54,971 --> 00:07:58,591
+O labelların isimleri falan hepsi zaten object kutu oluşmadan kaybolup gider.
+
+35
+00:07:59,028 --> 00:08:01,487
+Labela ulaşamazsın, object code aracı değil yani.
+
+36
+00:08:04,487 --> 00:08:05,987
+Evet, başka sorusu olan var mı?
+
+37
+00:08:09,187 --> 00:08:10,508
+Ben başka bir ders deyip.
+
+38
+00:08:11,067 --> 00:08:16,187
+Ben chat yazmıştım ama, üçüncü şıkta değişkenlerin ne olduğunu soruyor, tanınman değişkenlerin.
+
+39
+00:08:16,288 --> 00:08:18,388
+Onları nasıl anlayacağız, code segmentten?
+
+40
+00:08:19,028 --> 00:08:19,947
+Değişkenlerin ne olduğunu.
+
+41
+00:08:20,348 --> 00:08:23,327
+Bir yerde, neyse bu şeye girecek, kodun kendisine girecek ama.
+
+42
+00:08:41,491 --> 00:08:42,511
+Tamam [öğrenci], teşekkür ederim.
+
+43
+00:08:43,731 --> 00:08:44,511
+Ben teşekkür ederim.
+
+44
+00:08:46,871 --> 00:08:48,551
+Ben başka dersle ilgili sorumu sorabilir miyim?
+
+45
+00:08:48,911 --> 00:08:50,731
+Başka dersle ilgili soru soracaksın.
+
+46
+00:08:50,831 --> 00:09:05,511
+Evet. Evet, şey ben ÇAP öğrencisiyim ki sizden veri iletişimi alıyorum da, biz, ben Ziya hocadan alıyorum, bizim sınıfta çok fazla kişi yok diye, yalnızca üç tane dersin sunumu yapılmıştı da, finalde ortak mı olacak yine? Hani olacaksa çünkü ben de düşük olayım.
+
+47
+00:09:06,031 --> 00:09:06,651
+Final ortak mı?
+
+48
+00:09:07,031 --> 00:09:07,271
+Evet.
+
+49
+00:09:07,923 --> 00:09:12,163
+Yani ben öbür konuları da aslında öğrenmeliyim. Bizim bize sunum yapılmayan konuları da.
+
+50
+00:09:12,384 --> 00:09:17,723
+Evet. Yani bunu tabii, bunun sorusunu temelde Cihan Hoca'ya sorman lazım.
+
+51
+00:09:18,163 --> 00:09:25,364
+Sorduğumda işte şey demişti, ortak olacağını bilmiyordu sanırım kendisi de hani yalnızca burada anlatılanlardan sorumlusunuz dedi ama hani biz üç sorum yaptık.
+
+52
+00:09:25,543 --> 00:09:34,923
+Cihan Hoca ne diyorsa o. Ben sizin adınıza herhangi bir şey söyleyemem. Cihan Hoca'ya tekrardan mailim atacaksın. Nasıl yapacaksınız bilmiyorum. Cihan Hoca ne diyorsa o.
+
+53
+00:09:35,316 --> 00:09:36,155
+Tamamdır hocam.
+
+54
+00:09:36,375 --> 00:09:36,576
+Tamam.
+
+55
+00:09:37,776 --> 00:09:42,516
+Evet, başka soru soran arkadaşımız yoksa, delerseniz bugünlük derse başlayabiliriz.
+
+56
+00:09:46,355 --> 00:09:52,655
+Tamam, yok. Uzanınca, buradan onu çıkartıyorum. Ben şöyle ekran paylaşımı yaparak başlayayım.
+
+57
+00:09:53,556 --> 00:10:05,056
+Şimdi kıymetli arkadaşlar, bu hafta yüksek seviyeli dillerle assembly dilinin kullanımından bahsediyor olacağız.
+
+58
+00:10:06,056 --> 00:10:09,836
+Yüksek seviyeli dillerden kastımız C...
+
+59
+00:10:10,067 --> 00:10:16,307
+Pascal, Java, Python gibi diller. Bu dillerle beraber assembly dilini birlikte kullanabiliyoruz.
+
+60
+00:10:17,087 --> 00:10:25,887
+Ve bugün kitapta hem Pascal hem C'nin ile beraber assembly'yi nasıl kullanıyoruz? Bunun örneklerine yer verilmiş durumda.
+
+61
+00:10:26,947 --> 00:10:31,528
+Kapsamlı olduğu için konu ben sadece C üzerinde örnek anlatacağım.
+
+62
+00:10:32,567 --> 00:10:37,607
+Bir Ubuntu tarafında, Linux tarafında kullandığımız bir assembler var.
+
+63
+00:10:38,000 --> 00:10:52,079
+NetWideAssembler. Onu kullanarak C'den bir assembly diye oradan mı çağırıyor olacağım? Hem de onun sintaksını görün. Yani sadece bu işler Windows'da mı oluyor? Bunu görmüş olun istiyorum.
+
+64
+00:10:52,319 --> 00:11:03,019
+Microsoft tarafında MASS kullanıyorduk, Microsoft Assembler kullanıyorduk. Burada ise NetWideAssembler var. Bunun üzerinden denemeler yapıyor olacağız.
+
+65
+00:11:03,572 --> 00:11:30,632
+Temelde yapacağım işlem şu, basit bir programın, basit bir programın akışını C'de yazıyor olacağım. Ardından C'de yazdığım bu akışı ben akışın içerisinde bir fonksiyon çağıracağım. Sanki C fonksiyonuymuş gibi tanımladığım bir fonksiyon çağıracağım. Ve bu fonksiyon assembly yordama olmuş olacak. Temelde bunu gerçekleştirmeye çalışıyorum.
+
+66
+00:11:31,028 --> 00:11:48,228
+Dilerseniz, tabi öncelikle bir terminal açtım, bir gedit de C kısmını yazarak başlayalım isterseniz. Burası neresi bakalım, bir klasör oluşturalım şöyle, Mektir ASP 2020.
+
+67
+00:11:48,768 --> 00:12:10,288
+1 ve 1, 2021 olmuş olsun. CD, ASP, 2021. Bu klasörün içerisinde yapayım ben. Bir doküman oluşturalım. C koduyla başlayacağım için örnek nokta C olmuş olsun. Yapacağım işlem şu, kullanıcıdan bir N değeri okuyacağım.
+
+68
+00:12:11,059 --> 00:12:18,719
+okuduğum bu n değerine göre birden n'e kadar olan sayıları bir dizinin içerisine yerleştireceğim.
+
+69
+00:12:19,979 --> 00:12:27,119
+Ve ardından bu dizinin adresini ve eleman sayısını Assembly Yordamına göndereceğim.
+
+70
+00:12:27,379 --> 00:12:32,259
+Assembly Yordamının da bu dizinin tüm elemanlarını toplayıp bana sonucu döndürmesini bekleyeceğim.
+
+71
+00:12:32,884 --> 00:12:39,463
+Başlayalım. C'yi tabii herkesin C bildiği varsayılarak bu işlemler gerçekleştiriliyor.
+
+72
+00:12:40,983 --> 00:12:43,403
+Önce çatısını şöyle bir yazalım.
+
+73
+00:12:45,104 --> 00:12:48,384
+Return 0 ile beraber noktalandırıyorum.
+
+74
+00:12:48,884 --> 00:12:50,983
+Şimdi ilk bahsettiğimiz şey neydi?
+
+75
+00:12:51,104 --> 00:12:54,303
+Kullanıcıdan bir n değeri okuyalım.
+
+76
+00:12:54,303 --> 00:12:55,403
+Int n.
+
+77
+00:12:56,124 --> 00:12:59,304
+Ardından scanf, %d.
+
+78
+00:13:00,083 --> 00:13:06,083
+ampersan, n. Kullanıcıdan n'in ne olduğunu okudum. Bir dizim var, int.
+
+79
+00:13:06,515 --> 00:13:15,075
+dizi n boyutunda bir dizim var. Tabi bir de bu dizinin elemanlarını teker teker oluşturacağım için i değişkeni kullanacağım.
+
+80
+00:13:15,575 --> 00:13:30,495
+for i eşittir 0, i küçüktür n, i artı artı diyerek dizinin elemanlarını dediğim gibi birden başlayarak n'e kadar giden değerlerden oluşturuyorum.
+
+81
+00:13:30,495 --> 00:13:34,515
+n'i 10 girdi ise dizinin ilk elemanı 0 artı 1, 1.
+
+82
+00:13:34,515 --> 00:13:47,515
+1, yani dizinin 0. elemanı 1, dizinin n-1. elemanı ise, yani 9. elemanı ise 10 olacak. Birden 10'a kadar olan sayıları dizinin içerisine böylece yerleştirmiş oldum. Ardından...
+
+83
+00:13:48,275 --> 00:14:06,275
+Topla diye bir fonksiyon veya yordam çağırıyor olacağım. Dizinin adresini, dizinin ismini yazarak C'de verebiliyordum. Bir de dizinin eleman sayısını yazıyor olacağım. Dönen sunucu bir integer değişkenin içerisine.
+
+84
+00:14:06,707 --> 00:14:18,607
+koymak istiyorum. Toplam diye bir değişkenin içerisine koydum. Ardından bunu da printf ile ekrana yazdırıyorum. Toplam 2 nokta üst üste %D.
+
+85
+00:14:24,052 --> 00:14:33,052
+top şeklinde basit bir C komut. Tabii ki bunun prototipini yukarıya çıkıp yazmamız gerekiyor olacak.
+
+86
+00:14:34,004 --> 00:15:01,484
+şuradan bir kopyalayayım, diğer şey yazsam da olur. Geriye herhangi bir değer dön, şey, geriye integer bir değer döndürdüğü için integer yazıyorum. Topla bir integer pointer alıyor, bir tane de integer alıyor. Şurada gördüğünüz şey dizinin adresi olduğu için integer pointer'dır. Bir tane de integer değer almış oluyor. Fakat aradığımız bu değeri include ettiğimiz herhangi bir kütüphanenin içerisinde ve
+
+87
+00:15:02,004 --> 00:15:20,624
+Burada kodun devamında göremediğimiz için bunun bir extern, burada E'yi de yazıyoruz, extern fonksiyon olduğunu söylüyoruz. Temelde topla bir C fonksiyonu gibi de yazılabilir. Biz bunu assembly yordamı olarak yazıyor olacağız.
+
+88
+00:15:20,624 --> 00:15:24,324
+O assembly yordamı olarak yazıyor olacağız.
+
+89
+00:15:25,716 --> 00:15:40,675
+Şuraya baktığımızda Örnek.si oluşmuş oldu. Bir de bu yordamı oluşturacağımız şeyi yazıyor olalım. İşte o da Örnek.asm olmuş olsun.
+
+90
+00:15:40,675 --> 00:15:50,775
+Şimdi hatırlarsanız bizim temelde 3 farklı segmentten programlarımız oluşuyordu. Kod segment.
+
+91
+00:15:51,443 --> 00:16:12,803
+data segment ve stack segment. Burada Microsoft tarafında biz bunlara segment diyorduk. Netwide Assembler tarafında ise section deniliyor. O yüzden sintaksları biraz farklı. Bakın segment tanımı şu şekilde yapılıyor. Section.data. Bu bizim segment tanımımız.
+
+92
+00:16:12,980 --> 00:16:38,220
+öyle söyleyelim. Yani burada datanın altına işte define word, define byte'larla nasıl değişken tanımı yapıyorsak buraya da değişken tanımı yapabiliyoruz. Sadece bilmeniz için yazdım. Burada ekstradan bir değişken tanımlamıyla işimiz yok. Çünkü harici yordam olarak kullanılacak bir şey bu. Section, bakın, text.
+
+93
+00:16:38,868 --> 00:16:50,568
+kod segmente text segment diyoruz. Burada bu şekilde tanımlamışlar. Text segment, textin içerisinde kodumuzu yazıyor olacağız. Bir tane hop.
+
+94
+00:16:52,052 --> 00:17:06,192
+hepsini sildim. Bir tane topla diye bir fonksiyonumuz olacak. Bu bizim Assembledeki prosedürlerimizi tanımlarken prosedürün ismi boşluk bırakıp proc, far veya near diyorduk.
+
+95
+00:17:06,532 --> 00:17:16,152
+Burada ise yaptığımız tek şey o prosedürün isminden sonra iki nokta koymak ve prosedürün ana bloğuna başlıyor olmak.
+
+96
+00:17:20,051 --> 00:17:35,811
+bunun öncesinde bir tane daha tanımlamadan yararlanmamız gerekiyor. O da kullandığımız bu yordamın global olarak kullanılmasının sağlanması. Nasıl ki C kodunun içerisinde extern yazdık.
+
+97
+00:17:36,211 --> 00:17:56,231
+Biz normalde de assembly programı yazarken, mesela exit tipi, com tipi olsun, ana yordamın olduğu yerde extern yazıp, harici yordamın olduğu yerde public yazıyorduk. Burada o public anahtar sözcüğü yerine global anahtar sözcüğü kullanılmış oluyor. Ben ana kodumu da bunun içerisine yerleştirmiş olacağım.
+
+98
+00:17:56,788 --> 00:18:06,208
+Şimdi şöyle düşünelim, şöyle düşünelim. C kodunu da tabii şurada aslında açsam çok çok daha güzel bir şekilde anlaşılır.
+
+99
+00:18:07,988 --> 00:18:29,188
+Şimdi C kodunda arkadaşlar bu kısım önemli. İki tane parametreyi bu yordama gönderiyorum. Parametreler nasıl gönderiliyor? Parametreler siteyin içerisine atılıyor. Hatırlarsanız bir hafta ben yordamlar arasında parametre aktarma yöntemlerini anlatırken stack üzerinden nasıl parametre aktarırım bunu anlatmıştım.
+
+100
+00:18:35,988 --> 00:18:37,867
+aktarılacak. Ben bunu yazdığım anda
+
+101
+00:18:38,304 --> 00:19:05,864
+sağdan sola doğru, bakın sağdan sola doğru, bu siteyin içerisine yerleştiriliyor. Tamam? Siteyin içerisine sağdan sola doğru yerleştiriliyor. Bu kısım önemli bir kısım. Ardından topla fonksiyonu çağırlıyor. Pekala, topla fonksiyonun içerisinden ben sonucu nasıl yeri döndüreceğim? İşte en son oluşan sonucu da ne yapacağız arkadaşlar?
+
+102
+00:19:06,304 --> 00:19:14,884
+AX register üzerinden geri döndürüyor olacağız. En son oluşan sonucu da AX register üzerinden geri döndürüyor olacağız.
+
+103
+00:19:15,284 --> 00:19:25,124
+Şimdi, harici olarak, şu aşağıya yazıyorum, siteyin durumunu. Bugün Ubuntu bilgisayardan bağlandığım için çizim yapabilme imkanım yok.
+
+104
+00:19:25,124 --> 00:19:33,364
+Siteyin içerisine ilk atılacak şey dizinin adresi. Ardından M değeri siteyin içerisine atılıyor olacak. Bakın.
+
+105
+00:19:33,715 --> 00:19:58,355
+şurada. Ve bu topla yordamına dallanırken near yordam gibi dallanıyoruz. Tamam mı? Near yordam gibi dallanıyoruz. Near yordamlara dallanırken bir offset değeri de, yani göreli konum değeri de siteyin içerisine yerleştiriliyordu. Yerleştirdik. Bu arada şunu da söyleyelim tabii ki 32 bitlik mimariyle çalışıyoruz. Çalışacağız buradaki örnekte.
+
+106
+00:20:00,000 --> 00:20:25,380
+mimari de, stack'in boyutu da 32 bit. Yani, stack'e attığım her bir eleman 4 byte. Ben, eee, artı 2 ile şimdiye kadar hep saymıştım, 16 bitlik mimari de. Burada artı 4 ile sayıyor olacağım. Offset'i attım. Şimdi, burada da çeşitli değişkenleri kullandıkça, çünkü stack üzerinden erişeceğim dedim ya, çeşitli değişkenleri kullandıkça, eee, stack'in içerisine attıkça,
+
+107
+00:20:26,708 --> 00:20:30,528
+Buraya, sitein içerisine ekleyeceğim. Bakın, ilk
+
+108
+00:20:31,635 --> 00:20:59,635
+base pointer'ı atıyorum. Hatırlarsanız base pointer 16 bitlik bir register'dı. 32 bitlik versiyonları register'ların başına E harfi gelerek yapılıyordu. Daha önce de derste bunu tabii siz online grupsunu size anlatmamış olabilirim ama diğer gruba anlatmıştım. Bir register'ın başına E harfi gelirse o register 32 bitlik bir versiyonla kullanılabilir. Yani base pointer temelde 16 bitken E'ye...
+
+109
+00:20:59,635 --> 00:21:15,516
+EBP, 32 bitlik bir register'dır. Attım EBP'yi de, EBP. Tabi burada bir döngüsel işlem var. Dizinin bütün elemanlarını toplayacağım. Dizinin en tane elemanı varsa any.cx'in içerisine atacağım. O yüzden push, ecx.
+
+110
+00:21:17,011 --> 00:21:36,551
+ECX'i de site'in içerisine attım. Bir de dizinin her bir elemanına erişmek için bir indiz şeyi kullanacağım. O da ESI olsun. E ESI. Ve ESI'yı da site'in içerisine attım. Bunlar işim bittiğinde attığım sırayla hemen site'in içerisinden çekiyorum.
+
+111
+00:21:37,460 --> 00:21:56,879
+pop, evp, şurada ilk yapacağım işlem tahmin edebileceğiniz üzere, move, base pointer, virgül, stack pointer. Bakın, şu an artık stack pointer'da, base pointer'da burayı gösteriyor. Şurası, şöyle yapabilecek miyim bilmiyorum, bakalım.
+
+112
+00:22:00,276 --> 00:22:27,416
+Şurası ESP ve EBP burayı gösteriyor. Şurası artı 4, şurası artı 8, bakın dörder dörder gidiyor. Artı 12, artı 16 ve artı 20 göreceli olarak. Ben hemen CX'in içerisine, şunu şöyle indirelim, CX'in içerisine BasePointer'a göre
+
+113
+00:22:28,756 --> 00:22:32,696
+n bakın şurada n artı 16'da aldım.
+
+114
+00:22:34,436 --> 00:22:36,876
+Ve s'ın içerisine de
+
+115
+00:22:37,811 --> 00:22:53,251
+Base pointer'a göre 20'yi aldım. Aldığım şey ne? Dizinin adresi. Yani sanki esanın içerisinde load effective adres, LEA komutuyla adresi yüklemişiz gibi oluyor burada.
+
+116
+00:22:53,831 --> 00:23:00,971
+E esanın içerisinde dizinin ilk elemanının adresi, ECX'in içerisinde dizinin kaç elemanlı olduğunu biliyorum.
+
+117
+00:23:00,971 --> 00:23:05,811
+Sonucu AX üzerinden döndüreceğim demiştim. O zaman ben dizinin elemanlarının...
+
+118
+00:23:05,811 --> 00:23:25,652
+hepsini toplayacaksam, sonuçta AX üzerinden dönecekse, AX'i exorlayarak, sıfırlayarak yani, başlayayım. AX'in ilk değeri sıfır olmuş olsun. Ardından AX'in içerisine, et AX virgül, E, S'ı.
+
+119
+00:23:25,935 --> 00:23:47,695
+diyerek bunu eklemiş olalım. Yani dizinin neydi? Şu an e esiğinin içerisinde ne var? Dizinin ilk elemanının adresi var. O köşeli parantezlerde kullanırsak o adresteki elemanı alıp AX ile toplayıp sonucu AX'in içerisine yazdık. Yazdıktan sonra e esiğini ne kadar arttırmam gerekiyor?
+
+120
+00:23:48,243 --> 00:24:01,364
+4 arttırmam gerekiyor. Çünkü dizi burada elemanların her birisini şurada göreceğiniz dizinin her bir elemanını integer tanımlamıştım.
+
+121
+00:24:01,715 --> 00:24:21,955
+Benim şu an kullandığım mimaride integer'ın boyutu 32 bit. Sizin farklı kullandığınız mimaride 64 bit veya 16 bit olabilir. Veya siz int değil, bu mimaride short tanımlarsanız 16 bitlik bir eleman setine erişmiş olursunuz. O zaman artı iki, artı iki gidersiniz. Diziyi int değil, chart tanımlarsanız her bir eleman bir byte olur.
+
+122
+00:24:22,324 --> 00:24:27,844
+ve orada artı bir artı biri gidersiniz. Ben burada int tanıdığım için int'in boyutunu da nereden biliyorum?
+
+123
+00:24:28,464 --> 00:24:40,244
+sizeof'la okudum boyutunun ne olduğunu ve 4 olduğunu biliyorum. O yüzden buradaki elemanları her birisi 4 byte sonra. O yüzden 4 ekliyorum.
+
+124
+00:24:40,244 --> 00:24:46,244
+Döngümü loop, L1, L1 diyerek.
+
+125
+00:24:46,624 --> 00:24:56,984
+tamamlıyorum, tamamladım ve en son return komutuyla beraber dönüyorum. Artık şunlara ihtiyacım yok. Bu olay.
+
+126
+00:24:57,619 --> 00:25:25,619
+return komutuyla beraber döndüm. Şurada yazdığım işler başına E'leri sallarsanız aslında fiziksel olarak şimdiye kadar yaptığımız örneklerle çok benzer örnekler. Burada da yaptığımız şey standart bir C fonksiyonu. Gelin bunu beraber derleyelim. Öncelikle LS diyeyim. Hem ASM hem de C dokümanının olduğunu görüyorum. NAS, yani NetWide...
+
+127
+00:25:25,619 --> 00:25:51,519
+eğer ki yoksa suda apt get install ile beraber kurabilirsiniz. Bende var olduğu için ekstradan kurmayacak gördüğünüz gibi. Yoksa siz kurabilirsiniz öyle söyleyelim. NAS-F1132 yani bizim linkable formatımızın 32 olacak şekilde bunu değerliyorum. Ne demek istiyorum?
+
+128
+00:25:52,884 --> 00:26:20,584
+NAS ile 16 bitlik, 32 bitlik veya 64 bitlik versiyonlara göre kodunuzu derleyebiliyorsunuz. Ben 32 bitlik versiyona göre kodumu derlemek istiyorum. Tire o parametresi çıktı olarak nasıl bir çıktı verelim onu söylememizi istiyor. Örnek nokta o vermiş olsun. Tire o output çıktının ismi ne olsun onu söylüyor. Ve en son da bizim
+
+129
+00:26:21,011 --> 00:26:39,132
+dokümanımızın ismini yazıyoruz. Bakın, örnek nokta o diye bir şeyi burada oluşturmuş oldu. Ben de tabii herhangi bir eğer oluşturulması kısmında bu derleyici aynı zamanda derleme kısmında bir hata olsaydı beni uyaracaktı.
+
+130
+00:26:39,132 --> 00:26:48,592
+Tamam, beni uyaracaktı. Bu derleme işlemini bu şekilde gerçekleştiremezsin diye beni uyaracaktı. Şu an herhangi bir uyarı vermedi ve başarılı bir şekilde derledin.
+
+131
+00:26:49,011 --> 00:26:54,352
+Sintaksal bir hata yok. Logical bir hata yapmış olabiliriz ama sintaksal bir hata yok, onu söylüyor.
+
+132
+00:26:54,352 --> 00:26:56,352
+Tabii...
+
+133
+00:26:56,372 --> 00:27:24,372
+Ne yaptık? Bakın, hatırlarsanız bizim elimizde iki farklı ASM dosyası olduğunda ikisini de derleyip OBJ uzantılı objekt kodları oluşturuyorduk masumdan geçirerek. Ardından bu objekt uzantılı kodları birbirlerinin arasına artı koyarak beraber link ediyorduk. Burada da temelde öyle yapacağız aslında. Ben C kodunu da derlediğimde üretilen objekt koduyla, assembly kodunu da derlediğimde üretilen objekt kodunu birleştirip bir arada iki tane objekt kodunu yapacağız.
+
+134
+00:27:24,372 --> 00:27:32,471
+objek kodu birleştirip bir executable dosya oluşturuyor olacağım. Onun için de GCC'yi kullanıyorum. GCC'ye bir C derleyicisi biliyorsunuz.
+
+135
+00:27:33,552 --> 00:27:40,052
+Farklı versiyonlara göre farklı özellikleri var. Ben yine bunu 32 bitlik çalışmaya zorlayacak şekilde
+
+136
+00:27:41,748 --> 00:28:09,748
+yazıyorum. Output dosyası olarak ASP diye bir şey üretsin istiyorum. Örnek nokta objeyi alsın, şunu alsın. Bakın burada araya sadece artı koymuyorum. Bir de örnek nokta C'yi alsın istiyorum. Listede dediğimde ASP diye isimlendirdiğim, output'unu ASP diye isimlendirdiğim çalıştırılabilir bir döküman oluşturduğu görüyorsunuz. Çalıştırılabilir bu dökümanın yeşil...
+
+137
+00:28:09,748 --> 00:28:17,647
+boyanmasının sebebi executable olması. Yani biz işte dev C++'da belki şimdiye kadar birçok C kodu yazdınız.
+
+138
+00:28:18,167 --> 00:28:29,587
+Orada derleme başarılı bir şekilde gerçekleştirilmişse dosyanın ismi nokta egze uzantılı yani adlandırılması da o şekilde olan bir dosya üretiliyor.
+
+139
+00:28:30,208 --> 00:28:36,248
+Burada ise yani bir dosyanın uzantısının nokta egze olması onun çalıştırılabileceği manasına gelmiyor.
+
+140
+00:28:37,748 --> 00:29:00,968
+o dosyanın executable yani çalıştırılıp çalıştırılamayacak olmasıyla ilgili bir bit değer var. Siz onu set ederseniz çalıştırılabilir bir dosya olur. Bakın properties'den gelelim. Permission, allow, execution, files program. Bunu set etmediğiniz sürece bakın şuradan clear edelim. Kaydediliyor mu acaba? Şöyle kapatsak.
+
+141
+00:29:03,827 --> 00:29:28,087
+şu yeşili gitti. Görüyorsunuz, yeşiller çalıştırılabilirdi. Yeşili gitti. O yüzden ben tekrardan bunu çalıştırılabilir hale getiyorum. Bir bitle alakalı bir durum. Uzantısının egzo olmasıyla alakalı bir durum değil yani. Onu söylemek istiyorum. Pekala çalıştırılabilir bir dosyayı nasıl çalıştırıyoruz? Nokta slash dosyanın ismini yazarak çalıştırıyoruz. Linux tarafında. Enter.
+
+142
+00:29:28,756 --> 00:29:50,656
+tabi bir şeylerde hata yaptık muhtemelen ki direkt bana eni sormasını bekliyordum. Şimdi bu hatamızın tam olarak nerede olduğunu anlayıp ona bakmamız lazım. Ya da ben printf ile hiç şey yazmadım. Çok özür diliyorum. Bakın şurada direkt skenefle okuyoruz ya. Bir yazalım yani eni istediğini biz anlayalım.
+
+143
+00:29:51,763 --> 00:30:11,603
+giriniz de yazabilirsiniz. İstediğiniz gibi olabilir. Direkt okudum. Okumayayım. Bu şekilde yazayım ki hani güzel anlaşılsın istiyorum. Bunun için tabii ki ne yapmam lazım? Tekrardan derlemem lazım. C kodunu sadece derlemem yeterli olacaktır. Çalıştırıyorum. Bakın eni giriniz. Eni giriyorum.
+
+144
+00:30:12,064 --> 00:30:40,064
+10, segmentation fault. Segmentation fault, mesela sabah da aynı hatayı almıştık biz. Biz belleğin erişilmemesi gereken bir kısmına eriştiğimizden ötürü kaynaklanan bir durum bu. Yani aslında assembly code tarafında bir hata yapıyoruz. Tamam, buradan bunu okuyor, belki dizinin elemanlarını da okuyor ama en nihayetinde, mesela şurada n'i de aldıktan sonra ve n'in de...
+
+145
+00:30:40,064 --> 00:30:48,484
+yerini de yukarıda integer tanımlamıştık. Diziyi alıyoruz. Burada ilgili yerlere yaşıyor. Muhtemelen çok yüksek bir olasılıkta gittiğimiz yordamda patlıyoruz.
+
+146
+00:30:48,764 --> 00:30:55,163
+Beraber bakacağız, hatayı bulacağız. Sabah da aynı şekilde beraber bakmıştık. Hep beraber şöyle bir göz gezdirelim.
+
+147
+00:30:55,163 --> 00:30:59,423
+Nerede bir hata olabilir? Nerede bir hata olabilir?
+
+148
+00:31:01,748 --> 00:31:27,688
+beraber bakalım, siteyin içerisinde mi bir şeyi yanlış yaptık? Bu arada hali hazırda buraya gelmişken şunu da söylemiş olayım. Az önce hocam siteyi doldurduk. Ben biliyorum, şöyle bir şey yapıyorduk. Siteyin içerisine ben parametre aktardığımda aktardığım bu parametreleri işte buradan return 4, return 6, 8 falan yaparak oradan çekiyordum bunları.
+
+149
+00:31:28,435 --> 00:31:42,135
+Şu an kim temizliyor? Arkadaşlar, C'nin içerisinde C fonksiyonu da çağırırsanız, böyle assembly yordamı da çağırırsanız, C site'nin içerisinde kendisinin attığı değerleri otomatik olarak kendisi çekiyor.
+
+150
+00:31:43,124 --> 00:32:09,124
+Tamam mı? Otomatik olarak kendisi çekiyor. O sebeple herhangi bir şekilde ekstradan sizin burada return 4 ki böyle bir durumda 8 olurdu. Return 8 gibi şeyler yazmanız beklenmez. Tamam mı? Hatta sıkıntıya sebebiyet verir. O yüzden buna lütfen dikkat edin. Şimdi bakalım segmentation fault ile ilgili hatayı ben de bir taraftan...
+
+151
+00:32:10,355 --> 00:32:16,355
+konuşurken anlamaya çalışıyorum. Stack pointer'ın değeri base pointer'ı atadık. Tık tık tık tık.
+
+152
+00:32:16,355 --> 00:32:35,355
+Buna yazdık. Güzel. Bu tarafta bir şey yapmış olabilir miyiz? Integer, any okuduk. Bunun içerisine koyduk. Iyi de tanımladık. Buradan geldik. Dizi virgül, n.
+
+153
+00:32:35,807 --> 00:33:03,088
+Hmm, önce eni site'in içerisine atmışız. Bakın, şimdi şöyle kıymetli arkadaşlar, bir yanlış şey yapmış olabilirim ben. Site'in içerisine nasıl atıyoruz? Nasıl atıyoruz? Site'in içerisine atarken şöyle, mesela 10 tane de eleman olabilir. Sağdan sola doğru atıyoruz. Yani önce eni atacak, ondan sonra diziyi atacak. Gelelim, gelelim. Site'in içerisine önce eni attım.
+
+154
+00:33:03,955 --> 00:33:13,615
+Ondan sonra diziyi attım, ondan sonra offset'i attım, ondan sonra EBP'yi attım, ondan sonra ECX'i attım, ondan sonra ES'i attım.
+
+155
+00:33:13,615 --> 00:33:27,516
+Burası hala hazırda gösterdiği durum EBP, şurası artı 4, şurası artı 8, artı 12, artı 16.
+
+156
+00:33:29,107 --> 00:33:50,028
+artı 20. Bakın, şurası 20. Görüyor musunuz? N, 20'de, bu da 16'da. Bununla ilgili segmentation, fold almamız da çok güzel oldu açıkçası. Yanlış yazdığımızda, erişmememiz gereken bir alana eriştiğimizde alınan bir hata bu. Yani öncelikle şu tarafta.
+
+157
+00:33:50,448 --> 00:34:18,248
+Prototipin de 30 tane de parametre olabilir. En sağdakini siteyin içerisine ilk, ondan sonra diğerini, ondan sonra diğerini atarak hareket ediyor. Bunları tekrardan siliyorum. Size göstermek amacıyla yapmıştım. Öncelikle assembly kodunu tekrardan derledim. Ondan sonra bunu derledim. Ondan sonra çalıştırdım. 10 girdim. Ve 1'den 10'a kadar olan sayıların 55 olduğunu gördüm. 5 gireyim.
+
+158
+00:34:18,447 --> 00:34:33,567
+7 gireyim, 100 gireyim, 99 gireyim şöyle. Farklı farklı değerler veriyor olsun. Önemli şeyleri tekrardan vurgulayarak devam ediyorum. Bir.
+
+159
+00:34:34,164 --> 00:34:50,804
+çağırdığımız yordamda, bakın, sağdan sola doğru sırayla siteyin içerisine elemanları yerleştiriyorum. Bu önemli. Yoksa az önce hatada verdiği gibi artı dört, artı sekiz, artı onla doğru şeylere erişemeyebilirsiniz.
+
+160
+00:34:51,463 --> 00:34:58,164
+Döndürdüğü sonucu da AX, yani akümülatör register üzerinden döndürüyor. Sonucun...
+
+161
+00:34:58,771 --> 00:35:14,152
+Return ile beraber dönmeden önce, EAX'in içerisinde olduğundan emin oldum. Sonucu sadece bununla döndürüyorsa, işte o yüzden C'de mesela Return ile sadece tek bir değer döndürebilirsin. Return A, Return B, Return C yapamıyorsunuz fonksiyondan.
+
+162
+00:35:14,532 --> 00:35:22,692
+Return A, B, C yapamıyorsunuz. Bir değer döndürebilirsin. Çünkü alt tarafta sadece AX rezistinin üzerinden dönüyor bu iş.
+
+163
+00:35:23,251 --> 00:35:47,403
+tamam, birden fazla değer döndüremez misin? Döndürürsün. Onların her birisini belli bir alanına yerleştirirsin. Bir dizi, draw, bir matrisleri neyse o matrisin adresini döndürürsün. Sadece AX üzerinden adres döndürebilirsin. 32 bitlik mimaride çalışıyorsak değişkenlerimizin boyutu ne olursa olsun, dizilerimizin, matrislerimizin boyutu ne olursa olsun her şeyin adresi 32 bitlikte.
+
+164
+00:35:48,211 --> 00:36:04,511
+Tamam. Bu önemli. Her şeyin adresi 32 bitliktir. Ben bir şeyin adresini biliyorsam, ne kadar uzunlukta olduğunu da biliyorsam, geri kalanı zaten benim kontrolümde olması gereken şeydir. Evet. Buraya kadar sorusu olan arkadaşımız var mı?
+
+165
+00:36:07,347 --> 00:36:12,167
+Ben bu section data ile section text'i kaçırdım galiba. Orada anlayamadım.
+
+166
+00:36:12,768 --> 00:36:19,987
+Bu bizim şimdiye kadar klasik olan versiyonda segment dediğimiz şeylere burada section diyorlar.
+
+167
+00:36:20,527 --> 00:36:26,207
+Section data ben yazdım. Yazmasanız da olur. Data segmenti tanımlamak için kullanılıyor.
+
+168
+00:36:26,387 --> 00:36:29,768
+Section.stack derseniz de stack segmenti tanımlamak için kullanılıyor.
+
+169
+00:36:29,768 --> 00:36:30,768
+Burada.
+
+170
+00:36:31,347 --> 00:36:37,587
+sadece farklı olan text var. Text yazılan kısımsı kod segmenti tanımlamak için kullanılıyor.
+
+171
+00:36:38,587 --> 00:36:43,728
+Pekala nasıl boyut var? Bunu yazdınız. Bundan sonra gelen her şey kod segment.
+
+172
+00:36:44,587 --> 00:36:48,047
+Mesela data segment. Nereye kadar data segment? End'i yok mu hocam bunun?
+
+173
+00:36:48,307 --> 00:36:51,047
+İşte section, text'e kadar olan her şey data segment.
+
+174
+00:36:53,648 --> 00:36:54,367
+Tamam mı?
+
+175
+00:36:55,747 --> 00:36:56,567
+Tamam hocam.
+
+176
+00:36:58,516 --> 00:37:00,775
+Evet, başka sorusu olan arkadaşımız var mı?
+
+177
+00:37:03,355 --> 00:37:04,016
+Yok.
+
+178
+00:37:04,876 --> 00:37:06,876
+Şimdi saat kaç geçiyor?
+
+179
+00:37:07,336 --> 00:37:08,615
+38 geçiyor.
+
+180
+00:37:11,576 --> 00:37:13,355
+Tam 5'te burada olalım.
+
+181
+00:37:13,496 --> 00:37:17,996
+Çünkü ben bunu kapatacağım, Windows'a geçeceğim, oradan Zoom'a bağlanacağım, biraz iş var.
+
+182
+00:37:18,716 --> 00:37:20,935
+Saat 5'te burada olalım arkadaşlar.
+
+183
+00:37:21,556 --> 00:37:30,695
+Tamam. Ben bir taraftan şeyi kapatmayacağım, Zoom'u. Siz de kapatmayın. Ama bilgisayarı kapatıp tekrar açacağım. Tamam mı? Evet, görüşürüz. Kolay gelsin.
+
+184
+00:59:32,596 --> 00:59:36,676
+Evet, tekrardan merhaba kıymetli arkadaşlar.
+
+185
+00:59:37,336 --> 00:59:39,296
+Şimdi chatten bir arkadaşımız soru yazmıştı.
+
+186
+00:59:39,956 --> 00:59:41,376
+Ben o soruyu göremiyorum.
+
+187
+00:59:42,496 --> 00:59:44,596
+Yeni bağlandığım için şeyi sormuş herhalde.
+
+188
+00:59:44,976 --> 00:59:48,815
+MOV AX virgül sayı yazdığımızda nasıl oluyor?
+
+189
+00:59:48,976 --> 00:59:49,796
+Onu bir açıp ver.
+
+190
+00:59:49,855 --> 00:59:50,436
+Ha, şurada.
+
+191
+00:59:51,355 --> 00:59:51,596
+Tamam.
+
+192
+00:59:51,596 --> 00:59:58,716
+Şimdi MOV AX virgül, A, B, C, D, hexadecimal yaptığımızda ne oluyor?
+
+193
+00:59:59,336 --> 00:59:59,596
+Burada arkadaş...
+
+194
+01:00:00,000 --> 01:00:26,699
+Arkadaşlar, AX bildiğiniz gibi AH ve AL olarak iki parça halinde. AH, high kısmından geliyor. AL de low kısmından geliyor. Buradaki high kısmı, yüksek anlamlı kısmı AB, AH'ın içerisine girer. CD, yani düşük anlamlı kısmı sayının AL'nin içerisine girer. AH, CD, AL yok. Tam tersi olur.
+
+195
+01:00:27,123 --> 01:00:36,103
+tam tersi olur buradaki soruda. AH'ın içerisine AB'ye girer, AL'nin içerisine CD'ye girer. Tamam mı? Tam tersi bu sorunun cevabı.
+
+196
+01:00:40,659 --> 01:00:42,659
+Evet, aynen. Tam tersi şekilde oluyor.
+
+197
+01:00:45,079 --> 01:00:46,159
+Tamam, şimdi
+
+198
+01:00:46,159 --> 01:00:56,219
+Makine kodu öyle verebilir bunu çalıştığında. Tamam, yazınca ne veriyor?
+
+199
+01:00:57,519 --> 01:01:04,179
+Tamam, veren makine kodu bu şekilde olsa da, tamam, bu makine kodu ne demedik? MOV kullanıyorum.
+
+200
+01:01:04,608 --> 01:01:15,668
+MOV kullanıyorum. AB değerini A, H'ın içerisine koyuyorum. Yani şu ikinci gelen değer A, H'ın içerisine, ilk gelen değer ise A, L'nin içerisine giriyor. Onu söylüyor yani.
+
+201
+01:01:20,563 --> 01:01:33,563
+Evet, şimdi bunu Windows tarafında yapalım. Yani yüksek seviyeli dil olan C ile biz bir assembly yordamını nasıl çağırırız ona bakacağız.
+
+202
+01:01:33,563 --> 01:01:42,563
+Burada ise Visual Studio kullanıyorum arkadaşlar. Bende 2017 var. Sizde farklı versiyonlar olabilir.
+
+203
+01:01:48,916 --> 01:01:58,036
+edin lütfen. Şimdi nasıl yapıyoruz bu işi? Bakalım. Öncelikle Visual Studio'da bir empty project oluşturuyoruz.
+
+204
+01:01:59,476 --> 01:02:15,436
+Boş proje. İsmi 0, ne diyelim, ASM06, bugün ayın 01.22 isimli. Bunları daha sonra sizle paylaşıyoruz zaten. O yüzden böyle güzel isim yendirelim.
+
+205
+01:02:18,420 --> 01:02:44,920
+bir proje oluşturdum. Oluşturduğum bu projenin içerisine, tabi burada arkadaşlar, Visual Studio ortamında C++ kodu oluşturabiliyorsunuz. Harici olarak C dokümanı da oluşturabilirsiniz. Oluşturduğunuz o dokümanını ekstradan böyle plug-inler falan yapmıyorduk. C++'ın içerisine direkt C kodu yazıp da çalıştırabiliyorsunuz. O yüzden buradan ben yeni oluştur dediğimde C++ dosyasını.
+
+206
+01:02:45,364 --> 01:03:03,064
+seçiyor olacağım. Örnek 2 olmuş olsun burada. Ama C kodu yazacağım içine yani. C++ değil, o konuda korkmayın. Şimdi buradaysa şöyle bir şey yapalım. Selection Sort kullanalım. Selection Sort nasıl bir şey?
+
+207
+01:03:03,760 --> 01:03:12,500
+verilen diziyi küçükten büyüğe veya büyükten küçüğe doğru sıralayan bir algoritma tasarımına göre.
+
+208
+01:03:12,840 --> 01:03:18,200
+Biz şöyle gerçekleştirelim bu işi. Selection Sort büyükten küçüğe doğru sıralasın.
+
+209
+01:03:18,840 --> 01:03:25,320
+Tamam mı? Büyükten küçüğe doğru sıralasın. Biz de Selection Sort büyükten küçüğe doğru sıralarken
+
+210
+01:03:25,711 --> 01:03:42,931
+Bizim yapacağımız işlem ise, worst case'ini test etmiş olalım. Yani bir sıralama algoritmasının worst case'i nedir? Dizi tam tersi yönde sıralıysa worst case'dir. O yüzden küçükten büyüğe doğru sıralı bir dizi verelim ona. Ardından yapacağımız işlem.
+
+211
+01:03:43,956 --> 01:04:05,956
+büyükten küçüğe doğru onu öncelikle bir C fonksiyonuna sıralatalım. Ondan sonra da bir assembly yordamına sıralatalım. Aradaki bakalım süre bakımından performansa bakalım. Yine çeşitli kütüphaneleri ekleyerek başlıyor olacağım. Durma işlemi gerçekleştirmek için
+
+212
+01:04:07,059 --> 01:04:09,159
+Standart kütüphaneyi de kullanacağım.
+
+213
+01:04:09,279 --> 01:04:09,679
+Standart.
+
+214
+01:04:09,679 --> 01:04:11,500
+Alt kutu ek olarak.
+
+215
+01:04:11,980 --> 01:04:14,320
+Bir de zamanı ölçeceğim için
+
+216
+01:04:14,320 --> 01:04:15,699
+time kütüphanesini
+
+217
+01:04:15,699 --> 01:04:17,400
+yazamadım.
+
+218
+01:04:17,539 --> 01:04:20,079
+Time kütüphanesini kullanıyorum.
+
+219
+01:04:20,299 --> 01:04:21,480
+Time.
+
+220
+01:04:21,480 --> 01:04:23,599
+Header.
+
+221
+01:04:24,563 --> 01:04:45,804
+Bütün her şey bir main fonksiyon içerisinde ceryen ediyor. Artık C'yi de biliyorsunuz. Return 0. Hemen öncesinde system pause ile beraber, şurada programı durdurayım çünkü ekranı açılıp işlemi yapıp kapanıyor. Dursun istiyorum. Şimdi yine bir end değeri tanımlayalım. O kullanımcılar burada okumayalım.
+
+222
+01:04:46,228 --> 01:05:10,368
+bir constant değişkenimiz olmuş olsun, and, on. Farklı değerlere göre birazdan test ederiz. Dizimizin elemanları birden ona kadar olmuş olsun. Int, i. Az önce yaptığımız gibi for, i eşittir, sıfır. i küçüktür, and, i artı artı dedim. Ve diziyi de tanımlayacağım hemen şimdi. i.
+
+223
+01:05:11,539 --> 01:05:14,820
+eşittir, i artı bir.
+
+224
+01:05:15,820 --> 01:05:17,180
+Hemen şurada
+
+225
+01:05:18,700 --> 01:05:19,980
+dizi i de
+
+226
+01:05:20,240 --> 01:05:21,780
+m elemanlı
+
+227
+01:05:22,039 --> 01:05:24,340
+tanımlıyor olayı. Bakın, yine burada
+
+228
+01:05:24,600 --> 01:05:25,100
+benim
+
+229
+01:05:25,880 --> 01:05:26,640
+integer'ım
+
+230
+01:05:26,640 --> 01:05:27,660
+32 bit
+
+231
+01:05:27,920 --> 01:05:28,440
+lik
+
+232
+01:05:28,940 --> 01:05:29,720
+versiyon
+
+233
+01:05:29,980 --> 01:05:30,480
+bunu
+
+234
+01:05:30,740 --> 01:05:31,760
+özellikle yine
+
+235
+01:05:32,019 --> 01:05:33,300
+dikkatinizi çekmek istiyorum.
+
+236
+01:05:34,835 --> 01:05:43,015
+Şimdi dizinin ilk elemanını ve son elemanını ekrana yazdırayım. Görelim sıralama işlemini hakikaten gerçekleştiriliyor.
+
+237
+01:05:43,015 --> 01:06:01,015
+Gerçekleştiriyor mu? Sıralamadan önce diyelim. Dizinin sıfırıncı elemanı şudur. Dizinin en eksi birinci elemanı.
+
+238
+01:06:02,132 --> 01:06:11,632
+şudur şeklinde bir ifade yazalım. O da bizi 0, virgül, bizi n-1.
+
+239
+01:06:14,371 --> 01:06:19,771
+C kodu burası. Bunu bir sıralamadan önce yazdıracağım, bir de sıralamadan sonra yazdırıyor olacağım.
+
+240
+01:06:20,571 --> 01:06:22,551
+Sıralamayı nasıl gerçekleştirelim?
+
+241
+01:06:25,780 --> 01:06:39,500
+dizinin adresini vereyim ve dizinin kendisini vereyim. Herhangi bir geri dönüş değeri beklemiyorum. Void olacak. Hemen yukarıya çıkıp o yüzden şuraya sintaksını yazayım. Void, sel, sol.
+
+242
+01:06:39,923 --> 01:07:04,144
+C bir tane integer pointer alıyor, bir tane de integer alıyor ki bizi böyle durtup durmasın. Ne kadar zamanda çalıştığını söylemek için clockTat bir de değişkenler var. Bu şey kütüphanesinden geliyor. Başlangıç ve bitiş olmak üzere iki tane değişken tanımlayayım. Bir de bunları ne kadar zaman geçtiğini şey yapamak için.
+
+243
+01:07:04,851 --> 01:07:31,731
+double cinsinden bir değişken tanımlayayım. Bunlar kronometre gibi olacak arkadaşlar. Kloğu başlattığımda başlangıca, kloğu bitirdiğimde bitire koyacağım. Buradaki clock bana clock cycle cinsinden bir şey döndürüyor. Ondan sonra da onu saniye cinsinden bir şeye döndüreceğim ve sürenin içerisine yazıyor olacağım. Bakın, cellsort'a girmeden hemen önce başlangıç clock dedim.
+
+244
+01:07:32,208 --> 01:07:53,708
+hemen sonrasında da bitiş clock dedim ve burada süre eşittir çıkan sonucu double a cast etmem lazım tabii ki. Double a cast ederek bitişten başlangıcı çıkartıyorum ve clock per second'a, aa göremedim.
+
+245
+01:07:57,715 --> 01:08:04,195
+ClockTurf per second'a bölüyorum. Bana saniye cinsinden ne kadar geçtiğini söylemiş oluyor.
+
+246
+01:08:04,675 --> 01:08:13,215
+Sıralamadan sonra da başarılı bir şekilde sıralayabilmiş mi diye. Şuraya bir yere, istediğim bir yere, sıralamadan sonra diye aynı şeyi yapıştırıyor olayım.
+
+247
+01:08:13,215 --> 01:08:20,076
+Bir de süreyi yazayım. Print F, toplam süre diyelim.
+
+248
+01:08:20,500 --> 01:08:25,780
+%2f olsun, iki hassasiyetle bana bunu söylesin.
+
+249
+01:08:25,780 --> 01:08:35,180
+Buraya da süreyi yazıyorum. Bu temelde yaptığım işlem. Şimdi Selection Sort lazım.
+
+250
+01:08:35,180 --> 01:08:40,780
+Biraz tabii C'de miydi dersimiz C olmadığı için ben şuraya açıkçası bunları böyle aldım.
+
+251
+01:08:40,780 --> 01:08:45,899
+Bunları direkt buraya Selection Sort'u yapıştırıyorum.
+
+252
+01:08:45,935 --> 01:08:53,635
+tamam mı? Bu büyükten küçüğe doğru, benim küçükten büyüğe doğru verdiğim dizeyi, büyükten küçüğe doğru kendisi sıralıyor olacak.
+
+253
+01:08:53,895 --> 01:09:02,456
+Sıraladığında ekrana bir bunu yazacak, bir şunu yazacak ve bir de toplam ne kadar süre geçmişse onu yazıyor olacak.
+
+254
+01:09:03,095 --> 01:09:07,975
+Buyurun beraber çözümü verleyelim. Hatta yapmış olabiliriz, şimdi göreceğiz o antağları.
+
+255
+01:09:07,975 --> 01:09:12,536
+Tabii şurada, hop, bunu istemiyordum.
+
+256
+01:09:13,716 --> 01:09:15,716
+doğru tutabilirsem
+
+257
+01:09:18,036 --> 01:09:23,316
+Evet, başarılı bir şekilde derlemişiz. Süper, çok güzel. Şimdi çalıştıralım beraber.
+
+258
+01:09:24,836 --> 01:09:28,195
+Çözümü derledik, şuradan çalıştıracağız. Çalıştıralım.
+
+259
+01:09:30,996 --> 01:09:38,275
+Bakın dizinin ilk elemanı 1, son elemanı 10 iken dizinin ilk elemanı 10, son elemanı 1 oldu. Büyükten küçüğe doğru sıraladı.
+
+260
+01:09:38,775 --> 01:09:44,836
+Tabii iki hassasiyet bile göz önünde bulun durumunda daha hızlı sıraladığı için sanki 0 saniyede sıralamış gibi oldu.
+
+261
+01:09:45,255 --> 01:09:52,695
+Şunu biraz önceden büyütelim. 100.000 yapalım. Bakalım nasıl sıralayacak. Onu görelim.
+
+262
+01:09:53,684 --> 01:09:56,384
+Tamam, dizinin ilk elemanı 1, son elemanı 101.
+
+263
+01:09:57,004 --> 01:10:00,844
+Sıralıyor yani şu an, arka tarafta o işlem dönüyor.
+
+264
+01:10:01,963 --> 01:10:04,224
+Sıralama bitsin, görelim.
+
+265
+01:10:06,123 --> 01:10:09,703
+12.31 saniye sonra sıralama bitti.
+
+266
+01:10:09,703 --> 01:10:10,304
+12.
+
+267
+01:10:10,847 --> 01:10:36,887
+saniye diyelim kabaca, aklımızda tutalım bunu, 12 saniye. Çünkü bu işlemi gerçekleştiren şeyi bir de şeyde yapacağız. Ne dönür ona? Assembilde yapacağız, sıralama kısmını. Nasıl olacak? Görüyor olacağız orada. Burada, şunu evet durdurmuşuz. Burada yazdığımız si yordamı yerine, bunu koment alt göküyorum.
+
+268
+01:10:38,452 --> 01:10:57,452
+cell sort asm. Yine aynı prototipte bir yordam yazıyor olacağım. Hemen yukarıya çıkıp şu prototipi müsaadenizle kopyalıyorum. Şuraya sadece asm ediyorum. Tek farkı ne arkadaşlar? Başına burada olmadığı için extern...
+
+269
+01:10:58,420 --> 01:11:18,460
+extern yazma lazım. Bir de register'ın getirdiği bir şeyle C'ye extern yapacağım diye C diye de söylemem gerekiyor. Bunu burada artık aramıyor olacak. Pekala, nerede arayacak? İşte ben onu da kaynak dosyası olarak ekstradan yazıyorum. Beraber yazalım.
+
+270
+01:11:26,384 --> 01:11:31,863
+örnek 2.asm olmuş olsun bu.
+
+271
+01:11:34,744 --> 01:11:39,863
+Tamam. Şimdi buraya ben asm kodunu yazıyor olacağım.
+
+272
+01:11:41,144 --> 01:11:43,684
+Çok az bekletiyorum, kapı çalıyor.
+
+273
+01:12:25,268 --> 01:12:44,108
+Evet, kusura bakmayın arkadaşlar. Şimdi devam edelim. Ben, şimdi burada da tabii biraz sintaks farklı. Şöyle, biz klasik 8086 mimarisi kullanıyoruz. Bu Intel'in mesela iyi versiyonları, yeni işlemciler falan 586 mimarisi diye geçiyor. O yüzden bunu...
+
+274
+01:12:44,148 --> 01:12:48,968
+586 tarafında derleyeceğim diye ekstradan söylemem gerekiyor.
+
+275
+01:12:48,968 --> 01:12:52,087
+Ve bir gerçek mod, bir de protected mod vardı.
+
+276
+01:12:52,087 --> 01:12:58,427
+Biz protected modda işler gerçekleştirdiğimizi belirtmek için yine noktayla beraber, sabahlı noktası noktası da da veriyordu.
+
+277
+01:12:58,899 --> 01:13:10,760
+flat bir program yazacağımı söylüyorum. Bakın segment tanımları nasıl oluyor burada? Nokta, stack, stack segment tanımıyorsunuz, 180, 180'lik bir stack segment tanımlanıyor. 20x, 10x neyse.
+
+278
+01:13:11,239 --> 01:13:22,439
+Veya data tanımlayacaksınız, nokta data, şu arası data segment veya en sonunda da kod segmentiniz olacaksa nokta kod diyerek kod segmentinizi başlatıyorsunuz.
+
+279
+01:13:22,439 --> 01:13:26,659
+Bizim yordamlarımızın tanımı ise birebir aynı arkadaşlar.
+
+280
+01:13:26,899 --> 01:13:36,799
+Şöyle ki, burada mesela, tabii az önce şurada yazdığım, C'deki yordamın ismiyle birebir aynı olması gerekiyor. Yazdım.
+
+281
+01:13:37,395 --> 01:13:51,975
+ve PROC, NEAR, NEAR tanımlı olduğunu söylemiştim. C'den bir harici, assembly yordamını da çağırsam, C yordamını da çağırsam, segmentler arasında değil, sanki segment içi dallanıyormuş gibi dallanıyoruz arkadaşlar.
+
+282
+01:13:52,695 --> 01:14:00,815
+Ve yine bunu yazdım, AND procedure diyerek bitirdim. En sonundaki bakın, AND'i bile ekliyorum bizim alışık olduğumuz versiyonuna.
+
+283
+01:14:04,115 --> 01:14:20,115
+şu gönderdiğim, öncelikle M, ondan sonra dizi olarak gönderdiğim değerleri de stackten çekerek işlem gerçekleştiren bir Selection Sock kodu asamble de yapıştırıyorum.
+
+284
+01:14:20,851 --> 01:14:48,851
+Bunların yazması ve şey işi uzun südüğü için buraya yapıştırayım. Sizinle de paylaşacağım zaten. Daha önce de dersi zandım ve Selection Sort yapmıştık ama siz online grup olduğu için size denk gelmemiş olabilirsiniz. Selection Sort. Ben yazdım. Assembili tarafında siteye çeşitli değerler attım. Kullandığım değerleri tekrardan siteyin içerisine attım. 32 ve 36'ya göre göreceli olarak 8. ve 9. elemanı siteyin aldım. Birisini EDA'nın içerisine koydum. Birisini de EDA'nın içerisine koydum.
+
+285
+01:14:48,851 --> 01:15:07,711
+ECX'in içerisine koydum. Ondan sonra Selection Sort'un çeşitli işlemlerini yaptık. Bakın. Bunu da kaydedim. Tamam. Şimdi neyim var benim elimde? Bir ASM dosyam, bir de örnek CPP. Tabi burada derlerken bakın sağ tıklayıp çözümü derle diyoruz. Nasıl derleyecek?
+
+286
+01:15:07,984 --> 01:15:32,644
+Biz çünkü GCC ile veya NASM ile derlerken konut satırından çeşitli parametreler veriyorduk. Burada derlerken özel derleme aracı kullanmamız gerekiyor. Onun için ASM dokümanının üzerine gelip sağ tıklayıp özellikler diyoruz. Özellikler dedikten sonra Custom Build Tool kullanarak bunu özel der diyeceğiz. Şuradan aşağıya iniyoruz.
+
+287
+01:15:32,992 --> 01:16:00,992
+Özel derleme aracı, kaskın, buydu, sulun, artık ne? Özel derleme aracı, Türkçesi neyse. Özel derleme aracını seçiyoruz ve uygula diyoruz. Nasıl derleyeceğini programa biz söyleyeceğiz yani. Ardından gelene tıkladım. Bakın şurada komut satırın karşısında bu program çalıştırılırken nasıl çalıştırılsın? Hangi komut kullanılarak çalıştırılsın? Bunu doğrudan ezberlemenizi istemiyorum. Ben de açıp internetten bakarak açıkçası bunu şey yapıyorum, yazıyor oluyor.
+
+288
+01:16:00,992 --> 01:16:24,172
+canlı yani. İşte CX parametreleri, çeşitli parametreleri var. Cutoff. Ondan sonra tırnak içerisinde full pet ve kapattım. Derlerken, derlerken bunu kullan diyorum ve çıktısı da benim için önemli. Diğer yerler doğrudan önemli değil. Çıktısında da filename.
+
+289
+01:16:26,768 --> 01:16:48,028
+nokta OBJ olarak bir çıktı üretsin. Tamam. Bu derleme kısmı bu komutla derle ve üreteceğin çıktı da bu çıktı da olsun diye söylüyorum. Uygula deyip tamam demem gerekiyor. Ardından çözümü temizleyeyim. Az önce bir şekilde derlemiştik ya. Çözümü tekrardan derliyorum.
+
+290
+01:16:50,452 --> 01:17:16,452
+Evet, bakın, başarılı bir şekilde derledi. Hem ASM'yi kullandık, hem de örnek C kodunu, hem de ASM kodunu burada kullanmış olduk. Gelin beraber bir çalıştıralım. Bu işlemin nasıl olduğunu beraber görüyor olalım. Yine şuradan çalıştırıyorum. Yine bakın dizinin ilk elemanı, son elemanı ve...
+
+291
+01:17:16,564 --> 01:17:19,724
+Evet, bu sefer daha hızlı çalıştırdı, ben söylemeden önce.
+
+292
+01:17:21,004 --> 01:17:24,664
+Bizinin son elemanı ve ilk elemanı sıralamış olduğunu görüyoruz.
+
+293
+01:17:24,724 --> 01:17:29,984
+Siz daha sonra kodu sizle paylaşacağız, detaylı ara elemanlarına da bakabilirsiniz, sıraladığını görmek için.
+
+294
+01:17:30,463 --> 01:17:33,364
+Bakın, 3.44 saniye sürdü.
+
+295
+01:17:34,344 --> 01:17:40,904
+C'de bunu yaparak 12 saniyeydi, burada 3.5 katlık bir hızlanma söz konusu.
+
+296
+01:17:41,444 --> 01:17:43,784
+Yani aynı işi assemblyye yaptırdınız.
+
+297
+01:17:44,372 --> 01:17:51,311
+3.5 kat daha hızlanma. Ben şimdi bazen tabii bu tarz örnekleri yapıyoruz. Öğrenci arkadaşları sizlere veriyoruz.
+
+298
+01:17:51,792 --> 01:17:58,112
+Hocam yani sizin bilgisayarınızda 12 saniye sürdü ama benim bilgisayarımda 3 saniye sürüyor. O sinin şeyi diyorlar.
+
+299
+01:17:58,492 --> 01:18:07,552
+Tabii sürebilir. Niye? Benim bilgisayarım 10 yıllık bilgisayar. Burada orana bakmak lazım. Arada ne kadar oran var? 3.44 saniyeye 12 saniye.
+
+300
+01:18:07,840 --> 01:18:31,840
+sizin bilgisayarınızda bu da bir saniyede çalışacaktır. Mesela oransal bir durum söz konusu. Bunu göz önünde bulundurmanız gerekiyor kıymetli arkadaşlar. Ki ihtiyacınız olan şey hız ise, ihtiyacınız olan şey hız ise, ki çeşitli durumlarda, real-time çalıştığınız çeşitli projelerde çok önemli bir durum. Bakın, C'nin içerisinde...
+
+301
+01:18:32,467 --> 01:18:44,807
+sanki C fonksiyonu çağırıyormuş gibi bir assembly orderamı çalıştırabiliyorsunuz. Hatta gelin buyurun adım adım görelim bunun nasıl çalıştığını.
+
+302
+01:18:44,807 --> 01:18:54,367
+Sabah bunu beceremedim. Bakalım şu an yapabiliyorsunuz. Şurayı Reviz modda debug edemiyorum öyle anlıyorum da ama bir daha denileceğim şansımı.
+
+303
+01:19:00,115 --> 01:19:07,716
+Bu burada enteresan bir durum var. Şunu 64 yapsam, aslında yapmam lazım ama çeşitli şeyler deniyordu yani.
+
+304
+01:19:07,716 --> 01:19:09,915
+Tamam.
+
+305
+01:19:09,915 --> 01:19:13,716
+List modda değil, debug modda çalışmaya devam. Şöyle söyleyelim.
+
+306
+01:19:13,716 --> 01:19:17,612
+Evet, bakın, benim...
+
+307
+01:19:18,420 --> 01:19:33,260
+Assembily kodumu debug edeceğim. Çalıştırdım. Tamam debug ekranına düştü. Şurasıdan itibaren debug ediyorum diyeceğim. Araçlar takım hata ayıkladan pencereler ve ayrıklaştırılmış koda geliyor.
+
+308
+01:19:34,228 --> 01:19:54,307
+Bakın, böyle olunca ben şu an neyi görüyorum? Ayrıklaştırılmış kodda. Benim yazdığım bu assembly yordamı nasıl çağırılıyor, nasıl kullanılıyor olacak. Benim yazdığım C kodlarını burada görüyorsunuz. Bunun için ekstradan yapılmış çeşitli işler söz konusu. Onları da görüyorsunuz.
+
+309
+01:19:54,307 --> 01:20:00,000
+Şimdi dikkatinizi çekmek istediğim bir nokta var. Şurada da yazmaçların değerlerini görüyorsunuz. Adım adım çalışıyorsunuz.
+
+310
+01:20:00,000 --> 01:20:24,920
+tabi ki benim yazmaçlarımın ne şekilde değiştiğimi de buradan takip edebilirsiniz. Değişen yazmaçlar kırmızıyla boyanıyor. Bakın siteyin içerisine dallanacağı zaman bir tane offset atıyor. Offset değeri atamış oluyor. Ardından eni zaten atıyor. Dizinin adresini atarken nasıl yapıyor bu işi? Dizinin adresini, dortefective adreste, AI isim içerisine alıyor ve onu da siteye atıyor. Bakın C kodu mu?
+
+311
+01:20:25,264 --> 01:20:32,123
+arka tarafta assembly çalışıyor. Ardından benim yordamım çağırıyor. Yordamım şu adresinden itibaren başlıyormuş.
+
+312
+01:20:32,283 --> 01:20:38,524
+Call komutuyla beraber çağırıyor. Buraya dallanacağım. Ama öncesinde lütfen şuna dikkat edin.
+
+313
+01:20:38,623 --> 01:20:44,604
+Yordamdan döndükten sonra bakın at stack point'ı da virgül 8 diyor.
+
+314
+01:20:45,076 --> 01:20:51,036
+stack pointerı 8 arttırıyor. Ben dizinin içerisine, şurada gördüğünüz şekliyle,
+
+315
+01:20:51,456 --> 01:20:57,755
+siteğin içerisine iki tane eleman koyuyorum ya, bir eleman 32 bitti, yani 4 byte, iki eleman 8 byte,
+
+316
+01:20:57,755 --> 01:21:06,015
+işte şurada tam olarak o sebeple stack pointerın değerini 8 arttırıyor. C, siteye attığı kendi şeyleri stackten temizliyor.
+
+317
+01:21:06,335 --> 01:21:13,076
+Her programlama dili bunu yapmayabilir. Siz hangi programlama diliyle assemblyyi kullanıyorsanız, onun özelliği.
+
+318
+01:21:13,076 --> 01:21:25,855
+bilerek hareket ediyor olmanız lazım. Zandımcı F11 ile ilerliyoruz. Adım adım çalıştırıyorum. Şu sağ tarafta değişen registerları görebilirsiniz. Çalıştırdım. Kolla beraber dallanıyorum. Zıdk dallandı.
+
+319
+01:21:26,515 --> 01:21:35,395
+dallanmanın yarısındayız. Cevap ile beraber dallan. Bakın, bu aşamadan sonra benim yazdığım assembly koduna zıpladım. Şuradan da bakabilirsin.
+
+320
+01:21:35,395 --> 01:21:43,835
+Tuşlar var, sonra şu işlemler var, sonra decrement, CX ile devam edelim. Bu işlemler var, decrement, CX ile beraber devam edelim.
+
+321
+01:21:44,175 --> 01:21:48,475
+Burada F11 ile bu şekilde adım adım bunu çalıştırabilirsiniz.
+
+322
+01:21:53,332 --> 01:22:07,731
+pardon, 100.000 eleman için bunu ekstradan gerçekleştirme çok zor. O yüzden durduruyorum. Sadece burada yaptığımız işi göstermek istedim. Bakın return ile beraber de en son dönüyoruz.
+
+323
+01:22:07,988 --> 01:22:24,988
+Tamam, return ile beraber en son dönüyoruz. Siz eleman sayısını 3 yapıp bu işi görüntüleyebilirsiniz. Nasıl oluyor? Adım adım debug edebilirsiniz. Daha enteresan bir şey göstermek istiyorum size. Bakın, bu sefer C kodunu açtım, assembly kodunu kapattım ve...
+
+324
+01:22:26,323 --> 01:22:38,823
+oradan ilk onu debug edeceğim, C kodunu debug edeceğim, çalıştırıyorum. C fonksiyonu, aşağıda gördüğünüz C fonksiyonu, hata ayıkla, pencerelerden ayrıklaştırılmış kod, İngilizcesi disassembly.
+
+325
+01:22:40,043 --> 01:22:51,783
+Geldim, bakın, yine aynı işlemleri gerçekleştiriyorum, bu sefer sell sort C'ye dallanıyor olacak. Çalıştırdım, çalıştırdım, çalıştırdım, çalıştırdım, çalıştırdım, çalıştırdım. Bakın, benim selection sortum,
+
+326
+01:22:52,159 --> 01:23:17,079
+C'de tanımladığım fonksiyon, yaptığım şurada işlemler, her birisinin öncelikle C kodunu yazıyor ama size ne dedik? Bütün C kodları, bütün programlar, dilleri öyle ama C üzerinde konuşuyoruz. Bütün C kodları çalıştırılmadan önce assembly'ye dönüştürüyor ve assembly kodu çalıştırılır. Gördüğünüz gibi bizim de yaptığımız işlem, biz ilk ne yapıyorduk? Base pointer'ı siteyin içerisine atıyorduk.
+
+327
+01:23:17,427 --> 01:23:42,568
+Ondan sonra, stack pointer ile base pointer'ı eşitliyorduk. Ona göre çeşitli stackten o değerleri çilecek, bak işler yapmış. Görüyor musun? İşler yapmış ve ben adım adım giderken neyi çalıştırıyorum? SMB'li karşılıklarını çalıştırıyorum. Gördüğünüz gibi SMB'li karşılıklarını çalıştırıyorum. Tabi o C'yi SMB'ye dönüştürüyor. Nereye kadar? Bir return göreceğiz. Aşağıya doğru iniyorum.
+
+328
+01:23:45,427 --> 01:24:05,528
+indim. Bakın bizim kodumuzdan daha uzun. İşte şuraya kadar. Şuraya kadar çalıştırmış. Return'ı. Buraya kadar benim yazdığım C kodunu SMB'li'ye çevirmiş. İşte çalışan şey bu SMB'li. 12 saniyede çalışan şey. Bu SMB'li kodunu ben kendim yazayım.
+
+329
+01:24:06,707 --> 01:24:34,707
+yazabilirim. Değil mi? Az önce gördüğünüz gibi yazdım ve bundan tabii bu çevirirken çok şeyi göz önünde bulundurak şöyle de yapmak istemiştim, böyle de yapmak istemiştim, debug için araya şeyler koyayım diyerek çok farklı işler yapıyorum. Ben onu daha optimize hale getirebilirim en nihayetinde veya assembly kısmında adım adım registerlar ne şekilde değişiyor diyerek benim yazdığım C kodlarını buradan izleyebilirsiniz. Tabii ilk ödevi verdiğimizde hatırlarsanız orada bir linkli liste oluşturmanızı istiyor.
+
+330
+01:24:34,707 --> 01:24:48,467
+ödevi okuyoruz şu an. Bazı arkadaşlar, tabi, direk video stüdyoda yazmış, ondan sonra, diz assembly yapıp, assembly kodlarını böyle görmüş, onlara koymuş. Olabilir, yani o da bir çözüm.
+
+331
+01:24:48,887 --> 01:25:02,707
+En nihayetinde, bazı arkadaşlar kendisiyle yapmıştır, bazıları direk C'den assembly'ye çevirmişler. Assembly kodlarını, orada biz de tabi registerları, EAP'leri başından silerek, E-AX'leri o şekilde testini etmişler. O da tabi ki bir...
+
+332
+01:25:02,707 --> 01:25:15,567
+yaklaşım şekli, bunu biliyorsa öğrenci bilgisinden tabii ki faydalanması lazım. Onlar için hiç düşküsüz birkaç dakika falan sürmüştü herhalde ödevi hazırlamaları. Evet, buraya kadar soru soran arkadaşımız var mı?
+
+333
+01:25:23,283 --> 01:25:30,003
+Bu 32 bit için yaptığımız şeyi 64 bit içinde yapabiliyor muyuz? Yukarıda x...
+
+334
+01:25:30,484 --> 01:25:33,623
+58 milyon, 6 milyon yazmıştık yukarıda sanki.
+
+335
+01:25:33,804 --> 01:25:36,564
+64 biti her şeyi çevirirsiniz.
+
+336
+01:25:37,164 --> 01:25:42,024
+Derlerken de ben şunu derlerken 32 bitik derle diye ekstradan bir şey yazdım custom build tool'a.
+
+337
+01:25:42,504 --> 01:25:49,664
+Onun için 64 bitik custom build tool'un o komut satırında çalıştırılması gereken şey ne olacak ona bakarsınız.
+
+338
+01:25:50,064 --> 01:25:58,384
+64 bitik registerları yani R harfiyle, Rize harfiyle başlayan R, A, X, B, X registerları kullananlar da bu işi gerçekleştirebilirsiniz.
+
+339
+01:25:58,484 --> 01:26:03,644
+mimariniz, kullandığınız IDE, SUB'u 64 biti destekliyor satan.
+
+340
+01:26:05,984 --> 01:26:06,923
+Tamamdır hocam.
+
+341
+01:26:08,084 --> 01:26:10,244
+Evet, başka soru soru olan arkadaşımız var mı?
+
+342
+01:26:12,884 --> 01:26:17,164
+Tamam, şimdi bu ikinci versiyondu. Bakın ne güzel, ne güzel.
+
+343
+01:26:17,923 --> 01:26:19,443
+Burada, direkt.
+
+344
+01:26:19,796 --> 01:26:42,996
+Ben sadece C kodu görüyorum. Şurada da aslında gördüğüm şey sadece C kodu. Arka tarafta assembly var. C yazan birisi arka tarafta assembly'e hiç girmeden bunu halledebilir. Yani çok kompak, anlaşılırlığı çok kolay. Bir diğeri de inline assembly. Onun da nasıl olduğunu yeni bir proje açarak onu da gösteriyor olalım.
+
+345
+01:26:46,131 --> 01:27:07,131
+Yine boş proje diyelim. Bu sefer ASM 0601 22 22 inline diyelim. Bu projenin tabi içinde kaynak dosyası yine örnek 3 olmuş olsun.
+
+346
+01:27:09,460 --> 01:27:32,427
+Bu sefer tek bir C dosyasının içerisinde assembly kodu yazıyor olacağım. Bakın nasıl yapılacağını birazdan beraber inceliyor olacağız. Sadece şu an nasıl bir işlem yapacağız onu görelim. Bir dizde elemanlar var diyelim ki. Bir dizde 10 tane eleman olsun. Bu 10 tane elemanın her birisinin...
+
+347
+01:27:32,500 --> 01:27:48,219
+binary gösterimindeki birlerle sıfırları aynalayan bir program yazar. Ne demek istiyorum? Bakın, 1, 1, 0, 1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16. Değil mi?
+
+348
+01:27:48,979 --> 01:27:57,940
+Diyelim ki böyle bir bizim bir wordümüz olsun. 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16.
+
+349
+01:27:58,720 --> 01:28:16,440
+İstediğim şey şu, aynalamaktan kastım, burada. Öncelikle o sayı öyle bir sayı olsun ki, 1, 0, 1, bakın. Önce şunu aldım, 1. Sonra bunu aldım. Sonra bunu aldım. Sonra şu 0 aldım. Ondan sonra şu 1'i aldım.
+
+350
+01:28:16,979 --> 01:28:31,619
+Ardından 3 tane 0 var, şu 3 0 aldım, 1, 2, 3. Ardından bir tane 1 var, onu aldım, 1. Sonra bir 0 var, 0. Sonra 1 var, sonra 0 var, sonra 1 var, sonra 0 var, sonra 1, 1 var.
+
+351
+01:28:32,148 --> 01:28:51,068
+Tamam, aynalayayım. Bu sayı, bu sayı olsun. Hexadecimal olarak gösterirsek, bu aşağıdaki sayı nedir arkadaşlar? Şurası kaç? 12, 13. Yani 13 nedir? D. D. Ondan sonra şuraya bakalım. 4, 5.
+
+352
+01:28:52,595 --> 01:28:56,675
+Şuraya bakalım, 1, şurası da 5. 1, 5, 100 adres ma.
+
+353
+01:28:57,135 --> 01:29:02,915
+2'en sayı, başında tabii 0 koymamız lazım, 0. Sayımız ne olmuş? Bakın şurası, A.
+
+354
+01:29:04,615 --> 01:29:09,075
+A, ya da bir tap daha gideyim. Başına o yüzden 0 koyuyorum, A.
+
+355
+01:29:09,855 --> 01:29:19,235
+Ondan sonra şurası 8'dir. Şurası yine A'dır. Geri kalan kısmı da şurası da B'dir.
+
+356
+01:29:19,923 --> 01:29:23,463
+İstediğim şey, sayı buyken, sayı buna çeviren
+
+357
+01:29:24,083 --> 01:29:50,884
+aynalayan, yani bir program yazalım. Bundan niçin ihtiyacınız oluyor? Bazı sistemlerde programlar veya işte veri gönderimi, mesela veri iletişiminde falan bu çok küçük kullanılır. Bir taraftan en anlamlı, en önce gönderilirken, diğer tarafta en anlamlı, en sonuna gönderilir. Dönüşüm yapılması gerekir. Buna Bicendin ve Lidlendin arasındaki dönüşüm deniliyor.
+
+358
+01:29:52,083 --> 01:30:06,923
+aynalamayı yaparak bu işlemi gerçekleştirebilirim. Çok ihtiyaç, gündelik hayatta kullanılan bir şey. Böyle bir şey mesela CD oturup yapmaya uğraşın. Her bir değerin tamam mı? Her bir değerin bitlerini alıp...
+
+359
+01:30:07,252 --> 01:30:23,712
+onları bu şekilde terse çevirin. Yapabilirsiniz. Bunu assembly de bakın yapabilirsiniz ama ne kadar uğraşırsınız? Bir şey yapın. Sonuçta Shift C'de de var. Alt tarafta assembly de olduğu için. Tabii ki C'de de olacak. Shift ile beraber bu işlemi nasıl yapalım? Bakın assembly de nasıl yapıyoruz?
+
+360
+01:30:26,260 --> 01:30:52,840
+sağa doğru veya sola doğru hiç fark etmez. Sağa doğru şu AX'in içerisinde olmuş olsun. MOV, AX, 0, D, 5, 1, 5, hexade, kösöde olarak yazıyorum. Yanlış anlamayın, bir programın tamamı değil bu. Sadece size anlatmak umuruyla. AX, 1. Bunu dediğimde arkadaşlar, şuradaki en anlamlı bir nereye düşecek? Carry flay'in içerisine düşecek.
+
+361
+01:30:53,268 --> 01:31:12,328
+carry play'in içerisine düşmüş olan bu biri, ben başka bir register'a iteleyebilir miyim? Evet. Rotate. Rotate. Yani veya işte bunu yine shift de kullanabilirsiniz ama rotate'in burada bir önemli noktası var. Onu dikkat etmenizi isterim. Ve x, 1.
+
+362
+01:31:12,948 --> 01:31:14,088
+sağa doğru
+
+363
+01:31:14,088 --> 01:31:16,088
+carry flay'ın içerisine düşürüyorum.
+
+364
+01:31:16,468 --> 01:31:17,588
+Buradan aldığım biri
+
+365
+01:31:17,588 --> 01:31:20,008
+bx'in içerisine yazıyorum.
+
+366
+01:31:20,468 --> 01:31:22,188
+Bakın ax'in değeri şu an şu.
+
+367
+01:31:22,968 --> 01:31:24,188
+bx'in değeri don't care
+
+368
+01:31:24,188 --> 01:31:26,408
+neyse. bx'in ilk değeri
+
+369
+01:31:26,408 --> 01:31:27,628
+şu olmuş oldu. Bir.
+
+370
+01:31:28,008 --> 01:31:29,448
+Şu an bx'in
+
+371
+01:31:29,448 --> 01:31:35,088
+15 tane 1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10, 11, 11, 11, 11, 12, 12, 13, 14, 14, 15 tane don't care.
+
+372
+01:31:35,088 --> 01:31:36,048
+Bir tane de biri var.
+
+373
+01:31:37,088 --> 01:31:37,548
+Tamam mı?
+
+374
+01:31:38,163 --> 01:32:00,263
+Ardından, bu loop şeklinde tekrar dönse, bir kez daha, bunu biz 16 bittik bir şey için yapıyorsak, 16 kere 32 bittik bir şey için yapıyorsak, 32 kere. Bu tekrar dönüyor olsa, bu sefer ne olacak? Şu 0 kere geldi. Ardından, tekrardan rotate dediğimde, bu 1 şuraya ötelendi, burası da 0 oldu.
+
+375
+01:32:01,103 --> 01:32:05,884
+Pardon yanlıştır, derlemeye çalıştım. Şurası da 0 oldu. Tamam mı?
+
+376
+01:32:06,068 --> 01:32:23,288
+Ondan sonra şu bir keriye düşse, düştü. Şuradan bunu siliyorum. Bir ötelemiş oldum. Sonuna da bir tane bir geldi. Böyle böyle sadece üç satır kullanarak ben bu işlemi bir sayı için gerçekleştirebilirim.
+
+377
+01:32:24,108 --> 01:32:26,108
+C'de bunu nasıl yapacağınıza bakmayın.
+
+378
+01:32:26,228 --> 01:32:49,788
+Yani bazı şeyleri, evet, program geliştirme süresi assembly'de fazla olsa ise kesin hızlı çalışıyor. Ama bazı durumlarda assembly tarafında program geliştirme süreci de hakikaten hızlı olabilir. İhtiyacınıza göre. Şimdi tabii vaktimiz falan da kısıtlı olduğu için bu orneyi de alacağım. Buraya getiriyorum.
+
+379
+01:32:53,011 --> 01:33:08,011
+Şimdi kodu düzenleyeceğim. Burada yapılan işlem ne? Bakın, ben birden ona kadar olan sayıları, 32 bitlik mimariyle, integer çünkü 32 bit, birden ona kadar olan sayıları yine dizinin içerisine koymuşum.
+
+380
+01:33:08,612 --> 01:33:16,771
+x8 gösterim, x demek ne demek? Hexadesimal olarak göster. 8 basamaklı hexadesimal olarak göster. Bunu onu söylüyoruz.
+
+381
+01:33:16,771 --> 01:33:21,011
+Hocam 8 basamaklı hexadesimal ne demek? Yani başındaki sayılar sıfır sayıları.
+
+382
+01:33:21,011 --> 01:33:44,011
+bir şey olsa bile onu da gösterdi diye vurguluyoruz. Ardından bir boşluk bıraktık. Bakın, burası önemli. Şurada ben bir şekilsel ayar vereyim arkadaşlar. Ondan sonra daha güzel görünecek kodumuz bizim bildiğimiz assembly kodu yani. Şunu yapabiliyorsam süper.
+
+383
+01:33:48,047 --> 01:34:14,028
+yukarıda tanımladığım C'nin değişkenlerini asembede direkt kullanabiliyorum. C'nin global olmasına gerek yok. C'nin yine dizisini burada aşağıda kullanabiliyorum. Nasıl yapıyorum bunu? C kodunun içerisinde iki tane alttan tire ASM yazıp süslü parantezi açıyorum. Bu araya ben inline yani satır içinde asembede kodu yazabiliyorum.
+
+384
+01:34:14,739 --> 01:34:35,659
+işlemimi tamamladım, yazdım. Az önceki anlattığım o mirrorlamayın tamamını yaptım. Bitti. Dizinin zaten tekrardan elemanlarına yazıyorum. Bakın sadece okuma yönlü scene'in değişkenlerini kullanmıyorum. Scene'in değişkenlerine yazma yönlü de bu işi yapabilirim. Az önce anlattığım şey sadece 16 kere değil, 92 kere dönüyor.
+
+385
+01:34:36,340 --> 01:34:50,340
+ve loopunu gerçekleştiriyor. Tabi kullandığım şeyleri şurada çift döngü ile bu işi gerçekleştireceğim için CX'i öncelikle site'in içerisine attım. Ondan sonra tekrardan site'in içerisinden çektim.
+
+386
+01:34:50,340 --> 01:35:04,340
+Ve bütün elemanlar dizinin 10 elemanı içinde bu işlemi gerçekleştiriyorum. Dizinin elemanları int tanımlı yani 4 byte tanımlı olduğu için 4er4'ü artırarak gidiyorum. Ondan sonra bakın yine C'de
+
+387
+01:35:04,340 --> 01:35:21,640
+printf yapıyordum. Siz birinci ödevi yaptınız. Printf, skenef uğraştırdı biraz değil mi? Bakın burada tek satırda bütün elemanları printf, skenef yapabiliyorum ve arkadaki lojiyi şurada nasıl kurgulamışım, kaç satırda?
+
+388
+01:35:21,908 --> 01:35:49,568
+C'de yazın, muhtemelen bundan daha fazla satır sürme ihtimali var. C'deki yazdığınız şeylerin daha fazla satır sürmesi bile assemblyye dönüştürüldüğünde kesinlikle bundan daha fazla sürüye olacak. O yüzden hem ben böyle durumlarda bitlerle ilgili çeşitli işlemler yapmam gerektiğinde mesela C'nin içerisinde diyerek inline assembly yazabiliyorum. Bu bir avantaj. Bunu diğer dillerde de yapabilirsiniz. Sintaks farklıdır. Her daim şu böyle değil.
+
+389
+01:35:49,908 --> 01:36:13,868
+mesela dc++ kullanıyorsan orada registerların önüne % işareti falan geliyor. Biraz sintaks farklı ama yaptığın şey temelde aynı. Onu da söyleyelim. Çünkü en nihayetinde bunlar da çalışsa, bunlar da çalışsa bu bir assembly konuna dönüştürüdü olacak. Burasını hiç dönüştürmüyor. Zaten var diye öylece bırakıyor. Öyle söylüyor. Şimdi şey yapalım.
+
+390
+01:36:14,484 --> 01:36:19,144
+derleyelim, müsaadenizle hatamız varsa onları düzeltelim. Tamam. Şimdi de çalıştıralım.
+
+391
+01:36:23,604 --> 01:36:24,284
+Ne oldu?
+
+392
+01:36:25,624 --> 01:36:26,424
+Evet.
+
+393
+01:36:27,064 --> 01:36:30,004
+Şimdi güzel görünüyor mu bilmiyorum burada.
+
+394
+01:36:33,184 --> 01:36:33,944
+Bakın.
+
+395
+01:36:34,464 --> 01:36:39,904
+1, 2, 3, 4, 5, 6, 7, 8, 9, A.
+
+396
+01:36:40,624 --> 01:36:41,644
+Ona kadar olan şeyler.
+
+397
+01:36:42,344 --> 01:36:44,524
+Şimdi bir nedir arkadaşlar?
+
+398
+01:36:45,284 --> 01:36:47,724
+Şuraya comment olarak yazıyorum.
+
+399
+01:36:48,064 --> 01:36:49,304
+Dizinin ilk elemanı için.
+
+400
+01:36:49,304 --> 01:36:49,804
+Bir.
+
+401
+01:36:51,188 --> 01:36:56,188
+hexadecimal olarak 1'i decimal olarak 1'e dönüştürüyorum. Başına 31 tane 0 koyacağım.
+
+402
+01:36:56,188 --> 01:37:05,188
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 15, 16, 17, 18, 19, 19, 20, 20, 21, 22, 23, 24, 24, 25, 25, 26, 27, 28, 29, 30.
+
+403
+01:37:05,188 --> 01:37:07,188
+31 tane 0 koydum. Bakın, bu.
+
+404
+01:37:07,376 --> 01:37:34,516
+32 bitlik hexadecimal olarak birim, binary olarak da, decimal olarak da hepsiyle zaten aynısına karşılık geliyor. Bunu aynalarken ne yapıyorum? Bu bir başa geliyor, geriye 31 tane 0 geliyor. Bu sayı nedir? Dörder dörder yazıyorum ya bakın, şu sayı nedir? Şu sayı. 8, geri kalımda 0, 1, 2, 3, 3 tane de 0. Bakıyoruz.
+
+405
+01:37:35,380 --> 01:37:38,659
+Gördüğünüz gibi 8 ve 0'lar.
+
+406
+01:37:39,480 --> 01:37:40,280
+Geldim, tamam mı?
+
+407
+01:37:40,860 --> 01:37:42,280
+Daha fazla tabii 0'larmış.
+
+408
+01:37:43,079 --> 01:37:44,920
+Şöyle, daha fazla 0'lar.
+
+409
+01:37:45,380 --> 01:37:47,480
+Pekala, ikinci sayı nedir?
+
+410
+01:37:47,600 --> 01:37:49,240
+2'yi nasıl yazarım binary olarak?
+
+411
+01:37:49,380 --> 01:37:50,200
+2'de şudur işte.
+
+412
+01:37:51,300 --> 01:37:51,980
+Yazamadım ya.
+
+413
+01:37:52,720 --> 01:37:54,420
+Bu da 2-1 binary olarak.
+
+414
+01:37:55,100 --> 01:37:57,640
+2'nin aynalanmış kısmı da şu.
+
+415
+01:37:58,460 --> 01:38:00,220
+Yani şurası bu sefer ilk 4'ü ne?
+
+416
+01:38:01,400 --> 01:38:01,840
+4.
+
+417
+01:38:02,159 --> 01:38:28,000
+İşte oradan 4 olarak bunu görüyoruz. Tamam? 4 olarak bunu görüyoruz. 3 nedir? Bakın, 3 de şudur. Pardon, şunu şöyle yapalım. 3, yani şu. İlk 4'ü nedir? 8 artı 4'ten 12'dir. Yani o da C'dir. Bakın, yine şurada C'yi tam karşısında görmüştüm.
+
+418
+01:38:28,851 --> 01:38:46,152
+Tamam. Yani bu böyle bir görselleştirme olsun diye aradaki hesabı da yapıyorum. Inline kısmı da önemli. Inline'ın mesela bu tarz ufak işlemler yapacaksanız hemen inline yazıp SMB'de işlemlerini gerçekleştirip sinin değişkenlerini kullanarak tekrardan sinin değişkenlerinin içerisine sonucu yazabilirsiniz.
+
+419
+01:38:46,707 --> 01:39:08,767
+harici yordam olarak kullanmanın avantajı ise şöyle bakıldığında bir kere karmaşık değil. Yani yarısı C, yarısı assembly değil. Toplükün bir bütün halinde kullanılıyor. Onun da öyle bir avantajı var. Dilerseniz gelin şuradan itibaren yine bir bak edelim. Nasıl olduğunu görmüş olun.
+
+420
+01:39:11,412 --> 01:39:25,652
+Pardon, pencereler, pilot taşlarılmış, kop. Bakın, bu sefer direkt şunun içerisine girdim, M değerini, M değerini, CX'in içine atayarak başlıyorum.
+
+421
+01:39:25,652 --> 01:39:27,572
+Ve hiç dallanma mallanma yok.
+
+422
+01:39:27,855 --> 01:39:54,655
+bir üstündeki satırdan itibaren, şurası bizim assembly code karşılıklarımız. Bakın, şuradan da geliyor, assembly code karşılıklarımız. Burayı, eee, lütfen dikkatli bir şekilde takip edelim. Nasıl gerçekleşiyor, demişler. F11 ile gideceğim. Bakın, aşağıya doğru, direkt gidiyor. Ya bunu tabii 3 milyar kez yapacağı için, benim için bu kadar beklemek çok zor. O yüzden durduruyorum.
+
+423
+01:39:55,347 --> 01:40:21,527
+Şunlarla falan herhalde şey yapılıyor, aklanabiliyor bu şeylerin üzerinden ama onlara siz bakarsınız. Bu da inline tarafı. Tahmin edebileceğiniz üzere bunun da muhteşem kullanılma avantajları söz konusu. Evet, buraya kadar sorusu olan arkadaşımız var mı? Bu kodları sizinle paylaşacağız yine, onu söyleyebilirim. Sorusu olan arkadaşımız var mı? Yok, güzel.
+
+424
+01:40:22,996 --> 01:40:37,996
+Benim anlatacaklarım bu kadar kıymetli arkadaşlar. Vizeyi çıkartırsak 13 haftalık bir assembly alt seviye programlama dersi almış olduğunuz. Genel hatlarıyla tüm programlama dilleri...
+
+425
+01:40:38,420 --> 01:40:49,960
+işlemci tarafından çalıştırılmadan önce assembly'e dönüştürüldüğünü söylemiştik. O yüzden arka tarafta bu assembly'nin nasıl çalıştığını biliyor olmanız sizin için önemliydi.
+
+426
+01:40:50,479 --> 01:41:04,079
+Ve belki sıkıştırdık, bazı yerler nedenler ona yoğun oldu. Ama genel hatlarıyla bunu vermiş olduk. Özellikle siber güvenliği tarafında, veri iletişimi tarafında çok sıkça kullanılıyor.
+
+427
+01:41:06,420 --> 01:41:29,039
+Umarım bunu kullanarak şu an iş yapan bizden mezun arkadaşlar var, hiç kuşkusuz. Ama tabii en temelde bunu kullanmasanız bile size üstte bir program yazılama yaparken, daha bu assemblyye dönüşecek, şöyle dönüştürülür, o yüzden şöyle yapayım ben diye düşünecek bir vizyon katmıştırız diye ümit ediyorum.
+
+428
+01:41:29,503 --> 01:41:54,203
+sınavlarınızda, finallerinizde başarılar diliyorum. Güzel bir dönem oldu benim adıma. Sınavınızda da inşallah öyledir. Bir an önce inşallah koyduğun aslından kurtularak iki döneme hızlı bir şekilde başlangıç yaparız. Benim ekstradan söyleyeceğim bir şey yok. Kendinize iyi bakın. Sağlıcakla kalın diyorum. Hoşçakalın.
+
+429
+01:41:55,683 --> 01:41:56,683
+Günler hocam.
+
+430
+01:41:57,140 --> 01:41:58,340
+İyi akşamlar.

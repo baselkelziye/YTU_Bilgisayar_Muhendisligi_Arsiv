@@ -1,0 +1,1071 @@
+1
+00:09:10,515 --> 00:09:12,175
+Evet, kıymetli arkadaşlar.
+
+2
+00:09:13,855 --> 00:09:15,755
+Etkide sayımız azalıyor.
+
+3
+00:09:17,055 --> 00:09:19,555
+İkiye düştük an itibariyle.
+
+4
+00:09:19,695 --> 00:09:20,755
+Hayırlısı olsun diyelim.
+
+5
+00:09:22,195 --> 00:09:23,596
+Bugün...
+
+6
+00:09:24,244 --> 00:09:44,423
+Sizin öncelikle ödevlerle ilgili birinci ödevinizi zaten ilan etmiştik. İkinci ödevi de ilan etmiş olduk. Onunla ilgili sorularınız varsa alabilirim. Ondan sonra bugünün konu anlatımına başlayacağım. Burada olmayan arkadaşlar da kayıttan dinliyor zaten. Var mı sorusu olan?
+
+7
+00:09:45,524 --> 00:09:47,443
+Hocam ben bir şey soracaktım da.
+
+8
+00:09:47,683 --> 00:09:48,724
+Tabii ki [öğrenci], buyur.
+
+9
+00:09:48,984 --> 00:09:53,823
+Hocam, raporun kapsamı tam olarak nasıl bir şey olmalı yani genel hatlarıyla?
+
+10
+00:09:55,384 --> 00:09:59,903
+Yani olayı şimdi öncelikle birinci ödev için soruyorsan.
+
+11
+00:10:00,179 --> 00:10:23,000
+olayın sonuçta bu bir linkli liste, bir algoritması var, bir akış diagramı şöyle bir çizilmesi lazım. Sonra programını yazdın, programında farklı yordamlar var. Yordamlar arasında parametre gönderdiysen ne şekilde gönderdin, siteye nasıl eriştin, işte değişkenler varsa tanımladıysen bu değişkenleri niçin kullandın, kodda yaptığın çeşitli böyle direkt ilk bakışta anlaşılmayacak.
+
+12
+00:10:23,360 --> 00:10:29,740
+ama açıklanılacağına açılacak şeyler varsa onların açıklaması gibi gibi şeylere yer vermen lazım.
+
+13
+00:10:30,379 --> 00:10:37,139
+Şimdi bugün sabahki grupla da konuştuğumuzda herkesin farklı bir yaklaşımı söz konusu olmuş.
+
+14
+00:10:38,360 --> 00:10:43,220
+Bazıları diyor ki yani ben hocam şöyle yaptım bazıları ben diziyi kopyaladım.
+
+15
+00:10:43,639 --> 00:10:46,759
+O diziyi bir daha kopyaladım. Sonra kopyayı değiştirip diğerini kopyaladım.
+
+16
+00:10:47,279 --> 00:10:51,139
+Yani biz bir taraftan şeyi de görmemiz lazım. Her şey doğru çalışıyor ama nasıl bir performans...
+
+17
+00:10:51,360 --> 00:11:04,360
+performansta yapmışsın bunu. Ne kadar iş gücü kullanıyor, ne kadar işlem gücü kullanıyor. Bunları görelim. Bazı yerlere de doğrudan koda bakılca anlaşılmayacağı için sizin güzelce açıklamanız lazım. Temel beklentimiz bu.
+
+18
+00:11:06,279 --> 00:11:07,100
+Anladım hocam.
+
+19
+00:11:08,740 --> 00:11:10,940
+Tamam, başka sorusu olan arkadaşımız var mı?
+
+20
+00:11:14,000 --> 00:11:17,700
+Yok. O zaman bugünkü şeyimize başlayalım.
+
+21
+00:11:20,340 --> 00:11:26,460
+Ekran paylaş, miyaparak. Evet, şimdi şöyle kapatalım.
+
+22
+00:11:30,163 --> 00:11:32,183
+Şimdi bu haftaya kadar
+
+23
+00:11:32,820 --> 00:12:00,820
+exit tipi, com tipi program yapısını, makro ve yordam kullanımını, alt yordamlar arasında parametrelerin ne şekilde aktarılacağını, keza makrolara parametrelerin ne şekilde aktarılacağını, ortak veri kesimi ve kod kesimi kullanırken nelere dikkat edilmesi gerektiği, aynı şekilde dallandığımız harici yordamda stack segment yani yığın kesimine ortak olarak nasıl kullanıyorduk, veriyi parametre...
+
+24
+00:12:00,820 --> 00:12:11,820
+kilometrelerimizi yığın üzerinden nasıl atıyorduk? Bunlar üzerinde durduk. Bu hafta ise kesmeleri, yani interapları anlatıyor olacağız. Interapların...
+
+25
+00:12:12,563 --> 00:12:37,583
+temel çalışma prensibi var. Bundan önce herhangi bir derste belki interap nedir duymamış olabilirsiniz. Hem kısaca çalışma prensiplerini anlatacağız. Hem de alt seviye programlama dileği olan SMB'le de bu nasıl gerçekleştiriliyor ona değiniyor olacağız. Şimdi interap ne? Bizim benim ekranımı görebiliyor musunuz? Bana göremiyor diye uyarı geldi ama.
+
+26
+00:12:38,899 --> 00:13:05,039
+Görünüyor hocam şu an. Görünüyor hocam. Tamam süper. O zaman o uyarıyı dikkate almıyorum. Kullanıcılar göremiyor falan diye bir uyarı geldi. Süper. Şimdi bizim bilgisayarımızda 8086 için düşünelim bir tane işlemci var. Modern bilgisayarlarımızda i7 son nesil kullanıyorsanız paraya da kıymışsanız 10 çekirdekli işlemciniz var fiziksel olarak çekirdeği olan diyelim ki.
+
+27
+00:13:05,524 --> 00:13:07,744
+Öncelikle bir şekerlekleden başlayalım.
+
+28
+00:13:08,683 --> 00:13:13,624
+Herhangi bir işlemci aynı anda sadece tek bir işi gerçekleştirebiliyor.
+
+29
+00:13:14,663 --> 00:13:19,183
+Yani siz müzik dinliyorsanız, sadece müzik dinleyebilirsiniz, onu oynatabilir.
+
+30
+00:13:19,663 --> 00:13:21,663
+Web sitesinde geziniyorsunuz, onu yapabilir.
+
+31
+00:13:21,783 --> 00:13:23,844
+Word'de doküman hazırlıyorsanız, onu yapabilir.
+
+32
+00:13:23,963 --> 00:13:25,984
+Bilgisayar oyunu oynuyorsanız, onu yapabilir.
+
+33
+00:13:25,984 --> 00:13:27,663
+Aynı anda...
+
+34
+00:13:27,663 --> 00:13:34,823
+eş zamanlı olarak birden fazla işlem gerçekleştirebilmesinin tek bir işlemci için imkanı yok.
+
+35
+00:13:35,264 --> 00:13:39,703
+Hocam, işte yeni bilgisayarlar o yüzden çok çekirdekli. Yani 10 tane çekirdeğin olduğunu düşünelim.
+
+36
+00:13:39,703 --> 00:13:55,223
+Sen bilgisayarı başlattığında çalışan programlara şöyle bir baktığında alt programlara bunların belki 100 tane, 200 tane sadece işletim sisteminin çalışması için gerekli olan alt programlar olduğunu göreceksin.
+
+37
+00:13:55,663 --> 00:14:00,864
+Yani bu programların temelde çalışması için de ayrıca bir işlemciye ihtiyaç var.
+
+38
+00:14:01,384 --> 00:14:05,423
+En basitinden söylüyorum, sizin bilgisayarınızın bir zamanı var.
+
+39
+00:14:05,584 --> 00:14:11,364
+Bu zamanın belirli zaman aralıklarıyla yenilenmesi lazım ki zamanı kaybetmeyin.
+
+40
+00:14:11,764 --> 00:14:13,443
+Bunun için ayrı bir cap var.
+
+41
+00:14:13,903 --> 00:14:16,943
+Veya ekrana görüntü yansıtılıyor.
+
+42
+00:14:17,203 --> 00:14:20,344
+Bu görüntünün ekrana yansıtılması için ayrı bir cap var.
+
+43
+00:14:20,344 --> 00:14:23,663
+Arka tarafta sizin internet trafiğinizi kontrol etmeniz...
+
+44
+00:14:23,663 --> 00:14:35,163
+diske belli şeyler yazıp alıyorsunuzdur, onları kontrol eden birçok ekstradan program var. Bir görev yöneticisini açtığınızda o programların neler olduğunu görebilirsiniz.
+
+45
+00:14:35,324 --> 00:14:48,564
+Pekala, benim sadece işletim sistemimin 100 tane program çalıştırdığı düşünülürse, ben aynı anda hem müzik dinlerken, hem oyun oynuyorum, hem de bir taraftan işte chatten mesajlaşıyorum.
+
+46
+00:14:48,564 --> 00:14:51,564
+Bunu nasıl gerçekleştirebiliyorum sorusunun cevabı...
+
+47
+00:14:51,663 --> 00:15:02,844
+Interrupt mekanizması. İşlemci, diğer bilgisayar içerisinde bulunan elektronik birimlere göre ve çevre birimlerine göre çok daha hızlı bir yapıda çalışıyor.
+
+48
+00:15:03,220 --> 00:15:22,740
+Elektronik birimlerden kastımız ne? Daha çok burada temelde RAM, disk. Disk, tabii artık çeşitli versiyonları var. Hard disk olabilir, SSD olabilir. Bu SSD'lerin yenileri, EMM mi? O tarz SSD'ler var biliyorsunuz. Hızları, performansları, M1 mi veya onların adını tam bilmiyorum. Performansları çok yüksek.
+
+49
+00:15:24,371 --> 00:15:52,371
+şeylerde olabiliyor. Yazım hızları çok yüksek, disklerde söz konusu olabiliyor. Ama yine işlemcinin hızıyla yarışabilmelerinin hala daha imkanı yok. Yaklaşıyorlar her geçen gün. Yani şunu söyleyebiliriz. Mesela RAM'deki hızların artış hızı işlemcilerdekilerden daha fazla. Evet, bunu söyleyebiliriz. Ama işlemcilerin de sürekli çekirdekleri artıyor.
+
+50
+00:15:52,371 --> 00:16:10,591
+Yani belki sizin 4.2 GHz çalışan işlemcinize 3200 MHz'de çalışan RAM'iniz hız olarak yetişmiş oluyordur ama diğerinin 10 çekirdeği var. O şekilde düşünün. Hala daha işlemci, bilgisayar içerisinde çok daha hızlı çalışan bilim. Her iki çevre birimlerini düşünün.
+
+51
+00:16:10,591 --> 00:16:20,371
+Çevre birimlerinden kastımız mouse, klavye, yazıcı, ekran, monitör yani. Bunları düşünün. Yani bir klavyeye bir saniyede kaç tane?
+
+52
+00:16:20,371 --> 00:16:23,251
+ane tuşa basabilirsiniz ki. Değil mi?
+
+53
+00:16:23,488 --> 00:16:30,268
+veya mouse'a hareket ettiriyorsunuz, imleci, işte benim imlecimi görüyor musunuz bilmiyorum, sağda solda böyle dolaşıyor.
+
+54
+00:16:30,828 --> 00:16:35,988
+Bu da aynı şekilde farklı bir program tarafından dolaştırılıyor, tahmin edebileceğiniz üzere.
+
+55
+00:16:36,448 --> 00:16:41,828
+Ne kadar sıklıkla yapılması gerekir veya monitöre görüntüsü, bilgisayarın görüntüsü yansıtılıyor.
+
+56
+00:16:42,368 --> 00:16:50,108
+Bu işte bilmiyorum, 1000 Hz'lik monitörler var mı bilmiyorum, benim monitörüm 50 Hz mesela, şu an sizinle görüştüğüm.
+
+57
+00:16:50,108 --> 00:16:51,488
+Oyuncu monitörler.
+
+58
+00:16:51,488 --> 00:17:16,488
+monitörleri oluyor, 120 Hz, 200 Hz, belki 1000 Hz'lik monitörler de vardır. Yani saniyede 1000 kere ekranın yenilenmesi. Ama milyarlarca kez işlemci bu işi gerçekleştirebilecek kapasitede. O yüzden işlemci hızlı çalışan bir birim olduğu için yavaş çalışan birimlerle sırasıyla ilgileniyor. Mesela diyelim ki ekranımızı saniyede 50 kez yenilemek gerekiyorsa, ekranı yenilemek de çok...
+
+59
+00:17:17,236 --> 00:17:25,136
+minisaniye, nanosaniyeler cinsinden bir zaman alıyorsa ben ekranı yenileyip geliyorum. Ondan sonra başka birisinin işiyle uğraşıyorum.
+
+60
+00:17:25,516 --> 00:17:32,276
+Müzik dinlediğinizi düşünelim mesela. Öncelikle o dinlediğiniz müziğin notalarını haparlöre verecek işleri gerçekleştiriyorum.
+
+61
+00:17:33,056 --> 00:17:41,916
+Ondan sonra oyun oynuyorsanız oyunla ilgili aksiyonları gerçekleştiriyorum. Ondan sonra işte internetten bir şey araştırıyorsanız onu yapıyorum.
+
+62
+00:17:45,236 --> 00:17:47,536
+bütün işlemleri hallediyorum ve bunu
+
+63
+00:17:48,019 --> 00:17:57,720
+herhangi bir biz insan oğlu olarak bilgisayar kullanıcısının anlayamayacağı hızla real time'ı hiçbirisinin kaybetmeyeceği şekilde gerçekleştiriyorum.
+
+64
+00:17:58,180 --> 00:18:04,440
+Bazen tabii ki o hızı yakalayamıyorum. İşlemci %100 çalıştığı performansı durumu söylüyorum. O zaman da donmalar.
+
+65
+00:18:04,440 --> 00:18:16,019
+Yani mouse'u bile kenara sağa sola hareket ettiremiyorsunuz. İşte mouse'tan gelen sinyalin alınıp, işlenip mouse'u hareket ettirebilecek o programa sıra gelmiyor.
+
+66
+00:18:16,019 --> 00:18:44,000
+öyle düşünün. İşlemci çok yoğun çalıştığı durumda. Şimdi bizim bu işleri gerçekleştirebilmemiz için kullandığımız mekanizmanın interap mekanizması. Yani sen dur, interap kesme demek, bölmek, ara verdirmek. Sen dur, ben çalışayım. Sen dur, ben çalışayım. Sen dur, ben çalışayım. Sen dur, ben çalışayım şeklinde ilerliyor. Bizim şu an hali hazırda benim görüntümüm ve sesimin size gelmesi için kullanılan zoom.
+
+67
+00:18:44,019 --> 00:19:03,960
+programı, aynı zamanda PowerPoint'im açık, aynı zamanda işte mikrofonumdan ses okunuyor, size gönderiliyor, kameram okunuyor. Bunların hepsi ayrı ayrı birer program açıkçası, arka tarafta driverları. Bunların her birisi bir interapa maruz kalarak size aynı anda hepsini çalıştırabilecek bir imkan.
+
+68
+00:19:04,468 --> 00:19:23,248
+tanınmış oluyor. Öyle söyleyelim. İşte çevre bunlardan zaten bahsettik kısaca. Monitör, yazıcı, klavye, mouse gibi bunlar temelde çevre birimleri dediğimiz şeyler ve RAM'in de hala daha nisbi olarak işlemciye göre daha yavaş çalıştığını söyledik.
+
+69
+00:19:23,248 --> 00:19:32,468
+Pekala, işlemci ile yavaş birimler arasındaki ilişki nasıl olması lazım? Interrupt mekanizmalarının şu an günümüzde aktif bir...
+
+70
+00:19:32,468 --> 00:19:40,288
+şekilde kullanıldığını biliyoruz. Sizin bilgisayarınızda, benim bilgisayarımda, hatta işte birazdan göreceğiz, 8086 döneminde bile
+
+71
+00:19:40,288 --> 00:19:50,148
+Interrupt mekanizması aktif bir şekilde kullanılıyor. Pekala, Interrupt mekanizmasının haricinde veya öncesinde çeşitli sistemler üzerinde durulmuş mu?
+
+72
+00:19:50,228 --> 00:19:59,327
+Durulmuş. Bunlardan ilki buzi waiting. Diyelim ki bir hizmet almak isteyen işlemci var, belli bir porttan bir işlem var.
+
+73
+00:20:00,000 --> 00:20:06,800
+O işlem benden hizmet almak ister mi diye bekliyorsunuz. İşlemciniz boşta bekliyor.
+
+74
+00:20:07,320 --> 00:20:13,139
+Yani şöyle düşünün, buna daha güzel örnek vermek adına. Diyelim ki o gün misafiriniz gelecek size.
+
+75
+00:20:13,779 --> 00:20:31,339
+Siz kapıya çıkıyorsunuz. Misafir herhangi bir saatte gelebilir. Bilmiyorsunuz onu. Kapıya çıkıyorsunuz. Gelirse diye kapıda bekletmeyeyim diye kapıda bekliyorsunuz onun gelmesi. Boş boş bekliyorsunuz. Başka hiçbir işte uğraşmıyorsunuz. Düşünün tek işlemciniz olduğu durumu.
+
+76
+00:20:31,859 --> 00:20:39,579
+böyle bir durumda sadece tek bu işi yapabilmek için oradan istek gelirse diye boşta bekliyor.
+
+77
+00:20:40,299 --> 00:20:45,359
+Tabii istek gelebilir. Yani misafiriniz geliyor, onu ağırlıyorsunuz, içeriye alıyorsunuz.
+
+78
+00:20:45,739 --> 00:20:49,739
+Onunla ilgili işte görüşmenizin çeşitli sebepleri olabilir. Bu sadece muhabbet de olabilir.
+
+79
+00:20:49,859 --> 00:20:52,159
+İşleri yapıyorsunuz, uğurluyorsunuz, tekrar yenisi geliyor.
+
+80
+00:20:52,159 --> 00:20:59,159
+Yani boşta beklemek. O işlem için istek gelinceye kadar...
+
+81
+00:20:59,859 --> 00:21:21,559
+işlemcinin boşta beklemesine biz busy waiting diyoruz. Mesela yazıcıya atadığımız sadece bir işlemci olmuş olsun. Yani benim evimde yazıcı var, belki en son bir ay önce kullandım. Bir aydır beni kapıda beklediğini düşünün. Bir aydır bağlı, çalışık, yani aktif şu an. Bir aydır ama hiç istek gitmedi yani.
+
+82
+00:21:22,132 --> 00:21:36,451
+ve saniyede yani bizi waiting yaparken bekliyorsunuz ya çok ne denir ona işlem yapabilme kabiliyetine sahip olan bir kapasiteniz var ve oradan belki bir iş gelir diye boşta bekliyorsunuz.
+
+83
+00:21:36,948 --> 00:22:04,948
+bundan bir tık daha iyi olan yöntem, polling yöntemi. Onda da şöyle, tamam yani misafir gelecekse kapıda bekletmek olmaz, içeriye alalım. Ama ben onu sürekli boşta bekliyorum, başka şeylere fırsatım kalmıyor. Yani diğer işlerle uğraşamıyorum. Yapılması gereken birçok iş var, diğer işlerle uğraşamıyorum. O zaman ne yapmam lazım diye ortaya atıldığında işte polling de bir çözüm öneriyorum.
+
+84
+00:22:04,948 --> 00:22:32,708
+olarak ortaya atılıyor. Polink nasıl bir şey? Diyor ki, ya ben kapıda niye bekliyorum? Benim misafirim gelirse, ben biraz belki kapıda beklesin, her beş dakikada bir gidip onu kontrol edeyim. Bu beş dakikayı örnek olarak veriyorum tabii ki, belli bir time interval var orada. Her beş dakikada bir gidip kontrol edeyim, gelmiş mi, gelmemiş mi diye. Ben gittim, kontrol ettim, kapıyı kapattığım anda yok mesela.
+
+85
+00:22:32,948 --> 00:22:44,968
+Kapıyı kapattığım anda gelmiş olabilir. Ama ben onu bir sonraki beş dakika sonra kontrol ettiğimde anca içeri alacağım. Yani o misafir orada dört dakika elli dokuz saniye bekleyebilir.
+
+86
+00:22:45,683 --> 00:23:13,063
+Ben çünkü 5 dakikada bir kontrol ediyorum ama benim avantajım ne? Biliyorum ki onu 5 dakikada bir kontrol edeceğim. Geri kalan o 5 dakikada başka işlerle uğraşabilirim. Yapılması gereken diğer isteklere karşılık verip onlarla uğraşabilirim. Ve 5 dakika sonra gittiğimde belki 4,5 dakika, belki 2 dakika, belki de sadece 1 saniye beklemiş oradaki kişiyi içeriye alabilirim. Pauling'de temelde böyle çalışıyor.
+
+87
+00:23:13,683 --> 00:23:25,324
+tahmin edebileceğiniz üzere busy waiting'e göre daha avantajlı bir yöntem. Bu perspektiften bakılırsa busy waiting de hala günümüzde kullanılıyor ve birazdan avantajlarından bahsediyor olacağım.
+
+88
+00:23:26,083 --> 00:23:35,324
+Temel zaten yöntemin kendisinde avantajının ne olduğu belli ama örnek verince daha güzel canlanıyor bazen kafanızda. Onlardan bahsediyor olacağım.
+
+89
+00:23:35,324 --> 00:23:40,284
+Bir diğeri ise interab mekanizması. Interab mekanizmasında nasıl oluyor?
+
+90
+00:23:40,948 --> 00:23:46,588
+ya misafir gelirse ben kapıya bir zil koyayım. Ben zaten oturmuşum kitabımı okuyorum.
+
+91
+00:23:47,604 --> 00:24:08,943
+Misafir geldiği anda zili çalar, kitabımın arasına ayrıcı koyarım. Niye koyuyorum? Nerede kaldığımı bilmem lazım çünkü. Programın bir akışı söz konusu çalıştırılıyor veya ben kitap okuyorum bir akışım söz konusu. Kapatsam ondan sonra nerede kaldım? Açıp bulamayacaksın. O yüzden ayrıcımı ben koyarım.
+
+92
+00:24:09,523 --> 00:24:26,723
+Gerekirse kaldığım satırın altını çizerim, giderim kapıya, misafirimi alırım içeriye, ondan sonra yeni misafir gelirse tekrardan zili çalar. Interrupt mekanizması böyle, bölüyorsun. Benim kitap okumamı adam bölüyor. Ben hiç misafir gelecekmiş gibi davranmıyorum.
+
+93
+00:24:27,380 --> 00:24:55,260
+Ben kitap okumaya çalışıyorum veya farklı farklı işlerim varsa bir taraftan yemek yapıyorum, televizyon izliyorum, şunu yapıyorum, bunu yapıyorum evde. Misafir geldiğinde zili çalıyor, beni bölüyor, gidip onunla ilgileniyorum, misafiri içeri alıyorum, işlerime misafirle de ilgilenerek diğer işlerime de kaldığım yerden devam ediyorum. Bu mekanizmaya da biz interab mekanizması diyoruz. Buradaki önemli nokta tekrar söylüyorum. Ben bir programım, benim çalışmam başka bir program.
+
+94
+00:24:55,380 --> 00:25:03,740
+tarafından durdurulduysa, nerede durdurulduğum bir yerde tutulması lazım. Kitabın arasına ayraç koymak gibi ki ben
+
+95
+00:25:03,740 --> 00:25:10,880
+işi tekrardan o kitabı okumaya başladığımda veya o programın kalan yerinden çalıştırmayı istediğimde
+
+96
+00:25:10,880 --> 00:25:17,019
+nerede kaldığımı biliyor olalım. Interhapları, zaman kesmeleri. Az önce bahsettim.
+
+97
+00:25:19,316 --> 00:25:25,396
+Bizim bilgisayarımız içinde çalışan birçok program zamana duyarlı olarak çalışıyor olabilir.
+
+98
+00:25:25,816 --> 00:25:28,376
+Zamana göre farklı işler gerçekleştiriyor olabilir.
+
+99
+00:25:28,655 --> 00:25:31,496
+Her gece saat birde bir şeyleri kontrol ediyor olabilir.
+
+100
+00:25:31,876 --> 00:25:34,796
+Güncellemeleri zamana göre ilgileniyor olabilir.
+
+101
+00:25:34,996 --> 00:25:38,996
+Veya her 5 saniyede bir çeşitli işlemler gerçekleşiyor olabilir.
+
+102
+00:25:39,675 --> 00:25:41,936
+Ekranın yenilenmesi belli frekansta oluyor.
+
+103
+00:25:41,936 --> 00:25:46,836
+Yani frekansa dayalı çalışan her şey bizim temelde zaman kesmesi tarafında.
+
+104
+00:25:47,316 --> 00:25:59,976
+Aynı şekilde bilgisayarın zamanının güncellenmesi dahi buna ek olarak bir de grafik kesmeleri yani ekranın yenilenmesiyle ilgili çeşitli interaplar söz konusu.
+
+105
+00:26:00,536 --> 00:26:07,336
+Interap çeşitlerine gelirsek temel olarak iki gruba ayırıyoruz. Donanım kesmeleri ve yazılım kesmeleri.
+
+106
+00:26:09,567 --> 00:26:28,847
+kesme isteklerine biz donanım kesmeleri diyoruz. Bilgisayarımızın içerisinde işletim sistemi yüklü olmasa bile anakartla beraber gelen bir yazılım var. Buna biz BIOS diyoruz. BIOS yazılımın içerisinde bulunan kesmeler temelde donanım kesmeleri.
+
+107
+00:26:29,395 --> 00:26:57,395
+kontrol etmek amacıyla kullanılıyor. Bir de 8086 tarafında düşündüğümüzde orada BIOS'un üzerine DOS işletim sistemi yükleniyor. Hatta biz de DOS Box'tan hep örnekler yapmış olduk. Orada da harici olarak kesmeler söz konusu. Bunlara da yazılım kesmeleri diyoruz. Donanım kesmelerin bir kısmı çok acilde olabilir. Mesela düşünün yuvasından RAM'in oynadığı durum. RAM yuvadan çıkmış. Yani RAM'i yok. RAM'i yokken bilgisayar nasıl çalışsın? Hemen bir kesme öğretilir.
+
+108
+00:26:57,395 --> 00:27:25,336
+bakış devam ettirilemiyor diye size mesela bir uyarı verilebilir veya ben klavyenin herhangi bir tuşuna bastım bu istek size o tuşu eğer bir editördeysem, bir ekrandaysam, textbox'ın içerisindeysem yazmak olarak görüntülenmesi gerekiyor. Aynı şekilde mouse'un oynatılması gibi çeşitli isteklere donanım isteği olarak söyleyebiliriz. Bunları tabii kontrol eden bir inter-up handlerımız var.
+
+109
+00:27:25,395 --> 00:27:31,355
+Interrupt'lar nereden gelmiş, ne şekilde davranıyorlar, nereye gidiyorlar? Bunları kontrol ediyor bu Interrupt Handler'ı.
+
+110
+00:27:31,355 --> 00:27:34,015
+Ve çeşitli dahili kesmeler.
+
+111
+00:27:34,612 --> 00:28:02,572
+söz konusu oluyor. Temel kesmelerin haricinde. Bir de bu şekilde gruplandırabiliyoruz interapp'ları. Mesela bizim trapflay'miz vardı. Hatırlarsanız, adım adım çalıştırmak için kullanılıyordu. Biz şimdiye kadar debug ekranında programlarımızı çalıştırdığımız için orada zaten trace ile beraber adım adım ilerleniyordu. Ama ödev yaptığınızı düşünün. Komut satırından işlemleri alıyorsunuz. Sanki go dermiş gibi siz kullanıcıdan yeni bir veri alınca
+
+112
+00:28:02,612 --> 00:28:28,211
+kadar programınız başlıyor, gerekli işleri yapıyor ve sonlanıyor. İşte bu durumda da adım adım çalıştırmak isterseniz, Treffley'i ona göre set ediyordunuz. Bunun için bir interab gerekli. İşte logical işleri çeşitli, logical işleri yapmak için ayrıca interab gerekli olduğu gibi bakın matematiksel bir işlemde sıfıra bölme hatasında ayrıca bir interab gerekli. Sıfıra bölme hatası matematiksel olarak
+
+113
+00:28:28,723 --> 00:28:56,723
+yani sıfıra bölme matemestel olarak imkansız ve sıfıra bölme komutunun yazılması, işte div sıfır gibi bir ifadenin yer alması sintaksal olarak herhangi bir şekilde aykırılığa sebebiyet vermiyor. Divin yanında bir şey var. Div sıfır diye hiçbirimiz zaten dikkatsizlikten dolayı bunu yapmayız. Sıfıra bölmek istemeyiz. Div bir değişken yazarız. Div sayı. Ama o sayı değişkeninin içi onun üstündeki kod...
+
+114
+00:28:56,723 --> 00:29:06,124
+çeşitli böyle çarpma, bölme, toplama, çıkartma işlemleri sonucunda sıfıra düşmüş olabilir. Böylece yanlışlıkla siz de farkında olmadan sıfıra bölmüş olabilirsiniz.
+
+115
+00:29:06,483 --> 00:29:10,655
+Sintaks olarak her şey doğrudur ama sizin işlemcinizin...
+
+116
+00:29:10,655 --> 00:29:18,655
+Bu komutu gerçekleyebilecek bir kapasitesi olmadığı için ayrıca bir interab üretilir ve programın akışına son verilir.
+
+117
+00:29:18,995 --> 00:29:31,035
+Harici kesmeler kısmına geldiğimizde ise temelde iki çeşit harici kesmeler var ve bu harici kesmeler bizim işlemcimizin içerisinde bulunan iki tane bacak aracılığıyla alınıyor.
+
+118
+00:29:31,475 --> 00:29:38,455
+Bunlardan birisi non-maskable interablar. Bacağın adı da NME. Non-maskable maskelenemez.
+
+119
+00:29:38,655 --> 00:29:50,295
+bir diğeri de maskelenebilir kesmeler, interap, int, re. Maskelenemez kesmeleri herhangi bir şekilde engelleyebilmenin imkanı yok.
+
+120
+00:29:50,755 --> 00:29:59,735
+Yani az önce söylediğim gibi, RAM yerinden çıkmış, maskeleyemez. RAM yerinden çıktıktan sonra zaten neyi maskeleyecek? RAM olmadan bilgisayar çalışmıyor.
+
+121
+00:30:00,243 --> 00:30:26,923
+gibi. O yüzden maskelenemez kesmeler bu tarz durumlarda önem arz ediyor. Bir diğeri de maskelenemez kesmeler. Yani siz interab file'inizi benim çalıştı, benim yazdığım program herhangi bir şekilde interab almasın diye interab file'i ayarlarsanız böyle durumda sizin yazdığınız program maskelenemez kesmeler tarafından kesilmeden devam edebilir.
+
+122
+00:30:27,347 --> 00:30:38,487
+Ama yine maskelenemez bir kesme geldiğinde bu işlem sekteye uğrar. Bu da 8259A bütünleşik devresi üzerinden sürdürülebiliyor. Maskelenemez bir kesmeler.
+
+123
+00:30:38,487 --> 00:30:48,547
+Tabi bu kesmelerin bir öncelikleri var. Diyelim ki bizim programımız birden altıya kadar önceliği olan bu kesmelerden herhangi birisine uğradı.
+
+124
+00:30:48,667 --> 00:30:55,347
+Diyelim ki üç numaralı öncelikli kesmeye uğradı. Kendisinden daha yüksek öncelikli kesmeler geldiğinde...
+
+125
+00:30:55,347 --> 00:31:23,327
+o kesmeler gerçekleştirilir. Daha düşük öncelikli kesmeler gelirse o kesmeler bu bizim kesmemizin kodunun tamamlanmasını bekler. En yüksek öncelikli kesme gördüğünüz gibi sıfıra bölme hatası. İşletim sistemi tarafında bu komut sintaksi olarak doğru ama herhangi bir şekilde işlemcinin gerçekleştiremeyeceği bir şey olduğu için bir güvensiz durum oluşur. Unsafe state deniliyor buna.
+
+126
+00:31:23,347 --> 00:31:37,467
+ve böyle olduğu için o programın hatta bazı durumlarda DOS tarafında konuşacaksak işletim sisteminin tekrardan başlatılması söz konusu olur. Bir diğeri yazılım olarak herhangi bir şekilde numarası verilerek çalıştırılacak.
+
+127
+00:31:38,036 --> 00:32:05,996
+kesmeler, iki numaralı öncelikle. Şuradaki gördüğünüz diyezin yerine bir rakam geliyor. Mesela ödev yaparken de kullanmışsınızdır. 21 numaralı, 21 hexadecimal numaralı kesme, ekrandan okuma yazma işlemleri için kullanılıyor. Siz Interrupt 21 yazdığınızda 21 numaralı kesmenin kodunu kullanabiliyorsunuz. Alt fonksiyonları ve alt fonksiyonu da alt fonksiyonları söz konusu olabilir burada. Böyle bir kesmenin önceliği ise iki.
+
+128
+00:32:06,036 --> 00:32:34,036
+üçüncü öncelikte bakın. Ardından overflow oluşmasıyla ilgili kesmeler. Üçüncü öncelikte non-muscable interuplar. Dördüncü öncelikle mesela bellek üzerinde oluşan çok kritik hatalar. Interuplar 0.2 de mesela bununla ilgili çeşitli handle durumları söz konusu demek ki. Bir diğeri işte 8259A entegresiyle gelen interuplar ve en sonunda da trap flag üzerinden teker teker biz programımızı çalışıyoruz.
+
+129
+00:32:34,036 --> 00:32:55,096
+karıştırmak istiyorsak bununla beraber gelen interaplar. Interapların öncelik mekanizmasının olması iş değişi tabii ki kolay kolaylaştırıyor. Daha yüksek öncelikle gelen bir interap yani diyelim ki divide by zero ile sizin programınız yarıda kesilmiş ondan sonra başka yeni bir interap çağırıp programınıza devam edemezsiniz. Çünkü
+
+130
+00:32:55,763 --> 00:33:05,603
+Yani işletim sisteminin akışına doğrudan devam edemiyorsunuz. Çünkü artık daha yüksek öncelikli bir interap geldi. Öncelikle bu durumu, problemi çözmeniz lazım.
+
+131
+00:33:05,763 --> 00:33:20,283
+Tabi buraya kadar sorusu olan arkadaşımız varsa sorabilir. Biraz sayı artmış tabi. Başladığımızda 3 kişi vardı. Şimdi 15 kişi olmuş. Sorusu olan arkadaşımız varsa sorabilir. Yoksa devam ediyor olacağız.
+
+132
+00:33:21,619 --> 00:33:24,599
+Tamam, çok sorunuz olmadığı için ben de hızlı hızlı geçiyorum.
+
+133
+00:33:25,460 --> 00:33:53,460
+Pekala, bir kesme oluştuğunda ne tarz işlemler gerçekleşiyor? Ondan bahsedelim. Bizim programımız bir kesme tarafından kesildi veya biz bir kesme kullandık. Ne oluyor? Otomatik olarak olan şeylerden bahsediyoruz. Öncelikle bayraklar yığında saklanıyor. Push F komutu çalıştırılıyor. Trap flag 0 oluyor, interrupt flag 0 oluyor, clear ile beraber 0'lıyorsunuz. Interrupt flag'in 0 olması demek ne demek? Herhangi bir şey.
+
+134
+00:33:53,460 --> 00:33:56,880
+şekilde interap almayayım diye söylüyoruz.
+
+135
+00:33:57,332 --> 00:34:00,572
+ve kod segment yazmacı yığına atılıyor.
+
+136
+00:34:01,052 --> 00:34:05,272
+Push.cs, instruction pointer yazmacı yığına atılıyor.
+
+137
+00:34:05,732 --> 00:34:11,472
+Hatırlarsanız biz far tipi call yaptığımızda, yani far tipi yordam çağırdığımızda
+
+138
+00:34:11,472 --> 00:34:17,552
+yine kod segment ve hala hazırdaki offset değerimiz, yani instruction pointerımız siteyin içerisine atılıyordu.
+
+139
+00:34:18,092 --> 00:34:18,872
+Burada da öyle.
+
+140
+00:34:19,391 --> 00:34:24,891
+Bir interrupt'ın yordamına, sanki harici yordama dallanıyormuşuz gibi dallanıyoruz.
+
+141
+00:34:25,331 --> 00:34:29,131
+COL değil de INT komutunu kullanarak bunu gerçekleştiriyoruz.
+
+142
+00:34:29,612 --> 00:34:38,211
+FAR tipi bir yordama dallandığımızda siteyin içerisine CODE segment ve Instruction pointer'ın değerini, yani iki word toplamda dört byte değer atarken,
+
+143
+00:34:38,692 --> 00:34:45,131
+NEAR tipi bir yordama dallandığımızda sadece Instruction pointer'ın değerini atıyorduk ki bu da iki byte'e karşılık geliyordu.
+
+144
+00:34:45,131 --> 00:34:53,331
+INTERAP tarafından bakıldığında ise bir de bayrakları ek olarak siteyin içerisine attığımız için toplamda altı byte'lık bir...
+
+145
+00:34:53,331 --> 00:35:03,331
+bir değeri site'in içerisine 60 oluyoruz. Pekala interaplar nasıl çalıştırılıyor? Int, minimoni ile beraber bir sayı yazılıyor.
+
+146
+00:35:03,411 --> 00:35:12,311
+O interapın numarası. Diyelim ki 30 yazdık, decimal olarak. Bu şu demek, interap vektör tablosuna şu şekilde erişiliyor.
+
+147
+00:35:12,931 --> 00:35:21,331
+Ben 30 ile 4'ü çarpıyorum. Öncelikle şunu söyleyelim, daha güzel anlaşılsın. Her bir interapın fiziksel memori içerisinde
+
+148
+00:35:21,331 --> 00:35:23,971
+kod bloğu var. Kodu.
+
+149
+00:35:24,467 --> 00:35:52,467
+Belli bir alanın içerisinde kopyalanıp yapıştırılmış durumda. Pekala, ben buraya nasıl erişirim? Bilmem gereken şey ne? Birisi kod segment, ikincisi offset adresi. Bu ikisini bilmem lazım. Kod segment değeri 1 word, offset adresi de 1 word, toplam 2 word. Yani 4 byte'lık bir değer. Ben ilgili interrup'ın kodunun olduğu yere gidebilmek için onun adresinin 4 byte ile tutulduğunu biliyor olmam ve bu 4 byte'ı kullanılabilir.
+
+150
+00:35:52,467 --> 00:35:58,047
+ilgili yere gitmem gerekiyor. İşte burada ben
+
+151
+00:35:58,516 --> 00:36:26,516
+her bir interab için 4 byte'lık adres yeri tutuyorum. O yüzden bir sonraki interabın adreslerine erişebilmek için 4 byte sonraki değerlere bakmaya başlıyorum. Ne demek istiyorum? Ben bir dizi düşünün, double word tanımlı. Yani word değil de double word tanımlı. Dizinin her bir elemanı 4 byte'lık olmuş olsun. Dizinin ilk elemanı 0. indisteyken, ikinci elemanı 4. indisteyken, üçüncü elemanı 8. indisteyken.
+
+152
+00:36:26,516 --> 00:36:51,576
+8. indiste oluyordu. Burada da öyle. Her bir interrup için 4 byte'lık yer kullanıldığından ötürü, 4 byte'lık adres için yer kullanıldığından ötürü ben interrup'ımın adresine erişmek için interrup'ımın numarasını 4 ile çarpıyorum. Çarptıktan sonra diyelim ki 21 hexidesimal interrup'ını kullanıyorum. 21 hexidesimal kaç demek?
+
+153
+00:36:52,083 --> 00:36:55,143
+16 x 2, 33.
+
+154
+00:36:55,643 --> 00:36:55,903
+Değil mi?
+
+155
+00:36:56,023 --> 00:36:57,423
+33 decimal demek.
+
+156
+00:36:58,023 --> 00:36:58,623
+33
+
+157
+00:36:59,219 --> 00:37:24,899
+x4, 132. Ben 132. adrese gittim ve 132 ile 133. adresten aldığım bir word'lük değeri Instruction Pointer'ın içerisine koyuyorum. Ardından 134 ve 135. adresten aldığım ikinci word'ü ise kod segmentin içerisine koyuyorum ki programın akışı o Interup'ın kodunun bulunduğu yerden devam ediyor olsun.
+
+158
+00:37:27,219 --> 00:37:33,420
+istiyorsak, yani kesmeyi biz yazacaksak eğer yazmaçlarla ilgili durumları çok dikkate almamız gerekiyor.
+
+159
+00:37:33,819 --> 00:37:50,279
+Nasıl ki harici yordam yazdığımızda, yazdığımız yordama girdiğimiz anda o yordam içerisinde kullandığımız registerları başlangıçta push yaparak sitenin içerisine koyuyorsak ve return'le beraber dönmeden önce pop yaparak onu çekiyorsak,
+
+160
+00:37:55,219 --> 00:37:59,800
+başında kullandığımız registerları siteyin içerisine atıp
+
+161
+00:38:00,244 --> 00:38:04,923
+En sonunda tekrardan onları site'in içerisinden çekmemiz gerekiyor.
+
+162
+00:38:05,304 --> 00:38:10,564
+Ve Interrupt'tan dönerken de IRAT, Interrupt Return komutunu kullanıyoruz.
+
+163
+00:38:11,003 --> 00:38:17,423
+Far tipi bir yordamdan dönerken return far kullanıyorduk ve stackten otomatik olarak 4 byte'lık veri çekiyordu.
+
+164
+00:38:18,184 --> 00:38:24,623
+Near tipi bir yordamdan dönerken return komutu, RAT komutu kullanıyorduk ve stackten 2 byte'lık bir veri çekiyordu.
+
+165
+00:38:24,623 --> 00:38:25,623
+IRAT.
+
+166
+00:38:26,387 --> 00:38:42,327
+Interrupt Return komutu kullanarak Interrupt'lardan dönebiliyoruz ve Interrupt'a giderken otomatik olarak siteyin içerisinde atılan şu 3 word'lük değer siteyin içerisinden çekiliyor. Yani toplamda 6 byte'lık bir değer siteyin içerisinden çekiliyor.
+
+167
+00:38:42,327 --> 00:38:54,047
+Tabii siz Interrupt'a parametre aktarmak istemiş de olabilirsiniz. Yani hatırlarsanız stack üzerinden parametre yardımcı yordama aktarma konusunda çeşitli örnekler gerçekleştirmiştik.
+
+168
+00:38:54,387 --> 00:38:56,648
+aynısını interrupt için de gerçekleştirebilirsiniz.
+
+169
+00:38:57,087 --> 00:38:58,648
+5 tane parametre gönderdiniz.
+
+170
+00:38:58,788 --> 00:38:59,707
+Her birisi Word.
+
+171
+00:39:00,307 --> 00:39:11,307
+Toplam 10 byte'lık değer var siteyin içerisinde ve Interrupt komutu çalıştıktan sonra Interrupt Return'le beraber yazdığımız parametrik sayıyla bunu temizleyebiliyoruz.
+
+172
+00:39:11,748 --> 00:39:26,668
+10 byte'lık bir değer siteyin içerisinden temizlemek istiyorsanız Interrupt Return'ün yanına 10 yazdığınızda yani komutunuz iRED 10 olduğunda otomatik olarak 16 byte'lık yani kendisi şuradaki 6 byte'lık veriyi stackten temizliyor.
+
+173
+00:39:28,307 --> 00:39:39,988
+Interrupt Return'ın yanına yazdığımız 10 değeri de ekstradan temizliyor. Toplam 16 byte stackten temizliyor. Yani 16 byte stack pointer'ın değeri...
+
+174
+00:39:40,208 --> 00:39:59,827
+artıyor. Site'in içerisine bir şeyler koyduğumuzda, stack pointer'ın değeri azalırken, site'in içerisinden bir şeyler çektiğimizde, stack pointer'ın değeri artıyor. Bunu lütfen unutmayın kıymetli arkadaşlar. Pekala, az önce bahsettiğimiz bu vektör tablosunun tam olarak görevi ne ve nerede saklanıyor?
+
+175
+00:40:00,000 --> 00:40:28,000
+kesme servis programları BIOS'un işletim sistemi tarafından sağlanan değişik uzunluktaki kod parçacıklarından oluşuyor. Yani bizim her bir interab programımızın kodunun boyutu aynı değil. Birisi mouse'u hareket ettiriyordur, 30 satırdır. Diğer ekranı yeniliyordur, 150 satırdır. Birisi daha kompleks bir işlem yapıyordur, 1000 satırdır. Önemli değil. Her birisinin adresi 4 byte'dır. Tamam mı? Bunu bilmemiz lazım.
+
+176
+00:40:28,000 --> 00:40:56,000
+yeterli. Bilgisayar açıldığında belleğe yerleştiriliyorlar bunlar. Farklı bellek alanlarında bulunuyorlar. Tabii ki her birisi başka başka fiziksel alanlarda. Bunlara erişmek için temelde biz vektör tablosunu kullanıyoruz. Vektör tablosunda sadece interapların adresleri var. Tekrardan söylüyorum başlangıç adresleri. Burada fiziksel adres olarak belleğe yerleştiriliyor dedik ya. Belleğin sıfırıncı adresinden sıfırıncı adresinden sıfırıncı adresinden
+
+177
+00:40:56,000 --> 00:41:03,800
+003FF hexadecimal fiziksel adresine kadar olan 1024 byte'lık alana bu adresler yerleştiriliyor.
+
+178
+00:41:04,239 --> 00:41:12,920
+1024 byte'lık bu alana adresler yerleştiriliyorsa ve her bir interap için 4 byte'lık yer kapladığından bahsediyorsa
+
+179
+00:41:12,920 --> 00:41:22,579
+1024 beli 4, 256 adet bizim kesmemiz var. Buradan onu çıkartıyoruz. 256 adet kesmemiz var.
+
+180
+00:41:24,000 --> 00:41:41,000
+alt fonksiyonu ve her bir alt fonksiyonun alt fonksiyonu da olabiliyor. Ders kitabına incelediğinizde bu kesmeleri ve onların alt kesmelerini, onların da alt kesmelerini orada detaylı bir şekilde görebilirsiniz.
+
+181
+00:41:42,260 --> 00:42:00,260
+Eğer ki biz kullanıcıysak ve kesme yazmak istiyorsak, yazacağımız kesmeler bizim için ayrılmış olan yere 60 hexadecimal ile 67 hexadecimal arasına yerleştirmemiz gerekiyor. Toplamda 8 farklı kesme siz yazabilirsiniz.
+
+182
+00:42:00,260 --> 00:42:10,100
+Aynı zamanda mevcut olan herhangi bir işlevi gerçekleştiren kesmeler, ya bu kesme tam olarak benim istediğim işi yapmıyor diyerek veya
+
+183
+00:42:10,260 --> 00:42:23,300
+ben buna ek olarak şunu da yaptırtmak istiyorum diyerek veya ben bunu bozmak istiyorum ve bir virüs gibi davransın demek istiyorsanız mevcut olan kesmelerin kodlarını da değiştirebiliyorsunuz.
+
+184
+00:42:23,380 --> 00:42:28,940
+Pekala vektör tablosunda değişiklik nasıl yapılıyor? Programcı kendi kesmesini yazabiliyor.
+
+185
+00:42:28,940 --> 00:42:35,780
+Bakın bunu söyledik. Interrupt. Siz Interrupt yazmak istiyorsanız Interrupt yazabilirsiniz. Herhangi bir problem yok.
+
+186
+00:42:38,260 --> 00:42:53,280
+önce devreye girecek şekilde yazabilirsiniz. Ne demek istiyoruz? Diyelim ki 37 numaralı interrupt hali hazırda var. Belli bir işlemi gerçekleştirmek için kullanılıyor. 37 numaralı interrupt'ın tahmin edebileceğiniz üzere bir adresi.
+
+187
+00:42:53,715 --> 00:43:17,356
+var, kod segment ve offset adresinden oluşan. Siz oraya gittiğinizde 37 numaralı Interrupt'ın kod bloğu başlıyor. Siz işte şöyle bir şey yapabilirsiniz. Kendi Interrupt'ınızı yapmak istediğinizde, 37 numaralı Interrupt her çağrıldığında, siz kendi bir kod, kendiniz ekstradan bir kod çalıştırmak istediğinizde yapacağınız işlem 37 numaralı Interrupt'ın önüne
+
+188
+00:43:18,547 --> 00:43:25,007
+veya o 37 numaralı interab bittikten sonra siz bir işlem yapmak istiyorsunuzdur.
+
+189
+00:43:25,507 --> 00:43:32,067
+Sonuna yani return'dan hemen önce, e-return'den hemen önce kod bloğunuzu yerleştirebilirsiniz.
+
+190
+00:43:32,567 --> 00:43:44,027
+Her iki tabii durumda da kendi kodunuzu da yazıyor olsanız veya hali hazırdaki bir programı değiştiriyor da olsanız bunu gerçekleştirmeniz lazım.
+
+191
+00:43:44,027 --> 00:43:45,427
+Ne demek istiyorum? Bakın.
+
+192
+00:43:46,547 --> 00:43:48,107
+Aslında kastettiğim şey şu.
+
+193
+00:43:49,235 --> 00:44:04,836
+Sizin yeni bir interapp yazdınız ve 37 numaralı interapp tetiklendiğinde sizin interappınızın da tetiklenmesini istiyorsunuz ve yazdığınız interappın nerede yazıldığı belli. Hangi kod segmentte, hangi offsetinde olduğu belli.
+
+194
+00:44:04,836 --> 00:44:16,836
+Siz 37 numaralı interappa girdiğiniz anda jump ile ilgili kod segmente yani far tipi bir jump yaparak ilgili kod segmente ve offset değerine zıplayın.
+
+195
+00:44:17,235 --> 00:44:27,715
+tuplayabilirsiniz. Orada çeşitli işlemleriniz olur. Tekrardan başladığınız noktaya geri gelebilirsiniz. Bu da farklı bir alternatif, farklı bir çözüm.
+
+196
+00:44:28,336 --> 00:44:37,436
+Pekala, ben kendi interrupt'ımı yazdım. Bu interrupt, RAM'in içindeyse, yani bir program parçacıysa, diskin olmadığından bahsediyoruz bakın.
+
+197
+00:44:37,436 --> 00:44:45,115
+Bir program parçacıysa, RAM'in içerisinde, bilgisayar açılıp kapatıldıktan sonra uçacak. RAM'in içindeki veriler uçucu.
+
+198
+00:44:45,235 --> 00:44:56,115
+volatile, yani elektrik varken içerisine yazıyoruz, yokken sıfırlanıyor. Yeniden başladığında tekrardan içerisine işte BIOS'la beraber bir şeyler yazılmaya başlanıyor.
+
+199
+00:44:56,496 --> 00:45:09,496
+Pekala, ben interrupt'ımı nasıl kalıcı kalacağım? İşte bunun için terminate and state residence. Bakın, stay residence. Kalıcı olarak yaz gibi bir programımız var, TSR diye.
+
+200
+00:45:13,235 --> 00:45:26,476
+gerekiyor. Yazılan kodun adresini, yani offset ve kesimi, vektör tablosunda da ilgili yerlere, yani 60 ile 67 arasında yazdıysanız, mesela 63'ü kullandınız. 63 hexadecimal çarpı 4.
+
+201
+00:45:27,411 --> 00:45:36,051
+240, 252 mi? 252 ve 253'e, Instruction pointer'ını, 254 ve 255'e ise neyi?
+
+202
+00:45:37,531 --> 00:45:44,731
+Kod segment değerini vektör tablosunda yazmanız lazım ve kesmeleri disable etmeniz lazım.
+
+203
+00:45:44,731 --> 00:45:55,411
+Siz, TSR'la beraber bir kesmenin, yani vektör tablosunda değişiklik yapmak istiyorsanız, o kesmenin kodunu da bir yere yazmak istiyorsanız, herhangi bir şekilde...
+
+204
+00:45:55,411 --> 00:46:00,991
+Bu işlem gerçekleştirilirken kesmelerin açık olmasına da izin vermemeniz lazım.
+
+205
+00:46:01,451 --> 00:46:12,291
+Maskelenemez bir kesme, maskelenebilir bir kesme geldi ve siz tam vektör tablosuna bir 4 byte'lik değer yazacaksınız ya,
+
+206
+00:46:12,351 --> 00:46:14,131
+code segment ve instruction pointer'ını.
+
+207
+00:46:14,591 --> 00:46:20,451
+Instruction pointer'ın değerini yazdınız, code segment yazmadan interrupt aldı ve alan interrupt da o interrupt çalışacak.
+
+208
+00:46:20,788 --> 00:46:27,327
+gibi yani çeşitli ekstrem durumlarla karşılaşmamak adına kesmeler disable edilmesi lazım.
+
+209
+00:46:27,487 --> 00:46:44,028
+Değiştirilecek kesmenin eğer ki bir kesmeyi değiştirmek istiyorsanız yani hali hazırda mevcut bir kesme mouse sağa sola oynatma kesmesi bunu değiştirip o kesme her çalıştığında şu işlem gerçekleşsin demek istiyorsanız siz mesela şunu gerçekleştirebilirsiniz.
+
+210
+00:46:46,036 --> 00:47:13,896
+programınızın, o mouse'u sağa sola hareket ettiren vektör tablosunda da adresi olan, mesela diyelim ki 12 numaralı kesme, 12 hexadecimal numaralı kesme, vektör tablosunda bunun adresi nedir? 12 çarpı 4, şey 12 çarpı öncelikle 16 diyelim, 18 oluyor, 18 desimal, bu 18 çarpı 4, 72. byte'dan itibaren, 72, 73.
+
+211
+00:47:14,036 --> 00:47:29,996
+74, 75, 72, 73, 74, 75. Evet, bu 4 byte'lık alandaki adresi kaldırıp sizin kendi yazdığınız kod bloğunun, interab bloğunun adresini oraya koyabilirsiniz.
+
+212
+00:47:30,516 --> 00:47:42,775
+Böylece az önce bahsettiğim sadece 60 ile 67 arasında size ayrılmış alan değil, hiç boşta olan, hiç kullanılmadığını düşünün, ihtiyacı olmayan kesmeler gibi şeyleri de bu şekilde değiştirebilirsiniz.
+
+213
+00:47:42,775 --> 00:47:55,556
+Ama tekrardan siz bozduğunuz şeyi aynı yerine geri koymak istediğiniz durumda o üzerine yazdığınız adreslerin ne olduğunu bilmiyorsunuz.
+
+214
+00:47:55,755 --> 00:47:57,235
+İşte onları da bir yerde saklayın.
+
+215
+00:47:58,516 --> 00:48:15,556
+hangi bir yerde olabilir veya bir register'ın içerisinde olabilir, tekrardan geri dönecekseniz veya bir site'in içerisinde olabilir, onların tekrardan saklanıp siz onu kullanmak istemediğiniz durumda, artık böyle bir Interrupt çalışmasın demek istediğiniz durumda vektör tablosuna ilgili şekilde gidip düzenleyebilmeniz gerekir.
+
+216
+00:48:20,724 --> 00:48:48,724
+fonksiyonuyla birlikte bu TSR tablosuna, TSR ile, TSR ile yani tekrar söyleyeyim 21 numaralı Interrupt'ın 15 numaralı fonksiyonu kullanılarak vektör tablosuna verilerin yazılması gerekiyor. Bu fonksiyon o verileri gidip o vektör tablosunun adresinin nerede olduğunu bilerek gidip yazıyor. Zaten fiziksel olarak 0000 hexadesimalden başladığını söylemiştik. Bu yazma işlemi...
+
+217
+00:48:48,724 --> 00:49:16,724
+bittikten sonra kesmelere çalıştırılmasına izin veriyoruz. Şurada disable etmiştik, çalışmasın demiştik. Artık gittik, vektör tablosunu doğru bir şekilde güncelledik ve kesmelere izin verdik. Kendi kesmemizi yazmışsak tabii ki e-return ile dönmeliyiz. 6 byte'lık bir veri çektiğini söylemiştik. Ve ya o az önce bahsettiğim gibi orijinal kesmeden önce çalışmışsak yani orijinal kesmenin kod bloğu var. Biz önün öncesinde bir iş yapmışsak, JMP'la beraber tekrardan orijinal kesmeyi yapacağız.
+
+218
+00:49:16,724 --> 00:49:35,423
+kesmenin olduğu yere zıplayabiliriz. Kullanım tamamlandıktan sonra tabii ki kesme adres tablosu ve kesme adresleri vektör tablosuna net bir şekilde yazılması, orijinallerinin yazılması ihtiyacı varsa değiştirmişsek gerekli olacaktır.
+
+219
+00:49:38,099 --> 00:49:47,559
+Pekala, biz adresleri değiştirirken bu tarz işler yaptık. Kendi interapımızı yazmak istiyoruz. Pekala, nelere dikkat etmemiz gerekiyor?
+
+220
+00:49:48,300 --> 00:50:00,000
+Kesme kodunun içerisine girdiğimizde bizim interapımız da genellikle yani yazacağınız şeylerin ekstradan başka interaplar tarafından bölünebiliyor.
+
+221
+00:50:00,000 --> 00:50:06,880
+bilmesi prensibine dayanması lazım. Her program ben bölünmek istemiyorum derse zaten ondan sonra
+
+222
+00:50:06,880 --> 00:50:13,980
+Interrupt mekanizmasının hiçbir manası kalmaz. Az önce mesela dedik kesme vektör tablosuna bir şeyler
+
+223
+00:50:13,980 --> 00:50:19,159
+yazarken Interrupt'ları disable et, Interrupt almasın. Orası önemli bir durum. Yani o tabloyu güncelliyorsun,
+
+224
+00:50:19,559 --> 00:50:23,920
+o tabloya bakarak Interrupt oluyor zaten. Bu tarz durumlarda Interrupt'lar disable edilebilir.
+
+225
+00:50:23,920 --> 00:50:28,000
+Ama kendiniz bir kesme kodu yazıyorsanız o kesmenin de bir Interrupt alması lazım.
+
+226
+00:50:28,000 --> 00:50:51,400
+çok mantıklı. Mesela diyelim ki biz klavyeden basılan bir tuşun algılanıp ekrana yazılmasını veya o tuşun sinyalinin ekrana gönderilmesi kesmesini yazıyoruz. Yani bu kesme de tabii ki interrap alması lazım. Sürekli bekleyecek mi, buzi veytik mi yapacak? Ama yani yazdığınız kesmeler öyle kesmelerdir ki interraplara illa izin vermek durumunda değilsiniz. Bu genel olarak bir kullanım yaklaşımı.
+
+227
+00:50:52,179 --> 00:51:20,139
+Az önce bahsettiğim gibi interapp'larda aslında sanki harici bir yordama dallanıyormuş gibi dallanıyoruz ve bu bir yordam olduğu için orada kullandığımız tüm registerları saklamak bizim sorumluluğumuzda. Saklamayı ihmal etmememiz lazım. Bizim programımız hali hazırda çalışırken otomatik olarak kesmeye uğrayabilir. Bakın bir kesmeye uğradığı durumda otomatik olarak stackten 6 byte'lık bir yer işgal ediliyor. Siz siteğinizi tasarlıyorsunuz.
+
+228
+00:51:20,179 --> 00:51:24,599
+ya benim en kötü durumda bile, siteyi en yoğun kullandığım durumda bile 4 byte'lık açık var.
+
+229
+00:51:25,199 --> 00:51:30,000
+Benim programım patlıyor, stack overflow diyor, nasıl oluyor bir türlü hesaplayamıyorsunuz.
+
+230
+00:51:30,139 --> 00:51:34,759
+Interrupt alıp, o 6 byte ile doldurulup taşıyor olabilir.
+
+231
+00:51:34,759 --> 00:51:38,119
+Bu da mesela dikkat edilmesi gereken hususlardan birisi.
+
+232
+00:51:38,619 --> 00:51:45,320
+Kesme programı birden fazla kez kullanılacaksa, bu değerler kesmeye gitmeden önce ilgili yaz maçlara yüklenmelidir.
+
+233
+00:51:45,900 --> 00:51:46,539
+Şimdi şöyle.
+
+234
+00:51:47,188 --> 00:51:59,468
+Bizim kesme nedeni rona programlarımızın alt fonksiyonları var ve bu alt fonksiyonlarla beraber kendisi farklı işlevleri yerine getirebiliyor.
+
+235
+00:51:59,708 --> 00:52:06,268
+Yani 21 dediğimizde ekranı okuma yazma ama 21'in alt fonksiyonları farklı farklı işlere denk geliyor hexadecimal olarak.
+
+236
+00:52:06,808 --> 00:52:12,828
+Biz bunları tekrar tekrar kullanacaksak ilgili yazmaçlara doğru değerlerin doğru şekilde yazılması gerekiyor.
+
+237
+00:52:12,828 --> 00:52:15,188
+Donanım kesmesi yerine geçebilir.
+
+238
+00:52:15,188 --> 00:52:33,348
+Yani BIOS kesmesi yazacaksak biz, bakın, o az önce söylediğim fiziksel adresi 0000'dan başlayıp 3FF kadar olan 1024 tane kesmenin bir kısmı donanım kesmesi, BIOS kesmesi, bir kısmı sistem, yani yazılım kesmesi, DOS kesmesi.
+
+239
+00:52:33,968 --> 00:52:42,248
+Eğer ki biz BIOS kesmesi yazacaksak DOS kesmelerini kullanamıyoruz. En nihayetinde bir kesmenin içinde başka bir kesme de kullanabilirsin.
+
+240
+00:52:43,188 --> 00:52:51,188
+BIOS kesmeleri, yani BIOS çalıştığında hala daha DOS yok ki, işletim sistemi yok ki. BIOS onu başlatıyor. O sebeple...
+
+241
+00:52:52,083 --> 00:53:01,703
+BIOS kesmesi yazacaksak DOS fonksiyonlarını, DOS kesmelerini kullanamıyorsun. TSR'la beraber belleğe yerleştirilmesi gerektiğinden bahsettik.
+
+242
+00:53:02,143 --> 00:53:08,443
+Yığına veri göndermişsek onların yığından da temizlenmesinden özellikle dikkat edin diye söyledik.
+
+243
+00:53:08,503 --> 00:53:20,083
+Yani biz Interrupt'ın içerisinde kullanılması amacıyla Interrupt'a girmeden önce siteyin içerisine çeşitli veriler koyup Interrupt'a gidildiğinde o verilerin yapılacak işlemler için kullanılması.
+
+244
+00:53:20,083 --> 00:53:20,804
+kullanılmasını
+
+245
+00:53:21,231 --> 00:53:33,451
+istedik ve bunu yaptık. En sonunda Interrupt'tan dönerken iRit, RET'in yanına yazdığımız değerlerle veya çeşitli sayıda POP yaparak onların da stackten temizlememiz bizim kullanımımızda.
+
+246
+00:53:33,871 --> 00:53:38,052
+Az önce size bahsetmiştim Interrupt'ların bir kısmı BIOS, bir kısmı da DOS Interrupt'ları.
+
+247
+00:53:38,532 --> 00:53:45,052
+0, 0 ile 1F arasındakiler BIOS kesmeleri, 2, 0 ile 2F arasındakiler de DOS kesmeleri.
+
+248
+00:53:45,052 --> 00:53:49,052
+Ve kesmeyi çağırırken kesmenin fonksiyon numarası...
+
+249
+00:53:49,231 --> 00:53:55,431
+numarasını AH'ın içerisine, varsa alt fonksiyon numarasını AL'nin içerisine koyuyoruz.
+
+250
+00:53:55,791 --> 00:53:59,152
+Ardından INT komutuyla beraber kesmenin numarasını yazıyoruz.
+
+251
+00:53:59,351 --> 00:54:01,211
+O kesme otomatik olarak çalıştırılıyor.
+
+252
+00:54:01,632 --> 00:54:03,592
+Buradaki AH ve AL önemli.
+
+253
+00:54:03,731 --> 00:54:06,152
+Herhangi bir register'ın içerisine koysanız olmaz.
+
+254
+00:54:06,711 --> 00:54:12,871
+Nasıl ki MUL komutu çalıştırıldığında verilen operantla beraber otomatik olarak AX çarpılıp,
+
+255
+00:54:13,231 --> 00:54:17,231
+durum DX, AX'e atanıyorsa, arka tarafta gerçekleşiyor.
+
+256
+00:54:17,231 --> 00:54:45,032
+interrupt komutada ilgili fonksiyonu AH üzerinden alıyor. Walder's da alt fonksiyon, onu da AL üzerinden alıyor. Bu önemli, buna dikkat edilmesi lazım. Başka registerları kullanmak söz konusu değil. Örneğin, mesela 21 numaralı interrupt'ın bir numaralı fonksiyonu hexesmal olarak kullanılmak isteniliyorsa, öncelikle AH'ın içerisine ilgili değer yerleştirilir. Ardından interrupt.
+
+257
+00:54:45,231 --> 00:55:02,192
+çalıştırılması, çağrılması veya gerekli. Onu da söyleyebiliriz. Evet. Böylece hızlıca bir interapları anlatmış olduk. Sizin sorunuz var mı bu noktada? Sayımızda 14'e çıkmış. Maşallah.
+
+258
+00:55:04,192 --> 00:55:07,331
+Interaplarla ilgili sorusu olan var mı kıymetli arkadaşlar?
+
+259
+00:55:09,748 --> 00:55:23,688
+Güzel. Ödevlerle ilgili sorusu olan var mı? Onları da soralım şimdi. Sabahtan birçok sorusu olan arkadaşımız vardı. Size daha kısızlık etmiş olmayalım. Ödevlerle ilgili sorusu olan var mı? Birisinin teslim tarihi bu hafta sonu.
+
+260
+00:55:24,275 --> 00:55:52,255
+Diğerinin teslim tarihi önümüzdeki hafta sonu. Lütfen teslim tarihlerine riayet edin. Ondan sonra sistem kesinlikle kapatılacak ve ödevinizi başka şekilde teslim edemeyeceksiniz. Bunlara dikkat etmenizi sizden rica ediyorum. Benim bu haftalık anlatacaklarım bu kadar. Önümüzdeki hafta assembly diliyle yüksek seviyeli dillerin kullanımı üzerinde duruyor olacağız. Onunla ilgili çeşitli örnekler yapacağız. Kendinize iyi bakın, sağlıcakla.
+
+261
+00:55:52,275 --> 00:55:53,515
+kalın diyorum. Görüşürüz.
+
+262
+00:55:57,748 --> 00:56:01,867
+Hayır, diziyi sıralayıp ona göre linkleri oluşturmayacaksınız [öğrenci].
+
+263
+00:56:02,607 --> 00:56:06,007
+Diziyi sıralayacak şekilde linkleri oluşturacaksınız.
+
+264
+00:56:06,748 --> 00:56:09,927
+Yani ben diziyi alayım, selection sortla bir sıralayayım değil.
+
+265
+00:56:10,567 --> 00:56:13,607
+Linkler diziyi sıralayacak şekilde oluşturulması lazım.
+
+266
+00:56:13,807 --> 00:56:15,047
+İşin asıl amacı o.
+
+267
+00:56:15,607 --> 00:56:16,527
+Ben teşekkür ediyorum.
+
+268
+00:56:17,147 --> 00:56:19,627
+Kendinize iyi bakın, sağlıcakla kalın, görüşmek üzere.
