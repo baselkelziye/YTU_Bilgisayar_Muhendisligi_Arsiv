@@ -1,0 +1,855 @@
+1
+00:00:17,268 --> 00:00:18,147
+Merhaba arkadaşlar.
+
+2
+00:00:22,324 --> 00:00:31,024
+Bir 3-4 dakika daha bekleyelim. Çeyrek geçeği kadar. Sonra şu anda 11-12 olduk. Bir 20'yi olunca başlarız.
+
+3
+00:04:48,851 --> 00:05:00,779
+Arkadaşlar, hayırlı cumala. Merhaba hocam. Bu cuma 20'yi bulamayacağız galiba. 16'da kaldık. Neyse bu haftaki...
+
+4
+00:05:00,819 --> 00:05:27,240
+Bayramdan önceki son dersimiz aslında cuma günde bayram haftası olduğu için vizeden önce son dersimiz. Vizede yok biliyorsunuz daha önce de konuşmuştuk. Bu ders sadece dönem sonunda yüz yüze bir tane final sınavı yapacağız. Final sınavı da muhtemelen çoktan seçmeli. 20 soru yarım saatlik bir sınav olur diye düşünüyorum. Konuları kapsayacak şekilde.
+
+5
+00:05:28,915 --> 00:05:50,536
+Bu haftaki konumuza başlayalım isterseniz. Gene her zaman olduğu gibi web sitesine bu haftaki konumuzun hem Türkçe sunumunu hem de İngilizce sunumunu koydum. Oradan isteyen her ikisini de hangi dilde daha iyi anlayacağınızı düşünüyorsanız o dilde alıp inceleyebilirsiniz.
+
+6
+00:05:50,536 --> 00:05:54,956
+Ekranımızı paylaşıyoruz.
+
+7
+00:06:07,987 --> 00:06:09,740
+Niye bundan kurtulamıyorum?
+
+8
+00:06:36,788 --> 00:06:37,807
+Evet arkadaşlar.
+
+9
+00:06:41,588 --> 00:06:55,108
+Bu hafta 6. haftamız Bilgisayar mizde. Hatırlayacağınız gibi yaklaşık 4 hafta önce Bilgisayar ve Ağ Güvenliği'nde yönetimsel hususlarla alakalı.
+
+10
+00:06:55,552 --> 00:07:17,831
+Konularımıza başlamıştık. Önce örnek bir firma üzerinde varlıklarında risk değerlendirmesi ve risk yönetimini vermiştik. Sonrasında bu risk yönetimi ve risk değerlendirmesinde yaptığımız risk analizlerine göre güvenli kontrolleri, planları ve prosedürlerini çıkarmıştık.
+
+11
+00:07:18,932 --> 00:07:42,812
+İki hafta önce bilişim güvenliği sadece mantıksal boyuttaki güvenlik olmadığını, aynı zamanda fiziksel ve altyapı güvenliğini, yani sunucuların alın fiziksel altyapısını, onların barındığı binayı, kampüsü, onları kullanan insanların güvenliğini.
+
+12
+00:07:43,572 --> 00:08:06,572
+Fiziksel bağlarla güvenliği vermiştik ve geçen haftada hem sistemin kullanıcısı, hem sisteme saldıranı, hem sistemin güvenliğini sağlayanı olan insan kaynakları güvenliğini uçtan uça anlatmıştık. Yani işe alış süreçlerinden, iş sözleşmelerine, güvenlik araştırmalarına, işten ayrı süreçlerindeki...
+
+13
+00:08:07,668 --> 00:08:27,627
+Neler yapılması gerektiğini belirlenen standartlar ölçüsünde anlatmıştık. Bu hafta bir başka konuya güvenliğin denetimi. Şimdi güvenliğin denetimi aslında dedi ki en baştaki giriş kısmında bilgisayar ve ağ güvenliği yap...
+
+14
+00:08:27,732 --> 00:08:44,592
+Unut mantığında bir mekanizma değildir. Yani bir sisteme bir işletim sistemi kurarsınız, ayarları yaparsınız. Teorik olarak güncellemeden güncellemeye ya da bir sorun olduğu zaman ilgilenirsiniz. Öyle değil mi? Ama güvenlik öyle bir şey değil.
+
+15
+00:08:46,451 --> 00:09:07,403
+Bir organizma, saldırganlar sürekli yeni teknolojilerle yeni zayıflıkları arıyor. Sizlerin de kurduğunuz sistemi, güvenliği, yaptığınız planların, prosedürlerin ve kontrollerin doğru şekilde işlediğinin...
+
+16
+00:09:07,956 --> 00:09:27,936
+Denetlemeniz, o denetim neticesinde elde ettiğiniz sonuçlara göre de bu planlarınızı gözden geçirip güncellemeniz gerekiyor. Çünkü niye? Siz güvenlikle alakalı tedbirler alıyorsunuz, prosedürler koyuyorsunuz, kullanıcılara politikaları uyguluyorsunuz, bir sürü şey yapıyorsunuz.
+
+17
+00:09:27,936 --> 00:09:32,956
+Yüzde yüz güvenli olduğu zaman hiçbir saldırı yok. İnsanların aklına ne gelir?
+
+18
+00:09:34,227 --> 00:09:54,747
+Boşa mı harcadık bu sistemi? İşte güvenlik denetimiyle bu süreçleri sürekli kontrol altında tutmak, sürekli denetlemek ve gerekli olması durumunda da güncelleme yapmak için güvenlik denetimi gerekli. Dolayısıyla biz bu hafta güvenlik denetimi konusunu irdeleyeceğiz arkadaşlar.
+
+19
+00:10:00,000 --> 00:10:21,019
+Güvenlik denetim mimarisinden bahsedeceğiz ve terminolojileri vereceğiz. Güvenlik denetimi nedir? Güvenlik denetimi trace'in izi nedir? Bunları belirleyeceğiz ve denetimin en önemli enstrümanlarından birisi loklama.
+
+20
+00:10:21,491 --> 00:10:33,323
+Ne yaparsınız? Siz bir planlar, programlar, kontroller yaparsınız ve o kontrole göre de belli mekanizmaları, belli verileri kaydedersiniz. Sonra...
+
+21
+00:10:33,524 --> 00:10:52,624
+Bu kayıtları inceleyerek sürecin rutin beklendiği gibi işlediğini ya da anormal bir aktivite olup olmadığını kontrol ederek sistemimize saldırı var mı, saldırı teşebbüsü mü, saldırı gerçekleşmiş mi bunlarla alakalı bir sonraki adımı uygulamanız gerekiyor.
+
+22
+00:10:52,624 --> 00:10:56,884
+Dolayısıyla loglama işlemi çok önemli.
+
+23
+00:10:58,868 --> 00:11:13,108
+Bu lokların analizleri ve bu analizler neticesinde olay yönetimi, bir olay gerçekleşti. Nasıl bir reaksiyon alacağız bunların yönetimi? Niye bunlar önemli?
+
+24
+00:11:26,676 --> 00:11:34,156
+Bu hatalar nedeniyle de yeni zararlara sebebiyet verme olasılığı düşecektir de ondan arkadaşlar.
+
+25
+00:11:34,156 --> 00:11:46,796
+Dolayısıyla biz güvenlik denetimi en az uyguladığınız politikalar ve prosedürler kadar önemlidir.
+
+26
+00:11:55,796 --> 00:12:09,736
+Ve sonuçtan alındığını görme, güvenlik denetimiyle sağlanacaktır. Peki, şimdi gelelim aynı dili konuşmak adına güvenlik denetimi terminolojisinden bir bahsedelim. Bunu bahsederken de neyi kullanalım? Standart.
+
+27
+00:12:10,063 --> 00:12:25,584
+Open Source dokümanları, güvenlik terminolojisinde sık kullandığımız doküman, RFC 49-49 dokümanı. Peki bu Security Audit ve Security Audit Trace'i yani güvenlik denetimini ve güvenlik denetimimizi nasıl tanımlıyor?
+
+28
+00:12:25,584 --> 00:12:37,543
+Güvenlik denetimi deyince bu dokümana göre, sistem kontrollerinin yeterliğini belirlemek, yerleşik güvenlik politikası ve prosedürlere uyumu sağlamak,
+
+29
+00:12:37,812 --> 00:12:58,792
+Gizlilik hizmetlerindeki ihralleri tespit etmek ve buna karşı önlemler alabilmek için belirlenen değişikleri tavsiye etmek için bir sistemin kayıtlarını ve faaliyetlerinin sistemin süreçlerinden bağımsız olarak gözden geçirilmesi.
+
+30
+00:12:59,539 --> 00:13:23,839
+Ve incelenmesidir. Tamam. Yani normal bir akışta bir sistemin bir süreci var. İşte veriler akıyor, mesajlar akıyor, sistemler işliyor. Güvenlik denetimi bu normal işleyişten bağımsız olarak gözlenmesi ve incelenmesidir. Ve bu işin amacı güvenlikle ilgili olayları ve eylemleri başlatan veya
+
+31
+00:13:24,403 --> 00:13:32,824
+Bunlara katkı sağlayan sistem varlıkları için hesap verilebilirliği oluşturmak. Yani bir güvenlik ilali var.
+
+32
+00:13:33,235 --> 00:13:59,235
+Bunu tezgürüyoruz. Peki bu ihlali bir hastalığımız var, başımız ağrıyor ama başımız niye ağrıyor? Migren mi var bizde? Yoksa başımızda timör mü var? Yoksa işte arkadaşımız da küstü, onun sıkıntısı mı var? Dolayısıyla başlatan nedenleri ve buna katkı sağlayanları tespit edebilmek için bir...
+
+33
+00:13:59,668 --> 00:14:20,567
+Bu nedenle bir güvenlik denetim izi oluşturmak ve bu izleri kaydetmek ve saldırı ve güvenlik ihlallerini keşfetmek ve araştırmak için denetim izini izlemek ve analiz etmek için neler ihtiyaç vardır? Araçlara ihtiyaç vardır.
+
+34
+00:14:21,875 --> 00:14:34,475
+Süreçten bağımsız olarak biz bu aktiviteleri de denetlemek amacıyla kaydetmemiz gerekiyor. Normal rutin sürecinden bağımsız olarak. Dolayısıyla güvenlik denetimi izin edir bu bağlamda.
+
+35
+00:14:44,019 --> 00:15:03,799
+Nedir? Bir operasyon, bir prosedür veya olayı çevreleyen veya bunlara yol açan ortamlar ve faaliyetler dizininin yeniden oluşturulmasını ve incelenmesini sağlamak için yeterli olan sistem faaliyetlerinin kronolojik kaydıdır.
+
+36
+00:15:03,799 --> 00:15:05,919
+Tamam mı? Nedir?
+
+37
+00:15:06,611 --> 00:15:24,331
+Siz bir güvenlik ihlali oluştuğu, bir sorun oluştuğu nedir? Bunların kronolojik kaydıdır ki, nerede sorun var, nerede ihlal var ve buna bağlı olarak hangi bileşenlerin zafiyeti var bunu tespit edebilelim.
+
+38
+00:15:24,331 --> 00:15:32,731
+Bu iki terminolojide anlaştıktan sonra süreci daha net ve kolay bir şekilde takip eder hale geliriz.
+
+39
+00:15:34,580 --> 00:16:01,320
+Bununla alakalı model X816 modeli. Tamamen akışımız var. Nedir? Bir event ayrıklaştırıcı var. Nedir? Siz normal rutin proseslerdeki her bir faaliyeti kaydetmezsiniz. Nedir? Mesela bir mesaj atılıyor. Her maili kaydıyla alakalı lock tutmazsınız. Belli adreslere giden mailleri yok darsınız. Belli.
+
+40
+00:16:01,844 --> 00:16:27,744
+İçerisinde metinler geçen, belli stöte ekler olanları kaydedersiniz. Öyle değil mi? Ve bunlara göre belli thresholdlar tanımlanarak alarmlar üretirsiniz. Tamam mı? Belli verileri, toplayan verileri kaydediyorsunuz ya da alarmlar üretiyorsunuz. Bu doğan alarmlara göre de bir aksiyon alınır.
+
+41
+00:16:28,275 --> 00:16:47,835
+Olay yönetim planlarında bunlar vardır. Sonra sadece belli thresholdu açtığı zaman alarm üretildiği gibi normal kaydedilen verilerin analizi neticesinde de alarm üretilebilir.
+
+42
+00:16:47,835 --> 00:16:55,035
+Çünkü normalde bir thresholdu açmamıştır ama anormal aktiviteleri ile alakalı.
+
+43
+00:16:56,563 --> 00:17:11,563
+Kaydedilerek de oluşturulmuştur. Tamam. Sonra bu kayıtlar arşive gönderilebilir ya da topluca bir daha...
+
+44
+00:17:11,763 --> 00:17:32,703
+Bu güvenlik denetimi ve alarm modeli gene standart dokümanlara göre, X816'ya göre hazırlanmış. Gayet mantıklı ve takip edilebilir bir figür arkadaşlar.
+
+45
+00:17:32,703 --> 00:17:35,263
+Peki, dağınık.
+
+46
+00:17:37,460 --> 00:17:54,800
+Bu güvenlik denetim iz modeli yine 816'nıdır. Şimdi dağınık derken siz bir network'ünüz var, sunucularınız var, diğer şeyleriniz var öyle değil mi? Ve buralarda normal bütün aktiviteler işleniyor.
+
+47
+00:18:03,092 --> 00:18:26,752
+Takip eden, bunları toplayan küçük ajanlar var. Her bir sunucuda işte mail sunucusu var, ötekinde var ve bunlar belli bir noktada bu loklar toplanıyor ve topluca analiz ediyor. Bu da dağınık model. Bu bir sistemi bütüncül olarak incelediğimizde karşımıza çıkan modeldir arkadaşlar.
+
+48
+00:18:26,752 --> 00:18:30,132
+Tamam mı?
+
+49
+00:18:30,771 --> 00:18:44,371
+Şimdi görelim daha akış diagramı şeklinde neler yapıyor? Security audit. Ne yapıyoruz? Verimiz generate ediliyor. Öyle değil mi?
+
+50
+00:18:46,711 --> 00:18:51,371
+Çünkü sürekli işlemler var ve bu işlemler neticesinde veriler...
+
+51
+00:18:51,892 --> 00:19:12,512
+Üretiliyor. Nasıl üretiliyor? Veri üretiminden ya da kullanıcı kimliği kim üretti, kim tarafından üretti. Sonra bu üretilen veriler içerisinde bazı olaylar, bazı aktiviteler seçiliyor.
+
+52
+00:19:16,660 --> 00:19:27,320
+Belli bir kısmı kaydediliyor ve belli aktivitelere karşı, belli thresholdlara karşı alarmlar üretiliyor.
+
+53
+00:19:27,320 --> 00:19:42,120
+Ve bu belli veriler analiz edilerek potansiyel zayıflıklar, potansiyel saldırılar,
+
+54
+00:19:42,516 --> 00:19:52,996
+Bunlar bulunuyor ve en sonunda da audit genel bir incelenmesi durumunda bunlarla alakalı security planlar oluşturulmuş oluyor.
+
+55
+00:19:52,996 --> 00:19:56,076
+Bu birazcık daha ötekinden daha detaylı.
+
+56
+00:19:56,256 --> 00:20:07,996
+Şimdi güvenlik yönetim izi dedik. Belli bir olayları tanımlamamız gerekir ki o olaylara göre
+
+57
+00:20:09,940 --> 00:20:36,940
+Kronolojik takip ettiğimiz zaman bir eksiklik olmasın. Dolayısıyla denetimi tabi, yani hangi tür faaliyetleri takip edeceğimizin tanımlamamız gerek. Nedir mesela bunlar? Nesnelerin tanımı. Değil mi? Bir sisteminiz var. Sistemde nesne tanımlanması, o nesnenin silinmesi.
+
+58
+00:20:38,067 --> 00:20:57,427
+Bir olaydır. Önemli bir olay değil mi? Mühendisliği tabanında bir tablo açıldı. Mühendisliği tabanında bir tablo silindi. Bu kaydedilmesi gereken olaydır. Erişim haklarının veya erişim yeteneklerinin verilmesi, dağıtılması veya iptal edilmesi bu kritik bir olaydır.
+
+59
+00:21:03,667 --> 00:21:20,087
+Özelliklerinde değişiklik yapıldı. Sadece erişim haklarına değil, mesela bazı kullanıcıların grupları değiştirildi, bazı affiliationları değiştirildi, bazı nesnelerin hakları değiştirildi.
+
+60
+00:21:20,087 --> 00:21:30,288
+Veyahut da güvenlik yazılımı tarafından gerçekleştirilen kontroller neticesinde bazı olaylar tespit edildi.
+
+61
+00:21:30,963 --> 00:21:40,263
+Ya da mesela bir sisteme geldiği zaman kimlik doğrulama ve ya da tanılama süreçlerini kaydedilmesi.
+
+62
+00:21:40,263 --> 00:21:48,304
+Ya da operatör ya da kullanıcı tarafından gerçekleştirilen güvenlikle alakalı eylemlerin kaydedilmesi.
+
+63
+00:21:51,539 --> 00:22:04,900
+Bir sistem düşünün, bilgisayar. İşte çıkartılabilir flash disk, harici disk, bunların takılarak veri sisteme alınması ya da sistemden veri çekilmesi.
+
+64
+00:22:04,900 --> 00:22:10,827
+Tıpik, tanımlanabilecek olaylardır arkadaşlar. Bunların sayısını...
+
+65
+00:22:11,476 --> 00:22:32,476
+Duruma bağlı olarak, güvenliğini sağlayacağıma sistemimize bağlı olarak arttırmak tabii ki mümkündür. Tamam. Şimdi olayları anladıktan sonra olayları tespit etmek önemli değil mi? Olay aygılamayı etkileştirmek için tamam mı?
+
+66
+00:22:36,019 --> 00:22:47,019
+Yazılımında, işletim sisteminde ya da operasyon sistemi yazılımında uygun hukların yani kancaların olması lazım. Yani orta kancasının çünkü niye biz...
+
+67
+00:22:47,988 --> 00:23:05,308
+Olayları yakalamak istiyoruz. O olayları akışta, o olayları tespit edecek, yakaladığını kaydedecek. Bir balık düşünün. İşte attınız, sazan kancasıyla sazan yakalarsınız. Kocaman kancayla küçük balık yakalayamazsınız ya da küçük kancayla büyük balık yakalayamazsınız.
+
+68
+00:23:15,443 --> 00:23:19,003
+Bu kancaların eklenmesi gerekir.
+
+69
+00:23:21,140 --> 00:23:39,660
+Bu sistemin kurcalanmasına veya silmeye karşı da dayanıklı, güvenli bir depolama sistemine ihtiyaç var. Niye? Çünkü siz pancalar tanımadığınız hooklar ve entegre ettiniz, uygun yerlere de koydunuz ve bu hooklar kaydediyor.
+
+70
+00:23:39,660 --> 00:23:49,140
+Ya işte remote loginleri kaydediyor, işte yetkilerin yükseltilmesini kaydediyor ama…
+
+71
+00:23:49,140 --> 00:24:10,140
+Kaydedildiğinizi nereye koyuyorsunuz? Aynı yere kaydediyorsanız, adam kendi yetkisini güçlendiği zaman ilk başta ne yapacaktır? O log kaydında akıllı bir adamsa değişiklik yapacaktır. Dolayısıyla bu olayları tespit edebilmek adına sizin ne yapmanız gerekir? Bu kayıtları...
+
+72
+00:24:10,640 --> 00:24:36,200
+Değişikliğe, kurcalamaya dediğimiz update etme içerisinde değiştirmeye veya silmeye karşı dayanıklı olan güvenli bir yerde kaydetmeniz gerekir. Ve olay ve denetim izi analiz yazılımı araçları veya arayüzleri de toplanan verileri analiz etmenin yarı sıra, yani analiz etmenin yarı sıra veri eğilimlerini
+
+73
+00:24:37,044 --> 00:25:00,144
+Ve anormallikleri de araştırmak için kullanılabilir. Sadece belli bir thresholdlarla alarm üretmiyoruz. Aynı zamanda anormal ya da orada mesela yapay zeka yöntemleri ya da öğrenme yöntemleriyle ne yapabilirsiniz? Anormallikleri ya da verinin trendini inceleyerek eğilimleri çıkarabilirsiniz.
+
+74
+00:25:05,044 --> 00:25:26,984
+Bu nedenle denetim sisteminin işlevsellik üzerinde minimum etkisi olmalıdır. Yani şunu söyleyeyim, siz loklama faaliyeti ya da bu hukların, kancaların mekanizması aslında o sistemin işlevselliğine sıfır etkisinde ya da minimum etki.
+
+75
+00:25:31,028 --> 00:25:48,844
+Dışarıdan içeriden saldırı olmasın diye. İçinde bir konteks çekim var. Bizim birçok zamanlarda başımıza geldi. O kadar çok kompleks kurallar var ki bu kuralları proses etme kapasitesi o cihazın düşük olduğundan dolayı cihaz...
+
+76
+00:25:49,203 --> 00:26:07,804
+Ağın toplam kapasitesini kullanmaya izin vermiyor. Overload oluyor ve bu da orada bottleneck oluşturuyor. Performansı düşürüyor. Dolayısıyla sizin kuracağınız denetim sisteminin işlevselliği üzerinde minimum etkisi olmalıdır.
+
+77
+00:26:17,203 --> 00:26:40,864
+Eğer şimdi siz bunu evde yapıyorsanız hiçbir sıkıntı yok. Çünkü 1 milyon saniyede 1 milyon paket üretmiyorsanız. Küçük bir işletmedeyseniz orta üretmiyorsunuz. Orada bir sorun yok. Ama büyük bir işletmedeyseniz sizin sisteminiz 1 milyon paketten daha fazla paket üretiyor ise sizin koyduğunuz cihaz sadece 1 milyon işleyebiliyorsa ondan öncekileri ne yapacaktı? Drop edecekti.
+
+78
+00:26:41,044 --> 00:26:48,124
+Ve sizin full kapasitenizi kullanmanıza müsaade etmeyecek. Söylemek istediğimiz bu arkadaş.
+
+79
+00:26:48,124 --> 00:27:04,243
+Ve bununla alakalı, yani güvenlik denetimiyle alakalı bir uygulama yönelgesi olması lazım. Bir adımlar nedir mesela? Uygun yönetim ile denetim gerektiği üzerinde anlaşmaya varılmalıdır.
+
+80
+00:27:09,299 --> 00:27:26,599
+Kancaların hangi verileri almak için kullanılacağı anlaşılmalıdır ve teknik denetim testlerinin de kapsamı kararlaştırılmalı ve buralarda kontrol edilmedir.
+
+81
+00:27:35,251 --> 00:27:48,531
+Salt okunur şekilde ulaşmalıdır. Yani denetimin amacı ne yaptı? O aksiyonu almak. Yoksa proses üzerinde bir etkisi yapıp verileri değiştirmek değildir arkadaşlar.
+
+82
+00:27:48,531 --> 00:27:53,531
+Salt okunur dışında erişime yalnızca...
+
+83
+00:27:54,804 --> 00:28:19,784
+Sistem dosyalarının yalıtılmış kopyaları üzerinden izin verilmelidir. Yani normal çalışan tarafta değil, onun klonu üzerinde bir değişiklik yapılacak ise denetimde onunla orada izin verilmelidir. Özel veya ek işleme gereksinimleri tanımlanmalı ve bunlar da kararlaştırılmalıdır başta.
+
+84
+00:28:20,660 --> 00:28:46,000
+Ve sistem kullanabilirliğini etkileyebilecek yönetim testleri özellikle mesai saatleri dışında yapılmalı. Bir noklama yapacağız, bir analiz yapacağız, bir transfer yapacağız. Öyle değil mi? Bekab alacağız, analiz yapacağız. Performans istiyor bu. Bunlar genellikle sistemin daha az yoğun olduğu zamanlarda yapılmalı.
+
+85
+00:28:46,451 --> 00:28:53,991
+Ve bir referans izi oluşturmak için tüm erişimler izlenmeli ve loklanmalıdır.
+
+86
+00:28:55,671 --> 00:29:03,871
+Peki, loklama deyince hemen aklımıza gelen her şey mi toplayacağız? Neyi toplayacağız? Neyi loklayacağız?
+
+87
+00:29:03,871 --> 00:29:05,871
+Dolayısıyla...
+
+88
+00:29:06,355 --> 00:29:20,516
+Denetim yazılımının kullanımıyla ilgili olaylar noktanabilir. Çünkü birisinin denetime müdahale edip etmediğini görmek için. İki, sistemdeki güvenlik mekanizmalarıyla ilgili olaylar kopyalanabilir.
+
+89
+00:29:20,516 --> 00:29:34,016
+Ya da çeşitli güvenlik algılama ve önleme mekanizmaları tarafından kullanılmak üzere toplanan veriler. Ya da sistem yönetimi ve sistemin işletimiyle ilgili olaylar.
+
+90
+00:29:34,420 --> 00:29:57,600
+İşletim Sistemine Erişim Loklanır. Ya da seçilen uygulamalar için erişim. Sizin için kritik, finans uygulaması, ERP uygulaması onlarla ya da bir başkası uzaktan erişim faaliyetleri loklanmamız. Bu sayıyı sizin yaptığınız işe ve işlere göre arttırmak tabii ki mümkündür arkadaşlar.
+
+91
+00:30:00,788 --> 00:30:18,947
+X816'ya göre, standart dokumana göre önerilen, denetlenebilir ögeler ne? Belirli bir bağlamla ilgili güvenlikle ilgili olaylar. Nedir mesela? Bağlantı istekleri dokunacaklar. Onaylanan bağlantılar.
+
+92
+00:30:19,508 --> 00:30:42,067
+Bağlantı kesme istekleri, onaylanan bağlantı kesmeler ve bağlantılarla alakalı istatistikler. Ne kadar sıklıkla bağlanıyor, ne de bağlanıyor gibi. Ve bu bağlantıyla alakalı. Güvenlik hizmetlerinin kullanılmayla ilgili olanlar, güvenlik hizmeti talepleri, güvenlik mekanizmalarının kullanılmaları ve güvenlik alarmları.
+
+93
+00:30:47,220 --> 00:31:04,500
+Denetlenebilir olaylar. Nedir mesela? Reddedilen girişler, kimlik doğrulamalar, özellik değişiklikleri, nesne oluşturmalar, nesne silmeler, nesne taşımalar, değiştirmeler ya da ayrıcalıkların, privilijlerin kullanımı.
+
+94
+00:31:06,867 --> 00:31:22,707
+Bireysel güvenlik hizmetleri açısından olaylar denetlenmeli. Mesela kimlik doğrulama, başarılı kimlik doğrulamalar, başarısız kimlik doğrulamalar, erişim kontrolleri, başarısız erişimler, başarısız erişimler, mesajlar.
+
+95
+00:31:26,355 --> 00:31:44,195
+Bütünlük, dürüstlük, bunlar gizlilik, gizliliğin kullanımı, denetim, denetimin kullanımı. Bunlar bireysel faaliyetlerle alakalı x86-816 sandal dökümanına göre denetlenebilir ögüllere örnektir arkadaşlar.
+
+96
+00:31:45,415 --> 00:31:52,556
+Peki, ISO 27002'ye göre önerilen izlenme alanları neler?
+
+97
+00:31:54,291 --> 00:32:17,991
+Biraz önceki X816 güvenlik ekibinin önüne göre idi. ISO 27002'de nedir? Bir, kullanıcı kimlikleri, sistem faaliyetleri, oturum açma ve kapatma gibi olaylar, bunlarla alakalı tabii ayrıntılar saati, tarihi, mümkünse cihaz kimlikleri, cihazın konumu ve
+
+98
+00:32:18,740 --> 00:32:45,899
+Üzerindeki sistemin tanımlayıcıları, başarılı veya reddedilen erişim girişimleri, başarılı veya reddeden kaynak erişimleri, sistem yapılandırmasındaki değişiklikler, ayrıcalıkların kullanımı, sisteme yardımcı programların ve uygulamaların kullanılığı, erişilen dosyalar ve erişim türleri, ağ adresleri ve ağ protokolleri.
+
+99
+00:32:46,644 --> 00:33:13,244
+Erişim Kontrol Sistemleri tarafından üretilen alarmlar, antivirüs sistemleri ve IDS ya da IPS sistemlerinin devre dışı bırakılma girişimleri ve uygulamalarda kullanıcılar tarafından gerçekleştirilen işlemlerin kayıtları da ISO 27002'de önerilen izleme alanları olarak verilmiştir arkadaşlar.
+
+100
+00:33:14,644 --> 00:33:38,503
+Şimdi, örnek bir güvenlik denetim izine, audit trail'e bakalım. Şimdi basit bir log işlemi. Bu authentication message nedir? Mesela login, root login konsoldan gelmiş, sistemi reboot etmiş. Login dikkat ediyorsanız her türlü etkinlik faaliyeti, saati.
+
+101
+00:33:39,124 --> 00:34:02,144
+Hangi makineden oldu ve hangi işlemi yaptı? Ya da bir başkası burada işte taşımayla alakalı dosya büyüklükleri, ağır kullanımları ya da kullanıcı tarafından koşturulan komutların listesi. Tamam mı?
+
+102
+00:34:02,415 --> 00:34:25,335
+Tarihi, hangi kullanıcı, hangi terminalden, hangi saatte, hangi komutu. İşte RCP komutunu listelemiş, ekranı silmiş, işte ne yapmış, secure çalışmış, dosyayı taşımış, manuel olarak bakmış. Bunlar da tipik P-Doc dosyalar arkadaşlar.
+
+103
+00:34:29,235 --> 00:34:30,175
+Bu da var mı?
+
+104
+00:35:45,364 --> 00:35:49,284
+Arkadaşlar benim sistem kafayı mı yedi?
+
+105
+00:35:53,396 --> 00:35:55,396
+Biraz bekleyelim arkadaşlar.
+
+106
+00:36:05,139 --> 00:36:08,340
+O zaman sesiniz geliyor da ekranınız donuk.
+
+107
+00:36:30,675 --> 00:36:33,476
+Arkadaşlar, sesim geliyor mu? Geliyor hocam.
+
+108
+00:36:33,716 --> 00:36:39,115
+Biraz önce benim makine kafayı yedi. Nerede ne oldu bilmiyorum. Şimdi toparladı.
+
+109
+00:36:40,155 --> 00:36:43,496
+Low system resources may affect your audio quality.
+
+110
+00:36:43,496 --> 00:36:51,976
+Evet. Şimdi tekrar kaldığımız yerden devam edelim. Sunuyu bile kapatmış.
+
+111
+00:37:01,460 --> 00:37:12,680
+Nerede kalmıştık? Lokları vermiştik. Şu lokları en son örnek lokları verdik diye hatırlıyorum. Değil mi?
+
+112
+00:37:14,199 --> 00:37:17,440
+Ekranı göremiyoruz hocam. Şimdi göreceksiniz arkadaşlar.
+
+113
+00:37:23,923 --> 00:37:24,824
+Görüyor muyuz?
+
+114
+00:37:25,984 --> 00:37:26,903
+Evet, görüyoruz.
+
+115
+00:37:27,144 --> 00:37:29,144
+En son burada kalmıştık diye hatırlıyor.
+
+116
+00:37:29,163 --> 00:37:29,463
+Aynen.
+
+117
+00:37:30,463 --> 00:37:32,784
+Yine bir dakika, şu yine kafayı yedi.
+
+118
+00:37:37,876 --> 00:37:44,836
+Evet, en son bir önceki buradaydı. Şimdi buradan devam ediyoruz.
+
+119
+00:37:44,836 --> 00:38:02,735
+Şimdi, log ekranını verdik. Şimdi fiziksel erişimle alakalı audit trail'lere bakalım. Nedir mesela? Bir ekipmana fiziksel erişim, fiziksel erişimi kontrol eden ekipman tarafından üretilir. Nedir mesela?
+
+120
+00:38:03,923 --> 00:38:31,043
+Kartlı anahtar sistemleri, alarm sistemleri, bir binaya giriyorsanız öyle değil mi? Bir cihaza giriyorsanız, bir kampüse giriyorsanız, bir alana giriyorsunuz. Nedir bu? Kartlı fiziksel anahtar sistemleri. Dolayısıyla bunlarla alakalı gerekli alarmlar, analiz ve depolanan veriler için ana bilgisayara bu fiziksel erişimleri de gönderilmelidir. Neler? Erişim sisteminin tarihi.
+
+121
+00:38:31,635 --> 00:38:44,076
+Girişim girişiminin tarihi, saati, konumu, kullanıcısı. Sadece geçerli erişimleri değil, geçersiz kabul edilmeyen erişimler.
+
+122
+00:38:44,628 --> 00:39:10,368
+Ve fiziksel ayrıcalıklar, odaya girme yetkileri, mesela bir hatırlarsanız geçen hafta ziyaretçi alanı, kısıtlı alan, girilmez alan diye gruplandırmıştık ya, kişilerin, bu yetkililerin bunlarla alakalı değişiklikler ve personele de fiziksel erişimde ihlalle alakalı mesaj da tabii ki gönderilebilir arkadaşlar.
+
+123
+00:39:13,076 --> 00:39:19,416
+Şimdi girelim. RFC 2196. Bu nedir?
+
+124
+00:39:19,416 --> 00:39:20,756
+Güvenliği el.
+
+125
+00:39:29,619 --> 00:39:31,619
+Site Güvenliği El Kitabı'nda...
+
+126
+00:40:00,000 --> 00:40:09,000
+Bugün benim makine kafayı yedi galiba. Tekrar eklemize paylaşayım.
+
+127
+00:40:22,324 --> 00:40:23,163
+Devletimizi.
+
+128
+00:40:37,460 --> 00:40:55,680
+Bu da RFC 2196'da site güvenliği el kitabına göre fiziksel takibi yapılması gereken cihazda. Mesela ana bilgisayarda okuma ve yazma nedir? Kolaydır. En az kaynak yoğundur.
+
+129
+00:40:56,032 --> 00:41:17,804
+Ve anında erişim vardır. Nedir? Denetim verilerinin ana bilgisayara kaydedilmesi. Öyle değil mi? Hatırlarsanız bunu silinmesine, kurcalanmasına ve silinmesine önlenebileceği bir yerde saklanması gerekiyordu. Ana bilgisayar ya da benim bir sunucu en kolayı. Ama...
+
+130
+00:41:19,860 --> 00:41:43,860
+Saldırganlara karşı açık. Çünkü niye? O makineye erişildiği zaman o makinede kaydedilen log kayıtlarına da ya da denetim izlerine de erişmek mümkün. İkincisi, CD-ROM'lar veya DD-ROM'lar. Daha güvenli ama daha az kullanışlı. Niye? Çünkü fiziksel olarak o makinede değil, farayı taşıdığın zaman...
+
+131
+00:41:44,628 --> 00:42:05,988
+Gidip incelemek için yüklemen gerekir. Ve hızı da harddiskin hızı kadar değil. Dolayısıyla kaydedebilir ortamının sabit kaynağına ihtiyaç var. O fiziksel ortama ihtiyaç var. Ve bu erişimler gecikebilir ve hemen kullanılmayabilir. Çünkü çıkarttıysan hadi takayım bir sonrakini bir sonrakini.
+
+132
+00:42:08,628 --> 00:42:27,728
+Salt yazınır aygıtlar. Nedir mesela? Line printer'lar, log'ları kağıda kaydediyoruz. Bu kağıda kaydediyor. Büyük ağ veya bağlantı sistemlerde ayrıntılı denetimin yakalanması için pratik değil.
+
+133
+00:42:32,815 --> 00:42:49,115
+Takip etmek, kontrol etmek mümkün değil. Ama delil, kalıcı. Hemen kullanılabilir. Bir lok gerektiğinde kullanışlı. Lokunuz var, al sana kağıtta yazılı lok.
+
+134
+00:43:00,159 --> 00:43:22,539
+Değiştirilmemelidir, silinmemelidir, deşifredilmemelidir ve gizliliği korunmalıdır. Ne yaparsınız? Bunun için şifreleyebilirsiniz. Dijital imza kullanabilirsiniz erişim için ya da erişim kontrolleri kullanabilirsiniz. Neye göre? 21.96'ya göre arkadaşlar.
+
+135
+00:43:22,539 --> 00:43:27,539
+Şimdi gelelim logların uygulanmasına.
+
+136
+00:43:27,795 --> 00:43:42,035
+Güvenlik denetim tesisinin temeli denetim verilerinin ilk elde edilmesidir. Yani verin yoksa denetimi, yani güvenlik denetimini yapmak mümkün değildir.
+
+137
+00:43:56,083 --> 00:44:13,183
+Verileri toplamak için de uygun kancaları içermelidir. Ve bu noklama mekanizması bütünüyle yazılımın doğasına bağlıdır. Yani yazılımda böyle bir mekanizma yoksa bunu gerçekleştirmeylesiniz.
+
+138
+00:44:24,980 --> 00:44:51,500
+İlgilim, Loglama yazılımına bağlıdır. İşletim sistemlerine bağlı dedik. İşletim sistemlerinden bir tanesi nedir? Windows. Windows nedir? Windows Event Log. Bu olay, yani event, bazı ilginç olayları tanımlayan bir mekanizma sunar. Nerede? Microsoft Windows'u. Neler içeri?
+
+139
+00:44:52,244 --> 00:45:11,043
+Sayısal bir tanımlama kodunu içerir ve bir dizi o logla alakalı özellik ve isteğe bağlı olarak da kullanıcı tarafından tutulması istediği verileri içerir. Ama bu log kendine ait bir sayısal bir unique tanımlama kodu var.
+
+140
+00:45:18,516 --> 00:45:34,855
+Sistemle ilgili uygulamalar ve sürücülerle ilgili kayıtları tutar. İkincisi uygulama logo. Yani kullanıcı düzeyindeki uygulamalarla alakalı olayları tutar. Üçüncüsü de güvenlik logo. Yani Windows YSA.
+
+141
+00:45:36,996 --> 00:45:40,435
+Windows olay şaması ögeleri neler?
+
+142
+00:45:41,780 --> 00:46:09,019
+Nedir mesela? İkili veri içeren bir olayın özellik değerleri, Windows olay günlüğü tarafından sağlanan ikili veriler, oluşturulan etkinliğin yayınlandığı kanal, olay sağlayıcı tarafından sağlanan parametreler, hata ayıklama olaylarında kullanılan bileşen adı, olayların meydana geldiği bilgisayar, olaylarla ilgili olaylar bulmak için kullanılabilecek.
+
+143
+00:46:09,523 --> 00:46:31,443
+İki adet 128 bittik bir unique değer. Olay veriler işlenirken hataya neden olan olay verisi ögesinin adı. Olay sağlayıcı tarafından sağlanan karmaşıklık, veri bütünlüğü falan filan. Dolayısıyla burada listesini bu ikiye verdim. Sembolik değerli görevler, olayın meyine geldiği zaman hakkındaki bilgi.
+
+144
+00:46:32,628 --> 00:46:44,628
+Hata ayıklama olaylarında kullanılan User Timer veya Etkinlik Sürümleri. Bunlar Windows Event Log'un önergisi.
+
+145
+00:46:44,628 --> 00:46:59,628
+Windows Event Log'un örneği var. Burada görüyorsunuz. Event tipi nedir? Success Audit, Kaynak Güvenlik, Kategorisi 1, ID'si. Bak 2 ID veriyordu, 512 ID'si.
+
+146
+00:47:00,052 --> 00:47:10,672
+Zamanı, kullanıcısı, kompütürü, bilgisayar tanımı ne yapmış? The Eventlog'ı silinmiş.
+
+147
+00:47:17,780 --> 00:47:41,700
+Şimdi gelelim Windows olay kategorilerine. Nedir? Oturum açma olayları, hesap yönetimini, dizin hizmet erişimleri, oturum açma etkinlikleri, nesne erişimleri, politika değişikleri, ayrıcalıkların kullanımları bunlar Windows'ta eventlerin kategorileri.
+
+148
+00:47:43,731 --> 00:48:09,891
+Unix sistemine, Windows tarafına anlattı. Unix'in genel amaçlı loglama mekanizmaları tüm Unix sistemlerinde bulunur. Nedir mesela? SSLog, Logger ya da SSLog nedir? Unix'te kullanılan birkaç standart sistem yardımcı programı tarafından başvurulan ve uygulama programları tarafından kullanılabilen bir API'dir. SSLog.
+
+149
+00:48:11,284 --> 00:48:18,244
+Logger ise Sistem Günlüğüne Tek Satırlık Girişler Eklemek İçin Kullanılan Bir Komut.
+
+150
+00:48:18,684 --> 00:48:31,443
+SS Config.etc Altındaki Sistem Günlüğü Olaylarının Günlüğe Kaydedilmesini ve Yönlendirilmesini Kontrol Etmek İçin Kullanılan Bir Yapılandırma Dosyası.
+
+151
+00:48:33,936 --> 00:48:54,516
+Günlük olaylarını almak ve kaydetmek için kullanılan bir sistem dimanı. Yani arka planda koşan bir iş. Bu neye görüyor? Konfig dosyasındaki konfigürasyona göre yapıyor ve ilgini eventlerde SSLogger komutu ile
+
+152
+00:48:55,092 --> 00:49:06,792
+event'e satır kaydetiyor. Eğer uygulama içerisinden Unix sitem üzerindeki uygulama üzerinden çağıracak istersen, sslogu kullanıyoruz arkadaşlar.
+
+153
+00:49:08,792 --> 00:49:12,292
+Şimdi gelelim sslog servisine.
+
+154
+00:49:16,148 --> 00:49:18,468
+Buraya gelmeden önce bir
+
+155
+00:49:25,940 --> 00:49:28,440
+Bir beş dakikada verelim sonra devam ederiz.
+
+156
+01:07:23,092 --> 01:07:29,552
+Evet arkadaşlar, şimdi S-Log Servisi ne sunar? Ondan biraz bahsedelim.
+
+157
+01:08:07,347 --> 01:08:34,108
+SESLOK neleri sunuyor? İlgili olayları yakalamanın bir yolu ve aynı zamanda depolama imkanı da veriyor. Aynı ekstra özellikler nedir? Bir filtreleme sağlıyor. İsterseniz LOG analizi yapabiliyorsunuz. Olay yanıtı yani alarm üretme ya da bazı sıralı olayları tetikleme. Alternatif mesaj formatları.
+
+158
+01:08:34,479 --> 01:08:55,760
+Log dosyasını şifreleme, bu logları veri tabanında, PostgreSQL gibi veri tabanlarında kaydetme ya da belli oran sınırlaması, yani şu kadarlık log, bu kadar log üzerine override etme gibi temel özellikleri de sağlıyor arkadaşlar.
+
+159
+01:08:59,956 --> 01:09:16,336
+SSLog protokolünden biraz bahsedelim. Ana bilgisayarların sistem log sunucularına IP olay bildirim mesajlarını göndermesine izin veren bir log aktarma mekanizması.
+
+160
+01:09:18,739 --> 01:09:30,699
+Log Mesaj Formatı ve işlemlerin ve uygulamaların log'a kaydedilebilen olaylar için uygun kullanmaları kullanmasına izin veriyor.
+
+161
+01:09:30,699 --> 01:09:46,699
+Ve SSLog Protokolü'nün ortak versiyonu ilk olarak Berkeley Üniversitesi'nde BST'de çıktı. Daha sonra Unix TCP IP sistemlerinin uygulamalarında bu SSLog kullanılmaya başlandı.
+
+162
+01:09:46,739 --> 01:09:59,219
+Open BSD, Belki de Software Distribution, BSD, CSLog formatındaki mesajlar nelerden oluşuyor? Bir, önem kodu, priority kodu.
+
+163
+01:10:00,000 --> 01:10:26,600
+Başlık, Hedder'ı. Burada Hedder içerisinde zaman dalgası, ana bilgisayarın yani lok'un üretildiği bilgisayarın adı ve IP adresi ve mesaj içeriği yani loklarla alakalı ne kaydediyorsak onlar bulunuyor. Örnek bir mesaj, işte tarih, sunucu ve açıklaması.
+
+164
+01:10:27,315 --> 01:10:31,415
+Bu da örnek. Biraz önce iki örneklere benziyor.
+
+165
+01:10:32,404 --> 01:10:59,944
+Peki, CSLog imkanları ve önem düzeylerinden biraz bahsedelim. İşte Kern, System Kernel, User Processler, Mailler, Daemon'lar, Authentication Programları yani Login ve Getty Komutları, CSLog, Daemon, LPR Printer Sistemleri, NIVS Sistemleri, Clock, FTP, NTP.
+
+166
+01:11:00,404 --> 01:11:20,744
+Sistemleri, bunlar CS Server Locked Levelları ve diğerleri ise Emergency Alertler. Bunlar da CS Lock tipleri olarak karşımıza çıkıyor. Nerede? Unix CS Lock Protokolü'nde.
+
+167
+01:11:21,268 --> 01:11:31,328
+Şimdi şu ana kadar anlattığımız Windows tarafındaki işletim sisteminin log'u ve Linux tarafındaki, Unix tarafındaki işletim sistemleri log'lu.
+
+168
+01:11:31,328 --> 01:11:45,308
+Şimdi ise uygulama düzeyindeki log'lardan biraz bahsedelim. Bu uygulama düzeyinde hangi tip uygulamalar? Özellikle ayrıcalıklı uygulamalar. Tamam.
+
+169
+01:11:46,068 --> 01:11:55,988
+Ayrıca uygulamalar da güvenlik sorunları sunuyor. Çünkü niye? O uygulamanın bir haliyle, zafiyeti nedeniyle sorun oluşması durumunda.
+
+170
+01:11:58,868 --> 01:12:21,847
+Uygulama ayrıcalıklı olduğu için uygulamanın yetkileriyle sistemde işlem yapma imkanı sağlanıyor. Dolayısıyla sistem kullanıcı düzeyinde denetim verileri tarafından yakalanmayabiliyor ayrıcalıklı olduğu için ve bildirilen güvenlik açıklarının büyük bir yüzdesini bu uygulama düzeyindeki zayıflıklar oluşturuyor.
+
+171
+01:12:23,764 --> 01:12:48,064
+Kullanılan ya da saldırganlar tarafından kullanılan güvenlik açıklanı da girdi verilerinin dinamik olarak kontrol edilmemesi. SQL injection gibi ya da oyuna bağlı işte buffer overflow gibi girdi verilerinin kontrol edilmeyerek sisteme hata yaptırılması ve bu hata nedeniyle de uygulamanın ayrıcalıkları kullanılarak sisteme erişim.
+
+172
+01:12:51,764 --> 01:12:59,224
+Ve dosya sistemlerine erişiminin ötesinde davranışını yakalamak için de gerekli olabilir.
+
+173
+01:12:59,664 --> 01:13:07,244
+Denetim verilerini toplamaya yönelik iki yaklaşım var. Birisi yerleştirilebilir kitaplıklar, library'ler yani kütüphaneler.
+
+174
+01:13:09,363 --> 01:13:25,384
+Dinamik ikili yeniden yapılandırma. Bu birleştirilebilir kütüphaneler neler? Sistem kütüphanelerini veya uygulamaları yeniden değerlemeye gerek kalmadan denetim verilerini oluşturulmasına izin verir.
+
+175
+01:13:26,863 --> 01:13:31,063
+Denetim verileri sistem değiştirilmeden üretilebilir.
+
+176
+01:13:31,891 --> 01:13:39,471
+Paylaşılan kitaplıklar yani kütüphaneler veya yürütebilir dosyanın kaynak kodlarına erişim imkanı verin.
+
+177
+01:13:39,891 --> 01:13:54,252
+Statik olarak bağlantılı kütüphaneler veya dinamik olarak bağlantılı kütüphanelerde bağlantılı kütüphane işleminin ayrı bir kopyası program içine yüklenir. Nereye? Sanal belleği.
+
+178
+01:13:54,252 --> 01:14:02,091
+Ve bunlarla alakalı statik veya dinamik log alınabilir. Burada görebiliyoruz arkadaşlar. Normal bir kütüphane.
+
+179
+01:14:02,676 --> 01:14:17,376
+Uygulama programının içerisinde ne yapıyoruz? Bloklama, paylaşılan bellekteki alanda o fonksiyon oraya insert ediliyor ve o kancı vasıtasıyla veri alınıyor.
+
+180
+01:14:17,376 --> 01:14:18,596
+Tamam.
+
+181
+01:14:22,387 --> 01:14:42,507
+Bu da uygulama tarafında o kancalarla insert edilen loglama komutu fonksiyonu. Ve o fonksiyon içerisinde kullanılan makro. Bunlar kancalar belli eylemlerde log almak için kullanılıyor.
+
+182
+01:14:48,979 --> 01:15:06,159
+Bu örneğe ekleniyordu. Diğeri dinamik, binary yeniden yazmak. Hem statik hem de dinamik olarak bağlantılı programlarda kullanılabilir ve derleme sonrası yürütülebilir ikili kodu doğrudan değiştiren bir teknikti.
+
+183
+01:15:07,539 --> 01:15:29,119
+Yenikste iki modül kullanılarak uygulanmıştır. Birisi yüklenebilir çekirdek modülü ya da iki izleme cini ya da da dimini. Ve yüklenebilir modüller talep üzerine otomatik olarak yüklenilebilir, ikili koday eklenir veya çıkartılabilir. Tamam mı?
+
+184
+01:15:30,355 --> 01:15:57,335
+Kütüphaneler uygulama içerisinde Kernel tarafından yükleniyor, monitör ediliyor ve logta kaydedilmiş oluyor. Şimdi gelelim bir başka konu, Output Trail'lerin yani denetim izlerinin analiz edilmesi. Bunun için analiz programları ve prosedürleri büyük ölçüde rol oynar ve bunlara bağlı olarak değişir.
+
+185
+01:15:59,412 --> 01:16:06,412
+ve log girişlerinin bağlanımının anlamasını gerektirir. Analiz ve ilgili bilgiler...
+
+186
+01:16:06,591 --> 01:16:15,291
+Aynı loglardaki diğer girişlerle ve diğer loglarla ve log olmayan kaynaklarla korelasyonundan bulunabilir.
+
+187
+01:16:15,291 --> 01:16:20,992
+Ve denetim dosyası formatları düz metin ve kodların karışımıdır.
+
+188
+01:16:21,652 --> 01:16:26,332
+Ve manuel veya otomatik olarak deşifre edilmelidir.
+
+189
+01:16:26,791 --> 01:16:34,291
+Ve temel durumu anlamak için girişleri ideal olarak düzenli bir şekilde gözden geçirmeyi...
+
+190
+01:16:34,591 --> 01:16:35,572
+Gerektirir.
+
+191
+01:16:37,572 --> 01:16:47,811
+Eğitim iz analiz türleri, bir isim bu kısmı birçok şekilde olasılık.
+
+192
+01:16:48,243 --> 01:17:08,644
+Bir olaydan sonra denetim izinin incelenmesi, denetim izin verilerinin periyodik olarak gözden geçirilmesi, gerçek zamanlı denetim analizleriyle de real-time on the flight izinsiz giriş algoritma işlemlerinin bir parçası olarak real-time analizde yapılabilir.
+
+193
+01:17:11,028 --> 01:17:30,448
+Gözden göçürme özelliği yöneticiye seçilen denetim kayıtlarından biri tarafından sağlanır veya bir veya daha fazla kullanıcının eylemleri, belirli bir nesne veya kaynak üzerindeki eylemler, denetlenen istisnaların tümü veya belirli bir grubu.
+
+194
+01:17:30,836 --> 01:17:48,816
+Belirli bir sistem ya da güvenlik özetliğine ilişkin eylemler incelenebilir ve zamana, kaynağa ve frekansa göre filtrelenebilir ve sistem etkinliği temelini sağlamak için bu incelemeler kullanılabilir.
+
+195
+01:17:56,564 --> 01:18:12,444
+Az kalmış. Vüro analizindeki yaklaşımlar neler? Birincisi basit uyarı. İlginç türde bir olayın gerçekleştiğini bildirmekten ibarettir. Tamam? Sadece uyarı.
+
+196
+01:18:21,235 --> 01:18:25,175
+Ve değişikliği tespit etmek için bu
+
+197
+01:18:26,515 --> 01:18:43,975
+Kalıplara karşılaştırılır ve kalıplar içerisinde ise normal olaydır, dışında ise anormal olaylardır ve eşikleme ile belli bir eşik değerine belirli bir temel değeri aşan verilerin tanımlanması ve bunun analiz edilmesiyle sonuçlanır.
+
+198
+01:18:54,515 --> 01:19:16,315
+Burada olayları çevre tanımlayan parametreler tanımlanır. En kompleks ise korrelasyon. Bu nedir? Birbirinden bağımsız gibi görünen olayların ilişkilerini bularak güvenlik denetimi ya da güvenlik analizi sağlayan yaklaşımdır arkadaşlar.
+
+199
+01:19:16,315 --> 01:19:20,595
+Şimdi gelelim SIM sistemlerine.
+
+200
+01:19:21,619 --> 01:19:33,299
+Yazılım, bu sim yazılımı, sslog'a benzer. Ancak ondan daha karmaşık merkezi bir loklama yazılımı paketidir sim.
+
+201
+01:19:33,299 --> 01:19:37,072
+Merkezi pek...
+
+202
+01:19:37,072 --> 01:19:57,872
+PIP bir denetim izi depolama sistemidir ve bir dizi veri analiz programı da bütünleşik olarak sunar. İki temel yapılandırma vardır. Birisi aracısız, birisi aracı tabanlı. Yani birisinde client kullanır, birincisi de client kullanmaz.
+
+203
+01:20:00,000 --> 01:20:10,840
+Sunucusu günlük içeren yani log içeren ana bilgisayardan bu ana bilgisayara herhangi bir özel yazılım yükleme gerek kalmadan verileri alır.
+
+204
+01:20:10,840 --> 01:20:27,920
+Doğrudan verileri alır. Aracılığa ise belirli bir günlük türü için olay fitreleme, depolama ve günlük normalleştirmeyi yapmak ve ardından normalize edilmiş günlük verilerini genellikle gerçek zamanlı
+
+205
+01:20:28,000 --> 01:20:54,039
+Ya da hemen hemen gerçek zamanlı olarak sim sunucusuna iletmek için bir ajan program içerir. Ve bu depolama için bir temel diye. Aracısızda sadece ham veriler toparlanır ama aracılığa da orada bir ajan koşar sunucuda ve o zaman belli bir formata, filtrelemeye, mekanizmaya bağlı olarak.
+
+206
+01:20:54,452 --> 01:20:58,532
+Kayda alıp sim sunucusuna gönderilmesini sağlar.
+
+207
+01:21:20,979 --> 01:21:37,879
+Tanımlanabilir ve sim içerisine entegre edilebilir. Bu yazılım bu çeşit günlük girişlerini normalize eder ve böylece tüm girişlerde aynı veri ögesi için aynı bir biçim kullanılmasını sağlar.
+
+208
+01:21:48,435 --> 01:22:03,835
+Log girişlerini de silebilir. Ve sim sunucusu çoklu günlük kaynaklarından yani loglama kaynaklarından gelen birleştirilmiş verileri analiz eder. Günlük girişleri yani log girişleri arasında olayları işlendirir.
+
+209
+01:22:04,275 --> 01:22:23,655
+Önemli olayları tanımlar ve öncelik sırasına koyar ve istenirse olaylara yanıtların mekanizmasını da başlatabilir. Gayet yetenekli bir yazılımdır. Böylelikle audit mekanizmasını bu hafta tamamlamış olduk arkadaşlar.
+
+210
+01:22:26,396 --> 01:22:28,935
+Sormak istediğiniz bir şey var mı arkadaşlar?
+
+211
+01:22:37,076 --> 01:22:40,876
+Otopilota bağladığınız var galiba. Hiç kimseden ses çıkmadığına göre.
+
+212
+01:22:43,956 --> 01:23:04,056
+Herkese dersimiz bitti arkadaşlar. Herkese hayırlı bayramlar diliyorum. Bayramdan sonra sınav haftası. Dolayısıyla ders de yok, sınavımız da yok. Ondan sonraki hafta, yani iki hafta sonra Cuma günü gene aynı saatte görüşmek üzere. Hepinize iyi bayramlar, sağlıklı günler diliyorum.
+
+213
+01:23:04,595 --> 01:23:05,236
+İyi bayramlar.
+
+214
+01:23:05,236 --> 01:23:09,496
+Görüşmek üzere.

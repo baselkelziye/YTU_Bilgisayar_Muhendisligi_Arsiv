@@ -1,0 +1,835 @@
+1
+00:15:57,364 --> 00:16:20,144
+Arkadaşlar, sesim geliyordur. Hepkese hayırlı cumalar ve iyi haftalar diliyorum. Gerçi haftanın son günü. Aslında bir yönden hafta sonundan önceki bir gün. Ama haftanın da son günü. Bu hafta bugün de ders mi olur diyeceğiniz de bir gün olsun istemiyorum. Hızlıca dersimizle başlayalım.
+
+2
+00:16:20,659 --> 00:16:23,360
+Sesim gelmiyor diye yazmış bir arkadaş ama.
+
+3
+00:16:23,939 --> 00:16:24,639
+Geliyor hocam.
+
+4
+00:16:24,659 --> 00:16:25,459
+Merhaba hocam, geliyor.
+
+5
+00:16:26,219 --> 00:16:31,879
+Tamam, herkese tekrar iyi hayırlı cumala konumuza başlayabiliriz.
+
+6
+00:16:36,916 --> 00:16:38,916
+Ekranınızda paylaşalım.
+
+7
+00:16:46,707 --> 00:16:53,767
+Evet arkadaşlar, dersimiz Bilgisayar Sistemleri ve Ağ Güvenliği. Beşinci haftadayız.
+
+8
+00:16:55,067 --> 00:17:13,707
+Hatırlayacağınız gibi yaklaşık üç hafta önce Bilgisayar Mühendisliği, Bilgisayar Sistemleri ve Ağ Güvenliği'ni bir bütüncül olarak ele aldığımız zaman, bir yönetici olarak ele aldığımız zaman hangi hususları değerlendirmemiz gerektiği hususundan başlamıştık.
+
+9
+00:17:16,084 --> 00:17:27,104
+Bu bağlamda önce risk varlıklarımızın tespit edilmesi ve varlıklara alakalı risk değerlendirmesinin nasıl yapılacağını standartları belirttik.
+
+10
+00:17:27,104 --> 00:17:38,824
+Ve bunlarla alakalı örnek Silver Star Maden, yani Gümüş Yıldız Madeninin varlıklarını ki bu bizim aslında biti güvenliği dediğimiz zaman.
+
+11
+00:17:39,380 --> 00:17:55,380
+Ağ Güvenliği dediği bir zaman sadece bizi ilgilendiren husus, ya bir işim firmasıysa güvenlik tamam da diğer işinin güvenlik değil anlamında olmadığını göstermek için böyle bir örnek üzerinde durmuştuk.
+
+12
+00:17:55,380 --> 00:17:58,380
+Daha sonraki haftada...
+
+13
+00:17:58,612 --> 00:18:12,552
+Bir önceki haftadaki risk değerlendirmesi yaptığımız varlıklarımız için nasıl riski azaltabiliriz, nasıl güvenlik kontrolleri ve güvenlik prosedürleri oluşturabiliriz bunları ele almıştık.
+
+14
+00:18:12,816 --> 00:18:33,115
+Geçen hafta ise tamamen farklı konsepte. Çünkü hem iki hafta öncesi hem de daha sonrasında tamamen lojik tabanda, yani sayısal bağlamda bilgisayar sistemini ve ağ güvenliğini değerlendirirken,
+
+15
+00:18:33,491 --> 00:18:42,491
+Ve varlıklarımızı, dijital varlıklarımızı değerlendirirken, geçen hafta bu lojik tabanın bulunduğu fiziksel...
+
+16
+00:18:43,092 --> 00:19:00,231
+Altyapının güvenliği, bunlarla alakalı oluşabilecek riskler alınması gereken önlemleri, riskleri, fiziksel ve altyapı güvenliği ilgilendiren riskleri, işte doğal riskler, insan kaynaklı riskler şeklinde ayırmıştık hatırlarsanız.
+
+17
+00:19:00,392 --> 00:19:07,292
+Ve insan kaynaklıydı hatayla ya da bilerek, kastiği olarak bunlarla ilgili alınması gereken önlemleri belirtmiştik.
+
+18
+00:19:09,491 --> 00:19:22,172
+Birleşim sisteminin hem kullanıcısı hem de bu birleşim sisteminin güvenliğinden sorumlu olan kişiler kullanıcıları bağlamında insan kaynakları güvenliği.
+
+19
+00:19:22,996 --> 00:19:40,756
+Biti sistemini kullanan, bakan, işleten, saldırgan da insanın nihayetinde bunların güvenliği ya da insan kaynağının biti güvenlik mekanizmasına nasıl dahil edilebileceği hususunu irdeleyeceğiz.
+
+20
+00:19:41,896 --> 00:19:46,316
+Evet, bu haftaki konumuz insan kaynakları güvenliği arkadaşlar.
+
+21
+00:19:47,092 --> 00:19:55,752
+İlk önce hatırlarsanız güvenlik gereksinimlerinde bir farkındalık eğitimlerinden bahsetmiştik.
+
+22
+00:19:55,752 --> 00:20:04,752
+Dolayısıyla güvenliğin doğru bir şekilde algılanması ve yapılan eylemlerin güvenliğin bir parçası olarak...
+
+23
+00:20:05,200 --> 00:20:20,200
+Değerlendirerek güvenliği zafiyete uğratmayacak ya da bilerek ya da bilmeyerek güvenlikle alakalı sorun oluşturmayacak mekanizmaları oluşturabilmek adına bütün personelin...
+
+24
+00:20:20,692 --> 00:20:32,612
+Bu konumuz güvenlik bilinci, eğitim ve öğretim.
+
+25
+00:20:35,188 --> 00:20:55,228
+Bir işveren, bir yönetici olarak düşündüğümüz zaman ve BT kaynakları da BT varlıklarımız olduğunu ya da varlıklarımızın BT yoluyla zarara uğrayabileceği durumların olduğu firmalarda istihdam politikaları nasıl olmalı?
+
+26
+00:21:01,428 --> 00:21:14,548
+İçin devamlılığında uygulanan süreçler ve işten ayrılma süreciyle alakalı nasıl uygulamalar olmalı ve nasıl politikalar belirlemeliyiz bunu anlatacağız.
+
+27
+00:21:14,548 --> 00:21:26,348
+Sonrasında bir iş yerindeki e-posta kullanımları ve internet kullanım politikaları nasıl olmaları.
+
+28
+00:21:28,276 --> 00:21:42,716
+En son olarak da bilgisayar güvenliği, olay müdahale, ekipleri oluşturulması görevleri bunları değerlendirerek bu haftaki ders içeriğimizi tamamlamış.
+
+29
+00:21:43,516 --> 00:21:52,615
+Şimdi gelelim ISO 27002 dökümanına göre ki bu bilgi güvenliği yönetimi uygulama esaslarını veriyordu.
+
+30
+00:21:52,615 --> 00:21:54,876
+Code of Practice of Information Security.
+
+31
+00:21:55,359 --> 00:22:13,019
+Ve NIST SP8100 dokümanı da, bu da bir başka standart dokümanı, Bilgi Güvenliği El Kitabı'ydı. A Guide for Managers. Şimdi burada bilgi güvenliği bilinci ve eğitimi konusu açıklanmıştır.
+
+32
+00:22:22,003 --> 00:22:37,803
+Hazırlamış ve burada da bunlardan bahsediyor olacağız. Şimdi gelelim insan kaynakları yönetiminin ya da insan kaynakları güvenliğinin kuruluşlara, firmalara ne faydası var?
+
+33
+00:22:37,803 --> 00:22:48,884
+Öyle değil mi? Yani niye biz insan kaynaklarını güvenlik konusunda bir parçası olarak ele alalım?
+
+34
+00:22:50,548 --> 00:23:07,927
+Birincisi, kuruluşa faydalarını bir irdeleyelim. Nedir? Güvenlik bilinci ve güvenlikle alakalı eğitim ve öğretim planları ve programları kuruluşlara dört ana fayda sağlar. Tamam mı?
+
+35
+00:23:08,175 --> 00:23:19,135
+Dolayısıyla niye bilgisayar, bilişim güvenliği, ağ güvenliğinde insan kaynaktan ele aldığımız zaman amacı dört ana fayda.
+
+36
+00:23:19,275 --> 00:23:24,935
+Bir, güvenlikle alakalı çalışan davranışını iyileştirir.
+
+37
+00:23:26,815 --> 00:23:32,955
+İnsan kaynaklı hatayla güvenlikte oluşabilecek zafiyetlerin önüne geçmiş olursunuz. Bu bir.
+
+38
+00:23:34,432 --> 00:23:58,771
+Çalışan sorumluluğunu arttırır. Çünkü biliyor ise ya da bu konuda gerekli uyarılar yapılmış ise sorumlu da tutabilirsiniz. Yani şifre politikalarından haberdar ettiniz, internet politikalarından haberdar ettiniz, bunların kurumsal varlıklara karşı zararlarının neler olabileceğinden bahsettiniz.
+
+39
+00:24:02,291 --> 00:24:23,711
+Bilgisi varsa hem davranışı iyileşecek hem de sorumlu da tutabileceksiniz. Ve çalışan için de gerekli eğitimlerden sonra yükümlülüğü azaltır. Çalışan davranış için yükümlülüğü azaltır. Çünkü gerekli bilgileri ben anlattım. Artık o sorumlu.
+
+40
+00:24:27,124 --> 00:24:33,844
+Sizin için de üst yöneticiler için de yükümlülük yoktur diyebilirsiniz.
+
+41
+00:24:37,332 --> 00:24:38,372
+Bir dakika arkadaşlar.
+
+42
+00:25:00,531 --> 00:25:14,011
+Sonuncusu ise düzenlemelere, yani sizin bağlı bulunduğunuz hukuki düzenlemelere karşı yükümlülüğünüzü de gerçekleştirilmiş ve buna uyumu da sağlamış olursunuz.
+
+43
+00:25:25,231 --> 00:25:31,891
+Yükümlülük altına girmeniz de kuruluş olarak önüne geçilmiş olacaktır arkadaşlar.
+
+44
+00:25:33,351 --> 00:25:45,971
+İnsani faktörler nedir? Ya da bilişim bir sisteminin güvenliği dediğimiz zaman ne tür insani faktörlerden söz edilebilir ve niye biz güvenliğin içine iddia ediyoruz?
+
+45
+00:25:48,627 --> 00:26:13,347
+Bilgisayar sistemlerinin ve bilgi varlıklarının güvenliğini sağlamakta kritik bir role sahiptir. Çünkü niye? Çünkü güvenlikle alakalı zayıflıklardan bahsederken sosyal mühendislikten, kullanıcı hatalardan bahsetmiştik. Dolayısıyla aslında güvenliğin merkezindedir.
+
+46
+00:26:13,695 --> 00:26:39,096
+İnsan faktörü ve çalışan davranışlarla ilgili başlıca değerlendirilecek hususlar nelerdir? Bir, kişilerin bilgisizliği nedeniyle ya da bilgisizliği ve eksik bilgileri nedeniyle sistem kullanımında ya da sistem faaliyetlerinde bilerek ya da bilmeyerek yaptığı hatalar ve eksik yaptığı hususlar.
+
+47
+00:26:41,428 --> 00:26:59,116
+Sahtekarlık ve hile bilerek yapması durumunda, çünkü eğitimin bir parçası da bunlara uyulmaması durumunda cezai müeydeler olacağı için bunları bilmesi durumunda caydırıcı rol de oynayabilir. Bir başkası ise...
+
+48
+00:26:59,316 --> 00:27:20,175
+Hoşçutsuz çalışanların eylemleri. Çünkü niye? Çünkü siz gerekli bilgileri verdiniz ama herkes aynı anda memnun edemezsiniz. Dolayısıyla bunların eylemlerini de öngörmek ve bunların eylemleriyle de alakalı mekanizma oluşturmak gereklidir.
+
+49
+00:27:28,531 --> 00:27:44,651
+Sırf zarar vermek için yapar, terfi ettirmemişsinizdir, maaşını yeterince arttırmamışsınızdır. Bunlar insanların bilişim sistemine, bilişim sistemine vereceğin doğrudan zararlar olarak düşünebiliriz arkadaşlar.
+
+50
+00:27:55,892 --> 00:27:57,892
+Evet arkadaşlar, şimdi...
+
+51
+00:27:58,892 --> 00:28:00,892
+Niye bu gitmiyor?
+
+52
+00:28:10,003 --> 00:28:30,263
+Evet arkadaşlar, en baştaki, çünkü personelleri de seviyelere ayırmak gerekiyor. Bütün personelle vereceğiniz bir farkındalık eğitimi vardır. Öyle değil mi? Bütün personelle verilecek bir farkındalık eğitimi.
+
+53
+00:28:36,048 --> 00:28:55,208
+Buradaki alttaki bütün personel dediğimiz zaman kapıcısından, çaycısına, güvenliğinden şeye kadar bütün personel yapıyoruz ve dolayısıyla biz bilgi sistemini fiziksel güvenliği de içine alacak şekilde ele aldığımıza göre bütün personele farkındalık eğitimi vermemiz gerek.
+
+54
+00:28:55,208 --> 00:29:01,447
+Sonra, bitiyle alakalı tüm personele.
+
+55
+00:29:02,387 --> 00:29:21,387
+Ne vermemiz lazım? Güvenlikle alakalı temel okuryazarlığı vermemiz lazım. Herkese farkındalık eğitimi ama BİT'yi kullananlara güvenlikle alakalı okuryazarlık eğitimi. Tamam mı?
+
+56
+00:29:23,387 --> 00:29:28,047
+Bu BİT'yi kullanan ya da BİT ile alakalı herkese.
+
+57
+00:29:28,915 --> 00:29:44,935
+BİT sistemlerinde fonksiyonel rol alanlara ne tür eğitim vermemiz lazım? Bunları üçtür. Eğer aldığı rol pozisyonuna göre başlangıç orta ve ileri seviyede.
+
+58
+00:29:50,451 --> 00:30:02,451
+Bilgi vermemiz lazım. Eğer fonksiyonel yolda kullanıcı rolünde mi, yönetim rolünde mi, bakım rolünde mi, bunlarla alakalı. En üstte ise...
+
+59
+00:30:03,796 --> 00:30:23,456
+Öğretimde ise, education'da ise, biti güvenliğiyle alakalı profesyonellere verilecek eğitim. Dolayısıyla herkese topladık genel bir eğitim değil. Bu eğitimi de güvenlikle alakalı eğitimi de kademe kademe planlı yapmakta fayda vardır arkadaşlar.
+
+60
+00:30:29,807 --> 00:30:42,728
+Eğitim, yani training ve öğretim, education. Tamam mı? Nitelikleri, sol taraftaki sütün düzeyini gösteriyor. Yani niteliği, düzeyi, amacı.
+
+61
+00:30:43,571 --> 00:31:10,711
+Öğretme yöntemini, ölçme değerlendirme yöntemini ve süresi ne kadar etkilidir? Farkındalık eğitiminde neleri öğretiyoruz? Neler var? Eğitimde neler var? Trainingde, educationde neler var? Şimdi nitelik olarak farkındalık eğitiminde işin ne olduğunu öğretiriz. Ne olduğunun farkına var. Dolayısıyla bilgi verilir. Amacımız da
+
+62
+00:31:11,124 --> 00:31:30,463
+Tanıtmaktır. Ne olduğu ile alakalı bilgi vererek tanıtmaktır. Ne tür yöntemler kullanabiliriz? Videolar kullanabiliriz, posterler kullanabiliriz, küçük bültenler kullanabiliriz. Ölçme yöntemi nedir? Doğru yanlış, çoktan seçmeli. Çünkü niye?
+
+63
+00:31:31,791 --> 00:31:51,051
+Doğruyu bilirse ve tanıtmış isek doğru, yanlışlar içerisinde doğruyu bulması kolaydır ve bu farkında olmasını sağlar. Dolayısıyla vereceğimiz çok daha seçmeli seçeneklerle bunu sınavda yapabiliriz eğer farkındalık eğitimi vereceksek.
+
+64
+00:31:51,508 --> 00:32:12,268
+Eğer training yapacaksak, yani güvenlikle bir haliyle ilişkili olanlara yapacağımız training de aslında burada ne olduğunu değil, nasıl olduğu anlatılır. Nasıl? Yani güvenlik nasıl güvenlik sağlanır?
+
+65
+00:32:12,723 --> 00:32:27,703
+Ve burada bizim rolümüz nedir? Ve bu aslında ne kazandırır? Training de tecrübe kazandırır. Amacımız da bitiyle alakalı olduğu için verilen görevleri becerebilmesi.
+
+66
+00:32:27,703 --> 00:32:39,583
+Tamam. Pratik. Neyi kullanırız? İşte yönetmelikleri, yönergeleri. Ders veririz. Vaka çalışması yaparız.
+
+67
+00:32:40,468 --> 00:32:54,307
+Sağ çalışması yaparız. Ölçme yöntemi nedir? Nasıl olduğunu bileceğine göre bu sefer klasik sınav problem verilir ve o problemi uygulayarak çözmesi istenir.
+
+68
+00:32:54,307 --> 00:33:06,168
+Tamam. Dolayısıyla doğru yanlış farkındalık, klasik sınav, eğitim. Öğretimde ise güvenlikle doğrudan ilişkili kişilere
+
+69
+00:33:06,804 --> 00:33:27,744
+Çünkü güvenlik ilişkiyle nasıl olduğunu biliyor. Neden bu uygulanıyor? Çünkü uygulayıcı pozisyonda olacak. Aslında biz bunları eğitiyoruz çünkü doğrudan güvenlikle alakalı. Amacımız burada tecrübe kazanması değil, işe hakim olması, işi kavraması ve bu işin nasıl yapıldığını anlaması.
+
+70
+00:33:29,748 --> 00:33:57,188
+Öğretmen yöntemi nedir? Aslında derslerle videolarla geçmiştir, onlar temeldir. Teknik ayrıntılı dokümanlar nedir? Tartışma, workshoplar, brainstorming dediğimiz karşılıklı müzakereler ve arka planda destekleyici okumalar. Ders bağlamında değil. Öğretmen ölçme yöntemi nedir? Deneme.
+
+71
+00:33:57,599 --> 00:34:17,840
+Gidecek, aktif olarak o işi yapacak ki öğretim yani education uzun vadeli bir iştir. Aslında bunu o par tarzda düşebiliriz. Lisansta biz öğretiriz orta vadede ama lisans üstünde artık bu işi neden olduğunun farkına varmanızı ve
+
+72
+00:34:19,347 --> 00:34:36,948
+Bunun üzerine bir şeyler inşa edebilmenizi, işte makalelerle, tartışmalarla bu beklenir sizin lisansüstü çalışmada benzer seviyelendirmeyi sektörde de yapabilmek mümkün.
+
+73
+00:34:36,948 --> 00:34:39,288
+Ama burada şöyle bir paradoks var.
+
+74
+00:34:39,668 --> 00:34:53,268
+Eğer siz lisans sınavını çoktan seçmeli yapıyorsanız ya da lisans sınavını çoktan seçmeli yapıyorsanız aslında siz o derste eğitim ve öğretim yapmıyorsunuz.
+
+75
+00:34:53,327 --> 00:34:59,387
+Yani training ve cukriği yapmıyorsunuz. Sadece farkındalık eğitimi veriyorsunuz demektir arkadaşlar.
+
+76
+00:35:01,387 --> 00:35:04,248
+Dörelim bunların ayrıntılarına.
+
+77
+00:35:04,576 --> 00:35:14,576
+Çünkü niye? Bir farkındalık eğitimimiz var, bir training var, öğretmen eğitimimiz var, bir de öğretimimiz var. Çalışanın dikkatini...
+
+78
+00:35:14,804 --> 00:35:23,484
+Organizasyon içindeki güvenlik sorunlarına odaklanmaya ve bilgilendirmeye çalışır farkındalık eğitimi.
+
+79
+00:35:23,484 --> 00:35:34,164
+Ve güvenliği sağlama konusundaki sorumlulukların ve eylemleri üzerindeki kısıtlamaların farkına varır farkındalık eğitimin neticesinde.
+
+80
+00:35:34,284 --> 00:35:42,484
+Ve kullanıcılar kuruluşun selameti için güvenliğin önemini anla ve güvenlik daftı...
+
+81
+00:35:42,804 --> 00:35:47,704
+Oluşması durumunda neye mal olacağını da farkına varır.
+
+82
+00:35:47,704 --> 00:35:58,744
+Ve farkındalık eğitimiyle, yönetimle uç noktadaki kullanıcı arasındaki katılımı teşvik eder.
+
+83
+00:35:59,484 --> 00:36:07,144
+Ben önemliyim, bak bana bunları öğretiyorlar, bana eğitim veriyorlar diye aslında bir bağlanma hissiyeti de doğru.
+
+84
+00:36:09,012 --> 00:36:13,552
+Organizasyonun ve hedef kitlenin ihtiyaçlarına göre ayarlanır.
+
+85
+00:36:14,228 --> 00:36:38,188
+Yani kime vereceksiniz bu eğitimi? Kimler ilgileniyor? Onların pozisyonuna göre farkındalık eğitimi uyarlanır. Güvenlik mesajını çeşitli şekillerde çalışanlara sürekli olarak hatırlatılmalıdır. Çünkü farkındalık eğitimini verdik, çoktan seçmeli verdik ama bu kısa vadeli bunu...
+
+86
+00:36:38,387 --> 00:36:54,648
+Mutat aralıklarla, buklıklarla, mesajlarla, küçük ilanlarla, posterlerle hatırlatılmalıdır. Ve tüm çalışanlara bir güvenlik bilinci politikası belgesi sunulmalıdır.
+
+87
+00:37:01,268 --> 00:37:13,387
+Bütün personelli ilgilendiren şirketin güvenlik politikaları belgesi bulunmalı ve bu belge bütün kullanıcıların erişiminde olmalıdır.
+
+88
+00:37:15,443 --> 00:37:29,203
+NIST'in SP 800'e 100 belgesi için okuduğumuz zaman farkındalık programları şu şekilde tanımlanıyor. SP 800'e 100'de nedir farkındalık eğitimi?
+
+89
+00:37:42,516 --> 00:38:02,296
+Nasıl olmadığını anlayarak ve neye izin verildiğini ve neye izin verilmediğini bilerek kısımlarını ve bölümlerini ve kişisel çalışma ortamlarını etkileyen tehditler ile güvenlik açıkları hakkında bilgilendirmek için kullanılır.
+
+90
+00:38:02,296 --> 00:38:10,115
+Yani kişinin mevcut pozisyonunda ne şartlarda bilgiyle alakalı güvenlik açığına sebebiyet verebilir.
+
+91
+00:38:11,315 --> 00:38:29,255
+Eğer güvenlik personeli ise hırsızların gelmesi durumunda vandalizm, vandallıkla sisteme fiziksel zarar vermeleri ya da hırsızlıkla dizisel medyanın çalınması ya da gizli bilgileri bulan dizislerin çalınmasıyla patent ya da bilgi hırsızlığı.
+
+92
+00:38:29,255 --> 00:38:38,076
+Yani mevcut konumun de ki kendisinden kaynaklı zafiyetlerin biti güvenliğine ne tür tehditler?
+
+93
+00:38:38,804 --> 00:38:58,983
+Oluşturabileceğini ile ilgili bilgileri vermelidir. Farkındalık yalnızca izlenmesi gereken bilgi güvenliği politikalarını ve prosedürünü iletmekle kalmaz. Yani ben gönderdim, politikalar bunu okuyayım, bundan sorumlusunuz onlarla kalmaz.
+
+94
+00:38:59,391 --> 00:39:08,951
+Aynı zamanda uyumsuzluk nedeniyle uygulanan her türlü yaptırım ve disiplin cezaları içinde temel oluşturur.
+
+95
+00:39:09,951 --> 00:39:12,951
+Farkındalık bir kurumun...
+
+96
+00:39:14,963 --> 00:39:31,143
+Bilgi sistemlerini ve bilgilerini kullanmak için davranış kullanılarını açıklamakta kullanılır ve bilgi ve bilgi sistemlerinin kabul edilebilir kullanımına ilişkin bir beklenti düzeyi oluşturur.
+
+97
+00:39:33,283 --> 00:39:35,783
+İkinci aşamamız neydi?
+
+98
+00:39:36,623 --> 00:39:37,963
+Eğitim de...
+
+99
+00:39:41,204 --> 00:39:59,684
+Eğitimde ne var? İnsanlara, eğitimde yani trainingde, insanlara bilgi teknoloji ile ilgili görevlerini daha güvenli bir şekilde gerçekleştirme becerilerini öğretmek için tasarlanır eğitim.
+
+100
+00:39:59,684 --> 00:40:07,124
+Ve insanlar ne yapmalı ve nasıl yapmalıdırları öğretir eğitim.
+
+101
+00:40:07,987 --> 00:40:16,087
+Genel kullanıcılar için de o dağı iyi bilgisayar güvenliği uygulamalarıdır.
+
+102
+00:40:16,087 --> 00:40:25,307
+Ve genel kullanıcılar için. Programcılar için eğitimde ise ya da programcılar, geliştiriciler ya da sistem koruncuları için eğitimde ise
+
+103
+00:40:26,003 --> 00:40:37,143
+Geliştiricide bir güvenlik zihniyeti geliştirir ki bu güvenlik zihniyetini programına yansıtsın ya da sistemi korurken bunu yansıtsın.
+
+104
+00:40:48,115 --> 00:41:07,176
+Nasıl bir denge oluşturması gerektiğini kavramasına fayda olur. Çünkü siz yöneticiyi BT'nin listleriyle alakalı bilgilendirme yapmaz iseniz yöneticinin güvenlikle alakalı maliyetlerin altında imza atmasını da bekleyemezsiniz.
+
+105
+00:41:08,532 --> 00:41:24,512
+Üst yönetim eksekütül düzeyde ise, yönetici düzeyinde ise risk yönetimi hedeflerinin ve ölçümleri ve politika belirleme konusunda liderliği kapsamalıdır eğitim.
+
+106
+00:41:24,884 --> 00:41:37,423
+Üst en tepede yönetici eğitimi, altta yönetim kapatılması için eğitim, altta teknik geliştiriciler eğitim, genel kullanıcılar için eğitim. Kademeli.
+
+107
+00:41:48,467 --> 00:42:01,827
+Güvenlik konusunda uzmanlık gerektiren güvenlik uzmanlığına yöneliktir. Yani işi güvenlik olan kişilere verilir öğretim, eğitim, eğitim ve çalışan.
+
+108
+00:42:02,260 --> 00:42:30,220
+Yani güvenlikle alakalı çalışan için kariyer gelişiminin bir parçasıdır ve onun kategorisine uyan. Genellikle bu tür education'ı, öğretim faaliyetleri dış kaynaktan elde edilir. Çünkü uzmanın kendi kendine git bunu öğren şeklinde değil. Ne yapar bunu? Üniversitede kurslara, lisansüstü programlara, doktora programlarına ya da uzmanlaşmış eğitim programlarına.
+
+109
+00:42:30,260 --> 00:42:47,400
+Yani dahil olur CCNA, CCMP ya da MCC, MCMP gibi ya da Microsoft'ın Certificate Eğitimleri tamamen uzmanlaşmış eğitim programlarına dahil olur arkadaşlar.
+
+110
+00:42:49,020 --> 00:42:50,980
+Ben buradan niye kutlamıyorum bir dakika?
+
+111
+00:42:55,123 --> 00:42:58,263
+Bir dakika arkadaşlar, bundan tutmaya çalışayım.
+
+112
+00:43:10,036 --> 00:43:34,395
+Peki, insan güvenliğinden bahsediyoruz. V seviyelendirdik, farkındalık eğitimi dedik, öğretim dedik, farkındalık dedik, yani awareness dedik, training dedik ve education dedik. Bunlar hepsi eğitim ve eğitim bir Türkçe'de birbirine karışıyor ama birisi farkındalık, birisi eğitim.
+
+113
+00:43:34,768 --> 00:43:58,228
+Birisi öğretim. Tamam. Öyle ayırılabiliyor. Farklı bir öneriniz varsa ona da açayım. Ve kişinin, çalışanım işe alma sürecinden işten ayırma sürecine kadar bütün süreçleri de içine almalıdır bu güvenlikle alakalı. İşe alma sürecindeki güvenlikle alakalı hususlardaki amaç nedir? Çalışanların.
+
+114
+00:43:59,219 --> 00:44:17,559
+Ve yüklenicilerin ve üçüncü taraf kullanıcıların, yani çünkü çalışanınız var, kendi dil firma. Ya da dışarıya iş yaptırıyoruz, yüklenicimiz var ya da üçüncü taraf bir hizmet sağlıyoruz.
+
+115
+00:44:26,612 --> 00:44:38,231
+Ve hırsızlık, dolandırıcılık gibi ya da sistemi kötüye kullanma gibi riskleri azaltmaktır. İş alma sürecinden başlayarak güvenlik.
+
+116
+00:44:38,516 --> 00:45:06,216
+Uygun arka plan kontrollerine ve taramalara ihtiyaç var. Nedir arka plan kontroller? Şimdi bir kişiyi iş alma sürecinde yaptığınız zaman güvenliği ve güvenilirliğiyle alakalı sorgulama, referans kullanabilirsiniz, eski çalıştırdığı yöneticileri arayabilirsiniz, ayrıntılı araştırmalar yaptırabilirsiniz. Dolayısıyla iş alma süreci ayrıntılı doğrulama süreçlerinde işerir.
+
+117
+00:45:06,516 --> 00:45:09,596
+Son derece hassas pozisyonlar için ise
+
+118
+00:45:09,780 --> 00:45:37,780
+Son derece hassas kritik pozisyonlar için aşa alıyorsanız bir kurumsal soruşturma kurumunun da kontrol etmesi sağlanmalıdır. Ve hatta adli sicil kaydı ve kredi kontrolü de yapılmalıdır. Yani artık gerçi kredi kontrolü forex kaydını ev kiralarken bile soruyorlar ki bu adam güvenilir mi, kirasını öder mi diye. Böyle kritik pozisyonlar için haydi haydi sorulur.
+
+119
+00:45:37,780 --> 00:46:00,680
+Batak bir adamsa sizin dijital verilerinizi para edecek her şeyi satma ihtimali vardır. Dolayısıyla işe alma süreci özellikle kritik pozisyonlarda daha hassasız. İş sözleşmesi, işe alması ile ilgili bu işlemleri yaptık. Şimdi ne yapacağız? Adamla sözleşmenizi alacağız. Çalışanlar.
+
+120
+00:46:02,771 --> 00:46:18,551
+Aşağıdakileri içermesi gereken, aşağıdakileri çünkü güvenlikle alakalı hususları içermesi gereken bir iş sözleşmesinin hüküm ve koşullarını kabul etmeli ve bunu ettiğine dair imzalattırılmalıdır. Ne bunlar?
+
+121
+00:46:28,980 --> 00:46:52,980
+Çalışanın, imza atanın ne tür sorumlulukları var? Burumun ne tür sorumlulukları var? İki, gizlilik ve ifşa etme. Yani yaptığı pozisyon gereği gizli bilgilere ulaşım varsa ya da patentler ya da telifaklar bunlarla ilgili bilgilere ulaşma hakkı varsa bunları ifşa etme ile ilgili sözleşmeler.
+
+122
+00:46:53,215 --> 00:47:20,015
+Kuruluşun güvenlik politikalarına referanslar, işte bu kuruluşun şu güvenlik politikalarına uyma, şu şu şu cezai müeydilere de karşılaşacağının farkında olma gibi. Çalışanların da bütün bunları okuyup anladığına ve bu politikalara uyacağına açık ve seçik kabul ettiğine dair onayı da barındırmalıdır arkadaşlar.
+
+123
+00:47:22,068 --> 00:47:48,668
+Peki bu işe alım sürecindeydi. Şimdi gelelim istihdam sırasında yapılması gereken. Mevcut çalışanlarla ilgili hedefler nedir? Çalışanların, yüklenicilerin ve üçüncü taraf kullanıcıların bilgi güvenliği tehditleri ve endişeleri ile bilgi güvenliğine ilişkin sorumluluk ve yükümlülüklerin farkında olmalarını sağlanmalı ve işlerinde
+
+124
+00:47:49,396 --> 00:48:03,615
+Kurumsal güvenlik politikalarını destekleyecek donanıma sahibi olmalarını sağlamak ve insan hatası riskini azaltmaktır bu yaptığımız bilgi güvenlikle alakalı yaptığımız işlemler.
+
+125
+00:48:06,099 --> 00:48:31,199
+Personel güvenliğinin iki temel unsuru vardır. Bunlar bir, kapsamlı bir güvenlik politikası belgesi. İki, devam eden bir, farkındalık ve eğitim programları. Yani başlangıçtaki politikalar ve devam eden mutat aralıklarla çalışan pozisyonuna ve yaptığı işe bağlı olarak farkındalık ve eğitim programları.
+
+126
+00:48:33,907 --> 00:48:53,027
+Güvenlikteki temel ilkeni şu ana kadar hep kullandığımız minimum ayrıcalık. Kişiye yapacağı iş kadar yetki vermek ve görevlerin ayrılması, süreçlerin birbirinden mümkün olduğu kadar izole edilmesi.
+
+127
+00:48:54,260 --> 00:49:21,740
+Ve sonuncusu, özellikle kilit çalışanlara yüzde yüz değil, gene sınırlı güven. Eğer güvenlik yapılacaksa aslında temelinde kimseye güvenme. Kilit çalışanlara özellikle sınırlı güven. Çünkü kilit çalışanların komple sistemi zafiyete uğratıp kötü sonuçlara sebebiyet vermeleri de mümkündür arkadaşlar.
+
+128
+00:49:22,195 --> 00:49:32,295
+Şimdi gelelim son süreci, işten ayırma sürecine. Sonlandırmalarda, yani işten ayırmalarda.
+
+129
+00:49:32,980 --> 00:49:52,480
+Güvenlik hedefleri nelerdi? Çalışanların, yüklenicilerin veya üçüncü taraf kullanıcıların düzenli bir şekilde kurallığıyla kuruluştan ayrılmasını veya istihdamı değiştirmelerini, başka firmaya geçişini sağlamak ve bu geçişte kurumun zarar görmesini önlemekti.
+
+130
+00:50:00,000 --> 00:50:20,100
+Tüm eğişim haklarının, kişinin pozisyonuna bağlı olarak da tüm eğişim haklarının kaldırılması gereken nedir kilit olarak yapılması gereken? Kişinin isminin yetkili eğişim listesinden kaldırılması, bütün yetkilerinden kaldırılması ve güvenlik personelinin
+
+131
+00:50:20,788 --> 00:50:47,608
+Bu eski çalışanın genel erişimine izin verilmediği konusunda uyarılması, kapıdaki güvenliğe artık bu adam çıktı, giremez, işte kartının iptal edilmesi, kişisel erişim kodlarının, şifrelerin, kartlardaki ya da fiziksel anahtarların, kilitlerin, kilit kombinasyonlarının değiştirilmesi, erişim kartlarının değiştirilmesi ya da yeniden yapılandırılması.
+
+132
+00:50:48,371 --> 00:51:03,371
+Çalışan kimliği, taşınabilir USB depolama aygıtları, belgeler ve ekipmanlar dahil tüm varlıkların emniyet altına alınması ve not veya e-posta ile ilgili...
+
+133
+00:51:04,115 --> 00:51:15,756
+Bu kişinin ayrıldığına, kurumla ilişkisi olmadığına dair gerekli bilgilendirmenin ister yazılı yolla, ister epesto yoluyla muhakkak bildirilmesi gerekir.
+
+134
+00:51:16,095 --> 00:51:19,916
+İşe son verilmesi durumunda yapılacak işler bağlamında.
+
+135
+00:51:19,916 --> 00:51:27,296
+Şimdi gelelim son bir konumuza, e-posta ve internet kullanım politikaları.
+
+136
+00:51:27,916 --> 00:51:28,536
+Kuruluşlar.
+
+137
+00:51:30,068 --> 00:51:46,968
+Belirli miktarda işe bağlı olarak e-posta hizmeti ve internet hizmeti de sunabilir çalışanlara. Dolayısıyla belirli o posta ve internet kullanım politikalarının güvenlik politikası belgelerine dahil edilmeli.
+
+138
+00:51:47,476 --> 00:52:07,376
+Yani kişinin internet kullanımından kaynaklı sisteme verilecek hataların neler olduğu, bunlarla alakalı sonuçların dair edilmelidir. İşverenler için ne tür endişeler var? Bir, işle ilgili olmayan faaliyetlerde harcılan çalışma süresi. Kullanıcının internette çok fazla uzun iş yaparak.
+
+139
+00:52:07,860 --> 00:52:28,520
+Normal işini yapmaması, safsaklaması. Bilgisayar ve iletişim kaynakları, bilgi kaynaklarının desteklemek üzere tasarlandığı misyondan ödün vererek tüketim. Yani sizin bir eticaret uygulamanız vardır. Bir şeyler satıyorsunuzdur. Orada birisi BitTorrent'ten film indiriyordur.
+
+140
+00:52:30,324 --> 00:52:38,364
+Kötü amaçlı yazılımları, oyun indiriyorum diye indirip bunu içeriye aktarması, tru vaatları gibi.
+
+141
+00:52:38,364 --> 00:52:56,304
+Veya bu e-mail ve internetlerin başkasına zarar verme, başkasına taciz etme ya da uygunsuz içerikleri izleme kullanma olasıdır. Bunlar işveren için endişedir.
+
+142
+00:52:56,755 --> 00:53:11,175
+Çünkü interneti sağlayan kişi dışarıdan hukuki bir süreç olduğu zaman özellikle kablosu kullanıyorsa cep telefonundan şuradan buradan onun kimin tarafından bağlanıldığı bilemezse bütün sorumluluk mütesesülen internet sağlayıcıya olacak.
+
+143
+00:53:11,175 --> 00:53:16,107
+Öğren evlen politikalar neler? Birincisi...
+
+144
+00:53:17,268 --> 00:53:43,748
+Posta ve internet kullanımında bu imkanların sadece iş olan hakları için verildiği ve yalnızca iş için kullanılması ve bunlarla alakalı politikaya kapsamlı bir şekilde dahil edilmesi ve sizin içeride ürettiğiniz bütün know-how, bütün bilgilerin sahipliği.
+
+145
+00:53:44,403 --> 00:54:03,143
+Kime ait oldu? Bu e-posta sisteminin sahibinin kurumu olduğu gerekli duyması durumunda bu e-postaları okuyabileceği, kendisine yönlendirebileceği ya da cihazlardaki bilgilerin kuruma ait olduğu, kişisel olmadığı şeklinde.
+
+146
+00:54:04,203 --> 00:54:09,063
+Mahremiyet, bu bilgilerin gizliliği dışarıya ifşa edilmemiz.
+
+147
+00:54:09,619 --> 00:54:35,399
+Ve kişilerden internet ve e-posta kullanımıyla alakalı standart davranışlar ve izin verilen makul miktardaki kişisel kullanımlar. Bu internet ve e-postanın yasa dışı kullanılması durumunda ki yasal yaptırımlar, biti güvenliğiyle alakalı.
+
+148
+00:54:36,371 --> 00:54:56,871
+Kişisel kullanımı, e-posta ve internet kullanımının bilgi güvenliğindeki yeri ve bunlarla alakalı politikalar, şirketin genel e-posta ve internet kullanım politikaları, şirketin internet ve e-posta üzerindeki hakları ve bunlara uyulmaması durumunda
+
+149
+00:54:57,684 --> 00:55:14,403
+Çalışanın karşılaşabileceği disiplin ve cezai meydelerin neler olduğu politikalar içerisinde önerilen hususlardır ve bunlar barındırılmalıdır arkadaşlar.
+
+150
+00:55:14,724 --> 00:55:17,544
+E-posta ve internet kullanım politikalarında.
+
+151
+00:55:17,544 --> 00:55:19,244
+Şimdi gelelim.
+
+152
+00:55:21,940 --> 00:55:42,480
+Güvenlikle alakalı sorunlarda güvenlik olayına müdahale. Olaylara müdahale prosedürü çoğu kuruluş için önemli bir kontroldür. Bir olay olması durumunda buna müdahale edilmesi ve sistemin tekrar eski çalışır hale getirilmesi ve zararların minimuma indirilmesi.
+
+153
+00:55:49,619 --> 00:55:58,619
+Yansıtmalı ve uygun bir müdahaleye izin vermelidir. Tamam mı? Prosedürler önceden geliştirmek...
+
+154
+00:55:59,443 --> 00:56:20,423
+Rözydülleri önceden geliştirmek, olayın olması durumunda oluşabilecek paniği de önler ve ne kadar çok panik olursa o kadar da hasar büyür. Dolayısıyla olay olduğu zaman sistematik olarak kimin sorumlu olduğu, kimlerin uyarılacağı, hangi reaksiyonların alınacağı hepsi belirtilmelidir.
+
+155
+00:56:26,996 --> 00:56:53,416
+İdahale ekibi olacağı için olaylara sistematik bir yanıt verilir ve kayıp, hırsızlık ve hizmet kesintisini en aza indirebilmek için daha hızlı kurtarma reaksiyon alınabilir ve gelecekteki olaylara da daha iyi hazırlanmak için olay işleme sırasında elde edilen bilgiler de kullanılabilir.
+
+156
+00:56:53,811 --> 00:57:13,152
+Ve olaylar sırasında ortaya çıkarabilecek yasal sorunlara da gerekli şekilde ilgilenme imkanı vardır. Çünkü olay müdahale ekibi ve prosedürde bunlar açıkça belirtilmiş ve her birinin rolü ayrı ayrı ifade edilmiştir. Panik yok.
+
+157
+00:57:15,860 --> 00:57:23,360
+Dolayısıyla Birleşim Güvenliği Olay Müdahale Ekibi, Computer Security Instant Recovery Team,
+
+158
+00:57:27,315 --> 00:57:46,755
+Ne yapıyor? Müdahale ekibin, yani bilgisayar güvenliği olayın müdahale ekibinin sorumluluğu nelerdir? Bir, olayları, güvenlikle olarak olayları hızlı bir şekilde tespit etmek. İki, kayıp ve tahribatı en aza indirmek. Üç,
+
+159
+00:57:47,168 --> 00:58:13,568
+Kötüye kullanılan zayıflıkları azaltmak. Yani olaya müdahale edecek ama aynı zamanda kişilerin ya da sistemin kötüye kullanılması durumundaki oluşabilecek zayıflıkları azaltmak ve bilgi sisteminin tekrar eski çalışır pozisyonuna geri yüklenmesini sağlamak. Bu dört misyonu vardır. Birleşim Güvenliği Olay Müdahale Ekim'in.
+
+160
+00:58:15,059 --> 00:58:38,900
+Güvenlik olaylarına bir el alalım. Bir sistemdeki gizlilik, bütünlük, kullanılabilirlik, hesap verilebilirlik, özgünlük ve güvenilirlik. Bunu hatırlarsanız ilk haftada tanımlamıştık bu anahtar kelimeleri ve güvenlik aslında bu anahtar kelimelerin etrafında döndüğünü. Dolayısıyla bir klasik hizmet.
+
+161
+00:58:39,411 --> 00:59:06,652
+Güvenlik hizmetlerinden birinin veya birkaçını tehdit eden herhangi bir eyleme biz ne diyoruz? Güvenlik olayı diyoruz. Nedir bunlardan biri? Sistemlere yetkisiz erişim. Ne olabilir? Mesela görme yetkisi olmayan kişilerin bilgilere erişmesi ya da bilgileri görme yetkisi olmayan kişilere iletilmesi.
+
+162
+00:59:07,123 --> 00:59:19,323
+Ya da eşim mekanizmasını aldatmaya çalışılması, başkasıymış gibi davranmak yani. Başka birinin şifresini ve kullanıcısını kullanmak.
+
+163
+00:59:20,500 --> 00:59:40,960
+Sistemdeki bilgilerin yetkisiz değiştirilmesi, bu da bir başka güvenlik nedir? Değerli olabilecek bilgileri bozmaya çalışılması, bilgileri yetkisiz bir şekilde oynanması ya da bilgileri bir şekilde işlenmesi. Bunlar güvenlik olaylarıdır.
+
+164
+00:59:41,280 --> 00:59:57,480
+Şimdi güvenlik olayları terminolojisini gene standart dokümanlardan tanımlarsak, birisi artifak yani kalıntı, ikincisi bilgisayar güvenliği olay müdahale ekibi var, biraz önce bahsetmiştik.
+
+165
+01:00:01,940 --> 01:00:23,680
+Türiyaj ve güvenlik açığı terimlerini bir irdeleyelim ki bunlar güvenlik olayına müdahale alakalı kullanabileceğimiz ifadeler. Artifekt ya da kalıntı eser ne demektir? Bir sistemde bulunan sistemleri veya ağları araştırmak veya bunlara saldırmakla ilgili olabilecek.
+
+166
+01:00:24,275 --> 01:00:48,455
+Veya güvenlik önlemlerini yenmek için kullanılabilecek herhangi bir dosya veya nesnedir ertifek kalıntı. Eser, ertifek, bilgisayar virüsleri, turvahatı programları, solucanlar, açıklardan yararlanma skriptleri ve araçlarını içerir. Ancak bunlarla sınırlı değildir arkadaşlar. Yani güvenliği.
+
+167
+01:00:49,043 --> 01:00:57,163
+Zafiyede sebebiyet verebilecek her türlü enstrüman, artifakt, eser ya da kalıntı olarak ifade edilir.
+
+168
+01:01:13,519 --> 01:01:35,960
+İçin siteleri içeren bilgisayar güvenliğiyle ilgili olaylara yanıt verilmesine yardımcı olmak amacıyla kurulmuş bir yetenek. Ayrıca Bilgisayar Olay Müdahale Ekibi ve Bilgisayar Olayı Müdahale Merkezi, olaylar bilgisayar olayı müdahale yeteneği olarak da adlandırılır.
+
+169
+01:01:39,059 --> 01:02:03,980
+Bilgisayar Güvenliği Olay Müdahale Ekibi tarafından hizmet verilen kullanıcılar, siteler, ağlar veya kuruluşlar grubudur. Olay, event, bunu defalarca daha önce tanımladık. Bilgisayar güvenlik ilkelerinin, temel kullanılabilir kullanım ilkelerinin veya standart güvenlik uygulamalarının ihlali veya ihlale yakın tehdidi.
+
+170
+01:02:06,900 --> 01:02:25,500
+Uygun şekilde işlenmesini kolaylaştırmak için bilgilerin toparlanması, ilk sıralaması veya önceliklendirilmesi süreci ki bunu daha önce triyajı COVID sürecince Sağlık Bakanı tarafından sıklıkla kullanıldı triyaj ekibi diye.
+
+171
+01:02:25,500 --> 01:02:33,340
+Olay olduktan sonra bunun uygun bir şekilde bilgilerin alınması, önceliklendirilmesi.
+
+172
+01:02:33,780 --> 01:02:59,040
+Güvenlik açığı, bir güvenlik olayı gerçekleştirmek için kullanılabilecek bir teknoloji parçasının özelliği, örneğin bir programı istemeden sıradan kullanıcıların ayrıcalıklı modda rastgele işletim sistemi komutlarını yürütülmesine izin vermesi ve bu bir özellik, bunu veren bir güvenlik açığı.
+
+173
+01:03:01,811 --> 01:03:18,991
+Şimdi gelelim olayları tespit etme, güvenlik olaylarını ya da zafiyetleri tespit etme. Olaylar kullanıcılar veya yönetim personeli, yöneticiler tarafından tespit edilebilir.
+
+174
+01:03:21,076 --> 01:03:44,536
+Sistem arızalarını veya anormal davranışları rapor etmeye teşvik edilmelidir. Yani kendisi hata yapmış olsa bile bunu raporlamaya teşvik etmelidir. Çünkü neyi nasıl yaptığını yanlış olanı raporlarsa aynı şekilde başkalarını da yapmasının önüne geçilebilir. Gizlenir ise sıkıntı.
+
+175
+01:03:48,307 --> 01:04:05,867
+Sistem bütünlüğü doğrulama araçlarıdır ve ne yapar bu? Günlük analiz araçları, günlük faaliyetleri analiz eder ya da dosyanın bütünlüğüyle alakalı işte hashlenmiş özet kodları kullanır, ona göre kontrol eder.
+
+176
+01:04:05,867 --> 01:04:13,867
+A veya ana bilgisayar saldırı tespit sistemleri, IDS ya da IPS bunlar otomatik.
+
+177
+01:04:14,804 --> 01:04:38,103
+Olay tespit araçlarıdır. Yani IDS'ten ve IPS'ten uyarılarla ya da lokları analiz ederek burada bir sıkıntı var, analomali var, burada bir saldırı olmalı şeklinde ya da dosyaların yetkisiyle değiştirilmesiyle alakalı doğrulama araçlarını kullanılarak zafiyet olay tespit.
+
+178
+01:04:41,492 --> 01:04:55,352
+İki tür fonksiyonu var. Tiryajdaki hedeflenen nedir? Olay izleme hizmetine yönelik tüm bilgilerin tek bir odak noktası üzerinden kanalize edilmesini sağlamaktır.
+
+179
+01:04:55,772 --> 01:05:07,512
+Hedef tiryajda ve genel olarak tüm olay izleme, işleme hizmeti için tek temas noktası olarak tiryaj işlevini tanımlamak tavsiye edilir.
+
+180
+01:05:08,947 --> 01:05:34,788
+Gelen bilgilere şu şekilde yanıt verilir. Bir, olayları kategorize etmek için ek bilgi talep edilebilir triyaj yapılırken ya da kuruluşun veya sorumluluk bölgesinin çeşitli bölümlerine güvenlik açığı hakkında bilgi verebilir ve güvenlik açığının nasıl çözüleceği veya azaltılacağı ilgili bilgileri de paylaşı ve olayı
+
+181
+01:05:35,668 --> 01:05:51,528
+Yeni veya devam eden bir olayı parçası olarak tanımlayabilir ve bu olayla ilgili olay işleme müdahale işlevini bu olayla ilgili ne yapar? Olay müdahale ekibine bu işlemi iletir.
+
+182
+01:05:52,068 --> 01:05:58,068
+Peki olaylara müdahale etmek için belgelenmiş prosedürlere ihtiyaç vardır.
+
+183
+01:06:00,052 --> 01:06:21,831
+Bu SERT'in bilgisayar acil müdahale ekibinin ile alakalı prosedürler nedir? Bir nedeni. Nasıl yani bu olayın oluşma nedeninin nasıl tanımlanacağının detaylandırılması gerekiyor. Olay müdahale ekibinin.
+
+184
+01:06:29,076 --> 01:06:49,975
+Tipik olarak bu olay kategorisini ve bunlara yanıt vermek için alınan yaklaşımların tanımlanması, kritik kararlar almaktan sorumlu yönetim personelinin ve onlara nasıl iletişim kuracağının belirlenmesi ve güvenlik ihlallerinin polis veya ilgili
+
+185
+01:06:50,675 --> 01:07:04,695
+Acil müdahale ekibi üçüncü taraflara bildirilmesi gereken durumların belirlenmesi. Bu nerede? Tiryaj tarafından olay müdahale bilgileri topladık.
+
+186
+01:07:05,331 --> 01:07:31,612
+Tanımladık. İster polis, adli makamlara hırsızlık, vandalizm varsa, ister lojik platformda varsa bilgisayar acil müdahale ekiplerine tanımlanmış. Bu aslında şuna benziyor arkadaşlar. Hastaneye gidiyorsunuz. Hastasınız. Hemşire geliyor ne yapıyor? Tiryaj yapıyor. Ne yapıyor? Sigara içip içmediğini soruyor. Gidiyor nabzınızı ölçüyor, külünüzü ölçüyor, boyunuzu ölçüyor. Hastalığınızla alakalı bilgileri, ailenizle ilgili durumu.
+
+187
+01:07:32,692 --> 01:07:42,251
+Ne yapıyor? Sizinle alakalı mümkün olan bütün tanımlayıcı bilgileri topluyor ve bunu ilgili kişiye yani doktora sunuyor.
+
+188
+01:07:43,612 --> 01:07:45,291
+Yapılan iş budur arkadaşlar.
+
+189
+01:07:46,491 --> 01:07:50,031
+Şimdi olaylara müdahalenin life cycle'ı nedir?
+
+190
+01:07:52,031 --> 01:07:58,711
+İşte Headdesk'lerden, IDS'lerden, e-maillerden ya da diğer kaynaklardan gelen
+
+191
+01:07:59,443 --> 01:08:24,344
+Bilgiler triyaj ekibinde toplanır. Triyaj ekibi gerek duyar ise ekstra bilgi de talep edebilir ve bu edilen bilgilere göre de bir zayıflık raporu da hazırlayabilir. Tamam mı? Bu onun yapacağı işte. Triyaj ekibi bu aldığı bilgileri bir olay bildirim raporu haline.
+
+192
+01:08:24,884 --> 01:08:46,224
+Ve bu rapor olaya müdahale ekibine gider. Olaya müdahale ekibi ne yapar? Bu raporu analiz eder. Analiz ettikten sonra bağlantı kurulacak kişilerin bilgilerine ulaşır ve bunlarla alakalı sorunun çözülmesini sağlar.
+
+193
+01:08:53,492 --> 01:09:03,592
+Sadece müdahale ettik bitti değil. Olayları belgelemek de gerekli. Çünkü niye? Olayları belgelemezdik isek ve benzer olaylara karşı ders alınması.
+
+194
+01:09:04,180 --> 01:09:30,060
+Mümkün olmaz ve benzer olaylara karşı sürekli mazur kalma ihtimalimiz olur. Bir olaya verilen yanıtın hemen sonrasında bu işlem yapılmalıdır. Hangi güvenlik açığının ortaya çıkmasına neden olduğunu belirtilmelidir bu olay yazılanacak belgede. Gelecekte bu tür olayları önlemek için nasıl ele alınabileceğim?
+
+195
+01:09:30,931 --> 01:09:53,351
+Olaya verilen cevaplar detaylandırılmalı ki aynı olay daha sonra olursa müdahale edilmesi ya da benzer olayların olmaması için çözüm geliştirilmesi için ve kuruluşun sistemleri ve risk profili üzerinde etkileri de olaydan sonra hemen hazırlanan dokümanda tespit edilmelidir.
+
+196
+01:09:59,028 --> 01:10:24,228
+İşlemede ve işlemeden olası bilgi akışı örnekleri nedir? Olay işleme yönüne gelen bilgi akışı, olay işlemeden dışarıya giden bilgi akışı. Mesela duyuru kısmında ne gelir olay işlemeye? Mevcut saldırı durumlarının duyuruları gelir. Dışarıya ne gider?
+
+197
+01:10:24,688 --> 01:10:49,327
+Saldırılarla alakalı istatistikler ve durum raporları gider. Güvenlik açığı işlemede ne gelir? Olay işleme yönüne, işleme ekibine. Belirli güvenlik açıklarının kötüye kullanılmasına karşı nasıl korunuruzla alakalı bilgiler gelir? Rapor olarak da olası güvenlik açıklarıyla alakalı bilgiler dışarıya yöneticilere gönderir.
+
+198
+01:10:49,844 --> 01:11:02,743
+Kötü amaçlı yazılım işlemede, belirli kötü amaçlı yazılım kullanımının nasıl tanımlanacağına ilişkin bilgiler gelir ve kötü amaçlı yazılımın etkisi, tehdidi hakkında bilgiler gelir.
+
+199
+01:11:04,043 --> 01:11:11,463
+Dışarıya ise vakalarda kötü amaçlı yazılımların tanımlanmasına ilişkin istatistiki veriler de gitmiş olur.
+
+200
+01:11:11,463 --> 01:11:13,463
+Risk analizinde mesela...
+
+201
+01:11:14,612 --> 01:11:30,891
+Ne gelir olay işleme yönüne? Sık karşılaşılan tuzaklar ve tehditler ve bunların büyüklüğü. Çıkışta ise istatistikler ve bunlarla alakalı kayıp senaryoları gelir arkadaşlar.
+
+202
+01:11:34,292 --> 01:11:48,492
+Bu haftaki sunumumuzu da tamamladık. Gene her hafta olduğu gibi bu hafta sunumumuzun hem İngilizcesi hem de Türkçesi web sayfamızda. Web sayfasına koydum arkadaşlar.
+
+203
+01:11:52,532 --> 01:11:53,492
+Peki hocam.
+
+204
+01:11:54,212 --> 01:11:57,252
+Tamam. Any question? Sorunuz var mı arkadaşlar?
+
+205
+01:11:58,272 --> 01:11:59,372
+Teşekkürler hocam.
+
+206
+01:12:00,652 --> 01:12:06,752
+Hepinize iyi hafta sonları diyorum. Görüşmek üzere hafta hecmi.
+
+207
+01:12:08,891 --> 01:12:10,372
+Görüşmek üzere hocam.
+
+208
+01:12:10,551 --> 01:12:11,432
+Teşekkürler hocam.
+
+209
+01:12:11,712 --> 01:12:12,471
+İyi hafta sonları.

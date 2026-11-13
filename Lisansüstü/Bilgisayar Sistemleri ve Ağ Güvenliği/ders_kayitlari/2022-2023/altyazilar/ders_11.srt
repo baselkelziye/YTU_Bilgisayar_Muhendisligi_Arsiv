@@ -1,0 +1,759 @@
+1
+00:00:10,996 --> 00:00:12,236
+Günaydın arkadaşlar.
+
+2
+00:00:24,948 --> 00:00:31,948
+Sadece 4 kişi miyiz bugün? Geliyor. Bir iki dakika bekleyelim bakalım.
+
+3
+00:01:25,715 --> 00:01:30,615
+Arkadaşlar, bir 10 kişi olsun. Bir iki dakika daha bekleyelim. Ondan sonra başlarız.
+
+4
+00:01:37,075 --> 00:01:37,835
+Teşekkürler.
+
+5
+00:04:10,675 --> 00:04:14,835
+11 kişi olduk. Şimdi dersimize başlayabiliriz.
+
+6
+00:04:23,668 --> 00:04:26,367
+Bu arada herkese hayırlı cumalar diliyorum.
+
+7
+00:04:30,291 --> 00:04:54,751
+Bu hafta teorik olarak sekizinci hafta ama onuncu haftamız. Dolayısıyla bir hafta vize haftasına gitti. İşte tatile gitti derken arada derslerimiz kaynadı. Bu hafta yeni bir kısma başlıyoruz. Muhtemelen bu kısmı da bitirmiş oluruz arkadaşlar. Üç haftalık bir kısım bu.
+
+8
+00:04:58,324 --> 00:05:04,463
+Resmi olarak kaçıncı haftada olduğumuzu söyleyen arkadaşınız var mı? 10. hafta mıyız? 11. hafta mı arkadaşlar?
+
+9
+00:05:10,004 --> 00:05:12,424
+Kimse yok mu? Finale kaç haftamız kaldı?
+
+10
+00:05:12,903 --> 00:05:14,524
+Hocam şu an 11. haftadayız.
+
+11
+00:05:14,704 --> 00:05:18,524
+11. hafta. Dolayısıyla 3 haftamız daha var değil mi?
+
+12
+00:05:20,264 --> 00:05:20,843
+Evet hocam.
+
+13
+00:05:21,504 --> 00:05:28,963
+Dolayısıyla finallerle alakalı bir duyuru yaptılar mı arkadaşlar size? 100 olacak online olabilir şeklinde.
+
+14
+00:05:34,259 --> 00:05:49,339
+Yok galiba. Ses gelmediğine göre muhtemelen gelecek hafta ben sormuş olacağım. Ona göre eğer online yapma ihtimali olursa, daha önce konuştuğumuz gibi online yapacağım. Yoksa yüz yüze yapmış olacağız arkadaşlar. Haberiniz olsun.
+
+15
+00:05:49,339 --> 00:05:55,339
+Bu hafta üçüncü kısma başlıyor olacağız. Hatırlayacağınız gibi...
+
+16
+00:05:55,732 --> 00:06:10,732
+Giriş kısmındaki ilk kısımdan sonra uzunca bir kısım, yaklaşık 6-8 hafta yönetimsel süreçleri, yani bir bilgisayar ve ağ güvenliğiyle alakalı yönetimsel süreçleri, bütün...
+
+17
+00:06:11,024 --> 00:06:28,184
+Bileşenleriyle ele almıştık arkadaşlar. Logical taraftaki kısımlarla alakalı risk analizi, planlaması, insan kaynakları, fiziksel, en son kontrol, en son da hukuki süreçlerle beraber tamamladık.
+
+18
+00:06:29,235 --> 00:06:45,875
+Normalde sizin biliyor kabul ettiğimiz şifreleme kısmına bakalım ve onun üstüne neler koyabiliriz? Ona biraz bakalım. Önce hatırlatmak babından şifreleme araçlarını, daha önce bahsettiğimiz kısımları hızlı hıza geçeceğiz.
+
+19
+00:06:45,875 --> 00:06:53,675
+Gelecek hafta aslında şifrelemeyi iki ana şifrelemeden bahsetmiştik. Birisi simetrik şifreleme.
+
+20
+00:06:54,096 --> 00:07:22,096
+Nedir? Burada hem şifreleme için hem de şifre çözmek için aynı anahtarın kulduğu simetrik şifreleme ve bununla alakalı mesaj girdiliği uygulaması, sonra açık anahtarlı şifreleme, açık anahtarlı şifrelemenin de sıklıkla kullanıldığı alan kimlik doğrulama üzerine biterek, dolayısıyla şifreleme kısmılarının biraz daha ileriye dönük, daha detaylı uygulama.
+
+21
+00:07:22,096 --> 00:07:35,956
+O üzerine gitmiş olacağız ve bu üç hafta kısmında o kısımları tamamlamış olacağız. Bu bir hatırlatma yani şifrelemeyi tekrar hatırlatma kısımları ilk önce şifreleme araçlarından bahsedeceğiz.
+
+22
+00:07:39,135 --> 00:07:43,056
+Tamamen bundan sonra anlatacağımız iki haftalık konuya.
+
+23
+00:07:43,507 --> 00:07:57,007
+Bağlam oluşturmak bakımından önce simetrik şifreleme ve simetrik şifrelemeyi de sağladığı gizlilikten sonra simetrik şifrelemini kullanan mesaj doğruluğu ve bir tür simetrik şifreleme olan ama
+
+24
+00:07:57,651 --> 00:08:12,391
+Aslında şifreleme olan hash fonksiyonlarından bahsedeceğiz. Bir fonksiyonun yani şifreleme algoritmasının hash fonksiyonu olabilmesi için taşıması gereken özelliklerden bahsedeceğiz. Ve böylelikle bu kısmı bitirmiş olacağız.
+
+25
+00:08:12,391 --> 00:08:17,391
+Asimetrik şifreleme, yani açık anahtarlı şifreleme, açık anahtarlı şifrelemenin...
+
+26
+00:08:18,355 --> 00:08:25,355
+Sıkkı kullanıldığı dijital imzalar, e-imzalar ve anahtar yönetimi özellikle...
+
+27
+00:08:26,516 --> 00:08:35,375
+Açık anahtarı şifreleme ile simetrik şifreleme anahtar yönetimi nasıl yapabiliriz dijital enveloplar yani dijital zarfları kullanım alanlarını bahsedeceğiz.
+
+28
+00:08:35,375 --> 00:08:54,235
+Ve sonrasında ise özellikle rastgele şifre üretmek için kullanılan rastgele sayı üreticileri veya sözde rastgele yani pesuda random sayı üreticilerine bir rastgele üreticinin pesuda randomın rastgele olabilmesi için
+
+29
+00:08:54,515 --> 00:09:11,175
+İçerilik kriterlerini vererek bir giriş kısmını bu şekilde tamamlamış olacağız arkadaşlar. Gene ara vermeden hızlıca bitireceğiz. İnşallah bir aksilik olmazsa on iki buçuk civarında bire doğru bu haftalık konularımızla bitirmiş oluruz.
+
+30
+00:09:19,392 --> 00:09:46,132
+Yani hem iletim ortamında kaynakla hedef arasındaki verinin gizliliğini hem de depolanan verinin gizliliği için kullanılan evrensel bir teknik. Çok eski bir teknik. Antik çağda Antik Roma'dan bahsetmek mümkün. Tek anahtarımız var. Ve bu anahtarla aynı anahtarla kullanıyoruz, şifreliyoruz ve aynı anahtarla çözüyoruz.
+
+31
+00:09:47,155 --> 00:10:14,035
+Güvendiğimiz ne? Ana güvendiğimiz temel. İki gereksinim var. Birincisi güçlü bir şifreleme algoritması. Algoritmanın bilinir olması güçsüz anlamına gelmiyor arkadaşlar. Algoritma çok iyi bilinebilir, yapısı çok iyi bilinebilir ama anahtarı bilmezsen bu algoritma çok iyi bildiğin algoritmayı ki bildiğin bilinen algoritmanın zayıflıkları da düzeltilmiş demektir.
+
+32
+00:10:14,451 --> 00:10:32,392
+Kırılması daha zor olur. Dolayısıyla güçlü bir şifreli mal götürmesi ihtiyacımız var ve gönderici ve alıcı tarafından sadece onlar tarafından bilindiği kabul edilen ve o anahtarla
+
+33
+00:10:32,916 --> 00:10:51,576
+Güçlü bir anahtara ihtiyacımız var. Dolayısıyla tahmin edilemeyen, sözlükle offline diksineriyle ya da tahminlerle, sosyal mühendisliğe tahmin edilmesi güç bir anahtara ihtiyacımız var. Dolayısıyla iki temel güvenlik gereksinimimiz var arkadaşlar. Nasıl çalışır?
+
+34
+00:10:54,355 --> 00:11:05,775
+Aslında çok basit. Kasa şeklinde demonstre edilen, burada gösterilen şifreleme ve şifre çözme algoritmalarımız var. Düz bir metin. Buna X diyelim.
+
+35
+00:11:06,196 --> 00:11:27,196
+Gizli anahtar ve metinin fonksiyonuyla bir şifreli ciphertext yani şifrelenmiş metin elde ediyor. Şifrelenmiş metin neyin fonksiyonu? Düz metinin, mesajımızın ve anahtarın fonksiyonu. Ve üretilen şifrelenmiş metin ne anahtarla ne de...
+
+36
+00:11:27,316 --> 00:11:41,995
+Metinle hiç alakası yok. Yani şifrelenmiş metinden onu tahmin etmek mümkün olmaması gerekiyor. Bu metin şifreleme. Karşı tarafta ise şifrelemiş metini alan ve anahtarı kullanarak...
+
+37
+00:11:42,388 --> 00:12:07,228
+Şifreli algoritmasıyla düz metin haline getiren bir algoritma. Basit bir modelden ibaret. Eskiden Romalılar nasıl yapıyormuş şifreli metinleri? Bir köleyi alıyorlarmış, köleğinin saçlarını kazıtıyorlarmış, sonra ensesine mesajı işliyorlarmış. Sonra bekliyorlarsın ki saçı uzasın.
+
+38
+00:12:07,731 --> 00:12:33,791
+Gönderiyorlar. Kölenin bundan haberi yok. Elseme bir şeyler yapıldı, bir şeyler yazıldı. Anahtar ne? Saçlarını kazıtmak. Dolayısıyla köleyi öldürseniz, şunu yapsanız anahtar yoksa kölede kafamda derime kazındığı bilmediğin için mesaj güvenli bir şekilde iletiliyor diyebiliriz arkadaşlar.
+
+39
+00:12:35,635 --> 00:12:52,635
+Saldırı ne? Değil mi? Saldırı ikiye ayrılıyor. Aslında çifelenmiş metinlere saldırıyı ana olarak ikiye ayıracağız arkadaşlar. Birisi kriptoanalitik saldırılar, ikisi brute force dediğimiz kaba kuvvet saldırı. Kriptoanalitik saldırılar neye dayanıyor?
+
+40
+00:13:03,860 --> 00:13:24,860
+Bildiğimiz çözülmüş düz metin ve şifreli metin çiftine, örneklerine ihtiyacımız var. Ve bu örnekleri kullanarak ne yapmaya çalışıyoruz? Değişik anahtarlarla ve algoritmanın zayıflıklarıyla, matematiksel işlemlerle şifreyi...
+
+41
+00:13:25,748 --> 00:13:42,748
+Yani anahtarı bulmaya çalışıyoruz. Eğer anahtar bulunursa işimiz kolay. Çünkü niye simetrik anahtar? Değişmiyor anahtar. Ta eskidenki şifreli metinlerle gelecekteki şifreli metinleri bu anahtarla artık çözebilir hale geliyoruz. İkincisi ise...
+
+42
+00:13:47,028 --> 00:14:05,508
+Kaba Kuvvet Saldırısı. Kaba Kuvvet Saldırısı da basitçe şifreli metin üzerinde muhtemel anahtarları deneyerek mantıklı bir düz metin elde etmeye çalışılma işi aslında Kaba Kuvvet nedir?
+
+43
+00:14:05,508 --> 00:14:09,447
+Anahtarımız diyelim ki 8 karakter.
+
+44
+00:14:10,515 --> 00:14:31,135
+Türkçe bir metin. Dolayısıyla 8 çarpı ne de 29'un 8. kuvveti farklı kombinasyon olabilir. Dolayısıyla burada muhtemel nedir? Sosyal mühendislikle önce tahminik olanlar doğumluyada, doğumada tuttuğu takımın babada, ana adı, sevdiği kız, erkek arkadaşının adı. Sosyal mühendislikle çünkü ne kadar...
+
+45
+00:14:31,412 --> 00:14:53,192
+Çünkü insanlar ezberlemeye yakın olduğu şeyleri vermeye çalışır ihtimalinden yola çıkarak denemeye başlarız. Ama normal şartlar altında istatistikli olarak başarıya ulaşmak için olası bütün anahtarların en az yarısının denenmesi gerekir arkadaşlar.
+
+46
+00:14:55,604 --> 00:15:01,124
+Bu şekilde genel bir giriş yaptıktan sonra gelelim simetrik şifreleme algoritmalarına.
+
+47
+00:15:03,423 --> 00:15:14,884
+En eski ve yaygın olarak kullanılan simetrik şifreleme algoritması DES. Yani Digital Encryption Standard. Dijital şifreleme standartı kısaltılması.
+
+48
+00:15:14,884 --> 00:15:21,423
+NIS tarafından 1977 yılında standartı yayınlandı PAP 46 döküman olarak.
+
+49
+00:15:22,995 --> 00:15:48,216
+DES aynı zamanda DA ya da Data Encryption algoritma DA olarak da aldandırılıyor Data Encryption standart. Nedir? Mantığı başı. DES bir blok şifreleme algoritmasıdır arkadaşlar. Blok ne demektir? Blok belli bir byte büyüklüğündeki ya da byte büyüklüğündeki veriyi alır.
+
+50
+00:15:49,011 --> 00:15:55,072
+Belli büyüklükteki anahtarla beraber belli büyüklükte bir çıkış üretir.
+
+51
+00:15:56,111 --> 00:15:59,891
+Deste 64 bitlik metin bloğunu alır.
+
+52
+00:16:01,411 --> 00:16:10,471
+Düz metin bloğunu 64 bitlik şifreli metin bloğuna 56 bitlik anahtar kullanarak elde eder.
+
+53
+00:16:10,471 --> 00:16:12,192
+Endişe ne?
+
+54
+00:16:13,172 --> 00:16:40,632
+Bir kere en dışı algoritmanın kendisi. Çünkü niye? 40 dolar dökalan algoritmalarda algoritmanın zayıflıklarını. Ama DESS 1977 yılında standarda yayınlanmasına rağmen o zamandan bu zamana onlarca, yüzlerce, binlerce kişi çalışmış ama şimdiye kadar ölümcül bir hatası bulunamamış. Dolayısıyla algoritmamız cepten sağlam. İkinci zayıflık ne? Güçen dışı 56 bit.
+
+55
+00:16:41,024 --> 00:16:56,803
+Yani iki yüzele elli altı muhtemel anahtar demektir. Bu o zamanki yani 1977'deki bilgisayar hızlarına bağlı olarak bu uzun süre gerektiriyor.
+
+56
+00:16:56,803 --> 00:17:05,003
+Ama şu anki günümüz yüksek hızlı bilgisayarlarda özellikle veri merkezinde dağızlık hesaplamayla bunu dikkate aldığımız zaman.
+
+57
+00:17:05,556 --> 00:17:23,756
+Artık 56 bit yetersiz kalıyor. Dolayısıyla sorun algoritmada değil, sorun anahtar büyüklüğünde. İlk aklımıza gelen bunu, algoritmamız sağlam, algoritma cepte. Peki bunun anahtarı nasıl arttırırız? İlk basiti.
+
+58
+00:17:24,819 --> 00:17:49,699
+Aynı algoritmayı üç kez arda arda kullanırsak ve her birinde farklı anahtar çifti kullanırsak, madem algoritmamız güçlü, bunu arttırabiliriz mantığı. En basit düz mantık. Dolayısıyla iki tane farklı anahtar kullanırsanız 56x2 112 bit, üç defa anahtar kullanırsanız 198 bit oluşuyor. Dolayısıyla 200 üzeri 198 farklı ihtimal anlamına çıkıyor.
+
+59
+00:17:52,596 --> 00:18:04,235
+Finansal uygulamalarda çünkü para olduğu için artık bilgisayarlar da kullanıyor. Standartlaştırılmış X9.17 olarak ve kullanmaya başlanmış.
+
+60
+00:18:04,235 --> 00:18:18,655
+Avantajı ne? 168 bit uzunluğunda yani 56x3 bit uzunluğunda ve dolayısıyla algoritmamız güçlüydü. Kaba kuvvet saldırısına daha dayanıklı ve basit.
+
+61
+00:18:19,796 --> 00:18:32,816
+Temel, DESS, SET dayalı. Dezavantajı ne? Algoritma çok eski. Dolayısıyla şu anki paralel mimariye ve günümüz programlamalarına göre yavaş.
+
+62
+00:18:33,248 --> 00:19:00,508
+Ve hala 64 bitlik blog kullanılıyor. 64 bitlik blog niye önemli? Eskiden e-mailler, mesajlar, komutlar daha kısaydı ama şimdi video streamler, web page'ler, işte şeyler ne oluyor? Daha büyük mesajlar bunu 64 bitlik blogdan büyükleri parçalara bölüyorsun ama o hale geliyor ki header'lar ve trailer'lar da yani bir web sayfasındaki header'lar ve trailer'lardaki
+
+63
+00:19:01,779 --> 00:19:26,179
+Parçalanmalar nedeniyle rutin protokolün rutin headerlarını kullanarak oradan anahtarı, çünkü hatırlarsanız Kırpılay'daki turda neydi? Çiftlerin elde edilmesi. Bunun bir web sayfası olduğunu düşünürse baştaki 64 bittik nedir? İşte HTML'in verziyon satırı hepsine sabittir oradan o çiftlerle belki şifreyi daha kolay bulursun diye.
+
+64
+00:19:26,900 --> 00:19:49,059
+Sıkıntı. O yüzden dezavantajları bunlar. Bu deva dezavantajları biz söyledik, biz düşündük ama nesli düşünmüş tabii. Çünkü niye? Teknoloji ilerliyor, paralel processing arttı, paralel bilgisayarlar, süper bilgisayarlar, dağınık mimariler, bulut mimarileri, işte object-oriented programlamalar.
+
+65
+00:19:50,579 --> 00:20:04,219
+Dolayısıyla DEST tamam güzel, iyi de üç kere kullandık artık ömrünü de arttırdık ama hala sıkıntı. Niye? Çünkü uzun kullanım için makul değil. O yüzden 97 yılından istemiş ki...
+
+66
+00:20:08,243 --> 00:20:35,063
+Biz bir çağrıya çıkalım akademisyenlere. Diyelim ki bize öyle bir blok şifreleme, simetrik blok şifreleme algoritması önerin ki güvenliği en az trides kadar olsun ve anahtar boyutu da 128'den 250 değişik anahtarları da kabul edebilsin. Değil mi?
+
+67
+00:20:35,667 --> 00:21:01,748
+97'ye de çağrı çıkılıyor. İlk etapta başvurulardan 15 tanesi birinci roundda geçiliyor. İkinci roundda 5 tane daraltılıyor. Üçüncü roundda ise Regindale'in 2001 yılındaki algoritması. ISO olarak Advanced Encryption Standard yani gelişmiş şifreleme standartı olarak kabul ediliyor ve FIPS 197 olarak yayınlanıyor.
+
+68
+00:21:03,155 --> 00:21:29,175
+Nedir bu? Bir karşılaştıralım. Çağrı da vardı. Blok şifreleme olacaktı. Dolayısıyla AS hem DESS hem Triple DES 64 bit blok alıyordu. Bu 128 bit alıyor. Dolayısıyla şifrelenmiş boyut 64 bit output üretiyordu. Bu 128 bit üretiyordu. O standartı sağlıyor. Anahtar boyutu ne? 56 bitti DESS'te.
+
+69
+00:21:29,587 --> 00:21:43,428
+3 çarpı 56 derseniz 168, 2 çarpı 56 derseniz 112 bit. Ama AS'de 128 bit, 192 bit, 256 bit anahtar alabiliyor ve hala 128 bit output üretiyor.
+
+70
+00:21:43,428 --> 00:21:54,428
+Tamam mı? Güvenliğini birdeleyelim. Sağlıyor mu standardı? Şimdi 56 bit dester. Eğer biz...
+
+71
+00:21:55,220 --> 00:22:18,059
+İki üzeri elli altı kabaca, yedi noktaki çarpı on altı farklı anahtar demek. Bu da bir gigahertzlik bir şifrede, yani saniyede bir milyon, bir milyar şifre çözebilen bir bilgisayarda yaklaşık bin yıl sürüyor. Binden biraz fazla. Ama distribütü olarak...
+
+72
+00:22:18,355 --> 00:22:36,576
+Saniyede 10 bin şifre çözebilen bir mekanizma oluşturursak ki bu çok makuldür. O zaman bir saat sürüyor arkadaşlar. O yüzden DESS finansal da kullanılmıyor demiştik. Para var, milyon dolarlar, transakşonlar, FET'ler, şunlar bunlar. Swift'te çözdüğünün zenginse.
+
+73
+00:22:43,988 --> 00:23:11,288
+Bir saat süren ders yaklaşık olarak 5.3 üzeri 17 yıl sürüyor. Üçlü deste ile yaklaşık aynı daha düşük bir anahtar boyutu olmasına rağmen artık 192 ve 256 saatten dünyanın işte Big Bang'den başlayıp o gaz bulutundan işte kıyamete kadar şifreyi çözmek için uğraşmak gerekiyor.
+
+74
+00:23:14,163 --> 00:23:29,263
+Şimdi gelelim pratik sorunlara. Güzel algoritmayı verdik. İşte saldırıyla alakalı güçlendirmek için işlemler yaptık. Pratik çözüm sorunu ne? Tipik olarak simetrik şifreleme.
+
+75
+00:23:29,971 --> 00:23:55,592
+Ya dersi kullanıyorsak ya tridesi kullanıyorsak 64 bitlik bir blok alıyor ya da AES alıyorsak 128 bitlik bir blok alıyor. Peki bizim mesajımız 64 ya da 128 bitten büyükse ne yapıyoruz? 128 bitlik ilk akla gelen 128 bitlik parçalara bölmek ve her bir parçayı aynı anahtarla şifreleyip sonra birleştirip göndermek.
+
+76
+00:23:56,051 --> 00:24:14,771
+Ama burada sıkıntı ne? Düz metindeki tekrar eden kısımlar özellikle bazı protokolü, biraz önce dedik web sayfası olması durumunda, e-mail olması durumunda bazı alanlar tekrar ediyor. O durumda bu tekrar alanlarından faydalanarak kripto analizler şifreyi daha kolay kırabilir endişesi var.
+
+77
+00:24:23,988 --> 00:24:45,188
+Blog geliştirmek için geliştirilmişti. Ne yapıyor? Anahtarımızı biz şifre üreticimize girişçi olarak kullanıyoruz. Niye? Çünkü o şifreye göre aynı anahtar dizisini üretiyor. Karşı tarafta da aynı şifreyle girdiği zaman şifreyi çok kolay çözebiliyoruz. Burada nasıl oluyor?
+
+78
+00:24:49,587 --> 00:25:08,008
+ECB'de elektronik codebook'ta bizim düz metinimiz P1'den P'ye kadar 64 ya da 128'lik ya da B bitlik bloklara bölüyoruz. Sonra onu aynı K şifresiyle şifreliyoruz ve C1'den C'ye kadar şifrelenmiş metin elde ediyoruz.
+
+79
+00:25:08,008 --> 00:25:11,427
+Ve bunu gönderiyoruz. Karşı tarafta da aynı şifreyle.
+
+80
+00:25:11,859 --> 00:25:34,399
+Şifresinin çözüklük hükümetine ulaşıyoruz. Burada tekrar eden kısımlar kripto analizler tarafından şifreyi bulmak için kullanabilir. İkincisi neyse, bu stream şifreleme ya da mod of operation'larda biz k anahtarımızı random jeneratör ya da sözde random anahtar üreticine girdi olarak üretiyoruz.
+
+81
+00:25:39,188 --> 00:25:47,888
+Bir akış giriyor. Böyle anahtarla şifreli akış olarak geliyor. Karşı tarafta aynı anahtarla aynı seri üretildiği için
+
+82
+00:25:48,500 --> 00:26:10,000
+Çözebilmiş oluyoruz. Buradaki amaç şu her bir kısım farklı farklı şifrelerle şifrelendiği için kripto analizler tarafından tekrar eden metinlerle bunu bulmak imkansız hale geliyor. İkincisi aynı anahtarla özellikle random jeneratörlerde amaç ne? Farklı anahtar kullanıldığı zaman aynı seriyi elde etmen mümkün değil.
+
+83
+00:26:10,000 --> 00:26:13,579
+Şimdi bunun bir karşılaştırıcı.
+
+84
+00:26:18,644 --> 00:26:31,644
+Blog Şifreleme, girdiği her seferinde bir eleman bloğu alıyor. Her bir eleman bloğu içinde bir şifre üretiyor. Anahtar yeniden kullanabiliyor ve daha yaygın.
+
+85
+00:26:31,644 --> 00:26:42,584
+Kesintisi stream şifrelemedeyse, giriş ögeleri sürekli olarak stream olarak akıyor. Her seferinde
+
+86
+00:26:42,963 --> 00:26:58,963
+Akan veriden şifrelenmiş metin üretiyor. Birinci avantajı, neredeyse blok olarak kısım kısım bölme işine ulaşmadığı için hız ve daha az kodla kodlanıyor, programlanabiliyor. Tamam mı?
+
+87
+00:27:00,963 --> 00:27:06,963
+Gelelim, bunları böyle verdikten sonra simetrik şifrelemenin...
+
+88
+00:27:09,523 --> 00:27:32,963
+Birincisi, mesaj işte gizlilikle simetrik şifreleme değil mi? Ama bizim derdimiz her zaman mesajın gizliliği değildir arkadaşlar. Bizim en az gizlilik kadar mesajın kimden geldiğinin doğrulanması da önemlidir. Mesela bir e-mail aldınız.
+
+89
+00:27:33,460 --> 00:27:41,519
+E-mail'in içeriği o kadar önemli değildir. Metin'i şifrelerseniz gizlilik değil. Mesela size bir şey diyor. Diyor ki saat 3'te toplantı var.
+
+90
+00:27:42,163 --> 00:27:56,444
+Ya da şu adama 300 lira gönder. Bunun içerik gizli olması önemli değildir. Mesele doğru adamdan geliyor. Dolayısıyla bir sonraki işimiz kimlik, mesaj kimliğini doğrulama.
+
+91
+00:27:56,444 --> 00:28:08,004
+Niye karşı önler? Aktif saldırılara karşı önler. Yani kişi şifrelenmiş metinini saklayabilir, sonra emirmiş gibiyse sonrası zamanda gönderebilir. Başkasından geliyor olabilir.
+
+92
+00:28:08,307 --> 00:28:23,208
+Dolayısıyla buradaki amaç mesajın içeriği değil, gerçek olduğunun doğrulanmasıdır. Mesaj okuyabilir. Ama burada kimliği doğrulamada bir başka şey var. İçeriğin değiştirilmemiş olması.
+
+93
+00:28:23,635 --> 00:28:49,415
+İçeriği okumak da değiştirilmemiş olması. Dolayısıyla mesaj kimliği doğrulama neye emin olur? Doğru kişiden geldiğine, yani orijinal kaynaktan, doğru zamanda ve doğru sırada geldiğinden emin olsun ve içeriğin değişmediğinden emin olur. Dolayısıyla kimlik doğrulamak için çok basit olarak geleneksel şifreleme, simetrik şifreleme kullanabilir. Peki nasıl kullanılır?
+
+94
+00:28:50,836 --> 00:28:52,836
+Bunu bir ayrıntılarını görelim.
+
+95
+00:28:55,275 --> 00:29:15,836
+İlk derdimiz gizlilik olmadan mesaj doğrulama. İletiş şifreleme çoğu zaman tek başına güvenli bir kimlik doğrulama biçimi sunmaz. Çünkü gizliliği sağlarsınız ama doğruluğu sağlayamazsınız. Zamanından ve orijinal kaynaktan gelip gelmediği sağlayamazsınız. Bir mesajı ve onun kimliğini doğrulama etiketlerini şifreleyerek
+
+96
+00:29:16,627 --> 00:29:38,307
+Kimlik doğrulama veya gizliliği tek bir algoritmada birleştirmek mümkün. Yani siz ne yaparsınız? Hem mesajı şifrelerken aynı zamanda kişiyle alakalı bilgileri, time spent, sistemleri ve kaynakla alakalı bilgileri şifrelerseniz, alıştaraf da bunları kontrol edersen doğru kaynaktan doğru zamanda geldiğini kontrol edip gizlilikle beraber bütünleştirebilirsiniz.
+
+97
+00:29:41,071 --> 00:30:04,131
+Mesaj şifrelemeden ayrı bir fonksiyon olarak düşünülür sağlanan ve gizlilik olmadan mesaj doğrulamanın tercih edilebileceği durumlar şunlardır. Nedir mesela? Birinci durum aynı mesajın birçok hedefe yayıldığı durumlar. Birçok kişiyi gönderiyorsunuz bütün çalışanlarınızı. Her birinizin ayrı ayrı anahtarı dağıtmanız mantık gibi.
+
+98
+00:30:04,559 --> 00:30:24,079
+İmkanı yok. Niye dağıtasınız ki o zaman? Ahtar gizliliği nasıl sağlayacaksınız? Dolayısıyla ikincisi, bir tarafın ağır bir yükle, prosesin yüke sahibi olduğu ve gelen tüm mesajların şifresini çözebilecek zamanının olmadığı real-time uygulamalardır.
+
+99
+00:30:24,939 --> 00:30:30,759
+Ve düz metin olarak bilgisayarın kimlik doğrulaması da çekici bir hizmet açsın.
+
+100
+00:30:31,380 --> 00:30:53,100
+Böylece güvenlik gereksinimini karşılamada hem kimlik doğrulama hem de şifreleme için ayrı ayrı düşünmek gerekiyor. Ayrı ayrı yeri var bunun. Nasıl yapılıyor kimlik doğrulama? En basiti bir Message Authentication Algoitman vardı. MAC kodu. Message Authentication Code Algoitması. Mesaj alırsınız.
+
+101
+00:30:56,051 --> 00:31:17,803
+Mac koduyla Mac'ini üretirsiniz. Mesajı atan tüketik kodu ve bunu orijinal mesajı ekleyerek gönderirsiniz. Karşı tarafta aynı kodu, aynı anahtara sizde vardır çünkü alıcı tarafta. Mesajın içeriği önemli değil de daha az prosesin vardır. Hiçbir değil mi? Gelir siz...
+
+102
+00:31:18,291 --> 00:31:41,551
+Aynı MAC koduyla kendiniz bir kod üretirsiniz. Sonra gönderici tarafından gelen kodla karşılaştırırsınız. Eğer karşılaştırmada iki kod identical ise, aynıysa dersin ki mesela hiçbir şey olmadı okunuzu okunuzun. Ama değiştirilmedi zamanı doğru kaynaktan geliyor, doğru adamdan geliyor, doğru sırada geliyor. Buna emin olabilirsiniz.
+
+103
+00:31:43,059 --> 00:32:01,299
+Teşlik değişik yöntemleri var kimlik doğrulamanın. Birincisi simetrik şifrelemeyle kimlik doğrulama yapabilirsiniz. Nasıl yaparsınız? Önce bir hash özet fonksiyonuyla mesajın özetini alırsınız. Niye? Simetrik şifreleme bir blok alıyordu hatırlarsanız. Öyle değil mi?
+
+104
+00:32:01,940 --> 00:32:25,559
+Hash fonksiyonu neydi? Biraz sonra anlatacağız. Giriş boyutu ne olursa olsun sabit büyüklükteki bir çıkış üretiyordu. Dolayısıyla o çıkışınız da sizin blokunuz da aynıysa, kanatlarıyla bunu simetrik şifrelersiniz, eklersiniz. Sonra gönderici, alıncı tarafta mesajı hashlersiniz. Öbür taraftan gelen şifrelenmiş blokda şifresini çözersiniz.
+
+105
+00:32:26,228 --> 00:32:50,228
+Ve böylelikle de kişisini karşılaştınız. Bu ne yaptı aslında? Özetin bile değiştirilmesinin önüne geçti. Ya da açık anahtarlı şifrelemede ne yaparsınız? Diyelim ki mesajı aldınız, mesajı bana göndereceksiniz. Değil mi? Ne yapmanız lazım? Benim açık anahtarımla şifrelersiniz.
+
+106
+00:32:50,996 --> 00:33:09,096
+Mesajı eklersiniz. Beni aldığım zaman benim gizli özel anahtarımla şifreyi çözerim. Karşılaştığı zaman bilirim ki o mesaj sizden geldi. Tamam mı? Ya da tersi ben gizli anahtarımla şifrelerim. Herkes benim açık anahtarımla açabilir.
+
+107
+00:33:17,076 --> 00:33:35,836
+Ne yaparsınız? Meşazın önüne ya da arkasına ilerideki tarafına anahtar belli. Sizin ve alıcı tarafından bilinen bir anahtar eklersiniz. Heşlersiniz, onu gönderirsiniz. Dolayısıyla anahtar olmadan, mesajlar eklenip olanlar olmadan aynı heşe elde etmek mümkün değil. Karşı tarafı da bunu.
+
+108
+00:33:36,372 --> 00:33:48,052
+karşılaştırarak mesajın kimliğini doğrulayabilirsiniz. Bu üç tane kimlik doğrulama yöntemi. Simetrik şifreleme ile public key ile ve gizli veri kullanarak.
+
+109
+00:33:48,052 --> 00:33:53,852
+Buralarda hep kurduk hash fonksiyonu ya da özet fonksiyonu. Dolayısıyla özet fonksiyonu
+
+110
+00:33:57,236 --> 00:34:17,315
+Ya da bir fonksiyonun özet fonksiyonu olabilmesi için neler gerekir? Buna bir bakalım. Bir kere bir fonksiyonun özellik bir fonksiyonu olabilmesi için herhangi bir büyüklükte veri bloğunu kabul edebilmeli ve sabit uzunluktaki bir çıktı üretmelidir.
+
+111
+00:34:25,012 --> 00:34:43,972
+Özet fonksiyonunda orijinal metni bulması mümkün olmamalı ve iki farklı metin aynı özet fonksiyona sahip iki tane farklı metin ya da iki farklı özet fonksiyona sahip aynı metin olmamalıdır.
+
+112
+00:34:43,972 --> 00:34:50,351
+Tamam, bunlar özet fonksiyonuna istenirler. Peki, özet fonksiyonunun güvenliği nedir?
+
+113
+00:34:51,155 --> 00:35:17,536
+Güvenli bir haç fonksiyonuna saldırmak için gene temel iki yöntem var. Birincisi kriptoaniz, ikincisi brute force, kaba kuvvet. Kriptoaniz özet fonksiyonunun mantıksal zayıflıklarından faydalanarak elde etmeye çalışırsın. İkincisi kaba kuvvette ise aynı özeti verebilecek fonksiyon muhtemel verileri deneyerek bulmaya çalışırsın.
+
+114
+00:35:17,907 --> 00:35:42,707
+En yaygın kullanılan özet fonksiyonu SHA'dır. SHA özet fonksiyonu. SHA NIS tarafından 1993'te yayınlanmıştır. Sonra SHA 1, SHA 2, SHA 256 gibi şeklinde yayınlanmıştır. Peki, hash fonksiyonu nerelerde kullanılır? Birincisi paralolardı. Öyle değil mi?
+
+115
+00:35:43,092 --> 00:36:07,652
+Ne yapıyoruz? Hatırlarsanız gölge fonksiyonu da shadow dosyalarıyla. Kullanınca da şifreyi ne yapıyoruz? Özellikle salt ile ekleyerek hash'ini saklıyoruz. Ya da şifrelerin orijinal text plane halinde değil, eşini saklıyoruz. Dolayısıyla aynı algoritm ile hash'i yapıp karşılaştırdığımız zaman parolayı bilmeden sisteme dahil etme imkanı sağlamış oluyoruz.
+
+116
+00:36:08,596 --> 00:36:36,155
+Dosyalara izinsiz erişimi kontrol etmek için bir dosyayı ne yapıyoruz? Saklarken hashlenmiş halini de saklıyoruz. Orada hashlenmiş halinde zamanı var, dosyanın içeriği var, klasörün ne varsa var. Ona göre sonrasında erişeceğimiz zaman kontrol ediyoruz hashleyerek. Eğer bu değişmemişse diyoruz ki bizim orijinal haliyle değişmeden duruyor. Tamam mı? Buralarda pek kullanılma ana yerleri.
+
+117
+00:36:39,827 --> 00:36:56,927
+Şimdi gelelim bir başka şifreleme yöntemi. Açık anahtarlı şifreleme ya da asimetrik şifreleme. Defehlman tarafından 1976'da ilk defa önerilmiştir. Temeli matematiksel bir fonksiyona dayanır.
+
+118
+00:36:58,900 --> 00:37:21,840
+Eriptik fonksiyon olabilir ya da farklı, işte asal iki sayının çarpımıyla alakalı fonksiyon olabilir. Ayrıntılarını öğrenebilirsiniz. Asimetrikte iki tane anahtar vardır. Birisi açık anahtardır, birisi özel anahtardır. Ve bir anahtarla şifreleyip öbür anahtarla şifreyi çözmeniz gerekir. Yani aynı anahtarla hem şifreleme hem şifre çözme yapamazsınız.
+
+119
+00:37:22,291 --> 00:37:29,351
+Ve bu açık anahtar ve dağıtım için özel bir protokol gerekli arkadaşlar.
+
+120
+00:37:29,831 --> 00:37:39,431
+Basit burada. Gene benzer şekilde düz metnimiz var. Diyelim ki Bob Alice'e mesaj gönderecek. Değil mi? Ne yapıyor?
+
+121
+00:37:46,516 --> 00:38:02,556
+Alice kendi özel anahtarıyla bu şifreyi açıyor. Dolayısıyla bu mesaj şifrenmiş mesajı sadece Alice'in özel anahtarı dışında açmak mümkün değil. Dolayısıyla bu mesajın Alice'e gittiğinden emin olabilirsiniz.
+
+122
+00:38:03,376 --> 00:38:11,115
+Bileşenleri hüzmetim var, şifreli algoritması, şifreli çözme algoritması ve anahtar şifti var. Değil mi?
+
+123
+00:38:12,315 --> 00:38:13,056
+Nasıl da olabilir?
+
+124
+00:38:13,972 --> 00:38:40,572
+Mesela Bob, Alice'e mesaj göndermek isteyebilir ve Alice bu mesajın Bob'dan geldiğinden emin olmak isteyebilir. Bu durumda Bob kendi özel anahtarıyla şifreler gönderir. Alice bunu Bob'un açık anahtarıyla şifresini çözer ve buradan da kimlik doğrulama işleminin yani bu mesajın kesinlikle Bob'dan geldiğine emin olur. Şifreleme algoritmanı en yaygınlığı RS.
+
+125
+00:38:41,364 --> 00:38:53,384
+Şifreleme algoritmalarına bakalım. Hangi şifreleme algoritmalarına? Asimetrik. Bir tanesi RSI. Bunu neye göre kıyaslayacağız?
+
+126
+00:38:53,384 --> 00:38:56,784
+İşte kullanım alanları.
+
+127
+00:38:58,576 --> 00:39:18,116
+Aslında Rivas, Shamir ve Edelman'ın İspak şeflerinin kısaltılması da 1977'de geliştirilmiştir. Ve açık anahtar şifrelemeye yönelik en yaygın kabul gören yaklaşımdır. Ne yapar? En tane düz metini ve şifreli N-1 arasındaki sayılar arasında bloklar.
+
+128
+00:39:21,715 --> 00:39:40,996
+İki kullanıcının mesajlarını daha sonra simetrik anahtarı değişmek için kullanan bir anahtar değişim algoritmasıdır. Sadece anahtar değişimiyle sınırlıdır. DSS dijital imza standardı, dijital imza ile alakalı şabir tabanlıdır.
+
+129
+00:39:41,972 --> 00:40:08,852
+Eliptik Curve ise RSI gibi genel eliptik fonksiyonlara dayanır ve genel bir algoritmadır. Yani hem dijital sıfır elemede hem anahtar değişiminde hem de elektronik imzada kullanabilirsin. Aradaki RSI'den farkı daha az, daha küçük anahtara aynı güvenliği sağlayabilirsin.
+
+130
+00:40:09,199 --> 00:40:21,179
+Algoritmalarımız burada var. LSI, Defelman, DSS ve Eliptikö. İki tane, üç tane uygulamamız var. Elektronik, simetrik şifreleme ve gizli anahtarların şifrelenmesi yani anahtar dağıtımı.
+
+131
+00:40:21,844 --> 00:40:39,503
+Simetrik anahtar dağıtımı ve gizli anahtarların şifrelenmesi. RSI ve DSS hepsinde kullanılıyor. Defe alımın sadece anahtar dağıtımı algoritması. DSS ise sadece dijital elektronik imza algoritması.
+
+132
+00:40:40,503 --> 00:40:44,643
+Peki, açık anahtarla şifreleme ile ilgili gereksinimlerimiz neler?
+
+133
+00:40:51,731 --> 00:41:00,492
+Birinci gereksenin açık anahtar şifreli oluşturulması kolay olmalıdır.
+
+134
+00:41:01,492 --> 00:41:01,972
+Tamam mı?
+
+135
+00:41:03,552 --> 00:41:08,132
+Ve önce anahtar çift oluşturmak kolay olmalıdır.
+
+136
+00:41:08,132 --> 00:41:16,012
+Sonra bir anahtarla şifrelemek kolay, diğer anahtarla şifreyi çözmek kolay olmalı.
+
+137
+00:41:19,827 --> 00:41:29,807
+Bulunamamalı. Ve anahtarlar birbirinin yerine kullanılamamalıdır. Bunlar açık anahtarı şifrelemeden ilgili gereksinimler.
+
+138
+00:41:30,707 --> 00:41:37,947
+Şimdi girelim uygulama alanlarına. Birinci uygulama alanı dijital imza.
+
+139
+00:41:39,947 --> 00:41:42,047
+Bir dakika arkadaşlar. Biraz nefes alalım.
+
+140
+00:41:47,860 --> 00:42:04,900
+Birinci uygulama alanı dijital imza. Dijital imza NIST tarafından PAP 186'ya 4 olarak tanımlanmış. Burada diyor ki dijital imza, doğru şekilde uygulandığında kaynağın kimlik doğrulamasını,
+
+141
+00:42:05,588 --> 00:42:32,748
+Veri bütünlüğünü ve imzanın reddedilememesini sağlayacak bir mekanizma sunan kriptografik bir dönüşüm sonucudur. Yani bir value'dur, bir değerdir. Bu nedenle dijital imza bir dosya, mesaj veya başka bir veri bloğu biçiminin bir işlevi olarak oluşturulan belli bir bit uzunluğunda bir veri bloğudur.
+
+142
+00:42:33,076 --> 00:42:57,696
+FIPS 186'ya 4'te 3 tane dijital imza algoritması tanımlanmış. Birisi DSA, dijital imza algoritması ya da DSS, diğeri RSA, diğeri de Elliptic Curve, dijital imza algoritması. Nasıl çalışıyor? Çok basit. Sen gidiyorsun bir yerden dijital imza aldığını düşünüyorum. Tamam mı?
+
+143
+00:42:59,155 --> 00:43:23,356
+Bir de dijital imza algoritması. Mesajı yazdığı zaman bu mesaj bir hash algoritmasıyla özet alınıyor. Sonra Bob'un özel anahtarıyla, imzasıyla imzalanıyor. Ve imza da metne ekleniyor.
+
+144
+00:43:25,972 --> 00:43:34,392
+Bu metni aldığı zaman bunun dijital imza, Alice tarafından, pardon Bob tarafından imzalandığı nasıl emin oluyor?
+
+145
+00:43:35,211 --> 00:43:47,211
+Mesajı hash'ini alıyor. Girdi olarak imza algoritmasına, sonra Bob'un açık anahtarı ile de girdisini saldığı zaman bu true false değeri üretiyor.
+
+146
+00:43:47,211 --> 00:43:52,312
+Yani imza Bob'a ayrısı true değerini üretiyor.
+
+147
+00:43:52,755 --> 00:43:58,355
+Ait değilse false değerini üretiyor ve bu şekilde çalışıyor arkadaşlar.
+
+148
+00:43:58,956 --> 00:44:16,695
+Peki, açık anahtarı nasıl, sertifikasyonu nasıl? Çok basit imzayı açıklamışım. Bu imzayı içerisinde ne var? Bob'un kimlik bilgileri var. Bob'un public anahtarı var.
+
+149
+00:44:18,164 --> 00:44:25,164
+Bu anahtarın verdiği sertifika otoritesinin bilgileri var. Ve bu bilgiler hashlenip...
+
+150
+00:44:28,788 --> 00:44:53,788
+Digital imza sertifika tarafından, ajans tarafından verilen digital imza private key ile şifreleniyor ve karşı tarafa gönderiliyor. Karşı tarafta imza dağıtmasında, karşı tarafta bu imza sertifika acısı tarafından verilen, baba ait verilen public key ile bu imza...
+
+151
+00:44:55,923 --> 00:45:10,063
+Şifreyle beraber imza algoritmıyla özet fonksiyonu girdi olarak girdikten sonra true false değeriyle bunun Bob'tan geldiğine emin olunuyor ve ne sağlıyor?
+
+152
+00:45:10,443 --> 00:45:19,023
+Sen Bob kendi public keysini karşı tarafa dijital imzasıyla gönderebilmiş oluyor. Bu bir public key'nin gönderilmesiyle alakalı.
+
+153
+00:45:19,023 --> 00:45:21,803
+Ya da başka bir başka uygulama.
+
+154
+00:45:22,195 --> 00:45:47,935
+Dijital zarf uygulaması. Diyelim ki sen mesajı şifrelemek, değil mi? Hem mesajın gizliğini sağlayın hem de kimlik doğrulamasıyla bunun doğru kişiye gittiğinden emin olayım istiyorsun. Ne yapıyorsun? Mesaj alıyorsun. Random bir şifre üretiyorsun ve şifreyle.
+
+155
+00:45:48,532 --> 00:46:15,431
+Mesajı şifreliyorsun ve zarfa koyuyorsun. Tamam mı? Mesaj şifreli. Sonra alıcının açık anahtarıyla şifreyi, simetrik şifreyi şifreliyorsun ve onu da zarfın içine koyuyorsun ve gönderiyorsun. Ne oldu? Şimdi sen mesaj gizliliğini sağladın ve o mesajın sadece alıcı tarafından okumasını da sağlıyorsun. Alıcı ne yapıyor?
+
+156
+00:46:15,891 --> 00:46:32,831
+Önce mesaj alıyor. Mesajda bir şifreli. Anahtar lazım. Anahtar var ama şifrelenmiş. Kendi özel anahtarıyla bu şifreyi açıyor. Sonra bu şifreyi kullanarak da simetrik şifrelemeyle mesajı açmış oluyor. Bu da dijital zarf kullanımı.
+
+157
+00:46:33,748 --> 00:46:48,768
+Dikkat ederseniz hem dijital zarf kullanımında hem stream şifrelemede bizim rastgele sayılardan bahsediyoruz. Rastgele sayı üreticilerinden. Peki rastgele sayılar daha başka nerelerde kullanılır?
+
+158
+00:46:55,775 --> 00:47:17,096
+Ya da simetrik bir akış şifresi üretmek için ya da geçici oturum anahtarları üretmek için ya da dijital zarflar kullanımı için ya da replay saldırılarını önlemek için, handshake ID'si kullanmak için ya da session key olarak rastgele sayılar kullanılmaktadır.
+
+159
+00:47:17,096 --> 00:47:20,396
+Peki rastgele sayı ne demek?
+
+160
+00:47:21,684 --> 00:47:35,564
+Değil mi? Bir sayı dizisinin rastgele olabilmesi için iki ana kriterimiz var arkadaş. Birisi rastgelelik kriteri, birisi tahmin edilemezlik kriteri.
+
+161
+00:47:43,411 --> 00:47:53,532
+Düzgün olmalıdır. Yani her bir sayının sıklığı, gelme olasılığı yüzdesi, diğerine eşit olmalıdır.
+
+162
+00:47:53,532 --> 00:47:58,411
+İki, sayı dizisindeki her bir sayı... Bir dakika arkadaşlar.
+
+163
+00:48:00,771 --> 00:48:02,972
+Efendim, merhaba.
+
+164
+00:50:12,436 --> 00:50:31,255
+Evet arkadaşlar, rastgelelik kriteri bu. Peki, amin edilemezlik ne? Amin edilemezlik ise her sayı dizideki diğer sayılardan istatistik olarak bağımsızdır. Yani üçten sonra beş gelmesi istatistik olarak bağımsızdır.
+
+165
+00:50:32,052 --> 00:50:51,372
+Rakip, saldırgan, herhangi bir kişi dizinin gelecekteki ögelerini geçmişteki ögelere göre tahmin edememelidir. Bu iki kriter bizim rastgelelik kriterlerimiz olmuş oluyor. Ya da rastgele sayı gereksinimleri olmuş oluyor.
+
+166
+00:50:59,952 --> 00:51:24,532
+Rastgele True Random sayı üreteçlerinden biraz bahsedelim. Özellikle tekrar saldırılarını ya da Repray saldırılarını önlemek için handshakelerde, kriptografik uygulamalarda tipik olarak rastgele sayı algoritmaları kullanılır. Bu algoritmalar deterministiktir.
+
+167
+00:51:25,172 --> 00:51:51,871
+Yani bu nedenle istatistikler olarak rastgele olmayan sayı dizileri üretir. Ama rastgelelik kriterlerine uyar. Nedir rastgele olmayan? Çünkü aynı input aynı sayıyı üretir. Tamam mı? Peki sözde rastgele sayılar nedir? Pesud'e random sayılar. İstatistikler olarak rastgelelik testine uyar.
+
+168
+00:51:52,788 --> 00:52:06,688
+Bunun için ise nandeterministik, istasel olarak testleri karşılayan sayı dizileri üretir ama tahmin edilebilir olması muhtemeldir.
+
+169
+00:52:06,688 --> 00:52:12,028
+Çünkü niye? Aynı inputa karşı aynı sayı dizisi ürettiği için.
+
+170
+00:52:12,947 --> 00:52:34,187
+Sözde rastgele sayılar, gerçek rastgele sayılar ya da üretecileri nedir? Bunlar deterministik yani tahmin edilebilen kaynaklar değil, nandeterministik kaynaklar kullanılır. Nedir mesela? Bir radyasyon, bir kapasitesizdeki voltaj, gaz deşarjı.
+
+171
+00:52:35,123 --> 00:52:47,243
+Ve modern işlemlerde daha çok non-deterministik kaynaklar kullandığı için algoritma rastgelelik kuralına uyan rastgele sayılar betre arkadaşlar.
+
+172
+00:52:48,883 --> 00:52:59,283
+Şimdi gelelim pratik uygulama. Nerelerde kullanılır? Bir kullanım alanımız, en genel kullanım alanımız. İletilen verileri şifrelemek için kullanılır.
+
+173
+00:52:59,827 --> 00:53:13,827
+Yani A kaynağından B kaynağı veriletirken verinin gizliliği için askere sayılar kullanılır. Ya da depolanan verileri şifrelemek için kullanılır. Tamam mı?
+
+174
+00:53:24,884 --> 00:53:49,384
+Arşivlenmesinde. Depolanan verileri şifrelemek için de biyasa da genellikle üçüncü parti uygulamalar ve cihazlar kullanılmaktadır arkadaşlar. Böylelikle simetrik ve asimetrik şifreleme ile alakalı genel bir girişi tamamlamış olduk arkadaşlar. Sormak istediğiniz bir şey.
+
+175
+00:53:55,284 --> 00:53:57,483
+Var mı arkadaşlar süreceğiniz bir şey?
+
+176
+00:53:59,483 --> 00:54:08,143
+Hocam, sabah dersin başında 3 hafta var gibi diye konuştuk. Sanırım haftaya 19 Mayıs dersi yok sanırım.
+
+177
+00:54:08,643 --> 00:54:12,684
+Haftaya 19 Mayıs. O zaman ancak bu konuyu bitiririz galiba.
+
+178
+00:54:14,164 --> 00:54:28,963
+Haftaya dersimiz gene yok. Dolayısıyla bir hafta vize için gitti. Bir hafta bayram için gitti. İki hafta değil mi? Bir haftada dönemin ilk başında yapamamıştık. Sistemde 9 gözüküyordu, 11 oldu dersimle.
+
+179
+00:54:57,684 --> 00:55:22,964
+İlk hafta olursa ben de çok sevinirim arkadaşlar. Ama maalesef dizginler bizde değil, bölüm başkanlığında. Ama ben rica ederim ilk hafta olması hususunda. Bölüm başkanlığı hazırlıyor. Gelecek hafta bölüme gideceğim. Orada kendileriyle konuşmuş olurum arkadaşlar.
+
+180
+00:55:25,427 --> 00:55:27,427
+Başka sorunuz var mı arkadaşlar?
+
+181
+00:55:28,307 --> 00:55:53,307
+Ve online. Evet, evet ve online. Çünkü birçoğunuz zaten sağa sola dağıldı. İş için Ankara'da İstanbul dışında olan birçok arkadaşınız var. Onun üzerinde yabancı arkadaşlarımızın birçoğu da memleketlerinde diye düşünüyorum. Dolayısıyla bilgisayar ve bilgisayar güvenliğinden...
+
+182
+00:55:53,876 --> 00:55:59,396
+İlgili bir dersi güvenli bir şekilde online yapabiliriz diye düşünüyorum arkadaşlar.
+
+183
+00:56:03,123 --> 00:56:29,823
+Ama sonuçtan sizi haberdar ederim. Ama online de olsa, offline de olsa, yani face to face de olsa sınavımız true false şeklinde olacak. Onu geçen haftalarda söylemiştim arkadaşlar. Ben bir metin vereceğim. Onun hem İngilizcesini yazacağım hem Türkçesini yazacağım ve yanına doğru ya da yanlış olup olmadığını kontrol etmenizi isteyeceğim.
+
+184
+00:56:30,356 --> 00:56:46,116
+Online olursa bunu online yapacaksınız. Herhangi bir iki saatlik dilimde yarım saatte bunu tamamlayacaksınız. Yüz yüze olursa da gelip sınıfta yapacaksınız aynı işi. Bir şey fark etmeyecek. Tamam mı arkadaşlar?
+
+185
+00:56:48,856 --> 00:56:51,776
+Hepinize tekrar hayırlı cumalar diliyorum.
+
+186
+00:56:53,236 --> 00:56:54,016
+Siz de hocam.
+
+187
+00:56:54,576 --> 00:56:55,796
+Hayırlı cumalar hocam.
+
+188
+00:56:55,896 --> 00:56:56,916
+Görüşmek üzere.
+
+189
+00:56:57,588 --> 00:57:01,168
+Teşekkürler hocam. İki hafta sonra görüşürüz arkadaşlar.
+
+190
+00:57:01,988 --> 00:57:03,188
+Görüşürüz hocam.
