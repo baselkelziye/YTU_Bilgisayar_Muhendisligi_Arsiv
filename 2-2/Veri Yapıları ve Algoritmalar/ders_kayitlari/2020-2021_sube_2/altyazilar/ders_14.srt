@@ -1,0 +1,751 @@
+1
+00:04:02,036 --> 00:04:03,475
+Evet, arkadaşlar merhaba.
+
+2
+00:04:04,996 --> 00:04:05,756
+Merhaba.
+
+3
+00:04:05,756 --> 00:04:06,936
+Kaç, 38 kişi var?
+
+4
+00:04:07,955 --> 00:04:18,995
+Şimdi bugün çarşamba malum olduğu üzere çarşamba günü bizim uygulama saatimiz, LAP saatimiz, LAP uygulama her neyse işte.
+
+5
+00:04:20,216 --> 00:04:30,135
+Ve bugün yine önceden söylediğimiz gibi pazartesi günü biliyorsunuz konuşmuştuk. Size tatlı şeker bir ödev hazırladık.
+
+6
+00:04:30,771 --> 00:04:38,451
+Ödevi yayınladık fakat herhalde göremiyorsunuzdur diye düşünüyorum. Gören var mı?
+
+7
+00:04:38,867 --> 00:04:41,228
+Yok hocam, bir de gözüküyor.
+
+8
+00:04:41,247 --> 00:04:51,168
+Tamam, çok güzel. Hemen ödevin şekli şemaliyle alakalı bilgileri vereyim. Ondan sonra çok kısa hatırlatıcı bir iki şey anlatacağım.
+
+9
+00:04:52,387 --> 00:04:59,348
+Ve ondan sonra da sizi zaten ödevle baş başa bırakacağım. Neden bir de başlıyor diye merak edenleriniz olabilir.
+
+10
+00:05:00,367 --> 00:05:05,827
+Üç grup arasında bazı hız farkı dolayısıyla senkron problemleri yaşanabiliyor.
+
+11
+00:05:06,836 --> 00:05:25,495
+Bir grupta bir ufak husus eksik kalmış. Hani biz quiz'i çözdük ya, o eksik kalmış. Onu tamamlayacaklar. O sebeple biraz zaman verdik. Herkes aynı anda görsün. Üç grupta aynı anda eşit şartlarda ödeve başlasın diye. O yüzden saat birde açıyoruz bu şekilde.
+
+12
+00:05:26,255 --> 00:05:34,836
+Fakat bu sefer önceki uygulamalarımızdan farklı olarak sizi biraz rahatlatmak amacıyla bir gün süre verdik. Nedir bu bir gün?
+
+13
+00:05:34,836 --> 00:05:54,836
+Bir gün, yarın gece 23.59'a kadar yüklemeniz lazım. Bakın bu sefer, hatta 24 saatten fazla süreniz var. Ne oluyor? 36 saat mi oluyor? Yaklaşık 35 saat galiba. Ya da 34 saat 59 dakika diyeyim. Bu kadar süreniz var. Artık...
+
+14
+00:05:55,827 --> 00:06:12,027
+Herhalde gerilmezsiniz. İki saat bizi çok strese sokuyor. Yetiştiremiyoruz ya da öyle oluyor, böyle oluyor demezsiniz. Sakin sakin, güzel güzel ödevi gerçekleştirir ve uygulamayı güzel bir şekilde ortaya koyarsınız diye düşünüyorum.
+
+15
+00:06:12,027 --> 00:06:18,548
+Hocam korkmamıza gerek var mı? Yani siz bu kadar uzun süre verdiğinize göre gelecek soru.
+
+16
+00:06:20,180 --> 00:06:21,779
+Sıkıntı var diyorsun patlıyor.
+
+17
+00:06:21,800 --> 00:06:23,220
+Dolayısıyla bitiyor beni açıkçası.
+
+18
+00:06:23,580 --> 00:06:26,920
+Bir şey yok ya, alt tarafı işletim sistemi yazdıracağız yani.
+
+19
+00:06:27,891 --> 00:06:29,711
+diye böyle şey yapayım size.
+
+20
+00:06:30,632 --> 00:06:31,211
+Rahatlatayım.
+
+21
+00:06:31,312 --> 00:06:32,451
+Yok yok merak etmeyin.
+
+22
+00:06:32,512 --> 00:06:34,391
+Aslına bakarsanız süreyi biraz uzun verdik.
+
+23
+00:06:34,992 --> 00:06:37,432
+Normalde olması gerekenden daha uzun bir süre verdik.
+
+24
+00:06:37,591 --> 00:06:44,891
+Dediğim gibi bu sefer bir de hani zaman stresi yaşamadan bakalım neler yapıyorsunuz ya da neler yapabiliyorsunuz.
+
+25
+00:06:45,731 --> 00:06:46,772
+Bunu görmek istedik.
+
+26
+00:06:46,971 --> 00:06:47,831
+O yüzden bu şekilde.
+
+27
+00:06:49,651 --> 00:06:58,531
+İkinci ödevimizi bir günlük olacak, bir gün diyorum da siz anlayın bir buçuk günlük işte olacak şekilde kurguladık.
+
+28
+00:06:58,971 --> 00:07:05,031
+Aslına bakarsanız işin doğrusu daha ağır bir ödevi bir haftalık vermek istedik.
+
+29
+00:07:05,531 --> 00:07:12,611
+Fakat önümüzdeki hafta vize haftası olduğu için başınız yanmasın diye vazgeçtik ve daha basit.
+
+30
+00:07:13,076 --> 00:07:24,875
+Bir ödev ile yolumuza devam edeceğiz. Benim internet connection'ım unstable olduğunu söylüyor. Sesim kesildiyse de çok önemli bir şey söylemedim. Dediğim gibi o kadar zorlayacak bir ödev değil.
+
+31
+00:07:27,315 --> 00:07:29,775
+13.00, evet [öğrenci], doğru.
+
+32
+00:07:30,735 --> 00:07:38,315
+Şöyle, şimdi ödev neyle alakalı olacak diye genellikle böyle merak ediyorsunuz.
+
+33
+00:07:38,475 --> 00:07:52,175
+Burada ufak bir şey, rewind yapacağız ve geçen haftanın konusuna bir geri dönüp özellikle şu konudan bahsetmek istiyorum.
+
+34
+00:07:52,175 --> 00:07:53,576
+Çoklu ağaçlar.
+
+35
+00:07:54,004 --> 00:08:02,903
+Buradan da ödevin ağaç ile ilgili olduğunu, ağaç veri yapısıyla alakalı bir ödev olduğunu zaten hemen çıkartmışsınızdır diye düşünüyorum.
+
+36
+00:08:03,424 --> 00:08:10,104
+Bunu anlatmıştım. Kaçınız implement etti, kaçınız yaptı, yapmadı bilmiyorum. Yapanlar varsa çok büyük bir avantaj sahibi olacaktır.
+
+37
+00:08:10,104 --> 00:08:17,484
+Şimdi biz mary ya da nary, artık farklı kaynaklarda, farklı şekillerde biliyorsunuz ifade edilebiliyor.
+
+38
+00:08:22,324 --> 00:08:30,043
+Ya da şöyle yapalım, n diyenler de var, farklı kaynaklarda m ya da n kullananlar var.
+
+39
+00:08:30,384 --> 00:08:34,604
+Bu şekilde çoklu ağaçlardan bahsetmiştik hatırlayacak olursanız.
+
+40
+00:08:35,084 --> 00:08:43,663
+Ve bir ağacın seviyesinin aslında o ağaçtaki en büyük, en çok çocuk sayısına sahip düğüm olduğunu söylemiştik, derecesi hatırlarsınız.
+
+41
+00:08:43,663 --> 00:08:49,124
+Buraya baktığımızda şurada 1, 2, 3, 4, 5, 6 görüyorum.
+
+42
+00:08:50,323 --> 00:09:07,384
+Burada 6 var. Şuraya baktığımda 3 görüyorum. Bunun derecesi. Burada 2 görüyorum. Burada 1 görüyorum. Aşağıdakileri tekrar yazmaya gerek yok. Bu ağaç 6'lı ağaç olarak biliyorsunuz tanımlanır.
+
+43
+00:09:07,384 --> 00:09:15,624
+Şimdi ben bu ağaçların hepsinin implementasyonda bize kolaylık sağlaması açısından şöyle
+
+44
+00:09:16,224 --> 00:09:21,304
+Sağ tarafta, bu da Wikipedia'dan alınan zaten resim. Belki araştırdıysanız görmüşsünüzdür.
+
+45
+00:09:23,024 --> 00:09:33,864
+Aslında birer ikili ağaçmış gibi gösterilebileceğini ifade etmiştik. Ne lazım bize? İki tane pointer lazım aslına bakarsanız. İki pointerdan biri.
+
+46
+00:09:34,772 --> 00:09:41,092
+Sağındaki ilk kardeş, biri de altındaki ilk çocuğu gösterse bizim için yeterli olacaktır.
+
+47
+00:09:41,092 --> 00:09:43,112
+Örneğin, şunları bir temizleyelim.
+
+48
+00:09:43,692 --> 00:09:50,852
+Şimdi A düğümü. Bunun ilk çocuğu, bakın B. Yani aslında şu not yeterli.
+
+49
+00:09:51,252 --> 00:09:57,352
+A root olduğu için yanından başka bir şey çıkmamış durumda. O yüzden burayı temizledim.
+
+50
+00:09:57,672 --> 00:09:58,872
+Şimdi gelelim B'ye.
+
+51
+00:10:02,611 --> 00:10:17,531
+İlk çocuğunu bilsem, şuradan şöyle bir pointer çizelim ki o da burası ve bununla beraber ilk kardeşini bilsem, bu da ikinci pointer, o da bu. Benim için yeterlidir.
+
+52
+00:10:17,971 --> 00:10:24,412
+Yani ben A, B, A'dan B'den H'ye ya da A'dan B'den C'ye geçiş yaşayabilirim.
+
+53
+00:10:24,851 --> 00:10:32,231
+Aynı şekilde C'nin ilk çocuğu, C'nin çocuğu yokmuş ve C'nin kardeşi bu.
+
+54
+00:10:33,692 --> 00:10:38,072
+D'nin çocuğu, D'nin kardeşi, D'nin çocuğu yok, D'nin kardeşi var.
+
+55
+00:10:40,532 --> 00:11:06,251
+Şöyle çizelim. E'nin ilk çocuğu var. Hemen burada bir aslında fork ediyoruz gördüğünüz gibi. K. Ve E'nin kardeşi F. Ondan sonra F'nin çocuğu yok. F'nin kardeşi G. G'nin çocuğu var. M. Ama G'nin kardeşi yok.
+
+56
+00:11:06,836 --> 00:11:08,556
+Tamam, şöyle çizelim.
+
+57
+00:11:09,475 --> 00:11:11,155
+Null olarak gösterelim.
+
+58
+00:11:11,576 --> 00:11:13,836
+Aynı şekilde bunları da null diye gösterebilirdik şöyle.
+
+59
+00:11:15,155 --> 00:11:15,576
+Hepsini.
+
+60
+00:11:17,415 --> 00:11:18,796
+Aslında bunlar böyle null tabii ki.
+
+61
+00:11:18,796 --> 00:11:21,796
+Yani biliyoruz da kalabalık yapmasın diye bunları göstermiyoruz.
+
+62
+00:11:22,596 --> 00:11:24,115
+O yüzden onları şöyle undo yapayım.
+
+63
+00:11:25,779 --> 00:11:43,839
+Onu da silmiş olalım. Aynı şekilde şimdi ben H yani aslında bir seviye alta gittiğimde bakın şöyle şurada başka bir renk kullanalım. B, C, D, E, F, G yani şu seviyeyi aslında ben burada.
+
+64
+00:11:44,532 --> 00:11:52,852
+implement etmiş olduğum buna ben A'dan tek linkle erişebilirim. Sonra da linkli liste mantığıyla next, next, next diye bu seviyeyi aslında gezebilirim.
+
+65
+00:11:53,372 --> 00:12:02,252
+Ve bu seviyenin altındaki bütün çocuklara da mesela H seviyesine, 3. seviyeye indiğimde E, I, J diye gezebilirim. E'ye kadar gelip K, L diye gezebilirim.
+
+66
+00:12:02,752 --> 00:12:12,172
+Ondan sonra H'deyken N'ye gidip O'yu gezebilirim. K'den L'ye geçip Q'ya gidebilirim gibi. Yani aslında ben bunu, evet seviyesi çok fazlalaşacak.
+
+67
+00:12:12,532 --> 00:12:27,532
+Yüksekliği çok artacak. Fakat yine de anery ya da emery dediğim şuradaki ağacı ben ikili bir ağaç olarak güzellikle gösterebilir ve bunu daha rahat bir şekilde implementasyonunu gerçekleştirebilirim.
+
+68
+00:12:27,532 --> 00:12:35,532
+Ki bunu da şu şekilde iki işaretçi ile ağaç oluşturma mantığı diye burada vermiştik hatırlayacak olursanız.
+
+69
+00:12:35,951 --> 00:12:39,932
+Bunu da şöyle göstereyim. Aslında ağacım bu.
+
+70
+00:12:40,532 --> 00:13:00,672
+4 seviyeli bir ağaç var. Her bir node'um aslında şu şekilde. Bir data, ondan sonra bir child, bir de kardeş. Tamam mı? Yani mesela ben bunun kodunu yazacak olsam, hani struct'ını da yazayım hadi size. Şey olsun, uniform olsun diyelim. Nasıl yazabiliriz?
+
+71
+00:13:07,700 --> 00:13:22,880
+Ne yapıyorum? İşte integer data diyelim. Tamam mı? Ya da karakter data. Orası size kalacak. Ondan sonra bana ne lazım? Bir tane kardeş lazım. Önce kardeşi yazalım. Tamam mı?
+
+72
+00:13:29,908 --> 00:13:55,187
+Struct yazdım ya. Struct node pointer ya da pointer şöyle gösterelim. Nedir? Sibling yazabilirsiniz. Tamam mı? Mesela. Ya da next diyebiliriz. Aynı seviyede ya. Next. Hani biz next'i çok kullandık ya linked listelerde. Ondan sonra da işte struct node pointer cinsinden first child.
+
+73
+00:13:56,980 --> 00:14:11,379
+Tamam, bitti. Al sonra buradaki düğüm. İki tane linki var sadece. Demek ki ben burada nextlerle tık tık tık siblinglerimi gezebilirim.
+
+74
+00:14:11,572 --> 00:14:31,591
+Ondan sonra child ile bir alt seviyeye inebilirim. Onun next'leriyle onun siblinglerini gezebilirim. Baktığımızda yine burada ikili bir ağaç yapısı söz konusu. Yani şurada V0, V1, V2, V3 hatta şöyle çizelim. Kalem alayım. Şunu da biraz inceltelim.
+
+75
+00:14:31,591 --> 00:14:37,932
+Tamam. Şurada V0 var. V0'dan şöyle çizeyim.
+
+76
+00:14:38,995 --> 00:15:05,595
+V1 Şuna 1 yazayım, 0. Ondan sonra 1'den ne çıktı? 2. 2'den ne çıktı? 3. 3'den 4. 3'den şöyle hemen 7'yi çıkartalım. Child, ilk Child'ı. 7'den 8. 8'den 9.
+
+77
+00:15:07,028 --> 00:15:30,188
+7'den bir de şurada 10 var. Tamam. Ve 1'den de vardı unutmayalım. Şurada 5. 5'den de 6. Unuttuğum var mı? 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 tane düğüp. Buyurun size ikili aç.
+
+78
+00:15:30,611 --> 00:15:47,552
+Seviyesi ne? 1, 2, 3, 4, 5, 6. Yani 6 seviye mi? 7 seviye mi? Sıfırda sayınca 7 oluyor değil mi? Sayarsınız yani. Evet, normalde 1, 2, 3 seviyeliydi. Onu 7 ya da 8 neyse seviyeye çıkarttım ama.
+
+79
+00:15:47,951 --> 00:16:02,611
+Bu karmaşadan kurtulup güzel güzel böyle bir seviyesi yüksek olsa da ikili ağaç mantığıyla yani iki pointerlı nodlar mantığıyla bir ağaç yapısını güzellikle oluşturabildim.
+
+80
+00:16:03,451 --> 00:16:09,371
+Ödevin aslına bakarsanız temeli buraya dayanacak. O yüzden bunun üzerinden tekrar bir geçmek istedim.
+
+81
+00:16:09,371 --> 00:16:12,292
+Okey, şimdi bunu kapatayım.
+
+82
+00:16:12,947 --> 00:16:18,127
+Ve şöyle bir şey açayım.
+
+83
+00:16:18,707 --> 00:16:21,467
+Whiteboard alanını tekrar açalım.
+
+84
+00:16:22,507 --> 00:16:37,367
+Şimdi ödevle ilgili birkaç örnek aslında göstermek istiyorum ki zaten bu dökümanda da var göreceksiniz ama yine de hani ne ile karşılaştığınızı ya da hani ne nasıl çalışması gerektiğini mantığını biraz daha açıklamış olmak istiyorum.
+
+85
+00:16:38,487 --> 00:16:41,927
+Şöyle yapalım tekst olarak şöyle büyütelim.
+
+86
+00:16:46,707 --> 00:16:59,907
+düğümlü bir ağaç uygulaması yapacaksınız. Verdiğimiz örnekler vardı ya, dersin en başında ağaç örnekleri vermiştim. Bizim dünyada da şurada şurada kullanılır demiştim. Hatırlayan var mı?
+
+87
+00:17:08,788 --> 00:17:12,208
+İşletim sisteminde dedim. İşletim sistemin nerelerinde demiştim.
+
+88
+00:17:15,923 --> 00:17:17,884
+Özellikle bir yerini söylemiştim.
+
+89
+00:17:19,403 --> 00:17:21,463
+Dosya yapısı. Çok güzel.
+
+90
+00:17:22,543 --> 00:17:29,683
+İşte ödev buradan gelecek. Sizden bir klasör simülasyonu implement etmenizi isteyeceğiz.
+
+91
+00:17:29,683 --> 00:17:30,903
+Şu şekilde.
+
+92
+00:17:34,195 --> 00:18:02,155
+Root'umuz root. Böyle root diye bir tane folder'ımız var. Bunun altında sizden çeşitli komutlar tasarlamanızı isteyeceğim. En baştan söylüyorum gerçek dosya yapısı değil C'deki directory'e okuma, yazma, yaratma komutlarını kullanmayacaksınız. Bu bir file input output sistemi değil, bir simülasyon. Sanki varmış gibi ama bunun yapısını kurgulamanızı.
+
+93
+00:18:02,195 --> 00:18:23,915
+Özellikle de veri yapısıyla kurgulamanızı talep edeceğiz. Şöyle ne olacak? Bir, iki, üç, dört tane komut. Dört değil, beş tane komut sizden gerçekleştirmenizi talep edeceğiz. Birincisi make'dir. İkincisi şöyle yazayım change'dir.
+
+94
+00:18:26,003 --> 00:18:52,283
+Ondan sonra üçüncüsü remove'dır, dördüncüsüdır, beşincisi de count olacak. Şimdi ne demek bu? Şimdi ben root'dayım tamam mı? Root zaten var. File sistemdeki bölü olarak bizi karşılıyor. Adı da root olsun tamam mı? Şöyle. Demek ki siz burada karakter dizileri tutmak zorundasınız data olarak.
+
+95
+00:18:53,491 --> 00:19:14,132
+Mesela diyeceğim ki, make'dir, böyle input alacaksınız benden, tamam mı? Make'dir courses diyeceğim. Ondan sonra siz bunu yapacaksınız. Yani aslında şöyle root'un altında, şuraya çizeyim, tamam mı? Courses, ne biçim yazdı ya bu? Courses diye bir şey oluşturacaksınız.
+
+96
+00:19:20,627 --> 00:19:43,447
+Courses dedim. Artık cursor burada değil, şurada. Tamam mı? Aktif direktörü burası. Courses'ın içine girdim. Ondan sonra mesela yine aldınız, okey bir mesaj verebilirsiniz. Hani Courses'a girildi falan gibi ya da hiçbir şey söylemeseniz de olur ama söylerseniz daha şık olur tabii ki.
+
+97
+00:19:47,731 --> 00:20:15,152
+Structures dedim. Tamam, ne yapmış oldum? Corsus'un altında aslında şöyle bir destruct oluşturmuş oldum. Ondan sonra change'dır dedim. Data struct'ın içine girdim. Artık şuradayım. Tamam, buradayım. Ondan sonra burada böyle işte make their trees dedim.
+
+98
+00:20:15,827 --> 00:20:39,048
+Ondan sonra make their stacks dedim. Ondan sonra make their queues dedim. Böyle üç tane şeyi yarattım. Ondan sonra change'dır hemen yaratalım onları da ki unutmayalım. Şunun içinde trees, stacks.
+
+99
+00:20:40,180 --> 00:20:44,740
+Kullanıcı istediği kadar yaratabilir. O yüzden kaç seviyeli ağaç olduğunu bilemiyoruz.
+
+100
+00:20:45,380 --> 00:20:52,180
+Queues dedim. Şöyle devam edeyim. Yani file structure aslında şu şekilde, directory structure bu şekilde oluşmaya başladı.
+
+101
+00:20:52,980 --> 00:21:02,019
+Ondan sonra işte change'dir, ne bileyim trees dedim. Ondan sonra işte mesela make'dir, binary trees dedim.
+
+102
+00:21:05,587 --> 00:21:08,487
+Heap trees dedim.
+
+103
+00:21:12,372 --> 00:21:17,711
+Ondan sonra, şunları da trees'in içinde yani. Şöyle girelim.
+
+104
+00:21:18,512 --> 00:21:29,172
+Btrees ve heaptrees diye yaratmış oldum. Sonra yine changeler yapacağım.
+
+105
+00:21:31,284 --> 00:21:45,844
+Özel olarak şöyle iki noktalı olacak. Bu komutu verdiğimde ben neredeydim? Tree's'in içindeydim ya, active folder burasıydı. Tekrar buraya çıkmış oldum. Okey. Bunu çıktım.
+
+106
+00:21:46,355 --> 00:22:10,355
+Şimdi make, change, dira baktık. Dira bakalım. Ben buradayken dır dedim. Tamam mı? Sizin bana şöyle bir çıktı üretmeniz lazım. Burada ben neredeyim? Şu anda buradayım. Bunun içindeki folderları listelemeniz lazım. Şöyle ki trees, stacks ve queues. Bu kadar. Tamam. Bunları çünkü...
+
+107
+00:22:10,996 --> 00:22:31,655
+Kapalı ya normalde, tree, stacks, queue'u görebiliyorum. Ancak trees'in içine girersem şundaki altları görebilirim. Bunları göstermeyeceksiniz. Sadece tree, stacks, queue'u yazdıracaksınız. Şöyle yukarı alayım biraz. Ondan sonra mesela burada şey dediniz.
+
+108
+00:22:33,655 --> 00:22:34,655
+Remove'dır.
+
+109
+00:22:34,740 --> 00:23:01,644
+ne diyelim? Stacks diyelim. Tamam. Ne yapmış oldum? Ben buradan bunu sildim. Niye silebiliyorum? Çünkü destruct'ın içindeyim zaten. Bu çocuk altında olduğu için bunu sildim ve yapı bu şekilde geldi. Tamam. Mesela buradayken, şuradayım. Remove the destruct diyorum. Burada bana şey demeniz lazım. Böyle bir...
+
+110
+00:23:01,971 --> 00:23:10,932
+directory yok. Directory not exist. Neden? Çünkü ben hala destruct burasındayım. Altında silebileceğim sadece trees ve queues var.
+
+111
+00:23:12,111 --> 00:23:21,372
+İşte directory not found gibi bir hata döndürmeniz lazım. Ondan sonra ben remove the trees diyorum.
+
+112
+00:23:22,132 --> 00:23:44,132
+Burada da içi dolu ya bunun çocukları var ya bunu öldürememeniz lazım, silememeniz lazım. Directory not empty diye böyle bir hata mesajı vermeniz lazım. Başka, başka, başka, başka ne olabilir? Mesela olmayan bir yere change dir etmeye çalışıyorsunuz. Change dir heap.
+
+113
+00:23:49,844 --> 00:24:08,183
+doesn't exist gibi böyle bir hata mesajı falan vermeniz gerekiyor. Sonra diyelim ki ben neredeydim? Bir dakika dur bitireyim. Destruct'ın içindeydim. Şuraları siliyorum. Tamam mı? Sildim. Şimdi destruct'tayım. Change their yaptım.
+
+114
+00:24:09,107 --> 00:24:26,407
+Change'dir iki nokta üst üste yaptım. Nereye çıktım? Corsus'a çıktım. Ondan sonra Change'dir iki nokta üst üste yaptım. Nereye çıktım? Root'a çıktım. Bir daha Change'dir yapıyorum. Burada da yine hata vermeniz lazım. Hani buradan daha yukarıya zaten already in root diye.
+
+115
+00:24:26,996 --> 00:24:39,336
+Şöyle bir şey hani mesela atıyorum bu mesajı bir şeyler vermeniz gerekiyor. Bu şekilde bir implementasyon yaptığınızı ve bu simülasyonu böyle bizim komut gere gere işletmemizi bekliyoruz.
+
+116
+00:24:39,396 --> 00:24:54,036
+Count'tan bahsetmedik. Mesela destruct'ın içinde olayım tamam mı? Aktif direktör orası olsun. Count dediğimde sizin çıktınız ne olacak? Şu anda ne var orada? Trees ve queues var değil mi? İki.
+
+117
+00:24:54,400 --> 00:24:56,640
+Bu kadar. Okey.
+
+118
+00:25:00,180 --> 00:25:02,180
+Eee...
+
+119
+00:25:02,180 --> 00:25:05,559
+Bolu klasörleri silemeyecek miyiz?
+
+120
+00:25:05,879 --> 00:25:10,740
+Silemeyeceksin. Mesela burada remove directory trees dersen bana hata vereceksin.
+
+121
+00:25:10,940 --> 00:25:12,599
+Directory not empty diyeceksin.
+
+122
+00:25:13,740 --> 00:25:19,099
+Ama remove directory queues dersem okey sildim diye mesaj verebilir ve silebilirsin.
+
+123
+00:25:20,639 --> 00:25:22,920
+Anlaşıldı mı? Anladık.
+
+124
+00:25:24,200 --> 00:25:25,539
+Elimiz değmişken yıldız olsun.
+
+125
+00:25:27,124 --> 00:25:27,724
+Sesim geliyor mu?
+
+126
+00:25:27,724 --> 00:25:28,124
+Çalışmıyor.
+
+127
+00:25:29,064 --> 00:25:30,604
+Yos diyorsun.
+
+128
+00:25:31,443 --> 00:25:32,403
+Vyos.
+
+129
+00:25:33,544 --> 00:25:34,384
+Ne dedin? Duymadım.
+
+130
+00:25:36,443 --> 00:25:37,284
+Sesim geliyor muydu hocam?
+
+131
+00:25:40,124 --> 00:25:45,203
+Sesim geliyor mu sorusu geldi.
+
+132
+00:25:47,203 --> 00:25:48,124
+Soru gelmedi ama.
+
+133
+00:25:53,268 --> 00:25:54,268
+Okey.
+
+134
+00:25:56,868 --> 00:25:59,668
+Bu kadar. Benden.
+
+135
+00:26:01,868 --> 00:26:06,468
+Şimdi rahat bir nefes alın. Şöyle.
+
+136
+00:26:06,468 --> 00:26:07,668
+Ve...
+
+137
+00:26:08,243 --> 00:26:36,243
+Hemen çalışmalarınıza başlarsınız. Dediğim gibi saat 1'de de ödevin resmi şeyini göreceksiniz. Beklentileri hep ne varsa konuştuğumuz için de zaten klasik alıştınız diye düşünüyorum formata. Orada yazıyor. Lütfen geç kalmayın. Zamanı 11.59'da yüklemeye çalıştım demeyin. Yani 5-10 dakika en azından öncesinde yüklemiş olun. Kontrollerinizi tamamlamış olun. Çünkü işte yine sistem olmadığı...
+
+138
+00:26:36,243 --> 00:26:40,683
+şey yapamadım, son dakika, son saniyede kapandı falan kabul etmeyeceğiz.
+
+139
+00:26:40,883 --> 00:26:42,023
+Mail ile de kabul etmeyeceğiz.
+
+140
+00:26:42,103 --> 00:26:42,943
+Biliyorsunuz bunları.
+
+141
+00:26:43,503 --> 00:26:44,723
+Lütfen dikkat edin.
+
+142
+00:26:46,103 --> 00:26:47,843
+Komutlar için optionlar.
+
+143
+00:26:48,063 --> 00:26:48,763
+Ne demek option?
+
+144
+00:26:49,403 --> 00:26:52,283
+Yani meseladır bölü şey gibi mi?
+
+145
+00:26:52,363 --> 00:26:53,063
+AH gibi mi?
+
+146
+00:26:55,803 --> 00:26:57,503
+Böyle bütün alt folderları falan.
+
+147
+00:26:57,583 --> 00:26:59,543
+L, S, T, R, L, A falan gibi mi diyorsun?
+
+148
+00:27:00,303 --> 00:27:01,543
+Öyle şeyler olmayacak.
+
+149
+00:27:02,259 --> 00:27:06,019
+Daha basit yani. Sadece komut. Beş tane komut istiyoruz.
+
+150
+00:27:07,028 --> 00:27:26,288
+Make'dir, Change'dir, iki yönlü Change'dir aşağı yukarı. Yoksa mesela olmayan bir yere Change'dir yapmaya çalışıyorsam hata vereceksiniz. Remove'dir, eğer doluysa silemeyeceksiniz. Yine mesela olmayan bir şeyi silmeye çalışıyorsam hata vereceksiniz.
+
+151
+00:27:35,028 --> 00:27:44,167
+zaten dökümanda da var, ben de anlattım. Bir de count, aynı dırda kaç tane sayı var, onu sayacaksınız sadece. Option falan yok.
+
+152
+00:27:48,211 --> 00:27:55,232
+Tamam, peki. Başka soru yoksa bugün oturumu kapatıyorum. Saat 1'de başarılar diliyorum size.
+
+153
+00:27:57,612 --> 00:27:58,912
+Teslim tarihi tekrar söylediğim gibi.
+
+154
+00:27:58,912 --> 00:28:05,192
+Bir dakika, teslim tarihi yarın akşam 23.59 kapanıyor, dikkat edin.
+
+155
+00:28:05,192 --> 00:28:10,852
+Tamam mı? Yani perşembe akşam bitirmiş, yüklemiş olursunuz diye ümit ediyorum.
+
+156
+00:28:11,312 --> 00:28:15,072
+Süreniz bol, güzel güzel yaparsınız. Evet, şimdi dinliyorum.
+
+157
+00:28:15,955 --> 00:28:22,715
+Bizim bu ders kapsamında öğrenmiş stack, kuyruk gibi yapılar yüksek seviye dillerde build in olarak var mı?
+
+158
+00:28:23,495 --> 00:28:30,175
+O şey yani bazı API'lerde falan var. Bazı dillerde de var. Olan dil var yani.
+
+159
+00:28:30,835 --> 00:28:36,335
+Bizim mesela SMB'li kullanırken orada stack yapısı kendinden tanımlıydı ama sanırım CD yok.
+
+160
+00:28:36,875 --> 00:28:40,995
+O stack, evet SMB'deki stack de bu, yani evet yok.
+
+161
+00:28:41,395 --> 00:28:57,135
+Burada senin tanımlaman lazım. Ama bunların hepsini şey, C'de de var sonuçta böyle, stack kütüphanesi yok mu? Var, hazır, yazılmış, güzel, implementasyonu hazır, bir sürü kütüphane var. Yani include stack hash diyorsun, oluyor bitiyor.
+
+162
+00:28:57,715 --> 00:28:58,175
+Değil mi?
+
+163
+00:28:58,315 --> 00:29:02,455
+Yani ben direkt bu yıl eraylar gibi anlasını söyledim.
+
+164
+00:29:02,695 --> 00:29:03,935
+Yok bu şey şey yok.
+
+165
+00:29:03,955 --> 00:29:05,115
+Her şeyin kütüphanesi var gibi.
+
+166
+00:29:05,275 --> 00:29:06,515
+Evet aynen öyle.
+
+167
+00:29:06,675 --> 00:29:09,015
+Ama eksternal kütüphaneyle bunu kullanabilirsin.
+
+168
+00:29:09,015 --> 00:29:14,515
+Ama içinde direkt olarak implement etmiş olan şeyler var, diller var.
+
+169
+00:29:15,655 --> 00:29:17,915
+Zaten her gün bir dil çıkıyor artık biliyorsunuz yani.
+
+170
+00:29:20,575 --> 00:29:22,015
+Teşekkür ederim hocam. İyi günler.
+
+171
+00:29:22,035 --> 00:29:23,575
+Hocam bir şey sorabilir miyim?
+
+172
+00:29:23,895 --> 00:29:24,255
+Efendim.
+
+173
+00:29:24,624 --> 00:29:29,224
+Bu komutları kullanıcıdan komut satırıyla mı alacağız? Nasıl almamayız?
+
+174
+00:29:29,224 --> 00:29:35,163
+Tabii ki. Komut satırı. Böyle aynı bir sanki terminal ekranıymış gibi anlatabiliyor muyum?
+
+175
+00:29:35,544 --> 00:29:41,244
+Sizin projenizi yani executable çalıştıracağız. Böyle normal command prompt gibi yanıp sönecek.
+
+176
+00:29:41,544 --> 00:29:45,604
+Ya da komut giriniz diye bana bir şey yazacak. Ben o komutu gireceğim.
+
+177
+00:29:45,935 --> 00:29:59,935
+Siz onu pars edeceksiniz. Tamam mı? Yani komutun ne olduğunu bir kere, changedır mı dedim, removedır mı dedim, makedır mı dedim, dır mı dedim, yoksa count mu dedim. Onu bir kere anlayacaksınız. Sonrasında işte boşluktan sonra...
+
+178
+00:30:00,000 --> 00:30:23,500
+Deleni data olarak alacaksınız. Mesela changether stack dedim ya. Stack acaba gerçekten onun altındaki yani mesela root'dayım şu anda. Root'un altında stack diye bir folder yoksa hata vereceksin. Olmayan foldera gitmeye çalışıyorsun diye. Eğer varsa gerçekten gittim diye mesela bir şey söyleyip orada durmaya devam edeceksin o ağaçta.
+
+179
+00:30:25,120 --> 00:30:26,720
+Anladım hocam. Teşekkür ederim.
+
+180
+00:30:27,380 --> 00:30:47,200
+Aynı böyle şey gibi. Yani hani ne kullanıyorsunuz bilmiyorum ama sonuçta Linux'da olsa, Mac'da olsa, şey de olsa, Windows'da olsa sonuçta hepsinin aynı mantık var. Birinde işte Mac'dir diyorsunuz, birinde MD miydi, neydi şeydeki, Windows'daki. Öyle hani farklar var.
+
+181
+00:30:47,955 --> 00:30:56,275
+Birinde işte RM diyorsunuz, birinde DEL diyorsunuz. Nihayetinde aslında aynı şeyleri yapıyoruz. Aynı yerde aynı şeyleri yapacağız.
+
+182
+00:31:00,435 --> 00:31:03,435
+Hiyerarşide, ağacın belli bir seviyesindeyken.
+
+183
+00:31:04,675 --> 00:31:07,415
+String compare kullanabilir miyiz?
+
+184
+00:31:10,235 --> 00:31:14,955
+Şey için diyorsunuz öyle mi? Komutları falan almak için.
+
+185
+00:31:16,372 --> 00:31:18,532
+Yani kullanabilirsiniz de.
+
+186
+00:31:19,292 --> 00:31:20,272
+Kullanın, tamam, peki.
+
+187
+00:31:22,412 --> 00:31:22,732
+Okey.
+
+188
+00:31:28,115 --> 00:31:35,875
+Oldu. O zaman hadi başarılar. Oturumu kapattım. Saat 1'de hediyenizle baş başasınız. Görüşürüz.

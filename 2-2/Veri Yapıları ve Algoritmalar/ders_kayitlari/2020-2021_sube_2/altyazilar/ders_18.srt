@@ -1,0 +1,1203 @@
+1
+00:02:30,611 --> 00:02:35,512
+Merhaba arkadaşlar, hoş geldiniz diyelim. Katılımımız yavaş yavaş artıyor.
+
+2
+00:02:37,231 --> 00:02:46,692
+Bugünkü uygulama saatimizde, dersimizde diyelim daha doğrusu saatlerimizde, grup 2'nin oturumundayız biliyorsunuz.
+
+3
+00:02:46,852 --> 00:02:52,271
+Linki diğer gruplarla da paylaştım. Onlar da yavaş yavaş katılımlarını sağlayacaklar.
+
+4
+00:02:52,491 --> 00:02:56,991
+Üç grup bir arada olduğu için biraz daha uzun bekleyeceğiz. Normalde biliyorsunuz.
+
+5
+00:02:57,747 --> 00:03:24,527
+5 geçe başlardık derse fakat bugün 10 geçe başlayacağız. Bu bilgiyi de vermiş olayım. Bu arada önümüzdeki hafta 10, 11 ve 12 Mayıs tarihindeki derslerle ilgili resmi bir bilgilendirme de yapıldı. Haftaya derslerimiz yok. Ders yapmayacağız. Bu konuyu da şimdiden sizlere müjdelemiş olayım. Büyük bir ihtimalle ders yapılmamasını müjde olarak karşılarsınız diye düşünüyorum.
+
+6
+00:03:25,524 --> 00:03:31,463
+Bizim açımızdan ise konuların sıkışması anlamına geliyor tabii ki. Bir hafta az ders yapabileceğiz.
+
+7
+00:03:33,444 --> 00:03:43,944
+Bugünkü uygulama saatimizde Fatma Nur hocamız yönetecek oturumu ve tamamen konuyu onun kontrolü altında işleyeceğiz. O anlatacak sizlere.
+
+8
+00:03:43,944 --> 00:03:50,024
+Bu nedenle ben kendisini hemen host haline getiriyorum.
+
+9
+00:03:51,860 --> 00:03:56,520
+Bu noktadan sonra artık bütün kontroller kendisinde benden çıktı.
+
+10
+00:03:57,380 --> 00:03:58,480
+Teşekkür ederim hocam.
+
+11
+00:03:59,560 --> 00:04:01,080
+Hoş geldiniz Fatma Nur hocam.
+
+12
+00:04:01,880 --> 00:04:05,340
+Şimdi dediğimiz gibi katılım için biraz bekleyeceğiz.
+
+13
+00:04:06,000 --> 00:04:08,860
+Ongeçe gibi başlayabiliriz konu anlatımımıza.
+
+14
+00:04:10,240 --> 00:04:13,780
+Bir diğer grupları da bakalım ne durumdalar, gelen var mı?
+
+15
+00:04:14,439 --> 00:04:17,000
+Diğer gruplardan katılan oldu mu? Bir el kaldırabilir mi?
+
+16
+00:04:21,908 --> 00:04:37,368
+Evet, katılım var. Çok güzel. Demek ki linkler paylaşılmış. Bir sıkıntı yaşamıyoruz. İndirebilirsiniz arkadaşlar. Çok teşekkür ederim. Tamam. Dediğim gibi şu anda beklemedeyiz. Fatma'dan hocam istersen ekranını sen paylaş. O şekilde devam edelim.
+
+17
+00:04:46,579 --> 00:04:48,500
+10 geçe başlayacağız değil mi hocam?
+
+18
+00:04:50,279 --> 00:05:02,159
+Evet, 10 geçe başlayalım. Dediğim gibi 3 grup bir arada olduğu için katılım açısından biraz bekleyelim. Şu anda 27 kişiyiz. İkisi biz. 25 kişi şu anda katılmış durumda.
+
+19
+00:05:03,560 --> 00:05:09,879
+Ama zaman içinde genelde 5 dakika içinde zaten katılım sağlanıyor. O nedenle zaten dersleri 5 dakika bekletip başlatıyoruz.
+
+20
+00:05:11,159 --> 00:05:13,799
+Bugün de aynı şekilde ama artı bir 5 dakika daha vereceğiz.
+
+21
+00:10:24,371 --> 00:10:35,432
+Evet, saatimiz 10 geçiyor. Artık başlayabiliriz diye düşünüyorum. Hepinize merhaba arkadaşlar tekrar. Bu hafta ödev ikinizi birlikte inceleyeceğiz.
+
+22
+00:10:42,932 --> 00:10:55,412
+Ödevimizin konusunu zaten hepiniz biliyorsunuz bu komutları gerçekleyen bir program yazacaktık. Ödev dokümanıyla alakalı aslında sonunda da yapabiliriz ama
+
+23
+00:10:57,491 --> 00:11:11,412
+Ödevlerle alakalı birkaç bir şey söylemek istiyorum teslim eden arkadaşlarınızla ilgili. Bazı arkadaşlarınız ödevlerinizi hiç main'i olmayacak şekilde sadece fonksiyonları tanımlayarak main'i boş şekilde teslim etmiş.
+
+24
+00:11:12,211 --> 00:11:22,912
+Yani biz sizden bir ödev istediğimiz zaman beklentimiz o tanımladığınız fonksiyonları kullanabilir şekilde çalışabilen bir program, bir ödev teslim etmeniz arkadaşlar.
+
+25
+00:11:25,491 --> 00:11:31,511
+Bir şey belirtilmemişti diye böyle bir açıklamayı kabul etmiyoruz.
+
+26
+00:11:31,572 --> 00:11:37,351
+Bu ödev için boş meyin gönderen arkadaşlar için bir puan kırmadık ama yani
+
+27
+00:11:38,227 --> 00:12:04,767
+Bu çok mantıklı bir yaklaşım değil. Sonuç olarak siz ödevi yaparken siz fonksiyonlarınızı nasıl denediniz? Biz merak ettik açıkçası bu noktayı. Yani ödevinizi teslim ederken lütfen bu dokümanda bu yazmıyor, böyle göndersem de olur, kendimi haklı hissediyorum gibi bir algıya kapılmayın lütfen. Yani ödev o fonksiyonları gerçekleyin diyorsa o fonksiyonları çalıştırılabilir bir.
+
+28
+00:12:05,203 --> 00:12:25,523
+main'inizle birlikte göndermeniz gerekiyor. Bunu tekrar belirtmemiz gerektiğini düşünmüyoruz. Lütfen ödev bundan sonraki ödevlerinizde buna dikkat ederseniz seviniriz. Çünkü puanlandırma olarak bir karşılığı da olacak. Bunu söylemek istedim. Bununla alakalı bir sorusu olan var mı?
+
+29
+00:12:34,611 --> 00:12:35,571
+Yok hocam açık.
+
+30
+00:12:36,731 --> 00:12:44,611
+Tamamın halde. Ödevin nasıl yapabildiğimize bakalım. Nasıl yapmışız, nasıl yapabilirmişiz? Buna bakalım.
+
+31
+00:12:45,291 --> 00:12:46,991
+Beş tane komutumuz vardı.
+
+32
+00:12:48,403 --> 00:12:57,064
+Bu komutlardan bir tanesi make, change, remove, directory, directory ve count şeklinde 5 tane fonksiyonumuz olacaktı.
+
+33
+00:12:57,124 --> 00:13:00,884
+Bu fonksiyonlarında ne yaptığımız? Make dediğimizde yeni bir dizini oluşturacağız.
+
+34
+00:13:01,004 --> 00:13:07,043
+Change tree dediğimizde var olan dizilerimiz arasında hareket edebileceğiz.
+
+35
+00:13:07,043 --> 00:13:12,264
+Remove directory dediğimiz zaman bir dizini sileceğiz.
+
+36
+00:13:13,331 --> 00:13:19,652
+Dir komutunu çalıştırdığımızda bulunduğumuz dizindeki var olan dizinleri görüntüleyeceğiz.
+
+37
+00:13:19,772 --> 00:13:26,392
+Count da o dizinde kaç tane altında dizin olduğunu söyleyen fonksiyonumuz olacak.
+
+38
+00:13:26,552 --> 00:13:28,352
+Bu fonksiyonları tanınan bir ödev yapacağız.
+
+39
+00:13:28,491 --> 00:13:33,172
+Şimdi bu ödevi gerçekleyebilmek için bir node yapısına ihtiyacımız var.
+
+40
+00:13:33,908 --> 00:13:52,908
+Ağacımızda kullanacağımız node yapısının neye ihtiyacı olacak? Bir ismi olacak, dizinin ismini tutacak. Bir de hiyerarşisini tespit edebilmemiz için right'ı, left'ı ve parent'ı olacak şekilde bir node ihtiyacımız var değil mi? Bir ağaçta kullandığımız yapıyı zaten biliyorsunuz.
+
+41
+00:13:52,908 --> 00:14:00,827
+Parent dediğimiz nodumuz sağda ve solda olmak üzere bu şekilde bir yapı kullanacağız.
+
+42
+00:14:02,259 --> 00:14:10,680
+Şimdi, ben şu kamerayı şurada görmek istemiyorum. Şöyle alsam, bir de kapatsam.
+
+43
+00:14:12,148 --> 00:14:13,687
+Ekranımı kapatıyordu da.
+
+44
+00:14:14,408 --> 00:14:19,687
+Şimdi ağacın make directory dediğimiz zaman yeni bir dizin oluşturacağız değil mi?
+
+45
+00:14:19,788 --> 00:14:23,567
+Bizim kaç tane case'imiz olabilir? Bunları ben tek tek incelemeye çalıştım.
+
+46
+00:14:23,648 --> 00:14:30,187
+Şimdi ağacın boş olduğu bir durumda yeni bir directory eklemek istiyorsak, oluşturmak istiyorsak nasıl bir senaryoyla karşılaşabiliriz?
+
+47
+00:14:30,768 --> 00:14:33,228
+Şimdi bir tane root kökümüz var zaten.
+
+48
+00:14:34,587 --> 00:14:35,908
+Ağaç boş şu anda.
+
+49
+00:14:36,447 --> 00:14:38,288
+Buna biz yeni bir directory eklemek istiyoruz.
+
+50
+00:14:38,288 --> 00:14:39,127
+Ne yapacağız?
+
+51
+00:14:41,331 --> 00:14:54,571
+Bakacağız. Nodun lefti boş mu? Yani null'a eşit mi değil mi? Eğer null'a eşitse bu ne demek? Routum benim için boş. Yani altında hiçbir dizim yok demek.
+
+52
+00:14:54,571 --> 00:15:07,571
+O zaman biz bu nodun altına yeni bir not oluşturabiliriz. Left için ama parent'ın yani o anki bulunduğum dizinin leftinde bulunacak nodu oluşturuyorum.
+
+53
+00:15:08,659 --> 00:15:15,659
+Şimdi bu nodu oluşturduk ama bu yeni oluşan nod, parent'ın kim olduğunu bilmiyor. Öyle değil mi?
+
+54
+00:15:18,580 --> 00:15:45,980
+Bunu bilmesi için de ne yaptık? Nodun leftine yeni bir nod oluşturduk. Nodun leftine yani şu anda biz root kökteyiz yani parent olan dizindeyiz. Bunun leftine bir nod oluşturduğumuz zaman o parent'ın yani o nodun lefti artık bir nod temsil ediyor, bir dizini temsil ediyor. Bunu tanımladık. Şimdi ne yapacağız? O yeni oluşturduğumuz nodun parent'ının
+
+55
+00:15:47,860 --> 00:15:53,000
+Yani yeni oluşan node'un parent'ının şu anki dizinimiz olduğunu ifade edeceğiz.
+
+56
+00:15:53,000 --> 00:16:03,960
+Onu da node'un left'inin parent'ı yani şu anda bulunduğumuz dizinin left'inde bulunan node'un parent'ı eşittir.
+
+57
+00:16:04,360 --> 00:16:07,360
+O anda bulunduğumuz node şeklinde belirtiyoruz.
+
+58
+00:16:07,480 --> 00:16:12,480
+Burada bir kafası karışan var mı? Biraz karmaşık oluyor görselle.
+
+59
+00:16:14,355 --> 00:16:15,855
+Açıklamaya çalıştım ama.
+
+60
+00:16:17,268 --> 00:16:43,148
+Öncelikle biz yeni bir node oluştuğumuz zaman node'un leftine yeni bir node ekle dedik. O zaman parent'ı o anki parent'ımız yani o anki dizinimizin leftine yeni bir node eklemiş olduk. Şu anda bu kadar tanımlamamız var. Ama yeni oluşan node parent'ının kim olduğunu bilmiyor. O yüzden aşağıda gördüğünüz son satırdaki kod node'un leftinin parent'ı. Yani şöyle kalemle gösterebilir miyim?
+
+61
+00:16:44,724 --> 00:16:59,064
+Bu dizindeyiz şu an. Bu dizinin left'inin, bu nodun parent'ı neye eşit olacak? Şu anki dizinimize eşit olacak değil mi? Buna eşit olacak. O da nodumuz. Bunu eşitledik.
+
+62
+00:17:01,064 --> 00:17:02,384
+Ve artık
+
+63
+00:17:07,059 --> 00:17:14,279
+Artık yeni oluşan not da parent'ın kim olduğunu biliyor. Bu şekilde ilişkilerini tanımlamış olduk. Bir sorusu olan var mı?
+
+64
+00:17:16,539 --> 00:17:19,400
+Hocam, stack'ı tekrar gösterebilir misiniz lütfen birazcık?
+
+65
+00:17:20,119 --> 00:17:20,759
+Göstereyim.
+
+66
+00:17:25,044 --> 00:17:32,044
+İsmi, sağ ve sol nodu, aynı zamanda da bir parent olan bir nodumuz var.
+
+67
+00:17:33,584 --> 00:17:34,524
+Teşekkür ederim.
+
+68
+00:17:35,184 --> 00:17:35,664
+Rica ederim.
+
+69
+00:17:35,684 --> 00:17:42,443
+Hocam ama birden fazla alt direktörü olursa daha fazla çocuğa ihtiyacımız olmayacak mı?
+
+70
+00:17:42,604 --> 00:17:45,104
+Şimdi onları devam eden yapıda göreceğiz.
+
+71
+00:17:45,664 --> 00:17:46,064
+Tamam mı?
+
+72
+00:17:46,104 --> 00:17:49,184
+O zaman kafanda bir soru işareti olursa gene sor tamam mı?
+
+73
+00:17:49,779 --> 00:17:54,779
+Şimdi biz hiç ağacın boş olduğu durumda yeni bir node ekledik. Öyle değil mi?
+
+74
+00:17:55,779 --> 00:18:02,779
+Şimdi ağaçta birden fazla directory var. Aynı isimde bir node olup olmadığını kontrol etmeye çalışacağız.
+
+75
+00:18:02,779 --> 00:18:10,779
+Şimdi biz tasarladığımız ağaç şu şekilde olacak. Alta doğru indiğimizde o dizinin altında bulunan dosyaları göreceğiz.
+
+76
+00:18:10,779 --> 00:18:15,779
+Ama yatayda baktığımız zaman aynı dizindeki dosyaları göreceğiz. Tamam mı?
+
+77
+00:18:18,420 --> 00:18:36,420
+Şimdi, o node boş mu dolu mu diye kontrol ettik. Şimdi artık ilgili olmayan ifimiz gri şekilde bizim ilgilendiğimiz kısım else konumundayız. Tamam mı? O condition'da bir işlem yapacağız. Şimdi bakalım nasıl yapıyoruz? Aynı isimde bir node olup olmadığını kontrol edeceğiz.
+
+78
+00:18:37,420 --> 00:18:42,960
+Şimdi biz atıyorum, ismin new olan bir direktörü oluşturacağız. Tamam mı?
+
+79
+00:18:43,571 --> 00:18:51,192
+Kontrol ediyoruz. Şimdi root'tayız. Burada kontrol ettik. Root'un left'i null mu diye baktık ama root'un left'inde
+
+80
+00:18:51,192 --> 00:19:02,192
+directory 1 var. Yani null değil. O yüzden biz else'e düştük. Şu anda devam ediyoruz. Node'un left'i, yani şu anda root'tayız.
+
+81
+00:19:02,192 --> 00:19:07,692
+Kalemimi açayım gene. Şu anda root'tayız. Root'un left'i burası.
+
+82
+00:19:08,339 --> 00:19:23,819
+Yani şu anki olduğumuz node artık neyi ifade ediyor? Burayı ifade ediyor değil mi? Direktörü 1'deyiz. Şimdi nodun right'ı nula eşit değilse içeri gireceğiz. Şu anda bulunduğumuz dizim burası. Direktörünün.
+
+83
+00:19:24,307 --> 00:19:37,967
+Right'ı görüyorsunuz burası. Boş mu? Değil. O zaman içeri girebiliriz. Bakıyoruz bu isim bizim aradığımız şu isimle aynı mı? Biz neyi arıyoruz? Biz new diye bir node ekleyeceğiz.
+
+84
+00:19:38,947 --> 00:19:46,307
+New ile aynı mı directory birinin ismi? Hayır. O zaman biz devam ediyoruz. Ne olacak? Node'un, yani şu anki dizinimiz artık bu node'un...
+
+85
+00:19:47,284 --> 00:19:58,124
+işaret ettiği, sağda işaret ettiği dizin olacak. Yani benim şu anda bulunduğum dizim artık şu satırdan sonra direct-to-2 olacak. Tamam mı?
+
+86
+00:20:01,460 --> 00:20:14,519
+Karekleri 2'deyim. Sonra geldim tekrar döngümün başına. Sağ tarafı nula eşit mi? Hayır. Bir tane daha nodum var burada. O zaman ne olacak? Yine aynı işlemi yapacağız. Şu an buradayız. Şunları silelim.
+
+87
+00:20:20,564 --> 00:20:28,184
+Şu anda directory 2'deyiz. Kontrol ettik. directory 2'de ismi eşit mi? Hayır. New ile aynı değil. O zaman geçiyorum directory 3'e.
+
+88
+00:20:28,584 --> 00:20:34,903
+directory 3'ün nodunun, yani directory 3'deyim şu anda. Node directory 3'ü temsil ediyor.
+
+89
+00:20:35,523 --> 00:20:41,124
+Sağda işaret ettiği bir nod yok. Yani null'a eşit. O zaman ben bu döngüden artık çıktım. Değil mi?
+
+90
+00:20:41,844 --> 00:20:45,903
+Ama yine de nodun right'ına gittim.
+
+91
+00:20:46,067 --> 00:21:12,487
+node eşittir, node'un right'ı oldu tamam mı? Pardon, pardon. Wild'ın içinden çıktım, burası artık çalışmadı çok özür diliyorum. Çünkü zaten sağ tarafı yok. O yüzden oraya gidemiyoruz. Şu anda buradayız. Kontrol ediyoruz. Bu isim, yani şu son nodum benim şu anda buradayım. Son nodum aradığım isimle, new'le aynı mı?
+
+92
+00:21:13,044 --> 00:21:28,044
+aynıysa zaten bu dairektör var diyoruz yeni bir not oluşturmuyoruz fonksiyondan çıkıyoruz ama yok çünkü dairektör 3-nive eşit değil o zaman şimdi ne olacak bir sonraki adımımıza geçelim.
+
+93
+00:21:33,619 --> 00:22:01,419
+Burada zaten görselleştirmiştim ben aklımdan çıktı. İlk önce directory 1'i kontrol ettik, 2'yi kontrol ettik, isimle aynı eşit değil. Directory 3'ü kontrol ettik. Son if'in içindeyiz. Aynı mı diye baktık. Değil. O zaman ne yapıyoruz? If'in dışında artık yeni bir node oluşturabilirim. Directory 3'ün sağ tarafındaki node'u oluşturuyorum. Şimdi buraya yeni bir node ekledik biz. Şu fonksiyonla create.
+
+94
+00:22:01,619 --> 00:22:10,159
+create new node ile biz node'un write'ına, node'um şu anda dir 3'tü, directory 3'ün sağına bir node ekledik.
+
+95
+00:22:10,319 --> 00:22:16,579
+İsmi new olan. Bunu ekledik. Peki şimdi bu eklediğimiz node'un parent'ını tanımlamamız gerekiyor değil mi?
+
+96
+00:22:16,639 --> 00:22:22,679
+Çünkü directory 3 bunu tanıyor ama new directory 3'ün root'u olduğunu bilmiyor. Onu da burada ekliyoruz.
+
+97
+00:22:27,412 --> 00:22:33,731
+right'da bulunan node'unun parent'ı, yani işaret edeceği parent'ı neye eşit olacak?
+
+98
+00:22:34,172 --> 00:22:35,491
+node'un kendisine eşit olacak.
+
+99
+00:22:35,912 --> 00:22:38,412
+Şimdi artık biz bu ilişkiyi de tanımlamış olduk.
+
+100
+00:22:38,511 --> 00:22:40,592
+new'in root'u direct'leri 3 oldu.
+
+101
+00:22:41,211 --> 00:22:41,771
+Öyle değil mi?
+
+102
+00:22:48,276 --> 00:22:50,635
+Böylece yeni nodumuzu eklemiş olduk.
+
+103
+00:22:59,923 --> 00:23:03,124
+Bu make dir ile alakalı problemi olan var mı şu anda?
+
+104
+00:23:09,268 --> 00:23:10,008
+Yok hocam.
+
+105
+00:23:10,688 --> 00:23:10,968
+Tamam.
+
+106
+00:23:12,968 --> 00:23:15,728
+Şimdi Change'dir komutumuza bakalım.
+
+107
+00:23:17,588 --> 00:23:21,728
+Ne yapacağız? Ağaçta bir üst dizine erişme durumunu inceleyelim şimdi.
+
+108
+00:23:22,588 --> 00:23:28,748
+Directory 2'nin altında bir ABC dizini olsun ve biz de şu anda ABC dizinin de bulunuyor olalım.
+
+109
+00:23:29,327 --> 00:23:33,407
+Biz buradan bir üst dizine yani Directory 2'ye gitmeye çalışıyoruz.
+
+110
+00:23:34,648 --> 00:23:35,208
+Tamam mı?
+
+111
+00:23:36,500 --> 00:23:58,500
+Nasıl yapacağız? Şimdi kodumuzu işletelim. Ne diyor? Node'un parent'ının öncelikle ismini kontrol ediyoruz. Gelen parametrenin doğru olup olmadığını. Sonrasında Node'un parent'ın nula eşit mi değil mi ona bakıyoruz. Şu anda bulunduğumuz node bu olduğuna göre, abc olduğuna göre abc'nin bir üst nodu
+
+112
+00:23:58,708 --> 00:24:13,827
+Null'a mı eşit? Bunu da niye yapıyoruz arkadaşlar? Çünkü mesela root nodunda olduğumuz zaman bir üst daireklere olmadığı için bu kondişonu yapmamız gerekiyor. Eğer zaten parent'ın null'a eşitse bir üst daireklere gidememe durumunu bu şekilde kontrol edebiliriz. Tamam mı?
+
+113
+00:24:16,327 --> 00:24:20,508
+Ama biz şu an ABC dizinindeyiz. Ona dönelim.
+
+114
+00:24:24,463 --> 00:24:39,923
+Pardon, bu node'un parent'ı, yani directory 2'nin null'a eşit mi? Hayır değil. O yüzden buraya girebiliyoruz. Şu anda while döngüsündeyiz. Şimdi node'un, hala abc değil, parent'ının write'ı.
+
+115
+00:24:51,251 --> 00:25:00,532
+Kendisine eşit mi? Node'un, parent'ın, dir ikinin sağında bulunan node kendisine eşit mi? Değil.
+
+116
+00:25:01,632 --> 00:25:08,592
+O zaman eğer eşit olsaydı biz bu döngünün içine girebilecektik ama eşit olmadığı için şu anda alt satırdayız.
+
+117
+00:25:08,592 --> 00:25:14,672
+Node'un bir üst dizinini hesaplıyoruz şimdi. Node'un, şu anda buradayız.
+
+118
+00:25:18,259 --> 00:25:36,360
+abc dizini artık node'un parent olacak yani directory 2 olacak değil mi? Bir adım daha ileri gidelim. Artık yeni dizinimiz dir 2 oldu. Tamam mı?
+
+119
+00:25:36,672 --> 00:25:48,432
+Yeni dizinimizi de dönmüş olduk. Nodu, yeni noda eşitledik. Node artık abc değil, bir önceki adımımız da abc idi. Parent'ı eşitlemiş olduk ve nodumuzu geri döndük.
+
+120
+00:26:00,051 --> 00:26:16,511
+Kalemimi kullanırken aynı zamanda slide'lara rızk geçiş yapamıyorum da o yüzden bu kadar uzun sürüyor. Kapatıp geçmek. Şimdi ağaçta alt dizine erişme durumunu inceleyelim şimdi de. Üst dizine erişme olayı kolaydı. Şimdi alt dizine nasıl erişeceğiz? Bakalım.
+
+121
+00:26:19,892 --> 00:26:25,692
+Siz bu arada benim mouse'umu görüyor musunuz kalem dışında? Mouse'umu da görüyorsanız kalem yapmama gerek kalmayacak.
+
+122
+00:26:25,692 --> 00:26:28,892
+Tamam, görüyorsanız süper. Şimdi devam edelim.
+
+123
+00:26:29,892 --> 00:26:30,892
+Biz...
+
+124
+00:26:31,955 --> 00:26:41,235
+Baktık, parent'ın üstü nulla eşit değil. Pardon, nulla eşit. Çünkü root konumundayız. Şu anki dizinimiz root. O yüzden if'e giremeyeceğiz değil mi?
+
+125
+00:26:41,235 --> 00:26:51,655
+Node'un parent'ı nulla eşit çünkü. Nulla eşit değilse biz buraya girebiliyoruz. If'i çalıştırabiliyoruz. Ama root şu an en üst dizin olduğu için else girecek. Şimdi buraya geldik.
+
+126
+00:26:52,535 --> 00:26:56,215
+Node'u, node'un left'ine eşitliyoruz. Artık neredeyim?
+
+127
+00:27:00,211 --> 00:27:26,051
+direktörü 1'deyim değil mi? Benim gitmeye çalıştığım direktörü de direktörü 2 olsun. Tamam mı? Root'tayım, direktörü 2'ye gitmek istiyorum. Gidebilir miyim? Root'un altındaki dizinler dir 1, dir 2, dir 3 değil mi? Yani ben root'tan direktörü 2'ye gidebilirim normal şartlar altında. Şimdi bakıyoruz. Node artık nodun left'i olsun dedik. Artık 1 bizim nodumuz.
+
+128
+00:27:26,804 --> 00:27:45,344
+Bakıyoruz. Nodun sağında bulunan nod eğer boş değilse ve ismi buna eşit mi? Eşit değilse kendi nodumuzu arıyoruz şu an. Direktör 2'yi bulmaya çalışıyoruz şu while'de. Şu while içerisinde. Direktör 2 diye bir nod var mı? Bunu arıyoruz.
+
+129
+00:27:51,443 --> 00:28:00,443
+Null değil. Ama ismi de directory 2 ile eşit değil mi? O yüzden döngüden çıktık. Çünkü nodumuzu bulduk.
+
+130
+00:28:00,443 --> 00:28:12,443
+Eğer ismi birbirine eşit değilse diye burada bir condition'ımız vardı. Bunu ne için kullandık? Bir öncekini de açıkladım mesela. Şu anda açıklayabilecek olanınız var mı?
+
+131
+00:28:12,443 --> 00:28:19,115
+Biz nodu buluyoruz ama sonra tekrar ismi acaba eşit mi değil mi diye tekrar kontrol ediyoruz. Neden?
+
+132
+00:28:24,019 --> 00:28:28,879
+Node'un write'ın al olduğunda da çıkmış olabilir. Yani hiçbir şey olmayabilir.
+
+133
+00:28:30,980 --> 00:28:46,419
+Aynen öyle. Yani bizim ağacımızda bu sondaki nodu kontrol etmeden hareket etmemek için, directory 3'ün çünkü sağında bir değer yok, nula eşit. O yüzden directory 3'ü de kontrol etmek için döngümüzün dışında da bir kez daha bu kontrolü yapıyoruz.
+
+134
+00:28:47,124 --> 00:29:07,964
+Tamam ama biz burada şu anki şartlarda biz directory 2'yi bulduk değil mi? Çünkü dir 2'yi arıyoruz ve nodumuz içerisinde root'un altındaki directorylerde dir 2 mevcut. O yüzden bu sondaki ifin içerisine girmiyor. Biz directory 2'yi bulduk. O nodu da geri dönüyoruz. Böylece yeni dizinimiz directory 2 olmuş oldu.
+
+135
+00:29:11,476 --> 00:29:21,436
+Bununla alakalı bir durumumuz var mı? Soru işareti. Eğer mesela dir 2 değil de atıyorum dir 56 diye bir node arıyor olsaydık, bir dizin arıyor olsaydık ne olacaktı?
+
+136
+00:29:22,016 --> 00:29:31,936
+Dir 3'e kadar kontrol edecektik. Dir 3 olduğu zaman nodun write'ı boşu gösterecekti. O yüzden bu döngüden çıkacaktık ama son adımda tekrar kontrol edecektik.
+
+137
+00:29:31,936 --> 00:29:39,476
+Acaba bu isim, sondaki node, bu aradığım node eşit mi? Eşit olmadığını görecektik ve hata mesajı basacaktık.
+
+138
+00:29:39,476 --> 00:29:53,056
+Böyle bir direktörü bulunmuyor diye kullanıcıya mesaj print edecektik değil mi? Bununla alakalı da bir soru yoksa remove'a geçeceğiz artık. Var mı?
+
+139
+00:29:58,548 --> 00:30:07,548
+Yok anladığım kadarıyla Remove da rektörüye geçtik. Şimdi ağaçta olmayan bir nodu silmeye çalıştığımızda başımıza neler gelecek bir bakalım.
+
+140
+00:30:07,548 --> 00:30:14,539
+Root node'dayız ve root nodun altındaki dizinlerde dizin 56'yı arayacağız.
+
+141
+00:30:15,476 --> 00:30:36,316
+Yine bizim şuraya kadar gördüğümüz kod zaten artık aşina olduğumuz bir kod değil mi? Şurada biz artık ihtiyacımız olan nodu arıyoruz. Root'tan bir soluna geçiyorum ve o dizindeki, o seviyedeki bütün nodları arayacağım. Benim aradığım var mı diye. Şimdi bakalım.
+
+142
+00:30:41,940 --> 00:30:52,259
+Geldik direktörü 1'e. Eşit değil. Direktörü 2 eşit değil. Direktörü 3 eşit değil. 4 de eşit değil. O zaman ne yapıyorum?
+
+143
+00:30:54,259 --> 00:31:14,380
+Eşit değil. Şuradaki kontrolde içi boş dolduracağız bir sonraki adımda. Şu anda bizi ilgilendirmediği için yazmadım. Else düşüyor çünkü şu eşit olduğu durumda biz buraya gireceğiz eğer eşitse. Ama eşit olmadığı için biz DirectLar 56'nın olmadığını kullanıcıya söylemiş olduk.
+
+144
+00:31:18,612 --> 00:31:21,011
+Peki, var olan bir nodu silmeye çalışmak.
+
+145
+00:31:21,291 --> 00:31:24,491
+Alt dizini olan bir dizini silmeye çalışma durumu.
+
+146
+00:31:24,612 --> 00:31:28,491
+Şimdi, directory 2'nin gördüğünüz üzere ABC diye bir alt dizini var.
+
+147
+00:31:28,852 --> 00:31:31,751
+Ve bizim normal şartlarda bu nodu silemiyor olmamız lazım.
+
+148
+00:31:31,872 --> 00:31:32,892
+Çünkü bir alt dizini var.
+
+149
+00:31:33,451 --> 00:31:38,971
+O zaman, şimdi demin geçtiğimiz, pas geçtiğimiz bu if bloğu var ya, oraya geliyoruz.
+
+150
+00:31:39,152 --> 00:31:42,072
+Şimdi, şurada zaten arama işlemimizi yaptık değil mi?
+
+151
+00:31:42,771 --> 00:31:50,771
+yaptık, dir2'yi de bulduk. Eğer bulduğumuz node dir2'ye eşitse, şu kontrolü yapıyoruz, eşitse geldik bakalım.
+
+152
+00:31:51,491 --> 00:31:55,811
+Node'un left'i nola eşit mi değil mi bakalım. Node'un left'i.
+
+153
+00:31:57,771 --> 00:32:03,371
+Direktör 2'nin yani left dediğimiz zaman alt dizin olduğunu anlıyoruz değil mi?
+
+154
+00:32:03,692 --> 00:32:06,831
+Left demek bizim yapımızda şu anda bir alt dizin demek.
+
+155
+00:32:09,971 --> 00:32:19,392
+Bir alt dizine indikten sonra sağa gittiğimiz zaman yani o nodların right'ına eriştiğimiz zaman onlar aynı dizinde bulunan aynı seviyedeki nodlarımız.
+
+156
+00:32:19,912 --> 00:32:33,132
+Ama bir kökten yani kökün altındaki bir dizinden yani yeni bir dizinin altına gitmeye çalıştığımız zaman bir left yaptığımız zaman o dizinin altındaki dizin seviyesine inmiş oluyoruz.
+
+157
+00:32:33,211 --> 00:32:35,912
+Tamam mı? Kafanız karışmasın.
+
+158
+00:32:38,516 --> 00:33:01,576
+Şimdi geldik. Node'un left'ine iniyoruz. Yani inmiyoruz da kontrol ediyoruz. Left'i var mı? Bir alt dizini var mı? Direct'ları 2'nin left'i gördüğünüz üzere dolu. Node'a eşit değil. O zaman biz kullanıcıya mesaj print ediyoruz. Bu dolu, bu direct'ları dolu. Silme işlemi yapamaz. Tamam mı? Bir sıkıntı var mı?
+
+159
+00:33:09,203 --> 00:33:10,564
+Tamam, devam edelim.
+
+160
+00:33:16,084 --> 00:33:43,144
+Kontrol ediyoruz. Left'i dolu mu, boş mu? O yüzden silemedik. Şimdi ağaçta bir alt dizini olmayan bir dizini silmeye çalışalım. Şimdi burada üç tane durumumuz olabilir dizim. Yani direkt root'un altındaki yani ilk left yaptığımız o dizine indiğimiz durum var ya, root'la dizini bağlayan node olabilir. O da hangi nottan bahsediyorum? Direktörü 1 gibi. Ya da böyle arada bir node olabilir.
+
+161
+00:33:44,468 --> 00:33:46,068
+Arada bir not ya da bu
+
+162
+00:33:47,284 --> 00:33:55,384
+Düğümlerin sonu olabilir. Yani bir sağında boşu ifade eden bir düğümü silmeye çalışıyor olabiliriz. Üç durum.
+
+163
+00:33:55,384 --> 00:34:06,284
+Yani şu arada mesela şurada bir tane daha nodum olsaydı dirüçle bu yeni nodun arasında hiçbir durumsal olarak bir fark olmayacaktı silme işlemi yapmaya çalışsaydım.
+
+164
+00:34:06,584 --> 00:34:11,724
+Yani ara düğüm olduğu için sağında gösterdiğini, solunda gösterdiğini birbirine tanımayacağım.
+
+165
+00:34:11,844 --> 00:34:15,204
+Ama directory dört için baktığımız zaman sonda olduğu için.
+
+166
+00:34:15,284 --> 00:34:30,864
+Sadece onun için ne yapacağız? Solundaki nodu sağını boşa nula işaret edecek şekilde tanımlamamız gerekecek. O yüzden 3 tane farklı situation'ımız varmış gibi düşünelim. Şimdi bunları tek tek inceleyeceğiz.
+
+167
+00:34:35,411 --> 00:34:42,711
+geldik. Neyi silmeye çalışıyoruz şu an? Directory 1'i silmeye çalışıyoruz. Geliyoruz, bakıyoruz.
+
+168
+00:34:43,371 --> 00:34:48,411
+Node'un parent'ının left'i. Ben şu an hangi nottayım? Directory 1'deyim değil mi?
+
+169
+00:34:48,411 --> 00:34:52,431
+Parent'ının işaret ettiği alt not.
+
+170
+00:34:56,755 --> 00:35:23,895
+directory 1'in parent'ı kim? Root. Root'un işaret ettiği alt dizin yani left'teki node hangisi? Directory 1. Bunlar birbirine eşit mi? Evet. O zaman ben diyorum ki benim silmeye çalıştığım node bu alt dizinlerde en başta duran node. Yani baştan silme yapacağım. O zaman geliyorum ben bu şeyde if'in içerisindeki tekrar bir kontrol yapıyorum. Acaba bu dizin dolumu boş mu? Bunu kontrol edeceğim.
+
+171
+00:35:24,755 --> 00:35:45,036
+Direktörü 1'in, pardon, Direktörü 1, acaba yanında bir node bulunduruyor mu, bulundurmuyor mu? Yani bu acaba ruta bağlı tek node mu, yoksa yanında bir işaret ettiği bir node var mı diye kontrol ediyorum. Şimdi kontrol edelim bunu. Direktörü 2.
+
+172
+00:35:46,291 --> 00:35:56,952
+null'a eşit değil. O zaman ne yapıyoruz? Else düşüyor. O zaman ne yapacağım ben? Root'u directory 2'ye bağlayacağım. Onu nasıl bağlayacağım? Şu anda benim nodum directory 1.
+
+173
+00:35:58,652 --> 00:36:09,271
+Directory 1'in parent'ı kim? Root. Root'un işaret ettiği left node artık kim olacak? Directory 2 olacak değil mi? Directory 2 de kime eşit?
+
+174
+00:36:09,940 --> 00:36:34,279
+Şu anda bulunduğum node'un sağ değil mi? Node'un right'ı. Yani şu anda node'un parent'ı şöyle çizelim. Biraz karmaşık bir ifade olabilir. Node'un parent'ı root değil mi? Root'un gösterdiği sağ. Yani şu directory 1'i silmek istiyorum. Gösterdiği sağ directory 1 olmayacak. Kim olacak?
+
+175
+00:36:36,179 --> 00:36:51,239
+Şu andaki daireklerim benim node, dairekleri 1. Bunun sağında işaret ettiği dairekleri olacak. Yani dairekleri 2. O zaman ne yapacağım? Ben böyle root'u bağlamış oldum. Dairekleri silindi. Şimdi sonraki adımını görelim.
+
+176
+00:36:56,884 --> 00:37:03,844
+Bu şekilde oldu değil mi? Burada bir hayır hocam böyle olmadı diyebileniniz var mı? Hata yaptık mı?
+
+177
+00:37:07,764 --> 00:37:11,224
+Hocam burada node'u free etsek daha iyi olur değil mi?
+
+178
+00:37:12,083 --> 00:37:14,364
+Evet, aynen öyle yapabilirsiniz.
+
+179
+00:37:18,420 --> 00:37:24,880
+Çünkü silmiş olduk. Memoride de dediğin gibi hafızada artık o alanı boşa çıkarabiliriz.
+
+180
+00:37:27,579 --> 00:37:29,800
+Ama şu yapıyı anladık değil mi?
+
+181
+00:37:32,199 --> 00:37:33,180
+Anlaşıldı hocam.
+
+182
+00:37:33,460 --> 00:37:34,039
+Tamamdır.
+
+183
+00:37:36,039 --> 00:37:38,579
+Şimdi dairekleri 3'ü silmeye çalışalım.
+
+184
+00:37:39,347 --> 00:37:43,347
+Fark ettiyseniz kodu tanımlaya tanımlaya devamlıyoruz.
+
+185
+00:37:43,347 --> 00:37:47,347
+Yani şu ilk hani remove directory'nin ilk slide'ında bütün koda erişemezsiniz.
+
+186
+00:37:47,347 --> 00:37:49,347
+Devam ettikçe ekleme yapıyoruz.
+
+187
+00:37:49,347 --> 00:37:54,347
+Şimdi bu durumda hangi durum? Ara node olduğu zaman bahsetmiştim ya üç tane durumumuz var diye.
+
+188
+00:37:54,347 --> 00:37:59,347
+Ara node olduğu zaman directory 3 gördüğünüz gibi ara sağ ve solu dolu olan bir node.
+
+189
+00:37:59,347 --> 00:38:01,347
+Bunu silmeye çalışacağız. O zaman ne yapacağız?
+
+190
+00:38:01,347 --> 00:38:03,340
+directory 3'ün...
+
+191
+00:38:03,731 --> 00:38:09,011
+Parent'ın işaret ettiği sağındakini, Direktori 4'e işaretleyeceğiz.
+
+192
+00:38:09,112 --> 00:38:16,532
+Direktori 4'ün de Parent'ını şu anda bulunduğumuz dizinin, yani Direktori 3'ün Parent'ına işitleyeceğiz. Öyle değil mi?
+
+193
+00:38:17,091 --> 00:38:18,692
+Burada tamamen yaptığımız o.
+
+194
+00:38:23,668 --> 00:38:44,887
+Tekrar bir görselleştirelim. Şu anda da node direktleri 3'e eşit, node'un parent'ı direktleri 2 ve parent'ın işaret ettiği yani yeni işaret edeceği sağı kim olacak? Şu anda node'un işaret ettiği sağ olacak. Yani biz şu işlemde şu bağlantıyı yaptık. Artık şunu kopardık, şunu yaptık.
+
+195
+00:38:49,715 --> 00:39:15,215
+Artık şu bağı yok. Biz şöyle düzgün çizeyim. Artık şöyle bir bağlantımız var. Peki bir alt satırda ne yapıyoruz? Şu an hala node'un direktörü 3. Node'un sağının parent'ı yani işaret edeceği parent'ı node'un parent'ına işaret eşitliyorum.
+
+196
+00:39:15,764 --> 00:39:40,144
+Yani şu bağlantıyı kestim. Artık Direct3 4'ün parent'ı, Direct3 3 değil. Onun parent'ını yeniden tanımladım. Nasıl tanımladım? Şu anda bulunduğum node'un parent'ını bularak. Yani şu bağlantıları koparmış olduğum yeni bağlantım artık bu şekilde. Onu da görelim.
+
+197
+00:39:41,588 --> 00:40:08,364
+sildik gördüğünüz üzere directory 3 gitti artık yerine directory 4 oldu. Sorun yok değil mi? Şimdi bir de hangisini silebiliriz? Artık sondaki node'u silebiliriz. Bu da son durumumuz. Eğer directory 4 yani node'umuz
+
+198
+00:40:08,532 --> 00:40:35,912
+Sağında bir boş bir ifadeyi null ifadesini ifade ediyorsa o zaman ben ne yapacağım? Direkt sileceğim. Parent'ın işaret ettiği sağda null ifadeyi eşitlemiş olacağım. Yani sadece directory 2'nin hafızasından directory 4'ü silmiş olduğun. Yine burada demin arkadaşınızın söylediği gibi sildiğimiz nodu free edebilirsiniz. Tamam mı?
+
+199
+00:40:36,403 --> 00:40:38,804
+Dijkstra 4'ü de böylelikle silmiş olduk.
+
+200
+00:40:42,291 --> 00:40:45,211
+Yeni durumda ağacımız şu şekilde oldu.
+
+201
+00:40:50,483 --> 00:40:56,483
+Son olarak divin ve countumuz kaldı. Ne kadar soru yoksa oraya geçeceğim.
+
+202
+00:41:02,324 --> 00:41:27,284
+bir zamandır. Dil komutumuzda nasıl çalışacak? Root dizimizdeyiz ve root altındaki dizin sayısını öğrenmek istiyoruz. Şimdi aşina olduğumuz bir kod kullanacağız gene. Tek tek nodları kontrol edeceğiz. Ne yapıyor şimdi? Geldik.
+
+203
+00:41:30,003 --> 00:41:36,064
+node'un left'i null ise zaten dizim boş demektir değil mi? There is no directory değil, print edeceğiz.
+
+204
+00:41:37,384 --> 00:41:44,583
+Kullanıcıyı bilgilendireceğiz. Ama benim şu anda root'umun left'i dolu, directory 1 var. O yüzden else'e gireceğiz.
+
+205
+00:41:45,123 --> 00:41:53,784
+Ve node'u node'un left'ine eşitledik. Root'un left'inde de directory 1 var ve şu anda bu satırdan sonra bizim node'umuz artık directory 1.
+
+206
+00:41:54,867 --> 00:41:57,867
+Print ettik şu üç şeyimizi.
+
+207
+00:41:57,867 --> 00:42:00,867
+Node'umuzu yazdık, print ettik.
+
+208
+00:42:00,867 --> 00:42:03,867
+Ne yapıyoruz? Kontrol ediyoruz.
+
+209
+00:42:03,867 --> 00:42:05,867
+Şimdi directory 1 boş mu?
+
+210
+00:42:08,659 --> 00:42:15,180
+Node'umuz boş olmayana kadar, boş olmadığı müddetçe biz bu işlemi yapacağız.
+
+211
+00:42:15,180 --> 00:42:20,260
+Node'un ismini basacağız, directory 1'i bastık, bir sonraki sağa geçtik.
+
+212
+00:42:20,260 --> 00:42:22,260
+Ne oldu? Directory 2'ye geldim artık.
+
+213
+00:42:22,260 --> 00:42:25,099
+Şu anda bunu açıklamaya gerek yok zaten.
+
+214
+00:42:25,099 --> 00:42:28,139
+İşlemi tekrar edeceğim, directory 3, geldim.
+
+215
+00:42:30,260 --> 00:42:32,340
+Ve işlemim doğru değil mi?
+
+216
+00:42:32,340 --> 00:42:36,380
+Root'un altında 3 tane dizim var ve doğru şekilde print ettim.
+
+217
+00:42:38,068 --> 00:42:38,847
+Bu çalışıyor.
+
+218
+00:42:40,596 --> 00:42:43,195
+Count için de aynı şekilde, aynı mantıkta.
+
+219
+00:42:43,315 --> 00:42:46,416
+Yani aslında bu komutu yapan count'u da yapması gerekiyordu.
+
+220
+00:42:46,496 --> 00:42:49,615
+Ama ödevlerinizde bazen bunda sıkıntı yaşayan arkadaşlar olmuş.
+
+221
+00:42:49,775 --> 00:42:52,496
+Hani diri yapmış, count'u yapmamış mesela.
+
+222
+00:42:52,675 --> 00:42:54,876
+Hani aynı olduğunu düşünemediniz mi bilmiyorum.
+
+223
+00:42:55,036 --> 00:42:58,556
+Hani onu yaptıysanız count da aynısı aslında.
+
+224
+00:42:58,775 --> 00:43:02,416
+Sadece isim değil, bir sayaç koyuyoruz gördüğünüz üzere buraya.
+
+225
+00:43:02,416 --> 00:43:05,775
+Ne yaptık? Burada isim print ediyorduk.
+
+226
+00:43:05,855 --> 00:43:07,536
+Burada bir sayaç koyduk sadece.
+
+227
+00:43:07,756 --> 00:43:08,556
+Integer count.
+
+228
+00:43:08,596 --> 00:43:19,596
+alt diye, counter diye onu her seferinde bir arttırıyoruz. En sonunda da o değeri basacağız. Şu an geldim, direktörü 1'deyim, counter'ım 1 oldu.
+
+229
+00:43:19,596 --> 00:43:32,139
+direktörü 2'deyim, counter'ım 2 oldu. direktörü 3'deyim, counter'ım 3 oldu. En sonunda da ifadeyi print ettim. Sorusu olan var mı?
+
+230
+00:43:34,675 --> 00:43:43,355
+Hocam, ben başları kaçırdım da şeyi soracaktım. Şu an bu yapıda Dirk'in parent'ı Dirk 1 mi?
+
+231
+00:43:44,456 --> 00:43:54,215
+Hayır, Dirk'in parent'ı Ruth. Şimdi şöyle tasarladık. Her bir dizinin altındaki seviyede Dirk 1, Dirk 2 ve Dirk 3 hepsi Ruth'un altında.
+
+232
+00:43:55,284 --> 00:44:07,923
+Diriki'nin altındaki ABC'yi görüyorsun. ABC'de Diriki'nin altındaki bir dizi. Mesela şuraya yeni bir node eklemiş olsaydık bu kimin, hangi dizinin altında olacaktı?
+
+233
+00:44:09,664 --> 00:44:11,524
+Diriki'nin altında olacaktı.
+
+234
+00:44:11,904 --> 00:44:16,784
+Diriki'nin altında olacaktı değil mi? Diriki'nin altında. ABC ve Ni, Diriki'nin altında.
+
+235
+00:44:17,268 --> 00:44:25,407
+Şöyle, alta doğru indikçe dizin derinleşiyor ama yatayda aynı seviyedeki dizinleri görüyoruz.
+
+236
+00:44:27,108 --> 00:44:33,507
+Remove dir kısmında ben herhalde yanlış gördüm.
+
+237
+00:44:33,507 --> 00:44:37,507
+Yani listenin ortak...
+
+238
+00:44:37,876 --> 00:44:49,416
+Ortasındaki bir elemanı kaldıracağınız zaman yine parent'ı kullanmıştınız da o yüzden şaşırdım. İlk başları da tam göremediğim için yapı nasıl bir yapı göremediğim için.
+
+239
+00:44:49,436 --> 00:44:58,036
+Şimdi parent'ı şöyle, şimdi her birine mesela yeni node oluşturduğumuz zaman bütün yapıları root'a bağlayarak yapmadık. Anladın mı?
+
+240
+00:44:58,036 --> 00:45:04,296
+Yani şu, böyle bir yapı oluşturduk. Yani bütün root'un altındaki bütün dizimler direkt root'a bağlı değil.
+
+241
+00:45:05,300 --> 00:45:16,340
+Mesela diriki deyken chang'dir nokta nokta dediğimizde nasıl gidiyordu? Ben chang'dir kısımlarını kaçırdığım için.
+
+242
+00:45:17,120 --> 00:45:17,700
+Bakalım.
+
+243
+00:45:20,660 --> 00:45:26,160
+Örnek olarak şey yaptık, ABC'den diriki'ye gittik, chang'dir de.
+
+244
+00:45:33,652 --> 00:45:45,292
+Şimdi bu kodumuzun tam hali bir saniye. Bir iş ilerledikçe çünkü eklem yapıyoruz. Tamam bu tam hali. Şimdi dir 2D olduğumuzu varsayalım.
+
+245
+00:45:48,292 --> 00:45:51,392
+Nodum parent'ı nula eşit değil değil mi?
+
+246
+00:45:55,668 --> 00:45:58,788
+Şu andaki node'un parent'ı null'a eşit değil. Şuradayız.
+
+247
+00:46:04,052 --> 00:46:17,332
+Bakalım. Nula eşit değil. Geldik. Node'un parent'ı buraya girecek değil mi? İsmi buna eşit. Node'un parent'ı Nula eşit değil. Evet, buraya girdik.
+
+248
+00:46:22,483 --> 00:46:25,023
+node'un parent'ının sağına bakacağız.
+
+249
+00:46:25,223 --> 00:46:28,523
+node'un parent'ının sağı.
+
+250
+00:46:29,023 --> 00:46:31,543
+Yani node'un parent'ı kim olacak?
+
+251
+00:46:31,703 --> 00:46:32,343
+Direktörü 1.
+
+252
+00:46:32,543 --> 00:46:33,723
+Onun da sağı kim olacak?
+
+253
+00:46:34,863 --> 00:46:35,623
+Direktörü 2.
+
+254
+00:46:36,183 --> 00:46:40,083
+Bu buna eşitse diyor ki node artık node'un parent'ı olsun diyor.
+
+255
+00:46:40,183 --> 00:46:42,563
+Yani biz bu yataydaysak ben buraya gideceğim.
+
+256
+00:46:43,403 --> 00:46:44,503
+Ta ki ne zamana kadar?
+
+257
+00:46:44,643 --> 00:46:46,243
+Parent root değil mi hocam orada?
+
+258
+00:46:46,823 --> 00:46:47,243
+Efendim?
+
+259
+00:46:48,052 --> 00:46:51,152
+Node'un parent root değil mi? Dirik'in parent root değil mi?
+
+260
+00:46:52,152 --> 00:46:54,892
+Hayır, burada directory 1 oluyor.
+
+261
+00:46:58,112 --> 00:47:04,692
+Sen burada right law parent şeyini karıştırır sanırım arkadaşlarla.
+
+262
+00:47:05,492 --> 00:47:09,132
+Yani oluşturduğumuz yapı bu şekilde olduğu için böyle arkadaşlar.
+
+263
+00:47:09,312 --> 00:47:11,632
+Siz mesela o şekilde bir yapı oluşturmuş olabilirsiniz.
+
+264
+00:47:11,792 --> 00:47:15,592
+Baştan beri bu şekilde yaptığınız için şimdi kodda o şekilde ilerliyor.
+
+265
+00:47:17,876 --> 00:47:32,376
+Ben tek yönlü kullandım hocam. Sadece Child ve Sibling yaptım. Dolayısıyla stack de tuttum parentları da. Alt direktörüye indikçe. Tabi bu şekilde daha kolay olmuş.
+
+266
+00:47:33,811 --> 00:47:39,392
+Yani burada amacımız hani aynı dizinde olabildiklerini kendiniz bir yapı oluşturuyorsunuz.
+
+267
+00:47:39,392 --> 00:47:43,172
+Bunu ifade edebildiğiniz müddetçe hani bir sıkıntı yok.
+
+268
+00:47:44,371 --> 00:47:47,952
+Ama tabii ki her zaman bir çözümden daha iyi bir çözüm vardır.
+
+269
+00:47:48,831 --> 00:47:51,392
+Daha iyi bir çözüm illa ki bulanlarınız olmuştur.
+
+270
+00:47:52,912 --> 00:47:53,831
+Öyle söyleyebilirim.
+
+271
+00:47:53,932 --> 00:47:57,532
+Ama bu şu anda kurduğumuz yapıya göre doğru çalışıyor.
+
+272
+00:47:57,672 --> 00:47:58,032
+Tamam mı?
+
+273
+00:48:00,532 --> 00:48:01,432
+Anladım hocam.
+
+274
+00:48:03,668 --> 00:48:05,468
+Başka sorusu olan var mı?
+
+275
+00:48:13,844 --> 00:48:31,064
+Sorunuz yoksa yine hepinizin kullanıcımız atmış olmuş. Yine ben son kez de söyleyeyim. Bundan sonraki ödevlerinizde main'i boş görmek istemiyoruz. Boş bir main çok düşük olarak değerlendirilecek.
+
+276
+00:48:31,923 --> 00:48:36,084
+Bunu tekrar belirtmiş olayım size. Boş main görmek istemiyoruz. Tamam mı?
+
+277
+00:48:36,744 --> 00:48:41,403
+Hani olabilir mesela burada çok başarılı yapan arkadaşlarınız da var.
+
+278
+00:48:41,403 --> 00:48:47,344
+Mesela direkt bir komut istemcisi gibi yani şey komut satırında işlem yapıyormuşuz gibi.
+
+279
+00:48:49,396 --> 00:49:10,396
+Main sürekli kullanıcıdan bir input istiyor. Yani bu şekilde olması gerekiyordu zaten. Bunu yapamamış olabilirsiniz. Hadi bunu yapamadınız. O zaman bir test case, yani maininizde bizim bunu anlayabilmeniz için, sizin de kodunuzu çalıştırılabildiğinizi ispat etmeniz için bir test case oluşturmanız gerekiyor. Onu olanlar zaten onları değerlendiriyor.
+
+280
+00:49:12,851 --> 00:49:21,911
+değerlendirdik ama bu seferlik gerçekten hani meyini boş olarak gönderdiğiniz takdirde öbür ödevlerinizde sıkıntı yaşayacaksınız puanlama olarak.
+
+281
+00:49:21,911 --> 00:49:27,831
+Bunu tekrar size belirtmiş olayım. Bir de ödevinizde çokça karşılaştığımız başka bir husus şu.
+
+282
+00:49:28,291 --> 00:49:33,911
+Mesela kontrol ederken sadece bir örnekle kontrol edip geçmeyin. Mesela ruta direktörü bir ekledim.
+
+283
+00:49:34,972 --> 00:49:39,891
+Artık tamam bu oldu deyip geçmeyin. Bir iki üç tane deneyin bakalım oluyor mu?
+
+284
+00:49:40,851 --> 00:49:49,012
+Mesela bir tane daire göre eklediğimizde doğru çalışan ama iki tane, üç tane eklediğimiz zaman sıkıntı yaşayan ödevler oldu.
+
+285
+00:49:50,152 --> 00:50:01,012
+Sizin hayrınıza bunu test gezilerinizi ne kadar arttırırsanız, ödevin de doğruluğundan çalıştığınız, tasarladığınız programın doğruluğundan daha fazla emin olabilirsiniz.
+
+286
+00:50:02,152 --> 00:50:04,092
+Bunu da söylemiş olayım.
+
+287
+00:50:05,204 --> 00:50:10,563
+Başka bir notlarıma bakayım söyleyeceğim. Başka bir şey var mıydı ödevlerle alakalı?
+
+288
+00:50:16,275 --> 00:50:27,755
+Yok, genellikle karşılaştığımız durumlar bunlardı. O şekilde size sormak istediğiniz başka bir şey varsa bilmeyeyim yoksa bitirebiliriz.
+
+289
+00:50:39,315 --> 00:50:40,815
+Yok anladığım kadarıyla.
+
+290
+00:50:44,467 --> 00:50:45,687
+Hocam, burada mısınız?
+
+291
+00:50:46,367 --> 00:51:11,387
+Evet, evet, buradayım. Fatma Nur Hocam, çok teşekkür ediyoruz. Güzel bir çözüm, efektif bir çözüm. Tabii başka çözüm yolları da var. Hani arkadaş stack kullandım dedi, evet olabilir. O da farklı bir çözüm yoludur. Ancak bu yolun ne kadar düzgün bir şekilde çalıştığını da kendisi de kabul etti zaten. Diğer arkadaşlar da bunu görmüştür. Benim ilave edeceğim başka bir şey yok. Teşekkür ediyoruz.
+
+292
+00:51:12,724 --> 00:51:14,204
+Teşekkür ederim hocam.
+
+293
+00:51:15,784 --> 00:51:16,784
+İyi günler.
+
+294
+00:51:16,804 --> 00:51:17,344
+Peki arkadaşlar.
+
+295
+00:51:18,564 --> 00:51:23,604
+Evet, o zaman oturumumuzu, uygulama saatimizi, seansımızı kapatabiliriz.
+
+296
+00:51:23,764 --> 00:51:27,864
+Tekrardan Fatma Nur hocamıza da teşekkür ediyoruz çözümü için.
+
+297
+00:51:28,692 --> 00:51:47,632
+Hepinize şimdiden iyi bayramlar dileyelim. Çünkü bayramdan sonraya kadar bir daha ders yapmayacağız. Veri yapıları kapsamında ve algoritmalar kapsamında. Bu nedenle tekrar mutlu, sağlıklı günler ve iyi bayramlar dileyerek oturumu kapatabiliriz. Fatma'nınlar hocam siz host olduğunuz için siz kapatacaksınız herhalde.
+
+298
+00:51:47,632 --> 00:51:49,872
+Tamam hocam kapatıyorum o halde. Görüşmek üzere.
+
+299
+00:51:49,872 --> 00:51:51,012
+Teşekkürler, iyi bayramlar.
+
+300
+00:51:51,492 --> 00:51:52,132
+İyi bayramlar.
+
+301
+00:51:52,132 --> 00:51:52,912
+İyi günler hocam.

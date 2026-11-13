@@ -1,0 +1,4343 @@
+1
+00:04:00,243 --> 00:04:01,283
+Günaydın arkadaşlar.
+
+2
+00:04:03,804 --> 00:04:06,183
+12. haftamızdayız.
+
+3
+00:04:07,544 --> 00:04:09,324
+Günaydın.
+
+4
+00:04:10,544 --> 00:04:14,603
+Katılım azaldı gitgide ya. Herkes artık videolardan izliyor galiba.
+
+5
+00:04:16,384 --> 00:04:23,324
+Şimdi derse geçmeden önce bir iki ufak husus hakkında bilgilendirme, daha doğrusu bilgi vereyim.
+
+6
+00:04:24,584 --> 00:04:27,764
+Farkındaysanız henüz bize notlarınıza henüz giremedik sisteme.
+
+7
+00:04:28,339 --> 00:04:55,139
+Aslında okuduk bitti. Yani bir hafta, on gün önce falan bitmişti. Fakat şu özellikle benzerlik kontrolü konusunda çok ciddi benzerlikler yakaladık. Çok daha derin bir araştırmaya girdik sonrasında. Üç grup bir arada bütün kodları inceliyoruz. Bu nedenle henüz daha ortak grupları ortaya çıkartmaya çalıştığımız için.
+
+8
+00:04:55,540 --> 00:04:58,580
+Maalesef notları sisteme giremedik.
+
+9
+00:04:58,760 --> 00:05:06,140
+Dediğim gibi yani aslında hepsi okundu bitti ama benzerlik kontrolünden geçtikleri için ve ciddi problemler de gördüğümüz için
+
+10
+00:05:06,140 --> 00:05:17,040
+birebir aynılarda var, çok benzerler de var, sadece İngilizce, Türkçe değişken adı falan fonksiyonu da değiştirmek de var gibi gibi gibi üzüldük bu kadar şeyi görünce.
+
+11
+00:05:17,524 --> 00:05:26,584
+Keşke herkes kendi emeğini sergileseydi, ortaklaşa yapmasaydı daha iyi olurdu. Biz de daha çabuk sonucu sizlerle paylaşırdık.
+
+12
+00:05:27,384 --> 00:05:35,423
+Yani hoş değil ama yine de bilgi vermek istedim. Hani niye gecikti bu notlar, hala niye öğrenemedik diye eminim ki dertleniyorsunuzdur.
+
+13
+00:05:35,783 --> 00:05:44,384
+Sebebi bu. Benzerlik kontrolü konusunda üç grup bir arada çalıştığımız için ve bütün şeylere.
+
+14
+00:05:44,851 --> 00:05:55,751
+Çiftlere, benzer çiftlerin hepsine teker teker gerektiğinde satır satır baktığımız için biraz uzun sürdü. Daha da sürecek. Yani bu hafta inşallah biter diye düşünüyoruz tabii ki.
+
+15
+00:05:57,031 --> 00:06:08,811
+İlk şey buydu. O yüzden bilginiz olsun. Keyfi olarak duyurmuyor değilim. Notları bir kontrol bitsin. O zaman ancak duyurabileceğiz.
+
+16
+00:06:09,427 --> 00:06:23,728
+Diğer husus ödev konusu. Ödev konusunda yorum yapmak isteyen var mı? Çünkü sayı iyice düştü. Nüfusun yarısından azı ödevi teslim etti. Öyle söyleyeyim.
+
+17
+00:06:23,747 --> 00:06:24,947
+Direkt yapamadım yani.
+
+18
+00:06:25,687 --> 00:06:26,228
+Yapamadın mı?
+
+19
+00:06:26,567 --> 00:06:36,108
+Uğraştım uğraştım. Aslında mantık olarak değil ama gerçekleşme aşamasında sürekli bir şeyler oluyor. Yani açıyorum, donuyor, düşüyor aslında. Kontrol ediyorum.
+
+20
+00:06:36,660 --> 00:06:39,540
+Olması gerekiyor. Sorunu da bulamadım. O şekilde yolladım.
+
+21
+00:06:40,379 --> 00:06:42,160
+İyi. Biz uğraşacağız.
+
+22
+00:06:44,403 --> 00:06:46,244
+Şimdi onlar düşünsün diyorsun yani.
+
+23
+00:06:46,264 --> 00:06:51,764
+Bir de o kadar değişik hatalar aldım ki bir anda ekrana Java yazıları falan basınlarla başladı. Arkadaşıma attım.
+
+24
+00:06:52,224 --> 00:06:52,803
+Java ne ya?
+
+25
+00:06:53,463 --> 00:06:59,183
+Java bilmiyorum hocam anlamadım. Java'nın peti yazıyordu ekranda. O kadar ilginç şeyler.
+
+26
+00:06:59,183 --> 00:07:04,444
+Sen o zaman bayağı memuride bir leak falan yaşamışsın galiba. Neyse.
+
+27
+00:07:04,947 --> 00:07:09,687
+[öğrenci]'nin bizimle paylaştığı hataları ben hayatımda görmedim. Baya uğraştı da.
+
+28
+00:07:10,527 --> 00:07:11,307
+Allah Allah.
+
+29
+00:07:11,927 --> 00:07:12,607
+Olmalı.
+
+30
+00:07:13,048 --> 00:07:22,927
+Olsun. Bunlar hep sizi geliştiren değerlendirme kriterleri. İlla her şey tam doğru olacak, full yapacaksınız diye bir şey söz konusu değil tabii.
+
+31
+00:07:23,467 --> 00:07:30,687
+Ama çaba önemli. Gerçekten değerli olan, size bir şeyler katan aslında burada çabanız oluyor.
+
+32
+00:07:31,156 --> 00:07:40,515
+Problem de bu arada gerçek dünya problemidir onu söyleyeyim. Gerçekten şey kullanıyor bunu. Araba motorları bu şekilde rankinglerde kullanıyor grafı.
+
+33
+00:07:40,884 --> 00:07:49,084
+Bu şekilde kelimeleri ve kelimeler arasındaki ilişkileri, bağlantıları resmen aynı size tanınadığımız graf şeklinde aslında tutuyorlar.
+
+34
+00:07:49,584 --> 00:07:52,004
+Tabi bu graf inanılmaz boyutlarda bir graf.
+
+35
+00:07:52,524 --> 00:07:55,984
+Ve ağırlıklandırdık ya kenarları da mesela işte.
+
+36
+00:07:56,484 --> 00:08:02,984
+Hakikaten de şeyleri de, sorguları da o şekilde benzerlikleri renk ederek size sırayla öneriyor aslında.
+
+37
+00:08:03,423 --> 00:08:15,583
+Tamamen mantık bu. Gördüğünüz gibi hani çok böyle soyut ya da teorik ne yapacağız biz nerede kullanacağız bu stack'dır, queue'dır, ıvırdır, kıvırdır bir şeyler veri yapıları işte heap, heap görüyoruz.
+
+38
+00:08:15,583 --> 00:08:30,523
+Aslında bunların hepsi gerçek hayatta farkında olmadan kullandığınız bütün uygulamaların içindeki algoritmalarda koşuyor. Bu nedenle hani gerçek hayattan da mümkün olduğunca örnekler sizlerle paylaşmaya gayret ediyoruz. Ödev de bu şekildeydi aslında.
+
+39
+00:08:31,764 --> 00:08:38,663
+Evet, peki. O zaman biz dersimize yavaş yavaş geçebiliriz.
+
+40
+00:08:39,347 --> 00:08:47,008
+Şimdi geçen hafta zaten biliyorsunuz graflara başladık, grafları tanıdık, üzerine ödevimizi de yaptık.
+
+41
+00:08:48,207 --> 00:09:01,607
+Ve graflarda bir problem olarak işte bütün noktaları birbirine acaba bir ağaç şeklinde nasıl bağlayabilirim ve bunu minimum maliyetle nasıl başarabilirim problemini çözmenin önce bir düz mantık jenerik yona baktık.
+
+42
+00:09:07,347 --> 00:09:25,887
+Nasıl genişleyerek ya da derinlemesine giderek yani ya farklı farklı ufak ağaçlardan bir orman yaratıp onları birleştire birleştire kuruz kalıla çözmek ya da sürekli tek bir ağaç ama sürekli bir hafifleten kenar bularak devam eden prim algoritması ya da prim yöntemi nedir?
+
+43
+00:09:25,887 --> 00:09:33,387
+Nasıl yaklaşımlardır? Bunlarla minimum spanning tree'leri ya da en küçük yayılımlı ağaçları çözdük.
+
+44
+00:09:33,508 --> 00:09:35,347
+Tabii bunun çok daha fazla yöntem farklardır.
+
+45
+00:09:35,347 --> 00:09:54,847
+Algoritmaları da var ama çok daha fazla hani algoritmanın bakın şu algoritma var bu algoritma var yerine farklı çözüm yaklaşımlarını aslında göstermek için Kruzkal ve Prim'i seçerek sizinle paylaştık. Yoksa eminim ki bakmışsınızdır, araştırmışsınızdır ve bir iki tane daha algoritma da görmüşsünüzdür.
+
+46
+00:09:55,327 --> 00:10:00,000
+Bu arada da bir şeyden bahsetmiştik hatırlarsanız. Şimdi biz bu graf...
+
+47
+00:10:00,000 --> 00:10:14,620
+Graflarda gezeceğiz bir şekilde. Düğümler arasında gezme ya da arama yani bu graf üzerinde bir yol kurgulama, bir gezinti kurgulama problemimiz var. Düğümlere erişim problemimiz var. Bunu nasıl çözeriz diye sormuştuk.
+
+48
+00:10:14,620 --> 00:10:28,000
+Ve BFS, DFS şeklinde iki farklı gezinti ya da iki farklı arama mekanizmasından bahsetmiştik. Birinde normal bir kuyruk mekanizması kullanıyorduk hatırlarsanız. Diğerinde de bir önce...
+
+49
+00:10:28,000 --> 00:10:45,680
+Kuyruk ile derinlemesine aramayla, recursive olarak çağırarak gidebildiğimiz yere kadar gidip bir pet ağacı, bir erişim ağacı oluşturmaya gayret ediyorduk.
+
+50
+00:10:45,844 --> 00:10:51,964
+Şimdi bunların üzerinden bir daha şöyle hızlıca bir geçmek ve hatta biraz daha onları geliştirmek istiyorum.
+
+51
+00:10:52,124 --> 00:10:58,644
+Çünkü mesela DFS'te göreceğiz hani bazen gezemediğimiz noktalar falan kalabilir, notlar kalabilir.
+
+52
+00:10:59,204 --> 00:11:05,444
+Onları acaba nasıl keşfedebiliriz onlara bakacağız ya da hani bir fikir yürütüyoruz o konuda.
+
+53
+00:11:05,444 --> 00:11:13,004
+Şimdi önce yine Brad first search'ten yani önce genişlemesini aramadan şöyle bir hızlıca hatırlamak için bakalım algoritmasına.
+
+54
+00:11:13,875 --> 00:11:24,875
+Ne yapmıştık? Önce bir yerden başlıyorduk hatırlarsanız. Bir start nodundan başlayarak. Ondan sonra kalan bütün nodları...
+
+55
+00:11:25,460 --> 00:11:31,640
+Erişilemez hale getiriyorduk ya da bunların hepsinin uzaklıklarına sonsuz atıyorduk ve start'a da sıfır atıyorduk.
+
+56
+00:11:31,640 --> 00:11:38,000
+Yani ben buradan başlıyorum, burasının erişim noktası ya da uzaklığı sıfırdır deyip bir de kuyruk yaratıyorduk.
+
+57
+00:11:38,240 --> 00:11:42,920
+Start'ı kuyruğa atıp ondan sonra da deküve de komşularını geze geze devam ediyorduk.
+
+58
+00:11:43,600 --> 00:11:47,780
+Kuyruk boş olmadığı sürece kuyruktaki ilk elemanı çekiyoruz.
+
+59
+00:11:48,563 --> 00:11:59,923
+Onun bütün komşuları için eğer sıfırdan farklıysa yani daha önceden gezilmemiş olan bütün komşuları için distance değerini kendi distance'ı artı bir yapıyorduk.
+
+60
+00:12:00,003 --> 00:12:04,884
+Yani ben starttan başlayarak bir hopta gidebildiklerim ilk komşularımdır.
+
+61
+00:12:05,323 --> 00:12:14,524
+Onların komşularına iki hopta giderim, onların komşularına üç hopta giderim şeklinde bir ağırlıklandırma, bir distance mekanizması kurguluyorduk.
+
+62
+00:12:15,200 --> 00:12:26,460
+Önce ilk komşularım bitsin, sonra onların komşuları, sonra onların komşuları, sonra üçüncü derece akrabalar falan çalışsın ya da işlensin dediğimiz için burada bir FIFO kuyruk.
+
+63
+00:12:26,720 --> 00:12:36,740
+Yani first in first out mekanizması kullanarak kalanları da yani gezdiğimiz o komşuları da sırasıyla kuyruğa atıp işlenmelerini sağlıyorduk.
+
+64
+00:12:38,336 --> 00:13:06,336
+Bir adım geliştirmek istiyorum. Neden? Şöyle ki ben herhangi bir teanında bu gezintiyi kurgularken yani grafın üzerinde gezerken düğümlerin durumlarını da takip etmek isteyebilirim. Ne demek bu? Yani ben acaba grafta bu düğümü şimdiye kadar hiç gezdim mi gezmedim mi? Bunu takip etmek isteyebilirim bazı uygulamalarda. Bu benim işime yarayabilir. Nasıl yapacağım ben bunu? Hani şimdi burada anlaşılması da kolay olsun diye bunu yapacağım.
+
+65
+00:13:06,336 --> 00:13:33,316
+Bunları renklerle kodlayalım dedim. Ne demek bu? Renkli BFS algoritması olarak bunu isimlendirmeyi uygun buldum. Şöyle ki ben komşuluk listesi ya da komşuluk matrisi şeklinde gösterdiğim grafta henüz gezmediğim, görmediğim, değmediğim hani distansı sonsuz olanlar da diyebilirsiniz. Noktaları ya da düğümleri beyaz olarak işaretleyeyim. Bunları hiç ellememişiz.
+
+66
+00:13:33,748 --> 00:13:46,732
+Bir şekilde komşuluk yüzünden kuyruğa girmiş yani buna erişilmiş ise gri olsun ve bütün komşuları gezilmiş yani o düğüm ile...
+
+67
+00:13:46,899 --> 00:14:01,100
+yapabileceklerimizin tamamını yapmışız. Artık o düğümün işi bitmiş. Buna artık daha fazla bakmayacağım. Bu düğümle ilgilenmeyeceğim. Bu düğümle uğraşmayacağım şeklinde takip etmek istediklerimi de siyah boyamak istiyorum.
+
+68
+00:14:01,779 --> 00:14:10,320
+Tamam. Üç tane durumum var değil mi? Zaten başka da bir şey olamaz. Bir, hiç gezmemişimdir. İki, bir şekilde komşuluk ilişkisiyle gezmeye başlamışımdır.
+
+69
+00:14:10,320 --> 00:14:14,899
+Üç, bütün komşularını da işlediğim için onunla bütün işimi bitirmişimdir.
+
+70
+00:14:14,899 --> 00:14:20,500
+Beyaz, gri ve siyah şeklinde 3 ayrı renk koduyla bunları işaretleyelim.
+
+71
+00:14:20,500 --> 00:14:29,539
+Tabi bu hani 012 falan diye yaparsınız da özellikle takibi analizini yaparken kolay olsun diye böyle renk kodlamasını tercih ettim.
+
+72
+00:14:30,240 --> 00:14:33,519
+Dediğim gibi siyahın komşuları neler olabilir?
+
+73
+00:14:33,840 --> 00:14:36,139
+Siyahın komşuları siyah olabilir ya da gri olabilir.
+
+74
+00:14:42,511 --> 00:14:44,911
+Ona komşu olan başka bir gri olabilir.
+
+75
+00:14:45,651 --> 00:14:47,231
+Grilerin komşuları ne olabilir?
+
+76
+00:14:47,391 --> 00:14:50,491
+Ya gridir ya beyazdır şeklinde bir çıkarım yapabiliriz.
+
+77
+00:14:50,551 --> 00:14:53,211
+Peki, algoritmayı nasıl geliştirmemiz lazım?
+
+78
+00:14:53,351 --> 00:14:55,871
+Şöyle geri gelecek olursam, BFS algoritması buydu.
+
+79
+00:14:56,951 --> 00:14:58,411
+PISODO kodu daha doğrusu.
+
+80
+00:14:58,551 --> 00:15:03,531
+Hani oturup akış diagramını da çizebilirdik ama bunun yazması biraz daha kolay geldi.
+
+81
+00:15:04,275 --> 00:15:12,395
+Ama bugün ilerleyen saatlerde yine akış diagramlarını, taradığım akış diagramlarını sizinle paylaşacağım konularda.
+
+82
+00:15:13,415 --> 00:15:20,235
+Peki, renkli hale nasıl getirebiliriz? Yine bir start point ile başlayacağız.
+
+83
+00:15:20,895 --> 00:15:29,515
+Öncelikle ben burada bütün düğümleri, yani S dışındaki, başlangıç düğümü dışındaki bütün düğümlerin hepsini beyaza boyarım.
+
+84
+00:15:30,163 --> 00:15:33,663
+Bütün hepsinin distance'ını zaten sonsuz yapmıştım hatırlarsanız.
+
+85
+00:15:34,624 --> 00:15:41,083
+Bütün hepsinin takip açısından, bakın bunu hani BFS algoritmasına vermemiştim ama ben bu düğme nereden geldim?
+
+86
+00:15:41,783 --> 00:15:45,124
+Takibini, parent'ını da nil yani null yaptım.
+
+87
+00:15:46,131 --> 00:15:49,231
+Buraya null da yazabilirdik. Niye niyle yazdım hatırlamıyorum.
+
+88
+00:15:49,932 --> 00:15:53,672
+Peki, ilk adımda ne yapıyoruz? Start ile başlıyoruz.
+
+89
+00:15:54,272 --> 00:15:57,351
+Şimdi start'ı white yapmadık. Neden? Direkt gri ile başlıyorum.
+
+90
+00:15:57,432 --> 00:15:59,912
+Çünkü ben artık onu elledim zaten. Elleyerek başlayacağım.
+
+91
+00:16:00,432 --> 00:16:06,032
+Ve distance'ını bir önceki düz BFS algoritmasında olduğu gibi sıfır yaptım.
+
+92
+00:16:06,731 --> 00:16:09,831
+Parent'ını null yaptım. Neden? Çünkü ben oradan başlıyorum.
+
+93
+00:16:09,831 --> 00:16:12,072
+O zaten kendisi root olacak.
+
+94
+00:16:13,648 --> 00:16:17,927
+Ağacı oluştururken, erişim ağacını oluştururken bu nedenle parent'ı null.
+
+95
+00:16:18,888 --> 00:16:27,288
+Q oluşturduk. İlk olarak boş. Ondan sonra da start düğümünü oluşturduğumuz Q kuyruğuna enkü ettik.
+
+96
+00:16:27,288 --> 00:16:33,048
+Yani bunu kuyruğa bastık. Sonrasında kuyruk boş olmadığı sürece
+
+97
+00:16:33,779 --> 00:16:58,860
+Burada gördüğünüz gibi boş küme notasyonu kullandım. Bunun yerine biliyorsunuz şeyde koyabilirdik. Hani pseudo kod olduğu için şöyle boş küme işareti de koyabilirdik. Ama bu şekilde ifade ettim. Yine klavyeyle yazarken daha kolay olduğu için. Sonrasında kuyruktan bir elemanı çekiyoruz. Bu çektiğimiz düğme U diyoruz. Tamam.
+
+98
+00:16:59,475 --> 00:17:07,276
+Şimdi U'nun bütün komşularına bakacağız. Hangi komşularına bakacağız? Daha önceden gezmediğimiz komşularına bakacağız.
+
+99
+00:17:07,916 --> 00:17:14,755
+Gezme, gezmemeyi nasıl ayırt ediyorum şu anda? Renklerle ayırt ediyorum. Eğer rengi beyaz ise gezerim.
+
+100
+00:17:15,215 --> 00:17:18,976
+Beyaz değil ise bakın hiçbir şey yapmıyorum. Bir sonraki komşuya geçiyorum.
+
+101
+00:17:19,700 --> 00:17:32,099
+Bir sonraki, bir sonraki. Sadece beyazları gez, grilere zaten bakmıştın. Onları bir daha gezmene gerek yok kontrolüyle biraz daha iyileştirilmiş bir Red First Search yapabilirsiniz.
+
+102
+00:17:34,579 --> 00:18:02,199
+Peki, diyelim ki daha önceden gezilmemiş bir beyaz düğüm var. Ne yapacağım? Beyaz düğümü yakaladığımda, beyaz komşuyu yakaladığımda hemen onu griye boyayacağım. Artık ben seni elledim, seni gördüm, seninle temas kurdum anlamında. Distance'ını kendi distance'ım artı bir yapacağım. Burada hiçbir fark yok. Bir ilave, yine dediğim gibi nereden geldik takibi için. Parent'ını U yapacağım. Ben U'nun komşusuydu mu?
+
+103
+00:18:02,579 --> 00:18:06,939
+Ben U'nun komşusu olduğum için gezildim. Bu nedenle parent'ımı U yaptım.
+
+104
+00:18:07,059 --> 00:18:12,980
+Sonrasında da bu gezdiğim griye boyadığım düğümü kuyruğa ekledim.
+
+105
+00:18:13,379 --> 00:18:21,239
+Enkü ettim ve buradaki bir V düğümüyle alakalı, bir vertexle alakalı işim bitti.
+
+106
+00:18:21,899 --> 00:18:25,919
+Sonra diğer komşuya geçtim. Diğer komşuya, diğer komşuya. Bütün beyaz komşuları gezdim.
+
+107
+00:18:26,516 --> 00:18:48,776
+Evet, şimdi bütün komşularımı gezdiysem benim artık buradaki U ile işim bitmiştir değil mi? Bunun gezilebilecek bütün komşularını griye boyadım. Artık beyaz komşusu kalmadı. Ne yapacağım? Benim seninle işim bitti. Ben seni tamamen bütün komşularında gezdim kardeşim diye işaretleyeceğim. Bu işaret de rengini siyah yapmakla oluyor.
+
+108
+00:18:49,236 --> 00:18:59,396
+En sonunda yani for bittikten sonra bütün komşuları gezdiysek buradaki rengi gri diye onu siyaha çeviririz.
+
+109
+00:18:59,756 --> 00:19:03,155
+Sonrasında ne yapacağız? Yine kuyruktan bir eleman çekeceğiz.
+
+110
+00:19:03,796 --> 00:19:07,336
+Onun komşularına bakacağız, onun komşularına bakacağız diye diye böyle.
+
+111
+00:19:07,696 --> 00:19:17,196
+Yine önce birinci dalga, birinci yakınlıktaki komşular, ondan sonra ikinci yakınlıktaki komşular, sonra üçüncü yakınlıktaki komşular diye böyle.
+
+112
+00:19:17,236 --> 00:19:24,496
+tekrar tekrar genişleterek yolumuza devam edeceğiz. Şimdi yine bunu bir örnek üzerinde inceleyelim.
+
+113
+00:19:26,696 --> 00:19:33,856
+Start, önceden yaptığımız örneğin bir tanesi aslında ama şimdi bunu renk kodlamasıyla beraber göstermek istiyorum.
+
+114
+00:19:34,036 --> 00:19:37,936
+Start'tan başladık, start'ı griye boyadık. Kalan her şey beyaz.
+
+115
+00:19:40,147 --> 00:20:06,387
+ve hepsinin distance'ı sonsuz. Burada parent'ları göstermedim ama mesela hani R'nin parent'ı yanına yazabiliriz şurada gezerken isterseniz. Şöyle elime kalemimi alayım. Şunu da ince kalem yapalım. Tamam. Şimdi start'tan başladık. Gri. Start'tan sonra ne yapacağız? Bunun komşuları. Nereye gidebilirim? W'ye gidebilirim.
+
+116
+00:20:06,804 --> 00:20:26,443
+Şu bağlantıyla ve R'ye gidebilirim şu bağlantıyla. Demek ki benim komşularım bunlar. Ne yapacağım? Bunları griye boyayacağım. Gördüğünüz gibi beyazdı, şimdi gri oldu. Bu da beyazdı, gri oldu. Önce W'yu gezmişiz. Tamam mı? Kuyrukta ilk olarak birinci eleman olarak W'yu koydum.
+
+117
+00:20:27,059 --> 00:20:50,539
+1 arttırdım. Sonsuzdu. 0 artı 1 yaparak buraya 1 yazdım. Şimdi W'nun parent'ı yanına yazabiliriz. Şöyle S yazalım. Ben buraya S'ten geldim diye bunu takip edebiliyorum. Sonra R. R'yi de 1 yaptım. Griye boyadım. 1 yaptım. Yani 0 artı 1 yaptım. Ve R'ye nereden geldim? S'ten geldim diye parent'ını şuraya yazdım.
+
+118
+00:20:54,771 --> 00:21:15,191
+Şimdi ne yapacağız? S'nin bütün komşularını gezdik mi? Hani for each, şöyle geri geleyim. Şuradaki for each'i tamamladık mı? İki tane komşusu vardı, ikisi seçimini de yaptık. Şimdi ne yapacağız? Bunun rengini siyah yapacağız. Yapalım. İşte burada sıfır, yani sıfır distansdaki S, start düğümü, siyah oldu.
+
+119
+00:21:15,731 --> 00:21:32,731
+Şu anda mesela baktığımda neyi görüyorum? Ben buradaki grafımda bir tane düğümle düğümün bütün komşularını gezmişim. İki tane düğümü keşfetmişim komşuluk ilişkisiyle. Geriye kalan beş tane düğüm hala beyaz. Yani ben bunları henüz daha ellememişim. Böyle bir şeyi takip etmek isteyebilirim.
+
+120
+00:21:41,268 --> 00:22:02,768
+Tamam. Şimdi ne yapacağız? Kuyruktan bir eleman çekeceğiz. Neyi çekeceğiz? W'yu çekeceğiz. W burada. W'nun komşuları. Sadece beyazlara bakıyorum. O yüzden S'e bir daha gitmiyorum. S çünkü siyah. Başka ne var? T var. Şurada gördüğümüz. Bir de X var beyaz. O zaman T'ye gideceğim. Gri yapacağım. 1 artı 1 yapıp 2 yazacağım. İşte şurada.
+
+121
+00:22:03,188 --> 00:22:28,448
+Ve kuyruğa ekleyeceğim. Tamam. Şuraya T'yi kuyruğa ekledim. W'yu çektim tabii ki. Başka X'de gidebiliyorum dedim. Beyazdı. İkisi de gri yaptım. 1 artı 1 de distance'ını yazdım. Tamam. Şimdi o zaman ben buraya da gelip ben T'ye nereden geldim? W'dan geldim. Hatta şu şeylere de yine S'yi yazalım.
+
+122
+00:22:28,832 --> 00:22:32,392
+Başka, w'ye de s'den gelmiştik.
+
+123
+00:22:32,392 --> 00:22:37,532
+T'ye w'dan geldik, x'e de w'dan geldik diye parent'larını da ekledim.
+
+124
+00:22:38,324 --> 00:22:47,084
+griye boyadım. W'nun gezilebilecek iki tane komşusu vardı. Bütün komşularını griye boyadım gezmediklerimi.
+
+125
+00:22:47,704 --> 00:22:51,644
+Ve şu anda bununla da işim bittiği için kendisini de siyaha boyadım. Tamamdır.
+
+126
+00:22:51,984 --> 00:22:56,384
+Şimdi ne yapacağım? Kuyruktan bir eleman daha çekeceğim. Çekeceğim eleman ne? En baştaki R.
+
+127
+00:22:56,904 --> 00:23:03,284
+Şimdi R'yi çektim. Bu griydi zaten. Önceden gezdiğim için kuyruğa girmiş olması için zaten gri olması gerekir.
+
+128
+00:23:06,324 --> 00:23:16,664
+Şurada bir tane beyaz komşusu var. 1 artı 1'den 2 yapıp griye boyadım. 2 yaptım ve bunun parent'ını da R olarak değiştirdim.
+
+129
+00:23:17,224 --> 00:23:25,424
+Şimdi ben burada artık neyi takip edebiliyorum? Mesela V'ye erişmek istediğimde V'nin parent'ını R, R'nin parent'ını S.
+
+130
+00:23:25,704 --> 00:23:32,464
+Yani ben S, R ve V şeklinde gidebildiğimi takip edebilir hale geldim BFS ile.
+
+131
+00:23:33,011 --> 00:23:44,491
+Bu da bitti. R ile ilgili işim bittiği için R'yi de siyaha boyadım. Kuyrukta ne var? T, X ve V. Şurada gördüğümüz V de burada kuyruğa gelmişti hatırlarsınız. Distansları da bunlar.
+
+132
+00:23:45,272 --> 00:23:52,471
+Peki, kuyruktan elemanı çektim. Kimi çekeceğim? T'yi çekeceğim. T'nin beyaz komşuları kimler? Sadece U var değil mi?
+
+133
+00:23:52,980 --> 00:24:16,599
+Buna ve buna bir daha bakmaya gerek kalmadı işte sadece beyaz kontrolü yaptığım için. U'yu geldim, aldım. U sonsuzdu. 2 artı birden 3 oldu. Griye boyadım. Tek kompüsüyle bir de kuyruğa ekledim. Şuraya U'yu gördüğünüz gibi. T ile de işim bittiği için siyaha boyadım. Şu anda mesela 4 tane düğümle tamamen işim bitti.
+
+134
+00:24:17,107 --> 00:24:27,627
+Üç tane düğümü keşfettim komşuluk ilişkileriyle. Y düğümüne hala hiç dokunmadım. Onu henüz hiç keşfedemedim. Onun rengi hala beyaz olarak burada duruyor.
+
+135
+00:24:28,948 --> 00:24:47,368
+Kuyruktan X'i çekiyorum şimdi. X'in gezilmedik komşusuna bakalım. Burada siyahları var, grisi var. Sadece bir tane beyaz var, Y. 1 arttırdım, 3 oldu. Griye boyadım, kuyruğa ekledim şurada. Tamam mı? X'in de bütün işlemleri bittiği için siyaha boyadım.
+
+136
+00:24:47,796 --> 00:25:03,735
+Artık işimiz kolay. Neden? Çünkü artık hiç aslında şu anda görüyorsunuz beyaz bir düğümümüz kalmadı. Bu ne demektir beyaz düğümün kalmaması? Artık hiçbir zaman şuradaki for each'in içindeki if çalışmayacak. Yani biraz daha hızlanacağız diyebiliriz.
+
+137
+00:25:04,135 --> 00:25:11,495
+V'yi çektim. V'nin gezilmedik beyaz komşusu var mı? Yok. Dediğim gibi direkt olarak çıktım siyaha boyadım.
+
+138
+00:25:11,892 --> 00:25:15,971
+2, şuradaki V düğümü siyah olarak boyandı.
+
+139
+00:25:16,312 --> 00:25:21,632
+Kuyruktan sıradaki U'yu çektim. U'nun gezilmedik komşusu yok. Siyaha boyadım.
+
+140
+00:25:22,099 --> 00:25:40,859
+Şuradaki gibi. Kuyrukta Y kaldı. Y'yi çektim. Y'nin gezilmedik komşusu yok. Onu da siyaha boyadım. Nihayetinde ne oldu? Bütün düğümlerin hepsini siyaha boyamış. Yani hepsini keşfetmiş, gezmiş oldum. Parent'larını da takip ettiğim için nereden geldiğimi bir yerden sonra yazmayı bıraktım ama şurada kesmişim.
+
+141
+00:25:50,099 --> 00:26:00,719
+ye diye gitmiştik değil mi? Şu yol üzerinden gitmiştik. Bu şekilde ye'ye de erişebildiğimizi, hani petini takip edebilir halde olduk.
+
+142
+00:26:01,119 --> 00:26:12,459
+Geçen hafta hatırlarsanız hani pet to, edge to gibi şeyler yapmıştık DFS'te. İşte BFS'te de mesela bunu bu şekilde sadece bir parent tutarak rahatlıkla gerçekleştirebilirsiniz.
+
+143
+00:26:12,459 --> 00:26:15,579
+Evet, şimdi.
+
+144
+00:26:16,307 --> 00:26:31,587
+Tabi burada yönsüz bir graf üzerinde de yaptığımız için hepsine kolaylıkla bütün bağlı bir şekilde hepsi birbiriyle komşu ilişkisi olduğundan dolayı şey yaptık bütün hepsini gezebildik ama özellikle yönlü graf olduğunda bazılarını gezemez halde kalabilirdik.
+
+145
+00:26:31,587 --> 00:26:43,087
+İşte bu durumlarda mesela beyaz kontrolüyle hani beyaz olanları gez diye ben bütün grafın yine keşfedilebilir olmasını sağlayabilirim.
+
+146
+00:26:44,307 --> 00:26:47,268
+Graflarda bazen keşfedemediklerimiz kalır demiştik ya.
+
+147
+00:26:47,548 --> 00:26:50,647
+Bu şekilde onun da önüne geçebilirim.
+
+148
+00:26:50,647 --> 00:26:52,044
+Peki şimdi...
+
+149
+00:26:57,268 --> 00:26:59,408
+Bir de DFS'e bakalım.
+
+150
+00:27:00,408 --> 00:27:01,468
+Tabii ne yapacağız aslında?
+
+151
+00:27:01,668 --> 00:27:04,228
+Burada DFS'i de renklendireceğiz, boyayacağız.
+
+152
+00:27:04,848 --> 00:27:07,288
+Tabii renklendirmek deyince de insan renk bekliyor.
+
+153
+00:27:07,368 --> 00:27:09,708
+Ben gidip hepsini gri ve siyah beyaz yapıyorum.
+
+154
+00:27:10,788 --> 00:27:12,288
+Neyse, şeye uygun oldu.
+
+155
+00:27:12,348 --> 00:27:14,368
+Beşiktaş'ın şampiyonluğuna uygun olmuş oldu.
+
+156
+00:27:14,868 --> 00:27:17,128
+Renk seçimleri diyelim.
+
+157
+00:27:18,248 --> 00:27:20,528
+Başka bir takım olsaydı onun rengiyle boyardık.
+
+158
+00:27:21,168 --> 00:27:23,028
+Peki, şimdi DFS'i hatırlayalım.
+
+159
+00:27:23,539 --> 00:27:50,000
+Burada da düğümleri rekürsif olarak ziyaret ediyorduk hatırlarsınız. Gidebildiğimiz kadar gidiyorduk. Yani bir de düğümü al, start düğümünü oradan onun ilk komşusuna git, onun ilk komşusuna git, onun ilk komşusuna git, gidebildiğin kadar git, gidemediğin yerde geri dön, ikinci komşusuna git, onun gidebildiğin kadar komşularını gez şeklinde ağacı da derinlemesine ilk önce gidebildiğin yere kadar git aramasını yapmaya çalışmıştık.
+
+160
+00:27:50,000 --> 00:27:51,539
+Nasıl çalışıyordu düğümler?
+
+161
+00:27:51,539 --> 00:27:59,660
+Rekürsif olarak ziyaret ediyorduk. Alıp işaretliyoruz. Ondan sonra da bütün işaretsiz komşularını sırayla yine Rekürsif olarak ziyaret ediyorduk.
+
+162
+00:28:00,399 --> 00:28:03,559
+Bugün Rekürsif'in de biraz daha üzerinde duracağız.
+
+163
+00:28:04,980 --> 00:28:11,240
+Aslında biliyorsunuz ama basit örnekler de olsa analizi konusunda da bir hatırlatma yapacağım.
+
+164
+00:28:12,403 --> 00:28:30,403
+Depth first search de aslında yine direkt olarak recursive çağrılarla yani öz yinelemeli bir şekilde çalışan bir arama yöntemi. Nasıl yapıyorduk? Önce countları tutmuştuk. Bu countları hiç kullanmamıştık hatırlarsanız. Ama şimdi mesela...
+
+165
+00:28:30,708 --> 00:28:43,008
+Bunları da işin içine katıp DFS ile özellikle düğümlerin nasıl bir sırayla gezildiğini ya da nasıl bir kaç adımda gezildiğini takip edebilir halde kalacağız.
+
+166
+00:28:43,008 --> 00:28:48,875
+Ne yapıyorduk? Eğer gezmediysek orayı...
+
+167
+00:28:48,884 --> 00:29:07,884
+Pardon şey yapıyordum. Bütün kenarlarını gezmedik diye işaretliyorduk. Ondan sonra da starttan başlayarak DFS gezintisini başlatıyorduk. DFS gezintisi nasıl yapılıyordu? Ben bu düğümü gördüm diye marktını true yapıyordum. Sonra count'u bir arttırıyordum. Dediğim gibi bunu daha hiç kullanmadık. Sonrasında da...
+
+168
+00:29:08,208 --> 00:29:17,208
+Bütün gezdiğimin, bütün komşuları için, gezilmemiş, işaretlenmemiş bütün komşuları için tekrar sırayla DFS çağrılarını gerçekleştiriyordu.
+
+169
+00:29:17,308 --> 00:29:20,488
+Her seferinde tekrar içine gire gire devam ediyordu.
+
+170
+00:29:21,148 --> 00:29:24,208
+Şimdi bunu nasıl renklendireceğiz?
+
+171
+00:29:24,588 --> 00:29:32,988
+Yani herhangi bir T anındaki durumunu, nasıl bütün düğümlerin ne kadarının gezildiğini, ne kadarının gezilmediğini nasıl takip edeceğiz?
+
+172
+00:29:32,988 --> 00:29:33,828
+Buna bakalım.
+
+173
+00:29:38,228 --> 00:29:47,567
+Şöyle bir eklenti yapacağız. Renk eklentisi yine. Yine bütün düğümler için hepsinin rengini ilk olarak beyaz yapıyoruz.
+
+174
+00:29:48,468 --> 00:29:56,348
+Şimdi burada özellikle düğümleri ne zaman keşfettim ve ne zaman onlarla işim bitti?
+
+175
+00:29:56,348 --> 00:29:58,807
+Hani bir derinlemesine gidip geri geliyoruz ya.
+
+176
+00:30:00,000 --> 00:30:08,160
+Çağrı ağacında acaba nasıl bir gezinti kurguluyorum? Bunu da takip etmek istediğim için bir zaman değişkeni tutmak istiyorum.
+
+177
+00:30:08,320 --> 00:30:17,259
+Yani bir görme zamanı, bir tamamen işleyip bitirme zamanı, geri dönme zamanı, recursiften çıkma zamanı diye bunu takip etmek istiyorum.
+
+178
+00:30:17,259 --> 00:30:21,940
+O yüzden de bir tane zaman değişkenine ihtiyacım var. Time sıfırladım. Bu bir hani şey.
+
+179
+00:30:22,355 --> 00:30:29,655
+Universal Counter gibi düşünebilirsiniz. Tık, tık, tık. Her bir operasyonumda, her bir DFS'imde bir arttıracağım.
+
+180
+00:30:30,316 --> 00:30:35,875
+Ve bu sayede, hani şey gibi, Clock, Tick gibi işaret koyabileceğim.
+
+181
+00:30:36,796 --> 00:30:40,036
+Ben bu düğümü şu anda gördüm ya da şu hamlede gördüm.
+
+182
+00:30:40,556 --> 00:30:45,496
+Ve şu hamlede bu düğümün bütün işlemlerini tamamladım diye takip edebilir hale geleceğim.
+
+183
+00:30:45,811 --> 00:30:56,951
+İlk önce ne yapacağız? Yine şey için, kenarlar için. Bakın buradaki ilave şu. Normal DFS'te direkt olarak birinciden başlayıp.
+
+184
+00:30:57,491 --> 00:31:15,471
+DFS şeyini yap, gezintisini yap diyorduk. Burada gezemediğimiz komşular kalabilir demiştik. Peki ben grafta gezilmedik komşu kalmasın istiyorsam ne yapmalıyım? O zaman beyaz olan ve şu anda hani komşuluk yüzünden gezemediklerimi de bir şekilde gezebilmeliyim.
+
+185
+00:31:15,471 --> 00:31:24,631
+Nasıl sağlayacağız onu? Hemen şuraya şöyle şey alalım, renk alalım. Bir döngü koyacağım.
+
+186
+00:31:25,076 --> 00:31:44,016
+Eğer beyaz ise gez diyeceğim. Ne yapmış oldum ben şimdi burada? Bir şekilde starttan başladım. Bir U düğümünden başladım. Dediğim gibi onun gezebildiğim bütün komşularını gezdim. Erişebildiklerimi gezdim ama grafta hala erişemediğim nodlar var. Onları da keşfetmek istiyorum.
+
+187
+00:31:44,016 --> 00:31:53,016
+İşte grafta hala erişemediklerimin renkleriyle takip edebilirim. Beyaz olanların hepsini DFS vizit yap diyebilirim. Yani aslında birden fazla keşfet.
+
+188
+00:31:53,076 --> 00:32:08,236
+bir kere rekürsif başlat gibi bir anlam çıkıyor buradan. Şimdi örnek üzerinde zaten göreceksiniz. Peki nasıl yapacağız biz bu DFS viziti? Artık DFS demeyeyim de DFS vizitliyim diye biraz farklı olsun dedim. Şunu temizleyelim.
+
+189
+00:32:10,336 --> 00:32:17,936
+İlk olarak U düğümüne giriyoruz ya U düğümünün rengini gri yaptım. Ne demek bu?
+
+190
+00:32:18,483 --> 00:32:21,743
+U'yu keşfettim. Artık beyaz değil bu, gri oldu dedim.
+
+191
+00:32:23,124 --> 00:32:29,044
+DFS visit yaptığım için zaman tikimi bir arttırdım. Time eşittir, time artı bir yaptım.
+
+192
+00:32:30,124 --> 00:32:41,304
+Ve bunun uzaklığına da direkt olarak zamanı atadım. Ne yapmış oldum? Ben bunu şu tikte keşfettim diye atama yapmış oldum.
+
+193
+00:32:46,195 --> 00:32:50,915
+Yani şuradaki bütün komşu listesinin için teker teker bakacağım.
+
+194
+00:32:51,355 --> 00:32:55,935
+Yine aynı şekilde daha az kontrol yapabilmek için sadece beyazlara bakacağım.
+
+195
+00:32:56,575 --> 00:33:02,055
+Eğer beyaz bir komşusu var ise o zaman hoppa ona git diyorum.
+
+196
+00:33:02,415 --> 00:33:04,515
+Tekrar recursive çağrıyı gerçekleştirdim.
+
+197
+00:33:04,995 --> 00:33:09,635
+Şimdi bütün gezebildiğim beyaz komşuların hepsini gezdim bitirdim.
+
+198
+00:33:10,215 --> 00:33:13,315
+Buradaki U düğümüne seçtiğim U düğümüne geri geldim.
+
+199
+00:33:13,715 --> 00:33:20,996
+Ne yapacağım? Ben bunun keşfedebildiğim bütün komşularını keşfettiğim için bununla ilgili işim bitmiştir.
+
+200
+00:33:21,596 --> 00:33:23,415
+Rengini artık siyah yapabilirim.
+
+201
+00:33:24,375 --> 00:33:28,855
+Şimdi rengini siyah yaptım. Ne demek bu? Benim bu düğümle ilgili işim tamamen bitti demek.
+
+202
+00:33:29,455 --> 00:33:38,536
+Yine zamanı bir arttırırım ve şurada F diye tuttuğum diziye bunun finish zamanını işaretlerim.
+
+203
+00:33:38,536 --> 00:33:40,596
+Ne yapmış oldum ben?
+
+204
+00:33:41,076 --> 00:33:50,196
+Şurada keşfettim, şurada işim bitti şeklinde ben bu düğümleri takip edebilirim.
+
+205
+00:33:50,196 --> 00:34:00,376
+Bu bana neyi getirir? Ne kadar derinlemesine gidiyorum aslında. Ne kadar rekürsif çağrı yapıyorum bu düğüm üzerinde. Bunu da göstermiş ya da takipimi sağlamış olur.
+
+206
+00:34:01,036 --> 00:34:08,296
+Hemen bakalım örneğimize. Tabi bu hani erişilemez düğümler olsun diye özellikle yönlü bir graf.
+
+207
+00:34:08,480 --> 00:34:34,020
+U'dan başlayalım yine. Tamam şu sol üst köşedeki U'dan. Ne yapacağız? İlk adımda benim bunu renklendirmem lazım. Beyazdı. Hepsi beyazdı. Gri yaptım. Counter'ımı bir yaptım ve buraya yazdım. Özellikle şöyle bir bölü diye bıraktım ki hani ilk defa burada gördüm. Bu adımda gördüm. Şu adımda da işim bitti yapacağım. Peki U'nun komşuları kimler?
+
+208
+00:34:34,431 --> 00:34:59,311
+V bir de X. Diyeceksiniz X ve V diye de gezebilirdik. Evet. Ama örnek bu şekilde. Hadi önce V'yi görmüş. Daha böyle kısa ok diye herhalde. Şimdi DFS burayı vizit etti. Tamam mı? Ben buraya nereden gelmiştim? U'dan gelmiştim. Parentını yine tutabilirsiniz tabii ki. V'nin parentı U. İlk şeyi ve U'nun ilk komşusu.
+
+209
+00:34:59,744 --> 00:35:22,364
+Şimdi DFS'e tekrar girdim. Bunu gri yaptım ve time counter'ımı bir arttırdım. Artık iki. Bakın ne demiş oluyorum ben? V düğümünü ikinci adımda keşfettim demiş oluyorum. V'den sonra V'nin komşuları kimler bakalım? V'nin bir tane komşusu var sadece Y. Direkt olarak DFS viziti oraya çekeceğim. Oraya rekürsif olarak dağlanacağım.
+
+210
+00:35:24,436 --> 00:35:26,456
+Bir yere de aslında şöyle yazabiliriz.
+
+211
+00:35:26,815 --> 00:35:29,056
+Şimdi ben nereden başladım? U'dan başladım.
+
+212
+00:35:29,516 --> 00:35:31,355
+U'nun içinde V'ye gittim.
+
+213
+00:35:31,815 --> 00:35:34,956
+U'nun içinde gittiğim V'nin içinde Y'ye gittim.
+
+214
+00:35:35,076 --> 00:35:37,256
+Tamam mı? Şu şekilde dallana dallana gidiyorum.
+
+215
+00:35:37,396 --> 00:35:39,155
+Y'yi gri yaptım.
+
+216
+00:35:40,436 --> 00:36:07,315
+Time'ı 1 arttırdım, 3 olarak yazdım. Şimdi Y'den nereye gideceğim? Y'nin ilk komşusuna bakacağım. Y'nin de yine şans eseri tek komşusu var, X. Yani aslında ben rekürsif çağrıda stack olarak düşünün bu yazdığımı. Hani stack'in kökü burası, şeyi burası, sonu burası. U, V, Y ve X şeklinde devam ediyorum. X'i de griye boyadım. Time'ı 1 arttırdım, X'i görme zamanımı 4 olarak işaretledim.
+
+217
+00:36:08,436 --> 00:36:35,695
+4'ün beyaz komşusu var mı? Yok. O zaman ne yapacağım? Şöyle geri geleyim. Ama o zaman da bu gidecek. Neyse gitsin bir daha yazarız. Şöyle geri geleyim. D'nin beyaz komşusu kalmadığı için pardon x'in beyaz komşusu kalmadığı için buradan çıktım ve direkt olarak siyaha boyayacağım. Zamanı bir arttırıp finish zamanını buraya yazacağım. Peki. 4.
+
+218
+00:36:36,175 --> 00:36:59,295
+Bir arttırdım, siyaha boyadım. Bir arttırdım, beş oldu. Beşte de bunda işim bitti diyorum. Ne yapmış oluyorum ben buradan ya da ne anlamış oluyorum? Ben bunun hiçbir komşusu yok. Burada yeni bir rekürsif çağrı başlatmadım. Direkt olarak bunun içinde hiçbir yere gidemeden geri geldim. Bunu da buradan çıkartabiliyorum. Şimdi x'de işim bitti.
+
+219
+00:37:00,019 --> 00:37:06,460
+Bu recursive şeyde artık şu stackte, call stackte x'in bittiğine göre ne yapacağım?
+
+220
+00:37:07,579 --> 00:37:10,519
+Oooo bu hepsini siliyormuş ya. Bir daha yazalım.
+
+221
+00:37:11,760 --> 00:37:18,639
+U demiştik, UV demiştik, UVY demiştik, bir de UVY ve X demiştik.
+
+222
+00:37:18,720 --> 00:37:24,539
+Şimdi buradan çıktık. Yani burayı komple sileyim. Stack şu anda UVY şeklinde kaldı. Y'deyim.
+
+223
+00:37:24,800 --> 00:37:47,579
+Y'nin gezilmedik beyaz kompüsü kaldı mı? Zaten bir tane kompüsü vardı hatırlarsınız. Kalmadı. O zaman time'ı bir arttırdım. Finish time olarak siyaha boyayıp yazdım. Y ne oldu? 6 zamanında keşfi bitti. Demek ki ben burada bir 3-6 farkını gördüğünüzde bunun aşağı doğru dallanarak geri geldiğini anlayabiliyorum.
+
+224
+00:37:47,579 --> 00:37:51,720
+Şimdi Y de bitti. Buradan geri geliyorum rekürsif çağrımda.
+
+225
+00:37:52,244 --> 00:38:01,684
+Nereye geleceğim? V'ye geri geleceğim. V'ye geri geldim. V'nin gezilmedik beyaz komşusu var mıydı? Başka zaten tek komşusu vardı onda yine. Bu da yok.
+
+226
+00:38:02,291 --> 00:38:30,291
+O zaman V ile de işim bitti. Bunu siyaha boyadım. Time'ı bir arttırıp bitiş zamanı diye buraya yazdım. 2 bölü 7 olarak karşımda. Şimdi bunu tekrar sildim. Stackte sadece U var. Yani ilk geldiğim noktaya geri geldim. Bunun gezilmedik beyaz komşusu kalmadı. Bunu da siyaha boyadım. Ve 8 olarak şurada işaretledim. Tamam mı? Şimdi ne oldu? Ben U'dan başlamıştım hatırlarsanız. DFS gezintisi bitti. Eski türlü yaptım.
+
+227
+00:38:30,291 --> 00:38:56,351
+Yapsaydık bitmişti. Ama ben hala burada keşfetmediğim iki tane düğümü görebiliyorum. Şimdi ne yapacağız? Şöyle yine U'yu da şuradan silelim. Geri gelelim. Ben buradaki DFS viziti bitirdim U düğümü için. Şimdi buradaydım hatırlarsınız. Buraya geri geldim.
+
+228
+00:38:57,331 --> 00:39:22,911
+Her bir beyaz için devam edeceğim. Demek ki ben burada durmuyorum. Eski DFS'de durup kalmıştım hatırlarsanız. Fakat burada artık renk kodlarıyla da takip ettiğim için burada durmuyorum. Nereden devam edeceğim? Nerede kalmıştık? Pardon bir siyahı boyadığımız yer şurasıydı. Burada şimdi bir sonraki beyaz düğümden devam edeceğim. Nerede o bir sonraki beyaz düğüm? İşte burada mesela W.
+
+229
+00:39:24,148 --> 00:39:47,268
+W'yu şimdi aldım. Şöyle geri geleyim. Şuradaki artık parametrem W. W'nun rengini griye boyadım. Zamanı bir arttırdım. W'yu şu saatte gördüm diye işaretledim. Nasıl işaretledim? İşte böyle. W buradaydı. Beyazdı. O gri oldu. 9. Şimdi bunun şeylerine bakacağız. Zaten bu siyah olduğu için pas geçiyorum.
+
+230
+00:39:47,760 --> 00:40:09,820
+Diğer komşusu Z düğümü. Z düğümüne direkt olarak gidiyorum. Çünkü bu bunun ilk komşusu. Şimdi Z'ye geldim. Z'nin komşularına bakıyorum. Önce işaretliyorum tabii. Griye boyadım. Time'ı bir arttırdım. On olarak işaretledim. Z'nin komşusu kim? Kendisi. Ama zaten kendisi gri.
+
+231
+00:40:10,420 --> 00:40:38,420
+Beyaz değil. O yüzden bunu geçiyorum. Ne demek bu? Bunun hepsini for'u geçtim. Siyaha boyamam lazım. Zamanı bir arttırıp burada işim bitti demem lazım. 10, bir arttırdım. Siyaha boyadım ve finish time'ını 11 olarak yazdım. Sonrasında nereden gelmiştim ben? Z'ye, W'dan gelmiştim. W'ye geldim ve W'yu siyaha boyayıp zamanı bir arttırdım ve 12 olarak iş.
+
+232
+00:40:38,420 --> 00:40:38,920
+Şaharetin.
+
+233
+00:40:39,248 --> 00:40:55,148
+Tamam, işte bu şekilde ben hiçbir beyaz düğüm kalmayacak şekilde bütün grafımı gezip işaretleyebildim. İşaretler ne işe yaradı? Dediğim gibi ben bunları hangi sırayla keşfettim ve hangi zamanda işim bununla bitti?
+
+234
+00:40:55,148 --> 00:41:06,408
+Aradaki fark ne kadar açıksa o kadar fazla rekürsif olarak dallandım. Bunun o kadar fazla alt çocuğu var, alt komşusuna doğru gitti çocuk demeyelim de.
+
+235
+00:41:07,248 --> 00:41:21,248
+Oralara doğru dallandı. Farkını takip edebilirim. Ne kadar yakınsa da burada hiçbir şey yapmadım. Geri geldim. Hani bunun hiçbir çocuğu yok ya da buradan gidebildiğim bir komşusu yok şeklinde çıkarımlarımı da yapabilirim.
+
+236
+00:41:23,088 --> 00:41:24,568
+Tamam. Okey.
+
+237
+00:41:25,940 --> 00:41:36,320
+Buradaki şeye tekrar bir bakalım. Geçen haftaki örneğimize, labirent örneğim vardı ya benim, hani şuradan girip, sıfırdan girip dörtten çıkmaya çalışıyorduk hatırlarsanız.
+
+238
+00:41:36,840 --> 00:41:45,460
+Komşuluk listesi gösterimiyle bunu, işte sıfırın komşuları kimlerdir, ikidir, birdir, beştir diye böyle gösterdiğimizi hatırlayalım.
+
+239
+00:41:45,820 --> 00:41:51,619
+Şimdi burada işletelim bakalım DFS algoritmamızı. Yani hani yönsüz bir grafta işletelim.
+
+240
+00:41:54,579 --> 00:41:57,859
+Ona nasıl yapıyoruz buna bakalım.
+
+241
+00:41:58,639 --> 00:42:00,919
+DFS 0, 0'dan başlamıştık hatırlarsanız.
+
+242
+00:42:01,419 --> 00:42:03,519
+Ne yapacağım? 0'a girdim.
+
+243
+00:42:04,019 --> 00:42:10,119
+0'ın rengini griye, beyazdı, gri yaptım.
+
+244
+00:42:10,239 --> 00:42:12,319
+Tabii ben bunu şey yapmışım.
+
+245
+00:42:12,719 --> 00:42:14,159
+Önce beyazdı, gri yaptım.
+
+246
+00:42:14,579 --> 00:42:15,939
+Şöyle işaret koyalım ona.
+
+247
+00:42:16,959 --> 00:42:17,839
+Tamam, şu anda gri.
+
+248
+00:42:18,771 --> 00:42:39,452
+0'ın ilk komşusuna DFS ile gideceğim. 0'ın ilk komşusu neydi? Şöyle geri geleyim. 2 idi. Demek ki 2'ye gideceğim. DFS 2 yaptım. Şimdi DFS 2 yaptığım için aslında şuraya geldim. Time'ı 1 arttırdım. Discover Time olarak buna 2'yi yazdım.
+
+249
+00:42:40,572 --> 00:42:45,092
+Tabi burada hepsini şimdi tek grafta gösterdiğim için görüyorsunuz ama 2.
+
+250
+00:42:45,556 --> 00:42:48,135
+İkinin de rengi şu anda gri.
+
+251
+00:42:50,235 --> 00:42:51,556
+Hemen onu da...
+
+252
+00:42:52,735 --> 00:42:53,635
+Niye işaretlenmiyor?
+
+253
+00:42:55,076 --> 00:42:55,655
+Allah Allah.
+
+254
+00:42:58,115 --> 00:42:58,755
+Ne oldu buna?
+
+255
+00:42:59,695 --> 00:43:00,315
+Tamam.
+
+256
+00:43:01,155 --> 00:43:02,376
+Bu da gri şu anda.
+
+257
+00:43:05,376 --> 00:43:05,556
+Şunlar...
+
+258
+00:43:10,132 --> 00:43:13,452
+Pardon, yanlış yeri işaretledim. Niye söylemiyorsunuz? 2 idi.
+
+259
+00:43:15,572 --> 00:43:36,132
+Şu. Tamam. Bu gri yaptık. Yine parent'ını, predesörünü işaretleyebilirsiniz. 0 olarak. 0'dan geldi mi ya ben buraya bunu yazdım. Ondan sonra devam ediyorum. Şimdi ne yapacağım? 2'nin komşularına bakacağım. 2'nin ilk komşusu 0'dı. Hatırlayalım. Yine geri geleyim.
+
+260
+00:43:36,628 --> 00:43:53,467
+İkinin ilk komşusu sıfırdı. Ama sıfır şu anda beyaz değil. O yüzden bunu atladım. O zaman ikinci komşusuna geçiyorum. Neymiş? Bir. Şöyle gene bakalım. Bir. Bire bakıyoruz. Bir henüz beyaz.
+
+261
+00:43:53,940 --> 00:44:07,720
+Henüz daha renklenmemiş. O zaman bunu gezeceğim. Direkt olarak buraya DFS yapacağım. Yani üçüncü zamanda bir düğümüne gitmiş oldum. Onu da yine rengini gri haline getirelim.
+
+262
+00:44:07,720 --> 00:44:19,180
+Okey. Şimdi birdeyim. DFS bir. Birin komşuları kimler? Ona hemen bakalım. Birin komşuları sıfır ve iki.
+
+263
+00:44:19,668 --> 00:44:31,728
+Fakat biliyorum ki 0 zaten gezilmişti gri renkte. 2 de gri renkte. O yüzden bunun bütün komşularını gezmişim. Ne yapacağım? Hemen 1 arttırıp finish time'ı yazacağım.
+
+264
+00:44:32,228 --> 00:44:40,668
+3'tü, 1 arttırdım. Finish time'ı 4 oldu. Ve bunun rengini şuradan alıp hemen...
+
+265
+00:44:41,492 --> 00:44:44,972
+Black olarak rengini siyaha boyayacağım.
+
+266
+00:44:45,512 --> 00:44:46,332
+Birleşim bitti.
+
+267
+00:44:46,912 --> 00:44:47,052
+Tamam.
+
+268
+00:44:47,612 --> 00:44:49,232
+Biri nereden gelmiştim hatırlayalım.
+
+269
+00:44:49,332 --> 00:44:50,312
+İkiden gelmiştim.
+
+270
+00:44:50,632 --> 00:44:50,832
+Değil mi?
+
+271
+00:44:51,172 --> 00:44:52,132
+İkiye geri geldim.
+
+272
+00:44:52,212 --> 00:44:54,972
+Şimdi ikinin sıradaki komşusuna gitmeliyim.
+
+273
+00:44:55,152 --> 00:44:55,752
+O da neydi?
+
+274
+00:44:56,552 --> 00:44:56,912
+Üç.
+
+275
+00:44:57,712 --> 00:44:58,392
+Şimdi ne yapacağım?
+
+276
+00:44:58,492 --> 00:44:59,392
+DFS üç.
+
+277
+00:45:00,132 --> 00:45:01,312
+Üçe gidiyorum, bakıyorum.
+
+278
+00:45:02,252 --> 00:45:03,632
+Zaten beyazdı.
+
+279
+00:45:03,632 --> 00:45:05,632
+Şimdi üçü gri yaptım.
+
+280
+00:45:06,416 --> 00:45:18,576
+4 zamanında bitmiştim. 3'ü keşfettim. 1 arttırdığımda zaman ne oldu? 5. 5 zamanında 3 düğümünü, yani 3. düğümü ya da 3 numaralı düğümü keşfetmiş oldum.
+
+281
+00:45:19,096 --> 00:45:27,696
+Şimdi DFS 3'ün içindeyim. Yine geri geldiğimizde DFS 3, komşuları kim? 5, 4 ve 2. O zaman hemen DFS 5 yapacağım.
+
+282
+00:45:28,256 --> 00:45:33,676
+DFS 5'e gidelim. 5 henüz daha beyaz. Onu da gri yapıyorum.
+
+283
+00:45:36,692 --> 00:46:02,852
+Zamanı bir arttırıyorum. 6'da gördüm diye buradaki işareti koyuyorum. Şimdi ne yapacağım? 5'in komşularına bakmam gerekiyor. 5'in komşuları kim? 3 ve 0. 3'e bakıyorum. Renkli olduğu için pas geçtim. 0'a bakıyorum. Renkli olduğu için pas geçtim. O zaman benim 5 düğümüyle ilgili yapacaklarım tamamlandı. Siyaha boyuyorum. Hemen.
+
+284
+00:46:03,344 --> 00:46:06,423
+5 düğümünü aldım.
+
+285
+00:46:07,403 --> 00:46:08,704
+Siyaha boyadım.
+
+286
+00:46:09,224 --> 00:46:11,684
+Finish time'ını da 7 olarak işaretledim.
+
+287
+00:46:11,824 --> 00:46:13,664
+Nereden gelmiştim? Buradan gelmiştim.
+
+288
+00:46:14,943 --> 00:46:16,764
+3'ün diğer komşusu.
+
+289
+00:46:16,864 --> 00:46:18,544
+Şimdi 3'ün komşularına geri geleyim.
+
+290
+00:46:18,744 --> 00:46:19,044
+Şöyle.
+
+291
+00:46:20,544 --> 00:46:22,264
+5 bakıldı, bitti.
+
+292
+00:46:22,864 --> 00:46:25,264
+Diğer komşusu 4, bir diğer komşusu 2.
+
+293
+00:46:26,003 --> 00:46:27,184
+Hemen bakalım.
+
+294
+00:46:27,963 --> 00:46:31,583
+5'in diğer komşusu, 3'ün pardon, diğer komşusu 4'tü.
+
+295
+00:46:31,664 --> 00:46:33,844
+O zaman ne yapacağım? DFS 4 yapacağım.
+
+296
+00:46:34,503 --> 00:46:36,344
+7'de işim bitmişti.
+
+297
+00:46:36,963 --> 00:46:39,804
+DFS 4'e gittiğimde bir arttırdım zamanı.
+
+298
+00:46:39,923 --> 00:46:41,003
+8 yaptım.
+
+299
+00:46:41,543 --> 00:46:43,523
+4 henüz daha gezilmediği için.
+
+300
+00:46:44,003 --> 00:46:45,063
+Bunu 8 yaptım.
+
+301
+00:46:45,184 --> 00:46:46,003
+Gri yaptım.
+
+302
+00:46:46,864 --> 00:46:47,123
+Tamam.
+
+303
+00:46:47,983 --> 00:46:49,204
+Gri yaptım.
+
+304
+00:46:49,204 --> 00:46:51,403
+Şimdi 4'ün komşularına bakalım.
+
+305
+00:46:52,403 --> 00:46:54,583
+4'ün komşuları 3 ve 2 idi.
+
+306
+00:46:57,023 --> 00:47:14,563
+Şöyle geri geleyim. 3 ve 2 idi. 3 gezilmiş. 2 zaten işi bitmiş siyah, beyaz da değil. O yüzden 4'te de işim bitti. Zamanı 1 arttırdım. Finish time'ını 9 olarak yazdım ve bunun da rengini siyaha boyadım.
+
+307
+00:47:18,483 --> 00:47:33,683
+9. adımda ben 3 tane düğümü tamamen bitirdim keşfini. 3 tane düğümü de gezmeye devam ediyorum. Hani burada daha reküsif komşularına bakmaya devam ediyorum diye takip edebilirim herhangi bir an içinde de.
+
+308
+00:47:36,063 --> 00:47:40,443
+Okey. Nereden gelmiştik biz buraya? 4'e.
+
+309
+00:47:40,884 --> 00:48:06,664
+3'ten gelmiştik. 3'ün komşuları bitti. 3'e nereden gelmiştik? 2'den gelmiştik hatırlarsanız. Şimdi 3'ün komşuları neredeydi? 4'ü yaptık en son. 3'ün komşuları 5, 4, 4 bitti. Şimdi 2 var. Ama 2 zaten gezildi. O yüzden 3'ün de bütün komşularıyla işimiz bitti. Ne yapacağız? 9 zamanındaydık. 1 arttırdık. 10 zamanını buraya bitiş zamanı olarak işaretledik.
+
+310
+00:48:07,123 --> 00:48:18,303
+3 ile ilgili de işlerimiz bittiği için onu da aldık, siyaha boyadık. Şu anda 3 de siyaha boyandı. Okey. Tamam.
+
+311
+00:48:18,835 --> 00:48:21,335
+3'e 2'den gelmiştik hatırlarsınız.
+
+312
+00:48:21,755 --> 00:48:24,715
+Şimdi 2'nin komşularına yine kontrol edelim.
+
+313
+00:48:25,295 --> 00:48:28,355
+0, 1, 3 ve 4. 3'den sonra 4 var.
+
+314
+00:48:29,755 --> 00:48:32,355
+Geri geldiğimizde zaten 4 de gezilmişti.
+
+315
+00:48:32,536 --> 00:48:37,395
+Demek ki 2 düğümüyle ilgili yapacaklarımız da bütün komşuları gezildiği için işimiz bitti.
+
+316
+00:48:37,975 --> 00:48:43,576
+Zamanı 1 arttırdım. 11'de keşfim bitti diye 2 düğümüne işaretledim.
+
+317
+00:48:44,615 --> 00:48:46,815
+2 düğümünü de siyahı boyamışım.
+
+318
+00:48:46,835 --> 00:48:50,495
+Bu arada. Tamam. Şimdi ne kaldı?
+
+319
+00:48:53,275 --> 00:49:00,715
+Bir, pardon biri bitirdik. Birden sonra ikiyi bitirdik. Bu arada şunu unutmuşuz.
+
+320
+00:49:01,775 --> 00:49:09,875
+Bunu da hemen boyayalım. Bir şey atladım herhalde. Recursive ağacını yazsaydık daha güzel olacaktı.
+
+321
+00:49:11,875 --> 00:49:12,635
+Tamam.
+
+322
+00:49:14,452 --> 00:49:17,592
+Bu zaten arada bitmişti. Bunu işaretlemeyi unutmuşum. Atlamışım, evet.
+
+323
+00:49:18,032 --> 00:49:21,872
+2 bitti. 2 bittiği için zamanı 1 arttırdım. 11'de işi bitti.
+
+324
+00:49:23,032 --> 00:49:26,932
+2'ye nereden gelmiştim? Hatırlarsanız 0'dan ilk önce gelmiştim.
+
+325
+00:49:27,552 --> 00:49:32,672
+O zaman bunun da bütün komşuları bittiği için 1, 3 ve 4. 0'a geri geliyorum.
+
+326
+00:49:33,812 --> 00:49:37,612
+0'ın da işte 2, 1, 5 komşuları bittiği için bununla da bütün işim bitti.
+
+327
+00:49:38,092 --> 00:49:40,052
+Kendisini de artık siyaha boyuyorum.
+
+328
+00:49:40,052 --> 00:49:41,192
+Ve
+
+329
+00:49:42,739 --> 00:49:48,399
+Hemen boyayalım. Finish zamanını da 11 artı 1'den 12 olarak yazıyorum.
+
+330
+00:49:48,940 --> 00:49:51,679
+Şimdi ne yapmış oldum ben burada? Neyi takip edebilmiş oldum?
+
+331
+00:49:52,099 --> 00:49:55,739
+Sıfırdan başlamıştım ya, mesela toplamda 12 adım yaptım.
+
+332
+00:49:55,899 --> 00:50:00,179
+Yani git gel git gel toplam 12 adımda ancak bu gezintiyi tamamlayabildim.
+
+333
+00:50:00,739 --> 00:50:04,599
+Sonrasında şu 3, 4'e görüyorsunuz. 6, 7'yi, 8, 9'u görüyorsunuz.
+
+334
+00:50:04,599 --> 00:50:09,259
+Bunun mesela zaten bütün komşularının gezildiğini direkt olarak takip edebilirsiniz.
+
+335
+00:50:10,420 --> 00:50:18,680
+Şuradaki 5-10 farkından burada 1-2 ya da 6'ta doğru rekürsif çağrıların yapıldığını takip edebilirsiniz.
+
+336
+00:50:18,860 --> 00:50:23,660
+Burada daha fazla dallanıldığını, burada da en fazla dallanmanın olduğunu takip edebilirsiniz.
+
+337
+00:50:23,660 --> 00:50:38,420
+Bu şekilde ben bir graf üzerinde derinlemesine öncelikle arama yaparak da renk kodlamasıyla birlikte ben bunları gezdim mi, ben bunu önceden gördüm mü ya da henüz daha görmediğim düğümler...
+
+338
+00:50:38,420 --> 00:50:49,720
+nelerdir gibi takibi rahatlıkla yapabiliyorum. Evet, DFS ile ilgili, pardon, DFS ve DFS ile ilgili söyleyeceklerim de bunlar.
+
+339
+00:50:51,380 --> 00:51:09,860
+Hemen sıradaki konuya geçelim. Bu anlatmayacağım aslında ama sadece bir farkındalık yaratmak için ve bugünkü esas konumuza geçmeden önce bir algoritmik yaklaşımı görmek için bahsedeceğim konu açgözlü algoritmalar.
+
+340
+00:51:09,860 --> 00:51:17,739
+Ne demek açgözlü algoritmalar? Greedy algoritmalar nasıl bir çözüm yöntemidir? Basit bir şekilde tanımak için bunlardan bahsedeceğim.
+
+341
+00:51:19,072 --> 00:51:19,632
+Efendim?
+
+342
+00:51:20,172 --> 00:51:30,112
+BFS ve DFS ile ilgili daha önce siz dahil değil demiştiniz, sadece anlatacağım demiştiniz. Biraz üzerinden yavaşça geçip, hızlıca geçip daha doğrusu şey yapmıştınız, ilerlemiştiniz.
+
+343
+00:51:30,112 --> 00:51:31,791
+Evet, şimdi daha da anlattım.
+
+344
+00:51:32,891 --> 00:51:33,951
+Dahilmiş o zaman.
+
+345
+00:51:35,851 --> 00:51:43,192
+Yani şöyle, dahil değil diye konuştuk biz, yani üç grup ortak olarak.
+
+346
+00:51:43,635 --> 00:51:51,996
+Ama yani graf konusunu işleyip de gezinti konusunu işlemeden bence olmaz diye düşünüyorum. O yüzden bilginiz olsun diye bunları aktardım.
+
+347
+00:51:52,496 --> 00:51:58,835
+Özellikle renk kodlamalarını da koydum ki biraz daha böyle hani efektif gezebilin graflar üzerinde diye.
+
+348
+00:51:59,675 --> 00:52:02,175
+Bunlar ileride çok işinize yarar.
+
+349
+00:52:03,096 --> 00:52:03,835
+İşte mesela...
+
+350
+00:52:04,563 --> 00:52:26,203
+Bu dönem anlatmayacağız ama short-spat problemini çözerken direkt olarak bunları kullanacaksınız mesela. İhtiyacınız olacak daha doğrusu. Buradaki pet var ya hani işte o petleri mesela takip edebilmeniz için bu gezintileri kullanacaksınız. Yani graf ile ilgili pek çok algoritma tasarımında bunlardan faydalanacaksınız. O yüzden bilginiz olsun istedim.
+
+351
+00:52:26,643 --> 00:52:35,723
+Bu şekilde. Ama %100 böyle direkt olarak hani böyle bir gezintinin sonucu nedir falan gibi bir şey sorumlu olmayacaksınız diye konuştuk.
+
+352
+00:52:36,324 --> 00:52:40,824
+Ortak olarak gruplar arasında. Sınavları ortak yapıyoruz ya. O yüzden söylüyorum.
+
+353
+00:52:41,364 --> 00:52:42,183
+Anladım. Sağ olun.
+
+354
+00:52:43,243 --> 00:52:44,923
+Evet. Tamam.
+
+355
+00:52:45,715 --> 00:52:51,955
+Ne diyorduk? Ha, grid algoritmalar dedik. Şimdi bu da ilave bilgi olsun diye söylediğim bir şey.
+
+356
+00:52:52,096 --> 00:52:55,675
+Şimdi biz bugün aslında böl ve yönet algoritmalarını tanıyacağız.
+
+357
+00:52:56,195 --> 00:53:00,535
+Ya da böl ve yönet algoritmik çözüm yaklaşımı nedir sorusunu cevaplayacağız.
+
+358
+00:53:00,535 --> 00:53:03,655
+Ama şimdi o soruyu cevaplarken aklımıza şu gelecek.
+
+359
+00:53:03,815 --> 00:53:09,415
+Ya hocam siz böl ve yönet tipi algoritma diyorsunuz da başka ne tipler var acaba diye sorabilirsiniz.
+
+360
+00:53:09,935 --> 00:53:13,715
+İşte başka ne var birkaç örneğini şimdi konuşalım.
+
+361
+00:53:13,715 --> 00:53:36,460
+En bilindik, hatta kullandık bunu. Algoritmik çözüm yöntemlerinden biri grid algoritmalardır. Şimdi bu özellikle bir problem var ve bu problemi çözerken belirli bir sırayla bir dizi işlem yapmanız gerekiyor. Parça parça işlem yapmanız gerekiyor. Tamam mı? Ve o şekilde çözüme doğru ilerleyebiliyorsunuz. İşte bu gibi...
+
+362
+00:53:36,788 --> 00:53:48,927
+Bu gibi problemlerin, adım adım çözülmesi gereken problemlerin bütün örnekleri için aslında optimal çözüm sunan algoritmik çözüm yaklaşımına açgözlü ya da greedy algoritma diyoruz.
+
+363
+00:53:49,887 --> 00:53:53,227
+Şimdi her bir seçimimizin şöyle olması gerekiyor.
+
+364
+00:53:54,087 --> 00:53:55,607
+Yapılabilir olması gerekiyor bir kere.
+
+365
+00:53:55,727 --> 00:53:57,327
+Hani yapılamayacak bir şey zaten olmaz.
+
+366
+00:53:57,791 --> 00:54:08,331
+Yerel olarak en iyi olması, yani lokal optimal olması gerekiyor. Bu ne demektir? O anda içinde bulunduğunuz durumdaki en iyi şey neyse hareket onu yap demektir aslında.
+
+367
+00:54:08,971 --> 00:54:20,231
+Ve geri alınamaz olmalıdır. Yani siz bir şeyi seçtiniz, bir hareket yaptınız tamam mı? Bir aksiyon aldınız. Ondan sonra 3 adım sonra ya pardon deyip geri dönüp bunu değiştiremezsiniz.
+
+368
+00:54:20,231 --> 00:54:25,231
+Tamam mı? Hep lokal optimaller üzerinden devam edin şeklinde bir çözüm oluşturmak.
+
+369
+00:54:25,791 --> 00:54:28,551
+Buna greedy yaklaşım adını veriyoruz.
+
+370
+00:54:29,371 --> 00:54:38,111
+Tabii bütün problemler için de iyi çözüm getirecek diye bir şey söz konusu değil ama genellikle çabuk çözümler üretmemizi sağlar.
+
+371
+00:54:38,231 --> 00:54:40,011
+Hızlı yakın sonuca.
+
+372
+00:54:40,511 --> 00:54:43,891
+Bu nedenle de genellikle greedy algoritmalar tercih sebebidir.
+
+373
+00:54:45,523 --> 00:55:01,483
+Örnek, aklınızda şekil oluşsun diye söylüyorum. Optimal çözüm ne demek mesela? Bozuk para üstü verme problemi. Minimum spending tree'yi gördük, şunu gördük diye yazacaktım, göreceğiz diye yazmışım.
+
+374
+00:55:02,763 --> 00:55:09,295
+Single source shortest padler, yani ben mesela bir start düğümünden başladım. Bu start düğümünden...
+
+375
+00:55:09,295 --> 00:55:21,096
+Mesela seçtiğim ABC düğümlerine en kısa nasıl gidebilirim problemi ya da basit çizelgeleme problemleri ya da yine gördüklerimizden biri Kufman kodlaması.
+
+376
+00:55:21,460 --> 00:55:39,480
+Hufman kodlamasını hatırlarsanız özellikle priority queue'da örnek olarak min priority queue kullanarak veri sıkıştırma örneği olarak yapmıştık. O anda ne yapıyordu? Her adımda en iyi olan şey ne? İşte en sık kullanılan mesela onu seçiyordu. Bu şekilde adım adım ilerliyor.
+
+377
+00:55:39,923 --> 00:55:48,864
+Bunun dışında tam çözmese de optimal çözüme yakın ve hızlı yakınsıyan çözümler getirdiği farklı problemler de var.
+
+378
+00:55:49,604 --> 00:55:53,704
+Mesela adını duymuş olabilirsiniz ya da duyacaksınız.
+
+379
+00:55:54,304 --> 00:55:59,044
+Gezgin satıcı problemi, traveling salesman yine bizim minimum spending tree'mize benziyor.
+
+380
+00:55:59,704 --> 00:56:00,463
+Dert şu.
+
+381
+00:56:01,588 --> 00:56:26,088
+Şimdi yine bir graf var. Bu graf hani şeyler olsun mesela, müşteriler olsun ya da orijinal problemde şehirler olarak geçiyor. Elinizde de işte elinde çantası olan bir satıcınız var. Bu satıcı bütün düğümleri gezmek zorunda. Tamam mı? Toplamda işte ama bir düğümün üzerinden tabii ki doğal olarak geçebilirsiniz. Hani minimum spanning tree gibi değil.
+
+382
+00:56:29,588 --> 00:56:37,728
+Bunun en az yorulmasını sağlayacak şekilde nasıl bir gezinti rotası planlayabiliriz.
+
+383
+00:56:38,128 --> 00:56:44,367
+Bunun mesela problemi çözerken greedy yöntemler hızlı yakınlama sağlayan çözümler getiriyor.
+
+384
+00:56:44,888 --> 00:56:48,388
+Bir diğeri knapsack, sırt çantası problemi.
+
+385
+00:56:49,347 --> 00:56:52,428
+Bunu da yine duymuş olabilirsiniz ya da duyacaksınız.
+
+386
+00:56:52,428 --> 00:56:54,388
+Burada da derdimiz şu.
+
+387
+00:56:54,900 --> 00:57:18,000
+Elimizde bir çanta var. Bir de elimizde kutular var. Kutuların belli boyutları var. Bir de fiyatları var. Bazısı küçük ama pahalı. Hafif ya da ağırlık da olabilir, hacim de olabilir. Bu fark etmez. Belirli boyutları ve belirli bedelleri var.
+
+388
+00:57:19,251 --> 00:57:26,412
+Hacmi belli olan çantaya maksimum fiyat olacak şekilde ne kadar ürün doldurabilirsiniz problemi.
+
+389
+00:57:26,912 --> 00:57:33,072
+Hep en küçüklerden mi seçeceksiniz yoksa en büyüğü koyalım ondan sonra küçükleri mi yerleştirelim yapacaksınız gibi.
+
+390
+00:57:33,552 --> 00:57:39,311
+O anda yapabileceklerinizin en iyisini seçe seçe yine optimale yakın çözüm bir greedy yöntemle yapabilirsiniz.
+
+391
+00:57:39,872 --> 00:57:42,472
+Bu da bir kombinatoryal optimizasyon problemidir.
+
+392
+00:57:42,472 --> 00:57:46,492
+Bunun bilimsel kategorizasyonunu merak ediyorsanız.
+
+393
+00:57:47,251 --> 00:57:53,992
+Bu gibi pek çok kombinatoryal optimizasyon problemini çözerken greedy yöntemler bize kolaylık sağlıyor.
+
+394
+00:57:54,372 --> 00:57:58,892
+Şimdi mesela çok basit olduğu için örneği anlatayım.
+
+395
+00:57:59,392 --> 00:58:01,392
+Bozuk para üstü verme problemi demiştik.
+
+396
+00:58:01,472 --> 00:58:02,932
+Şimdi bizim bozuk paralarımız neler?
+
+397
+00:58:03,432 --> 00:58:11,392
+1 liramız var, 50 kuruşumuz, 25 kuruş, 10 kuruş, 5 kuruş, bir de 1 kuruş varmıştı galiba.
+
+398
+00:58:12,311 --> 00:58:14,831
+Bilmiyorum. Gördünüz mü hiç hayatınızda 1 kuruş?
+
+399
+00:58:16,500 --> 00:58:17,380
+Var mı gören?
+
+400
+00:58:19,460 --> 00:58:23,920
+Bir kuruşun maliyeti iki buçuk kuruş muymuş neymiş galiba? O yüzden basmıyorlar artık.
+
+401
+00:58:24,700 --> 00:58:25,440
+Neyse.
+
+402
+00:58:25,960 --> 00:58:27,920
+Şimdi ben bir alışveriş yaptım.
+
+403
+00:58:28,440 --> 00:58:29,000
+Tamam mı?
+
+404
+00:58:29,240 --> 00:58:30,180
+Ve şey tuttu.
+
+405
+00:58:31,340 --> 00:58:33,280
+52 kuruş tuttu.
+
+406
+00:58:33,980 --> 00:58:35,380
+Ve 1 lira verdim.
+
+407
+00:58:36,139 --> 00:58:37,139
+Ne yapacak bana kas ya?
+
+408
+00:58:37,240 --> 00:58:39,260
+48 kuruş para üstü verecek.
+
+409
+00:58:40,139 --> 00:58:40,920
+Nasıl verirsiniz?
+
+410
+00:58:42,280 --> 00:58:44,160
+Nereden buluyorsun da biriktiriyorsun [öğrenci]?
+
+411
+00:58:45,556 --> 00:58:46,655
+Piyasada var mı ki?
+
+412
+00:58:51,603 --> 00:58:56,023
+Hocam var ya, sen bankadan şey yaparken, ödeme yaparken bana büyük kuruşlar vermişti.
+
+413
+00:58:56,463 --> 00:58:56,923
+Hadi ya.
+
+414
+00:58:57,163 --> 00:58:59,063
+Aynen, ben de şey yapmıştım, şaşırmıştım.
+
+415
+00:59:00,523 --> 00:59:01,563
+İyi, güzel.
+
+416
+00:59:03,103 --> 00:59:05,643
+Bak, göreniniz varmış demek ki, güzelmiş.
+
+417
+00:59:06,083 --> 00:59:08,643
+Şimdi 48 kuruş para üstü vereceksiniz. Nasıl verirsiniz?
+
+418
+00:59:11,603 --> 00:59:12,824
+Vallahi iyi yapıyormuş.
+
+419
+00:59:15,503 --> 00:59:16,023
+Evet.
+
+420
+00:59:16,947 --> 00:59:31,087
+Nasıl yaparız? Şöyle yaparız. Hani bir şeyi düşünün. Eminim ki görmüşsünüzdür. Bankada diyorum. Markette kasiyer, yazar kasanın gözlerinden şık şık toplar paraları.
+
+421
+00:59:31,476 --> 00:59:38,635
+Ya da minibüsçüler bunu çok güzel yapar. Hani bozuk paraların en çok döndüğü yerlerden biri minibüsler ya.
+
+422
+00:59:39,076 --> 00:59:43,315
+İşte mesela 48 kuruş para üstünü vermek için ne yaparsınız? Aslında atılabilecek en iyi adım.
+
+423
+00:59:43,695 --> 00:59:50,396
+Bir adım da mümkün olduğunca en büyük para birimiyle şeyi tamamen kapatabilmek, farkı tamamen kapatabilmek.
+
+424
+00:59:50,755 --> 00:59:59,476
+50 kuruş verebilir miyim? Diyeceksiniz ki hocam 2 kuruş zaten artık esamesi okumadığı için pratikte herkes 50 kuruşu verip geçiyor ama biz burada Amerika gibi...
+
+425
+00:59:59,476 --> 00:59:59,976
+Kırışık
+
+426
+01:00:00,000 --> 01:00:06,719
+Kırk kuruşuna çalıştığımızı düşünelim. [öğrenci]'un babası gibi. Haklı bu arada. Destekliyorum kendisini.
+
+427
+01:00:07,380 --> 01:00:16,780
+Kırk sekiz kuruşu nasıl vereceğiz? Verebileceğimiz bir lira değil, elli kuruş değil. O zaman yirmi beş kuruş vermeliyiz ki bir adımda mümkün olunca en çok şeyi ödemeyi yapmış olalım.
+
+428
+01:00:16,780 --> 01:00:24,500
+Ne kaldı geriye? Yirmi üç kuruş kaldı. Şimdi aslında problemimiz artık ufaldı. Yirmi üç kuruş para üstü verme problemine döndü.
+
+429
+01:00:24,960 --> 01:00:28,000
+Bunu da yirmi beş kuruşla yapamıyorum. Ne yapacağım? On kuruş vereceğim.
+
+430
+01:00:28,000 --> 01:00:45,360
+10 kuruş verdiğimde ne oldu? 13 kuruş kaldı. 13 kuruşu en çabuk nasıl kapatabilirim? Yine bir tane daha 10 kuruş veririm. 3 kuruş kaldı. 3 kuruşu zaten 5 kuruş da veremeyeceğim için 1-1-1 veririm. Böylece 0 kuruş kalana kadar devam ederim.
+
+431
+01:00:45,360 --> 01:00:53,260
+Ne yaptım ben burada strateji olarak? Yani algoritmik çözüm yöntemim nasıl çalıştı? Her bir adımda...
+
+432
+01:00:53,748 --> 01:01:17,167
+Kalan miktarı minimum hale getirecek olan para neyse, değer neyse onu bul ve getir. Yani onu cevap olarak geri döndür. İşte buyurun size greedy yöntem. Ne yaptı? Her adımda en çok ödemeyi yapmaya çalıştı. En büyük parayla. Ve bu sayede 25'ten aldı, 10'dan aldı, 10'dan aldı, 1'den, 1'den, 1'den aldı.
+
+433
+01:01:17,556 --> 01:01:28,796
+Tamam, işte bunu mesela bütün minibüsçülerin ve kasiyerlerin yaptığı şakır şakır para üstü verme algoritması greedy yöntem ile çalışıyor diyebiliriz.
+
+434
+01:01:29,036 --> 01:01:38,556
+Şey de yapabilir tabii, 48 tane bir kuruş veremez mi? Verebilir ama o zaman da 48 tane parayı teker teker tık tık tık tık tık tık uğraşması lazım.
+
+435
+01:01:39,056 --> 01:01:45,155
+Yani minibüsçü onu yapmaz biliyorsunuz şakır şakır en hızlı şekilde para üstünü elden ele uzattırır.
+
+436
+01:01:46,228 --> 01:01:55,628
+Bundan sonra minibüse bindiğinizde bozuk para üstünü aldığınızda vay hocam sen greedy yöntemle paranın üstünü veriyormuşsun falan demeyin.
+
+437
+01:01:55,628 --> 01:02:00,808
+Vallahi hayları yersiniz ona göre. Bu da şey olsun.
+
+438
+01:02:01,556 --> 01:02:07,215
+dersteki teorik bilgilerinizi pratik hayatta kullanırken dikkat edin diyelim.
+
+439
+01:02:07,875 --> 01:02:11,715
+Evet, Hufman kodlamasını tekrar anlatmaya gerek yok.
+
+440
+01:02:11,715 --> 01:02:16,215
+Hatırlarsanız yapmıştık işte bir mean priority queue kullanarak.
+
+441
+01:02:17,076 --> 01:02:23,156
+frekansları dizmiştik ve ondan sonra bunları birleştire birleştire bir ağaç haline getirmiştik.
+
+442
+01:02:23,456 --> 01:02:30,216
+Mesela şurada bir örneği var. Bakalım C, D, B, boşluk ve A karakterleri varmış. 5 tane karakter var.
+
+443
+01:02:30,996 --> 01:02:35,396
+En sık kullanılan karakter demek ki C ve D'ymiş. Bunların frekansları 0-2.
+
+444
+01:02:35,840 --> 01:02:52,660
+Pardon, A'ymış 0.35 özür dilerim. Ama biz bunu ağaçla kodladığımızda A, C ve D ikisi de 2 bitle kodlanmış. Yani 1, 1 A'ya denk geliyor. 0, 0 C'ye, 0, 1 de D'ye denk geliyor.
+
+445
+01:02:53,300 --> 01:03:03,840
+Bunun dışında daha az kullanılan B ve boşluk karakterleri var. Bunların frekansları da 0, 1, 0, 15'miş. Onlar da 1 bit fazla. 1, 0, 0.
+
+446
+01:03:03,840 --> 01:03:20,840
+1.0.1 ile kodlanmış. Burada da her adımda dediğim gibi minimum frekansları seç ve birleştir. Seç ve birleştir şeklinde bir yaklaşım sergiliyoruz. Yine her adımda bunlar hani
+
+447
+01:03:21,364 --> 01:03:28,483
+Sonuç ağacında en altta kalsın diye her adımda minimum frekansları toplayıp bir ara düğüm haline getiriyorduk hatırlarsanız.
+
+448
+01:03:28,923 --> 01:03:32,324
+Bu da yine bir greedy çözüm yöntemi.
+
+449
+01:03:33,204 --> 01:03:38,744
+Evet, saat 11.05 geçiyor bu arada. Bir saattir konuşuyoruz. Bir ara vereyim.
+
+450
+01:03:39,572 --> 01:03:41,372
+Çeyrek Geç'e devam edelim.
+
+451
+01:03:41,952 --> 01:03:44,972
+Rekürsif algoritmaları şöyle bir hızlıca hatırlayacağız.
+
+452
+01:03:45,532 --> 01:03:59,352
+Ve ondan sonra da bugünkü esas konumuza yani böl ve yönet algoritmalarına, algoritma çözüm yöntemine başlayıp yine çeşitli örneklerle nasıl bir çözüm yaklaşımı olduğunu işleyeceğiz.
+
+453
+01:03:59,932 --> 01:04:01,211
+Çeyrek Geç'e görüşürüz.
+
+454
+01:13:54,163 --> 01:14:20,943
+Evet arkadaşlar, aramızı tamamladık. 10 dakika aramızı. Bir soru gelmiş [öğrenci]'den. Proje ödevi verildi mi? Diyor. Henüz daha verilmedi, değil mi? Daha tanımlamadık. Bu hafta 50 olacak. Ya bu hafta içinde, yani cuma günü ya da önümüzdeki hafta başında proje ödevinizi sizlere duyuracağız. Merak etmeyin.
+
+455
+01:14:21,555 --> 01:14:39,655
+O da zaten son ödeviniz olacak değil mi? Başka üçüncü ödevi de yaptınız. Ödev yapa yapa da bir hal oldunuz bu dönem. Bütün derslerde ödevler, projeler havada uçuşuyor büyük bir ihtimalle. İşte uzaktan olunca da böyle bir değişiklik olmak durumunda kaldı.
+
+456
+01:14:39,655 --> 01:14:42,555
+Peki. Şimdi.
+
+457
+01:14:43,412 --> 01:14:49,092
+Rekürsif algoritmalara yani özgünlemeli algoritmalara şöyle bir eğilmek istiyorum tekrar.
+
+458
+01:14:49,092 --> 01:14:51,852
+Basit örnekler üzerinden bir hatırlamak istiyorum.
+
+459
+01:14:52,052 --> 01:14:54,891
+Çünkü bunu niye yapıyoruz?
+
+460
+01:14:55,692 --> 01:14:57,612
+Yapıyoruz ya yapacağız şimdi.
+
+461
+01:14:58,971 --> 01:15:06,452
+Dediğim gibi yine bugün göreceğimiz böl ve yönet tarzı çözüm yönteminde, algoritmik çözüm yaklaşımında.
+
+462
+01:15:08,115 --> 01:15:18,836
+Neredeyse tamamında diyeyim, öz yinelemeli algoritmaları kurgulamak, kullanmak durumunda kalıyoruz. Bunun da sebebi problemi bölmek aslına bakarsınız.
+
+463
+01:15:18,836 --> 01:15:32,136
+İşte hani bölme için biz alt parçalara dallanma için rekürsif mekanizmasını kullanmamızdan dolayı öz yinelemeli ya da işte rekürsif diyeyim artık hep öz yinelemeli çok uzun oluyor.
+
+464
+01:15:34,868 --> 01:16:00,128
+Tasarlamamız sıklıkla gerekiyor. Çözüme de erişirken, yine çözüm uzayını ufak parçalara bölerken rekürsif olarak bu işlemi gerçekleştirmemiz gerekiyor. Bu nedenle her ne kadar hani şimdiye kadar başka derslerinizde de görmüş olsanız dahi tekrardan en azından bir 15-20 dakika üzerinde durmakta fayda var diyorum.
+
+465
+01:16:00,128 --> 01:16:02,868
+Peki şimdi ne demek rekürsif algoritmalar?
+
+466
+01:16:02,868 --> 01:16:16,328
+Problemi çözmek için aynı çözüm yöntemini tekrar tekrar çağırarak yani kendini tekrar çağırarak çözüme doğru ulaşan.
+
+467
+01:16:17,043 --> 01:16:23,523
+algoritmik yaklaşımlara, algoritmik tasarıma, recursive algoritma adını veriyoruz.
+
+468
+01:16:24,224 --> 01:16:31,663
+Bu recursive algoritmaların gerçekleştirilebilmesi için tabii ki bir koşul var. O da şudur.
+
+469
+01:16:32,307 --> 01:16:49,967
+Siz problemi aynı cinsten ama daha küçük bir örneklem ile de ifade edebilmelisiniz. Eğer bunu yapamıyorsanız zaten doğal olarak özgünlemeli çalışamazsınız. Rekürsif bir çağrıyla çözüme ulaşamazsınız diyoruz.
+
+470
+01:16:49,967 --> 01:16:56,347
+Bir de yine rekürsif algoritmalarda bir yerden başladım ve kendimi çağırıyorum.
+
+471
+01:16:56,560 --> 01:17:22,300
+Daha ufak değerlerle çağırıyorum, çağırıyorum ama nereye kadar kendimi çağıracağım? Sonsuza kadar mı kendimi çağıracağım? Benim mutlaka buradaki rekürsiyonu yani tekrarı kesen bir karar mekanizması oluşturmam ve bu hani son gidebildiğim yer kadar gitmem ve nihayetinde buradan elde ettiğim sonuç üzerine
+
+472
+01:17:23,188 --> 01:17:44,868
+Geri dönerek çağrı ağacında ki işte buraya bir çağrı ağacı yine çizeceğiz. Geri döne döne önceki problemi daha ufak problemi çözmüş olacağım ve bir daha büyük probleme çözüm katkısı sağlayacağım. Adım adım bu şekilde ilerleyeceğim ki ben bir çözüm sunabileyim.
+
+473
+01:17:45,427 --> 01:17:59,827
+Peki, nasıl problemler rekürsif olarak çözülebilir? Tekrar edecek olursak, aynı cinsten ama daha küçük bir uzayda tanımlayabildiğiniz problemler var ise bunları rekürsif olarak çözebilirsiniz.
+
+474
+01:18:00,327 --> 01:18:07,467
+Şimdi bunu en güzel örneklerden, en basit ve en temiz örneklerden biri anlamak için faktöriyel hesabını verebiliriz.
+
+475
+01:18:07,467 --> 01:18:13,407
+Ne demektir faktöriyel hesabı? Verilen n faktöriyel biliyorsunuz o birden.
+
+476
+01:18:13,427 --> 01:18:27,047
+O sayıya kadar olan bütün sayıların çarpımıdır. İşte burada örneğini görüyoruz. Şuradan da rengi turuncu yapalım. N factoriali hesaplamak istiyorum. N factorial nedir?
+
+477
+01:18:27,444 --> 01:18:39,703
+n çarpı n-1 çarpı n-2 çarpı n-3 gider. Nereye kadar çarparım? 3 çarpı 2 çarpı 1'e kadar devam ederim.
+
+478
+01:18:40,283 --> 01:18:54,324
+Şimdi hani şey şuraya da hatta yazalım. İşte ne bileyim 5 faktüryel nedir? 5 çarpı 4 çarpı 3 çarpı 2 çarpı 1'dir değil mi? O nedir? Kaç oluyor?
+
+479
+01:18:54,800 --> 01:19:00,500
+5 kere 4, 20, 60, 120 değil mi? Yanlış çarpmadık.
+
+480
+01:19:04,000 --> 01:19:10,100
+120'dir gibi. Şimdi ben bunu normalde ne yapabilirim?
+
+481
+01:19:18,644 --> 01:19:41,724
+Hatta şey yapalım, hani şuraya işte faktöriyel eşittir bir dedik ya da sıfır dedik. Ondan sonra faktöriyel artı çarpı eşit tabii sıfır dersek olmaz. Bir diyelim. Faktöriyel çarpı eşit i. Değil mi? Bu şekilde yazabilirim.
+
+482
+01:19:42,195 --> 01:19:49,175
+Fakat ben aslında görüyorum ki ben burada şunu da yapabilirim.
+
+483
+01:19:49,956 --> 01:19:56,896
+Yani 5! eşittir 5 çarpı 4! değil mi?
+
+484
+01:19:57,376 --> 01:20:06,396
+Çünkü şuradaki n-1! hesaplamışsam eğer tekrardan bunları tekrar tekrar for döngüsünde çarpma ihtiyacı hissetmem.
+
+485
+01:20:09,876 --> 01:20:33,015
+Nedir? İşte 4 faktüriyel nedir? O da 4 çarpı 3 faktüriyeldir. Eğer ben 3 faktüriyeli hesapladıysam, 3 çarpı 2 faktüriyeldir o da. 2 faktüriyeli o zaman hesaplamış olma elimde varsa çok büyük bir kazanç sağlarım. Bu da nedir?
+
+486
+01:20:33,652 --> 01:20:37,971
+Eşittir. 2 çarpı 1 faktöriyeldir.
+
+487
+01:20:38,711 --> 01:20:40,032
+1 faktöriyel nedir?
+
+488
+01:20:41,471 --> 01:20:45,852
+1 faktöriyel zaten kendisine kadar olan sayıların çarpımı olduğuna göre 1'dir.
+
+489
+01:20:46,391 --> 01:20:47,332
+Değil mi? Evet.
+
+490
+01:20:47,891 --> 01:20:51,012
+Şimdi ben şunu görüyorum.
+
+491
+01:20:51,332 --> 01:20:53,372
+Zaten burada da bunu ifade etmeye çalıştım.
+
+492
+01:20:53,612 --> 01:21:00,811
+Ben aslında 1 faktöriyel hesabını n faktöriyeli eşittir n çarpı n-1 faktöriyeli olarak yazabilirim.
+
+493
+01:21:01,140 --> 01:21:18,239
+n-1! i de yine n-1 çarpı n-2! olarak yazabilirim. Böyle problemi kendi cinsinden ama daha ufak bir problem halinde ifade edebilirim. Şurada gördüğümüz gibi 4! daha küçük.
+
+494
+01:21:19,188 --> 01:21:20,407
+5 faktoriyelden.
+
+495
+01:21:20,927 --> 01:21:23,368
+Bunun bunu çözmek için de 3 faktoriyeli ihtiyacım var.
+
+496
+01:21:23,448 --> 01:21:25,608
+Bunu çözmek için 2 faktoriyeli ihtiyacım var.
+
+497
+01:21:25,688 --> 01:21:28,007
+Bunu çözmek için 1 faktoriyeli ihtiyacım var.
+
+498
+01:21:28,667 --> 01:21:29,967
+Bir yerde de durmam lazım.
+
+499
+01:21:30,987 --> 01:21:37,407
+1 faktoriyeli ne olduğunu bir şekilde bana fonksiyonumun söyleyebiliyor olması lazım.
+
+500
+01:21:37,747 --> 01:21:39,728
+Şimdi ben bunu elde ettikten sonrası çok kolay.
+
+501
+01:21:39,948 --> 01:21:41,528
+Hemen buraya geldim, 1'i koydum.
+
+502
+01:21:41,907 --> 01:21:44,708
+1'i koyduğumda ben bunun değerinin 2 olduğunu öğrendim.
+
+503
+01:21:45,235 --> 01:22:03,815
+Buraya geldiğimde 2 koydum. Bunun değerinin 6 olduğunu öğrendim. Buraya geldiğimde 6 koydum. 6 çarpı 4, 24 olduğunu öğrendim. 24'ü geldim, buraya koydum. 24, 5 tane 5 ile çarptım. Yani sadece tek bir çarpma işlemiyle yine ben buradaki faktörünün 120 olduğunu öğrenebildim.
+
+504
+01:22:04,336 --> 01:22:11,095
+Dediğim gibi aynı cinsten problemi daha ufak bir uzayda tanımlayabilirsem eğer ben bunu rekürsif olarak çözebilirim.
+
+505
+01:22:11,604 --> 01:22:23,524
+Tabi, şimdi burada yine bir faktüryelin bize bir şekilde veriliyor olması gerekiyor dedik ama hani tanım uzayını da düzgün tanımlamak gerekiyor.
+
+506
+01:22:23,904 --> 01:22:25,424
+Mesela sıfır faktüryel nedir?
+
+507
+01:22:26,944 --> 01:22:30,344
+Sıfır faktüryel nasıl yazılabilir?
+
+508
+01:22:30,564 --> 01:22:34,784
+İşte sıfır çarpı neydi? Eksi bir faktüryel.
+
+509
+01:22:35,264 --> 01:22:36,264
+Değil mi? Şöyle yapalım.
+
+510
+01:22:37,524 --> 01:22:51,583
+Parantezi alalım, eksi 1'i. Eksi 1'in faktöriyeli. Bu ne? Eksi 1 faktöriyel tanımlı değil. Öyle bir şey tanımlı değil. O zaman kompleks tarafa geçmiş oluyoruz.
+
+511
+01:22:58,579 --> 01:23:03,720
+Faktöryel için kendi kendini çağıran fonksiyonumda bir yerde durmam gerekecek.
+
+512
+01:23:04,140 --> 01:23:08,420
+Bir karar vermem gerekecek. Yani bir durma noktasına karar vermem gerekecek.
+
+513
+01:23:08,940 --> 01:23:13,860
+Nasıl verebilirim bu kararı? Şu şekilde problemi modelleyebilirim.
+
+514
+01:23:14,720 --> 01:23:20,180
+n! eşittir. Aynı burada yazdığımız gibi n çarpı n-1 faktöryel.
+
+515
+01:23:20,180 --> 01:23:24,340
+Ne zamana kadar? n'in birden büyük olduğu durumlarda.
+
+516
+01:23:24,756 --> 01:23:27,916
+Yani ikiye kadar bu şekilde tanımlayabilirim.
+
+517
+01:23:28,716 --> 01:23:34,576
+Geri kalan bütün durumlardaysa bir geriye döndürmem beklenir.
+
+518
+01:23:36,076 --> 01:23:36,435
+Şuradaki.
+
+519
+01:23:36,935 --> 01:23:40,355
+Bu sayede, işte bakın ben bir yerde duruyorum.
+
+520
+01:23:40,688 --> 01:23:56,347
+Yani şurada baktığımızda 5 için 4'e ihtiyacım var. 4 için 3'e, 3 için 2'ye, 2 için 1'e. İşte 1 eşittir 1 diyerek ben burada bir değer elde ettim ve bundan sonra çağrıda geriye doğru kendimi koya koya geri döndürebileceğim.
+
+521
+01:23:56,347 --> 01:24:08,688
+Nasıl bir fonksiyon yazmam lazım? Hemen şuraya kodunu yazalım. Bir tane n değeri, n faktörü yel ya. Fakt diye bir değişik şeyimiz olsun, fonksiyonumuz olsun. Nasıl bir...
+
+522
+01:24:08,688 --> 01:24:24,688
+koda sahip olacak. Şuradaki ifadeyi kodlamam lazım. Eğer n birden küçük eşit ise direkt olarak return n demişiz ki return 1 desek daha güzel olur. Şuraya 1 yazalım.
+
+523
+01:24:27,688 --> 01:24:32,688
+Şöyle siyah kalın.
+
+524
+01:24:32,851 --> 01:24:39,112
+Return 1 yazalım şuraya. Daha da böyle temiz olsun. Böylece negatif sayılarla da başımız derde girmemiş olur.
+
+525
+01:24:39,231 --> 01:24:42,452
+Return 1. Tamam. Oldu.
+
+526
+01:24:43,192 --> 01:24:48,811
+Bu şart doğru değilse o zaman n çarpı n-1'i çalıştıracağım. Bunu nasıl yapacağım?
+
+527
+01:24:49,591 --> 01:24:59,692
+n çarpı faktör yer n-1. İşte bu kadar. Kendimi çağırdım. Ama daha küçük bir uzayla çağırdım. Değil mi?
+
+528
+01:25:00,064 --> 01:25:21,123
+boyutu bir azaltarak çağırdım. Her adımda bir azaltacağım, bir azaltacağım, bir azaltacağım ve bu şekilde döndürmüş olacağım. Tabi burada faktör ya sıfırı sıfır demek istiyorsanız ki faktör ya sıfır da bir olarak tanımlıydı galiba yanlış hatırlamıyorsam ona bakarsınız yani şurada return n ya da return 1 kontrolünü yaparsınız.
+
+529
+01:25:22,484 --> 01:25:28,844
+Peki, ben burada faktöriyel 5 dediğimde aslında nasıl bir çağrı yapmış oluyorum?
+
+530
+01:25:29,424 --> 01:25:41,504
+Şuradan faktöriyel 5'i çağırdığımda ben aslında bunun içinde 5 çarpı faktöriyel 4'ü çağırmışım.
+
+531
+01:25:41,876 --> 01:25:50,536
+Ve bunun içinde de bakın böyle bir rekürsif çağrı ağacını, stack, çağrı steğini aslında burada oluşturuyoruz.
+
+532
+01:25:50,936 --> 01:25:57,156
+Bunun içinde yaptığım işlem de 4 çarpı faktöriyel 3'ü çağırmak.
+
+533
+01:25:58,296 --> 01:26:03,936
+Bunun içinde de 3 çarpı faktöriyel 2'yi çağırdım.
+
+534
+01:26:07,423 --> 01:26:14,183
+Bunun içinde 2 çarpı faktöriyel 1'i çağırdım.
+
+535
+01:26:14,703 --> 01:26:14,884
+Tamam.
+
+536
+01:26:15,463 --> 01:26:18,804
+Şimdi bunun içinde de neyi çağıracağım bakalım.
+
+537
+01:26:19,183 --> 01:26:24,083
+n küçük eşit 1 şartı sağlandığı için daha fazla kendimi çağırmıyorum.
+
+538
+01:26:24,243 --> 01:26:25,663
+Şurada return 1'i görüyorum.
+
+539
+01:26:25,663 --> 01:26:31,943
+Ve artık ben burada şuraya 1 değerini geri döndürmüş oldum.
+
+540
+01:26:32,467 --> 01:26:42,188
+Buraya daha fazla dallanmadığım için de, şuradan return ettiğim için de artık recursive çağrıları kesmiş oluyorum.
+
+541
+01:26:42,648 --> 01:26:47,307
+Bundan sonrası beni çağırana sürekli olarak değerimi aslında geri döndürmekten ibaret.
+
+542
+01:26:47,307 --> 01:26:56,387
+Ne demek bu? İşte 1 demiştik, buradaki 1 sonucunu aldık, buraya söyledik.
+
+543
+01:26:56,948 --> 01:26:59,948
+Yani aslında burada 2x1 değeri oluşmuş oldu.
+
+544
+01:26:59,948 --> 01:27:06,948
+2x1 değerinden gelen 2'yi şuraya, şöyle yapalım, buraya koyduk.
+
+545
+01:27:08,028 --> 01:27:13,688
+Buradan geleni buraya koyduk, buradan geleni buraya koyduk, buradan geleni de buraya söyledik.
+
+546
+01:27:14,228 --> 01:27:19,208
+Bu ne yaptı? Geriye, şuradaki integer sayesinde.
+
+547
+01:27:19,600 --> 01:27:23,260
+n çarpı faktöryel 4'ü geri döndürdü.
+
+548
+01:27:23,579 --> 01:27:27,680
+İşte yani buradaki 120 değerini return edebildik.
+
+549
+01:27:28,779 --> 01:27:35,159
+Bu en basit örnek üzerinden özgülenmeli bir reküs bir çağrının nasıl yapıldığının gösterimi.
+
+550
+01:27:35,520 --> 01:27:37,560
+Şimdi bir adım öteye taşıyalım.
+
+551
+01:27:38,260 --> 01:27:42,840
+Ben illa her seferinde sadece bir kere kendimi çağırmak zorunda değilim.
+
+552
+01:27:43,104 --> 01:27:50,764
+Bir işlemin içinde birden fazla kere de kendimi çağırabilirim. Hatta farklı farklı parametrelerle de kendimi çağırabilirim.
+
+553
+01:27:51,244 --> 01:27:55,984
+Buna da işte yine en güzel örneklerden biri Fibonacci sayı dizisinin hesaplanması.
+
+554
+01:27:56,467 --> 01:28:07,027
+Fibonacci sayı dizisi nasıldı? Fibonacci 1, 1 ile başlıyor. Sonrasında da önceki iki sayıların hep toplamını yapıyorsunuz.
+
+555
+01:28:07,027 --> 01:28:16,327
+1, 1 daha 2. 1, 2 daha 3. 2, 3 daha 5. 3, 5 daha 8. 5, 8 daha 13 diye gidiyor. Yani ben bunu nasıl formülize edebilirim?
+
+556
+01:28:17,107 --> 01:28:22,507
+Kendinde önce gelen iki sayıyı topla diyoruz. Bu ne demek? Fibonacci n eşittir.
+
+557
+01:28:22,832 --> 01:28:44,152
+Fibonacci n-1 artı Fibonacci n-2. İşte ben burada aslında tanımında bile rekürsif olarak kendimi daha ufak sayılarla çağırmam gerektiğini görüyorum. Bunlar da kendi içinde yine aslında rekürsif iki tane iki tane çağrı yapacaklar. Değil mi?
+
+558
+01:28:45,076 --> 01:29:04,496
+Mesela Fibonacci 5 demişiz. Oturalım yazalım şimdi bunu. F5 yazayım direkt tamam mı? Hani kısa olsun. Eşittir. Nedir bu? F4 artı F3 çağrısını oluşturacaktır. Şimdi bunun için bir F4 lazım.
+
+559
+01:29:05,076 --> 01:29:07,855
+Şöyle bir tane içerlikle yazayım.
+
+560
+01:29:08,315 --> 01:29:09,916
+F4 eşittir nedir?
+
+561
+01:29:10,355 --> 01:29:13,496
+F3 artı F2 çağrısıdır.
+
+562
+01:29:13,976 --> 01:29:14,136
+Tamam.
+
+563
+01:29:14,615 --> 01:29:16,676
+Aynı şekilde burada F3'ü de yazacağım.
+
+564
+01:29:17,336 --> 01:29:18,815
+F3 bu ne?
+
+565
+01:29:19,476 --> 01:29:21,576
+F2 artı
+
+566
+01:29:21,576 --> 01:29:24,996
+Şu artıları ufaltalım şöyle.
+
+567
+01:29:27,716 --> 01:29:29,636
+F2 artı F1'dir.
+
+568
+01:29:30,536 --> 01:29:31,315
+Sonra
+
+569
+01:29:32,180 --> 01:29:34,920
+Şunun içinde
+
+570
+01:29:34,920 --> 01:29:38,540
+Buraya geldiğimde de
+
+571
+01:29:38,540 --> 01:29:41,040
+F3 ve F2 ihtiyacım var.
+
+572
+01:29:41,300 --> 01:29:44,500
+F3 ve F2 çağrılarına ihtiyacım var.
+
+573
+01:29:45,060 --> 01:29:46,140
+F3 ne demektir?
+
+574
+01:29:46,280 --> 01:29:48,920
+F2 artı F1 demektir.
+
+575
+01:29:49,680 --> 01:29:51,020
+F2 ne demektir?
+
+576
+01:29:51,020 --> 01:29:51,640
+Bu da
+
+577
+01:29:51,640 --> 01:29:56,520
+Dur bakayım nasıl yapmışız?
+
+578
+01:29:58,520 --> 01:29:59,200
+F1
+
+579
+01:30:00,000 --> 01:30:02,480
+F1 artı F0 demektir.
+
+580
+01:30:03,640 --> 01:30:04,300
+Öyle yazalım.
+
+581
+01:30:05,000 --> 01:30:06,060
+Ama bitti mi?
+
+582
+01:30:06,420 --> 01:30:06,779
+Hayır.
+
+583
+01:30:07,220 --> 01:30:10,400
+F3 içinde de tekrar F2'yi çağırmam gerekecek.
+
+584
+01:30:10,920 --> 01:30:11,659
+F2 neydi?
+
+585
+01:30:11,920 --> 01:30:14,760
+F1 artı F0'dı.
+
+586
+01:30:15,579 --> 01:30:19,380
+F2'yi tekrar şey yapmama gerek yok ama şöyle gösterebilirim.
+
+587
+01:30:19,380 --> 01:30:24,380
+Bunun içinde de F1'i ve F0'ı çağıracağım.
+
+588
+01:30:25,480 --> 01:30:25,800
+Sonra
+
+589
+01:30:27,028 --> 01:30:33,288
+Buradaki F2'nin içinde bir daha F1'i ve F0'ı çağıracağım.
+
+590
+01:30:34,288 --> 01:30:38,188
+Tamam, şimdi F4'ün içindeki F3'ün içindeki F2.
+
+591
+01:30:38,928 --> 01:30:41,528
+Tamam, buradaki ikinci F2, bu da bitti.
+
+592
+01:30:41,708 --> 01:30:42,988
+F4 tarafını bitirdik.
+
+593
+01:30:43,328 --> 01:30:44,508
+Şimdi geldik F3'e.
+
+594
+01:30:45,148 --> 01:30:48,308
+F3'ün içinde de F2'yi çağıracağım.
+
+595
+01:30:48,808 --> 01:30:52,208
+F1 artı F0 şeklinde.
+
+596
+01:30:52,688 --> 01:31:01,607
+Sonrasında da burada da F1'i ve F0'ı çağıracağım.
+
+597
+01:31:01,607 --> 01:31:07,967
+Yani toplamda ben kaç kere çağırmış oldum Fibonacci fonksiyonunu?
+
+598
+01:31:08,507 --> 01:31:16,927
+1, 2, 3, 3, 3,
+
+599
+01:31:17,344 --> 01:31:35,804
+Bunun içindekiler 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17. Yanlış saymadım değil mi? Siz şey yaparsınız kontrolünü gerçekleştirirsiniz. Bu şekilde tekrar tekrar çağıracağım. Yani F5 için F4 artı F3'ü. F4 için F3 artı F2.
+
+600
+01:31:43,699 --> 01:32:06,519
+Bu, bunun içindeki. Bu arada şuradaki F3'ü yazdık mı? Yazdık. Tamam, o da şurasıydı. Tamam. Onları da F3 dedik. Bunun içindeki F2 şöyle okla göstereyim yine. Bu da bu. Tamam. Şu ve şu.
+
+601
+01:32:07,475 --> 01:32:34,775
+Tamam. Ondan sonra burada bir daha bir F1. Ondan sonra burada bir daha bir F2. Onun içinde yine bir F1. Sonra buradaki F3 de şurada. Şuradaki F2 de aslında undo yapayım. Onlar da nerede kaldık? F2.
+
+602
+01:32:35,412 --> 01:32:57,412
+Şurada, bunlar, bunlar, şuradaki F3 şöyle çizelim. Bu, bu, bu, ondan sonra bu da bu. Şeklinde gidiyor. Böyle özellikle kendinizi...
+
+603
+01:32:58,195 --> 01:33:06,455
+Mesela sadece bir kere değil de iki kere çağırmak zorundaysanız gördüğünüz gibi karmaşıklık oldukça yüksek bir şekilde artıyor.
+
+604
+01:33:06,576 --> 01:33:11,535
+Yani lineerden direkt olarak üstele yani hatta iki üzerine geçiyor.
+
+605
+01:33:11,715 --> 01:33:15,135
+Bunun da örneğini ya da analizini şimdi zaten tekrar göstereceğim.
+
+606
+01:33:15,135 --> 01:33:17,135
+Peki ben burada...
+
+607
+01:33:17,876 --> 01:33:37,655
+F5 için çağrı ağacını, rekürsif çağrı ağacını oluşturdum. Genel formülümüz neydi? Fibonacci n eşittir. Fibonacci n-1 artı Fibonacci n-2 idi. Nereye kadar gidiyorduk? İşte Fibonacci 1. Fibonacci 1'e geldiğimizde ne dememiz lazım? Fibonacci 0 artı Fibonacci eksi 1. Tabii öyle bir şey de tanımlı değil.
+
+608
+01:33:42,644 --> 01:34:00,044
+Rekürsif çağrıyı keserek bir sonuç döndürmem gerekiyor beni çağırana. O kısım nedir? İşte ilk iki sayı harici. O zaman büyük eşittir iki için n-1 artı n-2'yi çağırabilirim basit bir şekilde. Ya da küçük eşit bir ise return bir diyebilirim. Şöyle.
+
+609
+01:34:02,044 --> 01:34:04,464
+Tamam. Burası benim.
+
+610
+01:34:05,587 --> 01:34:15,148
+Rekürsiyonu kestiğim nokta. Artık buraya geldiğimde 1 geri geliyor. Yani bu şuradaki F1 artı F0'a kadar inip buradaki 1 ve 1 değerlerini almama eşittir.
+
+611
+01:34:15,887 --> 01:34:28,228
+1 ile 1'i çağırdım, 2 geldi. Ondan sonra 3 için 2 ve 1'i çağırdım ama bu 2 için tekrar 1 ve 1'i çağırıyorum aslında. Yani 1, 1, 1 çağırmış oluyorum.
+
+612
+01:34:30,260 --> 01:34:33,360
+Ağaç yapısıyla bunu takip edebilirsiniz.
+
+613
+01:34:36,360 --> 01:34:37,500
+Temizleyelim.
+
+614
+01:34:42,195 --> 01:34:48,496
+Şimdi şöyle geri gelecek olursam buradaki bigo analizini nasıl yapacağız konusuna.
+
+615
+01:34:49,195 --> 01:34:52,076
+Şimdi burada işler kolay. Neden?
+
+616
+01:34:52,735 --> 01:34:57,036
+Çünkü ben zaten burada sürekli kendimi n-1 ile çağırıyorum.
+
+617
+01:34:57,155 --> 01:34:59,836
+Toplamda n tane işlem yapıyorum değil mi?
+
+618
+01:35:00,735 --> 01:35:02,956
+n çarpı n-1 yapıyorum her seferinde.
+
+619
+01:35:03,376 --> 01:35:05,536
+Nerede duruyorum? 1'e kadar gittiğimde duruyorum.
+
+620
+01:35:05,836 --> 01:35:07,115
+Yani 1'i gördüğümde duruyorum.
+
+621
+01:35:07,423 --> 01:35:14,423
+n tane çarpım işlemi ya da n tane kendimi çağırma işlemi yapıyorum. O yüzden burada o n karmaşıklıkta olduğumu söyleyebilirim.
+
+622
+01:35:15,423 --> 01:35:21,684
+Gel gelelim. Kendimi iki kere çağırmam gerekiyorsa o zaman işler karışıyor. Bunun hesabını nasıl yapacağız?
+
+623
+01:35:22,224 --> 01:35:26,363
+Şu şekilde yapmamız lazım. Şimdi nereye kadar gidiyorduk?
+
+624
+01:35:26,724 --> 01:35:32,503
+n eşittir ilk şey geri geleyim. n küçük eşittir 1 ise return 1 diyorduk.
+
+625
+01:35:32,948 --> 01:35:37,087
+Burada tek bir işlem yapıyoruz. Hangi durumlarda tek bir işlem yapıyoruz?
+
+626
+01:35:37,568 --> 01:35:42,328
+n'in 0 ve 1 olduğu durumlarda tek bir sabit maliyetimiz var.
+
+627
+01:35:42,807 --> 01:35:48,307
+Yani T0'a, zaman kaymaşıklar açısından T0'a sabit bir maliyet koyuyoruz.
+
+628
+01:35:48,887 --> 01:35:53,488
+T1'e de, yani Fibonacci 1'e de yine sabit bir maliyet koyuyoruz.
+
+629
+01:35:54,747 --> 01:35:57,608
+n büyüktür bir değerleri için ne yapıyorum ben?
+
+630
+01:35:57,608 --> 01:36:00,288
+Bir kere 1'i çağırıyorum.
+
+631
+01:36:01,108 --> 01:36:03,167
+Buradan sabit bir maliyet geliyor.
+
+632
+01:36:04,568 --> 01:36:05,648
+Yani sıfırı çağırıyorum.
+
+633
+01:36:05,728 --> 01:36:06,488
+Biri çağırıyorum.
+
+634
+01:36:06,587 --> 01:36:07,467
+T0 ve T1.
+
+635
+01:36:07,587 --> 01:36:09,328
+Buradan da ikinci sabit maliyet geliyor.
+
+636
+01:36:10,087 --> 01:36:11,728
+Tn-1'i çağırıyorum.
+
+637
+01:36:12,807 --> 01:36:14,568
+Bir de Tn-2'yi çağırıyorum.
+
+638
+01:36:15,528 --> 01:36:23,228
+O zaman ben bunu kısaca Tn-1, şuradaki C'leri birleştirip, Tn-1 artı Tn-2 artı C şeklinde ifade edebilirim.
+
+639
+01:36:23,520 --> 01:36:29,399
+Buradaki ilişkiyi çözmem lazım. Çünkü bu da yine tn-1'den oluşuyor biliyorsunuz.
+
+640
+01:36:29,800 --> 01:36:34,420
+Burada bir yakınsama yapmamız gerekiyor en basit çözüm yaklaşımında.
+
+641
+01:36:35,000 --> 01:36:41,340
+Şunu söyleyebiliriz. Biliyoruz ki tn-1 büyük eşittir tn-2.
+
+642
+01:36:42,500 --> 01:36:46,140
+Neden? Hep bir adım fazla işlem yapmak zorundayım en azından.
+
+643
+01:36:49,460 --> 01:37:03,739
+Ben üstten sınırlayarak, yani olabileceği en kötü durum bunun yaklaşık eşittir, yani tn-2'nin yaklaşık eşittir, tn-1 olduğu durumdur diyebilirim.
+
+644
+01:37:04,060 --> 01:37:14,159
+Dediğim gibi hani üstten sınırlayarak olabilecek en kötü durum bunun eşitliğidir deyip buradaki bağıntıyı, yineleme denklemini çözmeye çalışırım.
+
+645
+01:37:14,515 --> 01:37:16,575
+Hemen yerine koyarak yapacağız bunu.
+
+646
+01:37:17,135 --> 01:37:20,275
+Yazıyorum tn-1 artı tn-2 artı c.
+
+647
+01:37:20,535 --> 01:37:23,295
+Karmaşıklığımı bu şekilde ifade ettim zaman karmaşıklığımı.
+
+648
+01:37:23,815 --> 01:37:31,455
+Ya da n-2 yaklaşık eşittir n-1 diyerekten 2tn-1 artı c olarak yazabilirim bunu.
+
+649
+01:37:32,175 --> 01:37:32,355
+Tamam.
+
+650
+01:37:32,655 --> 01:37:34,195
+Aslında burada çözdüm durumu.
+
+651
+01:37:35,075 --> 01:37:36,555
+Şöyle ifade edeyim.
+
+652
+01:37:37,268 --> 01:37:45,747
+Şimdi ben artık burada bir sonraki dallanma, bir sonraki içine girme, tekrar kendini çağırma ifadesini nasıl yazabilirim?
+
+653
+01:37:46,228 --> 01:37:53,867
+Şurada gördüğüm 2t n-1 ifadesi var ya, şu.
+
+654
+01:37:55,107 --> 01:37:57,567
+Buna gördüğüm yere n-2 koyarım.
+
+655
+01:37:57,567 --> 01:38:01,507
+Yani aslında şöyle, şuradaki ifade.
+
+656
+01:38:03,828 --> 01:38:05,748
+Bir dakika, yanlış yaptık.
+
+657
+01:38:07,868 --> 01:38:09,628
+Bunun içini boyayacaktık.
+
+658
+01:38:10,248 --> 01:38:12,968
+Şu ifade benim için aslında değişmez.
+
+659
+01:38:13,608 --> 01:38:18,428
+Yani ben buradaki parantezin içine aynısını yazıyorum.
+
+660
+01:38:18,428 --> 01:38:19,308
+Tamam mı?
+
+661
+01:38:19,308 --> 01:38:26,828
+Yani şuradaki iki tane t n-1 artı c, şuradaki t fonksiyonun yerine alıp bir önceki adımdakini yazıyorum.
+
+662
+01:38:26,968 --> 01:38:27,508
+Bu da nedir?
+
+663
+01:38:28,308 --> 01:38:29,708
+2, şuradaki 2.
+
+664
+01:38:30,579 --> 01:38:40,179
+Artı C, şuradaki artı C. Parantezin içine de bir önceki ifadeyi n-2 ile yazıyorum. Yani iki tane t n-2 artı C'dir diyorum.
+
+665
+01:38:41,159 --> 01:38:51,319
+Tamam. n-2 cinsinden ifade edersem de bu şekilde. Bunu açtığımda parantezi ne oluyor bu? 4 t n-2 artı 3 C oluyor.
+
+666
+01:38:51,764 --> 01:39:16,524
+Şimdi ben bunu bir adım öteye götürüp de mesela t en eksi 3 için yazsaydım o zaman ne yapacaktım? Hemen şuradaki parantez artı c'yi yazalım. Bunun içinde de ben aslında şöyle bir şey yapacaktım. Şöyle büyütelim. Yine 2 çarpı ve şuraya da artı c gelecekti.
+
+667
+01:39:16,979 --> 01:39:28,919
+Ve bunun içine tam olarak şuraya 2tn-3 artı c ifadesini koyacaktım.
+
+668
+01:39:29,059 --> 01:39:29,899
+Değil mi? Bu şekilde.
+
+669
+01:39:30,459 --> 01:39:40,139
+Yani 2x2x2'den 8tn-3 artı, burada 3c olmuştu, artı 7c olacak.
+
+670
+01:39:40,139 --> 01:39:42,159
+İşte bu şekilde burada ne var?
+
+671
+01:39:43,988 --> 01:39:46,328
+6C, 7C olarak gidiyor.
+
+672
+01:39:47,048 --> 01:39:50,908
+Şimdi, ben şunu görüyorum. Onları da boyayayım.
+
+673
+01:39:53,728 --> 01:39:56,548
+Şunları hepsini bir sileyim. Bir dakika. Bir daha boyuyorum.
+
+674
+01:39:58,348 --> 01:40:01,948
+n-1 için yazdığımda 2 artı C'yi görüyorum.
+
+675
+01:40:02,568 --> 01:40:06,428
+n-2 için yazdığımda 4 artı 3C'yi görüyorum.
+
+676
+01:40:07,475 --> 01:40:17,155
+n-3 için yazdığımda 8 artı 7c'yi görüyorum. Bakın burada 2'nin 3. katı, burada da 2'nin 3. katından 1 eksiğini görüyorum.
+
+677
+01:40:17,456 --> 01:40:26,795
+Hep bu şekilde devam ediyor. Yani bir rekürsif çağrıda karmaşıklık, bir önceki adımın karmaşıklığını bir sonraki adımda kullanarak ifade edebiliyorum.
+
+678
+01:40:31,636 --> 01:40:35,476
+2 üzeri k eksi 1 c şeklinde ifade edebilirim. Artı tabi.
+
+679
+01:40:37,275 --> 01:40:41,956
+Burada artık bunu çözmem gerekecek. N eksi k'yı. Şuradakini k dediğim için.
+
+680
+01:40:42,416 --> 01:40:45,296
+N eksi k eşittir 0 diyerek k yerine n koyuyorum.
+
+681
+01:40:45,815 --> 01:40:49,076
+Ve bunu n cinsinden ifade etmiş oluyorum.
+
+682
+01:40:49,235 --> 01:40:55,576
+Nedir bu? 2n t0 2 üzeri n eksi 1 tane sabit.
+
+683
+01:40:57,140 --> 01:41:22,079
+2 üzeri n eksi 1 tane sabit diyelim. n eksi 1 deyince sanki üstü n eksi 1 gibi oldu. Bu da T0. T0 neydi? Şöyle geri slide'a gidecek olursak. T0 zaten sabit bir maliyetti hatırlarsınız. Tamam mı? Bunu da 1 artı C diyorum. O zaman ne oldu? 1 artı C eksi C geldi. 2 üzeri n çarpı 1.
+
+684
+01:41:22,463 --> 01:41:24,783
+Yaklaşık olarak tabi C'leri şimdilik atalım.
+
+685
+01:41:25,344 --> 01:41:32,043
+Ve 2 üzeri n mertebesinde zaman açısından işlem yapmam gerektiğini görüyorum.
+
+686
+01:41:32,583 --> 01:41:42,163
+Bu durumda da Big O notasyonunda böyle bir rekürsif çağrının maliyetinin, bakın O n'di ya tek çağırdığımda.
+
+687
+01:41:42,547 --> 01:41:47,868
+Kendimi iki kere çağırdığımda iki üzeri n mertebesine çıktığını görüyorum.
+
+688
+01:41:48,268 --> 01:41:50,328
+Ne yaptım? Hani fonksiyon ne yapıyor?
+
+689
+01:41:51,768 --> 01:41:55,728
+Sadece kendini iki kere çağırıyor. Tek toplama işlemiyle.
+
+690
+01:41:56,448 --> 01:42:00,347
+Arada başka daha farklı işlemler yaparak kendinizi çağırdığınızı düşünün.
+
+691
+01:42:00,347 --> 01:42:04,387
+O zaman karmaşıklık daha da yüksek mertebelere çıkacaktır.
+
+692
+01:42:04,788 --> 01:42:08,387
+Nihayetinde de şurada tek O1'lik bir karmaşıklığı görüyorsunuz. Return 1.
+
+693
+01:42:09,395 --> 01:42:22,815
+Buraya kadar inmesi gerekiyor. Return 1'e kadar ama bunu yapmak için 2 üzeri n tane çağrı gerçekleştirmesi gerekecek ya da 2 üzeri n mertebesinde çağrı gerçekleştirmesi gerekecek diyoruz.
+
+694
+01:42:22,815 --> 01:42:28,756
+Gördüğünüz gibi rekürsif çözüm yöntemi.
+
+695
+01:42:29,203 --> 01:42:45,771
+Çok basit ve hızlı bir şekilde çözüm geliştirmenizi sağlıyor. Problemi tamam bir alt problemler cinsinden ifade et. Yani daha küçük bir uzayda ifade et. Onu çözdüğünde bir sonraki adımı rahatlıkla taşıyabilirsin mantığındayız ama kendimizi mesela iki kere ya da üç kere...
+
+696
+01:42:45,971 --> 01:42:57,652
+duruma göre çağırmamız gerekiyorsa yineleme içinde o zaman çok ciddi bir şekilde zaman karmaşıklığımızın arttığını gözlemleyebiliyoruz.
+
+697
+01:42:57,652 --> 01:43:01,612
+İşte buradaki 2 üzeri n ertevesine çıkması bunu gösteriyor.
+
+698
+01:43:01,711 --> 01:43:10,431
+Kendimizi 3 kere çağırsak demek ki şuradaki çözdüğümüzde n-1 artı n-2 artı n-3'ten dolayı burada kubik bir şey olacak.
+
+699
+01:43:10,631 --> 01:43:13,931
+3 üzeri mi olacak işte ne olacaksa 2 üzeri 2.
+
+700
+01:43:13,971 --> 01:43:23,971
+2 üzeri n kare falan olacak işte neyse. O şekilde saçma sapan, hiçbir şekilde çözülemeyecek neredeyse bir...
+
+701
+01:43:24,275 --> 01:43:48,576
+Karmaşıklığa doğru hızla kendimizi taşıyabiliriz. Bu da neyi getirir? Mesela Fibonacci dizisinde 5 tane sayı, 10 tane sayı, 100 tane sayı bir yere kadar beklenebilir zamanda. 100 bile çok kötü. Bir şekilde hesaplayabilirsiniz ama mesela 1000'e, 10.000'e falan çıktığınızda, şuradaki n değerini arttırdığınızda bir anda 2 üzeri.
+
+702
+01:43:48,916 --> 01:43:58,136
+O sayı kadar zaman beklemek zorunda kalacağınız için artık mantıklı bir çözüm yöntemi olmamaya başlayabilir.
+
+703
+01:43:58,136 --> 01:44:00,880
+Fakat yine de...
+
+704
+01:44:00,880 --> 01:44:07,620
+problemi daha küçük parçalara bölme açısından recursive çağrılar bize kolaylık sağlıyor.
+
+705
+01:44:08,080 --> 01:44:17,360
+Bu işte Fibonacci 6 için yaptığımız çağrıları tekrar baktığımızda 6 için ağaç şeklinde biraz önce şöyle bir hiyerarşi şeklinde yazdım ya ben 5 için.
+
+706
+01:44:17,360 --> 01:44:21,580
+6 için yazdığımızda da şunu görüyoruz. Ben 6 için 4 ve 5'i çağıracağım.
+
+707
+01:44:22,060 --> 01:44:27,380
+Şimdi bu tarafı komple bırakın. Sadece 4'e odaklanalım. 4 için 2'yi ve 3'ü çağıracağım.
+
+708
+01:44:27,728 --> 01:44:52,587
+2 için de 1'i çağıracağım. 3 için de 1 ve 2'yi çağıracağım. 1 için işte yine 0'ı ve 1'i çağıracağım. Sonra bunların hepsini yapacağım, toplayacağım. Fibonacci 4'ü hesap etmiş olacağım. Bakın burada hesaplamış olmama rağmen burada bir daha çağırıyorum aslında. Yani aynı şeyi tekrar tekrar çağırmak zorunda kalıyorum. Bu taraf bitti diyelim. Şimdi Fibonacci 5 için yine 3 ve 4'ü çağıracağım. E güzel kardeşim ben aslında...
+
+709
+01:44:53,235 --> 01:45:20,095
+Yani bu çözüm iyi bir çözüm olmuyor Fibonacci'de onu demek istedim. Şuradaki halka içine aldığım yer gördüğünüz gibi aslında burada birebir tekrar ediyor. Ya da başka bir renkle yapalım. Şuradaki Fibonacci 3, 1, 2 var ya o zaten burada da vardı. Burada da vardı. Değil mi? Aynı şeyi, aynı bloğu aslında 3 kere boşu boşuna tekrar tekrar çağırmışım. Ya da aynı büyük kırmızı bloğu 2 kere tekrar tekrar çağırmışım.
+
+710
+01:45:21,747 --> 01:45:26,427
+Burada farklı bir çözüm yöntemi uygulasak, recursif çağrı uygulamasak aslında daha iyi olur.
+
+711
+01:45:27,007 --> 01:45:37,027
+Ama en azından burada uzayımızı nasıl böldüğümüzü, problemi nasıl daha küçük parçalara ayırdığımızı takip edebiliyoruz.
+
+712
+01:45:37,747 --> 01:45:39,687
+Faktöriyel hesabında bu çok daha güzel.
+
+713
+01:45:39,907 --> 01:45:42,007
+Çünkü teker teker bölüyorsunuz.
+
+714
+01:45:42,107 --> 01:45:43,707
+Hep bir adım ufaltıyorsunuz.
+
+715
+01:45:44,067 --> 01:45:45,927
+Sanki işte bir uzay buydu.
+
+716
+01:45:46,336 --> 01:46:02,396
+Öbür uzay bu, öbür uzay bu, öbür uzay bu. Böyle sürekli ufaltarak gittiğiniz için şey yok. Fakat burada aynı şeyi iki kere çağırdığınızda kendinizi tekrar tekrar tekrar tekrar çağırmak zorunda kalırsınız. Bu da tabii iyi bir çözüm yöntemi olmaz.
+
+717
+01:46:14,036 --> 01:46:17,956
+böl ve yönet konusuna başlayalım.
+
+718
+01:46:18,612 --> 01:46:43,412
+Ne demek böl ve yönet? Bu bir algoritmik çözüm yaklaşımı. Divide and concur diyoruz buna. Aslına bakarsanız divide and concur her yerde sıklıkla göreceğiniz bir ifade. Tam olarak Türkçesi böl ve yönet değil aslında. Böl ve fethet oluyor da biz burada yönet şeklinde Türkçede kullanmayı daha uygun görüyoruz.
+
+719
+01:46:44,467 --> 01:47:10,447
+Şimdi şu ana kadar biz ne yaptık? Bir hızlıca üzerinden geçelim. Neler gördük? Ne gibi algoritmik çözüm yaklaşımlarından bahsettik? İlki brute force'da hatırlayacak olursanız. Bu ne demek brute force? Hiçbir şey yapma. Her seferinde körlemesine sabit bir operasyonu gerçekleştir. Başlangıçtan sona kadar dümdüz ilerleyerek her adımda mesela bir tokat atarak tak tak tak tak devam et. Çözüme doğru git.
+
+720
+01:47:10,847 --> 01:47:34,787
+Bu örnek, mesela üst alma problemi. Ne yapıyorum? Bir sayının a üzeri n üstüne hesaplamak istiyorsam o sayıyı n kere çarpıyorum. Her adımda bir çarpım yapıyorum değil mi? Çarptım, devam ettim, çarptım, devam ettim, çarptım, devam ettim. n kere çarptığımda sonucu buldum. Gördüğünüz gibi hiçbir özel şeye bakmadan tak tak tak diye gittim. İkincisi selection sort.
+
+721
+01:47:35,347 --> 01:47:51,367
+Hatırlayalım selection sortu. Her adımda ne yapıyordu? Dizinin minimumunu buluyordu, başa taşıyordu. Sonra diziyi bir ufaltıyordu. Dizinin minimumunu buluyordu, taşıyordu, başa taşıyordu. Bir ufaltıyordu, minimumu kalanın minimumunu bulup taşıyordu.
+
+722
+01:47:51,927 --> 01:48:00,267
+Kalan, kalan, kalan, kalan, nereye kadar? Tek eleman kalana kadar bu işlemi gerçekleştirdiğinde hiçbir özel şey yapmadan her seferinde sadece
+
+723
+01:48:00,979 --> 01:48:07,359
+Kalanın minimumu neyse onu bul, birinci göze koy. Yani o kalanın birinci gözüne koy şeklindeki bir yaklaşım.
+
+724
+01:48:07,439 --> 01:48:16,259
+İşte şifre çözme. Teker teker bütün harfleri deneme, bütün kombinasyonları deneme ya da bubblesortta hatırlarsanız sürekli olarak değişim yapıyordu.
+
+725
+01:48:16,479 --> 01:48:21,599
+Hani büyük ve küçüğü yer değiştirerek böyle kabarcık şeklinde büyüklerin sona doğru taşınmasını sağlıyordu.
+
+726
+01:48:22,059 --> 01:48:28,919
+Hiçbir özel şeye bakmadan her seferinde büyük olanı çevir, büyük olanı çevir, büyük olanı çevir yapa yapa devam ediyorduk.
+
+727
+01:48:28,979 --> 01:48:31,719
+Bu gibi çözümlere biz brute force adını veriyoruz.
+
+728
+01:48:32,879 --> 01:48:36,559
+Greedy'den bugün bahsettim bilginiz olsun diye aç gözlü.
+
+729
+01:48:37,139 --> 01:48:38,339
+Ne demekti bu özet olarak?
+
+730
+01:48:38,559 --> 01:48:44,559
+Her adımda o an için en iyi olan çözüm neyse, en iyi olan seçim neyse onu yap ve uygula.
+
+731
+01:48:44,999 --> 01:48:47,899
+İşte bozuk para verme, bozuk para üstü verme.
+
+732
+01:48:48,199 --> 01:48:48,579
+Ne dedik?
+
+733
+01:48:48,959 --> 01:48:52,339
+Her adımda verebileceğin maksimum para neyse onu ver.
+
+734
+01:48:52,479 --> 01:48:54,399
+Böylece kalanı minimum hale getirmiş olursun.
+
+735
+01:48:54,868 --> 01:48:58,548
+Böylece toplamda da en az parayı, en az sayıda parayı vermiş olursun.
+
+736
+01:48:59,088 --> 01:49:00,568
+Ya da işte Hufman kodlaması.
+
+737
+01:49:00,708 --> 01:49:07,428
+Her adımda en küçük frekansa sahip iki karakteri topla ve ara bir düğüm oluştur.
+
+738
+01:49:08,128 --> 01:49:16,368
+Ve bu sayede oluşan son ağaçta bu en az frekanslı karakterler en aşağılarda, en uzun kodlarda kalsınlar.
+
+739
+01:49:16,735 --> 01:49:21,115
+Bunun için de yöntem her adımda minimum 2'yi seçmekte.
+
+740
+01:49:22,335 --> 01:49:25,015
+Ve birleştirip tekrar kuyruğa eklemek tabii ki.
+
+741
+01:49:25,115 --> 01:49:30,995
+Hani burada bir dinamik değişken bir mekanizma olduğu için brute force değil de greedy şekilde çalışıyor diyelim.
+
+742
+01:49:31,635 --> 01:49:36,975
+Bir diğer yöntem, yine kullandık ama adını söylemedik, decrease and concur yaklaşımı.
+
+743
+01:49:38,515 --> 01:49:46,955
+Yine aslında hani yine brute force'a ya da divide and conquer'a biraz benziyor ama bazı kaynaklar bunu özel olarak ayrı ifade edebiliyor.
+
+744
+01:49:47,095 --> 01:49:49,555
+O yüzden ben de bu şekilde ayrı vereyim istedim.
+
+745
+01:49:50,215 --> 01:49:53,035
+Problem uzayını küçülterek çözüme doğru ilerlemek.
+
+746
+01:49:53,235 --> 01:49:53,855
+Ne demek bu?
+
+747
+01:49:54,355 --> 01:49:55,655
+Adım adım ufaltmak.
+
+748
+01:49:55,655 --> 01:50:06,355
+Şöyle ki ben üst alırken aynı faktürel hesabında olduğu gibi mesela her adımda bir önceki değeri biliyorsam sadece onu kullanıp tek bir çarpım yaparsam
+
+749
+01:50:06,515 --> 01:50:22,796
+Uzayı ufalta ufalta çözüme ilerlemiş olurum. İşte an eşittir an-1 çarpı a. An-1 nedir? An-2 çarpı an-1'dir değil mi? İşte bu şekilde a'dır ya da neyse. Bir önceki adımı kullanarak bir sonraki adımı bulmak.
+
+750
+01:50:23,539 --> 01:50:37,499
+Insertion Sort'u hatırlıyorsunuz değil mi? Bulup koyuyorduk, araya kaydırıyorduk hep tık tık tık. Gidebildiği minimum yer neresiyse oraya kadar kartları kaydıra kaydıra gidiyorduk. Gitgide çözüm arama uzayımızı daraltıyorduk.
+
+751
+01:50:37,811 --> 01:51:01,091
+Bir diğeri Josephus problemi. Hatırlayalım mağaradaki şeyi, Josephus'u iki arkadaşı en sona kalan iki arkadaş yaşayacaktı. Geri kalan herkes öldürülecek. İşte burada da aslında problemi ufaltıyoruz uzayını. Her iterasyonda sayıp işte bir kişiyi öldürüyorduk hatırlarsanız. Her iterasyonda bir ufaltıyoruz.
+
+752
+01:51:01,568 --> 01:51:05,467
+En sonunda n-k kalana kadar devam ediyoruz.
+
+753
+01:51:06,068 --> 01:51:12,608
+Ve bu şekilde yine problemi ufalta ufalta çözüme ilerliyorsak eğer bunları da decrease and conquer yöntemi diyebiliriz.
+
+754
+01:51:13,087 --> 01:51:13,868
+Şimdi ne geldi?
+
+755
+01:51:14,127 --> 01:51:15,087
+Divide and Conquer.
+
+756
+01:51:15,087 --> 01:51:25,708
+Divide and Conquer aslında bizim dünyada örneklerini sıklıkla gerçek hayatımızda da gördüğümüz bir yöntem.
+
+757
+01:51:26,068 --> 01:51:35,887
+Özellikle de Amerika bunu çok yapar biliyorsunuz. Bir yere göz diktiği zaman ne yapar? Oraya barış ve demokrasi getireceğim diyerek önce orayı bir karıştırır.
+
+758
+01:51:36,248 --> 01:51:44,828
+Karıştırdıktan sonra oradaki tekil yönetimi devirir ve küçük küçük işte federasyonlar mıdır ya da bölgesel yönetimler midir neler oluşturur?
+
+759
+01:51:44,828 --> 01:51:53,828
+Ondan sonra onlar üzerinde parçaladığı ve bütün halde yönetmesi zor olan yönetemeyeceği bir şeyi ufak ufak parçalara bölüp...
+
+760
+01:51:54,068 --> 01:52:02,128
+Problemi her bir ufak parçayı ayrı bir şekilde çözerek ya da ayrı bir şekilde yöneterek toplamdaki hakimiyetine devam eder.
+
+761
+01:52:02,507 --> 01:52:06,047
+Bu da tam olarak bu politika. Başka hiçbir şey değil bu çözüm yöntemi.
+
+762
+01:52:06,927 --> 01:52:11,307
+Elimizde bir problem var çözmemiz gereken. Örneğin sıralama problemi. Tamam mı?
+
+763
+01:52:11,608 --> 01:52:14,507
+Elimde bir dizi var ve ben bu diziyi sıralayacağım.
+
+764
+01:52:15,448 --> 01:52:19,507
+Acaba ben bu diziyi bölerek daha ufak diziler haline getirsem?
+
+765
+01:52:20,051 --> 01:52:32,431
+Böylece ufak dizileri daha kolay bir şekilde sıralayabilsem, sonra da onları birleştirsem, tekrardan böyle bir federe devlet haline getirip, yani tek bir dizi haline getirip kullansam nasıl olur? Evet, olabilir.
+
+766
+01:52:33,292 --> 01:52:41,192
+Eğer böyle biliyorsak, genellikle eşit boyutlu, bu eşit boyutlu alt problemler olmak zorunda değil.
+
+767
+01:52:42,868 --> 01:53:06,368
+Bu hafta yetişmez, önümüzdeki hafta devam ederiz. Onu da göreceğiz. Başka yine bir sıralama örneği üzerinden devam edip göstereceğim. Basit olduğu için hep sıralamayı kullanıyoruz. Anlaması rahat ve bildiğimiz, tanıdığımız bir problem. Genellikle eşit boyutlu diyelim bunu parantez içinde. Problemimizi aynı tipte küçük problemlere böleriz, yani ayrıştırırız.
+
+768
+01:53:06,804 --> 01:53:16,443
+Sonrasında bu alt problemleri daha böyle az karmaşık bir uzayda çözeriz. Bunu çözdükten sonra genellikle bunu rekürsif olarak ufak problemler haline getiririz.
+
+769
+01:53:18,503 --> 01:53:26,443
+Bölemeyeceğimiz kadar küçük olduğunda problemi bir yaklaşımla, bir yöntem ile, bir algoritma ile çözeriz. Sonra da...
+
+770
+01:53:26,720 --> 01:53:33,399
+Buradaki alt çözümleri, ufak parçaların çözülmüş hallerini tekrardan bir araya getiririz.
+
+771
+01:53:34,039 --> 01:53:36,640
+Ve burada da işte bu yönet oluyor, conquer aşaması.
+
+772
+01:53:37,359 --> 01:53:43,420
+Orjinal problemimize ait son çözümümüzü, birleştirilmiş çözümümüzü elde ederiz.
+
+773
+01:53:43,988 --> 01:54:00,628
+Bu her zaman böyle brute force'dan falan daha efektif olacak diye bir şart yok. Bunu bir kere hani baştan söyleyeyim. Hani hocam biz bunu brute force'da yapsak daha kolay oluyor ya da daha efektif. Orada biz o n karede yapıyorduk, burada o n küple çözdük. Ne biçimmiş bu diyebilirsiniz.
+
+774
+01:54:01,548 --> 01:54:11,508
+Her zaman için böyle böl ve yönet diğerlerinden örneğin brute force'dan daha iyi olacak, daha efektif çalışacak diye bir şey söz konusu değil. Fakat şöyle bir artısı var.
+
+775
+01:54:12,212 --> 01:54:28,912
+Yani göz ağrıda edemeyeceğimiz bir artısı var. Çok kolay bir şekilde paralel hesaplama implementasyonlarıyla bunu gerçekleştirebiliriz. Şöyle düşünelim. Elimizde işte mesela bir dizi var. Dizide diyelim ki 40 bin tane eleman var.
+
+776
+01:54:29,300 --> 01:54:48,279
+Şimdi ben bunu işte tek bir çekirdekli işlemcide ya da benim dört çekirdekli bir işlemcim olsun sadece tek bir çekirdeğinde işte mesela heap sortu kullanarak çalıştırırsam ne olur nlog n 40.000 çarpı 40.000 şeklinde bir karmaşıklıkla bunu sıralayabilirim.
+
+777
+01:54:54,036 --> 01:55:01,136
+4 tane parçaya ayırsam, 4 işlemciye ayrı 10.000'leri versem. Ne oldu? 10.000 log 10.000'e düştü bir anda.
+
+778
+01:55:02,131 --> 01:55:07,571
+Ve üzerine sadece bunları bir merge etme, birleştirme ya da işte concure ajamasını eklesem.
+
+779
+01:55:08,291 --> 01:55:16,191
+Bir anda n log n bölü 4 artı C şeklinde bir karmaşıklığa düşmüş olurum efektif olarak.
+
+780
+01:55:16,191 --> 01:55:29,191
+Demek ki paralelleştirme eğer yapabiliyorsak ya da ihtiyaç duyuyorsak ya da paralelleştirme bizim çözümümüzü ufak uzaylar sayesinde toplam zamanda azaltacaksa.
+
+781
+01:55:30,131 --> 01:55:32,211
+Öl ve yönet ile kar elde edebiliriz.
+
+782
+01:55:32,631 --> 01:55:40,491
+Ama tek işlemci üzerinde yine paralelleştirmeden yapıyorsanız her zaman daha efektif olacak diye bir şey söz konusu değildir.
+
+783
+01:55:40,871 --> 01:55:43,291
+Değil mi gibi bunun gücü dağıtmaktan geçiyor.
+
+784
+01:55:43,291 --> 01:55:48,291
+Ufak parçaları ayırmak ve ufak problemleri mesela farklı kaynaklarda çalıştırıp...
+
+785
+01:55:49,011 --> 01:55:59,251
+Farklı işlemcilerde, farklı çekirdeklerde çözebilmek ve bunlar da paralel çalışacağı için toplamda bölü 4 mesela zamana indirebilmenizi sağlar.
+
+786
+01:56:01,112 --> 01:56:14,332
+Evet, şöyle yani bir daha formülize, diagram şeklinde ifade edecek olursak, böl ve yönet algoritmalarında elimizde mesela en boyutlu bir problem var.
+
+787
+01:56:14,551 --> 01:56:16,412
+En boyutlu bir diziyi sıralamak istiyorum.
+
+788
+01:56:17,043 --> 01:56:28,064
+Atıyorum. Ben diyorum ki, ya benim elimde iki işlemci var. O zaman ben bunu iki tane n bölü ikiye bölsem. Gördüğümüz gibi böyle ortadan karpuz gibi böldüm.
+
+789
+01:56:28,564 --> 01:56:37,304
+n bölü iki tanesini bu tarafa, n bölü iki tanesini de bu tarafa versem. Sonra ben bunları kendi içinde bunu birinci işlemcide, bunu ikinci işlemcide aynı zamanda sıralasam.
+
+790
+01:56:38,903 --> 01:56:42,844
+İlave olarak ne oldu? Benim sıralama zamanım direkt yarıya düştü değil mi?
+
+791
+01:56:43,572 --> 01:56:46,771
+Neden? Çünkü artık yarı boyutta bir dizi sıralıyorum.
+
+792
+01:56:47,652 --> 01:57:03,911
+Sonrasında da bir birleştirme işlemi, konkür işlemi yapsam, şurada bu önemli tabii, bir overhead burası yani bunu unutmayalım ve orijinal problemin yani en boyutlu dizimin sıralanmış halini elde etsem.
+
+793
+01:57:04,979 --> 01:57:32,579
+Güzel. Gördüğünüz gibi paralelleştirdik. Ben bu n'i ne kadar alt parçaya bölersem eş zamanlı olarak, mesela işte 8 işlemcim olsun, 8 çekirdeğim, 8'e böldüğümde bir anda n bölü 8 zamanlara düşeceğim için çok daha hızlı sönüşler elde edebileceğim paralelleştirmenin gücü sayesinde ya da böl ve yönetteki şuradaki derdi ayrı işlemcilere ya da farklı ufak parçalara bölmek sayesinde.
+
+794
+01:57:33,747 --> 01:58:01,267
+Şimdi geldik Mertsort örneğimize. Mertsort nedir? Yine bir sıralama aslına bakarsanız. Fakat sıralamayı biraz önce gösterdiğim gibi dizimizi, en boyutlu dizimizi ufak parçalara ayırıp, hatta onları da ufak parçalara ayırıp, hatta onları da ufak parçalara ayırıp, bakın nereye gidiyorum? Kendimi çağırmaya gidiyorum fark ettiyseniz. Recursive çağrı yapıyorum.
+
+795
+01:58:01,747 --> 01:58:10,728
+Gidebildiğim kadar gidip en sonunda gidemediğim bir yerde durup konkür işlemine yani birleştirme işlemine geçmek şeklinde özetleyebiliriz.
+
+796
+01:58:11,307 --> 01:58:19,287
+Acaba nasıl yapabiliriz? Yani elimde verilen en boyutlu bir problem, mesela bir dizinin sıralama problemini bölerek nasıl yapabilirim?
+
+797
+01:58:20,127 --> 01:58:28,287
+Şöyle yaparım. Diziyi alırım. Şöyle alayım diziyi. Aldım. Böyle n elemanlı bir dizim olsun.
+
+798
+01:58:28,623 --> 01:58:32,123
+Ben bunu ortadan böyle ikiye bölerim.
+
+799
+01:58:33,023 --> 01:58:33,583
+Tamam.
+
+800
+01:58:34,583 --> 01:58:36,943
+Şimdi artık elimde iki tane yarım dizi var.
+
+801
+01:58:37,804 --> 01:58:39,604
+Bunu bir işlemcide, bunu bir işlemcide yaptım.
+
+802
+01:58:39,724 --> 01:58:40,923
+Şimdi başka ne yaparım?
+
+803
+01:58:41,264 --> 01:58:43,623
+Aslına bakarsanız ben bunu bölmeye devam edebilirim.
+
+804
+01:58:45,423 --> 01:58:49,203
+Bunu da ikiye bölerim.
+
+805
+01:58:50,844 --> 01:58:51,863
+Şu anda elimde ne oldu?
+
+806
+01:58:51,983 --> 01:58:53,844
+Dört tane ufak dizi oldu.
+
+807
+01:58:54,684 --> 01:58:56,003
+Yetmedi bunları da bölerim.
+
+808
+01:58:58,963 --> 01:59:04,423
+Böldüm. Artık daha fazla bölmeyeyim. Tamam mı? Şuralarda da sayılarım olsun mesela.
+
+809
+01:59:04,423 --> 01:59:26,163
+İşte 3, 5, 2, 1, 8, 4, başka ne olsun? 6 olsun. Bir de 6 ve 9 olsun.
+
+810
+01:59:26,707 --> 01:59:34,327
+Tamam. Yani ben aslında şöyle bir şey yapmış oldum. Buradaki ifadeyi şöyle daha düzgün bir yazıya dökeyim.
+
+811
+01:59:34,427 --> 01:59:43,707
+3, 5, 2, 1, 8, 4, 6 ve 9 şeklinde bir dizim vardı. Şimdi ben bunu aslında şu hale getirdim.
+
+812
+01:59:44,127 --> 01:59:52,487
+3, 5, 2, 1, 8, 4, 6, 9 halinde ikiye böldüm. Yetmedi. Onu da kendi içinde 3, 5,
+
+813
+01:59:53,652 --> 02:00:13,952
+ve 2-1 olarak böldüm. Şöyle. Diğerini de 8-4-6-9 diye böldüm. Yetmedi. Bunu da kendi içinde bölmeye devam ediyorum hala. Gördüğünüz gibi sürekli 2'ye böl şeyini çağırıyorum. Öyle düşünün. 3'e ve 5'e böldüm.
+
+814
+02:00:14,355 --> 02:00:22,676
+Şöyle şey yapalım. Diğerini 2'ye ve 1'e böldüm. Diğerini 8'e ve 4'e böldüm. Diğerini de 6'ya ve 9'a böldüm. Tamam.
+
+815
+02:00:24,096 --> 02:00:30,935
+Elimde 8 tane parçacık oluştu. Tek elemanlık parçalar. Daha fazla bölebiliyor muyum? Hayır, bölemiyorum. Çünkü tekil sayılara eriştim.
+
+816
+02:00:31,416 --> 02:00:37,136
+3, 5, 2, 1, 8, 4, 6, 9'a eriştim. Şu anda problemi çözdüm. Farkında mısınız?
+
+817
+02:00:38,195 --> 02:01:01,335
+Neden? Çünkü tek eleman demek zaten sıralı demektir. Her bir alt dizi sıralı halde duruyor. İşte işin mergesortta mesela en azından işin bölme tarafında yapmamız gereken hiçbir şey yok. Sadece rekürsif olarak böl böl böl diye devam etsek yeterli oluyor. Sonuçta elde ettiğimiz son eleman zaten sıralıdır. Doğru mu? Doğru.
+
+818
+02:01:01,876 --> 02:01:24,636
+Esas derdimiz aslında burada şu, konkür aşaması. Gerçek hayat gibi, yani hani bölmesi kolay, bir giriyor, paldır küldür, olay çıkartıyor ülkenin içinde, ondan sonra ülke bölünüyor. Ama ondan sonra ülkeyi toplamak biliyorsunuz mesele. Bir türlü toplayamıyor zaten kendileri de çoğu zaman. Ben şimdi burada ne yapacağım?
+
+819
+02:01:24,979 --> 02:01:32,179
+Her bir parçayı, sıralı alt alt parçayı bir şekilde sırayı bozmadan birleştirebiliyor olmam lazım.
+
+820
+02:01:32,739 --> 02:01:37,319
+Yani ben burada mesela 3 ile 5'i aldım ya, ilk iki elemana bakalım.
+
+821
+02:01:37,879 --> 02:01:40,539
+3 ile 5 kendi içinde sıralı mı diye bir kontrol etmem.
+
+822
+02:01:40,539 --> 02:01:46,519
+Merge işleminde yani konkür ederken 3 ve 5 sıralı olarak duruyor. Bunu tutmam lazım.
+
+823
+02:01:47,479 --> 02:01:47,799
+Sonra.
+
+824
+02:01:48,207 --> 02:01:56,867
+2 ile 1'e aldığımda, 2 tane atomik elemanı birleştirdiğimde aslında bunun 1 ve 2 şeklinde sıralanmış olmasını garanti etmem lazım.
+
+825
+02:01:57,507 --> 02:02:05,347
+Sonra 8 ve 4'e baktığımda bunların 4 ve 8 şeklinde, 6 ve 9'a baktığımda da 6-9 şeklinde kalmasını sağlamam lazım.
+
+826
+02:02:05,487 --> 02:02:06,387
+Şimdi ikililer bitti.
+
+827
+02:02:06,899 --> 02:02:19,439
+İkililer kendi içinde sıralı. Ne yaptım? Çözümü bir adım yukarı taşıdım. Teklilerden ikililere çevirmiş oldum. Şimdi ikilileri birleştirip dörtlü yapmam lazım. Rekürsif olarak geriye dönüyorum farkındaysanız.
+
+828
+02:02:21,311 --> 02:02:38,692
+3, 5 ve 1, 2 ikililerine bakmam lazım. Burada da 1, 2, 3, 5 şeklinde sıralanmasının 4, 8, 6, 9'a baktığımda da 4, 6, 8, 9 şeklinde sıralanmasını sağlamam lazım. Ne yaptım?
+
+829
+02:02:39,315 --> 02:03:02,395
+Dörtlüler kendi içinde sıralandı. Sonra bu iki dörtlüyü alıp birleştirmem lazım. Yine bunu konkür edeceğim ve dört dörtte sekizlik orijinal dizime geri dönmüş olacağım. Yani burada da bir, iki, üç, şöyle, öbür taraftan dört, bu taraftan beş, sonra kalanlar altı, sekiz, dokuz şeklinde birleştirmem lazım. Tamam.
+
+830
+02:03:02,899 --> 02:03:10,179
+Ve 1, 2, 3, 4, 5, 6, 8, 9 şeklinde sonuç dizimi sıralanmış ve toparlanmış dizimi elde etmem lazım.
+
+831
+02:03:11,019 --> 02:03:17,460
+Evet, demek ki benim burada iki tane ayrı operasyona ihtiyacım var.
+
+832
+02:03:18,420 --> 02:03:20,599
+Birinci operasyonum bölmek.
+
+833
+02:03:21,659 --> 02:03:25,199
+Bölebildiğim kadar, yani bir elemanı varana kadar bölmek.
+
+834
+02:03:25,747 --> 02:03:31,967
+Ondan sonra da bunları birleştirmek ama birleştirirken sırayı gözeterek birleştirmek.
+
+835
+02:03:32,507 --> 02:03:37,047
+Yapmam gereken en önemli operasyon mergesort da bu.
+
+836
+02:03:38,127 --> 02:03:40,667
+Şurayı temizleyelim ve devam edelim.
+
+837
+02:03:40,667 --> 02:03:41,227
+Şimdi.
+
+838
+02:03:45,107 --> 02:03:47,647
+Mergesort'un da aslında iki çeşidi var.
+
+839
+02:03:47,927 --> 02:03:51,567
+Biri top-down mergesort, diğeri de bottom-up mergesort.
+
+840
+02:03:52,435 --> 02:03:56,855
+Şimdi biz ilk olarak top-down merge sort'a bakalım.
+
+841
+02:04:12,627 --> 02:04:29,467
+Saat kaç oldu? 12-5 geçiyor. Bir ara verelim arkadaşlar. Çeyrek geçe devam edelim. Boğazımı temizleyeyim ben de. Sürekli konuşunca yoruluyorum. Tamam. 15-16 geçe başlarım. Tekrardan görüşüyoruz.
+
+842
+02:15:25,555 --> 02:15:32,055
+Evet arkadaşlar, bu niye çalışmıyor? Ha, çalıştı. Tamam. Şöyle bir durumumuza bakalım.
+
+843
+02:15:40,467 --> 02:15:41,188
+Misanya.
+
+844
+02:15:46,836 --> 02:15:47,836
+problemi.
+
+845
+02:15:58,739 --> 02:16:22,939
+Şimdi geldik, bu Merge Sort acaba nasıl çalışacak? Dediğim gibi bu bir top-down Merge Sort. Al diziyi, böl böl böl böl böl, ondan sonra da birleştir şeklinde yolumuza devam ettiğimiz bir yöntem. Top-down varsa bottom-up var demek ki bir de. Acaba o nasıl çalışıyor? Ona da haftaya bakarız. Bu hafta herhalde sıra gelmez diye düşünüyorum.
+
+846
+02:16:23,412 --> 02:16:25,572
+Gelirse de bakarız, yani devam ederiz.
+
+847
+02:16:26,172 --> 02:16:40,412
+Şimdi, merge sort için örnekte de gösterdiğimiz gibi bizim bir başlangıç, bir de son noktasına, hani indislerine dizideki ihtiyacımız var.
+
+848
+02:16:40,972 --> 02:16:45,051
+Şuraya dizimizi tekrar çizecek olursak, şöyle de bölelim.
+
+849
+02:16:46,912 --> 02:16:47,912
+Şöyle bölmüştük.
+
+850
+02:16:48,572 --> 02:16:50,051
+Diğerlerini farklı renkle böleyim.
+
+851
+02:16:50,868 --> 02:17:05,888
+Şöyle kırmızıyla daha uzun olacak şekilde böleyim. Ondan sonra diğerlerini de şöyle mavi ile bölelim. Tamam. Bu ve bu. Bu şekilde böleceğiz. Şimdi.
+
+852
+02:17:06,451 --> 02:17:30,572
+Neden böyle bir baş ve sona ihtiyaç duyuyorum? Sürekli olarak kendimi çağıracağım. Her seferinde başka bir ikiliyi böl, dörtlüyü böl diye farklı farklı fonksiyonlar çağıracak halim yok. Bu nedenle her seferinde benim bir başlangıç bir de son indise ihtiyaç duyuyor olmam lazım. Onları da şu şekilde yazalım.
+
+853
+02:17:32,628 --> 02:17:45,628
+0. indis, pardon, işte 1. indis, 2. indis, 3. indis, 4. 5. 6. ve...
+
+854
+02:17:47,059 --> 02:17:51,819
+Şöyle ufak büyüterek, şurada yedinci indis olarak burada dursun.
+
+855
+02:17:51,979 --> 02:17:52,500
+Tamam.
+
+856
+02:17:53,540 --> 02:17:57,459
+Şimdi, ilk başta benim neyle başlamam lazım?
+
+857
+02:17:57,779 --> 02:18:00,299
+Sıfır ve yediyle başlamam lazım.
+
+858
+02:18:00,939 --> 02:18:01,399
+Tamam.
+
+859
+02:18:01,739 --> 02:18:04,840
+O zaman, nereye kadar gitmem lazım?
+
+860
+02:18:05,260 --> 02:18:08,319
+Bir yerde durmam gerekiyor ya, durma noktamı nasıl belirleyeceğim?
+
+861
+02:18:09,779 --> 02:18:14,319
+Şuradaki indisler birbirinin tersine geçtiyse artık daha fazla...
+
+862
+02:18:15,059 --> 02:18:20,619
+Merge işlemi gerçekleştiremeyeceğim için burada durmam gerekiyor diye bir kontrolden geçiyorum ilk önce.
+
+863
+02:18:21,279 --> 02:18:28,760
+Şimdi, her adımda ne yapacağım? Ortadan ikiye bölüyorum değil mi? Sol taraf, sağ taraf. İlk önce turuncuyla böldüm.
+
+864
+02:18:29,180 --> 02:18:36,279
+Ondan sonra sol tarafa gittiğimi düşünelim. Kırmızıyla böldüm. Sonra maviyle böldüm. Sonra bunu maviyle böldüm.
+
+865
+02:18:36,592 --> 02:18:42,812
+Ondan sonra şu tarafı kırmızıyla böldüm. Ondan sonra bunu maviyle, bunu maviyle böldüm şeklinde ilerlemiş olacağım.
+
+866
+02:18:42,912 --> 02:18:50,731
+Hers adımda demek ki benim nereden sol ve nereden sağ yapacağımı, yani daha doğrusu nereden böleceğimi bilebiliyor olmam lazım.
+
+867
+02:18:51,092 --> 02:18:51,752
+Bu da nedir?
+
+868
+02:18:52,819 --> 02:19:14,619
+low artı high, pardon, high eksi low bölü 2'dir, değil mi? Ya da low artı high eksi low bölü 2'dir. Tamam, bu şekilde de hani daha böyle açık bir şekilde ifade etmek için böyle yazdım. Her adımda yani turuncu, kırmızı, mavi, mavi, kırmızı, mavi, mavi neresi olacak? Bunları hesaplıyoruz.
+
+869
+02:19:20,051 --> 02:19:24,871
+Algoritmanın uzayı ikiye böldüğü alan. Birincisi bu.
+
+870
+02:19:26,011 --> 02:19:30,072
+Lovedan mid'e kadar olan kısmı bir merge sort'ı çağırıyorum.
+
+871
+02:19:30,971 --> 02:19:40,711
+İkincisinde de bu taraf bittikten sonra da mid'den high'a kadar olan kısmı, mid artı birden high'a kadar olan kısmı merge sort ile çağırıyorum.
+
+872
+02:19:40,711 --> 02:19:43,551
+Ben burada aslında ne yapmış olduğum?
+
+873
+02:19:45,824 --> 02:20:06,943
+Şurası şöyle şeyle, kırmızı oklarla göstereyim. Şimdi burası low, burası high, şurası mid, değil mi? İlk önce, bir de hesapladığıma göre, ben şu kısmı, soldaki kısmı, low'dan mid'e kadar olan kısmı aldım, mergesort'a yolladım.
+
+874
+02:20:13,299 --> 02:20:32,200
+Buradaki love, buradaki high ve buradaki midi biliyorum. Tekrardan yine burada midi hesaplamış oldum. Tekrardan love'dan midi kadar mergesort'a gittim. Yani ben bu sefer şuradaki parçacık için bir mergesort çağırdım.
+
+875
+02:20:40,115 --> 02:21:05,975
+mid hesapladım. Tamam. Ve yine soldaki parça için şunun içine tekrardan girdim. Daha fazla gidebiliyor muyum? Low, high'dan ufak büyük dönüşümünü sağladığı için. Şurası low, şurası high ya. Daha fazla bölemiyorum. Tek göze kadar düştüm. İşte artık burada daha fazla kendi içinde merge sort'a geri gidemiyorum.
+
+876
+02:21:06,291 --> 02:21:22,851
+Ne yapacağım? Bir yukarı çıkacağım. Bir yukarı çıkmak ne demek? Buraya geri dönmek demek. Şimdi neresi çalışacak? Burası çalışacak. Mid artı birden h'ya kadar. Yani şöyle çizeyim onu da altında. Burasını mergesort'a götürecek. Bu da daha fazla gidemediği için bitti.
+
+877
+02:21:34,548 --> 02:21:36,368
+Bunu ve bunu.
+
+878
+02:21:37,268 --> 02:21:48,848
+Sonrasında şuradaki dörtlüyü, buradaki dörtlünün ikilisini, birlisini, birlisini, sonra buradaki dörtlüyü, bunun birlisini, birlisini yaptım.
+
+879
+02:21:49,268 --> 02:21:51,808
+Böyle merge sırasıyla kendimi çağıracağım.
+
+880
+02:21:52,228 --> 02:21:57,927
+Gördüğünüz gibi her seferinde sol tarafı merge sort'a çağır, sağ tarafı merge sort'a çağır.
+
+881
+02:21:58,355 --> 02:22:10,495
+Bunlar bittikten sonra da merge et. Şimdi bunu henüz daha görmedik. Şöyle kırmızıyla çizelim. Burası daha yok. Demek ki benim bir merge işlemine ihtiyacım var.
+
+882
+02:22:25,043 --> 02:22:50,423
+sıralanmış olarak koymuş olacağım. Şu ikisini merge edip alıp buraya sıralanmış olarak koyacağım. Sonra da şunu ve şunu alıp merge edip buraya sıralanmış olarak koyacağım. Bu taraf bitti. Şimdi buraya geleceğim tık tık tık. Şu ikisini merge edeceğim. Buraya sıralı olarak koyacağım. Ondan sonra bu ikisini merge edeceğim.
+
+883
+02:22:50,963 --> 02:22:56,203
+Buraya sıralı olarak koyacağım. Bu ikisini merge edip buraya sıralı olarak koyacağım.
+
+884
+02:22:56,203 --> 02:23:07,963
+Sonra da en son adımda buradaki dörtlüyü ve buradaki dörtlüyü merge edip şöyle yapalım. Buraya sıralı olarak koyacağım.
+
+885
+02:23:07,963 --> 02:23:14,963
+Tamam. Bu sayede ne yapmış oldum? Yarı boyutta kendimi çağırdım. Yarı boyutta kendimi çağırdım.
+
+886
+02:23:16,084 --> 02:23:25,584
+Sol tarafı çağır, sağ tarafı çağır şeklinde. Toplamda yine n tane eleman için işlem yapmış oldum ama bunları şey olarak arka arkaya çağırdım.
+
+887
+02:23:26,388 --> 02:23:32,508
+Eğer bir paralel mimarim olsaydı şunu ve şunu aynı anda işletirdim.
+
+888
+02:23:32,508 --> 02:23:49,727
+Yani bu fonksiyon çağrısını şöyle çizdiğimi düşündüğünüzde şuradan geldikten sonra sanki bu paralel aynı anda eş zamanlı olarak çalışıp sonrasında merge işlemini gerçekleştirirdim.
+
+889
+02:23:49,855 --> 02:23:56,075
+Tabi bu doğru bir şey gösterimi değil ama bunların paralelleştirilebildiğini tekrardan söylemiş oluyor.
+
+890
+02:23:56,495 --> 02:23:57,575
+Hocam size sorabilir miyim?
+
+891
+02:23:57,736 --> 02:23:58,036
+Sor.
+
+892
+02:23:58,495 --> 02:24:05,435
+Biz bu birleştirme aşamasında mesela en üsttekinde iki tarafta sıralı fakat hani buna iç içe geçmesi gerekiyor.
+
+893
+02:24:05,435 --> 02:24:06,595
+Bunun maliyeti ne oluyor?
+
+894
+02:24:07,195 --> 02:24:08,515
+Şimdi göreceksin bu işlemi.
+
+895
+02:24:08,855 --> 02:24:09,775
+Şimdi ona geçeceğim.
+
+896
+02:24:10,515 --> 02:24:11,255
+Dur bekle.
+
+897
+02:24:11,615 --> 02:24:13,295
+Al işte bu maliyet.
+
+898
+02:24:14,095 --> 02:24:14,536
+Tamam mı?
+
+899
+02:24:15,795 --> 02:24:16,615
+Neymiş maliyeti?
+
+900
+02:24:20,308 --> 02:24:27,247
+Söyle bakalım maliyeti neymiş? Şimdi önce burada bir şey...
+
+901
+02:24:27,247 --> 02:24:28,448
+Ben gibi gözüküyor ama...
+
+902
+02:24:28,448 --> 02:24:37,188
+Evet. Burada bir şey maliyetimiz var. Aslında n ikiye böldüğümüz için de n log yani toplamda olacak. Neyse, onu da analizinde yapacağız.
+
+903
+02:24:38,468 --> 02:24:43,747
+Merge işlemi bizim esas dertli noktamız. Başta da söyledik. Bölmek çok kolay.
+
+904
+02:24:44,404 --> 02:24:50,144
+Al bıçağı eline şak şak şak şak ikiye böyle böyle git. Yaptığımız şey tam olarak da buydu.
+
+905
+02:24:50,644 --> 02:24:56,044
+Low'dan mid'e kadar bir dilim, mid'den high'a kadar bir dilim diye ikiye böldüm.
+
+906
+02:24:56,283 --> 02:25:00,184
+Aynı içinde geldiğimde yine onu da ortadan ikiye, ortadan ikiye böyle böyle gittim.
+
+907
+02:25:00,664 --> 02:25:05,204
+Nereye kadar? Bölemediğim. Yani low ile high ters dönene kadar.
+
+908
+02:25:05,984 --> 02:25:09,164
+Tek eleman kalana kadar diyelim ya da bu işleme devam ettim.
+
+909
+02:25:09,620 --> 02:25:23,659
+Şimdi geldik birleştirmeye. Neydi? Barış ve özgürlük getirdik. Ülkeyi böldük. Şimdi demokrasiyi inşa edip yeni bir ülke kuracağız. Sıralı dizi oluşturacağız. Şimdi geldik bunun nasıl yapılacağına.
+
+910
+02:25:24,880 --> 02:25:35,659
+Şimdi burada bizim bir, yani Mertzort'ta bir sıkıntımız var. Daha doğrusu bir ihtiyacımız var. Bu ihtiyaçta...
+
+911
+02:25:36,111 --> 02:25:37,752
+Harici bir alan.
+
+912
+02:25:38,551 --> 02:25:46,631
+Sıralayacağımız dizi kadar harici bir alan ihtiyacı duyuyoruz diye.
+
+913
+02:25:47,151 --> 02:25:51,471
+İşte şurada görüyorsunuz bir auxiliary diziye bunu kopyalıyorum.
+
+914
+02:25:51,860 --> 02:26:09,479
+Dizi olduğu gibi kopyalıyorum. Bunun sebebi de şu, hani küçük büyük kontrolüyle birleştire birleştire gidecektim ya, işte orada onu takip edebilmek adına ya da bir yere yazabilmek adına harici bir diziye ihtiyaç duyuyorum. Bunu burada bir kenarda kopyalayarak tuttuk.
+
+915
+02:26:10,420 --> 02:26:30,720
+Buradan bir n geldi. Tamam. Neyse, şimdi esas dert şu. Low'dan high'a kadar gideceğim. Eğer i, şuradaki değişken, mid'den büyük ise bu ne demektir? Şu demektir. Örnek üzerinde yaptığımda daha iyi göreceksiniz. Soldaki diziden bir elemanı al, çık diye yaz.
+
+916
+02:26:31,252 --> 02:26:56,072
+Eğer bu değilse o zaman sağdaki diziden elemanı al çıktığı yaz. Eğer bu da değilse iki elemanı karşılaştır. Hangisi küçük ise onu çıktığı yaz. Ve ilgili parçacığın indisini bir arttır. Yani J'yi ya da İ'yi. İlgili kolda hangisinden aldığı zaman onun değerini bir arttır şeklinde ilerleyerek çıktığı oluşturacağız.
+
+917
+02:26:57,907 --> 02:27:24,448
+Örnek üzerinde göstereyim. Çok daha iyi anlayacaksınız. Bakın. Bu benim dizim. Şeylerden oluşmuş burada dizimiz. EEGMR, şey Mert Trace yazıyor aslında burada. Neyse. ACERT. Tamam mı? Şimdi ben bunu olduğu gibi Oxlard'ı diziye kopyaladım. EEGMR, ACERT diye kopyaladım.
+
+918
+02:27:25,363 --> 02:27:40,763
+Şimdi ne yapacağım? Ben ilk olarak bu diziyi ikiye böleceğim. Yani on tane eleman var ya şurada beşten böldüğümü düşünelim.
+
+919
+02:27:40,763 --> 02:27:47,144
+Yani ben bunu kendi içinde aslında merge sort yapacağım.
+
+920
+02:27:47,476 --> 02:27:54,195
+Bu da ne demektir? Şöyle ifade edeyim. Bu tek bir adımı. Daha sonrasında daha fazlasını da göreceğiz.
+
+921
+02:27:58,195 --> 02:28:23,675
+Tek bir adım için söylüyorum. Sonuna kadar bölmedim. Sadece 5-5 böldüğümü nasıl merge ettiğimi söylemeye çalışıyorum. Tamam mı? Bunlar yine gördüğünüz gibi kendi içinde sıralanmış. Böyle e, e, g, m, r, a, c, e, r, t şeklinde sıralanmış. Şimdi şuradaki kod nasıl çalışıyor onu göstermeye çalışıyorum. Şuradaki kontrol. Evet. Ben buradan karşılaştırdım.
+
+922
+02:28:25,811 --> 02:28:53,112
+Şu alt diziye bakıyorum. Bir de bu alt diziye bakıyorum. İlk elemanlarını karşılaştıracağım. Şimdi i 0, j de 5'i gösteriyor. Hatta şöyle okla gösterelim. Şurayı ve şurayı gösteriyoruz. Tamam mı? Şimdi ben e ve a'yı karşılaştırdım. Hangisi küçük? A küçük. Tamam. O zaman a'yı çık diye yazdım. Yani
+
+923
+02:28:54,291 --> 02:29:05,631
+mouse, şuradaki kontrolü gerçekleştirdim. Tamam mı? Buradakini çık diye yazdım. AK eşittir, AJ, J eşittir, J artı bir işlemini gerçekleştirdim.
+
+924
+02:29:06,031 --> 02:29:12,991
+Çık diye yazdığımı nerede görüyorum? Bakın şurada A'yı A dizisinin çıktısı olarak oluşturdum bu adımda.
+
+925
+02:29:12,991 --> 02:29:16,691
+Sıfırıncı iterasyonda. İ eşittir.
+
+926
+02:29:17,523 --> 02:29:38,984
+K şiddetir low'dan H'ya doğru gidiyor ya. İşte orada. Birinci adımda A'yı seçtim. Ve J'yi bir arttırdım. Bu ne demek oldu? Artık benim indisim şurayı gösteriyor. Tamam. Bu hala burayı gösteriyor. Şöyle tekrardan çizelim. Şimdi karşılaştırıyorum.
+
+927
+02:29:39,827 --> 02:30:01,047
+A, J ile A, I'yi karşılaştırıyorum. A, Oks, J ile A, Oks, I'yi karşılaştırıyorum. Pardon. C görüyorum, E görüyorum. Hangisi çık diye yazılacak? Küçük olan. C'yi çık diye yazıyorum. Ve bunun indisini bir arttırıyorum. Bu hala burayı gösteriyor. Şimdi E ile E'yi karşılaştırıyorum.
+
+928
+02:30:02,067 --> 02:30:22,747
+Soldaki hani önce olduğu için onu seçtim. Eşitlerdi görüyorsunuz. Tamam eşitlikte birinci taraftan aldığımızı düşünelim. E'yi çıktıya yazıyorum. İndisini bir arttırıyorum. Bu hala burayı gösteriyor. Yine E gelmiş. E ile E'yi karşılaştırıyorum. Yine soldakini alıyorum. E olarak çıktıya yazıyorum. İndisini bir arttırıyorum.
+
+929
+02:30:23,188 --> 02:30:24,768
+Bu hala burayı gösteriyor.
+
+930
+02:30:25,708 --> 02:30:27,188
+8. indisi gösteriyor.
+
+931
+02:30:27,728 --> 02:30:29,468
+7. indisi gösteriyor.
+
+932
+02:30:29,948 --> 02:30:31,927
+Şimdi G görüyorum, E görüyorum.
+
+933
+02:30:32,468 --> 02:30:33,907
+Karşılaştırdım. Hangisi küçük?
+
+934
+02:30:34,407 --> 02:30:35,907
+Sağ taraftaki parçadaki küçük.
+
+935
+02:30:36,008 --> 02:30:39,728
+O zaman bunun indisini bir arttırıp E'yi çıktıya yazıyorum.
+
+936
+02:30:40,448 --> 02:30:43,188
+A, C, E, E, E şeklinde birleşti.
+
+937
+02:30:44,587 --> 02:30:46,008
+Bu hala burayı gösteriyor.
+
+938
+02:30:46,808 --> 02:30:48,308
+G ve R görüyorum.
+
+939
+02:30:48,308 --> 02:30:49,308
+G daha...
+
+940
+02:30:50,036 --> 02:30:54,416
+Küçük olduğu için, çıktıya G'yi yazıyorum, indisini bir arttırıyorum.
+
+941
+02:30:55,736 --> 02:30:57,695
+Bu hala R'yi gösteriyor.
+
+942
+02:30:58,456 --> 02:31:00,736
+M ve R'yi karşılaştırıyorum.
+
+943
+02:31:00,835 --> 02:31:01,655
+M daha küçük.
+
+944
+02:31:02,155 --> 02:31:04,576
+M'yi çıktıya yazıyorum, bir arttırıyorum.
+
+945
+02:31:04,956 --> 02:31:06,155
+Bu hala bunu gösteriyor.
+
+946
+02:31:06,916 --> 02:31:09,115
+R ve R'yi karşılaştırıyorum, eşitlik var.
+
+947
+02:31:09,236 --> 02:31:11,335
+Soldakini alıyorum, çıktıya yazıyorum.
+
+948
+02:31:11,456 --> 02:31:12,036
+Şuraya yazdım.
+
+949
+02:31:12,655 --> 02:31:14,536
+Şimdi artık bakın bu H'yı geçti.
+
+950
+02:31:15,216 --> 02:31:15,416
+Değil mi?
+
+951
+02:31:16,295 --> 02:31:17,335
+Şöyle geri geleyim.
+
+952
+02:31:18,611 --> 02:31:38,291
+Soldakilerin hepsini bitirdim. Artık soldan bir şey alabilir miyim? Alamam. Değil mi? Yani ne oldu? İ büyüktür mid oldu. O zaman artık sol tarafa hiç bakmam. Kalanların hepsini teker teker kopyalarım sağ taraftan. Tersi durum olabilirdi. Orada da şu kol çalışacaktı.
+
+953
+02:31:38,644 --> 02:31:43,704
+Sağdakileri bitirmiş olabilirdim. Kalan soldakilerin hepsini alıp kopyalayacaktım. Yapacağım iş miyiz?
+
+954
+02:31:44,164 --> 02:31:51,564
+Algoritmadaki şu dallar aslında bunu karşılaştırıyor. Yani artık R'yi ve T'yi tak tak diye çıktıya aldım.
+
+955
+02:31:52,044 --> 02:31:54,763
+R'yi aldım, bir arttırdım, T'yi aldım, bir arttırdım, bitti.
+
+956
+02:31:55,283 --> 02:32:13,683
+Ve bu şekilde öncesini görmeden sadece iki parçanın, şuradaki beşli ve buradaki beşlinin nasıl merge edildiğini ve çıktığı, nasıl kopyalandığını izlemiş, üzerinde işlemlerin nasıl yapıldığını karşılaştırmalarını takip etmiş olduk.
+
+957
+02:32:14,283 --> 02:32:18,963
+Anladık mı? Şimdi bu sadece dediğim gibi son adım artık böyle iki beşliyi birleştirdik.
+
+958
+02:32:20,788 --> 02:32:25,908
+tek elemana kadar bölüp birleştire birleştire toplayarak gelmemiz gerekecek.
+
+959
+02:32:26,568 --> 02:32:29,927
+Şimdi o tarafa doğru, o örneğe doğru ilerleyelim.
+
+960
+02:32:31,288 --> 02:32:35,788
+Feyni vermiştik ama Merge Sort'un bir de psodokodunu da buraya yazmışım.
+
+961
+02:32:37,788 --> 02:32:39,788
+En büyüktür bir ise...
+
+962
+02:32:40,144 --> 02:32:56,543
+Önce işte A'yı B'ye ve bir parçasını B'ye, bir parçasını C'ye kopyalar. Ondan sonra B ve C'yi kendi içinde tekrar merge sortu çağır ve B, C, A dizisini merge ile birleştir demişim.
+
+963
+02:32:56,816 --> 02:33:07,076
+Bunlar, dediğim gibi, şu iki parçayı eğer yapabiliyorsanız, mesela mimariniz izin veriyorsa, paralel olarak çalıştırarak toplamda daha efektif olabilirsiniz.
+
+964
+02:33:07,656 --> 02:33:12,676
+Buradaki merge işlemi de algoritmasının akış diagramını verdim, anlattım.
+
+965
+02:33:13,007 --> 02:33:25,948
+Fakat Piso'da kod olarak da yazdım. İkiye bölünmüş B ve C dizileri üzerinden. Yaptığımız şey tam olarak aslında şu. İ küçüktür P olduğu sürece ve J küçüktür Q olduğu sürece eğer
+
+966
+02:33:26,868 --> 02:33:28,567
+Şöyle göstereyim, geri geleyim.
+
+967
+02:33:28,988 --> 02:33:29,128
+Tamam.
+
+968
+02:33:29,488 --> 02:33:32,488
+Şunları bir while ile de kontrol edebilirim.
+
+969
+02:33:32,968 --> 02:33:35,927
+Buradaki while kontrolü olarak ifade edildim.
+
+970
+02:33:36,567 --> 02:33:40,828
+Eğer B küçükse, çıktığıya B'den koy ve indisini arttır.
+
+971
+02:33:40,828 --> 02:33:48,028
+Eğer C küçükse, çıktığıya C'den al, sağdaki parçadan al ve onun indisini bir arttır.
+
+972
+02:33:48,188 --> 02:33:50,828
+Her seferinde K'yı da bir arttır ki çıktığı da ilerletebil.
+
+973
+02:33:55,540 --> 02:34:03,244
+P, İ, P olduysa, yani işte sol taraf bittiyse hepsini kalan sahaları kopyala. Değilse...
+
+974
+02:34:03,379 --> 02:34:07,099
+Sol taraftakileri kopyala şeklinde de bir kodu gerçekleştirebilirsiniz.
+
+975
+02:34:07,659 --> 02:34:12,019
+Yani illa tek bir merge implementasyonu olacak diye bir şey söz konusu değil.
+
+976
+02:34:12,159 --> 02:34:14,259
+Burada da varyasyonlar yaratabilirsiniz.
+
+977
+02:34:14,739 --> 02:34:21,159
+Ama yaptığımız tek şey karşılaştırmak, küçük olanı çıktıya almak, çıktı dizisini yazmak.
+
+978
+02:34:21,159 --> 02:34:24,259
+İşte orada bir kopyalama işlemi yapmamız en başta gerekiyor.
+
+979
+02:34:26,195 --> 02:34:31,515
+Eğer sol ya da sağ parça tükendiyse diğer tarafı olduğu gibi yazmak.
+
+980
+02:34:32,615 --> 02:34:42,655
+Her seferinde bu kontrolden kurtulmak için aslında böyle bir ekstra kalanı kopyala şeklinde bir çözüm gerçekleştirmeye çalışıyoruz.
+
+981
+02:34:42,655 --> 02:34:45,995
+Şimdi bunun örneği şöyle.
+
+982
+02:34:46,739 --> 02:35:07,619
+Tabii trace'ini yine yapacağız. Elimizde 8, 3, 2, 9, 7, 1, 5 ve 4 şeklinde bir dizi tanımlanmış olsun. Ben bunu ilk önce merge ettiğimde ne yapacağım? Hemen low'larını, high'larını çizelim. Low burası, mid burası, high burası değil mi?
+
+983
+02:35:08,180 --> 02:35:35,119
+2'ye böldüm. İşte 8, 3, 2, 9 bu tarafa gitti. 7, 1, 5, 4 bu tarafa gitti. Tabii ki eğer düz mantıkla ilerliyorsak önce şu yapıldı. 1 diyelim buna. Tamam mı? Ondan sonra bu 2'ye bölündü. Şuraya geldik ikinci adımda. Tamam. Sonra üçüncü adımda şunu... Ne biçim 3 yazdım ya? Şöyle yapalım.
+
+984
+02:35:35,664 --> 02:35:38,783
+Üçüncü adımda da bu bölmeyi gerçekleştirdik.
+
+985
+02:35:39,264 --> 02:35:50,344
+Dördüncü adım, beşinci adım, altıncı adım, yedinci adım, sekizinci adım, dokuzuncu adım şeklinde bölmeleri gerçekleştiriyorum.
+
+986
+02:35:50,984 --> 02:35:52,104
+Şimdi onları silelim.
+
+987
+02:35:52,283 --> 02:35:54,244
+Tekrardan şeye bakalım.
+
+988
+02:35:55,623 --> 02:35:58,684
+Low, mid ve high bunlardı.
+
+989
+02:35:59,024 --> 02:36:01,524
+Şimdi buradaki low, mid ve high bu.
+
+990
+02:36:02,067 --> 02:36:20,567
+Buradaki low, mid ve high burada. Artık burada low, mid ve high kalmadı. Buradakilere bakacak olursak, onlar da yine aynı şekilde. Burada da sadece midleri çizeyim. Şöyle. Tamam. Burada. Şimdi artık ben problemi bölebildiğim kadar böldüm.
+
+991
+02:36:20,816 --> 02:36:26,216
+8, 3, 2, 9, 7, 1 ve 5, 4'lük tekil şeyler haline getirdim.
+
+992
+02:36:26,516 --> 02:36:28,996
+Şimdi ilk aşamada ben nereyi çözeceğim?
+
+993
+02:36:29,496 --> 02:36:33,456
+Şurayı merge edeceğim.
+
+994
+02:36:34,776 --> 02:36:34,996
+Tamam.
+
+995
+02:36:35,516 --> 02:36:38,256
+Merge algoritmasına şöyle şuraya kadar geri geleyim.
+
+996
+02:36:39,316 --> 02:36:39,556
+Tamam.
+
+997
+02:36:39,695 --> 02:36:40,596
+Low'dan high'a kadar.
+
+998
+02:36:40,776 --> 02:36:42,195
+Tabii iki tane olduğu için çok kolay.
+
+999
+02:36:42,195 --> 02:36:46,116
+Sadece bir karşılaştırma ve çık diye yazma işlemimiz olacak.
+
+1000
+02:36:47,396 --> 02:36:47,836
+Nerede bu?
+
+1001
+02:36:48,564 --> 02:37:10,984
+8, 3. Soldaki mi küçük, sağdaki mi küçük? Sağdaki küçük. Sağdakini al. Şöyle. Pardon. Sağdaki değeri al. Çık diye yaz. Sağda bir şey kaldı mı? Hayır. O zaman soldakilerin kalanının hepsini çık diye kopyala. Tamam.
+
+1002
+02:37:11,603 --> 02:37:13,703
+Bunu yapmış oldum. 3-8'i oluşturdum.
+
+1003
+02:37:13,703 --> 02:37:19,323
+Şimdi sıra geldi. Bir sonrakine, o da şuradaki merge işlemini yapmak.
+
+1004
+02:37:19,943 --> 02:37:26,183
+2 ve 9. Hangisi küçük? Soldaki küçük. Soldakini al, çıktı diye yaz. Sağdakini olduğu gibi kopyala.
+
+1005
+02:37:26,923 --> 02:37:37,523
+Şimdi, şunları temizleyeyim. 3-8 ve 2-9'u merge edeceğiz. Artık elimizde dörtlük bir tabii boş çıktığı önceki oluşturduk.
+
+1006
+02:37:40,435 --> 02:37:44,095
+Şöyle i ve j pointerlarımızı tutalım.
+
+1007
+02:37:44,275 --> 02:37:46,536
+i burayı gösteriyor, j burayı gösteriyor.
+
+1008
+02:37:47,495 --> 02:37:48,255
+Hangisi küçük?
+
+1009
+02:37:48,695 --> 02:37:49,615
+2 küçük.
+
+1010
+02:37:50,396 --> 02:37:54,795
+2'yi çıktıya yaz ve şunu da silelim.
+
+1011
+02:37:57,876 --> 02:38:23,256
+İndisini bir arttır. İkiyi şöyle çık diye yazdığımızı da şurada gösterelim. Tamam. Şimdi 3 ve 9'u karşılaştırıyor merge. Hangisi küçük? 3 küçük. Soldaki küçük. Hemen onu alıp şeyini bir arttırıyor pointer'ını. Tabi 3'ü de çık diye bu arada yazıyor. Bunu da şöyle altını çizelim. Yazmış olduk.
+
+1012
+02:38:23,603 --> 02:38:48,963
+8 ile 9'u karşılaştırıyor. 8 küçük. Bunun indisini bir arttırdığımızda zaten şeyi geçti. Artık çizmeme gerek kalmadı. 8'i çıktı diye yazdım. Artık solda bir şey kalmadığı için, şu i bu tarafa geçtiği için sağdakilerin kalan hepsini kopyalıyor. Yani 9'u, sadece 9 var, 9'u buraya kopyalıyor. Buradaki merge işlemi de bitti. Şimdi nereye geçeceğiz? Bu tarafa.
+
+1013
+02:38:50,004 --> 02:38:51,264
+Tekrar temizleyelim.
+
+1014
+02:38:51,824 --> 02:38:56,844
+7 ve 1. Hangisi küçük? Sağdaki küçük. Onu taşıyor çıktığıya.
+
+1015
+02:38:57,904 --> 02:39:01,044
+Sağda hiçbir şey kalmadığı için soldakilerin hepsini kopyalıyoruz.
+
+1016
+02:39:02,184 --> 02:39:07,244
+Sonra 5 ve 4. Yine aynı şekilde sağdakini küçük olduğu için çıktığıya yazıyoruz.
+
+1017
+02:39:08,404 --> 02:39:13,164
+5 daha, pardon, sağda hiçbir şey kalmadığı için solda kalanların hepsini kopyalıyoruz.
+
+1018
+02:39:14,224 --> 02:39:17,304
+4 ve 5 çıktığıya kendi içinde sıralı olarak yerleşiyor.
+
+1019
+02:39:18,963 --> 02:39:46,304
+Şimdi burayı merge edeceğiz. Yine pointerlarımızı isterseniz çizelim. Şurada 1 var, şurada da 4 var. Çıktıya 1 geliyor. Bunun indisi 1 artıyor. 7 var, 4 var. 4 geliyor. İndisi 1 artıyor. 7 var, 5 var. 5 geliyor. Bu artık dışarıyı gösterdiği için solda kalanların hepsi ki sadece tek bir eliman var. 7 buraya kopyalanıyor.
+
+1020
+02:39:47,028 --> 02:40:02,028
+Şimdi ne yapacağız? Dörtlüleri merge edeceğiz. Dörtlüleri merge ettiğimizde de, aynı o hani merge trace yaptık ya şurada. Tam olarak şu adımı aslında görmüştük biz demin buradayken. Son adım artık.
+
+1021
+02:40:13,396 --> 02:40:40,876
+Şöyleydi. Ondan sonra pointerı 1 arttı. Buraya geldi. 1'i çıktı diye yazdık. 2 ile 4, 2'yi çıktı diye yazdık. Pointerını arttırdık. 3 ile 4, 3'ü çıktı diye yazdık. Pointerını arttırdık. 8 ile 4 karşılaştırdık. 4'ü çıktı diye yazdık. Pointerını arttırdık. 5 ile 8, 5'i çıktı diye yazdık. Pointerını arttırdık.
+
+1022
+02:40:41,231 --> 02:40:59,311
+7 ile 8, 7'yi çıktıya yazdık, pointer'ını arttırdık. Kalmadı. Artık hep buradan çekeceğiz. 8'i yazdık, arttırdık. 9'u yazdık, arttırdık. Bu da bitti. Ve böylece nihai çıktığı merge etmiş olduk.
+
+1023
+02:40:59,572 --> 02:41:19,572
+Okey. İşte bu şekilde önce bölüp taa şuraya kadar gördüğümüz seviyeye kadar bölüyoruz. Burada hiçbir iş yapmıyoruz aslında. Sürekli olarak midi hesaplayıp midden aşağısı bir merge'e merge sort'a midden yukarısı high'a kadar olanlar da ikinci merge sort'a gönderilmiş oluyor.
+
+1024
+02:41:19,572 --> 02:41:27,332
+Ne zamana kadar? Low ve high yer değiştirene kadar yani tek eleman kalana kadar buradaki merge'leri yaptık.
+
+1025
+02:41:27,572 --> 02:41:47,572
+Sonrası merge sortları yaptık. Yani divide'ları yaptık. Esas aslında bütün olay buradaki, pardon, şuradaki diyeyim şöyle şunu yarım alayım. Tamam mı? Yani şunları hepsini çizmeye çalıştım da ufak oldu. Buradaki merge olayı aslında bizim için esas. Burada da bizim...
+
+1026
+02:41:47,855 --> 02:41:55,236
+Ekstradan bir diziye ihtiyaç duyduğumuzu söyledik ve oraya karşılaştırıp küçük olanı çıktığıya kopyala.
+
+1027
+02:41:55,876 --> 02:42:04,576
+Kalanları da indislerini arttır arttır, bittiğinde de kalan kısmı olduğu gibi kopyalı şeklinde bir çözüm ile çıktığımızı oluşturmuş olduk.
+
+1028
+02:42:05,855 --> 02:42:09,755
+Şimdi bunu ikinci bir örnekle tekrar ifade edeyim.
+
+1029
+02:42:09,836 --> 02:42:12,216
+Hani şu Merge Sort Example diye bir yazı yazalım buraya.
+
+1030
+02:42:12,296 --> 02:42:13,896
+Yine karakterler üzerinden yapalım.
+
+1031
+02:42:14,224 --> 02:42:28,504
+16'lık bir dizimiz var. Merge, sort, example. Şimdi ne yapacağız? İlk olarak ikiye böleceğiz. Tamam. Ondan sonra bir daha ikiye böleceğiz. Sol taraf üzerinden doğal olarak gideceğiz.
+
+1032
+02:42:30,644 --> 02:42:36,344
+Çizgiyi alalım. İkinci bölmemiz nerede yapılacak? Burada yapılacak.
+
+1033
+02:42:36,819 --> 02:42:51,959
+Sonra yine sol tarafı ikiye böleceğiz. Ne demektir bu? MEVRG'yi böleceğiz. Tamam. Sonra bunları da kendi içinde MEVE olarak böldüğümüzü tabii şöyle çizeyim. Sonra birleştireceğiz. Ne yaptık birleştirince? İlk adımda.
+
+1034
+02:42:52,435 --> 02:43:00,156
+E geldi, şuradan çıktı ya. Bu taraf bittiği için sol tarafı olduğu gibi kopyaladım. E ve M şeklinde sıralandılar.
+
+1035
+02:43:00,775 --> 02:43:07,836
+Şimdi burası bittiği için buraya geri, ikinci adımda burayı şey yapacağım. Bunu da şöyle bölebilirim aslında.
+
+1036
+02:43:08,476 --> 02:43:14,935
+Tekerle, tek tek olsun. G taşındı, çıktı ya. R taşındı, çıktı ya.
+
+1037
+02:43:15,443 --> 02:43:23,583
+Yani bu taraf E, M ve G, R şeklinde tamamlandı. Ama artık bu ikilileri birleştirip bir dörtlü haline getireceğim.
+
+1038
+02:43:25,003 --> 02:43:37,543
+E ve G'ye baktık, E'yi taşıdık. Burada M var şimdi. M ve G'ye baktık, G'yi taşıdık, R'ye geldik. M ve R'yi karşılaştırdık, M'yi taşıdık. Sol taraf bittiği için R'yi çıktı diye kopyaladık.
+
+1039
+02:43:37,543 --> 02:43:40,683
+Ne oldu? İlk dörtlüyü bu şekilde oluşturmuş oldum.
+
+1040
+02:43:41,811 --> 02:43:57,891
+Sol, sol, sol bitti. Değil mi? Şimdi ne yapacağım? O solun sağına geçeceğim. Yani şuradaki dörtlüye geçeceğim. Buradaki merk'den sonraki esora geçeceğim. Şimdi esoru böleceğim. Önce ikiye bölüyorum. Şöyle.
+
+1041
+02:43:59,059 --> 02:44:19,780
+Tamam, sonra E ve S'yi bölüyorum. E ve S'yi birleştirdiğimde yine E ve S olarak birleşiyor. Sonra O ve R'yi bölüyorum. Bunun sağına geçtim. O ve R'de şansımız aynı şekilde geldi. Sıralı olduğu için kendi içinde. Şimdi buradaki dörtlüyü birleştireceğim. İkilleri birleştirip dörtlü yapacağım. E ve O'yu karşılaştırdım. E'yi taşıdım.
+
+1042
+02:44:20,079 --> 02:44:32,100
+S ve O'yu karşılaştırdım, O'yu taşıdım. S ve R'yi karşılaştırdım, R'yi taşıdım. Sağ taraf bittiği için S'yi çık diye kopyaladım. Ne oldu? Burada da EORS tamamlanmış oldu.
+
+1043
+02:44:33,100 --> 02:44:43,760
+Şimdi ne yapacağız? En soldaki dörtlüğü ile en solun bir sağındaki dörtlüğü birleştirip ilk böldüğüm, şuradan böldüğüm merge'ün
+
+1044
+02:44:44,852 --> 02:45:09,572
+0'dan 7'ye kadar olan kısmını tamamlayacağım. Nasıl yapacağız bunu? E ve E'yi karşılaştır, E'yi çıktıya yaz. G, E'yi karşılaştır, E'yi çıktıya yaz. G ile O'yu karşılaştır, G'yi yaz. M ile O'yu karşılaştır, M çıktı da. R ile O'yu karşılaştır, O çıktı da. R ile R'yi karşılaştır, R çıktı da. Bu taraf bitti.
+
+1045
+02:45:10,067 --> 02:45:34,368
+Artık kalanları kopyala. R'yi ve S'yi çık diye kopyala. Ne oldu? Ben sol tarafı, sol sekizliyi kendi içinde sıralamış oldum. Yani şuradaki algoritmamın, şöyle gösterecek olursak, bu tarafını yaptım, yaptım, yaptım, şuraya kadar merge'ünü tamamladım. Yani sol, sol, sol, ondan sonra sağ, ondan sonra merge. Tamam, bu şekilde.
+
+1046
+02:45:36,531 --> 02:46:04,031
+Bu tarafı sırasıyla ilk 7 iterasyonda tamamladım. Sonra ne yapacağız? Sağ tarafa geçeceğiz. Yani algoritmadaki ilk dallanmaya bakarsak bu taraf bitti tamamen. Şimdi şunu yapıyorum diyeceğim. Bunun içinde kendi içinde dallanarak yine sol, sol, sol. Ondan sonra sağ birleştir. Sonra onun sağı, soluğu birleştir diye devam edeceğiz. Bunu trace edersek de.
+
+1047
+02:46:04,500 --> 02:46:07,299
+şöyle olacak. Önce yine
+
+1048
+02:46:09,100 --> 02:46:10,639
+ikiye böleceğim.
+
+1049
+02:46:11,920 --> 02:46:14,476
+Şuradan böleceğim.
+
+1050
+02:46:16,180 --> 02:46:40,740
+Doğru böldüm. Ondan sonra buradan böleceğim. Ondan sonra buradan böleceğim. E ve T'yi kendi içinde sıralayacağım. Şu şekilde çıktığı ürettim. Sol sol sol bitti. Şimdi solun sağına geçtim. X ve A kendi içinde bölündüler. X ve A'yı sıraladığımda A çık diye geldi. Sonra X çık diye geldi. AX şeklinde oluştu. Solun solu ve solun sağı bitti. Şimdi bu ikisi merge edilecek.
+
+1051
+02:46:41,556 --> 02:47:01,976
+E ve A karşılaştırdık. A'yı yazdık. T ve A'yı, pardon, T ve A'yı yazdık. E ve X'i karşılaştırdık. E'yi yazdık. T ve X'i karşılaştırdık. T'yi yazdık. X'i çıktı diye kopyaladık. Ne oldu? Sol, sağ, sol. Komple sol bitti.
+
+1052
+02:47:02,388 --> 02:47:19,828
+Şimdi o merge'un içindeki ikinci merge yerine dallandık. Buradan ikiye böldük, buradan ikiye böldük. M ve P'yi birleştirdik. M ve P olarak aşağı taşındılar. Sonra bunu böldük. L ve E aşağıya E, L şeklinde yer değiştirdik.
+
+1053
+02:47:26,420 --> 02:47:51,180
+Pardon, daha fazla divide edemiyorum. İkilileri birleştirdim, merge ettim. Şimdi bu sağ taraftaki ikili ikiliyi birleştirip dörtlüğü elde edeceğim. M ve P, E ve L var. M ile E'yi karşılaştırdım, E'yi taşıdım. M ile L'yi karşılaştırdım, L'yi taşıdım. Sağ taraf tamamen bittiği için soldakini M ve P olarak çık diye kopyaladım. Burası da tamam.
+
+1054
+02:47:52,115 --> 02:48:05,495
+Sağın sağı da bitti. Şimdi artık ana algoritmadaki ikinci merge işleminin son aşaması, ikinci merge sortun son aşaması olan merge yapacağım. İki dörtlüğü birleştirip bir sekizli haline getireceğim.
+
+1055
+02:48:05,495 --> 02:48:13,636
+A, E'den A geldi, E, E'den E geldi, T, E'den E geldi, T, L'den L geldi.
+
+1056
+02:48:14,579 --> 02:48:28,220
+T, M'den M geldi, T, P'den P geldi, sağ taraf tamamlandı, bunları da çık diye kopyaladım. T'yi kopyaladım, X'i kopyaladım. Ne oldu? Burası da A, E, E, L, M, P, T, X olarak bitti.
+
+1057
+02:48:28,780 --> 02:48:33,440
+Artık bütün rekürsif çağrılarımı tamamlamış oldum. Şöyle geri geleyim.
+
+1058
+02:48:33,744 --> 02:48:49,924
+Bakış diagramı var. Bütün sol tarafın sol sol sağları bitti, merge edildi. Sağ tarafın sağ sol sağları bitti, merge edildi. Yani burası 8'li, burası 8'li kendi içinde işlemi bitti. Şimdi 8 8 birleşip 16'yı oluşturacak ve bitecek.
+
+1059
+02:49:00,371 --> 02:49:02,831
+şöyle yapalım. E ile
+
+1060
+02:49:03,316 --> 02:49:27,876
+A'yı karşılaştıracağız. A çıktı da arttırdım. E ile E'yi karşılaştırdım. E'yi yazdım. Arttırdım. E ile E'yi karşılaştırdım. E'yi yazdım. Arttırdım. G ile E'yi karşılaştırdım. E'yi yazdım. Arttırdım. G, E, E gitti. Dört tane E oldu farkındaysanız. Arttırdım. G ve L, G geldi. M ve L'den L geldi.
+
+1061
+02:49:29,236 --> 02:49:43,935
+Şunu M yaptık. M ve M'den şuradaki M geldi. O ve M'den buradaki M geldi. Şurada P'ye geldik. O ve P'yi karşılaştırdık. O çıktı diye yazıldı. R ve P'yi karşılaştırdık. P çıktı diye yazıldı.
+
+1062
+02:49:45,855 --> 02:49:53,056
+R ve T'yi karşılaştırdık. R çıktı da. Bir daha R gelmiş. R ile T'yi karşılaştırdık. R çıktı da.
+
+1063
+02:49:53,620 --> 02:50:11,000
+S ile T'yi karşılaştırdık. S çıktı da. Burası bitti. Buraya geldik. O zaman kalanları T ve X çıktı diye kopyaladık. Bu şekilde A'dan Z'ye doğru örneğimizi sıralamış olduk.
+
+1064
+02:50:19,376 --> 02:50:24,836
+Bunun analizine bakacak olursak nasıl dallandığımızı ama süremiz de bitmiş ya.
+
+1065
+02:50:25,876 --> 02:50:27,896
+Tamam okey, haftaya devam edeyim o zaman.
+
+1066
+02:50:28,236 --> 02:50:30,476
+Çünkü karmaşıklık analiziyle birlikte anlatacağım onu.
+
+1067
+02:50:31,096 --> 02:50:34,556
+Sonra da bu şekilde görselleştirmesi üzerinden devam edeceğim.
+
+1068
+02:50:34,556 --> 02:50:45,736
+Bu iki örnek üzerinden top down merge sortun nasıl çalıştığını, algoritması, ayrı alternatif olacak şekilde PSEDO koduyla birlikte paylaştım.
+
+1069
+02:50:47,731 --> 02:50:48,683
+Şimdi
+
+1070
+02:50:48,819 --> 02:50:54,319
+Bu mergesort'un analizini gerçekleştireceğiz. Ondan sonra bottom-up mergesort'a bakacağız.
+
+1071
+02:50:55,799 --> 02:50:59,899
+Yine divide and conquer'la başka böyle bir görsel bir problem çözeceğiz.
+
+1072
+02:51:00,559 --> 02:51:06,779
+Daha doğrusu problem uzayımızı nasıl ufaltarak problemi çözüme taşıyabildiğimize bakacağız.
+
+1073
+02:51:07,559 --> 02:51:16,819
+Ve sonrasında da genellikle ikiye bölünür dedim ya, acaba direkt böyle eşit sayıda eleman içerecek şekilde bölmeden de
+
+1074
+02:51:16,819 --> 02:51:37,500
+böl ve yönet yapabilir miyiz? Yani böldüğümüz parçacıklar farklı boyutlarda olabilir mi? Bu da mesela işte indis üzerinden değil de elemanların değerleri üzerinden bir parçalama işlemi gerçekleştirilebilir mi? Buna bakarak da önümüzdeki hafta Divide & Conquer'u tamamlamış oluruz.
+
+1075
+02:51:38,100 --> 02:51:42,060
+Peki, o zaman görüşmek üzere diyelim. Kendinize iyi bakın.
+
+1076
+02:51:42,080 --> 02:51:44,340
+Çarşamba günü ödevin çözümü mü olacak?
+
+1077
+02:51:44,660 --> 02:51:47,520
+Çarşamba günü görüşüyoruz çarşamba.
+
+1078
+02:51:49,380 --> 02:51:51,400
+Sizinle mi yoksa asistanlarla mı?
+
+1079
+02:51:52,560 --> 02:51:54,660
+Her halükarda biz oluyoruz zaten.
+
+1080
+02:51:56,700 --> 02:51:57,240
+Olmuyor muyuz?
+
+1081
+02:51:58,004 --> 02:52:01,644
+Hocam, ödevin çözümü anlatılacak mı diye sordum. Görüşüyoruz derken.
+
+1082
+02:52:04,463 --> 02:52:08,004
+Bakıyoruz. Çözümünü anlatabilirler olabilir.
+
+1083
+02:52:09,584 --> 02:52:10,763
+Tamam, teşekkür ederim.
+
+1084
+02:52:10,804 --> 02:52:12,004
+Şu anda tam şeyi hatırlamıyorum çünkü.
+
+1085
+02:52:12,943 --> 02:52:19,164
+Tamam. Peki. O zaman çarşamba görüşürüz. Kendinize iyi bakın. İyi günler.
+
+1086
+02:52:24,211 --> 02:52:25,211
+Arkadaşlar, bu kadar.

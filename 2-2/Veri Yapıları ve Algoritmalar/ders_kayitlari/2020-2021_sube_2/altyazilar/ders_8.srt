@@ -1,0 +1,467 @@
+1
+00:00:40,787 --> 00:01:03,887
+Merhaba arkadaşlar, hoş geldiniz uygulama saatimize. Bugün ekstra bir uygulama yapmayacağım. Bu hafta sizi rahat bırakmaya karar verdim. Daha fazla şey yapmayayım dedim. Geçen haftada zaten biliyorsunuz quiz oldunuz. Henüz daha okumayı tamamlamadım. Eğer soran varsa şimdiden söylemiş olayım.
+
+2
+00:01:04,371 --> 00:01:16,432
+Bitmedi. Bitmediği için de henüz bir sonuç açıklaması yapmıyorum tabii ki. Bittiği zaman inşallah açıklamaya çalışırım. Listeyi sizlerle paylaşırım.
+
+3
+00:01:17,611 --> 00:01:27,311
+Bugünkü derste sorunuz var mı? Ya da anlamadığınız bir konu kaldı mı? Kafanıza takılan bir husus var mı? Bunları konuşalım.
+
+4
+00:01:27,891 --> 00:01:36,711
+İstiyorum. Eğer yoksa da, dediğim gibi daha fazla uzatmadan 10-15 dakika içinde oturumu kapatabiliriz.
+
+5
+00:01:38,551 --> 00:01:41,432
+Söz sizde. Var mı?
+
+6
+00:01:43,891 --> 00:01:53,312
+Ya da tabii genelde 5 geçeye kadar bekliyorum. Siz de alıştınız buna. 5 geçeye kadar sessizde kalabilirdik aslında katılımın sağlanması açısından.
+
+7
+00:04:12,915 --> 00:04:26,755
+Evet, [öğrenci]'ın sorusu var. Quiz, ödev ve projelerin tarihleri belli mi? Projenin tarihi belli, diğerleri dinamik. Bazı haftalarda olacak. Mesela bu hafta yok dedim ya, bu hafta yapmayacağız.
+
+8
+00:04:28,895 --> 00:04:38,675
+Peki, şöyle bir soru sorayım. Linkli listeyle bir insertion sort anlatmıştım ve nasıl yapılacağıyla alakalı bir şeyler göstermiştim. Deneyen oldu mu?
+
+9
+00:04:45,300 --> 00:04:48,879
+Güzel. [öğrenci] denemiş. Başka?
+
+10
+00:04:53,779 --> 00:04:55,779
+Başka da olmamış galiba. Peki.
+
+11
+00:04:58,759 --> 00:05:04,939
+Şimdi mesela bir soru ya da başka bir düşünün bakalım nasıl yaparsanız diye.
+
+12
+00:05:05,599 --> 00:05:08,159
+Elimizde bir tane linkli liste var. Tamam mı?
+
+13
+00:05:08,819 --> 00:05:12,079
+Ve ben buradaki linkli listeyi tersine çevirmek istiyorum.
+
+14
+00:05:12,432 --> 00:05:34,412
+Ne demek tersine çevirmek? Son elemanı head yapmak. İlk elemanı da pointer'ını null yapmak istiyorum. Herkes A, B, C, D diye gittiğini düşünün notların. Tam tersine çevirip Z'den A'ya doğru F, E, D, C, B, A şeklinde birbirini point etmesini istiyorum.
+
+15
+00:05:35,252 --> 00:05:44,211
+Bunun için mesela ne kadar bir değişken, ne kadar bir ekstra değişken kullanmamız gerekir ya da nasıl bir mantıkla yürümemiz gerekir.
+
+16
+00:05:45,312 --> 00:05:46,172
+İki tane pointer.
+
+17
+00:05:47,231 --> 00:05:49,272
+Nedir bunlar? Söyleyebilir misin?
+
+18
+00:05:50,292 --> 00:05:53,391
+Hocam sondan kesip başı ekleyebilir miyiz?
+
+19
+00:05:54,731 --> 00:05:57,372
+Ama o zaman şey olmaz, hani A, B'yi, B, C'yi...
+
+20
+00:05:57,372 --> 00:05:58,012
+Geriye dönüyor.
+
+21
+00:05:58,331 --> 00:06:00,752
+Evet. Bütün linkleri ters çevirmenizi istiyorum.
+
+22
+00:06:01,891 --> 00:06:02,987
+Yani diziyi...
+
+23
+00:06:03,124 --> 00:06:05,584
+Baş aşağı çevirmenizi istiyorum. Öyle söyleyeyim yani.
+
+24
+00:06:07,064 --> 00:06:09,524
+Previous ve current. Yeterlidir diyorsun.
+
+25
+00:06:11,444 --> 00:06:13,204
+Peki neresinden başlarız?
+
+26
+00:06:17,843 --> 00:06:21,144
+Baştan mı başlamak mantıklıdır, sondan mı başlamak mantıklıdır?
+
+27
+00:06:34,132 --> 00:06:36,252
+Sonunu bilmiyoruz. O zaman baştan başlayacağız.
+
+28
+00:06:38,731 --> 00:06:40,111
+Güzel. Tamam.
+
+29
+00:06:40,772 --> 00:06:41,872
+Mesela bunu bir düşünün.
+
+30
+00:06:42,591 --> 00:06:44,891
+Bir çalışın. Acaba baştan başlasam ne olur?
+
+31
+00:06:45,588 --> 00:07:01,208
+Diziyi, linkli listeyi, head elemandan yani birinci elemandan başlayarak pointerlarını böyle birincisine nala çevireceksiniz. Sonra ikincinin bireye bağlayacaksınız gibi gibi. Tabii ki nala kadar gitmeniz gerekecek.
+
+32
+00:07:01,208 --> 00:07:13,588
+Ya da tersten başlasanız, nala kadar gidip oradan mı acaba geri gelseniz nasıl olur? Tabii ki bu bir ekstradan maliyet yaratacak zaten çok bariz. Çünkü en azından bir tur sona kadar.
+
+33
+00:07:13,588 --> 00:07:15,068
+gitmeniz gerekir.
+
+34
+00:07:15,708 --> 00:07:16,808
+Bunun dışında mesela
+
+35
+00:07:16,808 --> 00:07:19,288
+diyelim ki yine
+
+36
+00:07:19,288 --> 00:07:21,948
+inticirlerden oluşan bir linkli listeniz var.
+
+37
+00:07:23,768 --> 00:07:25,728
+Şöyle bir soru olsa
+
+38
+00:07:25,728 --> 00:07:27,948
+içindeki en büyük
+
+39
+00:07:27,948 --> 00:07:29,108
+elemanı en sona
+
+40
+00:07:29,108 --> 00:07:31,487
+koyan ya da
+
+41
+00:07:31,487 --> 00:07:33,668
+en küçük elemanı en başa koyan
+
+42
+00:07:33,668 --> 00:07:34,948
+bir çözüm.
+
+43
+00:07:35,788 --> 00:07:37,307
+Nasıl bir algoritma tasarlarsınız?
+
+44
+00:07:43,827 --> 00:07:44,908
+Var mı fikri olan?
+
+45
+00:08:07,636 --> 00:08:27,956
+Her zaman için önce ne diyoruz? Önce bir temel çözüm. En basit çözüm ne olur burada? Listeyi bir kere gezerim ve en büyük değer ne? Onu bir kere öğrenirim. Tamam mı? Diyelim ki 567 en büyük değer çıktı. Ondan sonra 567 numaralı linki bulana kadar tekrar gezerim.
+
+46
+00:08:28,307 --> 00:08:38,307
+Ve sonra onu işte nal görene kadar ilerleyip nal şeyinin sonrasına hani bir sil ve bir ekle işlemiyle koyabilirim.
+
+47
+00:08:38,907 --> 00:08:40,807
+Acaba biraz daha efektif hale getirilebilir mi?
+
+48
+00:08:46,611 --> 00:08:57,751
+Hocam, bulduğumuz max değeri bir temp değişiklerini atasak, sonuna kadar vardığımızda tekrar gezme işlemini yapmadan bağlayabiliriz gibi.
+
+49
+00:08:58,391 --> 00:09:04,432
+Evet, yani bir geçici, sadece integer bile tutsak yeter ama bir tane temporary bir node yapalım.
+
+50
+00:09:05,211 --> 00:09:08,891
+Max değer her gördüğümüzde temporary node'un değerini onunla değiştirelim.
+
+51
+00:09:09,631 --> 00:09:10,971
+Değil mi? Yanlış anlamadım.
+
+52
+00:09:13,364 --> 00:09:14,443
+Evet hocam o şekilde.
+
+53
+00:09:14,903 --> 00:09:20,423
+Evet. Ondan sonra null gördüğümüzde de ama orada şeyi nasıl yapacağız?
+
+54
+00:09:21,884 --> 00:09:26,504
+Ekleme tamam. Null gördüğünde son eleman olarak onu yeni düğümü, temp düğümü ekleyebilirim.
+
+55
+00:09:27,183 --> 00:09:31,884
+Fakat aradaki değeri nasıl sileceğim o zaman? Max değerini.
+
+56
+00:09:32,659 --> 00:09:43,180
+Adresini hani adresini şey olarak tutarım ben. Geçici değişkenli tutarım ve o adresten giderim. Max'ın adresini tutarım. Tamam. Tamam. Yani max pointer'ı tutarım diyorsun.
+
+57
+00:09:44,460 --> 00:09:55,559
+Evet. Evet. Şimdi daha doğru oldu. Güzel. Aynısını küçük eleman içinde yapabiliriz. Peki. Başka ne olabilir?
+
+58
+00:10:00,000 --> 00:10:05,579
+Elimizde bir şey var, linked liste var yine, inticirlardan oluşsun yine, tamam mı? Basit olsun diye.
+
+59
+00:10:06,240 --> 00:10:08,819
+Ve şöyle bir şey yapmak istiyorum.
+
+60
+00:10:10,259 --> 00:10:14,120
+Tek sayılar başa, çift sayılar sona gitsin.
+
+61
+00:10:14,319 --> 00:10:26,419
+Yani hani diyelim ki 10 tane elemanım var, 4 tanesi tek sayı, 6 tanesi çift sayı, 4 tane çift, aman tek sayı, 1. 2. 3. 4. nodlarda kalsın.
+
+62
+00:10:26,740 --> 00:10:33,600
+6 tane çift sayıda işte şeyde kalsın hani 5, 6, 7, 8, 9, 10. notlarda kalsın.
+
+63
+00:10:33,600 --> 00:10:39,600
+Ama tabi burada linked listedeki ilk sıralarını da hani dizilişlerini de kaybetmesinler.
+
+64
+00:10:40,460 --> 00:10:40,940
+Tamam mı?
+
+65
+00:10:41,920 --> 00:10:47,879
+Hani diyelim ki sıralı bir linked listeydi böyle 2, 4, 6 başta şey olsun.
+
+66
+00:10:48,420 --> 00:10:51,700
+Ondan sonra ne bileyim 1, 3, 5, 7 şeyde sonda olsun gibi.
+
+67
+00:10:53,779 --> 00:11:03,000
+Pardon, tam tercih, 1, 3, 5 önde, 2, 4, 6, 8, 10, neyse arkada olsun. Böyle bir reorganizasyon istiyorum. Nasıl yaparız?
+
+68
+00:11:03,819 --> 00:11:07,960
+Ek sayılar kendi içinde sırılı mı olacak? Yani her biri kendi içinde sırılı mı olacak?
+
+69
+00:11:08,159 --> 00:11:13,639
+Aslında sıra önemli değil ama sorted olmalarını kastetmiyorum.
+
+70
+00:11:14,179 --> 00:11:20,399
+Diyelim ki, şöyle bir dakika, chat'e yazayım.
+
+71
+00:11:21,011 --> 00:11:22,111
+Bir örnek olarak.
+
+72
+00:11:22,111 --> 00:11:26,271
+Yani ilk başta oldukları sırayı mı korumamız gerekiyor?
+
+73
+00:11:26,371 --> 00:11:28,652
+Evet, aynen öyle. Onu demek istiyorum.
+
+74
+00:11:28,652 --> 00:11:41,172
+Yani diyelim ki ben 2, 3, 1, ondan sonra ne bileyim 6 ve 7 şeklinde bir şeyim olsun tamam mı?
+
+75
+00:11:41,412 --> 00:11:44,351
+Linkli listem olsun. Ben şöyle bir şey istiyorum.
+
+76
+00:11:47,796 --> 00:12:12,796
+Ne dedik? Çiftleri mi öne dedim? Şey mi dedim? Öne tekleri koyacağız dedik değil mi? Yani şöyle dizmek istiyorum. 3, 1, 7, sonra da 2 ve 6. Tekler öne ama ilk sıralarını koruyarak, çiftler de arkaya yine ilk sıralarını koruyarak. Bunlar linked liste. Bu şekilde bir organizasyon nasıl yaparsınız?
+
+77
+00:12:14,196 --> 00:12:29,635
+Hocam, benim aklıma ilk gelen çözüm şöyle. Çiftlerin ilkinin pointerını tutarım ve de bulduğum ne zaman tek sayı bulursam onu işte buna bağlarım. Yani buradaki pointerı ona bağlarım.
+
+78
+00:12:29,956 --> 00:12:33,915
+O zaman bir ekstra linkli liste mi kullanacaksın?
+
+79
+00:12:34,776 --> 00:12:37,956
+Yok, hayır. Tek bir pointer. Tek bir şey. Pointer, aynen.
+
+80
+00:12:38,611 --> 00:12:51,231
+Bizim çiftlerin başını tuttuğum bir pointer. Şimdi mesela burada 2'yi gösterecek benim elindeki adres. 2'yi gösterdikten sonra işte gidecek gezecek mesela 2'nin gösterdiği değişken nedir?
+
+81
+00:12:51,231 --> 00:12:52,152
+Nexime gittim.
+
+82
+00:12:52,152 --> 00:13:03,611
+Aynen. 3'e baktığı zaman diyecek ki ben 3'ü sayı olduğu için 3'ü 2'ye bağlayayım. 2'ye bağladıktan sonra işte devam ediyor. 1'i buluyor. 1'i tekrar 2'ye bağlıyor vesaire.
+
+83
+00:13:04,751 --> 00:13:05,111
+Tamam.
+
+84
+00:13:09,299 --> 00:13:12,899
+Bu kadar sonunda zaten hani tek sayılar başa çıkmış olacak.
+
+85
+00:13:12,979 --> 00:13:26,539
+Aynen öyle dediğin gibi mesela dediğin gibi iki pointer'ı tutuyorum. Ondan sonra next'ine gittim tek sayı gördüm. Hop bunun başına ekledim. Next'ine gittim bir gördüm. Yine nereye ekleyeceğiz? İkinin başına ekleyeceğiz.
+
+86
+00:13:27,059 --> 00:13:44,219
+Ondan sonra nextine gittim, 6 gördüm, bırakıyorum. Nextine gittim, 7 gördüm, yine 2'nin başına ekleyeceğiz. Bu sayede neyi garanti ettim nola kadar gittiğimde? Bütün çift sayılar başa geldi. Ya da tek sayılar her neyse. Bir tek diyorum, bir çift diyorum. Siz artık takip edersiniz hangisi.
+
+87
+00:13:44,624 --> 00:13:57,204
+Tekler mi başa, çiftler mi başa ona göre kontrolü yaparsınız. Bu sayede tekleri başa atarken ne oldu? Hepsini ikinin önüne attığımız için bu sırayla 3 önce geldi, sonra 1 geldi, sonra 7 geldi.
+
+88
+00:13:57,204 --> 00:14:12,564
+Ve şeyde de sonda da ne kaldı? 2 ve zaten 6 kaldı. Bu şekilde bir organizasyon yapabilirsiniz. Bunları düşünün, kodlayın.
+
+89
+00:14:12,659 --> 00:14:31,620
+Algoritmasını tasarlayın, akışını mesela bir çizin. Ondan sonra dediğim gibi bu tip böyle tekleri başa nasıl alırım, çiftleri sona nasıl alırım gibi problem düşünüp aslında linked listelerle eliniz alışsın diye algoritmalar tasarlayabilirsiniz.
+
+90
+00:14:34,120 --> 00:14:36,199
+Başka ne olabilir?
+
+91
+00:14:39,475 --> 00:14:59,175
+Başka? Mesela çift linkli listeler konusunda bir şeyler şey yapabilirsiniz. İleri geri şeklinde gezintileri şey yapabilirsiniz. Bunları aslında evet hem circular ve double link listleri çalışsanız iyi olur.
+
+92
+00:15:00,148 --> 00:15:23,307
+Sonrasında mesela bunların çalışma zamanlarıyla alakalı böyle empirik deneyler yapabilirsiniz. Eleman sayısını mesela rastgele 100 tane yaptığınızda ne kadar sürüyor, 1000 tane yaptığınızda ne kadar sürüyor, 10.000 tane yaptığınızda ne kadar sürüyor gibi nasıl bir değişim sergilediğini, hani şu mesela n kare değişimleri ya da log n değişimlerinin nasıl arttığını şey yapabilirsiniz.
+
+93
+00:15:24,847 --> 00:15:28,087
+Oluşturması zamanları, ne bileyim işte sıralama zamanlarını falan.
+
+94
+00:15:28,148 --> 00:15:29,408
+karşılaştırabilirsiniz.
+
+95
+00:15:29,971 --> 00:15:38,391
+Bu gibi el ne derler egzersizi, el alıştırması olacak şekilde uygulamalar yaparsanız sizin için daha faydalı olacaktır.
+
+96
+00:15:39,371 --> 00:15:46,371
+Çünkü dediğim gibi bundan sonraki pek çok konuda, pek çok veri yapısında da linked listeleri sıklıkla kullanacağız.
+
+97
+00:15:47,211 --> 00:15:50,192
+Temel bir veri yapısı ve çok esnek bir veri yapısı.
+
+98
+00:15:50,192 --> 00:15:57,091
+İşte mesela dediğim gibi bununla bir şey bir spars matrisi mesela linked listeyle nasıl gösteririm?
+
+99
+00:15:57,331 --> 00:15:57,951
+Mesela ben bunu.
+
+100
+00:15:57,971 --> 00:16:00,651
+Denemek isterim kendi başıma.
+
+101
+00:16:01,692 --> 00:16:06,351
+Sonrasında bir hani matris yapısını acaba nasıl gösterebilirim?
+
+102
+00:16:06,631 --> 00:16:08,412
+Çift taraflıları nasıl yapabilirim?
+
+103
+00:16:08,471 --> 00:16:16,891
+Gibi şeyleri, problemleri düşünüp çözerseniz, ufak tefek kodlar yazıp alıştırmalar yaparsanız faydalı olacağına inanıyorum.
+
+104
+00:16:18,271 --> 00:16:19,771
+Başka sorunuz var mı?
+
+105
+00:16:19,971 --> 00:16:23,631
+Bugüne kadar bu haftaki dersin sonuna kadar olan konularla ilgili.
+
+106
+00:16:40,692 --> 00:16:41,192
+Yok.
+
+107
+00:16:42,372 --> 00:16:42,932
+Peki.
+
+108
+00:16:48,436 --> 00:16:50,116
+Başka başka ne yapalım?
+
+109
+00:16:50,956 --> 00:16:54,376
+Şeyi söyledik. Zaten Josephus probleminden bahsettik.
+
+110
+00:17:03,796 --> 00:17:29,976
+[öğrenci] bir şey söylüyor musun? Yok söylemiyorsun. Peki arkadaşlar, madem öyle o zaman dediğim gibi bu hafta ekstra bir şey yapmayacağım. Sadece dediğim gibi hazır. Önümüzde de hani bir, bir buçuk saat var. Böyle birkaç tane linked liste problemini düşünüp de uygulamalarını elle yaparsanız, çözerseniz sizin için faydalı olacaktır.
+
+111
+00:17:30,579 --> 00:17:33,920
+Bunun dışında ekstradan bu hafta söyleyeceğim bir şey yok.
+
+112
+00:17:34,659 --> 00:17:43,900
+Önümüzdeki haftada yeni veri yapıları tanımaya ve özellikleriyle nasıl problemler çözebildiğimizi örnekleriyle görmeye devam edeceğiz.
+
+113
+00:17:45,000 --> 00:17:48,980
+Evet, o zaman pazartesi görüşmek üzere diyelim.
+
+114
+00:17:50,460 --> 00:17:55,219
+Bu oturumu bu haftalık kapatabiliriz. Ekstradan bir uygulama yapmayacağım.
+
+115
+00:17:56,000 --> 00:17:56,940
+Evet, hoşçakalın.
+
+116
+00:17:58,036 --> 00:17:58,716
+İyi günler.
+
+117
+00:17:58,976 --> 00:17:59,776
+İyi günler hocam.
