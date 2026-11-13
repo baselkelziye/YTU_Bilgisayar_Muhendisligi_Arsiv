@@ -1,0 +1,2559 @@
+1
+00:00:09,364 --> 00:00:10,444
+Merhabalar arkadaşlar.
+
+2
+00:00:27,859 --> 00:00:31,859
+Merhaba [öğrenci]. 2-3 dakikaya başlarız arkadaşlar hemen.
+
+3
+00:01:44,724 --> 00:01:46,984
+Şöyle ekranımızı paylaşalım.
+
+4
+00:01:49,124 --> 00:01:52,444
+Size mesaj geldi değil mi arkadaşlar? Biraz geç başlayacağımıza dair.
+
+5
+00:01:54,864 --> 00:01:55,784
+Geldi hocam.
+
+6
+00:01:56,264 --> 00:01:56,903
+Evet hocam.
+
+7
+00:01:57,324 --> 00:01:57,903
+Tamamdır.
+
+8
+00:02:06,835 --> 00:02:07,835
+Bu yüzden herhalde.
+
+9
+00:02:23,828 --> 00:02:25,108
+Mevcudumuz kaçmış?
+
+10
+00:02:25,908 --> 00:02:27,207
+40. Sınıfın yarısı yok.
+
+11
+00:02:29,707 --> 00:02:30,388
+Herhalde daha
+
+12
+00:02:30,388 --> 00:02:34,147
+herkes toplanmadı.
+
+13
+00:02:35,108 --> 00:02:38,768
+Şimdi arkadaşlar, geçen senenin planına baktığınızda
+
+14
+00:02:38,768 --> 00:02:41,187
+slide'ların düzeni şöyle gidiyor.
+
+15
+00:02:42,247 --> 00:02:43,747
+İşte biz 5'e kadar geldik.
+
+16
+00:02:44,987 --> 00:02:46,427
+5'te bir sampling diye bir
+
+17
+00:02:46,427 --> 00:02:49,108
+ekstra bir slide eklemişler.
+
+18
+00:02:50,324 --> 00:03:08,764
+Bilmiyorum, bu dersi ikinci defa olan varsa aramızda, bu sampling ile alakalı kısım, 6 ve 7'yi gördükten sonra görülmesi gereken bir şey. Yani oradaki konuları görmeden 5 çok anlamlı gelmiyor. Dolayısıyla biz orada bir ara vereceğiz.
+
+19
+00:03:11,123 --> 00:03:30,103
+Bugün 6-7 bir de şu MG Roberts'ın Sliden'dan çalışacağız. Biraz teorik ama bu teori çok önemli bir teori. Özellikle ilerleyen zamanlardaki makine öğrenmesi gibi konularda karşınıza çıkacak. Şimdi onunla başlayalım.
+
+20
+00:03:32,863 --> 00:03:36,883
+Şimdi ekranımızı bir daha şöyle doğru düzgün paylaşayım.
+
+21
+00:03:39,731 --> 00:03:47,231
+Şu ana kadar yaptığımız işlemlerde algoritmik olarak yaptığımız aslında bir konvolüsyon vardı.
+
+22
+00:03:49,231 --> 00:03:57,731
+Konvolüsyon işlemini biz sürekli zaman için T domeninde, ayrık zaman için N domeninde yaptık değil mi arkadaşlar?
+
+23
+00:03:57,731 --> 00:04:01,731
+Aslında ikisi de zamana göre değişen bir domendi.
+
+24
+00:04:06,036 --> 00:04:15,435
+Yani böyle bir sinyalim var. Bu sinyalimiz, işte şu sürekli bir de onun ayrık zamanlı hali olsun.
+
+25
+00:04:15,435 --> 00:04:28,036
+Konvolüsyon dediğimizde dizinin elemanlarını birbiriyle çarpıp çarpıp topluyorduk ve bir sonuç elde ediyorduk. Yani input'a karşılık bir output elde ediyorduk.
+
+26
+00:04:29,620 --> 00:04:42,139
+Ve bunun öncesinde sistemlerin özelliklerini gördük. Hatta dedi ki sistem çok geniş bir küme. Onun altında Linear ve Time Invariant şeklinde bir başka küme var. Biz daha çok onlarla ilgileneceğiz.
+
+27
+00:04:42,960 --> 00:04:55,200
+Sistemlerin davranışlarını bazı şekilde sistemde zamanda öteleme, ters çevirme, sinyallerde bazı değişiklikler yaptırmıştık. Sinyallerin özelliklerini konuştuk.
+
+28
+00:04:55,987 --> 00:05:02,987
+Buradan sonra iş biraz daha farklı bir boyuta geçmeye başlayacak. Tabi bu ders biraz daha belki onun geçiş süreci olabilir.
+
+29
+00:05:02,987 --> 00:05:17,987
+Şimdi kurs diagramımıza baktığımızda bu Sinyal ve Sistemler de arkadaşlar, genel olarak geçenlerde de konuştuk, iş iki türden yürüyor. Birincisi sürekli zamandan yürüyor, birisi ayrık zamandan yürüyor.
+
+30
+00:05:24,148 --> 00:05:40,148
+Metlebin bir Simulink diye bir arayüzü vardır. Farklı bir versiyon. Onu kullanacaksınız. Ve ayrık zamanda kod yazacaksınız. Biz tabi bunu iki kodlu yürütüyoruz. Bu ders biraz daha ikisini de tecrübe etmeye dayanan bir ders.
+
+31
+00:05:41,768 --> 00:05:50,548
+Şu ana kadar yaptığımız genellikle şu ilk kısım, şuradaki bölüm intro dediğimiz şey, Time Domain'in de sistemlerin özellikleri, sinyallerin özellikleri. Artık buradan sonra
+
+32
+00:05:51,475 --> 00:06:02,995
+Şurada yapmakta zorlandığımız bazı işlemleri, acaba farklı domeynlerde yapabilir miyiz? İşte frekans domeyninde, Z domeyninde veya S domeyninde yapabilir miyiz? Onunla alakalı konular göreceğiz.
+
+33
+00:06:04,096 --> 00:06:12,615
+Baktığınız zaman mesela konvolüsyonu kodladınız. Bu arada notlarınızı ben şeye girdim, online'a, ödevlerinin notlarını, bilmiyorum görebiliyor musunuz şu an?
+
+34
+00:06:15,028 --> 00:06:40,008
+Yıl için notu olarak size ortalama olarak yansıtacağım. Vizeden sonra işte diyeceğim ki vizyon notunuz bu. Bir egzerle o şey. Şu an göremiyorsanız o notlarınızı da orada göreceksiniz ödev notlarınızı. Yazdığınız konvolüsyon işlemi birazcık zor bir işlem. Hele sürekli zamanda daha zor. Niye daha zor? İntegralin içerisindeki çarpım işleminde iki tane fonksiyon var.
+
+35
+00:06:41,043 --> 00:06:42,803
+işte FT ile
+
+36
+00:06:42,803 --> 00:06:45,583
+FT ile GT diyelim.
+
+37
+00:06:46,723 --> 00:06:48,463
+Ben şu ekranı bir daha düzelteyim.
+
+38
+00:06:55,540 --> 00:07:13,640
+Şimdi şu FT ve GT çok böyle zorlayıcı iki tane şeyse, çok pis iki tane fonksiyonsa bu İntegrali almak başlı başına bir zulüm. Bir de şu İntegralin soru sınırları vardı. Bu sınırlar neden kaynaklı oluyordu arkadaşlar?
+
+39
+00:07:18,516 --> 00:07:21,836
+Bu integralin sınırları neye göre değişiyordu?
+
+40
+00:07:25,747 --> 00:07:31,747
+Ne dersiniz bu konuda? Konuştuk geçen hafta. Pardon geçen hafta ama önceki hafta.
+
+41
+00:07:35,891 --> 00:07:39,591
+Kimseden bir yanıt yok. Hayırdır? Sessizlik var birazcık.
+
+42
+00:07:41,671 --> 00:07:44,132
+İntegrenin sınırları neye göre değişiyor arkadaşlar?
+
+43
+00:07:46,252 --> 00:07:50,072
+Rastgele bir soru sorayım mı? Random. Bu sınıfta hiç yapmadık herhalde.
+
+44
+00:07:52,171 --> 00:07:55,831
+[öğrenci], İntegrenin sınırları hakkında ne dersiniz?
+
+45
+00:08:02,740 --> 00:08:04,620
+[öğrenci], siz ne dersiniz?
+
+46
+00:08:07,199 --> 00:08:10,240
+Hocam, şey, hatırlamıyorum.
+
+47
+00:08:10,899 --> 00:08:11,259
+Gerçekten.
+
+48
+00:08:11,259 --> 00:08:13,500
+Tamam, çok sürpriz oldu böyle yani.
+
+49
+00:08:13,859 --> 00:08:14,319
+Güzel bir şey.
+
+50
+00:08:15,159 --> 00:08:16,039
+[öğrenci].
+
+51
+00:08:18,539 --> 00:08:20,740
+Buradayım hocam, ben de hatırlamıyorum maalesef.
+
+52
+00:08:22,159 --> 00:08:24,899
+Ya iki tane şunu yaptık hatırlarsanız.
+
+53
+00:08:25,399 --> 00:08:28,680
+Örnek olarak da bir böyle dalga vermiştik.
+
+54
+00:08:29,651 --> 00:08:36,851
+Bir de ona benzer bir tane daha verdik. Belki aynı boydaydı. Yani şuranın şeyi işte T ise burası da T uzunluktaydı.
+
+55
+00:08:37,951 --> 00:08:48,652
+Bunu konvolüsyon yapacaktık. Neydi? Şu sinyal işte ters çevirdik falan çarpacağız derken şöyle bir örtüşme miktarı vardı değil mi arkadaşlar?
+
+56
+00:08:49,351 --> 00:08:55,851
+Belli bir miktar örtüşecekti. Bu örtüşmeler sinyalin, integralin sınırlarını belirtiyor.
+
+57
+00:08:56,244 --> 00:09:00,744
+Bu örtüşmeleri belirleyen deney aslında süreksizlik noktası olacak kritik noktalar.
+
+58
+00:09:02,163 --> 00:09:09,344
+Yani başlangıç bitiş noktaları olarak söyleyebiliriz de bu sürekli zaman olursa başlangıcı da bitişi de sonsuz oluyor.
+
+59
+00:09:09,344 --> 00:09:11,683
+Yani doğrudan başlangıç bitiş demek doğru değil.
+
+60
+00:09:13,144 --> 00:09:20,864
+Burada yaptığımız şey sinyallerin süreksizlik noktaları ve kritik noktaları daha çok burada kritik nokta demek daha doğru.
+
+61
+00:09:23,264 --> 00:09:43,744
+Problem yapıyor. Ondan sonra integrali parçalıyoruz. Şuradan şuraya, buradan buraya integrali ayrı ayrı çözüyoruz. Farklı durumlardan da. Bu problemden acaba kurtulabilir miyiz? Daha kısa bir sürede çözebilir miyiz? Böyle bir şey bizim Sinyaller ve Sistemler'de mümkün mü? Evet mümkün. İşte onunla alakalı kısımlarla devam edeceğiz.
+
+62
+00:09:45,043 --> 00:09:57,043
+Ama oraya gelmeden önce nihayet olarak arkadaşlar bizim elimizde bir sistem modeli var. Bu sistemin modelini bir şekilde analiz edip çözmemiz lazım.
+
+63
+00:09:57,043 --> 00:10:01,043
+Mesela devrelere baktığımızda elektronik devreler üzerinde
+
+64
+00:10:02,899 --> 00:10:27,139
+RLC devresinde mesela direnç üzerindeki gerilimi ölçmek için ne yapıyoruz? Şöyle bir zamana bağlı akımın ve direncin çarpımından oluşan bir potansiyel fark fonksiyonu var değil mi? Bakın bu bir sistem. O sistem işte i olarak ve r olarak verilen iki değişkeni alıp bize vt olarak geri veriyor.
+
+65
+00:10:27,860 --> 00:10:41,299
+L üzerindekini ölçerken bu şekilde, C üzerindeki ölçerken bu şekilde. Bunları kullanırken biz diferansiyel denklem görüyoruz. Bakın şurada bir türevli bir işlem var, burada da bir türevli işlem var. Bunu çözmek için
+
+66
+00:10:41,663 --> 00:10:55,144
+Differansiyel denklemlere işleyelim. Tabi bu devrelerde, burada sürekli zamandan bahsettiğim için. Kirov'un voltaj ve akım kanunu, gerilim bölücüler falan orada belki devre teorisinde gördünüz.
+
+67
+00:10:55,463 --> 00:11:04,144
+Mekanik tarafa baktığımızda kütle denklem var, gerilme denklem var, durma ile alakalı denklem var. Burada da...
+
+68
+00:11:04,436 --> 00:11:12,136
+Ya ekomekanik bileceksiniz ya dinamik bileceksiniz, oradaki konuları öğrenmek. Ve yine karşımızda diferansiyel denklemler çıkıyor.
+
+69
+00:11:13,116 --> 00:11:20,636
+Çünkü gerçek hayatta çoğu şey zamanla değişiyor. Zamanla değiştiği için sonuçlar da zamanla değişiyor.
+
+70
+00:11:21,256 --> 00:11:28,416
+Input zamanla değişiyor, output da zamanla değişiyor. Burada fark denklemleri veya diferansiyel denklem dediğimiz şeylerle karşılaşıyoruz.
+
+71
+00:11:29,587 --> 00:11:33,727
+Ne demiş? Differential equations rule the world. Dünyayı yönetiyor demiş aslında.
+
+72
+00:11:37,812 --> 00:11:45,491
+Yok. Yani şöyle, diferansiyel görmeyen, bilgisayar mühendisliği adı altında birçok bölüm görmüyor olabilir.
+
+73
+00:11:46,831 --> 00:11:57,591
+Önceden mühendislik, matematiği diye bir ders vardı. Orada anlatılıyordu. Şimdi birazcık gereksiz hale geldi. Bence de çok fazla girmeye gerek yok.
+
+74
+00:11:58,531 --> 00:12:04,011
+Hocam, diferansiyeli türevle integral arasından nereye koyuyorsun?
+
+75
+00:12:04,563 --> 00:12:05,803
+İkisinin toplamı.
+
+76
+00:12:07,063 --> 00:12:08,223
+Bu ne demek ya?
+
+77
+00:12:08,603 --> 00:12:11,603
+Şu denklem. X artı Y eşittir 5.
+
+78
+00:12:12,583 --> 00:12:15,384
+2X eksi 3Y eşittir eksi 10.
+
+79
+00:12:15,504 --> 00:12:17,083
+Bunu çözmek için biz ne biliyoruz?
+
+80
+00:12:18,183 --> 00:12:20,543
+İkinci dereceden denklem çözme kurallarını biliyoruz.
+
+81
+00:12:20,624 --> 00:12:23,384
+Ondan sonra birinci dereceden denklem çözme kurallarını biliyoruz.
+
+82
+00:12:23,583 --> 00:12:25,423
+Taraf tarafa toplayacağız, çıkartacağız falan.
+
+83
+00:12:25,624 --> 00:12:26,384
+Bunu biliyoruz değil mi?
+
+84
+00:12:26,384 --> 00:12:28,943
+Veya yine erti gibi kullanıyoruz.
+
+85
+00:12:29,403 --> 00:12:31,384
+Şunu çözerken Y türev artı.
+
+86
+00:12:33,107 --> 00:12:53,288
+İşte x eşittir 1'den 8'e x kare artı y türev dx eşittir 0. Bu denklemi çözmek demek, burada bir türevli bir şeyi çözmek demek, burada bir integralli bir şeyi çözmek demek ama bunu karşıya atsak,
+
+87
+00:12:53,940 --> 00:13:17,240
+İntegralli bir şeyle türevli bir şey karşımıza geliyor. Burada diferansiyel denklemler işte hem integralli hem türevli bir şey bir araya gelmiş oluyor. Diferansiyel denklem çözme teknikleri buraya geliyor. Nasıl şurada benim bahsettiğim işte taraf tarafa toplamak, çıkartmak bir teknikse öğrendiğimiz yıllardır bildiğimiz teknik. Burada da onun teknikleri var. Matematikçiler bu konularda çok başka başka dersler görüyorlar.
+
+88
+00:13:18,707 --> 00:13:20,607
+İtü'de, Hacettepe'de var, Gazi'de var.
+
+89
+00:13:20,607 --> 00:13:25,547
+Ya şimdi ben mi yanlış biliyorum? Türev integral türevin tersi değil mi hocam?
+
+90
+00:13:26,347 --> 00:13:32,687
+Tersi ama bağımlı değişken, bağımsız değişken diye bir şey var. Öyle bir sistem ki bu.
+
+91
+00:13:33,487 --> 00:13:40,787
+Bir şeyin türevini alıyormuşuz, o bir şeyin türeviyle başka bir şeyi, ona bağlı olan x değişkenini toplayıp, karesini toplayıp integral alıyormuşuz.
+
+92
+00:13:41,556 --> 00:13:46,596
+Ve bunun integralinin sonucu bununla toplanıyormuş. Şimdi uydurdum da ben bunu.
+
+93
+00:13:47,536 --> 00:13:56,376
+İşte bunu çözmek normal bizim birinci, ikinci derece denklemler gibi türe biçermeyen denklemler de olduğu kadar kolay değil.
+
+94
+00:13:57,236 --> 00:14:04,296
+Bunun ayrıca yöntemleri var. Zaten elektronik ve bilgisayar mühendisleri için bu bir araç.
+
+95
+00:14:05,043 --> 00:14:31,004
+Yani şunu sen biz şeye yazarsak, mettebe yazarsak, onu anlatacağım ilerleyen haftalarda, o teknikleri bilmeden bunun sonucunu elde edebiliyoruz. Yani bayağı sembolik çözüm yapıyoruz. Sıkıntı yok orada. Yani aynı şekilde şunların da sembolik çözümleri var. Yani x artı y eşittir 5 diyorsun, 2x eksi 3'e eşittir, eksi 10 diyorsun, çöz diyorsun, sol diyorsun, x'i ve y'yi sana bir vektör olarak veriyor. Programlama dillerinde bu var. Bu da var.
+
+96
+00:14:32,179 --> 00:14:42,720
+Ama burada biraz daha geçiş olarak anlatıyoruz. Yani bizde de Mühendislik Matematiği adı altında bir ders vardı bundan önceki programda. Ben kaldırılmasına tabii o zamanlar şeydim, karşıydım.
+
+97
+00:14:45,011 --> 00:15:04,812
+Nühmat çok sıkıntılı, 3 haftada diferansiyel bir... Evet, orada çok geniş bir yelpaze vardı bizim şeyde. Yani optimizasyon anlatılıyordu. Optimizasyondan sonra işte diferansiyel denklemler Laplace'dan anlatılıyordu. Bence kaldırılmayıp bu iki ders birlikte yani içeriği düzenlenip daha iyi bir şekilde anlatılabilir diye.
+
+98
+00:15:06,812 --> 00:15:07,307
+Ama...
+
+99
+00:15:07,475 --> 00:15:30,115
+Artık bilgisayar alemi de biraz farklı bir mecrada yürüyor. Kim takar diferansiyel denklemi tarzında bir durumdayız arkadaşlar. Onu da elektronikçiler falan çalışsın diye. Şimdi size şeyden bahsedecektim. Bizim bölümde çok disiplinli tasarım proyelesi diye bir şey var. Bütün bölümlerden öğrenci arkadaşlar kaydoluyorlar bu derse. Elektronik, kontrol, haberleşme ve elektrik.
+
+100
+00:15:30,772 --> 00:15:38,292
+Bütün hocalara daha sonra her bölümden birer ikişer öğrenci random dağıtılıyor. Bana da sekiz kişi geldi. Konu bir tane belirleniyor dönem başında.
+
+101
+00:15:38,451 --> 00:15:48,591
+İşte akıllı bahçe sistemi diye bir şeydi şu an akıllı tarım uygulaması. Burada yapılan şey bizim bizden iki arkadaş, [öğrenci] ve [öğrenci] diye arkadaşımız var.
+
+102
+00:15:49,731 --> 00:15:58,251
+Mobil arayüzünü ve mobil arayüzüyle alakalı daha çok bilgisayarcı ilgilendiren tarafı yapıyorlar. Kontrolcüler şu bahsettiğimiz denklemi kurmaya çalışıyorlar.
+
+103
+00:15:59,892 --> 00:16:13,792
+Elektrikçiler, sonuçta bu bir uygulama ve orada 220 voltla veya daha yüksek voltlarla bir işlem olacak. Bu denklemden çıkan sonuçların güç elektroniği tekniğiyle 220 voltlar seviyesinde uygulanmasıyla uğraşıyorlar.
+
+104
+00:16:16,148 --> 00:16:39,307
+Bu mobil uygulamayla bu sistemi çalıştıracak aradaki bağlantılarla alakalı bir entegrasyon yapmaya çalışıyoruz. Böyle bir çok disiplinli tasarım projesi. Siz de alacaksınız inşallah o ders. Yani biz burada ne yapmamız gerektiğini ve bize ne kadar lazım olması gerektiğini bu derste birazcık anlayalım ve kendi işimize daha çok odaklanalım bence yeterli. Bunun mesela çok detayları var ama anlatmıyoruz.
+
+105
+00:16:40,052 --> 00:16:44,412
+Yani benim bilmediğim daha elektronikçilerin üzerinde çalıştığı çok çok şey var.
+
+106
+00:16:45,412 --> 00:16:47,711
+Mesela bir devre örneği arkadaşlar.
+
+107
+00:16:48,552 --> 00:16:50,812
+İşte iki tane kablo var.
+
+108
+00:16:51,052 --> 00:16:56,192
+İşte kablonun ne bileyim direnç şey, direnci buymuş.
+
+109
+00:16:56,692 --> 00:17:20,192
+Burada da belli bir kapasite değerleri var. Koaksiyel kablo dediğimiz şey. Bu bir sistemdir. Bir bilgisayardan bir bilgisayara veri aktarırken illaki bir kayıp olacaktır. Bu kaybın modellenmesi veya kaybı en aza indirgenecek kablonun tasarlanması bir problem. Şimdi bunun parametrelerini belirleyip, inputlarını, outputlarını belirleyip bir model tasarlanması denedir.
+
+110
+00:17:23,028 --> 00:17:35,108
+Mesela bir tevenin eş değeri dediğimiz sürücünün bir devresi. Bu şeyi Maximum Power Transfer model olarak devre teorisinde görmüşsünüzdür.
+
+111
+00:17:35,768 --> 00:17:44,928
+Maksimum güç transfer teoremi. Bir devreye bir eleman bağlayacaksanız o devrenin direnci, bağlayacağınız devrenin direnci,
+
+112
+00:17:47,604 --> 00:17:52,943
+Bağlanacak olan devrenin direnciyle eş olması lazım ki en yüksek gücü elde edebilirsiniz.
+
+113
+00:17:54,144 --> 00:17:59,644
+İşte burada bunun modellenmesi için kullanılan mesela bir denklem ortaya attınız.
+
+114
+00:18:00,844 --> 00:18:04,324
+Nihayetinde size gelen şöyle bir denklem oldu arkadaşlar.
+
+115
+00:18:05,923 --> 00:18:10,184
+Bunu ya bunun bir diferansiyel denklem olduğunu artık biliyoruz.
+
+116
+00:18:10,184 --> 00:18:12,684
+Çünkü sürekli zaman, time domaininde.
+
+117
+00:18:13,203 --> 00:18:27,844
+zamanın her an için şey, eğer N domen olsaydı fark denklemi diyecektik. Yani o zaman bunu şöyle söyleyecektik. Bu bir fark denklemi, işte YN diyecektik. Bunun önüne başka şeyler gelecek. Onu da fark denklemi olarak, diferansiyel başka, difference fark başka.
+
+118
+00:18:29,283 --> 00:18:37,844
+Bu denklem arkadaşlar, çözülürse ben bu sistemin davranışını artık ortaya çıkarmış olurum. Yani girişe ne verirsem, çıkışı...
+
+119
+00:18:38,036 --> 00:19:04,576
+tahmin edebileceğim doğru bir şekilde. Çünkü devrinin davranışı bu. İşte bunun çözümü dediğimiz gibi diferansiyel denklemlerde. Diferansiyel denklemlerde şimdi şuradan bakarsak, burada tabii inputun farklı versiyonlarında gelen outputları bulmaya çalışmış farklı tekniklerle. Tahmin mekanizması da var ayrıca. Önemli olan
+
+120
+00:19:05,748 --> 00:19:15,748
+Bence sizin için değil de kontrolcüler için veya diğer bilimlerle çalışanlar için şu denklemi çıkarabilmek. Sistemin inputlarından, outputlarından yola çıkarak.
+
+121
+00:19:15,748 --> 00:19:17,748
+Bir başkası için...
+
+122
+00:19:19,748 --> 00:19:22,635
+Bir saniye arkadaşlar, kapı çalıyor.
+
+123
+00:19:56,852 --> 00:20:01,472
+Devam edelim arkadaşlar, kusura bakmayın. Arada böyle kazanalar oluyor.
+
+124
+00:20:03,492 --> 00:20:12,292
+Sistemin davranışını ortaya çıkaran denklemi bulduktan sonra o denklemi çözmeye kalıyor iş. Ondan sonra isterseniz onun kodunu yazarsınız.
+
+125
+00:20:12,392 --> 00:20:16,832
+Input buysa yani bir fonksiyon yazmaktan hiçbir farkı yok. Input buysa output budur şeklinde.
+
+126
+00:20:17,952 --> 00:20:20,532
+Bu biraz daha, biraz önce söylediklerimin özeti.
+
+127
+00:20:22,036 --> 00:20:45,116
+Bilgisayar arasında haberleşmeyi sağlayacak bir elemana ihtiyacımız var. Fiziksel olarak biz sistemi böyle görüyoruz. Bu işlemi yapacak devre bu. Sürekli zamanda devre bu. Bu devrenin davranış, yani giriş çıkış ilişkisini ifade eden denklem bu. Bu bir RC devresi. Sadece bunu çözmeye kalıyor.
+
+128
+00:20:47,220 --> 00:20:49,740
+Bunun sonucunda neyi bileceğim arkadaşlar?
+
+129
+00:20:51,299 --> 00:20:52,319
+Y, T eşittir.
+
+130
+00:20:53,460 --> 00:20:56,259
+X, T'ye bağlı bir fonksiyon bulmam gerekiyor artık.
+
+131
+00:20:56,839 --> 00:20:59,059
+Baya bildiğimiz bir fonksiyon. İçinde türev olmayan.
+
+132
+00:21:00,220 --> 00:21:04,039
+Çünkü Y, T'yi bilemezsem türevini zaten bilemem.
+
+133
+00:21:05,439 --> 00:21:07,699
+Onun için türev olmayan, şu türevden kurtarılmış.
+
+134
+00:21:08,500 --> 00:21:32,660
+İntegral varsa integralden de kurtarılmış bir durumu elde etmem gerekiyor. Genellikle diferansiyel denklemlerde türevler olur. İntegral de olur da integral genellikle çözerken karşımıza çıkar o denklemlerde. Böyle bir sonuca olacağım. Daha sonra bu sonucu işte XT yerine geldi, XT girişi yerine koyduğumuzda sonuç ne olacak? Output'u elde edip sistemin doğruluğunu test edeceğim.
+
+135
+00:21:34,579 --> 00:22:01,960
+Mesela otomatik şey, otomobil işte fren sistemi. Bakın bu kimin kanunu? Yani işte bir şey var. Newton olabilir. Dördüncü dereceden bir şeyle çözülüyormuş. Bu denklemi çözdükten sonra x'e bağlı olarak ne olacak? Ben sistemimi ortaya koymuş olacağım sürekli zaman sistemi. Mesele bu denklemi çözebilmek.
+
+136
+00:22:05,556 --> 00:22:07,556
+Burada söylediklerimin biraz özeti var.
+
+137
+00:22:10,556 --> 00:22:15,556
+Bunun için diferansiyel denklemler konusunu bilmek gerektiği söyleniyor.
+
+138
+00:22:17,556 --> 00:22:27,556
+Diferansiyel denklemlerin farklı şeyleri var. Aynı sistemlerde olduğu gibi. Linear dedik, non-linear dedik. Birincisi dereceye göre ayrılıyor.
+
+139
+00:22:27,923 --> 00:22:37,443
+Buradaki diferansiyel denklemleri biz bir de ayrık matematik fark denklemleri adı altında ama farklı bir isimle Recursion kısmında anlatıyoruz.
+
+140
+00:22:38,463 --> 00:22:46,784
+Mesela bunlardan bir tanesi derece. En yüksek türevli derece, en yüksek türev mertebesi bize burada dereceyi söylüyor.
+
+141
+00:22:47,683 --> 00:22:52,584
+Sonra kat sayıları, şu türevlerin başında kat sayılar var bakın AN'ler.
+
+142
+00:22:54,548 --> 00:23:17,388
+Sabitse Time Invariant dediğimiz, yani sabit kast sayıda. Eğer non-linear bir durum varsa ninerlik, non-linearlik olarak bunu ifade edelim. Mesela bunlar non-linear terminolojide kullanılan bazı örnekler. Bunları sormayacağız. Aşağıda verilen diferansiyel denklemin mertebesi nedir? Sadece birazcık tanıtım amaçlı anlatıyorum. Bunların detaylarına girmeyeceğiz.
+
+143
+00:23:19,859 --> 00:23:45,099
+Üçüncü dereceler bir orderları ifade ediyor. En yüksek 3 olduğu için bu üçüncü dereceden bir diferansiyel denklem deniyor buna. Burada bir işte x'e independent, y'e dependent dedik. Bu bir türevden bahsediyoruz zaten de bildiğiniz şey. Bu türev içerdiği için bu denklem, türev içerdiği için artık buna bir diferansiyel denklem diyoruz. Yani şey bu, mevzu bu.
+
+144
+00:23:46,228 --> 00:24:04,348
+Şimdi biz bir denklem verdiğimizde bunu linearliğine ve non-linearliğine veya linearliğine göre, homojenliğine veya homojen olmama durumuna göre, ordinary durumuna göre, sıradanlık veya partial, special durumuna göre farklı kategorileri ayrılabilir. Bunlar tamamen sınıflandırma ile alakalı şeyler.
+
+145
+00:24:04,348 --> 00:24:10,868
+İşte burada ordinary differential equation diye bir şey var.
+
+146
+00:24:11,700 --> 00:24:36,640
+sadece türevlerini içeriyor. Yani bağımsız değişkenin durumlarıyla alakalı şeyler var. Bu ordinalist, diferansiyel denklem olarak ifade ediliyor. Velhasıl, bakın burada başka denklemler var, bunları uzatmıyorum çünkü bizim için lazım olan şeyler değil. Velhasıl bunu çözmek lazım. Çözmek için de diferansiyel denklemleri almak lazım.
+
+147
+00:24:37,523 --> 00:25:03,923
+Almadıysak hocam çözemez miyiz? Çözebiliriz. Bunlardan bir tanesi, tabi burada çözüm yaparken karşımıza karmaşık sayılar gelecek, trigonometri gelecek eski bilgilerimizi tekrar hatırlamak gerekiyor. Bunların mesela birinci mertebeden olanları çözerken bir teknik var, daha yüksek mertebeden ikinci, üçüncü dereceden olanları çözerken başka bir teknik var. Mesela şurada, biz bunu ayrıkta da başka bir şekilde anlatacağız.
+
+148
+00:25:04,884 --> 00:25:24,884
+Bu bir ikinci mertebeden diferansiyel denklem. Bunun karakteristik kökünü buluyoruz. Aslında bu çok zor değil. Bu en basitlerinden bir tane. Bu karakteristik köke göre diyoruz ki bu denklemin çözümü şudur. Eğer başlangıç değerleri de verildiyse C1, C2'leri yerine yazıp çözüm buluyoruz. Bunlar yine kolay. Analitik çözüm yapılabilir şeyler. Ama bunun daha neleri neleri var.
+
+149
+00:25:27,220 --> 00:25:35,211
+Mesela bu örneklere bakabilirsiniz. Bunlardan çok fazla hani sizi, buradan hiçbir şekilde böyle sorular sormayacağız.
+
+150
+00:25:38,963 --> 00:25:42,084
+Şimdi büyük resmi görelim diye buraya kadar geldik.
+
+151
+00:25:43,084 --> 00:25:55,723
+Büyük resimde arkadaşlar, elimizdeki sistemin, yani girişle çıkış arasındaki ilişkiyi gösteren sistemin modelini veya denklemini biliyorsak,
+
+152
+00:25:56,584 --> 00:26:01,243
+bunu bir şekilde çözüp, giriş çıkış ilişkisini biz ne yapabiliyoruz?
+
+153
+00:26:03,064 --> 00:26:05,663
+Kodlayabiliriz veya devre olarak tasarlayabiliriz.
+
+154
+00:26:06,740 --> 00:26:34,000
+Differansiyel denklem çözemiyorsak, burada yapacağımız şey dönüşümlerden yararlanmaktır. Bu dönüşümler de genel olarak bizim Sinyaller Sistemler'de frekans düzlemine geçişle veya farklı düzleme geçişle oluyor. Aslında bu dönüşümleri yaparken de integrallerden faydalanıyoruz ama bu integraller daha bilinen basit integraller olduğu için bizi sonuca daha rahat götürüyor. E üzerinde bir şeyin integralini almak kolay.
+
+155
+00:26:35,923 --> 00:26:40,423
+Konvolüsyonu kodlarken, mesela iç içe kaç döngü kullandınız?
+
+156
+00:26:43,827 --> 00:26:46,587
+İki döngü kullandı. Niye iki döngü kullanıldı mesela?
+
+157
+00:26:48,587 --> 00:26:50,087
+Konvolüsyon tanımı gereği
+
+158
+00:26:53,748 --> 00:26:54,748
+bir şey açalım.
+
+159
+00:26:58,067 --> 00:27:06,067
+Tanımı gereği iki farklı değişken var. Birincisi, şunu integralle yazayım.
+
+160
+00:27:13,715 --> 00:27:21,576
+Ft, bir de xt diyelim, dt. Konvolüsyon aslında şuna çok benziyor.
+
+161
+00:27:22,324 --> 00:27:38,844
+Hocam, konu açılmışken onunla alakalı da bir şey sorayım. Şimdi hani konvolüsyonu alırken alttakinin üsttekiyle birer kaydırarak, shift ederekten hep toplayıp bunları yeni konvolüsyon değeri olarak yazıyoruz ya.
+
+162
+00:27:39,104 --> 00:27:39,344
+Evet.
+
+163
+00:27:39,784 --> 00:27:50,264
+Mesela benim gibi kimi bilmiyorum bir tek belki de ben yaptım. Sadece onu Metlab'de ama yandaki analizinde bunu gösterdim tek tek. Hatta size gönderdim.
+
+164
+00:27:50,324 --> 00:27:59,904
+Videoda da vardı. Ama şey yazarken, NetLab kodunu yazarken normal John V, C-O-N-V yani.
+
+165
+00:28:00,064 --> 00:28:07,124
+Çünkü neden komutlu dedim ama birçok arkadaş şey dedi, abi dedi, onu dedi de NetLab'te ayrıyetten yazman lazım.
+
+166
+00:28:08,004 --> 00:28:12,324
+Ben de pek güzel, evet ha bu. Ama sonuçta...
+
+167
+00:28:15,124 --> 00:28:21,423
+Yani John'u mu benim yapmamı istediğiniz MEPLEP'te yoksa konvolüsyon al mı istediğiniz?
+
+168
+00:28:21,724 --> 00:28:27,903
+Konvolüsyon algoritmasını kendiniz algoritma yazacaksınız. Bunun sonucuyla kendi algoritmamı da kıyaslayacaksınız. İki tane şey.
+
+169
+00:28:27,903 --> 00:28:33,423
+Ha işte. O zaman ben orada biraz şey yaptım. Ben yani yok.
+
+170
+00:28:34,644 --> 00:28:36,124
+Anladım hocam, anladım.
+
+171
+00:28:36,364 --> 00:28:41,364
+Şimdi arkadaşlar, şu değişken de T'ye bağlı değişiyor, bu değişken de T'ye bağlı değişiyor.
+
+172
+00:28:41,423 --> 00:28:49,004
+Ben bunu kodlamak istersen, T'ye bağlı değişen, bir bunu T'nin durumuna göre, bir de bunun T'nin durumuna göre analiz etmem lazım.
+
+173
+00:28:49,064 --> 00:28:51,064
+Onun için burada iki tane for'a ihtiyacım var.
+
+174
+00:28:51,784 --> 00:28:53,284
+Yani FT çarpı DT.
+
+175
+00:28:53,940 --> 00:29:18,120
+şeklinde formü yazacaksam, birinci for döngüsü işte FT'nin T'siyle ilgilenecek, ikincisi DT'nin T'siyle ilgilenecek. Ancak bunu bu şekilde gerçekleştiririz. Şimdi bu algoritmik açıdan zor bir şey. Ama ben bunların frekans cevaplarını biliyorsam, işte F'in Omega, X'in Omega cevabını biliyorsam veya elde edebilirsem, rahatlıkla elde edebilirsem,
+
+176
+00:29:18,804 --> 00:29:27,344
+Ne yapabileceğim? Bunu doğrudan çarpabiliyorum. FV, yani Scalar çarpım dediğimiz doğrudan, yani bu diziyse karşılıklı olarak çarpı vereceğiz.
+
+177
+00:29:28,164 --> 00:29:38,304
+Çarpı, XV olacak. Önemli olan, bakın neden kurtuldum? Şuradaki iki fonksiyonun çarpımının integralinden kurtuldum.
+
+178
+00:29:38,504 --> 00:29:42,284
+Yine burada bir integral var ama tek bir fonksiyonun integralıyla ilgileneceğim.
+
+179
+00:29:43,155 --> 00:29:47,415
+Aynı zamanda şuradaki algoritmik karmaşıklıktan nispeten kurtulacağız.
+
+180
+00:29:48,355 --> 00:29:52,615
+Ve bilinen fonksiyonlar türünden bu işlemi yapabilme imkanına sahip olacağım.
+
+181
+00:29:53,516 --> 00:29:55,036
+Bu bir, konvolüsyonda kolaylık.
+
+182
+00:29:55,756 --> 00:29:59,576
+Şu ana kadar yaptığımız belki en zor algoritma konvolüsyonla alakalıydı.
+
+183
+00:30:00,355 --> 00:30:06,615
+Ondan sonra sistemlerin kararlılığı veya zamanla değişip değişmediğinin kontrolleri yapılabiliyor.
+
+184
+00:30:08,723 --> 00:30:19,604
+Pattern matching dediğimiz, yüz üzerinde bir bölge arama veya ses üzerinde belli bir bölge arama dediğimiz bazı konvolüsyon işlemleri sayesinde bazı şeyleri daha kolay.
+
+185
+00:30:19,723 --> 00:30:23,884
+İşte gürültü giderme mesela, görüntüde gürültü giderme gibi işlemler çok rahat yapılabiliyor.
+
+186
+00:30:24,824 --> 00:30:25,683
+Şimdi devam edelim.
+
+187
+00:30:29,460 --> 00:30:30,460
+Bu değil.
+
+188
+00:30:43,700 --> 00:31:03,119
+Şimdi buraya da gelmeden önce, doğrudan Fourier senelerine, yani geçen seneki slide'larda bir, ben kopukluk hissediyorum. Bu, yani konvolüsyondan itibaren bu geçiş noktasında bir şey var. Yani belki hocalar bize slide'lar eksik verdi diyeceğim de, sayfadaki yayınlananlar da hepsi öyle.
+
+189
+00:31:05,203 --> 00:31:20,943
+Bir sinyalin arkadaşlar, şu ana kadar dediğim gibi zaman ve frekans zaman düzleminde ilgilendik. Hem ayrık zamanda hem de sürekli zamanda. Sürekli zamanda T dedik, ayrık zamanda N dedik. Yani ikisinde de bir dizi olduğunu kabul ettik. Ve bunun üzerinde işlem yaptık.
+
+190
+00:31:22,104 --> 00:31:32,324
+Şimdi bir de bu sinyalin frekans düzleminde karşılığı var. İşte bu frekans düzlemine bir şekilde geçmek bize Fourier dönüşümü veya Fourier serileri olarak karşımıza geliyor.
+
+191
+00:31:33,715 --> 00:31:49,955
+Eğer ki üzerinde çalıştığımız sinyal periyodik ise, bu arada önce şunu söyleyeyim de Fourier dönüşümü için, genel olarak Fourier dönüşümü dediğim gibi bu durumdan zaman düzleminden, frekans düzlemine geçiş yapan bir şey.
+
+192
+00:31:50,875 --> 00:31:52,795
+Denklemi şudur, genel denklemi şudur.
+
+193
+00:32:01,652 --> 00:32:26,751
+DT. Şu Omega 0 yerine 2P'yi F0'da görebilirsiniz. Yani biraz daha o şekilde de görülebilir. Veya bunun yerine şunu da görebilirsiniz. E üzeri eksi J Omega 0 T. Neye eşittir? Kosünüs Omega 0 T eksi J sinüs Omega 0 T'dir. Veya Omega 0 yerine
+
+194
+00:32:27,347 --> 00:32:48,048
+e üzeri eksi j, 2PF0T yazarsanız, cos 2PF0T, eksi j, sin 2PF0T. Bu formatlarda görülebilir. Bunların yerine kaç tane oldu? 1, 2, 3, 4 farklı şekilde bunlar yazılabilir.
+
+195
+00:32:53,107 --> 00:32:57,847
+Büyük X, pardon, şuna X diyelim arkadaşlar, daha iyi olsun.
+
+196
+00:32:58,707 --> 00:33:06,127
+Büyük X, F veya Büyük X, Omega formatında bir sonuç döndürüyor.
+
+197
+00:33:07,127 --> 00:33:09,247
+Sinyalin frekans düzlemedeki karşılığı.
+
+198
+00:33:10,867 --> 00:33:11,347
+Tamam mı?
+
+199
+00:33:11,807 --> 00:33:16,307
+Size bunu geçenlerde şu web sayfası üzerinden göstermiştim.
+
+200
+00:33:16,407 --> 00:33:18,227
+Tekrar açmak istiyorum orayı.
+
+201
+00:33:21,299 --> 00:33:27,599
+Toptağ mıydı yaniydi bu? Şazamla alakalı bir şey.
+
+202
+00:33:36,756 --> 00:33:45,756
+İşte bu bir zaman düzleminde bir sinyal. Bunun aynısı eşitliği, frekans düzleminde. Buradan buraya geçmek işte Fourier dönüşüm.
+
+203
+00:33:45,756 --> 00:33:54,756
+Hocam geçecekte ne olacağız? Geçecek işte konvolüsyonu kolay yapacağız veya başka yerlerde özellik olarak bu verileri kullanacağız.
+
+204
+00:33:54,756 --> 00:33:59,756
+Daha farklı anlamlar çıkaracağız. Mesela şuradan ben şu dalganın
+
+205
+00:34:00,307 --> 00:34:04,928
+Frekansını hesaplayabilirim veya buradan da hesaplayamıyorum. Şurada biraz daha iş zorlaşıyor.
+
+206
+00:34:06,087 --> 00:34:18,087
+Veya şöyle bir sinyalim var, idealde olan kırmızı. Acaba ben bu idealde olan kırmızıyı %90 hassasiyetle bilinen sinyaller cinsinden nasıl yazarım?
+
+207
+00:34:25,108 --> 00:34:48,988
+İşte şu bilinen bir sinyaldir. Doğal sinyaller dediğimiz. Yani kosünüs sinyali, kosünüs omega 0 T. Kosünüsün nasıl çalıştığını biliyor muyuz? Biliyoruz. İşte komşu böyle hipotonüs müydü? Öyle bir şeydi. Ben T'nin yerine, kosünüs fonksiyonlarda bütün neredeyse her programlama dilinde var. T'nin yerine ne verirsem o sonucu elde edebiliyorum.
+
+208
+00:34:49,844 --> 00:34:56,224
+İşte o kare dalga yerine böyle bir sinyal oluşturup o sinyalin analiz edilmesi işimize yarayacak burada.
+
+209
+00:34:58,564 --> 00:34:59,324
+Gelelim.
+
+210
+00:35:01,524 --> 00:35:07,503
+Burada sinyalleri frekans düzlemini analiz ederken genel olarak iki farklı durum ortaya çıkıyor.
+
+211
+00:35:08,703 --> 00:35:11,184
+Biz burada bu sinyali nereden inceleyeceğiz?
+
+212
+00:35:11,304 --> 00:35:13,364
+Eksi sonsuzundan artı sonsuzuna kadar.
+
+213
+00:35:14,244 --> 00:35:15,784
+Ayrık da olabilir, sürekli de olabilir.
+
+214
+00:35:16,403 --> 00:35:22,344
+Ama özellikle sürekli zamanda eksi sonsuzdan artı sonsuzda analitik çözüm mümkün.
+
+215
+00:35:23,184 --> 00:35:27,604
+Gerçek tarafa geldiğimizde örneğin şöyle bir periyodik dalga, kare dalga.
+
+216
+00:35:30,024 --> 00:35:33,564
+Bunun analitik çözümünü eksi sonsuzdan artı sonsuzda yapmaya gerek yok.
+
+217
+00:35:33,704 --> 00:35:40,083
+Bir periyodunu incelersen, bir periyodunu incelersen bütün periyodları incelemiş gibi oluyorum, analiz etmiş gibi oluyorum.
+
+218
+00:35:40,804 --> 00:35:42,184
+Bu bana işlemden kolayca salıyor.
+
+219
+00:35:43,635 --> 00:35:55,635
+ikiye ayrılıyor Fourier, Fourier operations diyelim. Birincisi Fourier series, Fourier transformation.
+
+220
+00:36:00,083 --> 00:36:02,443
+Eğer işaretim periyodik bir işaretse,
+
+221
+00:36:05,876 --> 00:36:11,276
+Periodik ise, burada Fourier serilerini kullanabiliyorum. Nispeten hesaplanması daha kolaydır.
+
+222
+00:36:12,155 --> 00:36:19,396
+Algoritmik açıdan. Eğer non-periodik ise, veya a-periodik ise, Fourier transformation'dan faydalanıyor.
+
+223
+00:36:20,336 --> 00:36:22,336
+Ve bunları bir de şu açıdan değerlendireceğiz.
+
+224
+00:36:23,856 --> 00:36:28,655
+T domeninden mi acaba input sinyalim n domeninde? Yani discrete mi?
+
+225
+00:36:29,235 --> 00:36:45,135
+Kontinuous mü? Ona göre bakacağız. Eğer kontinuous ise, continuous time Fourier transformu üzerinden veya non-continuous ise, discrete time Fourier transformu üzerinden çalışmalarımıza bakacağız.
+
+226
+00:36:46,795 --> 00:36:51,775
+Ve burada Fourier transformunun bize sağladığı bir diğer şey de,
+
+227
+00:36:52,403 --> 00:37:00,703
+Tamam, Fourier transformuyla biz frekans domenine gittik, yapacağımız işlemleri yaptık, yeni bir sonuç elde ettik.
+
+228
+00:37:01,703 --> 00:37:08,403
+Mesela dedim ki, iki tane sinyal, şu ikisini konvolüsyon yapın, XT ile E üzeri J Omega T'yi.
+
+229
+00:37:08,623 --> 00:37:11,043
+Ben bunların ikisinin ayrı ayrı Fourier dönüşümlerini aldım.
+
+230
+00:37:12,123 --> 00:37:15,384
+O ikisinin Fourier dönüşümlerini şurada bahsettiğim gibi çarptım.
+
+231
+00:37:17,139 --> 00:37:40,139
+Bunu çarptım. İşte bu ne oldu? İşte z omega diye bir şey oldu. Z yeni bir şey. Bunu ters Fourier ile inverse Fourier ile tekrar zaman domenine geçirdiğimde ikisinin konvolüsyon sonucunu alıyorum. Ve bu ters Fourier işlemi de öyle çok zor bir şey değil. O da basit bir integral. Önemli olan integralleri, zor olan integralleri burada
+
+232
+00:37:40,239 --> 00:37:45,739
+daha kolay hale getirmek, dönüşümlerin bize sağladığı en önemli faydalardan bir tanesi bu.
+
+233
+00:37:46,960 --> 00:37:48,359
+Buraya kadar bir sorumuz var mı?
+
+234
+00:37:51,279 --> 00:37:58,659
+Şimdi gelelim bizim Continuous Time Fourier Transform'da ama önden önce şunu anlatsak daha doğru olacak.
+
+235
+00:38:00,119 --> 00:38:01,859
+Fourier serileri daha mantıklı ya.
+
+236
+00:38:04,719 --> 00:38:06,699
+Neyse, şuradan bir başlayalım arkadaşlar.
+
+237
+00:38:11,923 --> 00:38:20,543
+Şimdi bir sistemin responsunu bulmak için, yani bir sisteme input verdik, output'u bulmak için ne lazım? Konvolüsyon lazım dedik.
+
+238
+00:38:21,203 --> 00:38:29,804
+Konvolüsyonu yapmak çok zordu dedik, işte Fourier dönüşümlerinden faydalanacağız ve Fourier dönüşümlerinin bir alt hükümesi olan Fourier serilerini kullanalım diyoruz.
+
+239
+00:38:30,463 --> 00:38:37,844
+Fourier serileri bize şunu sağlıyor arkadaşlar, Sinyali bilinen Kosinüs ve Sinüsler cinsinden
+
+240
+00:38:38,452 --> 00:38:56,452
+ayrıştırmayı, dönüştürmeyi sağlıyor, analiz etmeyi sağlıyor. Bunun sonucunda ben, işte sinyalin %99'una, %100'üne yakın, ayrıştırılmış yeni küçük sinyaller elde edilir ve bunların toplamı benim orijinal sinyalimi elde ediyor.
+
+241
+00:38:56,452 --> 00:39:04,452
+Yani elimde bir XTS sinyali var, ben bu XTS sinyalini sisteme respons olarak verdiğimde,
+
+242
+00:39:05,139 --> 00:39:30,419
+Neyi elde edeceğim? YTI elde edeceğim. Bu XTS sinyelim. Süperpozisyon teoremik gereği, özelliği gereği. Bunları tek bir seferde vermek yerine linearlikte, linearlik kontrolü yapmıştık ya, ayrı ayrı inputlarla sisteme verirsek yine hiçbir şey değişmeyecek. Buradan yola çıkarak diyorum ki ben o zaman bu sinyalimi olabildiğince küçük parçalara ayrıştırayım, bildiğim parçalara ayrıştırayım.
+
+243
+00:39:30,963 --> 00:39:36,283
+Bu ayrıştırdığım her bir parçayı sisteme ayrı ayrı tanıtayım ve elde edeceğim sonuç yine aynı olsun.
+
+244
+00:39:37,363 --> 00:39:40,683
+Bu bir özellik mesela, bunu Dinerl'likte konuşmuştuk.
+
+245
+00:39:41,203 --> 00:39:52,603
+Bir de sinyallerimiz her zaman böyle normal şey sinyaller olmuyor yani içerisinde real sayılar oluşan sinyaller olmuyor, işte kompleks sayılar oluşuyor.
+
+246
+00:39:56,659 --> 00:40:22,519
+Ve bunlar bizim bildiğimiz en doğal sinyaller. Bu doğal sinyaller cinsinden ben bu işi yapabilirsem daha avantajlı durumdayım. Çünkü bir doğal sinyale bakarak sinyalin frekansını, genliğini ve faz bilgisini elde ediyorum. Bunu ilk derste anlatmıştık mesela. Şöyle bir örnek şimdi yazayım. Cosinus 500T artı 90.
+
+247
+00:40:23,315 --> 00:40:39,056
+İşte şu 500T'den yola çıkarak 2P'yi FT edersek buraya, 500T, buradan ben frekansın 250 Hz olduğunu söyleyeceğim. Şunun faz bilgisi olduğunu söyleyeceğim. İşte şurada şu an için bir görünüyor, işte bunun genliğine bir diyeceğim. Bu şekilde analiz yapabileceğiz.
+
+248
+00:40:42,036 --> 00:40:49,935
+Kosünüsden bunu yapabilmek çok daha kolay. Kosünüsün zaten 90 derece faz ekseninde kaydırılması, zaman ekseninde kaydırılması sinüse karşılık geliyor.
+
+249
+00:40:50,612 --> 00:41:06,612
+Biraz önce yazdığım şu denklemleri, şunları taraf tarafa toplarsak, arkadaşlar topladığımızda iki tane kosünüs Omega 0 T'ye gelir.
+
+250
+00:41:06,612 --> 00:41:12,891
+Burayı da tamam, yani şu ikisi birbirini zaten götürecek. Pardon çıkarırsak diyecektim, yok çıkarmam.
+
+251
+00:41:14,231 --> 00:41:16,032
+Bir dakika, şurada.
+
+252
+00:41:17,684 --> 00:41:22,844
+Şöyle olacak arkadaşlar, şu artı olacak, şu eksi olacak, şöyle yazacağız.
+
+253
+00:41:25,684 --> 00:41:27,384
+Bu pozitif, bu negatif yani.
+
+254
+00:41:27,964 --> 00:41:29,164
+Şimdi toplarsak ne olacak?
+
+255
+00:41:29,164 --> 00:41:39,504
+E üzeri J, omega 0 T, artı E üzeri eksi J, omega 0 T veya 2 pi ile de yazabiliriz, problem değil.
+
+256
+00:41:41,744 --> 00:41:42,224
+Bölü,
+
+257
+00:41:46,291 --> 00:41:48,351
+Tamam, bir dakika, burada ne var?
+
+258
+00:41:49,351 --> 00:41:52,711
+Bu gelecek. İşte şu ikiyi de şuraya atarsak böyle iki diyeceğiz.
+
+259
+00:41:52,831 --> 00:41:57,891
+Kosinus omega t dediğimiz şey, e'in üzeri j'ler cinsinden bir şey yazmak demektir mesela.
+
+260
+00:41:58,751 --> 00:42:03,931
+Eğer sinüsleri yazmak istersek, bundan işte birinciden ikinciyi çıkarırsak bu sefer sinüslü tarafı bulabiliriz.
+
+261
+00:42:04,531 --> 00:42:10,692
+Pi'de 2j gelecek. Aradaki işareti sadece yer değiştirecek. İşte şurada artı, buradaki eksi olacak.
+
+262
+00:42:11,603 --> 00:42:14,483
+Bu denklem, yani siz sadece şunu bilin yeterli.
+
+263
+00:42:15,443 --> 00:42:20,463
+E üzeri J omega 0 T eşittir.
+
+264
+00:42:21,744 --> 00:42:24,204
+Kosinüs omega 0 T. Bu evler denkleminden geliyor.
+
+265
+00:42:24,403 --> 00:42:27,384
+Artı J sinüs omega 0 T.
+
+266
+00:42:28,224 --> 00:42:30,963
+Bunu bilirsek hepsini birbirinden türetebiliyoruz.
+
+267
+00:42:31,043 --> 00:42:33,304
+Yani bunun eksi C olursa araya eksi C gelecek.
+
+268
+00:42:34,083 --> 00:42:37,144
+Daha sonra taraf tarafa topladığımızda sinüsü kosinüsü bulabiliyoruz.
+
+269
+00:42:43,251 --> 00:42:58,911
+Ve bu bilinen sinyaller cinsinden bir decomposition yapmak, verilen bir input sinyali, decomposition yapmak bize daha basit analiz yapmayı sağlayacak. Bu slide baya uzun arkadaşlar, bu konu gelecek haftaya da uzar.
+
+270
+00:43:05,907 --> 00:43:20,407
+sonsuz sayıda sinüs ve kosünüslerin birleşimi şeklinde yazılabilir diyor. Tabi bu eğer periyodikse sonsuza gerek yok. Daha böyle basit aralıkta analiz edilerek yapılabilecek bir şey.
+
+271
+00:43:21,407 --> 00:43:32,947
+Ve bu da şudur arkadaşlar. Sinyalin reprezentasyonu şöyle oluyor. Sum of sinusoids. Sinüslerin, sinusoidlerin toplama. Sinusoid'den kastımız sinüs ve kosünüs. İkisi de olabilir.
+
+272
+00:43:34,900 --> 00:43:38,059
+Şimdi, the best approximation of the dashed line signal.
+
+273
+00:43:40,119 --> 00:43:45,220
+Yani şu bir sinyal, bu sinyale yaklaşmak için ne yapacağım ben?
+
+274
+00:43:45,820 --> 00:43:47,460
+Burada bir tane sinizoidal kullanmışım.
+
+275
+00:43:47,519 --> 00:43:52,240
+Buna bir daha eklersem, bir daha eklersem, ona yakın bir dalga edeceğim sonuçta, elde edeceğim.
+
+276
+00:43:52,960 --> 00:43:54,240
+Bunu söylemek istiyoruz.
+
+277
+00:43:56,179 --> 00:43:57,760
+İşte şu bir sinizoidal.
+
+278
+00:43:57,760 --> 00:43:59,724
+Ben bu sinizoidal'ı...
+
+279
+00:43:59,860 --> 00:44:25,860
+Bir üçgeni yaklaştırmaya çalıştığında üçgene birazcık benziyor. Bir miktar hata var. Buna biraz daha eklenti yaparsam, bir sinizoyut daha eklersem şuna, şuradakine, bakın o hata biraz daha az oluyor. İşte bir tane daha eklersem bir şey daha oluyor. Ve sonuçta istediğim sinyale yakın bir şey elde ediyorum. Mevzu bu. Ve bunu hem Continuous Time'da hem de
+
+280
+00:44:26,516 --> 00:44:35,716
+Ayrık zamanda Discrete Time'da yapabiliyorum. Bu işlemede sinyalin harmoniklerinin bulunması diyoruz arkadaşlar.
+
+281
+00:44:35,716 --> 00:44:48,516
+Şimdi Continuous Time Fourier serisi dediğimiz şey şu, zamana bağlı bir durum var, bir toplam sembolü var. Bakın continuous ama toplam sembolü.
+
+282
+00:44:48,516 --> 00:44:54,412
+Burada bir seri elde edeceğim için sonuçta, bunu bir toplam sembolü ile gerçekleştireceğim.
+
+283
+00:44:54,771 --> 00:44:59,991
+Bir C dizim olacak. Bu harmoniklerin bilgilerini içerecek.
+
+284
+00:45:00,771 --> 00:45:06,091
+Ve ben bunu E üzeri C'ye 2PKT denilen bir şeyle çarpıyorum. Yani sinüslülerle çarpıyorum.
+
+285
+00:45:07,672 --> 00:45:13,291
+Bu çarpma işleminin sonucunda elde ettiğim şeyler bana harmoniklerimin bilgilerini verecek.
+
+286
+00:45:13,531 --> 00:45:15,652
+İçindeki sinüzoilerlerin bilgisini verecek.
+
+287
+00:45:16,231 --> 00:45:20,271
+Geçen hafta şu konvolüsyon işlemini anlatırken şöyle bir şeyle karşılaşmıştık.
+
+288
+00:45:21,268 --> 00:45:30,327
+Sinyal bir tanesi şuydu, işte diğeri de buydu. Hatta animasyon göstermiştim. Bir yerde pik veriyordu. Nerede pik veriyordu arkadaşlar? Sonuç.
+
+289
+00:45:35,699 --> 00:45:44,039
+Sonuç nerede tam olarak pik veriyordu? En çok benzediği noktada, yani şu bölge kesişme %100 olduğu nokta, en çok uyuşan yerde.
+
+290
+00:45:44,419 --> 00:45:50,299
+Yani bu ne demek? Aynısını gördüğü noktada veya aynısına en yakın olduğu yerde pik verecektim.
+
+291
+00:45:50,759 --> 00:45:54,399
+Peki aynısına en yakın olduğu yerde yaptığımız çarpma işlemi neydi?
+
+292
+00:45:56,851 --> 00:46:21,612
+XT çarpı YT diye şöyle bir işlemimiz, yaptığımız çarpma işlemi şuradaki konvolüsyonun çarpmasıydı değil mi arkadaşlar? Sonuçta biz konvolüsyon yapıyoruz. İşte bakın bu da bir konvolüsyondur bir anlamda. Sadece konvolü ettiğimiz sinyal, özel kosünüs sinyali, ikinci fonksiyon. Bu benim input sinyelim, bu da bir kosünüs sinyali. Bunun sonucunda elde ettiğim şey de, acaba bu sinyalin içinde
+
+293
+00:46:22,079 --> 00:46:25,320
+Benim Kosünüslerime, Sinüslerime benzeyen neler var?
+
+294
+00:46:26,579 --> 00:46:29,559
+Onları bulabilir miyim mi ifade ediyor bu denklem?
+
+295
+00:46:31,360 --> 00:46:32,179
+Anlaşıldı mı burası?
+
+296
+00:46:34,860 --> 00:46:42,719
+Bu ortogonallik dediğimiz şey, yani bunlar çok fazla girmeye gerek yok, işin matematiksel taraflarını anlatıyor.
+
+297
+00:46:44,280 --> 00:46:47,840
+Önemli olan bir input sinyalini verdiğimizde,
+
+298
+00:46:48,244 --> 00:47:07,784
+Bunun Kosinüsler, Sinüsler cinsinden elde edilmesini sağlayan şey bir seri alacağız. Bakın dikkat edin burada. Bu bir dönüşüm değil. Çünkü bu eksi sonsuz artı sonsuz aralığında olan bir sinyal değil. Nedir? Belli bir periyotta incelenen bir sinyal.
+
+299
+00:47:14,643 --> 00:47:32,523
+ortagonallik gereği ben T0'dan T0 artı T'ye kadar ki bölümü incelersem, konvolüsyon yaparsam, diğer tarafları yani aynı tekrar eden kısımları konvolüsyon yapmamama veya Fourier serileri almama gerek yok. Bakın burada bir konvolüsyondan bahsediyoruz.
+
+300
+00:47:33,523 --> 00:47:42,063
+Bu bir çarpma işlemi. Tamamını incelemek yerine belli bir kısmını incelemek bize daha iyi. Burada bunun ispatları falan var.
+
+301
+00:47:43,284 --> 00:47:48,364
+Evler denklemlerine, bunlara bakarsınız. Biraz daha detaylı anlatıyor. Çok da gerek yok.
+
+302
+00:47:52,563 --> 00:48:19,603
+Şimdi bunu özetlediğimizde, eksi sonsuzdan artı sonsuza bir sinyalin bileşenlerini bulmak için kullanacağımız asıl denklem şu. Fakat bunu ben bir periyot boyunca incelemek istediğimde yine integral karşıma geliyor. Çünkü kontinüs zamanda izledik. O zaman ben bunun bir periyodunu entegre edersem şu kosinüs ve sinüs içeren sinyalle benim için şunun aynısını bulmak yeterli oluyor. Ve bu bulduğum şey bir vektör.
+
+303
+00:48:20,340 --> 00:48:28,780
+Bana sinyaldeki sinüzoidal birleşenleri veya sinyalin harmoniklerini elde etmeyi sağlıyor.
+
+304
+00:48:30,060 --> 00:48:39,900
+Yaptığımız işlem temel olarak Fourier serisi dönüşümü ile Fourier serisi transformu ile T domeninden K gibi bir başka domenine geçmektir.
+
+305
+00:48:40,940 --> 00:48:44,500
+Geçtiğimiz bu domeninde elde ettiğimiz sonuçlar
+
+306
+00:48:45,235 --> 00:49:10,996
+bazı kas sayılar verecek. Bu kas sayılar ne olacak arkadaşlar? Şuradaki sinyalin genliğini, frekansını ve faz bilgisini içeren bir vektörler elde edeceğiz burada. Bu denklemde. Örnekleri yapınca zaten bu, diyeceğim ki bakın burada bu şeyi elde edecektik. Bu açıklamaları tekrar hatırlatacağım. Sonuç olarak biz tekrar bu şeyleri bulacağız. Şimdi
+
+307
+00:49:11,731 --> 00:49:13,731
+Şu sinyali incelediğimizde ara vereceğim.
+
+308
+00:49:17,012 --> 00:49:22,971
+Input sinyalimiz burada arkadaşlar, real bir fonksiyon olabilir.
+
+309
+00:49:23,532 --> 00:49:28,231
+Yani sadece XT dediğimiz şey, inputumuz, real değerleri içeren bir fonksiyon olabilir.
+
+310
+00:49:29,032 --> 00:49:31,231
+Bir de karmaşık değerleri içeren bir fonksiyon olabilir.
+
+311
+00:49:31,592 --> 00:49:32,692
+Bu ona göre değişiyor.
+
+312
+00:49:32,791 --> 00:49:34,492
+Öncelikle biz real fonksiyonlara bakacağız.
+
+313
+00:49:34,592 --> 00:49:36,931
+Karmaşık fonksiyonlarla çok fazla ilgilenmiyoruz zaten.
+
+314
+00:49:38,228 --> 00:49:47,748
+Karmaşık real fonksiyonlarda da ne vardı? Tek fonksiyon, çift fonksiyon vardı. Onun denklemlerini hatta örneklerini yaptığımızı hatırlıyorum.
+
+315
+00:49:47,748 --> 00:50:01,827
+Buna göre değişiyor. Yani işlem biraz daha kolaylaşıyor. Eğer tek fonksiyonsa şu integral biraz daha uzuyor, çok uzamıyor. Çift fonksiyonsa daha kolay oluyor. Bunun özelliklerine daha sonra bakacağız.
+
+316
+00:50:02,356 --> 00:50:15,356
+Şimdi şuradan geldiğimde ders bir ara verelim. Geldiğimizde devam ederiz. Saat 56 geçiyor. 15 dakika ara verelim. Geldiğimizde arkadaşlar blog ders yaparız. Öyle devam ederiz. Görüşmek üzere.
+
+317
+00:50:28,115 --> 00:50:29,115
+Baba!
+
+318
+01:03:49,684 --> 01:03:57,444
+Evet, merhaba arkadaşlar. Devam edelim. Erken gelmedim değil mi? Benim telefonum acaba bazen şey mi diyorum?
+
+319
+01:03:58,764 --> 01:03:59,904
+Yok hocam, tam sakin.
+
+320
+01:04:00,344 --> 01:04:01,304
+Uyumsuz mu diyorum?
+
+321
+01:04:02,804 --> 01:04:12,844
+Şimdi arkadaşlar, demek ki esasında yapacağımız şey bir XT sinyalini, buradaki XT sinyalini, içerisinde sinüs ve kosünüsler içiren.
+
+322
+01:04:13,907 --> 01:04:27,108
+Bir sinyalle konvolüsyon yapmak. Onun için biz önce konvolüsyonu anlatıyoruz, ondan sonra bu işleme geçiyoruz. Şimdi konvolüsyon yaparken, dediğim biraz önce de söyledik, periyodik sinyallerde bunu uyguluyoruz, Fourier serilerini.
+
+323
+01:04:27,708 --> 01:04:39,987
+Ve içerisinde uyguladığımız sinüs ve kosinüsler de belli periyotlarla burada inceleniyor. Dolayısıyla bize sinyalin periyodu lazım, önce onu bulacağız.
+
+324
+01:04:40,563 --> 01:04:44,563
+Bu periyoda göre şurada bir kosünüs bileşeni oluşturacağız.
+
+325
+01:04:44,563 --> 01:04:46,563
+Şimdi şu ifadeyi
+
+326
+01:04:49,563 --> 01:04:51,563
+Şurada tekrar yazmaya çalışayım.
+
+327
+01:05:05,172 --> 01:05:18,852
+e üzeri eksi j. Bakın burada omega 0 yerine k diye başka bir şey var. Yani bu 2PFT tarzında. e üzeri j, 2PKT.
+
+328
+01:05:23,059 --> 01:05:25,319
+2PKT
+
+329
+01:05:25,319 --> 01:05:34,139
+F yerine farklı bir frekans, bölü, büyükte periyot diye bir şey olacak. Bu sinyalimizin
+
+330
+01:05:42,356 --> 01:05:45,036
+İnceleyeceğimiz sinyalin periyodu ile alakalı bir şeydir.
+
+331
+01:05:46,036 --> 01:05:51,096
+KT bölü DT. Bunu elde ettikten sonra işimiz biraz daha kolay.
+
+332
+01:05:51,096 --> 01:05:58,516
+Şu dönüşümü yapabilmemiz lazım. Biraz önce yazdığımız E'li dönüşümden kosünüs dönüşü. Bu nedir?
+
+333
+01:05:59,195 --> 01:06:05,316
+Kosünüs 2P KT bölü T'dir.
+
+334
+01:06:06,387 --> 01:06:16,468
+eksi J olduğu için J çarpı sinüs, kosnüs, 2Pi, K, T bölü, T'dir.
+
+335
+01:06:17,407 --> 01:06:25,188
+Bazı integrallerde, E üzeri J, P bunu görmek yerine, o integrallerde, oradan şu ifadeyi görebilirsiniz.
+
+336
+01:06:25,367 --> 01:06:26,508
+Sonunda da bir D, T gelir.
+
+337
+01:06:27,827 --> 01:06:29,928
+Hiçbir şey fark etmez, şu T değil, T olacak.
+
+338
+01:06:31,891 --> 01:06:35,891
+Şu biraz daha kompakt bir yazılımdır. Hangisi işimize gelirse onu yapacağız. Niye?
+
+339
+01:06:37,572 --> 01:06:48,192
+İnceleyeceğimiz işaret, hani böyle sabit bir fonksiyonsa, ne bileyim, 2T, 3T gibi veya lineal bir fonksiyonsa, Tk, Tk gibi ise, o zaman işler biraz daha karışıyor.
+
+340
+01:06:49,431 --> 01:06:55,092
+Ama inceleyeceğimiz fonksiyon E üzeri J'li bir şeyse, gidip de bunu tekrar kosünüslü yazmaya gerek yok.
+
+341
+01:06:55,231 --> 01:06:58,291
+Bu E'li formatta yazıp daha hızlı integral alabiliriz.
+
+342
+01:06:59,284 --> 01:07:06,244
+Veya işte kosünüstü bir şeyse kosünüstüler cinsinden yazıp kosünüst dönüşümleriyle yani trigonometrik dönüşümlerle bu işi yapabiliriz.
+
+343
+01:07:07,184 --> 01:07:12,284
+Tabii bizim genellikle inceleyeceğimiz şeyler bu ders kapsamında çok basit olur.
+
+344
+01:07:13,084 --> 01:07:16,764
+Mesela neyi inceleyelim? En basit kare dalga. Kare dalga dediğimiz şey nedir?
+
+345
+01:07:17,604 --> 01:07:22,284
+Eğer bunu şöyle bir şey düşünürsek sıfırdan iki saniyeye buradan da üç saniyeye diyelim.
+
+346
+01:07:22,284 --> 01:07:25,464
+Daha sonra burada şöyle üçten beşe.
+
+347
+01:07:26,867 --> 01:07:45,268
+5'ten 6x. Bakın bunun periyodu şudur. Şuradan şuraya, T'ye 3 deriz. 0, 2 arasında sinyal 1'i gösteriyor. Yani integralin bu tarafı, şundan önceki tarafı 1 olacak, diğer tarafları da 0 olacak. Çok basit bir integral haline dönüşecek.
+
+348
+01:07:46,867 --> 01:07:52,011
+Fourier'in tanımı görevi, bu işlemi biz her türlü sinyalde yapabildiğimiz için, eğer ben hani...
+
+349
+01:07:52,659 --> 01:08:07,519
+Öğrencinin not almamasına kastedersem şöyle bir süreç sorabilirim mesela yani. Hadi derim bunu konvolüsyon yapın. Ne olacak? O zaman sıfırdan şu aralığa kadar T'lik bir sinyal. Şu tarafta T olacak. Şu aralıktan şuraya kadar eksi T'lik bir sinyal gibi düşüneceğiz.
+
+350
+01:08:08,739 --> 01:08:20,039
+Veya işte burada kuadratik bir sinyal olabilir, daha zor sinyaller olabilir. O tamamen soruyu soran merhamet duygusu ile alakalı bir şeydir. Ama mantık aynıdır. Şu integralin çözümü
+
+351
+01:08:20,756 --> 01:08:35,155
+bize dekomposition sonucunu verecektir. Bu gösterim notasyonda farklılıklar, farklı kitaplarda, farklı kaynaklarda, bazısında kosünüstü görürsünüz, bazısında E'li bir şeyler görürsünüz, onlar normaldir arkadaşlar.
+
+352
+01:08:36,376 --> 01:08:47,155
+Burada bazı trigonometri yapalım demiş. Bu ifadeyi, biraz önceki yazdığım şeyi, bir sinyali eğer ki
+
+353
+01:08:49,171 --> 01:09:15,351
+Kosinuslu ve sinüslü bir şekilde yazarsak, bizim şu elde edeceğimiz CK'lar, kosinus ve sinüse göre değişiyor. Neden? Kosinus çift bir fonksiyondur, sinüs tek fonksiyondur. Dolayısıyla doğrudan gelen katsayılar, doğrudan hepsi için aynı katsayı gelmiyor. Kosinusler için farklı bir katsayı, AK katsayısı.
+
+354
+01:09:15,796 --> 01:09:38,716
+Sinüsler için de BK kas sayısı geliyor. Yine K'ya bağlı bir şey var. Bakın şuradaki şeye baktığımızda K'ya göre değişen bir durum olduğunu söyledik. K'ya göre değişiyor ama kosinüs için farklı, sinüs için farklı. Bir de kosinüsten bağımsız olan işaretteki DC bileşini içeren A0 kas sayısı var. Bu daha başka bir şey.
+
+355
+01:09:39,444 --> 01:10:01,463
+A0 elde edeceğiz biz bu integral hesaplarken. A0'dan sonra kosünüstü birleşenleri göstereceğiz. Daha sonra sinüstü birleşenleri göstereceğiz ve bizim XT sinyalimiz bu şekilde temsil edilmiş olacak. Neyi yapınca? Şu integralin gereğini yapınca. Bu CK'lar, CXK denimiz, 3 farklı parçadan oluşacak.
+
+356
+01:10:02,515 --> 01:10:08,115
+Tek ve çift fonksiyondan dolayı. Bir DC bileşen, biri Kosünüs bileşenleri, biri de Sinyüs bileşenleri.
+
+357
+01:10:09,595 --> 01:10:17,915
+Şimdi buradaki Sinyüs bileşenlerini gösteren AK kas sayılarını bulmak için yapacağımız şey, şu integrali parçalarsak,
+
+358
+01:10:19,595 --> 01:10:25,855
+bir periyottan iki bölüte, bu normalizasyondur iki bölüte arkadaşlar, bir periyot boyunca işaretimin Kosünüs,
+
+359
+01:10:26,484 --> 01:10:41,684
+sinyal ile konvolüsyonu, diğeri de sinyal ile konvolüsyonu olacak. Geri kalan her şey aynı. Daha sonra buradan gelen sayıları, buradan gelen işlemleri de ne yapacağız? Hepsini bir araya getirip şunu tekrardan baştan yazmaya çalışacağız.
+
+360
+01:10:50,387 --> 01:10:57,887
+Ve bu katsayıların toplamı da bize neyi veriyor? İşte tek ve çift sinyallerden yola çıkarak burada bazı ispatlar yapmaya çalışmış.
+
+361
+01:10:58,827 --> 01:11:02,448
+Orijinal sinyalimin değerini veriyor. Yani neyi veriyor?
+
+362
+01:11:04,487 --> 01:11:14,368
+Şurada bulduğum her bir sinizoidal birleşini topladığımda, frekans düzleminde topladığımda, kırmızı sinyalin kendisini elde ediyorum. Fourier serili yoluyla.
+
+363
+01:11:19,956 --> 01:11:32,456
+Örneğin demiş ki, bizim 2x sinyalimiz, burada da çok merhametsiz davranmış da, 2 tane cos 400PT olsun ve sinyalin periyodu da 5 milisaniye olsun.
+
+364
+01:11:33,796 --> 01:11:40,735
+Buradan biz neyi bulalım demiş, sinyalin AK ve B kas sayılarını bulalım.
+
+365
+01:11:41,735 --> 01:11:44,896
+Şimdi bu sinyalde arkadaşlar şöyle bir problem var.
+
+366
+01:11:45,427 --> 01:12:12,368
+Kosünüs ile kosünüsü çarpmak zorunda olacağız. Şimdi bu kosünüs ile kosünüs, yani iki tane kosünüs dalga, şu 400p'lik ve 2pkt'lik olan şey, öyle bir yerde bir araya gelecek ki biz bu çarpımın sonucunu bir yerde maksimum göreceğiz. İşte şurası mesela veya şuradaki değerler. Nerede maksimum göreceğiz? En çok benzediği, yani şu 400p'lik sinyale en çok yakınlaştığı yerde maksimum değeri göreceğiz.
+
+367
+01:12:13,908 --> 01:12:19,808
+Tabii, kosünüs olduğu için burada biraz daha düzenli bir durum olacak. Sinüste durum biraz daha düzensiz.
+
+368
+01:12:21,568 --> 01:12:27,968
+Ve bir periyot boyunca çarpımın sonucu sürekli kosünüste artacaktır.
+
+369
+01:12:28,768 --> 01:12:34,368
+Çünkü kosünüs örneğin şurada bir yerde başlıyor, böyle artıyor, şurada en yüksek değeri geliyor.
+
+370
+01:12:35,708 --> 01:12:39,648
+Bizim periyoda ulaştığımız noktada en yüksek değeri bulacağız.
+
+371
+01:12:41,076 --> 01:12:47,235
+Sinüs tarafında da bu iki defa artacaktır. Bir artış, bir azalış göreceğiz.
+
+372
+01:12:48,316 --> 01:12:56,115
+Yapacağımız şey şuraya getirip 2 çarpı cos400PT'yi XT'yi getirip yerine yazmak ve bu integrali çözmek olacak.
+
+373
+01:12:56,296 --> 01:13:02,695
+Bu biraz daha işin mantığını anlatıyor. Daha bunun analitik çözümleriyle alakalı kısımlar da gelecek arkadaşlar.
+
+374
+01:13:07,091 --> 01:13:18,371
+Mesela burada farklı bir harmonikle XTE buymuş. Şurada bir harmonik. Daha sonra bu çarpımı buluyor. Burada simzoidal birleşen bu çarpımı buluyor.
+
+375
+01:13:23,475 --> 01:13:24,755
+Şurada mesela
+
+376
+01:13:27,315 --> 01:13:28,595
+Periyodu 10 olan
+
+377
+01:13:29,355 --> 01:13:33,715
+2T0'lık bir sinyalle farklı bir çarpım bileşenlerini bulmaya çalışıyor.
+
+378
+01:13:35,515 --> 01:13:38,315
+Burada da diğer örnekler var.
+
+379
+01:13:42,935 --> 01:13:46,515
+Eğer ki demiş ki sinyalimiz XT'miz 1 bölü 2
+
+380
+01:13:47,123 --> 01:14:05,183
+eksi 3 bölü 4, kosünüs 20PT artı 1 bölü 2, sinüs 30PT olsa, bakın bu sinyal biraz öncekinden daha karmaşık bir DC bileşeni var. Bu DC bileşenden bir kosünüs bileşen çıkarıyoruz, ona da bir sinüs bileşen ekliyoruz.
+
+381
+01:14:11,188 --> 01:14:35,448
+DC birleşeni bulacağız, A0'ı, AK'yı ve BK'yı bulacağız. Ve bu işlem, bu arama esnasında, yapacağımız integral veya konvolüsyon esnasında, bu aşamalar aynı şekilde, biraz önceki örneklerde olduğu şekilde devam edecek. Ne zaman biz şu sinüs 30 pi'ye yakın gördük, şurada pik elde edeceğiz. Ne zaman bir cos 20 pi'ye yakın gördük, 3 bölü 4 cos 20 pi'de, orada pik göreceğiz.
+
+382
+01:14:39,572 --> 01:15:06,271
+Konvolüsyon sonucunu Sinyalin bileşenlerini elde etmemizi sağlayacak. Şöyle bazı örnekleri var. Bunları geçelim. Şimdi Continuous Time Fourier serilerinin şöyle özellikleri var. Eğer sinyali sen topluyorsan, bunları parçalara ayırabiliyorsun ve ayrı ayrı bunların kas sayılarını elde edebiliyorsun. Yani biraz önce yaptığımız şu işlemi ayrı ayrı küçük küçük sinyallere yapabiliriz.
+
+383
+01:15:06,707 --> 01:15:09,207
+Öyle bir imkanımız var. Evet.
+
+384
+01:15:10,407 --> 01:15:17,807
+Şu sinyali, XT sinyalimizi, Rectangle 2T sinyalimizi ve burada bir birim darbe fonksiyonu var. Bunun
+
+385
+01:15:19,108 --> 01:15:26,707
+bir periyot boyunca analizini yapalım demiş. Bu örnekleri gelecek hafta daha detaylı anlatacağım.
+
+386
+01:15:27,707 --> 01:15:29,707
+Analitik çözümleri ile beraber anlatacağım.
+
+387
+01:15:30,515 --> 01:15:43,155
+Bugün sadece böyle bir mantığını nedir ne değildir onları görmek istiyoruz. Bakın hep şu ana kadar incelediğimiz sinyaller nedir? Periyodik sinyaller ve sevilere ayırıyoruz.
+
+388
+01:15:45,675 --> 01:15:57,495
+Size bir ödev vermeyi düşünüyordum ama vazgeçtik. Yani zaman sıkışıklığı olmasın diye işte telefon tuşlarının seslerini veya bazı
+
+389
+01:15:57,844 --> 01:16:18,224
+Harflerin seslerini analiz etmişler. Bat sesi, bu bat sesinin içerisindeki sinüs ve kosinüslerin birleştirilmiş hali var. Biz o birleştirilmiş hallerinden sinyaller oluşturup o sinyalleri topladığımızda elde duyacağımız ses bat sesi oluyor.
+
+390
+01:16:20,979 --> 01:16:26,819
+İngilizce'deki fakat bağlacının çevirisi olan but, ondan bahsediyorum.
+
+391
+01:16:29,119 --> 01:16:36,399
+Bu örneğin mesela bunun analiz edilmesi, Fourier serilerine açılması burada görselleştirilmiş.
+
+392
+01:16:36,399 --> 01:16:46,399
+Peak gördüğümüz yer ne demek arkadaşlar? O sinyale en çok benzeyen kosünüs. O sinyalin içerisinde bir kosünüs dalga bulduk demektir. Onu söylüyoruz.
+
+393
+01:16:48,275 --> 01:16:56,036
+Ve Decomposition'ı sağlıyoruz. Biraz önce bakın şuna benzer bir şey. Nihai olarak bizim bulacağımız şey de aslında şu olacak arkadaşlar.
+
+394
+01:16:57,376 --> 01:17:12,716
+Herhangi bir sinyali Harmonikler cinsinden, içerisindeki frekans bileşenleri cinsinden yazacağız. Bakın T domeynindeki XT sinyali, CK domeyninde, K domeyninde ve bu daha çok frekans domeyninde yazacağımız
+
+395
+01:17:13,235 --> 01:17:16,556
+yeni bir vektör sinyal haline geliyor.
+
+396
+01:17:19,376 --> 01:17:30,636
+Şimdi bu bir dursun, burada SYNC fonksiyonu üzerinde şu SYNC fonksiyondur, işte P bölü X ile P çarpı X ile çift bölme işleminin sonucudur, normal bir sincili soyadal dalgayı.
+
+397
+01:17:31,155 --> 01:17:40,376
+Bunun analizi falan var, bu bir dursun, bu biraz şey, nasıl söylesem, gereksiz detaylara giriyor. Bir de diğer swipeden bakalım.
+
+398
+01:17:41,043 --> 01:17:46,244
+Bugün sadece Fourier serisi nedir, Fourier dönüşümü nedir, bunları öğreneceğiz.
+
+399
+01:17:46,363 --> 01:17:55,503
+Gelecek haftada herhangi bir işaretin, işte şöyle bir işaretin Fourier serilerine ayrılması nedir, buna bakacağız.
+
+400
+01:17:55,644 --> 01:18:01,923
+Şuradaki kas sayıları bulacağız. Daha sonra onları topladığımızda imkan olursa bir metlab üzerinden uygulama yaparız.
+
+401
+01:18:02,612 --> 01:18:20,612
+Bu konuda devam edeceğiz. Bir de bunun discrete Fourier transformu dediğimiz ayrık veriler üzerinde gerçekleştirimi var. Ona bakacağız. Bu slide şimdilik burada bir dursun. Burada ben bir not alayım. Şu 5. örnekten önce, Sync Function'dan önce 34. sayfadayız.
+
+402
+01:18:21,612 --> 01:18:23,564
+Gelelim diğer tarafa.
+
+403
+01:18:26,420 --> 01:18:38,720
+Şunları da arkadaşlar aynı. Size şu fonksiyonu bilmenizi tavsiye ederim. Yani her bir sinyal ne demektir Fourier serileri diye kısaca özetleyecek olursam,
+
+404
+01:18:38,720 --> 01:18:44,920
+bir XS Sinyali şu şekilde yazılabilir arkadaşlar, toplam fonksiyon cinsinden.
+
+405
+01:18:45,811 --> 01:18:52,051
+i eşittir, eksi sonsuzdan artı sonsuza diyebiliriz bunu genel bir ifadeyle.
+
+406
+01:18:52,711 --> 01:18:56,112
+Her bir sinyalin, her bir sinusoyların kendine ait bir genliği vardır.
+
+407
+01:18:56,631 --> 01:19:02,252
+Çarpı bu genlik, sinüsü de kosünüs cinsinden yazabiliriz. Bu şekilde yazalım.
+
+408
+01:19:02,252 --> 01:19:07,891
+2 çarpı pi çarpı, i çarpı kendisine ait bir frekansı vardır.
+
+409
+01:19:12,724 --> 01:19:36,844
+Bunun faz bilgisi vardır. Ben şunları biliyorsam, arkadaşlar, bu sonsuz veya sonlu toplam haline getireceğim için o toplamın sonucunda orijinal sinyalimi elde edebilirim. Yani neyi yapabilirim? Şunu yapabiliyorum. Tamam mı?
+
+410
+01:19:37,747 --> 01:19:45,367
+Amacımız buradaki şunları bulabilmek. Bunları bulabilmenin yolu da biraz önce bahsettiğimiz Fourier serilerinden geçecek.
+
+411
+01:19:46,147 --> 01:19:53,268
+Peki işaretimiz periyodik değilse, ki günlük hayatta çoğu işaret böyle güzel periyodik durumda olmaz.
+
+412
+01:19:54,347 --> 01:19:57,187
+O zaman yapacağımız şey arkadaşlar Fourier transform oluyor.
+
+413
+01:20:02,771 --> 01:20:07,492
+Bu baya baya bir transform. Çünkü biraz önce dedik ki Fourier serisi dedik.
+
+414
+01:20:10,311 --> 01:20:11,752
+Periodik falan dedik.
+
+415
+01:20:12,891 --> 01:20:18,011
+Burada %100'lük bir durum yoktur. Yani %100 sinyalin orijinalini elde edemiyorsun.
+
+416
+01:20:18,271 --> 01:20:24,771
+Yani büyük oranda sinyale çok benzetiyorsun. Ama şuradaki örneğine gelecek olursak,
+
+417
+01:20:25,572 --> 01:20:29,591
+kırmızının aslını tekrar elde edemiyoruz. Belli bir hata payı var.
+
+418
+01:20:30,420 --> 01:20:47,420
+Şu diyor ki Fourier, ben bir Transform'um. Yani XT sinyalini, XT'yi sürekli zamandan alıp, XF sinyali, büyük XF'e gönderebilirim. Aynı şekilde bunu rekonstrakt edip orijinalini bulabilirim.
+
+419
+01:20:47,420 --> 01:20:52,420
+Bir şeyin Transform olması için bizde bu dönüşümlerde
+
+420
+01:20:52,640 --> 01:21:17,040
+Geri döndürülebilir olması lazım. Transformation'ın en önemli özelliği bu. Laplace transformu, z-transformu bize ne yapacak arkadaşlar? Bu geri dönmeyi de sağlayacak. Fourier serilerinde reconstruction her zaman %100 olmuyor. Yani XS Sinyal'ini analiz ettik, A'ları, F'leri ve şu fi'leri bulduk. Bulduktan sonra bunu reconstruction yapıp toplarsak,
+
+421
+01:21:17,460 --> 01:21:22,420
+Yine buna benzer bir şey bulabiliriz. Ama kayıp var mıdır? İlla var. Bu daha diyor ki, daha kayıpsız bulabiliriz.
+
+422
+01:21:23,020 --> 01:21:27,000
+Ve yapacağımız şey yine burada da bir konvolüsyondur. Biraz önce bunu yazdım da tekrar edeyim.
+
+423
+01:21:27,100 --> 01:21:28,860
+X Omega veya XF bulacağız.
+
+424
+01:21:29,700 --> 01:21:43,260
+X'i sonsuz artı sonsuz aralığında benim sinyalim, nonperiodik olan sinyalim, E üzeri X J Omega 0 T D T ile yine bir kosünüs bileşenle konvolüsyon yapmak olacak.
+
+425
+01:21:44,148 --> 01:22:09,548
+Çarpı çarpı toplayacağız. Esasında şuna biz Mother Function diyoruz. Bu başka dönüşümlere yol açıyor. Yani şunu sorabiliriz. Hocam, şurada bunun yerine başka bir fonksiyon kullansak ne olur? O zaman dönüşüm biraz daha genel hale dönüyor. Bunu da Wavele Transform diyoruz. Dalgacık dönüşümü diyoruz veya
+
+426
+01:22:09,984 --> 01:22:34,404
+General Transformation diyoruz. Tam bir konvolüsyon aslında, hiçbir farkı yok. Yani oraya E üzeri J yerine T kare yazsak ne olur arkadaşlar? Ödevleri incelerken şey hiç görmedim, keşke yapsaydınız. Mesela arkadaşımız bir sinyal vermiş, X sinyali işte 1, 2, 3 demiş. Y sinyali 3, 4, 8 gibi bir şey demiş.
+
+427
+01:22:34,899 --> 01:22:46,639
+Halbuki 1-2-3'e 1-2-3 versek ne olacak? Şöyle artan ve tam ortada bir pik veren, sadece tek bir tane pik veren, birebir benzediğini söyleyen bir durum elde edeceğiz. Öyle değil mi?
+
+428
+01:22:47,959 --> 01:22:57,675
+Bu da bunun gibi, şuradaki fonksiyon, buradaki fonksiyona ne kadar benziyor onu görmektir. Eğer biz bunu iki boyutlu yaparsak, işte 100 üzerinde...
+
+429
+01:22:58,228 --> 01:23:08,688
+Herhangi bir göz resmi veya bir şeyi arama gibi uygulamalar da kullanabiliyoruz. Şimdi onu müsaadenizle bir dakika arayayım. Geçen bulmuştum. İnşallah kaybetmemişimdir.
+
+430
+01:23:13,587 --> 01:23:14,411
+Signal set.
+
+431
+01:23:22,131 --> 01:23:23,131
+Seçmeli.
+
+432
+01:23:30,739 --> 01:23:32,395
+dsp
+
+433
+01:24:12,372 --> 01:24:24,672
+Şu an bulamıyorum arkadaşlar, okula pahalanamadım. Okuldaki bilgisayarda internet mi yok bilmiyorum. Geçen bulmuştum. Neyse ben onu size diğer derse tekrar şey yaparım zaten. O derste de bu konuya devam edeceğiz.
+
+434
+01:24:24,672 --> 01:24:34,672
+Önemli olan şu ana fonksiyonumuz, Fourier dönüşümü, sinüs ve kosünüs üzerine kurulu bir şey. Eğer sizin sinyalinizde...
+
+435
+01:24:35,412 --> 01:25:01,311
+Fourier, sinüs ve kosünüsü aykırı bir durum varsa, o zaman %100 dönüşüm olmuyor zaten. Bir kayıp oluyor yine. Mesela nasıl aykırı bir durum olabilir? Sinyaliz böyle gidiyordur güzel bir şekilde. Bir anda şöyle bir süreksizlik, tabii şu olmadı. Böyle gidiyordur. Şöyle yükselmiştir, şöyle bir şey olmuştur. Şimdi şurayı ve şu tarz süreksizlik noktalarını
+
+436
+01:25:01,908 --> 01:25:07,347
+işte sağdan bir trev alacak, soldan bir trev alacak, onlar belli olmadığı için bunları modelleyemiyoruz sinüsle.
+
+437
+01:25:07,347 --> 01:25:12,548
+veya çok fazla sinzoidal birleşeni toplamak gerekiyor ki o bile yeterli kalmıyor.
+
+438
+01:25:12,548 --> 01:25:18,148
+işte orada yetersiz kalabiliyor ve bu sinyali reconstruct ettiğinizde %100 orijinalini bulamıyorsunuz.
+
+439
+01:25:18,148 --> 01:25:23,667
+ama şu tarz şöyle parçaların olduğu yerlerde başarılı bir dönüşüm gerçekleştiriyor.
+
+440
+01:25:23,667 --> 01:25:27,667
+bu dönüşüm sonrasında işte ne yapacağız biz birçok analiz
+
+441
+01:25:28,340 --> 01:25:54,340
+uygulama gerçekleştirebiliyoruz. Hem elektronikler açısından hem bilgisayarçlar açısından. Biraz daha şu slide'dan ilerleyelim. Burada herhangi bir sinyalin sinüzoidaller cinsinden yazılımını ifade etmiş. Şimdi şunları çok iyi bilmemiz gerekiyor. AKK sayıları genlikler olacak. Genliklerin öncesinde
+
+442
+01:25:55,155 --> 01:26:01,716
+Frekans İndisleri olacak, hangi frekanslardan oluştuğunu ve fazların İndisleri olacak.
+
+443
+01:26:04,316 --> 01:26:14,155
+Mesela bir örnek, Omega 0'ı 2P'yi bölü radyansaniye olan bir sinyal, K1 ve 2.3 için ne anlam ifadeler diye bir soru sorabilir.
+
+444
+01:26:14,396 --> 01:26:17,355
+Yani ilk 3 kat sayısı nedir?
+
+445
+01:26:18,163 --> 01:26:23,663
+Bu Omega 0 dediğimiz şey arkadaşlar, burada bize temel frekansı, fundamental frekansı ifade ediyor.
+
+446
+01:26:24,863 --> 01:26:37,943
+Ben bir sinyali ayrıştırdığım zaman, hem Fourier serilerinde hem Fourier dönüşümünde, frekanslar temel frekansın katları şeklinde yazılıyorlar.
+
+447
+01:26:39,183 --> 01:26:42,103
+Bu temel frekansın bulunması da temel olarak şu şekildedir.
+
+448
+01:26:42,943 --> 01:26:45,583
+Bilmiyorum, dersi daha önceden bilenleriniz var mı?
+
+449
+01:26:46,131 --> 01:27:10,851
+Örneğin ben Omega 1, Omega 1, Omega 2, Omega 3 diye Fourier dönüşümü veya Fourier serileriyle bir analiz yaptım. Bu frekansları buldum. Veya Fourier n, Omega n. Bu temel frekans Omega 0 neye göre bulunuyor? Bunun GCD'sine göre bulunuyor arkadaşlar. Bulunan frekansların OBEB'ine göre bulunuyor.
+
+450
+01:27:11,380 --> 01:27:38,100
+10, 15, 20 ise bunun temel frekansına V0'a ne diyeceğiz? GCD 10, 15, 20 yani 5 Hz diyeceğiz. Bu 5 Hz Omega 0, şuradaki denklemde artık şuraya K çarpı yani F yerine Omega 0, İ şeklinde gelecek. İşte 5 Hz çarpı İ. İşte K1 için
+
+451
+01:27:38,868 --> 01:27:48,507
+K1 için yine 5 Hz, ondan sonra K2 için 10 Hz diye bu şekilde diğer frekansları yazabileceğiz.
+
+452
+01:27:50,347 --> 01:27:54,228
+Bu OBEV'i önemli. OBEV'i kullanmamız önemli arkadaşlar.
+
+453
+01:27:55,908 --> 01:28:04,468
+İşte burada 2PF0 tarzında çizgisel frekans veya dairesel frekans olarak da, açısal frekans olarak da
+
+454
+01:28:04,692 --> 01:28:12,251
+karşımıza gelebilir. Ama temel frekans dediğimiz Omega 0 neden oluşuyormuş? Bunun Obebinden oluşuyormuş.
+
+455
+01:28:12,251 --> 01:28:26,631
+Burada 2P verdiğimizde gelen sonuç A1 için 2P, A2 için 2x2P'den 4P, A3 için 6P olacaktır. Genlikler farklı. Genlikleri ayrıca analiz edebileceğiz zaten.
+
+456
+01:28:28,391 --> 01:28:29,152
+Örnek olarak.
+
+457
+01:28:30,547 --> 01:28:40,267
+A1, A2 ve A3, 1, 0, 5 ve 0, 5 olduğunda ve faz değerlerimiz bu olduğunda sinyalimiz şöyle oluyor.
+
+458
+01:28:41,267 --> 01:28:46,327
+Fazları aynı bırakıp, bakın genlikleri farklılaştırdığımızda, tabi bu üçünü topluyoruz arkadaşlar.
+
+459
+01:28:47,847 --> 01:28:48,547
+Yani bu üçünün...
+
+460
+01:28:49,203 --> 01:28:54,403
+Şuradaki denkleme göre bu üçünü oluşturup, kosünüsü de oluşturup topluyoruz ve böyle bir sonuç geliyor.
+
+461
+01:28:55,423 --> 01:28:59,243
+Ben fazları aynı bırakıp, ne demek fazları aynı bırakmak?
+
+462
+01:29:00,003 --> 01:29:04,003
+T eşittir sıfır anındaki bulunan değer. Hepsinde aynı kalacak.
+
+463
+01:29:04,923 --> 01:29:12,503
+İşaretlerin genliklerini değiştiriyorum. İşte birincinin genliğini azaltmışız, ikinciyi arttırmışız, üçüncüyü sabit bırakmışız.
+
+464
+01:29:13,043 --> 01:29:39,083
+İşaretle nasıl bir değişiklik olmuş? Mesela şurada bir farklılaşma var, bunu görebiliyoruz. Genlilikleri sabit bırakıp, şuradaki şeyle genlilikleri sabit bırakıp, fazı değiştirdiğimde belli bir miktar kayma göreceğiz. Bunu inceleyebileceğiz. Veya işte burada bazı bir alignment olacak. İşte faz açısı kosünüsten sünüse değişebiliyor çünkü. Kosünüse doktan eklerseniz sünüs bulursunuz.
+
+465
+01:29:39,923 --> 01:29:41,384
+Ona göre bir değişim olacak.
+
+466
+01:29:44,703 --> 01:29:46,064
+Evet, böyle bir analiz.
+
+467
+01:29:46,743 --> 01:29:47,503
+Devam edelim.
+
+468
+01:29:50,963 --> 01:29:56,083
+Şu toplamı hiçbir zaman unutmayın. Biraz önce ben daha genel halini yazdım.
+
+469
+01:29:58,643 --> 01:30:06,083
+Ve burada bilmek gereken şey, periyoddan frekansa nasıl geçebiliriz?
+
+470
+01:30:06,183 --> 01:30:11,563
+Şimdi fundamental frekansı biliyorsak, temel frekansı biliyorsak, temel periyodu da bulabiliriz.
+
+471
+01:30:11,563 --> 01:30:14,403
+İşte t eşittir 2 pi bölü.
+
+472
+01:30:14,496 --> 01:30:20,256
+Omega sıfırdan ortaya çıkar. Bu da bizim çok fazla kullanabileceğimiz, kullanacağımız bir özellik olacak.
+
+473
+01:30:21,256 --> 01:30:23,816
+Buna da dikkat edelim arkadaşlar.
+
+474
+01:30:30,260 --> 01:30:42,079
+Şimdi K yerine sıfır verdiğimizde şuradaki frekansı sıfır olan bileşen bizim DC bileşen diye ifade ettiğimiz, bu da bir özel haldir.
+
+475
+01:30:43,440 --> 01:30:48,859
+Temel frekansın önündeki kas sayı sıfır olunca kosünüs sıfırdan dolayı doğrudan neyi buluyoruz?
+
+476
+01:30:48,940 --> 01:30:51,940
+Ayrı bir kas sayı A buluyoruz. Yani doğrudan ne geliyor?
+
+477
+01:30:53,100 --> 01:30:55,980
+Kosünüs sıfırın durumundan dolayı A sıfır elde ediyoruz.
+
+478
+01:30:56,399 --> 01:31:03,139
+A0 bizim sabit terimimiz veya DC terimimiz oluyor.
+
+479
+01:31:04,839 --> 01:31:11,459
+Ve genel biraz önce söylediğimiz Fourier serileri bu şekilde ifade ediliyor.
+
+480
+01:31:12,939 --> 01:31:15,179
+Bunları da hızlıca geçmiş olalım.
+
+481
+01:31:18,179 --> 01:31:20,099
+Üç farklı formundan bahsettik.
+
+482
+01:31:22,515 --> 01:31:46,615
+Bu genlik faz formu diye bilinen, genliği bulabildiğimiz, fazı bulabildiğimiz bir form. Eğer ki kullandığımız şey, kosinüsler cinsinden ise, yani Euler formülü yazarsak bu şekilde olacağını söyledik. Sinüslü, kosinüslü yazılabileceğimizi söyledik. Hepsi aynı. Yani tekrar tekrar bunları anlatmaya da gerek yok.
+
+483
+01:31:50,899 --> 01:31:52,139
+Şurada bir örnek vardı.
+
+484
+01:31:53,559 --> 01:31:56,179
+Şimdi örneğimiz şu.
+
+485
+01:31:57,059 --> 01:32:01,719
+Bu sinyal için temel frekansımız 1'miş.
+
+486
+01:32:02,799 --> 01:32:09,039
+Bu sinyalin bileşenlerini analiz edin dediğimizde, sinyali analiz edin dediğimizde ne yazabiliriz?
+
+487
+01:32:09,179 --> 01:32:14,659
+İşte bunları kompleks eksponansiyel türde yazın dediğimizde ne bulabiliriz?
+
+488
+01:32:14,739 --> 01:32:15,599
+Bunlara bir bakalım.
+
+489
+01:32:16,619 --> 01:32:18,399
+Şimdi bu bir kosünüs bileşen.
+
+490
+01:32:20,083 --> 01:32:29,083
+Bunun 2PFT şeklinde yazdığımızda, genliğinin bir kere başta ne olduğunu görüyoruz? 1 olduğunu görüyoruz.
+
+491
+01:32:30,384 --> 01:32:35,083
+Ondan sonra fazına baktığımızda fazla herhangi bir durum yok.
+
+492
+01:32:36,083 --> 01:32:37,083
+Fazı 0.
+
+493
+01:32:38,083 --> 01:32:43,083
+Frekansın da zaten bu 1 olan temel frekans olduğu için, frekansı şimdi burada 1.
+
+494
+01:32:43,583 --> 01:32:45,083
+Şuraya baktığımızda,
+
+495
+01:32:45,908 --> 01:32:59,828
+4PiT, işte bunun genliği 0.5, fazı Pi bölü 3. Üçüncüye baktığımızda, A8 denmiş, genliği 0.25, fazı Pi bölü 2.
+
+496
+01:33:01,508 --> 01:33:10,148
+Şimdi, bu sinyalle A1, A4, A8 olması K'ya göre değişiyor. Diğer bütün AK kat sayıları,
+
+497
+01:33:11,475 --> 01:33:27,695
+Yani aradaki A2, A3, A5, A7'ler sıfır. Sıfır olduğu için onların herhangi bir hükmü yok. Doğrudan, kosünüs bileşenler sıfır. Çünkü orada frekans bileşeni var ama o frekanslar bastırılmış frekanslar, yani hükümsüz frekanslar.
+
+498
+01:33:28,495 --> 01:33:37,495
+Bu bilgi bize neye sağlar şu AK'ların sıfır olması? Periyodik gürültü diye bir şey var arkadaşlar. Böyle bir Google araması yapalım.
+
+499
+01:33:38,707 --> 01:33:42,547
+Periodic Noise
+
+500
+01:33:42,547 --> 01:33:47,188
+Digital Signal Processing
+
+501
+01:33:47,188 --> 01:34:02,347
+Şeyde daha çok, görüntüde daha çok, bakın. Arka plandaki görüntüyü görüyorsunuz. Orada çizgilerden oluşan bir görüntü var. Bu bir frekans bileşeni. Ben bunu Fourier düzlemine geçsem.
+
+502
+01:34:03,539 --> 01:34:20,699
+Bu gürültünün frekansını bulsam, o frekansın akasının yani genliğini sıfırlasam, bundan kurtulacağım. Şimdi birazdan şuradaki örnek daha güzel. Şu sayfayı bir açalım bakalım. Bir de şunu açmak istiyorum.
+
+503
+01:34:22,699 --> 01:34:27,600
+Hep SlideShare sayfaları var da, belki şu işimize yarayabilir.
+
+504
+01:34:29,971 --> 01:34:33,032
+Peki buradaki gürültü nedir? Periyodik gürültüyü nasıl bulacağız?
+
+505
+01:34:35,251 --> 01:34:42,492
+Şu net görünüyor mu arkadaşlar? İnşallah düzgün açılır da gösteririm. Tam anlatmak istediğim şey ortaya çıktı burada.
+
+506
+01:34:47,155 --> 01:34:52,155
+Burada bir imaja gürültü eklendiğini söylüyor.
+
+507
+01:34:52,155 --> 01:34:56,155
+İmaja bir gürültü eklermiş. Normal, sağlıklı bir imaj.
+
+508
+01:34:56,155 --> 01:34:59,155
+Buna degradation function diyoruz.
+
+509
+01:34:59,155 --> 01:35:05,155
+Bakın şu ortadaki şey, resmin temel frekansıdır.
+
+510
+01:35:05,155 --> 01:35:08,155
+Şunları görüyor musunuz?
+
+511
+01:35:08,155 --> 01:35:13,155
+Oval olarak küçük küçük noktalar var herhalde görünüyordur.
+
+512
+01:35:13,587 --> 01:35:38,027
+Tahtaya yansıtsak belki görmüyoruz ama buradan daha net görünüyordur. Bu arkadaşlar resimdeki periyodik gürültüyü ifade ediyor. Bunların saptandığı yere, mesela bir oval daire çizip bu frekans değerine göre, o dairenin rengini de sıfır yaparsak, yani siyah yaparsak ve bu görüntüyle çarparsak, o görüntüyü bastırmış oluyoruz. O frekansı bastırmış oluyoruz.
+
+513
+01:35:39,764 --> 01:36:04,724
+Şu orijinal resmim, bu ikisini siyah bir daire ile çarpacağım. Oradaki AK kas sayılarını sıfırlayacağım. Bakın, bu sıfırladıktan sonra oradaki gürültü kayboluyor. Yani şununla çarpıyorum bunu. Elde ettiğim temizlenmiş görüntü bu oluyor. Tabi buradaki gürültünün türü ne? Periyodik bir gürültü olması. Yani içerisinde böyle bir frekans eleşeni eklenmiş.
+
+514
+01:36:05,300 --> 01:36:27,500
+Bunu şöyle deneyebilirsiniz. Bir ses kaydedersiniz. İçerisine 10 Hz'lik bir başka frekans eklersiniz. Yani bir sinyal XT sinyali, bir de 10 Hz'lik Y sinyali. İkisini toplarsınız. Topladıktan sonra dinlediğinizde o ses, içerisinde bir gürültü olduğunu görürsünüz. Sizin sesinizden bağımsız olarak.
+
+515
+01:36:32,851 --> 01:36:43,631
+AK kas sayısını sıfırlarsanız ve sinyali geri rekonstrakt ederseniz, ters dönüşüm yaparak, o sesin kaybolduğunu göreceksiniz. Bu da bakın iki boyutlu görüntü örneği.
+
+516
+01:36:45,551 --> 01:36:50,771
+Demek ki şuradaki şu şey, bize bu tarz uygulamalarda yarayacak.
+
+517
+01:36:51,911 --> 01:36:57,152
+Aynı şeyi, kompleks eksponansiyel formda yazalım dediğimizde,
+
+518
+01:36:58,003 --> 01:37:07,243
+Yani ne demek? E üzeri J'li formda yazalım dediğimizde. Şimdi biz C'lerin ne olduğunu biliyoruz? Genlik değerleri ne olduğunu biliyoruz.
+
+519
+01:37:07,303 --> 01:37:16,503
+Ve C'nin sıfırıncısı, birinci C'ler neyi verecek bize? C0, A0 verecek. Çünkü onun herhangi bir frekans bileşinin olmadığını görüyoruz.
+
+520
+01:37:16,503 --> 01:37:25,183
+Çünkü frekansı sıfırdı. C0 doğrudan A0'dır, yani 1'dir. Şimdi C1, C2 için durumlar değişiyor.
+
+521
+01:37:26,068 --> 01:37:50,927
+C1'e baktığımızda genliği 0.5, bir de bunun, şimdi şu örnekten, neredeydi o? Şimdi şuna baktığımızda böyle bir sinyalin bir kosünüs bileşeni var, bir de sinüsteki bileşeni var. Ona eksilisi diyoruz. Bunun eksili olanı C-1'de bunun genliği 0.5.
+
+522
+01:37:55,283 --> 01:37:56,523
+Bunun genliği
+
+523
+01:38:02,131 --> 01:38:17,831
+2PFT'den dolayı, pardon genliği şöyle arkadaşlar, genlikler toplanıyor, 0.25 ve 0.25 bu ikisi birbirini tamamlayacak çünkü ikisini toplayacağız, tek bir sinyal elde edeceğiz şu dönüşümden yola çıkarak.
+
+524
+01:38:18,471 --> 01:38:22,371
+Genlikler 0.25'in 0.25 yani 0.5'i verecek.
+
+525
+01:38:23,251 --> 01:38:29,591
+E üzeri JP, burada herhangi bir frekans bileşeni yok.
+
+526
+01:38:30,068 --> 01:38:56,128
+Pi bölü 3, yani frekansını doğrudan, temel frekansı verdik. Pi bölü 3'lük bir faz olduğunu söylüyoruz. Şuna baktığımızda 0.25'lik bir genlik var. 0.125'e 0.125 ve C8-JP bölü 2, şuradaki faz değeri. Bu C8'lerin, C4'lerin, C1'lerin içerdiği yani frekans değerleri de
+
+527
+01:38:57,171 --> 01:39:09,731
+Buradaki kas sayılara göre zaten oluşturulabilen şeyler. Temel frekans 1 ise 4 ile çarparım. 1x4, 4 Hz'lik, 1x8, 8 Hz'lik bir frekans olarak doğrudan bulunabilir şeyler.
+
+528
+01:39:09,731 --> 01:39:20,511
+Bu sinyali kompleks eksponansiyel formda yazmak istediğimde, bu 0.5e üzeri jt'ye karşılık gelecek.
+
+529
+01:39:21,171 --> 01:39:25,111
+Çünkü bunun herhangi bir frekans bileşeni yoktu.
+
+530
+01:39:25,971 --> 01:39:34,111
+Şunu toplamak istediğimizde E üzeri J pi bölüş, bu bizim frekansla alakalı AK kat sayıların olduğu yer.
+
+531
+01:39:34,871 --> 01:39:37,671
+E üzeri J T çarpı 4.
+
+532
+01:39:38,351 --> 01:39:40,931
+Yani temel frekansın 4 katı demektir.
+
+533
+01:39:41,011 --> 01:39:43,991
+Temel frekans burada 1 olduğu için J T var.
+
+534
+01:39:44,851 --> 01:39:45,551
+Onun 4 katı.
+
+535
+01:39:46,163 --> 01:39:55,023
+Şurada 8 katı olacak, x'i 0.25, x'i 0.125, x'i 0.125 olarak. Burada 8 katı olacak, diğerleri zaten 0.
+
+536
+01:39:56,383 --> 01:40:05,423
+Bunu kompleks eksponansiyel formda bu şekilde yazabiliyoruz. Bakın şurası frekans bilgisini içeriyor. Burası faz bilgisini içeriyor, şurada genlik bilgisini içeriyor.
+
+537
+01:40:09,427 --> 01:40:27,608
+Aynı şekilde bunu kosünüsler cinsinden yazmak istersek, yani şu ifadeleri dönüştürmek istediğimizde, bu nedir? 0.125 kosünüs 4, şurası zaten aynı kosünüste, 0.125 kosünüs 4 de şuradan yola çıkarak,
+
+538
+01:40:27,608 --> 01:40:33,588
+eksi 0.43, bu 43 muhtemelen şuradaki yuvarlamadan kaynaklı bir şey.
+
+539
+01:40:34,068 --> 01:40:49,188
+Artı 0.25, sin8'te, bunları yeniden yazıp tekrar eski formuna geri dönüştürebiliyoruz. Aynı kas sayıları bulabiliyoruz. Bunlar faz açıları ile beraber bulunan şeyler.
+
+540
+01:40:53,076 --> 01:41:09,296
+Hani konvolüsyon da nasıl grafik üzerinde bir görüntü, grafik üzerinde analiz yaptıysak bu tarz bulunabilecek bir şey. Eğer bunu analitik olarak yapacaksak, biraz önce bahsettiğimiz Fourier kas sayılarının bulunması işlemine bakacağız. Genel denklemimiz neydi? Şuydu.
+
+541
+01:41:21,076 --> 01:41:31,916
+Bir periyot boyunca, çok basit bir şeydir, integralini DTI'ye göre almaktır. Daha sonra bir bölü T, onun periyoduna göre normalize etmek demektir.
+
+542
+01:41:32,516 --> 01:41:38,496
+Aslında işaretteki bir periyotluk alanı hesaplamaktır arkadaşlar.
+
+543
+01:41:40,636 --> 01:41:45,996
+Şöyle baktığımızda, şu bir periyotluk alanı hesap ettiğinizde ne bulacaksınız?
+
+544
+01:41:47,764 --> 01:42:00,384
+Bu sinyalin integralini almak demektir. Yani şuraya baktığımızda, 0'dan 3'e kadar XT, DT bu sinyal.
+
+545
+01:42:00,844 --> 01:42:05,043
+Şimdi bunu 0'dan 3'e kadar analiz edemem. İntegral sınırları çünkü değişkenlik gösteriyor.
+
+546
+01:42:11,859 --> 01:42:25,379
+2'den 3'e kadar, buradaki x'nin değeri 0, bu kadar DT. İşte burası gitti. Bu 1T'de T olarak çıktı. T 2'den 0'a, 2-0'dan 2'yi bulduk.
+
+547
+01:42:25,799 --> 01:42:32,279
+Hakikaten baktığınızda, tabi şurayı da 1 olarak verdiğimizi düşünelim. Değerini 1 olarak biliyoruz. 2x1'den buranın alanı.
+
+548
+01:42:38,612 --> 01:42:52,452
+işaretin DC breşenini de bulacağım. Herhangi bir frekans bilgisi olmadan bunu bulabiliyoruz. Daha sonra buradaki işlemle bundan sonra yola çıkarak neyi bulacağız? Diğer değişkenleri bulabileceğiz.
+
+549
+01:42:56,020 --> 01:42:58,020
+Buna DC Offset falan da deniyor.
+
+550
+01:43:01,220 --> 01:43:10,020
+Zamana bağlı ortalama, bir periyotluk zaman ortalaması diyebiliyoruz A0 için.
+
+551
+01:43:10,859 --> 01:43:14,100
+Diğer durumlarda da 2'den 2 bölü T ekleyeceğiz.
+
+552
+01:43:14,619 --> 01:43:17,840
+T0 artı bir periyotluk bir kosünüs birleşeni bulacağız.
+
+553
+01:43:18,800 --> 01:43:21,300
+Diğerinde de sinüs birleşeni bulacağız.
+
+554
+01:43:21,399 --> 01:43:23,100
+Sinüs ve kosünüs birleşenleri bulunmuş olacak.
+
+555
+01:43:23,699 --> 01:43:33,699
+Şuradaki K değerleri, integer değerler. Ne işin yarıyor? O da bize temel frekanstan diğer değerleri üretmeyi sağlıyor.
+
+556
+01:43:37,427 --> 01:43:44,868
+Bir de burada AK kas sayılarının genel olarak çözümünde kullanılan bazı eşitlikler var. Bunları da bilmekte fayda var.
+
+557
+01:43:45,488 --> 01:43:57,547
+AK kas sayılarının kareleriyle B'lerin karelerini toplarsa küçük A'larla büyük B'leri yani şurdakileri toplamını işaretin temelindeki genelindeki kas sayılarının toplamı, kas sayıları bulabiliyoruz. Bir vektördür.
+
+558
+01:43:58,996 --> 01:44:16,656
+Kabaca CK kas sayılarının iki katı diyebiliriz. Yani bu şu demek arkadaşlar, şuradaki 0.25 ile buradaki 0.25 topladık. Ne yaptık? Pardon, şuradaki 0.5'i bulduk değil mi? Onu söylüyor burada. Buradaki kas sayılardan kastımız odur.
+
+559
+01:44:18,612 --> 01:44:44,811
+Faz gösterimine bakarsak, şöyle fazör gösterimleri var. Bunları çok fazla kullanıyoruz. Açıyı bulmak istediğimizde, fazı bulmak istediğimizde, sinüzoidal bileşenler BK'ları gösteriyordu. Kosünüs bileşenleri BK'ları gösteriyordu. Kosünüs bileşeni AK'ları gösteriyordu. Sinüsün negatifle çarpımı bölüyor. Kosünüsün tanjantı o bölgedeki, o değerdeki
+
+560
+01:44:45,555 --> 01:44:49,515
+Faz açısını verecektir. Açı istenirse bunlar da bulunabilir.
+
+561
+01:44:51,515 --> 01:45:00,456
+Genel olarak şey bu. Şimdi biz haftaya yapacağımız şey, böyle bir sinyalimiz var. Bunun A0 nedir, AK'sı nedir, BK'sı nedir bunlara bakacağız.
+
+562
+01:45:00,555 --> 01:45:06,195
+Şimdi burada kaç slide'ımız kalmış? Başlasak mı acaba? Neyse başlamayalım.
+
+563
+01:45:08,315 --> 01:45:12,195
+Yani bunu daha detaylı, derin derin anlatmak lazım.
+
+564
+01:45:13,043 --> 01:45:15,184
+Sormak istediğiniz bir şey var mı arkadaşlar burada?
+
+565
+01:45:20,275 --> 01:45:43,896
+Fourier serisi. Mesela bakın, şu baya baya zor bir sinyal. Niye? Şuradaki bir E üzeri eksi T var. Diğer durumlarda şey, tamam periyodik ama Fourier serilerini açarken burada birazcık zorlanacağız ve bunu açtığımızda şöyle frekans bileşenleri bulacağız. Biraz önceki işte web sayfasında gösterdiğim şekilde frekans bileşenleri bulacağız.
+
+566
+01:45:45,844 --> 01:45:49,544
+Zaman ve Frekans analizi olarak karşımıza gelecek.
+
+567
+01:45:51,684 --> 01:45:52,984
+Bunlara bakarız.
+
+568
+01:45:53,804 --> 01:45:57,164
+Daha detaylı şeyler, bu slide'ları da tekrar yükleyeceğim arkadaşlar.
+
+569
+01:45:57,364 --> 01:46:01,184
+Şu diğer yükleyeceğim slide'da, işte mesela Sync fonksiyonu.
+
+570
+01:46:01,923 --> 01:46:06,904
+Bunun analiz edilmesiyle alakalı burada bazı adımlar göstermiş.
+
+571
+01:46:06,984 --> 01:46:09,664
+Şöyle biraz ilerleyelim, hem de gözden geçirmiş olalım tekrar.
+
+572
+01:46:11,699 --> 01:46:18,980
+Even with ad function'larda bunların farklı olduğu anlatılıyor.
+
+573
+01:46:18,980 --> 01:46:22,180
+Onu daha sonra bakarız. Bunlar hep özellikler.
+
+574
+01:46:24,520 --> 01:46:31,539
+Numerical computation dediğimiz bunun bulunmasıyla alakalı bazı örnekler yapılmış.
+
+575
+01:46:33,480 --> 01:46:35,720
+Daha sonra discrete'e geçiyor.
+
+576
+01:46:38,644 --> 01:46:48,844
+Bakın burada bir analiz var. İşin sonunda biz neyi bulacağız arkadaşlar? Şu gösterimi bulacağız.
+
+577
+01:46:55,252 --> 01:47:12,152
+Farklı örnekler. Mesela zamanda bir kaydırma yaparsak, elde ettiğimiz sonuç da ona göre zamanda kayma olacak. Yani bu ayrıca bir integral almaya gerek kalmıyor. Belli bir miktar faz farkı oluşturacaktır.
+
+578
+01:47:13,492 --> 01:47:21,892
+Bundan özellikleri var. Şu slide çok çok detaylı. Yani tamamen bir elektronikçi. Hani tavsiye ederim çalışmak için ama biz bu kadar.
+
+579
+01:47:22,579 --> 01:47:30,980
+Size detay sormayacağız. Mesela burada bir örnek var. Bizim yapacağımız örneğe biraz benziyor. Ondan sonra daha başka örnekler var.
+
+580
+01:47:30,980 --> 01:47:40,684
+Zorlaştırmak istenirse şöyle bir fonksiyon verilir. Bu fonksiyonu kat sayılarını analiz edin denir. Baya baya zor şeyler çıkar.
+
+581
+01:47:44,948 --> 01:47:55,347
+Sonra Continuous Time Fourier Motos dediğimiz Fourier Transforma girmiş. Burada biraz da işte non-periodik olan sinyallerin analizine bakacağız.
+
+582
+01:47:56,807 --> 01:47:58,168
+Sorunuz var mı arkadaşlar?
+
+583
+01:48:00,908 --> 01:48:12,028
+Sınav konusunda Gökhan Hoca ile konuşup, yani 12. hafta mı demişlerdi diğer vize 2'lere bilmiyorum. O konuda bilginiz var mı? Diğer derslerde ne söyledilerse.
+
+584
+01:48:21,652 --> 01:48:22,692
+Bir şey söylemediler mi?
+
+585
+01:48:23,771 --> 01:48:29,912
+Hocam kesin bir bilgi yok ama büyük ihtimalle 12'de yaparlar yine. Yani çoğu hoca öyle öngörüyor.
+
+586
+01:48:30,132 --> 01:48:36,572
+Yani hocayla konuşup 12'de size bir yoğunluk oluşturacaksa 11. hafta yapabiliriz sınavımızı, vize sınavımızı.
+
+587
+01:48:38,172 --> 01:48:40,311
+Çok fazla orada yoğunluk oluştursun istemem.
+
+588
+01:48:42,952 --> 01:48:46,851
+Yani 4-5 soruluk bir vize düşünüyoruz.
+
+589
+01:48:47,859 --> 01:49:09,759
+Geçen dönemlerdeki vize usulüne benzer olur. Nedir? Sinyallerin özelliklerini gördük, sistemlerin özelliklerini gördük, konvolüsyon gördük ve frekans domenine girişle alakalı. Fourier serilerini gelecek hafta muhtemelen bitirmiş olacağız. Ondan sonra Fourier dönüşümüyle alakalı konulara da girmiş oluruz. Temel frekans nedir?
+
+590
+01:49:11,347 --> 01:49:19,587
+Ondan sonra sampling konusu bir araya girecek. Belki Z dönüşümüne, Laplace dönüşümüne girmeden önce sampling ile alakalı bazı kısımları belki anlatmış oluruz.
+
+591
+01:49:20,648 --> 01:49:25,807
+Ne gördüysek, en son gördüğümüz kısma kadar biz Gökhan Hoca ile her hafta konuşuyoruz.
+
+592
+01:49:26,387 --> 01:49:32,047
+Yani şu slide'da şu sayfada kaldık şeklinde. En son geldiğimiz yerde bitirip ona göre sınavımızı yapacağız.
+
+593
+01:49:33,108 --> 01:49:36,087
+Çıkmış soruları çözmenizde fayda var. Hocaların sayfasında da var.
+
+594
+01:49:37,235 --> 01:50:03,336
+Biz de zaman zaman burada ekstradan sorular çözüyoruz. Birazcık işlem yeteneğinizi artırırsanız, ödevin yüzdesini Hocayla konuşuruz belli ederiz daha sonra duyurum. Ben ödev notlarını online'a girdim, online yıldıza. Şu hatalar olabiliyor, onlara dikkat edin. Ödevi arkadaş yüklüyor, en son kaydet demiyor. Yüklediğini zannediyor. O konuda dikkatli olalım.
+
+595
+01:50:04,692 --> 01:50:07,052
+Bir de ödevleri tam okuyun arkadaşlar.
+
+596
+01:50:08,792 --> 01:50:11,832
+Sistemden görünmüyor mu şu an ödevler? Ben notlarınızı oraya girdim.
+
+597
+01:50:15,252 --> 01:50:37,692
+Tamam, o zaman şöyle bir şey yaparız. Gün içinde, bugün yetiştirebilir miyim bilmiyorum. Oradan indireyim. Benim tarafımda dolu görünüyor da belki sizin tarafınızda boş görünüyordur. Ben kaydetmiştim notlarınıza. İndireyim. Bir Excel'e yapıştıralım. Düzenleyelim notları. Sınav içinde aynı şeyi kullanabilirim zaten.
+
+598
+01:50:38,260 --> 01:50:43,940
+Bu Excel'in linkini size mail ile paylaşırım. Google Drive linkini, oradan bakarsınız.
+
+599
+01:50:45,060 --> 01:50:53,836
+Bana gelen, gelmeyen 5-6 ödev var. Yani belki daha fazladır, bilmiyorum şu an. Şundan göstermeden bir bakayım.
+
+600
+01:50:58,484 --> 01:51:02,244
+Göndermeyenleri saysam mı acaba? Vakit var mı?
+
+601
+01:51:13,811 --> 01:51:22,572
+verilen ödevler. Ara yüzde sürekli bir güncelleme yapıldığı için. Bakayım not bilgisi görünüyor mu? Evet notlar hala görünüyor.
+
+602
+01:51:22,572 --> 01:51:37,252
+Mesela [öğrenci] burada mı? [öğrenci] göndermemiş. [öğrenci] göndermemiş. Neyse isim isim saymayalım.
+
+603
+01:51:42,068 --> 01:51:43,908
+Neyse ben onları size duyururum arkadaşlar.
+
+604
+01:51:47,604 --> 01:51:48,543
+Sorunuz var mı?
+
+605
+01:51:52,180 --> 01:52:13,180
+Gelecek hafta Fourier serilerinin analitik çözümünden ve Fourier dönüşümüne giriş, Fourier dönüşümünün özelliklerinden bahsedeceğiz. Sonra Z dönüşümü kalıyor. Fourier dönüşümünün uygulamalarına bakacağız. Yani biz burada Fourier dönüşümü nasıl kullanabiliriz? Konvolüsyon için nasıl kullanabiliriz?
+
+606
+01:52:14,996 --> 01:52:22,615
+Birim basamak sinyali uyguladığımızda ne oluyordu? Sinyalin davranışını buluyorduk.
+
+607
+01:52:22,615 --> 01:52:26,996
+Fourier Transform'unun uygulaması olarak onlara bakacağız.
+
+608
+01:52:26,996 --> 01:52:35,496
+Ondan sonra Z-Transform'u var. Z-Transform'una girmeden önce bir iki bir iki uygulama daha yapacağız.
+
+609
+01:52:35,496 --> 01:52:42,496
+Bu tablolar falan siz ders notlarınızı bulundurun ama bu biraz daha finale yakın bir konudur.
+
+610
+01:52:43,956 --> 01:53:01,176
+Mesela diferansiyel denklemle çözümleriyle alakalı slide'lar da var ama biz oradan sorumlu tutmuyoruz. Bir iki slide bununla alakalı. Ben öyle gördüm geçen dönemki slide'lardan. Öyle devam edeceğiz. Bir soru var galiba.
+
+611
+01:53:04,916 --> 01:53:19,036
+Nizamettin Hoca'nın sayfasında çıkmış sorular olarak ben bilmem. Yani örnek sorular olarak Nizamettin Hoca'nın sayfasında var. Ben hatta size söylemiştim. Oradan bakayım şöyle bulabilirsem.
+
+612
+01:53:22,155 --> 01:53:29,315
+Dersin kitabının pdf fil falan varsa belki oradan da bulabilirsiniz. Şuradan açayım sayfayı size göstereyim.
+
+613
+01:53:35,956 --> 01:53:50,016
+Signal Sense Systems. Bakın burada örnekler var. Hatta hoca geçen dönem ödev de vermiş. Biz şu zannediyorum sizinle birinciyi yaptık. Bunu bitirmiştik.
+
+614
+01:53:53,811 --> 01:53:58,311
+Bunun daha sonra ikincisi başka bir bölümün galiba bu.
+
+615
+01:53:59,091 --> 01:54:00,591
+Elektronik bölümün.
+
+616
+01:54:01,151 --> 01:54:04,951
+Bugünkü slide'ları da sisteme yükleyeceğim arkadaşlar PDF olarak.
+
+617
+01:54:05,731 --> 01:54:08,851
+Şu ana kadar yüklediklerimi görmüşsünüzdür zaten.
+
+618
+01:54:10,671 --> 01:54:13,071
+Şu mesela çok daha detaylı
+
+619
+01:54:14,851 --> 01:54:16,851
+sorular da geliyor.
+
+620
+01:54:19,667 --> 01:54:25,347
+Yalnız bu elektronik bölümün hazırladığı bir şey galiba. Ben çünkü bunu hiç,
+
+621
+01:54:25,347 --> 01:54:37,347
+yani bizim bölümde sorulduğunu görmedim. Bazı şeyler bizimle alakalı da, elektronik şeyleri de var. Belki elektronikten bir hoca bunları hazırlamıştır.
+
+622
+01:54:43,188 --> 01:54:49,188
+Benim derste yaptığım örneklere bakarsanız, hani onların burada farklı versiyonları var.
+
+623
+01:54:50,188 --> 01:55:00,188
+Onları çalışmanızı tavsiye ederim. Mesela aranızda şunu yapamayacak yoktur herhalde. Yani bir x'en verilmiş bir de y'en verilmiş. Bunun konvolüsyonu nedir diyor.
+
+624
+01:55:00,188 --> 01:55:05,188
+Yani aradaki şeyleri tahmin ediniz, sayısal değerleri tahmin ediniz diyor.
+
+625
+01:55:05,427 --> 01:55:27,107
+Şunu daha anlatmadık, Fourier sistemlerle alakalı şeyler yok. Buna bugün daha yeni giriyoruz. Gerçi bu çok basit bir şeydi. Şuna daha yeni giriyoruz. İşte bir frekans bileşeni var, Fourier serilerinin açılmış hali var. Bu Fourier serisinde açılmış şey, bugünkü slide'larda yaptığımızın bir uygulaması. XT'yi elde etmek.
+
+626
+01:55:31,923 --> 01:55:35,643
+Konusunu anlatınca göreceğimiz bir başka şey.
+
+627
+01:55:37,463 --> 01:55:47,783
+Şurada bunu da bulabilirsiniz. Sinyalin genliği nedir, periyodu nedir, frekansı nedir? Bu iki tane sinyal var. İkisinin bileşenlerinin bulunması.
+
+628
+01:55:49,043 --> 01:55:57,003
+Demiş ki bakın, aşağıdaki sinyalin temel frekansını bulunuz, temel periyodunu bulunuz ve AK kas sayılarını bulunuz.
+
+629
+01:55:57,716 --> 01:56:12,836
+Bu doğrudan zaten temel frekansı, bunun kaçtır? 20 Hz'dir. Şunun 30 Hz'dir. Bu da 60S. 20, 30 ve 60'ın Ekok'unu aldığınızda ne oluyor?
+
+630
+01:56:17,300 --> 01:56:19,480
+F0 10 Hz olmaz da burada.
+
+631
+01:56:23,028 --> 01:56:29,028
+Omega 0 demiş, Omega 0'ı bulmuş mu burada? 20, 30, 60 Hz, F0, 10 Hz.
+
+632
+01:56:30,028 --> 01:56:35,028
+Tabii tabii, 10 Hz olacak. EBOB'un aldığınızda niye EBOB diyorsam, 10 Hz'ı bulacaksınız.
+
+633
+01:56:35,528 --> 01:56:47,528
+Omega 0'ı 20, 20 olur. Buradan T0'ı bulursunuz. Daha sonra diğer değişkenleri bulmak için A'ları, fazları falan bulma şey var.
+
+634
+01:56:49,587 --> 01:56:59,427
+Bu başka bir konvolüsyon örneğiymiş. Burada bayağı bir örnek var. Yani bunlara da bakarsanız iyi olur arkadaşlar. Diğer şeyler, Z-transform falan var. Onlara daha gelmedik zaten.
+
+635
+01:57:04,307 --> 01:57:29,307
+Evet, sorunuz var mı arkadaşlar? Saat 5'te herhalde çoğunuzun, buradaki herkesin neredeyse sınavı var. Şimdiden başarılar diliyorum. Benim grubumda olmayan arkadaşlar için tekrar edeyim. İkinci el bilgiye hiçbir zaman, hiçbir derste itimat etmeyin. Falanca dersin hocası falanca grupta duyduk, şöyle bir şey demiş, onun için biz buna çalışmadık.
+
+636
+01:57:29,652 --> 01:57:50,692
+Normalde yapısal programlamada ben hocaya soruyu hazırladım ve hocam dedim bu soru uygun mudur? Uygundur dedi. Sınavın başlangıcında da size bir duyuru yapmış. Normalde bunun bir şeyi yoktur. Sınav oysa bunun bir telafisi olmaz ama ben yanlış anlaşılmadan iletişim eksikliğinden dolayı telafi edilmesini hocaya önerdim. Hoca da kabul etti.
+
+637
+01:57:54,868 --> 01:58:02,708
+Yapısal programı onun için söylüyorum. Dediğim ki buraya kadar geldik, buraya kadar sınavdan sorumlu olacaksınız. İşte strafçıklar dahil.
+
+638
+01:58:03,708 --> 01:58:10,700
+Neyse, tabii benim o zamanlar kafam farklı konulardan dolayı karışıktı. Çok fazla önemsemedik, yani telafi edeceğiz ama...
+
+639
+01:58:12,916 --> 01:58:30,775
+Benim grubumdan arkadaşlar şunu dediler, ya hocam mailler de söylendi tabii bu, ya işte diğer grubun hocası structure'lar yok demiş, e tamam biz onun için çalışmadık. Ama ben size öyle demedim. Yani diğer gruptan farklı bir bağımsız bir sınav yapmayabilirdik. Onun için hiçbir zaman hiçbir derste ikinci el bilgiye güvenmeyin.
+
+640
+01:58:32,212 --> 01:58:51,532
+Hocanızdan aldığınız bilgi eğer tutarsızsa gidip hocam siz böyle demiştiniz ama böyle yaptınız o zaman hak iddia edebilirsiniz ama ikinci el bilgiden dolayı hak iddia edemeyebilirsiniz. O konuda bu şeye verinin kaynağına dikkat etmenizi tavsiye ederim. Hepinize iyi akşamlar, kolay gelsin arkadaşlar. Görüşmek üzere.
