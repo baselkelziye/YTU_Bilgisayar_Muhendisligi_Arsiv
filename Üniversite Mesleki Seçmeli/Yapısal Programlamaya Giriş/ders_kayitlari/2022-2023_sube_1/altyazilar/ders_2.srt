@@ -1,0 +1,2543 @@
+1
+00:00:31,443 --> 00:00:33,444
+Arkadaşlar, benim sesimi duyuyor musunuz?
+
+2
+00:00:39,636 --> 00:00:40,636
+Evet hocam.
+
+3
+00:00:42,636 --> 00:00:43,636
+Tamam, çok güzel.
+
+4
+00:00:45,636 --> 00:00:46,636
+Şimdi...
+
+5
+00:00:56,307 --> 00:01:06,707
+Şu anda kaç? 31 kişiyiz ama daha vah bayağı bir herhalde. Biraz bekleyelim, 5 dakika sonra başlayalım dersi tamam mı?
+
+6
+00:01:11,668 --> 00:01:20,068
+Çünkü yüz küsür kişiyiz normalde. Bekleyelim. Beş dakika sonra başlıyoruz arkadaşlar.
+
+7
+00:09:10,515 --> 00:09:13,515
+Evet, merhaba arkadaşlar, sesim geliyor mu?
+
+8
+00:09:15,515 --> 00:09:16,515
+Geliyor hocam.
+
+9
+00:09:17,515 --> 00:09:21,515
+Tamamdır, 65 kişiyi bulmuşuz, güzel.
+
+10
+00:09:22,515 --> 00:09:28,515
+Peki, öncelikle Yapısal Programlamaya Giriş dersine hepiniz hoş geldiniz.
+
+11
+00:09:29,515 --> 00:09:35,515
+Ben Fatih Amasya'da da bu dönem dersi 14 hafta boyunca birlikte işleyeceğiz.
+
+12
+00:09:37,587 --> 00:09:48,587
+Yüz yüze kısmı olabilir bilmiyorum. Belki Nisan'dan sonrası şu anda belli değil ama Nisan'a kadar online olarak devam edeceğiz. Orası belli.
+
+13
+00:09:49,587 --> 00:09:58,587
+Şimdi isterseniz ilk önce bir dersi birazcık tanıyalım. Onun için bir ekran paylaşayım.
+
+14
+00:10:03,700 --> 00:10:05,700
+A-ha.
+
+15
+00:10:20,980 --> 00:10:22,980
+Şu anda ekranı görüyorsunuz değil mi?
+
+16
+00:10:24,379 --> 00:10:28,379
+Yapısal Programlamaya Giriş dersinin sayfası var.
+
+17
+00:10:30,779 --> 00:10:31,580
+Evet hocam.
+
+18
+00:10:31,580 --> 00:10:32,180
+Görünüyor.
+
+19
+00:10:32,879 --> 00:10:33,379
+Tamam.
+
+20
+00:10:33,620 --> 00:10:44,120
+Şimdi, benim diğer derslerim de burada var da, girdiğinizde işte yukarıdaki kısımdan şuradan, şu yapısal Programlama Giriş'i seçtiğinizde buraya geliniyor.
+
+21
+00:10:44,120 --> 00:10:53,919
+Şimdi burada dersinle alakalı birkaç tane zaten eski sorular vesaire birkaç bir şey var. Dersin notları şu, en altta yer alıyor, şurada görüyorsunuzdur.
+
+22
+00:10:53,919 --> 00:11:00,620
+Burada, altta da çalışma soruları var, hani ders alakalı.
+
+23
+00:11:00,820 --> 00:11:06,820
+Örnek yapmak istediğinizde bakabileceğiniz kısımlar, onlara daha sonra yine bakarız.
+
+24
+00:11:08,820 --> 00:11:15,820
+Uygulamalar var geçmiş zamanlarda yaptığımız, işte C'yi anlatan kısımlar var.
+
+25
+00:11:15,820 --> 00:11:22,820
+Derste anlattığımız birçok algoritmanın kodu yine şu ders kodlarının içerisinde yer alıyor.
+
+26
+00:11:23,412 --> 00:11:29,412
+Şimdi bir de şu şeye bakalım, haftalık ders içeriğine bakalım.
+
+27
+00:11:32,412 --> 00:11:40,412
+Dersimiz iki grup zaten, Ahmet ile birlikte veriyoruz. Sizler birinci grupsunuz.
+
+28
+00:11:40,820 --> 00:12:05,580
+Şimdi dersimiz çarşamba günleri 9'da başlıyor. Dersin asistanları var. Burada hepsinin iletişim bilgileri yer alıyor. Birinci grup dediğimiz kısım şu A1, pardon, 1A, 1B, 1C, 1D. Bunlar sizin laplarınız ve uygulamalarınızı yürütmekten sorumlu arkadaşlar olacaklar. Herhangi bir problemdir vesaire onlarla.
+
+29
+00:12:06,004 --> 00:12:16,004
+İletişime geçersiniz. Bu gruplarınızda yani kimin hangi grupta, ABC'de de yer aldığı daha sonra standartımız tarafından ilan edilecek.
+
+30
+00:12:16,004 --> 00:12:27,004
+Dersin sayfası zaten demin gösterdiğim. Şimdi dersin haftalık içeriği var. Burada bu dönem herhangi bir tatile gelen bir şeyimiz yok, dersimiz yok.
+
+31
+00:12:27,004 --> 00:12:31,004
+Dolayısıyla herhangi bir sıkışıklık olacağını zannetmiyorum.
+
+32
+00:12:31,124 --> 00:12:38,683
+Haftalık içeriğin her biri burada var. Bugün 1 Mart bugün algoritma nedir, iyi algoritma nedir dersin içeriğinde birazcık onlardan bahsedeceğiz.
+
+33
+00:12:38,683 --> 00:12:44,124
+Dört tane uygulamanız, dört tane labınız olacak. Uygulamalarda soru çözülecek.
+
+34
+00:12:44,124 --> 00:12:52,124
+Lablarda ise sizler soru çözeceksiniz. O tarz bir şeyimiz olacak. Burada vize tarihi var.
+
+35
+00:12:52,124 --> 00:12:56,875
+Ama bu değişebilir. Değişirse size haber vereceğiz zaten.
+
+36
+00:12:56,884 --> 00:13:11,524
+Notlandırma ile alakalı kısımda burada zaten yer alıyor. Nasıl vizelerden, laplardan bir tane projemiz olacak, finalimiz olacak. Bu şekilde puanlar alacaksınız. Bu genel idari kısımla alakalı sorunuz var mı?
+
+37
+00:13:30,100 --> 00:13:31,564
+Tekrar da...
+
+38
+00:13:39,283 --> 00:13:52,884
+Paylaşım durdu. Şimdi, bugünkü dersimize yavaş yavaş başlayacağız.
+
+39
+00:13:52,884 --> 00:14:02,683
+Şimdi ben tahta normalde kullanıyorum ama tahta kullanamadığım için şimdi bir kabili üzerinden ders anlatmaya çalışacağım.
+
+40
+00:14:03,604 --> 00:14:08,604
+Bunun avantajları var, dezavantajları var. Neyse, beraber göreceğiz.
+
+41
+00:14:08,604 --> 00:14:23,604
+Şimdi, sizler geçen dönem algoritma nedir dersini, daha doğrusu algoritma nedir konusunu öyle söyleyeyim gördünüz, değil mi?
+
+42
+00:14:23,604 --> 00:14:29,604
+Peki, neydi algoritma?
+
+43
+00:14:39,956 --> 00:14:43,375
+Bir problemi çözmek için gerçekleştirdiğimiz işlem adımları.
+
+44
+00:14:44,476 --> 00:14:48,576
+Evet, yani sonuçta elimizde bir problem var. O problemi çözmek için bir iş var.
+
+45
+00:14:48,576 --> 00:14:53,916
+Bunu yapmak için gerekli olan işlem adımları. Bunları bir şekilde tanımıyoruz.
+
+46
+00:14:55,176 --> 00:15:07,256
+Peki, mesela gündelik hayatımızda da yani illa bilgisayar programlarında algoritma olacak diye bir şey yok.
+
+47
+00:15:07,635 --> 00:15:15,635
+Başka nelerde algoritmalar vardır? Onu birazcık konuşalım isterseniz. Aklınıza gelen ne örnekler var?
+
+48
+00:15:15,635 --> 00:15:23,635
+Yani günlük hayatınızda ya da işte başkalarının kullandığı bilgisayarla alakalı olmayan, öyle söyleyelim.
+
+49
+00:15:23,635 --> 00:15:31,635
+Çünkü hani dedik ki yani bir problem çözmek, bir işi yapmak için gerekli adımların listesi.
+
+50
+00:15:32,467 --> 00:15:41,667
+Birbirleriyle ilişkileri vs. Dolayısıyla burada hiç bilgisayarla falan alakalı bir şey geçmiyor. Yani algoritma denilen bilgisayara has bir şey değil o manada düşünürsek.
+
+51
+00:15:44,167 --> 00:15:49,467
+Evet başka nasıl algoritmalar var? Nasıl algoritmalar yazıyoruz günlük hayatımıza ya da uyguluyoruz?
+
+52
+00:15:49,467 --> 00:15:51,667
+Yemek yapmak mesela hocam.
+
+53
+00:15:51,667 --> 00:15:57,667
+Tamam, sırayla yapalım. Şimdi yemek dediniz galiba değil mi?
+
+54
+00:15:57,667 --> 00:15:59,551
+Yemek yapmak.
+
+55
+00:15:59,552 --> 00:16:25,271
+Evet hocam. Evet hocam. Evet hocam. Benim yazdıklarımı görebiliyor musunuz? Evet hocam. Evet hocam. Tamam, süper. Evet, başka? Matematik formülleri olur mu? Matematik formülleri olur mu? Şimdi formül dediğim, mesela bir örnek verebilir misin?
+
+56
+00:16:26,899 --> 00:16:39,899
+Şu an çok aklıma ayırmıyorlar. Böyle aşamadan geçen formüller oluyor bazen. Sadece matematikte değil, fizik, kimyada da olabiliyor bunlar. Şunu yaptıktan sonra şunları falan hesaplaman gerekir.
+
+57
+00:16:40,899 --> 00:16:52,899
+O tam formül diye ifade edilmez ama herhalde. Ne bileyim işte fizikteki hızı falan belirleyen formüller falan var. Ama onlar hani nasıl şöyle diyelim…
+
+58
+00:16:53,875 --> 00:17:08,635
+Bir şeyin bir şey eşit olduğunu ama hani bunu şu şekilde yorumlarsan evet yani hani şunu bulmak için ilk önce şunu şöyle yap, sonra şunun karesini al, sonra şuna böl falan gibisinden bir yorumla okumaya kalkarsak evet o şekilde de düşünebiliriz. Peki başka?
+
+59
+00:17:08,635 --> 00:17:11,635
+İstanbul'da ulaşım.
+
+60
+00:17:11,635 --> 00:17:13,635
+Efendim?
+
+61
+00:17:13,635 --> 00:17:16,635
+İstanbul'daki ulaşımda diyebilir miyiz?
+
+62
+00:17:16,635 --> 00:17:19,296
+Ulaşım nasıl diyebileceğiz?
+
+63
+00:17:19,296 --> 00:17:29,296
+Bir yerden bir yere eklemek için belli otobüsler var ya, bunları ayarlayıp sırayla kullanmak.
+
+64
+00:17:29,296 --> 00:17:35,296
+Aktara, aktara. İlk önce şuna git. Şuradan şuraya gitmek istiyorsun. İlk önce şunu yap, sonra şunu yap, sonra şunu yap.
+
+65
+00:17:35,296 --> 00:17:38,296
+Evet. Doğru, tamam. Başka?
+
+66
+00:17:40,296 --> 00:17:45,296
+Araba kullanmak olur mu? Kırkız ışık görünce, sarı ışık görünce, bekle falan yapısınlar.
+
+67
+00:17:47,380 --> 00:17:56,380
+Hızı görünce hızı düşür, hızın yüksekse şey yap falan. Ya da polis görünce yavaşla gibi.
+
+68
+00:17:56,380 --> 00:17:59,380
+Polis görünce yavaşla mı?
+
+69
+00:17:59,380 --> 00:18:02,380
+Arabayı başlatmak olabilir ya.
+
+70
+00:18:02,380 --> 00:18:04,380
+Arabayı başlatmak?
+
+71
+00:18:04,380 --> 00:18:10,380
+Yani debriyaja basla, çalıştırmak, başlatmak diyorum ben de ya.
+
+72
+00:18:10,804 --> 00:18:32,804
+Anladın. Yani aslında bu dediğin, evet olabilir. Çünkü şöyle hani aşağı yukarı birçok makine diyelim hani öyle söyleyeyim. Kullanmanın neyi var? İşte bir yöntemi var değil mi? İşte ilk önce şunu yap, sonra şunu yap, sonra şunu yap falan gibisinden. Bunlar evet bu manada düşünülebilirler. Evet başka?
+
+73
+00:18:34,244 --> 00:18:36,644
+Patlayan bir lastiğin değiştirilmesi olabilir hocam.
+
+74
+00:18:38,228 --> 00:18:43,988
+Olabilir, evet doğru diyorsun. Yani ilk önce şunları yapman lazım, sonra şunu yapman lazım falan filan.
+
+75
+00:18:43,988 --> 00:18:58,228
+Peki, şimdi şöyle bir soru sorayım. Bir doktorun bir hastaya teşhis koyma süreci bir algoritma mıdır?
+
+76
+00:19:00,228 --> 00:19:01,132
+Evet.
+
+77
+00:19:05,236 --> 00:19:07,236
+Bu da düşünülebilir mi böyle?
+
+78
+00:19:09,236 --> 00:19:23,236
+Belli bir sırayı takip etmesi gerekiyor hocam doktorun. Önce mesela kan alıp sonra onun sonuçlarına bakarak bir karar vermesi gerekiyor. Bunlardan bir tanesini ters yaparsa doğru sonuca ulaşamaz. O yüzden bence de evet.
+
+79
+00:19:25,236 --> 00:19:31,236
+Peki aranızda tıp okuyan var mı? Yok tıp okuyan var mı? Saçmamış olayım. Tıp okuyan tanıdığı olan var mı?
+
+80
+00:19:31,236 --> 00:19:33,228
+[kişisel bilgi]
+
+81
+00:19:33,491 --> 00:19:53,211
+Tıptan gelen var. Hadi gel. Kim o? Ben. Sen. [öğrenci]. [öğrenci]. [öğrenci]. [kişisel bilgi] Kurtulamadın. Neyse. Peki [öğrenci] şöyle sorayım. Tıp kitaplarında falan bu hastalıklara teşhis koymak için böyle algoritmalar var mı?
+
+82
+00:20:00,000 --> 00:20:07,680
+Hastanın size derdini anlatması, ondan sonra sırt dinleme, göğüs dinleme gibi böyle sıralar var.
+
+83
+00:20:07,680 --> 00:20:16,320
+Önce hastalığın ne olduğunu dıştan anlamaya çalışıp, ondan sonra kan alma gibi durumlara gidiliyor gerekirse.
+
+84
+00:20:17,320 --> 00:20:18,320
+Anladım.
+
+85
+00:20:18,963 --> 00:20:28,003
+Peki, şimdi hepimiz pandemi zamanında yaşadık. Pandemi zamanındaki süreçleri epey bir takip ettik.
+
+86
+00:20:28,003 --> 00:20:38,143
+Orada Sağlık Bakanı'nın ara sıra tedavi algoritmasını güncelledik falan gibisinden şeyler dediğini hatırlıyor musunuz?
+
+87
+00:20:38,143 --> 00:20:42,283
+Tedavi algoritmasını şöyle yaptık, böyle yaptık diye zaman içerisinde.
+
+88
+00:20:47,316 --> 00:21:00,036
+Yani, demin bahsettiğimiz gibi, böyle teşhisin de yanında, yani teşhis süreci de aslında bir algoritma, tedavi süreci de bir algoritma.
+
+89
+00:21:00,036 --> 00:21:13,036
+Peki, bu algoritmalar, mesela özellikle salgın gibi süreçlerde…
+
+90
+00:21:14,900 --> 00:21:26,000
+Herkesin erişebilmesi için, herkesin aynı işe erişebilmesi için, öyle söyleyeyim daha doğrusu. Bu tarz algoritma hazırlanıyor, yayınlanıyorlar. Normal zamanlarda da var tabii böyle şeyler.
+
+91
+00:21:26,000 --> 00:21:40,400
+Peki, algoritma olarak bir şeyi ifade etmenin, insanların önüne koymanın ya da insanların kafasına ezberlemeleri için vermenin avantajı nedir?
+
+92
+00:21:43,508 --> 00:21:47,907
+Yani niye Sağlık Bakanı bir algoritma yayınlıyor?
+
+93
+00:21:48,907 --> 00:21:52,108
+Onunla ilgili şunu söyleyebilir miyim hocam? Ben öğretmenim.
+
+94
+00:21:52,339 --> 00:22:03,019
+Evet. Bir okulda. Mesela okulda bir öğrenci de bu pandemi döneminde rahatsızlık çıktığı anda yapılacak işler vardı. O da bir algoritmaydı.
+
+95
+00:22:03,019 --> 00:22:10,019
+İşte öğrenci karantina altına alınırdı. Öğrencinin bulunduğu sınıf da karantina altına alınırdı.
+
+96
+00:22:10,019 --> 00:22:18,460
+Zamanla pandemi azalmaya başladığında tek öğrencinin çıkması da değil de bu ikinci öğrenci veya üçüncü öğrenci,
+
+97
+00:22:20,339 --> 00:22:29,339
+Daha bugüne yaklaştıkça, bu sefer ne yapıldı? Karantin almak yerine sadece öğrencinin karantin alınmasıyla devam etti.
+
+98
+00:22:29,339 --> 00:22:37,339
+Yani o okuldaki işleyişin durumun düzenlenmesini sağlamak amacıyla yapılabiliyor algoritmalar.
+
+99
+00:22:37,339 --> 00:22:45,339
+Tamam, evet. Yani idari olarak yönetebilmek için doğru. Başka? Böyle algoritmalar?
+
+100
+00:22:48,180 --> 00:22:50,800
+Daha kolay ulaşabilme olabilir.
+
+101
+00:22:52,619 --> 00:23:01,639
+Çünkü mesela bir hasta geldiği zaman diyelim, bacağım ağrıyor dediği zaman ona farklı bir işlem ya da ne bileyim sırtını dinlemezsiniz.
+
+102
+00:23:01,639 --> 00:23:13,680
+Hani hep aynı tedavi uygulamazsınız yani. Hastalık neyse sorun neyse ona göre farklı bir tedavi ya da yaklaşım şekli uygulamak yani çözüme daha kısa sürede ulaşmak gibi.
+
+103
+00:23:13,680 --> 00:23:15,680
+Yani
+
+104
+00:23:15,923 --> 00:23:25,163
+Böyle açık açık adım adım yazılmış bir şeyi gördüğünüzde onu takip etmek vs. çok çok daha kolay olur değil mi?
+
+105
+00:23:25,163 --> 00:23:33,683
+Hani ne yapacağınızı bilmiyorsanız, tam emin değilseniz sonuçta bir güvenlik sağlar vs.
+
+106
+00:23:33,683 --> 00:23:40,043
+Peki, buradan şeye geçelim.
+
+107
+00:23:41,779 --> 00:23:56,239
+İşte demin doktorlardan bahsettik ya da şoförlerden bahsettik. Bunlar işlerini yapmak için farkında oldukları ya da olmadıkları algoritmalar kullanıyorlar.
+
+108
+00:23:56,239 --> 00:24:08,619
+Bu işte bir kağıtta da yazılı olabilir, kafalarında da bir şekilde yazılı olabilir. Zaman içerisinde öğrenmişlerdir, uyguluyorlardır.
+
+109
+00:24:17,395 --> 00:24:30,596
+Mesela, insan olarak daha yargılar. Bu birer nedir aslında? Bir algoritmadır. Şu şöylesi şöyledir diye direkt ne yapıyorsunuz? Bir çıkarımda bulunuyorsunuz. Doğrudur, yanlıştır. Orası ayrı bir hikaye. Bir if aslında kabaca.
+
+110
+00:24:30,596 --> 00:24:39,795
+Peki, şimdi ders ilerleyen zamanlarla tekrardan bu konuya döneceğiz ama…
+
+111
+00:24:40,147 --> 00:25:03,147
+Algoritmaları en iyi takip edebilecek şeyler insanlar değil aslında. İnsanlardan benzeyen şekilde, benzeyen demeyelim, farklı bir şekilde ama algoritmayı takip etme anlamında çok çok daha ona sadık kalabilen sistemler var. Ve bu sistem işte makineler.
+
+112
+00:25:06,900 --> 00:25:26,300
+Yaptığınız iş tamamen belli algoritmalarla yürütülüyorsa, ya da siz öyle yürütüyorsanız, sizin işlevselliğinizin yaptığınız işin makinelerce kopyalanması kolay olabilir mi sizce?
+
+113
+00:25:26,300 --> 00:25:30,900
+Makineler tarafından yapılması, sizin yerinize makinelerin geçmesi.
+
+114
+00:25:43,155 --> 00:25:45,155
+Sesim geldi mi?
+
+115
+00:25:45,155 --> 00:25:47,155
+Geldi hocam.
+
+116
+00:25:47,155 --> 00:25:55,155
+Bence yeterince iyi tarif edebilirsek kolay makineye.
+
+117
+00:25:57,155 --> 00:26:08,875
+Yani, belliyse algoritma, değil mi? Bu durumda o işi öyle bir söyleyelim.
+
+118
+00:26:08,915 --> 00:26:14,195
+makineler yaptırmak mümkün. Neyse, daha sonra tekrardan konuşuruz bu konuyu.
+
+119
+00:26:14,195 --> 00:26:19,355
+Şimdi peki, algoritmalardan bahsettik, hayatın bir süre anında varlar vs.
+
+120
+00:26:19,355 --> 00:26:25,275
+Şimdi burada birkaç tane aslında yine gündelik hayatın içerisindeki ifadelerin,
+
+121
+00:26:25,275 --> 00:26:30,675
+algoritmada bizim kullandığımız birkaç tane işaret vardı, hatırlıyor musunuz? Şöyle birkaç tane şey çizdim.
+
+122
+00:26:30,675 --> 00:26:32,076
+Bir dakika.
+
+123
+00:26:34,483 --> 00:26:38,483
+Tekrardan uzunma uyum sağlamam birazcık süreç olacak.
+
+124
+00:26:49,460 --> 00:26:52,380
+Mesela böyle bir şeyler çizdiniz değil mi derslerde?
+
+125
+00:26:53,579 --> 00:26:55,800
+Evet hocam.
+
+126
+00:26:56,460 --> 00:26:56,960
+Tamam.
+
+127
+00:27:07,092 --> 00:27:16,392
+Şimdi çok basit bir şey yazdım, bilmiyorum anlamı var mı yok mu tabi. Sallayarak yazdım çünkü ama bir şey yapıyor mu bu? Evet, yapıyor. Ne yapıyor bu?
+
+128
+00:27:17,832 --> 00:27:23,331
+Ona kadar sayıyor hocam. Yazıyor yani, sayıyor derken. Birden ona kadar sayıyor.
+
+129
+00:27:23,331 --> 00:27:32,331
+Birden başlıyor. İ birken buraya geliyor. İ ekrana yazıyor, sonra tekrardan buraya geliyor. İ arttırıyor, kontrol ediyor.
+
+130
+00:27:32,596 --> 00:27:39,195
+Çıkacağım mı, çıkmayacağım mı diye, çıkmayacağının farkına oluyor, içeriye giriyor tekrardan, dönüyor, dönüyor, dönüyor. Her döngüde de bir i ekrana yazdırıyor.
+
+131
+00:27:39,195 --> 00:27:50,395
+Şimdi burada sınır belli, değil mi? Yani ne demek istiyorum? 10 kez bu işlem yapılacak, bunu biliyoruz.
+
+132
+00:27:56,596 --> 00:28:03,596
+ısıt mesela 10 dakika ısıt nasıl bir yapıya denk gelir aslında şu 10 dakika ısıt dediğimiz şey, for yapısına denk gelir değil mi?
+
+133
+00:28:06,867 --> 00:28:10,867
+Peki, şöyle bir şey olsa...
+
+134
+00:28:18,900 --> 00:28:22,900
+Pembeleşinceye kadar ısıt. Bu nasıl bir şey olur?
+
+135
+00:28:22,900 --> 00:28:23,900
+While.
+
+136
+00:28:23,900 --> 00:28:24,900
+While olur hocam.
+
+137
+00:28:24,900 --> 00:28:26,900
+Değil mi? While olur bunun ne olacağı belli değil.
+
+138
+00:28:26,900 --> 00:28:31,900
+Niye for ve while'a ihtiyacımız var? Yani while ne sağlar bize?
+
+139
+00:28:35,900 --> 00:28:38,900
+Bir koşu gerçekleşmeden önce ısıtmayı durdurum anası sağlar.
+
+140
+00:28:39,900 --> 00:28:41,900
+Adım sayısı belli olmayan durumlarda.
+
+141
+00:28:42,483 --> 00:28:45,483
+Değil mi? Evet, aynı. İkinci söyledikleri çok doğru.
+
+142
+00:28:45,483 --> 00:28:48,483
+Şimdi mesela bir soğan var elinizde, dilin ki.
+
+143
+00:28:48,483 --> 00:28:53,483
+İşte diyorsunuz ki, yemek yapıyorsunuz, soğan pembeleşinceye kadar ısıtmanız lazım bunu.
+
+144
+00:28:53,483 --> 00:28:58,483
+Şimdi 10 dakikada seneniz, o soğanın tipine göre 10 dakika yeterli olur, yeterli olmaz vs. vs.
+
+145
+00:28:58,483 --> 00:29:04,483
+Hani oradaki derdimiz de pembeleşsin, değil mi? Hani 10 dakika ısıtmaktan kastığımız ne? Pembeleşmesini istiyoruz.
+
+146
+00:29:04,483 --> 00:29:06,483
+Bir miktarda suyunu bıraksın falan filan.
+
+147
+00:29:06,483 --> 00:29:08,364
+Dolayısıyla...
+
+148
+00:29:08,980 --> 00:29:17,220
+Burada belli bir şart sağlanana kadar, o şartın ne zaman sağlanacağını önceden kestiremiyor olabilir miyiz? Evet, olabiliriz.
+
+149
+00:29:17,220 --> 00:29:22,019
+Dolayısıyla for ve while'ın böyle şeyleri var. Ne derler ona? Birbirlerine farkları var.
+
+150
+00:29:22,019 --> 00:29:30,900
+Peki, mesela işte bir yol tarif falan düşündüğümüzde, mesela 100 metre git diyorsunuz, tamam? Bu mesela.
+
+151
+00:29:30,900 --> 00:29:36,740
+Abi, neye karşılık gelir yine? For'a karşılık gelir. Peki, while'ını ne karşılık gelebilir?
+
+152
+00:29:38,355 --> 00:29:40,355
+Yol tarif ederken?
+
+153
+00:29:40,355 --> 00:29:46,355
+Sokağın başına kadar yürü, ya da camiye kadar yürü, falan bir hedef belirtiriz.
+
+154
+00:29:46,355 --> 00:29:51,355
+Heh, mesela ileride karşılığında bir cami çıkıp o camiyi görene kadar yürü, mesela. Değil mi?
+
+155
+00:29:51,355 --> 00:29:56,355
+Bu tarz şeyler, x'i görene kadar, değil mi?
+
+156
+00:29:56,355 --> 00:29:59,355
+Ne kadar...
+
+157
+00:29:59,355 --> 00:30:01,355
+Git.
+
+158
+00:30:01,355 --> 00:30:03,355
+Bu da bizim ev halimize karşılık gelecek.
+
+159
+00:30:04,435 --> 00:30:10,435
+Dolayısıyla işte For'la Wiley'nin anlamı yani bilgilerin farkı bu kadar basitler.
+
+160
+00:30:10,435 --> 00:30:23,435
+Peki, şimdi gelelim bu dersin içine şu anda bir algoritmalar nedir vesaire birazcık onlardan bahsettik çok basitçe.
+
+161
+00:30:23,435 --> 00:30:32,203
+Şimdi bu dersimizin temel amacı arkadaşlar, bu dersteki amacımız algoritma geliştirmek değil.
+
+162
+00:30:32,884 --> 00:30:40,884
+Algoritma geliştiriyorsunuz zaten, geliştireceksiniz de. Bu dersin amacı iyi algoritma geliştirmek.
+
+163
+00:30:40,884 --> 00:30:51,884
+Yani, bir problemi çözen değil, o problemi iyi çözen, daha iyi çözen bir algoritma geliştirmek.
+
+164
+00:30:51,884 --> 00:31:00,716
+Burada, bu nasıl yapılır, bunlarla ilgileneceğiz dersin içerisinde.
+
+165
+00:31:05,236 --> 00:31:28,236
+Bir problem size geldiğinde onu bir mühendis olarak çözmüş olmanız genelde yeterli olmaz. İyi çözmüş olmanız gerekir. Çözdüm işte. Yani mesela şöyle bir şey düşünelim. Ben size dedim ki mesela işte ya da size şey geldi.
+
+166
+00:31:29,299 --> 00:31:41,299
+İş geldi çok basit bir şekilde. Bir de ona kadar olan sayıları ekrana yazdır. Mesela. Şimdi bir de ona kadar olan sayıları ekrana yazdırmak için yapabileceğiniz bir sürü şey var.
+
+167
+00:31:41,299 --> 00:31:45,299
+Yani şöyle bir şey yapabilir misiniz? Mesela şöyle bir ay varma düşünelim.
+
+168
+00:31:45,299 --> 00:31:46,299
+Start diyelim.
+
+169
+00:31:48,299 --> 00:31:52,299
+Bir, iki, gidiyor.
+
+170
+00:31:57,332 --> 00:31:59,892
+Şimdi bu iki algoritma aynı şeyi mi yapar?
+
+171
+00:32:03,508 --> 00:32:05,508
+Çıktı olarak evet hocam.
+
+172
+00:32:05,508 --> 00:32:15,508
+Aynı şeyi yapar. İkisini de çalıştırdığımızda, dışarıdan baktığımızda aynı şeyi görürüz değil mi? Herhangi bir şey olmaz.
+
+173
+00:32:15,508 --> 00:32:18,508
+İçlerine baktığımızda farklıdırlar, doğru.
+
+174
+00:32:18,508 --> 00:32:25,508
+Şimdi her iki çözüm de çözüm mü? Evet çözüm. Tamam.
+
+175
+00:32:25,508 --> 00:32:30,508
+Ama bizim tercih ettiğimiz çözüm hangisi olmalı?
+
+176
+00:32:32,339 --> 00:32:33,339
+Üsteki çözüm.
+
+177
+00:32:33,339 --> 00:32:34,339
+Niye?
+
+178
+00:32:34,339 --> 00:32:39,339
+Çünkü altta olan çözüm genelleştirilebilir bir çözüm değil hocam.
+
+179
+00:32:39,339 --> 00:32:43,339
+Ne demek istiyorsun genelleştirilebilir demekle?
+
+180
+00:32:43,339 --> 00:32:48,339
+Yani tam 10'a kadar yazdım ama bir sonraki seferde 11'i istediği zaman...
+
+181
+00:32:48,339 --> 00:32:49,339
+Hı hı.
+
+182
+00:32:49,619 --> 00:33:02,819
+Ya da bir adım değildi, mesela 15 istediği zaman altta 5 tane değiştirmem gereken şey var. Yani 5 tane yeni print eklemem gerekiyor. Ama yukarıda sadece onun yerine 15 yazdığım zaman bu problemi çözmüş olacağım.
+
+183
+00:33:02,819 --> 00:33:07,619
+Daha aslında adaptif bir kod yukarıdaki.
+
+184
+00:33:08,468 --> 00:33:17,468
+Farklı problem, farklı durumlara daha kolay uyum sağlatabileceğin bir konu. Daha kolay değiştir, daha az emekle değiştirebileceğin bir şey.
+
+185
+00:33:17,468 --> 00:33:24,468
+Yani ne demek istiyorum? İşte 15lik falan dedin de, yani 1000 olsa mesela ne olacak? Birden 1000'e kadar.
+
+186
+00:33:24,468 --> 00:33:29,468
+Değil mi? Yani alttaki çözüm hiç iyi bir çözüm olmayacak.
+
+187
+00:33:29,468 --> 00:33:34,468
+Dolayısıyla aslında hani, ben problemi çözdüm işte.
+
+188
+00:33:34,804 --> 00:34:01,624
+Demek, bu derste bunu şu ana kadar problem çözmeyi gördünüz, öğrendiniz. Şimdi burada çözüm var, çözüm var. Ona birazcık odaklanacağız. Daha iyi çözüm nasıl geliştirilir? Dediğim gibi dersin amacı bu yapıda sizi düşünmeye sevk etmek. Öyle söyleyeyim.
+
+189
+00:34:02,132 --> 00:34:16,132
+Birçok farklı problem türü göreceğiz, birçok farklı çözüm göreceğiz, çözümleri iyi taraflarını kötü taraflarını göreceğiz ve ümit ediyorum ki oldukça keyifli bir ders olacak diye düşünüyorum.
+
+190
+00:34:17,731 --> 00:34:26,331
+Şimdi iyi, daha iyi çözüm dedik ama bu daha iyi dediğimiz şey ne demek?
+
+191
+00:34:28,467 --> 00:34:41,467
+Bunun içeriğine bundan birazcık bahsetmek gerekiyor. Şimdi bir saniye, evet. Şimdi sorumuz şu, bir sorumuz var yine.
+
+192
+00:34:56,148 --> 00:34:57,148
+Nelans.
+
+193
+00:35:01,268 --> 00:35:06,268
+İyi dediğimiz şeyin içeriğini, altını doldurmaya çalışıyoruz şu anda aslında.
+
+194
+00:35:06,268 --> 00:35:07,268
+Evet, daha…
+
+195
+00:35:07,268 --> 00:35:08,268
+Verimli gibi mi?
+
+196
+00:35:08,268 --> 00:35:09,268
+Hızlı olabilir mi?
+
+197
+00:35:09,268 --> 00:35:10,268
+Ne demek?
+
+198
+00:35:10,268 --> 00:35:14,268
+Hızlı olabilir mesela, bu güzel. Evet, hızlı. Daha böyle somut, elle tutulur bir şey.
+
+199
+00:35:14,268 --> 00:35:21,268
+Verimli demek de biraz hani, tamam evet doğru ama hani biraz daha elle tutulabilir bir şeyler söyleyelim.
+
+200
+00:35:21,268 --> 00:35:23,268
+Az kaynak kullanıyor olabilir.
+
+201
+00:35:23,268 --> 00:35:28,108
+Daha hızlı. Evet, yani hani kaynak dediğimiz şey ne?
+
+202
+00:35:28,851 --> 00:35:33,971
+Şimdi, bellek mesela, bellek tasarrufu değil mi?
+
+203
+00:35:33,971 --> 00:35:35,172
+Tasarrufu.
+
+204
+00:35:35,172 --> 00:35:37,172
+Daha az işlem olabilir hocam.
+
+205
+00:35:37,172 --> 00:35:41,412
+Daha az işlemin anlamı daha hızlı olması demektir, doğru mu?
+
+206
+00:35:41,412 --> 00:35:46,532
+Daha az sayılı işlemle çözüyorsa, değil mi?
+
+207
+00:35:46,532 --> 00:35:49,731
+Evet, başka?
+
+208
+00:35:50,195 --> 00:35:53,695
+Daha anlaşılabilir olabilir hocam. Evet, [öğrenci] de yazmış.
+
+209
+00:35:53,695 --> 00:35:56,695
+Hımm, evet daha anlaşılabilir olabilir, doğru.
+
+210
+00:35:58,695 --> 00:36:00,195
+Evet, başka?
+
+211
+00:36:09,043 --> 00:36:14,043
+Hocam, demin de demiştik, uyumlu. Ne demek uyumlu?
+
+212
+00:36:14,043 --> 00:36:22,043
+İşte, mesela sorun değiştiği zaman, o soruna daha kolay bir şekilde adapte olabilme.
+
+213
+00:36:22,043 --> 00:36:36,043
+Onu belki ne diyelim, modüler diyelim ona, olur mu? Mesela, yani böyle parçaları var, o parçaları çok rahat bir şekilde şey yapabiliyorsun, adaptif hale getirebiliyorsun.
+
+214
+00:36:36,532 --> 00:36:42,292
+Ya da şöyle yapalım, modüler falan yazın. Adaptif yazılım diye şey yapıyoruz ki.
+
+215
+00:36:42,292 --> 00:36:53,412
+Daha adaptif olabilir. Durumlara daha kolay uyum. Yani çalıştığı ortamdaki değişimlere, böyle söyleyelim, daha kolay uyum sağlayabilir.
+
+216
+00:36:53,412 --> 00:36:59,332
+Evet, başka? Daha doğru olabilir hocam. Daha doğru? Ne demek doğru?
+
+217
+00:36:59,332 --> 00:37:03,892
+Daha kesin sonuç verebilir. Ne demek o?
+
+218
+00:37:05,012 --> 00:37:13,012
+Bir algoritma doğruluk payı %1 ise diğerinki, %1 falan.
+
+219
+00:37:13,012 --> 00:37:20,012
+Ne demek istiyorsun doğruluk payı derken ne demek istiyorsun? Nasıl bir algoritmadan bahsediyoruz?
+
+220
+00:37:20,012 --> 00:37:25,012
+Ne yapıyor yani? Ne yapıyor da daha doğru?
+
+221
+00:37:25,684 --> 00:37:27,684
+Matematik işlemi mesela.
+
+222
+00:37:27,684 --> 00:37:29,684
+Matematik işlemi yapıyorsun, tamam.
+
+223
+00:37:29,684 --> 00:37:33,684
+Mesela pinin daha fazla değerini bulur.
+
+224
+00:37:33,684 --> 00:37:39,684
+Daha kesinliği, duyarlılığı daha yüksek işlem yapabilir biliriz diğerinden mesela.
+
+225
+00:37:39,684 --> 00:37:40,684
+Evet.
+
+226
+00:37:40,684 --> 00:37:42,684
+Evet, doğru. Başka?
+
+227
+00:37:42,684 --> 00:37:46,684
+Doğruluk için doğru diyorsun, daha kesin, yani daha duyarlı diyelim.
+
+228
+00:37:46,684 --> 00:37:48,684
+Daha duyarlı diyelim. Başka ne olabilir?
+
+229
+00:37:50,684 --> 00:37:52,684
+Kapsamlı olabilir mi hocam?
+
+230
+00:37:55,219 --> 00:38:01,939
+Yok, doğrunun içerisinde başka nasıl bir şey var? Yani bizim makinelerine yaptırdığımız şeyleri düşünelim.
+
+231
+00:38:05,204 --> 00:38:25,204
+Kullandığımız. Mesela belli şeyleri vermiyor olabilir hocam. Örnek veriyorum. Veremedim hocam. Bazı durumları şey yapmıyordur. Bazı durumları mesela bazı durumlar için çalışmıyordur. O için çalışıyordur ama bir tane durum için çalışmıyordur.
+
+232
+00:38:25,204 --> 00:38:31,204
+Tigahtiş sayılar mesela. Kısıtı az diyebiliriz belki olabilir mi?
+
+233
+00:38:34,003 --> 00:38:36,503
+Yani daha az kısıt'a sahip mesela.
+
+234
+00:38:37,804 --> 00:38:44,503
+Yani parolada sadece integer giriyordur ama string de girmesi gerekebilir hocam, karakter.
+
+235
+00:38:44,503 --> 00:38:45,503
+Tamam.
+
+236
+00:38:48,851 --> 00:38:50,851
+Bu onu daha ne yapar?
+
+237
+00:38:52,851 --> 00:38:53,851
+Kapsamlı.
+
+238
+00:38:54,851 --> 00:38:56,851
+Daha kapsamlı.
+
+239
+00:38:56,851 --> 00:39:01,851
+Kapsamlıyı aslında ben yine adaptif olarak değerlendirebiliriz diye düşünüyorum.
+
+240
+00:39:01,851 --> 00:39:05,851
+Hani daha çok duruma adapte olabilen, öyle değil mi?
+
+241
+00:39:06,851 --> 00:39:08,851
+O şekilde düşünebiliriz herhalde.
+
+242
+00:39:11,476 --> 00:39:19,476
+Daha kullanıcı dostu olur mu hocam? Açıkların daha insanlar tarafından anlaşılabilmesi kolay, girdilerin daha insanlar tarafından verilmesi kolay kesimden.
+
+243
+00:39:19,476 --> 00:39:29,476
+Şöyle, şimdi şu yukarıda, yani şurada anlaşılabilir yazdık zaten. Ama buradaki anlaşılabilirlik algoritmanın kendisinin anlaşılabilirliğiydi.
+
+244
+00:39:29,844 --> 00:39:37,844
+Senin kastettiğin ise aslında input ve output'larının daha anlaşılabilir olması. Doğru mu? Anladım.
+
+245
+00:39:37,844 --> 00:39:44,844
+Evet hocam, anlaşılabilirden kastım, ben şey gibi düşünmüştüm, okunması kolay, başka programcı gördüğü zaman okunması kolay gibi düşünmüştüm anlaşılabiliri.
+
+246
+00:39:44,844 --> 00:39:45,844
+Doğru.
+
+247
+00:39:45,844 --> 00:39:48,844
+Ama kullanıcı dost derken direkt kullanıcının gözünden olarak düşünmüştüm.
+
+248
+00:39:48,844 --> 00:39:56,844
+Anladım. Geliştiricinin gözünden değil de kullanıcı dostu diyelim. Evet. Kullanıcı tarafından da şey olabilir. Doğru.
+
+249
+00:39:58,068 --> 00:39:59,068
+Başka?
+
+250
+00:40:10,547 --> 00:40:16,307
+Mesela şey düşünün, Apple'ı kullanıyorsunuzdur, işte otomatik çevir programlarını düşünün.
+
+251
+00:40:16,307 --> 00:40:20,947
+Otomatik çevir programlarının birbirlerine göre daha ne olabilirler?
+
+252
+00:40:25,108 --> 00:40:50,912
+Güncel. Güncel? Daha tutarlı olabilir belki. Hatreti Peygamber. Evet. Güncel. Tutarlı tamam, bunu sevdim. Tutarlı demek ne demek? Yani daha...
+
+253
+00:40:50,911 --> 00:40:58,591
+Mesela bir kelimenin üç anlamı varsa mesela, o cümleye hangisi uyuyorsa mesela onu kullanması gerektir.
+
+254
+00:40:58,591 --> 00:41:00,591
+Gibi gibi.
+
+255
+00:41:00,591 --> 00:41:02,591
+Anladım. Peki.
+
+256
+00:41:08,591 --> 00:41:15,551
+Mesela hava tahmini yapan sistemleri düşünelim. Bunlar birbirlerine göre daha ne olabilirler?
+
+257
+00:41:19,572 --> 00:41:26,292
+Mesela hava yarın şöyle olacak, ne bileyim 3 saat sonra yağmur yağacak diye bir şeyler yapıyorlar değil mi? Tahminlerde bulunuyorlar.
+
+258
+00:41:29,588 --> 00:41:32,268
+Bunlar da yine daha doğru olabilirler değil mi birbirlerine göre?
+
+259
+00:41:32,268 --> 00:41:33,948
+Evet hocam.
+
+260
+00:41:33,948 --> 00:41:36,948
+Daha kesin olabilir.
+
+261
+00:41:36,948 --> 00:41:44,948
+Daha kesin olabilir, daha duyarlılığı yüksek olabilir. Evet, doğru. Bu tarz şeyler olabilirler.
+
+262
+00:41:44,948 --> 00:41:54,148
+Peki, şimdi bunlar işte daha için aklımıza gelen sıfatlar. Öyle söyleyelim.
+
+263
+00:41:54,579 --> 00:41:58,579
+Bir algoritma başka bir algoritmadan daha şöyle şöyle şöyle olur.
+
+264
+00:41:59,579 --> 00:42:03,579
+İşte bu dersin içerisinde bunlarla temelde ilgileneceğiz.
+
+265
+00:42:05,579 --> 00:42:08,579
+Fakat unutmamız gereken bir nokta var.
+
+266
+00:42:09,579 --> 00:42:19,579
+Genelde bu yazdığımız şeyler birbirleriyle ters ilişkiledirler. Genelde.
+
+267
+00:42:20,340 --> 00:42:28,340
+En çok temel üzerinde duracağımız şu ikisi var. Belki şu doğruluğu da birazcık şey yapabiliriz.
+
+268
+00:42:30,340 --> 00:42:38,340
+Ne demek istiyorum? Bir algoritmayı başka bir algoritmadan daha hızlı yapabilir misiniz? Daha hızlı yani oluşturabilir misiniz? Evet.
+
+269
+00:42:39,340 --> 00:42:45,340
+Bir algoritmayı hızlandırabilir misiniz? Evet. Ama o algoritmayı hızlandırırken
+
+270
+00:42:45,407 --> 00:43:09,248
+Bellekten mutlaka ne yaparsınız? Büyük ihtimalle kaybedersiniz. Anlatabildim mi? Ya da belleği tasarrufunu yapmak istiyorsunuz, çok az bir alan kullansın istiyorsunuz. O zaman büyük ihtimalle nereden kaybedeceksiniz? Çok az bellek kullandınız, zaten tersden hızdan kaybedeceksiniz. Yani ne demek istiyorum? Ya da işte doğruluk mesela.
+
+271
+00:43:10,228 --> 00:43:21,228
+Çok hızlı bir algoritma çalışsın istiyorsanız, yani tahminleriniz çok hızlı üretilsin istiyorsanız, çok az belli kullansın istiyorsanız, büyük ihtimalle doğruluktan ne yapacaksınız? Ödülünü vereceksiniz demektir.
+
+272
+00:43:21,228 --> 00:43:36,012
+Yani iki tane daha iyi aynı anda gerçekleştirmek çok kolay bir iş değil. Temelde bunu söylemeye çalışıyorum. Bir taraftan kazanırken genelde diğer taraflardan ne yapacaksınız? Kaybedeceksiniz.
+
+273
+00:43:36,244 --> 00:44:03,524
+Mesela, işte adaptif algoritma, adaptif yapıları düşünelim. Birçok duruma uyum sağladıkları için bunlar ne olacaklar? Kodları ister istemez algoritmaları çok daha kapsamlı, çok daha karmaşık olacak. Karmaşıklıktan dolayı anlaşılabilirlikleri ne olacak? Düşecekler doğal olarak. İçlerinde birçok ifler vesaire vesaire olacağından dolayı daha çok duruma uyum sağlayabilmek için hızları ne olacak? Düşecek.
+
+274
+00:44:04,563 --> 00:44:16,563
+Ves.Ves.Dolayısıyla algoritmaları daha bir şey yaparken başka bir taraftan da daha onu ne yapıyoruz? Azaltıyoruz. Genelde öyle düşünüyorum.
+
+275
+00:44:16,563 --> 00:44:25,563
+He, şu olabilir mi? Olabilir. Onda örneklerini görüyoruz. Aynı anda birden fazla kriteri iyileştirmek mümkün mü? Evet, o da mümkün.
+
+276
+00:44:25,563 --> 00:44:32,395
+Ama bunlar çok şanslık işlerin başına geliyor. Çok fazla olmuyor bu tarz şeyler.
+
+277
+00:44:32,596 --> 00:44:37,596
+Yani, mesela kullandığı belleği...
+
+278
+00:44:37,715 --> 00:45:03,531
+hızı arttırmadan hızı arttırmak mümkün mü? Evet olabilir ama bu dediğim gibi çok kolay bir süreç değil. Ya da bir tanesini azaltmak, bir tanesini sabit tutup bir tanesini iyileştiriyorsanız bu bile çok çok iyi bir şeydir. Hem ikisini birden iyileştirmek değil de bir tanesi değişmeyorken diğerini iyileştirmek bu oldukça büyük katkı sağlayabilecek bir şey.
+
+279
+00:45:04,500 --> 00:45:13,860
+Dolayısıyla bizler dersin kapsamında işte burada bahsettiğim bu hız, bellek, doğruluk vesaire gibisinden kavramlarla genelde ilgileneceğiz.
+
+280
+00:45:13,860 --> 00:45:21,539
+Ama burada bahsettiğimiz belki dersin içerisinde bizim çok çok fazla görmeyeceğimiz diğer kısımları da oldukça önemli.
+
+281
+00:45:21,539 --> 00:45:30,500
+Kullanıcı dostu olmasa hakikaten günümüzde o manada düşünürsek oldukça kritik belki en az yerlere kadar kritik.
+
+282
+00:45:31,572 --> 00:45:33,572
+Belli uygulamalar için.
+
+283
+00:45:33,572 --> 00:45:50,572
+Şimdi, bu aynı anda birden fazla şeyin birbiriyle çatışması.
+
+284
+00:45:50,572 --> 00:45:57,572
+Mesela buna nasıl bir örnek verebilirim bu kavrama?
+
+285
+00:46:00,467 --> 00:46:05,467
+Bir tanesi artarken diğeri şey olacak. Yani şöyle bir şey çizmeye kalkarsam ben...
+
+286
+00:46:06,467 --> 00:46:17,467
+Burası mesela hız olsun, tamam mı? Burası da bellek olsun, tamam mı? Ne kadar güzel bellek olsun.
+
+287
+00:46:22,612 --> 00:46:28,612
+Evet, şimdi bu ikisinin arasındaki ilişkinin genel olarak şöyle olmadığını söyleyelim ben, fark ettiyseniz.
+
+288
+00:46:28,612 --> 00:46:37,612
+Yani hızlı bir, bu algoritma bir mesela, tamam mı? Bu algoritmanın birinci versiyonu. Bir algoritma geliştiriniz, onu daha bir şey yapmak istiyorsunuz.
+
+289
+00:46:37,612 --> 00:46:44,612
+Bunu daha hızlı yapmaya kalkarsanız, bu yönde artış yapmaya kalkarsanız, sizin şu algoritma ilişkiniz şuraya gelecek, değil mi?
+
+290
+00:46:44,704 --> 00:46:59,704
+Ama bu algoritma ikiniz büyük ihtimalle böyle olmayacak. Yani bu trendin şu çizgi yani bu trend dediğim şey şu çizgiden bahsediyorum. Bunun böyle olmadığını söylüyorum. Ya nasıl olduğunu söylüyorum?
+
+291
+00:47:03,092 --> 00:47:04,092
+Nasıl olabilir?
+
+292
+00:47:07,891 --> 00:47:21,891
+Aşağı yukarı şöyle bir şey olacak. Yani bir tanesi artarken, diğeri azalan bir süreç. Yani bunu bir daha şöyle çizmeye kalkarsam...
+
+293
+00:47:35,987 --> 00:47:38,787
+Neyse, bu da olur.
+
+294
+00:47:41,187 --> 00:47:45,187
+Benim mesela diyelim ki, algoritma birim burada.
+
+295
+00:47:45,987 --> 00:47:53,587
+Bunu geliştirdim, geliştirdim, geliştirdim. Mesela hızını arttırmak istedim, tamam mı? Burası hız kısmı, burası da bellek kısmı.
+
+296
+00:47:54,835 --> 00:48:02,835
+Hızını arttırdığım zaman, bu algoritmanın hızını arttırdığımda, bunun anlamı benim şuralarda falan bir yerlere gitmem gerekiyor.
+
+297
+00:48:02,835 --> 00:48:05,835
+Şu tarafa gitmem gerekiyor, tamam buraya gitmem gerekiyor.
+
+298
+00:48:05,835 --> 00:48:12,835
+Şimdi burada bellek gereksinimini, tabi bu bellek tasarrufu diyeyim ben buna.
+
+299
+00:48:12,835 --> 00:48:16,835
+Ters anlaşılmasın bellek tasarrufu diyeyim.
+
+300
+00:48:22,771 --> 00:48:25,771
+Ya da kullanılan bellek diyeyim o da olur.
+
+301
+00:48:38,483 --> 00:48:46,163
+kullanılan bellek dediğimizde bu ne yapacak? Bu taraftan bu tarafa çıkacak. Yani hızı arttırdığınızda kullanılan bellek olarak ifade ederseniz,
+
+302
+00:48:46,163 --> 00:48:52,563
+aynen şurada gördüğünüz kırmızı olacaktır. Bellek tasarruf olarak düşünseniz de, şu yeşil olarak düşünebilirsiniz.
+
+303
+00:48:52,563 --> 00:48:59,364
+Burada şu hız ve bellek yerine buradaki farklı farklı ikilleri koymak mümkün.
+
+304
+00:48:59,572 --> 00:49:14,892
+Siz eğer ki, mesela şöyle bir şey, çok iyi bir şeydir. Bir algoritma 1 oluşturdunuz, tamam mı? Ve algoritma ikiniz de şurada, mesela. Tamam mı? Bu mesela hız diyelim, bu da diğer kriter. Ne bileyim, işte bellekine olsun.
+
+305
+00:49:15,539 --> 00:49:21,299
+Bundan da mı şu aslında, şu noktadan şu noktaya gittiyseniz eğer, algoritma 1, bu da algoritma 2 idi.
+
+306
+00:49:21,299 --> 00:49:26,940
+Yani bu sizin ilk geliştiriniz algoritma. Daha sonra bunu iyileştirmek için oturduğunuz, çalıştınız, çabaldınız vs.
+
+307
+00:49:26,940 --> 00:49:28,539
+algoritma 2 ortaya çıktı.
+
+308
+00:49:28,539 --> 00:49:31,940
+Algoritma 2'nin hızı daha fazla bakın, tamam.
+
+309
+00:49:31,940 --> 00:49:33,940
+Fakat belli kullanımı nasıl?
+
+310
+00:49:33,940 --> 00:49:35,532
+Algoritma 1 ile?
+
+311
+00:49:35,539 --> 00:49:44,539
+Aynen. Bu süper bir şey. Anlatabildim mi? Yani bu oldukça iyi bir şey. Bunu çok seveceğiz. Tamam.
+
+312
+00:49:44,539 --> 00:49:56,539
+Genelde olan şey bir tanesini artırırken diğerini azaltmaktır. Yani genelde olan ise, onu da yeşil ile göstereyim mesela. Şöyle bir şeydir mesela. Genelde olan.
+
+313
+00:49:56,539 --> 00:50:00,000
+Bir tanesini iyileştirirken ötekisini ne yaparsınız? Kötü.
+
+314
+00:50:00,000 --> 00:50:25,500
+İyileştirirsiniz. Tamam. Şu kırmızı olan az olmuş. Bu genelde olan bu alıdır. Tamam. Şimdi peki çok az olan şeye çok takılmayalım şimdi ama genelde olan şey bir şeyi iyileştirirken bir şeyi kötüleştiriyorsak o zaman niye uğraşıyoruz biz gibisinden düşünebiliriz. Değil mi?
+
+315
+00:50:25,619 --> 00:50:29,619
+Yani toplam faydayı düşündüğünüzde hiç de bir manası yokmuş gibi geliyor algoritmayı.
+
+316
+00:50:29,619 --> 00:50:34,619
+Daha bir şey hale getirmenin, bir şeyi iyileştirirken çünkü ne yapıyorsunuz? Kötüleştiriyorsunuz öteki taraftan.
+
+317
+00:50:35,619 --> 00:50:37,619
+Buradaki olay aslında şu.
+
+318
+00:50:38,516 --> 00:51:06,516
+Algorithmalar genel bir şeyler değillerdir. Algorithmalar belli bir uygulama için yapılan bir şeydir. Ve sizin uygulamanız için buradaki bütün kriterlerin hepsi birden, ne olmazlar? Eşit derecede öneme sahip olmazlar. Sizin uygulamanızın mesela çok hızlı olması gerekiyordur. O zaman hıza çok önem ver. Mesela kullanıcıların bir milisaniyede cevap bekliyorlardır. Size gönderdikleri, API üzerindeki istekleri üzerinde.
+
+319
+00:51:06,516 --> 00:51:17,516
+O zaman sizin algoritmanızın çok çok hızlı olması için siz ne yaparsınız? Bellek kısmına hiç takılmazsınız, belleğe yatırım yaparsınız, belleklerinizi arttırırsınız, algoritmanınız çok hızlı bir hale gelir.
+
+320
+00:51:17,844 --> 00:51:22,844
+Daha hızlı algoritmalar geliştirirsiniz ama daha fazla belli kullanırsınız, buna katlanırsınız.
+
+321
+00:51:22,844 --> 00:51:25,844
+Çünkü uygulamanın gereksinimiyle alakalı bir şey bu.
+
+322
+00:51:25,844 --> 00:51:29,844
+Kullanıcılarınızın, müşterilerinizin vesaire vesaire beklentileriyle alakalı bir şey bu.
+
+323
+00:51:29,844 --> 00:51:34,844
+Ne bekleniyorsa, ne en çok kritikse ona çok ne yapıyorsunuz? Odaklanıyorsunuz.
+
+324
+00:51:34,844 --> 00:51:37,844
+Bu tabii çok temelde bir optimizasyon süreç.
+
+325
+00:51:37,844 --> 00:51:41,844
+Yani hani bir tanesini ne kadar arttırırsan, bir tanesini ne kadar azalacak vesaire.
+
+326
+00:51:41,844 --> 00:51:45,844
+Bunların hepsine teker teker yine ilerleyen süreçlerin içerisinde...
+
+327
+00:51:45,844 --> 00:52:00,844
+Şimdi arkadaşlar, bu dahanın içeriğinden ve bu dahanın bileşenlerinin, bileşenlerin demeyeyim de dahanın sıfatlarının birbirleriyle genelde çarpıştığında bahsettik.
+
+328
+00:52:00,844 --> 00:52:07,844
+Şimdi bir ara verdim, 10 dakika aramız olsun, ondan sonra yine devam edelim.
+
+329
+00:52:07,844 --> 00:52:12,396
+Bir dakika, şu paylaşımı durdurdum.
+
+330
+00:52:13,043 --> 00:52:20,304
+Videoyu da durdurdum. Saat 10.02. Evet, 10 dakika sonra tekrardan görüşmek üzere diyorum.
+
+331
+00:52:21,503 --> 00:52:25,583
+Şeyi kapatmayacağım zaten ya. Gitmeyin canım, gitmeyin. Niye ayrı diyorsunuz?
+
+332
+00:52:27,443 --> 00:52:31,443
+Kalın burada, 10 dakika sonra tekrardan görüşelim.
+
+333
+01:01:53,652 --> 01:01:59,628
+Evet arkadaşlar, tekrardan merhaba. Sesim giriyor mu?
+
+334
+01:02:02,643 --> 01:02:04,643
+Geliyor hocam.
+
+335
+01:02:04,643 --> 01:02:15,643
+Tamamdır. Peki şimdi beyaz tahtamızı açalım. Önceki beyaz tahtaları açabiliyoruz mu acaba?
+
+336
+01:02:19,507 --> 01:02:39,507
+Açık. Peki, neyse. Evet. Şimdi, yine bu daha daha mevzusundan biraz daha devam edelim. Şimdi mesela diyelim ki bir sıkıştırma programımız var. Zip programımız var.
+
+337
+01:02:46,643 --> 01:02:53,503
+Bu tarz programlar genelde nasıl olurlar sizce? Yani mesela şöyle bir şey söyleyelim.
+
+338
+01:02:56,043 --> 01:03:01,943
+Ne kadar çok sıkıştırırsanız o sıkıştırma işlemi o kadar ne olacaktır tahmine?
+
+339
+01:03:03,543 --> 01:03:04,843
+Daha az yer kapacak.
+
+340
+01:03:05,643 --> 01:03:08,143
+Daha az yer kapacak, doğru. Ama...
+
+341
+01:03:08,947 --> 01:03:10,947
+Daha yavaş gerçekleşecektir hocam o işlem.
+
+342
+01:03:10,947 --> 01:03:22,947
+Daha yavaş olacak değil mi? Aynen öyle ne kadar büyük sıkıştırma oranlarına ihtiyacınız varsa o işlem o kadar ne yapacaktır? Uzun sürecektir.
+
+343
+01:03:22,947 --> 01:03:33,947
+Ya da mesela bir satranç, bilgisayara karşı satranç oynayanlarınız var mı aranızda? Satranç oynamışsınızdır illaki bir şekilde.
+
+344
+01:03:34,291 --> 01:03:50,291
+Orada mesela şeyler vardır, modlar vardır. Ne demek istiyorum? İşte, hani acemi, uzman, master, grant, master, şudur budur gibisinden modlar seçebilirsiniz. Karşınızda öyle bir oyuncuyu simüle etsin diye.
+
+345
+01:03:50,291 --> 01:03:57,228
+Orada neyin farkına boyarsanız, uzmanlık seviyesi arttıkça ne artıyor?
+
+346
+01:03:57,619 --> 01:03:59,619
+Zaman, aldığı zaman artıyor.
+
+347
+01:03:59,619 --> 01:04:04,619
+Aldığı zaman artıyor değil mi? Daha çok işlem yapıyor aslında orada düşündüğünüzde.
+
+348
+01:04:04,619 --> 01:04:06,619
+Gayet normal bir şey.
+
+349
+01:04:06,619 --> 01:04:16,619
+Peki, şimdi bundan yıllar önce çok küçük bir şey başıma gelmişse paylaşayım.
+
+350
+01:04:16,619 --> 01:04:22,619
+Şimdi bir öğrenciyle beraber bir öneri sistemi oluşturmaya çalışıyoruz.
+
+351
+01:04:23,123 --> 01:04:28,403
+Yani, işte şunu alana, şunu da verelim falan gibisinden bir şey. Öyle düşünelim kabaca.
+
+352
+01:04:32,403 --> 01:04:36,844
+Mevcut algoritmalar var. Biz de onları bir şekilde iyileştirmek istiyoruz.
+
+353
+01:04:36,844 --> 01:04:47,043
+Öğrenci bir gün geldi, hocam işte şu, işte atıyorum, x algoritması var orada diyelim ki. O x algoritmasından çok daha doğru çalışan bir algoritma oldu.
+
+354
+01:04:47,123 --> 01:04:51,483
+Yani ki o algoritma da state of the art bir algoritma, yani iyi bir algoritma öyle söylüyor.
+
+355
+01:04:51,483 --> 01:05:01,883
+Yani hakikaten denedik, ettik falan, hakikaten çok daha doğru sonuçlara baktığımızda mevcut algoritmadan bariz bir şekilde çok daha iyi sonuçlar veriyor.
+
+356
+01:05:01,883 --> 01:05:06,123
+Peki dedim, şey nasıl, zaman, ha hocam ona bakmamış mı dedim.
+
+357
+01:05:06,123 --> 01:05:11,123
+Bir git bak bakalım dedim, hani bu ne kadar sürecek yani, sonuçlar tamam iyi de.
+
+358
+01:05:13,268 --> 01:05:31,768
+Yani yanlış hatırlamışlarım bin kat falan daha yavaştı. Şimdi bu aslında biraz ne, şöyle bir şey düşünebilirsiniz. Ne dedim ki, YouTube'da şurada burada falan bir şey, videosu yapmışsınız, videosu yaptıktan sonra size başka bir öne videolar getiriyor değil mi? Bir sürü.
+
+359
+01:05:31,956 --> 01:05:37,456
+Ya da hani, Netflix'te bir şeyler seyrediyorsunuz, size şunlar da ilginizi çekebilir, bir sürü öneriler getiriyor.
+
+360
+01:05:37,456 --> 01:05:43,956
+Şimdi, bu öneri işinin oldukça hızlı yapılması gerekiyor, değil mi?
+
+361
+01:05:43,956 --> 01:05:50,956
+O sayfada siz o videoyu izlerken, izlemeye başladığınız andan itibaren sizin karşınıza yeni yeni bir şeyler falan geliyorlar.
+
+362
+01:05:50,956 --> 01:05:56,956
+Dolayısıyla bu işin çok çok hızlı bir şekilde yapılması gerekiyor.
+
+363
+01:05:57,295 --> 01:06:05,295
+Emin olun ki çok çok daha doğru öneriler, size hoşunuza çok çok daha gidecek algoritmalar varlar.
+
+364
+01:06:05,895 --> 01:06:10,295
+Ama bu algoritmalar ne yapılamıyorlar? Kullanılamıyorlar.
+
+365
+01:06:10,295 --> 01:06:18,295
+Niye kullanılamıyorlar? Atıyorum işte bir kullanıcı için o öneri yürütme süresinin ne bileyim ben bir milisaniyenin altında olması gerekiyor.
+
+366
+01:06:18,295 --> 01:06:23,295
+Ama sizin işte o çok çok daha iyi algoritmaların bir saniye falan çalışıyor mesela diyelim ki.
+
+367
+01:06:23,827 --> 01:06:43,827
+O zaman ne olmayacak? Bu uygulanabilir bir şey olmayacak. Çünkü ortam, onun kullanılması gereken ortam bu tarz bir beklemeye kalkarsanız rakipleriniz sizi ezer geçerler. Tamam. Dolayısıyla işte bu tarz durumlardan dolayı bu tarz ödünleşimler olmak zorunda.
+
+368
+01:06:43,827 --> 01:06:49,547
+Burada tabii belki şeyden de bahsetmek lazım, önemli çünkü.
+
+369
+01:06:49,907 --> 01:07:10,907
+Daha bir algoritma başka bir algoritmadan daha paralelleştirilebilir gibisinden bir şey desem. Yani paralel hesaplamaya daha uygundur bunu desem. Bu aslında algoritmaların bazılarının işlemlerini, o işlemi dağıtık bir şekilde.
+
+370
+01:07:11,092 --> 01:07:24,092
+Bu dağıtıklık işte farklı işlemcilere dağıtılabilir, grafik kartlarındaki GPU'lara dağıtılabilir ya da farklı makinelerdeki, network'ın üzerindeki farklı makinelerle dağıtılabilir. Bu tarz birçok dağıtık yapı olabilir.
+
+371
+01:07:24,092 --> 01:07:30,988
+Bu hızı arttırmaktaki en...
+
+372
+01:07:31,699 --> 01:07:48,699
+İki tane yol var. Bir tanesi işlemcilerinizin hızını arttırmanız gerekiyor. Bu bir şey. İşte keşlerin boyutlarını falan birazcık arttırmak bayağı işe yarayabilecek bir şey. Bir de başka çok temel dediğim gibi o para değiştirebilir mevzusu var. Para değiştirebilir mevzusu o kadar önemli ki.
+
+373
+01:07:49,139 --> 01:08:14,139
+Bu günümüzdeki yapay zeka andaki vesaire en büyük ilerlemelerin gösterildiği algoritmalar hep tamamına yakını, öyle söyleyelim. Özellikle son dönemlerdeki tamamına yakını hep yapay sinir ağlar üzerinde. Bu yapay sinir ağlarının eğitimleri paralelleştirebilir eğitimler.
+
+374
+01:08:15,411 --> 01:08:38,412
+Yani onların öğrenme algoritmaları, öyle söyleyelim, paraleştirebilir süreçler içeriyorlar. Bu da bu sayede çok büyük verilerin, işte dağıtık mimarlarının üzerinde çok hızlı bir şekilde işlenebilmesini, onlardan veri çıkartılabilmesini vesaire ya da cevap üretilebilmesini sağlıyor. Dolayısıyla hani hızlandırmanın...
+
+375
+01:08:39,539 --> 01:08:54,539
+Bir diğer olası yönü, dediğim gibi paralelleştirme süreci, dağıtık hale getirme. Bu da bir algoritmayı diğer algoritmadan daha paralelleştirilebilir, daha dağıtık hale getirebilir gibisinden bir kriteri aslında karşımıza çıkarıyor.
+
+376
+01:08:54,539 --> 01:09:01,539
+Daha hızlının bir alt kolu diye düşünebilirsiniz bunu aslında. Daha hızlandırılabilir bir yapıya sahip oluyorlar.
+
+377
+01:09:01,539 --> 01:09:02,539
+Tamam mı?
+
+378
+01:09:02,539 --> 01:09:05,539
+Şimdi, peki...
+
+379
+01:09:07,155 --> 01:09:17,655
+Bu daha dahalardan konuştuk, daha da çok konuşuruz. Bu daha iyi algoritmayı geliştirmek.
+
+380
+01:09:17,655 --> 01:09:23,755
+Daha iyi algoritmayı geliştirmek dediğimiz şey temelde arkadaşlar iteratif bir süreç.
+
+381
+01:09:28,212 --> 01:09:37,164
+İlk aklınıza gelen çözüm, bir çözüm gelir aklınıza belli bir zaman üzerinde uğraştığınız zaman, doğru olur, yanlış olur vs. vs.
+
+382
+01:09:37,555 --> 01:10:04,895
+Bir çözüm geliştirirsiniz. Daha sonra bu çözümü iyileştirmeye çalışırsınız. İşte yeni bir algoritmaya geçersiniz. Onu daha da iyileştirmeye çalışırsınız, yeni bir algoritmaya geçersiniz. Böyle iteratif olarak ilerleyen bir süreç. Yani en baştan mükemmel, süper, harika bir algoritma en baştan ortaya çıkmaz. Yani ilk önce geliştirirsiniz algoritmayı, daha sonra onu daha da geliştirirsiniz. Sonuçta iteratif bir süreç olarak karşımıza çıkıyor. Tek adımlı bir iş değil.
+
+383
+01:10:06,996 --> 01:10:13,396
+Peki, bu algoritma geliştirmek nasıl öğreniliyor? Nasıl öğrenilir?
+
+384
+01:10:14,775 --> 01:10:26,296
+Kabaca, aslında çok az şey, başkaları tarafından sözler, her şeyi kendimiz öğreniyoruz bir şekilde de, sadece diğerleri size bir şekilde yardımcı olabilirler belki.
+
+385
+01:10:26,996 --> 01:10:30,956
+Dolayısıyla, kimse size algoritma geliştirmek öğretemez.
+
+386
+01:10:31,347 --> 01:10:41,347
+Algorithma geliştirme, temel olarak algorithma geliştirerek öğrenilen bir şey. Yani problem çözeceksiniz. Tamam mı? Bol bol problem çözeceksiniz.
+
+387
+01:10:41,347 --> 01:10:54,347
+Yani aslında hani algorithma geliştirmeyin bir algoritması yok gibisinden bir söz var. Doğru da bir söz yani, algoritma geliştirmeyin belli bir algoritması yok.
+
+388
+01:10:55,667 --> 01:11:07,268
+Bu noktada karşımıza şu son Kasım ayından beri karşımıza çıkan ne geliyor? ChatGPT geliyor karşımıza. Kimler kullandı ChatGPT'yi?
+
+389
+01:11:12,500 --> 01:11:20,899
+Ben kullandım hocam. Nasıl ya? Bir kişi mi kullandı? Ben de kullandım hocam. Ben de bakmıştım hocam biraz.
+
+390
+01:11:20,899 --> 01:11:32,220
+Yani arkadaşlar, şimdi şöyle söyleyeyim, kesinlikle bu haftaki ödeviniz olsun, tamam mı? Gayri resmi ödeviniz, öyle söyleyeyim.
+
+391
+01:11:32,220 --> 01:11:39,260
+ChatGPT ile en azından birkaç saat sohbet et. Tamam. Neler yapabildiğini, neler yapamadığını.
+
+392
+01:11:39,507 --> 01:11:47,507
+Birazcık görün. İngilizce'de sohbet edebilirsiniz, Türkçe'de sohbet edebilirsiniz. Hepsini de çalışıyor temel olarak.
+
+393
+01:11:51,507 --> 01:11:53,507
+Neler yapabildiğini...
+
+394
+01:11:58,771 --> 01:12:02,771
+Yapamadığını görmeniz... Niye? Şimdi...
+
+395
+01:12:04,771 --> 01:12:17,771
+ChatGPT'ye şöyle bir şey dediğinizde, ne bileyim ben, iki tane sıralı diziyi birleştiren bir algoritma bana yaz dediğinizde, sizin karşınızda bunun algoritmasını çıkartıyor.
+
+396
+01:12:17,771 --> 01:12:21,771
+Üç tane diziyi birleştiren çıkartıyor.
+
+397
+01:12:23,636 --> 01:12:35,036
+Binary Search yapan bir kod bana yaz, yapıyor. Ne bileyim, bir metnin içerisindeki kelimelerin frekanslarını bulduran bana bir kod yaz, yazıyor.
+
+398
+01:12:35,036 --> 01:12:42,536
+Siz normal konuşma dininizle söylediğiniz şeyleri, ifade ettiğiniz şeyleri algoritmasını...
+
+399
+01:12:42,963 --> 01:12:52,963
+algoritmasını, yani kodunu yazdırabiliyorsunuz, öyle söylüyorum en basitinden. Yani kod yazdırmak bir şey, onun kabiliyetlerinden biri, öyle söyleyeyim, tamam mı?
+
+400
+01:12:53,963 --> 01:13:07,963
+Şimdi, peki, tabii ki belli hataları var, vesaire, vesaire. Ama oldukça iyi, yani büyük bir sıçrama. En azından, en hafif tabiri de bunu hak ediyor, onu söyleyebilirim rahatlıkla.
+
+401
+01:13:11,155 --> 01:13:32,155
+Peki, bu tarz programlar varken, bilgisayar programcılarına, bilgisayar mühendislerine, yazılımcılara vs. vs. neye ihtiyaç olacak? Ne kadar ihtiyaç kalacak? Bunlar şu anda oldukça sıcak konular. İnsanlar bunların üzerine kafa yürüyorlar.
+
+402
+01:13:35,475 --> 01:13:43,475
+Yani işte bana şöyle bir web sitesi yap, şunlar olsun, bunlar olsun falan dediğiniz zaman, web sitesinin kodunu da yazıyor. Anlatabildim mi?
+
+403
+01:13:43,475 --> 01:13:55,435
+Dolayısıyla hani nasıl yazıyorsun, ben kısmına şimdilik detaylarına girmiyorum. Yapay zekâ dersine falan giriyoruz onların detayına ama, temelde şu an yapabildiği şeylerden bahsediyorum.
+
+404
+01:13:55,859 --> 01:14:05,859
+Şimdi bu noktada, dediğim gibi yazılımla uğraşanlar, bilgisayarlar vs. vs. Bunlar ne yapacaklar?
+
+405
+01:14:07,859 --> 01:14:18,443
+Daha diplomayı almadan işsiz mi kaldık gibisinden düşünebilirsiniz. Mesela bununla bir yorum, bir açıdan baktığınızda bir yorum böyle.
+
+406
+01:14:21,043 --> 01:14:31,043
+Evet, kafanızda var mı bir şeyler bu konuda? Özellikle chat-chip-bit ile iletişime girmiş olanlara sorayım.
+
+407
+01:14:38,868 --> 01:14:45,368
+Hocam, belki bilgisayar programcılığı gibi bir bölüm için biraz daha tehlikeli olabilir.
+
+408
+01:14:47,868 --> 01:14:51,868
+Ama, diyorsun?
+
+409
+01:14:52,368 --> 01:15:02,368
+Ama bizler için biraz daha az tehlikeli. Çünkü bölümümüz sadece kod yaz, algoritma geliştir gibi ilerleyen bir bölüm değil.
+
+410
+01:15:03,368 --> 01:15:04,368
+Ne var mesela?
+
+411
+01:15:05,492 --> 01:15:10,492
+Mesela işin donanım tarafına da, işin elektronik tarafına da giriyoruz, öğreniyoruz hocam.
+
+412
+01:15:10,492 --> 01:15:12,492
+Hı hı.
+
+413
+01:15:12,492 --> 01:15:16,492
+Donanım geliştirmeyi yapamaz mı?
+
+414
+01:15:16,492 --> 01:15:18,028
+ChatGPT.
+
+415
+01:15:21,844 --> 01:15:23,844
+Onu bilmiyorum, onu denemek lazım.
+
+416
+01:15:26,644 --> 01:15:33,443
+Peki, tamam. Aslında şöyle bir şey, bilgisayar programlar için daha tehlikeli, mainlisler için birazcık daha tehlikelisiz gibi bir şey.
+
+417
+01:15:33,443 --> 01:15:37,043
+Peki, tamam, buna bir fikir veriyor birazcık. Başka?
+
+418
+01:15:38,443 --> 01:15:49,043
+Sonuçta chat GPT kendi kendini yazmamış. Bunu da insanlar yazmış. Biz de chat GPT'yi oluşturan kısma geçeriz. Öyle bir şey yapamıyoruz.
+
+419
+01:15:49,876 --> 01:16:12,456
+Olabilir, evet, doğru. Ama tabii, CPT'yi oluşturmak ya da o tarz şeyler oluşturmak için çok çok çok fazla insana ihtiyaç olmayabilir. Sadece onunla uğraşmayı hedef olarak koyarsak. Anlatabildim mi demek istediğimi?
+
+420
+01:16:14,195 --> 01:16:18,796
+Dediğin çok doğru, yani sonuçta onu geliştirenler, mühendisler bu işi yapanlar.
+
+421
+01:16:22,136 --> 01:16:26,475
+Ama şimdiki kadar mühendise ihtiyaç olur mu, onu bilmiyorum.
+
+422
+01:16:26,475 --> 01:16:28,275
+Evet, başka?
+
+423
+01:16:31,891 --> 01:16:39,891
+Hocam, dediğiniz söz şöyle bir şey getirdi aklıma. Acaba chat GPT kendisinden daha iyi bir yapay zeka botu geliştirebilir mi?
+
+424
+01:16:40,891 --> 01:16:43,891
+Kendini geliştirebilir mi? İnsanların yardımı olmadan.
+
+425
+01:16:45,891 --> 01:16:48,891
+Evet, güzel bir soru.
+
+426
+01:16:55,667 --> 01:17:15,967
+Valla şu anda çok kabaca bu sorunun cevabını bilmiyorum. Hiç kimse de çok bilmiyor. Hani bundan ne bileyim ben 5-6 ay önce falan sorsaydın, yanıtım büyük olasılıkla hayır olurdu.
+
+427
+01:17:16,275 --> 01:17:34,355
+Ama şimdi dediğim gibi ortada büyük bir sıçrama var ve o sıçramanın daha nereye kadar gideceği de bu sene muhtemelen 2023 senesi o noktada önemli olacak gibi gözüküyor. Nerelere kadar gidecek göreceğiz.
+
+428
+01:17:37,555 --> 01:17:48,055
+Kendi kendini geliştiren hale gelmesi, yani onu çok ister miyiz, istemez miyiz, falan vesaire noktaları da var. Yani sonuçta kabaca, öyle söyleyeyim, biz işimize yarasın diye.
+
+429
+01:17:50,355 --> 01:17:59,051
+Geliştiren bir tool bu. Kendi kendine bir faydası olsun diye geliştiren bir şey değil. Dolayısıyla hani orası...
+
+430
+01:17:59,859 --> 01:18:12,359
+Bayağı dediğim gibi, yani bayağı enteresan gelişmelere gebe bir zamandayız. Zaman dilimin içerisindeyiz gibi. Büyük bir değişimin böyle eşiğindeyiz gibi geliyor.
+
+431
+01:18:14,359 --> 01:18:18,359
+Göreceğiz hep beraber. Peki, başka?
+
+432
+01:18:19,059 --> 01:18:21,859
+Çep'ten birisi bir şey yazmış. Ne yazmış?
+
+433
+01:18:26,899 --> 01:18:30,899
+Geliştirilse süper olmaz mı hocam insanlık için?
+
+434
+01:18:34,260 --> 01:18:38,579
+İnsanlık için, evet. İnsanlık için.
+
+435
+01:18:45,203 --> 01:18:54,503
+Bilmiyorum onu ya. Yani insanlık için de evet, insanların yani bu teknoloji denilen şey öyle söyleyeyim.
+
+436
+01:18:58,003 --> 01:19:04,203
+Tek tarafı olan bir bıçak değil, çift tarafı olan bir şey. Bütün teknolojiler için böyle, bu geçerli.
+
+437
+01:19:05,268 --> 01:19:17,268
+İyi tarafa da kullanabilirsiniz, kötü tarafa da kullanabilirsiniz. Onu demek istiyorum. Yani hani teknoloji tek başına iyidir, kötü yani ne bileyim ben işte enerji üretmek için nükleer santralleri kullanabilirsiniz.
+
+438
+01:19:17,268 --> 01:19:30,268
+Ne bileyim aynı anda 100.000 kişiyi öldürmek için de nükleer enerjiyi kullanabilirsiniz. Teknoloji böyle bir şey. Bu da hani süper olur mu? Süper şeyleri olur, evet. Süper kötü şeyleri de olabilir mi? Orasında.
+
+439
+01:19:30,804 --> 01:19:55,804
+Bilmiyorum, bakalım. ChatGPT'ye en iyi kim anlatırsa o iş bulur artık. Evet, güzel bir yorum olmuş. ChatGPT'ye derdini en iyi anlatan o iş bulur. ChatGPT ile iyi diyalog kurabilen insanlar. Var öyle bir sürü video var ya. Sütlaç tarifi algoritması yazamıyor mu? [öğrenci] demiş ki, sütlaç tarifi algoritması yazamıyor. Neyse.
+
+440
+01:19:57,524 --> 01:20:11,524
+Şimdi tabii bu CTPT'nin sadece kendisinin değil, belki birkaç versiyonu, yani geleceğin yönelik versiyonlarını falan da düşündüğümüzde, onları düşünerek birazcık fikir üretmek lazım.
+
+441
+01:20:11,524 --> 01:20:24,524
+Şu an dedim ki, Sütlaç tarifi aykutması yazılmıyordur ama muhtemelen öyle söylüyorum. Sütlaç onun web bilgi tabanında çok çok büyük yer tutmuyordur şu an.
+
+442
+01:20:25,332 --> 01:20:37,932
+Ama zaman geçtikçe veri tabanı, daha doğrusu verilerini öğrendiği derleme, genişledikçe muhtemelen süttaş dargını verebilir diye tahmin ediyorum.
+
+443
+01:20:37,932 --> 01:20:42,731
+Yani teknik manada bir şey yok, önünde engel yok o noktada.
+
+444
+01:20:42,731 --> 01:20:51,731
+Peki, şimdi kabaca şunu söyleyebilirim ama genel olarak...
+
+445
+01:20:52,275 --> 01:20:59,675
+Bizim işlerimizi hızlandıracak mı? Evet, hızlandıracak. Ne demek istiyorum? Bilgisayar kullanımı ya da bir Excel'i düşünüyorum.
+
+446
+01:20:59,675 --> 01:21:06,275
+İşte bir Excel denilen program. Muhasebecilerin işlerini ne kadar hızlandırdı? Korkunç derecede hızlandırdı.
+
+447
+01:21:06,275 --> 01:21:15,275
+Yaptıkları işleri çok çok daha hızlı yapabilir hale geldiler. Aynı anda 3 müşteriye değil de 500 müşteriye bakabilir hale geldiler.
+
+448
+01:21:20,500 --> 01:21:25,180
+Bundan daha da eskiye gidersek halı dokuma yapılarını düşünün.
+
+449
+01:21:25,180 --> 01:21:32,699
+Yani eskiden insanlar bu halıları dokuyorlardı. Daha sonra halı dokuma tezgahları otomatik hale geldi.
+
+450
+01:21:32,699 --> 01:21:36,139
+Ve işler çok çok daha hızlı yapılabilir hale geldi.
+
+451
+01:21:36,139 --> 01:21:41,979
+Bu noktada da, yani şimdi bu bilgisayarlarla olan, bilgisayarlara yaptırdığımız işler noktasında da,
+
+452
+01:21:41,979 --> 01:21:47,420
+her türlü işimizi muhtemelen epey hızlandıracak gibi gözüküyor.
+
+453
+01:21:48,243 --> 01:21:55,863
+Hızlandıracak ama tamamen yerimizi alacak falan noktası şimdilik öyle söyleyeyim birazcık zor.
+
+454
+01:21:55,863 --> 01:22:01,863
+Ama hani o noktada şöyle bir şey söyleyeyim işte demin biraz konuştuk.
+
+455
+01:22:01,863 --> 01:22:08,363
+Sürekli aynı standart işi yapıyorsanız dersin en başına dönüyoruz.
+
+456
+01:22:08,363 --> 01:22:14,003
+Yaptığınız iş bir algoritmayla açık net bir şekilde tarif edilebiliyorsa
+
+457
+01:22:15,188 --> 01:22:31,068
+Yaptığınız işi yaparken geliştirmiyorsanız, sürekli aynı şeyi tekrar ediyorsanız, o zaman sizin işiniz için tehlike var. Çünkü siz o işi bir makine gibi yapıyorsunuz aslında demek.
+
+458
+01:22:37,779 --> 01:22:53,779
+...iyi ve daha hızlı ve daha ucuz. Dolayısıyla standart işler yapan, sürekli aynı işi tekrarlayan, bu şu anda yazadım diye konuşuyoruz ama ileriye yönelik olarak bunların bir sürü donanımla birleştirilmiş halleri falan gibisinden de düşünebilirsiniz. Gelecek manasında yani...
+
+459
+01:22:54,612 --> 01:23:17,092
+Sıra dışı olmanız lazım. Sürekli sırada aynı şeyi yapan, aynı şeyi tekrarlayan, işte A'yı B'ye çevirmek için, yani A işini yaptığınız, B işine geçeceksiniz. İşte A işinin aynısını, B işinde de birebir aynısını yapıyorsanız, siz de o yaptığınız iş tekrarlanabilir. Bir makine tarafından tekrarlanabilir, öyle söyleyeyim.
+
+460
+01:23:21,268 --> 01:23:29,268
+Yaptığınız işin, dediğim gibi tariflenebilmesiyle vesaire vesaireyle alakalı ama sürekli standart, sürekli aynı iş.
+
+461
+01:23:29,268 --> 01:23:33,268
+Yapanların işi, o noktada düşünürsek, tehlikede.
+
+462
+01:23:34,268 --> 01:23:37,268
+Yazılım denilen şey de bundan muaf değil.
+
+463
+01:23:40,148 --> 01:24:05,148
+Muhtemelen, çok çok emin değilim tabii ki de, muhtemelen yazılımcı sayısına, öyle söyleyeyim sayısı anlamında olan ihtiyaç muhtemelen azalacaktır. İleriye doğru. Ama yapılması istenen, beklenen işler de muhtemelen artacaklar. Ama dediğim gibi, işini standart yapmayan...
+
+464
+01:24:06,355 --> 01:24:14,755
+Sürekli aynı şeyi tekrarlamayan, öyle söyleyeyim. Onların işleri daha bir süre garantide gibi gözüküyor.
+
+465
+01:24:14,755 --> 01:24:23,395
+Peki, şimdi bu uzun konuşmadan sonra tekrardan algoritmalara geri dönelim.
+
+466
+01:24:23,395 --> 01:24:31,235
+Şimdi yapay zeka konuşuyoruz vesaire, chat, cipit'i konuşuyoruz.
+
+467
+01:24:34,452 --> 01:24:36,452
+Ben niye şunu şey yapamıyorum?
+
+468
+01:24:36,452 --> 01:24:38,452
+Ah, aldım galiba.
+
+469
+01:24:38,452 --> 01:24:40,452
+Güzel video muyum yazıyorum.
+
+470
+01:24:40,452 --> 01:24:41,931
+Evet, güzel.
+
+471
+01:24:47,315 --> 01:24:51,315
+Şimdi, çok sıklıkla anlatan bir hikaye vardır, biliyorsunuz.
+
+472
+01:24:54,315 --> 01:25:02,315
+Gauss diye bir eleman var. Carl Frederick Gauss diye adını duymuşsunuzdur.
+
+473
+01:25:03,315 --> 01:25:12,268
+Şimdi bunun ilkokulda yaşadığı bir hadise anlatılır. Yani, mittir vesaire vesaire falan ama...
+
+474
+01:25:13,587 --> 01:25:16,587
+Bir şey anlatmak için önemli, o yüzden size anlatıyorum.
+
+475
+01:25:16,587 --> 01:25:24,587
+Şimdi, Gauss'un ilkokul öğretmeninin bir işi var, sınıfta da dersi de var.
+
+476
+01:25:24,587 --> 01:25:32,587
+Dolayısıyla öğrencilerin sessiz oturup bir şeylerle meşgul olmasını istiyor ki o da kendi işini yapabilsin.
+
+477
+01:25:32,587 --> 01:25:39,587
+Öğrencileri meşgul etmek için de diyor ki, birden diyor, yüze kadar olan sayıları toplayın bana söyleyin diyor.
+
+478
+01:25:39,587 --> 01:25:40,587
+Tamam.
+
+479
+01:25:42,579 --> 01:25:58,979
+Şimdi bu birden yüze kadar olan sayıların toplamı, hakikaten düşündüğünüzde, yani 1 artı 2 artı 3, 4, mesela vesaire. Böyle bu işte, ne bileyim, 5050 falan yapıyoruz herhalde. Çok emin değilim.
+
+480
+01:26:00,020 --> 01:26:24,500
+Emin de olmak istemiyorum. Peki. Şimdi, burada Gausslu bir öğrenci sınıfta biraz tembel, yani tembel derken hani böyle bir şeyi yapmayan, böyle bir şeye tembel. Standart yani hani yüz kere toplamaya bir şey. Yani hiç keyifli bir şey değil, hiç zevkli bir şey değil. Ceza gibi bir şey.
+
+481
+01:26:26,931 --> 01:26:36,931
+Diyor, acaba ben bunu daha şey yapabilir miyim? Düşünüyor işte. Yani işte bir var diyor, iki var, üç var, dört var, böyle gidiyor.
+
+482
+01:26:36,931 --> 01:26:51,931
+İşte doksan altı var, doksan yedi var, doksan sekiz var, doksan dokuz var, sonra da yüz var. Böyle gidiyor. Sonra çok kritik bir şeyin farkına varıyor.
+
+483
+01:26:54,623 --> 01:27:04,123
+Şu iki arkadaşın toplamı aynı. Çünkü bir tanesi bir artıyor, bir tanesi bir yazılıyor. O zaman bununla, bunun toplamı da aynı.
+
+484
+01:27:04,123 --> 01:27:19,623
+Ves. Ves. O zaman bununla bunun toplamı 101. Değil mi? E böyle kaç tane çift var burada? 50, 50, 50 tane. O zaman diyor işte 5050'dir. Tamam mı? Daha sonra anlatan hikayesi bu.
+
+485
+01:27:19,956 --> 01:27:25,956
+Ne kadar doğru, ne kadar yanlış, çok çok da önemli değil. Ama bize bir şey söylüyor.
+
+486
+01:27:25,956 --> 01:27:39,956
+Şimdi, Gauss burada aslında bir algoritma yazdı. Nasıl bir algoritma yazdı? Normal algoritma şuydu.
+
+487
+01:27:52,148 --> 01:28:02,148
+Sınıf ile başla. Kullanıcıdan n'i al. Sonra t diye bir değişkenli olsun, sonra sıfır artı. Sonra eşit.
+
+488
+01:28:02,148 --> 01:28:13,931
+n'e kadar. t eşit t, t artı i. Topla. En sonunda da t'yi çıkar.
+
+489
+01:28:17,492 --> 01:28:23,492
+Şimdi bu Gauss'un sınıf arkadaşlarının yaptığı işte. Değil mi?
+
+490
+01:28:25,492 --> 01:28:31,492
+Gauss'un yaptığı neydi peki? Bulduğu yöntem neydi?
+
+491
+01:28:46,899 --> 01:28:52,399
+Şimdi, bunu buna dönüştürdüm. Bir algoritmayı, başka bir algoritmaya dönüştürdüm.
+
+492
+01:28:56,399 --> 01:28:58,399
+Bu algoritma bu algoritmadan daha ne?
+
+493
+01:29:02,163 --> 01:29:03,163
+Hızlı hocam.
+
+494
+01:29:03,163 --> 01:29:06,163
+Hızlı. Ne kadar hızlı?
+
+495
+01:29:06,163 --> 01:29:09,163
+Çok fazla hocam.
+
+496
+01:29:09,163 --> 01:29:11,163
+Ne demek o?
+
+497
+01:29:12,163 --> 01:29:20,163
+Sol tarafta en defa kontrol yapıyoruz, onun üzerine işlemler yapıyoruz. Sağ taraftaysa sadece bir tane işlem var.
+
+498
+01:29:20,163 --> 01:29:23,163
+En kez işlem yapıyoruz, değil mi?
+
+499
+01:29:23,163 --> 01:29:28,163
+Evet hocam. Kontrol hem toplama işlemi yapıyoruz.
+
+500
+01:29:30,003 --> 01:29:33,523
+En kez işlem var burada. Burada kaç işlem var?
+
+501
+01:29:33,523 --> 01:29:35,523
+Parfum.
+
+502
+01:29:35,523 --> 01:29:38,404
+Burada kaç işlem var?
+
+503
+01:29:38,404 --> 01:29:40,003
+Bir tane.
+
+504
+01:29:40,003 --> 01:29:43,603
+İki, üç. Bir, bir de diyebiliriz çok çok önemli değil.
+
+505
+01:29:43,603 --> 01:29:45,763
+Ya da üç değil.
+
+506
+01:29:45,763 --> 01:29:52,243
+Dolayısıyla bu iki algoritmanın arasındaki hız farkı korkunç büyük.
+
+507
+01:29:52,243 --> 01:29:56,804
+Yani birden bir milyonun kadar olan sayıları topladığınızı düşünün.
+
+508
+01:29:57,716 --> 01:30:01,036
+Aradaki fark belli bir şekilde, bariz bir şekilde karşımıza çıkar.
+
+509
+01:30:06,804 --> 01:30:16,804
+Peki, şimdi bu iki algoritmayı düşünelim.
+
+510
+01:30:18,804 --> 01:30:21,804
+Şimdi demin anlattığım hikayenin başka versiyonunu anlatacağım.
+
+511
+01:30:25,939 --> 01:30:45,939
+Gauss'un sınıfında, işte öğretmen bu soruyu verdiğinde, korkunç derecede hızlı toplama yapabilen bir çocuk olsun. Tamam. Yani çocuk korkunç hızlı. Korkunç hızlının anlamı şu.
+
+512
+01:30:48,180 --> 01:31:10,780
+Mesela öğretmen 100 dedi ya, birden 100'e kadar. Birden 100'e kadar olan sayıların toplamını, Gauss'un şu algoritmasını bulması, sonuçta o bir süreç değil mi? Yani tak diye aklına bu gelmiş olamaz. Belli bir süreç alacak. Ondan daha hızlı yapabildiğim düşünüyorum.
+
+513
+01:31:11,091 --> 01:31:23,591
+Yani Gauss'un algoritmayı geliştirmesinin süresinden daha hızlı bir şekilde toplama yapabildiğini düşünelim. Enteresan bir tip.
+
+514
+01:31:25,592 --> 01:31:27,592
+Ve tabii şöyle bir durum da var.
+
+515
+01:31:32,391 --> 01:31:37,791
+Gauss'tan önce parmak kaldırıp, ben bildim diyebilir, buldum diyebilir.
+
+516
+01:31:39,956 --> 01:31:47,456
+Ve Gauss hala belki işte şeyde uğraşıyor, işte kaç tane burada ikili olacak falan, onları düşünüyor. Tamam.
+
+517
+01:31:48,556 --> 01:31:49,556
+Peki,
+
+518
+01:31:52,056 --> 01:31:55,956
+Hatta hani çıktılar açısından değerlendirmeye kalkarsak,
+
+519
+01:31:56,456 --> 01:32:02,956
+Gauss belki şuradaki, işte şu bölme işini, şuradaki çarpma işini, şuradaki toplama işini yaparken hata yapabilir mi?
+
+520
+01:32:03,604 --> 01:32:18,604
+Sonucu yanlış söyleyebilir mi? Yani 5050 değil de belki ne ne bileyim 6100 diyebilir mi? Diyebilir. Yani burada bir yerlerde hata yapabilir. Mesela çarpma işlemi yapıyor, bölme işlemi yapıyor olabilir mi? Olabilir.
+
+521
+01:32:18,604 --> 01:32:30,604
+Ama bu çocuk hiçbir şekilde hata yapmıyor. Tamam, acayip derecede hızlı yapıyor. Hiç şey yok dediğim gibi. Peki, şimdi bu iki çocuğa bakalım.
+
+522
+01:32:30,847 --> 01:32:43,347
+Tamam mı? Bir çocuk korkunç derecede hızlı toplama yapabiliyor. Diğer çocuk... Aslında...
+
+523
+01:32:46,387 --> 01:32:51,988
+Süreç değil de sonuç açısından değerlendirirsek ne diyebilirsiniz?
+
+524
+01:32:53,768 --> 01:32:58,387
+Bakın, süreçten bahsetmiyorum. Sonuç açısından değerlendirirseniz ne diyebilirsiniz?
+
+525
+01:33:01,748 --> 01:33:11,988
+Bir tane çocuk daha hızlı çalışıp daha hızlı sonuç üretiyor, daha doğru sonuç üretiyor, öteki çocuğun ürettiği sonuç ise işte biraz yaklaşık falan, yani o kadar.
+
+526
+01:33:14,579 --> 01:33:19,579
+O da hızlı bir şeyler yaptı ama ötekisi kadar değil ve yanlış hatta bulduğu şey.
+
+527
+01:33:21,579 --> 01:33:27,579
+Ne dersiniz? Sonuç açısından değerlendirirseniz, bu çocuğu nasıl karşılaştırırsınız?
+
+528
+01:33:28,579 --> 01:33:35,579
+Hocam belki gün sonunda hızlı olan çocuk daha iyi şey yapabilir ama uzun vadede baktığımızda...
+
+529
+01:33:36,579 --> 01:33:39,532
+Uzun vadeden bahsetmiyorum, sonuç açısından değerlendirirsek diyorum.
+
+530
+01:33:39,828 --> 01:33:42,828
+Sonuç açısından o daha avantajlı.
+
+531
+01:33:42,828 --> 01:34:00,828
+Sonuç açısından bakarsak, birinci çocuk, yani bu sol taraftaki hızlı olan, öyle söyleyeyim, sadece hızlı olan, tamam. İyi, bayağı iyi. Ötekisi ise çok çok şey değil, yeterli ona. İyi gözükmüyor.
+
+532
+01:34:00,828 --> 01:34:01,644
+Peki.
+
+533
+01:34:04,787 --> 01:34:14,787
+Ama süreç açısından bakarsak, başka bir problemi çözme durumuna bakarsak vs. vs.
+
+534
+01:34:14,787 --> 01:34:22,787
+İleride hangi çocuğun muhtemelen kariyeri daha iyi olacaktır gibisinden düşünürsek,
+
+535
+01:34:31,796 --> 01:34:40,796
+Direkt çıktıya bakarak değerlendirmeye kalkarsak, sol taraftaki çocuk kesinlikle daha başarılı bir kariyere sahip olacak demektir.
+
+536
+01:34:41,796 --> 01:34:44,796
+Sadece çıktıya bakarak karar verirsek.
+
+537
+01:34:44,796 --> 01:34:51,796
+Ama çıktının yanında bir de bu çıktının neyi var arkadaşlar? Bir, bu çıktının üretilme süreci var. Değil mi?
+
+538
+01:34:53,363 --> 01:35:01,363
+Bu süreç dediğimiz şey, işte burada bizim algoritmanın kendi nasıl çalıştığı, nasıl yaptığı öyle söyleyeyim.
+
+539
+01:35:01,363 --> 01:35:07,363
+O noktada sürecin de oldukça değeri olduğunu teslim etmemiz gerekiyor.
+
+540
+01:35:07,363 --> 01:35:12,107
+Günümüz dünyası biraz, nasıl söyleyeyim, sonuç odaklı.
+
+541
+01:35:13,011 --> 01:35:26,011
+İnsanlar çok fazla bahane ürettiklerinden dolayı vs. vs. bir sürü insanlara belki çok güvenilmediğinden dolayı gibi gibi bir sürü... Neyse, önce laflar etmeyin.
+
+542
+01:35:27,220 --> 01:35:35,220
+Ama temelde, hani günümüz dünyası, ne bileyim ki, bir satışçının performansı neyle ölçülür? Ne kadar sattığıyla ölçülür? Çok kabaca. Tamam mı?
+
+543
+01:35:35,220 --> 01:35:47,220
+İşte bir öğrencinin başarısı neyle ölçülür? Notuyla ölçülür falan. Tamam, evet, tamam. Ama dediğim gibi sadece ve sadece rakamlara odaklanmak...
+
+544
+01:35:48,243 --> 01:35:57,003
+Sadece sonuçları bu şekilde değerlendirmek, dediğim gibi süreci atlatabiliyor, sürecin önemini gözden kaçırabiliyor.
+
+545
+01:35:57,003 --> 01:36:07,804
+Sizler öyle yapmayın diye söylüyorum. Algorithma temelde sürece değer bir sürecin, süreçtir aslında, süreç geliştirmektir, öyle söyleyeyim.
+
+546
+01:36:07,804 --> 01:36:12,684
+Dolayısıyla bu Gauss'un sınıf arkadaşı aslında burada neyi temsil ediyor arkadaşlar?
+
+547
+01:36:15,956 --> 01:36:19,716
+Çok daha hızlı, yanlışsız işlem yapan nedir?
+
+548
+01:36:30,387 --> 01:36:32,387
+Gelmiyor mu sesin?
+
+549
+01:36:32,387 --> 01:36:34,387
+Geliyor hocam ama...
+
+550
+01:36:34,387 --> 01:36:38,387
+Hı hı. Neyi temsil ediyor bu kaosuna sınıf arkadaşı?
+
+551
+01:36:38,387 --> 01:36:40,387
+Hesap makinesi hocam.
+
+552
+01:36:40,387 --> 01:36:44,387
+Bir bilgisayar, bir makine. Temelde bu. Anlatabildim mi?
+
+553
+01:36:46,387 --> 01:36:51,387
+Makineler bizden daha hızlılar, daha doğru işlemler yapıyorlar vs. vs.
+
+554
+01:36:52,435 --> 01:36:59,155
+Sonuçlar açısından karşılaştırıldığında dediğim gibi birçok durumda böyle kalabiliriz ileriye doğru.
+
+555
+01:36:59,155 --> 01:37:02,515
+Ama dediğim gibi orijinal işler yapmak, standart dışı işler yapmak.
+
+556
+01:37:02,515 --> 01:37:14,915
+Yani sınıftaki 1-2-3-4'ü arka arkaya toplayan öğrencilere göre bu makine her zaman onların yerini alabilir. Anlatabildim mi?
+
+557
+01:37:14,915 --> 01:37:18,755
+Ama hani bu oyunu işi ben daha iyi nasıl yaparım?
+
+558
+01:37:18,804 --> 01:37:35,404
+Mevcut çözümlerden daha iyi bu işi nasıl geliştiririm? Nasıl bunu daha iyi hale getiririm? Herhangi bir kriteri olarak. Bu yönde kafayı yoranların gelecekleri daha iyi. Öyle söyleyeyim. Tamam mı?
+
+559
+01:37:38,868 --> 01:37:49,868
+Şimdi, burada ders notlarına da bakarsınız, birkaç tane küçük küçük algoritma var. Şuradan şuraya kadar toplamak falan gibi.
+
+560
+01:37:51,868 --> 01:37:59,868
+Şimdi, bugün hep hikayelerden gidiyoruz. Açılış dersleri birazcık böyle oluyor.
+
+561
+01:38:01,868 --> 01:38:04,868
+Daha iyi algoritma geliştirilse ne olur?
+
+562
+01:38:06,292 --> 01:38:15,292
+Şimdi bizim üniversiteye başladığımız zamanlarda Google yoktu.
+
+563
+01:38:17,292 --> 01:38:25,292
+Google'ın öncesinde Yahoo ve AltaVista diye iki tane arama motoru vardı.
+
+564
+01:38:28,564 --> 01:38:44,884
+Bu arama motorlarını kullanıyorduk. Aradığımız şeyi buluyorduk. Herhangi bir şekilde, hani birbirlerinden de çok da büyük bir farklılıkları yoktu. Çalışma şekilleri de benziyorlardı zaten birbirlerine.
+
+565
+01:38:48,404 --> 01:38:54,164
+Ve biz herhangi bir şeyin eksikliğini görmüyorduk, duymuyorduk.
+
+566
+01:38:54,355 --> 01:39:16,516
+Hissetmiyorduk öyle söyleyeyim. Keşke şöyle olsa falan. Çünkü olay ne? İnternet çıkmış, internetin üzerindeki adreslerin bir listesi falan gibisinden bir şey yok. O listeler olsa bile elinde senin aradığın şeyle alakalı sayfanın hangisi olduğunu senin bulmanı keşfetmen falan korkunç zaman alacak bir şey.
+
+567
+01:39:16,944 --> 01:39:26,543
+ve arama motoru diye bir şey çıkıyor. Arama motorlarında artık sen bir şey yazıyorsun ve o bir şeyle alakalı web sayfaları karşına geliyor.
+
+568
+01:39:27,543 --> 01:39:31,944
+Yani arayüz olarak şimdiki Google'ın ya da Bing'in…
+
+569
+01:39:37,363 --> 01:39:45,563
+Bunların farklı bir arayüzü yoktu. Ya 12 birazcık daha karmaşıktı hatırlıyorum. Yani ekranda çok daha fazla şey vardı. Neyse önemli değil.
+
+570
+01:39:45,563 --> 01:39:50,763
+Şimdi biz böyle mutlu mesut, aromatorlarımızı kullanmaya devam ederken günün gününde Google'da bir tane site duyduk.
+
+571
+01:39:50,763 --> 01:40:02,163
+Google'da bir tane site duyduk, bu da bir aromatoru dediler, girdik baktık ve muhtemelen birkaç saatlik kullanımdan sonra bir daha altı bir site ve yahoo'ya asla geri döndük.
+
+572
+01:40:03,091 --> 01:40:30,811
+Şimdi bu neyi anlatıyordu? Yani bu neyi anlatıyor? Bu ne hikayesi? O anda biz herhangi bir şekilde bunun daha iyisinin olabileceğinin, yani bize daha iyi arama algoritması geliştirme, daha iyi arama motoru geliştirme falan gibisinden bir şey de olsa diyebileceğimiz ki, aa şusu kötü falan öyle bir, hani daha iyisini görmemişiz ki, hani öyle değil, tamam mı? Görmediğin için daha iyisini ne yapamıyorsun? Hayal edemiyorsun belki. Çok vizyoner falan değil sen tabii.
+
+573
+01:40:31,315 --> 01:40:41,815
+Neyse, ama sonuçta hani mevcuttaki durumda en iyi gözüken yapıdaki Alta Vista ve Google o zamanlar dev şirketler yani öyle büyük şirketler.
+
+574
+01:40:41,815 --> 01:40:51,015
+Herhangi bir rakipleri yok. Google dediğim gibi ve Google'ın diğerlerinden farkı neyi olabilir arkadaşlar?
+
+575
+01:40:51,015 --> 01:40:55,015
+Çalışanları vesaire tabii ki onlarda vardır ama. Algorithmus.
+
+576
+01:40:55,859 --> 01:40:59,179
+Google'un arama algoritması, işte PageRank algoritması var.
+
+577
+01:40:59,179 --> 01:41:06,419
+Ve bunu demin bahsettiğim paralelleştirilebilir yapıda çalışabilen bir algoritma haline getiriyorlar.
+
+578
+01:41:06,419 --> 01:41:14,059
+Ve bunun sonucu olarak çok daha hızlı, çok daha büyük miktarda hızlı bir şekilde ne yapıyorlar? İndekseyebiliyorlar, aratabiliyorlar vesaire vesaire.
+
+579
+01:41:14,059 --> 01:41:21,299
+Ve ondan sonra Google'ı Google'ı yapan şey, en başta öyle söyleyeyim, algoritma geliştirmek.
+
+580
+01:41:22,931 --> 01:41:30,931
+Daha sonra yatırım stratejileri vs. vs. şans falan bir sürü faktör var kişinin içerisinde.
+
+581
+01:41:32,931 --> 01:41:41,931
+Neyse, şimdi şöyle bir, yani bu hikayeyi algoritmanın önemini anlatmak için birazcık anlatıyorum.
+
+582
+01:41:41,931 --> 01:41:47,403
+Bir yandan da ne için anlatıyor olabilirim? Biraz düşünün bakalım.
+
+583
+01:41:49,268 --> 01:41:59,508
+İyi algoritmayı geliştirmek önemli. Evet, bu çok değerli olabilir. Başka neyi anlatıyor bu hikaye?
+
+584
+01:42:07,028 --> 01:42:09,028
+İhtiyaçların zamanla değiştiği
+
+585
+01:42:12,500 --> 01:42:14,500
+Evet, biraz başka...
+
+586
+01:42:30,676 --> 01:42:47,356
+Hocam, aslında Google arama motoru olarak kullanılıyor, evet. Ama onun yanında haritalar gibi, çeviri gibi ya da fotoğrafla arama yapma gibi bir sürü özellik daha sunuyor bize. Bunlar da başarısında bir parça olabilir mi o döneme göre?
+
+587
+01:42:49,476 --> 01:42:52,596
+Onlar yan besleyici şeyler.
+
+588
+01:42:56,979 --> 01:43:06,979
+Anlatmaya çalıştığım tam onlar değil. Onlar da evet başarılı sürülebilir hale getirmesi falan. Orası ayrı bir hikaye. Ek servis falan da çıkarttılar tabii ki de.
+
+589
+01:43:06,979 --> 01:43:21,979
+Başka bir şeyden bahsedeyim. Yani o günlerde biz, Yahu'nun, Altavistan'ın gibi dev firmaların, öyle söyleyeyim, bunların yani yazılım dünyasına olmakta da hakimler, bunların yer değiştirebileceğini...
+
+590
+01:43:22,351 --> 01:43:29,671
+Bunların, yani bunların yapmış olduklarından daha iyi bir şeylerin çıkabileceği falan gibisinden bir şey, hayal bile edemiyorduk böyle söyleyeyim.
+
+591
+01:43:32,951 --> 01:43:36,271
+Ama Google o zaman bunu başardı.
+
+592
+01:43:39,764 --> 01:43:43,764
+Peki, Google için de aynı şeyi söyleyebilir miyiz?
+
+593
+01:43:43,764 --> 01:43:57,764
+Olabilir hocam. Zaten yanlış bilmiyorsam hocam, birçok sektörde ilk o işe giren ya da o işi ilk yapanlar değil, daha sonrasında daha iyi geliştirenler şu anda, en popüler olanlar.
+
+594
+01:43:57,764 --> 01:44:00,764
+Bir sürü örnek verebiliriz buna mesela.
+
+595
+01:44:01,395 --> 01:44:12,155
+Trendyol yanlış mı diyorsam daha sonradan ortaya çıkan bir firma. Ama şu anda bence muhtemelen en popüler ve en fazla satış yapan Trendyol olması lazım. Net rakamları bilmiyorum ama.
+
+596
+01:44:12,155 --> 01:44:18,956
+Anladım. Başka? Evet. Teşekkürler.
+
+597
+01:44:23,699 --> 01:44:30,699
+Hocam, sanki bir şeyi bulmaktan çok onu geliştirebilmek daha önemli gibi.
+
+598
+01:44:30,699 --> 01:44:39,699
+Hani bulduk, tamam bitti, bunu kullanalım şeklinde değil de, bunu nasıl geliştirebiliriz şeklinde, bu da vizyonla tabii ki alakalı.
+
+599
+01:44:39,699 --> 01:44:42,572
+Bu bakış açısına sahip olmak.
+
+600
+01:44:42,579 --> 01:44:53,579
+Bir şeyi gördüğünüz zaman onun tam bitmiş, tamam bundan dairesi olmaz, adamlar yapmış falan gibisinden bir bakış açısı da değil, anlatabildim mi?
+
+601
+01:44:53,579 --> 01:45:03,579
+Onun illaki, yani şu anda atıyorum, arama sektöründe falan mesela bir bilgiye erişmek değil mi?
+
+602
+01:45:03,579 --> 01:45:08,524
+Bir bilgiye erişmenin işte arama motoru bir yolu, bayağı iyi bir yolu.
+
+603
+01:45:08,692 --> 01:45:17,692
+Ama mesela bu chat GPT olayı, bir bilgiye erişmenin çok daha farklı bir yoldan da çok başarılı yapılabileceğini gösterdi.
+
+604
+01:45:19,692 --> 01:45:30,692
+Dolayısıyla hani temel olarak daha önümüzde iyileştirilmesi, çözülmesi gereken bir sürü dünya kadar problem var karşımızda.
+
+605
+01:45:31,091 --> 01:45:58,631
+Farkında olalım, olmayalım. Farkında olup çözersiniz, şu olur, bu olur. Ama dediğim gibi hiçbir şey bitmiş değil. Her şey yapılmış değil. Yapılacak olan daha dünyaya kadar, geliştirecek olan daha dünyaya kadar şey var. Bunları da yapacak olanlar siz dersiniz. Gelecek. Sizin biliyorsunuz. Dolayısıyla bu derste birazcık bu bakışı sizin vermeye temelde gayret ediyoruz.
+
+606
+01:45:59,380 --> 01:46:07,380
+Böyle her şey yapılmış, edilmiş, biz de onun sadece kullanıcısı, öyle bir şey, öyle bir dünya...
+
+607
+01:46:07,380 --> 01:46:20,300
+Öyle bakarsanız, dediğim gibi şu... Neydi o? Bu algoritmada kalırsınız.
+
+608
+01:46:22,771 --> 01:46:41,771
+Herkes öyle yapıyor, zaten öyle yapıyor. Herkes onu koyuyor. Şu andaki en iyi bilinen yol bu. Tamam mı? Mesela, öyleyse eğer. Bununla kalayım. Ama işte bu tarafa ittirecek insanlara ihtiyaçlarımız var. İhtiyacımız var. Tamam mı?
+
+609
+01:46:41,771 --> 01:46:50,764
+Peki arkadaşlar, şimdi son bir şey söyleyeceğim. Onun ardından bugünkü dersi kapatacağım.
+
+610
+01:46:51,572 --> 01:47:11,572
+Geçen dönem algoritma geliştirmede sorun yaşayanlarınız varsa, bu dersin öncesinde mutlaka ve mutlaka eğer sorun yaşamadınız gerek yok. Ama yaşadıysanız şu, yazamadım ya, şuraya yazayım.
+
+611
+01:47:15,923 --> 01:47:28,984
+Çocuklara kod yazmayı gösteriyor, temel olarak gösteriyor. Eğer ki dediğim gibi algoritma geliştirmenin temelleriyle alakalı bir sıkıntınız olduğunu düşünüyorsanız, buradaki alıştırmaları yapın. Bakın ben yaptım.
+
+612
+01:47:29,300 --> 01:47:57,300
+Tamam mı? Yani beş yaşındaki çocuklar için bunlar. Tamam mı? Ben yaptım, bizim ufaklıklar için yaptım ben. Ama yaptım, tamam mı? Ve yani hiç gocunmayın, onu demek istiyorum. Çocuklar için bunlar şudur budur falan gibisinden hiçbir şekilde düşünmeyin. Algorithma geliştirme mantıklı iyi veriyor, öyle söyleyeyim. Daha doğrusu hani algoritmanın çalışmasının nasıl bir şey olduğunu öyle ifade edeyim. Güzel veriyor. O yüzden buradaki egzersizleri vesaireleri yapmanız çok fayda sağlar. Dediğim gibi...
+
+613
+01:47:57,300 --> 01:48:14,300
+Yani hani temellerle alakalı sıkıntınız olduğunu düşünüyorsanız, daha geliştirmem lazım biraz daha diyorsanız, bu sayfayı bir gezip oradaki alıştırmaları işte etap etap ilerliyor zaten. Yapın, oldukça faydalı olacağını düşünüyorum. Tamam mı?
+
+614
+01:48:14,300 --> 01:48:22,123
+Peki arkadaşlar, burada yazar mısınız hocam? Haa, burada yazayım. Evet, bak, mantıklı.
+
+615
+01:48:22,292 --> 01:48:29,228
+Yazdım ama görünmüyor belki. Code.org
+
+616
+01:48:35,507 --> 01:48:36,331
+Tamam.
+
+617
+01:48:43,444 --> 01:48:59,444
+Peki arkadaşlar, o zaman size bu hafta iki tane gayrı esmi ödemi oldu. Bir tanesi chat.gpt ile en aşağı iki saat sohbet ediyorsunuz. Bir diğeri ise isteyenler için kod.org'a giriyorsunuz, oradaki alıştırmaları yapıyorsunuz. Tamam.
+
+618
+01:48:59,444 --> 01:49:03,444
+Var mı sizin söylemek istediğiniz, eklemek istediğiniz bir şey?
+
+619
+01:49:03,444 --> 01:49:04,444
+Hocam.
+
+620
+01:49:04,444 --> 01:49:05,444
+Efendim?
+
+621
+01:49:05,444 --> 01:49:07,444
+Bir tanemiz olacak.
+
+622
+01:49:07,444 --> 01:49:10,444
+Belli mi yani?
+
+623
+01:49:11,731 --> 01:49:13,731
+Evet, bir tanemize var.
+
+624
+01:49:13,731 --> 01:49:14,315
+Tamam.
+
+625
+01:49:18,068 --> 01:49:20,068
+Peki, başka?
+
+626
+01:49:20,068 --> 01:49:24,068
+Hocam, ben chat.gp ile ilgili bir şey sormak istiyorum.
+
+627
+01:49:24,068 --> 01:49:25,068
+Sor.
+
+628
+01:49:25,068 --> 01:49:41,836
+Bu, şimdi, hani bir algoritma yazmasını, kod yazmasını istiyoruz ve yazıyoruz ama, bunun ne kadar verimli ya da ne kadar güzel olduğu hakkında bir şeyiniz var mı? Nasıl yazıyor? Chat.gp bu kodu. İyilik açısından.
+
+629
+01:49:42,195 --> 01:49:51,195
+Haftaya herkes konuşmuş olacak ya, chat-çip-it ile, herkes belli bir deneyim sahibi olacak ya, haftaya bunun üzerine konuşalım.
+
+630
+01:49:51,195 --> 01:49:52,195
+Tamam hocam.
+
+631
+01:49:52,195 --> 01:49:59,195
+Tamam mı? Yani neleri yapıp neleri yapamadığını zaten inceleyin, analiz edin istiyorum. Tamam mı?
+
+632
+01:49:59,195 --> 01:50:01,195
+Tamamdır hocam, teşekkür ederim.
+
+633
+01:50:01,195 --> 01:50:03,916
+Evet, başka sorusu var?
+
+634
+01:50:09,300 --> 01:50:35,300
+Peki, ben şunu durdurdum. Evet arkadaşlar, hepinize katılınız için teşekkür ediyorum. Önümüzdeki hafta aynı gün aynı saatte görüşeceğiz. Kısmetse uygulama dersleri, parası görünenler henüz başlamadılar. Onların ne zaman başlayacağını sizlere duyurulacak. Tamam mı? O yüzden...
+
+635
+01:50:37,043 --> 01:50:51,503
+Bu pazartesi, yani hani ben sizlerle haftaya görüşeceğim. Diğer uygulamalarda dediğim gibi başladığı zaman size haber vereceğim. Tamam mı? Herkese teşekkürler arkadaşlar. Görüşmek üzere.
+
+636
+01:50:51,503 --> 01:50:57,043
+Görüşmek üzere hocam. İyi günler hocam. İyi günler hocam. İyi günler hocam. İyi günler hocam.

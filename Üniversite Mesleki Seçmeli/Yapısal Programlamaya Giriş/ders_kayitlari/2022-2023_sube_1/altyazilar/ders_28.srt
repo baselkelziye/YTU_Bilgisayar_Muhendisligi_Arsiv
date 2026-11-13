@@ -1,0 +1,1819 @@
+1
+00:03:33,651 --> 00:03:34,891
+Günaydın arkadaşlar.
+
+2
+00:03:39,604 --> 00:03:40,544
+Günaydın að şöng.
+
+3
+00:03:46,132 --> 00:03:52,372
+Bugün 31 Mayıs döneminin sonuna gelmişiz.
+
+4
+00:03:55,699 --> 00:04:00,979
+Şimdi bugün şu terste...
+
+5
+00:04:09,364 --> 00:04:13,364
+Normalde geçen hafta kavacak konuları tamamlamıştık.
+
+6
+00:04:13,364 --> 00:04:17,364
+Bugünki dersi de başka bir şeyden, başka bir şeyden derken yine...
+
+7
+00:04:25,459 --> 00:04:38,779
+Hoşunuza gideceğini ümit ettiğim bir konu. Bunun direkt sınavla bir alakası yok.
+
+8
+00:04:38,779 --> 00:04:47,459
+Ama algoritmik manada katkısı olacağını size düşünüyorum.
+
+9
+00:04:47,459 --> 00:04:52,459
+Neyse, şimdi bugün...
+
+10
+00:04:54,675 --> 00:05:19,467
+Çünkü konumuz modelleme olacak. Modelleme derken veri modelleme. Veri modellemeyi nasıl yapabilir? En basit, en temel giriş seviyesinde bir yapı size sunmaya çalışacağım. Birkaç örnek üzerinden. Daha sonra bunun günümüzdeki...
+
+11
+00:05:20,851 --> 00:05:24,011
+Yansımalarını birazcık konuşacağım.
+
+12
+00:05:26,251 --> 00:05:31,371
+Şimdi saat 9.00'u 8.00 geçiyor, 9.00'u çeyrek geçe başlayalım.
+
+13
+00:05:45,812 --> 00:05:47,756
+Az sonra görüşmek üzere arkadaşlar.
+
+14
+00:13:51,155 --> 00:13:53,155
+Beyaz tahta geldi mi arkadaşlar?
+
+15
+00:13:55,155 --> 00:13:56,155
+Evet hocam.
+
+16
+00:13:59,412 --> 00:14:23,412
+Bugün, dediğim gibi modellemeden bahsedeceğiz. Modelleme dediğim şey aslında, bir şeyler arasındaki ilişkiyi bulmak diye çok kabaca tanımlayabiliriz. Yani, basit bir şeyden başlayalım. Mesela, bizim elimizde...
+
+17
+00:14:24,755 --> 00:14:41,255
+Şurası x, şurası y'yi göstersin. Mesela şöyle bir giriyoruz. Şöyle örneklerimiz olsun. Yani ne demek bu? Tablo bu aslında. Şöyle x'e karşı.
+
+18
+00:14:52,980 --> 00:15:10,980
+Dört, beşe, yedi gibi bir şeyler. Böyle yerimizde noktalar var. Tamam. Bizim amacımız bu iki değişken arasındaki ilişkiyi bulmak. Tamam.
+
+19
+00:15:17,971 --> 00:15:21,971
+Bu aradaki ilişkiyi modellemek aslında dediğim bir şey.
+
+20
+00:15:26,971 --> 00:15:40,971
+Elimizdeki veriler tek boyutlularsa, buradaki gibi, bakarak bir şeyler söyleyebiliriz. Ne bileyim ben işte, x arttıkça y artıyor. Mesela bizim buradaki örneğimizde kabaca bakarsak.
+
+21
+00:15:41,971 --> 00:15:44,843
+x arttıkça y artıyor gibi gözüküyor.
+
+22
+00:15:45,683 --> 00:16:07,683
+Ama aradaki ilişkiyi tam olarak söylemek, tam olarak bulmak istersek mesela gözümüzle bakıp şöyle bir şey çizebiliriz belki buraya atıyorum. Şöyle bir şey mesela. Tamam yani noktaların şunlar olduklarını düşünürsek mesela belki böyle bir ilişki vardır diyebiliriz.
+
+23
+00:16:09,844 --> 00:16:18,844
+Ve bunun da matematiksel bir ifadesi vardır. Matematiksel ifadesi, hani böyle bir yapının belki ne olacaktır?
+
+24
+00:16:21,844 --> 00:16:23,844
+Sallıyorum, yedişiktir.
+
+25
+00:16:27,844 --> 00:16:31,844
+X artı, mesela böyle bir şey olabilir.
+
+26
+00:16:32,692 --> 00:16:41,692
+Tabii bütün noktaların hepsi tek bir çizgi üzerinde olmadıklarından dolayı bu çizmiş olduğum kırmızının bir hatası var.
+
+27
+00:16:41,692 --> 00:16:50,692
+Yani nasıl bir hata o? Mesela onu şey yapmaya çalışırsak şöyle bir hataları var değil mi? Şu çizeyim yeşil kısımlar.
+
+28
+00:16:50,692 --> 00:16:56,692
+Bu modelimizin şöyle bir şeyin mesela hatası.
+
+29
+00:16:59,668 --> 00:17:08,668
+Şimdi tabi, bunu böyle ben şu anda salladım yani, y artı 3 diye salladım da, bunun ne olduğunu aslında bilmiyoruz, tam olarak bilmiyoruz.
+
+30
+00:17:09,668 --> 00:17:14,668
+Acaba biz bunu bulabilir miyiz?
+
+31
+00:17:14,668 --> 00:17:25,668
+Şimdi, birincisi, bunu yapabilmek için iki tane işlem yapmamız gerekiyor.
+
+32
+00:17:26,996 --> 00:17:52,236
+İlk işlem, bir tahminde bulunmak, bir model ailesi tanımlamak. Bu tanımlamak derken, bunu aslında bir varsayıyoruz. Bir seçim bu, öyle ifade edebiliriz. Mesela, diyelim ki y eşittir ax artı b diye bir şey seçebiliriz. Bu model.
+
+33
+00:17:53,652 --> 00:18:13,052
+Ya da y eşittir ax diye bir şey seçeriz. Ya da y eşittir ax'in karesi artı bx artı c diye bir şey seçeriz.
+
+34
+00:18:20,435 --> 00:18:23,935
+e üzeri eksi b diye bir şey seçebiliriz.
+
+35
+00:18:25,435 --> 00:18:27,935
+e ve b, eksi b, mesela.
+
+36
+00:18:31,571 --> 00:18:39,571
+Burada kırmızı ve kırmızı işaretlediğimiz zaman, x, y'ler bizim elimizde olan şeyler. Tamam mı?
+
+37
+00:18:39,571 --> 00:18:51,571
+Elimizde olmayan şeyler ise bunların her biri birer model ailesi dikkat ettiyseniz. Yani şu anda buraya dört tane model ailesi yazdım. Daha ne kadar çok yazabileceğimi bir hayal edin. Tamam mı? Bir sürü şey yazabilirim.
+
+38
+00:18:51,571 --> 00:18:58,539
+Böyle bir model ailesi ilk önce seçmem gerekiyor. Modelleme yapabilmek için.
+
+39
+00:19:00,980 --> 00:19:21,980
+Bu modelleri ailesini seçtikten sonra, şu kırmızı olan kısımların haricinde de bazı şeyler var. Bulmamız gereken şeyler var. Ne onlar? Onları da mesela yeşilliği işaretleyin. Şuradaki mesela A ve B'nin ne olduğunu bulmamız lazım. Ya da buradaki A'nın ne olduğunu bulmamız lazım.
+
+40
+00:19:21,980 --> 00:19:27,819
+A'nın, B'nin, C'nin ne olduğunu bulmamız lazım. Ya da buradaki A'nın ve B'nin ne olduğunu bulmamız lazım.
+
+41
+00:19:29,940 --> 00:19:52,940
+Peki neye göre bulacağız bunu? Yani bir model ailesini seçtik. Model ailesini seçtikten sonra da yapmamız gereken birinci iş, model ailesini seç. İkinci yapacağımız şey, parametre optimizasyonu.
+
+42
+00:19:56,084 --> 00:19:58,964
+Yani modelin parametrelerinin bulunması.
+
+43
+00:20:00,004 --> 00:20:01,004
+Tamam.
+
+44
+00:20:02,004 --> 00:20:04,164
+Modelin parametrenin bulunması.
+
+45
+00:20:07,044 --> 00:20:08,644
+Şu ana kadar birlikte miyiz?
+
+46
+00:20:08,644 --> 00:20:10,324
+Var mı kafanıza takılan bir şey?
+
+47
+00:20:20,500 --> 00:20:35,799
+Peki, şimdi dediğim gibi ilk önce bir model ailesi seçeceğiz ve ondan sonra da o seçtiğimiz model ailesi için bir parametre belirleme, bulma işi yapacağız.
+
+48
+00:20:35,799 --> 00:20:45,500
+Şimdi bir model seçelim biz. Diyelim ki,
+
+49
+00:20:47,059 --> 00:21:08,059
+Modelimiz bu olsun. Şimdi bu model seçim işinin çok kabaca bir algoritması yok. Yani bir modeli birazcık nasıl diyeyim? Bir model seçmek, bir varsayımda bulunmak demek öyle söyleyeyim. Bir varsayımda bulunuyorsunuz.
+
+50
+00:21:11,731 --> 00:21:17,132
+Belli sezgisel bir şeylere bağlı ya da başkalarını görmüşsünüz vesaire vesaire gibi.
+
+51
+00:21:19,532 --> 00:21:24,731
+O veri kümesi üzerinde başkalarının yapmış olduğu çalışmalarda kullanılan modeller falan da olabilir.
+
+52
+00:21:26,731 --> 00:21:34,532
+Ama bir model seçme işi biraz böyle temelsiz, çok böyle ayakları yere basan bir şey değil belki.
+
+53
+00:21:35,028 --> 00:21:56,148
+Eğer ki tabii size en baştan şey söylenmiş, yani X ile Y'nin arasındaki ilişki şu modele uyuyordur diye böyle bir bilgi verilse, tamam o söyleneni doğru kabul edip hareket ederseniz, bu varsayımsal bir şey ama o zaman onu söyleyen kişi açısından düşündüğümüzde, yani o bir varsayında bulunuyor o zaman.
+
+54
+00:21:57,172 --> 00:22:03,572
+Neyse, dediğimiz gibi, ilk önce model adresini seçmekten bahsediyoruz. Ondan sonra parametre optimizasyonu.
+
+55
+00:22:03,572 --> 00:22:09,172
+Yani içindeki bilmediğimiz modelin parametrelerini bulma işi.
+
+56
+00:22:09,172 --> 00:22:13,572
+Peki, şimdi biz burada y eşitir a eksiye bir model seçelim.
+
+57
+00:22:13,572 --> 00:22:19,172
+Şimdi y eşitir a eksiye bir model seçtiğimizde aslında biz bir varsayım yaptık. Nasıl bir varsayım yaptık?
+
+58
+00:22:22,996 --> 00:22:46,756
+Şurasının x, burasının y olduğunu düşünelim. y eşittir ax. Bakın. Tamam. y eşittir ax modelini kullanarak benim oluşturabileceğim modeller nasıl modeller olabilir? Mesela şu model nedir? a'nın siz söyleyin bunu.
+
+59
+00:22:51,188 --> 00:22:53,188
+45 derece olduğunu düşünün.
+
+60
+00:22:55,888 --> 00:22:57,740
+A'nın ne olduğu modeldir bu.
+
+61
+00:23:04,084 --> 00:23:14,084
+Bir yer değil mi? Mesela, şu nasıl bir şeydir?
+
+62
+00:23:14,084 --> 00:23:15,468
+Bula A'nın.
+
+63
+00:23:21,107 --> 00:23:23,107
+eksi 1 olduğudur değil mi?
+
+64
+00:23:25,107 --> 00:23:33,107
+Peki, şu nasıl bir şeydir? Şu çizeyim, o da A'nın belki 0.5 olduğu.
+
+65
+00:23:36,107 --> 00:23:39,107
+Şu çizdiğim A'nın belki 2 olduğu.
+
+66
+00:23:41,107 --> 00:23:47,107
+Dolayısıyla, benim böyle bir model seçilerek yapabileceğim
+
+67
+00:23:49,332 --> 00:24:14,972
+Oluşturabileceğim modellerin hepsi kabaca şu orjinden geçecekler değil mi? Şu noktadan geçecekler. A'yı değiştirerek ben farklı farklı modeller elde edebileceğim. Farklı farklı modellere karşılık gelebiliyor. Ama hepsi bu orjinden geçmek zorundalar. Değil mi? Bunlar lisede vesaire hep görülmüş şeyler.
+
+68
+00:24:16,243 --> 00:24:33,923
+İyi peki, böyle bir model seçtik biz. Peki biz elimizdeki data'yı kullanarak, yani hangi ağ'yı seçeceğiz peki? Hani farklı ağlar farklı modellere karşı geliyorlar.
+
+69
+00:24:33,923 --> 00:24:40,331
+Derdimiz ne? Elimizdeki data'ya en uyumlu ağ'yı bulmak.
+
+70
+00:24:43,380 --> 00:24:54,580
+Elimizdeki data en uyumlu aile mi? Mesela sallıyorum, elimdeki data var diyelim ki.
+
+71
+00:24:58,163 --> 00:25:16,163
+Şöyle, şöyle, şöyle bir şeyse, mesela böyle dört tane nokta varsa, belki buna uyduracağım model benim. Şöyle bir şey olacak. Bunlardan geçen bir şey olsun. Böyle bir şey yerine...
+
+72
+00:25:26,067 --> 00:25:49,067
+Şöyle bir şey istemem. Niye? Çünkü bu modelin, yani şu sarı çizdiğim modelin hatası, şuradaki şu parçalar kıvam. Ama yine diğer sarı ile çizdiğim modelin hatası çok daha fazla değil mi? Onun hatasını hayal edersek, şöyle böyle gidiyor.
+
+73
+00:25:49,364 --> 00:25:56,963
+Bunun hatası ne olacak bu nokta için? Gerçekten ülken tahminim böyle acayip acayip, kocaman kocaman hatalar yapmış olacak değil mi?
+
+74
+00:25:58,403 --> 00:26:13,764
+Dolayısıyla bu A değerine bağlı olarak değişecek bu modeller. Yani bizim şuradaki iki tane sarı çizgiyi birbirinden ayıran, birbirinden farklı kılan tek şey A değerleri.
+
+75
+00:26:19,476 --> 00:26:37,476
+Peki, o zaman ben şöyle bir şey ile açayım, mesela şuraya da bir ağ açayım. Buradaki ağ, ben burada farklı bir ağ için modeli çizmiş olayım. Burada da hataları düşünürsek, mesela şöyle şöyle hatalarımız olacak.
+
+76
+00:26:37,476 --> 00:26:45,476
+Şu ağ'nın gerçek en azından, bizim için en uygun olan ağ'nın yakınlarında hatalar daha az, değil mi?
+
+77
+00:26:47,028 --> 00:26:51,028
+Uzaklaştıkça ondan daha büyük hatalarımız var.
+
+78
+00:26:52,028 --> 00:26:56,028
+Peki, hata dediğimiz şeyi nasıl tanımlayabiliriz?
+
+79
+00:26:56,028 --> 00:27:01,028
+Hata dediğimiz şey şöyle bir şey olsun, mesela hata diyelim.
+
+80
+00:27:01,028 --> 00:27:07,028
+Hata fonksiyonu, a ile alakalı bir fonksiyon bakalım.
+
+81
+00:27:07,028 --> 00:27:12,028
+Şöyle bir şey yazalım, i eşitleri birden n'e kadar.
+
+82
+00:27:14,324 --> 00:27:21,644
+Y eksi A x
+
+83
+00:27:31,955 --> 00:27:48,955
+Şimdi burada ne yaptım ben? Bakın şu kısım benim şuralar. Yani her bir nokta için. Burada elimdeki bütün noktalar için, elimde bütün noktam, nokta sayısı da n, tamam, büyük n.
+
+84
+00:27:48,955 --> 00:27:59,563
+Nokta sayısı büyük n. n tane noktam var benim elimde. Bu elimdeki her bir nokta için onu a ile çarpıp
+
+85
+00:28:00,435 --> 00:28:10,835
+İkisini hale çarpıp, aslında tahmini bir y buluyorum. Yani aslında şu yazdığım şeyi şu şekilde yazsak belki daha şey olabilir.
+
+86
+00:28:10,835 --> 00:28:27,635
+Anlaşılır olabilir. yi- yi hat yazıyorum. Bu hat dediğim şey tahmin. Bu da gerçek.
+
+87
+00:28:30,675 --> 00:28:55,155
+Bakın, gerçek Y, İ ile tahmini Y, İ yani bir X, İ noktası var elinde, bir nokta var işte burası. Tamam. Yani şöyle bir şey düşünelim, bakın. X, Y, bir de Y hat diyeyim. Bu Y hat için A'ya bir değer vermem lazım. Mesela A'nın iki olduğu durum diye yazayım.
+
+88
+00:28:55,380 --> 00:29:00,180
+Mesela gerçekte, şu demin yazdığım şeyleri yazayım buraya.
+
+89
+00:29:00,180 --> 00:29:12,580
+2, 4, 5, 7, şimdi bana y-hat'leri söyleyebilir misiniz? A2 için. Tahminler yani. Ne olacaktır?
+
+90
+00:29:18,579 --> 00:29:25,299
+Yani birinci örnek için modelimizin tahmini olacaktır. Modelimiz şu anda şu bakın.
+
+91
+00:29:26,259 --> 00:29:33,139
+2x. A eşittir 2 ya. Modelin tahmini olacaktır x'lerin.
+
+92
+00:29:39,827 --> 00:29:56,827
+İki katı olacak değil mi arkadaşlar? Evet. Ve şuradaki, o zaman ben hatayı da, hata yani A işte iki durumundaki hatayı da çok rahat bir şekilde hesaplayabilirim diyor. Bunların ikisinin arasındaki fark ne? Bir. Birin karesi bir.
+
+93
+00:30:00,000 --> 00:30:08,880
+İkisinin arasındaki hata 0, 0. 7 ile 10 arasındaki fark ne? 3. Onun karesi ne? 9. Bunların toplamı kaç? 10. Tamam mı?
+
+94
+00:30:08,880 --> 00:30:17,840
+O zaman, yani şöyle bir şey oluyor aslında. Hata 2 için benim değerim 10 oluyor.
+
+95
+00:30:19,519 --> 00:30:27,759
+Peki, bana hatanın 1 için değerini bulabilir misiniz? A eşittir 1 için.
+
+96
+00:30:28,115 --> 00:30:35,115
+Büyüklüğünü bulabilir misiniz? Nasıl bir şey olacak? Bu durumda modelimiz şu olacak, GeceTrix.
+
+97
+00:30:43,220 --> 00:30:53,220
+Evet, A eşittir 1 ise çıktılarımız ne olacak? Y eşittir x olacak. Yani tahmini y-hatlerimiz ne olacak?
+
+98
+00:30:53,220 --> 00:31:05,220
+1-2-5 olacak değil mi? Bakın, 1-2-5 olacak. Y-hat, o zaman şunu şöyle yazalım. A eşittir 1 için y-hatler 1-2-5 olacaklar.
+
+99
+00:31:10,675 --> 00:31:13,495
+Dört gibi bir fayda var.
+
+100
+00:31:14,375 --> 00:31:15,056
+Burda,
+
+101
+00:31:16,215 --> 00:31:17,015
+[öğrenci] de beş,
+
+102
+00:31:17,215 --> 00:31:18,255
+Yermes'i bir fayda var.
+
+103
+00:31:23,923 --> 00:31:32,103
+Hayır ya, bir dakika, bir şeyi atladım, bir saniye, yanlış şeyi ifade etmiş olabilirim. Bir dakika, kontrol edelim.
+
+104
+00:31:32,103 --> 00:31:37,943
+Açs bir de bunların gerçekte hatler ne olacaklar? Gerçek hatler bir, pardon.
+
+105
+00:31:39,943 --> 00:31:46,443
+Bir, iki, beş olacaklar. Gerçekte arasındaki fark, üçte birinin arasındaki fark, iki, değil mi?
+
+106
+00:31:47,443 --> 00:31:49,723
+İki olacak burası.
+
+107
+00:31:51,412 --> 00:32:11,412
+2 olacak. Buradaki hata ne? 2, burası 4, burası 4, burası da 3, pardon, 2, 12. Evet, hata, 1, 12 çıktı.
+
+108
+00:32:17,460 --> 00:32:41,760
+Peki, hatanın değeri o zaman neye bağlı? A'ya bağlı. Ve zaten benim bulmak istediğim şey de A demem. O zaman ben şöyle bir şey sizebilir miyim? Bakalım. Burası A'yı göstersin, burası da hatayı göstersin.
+
+109
+00:32:43,731 --> 00:32:53,891
+A'nın farklı değerleri için şey yapacak. Mesela A'nın 0'daki durumunda A 0 ise her şeye 0 diyecek.
+
+110
+00:32:53,891 --> 00:33:03,291
+Her şeye 0 dediğinde tahmini olanlara baktığımızda işte 3'te 0'ın arasında 0, 3 var.
+
+111
+00:33:03,291 --> 00:33:09,011
+Bu arası 9. Büyük bir şey yani öyle söyleyelim. Kocaman bir şey 0'dayken.
+
+112
+00:33:10,096 --> 00:33:24,096
+A1 12 mesela, A1'i bulduk. A1 mesela bu 12 civarında bir şey. A2 dedik mesela, A2 bu 10 civarında bir şey. 10 civarında bir şey.
+
+113
+00:33:26,096 --> 00:33:32,096
+Şimdi burada nasıl bir şey elde edeceğiz, bir fonksiyon elde edeceğiz acaba? Yani...
+
+114
+00:33:33,044 --> 00:33:40,243
+Buradaki hata fonksiyonu değişkeni bakın, farklı A'lar için farklı hatalarınız oluyor.
+
+115
+00:33:42,243 --> 00:33:49,443
+Bu hataların neyin üzerinden hesaplıyor? Size verilmiş olan şu tablonun üzerinden, yani dataların üzerinden hesaplanıyor.
+
+116
+00:33:50,243 --> 00:33:59,644
+Yani ben aslında şöyle bir şey yapmaya çalışıyorum. Ben öyle bir A bulmak istiyorum ki elimdeki datalara göre hatası minimum olsun.
+
+117
+00:34:00,660 --> 00:34:04,660
+Hata fonksiyonunu minimize etmeye çalışıyorum. Derdimiz bu.
+
+118
+00:34:06,160 --> 00:34:10,659
+Şimdi bunu bu datalar için yaptığımızda,
+
+119
+00:34:11,659 --> 00:34:17,659
+bunu yapın, benim söylediğimle şöyle bir şey göreceksiniz bakın.
+
+120
+00:34:17,659 --> 00:34:21,659
+Şöyle azalan, sonra şöyle artan bir şey göreceksiniz.
+
+121
+00:34:23,659 --> 00:34:25,452
+Böyle bir yapı göreceksiniz.
+
+122
+00:34:25,523 --> 00:34:32,523
+Bizim bulmak istediğimiz yeri burası. Yani minimum yer burası. Tamam.
+
+123
+00:34:34,523 --> 00:34:41,523
+Bunun şekli illa böyle mi olacak? Evet, böyle olacak. Yani nasıl ifade edeyim?
+
+124
+00:34:41,523 --> 00:34:45,523
+Bu model için, yani y-eştiri ax için, öyle söyleyelim.
+
+125
+00:34:45,523 --> 00:34:51,339
+Y-eştiri ax için, siz eğer hatayı şurada yazdığımız şekilde tanımlarsanız.
+
+126
+00:34:52,307 --> 00:35:02,807
+Yani gerçeklerle tahmin arasındaki farkın karelerinin toplamı şeklinde tanımlarsanız, ya da bunun başına bir tane bir böyle n de getirebilirsiniz ama bu şekli değiştirmez.
+
+127
+00:35:02,807 --> 00:35:10,307
+Çünkü her şeyi n'e böldüğünüzde hiçbir şey değişmeyecektir. Şekil bağdan aslında. Bu şekilde tanımlarsanız böyle bir şekil bulursunuz.
+
+128
+00:35:12,275 --> 00:35:33,275
+Burada niye farkların karelerini aldık da farkları toplamadık direkt? Yani farkların karelerini topladık burada. Niye farkları direkt toplamadık? Çünkü farklar ne yapabilir? Birbirlerini artı eksi götürebilirler. Birbirlerini götürmesinler diye mesela şey yapabiliriz. Bu tarz bir yola gidebiliriz. Ha şöyle de tamlayabiliriz. Bu da mümkün.
+
+129
+00:35:33,275 --> 00:35:37,275
+Hatayi. Mesela...
+
+130
+00:35:38,068 --> 00:35:50,368
+yi-axi'nin mutlak değerlerini toplamış şeklinde de tamamlayabilirsiniz. Bu da yapabileceğiniz bir şey.
+
+131
+00:35:50,368 --> 00:36:00,468
+Tamam mı? Şimdi, yani mantıklı bir şey yapmanız lazım. Öyle söyleyeyim yani, illa size söylendi böyle yapacaksınız diye bir şart yok.
+
+132
+00:36:00,468 --> 00:36:02,468
+Ama mantıklı bir şey yapmanız lazım.
+
+133
+00:36:02,900 --> 00:36:28,900
+buraya yi-axi değil de yi artı axi diye bir şey yazarsanız, tamam mı? Bu iyi bir hata ölçme olmaz. Tamam mı? Şimdi, pek devam edelim. Derdimiz, şurada çizdiğimiz yeşil fonksiyonu. Ki yeşil fonksiyonu aslında şu bakın.
+
+134
+00:36:31,092 --> 00:36:41,332
+Şu şu. Tamam. Yeşil fonksiyon minimum noktasını bulmak. Anlaştık mı buraya kadar? Var mı soru işareti?
+
+135
+00:36:59,699 --> 00:37:01,460
+Sesim geliyor mu arkadaşlar?
+
+136
+00:37:15,923 --> 00:37:17,923
+Evet, geliyorum.
+
+137
+00:37:19,423 --> 00:37:25,923
+Ya sınıfta 31 kişi var diyor, çok enteresan. Peki, neyse. Şimdi devam edelim.
+
+138
+00:37:26,923 --> 00:37:31,923
+Şimdi derdimiz bu yeşil fonksiyonun minimum noktasını bulmak. Şimdi yeni bir sayfa açalım.
+
+139
+00:37:34,423 --> 00:37:40,923
+Şimdi o zaman bizim derdimiz şöyle bir fonksiyon var elimizde ve biz bunun minimum yerini bulmak istiyoruz.
+
+140
+00:37:40,923 --> 00:37:43,563
+Tamam, derdimiz bu.
+
+141
+00:37:46,612 --> 00:37:53,612
+Şimdi bunun için matematikte bir sürü yöntem var. Hepiniz birçok şey öğrendiniz.
+
+142
+00:37:58,003 --> 00:38:07,003
+Bugüne kadar. Belki bir ihtimam bilmiyorum. Şu ana kadar anlatıklarınızdan farklı bir yöntem anlatacağım.
+
+143
+00:38:07,003 --> 00:38:23,003
+Aslında, nümerik analizden bir alıntı belki ifade edebiliriz.
+
+144
+00:38:23,635 --> 00:38:40,635
+Ama temelde konumuz optimizasyon. Optimizasyondan kastım ne? Optimum bir şeyi bulmaya çalışmak. Neyin optimi? Burada hatanın optimum değeri. Buradaki hatanın optimum değeri, hata minimum değeri.
+
+145
+00:38:40,635 --> 00:38:49,483
+Yani minimum değeri bulmaya çalışıyoruz aslında. Elimizdeki datalar, yani şunu yapmaya çalışıyoruz şu anda peki, bu yaptığımız işi...
+
+146
+00:38:49,619 --> 00:38:58,619
+Ne yapmaya çalıştığını düşünürsek, burası A, burası hata değil mi? Bizim elimizde bir yerde böyle bir noktalar var.
+
+147
+00:39:05,235 --> 00:39:30,235
+Ben şimdi, öyle bir a arıyorum ki, modelimiz neydi? Modelimiz şöyle, y eşittir ax. Ben öyle bir a arıyorum ki ve benim bütün modellerim hepsi şu orjinden geçiyorlar. Böyle böyle böyle bir sürü bir şeyler olabilirler. Çizdiğim her bir şey aslında.
+
+148
+00:39:32,148 --> 00:39:41,148
+Devam ediyorlar bunlar ayrı ayrı şeyler değiller tabi. Bunların her biri, buradaki bir ağ farklı ağ. Bunların her biri farklı bir ağ söylüyor.
+
+149
+00:39:41,148 --> 00:39:47,148
+Ve bu farklı ağlar için, şurada gördüğünüz noktaların her biri üzerinden farklı hatalar oluşuyor.
+
+150
+00:39:47,148 --> 00:39:51,148
+Ve bu hataları da çizdirmeye kalkarsanız şöyle bir fonksiyon görüyorsunuz.
+
+151
+00:39:51,148 --> 00:39:56,148
+Burada gördüğümüz mavi fonksiyon, şuradaki mavi fonksiyon, şu çizdiğimiz şey.
+
+152
+00:40:04,851 --> 00:40:30,452
+Şimdi, peki, ben bunun böyle bir fonksiyon olduğunu biliyorum. Niye peki bu fonksiyon şöyle bir fonksiyon değil diye sorabilirsiniz. Sorar mısınız acaba? Tam şöyle sıfıra değen bir şey değil bu. Niye değil? Tam şöyle sıfıra değmiyor. Negatif olamıyor zaten. Karelerin toplamı ya. Yani zaten böyle bir fonksiyon olamaz bu. Değil mi?
+
+153
+00:40:30,963 --> 00:40:38,963
+O mümkün değil. Ama niye sıfıra değmiyor? Değmiyor. Ya da değbileceği bir durum olur mu?
+
+154
+00:40:40,963 --> 00:40:42,827
+Ne dersiniz?
+
+155
+00:41:04,083 --> 00:41:06,083
+Nasıl olur? Olabilir.
+
+156
+00:41:08,583 --> 00:41:16,083
+Hata yoksa eğer, hata nasıl olmayabilir? Bir A için hata nasıl olmayabilir? Öyle bir özel bir A var ki hata yok orada nasıl olacak?
+
+157
+00:41:19,083 --> 00:41:20,940
+Nasıl bir durumda olabilir o?
+
+158
+00:41:27,476 --> 00:41:33,235
+Evet, her Y değeri tahmine eşit olacak. Onun olabilmesi için bu modelde nasıl bir şey olması gerekiyor?
+
+159
+00:41:37,844 --> 00:41:40,844
+Gerçek fonksiyon durdu. Evet, tamam.
+
+160
+00:41:44,820 --> 00:41:48,320
+Burada nasıl noktalar olursa hata sıfır olabilir.
+
+161
+00:41:57,844 --> 00:41:59,444
+Mesela ben şöyle bir...
+
+162
+00:42:03,251 --> 00:42:12,011
+Böyle bir noktaya çizeyim ki ben buraya, bu çizdiğim noktaya için ben hatası sıfır olan bir ağ bulabileyim. Nasıl bir şey olması lazım bana?
+
+163
+00:42:16,916 --> 00:42:18,916
+Mesela,
+
+164
+00:42:22,132 --> 00:42:34,132
+Doğru sağ ol. Peki. Mesela şu üç nokta için şey bulabilir miyim? Hatası sıfır olan bir ağ bulabilir miyim? Doğru sağlar belki.
+
+165
+00:42:52,083 --> 00:43:06,083
+Olmaz değil mi [öğrenci]? Olur yazma, ben olmaz değil mi? Olmaz. Orijinden geçmesi lazım. Şimdi bizim modelimiz ne? y eşitir ax. Modelimiz y eşitir ax.
+
+166
+00:43:08,083 --> 00:43:17,003
+Dolayısıyla bizim bulacağımız hiçbir a burada sıfır hata yapamaz. Ama mesela noktalarımız...
+
+167
+00:43:18,579 --> 00:43:35,579
+Şu yeşil noktalar olursa bu mümkün olabilir. Değil mi? Mesela işte bunlardan böyle bir tane orijinden geçen bir doğru var. Mesela sarı iletişim onu. Böyle bir şey. Tam da üstlerinden olduğunu varsayalım, tamam. O zaman olabilir.
+
+168
+00:43:35,579 --> 00:43:42,579
+Anladık mı mevzuyu? Buradaki şu maviler için biz 0A'ya sahip bir şey bulamayız. Tamam.
+
+169
+00:43:45,523 --> 00:44:01,523
+Elimizdeki data ile alakalı, mesela benim buralarda çizdiğim şu kısımda çizdiğim data için illa ki ne olacaktır? Böyle bir hata olacaktır. Böyle sıfır bir hatamız olamayacak. Buradaki dataset ve bu model için. Tamam mı?
+
+170
+00:44:14,931 --> 00:44:41,131
+Ben şöyle bir model bulup hatayı sıfırlayabilirim değil mi? O olabilir. Ama o durumda A ve B'yi bulmam lazım. İki şeyi bulmam lazım. Tek şeyi değil. Tek bir parametreyi optimize etmem gerekmiyor. İki tane parametreyi birden optimize etmem gerekecek. Anlaşıldı mı [öğrenci]?
+
+171
+00:44:48,340 --> 00:44:56,840
+Süper. Şimdi devam edelim. Bu fonksiyonu biz nasıl optimize edeceğiz? Yani bu fonksiyonun minimum noktasını nasıl bulacağız?
+
+172
+00:44:56,840 --> 00:45:04,340
+Optimizasyon lafını illa sokmaya gerek yok. Minimum bulmaya çalışıyoruz. Hatay minimum yapacak bir A değeri bulmaya çalışıyoruz.
+
+173
+00:45:04,340 --> 00:45:12,340
+Şimdi bu A değerini bulabilmek için dediğim gibi hani bir sürü yöntem var ama
+
+174
+00:45:17,235 --> 00:45:24,435
+Ölçeklenebilir olanı diyeyim. Öyle ifade etmem herhalde doğru olabilir. En ölçeklenebilir olanı.
+
+175
+00:45:28,532 --> 00:45:38,932
+Rastgele bir yerden başlayayım, sallayayım yani. Salladım, bir yerden başladım. Ondan sonra adım adım adım onu ne yapayım, iyileştireyim.
+
+176
+00:45:39,932 --> 00:45:48,332
+Buna benzer teknikleri muhtemelen, işte numerik analiz ve sayısal analiz derslerinde göreceksinizdir ya da görüyorsunuzdur.
+
+177
+00:45:49,532 --> 00:45:56,332
+Şimdi, yani bir başlangıçla başlayacağım, bunu sallayacağım.
+
+178
+00:45:56,527 --> 00:46:17,527
+Rastgele bir yerden. Ondan sonra onu, o noktanın bir şeylerine bakıp değiştireceğim. Hatasına bakıp değiştireceğim. Hatası yüksekse onu düşürmeye çalışacağım vs. Peki, bunu nasıl yapabiliriz?
+
+179
+00:46:23,027 --> 00:46:25,027
+fonksiyon var.
+
+180
+00:46:27,027 --> 00:46:38,027
+Ve ben, işte şuralarda bir yerlerdeyim. Bu noktaya ben, A0 diyeyim. Tamam mı? Yani başlangıç nokta. Salladım bunu tamamen. Bir range'in içerisinden.
+
+181
+00:46:39,027 --> 00:46:44,523
+Dedim ki işte bu A derli, ben şu aralığın içerisinden rastgele seçeceğim. Seçtim.
+
+182
+00:46:47,155 --> 00:46:55,155
+Şimdi ben ne yapabiliyorum? Benim yapabildiğim şimdi bu A0'ın hatasını hesaplayabilir miyim? Bunu yapma imkanım var mı?
+
+183
+00:47:01,940 --> 00:47:05,260
+Ne dersiniz? Asıp'ın hatasını hesaplayabilir miyim ben?
+
+184
+00:47:24,596 --> 00:47:26,596
+Nasıl hesaplıcı?
+
+185
+00:47:26,596 --> 00:47:34,596
+Yapmayı belürüz, çünkü sefer sefer merkez noktası, yani geçmi yaşırı da.
+
+186
+00:47:38,099 --> 00:47:42,099
+Bir dakika, sıfır sıfır merkez noktasıyla bunun bir ayakası yok şu anda.
+
+187
+00:47:42,099 --> 00:47:46,099
+Şu anda biz bir hata fonksiyonundan bahsediyoruz.
+
+188
+00:47:46,099 --> 00:47:49,099
+Yani modelimizin kendisi bu değil.
+
+189
+00:47:49,099 --> 00:47:56,099
+Modelimizin kendisi şuradaki şu, bu kısımda çizilmiş olduğumuz ağlardan biri.
+
+190
+00:47:56,099 --> 00:48:01,099
+Mesela elimizde şu şeyler var, x ve y tablosu var. Yani x'e karşılık y'ler bize verilmiş.
+
+191
+00:48:02,643 --> 00:48:09,323
+X şu iken, Y şu olmadı. X şu iken, Y şu olmalı. Bunlar bize verilmişler. Tamam mı? Bu var elimizde.
+
+192
+00:48:09,323 --> 00:48:18,603
+Buna göre ben, bu X ve Y'ler için benim elimde bir A0 var. A0'ı seçtim başlangıçta. Bu A0'ın hata değerini hesaplayabilir miyim?
+
+193
+00:48:21,643 --> 00:48:24,203
+Bunu soruyorum. Yani şurayı bulabilir miyim?
+
+194
+00:48:25,403 --> 00:48:29,603
+Şu noktayı. Burası verildiğinde. A0 için.
+
+195
+00:48:31,987 --> 00:48:38,923
+Hata fonksiyonu nasıl tanımadık arkadaşlar? Hata dedik, hata, a dedik değil mi? Bunu bir daha bir daha yazayım.
+
+196
+00:48:44,275 --> 00:48:44,775
+Bu değil mi?
+
+197
+00:49:09,204 --> 00:49:19,204
+Dolayısıyla bunu yapabiliyoruz. İyi, güzel. Şimdi bu fonksiyonun minimum olduğu yeri bulmaya çalışıyoruz. Yani A0'ı verdiğimde ben herhangi bir A'yı verdiğimde hatanın büyüklüğünü elde edebiliyorum. İyi, güzel.
+
+198
+00:49:19,204 --> 00:49:27,204
+Hatanın büyüklüğünü elde edebilmenin haricinde bana hatanın büyüklüğü bir sonra gideceğim yön hakkında bir şey söyler mi?
+
+199
+00:49:27,204 --> 00:49:33,204
+Şimdi hatanın büyüklüğü bize çok da fazla bir şey aslında söylemez. Niye söylemez?
+
+200
+00:49:34,516 --> 00:49:42,516
+Bir fonksiyon bu, başka bir fonksiyonu şu olsun, aynı yerden geçen başka bir fonksiyonu bu olsun mesela. Böyle bir şey olabilir gerçekte.
+
+201
+00:49:42,516 --> 00:49:50,516
+Şimdi bu mavi fonksiyondaysak eğer, bizim a'yı ne yapmamız lazım? Şu yöne doğru hareket etmemiz lazım.
+
+202
+00:49:50,516 --> 00:49:54,516
+Ama yeşildeysek eğer, bizim bu tarafa doğru hareket etmemiz lazım.
+
+203
+00:50:00,000 --> 00:50:23,260
+A'sı bunu nasıl hareket ettireceğimizi, bir sonraki noktaya nasıl varacağımıza dair bir şey bize vermiyor. Anlatabildim mi? Çünkü aynı büyüklüğe sahip hatalar için bir tane fonksiyonla bir tarafa başka bir tarafa gitmek gerekiyor olabilir. Tamam mı? O zaman büyüklük bize bir şey söylemiyor. Peki ne bize bir şey söylüyor olabilir?
+
+204
+00:50:27,380 --> 00:50:31,380
+Hatanın büyüklüğü yön konusunda bize bir şey söylemiyor.
+
+205
+00:50:32,380 --> 00:50:42,380
+Hatanın büyüklüğü yön konusunda bir şey söylemiyor ama ne büyüklükte hareket etmemiz gerektiği konusunda bir şeyler belki söyleyebilir.
+
+206
+00:50:42,380 --> 00:50:49,380
+Neyse, orası da çok çok kritik değil şimdi. Ama bize hatanın büyüklüğü bir şey söylemiyor yön konusunda.
+
+207
+00:50:49,380 --> 00:50:51,276
+Ne bize bir şey söyleyebilir?
+
+208
+00:51:09,588 --> 00:51:12,708
+Şöyle bir şey çizsem, şey olur mu? Yardımcı olur mu?
+
+209
+00:51:17,139 --> 00:51:18,639
+Bir uçuk yanar mı?
+
+210
+00:51:27,891 --> 00:51:35,891
+Bu noktada mavi fonksiyonun türevi nasıl bir şeydir? Pozitif mi de negatif midir?
+
+211
+00:51:37,891 --> 00:51:39,723
+Mavi fonksiyonun türevi.
+
+212
+00:51:44,563 --> 00:51:45,563
+Positiv.
+
+213
+00:51:48,947 --> 00:51:59,867
+Negatif değil mi? Evet. Yeşil fonksiyonun türevi nasıl peki bu noktada? A sıfır noktasında yeşil olanın?
+
+214
+00:52:09,204 --> 00:52:34,204
+Geçiyorlar Pozitif değil mi? Evet. O zaman aslında bize aynı noktada bulursak ki de farklı fonksiyonlar için Türev bize ne yöne doğru gitmemiz gerektiğini tersten söylüyor. Yani Türev'in tersi yönüne doğru gitmek makul bir şey. Yani Türev bize aslında neyi söylüyor? O fonksiyonun o noktada azalanma, artanma olduğunu söylüyor değil mi?
+
+215
+00:52:34,900 --> 00:52:39,900
+Azalanma, artanma olduğunu söylediği için biz burada azalmaya doğru gitmeye çalışıyoruz hep.
+
+216
+00:52:39,900 --> 00:52:45,900
+Dolayısıyla, türe pozitifse biz negatif yöne, negatifse pozitif yöne doğru gitmeye çalışıyoruz.
+
+217
+00:52:45,900 --> 00:52:52,900
+Yani negatifse, A0'ı arttırmayı isteriz değil mi? Arttırmayı isteriz.
+
+218
+00:52:52,900 --> 00:52:53,900
+Negatifse...
+
+219
+00:52:54,324 --> 00:53:04,723
+Negatifse, arttırmayalım. Eğer ki şöyle bir noktada olsaydı mesela, burada pozitif, mesela şöyle bir A0 burası olsaydı, burada pozitif türev.
+
+220
+00:53:04,723 --> 00:53:10,723
+O zaman türevin ne tarafı, yani türevin işaretinin tersi yöne doğru gitme. O zaman da bu tarafa doğru gitme.
+
+221
+00:53:10,723 --> 00:53:21,291
+Tamam. Türev bize bir şey söylüyor. Peki, türev bize ne yöne doğru gitmemiz gerektiğini söylüyor. Bu çok önemli. Ne yöne doğru gitmemiz gerektiğini söylüyor.
+
+222
+00:53:22,739 --> 00:53:33,859
+Peki, türe bize ne büyüklükte, yani şöyle bir şey, ilk önce ne yapmaya çalışacağımızı düşünelim, şunu yapmaya çalışıyoruz.
+
+223
+00:53:33,919 --> 00:53:45,519
+Bir a t artı bir eşittir, a t gibi bir yapı kurmaya çalışıyoruz. Burada bir şey yazıyoruz, artı bir şeyler diyeceğiz.
+
+224
+00:53:45,519 --> 00:53:47,859
+Tamam, ne demek istiyorum?
+
+225
+00:53:48,320 --> 00:53:55,320
+Mevcut halimden, bakın AT'den, AT artı 1'e yani mesela A0'dan A1'e gitmek istiyorum, tamam mı?
+
+226
+00:53:55,320 --> 00:54:01,320
+Ben A0'a A1'e nasıl dönüştüreceğim? Bir sonraki adımı, bir sonraki noktayı nasıl belirteceğim?
+
+227
+00:54:01,320 --> 00:54:13,320
+Yani mesela ben buradaysam A1 belki şu nokta olacak, sonra A2 belki burası olacak, sonra A3 belki burası olacak, A4 belki işte şurası olacak, A5 belki burası olacak, orada da belki duracağım.
+
+228
+00:54:13,320 --> 00:54:14,028
+Tamam mı?
+
+229
+00:54:14,483 --> 00:54:23,483
+Yani bu gidişi benim bir yapıya büründürmem lazım. Bu gidişi ben nasıl otomatik olarak sağlayabilirim? Bunu oluşturmaya çalışıyorum.
+
+230
+00:54:23,483 --> 00:54:33,483
+Dolayısıyla AT artı birleştir, AT artı bir şeyler. Yani AT'nin üstüne bir şeyler ekleyeceğim ben. Burada eksi bir şeyler de olabilir, artı bir şeyler de olabilir. Duruma göre değişecek.
+
+231
+00:54:33,483 --> 00:54:42,411
+Şimdi birincisi şu aslında, ne yöne, yani bunun iki tane birleşeni var. Ne onlar? Bir tanesi hangi yöne doğru gidiyor?
+
+232
+00:54:42,547 --> 00:54:53,547
+İkincisi, ne büyüklükte gideyim? Bakın, iki tane bileşeni var aslında bu hareketin. Yani biz bu noktada duruyoruz. Bu eksen üzerinde hareket edeceğiz.
+
+233
+00:54:53,547 --> 00:54:57,547
+Tamam mı? Bu eksen üzerinde hareket edeceğiz. Yani A0 burası ya da AT burası.
+
+234
+00:55:04,884 --> 00:55:10,123
+Mesela yönü bilirsem burası da seçebilirim, burası da belirleyebilirim, burası da belirleyebilirim.
+
+235
+00:55:10,123 --> 00:55:18,123
+Buna da karar vermem gerekiyor. Ya da bu tarafı değil de bu tarafı seçersem, altı bir burası mı olacak, burası mı olacak?
+
+236
+00:55:18,123 --> 00:55:25,364
+Yani bir yöne ihtiyacım var, bir de büyüklüğe ihtiyacım var.
+
+237
+00:55:28,083 --> 00:55:32,163
+İkisini birden tanılamam lazım, hareketi tam olarak ifade edelimler için.
+
+238
+00:55:33,588 --> 00:55:58,488
+Aslında yönü demin belirledik. Yönü nasıl belirledik? Türevin dedik. Türevin tersi yönü. Yani türevin işareti artıysa eksi olacak. O zaman türevin işaretinin eksi olduğu tarafa doğru gidelim. Peki. O zaman şunu birazcık daha yazmaya çalışıyorum biraz daha. Yönü ilk önce ifade etmeye çalışalım.
+
+239
+00:56:03,923 --> 00:56:18,923
+eksi diyelim, tamam. Şöyle bir türevi işareti olarak bunu kullanayım ben, tamam. Hata fonksiyonunun a t'deki türevi. Böyle gösteriyorlar. H yazdım ben buraya.
+
+240
+00:56:18,923 --> 00:56:28,923
+Hata yani aslında, şu h fonksiyonu, şu h fonksiyonu, hatanın türevi. Hangi noktadaki? a t noktasındaki türevi.
+
+241
+00:56:29,940 --> 00:56:53,420
+A-T noktasındaki türevi. Şimdi bunu, bu bir yön belirtiyor, aslında bir büyüklük de belirtiyor. Türev dediğimiz şey vektörel bir şey değil mi? Bir büyüklük de ifade eder. Yani hem işareti vardır hem de büyüklüğü vardır. Büyüklük bizim için, nasıl ifade edelim?
+
+242
+00:57:00,340 --> 00:57:09,940
+Türevin büyüklüğü de bize atmamız gereken adımın büyüklüğü hakkında bir şeyler söylüyor mu? Demin söylemiştim bunu.
+
+243
+00:57:11,380 --> 00:57:17,860
+Şimdi şöyle bir şey düşünün. Mesela burası türevin yüksek olduğu bir yer. Yani şu şu andaki A0 noktasından bahsediyorum.
+
+244
+00:57:17,860 --> 00:57:27,276
+Şu noktadayız biz. Bu noktada türevi yüksek. Mesela şimdi bir adım attık diyelim ki, mesela buraya geldik diyelim, tamam?
+
+245
+00:57:27,891 --> 00:57:37,891
+Burada türev daha mı az daha mı çok? Şu noktaya gelince. Yani şurası A1 için de var mı? Şurası A1 için var mı?
+
+246
+00:57:39,891 --> 00:57:41,891
+A1'e gittiğinde türev ne oldu?
+
+247
+00:57:54,164 --> 00:57:56,164
+Azaldı mı, çoğaldı mı? Nasıl bir şey oldu?
+
+248
+00:57:56,164 --> 00:57:57,164
+Tüver.
+
+249
+00:58:19,827 --> 00:58:22,527
+Peki, tam şu minimum noktada türevi ne olur?
+
+250
+00:58:34,612 --> 00:58:38,451
+Peki, A0'dan A1'e gittiğimizde türev azaldı mı, çoğaldı mı?
+
+251
+00:58:56,659 --> 00:58:58,659
+Evet, doğru.
+
+252
+00:59:01,659 --> 00:59:11,659
+O zaman optimum noktaya yaklaştıkça benim daha küçük adımlar atmam gerekir, değil mi?
+
+253
+00:59:11,659 --> 00:59:13,659
+Bakın, doğru mu?
+
+254
+00:59:25,907 --> 00:59:44,668
+Peki, Türev'in kendisi de bunu sağlayabilecek bir potansiyeli var mı? Türev'in kendi büyüklüğü? Var değil mi? Yani Türev ne kadar büyük bir şey ise, aslında kabaca belki de şeyden o kadar uzaktasınız, optimum noktadan ve büyük adımlar atmalısınız, dik bir yerdesiniz hala.
+
+255
+00:59:46,003 --> 00:59:53,003
+Ama eğer ki işte böyle tabana çok yakın bir yerlerdesiniz, minimo çok yakın bir yerlerdesiniz, orada nedir? Türev zaten oldukça küçüktür.
+
+256
+00:59:53,003 --> 01:00:00,003
+O zaman türevin büyüklüğü, bize atmamız gereken adımın büyüklüğü hakkında da bir ne veriyor? Fikir veriyor.
+
+257
+01:00:00,003 --> 01:00:06,003
+Tamam mı? Hatta türevin sıfır olduğu noktayı yakaladığınız nokta aslında sizin neyiniz olacak?
+
+258
+01:00:09,003 --> 01:00:11,003
+Aradığınız nokta olacak, tamam mı?
+
+259
+01:00:12,003 --> 01:00:13,003
+Peki, o zaman...
+
+260
+01:00:13,523 --> 01:00:20,523
+Bu büyüklüğü hakkında bir fikir veriyor ama bu fikiri birazcık şey yapmak gerekebiliyor.
+
+261
+01:00:20,523 --> 01:00:21,523
+Ne derler?
+
+262
+01:00:25,023 --> 01:00:29,523
+Ölçeklemek gerekebiliyor. Ölçeklemek için de araya bir tane bir şey ekleyeceğim ben.
+
+263
+01:00:29,523 --> 01:00:34,523
+Buna alfa diyeceğim. Tamam.
+
+264
+01:00:34,523 --> 01:00:38,523
+Çarp yani bu. Bu da öğrenme katsayısı.
+
+265
+01:00:55,027 --> 01:01:15,027
+O zaman bizim şöyle bir şeyimiz var elimizde artık. Güncelleme mekanizmamız var. Bu öğrenme kas sayısı da kullanıcı olarak bizim dışarıdan söylediğimiz bir şey. Mesela 0.01 diyoruz mesela.
+
+266
+01:01:15,027 --> 01:01:19,027
+Ya da 2 diyoruz, 5 diyoruz. Mesela öyle bir şeyler söylüyoruz.
+
+267
+01:01:19,827 --> 01:01:25,827
+O söylediğimiz şeye göre, onu belirledikten sonra artık aslında bütün hikayemiz elimizde var.
+
+268
+01:01:32,980 --> 01:01:43,980
+Şimdi bir ara verelim, ondan sonra devam edeceğiz arkadaşlar. Bu yaptığımız şeyi kullanıp neler yapabileceğimizi yavaş yavaş göreceğiz.
+
+269
+01:01:43,980 --> 01:01:51,724
+Şimdi saat 10'u 4 geçiyor, 10'u çeyrek geçe devam edelim.
+
+270
+01:02:01,748 --> 01:02:02,748
+Sonja görüşmek üzere.
+
+271
+01:12:23,699 --> 01:12:27,940
+Merhaba arkadaşlar tekrardan. Yeni temiz bir sayfa geldi mi?
+
+272
+01:12:41,844 --> 01:12:46,644
+Şimdi diyelim ki bizim elimize üç tane değer var. Tamam.
+
+273
+01:12:50,515 --> 01:13:01,707
+yaparsak, şöyle bir şey var. Ve biz bu üç tane değere en uygun A'yı bulmak istiyoruz. Modelimiz de şu.
+
+274
+01:13:05,652 --> 01:13:14,652
+Ve az önce şöyle bir formülasyon çıkarttık hatırlarsanız. Herhangi bir biraz kere başlangıç yerinden başlamak üzere.
+
+275
+01:13:14,652 --> 01:13:26,652
+Eksi, arpa, a dedik sonra türev dedik. Sonra hatanın a, t noktasındaki türevi ile alakalı formülasyon çıkarttık.
+
+276
+01:13:26,652 --> 01:13:28,652
+Şimdi...
+
+277
+01:13:34,996 --> 01:13:36,587
+Şişt, şişt, şişt.
+
+278
+01:13:40,307 --> 01:13:44,467
+Bu h fonksiyonu nasıl bir şey oluyor aslında?
+
+279
+01:14:16,404 --> 01:14:19,104
+Şuna H2 diyeyim, şuna H3 diyeyim.
+
+280
+01:14:24,979 --> 01:14:26,979
+Bunların hepsi şu dibe dokunuyorlar.
+
+281
+01:14:29,619 --> 01:14:31,219
+Neyi anlatıyor bu şekilde size?
+
+282
+01:14:40,051 --> 01:14:43,652
+Ne söylüyoruz?
+
+283
+01:14:52,756 --> 01:15:03,355
+Hata fonksiyonunun bu şekle baktığımızda sıfıra inmeyeceğini gördük. Ama buraya ben h1, h2, h3 diye üç tane şey çizdim. Onlar neyi ifade ediyorlar sizce?
+
+284
+01:15:21,619 --> 01:15:26,619
+Şunu ifade ediyor, elimde sadece o nokta olsaydı benim hata fonksiyonum ne olurdu?
+
+285
+01:15:26,619 --> 01:15:28,100
+diye ifade ediyor.
+
+286
+01:15:28,100 --> 01:15:36,100
+Elimde tek bir nokta varsa, y-eştir-ax modeliyle ben her zaman sıfıra inen bir hata fonksiyonu elde edebilir miyim?
+
+287
+01:15:36,100 --> 01:15:38,819
+Elimde tek bir nokta varsa.
+
+288
+01:15:40,819 --> 01:15:43,299
+Elde edebilirim bunu hatta, çizebiliriz de.
+
+289
+01:15:43,299 --> 01:15:48,659
+Şurada düşünürseniz, mesela şu ve şu ve şu üçü değil mi?
+
+290
+01:15:49,043 --> 01:16:04,043
+Ayrı ayrı modeller bunlar. Her biri, hatası, tek bir tane noktanız varsa, y-eştir, a-x için, yani a-1, a-2, a-3 tane şey bulabilirsiniz. Optimum nokta bulabilirsiniz. Ama bizim derdimiz ne?
+
+291
+01:16:04,043 --> 01:16:13,043
+Hepsine birden mümkün olduğunca uyum sağlayan bir şey. Mümkün olduğunca da burada sıfıra inemiyor zaten.
+
+292
+01:16:13,140 --> 01:16:20,819
+Dolayısıyla biz h1, h2, h3 diye üç tane fonksiyon var aslında. O üç tane fonksiyon toplamı üzerinden bir şeyler ediyoruz.
+
+293
+01:16:22,360 --> 01:16:25,680
+Hata fonksiyonunu hatırlayın. Hata fonksiyonu nasıl bir şeydi?
+
+294
+01:16:26,700 --> 01:16:36,940
+H, a dediğimiz şey, bir şey var, i eşit birinden başlıyor, n'e kadar gidiyor, yi eksi a x i'ye.
+
+295
+01:16:38,771 --> 01:16:54,372
+Bunu açarsanız, aslında şöyle bir şey olacak değil mi? y1-a çarpı x1'in karesi artı y2'nin karesi artı y3-ax3'ün karesi olacak değil mi? Bu.
+
+296
+01:16:56,467 --> 01:17:12,467
+Şurada yaptığım şey, şu mesela bizim şuradaki h1'i gösteriyor, şu h2'yi gösteriyor, şu da h3'ü gösteriyor. Toplam h'ı düşünürseniz, toplam hA bu üç tane fonksiyonun toplamı şeklinde oluşacak.
+
+297
+01:17:12,467 --> 01:17:22,827
+Ve dolayısıyla, buradaki biz yeşilin minimum noktasını bulmaya çalışacağız. Şurayı bulmaya çalışacağız. Tamam mı? Peki.
+
+298
+01:17:24,372 --> 01:17:31,372
+Bunu nasıl gerçekleştirdik? Formülasyonlar var elimizde artık. Şimdi sıra algoritmayı yazmaya geldi.
+
+299
+01:17:31,372 --> 01:17:36,372
+Şimdi algoritmasını artık oluşturecek bütün komponentler bizim elimizde var.
+
+300
+01:17:36,372 --> 01:17:43,372
+Peki, şimdi böyle bir problemimiz var elimizde. Problemimize başlangıçta, startla başlayacağız. İyi, güzel.
+
+301
+01:17:43,828 --> 01:17:54,828
+Şimdi bizim ilk önce neyi öğrenmemiz gerekiyor? Kullanıcıdan almamız gerekiyor. Biz n'i almamız lazım, kaç an nokta olduğunu. Başka alfayı almamız lazım, öğrenme kat sayısını. Başka n'i almamız lazım?
+
+302
+01:17:56,828 --> 01:17:58,828
+Bir de a0 almamız lazım.
+
+303
+01:17:59,828 --> 01:18:04,828
+a0'ı da a diyelim mesela anlaşayım.
+
+304
+01:18:10,003 --> 01:18:26,003
+Ve bunun arkasından da bir döngü içerisinde, i eşittir, birden başlayalım, birebirer, n'e kadar gideceğiz. Burada da x, i'yi ve y, i'yi kullanıcıdan alacağız.
+
+305
+01:18:29,716 --> 01:18:53,855
+Şimdi bir döngüye ihtiyacımız var. Bu döngünün bir sınırı olabilir. Maksimum bir sınırı olabilir. Yani şu kadar adım maksimum gitsin. Böyle bir şey olabilir. Bir de şey de olabilir. Ardışık ağlar.
+
+306
+01:18:54,292 --> 01:19:16,292
+Arasında yani şu ve şunun arasındaki fark minimum bir değerden küçük olduğu sürece yani küçük olana kadar devam etsin. Artık o kadar küçüldüğü anda da duralım. Öyle bir şey diyebiliriz.
+
+307
+01:19:16,979 --> 01:19:27,379
+O zaman biz şöyle bir şey yapalım. O iki şıkkı birden düşünebiliriz belki. Ya da şimdilik bir tanesini düşünelim. Yani farkın minimum olmasını düşünelim.
+
+308
+01:19:27,379 --> 01:19:34,979
+Farkın minimum olması için bizim bir neye ihtiyacımız var diyelim ki?
+
+309
+01:19:39,979 --> 01:19:43,979
+YA diye bir değerimiz olsun mesela şimdilik.
+
+310
+01:19:45,332 --> 01:19:55,332
+Ve bu YA'yı, bir sonraki adımımı ifade edecek bu YA. Şimdilik mesela sallıyorum.
+
+311
+01:19:55,332 --> 01:19:57,164
+2
+
+312
+01:20:04,435 --> 01:20:11,975
+Ya da şöyle yapalım, YA değil de, şimdi bu AT-1 ile AT'nin arasındaki fark aslında neyle alakalı? Alfa çarpı türev ile alakalı.
+
+313
+01:20:11,975 --> 01:20:22,975
+Alfa zaten sabit duruyor, o zaman türevin üzerinden de bir şey yapabiliriz, döngüyü durdurma şartı koyabiliriz.
+
+314
+01:20:22,975 --> 01:20:30,975
+O zaman türev üzerinden bir şey yapalım, daha basit, daha az kafa karıştırıcı olacaktır.
+
+315
+01:20:33,427 --> 01:20:54,427
+Türev'i de t ile göstereyim. Mesela Türev şimdilik 100 olsun, sallıyorum. Bir döngünün içerisinde döneceğim. Türev büyüktür, epsilon olduğu sürece bu. Epsilon'ı da dışarıdan alalım. Mesela epsilon 0.01 gibi bir şey. Türev o kadar küçüldüğü zaman artık dur diyeceğiz.
+
+316
+01:20:59,988 --> 01:21:15,988
+Bir de belki gitmek istediğimiz, bütün ziyaret ettiğimiz noktaları bir dizide tutabilir miyiz? Evet tutabiliriz. Böyle bir şeye mümkün. İyi diye bir ilişkinimiz olsun.
+
+317
+01:21:20,851 --> 01:21:28,051
+A diye büyük A diye bir dizimiz olur. Onun içerisine gezdiğimiz bütün noktaları adarız. Dolayısıyla mesela şöyle bir şey diyebiliriz.
+
+318
+01:21:28,051 --> 01:21:37,451
+A sıfır, tamam. A sıfır mesela A diyebiliriz. Şurada A'yı kullanıcıdan aldık. Başlangıç değerini kullanıcıdan aldık.
+
+319
+01:21:37,451 --> 01:21:45,051
+A sıfır dedik. Şimdi ve bu noktadan sonra artık A'yı ne yapacağız biz? Hep bulmaya çalışacağız.
+
+320
+01:21:48,180 --> 01:22:12,180
+a i eksi bir, değil mi? a i eksi bir, eksi alfa çarpı türev, değil mi? Türev. Neredeki türev? a i eksi bir iki türev. Şimdi a i eksi bir iki türevi bizim biliyor olmamız lazım. a i eksi bir iki türev nasıl bir şey? Şimdi şurada yazmış olduğumuz...
+
+321
+01:22:15,412 --> 01:22:23,652
+Şu fonksiyonun türevini almamız gerekiyor. Şimdi bunun türevini alırken yapacağımız işlem şu.
+
+322
+01:22:25,652 --> 01:22:35,132
+Altına yazalım aslında. Türev h a diyelim. Bir fonksiyonun türevini aldığımız işte karesel bir şeyse.
+
+323
+01:22:35,132 --> 01:22:39,412
+Neye göre türev alacağız burada onu söyleyeyim bana. Neye göre türev almamız gerekiyor?
+
+324
+01:22:56,884 --> 01:23:06,183
+Neyi optimize etmeye çalışıyoruz? Ona göre yapacağız. Neyi optimize etmeye çalışıyoruz? x'ler ve y'ler burada sayı arkadaşlar, zaten biliyoruz. Değişkin olan tek şey bu da a. A'ya göre tüya bakacağız.
+
+325
+01:23:06,183 --> 01:23:17,484
+Şimdi bu yazmış olduğumuz şeyin türevini aldığımız zaman şöyle bir şey edeceğiz. 2 çarpı yi eksi axi değil mi?
+
+326
+01:23:17,811 --> 01:23:26,811
+Çarpı içerisinin a'ya göre türevi, içerisinin a'ya göre türevi, eksi x i olacak değil mi? O zaman eksi iki x i diye bunu yazabiliriz.
+
+327
+01:23:30,811 --> 01:23:36,811
+Bir noktadaki hatamız bu, hatamız diyorum, türevimiz bu.
+
+328
+01:23:37,524 --> 01:23:46,024
+O zaman algoritmamızda bu a i eşitir, a i eksi bir kısmını yapmadan önce bu işi halletmemiz lazım. Yani türevi bulmamız lazım.
+
+329
+01:23:46,024 --> 01:23:49,123
+Peki, o zaman türevi bulmak için ilk önce türevi temizleyelim.
+
+330
+01:23:50,123 --> 01:23:56,123
+Türevi bulmak için bizim bir döngüye ihtiyacımız var. En kadar dönen bir döngüye ihtiyacımız var.
+
+331
+01:23:59,123 --> 01:24:03,524
+Başlangıçta türevi şurada sıfırlayalım.
+
+332
+01:24:04,212 --> 01:24:11,891
+İçeride bakalım, birikecek zaten. i eşittir demeyelim de j eşittir diyelim buna, karışmasın şeyler.
+
+333
+01:24:11,891 --> 01:24:27,972
+n'e kadar döneceğiz. T'nin üstüne toplayacağım ben. T artı eksi 2 çarpı x i. X'den nerede? X'i o kadar. X, j olacak burada tabi.
+
+334
+01:24:32,020 --> 01:24:40,440
+Çarpı Y, J, eksi, A, A şu anda AT'de duruyor.
+
+335
+01:24:42,180 --> 01:24:43,319
+Bakın AI'de duruyor.
+
+336
+01:24:48,819 --> 01:24:59,500
+I1 yaptık. Ha, incisi mi? Ax1'de duruyor. Tamam. Çarpı xj. Tamam.
+
+337
+01:25:03,220 --> 01:25:12,400
+Şu eksi, buraya eksi, yani bundan şey, neden bana, onun düzenlememesi yapılır. Yani şurası eksi zaten. Artı eksi olduğu için orası toptan eksi olacak.
+
+338
+01:25:13,819 --> 01:25:22,600
+Bu işlemi yaptığımızda, j üzerinden, artık elimizde bizim ne var? Trev var. Trev varsa artık biz şunu yazabiliriz.
+
+339
+01:25:32,020 --> 01:25:48,260
+T ve bunu da şurasına bir etkileyim, şuraya bağlayabiliriz. Ve bu işlem bittiğinde de dışarıya biz, tabi burada i arttırmayı unutmamamız lazım.
+
+340
+01:25:50,260 --> 01:25:53,140
+Şurada da bir şey yapalım.
+
+341
+01:25:54,140 --> 01:25:57,548
+i artı bir yapalım. Ondan sonra.
+
+342
+01:25:57,844 --> 01:26:20,263
+En sonunda dışarıya, işte a, i-1 söyleyeceğiz herhalde. Çünkü i-1 arttırdık ya. Bu şekilde bir a dizisinin içerisinde bizim gezdiğimiz bütün a'ları tutmuş da olduk.
+
+343
+01:26:20,979 --> 01:26:31,979
+ve adım adımda ilerlediğimizi göreceksiniz. Onun kodunu yazın, çok basit bir kod, kompleks bir şey değil zaten bir tane. İki tane döngü var sadece.
+
+344
+01:26:31,979 --> 01:26:43,979
+Farklı farklı X'ler için bunu çözebileceğinizi göreceksiniz. Yani farklı X'ler için derken farklı veri kümeleri oluşturun, learning rate ile oynayın.
+
+345
+01:26:44,979 --> 01:26:50,219
+A'nın farklı farklı başlangıç yerlerden başlatın, rastgele bir yerlerden başlatın.
+
+346
+01:26:50,219 --> 01:26:54,219
+Neler oluyor, neler bitiyor, bir görün.
+
+347
+01:26:57,219 --> 01:27:03,779
+Şimdi, bu tabii çok kısıtlı bir model.
+
+348
+01:27:03,779 --> 01:27:05,619
+Kısıtlı bir model derken...
+
+349
+01:27:05,876 --> 01:27:27,376
+Elimizdeki veri kümesine uyum sağlamak, yani uyum sağlayabileceği veri kümelerinin çeşitliliği çok çok az. Değil mi? Orijinden geçiyor diyoruz vs. vs. Bunu bir miktar daha esnek hale getirmek için yapmamız gereken şey, mesela bunun bir esnek halini yapalım.
+
+350
+01:27:27,376 --> 01:27:33,676
+Tamam. Bir esnek halini şu, y eşittir ax artı b'de mi?
+
+351
+01:27:34,420 --> 01:27:42,420
+Şimdi bu artık nasıl bir şeylere de uyum sağlayabilir olacak? Mesela şöyle bir şeylere de uyum sağlayabilir olacak değil. Değil mi? Mesela şöyle bir şey falan çizebilecek bu.
+
+352
+01:27:42,420 --> 01:27:56,420
+Çünkü bu elimizdeki veri kümesine göre deminki modeli yani y eşittir, ax'i kullanmaya kalksanız burada muhtemelen şöyle falan bir şey bulacaktır. Aşağı yukarı. Tamam.
+
+353
+01:27:56,420 --> 01:28:00,011
+Ama bu hiç değil bir model olmaz.
+
+354
+01:28:00,083 --> 01:28:11,484
+Kötü bir performans çok düşük olur. Ama şu mavi daha iyi bir şeye benziyor. Peki mavi olursa bizim o deminki yapıda nelerimiz değişir? Bunu bir düşünelim.
+
+355
+01:28:11,484 --> 01:28:25,484
+Aslında çok çok büyük değişiklik yok. Hata fonksiyonu nasıl bir şey olur? Hata fonksiyonu. Hata fonksiyonu bu sefer iki tane bileşeni var. Bakın demin yeşilde.
+
+356
+01:28:26,003 --> 01:28:30,804
+Hata fonksiyonu sadece a ile bağlıydı değil mi? Şöyle yazdım, hatırlarsınız.
+
+357
+01:28:30,804 --> 01:28:42,003
+Y eşit, ne kadar? y eksi ax i kareleri dedik değil mi? Şimdi ama iki tane şeyimiz var. O yüzden h ab oldu bu sefer.
+
+358
+01:28:42,003 --> 01:28:51,003
+y eşit birden başlayacak. Ne kadar iyi diyecek? yi eksi ax i eksi b olacak değil mi?
+
+359
+01:28:56,724 --> 01:29:03,123
+Anlaşıldı mı yaptım? Burada. Hata fonksiyonu için.
+
+360
+01:29:22,131 --> 01:29:24,131
+Ekranı görebiliyor musunuz arkadaşlar?
+
+361
+01:29:42,387 --> 01:29:48,300
+Peki, şimdi bu iki tane parametre sahip fonksiyonu anladık mı? Nasıl bir şey onu?
+
+362
+01:29:57,203 --> 01:30:23,403
+Peki, şimdi o zaman burada nasıl optimizasyon yapacağız diye bir soru var. Şimdi o zaman A var, şimdi demin A artı bir eşitir, A, T falan diye yazdık. Şimdi burada hem A var hem B var. Yani o zaman biz şöyle bir şey yapmamız gerekecek. A ve B'nin her ikisi için rastgele başlangıçlar belirleyeceğiz ve her ikisi için de bu demin yaptığımız işlemi gerçekleştireceğiz.
+
+363
+01:30:25,427 --> 01:30:27,427
+O zaman şöyle bir şey olacak.
+
+364
+01:30:27,427 --> 01:30:31,427
+Şimdi a t artı bir eşittir.
+
+365
+01:30:31,427 --> 01:30:35,427
+a t eksi alfa çarpı bakın.
+
+366
+01:30:35,427 --> 01:30:40,427
+Aşın tamam mı? Aşın. Şöyle a'ya göre görebiliyorum tamam mı?
+
+367
+01:30:40,427 --> 01:30:42,315
+Neredeki a?
+
+368
+01:30:51,636 --> 01:31:02,736
+B t artı bir eşittir. B t eksi alfa çarpı h'ın b'ye göre türebiliyorum bu sefer. A t'dik.
+
+369
+01:31:04,576 --> 01:31:05,796
+B t'dik.
+
+370
+01:31:08,976 --> 01:31:16,176
+Şimdi, peki bu h a nasıl bir şey oluyor?
+
+371
+01:31:19,923 --> 01:31:29,923
+Bunun türevini aldığınızda, şu yukarıdakine, yine karşınızda şöyle bir şey çıkacak. 2 çarpı kendisi.
+
+372
+01:31:34,771 --> 01:31:44,771
+İçerisinin a'ya göre türevi, içerisinin a'ya göre türevi yine eksi x i. Hmm bir şey değişmedi değil mi? Demin yazdığımız a'ya fark yok.
+
+373
+01:31:44,771 --> 01:32:00,771
+Peki b'ye göre türevi alırsak, bu durumda eşit birinden başlayacak. Yine kadar gidecek? 2 çarpı yine içerisi var. Bunun b'ye göre türevi eksi bir sadece.
+
+374
+01:32:04,627 --> 01:32:13,627
+O zaman yapmam gereken şey oldukça basit. Deminkinden farklı çok da fazla bir şey olmadığını görebiliyorsunuz. Bakın şurası, şurası olacak zaten.
+
+375
+01:32:13,627 --> 01:32:31,627
+Şurası da şurası olacak zaten. Demin yazmış olduğumuz algoritmada çok fazla bir şey değişmeyecek. Şimdi burada biz bir t'den bahsettik, türev ve bulduk.
+
+376
+01:32:31,828 --> 01:32:41,828
+Bu türevi neye göre bulduk biz? A'yı göre türevi. Bir de B'ye göre türevi aslında bulacaksınız ve A'yı ve B'yi, şurada bir de B diye bir şey olacak yani.
+
+377
+01:32:41,828 --> 01:32:57,828
+Bu türevi bulduğumda T A diyeceksiniz belki buna. T A eşittir 0, T B eşittir 0 deyip, T B eşittir T B artı işte eksi, bu sefer burada x'i olmayacak herhalde. Şurası olacak sadece.
+
+378
+01:33:00,564 --> 01:33:09,564
+Şu kısım olacak herhalde. Burada da yine bunun yine b-1, t-a, t-b şeklinde olacak.
+
+379
+01:33:09,564 --> 01:33:16,564
+Ve burada işte a ve b'yi göreceğiz. Çok büyük bir değişiklik yok yani kodun içerisinde.
+
+380
+01:33:16,564 --> 01:33:21,564
+İki tane parametre çıktığımız zaman, yaptığımız iş aslında çok benziyor.
+
+381
+01:33:21,564 --> 01:33:26,564
+Peki bunun şey nasıl bir şey olur?
+
+382
+01:33:28,020 --> 01:33:53,020
+Şimdi şöyle bir şey çizdikten, mesela hata fonksiyonu şöyle bir şey olabilir değil mi? Bu a'ya bağlı olarak h, neydi bu? Tek bir değişken varken ki h fonksiyonu. Peki iki değişken varken h fonksiyonu nasıl bir şeye benzeyecek? İki değişken varken arkadaşlar h fonksiyonu şöyle bir şey olacak. Bu modet için söylüyorum tabi. Burası a, burası b olsun.
+
+383
+01:33:56,051 --> 01:34:07,652
+Böyle bir şey, ne daha doğruna bir kasenin içi gibi düşünebilirsiniz belki bunu. Minimum bir yeri var, bunu tam sıfıra değmiyor olabilir yine tabii ki.
+
+384
+01:34:07,652 --> 01:34:16,531
+Elimizdeki şeylere bağlı olarak. Ve biz aslında burada belki hani bunu şöyle yukarıdan mı şurası h, ab, tamam mı?
+
+385
+01:34:16,531 --> 01:34:22,931
+Bunu tam böyle yukarıdan bakarsak şöyle bir şey göreceğiz belki. Tam dediğim gibi yukarıdan.
+
+386
+01:34:23,283 --> 01:34:49,763
+Tepeden baktığımızda, şurasına A, şurasına B diyeyim. Şöyle bir şey göreceğiz. Tamam mı? Bu giderek içerisi, burası en derin yer, en düşük olan yer. Burası biraz daha şey, daha yukarıda, daha yukarıda. Buralar en yukarıda var. Yani biz bir rastgele bir başlangıç derinden başlayacağız. Mesela A0 ve B0 diyelim ki şu nokta. Tamam mı?
+
+387
+01:34:49,775 --> 01:34:57,376
+Bu noktadan başlayıp, bu tık tık tık tık tık tık şeklinde şu minimum yere doğru ilerleyecek.
+
+388
+01:34:57,376 --> 01:34:58,376
+Tamam.
+
+389
+01:35:00,376 --> 01:35:04,976
+Burası A0, burası da yani A0, B0 ikilisi.
+
+390
+01:35:04,976 --> 01:35:11,175
+Öyle yazılayım. Burası da AN, BN ikilisi. En sonunda vardığımız yer belki. Tamam.
+
+391
+01:35:15,412 --> 01:35:20,912
+Görüsel hali de öyle bir şey olacak. Bunları çizdirebilirsiniz zaten, sizler de görebilirsiniz nasıl bir şeyler oluyorlar.
+
+392
+01:35:24,311 --> 01:35:31,712
+Peki, şimdi 2 dedik, yani 2 tane şey tanımladık.
+
+393
+01:35:33,412 --> 01:35:36,412
+H, A, B, C'li bir şey olabilir mi?
+
+394
+01:35:36,627 --> 01:35:49,827
+Yani şöyle bir şeyler tanımlayabilir miyiz biz? Mesela fonksiyon olarak y eşit, x kare, x, y diye bir şey tanımlayabilir miyiz? Evet tanımıyoruz. O zaman mesela şöyle noktalara da ne yapabilecek? Uyumsal devlen modelleriniz olacak değil mi?
+
+395
+01:35:49,827 --> 01:36:00,827
+Böyle bir şeyler falan da yapabilecekler. Şu anda mesela böyle bir datalar için, şöyle bir datalar için bizim y eşitli ax'in bulacağı şey çok kabaca şöyle bir şey olacaktır.
+
+396
+01:36:03,988 --> 01:36:28,988
+Y, A, X ise muhtemelen herhalde şöyle falan bir şey bulurlar. Dolayısıyla, daha kompleks yapılar için, şuradaki görünümlü daha kompleks yapılar için ekstra parametre ekleyerek modelimizi
+
+397
+01:36:29,140 --> 01:36:39,140
+Daha da fazla veriye uyum sağlayabilir hale getiriyoruz. Tamam mı? Daha türlü veriye uyum sağlayabilir hale getiriyoruz.
+
+398
+01:36:39,140 --> 01:36:52,140
+Şimdi, bu noktada, peki ben elimdeki veriyi bilmiyorsam, bu durumda
+
+399
+01:36:56,372 --> 01:37:23,372
+Ben modeli nasıl belirleyeceğim? Acaba her türlü veriye uyum sağlayan bir model var mı? Asıl belki kritik sorulardan bir tanesi bu. Her türlü veriye uyum sağlayan modeller var mı? Var. Hani kendine göre avantajlı dezavantajlı var vesaire vesaire. Ama var. Ve burada görmüş oldunuz.
+
+400
+01:37:25,076 --> 01:37:34,675
+rastgele bir başlangıç seçip adım adım adım adım ilerleyerek elimizdeki dataya o modelin parametrelerini uydurmaya çalışıyoruz.
+
+401
+01:37:34,675 --> 01:37:45,076
+En iyi noktayı bulmaya çalışıyoruz. O model için, yani o data için o modelin verebileceği en iyi sonucu, en az hatayı verdirmeye çalışıyoruz.
+
+402
+01:37:46,163 --> 01:37:53,363
+Şimdi buradaki optimizasyon yaptığımız şeyler, işte bir değişkenli bir şey yaptık, iki değişkenli bir şey yaptık, üç değişkenli bir şey yaptık.
+
+403
+01:37:55,043 --> 01:38:04,644
+Şimdi, buradaki bu tarz modellerin haricinde
+
+404
+01:38:04,819 --> 01:38:14,819
+Daha kompleks modeller de var. Fakat daha kompleks modellerin hata fonksiyonu buradakiler kadar güzel hata fonksiyonları değiller.
+
+405
+01:38:14,819 --> 01:38:16,819
+Ne demek istiyorum?
+
+406
+01:38:17,819 --> 01:38:25,771
+Mesela hata fonksiyonu şöyle bir şeyse ya da demin çizdiğimiz gibi şöyle bir şeyse...
+
+407
+01:38:26,547 --> 01:38:37,307
+Nereden başlayacağımız, nereye varacağımızı ne yapmaz çok fazla etkilemez. Yani buradan başlasam ben bu tarafa doğru giderim, buradan başlasam bu tarafa doğru giderim. Çok da farklı bir yere varmam.
+
+408
+01:38:37,307 --> 01:38:44,787
+Ya da burada mesela istediğim yerden başlayayım, bu istediğim çizgilerin hepsi beni muhtemelen nereye götürecektir? İstediğim yere doğru götürecektir. Tamam mı?
+
+409
+01:38:44,787 --> 01:38:51,587
+Bunu üç boyut, beş boyut falan gibisinden yani bunlar hep konveks diye ifade edilen öyle söylüyorum, konveks.
+
+410
+01:38:52,051 --> 01:39:02,051
+Convex fonksiyonlar. Convex fonksiyonların bir tane ya da sonlu, discrete convex'ler falan tam bir tane oluyor da. Neyse,
+
+411
+01:39:04,051 --> 01:39:13,547
+Bunlarda optimizasyon yapmak çok kolay, basit. Nereden çıkartıyorum kolay, basit mevzusunu? Mesela sizin hata fonksiyonu şöyle bir şey olsa, bakın.
+
+412
+01:39:17,332 --> 01:39:26,832
+Böyle bir hata fonksiyonumuz olsa, A burada, tamam. Burası da H fonksiyonu. Tamam. Şimdi bakın,
+
+413
+01:39:31,155 --> 01:39:45,155
+Bunun zorluğu nereden geliyor? Problemli olması nereden geliyor sizce? Öyle bir hata fonksiyonum var ki, şekli bu, tamam mı? Elimdeki datalara, yani ben mesela burayı bulmak istiyorum.
+
+414
+01:39:53,908 --> 01:39:57,108
+Ben şurayı bulmak istiyorum. Nasıl bulacağım?
+
+415
+01:40:01,908 --> 01:40:05,408
+Bir yerden başlasam, mesela buradan başladım.
+
+416
+01:40:05,468 --> 01:40:06,288
+Bu beni nereye götürüyor?
+
+417
+01:40:06,347 --> 01:40:07,028
+Bu buraya götürür.
+
+418
+01:40:07,188 --> 01:40:09,188
+Buradan başlasam, bu da beni buraya götürür.
+
+419
+01:40:09,248 --> 01:40:11,307
+Yani şu aralığın içerisindekiler beni buraya götürürler.
+
+420
+01:40:11,928 --> 01:40:17,448
+Şu aralığın içerisindekiler, şu aralığın içerisindekiler şuraya götürecekler.
+
+421
+01:40:17,748 --> 01:40:19,387
+Şu aralığın içerisindekiler şuraya götürecekler.
+
+422
+01:40:20,387 --> 01:40:23,148
+Şu aralığın içerisindekiler beni buraya götürecekler.
+
+423
+01:40:23,667 --> 01:40:30,667
+Bu aralığın içerisindekiler beni buraya götürecekler. Şuradaki belki işte şu aralığın içerisindekiler belki beni buraya götürecekler.
+
+424
+01:40:30,667 --> 01:40:42,667
+Dolayısıyla bu nereden başladığımız, nereye varacağımızı ne yapıyor? Değiştiriyor değil mi? Böyle bir şey var, sıkıntısı var.
+
+425
+01:40:47,667 --> 01:41:00,067
+Lokal bir optimizasyon oluyor. Yani başladığımız noktaya yakın bir minimum nokta buluyoruz ama o bulduğumuz minimum noktanın gerçekten global bir minimum olduğundan emin olamıyoruz.
+
+426
+01:41:00,067 --> 01:41:05,667
+O durumda ne yapabilirsiniz? Birkaç kez rastgele farklı farklı başlangıçlarla ne yapabilirsiniz? İlerleyebilirsiniz.
+
+427
+01:41:05,667 --> 01:41:12,867
+Bu bir opsiyonu, her birinin sonucuna bakıp hatası hangisinin asla o zaman bu daha iyiymiş falan deyip hareket edebilirsiniz.
+
+428
+01:41:13,395 --> 01:41:23,615
+Dolayısıyla bu konveks olmayan fonksiyonlarda lokal minimumları bulursunuz. Globalleri erişmeniz pek mümkün değildir.
+
+429
+01:41:23,615 --> 01:41:30,915
+Peki, niye böyle acayip loss fonksiyonları ortaya çıkıyor, çıkabiliyor?
+
+430
+01:41:30,915 --> 01:41:39,296
+Demin bahsettiğim gibi, her türlü dataya uyum sağlayabilecek esneklikte fonksiyonlar, modeller...
+
+431
+01:41:39,507 --> 01:41:48,507
+modellerin hata fonksiyonları maalesef maalesef böylener. Nanniler, oldukça sıkıntılı fonksiyonlar.
+
+432
+01:41:48,507 --> 01:42:02,507
+Bu fonksiyonlar üzerinde de bizim algoritmalarımız, az önce konuştuğumuz algoritma aslında gradient descent diye de geçer, eğim düşümü falan diye.
+
+433
+01:42:03,315 --> 01:42:11,996
+Bunlar bize lokal arama yapma imkanı sundukları için sadece global bir arama yapmanız mümkün değil.
+
+434
+01:42:11,996 --> 01:42:19,036
+Rastgele bir başlangıçla başlıyorsunuz, adım adım adım adım o sizi bir yere doğru götürüyor, o sizi bir minimuma bırakıyor.
+
+435
+01:42:19,036 --> 01:42:23,596
+Ama o minimum sizin için yeterliyse tamamen bir sıkıntı yok.
+
+436
+01:42:23,596 --> 01:42:29,036
+Aynen bu, geçen haftanın sonunda konuşumlu sezgisel algoritmalara benziyor.
+
+437
+01:42:29,300 --> 01:42:41,300
+Yani belki de bir yerlerde çok çok daha iyi bir çözüm var ama ona ulaşmak çok şey değil. Ne der ona? Fizil bir işlem. Pratik değil. Öyle söyleyelim.
+
+438
+01:42:41,300 --> 01:42:47,300
+Dolayısıyla sizin için yeterince iyi olan bir yapıya doğru ilerlemeye çalışıyorsunuz.
+
+439
+01:42:47,300 --> 01:42:54,300
+Şimdi buradaki anlattığım şeyler temelde...
+
+440
+01:42:55,699 --> 01:43:07,220
+İşte günümüzde birçok problemin çözümünü de, kabaca diyelim, kullanan yapay sinir ağlarının temeli aslında.
+
+441
+01:43:07,220 --> 01:43:20,180
+İşte bizim gradient descent diye anlattığımız şey ile aslında bütün süreç eğitiliyor, lokal bir eğitim süreci.
+
+442
+01:43:20,372 --> 01:43:26,492
+Tabi modeller çok kompleksler. Modeller çok kompleks oldukları için hata fonksiyonları da karışıklar.
+
+443
+01:43:26,492 --> 01:43:35,372
+Ama yapılan işlem buradakinin aynısı. Yani yaptığımız işlem işte o hata fonksiyonunun olduğu yerdeki türevine göre hareket edip,
+
+444
+01:43:35,372 --> 01:43:43,771
+başlangıçta yapay sinyalının ağırlıklarına, ki o ağırlıklar bizim parametrelerimiz buradaydı. Konuştuğumuz mana düşünsek parametrelerimiz.
+
+445
+01:43:44,948 --> 01:44:12,148
+Onlara birer ilk değer atanıyor, rastgele. Daha sonra bu rastgele değerden başlanıp adım adım adım adım ilerleniyor. Bu adım adım ilerleme sürecine de yapay sinyalım eğitimi adı veriyor. Elinizdeki veri kümesine uyumlu hale gelmesi, ağırlıkların o veri kümesine uyumlu hale gelmesi sürecine eğitim deniyor. Daha sonra da işte bir test süreci gerçekleşiyor. Gerçek performans ancak test de ortaya çıkarıyor.
+
+446
+01:44:12,307 --> 01:44:21,307
+Bunlar daha sonraki dönemlerde belki alacağınız bazı derslerden küçük küçük spoilerlar diyebilirim.
+
+447
+01:44:21,307 --> 01:44:37,307
+Ama bu kadar temel olan şeyleri de zaten bilmeniz biraz genel kültür açısından da iyi olacaktır diye düşündüğüm için bu minik introduction'ı aslında bir şekilde yapmak istedim.
+
+448
+01:44:37,876 --> 01:45:01,275
+Bence bunların algoritmaları şu andaki bilgilerinize yazmanızı olup çok kolay basit yazabilirsiniz. Belki bazınız yazmıştır bile. Daha komplekslerini de yazabilirsiniz. Yani belki işte gerçek bir yapay sinir ağının işte birkaç layırlı yapısı falan var onların. Hani onlardaki biraz optimizasyon süreci buradakinden bir tık.
+
+449
+01:45:01,524 --> 01:45:14,524
+Daha komplekstir ama temel mantığı aynı direk türev üzerinden hareket eder. Newton'dan beri daha iyi bir yöntem bulunamadı o noktada. Türev üzerinden hareket etmekte.
+
+450
+01:45:14,524 --> 01:45:28,236
+Tabi, şeyler var hani, birinci dereceden türevler var biliyorsunuz, ikinci dereceden türevler var. Onlar buralarda çok fazla doğrudan kullanılamıyor.
+
+451
+01:45:29,140 --> 01:45:50,140
+Çünkü çok fazla parametre tahmin etmeniz gerekiyor da. Neyse. Sonuç olarak, şu anda aslında bir basit bir optimizasyon sürecini kabaca gördüğünüz. Dediğim gibi, algoritmasını tane yazabilecek seviyedesiniz. Yazın, görün, nasıl hareket ettiğini iki boyutta çizdirin. Bunların hepsini yapabilecek seviyedesiniz.
+
+452
+01:45:50,963 --> 01:45:55,764
+diye düşünüyorum. Oldukça hoşunuza gider diye de tahmin ediyorum.
+
+453
+01:45:55,764 --> 01:46:00,324
+Peki o zaman arkadaşlar, benim bugünlük anlatacaklarım bu kadar. Sizlerin soruları var mı?
+
+454
+01:46:07,091 --> 01:46:23,271
+Hepinize çok teşekkür ediyorum. Önümüzdeki dönemde şey yaparız, belki diğerlerle yine karşılaşırız. Dönem için de hepinize teşekkürler, derse katılmanız için. Hoşçakalın diyorum.
+
+455
+01:46:26,547 --> 01:46:27,908
+İnginlar haja.

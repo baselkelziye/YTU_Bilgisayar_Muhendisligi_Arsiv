@@ -1,0 +1,1459 @@
+1
+00:01:35,540 --> 00:01:41,540
+Arkadaşlar, merhaba. 5 dakika bekleyeceğim. Biraz da arkadaşlarınız gelsin. 4-5 gece başlayalım uygulamaya.
+
+2
+00:05:45,971 --> 00:05:58,971
+Arkadaşlar, merhaba. Katılımcımız şu an 41'e ulaştı. Ben başlayacağım artık anlatmaya, uygulamayı. Daha sonra katılan arkadaşlar da olduğumuz yerden bizi dinlemeye devam ederler.
+
+3
+00:05:58,971 --> 00:06:09,971
+Arkadaşlar, ilk önce bir hatırlatma yapmak istiyorum. Saat 5.30'da Ahmet Hoca proje için bir bilgilendirme toplantısı yapacak. Sesim geliyor değil mi?
+
+4
+00:06:13,588 --> 00:06:14,588
+Geliyor hocam.
+
+5
+00:06:14,588 --> 00:06:31,588
+Tamamdır. Sorularınız olursa sesli olarak bana söyleyin çünkü mesajları takip edemeyebiliyorum uygulamada, uygulama esnasında yazarken. Hani sorularınızı sesli olarak beni bölüp sorarsanız daha iyi olur.
+
+6
+00:06:32,531 --> 00:06:56,572
+Biraz şimdi ilk vize sorularından başlayacağız. Vize sorularını biraz hızlı geçeceğim. Çünkü bir buçuk saatimiz var. Diğer iki sorumuz da uzun. Üç tane soruşta bir vize sorularını çözeceğiz. Diğer bir tane iki tane daha sorumuz var. O yüzden biraz hızlı ilerleyeceğim. Hani diğer soruların üzerine daha çok duracağım için. Hemen ben vize sorularını anlatmaya başlıyorum.
+
+7
+00:06:56,992 --> 00:07:11,992
+Vize de aşağıdaki sözde kodu çalıştırdığınızda, sahib ölü en değeri en büyük değerleri için kaça yakın sar diye bir sorunuz vardı. Bu soruyu yapabildiniz mi? Yapamayan, zorlanan oldu mu?
+
+8
+00:07:13,992 --> 00:07:19,660
+Fatih Hoca'nın notlarında, dersinde zaten bahsetmiş Fatih Hoca.
+
+9
+00:07:22,836 --> 00:07:33,235
+Ben bunu direkt kodlayarak değil de, zaten kodu vardı. Şekil üzerinde çözdüm. Hani size de belki kafanızda daha net oturur soru diye.
+
+10
+00:07:34,235 --> 00:07:42,436
+Şimdi bizim S1 ve S2 değerlerimiz var. Bunlar random olarak 0 ve 1 arasında üretilecekler.
+
+11
+00:07:43,036 --> 00:07:50,235
+Daha sonra da bizim kodumuzda bir koşulumuz vardı. S1'in karesi küçük veya eşittir S2 diye.
+
+12
+00:07:50,579 --> 00:07:59,039
+Bunu bir doğru çizebilmek için ben eşitlik olarak aldığımda benim karşıma bir polinom çıkıyor.
+
+13
+00:07:59,039 --> 00:08:12,579
+Bu polinomla benim kısıtlarım vardı. S1 ile S2'im 0 ve 1 arasında olacaktı. Rastgele değerler. Bunlar arasında kalan alanı belirlemem gerekiyor benim.
+
+14
+00:08:14,836 --> 00:08:20,836
+Değerleri yazdığımızda S2 benim koşulum vardı. Şuradaki if koşuluna geliyorum.
+
+15
+00:08:20,836 --> 00:08:34,836
+If koşuluna ben de S2 büyük eşittir, S1'in karesi. Değerleri koyduğumda yerine benim şu kırmızı alan işaretlediğim A diye gösterdiğim alan benim koşulumu sağlayan alan oluyor.
+
+16
+00:08:34,836 --> 00:08:38,836
+Burada bir polinom olduğu için ben...
+
+17
+00:08:39,216 --> 00:08:55,456
+Nasıl bulacağım buradaki alanı? Bana aslında soru şu kırmızı ile işaretlediğim alanı soruyor. Burada da hocalarımız size not içerisinde integral ile bulunacaktı bu alan. İntegral, işte x2'nin integrali x3 bölü 3'tür demiş.
+
+18
+00:08:56,816 --> 00:08:59,855
+Burada da a artı b aslında benim
+
+19
+00:08:59,923 --> 00:09:08,524
+Tam alanımı veriyordu, bu da 1'e eşitti. Ben buradan B'nin alanını 1 bölü 3 buluyorum, hocaların verdiği buradaki nottan.
+
+20
+00:09:09,524 --> 00:09:17,524
+Sonra 1'den 1 bölü 3'ü çıkardığımda, benden istenilen alanda 2 bölü 3 olarak bulunuyor.
+
+21
+00:09:18,024 --> 00:09:21,524
+Bu noktada bir sorunuz var mı arkadaşlar?
+
+22
+00:09:22,624 --> 00:09:27,423
+Şekil üzerinden çözmek istedim, çünkü hani zaten kodu vermişlerdi sınavda.
+
+23
+00:09:27,488 --> 00:09:44,488
+Ben şekil üzerinden belki cevap daha net kafanızda oturur diye bir soru yoksa ikinci soruya geçeceğim, vizede karşınıza çıkan. O da yine aynı şekilde bu soruya benzer bir soru, yine şekil üzerinde çözebileceğimiz bir soru.
+
+24
+00:09:46,836 --> 00:09:56,115
+Daha sonra bunları kodunu da çalıştıracağım arkadaşlar. Sadece elimle yazmayacağım için size şekil üzerinden göstermek istedim.
+
+25
+00:09:59,115 --> 00:10:08,236
+İkinci sorumuz da yine birinci soruya benzer bir soruydu. Aşağıdaki sözde kod çalıştırdığımda say bölü n değeri, n'in büyük değerleri için kaça yakın sardı?
+
+26
+00:10:08,716 --> 00:10:14,155
+0-1 alanında ondalık rastgele değerler üretiyordu, round fonksiyonu.
+
+27
+00:10:15,316 --> 00:10:22,316
+Yine if içerisinde benim koşullarım vardı. Bu if koşullarına göre ben bir alan belirleyeceğim.
+
+28
+00:10:22,316 --> 00:10:31,316
+Geldim. Yine 0 ve 1 aralığındaydı. Ben noktalarımı belirledim S2 ve S1 için.
+
+29
+00:10:31,316 --> 00:10:35,316
+Daha sonra benim doğrum S1...
+
+30
+00:10:35,827 --> 00:10:45,827
+Eşittir, 1, S2. Biz genelde doğruları biliyorsunuzdur, eşitlik vererek çiziyorduk. Eşitlik verdiğimde bu şekilde bir doğrum çıktı benim.
+
+31
+00:10:45,827 --> 00:11:00,735
+Daha sonra benim koşullarım S1 büyüktür, 1-S2. İkinci koşulumda S2 küçüktür, 0.5'ti. Şurada if koşulunda gördüğünüz koşulları yazdım.
+
+32
+00:11:00,735 --> 00:11:09,735
+Bu koşulları yazdığımda, benim ilk birinci koşulu uyguladığımda, şu yukarıdaki üçgen, siyahla işaretlediğim üçgen çıkıyor.
+
+33
+00:11:09,735 --> 00:11:22,735
+İkinci koşulu uyguladığımda, şu kırmızıyla işaretlediğim üçgen geliyor bana. Asıl buranın alanını istiyor benden. Çözüm kümem şu kırmızıyla eşitlediğim üçgen. Bu sıfırlotta beşi de...
+
+34
+00:11:23,539 --> 00:11:35,539
+S2'deki 0.5 değerini yerine koyarak buldum kesişimlerini. Daha sonra bu üçgenin alanını hesapladığımda bana 1 bölü 8 değerini vermiş oldu.
+
+35
+00:11:35,539 --> 00:11:47,539
+Bu iki soru arkadaşlar biraz düşünmenizi gerektiren bir soruydu. Gerçi Fatih Hoca dersi de anlatmamış ama yine de biraz daha düşünmenizi gerektirecek bir soruydu.
+
+36
+00:11:47,539 --> 00:11:51,211
+Herhangi bir sorunuz var mı arkadaşlar bu sorularda?
+
+37
+00:11:54,484 --> 00:11:57,484
+Anlamadığınız bir yer varsa beni durdurabilirsiniz.
+
+38
+00:11:58,484 --> 00:12:01,484
+Hocam, birinci grafik nasıl oluyor? Bir anlatabilir misiniz tekrar?
+
+39
+00:12:03,484 --> 00:12:05,484
+Buradaki polinom olan mı?
+
+40
+00:12:05,484 --> 00:12:08,484
+Yok, aşağıda birinci çözüm kümesi olan.
+
+41
+00:12:13,524 --> 00:12:16,724
+Nasıl mı? Şu siyahla işaretlediğim mi? Evet.
+
+42
+00:12:16,724 --> 00:12:24,324
+Şu S1 büyüktür, bir S2 koşulundan geliyor. Benim ifimde iki tane koşul vardı.
+
+43
+00:12:24,324 --> 00:12:36,324
+Buradaki değerleri yerine koyduğumda sağlayan noktalar ve benim S1 ve S2 noktalarım, yani nokta kümem 1 ile 0 arasında olacağı için,
+
+44
+00:12:41,875 --> 00:12:53,875
+Altını tarayacaktım ya da üstünü. S1 büyüktür, 1-2 dediği için benim bu koşulu sağlayan noktalarım üçgenin üst kısmıydı.
+
+45
+00:12:53,875 --> 00:12:59,875
+Karenin, pardon bu dikdörtgen değil kare, karenin üst kısmıydı.
+
+46
+00:12:59,875 --> 00:13:05,875
+Daha sonra da şey yaptım, ikinci koşula geldim.
+
+47
+00:13:06,080 --> 00:13:31,020
+İkinci koşulda da S2 küçüktür, 0.5 diyordu. 0.5'i aldım. Daha sonra da benim S1 eşittir, 1-S2 benim doğrumun denklemi buydu. Bunun yerine 0.5'i koyduğumda S2 yerine, benim kesişim noktamda yine 0.5 oldu. S1 kümemde.
+
+48
+00:13:31,508 --> 00:13:41,748
+Daha sonra da buradaki kırmızı ile belirtilen alanı buldum. Ben sizinle bunları paylaşacağım. Tekrar bakabilirsiniz uygulamadan sonra aklınıza takılan bir şey varsa.
+
+49
+00:13:41,748 --> 00:13:51,988
+Nokta değerlerini teker teker yerine koyarak da bulabilirsiniz. Uygulamadan sonra bakabilirsiniz tekrardan. Bu hazırladığım sunumu sizinle paylaşacağım.
+
+50
+00:13:53,428 --> 00:13:54,868
+Plastüm üzerinden.
+
+51
+00:13:56,596 --> 00:14:05,596
+Üçüncü vizy sorusu vardı arkadaşlar. Bu soruya ne cevap verdiniz? Hatırlıyor musunuz? Yapabildiniz mi, yapamadınız mı? Nasıl bir cevap verdiniz?
+
+52
+00:14:13,203 --> 00:14:16,283
+Fikriniz yok mu arkadaşlar ya da yapamadınız mı?
+
+53
+00:14:24,851 --> 00:14:45,836
+Bize Sözle Kod'da bir Recursive fonksiyon vermiş. Bu Recursive fonksiyonla 82'yi 3'e böleceğiz. Daha sonra elde ettiğimiz değeri yine 3'e böleceğiz. Bu şekilde 82'den 1'e kadar bütün bölenleri yazdıracağız.
+
+54
+00:14:49,139 --> 00:14:57,820
+Bu şekilde sözde kodla bir çözümü var. Ben ilk önce yazacağım, daha sonra bu sorunun çözümünü size göstereceğim.
+
+55
+00:14:57,820 --> 00:15:05,580
+Daha aklınızda oturması için rekürsi fonksiyonları çalışma mantığı. Geleceğim.
+
+56
+00:15:09,235 --> 00:15:27,735
+Birinci ile ikinci soruyu şekil üzerinden direkt anlayabilirdiniz ama bu kodu yazmak istedim açıkçası. Size de daha iyi olacağı için daha sonra yazdığım şey üzerinden, açarak ilerlediğim resim üzerinden size tekrar anlatacağım.
+
+57
+00:15:32,403 --> 00:15:42,884
+Biraz rekürsif fonksiyonlar açıkçası ilk öğrendiğinizde karışık gelebilir. Ben de o yüzden size yazarak anlatmak istedim.
+
+58
+00:15:52,436 --> 00:15:54,436
+Teşekkür ederim. Sizin için de faydalı olun.
+
+59
+00:16:10,035 --> 00:16:20,035
+Diğer soruları da anlattığımda üçüncü soruya geçmeden bir ara veririz ki sizin de biraz dinlenirsiniz.
+
+60
+00:16:31,091 --> 00:16:41,892
+Dördüncü soruyu da burada çözeyim. Daha sonra onu da yine aynı şekilde fonksiyonları açarak yazdığım bir görsel üzerinde anlatacağım size de.
+
+61
+00:17:06,099 --> 00:17:11,299
+İlk önce üçüncü soruyu yazmakla başlıyorum.
+
+62
+00:17:32,372 --> 00:17:37,872
+Her zaman benim recursive fonksiyonlarımda bir çıkış koşulumun olması gerekiyor.
+
+63
+00:17:37,872 --> 00:17:47,972
+Yani sizden recursive olarak bir fonksiyon tasarlamanız istendiğinde, sizin recursive fonksiyonunuzun kesinlikle bir çıkış koşulu olması gerekiyor.
+
+64
+00:17:47,972 --> 00:17:52,771
+Çıkış koşulu olmadığında sizin hiçbir zaman fonksiyonunuz sonlanmayacak.
+
+65
+00:18:02,387 --> 00:18:05,707
+Her zaman bir çıkış koşulu belirleyeceksiniz.
+
+66
+00:18:27,124 --> 00:18:31,483
+Yazarken bir yazım hatası yaptım da arkadaşlar, beni uyarın.
+
+67
+00:18:34,423 --> 00:18:39,663
+Çünkü hem anlatıp hem de yazmaya çalıştığım için yanlış yazabiliyorum.
+
+68
+00:18:46,644 --> 00:18:52,324
+Şimdi geleceğim bu fonksiyonun içerisinde, ben kendi fonksiyonumu tekrardan çağıracağım.
+
+69
+00:19:00,948 --> 00:19:04,628
+Bunun çıktıysa sizce ne olacak arkadaşlar? Sınavda ne yapmıştınız?
+
+70
+00:19:09,203 --> 00:19:14,203
+Şurayı yorum satırını alayım iki yeri de daha sonra bunun açıkçısını aldıktan sonra.
+
+71
+00:19:16,203 --> 00:19:18,203
+Bir fikriniz var mı?
+
+72
+00:19:29,587 --> 00:19:42,788
+Ne yaptı? İlk önce bunların 82'yi sürekli 3'e bölerek 1'e kadar burada 3'ün katlarını bir açılımını yaptı bize, açılımını verdi.
+
+73
+00:19:42,788 --> 00:19:48,788
+Burada kaç tane bölme işlemi gerçekleştiğini de en son bize 5 olarak döndürdü.
+
+74
+00:19:54,996 --> 00:20:19,996
+Kapatıyorum. Şimdi bunun nasıl çalıştığını buradaki şey üzerinden benim yazdığım bu fonksiyonun açılımı üzerinden bir bakalım rekürsif fonksiyon nasıl birbirini çağırmışlar. Umarım sizin için de faydalı olur. Yani böyle daha faydalı olacağını düşündüğüm için açıkçası yazdım. Şimdi benim ilk i değerim 82 ve 3'tü.
+
+75
+00:20:21,491 --> 00:20:45,932
+C değerim de 3'tü. Ben geldim, n fonksiyonunda 82 ve 3'ü tekrardan çağırdım. Artı 1 dedim. Bu tekrar f fonksiyonu olduğu için bu gelecek. Tekrar ara sonucu yazdıracak. Ara sonuç 82'ydi. 82'nin 3'e bölümü 27. Tamam, ara sonucu yazdırdı. Tekrar gelecek 27 ile 3'ü çağıracak.
+
+76
+00:20:46,175 --> 00:20:58,175
+Artı 1 vardı, bu ara sonucu yazdırdı, 27, 9. Daha sonra 3 ile 3'ü çağıracak, artı 1 var. Sürekli bunların sonunda artı 1 var ama ben işlemi yapmıyorum şu an.
+
+77
+00:20:58,175 --> 00:21:12,175
+Geldim ara sonucu yazdırdım, 3, 1. Ara sonucu printf etmiştik bu arada bunları. Daha sonra f fonksiyonunda 1 ve 3'ü çağırdım. Ara sonucum ne oldu? 1 ve 0 oldu.
+
+78
+00:21:12,660 --> 00:21:30,508
+f fonksiyonunda 0 ve 3'ü çağırdım, artı 1. Burada artık benim durmam gerekiyor. Ben ara sonucumda 0 ve 3'ü çağırdığımda benim şurada bir tane çıkış koşulum vardı. i eşit eşittir 0 ise return 0 diyordu. Ben en son...
+
+79
+00:21:31,124 --> 00:21:48,107
+Benim i değerim ne oldu? 0 oldu. i değerim eşit eşittir 0 ise return 0'ı döndüreceğim. Artık geri izleme yapacak benim fonksiyonum. Geldi buraya, 0 değerini aldı, f fonksiyonum artık beni 0 döndürdü. 0 artı 1, 1 geldi.
+
+80
+00:21:48,147 --> 00:22:05,147
+Daha sonra buradan F1 ve 3 fonksiyonu geri izleme yaptığı için 1 değerini döndürdü. 1 artı 1, 2 yaptı. Daha sonra F3 artı 3,3 fonksiyonu 2 değerini döndürdü. 2 artı 1, 3 yaptı.
+
+81
+00:22:05,147 --> 00:22:16,147
+Daha sonra 27,3 fonksiyonu 3 değerini döndürdü. 3 artı 1, 4 yaptı. Daha sonra 82,3 fonksiyonu 4 değerini döndürdü.
+
+82
+00:22:16,147 --> 00:22:27,547
+4 artı 1, 5 yaptı. Yani bizim burada çıktı da aslında ara sonuçlarla birlikte 5 değerini de göster. Kaç defa bölme işlemi yaptığımı 5 değeriyle bize vermiş oldu.
+
+83
+00:22:27,547 --> 00:22:30,147
+Burada herhangi bir sorumuz var mı arkadaşlar?
+
+84
+00:22:32,147 --> 00:22:34,859
+Recursive fonksiyonlarla ilgili.
+
+85
+00:22:37,491 --> 00:22:44,152
+Çekinmeden sorabilirsiniz çünkü rekürsif fonksiyonların biraz mantığını oturtması biraz zaman alıyor açıkçası.
+
+86
+00:22:44,152 --> 00:22:50,672
+Yani ben de kendim lisans döneminde biraz rekürsif fonksiyonların çalışma mantığını oturtmakta zorlanmıştım.
+
+87
+00:22:50,672 --> 00:22:52,672
+Özellikle yazarak çalışmıştım.
+
+88
+00:22:52,672 --> 00:23:00,351
+O yüzden size böyle yazarak anlatmanın daha iyi olacağını, daha faydalı olacağını düşündüğüm için bu şekilde yazdım.
+
+89
+00:23:00,351 --> 00:23:02,831
+Umarım faydalı olmuştu.
+
+90
+00:23:03,220 --> 00:23:05,220
+Evet, sorabilirsin.
+
+91
+00:23:05,220 --> 00:23:10,220
+Orada birinci ve ikinci adımda sürekli üçe bölüp yazdırdı, yirmi yedi, üçe böldü.
+
+92
+00:23:10,220 --> 00:23:13,220
+Sonra aslında arada bir dokuz yok ama...
+
+93
+00:23:13,220 --> 00:23:18,220
+Yani o şöyle seksen iki, yirmi yedi, dokuz dönmeyecek.
+
+94
+00:23:18,220 --> 00:23:21,220
+Yani o şekilde olması gerekmiyor mu?
+
+95
+00:23:21,220 --> 00:23:25,220
+I ve C'nin, F'nin içindeki I ve C değerlerinden bahsediyorum.
+
+96
+00:23:25,220 --> 00:23:30,188
+Seksen iki, üç, yirmi yedi, üç, sonra dokuz, üç, sonra üç, üç...
+
+97
+00:23:30,516 --> 00:23:36,516
+Galiba burayı ben kendim eklerken yanlış yazmışım. Şurası 9-3 olacak galiba. 3-3 değil de.
+
+98
+00:23:38,016 --> 00:23:44,516
+Çünkü 0-3'te dönmeyeceği için eğer bu şekilde yazarsak cevap 4 çıkar. Arada bir 9 eksik gibi.
+
+99
+00:23:44,516 --> 00:23:47,516
+Anladım, anladım. Şurayı yanlış yazmışım.
+
+100
+00:23:48,516 --> 00:23:53,259
+Şey yüklerken doğru yazar da yüklerim. Yani düzeltirim, öyle yüklerim.
+
+101
+00:23:55,604 --> 00:24:14,423
+Teşekkür ederim uyardığın için. Rica ederim. Ben hani soruyu böyle zannedip, acaba yanlış mı çözdüm diye düşündüm de, aradaki dokuzu sonradan farklı. Ay yok yok, ben orayı yanlış yazmışım yazarken. Ya bunu açıkçası son zaman ekledim de, hani aklıma geldi, hani size daha iyi olacağını düşündüğüm için orayı yanlış yazmışım.
+
+102
+00:24:17,364 --> 00:24:25,364
+Daha sonra dördüncü vize sorusuna bakalım arkadaşlar. Aşağıdaki verilen sözde kod çalıştığında elde edilecek çıktı, nasıl olurdu?
+
+103
+00:24:26,364 --> 00:24:32,364
+Bu soruyu da umarım yapanlarınız vardır, takılan da olmuştur. Bu da yine rekürsif fonksiyondu.
+
+104
+00:24:32,364 --> 00:24:36,364
+Gelelim bunu da yazayım, daha sonra çıktısına bakalım.
+
+105
+00:25:02,836 --> 00:25:08,596
+Yine benim her zamanki gibi rekürsif fonksiyondan çakış koşulum olacak.
+
+106
+00:25:20,500 --> 00:25:31,659
+Laplarda, sınavlarda, önünüzde herhangi bir rekürsi fonksiyon yazmanızı istendiğinde ilk başladığınızda düşünmeniz gereken şey çıkış koşulunun ne olacağı.
+
+107
+00:26:24,531 --> 00:26:28,531
+Burada çalıştırıyorum arkadaşlar. Şurayı açayım yorum satırını.
+
+108
+00:26:32,915 --> 00:26:34,915
+Yorum satırı olarak bulayım.
+
+109
+00:26:46,355 --> 00:26:49,155
+Bir yerde yanlış mı yaptık çalışmada?
+
+110
+00:26:55,700 --> 00:26:56,700
+Bakalım.
+
+111
+00:26:59,700 --> 00:27:02,700
+Return'da bir şey döndürmediniz herhalde hocam?
+
+112
+00:27:03,700 --> 00:27:10,700
+Yok, return'da döndürmeme gerek yok bir şey. Burada direkt çıkış yapacak. Herhangi bir şey geri döndürmeyecek.
+
+113
+00:27:14,387 --> 00:27:15,387
+Allah Allah.
+
+114
+00:27:17,587 --> 00:27:19,587
+Bir dakika, şurada yaşaya bakalım.
+
+115
+00:27:26,195 --> 00:27:28,195
+P-link'de bir şey yaptık.
+
+116
+00:27:31,195 --> 00:27:33,067
+Şurada bir hatamız var.
+
+117
+00:27:39,220 --> 00:27:53,219
+Bu şekilde üç tane, yani şey yapacaktı, ilk bit bir tane yıldız yazacaktı, daha sonra iki yıldız, sonra da üç yıldız yazacaktı arka arkaya. Bu şekilde bir çıktısı olacaktı fonksiyonun.
+
+118
+00:27:55,219 --> 00:27:56,203
+Gelelim.
+
+119
+00:28:00,243 --> 00:28:21,643
+Buraya. Çıktısı gördüğünüz gibi bu şekilde olacaktı. Nasıl yapıyor? İlk olarak, nasıl bu şekilde çıktığı alıyoruz. İlk olarak fonksiyon değeri için ben 3'ü çağırdım. Daha sonra burada herhangi bir işlem yapmadan sürekli fonksiyon kendini çağıracak.
+
+120
+00:28:22,195 --> 00:28:29,375
+Daha sonra F4, 2'yi çağıracak, F4, 1'i çağıracak, daha sonra F4, 0'ı çağıracak.
+
+121
+00:28:29,375 --> 00:28:36,255
+F4, 0 olduğunda direkt benim ne yapıyordu? Return deyip fonksiyondan çıkıyordu.
+
+122
+00:28:36,255 --> 00:28:44,336
+Daha sonra buradan çıktığı anda F1 fonksiyonuna gelecek. F1 fonksiyonunda ne yapacak?
+
+123
+00:28:44,756 --> 00:29:08,435
+Enimiz 1 oluyordu. Benim bir tane yıldızı çıktı olarak gösterecek. Daha sonra burada yukarı gelecek 2'ye. 2'ye olduğunda da iki tane yıldızı yazdıracak. Daha sonra üstteki fonksiyona gelecek 3'tü. Burada en değerim 3 olduğu için 3 tane yıldızı yan yana yazdıracak. Çıktığımız bu şekilde olacak arkadaşlar. Burada herhangi bir soru var mı?
+
+124
+00:29:12,723 --> 00:29:15,364
+Yoksa asıl şeye geçiyorum.
+
+125
+00:29:22,644 --> 00:29:24,491
+Neden çıkamıyorum ben?
+
+126
+00:29:42,612 --> 00:29:50,112
+Bu şekildeydi arkadaşlar. Herhangi vize ile ilgili herhangi bir sorunuz yoksa ben asıl uygulamanıza geçiyorum.
+
+127
+00:29:53,683 --> 00:30:08,683
+Bu sorudan sonra bir ara verebiliriz. Hani sizin de çünkü biraz örnek çok kısa değil. Ara veririz. Daha sonra en son soruyu yaparız. Daha sonra siz de Ahmet Hoca'nın proje bilgilendirme toplantısına katılırsınız.
+
+128
+00:30:33,971 --> 00:30:41,971
+Arkadaşlar, bir de size bir uyarı yapayım. Uygulamalar, namlaplarda gönderdiğiniz dosyalar C++ uzantılı olabiliyor.
+
+129
+00:30:41,971 --> 00:30:47,971
+Burada da for döngüsünün içerisinde int i, int j olarak tanımlama yapıyorsunuz.
+
+130
+00:30:47,971 --> 00:30:59,951
+Fakat C++ uzantılı dosyada yazdığımız kod çalışmıyor. Biz C++ uzantılı dosyaları kabul etmiyoruz açıkçası ama yine değerlendiriyoruz. Fakat C++ dosyası olarak çalıştırmıyorum.
+
+131
+00:30:59,951 --> 00:31:15,951
+Bu şekilde sizin kodunuz hata veriyor. Daha sonra o int, ej tanımlarını düzelttiğimizde de oradan çok olmasa da bir puan kırıyoruz açıkçası. Diğer lablarda, lab 3 ve lab 4 de buna dikkat ederseniz iyi olur uyarmak istedim.
+
+132
+00:31:18,951 --> 00:31:25,951
+Çünkü geçen lab 2'de bu şekilde çok karşılaştığım dosyalarla da.
+
+133
+00:31:27,827 --> 00:31:40,827
+Şimdi ben gelip sorumu anlatacağım, daha sonra da çözümünü yapacağım. Ben bir dizi vereceğim. Bu dizi, örnek dizimiz 199, 198, 200, 1, 0, 2, 3 olacak.
+
+134
+00:31:40,827 --> 00:31:50,827
+Ben çıktı olarak, öyle bir kodu yazmak istiyorum ki, bana çıktı olarak bunlar sıralı olmasa da, bana burada birbiriyle ardışık...
+
+135
+00:31:51,635 --> 00:32:00,635
+En uzun diziyi bulsun, en uzun dizilimi bulsun. Yani dizi, dizilim. Hani bu şeyleri bulmasını istiyorum.
+
+136
+00:32:00,635 --> 00:32:10,635
+Aynı şekilde ikincide de 1-2-3-4'tü. 100-200'dü. Burada birbiriyle ardışık ilerleyen sayıları bana göstermesini istiyorum.
+
+137
+00:32:13,471 --> 00:32:41,471
+Arkadaşlar, .c uzantılı göndereceksiniz şeyleri. Bir arkadaşınız sormuş, kaçırmış. .c uzantılı göndereceksiniz dosyaları. Ben .c uzantılı olarak gönderdiğinizde yine değerlendiriyoruz fakat oradaki yazdığınız for içerisinde tanımladığınız int i, int j'lerden biz puan kırmak zorunda kalıyoruz. Çünkü C formatındaki dosyada sizin o gönder yaptığınız tanımlar hata veriyor. Yani biz sizden int i veriyoruz.
+
+138
+00:32:41,471 --> 00:32:58,471
+iJ'yi for içinde tanımlamanızı istemiyoruz. For dışında, yani main fonksiyonda veya yazdığınız fonksiyonun içerisinde üst kısmında tanımlamanızı istiyoruz. Zaten derste de hocalarımız her zaman kod örneklerini yazarken üst kısmında tanımlıyorlar iJ'leri.
+
+139
+00:33:01,364 --> 00:33:11,604
+Bunu ben ilk önce kodunu yazıp daha sonra da yine bu şekilde açıp yazmıştım kodun açılımını göstereceğim. İlk önce beraber sizinle bunun kodunu yazalım.
+
+140
+00:33:19,667 --> 00:33:21,667
+Soruyu herkes anladı mı?
+
+141
+00:33:26,355 --> 00:33:33,355
+Yani çözdüğümüz örnekleri anlayın ki, hani ben de yazdığımda herhangi anlaşılmada bir sıkıntı olmasın.
+
+142
+00:33:47,443 --> 00:33:54,163
+Aynı slide'da gösterdiğim izi yazıyorum.
+
+143
+00:34:15,315 --> 00:34:18,315
+Bunu force yaklaşımıyla çözeceğim ilk olarak.
+
+144
+00:34:22,739 --> 00:34:29,819
+Brutforce yaklaşımı en ilki, benim direkt soruyu gördüğümde aklıma gelen çözüm.
+
+145
+00:34:35,539 --> 00:34:36,539
+Geleceğim.
+
+146
+00:34:38,539 --> 00:34:42,507
+Şimdi tanımladığımız fonksiyonu yazalım.
+
+147
+00:34:51,411 --> 00:34:53,411
+Ben yazarken takip edin.
+
+148
+00:35:39,987 --> 00:35:42,307
+Değişkemlerimi tanımlıyorum şu an.
+
+149
+00:35:46,804 --> 00:36:03,804
+Burada, ben ne yaptım? Yine döngülerim için iyice tanımladım. Current number'ı, o an karşılaştığımı yapacağım sayı tutmam için bir değişkenli tanımladım. Current sequence, bu hani o anki tuttuğum sekansın uzunluğunu tutmak için tanımladım.
+
+150
+00:36:03,804 --> 00:36:14,804
+Max'ı da, yani şimdi benim aslında buradaki verdiğim dizide 198-199-200 diye de bir sekansım var aslında, ardışık olarak.
+
+151
+00:36:14,804 --> 00:36:40,804
+gelen 200, 199, 200 de var, 198, 199 da var. Ben ama bunun içerisinde en uzun, ardışık olarak gelen diziyi bulmak istiyorum. Yani 0, 1, 2, 3, 4 uzunlukta olduğu için ben maksimum olanı yazdırmak istiyorum. O yüzden bu current sequence uzunluğu ve max'ı tutmam gerekiyor. Karşılaştırma yapacağım.
+
+152
+00:37:26,387 --> 00:37:32,507
+Benim current number'ıma dizimdeki başlangıçta ilk elemanı verdim.
+
+153
+00:37:35,891 --> 00:37:38,891
+Daha sonraki öğretmen burun sürekli değişecek.
+
+154
+00:37:47,219 --> 00:37:49,779
+Orada bir karşılaştırma yapmam gerekiyor.
+
+155
+00:38:30,164 --> 00:38:40,164
+Bu şekilde bir if koşulum var. If koşuluma girerse bu işlemleri gerçekleştireceğim. Current number'ımı 1 arttıracağım. Current sekasımı 1 arttıracağım. J'yi 0 yapacağım.
+
+156
+00:38:41,364 --> 00:38:46,164
+Şimdi örnek üzerinde baktığımızda bu işlemleri neden yaptığımızı daha iyi anlayacağız.
+
+157
+00:39:11,987 --> 00:39:28,867
+Benim maksimum değilim ilk başta 0'dı. Mesela ilk olarak bulacağı örüntü 198 ve 199. Bunu bulduğunda benim current sequence'im 2 olduğu için, max'dan büyük olduğu için artık current sequence'im benim 2 olarak güncelleyecek.
+
+158
+00:39:41,396 --> 00:39:52,356
+Start'ımı da, yani yazmaya başlayacağı elemanı da R, I olarak belirtecek. Yazdırmak için bu da.
+
+159
+00:39:56,467 --> 00:39:59,827
+Daha sonra gelelim yazdırma işlemine.
+
+160
+00:40:03,603 --> 00:40:07,603
+Yazdırma işleminde de printf.
+
+161
+00:40:24,788 --> 00:40:48,788
+Bir de arkadaşlar, direkt böyle hani biri yazıp şey yaptığında bazen direkt böyle yapılan işlemler anlaşılamayabiliyor, aklınızda oturmayabilir. Mesela bir dahaki uygulamada rekürsif fonksiyon yapacağız, özellikle onda. Hani sizden ricam çalışırken hem final için artık güzeliniz geçti, daha iyi olur.
+
+162
+00:40:48,947 --> 00:41:00,627
+yazarak, yani ben size tavsiye veriyorum, eğer anlayamıyorsanız ya da fonksiyonlar ne olduğunu veya işte rekürsü fonksiyonları nasıl işlediğini yazarak çalışabilirsiniz.
+
+163
+00:41:05,139 --> 00:41:13,099
+Yani size de vize için daha iyi olman, final için vize diyorum sürekli vizeler geçti de, yani final için daha iyi olacaktır.
+
+164
+00:41:22,612 --> 00:41:29,012
+Geçen yaptığım vizeden önceki uygulamada da söylemiştim yine, yazarak çalışabilirsiniz diye.
+
+165
+00:41:29,012 --> 00:41:36,212
+Zaten bu yazdığınız uygulama, kağıda yazdım, yani kayıda yazıp da çalışabilirsiniz diyordum.
+
+166
+00:41:36,212 --> 00:41:42,212
+Ama kendiniz de ayrıyeten açık bilgisayarınızda tekrar soruya bakarak yazmaya çalışın.
+
+167
+00:41:42,212 --> 00:41:46,012
+Hem yaptığımız laplar için sizin için iyi olacaktır.
+
+168
+00:41:54,068 --> 00:41:55,692
+Şimdi final için.
+
+169
+00:42:42,291 --> 00:42:45,971
+Bugün biraz katılamayca az galiba, vizadan sonra.
+
+170
+00:42:52,244 --> 00:42:54,244
+Bizde de zorlandınız mı?
+
+171
+00:43:13,331 --> 00:43:15,331
+Bugün çok seslisiniz arkadaşlar.
+
+172
+00:43:35,668 --> 00:43:50,967
+Evet, zorlanan arkadaşlar olmuş. Aslında bazı şeyleri ilk öğreniyorsunuz. Gerçi bilgisayar bilimlerine giriş dersi almıştınız ama bazı şeyleri ilk öğrendiğiniz için zorlanmanız normal. İnşallah final daha iyi geçer.
+
+173
+00:43:53,043 --> 00:44:19,323
+Biz ne istiyorduk arkadaşlar bu soruda? En uzun ve ardışık olarak tekrar eden sekansı bulmak istiyorduk. Bunun için bir brute force yaklaşım gerçekleştirdik. Bu brute force yaklaşımda, ben ne yaptım? İlk sıfırdan başlattım. Benim dizimin uzunluğu kadar döneceğim. Current sekansımın uzunluğunu ilk başta 1 olarak belirledim.
+
+174
+00:44:19,568 --> 00:44:27,568
+Current number'ımı da benim her ilerlettiğim i değerine verdim. Bayın başlangıçta Current number'ım 199 oldu.
+
+175
+00:44:29,568 --> 00:44:35,568
+Daha sonra, burada tekrar for içerisinde bir while döngüsü gerçekleştirdim.
+
+176
+00:44:35,568 --> 00:44:41,568
+j küçüktür, len yani benim yine dizimin boyutu kadar bir dönme işlemi gerçekleştirecek.
+
+177
+00:44:42,096 --> 00:45:02,096
+r, j, 1 diyor. Benim şu an j değerim 0. Dizimin ilk kelamı neydi? 199. 199-1, 198. Eşit eşit mi current number'ı? Değil. j değerimi 1 arttırdım. Benim artık j değerim ne olacak?
+
+178
+00:45:02,579 --> 00:45:20,579
+1'di. 1'de ne değerim var benim? 198. 198 eşit eşittir, current number'a mı? Benim current number'ım neydi? 199 değil. Daha sonra üçüncüye gelecek 200. 200 eşit mi?
+
+179
+00:45:23,795 --> 00:45:41,395
+current number 200-1, 199 eşit eşit mi current number'a? Evet eşit eşit. Artık benim current number'ımı ne yaptı? 200 yaptı, current sequence'imi de 1 arttırdı. Yani benim uzunluğumu 2 yaptı. Aynı şekilde arkadaşlar, bütün değerleri için bu şekilde dolaşacak.
+
+180
+00:45:41,395 --> 00:45:50,395
+Dolaştı, benim 199 ve 200'dü. 199, 200 bunları ardışık olarak buldu.
+
+181
+00:45:50,675 --> 00:46:00,275
+Daha sonra bu baştaki i değer için yani 199 için bir daha böyle bir sırlama bulamayacağı için while'dan çıkacak.
+
+182
+00:46:00,275 --> 00:46:09,076
+While'dan maksimum uzunluğunu, current sequence değerinin maksimum uzunluğunu atacak 2 olacak. Start'a da...
+
+183
+00:46:09,427 --> 00:46:17,027
+Benim bulduğum 199 değerini atacak. Ama bu attığı değer sürekli her dönme işleminde değişecek.
+
+184
+00:46:17,027 --> 00:46:26,228
+En son benim startıma 0 diyecek. Burada benim çünkü bulacağım en uzun dizilim 0, 1, 2, 3'tü.
+
+185
+00:46:26,228 --> 00:46:32,867
+0 diyecek. Daha sonra burada yazdırma işlemini gerçekleştirecek. Startı current number olarak alacak.
+
+186
+00:46:32,867 --> 00:46:37,427
+0, 1, 2, 3 olarak bu yazdırma işlemini gerçekleştirecek.
+
+187
+00:46:37,427 --> 00:46:44,427
+Nasıl yaptığına gelin bir bakalım. Burada karşılaştırmaları yaptım.
+
+188
+00:46:44,947 --> 00:47:04,947
+İlk önce 198 ile 199'u karşılaştırdı, eşit değil, C'yi 1 arttırdı. 197 ile 199'u karşılaştırdı, eşit değil, C'yi 1 arttırdı. 199 ile 199'u karşılaştırdı. Evet, eşit, C'yi 0 yaptı. Current number'ı 200 yaptı. Current sequence'i 2 yaptı.
+
+189
+00:47:04,947 --> 00:47:12,947
+Diğer karşılaştırmalarda yine eşitlik sağlanmayacak, C6'ya kadar gidecek. Maksimum 2 oldu uzunluğum.
+
+190
+00:47:12,947 --> 00:47:28,547
+Start'ım da 199 oldu. Yani A, İ değerim olmuş oldu. Bu şekilde diğer forları dolaşacak. En uzun uzunluk 4 olduğu için daha sonra Start değeri de 0 olacak.
+
+191
+00:47:28,547 --> 00:47:39,547
+0'dan başlayarak değerleri yazdıracak arkadaşlar. Peki bunu daha farklı nasıl çözerdiniz? Nasıl bir çözümünüz olurdu? Bu arada ara veremeyeceğiz galiba.
+
+192
+00:47:40,436 --> 00:47:45,436
+Buçukta bitirmemiz gerekiyor dersi, diğer şey de uzun uygulama.
+
+193
+00:47:47,436 --> 00:47:51,436
+Nasıl bir fikriniz var mı arkadaşlar? Nasıl bir çözüm yapardınız buna?
+
+194
+00:47:53,436 --> 00:47:55,436
+Hocam ben sıralayıp yapardım.
+
+195
+00:47:56,436 --> 00:47:57,436
+Evet.
+
+196
+00:47:57,436 --> 00:47:58,436
+Kontrol ederdim.
+
+197
+00:47:59,436 --> 00:48:01,436
+Diğer arkadaşların bir fikri var mı?
+
+198
+00:48:05,907 --> 00:48:10,507
+Sizden beklediğim cevap da sıralayıp da kontrol etmekti.
+
+199
+00:48:10,507 --> 00:48:13,787
+Sıralayıp da bir karşılaştırma işlemi yapmak.
+
+200
+00:48:13,787 --> 00:48:22,148
+İlk önce bir Brut Force çözümünü gösterip, daha sonra sıralama işlemini göstermek istedim.
+
+201
+00:48:28,371 --> 00:48:44,671
+algoritma analizinde de göreceksiniz ve brute force işlemler her zaman ilk başta akla gelen işlem çözümlerdir. Bu çözümlerin de genelde karmaşıklığı yüksek olur. O yüzden biz her zaman amacımız optimum çözümü bulmak.
+
+202
+00:48:48,628 --> 00:48:54,628
+Hızlı bir şekilde burayı çözelim, diğer soruya da vaktimiz kalsın çünkü orada rekümsü fonksiyonları anlatacağım.
+
+203
+00:48:54,628 --> 00:48:58,628
+Orada daha fazla sorununuz olur gibi geliyor.
+
+204
+00:49:00,628 --> 00:49:04,628
+Fatih Hoca'nın derste kod yazmaması demiş biri.
+
+205
+00:49:04,628 --> 00:49:11,628
+Yani hocalar genel olarak konu anlattıkları için oturup da çok fazla kod yazmalarını zaten derste...
+
+206
+00:49:12,244 --> 00:49:25,244
+imkanı yok açıkçası. Sonuçta ben de lisans burada, bizim hocalarımız da derste kod yazmıyorlardı. Biz uygulamalarda yazıyordu asistan hocalarımız aynı şekilde.
+
+207
+00:49:28,244 --> 00:49:36,244
+Fatih Hoca'nın anlattıklarından sonra siz internetten bazı örnekler bulup çözebilirsiniz kendiniz.
+
+208
+00:49:38,996 --> 00:49:45,556
+Ya da mesela bizim uygulamalarda çözdüğümüz soruları tekrar kendiniz yazabilirsiniz, bizim çözümlerimize bakmadan.
+
+209
+00:50:17,204 --> 00:50:24,204
+Bu arada arkadaşlar, ben sıralama işlemini yapmayacağım. Sıralanmış bir dizi vereceğim fonksiyona.
+
+210
+00:50:24,204 --> 00:50:33,204
+Sıralanmış bir dizide nasıl çözdüğüne bakacağız. Sıralama işlemini de yazabilirdim ama şu an vaktimiz olmadığı için. Sıralanmış bir dizi verdim direkt.
+
+211
+00:50:41,652 --> 00:50:47,412
+Proje bilgilendirme toplantısına da genç kalmanızı istemiyorum çünkü önemli.
+
+212
+00:50:59,092 --> 00:51:01,891
+Buraları hızlı yazacağım, artık daha konuşmasın.
+
+213
+00:51:59,795 --> 00:52:08,795
+Bir de daha önce lisede algoritma ile uğraşmadıysanız, programlamayla uğraşmadıysanız,
+
+214
+00:52:15,572 --> 00:52:31,992
+Anlamanız daha zor. Yani kendinize ben niye anlayamıyorum, niye bilemiyorum diye çok fazla yüklemeyin. Zamanla mantık yani algoritma mantığı oturacaktır. İlk başlarda zorlanmanız normal. Sadece biraz çaba sarf etmeniz gerekiyor açıkçası.
+
+215
+00:52:35,795 --> 00:52:41,175
+Ben de üniversitede öğrenmiştim bu arada. Benim için de zor olmuştu.
+
+216
+00:52:43,295 --> 00:52:48,172
+Ama zamanla oturacaktır. Biraz çaba sahip etmeniz gerekiyor.
+
+217
+00:53:30,068 --> 00:53:31,980
+Burada da yazdıralım.
+
+218
+00:53:35,572 --> 00:53:38,572
+Arkadaşlar, şu yazdırma işlemini şuradan alacağım.
+
+219
+00:53:52,851 --> 00:53:57,091
+Herhangi bir yanlışımız yoksa ben çalıştırıyorum. Umarım yoktur.
+
+220
+00:54:02,643 --> 00:54:14,643
+Evet, sıralı bir dizi verdiğimde, direkt daha kısa bir kodla daha az karşılaştırma işlemi yaparak, 1-2-3-4 çıktısını bize verdi.
+
+221
+00:54:19,219 --> 00:54:21,195
+Ben buraya da aynası gitmiştim.
+
+222
+00:54:35,764 --> 00:54:45,764
+Ben sıralı bir dizi vermiştim. Aslında ilk önce sıralama işlemi yapıp da verebilirdim. Sadece uzatmamak için sıralı bir dizi vermiştim. Sıralamış olduğumu varsaydım.
+
+223
+00:54:45,764 --> 00:55:01,356
+Sıralı bir dizi verdiğimde daha kısa bir şekilde daha az işlem yaparak biz en uzun oradaki sekansı, bu dizi içerisindeki en uzun sekansı bulmuş olduk. Bu şekilde.
+
+224
+00:55:01,588 --> 00:55:11,588
+Bu örneği bitiriyorum arkadaşlar. Tekrardan bakabilirsiniz çözümlere. Çözümleri yükleyeceğim uygulamadan sonra. Aynı şekilde sunumla birlikte yükleyeceğim.
+
+225
+00:55:11,588 --> 00:55:25,420
+Belki de sunumda yaptıklarım size yardımcı olur yazdığım şeyler. Ara vermeden uygulamadaki üçüncü soruya geçiyorum. Herhangi bir sorunuz var mı burayla ilgili?
+
+226
+00:55:25,427 --> 00:55:39,927
+Aslında burada karşılaştırmalarık aynı işlemleri yaptım, sıralanmış olan dizi üzerinde. Sadece, pardon. Aa bu sıralanmış olarak çağırmadık ki bunu burada.
+
+227
+00:55:47,668 --> 00:55:48,364
+Orta
+
+228
+00:55:59,603 --> 00:56:09,403
+Aynı çıktığı verecek bu dili için de sadece yaptıkları işlemler daha az olacak. Ben oradaki bir while döngüsünden kurtulmuş oldum.
+
+229
+00:56:14,260 --> 00:56:23,579
+1-2-3-4 bu şekilde yine aynı çıktığı aldım. İki algoritma da bana aynı çıktığı veriyor fakat
+
+230
+00:56:28,211 --> 00:56:49,452
+Aynı çıktığı veriyor fakat diğerinde yani sıralanmış olarak dizi üzerinde ben daha az işlem yapıyordum. Benim yaptığım bu yukarıdaki en kare karmaşıklığı bir işlemken diğer yaptığım fonksiyonda bu karmaşıklığı daha aza indirmiş oldum. Yani her zaman biz her yaptığımız işlemde
+
+231
+00:56:49,972 --> 00:56:53,972
+Daha iyi sonucu, daha iyi, daha optimum sonucu bulmaya çalışıyoruz.
+
+232
+00:56:53,972 --> 00:56:56,972
+Daha iyi bir algoritma yazmaya çalışıyoruz.
+
+233
+00:56:56,972 --> 00:56:59,972
+Karmaşıklığı düşürmeye çalışıyoruz.
+
+234
+00:56:59,972 --> 00:57:04,972
+Hocam, ama burada bir sıralama olayı da var.
+
+235
+00:57:04,972 --> 00:57:12,972
+Unutmamak lazım mesela. Dizi sıralı kabul ediyoruz biz ama sıralı kabul etmesek yine orada bir sıralama karmaşıklığımız da olacak.
+
+236
+00:57:13,684 --> 00:57:34,324
+Evet, o karmaşıklık var, sıralama karmaşıklığımız var ama sıralama da şöyle bir şey, bu en karayken yukarıdaki, sen yine iyi bir sıralama algoritması kullandığında enlogen karmaşıklıkta en iyi sıralama algoritmaları karmaşıklığı, en iyi karmaşıklık sıralamada enlogendir.
+
+237
+00:57:38,291 --> 00:57:56,692
+Sıralama algoritması kullandığında, daha sonra bunu bir fonksiyona verdiğinde, bu fonksiyon sadece bir for döngüsü içeriyor ve içerisinde sadece bir karşılaştırma yapıyor. If ya da else ikisine giriyor. Bu işlem bir olarak geçiyor. Yani dizinin boyutu kadar bir karşılaştırma yapıyor.
+
+238
+00:57:57,300 --> 00:58:02,580
+O yüzden her zaman üstteki algoritmaya göre daha iyi bir sonuç veriyor.
+
+239
+00:58:02,580 --> 00:58:08,980
+Ve n-log n artı n gibi düşün yaptığı işlemi yani. Yine n-kareye ulaşmıyor.
+
+240
+00:58:10,980 --> 00:58:12,660
+Anlatabildim mi dediğimi?
+
+241
+00:58:12,660 --> 00:58:14,100
+Evet, evet anladım.
+
+242
+00:58:14,260 --> 00:58:17,760
+Ben kafadan direkt sıralamayı da enkara olarak düşündüm de.
+
+243
+00:58:17,760 --> 00:58:31,460
+Evet, anladım. Daha iyi bir, evet, senin dediğin sıralamayı ben enkara karmaşıklığında yaparsam, bulduğum karmaşıklık enkara oluyor ama daha iyi bir sıralama algoritması kullanabilirim.
+
+244
+00:58:50,612 --> 00:58:52,612
+Hocam, ben bir şey sorabilir miyim?
+
+245
+00:58:52,612 --> 00:58:54,612
+Tabii ki sorabilirsin.
+
+246
+00:58:54,612 --> 00:58:58,612
+Fonksiyonları tanınarken pointer ne zaman ve niye kullanıyorsunuz?
+
+247
+00:58:58,612 --> 00:59:06,612
+Ya diziyi direkt şey içerisinde, fonksiyon içerisinde verirken pointer kullanıyorum. O dizinin adresini veriyorum.
+
+248
+00:59:08,612 --> 00:59:12,492
+Değişken olarak veriyorum ya fonksiyonlar içerisine.
+
+249
+00:59:16,083 --> 00:59:17,083
+Teşekkürler.
+
+250
+00:59:21,235 --> 00:59:23,795
+Çünkü o dizi üzerinde işlemler yapıyor.
+
+251
+00:59:28,307 --> 00:59:34,307
+Burada da arkadaşlar, üçüncü uygulamamızda sizinle bir kombinasyon örneği çözeceğiz.
+
+252
+00:59:34,307 --> 00:59:43,307
+Bazı harfler vereceğim. Bu harflerle oluşturan tekrarlı kombinasyon ve tekrarlı olmayan kombinasyonlarını bize üretecek.
+
+253
+00:59:43,307 --> 00:59:53,307
+İlk önce ben main fonksiyonunu yazıyorum. İlk önce tekrarlı fonksiyonunu yazıp daha sonra tekrarlı olmayan fonksiyonu yazacağız.
+
+254
+00:59:53,460 --> 00:59:56,660
+Burada yazacağım fonksiyonlar recursive olacak arkadaşlar.
+
+255
+01:00:00,275 --> 01:00:03,476
+Yani rekülse fonksiyonları göstermiş otel uygulamada.
+
+256
+01:00:18,195 --> 01:00:21,596
+Arkadaşlar bunu teker teker yazmak yerine şuradan alacağım.
+
+257
+01:00:26,483 --> 01:00:28,483
+Yok, bu değildi.
+
+258
+01:00:31,123 --> 01:00:37,843
+Bazı yerleri hızlı olmak adına kopyalık yapıştırıyorum, daha sonra hoca kodu yazdım gibi kopyalık yapıştırıyor demeyin.
+
+259
+01:00:45,331 --> 01:01:10,132
+Benim şimdi main class'ımda bir setim var. Bu set içerisinde A, B, C, D, F, G harflerim var. Ben K'yı 4 veriyorum, N'e de 7. Yani benim buradaki harflim 7 tane harfim var. K'da 4. 4 benim oluşturacağım dörtlü kombinasyonları gösterecek. Yani ben dörtlü kombinasyonlar oluşturmak istiyorum. Bunu ifade ediyor.
+
+260
+01:01:11,155 --> 01:01:26,355
+Buradaki yorum satırında kaldırdıktan sonra. Ben şimdi bütün bu harflerle oluşturabilecek dörtlü kombinasyonları yazmak istiyorum. Tekrarlı olabilir, tekrarsız olabilir. Bütün kombinasyonları ben görmek istiyorum.
+
+261
+01:01:31,923 --> 01:01:34,724
+Buna korktayayım, yanlış yazmaması ben.
+
+262
+01:02:17,139 --> 01:02:25,379
+fonksiyonum benim içerisine buradaki oluşturduğum char dizisini alacak.
+
+263
+01:02:25,379 --> 01:02:32,819
+Daha sonra bu prefikste de önceden oluşturduğum kombinasyonu tutup sonuna ekleme gerçekleştireceğim.
+
+264
+01:02:32,819 --> 01:02:35,819
+Yani benim buradaki dizimin uzunluğuydu.
+
+265
+01:02:35,819 --> 01:02:41,619
+K da benim oluşturup oluşturacağım kombinasyonların uzunluğunu ifade ediyordu.
+
+266
+01:02:41,619 --> 01:02:44,419
+int, i diyorum.
+
+267
+01:02:49,811 --> 01:03:01,708
+Bunları da yine slide üzerinde fonksiyonların açılımını göstererek yazmıştım. Orada göstereceğim yazdıktan sonra. Belki o şekilde mantık daha iyi oturur diye.
+
+268
+01:03:16,115 --> 01:03:22,092
+Yine her zamanki gibi recursive fonksiyon yazdığım için benim çıkış koşulumun olması gerekiyor.
+
+269
+01:03:49,396 --> 01:04:01,396
+Bu şekilde çıkış koşulunu yazdım. Çıkış koşulunu da yazdırıp o şekilde çıkacak oluşturduğu kombiyasyonla. Daha sonra burada recursive olarak fonksiyonu nasıl çağıracağız ona bakalım.
+
+270
+01:04:43,860 --> 01:04:49,860
+Şimdi yazılma işlem bittikten sonra anlatacağım size ne yaptıklarını.
+
+271
+01:05:06,452 --> 01:05:09,812
+Fonksiyonumu kendi içerisine tekrar çeviracağım.
+
+272
+01:05:34,835 --> 01:05:44,995
+Bakalım neler yaptık? Ben ilk önce tekrarlı olacak şekilde bir tane kombinasyon için bir fonksiyon yazdım.
+
+273
+01:05:46,995 --> 01:05:54,275
+Daha önce benim ilk oluşturduğum, burada fonksiyonu çağırıyorum, oluşturduğum bir tane prefix vardı. Bu boş, boş bir kümem var.
+
+274
+01:05:54,275 --> 01:06:01,235
+Bu boş kümeyi set 1'i oluşturdum. Fonksiyonun içerisine veriyorum, k4'tü, n'de 7'ydi.
+
+275
+01:06:01,523 --> 01:06:07,523
+Daha sonra geldim, benim burada new prefix diye tekrardan bir değişken oluşturdum.
+
+276
+01:06:07,523 --> 01:06:14,523
+Benim çıkış koşulumu yazdım, k eşittir, eşit eşittir, sıfır olduğunda yazma işlemi gerçekleştirecekti.
+
+277
+01:06:14,523 --> 01:06:21,355
+Daha sonra for döngüsü ile ben fonksiyonumu kendi içerisinde sürekli çağıracağım.
+
+278
+01:06:21,364 --> 01:06:49,364
+Burada bir kopyalama işlemi gerçekleştiriyorum. Prefiksi, new prefix'e. Bizim ilk önce prefiksimiz, ilk değerimiz boş kümeydi zaten. Daha sonra new prefix'e set i'yi ekliyorum. Yani benim bu verdiğim diziler içerisindeki i'ninci, i hangi değeri alıyorsa onu o set üzerine eklemiş olacağım. Daha sonra burada fonksiyonumu tekrardan çağıracağım. Şurada bir string concat fonksiyonu da yazmamız gerekiyor. Onu da yazalım.
+
+279
+01:06:49,364 --> 01:06:54,316
+O da kısa bir fonksiyondu. Eklemeyi nasıl yaptığınızı.
+
+280
+01:07:32,083 --> 01:07:42,804
+Yani diğer yaptığım uygulamadan ziyade bu uygulamayı, uygulama bittikten sonra kesinlikle çözmenizi tavsiye ediyorum.
+
+281
+01:08:05,012 --> 01:08:17,412
+Buradaki for study, bizim şu fonksiyonda verdiğimiz set i'dir. Yani bu dizi içerisindeki herhangi bir eleman, mesela ilk değer a olacak, a'yı ekleyecek ilk olarak.
+
+282
+01:08:42,963 --> 01:08:50,043
+En sonunda da bir boşluk karakter ekliyor. Bu şekilde concat fonksiyonumuzda yazmış olduk.
+
+283
+01:08:50,043 --> 01:08:57,603
+Şimdi ben çalıştıracağım, değerleri göreceğiz. Daha sonra da sunumda bunun nasıl gerçekleştiğine bakacağız.
+
+284
+01:08:57,603 --> 01:09:01,564
+Ya nasıl çağırıyor, ona bakacağız. Nasıl bir geri izleme uyguluyor.
+
+285
+01:09:01,564 --> 01:09:06,724
+Geliyorum. Herhangi bir yanlışımız yoktur umarım.
+
+286
+01:09:09,395 --> 01:09:11,796
+first land diyor, var.
+
+287
+01:09:36,275 --> 01:09:38,275
+[öğrenci] ya.
+
+288
+01:10:00,595 --> 01:10:05,355
+Neden burada hata verdi? Burada nasıl yapmışız bakalım.
+
+289
+01:10:18,163 --> 01:10:23,443
+Yanlış mı yazdım acaba? Evet yanlış yazmıştım.
+
+290
+01:10:33,492 --> 01:10:59,112
+Burada şimdi bakacağım. En yukarı geliyorum. Tekrar olduğu için çıktı uzun. İlk önce ne yaptı? A, A, A, A değerini verdi. Daha sonra A, A, A, B. Tekrar bu kombinasyonları kabul ediyorduk. A, A, A, C'ye geçti. A, A, D, A, E gibi bu şekilde devam etti kombinasyonları oluşturmaya.
+
+291
+01:10:59,731 --> 01:11:02,332
+Bu arada şey yapabilirsiniz.
+
+292
+01:11:05,011 --> 01:11:10,332
+Şeyden sonra size çalıştırın, bir çıktıları tekrar kontrol edin, nasıl olduğunu.
+
+293
+01:11:10,332 --> 01:11:12,332
+Geliyorum şimdi buraya.
+
+294
+01:11:13,771 --> 01:11:21,332
+Nasıl çağırma işlemini yaptı bakalım, tekrarlı kombinasyonunda çıktılarım AAA, AAB olacaktı.
+
+295
+01:11:21,747 --> 01:11:31,747
+İlk başta benim fonksiyonumda çağırdığımda set birimi verdim, elimde boş bir prefiks vardı, enim 7'ydi, k'm da 4'tü.
+
+296
+01:11:31,747 --> 01:11:44,747
+Daha sonra tekrar kendi içerisine çağırdığımda naptı geldi burada a değerini, i0'du ya geldi a değerini eklemiş oldu.
+
+297
+01:11:46,387 --> 01:12:08,387
+A değerini ekledikten sonra artık benim new prefix'imin içerisinde A olmuş oldu. Bunu tekrar çağırdı. Ben K değerimi ne yapmıştım? K değerimi artık benim 3'tü. 3 olduğundan tekrar bir daha çağırdım. Yanına A'yı tekrar ekledim.
+
+298
+01:12:08,659 --> 01:12:17,219
+Bu her çağırmada i değişmediği için i'yi a olarak alıyor. Yani i değil baştan başlıyor ve a'yı alıp ekliyor.
+
+299
+01:12:17,219 --> 01:12:28,020
+a'yı ekledi. Buradaki k değeri 2 oldu. Tekrar çağırdığımda tekrar a'yı ekledi şu ara işlemde, bu fonksiyonu çağırdığımda.
+
+300
+01:12:30,163 --> 01:12:45,163
+Set 1 oldu. Yine set 1'i veriyorum sürekli içerisine. A, A, A oldu. Boyutum hiçbir zaman değişmiyor. 7. K değerim 1 oldu. Set 1'de A, A tekrar bu fonksiyonu çağırıyorum. 4 tane A var.
+
+301
+01:12:46,452 --> 01:13:14,452
+n değerim 7, k değerim 0 oldu. k değerim 0 olduğunda benim bir çıkış fonksiyonum vardı. k eşit eşittir 0 ise diyordum, prefiksi gel yazdır. Daha sonra bu fonksiyonun işlemini bitir. Bu fonksiyonun işlemini bitirdikten sonra benim ne yapıyor burada? Bu 0 için yani şu en son çağırdığım fonksiyon için bitiyor. Büyüs fonksiyona tekrar geçiyor. Artık ben büyüs fonksiyon...
+
+302
+01:13:14,452 --> 01:13:39,692
+Fonksiyonlar, i0 değerini denediği için, şu fonksiyon da i0 denediği için i'yi 1 yapıyor. Artık benim i1 değerim b'ydi. Bu sefer sonuna b'yi ekleyip yazdırıyor. Bak tekrardan bir şey yapalım. Yani artık şuradaki fonksiyonumu çalıştırıp sonlandırmaya çalışıyor.
+
+303
+01:13:41,363 --> 01:14:08,083
+Geldim. Yen sonuncusu sonlanmıştı çünkü. Ne yapacak? A, A, A, A, B yazacak. A, A, A, B, A, A, A, C yazacak. A, A, A, A, D yazacak. Bunların hepsini gezdikten sonra artık daha sonra B'ye geçecek. Yani B için olan A, A, A, B, C gibi bu değerleri kontrol edecek. Tekrardan çalıştırayım. Çıktıya tekrardan bakalım.
+
+304
+01:14:10,612 --> 01:14:21,811
+Daha iyi anlamanız için. Sonra diğer tekrarlı olmayan kombinasyona geçeceğiz. Onu da 15 dakikada yazarız herhalde. Daha sonra siz de proje toplantısına geçersiniz.
+
+305
+01:14:21,811 --> 01:14:33,612
+İlk önce ne demiştim? AAA'yı yazdıracak. Daha sonra bir üst fonksiyona geçecek bunu yazdırdıktan sonra AAAB'yi yazdıracak. Daha sonra AAAC'yi yazdıracak.
+
+306
+01:14:38,804 --> 01:15:03,804
+B'ye geçecek bu sefer. Artık A, A, A için bakmış, A, A, A, B için bakacak. A, A, B için de tekrardan bütün dizinin elemanlarını A, A, A, B'nin sonuna ekleyecek. Bu şekilde hep bir geri izleme uygulayacak. Daha önceki fonksiyonlarda anlatmıştım. Hep bir geri izleme oyunu uyguluyordu. Bu fonksiyonda da aynı şekilde geri izleme oyunu kullanacak. Şu an direkt belki...
+
+307
+01:15:04,416 --> 01:15:08,775
+Anlamamış olabilirsiniz ya da ne bileyim zorlanmış olabilirsiniz anlamakta.
+
+308
+01:15:08,775 --> 01:15:15,935
+Ama tekrar ettiğinizde daha iyi oturacaktır yaptığımız işlemler.
+
+309
+01:15:15,935 --> 01:15:25,416
+Sizler ricam özellikle bu soruyu yazarak çalışın. Hem kendiniz yazın hem kağıda yazın. Bir bakın fonksiyonu nasıl çağırıyor diye.
+
+310
+01:15:25,684 --> 01:15:36,684
+Ben olabildiğince nasıl çağırdığını göstermeye çalıştım ama biraz rekürsif fonksiyonları direkt ilk kodladığımda e evet böyleymiş demek bazen kolay olmuyor.
+
+311
+01:15:36,684 --> 01:15:47,684
+Finalde de büyük ihtimalle rekürsif fonksiyonlarla karşılaşırsınız. O yüzden demek istediğim biraz tekrar edin, yazmaya çalışın. Mesela bitiş koşulunu.
+
+312
+01:15:48,256 --> 01:15:54,056
+Ne olacağını bakmadan bir düşünün, ne olabilir, nasıl biçiş koşulu, nasıl yazabilirim diye.
+
+313
+01:15:54,056 --> 01:15:57,456
+Şimdi tekrar olmayan kombinasyona geçelim.
+
+314
+01:16:21,492 --> 01:16:24,492
+Bu satırını alayım artık, bu tekrarla ulandı.
+
+315
+01:16:28,659 --> 01:16:33,659
+Tevrallı olmayan için, ben bir tane daha değişken tutmam gerekiyor.
+
+316
+01:16:33,659 --> 01:16:38,659
+Hani o da artık aile değeri almasın, bir sonraki değeri alsın.
+
+317
+01:16:38,659 --> 01:16:40,659
+Mesela sürekli a, a, a oluşturabiliyordu.
+
+318
+01:16:40,659 --> 01:16:45,659
+Ben artık diyorum ki sen a'yı aldıysan bir daha a'yı alma, b'yi al.
+
+319
+01:16:45,659 --> 01:16:48,659
+Hani a'nın yanına bir daha a gelmesin istiyorum.
+
+320
+01:17:09,363 --> 01:17:13,923
+Aynı mantık olsa sadece bir değişmen tutuyorum bunda tekrarlı olmaması için.
+
+321
+01:17:13,923 --> 01:17:16,243
+Çağırma, işleme aynı.
+
+322
+01:17:29,652 --> 01:17:33,412
+Başlangıç aynı olduğu için buradan kopyalayacağım direkt.
+
+323
+01:17:46,195 --> 01:17:53,695
+Burada, for döngüsünde bir değişikliğimiz olacak bizim. For i'yi eşittir diyeceğim.
+
+324
+01:18:02,355 --> 01:18:11,555
+Yani bir sonraki elemanı eklemek için bu last edit bunu tutmam gerekiyor. Aynı elemanı üst üste eklememek için.
+
+325
+01:18:25,876 --> 01:18:49,556
+Buraları aynı aslında, şunu direkt yazacağım buraya arkadaşlar. Mesela şuradaki çağırdığı şeyi değiştireceğim. K-1. Artık şurada i değerini de tutacağım. Her zaman eklediği i değerini tutacak, daha sonra bu eklediği i değerinin bir fazlasını ekleyecek artık aynı değeri eklememek için.
+
+326
+01:18:50,579 --> 01:18:59,579
+Yaptığı işlem tamamen aynı, sadece şurada bir değişken tutarak tekrarlı kombinasyon oluşturmamayı amaçlıyor.
+
+327
+01:18:59,579 --> 01:19:07,579
+Bunu da çalıştıralım, bir çıktısına bakalım daha sonra bu fonksiyonu recursive olarak nasıl çağırmışız, ona bakalım tekrardan sunumdan.
+
+328
+01:19:11,988 --> 01:19:14,988
+Her zaman peyninle bir yazım yanlışı yapmışız.
+
+329
+01:19:54,868 --> 01:19:56,812
+Burayı değiştirmedik.
+
+330
+01:20:09,844 --> 01:20:13,443
+Allah Allah! Siz görüyor musunuz arkadaşlar?
+
+331
+01:20:23,891 --> 01:20:25,572
+Nerede hata yaptığımızı?
+
+332
+01:20:31,315 --> 01:20:36,595
+Bir fikriniz var mı? Ben de bakayım.
+
+333
+01:20:42,899 --> 01:20:43,899
+Tamam.
+
+334
+01:20:46,219 --> 01:20:47,779
+Burası da tamam.
+
+335
+01:20:48,420 --> 01:20:50,739
+Bu arada yazıyorsanız da görmüyorum.
+
+336
+01:20:53,379 --> 01:20:54,579
+Kalem.
+
+337
+01:20:58,836 --> 01:20:59,756
+Bu.
+
+338
+01:21:21,939 --> 01:21:36,939
+Artık burada ben tekrarlı kombinasyona izin vermedim. İlk başta bana A, B, C, D değerini oluşturdu. Daha sonra A, B, C, E, A, B, C, F. Bu şekilde...
+
+339
+01:21:37,716 --> 01:21:53,216
+G'ye kadar gitti, daha sonra A, B, D, D'ye geçiyor. Yani teker teker bir geri işleme adımı uyguluyor. Tekrar ona da bakalım şeyden, bu çıktığımız burada dursun. Bir sunumumuza gelelim.
+
+340
+01:21:55,539 --> 01:22:13,539
+Bu tekrarlı ve tekrarlısız kombinasyon kısmıydı. Ben burada bir değişken tutuyordum ki aynı değerleri arka arkaya eklenmesi için. Tekrarlı olmayan kombinasyon açıkları A, B, C, D, A, B, C, E gibi devam etmesi gerekiyor.
+
+341
+01:22:21,908 --> 01:22:44,768
+Last edit değişkenini de eksi 1 olarak tutuyor. Daha sonra A'yı ekliyor. A'yı ekledikten sonra K'yı bir azaltıyor. Last edit artık 0 oldu. Yani benim i'yi alıyordu. i benim 0 olduğu için A'nın indisi. Burada 0'ı aldı. Daha sonra last edit artı 1'di. Birinci indisteki değeri bunun yanına ekleyecekti. AB yaptı.
+
+342
+01:22:45,203 --> 01:22:50,804
+Daha sonra tekrar fonksiyonunu çağırdı. Burayı 1 arttırdı, 2 oldu.
+
+343
+01:22:51,572 --> 01:23:03,771
+K değerim biraz azaldı, A, B, C oldu. Daha sonra tekrar çağırdığında benim ne olmuştu? Last Earth'taki indistriye 3 olmuştu. Üçüncü değerim benim D idi.
+
+344
+01:23:03,771 --> 01:23:13,771
+K'yı biraz azaldı, 0 yaptı. Elim hala 7. Burada D oldu. A, B, C, D'yi ekrana bastı. Şu şekilde benim yine...
+
+345
+01:23:17,908 --> 01:23:28,068
+Şöyle kapatalım. Benim yine çıkış koşulum k eşit eşittir, sıfır olduğu için sıfır olduğu anda k gelip burada prefiksi bize yazdırması gerekiyor.
+
+346
+01:23:28,068 --> 01:23:35,747
+Daha sonra ne yapıyor? Tekrar bakalım. Daha sonra virüs değere geçiyor. A, B, C'de.
+
+347
+01:23:36,051 --> 01:23:46,051
+Daha sonra buraya ne ekleyecek? A, B, C, D yaptıktan sonra benim burası uçtu ya, burası 4 olacak, bir daha arttıracak.
+
+348
+01:23:46,051 --> 01:23:53,051
+A, B, C, E'yi ekleyecek. Artık şuraya bir ekleme işlemi gerçekleşiyor, bir geri izleme adımı yapıyor.
+
+349
+01:23:53,555 --> 01:24:18,055
+Aynı zamanda geriye izlerken i'yi de bir arttırmış oldu. Artık buraya e'yi ekleyecek. Buradaki bütün kombinasyonlar bittikten sonra bir üste gidiyor. Artık A, B'nin arkasına bir ekleme yapması gerekiyor. Daha sonra bir üste gidiyor. Yani aslında bir ağaç yapısı gibi düşündüm bunu. İlk başta kökte bu var. Bunlar dallanıyor.
+
+350
+01:24:18,452 --> 01:24:36,452
+Geldiğim en sondaki daldaki işlemi bitirdikten sonra bir üst dala çıkıyorum. O bir üst daldaki daha sonra diğer dallara bakıyorum. O bir üst dala bağlı olan. Daha sonra böyle geri izleme işlemleri yaparak en üstteki köke gitmeye çalışıyorum. Bu şekilde bir geri izleme adımı uygulanıyor arkadaşlar.
+
+351
+01:24:38,452 --> 01:24:42,452
+Burada, yani bu örnekte biraz kafanız karışmış olabilir.
+
+352
+01:24:43,123 --> 01:24:50,324
+Çünkü rekürsel olarak çok basit bir örnek değil. Tekrar ederseniz daha net kafanızda oturacaktır.
+
+353
+01:24:50,324 --> 01:24:57,123
+Çok fazla söyledim ama son kez söylüyorum. Final için, laplar için.
+
+354
+01:24:57,247 --> 01:25:07,747
+Tekrar kendiniz yazın. Ayrıca yazmanız da yeter değil. Elinize bir kalem kağıt alın. Nasıl çağırıyor? Nasıl geri izleme adımları nasıl uyguluyor?
+
+355
+01:25:07,747 --> 01:25:15,747
+Gerekirse adımları ara çıktılar ekleyin. Bu şekilde anlamaya çalışın. Anlayacaksınızdır zaten.
+
+356
+01:25:15,747 --> 01:25:21,747
+Hani çok da zor anlaşılmayacak şeyler değil mi? Belki birçoğunuz şu an anlatırken bile anladı. O yüzden...
+
+357
+01:25:22,323 --> 01:25:29,804
+Size kolaylıklar diliyorum. Şu an buçukta da Ahmet Hoca projeyi anlatmaya başlayacak.
+
+358
+01:25:29,804 --> 01:25:36,963
+Eğer hangi bir sorunuz yoksa, herhangi bir söyleyeceğiniz bir şey yoksa, uygulamayı burada bitirmeye başlıyorum.
+
+359
+01:25:36,963 --> 01:25:45,283
+Umarım size için faydalı olmuştur. Yani faydalı olması için biraz üstüne eklemeler yaptım, çıktıkları kendim elle anlattım falan.
+
+360
+01:25:48,659 --> 01:25:50,659
+Bilniğiniz için teşekkür ederim.
+
+361
+01:25:53,971 --> 01:26:01,971
+Herhangi bir sorunuz yoksa, uygulamayı burada sonlandıracağım. Beş dakika sonra da proje toplantınız başlayacak.
+
+362
+01:26:01,971 --> 01:26:08,971
+Fatih Hoca chat'e bırakmıştı toplantı linkini. Aynı şekilde Classroom'da Ahmet Hoca da paylaştı.
+
+363
+01:26:08,971 --> 01:26:16,971
+Oraya tıklayarak toplantıya girebilirsiniz. Herkese iyi günler diliyorum. Kolay gelsin.
+
+364
+01:26:16,971 --> 01:26:18,971
+İyi günler hocam.
+
+365
+01:26:18,971 --> 01:26:20,971
+İyi günler.

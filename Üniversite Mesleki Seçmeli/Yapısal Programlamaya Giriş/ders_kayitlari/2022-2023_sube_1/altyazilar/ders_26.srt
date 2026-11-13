@@ -1,0 +1,2355 @@
+1
+00:00:36,884 --> 00:00:38,884
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:41,884 --> 00:00:42,884
+Yeniyor canım.
+
+3
+00:00:42,884 --> 00:00:43,884
+Tamam.
+
+4
+00:00:45,884 --> 00:00:48,884
+Neredeyse 9.20 geçe başlayacağız arkadaşlar.
+
+5
+00:00:49,884 --> 00:00:53,884
+Şimdi izin isteyeceğim sizden. 20 geçe görüşmek üzere ediyorum.
+
+6
+00:19:28,019 --> 00:19:30,019
+Sesim geliyor mu arkadaşlar?
+
+7
+00:19:37,299 --> 00:19:38,955
+Günaydın arkadaşlar.
+
+8
+00:19:43,859 --> 00:19:48,859
+Sesim geliyor mu? Geliyor, geliyor, geliyor. Tamam, peki.
+
+9
+00:19:50,859 --> 00:19:52,859
+Peki.
+
+10
+00:19:53,859 --> 00:19:59,859
+Bugün on ikinci dersimizmiş, dönem sonuna geldik artık.
+
+11
+00:20:01,859 --> 00:20:02,859
+Peki.
+
+12
+00:20:05,859 --> 00:20:06,859
+O zaman başlayalım.
+
+13
+00:20:07,859 --> 00:20:09,859
+Bugün şu...
+
+14
+00:20:12,627 --> 00:20:39,563
+İlk konumuz, işte gambler dilema diye bir şey vardır, kavram vardır. Kumarbazın ikilemi, o şekilde ifade edebiliriz. Evet, kumardan bahsedeceğiz. Şimdi bir oyun var, şans oyunu. Bu oyunumuz da...
+
+15
+00:20:40,435 --> 00:20:58,435
+Kumarbazın evine mutlu dönme olasılığını hesaplayacağız. Tamam mı? Bunun için ilk önce bir simülasyon oluşturacağız. Tabi bir de oyunu tariflerimiz lazım. Oyunumuz çok basit bir oyun olacak.
+
+16
+00:20:58,435 --> 00:21:00,172
+Şimdi...
+
+17
+00:21:06,836 --> 00:21:12,836
+Başlayalım. Oyunumuzda...
+
+18
+00:21:18,483 --> 00:21:30,884
+Bir oyunun bitme koşulu var. Başlangıçta kumarbazın elinde, elde diyelim, elde n lirası olsun.
+
+19
+00:21:32,723 --> 00:21:34,083
+İki tane durumu var.
+
+20
+00:21:36,884 --> 00:21:44,083
+Sürecin bitmesi için. Bunlardan bir tanesi, n artı m lira kazandığında
+
+21
+00:21:46,387 --> 00:22:13,028
+Sevinecek. Tamam. Ya da hiç parası kalmayacak, o zaman da üzülecek. Tamam. Yani kumaranların içeriye N lirayla giriyor. Dışarıya N artı N lirayla çıkacak ya da sıfırlarıyla çıkacak. Başka bir olasılığımız yok. Tamam. N ve M'i dışarıdan alacağız. Yani kullanıcı söyleyebilir.
+
+22
+00:22:14,516 --> 00:22:27,516
+Peki, nasıl olacak bu para kazanma ve kaybetme nasıl olacak? Çeşitli turlar olacak. Bu turların her birinde, her birinde, P olasılıkla 1 lira kazanacak.
+
+23
+00:22:29,516 --> 00:22:34,516
+1-P olasılıkla da 1 lira kaybedecek.
+
+24
+00:22:36,516 --> 00:22:37,516
+Yani diyelim ki,
+
+25
+00:22:39,028 --> 00:22:43,028
+Bizim başlangıçta elimizde 10 liramız var.
+
+26
+00:22:45,028 --> 00:22:54,028
+Başladığı oyun, birinci oyunda iki durum olabilir. Ya 11 liraya çıkabilir parası ya da 9 liraya düşebilir.
+
+27
+00:22:54,028 --> 00:22:57,028
+Bir sonraki durumda neler olabilir?
+
+28
+00:22:57,028 --> 00:23:03,627
+Mesela 11'den ne olabilir? 12'ye gidebilir ya da 11'den 10'a inebilir, 9'dan 10'a çıkabilir.
+
+29
+00:23:04,372 --> 00:23:15,172
+Ya da 9'dan 8'e inebilir, 11'den 13'e gidebilir, buradan 11'e çıkabilir, buradan 9'a inebilir, buradan 9'a çıkabilir, buradan 7'e inebilir, böyle gidiyor. Tamam.
+
+30
+00:23:17,172 --> 00:23:22,572
+Bu birinci tur, bu ikinci tur, bu üçüncü tur, bu böyle gidiyor.
+
+31
+00:23:24,172 --> 00:23:27,772
+Öyle bir tur olacak ki, öyle bir durum olacak ki, o durumda...
+
+32
+00:23:28,500 --> 00:23:56,339
+Parası 0 liraysa ya da n artı m liraysa, atıyorum işte bu 10 dedik ya, mesela m'i de 5 dersek, bu n eşittir, m'i de mesela 5 dersek, bir yerde parası 15 lira olacak mesela. Olursa eğer 15 lira olduğu durumda gidecek, çıkacak oyundan ya da 0 lirası kalacak, o durumda da çıkacak oyundan. Anlaşıldı mı şeyimiz, mantığımız? Oyunun mantığı?
+
+33
+00:24:01,940 --> 00:24:19,940
+Sesiniz gelmiyor. Peki. Şimdi, şunu istiyorum sizden, şunun algoritmasını oluşturmanızı istiyorum. Oyuncunun ya 0 lirayla ya da n artı n lirayla oyundan...
+
+34
+00:24:25,652 --> 00:24:39,251
+gerçekleştirin istiyorum. Yani en dışarıdan geliyor ve dediğim gibi bu iki durumdan birine ulaşana kadar bu oyunu oynuyor. Tamam.
+
+35
+00:24:39,251 --> 00:24:52,852
+Bunun için size rastgele bir değişken lazım, rastgele bir değer üreteceğiz P için. Onu da işte rampla falan şey yapabilirsiniz, ifade edebilirsiniz.
+
+36
+00:24:53,332 --> 00:25:00,332
+Rastgele bir eşken üretimini, mesela 0 ile 1 arasında üniform dağıdımdan bir şey üretiyor diyebilirsiniz.
+
+37
+00:25:00,332 --> 00:25:09,332
+0 ile 1 arasında, yani bütün olasılıkların gelmesi eş, üniformdan kastımız, öyle hatırlarsanız.
+
+38
+00:25:09,332 --> 00:25:16,332
+Böyle bir rastgele sayı üreticimizin olduğunu varsayalım.
+
+39
+00:25:17,140 --> 00:25:31,140
+ve bu durumda bunun algoritmasını oluşturalım. Size bir üç dakika vereyim. Dört dakika vereyim hatta. 9.30 diye. Tamam, 9.30'a kadar bekliyorum.
+
+40
+00:25:42,132 --> 00:25:49,812
+Bir algoritma oluşturma bakalım. Dediğim gibi tek seferlik, yani oyundan iki durumdan birinde çıkacak.
+
+41
+00:25:51,092 --> 00:25:56,012
+Dolayısıyla burada kaç tur oynanacağı belli değil aslında, değil mi en baştan?
+
+42
+00:25:56,012 --> 00:26:01,932
+Dolayısıyla burada nasıl bir döngü kuracaksınız falan onları bir tasarlayın bakalım. Bekliyorum.
+
+43
+00:29:01,652 --> 00:29:04,152
+Evet, çözüm şu anlar kimler bakalım.
+
+44
+00:29:12,084 --> 00:29:16,564
+Chat'ten artı bir yazabilirsiniz, algoritmayı geliştirdiğinizi düşünüyorsanız.
+
+45
+00:29:34,771 --> 00:29:35,831
+Çin 3'i.
+
+46
+00:29:42,036 --> 00:29:48,036
+Peki, o zaman biraz... Ben bir şeyler yazmaya çalışayım.
+
+47
+00:29:49,036 --> 00:29:58,036
+Şimdi, öncelikle kullanıcıdan almamız gereken şeyler neler? Bana onları söyleyebilir misiniz? Neler almamız lazım kullanıcıdan?
+
+48
+00:30:02,036 --> 00:30:05,796
+Ne? Ne? Başka?
+
+49
+00:30:10,228 --> 00:30:36,844
+P mi? E olabilir. E yeter herhalde. Peki, şimdi, dediğiniz gibi iki durum var. n artı m ile çıkacak ya da sıfırla çıkacak. Bu n artı m'e h diyelim şimdilik. h eşittir n artı pardon.
+
+50
+00:30:39,155 --> 00:30:55,076
+ht'li eşittir n artı m olsun, onu kullanacağız çünkü. Şimdi elindeki mevcut parayı hala biz n değişkeninde tutmaya devam edelim, tamam mı? Yani elin üzerinde değişiklik yapalım.
+
+51
+00:30:55,827 --> 00:31:03,268
+H diye yeni bir değişken tanımladım çünkü n artı m'nin toplamının en başta belirli olması ve onun değişmemesi gerekiyor.
+
+52
+00:31:03,268 --> 00:31:18,708
+n'i eğer elindeki para olarak tutarsak o zaman n artı m değişkeninin değeri değişeceği için o yüzden en başta bir kere h eşittir n artı m yaptım ki bitiş koşulunu hiçbir zaman değiştirmemiş olalım.
+
+53
+00:31:18,708 --> 00:31:22,539
+Şimdi derdimiz ne bizim? İki durum var. Yani elindeki para...
+
+54
+00:31:23,124 --> 00:31:25,124
+ki bu durumda n diyeceğiz.
+
+55
+00:31:25,124 --> 00:31:33,124
+h'dan küçük olduğu sürece ve elindeki para sıfırdan büyük olduğu sürece devam edecek değil mi bu oyuna?
+
+56
+00:31:33,124 --> 00:31:35,124
+Şey bu.
+
+57
+00:31:35,124 --> 00:31:41,124
+Peki, o zaman bir while'a ihtiyacımız var değil mi? Kaç tur döneceğimizi bilmiyoruz.
+
+58
+00:31:41,124 --> 00:31:42,048
+Dolayısıyla...
+
+59
+00:31:42,048 --> 00:31:52,048
+Bizim n'imiz, n'imiz h'tan küçük olduğu sürece ve aynı şekilde n'imiz sıfırdan büyük olduğu sürece, bunlar yine n ile bağlılar.
+
+60
+00:31:52,048 --> 00:32:01,048
+Bu iki şart sağlandığı sürece oyuna devam edecek. Peki, iyi, güzel. Peki oyunu nasıl oynatacağız?
+
+61
+00:32:01,048 --> 00:32:06,763
+Yani şimdi bizim mesela atıyorum p0.3 olduğunu varsayalım, tamam p0.3.
+
+62
+00:32:06,900 --> 00:32:15,400
+0.3 olasılıkla 1 kazandıracağız. 0.7 olasılıkla da eksi 1 eklenecek değil mi? İki durumumuz var.
+
+63
+00:32:16,900 --> 00:32:28,100
+Şimdi bunu nasıl gerçekleştirebiliriz? Elimizde bir şey var, nedenle ona? 0 ile 1 arasında sayı üreten, uniform dağılımdan sayı üreten bir değişken var. Bir fonksiyonumuz var.
+
+64
+00:32:28,100 --> 00:32:33,600
+Mesela bunun, şöyle bir şey düşünebiliriz. Şu kısmını, şu kısmını
+
+65
+00:32:33,875 --> 00:32:56,195
+kazanmaya, şu kısmını da kaybetme ayırabiliriz. Mesela burası 0.3 olsun. Yani ben şöyle bir şey yapacağım. Rastgele bir değer seçeceğim. O değer 0.3'ten küçükse bu durumda kazanacak, artı bir diyeceğim. Büyükse de kaybedecek. 0-1 kaybedecek.
+
+66
+00:32:57,428 --> 00:33:10,428
+Bunu yaptığımızda, buradaki artıların, artı bir ve eksi birlerin oranı nasıl bir şey olacaktır? Dediğim gibi, artı birler %30, eksi birler ise %70 oranında olacaktır, değil mi? Bakın. Dolayısıyla bu da istediğimiz şey zaten.
+
+67
+00:33:10,428 --> 00:33:22,428
+Dolayısıyla ben, işte random diye bir şeyim olsun, fonksiyonum olsun, bu fonksiyon da mesela, rant diyelim ona, tamam rant fonksiyonu mesela içine bir şey göndermeyelim.
+
+68
+00:33:24,915 --> 00:33:30,915
+1-P'den büyükse, ya da tersini de yapabiliriz, çok çok önemli değil.
+
+69
+00:33:30,915 --> 00:33:37,915
+Ve bu durumda n'i bir arttıralım. Diğer durumda da n'i bir azaltalım.
+
+70
+00:33:45,044 --> 00:33:56,544
+Sonra, belki kaç tur oynamak istediğimizi tutmak için şöyle bir şey yapabilirim. Mesela t eşittir t artı 1 de kaç tur döndüğümüzü görmek istiyoruz. Mesela sıfırdan başlatalım t'yi.
+
+71
+00:33:56,544 --> 00:34:02,744
+Bunu da bir döndürdük ve burada işimizi bitirdik. Burada da stop dedik.
+
+72
+00:34:06,451 --> 00:34:10,452
+Şimdi, takıldığınız bir yer var mı algoritmada?
+
+73
+00:34:33,108 --> 00:34:52,108
+Anlaşıldı mı? Bir soru işareti var mı yaptığımız işle? Yani en tricky kısım şu rant ile yaptığımız iş. Orada dediğim gibi, bir sayı çekiyoruz sıfırla bir aralığında. O sayı belli bir sayının üstünde, belli bir değerinin üstündeyse, bir şey altındaysa bir şey yapıyoruz.
+
+74
+00:34:52,108 --> 00:35:00,108
+Ve işte o belli bir sayı eşik değeri aslında bizim o olayların olma olasılığını ayarlamamızı sağlıyor.
+
+75
+00:35:00,108 --> 00:35:00,972
+Tamam.
+
+76
+00:35:01,811 --> 00:35:10,991
+Şu ana kadar yapmamış olduğumuz bir, görmüş olduğumuz bir yaklaşım daha doğrusu.
+
+77
+00:35:12,331 --> 00:35:29,132
+Şimdi peki, bunu bir de şeyi görmek isteyebiliriz. Mesela oyun bitti, yani ya n artı m ile ya da 0 liraya dışarı çıktı.
+
+78
+00:35:29,300 --> 00:35:36,800
+Bu süreci görmek isteyebiliriz. Yani başlangıçta parası nden başlıyor, ondan sonra ne oldu?
+
+79
+00:35:36,800 --> 00:35:43,300
+İşte azaldı, arttı, azaldı, arttı falan böyle gidiyor bu. Belli bir yerde de bitecek.
+
+80
+00:35:43,300 --> 00:35:50,284
+Peki, bunu böyle görmek istesek nasıl bir işlem yapmamız gerekir?
+
+81
+00:35:50,739 --> 00:36:04,579
+Yani bu değerleri saklamak istesek nasıl bir şey yapmamız gerekir? Yani her bir adımdaki, böyle söyleyelim, her bir adımdaki en değerini saklamak istesek nasıl bir ekleme yapmak gerekir algoritmaya? Basit bir şey.
+
+82
+00:36:31,443 --> 00:36:36,443
+[öğrenci] dizi oluşturur. [öğrenci] dizinin t-ci indeksine ekliyor. Aynen öyle bir dizi oluştururuz.
+
+83
+00:36:36,443 --> 00:36:46,443
+A adında mesela. Şu t eşit t artı bir kısmı var ya, t eşit t artı bir kısmından sonra mesela, diyebiliriz ya da öncesinde,
+
+84
+00:36:46,443 --> 00:36:53,443
+r t eşittir n deriz değil mi? Yapabileceğimiz şey o. r t eşittir n deriz.
+
+85
+00:36:55,123 --> 00:37:08,243
+Peki, şimdi ve bu RT dizisini de diyelim ki çizdirdiğimizi bahsedelim. Yani şuraya bir ekleme yapıyorum. RT eşittir pen diye bir ekleme yapıyorum araya.
+
+86
+00:37:09,652 --> 00:37:28,652
+Ve şu noktada çizdireceğim. Şimdi bunu çizdirdiğim zaman nasıl bir şeyler görebiliriz? Görebileceğimiz şeyler şöyle bir şeyler olabilir. Mesela şurasının t'yi gösterdiğini düşünelim. Şurası nereden başlayacak? n'den başlayacak. n artı m'inde şurası olduğunu düşünelim. h yani şurasının büyüklüğü m. Tamam.
+
+87
+00:37:28,652 --> 00:37:36,652
+Bu işte az olacak, yükselacak falan. Mesela şöyle bir yerlerde mesela buraya vurabilir. Burada bitebilir. Bir oyun böyle bitebilir mesela.
+
+88
+00:37:37,204 --> 00:37:45,204
+Başka bir oyun, belki yine şöyle başlayacak, sonra belki, şöyle şurada tam sıfıra değecek, burada bitecek.
+
+89
+00:37:45,204 --> 00:37:53,204
+Belki başka bir oyun, şöyle başlayacak, şöyle gidecek, sonra şurada bir yerlerde sıfıra gidecek.
+
+90
+00:37:53,204 --> 00:38:00,204
+Böyle bir sürü başka bir sarı mesela bir şey olsun diyorum. Şurada mesela burada vardı.
+
+91
+00:38:01,396 --> 00:38:09,016
+Dolayısıyla burada çizdirdiğim her bir renk aslında bu algoritmanın her seferinde baştan başlanması anlamına geliyor.
+
+92
+00:38:09,016 --> 00:38:13,155
+Ve başladığımızda da gidilip olabilecek durumlar bunlar.
+
+93
+00:38:14,516 --> 00:38:18,636
+Peki, şimdi ki sorum şu.
+
+94
+00:38:20,235 --> 00:38:26,756
+Bu kumar bazımızın evine mutlu dönme olasılığı.
+
+95
+00:38:26,831 --> 00:38:45,231
+Yani şuradaki şu, yani atıyorum ben bu oyunu K kez oynasam, K kez oynayasam, bu oyunların belli bir kısmında mutlu son, belli bir kısmında da üzüleceğim. Mutlu olma olasılım nedir?
+
+96
+00:38:49,108 --> 00:38:53,108
+Sorumuz bu şimdi. Şimdi oyunu simüle ettik.
+
+97
+00:38:55,108 --> 00:39:03,108
+Tamam, oyunu simüle ettik. Ondan sonra yapacağımız, şimdi yapacağımız şey bu oyunun mutlu sonla bitme ihtimali nedir?
+
+98
+00:39:03,108 --> 00:39:10,108
+Bunu hesaplamamız gerekiyor. Bunun için nasıl bir şey yaparız algoritmik olarak? Bir düşünün bakalım.
+
+99
+00:39:16,851 --> 00:39:37,251
+Yani bir olayın olma olasılığını nasıl hesaplarız? O olayı birçok kez çalıştırırız, değil mi? Birçok kez çalıştırırız. Çaldıktan sonra o durumu anlarız. Hangisiyle tamamlandığını ve ona göre de bir sayaçla ilerleriz.
+
+100
+00:39:38,692 --> 00:39:42,851
+Yani şu anda görmüş olduğumuz algoritmayı atıyorum.
+
+101
+00:39:43,411 --> 00:40:10,751
+1 milyon kez çalıştıracağız. Bu 1 milyon kez çalıştırmanın sonunda, yani her bir oyunun sonunda öyle söyleyeyim, her bir oyunun sonunda bakacağız. Bu while'dan bu zengin oldu da mı çıktı, sıfırlara mı çıktı? Yani en artı m ile mi çıktı, sıfırla mı çıktı? Ona göre de bir sayıcı arttıracağız. Mesela mutlu olma sayılarını sayıyorsak.
+
+102
+00:40:11,699 --> 00:40:18,899
+En sonunda da bu oyun işte 1 milyon kez oynadıysak, mutlu olma sayısına böldüğümüzde bir şeyler çıkacak bize.
+
+103
+00:40:20,899 --> 00:40:31,699
+Şimdi bunun algoritması nasıl bir şey olur? Onu bir düşünün. Bu algoritmanın üzerine nasıl değişiklikler yapmam gerekir?
+
+104
+00:40:48,947 --> 00:41:16,127
+[öğrenci], mutlu sona bitme olsun, emine bağlantısı var mı? Niye olmasın? Mesela şöyle bir şey düşün. n'in 10 olduğunu düşün. n'in 10 olduğunu düşün. m'in de 10 olduğunu düşün. 10 liraya 10 lira arttırmak. Mesela n'in 10 lira değil de 100 olduğunu düşün. 10 liradan 100 liraya çıkmak. Bu ikisinin olasılığı eşit olmayabilir değil mi? [öğrenci].
+
+105
+00:41:22,771 --> 00:41:40,411
+Peki. Evet, tekrar sorma dönüyorum. Algoritmada nasıl bir değişiklik yaparak bu olasılığı hesaplar? Daha doğrusu yaklaşık değerini hesaplar. Olasılığı hesaplamaz bu. Yaklaşık değerini hesaplar.
+
+106
+00:41:43,764 --> 00:41:46,463
+Olsa hesaplamak için başka bir şeyler yapmanız gerekir.
+
+107
+00:41:50,164 --> 00:41:52,564
+Nasıl bir değişiklik yapmamız gerekir algoritmada?
+
+108
+00:42:07,347 --> 00:42:10,347
+Hocam, Wyden sol tarafında bir if açsak...
+
+109
+00:42:10,347 --> 00:42:13,347
+Bir daha söyle, Wyden.
+
+110
+00:42:13,347 --> 00:42:18,347
+Sol tarafında bir if açsak çıktığımız zaman...
+
+111
+00:42:18,347 --> 00:42:20,347
+Evet.
+
+112
+00:42:20,347 --> 00:42:27,347
+Orada da N0'ı eşitse ifleri sayacağız. Sonra T'ye böleceğiz tüm tur sayısını.
+
+113
+00:42:27,347 --> 00:42:35,148
+Yok. Bak şimdi, bu bir oyun.
+
+114
+00:42:35,731 --> 00:42:58,731
+Şimdi kumar bazımızın, şimdi burada bak RT dediğimiz şey, dizinin sonu ya n artı m ile bitiyor ya da sıfırla bitiyor değil mi? Doğru mu? Çıktığımızda RT'nin bitiyor yani hani oyun bitti. Oradan bir şey elde edemezsin. Anlatabildim mi?
+
+115
+00:43:00,731 --> 00:43:02,027
+Evet, tamam.
+
+116
+00:43:02,804 --> 00:43:12,804
+Yani bu oyunun kazanma olasılığı nedir? Bu bir oyun, tamam mı? Şu anda çizdiğimiz, Wild'ın kendisi ve içi olduğu gibi bir oyun.
+
+117
+00:43:13,804 --> 00:43:19,804
+Bunun, bu oyundan mutlu sonuna ayrılma olasılığını hesaplamaya çalışıyoruz.
+
+118
+00:43:21,804 --> 00:43:24,804
+Dışta bir Wild'a hesaplıyoruz.
+
+119
+00:43:24,804 --> 00:43:26,539
+Efendim, bir daha söyle.
+
+120
+00:43:27,315 --> 00:43:30,635
+Bu çizdiğimiz while'ın dışında, yani onu kapsayan bir while ayırız.
+
+121
+00:43:30,635 --> 00:43:34,475
+Evet, onu kapsayan bir şey açmamız lazım. Ne açmamız lazım dedim, while mı?
+
+122
+00:43:36,155 --> 00:43:39,275
+Ya da tur sayısı kadar for olabilir.
+
+123
+00:43:39,916 --> 00:43:46,715
+Tur sayısı derken, yani oyunu kaç kez oynatacağımız oyun mu? En baştan kaç kez oynatacağımız?
+
+124
+00:43:46,715 --> 00:43:54,715
+K gibi bir şey mesela, bu oyunu K kez oynatalım dediğimiz durumdan bahsediyorum.
+
+125
+00:43:56,179 --> 00:44:17,003
+O zaman bu K, K sabit mi? Yani oyunların her biri farklı uzunluklarda sürebilirler. Yani oyunlardaki küçük T değerleri, öyle söyleyelim, birbirinden farklı olacaktır değil mi? Bazıları 10 adımda bitecektir, bazıları 100 adımda bitecektir. Hatta teorik olarak bu oyunun sonsuza kadar devam etme olasılığı var. Doğru mu?
+
+126
+00:44:20,628 --> 00:44:25,507
+Yani hiçbir zaman nrtm ya da 0'a erişmeyebilir mi? Öyle bir simülasyon.
+
+127
+00:44:29,876 --> 00:44:41,876
+Olabilir. Olabilir, mümkün yani hani şeye baktığınızda. Dolayısıyla oyunların kendi içindeki telavirinden farklılar. Ama bizim bu oyunun kaç kez oynandığından bahsediyoruz.
+
+128
+00:44:41,876 --> 00:44:53,452
+Dolayısıyla oyunun kaç kez oynandığı belli. Oynanacağı simile edeceğiz ya. Dolayısıyla onun için bir şeye ihtiyacımız var. Neden? For'a ihtiyacımız var adı üstünde.
+
+129
+00:44:53,588 --> 00:45:01,868
+Bir for ile bu işi halledebiliriz. Ama bu for'un nerede olması gerekiyor? Bu oyunun tamamını kapsayan bir yerde, yani Wyd'ın üstünde bir yerde olması gerekiyor.
+
+130
+00:45:01,868 --> 00:45:16,028
+For'un her bir elemanı, yani her bir döngüsü için bir oyun oynatacağız. Ve bu oyun oynattıktan sonra da soracağız, işte şöyle mi oldu, böyle mi oldu?
+
+131
+00:45:16,028 --> 00:45:18,028
+Peki.
+
+132
+00:45:18,579 --> 00:45:23,699
+Nasıl bir değişiklik yapmamız gerekir? Şimdi bunu oluşturmaya çalışalım.
+
+133
+00:45:32,211 --> 00:45:34,211
+Programımız olsun elimizde.
+
+134
+00:45:37,715 --> 00:45:38,715
+Tamam.
+
+135
+00:45:43,092 --> 00:45:56,652
+Elimizdeki rakamı n'le gösterdik. Onu hala bir yerde tutmak için bir şey ihtiyacı var mı? Neyse, şuradan, şuradan, şöyle. Şurada bir for ihtiyacımız var.
+
+136
+00:45:56,652 --> 00:46:02,652
+Tamam mı? Buradaki for ihtiyacımız var. Notuyorum, i eşittir, birden başlayacak, birer birer büyük k'ya kadar dönecek. Tamam mı?
+
+137
+00:46:02,652 --> 00:46:09,931
+Ve bu oyunu oynadık. Tamam mı? O oyunu oynadığımızda, şurada artık şey olmayacak.
+
+138
+00:46:10,547 --> 00:46:18,547
+Oyunu bitirmeyeceğiz. Pardon, oyunu bitti, bir soru soracağız. Sorumuz ne olacak?
+
+139
+00:46:21,547 --> 00:46:37,047
+N'den ben neyle çıktım? N eşit eşit sıfır mı diye soracağım değil mi? True ise ve false ise, N, H'e eşitse, hadi kazanmayı sayalım biz, kazanma eşit, kazanma artı bir, ha K demeyelim ona.
+
+140
+00:46:37,235 --> 00:46:47,395
+Çünkü k başka bir şeydi. Z diyelim mesela. Z eşittir, z artı bir olsun.
+
+141
+00:46:47,395 --> 00:46:56,036
+Buraya bağladık ve bu da bir diye şuraya gitti.
+
+142
+00:46:56,036 --> 00:47:03,475
+İçeride başka çok değişiklik yapmaya gerek olacak mı? N'i değiştiriyoruz.
+
+143
+00:47:05,204 --> 00:47:30,764
+değiştirdiğimiz için bir sonraki n'e girerken tekrardan şey gelmesi lazım. Ne derli ona? Gerçek n yani şu n'e gelmesi lazım değil mi? Çünkü bu oyunun sonunda şu noktada ne oluyor? Şu noktada ya sıfır oluyor ya da h oluyor. Dolayısıyla n'i oyunu en baştan başlatmak için tekrardan eski n'e çekmemiz lazım. O zaman eski n'i de bir yerde tutmamız lazım.
+
+144
+00:47:31,795 --> 00:47:46,195
+Mesela ona da eski n diyelim, eski n eşittir n diyelim başlangıçta. O zaman şuranın en başında t'yi sıfırladığımız gibi, şurada da n eşittir eski n diye bir parça olmalı. Ondan sonra v hale girmeliyiz. Evet.
+
+145
+00:47:46,195 --> 00:47:51,795
+m'i değiştirmiyoruz değil mi oyun boyunca? m'di yok, m değişmiyor. h da değişmiyor.
+
+146
+00:47:51,795 --> 00:47:59,395
+n'i tutmak yerine h-m yapsak nasıl bir kazancımız, kaybımız olur? h-m yapsak dediğin?
+
+147
+00:47:59,764 --> 00:48:05,984
+H'ı tutuyoruz ya zaten en başta, n-m olarak. Oradaki n ilk değer.
+
+148
+00:48:05,984 --> 00:48:08,984
+n değişmiyor, h değişmiyor.
+
+149
+00:48:08,984 --> 00:48:12,564
+Olur, olur. Yani bir memoride bir tane kazancımız olur.
+
+150
+00:48:12,564 --> 00:48:14,347
+Olur.
+
+151
+00:48:17,715 --> 00:48:26,115
+Doğru söylüyorsun. Yani fazladan birleşen kulağımız şart değil. H ve M sabit olduğu için eski N aslında her zaman H-M yani.
+
+152
+00:48:26,115 --> 00:48:32,115
+Yani şurada N yerine şuraya H-M de yazabilirim.
+
+153
+00:48:32,115 --> 00:48:36,115
+Tamam mı? Şunu yapmadan da.
+
+154
+00:48:36,115 --> 00:48:40,115
+Tamam mıyız?
+
+155
+00:48:40,115 --> 00:48:44,011
+Peki, bunu diyelim ki şey yaptık.
+
+156
+00:48:44,019 --> 00:48:56,819
+çalıştırdık ve şurada bitecek iş. Şu iki noktasında. Şimdi bu iki noktasında benim elimde bir Z diye bir değer var. Z diye bir değer var. Olası da nasıl bulacağım?
+
+157
+00:49:07,251 --> 00:49:16,551
+Z bölü k. Z bölü k değil mi? Kullanıcaz z bölü k'yı output olarak vereceğim ve işim bitecek.
+
+158
+00:49:21,172 --> 00:49:29,672
+Tamam mıyız? Var mı? Takıldınız bir yaş. Mantıklı görünüyor mu?
+
+159
+00:49:32,916 --> 00:49:34,416
+Yap, tamamızış.
+
+160
+00:49:39,923 --> 00:49:40,923
+Peki.
+
+161
+00:49:42,923 --> 00:49:43,923
+Şimdi.
+
+162
+00:49:49,300 --> 00:50:00,300
+Bu simülasyonu çalıştırdığınızda karşınıza çıkacak değerler nasıl bir şeyler olurlar?
+
+163
+00:50:00,300 --> 00:50:05,300
+Birkaç tane benim daha önce çalıştırdığım bir şeyler var, onları söylemek istiyorum.
+
+164
+00:50:05,300 --> 00:50:11,052
+Mesela P dediğimiz şey 0.472 olsun.
+
+165
+00:50:11,635 --> 00:50:16,635
+Yani P'e 0.473 yarıya yakınmış ama yarından düşük bir şey.
+
+166
+00:50:16,635 --> 00:50:17,635
+Tamam.
+
+167
+00:50:19,635 --> 00:50:23,635
+Bu epey iyi bir oran.
+
+168
+00:50:24,635 --> 00:50:29,635
+Yani %47'lik bir kazanma kumar için söylemek istiyorum.
+
+169
+00:50:30,635 --> 00:50:31,635
+Epey iyi bir oran.
+
+170
+00:50:32,635 --> 00:50:35,635
+Bunu sabitçe tutacağız, buna çok fazla dokunmayacağız.
+
+171
+00:50:36,635 --> 00:50:37,635
+Tamam bunu sabit tutuyorsun.
+
+172
+00:50:37,635 --> 00:50:38,635
+En eşittir.
+
+173
+00:50:40,403 --> 00:50:57,403
+100, yani 100 liram var. m eşittir 10 için. Benim olasılığım, yani şey, şey demeyelim ama, mutluluk olasılığım tamam mı? Mutluluk, m fili diyelim. Mutluluk olasılığım 0 nokta.
+
+174
+00:51:00,755 --> 00:51:14,755
+33.9. Yani bakın 100 liram var. Ya 110 liraya da gideceğim ya da 0 liraya da gideceğim. 110 lirayla eve dönme ihtimalim 0.339. Tamam.
+
+175
+00:51:15,755 --> 00:51:25,708
+Peki, en eşittir 1000 liram var elinde. Ve en yine o.
+
+176
+00:51:26,900 --> 00:51:37,579
+Bu durumda mp eşittir. 0.341 çıkmış. Peki.
+
+177
+00:51:40,820 --> 00:51:59,820
+n eşittir 100, m eşittir 20 durumunda, mp eşittir, bu algoritmayı çalıştığımızda elde edeceğimiz sonuçlardan bahsediyorum. 0.115 çıkmış. m eşittir 100, m eşittir...
+
+178
+00:52:03,251 --> 00:52:05,251
+İçin olsun.
+
+179
+00:52:07,251 --> 00:52:09,251
+Bin olsun. Bin olsun.
+
+180
+00:52:09,251 --> 00:52:12,251
+Yemiştir, birbirbir.
+
+181
+00:52:17,556 --> 00:52:24,012
+0 nokta, 114 çıkmış ya da 115 çıkmış.
+
+182
+00:52:31,347 --> 00:52:32,627
+En eşittir.
+
+183
+00:52:36,467 --> 00:52:37,420
+Bimi.
+
+184
+00:52:40,563 --> 00:52:43,063
+m eşittir 100
+
+185
+00:52:47,411 --> 00:52:55,911
+amp eşittir, 0.0002
+
+186
+00:53:00,500 --> 00:53:09,500
+Şimdi, bu sonuçlara bakarak ne diyebilirsiniz, nasıl yorumlar yapabilirsiniz? Hepsinin epey aynı. Dinliyorum sizi.
+
+187
+00:53:09,500 --> 00:53:13,500
+Hocam kumar oynamasınlar.
+
+188
+00:53:13,500 --> 00:53:18,347
+Kumar oynamasınlar. Niye? Tamam, tamam oynamasınlar da. Niye?
+
+189
+00:53:24,596 --> 00:53:35,996
+Kumaran eşmetin ekmek karlı olabilir. Evet, peki. Karlı herhalde. Evet, başka. Sonuçlar neye bağlı? Yani bu MP değeri neye bağlı?
+
+190
+00:53:38,596 --> 00:53:40,596
+En artınca olasılık azalıyor.
+
+191
+00:53:41,195 --> 00:53:42,596
+Ne artınca?
+
+192
+00:53:43,596 --> 00:53:46,596
+Elimizdeki para. Yani 1 milyon artılıkta.
+
+193
+00:53:46,596 --> 00:53:47,596
+Para artılık mı azalıyor?
+
+194
+00:53:48,596 --> 00:53:50,596
+Kazanma olasılığı.
+
+195
+00:53:50,596 --> 00:53:51,596
+Azalıyor.
+
+196
+00:53:53,364 --> 00:54:00,364
+En artınca. Ne kadar çok parayla girersek o kadar kazanma olsamız düşük mü oluyor?
+
+197
+00:54:13,364 --> 00:54:36,724
+Bir şeyi seçip onun üzerinden yorum yapmak çok mantıklı değil. Bakın erişebildiğiniz bilgiler bunlar. Tamam mı? Bunların hepsine birden bakarak bir yorum yapmanız lazım. Bu direkt dersle alakalı bir şey değil aslında öyle. Tamam mı? Genel bir yaklaşım. Tek bir şeye bakıp hareket ederseniz, yorum yaparsanız, tek bir noktaya bakıp yanlış bir şey söyleyebilirsiniz. Tamam mı?
+
+198
+00:54:39,059 --> 00:54:41,819
+Yanlış tahminlerde bulunabilirsiniz, öyle söyleyeyim.
+
+199
+00:54:42,819 --> 00:54:45,819
+Peki, tamam, devam edelim. Ne diyebilirsiniz burada?
+
+200
+00:54:48,059 --> 00:54:49,819
+Kazanma olasılığımız neye bağlı?
+
+201
+00:54:52,059 --> 00:54:53,819
+T ve M'e mi bağlı oluyor?
+
+202
+00:54:54,380 --> 00:54:55,380
+Bir daha söyle.
+
+203
+00:54:55,380 --> 00:54:57,819
+T ve M değerlerine bağlı.
+
+204
+00:54:57,819 --> 00:55:03,260
+T0.5'in altında olduğu için ve M büyüdükçe olasılığımız azalıyor, kazanma olasılığına.
+
+205
+00:55:03,539 --> 00:55:05,220
+Tamam, neye bağlı değil?
+
+206
+00:55:08,724 --> 00:55:11,123
+Eve de bağlı ama çok az mı bağlı?
+
+207
+00:55:13,123 --> 00:55:15,923
+Enle alakası yok arkadaşlar.
+
+208
+00:55:15,923 --> 00:55:19,524
+Onun çok enteresan bir sonucu bu aslında.
+
+209
+00:55:19,524 --> 00:55:26,524
+Bakın, olayın enle, yani kumarhaneye kaç parayla girdiğinizle bir alakası yok.
+
+210
+00:55:27,524 --> 00:55:30,524
+Kazanmak istediğiniz miktarla alakası var.
+
+211
+00:55:31,724 --> 00:55:32,460
+Tamam.
+
+212
+00:55:32,947 --> 00:55:43,747
+İçeriye 100 dolarla da, 100 lirayla da girseniz, 1 milyon lirayla da girseniz, M için seçtiğiniz değer ve P, ki P'yi siz seçemezsiniz. Tamam mı?
+
+213
+00:55:47,347 --> 00:55:56,547
+Değişmiyor. Kaç liraya girerseniz görün. Kazanma olasılığınız değişmiyor. Buradaki sonuç, yani MP, tamam mı? MP değeri.
+
+214
+00:55:58,612 --> 00:56:04,072
+P bölü 1 eksi P üzeri M'den daha küçük.
+
+215
+00:56:10,132 --> 00:56:19,132
+yakınlarda yani hani küçük dediğim çok çok küçük değil yani küçük eşit diyebilirim aslında.
+
+216
+00:56:19,132 --> 00:56:21,132
+Şöyle yazayım. Tamam.
+
+217
+00:56:27,132 --> 00:56:33,132
+Bakın, bu hani en başlı değil mi kumar bazın ikilemi diye.
+
+218
+00:56:34,099 --> 00:56:40,859
+Şimdi buradaki ikilem ne? Bu sonuç, sağduya uyumlu bir sonuç değil bakın.
+
+219
+00:56:42,359 --> 00:56:55,099
+Yani sağduyu derken şunu demek istiyorum, sokaktaki insanları çağırsanız, deseniz ki böyle böyle bir durumda bu adamın evine mutlu gitme olasılığı kumarhaneye kaç lira parayla girdiğine bağlı mıdır?
+
+220
+00:56:55,099 --> 00:56:57,599
+E tabii ki bağlı diyecek değil mi?
+
+221
+00:56:58,291 --> 00:57:08,791
+Yani hani bu sağduyunun söylediği şey kabaca bu, ne kadar paran varsa o kadar kazanma olasının yüksek olacaktır.
+
+222
+00:57:08,791 --> 00:57:18,219
+Çünkü n artı m'e bağımlı açıyoruz, m ne kadar yüksek olursa öyle ama asıl olay burada m, ne kadar para kazanmak istediğinle alakalı.
+
+223
+00:57:20,467 --> 00:57:32,467
+Dolayısıyla evet, kumar oynamaya, orası ayrı bir hikaye ama dediğim gibi bu matematik olarak çıkan şaşırtıcı bir sonuç. Güzel tarafı belki burası.
+
+224
+00:57:32,467 --> 00:57:44,467
+Hocam, bu yazdığınız şeye göre eğer %50, %50 olursa kazanma olasılığı, MP direkt 1 mi oluyor?
+
+225
+00:57:44,467 --> 00:57:47,115
+Şimdi %50...
+
+226
+00:57:47,347 --> 00:58:02,108
+Şimdi buradaki P'nin %50'nin üstünde olması durumu bambaşka bir durum. Tamam mı? Buradaki P'nin 0.5'in altında olması durumunu inceltelim.
+
+227
+00:58:02,108 --> 00:58:09,547
+P'nin 0.5'in üstünde ya da tam 0.5 olursa 1 olacak değil mi?
+
+228
+00:58:09,811 --> 00:58:33,811
+birden bir miktar daha küçük olabilir. Ama şey değil, neden ona? Burada görmüş olduğumuz değerler kadar küçük bir şeyler görmeyeceğiz bu sefer. Tamam. Ama gerçek hayatta ya da kumarhanelerde P değeri 0.5'in üstüne pek şey olmaz. Neden ona? Olmaz. Tamam.
+
+229
+00:58:37,331 --> 00:58:38,331
+Tamamdır hocam.
+
+230
+00:58:40,331 --> 00:58:44,331
+Ben yani 0.5 koyarsam burada 1 çıkacak tabii ki.
+
+231
+00:58:46,331 --> 00:58:50,331
+[öğrenci], hocam bir kişinin 100 lira girmesi... Bir dakika dur bakayım.
+
+232
+00:58:51,331 --> 00:58:53,331
+Bir kişinin 100 lira girmesi yerine...
+
+233
+00:58:58,708 --> 00:59:04,708
+Bir de bakalım. 100 lira girmesi yani 1 liradan 100 farklı yıllarını yap.
+
+234
+00:59:04,708 --> 00:59:07,708
+Ben nasıl bağlantılı değil anlamadım.
+
+235
+00:59:07,708 --> 00:59:10,708
+Yani nasıl bağlantılı değil anlamadım.
+
+236
+00:59:10,708 --> 00:59:14,708
+Evet, değil mi? Bak bu sağduya ters değil mi [öğrenci]?
+
+237
+00:59:16,708 --> 00:59:21,708
+Yani şöyle bir şey düşün, bak 10 liran var, 1 lira kazanmak istiyorsun, tamam mı?
+
+238
+00:59:21,708 --> 00:59:24,708
+11 lira olsun istiyorsun, tamam mı?
+
+239
+00:59:25,748 --> 00:59:30,748
+100 liran var, 101 lira kazanmak istiyorsun. Bu ikisinin olasılığı aynı.
+
+240
+00:59:35,764 --> 00:59:47,764
+Şimdi burada dikkat ederseniz ben size neden bunun en ile yani kumarhaneye girdiğiniz parayla alakalı olmadığını anlatmadım.
+
+241
+00:59:47,764 --> 00:59:56,764
+Yani neden öyle olduğuna dair hiçbir şey söylemedim. Sadece öyle olduğunu söyledim. Sonuçları incelediğimizde öyle göründüğünü gösterdim.
+
+242
+00:59:56,764 --> 01:00:00,000
+Şuradaki sonuçlara baktığımızda şu anda tahtada.
+
+243
+01:00:00,000 --> 01:00:19,755
+olan sonuçlara baktığınızda, öyle olduğunu gösterdim. Ama bu neden öyle diye bir şey yapmadım. Orasını size bırakıyorum [öğrenci]. Tamam mı? Bunun böyle olduğunu söylüyorum ve niye öyle olduğunu da siz araştırıp bulun bakalım. Tamam mı?
+
+244
+01:00:24,148 --> 01:00:28,347
+Oldukça güzel bir problem. Yani sağduyunuzda ters gelen bir şey.
+
+245
+01:00:31,923 --> 01:00:40,364
+Nasıl olur? Değil mi? Şaşırtıcı bir sonuç yani, onu demek istiyorum. Beklenmedik bir şey. Beklenmedik şeyler güzeldir.
+
+246
+01:00:40,364 --> 01:00:54,684
+Açıklama beklerler, kafamızı çalıştırmayı talep ederler. Bizi zorlarlar, yorarlar. Ama keyiflidirler sonuçta. Yip yeni bir şeyler öğrenme fırsatı sunarlar bize.
+
+247
+01:00:55,827 --> 01:01:02,827
+Şaşırmak kıymetli bir şeydir. Şaşırabilmek de kıymetli bir şeydir. O da ayrı bir mevzu.
+
+248
+01:01:05,827 --> 01:01:12,827
+Çünkü tüm tahminleriniz doğru çıkarsa dünya hakikaten çok sıkıcı bir yer olur, bir açıdan düşündüğünüzde.
+
+249
+01:01:14,827 --> 01:01:17,547
+Her şeye tahmin ettiğiniz gibi gidiyor.
+
+250
+01:01:21,043 --> 01:01:26,844
+Ama tabi şey de çok keyifsiz bir şey olabilir. Hiçbir tahmininiz tutmuyor. O da keyifsiz bir şey olabilir.
+
+251
+01:01:26,844 --> 01:01:40,843
+Neyse. Şimdi bir ara verelim. Yemeğe 40 dakika olmuş. Bir ara verelim. Ondan sonra devam edeceğiz.
+
+252
+01:01:40,843 --> 01:01:47,843
+Saat 10'u 3 geçiyor. Saat 10'u çeyrek geçe devam edebiliriz herhalde.
+
+253
+01:01:48,371 --> 01:01:52,591
+10-15'e kadar ara diyorum.
+
+254
+01:01:52,591 --> 01:01:55,291
+Az sonra görüşmek üzere arkadaşlar.
+
+255
+01:13:52,020 --> 01:13:57,020
+Evet, tekrardan merhaba arkadaşlar. Sesim geliyor herhalde, değil mi?
+
+256
+01:14:05,779 --> 01:14:08,587
+Konumuz matris.
+
+257
+01:14:13,876 --> 01:14:29,876
+Matriz çarpımını hepiniz biliyorsunuzdur. Çok kabaca şöyle bir matrizimiz olsun yanımızda. Bir de şey olsun baba. Hani emlik bir şey olsun.
+
+258
+01:14:35,796 --> 01:14:47,796
+Önce, P'lik bir şey olsun mesela. Bu matrise A diyelim, bu matrise B diyelim. Bu ikisini çarptığımızda bir matrise elde ederiz. Nasıl bir matrise olur bu? Kaça kaçlık bir matrise olur?
+
+259
+01:14:49,796 --> 01:14:50,796
+N-P'lik.
+
+260
+01:14:51,796 --> 01:14:54,796
+N-P'lik bir matrise olur. Peki.
+
+261
+01:14:56,796 --> 01:14:59,628
+Yapılan işlem aslında ne?
+
+262
+01:15:00,819 --> 01:15:24,819
+Hatırlayalım, şu arkadaşı, şu arkadaşla, işte bunu, bununla, bunu, bununla, bununla çarpacağız, çarpacağız, çarpacağız. Bu çarpımları toplayacağız, o toplumu da şuraya yazacağız değil mi? Sonra mesela, yine bu arkadaşla, belki şurayı çarpacağız, tık tık tık tık diye, onun da sonucunu şuraya yazacağız.
+
+263
+01:15:27,923 --> 01:15:47,923
+Gelecek. Şurasını düşünürsek, yine oraya çarptık kadar bir de burasını verecek. Daha sonra belki, şu arka alışı çarpacağız ve onun sonucu buraya gelecek. Her şekilde biliyorsunuz. Maddi çarpımını hepiniz.
+
+264
+01:15:47,923 --> 01:15:52,811
+Şimdi bunu algoritmasına yazmaya kalkarsak, nasıl bir şey yapmamız gerekir?
+
+265
+01:15:52,819 --> 01:16:01,819
+Yani kullanıcıdan bir startla ne yapmamız lazım ilk önce? O iki tane madrizi almamız lazım. Madrizi alamamız için boyutlarını almamız lazım ilk önce.
+
+266
+01:16:01,819 --> 01:16:07,819
+O zaman n'i, m'i ve p'yi alalım kullanıcıdan öncelikle. Daha sonra ilk önce A madrisini okuyalım.
+
+267
+01:16:07,819 --> 01:16:18,635
+G'yi eşittir, birden başlasın, birer birer n'e kadar gitsin. Sonra bir de m'de bu. G'yi eşittir, birden başlasın, birer birer n'e kadar gitsin. Sonra...
+
+268
+01:16:19,155 --> 01:16:29,155
+A maddesinin, I, J'in cisini okuyalım. Burası 1 olsun, burası 1 olsun. Sonra B maddesi için de aynı işi yapalım.
+
+269
+01:16:29,155 --> 01:16:37,155
+E eşitir birden başlısın, birer birer bu M'e kadar gidecek. J eşitir birden başlısın, bu da P'ye kadar gidecek bu sefer.
+
+270
+01:16:37,155 --> 01:16:43,155
+Burada da B maddesinin, I, J'in cisini okuyalım. Şurası 2 olsun, 3 olsun.
+
+271
+01:16:45,140 --> 01:17:00,140
+3'e geldik. Şimdi eğrimizde ne var? İki tane matriz var. Peki bunları nasıl çarpacağız? Bu demin yukarıda görse olarak yaptığımız işi algoritmaya nasıl dönüştüreceğiz? Böyle bir işimiz var.
+
+272
+01:17:00,140 --> 01:17:01,140
+Şimdi...
+
+273
+01:17:01,568 --> 01:17:13,568
+İlk önce şu C matrisini bir düşündüğümüz zaman, C matrisi N'e P'lik bir şey. Dolayısıyla bizim N'e P'lik bir, yani şuradaki her bir elemanı bulabilmek için, bakın buradaki her bir elemanı bulabilmek için bir şeyler yapacağız.
+
+274
+01:17:13,568 --> 01:17:25,568
+Burada kaç tane eleman var? N' çarpı P'lik kadar eleman var. O zaman bizim en dışarıda C matrisini oluşturmak için bir N ve P'lik bir yapıya ihtiyacımız var değil mi?
+
+275
+01:17:29,811 --> 01:17:42,091
+J olsun, J bir, burası da P'lik bir yapıya ihtiyac var. Peki şimdi, şu elemanı oluşturmak için, şu elemanı oluşturmak için, tek iki tane sayının çarpımını yapabiliyor muyuz bunu?
+
+276
+01:17:44,091 --> 01:17:50,611
+Hayır, ne yapmamız gerekiyor? Şurasıyla, şurada gördüğümüz kısımla, şurada gördüğümüz kısımla, şurada gördüğümüz kısımla, böyle çarpmamız gerekiyor değil mi?
+
+277
+01:17:50,611 --> 01:17:55,611
+Ve bu çarpma işleminin büyüklüğü nasıl bir şey?
+
+278
+01:17:55,891 --> 01:18:08,811
+Yani kaç tane sayı birbirine çarpacağız? Şununla şunu çarpacağız, bu bir, şununla şunu çarpacağız, iki, şununla şunu çarpacağız. M tane sayı birbirine çarpacağız değil mi? Bakın. Dolayısıyla o zaman bizim bir kora daha ihtiyacımız var. Buna da...
+
+279
+01:18:08,916 --> 01:18:16,916
+Ne diyelim mesela kaos, mesela kaybet, kao eşitti birden başsın, bu da bile kadar isim, bu da M uzunluğunda olsun.
+
+280
+01:18:17,675 --> 01:18:20,556
+Şimdi ben şununla şunu çarpacağım, bununla bunu çarpacağım, bununla bunu çarpacağım.
+
+281
+01:18:20,556 --> 01:18:29,476
+Yani A maddesinin inci satırıyla B maddesinin jinci sütununu çarpacağım, değil mi?
+
+282
+01:18:30,036 --> 01:18:34,636
+Bunları çarpıp çarpıp toplayacağım. Bir şeyin üstüne toplayacağım. O zaman toplam diye bir şeye ihtiyacım var.
+
+283
+01:18:34,636 --> 01:18:40,636
+Toplama t diyelim mesela, t eşittir sıfır olsun ve bunun üzerine toplayacağım ben. T eşittir t artı.
+
+284
+01:18:40,636 --> 01:18:45,036
+Ne ile neyi çarpıyorum? Bakın A matrisinin inci satırı değil mi?
+
+285
+01:18:57,971 --> 01:18:58,971
+Çarpıyorum.
+
+286
+01:19:03,475 --> 01:19:15,796
+Burası buraya gelecek. Şimdi şu noktada benim elimde artık C, I, J var. Onu da yazabilirim artık. C, I, J eşittir. T diye bunu gerçekleştirebilirim.
+
+287
+01:19:15,796 --> 01:19:19,716
+Bu noktada şurasına 3 demiştik.
+
+288
+01:19:19,716 --> 01:19:26,195
+Şurası 2, burası 3, burası 4 diyelim.
+
+289
+01:19:26,239 --> 01:19:35,239
+Bu zaman şu şuraya 4 diye girecek, şurasına 5 dersek, bu da buraya 5 diye girecek ve burada da artık işimiz bitecek.
+
+290
+01:19:37,239 --> 01:19:51,239
+İşin özü şu nokta, gördüğünüz gibi yapmış olduğumuz şey A'nın inci satırıyla B'nin j inci sütununu bakın çarpıyoruz.
+
+291
+01:19:54,131 --> 01:20:00,131
+Yani, ve bunu çarpmak için işte m tane işlem yapıyoruz aslında.
+
+292
+01:20:00,131 --> 01:20:10,131
+Peki, bu işlemin karmaşıklığı ne, bu algoritmanın karmaşıklığı ne düşündüğünüzde oldukça basit bir şekilde bulabilirsiniz. Nedir karmaşıklığı bu işlemin?
+
+293
+01:20:14,163 --> 01:20:15,163
+Ne?
+
+294
+01:20:21,427 --> 01:20:24,747
+Hocam n çarpı p çarpı m gibi bir şey.
+
+295
+01:20:24,747 --> 01:20:34,387
+Aynen öyle. Sonuçta burada en içte olan hangisi belli. Oraya kaç kez giriyoruz? n çarpı m çarpı p kere giriyoruz.
+
+296
+01:20:34,387 --> 01:20:48,548
+Peki, güzel. Şimdi bir matrisin karmaşıklığı dediğimiz gibi n çarpı m çarpı m. İki tane matrisin.
+
+297
+01:20:50,515 --> 01:20:52,515
+O notasyon da öyle bir şey.
+
+298
+01:20:52,515 --> 01:20:57,195
+Şimdi eğer ki bu iki matris kare matris olsaydı ne olurdu bunun karnoşlukluğu?
+
+299
+01:21:02,804 --> 01:21:09,363
+Bu iki matris de kare matris olsaydı, yani m v p n eşit olsaydı.
+
+300
+01:21:09,363 --> 01:21:10,804
+n küp.
+
+301
+01:21:10,804 --> 01:21:12,804
+n küp olacaktı değil mi?
+
+302
+01:21:12,804 --> 01:21:22,804
+Şimdi, matrislerin çarpımı n küp normal sanırım şu yazdığımız algoritmayla.
+
+303
+01:21:22,804 --> 01:21:25,804
+Bunu hızlandıran algoritmalar var.
+
+304
+01:21:25,804 --> 01:21:26,444
+Yani bunu...
+
+305
+01:21:26,771 --> 01:21:51,172
+Çok daha kompleks algoritmaların var diye söyleyeyim. 2 üzeri x, x'e ki buradaki x'ler yani 7 benen civarlarında, 7-6 yeni yeni algoritmalar çıkıyor. Arada bu maddesin çarpımını daha düşük, karmaşıklıkta gerçekleştirebilir iki tane maddesin çarpımını.
+
+306
+01:21:51,172 --> 01:21:53,572
+Peki.
+
+307
+01:21:53,760 --> 01:22:11,159
+İyi, güzel. Peki, matriz çarpımı önemli bir şey mi? Matriz çarpımı özellikle günümüzdeki hapazzeka teknolojisi için çok kritik bir yerde. Biraz garip gelebilir ama...
+
+308
+01:22:17,171 --> 01:22:33,671
+Çok boyutlu matrisleri hızlı çarpmak için tasarlanmış yapılardır. Yapay zeka tarafındaki işte, daha sonra göreceksiniz ama, yani atışsanız görürsünüz, oradaki bütün işler matris çarpımları üzerinden yürür.
+
+309
+01:22:45,108 --> 01:22:53,268
+İsteklerinin cevap verilmesinde, yani inference time diyelim, orada oldukça önemliler.
+
+310
+01:22:53,268 --> 01:22:56,068
+Dolayısıyla matrislerin çarpımını hızlandırmak iyi bir şey.
+
+311
+01:22:57,427 --> 01:23:05,028
+Bu noktada matrislerin çarpımını şu şekilde hızlandırmak bir yol.
+
+312
+01:23:05,028 --> 01:23:11,268
+Başka bir yol ise, çarpılacak birden fazla matris varsa.
+
+313
+01:23:12,020 --> 01:23:39,020
+Bakın çarpılacak birden fazla maddesi var ki çok fazla olan bir şey bu. Bu durumda bu çarpımları hangi sırada yapmamız gerektiğini bulmak ne demek istiyorum? Elimizde üç tane maddes olsun. Mesela bir tanesi A maddesi.
+
+314
+01:23:39,475 --> 01:23:51,475
+Bu mesela 10'a 30'luk bir matris olsun, bir tanesi B matrisi, bu da 30'a 5'lik bir matris olsun, bir tanesi C matrisi, bu da 5'e 60'lik bir matris olsun mesela.
+
+315
+01:23:51,475 --> 01:23:57,420
+Şimdi ben A, B, C'yi çarptığımda, kaçaklaştık bir matris elde edeceğim, bana söyler misiniz?
+
+316
+01:24:02,452 --> 01:24:03,452
+On altmış.
+
+317
+01:24:04,452 --> 01:24:29,452
+On altmışlık bir maddesi olacak değil mi bu? Peki. Şimdi bu, buna D diyelim mesela. Şimdi bu işlemi yaparken, şimdi bu ABC çarpımını yaparken, yapabileceğim aslında iki tane şey var. Bir tanesi şu. İlk önce A ile B'yi çarparım, ondan sonra C'yi çarparım. Ya da ilk önce B ile C'yi çarparım, ondan sonra A ile çarparım. Değil mi? Yani bu işleyi ya böyle yapacaksınız ya böyle yapacaksınız. Başka bir olasılık var mı? Yok.
+
+318
+01:24:30,452 --> 01:24:39,452
+Peki, şimdi bu iki yolun, yani önce A, B'yi çarpmanın ya da önce B, C'yi çarpmanın karmaşıklıklarına bakalım.
+
+319
+01:24:39,452 --> 01:24:41,452
+Tamam mı?
+
+320
+01:24:41,452 --> 01:24:45,452
+Şimdi bunun için ilk önce şöyle yazalım, şöyle yazayım.
+
+321
+01:24:45,452 --> 01:24:49,452
+A ile B'yi çarpmanın karmaşıklığı nedir? Bakın A ile B'yi çarpmanın karmaşıklığı nedir?
+
+322
+01:24:49,452 --> 01:24:51,452
+Şuradan çıkartabilirsiniz.
+
+323
+01:24:51,452 --> 01:24:54,028
+Nedir A ile B'nin karmaşıklığı?
+
+324
+01:25:01,268 --> 01:25:03,768
+10 x 30 x 5'ten.
+
+325
+01:25:03,768 --> 01:25:07,067
+10 x 30 x 5'ten, evet.
+
+326
+01:25:08,467 --> 01:25:10,268
+1500 oluyor galiba.
+
+327
+01:25:10,268 --> 01:25:16,268
+Evet, 1500 değil mi? Peki. Bu bulduğumuz şeyle, bu bulduğumuz şey kaça kaçlık bir şey?
+
+328
+01:25:18,768 --> 01:25:19,768
+10'a 5'lik.
+
+329
+01:25:19,768 --> 01:25:22,768
+10'a 5'lik. Şimdi bu 10'a 5'lik matris de.
+
+330
+01:25:26,131 --> 01:25:33,331
+C'yi çarpmanın karmaşıklığı ne olacak? Bakın bu 10'a 5'lik bir matriz. Bu C 5'e 60'lik bir matriz. Bunun karmaşıklığı ne olacak?
+
+331
+01:25:36,131 --> 01:25:38,931
+10 çarpı 5 çarpı 60 olacak bu da.
+
+332
+01:25:39,631 --> 01:25:40,631
+O da kaç?
+
+333
+01:25:43,764 --> 01:25:45,764
+3.000
+
+334
+01:25:46,764 --> 01:25:52,764
+O zaman, bu işi yapmanın, yani şu yolda yapmanın, karmaşıklı 4500 değil mi? Doğru mu?
+
+335
+01:25:52,764 --> 01:25:57,764
+Bu 4500 işlem sürdü. Oldu mu?
+
+336
+01:25:59,764 --> 01:26:02,764
+Hocam, A'lı çarpı B karmaşıklı 15.000 değil mi?
+
+337
+01:26:08,948 --> 01:26:13,948
+10 çarpı 3, 10 çarpı 30.
+
+338
+01:26:13,948 --> 01:26:17,948
+Pardon, orayı görürüm şimdi. Tamam, sıkıntı yok.
+
+339
+01:26:17,948 --> 01:26:26,948
+Şimdi o zaman ikinci yola bakalım. Şimdi bu birinci yoldu. Birinci yoldu, dedim şu. Şunu şöyle çözdük, tamam. Şimdi ikincisine bakacağız.
+
+340
+01:26:28,948 --> 01:26:32,948
+Şimdi burada ilk önce BDJ'yi çarpacağız. BDJ'yi çarpmanın kalmışlık ne?
+
+341
+01:26:32,948 --> 01:26:34,948
+30.
+
+342
+01:26:35,380 --> 01:26:38,980
+Çarpı 5 çarpı 60 değil mi? Doğru mu?
+
+343
+01:26:42,804 --> 01:26:43,804
+Kanşalar mu?
+
+344
+01:26:58,323 --> 01:27:00,323
+Evet arkadaşlar, kaç eder bu?
+
+345
+01:27:00,323 --> 01:27:01,323
+9000.
+
+346
+01:27:01,323 --> 01:27:08,323
+9000, çok güzel. Evet. Şu anda bile işler belli oldu sanki değil mi?
+
+347
+01:27:08,323 --> 01:27:14,027
+Peki bu B ve C'yi çarptığımızda elde edeceğimiz matriz nasıl? Matriz? Kaça kaçlık matriz?
+
+348
+01:27:16,787 --> 01:27:18,787
+30'a 60'lık bir maddesi.
+
+349
+01:27:18,787 --> 01:27:30,787
+30'a 60'lık bir maddesi. A maddesi kaç'a kaç çıktı? 10'a 30'lık bir maddesi. Bunların ikisini çarpmanın karmaşıklı ne olacak? 10 çarpı 30 çarpı 60 olacak değil mi? Bu kaç?
+
+350
+01:27:31,787 --> 01:27:33,787
+18.000.
+
+351
+01:27:33,787 --> 01:27:41,787
+18.000, çok güzel. Bu ne yaptı? 27.000 yaptı. O zaman bunun karmaşıklı da bakın 27.000 çıktı.
+
+352
+01:27:42,996 --> 01:27:51,296
+Demek istedim anlatabildim mi şimdi ne olduğunu? Görüyor musunuz? Bakın, aynı işlemi, yani sonuç olarak biz şunu buluyoruz.
+
+353
+01:27:51,296 --> 01:27:59,796
+İstediğimiz şey, bunu... Tamam. Ve bunu iki yolda yapabiliriz. Ama bu iki yolun karmaşıklığı aynı değil. Görüyor musunuz?
+
+354
+01:28:03,283 --> 01:28:14,283
+Dolayısıyla burada sırası ne olsun, ne fark eder falan gibisinden, sonuç açısından hiçbir şey fark etmez zaten. Fark etmemişsini istiyoruz.
+
+355
+01:28:14,283 --> 01:28:20,939
+Ama karmaşıklık açısından bariz farklılıkların olabileceğini burada net bir şekilde görebiliyorsunuz.
+
+356
+01:28:21,076 --> 01:28:34,076
+Buraya baktığınızda 4527.000, işte iki kat, altı kat, altı kat bir şey kazandık, görüyor musunuz? Zamandan kazandık. Bu oldukça önemli bir şey, faktör.
+
+357
+01:28:34,076 --> 01:28:42,076
+Dolayısıyla bu altı değeri, yani altı kat değeri değişebilir tabii yani durumdan duruma değişebilir.
+
+358
+01:28:42,804 --> 01:28:56,484
+Azalabilir, çoğalabilir. Ama diyelim ki şöyle bir problem var karşınızda. A, B, C, D, E, F diye matrisleri çarpacaksınız. Tamam mı? Bu altı matrisi birbirine çarpacaksınız.
+
+359
+01:28:58,984 --> 01:29:04,484
+Burada bu hani demin konuştuğumuz kazanç miktarı gerçekten çok büyük olabilir.
+
+360
+01:29:05,235 --> 01:29:15,235
+Yani burada bir kere şu da var. Şimdi demin kaç tane olasılık vardı? Bu problemi çözebilmek için kaç olasılık vardı? İki olasılık vardı değil mi? Bakın sadece iki olasılık vardı.
+
+361
+01:29:15,235 --> 01:29:26,923
+Yani önce A ile B'yi çarpıyorum sonra C'yi çarpıyorum. Ya da neydi? Önce B ile C'yi çarpıyorum sonra A ile C'yi çarpıyorum. Peki burada kaç olasılık var? Çok daha fazla değil mi? Görebiliyorsunuz.
+
+362
+01:29:27,507 --> 01:29:43,507
+Dolayısıyla, bu şeyde neden ona, peki bunların hangisini seçmek gerekir? Yani bu olası yollardan hangisini seçmek mantıklıdır? Çarpmayı yapmadan çarpmanın karmaşıklığını hesaplamak mümkün mü?
+
+363
+01:29:48,724 --> 01:29:50,220
+Kilit soru burası.
+
+364
+01:29:57,043 --> 01:30:00,164
+Çarpmayı yapmadan çarpmanın karmaşıkını hesaplayabilir misiniz?
+
+365
+01:30:04,979 --> 01:30:06,979
+Hesaplayabiliriz bence.
+
+366
+01:30:06,979 --> 01:30:14,979
+Arkadaşlar, az önce yaptık değil mi? Ben şimdi ABC'yi çarptım mı birbiriyle? Çarpmadım. Karmaşıklıklarını hesapladım mı?
+
+367
+01:30:14,979 --> 01:30:22,979
+Zaten şunlara bağlı değil mi bütün hikayeyi? Yani şu değil mi olay? Çarpma yapman karmaşıklığı hesaplayabilirsiniz, evet.
+
+368
+01:30:22,979 --> 01:30:28,979
+Dolayısıyla bir planlama yapabilirsiniz önceden, çarpmaları yapmadan. Onu demeye çalışıyorum, tamam mı?
+
+369
+01:30:28,979 --> 01:30:32,523
+Ama bu planlamanın karmaşıklığı da ayrı bir hikaye.
+
+370
+01:30:32,692 --> 01:30:46,692
+Tamam. Peki. Şimdi iyi güzel. Bu konunun hani şu planlama, çarpmayı nasıl yapalım onu planlama noktasına daha sonra tekrar döneceğim.
+
+371
+01:30:48,692 --> 01:30:56,692
+Birazdan ama onun öncesinde başka bir konuya gireceğiz çıkacağız. Tamam kısa bir şey olacak.
+
+372
+01:31:00,243 --> 01:31:15,644
+Kısa konumuz aslında geçen hafta linkli listelerde bahsetmiştik biraz işte, RAM'de ardışık yer olur olmaz falan gibisinden.
+
+373
+01:31:17,783 --> 01:31:24,884
+Ve o yüzden linkli listeler işimize var gibisinden linkli liste yapılarından bahsetmiştik.
+
+374
+01:31:25,844 --> 01:31:42,344
+Şimdi, bugünkü problemimiz ise biraz daha sıkıntılı. Öyle söyleyeyim. Diyelim ki, sizin RAM'iniz var. RAM'inizin boyutu 1 GB'lik RAM'iniz var. Tamam mı? 1 GB'lik RAM var elinizde.
+
+375
+01:31:43,804 --> 01:31:52,344
+Ve bir dizi var elinizde, hard diskte duruyor. Bunu sağlamak istiyorsunuz. Diyelim ki dizinizde 1 GB.
+
+376
+01:31:54,836 --> 01:32:13,836
+Ne yaparsınız? Burası RAM. Burası harddisk. Ne yaparsınız bu durumda? İlk önce bu harddiskdeki veriyi RAM'e çekersiniz. Tamam. Daha sonra burada bir sıralama algoritması çalıştırmanız lazım.
+
+377
+01:32:20,724 --> 01:32:35,484
+Fazladan memoriye ihtiyaç duyan, yani bir kere hızlı bir algoritma çalıştırmak istiyorsunuz. Hızlı algoritmadan bir tanesi QuickSort mesela, adı üstünde MergeSort var. İkisinin de karmaşıklığı aynı, n-log-n.
+
+378
+01:32:37,623 --> 01:32:47,064
+Ama MergeSort'un bir sıkıntısı var, işte n-lik bir dizi sıralamak istiyorsanız, hariçten bir n-lik alana daha ihtiyaç duyuyor.
+
+379
+01:32:47,923 --> 01:32:59,923
+Dolayısıyla, burada Merge Sort gibi bir şey kullanamayız. Çünkü Merge Sort kullanmak için 2 GB'lık RAM'e ihtiyacımız var, 1 GB dizi sıralamada.
+
+380
+01:32:59,923 --> 01:33:09,923
+Ama Quick Sort'ta öyle bir şey yok. Quick Sort'ta yerinde, öyle söylüyorum, yerinde sıralama yapabiliyorsunuz. İyi, güzel. O zaman biz burada Quick Sort'ta bu işi halledebiliriz.
+
+381
+01:33:10,676 --> 01:33:18,676
+Yani diziyi buraya çekeriz, RAM'de sıralarız ve daha sonra da tekrardan eski yerine yazarız. Tamam mı?
+
+382
+01:33:18,676 --> 01:33:26,676
+O da sıralayacağız, sort edeceğiz ve tekrardan yani birinci işlem bu, ikinci işlem bu, üçüncü işlem bu. Tamam mı? Peki.
+
+383
+01:33:26,676 --> 01:33:34,668
+Şimdi, problemimiz şöyle olursa, benim yine 1 GB RAM'im var.
+
+384
+01:33:37,108 --> 01:33:47,608
+Ama sıralanmasını istediğim veri mesela diyelim ki 9 GB. Bu da hardste duruyor.
+
+385
+01:33:50,108 --> 01:33:50,956
+Tamam.
+
+386
+01:34:00,212 --> 01:34:13,812
+Bu maalesef mümkün değil. Yani dizimiz 9 GB ama bizim RAM'imiz 1 GB. Yani gider RAM satın alırım falan gibisinden bir şeyden nasıl çözeriz deyince.
+
+387
+01:34:13,812 --> 01:34:26,012
+Çünkü o zaman sizin o RAM'inize sığmayan bir problem geldiğinde ne yapacaksınız falan filan. Peki, şimdi fazladan RAM satın almadan bu problemi çözebilir miyiz? Öyle sorayım bu problemi nasıl çözeceğiz?
+
+388
+01:34:28,051 --> 01:34:45,051
+Şimdi buradaki yapılacak işlem şöyle. Birincisi burada anlatacağım algoritmanın ismi ne? Bakın, external merge sort.
+
+389
+01:34:50,579 --> 01:35:13,579
+External olması aslında şu mevzudan dolayı. Yani işte RAM'in kendi içinde hareket edemiyoruz sadece. Tamam. Hard disk üzerinden de yani verinin tamamını RAM'e çekip onun üzerinde bir işlem gerçekleştirip tekrardan geriye koyamıyoruz. Veriyi parça parça alıp işleyip hareket edeceğiz. Tamam.
+
+390
+01:35:15,579 --> 01:35:16,579
+Şimdi
+
+391
+01:35:17,524 --> 01:35:25,924
+Merge Sort kısmında, algoritmanın içinde Merge Sort kullanıldığından geliyor. Ondan da bahsedeceğim birazdan nasıl çalışacağımızdan.
+
+392
+01:35:25,924 --> 01:35:45,123
+Şimdi yapacağımız işlem şu. İlk önce. Bizim RAM'imiz var. 1 GB'lik bir RAM'imiz var. Bu bizim dizimiz 9 GB. Bu 9 GB'ı 1 GB'lik parçalara yerim.
+
+393
+01:35:48,307 --> 01:35:50,307
+Şöyle yapalım işte.
+
+394
+01:35:50,307 --> 01:35:55,307
+Dokuz cigabaytlık. Dokuz tane parça.
+
+395
+01:36:15,636 --> 01:36:16,636
+Bir şey yapı ya.
+
+396
+01:36:23,091 --> 01:36:24,091
+Evet.
+
+397
+01:36:26,091 --> 01:36:28,091
+Evet hocam, yapabilirsiniz.
+
+398
+01:36:28,091 --> 01:36:36,091
+Yapabilirim. Peki ondan sonra ikinci işlemde şunu yapabilir miyim? Burayı çekip, sıralayıp tekrardan yerine yazabilir miyim?
+
+399
+01:36:36,091 --> 01:36:37,091
+Evet.
+
+400
+01:36:37,091 --> 01:36:44,091
+Bu olur. Üçüncüsünde bunu yaparım. En son da bunu da buraya çekip daha sonra yerine yazabilirim.
+
+401
+01:36:44,091 --> 01:36:47,091
+Peki bu işlemi yaptığımda dizi sıralanmış olur mu?
+
+402
+01:36:49,091 --> 01:36:50,091
+Hayır.
+
+403
+01:36:51,412 --> 01:37:14,155
+Hayır, niye? Ama nasıl? Her biri kendi içinde sıralı olur değil mi? Yani şöyle bir şey görürüz aslında düşünürsek. Mesela birinci parça, yani şöyle bir şey olabilir mesela. 1, 3, 7 sallıyorum şu anda tamam mı? Mesela bu birinci parçanın içi. 12, 16, 18, 2, 5, 9, 7,
+
+404
+01:37:14,836 --> 01:37:25,515
+9, 12 gibi bir şeyler göreceğim değil mi? Bakın bu parçaların her biri böyle olacaklar. Yani kendi içlerinde sıralanır. Ama dizinin tamamı sıralı mı? Alakası bile yok.
+
+405
+01:37:26,515 --> 01:37:31,756
+Tamam mıyız? Birinci adımda yapacağımız işi anladık. Yani her birini kendi içinde sıraladık.
+
+406
+01:37:33,595 --> 01:37:40,836
+Yani bizim dizimizin boyutunu işte remez sığacak parçalara ayırdık dizimizi.
+
+407
+01:37:41,011 --> 01:37:44,611
+Ve ondan sonra devam ettik. Peki şimdi ne yapacağız?
+
+408
+01:37:45,412 --> 01:37:50,412
+Şimdi aslında daha önceden görmüş olduğunuz bir algoritma vardı bakın, hatırlayın.
+
+409
+01:37:51,011 --> 01:37:57,011
+İki tane sıralı diziden tek bir tane sıralı dizi elde etme, hatırlıyor musunuz?
+
+410
+01:37:58,011 --> 01:38:02,412
+İki tane sıralı, kendi içinde sıralı diziden tek bir tane sıralı dizi elde etme.
+
+411
+01:38:02,811 --> 01:38:04,011
+Hatırladınız mı?
+
+412
+01:38:10,355 --> 01:38:21,355
+Bir şeyi tutuyorduk, o tuttuğumuz şeyden daha büyük, hangisinden alacağımızı o elimizdeki şeye göre karar veriyorduk. Ya ondan alıyorduk, ya ondan alıyorduk. İlerletiyorduk.
+
+413
+01:38:21,355 --> 01:38:27,355
+Ve en sonunda iki dizinin birleşimi tek bir sıralı dizi haline geliyordu.
+
+414
+01:38:29,395 --> 01:38:56,555
+Peki, bu mantığı şöyle bir şeyle yapmak mümkün mü? Mesela üç tane dizi olsa böyle yapabilir miyiz? Yani ben mesela şimdi şurada bir tane dizi oluşturacağım. Şimdi şu üçünü düşünelim sadece. Ya da şu dördünü düşünelim. Dördünü de varalım. Bu dördünü düşünelim. Ben şimdi buradaki en küçüğü bulabilir miyim? Yani en küçüğü derken şunu demek istiyorum. Her birinin şu anda bir şuradayım, bir şuradayım. Bir tanesi burada, bir tanesi burada.
+
+415
+01:38:57,300 --> 01:39:15,480
+Bunlar var elimde. Ve bir tanesi, bir rakam elimde olacak. Bu rakamdan daha küçük bir şey varsa onu yazacağım. Olmadan en küçüğünü bulacağım. Diyelim ki işte buraya biri yazacağım. Biri yazdığım zaman bu artık buraya gelecek.
+
+416
+01:39:16,051 --> 01:39:38,251
+Şu anda yazabileceğim en küçük olan ne var? 2 var, 2 yazacağım. 2 yazdığımda bu şuraya gelecek. Şu anda ne var yazabileceğim en küçük? 3 var. 3 yazdığımda artık şu şuraya gelecek. Sonra ne var yazabileceğim? 3, 7 var. 7 yazdığımda bu buraya gelecek. Bu şekilde ilerleyecek. Artık bakın şunların hepsi yazıldılar.
+
+417
+01:39:38,496 --> 01:40:03,496
+Bu daha hala hiçbir şey yazılmadı. Sonra ne var yazıyorum? 9 var. Şu 9 yazdıysam bu buraya gelecek. Sonra yine bir 9 daha var. Bu 9 yazdım bu buraya gelecek. Sonra ne var? 12 var. 12'yi yazacağım. Bu 12'yi yazdıysam burası bitti artık. Sonra bu 12'yi yazacağım. Şu buraya gelecek. Sonra 16'yı yazacağım. Bu buraya gelecek. 18'yi yazacağım. Bu da bitti olacak. Hepsi bitmiş olacaklar.
+
+418
+01:40:03,988 --> 01:40:12,988
+Şimdi, dolayısıyla aynı anda 4 tane diziyi birleştirmek mümkün. Aynı anda K tane diziyi birleştirmek de mümkün. Tamam.
+
+419
+01:40:12,988 --> 01:40:25,988
+Şimdi, tahmin edebileceğiniz gibi biz burada bu dizi birleştirmede 9'lu bir şey yapacağız. Tabi buradaki 9 rakamı şey, ne der ona, duruma göre değişebilecek bir rakam.
+
+420
+01:40:26,228 --> 01:40:31,228
+Ben bu problem için konuşuyorum, 1 GB'lık ve 9 GB'lık datalarınız varsa.
+
+421
+01:40:31,228 --> 01:40:35,228
+9 yolda bir birleştirme yapacağım ben. 9 yolda birleştirme yapacağım.
+
+422
+01:40:35,228 --> 01:40:41,228
+Peki 9 yolda birleştirme yapacağım da ben bu işlemi yaparken, bu işlemlerin hepsini yapabilmek için bunların RAM'de durması lazım.
+
+423
+01:40:41,228 --> 01:40:46,228
+Harp liste ile bu işi ne yapamazsınız? Yapamazsınız.
+
+424
+01:40:46,228 --> 01:40:51,228
+Yapamazsınız derken, yaparsınız da...
+
+425
+01:40:52,051 --> 01:41:03,051
+Yani, korkunç yavaşlar her şey, öyle söyleyeyim belki. Neyse, donanımda da değişiklikler yapmamız gerekebilir. Neyse, çok önemli değil.
+
+426
+01:41:03,051 --> 01:41:10,051
+Dolayısıyla bizim bunları remde tutmamız gerekiyor. Bunun da remde durması gerekiyor. Bakın bunların ikisinin de remde durması lazım.
+
+427
+01:41:10,051 --> 01:41:13,996
+Ama benim dizilerimin hiçbiri remde değil. Tamam mı?
+
+428
+01:41:14,100 --> 01:41:25,579
+Peki, çünkü RAM'i sığdıramıyorum. Bütün şu 9 GB'lik data'yı alsam ve RAM'e sığdırabiliyorsam, şu hale getirsem ve burada ben bu işlemi gerçekleştirebilirim.
+
+429
+01:41:25,579 --> 01:41:28,220
+Mesela bu da RAM'de de 10 GB'lik bir RAM mi olsa?
+
+430
+01:41:28,627 --> 01:41:37,127
+9 GB'lık bir alanı bu dizi kaplar, 1 GB'lığı da bu pardon, bunun da 9 GB olması gerekecektir, en nihayetinde.
+
+431
+01:41:37,127 --> 01:41:41,367
+18 GB'lık bir alanı varsa bu işi gerçekleştirebilirim.
+
+432
+01:41:41,367 --> 01:41:45,327
+Merge Sort çünkü ne yapıyor demiştik, fazladan yere ihtiyaç duyuyor.
+
+433
+01:41:45,327 --> 01:41:49,327
+Peki, böyle bir durum yok. Yoksa nasıl bir şey yapacağım?
+
+434
+01:41:50,996 --> 01:42:08,636
+Şimdi işin püf noktası şu, bunlar kendi işlerine sıralılar. İyi güzel, kendi işlerine sıralılarsa o zaman ben şöyle bir şey yapsam nasıl olur? Şimdi remi düşünelim, tamam mı? Burası benim 1 GB'lik remim, tamam mı? Ben bu 1 GB'lik remi 10 parçaya vereceğim bu sıfır. Bakın.
+
+435
+01:42:14,003 --> 01:42:39,003
+10 parçaya böldüm. Yani bunların her biri 100 MB. Tamam. İyi peki, ne yapacağız burada? Şimdi şöyle bir şey yapacağım. Benim, şeyde düşünelim. Şöyle 9 parçayı yapacağım.
+
+436
+01:42:42,547 --> 01:42:46,547
+9 GB, ondan her, 1 GB.
+
+437
+01:42:50,644 --> 01:43:13,644
+Bak işte, şöyle bir şey yapalım. Şu arkadaşın yüzde onluk kısmını alalım. Şunu şuraya koyalım bakın. Sonra şunu şuraya koyalım. Sonra şunu yüzde onluk kısmını alalım. Şuraya koyalım. Tamam. Şu yüzde onluk kısımlardan ben burayı oluşturayım. Şuraya koyalım. Bu da en son.
+
+438
+01:43:16,467 --> 01:43:43,587
+Şuraya, pardon, şuraya gelecek. Şunun da en son arkadaşı şuraya gelecek. Şu anda ben RAM'in 900 MB'lik kısmını doldurdum. Fark ettiniz değil mi? Artık şu anda RAM'in şurası doldu. 900 MB'lik kısmı doldu. 100 MB'lik bir alanım var mı benim şu anda? Var. Peki şimdi ne yapacağım sizce? Bundan sonrasını tahmin edin bakalım.
+
+439
+01:43:44,627 --> 01:43:45,627
+Bekliyorum.
+
+440
+01:44:07,764 --> 01:44:11,596
+Evet, nasıl bir şey yapışalım?
+
+441
+01:44:18,963 --> 01:44:27,963
+Hocam, önce birinci grubu alıp, bu boş yerde, RAM'in boş yerinde sıralayıp, sonra birinci gruba bile koysak, aynı şeyleri diğer gruplar için yapsın.
+
+442
+01:44:29,963 --> 01:44:31,963
+Ama kendi için de sıralamış olursun yine onu.
+
+443
+01:44:39,252 --> 01:44:41,252
+Yani, iki aşamayı da yapacağız.
+
+444
+01:44:41,252 --> 01:44:45,252
+Yani, kendi içinde sorunlu olursun.
+
+445
+01:44:45,252 --> 01:44:56,252
+Yani, şu anda bakın, önemli, şunu biliyoruz. Bu gruplar, şurada çizdiğim gruplar, kendi işlerine sıralılar. Bakın, bunlar kendi işlerine sıralı, her biri. Tamam mı?
+
+446
+01:44:56,252 --> 01:45:00,252
+Ama ben, bütün dizinin sıralı olmasını istiyorum.
+
+447
+01:45:00,252 --> 01:45:06,956
+Bunu nasıl yapacağım? 110'lu kısımlarını aldım, buraya attım. Şimdi burada boş bir alan bıraktım, değil mi? Bakın.
+
+448
+01:45:06,996 --> 01:45:33,996
+Bu boş alana ben şöyle bir şey yapabilir miyim? Şimdi şurada demin yaptığım şeyi hatırlayın. Buradan bir eleman aldım, işte biri buraya aldım, şunu aldım, ha burası bitti dedim, buranın işi bitti dedim, vesaire. Değil mi? Hatırlıyorsunuz değil mi? Ben burada şu dokuz tane parçadan, sanki dokuz tane dizi var aslında. Bu dokuz tane diziyi sıralı bir şekilde birleştirebilir miyim?
+
+449
+01:45:34,644 --> 01:45:48,644
+Evet, birleştirebilirim. Nasıl yapacağım ben bunu? İşte buradan bazı, yani bu dokuz parçanın hepsinden gerekli olan kısımları alacağım ve ben burasını doldurmaya başlayacağım. 100 MB kısmı doldurmaya başlayacağım. Tamam mı?
+
+450
+01:45:48,644 --> 01:46:01,452
+Yani işte ilk önce 2'yi yazacağım, sonra 3'ü yazacağım, sonra 7'yi yazacağım. Bunlar böyle teker teker gel. Arada bir neler olacak? Mesela burasının işi bitmiş olacak. Tamam mı? Burasının işi bittiyse, bu ne demek?
+
+451
+01:46:02,387 --> 01:46:05,887
+Burası boşaldı artık. Buraya ne yapabilirim ben şu anda?
+
+452
+01:46:11,220 --> 01:46:23,220
+Yeni veri yazabilirim, değil mi? Yeni veri yazabilirim. Yeni veri yazabilirim. Buradan, bu sefer ne yapacağım? Mesela işte şurasının işi bitti diyelim ki. Tamam burasının işi bitti diyelim ki.
+
+453
+01:46:24,220 --> 01:46:33,195
+O zaman, bunu nereden almıştım ben? Şuradan almıştım. O zaman bunun bir sonrakini, onu da mesela şöyle yapalım. Bir sonrakini alıp buraya yazacağım. Tamam.
+
+454
+01:46:35,283 --> 01:46:47,283
+Ve şimdi burada, peki burası ne olacak? Yani burası ilerliyor, burası 100 MB, yani buraya durmadan dataları yazıyorum ben buraya. Yani buradan ne kadar gittiyse buraya da o kadar birikiyor aslında.
+
+455
+01:46:48,283 --> 01:46:58,283
+Dolayısıyla burada da işim bittikçe, işim bittikçe derken şöyle, 100 MB doldukça, öyle söyleyeyim, 100 MB doldukça ben şeyde...
+
+456
+01:47:05,268 --> 01:47:09,587
+Harkliste ya da onu şöyle yapalım.
+
+457
+01:47:15,796 --> 01:47:18,596
+Ben 9 GB'lik bir yalan açacağım.
+
+458
+01:47:18,596 --> 01:47:20,916
+HARTLIST'e bakın. Tamam.
+
+459
+01:47:20,916 --> 01:47:23,476
+Burası doldukça buraya boşaltacağım.
+
+460
+01:47:26,356 --> 01:47:31,916
+Bir daha geldi, mesela işte buradaki de bitti, buradan bir tane çekildi, burası yine doldu, gittim, ben bunu buraya yazdım.
+
+461
+01:47:31,916 --> 01:47:36,156
+İşte buradan bir şey daha geldi, onu buraya ekledim, bu gitti buraya yazdım.
+
+462
+01:47:36,156 --> 01:47:43,195
+Dolayısıyla adım adım adım adım adım adımını bu en sona kadar 9 GB'lık dizimizi...
+
+463
+01:47:43,444 --> 01:47:49,684
+Bu sefer kendi içinde gerçekten sıralı bir şekilde sıralamış olacağım. Tamam.
+
+464
+01:47:50,724 --> 01:47:58,444
+Şimdi, burada şöyle bir şey diyebilirsiniz. Ben buradan bir şey aldığımda, şuraya bunu eklediğimde, bu eklediğim şeyi de...
+
+465
+01:47:58,771 --> 01:48:04,211
+Buradaki, benim o ana kadar sıralanmış olan dizimden daha küçük bir şeyler olamaz mı?
+
+466
+01:48:04,211 --> 01:48:11,771
+E olamaz, niye olamaz? Zaten burası bitti. Bittiğine göre bu yeni eklenen elemanların hepsi eski elemanlardan daha ne olmak zorunda?
+
+467
+01:48:11,771 --> 01:48:17,211
+Yani şöyle bir şey düşünün, şimdi bunu %10'luk parçalardınız ya, mesela burada 1-2 vardı işte.
+
+468
+01:48:17,524 --> 01:48:23,924
+3, 6 var, 7, 8 var. Mesela bunu aldınız, gönderdiniz, işi bitti. Ondan sonra bunu alıp gönderiyorsunuz.
+
+469
+01:48:23,924 --> 01:48:28,524
+Dolayısıyla sizin o göndermiş olduğunuz zaman mutlaka daha büyük bir şeyler gönderiyorsunuz içeriye.
+
+470
+01:48:28,524 --> 01:48:35,524
+Tamam? Dolayısıyla hiçbir şekilde şeyi bozmuyor. Sıralı bir dizi üretebiliyor olma şeyimizi bozmuyor, mantığımızı bozmuyor.
+
+471
+01:48:35,524 --> 01:48:43,524
+Ve bu şekilde dediğim gibi, V'e sığmayan bir diziyi aslında sıralamak mümkün mü? Bunun da dediğim gibi...
+
+472
+01:48:46,195 --> 01:48:50,195
+Basit bir yolu bu şekilde düşünebiliriz.
+
+473
+01:48:51,195 --> 01:49:03,195
+Şimdi, bu araya girişin arkasından dediğim gibi başka bir konuya devam edeceğim demiştim.
+
+474
+01:49:03,195 --> 01:49:06,195
+Ama onu bölmeyelim, onun için bir ara verelim şimdi.
+
+475
+01:49:06,195 --> 01:49:13,195
+Saat 10.50, 11.00'a kadar ara diyelim.
+
+476
+01:49:13,716 --> 01:49:21,436
+Bir 10 dakika aramız olsun. Ondan sonra kalan konularımıza devam edelim. Az sonra görüşmek üzere.
+
+477
+01:58:47,891 --> 01:58:49,891
+Evet, tekrardan merhaba arkadaşlar.
+
+478
+01:58:51,891 --> 01:58:52,684
+Şimdi...
+
+479
+01:58:57,300 --> 01:59:02,579
+Sesim geliyor herhalde değil mi? Sıkıntı yok diye tahmin ediyorum.
+
+480
+01:59:15,731 --> 01:59:32,235
+Şimdi problemimiz olsun. Problemimiz şöyle bir şey. En tane sayı var. 6 var, 3 var, 12 var, 4, 7 var, böyle atıyor işte.
+
+481
+01:59:35,923 --> 01:59:53,923
+Bir tane sayı var. Soru şu, bu en sayının içinde toplamı 15 olan alt hükümeleri...
+
+482
+01:59:59,380 --> 02:00:01,380
+Toplamı 15 olacak.
+
+483
+02:00:02,979 --> 02:00:04,979
+Mesela sal diyorum.
+
+484
+02:00:06,579 --> 02:00:08,579
+12 ile 3, bu bir şey.
+
+485
+02:00:09,880 --> 02:00:11,380
+Başka ne var burada?
+
+486
+02:00:11,979 --> 02:00:13,979
+7 ile 8 var mesela.
+
+487
+02:00:16,880 --> 02:00:18,079
+Görebiliyor musunuz?
+
+488
+02:00:20,979 --> 02:00:22,979
+4, 8 var.
+
+489
+02:00:23,979 --> 02:00:25,963
+Böyle bunlar varlar.
+
+490
+02:00:26,836 --> 02:00:28,836
+Bu alt kümeleri bulmak.
+
+491
+02:00:30,136 --> 02:00:32,136
+Şimdi bunu çözmeyeceğiz.
+
+492
+02:00:32,136 --> 02:00:39,136
+Ama bu problemin karmaşıklığı arkadaşlar n!
+
+493
+02:00:39,136 --> 02:00:41,136
+Tamam?
+
+494
+02:00:41,136 --> 02:00:44,136
+n!
+
+495
+02:00:44,136 --> 02:00:48,136
+Yani hiç sevmediğimiz türden bir şey.
+
+496
+02:00:48,136 --> 02:00:50,136
+Acayip uzağıtıyor.
+
+497
+02:00:52,136 --> 02:00:53,996
+Yani işte...
+
+498
+02:00:55,444 --> 02:01:04,444
+n eşittir 10 için olan karmaşıklık da n eşittir 11 olan için karmaşıklık arasında 10 kat, yani n kat fark var.
+
+499
+02:01:04,444 --> 02:01:14,444
+Korkunç yazısı büyüyor, öyle böyle değil. Yani atıyorum işte belli bir ölçekteki problemi çözebilecek bir donanımı oluşturuyorsunuz, algoritmaya yazdınız, çalıştırıyorsunuz.
+
+500
+02:01:14,444 --> 02:01:21,444
+Atıyorum n için, n artı 1'e geçtiğinizde o donanımı 10 katına çıkartmanız gerekiyor ya da n katına çıkartmanız gerekiyor.
+
+501
+02:01:21,939 --> 02:01:32,939
+Bu korkunç kötü bir şey. Yani n kare gibisinden bir şeyler hiç benzemiyor bu. n faktoryal çok hızlı büyüyen bir şey.
+
+502
+02:01:34,939 --> 02:01:43,939
+Ama bu algoritmanın karmaşıklığı böyle. Daha hızlı, yani bu problemi daha hızlı çözebilen bir algoritmamız yok.
+
+503
+02:01:43,939 --> 02:01:48,939
+Peki, şimdi başka bir problem.
+
+504
+02:01:53,779 --> 02:02:12,260
+Gezgin satıcı problemi. Gezgin satıcı problemi şu, elinizde en tane şehir var. Bunlar şehirler. Koordinatlarını gösteriyorum. Buradan başlayacağım. Burası başlangıç. Tamam, buradan başlayacağım. Peki.
+
+505
+02:02:13,587 --> 02:02:21,587
+Gezgin satıcının bize soruluşu şu, ben bir gezgin satıcım şu şehirlere gitmek istiyorum, bütün şehirlerin hepsine birden gitmek istiyorum, bana en kısa rotayı bulur musun?
+
+506
+02:02:21,587 --> 02:02:29,587
+Mesela diyebiliriz ki ona şöyle gidebilirsin, mesela sallıyor, tamam mı? Ya da diyebiliriz ki ona şöyle gidebilirsin.
+
+507
+02:02:29,587 --> 02:02:33,587
+Bütün şehirlere gidecek.
+
+508
+02:02:37,300 --> 02:02:41,500
+Ve maalesef arkadaşlar, bu problemin karmaşıklığı da n-faktöryel.
+
+509
+02:02:43,500 --> 02:02:46,500
+Tamam. Enter burada şehir sayısı.
+
+510
+02:02:49,899 --> 02:02:54,699
+Yani en kısa rotayı bulmak, nın karmaşıklığı n-faktöryel.
+
+511
+02:02:56,100 --> 02:03:00,899
+Şimdi, böyle bir şey var, böyle bir şey var.
+
+512
+02:03:05,876 --> 02:03:21,876
+Peki, şimdi ne yapacağız? N faktürellik bir karmaşıklık kötü. Yani n'in küçük olduğu yerlerde bu işi yapabilirsiniz. Ha, demin mesela şeyden bahsetmiştim.
+
+513
+02:03:25,876 --> 02:03:31,876
+Matrisleri hangi sırada çarpalım? O da bunun gibi problem.
+
+514
+02:03:32,083 --> 02:03:47,083
+Onun planlaması, o da bunun gibi bir problem. Peki, ama bu problemler böyle diye çözmeyeceğiz mi? Çözeceğiz. Ama nasıl çözeceğiz? Ondan bahsedeceğim.
+
+515
+02:03:47,083 --> 02:03:58,083
+Şimdi, buradaki kritik ifade aslında sezgisel algoritmalar.
+
+516
+02:04:06,484 --> 02:04:15,484
+Yok, DigicStra'da değil. DigicStra'da bir noktadan bir noktaya gitmek için yol bulan bir algoritma.
+
+517
+02:04:15,484 --> 02:04:23,484
+Ama buradaki algoritma o değil. Yani buradaki problem o değil daha doğrusu. O başka bir problem.
+
+518
+02:04:23,484 --> 02:04:29,484
+Yani A şehrinden B şehrine gitmenin en kısa yolunu bulmak için olan şey DigicStra değil mi?
+
+519
+02:04:29,484 --> 02:04:34,060
+Ama buradaki olay o değil. Ben bütün şehirlerden geçmek istiyorum.
+
+520
+02:04:34,547 --> 02:04:36,547
+En kısa rota hangisi olur?
+
+521
+02:04:36,547 --> 02:04:39,547
+Şimdi burada karşımıza Selisayi Burtman çıkıyor.
+
+522
+02:04:39,547 --> 02:04:48,547
+Selisayi Burtman'ın anlamı şu, bir problemin çözümü çok çok karmaşıksa,
+
+523
+02:04:48,547 --> 02:05:01,483
+çok çok karmaşıksa, bu durumda ben acaba işime yeterli ölçüde yarayacak
+
+524
+02:05:02,996 --> 02:05:06,316
+Ama çok daha hızlı çözümler bulabilir miyim?
+
+525
+02:05:08,376 --> 02:05:18,615
+Bakın, işime yeterli derecede edecek. Yani mesela, gezgin satıcı da mesela işte adama bir tane rota önereyim ben.
+
+526
+02:05:19,115 --> 02:05:20,811
+Hızlı yapabilirim bunu.
+
+527
+02:05:20,884 --> 02:05:31,384
+Ama çok çok büyük ihtimalle bu rota ne olacak? Optimal bir rota. Ondan daha hızlısı olacak. Anlatabildim mi? Ondan daha hızlı var aslında. Olacak değil mi? Var çok büyük ihtimalle.
+
+528
+02:05:31,384 --> 02:05:47,764
+Onu bulamıyorum. Çünkü onu bulmak korkunç uzun sürüyor. Onun yerine ben daha düşük, çok daha düşük karmaşıklıkla bir çözüm bulayım. Ama bu çözüm dediğim gibi optimal olmasın.
+
+529
+02:05:48,884 --> 02:06:00,884
+Ama yeterince de, benim için yeterince iyi olsun ya da idare etsin bunlar diyebilirsiniz. Optim'u bulamıyorsanız yeterince iyi. Yani birçok durumda böyle davranırız. Çok kabaca.
+
+530
+02:06:00,884 --> 02:06:13,884
+Çünkü mükemmeli bulmak, mükemmeli peşinde koşmak, mükemmel çözümü bulmak, öyle söyleyeyim. Mükemmel çözümü bulmak çok uzun zaman alır.
+
+531
+02:06:14,868 --> 02:06:23,868
+Ve o yolda insan açısından düşünürseniz, o kadar uzun süreli bir şeye devam edebilme hevesi falan çok kolay bir şey değildi.
+
+532
+02:06:26,868 --> 02:06:29,868
+Bizlerin de genelde yaptığı bir sezgisel yapılar kullanacağız.
+
+533
+02:06:29,868 --> 02:06:37,676
+Şimdi, yapay zeka derslerini alırsanız, ileride göreceksiniz sonra sezgisel algoritmadan sonra epey bir bahsediyoruz.
+
+534
+02:06:37,876 --> 02:06:46,275
+Şimdi, burada, bu problem için yani şu gezgin satıcı için kullanacağımız sezgizli algoritma şu, çok basit.
+
+535
+02:06:47,775 --> 02:06:57,876
+Sen B şefimde misin? Evet, tamam. O zaman en yakını hangisi bu şekillerden? Diyelim ki bu, tamam bu. O zaman buna git.
+
+536
+02:06:58,876 --> 02:07:03,376
+Buna git. İyi gittim. Şimdi buradayım, tamam.
+
+537
+02:07:04,020 --> 02:07:25,940
+Sana en yakın hangi şehir? Bu şehir. O zaman buna git. Gittim. Sana şu anda en yakın hangi şehir? Mesela bu. Atıyorum. Bu ikisinden bu. Buna git. Gittim. Tamam. Sana en yakın hangi şehir? Bu. O zaman buna git. Sana şu anda en yakın hangisi? Şu. Şuna git. En yakın hangisi?
+
+538
+02:07:27,028 --> 02:07:32,028
+Bu, zaten oraya gitmiş olduğumuz için bir tek bu kaldı ve buradan da zaten işimiz bitti.
+
+539
+02:07:32,028 --> 02:07:38,028
+Böyle bir yol buldum bakın. Şöyle gidiyor, şuradan gidiyor, şöyle, sonra şöyle gidiyor.
+
+540
+02:07:38,028 --> 02:07:44,028
+Şimdi peki, bu algoritmanın karmaşıklığı nedir? Bana bunu söyleyebilir misiniz?
+
+541
+02:07:44,028 --> 02:07:49,996
+Yani bulunduğun yere en yakın şehre git, her seferinde. Bunun karmaşıklığı nedir?
+
+542
+02:07:58,484 --> 02:08:00,484
+n şehriniz varsa.
+
+543
+02:08:00,484 --> 02:08:05,484
+Yani her bir şehir için n-1 şehre uzaklığa bakmamız lazım.
+
+544
+02:08:05,484 --> 02:08:08,484
+O yüzden n çarpı n-1 diye düşünüyorum.
+
+545
+02:08:08,484 --> 02:08:10,484
+Bir daha söyle.
+
+546
+02:08:10,484 --> 02:08:19,484
+Her bir şehir için aslında diğer şehirlere olan uzaklıklara bakmamız lazım olduğu için n çarpı n-1 diye düşündüm.
+
+547
+02:08:19,484 --> 02:08:24,484
+n çarpı n-1 diye düşündüm.
+
+548
+02:08:25,395 --> 02:08:34,195
+Ama şöyle olmuyor, mesela şimdi güzel yakamışsın ama küçük bir şey var. Mesela şurada olduğumuzu düşünelim, tamam mı? Burada kaç tane şehre bakacağım ben?
+
+549
+02:08:35,996 --> 02:08:45,996
+En tane toplam şehir varsa? En eksi bir şehre bakacağım değil mi? Peki şimdi ben mesela bunu seçtim. Buraya gittim. Şimdi kaç tane şehre bakacağım?
+
+550
+02:08:46,836 --> 02:08:48,836
+Evet, n-2 azalacak.
+
+551
+02:08:48,836 --> 02:08:54,836
+n-2 azalacak o zaman bu buraya kadar gidecektim. O zaman n-1'den 1'e kadar olan sayıda toplamaya...
+
+552
+02:08:54,836 --> 02:08:57,836
+pardon, n'den 1'e kadar olan sayıda toplamaya...
+
+553
+02:08:57,836 --> 02:09:02,836
+Dolayısıyla n²'lik bir şey olacak kabaşa. Tamam?
+
+554
+02:09:02,836 --> 02:09:06,836
+Tamam, toplamaya. Yarısı falan var da çok önemli değil.
+
+555
+02:09:08,836 --> 02:09:10,836
+İyi mi bu n²?
+
+556
+02:09:14,644 --> 02:09:15,644
+Ne dersiniz?
+
+557
+02:09:19,988 --> 02:09:22,988
+En faktöriyelden daha iyi muhtemelen.
+
+558
+02:09:22,988 --> 02:09:25,988
+Çok çok çok çok daha iyi.
+
+559
+02:09:25,988 --> 02:09:27,988
+Yani öyle böyle değil.
+
+560
+02:09:27,988 --> 02:09:37,988
+Yani siz en faktöriyelik bir karmaşıklığı, en kara karmaşıklığa düşürebiliyorsanız, bu mükemmel bir şey.
+
+561
+02:09:37,988 --> 02:09:43,988
+Yani korkunç kısmı şeye göre, en faktöriyel'e göre.
+
+562
+02:09:43,988 --> 02:09:45,484
+Peki...
+
+563
+02:09:47,123 --> 02:09:49,123
+Avantage bu, dezavantage, ne?
+
+564
+02:09:56,916 --> 02:10:18,699
+Avantaj hız. Hız tamam. Kötü olan kısım ne? En iyi yolu bulamamak belki de. Yani optimal mi? Hayır. Tamam, optimal değil. Burada gördük işte mesela, bulduğu yolu gördük, çizdik. Bu yolun optimal olmadığını ne yapabilirsiniz? Söyleyebilirsiniz rahatlıkla.
+
+565
+02:10:21,747 --> 02:10:45,747
+Dolayısıyla bu serisi algoritmalar, bir sorunun çözümü, karmaşıklığı çok çok yüksek olduğu durumlarda idare eder çözümler bulmak için, öyle söyleyelim, çok hızlı.
+
+566
+02:10:45,844 --> 02:10:52,844
+yaklaşımlar geliştirebilirsiniz. İsimleri zaten sezgisel oradan, sezgisel yani siz kendiniz bir kural uyduruyorsunuz.
+
+567
+02:10:57,140 --> 02:11:18,140
+İleride, sezgisi algoritmalar diye ifade edilen bazı algoritmaların belli kısıtlar altında optimal çözümlerde bulabildiğini göreceğiz. Mesela var, sezgisi algoritmalar var, optimal çözümü garantiliyorlar ama belli kısıtlar altında garantiliyorlar her zaman değil. Belli problem türlerinde vs.
+
+568
+02:11:18,452 --> 02:11:29,452
+Ama sezisal algoritma temel olarak daha iyi çözüm bulmak gibisinden bir dertleri yoktur. Daha iyi çözüm bulmak değildir dertleri. Yeterince iyi bir çözüm.
+
+569
+02:11:29,452 --> 02:11:43,948
+Ama çok hızlı bir şekilde bunu gerçekleştirmek temel hedefleri. Dolayısıyla gezgin satışı probleminde böyle bir şey yapılıyor.
+
+570
+02:11:44,083 --> 02:11:50,483
+Ya da mesela günümüzde yine çok popüler yapay sinir alan, yapay sinir alan eğitim algoritmaları.
+
+571
+02:11:50,483 --> 02:12:00,983
+Yapay sinir alan eğitim algoritmaları işte. Bunların hepsi seyircil algoritmalar. Mecburen öyle yapıyorsunuz.
+
+572
+02:12:00,983 --> 02:12:04,983
+Çünkü...
+
+573
+02:12:05,332 --> 02:12:14,692
+Mükemmel çözümü bulmanız, dediğim gibi korkunç uzun sürüyor. Bu mevcut sezgisi algoritmaları çok büyük mimarlarınızdan çalıştırmak bile çok uzun sürüyor da,
+
+574
+02:12:14,692 --> 02:12:28,692
+hani o tarz bir şeyleri sezgisi algoritmalarını kullanmasanız çözüme ulaşmanız kabaca, öyle söyleyelim. Optimum çözümü bulmanız, teorik olarak mümkün ama bahsettiğimiz gibi.
+
+575
+02:12:28,787 --> 02:12:35,187
+Evrenin zamanı süresi kadar beklemeniz gereken birçok durum karşınıza çıkabiliyor.
+
+576
+02:12:35,187 --> 02:12:39,187
+Dolayısıyla hep CDC algoritmalarında belli bir şeyler yapmaya çalışıyoruz.
+
+577
+02:12:39,187 --> 02:12:43,587
+Dolayısıyla algoritmalarının karmaşıklarını hep indirgemeye çalıştık.
+
+578
+02:12:44,387 --> 02:12:47,987
+Şöyleyken şöyle hali, memoriden kazanalım vs.
+
+579
+02:12:47,987 --> 02:12:53,587
+Bazı durumlarda dediğim gibi, okul organının çözümünü, mükemmel çözümünü hedeflemeden de...
+
+580
+02:12:53,908 --> 02:13:02,908
+Hareket etmek mümkün. Çünkü mükemmel çözüm çok fazla zaman alıyorsa ama siz bir rekabetin içindesiniz.
+
+581
+02:13:02,908 --> 02:13:10,908
+Hızlı bir şeyleri yapmanız gerekiyor. Ne bileyim işte 0.1 milisaniyede çözüm üretmeniz gerekiyor.
+
+582
+02:13:10,908 --> 02:13:13,548
+Kullanıza bir şey sordu, onu söylemeniz lazım hemen.
+
+583
+02:13:13,716 --> 02:13:22,115
+Ya da işte kullanıcı YouTube'da bir tane videoya tıkladığı anda ondan sonra ona önereceğiniz şeyleri çok çok korkunç hızlı bir şekilde ne yapmanız lazım?
+
+584
+02:13:22,115 --> 02:13:32,315
+Bulmanız lazım. Önereceğiniz bir sonraki videoları ona önermeniz lazım korkunç hızlı bir şekilde. Aynı anda milyonlarca kişiyi bunu yapıyor olmanız lazım.
+
+585
+02:13:32,315 --> 02:13:37,916
+Şimdi burada dediğim gibi optimallik ve hız bir trade-off.
+
+586
+02:13:40,372 --> 02:14:04,204
+Genelde ne yapmanız gerekecektir? Mükemmeli değil ama hızlı bir şekilde cevap verebileceğiniz yeterince iyi olan bir çözüme doğru hareket etmeniz gerekecektir. Bunlar dediğim gibi hep sergisi algoritmalar olarak geçerler. Yeterince iyi bir çözümü çok çok hızlı bir şekilde bulmak aslında buradaki hikaye bu. Peki.
+
+587
+02:14:04,595 --> 02:14:10,095
+Şimdi, bugünkü anlatacağım şeyler bu kadar arkadaşlar. Sorularınız var mı?
+
+588
+02:14:20,051 --> 02:14:27,051
+Yok. Peki. Herkese geldiği için teşekkür ediyorum. Önümüzdeki hafta kısmetse görüşmek üzere diyorum. Hoşçakalın.
+
+589
+02:14:32,851 --> 02:14:33,851
+İgilenler.
