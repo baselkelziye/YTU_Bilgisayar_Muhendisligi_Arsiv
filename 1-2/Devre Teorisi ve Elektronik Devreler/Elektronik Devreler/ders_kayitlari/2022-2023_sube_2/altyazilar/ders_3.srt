@@ -1,0 +1,1411 @@
+1
+00:04:33,459 --> 00:04:39,539
+Bu arkadaşlar, ses geliyor mu? Herhalde geliyor gibi gözüküyor bende.
+
+2
+00:04:39,839 --> 00:04:40,799
+Günaydın.
+
+3
+00:04:41,439 --> 00:04:48,639
+Günaydın. Kameramla alakalı bir problem yaşadım. O yüzden kamerayı açamayacağım bugünlük.
+
+4
+00:04:49,839 --> 00:05:00,879
+Ekranınıza paylaşalım. Seste bir az veya duyulmama gibi bir şey var mı? Yeterli herhalde sesin yüksekliği.
+
+5
+00:05:02,291 --> 00:05:07,311
+Gayet iyi hocam.
+
+6
+00:05:14,932 --> 00:05:41,692
+Evet arkadaşlar, başlayabiliriz herhalde. Saatimiz geldi. Geçen hafta arkadaşlar genel olarak dersin bir nasıl işleyeceğimizi, nasıl yapacağımızı da alakalı konuştuk. Bu süreçte elektronik devrelerin lab, laboratuvar adedi zaten 4 veya 5 adet oluyordu. O yüzden daha henüz asistanlarla tam olarak işleyiş noktasında bir planlama yapmadık bu ders kapsamında.
+
+7
+00:05:42,196 --> 00:05:51,416
+Ama yakında, bugün veya yarın biz asistanlarla konuşuyoruz. Güncel olarak nasıl yapılacağına dair duyurlar vs. paylaşırlar sizden.
+
+8
+00:05:52,596 --> 00:06:09,436
+Labı daha netleş demedik uzun lafın kısası. Bu Nisan öncesinde uygulamaların online olabilmesi olamıyorsa yapılmamasına dair karardan dolayı elektronik de online'a nasıl evirebiliriz bunu bir konuşmamız lazım.
+
+9
+00:06:10,420 --> 00:06:28,759
+Ve ne yaptık geçen hafta başka? Notlandırmadan bahsettik ve ayrıca analog dijital sinyal, gürültü, distorsan bunlar nedir? Bunlar üzerine biraz ders yapmıştık. Hatta devre teorisi ile elektronik devreler iki farklı ders.
+
+10
+00:06:29,396 --> 00:06:46,536
+Devre teorisi 1. sınıf dersi, elektronik devreler 2. sınıf dersi. Arasındaki en büyük farkın elektronik devrelerin bir yarı iletken semi-conductor dediğimiz mimarideki devre ekipmanlarına ki bunlardaki en çok kullanılan diyot ve transistör.
+
+11
+00:06:47,091 --> 00:07:00,331
+Transistörün bir alt versiyonu da diyebileceğimiz MOSFET gibi yapıların elektronik ana konusu olduğunu ve biz burada AC analizlere birazcık giriş yapacağımızı ama tam olarak da hani...
+
+12
+00:07:00,851 --> 00:07:19,471
+İleri elektronik olacak seviyede e-sanezire girmeyeceğimizi bahsettik. Devre teorisinde ise daha çok aktif ve pasif devre elemanı diye tabir ettiğimiz direnç, kondansör, bobin veya indiktör veya dediğimiz devre yapılarına analiz edeceğimizi söyledik.
+
+13
+00:07:19,471 --> 00:07:25,312
+Bir dakika tabletimi yüklemiştim ama şu an tablet de görmüyor.
+
+14
+00:07:27,283 --> 00:07:52,324
+Tabletlikte çok fazla bir çizme işimiz, soru çözme işimiz yok bu haftada. Bu hafta ne yapacağız? Bu hafta aslında sizin bir kere uzaktan da olsa, online de olsa proje. Yani laboratuvar artı proje dersin kapsamı hatırlarsanız. Geçen hafta bahsettik. Laboratuvar kısmını istediğim gibi asistanlarla konuşacağız, daha netleştireceğiz ama.
+
+15
+00:07:52,723 --> 00:08:17,123
+Proje kısmı zaten olacak. Hepinizden asistanlar bir doküman paylaşacak proje yönergesi diye. Herkesin iki kişi olabilir diye düşünüyorum. Grup şeklinde bir proje bulmasını, maksimum bir projeden üç tane grubun alabilmesini, alkışlığı veya ne diyebiliriz örnek verecek olsak projeye. Mesela yangın tespit projesi.
+
+16
+00:08:17,971 --> 00:08:45,971
+Duman Tespiti Projesi. Bu aynı isimle ve aynı içerikle üç adet farklı grup alabilecek. Bu hafta ne yapacağız? Bu hafta aslında sizin projelerde kullanacağınız sensör mimarilerine ait bazı parametrelerin ne olduğunu, bu sensörlerin nasıl çalıştığını, sensörlerin input olarak aldığı veriyi sistemde, yani elektronik tasarımda nasıl kullanacağımı.
+
+17
+00:08:45,971 --> 00:08:58,591
+Ve bunların output olarak, EGHR diye tabir edeceğimiz, eğleyicilerde nasıl kullanılacağını anlatacağımız bir hafta olacak bu haftada.
+
+18
+00:08:59,131 --> 00:09:08,451
+Bu hafta bir ödev isteyeceğim sizden derse sonunda. Ödev olarak geçecek bu. Baştan hemen belirteyim. Ödev el yazısıyla olacak arkadaşlar.
+
+19
+00:09:08,451 --> 00:09:12,672
+Yani sizin el yazısıyla hazırlamanızı isteyeceğim ödevi.
+
+20
+00:09:13,043 --> 00:09:24,644
+Bilgisayar ödevlerini kabul etmeyeceğim. Bilgisayarda, Word'de vesaire, copy-paste'de yazılmış olan ödevleri kesinlikle kabul etmeyeceğim. Dersin sonunda da ödevi anlatacağım zaten.
+
+21
+00:09:26,104 --> 00:09:37,024
+Dediğim gibi sensör ve eyleyciler özelinde bugün konuşacağız. Bir geliş yapacağız. Sonra sensörlerin performansları şu yüzden önemli.
+
+22
+00:09:37,504 --> 00:10:02,283
+Çünkü bazı sensörler çok yüksek performans verebilir ama uygulamamıza uygun olmayabilir. Bu yüzden sensörün performansını tanımlamak lazım, anlatmak, izah etmek lazım. Ödeminiz de bu konuda olacak zaten. Sonra sensörler belli başlı sensörlere bakacağız. Sonra bunlardan eyleyici olarak kullanılabilecek yani aldığımız veriyi devrede, elektronik devrede.
+
+23
+00:10:02,576 --> 00:10:16,016
+İmput olarak alınan bu verinin, output olarak bir pervane kontrolü mü yapıyorsunuz, ışık mı yakıyorsunuz, motor mu döndürüyorsunuz, bunlar eyleyici oluyor veya bir spiker mu bağlıyorsunuz.
+
+24
+00:10:16,016 --> 00:10:29,016
+Bu eyleyicilere bakacağız. Sonra da tabii şu an uygulama kısmı yok ama belki insandan sonra uygulama olabilir diye de laboratuvardaki ölçü aletlerinin
+
+25
+00:10:30,515 --> 00:10:35,435
+Biraz daha kısa bir versiyon şekliyle anlatımını gerçekleştireceğiz.
+
+26
+00:10:37,316 --> 00:10:44,875
+Evet, öncelikle bizim için sensör de, eyleyici de, eyleyici demek belki biraz garip kaçıyor.
+
+27
+00:10:45,015 --> 00:10:47,895
+O yüzden ben ders kapsamında E-Chature diyeceğim yine.
+
+28
+00:10:48,215 --> 00:10:52,875
+Hani İngilizcesini kullanacağım. O daha variz oluyor.
+
+29
+00:10:53,620 --> 00:11:06,680
+Sensörlerin ve Echchurch'ların aslında ikisinin de mimarisi bizim için Transdücer diye geçer. Transdücer dediğimiz şeyin tam olarak tanımlaması ise şu. Bir fiziksel niceliği.
+
+30
+00:11:07,091 --> 00:11:17,711
+Başka bir fiziksel veyahut da elektriksel, elektrik de sonuçta fizik, fiziksel niceliği değiştiren, dönüştüren, çeviren devre elemanıdır diyeceğiz.
+
+31
+00:11:17,871 --> 00:11:22,971
+Yani işte örneğin sıcaklık sensörü diyoruz veyahut da gürültü sensörü diyoruz.
+
+32
+00:11:23,051 --> 00:11:26,192
+Aslında ana mimarisi bunların transducer diye geçecek.
+
+33
+00:11:27,091 --> 00:11:41,971
+Fiziksel orada mesela ne olacak sıcaklık sensöründe? Ortamdaki fiziksel sıcaklığı elektriksel akıma, sensörüne göre değişir, akıma veya gerilime çeviren devre elemanı başka bir fiziksel boyuta çeviriyor.
+
+34
+00:11:42,811 --> 00:11:45,531
+Genel olarak transdüüsör diyoruz bu yapılara.
+
+35
+00:11:54,879 --> 00:12:04,180
+Niceli, biz başka bir elektriksel sinyale döndürdüğümüzden dolayı bir transducer diyoruz.
+
+36
+00:12:05,491 --> 00:12:23,711
+Evet, bunları biraz daha tabiki detaylandıracağız. Sensör ve ekçeye açıldığı. Sensörlerin bir performans diye tabiri var arkadaşlar. Çünkü dediğim gibi her sensör, mesela sıcaklık sensörü diyorsunuz. Belki 20, belki 100 tane, şu an sayısını bilemeyeceğim adet farklı sıcaklık sensörü var.
+
+37
+00:12:24,083 --> 00:12:41,063
+Bunların performansları tabii ki birbirlerinden farklı. Kullanım yerleri birbirlerinden farklı. O yüzden bunların belli başlı karakteristik, yani kendi sensörünü tanımlayan özellikleri mevcut. Birincisi range mesela. Range dediğimiz şey aslında çalışma aralığı.
+
+38
+00:12:41,875 --> 00:13:01,895
+Yani mesela bir sıcaklık ölçümü yapıyoruz ama fabrikadayız. Ve fabrika işte ne bileyim 100-150 derecenin altına inmiyor zaten. 100 ile 200 derece arasını ölçmemiz isteniyor. İşte buradaki 100-200 aralarında çalışan bir sensörünü tanımlandırmamız için bizim sensöre ait karakteristiklerini bilmemiz lazım.
+
+39
+00:13:04,500 --> 00:13:26,639
+Nereden öğreniyoruz sensörlere ait? Zaten ödeviniz de bu noktada olacak. Data Sheet veyahut da Veri Katalog Türkçesi. Bir sensöre ait veri katalogunu incelememiz gerekiyor. Dersin sonunda örnek bir veri katalogu nasıl incelenir? Ekrana yazıtacağım bir web sayfasında nasıl bulunur vs.
+
+40
+00:13:27,231 --> 00:13:38,451
+Yani bizim kullanacağımız ne sensörüyse, sıcaklık sensörü en çok bilineni, örnek vermek gerekirse, LM35 denen bir transistör var aslında.
+
+41
+00:13:38,572 --> 00:13:41,812
+Transistör ama transistör mimarisinde bir transistör var.
+
+42
+00:13:42,331 --> 00:13:47,451
+Şimdi LM35 data sheet yazacağız Google'a. Ekrana bize bir PDF çıkartacak bir sayfadan.
+
+43
+00:13:48,019 --> 00:14:12,019
+Bu PDF'in içeriğinde biz range'i öğrenmemiz lazım ki uygulamamızı da kullanalım. Mesela bu PDF, yani data veri katoluğu PDF'i bizim için o sensörün karakteristiğini gösteren, yani işte nöfü cüzdanı nasılsa veya kimlik neyse bir insan için, bu da aslında onun kimliğini belirleyen bir veri katoluğu diye tabir ettiğimiz bir döküman.
+
+44
+00:14:12,851 --> 00:14:26,151
+Range birinci özelliğimiz çünkü dediğimiz gibi uygulamaların uygulamadan uygulamaya değişen bir şey var.
+
+45
+00:14:26,151 --> 00:14:32,731
+Bir kullanım alanına göre bizim sensörleri seçmemiz gereken bir parametre Range.
+
+46
+00:14:33,451 --> 00:14:38,631
+İkincisi Resolution veya Discrimination ikisi de aynı anlama geliyor esasında.
+
+47
+00:14:39,220 --> 00:14:49,300
+Bizim değişken olma durumunda yani sensörden bir ölçüm alacağız. Bu ölçümün en minimum step aralığı ne? Örnek verelim.
+
+48
+00:14:49,300 --> 00:14:51,300
+Hassasiyet yaratı şüphesü bir tık.
+
+49
+00:14:52,659 --> 00:14:57,559
+Örnek vermek gerekirse ortamın sıcaklığını ölçüyorsunuz ama fabrikadasınız. Yine diyeceğim mesela.
+
+50
+00:14:58,159 --> 00:15:05,639
+150 ile 100 ve üstü ölçeceksiniz sıcaklığı. 100 derece ile 101 derecenin pek bir anlamı yoktur orada.
+
+51
+00:15:05,639 --> 00:15:10,659
+Orada kritik olan şey şudur mesela. 200 derecenin üstüne çıkmasın denir belki.
+
+52
+00:15:11,379 --> 00:15:21,620
+Şimdi öyle bir durumda, bizim için çok çözünürlüğü yüksek bir sensör kullanmaktan ziyade, aşağıda gelecek başka parametrelerin daha çok önemi olabilir.
+
+53
+00:15:22,899 --> 00:15:30,379
+Ama mesela oda sıcaklığı ölçüyorsunuz ki oda sıcaklığı işte normalde 18 ile 25 arasında değişen bir oda sıcaklığı olduğunu düşünelim.
+
+54
+00:15:30,379 --> 00:15:36,980
+Hani burada daha çözünürlüklü ama range'i daha ufak, daha az olan bir sensör...
+
+55
+00:15:37,491 --> 00:15:51,211
+Belki kullanmak daha manada olabilir. Bunun gibi Resolution dediğimiz, çözünürlük dediğimiz yapı aslında bizim ölçümler arasındaki minimum değişim miktarını gösteriyor. Bu da önemli bir parametre.
+
+56
+00:15:52,131 --> 00:15:58,211
+Hata, şimdi her sensörün fiziksel olarak bir hata fayı var. Çünkü sonuçta...
+
+57
+00:15:58,355 --> 00:16:07,655
+Aynı üretim bandından da çıksa iki tane aynı sensör aynı şekilde output, respons vermeyebilir.
+
+58
+00:16:07,975 --> 00:16:12,855
+Yani ortama sıcaklığını ölçen LM35 diyelim mesela. Hep ondan gidiyoruz.
+
+59
+00:16:13,775 --> 00:16:21,855
+LM35 aynı banddan üretilen, aynı transistör mimarası üretilen ve basit bir transistör yani sensör.
+
+60
+00:16:23,475 --> 00:16:39,035
+Banttan çıkan 100 tane sensörün yüzü de birbirinin aynı seviyedeki dereceler için aynı gerilim boyutunda bir output vermeyecektir. Yani bir hata payı olacaktır birbirleri arasından. İşte burada hata payı.
+
+61
+00:16:39,892 --> 00:16:59,871
+Yani kabul edilebilir olması lazım. O da tabii uygulamaya göre. Mesela tekrardan oda sıcaklığı örneğini verelim. Oda sıcaklığında artı eksi 0.5 derece çok da atla deve değil. Ama işte fabrikadasınız, çok kritik bir yerdesiniz. Burada hata payı hiç kabul etmiyor. Mesela artı eksi 0.1.
+
+62
+00:17:00,371 --> 00:17:15,652
+Derecesinde bir hata payısı olan, yani bu fabrikada test edilmiş, işte 100 tane LMA35'ten elde edilen aradaki standart sapmalarla bulunmuş bir hata payı. Bu da belirtilir veri katalogunda.
+
+63
+00:17:18,932 --> 00:17:25,211
+Arkadaşlar, ekürisi, inekürisi ve ansiortin eti aslında hepsi üçü de birbirini tanımlayan.
+
+64
+00:17:26,516 --> 00:17:43,336
+Karakteristik özellikler. Yani doğruluk demek Türkçesi. Ne derece ben acaba ortamdaki sıcaklığı doğru bir şekilde biliyorum mesela örneklerci olursak. Şimdi burada iklisi doğruluk demek bir tabir daha var. O da precision.
+
+65
+00:17:43,807 --> 00:17:48,807
+Bu da aslında Türkçe'ye tam getirirsek doğruluk demek ama arada ufak bir fark var.
+
+66
+00:17:48,907 --> 00:17:51,208
+O da şöyle, aşağıda grafiklerde de açıklamışız.
+
+67
+00:17:51,688 --> 00:17:57,168
+Mesela artı olan bir sıcaklık, yani bir değer, yani doğru olan bir değeri göstersin.
+
+68
+00:17:57,288 --> 00:18:00,528
+Yani normalde ortamın sıcaklığı bu artının gösterdiği değer olsun.
+
+69
+00:18:01,107 --> 00:18:03,048
+Grafikteki mavi artıyı kastediyorum.
+
+70
+00:18:03,048 --> 00:18:09,688
+Ve okumalar yapıyoruz sensörden. Farklı farklı, her seferinde okuduğumda farklı bir değer okuyorum.
+
+71
+00:18:09,968 --> 00:18:11,768
+X'lerde sensör okumaları.
+
+72
+00:18:12,768 --> 00:18:19,428
+Şimdi sol taraftaki figür A'da gösterdiğimiz şey aslında ekurisisi.
+
+73
+00:18:19,428 --> 00:18:22,448
+Yani doğruluğu çok düşük olan bir okumayı gösteriyor.
+
+74
+00:18:22,568 --> 00:18:26,847
+Çünkü hiçbir zaman gerçekten artı olanın üstüne binmemiş.
+
+75
+00:18:27,568 --> 00:18:29,288
+Bir saniye arkadaşlar.
+
+76
+00:18:30,847 --> 00:18:31,548
+Bir saniye.
+
+77
+00:18:33,807 --> 00:18:35,768
+Hemen geliyorum arkadaşlar.
+
+78
+00:19:00,435 --> 00:19:12,895
+Evet, şimdi ne diyorduk? Evet, figürü A'da gördüğümüz gibi artı olan değeri hiçbir zaman her okumamızda aynı sensörden kastediyoruz.
+
+79
+00:19:12,895 --> 00:19:27,895
+Bu da ayrıca farklı sensörler değil, o zaman error oluyor. Ama aynı sensörün birden fazla ortamdaki sıcaklığı ölçme durumunda hep farklı bir skor, farklı bir derece responsunu görüyoruz.
+
+80
+00:19:28,372 --> 00:19:48,512
+Bu zaten ekurisyonu düşük demek, doğruluğu düşük demek. Bir de precision dediğimiz tabir, keskinlik aslında bir tık daha Türkçe'ye çevirirsek. O da şunu kastediyor. Her seferinde artıyla bağımsız bir şekilde sensöründen okuduğumuz, aynı sensörden okuduğumuz değerin aynı olup olmaması.
+
+81
+00:19:50,195 --> 00:20:15,215
+İşte o da mesela sol A figürüne baktığımızda çok ayrıksa. Yani hiçbir zaman bir sensör, ortamdaki sıcaklığı aynı sensörden bahsediyoruz. Ortamdaki sıcaklık T anında 22 okuyor, T artı 1 de işte başka bir zamanda aynı sensör 23 okuyor, 21 okuyor, 20, 24. Bu gibi kendi içerisindeki outputların da tutarsızlığı varsa
+
+82
+00:20:15,663 --> 00:20:21,063
+O zaman biz keskin bir ölçüm vermiyor diyoruz. Yani non-precision bir sensör diyoruz.
+
+83
+00:20:22,144 --> 00:20:30,264
+Şimdi orta B figürüne bakarsak, şimdi bir sensör var, aynı sensör ve ortamı farklı zamanlarda yine ölçüyoruz.
+
+84
+00:20:30,264 --> 00:20:32,235
+Ama her seferinde ortamız...
+
+85
+00:20:33,011 --> 00:20:44,371
+Tabi bu da sabit, normal koşullar altında diye tabir edebileceğimiz bir durumda olduğunu düşünelim. Yani artı, hep ortam sıcaklığı artının gösterdiği değer olduğunu düşünelim.
+
+86
+00:20:44,720 --> 00:21:01,700
+Burada şimdi sensörden okuduğumuz değerler, birden fazla zamanda okunan aynı sensördeki değerler eğer ki birbiri üzerine korelasyonu yüksekse yani benzerse mesela B şıkkında, B figüründe olduğu gibi okumalarımız hep bir noktada toplanmış.
+
+87
+00:21:01,920 --> 00:21:10,320
+Bu artıya uzak mesela artının üzerinde değil ama hep bir noktada. İşte bu keskinlik oluyor. Yani precision yüksek bir sensör.
+
+88
+00:21:10,655 --> 00:21:21,615
+Ama eküresisi, yani doğruluğu düşük bir sensör. Çünkü artılan, aslında ortamın sıcaklığının, actual dediğimiz, gerçekte olan sıcaklığa uzak.
+
+89
+00:21:21,615 --> 00:21:37,451
+Ama tekerrür ettiğimiz testlerde hep bu stabil olarak aynı değeri veriyor. Bu prezi, keskin ölçüm yapan bir sensör. Evet, ama eküret bir sensör değil. Aslında en çok istenen...
+
+90
+00:21:38,387 --> 00:21:56,288
+Tabi bu teoride bu mümkün, bu kadar olmaz ama C figüründe olduğu gibi bir okuma mesela. En çok istenen nedir bu da? İşte artı olan mavi sensör ortamın gerçek değerine yakın değerler okunmuş ve her seferinde de aynı değerlere benzer değerler okunmuş.
+
+91
+00:21:58,708 --> 00:22:10,048
+Precision ve accuracy dediğimiz tabirler bunlar. Accuracy doğruluk, precision keskinlik. Yani her seferinde aynı sonucu veriyor olup olmama durumu sensör.
+
+92
+00:22:14,668 --> 00:22:21,932
+Burada da yine hani accuracy ile hata fayı arasında bir...
+
+93
+00:22:21,971 --> 00:22:29,672
+Bir benzetme yapılmış. Bir ok attığımızda hedef olan 12'ye olan uzaklığı benim için hatayı verir.
+
+94
+00:22:29,672 --> 00:22:32,672
+Burada da mesela...
+
+95
+00:22:33,299 --> 00:22:35,500
+Oklar hep aynı yere atılmış.
+
+96
+00:22:36,140 --> 00:22:44,460
+Preziş, yani keskin bir sensör outputu var, responsu var ama errorumuz tabii ki de var.
+
+97
+00:22:44,460 --> 00:22:52,220
+Yani hatanın olmaması keskinliğin olmaması anlamına gelmiyor.
+
+98
+00:22:52,579 --> 00:22:57,859
+Keza tam tersi, keskinliğin olmaması hatanın olmaması anlamına da gelmiyor.
+
+99
+00:22:58,720 --> 00:23:00,660
+Buradaki ince noktayı alırlayalım.
+
+100
+00:23:08,339 --> 00:23:25,240
+Başka bir özelliğimiz doğrusallık Türkçesi ile linearite. Şimdi linearite sensörler de şu için önemli. Biz elektronik devre tasarımında bir fonksiyon yazdığımızda mesela bir actuator motoru sıcaklığa göre linear arttırmak istiyoruz. Örnek verelim.
+
+101
+00:23:36,339 --> 00:23:58,359
+Yani her iki derecede bir kademi arttırma mekanizmasını kurmak istiyoruz. Aslında bu lineer bir formül değil mi? Y eşittir x artı 2 gibi bir şey çıkıyor mesela. Yani bu lineer denklemi oluşturabilmemiz için aslında sensörlerin lineer olması, yani sensörden okuduğumuz verilerin doğrusal değerler üretmesi önemli.
+
+102
+00:23:58,359 --> 00:24:04,339
+Ama tabii bu teoride böyle fiziksel olarak bir sensörü kullandığınızda tabii ki de hiçbir şey yok.
+
+103
+00:24:04,339 --> 00:24:30,159
+Bu şekilde bir zaman lineal bir şekilde output üretmeyecek. Çünkü sensör çeşidine göre değişkenlik gösterir ama yüksek akım ürettiği senaryoda akımın dış kuvvetlerden, gürültülerden etkilenmesi daha fazla olacak. Düşük akımlar belki sönümlenecek, gürültünün içerisinde kaybolacak gibi gibi. Yani bu linealite tabii ki de sağlanması müşkül, zor.
+
+104
+00:24:30,675 --> 00:24:41,495
+Ama tabi sensörün kılıf dediğimiz, hani dış ortamdan bir veriyi okuyoruz ama o gürültüden etkilenmemesi için kılıf yapısına getiriyorlar bu sensörleri.
+
+105
+00:24:41,495 --> 00:24:48,015
+İşte LM35 dediğimiz sensör aslında dışında plastik bir kılıfı bulunan transistöre benzeyen bir yapıda.
+
+106
+00:24:48,660 --> 00:25:11,519
+Veya optosensörlere bakacağız birazdan. Mesela onların da etrafında metal bir kılıf var. Çünkü ışıktan etkilendiğinden içerisinin karanlık olması gerekiyor. Gibi gibi ama nihayetinde bunu pratiğe döndüğümüzde bir şekilde yürüttü dışarıdan etkiliyor sensör okumalarını. İşte bu linearite de şunu söylüyor bize bu karakteristik.
+
+107
+00:25:11,892 --> 00:25:17,572
+Sensörün yaptıkları testler neticesinde ne kadar lineer davrandığını gösteriyor.
+
+108
+00:25:17,692 --> 00:25:19,971
+Mesela şu sağdaki...
+
+109
+00:25:21,076 --> 00:25:34,895
+Bu grafikte y ekseninde sensörün çıktısı var. Akım olabilir veya gerinim olabilir. X ekseninde de basınç var. Yani dış ortamdaki basınç etkisi ki bu dağa çıktığımızda basınç yükselir.
+
+110
+00:25:34,895 --> 00:25:44,236
+Yüksekten, yerden, deniz seviyesinden, deniz seviyesinin altından vs. aslında lokasyona bağlı olarak sensörün değişkenlik gösterebileceği bir parametre.
+
+111
+00:25:44,915 --> 00:26:03,476
+Şimdi bu basınçla bağlı olarak testler yapılmış ve karakteristiği bu sensörün aslında best fit dediğimiz lineer çizgiden sapıyor. Nasıl sapıyor? Düşük basınçlarda beklediğimiz sensör alt kutundan daha az, orta basınçlarda işte biraz daha yükseliyor.
+
+112
+00:26:12,915 --> 00:26:21,716
+Düz, belli bir seviyede muhtemelen sensör output'u verecek. Bass Fitline'dan gittikçe uzaklaşacak yani.
+
+113
+00:26:23,056 --> 00:26:33,036
+İşte bu çalışmalar, bu karakteristik çalışmalar yapılıyor. Data sheet'e veri katalogunda, nerte noktasında işte böyle böyle kullanabilirsiniz diye bilgi olarak sunuluyor.
+
+114
+00:26:33,036 --> 00:26:36,875
+Bu da başka bir sensörün karakteristiğini gösteren parametre.
+
+115
+00:26:37,907 --> 00:26:55,127
+Sensitivity, hassasiyetlik. Bu aslında Resolation vardı hatırlar mısınız? Biraz önce anlattığım. Bu Resolation'la da çok kurele benzer bir şey. Yani duyarlılık diye Türkçe çevirebiliriz. İşte normalde bir ortamdaki sıcaklık değişti.
+
+116
+00:26:56,372 --> 00:27:13,872
+Ortamdaki ne ölçülecekse fiziksel nicelik değiştiğinde bizim için sensördeki çıktığının değişmesinin ne kadar hızda olduğu. Yani Resolution ne kadar hızda değil, ne kadar değiştiğiydi. Sensördeki ne kadar hızda değişti.
+
+117
+00:27:21,728 --> 00:27:28,628
+Yangının tespit edilmesinden sonra sensörün alt butonunu hemen değişip ne olması lazım?
+
+118
+00:27:28,628 --> 00:27:33,788
+İşte o fiskellerin çalıştırılması lazım. Yani sensitive bir sensörün kullanılması lazım.
+
+119
+00:27:34,291 --> 00:27:54,611
+İşte bu da yapılan testler, o data veri kataloglarında belirtilen sensitivity parametresi olabilir. Bunlar şimdi burada bahsettiğimiz bu özellikler veya karakteristikler bütün sensörlerin veri kataloglarında birebir olmak zorunda değil. Bazıları yapmıyor olabilir. Mesela sensitivity testlerin yapılmamış olabilir bir sensör için.
+
+120
+00:27:55,251 --> 00:28:15,912
+Bazısında linearity vardır, bazısında ötekisi vardır, ötekisi yoktur. Bunların illa hepsi bir sensörün veri katalogunda bahsedilecek diye bir kaydı yok. Yani bu bir standart değil. Ama normalde yapılması veya bir sensörü belirleyen karakteristikler bunlardan bir bütün şeklinde tanımlandırılıyor.
+
+121
+00:28:17,491 --> 00:28:21,011
+Şimdi gelelim sensörlere. Bir saniye.
+
+122
+00:28:21,392 --> 00:28:23,392
+Şurada nası haritler şahsı.
+
+123
+00:28:26,612 --> 00:28:37,832
+Evet, sensörlere biraz bakacağız. Biraz önce dediğim gibi karakteristiklerine baktık. Şimdi ne tarz sensörler var? Projelerinizde ne tarz sensörler kullanabilirsiniz? Bunlara bakacağız.
+
+124
+00:28:37,832 --> 00:28:54,372
+Çok sık kullanılan tabii herkes tarafından bilinen sensörlerin çalışma prensibi bazı şeylere, ne diyebiliriz? Mesela bir direnci veya rezidif etkiye dayalı sensörler var. Yani işte ortama fiziksel.
+
+125
+00:28:54,612 --> 00:29:06,452
+Bu durumuna göre direnci değişen sensörler var. Ki aslında direnç değişmesi demek, eğer gerilim sabitse sensöre verilen akımın değişmesi demek. Yani akım kontrollü yapıları kusunuyor.
+
+126
+00:29:21,839 --> 00:29:27,059
+Depolayan devre elemanları, enerji üzerinde depolayan devre elemanlarıydı.
+
+127
+00:29:27,659 --> 00:29:31,959
+İşte bobinde akımı, akım tabanlıydı.
+
+128
+00:29:32,139 --> 00:29:39,099
+Yani indikto yapısı olan bobinlerde akımı üzerinde manyetik alan oluşturarak saklayabiliyordu.
+
+129
+00:29:39,639 --> 00:29:44,799
+Kapasitif, yani kondansatör yapıları ise gerilimi üzerinde saklıyordu.
+
+130
+00:29:45,619 --> 00:30:02,939
+Diye elektrik bir materyal vardı. O diye elektrik materyaller aslında bir süre üzerinde bu enerjileri saklayabilmesini sağlıyordu. Yani nihayetinde sensör dediğimiz tabir bu ikisi için konuşursak biraz enerji depolama üzerine çalışan sensörler.
+
+131
+00:30:04,219 --> 00:30:10,519
+Füzyoelektrik dediğimiz basınçla alakalı bir sensör tabanı deneyeceğiz. Fotorezitif.
+
+132
+00:30:10,867 --> 00:30:29,847
+Işıkla direnci değişen sensörler, bunlar fotorezistikler. Elastik dediğimiz sensörler, basınçla değişik output üreten sensörler, termalde sıcaklıkla değişik output üreten sensörleri kastediyor. Bunların birkaç örneğine değineceğiz zaten.
+
+133
+00:30:29,847 --> 00:30:37,567
+Rezitif termometreler, aslında iç yapısına baktığımızda, bu kalem niye acaba?
+
+134
+00:30:40,627 --> 00:30:41,527
+Şöyle yapalım.
+
+135
+00:30:47,347 --> 00:30:52,228
+Evet, kalemi alamıyorum çünkü hemen şunu da olabilir. Bir saniye arkadaşlar.
+
+136
+00:30:56,531 --> 00:30:56,892
+Hmm.
+
+137
+00:31:10,067 --> 00:31:16,067
+Evet, şimdi çalışıyor. Yani aslında rejitif dediğimiz, yani direnç...
+
+138
+00:31:30,836 --> 00:31:49,576
+Rezidif dediğimiz, direnç de değişen, direnç durumuna göre rezidif etki üreten sensörlerin iç yapısına baktığımızda bir tel var. Bu telin genleşmesi direncin artıp azalmasına neden oluyor.
+
+139
+00:31:54,228 --> 00:32:08,168
+Direncin aslında bir tel üzerinde telin boyutu, yani şöyle düşünün, genliği, aşağıda iki tane tel var, bakır tel. Bunlar da telin şeyleri, kalınlığı.
+
+140
+00:32:10,128 --> 00:32:14,948
+Telin kalınlığının artması direnci azalmasına neden oluyordu.
+
+141
+00:32:15,476 --> 00:32:42,096
+Telin boyunun uzaması ise direncin artmasına neden oluyordu hatırlarsak. L ile D dediğimiz iki tabir vardı. Şimdi burada da eğer ki ben bu kabloyu genleştirirsem uzamış olur. Uzadığı için de direnç artıyor. Ben bunu başka bir şekilde genlemesine yani D dediğimiz bu genişlik parametresini arttırırsam direnci azalıyor. Azaltırsam direnci yükseliyor.
+
+142
+00:32:42,483 --> 00:33:01,563
+Aslında ortamdaki sıcaklıkla alakalı ki bu termometre dirençleri, sensörleri, termometre bu sıcaklık aslında bu kablonun veya başka bir kablonun, neyse sarım şekilleri farklı, kablo üzerindeki rezidif etkiyi oluşturuyor.
+
+143
+00:33:01,703 --> 00:33:07,503
+Yani daha çok arttırıyor veyahut da daha azaltıyor. Soğuması veya ısınmasına göre değişiyor.
+
+144
+00:33:07,892 --> 00:33:16,892
+Buna göre de bizim çıkışımızdaki output, yani buradan bu uzaya kaplıyor, bir gerilim verdiğimde ölçeceğim gerilim daha düşük olacak.
+
+145
+00:33:16,892 --> 00:33:23,892
+Veya direnci hattında daha düşük olacak akıma, direnci azaldığında akımı daha yüksek olacak.
+
+146
+00:33:23,892 --> 00:33:31,892
+Ve bu akım üzerinden ben aslında fiziksel olarak bir sıcaklığı elektriksel sinyale çevirmiş oluyorum bu sensörde.
+
+147
+00:33:33,172 --> 00:34:00,572
+Linear bir sensörler genelde bunlar. Yani ortamlık sıcaklığın buna yaptığı genleşme birazcık linear oluyor. Ama sensitivity dediğimiz, hani hızlı bir feedback alamıyoruz. Yani ortamlık sıcaklığı değişti, bekle bu değişim burada yazışansın. Sonra ben bunu akımla ölçeğim. İşte bu sensitivity olanı burada pur, çok kaliteli bir sensitivity, anlık bir değişkeni ölçemiyoruz.
+
+148
+00:34:02,675 --> 00:34:24,996
+Termistor, bu da problemin şu, Termistor'un özelliği şu arkadaşlar. Aslında biraz niyot yapısına benziyor. İlgili haftadan daha gördükten sonra daha iyi olacaktır. Bunun da iç yapısına baktığımızda, özelliklerine baktığımızda çok hızlı bir output üretebiliyor ama lineer değil bu da.
+
+149
+00:34:26,195 --> 00:34:32,255
+Yani doğrusal bir sonuç üretemiyor. Bir seviyeden sonra artık bozuntuya doğru gidiyor.
+
+150
+00:34:34,876 --> 00:34:36,956
+Başlık niye gelmiyor bende ya?
+
+151
+00:34:37,376 --> 00:34:38,675
+Bir tane. Tamam.
+
+152
+00:34:40,015 --> 00:34:42,336
+Evet, şimdi LM35 demiştik.
+
+153
+00:34:43,555 --> 00:34:47,635
+LM35'i görüyorsunuz. Bu kodlar çok önemli değil başındaki ve sonundaki.
+
+154
+00:34:48,235 --> 00:34:50,916
+LM35 sıcaklık, gündelik hayatta kullanımdan.
+
+155
+00:34:51,231 --> 00:35:15,172
+Pek çok uygulamanın içerisinde kullanılıyor. Bu transistör tabanlı. Yani bu bir transistör. İlgili transistör haptasından sonra bunun iç yapısını anlatmak daha mantıklı. Şu an sadece bir transistör yapısında olduğunu diyorum. Yani PNJUX'ın dediğimiz bir yapıda. Yarı iletken bir yapıda. Çok uygun fiyatlı zaten. Yani 2 lira, 3 lira bir şeydir muhtemelen şu sensör.
+
+156
+00:35:15,668 --> 00:35:31,748
+Linear bir output üretiyor ve kullanımı kolay. Sıcaklık sensörü dedik tekrardan ve işte eksi 50 ile 150 derece arasında çalışan bir sensör bu. Bu da başka bir sıcaklık sensörü.
+
+157
+00:35:32,748 --> 00:35:37,748
+Işık sensörü. Bu da fotovoltaik.
+
+158
+00:35:38,356 --> 00:35:57,516
+Geçiyor bunlar arkadaşlar. Yani bizim için bir ışık geldiğinde içerisindeki devre yapısı, bu metal aksan içerisindeki devre yapısının ışıktan daha iyi sömürülmesini sağlamak için yapılmış. Bu işte solar sel var bir tane başında. Güneş hücresi.
+
+159
+00:35:58,643 --> 00:36:08,103
+İçerisindeki batarya modülüyle bir gerilim seviyesine yükselme veya düşme durumuna göre bizim için elektrik akım veya elektrik kontrolü sağlıyor.
+
+160
+00:36:08,323 --> 00:36:23,863
+Buna fotodiyotlar da diyorlar zaten. Fotovoltaik de olabilir, fotodiyot da olabilir. Bunlar zaten mesela çokça kullanılan projelerde olabiliyor. Bunlardan kullanıyorsunuz. Çok hızlı cevap veriyor.
+
+161
+00:36:24,467 --> 00:36:40,847
+Ama burada sıkıntı şu, lineer değil. Işığın boyutu arttıkça arttığı boyut seviyesinde bir şey üretemiyoruz. Bir yerden sonra daha çok ışık, daha yüksek bir akım kontrolü sağlamak demek olmuyor. Yani lineer olmuyor demek.
+
+162
+00:36:43,667 --> 00:36:46,847
+Fotokondaktır'da kondansatör tabanlı. Yani şuradaki...
+
+163
+00:36:47,219 --> 00:37:04,639
+Fotovoltaik'in bir kondansütör tabanlısı, bu diyot tabanlısıydı. Bu da kondansütör tabanlı. Diyotu anlatacağız yeri geldiğinde bu dersin kapsamında. Kondansütör tabanlı darda ise yine aynı şekilde bu ışık geldiğinde içerisinde bir enerjidenme oluyor ama bu kondansütörü şarj ediyor.
+
+164
+00:37:04,639 --> 00:37:08,460
+Ve kondansütör bizim için farklı seviyelerde akım üretiyor.
+
+165
+00:37:11,027 --> 00:37:36,367
+diyebiliriz. LDR burada çokça problemli bir sensör. Strain Gauch dediğimiz güç veya üzerine basınç diye tabir ettiğimiz basınç sensörleri. Burada da aslında yine hani şeyde anlatmıştık ya, sıcaklıkla genleşmeye bağlı olarak direnci değişiyor ve dirençten dolayı da akımı değiştiğinden biz ölçüm yapıyoruz sensörü.
+
+166
+00:37:38,675 --> 00:37:57,395
+Termo rezistörlerde anlatmıştık. Burada da aynı şekilde bu sefer basınç diye veya bunu çekme aşağı yukarı veya yana çekilmesi veya büzülmesinden dolayı buradaki manyetik alan ya daha toplu oluyor ya da daha genel oluyor.
+
+167
+00:37:57,395 --> 00:38:05,395
+Bu da sensitivitesini değiştiriyor. Bu da bize farklı bir akım veya gerilim boyutlarına üretmesini sağlıyor bu sensörün.
+
+168
+00:38:06,675 --> 00:38:12,296
+Gelme veya rüzmeyle buradaki rezilif etki değişiyor.
+
+169
+00:38:12,755 --> 00:38:16,336
+Rezistans bazlı. Bu da bize bir output üretiyor.
+
+170
+00:38:17,536 --> 00:38:26,655
+Bu mesela işte araçların koltuğunun altında bir işte ön koltuklarda emniyet kemeri ölçmemizi için uyaran sistemler var ya.
+
+171
+00:38:26,655 --> 00:38:28,135
+Bip, bip, bip öten.
+
+172
+00:38:28,400 --> 00:38:41,520
+Mesela o bip-bip'lerin örtmesi için işte bir aşağısında koltuğun orada basın sensörünün olması lazım ki birinin oturduğu anlaşılsın. Hatta yük koyarsınız belki şöyle 10 kilo falan ona da bitler. Çünkü o da sensörü aktif etmiştir.
+
+173
+00:38:54,643 --> 00:39:03,603
+Fiziksel olarak değiştirdiğimiz bir yapı elektronik sinyaline veya işte bir devre elemanı besleyecek akıma veya girilime dönüştürülüyor.
+
+174
+00:39:03,983 --> 00:39:11,743
+Aslında bir sensör, baktığımızda transdüsör, bir fiziksel niceliği, başka bir elektriksel sinyale çeviriyor.
+
+175
+00:39:12,564 --> 00:39:17,344
+Anahtarların iki tane burada örneği konulmuş. Bir tanesi limitlenen bir anahtar var.
+
+176
+00:39:17,344 --> 00:39:23,923
+Burada bir hareket parçası, buraya kadar getirebilirsin kısmı.
+
+177
+00:39:24,203 --> 00:39:27,243
+İşte bastığımızda bizim için arka tarafta.
+
+178
+00:39:27,923 --> 00:39:46,903
+On-off ayarını yapan kısım veyahut da full-out switch diyorlar buna. Push-release diyorlar veyahut da bastıktan, elini çektikten sonra tekrar kendisi yerine gelen switch'ler onda basılı tuttuğumuz sürece bizim için akım üretiyor. Sonra zaten full-out olduğundan geri geliyor kendisi otomatikman.
+
+179
+00:39:55,572 --> 00:40:12,192
+Işık arası, iki nokta arasında bir ışık var her daim. O ışığın kesilmesi, yani optonun, optik olarak ışığın sekliye uğratılması anahtarlama oluyor. Burada mesela iki tane örneği var. Biri reflektif optoswitch, bir de slot optoswitch.
+
+180
+00:40:12,947 --> 00:40:35,827
+Bunu da genelde kullanıyorsunuz. İzinsiz ev projelerde, izinsiz eve girme, alarm sistemi vs. projelerde çokça kullanılıyor. Veyahut da bir kapıya koyuyorsunuz, insan geçiyor, insanları saymak işte, kaç tane müşteri girdi dükkana, human counting veya başka bir counting uygulamalarında in-out yapılan yerlerde kullanılıyor.
+
+181
+00:40:36,596 --> 00:40:44,276
+Soldakinin özelliği şu, burada bir source kaynak ışığı var. Burası da sensör yani algı yapan kısım.
+
+182
+00:40:44,276 --> 00:40:52,036
+Bu karşı tarafa bir duvar var burada. Işık gönderir. Duvardan sekmesini de geri alır.
+
+183
+00:40:52,500 --> 00:40:59,460
+Ve bu gönderdiği ve sevkliği ışık boyunca buraya bir aslında kızılötesi bir yapı sunuyor.
+
+184
+00:41:00,019 --> 00:41:12,720
+Buradan biri bunu kestiğinde, insan geçer, hayvan geçer, neyi sayacaksak, kestiğinde sensöre geri output kesmeye uğradığı zaman bir count edilmiş oluyor, bir sayılmış oluyor.
+
+185
+00:41:13,119 --> 00:41:18,800
+Aynı şekilde burada da yaptığı bu sefer duvar değil, kendi aralarında. Burada bir source var.
+
+186
+00:41:19,764 --> 00:41:36,544
+Sensöre doğru bir ışık gönderiyor. Bu aradaki yapı kesildiğinde, buraya bir kağıt soktuğumuzda mesela bizim için sensörden okuma yapmayacağı için ne oluyor? Sensör output olarak count'ı koymuş oluyor.
+
+187
+00:41:40,211 --> 00:42:04,511
+Pozisyon enkoderlar var. Çok önemli değil ama hızlıca anlatalım. Normalde alt tarafta böyle bir siyah çizgilerden oluşmuş bir kağıt olduğunu düşünün. Üst tarafta da dörtlü bir sinyal var, sensör var. Bu sensörlerin her biri bu siyahların uzunluğundan bir anlam çıkartabiliyor. Morse alfabesi gibi düşünebiliriz o zaman da kullanılmış Morse'u dekod etmek için.
+
+188
+00:42:05,204 --> 00:42:24,164
+Çünkü bazı morosal kubisinde iki kesme bir uzun, iki üç kesme bir uzun gibi ifadeler var ki onları dekod edebilelim. Bu amaçla onları vizyoloze edilmiş, yani kısa uzunlar görsel hale getirilmiş, sonra da bu pozisyon enkoderleriyle çözümlenmiş.
+
+189
+00:42:24,164 --> 00:42:32,184
+Fotodiyot aslında, yani buradaki her bir tanesi şurada anlattığımız, evet şurada anlattığımız fotodiyota geliyor.
+
+190
+00:42:37,684 --> 00:42:44,404
+Bu da motorla alakalı veyahut da şöyle düşünebiliriz. İki tane fotodiyot var gene.
+
+191
+00:42:45,424 --> 00:42:50,704
+Ve alt tarafta da işte böyle çizgilerle oluşturulmuş bir şerit var.
+
+192
+00:42:51,464 --> 00:42:56,324
+Şimdi fotodiyotun şu sensör 1 ve sensör 2 tarafı olsun.
+
+193
+00:42:57,664 --> 00:43:02,524
+Amacımız burada şu. Motorun sağa mı sola mı döndüğünü mesela veya teker var.
+
+194
+00:43:02,524 --> 00:43:05,104
+Tekerin öne mi arkaya mı gittiğini hesaplamak.
+
+195
+00:43:05,460 --> 00:43:29,380
+Böyle bir sensör bu amaçla kullanılıyor. Eğer ki mesela sensör bir ilk dalgayı aldıysa, yani ilk detection yaptıysa, sonra sensör iki yapıyor tabii arkasından. O zaman diyorum ki ben mesela bu soldan sağa doğru giden bir hareketi gösteriyor. Çünkü soldan sağa doğru gidiyorum. Çünkü ilk başta bunu okudum, sonra bunu okudum. Şuradaki silgileri okuyoruz ya.
+
+196
+00:43:29,972 --> 00:43:46,032
+Veya tam tersi, ilk başta sensör 2 okudu, sonra sensör 1 okudu. O zaman diyorum ki sağdan sola giden, tekerin öne döndüğünü veya arkaya döndüğünü böyle söyleyebiliyorum. İki tane çaprazlaması fotodiyot kullanım olarak.
+
+197
+00:43:57,523 --> 00:44:01,523
+Yapının arasında aslında bir tekerlek veya bir...
+
+198
+00:44:01,523 --> 00:44:04,523
+Ne diyebiliriz buna? Bir...
+
+199
+00:44:04,884 --> 00:44:21,023
+Çark koyarak bu çarkın üzerindeki her bir boşluk bunları kesmeyecek. Yani buradaki ışıklar buralardan geçebilecek iki taraflı sorç ve sensör arasında. Ama diğer taraflar keseceği için burada hangi pozisyonda olduğunu bilebilecek.
+
+200
+00:44:21,023 --> 00:44:32,884
+Çünkü pozisyon bazı şeylerde örneğin robot kol tasarlıyorsunuz. Masadan o robot kolun alması gereken bir şey var. Masaya kadar gelmesi...
+
+201
+00:44:32,884 --> 00:44:45,143
+Mesela şurada. Şurada masada olduğunu anlıyoruz. Tanımlandırıldı. Yani bunu geçmemesi lazım. Şimdi biz bunu döndürüyoruz, robot kul aşağı iniyor. Eğer doğru saymazsak bu displacement'ı.
+
+202
+00:44:45,472 --> 00:44:51,312
+Doğru bir şekilde yer değiştirmeyi hesaplayamazsa bu sensör, o zaman bir fazlaya gelir.
+
+203
+00:44:51,432 --> 00:44:56,552
+O da robot kolun ağzındaki o eli veya neyi nasıl alıyorsa masadan bir şey.
+
+204
+00:44:57,012 --> 00:44:59,832
+O masanın masaya girmesiyle kırılmasına neden olur.
+
+205
+00:44:59,832 --> 00:45:05,652
+O yüzden displacement'lar genelde robot kollarındaki sensörlerde kullanılıyor.
+
+206
+00:45:05,812 --> 00:45:10,192
+Yani o yapılarda robot kolun ucunda sensör olarak kullanılıyor bunlar.
+
+207
+00:45:10,612 --> 00:45:14,592
+Bir diğeri de indüktür sensör. Bu da bobin tabanlı sensör.
+
+208
+00:45:14,711 --> 00:45:18,731
+İşte bu birazcık tabii ki de burada PID kontroller de geliyor.
+
+209
+00:45:19,811 --> 00:45:26,032
+Türevi integral kontrolleri. Burada biraz şöyle bir mantık var. Öyle diyebiliriz.
+
+210
+00:45:26,032 --> 00:45:29,892
+Mesela biz insandan modellenmiş zaten.
+
+211
+00:45:30,483 --> 00:45:56,364
+Bir masadan bir şey almak istediğimizde elimizde ilk başta çok uzaksa masa hızlı bir hareket yaparız. Ama masaya doğru artık yavaşlar bizim elimiz. Yani gayet ihtiyali tabii biz bunu düşünmüyoruz ama çünkü daha hassas bir mekanizmaya giriyoruz. Şimdi burada da PID kontrollerle indiktör sensörler de aslında şunu yapıyor. İlk başta enerji çok yüksek, çok hızlı bir şekilde bu çarp dönüyor.
+
+212
+00:45:56,751 --> 00:46:12,972
+Sonra ama yavaştan bu enerjiyi kendi üzerinden boşaltarak, tabii burada PID var, bir taraftan boşaltıp bir taraftan kendisine şarj etme durumu var. Yani sönümleniyor ve daha hızlı dönen, mesela şurada çok hızlı giden bir çarp yavaş yavaş yavaşlamaya başlıyor.
+
+213
+00:46:13,523 --> 00:46:29,324
+Burada daha hassas bir matematik var. Daha hassas bir şekilde robotun kolu veya ne alınacaksa veya nerede bir hassas kontrolü sağlanacaksa daha hassas bir output üretmesini sağlıyor anlık olarak.
+
+214
+00:46:31,104 --> 00:46:37,443
+Hareket sensörlerinde aslında en çok hareketten kastım şu hız ve ivme sensörleri.
+
+215
+00:46:37,844 --> 00:47:03,143
+Bazı sensörler hızı direkt olarak verebiliyor. İşte bunu en bariz olarak mesela şurada, şu hızı direkt olarak verebilir. Çünkü neden? Saniyede kaç tane çarkın veya deliğin döndüğünü bulabilirim ve oradan da bunun bir hız bilgisini çıkartabilirim. Çünkü bunların arasındaki mesafe bellidir. İşte şu kadar 2 mm, saniyede 100 tane çark dönüyor, yani 100 sayıyor.
+
+216
+00:47:03,583 --> 00:47:14,203
+O zaman derim ki işte saniyede 100 taneden 2 milimsel 200 milimetre böyle saniye gibi bir ibareden bunun hızı çıkar mesela.
+
+217
+00:47:15,027 --> 00:47:34,108
+gibi yani hızı direkte verebilir, böyle frekansla bağlı olarak da hesaplanabilir. İğme de aynı şekilde bir kütle, bir cisme uygulanan güç bizim için. İğme aslında etkiye tepki dediğimiz şey. Bu iğme de aslında hesaplanabilir sensörler.
+
+218
+00:47:36,083 --> 00:48:04,083
+Ses sensörleri dediğimiz, ses algılayıcıları, mikrofonlar zaten en bariz olanın sesi, ses sinyallerini elektriksel sinyale çeviriyor. Burada tabii geçen hafta anlatmıştık, distortion ve noise. Aslında bu mikrofonlarda en çok gözüken, daha doğrusu bütün sensörlerde gözüküyor ama mikrofonlardan elde edilen veyilerde en çok gözüken iki etki. Noise zaten gürültü. Noise'ı anlatırken geçen hafta özellikle gürültü.
+
+219
+00:48:04,083 --> 00:48:31,203
+Gürültü simetrik değildir. Gürültü random olarak oluşan ve random olduğundan dolayı da bir tık daha challenge'ı yüksek, zor yapılması, handle edilmesi zor olan bir sinyal. Bu mikrofonlarda çokça oluyor. Bir diğerisi distortion. Yani gürültü, bu da donanımsız olabilir. Mikrofon sensöründeki bir sıkıntıdan olabilir gibi etkiler söz konusu ses üzerinde.
+
+220
+00:48:32,628 --> 00:48:38,628
+Şimdi peki sensörleri biz devrede nasıl kullanıyoruz? Aslında gerilim bölücü olarak kullanıyoruz.
+
+221
+00:48:38,628 --> 00:48:51,628
+Gerilim bölücüyü herhalde hatırlıyoruzdur ama hızlıca şuraya bir örnek yapalım. Mesela 5 volt veriyorum. Burası da veya 7 volt, 10 volt vereyim.
+
+222
+00:48:51,628 --> 00:48:56,628
+Burası da 5-10. Bir direnç var. Şimdi bunu ben direk bağladığımda.
+
+223
+00:48:57,204 --> 00:49:04,044
+Hiçbir şey bağlamadığımda şunu diyorum, buradan geçen akım ne olacak? 2 amper değil mi?
+
+224
+00:49:05,004 --> 00:49:11,064
+Ve bu 2 amper, ben buraya bir başka direnç bağladığımda, mesela 5 onluk bir direnç daha bağladım.
+
+225
+00:49:12,004 --> 00:49:14,224
+Neye düşecek? 1 amper'e düşecek.
+
+226
+00:49:15,684 --> 00:49:21,224
+Şu olma durumunda. Aslında bizim şuradaki direnç etkisini sağlayan şey sensörümüz.
+
+227
+00:49:23,155 --> 00:49:29,436
+Yani gerilim bölücüden kastımız veya akım bölücü, iki tane şey, akım verirsin, gerilim düşer veya artar.
+
+228
+00:49:31,776 --> 00:49:39,396
+Kastettiğim bir şey, burada bir REOS da diye tabir ettiğimiz ayarlı direnç varmış gibi gözlemliyoruz.
+
+229
+00:49:40,076 --> 00:49:44,536
+Eğer ki sensör herhangi bir output vermiyorsa, o zaman benim için kısa devre.
+
+230
+00:49:44,947 --> 00:50:00,447
+Devrinin değeri nesi o. Eğer ki rezidif etkiye sahip bir sensörse ve rezidif etkiye yani direnç oluşturan bir sensörse benim için buraya direnç oluşturuğundan akımı değiştiğinden benim için output akımı azalmasından neden oluyor.
+
+231
+00:50:03,027 --> 00:50:06,288
+Mesela tabii netleştirmedik ama.
+
+232
+00:50:06,675 --> 00:50:28,075
+Proteus üzerinden istedik projelerimizi. Yani Proteus üzerinden sen bana projenin göster çalıştığını dedik. O zaman sensör yerine kullandığınız sensör eğer bir rezidif sensörse Proteus yazılımında devre şemasına siz burayı sensörmüş gibi reyolusta kullanabilirsiniz. Çünkü mantık aynı.
+
+233
+00:50:33,364 --> 00:51:00,864
+Switchleri anahtarlamayı da aslında aynı mantıkla kullanıyoruz. Mesela anahtar açık. O zaman buradaki V0, buradaki V'ye eşit olur. Çünkü burası açık anahtar. Ama anahtarı kapattığım anda, switchleme yaptığım anda aslında yapılan şey şu, buradaki V'nin sıfır. Buradaki şuradan ölçülen V0'ın sıfıra inmesi. Çünkü bu kısa devreden böyle sıfıra gidecek.
+
+234
+00:51:02,003 --> 00:51:28,063
+Anahtarı kapalı açık olma durumunun kontrolü de aslında bir gelin bölücü devresi gibi çalışmasına aynen. Bu bouncing dediğimiz oluyor. Yani bu anahtarı böyle çok teorik bir şekilde şak diye açıp kapayamıyoruz. O yüzden bir bouncing etik oluyor. Bunun işte soft bouncing veya hard bouncing diye yönetimi var gidermek için.
+
+235
+00:51:30,164 --> 00:51:45,423
+Anlatılmasını alıp düzleştiriyorlar falan vesaire çok önemli değil. Ama anahtarın da sonuçta gerilim bölücü mantığıyla anahtarın çalışmama prensibini böyle analiz edebiliriz. Bunlara değineceğiz sonraları.
+
+236
+00:51:46,260 --> 00:51:58,560
+Evet, eyleycilere bakalım. Sensörleri işledik. Eyleyici veya ecceyeçerlar aslında yine başka bir transistör, transducer ve bunlar da fiziksel inceliği yine başka bir fiziksel inceliğe çeviriyor.
+
+237
+00:51:58,560 --> 00:52:03,080
+İşte elektriği çeviriyor veya sesi çeviriyor, bir şeyi çeviriyor sonuçta.
+
+238
+00:52:11,731 --> 00:52:33,412
+Direnç etkisiyle ısınan heaterlar. Hani zamanında, şimdi tabii infraredler falan başladı, follar vs. ama hani zamanında bu çok eskilerden olan elektrikle fişe elektrikle taktığımızda aslında ısınmasını sağlayan şey oradaki yapının resistive heaterlarıydı, resistive etkisiydi.
+
+239
+00:52:40,532 --> 00:52:50,951
+Gibi iş. Yani aslında o yüksek güç kullananlar. Ve ışıklar olabilir. Ceyture olarak. İşte bu Normandy Bolt diyoruz ya, neydi o?
+
+240
+00:52:51,603 --> 00:53:16,203
+Sarı ışık, tüplü ışık, florsan veyahut da ikisi de aynı mantık ama florsanda bir gaz var. O gazdan dolayı biraz daha değişik bir çalışma prensibi var ama şeyde normal tüplü ışık düşünün içerisine bir tel geçer. O telin ısınmasıyla aslında biz ışık kaynağı elde ederiz. Zaten o sarı ışıklar çok uzun süre yanınca dokunursanız alev alacak gibidir. Yani çok sıcaktır.
+
+241
+00:53:16,543 --> 00:53:37,703
+Floresan lambalar o kadar sıcak olmasına rağmen yine aynı mantıkla içerisindeki gazdan dolayı ışığın, yani içerisindeki geçen rezitif etkinin ısınması öngelleniyor. Ama nihayetinde ikisinde de aynı, içerisinde bir rezistans var. Bu rezistans ısınınca biz aslında ışık şekliyle kullanıyoruz.
+
+242
+00:53:40,052 --> 00:53:50,672
+Veya ledlerde aslında Light Emitting Diode diye kısaltmamız geçiyor. Bunun içerisinde de yine bir ısınmayla yan başlıyoruz konusu.
+
+243
+00:53:51,592 --> 00:53:58,132
+Liquid olanı var. Yani sıvıyla aslında ekrana yazdırılanlar var.
+
+244
+00:54:00,884 --> 00:54:23,463
+Fiberoptik iletişimdeki fiberoptik kablolar. Bu da mesela çok güncel bir ekçe içir. Sonuçta biz telefon hattı veya öteki tarafta bir elektrik sinyalini fiberoptik cam kablolar ile uzun distansta, çok uzun bir boyutta farklı yerlere gönderiyoruz. Bu da aslında bir ekçe içir.
+
+245
+00:54:27,123 --> 00:54:38,823
+Selenoidler, manyetik alanda, burada mıknatıslanma etkisiyle buradaki mıknatısı içeride tutuyor.
+
+246
+00:54:38,943 --> 00:54:44,963
+Ta ki gerilim olduğu sürece gerilim olmayınca bu mıknatıs bunu bırakıyor ve tak diye selenoid atıyor.
+
+247
+00:54:45,443 --> 00:54:49,943
+Aslında gerilimle manyetik olarak bir şeyi kontrol ettiğimiz yapı.
+
+248
+00:54:52,467 --> 00:55:20,467
+Ölçü aletlerinin de aslında içerisinde bir ekçe içilma atlığı var. Çünkü içerisinde tabii eskilerinde vardı. Şimdi artık hepsi dijital ölçü aletler ama eski bu ibre katranlarda arka planda serenoidler var. Yani şurada gözlemlediğimiz bir yapı var, manyetik alanında tutulan. Ama şu an artık zaten dijitalleşti. Motorlar zaten en bilinen ekçe içilmelerden biri. AC motorlar yüksek güçler için kullanılıyor. DC'ler daha düşük.
+
+249
+00:55:20,467 --> 00:55:28,527
+Bu motorlar direkt pozisyon kontrol uygulamalarında kullanılan motor çeşitlerine giriyor.
+
+250
+00:55:31,047 --> 00:55:36,467
+Bunları da muhtemelen siz projelerinizde muhtemelen Step veya DC'yi kullanacaksınız.
+
+251
+00:55:36,567 --> 00:55:40,627
+AC motorlar dediğimiz gibi biraz yüksek güç uygulamalarında kullanılıyor.
+
+252
+00:55:40,627 --> 00:55:44,627
+Bu AC ile DC'nin analizini zaten geçen hafta yapmıştık.
+
+253
+00:55:44,655 --> 00:56:09,415
+AC biliyorsunuz ki kendini yenileyen gücünü kaybetmeden uzak yerlere gönderebildiğimiz bir sinyal şekliydi. DC ise uzak yerlere yine gönderebiliriz ama gücünü kaybedecektir. Maliyeti yüksek olacaktır taşınması için vs. diye. Ama tabii ki de DC'nin avantajı şuydu, kontrolü kolay, daha düşük güçlü cihazlarda uygulanabilir.
+
+254
+00:56:09,876 --> 00:56:30,675
+Step motorlar aslında DC motor yapısına benziyor ama step by step çalışıyor. Yani belli başlı stepler var. Hatta onu burada anlatacaktık. Evet, step motorun içerisine baktığımızda bir rotor var. Rotordan kastığımız şey, manyetik alanla dönen bir pervane diye düşünün. Bu step aslında yani motorun kendisi.
+
+255
+00:56:31,155 --> 00:56:58,036
+Burada motoru sağa veya sola döndürmemiz, motoru döndürmemiz demek oluyor. Step motorda manyetik alanın oluşabilmesi için katmanlar oluşmuş. Yani stepler yazılmış. Mesela A dediğimiz yapı şöyle bir yapı. Bu bir manyetik çubuk. Buraya artı verip buraya eksi verdiğimizde bu rotor mıknatıs bir özelliğine sahip böyle kalıyor.
+
+256
+00:56:58,387 --> 00:57:04,188
+Sonra B'ye artı verdiğimizde, bu tarafa da eksi verdiğimizde, rotor dönüyor.
+
+257
+00:57:04,867 --> 00:57:12,007
+A, B, C, A, B, C, A, B, C diye böyle sırayla verdiğimizde, step step motoru döndürmüş oluyoruz.
+
+258
+00:57:12,007 --> 00:57:15,668
+Mesela, tabi bunun matematik hesabını yapıyoruz.
+
+259
+00:57:15,887 --> 00:57:23,007
+Diyoruz ki işte, 5 voltlu bir gerilimle 10 saniye...
+
+260
+00:57:23,891 --> 00:57:38,311
+İşte saniyede 100 tetikleme yapabilen bir step moddur. Tamam mı? 10 saniyede 1000 tetikleme yapacak. Yani 1000 tane farklı adıma geçmiş olacak. Bu 3 yapıda 333 tur dönecek demek oluyor mesela değil mi?
+
+261
+00:57:38,867 --> 00:57:52,087
+Veya 300 tur dönecek. Neyse işte çok da önemli. Yani demeye çalıştığımız ABC bu arasındaki değişim hızı step motorun ne kadar hızlı döneceğini belirtiyor.
+
+262
+00:57:53,268 --> 00:58:05,768
+Veya ABC burada mesela 3 tane katman var. Ben buraya 30 tane veya işte 10 tane ABC, DE, F, G diye böyle tanımladığım aralık olsa bu sefer de step motorun hassasiyetini belirler.
+
+263
+00:58:06,420 --> 00:58:20,400
+Ne kadar çok step, o kadar hassas bir dönmeyi sağlama buluyor. Ama işte az hassasiyeti var ama çok hızlı döndürebiliyorum. O da step motorunun hızını belirliyor.
+
+264
+00:58:21,427 --> 00:58:37,367
+Step motorlar robotik uygulamalarda çok çok kullanılıyor arkadaşlar. Çünkü pozisyon kontrolü sağlayabiliyor. Mesela ABC, AB'ye verdim, durdurdum. Step motor burada. Biliyorum yani motorun, röturunun hangi açıda olduğunu biliyorum.
+
+265
+00:58:38,587 --> 00:58:44,827
+Mesela bu robotun ucuna kaşık var. Bir tane şuraya kaşık var. Öyle düşünün hani.
+
+266
+00:58:45,492 --> 00:59:05,231
+İşte ABC, ABC, AB'de bıraktık. Burada kaşığın hangi pozisyonda olduğunu hesaplayayım dedim. İşte 90 derecede mi, 45 derecede mi, 70 derecede mi? Bu açılarla beraber bir hesap yapmak mümkün. Eğer kaç step size olduğunu biliyorsam bu mümkün.
+
+267
+00:59:10,612 --> 00:59:21,251
+Tabi burada ABC, ABC, ABC dört tur dönülmüş de buradan hesaplanabilir değil mi? Her bir de otuz derece mesela diyebiliriz.
+
+268
+00:59:23,911 --> 00:59:29,092
+Evet, buna bahsettik. Mesela şöyle bir sinyal verilse ilk A.
+
+269
+00:59:29,811 --> 00:59:47,211
+A tetiklenmiş, sonra B tetiklenmiş, sonra C tetiklenmiş. Yani A, B, C, A, B, C. Şöyle gidiyoruz. Yani clockwise bir döme yapıyoruz. Saat yönünde. Ama tam tersinden C, B, A, C, B, A gitsek. Mesela şurada.
+
+270
+00:59:49,012 --> 00:59:59,052
+C'yi tetikledik, B'yi tetikledik, A'yi tetikledik, C, B, A. Böyle gittiğimizi düşünürsek de, Counter Clockwise veya Anti Clockwise diyoruz.
+
+271
+00:59:59,052 --> 01:00:10,852
+Tamam ters. Sesle alakalı speakerlar zaten bir eyleyici. Ultrasonicler eyleyici. Bunlara geçelim.
+
+272
+01:00:13,396 --> 01:00:29,576
+Evet, şimdi laboratuvarda dediğim gibi belki kullanacağız, belki zamanı gelecek, gelinecek bilmiyorum ama 3 tane bizim ölçü aletimiz var. Bunlardan zaten yani analog veya digital olarak ayırdık biz burada ama analoglar genelde kullanılmıyor artık osiloskop için.
+
+273
+01:00:30,396 --> 01:00:38,116
+Dijital osiloskop ve dijital multimetre. Bu multimetrelerin farklı isimleri var. Tek başına volt sadece ölçüyle voltimetre diyoruz.
+
+274
+01:00:39,731 --> 01:00:49,411
+Akım ölçene ampermetre, eğer ikisini birden ölçüyorsa avometre diyoruz.
+
+275
+01:00:49,411 --> 01:00:54,851
+Multimetre de direnci falan hepsini ölçene de multimetre diyoruz.
+
+276
+01:00:56,131 --> 01:01:05,171
+Oseloskopları dediğim gibi kullanmayacağınız belli değil şu anda. Bunun ne olacağı belli değil ama kullanılma durumunda.
+
+277
+01:01:05,427 --> 01:01:30,467
+oluşması mümkün olacağında size asistanlar tarafından osyoskopun anlatımını yapacağız. Ama şunu hiçbir zaman unutmayacağız arkadaşlar. Burada da özellikle uyguluyorum. Asistanlar belki unutur diye. Osyoskop bir kaynak değildir. Bak tekrar ediyorum. Bunlar ölçü alet. Yani bizim elektrik devre tasarımında, elektronik yaptığımız devreyi bir şeyini ölçmek için kullanıyoruz.
+
+278
+01:01:30,896 --> 01:01:55,755
+Mesela gerilimi arttırın, bir 5 voltu 10 volt yapın dediğimizde eliniz şuradaki volt böyle dive gidiyor. Sanki bu volt arttırıyormuş gibi. Hayır, ölçü aletidir arkadaşlar. Bunlar, yani oselskoplar devrenin beslediğimiz ve ölçmesini çalıştığımız bölgesini ölçmek için kullanırız.
+
+279
+01:01:56,148 --> 01:02:02,568
+Burada gözüken sinyal neyse bu sinyal devreye başka bir kaynak tarafından verilmiş.
+
+280
+01:02:03,028 --> 01:02:07,768
+Biz o kaynağın vermiş olduğu ve devre üzerinde oluşan şeyi ölçüyoruz.
+
+281
+01:02:08,628 --> 01:02:09,508
+Bunu unutmayalım.
+
+282
+01:02:09,508 --> 01:02:15,508
+Mesela ben volt bölü dibi ayarlamam demek aslında buradaki bir...
+
+283
+01:02:15,508 --> 01:02:17,628
+Şöyle de yapalım hatta.
+
+284
+01:02:19,988 --> 01:02:22,388
+Şurası volt olsun, burası da zaman olsun.
+
+285
+01:02:23,856 --> 01:02:37,416
+Ben bu volt bölü deviyi ayarlamam demek, benim sadece ve sadece voltaj eksenindeki burada y ekseni, y ekseninin çözünürlüğünü değiştirmem demek.
+
+286
+01:02:38,136 --> 01:02:46,556
+Yani ben bunu daha ufak hale getirirsem, buradaki çözünürlüğü, büyütürsem buradaki çözünürlük azalacağından benim sinyalim belki şu hale gelecek.
+
+287
+01:02:47,987 --> 01:03:11,347
+Bu şu demek değil. Ben buradaki voltu düşürdüm demek değil. Bunun mesela okunuyor mu bilmiyorum ama, evet bak şurada 200 mili volt yazıyor. Bu volt böyle divi oynamam demek bu 200 mili volt şunu gösteriyor ayrıca. Her bir burada kareler var. Kareler gözükmüyor veya gözüküyor şöyle şöyle kareler var, kutucuklar var.
+
+288
+01:03:12,659 --> 01:03:34,460
+Buradaki her bir kutucun 200 milivolt olduğunu gösteriyor. Mesela, şu an mesela ikinci buraya kadar gelmiş değil mi? Bu 2x2'den 400 milivoltluk bir sinyal diyorum ben. Ben bunu öyle bir düşürdüm ve sinyalim şuna döndü. Ben sinyalin gidişiyle alakalı bir şey yapmadım.
+
+289
+01:03:34,835 --> 01:03:59,055
+Bunu döndürdüğüm için 200 volt, milivolt, 400 milivolt olacak burada ekranda. Bu sefer de bir kareye girdiği için yine 400 milivolt ölçmüş olacağım. Yani bunlar bizim Resolution ayarlarımız. Bu ekranın çözünürlük ayarları. Aynı şeyi yapacağız. Referansımız değişecek zaten sinyal düşünce.
+
+290
+01:03:59,731 --> 01:04:16,651
+Aynı şekilde şurada Second Division yazılmış, bazen de Freck Division yazar. Yani burası da X ekseninin zaman eksenindeki çözünürlüğü değiştirir. Bunu hiçbir zaman unutmuyoruz.
+
+291
+01:04:20,083 --> 01:04:45,983
+Buradaki kat sayılarıyla beraber, şunun da kat sayısı burası ayıracağım, yata ekseni 100 milisaniye mesela yanlış görünüyorsam, bunu oynatırsam sinyal mesela şöyle oldu. Daha geniş oldu. Ne olacak? Aslında t'yi arttırmış oluyorum. Burası 100 milisaniye değil, artık iki kutu olduğu için kutu başı 50 milisaniye olacak. Çünkü aynı sinyali vermesi lazım.
+
+292
+01:04:48,500 --> 01:05:14,899
+Tamam mı arkadaşlar? Burası anlaşıldı mı? Dediğim gibi bunu asistanlar anlatacak ama bir daha üstünden geçeyim. Hep yapılan biraz daha. Oseler toplar sadece birer ölçü kaynağıdır. Ölçü aletidir. Kaynak değildir. Yanlış oldu. Kaynaktaki devre üzerinde oluşan neyse ölçüde bir şey onu ölçmemizi sağlar. Farklı bir işlem yani bir kaynak değişimi söz konusu değildir.
+
+293
+01:05:16,884 --> 01:05:19,824
+Hocam sorabilir miyim otiloskoplarla?
+
+294
+01:05:19,844 --> 01:05:20,023
+Evet.
+
+295
+01:05:21,204 --> 01:05:27,664
+Otiloskoplarla sadece gerilim ve akım mı ölçebiliyoruz? Birincisi bu, bir de ikincisi. Otiloskopların da renci var mı hocam?
+
+296
+01:05:28,436 --> 01:05:56,036
+Evet, şöyle, osyroskopların range'i var tabii. Şurada döndürebileceğimiz yere kadar bir range sağlayabilir. Ama bu şöyle bir durum. Şimdi burada bu osyroskop çok, tamam bu dijital ama çok gelişmiş bir osyroskop değil. Bizim laflar ortakiler daha gelişmiş. Mesela bunun altında bir döndürme paneli daha oluyor. Bunlar da X10, X100, X1000 gibi.
+
+297
+01:05:56,436 --> 01:06:01,816
+Yani 1000 katının detaylarını döndürme, 100 katının detaylarını döndürme.
+
+298
+01:06:01,816 --> 01:06:08,436
+Yani mesela 355 katına ayarlayacaksın. 100'e getirip buradan 3x'e getirmen lazım gibi.
+
+299
+01:06:08,655 --> 01:06:13,316
+Yani çok renci var ama renci cihaza göre değişkenlik gösteriyor.
+
+300
+01:06:13,556 --> 01:06:16,115
+Mesela bizim labdakilerin renci gayet yüksek.
+
+301
+01:06:16,755 --> 01:06:23,916
+Birinci sorun da şuydu. Sadece akım ve gerilim mi ölçüyoruz? Oydur yanlış olmasın.
+
+302
+01:06:23,996 --> 01:06:24,895
+Evet hocam oydur.
+
+303
+01:06:25,556 --> 01:06:37,956
+Akım, gerilim ve frekansı ölçebiliyoruz. Frekansı da şöyle de ölçüyoruz esasında. Yata ekseni bulun zaman. T. Ama şunu biliyorum ki ben bir bölü T frekansı veriyorum.
+
+304
+01:06:38,996 --> 01:06:45,936
+Bunu oselskop kendisi sunabiliyor direkt bazısı dijital olanlar. Bazısında da biz hesap yapıyoruz.
+
+305
+01:06:46,155 --> 01:06:51,076
+Yani zamandan dolayı frekansı da ölçebiliyoruz, akımla gelinme ölçüyoruz.
+
+306
+01:06:51,076 --> 01:07:02,536
+Bir de bu dersin kapsamıydı hatırlamıyorum ama X, Y, X, Z gösterimler var ama bunları ölçebiliyoruz desen şu anda.
+
+307
+01:07:03,076 --> 01:07:04,016
+Teşekkürler hocam.
+
+308
+01:07:05,652 --> 01:07:28,132
+Osel çobu dediğim gibi muhtemelen gösterecekler ama en önemli şey şunu unutmuyoruz. Hocanız geldi başınızda ya bir gerilimi değiştirir. Bir 5 voltu 10 voltu yapalım dediğinde eliniz buna gitmesin. Bunlar sadece ölçüdeki görünümündeki şeyi, resolu işini değiştirir. Bunu unutmayalım.
+
+309
+01:07:30,675 --> 01:07:57,816
+Evet, ölçü aleti, multimetreler. Multimetreler işte bakın burada dirence ölçme bölümü var. Akımları mili amper, mikro amper cinsinden ölçme ayarı var. Gerilimi de doğru akım gerilimi, alternatif gerilim şeklinde ölçme durumu var. Bir de tabii mili volt şeklinde doğru akım ölçme durumu var. Bu doğru akım olduğunu yukarısındaki dalgalı ve düz çizgiden anlıyoruz.
+
+310
+01:07:58,452 --> 01:08:17,712
+Genelde motiviyatı böyledir multimetrelerin. Burada yapılmaması gereken, şu aşağıya baktığımızda, devre teorisinde bunu sıkça uyarmışlardır sizde muhtemelen ama tekrar bir üzerinden flashback geçelim. Bir direnç veya yerimi ölçeceğiz. Prop dediğimiz uçlar var devrede.
+
+311
+01:08:18,131 --> 01:08:44,992
+Devreden hangi noktayı ölçeceksek oraya değdireceğimiz. Bir kere komucu zaten ground ucu, toprak ucu. Öteki tarafta biri gerilim ve burada direnç gösterdiğimiz kısım. Bir de hatta diyotun doğruluğunu için kullanabileceğimiz kısım. Buraya bir prob gelir. Yani ben bu ikisine bağladığımda ya gerilim ölçerim ya direnç ölçerim probları.
+
+312
+01:08:46,836 --> 01:09:09,996
+Bu sabit kaldı gerilimde. Buradan buna bağladığında iki probu akım ölçelim. Ama amper seviyesinde. Böyle bağladığında milli amper veya mikro amper seviyesinde ölçelim. Bu multimedre için konuşuyoruz. Ama nihayetinde bütün multimedrelerde hiçbir zaman akımla gerilim aynı bacak olmaz. Çünkü nedenini söyleyelim.
+
+313
+01:09:12,243 --> 01:09:15,503
+Bu direncin üzerinden geçen gerilemi nasıl ölçüyorduk?
+
+314
+01:09:18,963 --> 01:09:31,083
+Mesela voltmetrem var. Şuraya koyuyorum. Hatırlayanımız var mı? İki de ucu var böyle voltmetrenin. Yani problarımız.
+
+315
+01:09:33,123 --> 01:09:35,344
+Hocam direnci ucu eksi ucuna değdireceğiz.
+
+316
+01:09:35,884 --> 01:09:45,224
+Yani paralel. Paralel gireceğiz değil mi? Mesela buraya bunu getirdim. Buraya bunu götüreceğim. Devre kendini tamamlayacak bir şekilde.
+
+317
+01:09:47,188 --> 01:10:13,868
+Böyle ölçülür değil mi? Direncin üzerindeki gerilim. Ama akım böyle ölçülmez. Akım ölçmek istediğimde ben buna, yani akımın amperometre üzerinden geçmesi lazım ki akımın değerini ölçeyim. Mesela akımı böyle ölçelim. İşte en büyük sıkıntı burada. Akımla gerilim farklı şekilde ölçülüyor. Ve o yüzden farklı probe yapılarına sahip. Eğer ki ben gerilimi ölçeceğim şekilde.
+
+318
+01:10:14,739 --> 01:10:25,019
+Yani şöyle bağladığım bir yapıya veya şöyle diyelim, tamam gerilim böyle ölçülüyor demiştik.
+
+319
+01:10:25,019 --> 01:10:39,659
+Bu yapıda hiçbir şeyi değiştirmeden bağlantı şemasına akımı ölçmeye çalışsam, bunun üzerinde direnç etkisinden dolayı ve bunun iç direncinin çok minimal olmasından dolayı bütün akım bunun üzerinden geçecek.
+
+320
+01:10:40,459 --> 01:10:42,159
+Değil mi? Kısa devreymiş gibi düşünüyorum.
+
+321
+01:10:43,220 --> 01:11:01,900
+O zaman da bunun içerisindeki sigortayı yakmış oluyoruz. Zaten devre teorisinde yap yaptık diye düşünüyorum. O dönem sigorta alınmayı da bilmem nedir, ama bundan haşır neşir olmuştur. Bunun en büyük nedeni bu. Tekrar üzerinden nız geçersek.
+
+322
+01:11:03,923 --> 01:11:16,043
+RMS dememiz bir değer var. RMS de devre teorisinden çok azıcık bahsetmiştik. Biz aslında buradaki ölçü aletinde bu Sİ'ye aldığımız bir gelin var. Ölçeceğimiz vakit RMS'ini ölçmüş oluyoruz.
+
+323
+01:11:16,043 --> 01:11:30,884
+Root-Mean-Square'ini, yani ortalamasını mesela normalde 250 voltu ölçüyoruz ama 120 volt şebekeden 220 volt şeklinde gelmiyor. Bize biraz daha fazla geliyor, kök 2 kadı kadar. Onu ölçüyoruz.
+
+324
+01:11:32,948 --> 01:12:00,948
+Evet, bu dersimizde arkadaşlar sensörlerle, ekçe içeriğe ne? Bunlara baktık. Sensörlerin karakteristiklerine baktık. Sensörlerin nasıl kullanılacağını öğrendik. Ekçe içeriğe yani eyleyicilerin çeşitlerine baktık. Çeşitlerini öğrendik. Ölçü adetlerini gösterdik. Ölçü adetlerini nasıl kullanılacağını birazcık bahsettik. Asistanları daha detaylandıracaktır elbet. Nihayetinde bu haftayı böyle yapmış olduk. Şimdi gelelim ödevimize. İlk başta dersler.
+
+325
+01:12:07,252 --> 01:12:29,132
+Sorumuz yok herhalde. Şimdi ödeviniz şu arkadaşlar. Proje kapsamında zaten sensör kullanacaksınız ama şu an projelerinizin ne olacağını veya nasıl bir proje bulmanızı gerektiren, mutlifiyatı içeren bu proje hazırlama dökümanı paylaşılmadı. O yüzden şu an projenizden bağımsız bir şekilde.
+
+326
+01:12:29,648 --> 01:12:47,148
+Her birinizden üç tane sensör bulmanızı ve bu üç sensöre ait karakteristiklerini veri katalonundan bakarak bulabildiğiniz kadar bu derste gözlemlediğimiz özellikler nezdinde o veri katalonundan bularak özelliklerini yazmanızı istiyorum.
+
+327
+01:12:47,788 --> 01:12:51,288
+El yazısı olacak. Bilgisayar'da kesinlikle istemiyorum bilgisayar yazısı.
+
+328
+01:12:51,859 --> 01:13:17,259
+Tekrar ediyorum. Mesela LM35'i kullanmayacaksınız ayrıca. LM35 buldum. Tamam mı? Bu veri katalogunu elde ettiğiniz link. İşte neyse hangi siteden aldıysanız. Sonra mesela örnek verelim. Ecuris parametresi. Range parametresi. Başka ne vardı? Sensitli bitisi.
+
+329
+01:13:20,020 --> 01:13:26,620
+Sonra Evrol'u. Başka işte ne olabilir?
+
+330
+01:13:26,940 --> 01:13:29,340
+Linearitesi var.
+
+331
+01:13:30,963 --> 01:13:42,683
+Bunları veri katalogundan, hepsi aynı olacak, yani olması gerekiyor diye bir durum yok. Data katalogunda, veri katalogunda olan özelliklerini yazmanızı istiyorum.
+
+332
+01:13:42,884 --> 01:13:54,003
+LM35 yaşında 3 sensör bulacaksınız. Her gün 3 sensöre yazacağız. 3 sensöre ait böyle bir özellik analizi, karakteristik analizi yapmanızı istiyorum.
+
+333
+01:13:54,676 --> 01:14:19,216
+Tahti atlasın 15 dakikanızı, bilemedin 20 dakikanızı alacak bir şey. Zaten veri katalogları öyle atlı deve değil. Grafik varsa grafiği çizmenizi istiyorum. Mesela Nealtis'te bir grafik varsa veyahut da Sensitivity veya Eccuris'te bir grafik varsa bu grafiği çizmenizi ve anlatmanızı bekliyorum. Yani şöyleymiş, böyleymiş diye. Yani sadece işte Sensitivity'si şu, bu, bu değil. Biraz da izah bekliyorum.
+
+334
+01:14:19,796 --> 01:14:36,496
+Yani yarım sayfa bir sayfa olacaktır. Tutup da üst satır bir şey göndermeyin lütfen. Birazcık izah etmenizi, sensörün artılarını ekserinizi sizin kendinize yorumlamanızı istiyorum. Veri katılana bakarak. Örnek ödev anlaşıldı mı?
+
+335
+01:14:37,036 --> 01:14:44,096
+Hocam, sensörleri bulabileceğimiz bir kaynak var mı yoksa direkt Google'dan araştırıp?
+
+336
+01:14:44,096 --> 01:14:45,976
+Google'dan araştırıbileceğim.
+
+337
+01:14:46,387 --> 01:15:08,608
+Mesela ışık sensörleri yaz, işte çıkar. Markaları, modelleri çıkar. Sonra o modelin ismini yazarak data sheet yaz. Data sheet, İngilizce tabiri, bir kataloğu. Mesela LM35 data sheet yazdım ki kullanmayacaksınız bunu ama bunu yazın ekranınıza Texas Instrument'in data sheet'i gelecektir.
+
+338
+01:15:13,076 --> 01:15:27,676
+Sensörleri internetten herkes kendisi bulabilir. Zaten kopya olmayacağını düşünüyorum. El yazısı olacak ama en nihayetinde yorumlamaları kendinizin yapmanızı bekliyorum.
+
+339
+01:15:31,076 --> 01:15:39,735
+Linki ödev açıklamasına mı yazacağız? Şimdi üç farklı sensör olacağı için hepsini aynı linkten alamayacaksın.
+
+340
+01:15:40,212 --> 01:15:51,652
+Yok, yine içerisine yani TXT dosyası mı yaparsın, DOJX mi yaparsın, ne yaparsan veya PDF mi çevirirsin, oraya yazarsın elle. Elle yaz deyin ki çok önemli değil.
+
+341
+01:15:52,851 --> 01:15:54,872
+Hocam ben bir şey sorabilir miyim bu konuda?
+
+342
+01:15:55,512 --> 01:15:55,752
+Evet.
+
+343
+01:15:56,132 --> 01:15:58,891
+Şimdi her sensörün farklı üretici firması oluyor ya.
+
+344
+01:15:59,475 --> 01:16:06,036
+Bu gibi sensörün, kendi üreticisinin yayınladığı data şiteme bakmamız gerekiyor.
+
+345
+01:16:06,155 --> 01:16:16,275
+Fark etmez, fark etmez. Yani sensörlerin, mesela LM35'in farklı alt başlıkları var ve farklı kampaniler bunu üretebilir, evet.
+
+346
+01:16:16,671 --> 01:16:34,231
+Ama mesele data işte okuyabilmeniz. Nereden aldığınız, yani asıl bu işin özü veya işte yarım yamalar yok. Bu işin normal bir data işte okuma işi. Şey değil yani. Çok önemli değil gidip orijinalini bulmanız veya yan sanayisinde bulmanız.
+
+347
+01:16:39,252 --> 01:17:01,472
+Tamam, ödev anlaşıldı mı? Ödevin son tarihi arkadaşlar zaten çok ufak bir ödev olduğu için haftaya set edeceğim. Yani 18 Mart mı oluyor? Yok, 15 Mart. 16 Mart. 16 Mart set edeceğim. 16 Mart'a kadar, bu dersin saatine kadar, yani sabah 10'a kadar yüklemenizi bekliyorum.
+
+348
+01:17:04,692 --> 01:17:05,752
+Tamam mıyız?
+
+349
+01:17:07,764 --> 01:17:11,463
+Ödevin Türkçe yazabiliyoruz değil mi hocam? İngilizce yazmak zorunda mıyız yoksa?
+
+350
+01:17:11,543 --> 01:17:17,243
+Yok değil, Türkçe, İngilizce. Aynen fark etmez. İngilizce de yazabilirsiniz, Türkçe de yazabiliriz.
+
+351
+01:17:17,923 --> 01:17:19,104
+Teşekkür ederiz hocam, iyiler.
+
+352
+01:17:20,024 --> 01:17:30,423
+Tamamdır. Evet arkadaşlar, bu haftalık yeterli gelir diye düşünüyorum. Zaten blog yaptık. Haftaya diyotla muhtemelen devam edeceğiz.
+
+353
+01:17:32,884 --> 01:17:49,524
+Laf'la alakalı gelişmeler de zaten yakında size doyurulur diye düşünüyorum. Var mı sorunuz? Yok herhalde. Hepinize iyi çalışmalar arkadaşlar. İyi günler. Kolay gelsin. İyi günler hocam.

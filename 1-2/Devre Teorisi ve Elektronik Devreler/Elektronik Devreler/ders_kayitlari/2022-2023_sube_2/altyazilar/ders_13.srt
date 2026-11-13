@@ -1,0 +1,1455 @@
+1
+00:00:19,891 --> 00:00:24,811
+Merhabalar arkadaşlar. Hemen dersimize başlayalım.
+
+2
+00:00:39,316 --> 00:00:44,656
+Bu hafta soru çözümü demiştik zaten. Geçen hafta bahsetmiştik. Seste, görüntüde problem var mı?
+
+3
+00:00:48,468 --> 00:00:54,648
+Yok herhalde, tamam. Bu hafta soruların hem diyot hem de transistörle alakalı sorular çözeceğiz.
+
+4
+00:00:57,908 --> 00:01:03,828
+Öncelikle bir ideal diyot neydi veya ideal olmayan diyot dediğimizde neyi kastediyoruz?
+
+5
+00:01:03,948 --> 00:01:09,008
+Buna bir dikkat etmek lazım. Çünkü sorularda en kritik nokta aslında bu.
+
+6
+00:01:09,168 --> 00:01:12,288
+Yani üstüne düşen gerilimin hesaplanıp hesaplanamayacağı.
+
+7
+00:01:13,043 --> 00:01:28,003
+Şimdi en alttan başlarsak, ideal dediğimiz diyotlarda biz hiçbir şekilde direnç veya iç direnç, diyotun iç direncinden veyahut da ters tepkimesinden dolayı anotu katodu arasında bir gerilim düşümünden bahsetmiyoruz.
+
+8
+00:01:28,003 --> 00:01:37,864
+Yani aslında ideal diyottan kastımız eğer ki anotuna artı, katoduna eksi, yani doğru bir polarizasyonla iletime geçirebileceğinde.
+
+9
+00:01:38,676 --> 00:01:54,896
+Diyotun direkt iletime geçeceği noktayı gösteriyoruz. Yani diyotun üzerinde bir gerilimin oluşmadığı, yani kısa devre olduğu senaryoyu kastediyoruz. Ne zaman? İdeal diyot dediğimizde. Şimdi ideal olmayanlarda da iki farklı aslında model tanımlanabilir.
+
+10
+00:01:55,379 --> 00:02:23,379
+Şimdi diyotun iç direnci var bildiğimiz üzere ve bu diyotun iç direnci aslında bizim tepkimi oluşturan şey yani bu diyotun ön gerilimini oluşturan bir eşik gerilimini oluşturan kısım. Ama bu eşik gerilimini geçsek bile bu iç direnç aslında direkt İD akımını üzerinden kısa devrilmiş gibi geçirmiyor. Yani aslında bizim en teorik değil de en pratik olarak pratikte kullandığımız diyotun...
+
+11
+00:02:23,379 --> 00:02:46,060
+Model versiyonu bir adet bariyer geriliminin bulunduğu ve bu bariyer gerilimine geçtikten sonra da yine iç direncinden dolayı direkt değil de biraz sönümlü olarak ıde akımını iletmeye devam eden bir yapı. Bu aslında en pratikte kullanılan model. Ama bunu biraz daha simtle fay ediyorlar. Basitleştiriyorlar.
+
+12
+00:02:46,963 --> 00:03:09,783
+Çünkü o direnç değerini hesaplamanın çok da anlamı yok. Çünkü zaten iletim de diyor ve öde akımı tabii ki de artacak. Yani bunu göz ardına dikkat edebiliyorlar. Bu durumda da yine aynı bir eşik gerilimi var ve bu eşik gerilimli bir ters polarizasyonlu bir gerilim kaynayla model diyoruz. Bu da işte silisüm için 0,7, gelmanyum için.
+
+13
+00:03:10,223 --> 00:03:33,163
+0.3, arsenik için 1.2 diyebileceğimiz değerler. OVT, threshold seviyesindeki gerilimi geçtikten sonra, yani burada belirtilen materyale göre oluşan ters gerilim kaynaymış gibi işlem yapan eşik gerilimini geçtikten sonra diyotun iletime geçtiğini simplified modelde söylüyoruz.
+
+14
+00:03:33,876 --> 00:03:43,556
+İdeal olan ve ideal olmayandan kastımız bunlar. İdeal olmayan, genelde de kullanacağımız simplified model olacak.
+
+15
+00:03:45,836 --> 00:03:53,996
+Evet, bir sorumuz var. Yandı diyotun üzerinden geçen akım ve diyotun üzerinde oluşan gerilim grafiği çizilmiş.
+
+16
+00:03:54,836 --> 00:03:59,916
+Ve buradan anlıyoruz ki bu bilgi aslında gelmemek silisyon bir materyalardan olduğu anlaşılabiliyor.
+
+17
+00:04:00,756 --> 00:04:25,135
+Ve silisyon bir materyalı olduğundan 0,7 voltluk bir gelimin üstünde birikeceğini kestirebiliyoruz. İstenen ne? VDQ ve EDQ. Şimdi burada efficient pointler var. Ne demek bu? Bu diyotun en etkin çalışma aralığının Q pointlerine biz en etkin çalışma bölgesi diyoruz. Bu transistörde de böyle olacak.
+
+18
+00:04:26,740 --> 00:04:47,820
+Bunu hesaplamak için ilk başta şunu göz önünde bulundurmamız lazım. Diyotun üzerindeki sıfır, yani diyotun üzerinde bir gerilim birikmediği senaryoda ı-d akımı ne olur? Yani buradaki pointi ne olur? Bu y eksenindeki değeri ne olur? Bunu bir hesaplamamız lazım ki bu zaten ideal diyotun karakteristik davranışı.
+
+19
+00:04:54,740 --> 00:05:10,519
+Vd üzerindeki sıfırı kastediyoruz. 10 bölü birden 10 mA. Bu en ideal durumda. Bir de diyoruz ki Vd'nin yani üzerindeki diyotun üzerindeki gerilemin
+
+20
+00:05:11,379 --> 00:05:27,819
+Maksimum olacağı nokta veyahut da akımın sıfır olduğu nokta ki biz bunu açık devre diyoruz. Diyot ne zaman açık devre olur? Aslında ters polarizasyonda olur. Diyotun açık devre olduğu senaryodaki üzerine düşen gerilim nedir diye soruyoruz.
+
+21
+00:05:27,819 --> 00:05:32,340
+Burada bir tane gerilim kaynağı var ve açık devre olduğu için de KVL'den.
+
+22
+00:05:32,788 --> 00:05:46,627
+10 volt, buradaki 10 volta eşit olmak zorunda. Yani aslında açık devrinin diyotun üzerindeki gerilim 10 volt olacaktır. Bu tabii çok çok ileride bir değer. Şöyle biraz daha ilerleyelim. Şurada 10 volt olduğunu düşünelim.
+
+23
+00:05:47,127 --> 00:05:54,627
+Q Point şunu söylüyor bana. Bu ideal diyotun davranışında, açık ve kısa devre durumlarında.
+
+24
+00:05:55,220 --> 00:06:18,460
+Bu normalde ki bu diyotun materyal 4004 olur, 4007 olur, 4001 olur diyotun materyal markası, alt modeli neyse. Bu modelin karakteristik edilmesi buymuş. Bu tavra göre en ideal diyotla kesiştiği noktalar benim bu paket için tasarlanmış diyotun Q pointlerini belirliyor. Yani en etkili kullanım alanına.
+
+25
+00:06:19,124 --> 00:06:41,704
+Şöyle bir çizelim. 10 volt çok çok ileride. Buralarda olmayacak, daha da yukarıda olacak ama şöyle bir değer gelecek muhtemelen. Çok ileride çünkü. Buralar 0.8 hatta şurası 1 volt ise bunun 10 kat ilerisini düşünün. Daha ben şu an 4 katını çizebildim. Çok çok ileride olunca 9 nokta şuralarda bir değer gelmesi lazım.
+
+26
+00:06:42,579 --> 00:06:53,919
+Şimdi bu bize şunu söylüyor esasında. Benim bu pakette böyle bir karakteristiğe sahip olan diyot en etkin böyle bir çalışma prensibi sunabilir diyor.
+
+27
+00:06:53,919 --> 00:07:03,839
+Q point'ini aslında graf üzerinden buluyoruz. Bir de R gerilimi üzerindeki gerilim sorumlu R direnci üzerindeki.
+
+28
+00:07:04,244 --> 00:07:12,684
+Bunu da şimdi buradaki Q point'i bulduktan sonra mesela Q point'imiz muhtemelen 0.79 gibi bir şey geldi.
+
+29
+00:07:12,684 --> 00:07:24,184
+Örnek verelim. 10 volt eksi 0.79 benim için Vr'yi yani diyotun Q point ile çalışmasındaki direncin üzerindeki gerilimi bulmamızı sağlayacak.
+
+30
+00:07:26,004 --> 00:07:27,004
+Bakarsak.
+
+31
+00:07:27,444 --> 00:07:48,724
+Şurada bir yanlışlık var arkadaşlar. Çünkü devrede 2K değil herhalde. Evet, 1K'lık bir direnç var. Yani ilk başta biz I'de'yi bulmak istemişiz ama V'de sıfırken. Yani diyotun üzerinde bir gerilim düşmezken. Yani diyot kısa devreyken. 10 bölü 1K dedik. Ve bizim için 10 mA çıktı. Bu bizim I'de Q'muz.
+
+32
+00:07:49,939 --> 00:08:05,320
+Pardon, graftaki ED diyotun ideal olma durumundaki akım üzerinden geçen akım olması. V'de ED0 iken tabii ki de bir açık devre olduğundan giriş gerilimle eşit olacak diyotun üzerindeki gerilim. 10 volt olacak.
+
+33
+00:08:05,320 --> 00:08:16,240
+Burada işte dediğim gibi çizdiğimizde şurada 0.78 gerilim ile 9.25 mA bir efficient pointler çıkıyor.
+
+34
+00:08:16,947 --> 00:08:35,967
+Bu dediğim gibi, bu karakteristik eğriye göre, yani bu tasarlanan, üretilen diyotun karakteristik eğrisine göre ideale yakınlaşma durumu. Ki biz buna efficient point diyoruz. Etkin çalışma bölgesi. Etkin çalışma bölgesi için değerlerimiz bunlarmış.
+
+35
+00:08:40,275 --> 00:09:04,455
+İletimdeyken, üzerine 0.78 volt birikiyor ve üzerinden geçen akım 9.25 mA'miş. İki tarzda yapılabilir. Direncin üzerindekini soruyorduk hatırlarsanız. Şuradaki VR gerilimini soruyorduk. Ya akımı çarparız bir kilo onunla ya da gerilimi çıkartırız bir ana gerilimle. Sonunda KVL veya KCL'ye de bunu çözmüş oluruz.
+
+36
+00:09:05,139 --> 00:09:11,939
+9.25 V birinde çıkmış, 9.22 V öteki de çıkmış. Arada yuvarlama farkı oluşabilir.
+
+37
+00:09:16,307 --> 00:09:26,408
+Başka bir örneğimiz var. Bir silisiyum diyot olduğunu görüyoruz. Neyi soruyor? Diyot üzerindeki gerilimi, direnç üzerindeki gerilimi ve ıgda akımını soruyor.
+
+38
+00:09:26,408 --> 00:09:36,227
+Şimdi zaten doğru polarizasyonda. O yüzden direncin üzerindeki gerilim ne olacak? 8-0.7. Çünkü silisiyum olduğu belirtilmiş.
+
+39
+00:09:37,235 --> 00:09:59,855
+Yani 7.3 bölü 2.2K'dan biz direncin üzerindeki gerilimi bulabiliyoruz. O da şey akımı 3.32 mili amper. Şurası ıd akımı 3.32. Zaten ıd'ye eşit olacak değil mi? 3.32 mili amper de ıd akımı olacak. Direncin üzerindeki gerilim de 3.32 çarpı 2.2K.
+
+40
+00:10:00,000 --> 00:10:17,579
+Bu da yapabilirim. 3.3 ile 2.2'yi çarptığım değer direncin üzerindeki gerilim olacak. Başka ne sordu? V'de diyotun gerilim üzerinde de zaten iletimde olduğu için 0.7. V'ye 2 kesimde olsaydı üzerindeki gerilim direkt 8 volt diyecektik.
+
+41
+00:10:22,803 --> 00:10:49,264
+Bir başka sorumuz var. Bu sefer diyotlar iki tane farklı materyarden arda arda bağlanmış. Birisi lüsyum, bir de germanyum. Neyi soruyor? V0'ı soruyor ve ıd akımı. Şimdi V0 bu tarz sorularda istenen gerilim aslında neresi? R direnci üzerindeki gerilim. Çünkü aslında burası bir açık devre. Yani akım aslında ıd üzerinden akacak. Ve ıd üzerindeki akım benim ıd akımıma da eşit olacak.
+
+42
+00:10:50,004 --> 00:11:12,024
+Aslında ölçtüğüm değer benim. V0 ile ölçtüğüm değer Vr. 12 volttu. 0,7 volt silisyumdan dolayı var. Germanyumda 0,3 demiştik. İkisi 1 volt. Burada bir sönümlendirme eşit gerilimi olacak. 12-1'den de 11 volt aslında V0'ın olacak.
+
+43
+00:11:12,563 --> 00:11:23,724
+11 bölü 5.6 yaparak da ben ı r'yi bulacağım. 1.96 mA. Aslında bu ı r'de ı d'ye eşit olacak çünkü burası açık devre.
+
+44
+00:11:29,139 --> 00:11:52,920
+Bir başka soru. Bu sefer buraya bir direnç konmuş. V2 soruluyor. Burada bir de güç kaynağı var dikkat ederseniz. V2 yani direncin, V2 direncin üzerindeki gerilim soruluyor. Ayrıca V0 soruluyor. V0 dediğimiz yer neresi? Şu noktayla bu nokta arası. Değil mi?
+
+45
+00:11:53,331 --> 00:12:17,971
+Şimdi burada V0 şöyle yazılabilir. KVL'yi hatırlayalım. Kirchhoff'un gelimler kanunu. Bize diyordu ki bir loop var. Mesela şuraya bir tane benzer bir veya ona benzemese de farklı bir tane çizeyim. Şöyle bir tane şeyimiz var, devrimiz var. KVL şunu söylüyordu. Buna ben VL diyorum. Buna V1 diyorum. Buna da V2 diyorum.
+
+46
+00:12:19,059 --> 00:12:43,259
+KVL şunu söylüyordu. Akımın yönünü böyle çizdiğim için artı eksi polarizasyonu oldu VR bazında. Bu tarafta zaten kendisi artı eksi yazılmış. KVL'de bu eksi artılara göre topladığımızda, yani ters olanları çıkartacağız, düz olanları toplayacağız. Topladığımızda eşitliğin sıfır olması lazım.
+
+47
+00:12:43,860 --> 00:13:09,659
+Yani v1 burada mesela artı sekans da yazdık. VL'yi eksi yazacağız. Çünkü ters bağlanmış. Ötekisi de eksi artı artı eksi. Aslında ters. Onu da buna ters yazdım. Ve bunun sıfır olacağını söyler. Veya başka bir tabirle V1'in VL artı V2 olduğunu söyler. Tamam mı? KVL bunu söylüyordu hatırlarsak.
+
+48
+00:13:10,676 --> 00:13:31,696
+Şimdi buna göre biz şu sağ tarafı aslında eşitliğinin V0'ın neye eşit olduğunu yazabiliriz. Çünkü şöyle hani şu alttaki şekle bakarak da dizenledelim. Burası artı eksi. Bunu şuradan akım geliyormuş gibi hesaplamış, çizmişiz artı eksi şeklinde.
+
+49
+00:13:32,192 --> 00:13:54,831
+Bunun da artı eksisi zaten, buradan artı okuduğumuzu düşünerekten yapalım. Bunun KVD'sini yazarsak, artı eksiye mesela, artı yazayım buna, 5 volt. Eksi olacak çünkü eksi artı, V2, artı eksi, yani artı eksi, artı eksi. Değil mi? Eşit V0.
+
+50
+00:13:56,788 --> 00:14:11,967
+Yani V0'ı V2-5V olarak yazabilirim. Yani aslında ben burada V2'yi bulursam, 5V 10'dan çıkartırsam ben V0'ı KVL ile bulabilmiş olacağım.
+
+51
+00:14:11,967 --> 00:14:23,187
+Burada V2'yi bulmak önemli. Şimdi V2'yi bulmak için de buradaki akımı bulmam. Veyahut da akımı bulmasam bile bu V1'i bulursam 10V-V1-Silisyum.
+
+52
+00:14:23,552 --> 00:14:50,932
+V0'ı direkt verecek zaten. Tabi buradaki eksi 5'i de katarak. Ama akımdan gidelim. Burada akımdan gitmek istersek mesela 10 volt I1 çarpı R1. Burası silistrium 0,7 diyeceğiz. Bunun denklenini yazabiliriz. 2.2 yine aynı I1 olacak ve eksi 5 olacak. Yani burada bir KVL yazarsak yine.
+
+53
+00:14:52,467 --> 00:15:07,707
+Eksi artı, burası artı eksi dedim. Burası zaten 0.7 voltmuş gibi ama tersten tabii şöyle bir 0.7 volt. Artı eksi, artı eksi, eksi artı.
+
+54
+00:15:07,707 --> 00:15:13,611
+Şimdi eksi artı kısmına 10 volt yazdım. Eksi i...
+
+55
+00:15:13,652 --> 00:15:35,211
+Ne yazıyoruz buna? İ1 diyelim veya idiot diyelim. İkisi de aynı. Bakalım zaten. İ1 çarpı 4.7 çarpı 10 üzeri 3 artı eksi yazdım. Burası da artı eksi. Eksi 0.7 artı eksi yine eksi. İ1 çarpı 2.2 çarpı 10 üzeri 3.
+
+56
+00:15:36,179 --> 00:15:51,059
+Burası eksi artı olduğu için eksi artı, eksi artı buna artı 5 volt yazıyorum. Ve bunun sıfır eşit olması lazım diyorum. Yani düzenlersek 15 volt, eksi 07'yi de çıkartalım, 14.3 volt.
+
+57
+00:16:01,491 --> 00:16:13,011
+Ötekisi neredeydi? 2.2 daha, 4.9, 5.6.9 çarpı 10 üzeri 3. Herhalde buna eşit olması lazım diye düşünüyorum.
+
+58
+00:16:15,091 --> 00:16:21,291
+Buradan I1 ne geliyor? Hesaplamış mıyız? Yok hesaplamamış herhalde, çözümünü yapmamışız.
+
+59
+00:16:22,071 --> 00:16:26,991
+Buradan I1 bir değer gelecek. Şu an kaç geliyor? Burada yazmamışız herhalde.
+
+60
+00:16:28,083 --> 00:16:51,903
+14.3-4.7-4.9-6.9 Tamam, başka bir değer kaybetmedik. Evet. 6.9 10 üzeri 3'e bölersek, mili amperli bir değer gelecek de. Bir hesaplayalım. 14.3'ü bölelim. Ne geliyor? 2.07 mi geliyor?
+
+61
+00:16:53,172 --> 00:17:20,372
+Yazalım. 2.07 miliampere. Ne bu? I1. Şimdi I1 şurası yani. Aslında şuna da eşit. Buradan geçeceği için. Bu da 2.2 çarpı, ya K'lar miliampereleri götürür. Yaklaşık olarak 2.2 ile 2.07 çarparsak ne elde ederiz? 4.4 diyelim. Herhalde öyle bir şey elde ederiz. Çok da oynamaz. 4.4 volt diyelim.
+
+62
+00:17:21,140 --> 00:17:47,820
+Şimdi burası artı, eksi, eksi, artı ve burası 5 volt var. Yani aslında ölçeceğim değer benim burada. Eğer ki artı, eksi şeklinde gösterirsem, eksi 0.6 volt. Demek ki aslında artı, eksi değil, eksi, artı şeklinde artı 0.6 voltmuş diyebiliriz. Yani artısı bu aşağıda. Buradan KVD'yi çıkarabiliriz.
+
+63
+00:17:51,859 --> 00:17:53,339
+Bir başka soruya bakalım.
+
+64
+00:17:55,240 --> 00:17:58,759
+Evet, burada da şimdi iki tane diyot var. İkisi de siliziyor.
+
+65
+00:17:59,659 --> 00:18:01,799
+İkisi farklı olabilir miydi? Olabilirdi.
+
+66
+00:18:01,799 --> 00:18:05,619
+Ne zaman birbirine paralel değilse bu iki diyot, farklı yapıda olabilir.
+
+67
+00:18:05,799 --> 00:18:09,740
+Ama paralellikle biliyorsunuz ki, mesela şu yapıyı anlatalım.
+
+68
+00:18:10,519 --> 00:18:12,219
+Şöyle bir diyot diyagramı kullandım.
+
+69
+00:18:17,299 --> 00:18:41,819
+Bu silisyum, bu germanyum. Bu mümkün değil. Çünkü silisyum iletimi ikisi de doğru iletimde, ters değil. Doğru iletimde ikisi de iletime geçecek. İletime geçtiği zaman üzerindeki gerilimlerin parvaliden eşit olması lazım. Mesela bu 0.7 volt bırakacak üzerinde. Bu 0.3. İşte bu aslında düzgün bir kullanım değil. Böyle bir şey mümkün değil.
+
+70
+00:18:42,516 --> 00:19:00,816
+Yani Germanyum silin bir tarafı yakmış oluruz yüksek akım çektiği için. Oradaki diyot yanacaktır. Aynı bu kondansatör yapısına benziyor vesaire vesaire. Devre teorisinde paralelleri anlatıyoruz. Burada da mesela şansiyeli bir kullanım var ve paraleli olan diyotun paralelinde olan bir direnç var.
+
+71
+00:19:00,816 --> 00:19:09,176
+Şimdi bu silisyon, istenenler bir I1 akımı istenmiş, I2 istenmiş ve I2 akımı istenmiş.
+
+72
+00:19:09,683 --> 00:19:25,463
+Bunun üzerinde, sonuçta doğru polarizasyon sağlıyor. Akım bir böyle gelecek. Bu akımı hatta I2 demişiz. I1 akımı direnci üzerinden gidecek. ID2 de diyotun üzerinden gidecek. En nihayetinde ama I2 eşittir.
+
+73
+00:19:25,855 --> 00:19:45,076
+I1 artı I D2. Çünkü ne? Biz biliyoruz ki K, C, L yaptığımızda bu tabirleri arkadaşlar devrede öğrenmiştik. Bir daha tekrar etmiyoruz ama kullanacağız. Sınavda da kullanmanız için size soru verilebilir. K, C, L ve K, L ile eğer eksiğimiz varsa bir flashback yapalım.
+
+74
+00:19:46,771 --> 00:20:01,071
+KCL yaptığımızda, KCL şunu söylüyordu, NOT analiziydi bu ayrıca. Düğme giren akımlar, düğümden çıkan akımlara eşit olmalı. Toplamına eşit olmalı, girenler çıkanların toplamına eşit olmalı.
+
+75
+00:20:02,163 --> 00:20:24,064
+Evet, bu mentaliteyle şimdi ilk başta bizim ID2 üzerinde bir şeylere bakabiliriz. Mesela bu bir silisyum ve bu iletime geçtiğinde üzerinde bırakacak gerilim 0.7 volt. Bu kolda 0.7 volt gerilim var. Şimdi paralel kolda da 0.7 volt gerilim olması lazım. Ona göre akımın değişmesi lazım.
+
+76
+00:20:24,688 --> 00:20:39,147
+Burası 0.7 volt varsa 0.7 bölü 3.3 kilo onda ben aslında mesela burada yapmışız 0.212 mili amper I1 R1 direnci üzerinden geçen koldaki akımı görebiliyorum.
+
+77
+00:20:40,147 --> 00:20:49,067
+0.212. Buradaki akım yani şurayı bulduk. 0.212.
+
+78
+00:20:50,099 --> 00:21:16,699
+Sonra şimdi gelelim bu ana koldakini bulmaya. Orada da KVL yazabiliriz. Şunu eksi olarak yazalım. V2'yi. Mesela orada yazmışız. Daha doğrusu nereye yazmışız V2 diye. Direncin üzerindeki ne eksi yazmışız? Artı E, eksi VT1, eksi VT3. Evet. Yani şuraya bir KVL yapmışız.
+
+79
+00:21:17,491 --> 00:21:31,471
+Bu KVL yaptığımızda, eksi artı, artı, eksi, bu tarafta artı, eksi. Yani bunların üçü de aslında aynı yönde.
+
+80
+00:21:32,019 --> 00:21:52,299
+Tersten yazmıştı da E'yi mesela artı yazılmış, diğer üçleri eksi yazılmış. Yani hepsi üçü aynı, bir zıt olacak zaten. Bu hesabı yaptığımızda 20 volt eksi 07 eksi 2 çarpı 5.6. Değil mi?
+
+81
+00:21:56,627 --> 00:22:10,268
+V2'imiz bizim, yani şunun üzerine düşen gerilim 20 eksi, bu eksi bu, ya bu kısım zaten hani burada paralel olduğu için bu kısımın da gerilimi 0.7, bunun da 0.7, o yüzden burada 0.7 birkecek.
+
+82
+00:22:11,207 --> 00:22:23,827
+1.4'ü çıkarttığımızda 18.6 volt kalıyor. Bu R2'nin üzerindeki gerilim. Bu 18.6'yı 5.6'ya böldüğümüzde de 3.32 mA I2'yi bulmuş oluyoruz.
+
+83
+00:22:25,907 --> 00:22:34,647
+Şimdi bunları aslında bu KCL yazdığımız için birbirinden çıkardığımızda da ID2'yi 3.108 milyon olarak bulmuş oluyoruz.
+
+84
+00:22:36,707 --> 00:22:38,087
+Tamam mıyız?
+
+85
+00:22:41,460 --> 00:22:51,980
+Tamam. Sinyal çizdirme soruları, ilk başta zaten bunları siz derste de yapmıştık ama ideal olanlar için yapmıştık, silikonlar için yapmamıştık mesela.
+
+86
+00:22:52,880 --> 00:22:56,900
+Buradaki ilişkilerimiz mesela 20 volt, tepeden tepeye bir sinüs dalgası var.
+
+87
+00:22:59,508 --> 00:23:17,748
+Katotu bağlanmış, yani ters bağlanmış bir diyot var. Bunun V0'ı, ki burada da aynı şekilde V0'dan kastımız, R direnci üzerinde oluşan gerilim değişimini gözlemlemek. Bu R direnci üzerinde ne zaman gerilim düşer? Akım geçtiği vakit. Ne zaman akım geçer? Eksi sekans geldiği vakit.
+
+88
+00:23:20,008 --> 00:23:26,788
+Öyle olduğu için aslında bu bir rectifier olacak değil mi? Yarı doğrultu aşağıda half-wave rectifier olarak gösterdi.
+
+89
+00:23:27,763 --> 00:23:33,363
+Bunun DC Output'unu sormuşuz.
+
+90
+00:23:33,363 --> 00:23:38,163
+0,318 kat tabii ki de ortalama salınacak.
+
+91
+00:23:38,163 --> 00:23:46,263
+Yani 0,318 kat ve pik noktası bizim DC gerilim seviyesindeki gerilimimizi oluşturacak bunun.
+
+92
+00:23:46,263 --> 00:23:53,863
+O da ne oluyor? 0-6.36 volt şeklinde okunacak multimetrelerden.
+
+93
+00:23:54,708 --> 00:24:11,468
+İkinci partta ise silikon kullanırsak tek fark edecek şey, şurada sonuçta üzerine düşen gerilimi hesaplıyoruz ya V0'da. 20 volt maksimum 20'ye gitmeyecek. 0,7 silisyum sıfır 20-0,7'den 19.3'e.
+
+94
+00:24:12,180 --> 00:24:39,079
+Gözükecek. Tepe terslikte 19.3. Onu da 0.318 ile çarptığımızda aslında 6.17 voltluk bir geyilim olacak. Yani bir silisyonun bize maliyeti DC boyutta neredeyse %3.5 0.22 voltluk bir etkiye sahip oluyor silisyonu kullanmamız.
+
+95
+00:24:40,180 --> 00:24:52,500
+Maksimum değerin %3.5'unu düşürmüş demek oluyor. Tabi bu değeri 200 voltlara çıkarırsak bu oran daha da düşecek. Çok daha düşük seviyelerde bir kesintiye neden olacak.
+
+96
+00:24:55,240 --> 00:25:02,339
+Ne olmuş burada? Mesela 63.6 iken 63.38 olmuş. Biraz daha düşmüş.
+
+97
+00:25:07,412 --> 00:25:09,052
+Bir başka, evet.
+
+98
+00:25:09,392 --> 00:25:13,292
+Bu da 0.7 çıkardınız mı? İdial oluyordu.
+
+99
+00:25:13,912 --> 00:25:14,332
+Evet.
+
+100
+00:25:14,951 --> 00:25:16,012
+Teşekkür ederim.
+
+101
+00:25:17,032 --> 00:25:19,572
+Vm'den 0.7 çıkartıp hesaplama yaptı.
+
+102
+00:25:24,019 --> 00:25:27,859
+Altında da mesela bir orijinalini yaptık. Dead Split'i çıkartarak yaptık.
+
+103
+00:25:29,879 --> 00:25:37,099
+İkinci başka bir örnek, köprü tipi doğrultma devresinin bir tık değişken versiyonu.
+
+104
+00:25:37,740 --> 00:25:40,440
+İkili ot kullanmış köprü de neydi tekrar hatırlayalım.
+
+105
+00:25:40,539 --> 00:25:47,379
+Köprü tipi de doğrultma haşlarda aslında akımın şöyle akıp, şöyle devam etmesini istiyorduk.
+
+106
+00:25:48,243 --> 00:26:09,443
+Öteki taraftan da eksi sekans geldiğinde de şöyle gelip böyle gitmesini istiyorduk mesela. Bunun içinde ne yapıyorduk? Burada hani şöyle gelsin bu direncin üzerindeki gerilim oluşsun ve onu ölçeyim diye buraya da şuradan gelecek şekilde böyle bir bağlantı yapıyorduk. Ötekisinde de eksiden geldiği için.
+
+107
+00:26:10,675 --> 00:26:22,155
+Şurası eksisi olacak. Şöyle bir bağlantı yapıyorduk ki, artısı eksisi sekanslarda bir cycle tam olarak gelsin, bunun direnç üzerinden aynı polarizasyonla geçsin.
+
+108
+00:26:22,155 --> 00:26:29,976
+Bakın, bu neyi sağlıyordu? Full Wave Rectifier'ı sağlıyordu. Yani tam doğultmaç devresinin, yani eksi de artık.
+
+109
+00:26:30,483 --> 00:26:40,063
+Direnç üzerinden geçtiği için normal gösteriyordu. Bunun bir dezavantajı vardı. Eğer ki ideal diyot değil, hepsi mesela silisyon diyot olsun.
+
+110
+00:26:40,692 --> 00:27:08,692
+Silisyum diyot olduğu için de iki tane diyottan geçtiği için bir sekans, 1.4 voltun, yani 10 voltsa mesela bu girişteki gerilim, 1.4 voltun üstünden seyrilmesinden dolayı bize 8.6'lık bir direncin, gerilimin ölçümü söz konusuydu. O da 8.6'nın 0.636 ile çarpımında bize tam bir DC gerilim boyutunu veriyordu.
+
+111
+00:27:08,692 --> 00:27:14,392
+Yani aslında dezavantajı iki diyottan geçtiği için iki threshold seviyesinde sönümlendiriyordu.
+
+112
+00:27:15,652 --> 00:27:25,912
+Şimdi böyle bir yapıda ise, bakın direnç bağlanmış. Ne olur ona bakalım. Akım artı sekansla geliyor. Bu taraftan gidecek.
+
+113
+00:27:25,912 --> 00:27:35,692
+Burada akım şimdi dirençlere göre ikiye ayrılacak. Şu kısımdan geçmek, şöyle gidemeyecek zaten. Şu kısımdan gitmek için şöyle.
+
+114
+00:27:36,915 --> 00:27:58,316
+Ve bu kısımdan gitmesi için böyle bir akım yolu olacak değil mi? Şimdi burada 2K, 2K, 2K bütün direnç değerleri eşit. Yani ben buradan X kadar bir akım gönderiyorsam, burada veya 2X kadar, buradan X kadar gitmesi lazım değil mi?
+
+115
+00:27:59,316 --> 00:28:05,215
+Ve bu x kadar gittiği akım, 2k, yani ana akımımız kaç bizim? 3x mesela.
+
+116
+00:28:06,655 --> 00:28:08,516
+Dağılımı böyle olmak zorunda değil mi?
+
+117
+00:28:09,635 --> 00:28:18,435
+Çünkü burası 4k, bu kolun gerilim seviyesi 4kx, bunun da 4kx olması lazım ki paralel bunlar.
+
+118
+00:28:19,375 --> 00:28:22,576
+Şimdi burada 3x x'e 2x'e ayrıldı.
+
+119
+00:28:23,155 --> 00:28:37,155
+Şimdi bunun üzerine düşen gerilim esasında bizim ana koldaki gerilimin yarısı kadar. Çünkü burası paralel devresi var. Yani yarı yarıya bölünecek. Öyle olunca...
+
+120
+00:28:37,811 --> 00:28:50,832
+Bunun hesabını yaparsak 1 bölü 2 kadarını burada sönümlendireceğiz, göreceğiz. Diğer 1 bölü 2'sini burada göreceğiz. İkisi V'yi verecek. Bunlar da payla olduğu için burada da V maks. Yani 10 volt, 5 volt, 5 volt şeklinde bölünecek.
+
+121
+00:28:52,152 --> 00:28:57,531
+Burada 5 voltu göreceğim. Yani pozitif sekansta akım şöyle geldiği için 5 voltu göreceğim.
+
+122
+00:28:58,172 --> 00:29:02,832
+Negatif sekansta da yine aynı şekilde öteki taraftan bakarsak buradan gelecek.
+
+123
+00:29:03,423 --> 00:29:25,844
+Burada çatallanma var ve yine iki dirence tek dirençten geçecek. Yine 5 volt göreceğim. Yani bu kol 10 volt, bu kol toplamda 10 volt olacak şekilde 5-5 de alacak. Ve öyle olunca benim aslında yine full wave rectifier, evet tam doğut maç ama 5 voltta indirmiş oldum yarı yarıya. Neden? Direnç değerleri orantılı diyeyim.
+
+124
+00:29:27,384 --> 00:29:28,124
+Tamam.
+
+125
+00:29:29,332 --> 00:29:54,392
+Bunun avantajı şu, avantajı işte iki tane diyottan geçmediği için tek diyottan geçecek. Mesela 5 voltu biz aslında bu ideali olmasa 5-07 şeklinde göreceğiz. Yani 4.3 diye göreceğiz tepe noktası. Ama ötekinde iki diyottan geçtiği vakit 1.4 yani 07 artı 07 sünümlemeyi görmemiz gerekirdi.
+
+126
+00:30:00,500 --> 00:30:13,079
+Evet, bunun da 5 voltu da DC gelinimden hesaplamak istesek 0636 full wave yaptığı için 0636. Eğer half wave rectifier olsaydı 0318'ne çarpacaktı.
+
+127
+00:30:17,491 --> 00:30:42,311
+Başka bir örnek, bu sefer biyaslı bir örnek. Bir klipper devresi ve biyası var, önde beslemesi var. Bunu hep şöyle analiz ediyorduk hatırlarsanız, T0 anında ben herhangi bir gerilim vermediğimde V0 dediğimiz Z0 üzerindeki gerilim zaten ve R0 üzerindeki gerilim anca ve anca bu iletimdeyken oluşur. Kesimdeyken zaten V0'un 0 olacak.
+
+128
+00:30:43,763 --> 00:30:55,983
+Burada bir biyaz var ve doğru bir polarizasyon sağlıyor. O yüzden zaten çıkışım benim 5 volttan başlayacak. Bu sıfırken burası 5 volt olacak çıkış için. Sonra arttıkça tabii artacak.
+
+129
+00:31:00,276 --> 00:31:11,936
+25'e kadar gelecek. Sonrasında artık eksi sekansa geçtiğimiz şu aralarda bu 5 volt sönümlenene kadar yine iletimde sonra 5 volt sönümlenecek.
+
+130
+00:31:13,156 --> 00:31:18,896
+Bu 5 volt sönümlendikten sonra da artık kesime gittiği için bir şey görmeyeceğim.
+
+131
+00:31:26,804 --> 00:31:37,384
+İdeal olmama durumu vesaire düşünürsek, mesela 07 vesaire o zaman da tepe noktamız 20 artı 5 eksi 07 olmak zorunda.
+
+132
+00:31:42,132 --> 00:31:45,932
+Zener örneklerine geçtik. Buraya kadar soru var mı arkadaşlar?
+
+133
+00:31:51,955 --> 00:31:52,855
+Yok herhalde.
+
+134
+00:31:55,092 --> 00:32:15,772
+Zenel diyotun özelliğine bir flashback atalım. Neydi? Zenel diyot üzerinde belirlenen gerilim düşümü, yani zenel gerilimi diyoruz buna, zenel geriliminden fazla bir gerilimin ters polarizasyon yaptığı senaryoda diyotun iletime geçtiği, yani ızı akımının oluştuğu senaryolardı.
+
+135
+00:32:15,772 --> 00:32:23,072
+Mesela bu zenel diyot örneğine bakalım. Burada bir zenel diyot var ve üzerinde V zenel, zenelin gerilimin.
+
+136
+00:32:23,092 --> 00:32:50,192
+10 volt olduğu belirtilmiş. 10 volt olduğu belirtilmiş. Yani ben girişteki gerilimim veya işte bu zenerin üzerine düşen gerilimim diyelim. Girişteki gerilim önemli değil. Zenerin üzerine düşen gerilim 10 volttan fazla ise, yani buradan gelen akım tabii yönü böyle olmak zorunda, bu durumda fazla ise benim zenerim iletimi geçecek ve ızı akımı oluşacak.
+
+137
+00:32:50,579 --> 00:32:55,379
+Ne zaman 10 volttan daha aşağıda ıze akımı 0 olmak durumunda?
+
+138
+00:32:56,959 --> 00:33:08,819
+Bir soru da VL'yi, direnç üzerindeki gelimi, VR'yi, buradaki direnç üzerindeki gelimi, zenerin akımı ve zener üzerindeki gücü sormuşuz.
+
+139
+00:33:08,819 --> 00:33:14,699
+Eğer ki demişiz ki ikinci partta yük direnci 3 kilo olsa ne olur demişiz.
+
+140
+00:33:14,739 --> 00:33:17,979
+Şimdi buradaki yük direncinin önemi ne olabilir sizce?
+
+141
+00:33:20,788 --> 00:33:24,027
+Zener'in en önemli paramentresi aslında bu yük direnci.
+
+142
+00:33:29,140 --> 00:33:30,020
+Neyonal.
+
+143
+00:33:34,387 --> 00:33:35,727
+Burada değil miyiz arkadaşlar?
+
+144
+00:33:43,124 --> 00:33:44,564
+Kısa devre yapacak için mi?
+
+145
+00:33:45,683 --> 00:33:46,183
+Değil.
+
+146
+00:33:47,604 --> 00:33:53,064
+Zen'er zamanı belli bir voltajı koruyordu galiba. 5.6 volt.
+
+147
+00:33:53,844 --> 00:33:54,224
+Hayır.
+
+148
+00:34:03,347 --> 00:34:15,507
+Hadi arkadaşlar, biraz böyle interaksiyonlu bir ders yapalım diyeceğim de. Yüz yüze eğitime geçilse belki bir tık daha iyi olacak bu nedenle.
+
+149
+00:34:18,327 --> 00:34:24,927
+Arkadaşlar, buradaki direncin aslında ana kriteri şu. Bu direnç şunun için var. Zilerin üzerindeki gelimi ayarlamak için.
+
+150
+00:34:25,715 --> 00:34:45,135
+Ne kadar gerilim düşeceğin zenere bu belirleyecek. Neden? Bunlar iki paralel yapı, yani iki tane paralel kol. Ve paralel yapılarda biliyoruz ki biz bir paralel kolun bir tanesi üzerindeki gerilim ötekisine eşit olmalı. Yani ben buradaki gerilimi hesapladığımda aslında bu zenerin üzerine düşen gerilim olacak.
+
+151
+00:34:46,036 --> 00:34:56,896
+Z'nin üzerine düşen gerilim eğer ki belirlenen kriteri sağlıyorsa diyeceğim ki ı z oluşur diyeceğim. Ve ı z'nin hesabına gideceğim. O hesabı da yine KCL olarak yapacağım.
+
+152
+00:34:58,115 --> 00:35:08,396
+Şimdi buna bir bakalım. İlk başta buradaki gerilim ne kadar düşer? Bunu hesaplamak istediğimizde 16 volt giriş gerilimiydi.
+
+153
+00:35:08,864 --> 00:35:28,844
+Bunun üzerindeki 1.2 çarpı 16 bölü 1 artı 1.2 ben bunun üzerine düşen gerilimi hesaplamış oluyorum. Bakın bu ters bağlanmış. Normalde doğru bağlanmış olsa şuna. Deriz ki buna normal diyotmuş gibi hesaplarız. Ve buna da 0.7 düşüyor deriz.
+
+154
+00:35:29,364 --> 00:35:39,364
+Bunun üzerine 0.7 düşüyorsa, normalde 16x0.7'den VR'yi buluruz. Buraya yüksek bir gerilim düşer.
+
+155
+00:35:39,364 --> 00:35:49,364
+Ama ters bağlanmış. Zener'in mantığını kullanmayı istiyoruz. Zener efektifliğini gösterebilecek miyiz?
+
+156
+00:35:50,708 --> 00:35:59,168
+Bunu anlayıp, yani zihneli ters bağlamışız. O yüzden bunun üzerine 0.7 düşer diyemezsiniz. Bunun üzerine düşen gerilim, kaydarkolundaki gerilime eşit olacak.
+
+157
+00:35:59,827 --> 00:36:24,088
+Burada 16 çarpı 1.2 artı 1 artı 1.2 aslında bir gerilim bölücü devresi. Dirençler üzerindeki gerilim bölünüyor. 8.73 volt düşüyormuş. Mesela bu konfigürasyonda V ile 8.73. Şimdi V'de 8.73 ise Z'nin üzerine düşen gerilim de 8.73'tür. Yani şuradaki 8.73 volt oluyor.
+
+158
+00:36:24,532 --> 00:36:49,392
+Böyle olunca biz şunu diyebiliyoruz. 1.2 kilo onluk yük direnci bağlıyken, Zener bölgesine girmedi. Öyle olduğu için de kesimde. Kesimde olduğu için de IZ0. Yani açık devre şeklinde diyoruz. Yani aslında şu ters tarafta biz daha şuralardayız. İşte 8.3'deyiz.
+
+159
+00:36:50,835 --> 00:37:17,835
+Peki, 3 kilo ohm yaparsak, yani şurası 1.2 değil de 3 mi demiş, evet 3K dersek ne yapacağız? 16 çarpı 3 çarpı 10 üzeri 3 bölü, neydi o 1 miydi? 4 çarpı 10 üzeri 3, şunları silelim. Ne yapar? Şunlar da gider, 4, 12 volt. Yani 3 kilo ohmdayken buraya 12 volt birikiyor. E burası da 12 volt olmak zorunda.
+
+160
+00:37:18,351 --> 00:37:26,552
+O zaman şunu diyebiliyoruz. 12 volt, 10 volt zeneri geçtiği için ız oluşacak. Peki nasıl oluşacak?
+
+161
+00:37:28,467 --> 00:37:51,168
+Önceki soruda VR'yi gerçi hesaplamadan buna geçtik. VR'yi de bir hesaplayalım. 16'ydı, 8.73'tü ve burası kesimde. O zaman VR, yani şunun üzerindeki gerilimi nasıl hesaplarız? 16-8.73, 7.27, 7.27 volt birekiyormuş VR'de.
+
+162
+00:37:52,115 --> 00:38:08,715
+IZ zaten 0, PZ de zaten IZ 0 olduğu için 0. Şimdi gelin tekrardan şu 12 volt senaryosuna. Burası 12 volt. Yani artık burası iletimde. Burası da iletimde ve buranın akımını bulabiliriz. Buranın akımı 12 volt bölü 3 kaldan 4 mili amper.
+
+163
+00:38:17,748 --> 00:38:42,507
+3K yaptık, 12, 6 volt. Şurası 4 miliamper değil. Şimdi bu iletime geçtiği senaryoda, yani 10 voltu geçtiğimiz için 12 volt paralel kolda, bunun üzerine 12 volt düşüyor ama 10 voltun üstünde breakdown'a giriyor değil mi? Yani artık bu senel kısa devre oluyor. Kısa devre olduğu için de aslında bunun üzerine düşen gerilim 10 volt oluyor.
+
+164
+00:38:43,188 --> 00:38:50,188
+10 voltluk bir şey varmış gibi kalıyor ama üstü 12 voltluk kısmı burada...
+
+165
+00:38:50,356 --> 00:39:18,256
+Açık devre, bariyerimiz 10 volt. Normalde bir silisyonlu doğruluk olarda 07 ters diye bağlıyoruz ya. Burada ters 10 volt olarak bağlayacağız iletime geçtiği durumda. 10 voltluk ters bağlantısı var. Burada istediği şey şuydu. Vr'yi istiyordu. Yani şuradaki gerilimi. Burası 12 volt olarak hesapladık ama 10 volt var. Bu da 10 volt olacak doğal olarak bu paralellikten.
+
+166
+00:39:18,356 --> 00:39:24,916
+16-10 volt, 6 volt. Bunun üzerinde kalacak BR'miz. R'le 3 iken 6 volt olacak.
+
+167
+00:39:25,972 --> 00:39:51,812
+Ondan sonra da zaten VL bölü R ile VL'miz 10 volt dedik. 10 bölü 3'ten IL'yi 3.33 bulduk. Yani şuradaki yük direncinin 4 mA hesaplamıyoruz. Şuradaki zenerden dolayı 10 voltlu bariyer bizim buradaki 12 volt onun üstündeki herhangi bir yeri 10 volta fiksliyor. Burası 10 volt bölü 3.3 kilo onda herhalde 3 çarpı 10 üzeri 3.
+
+168
+00:39:52,224 --> 00:39:55,684
+Dediğimizde 3.33 mA'lik bir değer geliyor.
+
+169
+00:40:00,344 --> 00:40:06,404
+Bundan sonra bu VRI üzerindeki akımı da 6 volttu zaten geyelim.
+
+170
+00:40:06,524 --> 00:40:08,684
+1 kilo ama böldüğümüzde 6 mA.
+
+171
+00:40:09,564 --> 00:40:13,804
+ZenR'de zaten şuradaki not analizi yaparsak, şurada 6 mA var.
+
+172
+00:40:13,984 --> 00:40:19,424
+Burası 3.33. ZenR'de bu 6-3.33'den bulabiliyoruz.
+
+173
+00:40:21,811 --> 00:40:38,951
+O da 2.67'ymiş. Gücü de hesaplayalım dedik. V çarpı I'dan yapabiliriz. V zener 10 volt, I zener 2.67 çarpı 26.7 milibatlık bir güçlü gösteriyor.
+
+174
+00:40:38,951 --> 00:40:45,211
+Şimdi bir de bir parametre daha belirtiliyor diyor bu zenerlerde. Zener'in maksimum gücü.
+
+175
+00:40:46,164 --> 00:41:10,664
+Şimdi 30 mili watt'ın üstünde bir güç birikmesi varsa bu zenerde, bu zener bozulur. İşte şu an 26. kaç mı olmuştur? 26.7, 30 mili watt'tan daha düşük olduğu için bu zener çalışmaya devam eder ve on state'dedir diyeceğiz. Ama ne zaman 26. mesela 35 mili watt çıktı, o zaman bu zener bozulacaktır diyeceğiz.
+
+176
+00:41:18,228 --> 00:41:34,487
+Anlaşıldı herhalde. Başka bir örneğimiz, jener örneği. Bu saat tersten sorulmuş. Diyor ki, R'leğinin çalışma aralığını bulun diyor ve R'leğinin.
+
+177
+00:41:34,831 --> 00:41:51,451
+VRL 10 volta sabitleyecek şekilde. Yani zeneri iletimde tutan RL direncini bulunmuyor. İlk etapta bu. Zenerin bir kere 10 volta iletimde olacak. Yani aslında buranın 10 volt minimumda bir gelin bölücü olarak çalışması lazım.
+
+178
+00:41:51,451 --> 00:42:02,551
+Girişte 50 volt. Formülasyonu şöyle yapabiliriz ama 50 çarpı RL bölü RL artı R. Şuradaki R'yi kastediyorum. Bunlar da R1 değilim.
+
+179
+00:42:02,831 --> 00:42:23,011
+R1 eşittir. 10 voltu eşitleyebiliriz değil mi? Buradaki R1 1.40 kilo 10. R'lerin ne olacağını buradan çekeceğiz. Bu bir yöntem. Ama burada mantıkla da baktığımızda hani 50-10 volt düşmesi lazım. Dörtte biri kadar bir bölünmesi söz konusu. Yani buraya 40 volt, buraya 10 volt düşecek değil mi?
+
+180
+00:42:30,239 --> 00:42:56,099
+Minimum bir direnç koymam lazım ki 40'ı 10 bölünme sağlansın. Yani burası R ile minimum 250 olmak zorunda. Ne zaman, ne için? 10 voltun zener iletime geçirebilmesi için. Başka ne demişiz? I-R akımını, yani işte şuradaki akım 40 diye bulduk zaten. 40 bölü 1K'dan 40 mA çıkarttık.
+
+181
+00:42:58,356 --> 00:43:15,016
+I'l'yi de zaten bulabiliriz. I'l de 250 bölü 10, şey 10 bölü 250'den çıkacak. I'l'imiz ne geliyormuş buradan? 8 mA. Değil mi? 8 mA'da şurası var. Dedik.
+
+182
+00:43:15,891 --> 00:43:35,371
+Sonra Zener bölü, işte bu Zener sonuçta bir iç direnci var ve soruda da şey diyor, VRL'yi de yani Zener'in, bir dakika neresi, RL Max'ı sormamış ama RL Max'ı da bulalım demişiz. 10 bölü 8 mA'dan Zener'in iç direnci 1.25 kilo olmuş.
+
+183
+00:43:36,724 --> 00:44:03,943
+Ve bunun grafiğini çizersek yani 250-125 kilo olma kadar maksimum değerini de şu 32 mA'dan çıkartacağız. Şimdi bizimki 8 mA değil mi? Yani pardon 8 değil. Bizimki şu an I-R, şöyle yapmamış mıyız bir dakika, 250 bölü, 10 bölü 250'den şunu hesaplamamış mıyız acaba?
+
+184
+00:44:09,427 --> 00:44:09,927
+Hmm.
+
+185
+00:44:10,804 --> 00:44:32,764
+Bunu yok saymışız. Direkt örneğe eşit olduğu senaryo için kullanmışız. 32 miliamper maksimum, 40 miliamper bu. Buradaki direnç değerini ne kadar yükseltirsem bu aradaki 40'a varır. Sonuçta 40 bizim için örneğe gelebilecek maksimum gelin.
+
+186
+00:44:38,804 --> 00:44:40,963
+Önce olan etkisini analiz etmişiz.
+
+187
+00:44:41,443 --> 00:44:42,024
+10 volt.
+
+188
+00:44:42,675 --> 00:45:10,675
+Bizim bu zenirin üzerindeki ve ayrıca direnç üzerindeki gerilimde 8 mA'de bu aradaki fark, yani aslında benim 250 ohm'un üstüne 1.25 kOhm'a kadar buradaki bu aralığı aslında sağlayabiliyorum. Yani bunu bozmuyor. Ama ne zaman burası artık 32 mA'nin daha da üstüne çıkarsa bu bozulacak. Yani 1.25 kOhm'dan fazla ben RL'ye direnç koyarsam.
+
+189
+00:45:10,675 --> 00:45:17,355
+Buraya artık 32'den fazla bir akım gelecek ve bu da benim zenonimi bozacak.
+
+190
+00:45:18,900 --> 00:45:42,420
+En maksimum yani 320 milivatlık bir gücün üzerinde birikmesi lazım. Onu geçecek olan RL direncini bulmayı da aslında bunun üzerindeki akımın maksimize etmeyiyle bulmuşuz. Bunun üzerindeki akımı ben 32 miliamperden yukarı taşıyan RL direncinin üstü artık benim için breakdown'a sokuyor. Çalışma aralarını böyle belirlemişiz.
+
+191
+00:45:43,668 --> 00:45:51,028
+Çalışma akımı da zaten 8 mA ile 40 mA. Artık 40 mA de bozultuya gidiyor.
+
+192
+00:45:55,123 --> 00:46:05,603
+Tamam mıyız? Yani aslında RL direncinin bizim maksimum ve minimumu. Minimumu belirlemek zaten VZ üzerinden, maksimum belirlemek ise IZM'yi.
+
+193
+00:46:06,203 --> 00:46:13,483
+Orada akım bölücü olarak düşünerek hesaplamamız üzerinden gidiyor. IZ maksimumu geçmeyecek, RL direncini ayarlamaya çalışıyoruz.
+
+194
+00:46:16,851 --> 00:46:22,771
+Zener ve diyot örneklerimiz bu kadar. Şimdi transütörle alakalı örnekleri yapacağız.
+
+195
+00:46:24,072 --> 00:46:35,431
+Hocam, konuyu diyotları artık şey yaptığınız için diyorum da paralel diyot örneği de çözebilir misiniz?
+
+196
+00:46:36,431 --> 00:46:43,072
+Paralel klipper örneğini size yapmanız için ben son şey ödev vermemiş miydim? Orada vardı hatırlarsanız.
+
+197
+00:46:44,244 --> 00:46:45,983
+Simülasyon ödevini mi diyorsunuz?
+
+198
+00:46:45,983 --> 00:46:46,244
+Evet.
+
+199
+00:46:47,384 --> 00:46:53,644
+Orada yaptık da, hocam özellikle labda gördüğümüz soruda açıkçası benim aklım biraz karıştı.
+
+200
+00:46:55,804 --> 00:46:59,084
+Labdaki asistanlara niye sormadın aklın karıştıysa?
+
+201
+00:47:00,024 --> 00:47:01,923
+Cuma günü yapılacak onun labı ya.
+
+202
+00:47:02,744 --> 00:47:10,584
+Tamam. Şu an bu paralel klemplerlerle alakalı örnek burada yok. Özellikle asistanlara sorun.
+
+203
+00:47:10,963 --> 00:47:23,324
+Örneği burada koymadık. Gerekirse o sunumdaki örneği şey yapabiliriz. Çünkü şimdi lafla alakalı bir soru olduğu için çözmek de istemiyorum. Yani çalışmamız lazım.
+
+204
+00:47:23,324 --> 00:47:24,943
+Tamam hocam.
+
+205
+00:47:27,407 --> 00:47:40,947
+Dersin sunumundakini çözerim. Ona bir daha gider, anlatırız. Altlı üstlü kesme devresi. Kariler Klimper'dan kastın. Giriştekisinin üstünün yanını şöyle kesip, şöyle kesen örneği diyorsun değil mi?
+
+206
+00:47:44,927 --> 00:47:49,927
+Tamam, neyse bakarız. Tamam. Transistörlerden sonra bir o sunuma bakalım.
+
+207
+00:47:53,780 --> 00:48:18,000
+Arkadaşlar, tekrar ediyorum, Clipper ve Clamper devreleriyle alakalı simülasyon ödevini yapın. Orada aslında olabilecek bütün koşulları biz verdik. Değerleri değiştirerek siz onu bir kendiniz çözeceksiniz kağıtta. Sonra değerleri değiştirip simülasyonuna bakacaksınız. Doğru mu, yanlış mı? Bu en güzel çalışma yönetimi. Yoksa ben burada olabilecek bütün şeyleri anlatsam da.
+
+208
+00:48:18,643 --> 00:48:39,163
+Ki aslında anlattık hafta. Yine bir yerde kafanız karışacak. Bunu bir fil kendiniz uygulamadıktan sonra, yani defter, kalemle kendinizi çizip simülasyonda görmedikten sonra gerçekten içselleştirilmek olmuyor. Ezber oluyor. Ve orada da en büyük sıkıntınız ezberlemeyin.
+
+209
+00:48:42,579 --> 00:48:49,699
+Oraya geliriz. Arkadaşlar, bir beş dakika ara verelim. Telefon önemli. Beş dakika sonra geliyorum.
+
+210
+00:53:34,708 --> 00:53:50,528
+Arkadaşlar, devam edebiliriz. Transistörlerle alakalı örnekler. Şimdi farklı konfigürasyonları vardı transistörlerin. Fixed BIAS, Emitter, Common Emitter veya Common Collector gibi hatırlarsanız.
+
+211
+00:53:51,908 --> 00:53:58,928
+Şimdi bu bir Fixed BIAS. Yani BIAS'ın da normalde gerilimin BIAS beslemeni olma durumu.
+
+212
+00:53:59,795 --> 00:54:06,675
+Burada istenen ne? Pek çok parametre var ama bunlar hepsi aslında birbirinden çıkartılabilecek parametreler.
+
+213
+00:54:07,835 --> 00:54:19,255
+Base akımı ve kollektör akımı. Bu Q, etkin çalışma aralığına falan graf olduğunda değinecek. Şu an graflı bir soru değil bu. Normalde bir graf.
+
+214
+00:54:19,699 --> 00:54:36,859
+O iletime geçme grafı olduğu senaryoları sonra değineceğiz. Şu an base akımı ve kollektör akımı istiyor. Kollektör emitter arasındaki gerilim farkı isteniyor. Base gerilimi ve kollektör gerilimi bir de base kollektör arasındaki gerilim farkı base kollektör.
+
+215
+00:54:37,583 --> 00:54:48,483
+Derken şurası yani arasındaki gelin farkı isteniyor. Öncelikle şu var. Normalde bu nasıl bir transistör? En iyi bir transistör.
+
+216
+00:54:49,556 --> 00:55:02,916
+MPN transistörde BAS'e pozitif gelmesi, BAS emitter arası doğru polarizasyon doğru olmalı ama BAS kolektör arası da ters polarizasyon olmalı diyoruz değil mi?
+
+217
+00:55:03,316 --> 00:55:09,356
+Şimdi bu senaryoda VBC'nin yani BAS kolektör arasının negatif çıkmasını beklerim.
+
+218
+00:55:09,876 --> 00:55:21,956
+Çünkü Base Collector arası ters polarlamalı. Yani ters polarizasyonla kolektöre pozitif, buraya negatif gelecek şekilde bizim BBC'nin negatif çıkması bunu söyleyecek.
+
+219
+00:55:23,695 --> 00:55:33,916
+Diğerlerini de hesaplayacağız. Şimdi IB akımı için ilk başta IB akımdan kastımız aslında Bezle akan akımdan bahsediyoruz.
+
+220
+00:55:36,596 --> 00:56:02,956
+Aslında şöyle şey yapılabilir. Yani şurada, şuradan bir akım atıyor değil mi? Şöyle. Bu akım yüzergahı boyunda denklem yazabiliriz. Mesela Vcc-Base-Emitter arasındaki gerilim bölü RB benim için IB'yi verecek. Ama bu niye böyle? Çünkü burada bir direnç yapısı yok.
+
+221
+00:56:03,572 --> 00:56:28,152
+Burada bir gerilim birikmiyor. Bu hat boyunca gerilim birikebilecek sadece RB direnci var ve onu da zaten bölü şeklinde yazıyoruz IB'yi bulmak için. IB akımı Bayez'den geçen bir akım ve bunun denklemini yazdığımızda Vcc-Base-Emitter arasındaki gerilim düşümü bölü RB şeklinde IB akımını yazabiliyoruz.
+
+222
+00:56:28,463 --> 00:56:53,703
+Buradaki base emitter arasındaki gerilim düşümü aslında standart bizim silisyon içerisinde hatırlarsınız. İki tane diyotun kullanıldığını söylemiştik. Bu transistörün iç yapısında BE, BE, base emitter arasındaki gerilimin 0.7 volt olduğunu içerisindeki materyal belirliyor. 12 volt eksi 0.7 bölü 240 kilo 10 benim IB akımını belirliyor.
+
+223
+00:56:54,228 --> 00:57:09,467
+Şimdi IB akımı, BASE akımı, hatırlarsanız geçen haftalarda transistörde anlatırken şunu dedim. BASE akımları çok çok ufak düşük akımlardır. Yani sızıntı sayılabilecek seviyesinde. Mesela burada mikro amper.
+
+224
+00:57:09,940 --> 00:57:34,720
+Yani siz bir IB akımı buldunuz ve çok çok diğer IC ve E akımlarıyla fiyasladığınızda çok ufak bir değer değilse 50 kat veya beta parametresine göre değişecek ama çok ufak bir parametre değilse, çok ufak bir değer değilse bir yanlış yapıyorsunuz demektir. Burası genelde çok çok ufak bir değer çıkması lazım. Yani mikroamper gibi, miliamperken etiket olarak.
+
+225
+00:57:35,347 --> 00:57:55,687
+47 mikroamperi buldum. Şimdi IC dilimiz kolektör akımı. Buradan da bir çizik çizebiliriz şöyle. Bunu çizmeden önce ama bir de bizim beta parametresiyle bunun korelasyonu vardı, ilişkisi vardı. Yani benim için IC akımı beta IB idi. Veya şöyle diyelim.
+
+226
+00:57:57,780 --> 00:58:11,579
+Ic artı Ib. Bu bir tane öğrendiğimizdi. Sonra Ic beta Ib idi. Bir de alfa Ib vardı değil mi? Ie'de, hani bunu çok kullanmıyoruz ama olsun, alfa Ib idi.
+
+227
+00:58:11,579 --> 00:58:14,400
+Şimdi...
+
+228
+00:58:14,400 --> 00:58:30,940
+Burada IC'yi bulmak için beta IB'yi kullanabiliriz. IB'yi bildik. Zaten beta parametresi de bu transistörün verilmiş. Böyle bir parametre diye. 50x47 mikroamperi çarptığımızda 2.35 mili amper IC akımını buldum.
+
+229
+00:58:32,179 --> 00:58:37,399
+Ondan sonra VCE, yani Collector-Emitter arasındaki gerilim farkını soruyoruz.
+
+230
+00:58:37,859 --> 00:58:42,779
+Burada da şimdi 12V-VCE neye eşit olmasını bekliyorum?
+
+231
+00:58:43,199 --> 00:58:46,899
+Şuradaki direncin üzerindeki, RC direncin üzerindeki gerilime eşit olacak.
+
+232
+00:58:46,899 --> 00:58:51,799
+Veya tersten diyelim, 12- bu direnç, VCE eşit olması lazım.
+
+233
+00:58:52,579 --> 00:58:56,099
+VCE, VCC-I-C çarpı RC yapacak.
+
+234
+00:58:57,012 --> 00:59:06,811
+Ic'miz şurada 2.35 mA'di. 2.2 kOhm ile çarptığımda, 12 volttan çıkarttığımda 6.83 Vc'yi bulmuş olduk.
+
+235
+00:59:07,251 --> 00:59:08,751
+Kollektörünün emniyet arasındaki gerilimi.
+
+236
+00:59:11,860 --> 00:59:32,060
+Sonra ne sormuştu? VB ve VC. Yani B'sdeki gerilim tam bu noktadaki gerilim ile C'deki VC, yani kolektördeki gerilimi sormuş şu noktaları. Şimdi B'sdeki gerilim esasında şurası genede olduğu için, yani şuradan bir prokladığımızda BE ile aynı.
+
+237
+00:59:32,563 --> 00:59:54,103
+Yani Bayez-Emit arasındaki gerilimle Bayez'deki gerilim aynı olmak zorunda. O da 0,7 volt. Burada bir direnç olsaydı o zaman Bayez'deki gerilim VBE artı bunun üzerindeki gerilim diyecektik mesela. Ama şu an öyle bir yapı yok. O yüzden direkt bu Bayez'deki gerilim Bayez-Emit arasında aynı değerler.
+
+238
+01:00:00,000 --> 01:00:04,679
+Aynı şekilde bir gerilim düşümü yok ve direkt C'ye, V'ye eşit olacak.
+
+239
+01:00:05,588 --> 01:00:23,868
+En son VBC'yi sormuşuz. Yani Base Collector arası. Yani şuradaki gerilim farkını soruyoruz. C'yi biliyoruz, B'yi biliyoruz. 07-6.83 dersek bizim 6.13 voltluk bir gerilimimiz var.
+
+240
+01:00:23,868 --> 01:00:32,748
+Grupun pozitifini buraya, negatifini buraya bağladığımızda. Ki bu da zaten eksi olmasını gösteren şey buranın ters polarizasyon olduğunu gösteriyor.
+
+241
+01:00:33,172 --> 01:00:35,092
+Key çalışabilmesi için bu gerekli.
+
+242
+01:00:38,012 --> 01:00:39,172
+Tamam mıyız?
+
+243
+01:00:43,315 --> 01:00:59,615
+Bu da emiter biyaz. Yani burada bir emiter ucunda bilgi elim düşünün olduğu senaryolara emiter biyaz diyoruz. Yani burada bilgi elim hesabı da yapacağız. Bununla alakalı I-B akımı sormuş. Yine aynısını yazabiliriz ilk etapta.
+
+244
+01:01:05,331 --> 01:01:11,691
+Şimdi burada da bir eksilik var gerilim olarak ama bunu biz akımla beraber şöyle yazabiliriz.
+
+245
+01:01:11,851 --> 01:01:21,511
+20 volt eksi 0.7, yani şuradaki gerilimleri yazdık. Neye eşit olacak? Bunun üzerindeki gerilim de bunun üzerindeki gerilime eşit olacak.
+
+246
+01:01:21,511 --> 01:01:32,551
+Yani IB çarpı 430K artı, burasına da IE diyelim, IE çarpı 1K.
+
+247
+01:01:33,972 --> 01:01:57,931
+Şimdi bu IE'nin aslında dönüşümünü biliyorum. Tekrardan yazacak olursak IE eşittir. IC artı IB idi. Şimdi burada IC'ye dedik ki beta IB dedik. Yani bu IC yerine beta IB yazarsam IB ortak parantezinde IE ne gelir? Beta parametresi bir artı şey pardon I.
+
+248
+01:01:58,579 --> 01:02:22,339
+Ortak yere yazarsak beta IB, IB ortak parantezinde 1 artı beta gelir. Değil mi? Aslında IB çarpı 1 artı beta şeklinde yazabilirim. Ve bu denklemde de şuraya ben IB 1 artı beta yazarsam IB ortak parantezinde IB'yi çekebilirim. 40.1 mikroamper gelmiş.
+
+249
+01:02:24,307 --> 01:02:45,128
+Bunu bulduktan sonra zaten Ic'yi de yani kolektör akımını da bulabilirim. Beta IB'den. 2.1 mA. Ic'yi ve Ib'yi biliyorsam IE'yi de bulabilirim. Gerçi IE'yi sormamış ama VE'yi sormuş. O da E'ye çıkmaktan. İlk başta VCE'yi bir bakalım. Yani kolektör emiter arası. Şurası.
+
+250
+01:02:46,771 --> 01:03:10,132
+Buradaki gerilimini hesaplayacaksam, Vcc yani 20-Ic çarpı 2 kilo 10. Bir de bu var ama eksi. Burası da şöyle bir yaklaşımla yapıyoruz. IE'ye arkadaşlar, yani şuradaki Ic'yi direkt eşitledik. Çünkü bu çok ufak bir değer. Normalde şu denklemi yazmıştık ya burası.
+
+251
+01:03:11,155 --> 01:03:35,495
+Aslında Ic artı Ib Ie dediğimiz, yani ben bunun üzerindeki gerilimi hesaplayacağım mı ki? Ie çarpı 1k yapacağım ya bunun ve gelimini hesaplamak için. Şimdi buradaki Ie'yi Ic artı Ie yapabilirim ama çok düşük bir değer olduğu için. Hani biri milli amper biri mikro amper. Yani 0.4.
+
+252
+01:03:36,115 --> 01:04:01,896
+Çok çok ufak bir değer buna katacak. Öyle olduğu için direkt bunu ben I-C olarak yakın sert bir şekilde alabilirim. Siz de alabilirsiniz sınavda. Eğer aksi belirtilmedikçe. I-C çarpı R-C artı R-E'yi çarptım. Yani buradan tek bir I-C geçiyormuş gibi ama aslında I-C, I-B, I-C artı I-B olmalı. Ama işte negliket ediyoruz. Direkt I-C'miş gibi düşünebiliriz.
+
+253
+01:04:02,356 --> 01:04:20,916
+I-C ortak parantezinde şu dirençleri topladığımızda bundan üzerine düşen gerilimleri buluruz. Ana koldan çıkarırsam ana beslemeden VCE, kolektör emitter arasındaki gerilimi bulmuş olurum. 20 volt eksi 6.03'den 13.97 VCE oluşmuş.
+
+254
+01:04:21,331 --> 01:04:42,491
+Vc, yani şuradaki gelimi nasıl bulacağım? Zaten hani şöyle bulabiliriz. 20 eksi bu dersek burayı bulmuş oluruz. Bu da 2.2 çarpı Ic kaçtı? 2 mA yaklaşık olarak. Yani 4 volt diyelim. Burası da 16 volt gibi bir değer gelecek. 15.98 gelmiş.
+
+255
+01:04:43,284 --> 01:05:08,924
+Ve'yi sormuşuz. O da Vc'yi biliyoruz. Vc'yi biliyoruz. Ve dediğimiz şurası. Bunu iki yolla yapabiliriz. Ya Ic'yi bir kilo onda çarparız. Aslında Ve'dir. Veyahut da yukarıdan itibaren şu üçünü çıkartırsam 20 volttan burayı verecektir. Alttan yapmak daha kolaylı gibi. O da 2 volt gider çıkıyor.
+
+256
+01:05:10,835 --> 01:05:28,555
+Bez gerilimi, VB yani şuradaki gerilim. Önceden burada bir gerilim düşümü olmadığı senaryolarda VB, VBE'ye eşitti. Ama buradaki senaryoda şöyle bir KVL yaparsak, VB eşittir 0.7 artı Ic çarpı 1 kilo diyeceğiz.
+
+257
+01:05:29,555 --> 01:05:36,795
+Buradan ne geliyor? 2.71 volt geliyormuş. Bez kollektör arası yine negatif çıkmasını beklerim.
+
+258
+01:05:37,396 --> 01:05:53,676
+Base Collector arasından. Onu nasıl bulacağız? VC'yi biliyoruz, VB'yi biliyoruz. VB 2.71'de, eksi 15.98, eksi 13.27 ile Base Collector arasındaki gerilimi bulmuş oluyoruz.
+
+259
+01:05:57,300 --> 01:06:08,300
+Evet arkadaşlar, soru var mı? Yok herhalde. Bir başka örnek, bu da...
+
+260
+01:06:10,516 --> 01:06:29,516
+Neyi sormuş? Burası kokmuş ama burası bağlı. Yani kokmana yok burada. Burada bir gerilim bölücü kısmı var. Bu dikkat edilmesi gerekiyor. Sonuçta demin hep yaptığımız çözümlerde biz I, B'yi böyle bir gösterme yöntemiyle gittik ve böyle bir hesaplama yaptık. Ama burada...
+
+261
+01:06:30,132 --> 01:06:43,132
+Burada bir gerilim bölücü var. Ve gerilim bölücü de buraya girecek olan akımın bölünme senaryosu var. Başka ne var burada? Diğer kısımlar zaten aynı.
+
+262
+01:06:43,668 --> 01:06:57,148
+İlk başta buradaki eşdeğer devreyi, yani girişteki bu bölücü oranını bulmamız lazım. Bunlar paralel devreler biliyorsunuz. 3.39'da 3.9. Bunun eşdeğer devresi 3.5 kilo ohm çıkıyormuş.
+
+263
+01:06:58,627 --> 01:07:10,027
+Buradaki, hani şu, şuradaki gerilimi bulacağım vakit aslında ben 3.9'un üzerindeki gerilimi bulmam lazım. 22 çarpı 3.9 bölü.
+
+264
+01:07:10,447 --> 01:07:26,887
+Bunun eşlener kısmı, ikisini toplama. O da ne yapıyor? 2 volt. Yani şurası benim için 2 voltluk bir gelimi gösteriyor. Çünkü burası 39K bası 3.9K. Hani 10 katı daha fazla olması lazım.
+
+265
+01:07:28,947 --> 01:07:43,947
+Buraya 1K ise buraya 10K düşecek. O yüzden 2K'ya 20K toplamda 22V'u eşitlik sağlıyor. 2V düşecek. Bu 2V bizim için IB akımını aslında...
+
+266
+01:07:45,396 --> 01:08:04,176
+Şuradan demin hani IB'yi çizerken yazdığımız 22-07 denklemindeki kısmın aslında bizim transistördeki IB akımını oluşturan voltajı bu 2 volt. Burası IB akımını oluşturacak. Yani şu 22'nin etkisi olan 2 volt üzerinden ben denklemleri yazacağım şimdi.
+
+267
+01:08:04,176 --> 01:08:10,996
+2 volt-07, tabii burada bir tane de gerilimi var.
+
+268
+01:08:13,492 --> 01:08:38,852
+Emiter gerilimi. Ve'yi de çıkarttığımda, şuradaki direnç yaptığımda, I, B'yi bulacağım. Yani burada ETH 2 volt eksi 0,7. Yani şuraya da yazabiliriz. 2 volt eksi 0,7. Neye eşit olacak? Şuradaki I, B çarpı, yani şu 1,5. Değil mi?
+
+269
+01:08:39,475 --> 01:08:59,915
+1.5 kilo ohm çarpı IE artı IB. IB'nin tabii ki de şeyle çarpımı olacak bir dakika. RTH ile çarpımı olacak. Evet. Yani şuradaki eş değer devrenin etkisi bu IB'yi oluşturduğu için RTH ile de çarpacağız bunu.
+
+270
+01:09:01,203 --> 01:09:26,984
+Şimdi burada IE'nin yine aynı durumu var. Beta artı bir aslında benim IB şeklinde yazabiliyorum. Bunu yaptığımızda ne geliyormuş? 6.05 mikroampere yine çok düşük bir değer geldi. Beta IB ile çarptığımda 0.85 mili amper bizim IC akımımız. BC ve kolektör emitter arasında hesaplamak için de yani şurasını.
+
+271
+01:09:27,359 --> 01:09:42,680
+Hesaplamak için de. 22 eksi Ic çarpı 10k eksi Ic çarpı 1.5k yaptığımızda burayı bulmuş olacağız. O da ne geliyor? 12.22 volt gelmiş.
+
+272
+01:09:46,292 --> 01:10:12,932
+Bu soruda var mı bir problem arkadaşlar? Tekrar diyorum, 22 volt bizim etkilemiyor. Bizi etkileyen 2 voltluk. O yüzden 2 volt eksi şeklinde yazmamız lazım. Ayrıca akımın buradan IB dediğimiz yapı burası değil. IB dediğimiz bu iki eş değer devreden gelen akım. Onu da RTH'ına alarak aslında çarpıyoruz.
+
+273
+01:10:15,956 --> 01:10:16,956
+Tamamen herhalde.
+
+274
+01:10:21,363 --> 01:10:28,123
+Başka bir soru var arkadaşlar. Ne demiş? DC Level of IAB demişiz. BC.
+
+275
+01:10:29,779 --> 01:10:55,719
+Aynı şeyleri soruyoruz aslında. Burada fark şu. Burada gördüğümüz gibi iki tane direnç ard arda kullanılmış. Ama şöyle bir durum var. Şimdi DC seviyesi sorulduğu için ve biz kondansörleri devrede hatırlarsanız DC seviyesinde kısa devre ediyordu. Yani burası aslında bizim için anlamsız. Yani açık devre ediyoruz. Yani buraları kullanmıyoruz.
+
+276
+01:10:56,372 --> 01:11:17,572
+Değil mi? DC seviyesi olduğu için. IB'yi soruyor. 18-07 IB burada birikinecek. Bir de burası beta IB ile çarpacağımız denklem yazacağız. Yani aynı şeyi yazıyoruz gene. Vcc-VB beta IB yani şuradaki IB çarpı şu ikisi.
+
+277
+01:11:18,963 --> 01:11:39,543
+RB demişiz. RB o ikisini gösteriyor. 91 artı 110. Yani şuraya RB dediğimiz kısım şurası. Ve öteki tarafta da beta çarpı RC artı RE. Yani şu ikisini. Ha tabii tabii burada bir farklılık da şu. Şimdi buradan gelecek olan akımı bir yazıyoruz ya şöyle.
+
+278
+01:11:45,652 --> 01:11:57,652
+Buradaki direnç, Ic, kolektör direncine etkiliyordu sadece. Burada ama hem kolektörü etkileyecek, Ic'yi hem de Ib akımını etkileyecek.
+
+279
+01:11:57,652 --> 01:12:11,271
+Şimdi bu durumda bu denklemi yazarsak, 18-0.7 eşit olacak, Ib çarpı 110 artı 91 ne yapıyor? 201 mi yapıyor? 201.
+
+280
+01:12:12,180 --> 01:12:36,239
+Diyelim 201 kilo 10 artı bir de buradaki durum var. Buna da direkt ben hani şey IE yazayım ilk etapta. IE çarpı 510 10. Buna K yazalım. 510 10. Bu IE'yi de zaten beta artı bir IEB olarak yorumluyorduk. Bu şekilde denklemi çözdüğümüzde IEB'yi çıkartabiliyoruz.
+
+281
+01:12:41,908 --> 01:13:00,408
+Şeyi yazdık mı? Bir dakika. Bak o kısmı yine yazmamışız. Pardon. Şuradaki 33, hani şu RB ile çarptığımız kısımda buraya tabii ki de şeyi de yazmamız lazım. Bir tane daha IB çarpı 3.3 kloom yazacağız. Yani şuradaki akım.
+
+282
+01:13:00,819 --> 01:13:09,680
+Şu hatlarıyla yazılacak. Aşağı doğru yazarken de E çarpı 510 değil, 510 artı 3.3K yazmamız lazım.
+
+283
+01:13:11,359 --> 01:13:21,260
+Yani bunun, şuradaki direncin hem bu ikisi, sadece şurayı yazdıysak mesela, tamamen temizden yazalım bir daha.
+
+284
+01:13:24,724 --> 01:13:28,123
+Temizden yazalım, daha net olur. Bir kere yazacağız zaten.
+
+285
+01:13:29,779 --> 01:13:55,039
+Çarpı 91 artı, k'larını da yazalım çünkü bazıs k'siz, 110k. Bu şuradaki akımdan gelen ıb'yi gösteriyor. Artı, bir de bu yukarıdan gelecek bir yapı vardı. O da 3 nokta, tabii beta parametresiyle çarpıyorum, ıb bağımlılığında yazmak için. 75 çarpı 3.3k artı 510.
+
+286
+01:13:55,667 --> 01:14:14,087
+Niye eşit olacak? 18-0.7. Aslında bunu yazıyoruz. Çünkü buradaki şu ikisinin toplamı beta artı bir parametresindeki betayla bağıntılı IB yazabiliyoruz.
+
+287
+01:14:17,492 --> 01:14:41,311
+Bunlar ne gelmiş? 35.5 mikroampere gelmiş. Beta IB'de çarptığımızda IC'yi bulduk. VC'yi mi sormuş? Bir de VC. Şuradaki gelimi sormuş. Buradaki gelimi de VCC-IC çarpı RC. Yani şuradaki IC'yi bulduktan sonra çıkartırsak şuradan, şuradaki gelimi buluyoruz. O da 9.22 voltmuş.
+
+288
+01:14:46,323 --> 01:15:04,603
+Başka bir tane daha ortak RC direnci var bunda da. 20 volt eksi 0,7 bölü, RB dediğim şu 680 beta RC. Yani buradaki beta RC'deki betayı zaten biliyoruz. Neden beta kullandığımız. Çünkü bu aslında IC çarpı RC.
+
+289
+01:15:05,152 --> 01:15:26,612
+Ama Ic'ye biz Ie'ye yakındır diye düşünüyoruz. Yani neredeyse alfa parametresi verilmediği için buradan yürümemiz lazım. Alfa verilmiş olsa direkt alfa diyebiliriz buraya. Alfa çarpı R'ye. Yakınsa burada Ie'ye eşit. Ie'nin değeri de zaten beta Iw demek olduğundan.
+
+290
+01:15:26,996 --> 01:15:50,676
+Burada IB çarpı beta RC şeklinde bunun üzerine düşen gerilimi bulabiliyoruz. Sonra IB çarpı RB'de buradaki gerilimi yazdık. Buradan IB'yi çektiğimizde 15.50 mikroamper olmuşuz. Beta IB'yi de çarptığımızda 186 mil amper. VCE.
+
+291
+01:15:51,104 --> 01:16:10,104
+Kollektör-Emitter arası. Şuradaki 20'den bunun üzerine düşen gerilimi çıkarttığımızda 11.26 volt. Bunu bulduk. VB'yi sormuş. Buranın gerilimi zaten şuradaki gerilimle eşit. 0.7. Kollektörü burayı sormuş. Burası da...
+
+292
+01:16:10,260 --> 01:16:20,159
+Zaten hesaplamıştık yukarıda. CE ile aynı çünkü burada herhangi bir şey yok. Bir direnç veya gerilim düşümü olmadığı için direkt buna eşit olacak.
+
+293
+01:16:21,460 --> 01:16:29,900
+Emiterin gerilimi sıfır zaten. BC arası da BI'yi zaten buymuştuk. 07-11.26'dan 10.56.
+
+294
+01:16:29,900 --> 01:16:33,960
+BZ emiter arasındaki farkı gösterelim.
+
+295
+01:16:40,404 --> 01:16:41,644
+Soru var mı arkadaşlar?
+
+296
+01:16:45,555 --> 01:16:57,055
+Bu da benzeri mi, aynısı mı? Bunda tersten bir soru var. Diyor ki, IC akımım 2 mA. Yani şuradan 2 mA bir akım geliyor.
+
+297
+01:16:58,395 --> 01:17:09,515
+Kollektör-Emitter arası, yani şurası 10 volt, R1 ve RC dirençleri nasıl olmalı? Aslında tersten bir soru çözümü.
+
+298
+01:17:10,068 --> 01:17:35,068
+Bunu şöyle yapabiliriz. VE'yi, mesela emitter şurası, şurası 2 mA ise yakınlaşık olarak burayı da 2 mA alabiliriz. Çok ufak bir base akımı olduğu için. Bunun üzerine düşen gerilim 2.4 volt. 2.4 voltluk gerilim aslında VE ile topladığımda burayı verecek. Ama buradaki hani şu...
+
+299
+01:17:35,155 --> 01:17:42,895
+Ayrık sağlıktan sonraki kısmı verecek. Orası da 2.4 artı 0.7 3.1 volt var.
+
+300
+01:17:42,895 --> 01:17:54,296
+Yani bez gelimi 3.1. Peki soru burada şu. 18 çarpı 18 çarpı 10 üzeri 3 bölü.
+
+301
+01:17:54,899 --> 01:18:10,399
+18 çarpı 10 üzeri 3 artı R1 eşittir. 3.1 vermesi lazım. Değil mi? Yani gerilim bölücü olarak. Bunu hesapladığımızda R1 buradan ne geliyormuş? 86.52 kilo on geliyormuş.
+
+302
+01:18:14,868 --> 01:18:27,948
+Sonra RC, yani bunu da bulacağız. Bunu bulmak için de aslında şurası 10 voltlu bu VB. Burası 2.4. Aslında şuraya birikeni biliyoruz. 12.4.
+
+303
+01:18:30,547 --> 01:18:46,688
+18-12.4 bölü RC 2 mili amperi vermesi lazım. Veya tam tersi 18-12.4 bölü 2 mili amperi RC'yi vermesi lazım. O da 2.8 mili olma bir direnç olması gerektiğini söylüyor.
+
+304
+01:18:49,087 --> 01:18:50,967
+Var mı arkadaşlar sorumuz?
+
+305
+01:18:54,068 --> 01:18:55,228
+Yok herhalde.
+
+306
+01:18:57,939 --> 01:19:14,099
+Arkadaşlar, OPAM işlemedik değil mi? Yok, işlemedik OPAM. O yüzden bu soruya gerek yok. Arkadaşlar, sorular bu kadar. Şu parallel Clipper'larla alakalı sunumu açacağım eğer soru yoksa.
+
+307
+01:19:19,155 --> 01:19:19,876
+Yok herhalde.
+
+308
+01:20:17,876 --> 01:20:30,115
+Evet, Clipper demiştin herhalde. Dur bakayım. Evet. Şu örnek için konuşalım. Normalde bir sinüs dalgası var. Artı ve eksinin geldi.
+
+309
+01:20:30,612 --> 01:20:51,431
+Şimdi bu sinüs dalgasında artı sekansda bir diyotun aktif olması, ekside de öteki diyotun aktif olması söz konusu ama burada bir sıkıntı daha var. Yani bizim ölçüyemiz, çıkışımız V0 ve bu diyot tam iletimde olduğunda çıkıştan ölçtüğümüz değer aslında benim bu diyotun üzerindeki gerilim değil.
+
+310
+01:20:51,988 --> 01:21:12,888
+Şöyle ideal ol, yani buradaki hani vesil üstü mesaj olduğu belirtilmediği için tam iletimde sıfır ölçüyorum esasında. Yani ben şunu koymuyorum mesela. Burada bir biyasa olmadığını düşünelim. Bu diyor tam iletimde olduğunda ben V0, sıfırı okumam lazım. Değil mi?
+
+311
+01:21:14,323 --> 01:21:35,943
+Diyotun tam bir bias olduğunda, diyot tam iletime geçeceği zaman, geçtiğinde aslında ben V0'ı V1 derecesinde ölçerim. Çünkü burası artık kısa devre ve ölçtüğüm değer, yani şöyle düşünün, bir gerilim kaynağının iki bacağına prop dokunmuşum. O değeri ölçmem lazım. Çünkü aslında buna paralel bir ölçü artır.
+
+312
+01:21:39,380 --> 01:22:06,680
+Peki bu diyot ne zaman tam iletime geçer? O soru işareti. Çünkü artı sekansla geldiğinde bu direk iletime geçmez. Ters bir polarizasyon var. Ve bu direk iletime geçmediği için diyotun üzerinde bir gerilim birikecek. Ne zaman? Ta ki, ve ben o biriken gerilimi okuyacağım, ta ki bu diyot tam iletime geçtiği noktada ki o nokta V'nin V1'den büyük olduğu herhangi bir dilim.
+
+313
+01:22:07,764 --> 01:22:32,264
+O noktada artık bu diyor tam iletime geçecek ve ben sadece V1'i okuyacağım çıkışta. Bu pozitif saygı. Negatif geldiğinde zaten bu iletimde değil. Yani bunu okumuyorum. Burası kesimde. Kesimde olduğundan bunun da bir etkisi yok. Bunu da okumuyorum. Çünkü burada bu probun bir ucu kopuk bir değerde.
+
+314
+01:22:33,395 --> 01:22:50,475
+Ötekine bakalım. E-negative cycle'da yani bu iletime geçecek. Ama şimdi kesimde olduğu sürece bunun değerini okumayacağım. Kesimde olduğu sürece diyotun üzerindeki biriken gerilimi okuyabilirim. Potansiyel farkım çünkü benim diyotun üzerindeki potansiyel farkım.
+
+315
+01:22:59,539 --> 01:23:08,140
+Artık bu iletime geçecek ve iletime geçtiğinden ben çıkışta V0'da V2'yi normal bir gerilim kaynağı ölçüyormuşum gibi ölçeceğim.
+
+316
+01:23:11,796 --> 01:23:14,636
+Bu muydu acaba sorduğunuz şey? Paralel dediniz.
+
+317
+01:23:15,416 --> 01:23:23,716
+Paralel dediklerim bunlardı. Bu kısmı da anladım. Sadece hocam paralel ile serinin farkı o zaman V0'ı nereden ölçtüğümüz mü oluyor?
+
+318
+01:23:25,256 --> 01:23:31,655
+Çünkü serideyken R'nin üstünden, direncin üstünden ölçüyoruz. Ve şekil olarak da çok benziyorlar.
+
+319
+01:23:32,212 --> 01:23:42,912
+Yani hani o ikisinin yerleri değişirse, özellikle şimdi burada devreler tam değil ya, o şey kısımları var ya, hani boş bırakılmış gibi sadece V, İ, V, Sıfır yazıyor.
+
+320
+01:23:43,292 --> 01:23:46,512
+O biraz karıştırdı benim bu ikisi arasındaki farkı.
+
+321
+01:23:47,952 --> 01:23:49,771
+Şimdi bu paralel kırpıcı.
+
+322
+01:23:50,292 --> 01:24:05,952
+Bir de bunun seri kırpıcısı var. Seri kırpıcısında ölçeceğimiz şey tam tersi. Yani daha doğrusu dışarıda ölçtüğümüz değer diyot iletimdeyken direncin üzerinde olanı ölçeriz. Ama paralel diyotu paralel alırsanız diyot iletimdeyken bir şey ölçemem.
+
+323
+01:24:06,868 --> 01:24:30,708
+Çünkü diyotun üzerinde 07 silisyon yazılmıyorsa, idealse diyotun üzerinde herhangi bir gerilim birikmeyecek. Yani R yerine diyot koyduğumuzu düşünelim. Diyot iletimine geçtiğinde bir şey okuyamadığım senaryo oluştururum. Ama seri kırpıcılarda, yani direncin paralel olduğu kırpıcılarda diyotun iletimde olduğu değerleri okuyabilirim. Çünkü diyot iletimde olmazsa burada bir gerilim oluşmaz.
+
+324
+01:24:33,760 --> 01:24:48,279
+Hiçbir şey vermediğim senaryoda bu diyot zaten kesimde. Bir gelin vermeye başladığımda, yani pozitif saykılda, ben bu pozitif saykılda herhangi bir şey okuyamam. Çünkü bu diyot kesimde.
+
+325
+01:24:49,043 --> 01:25:09,264
+Ben bunu bununla fitliyorum esasında. Eksi artı, eksi artı. arda arda bağlanmış, pil gibi düşünün. Fitliyorum, fitliyorum, daha fazla geliyorum veriyorum ama neticede anotuna, yani katotuna artı geliyor. Öyle olunca kesimde olduğunda hiçbir şey okuyamıyorum. Ne zaman ki ben burasını eksi vereceğim, bu iletime geçecek.
+
+326
+01:25:09,684 --> 01:25:21,664
+Ama öyle bir eksi vereceğim ki buradaki eksi artı olduğunda zıt bağlanmış. Şuradaki değerin bunu geçmesi lazım. Bunu geçtiği vakit, bu artık ortadan gitti, bu kısa devre oldu.
+
+327
+01:25:24,979 --> 01:25:41,939
+Eksisi katotuna geldiği için artık bu iletime geçecek ve işte uç nokta, tepe noktasında, çünkü şu kısım şu kısmı kastediyor. Oradakisi seviyeye geçtikten sonra şu kısmı artık gözlemleyebileceğim. Çünkü iletime geçti.
+
+328
+01:25:42,292 --> 01:25:55,232
+Clipper'larda seri bağlantı diyotları, gerilim kaynağına seri bir diyot bağlandıysa, bunun için iletime geçtiği noktada direncin üzerindeki gerilimi ölçtüğümüz için o zaman çıkışa yansır.
+
+329
+01:25:55,891 --> 01:26:20,192
+Paralel, yani diyorum bunu ezberlemeyin ama beni illa böyle bazı şey, kuralları söylememe neden oluyorsunuz ama bunlar aslında kural olarak ezberlemeyin. Bunun mentalitesini yorumlayın. Yani ben ne zaman bu V0'ı ölçerim? Bu diyot kesimdeyken ölçerim. Çünkü bu diyot kesimdeyken içerisinde aslında maksimum bir direnç var demek. Aslında yine direncin üzerindeki gerilimi ölçüyorum. Öyle düşün.
+
+330
+01:26:22,515 --> 01:26:24,296
+Tamam hocam. Teşekkürler.
+
+331
+01:26:24,676 --> 01:26:46,195
+Tamam. Tekrar ediyorum. Clipper, Clamper. Eğer ki pratiğiniz olmazsa simülasyonda o öde boşuna verilmiyor arkadaşlar. Yani ya bu böyleyken şöyleymiş, şu böyleyken böyleymiş. Çok iş yapmıyor. Mesela ben buraya tam tersine bir tane daha bağlarım. Yani eksi yukarıda artı aşağıda olur. O zaman ne olacak?
+
+332
+01:26:46,676 --> 01:26:55,176
+Yani gibi. Bu bulta çok fazla varyasyon üretilebilir. Mentalitesini oturtmanız lazım. Biz buraya ne kadar örnek de çözsek.
+
+333
+01:26:55,572 --> 01:27:23,391
+Siz buna uğraşmadıktan sonra bazı şeyler ezber gelecek. Bunların uygulanması lazım. Ödevin tarihi zaten geçti zannedersem. Daha henüz kontrol edemedim ama nihayetinde ödevi yapmamış olanların bile ödevi yapan arkadaşlarından simülasyonu en azından tasarlayanlardan alsınlar. Evde deneme yanılma, kağıt kalemle değerleri değiştirerek ilk başta kendileri çizsin. Sonra arayüze versin uygulamaya.
+
+334
+01:27:23,572 --> 01:27:29,291
+Bakalım elde ettikleri, çıktıkları birbirinde tutuyor mu? Bunları denemeniz lazım.
+
+335
+01:27:31,831 --> 01:27:34,351
+Tamam arkadaşlar, sorumuz var mı?
+
+336
+01:27:37,112 --> 01:27:43,192
+Biz duyurduk herhalde ama birinci vize haftasında vize yapmıyoruz. İkinci vize haftasında yapıyoruz.
+
+337
+01:27:44,152 --> 01:27:47,291
+Birinci vize haftasında arkadaşlar, şimdi o da...
+
+338
+01:27:48,051 --> 01:28:10,151
+Nasıl olacak onu bir konuşacağız [öğrenci]'a ama çünkü online olacak sınavlar biliyorsunuz birinci vize haftası için. Birinci vize haftamız normalde bizim labları muaf olanlar veya işte lab notunu beğenmeyenler ama laba da gelemeyenler veya proje yapmak istemeyenlerin girdiği bir sınavdı.
+
+339
+01:28:12,243 --> 01:28:31,063
+Şimdi onu bir konuşmamız lazım. O da yüz yüze değil. Online diye karar çıktı. Onu nasıl yaparız online? Onu bir konuşacağız ama normalde herkesin sorumlu olduğu. Yani ders ilk defa adamların gireceği vize, herkesin girmesini beklediğimiz vize bizim ikinci vize haftası oluyor. 12. hafta olması lazım veya 11. hafta.
+
+340
+01:28:34,228 --> 01:28:39,387
+Test ama katiyen soracağımızı düşünmüyorum. Yani her şekilde klasik olur.
+
+341
+01:28:44,307 --> 01:28:49,948
+Tamam arkadaşlar, sorumuz var mı? Yoksa dersi bitirebiliriz, yeterlidir bu haftalık.
+
+342
+01:28:50,448 --> 01:28:51,988
+Hocam, ben bir soru sorabilirim.
+
+343
+01:28:52,188 --> 01:28:52,608
+Evet.
+
+344
+01:28:52,608 --> 01:29:01,568
+Bu yukarıdaki en baştaki paralel clipper ile aldığımız sonucun aynısını seri bağlı clipper ile de almak istiyoruz diyelim.
+
+345
+01:29:02,007 --> 01:29:03,507
+Evet, mesela almışız.
+
+346
+01:29:04,268 --> 01:29:12,307
+Aslında şema olarak çizeceğimiz devre, aynı devre sadece ölçüm uçlarımızı değiştiriyoruz değil mi? Birini de direnç üzerinden ölçüyoruz.
+
+347
+01:29:12,307 --> 01:29:34,028
+Birinde diyot üzerinden. Evet. Şematik olarak bir şey değiştirmiyoruz yani. Şemadan kalsın devre şeması mı? Evet, devre şeması. Değişiyor işte diyot buraya parallele geliyor. Diyot seriye geliyor. Direnç parallele geliyor. Diyot birinde parallele oluyor. Birinde direnç seri oluyor.
+
+348
+01:29:38,815 --> 01:29:46,176
+Yani ölçtüğüm yeri direkt R'nin üstüne taşısam otomatikman aynı sonucu elde etmiş olmuyor mu?
+
+349
+01:29:47,216 --> 01:29:53,655
+Olursun. Eğer devre böylesi olursun ama devrenin bu sağ tarafında başka bir şeyler varsa olmazsın.
+
+350
+01:29:54,136 --> 01:29:55,096
+Anladım hocam.
+
+351
+01:29:55,176 --> 01:30:00,000
+Mesela buraya ben bir direnç daha koydum. Sen buraya bağladın. Burada başka bir şeyler...
+
+352
+01:30:00,000 --> 01:30:09,539
+O zaman diyotun üzerindekini ölçmediğin için ona göre farklı çıkar. Ama normalde paralel creeper'larda diyotun üzeri ölçülür.
+
+353
+01:30:11,859 --> 01:30:13,039
+Peki hocam, teşekkür ederim.
+
+354
+01:30:13,039 --> 01:30:23,220
+O yüzden ismi zaten paralel. Yani diyotun üzerinde paralel gerilim kaynağını ölçüyorsun. Seride de diyotun seri bir ölçü ayetiyle ölçüyorsun.
+
+355
+01:30:25,332 --> 01:30:43,412
+Tamam mı? Yani amaç eğer bu şekli nasıl elde edersek, onunla tabii Envai tasarım olabilir. Yani sen BIAS koyarsın yine bu şekli elde edersin. Öyle bir BIAS ayarlaması yaparsın ki bu şekli yine getirirsin, girişli mesele arttırırsın.
+
+356
+01:30:43,412 --> 01:30:50,072
+Yani bu analiz oluyor biraz, şey sentez oluyor. Devre sentezi yapılabilir.
+
+357
+01:30:51,283 --> 01:31:03,283
+Şimdi girdi, çıktı veriliyor. Sizden devre tasarımı mı isteniyor? Öyleyse istediğiniz gibi yapabilirsiniz eğer bu çıktıyi elde edebiliyorsanız. Ama işte dikkat etmek lazım. Tamam mı?
+
+358
+01:31:04,643 --> 01:31:06,003
+Tamamdır hocam. Teşekkürler.
+
+359
+01:31:08,783 --> 01:31:12,323
+İkinci arasını alan ne olur belli değil. Soru gelmiş herhalde.
+
+360
+01:31:14,868 --> 01:31:29,648
+Evet arkadaşlar, o zaman bu haftalık bu kadar yeter diyelim. Hepinize iyi günler, iyi bayramlar. Sağlıklı, sağlıklı bir bayram geçirmeniz dileğine. Bayramdan sonra vizeler olacak.
+
+361
+01:31:29,868 --> 01:31:35,648
+Dediğim gibi şu an hani biz ikinci vize haftasını yapacağız diye karar verdik ama ola ki...
+
+362
+01:31:36,340 --> 01:32:02,899
+Bu vize haftasını alalım, ikinci vize de yapmayalım. Onun duyurusunu zaten geçeceğiz ama büyük ihtimalle öyle bir duyuru yapmayız. Ta ki yönetim şey yapmazsa, çünkü belki bazen birinci vize haftasında yapın diye de diyebilirler. Öyle bir durum oluşmazsa ikinci vize haftası diye biz konuşmuştuk. Ama oluşursa yani onun Klasun'dan duyururuz. Zaten as soon as possible bunu duyurmak lazım. Ve size bildiririz.
+
+363
+01:32:04,340 --> 01:32:17,519
+Bayramdan sonraki haftada herkesin sorumlu olacağı veya ama kesin herkesin sorumlu olmayacağı ve öteki labının beğenmeyen, notunu beğenmeyenlerin girebileceği sınavı ile alakalı da bir duyuru paylaşacağız zaten.
+
+364
+01:32:17,519 --> 01:32:31,840
+Ne derece, nasıl yapılacağına dair. Tamam. Hepinize iyi günler arkadaşlar. Şimdiden iyi bayramlar. Umarım güzel bir sınav haftası geçirirsiniz. İyi çalışmalar.
