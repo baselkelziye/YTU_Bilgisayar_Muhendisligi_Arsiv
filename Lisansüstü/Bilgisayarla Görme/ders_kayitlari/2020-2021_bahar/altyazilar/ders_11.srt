@@ -1,0 +1,1527 @@
+1
+00:12:11,379 --> 00:12:12,399
+Merhaba arkadaşlar.
+
+2
+00:12:14,120 --> 00:12:14,919
+Merhaba [öğrenci].
+
+3
+00:12:15,960 --> 00:12:16,779
+Merhaba hocam.
+
+4
+00:12:17,580 --> 00:12:18,100
+Merhaba.
+
+5
+00:12:18,919 --> 00:12:19,860
+Merhaba hocam.
+
+6
+00:12:20,679 --> 00:12:22,939
+Evet, sesinizi duyayım şöyle ya.
+
+7
+00:12:24,679 --> 00:12:25,820
+Merhaba hocam.
+
+8
+00:12:26,639 --> 00:12:27,700
+Merhaba [öğrenci].
+
+9
+00:12:27,860 --> 00:12:28,639
+Merhaba hocam.
+
+10
+00:12:29,860 --> 00:12:30,779
+Merhaba [öğrenci].
+
+11
+00:12:32,115 --> 00:12:57,495
+Evet, 17 kişiyiz şu anda. Biraz bekledim, toplanalım diye. Bu hafta biliyorsunuz proje sunumlarının ilk haftası. Ders alan öğrenci sayısına göre bu hafta en az 8 öğrenci sunum yapmak durumunda. O yüzden önce size gönüllü olarak sunum yapmak isteyen var mı diye soracağım.
+
+12
+00:13:00,148 --> 00:13:06,087
+Computer Vision ilk hafta sunumunu yapmak isteyen kim var acaba?
+
+13
+00:13:13,139 --> 00:13:17,519
+[öğrenci] iki defa mı bağlandın? [öğrenci] kale iki kez bağlı görünüyor.
+
+14
+00:13:32,692 --> 00:13:36,172
+Peki, şimdi hiç gönüllü yok gördüğüm kadarıyla.
+
+15
+00:13:39,451 --> 00:13:41,091
+Ben sunabilir miyim?
+
+16
+00:13:41,991 --> 00:13:56,432
+Evet, [öğrenci] birinci sırada. Peki, [öğrenci] teşekkür ederim. Peki, başka sunum yapmak isteyen? Bu hafta sunum yapmak isteyen kimse var mı?
+
+17
+00:14:14,964 --> 00:14:26,064
+Peki, o zaman ben seçmek durumundayım. Derse katılan, katılmayan, bütün grup içerisinden listeden seçim yapacağım.
+
+18
+00:15:10,740 --> 00:15:11,940
+[öğrenci]
+
+19
+00:15:16,500 --> 00:15:24,899
+Listeden 3 numaralı öğrenciyi seçmiştim. 7. sırada [öğrenci].
+
+20
+00:15:30,740 --> 00:15:33,820
+[öğrenci]
+
+21
+00:15:43,251 --> 00:15:56,111
+Öncü sırada [öğrenci]. [öğrenci] bana dün akşam mail attı derse, yani bunu projeyi tamamlayamadığını bildirdi. O yüzden onu sileceğim herhalde.
+
+22
+00:16:00,820 --> 00:16:11,640
+[öğrenci], seni seçmişim. Bak, [öğrenci] güzel. 16. sırada listede. 21. sırada [öğrenci], [öğrenci].
+
+23
+00:16:18,611 --> 00:16:22,531
+21 sonra 27
+
+24
+00:16:29,587 --> 00:16:30,587
+28
+
+25
+00:16:35,220 --> 00:16:36,799
+[öğrenci].
+
+26
+00:16:46,292 --> 00:16:51,512
+[öğrenci]
+
+27
+00:17:04,660 --> 00:17:16,259
+32, 37, 35 var bir de. [öğrenci] ikisi de yok. Islahan pamuk.
+
+28
+00:17:23,667 --> 00:17:40,587
+Evet, seçim tamam. Ben rastgele sıra numaraları yazdım. Birden 37'ye kadar. Sonra bunların kimlerin isimleriyle eşleştiğine baktım.
+
+29
+00:17:43,087 --> 00:17:50,007
+[öğrenci] burada mı acaba? Yok. [öğrenci] sunumdan puan alamadı.
+
+30
+00:17:52,276 --> 00:18:03,436
+Sadece rapordan puan alacak. [öğrenci], [öğrenci]. O da yok. [öğrenci], [öğrenci] burada.
+
+31
+00:18:03,996 --> 00:18:06,615
+Hocam hazır bir sunum yok. Benim de sunmam mümkün değil şu anda.
+
+32
+00:18:07,615 --> 00:18:13,936
+Tamam, o zaman sunumdan puan alamıyorsunuz. [öğrenci] buradasın, hazırsın.
+
+33
+00:18:16,531 --> 00:18:20,391
+Evet hocam, tam hazır olamasam da olduğu kadar.
+
+34
+00:18:20,831 --> 00:18:27,192
+Tamam, peki. Birinci sırada seni dinleyeceğiz. [öğrenci] burada mı? Yok.
+
+35
+00:18:28,771 --> 00:18:33,991
+Ondan da sunumdan puan alamayacak. [öğrenci] burada değil herhalde, o da yok.
+
+36
+00:18:33,991 --> 00:18:37,932
+Yok. [öğrenci]?
+
+37
+00:18:38,963 --> 00:18:59,223
+Buradayım hocam. Hazır mısın? Sadece hocam sunumlar ayrı ayrı konuların, farklı konuların birleşimi olduğu için böyle reinforcement bir yerde, gun bir yerde, onların ikisinin birleşimiydi aslında proje. Ben de bunları ayrı ayrı açıklamak istedim. En sonunda da sunumda göstereceğim.
+
+38
+00:18:59,223 --> 00:19:05,483
+Tamam, peki. Bir de [öğrenci] vardı.
+
+39
+00:19:06,099 --> 00:19:23,219
+O da şu an derste yok anladığım kadarıyla. Peki, o zaman bugün için sekiz kişiyi seçtim. Sekiz kişiden iki kişi burada. O iki arkadaşımız sunum yapacak. İsimlerini okuduğum arkadaşlara tekrar sunum hakkı vermeyeceğim.
+
+40
+00:19:27,000 --> 00:19:31,319
+Önümüzdeki hafta bir sekiz daha sunum için seçilecek rastgele.
+
+41
+00:19:33,332 --> 00:19:37,032
+Peki, o zaman [öğrenci] seninle başlayabiliriz.
+
+42
+00:19:39,412 --> 00:19:42,352
+Hocam, ekran paylaşabiliyor muyum şu an, yetkim var mı?
+
+43
+00:19:42,512 --> 00:19:44,752
+Tabii, vereceğim şimdi, yetki vereceğim size.
+
+44
+00:19:49,299 --> 00:19:57,240
+Hocam, yetki olmadan da paylaşabilmemiz lazım ama bir denesin isterseniz. Direkt share screen dediğimiz zaman oluyordu çünkü.
+
+45
+00:19:58,200 --> 00:20:00,460
+Aktif mi şu an sizde? Bir dene bakayım.
+
+46
+00:20:01,279 --> 00:20:01,659
+Yapayım.
+
+47
+00:20:03,519 --> 00:20:05,839
+Evet, şu an görünüyor mu hocam?
+
+48
+00:20:07,380 --> 00:20:19,460
+Evet, görülüyor. Vay, evet, oluyormuş. O zaman bunu boşa koymuşlar buraya bu yetki verme işini. Peki [öğrenci], seni dinliyoruz.
+
+49
+00:20:25,011 --> 00:20:26,591
+Şu an görünüyor mu ekranın?
+
+50
+00:20:27,011 --> 00:20:28,471
+Evet, görünüyor.
+
+51
+00:20:35,731 --> 00:20:52,432
+Merhaba tekrar. Deep Learning konusunu zaten artık hepimiz kısmında olsa biliyoruz. Deep Learning'de kullanılan algoritmaların ve model mimarilerinin öneminin yanında veri sayısının da öneminin.
+
+52
+00:20:53,523 --> 00:21:07,443
+Çok fazla olduğu bir gerçek. Bunun için farklı yöntemler, yani veri sayısını artırmak için farklı yöntemler denenmiş. Data Augmentation altında görülen veri artırma teknikleri.
+
+53
+00:21:07,443 --> 00:21:17,443
+Yani bunlar daha çok basit yollar. Verilerin dönüştürmesi, ışıkla oynanması vs. gibi. Ama bunlar istenilen işlemde...
+
+54
+00:21:18,324 --> 00:21:38,204
+Yapılan işlemde istenilen başarının yakalanması için yeterli teknikler değil, daha gerçekçi resimlerin üretilmesi için düşünmüşler ve Generative Adversarial Networks adlı Türkçemize çekişmeli üretici ağlar diye çevrilmiş böyle bir model geliştirilmiş.
+
+55
+00:21:40,948 --> 00:22:02,888
+Bu, sentetik veri üretimi gerçekleştiriyor ve bu veriler ile veri setleri zenginleştirilerek yapılan işlemde, sınıflandırılmasında ya da daha farklı işlemlerde, bilgisayarlarla görme alanındaki veya robotik gibi alanlardaki işlemlerde daha başarılı sonuçlar elde edilmesi sağlanmış.
+
+56
+00:22:03,167 --> 00:22:10,607
+Şimdi sunacağım bildiride de bu metodun mimarisi üzerine geliştirme yapılmış.
+
+57
+00:22:10,767 --> 00:22:17,867
+A Unite Based Discriminator for Generative Adversarial Networks. Bu CVPR 2020'de yayınlanmış bir bildiri.
+
+58
+00:22:17,867 --> 00:22:19,867
+Bu bildiride...
+
+59
+00:22:20,723 --> 00:22:41,023
+Generative Resourceal Networks, kısaca bundan sonra gen diye kısaltılıyor. Gen diye bahsedeceğim. Genin iki bileşeninden ayırıcı ya da ayırt edici discriminator üzerinde bir geliştirme yapılmış. Segmentasyon alanında daha çok kullanılan unit mimarisi buna uyarlanmış.
+
+60
+00:22:42,036 --> 00:23:00,776
+Sunum içeriği genelde makalede yer aldığı gibi ilerleyecek sunum. Giriş, ilgili çalışmalar, önerilen mimari olan yönetgen modeli, bununla alakalı uygulamalar, yapılan deneyler ve sonuçları daha sonra da varsa sorularınızı cevaplamaya çalışacağım elimden geldiğinde.
+
+61
+00:23:01,203 --> 00:23:11,203
+İlk olarak makalenin girişiyle başlamak istedim. Yani önerilen modelin sonucu bu aslında. Gördüğünüz gibi burada...
+
+62
+00:23:11,412 --> 00:23:21,172
+Üretilen bir sentetik verinin eğitim boyunca ne kadar geliştiğini, ne kadar gerçeğe yakın bir görüntü elde edildiğini görüyoruz.
+
+63
+00:23:21,172 --> 00:23:28,491
+Burada, altta da gördüğümüz gibi alın bölgesinde iyileştirme yapılmış.
+
+64
+00:23:37,728 --> 00:23:43,028
+sahte ya da doğru olmayan kısımlarını gösteriyor.
+
+65
+00:23:43,608 --> 00:23:47,508
+Ve gördüğünüz gibi bunlar piksel bazlı yani lokal olarak bunu yapıyor.
+
+66
+00:23:47,508 --> 00:24:01,908
+Normalde gen modelinde biraz sonra bahsedeceğim gibi global anlamda bir resmin sentetik verinin doğru ya da yanlış olduğu yani sahte ya da gerçek olduğu belirleniyorken
+
+67
+00:24:05,728 --> 00:24:23,867
+Bu şekilde daha iyi sonuçlar elde edilmesi sağlanıyor. Burada siyahlar dediğim gibi sahte, beyazlar ise gerçeğe gösterdiği için zamanla bu şekilde daha gerçekçi bir resim elde ediliyor. Bu bir genel bakıştı.
+
+68
+00:24:31,807 --> 00:24:52,248
+Önce aslında biraz GENDEN bahsetmek istiyorum. Şimdi bu soldaki resimde aslında G ve şu D ENCODER olarak gösterilen, buna D diyelim şimdilik, şu kısım, ilk iki kısım yani şurası. Benim mouse'ımın hareketleri görülüyor mu bilmiyorum ama.
+
+69
+00:24:55,380 --> 00:25:05,820
+Şu kısım, GVD, yani şuraya kadarki kısım, standartgen olarak bahsedebileceğimiz kısım.
+
+70
+00:25:06,127 --> 00:25:27,167
+Standart gen de şöyle bir işlem yapılıyor. Şu iki birleşen generator ve discriminator birbirleriyle yarış halinde iki sinir ağından oluşuyor. Burada yapılan iş şu Z bir gürültü temsil ediyor. Yani bir gulf dağılımı olabilir. Böyle bir gürültüyü temsil ediyor.
+
+71
+00:25:34,127 --> 00:25:39,567
+İnanılacak şekilde gerçekçi görüntüde üretmeye çalışıyor.
+
+72
+00:25:39,647 --> 00:25:54,667
+Tabii bunu nasıl yapacak? Elinde bir eğitici, gözetimci denetimi de yapmadığı için bu işlemi aslında diskriminator giyeyi eğitiyor.
+
+73
+00:25:54,667 --> 00:26:01,507
+Yani şöyle, şu gürültü vektörü generator'an geçerek gerçekçi bir görüntü üretilmeye çalışılıyor.
+
+74
+00:26:02,127 --> 00:26:22,027
+Ve Discriminator'ın gerçek bir veri seti verileri GZ ve X Discriminator'a geliyor. Discriminator da bu üretilen görüntülerin sahte olduğunu, diğerlerinin gerçek olduğunu ayırt etmeye çalışıyor.
+
+75
+00:26:30,127 --> 00:26:42,547
+Generator'ı besliyor. Generator'ın içerisindeki dediğim gibi sinir ağlarından aslında bunlar oluşuyor. İçindeki weightler de bu D'den gelen geri bildirim ile güncelleniyor.
+
+76
+00:26:46,675 --> 00:27:01,016
+Dönüş sayesinde generator da kendini geliştirmiş oluyor. Aslında birbiriyle yarışan diyoruz ama generator'ı discriminator eğitmiş oluyor. Discriminator sayesinde generator daha kaliteli, daha gerçekçi görüntüler üretmiş oluyor.
+
+77
+00:27:14,675 --> 00:27:30,615
+Hem global hem de lokal alanda geliştirilme yapılabilmesi için unit mimarisine dönüştürülüyor burası. Yani the encoder ve the decoder. Yani aslında şurada generator'da yapılan şey de bu decoder'daki gibi bir upsampling.
+
+78
+00:27:42,675 --> 00:27:59,775
+Bu şekilde bir unit mimarisi geliştiriliyor. Bu unit mimarisi sayesinde de hem global hem de lokal alanda değerlendirilme yapılarak daha gerçekçi görüntüler elde edilmiş sağlanıyor. Bu neyi sağlıyor?
+
+79
+00:28:01,779 --> 00:28:16,179
+Lokal alanda yeterince iyi değerlendirme yapılamadığında az önce gördüğünüz gibi asimetrik suratlar, bacaksız mesela köpek resmi gibi şeylerin üretilme olasılığı var. Bunun önüne geçmek için bir yöntem bu önerilen.
+
+80
+00:28:17,523 --> 00:28:37,743
+Sadece de bununla kalınmamış, daha da gerçekçi ya da daha düzgün verilerin üretilmesi için bir de veri artırma tekniklerinden Katmix ile sahte veriler üretilerek diskriminatör bir de bunlarla beslenmiş, bunlarla eğitilmiş.
+
+81
+00:28:37,743 --> 00:28:42,723
+Bunlar da eğitim sırasında çeşitli aralıklarla dahil edilmiş.
+
+82
+00:28:45,523 --> 00:28:52,844
+Gerçek resimler ve sahte resimler belirli oranlarla birbirine karıştırılıyor. Burada gördüğünüz gibi.
+
+83
+00:28:53,304 --> 00:29:00,163
+Ve bir mask ile şurada beyazlar, gerçek, siyahlar ise sahte olduklarını gösteriyor.
+
+84
+00:29:00,304 --> 00:29:06,423
+Piksel bazlı olarak gelişimi sağlanması için bunlar üzerinde de değerlendirme yapılıyor.
+
+85
+00:29:09,907 --> 00:29:29,007
+Pixel tabanlı Encoder global anlamda değerlendirme yaptığı için Encoder'a bunların sahte olduğu, yani kılasının sınıfının bir olduğu, pardon sıfır olduğu belirtiliyor ki, Generator'a geri bildirim yapıldığında bunlar gibi resimler üretmesin.
+
+86
+00:29:30,932 --> 00:29:43,251
+Şimdi ilgili çalışmalara gelecek olursak, dediğim gibi bu generator ve discriminator'dan oluşan gen mimarisinin geliştirilmesiyle alakalı birçok çalışma yapılmış.
+
+87
+00:29:43,711 --> 00:29:51,112
+İlk başlarda daha çok generator üzerinde geliştirme yapılmış. Sonra discriminator, sonra tekrar generator'a dönülmüş.
+
+88
+00:29:51,751 --> 00:29:55,032
+Discriminator'da burada geliştirme yapılmış için onları ben aldım.
+
+89
+00:29:58,932 --> 00:30:00,000
+Farklı çözüm.
+
+90
+00:30:00,000 --> 00:30:10,460
+Özünürlüklerde diskriminator kullanılması, geri bildiriminin uzaysal olarak yapılması, autoencoder mimarisinin buraya eklenmesi,
+
+91
+00:30:10,660 --> 00:30:17,460
+sonra öz denetim mekanizmalarının eklenmesi gibi yaklaşımlar ile diskriminator mimarisi geliştirmeye çalışılmış.
+
+92
+00:30:17,460 --> 00:30:24,539
+Patchgen ve Biggen'de bu çalışmada referans olarak kullanılan iki mimari.
+
+93
+00:30:24,660 --> 00:30:28,000
+Patchgen'de yine lokal generator, lokal...
+
+94
+00:30:28,000 --> 00:30:44,880
+Bu bir alanda da geri bildirimler ile besleniyor. Buradaki çalışmaya benzer şekilde ama tabi birebir değil. Bu üzerinden geliştirme yapılmış. Biggen'de de standart gen olarak bu alınmış. Bunun üzerine öneriler geliştirilmiş.
+
+95
+00:30:45,556 --> 00:30:56,756
+Mix-Cut Teknik ile ilgili çalışmalarda yani bu veri artırma tekniği olarak Mix-Up, Cut-Up ve Cut-Mix gibi aslında teknikler olmasına rağmen burada Cut-Mix seçilmiş.
+
+96
+00:30:56,756 --> 00:31:05,756
+Bunun sebebi, öncelikle Mix-Up dediği şey, input image'lerle bunların etiketleri interpole edilerek geliştirilme yapılmış.
+
+97
+00:31:05,756 --> 00:31:09,556
+Cut-Up'da bir dikdörtgen Mask kullanılmış.
+
+98
+00:31:12,660 --> 00:31:33,320
+Resimde farklı bölgeleri sıfırlıyor. Böyle resimler üretiliyor. Katmix, az önce bahsettiğim gibi gerçek ile sahte veriler orijinal görüntüler bozulmadığından birleştiriliyor. Bu yüzden aslında iki önceki mix saat ve katalatın avantajlı yönlerini birleştiren katmix yöntemiyle veriler üretilmiş.
+
+99
+00:31:33,748 --> 00:31:41,008
+Formülasyonlarına bakacak olursak, az önce bahsettiğim gibi temelde G ve D'den oluşuyor dedik.
+
+100
+00:31:41,008 --> 00:31:51,968
+Şu ilk formülde G ve D dediğimiz, şu enkıtadırın bunu iptal edecek olursak, şu iki tane Lof metodu var.
+
+101
+00:31:52,307 --> 00:31:56,948
+Aslında bunun çalışma prensibi oyun teorisine dayanıyor.
+
+102
+00:31:57,619 --> 00:32:06,579
+Yani hiç kaybedeni olmayan, zero sum game dedikleri bir denge noktasına ulaşılmaya çalışılıyor.
+
+103
+00:32:06,919 --> 00:32:18,979
+Yani generator, discriminator'ı kandıracak kadar iyi görüntüler üretmeye, discriminator da sahte ile gerçeği ayıracak kadar iyi çalışmaya gayet ediyor.
+
+104
+00:32:18,979 --> 00:32:25,619
+Bu durumda iki tane loss olmuş oluyor. Bu loss fonksiyonlarından generator'ın yani aslında...
+
+105
+00:32:25,619 --> 00:32:37,539
+Objektif metodu artırmaya, diğerincisi ise azaltılmaya çalışılacak şekilde bir çekişmeli üretici ağzı denilmesinin sebebi bu. Yarış halinde bir çalışma var.
+
+106
+00:32:37,539 --> 00:32:46,599
+Şimdi bu yeni bileşenin eklenmesiyle discriminatory loss'u şuna dönüşüyor. Yani encoder ve decoder'ın loss'larının toplamına dönüşüyor.
+
+107
+00:32:46,976 --> 00:32:53,776
+Formülasyonları üsttekinin uyarlanması. Şu Encoder'ın eklenmiş.
+
+108
+00:32:53,776 --> 00:33:03,616
+Altta ise Asile Decoder'ın şu ij'ler pikselleri gösteriyor. Piksel tabanlı olduğunu, bütün piksel üzerinde değerlendirme yapıldığını görüyoruz.
+
+109
+00:33:03,616 --> 00:33:09,616
+Tabi bu, Discriminator ile beslenen Generator'ın da loss'una yansıyor.
+
+110
+00:33:09,616 --> 00:33:12,576
+Ve gördüğünüz gibi ona da şu bileşen ekleniyor.
+
+111
+00:33:13,652 --> 00:33:15,892
+Katniks yönteminde
+
+112
+00:33:17,395 --> 00:33:27,036
+Bunun da etkisiyle bir de Consistency Regularization diye geçen uyum düzenleme lossu da buraya belirli bir kat sayı ile ekleniyor.
+
+113
+00:33:27,036 --> 00:33:34,115
+Burada yapılan şey de şu, şu x-delta dediği şey üretilen katmix imajları.
+
+114
+00:33:34,836 --> 00:33:39,956
+Mix metodunda şu m maskleri gösteriyor 0 ile 1 arasında üretilen.
+
+115
+00:33:40,556 --> 00:33:44,236
+Şuradaki x değeri zaten gerçek görüntü.
+
+116
+00:33:45,395 --> 00:34:06,935
+Bu şekilde burada üretilen gerçek olmayan sentetik ya da sahte görüntü. Bu şekilde şu işaretle element-wise-mouser location yani element-wise-mouser location. Bu şekilde bu kullanılarak bir consistency-regularization dedikleri loss üretiliyor. Böylelikle discriminating loss bu hale geliyor.
+
+117
+00:34:08,947 --> 00:34:25,987
+Uygulamalarda dediğim gibi Biggen temel alınmış. Bunun kodunu da paylaşmışlar, linkini. Bunun üzerinden unit mimarisini eklemişler. Bir de her katmanda batch norma aynı giriş vektörünün verildiğini söylemiş.
+
+118
+00:34:36,947 --> 00:35:03,007
+Şartlı ve şartsızlığı da biraz söyleyecek olursak şartlı dediği C gen diye geçiyor bu literatürde. Conditional gen. Burada şöyle bir şey yapılıyor. Yürültüden başka bir de şart dediği ya görüntü ya da bir sınıf girişi veriliyor. Yine aynı şekilde diskriminatora da veriliyor.
+
+119
+00:35:04,947 --> 00:35:08,627
+Kontrollü şekilde görüntülerin üretilmesi sağlanmış oluyoruz.
+
+120
+00:35:10,148 --> 00:35:11,728
+Burada Smith şartı vardı.
+
+121
+00:35:12,467 --> 00:35:23,467
+Uyum düzenleme yöntemlerinin uygulanması da katmiks görüntüleri 0 ile 0.25 arasında linyar olarak artan olasılıklarla üretiliyor.
+
+122
+00:35:23,627 --> 00:35:28,447
+Aslında bunun aşamalı şekilde eğitim iterasyonuna dahil edilmesi de şöyle.
+
+123
+00:35:28,707 --> 00:35:39,607
+Yani ilk başta generator'ın biraz zaman geçerek daha gerçekçi görüntü üretmeye çalışılması sonrasında bunların dahil edilmesi düşünülmüş.
+
+124
+00:35:39,887 --> 00:35:53,367
+Masklerin sıyah-beyaz, yani 0 ile 1 aralığında değerlerden oluştuğunu söyledik. Bunun içinde CutMix PyTorch taban alınarak mail-i örneklenmiş.
+
+125
+00:35:57,972 --> 00:36:01,372
+Aslında 4 tane veri setinden yararlanılmış bu çalışmada.
+
+126
+00:36:02,472 --> 00:36:06,332
+Selep A, FFHQ insan yüzlerinden oluşan veriler içeriyor.
+
+127
+00:36:06,332 --> 00:36:16,332
+FFHQ, Selep A'ya göre daha kaliteli resimler, daha farklı bakış açıları ve daha çözünürlükle iyi resimlerden oluşuyor.
+
+128
+00:36:16,712 --> 00:36:19,952
+Bu ikisi şartsız görüntü sentezlemede kullanılmış.
+
+129
+00:36:22,452 --> 00:36:34,532
+Coco Animals dediği aslında Coco ve Open Image hayvan sınıflarından kendilerinin istersinleri bir araya getirerek oluşturduğu sınıf şartlı görüntüden tezleme için kullandıkları veri seti.
+
+130
+00:36:34,992 --> 00:36:40,532
+Aslında bu veri seti üzerinde çalışılması zor bir veri seti olarak burada sunulmuş.
+
+131
+00:36:40,532 --> 00:36:48,612
+Çünkü az veri içeriyor ve içerdiği hayvan sınıfları dengeli bir dağılıma sahip değil. Yani hepsi aynı oranda değil.
+
+132
+00:36:49,012 --> 00:37:02,592
+Değerlendirme metri olarak FID ve IS kullanılmış. Bu FID insan değerlendirmesine daha uyumlu olan bir metrik olarak belirlenmiş.
+
+133
+00:37:02,592 --> 00:37:13,271
+FID'nin daha iyi denilmesinin sebebi IS daha eğitim verisine bağlı değerlendirme yapıyor.
+
+134
+00:37:17,012 --> 00:37:25,552
+Aslında gerçeğe uygunsa ama veri seçimde yoksa bu işin başarısız olarak değerlendirme eğiliminde. O yüzden e-faili tercih edilmiş.
+
+135
+00:37:26,292 --> 00:37:28,012
+Sonuçlara bakacak olursa...
+
+136
+00:37:29,108 --> 00:37:36,828
+İlk başta görsel olarak görüldüğü gibi gayet güzel resimler üretilmiş. Aslında bunlar gürültüden üretilen resimler.
+
+137
+00:37:37,328 --> 00:37:49,188
+Tabi kullanılan veri setin, bunlar FFHQ üzerinde üretilen görüntüler. Tabi böyle görüntünün üretilmesinde veri setinin çok kaliteli resimler içermesinin de etkisi var.
+
+138
+00:37:50,108 --> 00:37:57,008
+Gördüğünüz gibi pembe sakallar var burada. O da bu çok fazla çeşitli resimler olduğu için pembe saçlı.
+
+139
+00:37:57,108 --> 00:38:05,108
+İnsanlar vesaire olduğu için ondan dolayı böyle şeyler üretilmiş. Burada dikkat çekilen şey yumuşak geçişlerin olmuş olduğu.
+
+140
+00:38:05,108 --> 00:38:13,967
+Yani mesela burada gördüğünüz gibi sakallıdan düzgün, yani böyle kız resmine doğru bir ilerleme görüyoruz.
+
+141
+00:38:14,467 --> 00:38:23,588
+Ağzın zamanla açılması, gözlüğün, pardon gözlükle alakalı ne bir şey söyleyemeyiz burada.
+
+142
+00:38:25,108 --> 00:38:33,148
+Burada da mesela yine saç, sakal vs. konusunda yavaş yavaş geçişler var. Dalgalanma konusunda da o şekilde.
+
+143
+00:38:33,664 --> 00:38:50,984
+Ben de bu 4 veri seçimden FFHQ üzerinde kısıtlı özelliklerdeki bir cihazda bu çok uzun süren işlemler ve nitelikli makineler gerektiren problemler bu gel.
+
+144
+00:39:01,664 --> 00:39:17,463
+Yani modeli çalıştırmak için, gürültünün en azından insan suratına benzer şekilde dağılımının zamanla nasıl olduğunu göstermek için böyle bir çalışma yapmaya çalıştım. Burada 3000 resim kullandım FFHQ üzerinden.
+
+145
+00:39:18,831 --> 00:39:35,391
+Bunlar normalde 256-256, bunları 128-128'e indirmek durumunda kaldım. 100 Epoch 200'lük veri grupları ile şerhsız gen ile bu şekilde belirli bir seviyede en azından bir şeylerin olduğunu görmek için.
+
+146
+00:39:35,731 --> 00:39:53,851
+Onun haricinde bir de temel metotları denemek adına bu resimlere Keynes, Solbel, Hoppe, Harris özelliklerini de ekleyerek daha kısıtlı yani bin resim ile daha kısa sürede de benzer sonuçta ne diyebildiğini görmeye çalıştım.
+
+147
+00:39:55,851 --> 00:39:59,851
+[öğrenci], o bir önceki slide'da...
+
+148
+00:40:00,000 --> 00:40:07,500
+Bir slide'da bu bir satır aynı prosesin sonucunu mu gösteriyor başladığı ve bittiği?
+
+149
+00:40:07,500 --> 00:40:21,164
+Yani o konuda net bir açıklama yapılmamış ama benim anladığım bunlar birbirlerinin iki sentetik örnek arasında dediği için zaman ile bu şekilde...
+
+150
+00:40:21,652 --> 00:40:26,092
+Üretildiğini anladım bende. Ama orada çok bir açıklama yoktu o konuda.
+
+151
+00:40:26,112 --> 00:40:32,872
+Ben sanki şey gibi düşündüm. İkili ikili bunlar birbirlerinden türetilmiş bir resim gibi görünüyor.
+
+152
+00:40:34,311 --> 00:40:39,912
+Evet aslında iki sentetik örnek dediği o olsa gerek. Ben anlamamışım. Kusura bakmayın hocam.
+
+153
+00:40:39,912 --> 00:40:47,532
+Öyle olabilir mi? Peki o bir sonraki slide'da da şey var. Bunlar ikili mi acaba?
+
+154
+00:40:48,244 --> 00:40:55,824
+Bunlar değil. Bunlar benim üzerinde çalıştığım olduğu için. Bunlar bir iterasyon, yani belirli aralıklarla görüntülerin çizilmesi.
+
+155
+00:40:55,824 --> 00:41:07,884
+Yani şurada bahsettiğim gibi 100 Epoch ve 200'lük veri grupları ile mesela belirli aralıklarla bunlar çiziliyor. Mesela 10 resimde bir gibi.
+
+156
+00:41:08,784 --> 00:41:14,524
+Kodunda da zaten o şekilde yani. Zaten hani sıfırdan yazmadığım kodu da.
+
+157
+00:41:15,476 --> 00:41:34,615
+Datastati üzerinde yapılan bir çalışma vardı. Onu referans alarak üzerinde geliştirme yaptım. Burada da Keynes, Solber, Hock ve Harris özelliklerini az önce söylediğim gibi, için içerisine katarak daha kısa sürede sonuç alabilir miyiz diye onun üzerinde çalışmaya çalıştım.
+
+158
+00:41:35,059 --> 00:41:51,699
+Burada da UNETGEN'in COCAENOMOS üzerinden ürettiği görüntüler mevcut. Gördüğünüz gibi gerçekten gerçeğe çok yakın, zorlu bir veri satışı olarak sunulmasına rağmen gerçeğe çok yakın hayvan resimleri üretilmiş.
+
+159
+00:41:57,619 --> 00:42:14,219
+Yapılmış. Bitgen dediğim gibi referans aldıkları. FFHQ ve Coco Enemus üzerinde her ikisinde de FID skorun düşmesi, Ayet'in yükselmesi daha iyi olduğunu gösteriyor. Gördüğünüz gibi her zaman Yunetgen daha başarılı sonuçlar vermiş.
+
+160
+00:42:22,260 --> 00:42:26,560
+FID'nin değerinin diğerine göre düşüşünü gösteriyor yine.
+
+161
+00:42:28,755 --> 00:42:43,795
+Burada da şöyle bir şey yapmışlar. Biggen'e aşama aşama önerdikleri şeyleri eklemişler. Yani unit-based discriminator'ı ilk başta sadece eklemişler. O bir derece başarıyı arttırmış.
+
+162
+00:42:43,795 --> 00:42:56,175
+Katmix'i ekleyince biraz daha. Bir de o loss fonksiyonu ekledikleri bir en son şey vardı. Consistency Regulatization. Onu da eklemişler. Başarıyı en fazla bu şekilde elde etmişler.
+
+163
+00:42:56,512 --> 00:43:05,512
+Bu da diğer yöntemlerle olan karşılaştırmayı gösteriyor. Yine gördüğünüz gibi yönelik daha başarılı burada da.
+
+164
+00:43:05,512 --> 00:43:07,512
+Sonuç olarak...
+
+165
+00:43:07,731 --> 00:43:30,671
+Gen üzerinde yapılan farklı mimari gelişimlere örnek olarak, yani burada da diskriminator'ın mimarisini geliştirerek daha başarılı sonuçlar elde edilmeye çalışılmış. Burada asıl vurgulanan şey hep şu, global ve lokal gerçekliği koruyarak, yani iki anlamda da resimleri değerlendirerek daha gerçekçi görüntü verilmeye çalışılması.
+
+166
+00:43:35,731 --> 00:43:51,011
+Bazı bir değerlendirme. Yani aslında burada discriminator hem classifier hem segmenter gibi çalışıyor. Bu şekilde daha iyi bir mimari ürettiklerini söylüyorlar. Sonuçlar da bunu gösteriyor. Teşekkürler. Varsa sorularınızı anlayın çalışayım.
+
+167
+00:43:52,011 --> 00:43:56,452
+Biz teşekkür ederiz [öğrenci]. Sorunuz var mı arkadaşlar?
+
+168
+00:43:58,931 --> 00:44:10,091
+Benim doğrulamak istediğim bir şey vardı. Burada veri setleri eşleştirilmişti değil mi? Yani bir erkek ve bir kadın olarak birlikte veriliyordu örnek için.
+
+169
+00:44:11,311 --> 00:44:13,951
+Hangisinde? Dört tane veri set? Hani şey mi?
+
+170
+00:44:13,951 --> 00:44:19,091
+Gan olarak yani kullandığınız algoritma da bu şekilde mi?
+
+171
+00:44:19,171 --> 00:44:19,831
+Evet, heyot yani.
+
+172
+00:44:20,411 --> 00:44:20,931
+Tamamdır.
+
+173
+00:44:22,483 --> 00:44:34,523
+Peki ben sorayım [öğrenci]. Burada bu sistemin performansını ölçmek için bir FID skor, bir de S-I var dedin galiba yanlış hatırlamıyorsam.
+
+174
+00:44:34,523 --> 00:44:35,323
+Hayır.
+
+175
+00:44:35,844 --> 00:44:44,364
+Nasıl, neyi kontrol ediyor, neye bakıyor bu skorların formülasyonu nedir? Var mı dokümanda?
+
+176
+00:44:44,483 --> 00:44:49,563
+Formülasyonu dokümanda yoktu. Ben de onu araştırmaya fırsatım olmadı yani.
+
+177
+00:44:49,887 --> 00:45:01,248
+Onu bir araştırır mısın? Çünkü bu önemli bir şey. Çalışmayı bir bütün olarak değerlendirebilmek için sanırım biraz bunun üzerinde de kafa yormak gerekiyor.
+
+178
+00:45:01,248 --> 00:45:08,327
+Evet. Zaten ben de merak ettim onu. Çünkü genelde niteliksel değerlendirme yapılacak şekilde sonuçlar üretiliyor.
+
+179
+00:45:12,467 --> 00:45:20,768
+Training süresindeki yani lof fonksiyonuna bağlıdır diye düşündüm ama bilmiyorum. Bakmam lazım. Evet. Teşekkürler.
+
+180
+00:45:21,467 --> 00:45:24,207
+Biz teşekkür ediyoruz [öğrenci] ve seni alkışlıyoruz.
+
+181
+00:45:24,747 --> 00:45:25,648
+Teşekkür ederim.
+
+182
+00:45:25,648 --> 00:45:34,007
+Ama biz alkışımızı şeyden yapıyorduk ya şu reaction'dan yapıyorduk. Bir dakika şimdi. Dur. Reaction'da arkadaşlar hepiniz.
+
+183
+00:45:34,675 --> 00:45:43,036
+[öğrenci]'ya akışlıyorsunuz. Teşekkür ediyoruz [öğrenci]. İlk sırada sunum yaptığın için ayrıca teşekkürler.
+
+184
+00:45:43,036 --> 00:45:43,876
+Sağ olun hocam.
+
+185
+00:45:45,016 --> 00:45:50,115
+Peki, şimdi [öğrenci] hazırsanız sizi dinleyelim.
+
+186
+00:45:50,476 --> 00:45:55,876
+Hazırım hocam. Bir önceki sunumda da gandan bahsedilmiş olması benim için de ayrıca iyi oldu.
+
+187
+00:45:56,016 --> 00:46:01,615
+Çünkü kullanacağım çalışmada Cycle Gun var. Ona da ithaf.
+
+188
+00:46:02,195 --> 00:46:03,975
+Birlikte anlatmış gibi bir şey olacak.
+
+189
+00:46:04,475 --> 00:46:08,735
+Çok güzel. Ama zaten çalışmalar çok o tarafa gitmeye başladı değil mi artık?
+
+190
+00:46:09,496 --> 00:46:14,655
+Hocam, direkt kelimeleri arattım. Ona göre seçtim zaten ben de. Herhalde o yüzden.
+
+191
+00:46:16,755 --> 00:46:19,795
+Öncelikle ben sorundan bağışlayarak gitmek istiyorum.
+
+192
+00:46:20,315 --> 00:46:21,576
+Burada birkaç şey açıklam.
+
+193
+00:46:26,867 --> 00:46:52,667
+Öncelikle reinforcement learning nedir? Buradaki sorunlardan bahsedeceğim. Sonrasında bu sorunu gidermek için yapılan çalışmadan bahsetmeyi düşünüyorum. Burada bir görüntü işlemi kullanılarak reinforcement learning algoritmasını görüyorsunuz. Burada kendi kendine öğreniyor aslında. Her hareketi bir aksiyon ve her hareketinden sonra gerçekleşen yeni bir state oluyor. Yeni bir görüntü, yeni bir state.
+
+194
+00:46:53,139 --> 00:47:16,539
+Burada öğrenilmesinin dallarını görüyorsunuz. Bu da dallarından bir tanesidir. Sayısal bir ödül puanını maksimum düzeye çıkarmaya çalışıyor aslında burada. Yapacağı hareketler her zaman maksimuma götürmüyor ve verdiğimiz ödüller de buna göre değişiyor.
+
+195
+00:47:20,288 --> 00:47:45,648
+Matematiksel bir işleme dahili. Bunu sevgisel olarak biz veriyoruz. Bunlar genelde denilme yanılma yoluyla elde edilmiş oluyor. Burada basit bir reinforcement learning algoritması nasıl çalıştığını görüyorsunuz. Öncelikle agent bu temsilcimiz bir aksiyon alıyor ve yeni bir gözlem, yeni bir kazanç elde etmiş oluyor. Bu kazanç.
+
+196
+00:47:46,068 --> 00:47:58,088
+Sıfır da olabilir aslında reward olarak bahseden. Eksi puan da olabilir, artı puan da olabilir. Her yeni hareketinde yeni bir resim almış olacak yani çalışmada bahsedeceğim örnek.
+
+197
+00:48:02,228 --> 00:48:14,208
+Temel koşullarından birisi de MDP olması. MDP nedir? Markov Decision Process. Burada yaptığı her bir sonraki adım sadece o anki adıma bağlı olması lazım.
+
+198
+00:48:15,027 --> 00:48:41,247
+Burada bir tavşan görüyorsunuz. Bu bizim agentimiz. İki tane aksiyon yapabilir. Sağ ya da sola gidebilir. Burada sağ giderse havucu alarak daha sevdiği bir yemeğe ulaşacak ama Panthelan'a daha yakın olacak. Bu da sadece o anki adımı kapsıyor. Buraları hızlı geçmek istiyorum çünkü görüntü işlemeye çok yakın değil. Burada tek tek S0 bulunduğu konum. Sonra aldığı aksiyon A0.
+
+199
+00:48:41,907 --> 00:48:53,748
+Sonra kazandığı R1 olarak gösterilmiş ve ondan sonrakiler de aynı notasyonla gidiyor. Burada sağ giderse alacağı puanı görüyorsunuz, sola giderse alacağı puanı görüyorsunuz.
+
+200
+00:48:53,748 --> 00:49:08,748
+Burada yine görüntü işlemek kullanılarak bazı video oyunlarında yapay zeka yapılmış. Bunların hepsinde iyi olmasa da birçoğunda yüksek performans göstermiş.
+
+201
+00:49:09,108 --> 00:49:31,028
+Markov sürecini anlatmıştım. Burada küçük bir ayrıntı da aslında keşif ve sömürü olması lazım. Bu şöyle, agentımız sürekli aynı roteye gidebilir eğer biz bunu ayarlamazsak. Arada bir rastgele bir hareket vermemiz lazım ki başka adımları da bulsun.
+
+202
+00:49:31,423 --> 00:49:48,463
+Sağ tarafta baktığınız fare sadece en yakında gidecektir. Çünkü burada bir peynir bulduğu zaman sonsuz defa burada duracaktır. Ama rastgele bir hareket yapmadan büyük ödüle ulaşamayacaktır. Ama büyük ödüle ulaşırken de aynı zamanda ölebilir.
+
+203
+00:49:55,411 --> 00:50:13,831
+Bir indirim faktörüyle çarpılmak zorunda. Çünkü uzaktaki ödülle yakındaki ödül aynı olmamalı. Yani yakındaki bir peynire gittiği zaman çok iyi. O kadar uzak değil ama uzaktaki ödülle gittiği zaman daha düşük olması lazım gösterildiğinden.
+
+204
+00:50:21,811 --> 00:50:36,251
+Bahsetmek istiyorum çünkü çok notasyon vardı. Bu örneği de Berkeley Üniversitesi'nin yapay zeka dersinin projesinden aldım. Orada verilmiş kodlar vardı ve boşlukları doldurmamız isteniyordu.
+
+205
+00:50:45,108 --> 00:51:01,148
+Alabileceği aksiyonları ve gidebileceği bir sonraki state'i almış olsun dedi. Burada QValue önemli bir değer bizim için çünkü araştırma da bunun üzerinde durulmuş. Bu da aslında beklenen değer hesaplanarak yapılıyor.
+
+206
+00:51:11,347 --> 00:51:25,987
+Toplanması gerekiyor ve en yüksek, bir sonraki durumda da en yüksek hareketi almak zorunda. Burada QV'nin nasıl hesaplandığını görüyorsunuz. Basitçe beklenen değer aslında. Bir sonraki adım için beklenen değeri hesaplıyoruz.
+
+207
+00:51:28,567 --> 00:51:37,288
+Burada da o değer için hangi aksiyonu yapmalı bunu hesaplıyoruz. Buradaki mümkün tüm sonuçları al.
+
+208
+00:51:37,619 --> 00:51:59,880
+Tüm sonuçlardan aksiyon değerlerini hesapla ve en yüksek olan benim politikam olsun. Peki politika ne? Gideceğimiz yolda alacağımız en yüksek değeri veren plan. Bu şekilde. Burada az önceki bahsettiğimiz Q değerlerinin hesaplanmasıydı. Şimdi nasıl hareket edecek onu hesaplamamız lazım.
+
+209
+00:52:00,916 --> 00:52:04,916
+Az önce dediğim gibi maksimum değerini alması lazım QValue'da.
+
+210
+00:52:04,916 --> 00:52:10,416
+Ve giderken eğer eksi sonsuzdan farklıysa sıfır olsun.
+
+211
+00:52:10,416 --> 00:52:14,416
+Diğer türlü QValue değerini toplasın.
+
+212
+00:52:14,416 --> 00:52:20,304
+Şimdi buralar aslında biraz havada kalıyor gibi olabilir ama örneğimde daha iyi anlaşılacağını düşünüyorum.
+
+213
+00:52:20,304 --> 00:52:34,043
+Az önce bahsettiğim gibi yine rastgele bir hareket alması lazımdı. Bunu bizim verdiğimiz olasılıkla hesaplayabiliriz. Burada random choice dediği aslında her adamda yüzde kaç olasılıkla rastgele bir hareket yapsın.
+
+214
+00:52:35,664 --> 00:52:46,043
+Bir sonraki aksiyonu da nasıl alsın ona göre? Az önceki verdiğimiz epsilon değeriydi rastgele bir olasılığı. Bu şekilde ben şimdi...
+
+215
+00:52:47,123 --> 00:52:49,443
+Ulgu da olmayı, düzeltmek istiyorum.
+
+216
+00:52:51,083 --> 00:52:52,083
+Buradan.
+
+217
+00:53:01,012 --> 00:53:28,204
+Burada bir haritamız var. Her hareket bize bağlı aslında şu an. Ve bir sonraki adımıza gittiğimizde yeni bir görüntü olmuş olacak. Ben her gittiğimde sıfır diyelim veriyor. Çünkü bir sonraki adımda bir değer yok, bir ödül yok. Sağ tarafta iki tane sıfır görüyorsunuz. Onlardan ikisi de ödül. Ama şu an temsilcimiz bunu bilmiyor. Bunu sadece biz biliyoruz.
+
+218
+00:53:28,628 --> 00:53:52,488
+Oraya gittiğinde bir değer beliriyor aslında. Aldığı zaman fark ediyor bunu. Ama şu an hala Q değerleri hesaplamıyorum. Q değerleri buradaki gördüğünüz değerler. Bir dahaki gidişinde üzerinden geçtiğinde oraya almış olacak. Tekrar geçtiğimizde yine bir önceki değer almış olacak. Yani sürekli hareket ederek güncellemesi gerekiyor.
+
+219
+00:53:55,123 --> 00:54:20,943
+Böylelikle anlattım diye düşünüyorum. Şimdi buradaki zorluklar ne? Biz bunu bir simülasyon olarak düşünürsek, gerçek hayatta bunu yapması için daha gerçekçi bir simülasyon olması lazım. Ancak simülasyonlarında düzeyi belli bir yere kadar. Ne kadar iyi grafiklerle de yapsak, o anki güneşin ışığıyla, kamera açısıyla çok farklı.
+
+220
+00:54:22,036 --> 00:54:24,036
+Eğitimler olabilir.
+
+221
+00:54:24,036 --> 00:54:32,036
+Q-learning'de bu değeri hesaplanması simülelerle göre yapılıyor. Sonra gerçek hayatta çıkarıldı.
+
+222
+00:54:32,036 --> 00:54:38,036
+Çünkü gerçek hayatta hesaplanması çok maliyetli. Bir robotunuzun olduğunu ve sürekli hareket ettiğini düşünün.
+
+223
+00:54:38,036 --> 00:54:40,036
+Ve hatalarından ders çıkardık.
+
+224
+00:54:40,036 --> 00:54:44,036
+Burada mesela simülasyonda çukura düştüğünde bir şey olmuyor.
+
+225
+00:54:44,036 --> 00:54:49,003
+Sıfırdan tekrar başlayacak ama gerçek hayattaki robotunuz eğer çukura düşerse...
+
+226
+00:54:49,268 --> 00:55:02,887
+Oldukça maliyetli olacaktı bizim için. Bu çalışmada da aslında, cycle genelde nasıl bu durumdan kurtuluruzdan bahsediyor. Şimdi çalışmayı açayım.
+
+227
+00:55:08,115 --> 00:55:27,175
+Öncelikle ben yazdığım nottan bahsetmek istiyorum. Burada gerçek hayatta kullanmak için sanal ortamda eğitilen temsilcilerin gerçek hayatta yetersiz ya da yanlış modellenmesi sonucunda gerçek hayatta başarısız olması bu araştırmanın yapılma amacıydı.
+
+228
+00:55:27,175 --> 00:55:35,596
+Az önce Markov Karar sürecinden bahsettik. GAN için az önceki arkadaşımız bahsetti. Ben de üzerinden geçmek istiyorum.
+
+229
+00:55:36,340 --> 00:55:50,579
+Burada iki kişi düşünebiliriz aslında. Generator ve discriminator. Bunlardan birisi rastgele sahte resim üretiyor ve discriminator da bunun gerçek mi, sahte mi olduğunu anlamaya çalışacağım.
+
+230
+00:55:52,320 --> 00:55:55,059
+Benden farklı olduğu için ona sormuştum.
+
+231
+00:55:56,440 --> 00:55:57,760
+Yaparken period.
+
+232
+00:55:58,208 --> 00:56:22,208
+Resimler mi kullanıyor orada da diye. Orada da aynı şekilde yapılıyormuş. Yani bizim iki tane resmimiz olması lazım. Bir tanesi gerçek, bir tanesi dönüştürmek istediğimiz şey. Burada onu görebiliriz aslında. Gerçek resimler geliyor. Burada bir discriminator, yani burada polis diyebiliriz ya da...
+
+233
+00:56:23,860 --> 00:56:48,480
+O isim, uzmanım diye bir gerçek olup olmadığını anlamaya çalışıyor. Eğer doğruysa, buradan bir loss farkından sıfır değeri ne oluyor? Eğer fark yanlışsa, buradaki yanlışlık generator ve discriminator'a adet olarak belirtmiyor. Burada onu bahsetmiştim.
+
+234
+00:56:50,387 --> 00:57:15,067
+Burada bir Latent Space'i görmüştünüz. Bu ne aslında? Generator bunun üzerine rastgele noise atarak bir resim oluşturuyor. İlk başta bu Uniform dağılımdan yapıyor. Hepsi eşit olasılıkla atılıyor. Çalışmalı da göreceksiniz. Burada aslında gitgide nasıl atacağını öğrenmeye başlıyor ve Latent Space.
+
+235
+00:57:15,956 --> 00:57:41,956
+Bizim buradaki gerçek görüntülerin küçültülmüş bir özeti diyebilirim aslında. Burada ondan bahsediyorum. Bir girişimiz var. Buradaki üç tane katman görüyorsunuz RGB ve 512-512'lik bir görüntü diyelim. Buradan başka bir görüntüye benzeyip benzemediğini ölçmemiz çok zor aslında.
+
+236
+00:57:43,635 --> 00:57:58,635
+Çünkü düşündüğümüz zaman 512x512x3'lük bir değişken setimiz oluyor. Bunun Encoder ile Latent Space'ini çıkartarak, yani özelliklerini çıkartarak bizim bunu karşılaştırmamız gerekiyor.
+
+237
+00:57:58,635 --> 00:58:07,635
+Burada ondan bahsettim. Sonrasında Recoder'ı da resmi geri kendi haline getiriyor buradan.
+
+238
+00:58:09,043 --> 00:58:28,104
+Burada farklı olduğunu nasıl anlıyor pekildiği? Olasılıklı bir yaklaşım. Bunun birçok yaklaşımı var aslında. Birçokların önünde iki tanesini gördüm hatta ben. Ama çalışmada bundan bahsedilmiş. KL yani Coolback, Labor. Sanırım yanlış yok durumda ama öyle yapayım.
+
+239
+00:58:33,619 --> 00:58:38,779
+Gerçek değerimizden oluşan Latent Space'in bir olasılıksal dağılımı.
+
+240
+00:58:38,779 --> 00:58:44,980
+Q ise yaptığı yeni resmin dağılımı.
+
+241
+00:58:44,980 --> 00:58:53,259
+İkisi birbirine eşit olduğu zaman D, K, L değeri sıfır ulaşıyor. Yani bir şekilde anlayamıyor.
+
+242
+00:58:53,259 --> 00:58:59,659
+Bu eğitim artık D'nin, yani Diversions'ın...
+
+243
+00:59:00,179 --> 00:59:12,480
+Gerçek mi, sahte mi olup olmasını anlayamadığı zaman 0.5 olasılıkla artık rastgele gibi bu gerçek ya da bu sahte diyebildiği zaman eğitim duruyor.
+
+244
+00:59:14,240 --> 00:59:16,699
+Burada bir de loss function'dan bahsetmek istiyorum.
+
+245
+00:59:18,179 --> 00:59:23,639
+Sembollerin açıklamasını yazdım ama basitçe loss function'ı minimize etmek istiyoruz.
+
+246
+00:59:23,639 --> 00:59:25,639
+Burada generator'dan ürettiğimiz...
+
+247
+00:59:26,452 --> 00:59:49,751
+Resmin gerçeğe benzemesi ve discriminator'ın bunu anlamaması önemli. Burada o yüzden eksi bir görüyorsunuz. Buradaysa aslında tam olarak bir toplam alınıyor. Buradaki toplamlarda az önce yukarıda bahsettiğim, içerideki değer yukarıda bahsettiğim, şurada hesaplamaydı.
+
+248
+00:59:53,844 --> 01:00:10,583
+Gen'de biliyorsunuz X ve Y değerleri olması lazım. Bir target değeri olması lazım. Ama Cycle Gen'de bu gerekmiyor. Neden bunu kullanıyorlar? Çünkü çok büyük bir iş kaybını önlemiş oluyor aslında.
+
+249
+01:00:18,900 --> 01:00:25,560
+Eğitim yapması gerekiyordu. Aslında buradan çıkan her resim eğitime gidecek, artı bir değer olacak.
+
+250
+01:00:26,320 --> 01:00:28,380
+Bunun nasıl hesaplandığına geçelim.
+
+251
+01:00:35,280 --> 01:00:39,900
+Şimdi simülasyon ve gerçek olan bir robot var bu çalışmada.
+
+252
+01:00:40,532 --> 01:01:04,532
+Simülasyon da yaptıkları da %90'a ulaşan bir değer. Gerçek hayatta hiç de öyle olmuyor. Yaptıkları çalışma ise şu. Üç tane kutu var. Ortada altı tane çok var. Bunu robot kolu ile sağ ve sola bırakmak. Oradaki reward değeri de aslında. Eğer başarılıysa...
+
+253
+01:01:05,619 --> 01:01:11,779
+Artı değer, değer başarısı, eksi değer olarak sürekli güncellenen bir şekilde oluyor.
+
+254
+01:01:11,779 --> 01:01:16,500
+Q'yı yine bahsettiğim şekilde hesaplanıyor.
+
+255
+01:01:16,500 --> 01:01:27,219
+Burada aslında GAN olarak bahsediyor ama şu şekilde, simülasyonu gerçeğe çevirmeye çalışıyor.
+
+256
+01:01:27,219 --> 01:01:32,179
+Gerçeğe çevirmeye çalıştığınızda geri eski halini çevirmeye çalışıyor. Normalde...
+
+257
+01:01:32,436 --> 01:01:57,556
+İki resmi birbirine çevirmeye çalışıyorlar. Çevirmeye, dönüştürmeye çalışıyorlar. Bunda gerektiğine giderek aslında sürekli güncelleniyor. Yani bu sefer olmazsa bir tane daha deniyor. Ama burada şu şekilde olması lazım verilerimiz. İkisinin birbirine benzemesi lazım.
+
+258
+01:01:58,708 --> 01:02:19,648
+Şurada daha iyi gözüküyor. Burada bir zebrayı dönüştürmek istiyorsak ona benzer bir nesnenin olması lazım. Yani burada at olarak verilmiş. Ya da elmayı dönüştürmek istiyorsak bir portakal olması lazım. Buradaki belli noktaları işaretleyerek kendince bir dönüştürme yapıyor aslında.
+
+259
+01:02:25,235 --> 01:02:27,235
+Burada sunma tekrar yapmayayım.
+
+260
+01:02:28,835 --> 01:02:47,235
+Peki, şurada farklı farklı dönüşümler yaptı aslında. İlk başta simülasyonu gerçeği uyarladı, gerçeği simülasyon uyarladı. Bu sefer de gerçeklikini simülasyona uyarlamaya çalışıyor ve simülasyondakini gerçeğe uyarlamaya çalışıyor.
+
+261
+01:02:48,692 --> 01:02:58,612
+CycleGen önce eğitilip sonrasında bu işlemlere dahil ediliyor ve buradaki resimler birebir simülasyona ve gerçeğe uyarlanmış oluyor.
+
+262
+01:02:59,932 --> 01:03:07,032
+6 tane resim olmuştu görüyorsunuz. 3 tane yukarıda, 3 tane altında. Her resim için QDR hesaplanıyor burada.
+
+263
+01:03:07,032 --> 01:03:14,032
+Ve bunların toplama olarak tutarlılığına bakıyor. Yani karşılıklı olarak...
+
+264
+01:03:14,931 --> 01:03:26,331
+Eğer arasında fark yoksa, yani simülasyonun iki ile gerçek arasındaki uzaklığa bakıyor. Simülasyondan gerçeğe dönüştürüldüğü ve gerçekten simülasyon dönüştürüğünün arasındaki farka bakıyor.
+
+265
+01:03:26,331 --> 01:03:41,731
+Ve dönüştürülen resmi tekrar dönüştürdüklerinin arasındaki farka bakıyor. Burada altın ödelerini hesaplanması görüyorsunuz. Bahsettiğim olay da burada aslında.
+
+266
+01:03:42,099 --> 01:04:03,480
+Buradaki loss function aralarındaki farka bakıyor. Bizim az önce örnekte hesapladığımız q değerleri aslında basit bir uzaklık hesaplanmasıyla yani kare kök içinde karelerin çıkarılmasıyla hesaplanıyor burada. Bu şekilde bir çalışma oluyor.
+
+267
+01:04:06,771 --> 01:04:15,391
+İki şekilde kurgu yapılmış. Çünkü bunun sadece bu çalışmaya değil, farklı çalışmalardan işe yarayacağını göstermeye çalışıyorlar.
+
+268
+01:04:15,391 --> 01:04:21,531
+Çalışmada RGB kamera, moleküler RGB kamera kullanılmıyız. Burada ondan bahsettim.
+
+269
+01:04:21,531 --> 01:04:33,611
+Ve robotun alacağı aksiyonlar dört boyutta. Sağa sola yukarı aşağı. X'ye Z eksenlerinde hareket edebiliyor. Ayrıca rotasyonu yapamıyor. Yani dört boyutta.
+
+270
+01:04:34,771 --> 01:04:57,771
+Kullanılan simülasyon da balık fizik simülasyonu. Birinci robot grubu aslında oldukça basit. Şuradaki resmi görüyorsunuz sadece burada patchlerin dışındaki kap yok da saydam bir şekilde yapılıyor. İkinci robot grubu ise farklı açılardan da...
+
+271
+01:04:58,003 --> 01:05:12,884
+Yani bu sefer tam ortalayarak gittik de kutuları sağ tarafından, sol tarafından da alınarak yapılıyor. Bu şekilde bir eğitim süreci oluyor. Eğitimde robotlar yine çöpleri sağ ve sola atmaya çalışıyorlar.
+
+272
+01:05:22,291 --> 01:05:47,412
+Simülasyonda eğitilenin gerçek hayata çıkarıldığında başarısı %21. Randomized simülasyon dediği, burada rastgele yerlere yerleştirildiği zaman, yani kutunun sağına, soluna veya ortasına yerleştirildiği zaman bu eğitimlerin toplamında yaptığı başarı %37. Burada sadece Gang kullanılmış, Cycle Gang kullanılmış. Bunları ikisini de anlatmıştım ama.
+
+273
+01:05:48,179 --> 01:06:07,759
+Bunları reinforcement'a uygulamayarak yapmış. Yani sadece simülasyon değiştirerek yapmış. Grasp Gen'i araştırmadım aslında. Çünkü çalışmada bir sürü farklı gen algoritması ile yapılmış. Ben sadece temellere bakmaya çalıştım.
+
+274
+01:06:16,211 --> 01:06:23,531
+Arasındaki farka bakarak loss function oluşturduğu değere göre eğitilen model.
+
+275
+01:06:24,891 --> 01:06:30,311
+Burada da en yüksek değeri aldığını görüyor. Ancak hala yeterli değil.
+
+276
+01:06:32,592 --> 01:06:40,311
+Burada farklı modellerin nasıl sorunlarla karşılaştırdığını gösteriyor.
+
+277
+01:06:41,139 --> 01:07:04,139
+Simülasyon resimlerimiz bunlar. Bunları GAN ile gerçek hayata çevirmeye çalıştığı zaman şu şekilde oluyor aslında. Simülasyondaki görüntüyle gerçek hayattaki görüntülerin aynı olması lazım ve bu şekilde eğitilerek eğitim olmuş oluyor. Buradaki sıkıntı...
+
+278
+01:07:04,179 --> 01:07:10,079
+Bazen ekleyebiliyor ya da çıkarabiliyor oradaki objeleri. Yani gerçek görüntüyü elde etmiyor.
+
+279
+01:07:10,820 --> 01:07:18,239
+Cyclegen dediği eklemek yok ama bu sefer çıkartmak oluyor. Burada gördüğünüz yukarıda varken aşağıda yok.
+
+280
+01:07:19,059 --> 01:07:29,599
+Graspgen görüntü çok kötü aslında. Yani yetersiz kalıyor bunun için. Ekstra bir şey eklemiyor ya da çıkartmıyor ama görüntüde oldukça bir bozulma var.
+
+281
+01:07:30,228 --> 01:07:39,248
+Ara Cyclegen dediği ise çalışmalı araştırılan şey en yüksek bu modelin işe yaradığını görüyoruz.
+
+282
+01:07:42,835 --> 01:07:54,715
+[öğrenci] orada nasıl işe yaradığını bir daha açıklayabilir misin? En son reinforcement learning ganda mesela ikisi arasında kıyaslamayı bir açıklayabilir misin?
+
+283
+01:07:55,775 --> 01:08:07,235
+Tabii hocam. Yukarıdakiler gerçekte elde edilen görüntüde aşağıdakilerse o algoritma kullanıldığında nasıl olduğu ile alakalı.
+
+284
+01:08:07,603 --> 01:08:34,844
+Burada baktığımız zaman arasında çok da bir fark olmadığını görüyoruz. Yani çalışmada bu şekilde de bahsedilmiş. Ama yukarıdaki ve aşağıdakilerine baktığımız zaman burada gördüğümüz gibi işte nesne çıkartma olmuş. Burada işaretlenenlerde ekleme veya çıkartma olabiliyor yine aynı şekilde. Aral cycle genlinde ise bu şekilde olmamış. Yani sorunsuz bir şekilde görüntü oluşmuş.
+
+285
+01:08:37,043 --> 01:08:40,144
+Orada sarı ve yeşil gibi görünen şeyler ne?
+
+286
+01:08:40,984 --> 01:08:48,184
+Oradakiler çöpler olarak geçiyor hocam. Yani çöpü kaldırıp yeni bir kutuya atmaya çalışıyor. Böyle biraz daha yakın resimde çalışıyor.
+
+287
+01:08:50,224 --> 01:08:52,984
+Onlar yok yani ikinci resimde. Öyle mi?
+
+288
+01:08:52,984 --> 01:08:58,724
+Aynen hocam. Sıkıntısı onlar da neden kullanılmaya değil alakalı.
+
+289
+01:09:00,500 --> 01:09:06,000
+Bir de bölüm bazı, kaç bölümde ne kadar başarı gösteriyor onlardan bahsediyoruz bu çalışmada.
+
+290
+01:09:07,860 --> 01:09:13,360
+5000 iterasyonda ya da 5000 başarılı denemede de diyebiliriz burada.
+
+291
+01:09:14,279 --> 01:09:19,539
+Episodlar reinforcement learning de o şekilde bahsediliyordu çünkü araştırdığım zaman.
+
+292
+01:09:21,020 --> 01:09:25,880
+Yani bir deney başlıyor ve bittiği zaman bir episod olmuş oluyor. Öyle söyleyeyim.
+
+293
+01:09:26,452 --> 01:09:34,852
+Sadece gerçekte çalışılan %15 değerini alıyorken, RNA CycleGen ile yapılan 5000 denemeli %75. Oldukça iyi.
+
+294
+01:09:34,852 --> 01:09:38,132
+GranspGen burada başarıya ulaşamamış.
+
+295
+01:09:38,132 --> 01:09:48,292
+Gördüğünüz gibi 28000'de simülasyonunda çok az bir artış varken, RNA CycleGen yine önde bitirmiş.
+
+296
+01:09:54,163 --> 01:10:02,163
+Yüksek bir artışın olduğunu görüyoruz ama yine de RL Cycle yine ikisi de geçememiş.
+
+297
+01:10:04,163 --> 01:10:12,163
+Robot 2 grubu için, burada farklı deneler de vardı aslında.
+
+298
+01:10:12,163 --> 01:10:19,916
+Sadece bir çöpü alıp başka bir yere bırakma ya da birden fazla çöpü alıp başka bir yere bırakma simülasyonu.
+
+299
+01:10:20,564 --> 01:10:39,504
+Simülasyon ve gerçeği birleştirildiği zaman %13, %12, %10 değerleri alırken RL Cyclegen gördüğünüz gibi en yüksek başarı elde edilmiş. Aynı şekilde birden fazla çöpü tutma adada da %93 başarı elde edilmiş.
+
+300
+01:10:40,051 --> 01:11:02,911
+Şurada onpolicy ve offpolicy var. Onları açıklayayım. Neden açıklayayım ondan önce onu söyleyeyim. Burada R-CAN diye farklı bir teknoloji var. R-CAN ise kirli örnekten farklı onpolicy bir metot. Peki onpolicy ve offpolicy ne? Onpolicy aslında robotun nasıl hareket edeceğini biliyor.
+
+301
+01:11:03,376 --> 01:11:27,195
+Yani hangi rotada, hangi eksende gideceğini biliyor ama hangi aksiyon alacağını bilmiyor. Sürekli aynı rotaya gidip farklı aksiyonlar almaya çalışıyor. Off-Policy ise az önce bahsettiğim hiçbir değeri bilmiyor aslında. Sıfırdan öğrenerek geliyor. Literatürde de şu şekilde bahsediliyor. Off-Policy her zaman daha yüksek ama daha çok yüksek.
+
+302
+01:11:27,216 --> 01:11:46,115
+İterasyon sonucunda oluşuyor. Çünkü sıfırdan bir şey öğrenmeye çalışıyor. On policy değilse manuel bir düzenleme sonucu oluşan bir şey. Ve her zaman en doğru seçimi biz yapamayabiliriz. Yine bu sezgisel olarak üretiliyor.
+
+303
+01:11:55,796 --> 01:12:11,096
+Robot 1 için, pardon yanlış söyledim. Şurada belli bir itirasyon sonucu olmamış ama direkt tek çalıştığı zaman %70 değerini almış. Çünkü önceden nasıl hareket edeceği belliydi.
+
+304
+01:12:11,096 --> 01:12:21,636
+Domain randomizasyon dediği ise farklı açılardan kameranın birlikte eğitilerek yapıldı. Yani tek bir açıya bağlı kalmadan yapıldı.
+
+305
+01:12:22,228 --> 01:12:47,180
+Yine R-CAN 10 polisli bir metot. 5000 iterasyonda %91 çıkmış. Çok iyi. R-L-CycleGEN ise domain randomizasyon olmadan, yani tek bir ölçüyü kullanarak %90'a ulaşmış. İkisinin arasında %1'lik bir fark var. Ama R-L-CycleGEN tek bir kamerayla bunu yaparken R-CAN farklı açıdan...
+
+306
+01:12:47,283 --> 01:12:59,484
+Giren kamera ve görüntülerle de bu iş yapabiliyor. Yine baktığımız zaman, Arken 28000 denemede %94 yerine ulaşmış.
+
+307
+01:12:59,484 --> 01:13:07,484
+RL CycleGent çok daha kısıtlı bir sürede, domain randemizasyon olmadan %94 yerine ulaşmış.
+
+308
+01:13:10,739 --> 01:13:29,139
+Çalışma bu şekildeydi. State of Art deniyor sanırım burada. Böyle bir şey olduğunda ne kadar güçlü olacağı. Kodları paylaşılmamıştı ama ben de şöyle düşünün. QLearning ve CycleGen'in örneklerini yapabilirim.
+
+309
+01:13:38,671 --> 01:13:45,611
+Sanırım ekran kartını güncellediğim için çalıştıramadım. Bugün Google Colab üzerinden bunu açtım.
+
+310
+01:13:47,271 --> 01:13:50,492
+Ve yeterli bir şekilde eğitim yapamadım aslında.
+
+311
+01:13:51,711 --> 01:13:53,572
+Bu da TensorFlow ile eğitildiğini.
+
+312
+01:13:54,711 --> 01:14:01,332
+Haritalar üzerinde çalıştım şimdi. Haritalar burada gözüküyorsa küçük bir gösterme yapmak istiyorum.
+
+313
+01:14:02,731 --> 01:14:04,912
+Diğer örnekleri göstereyim olmadı. Ha buradaymış.
+
+314
+01:14:05,716 --> 01:14:24,236
+Burada aslında bir resimden farklı bir tür resme çevrildiğini görüyorsunuz. Kroki ya da bir planın gerçek haritaya dönüştürüldüğünü, bir ayının pandaya, farklı renkteki kuşların renklerinin değiştiğini görüyorsunuz.
+
+315
+01:14:24,236 --> 01:14:30,236
+Burada dediğim gibi eşleştirilmemiş bir görüntü. Sadece...
+
+316
+01:14:31,347 --> 01:14:45,108
+Belli özelliklerin benzeşmesi bunu yapması için oldukça yeterli oluyor. Burada bazı noktalarına baktığımızda zaten aynı resim üzerinde eğitilmiş ama eğitim verisini de göstermeye çalışacağım.
+
+317
+01:14:46,648 --> 01:14:53,987
+Birbirinin üzerine denk gelen noktalar olduğu zaman aslında bunu anlayarak oradaki görüntüleri kullanmaya başlıyor.
+
+318
+01:14:58,863 --> 01:15:25,463
+Rastgele kesmeleri de yani verimizi bir şekilde çoğaltmamız lazım. Bunu random crop olarak da yapmış. Normalize etmemiz lazım çünkü bir latent space'den bahsetmiştim. Buradaki görüntünün özellikleri. Eğer normalize etmezsek her görüntünün farklı yerleri olacak. Kimisi çok aydınlıkken, kimisi çok karanlık ya da farklı yerlere sahip olduğu için.
+
+319
+01:15:25,840 --> 01:15:44,819
+Buradaki her değer, oradaki Latent Space tam olarak temsil etmeyecek. Eğer normalleştirirsek, yani ortalamadan çıkartıp standart satmaya bölersek, o zaman çok daha iyi bir şekilde Latent Space bunları temsil edebilecek.
+
+320
+01:15:48,564 --> 01:16:05,963
+Yine veriyi çoğaltmak amacıyla yapılan adımları görüyorsunuz. Yine preprocess fonksiyonlar bunlar. Bu ise gerçek bir harita örneği.
+
+321
+01:16:16,435 --> 01:16:32,595
+Google Map'tan alınmış rastgele bir yerin haritası. Yani bir plan aslında. Burada ne yaptığından bahsediyor. X bizim haritamız, Y ise dönüştürmek istediğimiz plan.
+
+322
+01:16:33,155 --> 01:16:41,895
+Burada DX ile gerçek olup olmadığını, DY ile de planın gerçek olup olmadığını anlamaya çalışıyor.
+
+323
+01:16:43,028 --> 01:16:51,427
+X'i plana dönüştürüyor, F ile de planı haritaya dönüştürüyor. Yani sürekli bir ikili kontrol etme sistemi var.
+
+324
+01:17:06,868 --> 01:17:31,268
+İkili bir doğrulama yapıyor. İki tane de görüntü üretmiş oluyor ekstra. İlk başta görüntümüz bu. Miniform Dağımdan bir noise üretiyor ve bunun üzerine atıyor. Aynı şekilde plan için de bunu yapıyor. İlk başta bu şekilde başlıyor CycleGan.
+
+325
+01:17:34,996 --> 01:17:43,275
+Diskriminatörün nasıl gördüğü ile alakalı aslında. İlk başta bu şekilde görüyor. Çünkü üzerine noyde atılmış, gürültü atılmış. Bu şekilde görüyor.
+
+326
+01:17:44,416 --> 01:18:00,695
+Burada loss function'dan bahsettiğimiz, ben çıkan sonucu göstermek istiyorum. Yeterli sürede eğitemedim ama bu şekilde bir görüntü çıktı. Hangilerinin nereye benzediğini.
+
+327
+01:18:01,300 --> 01:18:19,100
+Görebiliyorsunuz ama yeterli iterasyon yetişmedi aslında. Ortadaki denizi hiç algılayamamış. Yolları ekstranın eklemiş çünkü aslında gerçek bir görüntüsü yok bunun. Kendi üretmeye çalışmış.
+
+328
+01:18:19,100 --> 01:18:28,600
+Yani oradaki gürültü dediğimiz şeyi artık daha bilinçli bir şekilde atmaya başlamış. Leighton Space'e bakarak.
+
+329
+01:18:30,579 --> 01:18:34,280
+Ama yeterli iterasyon olmadığı için tam olarak gösteremedim dediğim gibi.
+
+330
+01:18:34,340 --> 01:18:36,819
+Ama şurada bir mavilik de çıkmış [öğrenci].
+
+331
+01:18:37,399 --> 01:18:37,860
+Evet hocam.
+
+332
+01:18:37,860 --> 01:18:45,979
+Yani yavaş yavaş biraz daha iterasyon sayısını arttırsam belki de o bölge daha büyüyecek de olabilir.
+
+333
+01:18:46,460 --> 01:18:51,020
+Hocam, üç saat çalıştı. Ben bir yerden sonra aslında sabah erken kalkmıştım bunun için.
+
+334
+01:18:51,539 --> 01:18:59,800
+Belli bir saat çalışan sonrasında sanırım bilgisayar başında olmam gerekiyormuş. Kendi araya girdi ve yetişmedi. O yüzden.
+
+335
+01:18:59,800 --> 01:19:00,659
+Tamam.
+
+336
+01:19:04,579 --> 01:19:09,659
+Bunlar vardı. Burada farklı örnekleri de göstermek dışında.
+
+337
+01:19:10,119 --> 01:19:18,020
+Şurada sanırım bir video vardı ama aslında bir kere ettiğimizde bunu videolarda da kullanabiliyoruz. O videoyu şu an nerede?
+
+338
+01:19:18,463 --> 01:19:41,463
+Emin olamıyorum ama bir atın zebra'ya nasıl dönüştüğünü gösteriyorlar. Atın hareketli resmi var. Tek tek video üzerinde resimler alınarak bu predikt ediliyor. Yani zebra'ya dönüşse nasıl görünürdü. Sonra bunları birleştirerek bir video yapmışlar. Oldukça güzeldi. Ben de...
+
+339
+01:19:42,195 --> 01:20:07,256
+Daha önceden Nvidia'nın bir haberinde görmüştüm bu olayı. Onu da bir oyunu gerçeğe çevirerek yapıyordu aslında hocam. Çok merak etmiştim aslında nasıl oluyordu ama şansıma saykıl gelmiş bu. Ben de çalışırken öğrendim. Bu şekilde. Bahsettiğim video da burada. Bunları göstermek istiyorum. Bu şekilde oluşmuş.
+
+340
+01:20:11,252 --> 01:20:37,912
+Tabi her zaman iyi taraflarını göstermişler burada. Şöyle bir şey var aslında hocam. Üzerine insan bindiği zaman da insanı da zevriye dönüştürmeye başlıyor. Çünkü daha önce insan görmemiş ve atın bir parçası sanıyoruz da. Onu da bu şekilde yapmış. Benim sunumum bu kadardı. Son makinim varsa sorabilirsiniz. Teşekkür ederim beni dinlediğiniz için.
+
+341
+01:20:40,948 --> 01:20:48,328
+Biz teşekkür ederiz. [öğrenci], ilginç bir konu bu gam ile bu sentetik görüntü üretme kısmı.
+
+342
+01:20:49,148 --> 01:20:49,708
+Evet hocam.
+
+343
+01:20:50,808 --> 01:20:53,068
+Neden bu konuyu seçtin diye sorsan?
+
+344
+01:20:53,988 --> 01:20:58,948
+Hocam, normalde ben bir istatistikçiyim ve bu konulara bayağı uzanım.
+
+345
+01:20:59,847 --> 01:21:01,932
+Orada daha...
+
+346
+01:21:02,260 --> 01:21:27,280
+Ara dönemde reinforcement learning ile tanıştığım gibi bir şey oldu. Onu araştırdım. Sonra çalışmalara bakarken sürekli gun gördüm işte bu arama yaparken bize verdiğiniz dedi. Az çok da oradaki ikili sistemi biliyordum. Yani bir tarafta resim üretiyor, onun karşısında gerçek mi, yanlış mı olduğunu, tahtem olduğunu gösteren bir ayırıcı var.
+
+347
+01:21:27,923 --> 01:21:37,064
+İkisinin de birleştiği bir şey gördüm. Sonuçlarına baktığımda güzel çıkmıştı hocam. Yani bir şeyler bir şekilde çıkmıştı. Ben de bu konuyu almak istedim.
+
+348
+01:21:37,300 --> 01:22:02,220
+Aslında reinforcement learning apayrı bir konu ve gerçekten çok güzel bir algoritma. Çok farklı alanlara da uygulanabiliyor. Biz bir object tracking konusunda bir reinforcement learning uygulaması görmüştük. Ben oradaki şeyi de çok beğenmiştim, algoritmanın uygulanış şeklini.
+
+349
+01:22:05,300 --> 01:22:09,920
+Bir takım değişikliklerle uyarlayabiliyorsunuz yani algoritmayı.
+
+350
+01:22:11,620 --> 01:22:13,579
+Güzel, teşekkür ediyoruz.
+
+351
+01:22:13,680 --> 01:22:15,280
+Ben teşekkür ederim hocam.
+
+352
+01:22:15,659 --> 01:22:20,399
+Hemen reaction olarak alkışlayalım arkadaşımızı.
+
+353
+01:22:20,880 --> 01:22:21,520
+Teşekkür ediyorum.
+
+354
+01:22:21,539 --> 01:22:28,960
+Bu reinforcement ek olarak sırf bunu kullanarak yeni bir element bulunmuş ama nasıl bulunmuş hala bilemiyorum.
+
+355
+01:22:29,059 --> 01:22:30,620
+Çok farklı şeyler çalışmalar var.
+
+356
+01:22:32,659 --> 01:22:45,139
+Veri, nasıl diyeyim? Veri diye de enerji akışına bağlayarak %70 bir enerji tasarrufu sağlamış araştırılıyor. Çalışmalara baktığım zaman gerçekten ilginç.
+
+357
+01:22:45,139 --> 01:22:46,059
+Evet.
+
+358
+01:22:48,148 --> 01:23:05,387
+Güzel. Yani Computer Vision'ın içinde hani böyle sadece oyun alanında değil de bu reinforcement learning'in farklı vision problemlerinde de kullanıldığını görebiliyoruz dediğim gibi. Teşekkürler [öğrenci] tekrar.
+
+359
+01:23:05,827 --> 01:23:06,627
+Ben teşekkür ederim.
+
+360
+01:23:06,627 --> 01:23:09,627
+Evet, sevgili arkadaşlar bu hafta...
+
+361
+01:23:10,836 --> 01:23:27,296
+8 öğrenciye sunum yapma hakkı verdim. 2 kişiye hazırım ve sunum yapacağım dedi. O yüzden 2 ile sınırladık. Dersi burada bitireceğim. Önümüzdeki hafta daha verimli bir çalışma bekliyorum sizlerden.
+
+362
+01:23:38,836 --> 01:24:00,576
+Pas geçtiğimiz öğrenciye tekrar sunum hakkı maalesef veremeyeceğiz. O yüzden lütfen derse ve projenize hazırlıklı gelirseniz sevinirim. Bu haftalık bu kadar. Size güzel bir hafta diliyorum. Görüşmek üzere.
+
+363
+01:24:01,116 --> 01:24:02,756
+Hocam, ben bir şey sorabilir miyim?
+
+364
+01:24:03,156 --> 01:24:03,596
+Buyurun.
+
+365
+01:24:04,404 --> 01:24:17,344
+Hocam ben raporu yetiştiremedim de ama mesela haftaya yetiştirip sunum yapsam böyle bir şans veriyor musunuz? Mesela raporu yüklemediğim sadece sunum yapabilir miyim?
+
+366
+01:24:17,344 --> 01:24:23,644
+Ben sizin adınızı okumadım [öğrenci] hiç. Sizin hakkınız baki. Haftaya sunum yapabilirsiniz.
+
+367
+01:24:25,076 --> 01:24:38,455
+Hocam sistem kapandı ya, raporu yükleyemediğiniz için diyorsunuz. Anladım. Tamam, raporu ayrıca e-mail'le yollayın. Tamam hocam, teşekkürler.
+
+368
+01:24:38,455 --> 01:24:52,875
+Hocam merhaba. Evet, sırayla. Buyurun. [öğrenci]? Dersin başında katılamadım da, benim adımı okumuş muydunuz? [öğrenci], evet okudum.
+
+369
+01:24:53,811 --> 01:24:59,591
+Hocam ben bir sunum hazırladım ama detaylı bir şey hazırlayamadım.
+
+370
+01:25:00,371 --> 01:25:04,391
+Tamam, hazırsanız dinleyebiliriz o zaman hazırladığınız kadarıyla.
+
+371
+01:25:06,431 --> 01:25:14,951
+Bir dahaki haftaya yapsam acaba olabilir mi hocam? Bu hafta çünkü çok detaylı hazırlayamadığım için yetersiz kalacağını düşünüyorum.
+
+372
+01:25:15,475 --> 01:25:37,475
+Anlıyorum ama şöyle, sunum yapan öğrenci sayısı sekizin altına düşerse dinleyebiliriz. Tamam. O şekilde yapsak o zaman hocam. Tamam, okey. Öyle yapabiliriz. Teşekkür ederim hocam. Rica ederim. [öğrenci] bir şey soruyordunuz galiba. Merhaba hocam, ben de aynı soruyu soracaktım.
+
+373
+01:25:39,731 --> 01:25:41,892
+Yani haftaya yapabilir miyim diye mi?
+
+374
+01:25:41,952 --> 01:25:46,811
+Hayır, yok. İsmimi okudunuz mu? Ben şu an bir toplantıdayım aynı zamanda.
+
+375
+01:25:47,271 --> 01:25:50,432
+Hayır, sizin adınızı okumamışım. Kontrol ettim. Yok.
+
+376
+01:25:50,572 --> 01:25:52,771
+Tamam, çok sevindim. Teşekkürler. Sağ olun.
+
+377
+01:25:52,771 --> 01:25:57,412
+Rica ederim. Peki. Evet, var mı başka soru?
+
+378
+01:25:59,512 --> 01:26:04,852
+Evet, ümit ediyorum haftaya daha dolu dolu bir ders işleyeceğiz. Görüşmek üzere. Hoşçakalın.
+
+379
+01:26:05,619 --> 01:26:06,819
+Sağlıca uygunlar.
+
+380
+01:26:07,599 --> 01:26:08,319
+Güle güle.
+
+381
+01:26:08,500 --> 01:26:09,219
+İyi günler hocam.
+
+382
+01:26:10,099 --> 01:26:10,679
+İyi günler.

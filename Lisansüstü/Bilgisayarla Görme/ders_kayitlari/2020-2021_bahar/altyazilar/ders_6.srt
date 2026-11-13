@@ -1,0 +1,2879 @@
+1
+00:12:35,379 --> 00:12:37,659
+Evet, merhaba arkadaşlar. Nasılsınız bakalım?
+
+2
+00:12:39,360 --> 00:12:43,379
+Merhabalar hocam.
+
+3
+00:12:44,139 --> 00:12:47,139
+Merhaba. Herkes konuşuyor. Yaşasın. Çok mutluyum.
+
+4
+00:12:48,600 --> 00:12:50,799
+Evet, çok güzel sesinizi duymak.
+
+5
+00:12:52,480 --> 00:12:57,879
+İyi geliyor sesiniz. Umarım herkes iyidir. Sağlığınız yerindedir.
+
+6
+00:12:59,475 --> 00:13:03,135
+Evden çalışmaya devam ediyorsunuz diye umuyorum.
+
+7
+00:13:07,988 --> 00:13:14,328
+Var mı iyi, kötü bir havadis? Nedir durumlar? Ödevinizi yaptınız mı?
+
+8
+00:13:16,968 --> 00:13:18,708
+160-70 hocam şu an.
+
+9
+00:13:20,448 --> 00:13:22,748
+Ödevle alakalı bir soru sorabilir miyim?
+
+10
+00:13:23,528 --> 00:13:25,048
+Tabii [öğrenci], sorabilirsin.
+
+11
+00:13:26,048 --> 00:13:35,528
+Hocam, şu sorusunda, neydi? Laptation of Gaussian Filter vardı ya.
+
+12
+00:13:35,988 --> 00:13:43,608
+Onu uygularken ben orada Blur Filter kısmına kadar geldim ama orada şey diyordu.
+
+13
+00:13:46,388 --> 00:13:49,368
+Zero Crossing, evet Zero Crossing, doğru.
+
+14
+00:13:50,648 --> 00:14:03,807
+Hocam, orada şey bir de Python hazır fonksiyonlarını kullanabilirsiniz demiştiniz ama ben orayı aslında şöyle, orada şey mi, labdaşlığın, etkiket, filtre mi uygulayacaktık?
+
+15
+00:14:14,388 --> 00:14:42,388
+Her kenar aslında başladığı nokta ve bittiği nokta diye iki tane kenar üretiyordu ve bunları 0-1 geçişleriyle, yani bir negatiften pozitife geçiş vardı. Zero crossing dediğimiz şey o. Hatırlar mısınız? İlk türev ve şeyi anlattığımız, konvolisyon ve korelasyonu anlattığımızda şeyi bahsetmiştik.
+
+16
+00:14:42,388 --> 00:14:56,628
+Bu kenar geçişleri ani bir step varsa ya da bir rampa şeklinde bir değişim varsa bunun üzerinden türev işlemleri yaptığımızda nasıl oluyor diye konuşmuştuk. Hatırlar mısınız?
+
+17
+00:14:56,628 --> 00:15:09,588
+Orada ikinci dereceden türev kenar geçişlerinin olduğu bölgede bir negatiften pozitife geçiş oluşturuyor.
+
+18
+00:15:10,388 --> 00:15:14,368
+Negatiften pozitife geçmek demek zero crossing işlemi demek.
+
+19
+00:15:14,368 --> 00:15:26,368
+Ve kenarları işaretlerken, yani log filter uyguladıktan sonra, manuel olarak yazıyoruz ya, image ile log filter arasında bir konvolüsyon işlemi yapıyoruz.
+
+20
+00:15:26,868 --> 00:15:38,368
+Konvolüsyon işleminin çıktısına bir zero crossing işlemi uygularsanız, işte bu negatiften pozitife ya da pozitiften negatife geçtiği bölgeleri bir kenarları.
+
+21
+00:15:38,388 --> 00:15:59,348
+Bunları zero crossing işlemi diyoruz. Bunu da hazır var diye biliyorum. Kullanabilirsiniz diye yazmışım zaten çıkış görüntüsünde. Zero crossing işlemi için hazır fonksiyonu kullanarak kenarların belirlendiği binary imici oluşturunuz demişim.
+
+22
+00:16:01,208 --> 00:16:03,588
+Anlaşıldı mı acaba ne demek istedim?
+
+23
+00:16:05,556 --> 00:16:08,596
+Tekrar bir şey açmadım ama [öğrenci], burada mısın?
+
+24
+00:16:09,556 --> 00:16:22,416
+Evet hocam, anlaşıldı. Teşekkür ederim. Ben bir de ilk iki soru histogram ile alakalıydı ya, histogram ve histogram equalization. Onlarda hazır Python kodunu kullanabiliriz, öyle değil mi? Ben öyle yaptım da.
+
+25
+00:16:24,556 --> 00:16:27,875
+Histogram oluşturan Python kodunu yazın.
+
+26
+00:16:28,240 --> 00:16:45,379
+Yani aslında bunu hazır kullanmadan ilk uygulamalarımızda genelde şöyle yapıyoruz. Her fonksiyonun aslında temel işlemin nasıl yapıldığını anlamak için bir kodunu yazmak gerektiğini düşünüyorum.
+
+27
+00:16:45,379 --> 00:16:56,240
+O yüzden yapılan işi en iyi öyle tarif edersiniz ve anlarsınız. Yani bir görüntünün histogramı dediğimiz zaman, ben oraya hist yazıp...
+
+28
+00:16:56,240 --> 00:17:03,779
+Görüntünün, görüntü dosyasının adını yazdığım zaman da oluyor ama ben istiyorum ki ilk etapta bunu biz yazalım.
+
+29
+00:17:04,319 --> 00:17:10,440
+Hocam ben de size bunu mail ile sormuştum da yani ben hazır kullanabiliriz diye anladım mailden.
+
+30
+00:17:10,440 --> 00:17:17,579
+O yüzden arkadaşlarla da o şekilde gruptan paylaştım. Yani yanlış anladığım kusura bakmayın arkadaşlar. Bunu da buradan ileteyim.
+
+31
+00:17:20,276 --> 00:17:21,895
+O zaman düzeltelim.
+
+32
+00:17:22,316 --> 00:17:38,036
+Onu düzeltelim o zaman. Ben mailde ne yazdığımı şimdi hatırlamıyorum. Ama bu ödeve baktığım zaman, benim bunu yazarken aklımdaki şey bunları sizin yazmanız yönündeydi.
+
+33
+00:17:38,036 --> 00:17:42,536
+Bir kere yazarsınız, ondan sonra hazır fonksiyon kullanırsınız zaten.
+
+34
+00:17:43,284 --> 00:17:48,024
+Ödevi yüklediyseniz bir daha yükleyemiyor musunuz acaba?
+
+35
+00:17:50,044 --> 00:17:51,224
+Değiştirebiliyoruz hocam.
+
+36
+00:17:51,984 --> 00:17:56,544
+Tamam. Yani süre dolana kadar yapabiliyorsunuz o zaman. Doğru mu?
+
+37
+00:17:58,144 --> 00:18:00,244
+Basit bir şey ekleyebilirsiniz onu.
+
+38
+00:18:02,244 --> 00:18:09,304
+Histogram Equalization işlemi için de tabii yine Python kodunu kendiniz yazıyorsunuz.
+
+39
+00:18:10,036 --> 00:18:27,096
+Ondan sonra artık bir daha histogram için ya kendi yazdığınız hazır kodu kullanabilirsiniz ya da sistemdeki Python altındakini kullanabilirsiniz. Başka ne var? Evet, böyle.
+
+40
+00:18:35,827 --> 00:18:57,488
+Açmışım fakat yayınlamamışım. Sonra da tarihi geçtiği için bir daha güncelleme istedi benden. Dün akşam online Yıldız Edüter üzerinde sınav ve ödev modülünü altında bunu tanımladım. Proje konusu seçimlerini de benzer şekilde oraya açtım.
+
+41
+00:19:03,827 --> 00:19:09,847
+Birinci sırada birinci tercihiniz olacak şekilde oraya yüklemenizi istiyorum arkadaşlar.
+
+42
+00:19:13,107 --> 00:19:18,827
+Hocam net olarak hangi makalenin bize ait olacağı ne zaman belli olacak?
+
+43
+00:19:20,367 --> 00:19:28,927
+Ben hızlı bir şekilde ona yani yarın ya da en geç çarşamba gününe kadar belirleyip size gönderirim.
+
+44
+00:19:29,875 --> 00:19:31,036
+Tamam, teşekkür ederim.
+
+45
+00:19:31,215 --> 00:19:36,056
+Ya şeyden, site üzerinden açıklarım yani. Bir liste hazırlarım. Oraya koyarım.
+
+46
+00:19:36,516 --> 00:19:37,056
+Tamam, tamam.
+
+47
+00:19:37,375 --> 00:19:46,195
+Ödevleri yüklediğiniz yerde, acaba şeyi merak ettim, bir tarih gözüküyor mu acaba?
+
+48
+00:19:46,195 --> 00:19:50,556
+Ya da saat gözüküyor mu? Ona bakacağım.
+
+49
+00:19:52,147 --> 00:19:53,427
+Gözüküyor hocam.
+
+50
+00:19:53,647 --> 00:19:54,387
+Evet, görünüyor.
+
+51
+00:19:54,947 --> 00:20:03,487
+Upload ettiğimiz saat gözüküyorsa kim önce seçmiş, kim sonra seçmişi de oradan ayırt edebilirim diye düşünüyorum.
+
+52
+00:20:05,607 --> 00:20:07,788
+Şöyle bakıyorum hemen.
+
+53
+00:20:09,847 --> 00:20:14,487
+Şu anda birinci ödevle ilgili mesela yükleyenlerin...
+
+54
+00:20:20,084 --> 00:20:26,423
+Nasıl? Birinci ödev. Buradan gözükmüyor. Gönderilen ödevler buradan görünüyor herhalde.
+
+55
+00:20:27,384 --> 00:20:27,764
+Bakıyorum.
+
+56
+00:20:30,403 --> 00:20:32,704
+Evet, [öğrenci] yüklemiş.
+
+57
+00:20:33,903 --> 00:20:38,963
+Evet, yüklediği saatte gözüküyor. Başlama, bitiş saati herhalde.
+
+58
+00:20:39,844 --> 00:20:40,724
+Evet.
+
+59
+00:20:42,644 --> 00:20:47,704
+Dün gece 22.05'de yüklemiş. Doğru. Tamam. Gözüküyormuş. Orada da sorun yok.
+
+60
+00:20:50,259 --> 00:21:14,380
+Güzel. Peki. Valla yüksek lisans demek, doktora demek, çok çok ödev demek, proje demek. Onu unutmayın. Bu tür çalışmalar ağırlıklı olması gerekiyor. Aslında sistem izin verse ben hiç yazılı sınav yapmaya da bilirim. Bu tür ödevlerin daha öğretici olduğuna inanıyorum.
+
+61
+00:21:15,059 --> 00:21:30,940
+Dönem dönem öyle yaptığımda oluyor. Hiç yazılı sınav yapmadan yüksek lisansta. Ama işte şimdi uzaktan olduğu için çok fazla çözüm yok. O yüzden yine yazılı sınavda yapıyoruz. Yine bir test sınavı olacak zaten yapacağımız sınav.
+
+62
+00:21:30,940 --> 00:21:33,299
+Peki.
+
+63
+00:21:37,907 --> 00:21:41,288
+Şimdi bu haftaki konu başlığımız.
+
+64
+00:21:49,811 --> 00:22:09,311
+Haftaki konu başlığımız, Half Transform ile başlayacağız. Eğer bana sorunuz yoksa. Bu hafta ödev ve birinci ödev ve projeyle ilgili seçimlerimizi yaparsak iyi olur. Çünkü yeni bir ödev geliyor hemen peşinden.
+
+65
+00:22:10,311 --> 00:22:13,371
+Hocam ben de Log Filter ile ilgili bir soru sorabilirim.
+
+66
+00:22:13,811 --> 00:22:14,651
+Tabi, buyurun.
+
+67
+00:22:14,991 --> 00:22:36,811
+Orada sigma değerlerine karşı yeni bir filter oluşturmamız lazım. Sigma değerlerini, fonksiyonunu aslında yazıyorum. Log filter'ın, ikinci türevinin fonksiyonu. Ama bizim yaptığımız gibi hocam tam sayılar çıkmıyor orada. İnternetten bulduğum farklı...
+
+68
+00:22:37,748 --> 00:22:42,847
+Nasıl denir? Sigma değerlerine karşılık gelen fonksiyonları, fonksiyonları diyorum tabii yanlış oldu.
+
+69
+00:22:43,728 --> 00:22:53,988
+Filterları kullansam olur mu? Yani üç tane farklı filter bulup, sigma değerlerini yazarak çalıştırsam, o filtry üretmeyi yapamadın mı?
+
+70
+00:22:56,468 --> 00:23:04,907
+Bu bölümden bir eksi puanınız olur ama diğer kısmı gerçekleştirebilirsiniz.
+
+71
+00:23:06,963 --> 00:23:21,043
+Yani kat sayıları aynı çıkmasını beklemeyin ya da tam sayı çıkmasını beklemeyin. Biz orada zaten bir normalizasyon yapıyoruz. Yani hepsinin toplamı mesela bir olacak şekilde normalize edip verebilirsiniz.
+
+72
+00:23:21,043 --> 00:23:34,963
+Veya hani çok küçük çıkıyor sayılar derseniz toplamı yüz olacak şekilde normalize edin. Hepsini toplayıp bulduğunuz sayıya var olan kat sayıları.
+
+73
+00:23:34,963 --> 00:24:00,563
+Bu da yüzde çarparak round edip bir görüntüleyebilirsiniz. Neye benzedi, nasıl oldu diye. Bir de çıkan kat sayılardan çok oluşan şekli çizdirin bakın. Bizim derste gördüğümüz şekilde çıkıyorsa eğer değerler çok da önemli değil orada.
+
+74
+00:24:01,107 --> 00:24:05,248
+Aynen hocam. Oradaki derlere yakın çıkıyor. Grafikte de onu anlıyorum zaten.
+
+75
+00:24:05,667 --> 00:24:11,047
+Tamam o zaman hiç sorun değil. Sadece normalize etmeyle alakalı bazı sorunlar olmuş olabilir.
+
+76
+00:24:12,047 --> 00:24:13,427
+Tamam hocam. Teşekkür ederim.
+
+77
+00:24:13,987 --> 00:24:14,587
+Rica ederim.
+
+78
+00:24:20,468 --> 00:24:35,588
+Evet, sevgili arkadaşlar, şimdi bir iki haftamız kaldı. Bu hafta half transformu ile iki boyutlu bir transformasyon işlemlerinden bahsedeceğim.
+
+79
+00:24:35,588 --> 00:24:42,788
+Önümüzdeki haftada corner detection.
+
+80
+00:24:44,372 --> 00:24:54,052
+Hock Features, Histogram of Oriented Gradients gibi Feature Extraction algoritmalarından bahsedeceğim.
+
+81
+00:24:54,052 --> 00:25:07,731
+Ve iki hafta içinde, bu hafta ve önümüzdeki hafta, klasik bilgisayarla görmede kullanılan temel algoritmaları görmüş olacağız.
+
+82
+00:25:09,844 --> 00:25:22,963
+İlerleyen haftalarda ise artık yapay sinir ağları ve derin öğrenme ile Computer Vision bölümüne geçeceğim.
+
+83
+00:25:23,604 --> 00:25:28,663
+Ve aşağı yukarı 3 hafta, 4 hafta da onun üzerinde konuşacağız. Güzel, ilginç konular geliyor.
+
+84
+00:25:28,663 --> 00:25:33,304
+Ama klasik taraftaki algoritmalar da bence çok önemli.
+
+85
+00:25:35,124 --> 00:25:55,963
+Yol gösteriyor. Belli bir algoritma yapısı içerisinde ileride işimize yarayacak belli fikirleri kazanmamızı sağlıyor. O açıdan ben bu bölümden vazgeçmiyorum ve klasik algoritmalarla ilgili bölümü işte 5-6 hafta kadar anlatıyorum.
+
+86
+00:26:03,124 --> 00:26:14,543
+Bu bir dönüşüm ve half transform'u kullanarak straight line detection yani bir görüntü içerisinde biz daha önce edge detection yaptık biliyorsunuz.
+
+87
+00:26:14,543 --> 00:26:26,624
+Kenarları bulduk. Bu kenarların bir doğru bir eğri ya da bir çember oluşturup oluşturmadığını nasıl detekt edebiliriz?
+
+88
+00:26:27,244 --> 00:26:30,384
+Buna yönelik bir bölüm olacak half transform'u.
+
+89
+00:26:31,124 --> 00:26:37,224
+Bunun güzel bir uygulaması, güzel bir örneği. Burada konu başlıkları arasında görüyorsunuz.
+
+90
+00:26:37,224 --> 00:26:48,063
+Integral Differential Operator dediğimiz bir operatör var. Bu operatör ile bir çalışma yapacağız. Integral Differential Operator.
+
+91
+00:26:48,463 --> 00:26:58,463
+Dogma'nın geliştirdiği bir operatör ama Circleer Half Transform'ı kullanıyor. Yani bir görüntü içerisindeki...
+
+92
+00:26:59,700 --> 00:27:19,960
+Çember veya ona benzeyen şekilleri bulmamıza yardımcı oluyor. Dogman bu algoritmayı iris detection için, yani insan gözünde biyometrik tanımada kullanılan iris bölgesini detekt etmek için geliştirmiş.
+
+93
+00:27:21,259 --> 00:27:25,500
+İlginç örnekler, ilginç uygulamalar göreceğiz.
+
+94
+00:27:27,251 --> 00:27:27,791
+Evet.
+
+95
+00:27:29,652 --> 00:27:57,652
+Bir kere half transform için bakacak olursak ilk olarak şunu belirtmemiz lazım. Görüntüye öncelikle bir edge detection işleminin uygulanmış olması gerekiyor. Görüntü üzerinde kenar noktalarının elde edilmesi ve bir binary image olarak bizim elimizde bunun olması gerekiyor. Bir edge detection algoritmasından sonra ben half transform'unu uygulayacağım.
+
+96
+00:27:57,652 --> 00:28:05,511
+uygulayabiliyorum. Performed after edge detection demiş. Burada ikinci madde de
+
+97
+00:28:05,511 --> 00:28:10,312
+it's a technique to isolate the curves of a given shape.
+
+98
+00:28:10,576 --> 00:28:27,716
+Shapes in a Given Image diyor. Bunu iki şekilde kullanabiliyoruz. Verilmiş bir şeklin kenarlarını bulmada ya da resimde verilen bir şeklin bulunmasında kullanıyoruz. Değişik uygulama örnekleri var.
+
+99
+00:28:37,076 --> 00:28:52,016
+Line, Circle, Parabol veya Ellipse formlu şekilleri bulabiliyoruz. Ayrıca bunun daha geliştirilmiş bir formu Generalized Tough Transform diye geçiyor.
+
+100
+00:28:55,347 --> 00:29:08,327
+Bu yöntemde genelleştirilmiş haf transformu da bu sistem ve bu saydığımız şekilleri bulmak için kullanılan yöntemler.
+
+101
+00:29:10,996 --> 00:29:28,456
+Half Transform'un avantajları ve dezavantajlarını konuşmamız lazım. Half Transform için diyor ki, is tolerant of gaps in the edge. Yani biz bir görüntü var, edge detection algoritmasını çalıştırdık.
+
+102
+00:29:28,456 --> 00:29:38,636
+Fakat edge üzerinde belli kopukluklar var. Yani buradaki belli noktalar çıkmamış. Arada bir ikisi çıkmış, devamı yok falan gibi.
+
+103
+00:29:38,996 --> 00:29:57,396
+Bu şekilde kopukluklar olsa bile, algoritma burada eğer bir line varsa, burada bir doğru geçirebiliyorsam ben bu noktalar, var olan noktalar üzerinden, bana bu doğrunun denklemini veriyor.
+
+104
+00:30:00,000 --> 00:30:08,600
+İkinci madde de diyor ki avantaj olarak Relatively Unaffected by Noise diyor. Gürültüden etkilenmediğini söylüyor.
+
+105
+00:30:08,600 --> 00:30:15,740
+Çünkü şöyle düşünün, aralarda böyle noktalar olabilir bu laynın etrafında. Bunlar çok önemli değil.
+
+106
+00:30:28,000 --> 00:30:36,620
+Tespit edilmesine, yani bu doğrunun denklemine bir zararı olmayacaktır. Çünkü az sayıda bir noktadan bahsediyoruz.
+
+107
+00:30:37,844 --> 00:30:58,963
+And it is also unaffected by occlusion in the image diyor. Görüntü üzerinde bunun üzerine bir cisim gelmiş olabilir ve bu çizdiğimiz doğrunun belli bir parçası görünmüyor olabilir. Yine önemli değil. Buna karşı da dayanıklı olduğunu belirtiyor.
+
+108
+00:31:06,740 --> 00:31:08,011
+Şöyle yapalım.
+
+109
+00:31:09,652 --> 00:31:20,331
+Şimdi, ilk olarak half transformu ile bir doğru nasıl tespit edilebilir? Bir doğru denklemini nasıl bulabiliriz?
+
+110
+00:31:20,331 --> 00:31:28,612
+Yani varsa bir görüntü içerisinde bir doğru parçası geçiyorsa, bunun denklemini nasıl ifade edebiliriz? Bununla başlayalım.
+
+111
+00:31:29,112 --> 00:31:37,652
+Normalde biz bir doğrunun denklemini verirken, y eşittir mx artı c şeklinde ya da ax artı b şeklinde yazıyoruz.
+
+112
+00:31:37,652 --> 00:31:56,692
+Fakat bu ifade, matematiksel doğru denklemi yapı olarak baktığımız zaman vertical line için, yani şöyle bir x'ye düzleminde şöyle bir dikey doğru için bu denklem çalışmıyor.
+
+113
+00:32:01,203 --> 00:32:19,203
+Haf Transform'unu kullanarak Line Detection yapmak istediğimizde Hesse Normal Form dediğimiz bir form kullanıyoruz. Doğruyu göstermek için. Bir doğrunun gösterilmesi için. Yeni bir form, yeni bir...
+
+114
+00:32:19,667 --> 00:32:29,688
+Hesse Normal Form dediğimiz form ile bu line'ı önce ifade edeceğiz.
+
+115
+00:32:29,688 --> 00:32:36,407
+Şimdi bununla ilgili size biraz açıklama yapayım. Nedir Hesse Normal Form?
+
+116
+00:32:42,516 --> 00:32:45,336
+Şuradan çıkacağız.
+
+117
+00:32:49,107 --> 00:32:54,107
+Bunun için şuradan devam edeyim.
+
+118
+00:33:07,571 --> 00:33:11,411
+Nedir Hesse normal form? Bakalım.
+
+119
+00:33:14,731 --> 00:33:20,631
+X-Y düzleminde bir doğru çizeceğim.
+
+120
+00:33:55,892 --> 00:33:59,892
+Kalemi düzeltemedim. Bir problem var.
+
+121
+00:34:01,892 --> 00:34:03,892
+Kalem seçili.
+
+122
+00:34:04,892 --> 00:34:06,764
+Ne yapıyor bu?
+
+123
+00:34:33,076 --> 00:34:35,896
+Bir şey girdi ama çıkartamadım.
+
+124
+00:34:45,748 --> 00:34:49,068
+Şimdi büyütelim. Zoom şeyine takıldı.
+
+125
+00:35:26,483 --> 00:35:33,943
+Evet, hocanın whiteboard ile imtihanı. Arkadaşlar, takıldık buradan çıkamıyoruz.
+
+126
+00:35:45,556 --> 00:35:47,244
+Niye böyle yaptı bu?
+
+127
+00:36:13,492 --> 00:36:34,771
+Olmadı. Şeyden devam edelim. Şu anda bunda bir sıkıntı yaşıyoruz. Şöyle yapalım. Demokraside çareler tükenmezmiş. Buraya efendim hemen bir new slide ekleyeyim. Tamam buradan devam ederiz.
+
+128
+00:36:37,715 --> 00:36:52,315
+Boş bir sayfa açtık. Güzel. Ben burayı istediğim gibi yazar çizerim şimdi. Benim amacım burada size hs normal form dediğim.
+
+129
+00:36:54,547 --> 00:37:16,307
+Bir doğru parçasını ifade edebileceğimiz yeni bir form göstereceğim. Diyor ki, bu sistem ben xy düzleminde şöyle bir line çizeyim. Line L1 olsun bu. Bu line'ın
+
+130
+00:37:17,139 --> 00:37:23,239
+x eksenin de kestiği noktaya a diyeyim.
+
+131
+00:37:23,987 --> 00:37:36,188
+Y ekseninde kestiği noktaya da B diyeyim. Hatta bunun mesafesi de X ekseninde A, Y ekseninde B gibi düşünebiliriz.
+
+132
+00:37:36,188 --> 00:37:51,847
+Diyor ki bu doğrunun doğruya bir normal çizelim yani bir dikme çizelim diyor. Orijinden geçen bir dikme çizelim diyor. Ve şurası bunun bu doğruya dik.
+
+133
+00:37:51,987 --> 00:38:08,307
+Orijinden geçen bir dikme. Şimdi burada bu dikmenin yatay eksenle x ekseniyle yaptığı açıya, yaptığı açıya ne diyelim, alfa ya da teta neyse bir alfa diyeyim. Tamam.
+
+134
+00:38:12,884 --> 00:38:20,003
+Şimdi benim ve bu dikmenin boyuna da P diyelim.
+
+135
+00:38:20,467 --> 00:38:33,268
+Bazısı P diyor, R diyor. Çok önemli değil, önemli olan fikir şimdi burada. Buna göre ben bir üçgen tanımladım burada. Bu orijin noktasına da O diyorum.
+
+136
+00:38:44,980 --> 00:38:48,980
+İntriangle
+
+137
+00:38:49,980 --> 00:39:05,900
+O, P, L dediğim üçgen. O, P, A. Özür dilerim. O, L, P olacak. Hemen düzeltiyorum. Eraser. Üçgeni.
+
+138
+00:39:09,492 --> 00:39:28,072
+O, L, A üçgeninin içinde alfa açısı için bir kos alfa yazacak olursam eğer. Kos alfa.
+
+139
+00:39:33,492 --> 00:39:46,192
+Komşu dikkenarın hipotenüse oranıydı. Komşu dikkenar P. Hipotenüs dediğim kenar ise nedir? A ya da işte OA dediğim uzaklık.
+
+140
+00:39:46,192 --> 00:39:48,192
+OA diyeyim.
+
+141
+00:39:50,332 --> 00:39:52,748
+Bir de, bir de...
+
+142
+00:39:55,795 --> 00:39:59,595
+O, L, B üçgeninde.
+
+143
+00:40:02,175 --> 00:40:06,076
+Şimdi diyorum ki, burada bir kalem rengi değiştirelim.
+
+144
+00:40:07,835 --> 00:40:11,235
+Efendim, şuradan kalemimizin rengini mavi yapalım.
+
+145
+00:40:11,835 --> 00:40:13,795
+Şu açı, şu açı.
+
+146
+00:40:16,195 --> 00:40:20,496
+90 eksi alfadır. Doğru mu?
+
+147
+00:40:22,643 --> 00:40:27,983
+Açı 90 derecedir. O zaman şu açı kaç derecedir acaba?
+
+148
+00:40:29,323 --> 00:40:30,703
+Alfa.
+
+149
+00:40:31,123 --> 00:40:32,483
+Güzel, teşekkür ederim.
+
+150
+00:40:33,023 --> 00:40:33,643
+Alfadır.
+
+151
+00:40:34,103 --> 00:40:40,523
+Şimdi bu alfa açısı için bana sinüs alfayı yazdırabilir misiniz?
+
+152
+00:40:40,863 --> 00:40:43,603
+O, L, B üçgeni içinde.
+
+153
+00:40:45,012 --> 00:41:12,392
+Sinüs alfa nedir? P bölü OB. P bölü OB'dir. Teşekkür ederim. Şimdi biz iki üçgen içerisinde bu şeyleri yazdık. Buna göre aslında ben buradan şuradaki OA uzaklığını yazabilirim. Bu da P bölü kos alfadır.
+
+154
+00:41:13,012 --> 00:41:20,792
+Buradan da OB uzaklığını yazabilirim. Bu da P bölü sin alfadır.
+
+155
+00:41:23,372 --> 00:41:33,632
+Şimdi biz bu Linen'in ekvejonini yazmak istiyoruz. Doğru denklemini yazmak istiyoruz.
+
+156
+00:41:40,851 --> 00:41:51,211
+Artı Y bölü B eşittir bir şeklinde yazabilirim. Bu nedir? İşte A ve B'den.
+
+157
+00:41:51,699 --> 00:42:14,939
+x eksenini a'da, y eksenini b'den kesen doğrunun denklemidir. Doğru mu? Burada a ve b yerine benim bu doğru denkleminin a, b dediğim uzaklıkları o, a ve o, b'yi yazarak ben bu doğru denklemini yeniden yazabilirim.
+
+158
+00:42:14,939 --> 00:42:17,539
+Şimdi doğru denklemini yazalım.
+
+159
+00:42:19,315 --> 00:42:20,855
+Doğru denklemini yazalım.
+
+160
+00:42:25,268 --> 00:42:25,768
+Pardon.
+
+161
+00:42:31,635 --> 00:42:42,635
+Neredeyiz? Şimdi şuraya bir sayfa daha eklemek istedim ama buradan Slide Show'dan çıkarsak yapamayız. Neyse o sayfaya yazalım biz gene.
+
+162
+00:42:42,635 --> 00:42:55,635
+Buraya yazalım. Line Equation'ı bu bizim bulduğumuz üçgen için şuraya yazacağım. Şöyle bir şey açtım buraya, alan açtım.
+
+163
+00:42:59,219 --> 00:43:06,859
+A dediğim uzaklık, OA uzaklığı ve OA uzaklığı P bölü, P bölü cos alfadır.
+
+164
+00:43:07,979 --> 00:43:18,539
+Artı, Y bölü, OB uzaklığı dediğim uzaklık, P bölü sin alfadır.
+
+165
+00:43:18,539 --> 00:43:21,460
+Ve bu da eşit 1'dir.
+
+166
+00:43:26,420 --> 00:43:44,680
+Alfa artı y çarpı sin alfa bölü p var parantezde. Bunu buraya aldım. Ve böylece yeni bir hesse normal form dediğimiz formda doğru denklemi tarif etmiş olduk.
+
+167
+00:43:53,619 --> 00:44:16,659
+Doğrunun üzerindeki her x ve y noktası için, yani işte şurada bir nokta, doğrunun üzerinde aldığım her yeni noktanın x ve y değerleri için bu bulduğumuz alfa açısı ve p değeriyle çalışan bir doğru denklemi olmuş oluyor bu.
+
+168
+00:44:16,659 --> 00:44:20,059
+Hesse normal form dediğimiz formda.
+
+169
+00:44:20,899 --> 00:44:21,099
+Tamam.
+
+170
+00:44:22,099 --> 00:44:43,400
+Daha önce görmüş müydünüz bilmiyorum bu Hesse Normal formu. Ben Haft Transformu ile tanışana kadar görmemiştim. Hatırlamıyorum hiç böyle bir şey kullandığımı. Bu şeyde yöntemi kullanmaya başladığımda bunun mevcudiyetinden haberim oldu öyle söyleyeyim.
+
+171
+00:44:46,068 --> 00:44:55,488
+Bakın, burada artık doğruyu ve doğru denklemini ifade etmek için ben bu formülü kullanacağım.
+
+172
+00:44:55,708 --> 00:45:00,428
+x çarpı cos theta, y çarpı sin theta, o da eşittir, r.
+
+173
+00:45:00,428 --> 00:45:08,428
+Burada theta dediğimiz açı, şurada çizdiğimiz doğrunun yatay eksenle, yani yatay eksenle...
+
+174
+00:45:08,559 --> 00:45:18,579
+Özür dilerim, şöyle diyelim. Bu doğrunun orijinden geçen dikmesinin orijini olan uzaklığına ro ya da re diyor.
+
+175
+00:45:19,059 --> 00:45:44,619
+Bu dikmenin yata eksenle yaptığı açıya teta diyor. Ve bu şekilde aslında artık bu doğru üzerindeki her noktanın, işte burada 1, 2 ve 3 ile gösterdiği noktalar, bunların her biri için aynı r ve teta değeri ile ben bu doğruyu ifade edebiliyorum.
+
+176
+00:45:46,612 --> 00:45:56,832
+Buraya kadar sorunuz var mı? Çünkü bu anlattığım sadece doğru denklemiyle ilgiliydi. Anlaşıldı sanıyorum. Varsa sorunuz?
+
+177
+00:46:01,300 --> 00:46:02,840
+Yok, peki.
+
+178
+00:46:03,635 --> 00:46:12,635
+Yani bu doğru denklemi ve yeni işte kullandığımız Hesse Normal Form dediğimiz form için böyle bir iki örnek de yapabilirsiniz.
+
+179
+00:46:12,635 --> 00:46:29,716
+Mesela bu tete açısını 45 derece seçsek, ne bileyim ro uzaklığını iki seçsek, buna göre bir doğru çizsek ve bu doğrunun üzerindeki tüm noktaları bu şekilde işte x'i kestiği noktayı, y'yi kestiği noktayı vesaireyi bulabilirsiniz.
+
+180
+00:46:32,019 --> 00:46:47,699
+Half Transform ya da Half Plane dediğimiz Plane'de ne yapılıyor? Bakın bu sol tarafta verilmiş olan bir doğru ve bu doğrunun orijinden geçen dikmesi.
+
+181
+00:46:48,307 --> 00:47:01,307
+Ve teta açısı gösterilmiş. Sağ tarafta ise bu şekilde ilgili bir half plane dediğimiz, half transform için kullandığımız bir grafik oluşturulmuş.
+
+182
+00:47:01,307 --> 00:47:10,728
+Half transform diyor ki bu doğrunun üzerindeki tüm noktalar için bu r ve teta değerleri sabittir.
+
+183
+00:47:10,807 --> 00:47:16,307
+Burada p demiş, şunda da tekrar p ya da bunu bir ro harfine...
+
+184
+00:47:16,307 --> 00:47:29,867
+Benzetebilirsiniz neyse. Half plane dediğimiz bir plane de bu doğruyu nasıl bulabiliriz bunu ifade etmeye çalışıyor.
+
+185
+00:47:29,867 --> 00:47:41,827
+Şimdi biz görüntü üzerinde bir edge üzerindeki noktaları biliyoruz. Yani biz bir edge detection işlemi yaptık önce.
+
+186
+00:47:44,467 --> 00:47:47,467
+Ve Edge Dedection işleminin sonunda...
+
+187
+00:47:47,476 --> 00:47:57,876
+Elimizdeki görüntü matrisinin içerisinde şöyle, şöyle doğrular çıktı. Ben bu doğruların doğru denklemlerini bulmaya çalışıyorum. Amacım bu aslında.
+
+188
+00:47:58,536 --> 00:48:03,916
+Ve her bir doğru için, doğru parçası için bunun denklemini yazmaya çalışacağım.
+
+189
+00:48:03,916 --> 00:48:14,636
+Şimdi bu doğru parçasının denklemini yazmak için şunu yapıyoruz. Bu doğrunun üzerinden geçen her nokta için, burada 1, 2, 3 ile işaretlenmiş noktalar.
+
+190
+00:48:15,476 --> 00:48:34,416
+Bunun üzerinden her yönde doğru geçebilir diye düşünüyorum. Her yönden doğru geçebilir. Ama bu yönleri, burada sağ tarafta gördüğümüz half plane'deki theta, rho, buna akümülatör deniyor.
+
+191
+00:48:38,356 --> 00:48:47,735
+Akümülatör matrisi dediğimiz bir matris üzerinde bunları topluyorum ve birleştiriyorum.
+
+192
+00:48:47,735 --> 00:48:58,115
+Bu mesela burada bir numaralı noktadan geçen bu doğruların her biri için.
+
+193
+00:48:58,452 --> 00:49:06,212
+Doğruların her biri için farklı teta açıları ve ro değerleri için bu eğri çizilmiş.
+
+194
+00:49:06,932 --> 00:49:14,632
+Daha sonra iki numaralı noktadan geçebilecek işte onlarca, yüzlerce doğru olabilir.
+
+195
+00:49:15,132 --> 00:49:19,472
+Bu doğruların her birinin farklı teta ve ro değeri vardır.
+
+196
+00:49:19,472 --> 00:49:26,452
+Bu iki numaralı noktadan geçen bu her yönde çizilebilecek doğruları.
+
+197
+00:49:26,452 --> 00:49:37,372
+Grafiği de şu şekilde burada çizilmiş. Ve benzer şekilde üçüncü noktadan onlarca belki yüzlerce böyle doğru geçirebiliriz.
+
+198
+00:49:38,195 --> 00:49:50,996
+Farklı doğru geçirebiliriz. Bununla ilgili geçen doğruların akümülatör matrisindeki konumları işte her bir geçen doğru için buraya bir yazıyorum ve bunu oluşturuyorum.
+
+199
+00:49:50,996 --> 00:49:59,496
+Fakat bu üç nokta için bir, iki ve üç numaralı noktaların kesişim noktası yani şurası.
+
+200
+00:50:00,179 --> 00:50:11,840
+Üç noktanın da aynı doğru üzerinde olduğu teta ve ro değerleri için aynı değeri taşıyacaktır.
+
+201
+00:50:11,840 --> 00:50:15,500
+Dolayısıyla akümülatör matrisinde bu...
+
+202
+00:50:16,083 --> 00:50:33,543
+Teta ve ro değeri için aynı göze bir volt atacak. Yani bir oy atacak. Ve bu akümülatör matrisi olduğu için her bu şekilde atılan oyu üst üste toplayacak.
+
+203
+00:50:33,543 --> 00:50:42,844
+Ve sonuçta ben bu akümülatör matrisi dediğim matrisin içerisinde hangi gözde en büyük sayı var buna bakacağım.
+
+204
+00:50:44,083 --> 00:51:01,503
+En büyük sayının olduğu göz aslında benim aradığım teta ve ro değerini gösterir ve bu da benim çizeceğim doğrunun parametreleri olan teta ve ro değerine ulaşmamı sağlar diyor.
+
+205
+00:51:06,260 --> 00:51:15,600
+Haf Transform'unu bir doğru denklemini bulmak için kullanırken bunun avantajları nelerdir diye bakacak olursak.
+
+206
+00:51:17,235 --> 00:51:38,995
+Rho değerinin ve Theta değerinin bounded yani sınırlı olduğunu söylüyor. Neden? Theta açısı 0 ile 180 derece arasında olabilir. Ben bunları birer derecelik değişimler için tarayacak olsam Theta için işte oluşturacağım akümülatör madresinde Theta 180 farklı değer alabilir.
+
+207
+00:51:45,235 --> 00:51:57,475
+Bu şekilde bir line geçiyorsa, bunun bir eksene olan uzaklığı için görüntünün enini boyunu biliyorum.
+
+208
+00:51:57,895 --> 00:52:02,275
+Diagonaldeki uzaklığı en büyük uzaklık olabilir diyebilirim.
+
+209
+00:52:02,275 --> 00:52:08,735
+Ve işte rho değerinin alabileceği en büyük değer olarak.
+
+210
+00:52:09,715 --> 00:52:34,135
+Rho'nun alabileceği en büyük değer olarak şu görüntünün ana diagonal uzaklığını bir sınır olarak alabilirim. En kötü durum için. O nedenle bu çözümde hem Rho değeri hem de Theta değeri için bir sınırlı bir aralıkta değişebilir denebiliyor.
+
+211
+00:52:37,715 --> 00:53:05,635
+Bir de burada dezavantajlarından bahsedelim. Görüntü üzerinde her bir noktadan geçecek böyle yüzlerce doğru için bu analizi yapmak hakikaten çok işlem karmaşıklığı, yüksek bir yük anlamına geliyor ve çok yavaş çalışıyor. Böyle bir doğruyu bulmak ya da bir circle'ı bulma noktasına geldiğimizde hızlı bir yöntem olduğunu söyleyemeyiz.
+
+212
+00:53:05,715 --> 00:53:08,355
+Çok yavaş olduğunu belirtmemiz lazım.
+
+213
+00:53:10,291 --> 00:53:27,291
+Ve diyor ki, how to find intersection of the parametric curves. Az önce konuştuğumuz gibi bir akümülatör matrisi oluşturuyoruz dedik. Bu akümülatör matrisi, burada akümülatör array demiş. Aslında iki boyutlu yani bir matris var.
+
+214
+00:53:38,291 --> 00:53:49,251
+İçerisinde en çok oyu alan göz bizim aradığımız teta ro değeri yani ilgili doğrunun parametrelerini bize verecek diyoruz.
+
+215
+00:53:50,612 --> 00:54:00,192
+Burada güzel de bir örnek var. Ben bu örneği çok seviyorum. Wikipedia'nın sayfasında görmüştüm bunu. Bu çizimi daha doğrusu.
+
+216
+00:54:00,192 --> 00:54:11,212
+Diyor ki, benim elimde burada gördüğünüz pembeyle işaretli doğru olsun ve bu doğrunun üzerindeki üç tane nokta elimde var.
+
+217
+00:54:11,772 --> 00:54:13,932
+Bakın üç tane noktayı da oraya çizmiş.
+
+218
+00:54:18,612 --> 00:54:24,552
+Her birinin üstünden onlarca, yüzlerce farklı yönde doğru geçebilir.
+
+219
+00:54:25,472 --> 00:54:35,452
+Biz varsayalım ki bir akümülatör matrisi oluşturuyoruz ve teta açısını 30 derecelik açılarla tarıyoruz.
+
+220
+00:54:35,452 --> 00:54:41,112
+Yani nereden başlamış? Sıfırdan başlamış. Sıfır olabilir bu teta açısı.
+
+221
+00:54:42,052 --> 00:54:46,612
+Sonra işte birer derecelik aralıklarla değil de 30-30 aralıklarla yüz.
+
+222
+00:54:46,612 --> 00:54:57,012
+Akümülatör madresinde 2, 4, 6 tane teta değeri var.
+
+223
+00:54:58,228 --> 00:55:24,387
+Distance dediği şey de row'yu gösteriyor. Benim elimde, burada gördüğümüz şu işaretli siyah noktalar var. Şimdi bu noktanın ben x, y koordinatlarını biliyorum. Theta açısı sıfır olan doğrunun bana row'sunu ya da az önce çizdiğimiz şekildeki p uzaklığını hesapla diyorum.
+
+224
+00:55:26,228 --> 00:55:42,128
+Bunları yerine yazarak oluşturuyorum. Ve birinci noktadan sıfır derece teta ile geçen doğrunun distansı, distansı burada gördüğümüz gibi kırk olarak hesaplanıyor. Formülde yerine yazıyorsunuz.
+
+225
+00:55:45,648 --> 00:56:05,608
+30 derece açı için aynı hesaplamayı yapıyorsunuz. İşte buradaki P uzaklığını ya da R uzaklığını 69.6 buluyor. Daha sonra işte 60 derece teta açısı için 81.2 buluyor.
+
+226
+00:56:13,648 --> 00:56:15,648
+Doğrunun.
+
+227
+00:56:20,648 --> 00:56:26,668
+Şurada maviyle gösterdiği arkadaşlar. Bakın burada maviyle çizilmiş olan.
+
+228
+00:56:28,407 --> 00:56:28,648
+Tamam.
+
+229
+00:56:31,088 --> 00:56:34,648
+Ondan sonra yeşille çizdiği doğru şu.
+
+230
+00:56:36,851 --> 00:56:58,951
+Şu yeşille çizdiği doğru. Yani birinci noktadan açık mavi ile geçen, bu doğrunun yüzey normali, bu doğruya dik olan, orijinden geçen doğrunun yatı eksenle yaptığı açı tete açısı sıfırdır.
+
+231
+00:56:59,471 --> 00:57:01,652
+Takip edebiliyor musunuz ne demek istediğimi?
+
+232
+00:57:04,019 --> 00:57:05,019
+Evet hocam.
+
+233
+00:57:08,480 --> 00:57:14,980
+Mavi ile çizilmiş olan şu doğrunun dikmesi budur.
+
+234
+00:57:15,987 --> 00:57:22,767
+Ve bu dikmenin yatay eksenle x ekseniyle yaptığı açı 0 derecedir.
+
+235
+00:57:23,467 --> 00:57:32,587
+Bunun ro uzaklığı, formülde x'ini, y'sini biliyorsunuz, tetasını biliyorsunuz, yerine yazarsanız 40 çıkıyor.
+
+236
+00:57:32,587 --> 00:57:43,587
+Ondan sonra diyor ki bu noktadan 30 derece eğimli, bakın burada gördüğümüz 30 derece eğimli yeşille çizilmiş olan doğru eğer geçseydi.
+
+237
+00:57:43,987 --> 00:58:08,971
+Bu örneğe bakalım.
+
+238
+00:58:09,108 --> 00:58:30,168
+Sonra 90 için hesaplıyor, 120 ve 150 için hesaplıyor. Sonra noktayı değiştiriyor. İkinci noktaya geçiyor. Bakın burada görüyorsunuz. Buradan aynı şekilde 0, 30, 60, 90, 120 ve 150 derece için doğruları geçiriyor.
+
+239
+00:58:30,168 --> 00:58:37,108
+Ve bunlar için aynı hesaplamaları, distansları tekrar hesaplıyor. Ve üçüncü nokta için aynı şeyi hesaplıyor.
+
+240
+00:58:37,108 --> 00:58:52,108
+Diyor ki burada, lütfen dikkat edin, 60 derece için hesapladığımız tüm noktalar için ro uzaklığı 80.6 çıkıyor.
+
+241
+00:58:52,887 --> 00:58:59,928
+Ya da işte o civarda çıkıyor diyor. 80'e yakın bir değer veriyor bize diyor. Belki yuvarlama hataları vs. ile.
+
+242
+00:59:03,699 --> 00:59:23,359
+Doğrunun x-y koordinatlarını bildiğimiz noktaları üzerinden giderek bu doğrunun teta açısı ve ro uzaklığını yani bir parametresini, doğru denkleminde kullanılan parametresini bulmuş oluyoruz.
+
+243
+00:59:23,359 --> 00:59:31,659
+Güzel, çok güzel bir algoritma. Ve işte bunu akümülatörde biriktirdiği için, bakın 60 derece için.
+
+244
+00:59:31,699 --> 00:59:39,979
+60 derece için. Yatay eksende teta açısını koymuş.
+
+245
+00:59:40,563 --> 01:00:03,443
+Dikey eksene ise distance'ı koymuş. 80 gözünde akümülatörün daha fazla değer biriktirdiğini, çünkü oradan geçen doğruların sayısı daha fazla olduğu için bu doğrunun üzerindeki tüm noktalar 60'a.
+
+246
+01:00:03,827 --> 01:00:19,348
+Teta açısı 60, ro değeri 80 olan göze o yatacak. Oradan bu gözde biriken değer çok büyük çıkacak ve ben buradan faydalanarak doğrunun denklemini bulabileceğim diyorum.
+
+247
+01:00:19,348 --> 01:00:31,348
+Evet, burada algoritmanın adımları kısaca özetlenmiş.
+
+248
+01:00:34,003 --> 01:00:55,143
+Ne yapmam gerekiyor? Quantize the half-transform space. Önce half-transform uzayının boyutlarına karar vermem gerekiyor. Teta açısı için 0-180 derece aralığı istediğimiz hassasiyette bölümlenerek bir teta açısı taraması yapılacak.
+
+249
+01:01:02,003 --> 01:01:29,903
+Ana köşegen üzerindeki uzaklık bir maksimum rho değeri olarak alınabilir. Yani sıfırdan işte diagonale kadar olan uzaklığı, teta açısını da sıfırla 180 derece arasında istediğimiz hassasiyette aralıklara bölerek bir akümülatör matrisi oluşturacağız ve bu matris üzerinden doğrunun parametrelerini, teta rho parametrelerini
+
+250
+01:01:30,003 --> 01:01:35,083
+Algoritma kısaca böyle özetlenebilir.
+
+251
+01:01:35,731 --> 01:01:54,192
+Haf Transform'unu kullanarak Circle Detection'da yapabiliyoruz. Biz bu şeyi çokça kullandık çalışmalarımızda. Haf Transform'un da Circle Detection'ı. Bunda da Circle, yani çember denkleminden faydalanıyoruz.
+
+252
+01:01:54,192 --> 01:02:03,192
+Çember denkleminde x eksi a'nın karesi artı y eksi b'nin karesi eşit r kare. Burada a ve b'nin hatırlarsınız.
+
+253
+01:02:03,731 --> 01:02:11,871
+Çemberin merkezini gösteriyor, merkez noktalarını gösteriyor. Şöyle yapalım. A ve B.
+
+254
+01:02:12,884 --> 01:02:32,604
+R değerleri çemberin merkezini gösteriyor. Bu merkezden geçen R yarı çaplı bir çemberin denklemini kullanıyoruz. Bunun için üç tane parametremiz oluyor. Az önce doğru denklemini üzerinde çalışırken teta ve ro diye iki tane parametremiz vardı.
+
+255
+01:02:40,884 --> 01:02:47,244
+Dolayısıyla akümülatör matrisi üç boyutlu olmak zorunda bu durumda.
+
+256
+01:02:52,724 --> 01:03:08,104
+Çemberin üzerindeki her bir X, Y, Y noktası için bu çember denkleminden faydalanabiliyoruz. Merkez noktalarını istersek şu şekilde yazıp bu çalışmada bundan da faydalanıyoruz.
+
+257
+01:03:15,923 --> 01:03:34,784
+Sol tarafta bir orijinal görüntü var. Sağ tarafta bu orijinal görüntüye Kenny Edge Detection yöntemi uygulanmış ve böyle bir binary image oluşturulmuş. Arka plan siyah yani sıfırlardan oluşuyor. Foreground dediğimiz bölüm yani edge'ler beyaz ile ifade edilmiş.
+
+258
+01:03:43,923 --> 01:03:56,123
+Bu görüntüde mevcut tüm çemberleri bu çemberlerin A ve B dediğim merkez noktalarını ve bunların yarı çaplarını hesaplayabiliyor.
+
+259
+01:03:56,123 --> 01:03:58,844
+Burada.
+
+260
+01:03:59,411 --> 01:04:17,152
+Half Transform'u için, Circular Half Transform'u için, CycImage altında HalfCircle diye hazır bir fonksiyonu kullanarak bunun nasıl yapıldığını görebilirsiniz.
+
+261
+01:04:17,152 --> 01:04:21,891
+HalfCircle fonksiyonunu burada kullanmış.
+
+262
+01:04:26,387 --> 01:04:40,364
+Sentetik bir görüntü oluşturulmuş. Yüze yüzlük bir sıfırlardan oluşan matriz tanımlanmış. Daha sonra bu alanın içerisinde...
+
+263
+01:04:41,523 --> 01:04:58,623
+Merkez noktası row 25, column 35 olacak şekilde. Yarı çapı 23 olan bir çember, circle çizilmiş. Dolayısıyla artık bu bölümde elimizde bir binary image var.
+
+264
+01:05:08,527 --> 01:05:29,067
+Bu şurada tanımladığı imaj üzerinde uygulamış. TryRady dediği ise parametreleri kullanacağı haf transformunun parametrelerini gösteriyor.
+
+265
+01:05:29,811 --> 01:05:40,811
+Yarı çap için hangi aralıkta bir çalışma yapacak? 5 ila 50 arasında olabilir demiş.
+
+266
+01:05:40,811 --> 01:05:49,811
+Bunu daha hızlı çalışmasını istiyorsak, çünkü bizim R yarı çapımız burada 23 olarak verilmişti. Bu reincin içerisinde...
+
+267
+01:05:51,059 --> 01:06:08,039
+Diyor ki, R yarı çapının alabileceği değerler 5 ile 50 arasında olabilir. Buna göre bu aralık içerisinde birer birer R değerini arttırarak bu işlemi gerçekleştirecek. Yani akümülatör maddesini buna göre oluşturacak.
+
+268
+01:06:19,059 --> 01:06:39,052
+Bu örneğe bakalım.
+
+269
+01:06:43,476 --> 01:06:48,096
+Ay ben kaybolmuşum arkaya gidince. Peki şöyle geri çıkalım.
+
+270
+01:06:52,148 --> 01:06:54,148
+Anlaşıldı mı? Yaptığımız işlem...
+
+271
+01:06:55,380 --> 01:07:15,980
+Hocam, şu en son yaptığımız örnekte R değerlerini vererek çizdirmişiz ya, ama aslında bir önceki linendaki mantık burada da geçerli olduğuna göre, biz AB değerlerini yine VOLS olarak verip, bize optimum R'yi vermesini bekliyorum değil mi?
+
+272
+01:07:23,380 --> 01:07:29,140
+Hayır, şöyle. Bizim artık akümülatör matrisimiz üç boyutlu.
+
+273
+01:07:29,568 --> 01:07:56,068
+A, B ve R değerleri değişiyor. Tamam mı? Ben bu üç boyutlu matrisin içerisinde mesela A'nın ve B'nin görüntü yüze yüz olduğu için işte diyebilirim ki işte diagonalden gidiyorsak eğer ne oluyor? Yüz kök iki mi oluyor orası? Kadar bir aralıkta değişecek diyorum. Sıfırdan yüz kök ikiye kadar bir aralıkta değişecek diyorum. A değeri.
+
+274
+01:07:57,568 --> 01:08:16,948
+Böyle bir aralık belirliyorum. R değeri, radyos için ise 5 ile 50 arasında değer alabilir diyorum. Sonra görüntü üzerinde bulduğu her circle için, circle'ın üzerindeki her bir nokta için bu noktaların x'ini y'sini biliyor.
+
+275
+01:08:25,568 --> 01:08:47,347
+A, B değeri yani ben bu matris üzerinde diyorum ki merkezi şu A, bu B değerine sahip nokta için buradan bir çember geçirdiğimde, tabii R yarı çapını verdiğim bir çember, bu matris üzerinde bir şeyle örtüşüyor mu?
+
+276
+01:08:53,363 --> 01:08:59,903
+Biz bu matriz içerisinde, üç boyutlu matriz içerisinde ilgili bir göze oy atıyoruz.
+
+277
+01:09:01,023 --> 01:09:03,183
+Orada AB'de mi vardı? Ben onu görmemiştim.
+
+278
+01:09:03,183 --> 01:09:13,183
+Tabii tabii var. AVB'de var. Yani bu şeyde, circle çizdirme işleminde bizim metre sayımız...
+
+279
+01:09:13,807 --> 01:09:18,487
+A, B ve R. Çünkü merkezinde bilmiyoruz bu çerpe.
+
+280
+01:09:18,487 --> 01:09:20,728
+Örnekte ben görmüyorum şimdi A, B'yi. Tamam hocam.
+
+281
+01:09:20,728 --> 01:09:24,948
+Üç boyutlu oluyor o yüzden akümülatör matrisimiz.
+
+282
+01:09:28,916 --> 01:09:49,416
+Evet, peki bir ara verelim. Ondan sonra size Dogma'nın integral differential operatörünü anlatacağım. Ama bunun için önceki konuyu anlamış olmanız gerekiyor. Anlamadığınız bir nokta varsa lütfen aradan sonra sorunuz. Hazırdayın sorunuzu chatten de yazabilirsiniz. 10 dakika ara.
+
+283
+01:27:25,108 --> 01:27:38,007
+Evet, merhaba arkadaşlar. Kusura bakmayın. Ara uzadı. Bölümden bir telefon geldi. O görüşme sebebiyle maalesef geç başlamak zorunda kaldım.
+
+284
+01:27:38,927 --> 01:27:43,587
+Herkes burada mı bakayım? Neredesiniz? Ellerinizi göreyim. Raise your hand please.
+
+285
+01:27:46,128 --> 01:27:49,387
+Evet, hoca kayboldu. Siz de mi kayboldunuz yoksa?
+
+286
+01:27:52,212 --> 01:28:06,172
+Evet, 13 kişi bilgisayarın başında. 14. [öğrenci] ile 14, 15 kişi. 13 kişi yok. Hay Allah. Peki.
+
+287
+01:28:11,283 --> 01:28:25,863
+Peki hala. Soru var mı diye sormuştum. Varsa sorularınız yazın demiştim chat tarafına. Anlattığım bölümle ilgili soru yok herhalde gördüğüm kadarıyla.
+
+288
+01:28:33,876 --> 01:28:39,275
+Şimdi yeni ödev konusuyla ilgili açıklama yapacağım. Lütfen beni dikkatli dinleyin.
+
+289
+01:28:41,275 --> 01:28:49,316
+Half Transform'undan bahsederken Dogma'nın Integro Differential Operator'ından da bahsetmiştim.
+
+290
+01:28:49,876 --> 01:28:58,316
+Önemli bir konu başlığı Half Transform'u benzeri bir yapı kullanarak Iris...
+
+291
+01:28:58,912 --> 01:29:12,532
+Biometrik tanımada kullanılan irisin çevresini işaretlemek için, yani bu gözün iris bölgesini çevreleyen çemberi çizdirmek için kullanıyor.
+
+292
+01:29:13,231 --> 01:29:15,992
+Integral Differential Operator'ı.
+
+293
+01:29:17,652 --> 01:29:23,431
+Ve Integral Differential Operator dediğimiz operatörün formülü bu.
+
+294
+01:29:23,811 --> 01:29:39,652
+Tabii formül bize böyle bakınca bir şey anlam ifade etmiyor ama artık bir şeyleri half transformunda öğrendiğiniz için buradan giderek size step by step bu formül bize ne anlatıyor bunu açıklamaya çalışacağım.
+
+295
+01:29:39,652 --> 01:29:45,551
+Giriş görüntüsü olarak sol tarafta gördüğümüz şekilde çekilmiş fotoğraflar veriliyor.
+
+296
+01:29:45,652 --> 01:29:56,791
+Fotoğraf Grayscale bir imaj. Bu aynı zamanda ikinci ödev ile ilgili bir açıklamadır arkadaşlar.
+
+297
+01:30:00,372 --> 01:30:14,452
+UBRIS dataset'i diye bir dataset'imiz var. Orada bu şekilde çekilmiş. Her kişinin, her insanın sağ ve sol gözünün ayrı ayrı beşer tane fotoğrafı çekilmiş.
+
+298
+01:30:28,372 --> 01:30:29,932
+Görüntünüzü bu şekilde
+
+299
+01:30:32,115 --> 01:30:54,435
+İstenen formatta çekilip sisteme yüklenmesi gerekiyor. Daha sonra işte her bir göz için beş tane ayrı fotoğraf var demiştim. Bunların dördü sistemde input olarak dururken beşinci görüntüyle bir verification ya da authentication yapıyorsunuz. Bu kişi bu kişi midir? Doğru kişi midir? Bunun testini yapıyorsunuz.
+
+300
+01:30:59,155 --> 01:31:05,456
+İrisi çevreleyen bir çemberin çizdirilmesi ve bu bölgenin işaretlenmesi gerekiyor.
+
+301
+01:31:06,056 --> 01:31:17,275
+Bunun için Dogman araştırmacının adı bir çalışma yapıyor ve Integro Differential Operator dediğimiz operatörü tanımlıyor.
+
+302
+01:31:21,779 --> 01:31:39,279
+Bir I, X, Y input imici var. Burada I image demiş. R dediğimiz parametre işte yarı çapı gösteriyor. Burada G dediğimiz Gaussian distribution'u gösteriyor. Bir Gauss dağılımı var.
+
+303
+01:31:39,279 --> 01:31:49,079
+Ve Gaussian submitting function and as the contour of circle.
+
+304
+01:31:49,971 --> 01:32:04,851
+S dediğimiz parametrede çizdirdiğimiz çemberin kenarı anlamında bir sembolü ifade ediyor.
+
+305
+01:32:04,851 --> 01:32:07,912
+Şimdi ilk olarak şuradan başlayacak olursak.
+
+306
+01:32:10,355 --> 01:32:32,268
+Denklemin en sağdaki parçası bir integral işlemi yapılıyor. Bu integral aslında bize verilmiş olan görüntü düzleminde bir...
+
+307
+01:32:33,108 --> 01:32:58,108
+R yarı çapı, X0 ve Y0 merkez noktası, bu çemberin merkez noktasını gösteren X0, Y0 merkez noktaları ve R yarı çaplı bir çemberin üzerinde kalan noktaların, I, X, Y dediğimiz bu çemberin üzerindeki noktaların.
+
+308
+01:33:02,003 --> 01:33:17,323
+İntegral işlemi demek bu piksellerin toplamını alıyor demek. Yani şöyle düşünün. Burada X0, Y0 merkez noktasına sahip şöyle bir nokta var.
+
+309
+01:33:20,916 --> 01:33:28,916
+Merkeze sahip bir çember çiziyorum. Bu çemberin bir R yarı çapı var.
+
+310
+01:33:28,916 --> 01:33:37,336
+Ve bu kullandığım üç parametre ile ben bu çemberin üzerinde geziyorum.
+
+311
+01:33:47,188 --> 01:33:53,467
+Parlaklık değerlerinin, intensity değerlerinin toplamını alıyorum. Neden? Çünkü integral işlemi var burada.
+
+312
+01:33:55,327 --> 01:34:08,407
+Ve bu toplamı 2 pi r'ye bölüyorum. Bu nedir? Çevre uzunluğu. Yani bir nevi çevre uzunluğuna göre bu toplamı normalize ediyorum.
+
+313
+01:34:12,407 --> 01:34:13,407
+Sonra...
+
+314
+01:34:12,212 --> 01:34:30,212
+Bu formül, şimdi ben bir göz fotoğrafı, buradaki input imici verdiğim zaman, şunu input olarak verdiğim zaman, fxy ya da ixy olarak, bu giriş görüntüsünü önce...
+
+315
+01:34:30,836 --> 01:34:58,236
+Bir Edge Detection algoritmasının uygulanması gerekiyor demiştik. Yani bir Kenny Edge Detector gibi bir kenar bulma algoritması uygulanıyor. Bu bir Binary Image'e dönüştürülüyor. Binary Image'de işte bu beyaz siyah geçişlerinin olduğu şu bölgeler, bu bölgeler böyle kenar olarak bize işaretlenip geliyor. Artık ben bir Binary Image üzerinde burada gördüğüm Integral Differential Operator'u çalıştırıyorum.
+
+316
+01:34:59,731 --> 01:35:20,471
+Ve aslında ben bu gözün merkez noktasını bilmiyorum. R yarı çapını da bilmiyorum. Ama giriş görüntüsünde her bir nokta için buranın merkez noktası kabul edip buradan R yarı çaplı bir çember çizdiriyorum.
+
+317
+01:35:24,351 --> 01:35:52,351
+Bakıyorum. Daha sonra, tabi bilmediğim için arıyorum. Bu merkez noktası orası değil de bir piksel sağı olsaydı, orası değil bir piksel üstü olsaydı gibi tüm noktaların bir merkez olduğunu kabul ederek bu şekilde sürekli bir alternatif olası merkez olabilecek noktaları belirleyip buralardan geçen
+
+318
+01:35:52,351 --> 01:36:10,931
+İşte R içinde yine belli bir aralıkta bir yarı çap rengim var. Bu bölge içerisindeki tüm circle'ların integralini alıyorum. Yani bu piksellerin üst üste toplamını alıyorum.
+
+319
+01:36:13,684 --> 01:36:36,264
+Daha sonra, tabi bu işlemi mesela x0, y0, r yarı çapı için yaptım. Bunu diyor, r'ye göre türevini al diyor. Yani bu r yarı çapı için, sonra bir r artı bir yarı çapı için, bir de r eksi bir yarı çapı için ben bu hesaplamaları yaptım.
+
+320
+01:36:37,140 --> 01:36:46,460
+Daha küçüğü, R-1, R ve R-1 dediğim yarı çapa sahip çemberler için de bu toplamları aldım.
+
+321
+01:36:46,460 --> 01:37:02,079
+Burada D bölü DR dediğim zaman, en içte bulduğum çemberin üstündeki noktaların toplamından, bir sonraki çizdirdiğim çemberin üstündeki noktaların toplamı arasında fark alıyorum.
+
+322
+01:37:02,180 --> 01:37:03,780
+Bakın buradaki türevin anlamı bu.
+
+323
+01:37:04,948 --> 01:37:12,308
+Ve lütfen şunu düşünün. Ben bir iris görüntüsü var elimde. Bunun içi olduğu gibi siyah.
+
+324
+01:37:12,308 --> 01:37:29,248
+Ve R yarı çapı, R yarı çapı, bir R iken veya R artı bir olduğunda, bakın şunun üzerinde bulduğum toplamlar ile, yani ya da şöyle söyleyelim, bu R yarı çapı için bulduğum toplam ile,
+
+325
+01:37:29,876 --> 01:37:35,876
+Bunu 1 arttığımda, R artı 1 için çizdirdiğim çemberin üstünde bulduğum toplamlar...
+
+326
+01:37:36,659 --> 01:38:00,000
+Farklı olacaktır. Neden? Çünkü artık ben gözün akını beyazı üzerindeki bölgede bu toplama işlemi yaptığımda, bu bölgede bir edge olmadığı için ya da işte beyazlar üzerinde toplama aldığımda, beyaz pikseller üzerinde bu burada bir pik yapacak ama iç bölgede...
+
+327
+01:38:00,467 --> 01:38:25,528
+Bir kenar olduğu için kenar üzerindeki noktalar da dip yapacak. Ya da ben bunu bir binary image'e dönüştürdüm dediğime göre bir de oradan tarif edelim. Eğer bir binary image ise background'ım siyahtır ve irisi çevreleyen çember ve gözün kirpiklerinin olduğu bölgeler beyazdır.
+
+328
+01:38:26,292 --> 01:38:43,472
+Eğer bu şekilde siyah beyaz bir görüntü varsa elimde, bu defa ne demek bu? Bu pikseller beyazsa eğer çemberin üzerindeki noktaları üst üste topladığım zaman her biri 255 intensity değerine sahip.
+
+329
+01:38:44,052 --> 01:38:49,032
+Çemberin üstüne denk gelen noktalarda toplam aldığımda bu toplam çok büyük çıkarken.
+
+330
+01:38:49,619 --> 01:38:56,659
+R yarı çapını bir birim arttırdığımda gözün akına gelen bölgeden toplam aldığım için
+
+331
+01:38:57,108 --> 01:39:12,807
+O bölgede background olduğu için, siyah olduğu için bu bölgenin toplamı minimum bir sayı verecek. Çok küçük bir değer üretecek bana. O yüzden burada R yarı çapını değiştirerek bir türev alıyor.
+
+332
+01:39:23,904 --> 01:39:39,704
+R, X0, Y0 değerini arıyor. Bir de burada bir Gaussian smoothing işlemi var. Bir tek onu anlatmadım. Biraz belki onu da tarif etmem gerekiyor.
+
+333
+01:39:45,427 --> 01:40:10,028
+Tüm bu açıklamalarda şuraya kadar olan kısmı anlaşıldı diye düşünüyorum. İçerideki bölüm integral alıyor, çemberin üzerindeki noktaları topluyor ve her defasında bu çemberi R yarı çapını bir arttırıp, aynı merkezde R yarı çapını bir arttırıp baktığımda bir öncekiyle bir sonrakinin toplamları arasındaki farka bakıyoruz dedim.
+
+334
+01:40:11,887 --> 01:40:27,487
+Lütfen şöyle düşünün. Ben burada R değeri için bir sum aldım. Sonra R'yi bir arttırdım. Bir sigma 1, sigma 2 dediğim bir başka toplam aldım. Sonra R'yi yine bir arttırdım.
+
+335
+01:40:28,020 --> 01:40:31,520
+Ve buradan sigma 3 dediğim bir toplam ürettim.
+
+336
+01:40:31,520 --> 01:40:36,300
+Şimdi bu arka arkaya aldığım toplamlar arasında bir fark alacağım.
+
+337
+01:40:36,800 --> 01:40:42,100
+R'ye göre türev aldığım için. Dolayısıyla bu ikisinin farkını alacağım.
+
+338
+01:40:43,040 --> 01:40:49,020
+Sigma 1- Sigma 2 diyeceğim. Sonra Sigma 2- Sigma 3 diyeceğim.
+
+339
+01:40:50,655 --> 01:41:03,476
+Farklar alacağım. Buradaki türevin anlamı bu. Sonra diyor ki bu farklar üzerinden bir Gaussian smoothing çalıştır diyor. Yarı çapı R olan.
+
+340
+01:41:03,828 --> 01:41:26,488
+Bir gauss dağılımı ile bu farkları smooth et diyor. Çünkü bu farklar belli yerlerde pik yapabilir, küçük atlamalar olabilir. Bunu smooth ederek aslında bir önceki ve bir sonraki farkların kendi içerisinde bir smooth edilmesi işlemi yapılıyor.
+
+341
+01:41:31,828 --> 01:41:37,388
+Maksimum olduğu R değeri X0 ve Y0 değeri bulunuyor.
+
+342
+01:41:38,347 --> 01:41:40,368
+Gaussian fonksiyonunda şöyle düşünün.
+
+343
+01:41:40,368 --> 01:41:43,368
+Üç gözlü bir...
+
+344
+01:41:45,296 --> 01:41:54,816
+Gauss işareti, One Dimensional. Yani aslında ortalama filtresinin ağırlıklı ortalama filtresi formunda yapıldığını düşünün.
+
+345
+01:41:54,816 --> 01:42:10,816
+Gauss filtresi, bir boyutlu Gauss filtresinden şöyle sample'lar alıyorsunuz. Varsayalım ki burası 1, 1, 3 gibi kat sayıları olan bir Gauss filtresi. Bunun boyutu 3. Yani bu farkların...
+
+346
+01:42:10,944 --> 01:42:29,884
+Üzerinde gezdirerek bu maskı, bunun üzerinde gezdirerek bir smoothing yapıp arkasından hangi değeri maksimum olduğunu buluyorsunuz. Hangi re değeri, hangi x0 ve y0 için bunun maksimum olduğunu buluyorsunuz.
+
+347
+01:42:32,979 --> 01:42:47,979
+Sağ tarafta gördüğümüz, nihai seçimde sağ tarafta gördüğümüz şu çemberi çizdiriyorsunuz. Bu çember, gözün irisi ile beyazı arasındaki geçişi bize gösteriyor.
+
+348
+01:42:49,108 --> 01:42:56,087
+Biyometrik tanımada önce kullanacağımız alanı belirlememiz gerekiyor.
+
+349
+01:42:56,087 --> 01:43:02,728
+Tabii işlem bununla da bitmiyor. Bunun peşinden bir de göz bebeği için aynı işlem yapılıyor.
+
+350
+01:43:02,847 --> 01:43:07,787
+Göz bebeğiyle irisi birbirinden ayırt etmek için ikinci bir çember çizmemiz gerekiyor.
+
+351
+01:43:10,728 --> 01:43:14,148
+Veri tabanında, şimdi ona geçelim.
+
+352
+01:43:14,148 --> 01:43:15,547
+Veri tabanında.
+
+353
+01:43:28,851 --> 01:43:39,492
+Ödevle ilgili açıklama aynı zamanda. Bu ödev 3 Mayıs tarihinde teslim edilecek. 15 günden fazla zamanınız var.
+
+354
+01:43:43,492 --> 01:43:48,631
+UBRIS-İRIS veritabanını kullanacağız.
+
+355
+01:44:06,899 --> 01:44:13,079
+Niye buradan renk seçemiyorum? Bilemedim. Peki.
+
+356
+01:44:15,340 --> 01:44:20,420
+Hocam Color var. İsterseniz oradan seçebilirsiniz çarpının yanındaki.
+
+357
+01:44:23,123 --> 01:44:41,324
+Evet, seçti mi şu anda? Seçti, evet tamam teşekkürler. Şurada da renkler hazır geliyordu da onlar gelmedi, onu anlayamadım. Şu bölümde çizdiriyordu. Evet, Ubris versiyon 1, versiyon 2, böyle birkaç versiyonda toplanmış bu veritabanı.
+
+358
+01:44:50,292 --> 01:44:55,912
+İnternette var. Siz bunu oradan indireceksiniz zaten. V1 Database.
+
+359
+01:44:59,912 --> 01:45:05,592
+Evet. Portekiz'de galiba bu çalışma yapılmış.
+
+360
+01:45:10,420 --> 01:45:19,480
+Şöyle paylaşayım sizinle. Evet, Ubris versiyon 1 database, versiyon 2'si var bunun.
+
+361
+01:45:22,119 --> 01:45:30,140
+241 kişiden toplanmış, 1877 tane böyle çekilmiş görüntü var.
+
+362
+01:45:30,771 --> 01:45:50,032
+2004'te oluşturulmuş Two Distinct Session, iki ayrı session'da alınmış görüntüler. İki ayrı tarihte demek ki aynı kişileri. Bu veritabanın hangi kamerayla çekilmiş özellikleri nelerdir falan bunlarla ilgili bilgiler verilmiş burada.
+
+363
+01:45:58,771 --> 01:46:07,612
+Ama database'i buradan indirdiğinizde zipli bir dosya geliyor. Daha sonra zipli dosyayı unzip edebilmek için o şifreye ihtiyacınız oluyor.
+
+364
+01:46:08,612 --> 01:46:14,652
+Sonuç, biz bu görüntü üzerinde şunu yapmaya çalışıyoruz.
+
+365
+01:46:26,003 --> 01:46:27,503
+Ön...
+
+366
+01:46:30,771 --> 01:46:51,451
+İris'i ve göz bebeğini çevreleyen iki tane çemberi çizdirmemiz gerekiyor. İlk olarak irisi çizdirelim. Daha sonra burada belirtilmiş göz bebeği iris yarı çapının %10 ile %80 aralığında değişim gösterdiği kabul edilmektedir diyor.
+
+367
+01:46:59,123 --> 01:46:59,963
+İrisin.
+
+368
+01:47:00,435 --> 01:47:21,895
+Yarı çapını ve merkezini bulabilirsek, merkez noktasını ve re yarı çapını bulursak, göz bebeği için bu re yarı çapının %10 ile %80'i kadarlık bir aralıkta olabilir re yarı çapı diyor. Bu reyinci kullanarak bu defa göz bebeğinin etrafındaki çemberi çizdirmeniz gerekiyor.
+
+369
+01:47:28,435 --> 01:47:45,155
+Göz bebeğinin merkezi ile irisin merkezi aynı olmayabiliyor. Birkaç piksel. Ya ben şeyi değiştirmemişim. Hiç uyanmıyorsunuz beni. Ben şeyi açtım diye çiziyorum ediyorum burada. Şurada özür dilerim arkadaşlar.
+
+370
+01:47:45,155 --> 01:47:53,515
+Göz bebeğinin yarı çapının, iris yarı çapının %10 ile %80 aralığında değişim gösterdiği kabul edilmektedir demiş.
+
+371
+01:47:56,340 --> 01:47:58,059
+Söylemek istediğim şuydu.
+
+372
+01:48:02,260 --> 01:48:13,260
+Elimizde Edge Detection algoritmasından geçirilmiş bir kenar görüntüsü olacak. Şöyle bir göz görüntüsü olacak. Bizim amacımız bu görüntü üzerinde...
+
+373
+01:48:17,076 --> 01:48:43,916
+Bir merkez noktası ve irisi gösteren R yarı çapını bulmak. Yani bir X0, Y0 merkezi ve bir de R yarı çapı bulacaksınız. Tabii bunun için görüntüyü ben genelde şöyle kullanmayı uygun görüyorum. Bu görüntü içerisinde merkez olabilecek alanı kısıtlayalım. Çünkü bütün köşelerde göz bebeği aramanın anlamı yok.
+
+374
+01:48:44,627 --> 01:48:56,847
+Ben görüntüyü şöyle yatayda ve dikeyde üç parçaya bölüp diyorum ki merkezi sadece şu alanın içinde arayın.
+
+375
+01:48:57,488 --> 01:49:03,148
+Bu alanın dışında merkez, göz bebeğinin merkezi bu alanın dışında olamaz diyorum.
+
+376
+01:49:03,868 --> 01:49:09,108
+Buradan bir indirgeme yapabiliriz. Yoksa algoritma çok uzun sürüyor, çok büyük zaman alıyor.
+
+377
+01:49:15,764 --> 01:49:42,664
+Merkez noktası için bu şekilde bir tanım yaptıktan sonra, R yarı çapı içinde bir minimum ve maksimum, iriste tabii söyleyebilirim bunu, 50 ile 120 arasında arayabilirsiniz.
+
+378
+01:49:44,787 --> 01:49:47,767
+İris'in yarı çapını. Piksel cinsinden.
+
+379
+01:49:51,347 --> 01:50:00,000
+Bu aralıklar bizim arama uzayımızı küçültecektir. Bu şekilde integral differential operator...
+
+380
+01:50:00,000 --> 01:50:26,891
+Bu örneğe bakalım.
+
+381
+01:50:27,283 --> 01:50:31,783
+İris'in merkez noktası ve R yarı çapını bulmuş olacaksınız.
+
+382
+01:50:32,948 --> 01:51:00,347
+Çok güzel bir uygulama. Dogma'nın bu integral differential operatörü. Şöyle söyleyeyim, mesela bu algoritmayı biz iris için kullandık derste. Ben uzunca bir yıllar, ben half transformu ile birlikte bu ödevi veriyorum öğrencilerime. Son beş yıl içinde bu algoritmayı tıbbi görüntüler üzerinde doktora yapan öğrencilerimin iki ya da üçü kullandı arkadaşlar.
+
+383
+01:51:00,948 --> 01:51:08,188
+Çünkü tanıma yaptığımız görüntü üzerinde...
+
+384
+01:51:09,140 --> 01:51:22,420
+Çember formunda kemikler var. Kemik ucu var mesela omuz üzerinde yaptığımız çalışmalarda. Omuz kemiğini arka plandan ayırmak için bu algoritmayı kullandılar.
+
+385
+01:51:22,420 --> 01:51:36,840
+Yine kalça kemiği üzerinde çalışan bir arkadaşımız bu kemiklerin topuzu dediğimiz yuvarlak bölgeyi bulmak için yine bu algoritmayı kullandı.
+
+386
+01:51:37,140 --> 01:51:50,620
+Bunları uygulayabileceğimiz alanlar çok fazla. Biz burada Iris'le bu örneği yaparız ama siz bir başka problemde, bir başka çalıştığınız alanda bu algoritma burada işe yarayabilir deyip oraya entegre edebilirsiniz.
+
+387
+01:51:50,620 --> 01:52:01,820
+Bunu, bu çalışmayı ikinci ödev olarak sizin yapmanızı bekliyorum. Password'ü.
+
+388
+01:52:10,068 --> 01:52:11,967
+Getireceğim şimdi ekranınıza.
+
+389
+01:52:13,347 --> 01:52:19,448
+Bunu yollarım ama, mail'e de yollayacağım ama.
+
+390
+01:52:35,731 --> 01:52:36,612
+Ödev 2.
+
+391
+01:52:55,923 --> 01:53:20,083
+Evet, şifre şu. Departamento Informatica UBI. Bu şeyin şifresi, Ubris Database'inin şifresi. Şuradaki oya dikkat yazarken Departamento Informatica diye. Gördük mü?
+
+392
+01:53:23,667 --> 01:53:25,247
+Alo, ses geliyor mu?
+
+393
+01:53:25,347 --> 01:53:25,887
+Evet, evet hocam.
+
+394
+01:53:26,167 --> 01:53:26,488
+Görüyoruz.
+
+395
+01:53:26,747 --> 01:53:28,707
+Tamam, teşekkür ederim.
+
+396
+01:53:29,688 --> 01:53:36,787
+Bu şifreyle o zipli dosyayı açmanız ve bu algoritmayı bu görüntülere uygulamanızı istiyorum.
+
+397
+01:53:36,787 --> 01:53:46,948
+Şimdi bu algoritmanın MATLAB'da çözümleri internette var. Python'da da muhtemelen vardır. Siz arayacaksınız ve göreceksiniz olduğunu.
+
+398
+01:53:47,787 --> 01:53:51,627
+Tabii ki bakabilirsiniz koda. Koddan esinlenebilirsiniz.
+
+399
+01:53:51,667 --> 01:54:10,568
+Ama sizden tek bir beklentim var. Çalıştırdığınız kodun her bir satırın ne yaptığını bilmenizi istiyorum. O yüzden bu ikinci ödevle ilgili bir demo session da yapacağım. Size verdiğiniz ödevle ilgili sorular soracağım.
+
+400
+01:54:11,444 --> 01:54:35,043
+Satır satır burada ne yapıyorsun? Bu matriz kaç boyutlu? Neden böyle bir matriz oluşturuyorsun? Bunun çıktısı ne olur? Kaça kaçlık bir dizi ya da matrizde tutuyorsun? Gibi böyle sorular sorarak kodu anlayıp anlamadığınızı çözeceğim. Ki çok kolay çözülüyor.
+
+401
+01:54:35,764 --> 01:54:56,544
+Yani ben kodu aşağı yukarı 2-3 saat incelediğimde bu anlattıklarım ışığında ne yaptığını anlayabiliyorum. Sizin de en az 2-3 saat buna emek harcamanızı bekliyorum. Ve tabii bu database'ı uygulayıp sonuçları benimle paylaşmanızı istiyorum. Sonuçları iyileştirmek için daha ne yapılabilir bunu düşünmenizi istiyorum.
+
+402
+01:54:57,460 --> 01:55:13,579
+Çünkü görüntü üzerinde bir ön işleme gerekiyor. Fotoğraflarda şöyle bir sorun var. Genelde göz bebeğinin içinde beyaz bir parlama olmuş muhtemelen flash'tan dolayı.
+
+403
+01:55:13,579 --> 01:55:25,460
+Göz bebeğinin içi siyah olması gerekirken, böyle beyaz bir parlak ışık çıktığında o göz bebeğini çevreleyen çemberi bulmakta zorlanıyor.
+
+404
+01:55:25,460 --> 01:55:34,679
+Mesela onu bir ön işlem yaparak temizlenmesi gerekiyor. Bu şeyde de görünüyor. Size hemen onu göstereyim.
+
+405
+01:55:40,916 --> 01:55:47,856
+Bakın bu resimde de var. Gözün bebeğinin üstünde bir beyaz ışık görünüyor. Farkında mısınız?
+
+406
+01:55:47,856 --> 01:56:00,856
+Mesela bu bir problem oluyor şeyi tanırken. Göz bebeğinin çevresini işaretlerken şuradaki beyaz parlama...
+
+407
+01:56:01,555 --> 01:56:14,836
+Problem oluyor. Önce bir ön işlem yaparak o bölgeyi karartmanız gerekecek. Böyle bir sıkıntı yaşanıyor.
+
+408
+01:56:15,515 --> 01:56:20,095
+Dediğim gibi bu ödev 3 Mayıs tarihinde teslim edilecek.
+
+409
+01:56:23,155 --> 01:56:24,536
+Sorunuz var mı?
+
+410
+01:56:26,899 --> 01:56:29,579
+Hocam Grayscale olan dataset'i indiriyoruz değil mi?
+
+411
+01:56:29,579 --> 01:56:30,899
+Evet Grayscale.
+
+412
+01:56:36,435 --> 01:56:40,915
+Peki, soru yok anladığım kadarıyla.
+
+413
+01:56:46,195 --> 01:57:00,576
+Peki, o zaman yeni bir bölüme geçiyorum. Ara vereyim mi, vermeden mi devam edeyim yeni konuya? Ne dersiniz?
+
+414
+01:57:12,979 --> 01:57:27,059
+5 dakika ara istiyorsunuz. Peki, okey. Yeni konu başlığımız sizinle paylaşmıştım.
+
+415
+01:57:27,059 --> 01:57:37,059
+2D Transformations, Scaling Rotation, Translation and Warping dediğimiz.
+
+416
+01:57:38,131 --> 01:57:46,631
+Transformation işlemlerini iki boyutta nasıl yaptığımızı anlatacağım. Peki bir ara beş dakika.
+
+417
+02:05:13,203 --> 02:05:18,543
+Evet, merhaba arkadaşlar. Tekrar derse kaldığımız yerden devam edelim.
+
+418
+02:05:21,123 --> 02:05:24,243
+Evet, bir elleri göreyim gene. Kimler burada?
+
+419
+02:05:29,811 --> 02:05:39,931
+Derste 28 kişi görünüyor. 15, 16, 17 kişi bilgisayarın başındaymış.
+
+420
+02:05:41,851 --> 02:05:47,731
+Bir 10 kişi yok. Neyse. Yine yarıyı geçtik. Güzel.
+
+421
+02:05:51,311 --> 02:05:55,631
+Evet, ödevle ilgili anlaşılmayan herhangi bir şey var mı bana sormak istediğiniz?
+
+422
+02:06:06,420 --> 02:06:14,079
+Peki, yoksa iki boyutlu dönüşüm işlemlerine geçiyorum.
+
+423
+02:06:16,160 --> 02:06:20,560
+Hocam ben kaçırmış olabilirim ama hazır fonksiyon konusunda ne demiştiniz?
+
+424
+02:06:21,560 --> 02:06:30,480
+Hazır fonksiyonlara bakın, kullanabilirsiniz dedim. Ama kendinize göre adapte edin ve mutlaka her satırını iyice anlayın.
+
+425
+02:06:30,996 --> 02:06:53,115
+Dediğim gibi bu ödevi bir demo sesini ile kontrol edeceğim. Herkese belli bir saat diliminde yaptığı ödevi bana anlatmasını isteyeceğim. Ödevde sorduğum sorulara cevap veremezseniz eğer ilgili öğrenci, oradan puan alamayacak. Ödevi biraz oradaki sorulara verdiği cevaba göre değerlendireceğim.
+
+426
+02:06:53,115 --> 02:06:54,775
+Tamam, teşekkür ederim.
+
+427
+02:06:57,076 --> 02:07:12,675
+Pekala, geldik transformation işlemlerine. Bu dönüşüm işlemlerini matching için kullanıyoruz. O yüzden 2D Transformations for Matching diye isimlendirilmiş.
+
+428
+02:07:14,515 --> 02:07:20,975
+Ne tür transformasyonlar var? Ölçekleme, döndürme, öteleme.
+
+429
+02:07:21,460 --> 02:07:26,139
+Veya işte bükme gibi transformation'lar var.
+
+430
+02:07:28,159 --> 02:07:34,039
+Amacımız ne? Matching dediğimizde yapmak istediğimiz şey şu alt aslına bakarsanız.
+
+431
+02:07:34,559 --> 02:07:38,619
+Elimizde bir görüntü olabilir, bir de bir map ya da model olabilir.
+
+432
+02:07:40,083 --> 02:08:08,083
+Bu map ya da model dediğim mesela bir parçanın üç boyutlu çizimi vardır elinizde. Bir de kayan band üzerinde üretilmiş olan parçanın bir görüntüsü vardır. Bu elinizdeki üç boyutlu model ile kameradan aldığınız görüntü arasında bir eşleştirme yapıp görüntü üzerinde işte belli bir bu nesnenin belli bir noktasına odaklanmak isteyebiliriz.
+
+433
+02:08:08,083 --> 02:08:17,784
+Bu şekilde değişik amaçlarla bunu kullanabilirsiniz. Ama amaç dediğim gibi kameradan alınan görüntüyle.
+
+434
+02:08:18,707 --> 02:08:42,567
+Üç boyutlu model arasında bir eşleştirme yapmak veya kameradan alınan görüntüyle yine kameradan alınmış başka bir görüntü arasında bir eşleştirme yapmak ya da işte burada correspondence dediğimiz birbiriyle ilişkili olan noktaları yerlerini bulmak şeklinde düşünebiliriz.
+
+435
+02:08:43,891 --> 02:08:57,511
+Ve bu bölümde verdiğimiz tüm çalışmalar iki boyutlu. Bunu üç boyuta genişletmek gerekirse ayrıca tüm bu işlemlerin üç boyutlu halini düşünmemiz gerekecek.
+
+436
+02:09:00,083 --> 02:09:13,923
+Burada matching işlemine şöyle bir örnek verilmiş. Mesela bir model space'iniz var diyor ve burada gördüğümüz şekilde bir model var elinizde. Bir de image plane'iniz var, görüntü düzleminiz.
+
+437
+02:09:14,883 --> 02:09:27,923
+Görüntü düzlemindeki bir ya da model üzerindeki bir noktanın görüntü üzerindeki bir nokta ile match edilmesi, eşleştirilmesi gerekiyor. Bu eşleştirme işlemleri için bu...
+
+438
+02:09:28,083 --> 02:09:46,063
+Bu transformation'ları kullanıyoruz. Neden? Çünkü iki düzlem arasında ölçek farkı olabilir. O yüzden scaling'e ihtiyaç var. Bu iki düzlem arasında belli bir dönme açısı olabilir. O yüzden rotation'a ihtiyacımız var.
+
+439
+02:09:46,063 --> 02:09:55,123
+Ve tabii belli bir yerden belli bir yere kaydırılmış olabilir. O yüzden de translation dediğimiz taşıma işlemini yapmamız gerekir.
+
+440
+02:09:57,268 --> 02:10:04,467
+Tüm bu işlemleri yaparken homojen koordinat sistemi dediğimiz bir koordinat sistemi kullanacağız.
+
+441
+02:10:04,467 --> 02:10:15,087
+Homojen koordinatlar iki boyutta yazılırken, yani iki boyutta bir PXY noktası, P dediğim bir point.
+
+442
+02:10:16,083 --> 02:10:25,104
+Bu noktanın x, y koordinatları var. Bunları gösterirken biz bir de ölçek boyutu ekliyoruz buna.
+
+443
+02:10:25,644 --> 02:10:30,623
+Dolayısıyla ölçek boyutu dediğimiz S parametresi ölçeği gösteriyor.
+
+444
+02:10:30,764 --> 02:10:37,264
+Bu ölçeğe göre Sx ve Sy, x ve y'deki konumu işaretleniyor.
+
+445
+02:10:38,387 --> 02:10:49,787
+Uygulamalarda genelde tercih ettiğimiz şey, Scale Faktörünün 1 olması. Bir ölçek faktörüne göre gerçek ölçülerde bunu yazmak.
+
+446
+02:10:54,367 --> 02:11:03,087
+Affine Mapping Function, az önce konuştuğumuz gibi ölçekleme, döndürme ve kaydırma gibi işlemler için.
+
+447
+02:11:06,228 --> 02:11:23,728
+Bir matriz formunda bu işlemleri göstermeyi hedefliyoruz. İlk olarak Scaling ile başlayalım. Ölçeklendirme için şekilde bize iki boyutta P1,2 dediği nokta verilmiş.
+
+448
+02:11:23,728 --> 02:11:33,268
+P1,2 noktasını Scaled by Factor 2 iki ölçeği ile ölçeklendirdiğimizde diyor.
+
+449
+02:11:33,908 --> 02:11:43,388
+2'ye 4 noktasını, P üstü dediği New Point'i gösteren P üstü noktasını bu şekilde ifade edebiliriz.
+
+450
+02:11:44,148 --> 02:11:52,628
+Bu scaling işlemi için bu bir linear transformation'dır diyor. Bu dönüşümün linear olduğunu söylüyor.
+
+451
+02:11:52,628 --> 02:12:01,628
+Çünkü x ekseninde ve y ekseninde, burası x eksenindeki işlemi, bu y eksenindeki işlemi gösteriyor.
+
+452
+02:12:02,488 --> 02:12:09,568
+x eksenindeki ve y ekseninde aslında ine yapmış oluyoruz. İkiyle ölçeklemiş oluyoruz.
+
+453
+02:12:09,868 --> 02:12:11,028
+Şurada baktığımızda.
+
+454
+02:12:11,347 --> 02:12:22,347
+Her bir koordinat ekseninde aynı sayıyla çarparak bir linier dönüşüm gerçekleştirmiş oluyoruz.
+
+455
+02:12:22,788 --> 02:12:24,908
+Scaling dediğimiz işlemde.
+
+456
+02:12:25,548 --> 02:12:32,508
+Bu bölümleri Python'a taşıyamadım ama Python kodlarını daha önce bu PowerPoint slide'larına koymuştum.
+
+457
+02:12:32,608 --> 02:12:34,248
+Oradan siz de deneyebilirsiniz.
+
+458
+02:12:35,923 --> 02:12:47,064
+Yine sistemde kayıtlı data kameraman görüntüsü üzerinde bunu deneyebilirsiniz.
+
+459
+02:12:48,064 --> 02:12:55,544
+Rescale işlemi için 0.1, 0.5 gibi scaling parametreleriyle, pardon.
+
+460
+02:12:57,235 --> 02:13:08,735
+Ölçekleme işlemi yapılabiliyor. Daha sonra ölçeklenmiş görüntüleri çizdirerek ekrandaki değişimi orijinal image ile birlikte görebilirsiniz.
+
+461
+02:13:09,755 --> 02:13:21,195
+Rotation konusu önemli. Bu döndürme işleminin nasıl yapıldığını ve döndürme işleminde kullanılan rotasyon matrisinin nasıl elde edildiğini açıklayacağım size.
+
+462
+02:13:23,028 --> 02:13:32,228
+İki boyutta çalıştığımız için iki boyutta düzlemde işlem yapıyoruz ve bize bir P noktası verilmiş. Px,y noktası şurada.
+
+463
+02:13:32,228 --> 02:13:36,228
+Şimdi ben bu P noktasını teta açısı kadar...
+
+464
+02:13:37,684 --> 02:13:52,583
+Saatin tersi yönünde, burada gördüğünüz gibi döndürdüğümde P üstü dediğim noktanın, yani bu P'nin döndürme işlemi sonundaki yerinin X üstü ve Y üstü koordinatlarını bulmak istiyorum.
+
+465
+02:13:52,583 --> 02:14:04,583
+Döndürme işleminde benim amacım bu noktayı T ta açısı kadar döndürdüğümde yeni koordinatları ne olur? Aradığım soru...
+
+466
+02:14:05,684 --> 02:14:12,684
+Yani sormak istediğim soru bu. Dolayısıyla bunu hesaplayabilmek için önce...
+
+467
+02:14:16,404 --> 02:14:38,583
+Şimdi eksen sistemi üzerindeki noktaların bir rotasyonunu nasıl yapıldığına bakalım diyoruz. Ve sağ tarafta, bu çok güzel anlatılmış. Lütfen buna dikkat. Varsayalım ki benim döndürmek istediğim nokta x ekseni üzerinde 1'e 0 noktası olsun.
+
+468
+02:14:44,404 --> 02:15:05,543
+Bu döndürme işleminin sonunda aslında orijine göre bu noktanın orijine olan uzaklığı değişmez. Doğru mu döndürme işleminde? Aynı kalır. Benim bulmak istediğim şey bu döndürme işleminin sonunda x üstü, y üstü değerlerini bulmak istiyorum.
+
+469
+02:15:11,507 --> 02:15:13,507
+Şöyle bakacak olursak.
+
+470
+02:15:15,567 --> 02:15:18,507
+X80'indeki uzaklığı yazarken...
+
+471
+02:15:24,212 --> 02:15:41,492
+Kosünüs Theta'dan faydalanacağım. Kosünüs Theta, komşu dikkenarın hipotenüse uzaklığı yani x üstü bölü 1'dir. Dolayısıyla ben burada x üstü uzaklığını kosünüs Theta olarak yazabilirim.
+
+472
+02:15:43,091 --> 02:15:52,011
+Y üstü uzaklığını ise buradan baktığımda şunu bulmak istiyorum.
+
+473
+02:15:52,672 --> 02:15:58,591
+Y uzaklığı derken bu durumda neyden faydalanacağım?
+
+474
+02:15:58,731 --> 02:16:01,391
+Sin üst teta bunu bana verecek. Doğru mu?
+
+475
+02:16:01,939 --> 02:16:04,479
+Sinüs teta bunu bana verecek.
+
+476
+02:16:05,239 --> 02:16:20,099
+Şimdi benzer bir işlemi y ekseni üzerindeki bir noktayı, p noktasını ve orijinal olan uzaklığı bir olan bu p noktasını teta açısı kadar döndürerek yapalım diyorum.
+
+477
+02:16:22,676 --> 02:16:33,675
+P noktasının yeni yeri P üstü dediğimiz nokta burası olur ve buranın x üstü, y üstü yeni değerlerini bulmak istiyorum.
+
+478
+02:16:49,268 --> 02:16:59,628
+Pardon, kosünüs teta eksi x olacaktı. Yanlış dedim. Bir şeyi yanlış yazdım dedim ama neyi yazdım? Şurayı düzelteceğim.
+
+479
+02:17:01,147 --> 02:17:04,887
+x ekseninde eksi, pardon kalemi düzeltelim.
+
+480
+02:17:07,448 --> 02:17:14,247
+x ekseninde ki uzaklığını bulurken bunun eksi olduğunu biliyorum.
+
+481
+02:17:17,940 --> 02:17:24,960
+O yüzden x eksenindeki uzaklığı yazarken sinüs theta'dan faydalanacağım.
+
+482
+02:17:24,960 --> 02:17:30,540
+Eksi x olacak.
+
+483
+02:17:31,880 --> 02:17:36,920
+y üzerindeki uzaklık ise
+
+484
+02:17:38,772 --> 02:17:42,891
+Artı Y'dir değil mi? Şu kosünüs teta eşit Y olacak.
+
+485
+02:17:43,531 --> 02:17:46,871
+Şimdi buradan aslında şunu yapmak istiyorum ben.
+
+486
+02:17:46,871 --> 02:17:55,551
+X üstü, Y üstü noktasının yeni yerini, rotasyon işleminden sonraki yerini bulurken,
+
+487
+02:17:56,092 --> 02:18:05,731
+bir transformation ya da rotation matrisiyle X, Y mevcut koordinatlarını çarparak bunu dönüştürmek istiyorum.
+
+488
+02:18:06,932 --> 02:18:22,152
+Burada x eksenindeki bileşen, birinci satırın, yani şu matrisin birinci satırıyla bu vektörü çarptığımda elde edeceğim x üstü değeri.
+
+489
+02:18:24,292 --> 02:18:33,551
+Şuradaki dönüşüm ifadesine bakacak olursak, şuradan matrisi.
+
+490
+02:18:39,507 --> 02:18:45,628
+X üstü değerini bulurken, X ekseni üzerinde kosünüs teta'yı bulmuştuk.
+
+491
+02:18:46,188 --> 02:18:47,927
+Kosünüs teta.
+
+492
+02:18:48,788 --> 02:19:00,047
+Y ekseni üzerindeki noktanın X'e olan dönüşümünü yazarken ise, X eşitti, eksi sinüs teta bulmuştuk.
+
+493
+02:19:03,796 --> 02:19:19,956
+Şimdi y üstündeki değerini hesaplarken, şurada y üstü yazarken sin teta ve cos teta değerlerini kullanmıştık.
+
+494
+02:19:30,995 --> 02:19:48,115
+Eksi sin teta y işlemi ile x noktasının yeni x üstü yerini bulacağım. Rotasyon matrisi dediğim bir r matrisim var. Teta açısı için kullandığım.
+
+495
+02:19:55,507 --> 02:20:02,328
+Yerleri konumuyla çarparak X üstü, Y üstünün yeni yerini bulmuş oluyorum.
+
+496
+02:20:07,283 --> 02:20:07,743
+Evet.
+
+497
+02:20:11,507 --> 02:20:12,987
+Ben de üşüttüm herhalde.
+
+498
+02:20:15,567 --> 02:20:37,927
+Rotasyon işlemi için bu rotasyon matrisi, şurada gösterdiğimiz rotasyon matrisi, P noktasının koordinatları ve döndürme işleminden sonraki konumu bu şekilde hesaplanıyor.
+
+499
+02:20:40,115 --> 02:20:58,155
+Buna göre rotasyon işlemini şurada görüyoruz. Şurada bir Rθ rotasyon matrisi var. Bu rotasyon matrisi ile P noktasını, koordinatlarını çarpıp P üstünü bulmuş oluyoruz.
+
+500
+02:21:07,283 --> 02:21:13,583
+Yazılıyor. Nerede o? X, Y çarpı sin teta şeklinde yazılıyor.
+
+501
+02:21:15,583 --> 02:21:30,043
+Ve Y üstünün yeni yerini yazarken de şu rotasyon maddesinin ikinci satırıyla burayı çarptığımda X çarpı sin teta artı Y çarpı cos teta şeklinde
+
+502
+02:21:34,899 --> 02:21:53,180
+Bir işlem yapıyorum. Evet, rotasyon işlemini de tarif ettik. Burada rotasyon işlemi için yine Python'da Psycimage Transform Rotate diye bir hazır.
+
+503
+02:21:54,291 --> 02:21:56,591
+Fonksiyonum var, onu kullanıyorum.
+
+504
+02:21:57,111 --> 02:22:00,951
+Ve burada Rotate dediği işlemi
+
+505
+02:22:01,451 --> 02:22:05,051
+nasıl kullanıldığını görebilirsiniz.
+
+506
+02:22:05,551 --> 02:22:07,091
+Bunları denersiniz.
+
+507
+02:22:10,171 --> 02:22:10,671
+Evet.
+
+508
+02:22:12,211 --> 02:22:14,771
+Ortagonal, Ortonormal, Translation.
+
+509
+02:22:14,771 --> 02:22:17,591
+Translation'da bir
+
+510
+02:22:19,188 --> 02:22:34,268
+Tabi bu az önce verdiğimiz matrislerde şeyi kullanmadık. Ona dikkat. Hani biz homojen koordinat sistemi dedik. X üstü, Y üstü, 1 aslında. Bunları hep bir scaling faktörle birlikte vermemiz gerekiyor.
+
+511
+02:22:34,268 --> 02:22:47,188
+Veya buradaki P noktası için de aynı şekilde. Bir P noktasını tarif ederken X, Y, 1 diye bu homojen koordinat sistemini kullanmamız gerekiyor. Bu translation'da da işin için.
+
+512
+02:22:47,188 --> 02:22:51,587
+Çünkü burada göreceğiz. Yani kaydırma öteleme işleminde.
+
+513
+02:22:54,188 --> 02:23:04,648
+Şurada gördüğümüz bir P noktasını X ekseninde ve Y ekseninde belli bir kaydırma yapmak istiyorsak.
+
+514
+02:23:08,724 --> 02:23:27,924
+Y'ye x0 kadar, y ekseninde de y0 kadar kaydırdığımda yeni yeri p üstü noktasının yeni yerini, yeni koordinatlarını yazarken şurada gördüğümüz Translation matrisini kullanıyoruz.
+
+515
+02:23:28,404 --> 02:23:36,724
+Translation matrisine lütfen dikkat edin. Matrisin birinci satırıyla birinci sütunu çarptığım zaman x artı x0 çıkıyor.
+
+516
+02:23:36,724 --> 02:23:40,304
+Yani X'de X0 kadar ötelemiş.
+
+517
+02:23:41,544 --> 02:23:48,864
+Matrisin ikinci satırıyla vektörü çarptığımda, P noktasını çarptığımda Y artı Y0 çıkıyor.
+
+518
+02:23:50,515 --> 02:24:06,615
+Ve y ekseninde y sıfır kadar kaydırmış. Ve işte homojen koordinat sistemi için son satırda sıfır sıfır bir var. Bu translation öteleme matrizinin yapısını bize gösteriyor.
+
+519
+02:24:07,283 --> 02:24:14,824
+Böylece üç tane işlem görmüş olduk. Scaling, Rotation ve Translation şeklinde.
+
+520
+02:24:14,824 --> 02:24:22,743
+Şimdi bunların kullanıldığı bir örnek var bu slide'da. Şöyle bir örnek bu.
+
+521
+02:24:30,324 --> 02:24:36,984
+Şuraya ben yine az önce yaptığımız gibi yeni bir slide ekleyip boş sayfa açacağım.
+
+522
+02:24:39,283 --> 02:24:41,084
+Çizimleri orada yapacağım.
+
+523
+02:24:44,468 --> 02:24:48,988
+Problem şuydu. Önce slide'dan okuyalım. Diyor ki,
+
+524
+02:24:48,988 --> 02:25:02,168
+Give the 3x3 matrix that represents a pi over 2 rotation of the plane about the point 58.
+
+525
+02:25:08,084 --> 02:25:08,504
+Pardon.
+
+526
+02:25:19,572 --> 02:25:23,331
+Bu şarja takılıydı ama herhalde...
+
+527
+02:25:27,891 --> 02:25:29,811
+Bir kontrol edelim, takılmış. Tamam.
+
+528
+02:25:33,191 --> 02:25:33,491
+Evet.
+
+529
+02:25:36,791 --> 02:25:48,451
+5,8 noktasına göre düzlemde verilen noktaları pi bölü 2 kadar döndürdüğümüzde noktaların yerini bulmak istiyoruz.
+
+530
+02:25:48,451 --> 02:25:51,451
+Bu işlem için...
+
+531
+02:26:03,700 --> 02:26:13,560
+Bu işlem için 3x3'lük bir matriz ile bu işlemi gösterin diyor çalışmada.
+
+532
+02:26:15,159 --> 02:26:19,200
+Şimdi örneğimizi şöyle yapalım.
+
+533
+02:26:20,940 --> 02:26:23,560
+Bize ne verilmiş? Önce ona bakalım.
+
+534
+02:26:23,560 --> 02:26:26,680
+Bize 3 tane nokta vermiş.
+
+535
+02:26:30,291 --> 02:26:47,291
+Check your matrix correctly transform points A, B, C dediğim üç tane nokta. Screenshot alın isterseniz. Bu üç tane noktayı...
+
+536
+02:26:49,492 --> 02:26:56,671
+5'e 8 noktasını orijin kabul ederek pi bölü 2 kadar döndürdüğümde bu noktaların yeni yerini bulmak istiyorum.
+
+537
+02:26:57,452 --> 02:27:05,551
+Ve bu işlemi temsil eden bir matriz, 3'e 3'lük bir matriz geliştirmemi istiyor.
+
+538
+02:27:05,551 --> 02:27:17,492
+Burada küçük bir ipucu var. Diyor ki, önce diyor, first derivative matrix D-5-8, önce döndürme işleminin yapıcılığında,
+
+539
+02:27:17,492 --> 02:27:37,691
+Yapılacağı 5'e 8 koordinatını orijine taşıyacak şekilde tüm noktaları bir kaydırın diyor. Bir translate işlemi yapın diyor. Daha sonra döndürme işlemini, sonra tekrar geri taşıma işlemini yapın diyor. Bakın burada 3 tane transformation matrisi var. Translation.
+
+540
+02:27:38,111 --> 02:27:47,291
+Rotation Translation. Neden? Çünkü orijin aslında sıfıra sıfır noktası bu düzlemde.
+
+541
+02:27:47,291 --> 02:28:02,391
+Fakat diyor ki bize noktaları döndürürken 5'e 8 noktası, 5'e 8 noktasını, burada bir A noktası vardı, B noktası 6'ya 8.
+
+542
+02:28:05,363 --> 02:28:09,683
+Ve C noktası 5'e 9. Şurada bir de C noktası var.
+
+543
+02:28:10,363 --> 02:28:15,683
+Bu üç tane noktayı, bu düzlemde verilmiş noktaları...
+
+544
+02:28:16,819 --> 02:28:29,860
+Koordinat düzleminin merkezi olarak şurayı yani 5,8 noktasını kullanarak döndürme işlemini yapın dediği için biraz farklılaşacak.
+
+545
+02:28:31,079 --> 02:28:41,360
+Ve çözüm de bize diyor ki önce bu düzlemdeki tüm noktaları döndürme işleminin merkezi olan noktayı orijine taşıyarak yapın diyor.
+
+546
+02:28:44,819 --> 02:28:54,079
+Bu işlemi matris işlemleriyle ifade edebilelim.
+
+547
+02:28:54,079 --> 02:29:00,779
+Tabii ki hiç matris işlemlerine ihtiyaç olmadan bana siz şunu söyleyebilirsiniz.
+
+548
+02:29:01,000 --> 02:29:07,860
+B üstü noktasının yeni koordinatları 90 derece döndürme işlemi yaparsam eğer ne olur?
+
+549
+02:29:09,108 --> 02:29:20,868
+Mantığınız da tabii ki düzlemde noktaların yerlerinde gördüğünüz için x'i ne olur, y'si ne olur? Söyleyin bakalım. Bir de işlemi yaptıktan sonra bulduğumuz noktalara bakalım.
+
+550
+02:29:22,448 --> 02:29:34,927
+6'ya 8 noktasını, b noktasını 90 derece a merkezi olacak şekilde döndürürsem eğer, bakın a'ya göre döndürüyorum. Ne olur koordinatları?
+
+551
+02:29:41,139 --> 02:29:59,439
+90 derece döndü. Nereye gider? C'nin bulunduğu yere gider değil mi? B noktası. C noktası C'nin bulunduğu yere gider yukarıda. Yani koordinatları ne olacak? 5'e 9 olacak.
+
+552
+02:30:00,180 --> 02:30:05,340
+Hiç ses gelmiyor arkadaşlar. Ben kendi kendime mi anlatıyorum? Şüphe duydum şimdi.
+
+553
+02:30:05,500 --> 02:30:06,939
+Yok hocam yok, dinliyoruz.
+
+554
+02:30:09,420 --> 02:30:14,560
+Peki, o zaman C noktasının yeni yerini lütfen siz söyleyin.
+
+555
+02:30:16,020 --> 02:30:18,939
+A'ya göre 90 derece döndürdüğümde.
+
+556
+02:30:21,012 --> 02:30:23,012
+O da beynin üzerine düşmesi gerekmez.
+
+557
+02:30:23,012 --> 02:30:25,012
+Yoksa yine sorumu yapıyoruz.
+
+558
+02:30:25,012 --> 02:30:26,012
+Dörde sekiz mi hocam?
+
+559
+02:30:26,012 --> 02:30:29,012
+Evet, saatin tersi yönünde dönüyor ya.
+
+560
+02:30:29,012 --> 02:30:31,012
+Ben bu yönleri hep karıştırıyorum hocam.
+
+561
+02:30:31,012 --> 02:30:34,012
+Tamam, o zaman neymiş? Dörde?
+
+562
+02:30:34,012 --> 02:30:36,012
+Dörde.
+
+563
+02:30:36,012 --> 02:30:37,708
+Doğru diyor.
+
+564
+02:30:38,195 --> 02:30:51,475
+Dört, sekiz olması lazım. Dörde sekiz. Değil mi? Peki, A noktası zaten dönme işleminin merkezi olduğu için A üstü dediğimde bu aynı kalmalı. Anlaşıldı mı ne demek istediğim?
+
+565
+02:30:52,155 --> 02:31:05,756
+Peki, o zaman şimdi bu işlemleri yapacağımız matrisi yazmamız gerekiyor. Dedik ki, şimdi biz bir D, beş virgül sekiz, D,
+
+566
+02:31:06,324 --> 02:31:13,304
+R diyelim buna, D demeyelim pardon. Rotasyon işlemini R ile gösteriyoruz çünkü.
+
+567
+02:31:17,304 --> 02:31:22,304
+R, pi bölü 2 ve...
+
+568
+02:31:22,772 --> 02:31:40,472
+D-5-8 Bunu ben işte bir P noktasıyla çarptığımda P üstünü bulacağım. Bu üç tane şeyin, matrisin çarpımını yazmam gerekiyor. Önce şundan başlıyorum.
+
+569
+02:31:50,463 --> 02:31:59,203
+y ekseninde 0, 1, 8 ve 0, 0, 1 dediğim matrisi yazıyorum.
+
+570
+02:31:59,203 --> 02:32:10,843
+P noktası x, y, 1 olacak. Bu P. Burası d, 5, 8. Sonra rotasyon matrisini yazacağım.
+
+571
+02:32:17,396 --> 02:32:36,036
+Eksi sin pi bölü 2, sin pi bölü 2, cos pi bölü 2. Ama bunu da 3'e 3 yazacaktık. Bak onu yanlış yazdık şimdi. O zaman şuraya bir de şey yazmamız gerekiyordu. Düzeltiyorum.
+
+572
+02:32:37,620 --> 02:32:45,520
+Orta, yani homojen koordinat sistemi kullandığım için onu atladım. Hemen düzeltiyorum.
+
+573
+02:32:47,520 --> 02:32:56,300
+Cos pi bölü 2, eksi sin pi bölü 2 ve sıfır olacak.
+
+574
+02:33:05,427 --> 02:33:10,327
+Bu rotasyon matrisi, R P bölü 2 dediğim matris.
+
+575
+02:33:10,327 --> 02:33:23,847
+Ve burada tekrar tüm koordinat düzlemini, orijine taşıdığım noktayı tekrar 5'e 8 noktasına taşımam gerekiyor.
+
+576
+02:33:34,739 --> 02:33:39,739
+Y ekseninde
+
+577
+02:33:43,316 --> 02:33:50,436
+8 birim, bir kaydırma işlemi yapmam gerekiyor.
+
+578
+02:33:51,376 --> 02:34:00,456
+Sonuçta ben bu 3 tane matrisin çarpımını yapıp bir dönüşüm matrisi elde edeceğim.
+
+579
+02:34:07,252 --> 02:34:16,352
+İşte bir eşittir diyeceğim. Bir dönüşüm matrisi ve çarpı x, y, 1 şeklinde bunu yazacağım.
+
+580
+02:34:16,891 --> 02:34:18,372
+Bu üç matrisin çarpımı.
+
+581
+02:34:23,667 --> 02:34:24,167
+Ah!
+
+582
+02:34:27,636 --> 02:34:37,636
+Sinüs pi bölü 2 1'dir. Kosinüs pi bölü 2 0'dır. Dolayısıyla buradan...
+
+583
+02:34:45,075 --> 02:35:04,415
+Sıfır, eksi bir, bir, sıfır olacak. Bu matriz, üç matrizi çarptığımda, çarpın bekliyorum. Her şeyi hocadan beklemeyelim. Hadi bakalım.
+
+584
+02:35:04,415 --> 02:35:06,995
+Birin biri sıfır olacak o zaman hocam.
+
+585
+02:35:07,995 --> 02:35:09,415
+Birin biri...
+
+586
+02:35:10,260 --> 02:35:13,260
+Sıfır olacak. Doğru.
+
+587
+02:35:18,451 --> 02:35:23,691
+Birin ikisi eksi bir mi? Evet, birin ikisi eksi bir. Eksi bir, doğru.
+
+588
+02:35:28,072 --> 02:35:31,271
+Eksi yirmi beş mi diğeri? Yok.
+
+589
+02:35:34,131 --> 02:35:37,311
+Bir daha kontrol edin. Sıfı sıfır olduk o zaman.
+
+590
+02:35:40,371 --> 02:35:43,531
+Sekiz mi olacak hocam? Birin üçü. Yok.
+
+591
+02:35:48,308 --> 02:35:52,508
+Bence bunu Matlab ya da Python'a koyun, çarpın söyleyin.
+
+592
+02:35:54,328 --> 02:35:56,148
+Yapmak çünkü vakit alacak.
+
+593
+02:36:00,275 --> 02:36:01,216
+Eksi 24.
+
+594
+02:36:03,216 --> 02:36:04,296
+Gene değil.
+
+595
+02:36:34,804 --> 02:36:37,263
+Sekiz, bir.
+
+596
+02:36:39,004 --> 02:36:39,884
+Sonra ne diyeceğim?
+
+597
+02:37:21,108 --> 02:37:24,887
+Birinin mikrofonu açık kaldı.
+
+598
+02:37:31,731 --> 02:37:34,772
+Evet, çarpıyorsunuz. Bekliyorum. Efendim?
+
+599
+02:37:35,112 --> 02:37:35,471
+13.
+
+600
+02:37:36,051 --> 02:37:40,331
+13, thank you. Evet, devam var mı?
+
+601
+02:37:50,739 --> 02:37:54,700
+Bu işlemleri elde yapmayalı çok zaman oldu herhalde değil mi sizin için?
+
+602
+02:37:58,760 --> 02:38:00,340
+Bir mi oluyor hocam?
+
+603
+02:38:01,340 --> 02:38:04,099
+Evet. Bir. Sonra?
+
+604
+02:38:04,459 --> 02:38:06,000
+Sıfır.
+
+605
+02:38:06,439 --> 02:38:08,200
+Üç.
+
+606
+02:38:08,619 --> 02:38:11,079
+Sıfır.
+
+607
+02:38:11,840 --> 02:38:12,079
+Bir.
+
+608
+02:38:12,079 --> 02:38:13,819
+Evet. Güzel.
+
+609
+02:38:15,180 --> 02:38:15,439
+Şimdi.
+
+610
+02:38:16,435 --> 02:38:37,155
+Test için A5,3 noktasının yeni yerini A üstü deyip yazmak istiyorum. Yani X yerine 5, Y yerine 3 koyarsanız, şurada.
+
+611
+02:39:10,131 --> 02:39:11,332
+10 ile 8 olmuyor mu hocam?
+
+612
+02:39:25,075 --> 02:39:46,335
+Ama bunu, bir dakika, buna göre yaptığımızda yer değiştirmemesi gerekiyordu da oradan bir şey yaptım. A, 5'e 3 değil, 5'e 8. Özür diliyorum ya. Diyorum ben de niye böyle çıktı bu? 5'e 8 imiş A noktası. Niye 3 yazdıysam oraya. Şimdi söylerseniz daha doğru olacak.
+
+613
+02:39:47,443 --> 02:39:48,623
+5'e 8 oluyor o zaman.
+
+614
+02:39:49,083 --> 02:40:08,484
+5'e 8 oluyor değil mi? Değişmiyor. Çünkü değişmemesini bekliyoruz. Bu merkeze göre döndürdüğümüz için. Güzel. B noktasının koordinatları 6'ya 8'di. 6'ya 8'in yeni yeri bu döndürme işleminden sonra ne çıkıyor? Bir ona bakalım.
+
+615
+02:40:10,804 --> 02:40:12,304
+Az önce hesaplamıştık.
+
+616
+02:40:12,304 --> 02:40:14,023
+5'e 9 çıkıyordu.
+
+617
+02:40:14,579 --> 02:40:18,620
+5'e 9 çıkıyordu. Matris çarpımı da öyle mi veriyor sonucu?
+
+618
+02:40:19,340 --> 02:40:19,659
+Evet.
+
+619
+02:40:20,799 --> 02:40:33,860
+5'e 9 veriyor. Güzel. B üstü. C noktası 5'e 9'du. Bunu döndürdüğüm zaman C üstü ne çıkıyor acaba?
+
+620
+02:40:40,724 --> 02:40:42,864
+Bu da dörde sekiz çıkıyor hocam.
+
+621
+02:40:42,864 --> 02:41:07,984
+Dörde sekiz çıkıyor. Güzel. Az önce bunu mantığımız çerçevesinde şu noktaya göre döndürdüğümüzde ne çıkacağını hesaplamıştık. Dolayısıyla bu işlemlerin bir transformation madresiyle nasıl yapıldığını burada bu örnekle görmüş olduk.
+
+622
+02:41:09,556 --> 02:41:29,596
+Bu düzlemde bu mantık. Tabii bunun işte üç boyutlu olanları var. Tabii her eksen için döndürme şeyleri değişiyor. Yani biraz daha karmaşık bir yapı. Biz düzlemde nasıl yapıldığını görmüş olduk.
+
+623
+02:41:31,731 --> 02:41:47,731
+Şimdi burada bizim esas amacımız, buraya kadar soru yok sanırım. Güzel örneğimizi de yaptık, anlaşıldı diye tahmin ediyorum. Var mı? Yok. Peki. Şimdi biz bu işlemleri niye yaptık? Aslında bizim bunları yapma amacımız...
+
+624
+02:41:50,835 --> 02:42:18,536
+Bir matching işlemi yapacağız dedik başta. Bu matching işlemi yani bir model space'iniz var. Bir tarafta da kameradan aldığınız bir görüntü var. Bu iki şeyi aynı nesnenin iki farklı görüntüsü arasında bir eşleşen noktaları bulma amacımız var. Bunun için burada bir çalışma yapılmış.
+
+625
+02:42:18,835 --> 02:42:24,795
+Şimdi bayağı bir karışık ama size olabildiğince sadeleştirip anlatmak istiyorum.
+
+626
+02:42:24,795 --> 02:42:38,876
+Birincisi bir word coordinate düzlem dediği bir koordinat düzlemi tanımlıyor ve word coordinate düzlemin xw, yw dediğimiz bir eksen sistemi var.
+
+627
+02:42:39,995 --> 02:42:41,236
+Şurada gördüğümüz gibi.
+
+628
+02:42:45,492 --> 02:43:00,432
+Image Space ya da Image Plane dediğimiz bir koordinat düzlemimiz var. Buna da X, Y, Y diyoruz.
+
+629
+02:43:01,268 --> 02:43:15,128
+Bakın biri görüntü düzlemi, öbürü de World Coordinate düzlem. Yani dünyada gerçek ölçekte ki yerini, konumunu gösteriyor.
+
+630
+02:43:15,128 --> 02:43:25,547
+Bu amaçla iki tane nokta almış. P1 noktası ve P2 noktası diye. P1, P2 noktaları, P1 burada.
+
+631
+02:43:26,644 --> 02:43:45,304
+P2 burada. Bu iki noktanın hem word coordinate düzleminde hem de image coordinate düzleminde. Image coordinate düzleminde konumu böyle. Word coordinate düzlemde ise şöyle.
+
+632
+02:43:46,100 --> 02:44:03,880
+İşaretleniyor. Ben bu sistemleri, sistemler arasındaki dönme açısı, ölçekleme ve kaydırma miktarını bulabilmek için iki tane noktayı bilmek durumundayım.
+
+633
+02:44:13,556 --> 02:44:26,536
+Bu sistemi çözmek için gerekli teta açısını, kaydırma miktarını ve ölçekleme parametresini hesaplayabilirim.
+
+634
+02:44:26,536 --> 02:44:35,276
+Bakın bunun için şurada böyle bir formül yazılmış. Diyor ki, image coordinate düzlemde verilmiş olan bir P noktasının
+
+635
+02:44:35,615 --> 02:44:55,576
+Bir rotasyon matrisiyle, bir scaling matrisiyle ve bir de öteleme matrisiyle çarpılması sonucu ben bu noktanın, pj noktasının word coordinate düzlemindeki yerini bulabilirim diyorum.
+
+636
+02:44:55,995 --> 02:45:01,935
+Ama bu şeyde biz iki tane noktayı biliyoruz.
+
+637
+02:45:02,708 --> 02:45:12,567
+Şunları biliyoruz. Image koordinat düzleminde bir noktanın yerini bir de word koordinat düzleminde aynı noktanın yerini biliyoruz.
+
+638
+02:45:13,067 --> 02:45:28,067
+Ve bu iki tane noktadan faydalanarak bu içerideki transformation matrisinin bileşenlerini bunlar üzerinden bulmayı hedefliyoruz.
+
+639
+02:45:29,363 --> 02:45:34,144
+Güzel bir şey, yani eşleştirme problemi.
+
+640
+02:45:34,823 --> 02:45:40,003
+Ve hepsi matematiksel olarak aslında tanımlı işlemler.
+
+641
+02:45:40,003 --> 02:45:56,003
+Burada gördüğümüz gibi, image koordinat düzleminde verilmiş x, y noktası için ben az önce söylediğim gibi bir translation matrisi.
+
+642
+02:45:58,164 --> 02:46:05,504
+Translation matrisinde x0, y0 kadar bir translation var. Bir scaling matrisi.
+
+643
+02:46:06,131 --> 02:46:10,531
+Bu ölçekleme için s parametresini kullanıyor.
+
+644
+02:46:11,231 --> 02:46:16,551
+Ve iki koordinat düzlemi arasında bir döndürme açısı var.
+
+645
+02:46:16,551 --> 02:46:20,051
+Bakın bu döndürme açısı da burada theta olarak verilmiş.
+
+646
+02:46:20,491 --> 02:46:27,831
+Bu theta açısı ile dönme işlemi için bir rotation matrisi var.
+
+647
+02:46:30,995 --> 02:46:55,475
+Yani burada gördüğüm 3 matrisin çarpımını yapıp Image Coordinate Plane'de, düzleminde verilen bir Pİ noktasının, Pİ X virgül Y noktasının
+
+648
+02:46:56,404 --> 02:47:04,556
+Dönüştürme işlemin sonunda Word Coordinate...
+
+649
+02:47:19,092 --> 02:47:41,592
+düzleminde, plane'inde PWXY değerlerini bulabiliyorum. Ama ilk etapta bu matrislerdeki S, Theta, X0, Y0 değerlerini hesaplayabilmek için
+
+650
+02:47:42,195 --> 02:48:10,195
+İki tane noktanın her iki düzlemde de yerini biliyor olmam gerekiyor. Bu iki tane noktadan faydalanarak ben bu dönüşüm madresinin içerisindeki kaç tane bilinmeyen var? X0, Y0, S ve Theta. Dört tane bilinmeyen var. Bu dört tane bilinmeyeni önce hesaplamak için bu bildiğim iki noktadan faydalanıyor.
+
+651
+02:48:10,195 --> 02:48:13,975
+Ve bunun üzerinden bu hesaplamaları gerçekleştiriyorum.
+
+652
+02:48:15,415 --> 02:48:19,695
+Örnek olarak bu iki tane noktaya ilişkin bize değerler verilmiş.
+
+653
+02:48:19,876 --> 02:48:29,975
+Diyor ki, Image Coordinate düzlemindeki bir noktanın, Word Coordinate düzlemindeki yeri bu olsun.
+
+654
+02:48:31,255 --> 02:48:32,455
+İkinci nokta ise,
+
+655
+02:48:33,043 --> 02:48:42,043
+Hemen altında verilmiş. Bu iki noktadan faydalanarak, o matrisler içerisine bu değerleri yazarak ben...
+
+656
+02:48:45,043 --> 02:48:49,023
+Şuradaki, bir önceki şekle geçelim.
+
+657
+02:48:50,868 --> 02:49:10,148
+Şurada iki düzlem arasındaki teta açısını buradan hesaplayabiliyorum. Bunları biraz çalışmanızı isteyeceğim. Yoruldunuz, farkındayım. Çok da konu yükledim size. Bunları biraz okuyun ve sindirin. Haftaya belki üzerinden bir daha bir geçebilirim.
+
+658
+02:49:18,868 --> 02:49:35,868
+Image Coordinate düzleminde bu doğrunun theta i açısı bulunuyor. Sonra Word Coordinate düzleminde bunun theta açısı bulunuyor. Bu iki theta açısının arasındaki farktan yararlanarak...
+
+659
+02:49:39,731 --> 02:49:51,231
+Teta i ve teta w arasındaki farkı bularak da bu iki koordinat düzlemi arasındaki dönme açısını hesaplıyor.
+
+660
+02:49:51,231 --> 02:50:02,631
+Ve bu şeyi çözmek için dediğim gibi iki tane noktaya ihtiyacımız var. Zaten o da problemin başında bize verildiği takdirde biz bu dönüşümü yapabiliyoruz.
+
+661
+02:50:04,432 --> 02:50:05,231
+Evet.
+
+662
+02:50:06,579 --> 02:50:23,079
+Benim bu hafta anlatacaklarım bu kadar. Bu hafta size yeni bir ödev de verdim. Tam hızlı devam ediyoruz. Sormak istediğiniz herhangi bir şey var mı?
+
+663
+02:50:25,108 --> 02:50:41,288
+Hocam ben bu son anlattığımız ile ilgili ufak bir soru sormak istiyorum. Sizin bu anlattığınıza göre iki noktayı bilmemiz gerekiyor dediniz ya, iki farklı noktanın iki farklı düzendeki olduğu yeri bilirsek Transition, Scale, Rotation'ı hesaplayabiliriz.
+
+664
+02:50:43,427 --> 02:50:53,108
+Şimdi benim aklıma gerçek dünya problemi şey gibi geliyor hep. İki tane örnek veriyorum, görüntü var. Bu iki görüntü birbiriyle match oluyor mu bir nokta?
+
+665
+02:50:53,108 --> 02:50:58,108
+Aslında aradığımız budur.
+
+666
+02:50:58,739 --> 02:51:08,020
+Bu işlemleri yapmalıyız. Bu durumda bu noktaları nasıl bilebiliriz? Yani orayı tam oturtamadım. Biraz gerçek dünya problemiyle örtüştüremedim diyelim.
+
+667
+02:51:08,020 --> 02:51:21,020
+Biz böyle bir çalışmayı şeyde yapmıştık. Mesela laboratuvarda yerleştirdiğimiz kameralarda laboratuvara giren kişinin laboratuvardaki konumunu...
+
+668
+02:51:21,556 --> 02:51:30,716
+Görüntü üzerindeki koordinatıyla gerçek laboratuvar ölçeğindeki konumu arasında bir eşleştirme yapma ihtiyacı duyduk.
+
+669
+02:51:30,716 --> 02:51:39,136
+Mesela oradan örnek vereyim size. Laboratuvar örneği çok şey bir örnek, düzlemsel de bakabileceğimiz bir örnek.
+
+670
+02:51:39,796 --> 02:51:42,536
+Kapıdan giren bir kişi bu düzlemde.
+
+671
+02:51:43,316 --> 02:52:00,596
+Nerede konumlanmış? Ben bunu eğer kamera görüntüsünden biliyorsam, laboratuvar ölçeğinde de, laboratuvarın enini, boyunu ve şeyini de bildiğim için bu düzlem üzerinde, birebir koordinatını söyleyebileceğim. Anlatabiliyor muyum? Verdiğin örnek açık oldu mu?
+
+672
+02:52:00,596 --> 02:52:01,236
+Çok güzel oldu.
+
+673
+02:52:01,236 --> 02:52:11,236
+Yani biz mesela orada kullandık. Buna biraz şey de deniyor, kamera kalibrasyonu falan gibi de deniyor. Ben bu iki tane nokta üzerinden bu eşleştirmeyi...
+
+674
+02:52:11,316 --> 02:52:21,836
+Bundan sonra artık Image Plane'de bildiğim her noktanın artık Word Coordinate düzlemindeki yerini söyleyebiliyorum.
+
+675
+02:52:22,708 --> 02:52:26,148
+Amaç bu aslına bakarsanız.
+
+676
+02:52:26,268 --> 02:52:32,128
+Aslında iki görüntünün birbiriyle meç olmasından ziyade belli parçalarının meçliğini yakalamaya çalışıyoruz.
+
+677
+02:52:32,168 --> 02:52:34,068
+Dolayısıyla bildiğimiz bilgi var iki görüntü üzerinde.
+
+678
+02:52:34,208 --> 02:52:34,927
+Şimdi daha iyi anlıyor.
+
+679
+02:52:34,927 --> 02:52:39,208
+Var ama ikisi arasında büyük bir ölçek farkı var.
+
+680
+02:52:39,208 --> 02:52:39,427
+Evet.
+
+681
+02:52:39,868 --> 02:52:44,427
+Birinde piksel bazında bir ölçek üzerinden bakıyorsun.
+
+682
+02:52:44,587 --> 02:52:50,648
+Öbüründe metre üstünde işte böyle kaç metre duvara kaç metre uzakta olduğunu falan.
+
+683
+02:52:50,708 --> 02:53:09,747
+Yani o düzlem üzerinde. Ve bu iki şeyi birbiriyle eşleştirmeye çalışıyorsun. Kameranın yerleştirildiği konuma göre senin şeyin açısı da farklı oluyor. Yani iki düzlemin arasında da birbirine göre bir teta açısı, bir dönme açısı da var beraberinde.
+
+684
+02:53:18,708 --> 02:53:27,028
+Önce düzlemde bakıyoruz olaya. Burada verdiği örnekte şöyle bir şey yapıyor.
+
+685
+02:53:28,468 --> 02:53:38,848
+Teta 1 dediği açı P1, P2 noktalarından geçen doğrunun X80'iyle yaptığı açı diyor.
+
+686
+02:53:38,848 --> 02:53:45,108
+Yani P1, P2 şöyle bir iki nokta arasından bir doğru çizdirin.
+
+687
+02:53:45,263 --> 02:53:59,603
+Bu doğrunun her iki düzlemle, her iki düzlemde kendi x ekseniyle yaptığı açı, yani şunu uzatırsam eğer, bunun şurayla yaptığı açıyı önce hesaplıyorum.
+
+688
+02:53:59,603 --> 02:54:05,183
+Sonra bunun word koordinat düzlemiyle yaptığı açıyı hesaplıyorum.
+
+689
+02:54:05,623 --> 02:54:12,823
+Sonra bu ikisi arasındaki farktan şu teta'yı buluyorum. İki koordinat düzlemi arasındaki farkı buluyorum.
+
+690
+02:54:15,572 --> 02:54:29,792
+Biraz şekli kabaca çizdim ama matematiksel işlemlere bakacak olursanız şurada verdiği teta i açısı image plane'de.
+
+691
+02:54:29,792 --> 02:54:37,731
+Çünkü bakın i image plane'i gösteriyor. Görüntü düzleminde yapılan bir işlem.
+
+692
+02:54:41,935 --> 02:55:08,795
+Delta y bölü delta x'in arktanjantı. Arktanjant, delta y bölü delta x. Buradan teta i açısını buluyor. Ben aynı iki noktanın word coordinate düzlemindeki yerlerini de biliyorum. Bunlar için de bu delta yi için hesaplanmış.
+
+693
+02:55:09,935 --> 02:55:19,536
+YW bölü delta XW'yu oranlayıp bunun arktanjantından bir de theta W'yu hesaplıyorum.
+
+694
+02:55:21,576 --> 02:55:28,396
+Dolayısıyla bu şeyde, şimdi şurayı şekli biraz daha temizleyip çizeceğim size.
+
+695
+02:55:28,655 --> 02:55:33,576
+Daha anlaşılır olması için. Biraz da renkli kalem kullanırsam daha iyi olacak.
+
+696
+02:55:34,079 --> 02:55:39,239
+Şöyle düşünün, bakın şuradan bir P1-P2 noktalarından bir doğru geçirdim.
+
+697
+02:55:39,239 --> 02:55:47,239
+Bu doğrunun Image Coordinate düzleminde...
+
+698
+02:55:51,092 --> 02:56:00,731
+x ekseni ile yaptığı açı diyorum. Şöyle x eksenini uzatıyorum ve bunu yine kalemin rengini değiştireyim.
+
+699
+02:56:02,292 --> 02:56:07,132
+Şu doğrunun bu eksenle yaptığı açı ya theta i diyorum.
+
+700
+02:56:07,132 --> 02:56:16,132
+Theta i diyorum. Tamam. Sonra bakın bu doğruyu şimdi sileceğim. Bir de şeyi çizeceğim.
+
+701
+02:56:18,291 --> 02:56:28,772
+Word Coordinate düzlemiyle yaptığı açıyı çizeceğim. Bu doğrunun doğruyu uzatarak çizebilirim.
+
+702
+02:56:29,772 --> 02:56:44,491
+Kırmızı kullanalım. Bu P1, P2'den geçen doğrunun Word Coordinate düzlemiyle yaptığı açı ise, bunu şu şekilde uzatırsam eğer,
+
+703
+02:56:45,716 --> 02:56:48,376
+Şuraya da teta W diyorum.
+
+704
+02:56:49,096 --> 02:56:58,175
+Teta W'dan teta i'yi çıkartırsam eğer, bu iki düzlem arasındaki x eksenleri arasındaki açıyı bulmuş oluyorum.
+
+705
+02:56:58,316 --> 02:56:59,456
+Teta W burası.
+
+706
+02:56:59,956 --> 02:57:19,916
+Şurada da θi vardı. Bu ikisinin farkı şu iki koordinat düzlemi arasındaki açıyı veriyor bana. Zaten burada da yaptığımız işlem θw-θi ile iki koordinat düzlemi arasındaki açıyı hesaplamış oluyoruz.
+
+707
+02:57:27,123 --> 02:57:46,043
+Bu hafta benim anlatacaklarım bu kadar. Biraz yüklü bir ders oldu, farkındayım. Hem haft transformunu anlattık hem de iki boyutta dönüşüm işlemlerini anlattık. Önümüzdeki hafta daha ilginç konular geliyor. Bu haftalık bu kadar.
+
+708
+02:57:47,724 --> 02:57:53,203
+Hepinize güzel bir hafta diliyorum arkadaşlar. Şuradan kapatalım.
+
+709
+02:57:55,924 --> 02:58:21,904
+Bu hafta 6. haftaya başladık. Bol ödevli ve projeli bir dönem sizi bekliyor. Ama yaptığınız her ödevde çok şey öğreneceğinize inanıyorum. Biraz yüklü olduğunun farkındayım ama bunların hepsi ileride yaptığınız çalışmalarda size ışık tutacak. Öyle bakın lütfen.
+
+710
+02:58:23,092 --> 02:58:25,792
+Peki.
+
+711
+02:58:26,420 --> 02:58:29,760
+Haftaya görüşmek üzere. Sağlıkla kalın.
+
+712
+02:58:29,760 --> 02:58:31,540
+Hocam ben bir soru sorayım mı son kabımadan?
+
+713
+02:58:31,900 --> 02:58:32,340
+Tabii buyurun.
+
+714
+02:58:32,340 --> 02:58:33,500
+Ödevle ilgili birinci ödev.
+
+715
+02:58:34,459 --> 02:58:43,500
+Hocam kodlarımızı Jupyter Notebook dokümanı olarak mı paylaşmamız gerekiyorsa yoksa onu bir .py olacak şekilde...
+
+716
+02:58:43,500 --> 02:58:48,739
+Ben Jupyter Notebook'u tercih ederim, oradan açarım. Öyle yazarsanız daha iyi olur.
+
+717
+02:58:48,739 --> 02:58:51,060
+Hepsini tek bir sayfada yapsak olur değil mi?
+
+718
+02:58:51,060 --> 02:58:54,420
+Tabii ki. Zaten öyle olsun. Parça parça uğraşmayalım.
+
+719
+02:58:54,420 --> 02:59:11,979
+Lütfen. Çok sağ olun hocam. Teşekkürler. Görüşmek üzere. Hoşçakalın. Teşekkürler hocam. Hoşçakalın. Teşekkürler hocam. Hepinize iyi haftalar. İyi günler. Hoşçakalın.
+
+720
+02:59:30,067 --> 02:59:31,787
+Görüşürüz, hoşçakalın arkadaşlar.
