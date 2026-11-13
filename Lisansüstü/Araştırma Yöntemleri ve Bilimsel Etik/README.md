@@ -28,3 +28,4 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AÖ
 - ZCT
+- AEL
