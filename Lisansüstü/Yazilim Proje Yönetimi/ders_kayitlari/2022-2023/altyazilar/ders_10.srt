@@ -1,0 +1,1695 @@
+1
+00:00:50,164 --> 00:01:07,864
+Merhabalar, bu hafta sizin anlatımlarınıza başlıyoruz. İlk olarak [öğrenci] konusunu belirlemişti. Herhalde onun anlatımı olacak. [öğrenci]'a bakıyorum burada. [öğrenci] anlatacak mısın bugün?
+
+2
+00:01:07,864 --> 00:01:09,463
+Evet hocam, hazırlandım.
+
+3
+00:01:09,664 --> 00:01:14,764
+Tamam. Bir de kimi yazmışız? [öğrenci]. [öğrenci] burada mı?
+
+4
+00:01:17,075 --> 00:01:18,995
+Buradayım hocam.
+
+5
+00:01:19,195 --> 00:01:22,155
+Tamam. [öğrenci] sen de anlatacaksın herhalde.
+
+6
+00:01:22,915 --> 00:01:24,335
+Evet hocam anlatacağım.
+
+7
+00:01:24,615 --> 00:01:31,155
+Tamam. Başka, yani bu üç arkadaşınız söylemişti. Başka anlatmak isteyen var mı bu hafta?
+
+8
+00:01:35,379 --> 00:01:50,219
+Tamamdır. Yani benim de daha sonra ekleyeceğim birkaç şey kalmıştı. Onların üzerinde de durabilirim daha sonra. Dersi tamamlarız. [öğrenci] önce seninle başlayalım mı?
+
+9
+00:01:50,620 --> 00:01:52,259
+Tabii hocam. Siz nasıl uygun görürsünüz.
+
+10
+00:01:52,259 --> 00:01:59,780
+O zaman şöyle bir sıralama yapalım. Bendeki sıralamanıza uyalım. [öğrenci], [öğrenci], sonra da [öğrenci].
+
+11
+00:02:03,635 --> 00:02:12,036
+Belki [öğrenci] anlattıktan sonra bir 5-10 dakika ara veririz veya devam ederiz duruma göre karar veririz.
+
+12
+00:02:14,075 --> 00:02:14,315
+Evet.
+
+13
+00:02:18,036 --> 00:02:20,435
+[öğrenci] ekran paylaşımı yapabilirsin.
+
+14
+00:02:21,075 --> 00:02:21,735
+Tabii hocam.
+
+15
+00:02:24,156 --> 00:02:25,755
+Şu an görünüyor mu hocam ekranım?
+
+16
+00:02:26,036 --> 00:02:29,475
+Evet görünüyor. Ben şu kapıyı kapatayım da dışarıdan birisi gelmesin.
+
+17
+00:02:52,756 --> 00:02:53,855
+Başlayabilir miyim hocam?
+
+18
+00:02:54,036 --> 00:02:54,256
+Evet.
+
+19
+00:02:55,195 --> 00:03:05,575
+Sayın hocam, değerli arkadaşlar, ismim [öğrenci]. Benim makalem, yazılım proje yönetimi için arttırımlı bir varlık oluşturma yönetimi yeni bir süreç modeli hakkında olacak.
+
+20
+00:03:07,175 --> 00:03:16,376
+Bu makalemi beş ana başlıkta sizlere aktarmak istiyorum. Özet, giriş, araştırabilir sorunlar, önerilen yöntem ve sonuç hakkında olacak.
+
+21
+00:03:17,376 --> 00:03:18,735
+Öncelikle özeti.
+
+22
+00:03:19,135 --> 00:03:46,036
+Anlatarak başlamak istiyorum. Hepimizin bildiği gibi yazılım proje, daha doğrusu yazılım enstitüsü hızlıca büyüyen bir alandır. Ancak bu yazılım enstitüsünde hayatta kalmak, daha doğrusu gelir ve kar maliyetimizin artıda olması her zaman oluşan bir durum değildir. Bu kar elde edememenin nedenlerinden en büyük nedeni de her müşteri özel yazılım geliştirmek olduğunu belirtilmiş bu makalede.
+
+23
+00:03:47,135 --> 00:03:59,695
+Bu süreç modelini geliştirmek için yeni bir model önermişler. Buna artırımlı varlık modeli olarak adlandırdılar. Bu süreç modelini benimsemek, bu yazılım şirketlerine kar edetmelerinin yardımcı olacaklarını belirtiyorlar.
+
+24
+00:03:59,695 --> 00:04:04,975
+Bunun için öncelikle bir, daha sonra ileride detaylı olarak anlatacağım ama bir pazar segmentine.
+
+25
+00:04:05,556 --> 00:04:16,475
+Dayalı olarak bir süreç geliştirilecek. Daha sonra önemli olarak yeniden kullanılabilir yazılım bileşenleri oluşturulacak ve bunlar projeye, yazılım projesine entegre edileceğini belirtiyorlar.
+
+26
+00:04:16,576 --> 00:04:26,416
+Ve bunun sayesinde minimum özelleştirmeyle bir yazılım oluşturuluyor ve şirketler kaynaklarının gelirlerini ve karlarını artı olarak saklayabiliyor, koruyabiliyorlar.
+
+27
+00:04:27,956 --> 00:04:43,516
+Giriş kısmında yine bahsettiğim gibi yazılım uygulamaları, talepleri her geçen gün artıyor. Ve bunu tercih etmeleri tabii doğal olarak daha çok artıyor. Ancak her ne kadar yazılım işi artıyor olsa da yazılım başarı oranının düşük olduğunu belirtiyorlar.
+
+28
+00:04:43,516 --> 00:04:55,336
+Ve bundan dolayı da kar edemediklerini belirtiyorlar. Ve yazılım sektöründe hayatta kalmanın çok zor olduğunu belirtiyorlar. Bunun sebebileri de geleneksel yazılım.
+
+29
+00:04:55,956 --> 00:04:59,656
+Şurada belirtildi, gereksiz yazılım projenin takip etmelerinin olduğunu belirtiyorlar.
+
+30
+00:04:59,735 --> 00:05:08,156
+Ve her müşteri için ayrı bir özel yazılım geliştirme, her müşteri için gereksiz ek zaman ve gereksiz kaynağı mahri olduğunu belirtiyorlar.
+
+31
+00:05:08,156 --> 00:05:16,696
+Ve yeniden kullanılabilir birleşenlerin çok az olduğunu ve bunun sebebiyle de bu işlerin doğru ilerlemediğini belirtiyorlar.
+
+32
+00:05:17,456 --> 00:05:22,956
+Ve bu özelleştirilmiş yazılımın tek bir müşteriye fatura edilmesinin mantıksız olduğunu,
+
+33
+00:05:23,956 --> 00:05:38,796
+Her müşteri için, daha doğrusu her müşteri için baştan benzer proje oluşturmanın pahalı ve gereksiz olduğunu belirtiyorlar. Çünkü bu firmalara ek olarak zaman ve maliyet kaybı olduğunu belirtiyorlar.
+
+34
+00:05:40,884 --> 00:05:59,824
+Bu makaledekin amacı, isim olarak artımlı varlık modeli olarak yeni bir süreç modeli belirtiyorlar. Bu model ile toplam maliyet tek bir müşteri değil de benzer ünlere sahip çok müşteri arasında dağıtılması ve ortalama maliyetin düşmeye yardımcı olacağını belirtiyorlar.
+
+35
+00:05:59,824 --> 00:06:04,623
+Burada bahsettikleri ana sorunlar şu şekilde.
+
+36
+00:06:06,387 --> 00:06:16,567
+Bu tarz düşük gelire yol açan projeler, yazılım firmalarının sürdürebilirliğinin düşük olduğunu belirtiyorlar. Bu onların temel endişesi.
+
+37
+00:06:17,207 --> 00:06:26,267
+Ve bunun sebebiyle de maliyetin çok yüksek ve karşılığına namaz oldu. Tek bir müşteriden alındığı özel projelerin buna sebep olduğunu belirtiyorlar.
+
+38
+00:06:26,267 --> 00:06:34,387
+Ve yeniden kullanılabilirlik için daha az fırsata sahip olduğunu belirtiyorlar. Ve karın çok düşük olduğunu belirtiyorlar. Şurada sıfıra yakın olduğunu belirtiyorlar.
+
+39
+00:06:34,387 --> 00:06:43,527
+Bunun da sebebi bu geleneksel yazının proje yönetimini takip ettiğinin verdiği sonuç olarak belirtiyorlar. Önerilen bu yöntemde, az sonra daha detaylı anlatacağım.
+
+40
+00:06:44,187 --> 00:06:53,007
+Aynı pazar segmentinde, yani aynı müşterilerin benzer isteklerine bağlı olarak, aynı pazar segmentinde benzer uygulamayı sunmak ve yeniden kullanılabilirlik varlıklarını
+
+41
+00:06:53,779 --> 00:06:56,499
+Oluşturulmasına yardımcı olacak bu süreç modeli.
+
+42
+00:06:56,499 --> 00:07:06,999
+Ve bunun sayesinde her müşteri için proje maliyeti düşecek ve toplam maliyet birden fazla tek bir müşteriyedir. Birçok müşteriye yayıldığını belirtecekler bu modelde.
+
+43
+00:07:07,668 --> 00:07:27,867
+Şimdi önerilen modeli, önerilen dalgısı, yöntemi anlatmak istiyorum. Burada sol tarafta modelin, önerilen yöntemin şablon halini görebiliriz. Dört ana başlıkta bunu incelemişler. Market analizi, proje yöneticisi, daha sonra daha detaylı anlatacağım kısımlarda.
+
+44
+00:07:29,908 --> 00:07:38,927
+Market analizi, pazar analizi olarak da belirtiyor. Yani müşterilerin isteklerine bağlı olarak ne tür istekler var şu an pazarda? Bunun analizinin yapılması gerektiğini düşünüyorum.
+
+45
+00:07:38,927 --> 00:07:56,108
+Tamam ben arkadaşlarına bir şey soracağım. Şu anda [öğrenci]'ın gösterdiği diagram bizim nesneye yönelik yazılım geliştirmede kullandığımız UML kapsamındaki diagramlardan hangisine benziyor?
+
+46
+00:07:58,483 --> 00:08:13,163
+Her farklı aktörle her farklı varlık ortamda gerçekleşen olayları gösteren diagram.
+
+47
+00:08:14,443 --> 00:08:16,943
+Aktivite diagramı.
+
+48
+00:08:19,003 --> 00:08:23,623
+Market analizi gerçekleştiğinin yaptığı işler.
+
+49
+00:08:24,435 --> 00:08:42,556
+Önce burada gösteriliyor. Sonra direktör, proje yöneticisinin yaptığı işler, testçinin yaptığı işler. Aktivite diagramında da bu şekilde kullanıyoruz. Aktivite diagramını.
+
+50
+00:08:43,379 --> 00:08:46,720
+Evet, hatırlatmak istedim. Teşekkürler.
+
+51
+00:08:47,180 --> 00:08:54,720
+Teşekkür ederim hocam. Burada önce ilk tarafta gördüğünüz gibi market analizi. Yani bahsettiğim gibi bir pazar analizi olarak adlandırıyorlar.
+
+52
+00:08:54,879 --> 00:09:01,159
+Yani o piyasadaki müşterilerin genel isteklerini burada bulma olarak adlandırılıyor.
+
+53
+00:09:01,399 --> 00:09:07,740
+İlk olarak burada bahsedildiği gibi bir pazar analizi yapılacak ve hedef bir pazar seçilecek.
+
+54
+00:09:07,740 --> 00:09:11,139
+Ardından genel müdür veya menajer direktör olarak adlandırılan kişi bu.
+
+55
+00:09:11,379 --> 00:09:18,879
+Pazar analizine bağlı olarak bir proje seçecek. Bu projenin daha sonra burada temel bileşenleri kontrol edilecek.
+
+56
+00:09:19,668 --> 00:09:46,288
+Temel bileşenler eğer mevcutsa, burada şu yes şeyinde oldu bilmiyorum mouse'un gözüküyor mu ama, direkt projeye dahil edilecek. Eğer şeyler mevcut değilse, temel bileşenler mevcut değilse, bu yeniden kullanılabilirlik bileşenler geliştirilecek ve ardından projeye entegre edilecek. Daha sonra proje gerçekleştirdikten sonra, kaliteyi sağlamak için belirtiyorlar, bu proje test edilecek ve daha sonra müşteriye teslim edilecek.
+
+57
+00:09:47,668 --> 00:09:59,988
+Önerilen yöntemin kabaca şeyi. Daha sonra şurada detaylı olarak anlatılacak. Burada dediğim gibi bu önerilen yöntemi şöyle genel bakış olarak bir öncelikli bir pazar analizmi.
+
+58
+00:10:00,000 --> 00:10:09,280
+Market analizi olarak belirtmişler. Bir pazar özelliklerini belirleme, bilgiler analiz etme, projemin kapsamını tanımlama, yeniden kullanılabilik birleşenler oluşturma süreci.
+
+59
+00:10:09,280 --> 00:10:18,380
+Daha sonra bu analize göre bir proje seçiliyor. Hedeflenen pazar segmentine göre belirli bir etki alan tabanlı proje seçme süreci ve birleşenler kontrol edilecek.
+
+60
+00:10:18,520 --> 00:10:20,280
+Yani temel birleşenler kontrol edilecek. Eğer varsa...
+
+61
+00:10:21,364 --> 00:10:27,764
+Direkt projeye entegre edilecek. Eğer yoksa yeniden kullanılabilir birleşenler oluşturulup projeye entegre edilecek.
+
+62
+00:10:29,683 --> 00:10:41,504
+Burada her bir adımda, şurada gösterdiğim her bir sütündeki adımları tablo halinde giriş, aktiviteler, çıkış ve oluşsunucuları eserli olarak aktarmışlar.
+
+63
+00:10:41,504 --> 00:10:44,504
+Örneğin ilk şuradaki market analizi.
+
+64
+00:10:45,172 --> 00:10:56,052
+Pazarlar kısmında önce giriş olarak seçilen pazara genel bir bakış, karar verme kanıtları, proje seçimleriyle iletişim, proje genel bakış olarak bir işlem yapılıyor.
+
+65
+00:10:56,052 --> 00:11:08,231
+Burada aktiviteler olarak, özür dilerim, giriş kısmında pazar bilgileri ve bilgi toplama teknikleri olarak belirtiyorlar pazar analizinde.
+
+66
+00:11:08,692 --> 00:11:11,891
+Burada yapılan aktiviteler bu hedef pazarı bir analiz ediliyor.
+
+67
+00:11:13,172 --> 00:11:29,412
+Bu konusunu tanımlıyorlar. Uygun pazar segmentini seçiyorlar. Ve bunun sonucunda bir hedef pazar segmentasyonu oluşuyor. Bunun eser olarak, yani rapor olarak belirtilmeni bir analiz raporu oluşturuyorlar. Ve seçilen hedef pazarı genel bir bakış olarak belirtiyorlar bu birinci adımda.
+
+68
+00:11:30,644 --> 00:11:43,724
+İkinci adımda ise bu Manager Director'ın olduğu kısımda ise ilk adımda oluşan analiz rapı burada giriş olarak belirtilmiş. Bu analiz rapına göre uygunluk proje belirleniyor.
+
+69
+00:11:46,323 --> 00:12:02,723
+Değerlendirmek, kullanılabilirlik burada kontrolü. Eğer şuradaki evet kısmı, şurada birisi direkt projeye entegre ediliyor, değilse kendi oluşturuluyor. Daha sonra yeni şurada belirtilen bileşenler geliştiriliyor.
+
+70
+00:12:05,844 --> 00:12:21,683
+Daha sonra burada bunun sonucunda, bütün bu işlemlerin sonucunda bir proje seçiliyor. Bu proje sonucunda üç farklı eser oluşturduğunu belirtiyorlar. Karar verme kanıtları, proje seçimi iletişimi ve proje genel bakış olarak belirtiyorlar.
+
+71
+00:12:23,683 --> 00:12:24,683
+Daha sonra...
+
+72
+00:12:25,120 --> 00:12:51,399
+Üçüncü kısımda bu her iki, birinci ve ikinci adandaki oluşan eserler burada giriş olarak verilir. Burada proje kapsamını anlama, proje birleşenlerinin kontrol edilmesi, evet birisi birinci aşamaya taşıma, hayır ise birleşenleri oluşturma ve projeye entegre ettikten sonra yeni projeyi test ederek güncelleştirme aşaması olarak belirtiyorlar.
+
+73
+00:12:53,104 --> 00:13:02,604
+Eserler olarak karşımıza çıkan şey, projemizin yeni ve güncellenmiş kaynak kodu, birim test durumu ve buradaki test durumu olarak adlandırmışlar.
+
+74
+00:13:04,744 --> 00:13:11,604
+Son kısımda ise, projenin entegre edilme kısmında ise, burada yine son adımın...
+
+75
+00:13:11,796 --> 00:13:22,656
+Çıkış durumu burada giriş olarak verilmiş. Artık proje oluşmuş olarak burada ben anlıyorum. Sürüm notunu alın diyor, yeni sürüm ve sürüm notu olarak çıkış veriyorlar burada son adımda.
+
+76
+00:13:23,975 --> 00:13:33,796
+Yani şurada şöyle göstermek gerekirse, artık burada son test işlemleri yapıldıktan sonra projeyi teslim etme kısmı olarak belirtiliyor son adım, dördüncü adım.
+
+77
+00:13:37,716 --> 00:13:40,115
+Yazılım Entitüsü'nün...
+
+78
+00:13:40,115 --> 00:13:40,735
+Şöyle bir saniye.
+
+79
+00:13:41,235 --> 00:13:49,515
+Yazılım, en üstün evrimi, şirket içi geliştirme ve yazılım projelerin sözleşmeler olarak alınmasıyla başladığını belirtiyorlar.
+
+80
+00:13:49,735 --> 00:14:01,575
+Ama artık çağın yenilikçi bir çağ oldu. Bu tarz yazılım projelerin artık yeniden kullanılabilir bir işlemlerle ilerleyebileceğini, sürdürülebileceğini ve daha az özelleştirmeyle bu işlemlerin yapılması gerektiğini belirtiyorlar.
+
+81
+00:14:01,575 --> 00:14:05,595
+Ve bu sayede maliyetin ve fiyatın düşeceğini belirtiyorlar.
+
+82
+00:14:09,235 --> 00:14:23,335
+Bu sayede, dediğim gibi, pazar analizinin doğru yapılması gerektiğini, bu pazar analizinin doğru yapıldığı takdirde ardından gelişebilecek, o anlattığım proje faaliyetlerinin yapılması gerektiğini belirtiyorlar. Bu sayede, dediğim gibi, maliyeti düşürmedi.
+
+83
+00:14:24,179 --> 00:14:48,459
+ve kar miktarını arttırmada yardımcı olacağını belirtiyorlar. Şirketler çünkü beklenen bütçe ve süre içinde projelerini teslim edemiyorlar. Bu model sayesinde, bu pazar analizi sayesinde proje yöneticisi yeniden kullanılabilik varlıklar oluşturma ve bunlardan yararlanma kapsama hakkında vizyon sahibi olabiliyorlar. Bu şekilde hocam benim anlatacaklarım.
+
+84
+00:14:49,491 --> 00:15:10,292
+Peki, birçok arkadaşımız çalışıyor iş yerlerinde. Bu modeli, yazılım projeleri geliştiren ekiplerdesiniz. Bu proje yönetim modeli hakkında yorum yapacak olan var mı?
+
+85
+00:15:11,292 --> 00:15:16,091
+Kullandığınız proje yönetim süreçleriyle ilişkilendirip.
+
+86
+00:15:18,676 --> 00:15:22,616
+Bu anlamda bakıp sorusu olan var mı bu model hakkında?
+
+87
+00:15:26,676 --> 00:15:30,176
+Sessizde miydi acaba dedim mi? Duyuldu değil mi soru?
+
+88
+00:15:38,676 --> 00:15:41,696
+[öğrenci], sen biraz yorum yapmak ister misin?
+
+89
+00:15:41,796 --> 00:15:43,316
+Hocam, şöyle yorum yapabilirim aslında.
+
+90
+00:15:43,816 --> 00:15:46,235
+Bunun bir kürde kullanılabilirliği ne olur?
+
+91
+00:15:46,836 --> 00:15:52,015
+[kişisel bilgi]
+
+92
+00:15:52,696 --> 00:15:57,336
+[kişisel bilgi]
+
+93
+00:15:57,336 --> 00:16:06,076
+ERP yazılım ürünümüzün dışında burada bahsedildiğim gibi müşterilere ayrı yeten yazılım yapmaya, özel yazılım yapma işlemimiz de vardı.
+
+94
+00:16:06,676 --> 00:16:22,515
+Bu gerçekten, yani maliyet kısmı tabii o kadar hakim değilim. Yani şirketin maliyeti artıyor muydu, bu konuda azalıyor muydu, bu konuda birikim yok ama çok artmaya başladığında gerçekten zaman ve maliyet şey açısından eksi durumda olduğunu gözlemleyebiliyordum ben de.
+
+95
+00:16:23,576 --> 00:16:30,396
+Ama burada, yani şuradaki cümle benim önümde çalışırken de, bir saniye, şu cümle benim çok dikkatimi çekmiş.
+
+96
+00:16:32,980 --> 00:16:51,720
+Şurada her ne kadar yazılım işi doğuyor olsa da yazılım işinin başarı oranı çok düşük, cümlemesine çok katılmamıştım ben açıkçası burada belirttikleri. Daha sonra 2021 yılında yayınlanmış bu IT Play'de. Budapest'de de yapılmış bu yayın.
+
+97
+00:16:51,720 --> 00:17:00,360
+Acaba bunu oradaki ülke için mi belirtti, genel olarak mı belirtti tam anlayamamış. Ben bu cümleye çok katılmamıştım çünkü.
+
+98
+00:17:00,980 --> 00:17:05,680
+Yazılım başarı oranına çok düşük oldu veya daha sonra şu özet kısmında belirtilmişti.
+
+99
+00:17:05,680 --> 00:17:16,180
+Yani genel olarak bu yazılım projeleriyle ilişkili her şeye böyle başlamak alışılmıştır.
+
+100
+00:17:16,579 --> 00:17:20,680
+Yani çok başarısız proje oranı çok düşüktü.
+
+101
+00:17:22,195 --> 00:17:39,855
+Bu Gartner raporlarında da hep böyle belirtilir. Yani başarısız projeden kastımız tabii ilk üç baktığımız şey zamanında bitti mi, ayrılma kaynakla bitti mi?
+
+102
+00:17:40,336 --> 00:18:03,336
+Kapsam olarak, istenilen kapsam tutturuldu mu? Bu konuda baktığımızda zamanın gerisinde kalmış olması, hep ek zaman istenmesi, ek maliyet gerektirmesi veya müşteriyle tam anlaşılamayıp...
+
+103
+00:18:03,680 --> 00:18:21,440
+Kapsamın sonradan değiştirilmesi şeklinde görünen sonuçlar olduğu için diğer projelere göre başarısızdır demek bir klişe haline gelmiştir.
+
+104
+00:18:21,440 --> 00:18:24,579
+Bu tür yazıların başında hep böyle başlamak.
+
+105
+00:18:26,228 --> 00:18:45,228
+Başlamaya alışılmıştı. Ama belki bu eski yıllardan alışılmış bir şey. En son Gartner raporuna da bir bakmak lazım aslında. Nedir şu andaki durum dünyada? Yani senin gözlemlediğin kadarıyla…
+
+106
+00:18:53,523 --> 00:19:21,003
+Doğru buluyordum hocam ben. Her müşteriye ayrı, burada hani şurada kırmızı lirbetim, her müşteri özel yazılım geliştirmek olduğunu belirtiyorlar. O gün pazar analizi dediklerinde, müşteri analizi dediklerinde şey bana da mantıklı geliyor. Eğer hedeflediğin müşterinin hepsini ortak olarak belirlediğin bir yazılım ile başlarsak, daha sonra çok özelleştirme olmayarak yeniden değiştirme daha kolay olur.
+
+107
+00:19:21,523 --> 00:19:32,523
+Bir düşünüyordum. O konuda doğru olarak düşündüm. Önce bir hedef pazar seçip ondan sonra projeyi ilerlemek doğru gelmişti bana açıkçası. Ama bu biraz bana hani...
+
+108
+00:19:33,460 --> 00:19:44,700
+Yani şirketin büyüklüğü mü diyeyim, kapsam mı diyeyim göre değişebilir açıkçası. Yani şirket ne kadar büyük olursa o kadar ortak şey yapmak daha zor olabilir. Yani birden farklı tip müşteri olabilir.
+
+109
+00:19:44,700 --> 00:19:59,759
+Belki şey de farklı. Yani bu agile süreç modelleri kullanıldıkça kapsam konusunda baştan daha kolay anlaşmak mümkün oldu. Evvel'den belki bu daha zordu.
+
+110
+00:20:00,276 --> 00:20:08,996
+Onun için başarıyı etkilemiş olabilir, son yıllarda aşmış olabilir başarı oranı. Öyle de bir şey olabilir.
+
+111
+00:20:10,076 --> 00:20:15,496
+[kişisel bilgi]
+
+112
+00:20:15,496 --> 00:20:16,236
+Evet, zaten öyle istiyordum.
+
+113
+00:20:18,956 --> 00:20:25,276
+Aslında bu konuyu ben de çalışmak istiyordum. [öğrenci] daha önce.
+
+114
+00:20:25,940 --> 00:20:28,280
+Konay aldığı için ben çalışamadım.
+
+115
+00:20:28,300 --> 00:20:32,580
+Evet, öyle bir şey olmuştu. Ben de takip edememiştim baştan.
+
+116
+00:20:33,380 --> 00:20:40,640
+Ben farklı bir konu oldu benimki. Hazırlığım yok hocam bu hafta için sözleşme diye.
+
+117
+00:20:42,220 --> 00:20:47,800
+Özellikle benim konumda aslında o pazar analizi kısmıyla alakalı. Orayla ilgili devam ediyor.
+
+118
+00:20:48,060 --> 00:20:51,860
+Ben burayla ilgili şöyle bir kendimce gördüğüm kısmı söyleyeyim.
+
+119
+00:20:53,523 --> 00:21:14,364
+[kişisel bilgi]
+
+120
+00:21:21,523 --> 00:21:49,443
+İçeride bir analiz yapılıyordu, operatör. Benim ihtiyacım bu diyordu, bunu böyle çözeceğiz diyordu. Onlara uygun bir çözüm uyguluyordu. Sonra iki ay geçiyor, B operatörü geliyor, bize de böyle bir ihtiyaç var. Bak A operatörü çıkmış, benim rakibim çıkmış, bize de buna benzer bir şey diyor. Ama iç dinamikler farklı. Bu noktada hep şeye geldi konu. Bunları çok önceden biz belirleyip, biz yönlendirebilseydik.
+
+121
+00:21:49,523 --> 00:21:58,084
+Atıyorum aynı web servis. Yani genelleştirme yapıdan siz önerseydiniz. Biz önerseydik şu duruma geçmiş olacaktık hocam.
+
+122
+00:21:58,844 --> 00:22:07,564
+Ki buna da açık oluyorlar aslında da. İş işten geçtiği için aslında. A operatör önerdiğinde A operatörüne özgü datalar da işin içine giriyor.
+
+123
+00:22:07,663 --> 00:22:14,084
+Onlar talep ettiği için. Onlar özgü eleştiriliyor. Ona göre onlara faturalandırılıyor. Ve B operatörüne de ayrı faturalandırılıyor.
+
+124
+00:22:17,523 --> 00:22:21,523
+Çalıştım şirketi gibi küçük firmalarda şu sıkıntımız var hocam.
+
+125
+00:22:21,844 --> 00:22:26,624
+Faturasını kesiyorsunuz, garanti kapsamında atıyorum 2-3 sene herhangi bir ücret talep edilmiyor.
+
+126
+00:22:26,624 --> 00:22:35,624
+Yani Fakfixlerle vesairelerle. Bu durumda da işte hani turnover rate'i nispeten yüksek firmalarda...
+
+127
+00:22:36,723 --> 00:22:57,723
+Kişi gittiğinde orayla ilgili aslında servisleri biliyor ama novav gidiyor. O analiz kararlarının nasıl alındı, o süreç gidiyor onunla beraber. Bunu engellemeye çalışıyoruz son bir noktada ama olmuyor yani. Genelleştirme her zaman tüm personelin her şeyi biliyor olması anlamında iyi oluyor. Mesela şu an şu durumdayız, bir personelimiz ayrılıyor.
+
+128
+00:22:58,195 --> 00:23:17,195
+A operatöründeki her şeyi biliyordu. Ben de nispeten biliyorum mesela. Ama onun kadar tüm toplantılara katılmadığım için, sürecin akışını bilmediğim için, o tarihçiyi bilmediğim için bir şeyler gidiyor, kaybediyor olacağız. Bunu keşke önceden genelleştirebilseydik. Herkes her şeyi biliyor olacaktı.
+
+129
+00:23:26,195 --> 00:23:49,195
+Çizip, ondan sonra müşteri aramak da var. Çok da uygun. Bunun hem yayın işlebilmesi açısından uygun. Ekip içerisindeki iletişim açısından da uygun. Herkes her konuyu biliyor oluyor. İş ya da firma kişiye nasıl diyeyim böyle yapışmıyor o noktada. Tek muhatabı olmamış oluyor.
+
+130
+00:23:52,307 --> 00:23:54,188
+Faydalı diyebiliriz.
+
+131
+00:23:54,328 --> 00:23:59,228
+Faydalı. Bence hocam bizim en azından gördüğüm kadarıyla geçmeye çalıştığımız model buydu.
+
+132
+00:23:59,807 --> 00:24:00,068
+Evet.
+
+133
+00:24:00,488 --> 00:24:01,208
+Umarım da.
+
+134
+00:24:01,568 --> 00:24:05,108
+Teşekkürler katkıların için [öğrenci].
+
+135
+00:24:07,608 --> 00:24:10,548
+Evet, tam başka ekleyecek bir şey yok herhalde senin.
+
+136
+00:24:10,548 --> 00:24:11,708
+Yok hocam, teşekkür ederim.
+
+137
+00:24:12,348 --> 00:24:15,748
+Döneme anlatımlarını seninle başlamış olduk.
+
+138
+00:24:16,588 --> 00:24:18,548
+O zaman şimdi...
+
+139
+00:24:19,059 --> 00:24:25,279
+[öğrenci], senin konuna geçebiliriz.
+
+140
+00:24:29,940 --> 00:24:31,140
+Sesim geliyor mu acaba?
+
+141
+00:24:31,540 --> 00:24:34,140
+Evet. Ekran paylaşımda yaparsam.
+
+142
+00:24:34,140 --> 00:24:35,060
+Tamam.
+
+143
+00:24:42,451 --> 00:24:43,891
+Geliyor mu hocam ekranı?
+
+144
+00:24:44,151 --> 00:24:48,391
+Evet, geldi şu anda. Teşekkürler. Ben bir şey kapatayım da.
+
+145
+00:24:49,331 --> 00:24:52,932
+Ben, bir saniye, şimdi görüyorum.
+
+146
+00:24:52,932 --> 00:25:05,932
+Merhaba arkadaşlar, ben konumdan bahsedecek olursam, benim konum küresel yazılım geliştirme bağlamında Kokomo 2 tabanlı modelden üretilmiş bir yeni tahmin modeli.
+
+147
+00:25:06,831 --> 00:25:07,932
+Bunun üzerinde bir...
+
+148
+00:25:08,596 --> 00:25:10,936
+Proje yapamış, onu anlatacağım size.
+
+149
+00:25:16,627 --> 00:25:41,788
+Küresel yazılım geliştirme projesi başarısı 3 madde ile ölçülüyor. Kalite, zaman ve maliyet olarak. Kalite, projeye uygunluk olarak ölçülüyor. Zaman parametresi ise projedeki tarihleri, projedeki planı belirleyen bir ölçüm.
+
+150
+00:25:42,291 --> 00:25:52,771
+Maliyet parametresi ise projenin gereksinimleriyle ilgili harcayacağımız maliyeti gösteren bir maddedir bize.
+
+151
+00:25:56,571 --> 00:26:07,411
+Projenin amacına değinecek olursak, projemiz küresel yazılım geliştirme projelerinde mali faydalar, müşterilerin beklentileri, iş kalitesi, zaman,
+
+152
+00:26:08,564 --> 00:26:29,144
+Beklentisi gibi projenin toplam maliyetini etki eden yapıları göstermektedir. Bu amaçla da ayrı eten proje içerisinde bu yukarıdaki beklentiler haricinde kritik maliyetler de eklenerek yeni bir Kokomi 2 modeli tabanlı bir yöntem olup geliştirilmiştir.
+
+153
+00:26:35,155 --> 00:26:52,915
+Proje içerisinde, projeyi geliştirme aşamasında sistematik literatür taraması yöntemi kullanılmıştır. Bu sistematik literatür taraması aslında maliyet tahmin faktörlerinin belirlenmesinde kullanılmaktadır.
+
+154
+00:26:58,579 --> 00:27:23,319
+Formülüze edilmesi gösterilmektedir. Bunun için ilk önce bir genel bir literatür araştırması yapılmaktadır. Daha sonra maliyet yükü, burada bir temel problem belirlenmiştir. Buradaki temel problem de bu projede maliyet yüklerinin bulunmasıdır. Maliyet faktörleriyle maliyet tahmin modeli daha sonra belirleniyor.
+
+155
+00:27:25,268 --> 00:27:48,807
+Elde edilen veriler, bu maliyet faktörlerinin bulunması ile ilgili elde edilen veriler sektörde doğrulanmış veriler olarak alınmıştır bu proje içerisinde. Onu da ikinci aşamada görmek değil zaten. Üçüncü aşamada ise bu elde ettiğimiz verilerin aslında istatistikler olarak hesaplamaları yapılmıştır.
+
+156
+00:27:52,243 --> 00:28:10,463
+Daha sonraki aşamada ise kritik yani şu Proposite Model aşamasında ise kritik maliyet etkenlerine ek olarak mevcut maliyet etkenleriyle Kokomo 2 modelinin geliştirilmesi üzerine işlemler yapılmıştır.
+
+157
+00:28:13,940 --> 00:28:29,559
+Daha sonra Kokomo 2 modeline eklenen maliyet etkenleriyle birlikte metrikler, yeni kullanılacak metrikler hesaplanmış, formalize edilmiş ve yeni bir Kokomo 2 tahmin denklemi oluşturulmuştu.
+
+158
+00:28:30,612 --> 00:28:53,912
+Bu oluşturulan model ise performans ölçümleri yapılmıştır ve sektörden uzmanlar tarafından AKET yoluyla doğrulanmıştır bu model. Bu modelin performans ölçümünü de yapıyorken buradaki hesaplama kullanmıştır hata oranının hesaplanması için.
+
+159
+00:29:02,804 --> 00:29:11,844
+Maliyet tahmin modelleri algoritmik ve algoritmik olmayan üzere ikiye ayrılmaktadır.
+
+160
+00:29:12,243 --> 00:29:21,624
+Algoritmik modeller, şurada da görüldüğü gibi, maliyet tahminini matematiksel hesaplama yaparak inceleyen modellerdir.
+
+161
+00:29:22,324 --> 00:29:33,464
+Önceden atanmış parametreler ve değerler ile matematiksel olarak hesaplamalar yapılmaktadır. Görüldüğü üzere Kokomo 2 modeli de algoritmik olan bir modeldir.
+
+162
+00:29:34,264 --> 00:29:49,524
+Algoritmik olmayan modeller ise parametrik, parametrik olmayan modeller olarak da bilinmektedir. Bunlar daha çok analojik sinir ağları, uzman yargısı, bulanık.
+
+163
+00:29:50,708 --> 00:29:53,468
+Mantık gibi alanlarda kullanılmaktadır.
+
+164
+00:29:56,884 --> 00:30:05,824
+Bu algoritmik olmayan modellerde maliyet hesabı önceki projelerde kullanılan verilerle yapılmaktadır.
+
+165
+00:30:09,364 --> 00:30:23,304
+Bu önceden kullanılan veriler, yani şöyle anlatacak olursam, önceden bir proje yapılmış, o projede bir değerler hesaplanmış, o projedeki değerler alınarak bu yeni projede kullanılarak hesaplama yapılıyor.
+
+166
+00:30:23,864 --> 00:30:36,504
+Örnek olarak burada 100 kez polisler, machine learning, makine öğrenmesi bazı yöntemlerde gösterilmektedir. Yapay sinir ağları, regrasyon gibi tekniklerde bulunmaktadır.
+
+167
+00:30:41,044 --> 00:31:04,744
+Proje içerisinde yeni bir tahmin maliyet modeli oluşturulmuştur. Bu model üç aşamadan oluşmaktadır. Birinci aşamada küresel yazılım geliştirmesi projelerinde kritik maliyet etkenleriyle temel maliyet tahmin modeli seçilme işlemi yapılmaktadır faz bir aşamasında.
+
+168
+00:31:05,236 --> 00:31:19,435
+Faz 2 aşamasında ise bu Kokoma 2 modelinin genişletilme işlemi yapılarak hesaplanacak olan metrikler belirlenip onların formüze edilmesi işlemi yapılmıştır.
+
+169
+00:31:20,096 --> 00:31:32,316
+Üçüncü aşamada ise bu elde edilen yeni Kokoma 2 denklemi kullanılarak tahmin işlemi, hata oranlarının bulunması işlemleri yapılmıştır.
+
+170
+00:31:34,932 --> 00:31:44,352
+İlk aşamadan başlayacak olursak, burada maliyet tahmin faktörleri gösterilmiştir bu şekildeki görselde.
+
+171
+00:31:44,811 --> 00:31:54,031
+Bu aşamada maliyet etkenleri kategorize edilip, bunlar üzerinden maliyet tahmin işlemi yapılmıştır.
+
+172
+00:32:01,172 --> 00:32:10,572
+İnsanlarla ilgili faktörler bulunmaktadır, süreçlerle ilgili faktörler, proje ile ilgili faktörler ve diş kaynaklarla ilgili faktörler bulunmaktadır.
+
+173
+00:32:10,672 --> 00:32:19,672
+Kısaca bunlara değinecek olursam, insanlarla ilgili faktörler aslında insanların kişiler özelliklerine, müşterinin projedeki katılımına, ekibin…
+
+174
+00:32:20,147 --> 00:32:31,327
+Güç potansiyeli, yani oradaki güç potansiyeli dediğimiz bir işi ne kadar sürede yapabileceğini gösteren bir yapıdır.
+
+175
+00:32:31,827 --> 00:32:37,887
+Ve Team Trust dediğimiz yapı da aslında insanlara olan güveni göstermektedir bu süreç içerisinde.
+
+176
+00:32:40,435 --> 00:32:53,875
+Proje ile ilgili faktörleri geçecek olsak, burada projenin genel başarısı aslında ön plana çıkmaktadır. Müşterinin isteklerine doğrultusunda müşterinin ihtiyaçlarına ne kadar karşılandığı...
+
+177
+00:32:55,508 --> 00:33:04,108
+ne kadar karşılanıp, anlaşılıp, karşılanacağı belirlendiği maliyet etkenleri bulunmaktadır.
+
+178
+00:33:04,528 --> 00:33:09,968
+Gereksinimlerin doğru bir şekilde anlaşılması burada önemli faktörlerden bir tanesidir.
+
+179
+00:33:14,579 --> 00:33:28,840
+Dış kaynakları geçecek olsak da burada aslında dış kaynaklar hepimizin bildiği gibi aslında zaman farklı. Mesela iki farklı ülkede çalışan bir aynı projedeki insanları birbiriyle olan zaman farklı bile maliyete etki etmektedir.
+
+180
+00:33:28,840 --> 00:33:37,960
+Aynı şekilde coğrafi farklılıklar, dil farklılıkları, bunlar hep dış kaynaklı olup bunlar maliyete etki etmektedir.
+
+181
+00:33:38,932 --> 00:33:52,372
+Süreçle ilgili modelleri söyleyecek olsak, aslında burada süreç geliştirme metodolojileri, bunlarla ilgili maliyet etkenleri bulunmaktadır.
+
+182
+00:33:53,011 --> 00:34:05,172
+Süreçin modeli, süreçin olgunlu, süreçin uyumu, süreç içerisindeki iletişim süreçleri, bunlar maliyet faktörlerini etki etmektedir.
+
+183
+00:34:08,659 --> 00:34:16,659
+İkinci faza geçecek olursak, Kokomo 2'in önerilen maliyet modelinde burada iki faz bulunmaktadır.
+
+184
+00:34:18,659 --> 00:34:22,179
+Bir metrik formülasyonu, bir denklem değişimi.
+
+185
+00:34:25,172 --> 00:34:43,032
+İki aşama bulunmaktadır. İlk önce metrik formülasyonundan bahsedecek olursam, burada şekilde aslında görüldüğü gibi bir müşteri katılımının maliyet faktörünü içeren bir hesaplama görülmektedir. Bunu örnek olarak makaleden aldım.
+
+186
+00:34:44,971 --> 00:34:47,172
+Burada kullanılan yöntem ise...
+
+187
+00:34:48,275 --> 00:34:58,375
+Müşteri katılımını ölçmek için aslında toplantıya, müşterinin toplantılara katılımı ve yapılan otorumların sayısına göre ölçülmektedir bu yapı.
+
+188
+00:35:00,235 --> 00:35:10,435
+Burada müşteriyle yapılan toplantı sayısı arttıkça katılım da artacağından dolayı en altta görüldüğü gibi burada bir nominal değeri atanmış oluyor.
+
+189
+00:35:10,435 --> 00:35:12,435
+Burada hesaplama yapılırken.
+
+190
+00:35:13,648 --> 00:35:25,688
+Müşteri ile görüşme sayısı asla ve müşteri bu toplantılara katılma azalıyorsa gitgide bu değer artarak bir değer ataması yapılmaktadır.
+
+191
+00:35:29,139 --> 00:35:48,739
+Burada Kokomo 2 tahmin modeliyle, Kokomo 2 tahmin modeline eklenen aslında denklemdeki parametre görülmektedir. Bu ilk denklem Kokomo 2 tahmin modelinin asıl denklemidir. Bunun üzerinden bahsedecek olsam burada.
+
+192
+00:35:49,907 --> 00:36:04,188
+A değeri, denklemden kısaca bahsedeyim. A değeri aslında Kokomo 2 için belirlenen bir sabit değerdir. Bu 2,94 olan bir değermiş. Bu da şirketin geçmişteki verilerine bağlı olarak belirleniyormuş.
+
+193
+00:36:04,659 --> 00:36:18,779
+Burada E değeri dediğimiz ölçek faktörü 5 tane faktöre bağlıdır. Bu geliştirme esnekliği risk çözümü, süreç olgunluğu, ekip uyumu ve öncelik değerlerine bağlıdır.
+
+194
+00:36:19,923 --> 00:36:33,703
+Ve burada çarpan değerlerimiz var. Burada bir çarpma işlemi yapılmakta matematiksel olarak. Bunlar da maliyet etkenliğidir. Projenin maliyetini etki eden, dolaylı ve doğrudan etki eden faktörleri belli etmektedir.
+
+195
+00:36:33,703 --> 00:36:40,703
+Bu özellikler düşükten yükseğe doğru sayısal olarak sıralanarak atanmaktadır.
+
+196
+00:36:44,628 --> 00:36:50,307
+Bu denklem sonucunda projenin çabasındaki artışı belirtmektedir.
+
+197
+00:36:50,307 --> 00:37:00,388
+Bu yeni eklenen modelde de şurada gördüğünüz gibi kritik maliyet modelleri eklenmiştir.
+
+198
+00:37:01,048 --> 00:37:05,307
+Burada yeni eklenen maliyet faktörleriyle...
+
+199
+00:37:06,324 --> 00:37:13,983
+Bunlar da denkleme etki eklenerek yeni bir model oluşturulmuştur aslında ve bu model üzerinden maliyet hesapları yapılmıştır.
+
+200
+00:37:24,403 --> 00:37:45,324
+O önceki denkleme ek olarak da şunu da söyleyebilirim. Burada eklenen kritik maliyet süreçleri 14 tane farklı maliyet süreçlidir. Bunlar da insanlarla ilgili, önceki bu slide'da anlattığım gibi insanlarla ilgili, süreçle ilgili, projeyle ilgili ve dış faktörlerle.
+
+201
+00:37:45,844 --> 00:37:52,983
+Faktörleri gösteren maliyetlerdir. Bunlar 14 tane de. Bunlar da denklem içerisinde bir çarpın olarak eklenmiştir.
+
+202
+00:37:54,764 --> 00:38:05,943
+Son aşamada ise modelin 3. aşamasında yapılan işlem ise burada denklem oluşturulduktan sonra bir tahmin etme işlemi yapılmıştır.
+
+203
+00:38:05,943 --> 00:38:07,943
+Bu tahmin etme işlemi...
+
+204
+00:38:09,300 --> 00:38:24,300
+Standart ölçümün göreceli hatanın büyüklüğü kullanılmıştır. Yani MRF hata hesaplama formülü gerçek çabadan tahmin edilen çabanın ve mutlak değer içindeki farkının gerçek çabayı oranı olarak bulunmaktadır.
+
+205
+00:38:36,563 --> 00:38:52,644
+Daha yüksektir aslında. Şöyle söyleyeyim. Yeni elde edilen denkleme göre, normal denklemin, Cocova 2 modelinin denkleminine göre hata oranı gitgide görüldüğü gibi, resimdeki gibi düşmüştür aslında.
+
+206
+00:38:53,644 --> 00:39:02,963
+Bu düşüşte tahmin eföründeki aslında bizim projede eklenen kritik maliyet etkenliğinin etkisini göstermektedir.
+
+207
+00:39:04,384 --> 00:39:26,943
+Bunun sayesinde de hata oranları görüldüğü gibi bayağı düşmüştür, oldukça düşmüştür. Daha sonra bir de en başta söylediğim gibi projenin değerlendirmesinde bir uzman görüşü değerlendirme yöntemi kullanılmış ayrıyeten. Burada matematiksel olarak hesaplamadan haricinde bir uzman görüşü yoluyla değerlendirme yapılmış.
+
+208
+00:39:28,340 --> 00:39:46,340
+Bu uzman görüşü değerlendirilmesinde ise sektörden endüstri uzmanları modeli doğrulamak için seçilmiş ve daha sonra uzmanlar tarafından bu model reddedilme, kabul edilme veya gözden geçirme olarak 3 farklı şekilde değerlendirilmiş bu proje için.
+
+209
+00:39:47,668 --> 00:39:58,568
+Sektördeki uzmanlar ise bir sektör içerisinde bir proje yönetisi olarak çalışma koşulu ve en az 10 yıllık deneyime sahip olmaları gerek.
+
+210
+00:39:59,408 --> 00:40:05,608
+10 yıllık deneyime sahip oldukları belirtilerek bu değerlendirmeye katılmaları istenmiş.
+
+211
+00:40:17,556 --> 00:40:31,556
+Maliyet etkenleriyle ilgili uzmanlara sorular sorulmuş. Örnek olarak sorulan sorulardan bir tanesini söyleyeceğim. Mesela genel tasarımın bu Kokomo 2 modeline eklenen...
+
+212
+00:40:32,947 --> 00:40:50,907
+Denkleme etkili, eklenen faktörlerle ilgili modelin genel tasarımıyla ilgili iyileştirme yapılması mı, yapılmaması mı, modelin yeterli olup olmadığını tespit edilmesiyle ilgili belirli sorular sorulmuş uzmanlara.
+
+213
+00:40:52,387 --> 00:40:58,407
+Bu da projemin linki. İsterseniz buradan bakabilirsiniz.
+
+214
+00:40:59,092 --> 00:41:01,731
+Dinlediğiniz için teşekkür ederim.
+
+215
+00:41:10,003 --> 00:41:31,503
+Sesim kapalıymış. Evet, teşekkürler CEMH'in [öğrenci]. Bu maliyet tahmin modeli üzerinde matematiksel işlemler de yapıldığı için çok eski yıllardan beri yazılım proje yönetiminde çalışan mühendislerin çok fazla üzerinde durduğu bir konu.
+
+216
+00:41:34,356 --> 00:41:45,056
+Bu genişletilmiş Kokomo 2 üzerinde de yapılan bir uygulamayı da anlatmış oldum.
+
+217
+00:41:45,056 --> 00:41:46,636
+Evet hocam.
+
+218
+00:42:02,099 --> 00:42:16,619
+Özellikle son 10 yılda da maliyet tahmini yapma gerekliliği ortaya çıkmış durumda. Bu konuda şirketiyle ilgili yorum yapmak isteyen var mı?
+
+219
+00:42:23,764 --> 00:42:29,124
+Senin sektördeki kullanımı hakkında bir yorumun var mı [öğrenci]?
+
+220
+00:42:29,124 --> 00:42:37,104
+Hocam ben şöyle söyleyeyim. Bu aslında dediğiniz gibi son dönemlerde ortaya daha da yaygın olarak kullanıldığını ben de düşünüyorum.
+
+221
+00:42:38,483 --> 00:43:06,184
+Bu müşterinin istekleri gerçekten bazen gerçekleştirilmesi zor isteklerde olabiliyor tahmin edersiniz ki. Onlarla ilgili bir gereksinim alizi yapılıp bunların maliyetinin hesaplanması bunun kullanımı açısından bence çok yaygın olarak gözükmekte. Sonuçta müşterinin istekleri çok değişken olabiliyor proje içerisinde. Yapılabilir, yapılamaz, onu tartışılır.
+
+222
+00:43:06,483 --> 00:43:12,664
+Bunların maliyet tahmin hesaplanmasıyla belirlenmesi bence daha uygun olarak görülebilir.
+
+223
+00:43:12,664 --> 00:43:13,603
+Evet.
+
+224
+00:43:18,036 --> 00:43:19,276
+Teşekkürler.
+
+225
+00:43:19,596 --> 00:43:23,176
+Rica ederim hocam. Ben paylaşımı durdurayım mı?
+
+226
+00:43:23,796 --> 00:43:37,656
+Paylaşımı durdurabilirsin. Bana atarsanız sunumlarınızı her ikinizde iyi olur. Mail olarak atarsanız iyi olur.
+
+227
+00:43:38,063 --> 00:43:44,323
+Hocam, şeyleri de atalım değil mi? Bu kısa bir özet haline getirecektik ya makale bir de, I3P formatında.
+
+228
+00:43:44,903 --> 00:43:50,363
+Yani onun için zamanınız var. Ona bir şey açacağım.
+
+229
+00:43:53,803 --> 00:43:58,843
+Veya atın, buradan takip edebilirim. Son dakikaya kalanlar için de.
+
+230
+00:43:59,347 --> 00:44:06,607
+Ya onlar da mail atsın derim ya da bir online yıldızda bir şey açarım.
+
+231
+00:44:06,788 --> 00:44:07,927
+Tamam, kan atabiliriz yani.
+
+232
+00:44:08,027 --> 00:44:12,467
+Yani hazırladıysanız atabilirsiniz. Süreniz var daha ama hazırlanabiliriz.
+
+233
+00:44:12,467 --> 00:44:14,947
+Tamam, sağ olun. Tamamdır hocam, teşekkürler.
+
+234
+00:44:14,947 --> 00:44:23,107
+O zaman [öğrenci] sen anlatmadan önce bir beş dakika ara verelim. Ondan sonra sana geçelim.
+
+235
+00:44:23,627 --> 00:44:24,407
+Tamamdır hocam.
+
+236
+00:44:24,647 --> 00:44:24,947
+Tamam.
+
+237
+00:59:27,635 --> 00:59:36,576
+Biz daha az ara vermiştik ama ara verdiğimizde eski bir asistanımız ziyarete gelmişti. Biraz uzadı aramız.
+
+238
+00:59:44,467 --> 00:59:59,787
+Sunumlar için isterseniz önce şimdi [öğrenci]'ı dinleyelim. Ondan sonra bendeki geçen haftalarda, ondan önceki haftada aldığım kimler sunmak istiyor onu okuyayım ben.
+
+239
+01:00:01,667 --> 01:00:05,967
+Kalanlar da 16 Mayıs'ta sunsun diye konuşacağım.
+
+240
+01:00:10,195 --> 01:00:12,056
+Başlayabilirsin sen.
+
+241
+01:00:12,576 --> 01:00:15,296
+Tabii hocam. Ekranı paylaşıyorum.
+
+242
+01:00:15,755 --> 01:00:16,916
+Tamam, teşekkürler.
+
+243
+01:00:19,396 --> 01:00:21,296
+Ekranım gözüküyor değil mi şu anda?
+
+244
+01:00:21,695 --> 01:00:21,976
+Evet.
+
+245
+01:00:23,655 --> 01:00:28,496
+Şöyle baştan diyeyim. Tam ekran görüyor olmanız lazım şu anda.
+
+246
+01:00:28,576 --> 01:00:28,776
+Evet.
+
+247
+01:00:29,523 --> 01:00:50,683
+Ben bugün, herkese merhaba, ben bugün sizlere Agile and Software Project Management and Patterns Clarifying the Partnership adlı Castro Flores ve diğerleri tarafından 2021 yılında IEEE Software yayınlanmış olan makaleden bahsedeceğim.
+
+248
+01:00:50,683 --> 01:00:54,103
+Onun öncelikle bir özetini yapayım.
+
+249
+01:00:55,347 --> 01:01:12,688
+Agile pratiklerinin her birinin kullanım amacı var. Agile'i süreç modeli olarak benimsediğinde bir geliştirme takımı aslında ondaki her alt pratiği yapacak anlamına gelmiyor.
+
+250
+01:01:12,688 --> 01:01:19,748
+Çünkü bunun sadece başarı odaklı değil projeler, zaman da var, maliyet de var.
+
+251
+01:01:20,128 --> 01:01:42,128
+Diğer arkadaşlar da zaten sunumlarında onu belirtmişti. Derse de siz belirtmiştiniz. Yani bu üç kriteri de ele alarak bir sonuca vermek gerekiyor. Bu makalede de öncelikle Ecail pratikler nasıl bir metodolojiyle bulunmuş ve her bir Ecail pratiğin...
+
+252
+01:01:42,483 --> 01:01:54,284
+Yazılım Proje Yönetimi'ndeki karşıt patenlere nasıl bir etkisi var? Onların metodolojileri ve sonuçlarını anlatacağım. Yazılım Proje Yönetimi'ndeki karşıt patenler şu anlama geliyor.
+
+253
+01:01:54,503 --> 01:02:07,704
+Karşıt paten yani yazılım proje yönetimi süreçlerini sekteye uğratan hatta daha ileri gidildiğinde projenin tamamen fail olmasına sebep olan kötü yaklaşımlar olarak nitelendiriliyor.
+
+254
+01:02:08,532 --> 01:02:25,632
+Makale İngilizce'nde yazarlarda öncelikle proje yönetimini yazılım geliştirmede başarısızlıkların ana nedeni olarak kabul edildiğini belirtiyorlar. Bir IBM çalışmasına referans yapıyorlar. Bu çalışmaya göre proje başarısızlıkların %53'ünün kötü yönetimden kaynaklandığı bulunuyor.
+
+255
+01:02:25,632 --> 01:02:35,812
+Ve çalışmaya göre sadece %3'ü teknik zorluklardan kaynaklanıyormuş sıkıntıların. Bu da bu makalenin aslında dayanak noktasını oluşturuyor.
+
+256
+01:02:36,659 --> 01:02:54,940
+Yazılım Proje Yönetimi'nde problemli yaklaşımlar tespit ve analiz ediliyor bu makale kapsamında. Yaygın yazılım Proje Yönetimi hatalarında bilgi eksikliği, tembellik, kibir ve aceleci davranma bulunuyor. Hatalı pratikler…
+
+257
+01:02:54,940 --> 01:02:57,940
+Belki burada da yönetimin başlangıçta…
+
+258
+01:02:58,195 --> 01:03:14,356
+Ekip üyelerine yanlış görev dağılımı vermek de yazı. Yeteneklerine göre tam incelemeden görev dağılımı ona da çok dikkat çekilen yazılar var.
+
+259
+01:03:16,047 --> 01:03:35,047
+Hatalı pratikler elbette müşteri tarafında takım üyeleri olsun ve proje yöneticisi olsun. Herkes de olumsuz etkide bulunuyor. Yani sonuç olarak projenin sektör olması ve fail olması var. Yazılım proje yönetiminde karşı patenler bulunuyor. Yani bunları yazar...
+
+260
+01:03:35,603 --> 01:03:44,683
+Öncelikle solda gördüğünüz tabloda detaylı test plan şeklinde. Bunlar nasıl belirlenmiş? Literatür çalışmalarıyla belirlenmiş şeyler.
+
+261
+01:03:45,643 --> 01:03:59,324
+Sonuçta bunun herhangi bir standartizasyonu yok. Bunlar yıllardır süre gelen yazın proje yönetimi, ekiplerle olan proje yöneticileriyle, Scrum master ile yapılan görüşmeler sonucu oluşturulan şeyler.
+
+262
+01:03:59,324 --> 01:04:03,603
+Yani bu karşıt patenler sorun çözme konusunda ters etkili yaklaşık.
+
+263
+01:04:03,603 --> 01:04:10,563
+Kapsam, tanımladığını söylemiştik. Kötü uygulamaları veya bir proje faktörünü kontrol edeme ve başarısızlığını temsil edebiliyorlar.
+
+264
+01:04:11,155 --> 01:04:27,835
+Girişimlere çok potansiyel tehlikeleri oluyor ve projenin çökmesine neden olduklarını söylemiştik. Mesela sondaki tabloda detaylı tesis plan bu nedir? Yani Ecail'le ters bir şekilde sanki waterfall model izleniyor gibi her şeyde plana çok detaylı şekilde sadık kalmak.
+
+265
+01:04:27,835 --> 01:04:39,016
+Bu da mesela hem maliyet yönetimi olsun hem zaman yönetimi olsun sıkıntılara yol açıyor. Ecail'in kendi prensibiyle zıt bir şey. Burada da onların açıklamaları, sebepleri vesaire.
+
+266
+01:04:39,155 --> 01:05:05,375
+Bir tane örnek vermiş yazarlar. Bunu slide'a koydum. Karşı patronlar, proje yöneticisinin bilgi eksikliği hatalı uygulamanın en yaygın nedenidir diye geçiyor makalede. Bu hatalı uygulamalar olumsuz etkileri, demiştik zaten müşteri takım üyeleri ve proje yöneticilerini kapsıyor. Karşı patronlar doğrudan kontrol, motivasyon ve personel yönetimi gibi yazılım proje yönetimi faaliyetlerini olumsuz etkileyebiliyor.
+
+267
+01:05:06,228 --> 01:05:28,327
+Tabi Ecai pratiklere de değinmek lazım. Çünkü her birinin hangi referansta bulunduğu endopatörünü çözüme kavuşturmaya yönelik bir etikle bulunacağını göstermek için zaman kontrolü, sürekli iyileştirme ve geliştirme, takım memnuniyeti, işbirliği ve uyum becerileri artan verimlilik dair olmak üzere yazılım proje yönetimi doğrudan faydalar sağlıyor Ecai pratikler.
+
+268
+01:05:30,496 --> 01:05:38,115
+Makale kapsamında Ecail pratikleri de son 10 yılda yayınlanmış ve Ecail pratikleri ele almış olan literatür üzerindeki çalışmalarla teyit etmişler.
+
+269
+01:05:39,315 --> 01:05:47,655
+12. Ecail raporu çerçevesinde, atıfta bulunan rapor çerçevesinde Ecail pratiklerin listesini doğrudan kullanmak yerine mevcut.
+
+270
+01:05:48,211 --> 01:05:58,512
+Bu konuda literatürü de araştırarak doğruluyorlar. Yani var olan bilgiyi doğrulamak için ayrıca literatür araştırması yapılıyor. Bu metodolojisi bu yöntemleri nasıl bulunan dair.
+
+271
+01:05:58,831 --> 01:06:07,911
+En tanımış bilimsel ve ev tabanları üzerinde araştırma yapı var ve kapsam dahinde en doğru makale ulaşmak için anahtar kemiği harcıyla arama metinleri tanımlanıyor.
+
+272
+01:06:07,911 --> 01:06:19,532
+Mesela sağda tabloda görüldüğü üzere sprint planlama, retrospektivler, sprintin tamamlandıktan sonra overweaver, nasıl geçti sprint vs.
+
+273
+01:06:20,431 --> 01:06:26,831
+Planlama pokeri mesela, onun dışında agile UX, yani müşteri tarafının agile sürece dahil edilmesi.
+
+274
+01:06:26,831 --> 01:06:47,012
+Çeşitli ecel pratiklerden bahsediyor burada. Bunlara sonra iki şeyin karşılaştırmalı tablosu değineceğiz. Burada karşı patronları da listeliyorlar. 2015 yılında Silva ve diğerleri tarafından bir literatür çalışmasıyla toplanan birleştirmiş bir yazılım proje yönetimi listesi yayınlanmış.
+
+275
+01:06:47,423 --> 01:06:58,364
+Yazarlar da bunlardan yararlanarak, bu 22 yazın proje yönetimi hatalı uygulamasından yararlanarak bir envanter ortaya çıkan envanteri kullanıyorlar direkt olarak bir projede.
+
+276
+01:07:00,052 --> 01:07:16,912
+Şimdi burada görüldüğü üzere ikisinin kesişimini, yani ECAİ pratikler ve yazılım proje yönetimi, karşı materyalinin kesişimini bir tablosunu görüyoruz. Buradaki sambollerin anlamına da geleceğim. Ancak bunun önemi şu, bir kere bunun metodolojistten bahsedeyim. Bu nasıl oluşmuş?
+
+277
+01:07:18,143 --> 01:07:29,123
+Burada yazarlar 40 yılı aşkın endüstriyedeki deneyimlerinden, yüksek teknoloji startuplardan, çok ulusu şirketlere kadar firmalarla danışmanlık yapmalarıyla elde edilen bilgi birikimlerine dayanarak oluşturuyor.
+
+278
+01:07:29,183 --> 01:07:38,583
+Ancak bu tabi bununla sınırlı kalmıyor bu 330 paten etkisinin belirlenmesi. Yüzce görüşmeler yönünde 30 ecel ürünlüsüyle anket yapıyorlar.
+
+279
+01:07:38,823 --> 01:07:44,143
+Bankacılık, borsa, ulaşım, ev sağlık ve eğitim gibi geniş bir yelpazeden oluşuyor bu toplantı yapılan kişiler.
+
+280
+01:07:44,563 --> 01:08:01,523
+Uygulayıcıların %80'e fazla Scrum Master olarak sertifikalanmış kişiler. Bu da önemli bir şey. Çalışmanın doğruluğu ve geçerliği genelliği anlamında. Eşleşme tartışması için görüşmeler yapılıyor. Bir saat süren % görüşmeler gerçekleştiriliyor.
+
+281
+01:08:01,523 --> 01:08:12,043
+Tabii kişisel deneyimlerin, kombinasyonların yorumlanmasına önemli bir etkiye sahip olduğunu belirtiyorlar. Sonuçta her bir firmanın çalışma ortamı takımın farklıdır. Sektörlerde de değişiklik gösterir.
+
+282
+01:08:12,659 --> 01:08:33,079
+Burada da mesela bazı ortak ama soruşlara ulaşılabiliyor yine de çok sayıda toplantı soru. Mesela single team pratiği var. Takımda herkesin her şekilde dönüşümlü olarak belli şeye özelleşme olmayacak. Herkese isteyen görev verilebilir şeklindeki yaklaşım.
+
+283
+01:08:33,079 --> 01:08:38,779
+The domino efekte yol açıyor. Bu da hatalı bir yaklaşım. Bunu mesela çok kişi belirtiyor.
+
+284
+01:08:39,283 --> 01:08:49,003
+Burada da uygulayıcılar da, toplantı yapılan kişiler bu şeylerin yazılım proje yönetimi sonlarının katkıda bulunabileceği konusunda yol gösterici olduğuna hemfikir oluyorlar.
+
+285
+01:08:50,003 --> 01:08:54,183
+Şimdi şu tabloda görülen dört tahta sembol var. Bunların anlamını açıklayayım.
+
+286
+01:08:54,547 --> 01:09:20,907
+Tik işareti, sol üstteki, yani o metodu uygularsak, ECAI metodunun yazın proje yönetimi, karşıt materna etkisini azaltmada katkıda bulunabilir. Yani bu en istenen sonuç. Bu sol aşağıdaki büyüteç olan şey, yani kaldırmaya yardımcı olmayabilir o karşıt materna ama semptomları tespit etmeye yardımcı olabilir. Örneğin toplantılar vs. Sağ üstteki çarpı, yani doğrudan azaltmaya ve riskleri tespit etmeye yardımcı olmuyor.
+
+287
+01:09:21,492 --> 01:09:37,072
+Sağ aşağıdaki ünlem işareti de tam tersine o metodu uygulayarak aslında o karşıt paternin varlığını kötüleştirebilecek veya katkıda bulunacak bir şeye yol açmış oluyoruz. Bu da işte her cahil pratiğin uygulanmaması gerektiğini, dikkatli olması gerektiğini gösteriyor.
+
+288
+01:09:37,072 --> 01:09:49,412
+Şimdi tabloya göre yüzde 42'sinde en yaygın olarak gerçekten o pratiğin o karşıt paterne olumlu anlamda etki ettiği gözüküyor. Örnek olarak şu herhalde.
+
+289
+01:09:49,492 --> 01:09:59,992
+Yani günlük değerlerle menajerin olmaması sıkıntılı durumu önlenmiş oluyor. Çünkü günlük toplantı herkesin orada varlığı olması.
+
+290
+01:10:00,000 --> 01:10:28,000
+Bu da yönetici yokluğu problemini çözüyor. Onun yanında doğrudan etkisi olmasa da dolaylı olarak belirlenmesini sağlayan, sahada gözüken, yüzde otuz beşinde görülen bu büyüteş işaretiyle temsil edilen, ona da bir örnek olarak sprint planlama ve rising upstart. Rising upstart, işte takımın belli üyelerinin herhangi bir bilgi geliştirme yapmadan ben şu görevde alırım, şu görevde alırım diyerek aslında plan sahada kalmadan hızlı bir şekilde üstlenmesi.
+
+291
+01:10:28,000 --> 01:10:52,559
+Yani kişisel de sebeplerden ötürü. Planlama yapılarak aslında doğrudan nasıl değerlilerin menajerinin olmamasını engellemesi kadar olmasa da dolaylı olarak planlamayı yaparak herkesin sınırları belirlenmiş olacak. Bu üyelerde tespit edilmiş olacak. Çarpı işaretiyle gösterilen kombinasyonun yüzde yirmi ikisinde bulunuyor.
+
+292
+01:10:53,492 --> 01:11:21,492
+Sprint Review yapılarak, mesela all you have is a hammer, bunun detayına gireyim. Her bir süreçte proje yönetimin aynı düşünmesi, değişen durumlara adaptasyon sağlayamaması. Appointed Team, bu da şeyle ilgiliydi, takım uyumunu sağlamasıyla uygulamaların eksikliği ve detaylı tesis plandan bahsetmiştik. Plana çok sadık kalması, çok detaylı plan yapımına çalışması. Sprint Review mesela...
+
+293
+01:11:21,492 --> 01:11:33,231
+Onun şeyle, ürün sahibine müşteriye sunmayı amaçlı için yazılmıyor. Bunlarla doğrudan bir şey yok yani, bir etkisi yok. Yani bu sorunlar yaşanıyorsa, sprint review bunları çözmüyor.
+
+294
+01:11:33,971 --> 01:11:41,712
+Sağda gözüken ünlem işareti, sadece single team pratiğiyle ilişkilendiriliyor. Belirttiğimiz şekilde %1'den temsil ediliyor.
+
+295
+01:11:42,127 --> 01:12:02,967
+Single team uyguladığımızda herkes herhangi bir rolü üstlenebilir anlamına geliyor. Bu da ama çok simili takımında hani o başka projeye de işte ilgilensin falan denirken zincirleme bir şekilde domino efekt kart patarına yol açıyor. Herkes birbirinin her şeyi yapabileceğini düşünerekten öyle bir rahatlama sonucunda domino efekt sıkıntısına yol açıyor.
+
+296
+01:12:10,127 --> 01:12:15,868
+Anti-Pattern'ın çözümüne bu şeyler, Agile pratikler sağlar, onu göstermiş.
+
+297
+01:12:16,487 --> 01:12:22,268
+Sprint Planning, Planning Poker ve Agile UX pratikleri en fazla sayıda karşı et, pattern'e çözüm getiren pratikler.
+
+298
+01:12:22,804 --> 01:12:50,144
+Fire Drill olsun, Mushroom Management ve Myopic Delivery. Fire Drill, uzun süre hiçbir şey yapılmadan son anında müşterinin teslimatını yaklaştığını belirtmesi. Mushroom Management'ta hiç müşteriyle ilişki kurulmadan geliştirmenin devam etmesi. Myopic Delivery'de değişen teslimlerin değişen faktörlere dikkatle bulunulmadan teslim planının yapılması. Bunlar müşteri için özel olumsuz sonuçları olan karşı patenler. Dikkatle ele alınmalı.
+
+299
+01:12:50,804 --> 01:13:11,963
+Tamam, çok önemli hangisinin en çok sayıda çözüm getireceği ama biraz da şey üzerinde düşünmek lazım. Hani sorun üzerinde düşünmek lazım. Mesela Agile Wix çok sayıda antipatörünle çözüm buluyor ama bu şey demek, müşterinin mesela yazılım proje yönetiminde etkin olarak görev alması. Bu hem maliyet demek, hem müşteri tarafından bir masraf demek. Bunun da düşünmesi lazım.
+
+300
+01:13:12,627 --> 01:13:31,027
+İşte dediğimiz şekilde sonuç ve çıkarımlarda işte pratiğin uygulama maliyeti ve hatalı uygulamaları ele alabilme yeteneği arası kar zarar analizi yapılması lazım. Ecel-UX'da olduğu gibi. Bir pratik belli bir karşıt batonunu çözmeye yetmeyecek. Birkaç işinin birlikte uygulanması gerektiği durumlar olacak.
+
+301
+01:13:31,699 --> 01:13:59,699
+Ecemi pratiklerinin benim sanmıysa takımları yazılım proje yönetimi sorunlarından kurtarmıyor. Yani belli bir yazılım proje yönetimi kart pateninin ortaya çıkmasında başka sorunlar ortaya çıkabilir. Yani zincirleme şekli. Bunların da dikkate alınması gerekebilir. En sonunda da yazarlar çıkarımda bulunuyor. Proje yönetimi hatalı uygulamaları, yüzeye çıkarımları ve tartışımlarıdır. Tartışmayı en önemli şey olarak görüyorlar. Hatalı uygulamaların. Çünkü hangi hatalı uygulamalar, hangi pratikler...
+
+302
+01:13:59,699 --> 01:14:16,760
+Ecail'in verimliğini de arttırmış oluyor. Ecail pratikleri ve yazılım proje yönetimi karşı patenler arasındaki etki kombinasyonları tablosu faydalı olabilecek uygulamaları belirlemek için kullanışlı. Buna tekrardan değiniyorlar.
+
+303
+01:14:17,332 --> 01:14:38,552
+Tabii ki de her bir organizasyon belli yazım proje yönetimi, hatalı bir olmanın iş değerine olan olumsuz etkilerini ve dolayısıyla ilişki riskleri belirlemekten sorumludur. Yani bir çözümü kullanmak aslında her zaman istenen sonucu ortaya çıkarmıyor. Yani her bir takımın kendine özgü bütçe kısıtları var, zaman kısıtları var. Onların da dikkate alınması gerekiyor.
+
+304
+01:14:39,283 --> 01:14:46,843
+Dinlediğiniz için teşekkür ederim. Yararlandığım kaynaklar da yani slide sırasında bunlar. Sağ olun.
+
+305
+01:14:46,843 --> 01:15:03,983
+Evet, teşekkürler. O zaman Ecail süreçleri, yazılım proje yönetimi, antipaterneriyeti yok etmek üzere.
+
+306
+01:15:04,595 --> 01:15:09,155
+Kullanmanın uygun olduğu bildiriliyor özet olarak.
+
+307
+01:15:10,775 --> 01:15:16,376
+Bu konuda da iş hayatının içinden yorum yapmak isteyen var mı?
+
+308
+01:15:16,595 --> 01:15:20,155
+Çünkü çoğu şirkette artık ecel süreçleri kullanıyorsunuz.
+
+309
+01:15:22,715 --> 01:15:30,435
+Yazılım Proje Yönetimi sıkıntıları konusunda özellikle arkadaşınızın bu tabloyu
+
+310
+01:15:30,868 --> 01:15:36,268
+Göstermesiyle belki bunları örnek verebilirsiniz.
+
+311
+01:15:50,355 --> 01:16:11,216
+Evet. [öğrenci], ben de kendi şeyime bu konuyla ilgili bazı şeylerim olmuştu önceden. Ben iş hayatı olmasa da lisans eğitimi süresi de çok sayıda Scrum yöntemine, ecahil prensipleri uygulayarak yazım projeleri geliştirdik.
+
+312
+01:16:11,216 --> 01:16:14,915
+Tabii sektöre fazla olmasa da, öğrenmek amacıyla da olsa.
+
+313
+01:16:15,507 --> 01:16:26,887
+Şu dikkat çekiciydi. Yani yapılan sprint revivler çok sayıda sıkıntıyı çözüyordu. Herkes orada bulunuyordu. Yani zaten benim de sonunda bahsettiğim şekilde.
+
+314
+01:16:28,399 --> 01:16:56,399
+Biz tabii o kadar sektör olmadığı için o kadar detaylı böyle planlama, poker olsun, işte çeşitli farklı yöntemler olsun uygulamadık. Ancak belli kilit şeyleri var. Agile'in mesela toplantıların yapılması, retrospective, nasıl geçti sprint vesaire bunların konuşması gerçekten bazı sıkıntıları önlüyor ve takımın çok daha verimli olarak hiç projeden kopmadan motivasyonu tutması.
+
+315
+01:16:56,399 --> 01:16:59,039
+Böyle bir şeyim olmuştu benim.
+
+316
+01:17:03,667 --> 01:17:05,307
+Teşekkürler.
+
+317
+01:17:06,007 --> 01:17:07,087
+Teşekkür ederim.
+
+318
+01:17:07,887 --> 01:17:27,087
+Bundan sonrası için bir planlama yapalım. Bugünkü arkadaşlarınızı daha rahat dinleyebildik. Onlar da iyi hazırlanmışlardı. Önümüzdeki hafta için daha önceden anlatmak isteyenler de…
+
+319
+01:17:27,539 --> 01:17:33,680
+Herkes burada mı bilmiyorum bunlardan ama [öğrenci] anlatacağım demişti.
+
+320
+01:17:34,960 --> 01:17:38,020
+[öğrenci] burada mı?
+
+321
+01:17:43,796 --> 01:17:50,336
+Yok herhalde. [öğrenci] buradaydı galiba.
+
+322
+01:17:52,755 --> 01:17:54,115
+Evet, buradayım.
+
+323
+01:17:54,536 --> 01:17:58,695
+Evet. [öğrenci], sen önümüzdeki hafta anlatabilecek misin?
+
+324
+01:18:00,155 --> 01:18:01,735
+Evet hocam, anlatabilirim.
+
+325
+01:18:01,935 --> 01:18:05,155
+Tamam. [öğrenci] de anlatacak herhalde.
+
+326
+01:18:05,755 --> 01:18:06,935
+Evet hocam, anlatacağım.
+
+327
+01:18:06,935 --> 01:18:09,095
+Tamam. [öğrenci]?
+
+328
+01:18:17,427 --> 01:18:23,307
+[öğrenci] burada yok ama anlatacağını söylemişti. [öğrenci].
+
+329
+01:18:24,087 --> 01:18:30,987
+Ben buradayım. Ben normalde anlatacağım hocam da haftaya bir müşteri toplantısı var. Acaba dedim bir hafta erteleme şansın var mı?
+
+330
+01:18:31,147 --> 01:18:37,227
+Olabilir. Çünkü önümüzdeki hafta anlatmak isteyen arkadaşların olduğu zaman seni 16 Mayıs'ta yazayım.
+
+331
+01:18:37,647 --> 01:18:39,347
+Eğer mümkünse bir sonraki haftaya.
+
+332
+01:18:39,347 --> 01:18:42,807
+Tamam. 16 Mayıs diyelim. [öğrenci].
+
+333
+01:18:43,647 --> 01:18:44,127
+Tamamdır.
+
+334
+01:18:50,100 --> 01:18:59,720
+[öğrenci] ben sana 9 Mayıs olmaz demiştim ama şimdi istersen 16 Mayıs'a seni de yazabilirim.
+
+335
+01:19:01,079 --> 01:19:06,000
+[öğrenci] burada mı? Az önce bana mesaj yazmıştı.
+
+336
+01:19:07,600 --> 01:19:09,520
+Evet, [öğrenci] duyuyor musun?
+
+337
+01:19:14,612 --> 01:19:25,531
+Sübeyye, [öğrenci] da 9'unda sunacak. Değil mi [öğrenci]?
+
+338
+01:19:31,507 --> 01:19:32,887
+Sen abur dediyorsan.
+
+339
+01:19:37,716 --> 01:19:42,716
+[öğrenci], seninle gün kararlaştırmış mıydık?
+
+340
+01:19:43,176 --> 01:19:49,896
+Merhaba hocam, yok gün kararlaştırmamıştık, hafta ya da sonraki hafta olabilir demiştik diye hatırlıyorum ama 9'unda isterseniz sunabilirim.
+
+341
+01:19:50,816 --> 01:19:59,896
+Yani 16'sına da kalabilir, 9'unda da olabilir. Şu anda 1, 2, 3...
+
+342
+01:20:00,627 --> 01:20:21,747
+4-5 kişi var kesin anlatacak olan. 16 Mayıs'ta da [öğrenci]'ya 16 Mayıs diye gün vereceğim. [öğrenci]'e 16 Mayıs'a attık. Sen de kendin karar ver. Yani 16 Mayıs'ta da kalabilirsin.
+
+343
+01:20:22,528 --> 01:20:25,587
+Hocam 9'una da sunabilirim. Sizin için hangisi uygunsa?
+
+344
+01:20:26,292 --> 01:20:33,372
+Bir de [öğrenci], hocam chatten yazmış, onun da bilgisini vereyim, sesi gelmemiş, 9 Mayıs'ta sunabilirim demiş.
+
+345
+01:20:33,551 --> 01:20:39,311
+Tamam, zaten konuşmuştuk onunla, tamam. Ben şimdi sesi çıkmadı diye şey oldum, tamam.
+
+346
+01:20:40,112 --> 01:20:42,752
+Tamam, uygun olursa 9'unda da sunabilirim hocam ben.
+
+347
+01:20:42,752 --> 01:20:51,112
+O zaman senin 9'unu atalım, [öğrenci] 16'sında sunabilirim demiş.
+
+348
+01:20:51,667 --> 01:21:00,967
+Tamamdır. Vakitin kalmasına göre [öğrenci]'a şey yaparız. O zaman [öğrenci] seni dokuzuna yazıyorum.
+
+349
+01:21:01,567 --> 01:21:02,847
+Tamam hocam, teşekkür ederim.
+
+350
+01:21:02,847 --> 01:21:03,247
+Tamam.
+
+351
+01:21:05,827 --> 01:21:15,207
+Hocam, merhaba. Ben de dokuzunda demiştim de, benim de dokuzunda bir işim olabilir. O yüzden on altısını da sunmam benim için daha iyi olabilir.
+
+352
+01:21:15,948 --> 01:21:17,407
+Ha [öğrenci], evet.
+
+353
+01:21:17,908 --> 01:21:24,587
+O zaman [öğrenci]'ın yerine geçsem olur mu? Çünkü benim de 15'iyle 20'si arası bir iş hayatına gitmem gerekecek.
+
+354
+01:21:26,247 --> 01:21:31,708
+[öğrenci] 16'sında. [öğrenci] sen mi?
+
+355
+01:21:31,768 --> 01:21:32,888
+[öğrenci] aynen hocam.
+
+356
+01:21:32,988 --> 01:21:36,868
+[öğrenci] seninle sonunda kararlaştırdık değil mi? Kodunu ben seni görememiştim.
+
+357
+01:21:36,888 --> 01:21:37,808
+Evet evet hocam.
+
+358
+01:21:38,028 --> 01:21:38,268
+Tamam.
+
+359
+01:21:38,528 --> 01:21:39,648
+Sonunda kararlaştırdık.
+
+360
+01:21:40,888 --> 01:21:44,648
+Tamam [öğrenci]'ı buradan çıkardı. [öğrenci] yazdı.
+
+361
+01:21:45,203 --> 01:21:46,743
+Tamam hocam, çok teşekkürler.
+
+362
+01:21:47,943 --> 01:21:48,483
+Teşekkür ederim.
+
+363
+01:21:49,363 --> 01:21:53,363
+Tamam. Şu anda o zaman önümüzdeki halkta [öğrenci] anlatacak önce.
+
+364
+01:21:54,503 --> 01:22:02,783
+Sonra [öğrenci], sonra [öğrenci], [öğrenci], [öğrenci] ve Fena.
+
+365
+01:22:03,983 --> 01:22:09,603
+Bir, iki, üç, dört, beş, altı kişi.
+
+366
+01:22:13,684 --> 01:22:16,123
+[öğrenci] [öğrenci] da bir şey mi yazdı?
+
+367
+01:22:24,435 --> 01:22:28,095
+[öğrenci] 16'sında.
+
+368
+01:22:32,627 --> 01:22:36,788
+Hocam, benim de 19'su da olabilir, 16'su da olabilir ama 9'u dolu sanırım.
+
+369
+01:22:37,227 --> 01:22:37,707
+[öğrenci]?
+
+370
+01:22:37,927 --> 01:22:38,147
+Evet.
+
+371
+01:22:39,747 --> 01:22:40,387
+Hangisi?
+
+372
+01:22:40,387 --> 01:22:56,108
+Yani 9'unda da olabilir. Çünkü bugün biraz daha geç başladık. Önümüzdeki hafta tam 10'da başlarız. Daha rahat dinleyebilirim.
+
+373
+01:22:56,979 --> 01:23:06,840
+Online yapacaksınız zaten sunumlarınızı. [öğrenci] seni de sen bilirsin.
+
+374
+01:23:07,219 --> 01:23:09,379
+9.9'unu da yapabiliriz.
+
+375
+01:23:16,307 --> 01:23:32,608
+Önümüzdeki hafta o zaman [öğrenci], [öğrenci], [öğrenci]'ı 16'sına aldık. [öğrenci], [öğrenci], [öğrenci], [öğrenci] ve [öğrenci] anlatacak.
+
+376
+01:23:33,608 --> 01:23:42,667
+Zaten 15'er dakika gibi tutuyor sunumlarınız. Rahatlıkla, 3 saati tam kullanarak.
+
+377
+01:23:43,039 --> 01:24:05,659
+Şey yapabiliriz. Bugün erken bitti. Bir de aralar falan verdik. [öğrenci]. [öğrenci], seninle de kararlaştırmamıştık. 16'sında uygun sana da, bize de 16'sı uygun. [öğrenci].
+
+378
+01:24:06,659 --> 01:24:08,579
+[öğrenci] konu neydi?
+
+379
+01:24:12,787 --> 01:24:21,827
+Hocam, benim konum şey için, Software Project Management için Machine Learning kullanım.
+
+380
+01:24:21,987 --> 01:24:26,707
+Evet, evet, tamam. Tamam, 16'sını da diye belirledik senin de.
+
+381
+01:24:27,108 --> 01:24:27,727
+Tamam hocam.
+
+382
+01:24:31,731 --> 01:24:32,452
+[öğrenci]
+
+383
+01:24:41,203 --> 01:24:43,703
+[öğrenci] sen bir şey yazdın mı buradan bana?
+
+384
+01:24:46,304 --> 01:24:48,884
+Hocam evet, vize sınavıyla ilgili bir şey yazmıştım.
+
+385
+01:24:49,663 --> 01:24:52,623
+Ha, göremedim.
+
+386
+01:24:59,539 --> 01:25:01,220
+Bakmadım henüz.
+
+387
+01:25:05,460 --> 01:25:06,899
+Sınav sonuçlarına.
+
+388
+01:25:07,899 --> 01:25:12,520
+Ha, evet. Siz bana bir mail atmıştınız. O maili değerlendireceğim ben.
+
+389
+01:25:13,760 --> 01:25:14,379
+Tamam hocam.
+
+390
+01:25:14,379 --> 01:25:14,939
+Tamam.
+
+391
+01:25:23,539 --> 01:25:34,479
+[öğrenci], o zaman 16'sında da [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci] ve [öğrenci] anlatacak.
+
+392
+01:25:35,520 --> 01:25:37,539
+Hocam beni de 16'sına ekleyebilir misiniz?
+
+393
+01:25:38,619 --> 01:25:39,059
+[öğrenci]?
+
+394
+01:25:39,840 --> 01:25:40,199
+Evet.
+
+395
+01:25:41,359 --> 01:25:44,500
+Seni bu tarafa yazdık zannediyordum, yazmamışız, tamam.
+
+396
+01:25:48,884 --> 01:25:57,123
+Evet. 1, 2, 3, 4, 5, 6, 7 kişi. Öbür tarafta da zaten [öğrenci], [öğrenci].
+
+397
+01:26:03,572 --> 01:26:08,271
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+398
+01:26:11,592 --> 01:26:21,971
+[öğrenci]'ı da o zaman şey bırakalım. Hangi gün istersin? İkisinde de bir artacak sayı.
+
+399
+01:26:23,351 --> 01:26:26,172
+[öğrenci] 9'u ya da 16'sı.
+
+400
+01:26:36,916 --> 01:26:50,756
+[öğrenci], o zaman seni 9 Mayıs'ta bırakalım. 16'sında demiştim ama. 9 Mayıs'ta bırakalım. Şimdi [öğrenci], [öğrenci] senin konunu ne zaman belirlemiştik?
+
+401
+01:26:52,756 --> 01:26:56,076
+Hocam, benim konum bayağı önceden belirlemişti. Mail atmıştım.
+
+402
+01:26:56,076 --> 01:26:56,796
+Tamam.
+
+403
+01:26:59,736 --> 01:27:02,816
+Tamam, seni 16'sına yazdım o zaman.
+
+404
+01:27:03,380 --> 01:27:21,920
+[öğrenci] da 9'unda. [öğrenci] duydun mu? Önce burada mısın bakalım? Evet. [öğrenci] senin ses problemin var herhalde. Yazabilirsin.
+
+405
+01:27:27,539 --> 01:27:30,920
+Hocam, sunum dosyasını mail olarak gönderdim size.
+
+406
+01:27:31,460 --> 01:27:32,840
+Tamam, teşekkürler.
+
+407
+01:27:33,119 --> 01:27:33,860
+Teşekkür ederim.
+
+408
+01:27:34,780 --> 01:27:36,840
+[öğrenci].
+
+409
+01:27:40,595 --> 01:27:59,715
+Bu arada önümüzdeki hafta görmüş oluruz. Bakalım 7 kişi nasıl anlatacak, nasıl olacak zamanımız. Ona göre 16'sını belki şey yaparız, 16'sının planını haftaya oluştururuz.
+
+410
+01:28:02,515 --> 01:28:05,495
+Evet, bu hafta için başka?
+
+411
+01:28:06,260 --> 01:28:12,580
+Sorusu olan var mı? Bakayım bugün 19, 18 kişi varmış.
+
+412
+01:28:15,640 --> 01:28:19,440
+18 kişiden gün belirlemediğimiz var mı?
+
+413
+01:28:26,355 --> 01:28:28,536
+[öğrenci] da ona aslında.
+
+414
+01:28:33,844 --> 01:28:35,424
+Anlatmak istedim.
+
+415
+01:28:39,731 --> 01:28:42,591
+Ben maillerle de bir eşleştireceğim şimdi.
+
+416
+01:29:02,260 --> 01:29:15,639
+Önümüzdeki hafta [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci] ve [öğrenci] anlatacak.
+
+417
+01:29:16,639 --> 01:29:21,719
+Buna göre herkes hazırlanabilir.
+
+418
+01:29:23,340 --> 01:29:25,500
+Başka sorusu olan var mı?
+
+419
+01:29:37,108 --> 01:29:50,867
+Evet, [öğrenci] zaten söylemişti daha önce anlatacağını. Başka da yeni mesaj da yok zaten. Tamam. Teşekkürler. O zaman dersi bitirebiliriz bugün.
+
+420
+01:29:53,547 --> 01:29:55,108
+Teşekkürler hocam. İyi haftalar.
+
+421
+01:29:55,367 --> 01:29:56,207
+İyi haftalar.
+
+422
+01:29:56,307 --> 01:29:57,047
+İyi haftalar hocam.
+
+423
+01:29:57,448 --> 01:29:58,407
+Teşekkürler hocam.
+
+424
+01:29:59,068 --> 01:29:59,847
+Teşekkürler.
