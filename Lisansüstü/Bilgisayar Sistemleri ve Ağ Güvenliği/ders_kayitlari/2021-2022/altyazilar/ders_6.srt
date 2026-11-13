@@ -1,0 +1,1131 @@
+1
+00:37:29,523 --> 00:37:41,103
+Günaydın arkadaşlar. Hepinize tekrar hayırlı Ramazan'la. Ramazan nedeniyle sayımız 15'lere kadar düşmüş. Uyanamadık mı? Ne olduk?
+
+2
+00:37:42,443 --> 00:37:43,523
+Günaydın Profesör.
+
+3
+00:37:44,563 --> 00:37:49,123
+Günaydın. Kimse yok sınıfta. Ne oluyoruz?
+
+4
+00:37:50,223 --> 00:37:51,203
+Buyebiliyor musunuz hocam?
+
+5
+00:37:52,663 --> 00:37:53,103
+Efendim?
+
+6
+00:37:53,884 --> 00:37:54,723
+Buyebiliyor musunuz?
+
+7
+00:37:55,072 --> 00:38:00,072
+Duyuyorum, duyuyorum. Sınıfta öğrenci sayısı az diyorum. Ne oldu? Nerede millet?
+
+8
+00:38:01,811 --> 00:38:03,672
+Biraz geç katılacaklar herhalde.
+
+9
+00:38:05,092 --> 00:38:11,652
+İnşallah öyledir yani. İnşallah online diye nasıl olsa işimize, gücümüze bakalım demiyorlardı.
+
+10
+00:38:13,251 --> 00:38:16,972
+Herhalde 20-20, 24 civarı, 22-24 civarı oluyor.
+
+11
+00:38:16,972 --> 00:38:21,932
+Zaten %50'yi başarabiliyorsak uzaktan iyidir diye düşünüyorum.
+
+12
+00:38:22,804 --> 00:38:42,523
+İnşallah arkadaşlar da meraklarına katılırlar. Evet, konumuza başlayalım bu haftaki konumuzla. 11'e civarı bırakacağız çünkü bir başka toplantım daha var arkadaşlar. 11'de ona o zamana kadar tahmin ediyorum. Bitirmiş oluruz.
+
+13
+00:38:51,443 --> 00:38:52,903
+Ekranı görüyor muyuz?
+
+14
+00:38:54,523 --> 00:38:55,643
+Ama yanlış ekranı.
+
+15
+00:38:55,643 --> 00:38:57,724
+Evet hocam.
+
+16
+00:38:58,903 --> 00:39:00,663
+Ekranı görüyoruz.
+
+17
+00:39:02,023 --> 00:39:06,324
+Evet arkadaşlar, hatırlayacağınız gibi başakalalım.
+
+18
+00:39:08,463 --> 00:39:14,603
+Yaklaşık bir dört hafta önce yönetimsel meselelere başlamıştık.
+
+19
+00:39:16,543 --> 00:39:17,443
+Çünkü...
+
+20
+00:39:18,804 --> 00:39:25,384
+Güvenlik, bilgisayar güvenliği ve ağ güvenliğinde temel güvenlik konularını bildiğinizi varsaymıştık.
+
+21
+00:39:25,844 --> 00:39:34,543
+Giriş kontrolünden tutun da malwarelere, virüslere, antivirüslere, IPS'leri, IDS'leri bildiğinizi kabul etmiştik.
+
+22
+00:39:35,204 --> 00:39:40,804
+Dolayısıyla onun üzerine önce bir kurumun, bir firmanın, bir şirketin...
+
+23
+00:39:40,916 --> 00:39:55,196
+IT güvenlik yönetimi nasıl yapılır, nasıl yönetilir, riskler nasıl hesaplanır, planlamalar, prosedürler, polisler nasıl belirlenir? Bunlardan bahsetmiştik.
+
+24
+00:40:06,931 --> 00:40:17,931
+Altyapı güvenliği değil, lojiğin altındaki fiziksel altyapı güvenliğinin de doğrudan bilgisayar ağ güvenliğini etkilediğini söylemiştik.
+
+25
+00:40:18,171 --> 00:40:24,271
+Ve yapının, altyapının ve fiziksel güvenlikte en az lojik güvenlik kadar önemli olduğundan bahsetmiştik.
+
+26
+00:40:24,271 --> 00:40:32,231
+Çünkü sistem odasından bir riskin çalınması ya da kablosuz ağın, hacklenerek verilerin sinif edilmesi.
+
+27
+00:40:32,655 --> 00:40:39,536
+Ya da kablosuzan kesilmesi, tahrip edilmesi.
+
+28
+00:40:40,340 --> 00:41:06,240
+Hırsızlık, sistemin komple kendisinin alıp götürülmesi. Bunlar da aslında bizim için IT güvenliği kapsamındaydı. Çünkü verimizi değiştirilmesi, silinmesi, bozulması nasılsa o verimizi barındıran disklerin ya da sistemin çalışamaz hale getirilmesi de aynı derecede risk olarak karşımıza çıkıyor.
+
+29
+00:41:06,739 --> 00:41:27,939
+Daha sonra geçen hafta ise Bilgisayar Ağ Güvenliği'nde sadece fiziksel ve lojik güvenlikten daha yanında bilgisayar sistemi kullanan, sistemi işleten ve sistemin bakımını sağlayan insan kaynağının da güvenliğinin.
+
+30
+00:41:28,371 --> 00:41:53,731
+Sağlanması gerektiğini söylemiştik. Çünkü atakların 180'nin içeriden geldiği düşünülürse, atakların da büyük bir çoğunluğunu menfaat elde etmek isteyen, küsen, daralan, kızan, eski çalışanlar, yeni çalışanlar olduğu düşünülürse ve sistemin devamı açısından da.
+
+31
+00:41:54,032 --> 00:42:15,771
+İnsan kaynağının devamı o kadar önemli olduğu düşünülürse, insan kaynağı güvenliği de önemli. Dolayısıyla biz yapımızı oluşturduk. Değerlendirdik, planı politikaya çıkardık, fiziksel altyapımızla alakalı gerekli politikalarımızı da belirledik ve sistemimiz güvenli.
+
+32
+00:42:16,512 --> 00:42:25,452
+Bu anahtar teslimi yapılan bir iş değil. Bu 724 denetimin olduğu, kontrolünün olduğu bir yapı.
+
+33
+00:42:26,132 --> 00:42:51,172
+Dolayısıyla sadece yaptık, bitti. Bundan sonra kimse bize saldıramaz. İnsanımızla güvence aldık, yapımızla güvence aldık. Artık sıkıntı yok dememiz mümkün değil. Sürekli kontrol altında, 7.24 kontrol altında bulundurmamız gerekiyor. Dolayısıyla bu hafta güvenlik kontrolü, security auditing konusuna girmiş olacağız.
+
+34
+00:42:51,172 --> 00:42:52,711
+Evet.
+
+35
+00:42:54,356 --> 00:43:03,656
+Neler var bu Security Adity'nin altında? Önce güvenlik denetim mimarilerinden bahsedeceğiz.
+
+36
+00:43:03,656 --> 00:43:09,356
+Güvenlik denetim mimarileri nasıl? Önce işte ANFC ve NIST rükmanlarını...
+
+37
+00:43:10,324 --> 00:43:26,144
+Çünkü biliyorsunuz RFC dokümanları ve NIST'in yayınladığı dokümanlar aslında uluslararası standardı sağlayan dokümanlar. Bunlar da bize bunu planlarken ciddi manada yardımcı oluyor.
+
+38
+00:43:26,844 --> 00:43:33,164
+Sonrasında güvenlik denetim izlerinden, trailerinden bahsedeceğiz.
+
+39
+00:43:33,568 --> 00:43:53,888
+Çünkü biz denetleyeceğiz ama sistemi overall denetlediğimiz zaman normal davranışı ve anormal davranışını tespit edebilmek adına belli noktaları özellikle kontrol ediyor, takip ediyor olmamız gerekiyor. Security trailer nedir, nasıl belirlenir bunlardan bahsedeceğiz.
+
+40
+00:44:00,820 --> 00:44:12,579
+Sadece gözlem, sadece göğsel olarak incelenmesi değil, aslında bütün faaliyetlerin ya da belli faaliyetlerin denetlenmesi.
+
+41
+00:44:13,268 --> 00:44:25,588
+Olarak karşımıza çıkıyor. Dolayısıyla bu bloklar içerisinde de uygun algoritmalarla analizler yaparak normal davranışı ve anormal davranışları tespit edip gerekli reaksiyonlar alabilmemiz mümkün.
+
+42
+00:44:41,268 --> 00:44:55,268
+Algılamamız, önce dedekt edebilmemiz, sonrasında bundan hızlı bir şekilde tekrar eski hale iyileşip eski halde dönebilmemiz gerekiyor. Bunlarla alakalı yapıları sonra...
+
+43
+00:44:55,648 --> 00:45:14,548
+Denetim İz analizlerinden bahsedeceğiz. Denetim İz analizleri aslında bize özellikle 0 gün ataklarını tespit etmekte. Sonrasında bize dinamik kurallar tanımlamı.
+
+44
+00:45:14,896 --> 00:45:34,916
+Ya da statik tanımlıyorsak bu analizler neticesinde statik kurallarımızı update etme, refine etme imkanı verebilecek. En son konumuz ise güvenlik yönetimi ve event yönetimi ile bu haftaki konumuzu bitirmiş olacağız.
+
+45
+00:45:36,960 --> 00:45:59,699
+Security Audit Terminolojisini RFC 4449 dokümanından elde edebilmek mümkün. Aslında security denetim sistemin kayıtlarının, aktivitelerinin incelenmesi, bağımsız olarak incelenmesi, ne için bağımsız olarak inceleyeceğiz?
+
+46
+00:46:02,739 --> 00:46:16,479
+Güvenlik politikalarının ve belirlenen güvenlik prosedürlerinin uydup uyulmadığını, güvenlik zafiyetlerinin ya da güvenlik sızmalarının ihlallerinin olup olmadığını ve
+
+47
+00:46:16,884 --> 00:46:30,244
+Neticesinde ise bu politikalarla alakalı değişiklik yapma ya da yeni tedbirler almaları ile alakalı kararları vermede destek olma işlemi.
+
+48
+00:46:30,583 --> 00:46:38,824
+Aslında normal bilgisayar sisteminden bağımsız bir gözlem sisteminden bahsediyoruz.
+
+49
+00:46:41,811 --> 00:47:03,652
+Güvenlik, denetim türelleri aslında kronolojik sistem aktivitelerinin, sistemin davranışını, aktivitelerini ve de çevresel ve yapısal işlemlerini ve bunlarla ilgili aktiviteleri kronolojik olarak.
+
+50
+00:47:04,179 --> 00:47:14,420
+Kaydetmeyi de biz aslında güvenlik denetim izi, security audit trail demiş oluyoruz.
+
+51
+00:47:14,420 --> 00:47:28,099
+Dediğim gibi bu tür terminolojileri siz de RFC dokümanını internetten, bunlar açık kaynaktır. Bunlardan indirerek kolaylıkla ayrıntılarını belirleyebilirsiniz.
+
+52
+00:47:28,628 --> 00:47:55,668
+Ya da algılayabilirsiniz. Şimdi gene bu dokümanda X816 dökümanı, bu ITUT Recommendation X816 dökümanı, bunda gene buradaki bir figür, güvenlik denetim ve alarm modelini karşımızda.
+
+53
+00:47:56,244 --> 00:48:21,484
+Çıkıyor. Buradaki bazı bileşenler var. Aslında event ayrıklaştırıcı ya da event diskriminatör. Bu aslında bir lojik devre. Ne yapıyor? Software üzerine kurulmuş bir lojik. Sistemin bütün aktivitelerini monitör eden.
+
+54
+00:48:22,099 --> 00:48:38,639
+Ve güvenlikle alakalı olayları algılayan, bu güvenlikle alakalı algılayan aslında bizim belirlediğimiz güvenlik parametrelerine göre algılayan bir logic, bir software içerisinde gömülmüş, gömülü bir yapı.
+
+55
+00:48:38,639 --> 00:48:44,859
+Security Auditor sistemi 724 Montero diyor.
+
+56
+00:48:45,556 --> 00:49:13,096
+Bir yazılım içerisinde görülmüş bir mantıksal yapı ve güvenlikle alakalı, önceden belirlenen kurallar çerçevesinde güvenlikle alakalı aktiviteleri topluyor. Sonra bu aktiviteleri topladıktan sonra Security Discriminator'ın iki temel fonksiyonu var. Birincisi, bu önceden belirlenmiş bu aktivitelere bağlı olarak alarmlar üretmek.
+
+57
+00:49:13,748 --> 00:49:30,748
+İkincisi ise bunları ileriki analizlerde kaydetmek. Dolayısıyla audit recorder ya da diretim kaydedici bu algılanan her türlü eventin kaydeden...
+
+58
+00:49:33,139 --> 00:49:55,559
+Belli bir yapı çerçevesinde kaydeden ve bunları kayıt edebilecek formata çeviren bir bileşen bir modül diyebiliriz. Bunun yaptığı ve nereye? Audit türeyle, ize, yapıya, veri tabanına, diske bunu kaydediyor rekor olarak.
+
+59
+00:49:57,559 --> 00:49:59,559
+Audit Recorder, diskre...
+
+60
+00:50:00,000 --> 00:50:24,420
+Discriminator'dan gelen bütün verilerin aslında uygun kayıt formatına dönüştüren bir yapı. Bunun beslendiği iki yapı var konfigürasyon olarak. Beslendiği audit mesajlarını discriminator'dan alıyor ama gelen alarmlar analizine göre yeni kayıtlar oluşturulacaksa bu audit mesajlarında.
+
+61
+00:50:24,884 --> 00:50:48,460
+Bunu audit rekordörü update edebiliyoruz. Aynı zamanda analizleri çünkü denetim analizi ile de biz özellikle hem sızmanın algılanması aşamasında çünkü loklardan algılanması hem de özellikle kural tanımlanmamış anomaliyi dedekt edip...
+
+62
+00:50:48,820 --> 00:51:02,820
+Buna göre sızmayı tespit edebilmek adına analiz sonuçlarına göre de Audit Recorder'ı da değişiklik yapıp kayıt mekanizmasını güncelleme yapabiliyoruz.
+
+63
+00:51:02,820 --> 00:51:14,820
+Alarm Processor aslında bir modül. Audit Disk Mühendisliği belirlemiş belli.
+
+64
+00:51:15,572 --> 00:51:22,552
+Güvenlik parametrelerine göre alarm prosedürünü işleten, çalıştıran bir yapı.
+
+65
+00:51:23,072 --> 00:51:28,452
+Alarm prosedürüne göre aslında iki tane çıktısı var.
+
+66
+00:51:28,980 --> 00:51:46,440
+Bunlar bir aksiyon aldırttırabilir. Nedir? Alarmla alakalı mesaj yapabilir. Eğer fiziksel bir sızma varsa ya da bir hırsızlık gömenli kameralarından ya da bir yangın algılandıysa işte bazının çalınması, alarmın çalınması bir aksiyon üretebilir.
+
+67
+00:51:47,059 --> 00:52:01,199
+Bununla alakalı aksiyon parametreleri, diskriminatirden gelen alarm prosedürleri ve analizler neticesindeki alarm tıraş yapılarına göre de bu aksiyonları belirlemiş oluyoruz.
+
+68
+00:52:14,900 --> 00:52:22,880
+İvente göre oluşturulmuş kayıtların, mesajlardan gelen kayıtların tutulduğu bir mekanizma.
+
+69
+00:52:22,880 --> 00:52:30,519
+Audit Analyzer aslında bu işin audit mekanizmasının kalbi gibi düşünebilmek mümkün.
+
+70
+00:52:31,039 --> 00:52:35,880
+Bu Audit Trail'den kaydedilmiş verileri analiz eden...
+
+71
+00:52:36,724 --> 00:52:38,584
+belli bir
+
+72
+00:52:38,584 --> 00:52:40,624
+paten ve aktivitelere göre normal
+
+73
+00:52:40,624 --> 00:52:43,164
+davranışı ve anormal davranışı
+
+74
+00:52:43,164 --> 00:52:44,764
+belirleyen ve
+
+75
+00:52:44,764 --> 00:52:46,644
+bunlara göre de hem audit
+
+76
+00:52:46,644 --> 00:52:48,784
+recorder'a yeni
+
+77
+00:52:48,784 --> 00:52:51,104
+kayıt parametrelerinin
+
+78
+00:52:51,104 --> 00:52:52,564
+girilmesini sağlayan
+
+79
+00:52:52,564 --> 00:52:54,384
+alarm mekanizmasına, alarm
+
+80
+00:52:54,384 --> 00:52:56,244
+prosedürlerini update eden
+
+81
+00:52:56,244 --> 00:52:58,204
+bir yapı. Bu
+
+82
+00:52:58,204 --> 00:52:59,884
+ITS,
+
+83
+00:53:00,044 --> 00:53:01,943
+IDS, IPS
+
+84
+00:53:03,711 --> 00:53:20,592
+İşi de tetikleyen diye düşünebiliriz. Audit Analyzer dediğimiz zaman bunun üzerine işte rule-based, belli bir kurallar tanımlı olabilir, yapay zeka tabanlı olabilir ya da güncel olarak derin öğrenme tabanlı bütün aktivitelere göre öğrenen mekanizmalar var.
+
+85
+00:53:20,592 --> 00:53:27,072
+Aslında Audit Analyzer konusunda ciddi akademik çalışmalar da bulabilirsiniz.
+
+86
+00:53:31,443 --> 00:53:46,443
+Geçmiş auditleri hem hukuki hem kanuni olarak hem de geçmişe dönük kayıtlar tutabilmek adına kaydedebiliyoruz.
+
+87
+00:53:46,443 --> 00:53:50,644
+Audit Archiver dediğimiz mekanizma bu.
+
+88
+00:53:59,027 --> 00:54:24,027
+Eğer birden fazla sistemi olan bir kurum olarak düşünürsek ya da büyük bir devlet kuruluşu olarak düşünürsek, değişik sistemlerden gelen bu audit verilerini toplayıp genel bir politika belirlemek adına audit trailer examiner ve muhtelif audit verilerini...
+
+89
+00:54:24,628 --> 00:54:45,528
+İnceleyip, buna göre de güvenlik raporları çıkartabiliriz. Bunlar bizim IT&T'nin X816 modeli. Bunu da gene dediğim gibi sandart bir model. İnternetten bile bilmeniz mümkün.
+
+90
+00:54:51,476 --> 00:55:11,416
+Dağınık Ağ, Denetim Ağ Modeli, Denetim İz Modelleri, yine bu IT&T'nin 816'dan alınmış bir model. Biraz önce dediğim gibi bir daha büyük kurumların birden fazla sistemi yöneten.
+
+91
+00:55:12,244 --> 00:55:32,083
+Yapıda sadece hepsinin tek bir audit değil, bizden fazla noktadan gelen audit trailer'ın ortak bir yerde toplanması. Buna göre bunların merkezi olarak depolanması içinde dağınık.
+
+92
+00:55:32,628 --> 00:55:54,887
+Audit, trailer mekanizmaları, modelleri de geliştirilmiş. Bildiğimiz distributed yapının aynısı her bir sayette dispatcher'lar var. Client sites'a ya da kenarlarda bu dispatcher'lar bunu merkeze belli periyotlar aralığında göndermiş oluyor.
+
+93
+00:55:58,195 --> 00:56:19,583
+Gene bir modele. Bu model aslında security güvenlik fonksiyonlarının adım adım çıkartılmış hali. Bu aslında kitapta da verilen bir akademik çalışma. Akademik çalışmada güvenlik...
+
+94
+00:56:19,583 --> 00:56:33,363
+Bu modelden denetim sınıflarının ayrıklaştırılması olarak bu model karşımıza çıkıyor. En başta ana çatı security audit, güvenlik denetimi.
+
+95
+00:56:36,307 --> 00:56:55,807
+Ne yapıyoruz önce? Önce data generasyonu. Çünkü güvenlik denetimini yapabilmemiz için önce güvenlik kayıtlarının olması gerekiyor. İlk adım güvenli datanın oluşturulması. Bu aslında denetimin seviyesini belirleyen ve
+
+96
+00:56:57,460 --> 00:57:12,880
+Audit ya da denetim yapılabilecek olayların tanınmasına, kimliklendirilmesine ve auditle alakalı bilgilerin, minimum bilgilerinin belirlenmesine.
+
+97
+00:57:15,827 --> 00:57:31,108
+İlk aşaması veri jenerasyonu, audit data jenerasyonu ve user identity association iki alt birleşen olarak düşünebiliriz verinin.
+
+98
+00:57:31,572 --> 00:57:46,532
+Adit verisinin üretilmesi, üretilmesi için hangi tür verilerin hangi olaylara ait verilerin inceleyeceğinin belirlenmesi, sonrasında kullanıcı kimliğinin bununla birleştirilmesi.
+
+99
+00:57:47,912 --> 00:57:51,652
+Sonra verilerimizi biz kaydediyoruz ama.
+
+100
+00:57:52,083 --> 00:58:15,603
+Bir sürü aktiviteyi kaydediyoruz. Bunların aktivitelerinden belli kurallara göre bizim eventlerin seçilmesi gerekiyor. Niye eventlerin? Çünkü biz her türlü normal genin kullanıcı davranışlarına ya da sistem üzerinde yapılan her türlü aktiviteleri değil.
+
+101
+00:58:16,052 --> 00:58:38,112
+Belli aktiviteleri kaydetmemiz lazım. Nedir belli aktiviteleri? Nedir? Unseksesful login denemeleri, verileri, ulaşılmaları, disklerde kopyalama, silme aktiviteleri, belli sistem.
+
+102
+00:58:38,592 --> 00:58:48,372
+Bu politikaların bulunduğu kural dizimlerine ulaşma çabaları. Bunları bizim seçmemiz, belirlememiz gerekiyor.
+
+103
+00:58:48,372 --> 00:59:03,372
+Güvenlik auditinin mekanizmalarında verileri üreteceğiz. Sonra bu verilerden neleri sayedeceğinize göre güvenlikleri seçeceğiz. Seçtik.
+
+104
+00:59:03,956 --> 00:59:27,036
+Bütün login faaliyetlerini kaydediyoruz. Bütün disk silme, kaydetme faaliyetlerini kaydediyoruz. Politikalarla, kurallarla alakalı dosyalara, network konfigürasyonlarına ya da işletim sisteminin ana klasörlerine ulaşmaları bunların hepsini kaydediyoruz. Seçtik.
+
+105
+00:59:27,795 --> 00:59:46,795
+Bunların hepsini seçmek demek, hepsini kaydetmek anlamına gelmiyor. Bunlarla alakalı kayıt mekanizmasını oluşturmamız gerekiyor. Biz verileri kaydettik ama kaydettiğimiz verilerin…
+
+106
+00:59:47,443 --> 01:00:01,144
+Seçtiğimiz diventlere göre kaydettiğimiz verilerin de atak saldırı tarafından değiştirilmesine, müdahale edilmesini engelleyecek mekanizmaları da oluşturmamız gerekiyor.
+
+107
+01:00:01,583 --> 01:00:11,563
+Biliyorsunuz bir saldırgan sisteme girdiği zaman en başta yapmalıdık istediği nedir? Sisteme girer, inşil akses olarak iki ana şey yapar.
+
+108
+01:00:12,563 --> 01:00:34,563
+Herhangi bir aksiyon almadan önce. Birincisi, daha sonra girebilecek mekanizmaları oluşturur. İkincisi ise, bunlarla alakalı ayak izlerini yok eder. Ayak izlerini de nasıl yok eder? Bu audit kayıtlarındaki ilgili alanları, loklardaki ilgili alanları.
+
+109
+01:00:35,503 --> 01:00:46,503
+Değiştirerek yok eder. Dolayısıyla sizin denetimi loklar üzerinden yaptığınızı düşünürsek, bunlarla alakalı yapınızı da...
+
+110
+01:00:47,155 --> 01:01:12,916
+Sizin kayıtlarınızı da garantili şekilde, güvenli bir şekilde tutuyor olmanız gerekiyor. Ve audit kayıtlarının kayıplarına karşı, bunların silinmesine, değiştirilmesine karşı da gerekli aksiyonları belirliyor olmanız gerekiyor. Nerede? Event kayıt aşamasında.
+
+111
+01:01:14,228 --> 01:01:31,867
+Sonrasında datalarımızı belirledik, sonra hangi aksiyonlara göre kayıt edeceğimizi aldık. Sonra bunların kaydıyla alakalı gerekli güvenlik politikalarımızı da oluşturduk silinmesine, değiştirilmesine karşı.
+
+112
+01:01:41,204 --> 01:01:48,204
+Belerlememiz gerekiyor. Çünkü elimizde belli saldırı patternlerine göre…
+
+113
+01:01:48,788 --> 01:02:12,788
+Yapılarımız var. Bunlara göre otomatik cevaplar. Nedir otomatik cevaplar? İşte belli çok fazla bir porttan çok fazla aktivite varsa o portun kapatılması. Belli IP'lerden trafik geliyorsa o paketlerin drop edilmesi. Ya da diskle alakalı işte belli kayıtların silinmesiyle alakalı bir şey varsa onların gerekli aksiyonların alınması.
+
+114
+01:02:16,851 --> 01:02:31,831
+Müdahale timlerine ulaşımla alakalı SMS'ler aramalardır. Bunların aksiyonların belirlenmesi gerekiyor. Sonraki aşama, hepsini belirledik ama cevabımızı da aldık.
+
+115
+01:02:41,248 --> 01:03:08,648
+Bunları da nasıl yapacağız? Bütün oluşturduğumuz, güvenlik altına aldığımız verileri analiz etmek gerekiyor. Potansiyel ihlal analizlerini yapmamız gerekiyor. Bunları nasıl yapabiliriz? İki yöntemi var. Birincisi klasik, kulağı tabanlı.
+
+116
+01:03:09,300 --> 01:03:29,260
+Belli kurallar var. O politikaları göre analiz ediyoruz ve audit logları, traileri içerisinde biz bu pattern'e uyan olayları tespit etmeye çalışıyoruz ve bunlarla alakalı da aksiyonlar almaya çalışıyoruz.
+
+117
+01:03:34,592 --> 01:03:51,592
+Bu diğerine göre daha kompleks. Yapay zeka, ister derin öğrenme yöntemleriyle belli atak patternlarına göre sistemi öğretildikten sonra bunları analiz edip yeni...
+
+118
+01:03:52,159 --> 01:04:04,179
+Atakları tespit edip bu ataklara göre kural belirleme ya da yapıyı güncelleme mekanizmaları. Dolayısıyla audit analizin aslında nihai hedefi bu.
+
+119
+01:04:06,291 --> 01:04:29,011
+Genel bir review, auditların genel bir review edilmesi. Bunun nedir review? Bütün bu kayıtlarla alakalı her ne kadar güvenlik aktiviteleri olmasa da sistem yüklerinin belirlenmesi, sistem kullanımlarınla alakalı analiz edilmesi.
+
+120
+01:04:31,219 --> 01:04:53,380
+Güvenliği doğrudan ilgilendirmeyen politikaların belirlenmesi için genel bir kontrolü de audit review olarak dikkat alabiliriz. Bunu genel review olabilir, kısıtlı audit incelemesi olabilir ya da belli amaca yönelik.
+
+121
+01:04:54,036 --> 01:05:18,936
+Bir audit incelemesi olabilir. Bu aslında bizim gene kitapta da olan akademik çalışmaya göre sistem denetiminin parçalanmış, kompozisyonu, aşama aşama bölünmüş hali. Aslında bu bize daha güzel bir yapı veriyor.
+
+122
+01:05:22,260 --> 01:05:41,880
+Biz eğer denetimle alakalı kayıtları tutmak istiyorsak ya da sistemi denetleyecek mekanizmamızı yapmak istiyorsak önce olayların, eventlerin tanımlamamız yapmak gerekiyor.
+
+123
+01:05:46,431 --> 01:05:56,251
+Pek visible işlenebilir, yapılabilir değil. Her türlü aktiviteyi kayıt altına almanın da pratik bir anlamı yok.
+
+124
+01:05:56,251 --> 01:06:12,671
+Dolayısıyla aslında event definition aslında denetim altına alacağımız olayları bu bütün sistemdeki yapılan aktiviteler içerisinden belirleme.
+
+125
+01:06:13,364 --> 01:06:33,364
+İşi aslında event definition. Genel kriterlerimiz neler? Mesela sistem içerisindeki objelere ulaşma, diske, harici device'lere ulaşma ya da bir donanımın, bir objenin silinme aktiviteleri. Bunlar seçilebilir.
+
+126
+01:06:37,824 --> 01:06:59,663
+Sistem kullanıcı haklarının, yeteneklerinin kötüye kullanılması ya da bunların bozulması, değiştirilmesi, silinmesi eylemleri ya da güvenlik özelliklerinin, objelerin ya da nesnelerin, disklerindeki verilerin güvenlik özelliklerinin değiştirme çabaları.
+
+127
+01:07:03,443 --> 01:07:15,403
+Bunlar belli bir politikaya göre ya da 3. Parti yazılımlar tarafından yapılan güvenlik politika analizleri neticesinde belirlenen eventler.
+
+128
+01:07:15,403 --> 01:07:29,764
+Nedir? Güvenlik politikalarını bypass yapmaya yönelik çabalar ya da kimlik ve yetki mekanizmalarının kullanımları.
+
+129
+01:07:30,452 --> 01:07:54,431
+Ya da operatör ya da kullanıcılar tarafından güvenlikle alakalı yapılan aksiyonla ya da sisteminizden dışarıya, harici cihazlara ya da harici cihazlarından sisteminize veri alınma ve gönderme eventleri seçilebilecek.
+
+130
+01:07:54,835 --> 01:08:14,475
+eventler arasında tanımlanabilir ya da örnek olarak verilebilir. Devam edersek bu işe. Sonra eventlerin algılanması. Seçtik eventlerimizi. İşte isteme girme.
+
+131
+01:08:17,268 --> 01:08:32,268
+Olaylarımızı seçtik. Bunları her seçili kaydı, her yapılan eylemi değil, belli bir hukuklar, kancalar, oltalar belirlememiz gerekiyor ki buradaki...
+
+132
+01:08:32,979 --> 01:08:46,420
+Bu tür davranışı, bu tür eyleme göre bir şüpheli davranışı kancamıza takılsın ve biz bunu algılayabiliriz. Ne için algılayabiliriz? Denetim mekanizmasını çalışabilmek için.
+
+133
+01:08:46,963 --> 01:09:04,984
+Bunu nasıl yapabiliriz? Belli bir parametre tanımlayarak logları bu şekilde yapabiliriz ya da bir yazımlar vasıtasıyla sistemi aktiviteleri capture eden buna göre anomaliği tespit edip aksiyon üretmesine göre yapabiliriz.
+
+134
+01:09:04,984 --> 01:09:14,963
+Event ya da audit analiz soferlerindeki çıktılara göre biz bunu yapabiliriz.
+
+135
+01:09:14,963 --> 01:09:30,764
+Dolayısıyla buradaki yapı aslında sisteme minimal de olsa etkisi olan fonksiyonları belirleyip bunu kayıt altına alabilmek.
+
+136
+01:09:43,028 --> 01:09:55,948
+Hangi kayıtların audit gereksinimlerinin yönetim tarafından uygun şekilde onaylanması gerekiyor?
+
+137
+01:09:55,948 --> 01:10:05,948
+Yani hangi aktivitelerinin kayıt altına alınacağı, hukuki ya da yönetimsel olarak, bunların ne amaçlarla kayıt alınacağı ile alakalı?
+
+138
+01:10:09,043 --> 01:10:14,123
+Gereksinimlerin yönetim olarak onaylanması aslında birinci adım.
+
+139
+01:10:16,543 --> 01:10:26,144
+Sonrasında ise bu auditlerin teknik olarak test edilmesi ve kontrol edilmesi.
+
+140
+01:10:27,091 --> 01:10:48,171
+Bu kayıtların alınması aslında sisteme belli bir yük bindiriyor. Ya da bu kayıtların tutuluyor olması belki hukuki olarak zorunluluk, belki hukuki olarak KVKK kapsamında bazı kısıtlamalara girebiliyor.
+
+141
+01:10:54,292 --> 01:11:07,792
+Bu konuda hemfikir olunması ve bu testlerden sonra da audit mekanizmasının çalıştığının kontrol edilmesi gerekiyor. Öyle değil mi?
+
+142
+01:11:07,792 --> 01:11:15,792
+Peki, bu testimiz, yani kayıtlarla alakalı testimiz ve kontrollerimiz aslında işleyen sisteme...
+
+143
+01:11:17,171 --> 01:11:40,251
+Sadece okuma yönünde bir ulaşım olması gerekiyor. Yani biz auditle alakalı işlem yaparken sistemin tonometrelerinde yazmak, değiştirmek ya da yazılımlarda yazma değişikliğime gerekmeyen sınırlı read-only değişikliklerle bunu test etmemiz gerekiyor.
+
+144
+01:11:40,251 --> 01:11:44,572
+Yoksa sistemi işlemez hale getirebilme riskimiz de var.
+
+145
+01:11:46,515 --> 01:12:09,215
+Eğer sistemde read-only dışında yazacak, değiştirecek bir yapı yapacak isek ya da yapmamız gerekiyor ise, bunları canlı sistemde değil, izole ortamlarda canlı sistemin kopyaları üzerinde test etmek gerekiyor.
+
+146
+01:12:11,215 --> 01:12:14,215
+Bunları da yaptık. Sonra eğer...
+
+147
+01:12:14,452 --> 01:12:30,712
+Ekstra bir işlemler gerekiyor ise, ekstra donanımlar, ekstra işlemler gerekiyor ise bunlarla alakalı gereksinimleri belirlemek ve bu gereksinimler konusunda da yönetimin onayını almak gerekiyor.
+
+148
+01:12:39,220 --> 01:13:01,280
+Genel audit mekanizmasını devreye aldığımız zaman sisteme oluşturabileceği yükleri belirlemek gerekiyor. Bu yüklere göre bazı aktivitelerin iş saatlerinde değil de mesai saatleri dışında yapmasını.
+
+149
+01:13:02,003 --> 01:13:14,123
+Hangiler mesai dışında yapılacak, hangiler mesai dışında yapılacak bunları belirlemek ve bunları da test etmek gerekiyor.
+
+150
+01:13:29,332 --> 01:13:50,791
+Son adımı. Dolayısıyla bu doküman nereden, biz bunu nereden çıkarttık? Bu da gene ISO 27002. Code for Practice, Information Security yönetimi, Bilgi Güvenliği yönetimi için pratik kodlar, pratik adımlar dokümanında.
+
+151
+01:13:56,372 --> 01:14:05,452
+Bulmanız, ayrıntılarına ulaşmanız mümkün. Biz burada bu slide'da bunu özetlemiş olduk. Şimdi gelelim.
+
+152
+01:14:11,188 --> 01:14:33,068
+Kaydedeceğiz. Peki neyi toplayacağız? Yani neyi kaydedeceğiz? Her şeyi kaydedilmek, kayıt mekanizması da ekstra bir maliyet gerekiyor. Neyi toplayacağımıza, neyi kaydedeceğimize, neyi monitör edeceğimize, neyi denetleyeceğimizin belirlenmesi gerekiyor. Neler olabilir bunlar?
+
+153
+01:14:33,555 --> 01:14:46,775
+Audit yazılımının kullanımdaki alakalı eventler. Yani audit yazılımının kullanımıyla alakalı eventleri kollektedebiliriz.
+
+154
+01:14:46,775 --> 01:14:58,355
+Security Sistem üzerindeki güvenlik mekanizmalarıyla alakalı eventler kontrol edilebilir.
+
+155
+01:15:00,787 --> 01:15:16,108
+Güvenlik algılama ve önleme, çeşitli güvenlik algılama ve önleme mekanizmaları tarihli kullanımları için toplanan veriler olabilir.
+
+156
+01:15:18,608 --> 01:15:25,188
+Sistemin yönetimsel ve operasyonel ile alakalı eventler olabilir.
+
+157
+01:15:27,347 --> 01:15:54,487
+Ulaşım aksesleri olabilir. Uygulamaları, özellikle seçilmiş seçili uygulamalara ulaşım olabilir. Bunlarla alakalı verileri toplayabiliriz ya da uzaktan erişim templerini toparlayabiliriz.
+
+158
+01:15:55,220 --> 01:16:13,220
+Bu gene örnek, audit edilebilecek itemler. Nereden çıkarttık bunu? X86 ITU'nun X816 verisindeki tablolar. Güvenlikle alakalı...
+
+159
+01:16:14,739 --> 01:16:37,439
+Bu seçilebilecekler nedir? Bağlantı talepleri, konfirmedilmiş bağlantılar, bağlantının disconnection talepleri, doğrulanmış disconnectionlar ve bağlantı connection ile alakalı istatistikler.
+
+160
+01:16:40,020 --> 01:17:05,000
+Ya da güvenlik servisiyle alakalı nedir? Güvenlik servis talepleri, güvenlik servis mekanizmalarının kullanımlarını ya da güvenlik alarmlarıyla alakalı eventleri toplayabiliriz. Güvenlikle alakalı yönetimsel olabilir, yönetim operasyonları ya da yönetim notifikasyonları.
+
+161
+01:17:07,380 --> 01:17:25,960
+Ya da en azından reddedilen ulaşımlar, yetkiler, özellik değişmeleri, objekt oluşturma, objekt silme, objekt değiştirme, yetki, privilege ile alakalı, privilege yetki kullanımları.
+
+162
+01:17:29,152 --> 01:17:44,292
+Bu liste tamamen uygulama spesifik. Dolayısıyla sizin kendi sisteminizde buradaki listeleri arttırmanız, azaltmanız mümkün.
+
+163
+01:17:57,140 --> 01:18:15,539
+Bulabilirsiniz. ITU'nun X816 ve İSA'nın 27002. Bu 27002'de tavsiye edilen denetim alanları ne olabilir? Kayıtlarla alakalı.
+
+164
+01:18:24,212 --> 01:18:50,912
+LAR'la alakalı belli anahtar eventler nedir? Mesela logon veya logof faaliyetleri, cihaz kimliği ve lokasyonları, privilijlerin kullanımları, sistem konfigürasyonlarında yapılan değişimler, network adresleri ve bunlarla kullanılan protokoller.
+
+165
+01:18:52,404 --> 01:19:16,304
+Kullanıcıların uygulamalarda yaptığı her türlü transakşonların login, log off ya da veri tabanını seçtiysek tabloya insert, tabloya access, tabloya search etme ya da belli kurallarla listeleme bunlarla alakalı aktiviteleri.
+
+166
+01:19:18,484 --> 01:19:32,543
+Seçip kaydedebiliriz. İki tane doküman dediğim gibi birisi 27002. Dokümanı bize kılavuzluk yapabiliyor. Diğeri ise x816.
+
+167
+01:19:38,515 --> 01:19:51,875
+Evet, şimdi çeşitli log aktiviteleri, bu sistem logları, sistem ile alakalı kayıtlar.
+
+168
+01:19:55,796 --> 01:20:11,796
+Aslında birinci kayıt NIST SP812 dökümanından alınmış kayıtlar aslında bunlar. Neydi bu? İşte 95'te yayınlanan Introduction to Computer Security NIST Handbook'u.
+
+169
+01:20:13,796 --> 01:20:19,855
+Example sistemin audit seviyesiyle alakalı Linux sistemindeki örnekle.
+
+170
+01:20:20,256 --> 01:20:38,556
+Neyi gösteriyor bu? Bu aslında sistem loku. İşte Shell'deki login faaliyetleri, işte root login konsol, shutdown, işte SU komutunu yazmış hatırlarsınız device 2.0'dan.
+
+171
+01:20:47,764 --> 01:20:51,184
+Sistemsel aktivitelerin log edilmesi.
+
+172
+01:20:51,184 --> 01:20:57,612
+Aş B'de ise bir...
+
+173
+01:21:01,524 --> 01:21:23,744
+Mail Sistemi gibi duruyor. Mail Delivery Sistemi'nin logo. Kime ne zaman mail gelmiş, nasıl atılmış, hangi porttan atılmış, bunlarla alakalı kayıtlar. Son kısma ise kronolojik kullanıcıların kullandığı komutları kaydedilmesi.
+
+174
+01:21:28,448 --> 01:21:35,688
+SH komutu, CEO, MEN. Bunlar örnek 800'e.
+
+175
+01:21:43,539 --> 01:22:00,359
+ITU'nun SP800'e 12 dokümanından alınmış örnek log faaliyetleri. Bir başka auditlere, audit trailerine fiziksel akses.
+
+176
+01:22:10,496 --> 01:22:31,636
+Biz bloklara erişeceğiz. Ne için erişeceğiz? Analiz etmek için erişeceğiz. Ne için erişeceğiz? Review yapmak, incelemek için erişeceğiz. Peki bunlara nasıl erişeceğiz? Bunlarla alakalı mekanizma, kartlı sistem olabilir, biyometrik sistem olabilir.
+
+177
+01:22:32,095 --> 01:22:50,095
+Belli bir alarma göre ulaşma olabilir. Dolayısıyla aslında bu logların depolandığı yapıya fiziksel erişme yöntemleri ilgilenilen...
+
+178
+01:22:50,804 --> 01:22:56,003
+Bu erişmeyle alakalı ilgilenilen konular ne olabilir?
+
+179
+01:22:56,503 --> 01:23:03,203
+İşte zaman, gün, saat, konum, kullanıcının erişim talepleri.
+
+180
+01:23:04,584 --> 01:23:12,003
+Veyahut da kabul edilen, yani onaylanan ya da onaylanmalan erişim talepleri.
+
+181
+01:23:12,003 --> 01:23:18,804
+Bu fiziksel olarak audit loklarının eklenmesi değişik.
+
+182
+01:23:18,804 --> 01:23:37,584
+Ya da silinmesi faaliyetleri ya da bunlara ulaşımla alakalı kriviçlere erişim faaliyetleri ya da bu ihlalle alakalı personele mesaj gönderilmesi.
+
+183
+01:23:43,604 --> 01:23:50,884
+Trail'lere, denetim noktalarına erişimiyle alakalı sebeplerimiz alınarak karşımıza çıkıyor.
+
+184
+01:23:56,756 --> 01:24:20,015
+Şimdi gelelim bu RFC 21.96 dokümanı. Bu Side Security Handbook. Burada audit kayıtlarının depolanmasıyla alakalı 3.
+
+185
+01:24:20,948 --> 01:24:43,368
+Bu kayıtların alternatifleri gösteriyor bize. Nasıl yapabiliriz bu kayıtları? Nasıl güvence altına alabiliriz? Birincisi, bu kayıtları sistemde, host üzerindeki sistemde tutabiliriz.
+
+186
+01:24:48,595 --> 01:25:05,095
+Daha az kaynak, ekstra yatırım gerekme için daha az kaynak gerektirir ama Atakir'ler tarafından daha kılgan. Niye? Çünkü sistemde bir zafiyet varsa bloklara da ulaşma imkanı olabilecek demektir.
+
+187
+01:25:11,731 --> 01:25:27,731
+Ama sinilemeyen cihazlarda bunları tutabiliriz. Bir kere kaydılır, birçok kere okuyabilirsiniz ama kesinlikle silemezsiniz. Bu daha güvenli birincisine göre ama...
+
+188
+01:25:28,819 --> 01:25:43,959
+Daha az uygun. Niye? Çünkü bir daha sinirlememesi ise daha büyük kaynaklar kullanmamız gerekiyor. Çünkü kayıtlar arttıkça sürekli yeni kayıt eklenmesi, yeni kayıt alanı eklenmesi.
+
+189
+01:25:47,828 --> 01:26:13,988
+Gerekebilir erişim. Çünkü veri bir kere silindip veri büyüklüğü ya da medya büyüklüğü artacağı için içerisinde arama yapılması, analiz edilmesi, çalışma yapılması ya da özellikle anlık arama yapılması zorlaşabilir.
+
+190
+01:26:14,644 --> 01:26:27,764
+Diğeri ise Read Only Devicesler. Bu ne olabilir? Blokları bir line printerden yazabiliriz.
+
+191
+01:26:34,036 --> 01:26:55,056
+Bu aktiviteler yazılır, kayıt altında dolayısıyla silinmesi gibi bir şey söz konusunda bir medyayı kaydetmiyoruz. Ama bu inconvenient niye? Özellikle büyük network sistemlerde bu tür kayıtlar çok fazla olacağı için ciddi manada israf anlamına geliyor.
+
+192
+01:27:00,916 --> 01:27:25,615
+Hem bütünlüğünün hem de gizliliğinin sağlanması için şifreli medyada bunu kaydır. Aynı yerde ya da başka yerde şifreli olarak kaydırması, dolayısıyla şifrenenmesi, dijital imzayla akses kontrolü, erişim kontrolü denetimi de bu adet kayıtlarının dördüncü yöntemi olarak karşımıza çıkıyor.
+
+193
+01:27:28,051 --> 01:27:35,412
+Şimdi gelelim log'un, log'ların implemente edilmesine, gerçeklenmesine.
+
+194
+01:27:37,912 --> 01:27:54,752
+Aslında audit mekanizmasının, güvenlik audit faaliyetinin ilk adımı audit datasının, başlangıç audit datasının başlangıçta capture edilmesi, alınması.
+
+195
+01:27:55,347 --> 01:28:10,128
+Bunun için demiştik ki belli hooklar ya da capture pointlar tanımlayabiliriz yazılımlara ya da işledim sistemi yazılımı olabilir ya da bizim 3. parti yazılımlara.
+
+196
+01:28:20,467 --> 01:28:40,967
+eventlerimizi depolamaya başlayabiliriz. Bu logging faaliyetleri ya da yetenekleri aslında bütünüyle bizim log yazılımlarımızın ya da uygulama yazılımlarımızın, yoklama yeteneği olan uygulama yazılımlarımızın
+
+197
+01:28:42,479 --> 01:29:03,859
+Yetenekleriyle sınırlar. Dolayısıyla bu loklama kabiliyetleri işletim sisteminin ve uygulamalarına göre değişiklik arz edebiliyor. Dolayısıyla onların yeteneklerini de göz önünde bulundurmamız gerekiyor.
+
+198
+01:29:10,079 --> 01:29:26,219
+Event Log'larına. Event aslında bazı ilginç durumların tanımlanmasına aslında biz event demiş oluyoruz. Bunlar neyi içerebiliyor?
+
+199
+01:29:31,247 --> 01:29:51,287
+Event kimlik kodu, Identification kodu. Bu eventle alakalı özellik seti ekstra olarak da kullanıcının parametre olarak girdiği verileri içeriyor bizim Microsoft'taki event.
+
+200
+01:29:58,547 --> 01:30:25,688
+Dolayısıyla sistemle alakalı uygulamalar ve sürücüler tarafından üretilen log var. İkincisi, aplikasyon uygulama logu, kullanıcı seviyesi uygulamalar. Üçüncüsü ise güvenlik, Windows LSA Security Logu olarak 3 tip Microsoft'a log karşımıza çıkıyor.
+
+201
+01:30:26,899 --> 01:30:44,899
+Windows Event Şeması elementlerini burada Binary Data, Windows Event Log tarafından belirlenen Binary Data, bunlarla alakalı kanal bilgisi,
+
+202
+01:30:50,036 --> 01:31:11,916
+Ne diyeyim mesela, kullanıcı güvenli kimliği. Bu aslında XML formatında Microsoft'un log şeması. Bu şemanın da detaylarını gene Microsoft'la alakalı dokümanlarda kolaylıkla bulabilmeniz mümkün.
+
+203
+01:31:15,412 --> 01:31:36,012
+Windows sistemi tarafından üretilen log'a bir örnek. Sistem tipi audit log, kaynağı güvenlik, kategorisi 1, event id'si, eventin alındığı tarih, zaman, hangi kullanıcı tarafından alınmış, hangi makine.
+
+204
+01:31:58,579 --> 01:32:00,500
+Selamlar. Bende mi kesildi sadece?
+
+205
+01:32:03,539 --> 01:32:05,340
+Hocam, ses ve görüntü alamıyoruz.
+
+206
+01:32:48,595 --> 01:32:49,595
+Hocam, duyamıyoruz.
+
+207
+01:33:05,427 --> 01:33:26,608
+Geliyor mu şimdi sesim arkadaşlar? Evet. Sesim geliyor mu? Sesiniz geldi hocam. Görüntü şimdi geldi. Tamam. Biraz önce network beni attı, tekrar aldı. Kaldığımız yerden devam edelim. İsterseniz şu kapıyı kapatayım.
+
+208
+01:33:30,260 --> 01:33:35,400
+Tekrar ekranı paylaştırıyorum.
+
+209
+01:33:40,595 --> 01:33:42,355
+Evet, [öğrenci]'i görüyoruz.
+
+210
+01:33:44,455 --> 01:33:45,175
+Evet, Hocam.
+
+211
+01:33:45,535 --> 01:33:45,755
+Evet.
+
+212
+01:33:50,739 --> 01:34:17,319
+Windows'un logundan bahsediyoruz. Windows Ent olay kategorileri nedir? Hesaba giriş logları, hesap yönetimi ile alakalı loglar, direktörüye, diske, dizinlere erişim, dizin servislerine erişim logları,
+
+213
+01:34:17,811 --> 01:34:40,291
+O bücülere erişim lokları, politikalardaki değişikliklerle ilgili loklar ya da privilege kullanımıyla alakalı ya da login, login faaliyetleriyle alakalı loklar Microsoft'un loklama yetenekleri olarak karşımıza çıkıyor.
+
+214
+01:34:44,148 --> 01:34:59,568
+Şimdi gelelim Microsoft'dan sonra Linux makinelerine. En sık kullanılan, en yaygın kullanılan iki farklı işletim sistemi olarak Linux'i dikkate alırsak.
+
+215
+01:35:04,435 --> 01:35:22,855
+Linux, genel amaçlı loglama makinesi aslında bütün Unix ya da Linux varyantlarında var. Neler var? SSLogDemon'u, Logger ya da SSConfig ve SSLogDemon.
+
+216
+01:35:32,435 --> 01:35:55,075
+Programlar, SSLog aslında, APIM, birçok sistem utilitiesi tarafından uygulama programlarında desteklenen program.
+
+217
+01:35:55,891 --> 01:36:13,652
+Logger aslında command base, log diziline tek bir satır oluşturmak için, eklemek için. Bunu aslında biz kullanıcı tabanlı bizim belirlediğimiz politikaya göre log yapmak istiyorsak logger komutunu kullanabiliyoruz.
+
+218
+01:36:15,663 --> 01:36:29,343
+Konflikt dosyası aslında bu loglama ve sistemin log eventlerinin yönlendirilmesiyle alakalı kuralların tutulduğu ve belirlendiği dosya.
+
+219
+01:36:29,343 --> 01:36:41,343
+SSLogDemon ise log eventlerini tutan sistem programı.
+
+220
+01:36:44,500 --> 01:36:58,460
+Basic, SSLog, temel servisleri sağlıyor. Ne olarak? Aslında alakalı eventlerin capture edilmesi, depolama faaliyetleri.
+
+221
+01:37:00,884 --> 01:37:17,023
+Ve SSLok mesajlarının veya adır merkezi makinelerdenin davranışları ya da Lok Servisinin davranışlarına göre, belli protokollere göre Loklama faaliyetlerini yapabiliyor.
+
+222
+01:37:17,492 --> 01:37:23,492
+Bu loglama faaliyetlerinde ekstra özellik olarak filtreleme yapabiliriz.
+
+223
+01:37:24,131 --> 01:37:27,211
+SSLog'un verdiği log analizi yapabiliriz.
+
+224
+01:37:28,092 --> 01:37:31,391
+Belli bir eventlere göre cevap mekanizmaları oluşturabiliriz.
+
+225
+01:37:31,832 --> 01:37:45,172
+Alternatif mesaj formatları, log failin encrypt edilmesi, logların bir faile değil de veri tabanına kaydırılması ve belli bir sınır.
+
+226
+01:37:45,492 --> 01:37:54,731
+Koyulması da ekstra eklenebilecek özellikler olarak karşımıza çıkıyor.
+
+227
+01:38:14,195 --> 01:38:25,296
+Log'ların IP üzerinden CSLog Server'ına gönderilmesiyle alakalı mesajlaşma protokolü.
+
+228
+01:38:25,296 --> 01:38:37,376
+Bu California Berkeley Software Distribution, OpenBSD, Linux, TCP IP sistemler için implement edilmiş bir protokol.
+
+229
+01:38:42,163 --> 01:38:55,543
+TCP, IP üzerine konuşan TCP ya da UDP protokolü üzerine geliştirilen bir alt protokol olarak karşımıza çıkıyor. Ne için?
+
+230
+01:38:55,543 --> 01:39:05,543
+Bir, hatırlarsanız ilk baştaki distribütör loklama audit mekanizmasından bahsediyorduk. Bütün sisteme bağlı bütün...
+
+231
+01:39:05,652 --> 01:39:27,471
+Bu, sunucularındaki aktivitelerin merkezi olarak analiz edilebilmesi için bu log verilerinin toparlanması, toplanması gerekiyor. Bunun için de geliştirilmiş protokol, mesajlaşma protokolü. Belkiyle BSD tarafından geliştirilmiş bir protokol.
+
+232
+01:39:32,692 --> 01:39:59,971
+Kodu var. B header var. Hader formatı işte TCP üzerinden kullanıyorsak TCP'nin uygun seçeneklerde bunları network dersinde görmüş ya da biliyor olmanız gerekiyor. Ve payloadta mesaj var. Mesaj da nedir? İşte hangi programa ait bloklar ve blokun içeriği. Dolayısıyla bu bir TCP.
+
+233
+01:40:00,000 --> 01:40:10,620
+Bir paket olarak belirlenip karşı taraftaki CSLog sunucusuna gönderiliyor.
+
+234
+01:40:10,620 --> 01:40:16,300
+Burada CSLogD var, destekleyen burada hatırlarsanız.
+
+235
+01:40:16,420 --> 01:40:23,920
+Bu aslında DEMON, bu tür alışverişi sağlayan mekanizmalar olarak karşımıza çıkıyor.
+
+236
+01:40:28,083 --> 01:40:45,043
+Mesajı. İşte tarihi var. Server birden geliyor. SSHT üzerinden. Accepted Public Key for Server to From. Şu IP'den bir anahtar, güvenlik anahtarı kabulüyle alakalı.
+
+237
+01:40:45,043 --> 01:40:54,103
+Log ile bunları merkezi mesaj olarak DEM'ın sunucuya göndermiş oluyor.
+
+238
+01:40:55,188 --> 01:41:09,188
+Burada da SSLog Fasiltileri ve Güvenlik Seviyeleri karşımıza çıkıyor. İşte kernelle alakalı kullanıcı prosesleri, e-mail sistemleri, sistem...
+
+239
+01:41:09,279 --> 01:41:32,619
+Demon'ları, FTP Demon, DNS Demon, Login Faaliyetleri, Print Faaliyetleri, Clock Demon'ı, FTP Demon'ı, NTP Subsystem'ları. Bunlar Service Log.
+
+240
+01:41:33,043 --> 01:41:36,923
+Seviyeleri ve Linux'taki yapılar, ayrıntılar.
+
+241
+01:41:38,863 --> 01:41:43,884
+Şimdi gelelim. Bakalım saat arkadaşlar 11'deki toplantıya geç kalmayın.
+
+242
+01:41:45,824 --> 01:41:47,183
+Tamam, devam edebiliriz.
+
+243
+01:41:47,583 --> 01:41:56,404
+Şimdi aplikasyon, uygulama seviyesi, loklama faaliyetlerinden birazcık bahsederim.
+
+244
+01:41:59,344 --> 01:42:19,503
+Öncelikli yetkili uygulamaların da oluşabilecek güvenlik olaylarıyla alakalı faaliyetlerden kastediyoruz. Bunlar aslında kullanıcı seviye audit datası olarak capture edilemez.
+
+245
+01:42:24,756 --> 01:42:41,515
+Çünkü uygulamadır bu sistemlerin işitimsel oranı, kullanılan uygulamalardaki sayıflıklar olarak karşımıza çıkıyor.
+
+246
+01:43:00,180 --> 01:43:01,720
+İnessas git dolar.
+
+247
+01:43:09,332 --> 01:43:11,332
+Teşekkürler.
+
+248
+01:43:21,971 --> 01:43:47,931
+Çünkü aslında bir uygulamayı şu şekilde düşünmek gerekiyor. Arka planında uygulamanın erişebildiği bölgeler var. Bir de kullanıcı eğer uygulamaya giriyorsa uygulamanın izin verdiği. Dolayısıyla bazı güvenlikle alakalı hususları biz uygulamaya yüklemiş oluyoruz.
+
+249
+01:43:49,076 --> 01:44:08,296
+Ama eğer uygulamada bir zafiyet varsa, bu zafiyet nedir? Form dolduruyoruz, login ekranımız var ya da SQL injection olabilir ya da programın lojiğinden kaynaklı, işte buffer overflow dediğimiz olay burada karşımıza çıkıyor.
+
+250
+01:44:17,203 --> 01:44:36,203
+Kontrol mekanizmasını bypass edebilirsek ne olacaktır? Aslında programın kendisinin yetkileriyle sisteme ulaşabilir hale geliyoruz. Dolayısıyla uygulamalarının da denetlenmesi, doklanması önemli bir...
+
+251
+01:44:37,108 --> 01:44:58,108
+Ama uygulamaların noklanmasıyla alakalı husus şu, şimdi biz uygulamayı kullanıyoruz ama uygulamayı dünya üzerinde birçok kişiler kullanıyor. Dolayısıyla bunlarla alakalı, bu uygulamalarla alakalı, güvenlikle alacağımız tedbirlerle alakalı audit verisini...
+
+252
+01:45:01,747 --> 01:45:27,500
+Sadece bizim toplandığımız yeterli olmayabilir. Dolayısıyla başka kütüphanelerin de audit için kullanılıyor olmamız gerekiyor. Özellikle uygulamalardaki. Dolayısıyla imporsibular, insert edilebilir kütüphaneler dediğimiz aslında audit'i...
+
+253
+01:45:28,148 --> 01:45:40,628
+Recompile etmeden, audit generation'ı, datalarını recompile etmeden doğrudan insert edilebilen kütüphaneler olarak karşımıza çıkıyor.
+
+254
+01:45:40,628 --> 01:45:48,847
+Çünkü mekanizması aslında burada. Application programımız var.
+
+255
+01:46:47,188 --> 01:46:47,916
+Teşekkürler.
+
+256
+01:47:30,100 --> 01:47:39,819
+Arkadaşlar, tekrar beni attı. Neden kaynaklı bilmiyorum. Burada internette bir sorun yaşıyoruz. Öyle gözüküyor. Geliyor mu sese?
+
+257
+01:47:40,780 --> 01:47:41,079
+Evet.
+
+258
+01:47:41,079 --> 01:47:41,680
+Geliyor, geliyor.
+
+259
+01:47:42,520 --> 01:47:53,100
+Daha sonraki, zaten 11'e de çok az kaldı. Burada bırakalım isterseniz. Bunların sonraki yerler daha çok örnekler üzerinde gidiyor. Bu kısmı siz...
+
+260
+01:47:53,439 --> 01:48:10,420
+İnternete koydum, web sitesine de koydum. Buna bakabilirsiniz. Sorunuz olursa haftaya önce bu kısmı sorularınıza bir cevaplarız. Sonrasında devam ederiz.
+
+261
+01:48:10,420 --> 01:48:17,139
+Haftaya biliyorsunuz sınav haftası. Dolayısıyla haftaya ders yapmayacağız. Sınavda yok.
+
+262
+01:48:17,684 --> 01:48:30,164
+Orada sınav vize saati ilan etmiştir muhtemelen bölüm ama onu lütfen dikkate almayın. Vize yok bu sınavda, bu derste. Tamam mı arkadaşlar?
+
+263
+01:48:30,504 --> 01:48:30,764
+Tamam.
+
+264
+01:48:31,984 --> 01:48:39,144
+Haftaya vize haftası ders yok. Ondan sonraki hafta devam ederiz bir sonraki konuya.
+
+265
+01:48:40,787 --> 01:48:42,247
+Tamam hocam, teşekkür ederim.
+
+266
+01:48:42,627 --> 01:48:58,367
+Sınav, risk raporunu, ondan sonraki hafta, bayramla aradaki hafta. Dolayısıyla bir kısmınız belki bayram tatiliyle, bayram tatiline memleketlerine gidecek arkadaşınız var mı aranızda?
+
+267
+01:48:58,367 --> 01:49:00,007
+Ya da öncesinde.
+
+268
+01:49:00,007 --> 01:49:00,367
+Var hocam.
+
+269
+01:49:02,528 --> 01:49:03,327
+Dolayısıyla.
+
+270
+01:49:03,807 --> 01:49:25,707
+Bu risk raporunu da bayramdan sonraki hafta artık bayramdan sonra yüz yüze yapmaya başlayacağız. İlk yüz yüze yaptığımızda elden getirirsiniz. Sadece elden teslim edenler, orada konuşuruz zaten, elden teslim edenlerden onu değerlendirmiş olacağız. Zaten o ekstra yapılan bir işlemdi.
+
+271
+01:49:27,475 --> 01:49:37,055
+Dolayısıyla bayramdan sonraki yapacağımız ilk yüz yüze dersimizde bu analiz raporlarını alacağız. Tamam mı?
+
+272
+01:49:37,975 --> 01:49:41,416
+Sir, can you repeat about the report, please?
+
+273
+01:49:42,416 --> 01:49:52,175
+I am going to collect the report, the first lecture, which is face to face after bayram.
+
+274
+01:49:52,175 --> 01:49:53,115
+Okay?
+
+275
+01:50:13,108 --> 01:50:18,847
+Evet, Prof. Hujam, what is the deadline for the report?
+
+276
+01:50:19,307 --> 01:50:22,028
+The deadline is after Eid.
+
+277
+01:50:22,587 --> 01:50:24,907
+Tamam, Hujam. Thank you, Hujam.
+
+278
+01:50:25,268 --> 01:50:26,627
+All right.
+
+279
+01:50:26,648 --> 01:50:30,347
+You wanted hard copy?
+
+280
+01:50:30,347 --> 01:50:35,268
+I want to face your face, not by email, so you are going to bring to me.
+
+281
+01:50:35,988 --> 01:50:40,988
+If you missed the lecture, I won't accept the report.
+
+282
+01:51:08,243 --> 01:51:20,503
+Dendi ne? Bayram en iyi. Okey? Okey hocam. Thank you hocam. Hepinize iyi Ramazanlar diliyorum. Sağ olun hocam iyi Ramazanlar. Görüşmek üzere.
+
+283
+01:51:20,503 --> 01:51:21,724
+İyi Ramazanlar hocam.
