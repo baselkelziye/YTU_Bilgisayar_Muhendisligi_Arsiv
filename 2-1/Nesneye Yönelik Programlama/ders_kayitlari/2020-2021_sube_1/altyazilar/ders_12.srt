@@ -1,0 +1,2987 @@
+1
+00:11:10,932 --> 00:11:12,091
+Arkadaşlar günaydın.
+
+2
+00:11:14,012 --> 00:11:17,032
+Sesim geliyor mu acaba? Bir teyit eder misiniz?
+
+3
+00:11:21,748 --> 00:11:23,268
+Geliyor hocam.
+
+4
+00:11:24,128 --> 00:11:24,708
+Tamamdır.
+
+5
+00:11:29,139 --> 00:11:41,019
+Bugün inheritance konusuna devam edeceğiz. Bir önceki dersimizde objeler arasındaki ilişkileri konuşurken inheritance konusuna girmiştik.
+
+6
+00:11:41,019 --> 00:11:54,419
+Inheritance kullanaraktan bir objenin sahip olmuş olduğu özellikleri bir başka obje ne yapabiliyordu?
+
+7
+00:11:55,600 --> 00:12:13,000
+inherit edebiliyordu, alabiliyordu. Bu ilişkiyi kurarken regular classları kullanmıştık. Şimdi ise bu sefer inheritance ilişkisini kurarken bu sefer abstract classları kullanacağız.
+
+8
+00:12:15,091 --> 00:12:21,231
+Şu ana kadar görmüş olduğumuz bütün classlar regular classlı.
+
+9
+00:12:21,231 --> 00:12:29,631
+Yani public class ve class'ın ismi şeklinde bir class'ın description'ını tanımlıyorduk.
+
+10
+00:12:29,831 --> 00:12:33,932
+Daha sonra public class class'ın ismi neyse işte person class'ı.
+
+11
+00:12:34,368 --> 00:12:44,348
+Güzel parantez içerisinde bir kod bloğu açıyorduk ve onun içerisine data member filtleri yazıyorduk bir de member metotları yazıyorduk.
+
+12
+00:12:44,755 --> 00:13:08,795
+Şimdi ise bu sefer bir abstract sınıf konseptini öğreneceğiz. Bir sınıfı abstract olarak tanımlayacağız. Bu durumda da abstract keywordünü kullanaraktan abstract class diye tanımlayacağız. Public abstract class, class'ın ismi. Yine güzel parantez içerisinde bir kod bloğu olacak.
+
+13
+00:13:09,279 --> 00:13:30,139
+Bu abstract class'ların da yine data member field'ları var. Aynı şekilde regular class'lar olduğu gibi. Abstract class'ların da yine member metotları var. Yine regular class'larda olduğu gibi. Sadece abstract class konseptiyle birlikte bazı metotları abstract olarak tanımlayabiliyoruz.
+
+14
+00:13:30,772 --> 00:13:55,731
+Bazı metotları abstract olarak tanımlayabiliyoruz. Bir de abstract class diye tanımlanmış bir class'ın objesini yaratamıyoruz. Bugüne kadar hep bir class'ın objesini nil keyword'üyle yaratmayı öğrenmiştik ve bir class'a herhangi bir şey yaptırmak istiyorsak mutlaka öncelikle onun objesini yaratıp onun sonra metotlarını çağırıyorduk. Şimdi ise
+
+15
+00:13:56,563 --> 00:14:14,563
+Artık abstract class konsepti var. Abstract sınıfın objesini yaratamıyoruz. Peki, niçin abstract sınıfı kullanıyoruz? Abstract sınıfı inheritance relationship'inde kullanıyoruz. Abstract sınıf bizim için...
+
+16
+00:14:16,148 --> 00:14:22,388
+Bundan türüyecek olan alt sınıfların bir templateini oluşturuyor.
+
+17
+00:14:23,208 --> 00:14:31,788
+Abstract sınıfta abstract metot olarak tanımlanmış metotlar alt sınıflarda mutlaka olması gerekiyor.
+
+18
+00:14:31,788 --> 00:14:38,768
+Ve alt sınıflarda bu abstract metotların metot badilerinin mutlaka implement edilmiş olması gerekiyor.
+
+19
+00:14:42,196 --> 00:14:49,475
+Let's get started. So first, let's see the details of the abstract class.
+
+20
+00:14:50,516 --> 00:14:53,436
+Then I will start showing you some examples.
+
+21
+00:14:54,635 --> 00:14:54,776
+Okay.
+
+22
+00:14:58,036 --> 00:15:08,516
+Now, we said that abstract class is a class which is used as a base class and it represents templates for its subclasses.
+
+23
+00:15:08,516 --> 00:15:09,135
+Okay.
+
+24
+00:15:09,779 --> 00:15:23,779
+So we use abstract class in particular the inheritance relationship and the abstract class is a parent class or base class and it is a template for the child classes.
+
+25
+00:15:25,779 --> 00:15:32,779
+Okay. And so we already said that it is forbidden to create instances of an abstract class. Okay.
+
+26
+00:15:34,323 --> 00:15:51,723
+And we said that obviously we can create instance of a subclass and obviously that subclass can be, so that subclass has to be regular class.
+
+27
+00:15:51,723 --> 00:15:52,403
+Okay.
+
+28
+00:15:53,103 --> 00:15:56,763
+Now you can have.
+
+29
+00:15:57,268 --> 00:16:11,528
+And you can have, you can extend or you can inherit from the abstract class and your child class could be also abstract class.
+
+30
+00:16:11,867 --> 00:16:15,427
+Bir abstract sınıfından türemiş olan sınıf yine abstract olabilir.
+
+31
+00:16:16,708 --> 00:16:21,187
+Ondan türemiş yine başka bir sınıf yine abstract olabilir.
+
+32
+00:16:22,227 --> 00:16:30,487
+Ama en nihayetinde kullanacağımız yani objesini kullanacağımız class'ın regular class olması lazım.
+
+33
+00:16:33,967 --> 00:16:45,967
+Yukarıdaki parent abstract class'ları implement eden aşağıda bir tane regular class olacak ki biz bu regular class'ın bir objesini yaratıp bunun üzerinden metotlarını çağırabilelim.
+
+34
+00:16:48,916 --> 00:17:05,155
+Abstract class can have a member fields, as I just told you, just like the concrete classes. Abstract classes can have both concrete and abstract member methods. Okay?
+
+35
+00:17:05,615 --> 00:17:10,975
+And as I told you in abstract class, so we will have method, member methods.
+
+36
+00:17:11,496 --> 00:17:19,475
+And these, some of these member methods can be the regular methods, just like what we use in regular classes.
+
+37
+00:17:19,996 --> 00:17:22,556
+Some of them could be abstract methods.
+
+38
+00:17:24,455 --> 00:17:28,955
+If it is an abstract method, we again use abstract keyword in the method body.
+
+39
+00:17:30,576 --> 00:17:44,539
+Okay.
+
+40
+00:17:48,480 --> 00:18:02,960
+And in the child class, which inherits from the abstract parent class, all the abstract methods must be defined and must be implemented.
+
+41
+00:18:05,100 --> 00:18:05,820
+Let's.
+
+42
+00:18:16,531 --> 00:18:25,531
+Now, when do we need the abstract classes? Now, I just told you that there are two ways of doing...
+
+43
+00:18:26,900 --> 00:18:39,180
+Inheritance, one way, what we learned in the previous lecture, you can use regular classes to create inheritance relationship.
+
+44
+00:18:39,660 --> 00:18:44,100
+One regular class could be parent and one regular class could be child.
+
+45
+00:18:44,100 --> 00:18:51,960
+And you use extends keyword and the child extends the parent class.
+
+46
+00:18:52,723 --> 00:18:59,403
+You can also use abstract classes to create an inheritance relationship.
+
+47
+00:18:59,403 --> 00:19:07,644
+In that case, the parent class has to be abstract class and the child class can be a regular class.
+
+48
+00:19:09,172 --> 00:19:16,612
+Okay, then you can ask if, so why don't we use the regular classes to do the inheritance relationships?
+
+49
+00:19:17,172 --> 00:19:22,811
+So why do we need the abstract class way of doing the inheritance relationship?
+
+50
+00:19:23,231 --> 00:19:23,331
+Okay.
+
+51
+00:19:24,451 --> 00:19:24,991
+Now,
+
+52
+00:19:25,875 --> 00:19:33,715
+When we create the inheritance relationship, remember, we are creating an inheritance tree.
+
+53
+00:19:34,395 --> 00:19:42,316
+So there is a parent class, then there is a child class, and then grandchild class, and so on.
+
+54
+00:19:42,955 --> 00:19:48,016
+So we create an inheritance tree as we implement the inheritance relationship.
+
+55
+00:19:48,016 --> 00:19:48,836
+Okay?
+
+56
+00:19:49,556 --> 00:20:11,036
+And when we talked about the inheritance relationship, we said that there is the generalization and specialization relationship, which means that the parent usually is a generalized class, okay, and the child is a more specialized class, okay.
+
+57
+00:20:11,036 --> 00:20:12,395
+And
+
+58
+00:20:12,784 --> 00:20:34,144
+When we do our implementation, sometimes the inheritance tree becomes too high, okay, maybe three level, maybe four level, okay, maybe even two level, okay, and the parent class, okay, turned out to be a very general class.
+
+59
+00:20:34,144 --> 00:20:39,463
+You don't even need to create an instance of the parent class, okay.
+
+60
+00:20:41,556 --> 00:20:58,536
+So, therefore, if there is no need to create the instance of the parent class, then we prefer to implement that as an abstract class.
+
+61
+00:20:58,536 --> 00:20:59,796
+Okay.
+
+62
+00:21:00,796 --> 00:21:01,736
+Now,
+
+63
+00:21:03,571 --> 00:21:18,672
+Abstract class is a template, you can consider that as a template because it consists of some methods that are defined as abstract and method body of those abstract methods do not need to be implemented.
+
+64
+00:21:19,591 --> 00:21:19,811
+Okay.
+
+65
+00:21:21,431 --> 00:21:22,112
+Now,
+
+66
+00:21:24,500 --> 00:21:31,099
+For example, if you have a generalized class, so let's take a look at this example.
+
+67
+00:21:31,500 --> 00:21:39,599
+For example, here in this UML diagram, the parent class is a print driver.
+
+68
+00:21:40,519 --> 00:21:42,440
+And it is defined as an abstract.
+
+69
+00:21:43,820 --> 00:21:46,440
+Now, a print driver...
+
+70
+00:21:46,996 --> 00:21:54,436
+is a generalized class and it is so generalized you don't know the implementation of print methods.
+
+71
+00:21:55,316 --> 00:22:09,836
+Okay, you know that print driver must have a method called print, but you don't know the implementation of the print method in the print driver because it's a generalized method.
+
+72
+00:22:10,324 --> 00:22:11,884
+It's a generalized class.
+
+73
+00:22:12,983 --> 00:22:14,764
+And look at the child classes.
+
+74
+00:22:14,983 --> 00:22:16,983
+There is a PCL6 driver.
+
+75
+00:22:17,463 --> 00:22:21,423
+This is a specialized driver which extends the print driver.
+
+76
+00:22:22,963 --> 00:22:23,284
+Okay.
+
+77
+00:22:23,744 --> 00:22:28,923
+And for PCL6 driver, we know the implementation.
+
+78
+00:22:29,551 --> 00:22:53,451
+Okay. So therefore, if in the generalized class we don't know the implementation, but we know that any class that extends or that inherits from the print driver must have print method in it, then we define that method as an abstract method and we write the implementation of that method in the child class.
+
+79
+00:22:53,451 --> 00:22:54,731
+Okay.
+
+80
+00:22:55,731 --> 00:23:07,731
+Eğer arkadaşlar bir inheritance ilişkisi kuruyorsak ve üst sınıfta, üst sınıfta kullandığımız, parent sınıfta kullanmış olduğumuz sınıf,
+
+81
+00:23:08,531 --> 00:23:32,411
+Genel bir sınıf ise ve bu genel sınıfın bazı metotlarını implement edemiyorsak ya da implement etmek anlamsız kalıyorsa bu durumda bu metotları abstract diye tanımlayıp bunların Charles sınıflarında implement edilmesini sağlıyoruz.
+
+82
+00:23:32,980 --> 00:23:38,480
+Buradaki örnekte print driver print metodunu içeriyor.
+
+83
+00:23:38,820 --> 00:23:45,400
+Diyoruz ki print driver olacak. Print driver'dan türemiş bütün sınıflar print metodu içermeli.
+
+84
+00:23:46,400 --> 00:23:59,400
+Ama her bir farklı printer farklı bir print implementasyonu içerdiğinden bunları chart classların içinde implement etmem gerekli.
+
+85
+00:23:59,796 --> 00:24:02,876
+parent class'ın içerisinde implement edemem.
+
+86
+00:24:03,516 --> 00:24:12,175
+Hani eskiden regular class'ta olduğu zaman print metodunu mutlaka regular class içerisinde de implement ediyordum.
+
+87
+00:24:12,516 --> 00:24:13,716
+Çünkü regular metoddu.
+
+88
+00:24:15,016 --> 00:24:21,695
+Ama burada sadece metodun description'ını yazıyorum.
+
+89
+00:24:21,695 --> 00:24:25,516
+Metodun body'sini yazmıyorum. Az sonra örneklerde göreceksiniz.
+
+90
+00:24:27,155 --> 00:24:27,635
+Okay.
+
+91
+00:24:29,895 --> 00:24:35,635
+And when we define an abstract class in the UML diagram, so we use this notation.
+
+92
+00:24:35,635 --> 00:24:36,475
+Okay.
+
+93
+00:24:37,811 --> 00:24:57,011
+Arkadaşlar, in order to identify that this class is an abstract class. As you see in the regular class, okay, I didn't have this notation right above the name of the class. Now, in order to differentiate an abstract class from regular class, you see that I use this abstract keyword.
+
+94
+00:25:00,031 --> 00:25:04,051
+Arkadaşlar, now let's take a look at how abstract class is being implemented.
+
+95
+00:25:05,268 --> 00:25:08,788
+Now, this is the example from this.
+
+96
+00:25:09,088 --> 00:25:12,447
+OK, first, let's take a look at the code for print driver.
+
+97
+00:25:12,988 --> 00:25:13,108
+OK.
+
+98
+00:25:14,748 --> 00:25:19,128
+As you see in the description of the print driver, you see the abstract keyword.
+
+99
+00:25:19,608 --> 00:25:24,648
+OK, abstract keyword comes before class, public abstract class print driver.
+
+100
+00:25:27,148 --> 00:25:27,748
+OK.
+
+101
+00:25:28,756 --> 00:25:35,596
+And you see that it has two methods. One is the init spoiler. The other one is the print method.
+
+102
+00:25:36,376 --> 00:25:43,656
+Now, the init spoiler is just the regular method, just like what we use in the regular classes.
+
+103
+00:25:44,436 --> 00:25:52,656
+Okay. You see that public work init spoiler and it's a regular method. That's why it must have a method body.
+
+104
+00:25:53,996 --> 00:25:55,656
+But the print method...
+
+105
+00:25:55,855 --> 00:25:59,816
+As you see, in the UML diagram, it is defined as abstract.
+
+106
+00:26:00,395 --> 00:26:06,016
+And if you define a method in a UML diagram as an abstract, this is the notation that we use.
+
+107
+00:26:06,135 --> 00:26:12,916
+We use column and then in curly parenthesis, we use the abstract keyword.
+
+108
+00:26:12,916 --> 00:26:13,916
+Okay.
+
+109
+00:26:14,675 --> 00:26:18,315
+Now, you see that this is public void print.
+
+110
+00:26:19,315 --> 00:26:19,855
+Okay.
+
+111
+00:26:20,795 --> 00:26:22,955
+It takes one parameter.
+
+112
+00:26:23,295 --> 00:26:30,596
+And since it's an abstract method, just before the return type, which is void, I will write abstract.
+
+113
+00:26:31,895 --> 00:26:35,516
+And since an abstract method, we don't have the method body.
+
+114
+00:26:36,315 --> 00:26:36,615
+Okay.
+
+115
+00:26:39,028 --> 00:26:43,688
+Now, let's take a look at the child class, which extends the parent class.
+
+116
+00:26:43,688 --> 00:26:46,508
+The child class is similar.
+
+117
+00:26:46,968 --> 00:26:56,648
+The child class description is exactly the similar, the inheritance relationship in the regular classes.
+
+118
+00:26:57,327 --> 00:27:00,748
+As you see, there is no difference.
+
+119
+00:27:00,867 --> 00:27:06,688
+We use the extends keyword, and this particular class extends the...
+
+120
+00:27:07,028 --> 00:27:08,427
+Arkadaşlar, parent class.
+
+121
+00:27:09,168 --> 00:27:19,768
+Arkadaşlar, and now in the child class, you see that this child class must have the print method because the print method is defined as an abstract.
+
+122
+00:27:20,148 --> 00:27:32,327
+Arkadaşlar, therefore, the child class must have the print method and that print method needs to be implemented, which means that this method must have a method body.
+
+123
+00:27:33,875 --> 00:27:43,315
+And since there is an inheritance relationship between these two, the chart class PCI6 driver will inherit this method in its spoiler.
+
+124
+00:27:43,855 --> 00:27:47,435
+Okay. It will use as if it is own method.
+
+125
+00:27:49,135 --> 00:27:51,516
+Okay. Evet [öğrenci], seni dinliyorum.
+
+126
+00:27:52,695 --> 00:27:54,435
+All right yapmamız gerekmez miyiz hocam?
+
+127
+00:27:55,935 --> 00:27:56,835
+Init spoiler mı?
+
+128
+00:27:58,548 --> 00:27:59,387
+Print.
+
+129
+00:28:01,067 --> 00:28:03,008
+Şu an yaptığımız zaten...
+
+130
+00:28:03,008 --> 00:28:03,188
+Evet.
+
+131
+00:28:03,628 --> 00:28:07,128
+Yani print metodu ne yaptık? Aşağıda implement ettik.
+
+132
+00:28:09,268 --> 00:28:12,788
+Anladım. Overwrite keyword'ı yazmamız gerekmiyor yani.
+
+133
+00:28:13,028 --> 00:28:27,028
+Yok. Overwrite bir de overload'ı iki tane kelime öğrenmiştik. Bunlar hani abstract gibi kullandığımız yani Java'nın sintaks ya da extends gibi Java'nın sintaksinde olan keyword'ler değil.
+
+134
+00:28:27,667 --> 00:28:44,728
+Bunlar sadece konsept olarak öğrendik. Eğer bir chart class'daki bir metot üstteki metodun aynı signature'ına sahipse, yani onun implement ediyorsa, bu durumda o metot üstteki metodu override ediyor dedik.
+
+135
+00:28:45,236 --> 00:28:48,556
+Ama onun için bir keyword kullanmıyoruz. Sadece konsepte dedik.
+
+136
+00:28:48,976 --> 00:28:49,516
+Anladım hocam.
+
+137
+00:28:49,635 --> 00:28:54,416
+Overloading diye bir terim kullanmıştık. Onu da şu şekilde tanımlamıştık.
+
+138
+00:28:54,876 --> 00:29:01,356
+Aynı sınıf içerisinde ismi aynı olan iki tane metot varsa ama signature'ları farklı olmalı.
+
+139
+00:29:01,776 --> 00:29:05,016
+Ya return type'ı farklıdır.
+
+140
+00:29:05,436 --> 00:29:08,496
+Yahut da işte aldığı argümentin type'ı farklıdır.
+
+141
+00:29:08,856 --> 00:29:12,396
+O zaman o metodu overload etmiş oluyoruz.
+
+142
+00:29:12,884 --> 00:29:15,764
+Hatırladım hocam, teşekkür ederim.
+
+143
+00:29:19,188 --> 00:29:19,647
+Ok.
+
+144
+00:29:25,491 --> 00:29:45,731
+Now, multiple, so now that we learned how the, how we can do inheritance relationship with an abstract class, before I start showing you some examples of this, so let's talk about multiple inheritance.
+
+145
+00:29:46,392 --> 00:29:52,851
+Now, so far, in the examples that you have seen, all the time,
+
+146
+00:29:53,428 --> 00:29:56,228
+And when you see the extends keyword.
+
+147
+00:29:57,228 --> 00:30:02,248
+You see that after extends keyword, there is only one parent class.
+
+148
+00:30:02,248 --> 00:30:03,768
+So which means that.
+
+149
+00:30:05,048 --> 00:30:09,268
+One child class can extend only one parent class.
+
+150
+00:30:10,108 --> 00:30:10,348
+Okay.
+
+151
+00:30:10,568 --> 00:30:14,348
+You see that one child class can extend only one parent class.
+
+152
+00:30:14,508 --> 00:30:18,828
+One child class can extend only one parent class.
+
+153
+00:30:19,468 --> 00:30:19,688
+Okay.
+
+154
+00:30:21,172 --> 00:30:27,351
+Now, you can ask this question, can I have a child class that extends to different classes?
+
+155
+00:30:28,351 --> 00:30:33,111
+As you see, this one has two parents, okay, student and employee.
+
+156
+00:30:34,612 --> 00:31:00,092
+Arkadaşlar, okay. Now, in object-oriented programming languages, okay, so do not allow this multiple inheritance capability. Now, the reason is this, okay. Now, let's think of this particular case. Now, here you see
+
+157
+00:31:00,468 --> 00:31:25,468
+A person as the parent class. OK, and from parent class, you see that I have two child classes that inherited from the person class. OK, now this is what we have seen so far. There is nothing wrong with this. OK, now let's see that this person has introduced self methods. OK.
+
+158
+00:31:26,195 --> 00:31:36,096
+Arkadaşlar, and it could be an abstract method, introduce self. In that case, student must have the introduce self method and the employee must have the introduce self method.
+
+159
+00:31:36,875 --> 00:31:47,556
+Now, let's say that there is a child method and that extends both student class and employee class.
+
+160
+00:31:48,180 --> 00:32:13,460
+And in that case, in the assistant student, okay, if you wanted to have introduced self methods, then how the Java virtual machine will not understand whether this introduced self method is going to overwrite the introduced self method in student or introduced self method in employee.
+
+161
+00:32:14,320 --> 00:32:14,920
+Okay.
+
+162
+00:32:15,571 --> 00:32:18,991
+Now, this is called diamond inheritance problem.
+
+163
+00:32:18,991 --> 00:32:25,172
+Okay, this is because its shape is like diamond, therefore it's a diamond inheritance problem,
+
+164
+00:32:25,912 --> 00:32:33,192
+because the grandchild does not know which of the parents' method it needs to implement.
+
+165
+00:32:34,351 --> 00:32:43,471
+So, therefore, by using the regular class's inheritance or by using the abstract class's inheritance,
+
+166
+00:32:43,571 --> 00:32:47,291
+I showed you two different ways of doing inheritance.
+
+167
+00:32:47,711 --> 00:32:55,831
+So we don't allow multiple inheritance, which means that a child class cannot have both parents at the same time.
+
+168
+00:32:55,831 --> 00:32:56,591
+Okay.
+
+169
+00:32:57,392 --> 00:33:02,392
+So we will learn interfaces later.
+
+170
+00:33:03,092 --> 00:33:24,812
+Arkadaşlar, in order to support the multiple inheritance, but by using the regular classes and by using the abstract classes when we created the inheritance, so we don't have multiple inheritance, which means that after extends always there is only one class name.
+
+171
+00:33:24,812 --> 00:33:25,652
+Okay.
+
+172
+00:33:26,996 --> 00:33:34,596
+Now, so one of you raised your hand so you can ask your question.
+
+173
+00:33:37,236 --> 00:33:43,076
+Arkadaşlar, biriniz el kaldırdı. Sorusu olan varsa sorabilir.
+
+174
+00:33:51,988 --> 00:33:54,228
+Okey. Şu anda
+
+175
+00:33:54,228 --> 00:33:57,528
+göremedim. Vazgeçti herhalde.
+
+176
+00:33:59,088 --> 00:33:59,408
+Okey.
+
+177
+00:34:05,460 --> 00:34:06,599
+Um...
+
+178
+00:34:10,708 --> 00:34:21,188
+Let's take a look at an example of how we do inheritance relationship by using abstract classes.
+
+179
+00:34:22,768 --> 00:34:33,528
+Now, in this particular case, we have an example where we have, in this example, we have items for children.
+
+180
+00:34:34,835 --> 00:34:38,195
+And items could be either toy or clothing.
+
+181
+00:34:40,135 --> 00:34:48,935
+And we want to give these items to the kids, to the children in the kindergarten.
+
+182
+00:34:52,884 --> 00:34:59,123
+And some of the items are suitable for the kids and some not.
+
+183
+00:34:59,984 --> 00:35:00,324
+Okay.
+
+184
+00:35:00,903 --> 00:35:10,923
+Some toys have age limit or some clothing has minimum month limit, maximum month limit.
+
+185
+00:35:10,923 --> 00:35:17,064
+So you would like to give the toy or the clothing to the right person.
+
+186
+00:35:17,844 --> 00:35:17,943
+Okay.
+
+187
+00:35:20,884 --> 00:35:22,244
+Bir saniye arkadaşlar.
+
+188
+00:35:45,108 --> 00:35:47,427
+Okey. Sesim geliyor mu arkadaşlar?
+
+189
+00:35:53,619 --> 00:35:54,460
+Geriye hocam.
+
+190
+00:35:56,659 --> 00:35:57,380
+Okay.
+
+191
+00:35:59,840 --> 00:36:08,619
+So, we would like to have a program that would give the...
+
+192
+00:36:09,139 --> 00:36:12,639
+corresponding items to the right children.
+
+193
+00:36:13,639 --> 00:36:21,079
+Now, here you see that I have an item class and it is defined as an abstract.
+
+194
+00:36:21,420 --> 00:36:28,479
+You see that in order to identify that it's an abstract class, you see the abstract keyword on top of it.
+
+195
+00:36:30,516 --> 00:36:35,436
+And I have member field methods for this abstract class, barcode and description.
+
+196
+00:36:35,635 --> 00:36:36,815
+They both have string time.
+
+197
+00:36:38,076 --> 00:36:41,956
+And if you look at the methods, you see that I have four methods.
+
+198
+00:36:42,615 --> 00:36:46,476
+Item, so which is the call structure.
+
+199
+00:36:47,195 --> 00:36:49,076
+It takes two parameters.
+
+200
+00:36:50,496 --> 00:36:50,756
+Okay.
+
+201
+00:36:52,115 --> 00:36:56,175
+And I have get method for barcode.
+
+202
+00:36:56,296 --> 00:36:57,996
+I have get method for description.
+
+203
+00:36:59,256 --> 00:37:03,256
+And all these three methods are regular methods.
+
+204
+00:37:04,175 --> 00:37:07,735
+OK, even though they are in the abstract class, they are regular methods.
+
+205
+00:37:09,536 --> 00:37:14,576
+So therefore, these three methods must have the method body as we implement it.
+
+206
+00:37:15,296 --> 00:37:19,175
+Now, the fourth method is defined as an abstract method.
+
+207
+00:37:20,019 --> 00:37:31,480
+Okay, now this means that there will be no method body for the is suitable methods in the abstract in the abstract item class.
+
+208
+00:37:33,460 --> 00:37:37,739
+Now you see that I have two classes that extends the item.
+
+209
+00:37:38,860 --> 00:37:39,619
+Okay.
+
+210
+00:37:40,340 --> 00:37:43,199
+And which means that the toy class.
+
+211
+00:37:44,019 --> 00:37:52,460
+will have or must implement the is suitable method in the toy class.
+
+212
+00:37:52,460 --> 00:37:58,680
+And clothing must implement the is suitable method in the clothing class.
+
+213
+00:37:59,100 --> 00:37:59,519
+Okay.
+
+214
+00:38:00,148 --> 00:38:10,028
+Now, as you see, I have not shown, I hit some details, I have not shown the methods in the toy and clothing classes.
+
+215
+00:38:10,028 --> 00:38:16,668
+I just showed the name of the class and also I just showed the data member fields.
+
+216
+00:38:17,108 --> 00:38:24,007
+But in the exam, I want you to also show the member methods of the classes.
+
+217
+00:38:25,972 --> 00:38:30,952
+If I ask you to write the UML diagram, of course.
+
+218
+00:38:32,652 --> 00:38:52,072
+Now, you see that this item in the method body, okay, in the method sections of the item class, one of the method, which is a suitable method, is using the child class, okay, as a type.
+
+219
+00:38:52,532 --> 00:39:00,972
+So therefore, there is a dependency relationship, which means that item class is dependent on the child class.
+
+220
+00:39:01,752 --> 00:39:13,832
+Okay. Now, if this was an association relationship, then this child, there has to be one member field where the type is child.
+
+221
+00:39:14,132 --> 00:39:19,292
+But since there is no member field with the child type,
+
+222
+00:39:19,699 --> 00:39:28,659
+So, therefore, there is a dependency relationship because the child type is being used in the method body of the item class.
+
+223
+00:39:30,000 --> 00:39:34,659
+Now, look at the child class and the kindergarten relationship.
+
+224
+00:39:36,039 --> 00:39:36,659
+And this is...
+
+225
+00:39:38,195 --> 00:39:40,675
+Again, association relationship.
+
+226
+00:39:41,916 --> 00:39:48,775
+So one kindergarten will have zero or more child.
+
+227
+00:39:49,456 --> 00:39:49,596
+Okay.
+
+228
+00:39:50,055 --> 00:39:55,655
+And we learn two versions of association relationship, aggregation and composition.
+
+229
+00:39:56,195 --> 00:40:00,000
+And this looks like composition relationship because one child.
+
+230
+00:40:00,000 --> 00:40:07,300
+Can only belong to one kindergarten and one kindergarten might have zero or more child.
+
+231
+00:40:08,420 --> 00:40:08,659
+Okay.
+
+232
+00:40:09,699 --> 00:40:12,460
+And the child class has two.
+
+233
+00:40:14,291 --> 00:40:20,572
+Member fields, one of them is the name and it is defined as final, the other one is age in months.
+
+234
+00:40:20,572 --> 00:40:21,211
+Okay.
+
+235
+00:40:21,851 --> 00:40:27,751
+And the kindergarten has two methods, add child and find oldest child.
+
+236
+00:40:28,471 --> 00:40:36,371
+So let's take a look at the implementation of the abstract class item.
+
+237
+00:40:38,003 --> 00:40:42,603
+Now, you see that we use abstract keyword in front of the class.
+
+238
+00:40:42,923 --> 00:40:43,063
+Okay.
+
+239
+00:40:43,264 --> 00:40:46,903
+So, therefore, the only difference in the abstract class's definition.
+
+240
+00:40:47,483 --> 00:40:47,724
+Okay.
+
+241
+00:40:48,023 --> 00:40:50,684
+We use the abstract keyword in front of the class.
+
+242
+00:40:50,684 --> 00:40:54,224
+And then this class turns out to be an abstract class.
+
+243
+00:40:55,860 --> 00:41:03,860
+Okay, and we said that just like the regular classes, abstract class will have member fields.
+
+244
+00:41:04,380 --> 00:41:13,720
+As you see, the first line is here is the member fields, and it is already shown in the UMLN account.
+
+245
+00:41:14,340 --> 00:41:18,260
+It has two member data fields and the data type is string.
+
+246
+00:41:18,260 --> 00:41:23,820
+Okay, so two member fields, data type is string.
+
+247
+00:41:23,860 --> 00:41:28,539
+And we always define it as private when you remember.
+
+248
+00:41:28,820 --> 00:41:34,840
+OK, I could I could also define as protected if I define as protected.
+
+249
+00:41:36,211 --> 00:41:44,372
+Then the value of the data member field can also be accessed directly from the child classes as well.
+
+250
+00:41:45,251 --> 00:41:50,471
+But we want these values to be accessed through the methods of the parent class.
+
+251
+00:41:50,632 --> 00:41:52,851
+So therefore, we want to be defined as private.
+
+252
+00:41:55,092 --> 00:42:08,492
+Now look at the public method. So constructor, this constructor has two parameter constructor. And you see that we initialize the member data fields in the constructor.
+
+253
+00:42:11,311 --> 00:42:17,391
+And then we have two getter methods, one for barcode, the other one for description.
+
+254
+00:42:20,820 --> 00:42:36,180
+Arkadaşlar, and this, the fourth method actually, here is suitable method and it is defined as abstract method. You see that we add abstract keyword in the description of this method.
+
+255
+00:42:37,140 --> 00:42:42,100
+Arkadaşlar, and you see in the abstract method, there is no method body.
+
+256
+00:42:42,708 --> 00:42:50,047
+We don't have the method body because we want the child classes implement this particular is suitable method.
+
+257
+00:42:51,387 --> 00:43:05,088
+Okay, now if a method is defined as an abstract method, all the child classes that extends this parent class must have the abstract method implemented.
+
+258
+00:43:06,452 --> 00:43:12,332
+They all must implement the abstract method in the parent class.
+
+259
+00:43:16,724 --> 00:43:25,324
+Now, let's take a look at the clothing class that extends the parent abstract class.
+
+260
+00:43:26,984 --> 00:43:34,543
+Now, let's go back to the UML diagram.
+
+261
+00:43:34,704 --> 00:43:43,984
+You see that it has two global member fields, min-max, min-month-limit, max-month-limit.
+
+262
+00:43:45,748 --> 00:43:51,228
+And so here I'm defining these global member fields where the type is integer.
+
+263
+00:43:52,427 --> 00:43:56,507
+And you see that this clothing extends the item.
+
+264
+00:43:57,847 --> 00:43:57,988
+Okay.
+
+265
+00:43:58,347 --> 00:44:05,667
+The child class implementation is exactly as if we are doing the inheritance with regular classes.
+
+266
+00:44:06,708 --> 00:44:14,587
+Now look at the constructor. Constructor takes one, two, three, four parameters.
+
+267
+00:44:16,028 --> 00:44:29,988
+Now the two parameters are being called, are being set to the member fields of the parent class. Remember.
+
+268
+00:44:30,931 --> 00:44:42,931
+All the member fields of the parent class are also the member fields of the clothing class because the clothing class inherits these member data fields from the parent class.
+
+269
+00:44:43,091 --> 00:44:56,131
+So therefore, even though I only have two global member fields here, in fact, since there are two global member fields that comes from the item class, okay, I can also use them here.
+
+270
+00:44:57,043 --> 00:45:08,344
+But in order to set the values of these barcode and description data member fields, I have to use the parent class constructor.
+
+271
+00:45:09,724 --> 00:45:09,983
+Okay.
+
+272
+00:45:11,123 --> 00:45:20,423
+So therefore, I use super, which is calling the parents constructor, and I'm passing barcode and description.
+
+273
+00:45:21,043 --> 00:45:33,203
+Arkadaşlar, okay? So this way I am setting the values for barcode and description that I inherit from the parent class.
+
+274
+00:45:34,363 --> 00:45:43,523
+Arkadaşlar, then I set the values of min-max limit and max-max limit to initialize the values of the global member fields.
+
+275
+00:45:43,523 --> 00:45:44,323
+Arkadaşlar, okay?
+
+276
+00:45:46,324 --> 00:45:54,144
+Now, remember, clothing is extending the item class and item is an abstract class.
+
+277
+00:45:54,284 --> 00:46:00,804
+Therefore, all the abstract methods of the item class must be implemented in the child class.
+
+278
+00:46:02,083 --> 00:46:10,644
+Bütün parent'teki abstract olarak tanımlanmış olan parent'teki bütün abstract metotlar arkadaşlar child class'ta implement edilmek zorunda.
+
+279
+00:46:12,532 --> 00:46:17,211
+Dolayısıyla isSuitable için burada bir metodumuz var.
+
+280
+00:46:18,211 --> 00:46:23,711
+And I must have isSuitable method and isSuitable method must have method body.
+
+281
+00:46:23,912 --> 00:46:27,052
+So in the purely parenthesis, I must have method body.
+
+282
+00:46:28,912 --> 00:46:36,452
+And isSuitable method, as you see, is taking an object child.
+
+283
+00:46:37,268 --> 00:46:41,148
+Arkadaşlar, object where the type is child.
+
+284
+00:46:41,148 --> 00:46:41,827
+Arkadaşlar, okay.
+
+285
+00:46:42,327 --> 00:46:55,547
+Arkadaşlar, and now in the method body of is suitable, when I get the object reference for child object, I call get age in methods of that child object.
+
+286
+00:46:56,628 --> 00:47:02,088
+Arkadaşlar, and I compare it with whether it is above month limit.
+
+287
+00:47:03,092 --> 00:47:08,052
+And I also compared it is less than maximum limit.
+
+288
+00:47:08,412 --> 00:47:08,632
+Okay.
+
+289
+00:47:08,972 --> 00:47:12,311
+I have mean month limit and maximum limit, month limit.
+
+290
+00:47:12,632 --> 00:47:20,112
+I'm checking whether this child, child age in months is between this range.
+
+291
+00:47:20,852 --> 00:47:25,612
+If yes, then this, this clothing is suitable and I'm returning true.
+
+292
+00:47:25,731 --> 00:47:28,112
+Otherwise, this clothing is not suitable.
+
+293
+00:47:28,112 --> 00:47:29,311
+I am returning false.
+
+294
+00:47:32,244 --> 00:47:36,563
+Now, let's take a look at the other child class, toy class.
+
+295
+00:47:37,764 --> 00:47:39,844
+Now, toy is also extending item.
+
+296
+00:47:43,539 --> 00:47:51,960
+And the toy has a global member field, min h limit. Its type is integer.
+
+297
+00:47:53,108 --> 00:48:00,648
+And toy also has a constructor and it has one, two, three parameter constructor.
+
+298
+00:48:01,368 --> 00:48:10,008
+And it's just like the clothing class and toy is extending the item class.
+
+299
+00:48:10,148 --> 00:48:15,628
+Therefore, it is inheriting the global member fields from the item class, barcode and description.
+
+300
+00:48:16,268 --> 00:48:20,688
+So therefore, we need to initiate the values of barcode and description.
+
+301
+00:48:21,108 --> 00:48:35,268
+How can we do that? We call the parent superclass. OK. And then I set the value of min age limit to the global member fields. OK.
+
+302
+00:48:37,876 --> 00:48:47,815
+And after that, I have this isSuitable method because I must have this isSuitable method because the parent class has an abstract isSuitable method.
+
+303
+00:48:48,315 --> 00:48:52,175
+So therefore, I must have isSuitable method implemented in the child class.
+
+304
+00:48:54,900 --> 00:49:20,960
+Arkadaşlar, in order to check whether that this particular toy object is suitable for this child, what I do is that I divide the child's age, which is given in age in months by 12 in order to find the child's age in year.
+
+305
+00:49:21,396 --> 00:49:41,716
+Instead of in months. Okay. Child get age in months divided by 12. That gives me the child's age in year. And I check whether this is above the mean age limit. Okay. For this item. If yes, then I return true, which says it's suitable. Otherwise, I return false.
+
+306
+00:49:44,076 --> 00:49:44,676
+Okay.
+
+307
+00:49:47,476 --> 00:49:52,356
+Now let's take a look at some examples.
+
+308
+00:49:53,636 --> 00:49:57,076
+But before I do that, so I want to give a break.
+
+309
+00:49:57,976 --> 00:50:02,796
+And for 10 minutes, then I will start with some examples.
+
+310
+00:50:04,936 --> 00:50:07,276
+Arkadaşlar, bu arada sorusu olan varsa sorabilir.
+
+311
+00:50:15,123 --> 00:50:19,723
+Okey. Saatim 9.42 geçiyor. 9.52 geçe devam edeceğim.
+
+312
+01:00:48,019 --> 01:00:51,800
+Evet arkadaşlar, devam edelim. Sesim geliyor mu acaba? Bir teyit eder misiniz?
+
+313
+01:00:53,840 --> 01:00:54,820
+Geliyor hocam.
+
+314
+01:00:55,640 --> 01:00:55,860
+Tamam.
+
+315
+01:00:57,559 --> 01:01:01,780
+Az önce gördüğümüz örneğe bir bakalım tekrardan.
+
+316
+01:01:02,640 --> 01:01:14,800
+Çar sınıfını görmüştük. Çar sınıfının kodunu az önceki örnekte, daha doğrusu az önceki örnekte clothing item.
+
+317
+01:01:15,443 --> 01:01:31,303
+Bir de toy örneklerini, kodlarını göstermiştim. Hani child sınıfının kodları da burada. Regular bir sınıf. İki tane member field'ı var. Bir tanesi final tanımlanmış.
+
+318
+01:01:33,780 --> 01:01:43,639
+Hatırlarsanız bir member field final tanımlandığı zaman ilk defa değeri atandıktan sonra bir daha bunun değeri değiştirilmiyor.
+
+319
+01:01:44,720 --> 01:01:50,240
+Yani bunun için bir tane setter metodu ayrıca implement etmiyoruz.
+
+320
+01:01:50,240 --> 01:01:55,740
+İlk defa constructor içerisinde bunu set ettikten sonra bunun değeri bir daha değişmiyor.
+
+321
+01:01:56,340 --> 01:02:18,060
+Bir de H in months global member field'im var. Bir tane constructor'ım var. İki tane değer almış. Member filter'ı initialize etmişim. Bir tane getter metodum var. Name değişkeni için. Bir tane getter ve setter metodum var. Bu da H in months için.
+
+322
+01:02:20,179 --> 01:02:31,719
+Clothing'i az önce konuştuk. Item metodunu extent ettiği için item metodunda abstract diye tanımlanmış issutable metodu mutlaka implement etmemiz gerekiyor.
+
+323
+01:02:31,819 --> 01:02:42,519
+İmplementasyonunu konuştuk. Item metodu abstract sınıftı. Abstract sınıf olduğu zaman hatırlarsanız ne demiştik?
+
+324
+01:02:45,780 --> 01:02:53,780
+Bunun da bir abstract sınıfının data member field'leri aynı regular sınıflar gibi olabiliyordu.
+
+325
+01:02:55,180 --> 01:03:07,260
+Bir tane constructorımız var. Bu constructorımızda bu member field'leri initialize ediyoruz, getir metodumuz ve issutable metodumuzda abstract olarak tanımlanmış.
+
+326
+01:03:09,235 --> 01:03:13,315
+Şimdi bir de Kindergarten sınıfına bakalım.
+
+327
+01:03:16,275 --> 01:03:37,155
+Toy sınıfını zaten göstermiştik. Toy sınıfını tekrardan göstermeme gerek yok. Kindergarten. Şimdi kindergarten ile child arasında bir composition ilişkisi vardı. Bu şu demek. Bir kindergarten sıfır ya da çok sayıda children'ı içerisinde içerebilir.
+
+328
+01:03:44,275 --> 01:03:49,635
+bölümünde, birinci objenin data member bölümünde bir tane data structure oluyordu.
+
+329
+01:03:50,215 --> 01:03:54,615
+Bu şu ana kadar öğrendiğimiz bir tane data structure var. O da şu anda Array.
+
+330
+01:03:55,435 --> 01:03:59,635
+Dersin ilerleyen zamanlarında diğer data structure'ları da öğreneceksiniz.
+
+331
+01:04:00,675 --> 01:04:06,895
+Burada Kindergarten içerisinde bir tane child tipinde bir tane Array tip tanımlamışım.
+
+332
+01:04:07,615 --> 01:04:10,355
+Dikkat edin, initialize etmemişim. Sadece tanımlamışım.
+
+333
+01:04:12,115 --> 01:04:27,596
+Bir de bu child array'indeki öğrencileri, çocukları takip etmek için child count integer değerini tanımlamışım global memory field olarak.
+
+334
+01:04:27,596 --> 01:04:30,296
+Bir tane constructorım var.
+
+335
+01:04:38,351 --> 01:04:47,251
+katılacak olan çocukların maksimum sayısını veriyorum. Bu sayıda gördüğünüz gibi artık ERI'yi oluşturuyor.
+
+336
+01:04:48,291 --> 01:04:53,931
+Şimdi bu satırda ERI'yi oluşturduğum zaman içerisinde child objeleri var mı?
+
+337
+01:04:54,516 --> 01:05:13,336
+Yok. Sadece şunu oluşturmuş oldum. Bir tane max chart uzunluğunda bir tane arrayim var. Bu array içerisinde chart objelerinin referanslarına tutacak ama daha en başta bu arrayin her bir hücresinde null yazıyor. Daha sadece arrayi oluşturdum.
+
+338
+01:05:14,867 --> 01:05:32,027
+ChildCount en başta sıfır. Sonra bir tane find metodum var. Daha önce size ben içerisinde search olan, search card diye bir galeri örneği üzerinde search metodunu göstermiştim.
+
+339
+01:05:42,867 --> 01:05:53,187
+İşte orada search card'a hem car name'i ile search etmiştik hem de car obje referansı ile search etmiştik.
+
+340
+01:05:53,267 --> 01:05:56,167
+Burada da child'ı child name ile search ediyorum.
+
+341
+01:05:57,107 --> 01:05:59,847
+Bütün objelerin üzerinde for döngüsü ile gidiyorum.
+
+342
+01:06:00,447 --> 01:06:07,447
+Aynı isme sahip olan başka bir child varsa o durumda o child'ın obje referansını geri gönderiyorum.
+
+343
+01:06:09,780 --> 01:06:18,000
+Yine burada bir tane add child metodum var. Bu da aynı şekilde galeri örneğinde add car metodu gibi.
+
+344
+01:06:18,680 --> 01:06:30,800
+Öncelikle bana gelmiş olan, eklenmek istenen child'in obje referansının obje referansı acaba şeyde var mı diye bakıyorum.
+
+345
+01:06:34,483 --> 01:06:39,963
+Benim kindergarten'ımın benim ereğimde var mı diye bir search ediyorum.
+
+346
+01:06:40,963 --> 01:06:41,043
+Okey.
+
+347
+01:06:42,003 --> 01:06:45,903
+Bunun null'dan farklı olması gerekiyor.
+
+348
+01:06:46,983 --> 01:06:54,683
+Ondan sonra bu child count'ın
+
+349
+01:06:57,556 --> 01:07:15,915
+Children'dan yine children length ile yani elimdeki array'in length'inin child count'a eşit olması gerekiyor.
+
+350
+01:07:18,708 --> 01:07:24,728
+Şunlardan, şu arkadaşlardan bir tanesi şöyle diyelim.
+
+351
+01:07:25,168 --> 01:07:27,248
+Üç tane benim conditionim var.
+
+352
+01:07:28,628 --> 01:07:30,008
+Birinci conditionim şu.
+
+353
+01:07:31,988 --> 01:07:33,508
+İkinci conditionim şu.
+
+354
+01:07:34,867 --> 01:07:36,168
+Üçüncü conditionim şu.
+
+355
+01:07:37,387 --> 01:07:41,948
+Bu üç tane conditionimden bir tanesi true olduğu zaman
+
+356
+01:07:42,579 --> 01:07:56,960
+Ben ne yapacağım? Bu çocuğu ekleyemeyeceğim. Yani bana gönderilen obje referansı eğer null değerindeyse bu durumda bu metot false döndürecek.
+
+357
+01:07:56,960 --> 01:08:06,940
+Eğer ben bu çocuğu aradığım zaman bu çocuk zaten benim şeyde varsa, ereğimde varsa.
+
+358
+01:08:07,603 --> 01:08:24,583
+naldan farklıysa yani benim ereğimde varsa bunu eklemeyeceğim. Yine child count children length'e ulaşmışsa yani benim ereğimde artık yer kalmamışsa bu çocuğu eklemeyeceğim. Yani şuradaki if statement.
+
+359
+01:08:25,171 --> 01:08:45,951
+Benim ereğinde yer kalmamış olma durumunu, gelen obje referansının null point ettiği, yani herhangi bir obje pes etmediğimi ve aradığım objenin zaten Kindergarten ereğinde olduğu durumları kontrol ediyor.
+
+360
+01:08:46,491 --> 01:08:53,111
+Eğer bu durumların hiçbirisi yoksa, bu durumda ben bu çocuğu ekleyebilirim. Child count neyi gösteriyordu?
+
+361
+01:08:53,171 --> 01:09:17,771
+elimdeki Array'de ilk nal olan hücreyi gösteriyordu. Yani sıfırıncı indisden başlayıp teker teker objeleri takip ediyordum. İlk nalın olmuş olduğu objeye bu yeni gelen objenin referansını atıyorum ve child count'u bir arttırıyorum. Bu da add child metoduydu.
+
+362
+01:09:19,988 --> 01:09:43,608
+Yine bir tane find old child metodu implement etmişim. Bu find old child metodunun mantığı ile find child metodunun mantığı aynı. Sadece ismi kontrol etmiyorum da bu sefer çocukların yaşlarını kontrol ediyorum ve en büyük çocuğun objesini, objesinin referansını geri gönderiyorum.
+
+363
+01:09:44,115 --> 01:09:59,956
+Get capacity benim Array'ımda kaç tane çocuk olduğunu gösteriyor. Set capacity benim ilk baştaki Array'imin size'ı belli. Bu Array'imi ben nerede oluşturmuştum? Constructor içerisinde.
+
+364
+01:10:00,000 --> 01:10:28,000
+oluşturmuştum. Eğer ben zaman içerisinde Kindergarten'daki öğrenci sayısını arttırmak istersem bu durumda bu metodu çağırıyorum. Bu sefer ne yapıyorum? Yeni bir tane Array oluşturuyorum. Bu yapmış olduğum, oluşturduğum Array'i yeni kapasiteyle oluşturuyorum. Yani daha büyük bir kapasite olması gerekiyor. Bu kapasitenin mevcuttaki Array'in kapasitesinden daha büyük kapasite.
+
+365
+01:10:28,000 --> 01:10:38,260
+Sistede olması gerekiyor. Ondan sonra da mevcuttaki Array'daki her bir objeyi bir for döngüsü içerisinde bu yeni oluşturduğu Array'e teker teker atıyorum.
+
+366
+01:10:38,707 --> 01:11:06,567
+Ondan sonra da ilk baştaki Array'e referans vermiş olduğum şuradaki ilk başta yaratılmış olan Array'e vermiş olduğum, tanımlamış olduğum referansa bu yeni oluşturmuş olduğum Array'in address space'ine point edecek şekilde oradaki address space'i bu ilk başta tanımlamış olduğum Array değişkenine
+
+367
+01:11:06,707 --> 01:11:24,967
+Atıyorum. Burada da yapmış olduğum yeni bir Array yaratıp ilk Array'daki objeleri yeni Array'e taşıyıp yeni oluşturduğum Array'in adres referansını ilk bu Array'i takip etmek için kullanmış olduğum değişkeni atamak oldu.
+
+368
+01:11:26,547 --> 01:11:54,288
+Yine bir tane remove metodum var. Bu galeri örneğindeki remove car örneğiyle aynı. Ne yapıyorum? Elimdeki Array üzerinde bir for döngüsü yapıyorum. For döngüsünde de ne yapıyorum? Her bir Array'deki child objesiyle benim remove etmek istediğim child objesinin name'lerini karşılaştırıyorum. Eğer bir tane bulacak olursam.
+
+369
+01:11:54,547 --> 01:12:11,587
+Bu çıkarmak istediğim çocuğun referansını temporary bir değişkeni atıyorum ve o çocuk objesinden sonraki bütün çocuk objelerini o Array üzerinde birer defa yana doğru kaydırıyorum.
+
+370
+01:12:11,587 --> 01:12:22,547
+Yani ortadan bir tane diyelim ki çocuğu çıkartmak istiyorsam Array içerisinde ortalarda olan bir çocuğu bu çocuğun referansını temporary değişkeni atıyorum.
+
+371
+01:12:22,547 --> 01:12:41,487
+İlişkeni atadıktan sonra o noktadan sonraki, o indis noktasından sonraki bütün obje referanslarını birer yana kaydırıyorum ve ne yapıyorum? Geriye bu çocuğun obje referansını geri döndürüyor. Bu da Kindergarten.
+
+372
+01:12:42,268 --> 01:12:42,587
+Hocam?
+
+373
+01:12:43,228 --> 01:12:50,128
+Evet, burada Children'in o en sonuncusunu nala eşitlememiz gerekmiyor mu? Children's J en son işten sonra.
+
+374
+01:12:50,804 --> 01:13:00,783
+Evet, bunu bir önceki örnekte de aslında fark etmiştiniz. Doğru, haklısın. En sonunda bir tane child object referansı kalmış oluyor.
+
+375
+01:13:00,783 --> 01:13:13,984
+Ama biz hani child count ile mevcuttaki kaç tane şey olduğunu burada mesela child count'u da güncellememiz gerekiyor.
+
+376
+01:13:14,344 --> 01:13:14,844
+Aynen, aynen.
+
+377
+01:13:18,804 --> 01:13:33,804
+güncellememiz gerekiyor. Chart count üzerinden kaç tane obje olduğunu takip ettiğimiz için chart count'ın sonrasında null olup olmaması çok bizi etkilemeyecek ama haklısın onu da null yapmamız iyi olur.
+
+378
+01:13:38,387 --> 01:13:44,868
+Şimdi bu metotları tekrar göstermiş oldum. Çünkü bunlar karşımıza çıkacak şeyler arkadaşlar.
+
+379
+01:13:44,868 --> 01:13:56,868
+Eğer olur da size bir kompozisyon ilişkisi içeren bir tane soru sorarsam ve bu soru içerisinde bir Array içerisinde bir obje eklemek.
+
+380
+01:13:56,944 --> 01:14:11,984
+Bir objeyi bulmak, bir objeyi çıkarmak ya da işte array'in kapasitesini arttırmak gibi şeyler soracak olursam bunların implementasyonunu yapabiliyor olmanız gerekiyor.
+
+381
+01:14:18,003 --> 01:14:24,404
+Burada da az önce konuştuğumuz metotların denemesi var.
+
+382
+01:14:25,603 --> 01:14:28,764
+Dedim şarjı mı? Tekris hale müsaade edin. Şuna hemen takayım.
+
+383
+01:14:47,444 --> 01:14:47,764
+Ok.
+
+384
+01:14:52,851 --> 01:15:13,612
+Burada tanımlanmış olan çocukların ve bir tane çocuk objesi yaratıyorum. Arkasından bir tane oyuncak objesi yaratıyorum. Arkasından bir tane clothing objesi yaratıyorum. Ve bütün bunlar için...
+
+385
+01:15:14,899 --> 01:15:19,359
+Öncelikle is suitable metodunu çalıştırıyorum.
+
+386
+01:15:20,719 --> 01:15:30,519
+Bu toy objesi için, sonra clothing objesi için is suitable metodunu çağırıyorum.
+
+387
+01:15:31,019 --> 01:15:34,339
+Ondan sonra bir tane kindergarten objesi yaratıyorum.
+
+388
+01:15:34,519 --> 01:15:37,899
+Kindergarten'a bu çocukları ekliyorum.
+
+389
+01:15:38,420 --> 01:15:42,899
+İşte add child metodunu denemişim, fun child'ı denemişim.
+
+390
+01:15:43,940 --> 01:15:50,659
+Ondan sonra aşağıda set kapasite metodunu denemişim.
+
+391
+01:15:50,659 --> 01:16:00,579
+Sizden de isteyeyim, böyle bir örneği sıfırdan kendinizin implement etmesi.
+
+392
+01:16:01,268 --> 01:16:25,887
+Ve size mesela ben bunu tekst olarak vermiş olsaydım nasıl verirdim? Derdim ki bir tane yapmış olduğunuz kodu, UML diagramında size verilmiş olan kodu öncelikle işte abstract sınıfını implement edin. Sonra da bunlardan bir tane charge sınıfını implement edin. Mesela toy sınıfını implement edin.
+
+393
+01:16:26,256 --> 01:16:47,256
+Arkasından da bir tane main programı içeren bir tane ayrı bir sınıf yazın. Bu ayrı bir sınıfınızda da öncelikle işte bir tane kindergarten yaratın. İçerisine iki tane çocuk koyun. Arkasından da şey bu toy...
+
+394
+01:16:48,692 --> 01:17:00,172
+Örneği için bu çocukların uygun olup olmadığına bakın. Bir kinder garden oluşturun. Çocukları bunu ekleyin. Ondan sonra kapasiteyi değiştirin.
+
+395
+01:17:00,172 --> 01:17:11,172
+Ve işte bir tane çocuğu buradan çıkartın gibi size böyle adım adım bir metin verip...
+
+396
+01:17:11,328 --> 01:17:39,048
+Bu metni takip ederekten main programını yazmanızı isteyebilirim. Yani ne olmuş olacak o zaman? Logic Flow'u size vererekten main program içerisinde de hangi adımları yapacağınızı size söyleyebilirim. Böyle bir durumda bunun kodunu da yazabiliyor olmanız gerekiyor. Yani sadece UML diagrama bakıp işte sınıfların implementasyonunu yapmayacaksınız.
+
+397
+01:17:39,328 --> 01:17:53,167
+Aynı zamanda yaptırmış olduğunuz programı test eden main programın verilmiş olan bir logic flow'una göre metinsel olarak o metinden yola çıkaraktan kodu yazılabiliyor olmanız gerekiyor arkadaşlar.
+
+398
+01:17:57,587 --> 01:17:58,067
+Tamam.
+
+399
+01:18:02,868 --> 01:18:04,248
+Bu konuştuğumuz örnekte.
+
+400
+01:18:10,515 --> 01:18:15,275
+Bu örneği daha önceden gösterdim mi hatırlamıyorum. Tekrardan göstereyim.
+
+401
+01:18:15,375 --> 01:18:18,775
+Regular sınıf kullanaraktan inheritance yapmak.
+
+402
+01:18:18,775 --> 01:18:21,715
+Bu görüyorsunuz parent class bir regular sınıf.
+
+403
+01:18:23,295 --> 01:18:28,195
+İki tane global member field tanımlamışım. Bunları burada protected diye tanımlamışım.
+
+404
+01:18:28,595 --> 01:18:32,555
+Protected demenin bana ne avantajı oluyor?
+
+405
+01:18:32,995 --> 01:18:35,555
+Bundan türüyecek olan alt sınıf.
+
+406
+01:18:35,667 --> 01:18:40,108
+metotları direkt bu iki elemana ulaşabiliyor.
+
+407
+01:18:40,927 --> 01:18:42,708
+Bir tane constructorım var.
+
+408
+01:18:43,747 --> 01:18:52,407
+Ondan sonra yine bu bakarsanız zero parameter constructor, bir tane two parameter constructor var.
+
+409
+01:18:52,507 --> 01:18:57,567
+Zero parameter'da direkt noktayı sıfır sıfıra başlatmışım.
+
+410
+01:18:57,667 --> 01:19:00,827
+Burada noktayı son kullanıcı versin istemişim.
+
+411
+01:19:00,827 --> 01:19:03,228
+Bir tane setter metodum var.
+
+412
+01:19:03,796 --> 01:19:08,256
+İki tane getir metodum var. X'in ve Y'nin değerlerini almak için.
+
+413
+01:19:10,036 --> 01:19:37,956
+Bakın, burada bakın hani regular class'ı kullanaraktan ne yapmış oldum? Yani parent, point, burada abstract değil, regular class. Burada regular class'dan regular class extend ediyor. Yani inheritance'da dedim ya iki türlü inheritance implement edebilirim. Bir tanesi regular class'ları kullanaraktan inheritance edebilirim. Bir tanesi abstract class'ları kullanaraktan. Biz bugün abstract class'ları kullanaraktanı gördük. Burada regular class kullanarak.
+
+414
+01:19:38,036 --> 01:19:59,876
+inheritance yapmışım. Pointy extent ediyorum. Bu alttaki child class'ın da kendine ait bir tane member field'ı var. Burada bir tane constructor var. Bu zero parameter constructor. Bir tane de tree parameter constructor.
+
+415
+01:20:00,000 --> 01:20:27,920
+var. Bu baktığım zaman bu sınıfın bir tane member fieldi var ama iki tane member fieldi de yukarıdaki point sınıfından ne yapıyor? Inherit ediyor. Dolayısıyla bu circle'ın constructorında her üç data member fieldi de benim initialize etmem lazım. Peki benim A ile B'yi initialize etmek için yöntemimle üç sınıfın constructorını çağırıyorum. Yani süper.
+
+416
+01:20:28,000 --> 01:20:52,639
+kullanaraktan, üst sınıfın constructorını çağırıyorum. Ondan sonra da ne yapıyorum? Set radius'ı kullanaraktan ne yapıyorum? Bu global member field'in değerini ne yapıyorum? Set ediyor. Okey? Hani burada dikkat edin, private ve protected olduğunda
+
+417
+01:20:53,203 --> 01:21:05,703
+Direkt radius'ın yahut da işte A'nın B'nin değerlerini şey yapmıyorum. Yani metotları kullanarak gerçekleştiriyorum. Okey.
+
+418
+01:21:06,484 --> 01:21:13,104
+Burada aslında bakacak olursam hani set radius yerine şunu da diyebilirdim.
+
+419
+01:21:13,184 --> 01:21:16,564
+Hani direkt arın değerine şu arın değerini de atayabilirdim.
+
+420
+01:21:16,564 --> 01:21:26,524
+Ama set radius diyerekten radius'ın değerini atarken eğer benim yapmam gereken bir tane kontrol varsa ki burada öyle bir şeyim var.
+
+421
+01:21:27,164 --> 01:21:32,764
+Bu durumda ne yapıyorum? Bu metodu kullanaraktan radius değerini set ediyorum.
+
+422
+01:21:33,404 --> 01:21:34,264
+Şuraya bakalım.
+
+423
+01:21:34,484 --> 01:22:01,963
+Point'ta bakalım. Hani Point'ta da direkt A ve B'yi burada atayabilirdim. A'yı X'e, B'yi Y'yi atayabilirdim. Ama set point metodunu kullanmışım. Set point'ta özel bir kondisyonum olmuş olabilirdi mesela. A ve B'nin değerini ilk atarken şu değerler arasında olsun diye bir kondisyonum olabilirdi.
+
+424
+01:22:02,484 --> 01:22:06,844
+Böyle bir durum yok olmasına rağmen yine de ben bunu kullanmayı tercih etmişim.
+
+425
+01:22:08,623 --> 01:22:27,484
+Set radius metodum var. Set radius metodum eğer, ne demişim, 0,0 değerinden şöyle bir condition kullanmışım.
+
+426
+01:22:33,332 --> 01:22:53,592
+0,0 değerinden büyük olduğu zaman şu radius değerini ata demişim. Bir tane get radius metodum var. Bir tane area metodum var. Bu area metodumu şu şekilde implement etmişim.
+
+427
+01:22:55,052 --> 01:23:00,652
+P-re-kare metoduyla area metodumu implement etmişim. Bir de string metodum var.
+
+428
+01:23:01,844 --> 01:23:06,644
+Şurada da bu inheritance örneğini test ediyorum.
+
+429
+01:23:08,963 --> 01:23:16,523
+Şimdi bu size göstermiş olduğum regular classları kullanarak bunu yapma yöntemi.
+
+430
+01:23:16,523 --> 01:23:25,684
+Bir de bunu az sonra abstract sınıfları ve interfazleri kullanarak yapma yöntemini göstereceğim.
+
+431
+01:23:27,444 --> 01:23:32,144
+Henüz daha interfazleri öğrenmediniz. Önce interfazleri konuşalım, ondan sonra göstereceğim.
+
+432
+01:23:32,144 --> 01:23:41,604
+Tamam. Bunlar şimdi bu örnekler üzerinde göstereceklerimde.
+
+433
+01:24:01,492 --> 01:24:16,212
+Okey. Şimdi arkadaşlar, biz iki farklı yöntemi konuştuk inheritance yaparken. Bir tanesi regular classları kullanaraktan inheritance yapmak, bir de abstract class'ı kullanaraktan inheritance yapmak.
+
+434
+01:24:17,051 --> 01:24:28,532
+Ve bu her ikisinde de extends keyförtü kullandık ve dedik ki, ister abstract classları kullanarak inheritance yapayım, ister regular classları kullanarak inheritance yapayım.
+
+435
+01:24:29,300 --> 01:24:36,680
+Child class sadece bir tane parent class'ı extend edebilir dedik. Yani extends keyword'ünden sonra sadece bir tane sınıf vardı.
+
+436
+01:24:39,000 --> 01:24:49,940
+Ve dedik ki bu durumda multiple inheritance'ı desteklemiyoruz. Yani bir tane child'ın sadece bir tane parent'ı olabilir.
+
+437
+01:24:51,123 --> 01:25:01,783
+Ama öyle durumlar var ki bir sınıfın birden fazla parent sınıfının özelliğini içermesi gerekebiliyor.
+
+438
+01:25:02,503 --> 01:25:06,743
+Şimdi bunun için de interface kullanarak inheritance yapıyoruz.
+
+439
+01:25:06,903 --> 01:25:16,623
+Yani burada da interface konseptini kullanarak inheritance yapma imkanı tanıyor bize object oriental.
+
+440
+01:25:19,123 --> 01:25:25,644
+Bir abstract sınıfı gibi düşünebilirsiniz. Sadece içerisinde metot body'ler olmayan.
+
+441
+01:25:27,155 --> 01:25:37,435
+Sadece içerisinde description içeren, method description içeren metotların olduğu bir abstract sınıf diye düşünebilirsiniz.
+
+442
+01:25:38,015 --> 01:25:46,315
+Interface'e baktığınız vakit interface'de abstract class yerine class kelimesini kullanmıyoruz.
+
+443
+01:25:46,675 --> 01:25:50,175
+Direkt interface kelimesini kullanıyoruz. Public interface customer.
+
+444
+01:25:51,556 --> 01:25:55,155
+Demek ki daha önce bir sınıfı tanımlarken...
+
+445
+01:25:55,155 --> 01:26:02,296
+class kullanıyorduk. Sonra bir sınıfı tanımlarken abstractsı abstract class demiştik. Şimdi ise direkt interface diyoruz.
+
+446
+01:26:02,296 --> 01:26:16,015
+Ve UML diagramda interface'i gösterirken de bu sınıfın üstünde ne yapıyoruz? Interface keyword'ünü bu notasyonla gösteriyoruz.
+
+447
+01:26:17,811 --> 01:26:28,731
+Şimdi eğer diyelim ki bir tane child objem var ve bu child objesi birden fazla sınıfın özelliğine sahip olacaksa.
+
+448
+01:26:29,007 --> 01:26:41,247
+Yani bir person hem buy yapabilme özelliğine sahip olacak, hem sell yapabilme özelliğine sahip olacak, hem keep yapabilme özelliğine sahip olacak.
+
+449
+01:26:41,907 --> 01:26:45,967
+Eğer biz bütün bunları istiyorsak bu durumda interface kullanıyoruz.
+
+450
+01:26:46,579 --> 01:26:57,459
+Interface'in abstract sınıftan farkı, interface'de biz capability'leri eğer belli gruplara ayırıyoruz.
+
+451
+01:26:57,872 --> 01:27:06,551
+Ve birden fazla capability'ye sahip olmak isteyen bir tane child sınıf varsa interface'i kullanıyoruz.
+
+452
+01:27:06,551 --> 01:27:14,551
+Ama abstract sınıfta neydi? Abstract sınıfta alttaki child üsttekinin bütün özelliklerini içeriyordu.
+
+453
+01:27:16,467 --> 01:27:43,167
+Ve üsttekinin bütün özelliklerini içerdiği gibi üsttekinde biz alttaki sınıfın genel durumda olan bir takım özelliklerini de implement edebiliyorduk. Data member filtları oluyordu abstract sınıfta. Data member filtları oluyordu. Bunları bir üst sınıfta halledebiliyorduk. Ama interface'de öyle bir şey yok. Interface'de herhangi bir metodun implementasyonu yok.
+
+454
+01:27:43,731 --> 01:28:02,412
+İnterfaysi şunu diyoruz, alttaki bir sınıf birden fazla interfaysi implement edecekse, her bir interfaysin sağlamış olduğu kapabiliteleri, yani metotları içerisinde barındırmalı diyoruz.
+
+455
+01:28:06,420 --> 01:28:21,559
+Buradaki örnekte 3 tane farklı capability var. Bu interfaysleri implement eden, yani bunlardan inherit eden alttaki charge sınıf bu capability'leri içeriyor.
+
+456
+01:28:22,399 --> 01:28:34,360
+Şimdi bu parent'ın implementasyonuydu. Yani bakın burada 3 tane interfays var, 3 tane parent var. Her birisinin description'ına interfays.
+
+457
+01:28:34,420 --> 01:28:53,500
+yazdık. Ve metot body'lerin, daha doğrusu class body'lerine bakalım. Class body'lerin de bu metotların description'ı var. Yani bu metotların metot body'leri yok. Sadece description'ları var. Ve bu metot body'lerde de tekrardan abstract keyword'ü kullanamamış.
+
+458
+01:28:53,971 --> 01:29:10,751
+Çünkü biz biliyoruz ki interface'in içerisindeki bütün metotlar alt sınıflar tarafından implement edilmeli. Ama abstract sınıfta öyle bir şey yoktu. Abstract sınıfta sadece abstract olarak tanımlanmış metotlar alt sınıfta implement edilmeliydi.
+
+459
+01:29:11,531 --> 01:29:19,891
+Ama interface'de bütün metotları ne yapıyoruz? Bütün kapabiliteleri bu interface'i implement eden alt sınıflar içeriyor.
+
+460
+01:29:20,532 --> 01:29:25,612
+Şimdi bir de alt sınıfın implementasyonuna, yani çay sınıfın implementasyonuna bakalım arkadaşlar.
+
+461
+01:29:26,891 --> 01:29:31,932
+Dikkat edin artık extends kelimesi yerine implements kelimesini kullanıyoruz.
+
+462
+01:29:37,811 --> 01:29:44,011
+Okey. Arkadaşlar, beni duyabiliyor musunuz? Rahat duyabiliyor musunuz?
+
+463
+01:29:44,231 --> 01:29:44,971
+Normal bence.
+
+464
+01:29:45,891 --> 01:29:50,951
+Şu an sesiniz geliyor. Az önce böyle bir dakika boyunca böyle bir ustayetin başında anlaşılmadı pek.
+
+465
+01:29:51,111 --> 01:29:52,811
+Başında değil, bir dakika öncesi. Evet.
+
+466
+01:29:53,471 --> 01:29:55,371
+Tamam. Şu an ama normal değil mi?
+
+467
+01:29:56,591 --> 01:29:57,211
+Evet hocam.
+
+468
+01:29:57,211 --> 01:29:59,211
+Tamam. Şimdi...
+
+469
+01:30:01,268 --> 01:30:13,868
+Tekrar edeyim. Üst sınıflarda, parent sınıfında interface keywordünü kullandığımızı söyledik. Artık abstract kelimesini kullanmıyoruz.
+
+470
+01:30:14,427 --> 01:30:19,247
+Interface'lerde ve class kelimesini de kullanmıyoruz. Class keywordünü de.
+
+471
+01:30:20,243 --> 01:30:30,903
+Ve bir interfeysin içerisindeki metotlar hepsi normal metot şeklinde yazılıyor. Sadece description'ları yok.
+
+472
+01:30:33,619 --> 01:30:35,860
+Sadece description'ları yok.
+
+473
+01:30:37,440 --> 01:30:41,199
+Ve bir interface'in içerisinde member field'ler de yok.
+
+474
+01:30:41,460 --> 01:30:43,680
+Sadece bir tip member field olabilir.
+
+475
+01:30:44,579 --> 01:30:49,659
+Public, final static tipinde bir member field varsa sadece o olabilir.
+
+476
+01:30:49,659 --> 01:30:55,100
+Yani bir final keyword olacak, ikincisi static olacak, yani değişmeyecek.
+
+477
+01:30:55,180 --> 01:30:57,860
+Final static olması gerekiyor, bir de public olması gerekiyor.
+
+478
+01:30:58,228 --> 01:31:06,667
+Eğer böyleyse bu durumda ben bu tür tipteki data member field'i de tutabilirim.
+
+479
+01:31:06,728 --> 01:31:11,068
+Ama onun dışındaki metotların hepsi normal metot gibi yazılıyor.
+
+480
+01:31:11,427 --> 01:31:14,967
+Ama metot body'si yok. Yani içerisinde abstract keyword yok.
+
+481
+01:31:14,967 --> 01:31:22,807
+Ve bir interfeisin içindeki bütün metotlar o interfeisten inherit etmiş çayda olmalı arkadaşlar.
+
+482
+01:31:23,796 --> 01:31:33,376
+Şimdi chart sınıfına bakalım. Burada person sınıfımız var. Bu person sınıfında artık extends demiyoruz, implement diyoruz.
+
+483
+01:31:33,376 --> 01:31:50,615
+Okey. Demek ki interface'de implement keyword'ünü kullanıyoruz. Implement sonra hangi parent'lerin isimleri implement edeceksek onları yazıyoruz. Customer, supplier, friend. Burada person sınıfı 3 tane interfejsi implement ediyormuş.
+
+484
+01:31:51,956 --> 01:32:08,476
+Şimdi bu şu demek, person sınıfı bu üç tane parent'ın bütün kapabilitelerini implement etmek zorunda. Yani buy metodunu implement etmek zorunda, sell metodunu implement etmek zorunda, keep metodunu implement etmek zorunda.
+
+485
+01:32:14,452 --> 01:32:22,791
+Now, we are using interfaces in order to group responsibilities of entities in order to give objects multiple views.
+
+486
+01:32:22,791 --> 01:32:26,332
+For example, we wanted to give person object multiple view.
+
+487
+01:32:26,851 --> 01:32:35,192
+That person object can be a customer who buys, can be a supplier who sells, can be a friend who keeps.
+
+488
+01:32:35,752 --> 01:32:35,891
+Okay.
+
+489
+01:32:36,332 --> 01:32:40,351
+One object may have a multiple view by using the inheritance.
+
+490
+01:32:41,844 --> 01:32:42,344
+Okay.
+
+491
+01:32:45,344 --> 01:32:51,923
+Now, with the interfaces, we need to pay attention to the following rules.
+
+492
+01:32:51,923 --> 01:32:52,683
+Okay.
+
+493
+01:32:53,384 --> 01:33:06,644
+And the method bodies of the all methods in the interfaces should be implemented in the child class.
+
+494
+01:33:07,203 --> 01:33:07,363
+Okay.
+
+495
+01:33:08,404 --> 01:33:14,344
+Method body of all the methods in the interface must be implemented in the chart class.
+
+496
+01:33:16,984 --> 01:33:21,984
+And regular member fields cannot be defined in interfaces.
+
+497
+01:33:22,544 --> 01:33:26,964
+OK, in interfaces, we can only have public final static member fields.
+
+498
+01:33:28,024 --> 01:33:29,044
+OK, that's another rule.
+
+499
+01:33:30,164 --> 01:33:33,884
+And only public methods can be defined in interfaces.
+
+500
+01:33:34,547 --> 01:33:39,487
+So, in interface, I only have public methods.
+
+501
+01:33:39,607 --> 01:33:42,507
+So, I don't use private or protected methods.
+
+502
+01:33:45,487 --> 01:33:47,887
+Interfaces cannot have constructors.
+
+503
+01:33:48,747 --> 01:33:48,907
+Okay.
+
+504
+01:33:49,567 --> 01:33:52,267
+So, in interfaces, we don't have constructors.
+
+505
+01:33:52,387 --> 01:33:56,647
+We only have regular methods.
+
+506
+01:34:00,595 --> 01:34:15,295
+Arkadaşlar, and a class can implement multiple interfaces I already shown and usually when you write the name of the interface you as a code convention, you start with capital I.
+
+507
+01:34:15,755 --> 01:34:20,515
+Arkadaşlar, this is not a must thing to do, but this is a convention.
+
+508
+01:34:22,515 --> 01:34:27,575
+Arkadaşlar, okay, now let's take a look at this particular example.
+
+509
+01:34:30,836 --> 01:34:40,556
+In this particular example, now, we have a personal vehicle and a commercial vehicle.
+
+510
+01:34:41,556 --> 01:34:45,756
+Okay, two types of vehicles, commercial vehicle and personal vehicle.
+
+511
+01:34:45,756 --> 01:34:47,036
+Now,
+
+512
+01:34:48,979 --> 01:34:56,699
+We pay taxes. We pay taxes for commercial vehicle and we pay taxes for personal vehicle.
+
+513
+01:34:57,219 --> 01:35:02,739
+Okay. And if it is a commercial vehicle, we pay different kind of tax.
+
+514
+01:35:03,019 --> 01:35:07,139
+If it is a personal vehicle, we pay different kinds of tax.
+
+515
+01:35:07,939 --> 01:35:08,199
+Okay.
+
+516
+01:35:09,879 --> 01:35:13,839
+Now, if you look at this UML diagram, you see that
+
+517
+01:35:14,176 --> 01:35:21,775
+Now, here, there is a commercial vehicle, and it has two methods, get plate and calculate amortized tax.
+
+518
+01:35:21,775 --> 01:35:30,036
+Okay, indirimli vergi, get plate and calculate amortized tax.
+
+519
+01:35:30,796 --> 01:35:35,336
+And you see that I have three different regular classes.
+
+520
+01:35:35,792 --> 01:35:43,231
+Okay, now these three different regular classes are extending or implementing the commercial vehicle.
+
+521
+01:35:44,372 --> 01:35:45,292
+Okay.
+
+522
+01:35:46,931 --> 01:35:54,351
+And also two of them, motorcycle and car, can also be a personal vehicle.
+
+523
+01:35:55,351 --> 01:35:59,752
+So therefore, motorcycle and car also implement personal vehicle.
+
+524
+01:36:00,127 --> 01:36:13,787
+Yani burada iki tip capability var. Bir tanesi commercial vehicle'ın sağlamış olduğu calculate amortized tax capabilitiesi bir de personal vehicle'ın sağlamış olduğu calculate tax capabilitiesi.
+
+525
+01:36:13,787 --> 01:36:23,807
+Şimdi car alt sınıfı ve motorcycle alt sınıfı bu iki tane farklı sınıfın bu capability'lerini içermek durumunda.
+
+526
+01:36:28,127 --> 01:36:41,127
+Hem commercial vehicle olabileceği için bunları ikisini de implement ediyor. Motorcycle hem personal vehicle hem commercial vehicle implement ediyor. Car hem commercial vehicle hem personal vehicle implement ediyor.
+
+527
+01:36:41,971 --> 01:36:55,951
+Dolayısıyla da bu motor cycle ve karın mutlaka içermesi gereken, implement etmesi gereken metotlar arasında calculate amortize task var bir de calculate task var.
+
+528
+01:36:55,951 --> 01:37:05,391
+Çünkü ikisi de interfaysin içinde bulunduğu için bu ikisi de bunu implement edecek. Her ikisinde de get plate zaten var dolayısıyla bunları da implement edecekler.
+
+529
+01:37:05,663 --> 01:37:18,363
+Şimdi bus'a bakalım. Bus sadece commercial vehicle interfaysini implement ettiği için sadece commercial vehicle'ın sağlamış olduğu bu iki tane metodu kendi içinde implement edecek arkadaşlar.
+
+530
+01:37:21,384 --> 01:37:27,243
+Şimdi interfaysimiz neydi? Commercial vehicle'dı. Interface olarak tanımlıyoruz.
+
+531
+01:37:28,483 --> 01:37:32,823
+İçerisinde iki tane metot var. Dikkat edin metotların body'leri yok.
+
+532
+01:37:33,395 --> 01:37:36,835
+interface'de sadece description'ları veriyorduk.
+
+533
+01:37:38,075 --> 01:37:43,275
+Ondan sonra yine aynı şekilde personal vehicle, interface olarak tanımlamışım.
+
+534
+01:37:43,535 --> 01:37:48,335
+İki tane metodum var. İkisi de, ikisinin de metot badisi yok.
+
+535
+01:37:48,695 --> 01:37:59,055
+Şimdi hangi alt sınıf bu iki tane interface'i implement edecek olursa ya da bunlardan birini, bunların içerisindeki metotları mutlaka içinde implement etmesi lazım.
+
+536
+01:38:00,500 --> 01:38:17,759
+Mesela burada car sınıfına bakalım. Şuradaki ortadaki sınıfa bakalım. Bu sınıf iki tane interface ile implement ediyor. Dolayısıyla içinde getplate olması lazım, calculate amortize tax olması lazım, calculate tax olması lazım.
+
+537
+01:38:19,412 --> 01:38:27,952
+içerisinde getplate var mı? Var. İçerisinde calculate text var mı? Var. Calculate amortize text var mı? Var. Okey.
+
+538
+01:38:27,952 --> 01:38:35,752
+Yani interfeyslerden dolayı gelen zorunluluğu sağlamış. İçerisinde bu üç tane metodu implement etmiş.
+
+539
+01:38:36,132 --> 01:38:40,792
+Bunun dışında başka metotları olacak tabii ki. Çünkü bu normal regular class.
+
+540
+01:38:41,392 --> 01:38:47,412
+Sadece bu implement interface şeyde olduğu için bundan dolayı bu üç tane...
+
+541
+01:38:47,412 --> 01:38:51,532
+3 metodu mutlaka implement etmesi gerekiyordu.
+
+542
+01:38:53,192 --> 01:38:55,192
+Şimdi bu kar sınıfına bakalım.
+
+543
+01:38:55,572 --> 01:38:58,152
+Bu kar sınıfının 3 tane member field'i var.
+
+544
+01:38:58,271 --> 01:39:00,271
+Plate, model, engine, volume.
+
+545
+01:39:01,684 --> 01:39:15,904
+Ve CAR sınıfının constructorına bakalım. Bu üç tane değeri input parametresi olarak almış ve bunları ne yapmış? Global Member Fiat'ları set etmiş, initialize etmiş Global Member Fiat'ları.
+
+546
+01:39:16,851 --> 01:39:26,372
+Bu yukarıdan gelen, interfesten gelen 3 tane metodun dışında getModelier bir de getEngineVolume var.
+
+547
+01:39:26,731 --> 01:39:30,912
+2 tane global member filtri için getter metodunu yazmış.
+
+548
+01:39:31,751 --> 01:39:34,711
+Şimdi yukarıdan gelen metotların implementasyonuna bakalım.
+
+549
+01:39:35,292 --> 01:39:36,211
+CalculateTax.
+
+550
+01:39:36,787 --> 01:39:55,247
+Calculate Tax'e baktığımızda ki motorun hacmine göre hesaplıyoruz. Base Tax çarpı motorun hacmi bu Calculate Tax'ı veriyor. Bu Personal Vehicle için implement etmemiz gereken metottu.
+
+551
+01:39:55,247 --> 01:40:00,000
+Bir de Commercial Vehicle Interface'inden...
+
+552
+01:40:00,000 --> 01:40:04,820
+gelen bir metodumuz daha var. Calculate Amortize Tax, yani indirimli.
+
+553
+01:40:05,939 --> 01:40:33,879
+tax'ı implement ediyoruz. Bu da şunu diyor, tax can be reduced 10% for each year as amortization. Yani her geçen yıl tax'ın %10 oranında ne yapıyorum? Azaltıyorum. Bunu implement etmek için de öncelikle mevcut yıldan arabanın yaşını çıkartıyorum. Ne zaman bu araba fabrikadan çıkmış?
+
+554
+01:40:33,939 --> 01:40:35,879
+Bu bana arabanın yaşını veriyor.
+
+555
+01:40:36,351 --> 01:40:56,092
+Eğer bu yaş 10'dan küçük ise bu durumda arabanın yaşı büyüklüğün ne kadarsa bunu %10 ile çarpıp, hacimle çarpıp bir de base tax ile çarpıp bu değeri döndürüyorum.
+
+556
+01:40:56,092 --> 01:41:04,092
+Eğer 10 yıla eşit ve büyükse o zaman direkt %10'unu alıyorum. Eğer 10 yıldan düşükse o ne kadar...
+
+557
+01:41:04,351 --> 01:41:26,731
+Yıl ise o kadar yıl için %10'ları düşüp öyle gönderiyorum. Ama 10 yıldan eğer büyükse direkt olarak %10'unu alıp return value olarak onu gönderiyor. Bu da Calculate Amortize Task'in ve TEX'in implementasyonuymuş.
+
+558
+01:41:31,344 --> 01:41:42,824
+Bu iki interfeisin içerisinde olan bütün metotların bu interfeisi implement eden sınıf içerisinde metot bodylerinin olması gerekli.
+
+559
+01:41:43,864 --> 01:41:45,423
+Bir de commercial bir yakıla bakalım.
+
+560
+01:41:50,484 --> 01:42:01,623
+İki farklı emre sormuş. İki farklı interfeiste aynı isimli metotlar olursa hata alabilir miyiz? Şunu soruyor.
+
+561
+01:42:03,804 --> 01:42:13,623
+Eğer iki tane farklı interfeisim var, ikisinde de aynı isimli metotlar var. Bunu ben aşağıda implement ettiğimde hata alır mıydım?
+
+562
+01:42:14,123 --> 01:42:16,324
+Burada mesela getplate var.
+
+563
+01:42:17,011 --> 01:42:27,331
+İkisinde de aynı isimli metot var. Bunu aşağıda implement ettiğim zaman implementasyonunda herhangi bir sıkıntı olmamış.
+
+564
+01:42:31,344 --> 01:42:44,963
+Benim buradaki, yani interface ne diyor aşağıya? Arkadaş diyor, ben içerisinde ne yazacağını fark etmez benim için ama mutlaka şu isimli bir tane ve şu return type'li bir metoda sahip olacaksın diyor.
+
+565
+01:42:46,644 --> 01:42:54,864
+İki tane farklı interface ile aynı isimli metot olmuş olmasıyla beraber interface'ler aşağıya şey demiyor.
+
+566
+01:42:54,864 --> 01:42:59,344
+Yani sen benden getplate'i aldığında getplate'i şu şekilde implement...
+
+567
+01:42:59,344 --> 01:43:07,344
+implement edeceksin ya da diğerisinden aldığında farklı bir şekilde implement edeceksin diye bir şey söylemiyor. Sadece diyor ki şöyle bir get take metodun olsun.
+
+568
+01:43:07,988 --> 01:43:32,368
+Eğer şeye dikkat edeceksek, özellikle bunların implementasyonlarının farklı olmasını istiyorsak, mesela buradaki getplate'de farklı bir şey yazsın, buradaki getplate'de bu durumda şunların isimlerinin farklı olması gerekiyor ki, aşağıdaki arkadaşın da implement ederken bunlara farklı implementasyon yapabilmesini olanak tanıyor.
+
+569
+01:43:35,252 --> 01:43:55,752
+Şimdi bir de commercial vehicle'a bakalım. Commercial vehicle, burada daha doğrusu bus sınıfına bir bakalım. Bus sınıfı UML diagramında sadece bir tane interfejse implement etmişti. Yani sadece şu bir tane interfejsten gelen o iki metodu olmazsa olmaz içinde barındırmalı.
+
+570
+01:43:56,180 --> 01:44:06,039
+calculate amortize tasks içinde var. Bir de getplate var. Demek ki interface'i implement etmekten dolayı her aynı bir sorun yaşamayacak bu sınıf.
+
+571
+01:44:06,840 --> 01:44:12,000
+Onun dışında sınıfın kendi constructori var. Kendi global member değerleri var.
+
+572
+01:44:13,060 --> 01:44:17,100
+Getter ve setter metotları var. İki tane global member field için.
+
+573
+01:44:19,091 --> 01:44:46,032
+Calculate Amortize Tax'e baktığımız zaman bunun implementasyonunda da eğer belirli bir tonajı altındaysa tonaj reşi olsununa 1 vermişim. Belirli bir tonajın tonajı 1 ile 5 arasında ise tonaj reşi olsununa 1.2. 5 ile 10 arasında ise 1.4. Diğer durumlarda yani 10'dan da büyükse 1.6.
+
+574
+01:44:47,091 --> 01:45:02,091
+Ve burada yine yaşını bulurken işte mevcuttaki yıldan arabanın fabrikadan çıktığı yılı çıkartıp işte %5 ile çarpmışım.
+
+575
+01:45:02,091 --> 01:45:10,872
+Ve ratio range eğer 2'nin üzerinde ise bu sefer o durumlar için de ratio'yu 2 olarak almışım.
+
+576
+01:45:11,311 --> 01:45:15,091
+Base tax'ını hesaplarken de base tax ile ratio...
+
+577
+01:45:15,091 --> 01:45:43,072
+tonuç ve ratio age yani hem tonunu hem de yaşına dikkate alarak arabanın indirimli taksının ne olacağını bulmuşum. Şuradaki detaylara takılmayın. Hani eğer size böyle bir soru soracak olsak bu calculate amortize tax metodunun nasıl implement edeceğini metinsel olarak size açıklayacağız. Ama buradaki önemli olan sadece interfaisten gelen calculate amortize tax metodu.
+
+578
+01:45:43,091 --> 01:46:03,591
+kodunun çarkta implement edildiğini görmeniz. Diğer sınıfta iki tane farklı interfejden gelen metotlar vardı. Hem commercial vehicle hem personal vehicle. Dolayısıyla hem calculate tax hem calculate amortize tax implement edilmişti. Buradaysa sadece calculate amortize tax implement edildi.
+
+579
+01:46:08,148 --> 01:46:36,127
+Burada da bir metodum daha var, bir sınıfım daha var, Vehicle Registration System. Hani bunu galeri example olarak, hani galeri car örneğini gördünüz. Kindergarten child örneğini gördünüz. Burada da benzer bir örnek. Vehicle'ları bir tane Registration System'de tutuyorum. Bunun içerisinde commercial vehicle tipi.
+
+580
+01:46:36,148 --> 01:47:03,488
+ve personal vehicle tipinde Array'lerim var. Ve bu Array'ler üzerinde bakın search metotlarım var. Unregister demek, remove demek, remove metotlarım var. Register metotları, add metotlarım var. Bu Array'lere ister commercial vehicle tipinde, personal vehicle tipinde şeyleri ekleyebiliyorum. Yani temelinde add, search ve remove metotlarını
+
+581
+01:47:04,148 --> 01:47:13,608
+Data Structure Array olduğu zaman arkadaşlar sorunsuz bir şekilde implement edebiliyor olmanızı istiyorum. Sınavda da karşınıza çıkar.
+
+582
+01:47:22,387 --> 01:47:36,387
+Burada gördüğünüz gibi ben az önce get, plate, t, her iki interfeisde de tutmuştum. İstersem interfeisler...
+
+583
+01:47:38,068 --> 01:47:58,188
+Bir interfaz, bir başka interfazden de ne yapabilir? Inherit edebilir. Bu durumda bu interfazlerin içerisinde ortak bulunan metodu bir üstteki interfaze çıkartabilirim. Bir üstteki interfaze çıkartıp aynı metodu orada da tutabilirim.
+
+584
+01:48:02,195 --> 01:48:08,916
+Son olarak hani interface ile abstract sınıfın arasındaki farkları tekrar şey yapalım.
+
+585
+01:48:09,311 --> 01:48:32,532
+Biz ne dedik? Hani Java ya da diğer object-oriented programming language'lar multiple class level inheritance'ı destekleniyor. Bunun sebebini de söyledik. Diamond inheritance problemı var dedik. Bu problemin ne olduğunu açıkladık. Bundan dolayı multiple inheritance yok dedik.
+
+586
+01:48:33,716 --> 01:48:46,596
+Ama eğer bir sınıf birden fazla farklı sınıfın yeteneğine sahip olmak istiyor ise bu durumda interfejsi kullanıyoruz.
+
+587
+01:48:46,596 --> 01:49:01,716
+Eğer böyle bir durum varsa interfejsi kullanıyoruz. Interfejsi kullandığımız zaman da yukarıdaki sınıfın metotlarını interfejse kesinlikle implement etmiyoruz.
+
+588
+01:49:01,716 --> 01:49:08,916
+İnterface'in bütün metotları abstract metot olarak geliyor ama abstract keyword'ünü de metotların bodysinde kullanmıyoruz.
+
+589
+01:49:13,108 --> 01:49:27,488
+Eğer çok bir sınıfta, abstract sınıf peki, interface'in nerelerde anlamlı olduğunu söyledik. Bir de abstract sınıfın nerede anlamlı olduğunu söyleyelim.
+
+590
+01:49:41,108 --> 01:50:00,000
+Çar tarafından kullanılan ortak metotlarsa bu metotları regular metot olarak tanımlayıp yani bu metotların metot adısını süper classla yani abstract classla tanımlayıp bunların farklılık gösteren yani çar klasın farklılık.
+
+591
+01:50:00,000 --> 01:50:03,739
+Farklılık gösteren diğer metotlarını abstract tanımlayabiliyoruz.
+
+592
+01:50:04,159 --> 01:50:08,279
+Yani abstract sınıfların hem regular metotları var hem abstract sınıfları var.
+
+593
+01:50:09,119 --> 01:50:18,159
+Aşağıdaki sınıfların birbirinden farklılaşan metotlarını abstract sınıf olarak ama birbiriyle örtüşen metotlarını ne olarak?
+
+594
+01:50:19,119 --> 01:50:22,099
+Ortak metot olarak implement edebilirim.
+
+595
+01:50:22,099 --> 01:50:27,960
+Ama abstract sınıfla kurulmuş olduğum inheritance yapısında da
+
+596
+01:50:28,000 --> 01:50:33,879
+alttaki sınıf birden fazla sınıfın yeteneğini paylaşamıyor. Yani birden fazla sınıfı extend edemiyor.
+
+597
+01:50:33,879 --> 01:50:35,619
+Okey.
+
+598
+01:50:41,908 --> 01:51:08,888
+Eğer abstract interface kullandığım vakit, interface ile beraber, interface'in içerisindeki bütün metotları, class, sınıf, implement etmek zorunda olduğu için, olur da interface kullanırsam, interface ile yapacağım en küçük bir değişiklik, yani bir metodun description'ında bile return tipini bile değiştirirsem, alttaki bütün metotları, alttaki bütün sınıfları,
+
+599
+01:51:09,908 --> 01:51:36,448
+çalışmasını etkileyecektir. Ama eğer abstract sınıf kullanıyorsam ve abstract sınıfta bir tane değişikliğe yani metoda bir eklemeye ihtiyacım varsa ne yaparım? Bir tane daha regular metot eklerim abstract sınıfa. Böylelikle aşağıdaki sınıfların ilgili metotlarını değiştirmesini olarak vermem.
+
+600
+01:51:43,283 --> 01:51:52,463
+Evet, [öğrenci] soruyor. Abstract yerine overriding kullanabilir mi? Bunu az önce bir arkadaşınız sormuştu dersin başında [öğrenci].
+
+601
+01:51:52,783 --> 01:52:11,883
+abstract ile overriding birbirinin yerine geçebilen şeyler değil. Yani abstract dediğimiz override deyince şunu anlıyoruz. Üstteki sınıfın aynı metodunu alttaki sınıfta implement ediyoruz.
+
+602
+01:52:12,787 --> 01:52:19,188
+Üstteki metot regular metot da olabilir. Üstteki metot abstract metot da olabilir.
+
+603
+01:52:20,068 --> 01:52:27,087
+Overwrite dediğimiz zaman üstteki metodu implement etmek anlamında anlamamız gerekiyor.
+
+604
+01:52:28,148 --> 01:52:37,927
+Overload dediğimiz zaman bir sınıfın içerisindeki bir metodu aynı isimle farklı bir signature ile kullanmak anlamına geliyor.
+
+605
+01:52:38,484 --> 01:52:59,203
+Yukarıdaki metot eğer abstract şekilde, abstract keyword ile tanımlanmışsa onun vermiş olduğu anlamda şu olmalı. Bu metodu aşağıda mutlaka override etmeliyiz. Yani override abstract'ın yerine kullanılmıyor. Sorunun tahminatı olarak.
+
+606
+01:53:08,307 --> 01:53:10,828
+Yine aklınızda, evet [öğrenci] seni dinliyorum.
+
+607
+01:53:12,648 --> 01:53:19,948
+Hocam farklı interfacelerde farklı işleri yapan metotları tanımlayacaksak onları farklı isimlerini değiştirerek yapabiliriz demiştiniz.
+
+608
+01:53:20,488 --> 01:53:24,127
+Peki parametrelerini farklı göstererek overloading gibi de yapabilir miyiz?
+
+609
+01:53:24,668 --> 01:53:30,408
+Yapabilirsin. Yani signature'ları birbirinden farklı olduktan sonra yapabilirsin.
+
+610
+01:53:31,847 --> 01:53:32,847
+Teşekkürler.
+
+611
+01:53:33,876 --> 01:53:50,195
+Şimdi abstract sınıfları ve inheritance'ları kullanarak demek ki ben abstract sınıfları kullanarak ben bir inheritance yapıyorsam aradaki ilişkiyi A ise B şeklinde düşünebilirsiniz.
+
+612
+01:53:52,372 --> 01:54:04,832
+üstteki sınıfla easy relationship. Ama interface kullanıyorsam, alttaki sınıf, üstteki sınıfın şu kapabilitesini kullanıyor şeklinde düşünebilirsiniz.
+
+613
+01:54:04,832 --> 01:54:16,632
+Bir interface mi kullanayım, abstract sınıf mı kullanayım, şeyini, kurgusunu yapacağınız zaman şu şekilde düşünebilirsiniz.
+
+614
+01:54:17,292 --> 01:54:20,372
+Aşağıdaki sınıf, üstteki sınıfın kapabilitesini.
+
+615
+01:54:20,372 --> 01:54:33,832
+kapabilitelerini içerecek. Yani commercial vehicle kapabilitesi, personal vehicle kapabilitesini alttaki işte bas sınıfı içerecek ya da kar sınıfı içerecek.
+
+616
+01:54:34,804 --> 01:54:56,023
+Ama abstract sınıfı kullanarak yaptığınızda yukarıdakinin sadece kapabilitesini almıyorsunuz. Aynı zamanda yukarıdakinin bütün özelliklerini alıyorsunuz. Data member filtrini alıyorsunuz, bütün member filtrini alıyorsunuz. Dolayısıyla ize diye düşünebilirsiniz.
+
+617
+01:54:57,268 --> 01:55:03,347
+Şimdi burada durup birkaç tane örnek vereyim arkadaşlar.
+
+618
+01:55:17,619 --> 01:55:19,579
+Şimdi şuradaki örnekten başlayalım.
+
+619
+01:55:20,899 --> 01:55:24,139
+Şimdi buradaki örnekte bir tane interfej tanımlamışım.
+
+620
+01:55:24,979 --> 01:55:27,479
+Bu interfejsin üç tane metodu var.
+
+621
+01:55:28,139 --> 01:55:32,799
+Öncelikle dikkat etmeniz gereken interfejsi implement ederken bakın burada class yok.
+
+622
+01:55:33,879 --> 01:55:42,859
+Bu bir class ama interfejs classı ama Java sadece interfejs keywordünü kullanarak bu classı tanımlıyor.
+
+623
+01:55:43,828 --> 01:55:59,828
+Sınavda mesela bu tür hatalar yapıyorsunuz. Interface, boşluk class, boşluk shape gibi hatalar yapıyorsunuz. Bunlar sizden puan götürüyor. Interface'i tanımlarken sadece interface keyword'ünü kullanıyorsunuz.
+
+624
+01:56:01,716 --> 01:56:13,076
+Interface'in içerisinde tanımlamış olduğunuz bütün metotlar abstract metottur. Zaten bütün hepsi abstract olduğu için gelip de bunları abstract keyword'e eklemiyoruz.
+
+625
+01:56:14,396 --> 01:56:23,176
+Bu da yaptığınız diğer bir genel hata. Yani geçen senelerden abstract keyword'ü kullandığınız zaman bu da sizden puan götürecek arkadaşlar.
+
+626
+01:56:24,627 --> 01:56:38,707
+Demek ki interface sınıfı tanımlanıyorsa bunun içerisindeki bütün metotlar zaten abstract olduğu için abstract keyword'ını kullanmıyoruz. Zaten bütün metotlar interface'i implement eden alttaki sınıfta implement edilmeli.
+
+627
+01:56:39,807 --> 01:56:43,948
+Ve interface'in içerisindeki metotların kesinlikle method body'si yok.
+
+628
+01:56:44,627 --> 01:56:53,367
+Method body'yi eğer interface'in içinde implement ederseniz interface konseptini anlamamışsınızdır demektir. O da yine sizden puan götürüyor.
+
+629
+01:56:54,647 --> 01:57:06,787
+Şimdi biz şu anda üç tane tip inheritance öğrenmiş olduk. Bir regular sınıfları kullanarak, iki abstract sınıfları kullanarak, şimdi üçüncü olarak interface'i kullanarak inheritance kullanmış olduk.
+
+630
+01:57:07,039 --> 01:57:30,960
+Şimdi shape interface'i bu shape'den bir tane class türetelim. Bakın burada bir tane class'ım var, point class'ı. Bu point class'ı shape'i implement etmiş. Bakın extend kelimesi yok. Neden? Yukarıdaki parent interface.
+
+631
+01:57:32,020 --> 01:57:38,420
+Ondan dolayı interface'i extends yazdığınız zaman yine oradan puan kalb ediyorsunuz.
+
+632
+01:57:40,340 --> 01:57:44,880
+Şimdi bu bir regular class, bir tane interface'i implement ediyor.
+
+633
+01:57:45,539 --> 01:57:55,579
+Bu regular class'ın iki tane global member field'ı var. Bunu protected olarak tanımlamışım.
+
+634
+01:57:57,460 --> 01:58:16,960
+Bir tane zero parameter constructor var, bir tane iki parameter constructor var. Setter ve getter metotlarını yazmışım X ve Y için. Bir tane area diye bir tane public metodum var, bir tane volume diye double metodum var, bir tane de get name metodum var.
+
+635
+01:58:18,880 --> 01:58:22,140
+Şimdi bu sefer point'ten circle'a gidelim.
+
+636
+01:58:24,979 --> 01:58:46,299
+Şimdi circle neyi ekstent ediyor? Point'i ekstent ediyor. Point neydi? Regular class'ta. Point sınıfını ekstent ediyor. Bunun içerisinde benim bir tane daha global member filter'm var. Protective tanımlanmış. Bir tane default constructor'm var. Bir tane üç parameter constructor'm var.
+
+637
+01:58:50,068 --> 01:59:04,828
+Ondan sonra bir tane getRadius metodum var. Bir tane setRadius metodum var. Getter ve setter'ları radius için yapmışım. Array metodum, bir de getName metodum var.
+
+638
+01:59:04,828 --> 01:59:07,828
+Şimdi point...
+
+639
+01:59:09,555 --> 01:59:22,935
+Şuradaki şey ne diyordu? Diyordu ki benden türemiş olan, beni eksent eden metot şu üç tane metodu implement etmek durumunda.
+
+640
+01:59:24,083 --> 01:59:34,403
+Bundan extend eden ne? Point. Point bunları yapmış mı? Area'yi, volume'u bir de get name'i gerçekleştirmiş.
+
+641
+01:59:34,403 --> 01:59:49,543
+Şimdi point'i extend eden circle bunları dikkat edin get name'i override yapmış.
+
+642
+01:59:50,676 --> 01:59:55,475
+Area'yi override yapmış ama volume'u hala yukarıdan alıyor.
+
+643
+01:59:57,796 --> 01:59:59,416
+Volume'u yukarıdan alıyor.
+
+644
+01:59:59,855 --> 02:00:09,095
+Bu circle point'ı extendeden bir tane regular class olduğu için sadece override etmesi gerekenleri override ediyor.
+
+645
+02:00:09,095 --> 02:00:11,695
+Onun dışındaki biri diğer parent'ten kullanıyor.
+
+646
+02:00:12,576 --> 02:00:16,775
+Şimdi circle'ı bu sefer cylinder extend etsin.
+
+647
+02:00:19,315 --> 02:00:45,195
+Ne oldu? Shape'i implement eden point'tı. Point regular class'tı. Point'ı implement eden, point'ı extend eden circle'dı. Şimdi de circle'ı extend eden cylinder. Üçüncü bir child class bu ilk oluşturduğum inheritance tree'de. Bu cylinder'ın da bir tane global member field'ı var. Bir tane default constructor var.
+
+648
+02:00:45,583 --> 02:01:13,043
+Dikkat edin, bir tane dört parametreli constructor var. Şimdi bu constructorda height'ı zaten kendisine ait bir tane global member field. Radius bunun parent'ından gelen member field. XV ise bunun parent'ın parent'ından gelen yani point kılısından gelen member field var. Bunların hepsini burada initialize ediyorum.
+
+649
+02:01:13,427 --> 02:01:16,948
+Getir ve Setir metodu var. Ne için? Height için.
+
+650
+02:01:17,391 --> 02:01:23,552
+Ondan sonra da area ve volume metotlarını burada override ediyor.
+
+651
+02:01:23,552 --> 02:01:30,632
+Şimdi tekrardan circle'a dönelim. Circle'da direkt volume metodu var mıydı? Yoktu.
+
+652
+02:01:31,072 --> 02:01:36,152
+Nereden peki bu volume geliyor? Extend etmiş olduğu point'ın içerisinde volume var.
+
+653
+02:01:36,472 --> 02:01:45,372
+Bakın şurada volume var. Dolayısıyla da circle bunu inherit ettiği için bu circle'ın içerisinde de volume metodu var.
+
+654
+02:01:45,391 --> 02:02:12,832
+gibi düşünüyoruz. Silindir ise bu volume metodunu ne yapıyor? Burada override ediyor. Şimdi bir de test metoduna bakalım. Bu test metodunda bu oluşturmuş olduğum inheritance strildeki objeleri ne yapıyorum? Kullanmaya çalışıyorum. Öncelikle bir tane point objesi oluşturmuşum. Bir tane new keyword ile point objesi oluşturmuşum. Bu objenin referansını
+
+655
+02:02:13,167 --> 02:02:17,647
+Point değişkenini atamışım. Point değişkeninin tipine Point sınıfı.
+
+656
+02:02:18,787 --> 02:02:22,967
+Bir tane Circle objesi oluşturmuşum New Keyword'üyle.
+
+657
+02:02:24,047 --> 02:02:29,187
+Sonra bu objenin referansını Circle tipindeki bir tane değişkeni atamışım.
+
+658
+02:02:29,187 --> 02:02:33,187
+Bir tane Silinder tipinde objeyi oluşturmuşum.
+
+659
+02:02:33,907 --> 02:02:38,687
+Bu objenin referansını Silinder tipindeki bir değişkeni atamışım.
+
+660
+02:02:39,923 --> 02:03:05,024
+Ondan sonra da şunu yapmışım. Shape tipinde bir tane Array'i tanımlamışım. Shape tipinde demek ki interface sınıfı aynı bir tip olabiliyormuş. Yani aynı abstract class gibi, aynı regular class gibi interface sınıfı da bir objenin ya da bir Array'in tipi olabilir.
+
+661
+02:03:06,771 --> 02:03:29,911
+Shape tipinde bir tane Array tanımlıyorum. Ondan sonra da bu Array'in ilk defa ne yapıyorum? New keywordüyle bu Array'i memori'de oluşturuyorum. Dikkat edin, bunu oluşturdum ama bu Array'in içerisinde 3 tane hücre var ama hiçbirisi henüz daha obje içermiyor.
+
+662
+02:03:30,644 --> 02:03:53,564
+Hani bunu da yanlış yapabiliyorsunuz sınavda. Burada sanki içerisinde aynı zamanda objeler de oluşturulmuş gibi düşünüyorsunuz. Hayır, bu sadece içerisinde 3 tane obje tutmak amaçlı oluşturulmuş ve tipi shape tipinde objeleri tutmak üzere oluşturulmuş bir tane EREK.
+
+663
+02:03:55,028 --> 02:04:18,308
+Şimdi bu Array'in ilk hücresine bir tane point tipinde pardon point objesini atıyorum. Bu point objesi aynı zamanda neydi? Tekrar bakalım. Shape'i implement ediyordu. Yani shape'in child'ıydı. Dolayısıyla point aynı zamanda shape tipinde.
+
+664
+02:04:19,380 --> 02:04:42,500
+Biz inheritance ilişkisini konuşurken ne demiştik? A child object can be used whenever the parent is expected. Burada parent tipinde bir tane ben obje bekliyorum. Parent interface, interface'in objesi olmaz. Dolayısıyla parent'ın çocuklarının objeleri buraya atanabilir.
+
+665
+02:04:43,188 --> 02:04:50,887
+Point, parent'ın bir tane chart class'ının objesi. Dolayısıyla burayı atayabiliyorum.
+
+666
+02:04:52,188 --> 02:04:53,327
+Evet abi de seni dinliyorum.
+
+667
+02:04:54,847 --> 02:04:59,648
+Hocam şöyle bir şey yapsak, yani büyük ihtimalle olur ama ben tekrar soruyorum emin olmak için.
+
+668
+02:05:01,268 --> 02:05:13,148
+Mesela ilk satır için shape point eşittir, new point, 4-5 yazsak da kabul olur muydu? Çünkü shape bir abstract class gibi davranır mıydı? Parent class olarak.
+
+669
+02:05:15,028 --> 02:05:18,387
+Bir daha söyle. Shaped'den sonra ne dedim?
+
+670
+02:05:19,667 --> 02:05:33,707
+Ya hocam, yani tek tanımlama, tek sorduğum şey şu. Yani ilk satırda yazdık ya, point, point, eşittir, new point diye. Oraya shape, point, eşittir, new point yazsak da yine olur muydu?
+
+671
+02:05:33,887 --> 02:05:35,407
+Hemen deneyelim, hemen deneyelim.
+
+672
+02:05:39,444 --> 02:05:42,064
+Teşekkürler.
+
+673
+02:05:45,268 --> 02:05:50,567
+Whenever parent is expected, a child object can be used.
+
+674
+02:05:51,108 --> 02:05:56,608
+Yani burada ben bir tane child'ın objesini memoride oluşturuyorum.
+
+675
+02:05:56,608 --> 02:06:05,608
+Artık bu child'ın objesine istersem child'ın kendi tipini kullanarak bir referansla ulaşabilirim.
+
+676
+02:06:05,967 --> 02:06:11,608
+İstersem bu child'ın parent'ın tipini kullanarak buna ulaşabilirim.
+
+677
+02:06:12,884 --> 02:06:23,163
+Aslında buradaki objem benim chart objem olmuş oluyor. Ama buna ulaşırken ister kendi tipinde bir referansa gidebilirim isterse parent'a gidebilirim.
+
+678
+02:06:23,163 --> 02:06:36,423
+Burada ilk oluşturduğum örnekte ne yapmış oldum? Ben ilk başta chart'ların obje referansını kullanaraktan bu chart'ların objelerine ulaşmış oldum.
+
+679
+02:06:36,735 --> 02:06:57,195
+Sonra ne yapıyorum? Bu çaykların obje referanslarını kullanarak ulaşmış olduğum objelere, objelerin referanslarını bu sefer parent'ın yani en yukarıdaki inheritance tirinin en yukarısında bulunan parent'ın tipindeki bir değişkeni atıyorum.
+
+680
+02:06:57,355 --> 02:07:02,256
+Burada sıfıra, bire ve ikiye, point'ı, circle'ı ve silindire atalım.
+
+681
+02:07:03,572 --> 02:07:10,572
+Ondan sonra ben ne yapacağım? Bunu gerçekleştirdikten sonra bir for döngüsü üzerinde...
+
+682
+02:07:11,091 --> 02:07:18,451
+Bu üç tane objenin hepsinin sahip olduğu get name, area ve volume metotlarını çağıracağım.
+
+683
+02:07:18,751 --> 02:07:32,371
+Bu durumda her objenin içerisindeki volume, area ve get name metotları olduğu için bu metotlar neyi execute ediyorsa onu sonuçlarını ne yapacağım? Göstermiş olacağım.
+
+684
+02:07:41,395 --> 02:07:44,115
+Bir başka örneğimiz var mı?
+
+685
+02:07:44,455 --> 02:07:45,595
+90'lere bakalım.
+
+686
+02:07:47,955 --> 02:07:49,215
+Buna bakmıştık.
+
+687
+02:07:53,043 --> 02:07:53,804
+Şuna bakalım.
+
+688
+02:08:00,787 --> 02:08:03,207
+Hocam geçmeden bir soru sorabilir miyim?
+
+689
+02:08:03,567 --> 02:08:03,987
+Evet.
+
+690
+02:08:04,807 --> 02:08:06,487
+Silindire bir gelebilir misiniz?
+
+691
+02:08:12,051 --> 02:08:18,511
+Hocam burada X ve Y'yi süper kullanmadan yazmamızın sebebi protected diye tanımlamamız mı?
+
+692
+02:08:18,511 --> 02:08:29,371
+Evet, eğer private olmuş olsaydı, güzel bir soru. Mesela point değil mi? Point'te protected yapmış olsaydım. Bunu private olarak tanımlamış olsaydım.
+
+693
+02:08:30,036 --> 02:08:45,396
+Bu değişkenlere direkt olarak sadece bu sınıfın metotlarının sağlamış olduğu, bu sınıf tarafından sağlamış olduğu metotların üzerinden ulaşabilirdim. Yani set ve getlerle ulaşabilirdim.
+
+694
+02:08:45,396 --> 02:08:52,396
+Ama protected tanımlayınca hem bu sınıf hem de bunun altındaki sınıflar...
+
+695
+02:08:54,131 --> 02:08:59,711
+Yani child sınıfları parent'ın bu global member filtrine direkt ulaşabiliyor.
+
+696
+02:09:00,404 --> 02:09:24,744
+Protected tanımlamanın sadece bu avantajı var. Peki, dışarıdaki sınıflar, yani bu inheritance tree'nin dışarısındaki sınıfların objeleri ulaşabilir mi? Hayır. Onların muhakkak bu point'ın public metotlarını kullanaraktan bu değerleri alabilir ya da değiştirebilir.
+
+697
+02:09:26,676 --> 02:09:27,555
+Teşekkürler.
+
+698
+02:09:34,644 --> 02:09:59,604
+Evet, bu da yeni bir başka bir örnek. Burada bir tane account regular classım varmış. Bu regular class içerisinde iki tane protected global member field tanımlamışım. Bir tane constructorım var. Bir tane getir metodum var.
+
+699
+02:10:00,000 --> 02:10:02,480
+withdraw ve deposit metotlarım var.
+
+700
+02:10:04,480 --> 02:10:07,520
+Bir tane business sınıfım.
+
+701
+02:10:07,859 --> 02:10:12,640
+Bu regular metot kullanaraktan inheritance'ı gösteren bir örnek.
+
+702
+02:10:13,039 --> 02:10:35,600
+Account'ı extend etmişim. Account business içerisinde. Burada sadece şurada tanımlanmış olan get balance, bit drop, deposit şeylerim vardı. Şurada bunların hiçbirisini override etmemişim. Interest ball diye bir tane metodum var.
+
+703
+02:10:36,180 --> 02:10:59,400
+Bu sınıfın bir tane kendisine ait constructor var. Constructor'ın içerisinde parent'ın constructor'ını çağırıyorum. Şuna bakalım. Burada da yine parent'ın sağlamış olduğu bütün metotları kullanıyorum. Sadece parent'ın global member filklerini initialize ederken super keyword'ını kullanıyorum.
+
+704
+02:11:03,380 --> 02:11:16,920
+Burada da yine bu parenting metotlarını kullanıyorum. Sadece bu sınıfa özgün olarak implement etmem gereken interest ball metodunu burada implement ediyorum.
+
+705
+02:11:19,060 --> 02:11:26,800
+Bu da regular sınıflara bir örnekti. Başka gösterebileceğim örnekti.
+
+706
+02:11:28,939 --> 02:11:30,000
+Hocam.
+
+707
+02:11:30,420 --> 02:11:40,239
+Evet. Yani interface ile abstract dışarıdan bakıldığında aynı görevi yapıyor gibi gözüküyor.
+
+708
+02:11:42,039 --> 02:11:48,420
+İkisiyle de inheritance yapabiliyorsun. Ama abstract, sen sorunu sor, ondan sonra devam edin.
+
+709
+02:11:48,756 --> 02:12:02,716
+Yani hani siz hangisini kullanalım genelde yaptığımız örneklerde? Hani interface kullanmamız gereken yerde de hani interface kullanacağımızı anlar mıyız? Hani nasıl anlarız?
+
+710
+02:12:02,716 --> 02:12:06,716
+Okey. Şimdi diyelim ki...
+
+711
+02:12:07,412 --> 02:12:15,192
+Bir üst sınıf içerisinde alttaki sınıfların bir inheritance ilişkisi kuracağını anladım.
+
+712
+02:12:15,192 --> 02:12:30,372
+Yani dedin ki işte bu iki tane farklı sınıf tipi var. Bu sınıfların objelerini kullanacağım ama bu sınıflar birbirine benzer sınıflar, inheritance ilişkisi kuracağım.
+
+713
+02:12:30,720 --> 02:12:42,400
+Şimdi üstteki sınıfa bakıyorum. Üstteki sınıf, aşağıdaki sınıfın bazı metotları üstteki sınıfta kullanılabilir.
+
+714
+02:12:43,160 --> 02:12:56,340
+Yani işte mesela person objesi diyelim mesela. Person'dan patient bir de doctor. İki tane alt sınıf üreteceksin.
+
+715
+02:12:56,756 --> 02:13:11,276
+Şimdi bu person metodu içerisinde bazı person sınıfı içerisinde bazı metotlar var ki hem doctor için hem de patient için metot badisi üst tarafta kullanılabilir.
+
+716
+02:13:12,115 --> 02:13:21,216
+Bu durumda şunu diyorsun, ben aynı kodu iki tane farklı alt sınıfta yazmak yerine üst sınıfta kullanmayı tercih ediyorum.
+
+717
+02:13:21,676 --> 02:13:32,475
+Ve bu metotların özellikle de sayısı fazlaysa yani ortak implementasyona ortak olan sınıfların ben abstract sınıfı kullanmayı tercih ediyorum inheritance'ta.
+
+718
+02:13:32,884 --> 02:13:59,204
+Sadece alttaki sınıflarda farklılık gösterme gösteren ve alttaki sınıflarda mutlaka bulunması gereken metotları abstract olarak tanımlıyorum. Bu abstract sınıf kullanmak için güzel bir karar mekanizması. Peki, interface'de ne yapıyorum? Şimdi böyle bir durum yok. Yani iki tane farklı sınıfım var. Bu sınıfların yukarıda ortak implement edilecek sayısı az.
+
+719
+02:13:59,988 --> 02:14:23,648
+Ya da hiç yok. Ve alttaki sınıfın da birden fazla farklı parent'ın yeteneğini içermesi gerekiyor. Mesela az önceki örnekte gördük. İşte personal vehicle var, commercial vehicle var. Birden fazla yetenekte sınıfın özelliklerini içermesi gerekli.
+
+720
+02:14:27,988 --> 02:14:47,728
+Kodlama yaparken şunu da göreceğiz. Biz bir sınıf yazarken sınıfın içerisindeki metotlarının sınıfla beraber uyumlu olmasını istiyoruz. Yani bir sınıfın içerisinde metotları yazarken o metotların birbiriyle uyumlu olmasını ve sınıfın esas amacına uygun olmasını istiyoruz.
+
+721
+02:14:53,043 --> 02:15:12,684
+Bir tane commercial vehicle sınıfı yazıyorum. Bu commercial vehicle sınıfının içerisine o commercial vehicle ile alakasız olan personal vehicle'daki metodu yazmak istemiyorum. Dolayısıyla da her sınıfın yeteneklerini ayırıyorum. Farklı grupları ayırıp farklı sınıflar yaratıyorum.
+
+722
+02:15:21,043 --> 02:15:25,283
+sahip olması gerekiyorsa o zaman interfeysi kullanmayı tercih ediyorum.
+
+723
+02:15:25,283 --> 02:15:44,403
+Ama abstract sınıfın interfeysinden en büyük farkı eğer yukarıdaki sınıf bazı ortak metotları içeriyorsa ve bunların implementasyonunu bir defa yapıp totalde yazacağım kod miktarını azaltmak istiyorsam abstract sınıfla interfeysi kullanmayı tercih ediyorum.
+
+724
+02:15:47,667 --> 02:15:49,867
+Tamam hocam, teşekkür ederim.
+
+725
+02:15:51,007 --> 02:15:58,068
+Biraz daha örnekler üzerinde çalışmaya başlayınca daha da hızlı göreceksiniz.
+
+726
+02:15:59,007 --> 02:16:09,007
+Ben burada abstract sınıf kullanarak yapayım, interface kullanarak yapayım, regular sınıf kullanarak inheritance'ı kullanayım kısmını daha rahat göreceksiniz.
+
+727
+02:16:10,292 --> 02:16:31,332
+Şimdi buradaki örnekte biz bus örneğini, commercial vehicle bir de personal vehicle örneğini konuşmuştuk. Car, bus bir de motorcycle şeyi vardı. Bunlardan car ve bus'ın implementasyonunu göstermiştik.
+
+728
+02:16:34,548 --> 02:17:02,488
+gösterdik. Personal vehicle'ı gösterdik. Aslında personal vehicle'ı gösterirken bunun içerisinde getplate de vardı. Ama burada dikkat edin getplate'i bir sınıfa taşımışım. Yani bir interfaz diğer interfaz sistem extend edebiliyor. Burada dikkat edin extends kelimesi var. Aynı abstract sınıfta olduğu gibi bir interfaz başka bir interfaz ise
+
+729
+02:17:02,548 --> 02:17:15,968
+Extend edebiliyor. Tabii bir interface sadece bir interface'i Extend edebilir. Extend keyword'ünü görünce yukarıda ondan sonra sadece tek bir sınıf ismi gelmesi gerekiyor.
+
+730
+02:17:16,688 --> 02:17:27,968
+Gördünüz burada Vehicle diye bir de interface'im var. Tek metodum var. Personal Vehicle onu Extend etmiş. Commercial Vehicle onu Extend etmiş.
+
+731
+02:17:29,811 --> 02:17:53,332
+Ondan sonra bus, commercial vehicle'ı implement etmiş. Car, hem commercial vehicle hem personal vehicle'ı implement etmiş. Bir de vehicle registration sistemi kodum var. Bunun içerisinde iki tane global member field tanımlamışım. Bir tanesi commercial vehicle'ı tutacağım, Array.
+
+732
+02:17:53,744 --> 02:18:05,084
+İkincisi personal vehicle'ı tutacağım ArrayList ve bunlarla ilgili bir tane search, bir tane de register metodu yazmışım.
+
+733
+02:18:05,084 --> 02:18:21,744
+Şimdi hani sizden isteğim burada olmayan diğer metodları da sizler yazın. Yani neler var? İşte yeni bir tane commercial vehicle'ı eklemek, yeni bir tane personal vehicle'ı eklemek.
+
+734
+02:18:21,744 --> 02:18:30,204
+eklemek, yeni bir tane commercial vehicle eklemek var, search etmek var. Mesela remove etmek yok.
+
+735
+02:18:30,543 --> 02:18:50,703
+Ya da işte personal vehicle için yeni bir taneyi eklemek, çıkarmak, remove etmek yok. Bu vehicle registration sistemi bu şekilde ekstant edebilirsiniz. Bir de buna main metot ekleyebilirsiniz. Ya da ayrı bir sınıf yapıp mesela burada text calculation example var. Bunu genişletebilirsiniz.
+
+736
+02:18:51,283 --> 02:18:58,923
+Burada yeni bir tane araba, otobüs yaratmışım, yeni bir tane araba yaratmışım.
+
+737
+02:18:59,304 --> 02:19:02,423
+Commercial vehicle sınıfı yaratmışım.
+
+738
+02:19:03,796 --> 02:19:30,056
+Ve bu commercial vehicle sınıfından ne yapıyorum? Mesela yeni bir tane araba yaratmışım. Commercial vehicle tipine esayet etmişim. Az önceki konuştuğumuz şey, child objesi yaratmışım ama child objesine bir üst parent'ın tipiyle, tipinde yaratılmış obje referansıyla ulaşıyorum.
+
+739
+02:19:31,796 --> 02:19:57,015
+Kesik olan ne var? Bir tane vehicle registration sistemin oluşturulması. İçerisine bir tane araba atacaksınız. İşte bus atacaksınız. Motor cycle atacaksınız. Ondan sonra bunun içerisinde bir search işlemi yapacaksınız. Bunun içerisinde bir ekleme işlemi, remove işlemi yapacaksınız. Bu kısımları lütfen arkadaşlar siz yapın. Çünkü bununla sınavda karşılaşacaksınız.
+
+740
+02:20:00,435 --> 02:20:00,896
+Ok?
+
+741
+02:20:06,484 --> 02:20:17,164
+Başka göstereceğim şu an için bir örneğim var mı? Şu an için yok. Ben sunumu burada tutuyorum.
+
+742
+02:20:30,195 --> 02:20:43,595
+Şu ana kadar ki geldiğimiz yer 131. slide'a kadar gelmiş oldum. Gelecek haftadan sonra 132'den devam edeceğiz. Evet, [öğrenci] senin sorun var galiba.
+
+743
+02:20:45,796 --> 02:20:47,615
+Yok hocam, önceden kalırmıştım kalmıştım.
+
+744
+02:20:47,615 --> 02:20:48,135
+Tamam, tamam.
+
+745
+02:20:49,716 --> 02:20:53,175
+Arkadaşlar, başka sorusu olan var mı bugünkü dersle ilgili?
+
+746
+02:20:55,123 --> 02:21:09,943
+Artık objeler arasındaki ilişkileri tamamlamış olduk. Bundan sonra biraz daha örnekler üzerinde çalışacağız. Artık ArrayList'in dışındaki yeni data structure'ları da konuşmaya başlayacağız önümüzdeki haftalarda.
+
+747
+02:21:12,283 --> 02:21:22,644
+Sanırım sorusu olan yok. Arkadaşlar, katılımınız için teşekkür ediyorum. Bugün iyi dersler dilerim. İyi bir geri kalan haftanın da iyi geçmesini diliyorum. İyi günler.

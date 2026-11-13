@@ -1,0 +1,4007 @@
+1
+00:11:15,220 --> 00:11:16,399
+Arkadaşlar günaydın.
+
+2
+00:11:28,371 --> 00:11:29,771
+Sesim geliyor mu arkadaşlar?
+
+3
+00:11:31,192 --> 00:11:32,331
+Günaydın hocam, geliyor.
+
+4
+00:11:37,203 --> 00:11:43,723
+Evet, şunu da old screen mode'a taşıyalım. Derse başlayalım.
+
+5
+00:11:44,163 --> 00:11:46,743
+Hocam, başlamadan proje hakkında bir soru sorabilir miyim?
+
+6
+00:11:47,083 --> 00:11:47,803
+Olur, tabii ki.
+
+7
+00:11:48,683 --> 00:12:02,524
+Hocam, projede bize UML diagram verilmiş. İşte mesela orada customer için e-mail gibi bilgiler var ya da işte bir tane interface var. Bunu cable provider veya GSM provider inherit ediyor.
+
+8
+00:12:03,091 --> 00:12:12,351
+Böyle bir durum var fakat aşağıda bize bir örnek giriş verdiğinde sadece bir kullanıcı ismi istiyoruz, bir tane servis sağlayıcı istiyoruz, sonra onu ekrana bastırıyoruz.
+
+9
+00:12:12,491 --> 00:12:17,292
+Yani biz bu sistemi kendimiz mi tasarlamamızı bekleniyor yoksa diagrama göre mi kodlamamızı bekleniyor?
+
+10
+00:12:18,331 --> 00:12:19,771
+Bu konuda biraz kafam karıştı benim.
+
+11
+00:12:19,771 --> 00:12:28,771
+Yani UML diagram içerisinde, UML diagramı...
+
+12
+00:12:28,851 --> 00:12:54,091
+implement etmeniz gerekiyor. Bu UML diagramı implement ederken eksik gördüğünüz bir takım attribütler yoksa UML diagramda ya da eksik gördüğünüz bir takım metotlar yoksa bunu hidden information gibi düşünüp hani bunu size vermemişiz, eksik bırakmışız gibi düşünüp implement etmeniz gerekiyor.
+
+13
+00:12:54,740 --> 00:13:09,899
+Buradaki sonuçta ortaya çıkaracağınız uygulama bu UML diagrama dayalı geliştirilmiş bir uygulama. Bunun da test edilmesi gerekiyor. Bunun için bir tane main program tasarlıyorsunuz.
+
+14
+00:13:10,255 --> 00:13:17,995
+Bu main program içerisinde nasıl bir akış olacağıyla ilgili basit bir orada örnek verilmiş.
+
+15
+00:13:17,995 --> 00:13:23,055
+İşte şöyle şöyle bilgiler girilecek. Bunun sonucunda şöyle bir çıktı alınacak.
+
+16
+00:13:23,795 --> 00:13:31,995
+Bu aslında oraya yazılmış olan şey bu programla beraber sizin implement etmiş olduğunuz...
+
+17
+00:13:32,000 --> 00:13:38,799
+Sınıfların ve sınıflar içerisindeki metotların çalıştığını göstermek amaçlı bir tane orada şey var.
+
+18
+00:13:39,279 --> 00:13:45,740
+Akış var. Main program içerisinde olacak. Yani main metodu içerisinde olacak akış.
+
+19
+00:13:46,111 --> 00:13:57,511
+Hocam işte o akışta mesela hiçbir kullanıcının e-mailini istemiyor. Mesela attribute olarak UML diagramlar veya cable provider mi, GSM provider mi bunun hakkında bir bilgi istemiyor.
+
+20
+00:13:57,812 --> 00:14:09,991
+Onları hani siz şey yapabilirsiniz. Yani kullanıcıdan yani onu sınırlayıcı illa hani bu kadar bilgiyle ben test etmemi istiyorlar demenizi istemiyorum. Anlatmaya çalıştım o.
+
+21
+00:14:10,303 --> 00:14:24,264
+Yani orada bu UML diagramı ile beraber size sunulmuş olan programın yeteneklerini test etmenizi sağlayacak inputları girmeniz isteniyor.
+
+22
+00:14:26,663 --> 00:14:28,463
+Anladım hocam, teşekkür ederim.
+
+23
+00:14:30,388 --> 00:14:41,628
+Size şeyi vermesi açısından, oradaki main program içerisinde ne olması gerektiğini vermesi açısından oraya koyduk.
+
+24
+00:14:41,628 --> 00:14:53,228
+Ama sadece onu baz aldığınızda o zaman o program için implement ettiğiniz birçok metodu kullanmamış oluyorsunuz.
+
+25
+00:14:54,067 --> 00:15:12,927
+Dolayısıyla ne kadar kapsayıcı yapacak olursanız o kadar sizin tabii ki yapmış olduğunuz uygulamaya harcadığınız emeği bir de oluşturduğunuz uygulamanın kompleks sitesini gösterecektir. O da alacağınız notu olumlu yönde etkilecektir. O şekilde düşünebilirsiniz.
+
+26
+00:15:16,048 --> 00:15:16,867
+Teşekkür ederim hocam.
+
+27
+00:15:18,307 --> 00:15:18,587
+Tamam.
+
+28
+00:15:20,211 --> 00:15:40,711
+Şimdi bizim iki haftamız kaldı arkadaşlar. Önümüzdeki hafta ikinci vize sınavımız olacak. Son haftada projelerinizin teslimi var. Ben deadline'ı şimdi hatırlayamadım. Siz bakmışsınızdır.
+
+29
+00:15:41,107 --> 00:16:07,747
+Son hafta ayın kaçında bitiyor? 12'sinde bitiyor dönem. O haftanın perşembe günü sanırım projelerinizde şey yapacaksınız. Asistan hocalarınız sizlerle ayrı ayrı toplantılar şeklinde projelerinizi kontrol ediyor olacak.
+
+30
+00:16:08,851 --> 00:16:20,851
+Birinci vizeye yahut da ikinci vizeye geçerli bir sebepten dolayı giremediyseniz bunu dilekçeyle bölüm sekreterliğine raporluyorsunuz.
+
+31
+00:16:22,111 --> 00:16:29,412
+Bölüm sekreterliği üzerinden mazeret sınavına girecek bütün öğrencilerin listesi bize geliyor.
+
+32
+00:16:30,451 --> 00:16:33,791
+Son hafta bir de mazeret sınavı yapıyor olacağız.
+
+33
+00:16:35,059 --> 00:16:43,899
+Ama buna sadece mazeretini belirtmiş ve bölüm tarafından kabul edilmiş olan başvuruları için yapabiliyorum.
+
+34
+00:16:44,159 --> 00:16:46,599
+Yani ben kendim buna karar veremiyorum.
+
+35
+00:16:48,379 --> 00:17:01,259
+Bugün ders kapsamında son olarak işlemek istediğim konular bunlar bir tanesi file operations, bir tanesi type casting ile başlayacağız.
+
+36
+00:17:01,748 --> 00:17:16,288
+Geçen hafta biliyorsunuz exception handling konusunu gösterdik. Arkasından da exception handling ile ilgili çok farklı örnekleri kod üzerinde de gördük.
+
+37
+00:17:16,607 --> 00:17:31,248
+Şimdi artık öncelikle typecasting konusunu konuşacağız. Ondan sonra file operations konusunu konuşacağız. Inner classları konuşacağız. En sonunda da multi-threading konusunu konuşacağız.
+
+38
+00:17:32,819 --> 00:17:45,779
+Dersi 3 session şeklinde yapmak istiyorum. Dolu dolu gideceğiz. Bugün yapabilirsek multi-trading ile beraber işlemek istediğim konuları tamamlamak istiyorum arkadaşlar.
+
+39
+00:17:47,559 --> 00:17:58,879
+Sorunuz olursa lütfen durdurun, chatten yazın yahut da mikrofonunuzu açın, mikrofonunuzu açıp sorsanız daha hızlı olur. O şekilde devam edelim.
+
+40
+00:18:00,307 --> 00:18:02,367
+Ben ilk sesyonun süresini başlatayım.
+
+41
+00:18:02,367 --> 00:18:05,748
+Okey.
+
+42
+00:18:07,067 --> 00:18:08,248
+Typecast'im.
+
+43
+00:18:14,996 --> 00:18:31,635
+As you know, so we learned, when we learned inheritance topic, we said that an object of a class can be used wherever, whenever.
+
+44
+00:18:33,140 --> 00:18:53,080
+A parent is expected. Okay. So we can create an object of the child class and yet we can use the parent class type in order to keep track of the child object. Okay. Now this was when we use.
+
+45
+00:18:53,407 --> 00:19:16,487
+Arkadaşlar, the inheritance relationship. We can do it with the abstract classes. We can do it with the interface type inheritance. We can do it with the regular classes. Okay. First, we can create an object of the child. And in order to keep track of this child object, we can use the parent type. Okay.
+
+46
+00:19:17,395 --> 00:19:24,875
+Now, we are going to talk about how we can convert the parent object.
+
+47
+00:19:25,675 --> 00:19:25,816
+Okay.
+
+48
+00:19:26,115 --> 00:19:36,836
+So when you have an object, okay, and which is defined, which is referenced by a parent type.
+
+49
+00:19:36,836 --> 00:19:37,476
+Okay.
+
+50
+00:19:37,983 --> 00:19:47,864
+And if we want to convert this object into a child object, okay, then we need to do typecasting.
+
+51
+00:19:48,443 --> 00:19:50,063
+Okay, so what does this mean?
+
+52
+00:19:51,963 --> 00:19:57,063
+So let's take a look at this example first and then we will go back to DTS.
+
+53
+00:19:57,063 --> 00:20:02,743
+In this particular example, as you see, I have a market shelf class.
+
+54
+00:20:03,923 --> 00:20:08,724
+And in this market shelf class, you see that I have a data structure.
+
+55
+00:20:09,483 --> 00:20:09,784
+Okay.
+
+56
+00:20:10,423 --> 00:20:13,604
+And as the class attributes.
+
+57
+00:20:14,144 --> 00:20:16,384
+And this data structure is a linked list.
+
+58
+00:20:16,523 --> 00:20:21,644
+And you see that this linked list is going to keep item type objects.
+
+59
+00:20:22,163 --> 00:20:22,403
+Okay.
+
+60
+00:20:23,571 --> 00:20:28,351
+And so this market shelf has three methods.
+
+61
+00:20:28,592 --> 00:20:32,351
+So you can add an item into this data structure.
+
+62
+00:20:32,351 --> 00:20:50,851
+You can check whether this item exists in the data structure, or you can call print expired items, which means that it's going to look through all the items that are available in linked list, and it will print the expired items.
+
+63
+00:20:51,412 --> 00:20:59,912
+Arkadaşlar, ok? Arkadaşlar, and this market shelf has a compositional relationship with item type objects, as you see, one to many.
+
+64
+00:20:59,912 --> 00:21:14,412
+Arkadaşlar, and you see item is defined as an interface, ok? And from this interface, two regular classes implements this interface. One is the food regular class implements this interface and the other one electronics.
+
+65
+00:21:15,124 --> 00:21:34,844
+And so take a look at the food class. You see that there is one member field, xpart date, and its type is date. And it has a constructor and two methods. One is get xpart date. The other one is xpart. Okay. Since this is food,
+
+66
+00:21:35,263 --> 00:21:41,443
+Arkadaşlar, object, so get expired date and is expired has a meaning for the food.
+
+67
+00:21:41,443 --> 00:21:56,923
+Arkadaşlar, but for the electronics, these two methods does not have any meaning because for any electronic item, so is get expired date and is expired, so does not mean anything, okay?
+
+68
+00:21:57,943 --> 00:22:00,263
+Arkadaşlar, now let's take a look at this example.
+
+69
+00:22:03,220 --> 00:22:24,720
+Here is the class for the market shelf. You see in the global member fields, I have the status structure. Okay, this is linked list. It's defined as private and it's going to keep the item type object. So therefore, it's a generic class. So I define here as item.
+
+70
+00:22:25,364 --> 00:22:30,884
+And it has one constructor in which I am creating an instance of linked list.
+
+71
+00:22:31,884 --> 00:22:34,543
+There is a method called does exist.
+
+72
+00:22:34,543 --> 00:22:41,704
+As you can see, it takes an item type object as an input.
+
+73
+00:22:42,132 --> 00:22:48,472
+Then it's doing a foreach loop on the item's data structure.
+
+74
+00:22:48,832 --> 00:22:53,392
+So remember, you can do foreach loop any data structure.
+
+75
+00:22:54,072 --> 00:23:01,132
+So when you do foreach loop, it's going to iterate on every item in that data structure.
+
+76
+00:23:01,132 --> 00:23:08,231
+And it's going to assign those objects to a temporary local variable, in this case item.
+
+77
+00:23:08,624 --> 00:23:21,244
+Arkadaşlar, and it's so what we are doing here, we are checking whether this item is the same thing as the input item. If yes, it's going to return to otherwise, it's going to return false.
+
+78
+00:23:22,708 --> 00:23:35,847
+And take a look at the add item method. Now, when you want to add something into data structure, you know that first you need to check whether that item is in the data structure.
+
+79
+00:23:35,847 --> 00:23:50,708
+Now, in order to check whether that item is in the data structure, first you want to check if there are any other methods that are available in your class. In this particular case, there is the one method which checks where...
+
+80
+00:23:50,708 --> 00:24:02,867
+Arkadaşlar, whether that item is in the data structure. So therefore, instead of writing your own code that will check that item is in the data structure, what you do, you directly use this method.
+
+81
+00:24:03,488 --> 00:24:13,928
+Arkadaşlar, does exist. So it takes an item as an input. If that item is in the data structure, it's going to return true.
+
+82
+00:24:15,476 --> 00:24:21,876
+Arkadaşlar, and then if this condition is true, it will return false because the item is already there.
+
+83
+00:24:22,696 --> 00:24:28,496
+Arkadaşlar, otherwise, we are going to add the item into the data structure and return the value true.
+
+84
+00:24:28,836 --> 00:24:30,196
+Arkadaşlar, so far, so good.
+
+85
+00:24:30,596 --> 00:24:39,196
+Arkadaşlar, and so this this is what you have learned in the data structure section of the course before.
+
+86
+00:24:39,763 --> 00:24:59,103
+Now, take a look at the print expired item methods. Now, this is where we are using the typecasting. Now, take a look at this method. First, I am defining a local variable has expired item.
+
+87
+00:25:00,180 --> 00:25:27,340
+Then I'm doing a for each loop on the item status structure. Now remember, this item is a type that I can use in order to keep track of both food type objects and electronics objects. Okay. Remember, parent type, okay, can be used. Okay, whenever
+
+88
+00:25:28,403 --> 00:25:32,584
+The object of the child class is used.
+
+89
+00:25:32,724 --> 00:25:37,923
+So therefore, I'm using item type in order to keep track of food and electronics object.
+
+90
+00:25:38,423 --> 00:25:51,864
+So therefore, in the linked list, I might have both food objects and electronic objects because they both have also, so they both are implementing the item class.
+
+91
+00:25:52,084 --> 00:25:53,943
+So their parent type is item.
+
+92
+00:25:53,943 --> 00:25:54,503
+Okay.
+
+93
+00:25:55,155 --> 00:26:08,076
+Now, what I am trying to do here, I am doing a for each loop on the items data structure in which every object type is item.
+
+94
+00:26:08,695 --> 00:26:08,795
+Okay.
+
+95
+00:26:09,275 --> 00:26:13,915
+But I don't know which kind of object is it.
+
+96
+00:26:14,435 --> 00:26:14,715
+Okay.
+
+97
+00:26:14,915 --> 00:26:17,195
+So I need to do a for each loop.
+
+98
+00:26:17,275 --> 00:26:19,455
+I need to iterate on the items array.
+
+99
+00:26:20,115 --> 00:26:26,415
+But I don't know whether that item is a food object or electronics object.
+
+100
+00:26:27,195 --> 00:26:27,315
+Okay.
+
+101
+00:26:27,935 --> 00:26:46,175
+Now, to do this, what we are, so, what I need to do, in this particular method, I need to print the expired items, which means that I need to call
+
+102
+00:26:47,284 --> 00:26:51,364
+The isExpired method of the food object.
+
+103
+00:26:52,204 --> 00:26:59,003
+Now, but the food object has this method, but the electronics object, it does not have this method.
+
+104
+00:26:59,744 --> 00:26:59,903
+Okay.
+
+105
+00:27:00,124 --> 00:27:07,824
+Now, if I call the isExpired method for the food object, then I won't have any problem.
+
+106
+00:27:08,344 --> 00:27:14,483
+But if I call the isExpired method for the electronics object, then I will have a problem.
+
+107
+00:27:14,932 --> 00:27:25,811
+Now, what I need to do in this case, I need to make sure that that item in the items array is an object of the food class.
+
+108
+00:27:26,612 --> 00:27:30,291
+Okay, now, therefore, Java has a keyword.
+
+109
+00:27:30,852 --> 00:27:33,912
+Okay, just like this, just like.
+
+110
+00:27:34,867 --> 00:27:38,687
+Super, it has a keyword which is called instance of.
+
+111
+00:27:39,407 --> 00:27:39,447
+Okay.
+
+112
+00:27:39,807 --> 00:27:51,927
+Now, the instance of, what it does is that it takes an object, okay, and checks whether that object has a type of certain class.
+
+113
+00:27:52,227 --> 00:27:52,407
+Okay.
+
+114
+00:27:52,864 --> 00:28:02,923
+In the right-hand side of the instance of, we have the class. In the left-hand side of the instance of is the object in the physical memory.
+
+115
+00:28:03,344 --> 00:28:11,963
+Now, so we are checking whether that item is an instance of food. If yes, it's going to return true. If not, it's going to return false.
+
+116
+00:28:12,367 --> 00:28:16,487
+Okay, now let's consider the case that it is true.
+
+117
+00:28:16,487 --> 00:28:23,447
+So this item in the item status structure is an instance of food class.
+
+118
+00:28:24,167 --> 00:28:35,167
+So in that case, so we will go into the code block under the if statement.
+
+119
+00:28:35,887 --> 00:28:37,467
+Now let's take a look at here.
+
+120
+00:28:38,087 --> 00:28:38,268
+Now.
+
+121
+00:28:39,412 --> 00:28:57,792
+Now, in order for me to call the isExpired method, okay, what I need to do, I need to convert the type of this parent of this object into the foot object, okay?
+
+122
+00:28:57,792 --> 00:28:58,432
+Now.
+
+123
+00:28:59,859 --> 00:29:05,819
+Now, remember, I have an item in the linked list data structure.
+
+124
+00:29:05,819 --> 00:29:11,059
+Now, this item, okay, is a food type item.
+
+125
+00:29:11,839 --> 00:29:20,419
+But right now, I am using item parent type in order to reference to this item, okay?
+
+126
+00:29:21,759 --> 00:29:25,819
+And what I'm doing here, I am converting...
+
+127
+00:29:26,256 --> 00:29:31,336
+I am converting the type from parent type to child type.
+
+128
+00:29:31,336 --> 00:29:42,896
+Since I already know that this item is a food object, then I am typecasting to this object into the food object.
+
+129
+00:29:42,896 --> 00:29:53,016
+OK, in order to do the typecasting, what I what I'm doing, I am doing and I'm writing the name of the class within the parentheses in front of in front of the.
+
+130
+00:29:54,228 --> 00:29:58,847
+The variable that points to that object.
+
+131
+00:29:59,248 --> 00:29:59,347
+Okay.
+
+132
+00:29:59,847 --> 00:30:05,100
+Now, when I do that, in that case, I will have...
+
+133
+00:30:06,420 --> 00:30:22,160
+I will have a pointer, okay, that is pointing to right now to the food object, okay, but this pointer or the reference that I have is a food type reference, okay.
+
+134
+00:30:22,607 --> 00:30:26,288
+Then I can call the isExpart method.
+
+135
+00:30:26,548 --> 00:30:26,708
+Okay.
+
+136
+00:30:26,988 --> 00:30:41,387
+Because what I did is that now I'm using food type reference in order to reference the item object in the data structure.
+
+137
+00:30:41,907 --> 00:30:41,968
+Okay.
+
+138
+00:30:42,407 --> 00:30:46,728
+Now, then isExpart is going to return a value to me.
+
+139
+00:30:46,728 --> 00:30:49,347
+Let's say it's true.
+
+140
+00:30:49,788 --> 00:30:49,948
+Okay.
+
+141
+00:30:50,208 --> 00:30:50,607
+Which means...
+
+142
+00:30:50,607 --> 00:31:16,367
+That means that it is expired. And then what I'm going to do, I'm going to write has expiration expired item true. And then I will go iterate to the next item. Okay. And once I complete, okay, once I complete, and then I will print obviously the item which is
+
+143
+00:31:16,672 --> 00:31:32,172
+Arkadaşlar, x part. Okay. Then I will do it for the all items that are available in the items array. At last, so once the for loop is finished, then I will say that, okay, if...
+
+144
+00:31:33,203 --> 00:32:01,203
+Has expired item is false, which means that for none of the items, has expired item is true. So therefore, all items are fresh. Eğer has expired itemı true yapmamışsa hiçbir zaman bu for dönüşü içerisinde, has expired item ilk başta belirlediğim gibi false kalmışsa, burada bütün itemların fresh olmalıdır.
+
+145
+00:32:01,203 --> 00:32:02,203
+olduğunu yazdırıyorum.
+
+146
+00:32:03,023 --> 00:32:07,003
+Okay.
+
+147
+00:32:07,503 --> 00:32:16,283
+So what we have done, an instance of a subclass can be used wherever an instance of the superclass expected.
+
+148
+00:32:17,223 --> 00:32:21,384
+So we learned this when we learned the inheritance topic.
+
+149
+00:32:21,384 --> 00:32:22,023
+Okay.
+
+150
+00:32:22,900 --> 00:32:34,000
+Now, so what we did is that we converted a specific object, okay, to a more general without losing any information.
+
+151
+00:32:35,763 --> 00:33:01,943
+Arkadaşlar, okay. Now, in order, so, basically, so we can convert one type to another, and in this case, we can convert a type from the interface to the class object. This is what we did in the example, in the market shop example. We convert the object from the interface to the class object, okay.
+
+152
+00:33:02,367 --> 00:33:07,468
+Arkadaşlar, or we can convert from the superclass to subclass.
+
+153
+00:33:07,468 --> 00:33:08,008
+Arkadaşlar, okay?
+
+154
+00:33:18,324 --> 00:33:30,904
+Now, this is the main class, okay, and we use this main class in order to check, in order to test the market shelf example.
+
+155
+00:33:30,904 --> 00:33:38,224
+Now, I want you to learn one other class which is highly important.
+
+156
+00:33:38,704 --> 00:33:44,464
+Now, so far, I mentioned to you different important classes.
+
+157
+00:33:45,044 --> 00:33:46,524
+Java provides.
+
+158
+00:33:47,244 --> 00:33:49,724
+We talked about the math class.
+
+159
+00:33:50,264 --> 00:33:53,524
+We talked about the scanner class.
+
+160
+00:33:53,524 --> 00:33:57,264
+We talked about the random class.
+
+161
+00:33:57,624 --> 00:33:57,764
+Okay.
+
+162
+00:33:58,423 --> 00:34:00,724
+And we talked about...
+
+163
+00:34:02,112 --> 00:34:26,731
+Arrays, class, we talked about collections class. Now, all these classes have static methods that are highly useful for us. Okay. By using the static methods that these classes are providing, okay, we are implementing our logic flow in different programs. Now,
+
+164
+00:34:27,168 --> 00:34:33,887
+Calendar class and the date class is also in this category.
+
+165
+00:34:34,208 --> 00:34:38,748
+So you need to learn how to use calendar class and date class.
+
+166
+00:34:39,208 --> 00:34:39,307
+Okay.
+
+167
+00:34:39,847 --> 00:34:47,168
+In the exam, we will assume that you know the methods of the date class and the calendar class.
+
+168
+00:34:47,768 --> 00:34:47,927
+Okay.
+
+169
+00:34:48,307 --> 00:34:52,307
+Not all the methods, but highly commonly used methods.
+
+170
+00:34:52,948 --> 00:34:53,087
+Okay.
+
+171
+00:34:53,087 --> 00:34:55,087
+Now, what the calendar and date class.
+
+172
+00:34:55,168 --> 00:35:18,668
+class is doing. So let's take a look at in this example. Okay. Now here, you see that in the main method, first, I am creating an object of the market shelf. Okay. And then I, I'm using the calendar class. And you see that I call the get instance method, which in this case, get instance method will give me
+
+173
+00:35:18,804 --> 00:35:45,844
+An object with the type calendar. OK, so which means at this line, I am creating an object of the calendar type and I will use this variable call in order to keep track of it. OK, now you see that calendar class has a ad method. OK. Now this ad method, what it does is that first.
+
+174
+00:35:46,208 --> 00:36:13,108
+It takes a, it takes the day of the month for today date. Okay. And it will increment by one, which means that it's going to convert today's date to tomorrow date. Okay. Now, if this is a Thursday today, it's going to make it Friday. Okay.
+
+175
+00:36:13,748 --> 00:36:25,568
+Which means that for so when you when you take a get instance, OK, from the calendar class, as I said, it's going to create an object where the type is calendar.
+
+176
+00:36:25,568 --> 00:36:32,788
+Now in this object, the date is current date, which means the year is current date.
+
+177
+00:36:33,331 --> 00:36:54,171
+Year is 2021. And then month is May. Okay. And the date is, I believe today is 27th. Okay. Which means that in the object of the calendar. Okay. The date is today's date.
+
+178
+00:36:54,612 --> 00:37:06,292
+But what the add method is doing, it's taking the day of the one, which is 27, and it's going to add one, which will make it 28.
+
+179
+00:37:06,292 --> 00:37:07,292
+Okay.
+
+180
+00:37:10,351 --> 00:37:10,952
+Then.
+
+181
+00:37:11,507 --> 00:37:25,907
+I am calling the getTime method. Just like the add method, there is another method, getTime. GetTime is going to get the time from the calendar object as a date type.
+
+182
+00:37:26,356 --> 00:37:44,996
+Okay, now, when you call the get time, it will return an object which has a type date. Okay. And then, then I will keep track of the date object with this local variable. Okay, future.
+
+183
+00:37:45,715 --> 00:38:06,475
+Now, at this point, in the physical memory, I have an object date in which today's date is 28, because remember, I incremented by using the add method, 28, which is in this case.
+
+184
+00:38:07,539 --> 00:38:31,579
+Arkadaşlar, tomorrow's date. Okay. And the rest of the date is the same, which is year is the same 2021. And also the month is the same May. Okay. The only difference is that instead of 27, okay, I in this date object, the date of the month is instead of 27, it is 28. Okay.
+
+185
+00:38:32,755 --> 00:38:41,295
+Now, you see that now I have an object in the physical memory and I'm keeping track of that object with the future keyword.
+
+186
+00:38:42,516 --> 00:39:09,516
+Now, I am going to keep using this call object. And this time, for the call object, I'm going to call the set method. By calling the set method, you see that I can set the year of the calendar with the value that I want. I can set the month of the calendar with the value that I want. And I can set the date of the...
+
+187
+00:39:10,356 --> 00:39:18,636
+Kalender with the value that I want, which means that basically I am updating my calendar for a past date.
+
+188
+00:39:18,636 --> 00:39:19,636
+Okay.
+
+189
+00:39:20,275 --> 00:39:31,095
+And then when I call again the getTime method, okay, now this time it's going to again give me a date object, but this date object will have a past date.
+
+190
+00:39:31,095 --> 00:39:42,775
+In this case, in this date object, I will have the year 2010, month 0, which is January, and the day of the month will be 30, okay?
+
+191
+00:39:44,820 --> 00:40:04,100
+At this at this line now I have two date objects in the physical memory. One is future and this one has the date for tomorrow. Okay. And past and this one has the date for a past date from 2010. Okay.
+
+192
+00:40:04,659 --> 00:40:21,219
+What I did is that I created two different date objects and in order to and I said the values in these date objects by using the calendar class. Okay.
+
+193
+00:40:21,219 --> 00:40:25,675
+Now, afterwards, what I do is that I am adding
+
+194
+00:40:26,356 --> 00:40:46,696
+An item into the market shelf. Remember, I had two different items. One is food. The other one is electronics. And when you want to add a food into when you want to add a food in the constructor of the food, you need to pass a date object. OK, so remember.
+
+195
+00:40:48,776 --> 00:40:53,296
+You see that in the constructor of the food, you need to pass a date object.
+
+196
+00:40:56,052 --> 00:41:09,391
+Okay. So in this particular case, first I am passing a past date. Okay. And then I'm adding a new food object. And for that, I'm passing a future date.
+
+197
+00:41:10,195 --> 00:41:13,615
+And I'm also adding a new electronics objects.
+
+198
+00:41:13,956 --> 00:41:14,096
+Okay.
+
+199
+00:41:14,435 --> 00:41:17,755
+I added three different objects into the market shelf.
+
+200
+00:41:17,895 --> 00:41:22,015
+Then I call check for expression method.
+
+201
+00:41:22,536 --> 00:41:23,935
+Expression method.
+
+202
+00:41:24,096 --> 00:41:24,275
+Okay.
+
+203
+00:41:37,204 --> 00:41:51,084
+OK. In the market shelf, so in the market shelf, I don't have here the check for expiration date.
+
+204
+00:41:51,084 --> 00:41:56,423
+OK. But you can implement this.
+
+205
+00:41:57,876 --> 00:42:05,756
+In order to experiment with it, I only have here the print expired items method, okay?
+
+206
+00:42:06,216 --> 00:42:11,316
+But by implementing check for expiration method, so you can basically...
+
+207
+00:42:12,724 --> 00:42:36,844
+Experiment by utilizing what I taught you in the print expired item. You can also write your own method for check for expression and it is going to method of the market shop. Okay. Now, I want you to learn how to use the calendar class.
+
+208
+00:42:37,331 --> 00:42:39,251
+And also the date class.
+
+209
+00:42:39,591 --> 00:42:39,751
+Okay.
+
+210
+00:42:39,951 --> 00:42:44,271
+So this is important because you might encounter this in the exam.
+
+211
+00:42:49,684 --> 00:42:50,164
+Okay.
+
+212
+00:42:52,204 --> 00:42:57,784
+Now, we haven't talked about the food class so far.
+
+213
+00:42:57,963 --> 00:43:02,404
+So far, I have shown you the market shelf class.
+
+214
+00:43:02,724 --> 00:43:10,804
+I have shown you the main method, okay, which is not your main method that tests the market shelf.
+
+215
+00:43:11,284 --> 00:43:14,304
+Okay, now take a look at the food class.
+
+216
+00:43:18,739 --> 00:43:35,159
+Okay, now the food class implements the item. Remember, item is an interface. Okay, food implements the item. And in the food class, I have one global member field, which is expired date, and it has a type date. Okay.
+
+217
+00:43:36,979 --> 00:43:45,399
+I have a constructor. In this particular constructor, as you see, I am initializing the global member field.
+
+218
+00:43:46,835 --> 00:43:51,135
+And I have a getter method for the expired date.
+
+219
+00:43:51,536 --> 00:43:54,715
+And you see I have an is expired method here.
+
+220
+00:43:55,395 --> 00:43:59,576
+Now in the is expired method, okay, let's see what I'm doing.
+
+221
+00:43:59,735 --> 00:44:04,715
+First, I am creating an object of the date.
+
+222
+00:44:05,195 --> 00:44:09,375
+When you create an object of the date, okay, now.
+
+223
+00:44:10,291 --> 00:44:15,811
+The date object, okay, has the today's date.
+
+224
+00:44:16,011 --> 00:44:32,411
+Okay, when you create an object of the date like this, okay, now the date object in the physical memory has the today's date, which means that when you create a date object, you don't need to set the year or month or day of the month.
+
+225
+00:44:32,871 --> 00:44:38,291
+Okay, so whenever you create a date object, all the...
+
+226
+00:44:38,291 --> 00:44:44,091
+Arkadaşlar, details of the date object is already set.
+
+227
+00:44:44,891 --> 00:44:53,751
+Arkadaşlar, now here you see that I have a day today's date and then I am going to.
+
+228
+00:44:54,831 --> 00:45:00,492
+Arkadaşlar, check whether the expired date of the food item.
+
+229
+00:45:00,492 --> 00:45:01,231
+Arkadaşlar, okay.
+
+230
+00:45:01,940 --> 00:45:13,640
+is before today. Okay, which means that it is it before the today state. Okay, if it is before today state, then this item is expired. Okay.
+
+231
+00:45:14,387 --> 00:45:19,547
+If it is not before today, then so this item is not expired.
+
+232
+00:45:19,547 --> 00:45:21,608
+So therefore, I'm going to return false.
+
+233
+00:45:22,288 --> 00:45:28,127
+OK, so you see that the date object has now another method.
+
+234
+00:45:28,327 --> 00:45:30,768
+You are learning another method, which is before.
+
+235
+00:45:31,327 --> 00:45:41,608
+OK, so therefore, so not only the methods of the classes are important, but also the methods of the days are important.
+
+236
+00:45:41,927 --> 00:45:42,367
+So I.
+
+237
+00:45:42,387 --> 00:45:44,847
+I want you to learn them and use them.
+
+238
+00:45:45,447 --> 00:45:45,788
+OK.
+
+239
+00:45:47,427 --> 00:45:58,988
+And then I have a method to string and which basically prints the expired date for this particular food object.
+
+240
+00:46:02,483 --> 00:46:12,284
+Okay. Now, so let me show you some other examples for the typecasting.
+
+241
+00:46:52,307 --> 00:47:16,988
+Okay, now, so this was the code that we talked about, market shelf, okay, so my data structure here is the constructor of market shelf, does exist method, add item method, print expires items, we already talked about it, print all items, okay, and also the main method here.
+
+242
+00:47:18,867 --> 00:47:31,087
+Arkadaşlar, interface item, the food object, so I already shown you that, and also the electronics, okay?
+
+243
+00:47:32,788 --> 00:47:37,867
+Let's see if I have other examples to show you.
+
+244
+00:47:37,867 --> 00:47:48,827
+Okay, I'm going to show you more examples when we talked about the file operations.
+
+245
+00:47:50,507 --> 00:47:57,804
+Now, so let me stop here and then...
+
+246
+00:47:59,539 --> 00:48:04,680
+Let's go back to here.
+
+247
+00:48:04,680 --> 00:48:05,200
+Okay.
+
+248
+00:48:07,120 --> 00:48:16,079
+Now, when we use typecasting, okay, we tend to make mistakes because
+
+249
+00:48:16,527 --> 00:48:26,967
+When we, so when you try to, it's likely that you can make mistake in the code, okay?
+
+250
+00:48:27,927 --> 00:48:36,487
+So therefore, we try to avoid using typecasting, okay, if necessary, okay?
+
+251
+00:48:38,547 --> 00:48:55,447
+Because converting an object, okay, of parent type to the child type, okay, sometimes in the code is difficult to keep track, okay?
+
+252
+00:48:56,447 --> 00:49:00,967
+Therefore, we only use typecasting when we must.
+
+253
+00:49:02,307 --> 00:49:05,187
+And in particular, we use typecasting.
+
+254
+00:49:06,132 --> 00:49:13,472
+When we do IO operations, okay, which will be the topic of the next lecture, okay?
+
+255
+00:49:14,252 --> 00:49:22,472
+Now, you can avoid using typecasting in your design, okay?
+
+256
+00:49:22,972 --> 00:49:30,012
+For example, for the example that I have shown you, so take a look at this UML diagram.
+
+257
+00:49:30,012 --> 00:49:32,812
+In this particular UML diagram,
+
+258
+00:49:34,260 --> 00:49:58,920
+I took the two methods that belongs to the food object and I moved it to the parent class, okay, which I put it into the interface class, which means that if these two methods are in the interface, both food class and also the electronics class, they must implement these two methods.
+
+259
+00:50:00,000 --> 00:50:14,500
+They must implement these two methods. Arkadaşlar, mikrofonlarınızı kapatın. Eğer sözü almayacaksanız mikrofonlarınızı kapatın ki sizin backgroundda olan sesler şey yapmasın.
+
+260
+00:50:18,483 --> 00:50:25,043
+Here you see that food and electronics class implements the interface.
+
+261
+00:50:25,043 --> 00:50:29,043
+So they both have to...
+
+262
+00:50:29,215 --> 00:50:51,475
+Arkadaşlar, implement these two methods. Now, what was the reason that we used in the previous example? So why did we actually wanted to typecast the item type object into the food type object? Because the expired method only belongs to the food.
+
+263
+00:50:51,987 --> 00:51:19,887
+object. Okay, is expired method was only available in the food class. Okay, it was not available in the electronic class. Now, if that object turned out to be not food object in the previous UML design, then we would get an error. But now, by updating my design, okay, I moved these two methods into the parent class. Okay, parent interface.
+
+264
+00:51:19,987 --> 00:51:26,668
+Class, in that case, these two methods must be implemented both in food class and electronic class.
+
+265
+00:51:26,947 --> 00:51:31,527
+So in that case, when I call the isExpart method, okay.
+
+266
+00:51:32,052 --> 00:51:46,492
+Even if I'm using the item type in order to keep track this object, if I call the isExpired method, isExpired method will be available both in food and electronics objects, so I won't have any problem.
+
+267
+00:51:47,132 --> 00:51:59,371
+Okay, so therefore you see that by making, by moving some of the methods to the parent class, okay, I can avoid using the typecasting.
+
+268
+00:52:00,052 --> 00:52:07,711
+Okay. So remember, there are cases where we must use typecasting. One of them is IO operations.
+
+269
+00:52:09,152 --> 00:52:14,532
+So we will see how we can, how are we going to use it. Okay.
+
+270
+00:52:16,751 --> 00:52:20,891
+Now let's take a look at the file operations. Okay.
+
+271
+00:52:24,115 --> 00:52:32,016
+For this, so let me switch into another slide.
+
+272
+00:52:37,780 --> 00:52:38,444
+Düştü.
+
+273
+00:52:46,452 --> 00:52:47,652
+Let's do this.
+
+274
+00:52:47,652 --> 00:52:50,351
+Let's share it on screen for now.
+
+275
+00:52:57,588 --> 00:52:58,088
+Ok.
+
+276
+00:52:59,848 --> 00:53:01,928
+Now, working with files.
+
+277
+00:53:02,028 --> 00:53:14,028
+So when we work with files, there are certain exceptions that might occur, that might happen when we work with files.
+
+278
+00:53:14,808 --> 00:53:14,888
+Ok.
+
+279
+00:53:15,368 --> 00:53:16,908
+Now, for example,
+
+280
+00:53:17,460 --> 00:53:25,219
+Java.io has implemented all these exceptions. One of them is IOException.
+
+281
+00:53:26,339 --> 00:53:33,139
+Okay, now all these exceptions are checked exceptions. So remember what the checked exception is.
+
+282
+00:53:33,839 --> 00:53:42,480
+Checked exception means that now if you are using some classes which might throw
+
+283
+00:53:43,027 --> 00:53:55,608
+Arkadaşlar, and these exceptions, okay, if you are using those classes or those methods, now Java compiler will force you to put them into try catch block.
+
+284
+00:53:56,427 --> 00:54:03,728
+Arkadaşlar, checked exception means that Java compiler will force you to put them into try check block, otherwise it will not compile.
+
+285
+00:54:05,148 --> 00:54:07,027
+Arkadaşlar, unchecked message, unchecked.
+
+286
+00:54:08,148 --> 00:54:14,867
+Exception means that Java compiler does not create a problem.
+
+287
+00:54:15,608 --> 00:54:15,728
+Okay.
+
+288
+00:54:16,468 --> 00:54:19,367
+So it compiles your code.
+
+289
+00:54:19,788 --> 00:54:29,508
+But if you do not put them into try catch block during the execution of your program, you might encounter with problems.
+
+290
+00:54:30,387 --> 00:54:30,468
+Okay.
+
+291
+00:54:30,468 --> 00:54:31,387
+Now.
+
+292
+00:54:32,052 --> 00:54:57,552
+So we have an IO exception. So we use this exception for the general IO exceptions. End of file exception. Okay. Now, if you are reading from the file in the file system, so if you reach to the end of the file, okay, unexpectedly, so it will
+
+293
+00:54:57,952 --> 00:55:04,232
+Arkadaşlar, class, object,
+
+294
+00:55:26,612 --> 00:55:44,692
+Now, when we do the file operations, we can do two things. One is the file management. Okay. Now, in the file system, we have two different files. One of them is folder. The other one is the actual file itself. Okay.
+
+295
+00:55:46,804 --> 00:56:02,204
+Bir tane arkadaşlar dizi bu file'ları içine koyduğumuz dizi bu da file management açısından bir tane file sadece tipi folder olmuş oluyor.
+
+296
+00:56:02,204 --> 00:56:10,664
+İkincisi de dosya kullandığımız bütün dosyalar bizim için.
+
+297
+00:56:11,795 --> 00:56:25,376
+Birer tane file. Bu iki tane tipteki file'i yönetmek için java.io'nun io package'i altında sağlanmış file management sınıflarını kullanıyoruz.
+
+298
+00:56:25,376 --> 00:56:39,135
+Now, these file management classes allow us to create, delete files or folders or we can rename them by using the file management classes.
+
+299
+00:56:39,795 --> 00:57:05,235
+This is first category. The first category is it deals with the file management. Now the second category deals with the input output operations. Okay. Now the second category of the Java IO classes input output classes is writing into a file or reading out from out of a file. Okay.
+
+300
+00:57:06,612 --> 00:57:11,872
+Bir tane IO operation kategorisindeki olan sınıflar.
+
+301
+00:57:12,231 --> 00:57:13,572
+Bir saniye arkadaşlar.
+
+302
+00:57:39,987 --> 00:57:41,248
+Sesim geliyor mu arkadaşlar?
+
+303
+00:57:43,667 --> 00:57:44,567
+Geliyor hocam.
+
+304
+00:57:44,907 --> 00:57:46,067
+Evet, kusura bakmayın. Tamam.
+
+305
+00:57:49,907 --> 00:57:59,987
+The second category, the first category, as I said, the file management classes, the second category, input, output, operation classes.
+
+306
+00:58:00,107 --> 00:58:02,307
+Now, let's take a look at the examples.
+
+307
+00:58:04,019 --> 00:58:06,559
+Now, let's take a look at the first category.
+
+308
+00:58:06,920 --> 00:58:14,260
+The first category of the IO classes is dealing with the file management, as I said.
+
+309
+00:58:14,260 --> 00:58:19,740
+And here we are using java.io.file class.
+
+310
+00:58:20,380 --> 00:58:28,076
+Now, by using the java.io.file class, we can create...
+
+311
+00:58:28,532 --> 00:58:32,412
+A file, or we can create a folder.
+
+312
+00:58:34,072 --> 00:58:34,592
+Okay.
+
+313
+00:58:35,072 --> 00:58:40,372
+In order to do this, so first, so we need to create an object of the file.
+
+314
+00:58:40,792 --> 00:58:42,672
+So the file class has a constructor.
+
+315
+00:58:43,112 --> 00:58:43,332
+Okay.
+
+316
+00:58:43,412 --> 00:58:46,492
+We can give the name of the file that we want to create.
+
+317
+00:58:47,492 --> 00:58:48,092
+Okay.
+
+318
+00:58:48,912 --> 00:58:55,072
+Now, the file, if I create in this way, in that case,
+
+319
+00:58:55,539 --> 00:59:04,299
+Here, filename should include both the path and the name of the file or folder.
+
+320
+00:59:05,019 --> 00:59:08,159
+So whichever I want to create.
+
+321
+00:59:08,659 --> 00:59:12,480
+It should include both the path and also the name.
+
+322
+00:59:14,867 --> 00:59:30,228
+And if you want to insert the path to the file or the folder, okay, if you are on Windows, you need to separate the paths by using this notation, okay?
+
+323
+00:59:32,467 --> 00:59:48,107
+Or if you are using Unix, okay, if you want to separate the paths, so the sub paths, then in this case, you need to use this notation here, okay?
+
+324
+00:59:49,288 --> 00:59:55,208
+And if a file has another constructor, you see it takes two parameters.
+
+325
+00:59:55,208 --> 00:59:59,768
+In this particular case, you can write the path and the name.
+
+326
+01:00:00,000 --> 01:00:05,079
+Separately, you can give the path and the name separately to the file class.
+
+327
+01:00:09,748 --> 01:00:22,827
+Now, I'm continuing with the file class. As you see, file class has a number of methods. Okay. Now, one of them is, for example, exist. Now, it tells whether that file exists or not.
+
+328
+01:00:24,387 --> 01:00:37,067
+Another one is is file. Okay. It returns whether this is a file. Okay. Or if it is a folder. Okay. It checks if it is a file or if it is a folder.
+
+329
+01:00:39,092 --> 01:00:44,912
+Get parent file. It returns the directory where the file or the folder resides.
+
+330
+01:00:45,612 --> 01:00:52,272
+Eğer diyelim ki bu şu anda takip etmiş olduğumuz file objesi bir tane foldera aitse,
+
+331
+01:00:52,788 --> 01:01:03,987
+Bunun bulunmuş olduğu parent folder ya da bu bir file ait ise bunun bulunmuş olduğu yine folder ve parent folder'ın bir file objesi olarak geri gönderiyor.
+
+332
+01:01:03,987 --> 01:01:12,967
+Get canonical path. This returns the full path of the file or the folder.
+
+333
+01:01:13,523 --> 01:01:23,804
+Bulunduğumuz, şu anda takip etmekte olduğumuz file objesinin bulunduğu peti bize döndürüyor.
+
+334
+01:01:26,364 --> 01:01:35,543
+Can read? Can you read from this file? Can write? Can you write to this file? They will return true or false.
+
+335
+01:01:37,324 --> 01:01:40,443
+When you create a file object,
+
+336
+01:01:41,523 --> 01:01:56,104
+You do not actually create a file in the file system. In order to create the file in the file system, you need to make sure that you also call the create new file method.
+
+337
+01:01:56,884 --> 01:02:09,443
+Bir file objesi oluşturduğunuz zaman, ilk başta diyelim ki kodunuz içerisinde bir tane file objesi oluşturduğunuz, şuradaki gibi ya bu constructor'ı kullandınız ya da bu constructor'ı kullandınız.
+
+338
+01:02:09,523 --> 01:02:32,844
+File objesi oluşturmuş olmak demek bu file'ı dosya sistemi üzerinde henüz oluşturduğunuz anlamına gelmiyor. Bu bir dizin de olabilir yahut da file de olabilir. Ne zamanki create new file metodunu çağırdığınız zaman bu objeyi kullanarak o zaman file'i yaratıyorsunuz.
+
+339
+01:02:34,324 --> 01:02:44,324
+Yine bu objeyi kullanaraktan ne zamanki mkdir metodunu çağırırsanız o zaman bu fail objesi için bir tane folder yaratıyorsunuz.
+
+340
+01:02:46,324 --> 01:02:53,604
+Eğer bu fail objesi içerisinde bir tane pet belirtilmişse,
+
+341
+01:02:54,016 --> 01:03:11,156
+mkdirs metodunu çağırdığınız zaman o petin içerisinde bulunan bütün folder hiyerarşisini yaratıyorsunuz. Yani diyelim ki c'nin altında, işte desktop'ın altında, işte
+
+342
+01:03:13,076 --> 01:03:38,235
+Object Oriented Programming altında File Management diye bir tane dizin yaratacaksınız. Onun altında da File diye bir tane dizin yapacaksınız. Bunları bir pet haline getirdiğinizi düşünelim. Bu peti kullanaraktan bir tane file objesi yarattınız. Bu file objesinin mk dirisini çağırdınız. Bu ne yapacak? Gidecek.
+
+343
+01:03:41,076 --> 01:03:53,915
+programming'i yaratacak, onun altında file sistemi yaratacak, onun altında file dizilini yaratacak. Pet'in içerisindeki her şeyi senin için yaratıyor MKD.
+
+344
+01:03:55,476 --> 01:04:10,856
+Rename to, mevcutta yaratılmış olan bir failin ismini başka bir file değiştirmek istersem ya da mevcutta file sistemde duran bir file silmek istersem delete metodunu kullanıyorum.
+
+345
+01:04:23,476 --> 01:04:29,696
+Bu metotlarını kullanan dersin sayfasında paylaştığım kodlar.
+
+346
+01:04:30,931 --> 01:04:33,891
+İçerisinde olan örnekten çalışmanızı istiyorum.
+
+347
+01:04:34,471 --> 01:04:39,091
+Bu file sınıfı, az önce ne demiştik?
+
+348
+01:04:39,511 --> 01:04:43,251
+İki tane kategori var Java IO package içerisinde.
+
+349
+01:04:43,391 --> 01:04:58,791
+Bir tanesi dosya sistemi üzerindeki dosyaları yaratan, isimlerini değiştiren, silen, bir tane dizim yaratan, bir tane file yaratan kategoride bulunan sınıf.
+
+350
+01:04:58,931 --> 01:05:01,391
+Yani java.io.file.
+
+351
+01:05:01,391 --> 01:05:07,371
+Şimdi bunun metotlarını adım adım konuştuk.
+
+352
+01:05:07,471 --> 01:05:20,811
+Sizden bunun örneğini kodlar içerisinde bulunan örnek file example'unu kullanarak yapmanızı istiyorum.
+
+353
+01:05:21,331 --> 01:05:35,631
+Arkadaşlar, okay. Now, but today I'm going to focus on input output operations segment of the Java dot IO package because that's more important for us.
+
+354
+01:05:36,551 --> 01:05:48,191
+Arkadaşlar, okay. Now, by using the second category of classes, okay, we can do input output operations with the files. Okay.
+
+355
+01:05:49,427 --> 01:06:13,427
+Now, there are two types of files in the file system. One is the binary files. In the binary files, we have the row bytes in it. Okay. Now, these binary data formats, we cannot read them. Okay. When we open with any text,
+
+356
+01:06:16,532 --> 01:06:20,832
+Notepad or TextPad, any text-based application.
+
+357
+01:06:21,392 --> 01:06:32,632
+So you will see that if it is a binary external data type, okay, we cannot read the content of that file.
+
+358
+01:06:33,076 --> 01:06:38,836
+Now, the second external type is the text type.
+
+359
+01:06:39,436 --> 01:06:39,556
+Okay.
+
+360
+01:06:39,736 --> 01:06:42,736
+And the text type has different encodings.
+
+361
+01:06:43,296 --> 01:06:45,196
+It could be ASCII code.
+
+362
+01:06:45,316 --> 01:06:48,336
+It could be a UTF-8, UTF-16.
+
+363
+01:06:48,615 --> 01:06:50,056
+There are different encodings.
+
+364
+01:06:50,296 --> 01:06:50,416
+Okay.
+
+365
+01:06:50,796 --> 01:06:58,856
+Now, in any file system, we have the text type files and we have the binary type files.
+
+366
+01:06:58,856 --> 01:06:59,576
+Okay.
+
+367
+01:07:00,096 --> 01:07:00,736
+Now,
+
+368
+01:07:01,076 --> 01:07:14,776
+Java.io package provides us classes that can read and write both text type files, also binary type files.
+
+369
+01:07:14,776 --> 01:07:15,516
+Okay.
+
+370
+01:07:16,052 --> 01:07:22,032
+Now, this is the external data format, which means that this is what we see in the file system.
+
+371
+01:07:22,632 --> 01:07:22,692
+Okay.
+
+372
+01:07:22,892 --> 01:07:34,492
+Now, in the internal data format, which is within your Java program, okay, as you have seen so far, so we have the primitive data types, okay, all the data.
+
+373
+01:07:35,411 --> 01:07:52,951
+So, so we can keep track of these data types by using the, these primitive data types also, so we can use the character in order to keep track of the text files. Okay.
+
+374
+01:07:53,871 --> 01:07:55,711
+Now, a character.
+
+375
+01:07:57,204 --> 01:08:11,264
+Is 16 bit. Okay. And the byte is 8 bit. Okay. Now we are going to focus on on the binary type.
+
+376
+01:08:11,615 --> 01:08:26,195
+Files, and we are going to focus on the input output Java classes that we can write and read for the binary types.
+
+377
+01:08:26,675 --> 01:08:26,775
+Okay.
+
+378
+01:08:27,335 --> 01:08:36,655
+So there are also Java.io, in Java.io package, there are also classes that can read.
+
+379
+01:08:37,072 --> 01:08:40,711
+Arkadaşlar, and write for the text type files.
+
+380
+01:08:41,032 --> 01:08:51,291
+Arkadaşlar, but for this class in particular, I'm going to focus on the byte stream based Java IO classes.
+
+381
+01:08:52,051 --> 01:08:56,192
+Arkadaşlar, and these classes are input stream and output stream classes.
+
+382
+01:08:56,851 --> 01:09:04,172
+Arkadaşlar, now, as you see in the screen, so what we are trying to do.
+
+383
+01:09:04,543 --> 01:09:09,463
+Let's say this is the file system.
+
+384
+01:09:09,943 --> 01:09:10,083
+Okay.
+
+385
+01:09:10,163 --> 01:09:12,663
+And in the file system, I have a file.
+
+386
+01:09:13,163 --> 01:09:13,304
+Okay.
+
+387
+01:09:13,764 --> 01:09:29,064
+Now, from this file, what I'm going to do, I am going to read the data byte by byte, and then I will convert this, all the bytes that I receive into an object in the, in my program.
+
+388
+01:09:29,064 --> 01:09:29,703
+Okay.
+
+389
+01:09:29,963 --> 01:09:31,703
+Now, in the source.
+
+390
+01:09:32,543 --> 01:09:39,043
+Data format, I will have the bytes because this is the binary raw data.
+
+391
+01:09:39,244 --> 01:09:48,503
+OK, and when all the bytes are received, OK, necessary for an object construction, I will construct an object here.
+
+392
+01:09:48,804 --> 01:09:59,984
+OK, now, similarly, when I want to write an object into a file, OK, now I will convert this object into bytes and these bytes will be transferred.
+
+393
+01:10:00,000 --> 01:10:05,000
+bu file ve bu file ve bu file.
+
+394
+01:10:06,000 --> 01:10:10,000
+Ok, now in order for me to do this,
+
+395
+01:10:10,000 --> 01:10:13,000
+java.io package provides me
+
+396
+01:10:13,000 --> 01:10:15,000
+a number of different
+
+397
+01:10:17,171 --> 01:10:35,171
+Klasi ok now input stream classes is a the types of classes in order to read from the file output stream classes is the classes for me to write into the file.
+
+398
+01:10:43,412 --> 01:10:52,332
+Okay. In particular, so we are going to focus on writing an object into a file or reading an object from the file.
+
+399
+01:10:52,979 --> 01:11:15,000
+Okay. So for this, there are two classes from each category that we will use. We will use object input stream and file input stream classes. And in order to write to a file, we will use file output stream classes and object output stream classes. Okay. But let us give 10 minute break. After the break, I will continue.
+
+400
+01:11:21,043 --> 01:11:28,243
+Arkadaşlar, bir 10 dakika yukarı verdim. Bir yere gitmeyin. Sadece mikrofonumu mute yapıyorum. 10 dakika sonra devam edeceğim.
+
+401
+01:21:39,636 --> 01:21:41,036
+Arkadaşlar, sesim geliyor mu?
+
+402
+01:21:43,596 --> 01:21:44,196
+Evet hocam.
+
+403
+01:21:46,836 --> 01:22:04,316
+Şimdi dedik ki iki tane java.io package'i altında iki tane sınıf kategorim var. Bunlardan bir tanesi file sistem operation'ları yapmama olanak veren kategori. Bunu konuştuk.
+
+404
+01:22:06,452 --> 01:22:21,051
+İkinci kategori ise bu file management sınıflarıydı. İkinci kategori ise input-output operasyonları yapmama olanak veren sınıf kategorisiydi.
+
+405
+01:22:34,239 --> 01:22:44,959
+type'ında olan file'ları üzerindeki sınıflara bakacağımızı söyledik. Bunlar da input stream, output stream sınıfları.
+
+406
+01:22:46,539 --> 01:22:53,420
+Input stream ve output stream sınıflarından da objeleri yazmak ve okumak için olan sınıfları kullanıyoruz.
+
+407
+01:22:53,939 --> 01:23:09,000
+Şimdi bir objeyi file yazmak ya da bir objeyi file'den okumak için bu object input stream bir de file input sınıflarını kullanırken bunları birbirlerine zincirleyerek kullanıyoruz. Bu ne demek?
+
+408
+01:23:09,652 --> 01:23:27,512
+Öncelikle bir tane file input stream'den başlayalım. Yani bir file'dan bir objeyi okuma şeyinden başlayalım. İki tane kategori var. Bir tanesi input streamler, bir tanesi output streamler. Öncelikle input streamden başlayalım.
+
+409
+01:23:28,452 --> 01:23:34,092
+Şimdi bir tane file'dan bir objeyi okurken öncelikle file'ın bir tane.
+
+410
+01:23:34,963 --> 01:23:41,064
+File input stream'in bir objesini oluşturuyorum. Şurada görüyorsunuz.
+
+411
+01:23:41,908 --> 01:23:48,608
+Bunu yaparken file'ın name'ini veriyorum. Bu name'in içerisinde pet de olabilir.
+
+412
+01:23:49,208 --> 01:23:57,068
+Yahut da eğer aynı dizin içerisindeki bir tane dosyayı okuyacaksam direkt dosyanın ismi de olabilir.
+
+413
+01:23:57,068 --> 01:24:06,068
+Eğer pet'i vermiyorsam Java Virtual Machine aynı dizin içerisinde bulunan bir file'i arayacaktır.
+
+414
+01:24:09,908 --> 01:24:15,708
+resimdeki file'i okumak istiyorsam mutlaka buna pet'i de ekleyerek file name'i vermem lazım.
+
+415
+01:24:16,788 --> 01:24:26,968
+Bir tane file input stream objesi oluşturuyorum ve bu objeyi object input stream objesini yaratırken input veriyorum.
+
+416
+01:24:27,108 --> 01:24:29,468
+Yani bu iki tane objeyi birbirine zincirliyorum.
+
+417
+01:24:30,036 --> 01:24:38,755
+FileInputStream objesini, object, inputStream objesini oluştururken, constructor'a input olarak veriyorum.
+
+418
+01:24:40,659 --> 01:24:50,319
+Bunun sonucunda elde etmiş olduğum object input stream'in de kullanaraktan bu failin içerisinden objeleri alabiliyorum.
+
+419
+01:24:51,119 --> 01:24:58,319
+Burada oluşturmuş olduğum object input stream'i reader değişkenini kullanmışım takip etmek için.
+
+420
+01:24:59,000 --> 01:25:03,479
+Reader değişkenini kullanaraktan bu objeğin read object metodunu çağırıyor.
+
+421
+01:25:04,119 --> 01:25:08,479
+Demek ki object input stream'in her zaman kullanıcı...
+
+422
+01:25:08,659 --> 01:25:28,959
+Önemli metodu read object'miş. Bu dosya içerisinde bulunan bir objeye okumamı olanak sağlıyormuş. Aslında bu input stream'i yaptığı şey şu, bu binary data içerisinde biz demiştik ya, binary data içerisinde byte'ları tutuyoruz.
+
+423
+01:25:35,444 --> 01:25:46,244
+File input stream byte byte network üzeri byte byte network diyorum byte byte şeye gönderiyor. Benim programıma gönderiyor.
+
+424
+01:25:47,315 --> 01:25:55,975
+Bu göndermiş olduğu byte'ları ise object input stream sınıfı burada bekletiyor.
+
+425
+01:25:56,376 --> 01:26:05,015
+Ta ki bir objeyi oluşturacak kadar yeterince byte geldiği zaman bu objeyi alıp benim Java programıma veriyor.
+
+426
+01:26:05,555 --> 01:26:09,615
+Demek ki bu ikisini benim zincirlememin sebebi de buymuş.
+
+427
+01:26:09,615 --> 01:26:13,956
+File input stream byte byte faydan alıp okuyor.
+
+428
+01:26:15,315 --> 01:26:29,135
+nınırk hangi objeyi oluşturduğunu bilmeden, object input stream ise gelen byte'ları bir objeyi oluşturacak kadar byte geldiği zaman bunu bir objeyi oluşturup benim programıma veriyor.
+
+429
+01:26:29,135 --> 01:26:34,355
+O yüzden de object input stream sınıfının read object diye bir metodu var.
+
+430
+01:26:34,915 --> 01:26:43,135
+Bu metot eğer o ana kadar bana bir objenin oluşmasını yeterince...
+
+431
+01:26:43,315 --> 01:26:48,216
+Byte gelmişse, bunun objesini output olarak veriyor.
+
+432
+01:26:49,775 --> 01:26:59,235
+Şimdi read object metodu bana java.lang object tipinde bir obje döndürüyor.
+
+433
+01:27:04,435 --> 01:27:32,435
+sınıfımız vardı. Bu bütün Java sınıflarının süper o root parentıydı. Yani bütün Java sınıfları bu object sınıfından türemiş şeklinde düşünüyordu. Bu reader.read object metodu bana bu object tipinde bir obje döndürüyor. Dolayısıyla benim bunu
+
+434
+01:27:32,435 --> 01:27:36,135
+Bunu typecast etmem gerekiyor. Neye typecast etmem gerekiyor?
+
+435
+01:27:37,235 --> 01:27:45,815
+İstemiş olduğum, yani bu dosya içerisinden okumakta olduğum hangi tipte obje ise ona typecast yapmam gerekiyor.
+
+436
+01:27:46,255 --> 01:27:53,595
+Şimdi ben biliyorum ki bu dosyayı yazan da benim, okuyan da ben olduğum için ne yazdığımı biliyorum.
+
+437
+01:27:53,595 --> 01:27:58,555
+Dolayısıyla eğer integer tipinde bir tane obje yazmışsam,
+
+438
+01:27:58,836 --> 01:28:06,195
+Bunu integer wrapper classını kullanaraktan integer tipinde bir objeye typecast yapıyorum.
+
+439
+01:28:10,615 --> 01:28:20,036
+Bu noktadan sonra artık elimde bir integer tipinde bir tane objem var ve ben bu objeyi artık programım içinde kullanabilirim.
+
+440
+01:28:20,596 --> 01:28:25,636
+Şimdi bunun tersini düşünelim. Artık bu sefer file yazmak istiyorum.
+
+441
+01:28:26,068 --> 01:28:46,608
+Bu durumda da FileOutputStream ile ObjectOutputStream'i zincirliyorum. Öncelikle bir tane FileOutputStream objesi yaratıyorum. Ondan sonra bu objeyi ObjectOutputStream objesine, constructor'ına input olarak veriyorum.
+
+442
+01:28:48,083 --> 01:29:01,543
+Artık bu da bana bir tane object output stream objesi oluşturuyor. Bunu burada takip etmek için writer değişkenini kullanmışım. Bu object output stream'in de write object diye bir metodu var.
+
+443
+01:29:02,547 --> 01:29:07,347
+Bu write object metodunun içerisine ben istediğim objeyi koyabiliyorum.
+
+444
+01:29:07,347 --> 01:29:19,167
+Yani istediğim, faile yazdırmak istediğim hangi obje ise write object'in içerisine koyup, writer ile artık ben write object ile bunu dosyaya yazdırabilirim.
+
+445
+01:29:19,268 --> 01:29:26,387
+Yazdırdığım zaman ne olacak? Şunun tam tersini düşünün. Burada object input stream değil de object output stream olsun.
+
+446
+01:29:26,387 --> 01:29:30,387
+Bu sefer benim Java programımdan bu binary...
+
+447
+01:29:30,547 --> 01:29:44,887
+data formatını yazdırmak istediğim objeyi object output stream byte'lara dönüştürecek. Sonra bu dönüşmüş olan byte'ları da object output stream byte byte bu diskin içerisine yazdıracak.
+
+448
+01:29:54,484 --> 01:30:19,524
+Now, when you write into a file, OK, you are converting an object into bytes, OK? So in that case, what we are calling this is a serialization, OK? We can write entire objects into the file. Now, if we if we are doing this, what we are calling this serialization.
+
+449
+01:30:20,243 --> 01:30:31,703
+Now, in order for objects to be serialized, okay, that object needs to implement the java.io serializable interface, okay?
+
+450
+01:30:33,484 --> 01:30:45,783
+Again, in order for an object to be written into a file, so that object needs to implement the java.io serializable interface, okay?
+
+451
+01:30:47,188 --> 01:30:52,228
+And this Java.io serializable interface, it does not have any methods.
+
+452
+01:30:52,568 --> 01:30:55,528
+Okay. So let's take a look at an example.
+
+453
+01:30:57,608 --> 01:31:04,987
+Okay. Buradaki örnekte file yazdırmak istediğim objeler arkadaş sınıfının objeleri.
+
+454
+01:31:04,987 --> 01:31:10,987
+Okay. Ben ne dedim az önce? Ne zamanki bir objeyi...
+
+455
+01:31:11,475 --> 01:31:20,395
+File yazdırmak istiyorum. Mutlaka bu objenin sınıfını, serializable interface'ini implement ettiğinden emin olmam lazım.
+
+456
+01:31:21,175 --> 01:31:26,855
+Bu sınavda karşılaşacağınız ve genelde yaptığınız bir hata.
+
+457
+01:31:27,355 --> 01:31:37,255
+Yani bir file yazmanızı istediğimiz bir tane obje tipi var.
+
+458
+01:31:37,747 --> 01:31:47,307
+Bu objenin file yazılacağını metin içerisinde belirtiyoruz ve sizden diyoruz ki bu objenin sınıfını kaynak kodunu yazın.
+
+459
+01:31:48,407 --> 01:31:53,227
+Şimdi file yazacağınızı bildiğiniz zaman hemen şunu düşünmeniz lazım.
+
+460
+01:31:53,647 --> 01:31:57,467
+Bu sınıf mutlaka Serializable Interface'ini implement etmek zorunda.
+
+461
+01:31:58,247 --> 01:32:01,387
+Bunu size spesifik olarak söylemiyoruz.
+
+462
+01:32:02,527 --> 01:32:04,347
+Bunu sizin bilmeniz gerekiyor.
+
+463
+01:32:05,300 --> 01:32:15,619
+Buradaki arkadaş sınıfı Serializable Interface'ini implement etmiş. Bu şu demek, bu arkadaş sınıfının objeleri file'a yazılabilir demek.
+
+464
+01:32:16,820 --> 01:32:28,960
+Şimdi ne zamanki Serializable Interface'ini implement ettiğiniz zaman sizin kodunuz içerisinde bir tane Serial Version UID'yi belirtmeniz gerekiyor, tanımlamanız gerekiyor.
+
+465
+01:32:29,939 --> 01:32:35,800
+Bunu yapmadığınız zaman ne yapıyor? Java compiler size warning veriyor.
+
+466
+01:32:37,340 --> 01:32:44,399
+Bunu niçin yapıyoruz? Bu kullanmış olduğumuz sınıflar zaman içerisinde farklı versiyonları oluşabilir.
+
+467
+01:32:45,039 --> 01:32:49,960
+Buna bir tane daha mesela global member field ekleyebilirim, bir metot ekleyebilirim vs.
+
+468
+01:32:52,627 --> 01:32:59,887
+Sınıflardan türemiş objeleri biz alıp file sisteme yazdırıyoruz.
+
+469
+01:32:59,887 --> 01:33:01,167
+File'in içerisinde.
+
+470
+01:33:01,847 --> 01:33:11,587
+Dolayısıyla bu yazdırmış olduğumuz objelerin hangi sınıfın objesinin versiyonu olduğunu takip etmek için de
+
+471
+01:33:12,051 --> 01:33:36,811
+Serializable interface'i ne zaman kullandığımız zaman Java compiler bizim bir serial version UID'ye de sahip olmamızı istiyor. Buna sahip olmadığımız zaman da bize warning veriyor. O yüzden ne zamanki serializable interface'i implement ediyoruz, private static final long serial version UID'yi de mutlaka bizim global member filter içinde geçirmemiz gerekiyor.
+
+472
+01:33:40,051 --> 01:33:59,992
+Member Field'i olan bir tane global Member Field bölümüm var. Hepsi string tipinde. Bir tane constructor'ım var. Getter metotlarım var. Setter metodum var telefon için. Getter metotlarım bütün üç tane global Member Field'im için.
+
+473
+01:34:00,659 --> 01:34:15,299
+Yine setter metodum hem telefon için hem e-posta için. Burada setter metodum var. İsim için de, constructor da olduğu için yazmamışım. Bir de toString metodum var. Böylesi bir sınıfım var.
+
+474
+01:34:19,091 --> 01:34:30,572
+Şimdi daha önce biz bu annotationları gördük. Şimdi de göreceğiz.
+
+475
+01:34:30,572 --> 01:34:39,412
+Metotların önünde, yani bir satır üstünde o metot içerisinde alabileceğimiz
+
+476
+01:34:39,828 --> 01:34:54,828
+Warningleri görmemek için yani bilerek eğer kodumuzu orada warning verileceğini bildiğimiz halde yazmaya devam ediyorsak bu durumda o warningleri...
+
+477
+01:34:56,243 --> 01:35:00,703
+göstermemek için bir takım annotation'lar kullanabiliyoruz.
+
+478
+01:35:02,083 --> 01:35:11,844
+Yine kodla ilgili bir takım komentler yazmak istiyorsak ya da kodla ilgili bir takım annotation'lar yapmak istiyorsak
+
+479
+01:35:11,844 --> 01:35:20,324
+add sign ile beraber başlayan ve bizim metodun bir üst satırında olan annotation'lar ekleyebiliyoruz.
+
+480
+01:35:21,235 --> 01:35:26,215
+Şimdi onun bir örneği de mesela suppress warnings annotationı.
+
+481
+01:35:27,028 --> 01:35:55,028
+Bu suppress warnings annotationı parantez içerisinde hangi tipte durum için bize warning vermesini istemiyorsak onu yazıyoruz. Hani buradaki şeyde serial numarası ile ilgili satırı yazmadığımı düşünelim ve bununla ilgili warning almak da istemiyorum. Bu yüzden süper warnings serial komandini...
+
+482
+01:35:55,028 --> 01:36:22,408
+satır üstte yazıyorum. Az önce şunu göstermiştim. Yani şuradaki satır yazmadığım zaman ben warning alacağımı biliyorum. Bunu almamak için bunun üstüne super warnings parantez içinde serial yazıyorum. Çünkü bu olmadığı zaman bana onunla ilgili warningi veriyor. Demek ki annotationların kullanımı da bu şekilde. Bununla da yine sınavda karşılaşabilirsiniz.
+
+483
+01:36:25,363 --> 01:36:27,543
+Evet arkadaşlar, şimdi bir örnek yapalım.
+
+484
+01:36:29,683 --> 01:36:39,243
+Buradaki örnekte bir arkadaş oluştur sınıfım var.
+
+485
+01:36:39,663 --> 01:36:41,803
+Daha önce arkadaş metodunu göstermiştim.
+
+486
+01:36:44,020 --> 01:36:56,660
+Arkadaş sınıfını pardon, şu arkadaş sınıfında. Arkadaş sınıfın serializable interfacesini implement ediyor da bu şu demek, arkadaş sınıfının objeleri artık bir file yazılabilir.
+
+487
+01:36:59,640 --> 01:37:07,660
+Main metodu içerisinde öncelikle bir integer, wrapper integer tipinde bir arkadaş sayısı tanımlıyorum.
+
+488
+01:37:08,692 --> 01:37:16,632
+Bir arkadaşlar array'i tanımlıyorum. Arkadaşlar tipinde, arkadaş tipinde bir array tanımlıyorum. Bunu da arkadaşlar demişim.
+
+489
+01:37:17,552 --> 01:37:25,392
+Sonra scanner objesini kullanaraktan kullanıcıdan bir sayıya girmesini istiyorum. Kaç tane arkadaş bilgisi gireceğini soruyorum.
+
+490
+01:37:25,851 --> 01:37:30,172
+Bana verdiği sayıyı alıyorum ama arkadaş sayısına atadım.
+
+491
+01:37:32,083 --> 01:37:36,064
+Ondan sonra bir tane arkadaşlar ereği oluşturuyorum.
+
+492
+01:37:36,224 --> 01:37:41,503
+Yani kullanıcının girmiş olduğu sayı kadar bir tane arkadaşlar ereği oluşturdum.
+
+493
+01:37:43,363 --> 01:37:45,844
+Ondan sonra bir for döngüsü yapıyorum.
+
+494
+01:37:48,344 --> 01:37:55,840
+Bu for döngüsünde birinci kişi için...
+
+495
+01:37:55,840 --> 01:38:13,039
+Bana arkadaşın, arkadaş oluşturacağım arkadaş objesi için bilgileri girmesini istiyorum. İlk arkadaşı oluşturuyorum. Bu oluşturduğum ilk arkadaşı da bu arkadaşlar ereğinin ilk hücresine esayn edeceğim.
+
+496
+01:38:13,652 --> 01:38:18,032
+Yeni bir tane arkadaş oluşturuyorum. Constructor'ımın ismini pas ettim.
+
+497
+01:38:18,032 --> 01:38:22,851
+Tabii ki kullanıcıdan scanner objesini kullanarak aldıktan sonra.
+
+498
+01:38:23,511 --> 01:38:38,032
+Sonradan bu objeyi yaratıp ilk hücreye atadıktan sonra bu ilk hücrede artık bu objeyi takip eden benim referansım olduğu için bunu kullanarak...
+
+499
+01:38:38,032 --> 01:38:39,431
+Pardon.
+
+500
+01:38:40,756 --> 01:38:48,096
+Bunu kullanarak ne yaptım? Set telefon dedim. Yani bu yaratmış olduğum obje için.
+
+501
+01:38:52,180 --> 01:38:57,920
+Bu yaratmış olduğum obje için telefonu set ettim. Sonra da e-postayı set ettim arkadaşlar.
+
+502
+01:38:59,420 --> 01:39:08,172
+Bunu bütün arkadaşlar için yaptım. Yani ne yaptım? Kaç tane arkadaş oluşturmak istiyorsam...
+
+503
+01:39:08,243 --> 01:39:26,203
+Onların her birisi için bu for döngüsü içerisinde birer obje yarattım ve bunların değerlerini kullanıcıdan aldım ve bu arkadaş ereğinin içerisine kullanıcıdan almış olduğum verilerle bütün arkadaş objelerini yerleştirmiş oldum.
+
+504
+01:39:27,583 --> 01:39:28,823
+Devam ediyorum.
+
+505
+01:39:30,283 --> 01:39:34,523
+Şimdi artık elimde bir arkadaş ereği var.
+
+506
+01:39:35,028 --> 01:40:00,000
+Şimdi bir tane bu arkadaş ereğindeki arkadaş objelerini file yazdırmak istiyorum. Bunun için öncelikle bir dosya ismi oluşturmuşum. Bunu bir tane string değerine atamışım. Ondan sonra biz ne dedik? Objeleri...
+
+507
+01:40:00,000 --> 01:40:09,720
+File'e yazdırmak için biz output streamleri kullanıyoruz. Output streamlerden de object output stream ve file output stream'i zincirliyoruz dedik.
+
+508
+01:40:10,380 --> 01:40:18,739
+File output stream ile object output stream'i zincirliyoruz. Burada bir tane file output stream objesi oluşturmuşum. Dosya adı vermişim.
+
+509
+01:40:19,260 --> 01:40:25,020
+Bu objeyi de object output stream'i constructor'ına vermişim.
+
+510
+01:40:25,427 --> 01:40:33,248
+Bu object output stream oluşan object output stream objesini de yazıcı diye bir tane değişkenle takip edeceğim.
+
+511
+01:40:34,028 --> 01:40:37,788
+Şimdi artık benim file yazmam için her şey hazır.
+
+512
+01:40:38,588 --> 01:40:42,488
+Bu yazıcının write object diye bir tane metodu vardı. Az önce görmüştük.
+
+513
+01:40:42,868 --> 01:41:00,368
+Şimdi öncelikle bu file'a kaç tane arkadaş yazdıracağımı bu arkadaş sayısı neydi? Integer objesiydi. Bunun içerisinde kaç tane arkadaş yazdıracaksam onun sayısı vardı.
+
+514
+01:41:01,167 --> 01:41:08,087
+Öncelikle ilk olarak koymuş olduğum dosyaya koymuş olduğum obje arkadaş sayısı olacak.
+
+515
+01:41:08,627 --> 01:41:14,387
+Bu oraya bir tane integer objesi koymuş oldum. İlk objem integer objesi olmuş oldu.
+
+516
+01:41:15,507 --> 01:41:25,927
+Arkasından for döngüsü içerisinde bu arkadaşlar Ereği üzerinde for each yapıyorum ve arkadaşlar Ereği içerisindeki her bir arkadaşı alıp
+
+517
+01:41:27,028 --> 01:41:46,268
+OK. Write object ile bu dosyayı yazdırıyorum. OK. Bu for döngüsü bittiği zaman artık bütün arkadaşları yazdırmış oldum. Bakın şimdi bu dosyanın içerisinde ilk obje integer objesi. Ondan sonraki bütün objeleri ise arkadaş tipindeki obje olmuş oldu.
+
+518
+01:41:46,868 --> 01:41:57,688
+Artık bu dosyayla işim bittiği için close diyorum. Yani şuradaki output stream'ı mutlaka işim bittiğinde close demem lazım.
+
+519
+01:42:12,404 --> 01:42:15,684
+exception yaratıyor.
+
+520
+01:42:16,304 --> 01:42:20,503
+Checked exception yarattığı için mutlaka bunu try-catch bloğunu almam lazım.
+
+521
+01:42:20,663 --> 01:42:24,003
+Aksi takdirde Java compiler bunu compile etmeyecek.
+
+522
+01:42:25,003 --> 01:42:26,003
+Burada da...
+
+523
+01:42:26,899 --> 01:42:35,839
+Ne yaptım? Burada oluşabilecek bir tane IO exception şeyim var.
+
+524
+01:42:36,079 --> 01:42:40,079
+Exception handling sınıfım var. Ne zamanki burada bir exception oluştu?
+
+525
+01:42:40,619 --> 01:42:47,379
+Bu durumda bu catch bloğu execute edilecek ve dosyaya kayıt sırasında bir hata oluştu diye yazdıracağım.
+
+526
+01:42:47,379 --> 01:42:52,379
+Şimdi burada ben arkadaşlar eriği içerisinde...
+
+527
+01:42:52,979 --> 01:43:02,159
+Kaç tane arkadaş objesi olduğunu ne yaptın? İlk yazmış olduğum obje içerisinde tutmuş oldun.
+
+528
+01:43:04,019 --> 01:43:09,179
+Benim bu yapmış olduğum işleme ise serialization işlemi diyoruz arkadaşlar.
+
+529
+01:43:12,212 --> 01:43:15,152
+Şimdi de deserialization işlemini konuşalım.
+
+530
+01:43:15,612 --> 01:43:25,492
+Bu sefer de bu yazmış olduğum file'ın içerisinden objeleri okuyup benim Java programımda objeleri dönüştürmek istiyorum.
+
+531
+01:43:28,692 --> 01:43:33,292
+Bunun içinde bir tane sınıf yazmışım. Arkadaş göster sınıfı.
+
+532
+01:43:33,752 --> 01:43:37,792
+Bunun içerisinde de bir tane main metodum var. Bu main metodunda neler oluyor bir bakalım.
+
+533
+01:43:38,292 --> 01:43:47,112
+Öncelikle yine bir tane okumak istediğim dosyanın ismi için bir tane lokal değişken yaratıyorum.
+
+534
+01:43:48,832 --> 01:43:59,332
+Ne demiştik? Bir dosyadan bir objeleri okumak istiyorsak yine file input stream ile object input stream'i zincirliyoruz demiştik.
+
+535
+01:43:59,332 --> 01:44:02,731
+Yani öncelikle file input stream objesi oluşturuyorum.
+
+536
+01:44:03,104 --> 01:44:20,904
+Ona vermiş olduğum file isminden yola çıkarak. Ondan sonra bunu object input stream'in objesi olarak objesine, constructor'ını veriyorum ve objeyi oluşturuyorum. Bir tane object input stream objesi oluşturmuşum. Bunu da okuyucu ile diye takip edeceğim. Okuyucu değişkenliğiyle.
+
+537
+01:44:20,904 --> 01:44:29,884
+Ok. Şimdi okuyucu bu object input stream objesinin read object diye bir tane metodu var. Az önce konuştuk bunu.
+
+538
+01:44:31,188 --> 01:44:40,188
+Bu read object metodu bana Java lang object tipinde yani bütün objelerin...
+
+539
+01:44:40,884 --> 01:45:00,083
+Bu süperperinti olan obje tipinde bir tane obje döndürüyor. Benim bunu mutlaka typecast etmem lazım. Şimdi dosyayı yazan da benim, okuyan da benim. Az önce ben yazdığım için bu dosya içerisindeki ilk objenin zaten integer olduğunu biliyorum. Dolayısıyla da bunu niye test ediyorum? Integra test ediyorum.
+
+540
+01:45:00,083 --> 01:45:08,884
+Bunu integer'a test ettiğim zaman artık bana ne verecektir? Rapper integer tipinde bir tane obje verecek.
+
+541
+01:45:08,884 --> 01:45:15,783
+Bunun içinde de zaten bu dosyanın geri kalanındaki objelerin sayısını alacağım.
+
+542
+01:45:17,563 --> 01:45:29,743
+Kaç tane arkadaş var o sayıyı alacağım. Ondan sonra bunun bu sayı için bir for döngüsü yapıyorum. Sıfırdan başlamak üzere bu kadar kayıt sayı için bir for döngüsü yapıyorum.
+
+543
+01:45:30,228 --> 01:45:41,627
+Ve bu dosyadaki objeleri teker teker okuyup bu sefer artık geri kalan objelerin de arkadaş tipinde olduğunu bildiğim için bu objeleri arkadaşa kestediyorum.
+
+544
+01:45:43,547 --> 01:45:45,587
+Daha sonra da bunu yazdırıyorum.
+
+545
+01:45:47,367 --> 01:45:54,987
+Bu okuma işlemi de bittikten sonra benim bu object input stream'i mutlaka close demem gerekiyor.
+
+546
+01:45:55,347 --> 01:46:11,707
+Ne zaman ki ben input stream sınıflarıyla çalışıyorum, input stream sınıfıyla işim bittiği zaman ister bu input stream olsun ya da output stream olsun. Stream classlarıyla işim bittiğim zaman mutlaka close demem gerekiyor.
+
+547
+01:46:22,996 --> 01:46:29,155
+oluşabilir. Bunun için bu exception'ların tipleri nelerdir? Buna bakalım.
+
+548
+01:46:31,395 --> 01:46:36,376
+Şimdi birinci tipteki exception dosyayı okuma sırasında oluşabilir. Bu IO exception
+
+549
+01:46:36,376 --> 01:46:48,076
+exception handling sınıfıyla yakalanır. Bir de ben burada dosyadan okumuş olduğum objeleri
+
+550
+01:46:50,420 --> 01:47:07,400
+Typecast yapıyorum ya, yani ne zamanki Typecast yaptım diyorum ki bana vereceğin byte'lardan oluşan bir grup byte'ın ben integer olduğunu biliyorum ve integer sınıfı tipinde bir obje bekliyorum demek bu Typecast'i yaptığım zaman.
+
+551
+01:47:07,859 --> 01:47:23,179
+Ya da burada object input stream'e diyorum ki bana vereceğin byte'ları ben arkadaş tipinde bir sınıf bekliyorum. O tipte bir sınıfa dönüştüreceğim. O tipte bir objeye dönüştüreceğim diyorum.
+
+552
+01:47:23,764 --> 01:47:35,984
+Eğer olur da o bana vermiş olduğu bir grup byte'ı dönüştürdüğüm sınıfı ben bulamazsam bu durumda da class not found exception oluşuyor.
+
+553
+01:47:36,124 --> 01:47:42,764
+Yani okuduğum kayıt benim beklediğim kayıt değil. Okuduğum obje benim beklediğim tipte obje değil.
+
+554
+01:47:43,444 --> 01:47:51,124
+Birisi dosyadan okuma sırasında oluşabilecek bir hata, bir tanesi de typecasting sırasında oluşabilecek bir hata.
+
+555
+01:47:51,764 --> 01:47:57,604
+Bu iki tane farklı exception handlingi de benim yakalaya olmam gerekiyor.
+
+556
+01:47:58,264 --> 01:48:01,744
+Bu da yine sınavda karşılaşabileceğiniz bir soru tipi.
+
+557
+01:48:01,744 --> 01:48:04,744
+Burada iki tane farklı...
+
+558
+01:48:05,876 --> 01:48:18,276
+exception oluşabilir, yine size metin olarak verebiliriz. Sizin bunu mutlaka catch bloklarında doğru şekilde implement etmeniz gerekiyor.
+
+559
+01:48:26,036 --> 01:48:35,416
+Şimdi bizim input bu objeleri object input stream üzerinden okuyoruz file'dan.
+
+560
+01:48:36,975 --> 01:48:59,655
+Bu object input stream'in read object diye bir tane metodu var. Yani bir objeleri okuyabiliyoruz. Ama objelerin bittiğini, yani file'ın sonuna geldiğimizi takip etmemize olanak verecek bir metodumuz yok. Yani böyle bir has next gibi bir metodumuz yok.
+
+561
+01:49:00,819 --> 01:49:23,380
+Ya da bu yöntemle ben dosyanın sonuna gelip gelmediğimi şey yapamıyorum. O yüzden benim dosyanın sonuna gelip gelmediğimi kontrol etmem için ya az önce söylediğim gibi bir tane yöntem yani dosyaya kaç tane obje koyduğumu
+
+562
+01:49:24,243 --> 01:49:34,764
+belirten bir tane önden bir tane integer objesi koyuyorum. Ondan sonra dosyanın geri kalanında kaç tane obje koyacaksam onları koyuyorum. Bu bir yöntem.
+
+563
+01:49:36,224 --> 01:49:41,623
+Diğer bir yöntem ise data structure'ın kendisinin tamamını koymak.
+
+564
+01:49:42,131 --> 01:49:56,152
+Yani eğer benim elimde bir link list varsa link listin içerisindeki her bir item'ı ayrı birer obje şeklinde koymak yerine link listin tamamını bir obje şeklinde koyuyorum.
+
+565
+01:50:06,996 --> 01:50:32,536
+implement etmesi gerekli. Şimdi bunun bir örneğine bakalım. Şimdi yine aynı arkadaş oluştur sınıfı. Bu sefer bunu Array yerine bir data structure ile yapacağım ve bu sefer Array'de yaptığım gibi önceden kaç tane arkadaş objesi koyacağımı söylemeden bütün data structure'ı koyacağım.
+
+566
+01:50:33,076 --> 01:50:49,496
+Şimdi arkadaş, öncelikle bir tane link list oluşturuyorum. İçerisinde dikkat edin arkadaş objeleri tutan bir link list oluşturduğum için link listi mutlaka generic type olarak arkadaşı belirtmem gerekli.
+
+567
+01:50:50,707 --> 01:51:00,707
+Yine yeri gelmişken hatırlatıyorum. Genel hatalardan bir tanesi. Link listi ben nasıl tanımlıyorsam...
+
+568
+01:51:01,779 --> 01:51:25,639
+Nasıl objesini oluşturuyorsam tanımlarken de kullanacağım şey aynı olmalı. Yani burada link listin objesini yaratırken generic type olarak şurada arkadaşı belirtiyorsunuz ama bunu takip etmek için kullanacağımız değişkenin şurada arkadaşı mesela yazmıyorsunuz. Direkt link list arkadaşlar diyorsunuz. Bunların hepsi puan kaybetmenize sebep oluyor.
+
+569
+01:51:27,507 --> 01:51:52,488
+Burada bir tane scanner objesi oluşturmuşum. Az önceki örneğin aynısı. Kaç tane öğrenci, kaç tane arkadaş objesi oluşturacaksam hepsini belirlemişim. For döngüsü içerisinde arkadaş objelerini, arkadaşın detaylarını kullanıcıdan alıyorum. Ve bu arkadaş objesini oluşturduktan sonra bu link liste ekliyorum. Link listin add metodunu kullanaraktan eklemişim.
+
+570
+01:51:55,252 --> 01:52:17,032
+Ondan sonra bir arkadaşlar alt diye bir tane dosya ismi tanımlamışım. Bir tane file output stream ile object output stream'i zincirleyip bir tane object output stream oluşturmuşum. Bu object output stream'i yazıcı diye bir lokal değişkenle takip ediyorum.
+
+571
+01:52:17,536 --> 01:52:23,536
+Object Output Stream'in Write Object metodunu çağırıyorum. Bakın dikkat edin, arkadaşların tamamını verdim.
+
+572
+01:52:24,435 --> 01:52:37,735
+Yani az önceki şey oluşturmuş olduğum link listin içerisine bütün arkadaş objelerini koydum ve bu link list objesinin tamamını dosyaya yazdırdım.
+
+573
+01:52:37,811 --> 01:53:00,991
+Bu durumda Java Virtual Machine ne yapıyor benim için? Bu link list ve içerisindeki bütün objeleri dosyaya yazdırıyor benim için. Ve ondan sonra autostream'i kapatıyorum. Burada bir autostream olduğu zaman IO exception oluşabilir. Bunu da mutlaka catch bloğunda IO exception ile yakalamam gerekiyor.
+
+574
+01:53:02,531 --> 01:53:04,531
+Şimdi bunu okumaya gelelim.
+
+575
+01:53:05,076 --> 01:53:27,076
+Okey. Buradaki main metodunda yine aynı şekilde okuyacağım dosyanın ismini vermişim. Bir tane object input stream ile file input stream'i zincirlemişim. Bir tane object input stream oluşturmuşum. Okey. Bakın burada read object diyorum. Read object ile bu dosya içerisindeki...
+
+576
+01:53:27,667 --> 01:53:50,187
+Bir tane objeyi okuyorum. Bu objede zaten link list tipinde bir obje ve içerisinde de arkadaş tipinde objeler tutan bir obje. Bunu alıyorum ve lokalde yaratmış olduğum arkadaşlar link list tipindeki arkadaşlar değişkenini atıyorum.
+
+577
+01:53:50,612 --> 01:53:59,771
+Ondan sonra da for döngüsü içerisinde for each yaparaktan bu arkadaşlar linkless data structure üzerinde iterasyon yapmışım ve hepsini yazdırmışım.
+
+578
+01:53:59,771 --> 01:54:09,152
+Bu durumda eğer bu şekilde yapacaksam benim ayrıca kaç tane obje olduğunu önden yazdırmama gerek yok.
+
+579
+01:54:09,271 --> 01:54:11,511
+Çünkü data structure'ın tamamını yazdırıyorum.
+
+580
+01:54:18,612 --> 01:54:24,491
+içinde tutacağım objenin sınıfının serializable interface'ini implement etmiş olması.
+
+581
+01:54:24,491 --> 01:54:25,671
+Okey?
+
+582
+01:54:32,435 --> 01:54:53,755
+Bu kodun devamı, burada ben arkadaşlar okumuş olduğum link list ile okurken iki tüpte hata karşılaşabilirim. Bir tanesi, file'den okuduğum için genel IO exception hatası ile karşılaşabilirim. İkincisi, okumuş olduğum byte'ları bir tane şeye dönüştürüyorum.
+
+583
+01:54:55,380 --> 01:55:16,579
+objeye cast ediyorum. Link list objesini cast ediyorum. Cast etmeye çalıştığım şeyden farklı bir şey varsa o durumda class not fault exception handling oluşuyor. Dolayısıyla bunun her ikisini de catch bloklarında yakalamanız lazım. Dikkat edin. Output stream için
+
+584
+01:55:17,108 --> 01:55:37,048
+Sadece IO exception kullanmıştım ama input stream'de iki tane farklı exception var. Çünkü input stream'i kullandığım zaman bir de okumuş olduğum byte'ları bir tane Java sınıfına kest etme çalışması da yapıyorum arkadaşlar.
+
+585
+01:55:41,779 --> 01:55:43,400
+Buraya kadar sorusu olan var mı?
+
+586
+01:55:45,520 --> 01:55:47,480
+Hocam, benim bir tane sorum var.
+
+587
+01:55:48,260 --> 01:55:53,859
+Bu file stream objelerini en son kapatmamız gerekiyor demiştiniz ya.
+
+588
+01:55:54,779 --> 01:55:55,039
+Evet.
+
+589
+01:55:55,600 --> 01:56:01,739
+Orada mesela biz file output ya da file input stream'i constructor'a argüman olarak verdik.
+
+590
+01:56:01,739 --> 01:56:05,840
+Yani elimizde onun objesi yok. Onu kapatabiliyor muyuz? Otomatik mi kapanıyor?
+
+591
+01:56:06,480 --> 01:56:08,079
+Orada biraz kafam karıştı.
+
+592
+01:56:11,155 --> 01:56:23,596
+Eğer, ben file input stream'i object input stream'e verdim. Burada sadece object input stream için close dedin. File input stream'i de kapatmış oluyor muyum diyorsun?
+
+593
+01:56:30,484 --> 01:56:31,984
+Sorunu yanlış, doğru anlıyor musun?
+
+594
+01:56:31,984 --> 01:56:33,644
+Evet hocam, doğru anladınız.
+
+595
+01:56:33,644 --> 01:56:51,964
+Şimdi bu iki tane stream'i birbirine zincirlediğim için dış taraftaki yani kapsayıcı input stream zincirini kapattığım zaman bu object input stream kendi implementasyonu içerisinde file input stream'i de kapatıyor.
+
+596
+01:56:52,084 --> 01:56:54,124
+Yani geriye döndüğümüz zaman.
+
+597
+01:57:09,684 --> 01:57:12,823
+Kapsayıcı olan
+
+598
+01:57:12,823 --> 01:57:15,724
+obje, object input stream
+
+599
+01:57:16,340 --> 01:57:43,519
+Onun içerisinde olan ise file input stream. File input stream'in açılması ve kapanması işlemini kontrol eden object input stream. Dolayısıyla ben object input stream ile işim bittiği zaman bunu kime kapattırıyorum? Kendi Java programıma kapattırıyorum. Yani close'unu buna çağırıyorum. Object input stream de kapanmadan önce kendisine bağlı olarak yaratılmış file input stream'i kapatıyor.
+
+600
+01:57:44,340 --> 01:57:55,159
+Java'da da bir close şeyi var ama onu biz değil de object input stream'i. Aynı şekilde bunu object output stream'i de file output stream'i de düşünebilirsin.
+
+601
+01:57:56,619 --> 01:57:57,720
+Tamam hocam, teşekkür ederim.
+
+602
+01:58:00,083 --> 01:58:12,564
+Hocam ben de şeyle ilgili sormak istiyordum. Bu Suppress Warning Annotations'da işte Resource var. Serial gördük, Uncheck gördüm. Bunları tek tek bilmek gerekiyor mu? Ezberilecek miyiz? Hangi durumda hangisini kullanacağız?
+
+603
+01:58:21,235 --> 01:58:24,476
+Bu exception handlingler.
+
+604
+01:58:24,796 --> 01:58:29,355
+Bu exception handlingler için unchecked kullanılıyor.
+
+605
+01:58:29,355 --> 01:58:33,615
+Bu serial numarası kullanılımı için mesela.
+
+606
+01:58:35,667 --> 01:59:03,667
+Eğer onunla ilgili bir şey yapmayacaksak serial. Sadece ders kapsamında öğrenmiş olduğunuz suppress warningsleri bilmeniz yeterli. Zaten yaygın olarak kullandığınız warningler de bunlar. Hani şu ana kadar belki karşılaşmadığınız unused var. Unused'da diyelim ki mesela bir sınıf yazdınız. Bu sınıf içerisinde şu kadar bir metodunuz var. Ama bu metotları kodunuz içerisinde yani main metodu içerisinde...
+
+607
+01:59:03,667 --> 01:59:29,987
+Hiçbir yerde çağırmamışsınız. Yani hiç kullanılmamış metotlarınız var. Hani bu durumda compiler unused metot var diye şey yapabilir, warning verebilir. Onu da görmek istiyorsanız hani o suppress warning unused'u da üzerine yazıyorsunuz. O yüzden 3 ya da 4 farklı suppress warning şeyleriniz var. Onları bilmeniz yeterli arkadaşlar sınav için.
+
+608
+01:59:30,420 --> 01:59:38,500
+Ama zaman içerisinde hani kod yazarken daha fazla örnekler şey yaparken başka sürpriz warninglerle de karşılaşacaksınız.
+
+609
+01:59:40,800 --> 01:59:41,920
+Teşekkür ederim.
+
+610
+01:59:45,400 --> 01:59:50,360
+Tamam. Şimdi neredeyiz?
+
+611
+01:59:52,819 --> 02:00:02,439
+Evet, inner class'lardayız. Ben yine bir 10 dakika ara vereceğim arkadaşlar. Ondan sonra da inner class'lar, ondan sonra da multi-threading konusuna geçeceğim. Bir 10 dakika ara veriyorum.
+
+612
+02:09:35,604 --> 02:09:39,704
+Arkadaşlar, tekrardan merhaba. Sesim geliyor mu lütfen? Bir teyit edin.
+
+613
+02:09:47,796 --> 02:09:51,136
+Arkadaşlar, sesim geliyorsa bir teyit edebilir misiniz? Geliyor, tamam.
+
+614
+02:09:54,996 --> 02:09:55,475
+Okay.
+
+615
+02:09:58,475 --> 02:09:59,916
+Inner classes.
+
+616
+02:10:03,667 --> 02:10:17,207
+Şimdi biz şu ana kadar bir sınıfları kullanırken bu sınıfların neydi isimleri vardı.
+
+617
+02:10:17,792 --> 02:10:40,532
+Ve bu sınıflardan farklı yerlerde sınıfların objelerini kullanaraktan ve bu sınıflardan oluşturduğumuz objeler arasındaki ilişkileri kullanaraktan programlarımızı, programımızın logic flow'unun gerektirdiği şeyleri yaptırtıyorduk.
+
+618
+02:10:42,963 --> 02:11:02,963
+Kimi zaman bir sınıfı birden fazla kullanmayacağımız durumlar olabilir. Yani bir sınıfın objesini bir defa kullanacağızdır. Normalde bir sınıfın çok sayıda objesini yaratırız. Ama böyle durumlar vardır ki…
+
+619
+02:11:03,667 --> 02:11:09,547
+Bir sınıfın bir defa objesini yaratacağızdır ve artık o sınıfı bir daha kullanmayacağızdır.
+
+620
+02:11:09,547 --> 02:11:19,828
+Hani özellikle bu tür durumlar için biz inner class kullanıyoruz.
+
+621
+02:11:20,507 --> 02:11:23,988
+Inner classların genel kullanımında
+
+622
+02:11:25,876 --> 02:11:33,436
+Bir defa kullanacağımız, bir defa objesine ihtiyacı olduğumuz sınıflar için inner class yöntemini kullanıyoruz.
+
+623
+02:11:33,996 --> 02:11:39,976
+Inner class dediğimiz şey bir inner class, bir outer class'ın içerisinde olan bir sınıf.
+
+624
+02:11:40,372 --> 02:11:50,352
+Normalde public class, işte ABC deyip curly parantez içerisinde sınıfı tanımlıyorduk.
+
+625
+02:11:50,352 --> 02:11:58,612
+Bu sefer böylesi public olarak tanımlanmış bir sınıfın içerisinde bir alt sınıf tanımlıyoruz.
+
+626
+02:11:59,432 --> 02:12:05,352
+Şimdi bu alt sınıfı tanımladığımız zaman bu alt sınıfın içerisindeki
+
+627
+02:12:07,060 --> 02:12:23,119
+Bütün memberlar, yani bütün member metotlar bu outer class'ın metotlarına ve data member fiyatlarına ulaşabilir oluyor.
+
+628
+02:12:25,260 --> 02:12:27,720
+Şimdi bunun örneklerine bakalım.
+
+629
+02:12:31,572 --> 02:12:47,752
+Şimdi burada benim bir outer class'ım var. Bir tane person class'ı. Bu class'ın içerisinde benim bir tane alt class'ım var. Inner class'ım var.
+
+630
+02:12:48,971 --> 02:12:58,391
+Şimdi bu inner class, employee class'ı. Bu inner class'ı private olarak tanımlamışım. Bunu public olarak da tanımlayabilirdim. Bunu private olarak tanımlamışım.
+
+631
+02:12:58,707 --> 02:13:12,528
+Bu sınıfın içerisindeki bütün metotlar bu outer sınıfın public global member field'larını ve metotlarını görebiliyor.
+
+632
+02:13:14,667 --> 02:13:17,747
+Şimdi bunun kullanımına bakalım.
+
+633
+02:13:19,407 --> 02:13:25,688
+Ben öncelikle bir tane de main metodum var bu sınıf içerisinde, outer class sınıfının içerisinde.
+
+634
+02:13:26,323 --> 02:13:39,943
+Bu main metodu, bu outer class'ın aynı zamanda metodu olduğu için bu metot bu inner class'ı görebiliyor.
+
+635
+02:13:50,880 --> 02:14:12,960
+Bu sınıfın içerisindeki outer sınıfın içerisindeki bu inner class'ı görebiliyor. Bu yüzden burada employee tipinde bir tane değişken yaratabiliyorum. Burada da employee tipinde bir Array yaratmışım. İçerisinde üç tane employee objesi tutmak üzere
+
+636
+02:14:13,427 --> 02:14:16,427
+Bir tane employee tipinde Array yaratmışım.
+
+637
+02:14:16,948 --> 02:14:20,788
+Dikkat edin, bu satırda employee objeleri oluşturmuyorum daha.
+
+638
+02:14:21,168 --> 02:14:26,387
+Sadece içerisinde employee objeleri tutma amaçlı bir tane Array'i oluşturdum.
+
+639
+02:14:27,887 --> 02:14:33,028
+Arkasından bir tane person tipinde bir tane lokal değişken tanımlıyorum.
+
+640
+02:14:34,248 --> 02:14:38,908
+Sonra bu person tipindeki sınıfın bir objesini oluşturuyorum.
+
+641
+02:14:39,572 --> 02:14:42,271
+Bu objeyi bu değişkeni atıyorum.
+
+642
+02:14:44,212 --> 02:14:53,832
+Şimdi bu objeyi kullanıraktan bu objenin altında new employee diyorum.
+
+643
+02:14:54,012 --> 02:15:01,032
+Bakın employee'nin objesini outer class'ın objesi kullanarak oluşturuyorum.
+
+644
+02:15:01,032 --> 02:15:06,432
+Neden? Çünkü bu inner class, bu outer class'ın içerisinde
+
+645
+02:15:07,155 --> 02:15:31,155
+Bunun objesine ulaşabilmek için öncelikle outer class'ın bir objesini oluşturmam gerekiyor ki oluşturdum. Ondan sonra bunun üzerinden bu inner class'ın objesini oluşturuyorum. Inner class'ın objesini oluşturdum. Yani employee tipinde bir obje. Bunu bu employee Array'ın ilk hücresine attım. Yeni bir tane kişi oluşturmuşum. Bunun üzerinden yeni bir tane...
+
+646
+02:15:32,435 --> 02:15:43,835
+Employee objesi oluşturmuşum, buraya atmışım. Yine aynı şekilde üçüncü kişi için bunu yapmışım. Daha sonra da before döngüsü içerisinde bütün elemanları ne yapıyorum? Yazdırıyorum.
+
+647
+02:15:43,835 --> 02:15:55,835
+Şimdi ben buradaki main metodu bunun içerisinden almak istiyorum. Bunu aslında şuradaki, şurada durdurup.
+
+648
+02:15:58,015 --> 02:16:01,515
+Şurada göstersem, kodu göstersem daha iyi olacak.
+
+649
+02:16:24,275 --> 02:16:27,235
+Evet, bu az önce gösterdiğim örnekte.
+
+650
+02:16:28,155 --> 02:16:31,555
+Main method neyin içerisinde?
+
+651
+02:16:33,675 --> 02:16:37,775
+Inner class, main method, outer class'ın bir metodu.
+
+652
+02:16:37,916 --> 02:16:41,355
+Dolayısıyla main method içerisinde bu employee'yi görebiliyorum.
+
+653
+02:16:41,995 --> 02:16:47,175
+Dikkat edin, burada employee, inner sınıfı private olarak tınlanmış.
+
+654
+02:16:48,948 --> 02:16:54,888
+Şimdi artık main metodu bu outer sınıfının içerisinden çıkartalım. Başka bir sınıfa koyalım.
+
+655
+02:16:56,168 --> 02:16:58,828
+Kod aynı kod. Sadece main metodu çıkarttım.
+
+656
+02:17:00,868 --> 02:17:05,407
+Şimdi main metodu ayrı bir sınıfın içerisine koydum.
+
+657
+02:17:06,788 --> 02:17:14,796
+Şimdi burada aynı şeyi yapacağım ama aynı şeyi yaparken dikkat edin mutlaka import statement'a benim...
+
+658
+02:17:14,932 --> 02:17:24,612
+Bu package altında, bu author sınıfın altında employee sınıfı vardır diye beni mutlaka import etmem gerekiyor.
+
+659
+02:17:25,512 --> 02:17:28,551
+Dikkat edin, aynı package altında olmalarına rağmen
+
+660
+02:17:30,644 --> 02:17:50,364
+İkinci sınıf, eğer ben özellikle bu person'un altında employee diye bir tane alt sınıf olduğunu belirtmezsem, benim bu kod içerisinde employee yazdığım zaman, employee'nin hangi sınıf olduğunu Java Virtual Machine'in compiler'ın tanıması imkansız.
+
+661
+02:17:55,219 --> 02:18:01,319
+Bu inner sınıf neyin bir parçası? Personal bir parçası.
+
+662
+02:18:01,859 --> 02:18:09,559
+Dolayısıyla benim ne yapmam gerekiyor? Mutlaka bu import statement'ı yazmam gerekiyor.
+
+663
+02:18:13,159 --> 02:18:18,079
+Şimdi bir tane daha örneğini yapayım.
+
+664
+02:18:26,708 --> 02:18:50,888
+Şimdi ise buradaki sınıfı private olarak tanımlıyorum. Private olarak tanımlamak ne demek? Şu demek. Benim buradaki sınıfı sınıfla ilgili herhangi bir şey yapabilmem için bu outer sınıfın public metotlarını kullanmam gerekli.
+
+665
+02:18:51,252 --> 02:19:06,031
+Şimdi buradaki örnekteki örneğe dönelim tekrardan. Buradaki örnekte employee sınıfı public olarak tanımlanmıştı. Yani inner sınıf, outer sınıfın altında public olarak tanımlanmıştı.
+
+666
+02:19:18,835 --> 02:19:42,635
+Ben person'ın altında employee sınıfını görebiliyorum. Yani bir başka sınıftan person'ın altındaki employee görebiliyorum. Eğer employee private olarak tanımlanmış olsaydı ben buraya importu koymuş olmama rağmen hala person'ın içerisinde employee diye bir şey olup olmadığını göremeyecektim. Yani bu import statement bile hata verecekti.
+
+667
+02:19:42,896 --> 02:20:02,596
+Yani person'ın altında ben bir şey göremiyorum diyecekti. Çünkü şurada bu public değil, private tanımlanmış. Ancak private'ı kimler görebiliyordu hatırlayın. Bir sınıfın içerisindeki diğer metotlar görebiliyordu. Bu sınıfın dışındaki diğer sınıflar bu metodun varlığından haberdar değildi.
+
+668
+02:20:03,028 --> 02:20:06,407
+Aynı şekilde bu sınıfın varlığından da haberdar olmayacaklar.
+
+669
+02:20:07,228 --> 02:20:22,788
+Dolayısıyla public tanımlandığı için ben ikinci bir sınıf içerisindeki mail metodu içerisinde eğer bu sınıf importta da verilmişse ben bununla ilgili bir şey yaratabiliyorum.
+
+670
+02:20:24,168 --> 02:20:27,108
+Array yaratabiliyorum. Yani bu tipi kullanabiliyorum kodumda.
+
+671
+02:20:28,051 --> 02:20:40,652
+Peki, bu şöyle bir durum olduğunda, yani benim inner sınıfım private olarak tanımlandığında, ben bu inner sınıfla ilgili bir obje yaratmak istediğimde ne yapmam gerekir?
+
+672
+02:20:40,652 --> 02:20:52,531
+Şimdi bu durumda ben benim outer sınıfımın public metotlarını kullanarak bu employee sınıfının objesini oluşturabilirim.
+
+673
+02:20:52,628 --> 02:21:10,488
+Bu durumda ne yapacağım? Şimdi buraya bir tane Enlist diye bir tane metot eklemişim. Bu Enlist metodunun Access Modifier'ı Public. Yani şuradaki Public olarak tanımlanmış bütün metotlar Person dışındaki sınıflar tarafından da görülebiliyor.
+
+674
+02:21:10,488 --> 02:21:13,868
+Bu Enlist metodu içerisine
+
+675
+02:21:14,304 --> 02:21:17,684
+Bu employee'nin bir tane objesini yaratıyorum.
+
+676
+02:21:17,824 --> 02:21:23,543
+Yani kim ki bu Enlis metodunu çağırdığı zaman aslında bir tane employee objesi oluşturuyor.
+
+677
+02:21:23,644 --> 02:21:28,684
+Ve employee objesine de constructor'ına salary'i gönderiyor.
+
+678
+02:21:28,684 --> 02:21:31,103
+Ne yapıyorum aslında?
+
+679
+02:21:31,324 --> 02:21:40,684
+Az önce yapmış olduğumu, az önce employee objesini direkt ben başka bir sınıf içerisinde...
+
+680
+02:21:41,299 --> 02:21:52,439
+oluşturabiliyordum. Çünkü bu employee public tanımlanmıştı. Şimdi private tanımlandığı için aynı işlemi bu sefer outer class içerisinde yapıyorum.
+
+681
+02:21:53,108 --> 02:21:58,168
+Peki, bu durumda benim test class'ım neye dönüştü?
+
+682
+02:21:58,688 --> 02:22:03,268
+Burada artık employee tipinde Array yaratamayacağım.
+
+683
+02:22:03,387 --> 02:22:07,628
+Çünkü employee diye bir tane alt sınıf olduğunu bilmiyorum bile yani.
+
+684
+02:22:07,628 --> 02:22:12,427
+Bu durumda person tipinde bir şey oluşturuyorum Array.
+
+685
+02:22:13,648 --> 02:22:16,128
+Bir tane yeni bir person objesi oluşturuyorum.
+
+686
+02:22:16,628 --> 02:22:18,628
+Enlist'i çağırdığım zaman...
+
+687
+02:22:19,316 --> 02:22:33,496
+Ne yapacak enlist metodu? Person objesi içerisinde employee objesi oluşturacak benim için. Çünkü benim kodumda ben ne yaptım? Bu employee objesini person içerisindeki bir metoda yaptırdım.
+
+688
+02:22:34,336 --> 02:22:47,056
+Aynı şekilde yeni yeni yaratmış olduğum bütün personlar için enlist'i çağırdığımda bunların altında employee objesi de oluşturacağım. Daha sonra da bu person objelerini yazdıracağım.
+
+689
+02:22:47,316 --> 02:22:54,876
+Bakın, ilk yapmış olduğum örnekte employee sınıfı private olarak tanımlanmıştı.
+
+690
+02:22:54,876 --> 02:23:03,296
+Ama bu private'ı ancak person outer class'ının içerisindeki metotlar görebiliyordu.
+
+691
+02:23:03,736 --> 02:23:07,276
+İlk yapmış olduğum şeydi main metodum.
+
+692
+02:23:07,603 --> 02:23:18,123
+Aynı sınıf içerisinde olduğu için bu private olmasına rağmen ben bunu görebildim, employee tipini görebildim ve onun bir tane Array'ini yaptırabildim.
+
+693
+02:23:19,183 --> 02:23:25,503
+İkinci yaptığım örnekle bu sefer main'i dışarıya çıkarttım ve employee sınıfını public yaptım.
+
+694
+02:23:27,188 --> 02:23:43,907
+Bu dışarıya çıkartmakla beraber yine aynı şekilde employee sınıfını public yapmakla beraber halen employee sınıfını ben person altında görebiliyorum. Ama görebilmem için de mutlaka bu imported statement'a da ihtiyacım var. Bunda da bir sorun yok.
+
+695
+02:23:46,100 --> 02:23:59,860
+Ama eğer ben bu employee inner sınıfını private yapmaya karar verirsem, o durumda bunu person sınıfı dışında başka bir sınıfın görmesi imkansız.
+
+696
+02:24:00,860 --> 02:24:13,239
+Bunun objelerini oluşturabilmek için de ne yaptım? Bir tane public metot ekledim person'a ve bu public metotu kullanaraktan employee'nin objelerini oluşturdum.
+
+697
+02:24:14,739 --> 02:24:15,219
+Ok?
+
+698
+02:24:29,876 --> 02:24:38,876
+Inner classlarla ilgili göstereceğim bu kadar. Buraya gelmişken bir iki tane input output stream ile ilgili örnekle göstermiş olayım. Burada...
+
+699
+02:24:40,180 --> 02:24:54,720
+Aynı arkadaş sınıfı gibi bir tane kontak sınıfım varmış. Bu kontak sınıfının objelerini ben faile yazdıracağım. O yüzden kontak sınıfı Serializable Interface'ini implement ediyor.
+
+700
+02:24:54,720 --> 02:25:06,060
+Dediğim gibi mutlaka eğer Serializable Interface'ini implement ediyorsam static, final, long bir serial version UID belirtmem lazım.
+
+701
+02:25:06,579 --> 02:25:20,599
+Ondan sonra bunun içerisinde 3 tane global member field varmış. Name, phone, mail, kontak bilgileri, getter'larım, setter'larım var. Bir de to string'im var.
+
+702
+02:25:20,599 --> 02:25:30,399
+Şimdi burada create contact yapmışım. Create contact sınıfım var. Main metodu içerisinde ne yapıyorum?
+
+703
+02:25:31,636 --> 02:25:44,015
+Kullanıcıdan kaç tane kontak yaratmasını istediğini alıyorum. Ondan sonra yaratmak istediğim kontak sayısı kadar bir kontak ereği yaratıyorum.
+
+704
+02:25:44,659 --> 02:26:00,360
+Bir for döngüsü içerisinde kullanıcıdan verileri alarak her bir kontak objesi için verileri alıp önce kontak objesini oluşturup kontak arayının hücrelerine yerleştiriyorum.
+
+705
+02:26:01,268 --> 02:26:12,968
+Ondan sonra da bu yaratmış olduğum kontak eriği içerisinde, kontaks eriği içerisindeki kontak objelerini aynı arkadaş oluşturduğu yaptığım gibi dosyaya yazacağım.
+
+706
+02:26:13,427 --> 02:26:16,247
+Öncelikle bir tane dosya ismi tanımlıyorum.
+
+707
+02:26:16,868 --> 02:26:22,828
+Sonra file output stream ile object output stream'i zincirlemişim.
+
+708
+02:26:24,340 --> 02:26:39,479
+Ondan sonra bir tane output stream objesi oluşturmuşum. İlk olarak kontak kauntı yani kaç tane kontak gerçekleştireceksem, yazacaksam onun sayısını integer wrapper objesi olarak yazıyorum.
+
+709
+02:26:39,979 --> 02:26:48,340
+Sonra da for döngüsü for each kullanaraktan write object metoduyla output stream'in bütün kontakları yazıyorum ve daha sonra kapatıyorum.
+
+710
+02:26:48,703 --> 02:26:56,423
+Bu bir output stream olduğu için bunda bir tane IO exception oluşabilir. Bunu da CatchBlo'unda yazıyorum.
+
+711
+02:26:57,940 --> 02:27:13,620
+Burada okurken de ne yapıyorum? Öncelikle okuyacağım dosyanın ismini tanımlıyorum. Sonra buna file output stream objesiyle object input stream objelerini zincirliyorum. Bir tane object input stream oluşturuyorum.
+
+712
+02:27:14,520 --> 02:27:25,819
+Burada read object metodunu çağırıyorum. İlk okuyacağım obje integer tipinde olduğu için öncelikle integer'a kestediyorum. Kaç tane kontak olduğunu.
+
+713
+02:27:25,940 --> 02:27:51,760
+buluyorum. Sonra da bu kadar kontak sayısı kadar for döngüsü üzerinde okumaya devam ediyorum. Her for döngüsü üzerinde read object'i çağırıyorum. İlgili objeyi alıyorum. Kontak tipine typecast yapıyorum. Onunla ilgili veriyi yazdırıyorum. Sonra da input stream'imi kapatıyorum. Bu input stream olduğu için iki türlü hata olabilir. Bir tanesi IO exception.
+
+714
+02:27:52,884 --> 02:27:58,884
+Veriyi okurken problem çıkabilir. Bir de typecasting sırasında hata çıkabilir. Bunu da yazmışım.
+
+715
+02:27:59,684 --> 02:28:03,884
+Aynı arkadaş oluştur örneğinde olduğu gibi aynı örneği bu sefer...
+
+716
+02:28:04,948 --> 02:28:26,448
+link list kullanarak yapmışım arkadaşlar. Link listi bu sefer bütün datayı link list içerisine okuyorum. Sonra da önceden kaç tane obje yazdığımı bir integer repor objesi halinde yazmak yerine link listin tamamını bir obje olarak dosyaya yazdırıyorum.
+
+717
+02:28:26,835 --> 02:28:39,716
+Aynı şekilde bunu okurken de bütün link listi olduğu gibi okuyorum ve link listin içerisindeki bütün objeleri teker teker yazdırıyorum.
+
+718
+02:28:40,055 --> 02:28:44,216
+Yani bir Array versiyonunu bir de Data Structure versiyonunu görmüş oldunuz.
+
+719
+02:28:44,216 --> 02:28:50,095
+Size sınavda link list yerine HashMap sorabiliriz mesela.
+
+720
+02:28:50,415 --> 02:28:54,216
+Yani HashMap Data Structure'ı kullanın ve...
+
+721
+02:28:54,835 --> 02:29:02,115
+Bu data structure'daki bütün objeleri dosyaya yazdırın diyebiliriz. Ya da ArrayList kullandırabiliriz.
+
+722
+02:29:02,115 --> 02:29:16,216
+Ama burada önemli olan, dikkat edeceğiniz, bu kullandığınız data structure hangisi ise bunun içerisine koyacağınız objelerin mutlaka Serializable Interface'ini implement etmesi gerekiyor.
+
+723
+02:29:16,335 --> 02:29:18,695
+Şunu unuttuğunuz zaman puanınız gidiyor.
+
+724
+02:29:22,708 --> 02:29:32,087
+Bu inner classları konuşmuş olduk. Şunu da şey yaptık. Okey. Tekrardan.
+
+725
+02:29:45,043 --> 02:29:47,863
+Hocam bir şey sorabilir miyim?
+
+726
+02:29:48,324 --> 02:29:48,543
+Evet.
+
+727
+02:29:48,543 --> 02:30:02,824
+Bu projede de GSM provider'ın, cable provider'ın altında subscription plans var. Onlar da dizi şeklinde. Onları ArrayList ya da klasik dizi şeklinde tanımlamamız fark eder mi?
+
+728
+02:30:04,308 --> 02:30:07,588
+Yani farklı bir data structure kullanabilir miyim diyorsun?
+
+729
+02:30:08,028 --> 02:30:08,308
+Evet.
+
+730
+02:30:09,708 --> 02:30:14,148
+Dizi yerine ArrayList kullanabilir miyim? Hani onun hazır fonksiyonları var ya.
+
+731
+02:30:15,508 --> 02:30:29,568
+Okey. Yani yapabilirsiniz. Onda bir şey görmüyorum. Özellikle bunu ama şey yaparken, asistan hocanızla demosunu yaparken şey yapın. Data structure konusunda hocamıza sorduk. Okey dediğim.
+
+732
+02:30:30,548 --> 02:30:31,948
+Tamam hocam, teşekkürler.
+
+733
+02:30:31,948 --> 02:30:46,328
+Ama yani oradaki metotlar eksik olmayacak. Yani orada find metodu varsa sizde de find metodu olacak. Sadece find metodu içerisinde hani ele üzerinde belki search etmek yerine şey üzerinde search etmiş olacaksınız.
+
+734
+02:30:46,968 --> 02:30:51,948
+O fonksiyonlar var zaten. Hani eleman içeriyorsa mesela contains kullandım.
+
+735
+02:30:52,308 --> 02:30:54,927
+Anladım. Tamam. Okey. Onda bir şey görmüyorum. Tamam.
+
+736
+02:30:56,788 --> 02:30:58,108
+Tamam hocam, teşekkürler.
+
+737
+02:30:58,968 --> 02:31:04,468
+Okey, inner classları konuşmuş olduk.
+
+738
+02:31:12,819 --> 02:31:23,399
+Evet, test inner class direktliği, test şey, üçün ayrı bir sınıf içerisinden inner class'ı test etme şeyini de konuştuk.
+
+739
+02:31:23,399 --> 02:31:38,399
+Burada mesela arkadaşlar unused, suppress warning unused'u koyuyorsunuz. Unused'u koymamızın sebebi, compiler buradaki kullanılmış olan şeyin,
+
+740
+02:31:39,443 --> 02:32:05,103
+Hiçbir yerde kullanılmadığını düşündüğü zaman buraya warning veriyor. Bu da private olarak tanımlandığı için, bunun dışındaki hiçbir sınıfta bunu görmeyeceği için, dolayısıyla bunun kullanılmayacağını düşünüyor. Ama ben bunu zaten spesifik olarak bu şekilde implement etmişsem.
+
+741
+02:32:05,492 --> 02:32:16,272
+Ve bunu kullanacağımı biliyorsam bu yüzden unused warningini sürpres ediyorum ve istediğim logic'teki bakış açısıyla bunu kullanıyorum.
+
+742
+02:32:16,731 --> 02:32:22,452
+Ama compiler şunu düşünüyor, buraya bir tane inner class koymuş ve bunu private tanımlamış.
+
+743
+02:32:22,452 --> 02:32:33,452
+Bunu kendi sınıfı içerisinde de kullanmıyor. Başka bir sınıfında bunu görüp burada bir sınıf varmış diye kullanması şey o yüzden buraya...
+
+744
+02:32:33,492 --> 02:32:36,211
+use warning'i verecek. Onu da süpres etmemiz gerekiyor.
+
+745
+02:32:38,632 --> 02:32:43,972
+Hocam, bu yaptığımız aslında o person class'ını parçalamak gibi bir şey değil mi alt class'lara?
+
+746
+02:32:45,092 --> 02:32:49,332
+Çünkü kendi employee özelliklerini başka bir class'ta tutuyor gibi.
+
+747
+02:32:50,579 --> 02:33:01,119
+Şimdi, hani bu örnekte, hani ben bunu şey yapabilirdim, şuradaki global member filtrerin hepsini bunun içerisine koyabilirdim.
+
+748
+02:33:01,239 --> 02:33:12,719
+Yahut da bir inheritance ilişkisi kurabilirdim. Daha önce görmüştünüz, yani person'dan inherit edip employee oluşturmuştum, employee'den inherit edip management oluşturmuştum.
+
+749
+02:33:18,579 --> 02:33:43,959
+alt sınıf oluşturmuş oldum. Ama genelde alt sınıf kullanırken bizim lojiğimiz şu. Eğer bir sınıfın sadece bir tane şeyini oluşturacaksam, çok yerde değil de bir amaçla objesini oluşturacaksam hani o gibi durumlarda biz alt sınıf oluşturuyoruz. Yani hani böyle bir şeyi implement etmiş olman için
+
+750
+02:33:44,368 --> 02:34:02,747
+Sebebinin o olması lazım. Yoksa hani normalde sen bir person objesi oluşturuyorsun. O person objesi içerisinde tutmak istediğin kişinin maaşı, ismi ondan sonra vesaire ise bunu hiç alt sınıf olmadan da yapabilirdin.
+
+751
+02:34:02,747 --> 02:34:12,368
+Ya da şöyle derdin, hani ben bunu senin söylediğin gibi parçalara ayırayım. O zaman bir inheritance ilişkisi kurardın. Person, person'dan employee türetti.
+
+752
+02:34:12,368 --> 02:34:26,888
+Employee'den Management'ı üreteyim. Yani bu biraz daha tercih edeceğim bir dizayn olmazdı. Ama burada bir alt sınıfın kullanımına özellikle örnek verebilmek için bunu bu şekilde yaptım.
+
+753
+02:34:40,368 --> 02:34:44,308
+Bunu aynı sınıfın içerisindeki diğer metotlar görüyor.
+
+754
+02:34:44,868 --> 02:34:51,368
+Eğer başka bir sınıf tarafından bu alt sınıfın görülmesini istiyorsan, bu private değil de public tanımlanmalı.
+
+755
+02:34:52,488 --> 02:34:52,907
+Tamamdır.
+
+756
+02:34:53,067 --> 02:35:00,348
+Yani parçaları bölmek istiyorsan, benim önerim bunu inheritance yapısı kullanarak yapmak.
+
+757
+02:35:01,567 --> 02:35:02,247
+Tamamdır.
+
+758
+02:35:02,848 --> 02:35:03,508
+Sağ olun hocam.
+
+759
+02:35:06,004 --> 02:35:09,084
+Şimdi multi-threading konusuna bakalım arkadaşlar.
+
+760
+02:35:10,704 --> 02:35:25,844
+Şimdi biz şu anda çalıştığımız makinelerin hatta kullandığımız telefonların neredeyse tamamı birden fazla CPU çalıştırıyor.
+
+761
+02:35:25,844 --> 02:35:32,004
+Bu her bir CPU üzerinde de birden fazla core var.
+
+762
+02:35:32,368 --> 02:35:41,368
+Bu multi-core makineler bizim...
+
+763
+02:35:41,971 --> 02:35:47,231
+eş zamanlı olarak birden fazla proses çalıştırmamıza olanak veriyor.
+
+764
+02:35:47,371 --> 02:35:52,891
+Şimdi bir programı çalıştırdığınız zaman memori de bu program proses adını alıyor.
+
+765
+02:35:53,191 --> 02:35:56,531
+İşletim sistemi artık buna program değil de proses diyor.
+
+766
+02:35:57,491 --> 02:36:01,971
+Bir prosesin bir CPU üzerinde çalışabilmesi için
+
+767
+02:36:02,368 --> 02:36:29,528
+İşletim sistemi bu prosesin öncelikle instructionlarını ve bu prosesin kullanmış olduğu global member fieldları ve bu prosesin ondan sonra ihtiyacı olan belli bir memory alanını allocate ediyor physical memory'de ve işletim sistemi bu prosesin çalışma süreci boyunca bu prosesin takip ediyor.
+
+768
+02:36:30,368 --> 02:36:32,227
+Hayat Duyumüsü'ne.
+
+769
+02:36:32,828 --> 02:36:39,587
+Şimdi bu proses normalde ilk yaratıldığı zaman buna single-threaded diyoruz.
+
+770
+02:36:40,268 --> 02:36:42,468
+Yani bu şu demek single-threaded.
+
+771
+02:36:42,468 --> 02:36:48,227
+Bu sadece bir tane core üzerinde çalışacak anlamında.
+
+772
+02:36:48,848 --> 02:36:54,727
+Yani diyelim ki sizin makineniz multi-core ve içerisinde dört tane core var.
+
+773
+02:36:54,828 --> 02:36:57,108
+İçerisinde dört tane işlemci var.
+
+774
+02:36:57,951 --> 02:37:00,871
+Instruction'ları execute edebilen
+
+775
+02:37:02,036 --> 02:37:26,355
+Hesaplama birimi var. Şimdi ben istesem aslında bu dört taneye benim programıma bu dört tane şeye eş zamanlı olarak çalıştırabilirim. Ama eğer benim programım yani benim prosesim single traded ise dört tane olmasına rağmen işletim sistemi bunu sadece bir tanesi üzerinde çalıştıracak.
+
+776
+02:37:27,956 --> 02:37:40,456
+Şimdi ben eğer istersem benim programım içerisinde birden fazla thread yaratabilirim. Yani benim programımı multi-threaded hale getirebilirim. Bu durumda.
+
+777
+02:37:40,884 --> 02:38:05,583
+Diyelim ki benim programım normalde ilk yaratıldığında single threadit ve ben programım içerisinde 3 tane daha thread yarattım. Bu şu demek benim programım yani benim programım ne olmuş oldu? Yani proses olmuş oldu işletim sistemi bakış açısıyla. Prosesimin içerisinde 4 tane thread olmuş oldu. 4 tane de core varsa her bir core'da bir tane proses çalışacak demek.
+
+778
+02:38:06,036 --> 02:38:18,456
+Eğer diyelim ki benim programıma ben çok iş yaptırmak istiyorsam ve multi-core donanım yapısını da kullanmak istiyorsam bu durumda kodumu multi-tradit şeklinde yazıyorum.
+
+779
+02:38:19,175 --> 02:38:28,936
+Şimdi bir programı multi-tradit hale getirebilmek için Java'nın sağlamış olduğu bir takım package'lar var. Biz şimdi onları konuşuyor olacağız.
+
+780
+02:38:31,059 --> 02:38:48,439
+Öncelikle bir işletim sisteminde ilk başta yeni bir tane, diyelim ki siz desktop'ta bir tane uygulama var, executable bir uygulama, üzerine iki tıkladınız ve bunu bir tane çalışan proses haline getirdiniz.
+
+781
+02:38:57,299 --> 02:39:11,299
+Global Member Field'ını bir proses haline getirebilmek için yapması gereken bir takım işlemler var. Bu süreç içerisinde bu prosesin bulunmuş olduğu state'i işletim sistemi new diyor. Bu şekilde takip ediyor.
+
+782
+02:39:11,500 --> 02:39:25,299
+Ne zaman ki bu proses artık CPU üzerinde yani core üzerinde işlemci birimin üzerinde executable edilmeye hazır oluyor. Yani o instruction'lar teker teker execute edilmeye hazır oluyor. İşletim sistemi bunun...
+
+783
+02:39:25,299 --> 02:39:42,180
+etiketini değiştiriyor ve bunu runnable etiketine dönüştürüyor. Ve bunu bir tane kuyruğa koyuyor. Yani bütün işlemleri tamamlanmış ve CPU'dan artık çalışma zamanı almaya hazır olmuş olan bütün prosesler runnable etiketini alıyor.
+
+784
+02:39:42,579 --> 02:39:56,700
+Ve bu bulunmuş oldukları runnable queue içerisinde CPU'nun kullanmış olduğu, işletim sisteminin kullanmış olduğu scheduler hangisi önce öndeyse bunu alıp bunu bir tane CPU'ya veriyor.
+
+785
+02:39:56,819 --> 02:39:59,920
+Yani işlemci birimine veriyor. Yani core'lardan birisine veriyor.
+
+786
+02:40:00,559 --> 02:40:06,279
+Dört tane core'un varsa mesela buradan almış olduğu proses gelip buradaki core üzerinde çalışıyor.
+
+787
+02:40:06,644 --> 02:40:10,644
+Şimdi eğer ben programımı multi-tradit yazmışsam...
+
+788
+02:40:10,672 --> 02:40:38,672
+Diyelim ki benim prosesimin içerisinde dört tane thread var. Her birisi ayrı bir tane ayrı bir thread şeklinde bu runable queue da yerini alıyor. Yani benim programımı temsil eden dört tane ayrı ne olmuş oluyor? Thread olmuş oluyor. Dört tane ayrı job, iş parçacı olmuş oluyor. Ve bu her birisi ne oluyor? Scheduler bunların her birisini...
+
+789
+02:40:38,672 --> 02:40:52,172
+boşluğu duran bir tane core'a atıyor. Eğer dört tane core varsa, benim de dört tane prosesime ait thread'im varsa her birisi ayrı bir core üzerinde çalışıyor.
+
+790
+02:40:53,252 --> 02:41:05,391
+Şimdi bu thread kütüphanesi bir takım fonksiyonlar sağlıyor. Ben bir yaratılmış olan thread'i slip, wait, join gibi metotlarını çağırarak
+
+791
+02:41:06,611 --> 02:41:12,471
+Bu threadleri belli bir süre hiçbir iş yaptırtmadan blok edebilirim.
+
+792
+02:41:12,471 --> 02:41:21,791
+Bu durumda işletim sistemi ben ne zamanki şu metotlarını çağırmışsam thread'in bunları CPU'dan alıp bunları ayrı bir Q'nun içerisine koyuyor.
+
+793
+02:41:23,711 --> 02:41:30,391
+Ve ben o threadleri biraz bekletmek istiyorsam, benim logical flow'um onu gerektiriyorsa
+
+794
+02:41:30,847 --> 02:41:46,587
+Bunu CPU üzerinde bekletmek yerine yani bir for döngüsü üzerinde sürekli CPU üzerinde zaman harcatmak yerine bunu sleep, wait ya da join gibi metotlarla thread'in sağlamış olduğu bunu blocked şeyine alıyorum.
+
+795
+02:41:47,316 --> 02:42:00,536
+Ve aynı şekilde bu blocked queue'una alınmış olan threadleri tekrardan hayata döndürmek yani çalışmalarına devam etmek için Notify, Notify All gibi bu thread sınıfının sağlamış olduğu.
+
+796
+02:42:01,007 --> 02:42:16,907
+metotlar var. Bu metotları kullanaraktan ben bu blokda olan threadleri tekrardan CPU'dan süre bekleyen threadlerin olduğu, proseslerin olduğu run-adam queue'ye koyabiliyorum.
+
+797
+02:42:17,727 --> 02:42:24,488
+Ne zaman ki bir threadin yapması gereken tüm işlemler bitti. Çünkü geldi, çalıştı.
+
+798
+02:42:25,492 --> 02:42:44,412
+Tekrardan runnable'a döndü. Yani işletim sistemi de threadleri ancak belirli bir time slice veriyor. Yani diyelim ki 5 milisaniye veriyor. Bir tane proses geldi, bir core'a atandı, çalıştı 5 milisaniye, tekrardan runnable Q'ye dönüyor.
+
+799
+02:42:44,412 --> 02:42:53,412
+Yani round robin sıralı bir şekilde bütün prosesleri, execute edilmeleri gereken totaldeki süre neyse o kadar...
+
+800
+02:42:53,492 --> 02:43:15,972
+Bir thread'in çalışması gereken bütün şeyler bittikten sonra işletim sistemi artık bunun etiketini DDE dönüştürüyor ve bu thread'i artık yok ediyor. Onunla ilgili ayırmış olduğu kaynakları release ediyor. Şimdi bu thread sınıfının sağlamış olduğu metotlara hani beraber bir bakalım.
+
+801
+02:43:18,579 --> 02:43:27,700
+Öncelikle ben bir thread oluşturacaksam, yani yazmış olduğum kodu multi-threaded hale getireceksem şunu yapıyorum.
+
+802
+02:43:29,759 --> 02:43:37,879
+Bu multi-threaded hale getirmek istediğim kodu, runnable interface'ini implement ettiriyorum.
+
+803
+02:43:37,879 --> 02:43:39,879
+Bu runnable interface'i...
+
+804
+02:43:42,036 --> 02:43:46,495
+Java'nın Multi-Thread Kütüphanesi'nde sağlamış olduğu bir interface.
+
+805
+02:43:47,347 --> 02:43:56,567
+Benim hangi sınıfımı ben multi-thread it hale getirmek istiyorsam demek ki runnable interface'ini implement ediyor.
+
+806
+02:43:57,288 --> 02:44:09,347
+Runnable interface'ini implement edince runnable interface'i hatırlayın interface'de olan bütün metotları interfaise implement eden regular sınıflarının içermesi gerekiyordu.
+
+807
+02:44:09,907 --> 02:44:15,047
+Runnable interface'i ve implement edeceği mutlaka run metoduna ihtiyacımız var arkadaşlar.
+
+808
+02:44:15,347 --> 02:44:19,527
+Yani mecbur bırakıyor bizi. Mutlaka run metodunu implement etmemiz gerekiyor.
+
+809
+02:44:20,427 --> 02:44:26,667
+Şimdi buradaki örnek üzerinden bu bir tane thread'i yaratacağız.
+
+810
+02:44:26,667 --> 02:44:35,667
+Öncelikle ben detayına inmeden bu objenin, bu sınıfın burada bir tane multi-thread hale getirmek istediğim sınıf olduğunu görüyorsunuz.
+
+811
+02:44:36,272 --> 02:44:47,332
+Multi-tread haline getirmek istediğim için bunu runnable interface'ine implement ettirdim. Bir tane run metodu yazdım. İçerisine de bir takım kod yazdım. Bunun detayına gireceğim.
+
+812
+02:44:49,952 --> 02:44:57,531
+Ondan sonra da bu thread'i çalıştıracağım main metodu içerisinde şunu yapıyorum.
+
+813
+02:44:58,708 --> 02:45:23,848
+Bir tane thread tipinde değişken tanımlıyorum. Bu da yine Java'nın multi-thread kütüphanesinin sağlamış olduğu bir tane sınıf. Yani şu ana kadar multi-threading ile ilgili neleri öğrendiniz? Bir, runable interface sınıfını öğrendiniz. İki, bir şimdi de thread sınıfını öğreniyorsunuz. Bir tane thread sınıfı tipinde bir değişken tanımlıyorum.
+
+814
+02:45:24,340 --> 02:45:30,299
+Sonra bu thread sınıfının bir objesini oluşturuyorum.
+
+815
+02:45:30,979 --> 02:45:38,899
+Yalnız bu objenin içerisine benim multi-threaded haline getirmek istediğim sınıfın objesini veriyorum.
+
+816
+02:45:39,299 --> 02:45:41,979
+Neydi benim multi-threaded haline getirmek istediğim obje?
+
+817
+02:45:42,299 --> 02:45:43,840
+Soccer Fun buradaki örnekte.
+
+818
+02:45:45,959 --> 02:45:47,119
+Bunun objesini veriyorum.
+
+819
+02:45:47,763 --> 02:45:50,663
+Artık ben burada bir tane thread oluşturdum.
+
+820
+02:45:51,123 --> 02:45:57,583
+Thread'in start metodunu çağırdığım zaman artık bu ne olacak?
+
+821
+02:45:57,783 --> 02:46:02,731
+Bu şuradaki threadleştirmek istediğim sınıfın...
+
+822
+02:46:03,059 --> 02:46:28,239
+Threatleştirmek istediğim sınıfın run metodunu benim için çalıştırıyor. Bu threadletmek istediğim sınıfın run metodunu ne zamanki start metoduna bastığım zaman şunu çalıştırıyor. Yani bunu bir main metodu gibi düşünebilirsiniz ama normalde mesela main metodunu çalıştırırken biz Java Virtual Machine'in Java comment line'daki
+
+823
+02:46:29,940 --> 02:46:33,579
+Komutunu kullanarak main metodunu dışarıdan çalıştırıyorduk.
+
+824
+02:46:33,579 --> 02:46:38,380
+Ama burada bu sınıfın main metodu yerine run metodunu düşünün.
+
+825
+02:46:38,459 --> 02:46:44,119
+Bu run metodunu çalıştırırken de dışarıdan start metodu ile yapıyoruz.
+
+826
+02:46:44,220 --> 02:46:47,720
+Start metoduna çağırdığım zaman ne yapıyor?
+
+827
+02:46:48,200 --> 02:46:55,940
+Bu thread'in içerisine gömmüş olduğum, runnable interface'ini implement etmiş olduğum objenin run metodunu çalıştırıyor.
+
+828
+02:46:59,347 --> 02:47:02,227
+Şimdi buradaki örnekte mesela ben ne yapmaya çalışmışım?
+
+829
+02:47:02,479 --> 02:47:30,079
+Buradaki örnekte bir tane soccer fan var. Bu ne yapıyor? 10 defa olmak üzere her seferinde de 0 milisaniye ile 1000 milisaniye arasında random olarak bekleme süreleriyle yani her adım arasında bekleme süreleriyle tezahürat yapıyor. Bunu örneklemek istiyorum.
+
+830
+02:47:30,448 --> 02:47:38,268
+Bunun için iki tane program içerisinde değişmeyecek değişken tanımlamışım.
+
+831
+02:47:40,268 --> 02:47:43,567
+Değişmeyecek olmasını garanti altına alan final.
+
+832
+02:47:44,435 --> 02:48:03,675
+Ondan sonra static tanımlamışım. Bu bir multi-threaded olduğu için buradaki değişkenlerin bütün threadler tarafından paylaşılıyor olmasını garanti altına almak için static kullanmışım. Zaten tipi integer ve bunu public olarak tanımlamışım.
+
+833
+02:48:04,515 --> 02:48:11,575
+Ondan sonra iki tane global member field'ım var. Team name, shout phrase. Hani hangi takım için bağıracağım bir de ne bağıracağım.
+
+834
+02:48:12,000 --> 02:48:28,579
+Ondan sonra bir tane constructor oluşturmuşum ve bu iki tane global member field'ı initialize etmişim. Şimdi bu bir runnable interfejsi implement eden bir tane sınıf olduğu için içinde mutlaka run metodu olmak zorunda.
+
+835
+02:48:33,440 --> 02:48:44,700
+Arkadaşlar, bu sınıfın bir multi-threaded sınıfı implement edin dediğimiz zaman, implement runable interface'i yapmadığınız zaman puan kaybediyorsunuz.
+
+836
+02:48:44,760 --> 02:48:50,380
+Ya da implement runable interface'i yapmayıp içerisine run metodu yapmadığınız zaman puan kaybediyorsunuz.
+
+837
+02:48:51,260 --> 02:48:59,720
+Run metodu arkadaşlar, içerisine input parametrisi almayan, return değeri olmayan bir fonksiyon.
+
+838
+02:48:59,888 --> 02:49:08,788
+Gidip run metoduna bir kendi kafanıza göre bir return değeri koyarsanız, run metoduna bir argüman vermeye çalışırsanız puan kaybediyorsunuz.
+
+839
+02:49:08,908 --> 02:49:17,728
+Ne dedik? Bu bize runnable interface'inin mecbur bıraktığı bir metot. Bunu değiştirmiyoruz yani.
+
+840
+02:49:18,772 --> 02:49:34,272
+Bu metot içerisinde ne yapmışım? Bir tane random sınıfının bir tane objesini oluşturmuşum. Bu random sınıfı da arkadaşlar o öğrenmeniz gereken sınıflar kategorisinde bir sınıf. Bunu daha önce konuşmuştuk.
+
+841
+02:49:34,272 --> 02:49:46,772
+Bu da aynı med sınıfı gibi işte diğer öğrendiğimiz içerisinde statik metotları olan sınıflar gibi bilmeniz kalender sınıfı gibi, date sınıfı gibi metotlar.
+
+842
+02:49:46,772 --> 02:50:11,852
+kodlarını bilmeniz gereken sınıf. Bir tane random sınıfının objesini oluşturmuşum. Sonra for döngüsü içerisinde step sayısı kadar, burada 10 defa, 10 defa dönecek. Her seferinde işte hangi takım için hangi tezahüratı yapacaksa bunu yapacak. Konsola yazdıracağız. Ondan sonra bu random generator.
+
+843
+02:50:12,531 --> 02:50:27,531
+Sıfırla bin milisaniye çünkü öyle tanımlamıştık. Belirli bir delay süresi kadar sıfırla bir arasında bir değer üretecek. Sonra ben bu üretmiş olduğu değeri...
+
+844
+02:50:28,628 --> 02:50:43,628
+Tread sınıfının slip metoduna vereceğim. Tread sınıfının slip metodu milisaniye cinsinden bir değer alıyor. Bir ile bin arasında bir değeri buraya veriyorum. Bu ne yapıyordu? Bu thread'in...
+
+845
+02:50:43,700 --> 02:50:50,120
+running state'inden alıp block state'ine koyuyordu. Ne kadar? Benim istediğim süre kadar.
+
+846
+02:50:50,120 --> 02:51:00,380
+Okey. Dolayısıyla bekletmekten bahsediyorsam eğer ben size mutlaka thread'in slip metodunu kullanmamız gerekiyor. Okey.
+
+847
+02:51:02,004 --> 02:51:14,123
+For döngüsü içerisinde 10 defa dönecek. Her seferinde de 1 ile 1 arası belirli bir süre bekleyecek. Sonra tekrardan yukarıya gidip ikinci defa tezahürat yapacak.
+
+848
+02:51:15,304 --> 02:51:25,963
+Şimdi bu thread sınıfını kullandığım zaman mutlaka bunu yine try-catch bloğu içerisine koymam gerekiyor. Bu da bir checked exception.
+
+849
+02:51:26,515 --> 02:51:35,236
+Hani bunu da Interrupted Exception Handling Sınıfı ile yakalıyorum arkadaşlar. Bu benim run metodumdu.
+
+850
+02:51:36,396 --> 02:51:40,195
+Şimdi ben buna şeyin içerisinde bakıyorum.
+
+851
+02:51:41,332 --> 02:52:03,512
+main metodu, yani dışarıdaki bir sınıf içerisindeki bulunan main metodu için size bakıyorum. Burada öncelikle bir thread objesi oluşturmuşum. Thread objesi oluşturduğum zaman hatırlayın mutlaka içerisine runnable interface implement eden threadleştirmek istediğim sınıfın objesini veriyordum. Sonra ne zamanki start'a bastım artık benim için
+
+852
+02:52:04,915 --> 02:52:13,695
+Şu sınıfın bir objesini oluşturacak ve bu objede run metodunu çalıştıracak. Start'a bastığım zaman.
+
+853
+02:52:14,100 --> 02:52:41,360
+Bu run metodunun işe bitene kadar bu devam edecek. Şuradaki thread artık bağımsız bir thread çalışmaya devam edecek. Bakın bu benim programımın kendisiydi. Bu programın içerisinde ne yaptım? Bir başka thread yaratmış oldum. Artık programımın kendisi vardı. Bir de bir ikinci tane thread oluşmuş oldu. Yani programımın kendisi bir single thread'ti.
+
+854
+02:52:42,100 --> 02:52:52,000
+İçinde ikinci bir thread oluşturdum. Artık bu da kendi içinde bağımsız ve işletim sistemi üzerinde CPU'dan yer talep eden bir tane şey haline gelmiş oldum.
+
+855
+02:52:53,200 --> 02:52:56,480
+Jab parçacı haline gelmiş oldum.
+
+856
+02:52:57,203 --> 02:53:16,043
+Arkasından aynı işlemi bir tane daha yapıyorum. Bir tane daha thread yaratıyorum. Etti sana ikinci thread. Bir de main programın kendisi de vardı. Üç olmuş oldu. Bir tane daha yarattım. Bu da üçüncü thread oldu. Bu da dördüncü thread oldu. Bunları ek olarak main programın kendisi beş tane çalışan thread olmuş oldu.
+
+857
+02:53:18,131 --> 02:53:21,871
+Hocam, start fonksiyonu bitmeden devam mı ediyor kodu okumaya?
+
+858
+02:53:22,251 --> 02:53:22,551
+Aynen.
+
+859
+02:53:23,051 --> 02:53:24,991
+Fonksiyon gibi çalışmıyor yani bildiğimiz.
+
+860
+02:53:25,451 --> 02:53:27,551
+Bunu çalıştırdığın zaman bu şu demek.
+
+861
+02:53:27,731 --> 02:53:30,711
+Yani bu aslında şu arkadaşa yol veriyor.
+
+862
+02:53:31,831 --> 02:53:33,471
+Şuna diyor ki arkadaş sen başla diyor.
+
+863
+02:53:33,591 --> 02:53:34,471
+Ne zaman bitersen.
+
+864
+02:53:34,963 --> 02:53:51,284
+Yani ben buraya bir milyon yazsam bir milyon artık bunu bağımsız bir şey olarak düşün. Yani şu şu tredi başlatıyor artık sen çalışmaya devam et diyor. Aynı şekilde bu da yeni bir şeyi çalıştırıyor bitene kadar devam et diyor.
+
+865
+02:53:52,424 --> 02:53:54,963
+Tamamdır.
+
+866
+02:53:56,115 --> 02:54:15,496
+Burada bakın ne yaptım? 4 tane thread oluşturdum. 1, 2, 3, 4. Bu 4 tane thread'i oluşturmak için baya bir kod yazdım. Yani her seferinde yeni bir tane thread objesi oluşturdum. Burada hayatı kolaylaştırmak için hani ben burada bunu ne yaptım? Thread sınıfıyla yaptım. Hayatı kolaylaştırmak için.
+
+867
+02:54:16,051 --> 02:54:31,831
+Java Util Concurrent Package altında bize bir executor service bir de executors diye iki tane sınıf veriyor Java. İster bu yöntemle yaparım, ister bu yöntemle yaparım.
+
+868
+02:54:31,831 --> 02:54:42,152
+Java.Util Concurrent. Bu çünkü Java SDK ile gelen bir package. Şimdi bu yöntemle yaptığım zaman
+
+869
+02:54:42,868 --> 02:54:45,968
+Yazacağım kod satır sayısı biraz daha azalıyor.
+
+870
+02:54:46,528 --> 02:54:51,608
+Aynı zamanda hani bu threadlerin takibini yapmak için bana ek metotlar sağlıyor.
+
+871
+02:54:51,708 --> 02:54:54,948
+Şimdi bir de bu yöntemi kullanaraktan thread yaratmayı öğrenelim.
+
+872
+02:54:58,932 --> 02:55:20,152
+Şimdi burada ben java.gutl.concurrent altında bir executor servisim var. Bu executor servis dediğim şey şuradaki servis. Bu executor servis executor'u extend ediyor. Bu execute metodu aynı zamanda executor servisinde metodu.
+
+873
+02:55:21,043 --> 02:55:40,463
+Şimdi bir tanesi shutdown. Bu executor servis içerisinde yapmış olduğu şey şu, yaratılmış olan bir tane thread havuzu içerisindeki threadlerin hepsinin işinin bitmesini bekliyor. Ondan sonra bu thread havuzunu kapatıyor.
+
+874
+02:55:41,299 --> 02:55:51,299
+İkinci bir metodu var, Shaddamnal. Tret havuzu içerisindeki tretlerin çalışıp çalışmadığına bakmadan anında bütün tretlerin durduruyor.
+
+875
+02:55:52,884 --> 02:56:10,983
+Üçüncü bir metodu is shut down şeyi kontrol ediyor. O thread havuzunda kaç tane thread varsa onlar çalışmaya devam ediyorsa ve hala thread havuzu hayattaysa onu check ediyor. Eğer is shut down true döndürerse demek ki bu thread havuzundaki threadler çalışmaya devam ediyor.
+
+876
+02:56:18,291 --> 02:56:29,971
+bütün tasklar terminate olmuşsa bu durumda buna true döndürüyor.
+
+877
+02:56:35,731 --> 02:57:03,731
+Bu executor dediğimiz sınıf bu interfacedi. Zaten executor servis bunu extend ediyor. Yani executor servisin şurada göstermiş olduğum dört tane metodunu ek olarak bir de execute metodu da var. Bu da hani verilmiş olan bir tane taskı gerçekleştirmemizi sağlıyor. Bu execute'un içerisine de aynı threati sınıfına koyduğumuz gibi threatleştirmek istediğimiz...
+
+878
+02:57:03,731 --> 02:57:08,652
+Yani runnable interfase'i implement etmiş olan objeleri koyuyoruz.
+
+879
+02:57:09,268 --> 02:57:25,188
+Aklınızda kalması gereken iki tane sınıf var. Bir tanesi executor service, bir tanesi ise executors. Yani bir tanesi şu sınıf, bir tanesi de şu sınıf. Executors sınıfı da bizim adımızdan bir tane thread pool oluşturuyor.
+
+880
+02:57:25,188 --> 02:57:33,248
+Ben orada ne yapmıştım bir önceki örnekte? New thread diyerekten sürekli objeleri oluşturmuştum. Şurada.
+
+881
+02:57:33,647 --> 02:57:41,187
+Bu baştan bizim için oluşturmamız gereken bütün threadleri hazır ediyor bu executors.
+
+882
+02:57:43,731 --> 02:57:59,672
+Ben istersem en başta belli sayıda thread oluşturabilirim thread havuzunda ya da dinamik olarak oluşturabilirim. Baştan kaç tane thread ihtiyacım olduğunu söylemem. Benim ne kadar ihtiyacım varsa o kadar oluşturur.
+
+883
+02:58:06,195 --> 02:58:12,855
+Bu soccer fan sınıfında hiçbir değişiklik yok arkadaşlar. Bu soccer fan sınıfı threadleştirmek istediğim sınıf.
+
+884
+02:58:12,995 --> 02:58:21,975
+Yani bunu ben az önce bu threadleştirmek istediğim sınıfın threadlerini şu yöntemle oluşturmuştum.
+
+885
+02:58:22,215 --> 02:58:30,595
+Yani thread sınıfını kullanarak oluşturmuştum. Şimdi aynı şeyi şurada şu şekilde oluşturuyorum.
+
+886
+02:58:30,896 --> 02:58:51,616
+Öncelikle, executors'ın içerisinden aklınızda kalması gereken iki tane sınıf var demiştim ya. Bir tanesi executors, bir tanesi executors service. Executors sınıfı içerisinden bir tane thread pool obje istiyorum. Bu thread pool'u bana executor service tipinde döndürüyor.
+
+887
+02:58:52,468 --> 02:59:00,168
+Bu executor servisi aldıktan sonra bu executor servisin execute metodu vardı hatırlayın.
+
+888
+02:59:00,828 --> 02:59:09,888
+Bu execute metodunun içerisine kaç tane ben threadleştirmek istediğim obje oluşturmak istiyorsam hepsinin objelerini koyuyorum.
+
+889
+02:59:09,888 --> 02:59:16,888
+Burada hiçbir değişiklik yok. Yani threadleştirmek istediğim objenin objeleri buraya koymuşum.
+
+890
+02:59:17,876 --> 02:59:28,036
+4 tane thread yaratmak istedim. Bunların hepsini buraya koydum ve execute ettim. Şurada startla ben bunu yapmıştım.
+
+891
+02:59:30,804 --> 02:59:58,804
+Şurada startla yapmıştım. Yeni bir thread oluşturup start yapmak yerine burada sadece execute'u çağırmış oldum. Sadece execute'u çağırmış oldum. Ve en sonunda da shutdown diyorum. Shutdown da şu, arkadaş sen bunun içerisinde dört tane thread yarattın. Bunlar çalışmalarını yapıyorlar. Bunların bütün çalışmaları tamamlandıktan sonra artık sen bu senin için yaratmış olduğun bu şeyi, thread...
+
+892
+02:59:58,804 --> 03:00:03,644
+poolu, executor service tipinde olan thread poolu kapat diyorsun.
+
+893
+03:00:05,443 --> 03:00:05,724
+Okey.
+
+894
+03:00:09,459 --> 03:00:30,799
+Şu anda iki tane yöntem öğrendiniz. İki tane multi-thread çalıştırma yöntemi. Bir tanesi executors, bir de executor servisi kullanaraktan bir runnable interface'ini implement etmiş olan bir thread sınıfını, threadleştirmek istediğimiz sınıfın threadlerini oluşturma yöntemini öğrendiniz arkadaşlar.
+
+895
+03:00:31,311 --> 03:00:45,731
+Bir de klasik thread sınıfını kullanaraktan teker teker her birisi için her oluşturduğunuz thread objesini start metoduyla çağırdığınız metodu öğrendiniz.
+
+896
+03:00:56,308 --> 03:01:06,048
+Şimdi bir konu kaldı. Onu da bahsettikten sonra dersi bitireceğim arkadaşlar.
+
+897
+03:01:06,048 --> 03:01:12,816
+Şimdi eğer ben bir programımı multi-tradit hale getirecek olursam...
+
+898
+03:01:12,816 --> 03:01:24,816
+Bu threadler aynı değere ulaşıp yani programımdaki aynı değere ulaşıp onun güncellemek istiyorlarsa bu durumda...
+
+899
+03:01:25,843 --> 03:01:46,083
+Bir race condition oluşuyor. Yani threadler aynı programın global member feedlerine ulaşıp bir değişiklik yapmak istiyorlarsa bir race condition oluşuyor. Bu race condition oluşunca da benim programım olması gerektiği gibi davranmayabiliyor. Şimdi buna şöyle bir örnek verelim.
+
+900
+03:01:52,595 --> 03:02:14,875
+Buradaki örnekte, şimdi benim iki tane thread'im var. Bir tanesi account with drawer. Bunu runable interface'ini implement edecek şekilde yapmışım. Yani bu bir thread. İçinde run metodu var. Bir diğer thread'im var. Account with drawer. Bu da runable interface'ini implement etmiş. Bu da bir thread. Bunun da içerisinde bir run metodu var.
+
+901
+03:02:15,316 --> 03:02:37,516
+Şimdi benim de bir tane sınıfım var. Bu sınıfın içerisinde bir tane public global member field'im var. Şimdi bu her iki thread de bu sınıfın bir tane objesine ulaşmaya çalışıyor. Dikkat edin, her iki thread de bu sınıfın bir objesine ulaşmaya çalışıyor.
+
+902
+03:02:40,500 --> 03:02:57,920
+Bu objeyi update yapmak amacıyla ulaşmak istiyor. İkinci thread de update yapmak amacıyla istiyor. Şimdi birinci thread diyor ki ben oradaki değişkenden 100 TL çekeceğim. İkincisi de 50 TL çekeceğim diyor.
+
+903
+03:03:07,092 --> 03:03:28,292
+Öncelikle değeri okudular, 1000 TL değerini okudular. Sonra bir şekilde birinci thread bunu current balance'ı 1000 TL olacak şekilde okudu. İkinci thread ve current balance'ı 1000 TL okuyacak şekilde okudu.
+
+904
+03:03:32,084 --> 03:03:51,004
+100 TL düşürdü. 900 TL. Artık birinci thread şunu düşünüyor. Ben bu değişikliği yaptıktan sonra account balasında 900 TL kalacak diye düşünüyor. İkinci thread de ama daha önceden 1000 TL diye okumuştu. İkinci thread de bu sefer 50 TL düşürüyor.
+
+905
+03:03:53,004 --> 03:03:58,804
+Ve ikinci thread bunu 950'ye dönüştürdü ve gidiyor 950'yi şeye yazıyor.
+
+906
+03:03:59,136 --> 03:04:00,076
+Buraya yazıyor.
+
+907
+03:04:00,816 --> 03:04:12,336
+Şimdi birinci thread artık account palasında 900, ikincinin ne yaptığını bilmediği için account palasında 900 TL kaldığını düşünüyor.
+
+908
+03:04:12,856 --> 03:04:16,296
+İkinci thread ise 950 TL kaldığını düşünüyor.
+
+909
+03:04:17,136 --> 03:04:22,436
+Yani benim programımda iki tane çalışan iki tane farklı thread.
+
+910
+03:04:22,963 --> 03:04:42,384
+Bu ortak kullanmış oldukları objenin değeri konusunda bir konflikte oluşturdular. Yani bu 900 TL düşünüyor, artık bu 950 TL düşünüyor. Buna race condition diyoruz arkadaşlar. Eğer bir ortak bir değişken kullanıyorlarsa threadler.
+
+911
+03:04:42,804 --> 03:04:50,863
+Ve bu değişkenin değerine update amaçlı geliyorlarsa ilk okudukları değeri aynı zamanda alabilirler.
+
+912
+03:04:52,123 --> 03:04:57,283
+Ve bu ilk okudukları değerleri birbirlerinden bağımsız olarak güncelleme yapabilirler.
+
+913
+03:04:57,283 --> 03:05:07,123
+Ve yaptıkları güncelleme birbirlerinden habersiz olacağı için bir tanesi kendi yaptığı güncelleme oldu diye düşünecek.
+
+914
+03:05:07,243 --> 03:05:09,863
+Diğrisi ise kendi yaptığı güncelleme oldu diye düşünecek.
+
+915
+03:05:10,128 --> 03:05:37,128
+Şimdi bunu önlemek için bizim kullandığımız bir tane Java'nın keywordü var. Bu keyword de synchronized keywordü. Ben hangi metot içerisinde bu global yani threadlerin değiştirmek istediği global member field'ı güncelleyeceksem
+
+916
+03:05:38,004 --> 03:05:41,984
+O metodun synchronized keyword'ı ekliyorum.
+
+917
+03:05:42,344 --> 03:05:51,664
+Yani public void withdraw method'un description'ında metodun return değerinden önce synchronized keyword'ı ekliyorum.
+
+918
+03:05:52,224 --> 03:05:53,324
+Şimdi buradaki örnekte
+
+919
+03:05:54,260 --> 03:06:05,979
+Benim ortak paylaşılan global değişkeni güncelleyecek iki tane metodum var. Bir tanesi withdraw metodu, bir tanesi de deposit metodu.
+
+920
+03:06:06,719 --> 03:06:15,459
+Bakalım. Bir tanesi de deposit metodu. Dolayısıyla her iki metoda da benim synchronize keyword'ünü eklemem gerekiyor.
+
+921
+03:06:15,791 --> 03:06:22,572
+Bu durumda, diyelim ki mesela birinci thread, withdraw thread'ı geldi, şu metodu execute ediyor.
+
+922
+03:06:22,992 --> 03:06:29,891
+Bu metodun içerisine girdiği anda, diğer withdraw thread'ı geldiği anda bu metodun başında bekleyecek.
+
+923
+03:06:30,011 --> 03:06:33,291
+Yani birinci thread buradaki işlemini bitirene kadar bekleyecek.
+
+924
+03:06:34,011 --> 03:06:39,551
+Birinci thread okumasını yaptı, biraz bekledi, güncellemesini yaptı ve çıktı.
+
+925
+03:06:39,831 --> 03:06:43,152
+İkinci thread geldiğinde bu sefer balansı okurken,
+
+926
+03:06:43,504 --> 03:06:48,004
+Birinci Tred'in yapmış olduğu güncellemenin sonucundaki balansı okuyacaktır.
+
+927
+03:06:48,500 --> 03:06:58,640
+Bir önceki problemde ne vardı? Her ikisi de withdraw metodunun içerisine giriyordu. Her ikisi de eş zamanlı olarak get balansı okuyordu.
+
+928
+03:06:58,640 --> 03:07:15,640
+Ama ikisi de farklı zamanlar bekledikleri için birisi kendi şeklinde güncelliyordu, diğerisi kendi şeklinde güncelliyordu ve hemfikir olmayacakları bir şekilde...
+
+929
+03:07:16,500 --> 03:07:36,120
+Ortak değişkeni değiştiriyorlardı. Ama synchronized keyword'ı bunu engelliyor. Demek ki şimdi bir tane daha şey öğrendiniz thread'te. Eğer ben thread kullanıyorsam ve bu threadler ortak bir değişkeni güncelleyeceklerse bu ortak değişken üzerinde
+
+930
+03:07:36,512 --> 03:07:46,891
+işlem yapan bütün metotlara ne yapıyorum? Synchronize keyword ekliyorum. Nereye ekliyorum? Metodun return değerinden önceye ekliyorum.
+
+931
+03:08:02,675 --> 03:08:30,675
+Bu az önce gösterdiğim örnek. Burada iki tane thread'im var. Bunlar runnable interfazlerini gördüğünüz gibi implement etmişler. Birisi account withdrawer, birisi account deposter. Bir de bunların ortak kullanmış oldukları bir tane sınıf var. Bu sınıfın bir objesini yaratıyoruz. Ve bunun üzerinde, bu obje üzerinde bu iki tane thread, deposit ya da withdraw işlemleri yapıyorlar. Bunun için de bir tane banka simülasyonu diye bir tane.
+
+932
+03:08:30,675 --> 03:08:34,335
+Bir tane üçün ayrı bir sınıf yapmışım ve onun bir main metodu var.
+
+933
+03:08:36,655 --> 03:08:47,835
+Öncelikle ortadaki yani objesini yaratacakları ve bu aynı obje üzerinde bu threadlerin işlem yapacakları objeyi konuşalım.
+
+934
+03:08:48,495 --> 03:08:57,876
+Bu sınıf thread'i oluşturacağım bir sınıf olmadığı için bu runnable interface'ini implement etmiyor arkadaşlar.
+
+935
+03:08:59,123 --> 03:09:07,523
+Bu sadece threadlerin ortak olarak kullanacakları obje için kullandığımız sınıf.
+
+936
+03:09:07,987 --> 03:09:35,987
+Bunun içerisinde global member field olarak balansı ifade eden bir double değişkenim var. Bir tane constructorim var. Ondan sonra bir getter metodu koymuşum bir tane. Sonra da bu obje üzerinde bu threadlerin egzeküt edeceği iki tane metodum withdraw bir de deposit var. Dikkat edin burada synchronize kurmamışım. Yani burada race condition olacak. Race condition'ı önlemek için ne yapmam gerekecek? Buraya synchronize.
+
+937
+03:09:35,987 --> 03:09:37,467
+keywordleri koymam gerekecek.
+
+938
+03:09:38,387 --> 03:09:43,547
+Ondan sonra burada bir tane de possible delay diye bir tane metot eklemişim.
+
+939
+03:09:43,967 --> 03:09:51,188
+İsteseydim bunu şuradaki thread slip'i getirip possible delay yerine buraya da koyabilirdim.
+
+940
+03:09:51,807 --> 03:09:58,387
+Bunun yerine ayrı bir metot haline getirmişim ve possible delay'i her iki metot içerisinden çağırmışım.
+
+941
+03:10:00,000 --> 03:10:10,319
+Şimdi birinci thread şeyine bakalım. Threadleştirmek istediğim sınıf Account Depositor sınıfı. Bu yüzden Implements Runnable Interface demişim arkadaşlar.
+
+942
+03:10:11,520 --> 03:10:23,319
+Burada objesini oluşturmak istediğim sınıfı Global Member Field olarak tanımlamışım. Bir tane constructorım var.
+
+943
+03:10:23,796 --> 03:10:43,735
+Hem objeyi hem de bunun içerisinde tutacağım balans değerini set ediyorum. Ondan sonra da runnable interface'i implement ettiğim için run metoduna ihtiyacım var ve bu account sınıfının deposit metodunu çağırıyorum.
+
+944
+03:10:44,355 --> 03:10:50,895
+Hangi değerle çağırıyorum? Ne kadar para yatırmak istiyorsam account'a o değerle çağırıyorum.
+
+945
+03:10:51,796 --> 03:11:07,995
+Aynı şekilde account withdraw, bu da benim threat haline getirmek istediğim sınıf. O yüzden runable interface implement ediyor. Aynı şey bu sefer run metodu içerisinde bu sefer withdraw, account'ın withdraw metodunu çağırıyor.
+
+946
+03:11:10,324 --> 03:11:38,084
+Şimdi banka simülasyon sınıfına bakalım. Bunun içerisinde bir main metodum var. Öncelikle main metodunda bir tane account'ın sıfır içerisinde sıfır balans olacak şekilde bir tane objesini oluşturuyorum. Artık elimde bir obje var. Bakın bu objeyi ben ne yapacağım? Bu threadlere bu objenin referansını pas atacağım. Dolayısıyla bu threadler her ikisi de aynı objenin içerisindeki balansı.
+
+947
+03:11:38,324 --> 03:11:40,963
+güncellemeye çalışacaklar.
+
+948
+03:11:41,963 --> 03:11:45,084
+Şimdi öncelikle güncelleme gerçekleşmeden önce
+
+949
+03:11:47,507 --> 03:11:52,247
+Güncelleme gerçekleşmeden önceki balansı yazdırıyorum.
+
+950
+03:11:52,927 --> 03:11:59,048
+Sonra, hatırlayın, executors içerisinden bir tane thread pool alıyorum.
+
+951
+03:11:59,427 --> 03:12:02,247
+Burada baştan kaç tane thread olacağını belirtmedim.
+
+952
+03:12:02,247 --> 03:12:07,327
+O yüzden new cache thread pool metodunu çağırdım.
+
+953
+03:12:07,747 --> 03:12:11,467
+Bir tane executor service thread pool oluşturdum.
+
+954
+03:12:12,115 --> 03:12:26,016
+Ondan sonra burada for döngüsü içerisinde bakın ne yapıyorum bir tane account depositoryumın tradeini oluşturuyorum.
+
+955
+03:12:27,336 --> 03:12:29,876
+Ve burada account'a 1 TL koyuyorum.
+
+956
+03:12:30,484 --> 03:12:46,564
+Ve bu thread'i ben neyin içerisine? Execute'un içerisine veriyorum. İsteseydim direkt hiç burada temporary değişken kullanmaya gerek kalmadan bu new account depository getirip bu Execute'un içine de koyabilirdim.
+
+957
+03:12:49,363 --> 03:12:57,563
+Yani ne yaptım? 100 tane para her seferinde bir tane TL yaratacak 100 tane thread yaratmış oldum.
+
+958
+03:12:57,563 --> 03:13:08,503
+Ford öngüsü içerisinde. Aynı şekilde 50 tane para çekecek olan her seferinde de bir tane para çekecek olan birbiri para çekecek olan thread yaratmış oldum.
+
+959
+03:13:09,043 --> 03:13:14,023
+Ve bunları da execution metoduna input olarak verdim.
+
+960
+03:13:14,023 --> 03:13:16,663
+Ve executor shutdown dedim.
+
+961
+03:13:17,363 --> 03:13:34,403
+shutdown demiş olmakla beraber şunu diyorum. Bu pool'un içerisinde yaratılmış olan 100 tane buradan, 50 tane buradan, totalde 150 tane thread var. Bunların hepsinin işleri bittikten sonra sen bu executor service thread pool'unu kapat diyorum.
+
+962
+03:13:34,772 --> 03:13:51,912
+Ondan sonra da burada executor bu thread pool'unun terminate olup olmadığını while döngüsü içerisinde check ediyorum. Eğer burası true çıkarsa bu durumda en son account balansı yazdırıyorum.
+
+963
+03:13:51,912 --> 03:14:00,292
+Şimdi bunu çalıştırdığınız zaman eğer synchronize keyword'ü kullanmadıysanız şurada
+
+964
+03:14:01,172 --> 03:14:06,611
+Synchronize Keyword'ünü kullanmadıysanız şu account da şurada.
+
+965
+03:14:07,123 --> 03:14:31,623
+Bu durumda 100 tane 1 liralık para yatırdınız, 50 tane 1 liralık para yatırdınız. En sonda ortaya çıkacak değer farklı olacaktır. Yani her seferinde çalıştırdığınızda farklı farklı değerler elde edeceksinizdir. Ama buraya synchronized keyword'ü koyduğunuz zaman 100 TL para yatırıyorsunuz, 50 TL para çıkartıyorsunuz. Her seferinde 50 TL sonuç çıkacaktır.
+
+966
+03:14:37,780 --> 03:14:44,740
+Bu race condition'ı konuştuk. Bu örneği verdik. Synchronized keyword'ın kullanımını konuştuk.
+
+967
+03:14:51,763 --> 03:14:54,623
+Evet, en sondaki çıkacak değerli konuştuk.
+
+968
+03:14:55,023 --> 03:14:58,023
+Evet arkadaşlar, multi-trading konusunu da tamamlamış oldum.
+
+969
+03:14:59,743 --> 03:15:04,763
+Gelecek hafta ikinci vizeniz olacak. Şimdiden başarılar dilerim.
+
+970
+03:15:06,203 --> 03:15:09,543
+Sorunuz olduğu zaman bana e-mail'e de ulaşabilirsiniz.
+
+971
+03:15:09,983 --> 03:15:11,503
+Asistanlara da ulaşabilirsiniz.
+
+972
+03:15:12,503 --> 03:15:14,023
+Şimdiden başarılar diliyorum.
+
+973
+03:15:15,924 --> 03:15:17,104
+Sorusu olan var mıdır?
+
+974
+03:15:17,664 --> 03:15:22,424
+Hocam, gelecek hafta ikisi mi, üçü mü acaba ne zaman sınav, ikinci vize?
+
+975
+03:15:23,164 --> 03:15:32,024
+İkinci vizelerin tarihleri şeyde açıklanacak ama geçen sefer bizim dersimizin gününde ve saatinde olmuştu.
+
+976
+03:15:32,024 --> 03:15:34,204
+Benim tahminim yine aynı şekilde olacaktır.
+
+977
+03:15:34,884 --> 03:15:35,984
+Yani perşembe günü.
+
+978
+03:15:36,324 --> 03:15:42,044
+Ben öyle tahmin ediyorum ama bölümün sayfasından mutlaka arkadaşlar kontrol edin.
+
+979
+03:15:44,435 --> 03:15:45,275
+Tamam hocam.
+
+980
+03:15:46,335 --> 03:15:46,735
+Tamam.
+
+981
+03:15:47,335 --> 03:15:50,435
+Tamam. Birkaç gün kaldı hani o yüzden sormuştum.
+
+982
+03:15:51,295 --> 03:16:04,335
+Bu hafta sonu açıklanır. Yani siz sanki gelecek hafta hani perşembeymiş gibi çalışmalarınızla devam edin. Ama bu hafta sonu ikinci vize tarihi açıklanır.
+
+983
+03:16:04,875 --> 03:16:07,415
+Hocam projeyi size mail ile mi yollayacağız?
+
+984
+03:16:07,871 --> 03:16:08,471
+Tabii ki.
+
+985
+03:16:10,011 --> 03:16:15,451
+Onunla ilgili bir şey yayınlıyor oluruz.
+
+986
+03:16:15,971 --> 03:16:19,152
+Bizim mail hesaplarımıza göndermeyin arkadaşlar.
+
+987
+03:16:20,051 --> 03:16:24,591
+Asistanlarınız onu sizden toplamak için ya şey yapacak,
+
+988
+03:16:25,851 --> 03:16:31,152
+sizlerle ayrı ayrı Zoom toplantıları yapacak ya toplantı sırasında sizden alacaklar.
+
+989
+03:16:31,371 --> 03:16:34,091
+Hem demoyu yaptıracaklar hem kodları anlattıracaklar.
+
+990
+03:16:34,091 --> 03:16:35,871
+Aynı zamanda kodlarınızı...
+
+991
+03:16:36,131 --> 03:16:37,191
+Tabii ki.
+
+992
+03:16:35,871 --> 03:16:42,031
+değerlendirme için alacaklar. Ya da size bir e-mail adresi üzerinden alacaklar. Onunla ilgili açıklamayı yapıyor olacağız.
+
+993
+03:16:42,739 --> 03:16:48,899
+Bu da tam yedisinde mi olacak acaba buzum toplantısı yoksa veriş tarihi mi o projelerin?
+
+994
+03:16:49,199 --> 03:16:51,199
+Projenin veriş tarihinden sonra olur.
+
+995
+03:16:51,199 --> 03:16:54,920
+Yani tam o gün çünkü öğrenci sayısı çok fazla.
+
+996
+03:16:55,680 --> 03:16:58,459
+Hocalarımızın tam o gün onu organize etmesi zor.
+
+997
+03:17:00,279 --> 03:17:03,959
+Şey, o tarihten sonra olur toplantılar.
+
+998
+03:17:04,420 --> 03:17:08,940
+Ama o tarihte de projeleri göndermeniz için size bir yöntem sağlayacaktır.
+
+999
+03:17:09,000 --> 03:17:10,279
+Ya Google Drive ya da şey.
+
+1000
+03:17:10,739 --> 03:17:38,159
+e-mail akantı üzerinden. Anladım hocam, teşekkürler. Ama projelerinizi dersin hocalarına göndermeyin. Boşuna şey yapıyorsunuz, e-mail kutularını doldurmuş oluyorsunuz. Biz bakmayacağız. Asistan hocalarınız bakacak yani. Yani asistan hocalarımıza göndeririz artık. Evet, ama onların da gönderme yöntemini öncelikle açıklamasını bekleyin. Tamam hocam. Tamam. Teşekkür ediyorum. Sınavda başarılar diliyorum şimdiden.
+
+1001
+03:17:38,995 --> 03:17:40,775
+Teşekkürler.
+
+1002
+03:17:41,216 --> 03:17:42,435
+İyi dersler.

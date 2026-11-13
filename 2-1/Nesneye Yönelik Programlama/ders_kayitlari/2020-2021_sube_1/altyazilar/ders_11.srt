@@ -1,0 +1,1603 @@
+1
+00:03:11,860 --> 00:03:12,780
+Selamun Aleyküm.
+
+2
+00:03:15,160 --> 00:03:16,400
+Hayırlı Ramazanlar arkadaşlar.
+
+3
+00:03:17,660 --> 00:03:19,080
+Aleyküm selam. Hayırlı Ramazanlar.
+
+4
+00:03:45,108 --> 00:03:45,728
+Sıfırı mı?
+
+5
+00:03:49,012 --> 00:03:50,027
+Tutorial,
+
+6
+00:04:33,459 --> 00:04:34,459
+Bu hafta
+
+7
+00:04:34,459 --> 00:04:38,459
+Geçen dersimizde anlattığımız
+
+8
+00:04:38,459 --> 00:04:42,779
+Projenin diyelim
+
+9
+00:04:42,779 --> 00:04:45,079
+Devamını
+
+10
+00:04:45,079 --> 00:04:46,919
+Ona bir şeyler ekleyerek
+
+11
+00:04:46,919 --> 00:04:49,219
+Bu hafta
+
+12
+00:04:49,219 --> 00:04:50,139
+Onu anlatacağız.
+
+13
+00:04:50,679 --> 00:04:51,019
+İnşallah
+
+14
+00:04:51,019 --> 00:04:53,459
+Geçen hafta
+
+15
+00:05:12,980 --> 00:05:13,620
+Es gelmiyor.
+
+16
+00:05:29,172 --> 00:05:54,372
+Geçen hafta ne vardı? Kitap, raf, kitaplık diye üç tane class'ımız vardı. İşte demiştik, eksiler private'ı artılar public'i belirtiyor. İşte demiştik, bunlar niteliktir, bunlar fonksiyondur. Niteliklerin isimleri, burada veri tipleri var. İşte burada fonksiyonlar.
+
+17
+00:05:55,252 --> 00:06:03,831
+Aldığı parametrelerin veri tipleri. Eğer ki parametre almıyorsa nedir? Boş bırakılır. Şurada dönüş tipi yazılıyor demiştik.
+
+18
+00:06:09,204 --> 00:06:33,204
+İlişkiler, iki class arasında ilişkiler vardı. Neydi mesela? Kitaplıkla raf arasındaki ilişki. Bakın burada mesela koyu bir renkle karalanmış. Bu şu demek. Eğer ki ben kitaplık classını yani nesnesini silersem bu raf da bundan etkilenir. Yani rafı...
+
+19
+00:06:34,387 --> 00:06:38,168
+Kitaplık class'ının yapıcı fonksiyonu içinde yazıyorduk.
+
+20
+00:06:39,647 --> 00:06:42,487
+Böyle de ifade edebiliriz.
+
+21
+00:06:45,487 --> 00:06:52,787
+Burada mesela ne oluyordu? Kitaplar raf klasının içinde değil, başka bir yerde tanımlanıyor.
+
+22
+00:06:54,447 --> 00:06:58,007
+Ama işte rafla kitap arasında bir ilişki var.
+
+23
+00:06:59,747 --> 00:07:01,267
+Yani mantıksal bir ilişki var.
+
+24
+00:07:04,339 --> 00:07:11,619
+Bu hafta kalıtımı işleyeceğiz. İşte abstract sınıfları göreceğiz.
+
+25
+00:07:13,199 --> 00:07:16,619
+URIDE'ı tekrardan göreceğiz.
+
+26
+00:07:19,319 --> 00:07:25,839
+Bu hafta böyle bir konuları işleyeceğiz.
+
+27
+00:07:28,180 --> 00:07:32,060
+Kalıtımın UML'deki gösterimi şu şekilde arkadaşlar.
+
+28
+00:07:33,700 --> 00:07:36,620
+Mesela bir tane sınıfımız var. Bu abstract bomba zorunda değil.
+
+29
+00:07:37,900 --> 00:07:39,000
+Bir tane sınıfımız var.
+
+30
+00:07:41,500 --> 00:07:54,940
+Bir diğer sınıfımızda işte böyle üçgen şeklinde bir ucu olan ok çizdiğimiz zaman bundan kalıtım aldığını, yani yetişkin kartın kart klasından kalıtım aldığını
+
+31
+00:07:55,987 --> 00:08:21,507
+Anlıyoruz. Aynı şekilde öğrenci kartı da kart klasından kalıtım alıyormuş. Ama işte neymiş? Yetişkin kartının sadece karttaki özelliklere sahip. Yani ekstra başka bir özelliğe sahip değil. Öğrenci kartıysa fazladan bir bonus özelliğine de sahipmiş niteliğine. Kalıtım ne işe yarıyor? Arkadaşlar kalıtım.
+
+32
+00:08:23,124 --> 00:08:47,884
+Mesela bakın, biz bu kart, karttan kalıtım almasaydık, ne yapacaktık biliyor musunuz? Bu ID, sahip, bakiye, 3 tane nitelik var ya, hem buraya koyacaktık, hem buraya koyacaktık. Bunlar 10 tane olduğunu düşünün, tüm 10 class'ı da tek tek ID, sahip, bakiye tanımlamasını yapacaktık.
+
+33
+00:08:48,628 --> 00:09:02,628
+Lakin ne yaptık? Bundan kalıtım alsın dedik. Bir tane kart class tanımladık ve bundan kalıtım alsın dedik. Böylelikle ne oldu? Sadece bir yerde tanımladık. Hepsini olmuş oldu. Hepsini tanımlamış gibi olduk.
+
+34
+00:09:04,408 --> 00:09:15,748
+Kalıtım almak demek, mesela yetişkin kartı buradaki bütün şeylere, fonksiyonlara sahiptir demek yani.
+
+35
+00:09:16,724 --> 00:09:30,584
+Bu fonksiyonları yetişkin kartı, yetişkin kartında yazmasak bile yani bu kılasının içinde yazmasak bile yetişkin kartı için get sahip diye mesela fonksiyonu çağırsak bize hata vermez bir değer döndürür.
+
+36
+00:09:33,224 --> 00:09:40,604
+Onun dışında fazladan yetişkin kartı diye bir yapıcı fonksiyonu ödeme yap diye de
+
+37
+00:09:40,851 --> 00:10:07,051
+bir fonksiyonumuz var. Aynı şekilde burada öğrenci kartı diye bir yapıcı fonksiyon, ödeme yap diye bir fonksiyon. Öğrenci kartında bu üç niteliğin dışında ekstra sadece öğrenci kartına has olan bir tane de bonus niteliği var. Bununla birlikte mesela bakın burada ödeme yap double abstract boolean. Yani bu bir abstract fonksiyon oluşturulmuş.
+
+38
+00:10:07,796 --> 00:10:32,256
+Peki bu ne anlama geliyor? Abstract fonksiyon. Bu fonksiyonun içi, cart class'ın içinde yazılmıyor. Sadece ne yapılıyor? Bir tanımlama yapılıyor. Ondan sonra isteniyor ki, cart class'ından kim kalıtım alıyorsa, bu ödeme yap diye bir fonksiyon oluştursun kendi içinde. Bunu override etsin.
+
+39
+00:10:33,524 --> 00:10:36,463
+Ve kendi ödeme biçimini yapsın.
+
+40
+00:10:37,884 --> 00:10:39,104
+Bunu mecbur bırakıyor yani.
+
+41
+00:10:40,223 --> 00:10:41,783
+Abstract fonksiyonun olayı bu.
+
+42
+00:10:45,268 --> 00:10:46,268
+Onun haricinde
+
+43
+00:10:46,268 --> 00:10:50,327
+Kitaplık yönetim diye
+
+44
+00:10:50,327 --> 00:10:54,087
+Bir tane daha classımız var.
+
+45
+00:10:56,528 --> 00:10:58,188
+Mesela bakın bunlar
+
+46
+00:10:58,188 --> 00:10:59,788
+Şu ikisi
+
+47
+00:10:59,788 --> 00:11:01,567
+İfade ediyor ki
+
+48
+00:11:01,567 --> 00:11:03,868
+Bu kitaplık yönetiminde
+
+49
+00:11:03,868 --> 00:11:05,688
+Hem kart classı kullanılıyor
+
+50
+00:11:05,688 --> 00:11:07,468
+Hem kitaplık classı kullanılıyor
+
+51
+00:11:07,468 --> 00:11:09,807
+Nesnesi diyelim ya da
+
+52
+00:11:09,807 --> 00:11:12,067
+Bunlardan öğretilen bir nesneler kullanılıyor
+
+53
+00:11:12,500 --> 00:11:34,740
+Lakin mesela buranın çizgili olması, buranın düz olması şu anlama geliyor. Bu kitaplık yönetimi ile kitaplık arasında bir ilişki var. Mantıksal bir ilişki. Yani şunu demek istiyorum. Kitaplık diye bir tane niteliği var bunun. O nedenle kitaplık klasıyla ne oluyor?
+
+54
+00:11:35,956 --> 00:11:49,556
+İlişkiyle oluyor, mantıksal olarak bir ilişkisi oluyor. Böylelikle bunu düz çizgiyle ifade ediyoruz. Ama mesela kitaplık yönetimin kart kılasından bir nesnesi bir şey yok. Sadece ne yapıyor? Kart kılasını kullanıyor.
+
+55
+00:11:51,596 --> 00:11:54,276
+Evet. Anlaşılmayan bir şey var mı?
+
+56
+00:11:56,936 --> 00:11:58,676
+Eğer yoksa kodlara geçelim.
+
+57
+00:12:02,259 --> 00:12:03,799
+Abstrakt tekrar edebilir misiniz?
+
+58
+00:12:04,940 --> 00:12:06,460
+Abstrakt fonksiyonu mu?
+
+59
+00:12:07,460 --> 00:12:08,100
+Evet, lütfen.
+
+60
+00:12:09,319 --> 00:12:11,220
+Şu işe yarıyor.
+
+61
+00:12:11,819 --> 00:12:15,660
+Ben bu class'ın içinde böyle bir tane fonksiyon tanımlıyorum.
+
+62
+00:12:15,819 --> 00:12:17,900
+Abstrakt keyini kullanarak.
+
+63
+00:12:21,420 --> 00:12:23,980
+Ama sadece tanımlamasını yapıyorum.
+
+64
+00:12:24,740 --> 00:12:26,279
+Yani gövdesini yazmıyorum.
+
+65
+00:12:26,639 --> 00:12:28,019
+Prototipini yazıyorum sadece.
+
+66
+00:12:30,484 --> 00:12:44,183
+Ondan sonra ben yetişkin kartı ve öğrenci kartıyla bu karttan kalıtım aldım ya, bu kart class'ı bu fonksiyonla bana şunu zorunlu tutuyor.
+
+67
+00:12:45,124 --> 00:12:51,943
+Sen diyor, benden kalıtım alacaksan, böyle bir ödeme yap diye bir fonksiyon oluşturman lazım.
+
+68
+00:12:51,943 --> 00:12:53,564
+Bunu override etmen lazım.
+
+69
+00:12:56,083 --> 00:13:04,703
+O fonksiyonu, gövdesini kendi class'ının içinde yazman lazım. O yüzden mesela bakın burada ödeme yap diye iki tane farklı fonksiyon var.
+
+70
+00:13:06,884 --> 00:13:07,983
+Unlatın hocam, teşekkür ederim.
+
+71
+00:13:09,083 --> 00:13:16,803
+Abstract, bir de şunu da söyleyeyim, abstract class'larda nesne üretilmez. Sadece kalıtım almayı sağlar.
+
+72
+00:13:16,803 --> 00:13:21,763
+Yani mesela ben öğrenci kartı diye bir nesne üretebilirim ama kart diye bir nesne üretemem.
+
+73
+00:13:25,652 --> 00:13:26,152
+Evet.
+
+74
+00:13:31,731 --> 00:13:53,091
+Mesela ben geçen hafta şöyle küçük bir şey söylemeyi unutmuşum galiba. Geçen hafta dedim geçen dersimizde. Mesela bu private ad ya, burada sadece get ad var mesela. Gerçi set ad da var. Diyelim ki get ISBN var mesela. O da değiştiriyor. Get fiyat var mesela. Set fiyat yok.
+
+75
+00:13:56,659 --> 00:14:19,560
+Bu get set olaylarını, yani mesela şöyle, private yaptığımız zaman bazı arkadaşlar şöyle yapabiliyor, direkt get set. Hani her niteliğin getimi setini kesinlikle yapıyor. Ama o zaman public yap, gitsin. Ne fark kaldı gibi bir şey geliyor akla.
+
+76
+00:14:21,043 --> 00:14:27,643
+Mesela işte değiştirilmesini istemediğimiz zaman sadece bir get at diye bir fonksiyon yazarız.
+
+77
+00:14:28,643 --> 00:14:33,623
+İşte mesela değiştirilmesini istediğimiz zaman sadece get atı yazmayı set atı yazarız.
+
+78
+00:14:33,863 --> 00:14:40,423
+Bari bu küçük ufak notu söylemeyi unuttum galiba. Onu da söylemiş olayım.
+
+79
+00:14:49,779 --> 00:14:51,319
+Evet, başka sorusu olan var mı?
+
+80
+00:14:52,600 --> 00:14:54,579
+Hocam, benim sorum olacaktı.
+
+81
+00:14:55,000 --> 00:14:55,360
+Buyurun.
+
+82
+00:14:56,939 --> 00:15:04,299
+Geçen hafta, geçen hafta da ondan önceki haftaki lab sonucunu mail ile ne zaman atacaksınız?
+
+83
+00:15:05,579 --> 00:15:06,819
+Lab sonuçlarını mı?
+
+84
+00:15:07,120 --> 00:15:07,559
+Evet.
+
+85
+00:15:08,919 --> 00:15:12,919
+Mail ile atılmayacak bildiğim kadarıyla. O şey, size bilink vermiştim.
+
+86
+00:15:16,019 --> 00:15:19,259
+Liste. Liste yazan lab uygulamalar.
+
+87
+00:15:19,620 --> 00:15:27,159
+Evet, orada hani uygulama akışı falan yazıyor. Hani hangi haftalar ders olacak falan. Orada beş tane sayfa var.
+
+88
+00:15:27,539 --> 00:15:27,980
+Evet.
+
+89
+00:15:28,579 --> 00:15:34,219
+Oraya ben yazacağım ama daha okumayı bitirmedim. Bitirdikten sonra yazacağım. Oradan bakabilirsiniz.
+
+90
+00:15:34,219 --> 00:15:42,219
+Çünkü ben Mehmet Hoca'ya da yazmıştım. Sisteme biraz yabancıydım bilemedim. Size mail yazmıştım.
+
+91
+00:15:43,091 --> 00:16:08,632
+Evet, tamam. Tamam, ben senin şeyini aldım. Onlara bakın. Onlara bugün mü bakalım listeye ya da yarın mı bakalım? Bugün bakmayın. Bugün çünkü daha bitirmedim. Okumayı daha bitirmedim. Bütün ödevleri daha bitirmedim. Bütün ödevlere bakınca az kaldı zaten. Onları ben yazacağım oraya. Tamam ama mailimi aldınız değil mi? Tabii tabii, mailini aldım.
+
+92
+00:16:10,899 --> 00:16:15,439
+Tamam, o zaman yarın falan ya da öbürsü gün bakarız.
+
+93
+00:16:16,559 --> 00:16:25,419
+Bir iki gün içerisinde inşallah öyle tahammül ederim, hallederim yani. Az kaldı zaten. Çok bir şey kalmadı.
+
+94
+00:16:26,239 --> 00:16:28,119
+Tamam, teşekkür ederim hocam.
+
+95
+00:16:29,659 --> 00:16:30,779
+Başka sorusu olan var mı?
+
+96
+00:16:41,395 --> 00:16:42,096
+Galiba yok.
+
+97
+00:16:45,556 --> 00:17:12,276
+Kodlara geçelim. Geçen uygulamamızda da bunları yapmıştık zaten kitap oluşturduk. O yüzden hızlı geçme kitap oluşturduk. Bir tane kitaplık oluşturduk. İşte kitaplığın kitap ekle fonksiyonu var. Hadi bakalım.
+
+98
+00:17:13,332 --> 00:17:27,332
+Ne yapıyoruz mesela? Kitaplık ek. İkane kitaplık oluşturduk. Şuradayız. Mesela neydi? Burada raf sayısı. Hani bir kitaplık oluşturduk. Bu kitaplık 5 raftan oluşuyor. Oluşuyor olsun dedik.
+
+99
+00:17:28,332 --> 00:17:39,832
+Ne yaptık mesela? Bir tane raf değişkeni tanımladık. Sonra bunu yapıcı fonksiyonun içinde ne yaptık? Bellekte yerini ayırdık.
+
+100
+00:17:40,468 --> 00:17:54,087
+bir dizi olarak bir dizi yere ayırdık. Sonra her bir dizi elemanı şu anda alı gösteriyor tabii ki. Ne yaptık? Her bir dizi elemanına birlikte raf klasi kadar yer ayırdık.
+
+101
+00:17:57,652 --> 00:18:11,011
+Ondan sonra rafa tekrar dönelim mesela. Raf'ın yapıcı fonksiyonunda da kitaplar diye bir değişken varmış. Kitaplardan New Kitap diye 10 boyutlu bir dizi oluşturmuşuz.
+
+102
+00:18:11,011 --> 00:18:21,811
+Mesela burada şey yapmadık. Normalde kitaplar şu anda nalı gösteriyor. Kitaplar bir dizi ama her bir elemana nalı gösteriyor.
+
+103
+00:18:23,892 --> 00:18:26,192
+Mesela burada şuradaki gibi şey yapmadık.
+
+104
+00:18:27,392 --> 00:18:30,172
+Before döngüsü açıp hepsine near rough demedik.
+
+105
+00:18:30,172 --> 00:18:39,172
+İşte buradaki near rough dememiz bunun kara olmasına yani karalanmasına demememiz de boş olmasına.
+
+106
+00:18:41,231 --> 00:18:43,112
+UML de tekabül ediyor.
+
+107
+00:18:43,711 --> 00:18:45,231
+Peki bunları nerede dolduruyoruz?
+
+108
+00:18:45,332 --> 00:18:48,112
+İşte biz test tınıfında kitaplar oluşturduk burada.
+
+109
+00:18:50,228 --> 00:19:01,728
+İşte burada ne yaptık? Kitaplık kitap ekle dedik mesela. Kitaplık kitap ekle fonksiyonuna geldim. Neyi gönderiyoruz? Kitabı gönderiyoruz. Bir de hangi rafa yerleştireceğimizi gönderiyoruz.
+
+110
+00:19:04,588 --> 00:19:16,648
+Kitabımız bu. Raf node da bu. İşte sıfırıncı rafa kitap 3'ü ekle diyoruz. Burada hemen rafın kitap ekle fonksiyonuna bakalım. Mesela ne yaptık burada?
+
+111
+00:19:19,284 --> 00:19:21,284
+İşte aradık.
+
+112
+00:19:22,284 --> 00:19:29,068
+Nal olmayan hangisi diye. Ondan sonra ona eklemiş olduk.
+
+113
+00:19:32,276 --> 00:19:40,096
+Nal olan hangisidir? Yani boş olan yeri aradık. Ondan sonra boş olan yere kitabımızı eklemiş olduk.
+
+114
+00:19:44,372 --> 00:20:04,731
+Böylelikle ne oldu? Şu an tüm kitap, tamam kitaplar dizimiz var ama her bir elemanı malı gösteriyordu. Direkt ilk elemandan ne oldu? Buraya hiç girmedi. Sıfıra şey yaptı. K'ya ekledi. Artık kitapların sıfırıncı elemanı bir kitabı gösteriyor. Malı göstermiyor.
+
+115
+00:20:04,731 --> 00:20:07,132
+Evet.
+
+116
+00:20:07,604 --> 00:20:19,284
+Aynı şeyler burada da oluyor işte. Kitap 1'i sıfırıncı rafa, kitap 2 sıfırıncı rafa, 4'ü 1'e 5'ü 1'e 6'ı 2'ye ekledik. Tüm rafları gösterdik.
+
+117
+00:20:23,284 --> 00:20:25,344
+Çünkü tabii yes, bir neden geldi şurası?
+
+118
+00:20:28,164 --> 00:20:36,064
+Tüm rafları göster fonksiyonumu çağırdık. Ne oldu? Tüm raflardaki şeyleri, kitapları böylelikle gösterdik.
+
+119
+00:20:36,064 --> 00:20:43,104
+Hemen bakalım kitaplık. Tüm rafları göster. Burada. Ne yaptık? Tüm rafları dolaştık.
+
+120
+00:20:44,644 --> 00:20:48,104
+Raf gösterdiği bir fonksiyon vardı burada. Tüm rafları dolaştık.
+
+121
+00:20:49,652 --> 00:20:58,751
+raf kaç tane vardı? 5 tane rafımız vardı. 0. raf. Buraya 0 gönderdik. 0. rafın raf göster fonksiyonunu çağırdık.
+
+122
+00:21:00,892 --> 00:21:08,771
+Sonu ne oldu? 0. raftaki tüm kitapların neydi? 10'du. Şurada sabit olarak tanımladık. 10 kere bu çalışıyor.
+
+123
+00:21:10,372 --> 00:21:14,532
+İşte tanımladığımız 3 tane kitap varmış 0. raf için.
+
+124
+00:21:15,284 --> 00:21:18,403
+Onları yazdı. Gerisi nalı gösterdiği için nalı yazdı.
+
+125
+00:21:19,423 --> 00:21:26,804
+Aynı şeyler birinci raftaki ve ikinci raftaki ve üçüncü raftaki kitap bir de dördüncü raftakiler için de geçerli. Böyle oldu.
+
+126
+00:21:31,316 --> 00:21:39,635
+Şimdi asıl uygulama 2, yani bu biraz da şey oldu hani geçen dersin tekrarı gibi oldu.
+
+127
+00:21:41,376 --> 00:21:42,916
+Yine kitapları eklendi mesela.
+
+128
+00:21:45,356 --> 00:21:48,836
+Kitaplık yönetimi diye bir tane sınıf.
+
+129
+00:21:49,556 --> 00:21:52,796
+Bakın mesela bu hafta böyle bir sınıf oluşturulmuş.
+
+130
+00:21:54,135 --> 00:21:57,236
+Ne yaptık? Kitaplığımızı buna parametre olarak gönderdik.
+
+131
+00:21:58,867 --> 00:22:13,768
+Kitaplık diye bir şeyi var. Değişkeni var. Alanı var. Niteliği var kitaplık yönetim classımızın. Yapıcı fonksiyonu ne yaptık? Bu kitaplı, bu kitaplı eşitledik.
+
+132
+00:22:20,211 --> 00:22:26,172
+Böylelikle ne oldu? Mantıksal bir ilişkisi aslında olmuş oldu. O yüzden kesinlikle çizgi değil. Lütfen.
+
+133
+00:22:52,468 --> 00:22:54,688
+Şimdi kalıtım konusuna gideceğiz.
+
+134
+00:22:56,068 --> 00:22:58,008
+Korklarda göreceğiz bu sefer bunu.
+
+135
+00:22:59,748 --> 00:23:01,208
+Şimdi arkadaşlar ne demiştik?
+
+136
+00:23:02,588 --> 00:23:04,407
+Bir tane kart classımız var.
+
+137
+00:23:04,768 --> 00:23:06,068
+Yetişkin kartı classımız var.
+
+138
+00:23:06,128 --> 00:23:07,248
+Öğrenci kartı classımız var.
+
+139
+00:23:07,847 --> 00:23:10,788
+Bu iki classımız kart classımızdan kalıtım alıyor.
+
+140
+00:23:12,367 --> 00:23:12,628
+Tamam.
+
+141
+00:23:13,327 --> 00:23:13,887
+Bu ne demek?
+
+142
+00:23:14,628 --> 00:23:19,468
+Yani kart classımdaki nitelikler buradaki classımızda da var.
+
+143
+00:23:20,084 --> 00:23:20,644
+Demek.
+
+144
+00:23:22,124 --> 00:23:22,784
+Tamam.
+
+145
+00:23:25,144 --> 00:23:27,163
+Bu nedenle mesela bakın.
+
+146
+00:23:27,963 --> 00:23:28,983
+Öğrenci kartı diye.
+
+147
+00:23:29,463 --> 00:23:36,084
+Biz X diye bir sınıftan bir nesne oluşturduğumuz zaman bunu X veri tipinde bir değişkenle tutarız.
+
+148
+00:23:36,163 --> 00:23:44,504
+Yani kart veri tipi mesela işte öğrenci kartı veri tipinden, classından bir sınıf oluşturduğumuz zaman ne yaparız?
+
+149
+00:23:47,988 --> 00:24:12,988
+bir değişken kullanmamız gerekir değil mi? Ama kalıtım aldığımız için, kart veri tipinden kalıtım aldığımız için, şunu diyebiliriz, öğrenci kartı aynı zamanda bir karttır. O yüzden kart veri tipindeki bir değişkenle de bunu tutabiliriz. İkisi aynı şey. Yani sonuç olarak aynı şeyi veriyoruz. Tamam mı?
+
+150
+00:24:13,875 --> 00:24:22,615
+Aynı şekilde bakın mesela yetişkin kartı da yetişkin kartından bir veri tipiyle tutulurdu ama kart veri tipiyle tutulabiliyor.
+
+151
+00:24:22,756 --> 00:24:29,596
+Yani kart veri tipiyle hem öğrenci kartını hem yetişkin kartından nesneleri ne yapabiliyorum? Bir değişken atayabiliyorum.
+
+152
+00:24:30,976 --> 00:24:38,096
+Ama öğrenci kartı, yetişkin kart, öğrenci kart veri tipinden bir değişkene yetişkin kartı nesnesini ne yapamam? Atayamam.
+
+153
+00:24:39,155 --> 00:24:41,355
+Niye? Çünkü buna birbirleriyle bir kalıtım yok.
+
+154
+00:24:42,067 --> 00:24:48,827
+Kartla ikisi birbiriyle, yani kartla öğrenci, öğrenci kart ve yetişkin kartı kart klasına kalıtım aldığı için bunu yapabiliyoruz.
+
+155
+00:24:51,028 --> 00:24:55,708
+Mesela öğrenci kartını ve yetişkin kartın içine bakalım. Yapıcı fonksiyonlarına.
+
+156
+00:24:57,928 --> 00:25:03,607
+Ne yaptık? İşte 0, Ali, 50'yi ne yaptık? Gönderdik. 0, Ali, 50.
+
+157
+00:25:05,907 --> 00:25:10,107
+Buradan süper, yani süper demek benim kalıtım aldığım sınıf.
+
+158
+00:25:10,427 --> 00:25:15,627
+Bu arada extends ifadesiyle, yani işte class'ımızı tanımladık.
+
+159
+00:25:15,627 --> 00:25:20,807
+Sonra extends anahtar kelimesini kullanıyoruz ve kalıtım alacağımız class'ın ismini yazıyoruz.
+
+160
+00:25:20,927 --> 00:25:22,747
+Böylelikle ne yapıyoruz? Kalıtım almış oluyoruz.
+
+161
+00:25:25,007 --> 00:25:31,051
+Bu süper anahtar kelimesiyle de, ben diyorum ki, benim...
+
+162
+00:25:31,220 --> 00:25:40,220
+Kalıtı aldığım class'ın yapıcı fonksiyonuna git. Süper çünkü parantez açtık direkt. Yanına o yüzden yapıcı fonksiyonuna git diyoruz.
+
+163
+00:25:41,220 --> 00:25:48,220
+Ve bu yapıcı fonksiyonu parametre olarak bu üç değeri gönderiyorum. Mesela kartın yapıcı fonksiyonuna bakalım.
+
+164
+00:25:49,220 --> 00:25:53,220
+Ne oldu? Bu üç değeri aldı. Buradaki üç değişkeni atadım.
+
+165
+00:25:56,147 --> 00:26:05,987
+Yani karttaki tanımlanan değişkenleri atama yapıyor ama aslında o sonuçta bir öğrenci kartı olduğu için aslında buradan oluşturulan birleştir.
+
+166
+00:26:07,267 --> 00:26:11,087
+Ben yine öğrenci kartıyla ne yapacağım? Karttaki o niteliklere erişebileceğim.
+
+167
+00:26:12,528 --> 00:26:20,107
+Faydası ne demiştik? Burada tekrar tekrar ben 3-4 tane değişkeni hem burada hem yetişkin kartında yazmıyorum.
+
+168
+00:26:21,607 --> 00:26:22,387
+Bir yerde yazıyorum.
+
+169
+00:26:22,900 --> 00:26:41,440
+Aynı işi yapıyorum. Ama daha kolay oluyor. Hem geliştirilmesi de daha kolay oluyor. Bir şey değiştirmek istesek mesela sadece bir yerden değiştirmek kafi oluyor. On tane yerden değiştirilmek yani çok sıkıntılı bir iş olduğu için böyle kalıltı falan önemli yani.
+
+170
+00:26:48,852 --> 00:27:14,312
+Aynı şekilde yetişkin kartına da bakalım. Mesela öğrenci kartında şöyle bir şey var. Hani demiştim ya, bu karttaki niteliklerin dışında öğrenci kartında bir de bonus var. Mesela o bonus da burada tekrardan tanımlıyor. Ama yetişkin kartında böyle bir şey yok. O yüzden direkt süper diyor. Süper diyor. Kalıtım aldı, class'a gönderiyor. Onu yapıcı fonksiyonuna gönderiyor.
+
+171
+00:27:18,067 --> 00:27:24,387
+Kalıtımı anladınız mı? Kalıtımı çok önemli. Anladınız mı? Anlamadıysanız sorun. Neresini anlamadınız?
+
+172
+00:27:25,187 --> 00:27:33,827
+Hocam, bu şeyde, remarkladığınız öğrenci kartıyla başlayan bu kartın altı, kart hesap bir tanımı var ya.
+
+173
+00:27:34,248 --> 00:27:35,788
+Anlamadım. Kart, ha şurası.
+
+174
+00:27:36,147 --> 00:27:42,488
+Onun altındaki satırla birebir aynı değil mi? Yani kart yazsak da, öğrenci kart yazsak da aynı sonucu alırsınız.
+
+175
+00:27:42,488 --> 00:27:44,667
+Aynı sonucu alırsınız. Buradaki amaç şu.
+
+176
+00:27:45,172 --> 00:27:53,611
+Hani kartla da bunu tutabiliyoruz. Hani karttan kalıtım alıyor, oradan da tutabiliyoruz göstermek. Yoksa sonuç aynı sonuç.
+
+177
+00:27:54,751 --> 00:27:58,031
+Yani öğrenci kartı yazdığınızda da kalıtım almış oluyor zaten değil mi?
+
+178
+00:27:58,672 --> 00:28:02,631
+Kalıtımı şurada alıyorsun zaten. Öğrenci kartı diye bir class tanımlıyorsun ya.
+
+179
+00:28:03,051 --> 00:28:03,731
+Evet, gördüm.
+
+180
+00:28:04,311 --> 00:28:06,611
+Bu extends, kart. Buradan kalıtım alıyorsun.
+
+181
+00:28:07,831 --> 00:28:12,672
+Burada ne olmuş oluyor? Burada sadece bir değişken var. Ona atama yapmış oluyorsun.
+
+182
+00:28:14,740 --> 00:28:31,400
+Bir tutucu var diye, mesela hesap bir diye bir tutucu var. Bu öğrenci kartı kart, ikisi de aynı şeyi tekabül ediyor. Ama mesela sen yetişkin kartı nesnesi oluşturup da öğrenci kartı yazarsan hatalı bir durum olur. Zaten hata veriyor proka.
+
+183
+00:28:34,140 --> 00:28:35,319
+Başka soru soru sorun mu?
+
+184
+00:28:38,480 --> 00:28:41,279
+Hocam burada, chart classlar,
+
+185
+00:28:42,132 --> 00:28:45,692
+Superclass'ın fonksiyonlarına direkt erişebiliyor mu?
+
+186
+00:28:46,831 --> 00:28:48,371
+Bir daha söyler misin?
+
+187
+00:28:49,091 --> 00:28:54,892
+Buradaki Childclass'lar yani Superclass'ın fonksiyonlarına direkt erişebiliyor mu?
+
+188
+00:28:54,892 --> 00:28:57,851
+Public olduğu müddetçe erişebilir mesela.
+
+189
+00:28:58,912 --> 00:28:59,971
+Bunun hepsi public zaten.
+
+190
+00:29:00,692 --> 00:29:01,251
+Erişebilir.
+
+191
+00:29:01,811 --> 00:29:03,071
+Ama Private'ına erişemez.
+
+192
+00:29:04,051 --> 00:29:08,551
+Yani Private bir fonksiyon tanımlasan Childclass'lar buna erişemez.
+
+193
+00:29:10,483 --> 00:29:12,123
+Peki, protected olsun hocam?
+
+194
+00:29:12,743 --> 00:29:13,403
+Erişebilir.
+
+195
+00:29:14,623 --> 00:29:16,143
+Protected'ın olayı o zaten.
+
+196
+00:29:16,143 --> 00:29:25,463
+Sadece kalıtım aldığımız, mesela karttan kalıtım alan class'a aktarım yapılabiliyor protected.
+
+197
+00:29:26,283 --> 00:29:29,483
+Public yaptığımızda mesela hiç kalıtım malıtım hiç alakası yok.
+
+198
+00:29:29,583 --> 00:29:30,783
+Testten buna erişebiliyorum.
+
+199
+00:29:31,063 --> 00:29:32,923
+Yani karttan tabii abstract olmasaydı.
+
+200
+00:29:33,296 --> 00:29:47,976
+Karttan bir class oluştururdum. Derdim ki, işte kart x eşittir, new kart, x nokta get id derdim. Oradan yine erişirdim testten. Hiç kalıptım olmaya lüzum yok. Ama protected dediğim zaman testten erişemem. Ama öğrenci kartından erişebilirim.
+
+201
+00:29:49,456 --> 00:30:00,000
+Peki hocam, biz düz kartı abstract değil de, abstract kullanmamızın sebebi extent olarak kullanmamız.
+
+202
+00:30:00,000 --> 00:30:25,799
+Yalnızca, şimdi şöyle, abstract olmasa da kalıtım alabilirdik. Yani buradaki abstract kelimesi olmasa da kalıtım alabilirdik. Ama biz diyoruz ki, hani mesela ben şimdi böyle bir tutüphane yazdım diyelim, başkası kullanacak. Hani ben buradan karttan bir nesne oluşturulmaması gerektiğini biliyorum ama
+
+203
+00:30:26,740 --> 00:30:34,339
+Bunu abstract yazarak diyorum ki bak bu kart annesine oluşturulmaz. Buna müsaade vermiyorum yani.
+
+204
+00:30:34,339 --> 00:30:46,339
+He, abstract yazmazdım. Kart annesine oluşturulmasına müsaade verdim ama oluşturmazdım. Çünkü öyle bir ihtiyacım yok. Mevzu bu yani.
+
+205
+00:30:46,339 --> 00:30:48,339
+Anladım hocam, tamam teşekkür ederim.
+
+206
+00:30:48,672 --> 00:30:56,491
+Hocam, alt classlar public olunca erişir, private'a erişmez dediniz ama buradaki nesneleri erişir, aman şeylere.
+
+207
+00:30:57,491 --> 00:30:58,052
+Şunlara mı?
+
+208
+00:30:58,291 --> 00:31:00,031
+Evet, onlar private'a erişebiliyor.
+
+209
+00:31:00,031 --> 00:31:02,192
+Ama süper fonksiyonuyla yapıyor bunu.
+
+210
+00:31:03,291 --> 00:31:05,652
+Yani süper fonksiyonunu kullanarak ne yapıyor?
+
+211
+00:31:05,771 --> 00:31:08,491
+Aslında benim yapıcı fonksiyonuma bu değerler ata diyor.
+
+212
+00:31:08,572 --> 00:31:09,812
+Ama ben mesela şunu yapamam.
+
+213
+00:31:10,852 --> 00:31:12,031
+Bakayım gösterebilecek miyim?
+
+214
+00:31:13,572 --> 00:31:14,612
+Mesela ne diyeyim?
+
+215
+00:31:22,483 --> 00:31:23,644
+Buradan karttan bakayım.
+
+216
+00:31:25,163 --> 00:31:25,823
+Get sahip.
+
+217
+00:31:27,023 --> 00:31:27,823
+Bak mesela.
+
+218
+00:31:29,523 --> 00:31:30,863
+Şöyle noktada bir birimle koydum.
+
+219
+00:31:31,283 --> 00:31:32,063
+Get sahip dedim.
+
+220
+00:31:33,383 --> 00:31:35,383
+Burada get sahip diye bir fonksiyon var mı?
+
+221
+00:31:36,303 --> 00:31:36,583
+Yok.
+
+222
+00:31:38,163 --> 00:31:39,023
+Ama kartta var.
+
+223
+00:31:39,703 --> 00:31:40,683
+Oradan kalıcımı aldım.
+
+224
+00:31:41,003 --> 00:31:41,863
+Get sahip diyerek.
+
+225
+00:31:42,903 --> 00:31:43,523
+Şunu yani.
+
+226
+00:31:43,523 --> 00:31:45,463
+Bu fonksiyonu çağırdım aslında.
+
+227
+00:31:46,144 --> 00:31:47,243
+Ama mesela şunu yapamam.
+
+228
+00:31:48,423 --> 00:31:49,323
+ID dedim.
+
+229
+00:31:49,971 --> 00:31:56,371
+Gerçi burada olur. Çünkü burada ID var. Şuradan bakayım. ID dedim mesela.
+
+230
+00:31:57,811 --> 00:31:59,811
+Eşittir 5 diyeyim mesela.
+
+231
+00:32:00,571 --> 00:32:02,172
+Bakın oldu hata veriyorum.
+
+232
+00:32:04,011 --> 00:32:06,932
+The fieldcard.id is not visible.
+
+233
+00:32:07,611 --> 00:32:10,331
+Yani görüntülenemez, ulaşılamaz.
+
+234
+00:32:10,892 --> 00:32:12,091
+Anlaşıldı mı?
+
+235
+00:32:13,291 --> 00:32:14,692
+Anlaşıldı hocam, sağ ol.
+
+236
+00:32:15,508 --> 00:32:32,947
+Ama super class ile bunu yapıyorum. Super class'ını aslında şöyle, bunu yapıyorum derken şöyle yapıyorum. Ben super class'ı, yani super dediğim zaman, şurada da parantezleri açtığım zaman, aslında, şunu da sileyim de, aslında kart fonksiyonun yapıcı fonksiyonunu çağırıyorum.
+
+237
+00:32:33,768 --> 00:32:42,508
+Ona da parametre olarak, yani aslında kart fonksiyonuna bu parametreleri gönderiyorum. Bu atama işlemlerini öğrenci kartı class'ının içine yapmıyorum da,
+
+238
+00:32:42,963 --> 00:32:46,763
+Bu parametreleri görüntüleri kart class'ın içinde yapıyorum aslında.
+
+239
+00:32:49,923 --> 00:32:53,683
+Süper arahtar kelimesiyle bu sağlanmış oluyor.
+
+240
+00:32:57,140 --> 00:32:57,980
+Anlaşıldı mı?
+
+241
+00:32:59,559 --> 00:33:00,900
+Anlaşıldı hocam, sağ ol.
+
+242
+00:33:01,920 --> 00:33:02,820
+Başka sorusu olan?
+
+243
+00:33:05,120 --> 00:33:06,420
+İftara yetişir miyiz?
+
+244
+00:33:08,059 --> 00:33:09,960
+İftar, inşallah, İmgermak.
+
+245
+00:33:12,759 --> 00:33:16,660
+Orucu açmak için bir dakikalık UML'a veririz de, inşallah bitiririz.
+
+246
+00:33:18,080 --> 00:33:19,740
+Evet, başka sorumuz yoksa devam ediyorum.
+
+247
+00:33:26,804 --> 00:33:43,584
+Mesela bakın, geçen derste de olduğu gibi, hesap 1. Normalde hesap 1, yani yazmaz. Yazsa da ne olur, hani class'ın şeyini yazar. Hani hesap 1 deyip de, ne yazacak mesela uygulamayız dedik.
+
+248
+00:33:49,715 --> 00:33:50,715
+Evet, şunlar.
+
+249
+00:33:51,915 --> 00:33:53,795
+Hesap 1 deyip de şunu yazmaz yani.
+
+250
+00:33:55,995 --> 00:34:00,935
+Niye? Çünkü hesap 1 dediğimiz öğrenci kartı, kartı class. Bir string ifade değil.
+
+251
+00:34:02,855 --> 00:34:03,715
+Ama ne yaptık?
+
+252
+00:34:05,195 --> 00:34:07,076
+Hesap 1 öğrenci kartı.
+
+253
+00:34:08,155 --> 00:34:11,315
+Mesela burada ne yaptık?
+
+254
+00:34:11,815 --> 00:34:14,916
+Bundan önce şuraya geleyim. Bakın kalıtımla alakalı bir nokta daha.
+
+255
+00:34:15,916 --> 00:34:16,135
+Yine.
+
+256
+00:34:16,576 --> 00:34:40,536
+Mesela yetişkin kartta yazıyoruz. Aynı şekilde hesap 2'de yazdırmaya çalışıyoruz ya. Yetişkin kartından da yazdırmaya çalışıyoruz. O da bir kart sonuçta. Yetişkin kartında toString'i override etmemişiz. Ama yine de bakın bir sonuç veriyor. Niye? İşte kalıtımdan dolayı. Kartta toString diye bir fonksiyon var.
+
+257
+00:34:40,947 --> 00:34:45,347
+Zaten kart klasının içinde bunu override etmişim. Şöyle bir ifade çıksın demişim.
+
+258
+00:34:47,887 --> 00:34:58,688
+O yüzden bu aslında to string fonksiyonu aynı zamanda yetişkin kartı klasının da bir fonksiyonu olmuş olduğu için ne yapmış oldu? Çalışmış oldu.
+
+259
+00:35:01,287 --> 00:35:08,387
+Bir de biliyorsunuz hani sistem outprint'en kullandığımız zaman şurada sanki hesap bir nokta gizli bir to string varmış gibi oluyor.
+
+260
+00:35:11,572 --> 00:35:27,931
+Sonunda söylemiştik. Yetişkin kartında toString'i ne yapmadık? Overwrite etmedik ama aynı zamanda bu bir kart olduğu için kart class'ında tanımlı olan, public olarak tanımlı olan bu override toString fonksiyonunu ne yapmış olduk? Kullanmış olduk.
+
+261
+00:35:29,231 --> 00:35:38,592
+Şimdi öğrenci kartında tekrar override ediyoruz. Bu override'ı şu toString üzerine yazıyoruz. Yani override üstüne yazmak demek ki.
+
+262
+00:35:39,956 --> 00:35:51,976
+Bu toString fonksiyonunun üstüne, yani bunu artık çalıştırma, şunu çalıştırma, kart classındaki toString'i çalıştırma, onun yerine benim şimdi yazacağım toString'i çalıştır diyoruz.
+
+263
+00:35:52,676 --> 00:35:54,516
+Override public string toString bu demek.
+
+264
+00:35:56,256 --> 00:35:59,176
+Ama sonra ne yapıyoruz? Super.toString diyorum. Ne demek bu?
+
+265
+00:36:00,096 --> 00:36:03,235
+Benim kalıltıma aldığım class'ın toString fonksiyonunu çalıştır.
+
+266
+00:36:04,496 --> 00:36:05,896
+Çalıştırdı. Bakın şurası.
+
+267
+00:36:09,811 --> 00:36:24,291
+Ondan sonra, artı, stick birleştirme oluyordu biliyorsunuz. Bonus eşittir. Bonus. Bonus şu anda sıfır olduğu için sıfır yazdı. Anlaşıldı değil mi burası?
+
+268
+00:36:31,380 --> 00:36:35,820
+Sonra kitap sat diye. Bu arada söyledim mi bilmiyorum.
+
+269
+00:36:41,204 --> 00:37:07,163
+Hayır, gerekmiyor. Yani şöyle şimdi eğer ki kullanacaksanız yapmanız lazım. Ama kullanmayacaksanız yapmasanız da olur. Hata vermez, bir şey olmaz. Ama mesela işte siz buradan bir tane class oluşturdunuz. O class'dan bir nesne oluşturacağınız zaman bir şeyler olsun istiyorsunuz. Yapıcı fonksiyon yazarsınız. Hatta parometre almasını istiyorsanız onu da yazarsınız. İstemiyorsanız yazmazsınız.
+
+270
+00:37:08,244 --> 00:37:14,324
+Eğer yapılırken bir şey olmasını istemiyorsanız, yapıcı fonksiyonu yazmazsınız. Yani yazmasanız da olur.
+
+271
+00:37:21,748 --> 00:37:30,288
+Ama işte mesela biz öderide yazılmasını isteriz. Niye? Çünkü burada UML diagramına koymuşuz bunu. Yani mesela burada kitap demişiz, burada rahat demişiz.
+
+272
+00:37:31,528 --> 00:37:39,108
+Değil mi? Ya hani hiçbir şey yapılmasa da, içi boş olsa da ki öyle bir şey yoktu aslında ama hani diyorum öyle olsa bile,
+
+273
+00:37:39,967 --> 00:37:46,427
+hani burada bu konulmuşsa demek ki onu oraya koymak gerekiyor. Hani ödev odaklı söyledim bunu.
+
+274
+00:37:49,204 --> 00:37:50,444
+Onu da belirtmiş olayım.
+
+275
+00:37:59,731 --> 00:38:00,192
+Şimdi
+
+276
+00:38:06,228 --> 00:38:12,228
+Şimdi kitaplık yönetim kılasında kitap sat diye bir fonksiyon var.
+
+277
+00:38:23,284 --> 00:38:24,403
+Mesela ne yapıyoruz?
+
+278
+00:38:25,943 --> 00:38:26,884
+Bakın, hesap 1.
+
+279
+00:38:27,484 --> 00:38:30,003
+Öğrenci hesabıydı. Öğrenci kartıydı biliyorsunuz.
+
+280
+00:38:30,744 --> 00:38:31,284
+Kitap 1.
+
+281
+00:38:32,623 --> 00:38:35,443
+Yani, hesap 1 ile kitap 1'i satın almış olacağız.
+
+282
+00:38:36,104 --> 00:38:38,204
+Daha doğrusu, ya da hesap 1 ile kitap 1 satılacak.
+
+283
+00:38:40,604 --> 00:38:41,784
+Ne olacak şimdi?
+
+284
+00:38:43,364 --> 00:38:44,344
+K.getat.
+
+285
+00:38:44,864 --> 00:38:48,784
+Bu, K, kitap sınıfından bir nesneydi.
+
+286
+00:38:49,744 --> 00:38:50,503
+O zaman şurada.
+
+287
+00:38:51,635 --> 00:38:59,076
+Kitap sınıfına ait gethat diye bir fonksiyon var. O fonksiyonla ne yapıyorum? O kitabın ismini alıyorum. Çünkü bana adı döndürüyor.
+
+288
+00:39:04,532 --> 00:39:08,892
+Ondan sonra kitaplı, kitap ara diye bir fonksiyon var.
+
+289
+00:39:11,712 --> 00:39:13,492
+Kitaplığı açtık, kitap ara.
+
+290
+00:39:15,092 --> 00:39:15,731
+Burada.
+
+291
+00:39:16,452 --> 00:39:20,231
+Ne yapıyorum? Kitabın adını gönderdim parametre olarak.
+
+292
+00:39:21,432 --> 00:39:23,771
+İşte rafın boyutunu aldım. Tüm rafları dolaşıyorum.
+
+293
+00:39:23,771 --> 00:39:25,771
+O tüm raflar için.
+
+294
+00:39:25,807 --> 00:39:52,148
+O raftaki tüm kitapları dolaşıyorum. O raftaki get kitaplar diye bir fonksiyonu vardı. Bunu zaten geçen derslerde göstermiştik. Orada ne yapıyoruz? Return kitaplar. Onları ne yapıyor? Tek tek döndürüyor. Kitap belirteciyle yani işaretçisiyle ya da değişkeniyle diyelim. Ne yapıyoruz? Bunu tutarak tutuyoruz. Sonra da tek tek buradan bakıyoruz işte kitap nalma değil.
+
+295
+00:39:52,623 --> 00:40:06,884
+Kitabın adı benim parametre olarak gönderdiğim kitabın adıyla eşit mi? Eşit. O zaman bu rafta bu kitap var demek. Sonra da i'yi hangi rafta olduğunu gönderiyoruz.
+
+296
+00:40:07,703 --> 00:40:17,123
+Yani kitabın hangi rafta olduğunu döndürüyoruz. Kitap olarak fonksiyonuyla. Böylelikle raft no'yu bulmuş olduk.
+
+297
+00:40:18,099 --> 00:40:42,699
+Tamam. Eğer ki yoksa, hani hiçbir hafta yoksa o zaman kitap yoktur. O zaman return false dönüyor. Eğer varsa o zaman satın alacağız. Şimdi ne yapıyoruz? Bu kitabın bir fiyatı var. Yine kitap class'ında bu tanımlanmıştı get fiyat diye. Onu ne yapıyoruz? Aldık. Ödeme haşın yani kart.
+
+298
+00:40:44,019 --> 00:40:46,579
+class'ın ödeme yap diye bir fonksiyonu var.
+
+299
+00:40:47,659 --> 00:40:48,480
+Ona gönderiyorum.
+
+300
+00:40:49,159 --> 00:40:54,079
+Tabi bu birinci, yani öğrenci kartı olduğu için önce öğrenci kartına gidecek.
+
+301
+00:40:56,319 --> 00:40:58,159
+Ödeme yap diye bir fonksiyon.
+
+302
+00:40:59,099 --> 00:41:00,539
+Bakın mesela on write edilmiş.
+
+303
+00:41:01,659 --> 00:41:01,960
+Niye?
+
+304
+00:41:03,539 --> 00:41:04,340
+Kart neler geldi.
+
+305
+00:41:05,340 --> 00:41:07,099
+Bakın çünkü bundan dolayı.
+
+306
+00:41:09,492 --> 00:41:20,712
+Public, abstract, boolean, ödeme yap diye bir fonksiyon tanımlanmış. Abstract olduğu için bunun şeyi yok yani hani gövdesi tanımlanmıyor. Sadece prototip olarak tanımlanıyor.
+
+307
+00:41:20,712 --> 00:41:28,032
+Ve bu kart sınıfından kalıltı alacak olan alt sınıflar ne yapıyor?
+
+308
+00:41:37,300 --> 00:41:45,880
+biçiminde yazıyorlar. Kendi şekillerinde yani kendi istedikleri şekilde yazıyorlar. Öyle de. Yani kendi istedikleri şekilde dolduruyorlar.
+
+309
+00:41:47,180 --> 00:42:04,199
+Tamam. GetBakiye. Bakın mesela. GetBakiye. Burada GetBakiye'de bir fonksiyon var mı? Bu arada öğrenci kartı kuyduk. GetBakiye'de bir fonksiyon var mı? Yok. Nerede bu fonksiyon? Kalıtıma aldığı kartta. Tamam.
+
+310
+00:42:06,260 --> 00:42:21,980
+Fiyattan büyükse, yani bunu alacak param varsa, o zaman get bakiyeden fiyatı çıkartıyorum ve bunu set bakiyeli ne yapıyorum? O fiyatı eşitliyorum. Yani fiyatı değiştirmiş oluyorum böylelikle. Bakiyemi değiştirmiş oluyorum.
+
+311
+00:42:23,760 --> 00:42:33,340
+Bakiyem mesela örnek veriyorum. 100 liradan bakiyem vardı. 20 lira kitap aldım. 80 lira kaldı. Onu da ne yaptım? Benim artık 80 lira bakiyem var diye değiştirmiş oldum.
+
+312
+00:42:34,579 --> 00:42:45,199
+Sonra kitabı aldıkça tabii ne oluyor? İşte bu fiyatın %20'si kadar bir bonus değer elde ediyorum. Ondan sonra true deyip döndürüyoruz.
+
+313
+00:42:46,679 --> 00:42:57,199
+Eğer bu olmasaydı, yani bakiyem yetmemiş olsaydı, o zaman bonus öğrenci olarak bonusuma bakardım. Eğer bu fiyattan büyükse,
+
+314
+00:42:57,844 --> 00:43:22,444
+Yani bu fiyatı karşılayabilecek kadar bonusum varsa o zaman onu oradan öderdim. Eğer yoksa hiçbiri de olmuyorsa o zaman return false'u döndürdük. Tamam, kitaplık yönetimi. Böylelikle ödeme yapı gerçekleştirmek istedik. Eğer ki gerçekleştiyse true dönecek. O yüzden bunun içine girecek. Satış gerçekleşti diye bakın mesela yazacak.
+
+315
+00:43:23,764 --> 00:43:29,884
+Sonra kitaplıktan tabii ne olacak? Kitabı silecek. Rafno'yu bulmuştuk. Rafno'yu ve kitabı gönderiyoruz.
+
+316
+00:43:33,652 --> 00:43:37,871
+Kitaplık, sil, raf no'yu ve kitabı gönderdim.
+
+317
+00:43:38,692 --> 00:43:40,871
+İşte üçüncü örnek veriyorum.
+
+318
+00:43:40,972 --> 00:43:45,231
+Üçüncü raf için kitap sil fonksiyonunu çağırdım.
+
+319
+00:43:46,152 --> 00:43:47,192
+Kitabı gönderdim.
+
+320
+00:43:47,451 --> 00:43:49,331
+O raftaki kitap sil fonksiyonu ne oldu?
+
+321
+00:43:49,431 --> 00:43:50,172
+Çalışmış oldu.
+
+322
+00:43:51,012 --> 00:43:54,791
+İşte k olana kadar, k olanı bulduktan sonra ne yapayım?
+
+323
+00:43:54,791 --> 00:43:55,552
+Onu nala çevir.
+
+324
+00:43:57,472 --> 00:43:58,152
+Tamam.
+
+325
+00:44:11,668 --> 00:44:14,867
+Onu bilmiyorum. Ben Tecrübe'yi hatırlamıyorum zaten.
+
+326
+00:44:19,347 --> 00:44:25,168
+Ona bakarız deneriz. Öyle oluyorsa oluşturursun o zaman. Benim bildiğim kadarıyla bir sıkıntı olmuyor da o yüzden.
+
+327
+00:44:31,123 --> 00:44:49,283
+Kitap sili gerçekleştirdik. Eğer ki false dönseydi, yani ödeyemeseydim, yani ne bakiyem yeseydim, ne bonus param yeseydim, o zaman ne olacaktı? Buna da girmeyecekti. Buraya girecekti. O zaman bakiye yetersiz diyecekti. Return false'u döndürecekti.
+
+328
+00:44:52,043 --> 00:44:54,443
+Return false dönemesinin bir önemi kalmadı mı?
+
+329
+00:44:58,324 --> 00:45:00,464
+Evet. Kitap sat böyle.
+
+330
+00:45:02,604 --> 00:45:12,304
+Yani burada hepsini yapıyor. Kitap 1'i hesap 1. Hesap 1'e kitap 1'i satıyor. Kitap 3, kitap 4, kitap 5'i satıyor. Sonra ne oluyor?
+
+331
+00:45:13,084 --> 00:45:14,944
+Hesap 1'i tekrar yazdırıyor. Hani bakın.
+
+332
+00:45:17,244 --> 00:45:18,124
+Hesap 1 buydu.
+
+333
+00:45:19,184 --> 00:45:20,984
+Bakiye 50'ydi. Bonus 0 satıdı.
+
+334
+00:45:22,304 --> 00:45:23,104
+Şimdi ne oldu?
+
+335
+00:45:24,224 --> 00:45:25,844
+Bakiye 0, bonus 10 olmuş.
+
+336
+00:45:26,324 --> 00:45:27,084
+Gördünüz mü?
+
+337
+00:45:28,884 --> 00:45:29,644
+Aynı şeyi
+
+338
+00:45:29,644 --> 00:45:34,064
+bir daha şey yapıyor.
+
+339
+00:45:34,644 --> 00:45:36,564
+Şunu da satıyor mesela. Kitap altıyı da satıyor.
+
+340
+00:45:37,564 --> 00:45:39,104
+Sonra bonusu da sıfır oldu.
+
+341
+00:45:41,244 --> 00:45:43,704
+Bu öğrenci hesabı içinde mesela.
+
+342
+00:45:44,524 --> 00:45:46,324
+Şimdi yetişkin kartının
+
+343
+00:45:46,324 --> 00:45:48,864
+yetişkin kartı için bakacağız.
+
+344
+00:45:49,715 --> 00:45:53,955
+Bakın burada da aynı şekilde ödeme yap diye bir tane fonksiyon override ettik.
+
+345
+00:45:54,915 --> 00:46:02,475
+Ama burada sadece ne yaptık? Bakiyesine baktık. Niye? Çünkü bonus puanım diye bir şeyim yok yetişkin kartında.
+
+346
+00:46:03,495 --> 00:46:10,795
+Baktım eğer ki bakiem yetiyorsa, bakiye al yetmiyorsa o zaman bakiye yetersizdi.
+
+347
+00:46:12,795 --> 00:46:13,715
+Buna geldi.
+
+348
+00:46:16,307 --> 00:46:22,708
+Ne oldu? İşte burada var falan gerçekleşti. Ne oldu? En son şunu yazdırdıktan sonra
+
+349
+00:46:23,807 --> 00:46:28,587
+Şunu yazdı bakın hani 50 idi. Bunun bakiyesi de 50 idi. Şurada.
+
+350
+00:46:29,307 --> 00:46:31,807
+O da 0'a düşmüş. Sonra
+
+351
+00:46:32,268 --> 00:46:36,128
+bir tane daha kitap satmak istemiş. Bu sefer de cevap veriyor.
+
+352
+00:46:36,367 --> 00:46:43,307
+Bakiye yetersiz. Şuradaki. Yani buraya false dönüyor. O yüzden buraya giriyor. Bakiye yetersiz.
+
+353
+00:46:43,860 --> 00:46:44,380
+geliyor.
+
+354
+00:46:45,900 --> 00:46:47,960
+Bir sorunuz var mı? Anlatacaklarım.
+
+355
+00:46:50,000 --> 00:46:54,279
+Bir de şey vardı. Burada tabii örnek olarak yer almıyor ama.
+
+356
+00:46:55,360 --> 00:46:56,699
+Aşırı yükleme.
+
+357
+00:46:57,819 --> 00:46:59,159
+Fonksiyonlar aşırı yükleme.
+
+358
+00:47:00,480 --> 00:47:02,219
+Ne demek fonksiyonlar aşırı yükleme?
+
+359
+00:47:03,639 --> 00:47:04,119
+Mesela,
+
+360
+00:47:05,460 --> 00:47:07,339
+daha kolay bir şeyler vereyim.
+
+361
+00:47:18,260 --> 00:47:19,620
+Mesela örnek veriyorum.
+
+362
+00:47:23,411 --> 00:47:29,711
+public static string ise böyle nedir?
+
+363
+00:47:36,851 --> 00:47:38,431
+Mesela böyle bir şey yaptım ne oluyor?
+
+364
+00:47:40,071 --> 00:47:41,331
+İki tane metot var diyor.
+
+365
+00:47:41,491 --> 00:47:43,491
+Yani bu metodu iki kere yazdım diyor.
+
+366
+00:47:43,851 --> 00:47:44,971
+O yüzden bana hata veriyor.
+
+367
+00:47:46,371 --> 00:47:54,371
+Ama ben bu metoda mesela string s diye bir parametre alırsam ne oldu hata vermiyor artık.
+
+368
+00:47:55,672 --> 00:47:57,631
+Aynı fonksiyon ismiyle oluşturdu.
+
+369
+00:47:58,420 --> 00:48:05,360
+Bu yeni fonksiyon, yani yeni fonksiyon oluşuyordur. İki tane aynı fonksiyon isminde fonksiyonlarımız var. İşte bunun fonksiyonu aşırı yükleme deniliyor.
+
+370
+00:48:08,420 --> 00:48:09,520
+Aynı şekilde
+
+371
+00:48:09,520 --> 00:48:14,520
+Şuna da bakalım. Mesela bu string döndürüyor.
+
+372
+00:48:15,980 --> 00:48:17,240
+Int döndürsün diyelim.
+
+373
+00:48:19,540 --> 00:48:20,020
+Oluyor mu?
+
+374
+00:48:22,080 --> 00:48:23,060
+Dönüş tipi olmuyor.
+
+375
+00:48:23,060 --> 00:48:23,880
+Tamam.
+
+376
+00:48:26,579 --> 00:48:27,539
+Şöyle yapayım.
+
+377
+00:48:29,539 --> 00:48:32,739
+Mesela iki tane parametre alsın.
+
+378
+00:48:33,420 --> 00:48:38,920
+String s virgül string y diyelim mesela.
+
+379
+00:48:43,123 --> 00:48:44,303
+No dönüştep listin yok.
+
+380
+00:48:47,860 --> 00:48:56,340
+Sonra bir tane daha fonksiyon oluştayım. Public, static, yine string olsun, ISBN ne nedir?
+
+381
+00:48:58,400 --> 00:49:06,060
+Ne oldu mesela? Farklı parametre, birinde hiç parametre yok.
+
+382
+00:49:07,660 --> 00:49:12,340
+Şundan dolayı tabi o zaman. Birinde de iki tane parametre var. Ne oldu?
+
+383
+00:49:13,840 --> 00:49:14,940
+Fonksiyon açıcı bir tane.
+
+384
+00:49:16,275 --> 00:49:18,555
+Allah kabul etsin.
+
+385
+00:49:20,015 --> 00:49:21,595
+Mesela bir de şunu yapalım.
+
+386
+00:49:22,015 --> 00:49:26,755
+int s, int y olsun mesela.
+
+387
+00:49:27,595 --> 00:49:28,135
+Bakın ne oldu?
+
+388
+00:49:28,235 --> 00:49:29,455
+Fonksiyon açı yükleme oldu.
+
+389
+00:49:30,132 --> 00:49:52,811
+Yani aynı isimde farklı parametre kadar, yani farklı sayıda parametre veyahut da farklı türde parametrelerle aynı isimde fonksiyon yazmaya fonksiyon aşırı yükleme deniyor. Bu arada haftaya iftardan sonra olacak yani saat 9'da olacak labımız. Teşekkür ederim. Sorunuz var mı? Benim açıklarım bu kadardı çünkü.
+
+390
+00:49:55,315 --> 00:49:57,976
+Sorunuz varsa sorunuzu alayım. Eğer yoksa,
+
+391
+00:50:00,835 --> 00:50:01,655
+İktara yetişelim.
+
+392
+00:50:04,215 --> 00:50:06,576
+Yok hocam. Allah kabul etsin. İyi akşamlar.
+
+393
+00:50:08,655 --> 00:50:15,315
+Ben kaç saat kaça kadar olduğumu hatırlamıyorum da, duyur atılır zaten. 9'da başlayacak zaman.
+
+394
+00:50:17,815 --> 00:50:18,455
+Tamam.
+
+395
+00:50:19,615 --> 00:50:21,056
+Eğer bir sorunuz olursa,
+
+396
+00:50:21,811 --> 00:50:24,451
+Bir sorunuz olursa muhakkak bana mail atın.
+
+397
+00:50:25,152 --> 00:50:32,291
+Bir de, bir de, ne diyecektim ya unuttum. Neyse tamam.
+
+398
+00:50:32,991 --> 00:50:35,571
+Onu da sonra atılayınca söylerim. Allah'a emanet olun.
+
+399
+00:50:35,672 --> 00:50:38,211
+Her şeye ödev verecektim ama bundan puan almayacaksınız.
+
+400
+00:50:39,491 --> 00:50:44,811
+Ben kod paylaşacağım. Yani geçtiğimiz uygulamada, şey, lapla yaptığınız...
+
+401
+00:50:45,844 --> 00:51:00,203
+problemin çözümünü olan bir kodu atacağım. Onunla sizin yaptığınız çözümleri karşılaştırmanızı istiyorum. Sadece böyle bir küçük bir rica. Bundan puan almayacaksınız. Hadi Allah'a emanet olun.

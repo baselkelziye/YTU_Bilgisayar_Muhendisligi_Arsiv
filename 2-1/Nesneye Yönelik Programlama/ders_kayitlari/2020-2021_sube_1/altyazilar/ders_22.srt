@@ -1,0 +1,1915 @@
+1
+00:08:55,635 --> 00:08:56,795
+Arkadaşlar, günaydın.
+
+2
+00:09:00,340 --> 00:09:01,420
+Sesim geliyor mu acaba?
+
+3
+00:09:23,059 --> 00:09:31,319
+Evet, bugün dersle çakışan başka bir sınavınız mı var? Bugün katılmaz. Neden böyle oldu?
+
+4
+00:09:36,307 --> 00:09:40,028
+Gün içinde sınav yok ama yarın iki tane var.
+
+5
+00:09:41,168 --> 00:09:41,607
+Anladım.
+
+6
+00:09:42,427 --> 00:09:43,367
+Okey.
+
+7
+00:09:44,367 --> 00:09:46,707
+Bugünkü dersimizi işleyelim.
+
+8
+00:09:47,927 --> 00:09:51,268
+Katılamayan arkadaşlar sonradan kayıttan izleyebilirler.
+
+9
+00:09:54,128 --> 00:09:56,028
+Dünkü sınava girdiniz.
+
+10
+00:09:56,128 --> 00:09:58,148
+Sınavla ilgili düşüncelerinizi sorayım.
+
+11
+00:09:58,248 --> 00:09:59,207
+Nasıldı? Zor muydu?
+
+12
+00:10:04,307 --> 00:10:07,607
+Mikrofonunuzu açabilirsiniz arkadaşlar. Zaten az kişiyiz.
+
+13
+00:10:09,128 --> 00:10:10,367
+[öğrenci], 50-50.
+
+14
+00:10:10,607 --> 00:10:13,128
+Güzel bir sınavdı hocam. Teşekkür ederiz.
+
+15
+00:10:13,927 --> 00:10:17,508
+Zor değildi. Bilgilerinizi sorguladı.
+
+16
+00:10:17,607 --> 00:10:17,768
+Değil.
+
+17
+00:10:19,048 --> 00:10:20,408
+Tamam arkadaşlar.
+
+18
+00:10:21,008 --> 00:10:22,307
+Şimdi bu ikinci sınav...
+
+19
+00:10:23,700 --> 00:10:48,672
+Sınavı çoktan seçmeli bir sınav şeklinde oldu. Ama final sınavı birinci sınav gibi olacak. Final sınavında sizi klasik sınav soracağız. Yine birinci sınavda olduğu gibi bir UML diagramı ile karşılaşabilirsiniz ya da bir metin verilip öncelikle UML diagramı oluşturup arkasından...
+
+20
+00:10:48,672 --> 00:10:53,491
+sınıfların kodlamasını yapmanız istenebilir.
+
+21
+00:10:54,652 --> 00:10:58,731
+O yüzden biraz daha ağırlıklı yönde çalışın.
+
+22
+00:11:00,012 --> 00:11:08,432
+Final sınavını tabii ki multiprogramming dahil olmak üzere şu ana kadar işlediğimiz tüm konuları içerecek.
+
+23
+00:11:11,052 --> 00:11:13,192
+Dosyaya yazma, dosyadan okuma.
+
+24
+00:11:13,683 --> 00:11:27,384
+Exception handling konusu, inner class'lar, data structure'lar, objeler arası ilişkiler bunların hepsini içeren bir sınav olacak.
+
+25
+00:11:30,003 --> 00:11:37,183
+Yani işlediğimiz bütün konuların konularla ilgili bir final sınavıyla karşılaşacaksınız.
+
+26
+00:11:38,355 --> 00:12:03,836
+Dönem projesi, dönem projesi müddeten yapın. Dönem projesi çünkü önemli derecede etkiliyor kümletif kuanımızı. Dönem projesiyle ilgili de ne zaman değerlendirmenin yapılacağı ile ilgili size duyurular yapılacak. Onun son tarihi zaten açıklanmıştı dönem projesi yayınlanırken.
+
+27
+00:12:05,556 --> 00:12:08,316
+Hocam, dönem projüzisinin ilgili bir soru sorabilir miyim?
+
+28
+00:12:08,776 --> 00:12:09,276
+Tabii ki.
+
+29
+00:12:09,276 --> 00:12:13,576
+Bu Redmi dosyasında ne olması gerekiyor? Ben tam olarak anlayamadım da.
+
+30
+00:12:15,216 --> 00:12:26,735
+Şimdi bu kodu sen gönderdikten sonra senden bağımsız olarak kodu çalıştırabilmek istiyoruz.
+
+31
+00:12:28,340 --> 00:12:42,160
+Bu ne demek? O dosyanın içerisinde sen adım adım sen olmadığın zaman birisi bu kodu çalıştırabilmesi için yapması gerekenleri yazman gerekiyor.
+
+32
+00:12:43,580 --> 00:12:53,340
+Yani bu kodu alın. Bir tane dizin içerisinde açın. Ondan sonra şeyde...
+
+33
+00:12:53,875 --> 00:13:15,015
+Çalıştırdığınız ortamda Java'nın şu sürümü çalıştırdığınız çalıştığından emin olun. Ondan sonra işte şu dizine gelin. Bu dizin üzerine, comment line'de şu dizine gelin. Bu dizine geldikten sonra işte aşağıda yazmış olduğum comment line'daki şeyi çalıştırın. İşte orada da.
+
+34
+00:13:15,375 --> 00:13:21,635
+İşte Java, boşluk, boşluk vs. sizin compile edeceğiniz şey.
+
+35
+00:13:21,635 --> 00:13:32,196
+Yahut da direkt eğer compile edilmiş şeklini de gönderiyorsan, işte Java, boşluk, içinde main programı olan sınıfın ismi.
+
+36
+00:13:33,155 --> 00:13:36,415
+Bunu yaptıktan sonra karşınıza bir tane menü çıkacaktır.
+
+37
+00:13:36,735 --> 00:13:41,556
+İşte bu menüdeki şeyleri takip ederekten programı çalıştırabilirsiniz.
+
+38
+00:13:43,028 --> 00:13:44,528
+Anladım hocam, teşekkürler.
+
+39
+00:13:45,827 --> 00:13:55,567
+Yani biz asistan arkadaşlarımız herhalde sizlerle görüşecek şekilde kodu sizin yazıp yazmadığınızı görmek istiyoruz.
+
+40
+00:13:57,107 --> 00:14:06,367
+Toplantı yapacak ama ondan doğumsuz olarak öncesinde arkadaşların, asistan arkadaşların sizlerin kodlarını çalıştırabilmesi için buna ihtiyacımız var.
+
+41
+00:14:07,988 --> 00:14:09,208
+Teşekkürler hocam.
+
+42
+00:14:10,932 --> 00:14:18,471
+Bugün arkadaşlar GUI Programming'dan konuşacağız. Java üzerinde.
+
+43
+00:14:22,419 --> 00:14:26,079
+Sling package var.
+
+44
+00:14:27,668 --> 00:14:36,907
+Java ST2 ile beraber gelen bu Sling package'ini kullanaraktan biz kullanıcı arayüzlerini geliştirebiliyoruz.
+
+45
+00:14:37,028 --> 00:14:46,187
+Aslında Java dünyasında farklı kullanıcı arayüzü kütüphaneleri var. Bunlardan bir tanesi Sling.
+
+46
+00:14:46,187 --> 00:14:55,668
+Desktop tabanlı kullanıcı arayüzleri yaratıyor. Bunun haricinde Java Server Faces, Java Server Pages, Java...
+
+47
+00:14:55,668 --> 00:15:09,827
+Farklı web tabanlı kullanıcı arayüzleri yaratan kütüphaneler de var. Biz bugün bunlardan bir tanesi SELINK üzerine konuşacağız.
+
+48
+00:15:16,788 --> 00:15:17,927
+Şu zamanı da yardım.
+
+49
+00:15:35,187 --> 00:15:58,648
+Şimdi, Java Swing, Model View Controller tasarım kalıbını implement ediyor. Biz yazılım yazarken farklı tasarım kalıpları kullanabiliyoruz. Bu tasarım kalıpları, kodu biraz yazdığımız kodu,
+
+50
+00:16:01,107 --> 00:16:06,867
+Tekrar kullanabilmemize olanak sağlayan
+
+51
+00:16:07,379 --> 00:16:18,120
+ve bir software tasarımı, yazılım tasarımı yapmamızı olanak sağlayan tasarım kalıpları.
+
+52
+00:16:18,680 --> 00:16:25,259
+Hani esasında bu tasarım kalıplarının en büyük şeyi reusable solution'lar sağlıyorlar.
+
+53
+00:16:26,079 --> 00:16:31,240
+Biz object-oriented programming ile yaparken reusability'yi kullanıyoruz çok fazla.
+
+54
+00:16:31,240 --> 00:16:34,039
+Yani yazmış olduğumuz bir metodu.
+
+55
+00:16:34,707 --> 00:16:40,807
+Aynı sınıf içerisindeki farklı metotlar tarafından kullanıldığımız gibi
+
+56
+00:16:41,279 --> 00:16:45,639
+Farklı sınıflar tarafından da kullandırabiliyoruz.
+
+57
+00:16:46,059 --> 00:16:50,720
+Özellikle de sınavlarda sizden istediğimiz bu reusability'yi kullanmanız.
+
+58
+00:16:50,819 --> 00:17:07,259
+Yani zaten hali hazırda bir sınıf içerisinde bir metot varsa bu metodun ne yaptığını biliyorsanız input parametrelerini, output parametrelerini o metodun içerisinde yapılan şeyi ayrı bir metot içerisinde tekrardan yapmayın istiyoruz.
+
+59
+00:17:07,859 --> 00:17:15,699
+O yüzden diyelim ki bir add metodu implement ediyorsunuz. Add metodu içerisinde işte data structure'a bir obje koyacaksınız.
+
+60
+00:17:16,372 --> 00:17:21,132
+Bu objenin data structure'da olup olmadığını kontrol etmeniz gerekli.
+
+61
+00:17:21,672 --> 00:17:24,832
+Orada bir tane aynı sınıf içerisinde search metodu var.
+
+62
+00:17:25,452 --> 00:17:27,852
+Bu search metodunu kullanmanızı istiyoruz.
+
+63
+00:17:28,052 --> 00:17:34,731
+Gidip de search metodunun içerisinde yaptığınız şeyi add metodunun içerisinde de tekrar kodlamanızı istemiyoruz.
+
+64
+00:17:34,731 --> 00:17:42,352
+Direkt search metodunu çağırıp o metoda input parametreleri pas edip onun döndürüceği output'u kullanmanızı istiyoruz.
+
+65
+00:17:43,604 --> 00:17:55,903
+Tasarım kalıplarında da biz ne yapıyoruz? İyi bir yazılım tasarımı oluşturabilmek için bize bir takım template'ler sunuyorlar.
+
+66
+00:17:56,443 --> 00:18:05,084
+Kodun reusable bir reusability'sini artırmaya çalışıyorlar. Farklı tasarım kalıtları var.
+
+67
+00:18:07,347 --> 00:18:21,508
+İleride göreceksiniz. Singleton, adaptör, fasad, şimdi göreceğiniz model view controller. Bunlar yazılım içerisinde kullandığınız farklı tasarım kalıpları. Her birisinde farklı amaçları var.
+
+68
+00:18:22,367 --> 00:18:28,887
+Şimdi Swing, bu model view controller tasarım kalıbını kullanarak implement edilmiş.
+
+69
+00:18:29,907 --> 00:18:44,147
+Buraya baktığınız zaman burada bir model komponenti var. Bu tasarım kalıbı diyor ki bunu implement ederken bir model komponenti olacak. Bir view komponenti, bir de controller komponenti ve bunlar birbirinden bağımsız olacak.
+
+70
+00:18:51,711 --> 00:19:13,632
+temsil edecek. View komponentin ise bu ham datanın, raw datanın farklı görünüşlerini yönetecek, temsil edecek komponentin olacak. Bir de kontrol ürün olacak. Bu da kullanıcıyla interakt eden kullanıcının komentlerini
+
+71
+00:19:14,771 --> 00:19:22,871
+Handle eden, buna dayalı olarak datayı okuyan ya da modifi eden komponantil olacak.
+
+72
+00:19:28,564 --> 00:19:33,963
+Şimdi adım adım Swing'i kullanarak bir tane kullanıcı arayüzü geliştirelim.
+
+73
+00:19:34,443 --> 00:19:42,784
+Şimdi Swing'le beraber gelen farklı kullanıcı arayüzü sınıfları var.
+
+74
+00:19:42,784 --> 00:19:46,044
+Mesela ben biraz daha ilerleyip şunu göstereyim.
+
+75
+00:19:52,531 --> 00:19:54,551
+Kalıtım hiyerarşisi.
+
+76
+00:19:55,092 --> 00:19:59,891
+Buraya baktığınız zaman en tepede zaten bütün sınıflar için geçerli olan
+
+77
+00:20:00,000 --> 00:20:24,059
+root sınıf, java-lang object sınıfı. Bundan türeyen bir tane, bundan extend olan bir tane component sınıfı var. Ondan da extend olan bir tane container sınıfı var. Bu yukarıdan aşağıya doğru tanımlanmış olan bütün metotlar, bu aşağıdaki bunlardan
+
+78
+00:20:25,779 --> 00:20:30,299
+Extend etmiş olan sınıflar tarafından kullanılıyor.
+
+79
+00:20:30,920 --> 00:20:42,779
+Şimdi bu container daha önceden, Sling'den önce AVT diye bir tane kullanıcı arayüzü...
+
+80
+00:20:44,980 --> 00:20:56,059
+Kütüphanesi vardı. Daha sonra Sivink geldi. Sivink, AVT'nin bazı jenerik sınıflarını ne yapıyor? Extend ediyor.
+
+81
+00:20:56,759 --> 00:21:08,639
+Şimdi bu konteynerın iki tip konteyner kullanacağız. Bunlardan bir tanesi frame, bir tanesi ise panel. Sivink'in altında bu jframe diye geçiyor ve jpanel diye geçiyor.
+
+82
+00:21:09,236 --> 00:21:31,456
+Bu JFrame bizim en altyapıda kullanacağımız konteyner. Konteynerden kastım şu, bir tane çizim tahtası düşünün. Bu çizim tahtası üzerine biz bir takım görüntülemek istediğimiz kullanıcı arayüzü komponentlerini koyacağız.
+
+83
+00:21:32,180 --> 00:21:55,099
+Bu JFrame'in üzerinde de JPanel olacak. JPanel demek ki tek başına olmuyormuş. JFrame'in üzerine JPanel'i koyuyormuşuz. Bir panel koyuyormuşuz. Panelin üzerine kullanıcı arayüzü komponentlerini koyuyormuşuz. Ama her ikisi de container. Yani JFrame panelleri içerisinde tutuyor. Panellerin içerisinde de kullanıcı arayüzü komponentleri var.
+
+84
+00:21:59,028 --> 00:22:14,228
+Evet, şimdi basit bir tane window yaratalım. Bizim kullandığımız Swing Package'i dolayısıyla javax.swing.yields altındaki bütün sınıfları kullanacağımızı söylemek durumundayız.
+
+85
+00:22:16,019 --> 00:22:37,860
+Yine burada JFrame'i extend ettiğimiz için burada bir tane serial numarası bulundurmamızı istiyor. Bunu şeyde de karşılaşmıştık. Serializable interface'i extend ettiğimizde de, implement ettiğimizde de karşılaşmıştık.
+
+86
+00:22:44,019 --> 00:22:56,099
+suppress warning serial diyoruz. Yani bize bunun farkındayız. Serial numarası vermek istemiyoruz. Bize warning verme demiş oluyoruz. Yani bu anotasyonu eklemekle birlikte.
+
+87
+00:22:56,099 --> 00:23:09,079
+Okey. Bunun farklı şekillerini de ders içerisinde görmüştük. Şimdi burada bir tane simple window oluşturuyorum. Bu bir frame olacak.
+
+88
+00:23:09,519 --> 00:23:12,519
+Dolayısıyla da JFrame'i extend ediyorum.
+
+89
+00:23:14,516 --> 00:23:30,236
+Benim global member filtlerim var. Bu member filtlerim benim oluşturacağım frame'i height'ını ve bit'ini belirliyor. Bunlar değişmeyecek değerler olduğu için final olarak tanımlamışım. Değerleri integer, integer tipindeler.
+
+90
+00:23:30,236 --> 00:23:41,316
+Ve static olacaklar. Yani bu simple binloğun eğer birden fazla objesini oluşturacak olursam bütün objeler şu değerleri paylaşacak. Ondan dolayı static olacak.
+
+91
+00:23:42,228 --> 00:23:48,228
+Bir tane constructor yaratıyorum. Default constructor. Bu constructor içerisinde...
+
+92
+00:23:49,875 --> 00:23:54,036
+setSize metodunu çağırıyorum. Şimdi setSize nerede?
+
+93
+00:23:54,536 --> 00:23:58,036
+setSize dikkat edin ben jFrame'i extend ediyorum.
+
+94
+00:23:58,395 --> 00:24:02,195
+Dolayısıyla jFrame üzerinden gelen bir metot bu.
+
+95
+00:24:02,415 --> 00:24:02,956
+setSize.
+
+96
+00:24:03,596 --> 00:24:06,115
+ve setSize'da ne yapıyorum?
+
+97
+00:24:06,496 --> 00:24:10,476
+bu window'un default bitini ve default heightini set ediyorum.
+
+98
+00:24:10,816 --> 00:24:17,536
+Bir de burada main metodum var. Yani bu simple window demek ki kendi başına çalıştırabilir bir şey olarak kullanmışım.
+
+99
+00:24:18,036 --> 00:24:23,056
+Main metodum içerisinde bir tane simple window'un objesini oluşturuyorum.
+
+100
+00:24:24,836 --> 00:24:32,516
+Bunun set title metodunu çağırdım. Bakın dikkat et, set title bu simple window içerisinde yok.
+
+101
+00:24:32,655 --> 00:24:38,255
+Nereden geliyor set title? JFrame'den geliyor. Demek ki hani JFrame'i extend ettiğiniz zaman
+
+102
+00:24:39,955 --> 00:24:49,995
+Bu sınıf içerisinde implement edilmiş, abstract sınıf olduğu için implement edilmiş bir takım metotları ben by default kullanabiliyorum.
+
+103
+00:24:50,135 --> 00:24:56,335
+Set title, set size, set default close operation, set visible bunlar hep JFrame'den geliyor.
+
+104
+00:24:56,335 --> 00:25:01,435
+Set title bu window'un title'ını oluşturuyor.
+
+105
+00:25:07,859 --> 00:25:21,779
+Oluşturduğum frame'in en üstündeki kapama yani X işareti, sağ üst köşedeki X işareti ona bastığım zaman kapanmasını istediğimi söylüyorum bu window'un.
+
+106
+00:25:22,919 --> 00:25:29,460
+Set Visible, bunun true yapmanız gerekiyor. Yani bu frame'in görünür olması gerekiyor.
+
+107
+00:25:29,460 --> 00:25:32,819
+Şimdi bunu şöyle yapalım.
+
+108
+00:25:35,220 --> 00:25:38,260
+konuştuklarımızı hemen anında görelim ki.
+
+109
+00:25:45,236 --> 00:25:53,836
+Evet, buradaydı Simple Window. Az önce konuştuğumuz kod burada. Ben bunu çalıştırayım. Sizler de görün nasıl bir şey yaratacak.
+
+110
+00:25:56,536 --> 00:25:58,356
+Daha da iyisini yapayım.
+
+111
+00:25:59,836 --> 00:26:01,316
+Şunu ödürüyorum.
+
+112
+00:26:05,748 --> 00:26:09,088
+Ekranı paylaşayım.
+
+113
+00:26:11,208 --> 00:26:11,448
+Ok.
+
+114
+00:26:11,927 --> 00:26:13,268
+Simple window oluşturdum.
+
+115
+00:26:13,347 --> 00:26:16,668
+Bakın ekranın son üst köşesinde oluşturdu.
+
+116
+00:26:16,748 --> 00:26:19,807
+Çünkü bunun nerede bulunması gerektiğini söylemedim.
+
+117
+00:26:20,088 --> 00:26:22,907
+Bütün ekranın içerisinde nerede bulunması gerektiğini söylemedim.
+
+118
+00:26:23,468 --> 00:26:24,827
+Sol üst köşede oluşturdu.
+
+119
+00:26:25,327 --> 00:26:26,208
+Title'ını verdi.
+
+120
+00:26:26,867 --> 00:26:29,208
+Şu iki tane şey için.
+
+121
+00:26:31,700 --> 00:26:37,179
+Özellikle herhangi bir şey söylemedim ama X'e bastığım zaman kapanmasını söyledim.
+
+122
+00:26:38,740 --> 00:26:42,960
+Şimdi bunu biraz daha geliştireyim.
+
+123
+00:26:44,340 --> 00:26:52,740
+Bu yaptığım şey bu sefer size window with equal diye bir tane kod yazayım.
+
+124
+00:26:58,163 --> 00:27:11,164
+Frame üzerinde ben Frame'in sayfanın neresinde gözükeceğini ayarlayabilirim. Bir de Frame üzerine eğer göstermek istediğim bir takım...
+
+125
+00:27:13,203 --> 00:27:34,463
+image'ler varsa bunları da ekleyebilirim. Peki bunu nasıl yapacağım? Mesela aynı kod sadece isimle değiştirmişim. Yine jframe extend ediyor. Şimdi bunun constructorına bakın. Bunda da bir tane default constructor var. Şimdi bu Java Sling daha önceden Java AVT diye bir tane
+
+126
+00:27:35,443 --> 00:27:57,963
+kullanıcı arayüzü pekicini extend ediyor dedik ya. Bu AVT içerisinden de gelen bir tane toolkit sınıfım var. Bu toolkit sınıfı içerisinde statik metotlar içeren bir sınıfım. Daha önce içerisinde statik metotlar içeren farklı sınıflar görmüştük. Toolkit sınıfı da bunlardan bir tanesi.
+
+127
+00:27:58,804 --> 00:28:05,804
+Buna get default toolkitini alıyoruz. Bu sınıf içerisinden bir tane objesini alıyoruz toolkitin.
+
+128
+00:28:07,683 --> 00:28:21,384
+Bize vermiş olduğu objenin içerisinden mevcutta kullanmış olduğumuz ekranın size'ını dimension objesi olarak alabiliyoruz.
+
+129
+00:28:22,415 --> 00:28:31,576
+Yani Toolkit sınıfı demek ki bizim kullanmış olduğumuz donanımın yani ekranın boyutlarını bize verebiliyor.
+
+130
+00:28:31,776 --> 00:28:36,395
+Bize verirken ne olarak veriyor? Dimension sınıf objesi olarak veriyor.
+
+131
+00:28:36,496 --> 00:28:42,976
+Şimdi bu Dimension nereden geldi? Bu da yine bu iki pakicin altında olan sınıflardan bir tanesi.
+
+132
+00:28:42,976 --> 00:28:50,415
+Demek ki bu iki sınıf bizim Sivink'te kullanıcı arayüzü geliştirirken kullandığımız yaygın kullanıcı.
+
+133
+00:28:50,415 --> 00:28:51,336
+Kullandığımız iki sınıf.
+
+134
+00:28:52,875 --> 00:28:54,135
+Sonrasında ne yapıyorum?
+
+135
+00:28:54,556 --> 00:28:57,855
+Bu dimension objesinden screen size ismini vermişim.
+
+136
+00:28:58,476 --> 00:29:00,036
+Height'ı ve width'i alabiliyorum.
+
+137
+00:29:00,195 --> 00:29:10,096
+Burada gördüğünüz integer değerleri, screen height ve screen weight şu anda kullandığınız ekranın kullanıcı ekranın boyutlarını veriyor.
+
+138
+00:29:11,296 --> 00:29:19,496
+Şimdi bu sefer set size derken daha önceki örnekte ben ne yapmıştım? Simple window örneğine tekrardan bakalım.
+
+139
+00:29:20,836 --> 00:29:26,855
+Ben direkt bu height'ın ve width'in ne olacağını kendim manuel olarak görmüştüm.
+
+140
+00:29:26,855 --> 00:29:36,715
+Şimdi ne yapıyorum? Direkt benim ekranımın boyutunun width ve height değerlerinin yarısı olacak şekilde belirliyorum.
+
+141
+00:29:39,476 --> 00:29:47,196
+Ondan sonra daha önce kullanmadığım yeni bir tane JFrame'den yukarıdan gelen, üst sınıftan gelen diğer bir metodu kullanıyorum.
+
+142
+00:29:47,196 --> 00:29:48,596
+SetLocation metodu.
+
+143
+00:29:50,276 --> 00:29:59,196
+SetLocation metodu da bana kullanacağım, yaratmakta olduğum bu frame'in...
+
+144
+00:30:00,000 --> 00:30:27,240
+Ekranın hangi location'ında olması gerektiğini söylüyor. Yani bunu bir dikdörtgen olarak düşünün. Dikdörtgenin sol ekranın hangi noktasında konuşulanacağını söylüyor. O yüzden screen size width divided by 4, screen size height divided by 4. Yani benim height'ım ve width değerlerimin
+
+145
+00:30:28,000 --> 00:30:53,200
+4'e bölüp oluşan x ve y koordinatına ortalayacak şekilde ben ne yapıyorum? Benim frame'imi yerleştir diyorum. Diğer bir bu toolkit'i kullanarak yapabileceğim get image diye bir tane metodu var. Bu da benim şurada mesela ikonumda şurada.
+
+146
+00:30:55,284 --> 00:31:11,764
+Benim projemin bulunduğu dizin içerisindeki bir tane ikonu şurada bir tane ikonu almasını istiyorum ve bunu image sınıfının bir objesi olarak bana vermesini istiyorum.
+
+147
+00:31:11,944 --> 00:31:15,924
+Şimdi ne oldu? Dimension'ın yanında bir de image sınıfını görmüş olduk.
+
+148
+00:31:18,036 --> 00:31:27,096
+Bu image objesini aldıktan sonra yine jframe'le gelen diğer bir metot setIconImage metodunu kullanarak bu image'i de bu frame'ime ekleyebiliyorum.
+
+149
+00:31:27,236 --> 00:31:33,195
+Frame'ime setTitle'ı çağırmışım, title'ını vermişim. Arkasından constructor'ımı tamamlamışım.
+
+150
+00:31:33,195 --> 00:31:38,988
+Main metodu içerisinde bu frame'in bir objesini yaratıyorum. Bu frame için...
+
+151
+00:31:39,604 --> 00:31:44,884
+X'e basıldığında kapatılmasını söylüyorum. Set default close operation'in ne olduğunu söylüyorum.
+
+152
+00:31:45,263 --> 00:31:49,743
+Ve de frame'in visible olmasını istiyorum. Şimdi bu konuştuklarımızı bir görelim.
+
+153
+00:31:51,059 --> 00:31:56,279
+Dikkat edin bu sefer window'u tam ortalayacak şekilde oluşturdu.
+
+154
+00:31:56,920 --> 00:32:03,839
+Window'un size'larını, width ve height'ını benim ekranımın yarısı olacak şekilde oluşturdu.
+
+155
+00:32:04,619 --> 00:32:09,900
+Title'ı, istediğim title'ı verdi. Bir tane icon eklettirdim.
+
+156
+00:32:10,559 --> 00:32:16,279
+Yine X'e bastığında kapanmasını istedim. Programımı durdurmasını istedim. Bunu benim için yaptı.
+
+157
+00:32:23,220 --> 00:32:40,220
+Şimdi şu ana kadar ben bu frame üzerine herhangi bir şey çizdirmedim. Yani şunun içerisinde herhangi bir şey yok. Şimdi bunu yapalım. Biz dedik ki size az önce ben...
+
+158
+00:32:40,339 --> 00:32:46,839
+Bu Java Swing Package ile beraber gelen sınıfların kalıtım yererşisini gösterdim.
+
+159
+00:32:46,839 --> 00:32:52,359
+Orada iki tane tip konteyner vardı. Bunlardan bir tanesi panel, bir tanesi de frame'di.
+
+160
+00:32:52,740 --> 00:32:56,579
+Biz şu anda frame'i kullanaraktan basit bir kullanıcı arayüzü yaratmış olduk.
+
+161
+00:32:56,980 --> 00:32:58,899
+Şimdi ben buna paneli eklemek istiyorum.
+
+162
+00:33:03,347 --> 00:33:10,307
+Şimdi, panele eklemeden önce şunu söyleyelim.
+
+163
+00:33:12,307 --> 00:33:23,528
+Kullanıcı arayüzü üzerindeki her işlem hızlı çalışması gereken ve kullanıcı ile etkileşimi fazla olan işlemler.
+
+164
+00:33:24,127 --> 00:33:28,387
+Dolayısıyla benim kullanıcı arayüzünde yapacağım her işlemi
+
+165
+00:33:28,784 --> 00:33:53,703
+Birer thread şeklinde geliştirmem gerekiyor. Zorunlu değilim. Az önce mesela gösterdim. Thread olmadan iki tane kullanıcı arayüzü yarattım. Bir simple window, bir de simple window with icon. Ama şimdi bu kullanıcı arayüzlerini yaratırken bir thread sınıfı olarak inklemel edeceğim.
+
+166
+00:33:54,228 --> 00:34:09,188
+Bunun bana vermiş olduğu avantaj kullanıcı etkileşimleri sırasında hem hızımı arttırıyor hem de benim kullanıcıya daha etkileşimli bir kullanıcı arayüzü geliştirmemi olarak veriyor.
+
+167
+00:34:09,344 --> 00:34:27,123
+Şimdi biz thread'i gördük. Bir thread implement ederken demiştik ki, runnable interface'ini implement eden thread sınıfları birer thread sınıfına dönüştürebiliyorduk.
+
+168
+00:34:27,123 --> 00:34:36,984
+Onun için de ne yapıyorduk? Bir tane thread sınıfı kullanıyorduk. Bu thread sınıfının yeni bir objesini yaratıyorduk.
+
+169
+00:34:37,344 --> 00:34:46,003
+Bu yeni objesini yaratırken de runnable interface'i implement etmiş olan başka bir sınıfın objesini ona pes ediyorduk.
+
+170
+00:34:46,003 --> 00:34:53,664
+Şimdi burada bize yine javadat swing paketi içerisinde sağlanan event queue.
+
+171
+00:34:54,643 --> 00:35:16,723
+diye bir tane sınıfım var. Bu event queue sınıfım, bunun da invoke later diye bir tane metodu var. Bu da yine statik bir metot. Bunun içerisine ben runnable interface'ini implement etmiş, yani threadleştirmek istediğim sınıfları koyabiliyorum. Şimdi burada dikkat edin, ilginç bir şey yapmışım.
+
+172
+00:35:27,411 --> 00:35:46,692
+Dikkat edin, burada ben şunu yapabilirdim. Şu sınıfın bir alt sınıfı olarak ya hatta bu sınıftan ayrı bir sınıf olarak gidip bir tane runnable interface'ini implement eden başka bir sınıf oluşturabilirdim.
+
+173
+00:35:47,188 --> 00:36:00,688
+Ve bu sınıfın objesini de ilk defa burada oluştururdum. Yani invoke later'a runable interface'ini implement eden threadleştirmek istediğim bir tane sınıfın objesini burada verirdim.
+
+174
+00:36:00,947 --> 00:36:17,867
+Ama bu sınıfın objesini sadece tek bir yerde kullanacağım için başka hiçbir yerde kullanmayacağım. Dolayısıyla tekrardan gidip bir isim vererek o sınıfı tanımlayarak yaratmak yerine onun yerine şunu yaptım.
+
+175
+00:36:17,867 --> 00:36:23,707
+Dedim ki new runnable yani bu runnable interfazini implement edecek bir sınıf olacak.
+
+176
+00:36:24,467 --> 00:36:32,547
+curly parantez içerisinde de bu sınıfın içerisine normalde koymayı planladığım ne varsa hepsini burada koyuyorum.
+
+177
+00:36:33,068 --> 00:36:44,507
+Aslında bu yapmış olduğum şey Java'da bir interfesten yola çıkaraktan bir isim vermeden bir sınıfı tanımlamama olarak veriyor.
+
+178
+00:36:46,324 --> 00:36:52,123
+Bu sınıfı bu şekilde tanımladığım zaman bunun objesini oluşturuyorum.
+
+179
+00:36:52,844 --> 00:36:56,104
+Ve bu objeyi sadece burada kullanıyorum. Başka bir yerde kullanmıyorum.
+
+180
+00:36:56,503 --> 00:36:58,804
+Ne yaptım? NewRunnable dedim.
+
+181
+00:36:59,164 --> 00:37:02,564
+Runable interface'ini implement edecek bir tane sınıf olacak dedim.
+
+182
+00:37:02,984 --> 00:37:07,724
+Parantez içerisinde de sınıfın içerisine koyacağın bütün şeyleri koydum.
+
+183
+00:37:07,724 --> 00:37:13,083
+Şimdi Runable interface'i implement eden bir sınıf olduğu için içinde mutlaka run metodu olacak.
+
+184
+00:37:13,460 --> 00:37:21,859
+Run metodu içerisine koyduğum şeyler zaten bir önce simple window bir de simple window with icon sınıflarında gördüğümüz şeyler.
+
+185
+00:37:21,859 --> 00:37:26,764
+Bir tane frame objesi oluşturuyorum. Bu frame objesinin...
+
+186
+00:37:27,251 --> 00:37:31,011
+Diyorum ki hani X'e basıldığında kapatılacak bir de görünür olacak.
+
+187
+00:37:31,011 --> 00:37:44,592
+Yani burada aslında gördüğünüz tek yenilik daha önce görmediğiniz bir interfeisi kullanaraktan bir anonimiz sınıf ismini vermeden yarattığınız bir sınıf yaratmış oldunuz.
+
+188
+00:37:45,072 --> 00:37:51,791
+Hani bunun da tek amacı bu sınıfa sadece bu sınıfın bu objesini bir yerde kullanacak olması.
+
+189
+00:37:52,291 --> 00:37:55,251
+Buradaki bizim sınıfımız bir tane thread sınıfı.
+
+190
+00:37:55,251 --> 00:38:09,751
+Bu thread sınıfının objesini ben burada oluşturmuş oldum. Burada event queue dediğim sınıf thread oluşturmama yardımcı olan bir tane içinde static metodları olan bir sınıf.
+
+191
+00:38:10,092 --> 00:38:17,612
+Onun da invok later static metodunu kullanaraktan ben istediğim thread'i ne yapabiliyorum? Çalıştırabiliyorum.
+
+192
+00:38:18,164 --> 00:38:24,923
+Şimdi burada neyi kullanmışım? Not Hello World Frame'i kullanmışım. Bir oraya gidelim bakalım.
+
+193
+00:38:26,704 --> 00:38:36,704
+Not Hello World Frame, JFrame'i extended ediyor. Bunun örneğini az önce görmüştük Simple Window'da, Simple Window Icon sınıflarında.
+
+194
+00:38:36,704 --> 00:38:42,884
+Bir tane constructor var. Constructor'ın neler var? Set Title, Title vermiş. Set Size.
+
+195
+00:38:43,764 --> 00:38:57,584
+Bunun büyüklüklerini vermiş. Yani bu window'un boyutlarını vermiş. Dikkat edin burada bir tane panel oluşturuyorum. Bu Not World, Hello World panel.
+
+196
+00:38:58,612 --> 00:39:00,532
+sınıfının bir objesini oluşturan.
+
+197
+00:39:00,792 --> 00:39:01,771
+Buna geleceğiz.
+
+198
+00:39:01,891 --> 00:39:05,652
+Bu bizim şurada olan sınıflardan bir tanesi.
+
+199
+00:39:05,811 --> 00:39:07,652
+Not Hello World panel sınıfı.
+
+200
+00:39:08,211 --> 00:39:16,592
+Bu paneli oluşturduktan sonra da yine bu frame'in yine metotları arasında olan add metodu ile bu paneli frame'in üzerine koyuyorum.
+
+201
+00:39:17,032 --> 00:39:17,152
+Okey.
+
+202
+00:39:17,552 --> 00:39:18,311
+Ne yapmış oldun?
+
+203
+00:39:18,412 --> 00:39:20,592
+Frame'in üzerine bir tane panel koymuş oldun.
+
+204
+00:39:20,672 --> 00:39:23,552
+Şimdi ilk defa panel sınıfını göreceksiniz.
+
+205
+00:39:23,711 --> 00:39:24,851
+Panel sınıfında ne varmış?
+
+206
+00:39:25,396 --> 00:39:36,576
+Şimdi panel sınıfı bir tane Not Hello World panel sınıfı tanımlamışım. Bu da C panel abstract sınıfını eksen ediyor.
+
+207
+00:39:36,576 --> 00:39:45,356
+Şimdi bu C paneli eksen ediyorum. C panelin içerisinde bulunan...
+
+208
+00:39:46,356 --> 00:39:59,996
+Paint Component metodunu da ne yapmam lazım? Mutlaka implement etmem lazım. Abstract tanımlı olan bir metod. Bu Paint Component'i burada implement etmiyor.
+
+209
+00:40:00,000 --> 00:40:20,079
+Şimdi bunu implement ederken aslında bu paid component bu panelin üzerine ne yazılacağını söylüyor. Yani bu panelin üzerine bir şey mi çizdireceksin, bir şey mi yazdıracaksın bunu gerçekleştirmemizi sağlayan metot. O yüzden mutlaka implement etmemiz gerekiyor.
+
+210
+00:40:21,980 --> 00:40:25,659
+Paying component metodu grafik stipinde bir tane obje alıyor.
+
+211
+00:40:26,356 --> 00:40:51,396
+Bunu çağırdığımız zaman mutlaka bir üstteki sınıfın paid component metodunu yine çağırıyorum. Bu aynı input parametre ile birlikte. Aynı zamanda bu grafik sınıfının drawstring metodunu çağırarak buraya üzerine bir şey yazmışım.
+
+212
+00:40:54,356 --> 00:41:03,356
+Refix'in farklı metotlarını da kullanıraktan ben bu panel üzerine bir şeyler yazdıracağım, yaptıracağım. Az sonra onların da örneklerini göreceğiz.
+
+213
+00:41:03,896 --> 00:41:07,896
+Şimdi bunun da bir örneğini çalıştıralım, görelim.
+
+214
+00:41:10,483 --> 00:41:25,023
+Dikkat edin, bu simple window uygulaması gibi frame'i oluşturdum. Frame'in içerisinde bir tane panel koydum. Bu panelin içerisine bir tane de string yazdırdım arkadaşlar.
+
+215
+00:41:32,115 --> 00:41:35,155
+Şimdi şu ana kadar neleri gördük?
+
+216
+00:41:35,475 --> 00:41:47,115
+Paneli gördük, frame'i gördük, bir frame'i thread şeklinde nasıl oluşturabileceğimizi gördük.
+
+217
+00:41:47,603 --> 00:42:04,523
+Kullandığımız bazı by default içerisinde statik metotları olan sınıfları gördük. Toolkit'i gördük örneğin. Ondan sonra dimension sınıfını gördük, image sınıfını gördük.
+
+218
+00:42:06,643 --> 00:42:14,983
+Yine paneli oluştururken graphics sınıfının metotlarını görmüş olduk.
+
+219
+00:42:15,155 --> 00:42:19,076
+Şimdi tekrardan şunu durduralım.
+
+220
+00:42:25,811 --> 00:42:26,331
+Cheers.
+
+221
+00:42:47,123 --> 00:42:51,503
+Bunu konuşmuş olduk.
+
+222
+00:42:53,783 --> 00:43:03,684
+Evet, bu frame ile beraber gelen metotlar arasında setRecyple, setExtendedState.
+
+223
+00:43:03,764 --> 00:43:14,184
+SetExtendedState derken, benim frame'im acaba bütün ekranı mı kaplayacak ya da bir ikon haline mi getireceğim ya da
+
+224
+00:43:16,371 --> 00:43:27,072
+x ekseni olarak maksimalizme edeceğim, y ekseni olarak da maksimalizme edeceğim. Bunların hepsini set, extend, and state metodu ile gerçekleştirebiliyorum.
+
+225
+00:43:27,072 --> 00:43:36,011
+Yani frame sınıfının bana sağlamış olduğu birçok metot var.
+
+226
+00:43:40,947 --> 00:43:53,507
+Bunlar da yine frame sınıfıyla beraber gelen kullanabileceğim diğer metotlar. Bunları kullandık. Set location'ı kullandık.
+
+227
+00:43:55,188 --> 00:44:01,648
+Ondan sonra bunun dışında repaint metodu var. Bunu az sonra göreceksiniz.
+
+228
+00:44:02,996 --> 00:44:19,695
+Ondan sonra bir tane panel eklemeyi add metoduyla gördük. Bunun dışında setContentPain diye başka bir metot daha var. Bunların hepsi üst sınıflardan gelen metotlar. Yani bir JFrame'i extend ettiğiniz zaman üst sınıflardan gelen metotlar.
+
+229
+00:44:21,775 --> 00:44:29,615
+Toolkit sınıfını gördük, dimension sınıfını gördük ve bu iki sınıfın sağladığı metotları gördük.
+
+230
+00:44:31,347 --> 00:44:38,867
+set size window icon sınıfını gördük. Örneğini gördük.
+
+231
+00:44:38,867 --> 00:44:41,927
+Bir
+
+232
+00:44:43,699 --> 00:44:53,000
+Kullanıcı arayüzü üzerinde ki kullanırken bir kullanıcı arayüzü üzerinde bir thread nasıl oluşturur gördük.
+
+233
+00:44:54,639 --> 00:45:08,559
+New Runnable Interface'ini, Runnable Interface'inin bir objesini oluşturup curly parantez içinde sınıfı tanımladığımız zaman bir isim vermeden bir sınıf oluşturabileceğimizi gördük.
+
+234
+00:45:11,699 --> 00:45:16,920
+Q sınıfının invoke later metoduna pes ettiğimizi konuştuk.
+
+235
+00:45:21,172 --> 00:45:26,672
+Daha sonra da bir frame içerisine bir paneli nasıl koyduğumuzu gördük.
+
+236
+00:45:27,251 --> 00:45:30,592
+Bir paneli nasıl objesini oluşturduğumuzu.
+
+237
+00:45:30,692 --> 00:45:34,371
+Objesini oluştururken J-panel'den gelen abstract bir metodumuz var.
+
+238
+00:45:34,472 --> 00:45:37,532
+Bunu mutlaka implement etmek zorunda olduğumuzu söyledik.
+
+239
+00:45:37,532 --> 00:45:45,731
+Buna pes ettiğimiz sınıflardan grafik sınıfının metodlarını konuştuk.
+
+240
+00:45:49,780 --> 00:45:56,780
+Daha sonra da içerisinde panel olan bir tane frame objesi yarattık.
+
+241
+00:45:56,920 --> 00:46:02,300
+Öncelikle bir tane frame objesini yaratıyoruz.
+
+242
+00:46:02,963 --> 00:46:24,364
+Bu frame objesine baktığımız zaman frame objesi içerisinde, constructor'ında bir tane panel objesi yaratıyoruz. Bu panel objesi de şu sınıftan yaratılıyor. Bu sınıfta bir J paneli extend ediyor. Bunun da paint component metodu içerisinde
+
+243
+00:46:25,715 --> 00:46:31,715
+panelin içerisine yazdırmak istediğimiz bir şey varsa bunu yazdırabileceğimizi gördük.
+
+244
+00:46:36,307 --> 00:46:52,628
+Şimdi arkadaşlar, şu ana kadar gördüğümüz şeylerde, yani ne yaptık? Bir tane window oluşturduk, içerisine bir frame oluşturduk, bunun içerisine bir tane panel koyduk, panelin içerisine bir şeyler yazdırdık.
+
+245
+00:46:52,827 --> 00:47:04,307
+Ama hiçbir zaman bir kullanıcı ile bir etkileşim söz konusu olmadı. Yani ne bir keyword'den bir kullanıcıya input girdirdim, ne...
+
+246
+00:47:04,307 --> 00:47:24,807
+mouse üzerinden bir input girdirdim. Kullanıcıyla herhangi bir etkileşim olmadı. Sadece kendi kodladığım şeyi kullanıcıya gösterdim. Şimdi bir de kullanıcıdan etkileşimi olacak şekilde yapmış olduğum kullanıcı arayüzünü geliştireyim. Bunun için benim event handling yapmam gerekiyor.
+
+247
+00:47:25,940 --> 00:47:52,400
+Şimdi biz ne zaman ki bir bilgisayarın bize sağlamış olduğu keyboard yahut da touchscreen yahut da mouse gibi external kaynakları kullanaraktan bir şeyler girdiğimiz zaman işletim sistemi, o makine üzerindeki işletim sistemi bu kaynaklardan gelen eventleri yakalıyor.
+
+248
+00:47:52,784 --> 00:48:04,183
+Ben de bu işletim sistemi üzerinde yazdığım programları bu işletim sisteminin bu event handling ile ilgili olan
+
+249
+00:48:05,619 --> 00:48:12,760
+Sistem kollarını çağırdığım vakit bu durumda bu eventleri benim programımda yakalayabiliyor.
+
+250
+00:48:13,179 --> 00:48:22,159
+Şimdi bu event handing sistem kollarını gerçekleştirmek için ise Java'nın sağlamış olduğu bir takım kütüphaneler var.
+
+251
+00:48:22,159 --> 00:48:27,139
+Bu event handing kütüphaneleri. Bunları kullanaraktan ben işletim sisteminin
+
+252
+00:48:27,603 --> 00:48:31,043
+yakalamış olduğu bu eventleri ben de yakalayabiliyorum.
+
+253
+00:48:31,043 --> 00:48:39,563
+Şimdi bu event handling sınıflarını öğreneceğiz.
+
+254
+00:48:40,123 --> 00:48:43,463
+Öncelikle bunlar bize nereden geliyor?
+
+255
+00:48:43,783 --> 00:48:46,803
+Yine Java AVT yani Java Swing'in
+
+256
+00:48:47,251 --> 00:49:03,231
+Kalıtım hiyerarşisinde extended diye üst sınıflardan bir tanesi de bulunan Java event paketi içerisinde bulunan bütün sınıfları ben ne yapabiliyorum? Kullanabiliyorum.
+
+257
+00:49:04,755 --> 00:49:13,215
+Şimdi bundan sonra şunu göreceğiz. Bu şu ana kadar öğrenmiş olduğumuz frame'in içerisine panel koyduk.
+
+258
+00:49:13,275 --> 00:49:21,715
+Panel'in içerisine artık bir takım komponentler koyacağız. Mesela button koyacağız. Bir tane buton koyacağız.
+
+259
+00:49:21,715 --> 00:49:32,595
+Ya da bir text box koyacağız. Ya da frame'in kendisi de bir event source olabilir. Panel'in kendisi de olabilir.
+
+260
+00:49:32,755 --> 00:49:52,555
+Kullandığımız kullanıcı arayüzü komponentlerine biz listener'lar ekleyeceğiz. Bu event listener'lar ekleyeceğiz. Bu eventlerin de farklı tipte olanlarını göreceğiz. Yani şurada event name yazan kısma farklı tipteki eventlerin isimleri gelecek.
+
+261
+00:49:53,055 --> 00:50:00,000
+Sürekli olarak göreceğiniz şeyler burada bir tane komponent olacak. Bu komponente bir tane listener ekleyeceğiz.
+
+262
+00:50:00,000 --> 00:50:06,880
+Bu listener'da hangi eventi dinleyeceksen burada o eventin ismi olacak.
+
+263
+00:50:06,880 --> 00:50:12,880
+Ve bu event listener'lar da birer tane...
+
+264
+00:50:13,331 --> 00:50:34,871
+Bu dinlemekte oldukları listener objesini input olarak alacaklar. Şimdi bunun örneklerini görelim. Demek ki kullanıcı arayüzünde event kaynaklarımız olacak. Bu kaynaklar bir frame olabilir, bir buton olabilir, bir text box olabilir.
+
+265
+00:50:35,376 --> 00:50:43,376
+Bunların hepsi kullanıcı arayüzü komponentleri. Bu komponentleri ben sıfır yahut da çok sayıda...
+
+266
+00:50:44,596 --> 00:51:10,276
+Event Listener'ı ekleyebilirim. Bu Event Listener'lar o komponent üzerinde kullanıcı etkileşimi sonucu oluşmuş olan bütün eventleri dinleyecekler. Ne zamanki bir event oluştu? Bu durumda Event Listener o event gerçekleştiği zaman yapılması gereken işi gerçekleştirecek. Onun için de Action Performed diye bir tane metodu Event Listener implement ediyor.
+
+267
+00:51:12,596 --> 00:51:16,416
+İmplement ettiği için action perform metodunu implement etmek zorunda.
+
+268
+00:51:17,416 --> 00:51:26,896
+Bunun içerisinde ben böylesi bir kullanıcı aksiyonu gerçekleştiği zaman ne yapılmasını istiyorsam bu eventli sınıra yaptırtıyorum.
+
+269
+00:51:30,547 --> 00:51:38,447
+Şimdi benim şu anda öğreneceğim kullanıcı arayüzleri içerisinde farklı tipte eventler olacak olabilir.
+
+270
+00:51:38,447 --> 00:51:58,547
+Bunlar mesela işte bir key eventi yani keyboarddaki bir tane key'e bastığım zaman oluşan event ya da bir window eventi işte window'un üzerindeki işte kare, x yahut da işte dash işaretlerine bastığım zaman minimize edebilirim.
+
+271
+00:51:58,547 --> 00:52:01,447
+Maximize edebilirim, restore edebilirim, kapatabilirim.
+
+272
+00:52:01,788 --> 00:52:05,427
+Farklı şeyler gerçekleştirebilirim. Bunların hepsi birer window event.
+
+273
+00:52:07,107 --> 00:52:10,047
+Mouse event gerçekleşebilir.
+
+274
+00:52:10,587 --> 00:52:16,187
+Yahut da herhangi bir butona bastığım zaman bir action eventi gerçekleşebilir.
+
+275
+00:52:16,307 --> 00:52:18,847
+Bunlar gerçekleşebilecek event tipleri.
+
+276
+00:52:19,827 --> 00:52:28,347
+Bir de bu kullanıcı arayüzü komponentlerine bağlamış olduğum Action Listener'ler var.
+
+277
+00:52:28,567 --> 00:52:37,648
+Yani mesela bu Action Listener'ı bir button kullanıcı komponentine, arayüzü komponentine bağlayabilirim.
+
+278
+00:52:37,728 --> 00:52:40,768
+Yani oradaki gerçekleşecek bütün Action'ları dinleyecek.
+
+279
+00:52:41,248 --> 00:52:47,608
+Ya da bu Window Listener, Window Focus Listener, Window State Listener'ı bir tane frame'e bağlayabilirim.
+
+280
+00:52:47,827 --> 00:53:00,307
+Yani o frame üzerinde oluşabilecek bütün eventleri dinleyecek. Bunlar da benim listenerlarım. Şimdi bunları kullanaraktan birkaç tane kullanıcı arayüzü oluşturalım.
+
+281
+00:53:02,356 --> 00:53:19,556
+Burada mesela event source. Az önce dediğim gibi buradaki örnekte swing altında bulunan C button yani button sınıfı benim event source'ummuş. Bunu dinleyecek olan bu button'a bağlamış olduğum listener ise action listener'ımış.
+
+282
+00:53:19,556 --> 00:53:30,356
+Bu action listener da action event tipindeki eventleri dinliyormuş. Ne zamanki action listener bu buton üzerine...
+
+283
+00:53:30,356 --> 00:53:45,776
+bir tane event gerçekleştiğini gördüğü zaman action perform metodu çalışıyor ve bu action perform metodu da gerçekleşmiş olan action eventi input olarak alıyor. Şimdi örnekleri görünce daha iyi anlayacağız.
+
+284
+00:53:48,656 --> 00:53:53,236
+Aslında burada durdurayım, direkt kod üzerinde göstereyim örnekleri.
+
+285
+00:53:59,123 --> 00:53:59,843
+Sandaide.
+
+286
+00:54:03,476 --> 00:54:06,775
+Evet, şu buton örneğinden başlayalım.
+
+287
+00:54:10,900 --> 00:54:28,700
+Bu buton test Java altında görüyorsunuz Java AVT'yi, Java AVT altındaki event pakicini, çünkü ne yapıyorum? Event handling yapacağım burada. Bir de Java Swing pakicilerini ve altındaki bütün sınıfları import etmişim.
+
+288
+00:54:29,240 --> 00:54:38,900
+Button test'e bakıyorum. Button test içerisinde bir main metodum var. Main metodu içerisinde daha önce konuştuğumuz, yaratmak istediğim kullanıcı arayı üzerine thread olarak yaratmak istedim.
+
+289
+00:54:38,900 --> 00:54:43,540
+dediğim için event queue sınıfını kullanıyorum ve bunun da invoke later metodunu kullanıyorum.
+
+290
+00:54:46,060 --> 00:54:48,680
+Arkadaşlar, bir saniye mizi rica ediyorum.
+
+291
+00:55:19,251 --> 00:55:20,692
+Okey, sesim geliyor mu arkadaşlar?
+
+292
+00:55:25,235 --> 00:55:25,995
+Evet hocam.
+
+293
+00:55:26,355 --> 00:55:26,575
+Tamam.
+
+294
+00:55:27,895 --> 00:55:29,315
+Şimdi...
+
+295
+00:55:29,748 --> 00:55:56,548
+Kaldığımız yerden devam edelim. Bir invoke later metodumun içerisinde de bir tane thread yaratmışım. Thread'i anonomist bir şekilde yaratmışım isim vermeden. Bu önemli. Bununla sınavda da karşılaşabilirsiniz. Bir isim vermeden bir tane interfejsi kullanaraktan bir obje nasıl yaratırız? Güzel bir örneği var burada.
+
+296
+00:55:57,748 --> 00:56:25,688
+Ne yapıyorum? New interface'imi ismini veriyorum. New'dan sonra. Curly parantez içerisinde de o sınıf içerisinde normalde tanımlamam gereken her şeyi belirtiyorum. Burada da bir runable interface'ini implement edecek bir tane sınıf olacağı için ilk naka içinde run metodu var. Run metodu içerisinde de ne yapmışım? Bir tane frame sınıfının objesini oluşturmuş.
+
+297
+00:56:25,748 --> 00:56:40,088
+Bunu az sonra göreceğiz. Bottom frame vermişim ismine. Bu frame objesini oluşturduktan sonra setDefaultCloseOperation bir de setVisible metotlarını çağırmışım. Bunun örneğini daha önce gördünüz.
+
+298
+00:56:41,008 --> 00:56:48,088
+Şimdi frame'e gelelim. Bu frame'i oluşturdum. Bottom frame dedim ismine. JFrame'i extend ediyor.
+
+299
+00:56:49,652 --> 00:57:01,652
+Default parametrelerine bakalım. Bunun içerisine bir tane panel koyacağım. O yüzden de global bir değişken olarak bu paneli tanımlamışım.
+
+300
+00:57:02,772 --> 00:57:11,032
+C paneli olarak. Bu frame'in width ve height değerlerini belirliyorum.
+
+301
+00:57:12,563 --> 00:57:23,884
+Arkasından bir tane constructorım var. Bu frame'in constructorı. Bunun içerisinde neler yapmışım? Set title, set size. Title'ını vermişim. Size'ını vermişim.
+
+302
+00:57:24,755 --> 00:57:43,016
+Ondan sonra ilk defa burada görüyorsunuz artık panelin içerisine neler koymaya başlayacağım komponentler. Burada panelin içerisine buton komponentleri koymaya karar vermişim. Yine Java Swing ile beraber gelen C button sınıfını kullanıyorum.
+
+303
+00:57:44,307 --> 00:58:09,307
+Üç tane buton yaratmışım. Yellow buton, blue buton, red buton. Bunların üç tane objesini yaratmışım. Daha sonra global olarak tanımlamış olduğum bu panelin bir tane objesini oluşturmuşum. Sonra bu panele bu butonları teker teker add metoduyla ekliyorum. Dikkat edin. Frame'i...
+
+304
+00:58:09,840 --> 00:58:13,780
+Kullanıcı arayüzü komponentlerini ekleyemiyorum. Sadece paneli ekliyorum.
+
+305
+00:58:14,119 --> 00:58:17,360
+Panele ise bu kullanıcı arayüzü komponentlerini ekleyebiliyorum.
+
+306
+00:58:17,840 --> 00:58:20,179
+Öncelikle demek ki paneli oluşturacağım.
+
+307
+00:58:21,219 --> 00:58:25,519
+İçerisine koymak istediğim kullanıcı arayüzü komponentlerini koyacağım.
+
+308
+00:58:25,519 --> 00:58:37,719
+Ondan sonra da bakın bu paneli yani oluşturmuş olduğum, objesini oluşturmuş olduğum ve içerisine buton objelerini koymuş olduğum paneli getirmişim, frame'i eklemişim.
+
+309
+00:58:37,840 --> 00:58:50,000
+Add metodu kime ait? Framing metodu. Çünkü Jframe'den gelen bir metot. Bu button paneli ekleyerekten artık panel objesini de bu frame'e eklemiş oldum.
+
+310
+00:58:50,000 --> 00:58:57,099
+Şimdi ben burada bu hani demiştim ya
+
+311
+00:58:58,708 --> 00:59:03,968
+Bir kullanıcı arayüzü komponentine Action Listener'ler ekleyeceğim demiştim.
+
+312
+00:59:04,428 --> 00:59:13,708
+Şimdi burada benim kullanmak istediğim, dinlemek istediğim eventleri yaratacak olan kim? Bu butonlar.
+
+313
+00:59:14,308 --> 00:59:17,988
+Bu butonlara demek ki ben ne yapacağım? Listener ekleyeceğim.
+
+314
+00:59:17,988 --> 00:59:25,668
+Peki, ekleyeceğim Listener nasıl bir Listener olsun? Action Listener tipinde bir Listener olsun.
+
+315
+00:59:26,708 --> 00:59:37,708
+Bu Action Listener tipindeki Listener'ı eklemek için de öncelikle aşağıda bir tane ayrı bir inner sınıf oluşturmuşum.
+
+316
+00:59:37,708 --> 00:59:39,708
+Bu sınıfta...
+
+317
+00:59:40,244 --> 01:00:00,000
+Action Listener'ı implement ediyor. Buna Color Action demişim. Bu Color Action sınıfının objesini bakın burada yaratıyorum. Üç tane Color Action sınıfının objesini yaratmışım. Her birisi de ayrı bir Action Listener. Tamam mı? Bu ayrı bir Action Listener'ların her birisi birer tane buton.
+
+318
+01:00:00,000 --> 01:00:10,980
+Python objesini ne olacak dinleyecek. O yüzden yellow action, blue action, red action diye 3 tane action listener'ı implement eden
+
+319
+01:00:12,436 --> 01:00:33,396
+Ne yaptım? Action listener oluşturdum. Bu action listener'ın da oluştururken ne zaman ki bu action listener'lar bir tane event yakaladı, bu event yakalamış oldukları eventin nasıl davranacağını söylemek için buna bir tane parametre geçiriyorum.
+
+320
+01:00:33,396 --> 01:00:40,335
+Bu parametreyi de ben zaten color action'ı kendim yarattığım için kendim tanımlamışım.
+
+321
+01:00:40,436 --> 01:00:40,695
+Scholar,
+
+322
+01:00:43,824 --> 01:00:55,963
+Ekranın rengini değiştirecek bir action listener olsun istemişim. O yüzden de constructorına color sınıfındaki tipindeki bir objeyi pes etmek istemişim.
+
+323
+01:00:56,684 --> 01:01:07,003
+Şimdi bu action listener'ları oluşturduktan sonra artık bu butonlara, buton objelerini dinletmek için ekleyelim. Ne yaptım?
+
+324
+01:01:08,820 --> 01:01:34,200
+Bu benim dinlemek istediğim event kaynağıydı. AddActionListener'ı ekledim. Şuradaki hatırlayın az önce göstermiştim. AddListener bu arada action yazan kısımda eventin ismi yazıyordu. AddActionListener dolayısıyla dinlemek kullanacağı metot.
+
+325
+01:01:36,820 --> 01:01:52,800
+AdActionListener objesini burada bu AdActionListener'ın yakalamasını istiyorsam bunu pes etmişim. YellowButton, BlueButton, RedButton için bu AdActionListener metotlarını ne yaptım? Ekledim.
+
+326
+01:01:53,199 --> 01:02:11,259
+çağırdım. Bunlarla da ilgili Action Listener objelerini pas ettim. Şimdi bu Action Listener interfazini implement eden sınıfa bakalım. Bu sınıfın bir tane constructorı var. Bu constructora pas etmek istediğim
+
+327
+01:02:13,204 --> 01:02:27,464
+Hangi parametre ise buradaki parametrede renk değişikliği yapmak istediğim için color sınıfını bir tane argümen olarak belirtmişim.
+
+328
+01:02:28,371 --> 01:02:46,471
+Action Performed mutlaka olmazsa olmaz benim metodumdu. Çünkü Action Listener'da bu Action Listener üzerinden implement etme zorunluluğum olan metottu. Action Performed.
+
+329
+01:02:46,471 --> 01:02:56,311
+Burada da ne zamanki bir Action Event gerçekleştiği zaman şuradaki işlemi gerçekleştiriyorum. Bu da panelin background'unu
+
+330
+01:02:56,371 --> 01:03:07,631
+Benim pas etmiş olduğum renkle değiştir demek. Peki, bu button panel nereden geldi? Dikkat edin, bu bir inner class.
+
+331
+01:03:08,275 --> 01:03:32,775
+Neyin inner class'ı? Bu frame'in inner class'ı. Bu frame'in inner içinde de button panel global olarak tanımlandığı için bu color action inner sınıfı içerisinde gerçekleştireceğim bu method call ne yapacaktır? Global olan panelin bu set background metodunu çağıracaktır.
+
+332
+01:03:36,275 --> 01:03:42,635
+Bir görelim nasıl çalıştığını. Ne yaptın? Öncelikle frame'i oluşturdum. Okey.
+
+333
+01:03:43,284 --> 01:04:10,744
+Şurada. Frame'i oluşturduk. Frame'in içerisinde ne vardı? Şunu tekrardan getirelim. Frame'in içerisinde ne vardı? Bir tane panel. Bu paneli burada eklemiştim. Bu panelin içerisinde neler vardı? Üç tane buton vardı. Bir, iki, üç tane butonum vardı. Bu butonlara ben ne yapmıştım? Birer tane event listener koymuştum. Add action listener için yellow butona.
+
+334
+01:04:11,284 --> 01:04:15,184
+Blue butona, bir de Red butona birer Action Listener eklemiştim.
+
+335
+01:04:15,184 --> 01:04:18,184
+Bu Action Listener'lar...
+
+336
+01:04:19,284 --> 01:04:36,344
+Neyi dinliyorlardı? Bu butonları dinliyorlardı. Peki bu butonlar üzerinde bir tane action gerçekleştiği zaman ne gerçekleşecekti? Bu action listenerlar action perform metotlarını çağıracaktı.
+
+337
+01:04:36,344 --> 01:04:47,284
+Her bir action listener ayrı birer obje. Şunun üzerinde bir action listener objesi var. Şunun üzerinde bir action listener. Bunun üzerinde bir action listener objesi var. Bunlar color...
+
+338
+01:04:47,284 --> 01:05:01,624
+Ne zamanki burada buraya bastığım zaman bunlar gidecek panelin background'unu ilgili renkli değiştirecek. Yani yellow ile değiştirebilir, blue ile red ile değiştirebilir. Bakalım.
+
+339
+01:05:05,427 --> 01:05:22,887
+Yani benim bu butonlar üzerinde yaptığım eventi, action eventini yakalıyor işletim sistemi. Ben de bu AVT event pakici altındaki kütüphanenin bana sağlamış olduğu, action listener kütüphanesini sağlamış olduğu yetenekli.
+
+340
+01:05:22,887 --> 01:05:24,247
+Bir saniye.
+
+341
+01:05:40,788 --> 01:06:00,427
+Bu yetenekle ne yapıyorum? Bu işletim sisteminin yakalamış olduğu eventi ben de yakalıyorum ve yakaladığım zaman Action Listener sınıfıyla yakalıyorum ve Action Performed metoduyla da bu event yakalandığı zaman yapılması gereken neyse onu yaptırtıyorum arkadaşlar.
+
+342
+01:06:06,643 --> 01:06:14,723
+Tamam. İsterseniz bir 10 dakika ara verelim. Ondan sonra bir iki tane daha örnek göstereceğim bu Eventilink'le ilgili.
+
+343
+01:06:21,460 --> 01:06:22,919
+10 dakika sonra beraberiz.
+
+344
+01:15:47,155 --> 01:15:49,755
+Evet arkadaşlar, sesim geliyor ama bir teyit eder misiniz?
+
+345
+01:15:50,895 --> 01:15:51,536
+Evet hocam.
+
+346
+01:15:52,216 --> 01:15:52,435
+Tamam.
+
+347
+01:15:53,395 --> 01:15:59,335
+Arkadaşlar, şimdi az önce bu kullanıcı arayüzünde bir freymin üzerinde
+
+348
+01:15:59,731 --> 01:16:06,332
+panel koyduk, panelin üzerine butonlar koyduk ve butonların üzerindeki eventleri izledik.
+
+349
+01:16:06,332 --> 01:16:18,612
+Her bir butona bir tane Action Listener objesi ekledik ve bu Action Listener objeleri içinde Action Listener sınıfı tanımlayıp bunu implement ettik.
+
+350
+01:16:19,072 --> 01:16:24,952
+Şimdi bunun aynısını buton komponenti için değil de frame komponenti için yapalım.
+
+351
+01:16:27,731 --> 01:16:48,452
+Dinlemeye başlayalım. Bunun için de ne yapmışım? Ayrı bir sınıf oluşturuyorum. Window Event Test diye bir sınıf. İçerisinde main metodum var. Yine main metodu içerisinde bir tane thread oluşturarak bir tane frame oluşturuyorum. Event Queue sınıfını kullanarak Invoke Later metodunu çağırıyorum.
+
+352
+01:16:49,876 --> 01:16:59,556
+Bu thread'in run metodu içerisinde bir tane frame'in objesini oluşturuyorum. Bu frame'in objesini de visible yapıyorum.
+
+353
+01:17:21,300 --> 01:17:35,520
+Şimdi bu frame'e bakalım. Frame'e verdiğim isim Capture Window Events diye bir isim vermişim. Capture Windows Event Frame demişim. JFrame'i extend ediyor.
+
+354
+01:17:36,307 --> 01:17:43,908
+Burada dikkat edin Serial Version UID vermişim. Dolayısıyla suppress warning üzerine eklememişim. Okey.
+
+355
+01:17:43,908 --> 01:17:54,307
+Width ve height değerlerini tanımlamışım bu frame için. Bir tane constructor'ım var. Frame'in title'ını burada set ediyorum. Size'ını burada set ediyorum.
+
+356
+01:17:54,307 --> 01:18:00,076
+Dikkat edin burada bu listener'ı...
+
+357
+01:18:01,268 --> 01:18:23,208
+Frame'i burada ekliyorum. Hani diğer örnekte bunu nerede gerçekleştirmiştim? Buton objesini tanımladıktan sonra buna ben AddListener metodunu kullanarak, AddActionListener metodunu kullanarak ActionListener objesini eklemiştim.
+
+358
+01:18:29,268 --> 01:18:39,167
+benim inherit ettiğim add window listener metodunu kullanaraktan bu action listener metodumu ekleyeceğim.
+
+359
+01:18:39,268 --> 01:18:44,408
+Şimdi action listener metodum için de ayrı bir tane sınıf tanımlamışım. Az sonra ona bakacağız.
+
+360
+01:18:45,087 --> 01:18:53,247
+My window listener diye bir tane sınıf tanımlamışım. Onun objesini ekliyorum. Bir tane daha listener eklemişim.
+
+361
+01:18:53,247 --> 01:18:57,247
+Add window state listener. Bunun içinde yine...
+
+362
+01:18:57,268 --> 01:19:24,448
+MyWindowsStateListener objesini ne yapıyorum? Ekliyorum. İki tane listener objesini ekleyeceğim. Az önceki slidelarda bunu göstermiştik. Bir tane event kaynağına birden fazla event listener ekleyebilirim. Buradaki event kaynağım nedir? Frame. Frame'in üzerine bunları ekledim. Farklı listener'lar ekledim.
+
+363
+01:19:25,268 --> 01:19:31,388
+Event kaynağım yani frame üzerinde gerçekleşebilen event tipi ise ne event tipi? Window event tipi olacak.
+
+364
+01:19:35,155 --> 01:19:43,996
+Demek ki frame'e iki tane listener eklemiş olmuş. Şimdi bu listener'lara bir bakalım. Öncelikle mywindow listener'a bakalım.
+
+365
+01:19:43,996 --> 01:19:56,115
+Şimdi mywindow listener, window listener sınıfını, interface'ini implement ediyormuş.
+
+366
+01:20:00,000 --> 01:20:26,460
+Window Listener da var. Action Listener bir buton üzerindeki klikleri takip ediyor. Bu Window Listener ise bir window üzerindeki, bir frame üzerindeki gerçekleşebilecek eventleri takip ediyor. Ben ne yapıyorum? Bunu implement eden bir tane sınıf tanımlamışım. Şimdi bu interface'in içerisinde tanımlı olan bütün metotları implement etmek zorundayım.
+
+367
+01:20:27,220 --> 01:20:34,399
+Neden? Çünkü bu interfejse implement etmiş olmakla beraber interfejse tanımlı olan bütün metotları implement edeceğim.
+
+368
+01:20:34,840 --> 01:20:44,579
+Burada 7 tane farklı metot var. Bunların hepsi için birer tane benim metodum olması gerekiyor.
+
+369
+01:20:45,100 --> 01:20:51,220
+Bunlardan belki sadece bir ya da iki tanesini kullanacağım ama diğerlerinde mecburen bu...
+
+370
+01:20:51,988 --> 01:20:59,908
+listener objesini, listener interface'ini implement ettiğim için benim sınıfım içerisinde bulunmak zorundalar.
+
+371
+01:21:02,644 --> 01:21:29,744
+Diğer benim eklemiş olduğum event listener ise window state event listener'ı. Bunu implement eden bir tane regular sınıf tanımlamışım. Bunun içerisinde de window state listener içerisinde olan tanımlanmış olan window state change metodunu mecburen implement ediyorum. Bu interfejden geldiği için implement etmek zorundayım.
+
+372
+01:21:30,644 --> 01:21:41,684
+Burada yakalamış olduğu window eventler, ne zamanki böyle bir window eventi yakaladığım zaman, state change durum olduğu zaman bununla ilgili bir şeyleri ekrana yazdırıyorum.
+
+373
+01:21:44,184 --> 01:21:44,984
+Okey.
+
+374
+01:21:47,484 --> 01:21:48,204
+Şimdi
+
+375
+01:21:49,811 --> 01:22:00,192
+Bunu örneğini görelim. Ondan sonra bunu biraz daha kolaylaştıracak bir tane daha sınıf sunuyor Java Swing. Onu da konuşalım.
+
+376
+01:22:06,868 --> 01:22:11,948
+Ok, my window event test.
+
+377
+01:22:12,388 --> 01:22:13,308
+Window event test.
+
+378
+01:22:13,888 --> 01:22:15,888
+Burada ben frame'imi oluşturuyorum.
+
+379
+01:22:16,068 --> 01:22:19,788
+Bunu daha önce konuşmuştuk şuradaki sınıf içerisinde.
+
+380
+01:22:20,708 --> 01:22:24,620
+Capture Events Frame içerisinde ben...
+
+381
+01:22:25,363 --> 01:22:44,363
+Framemin konstruktörünü oluşturuyorum. Bu frame'e iki tane listener ekledim. Bunlardan bir tanesi MyWindowListener'de. Bu Window EventListener'ını implement eden regular sınıfımda. Bir de WindowStateListener. Bu da WindowState...
+
+382
+01:22:45,427 --> 01:23:03,608
+eventlerini dinlediğim event listener'dı. Bunu da implement eden bir tane regular sınıfım var. Bu regular sınıfımda da bu interfaceden gelen metot, Windows State Change metodunu ne yapmışım? Implement etmişim. Şimdi bunu bir çalıştıralım.
+
+383
+01:23:05,908 --> 01:23:30,308
+Şimdi şuradan şeye bakabilirsiniz, konsola. Konsolda benim yaptığım şeyler gözükecek. Şimdi state'ini değiştirelim. State'ini değiştirdim. Bu Windows state değiştiği için burada ekrana yazdırdığım şeyler buraya yazılmış oldu. State'ini tekrardan eski haline getirelim. Tekrardan değişti.
+
+384
+01:23:33,908 --> 01:23:35,748
+Herhangi bir değişiklik olmuyor.
+
+385
+01:23:36,268 --> 01:23:44,488
+Window'u ilk açtığım zaman şuradaki System Outprintlint'i yazdırdı.
+
+386
+01:23:45,488 --> 01:23:48,908
+Window'u kapattığım zaman da yine...
+
+387
+01:23:50,963 --> 01:23:56,203
+X'e bastığım zaman direkt programı durdurduğu için herhangi bir şey yazmadı.
+
+388
+01:23:57,064 --> 01:24:00,844
+Hocam ekranınızda window mu var şu anda? Bizde gözükmüyor da. Sadece kod gözüküyor.
+
+389
+01:24:00,844 --> 01:24:07,503
+Tamam o zaman ekranın tamamını paylaşmadığım içindir. Kusura bakmayın farkına varmadım. Tekrar tayin yapalım.
+
+390
+01:24:09,083 --> 01:24:12,863
+Teşekkür ederim söylediğin için. Evet şimdi window'da gözüküyor.
+
+391
+01:24:14,207 --> 01:24:28,927
+İlk ekrana geldiği zaman, dikkat edin burada ilk eventi yakalamış oldum. Bu event, window eventleri.
+
+392
+01:24:34,992 --> 01:24:46,932
+Kapatayım. Şimdi yaptığım zaman bunu ikon haline getirdim. İkon haline getirdiğim zaman bu sefer hangi event çalışmış oldu?
+
+393
+01:24:47,051 --> 01:25:02,192
+Windows has gained focus eventini yakaladı. Aynı zamanda benim diğer bir event olan Windows'ın seytini de değiştirdiğim için eskiden görünür bir eventken şimdi ikon haline değiştirdi.
+
+394
+01:25:02,992 --> 01:25:25,072
+değiştirdiğim için, economize ettiğim için farklı bir state'e geldi. Tekrardan eski haline getireyim. Yine state'i değişti. Aynı zamanda focus tekrardan benim ekranımda da göründü. Yani hem state değişimini yakalayıp yazdırabiliyorum hem de window üzerindeki değişikliği ne yapabiliyorum yakalayıp yazdırabiliyorum.
+
+395
+01:25:31,988 --> 01:25:49,048
+Şimdi dikkat edin, burada ben bu iki tane event listener'ım vardı. Bunlardan bir tanesi Windows State'i, Windows State eventlerini dinliyordu. Diğerisi ise Windows eventlerini dinliyordu. İki tane event listener'ım vardı.
+
+396
+01:25:49,048 --> 01:25:59,587
+Şimdi bu event listener'ı implement etmek için bir Windows listener interface'ini kullandım. Bir de Windows State listener interface'ini kullandım.
+
+397
+01:25:59,988 --> 01:26:07,327
+Şimdi bu Window Listener Interface'inin 7 tane tanımlı metodu vardı interfeiste.
+
+398
+01:26:07,448 --> 01:26:13,628
+Dolayısıyla da regular sınıfta normalde aslında ben sadece şu ikisini kullandım.
+
+399
+01:26:13,708 --> 01:26:16,128
+Bir bunu kullandım, bir de şunu kullandım.
+
+400
+01:26:16,208 --> 01:26:18,768
+Bu iki tane metodu kullandım.
+
+401
+01:26:19,247 --> 01:26:23,628
+Diğerlerini kullanmamış olmama rağmen onları da implement etmek zorunda kaldım.
+
+402
+01:26:24,275 --> 01:26:28,876
+Neden? Çünkü bu interface içerisinde bu yedi tane metot tanımlanmış.
+
+403
+01:26:28,876 --> 01:26:49,475
+Şimdi bunu kolaylaştırmak için listener'lar içerisindeki, listener interface'leri içerisindeki tanımlanmış çok sayıda metodun bunları implement edecek regular sınıflarda gereksiz olanların implement edilmesini önlemek için yine Swing şöyle bir şey yapmış.
+
+404
+01:26:51,956 --> 01:27:13,956
+Aslında Java AVT event pekici altında yapmışlar bunu. Adaptör sınıfları yaratmışlar. Şimdi bu adaptör sınıfları abstract sınıflar. Bu abstract sınıflar ilgili listener'ları implement ediyorlar. Yani her bir...
+
+405
+01:27:14,644 --> 01:27:20,904
+Her bir event listener interfeysi için birer tane abstract sınıf yaratmışlar.
+
+406
+01:27:20,904 --> 01:27:27,904
+Bu abstract sınıflarda da bu şeyleri, şuradaki metotları...
+
+407
+01:27:30,420 --> 01:27:31,979
+İmplement etmişler.
+
+408
+01:27:32,639 --> 01:27:49,699
+Ve demişler ki, eğer ki sen bir tane listener yaratmak istiyorsan, yani bir tane event listener regular sınıfı yaratmak istiyorsan, bu interfejleri implement etmek yerine ilgili adaptörü extend et.
+
+409
+01:27:50,579 --> 01:28:07,979
+Bu adaptörü extend ettiğinde de sadece üzerine override etmek istediğin metotları yap. Çünkü diğerleri bir üst sınıfta implement edildiği için bu metotları tekrardan regular sınıfta implement etmene gerek yok.
+
+410
+01:28:08,595 --> 01:28:18,675
+Bu yüzden de her bir event listener için bir tane de adaptör sınıfı var. Bu event listener'ı bu adaptör sınıfları implement ediyorlar.
+
+411
+01:28:19,024 --> 01:28:39,404
+Ve biz de bu adaptör sınıflarını extend ediyoruz. Burada dikkat ederseniz iki tane metodum var. Bu iki tane metot aslında bu adaptör sınıfının benim kullanmak istediğim sınıflarını ne yapıyor? Overwrite ediyor. Onun dışındakileri implement etmek zorunda kalmıyor. Bu da adaptör kullanımı.
+
+412
+01:28:41,824 --> 01:28:44,444
+Adaptör tasarım kalıbıyla alakası var mı bunun hocam?
+
+413
+01:28:45,076 --> 01:28:48,336
+Yok, hayır. Sadece öyle bir isim vermişler.
+
+414
+01:28:53,332 --> 01:29:14,952
+Okey. Şimdi bir de mouse eventleri konuşalım. Şu ana kadar neleri dinlemiş olduk? Frame üzerindeki eventleri dinlemiş olduk. Bunlar window eventlerdi.
+
+415
+01:29:16,180 --> 01:29:30,659
+Bir buton üzerindeki eventleri dinlemiş olduk. Bunlar action eventlerdi. Şimdi ise bir mouse üzerinden gelebilecek eventleri konuşacağız. Bunlar da mouse motion eventleri.
+
+416
+01:29:30,659 --> 01:29:39,500
+Mouse event yahut da mouse motion eventleri. Şimdi burada öncelikle yine bir tane event.
+
+417
+01:29:43,391 --> 01:29:59,731
+Bir tane ana sınıfım var. Mouse Event Test ismini vermişim. Bunun içerisinde bir tane frame yaratıyorum. Frame'in objesini bir thread objesi olarak yaratıyorum.
+
+418
+01:30:00,467 --> 01:30:09,307
+Bu frame'e bir bakacak olursam, bu frame içerisinde ismine Capture Mouse Ubense Frame ismini vermişim.
+
+419
+01:30:11,487 --> 01:30:17,087
+Constructor'ın da title'ını, size'ını set ediyorum. İki tane de listener ekliyorum.
+
+420
+01:30:17,688 --> 01:30:24,268
+Hani bu frame'e ekliyorum bu listener'ları. Bu listener'lar mouse listener bir de mouse motion listener.
+
+421
+01:30:24,768 --> 01:30:43,447
+Şimdi bu mouse listener bir de mouse motion listener sınıfları demek ki frame üzerinde eklenen aynı window eventlerini dinlediğim gibi mouse kliklerini frame komponenti üzerinden dinleyeceğim.
+
+422
+01:30:44,756 --> 01:30:53,456
+Şimdi bu mouse handler sınıfına bir bakalım. Mouse handler sınıfı neyi implement ediyormuş? Mouse motion listener'ı implement ediyormuş.
+
+423
+01:30:54,931 --> 01:31:04,811
+MouseMotionListener içerisinde bu interfaz olduğu için iki tane metot var. MouseDirect bir de MouseMove diye iki tane metodu var. Bunları burada implement etmişim.
+
+424
+01:31:05,292 --> 01:31:17,212
+İplementasyona baktığınız zaman sadece ekrana mouse hareket ederken nereleri hareket ettiğini, hangi X, Y koordinatlarını hareket ettiğini System Out Printline ile ekranda gösteriyor.
+
+425
+01:31:18,836 --> 01:31:26,115
+Şimdi diğerisi için bu mouse motion handler'dı.
+
+426
+01:31:26,896 --> 01:31:30,396
+Mouse motion designer'ı implement eden sınıfın.
+
+427
+01:31:30,696 --> 01:31:32,056
+Diğerisi ise mouse handler.
+
+428
+01:31:32,615 --> 01:31:34,196
+Mouse handler için dikkat edin.
+
+429
+01:31:34,276 --> 01:31:43,056
+Bu sefer ilgili interfejsi implement etmek yerine bu interfejsi implement etmiş olan adaptörü extend ediyorum.
+
+430
+01:31:43,056 --> 01:31:44,596
+Okey.
+
+431
+01:31:45,171 --> 01:32:07,451
+Yani az önce konuştuğumuz şey bu ilgili interfeisin içerisinde çok fazla event olduğu için daha da çok fazla metot olduğu için onların hepsini implement etmeyeceğimden sadece istediğimi implement edebilmek için mouse adaptör
+
+432
+01:32:10,452 --> 01:32:38,452
+abstract sınıfını ne yapıyorum? Extend ediyorum. Burada da hangisini overwrite etmek istiyorum? Mouse click'te overwrite etmek istiyorum. Mouse click içerisine de mouse'u farklı special key'lerle birlikte kullandığım zaman, control'le, alt'la, shift'le beraber kullandığım zaman ya da işte left click yaptığım zaman her birisi için farklı...
+
+433
+01:32:38,452 --> 01:32:42,932
+statement yazmışım. Onlarla ilgili birer sistem alt printlinde yazıyorum.
+
+434
+01:32:44,552 --> 01:32:46,692
+Şimdi bunu bir görelim.
+
+435
+01:32:46,692 --> 01:32:48,692
+Okey.
+
+436
+01:32:50,420 --> 01:32:57,399
+Görüyorsunuz, frame üzerinde hareket ederken konsolda da frame üzerinde benim nerede olduğunu görebiliyorsunuz.
+
+437
+01:32:57,619 --> 01:32:58,760
+Şimdi mesela klik yapalım.
+
+438
+01:32:59,500 --> 01:33:02,500
+Kliki de kontrol ile yapalım mesela.
+
+439
+01:33:02,920 --> 01:33:03,880
+Evet, burada yakaladı.
+
+440
+01:33:04,939 --> 01:33:06,599
+Shift ile yapalım mesela.
+
+441
+01:33:09,800 --> 01:33:16,960
+Bir special key ile beraber kliki gerçekleştirdiğim zaman onunla ilgili şeyi de yakalayabiliyorum.
+
+442
+01:33:18,163 --> 01:33:33,144
+Event'i de yakalayabiliyorum. Bu da mouse eventlerle ilgili olan örneğimiz. Bir de keyboard eventleriyle olan bir tane de örneğimiz var. Hani bunu da görelim. Ondan sonra duracağım.
+
+443
+01:33:36,663 --> 01:33:43,184
+Burada da keyboard eventlerini dinleyeceğim. Yine bir tane frame oluşturuyorum. Bir thread olarak oluşturdum.
+
+444
+01:33:43,828 --> 01:33:48,828
+Bu frame üzerinde ben iki tane listener eklemişim.
+
+445
+01:33:50,307 --> 01:34:00,068
+Bir tanesi special keyler için, bir tanesi ise normal keyler için eventleri dinleyeceğim demişim.
+
+446
+01:34:02,336 --> 01:34:15,815
+Keyler için dinleyeceğim event listener'ı kullanırken key listener interfeyesini implement etmişim. Burada adaptör kullanmamışım.
+
+447
+01:34:15,815 --> 01:34:30,336
+Ama special keyler için implement edeceğim regular sınıfta bu special keyleri içeren interfeyesi implement eden adaptörü eksik.
+
+448
+01:34:30,336 --> 01:34:49,096
+Yani burada normal listener'ı implement ederken, burada ise ilgili event'i implement etmiş olan listener'ı implement etmiş adaptör sınıfını extend etmişim. Yani her iki kullanımını da adaptör kullanımını da event listener kullanımını da burada görebiliyorsunuz.
+
+449
+01:34:51,252 --> 01:35:10,352
+Burada key listenrı implement etmiş olmakla beraber bir, iki, üç tane metodu implement etmek zorundayım. Herhangi bir key'ye bastığım zamanki gerçekleşen event, key'yi release ettiğim zamanda ya da bir karakter yazdığım zamandaki eventleri yakalayabiliyorum.
+
+450
+01:35:10,899 --> 01:35:27,059
+Special Key Handler'ımda ise sadece bir tane metodu implement etmişim. O da herhangi bir Special Key'i kullandığım zaman onunla ilgili eventi yakalayacak. Şimdi bununla ilgili şeyi görelim.
+
+451
+01:35:32,020 --> 01:35:32,539
+Ok.
+
+452
+01:35:41,203 --> 01:35:45,543
+Herhangi bir key'e bastığım zaman şeyi görüyorsunuz.
+
+453
+01:35:48,023 --> 01:35:50,983
+Special key'e bastığım zaman onu da yakalayabiliyorum.
+
+454
+01:35:51,563 --> 01:36:02,623
+F butonuna bastım. F'i yakaladım. Control F'e bastım. Control F'i special key ile beraber bastığım için onu da yakalayabildim.
+
+455
+01:36:25,332 --> 01:36:29,771
+Evet, geldiğimiz noktadan devam edelim.
+
+456
+01:36:31,511 --> 01:36:37,412
+Window listener'ları konuştuk. Adaptörlerin ne olduğunu söyledik.
+
+457
+01:36:41,011 --> 01:36:43,612
+Key listener'ları konuştuk.
+
+458
+01:36:46,420 --> 01:37:07,940
+Mouse event listener'larına konuştuk. Bununla ilgili bir örnek gösterdi. Tamam. Arkadaşlar ben burada duracağım. Bundan sonrası layout management ile ilgili Sling üzerinde. Bunlarla ilgili slide'ları da dersin sayfasına koyacağım. Şu anda hali hazırda var mı onu bir kontrol etmem gerekli.
+
+459
+01:37:11,604 --> 01:37:17,663
+GUI ile ilgili olan kısım sınavda karşınıza gelmeyecek.
+
+460
+01:37:18,104 --> 01:37:25,684
+Dersin kapsamında işlediğimiz multi-thread programmingin sonuna kadar olan kısımdan final sınavında sorumlusunuz.
+
+461
+01:37:26,283 --> 01:37:31,524
+Ama bu GUI ile ilgili olan kısımda projenizde kullanıcı arayüzlerinizi geliştirirken,
+
+462
+01:37:32,423 --> 01:37:37,963
+silingi kullanıraktan geliştirmek isterseniz bunu kullanacaksınız.
+
+463
+01:37:38,420 --> 01:37:41,859
+Onun dışında sorusu olan var mıdır? Gelecek hafta dersi...
+
+464
+01:37:41,859 --> 01:37:43,500
+Hocam bir çağda bulunabilir miyim?
+
+465
+01:37:43,939 --> 01:37:44,219
+Evet.
+
+466
+01:37:45,099 --> 01:37:50,659
+Sunumu yüklerken ikinci vizenin notlarını da yükleyebilir misiniz? Sisteme hemen düşüyor da test olduğu için.
+
+467
+01:37:51,139 --> 01:38:03,159
+Olur. Yani aslında birinci vizenizin sonuçlarını da açıklamam gerekiyordu ama yoğunluktan bunu yapamadım. Bu hafta sonu her ikisini de açıklıyor olacağım.
+
+468
+01:38:03,859 --> 01:38:04,799
+Teşekkür ederim.
+
+469
+01:38:05,279 --> 01:38:12,159
+Peki, siz sınavdan sonra yanlış ve doğrularınızı görebildiniz değil mi? Ona izin vermiştim.
+
+470
+01:38:13,799 --> 01:38:18,679
+Ben görmedim ama bilmiyorum. Ben belki görübülmüyorumdur. Diğer arkadaşlar bilmiyorum.
+
+471
+01:38:19,699 --> 01:38:36,739
+Anladım. Yani sistemde öyle bir seçenek var. Hani sınav bittikten sonra öğrenciler doğru yanıtları görebilsin diye. Ben otomatik olarak sanki sınav bittikten sonra gördünüz diye düşünüyordum. Okey. Yani sınav test sonuçlarınız belli.
+
+472
+01:38:36,739 --> 01:38:39,020
+Evet hocam gözüküyormuş benim hatam.
+
+473
+01:38:39,347 --> 01:38:40,167
+Teşekkür ederim.
+
+474
+01:38:40,167 --> 01:38:53,228
+Tamam. Okey. Yani ben hani onları her iki sınav sonucunu da toplu olarak hafta sonu açıklayacağım. Birinci sınavı biraz geç açıklamış oluyorum. Artık o kadar anlayış göstermenizi rica edeceğim.
+
+475
+01:38:54,967 --> 01:38:56,247
+Teşekkür ederim hocam.
+
+476
+01:38:56,543 --> 01:39:21,003
+Haftaya ders yok. Sadece mazeret sınavı var. Mazeret sınavına girecek olan arkadaşlar varsa benimle iletişim kursunlar. Onun dışında şimdiden hem dönem projelerinizi tamamlamanızda hem de final sınavınıza hazırlıkla yoğunlaşmanızı isterim. Her ikisi için de sizleri başarılar diyorum arkadaşlar.
+
+477
+01:39:22,739 --> 01:39:24,220
+Teşekkürler hocam. Sağ olun.
+
+478
+01:39:25,060 --> 01:39:28,439
+Ben teşekkür ederim katılımınız için. İyi dersler arkadaşlar.
+
+479
+01:39:29,819 --> 01:39:30,300
+İyi günler.

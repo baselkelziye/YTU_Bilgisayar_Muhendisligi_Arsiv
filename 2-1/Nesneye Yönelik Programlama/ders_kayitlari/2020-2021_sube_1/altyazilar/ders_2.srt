@@ -1,0 +1,3051 @@
+1
+00:11:57,235 --> 00:11:58,395
+Arkadaşlar, günaydın.
+
+2
+00:12:02,676 --> 00:12:05,896
+Sesim sizlere geliyor mu? Bir teyit eder misiniz lütfen?
+
+3
+00:12:07,276 --> 00:12:07,456
+Evet.
+
+4
+00:12:07,536 --> 00:12:08,016
+Geliyor hocam.
+
+5
+00:12:09,056 --> 00:12:10,855
+Tamam. Herkese günaydın.
+
+6
+00:12:13,136 --> 00:12:17,916
+Bugün an Object Oriented Programming dersinde beraberiz.
+
+7
+00:12:22,156 --> 00:12:25,996
+Dersimizde kaç kişi kayıtlı bakalım.
+
+8
+00:12:27,916 --> 00:12:29,868
+Benim en son baktığım...
+
+9
+00:12:30,131 --> 00:12:31,651
+Altmışsikis kişide.
+
+10
+00:12:37,940 --> 00:12:54,620
+Evet, 68 kişi şu anda derse kayıtlı. Bu ders grup bir. Doğru derste olduğunuzdan emin olun.
+
+11
+00:13:01,043 --> 00:13:19,163
+Ben öncelikle kendimi tanıtacağım. Ondan sonra bu ders kapsamında neler öğreneceksiniz onlardan bahsedeceğim. Dersin şartlarını, koşullarını söyleyeceğim. Ondan sonra da bugün ilk dersimizde başlayacağım.
+
+12
+00:13:21,235 --> 00:13:43,436
+Bu dersi üç öğretim üyesi olarak veriyoruz. Ben Mehmet Aktaş, İlgisayar Mühendisliği Bölümünde doçantım. Yunus Emre hocamız ikinci grubu veriyor. Ahmet Elbir hocamız da üçüncü grubu veriyor. Üç tane farklı grup şeklinde dersi veriyoruz.
+
+13
+00:13:48,947 --> 00:14:13,827
+Öğretim materyalleri aynı. Yani aynı şeyleri sizlere anlatıyor olacağız. Derslerin sınavları yine aynı olacak. Dersler kapsamındaki bütün requirement'lar da aynı olacak. Sadece farklı hocalardan dersi almış olacaksınız. Sınavlar da.
+
+14
+00:14:14,224 --> 00:14:19,344
+Lab'lar da, projeler de bunların hepsinin içerikleri de aynı olacak.
+
+15
+00:14:20,364 --> 00:14:24,784
+Dersler kapsamında üç tane asistanınız olacak.
+
+16
+00:14:27,004 --> 00:14:35,804
+Bu asistan hocalarınız sizlere bizlerin yanı sıra hem lab'lar hem uygulamalar.
+
+17
+00:14:36,340 --> 00:14:41,720
+hem de dönem projelerinizin değerlendirmesi konusunda yardımcı olacaklar.
+
+18
+00:14:41,820 --> 00:14:58,600
+Bunun dışında dersle ilgili bizlerin ofis ağırına gelemediğiniz durumlarda asistan hocalarınızın ofis ağırlarına gidip dersle ilgili öğrenmek istediğiniz, aklınıza takılan soruları sorabilirsiniz.
+
+19
+00:15:02,131 --> 00:15:16,991
+Ders kapsamında öncelikle dersi İngilizce işleyeceğim. Onu da bilmenizi isterim. Tamamıyla İngilizce işleyeceğim. Bu sadece tanışma olduğu için Türkçe devam ediyor.
+
+20
+00:15:17,791 --> 00:15:27,971
+Ders kapsamında iki tane midterminiz olacak. Bunların tarihleri belli. Nisan'ın 8'inde birinci midterm olacak.
+
+21
+00:15:29,395 --> 00:15:42,855
+Haziran'ın üçünde, pardon, Nisan'ın yirmi sekizinde, sekizinci haftada birinci midtermimiz olacak, on üçüncü haftada ikinci midtermimiz olacak, Haziran'ın üçünde.
+
+22
+00:15:43,855 --> 00:15:53,115
+Bu dönem, Haziran'ın on birinde, yanlış hatırlamıyorsam, evet, yok, on iki Haziran'da bahar yarı yalı bitiyor.
+
+23
+00:15:57,779 --> 00:16:17,399
+Herhangi bir şekilde mazeretinden dolayı, kanıtlayabileceği mazeretinden dolayı birinci yerde ikinci midterm'e giremeyen arkadaşlar varsa bunlar son hafta yani 14. hafta bir make-up midterm egzene girebilecekler.
+
+24
+00:16:19,635 --> 00:16:32,375
+Ama bunun için bölüme dilekçe veriyorsunuz. Bölüm dilekçenizi, mazeretinizi inceleyip kabul ediyor. Sonra dersin hocasına bu arkadaşlar mazeret sınavına girebiliyor diye yazı yazması gerekiyor.
+
+25
+00:16:34,932 --> 00:16:59,652
+Bir tane final sınavınız olacak. Final sınavınızın dışında ders kapsamında laplarınız olacak. Şimdi bu laplar ne demek? Dönem içerisinde 6 defa, en az 6 defa diyelim, en az 6 defa asistan hocalarınızla bir araya geleceksiniz arkadaşlar.
+
+26
+00:17:01,139 --> 00:17:14,279
+Bunlardan üç tanesini de bunlara biz Lab Sessions adını verdik. Bunlardan üç tanesini de en az üç tanesini de diyelim.
+
+27
+00:17:16,564 --> 00:17:26,144
+Hocanız size bir tane problem verecek ve bu problemi sizlerin o süre içerisinde, lab süresi içerisinde kodlamanızı isteyecek.
+
+28
+00:17:26,144 --> 00:17:35,304
+Ve bu kodlama tamamlandıktan sonra da yapmış olduğunuz kodları hocanız değerlendirecek.
+
+29
+00:17:38,259 --> 00:17:43,019
+Bunun dışında bir de yine en az üç tane uygulama dersi olacak.
+
+30
+00:17:43,240 --> 00:17:55,039
+Burada da derslerde dersin hocalarının işlemiş olduğu konularla ilgili bir tane problemi asistan hocanız kendisi çözecek.
+
+31
+00:17:55,039 --> 00:18:00,039
+Bu problemi sanki size sınavda sormuş gibi...
+
+32
+00:18:02,963 --> 00:18:09,043
+Öncelikle problemi gösterecek, arkasından o problemi nasıl çözdüğünü adım adım anlatacak.
+
+33
+00:18:10,783 --> 00:18:16,963
+Şimdi bu lapların ve uygulamaların tarihleri...
+
+34
+00:18:17,140 --> 00:18:23,340
+Normalde biz bunu üçüncü haftadan itibaren başlatıyoruz.
+
+35
+00:18:24,300 --> 00:18:30,720
+Ya altı tane olacak toplamda yani uygulama ve lab sessionler totalde altı tane olacak ya sekiz tane olacak.
+
+36
+00:18:30,720 --> 00:18:39,519
+Bu dönemin ilerleyişine göre gidecek çünkü arada resmi ve dini bayramlar var.
+
+37
+00:18:39,820 --> 00:18:44,420
+Onlardan dolayı on dört haftanın on dördünde işliyor.
+
+38
+00:18:45,140 --> 00:18:55,900
+işleyemeyeceğiz. Buna dayalı olarak, laf ve uygulama total sayısı 8 tane olmayabilir ama en az 6 tane yapmayı planlıyoruz.
+
+39
+00:18:58,880 --> 00:19:06,220
+Bunlar dersin, dersle ilgili dersin ölçme ve değerlendirme kısmı.
+
+40
+00:19:06,771 --> 00:19:10,311
+Burayla ilgili sorusu olan var mıdır arkadaşlar?
+
+41
+00:19:11,051 --> 00:19:13,551
+Sorusu olanlar mikrofonlarını açsın lütfen.
+
+42
+00:19:14,271 --> 00:19:22,531
+Ondan sonra şey yahut da mikrofonda bir sorunuz varsa Zoom chat üzerinden sorunuzu yazabilirsiniz.
+
+43
+00:19:37,044 --> 00:19:41,544
+Evet, şu ana kadar bir soru yok diye anlıyorum.
+
+44
+00:19:43,584 --> 00:19:43,884
+Tamam.
+
+45
+00:19:46,204 --> 00:19:50,124
+Dersi, hani interaktif işlemeyi tercih ederim.
+
+46
+00:19:51,124 --> 00:19:56,544
+Zaten online eğitimle beraber sizleri göremiyorum.
+
+47
+00:19:58,184 --> 00:20:00,000
+Yani çoğunuz kameralarınızı açmıyorsunuz.
+
+48
+00:20:00,000 --> 00:20:09,240
+Ben de açıkçası sizleri kameralarınızı açmaya zorlamak da istemiyorum. Sadece isteyenler kameralarını açabilir.
+
+49
+00:20:09,811 --> 00:20:17,591
+Ondan dolayı dersi ne ölçüde takip ediyorsunuz onu izleme şansım yok.
+
+50
+00:20:18,192 --> 00:20:28,051
+Sadece sizlerin arkadaşlar sorunuz var mı dediğim zaman geri dönüşlerinizden yola çıkarak anlaşılmayan bir şey var mı onu takip edebilirim.
+
+51
+00:20:28,631 --> 00:20:37,551
+O yüzden şey yapmaya çalışın arkadaşlar. Anlamadığınız bir şey varsa, sormak istediğiniz bir şey varsa bunu bekletmeyin.
+
+52
+00:20:37,811 --> 00:20:53,491
+Hocanızı durdurun, sorunuzu sorun. Hemen de yanıt verebilir. Yahut da ders bittikten sonra da yanıt verebilir. Zoom chatten sorunuzu yazabilirsiniz ama mutlaka sorulmadık soru kalmasın.
+
+53
+00:20:55,311 --> 00:21:03,491
+Şimdi ders kapsamında biz Object Oriented Programming'i Java ile öğretiyoruz yıllardır.
+
+54
+00:21:05,364 --> 00:21:26,364
+Java ile ilgili bir takım referans kitaplar var. Bunlardan bir tanesi Dieter & Dieter'in kitabı. Bu oldukça kapsamlı ve içeriği çok zengin bir kitap. Java How to Program. Bu kitabın eski versiyonlarının hatta...
+
+55
+00:21:27,316 --> 00:21:44,175
+Yeni versiyonları da olabilir. PDF'leri internette mevcut. Bunları bulabilirsiniz. Arkadaşlarınız da varsa şey yapabilirsiniz. Onlardan isteyebilirsiniz. Ben paylaşamam ama sizler kendi aranızda paylaşabilirsiniz. İnternetten bulmak mümkün.
+
+56
+00:21:44,175 --> 00:21:51,316
+Yine Core Java 2 diye bunun iki tane cildi var.
+
+57
+00:21:53,011 --> 00:22:12,192
+Java ile ilgili bir tane referans kitap var. Horseman ve Cornell'in. Bunun da yine PDF'ini bulabilirsiniz. Bu iki tane referans kitap internet üzerinden bulacağınız bilgilerin dışına size çok faydalı olacak.
+
+58
+00:22:14,355 --> 00:22:27,675
+Yine bir tane daha kitap var. Biz aynı zamanda Object Oriented Programming'i anlatırken bir de Object Oriented Programming'i biz ileride göreceksiniz dersi işlerken.
+
+59
+00:22:28,996 --> 00:22:31,355
+UML denilen bir tane...
+
+60
+00:22:33,236 --> 00:22:46,615
+Dil kullanarak da ne yapıyoruz? Tanımlayabiliyoruz. Yani bir program yazarken bu programın bir logic flow'u olur, bir akışı olur.
+
+61
+00:22:47,667 --> 00:23:00,387
+Bu programın içerisinde bir takım komponentler olur. Bu komponentlerin birbiriyle konuşarak programın yapması gereken şeyi yapmalarını sağlarsınız.
+
+62
+00:23:01,227 --> 00:23:11,627
+İşte bu komponentler, yani bir object oriented programın komponentleri, bunlar arasındaki ilişkileri tanımlarken kullandığımız bir dil var.
+
+63
+00:23:11,627 --> 00:23:15,627
+Bu grafiksel bir dil. Bunun için biz UMLN'de...
+
+64
+00:23:15,667 --> 00:23:41,707
+kullanıyoruz. Burada da yine UML'in ne olduğu ve UML'le nasıl bir kodu siz tanımlarsınız konusunda güzel bir kitap var. UML Distilled. Bununla ilgili kitabı da yine PDF'ini bulabilirsiniz. Bunlar sizin bilgisayarınızda olursa iyi olur.
+
+65
+00:23:46,195 --> 00:23:56,375
+Hemen şurada durup şeye geçeyim.
+
+66
+00:24:00,692 --> 00:24:21,392
+Şimdi dersin bir sayfası var. Dersle ilgili bütün materyalleri bu dersin sayfasında bulabilirsiniz. Ben bunu şimdi hemen Zoom chatten sizlerle paylaşıyorum.
+
+67
+00:24:28,723 --> 00:24:43,683
+Okey. Sizlerle Zoom chatten dersin sayfasını paylaştım. Şimdi bu dersin sayfasında bu dersle ilgili güncel duyuruları buradan takip edeceksiniz arkadaşlar.
+
+68
+00:24:44,923 --> 00:24:53,243
+Derse gelmeden önce sayfayı refresh edip dersle ilgili herhangi bir duyuru var mı? Mutlaka bakın.
+
+69
+00:24:53,632 --> 00:25:01,271
+Dersin kimi zaman olabiliyor ki dersi biraz daha geç başlatmak durumunda kalabiliyoruz.
+
+70
+00:25:01,831 --> 00:25:06,771
+Ya da dersi telafisi yapılmak üzere başka bir günü almak durumunda kalabiliyoruz.
+
+71
+00:25:07,271 --> 00:25:11,331
+Ya da dersle ilgili önceden bilmeniz gereken bir takım duyarılar olabiliyor.
+
+72
+00:25:11,331 --> 00:25:18,831
+Laplarla ilgili, yine sınavlarla ilgili mutlaka bu recent announcement bölümüne gelmenizi istiyorum.
+
+73
+00:25:19,316 --> 00:25:22,316
+Herhangi yeni bir haber var mı derse gelmeden önce?
+
+74
+00:25:25,875 --> 00:25:51,976
+Şimdi dersle ilgili bütün dokümanlar burada. Şu anda size göstermiş olduğum slide serisi. Bu slide serisi yaklaşık 132 slide'dan oluşuyor. Bunu bütün dönem boyunca işleyeceğim ve bunu tek bir pdf olarak burada paylaştım.
+
+75
+00:25:52,415 --> 00:26:17,016
+Bir de dersin sonunda zaman kalmasına da bağlı olarak aynı zamanda bir de kullanıcı arayüzlerini Java ile nasıl geliştiririz. Bununla ilgili bir dersimiz olacak. Onun için de Java Swing kullanacağız. Java Swing kullanıcılarak kullanıcı arayüzlerini geliştireceğiz. Onun için de yine bir slide seti var. Onu da PDF olarak buraya kopyaladım.
+
+76
+00:26:18,708 --> 00:26:36,908
+Şimdi ders kapsamında Dytel & Dytel kitabını kullandığımızı söyledim. Dytel & Dytel kitabının bütün kodları, bu şuradaki zip dosyası içerisinde var, object-oriented-programming-spring21.
+
+77
+00:26:37,875 --> 00:26:56,576
+Bunun içerisinden kitapla ilgili şeyleri bulabilirsiniz. Bir de ders kapsamında benim slide'larda göstermiş olduğum bütün kodların hepsi kodlar.zip dosyasında var arkadaşlar.
+
+78
+00:26:57,428 --> 00:27:07,508
+Bu dosyanın içerisinden bütün kodları açıp bir proje haline getirip inceleme şansınız olacak.
+
+79
+00:27:13,844 --> 00:27:33,683
+Dokümansa erişemiyorsunuz. Dokümansa erişemiyorsunuz. Tamam. Onun sevdiğini de biliyorum. Çünkü bunu dün oluşturdum. O Drive'a herkesin ulaşması için benim izin vermem lazım. Bir saniye. Onu da şimdi hemen halledelim.
+
+80
+00:27:57,203 --> 00:27:58,743
+All right, excuse me, Yenelik.
+
+81
+00:28:08,468 --> 00:28:08,927
+Sure.
+
+82
+00:29:19,188 --> 00:29:20,988
+Evet, bir daha dener misiniz arkadaşlar?
+
+83
+00:29:28,660 --> 00:29:30,140
+Şu an ulaşılabiliyor hocam.
+
+84
+00:29:30,700 --> 00:29:31,460
+Tamam, süper.
+
+85
+00:29:35,079 --> 00:29:43,720
+Buradan, bunun haricinde ders kapsamında işlediğim diğer materyaller varsa buradaki drive'e koyacağım.
+
+86
+00:29:43,720 --> 00:29:49,720
+Bunun dışında bana ulaşabileceğiniz e-mail adresim.
+
+87
+00:29:51,347 --> 00:30:00,000
+Ve Office Hour'larımı da burada görebiliyorsunuz. Office Hour'dan kasıt şu, benimle eğer görüşmek istiyorsanız hemen bir...
+
+88
+00:30:00,000 --> 00:30:20,019
+Zoom session açıyorum. Sizle dersten sonra bir kişi de gelebilirsiniz. Birden fazla da olabilirsiniz. Anlamadığınız, sormak istediğiniz herhangi bir konu varsa benimle Zoom session üzerinden şimdi yaptığımız gibi rahatlıkla konuşabilirsiniz.
+
+89
+00:30:22,160 --> 00:30:23,200
+Evet.
+
+90
+00:30:28,531 --> 00:30:38,091
+39 kişi olmuşuz. Şimdi ders katılımları ile de konuşalım. Derste şu anda 68 kişi var.
+
+91
+00:30:39,923 --> 00:30:59,704
+Derslere katılımı, dikkat ederseniz bütün dersler kayıt altına alınıyor. Bunu ben yapmıyorum. Sistemin kendisi yapılıyor. Dolayısıyla derslere katılımınızı ben değil sistem takip ediyor ve dersin sonunda ne kadar katılmışsınız bununla ilgili bize rapor çıkartıyor.
+
+92
+00:31:06,324 --> 00:31:19,644
+Online Yıldız 50.tr üzerinden ulaşılabilir olacak. Ama oradan dersleri tekrardan dinleme fırsatı bulabileceksiniz.
+
+93
+00:31:20,147 --> 00:31:37,288
+Ama sistemde bir sıkıntı çıkabilir. Videolar yüklenmeyebilir. Tamamıyla ben videoyu sonradan izleyebilirim düşüncesiyle derslere katılmayıp sonradan bakayım derslere katılmamazlık yapmayın.
+
+94
+00:31:37,748 --> 00:32:00,748
+İki türlü sıkıntısı var. Bir, derse katılım eksikliğinden dolayı dersten kalma durumu söz konusu olabilir. İkincisi, bu sefer tamamıyla ben videoyu sonradan izlerim düşüncesiyle derslere katılmamaktan dolayı videolar yayınlanmazsa, sistemde bir sıkıntı çıkarsa bu sefer...
+
+95
+00:32:01,332 --> 00:32:12,892
+dersin içeriğini takip etmemiş olacaksınız. O yüzden perşembe günleri, sabah saatleri bu derse katılımınızı istiyorum arkadaşlar.
+
+96
+00:32:14,900 --> 00:32:33,760
+Bu dersin önemini zaten biliyorsunuz. Sizler bilgisayar mühendisi olmayı seçtiniz. Bilgisayar mühendisi olmak için Yıldız Teknik Üniversitesi'ne geldiniz. Bu derste bir bilgisayar mühendisinin olmazsa olmaz bilmesi gereken bir ders.
+
+97
+00:32:34,259 --> 00:32:44,259
+Özellikle meslek hayatınızda bu dersi sürekli kullanacaksınız.
+
+98
+00:32:44,703 --> 00:32:52,303
+Object Oriented tabanlı programlama yazmak, yazılmış olan bir programı okuyabilmek.
+
+99
+00:32:52,303 --> 00:33:00,803
+Bu sizin için, sizin seçtiğiniz meslek için olmazsa olmaz bir ders.
+
+100
+00:33:01,523 --> 00:33:10,283
+O yüzden bu dersi mutlaka takip edin, uygulamalarını yapın diye sizlere daha dersin başında tavsiye ediyorum.
+
+101
+00:33:13,107 --> 00:33:13,627
+Ok.
+
+102
+00:33:21,172 --> 00:33:26,071
+Now, I'm going to switch to English from now forward.
+
+103
+00:33:30,071 --> 00:33:38,831
+So far, I have given you the details of the course, what you should expect from me and what I will expect from you at the end of the course.
+
+104
+00:33:39,731 --> 00:33:42,591
+And I talked about the requirement of the course.
+
+105
+00:33:43,071 --> 00:34:10,612
+All the teaching materials, where you can find it, and what are the necessary teaching materials. We talked about this. And we talked about labs. As I said, so you will have to attend six different lab sessions. Okay. And
+
+106
+00:34:11,027 --> 00:34:23,467
+We divided these labs. So all these lab activities involves two different things. One is the...
+
+107
+00:34:26,835 --> 00:34:32,755
+A lab activity where you have to actively participate and write code.
+
+108
+00:34:33,395 --> 00:34:38,515
+Okay, half of the total lab activities will involve you to write code.
+
+109
+00:34:39,456 --> 00:34:51,975
+And the other half of the lab activities will involve the assistant instructor to solve a classroom example in the session.
+
+110
+00:34:51,975 --> 00:34:54,835
+Okay, so if you have...
+
+111
+00:34:54,835 --> 00:35:06,916
+A total six different lab activities. In three of them, you will actively write code and then the assistant instructor will evaluate your code.
+
+112
+00:35:07,443 --> 00:35:12,684
+In three of them, the assistant instructor will write the code.
+
+113
+00:35:13,023 --> 00:35:17,563
+So he or she will show you the problem and solve the problem.
+
+114
+00:35:18,604 --> 00:35:26,903
+So you will just learn how he or she solves the problem during that session.
+
+115
+00:35:28,563 --> 00:35:29,243
+Now,
+
+116
+00:35:30,255 --> 00:35:46,916
+Attending the lab activities is a requirement, which means that if you do not provide enough attendance, you will get zero from the lab sessions.
+
+117
+00:35:46,916 --> 00:35:52,975
+Okay. And lab sessions will affect 10% of your accumulated grade.
+
+118
+00:35:53,876 --> 00:36:03,296
+And if you are taking this course, if you are retaking this course, which means that last year or previous years, you took this course and you failed.
+
+119
+00:36:03,296 --> 00:36:13,376
+OK, if you are retaking this course and your grade is other than F0, OK, in this case,
+
+120
+00:36:15,219 --> 00:36:17,919
+You are not required to attend the lab sessions.
+
+121
+00:36:18,639 --> 00:36:18,779
+Okay.
+
+122
+00:36:19,039 --> 00:36:26,839
+But only those students who are retaking the course and whose grade is other than F0.
+
+123
+00:36:26,839 --> 00:36:27,399
+Okay.
+
+124
+00:36:27,960 --> 00:36:33,419
+So will not require to attend the lab sessions.
+
+125
+00:36:34,019 --> 00:36:40,679
+Other students who are not in this category will have to attend the lab sessions.
+
+126
+00:36:42,547 --> 00:36:43,067
+Okay.
+
+127
+00:36:44,587 --> 00:36:56,667
+And so we will have three assistant instructors and they all have their own personal webpages on Avesis.
+
+128
+00:36:56,667 --> 00:36:57,587
+Okay.
+
+129
+00:36:57,767 --> 00:36:59,047
+Avesis Yildizé Dutere.
+
+130
+00:36:59,607 --> 00:37:05,207
+And you will be, you are required to check their websites.
+
+131
+00:37:05,780 --> 00:37:10,079
+For the updated information for the lab schedules.
+
+132
+00:37:11,039 --> 00:37:11,180
+Okay.
+
+133
+00:37:13,900 --> 00:37:18,420
+And so about the cumulative grade.
+
+134
+00:37:18,840 --> 00:37:29,240
+So there is a regulation by the university which says that if your cumulative grade at the end of the semester
+
+135
+00:37:29,844 --> 00:37:39,364
+If the class is lower than the 40%, you will fail the course with the letter grade FF.
+
+136
+00:37:39,984 --> 00:37:43,804
+So this means that you will have two midterm exams.
+
+137
+00:37:44,239 --> 00:37:48,299
+Okay, one lab session and one term project.
+
+138
+00:37:48,299 --> 00:38:00,819
+Okay, so which means that 40 and 60 percent of your cumulative grades will come from the semester.
+
+139
+00:38:01,559 --> 00:38:08,719
+And 40 percent of your grades will come from the final exam.
+
+140
+00:38:09,139 --> 00:38:23,639
+Now, if the 40% of your whole grade that comes from the semester is lower than 40, then this means that you will not have the right to attend the final exam.
+
+141
+00:38:25,179 --> 00:38:35,339
+Okay. Arkadaşlar, bu önemli. Dönem içerisinde yapmış olduğunuz aktiviteler. Nedir bu aktiviteler? İki tane sınava giriyorsunuz mid-term'e.
+
+142
+00:38:35,795 --> 00:38:54,655
+Bir tane lab requirement'ınız var. Yani bu aslında lab dediğimiz 6 tane farklı lab'a giriyorsunuz. Bunlardan aldığınız bir puan var. Bir de dönem projesi var. Bunların toplamından almış olduğunuz skor.
+
+143
+00:38:55,956 --> 00:39:00,115
+40'ın altında kalmışsa bu durumda final sınavına giremiyorsunuz.
+
+144
+00:39:00,596 --> 00:39:02,176
+Dersten FF'le kalıyorsunuz.
+
+145
+00:39:03,176 --> 00:39:09,936
+Dolayısıyla dönem içerisinde yapmanız gereken minimum bir performans var.
+
+146
+00:39:10,336 --> 00:39:15,716
+Bu minimum performansı üniversite bölümlerden, hocalardan bağımsız olarak belirlemiş.
+
+147
+00:39:16,340 --> 00:39:33,340
+Dolayısıyla bir hoca kendisine göre bir curve yapıp şey yapamıyor. Bu 40 puanı daha yüksek bir harf puanıyla eşleştiremiyor.
+
+148
+00:39:33,679 --> 00:39:38,679
+40'ın altında ise dönem içi aktivitelerinizin total skoru direkt kalıyorsunuz.
+
+149
+00:39:39,159 --> 00:39:47,260
+O yüzden bu dönem içerisindeki midtermlere, dönem projesine ve laplara katılıma lütfen dikkat edin.
+
+150
+00:39:48,760 --> 00:39:52,639
+Final sınavına girme hakkınızı yitirmeyin.
+
+151
+00:39:52,639 --> 00:39:54,279
+Okey.
+
+152
+00:40:06,260 --> 00:40:08,800
+Okay, now this is the course outline.
+
+153
+00:40:10,520 --> 00:40:20,119
+What we are going to do, we are going to start with the beginning of the programming Java.
+
+154
+00:40:20,280 --> 00:40:30,119
+We are going to talk about Java programming language today a little bit, and then we are going to talk about objects.
+
+155
+00:40:30,708 --> 00:40:40,547
+In object-oriented programming, the programming unit is object and everything is done with the objects.
+
+156
+00:40:40,927 --> 00:40:46,288
+So we are going to learn what are the objects and what are the difference between the objects and classes.
+
+157
+00:40:46,288 --> 00:40:55,827
+We are going to learn UML. As I said, it's a graphical-based representation of object-oriented programming.
+
+158
+00:40:56,724 --> 00:41:04,064
+We are going to learn how we can use UML in order to represent object-oriented programs.
+
+159
+00:41:05,064 --> 00:41:07,064
+And then we are going to learn...
+
+160
+00:41:09,588 --> 00:41:35,288
+Objects' behavior. So we will learn how objects behave. We are going to learn their methods. So what kind of inputs that these methods are taking and what are the outputs of these methods. We will learn all of that. We are going to learn primitive data types.
+
+161
+00:41:35,711 --> 00:41:41,711
+Also, we are going to learn object-based data types, which we call wrappers.
+
+162
+00:41:43,092 --> 00:41:51,452
+And then we are going to learn how in Java we are calling functions, which we call call by value of references.
+
+163
+00:41:52,755 --> 00:41:57,055
+And then we are going to talk about object relations.
+
+164
+00:41:57,975 --> 00:42:01,735
+So we said that an object is a programming unit.
+
+165
+00:42:02,416 --> 00:42:09,456
+And this means that so all these programming units needs to collaborate with each other in order to do a function.
+
+166
+00:42:09,456 --> 00:42:13,036
+So therefore all these objects will have relations.
+
+167
+00:42:13,456 --> 00:42:17,496
+We will learn what kind of relations we have.
+
+168
+00:42:18,675 --> 00:42:28,155
+And UML is not only representing the program itself, it also represents the interactions between the program units.
+
+169
+00:42:28,635 --> 00:42:34,755
+So therefore, objects have interactions and we can use UML in order to show these interactions.
+
+170
+00:42:35,315 --> 00:42:39,875
+So therefore, we will also learn how we are using UML in order to do this.
+
+171
+00:42:40,996 --> 00:42:44,675
+And as I said, there are different types of...
+
+172
+00:42:46,324 --> 00:43:00,784
+Interactions between the objects. One of them is inheritance. So we will learn how the inheritance works. We will learn further advanced topics such as interfaces, multiple interfaces.
+
+173
+00:43:01,327 --> 00:43:07,887
+We will learn what polymorphism is, what method of writing and overloading is, and enumculosis.
+
+174
+00:43:07,887 --> 00:43:14,768
+Now, you can consider this as the first part of this lecture.
+
+175
+00:43:15,708 --> 00:43:20,807
+And so I'm hoping that I can cover all of this in one and a half months.
+
+176
+00:43:21,648 --> 00:43:21,788
+Okay.
+
+177
+00:43:22,587 --> 00:43:22,887
+And...
+
+178
+00:43:23,539 --> 00:43:32,679
+After that, in the second part of this lecture, so we are going to go into data structures in Java.
+
+179
+00:43:33,076 --> 00:43:40,675
+Ok, so what are the data structures that we are using in order to organize data in the physical memory?
+
+180
+00:43:40,935 --> 00:43:42,416
+So we will learn all of that.
+
+181
+00:43:42,956 --> 00:43:53,536
+We will learn how we are dealing with problems when our program is running, if the program encounters with a problem, how we are dealing with that.
+
+182
+00:43:53,715 --> 00:43:56,235
+So this is called exception handling.
+
+183
+00:43:57,811 --> 00:44:05,431
+And we are going to learn typecasting, which is to convert one object type to another object type.
+
+184
+00:44:05,731 --> 00:44:06,872
+How we are doing this.
+
+185
+00:44:07,731 --> 00:44:14,652
+And so by the time, so obviously we will start writing programs.
+
+186
+00:44:15,291 --> 00:44:21,231
+And all these programs will have to take some inputs and will have to produce some outputs.
+
+187
+00:44:21,231 --> 00:44:28,471
+And these inputs and outputs, so we will put them into the file system.
+
+188
+00:44:28,952 --> 00:44:35,652
+So which means that our programs will start interacting with the files that are sitting on the file system.
+
+189
+00:44:35,731 --> 00:44:43,172
+of your operating system. Okay. So therefore, so we will also learn how to work with files or streams.
+
+190
+00:44:43,891 --> 00:44:50,611
+And we will learn also other advanced topics called inner classes and multi-traffic.
+
+191
+00:44:50,971 --> 00:44:51,071
+Okay.
+
+192
+00:44:51,071 --> 00:44:54,951
+Now, this is what we are going to cover throughout the course.
+
+193
+00:44:55,771 --> 00:45:06,652
+And permitting the time, by the end of the course, I will also go into details of the graphical user interfaces using Swink.
+
+194
+00:45:07,091 --> 00:45:07,411
+Okay.
+
+195
+00:45:15,251 --> 00:45:23,891
+As we said, so we are going to learn object-oriented programming by using Java.
+
+196
+00:45:27,059 --> 00:45:30,400
+Java has different editions.
+
+197
+00:45:31,099 --> 00:45:36,380
+There's the standard edition, there's micro edition, there's enterprise edition, etc.
+
+198
+00:45:36,380 --> 00:45:42,140
+Now, all these editions have obviously different uses.
+
+199
+00:45:43,572 --> 00:46:03,231
+Micro edition, for example, is meant to run on mobile devices. Enterprise edition is meant to develop applications that can run on the servers with application that can run on the application servers.
+
+200
+00:46:03,231 --> 00:46:11,572
+Okay. And standard edition is suitable for any kind of application except the...
+
+201
+00:46:11,572 --> 00:46:29,811
+mobile devices. Okay. Now we are going to use this Java standard edition. But so if you learn this, then you so you won't have any difficulty to learn other editions as well. So it's just that they're providing additional capabilities.
+
+202
+00:46:30,612 --> 00:46:40,012
+As compared to the standard edition, so that your application run either on the server or on mobile device.
+
+203
+00:46:40,012 --> 00:46:47,152
+But in essence, so essentially, they all are the same.
+
+204
+00:46:52,628 --> 00:46:53,148
+Okay.
+
+205
+00:46:55,188 --> 00:47:01,887
+In Java, what we are going to, Java is an interpreted language.
+
+206
+00:47:02,608 --> 00:47:02,887
+Okay.
+
+207
+00:47:03,408 --> 00:47:08,468
+So there is two different programming languages, two different categories.
+
+208
+00:47:08,468 --> 00:47:13,508
+One is the compiler-based language, compiled language.
+
+209
+00:47:13,887 --> 00:47:16,328
+The second one is interpreted language.
+
+210
+00:47:17,588 --> 00:47:17,788
+Okay.
+
+211
+00:47:18,268 --> 00:47:20,268
+Now, in the...
+
+212
+00:47:20,307 --> 00:47:23,047
+Compiled-based language.
+
+213
+00:47:24,747 --> 00:47:25,867
+Okay, let's see.
+
+214
+00:47:29,768 --> 00:47:32,028
+So here is the source code.
+
+215
+00:47:32,447 --> 00:47:32,627
+Okay.
+
+216
+00:47:33,148 --> 00:47:35,827
+And in source code.
+
+217
+00:47:37,012 --> 00:47:42,392
+Let me first explain what the interpreted language means.
+
+218
+00:47:42,852 --> 00:47:45,492
+Then I can also explain the compiled language.
+
+219
+00:47:45,712 --> 00:47:53,072
+Now, first, in the interpreted language, so we write our code in Java.
+
+220
+00:47:53,731 --> 00:47:54,992
+This is the source code.
+
+221
+00:47:57,132 --> 00:48:04,532
+So we are using programming language in order to write a program that can solve a problem.
+
+222
+00:48:04,847 --> 00:48:27,188
+Okay. And then we are using the compiler of the programming language. In this case, in Java, we have the java.exe. Okay. It's an executable compiler. Now, the programming language compiler takes the source code and turns it to a compiled code.
+
+223
+00:48:27,923 --> 00:48:52,604
+Okay. Now, if you take the source code and have the Java create compiled code, the compiled code has an extension of which reads as dot class. Okay. The extension for the compiled code in Java dot class and the extension for the source code is dot Java. Okay. Now,
+
+224
+00:48:53,235 --> 00:49:06,036
+When the compile code is created, now this is the kind of code that is not ready yet to run on the CPU.
+
+225
+00:49:06,456 --> 00:49:12,155
+Now this execution, you can think of this as CPU, central processing unit.
+
+226
+00:49:13,435 --> 00:49:17,615
+Now this compiled code, okay, needs to be.
+
+227
+00:49:18,260 --> 00:49:43,916
+Şimdi, cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir cpu'nin bir c
+
+228
+00:49:43,923 --> 00:49:58,103
+Now, the interpreted language has another executable, which is in Java case, java.exe, or there is also javaw.exe.
+
+229
+00:49:58,103 --> 00:50:08,703
+Now, these are executable files, okay, which are responsible for interpreting the compiled code to the machine code.
+
+230
+00:50:09,556 --> 00:50:15,776
+In other words, these are responsible for converting the compiled code to the machine code.
+
+231
+00:50:17,776 --> 00:50:34,396
+Now, so when you create the Java.class file, and then you can use the Java.exe, which is the interpreter of the Java programming language.
+
+232
+00:50:34,996 --> 00:50:42,255
+It takes the compiled code and turns it into the machine code as your program runs.
+
+233
+00:50:43,255 --> 00:50:48,275
+And when the machine code is created, then it can be executed in the CPU.
+
+234
+00:50:49,476 --> 00:50:59,496
+Now, the interpreter version, interpreter component of the Java programming language called Java Virtual Machine, JVM.
+
+235
+00:50:59,496 --> 00:51:00,735
+Okay.
+
+236
+00:51:01,331 --> 00:51:09,231
+Now, in this case, you can think of Java programming language in two categories.
+
+237
+00:51:09,231 --> 00:51:21,231
+In one category, you have the compiler of Java, which is taking the source code and converting it to the compiled code.
+
+238
+00:51:21,599 --> 00:51:26,500
+And when the compiled code is created, it has the extension of that class.
+
+239
+00:51:27,159 --> 00:51:31,579
+And the second component of the Java programming language is the interpreter.
+
+240
+00:51:32,719 --> 00:51:35,980
+The interpreter is called Java Virtual Machine.
+
+241
+00:51:36,599 --> 00:51:42,920
+What interpreted is doing, it is taking the compiled code and converting into the machine code,
+
+242
+00:51:43,319 --> 00:51:48,639
+which can then run, which can be run on the CPU.
+
+243
+00:51:49,748 --> 00:51:50,248
+Okay?
+
+244
+00:51:51,668 --> 00:51:59,327
+Now, so I said that there is interpreted language and there is compiled language.
+
+245
+00:51:59,327 --> 00:52:02,628
+Okay, then what is the compiled language?
+
+246
+00:52:03,468 --> 00:52:13,468
+Now, in the compiled language, now there is no interpreter, which means that so when the source code is compiled,
+
+247
+00:52:14,068 --> 00:52:18,568
+To the compiled code, this compiled code is actually.
+
+248
+00:52:18,996 --> 00:52:43,516
+is in the machine code, which means that there is no interpreter between the compiled code and execution. There is no need for interpreter. Okay. Source code is compiled directly to the machine code so that it can be run on the CPU. Okay.
+
+249
+00:52:45,139 --> 00:52:50,980
+An example of compiled programming language is C programming language.
+
+250
+00:52:51,539 --> 00:52:51,639
+Okay.
+
+251
+00:52:52,280 --> 00:52:57,559
+And an example for interpreted language is Java programming language.
+
+252
+00:52:57,920 --> 00:52:58,079
+Okay.
+
+253
+00:52:58,260 --> 00:53:02,519
+For example, Python is also an interpreted language.
+
+254
+00:53:02,820 --> 00:53:02,980
+Okay.
+
+255
+00:53:03,300 --> 00:53:05,599
+Python is also similar to Java.
+
+256
+00:53:05,599 --> 00:53:10,760
+There is the compiler part and there is also interpreted part.
+
+257
+00:53:11,139 --> 00:53:11,280
+Okay.
+
+258
+00:53:27,188 --> 00:53:38,347
+Now, when we write programs in Java, we use Java Development Kit, JDK.
+
+259
+00:53:38,347 --> 00:53:40,488
+We use Java Development Kit.
+
+260
+00:53:42,488 --> 00:53:47,568
+Java Development Kit includes the compiler.
+
+261
+00:53:49,396 --> 00:53:55,235
+And also all the libraries that are necessary for you to create a source code.
+
+262
+00:53:55,235 --> 00:53:55,715
+Okay.
+
+263
+00:53:56,635 --> 00:54:07,056
+And over the years, Java community produce different versions of the programming language, as you see.
+
+264
+00:54:07,456 --> 00:54:20,096
+So, currently, you have 1.15, I believe. So, this is the standard edition JDK, Java Development Kit.
+
+265
+00:54:20,876 --> 00:54:28,735
+You have also the previous versions, but we always tend to use the latest version that Java produced.
+
+266
+00:54:28,735 --> 00:54:29,856
+Okay.
+
+267
+00:54:39,764 --> 00:54:55,003
+Here are some information where you can obtain the latest Java Development Kit so that you can use it on your laptop.
+
+268
+00:54:55,003 --> 00:54:55,703
+Okay.
+
+269
+00:54:56,275 --> 00:55:06,635
+And as you download the Java version, you can choose based on the hardware that you have.
+
+270
+00:55:06,635 --> 00:55:07,315
+Okay.
+
+271
+00:55:08,755 --> 00:55:17,255
+But what I prefer is, what I prefer you to do that is I want you to use Eclipse.
+
+272
+00:55:18,355 --> 00:55:19,635
+It's a...
+
+273
+00:55:20,851 --> 00:55:27,072
+Arkadaşlar, integrated development environment. It's an editor for writing code.
+
+274
+00:55:28,251 --> 00:55:38,951
+Therefore, I will ask you to download and use Eclipse in order to write code because it has some advantages.
+
+275
+00:55:39,652 --> 00:55:42,951
+There are also other editors like NetBeans.
+
+276
+00:55:43,391 --> 00:55:59,592
+IntelliJ, but I use Eclipse because it has integrations with UML and it has other integrations for developing web applications, et cetera.
+
+277
+00:56:00,251 --> 00:56:05,612
+So therefore, so starting with Eclipse will give you some advantage.
+
+278
+00:56:05,612 --> 00:56:10,431
+So you see there is also NetBeans, another editor that you can use.
+
+279
+00:56:10,951 --> 00:56:11,391
+But my recommendation is...
+
+280
+00:56:11,391 --> 00:56:15,391
+İlk yöntemde bir ekliypsi kullanmanız gerekiyor.
+
+281
+00:56:15,391 --> 00:56:19,391
+Ve sonra, bu ekliypsi kullanmanız gerekiyor.
+
+282
+00:56:19,391 --> 00:56:35,391
+Bu ekliypsi kullanmanız gerekiyor.
+
+283
+00:56:36,980 --> 00:56:44,000
+And so this is one of the things that I'm going to ask for you to do until next week.
+
+284
+00:56:44,000 --> 00:56:52,620
+I want you to go to the Eclipse website of or if you still prefer to use NetBeans, you can go to the NetBeans website.
+
+285
+00:56:52,780 --> 00:56:56,860
+I want you to download the editor to your computer.
+
+286
+00:56:57,620 --> 00:57:00,800
+OK. And I want you to just.
+
+287
+00:57:03,476 --> 00:57:06,596
+Make sure that the editor is installed okay.
+
+288
+00:57:07,196 --> 00:57:11,856
+And you can start writing code by using that editor.
+
+289
+00:57:12,376 --> 00:57:12,556
+Okay.
+
+290
+00:57:12,876 --> 00:57:21,036
+So later in the lectures, I will show you how you can write a program on Eclipse.
+
+291
+00:57:21,436 --> 00:57:24,516
+But I want you to first experiment by yourself.
+
+292
+00:57:25,736 --> 00:57:26,376
+Okay.
+
+293
+00:57:31,219 --> 00:57:50,339
+And the other thing I want you to install is a UML modeling tool. Now, there is Violet UML. It's an open source tool. And there's other different UML editors that you can use, but Violet UML is good enough.
+
+294
+00:57:51,251 --> 00:58:01,751
+You can also download it to your computer in order to create UML diagrams for the programs that you will write.
+
+295
+00:58:03,891 --> 00:58:04,771
+Okay.
+
+296
+00:58:06,911 --> 00:58:16,751
+Now, if you go to the website and if you download...
+
+297
+00:58:19,347 --> 00:58:22,987
+The codelar.zip, okay, to your computer.
+
+298
+00:58:23,507 --> 00:58:46,108
+And then if you go to the Eclipse site, and if you download the editor, okay, and if you turn and if you import the codelar directory that I sent it to you,
+
+299
+00:58:46,579 --> 00:58:59,820
+If you convert it to a project in the Eclipse environment so that you can start writing codes, that would be great.
+
+300
+00:58:59,820 --> 00:59:00,380
+Okay.
+
+301
+00:59:01,840 --> 00:59:06,400
+I said that until next week, so let's give it a two weeks time.
+
+302
+00:59:06,780 --> 00:59:06,940
+Okay.
+
+303
+00:59:07,280 --> 00:59:14,260
+What I expect from you is to download the codelars.zip and also Eclipse.
+
+304
+00:59:14,579 --> 00:59:27,780
+Editor and create a project for decodeler.zip on Eclipse so that you can start writing code or modifying the codes that I shared with you on that project.
+
+305
+00:59:27,780 --> 00:59:37,260
+Ok. Arkadaşlar, sizden isteğim şudur. Tekrar etmek için bunu söylüyorum.
+
+306
+00:59:37,844 --> 00:59:57,564
+Dersin sayfasına gelin. Burada iki tane zip dosyası var. Bunları indirin. Açıp direktörlere dönüştürün bunları. Arkasından ya Eclipse'in sayfasına gidin ya NetBeans'in sayfasına gidin. Eclipse'i kullanmanızı tercih ederim.
+
+307
+01:00:05,396 --> 01:00:21,715
+Proje oluşturun. Bu projeye de kodları indirmiş olduğunuz kodlar.zip ya da işte object-oriented-programming.zip dosyalarından kodları import edin. O direktörleri import edin.
+
+308
+01:00:22,099 --> 01:00:48,699
+İki tane farklı proje yaratın. Bir tanesi kodlar için, bir tanesi şey için, Dytel & Dytel'in Object Oriented Programming kodları için. İki tane ayrı proje oluşturun ve bunlar üzerinde artık ders içerisinde ileriye dönük olarak paylaşacağım bütün kodları görebileceksiniz.
+
+309
+01:00:49,364 --> 01:00:57,324
+Bunları gördükten sonra artık editör ortamında bunlar üzerinde kod yazabileceksiniz, kodları değiştirebileceksiniz.
+
+310
+01:00:58,043 --> 01:01:02,443
+Bunu önümüzdeki iki haftadık zaman içerisinde lütfen yapın.
+
+311
+01:01:02,543 --> 01:01:10,583
+Çünkü derste işlediğim konuları sizlerin gidip bu ortamda deniyor olmanızı istiyorum.
+
+312
+01:01:10,583 --> 01:01:16,844
+Bu sizin özellikle hem lablardan hem de mid-turnlardan başarılı olmanız için çok önemli.
+
+313
+01:01:19,764 --> 01:01:21,804
+Buralarda anlaşıyoruz diye ümit ediyorum.
+
+314
+01:01:26,900 --> 01:01:27,340
+Okay.
+
+315
+01:01:30,340 --> 01:01:34,180
+So let's give a break for 10 minutes.
+
+316
+01:01:34,360 --> 01:01:42,460
+Then I will start with the fundamentals of object orientation and try to cover as much as possible for today.
+
+317
+01:01:43,080 --> 01:01:48,880
+So let's give a break for 10 minutes in 10 minutes time.
+
+318
+01:01:49,000 --> 01:01:49,960
+So I will start again.
+
+319
+01:14:48,180 --> 01:14:54,400
+Evet arkadaşlar, tekrardan marhaba. Sesim geliyor mu? Tekrar bir teyit ederseniz memnunum.
+
+320
+01:14:55,140 --> 01:14:55,820
+Evet, geliyor hocam.
+
+321
+01:14:56,480 --> 01:14:56,980
+Tamamdır.
+
+322
+01:15:13,140 --> 01:15:29,079
+Okay, so let's now talk about fundamentals of object creation, object creation, object orientation, so the fundamentals of objects life cycle, I should say.
+
+323
+01:15:32,595 --> 01:15:40,536
+In Java, in object-oriented programming language, everything is done using objects.
+
+324
+01:15:40,536 --> 01:15:46,536
+You can think of object as the main programming element, main programming unit.
+
+325
+01:15:47,595 --> 01:15:56,495
+Now, what is an object? An object contains attributes and methods or tasks.
+
+326
+01:15:58,515 --> 01:16:21,515
+And so what are these attributes? These attributes, they could be any data about this object. Okay. And what are these tasks? They could be any methods that this object can do. Okay. So let's give...
+
+327
+01:16:22,003 --> 01:16:26,404
+Examples to this so that you have better understanding of this.
+
+328
+01:16:28,344 --> 01:16:39,363
+Now, for example, as you see in the screen, so let's show you a better example.
+
+329
+01:16:42,724 --> 01:16:43,523
+Okay.
+
+330
+01:16:47,956 --> 01:16:57,456
+Now, so we said that everything in object-oriented programming is done via objects.
+
+331
+01:16:57,456 --> 01:17:13,756
+For example, in order for you to understand, in order for you to distinguish an object, you can think of a car example.
+
+332
+01:17:14,079 --> 01:17:21,379
+Now, as you see here on the right hand side, you see different car objects.
+
+333
+01:17:22,159 --> 01:17:29,960
+Now, so here you have three different types of three different versions of car objects.
+
+334
+01:17:30,500 --> 01:17:34,420
+And everyone is different from the other one.
+
+335
+01:17:34,420 --> 01:17:39,879
+And all these objects have their attributes.
+
+336
+01:17:41,555 --> 01:17:43,555
+ve her metodlar.
+
+337
+01:17:43,555 --> 01:17:47,555
+Bu adıları bir adıları bir adıları bir adıları var.
+
+338
+01:17:47,555 --> 01:17:49,555
+Örneğin,
+
+339
+01:17:49,555 --> 01:17:51,555
+bir adıları var.
+
+340
+01:17:51,555 --> 01:17:53,555
+Örneğin,
+
+341
+01:17:53,555 --> 01:17:57,555
+bu adıları bir adıları var.
+
+342
+01:17:57,555 --> 01:18:07,051
+Bir adıları var.
+
+343
+01:18:07,064 --> 01:18:08,064
+ve
+
+344
+01:18:07,060 --> 01:18:12,380
+Here in this particular case, this car has a brand Ford.
+
+345
+01:18:12,380 --> 01:18:15,115
+And so...
+
+346
+01:18:15,123 --> 01:18:25,744
+And so the model, okay, and which is the Mustang, okay, the car for this one, Mustang, okay.
+
+347
+01:18:26,363 --> 01:18:34,503
+And another attribute, whether this car runs on gasoline or electricity, in this particular case, it runs on gasoline.
+
+348
+01:18:34,923 --> 01:18:39,484
+Now, you see that these are the attributes of this object, okay.
+
+349
+01:18:39,484 --> 01:18:42,603
+Now, every object has attributes.
+
+350
+01:18:43,123 --> 01:18:43,404
+Okay.
+
+351
+01:18:44,844 --> 01:18:48,384
+In this particular case, you also see another example.
+
+352
+01:18:48,564 --> 01:18:50,163
+Here you see three different objects.
+
+353
+01:18:50,423 --> 01:18:53,003
+Every object has different attributes.
+
+354
+01:18:53,923 --> 01:18:54,083
+Okay.
+
+355
+01:18:55,564 --> 01:19:03,283
+In addition to that, objects have methods as well.
+
+356
+01:19:03,283 --> 01:19:07,603
+For example, a car can start.
+
+357
+01:19:08,212 --> 01:19:11,992
+A car can stop or a car can accelerate.
+
+358
+01:19:12,592 --> 01:19:12,731
+Okay.
+
+359
+01:19:12,932 --> 01:19:19,512
+Now, these are the methods or tasks that a car object can do.
+
+360
+01:19:19,792 --> 01:19:20,272
+Okay.
+
+361
+01:19:21,272 --> 01:19:28,811
+So we already talked about different types of attributes, the color, the model, the year, the fuel type.
+
+362
+01:19:28,992 --> 01:19:31,112
+All these are the attributes of the car.
+
+363
+01:19:31,492 --> 01:19:36,211
+In addition to the attributes, a car object can have different methods.
+
+364
+01:19:36,711 --> 01:19:36,992
+Okay.
+
+365
+01:19:37,051 --> 01:19:38,652
+It can have different tasks.
+
+366
+01:19:39,188 --> 01:19:47,427
+And as you see in this particular case, the tasks for the cars, so starting, stopping or accelerating the cars.
+
+367
+01:19:52,627 --> 01:20:02,387
+Arkadaşlar, now, so therefore, an object, okay, has methods and also the data in it.
+
+368
+01:20:03,007 --> 01:20:10,387
+Arkadaşlar, so therefore, in Java, in object-oriented programming language, what we call this encapsulation.
+
+369
+01:20:10,771 --> 01:20:18,711
+Arkadaşlar, an object includes data and the methods in it and they cannot be separated.
+
+370
+01:20:18,711 --> 01:20:24,192
+Arkadaşlar, so therefore we call all this encapsulation.
+
+371
+01:20:37,779 --> 01:20:52,199
+Here you see, here is the object, and an object encapsulates the methods, okay, drive, stop, set speed, etc.
+
+372
+01:20:52,859 --> 01:21:05,779
+Also, the attributes, model, speed, engine, speed limit, all that attributes that might define this particular object.
+
+373
+01:21:05,779 --> 01:21:13,899
+Ok, so therefore we call this encapsulation in object-oriented programming language.
+
+374
+01:21:15,559 --> 01:21:23,199
+Ok, and in object-oriented programming language, data is accessed through the methods.
+
+375
+01:21:24,119 --> 01:21:32,079
+Ok, for example, if you wanted to access, let's go back, if you wanted to access,
+
+376
+01:21:37,395 --> 01:21:37,855
+Ok.
+
+377
+01:21:38,399 --> 01:21:54,559
+Any of this data here, color, size, capacity, weight, any of the data that is related with this object, you would have to access through the methods of the object.
+
+378
+01:21:55,359 --> 01:22:04,239
+Which means that if you want to get access to the value of the color, you would have to use get color method.
+
+379
+01:22:04,239 --> 01:22:06,239
+If you want to...
+
+380
+01:22:06,399 --> 01:22:13,659
+If you want to change the value of the size, then you would have to call the set size method.
+
+381
+01:22:13,959 --> 01:22:20,119
+Okay, even though getter and setter methods are not available here, we will see that.
+
+382
+01:22:21,079 --> 01:22:28,939
+So we will use those getter and setter methods in order to access and change the values of the object.
+
+383
+01:22:28,939 --> 01:22:29,619
+Okay.
+
+384
+01:22:34,387 --> 01:22:44,387
+Okay. Now, going back to the object, we said that object is the main programming unit in object-oriented programming languages.
+
+385
+01:22:44,387 --> 01:22:55,387
+And when we think the object, we think of the real world entities like the car object that I just showed you.
+
+386
+01:22:55,539 --> 01:23:09,279
+It includes an object in Java, includes the data, all the attributes about the object, and also the methods that are related to that object.
+
+387
+01:23:09,279 --> 01:23:22,279
+And in object-oriented programming languages, which we call this encapsulation aspect of the object-oriented programming languages.
+
+388
+01:23:22,996 --> 01:23:23,355
+Okay.
+
+389
+01:23:25,915 --> 01:23:28,456
+Now, what is then class?
+
+390
+01:23:28,935 --> 01:23:32,376
+Class is a template which defines the object.
+
+391
+01:23:33,015 --> 01:23:33,136
+Okay.
+
+392
+01:23:33,536 --> 01:23:41,395
+Now, going back to the one of the things that I have shown you here.
+
+393
+01:23:43,539 --> 01:23:50,100
+As you see, on the right-hand side, we have these objects, and on the left-hand side, we have this template.
+
+394
+01:23:50,100 --> 01:23:50,979
+Okay.
+
+395
+01:23:51,319 --> 01:23:58,079
+And this template is actually defines how the objects should be created.
+
+396
+01:23:58,960 --> 01:23:59,239
+Okay.
+
+397
+01:23:59,440 --> 01:24:08,479
+So therefore, you can consider class as a template of the objects, and you can consider objects as the real world entities.
+
+398
+01:24:08,960 --> 01:24:09,219
+Okay.
+
+399
+01:24:10,355 --> 01:24:25,735
+Bir arabanın tasarımını düşünün. Hani fabrikada bir arabanın tasarımını kağıt üzerinde yaptıklarını düşünün. Fabrikadan da bu tasarıma dayalı olarak araba objelerinin yaratılıp üretildiğini düşünün.
+
+400
+01:24:31,152 --> 01:24:39,072
+İşte iki kapılımı, dört kapılımı olması, rengi, işte motorunun şase numarası.
+
+401
+01:24:39,539 --> 01:24:49,200
+Ondan sonra içerisindeki koltuk sayısı bunların hepsi artık o araba objesinin özellikleri haline gelmiş oluyor.
+
+402
+01:24:49,200 --> 01:25:03,180
+Peki bu araba objelerini tanımlayan tasarım ne? Bu class. Bir tanesi template, diğerisi ise entity, real world entity.
+
+403
+01:25:07,539 --> 01:25:09,220
+Arkadaşlar, class, and objects.
+
+404
+01:25:09,739 --> 01:25:17,300
+Arkadaşlar, for example, here you see in this particular example, I have a car class, which you can consider is a template.
+
+405
+01:25:17,920 --> 01:25:23,180
+And based on that template, I created three different car objects.
+
+406
+01:25:23,619 --> 01:25:27,460
+And as you see, every car object is different from the other one.
+
+407
+01:25:28,260 --> 01:25:28,940
+Okay.
+
+408
+01:25:28,940 --> 01:25:33,059
+So each car object has different attributes.
+
+409
+01:25:33,860 --> 01:25:34,000
+Okay.
+
+410
+01:25:34,515 --> 01:25:35,627
+Um...
+
+411
+01:25:35,828 --> 01:25:43,668
+So you can say that, okay, what if I have totally the same attributes of two car types?
+
+412
+01:25:43,788 --> 01:25:56,048
+Yani iki tane car objesi düşünelim. İkisinin de bütün özellikleri aynı. Bu imkansız mutlaka bu arabalardan farklı olacak mutlaka bir atribüt olmalı.
+
+413
+01:25:56,048 --> 01:26:03,768
+O da mesela motorun şase numarasıdır. Motorun şase numarası hariç bütün özellikleri aynı olabilir.
+
+414
+01:26:03,828 --> 01:26:09,508
+Fabrikadan çıktıktan sonra satıldığında plaka da gelecektir. Plaka da birbirinden farklı olacaktır.
+
+415
+01:26:09,968 --> 01:26:15,408
+Dolayısıyla car objeleri ayrı birer real world entity.
+
+416
+01:26:16,328 --> 01:26:20,208
+Ama biz bunları bir template'e deyala oluşturuyoruz.
+
+417
+01:26:22,708 --> 01:26:27,128
+Now, here you can see that.
+
+418
+01:26:27,572 --> 01:26:29,572
+Arkadaşlar, this is the template.
+
+419
+01:26:29,952 --> 01:26:30,292
+Arkadaşlar, okay.
+
+420
+01:26:30,492 --> 01:26:33,391
+And from this template, I can create an object.
+
+421
+01:26:34,112 --> 01:26:37,192
+And this object will have attributes.
+
+422
+01:26:37,192 --> 01:26:40,051
+It has four tires, for example.
+
+423
+01:26:40,292 --> 01:26:42,772
+The color is green.
+
+424
+01:26:43,672 --> 01:26:45,192
+And so you can...
+
+425
+01:26:46,003 --> 01:26:58,623
+Define its size. However, so we have to have a template which is written in this particular way, which is called class.
+
+426
+01:27:05,268 --> 01:27:31,907
+Okay. Now, a class is a template which defines the object. And we are programming the Java programs as classes. Okay. But when we run the program, the real work is done by the objects. So which means that we are creating the, we are writing the code as classes. And when we run from these classes, objects are created.
+
+427
+01:27:32,399 --> 01:27:46,699
+And these objects are the programming units and they are doing the actual functioning that this program is supposed to do.
+
+428
+01:27:46,699 --> 01:27:47,279
+Okay.
+
+429
+01:27:49,652 --> 01:27:54,152
+And so another example, you may think of class as a cookie cutter.
+
+430
+01:27:54,591 --> 01:27:54,912
+Okay.
+
+431
+01:27:55,231 --> 01:27:58,572
+And you can think the objects as cookies.
+
+432
+01:27:59,031 --> 01:28:07,591
+Cookie cutter is creating the shape of the cookies.
+
+433
+01:28:25,844 --> 01:28:39,783
+Evet, [öğrenci] bir soru sormuş. Class için objenin oluşturulma kurallarını tanımlayan bir şey diyebiliriz.
+
+434
+01:28:39,783 --> 01:28:42,636
+Yani class bir objenin...
+
+435
+01:28:42,676 --> 01:28:54,176
+oluşturulmasında bir objenin içereceği, attribütlerin neler olacağı, bir objenin hangi fonksiyonları içereceğini tanımlayan şeydir diyebiliriz olsun.
+
+436
+01:28:54,176 --> 01:28:55,076
+Okay.
+
+437
+01:28:57,736 --> 01:29:02,236
+So, let's go, let's talk about more details.
+
+438
+01:29:02,656 --> 01:29:05,216
+An example object is a particular car.
+
+439
+01:29:05,336 --> 01:29:07,756
+I just gave you several examples.
+
+440
+01:29:08,224 --> 01:29:13,244
+Now, attributes, model, license, plate number, color, okay.
+
+441
+01:29:15,083 --> 01:29:15,564
+And
+
+442
+01:29:17,043 --> 01:29:27,863
+And actions, the methods could be the accelerating, stopping, or speeding.
+
+443
+01:29:28,283 --> 01:29:30,683
+All these are actions about the car.
+
+444
+01:29:31,043 --> 01:29:38,804
+Or it could be actions, whether you sell the car or you buy the car, those could also be considered as actions.
+
+445
+01:29:40,083 --> 01:29:40,283
+Okay?
+
+446
+01:29:42,583 --> 01:29:43,283
+And...
+
+447
+01:29:46,163 --> 01:29:54,423
+You can create any number of objects.
+
+448
+01:29:55,083 --> 01:29:59,583
+So this should be instead of classes, it should be objects you can create.
+
+449
+01:30:00,000 --> 01:30:04,200
+Any number of objects from different classes in object-oriented programming.
+
+450
+01:30:04,200 --> 01:30:12,739
+So as the examples that I have shown you, you can create any number of objects from a given classes.
+
+451
+01:30:13,000 --> 01:30:17,340
+And all of these objects will be different entities.
+
+452
+01:30:17,640 --> 01:30:19,200
+They will differ from each other.
+
+453
+01:30:26,131 --> 01:30:27,572
+Hocam bir soru sorabilir miyim?
+
+454
+01:30:28,531 --> 01:30:29,171
+Evet, tabii ki.
+
+455
+01:30:29,171 --> 01:30:34,771
+Buradaki classların structlardan farkı sadece içine fonksiyon ya da metot yazılması mı?
+
+456
+01:30:37,771 --> 01:30:47,171
+İçine fonksiyon ve metot yazıyorsunuz ve içindeki metot içindeki...
+
+457
+01:30:47,471 --> 01:31:05,231
+attribute'lara, yani fonksiyon ve metot aynı şey. Yani bir class'ın içerisine data ve metotları yazabiliyorsunuz ve bu dataya ulaşabilmek için kuralları tanımlayabiliyorsunuz.
+
+458
+01:31:05,231 --> 01:31:15,231
+Object-oriented programming'te. Yani struct'tan farklı olarak ben şunu diyebiliyorum. Diyorum ki ben içine datayı koydum objeyi.
+
+459
+01:31:15,475 --> 01:31:22,615
+Ve bu objeye, içerisindeki dataya ulaşılma kurallarını da tanımlayacağım.
+
+460
+01:31:22,615 --> 01:31:34,595
+Bunu az sonra ileride göreceğiz. Mesela diyeceğim ki, şuradaki dataya sadece şu tipte ulaşılabilir.
+
+461
+01:31:35,735 --> 01:31:42,355
+Ve ulaşırken sadece bu sınıfın içerisindeki metotları kullanarak ulaşabilirsin.
+
+462
+01:31:43,252 --> 01:31:49,932
+Ve bunu hem herkes tarafından ulaşabilir yapabilirim.
+
+463
+01:31:50,532 --> 01:31:54,092
+Sadece bu sınıf içerisinden ulaşabilir yapabilirim.
+
+464
+01:31:54,592 --> 01:31:59,971
+Bu sınıf ve sınıfın altındaki alt sınıflar tarafından ulaşılabilir yapabilirim.
+
+465
+01:32:00,311 --> 01:32:09,832
+Bunların hepsini object-oriented programmingin bu encapsulation dediğimiz şeyi sağlıyor, konsepti sağlıyor.
+
+466
+01:32:11,636 --> 01:32:13,176
+Anladım hocam, teşekkür ederim.
+
+467
+01:32:14,316 --> 01:32:34,236
+Aynı şekilde metotlar için de bu böyle. Yani metotların da kimler tarafından ulaşılabileceğini ayarlayabiliyorum. Diyelim ki mesela ben bir tane sınıf yazdım. Bu sınıf bir kütüphanenin içerisinde yer aldı. Bu kütüphanenin içerisinde çok sayıda başka sınıf var.
+
+468
+01:32:34,707 --> 01:32:42,967
+Ben kendi sınıfımdaki metotları kimler tarafından, hangi sınıflar tarafından ulaşılabileceğini belirtebilirim.
+
+469
+01:32:43,327 --> 01:32:48,608
+Derim ki mesela benim kütüphanemde diyelim ki şimdi öğrenmediniz, az sonra öğreneceksiniz.
+
+470
+01:32:49,108 --> 01:32:55,707
+Package, package'lar olur. Yani bir kütüphanenin içinde farklı package'lar olur, kategoriler olur, öyle diyelim.
+
+471
+01:32:56,427 --> 01:32:59,747
+Bu package'ların içerisinde sınıflar gruplandırılmış olur.
+
+472
+01:33:02,707 --> 01:33:07,167
+Ama sadece aynı pekiçteki sınıflara ulaşsın. Bunu diyebilirim.
+
+473
+01:33:07,587 --> 01:33:17,608
+Diyebilirim ki benim sınıfım ve benim sınıfımdan türetilmiş olan diğer sınıflar ancak bu metoda ulaşsın diyebilirim.
+
+474
+01:33:17,608 --> 01:33:24,827
+Ya da şunu diyebilirim. Bütün sınıflar benim metotlarımı görebilir ve bunlara ulaşılabilir.
+
+475
+01:33:25,347 --> 01:33:29,567
+Bu da yine encapsulation'ın bir parçası. Yani object-oriented programming diyor ki
+
+476
+01:33:29,939 --> 01:33:39,420
+Ben diyor, bütün programlama işini birbirinden bağımsız bu object entitilerine yaptırmak istiyorum diyor.
+
+477
+01:33:39,420 --> 01:33:51,167
+Ve bu object entitilerinin içerisindeki datanın ve metotların ne şekilde ve kim tarafından ulaşılabilir olduğunu da...
+
+478
+01:33:51,167 --> 01:34:19,167
+belirlenmesine olanak sağlıyor. Bunu nasıl belirliyoruz? İleride excess modifiers dediğimiz konuyu konuşunca göreceğiz. Bu da sınıfı yazarken, class'ı yazarken bu excess modifierlarla beraber yazıyoruz. Hem datalarını hem metotlarını. Bunu yaptığımız zaman da sınıftan oluşturulmuş her bir objenin hangi metotlarına, hangi datalarına, ne şekil?
+
+479
+01:34:19,167 --> 01:34:21,127
+Bu şekilde ulaşabileceğini tanımlayabiliyoruz arkadaşlar.
+
+480
+01:34:26,612 --> 01:34:27,072
+Okay.
+
+481
+01:34:29,112 --> 01:34:37,211
+Now, we said that object is created based on the class.
+
+482
+01:34:37,431 --> 01:34:40,471
+Class is a template of the object.
+
+483
+01:34:40,931 --> 01:34:41,012
+Okay.
+
+484
+01:34:41,672 --> 01:34:49,592
+And we also said that an object has data and also the methods in it.
+
+485
+01:34:49,592 --> 01:34:50,291
+Okay.
+
+486
+01:34:50,912 --> 01:34:54,032
+Now, the data of an object.
+
+487
+01:34:54,868 --> 01:35:04,508
+is, can be categorized under two categories. Okay. One is the primitive. The second one is the non-primitive.
+
+488
+01:35:05,908 --> 01:35:33,888
+Okay. Now, data of an object is also called attributes. Okay. Now, primitive attributes and non-primitive attributes. Now, primitive attributes, you've seen C programming language so far. So, therefore, you know what kind of primitive data types are there. So, we have integer, we have double, we have float, we have
+
+489
+01:35:33,908 --> 01:35:41,908
+Boolean. There are eight different primitive data type that is defined by Java programming language also.
+
+490
+01:35:42,568 --> 01:35:46,948
+Now we can use all these primitive data types in Java.
+
+491
+01:35:47,828 --> 01:35:53,028
+In addition to that, the second category is the non-primitive data types.
+
+492
+01:35:53,748 --> 01:35:53,828
+Okay.
+
+493
+01:35:54,128 --> 01:36:01,988
+Now, in Java, we can use classes as the types of the data.
+
+494
+01:36:01,988 --> 01:36:04,568
+So we will later learn that.
+
+495
+01:36:05,108 --> 01:36:09,028
+Now, a class can also be a data type.
+
+496
+01:36:09,524 --> 01:36:25,024
+Okay. And we call this as non-primitive data type. Okay. Now the primitive data type is, in Java, we have eight different primitive data types. It is the common primitive data types in any programming language.
+
+497
+01:36:25,587 --> 01:36:36,547
+As the non-primitive data types, we will learn that a class, which I called as the template of the object, can also be used as type of the data.
+
+498
+01:36:37,087 --> 01:36:40,067
+Okay, so we will go into details of this later.
+
+499
+01:36:42,587 --> 01:36:49,067
+Now, from now forward, so you will see.
+
+500
+01:36:49,555 --> 01:36:56,275
+You will hear different terminology from me and also you will see on the slides.
+
+501
+01:36:56,835 --> 01:37:05,495
+So therefore, it's better for you to understand and distinguish this terminology.
+
+502
+01:37:05,495 --> 01:37:10,355
+Now, when I say data of an object.
+
+503
+01:37:10,899 --> 01:37:13,739
+It means the attribute of the objects.
+
+504
+01:37:14,379 --> 01:37:14,520
+Okay.
+
+505
+01:37:14,920 --> 01:37:20,420
+And it's also named as field, data field of the object.
+
+506
+01:37:20,659 --> 01:37:23,260
+It's also called as member field.
+
+507
+01:37:23,559 --> 01:37:23,840
+Okay.
+
+508
+01:37:24,779 --> 01:37:26,439
+They all are the same.
+
+509
+01:37:26,760 --> 01:37:26,979
+Okay.
+
+510
+01:37:26,979 --> 01:37:36,139
+If you go to Dytel and Dytel book, you will see that member field, data field, attribute, they all are the same.
+
+511
+01:37:36,619 --> 01:37:36,739
+Okay.
+
+512
+01:37:38,131 --> 01:37:50,492
+Now, when you look at old data, all together, they are called state of an object.
+
+513
+01:37:50,492 --> 01:37:51,371
+Okay.
+
+514
+01:37:51,671 --> 01:37:58,331
+Now, say the color of the car, brand of the car.
+
+515
+01:37:59,060 --> 01:38:05,580
+Type of the car, year of the car, license plate of the car, they are attributes of a car object.
+
+516
+01:38:05,580 --> 01:38:12,620
+When you put all of them together, they are called the state of the car object.
+
+517
+01:38:13,380 --> 01:38:19,900
+All the values of the attributes of an object called the state of a car object.
+
+518
+01:38:20,400 --> 01:38:23,580
+So if we go back...
+
+519
+01:38:24,692 --> 01:38:36,172
+Arkadaşlar, to these examples, as you see, the state of the first car object is all these three things, the values of the attribute values.
+
+520
+01:38:36,172 --> 01:38:44,431
+Now, the state of the second object is all these three things, okay? The third object is all these three things, okay? All together, okay?
+
+521
+01:38:50,068 --> 01:39:00,948
+Now, you will also see that I will name task of an object as an action or function or method or member method.
+
+522
+01:39:01,087 --> 01:39:02,208
+They all are the same.
+
+523
+01:39:02,547 --> 01:39:10,768
+So when you call a method of an object, it could be a task of an object, action of an object, function of it.
+
+524
+01:39:10,807 --> 01:39:11,768
+They all are the same.
+
+525
+01:39:12,768 --> 01:39:13,047
+Okay.
+
+526
+01:39:15,539 --> 01:39:31,699
+And when we say members of an object, okay, which we are talking about the methods, methods and the fields, okay, methods and the field, they all are the member of an object.
+
+527
+01:39:33,159 --> 01:39:33,839
+Okay.
+
+528
+01:39:34,839 --> 01:39:38,859
+Now, when we talk about class,
+
+529
+01:39:40,020 --> 01:39:44,820
+Class is also will be called as type.
+
+530
+01:39:45,720 --> 01:39:45,960
+Okay.
+
+531
+01:39:46,280 --> 01:39:50,640
+Now you can consider this.
+
+532
+01:39:51,140 --> 01:39:56,280
+You can easily understand it from any of these figures.
+
+533
+01:39:56,600 --> 01:40:01,659
+As you see, I have three things here, three different entities.
+
+534
+01:40:01,659 --> 01:40:04,739
+And they all have the type.
+
+535
+01:40:05,235 --> 01:40:08,576
+This car class, okay?
+
+536
+01:40:09,136 --> 01:40:12,676
+They all have the same type.
+
+537
+01:40:13,176 --> 01:40:18,296
+Again, as you see in this particular example, I have three things here.
+
+538
+01:40:18,756 --> 01:40:23,456
+They all have the same type, same template, okay?
+
+539
+01:40:23,876 --> 01:40:33,235
+Initially, when I explained it to you, I said that car class is the template for all these three real...
+
+540
+01:40:33,235 --> 01:41:00,996
+real world objects, which are the car objects, okay? Now, which means that they are the type of this class, okay? So because they are produced based on this class template. So therefore, you can consider this class as the type of these objects which are created. Therefore, from now forward, when we talk about also class, we are going to call, talk about type, okay? So therefore,
+
+541
+01:41:01,235 --> 01:41:12,296
+When I said the non-primitive data types, any number objects have a type of classes.
+
+542
+01:41:12,296 --> 01:41:12,796
+Okay.
+
+543
+01:41:13,756 --> 01:41:20,756
+An object has a type, which is the class from which this object is created.
+
+544
+01:41:21,555 --> 01:41:30,155
+We have eight different primitive data types, integer, float, boolean, double, etc.
+
+545
+01:41:30,555 --> 01:41:37,715
+And also we have non-primitive data types. In this particular case, a class is a type of an object.
+
+546
+01:41:40,195 --> 01:41:44,975
+Okay. Now, another terminology that you should be familiar with.
+
+547
+01:41:45,427 --> 01:41:57,607
+Now, if an object of a class C, if there is an object of, let's say, class C, now we also call that this object is instance of class C.
+
+548
+01:41:58,100 --> 01:42:06,039
+Now, instance of, which means that an object could be an instance of a class.
+
+549
+01:42:06,800 --> 01:42:11,079
+So this is also a terminology that we are going to use.
+
+550
+01:42:11,079 --> 01:42:21,800
+So basically, so what actually we are saying, so we are looking from two different perspectives.
+
+551
+01:42:22,520 --> 01:42:24,359
+Now, object.
+
+552
+01:42:26,355 --> 01:42:30,895
+An object has a type for class.
+
+553
+01:42:31,315 --> 01:42:33,175
+Each object has a type for class.
+
+554
+01:42:33,475 --> 01:42:37,115
+And also object is instance of the class.
+
+555
+01:42:37,695 --> 01:42:37,855
+Okay.
+
+556
+01:42:38,275 --> 01:42:46,076
+If you read it from top level to here, an object is instance of class.
+
+557
+01:42:46,076 --> 01:42:49,595
+And also an object has a type class.
+
+558
+01:42:50,095 --> 01:42:50,235
+Okay.
+
+559
+01:42:50,836 --> 01:42:52,195
+They both are true.
+
+560
+01:42:52,476 --> 01:42:55,855
+And we will use this terminology over the course.
+
+561
+01:42:59,195 --> 01:43:08,136
+And at the beginning of the course, I said that, so we are going to use,
+
+562
+01:43:09,268 --> 01:43:17,168
+Graphical-based representation of object-oriented programming, okay, and which is called UML, UML representation.
+
+563
+01:43:18,008 --> 01:43:27,168
+And as you see here, there is a rectangle shape, and this is a representation for...
+
+564
+01:43:28,176 --> 01:43:37,836
+Arkadaşlar, class, in this particular case, this is a car class, that's why I have written car in the middle of this rectangle shape.
+
+565
+01:43:38,436 --> 01:43:44,896
+And there is another rectangle shape in this particular case, this is an instance of this class.
+
+566
+01:43:45,615 --> 01:43:48,676
+So therefore, this is an object of this class.
+
+567
+01:43:49,536 --> 01:43:54,176
+And in order to show the object, what I do is that
+
+568
+01:43:54,547 --> 01:44:07,727
+I put the name of the object in front of the class name and name of the object column and then the class name.
+
+569
+01:44:08,187 --> 01:44:11,387
+So this is how I'm showing the object.
+
+570
+01:44:11,807 --> 01:44:14,007
+Now, this is different, obviously, than this one.
+
+571
+01:44:14,007 --> 01:44:21,207
+This is a class which is the template of the object or you could say this is an, this is.
+
+572
+01:44:22,452 --> 01:44:23,891
+Arkadaşlar, type of the object.
+
+573
+01:44:24,471 --> 01:44:25,652
+Arkadaşlar, this is the object.
+
+574
+01:44:25,831 --> 01:44:28,912
+Arkadaşlar, therefore, the representation of it is different.
+
+575
+01:44:29,532 --> 01:44:34,511
+Arkadaşlar, this is the instance of this car class.
+
+576
+01:44:36,532 --> 01:44:41,871
+Arkadaşlar, and this has a type for of car class.
+
+577
+01:44:41,992 --> 01:44:44,051
+Arkadaşlar, we can say all of these things.
+
+578
+01:44:44,112 --> 01:44:45,351
+Arkadaşlar, all of these things are true.
+
+579
+01:44:49,300 --> 01:44:52,820
+Now, we are going to use UML diagram for two things.
+
+580
+01:44:54,080 --> 01:45:07,620
+So, we can, so first, actually, apart from this, we are going to use UML representation for classes, as you see here, and classes and objects.
+
+581
+01:45:08,115 --> 01:45:17,796
+And we are going to also use this UML representations for showing the interactions between the classes, between the objects.
+
+582
+01:45:18,496 --> 01:45:20,576
+Okay? Interactions between the objects.
+
+583
+01:45:22,131 --> 01:45:25,671
+Now, you can do this via two things.
+
+584
+01:45:25,811 --> 01:45:31,711
+You can either do this sequence diagrams by using UMLs or collaboration diagrams.
+
+585
+01:45:31,711 --> 01:45:34,171
+We are going to use the sequence diagrams.
+
+586
+01:45:34,411 --> 01:45:43,112
+We will draw sequence diagrams in order to show the interactions between the objects.
+
+587
+01:45:44,631 --> 01:45:45,271
+Okay.
+
+588
+01:45:48,491 --> 01:45:49,171
+Now,
+
+589
+01:45:49,908 --> 01:45:58,728
+We said that, so now we talked about the classes, we talked about the objects, and we talked about the members of an objects.
+
+590
+01:45:59,507 --> 01:45:59,608
+Okay.
+
+591
+01:46:00,268 --> 01:46:07,228
+And we said that every object is different entity.
+
+592
+01:46:07,828 --> 01:46:08,068
+Okay.
+
+593
+01:46:08,728 --> 01:46:13,688
+So when you create, for example, a car,
+
+594
+01:46:14,355 --> 01:46:28,115
+In the car factory, when the car object is created, then it's a physical entity. It is different than any other car object which is created before. Okay?
+
+595
+01:46:28,916 --> 01:46:35,496
+Now, each object is different because their state is different. Okay?
+
+596
+01:46:35,988 --> 01:46:44,007
+Their state is different. What was the state? State was the values of all the attributes that the car object has.
+
+597
+01:46:44,887 --> 01:46:44,948
+Okay.
+
+598
+01:46:46,667 --> 01:46:56,728
+If the two, so when the two objects is created, even if one of the attributes is different, then we call that their state is different.
+
+599
+01:46:56,728 --> 01:46:58,408
+Okay. And obviously,
+
+600
+01:47:02,931 --> 01:47:09,271
+All the time, at least one attribute of the two different physical entity will be different.
+
+601
+01:47:09,271 --> 01:47:18,271
+So if you create two car objects, every data member might be the same, but you know that the...
+
+602
+01:47:19,060 --> 01:47:24,880
+A, engine, chases, number, chasse numerası, will be different.
+
+603
+01:47:25,180 --> 01:47:40,500
+Okay, even though all other attributes, the color and the brand and the type, the number of tires, all the other attributes are the same, you know that their engine number will be different.
+
+604
+01:47:40,500 --> 01:47:43,039
+So, therefore, their state is different.
+
+605
+01:47:43,260 --> 01:47:47,060
+Even if one of the attributes is different, then this means that their whole...
+
+606
+01:47:47,060 --> 01:47:48,140
+All state is different.
+
+607
+01:47:49,320 --> 01:47:49,500
+Okay?
+
+608
+01:47:51,100 --> 01:48:09,579
+Now, when you create two objects of the same class, what we will do, we will have two different entities in the Java Virtual Memory.
+
+609
+01:48:09,935 --> 01:48:14,595
+Okay, in the physical memory, we will have two different objects.
+
+610
+01:48:15,075 --> 01:48:18,195
+Okay, that belongs to the same class.
+
+611
+01:48:18,855 --> 01:48:19,115
+Okay.
+
+612
+01:48:20,555 --> 01:48:22,955
+So this means that, say,
+
+613
+01:48:24,275 --> 01:48:28,695
+Again, so I have to go back to this example.
+
+614
+01:48:28,695 --> 01:48:49,135
+So if let's say in physical memory, okay, if I create three different objects of the car class, okay, in the physical memory, I will have three different objects, okay, in different locations of the physical memory.
+
+615
+01:48:49,684 --> 01:49:01,524
+Okay. And in the physical memory, I will access to these objects with different reference numbers. Okay. This is something that you should keep in mind.
+
+616
+01:49:03,824 --> 01:49:07,424
+Okay. Now, Java Virtual Machine.
+
+617
+01:49:12,083 --> 01:49:17,684
+uses a unique identifier in order to keep track of all these objects.
+
+618
+01:49:18,184 --> 01:49:35,144
+So when you create an object by using Java, in the physical memory, Java Virtual Machine assigns a unique identifier to each of these objects and throughout the execution of the program.
+
+619
+01:49:35,536 --> 01:49:41,615
+It keeps track of all these objects in the physical memory.
+
+620
+01:49:41,756 --> 01:49:47,195
+So you don't have to deal with where these objects are located in the physical memory.
+
+621
+01:49:47,376 --> 01:49:51,216
+Java Virtual Machine takes care of that on your behalf.
+
+622
+01:49:52,716 --> 01:49:52,935
+Okay.
+
+623
+01:49:55,076 --> 01:50:00,000
+And here is one example that I already...
+
+624
+01:50:00,000 --> 01:50:16,699
+So you know that if there are two cars, so even all the attributes of the cars are the same, at least one attribute will be different in this particular case.
+
+625
+01:50:16,699 --> 01:50:21,779
+Their license place will be different, so therefore, so you know that.
+
+626
+01:50:23,675 --> 01:50:29,735
+Arkadaşlar, object,
+
+627
+01:50:22,355 --> 01:50:28,875
+Arkadaşlar, these are two different objects, but they might have the same type.
+
+628
+01:50:29,075 --> 01:50:32,215
+Arkadaşlar, they might have the same type, which is the same class.
+
+629
+01:50:40,404 --> 01:50:51,404
+Now, two different objects can give you different answers when you call their methods.
+
+630
+01:50:52,304 --> 01:50:56,644
+Now, the reason for that is their state is different.
+
+631
+01:50:57,384 --> 01:50:57,524
+Okay.
+
+632
+01:50:57,704 --> 01:51:01,024
+For example, let's think of two different cars.
+
+633
+01:51:01,747 --> 01:51:12,007
+Who, their color, their number of tires, their, every attribute of these two cars are the same.
+
+634
+01:51:12,148 --> 01:51:19,047
+Obviously, one attribute will be different, which is the chases number or their license place will be different.
+
+635
+01:51:19,047 --> 01:51:24,988
+But apart from that, all the other attributes have the same values.
+
+636
+01:51:25,507 --> 01:51:25,608
+Okay.
+
+637
+01:51:26,127 --> 01:51:26,648
+Now.
+
+638
+01:51:27,072 --> 01:51:34,252
+Also, the amount of fuel that each of these cars have will also be different, okay?
+
+639
+01:51:34,532 --> 01:51:38,212
+Because each car is being driven by a different person.
+
+640
+01:51:38,731 --> 01:51:43,271
+So therefore, the amount of fuel that each car has will be different.
+
+641
+01:51:43,731 --> 01:51:52,051
+So therefore, if these cars are asked to do a task, for example, let's say accelerate.
+
+642
+01:51:52,591 --> 01:51:55,072
+Okay, that's a task that a car can do.
+
+643
+01:51:55,731 --> 01:52:06,752
+If you ask, if you execute, accelerate methods for each of these cars, they will behave differently, okay?
+
+644
+01:52:06,892 --> 01:52:10,292
+Because the amount of fuel that each car has difference.
+
+645
+01:52:11,172 --> 01:52:19,572
+So therefore, since their state is different, since the data values that each of these objects have different,
+
+646
+01:52:19,572 --> 01:52:23,731
+so therefore, when you call a method of these objects,
+
+647
+01:52:23,731 --> 01:52:27,512
+Arkadaşlar, these objects will behave differently.
+
+648
+01:52:28,332 --> 01:52:33,392
+Arkadaşlar, so therefore, every object is different individual.
+
+649
+01:52:34,292 --> 01:52:46,752
+Arkadaşlar, so even though the objects have the same type or the objects are created from the same class, their behavior will be different because their state is different.
+
+650
+01:52:49,272 --> 01:52:50,032
+Arkadaşlar, okay.
+
+651
+01:52:53,427 --> 01:53:04,707
+Now, we said that objects are the programming units and everything in object-oriented programming is done by using these programming units.
+
+652
+01:53:05,547 --> 01:53:12,207
+Now, these programming units are actually interacting with each other by sending messages to each other.
+
+653
+01:53:13,887 --> 01:53:15,627
+How do they do that?
+
+654
+01:53:16,068 --> 01:53:20,967
+Basically, when you call a method of an object,
+
+655
+01:53:21,395 --> 01:53:27,755
+We are saying that this object is you are sending a message to that object.
+
+656
+01:53:27,956 --> 01:53:32,296
+Calling a method of an object, we are calling is sending a message.
+
+657
+01:53:32,296 --> 01:53:33,036
+Okay.
+
+658
+01:53:33,492 --> 01:53:50,772
+Now, every object are sending other objects' messages, which means that every object is calling the methods of those objects in order to execute the functioning of your program in general.
+
+659
+01:53:50,772 --> 01:53:58,532
+So therefore, we will start using sending message terminology also.
+
+660
+01:54:01,203 --> 01:54:01,603
+Okay.
+
+661
+01:54:03,363 --> 01:54:27,703
+And previously, so we talked about, we said that we have the member fields and the member methods, and the member fields, the data fields of an object can be accessed through the methods of that object.
+
+662
+01:54:28,159 --> 01:54:32,020
+Arkadaşlar, they can be accessed through the methods of the objects.
+
+663
+01:54:32,280 --> 01:54:33,360
+Arkadaşlar, what are those methods?
+
+664
+01:54:33,539 --> 01:54:35,380
+Arkadaşlar, they are getter and setter methods.
+
+665
+01:54:36,079 --> 01:54:44,460
+Arkadaşlar, so we can access a member field of an object by using the getter and setter methods.
+
+666
+01:54:44,960 --> 01:54:45,460
+Arkadaşlar, okay.
+
+667
+01:54:46,452 --> 01:55:02,072
+So therefore, in almost in every object-oriented programming language, so we use these getter and setter methods in order to access the data member fields.
+
+668
+01:55:02,072 --> 01:55:02,551
+Okay.
+
+669
+01:55:04,331 --> 01:55:04,971
+And.
+
+670
+01:55:15,828 --> 01:55:26,307
+Okay. And we also other methods in order to execute some functions.
+
+671
+01:55:27,060 --> 01:55:30,539
+Arkadaşlar, in the object.
+
+672
+01:55:30,939 --> 01:55:31,079
+Okay.
+
+673
+01:55:31,739 --> 01:55:48,439
+And for example, so there could be some functioning related to the, related to the functioning of the entity, accelerate, stop, or.
+
+674
+01:55:50,003 --> 01:55:56,123
+Start. Now, all these are the member methods of that particular object.
+
+675
+01:55:56,123 --> 01:55:56,643
+Okay.
+
+676
+01:56:09,619 --> 01:56:18,739
+Now, you see here a UML representation of a class and an object which is created based on this class.
+
+677
+01:56:18,739 --> 01:56:19,279
+Okay.
+
+678
+01:56:19,800 --> 01:56:27,380
+And also you see a sequence diagram, a piece of the sequence diagram that we will use.
+
+679
+01:56:27,939 --> 01:56:31,899
+Now, you see on the left-hand side.
+
+680
+01:56:32,532 --> 01:56:55,132
+There is this class and there is within this, so here there is a getPlate method which is being called and getPlate method is sending a message to the kit object which is an object created based on the car class.
+
+681
+01:56:56,948 --> 01:57:04,888
+And there is a getPlate method here, as you see, the code body of the getPlate method.
+
+682
+01:57:05,488 --> 01:57:13,848
+And as a result, it returns the value of getPlate as a string, okay, in return.
+
+683
+01:57:14,192 --> 01:57:19,871
+Now, this is the sequence diagram which we will learn later in detail.
+
+684
+01:57:20,612 --> 01:57:24,911
+So this is what you will encounter that you should know.
+
+685
+01:57:25,551 --> 01:57:29,431
+So this is the sequence diagram that we will study later.
+
+686
+01:57:29,431 --> 01:57:32,311
+And the code representation for this is this.
+
+687
+01:57:32,787 --> 01:57:37,707
+As you see, here I am calling the getPlate method of an object.
+
+688
+01:57:37,707 --> 01:57:45,367
+So here's the name of the object, dot, and then comes the name of the method.
+
+689
+01:57:46,228 --> 01:57:46,847
+Okay.
+
+690
+01:57:49,011 --> 01:57:54,431
+An object accesses a member of another object by sending a message to that object.
+
+691
+01:57:54,431 --> 01:57:59,611
+As you see here, so this one is also object.
+
+692
+01:58:00,192 --> 01:58:06,431
+So when I start, I call this as a class, but this is also object.
+
+693
+01:58:06,811 --> 01:58:15,891
+Now, this object is accessing to a method of another object by sending a message, which is in this place, a get plate.
+
+694
+01:58:17,011 --> 01:58:19,171
+By calling a method of another object.
+
+695
+01:58:19,631 --> 01:58:23,171
+So we are going to name that action as sending a message.
+
+696
+01:58:23,636 --> 01:58:32,456
+Okay. An object-oriented program executes as pass matches between objects. That is true.
+
+697
+01:58:32,456 --> 01:58:50,176
+So if you consider this as an object-oriented program and the execution of this program happens by these objects sending each other messages and all these messages being executed by the corresponding objects.
+
+698
+01:58:53,300 --> 01:58:53,699
+Okay.
+
+699
+01:59:00,404 --> 01:59:01,084
+And
+
+700
+01:59:06,547 --> 01:59:33,648
+In Java programming language, when we write our program, in order to simplify our program, in order to write a better program, in order to create a better programming exercise, we are using packages, which means that we are putting together the classes.
+
+701
+01:59:34,676 --> 01:59:40,396
+which have the same purpose under the same package.
+
+702
+01:59:41,176 --> 01:59:41,296
+Okay.
+
+703
+01:59:41,496 --> 01:59:52,256
+Now, this package, you can consider this package as the folder in which you are putting the .java files in it.
+
+704
+01:59:52,616 --> 01:59:52,856
+Okay.
+
+705
+01:59:53,116 --> 01:59:58,176
+Now, you may have more than one package, obviously, in a program.
+
+706
+01:59:58,176 --> 02:00:00,000
+And sometimes...
+
+707
+02:00:00,000 --> 02:00:05,519
+One package might be under another package as in this particular example.
+
+708
+02:00:06,079 --> 02:00:06,179
+Okay.
+
+709
+02:00:06,639 --> 02:00:17,759
+And when we write our Java program in order to access to these classes, we will need to have at the beginning of the class import statements.
+
+710
+02:00:18,079 --> 02:00:22,239
+Now here you see that I have three import statements, which means that.
+
+711
+02:00:23,604 --> 02:00:29,564
+So the class A can be accessed underneath the package one.
+
+712
+02:00:30,464 --> 02:00:37,944
+The second import statement says that every class under package one can be accessed.
+
+713
+02:00:38,515 --> 02:00:47,155
+The third one says that every class underneath package one and then underneath package two can be accessed.
+
+714
+02:00:47,155 --> 02:00:56,775
+Okay. Now, in order for you to access these classes, you have to have these import statements at the beginning of your class, Java file.
+
+715
+02:00:58,456 --> 02:00:59,155
+Okay.
+
+716
+02:01:02,387 --> 02:01:11,188
+Now, you can ask, why do I have to have all these classes put under different packages?
+
+717
+02:01:11,988 --> 02:01:20,948
+Because, so you will see that over time, you will name these classes as the same name for necessity.
+
+718
+02:01:20,948 --> 02:01:21,788
+Okay.
+
+719
+02:01:22,228 --> 02:01:26,387
+And therefore, if you want to have the same name classes,
+
+720
+02:01:26,800 --> 02:01:29,740
+You cannot put them under the same package.
+
+721
+02:01:30,039 --> 02:01:34,760
+So therefore, they need to be put under different folders.
+
+722
+02:01:35,500 --> 02:01:35,620
+Okay.
+
+723
+02:01:35,840 --> 02:01:41,100
+And as you see here, there are two same name Java files.
+
+724
+02:01:42,195 --> 02:01:46,135
+Maybe they may have the same purpose or different purpose. I don't know.
+
+725
+02:01:46,675 --> 02:01:50,095
+But they are put under different packages.
+
+726
+02:01:51,675 --> 02:01:56,175
+So therefore, I don't have any conflict when I import.
+
+727
+02:01:56,175 --> 02:02:01,695
+So when I do this way, otherwise, if I put them under the same.
+
+728
+02:02:03,264 --> 02:02:10,164
+So, since they both have the same name, I cannot use the same name.
+
+729
+02:02:14,163 --> 02:02:18,743
+Okay. Now, visibility rules and information hiding.
+
+730
+02:02:18,743 --> 02:02:19,503
+Now,
+
+731
+02:02:20,115 --> 02:02:34,735
+So this is where I should start the access modifiers, which I, in response to one of your questions, I said that we will use access modifiers in order to access to data member fields and also the methods.
+
+732
+02:02:35,895 --> 02:02:47,935
+So from this point forward, I will start with the topic of access modifiers and I will talk the visibility rules and information hiding, which is the initial concept.
+
+733
+02:02:48,115 --> 02:02:52,335
+Or initial benefit for encapsulation.
+
+734
+02:02:52,615 --> 02:02:55,215
+But I want to stop now for today.
+
+735
+02:02:56,095 --> 02:03:01,835
+And I want to, for those who attended the lecture lately.
+
+736
+02:03:02,275 --> 02:03:09,695
+So I want to stop for today and continue the rest of the class next week.
+
+737
+02:03:10,131 --> 02:03:28,571
+Arkadaşlar, burada ben 21. slide'da duracağım. Access modifiers konusuna, visibility rules konusuna bıraktığım yerden gelecek hafta devam edeceğim. Derse geç katılanlar oldu. O yüzden tekrardan dersle ilgili hatırlatmaları yapıyorum.
+
+738
+02:03:29,108 --> 02:03:55,088
+Arkadaşlar, bu ders kapsamında beraberiz. Derse geç kıtılanlar için bunu söylüyorum. Ders kapsamın bu grup bir, bunun yanı sıra iki tane daha grup var. Bu dersi ben veriyorum. Doçent Doktor Mehmet Aktaş, Yunus Emre Hoca ve Ahmet Albir Hoca grup iki ve grup üç derslerini veriyor. Dolayısıyla doğru ders olduğunuzdan emin olun.
+
+739
+02:03:55,699 --> 02:04:11,139
+Bu ders kapsamında dönem içerisinde iki tane vizeniz olacak. Bu vizelerden birisine raporlu mazeretiniz dolayısıyla giremezseniz bir de make-up mid-term olacak.
+
+740
+02:04:11,731 --> 02:04:33,591
+Birinci vize sekizinci haftada, ikinci vize on üçüncü haftada mid-term make-up da son hafta olacak. Yani son hafta ders işlemeyeceğiz. Ders programını buna göre ilerleteceğiz. Bu üç tane grubun tüm içeriği aynı, sınavları aynı olacak. Asistanları da aynı, asistan hocalarınız da aynı olacak.
+
+741
+02:04:35,283 --> 02:04:48,463
+Dönem içerisinde lablarınız olacak. Bu lablar online lablar olacak. Bunlardan en az 6 tane yapmayı düşünüyoruz. Buna göre planlama yaptık.
+
+742
+02:04:48,768 --> 02:05:08,427
+Bunlardan 3 tanesi sizin aktif olarak, en az 3 tanesi sizin aktif olarak asistan hocanız eşliğinde kod yazacağınız ve kodlarınızı tamamladıktan sonra hocanızın sizin yazdığınız kodları değerlendirdiği lab dersleri olacak.
+
+743
+02:05:08,916 --> 02:05:12,356
+Diğer üç tanesi ise en az üç tanesi uygulama olacak.
+
+744
+02:05:12,556 --> 02:05:19,676
+Hocanız bir tane problemi açıp öncelikle problemi size anlatıp sonra o problemi çözmek için kodları kendisi yazacak.
+
+745
+02:05:21,108 --> 02:05:40,288
+Bir tane dönem projeniz olacak. Bu dönem projesini tekli ya da ikili öğrenci grubu şeklinde yapabileceksiniz ama üçlü olmayacak. Bu projeleri size dönem bitimine bir ay kala vereceğiz. Bu projeler için hemen gruplarınızı oluşturup çalışmaya başlayacaksınız.
+
+746
+02:05:41,492 --> 02:05:57,591
+Dönem projelerinizi de yine dönemin son haftası göndereceksiniz ve asistan hocalarınız sizlerle yine Zoom üzerinden toplantılar yaparak bunlarla ilgili değerlendirmeyi sizle beraber yapacak.
+
+747
+02:06:02,211 --> 02:06:04,492
+Dersin web sitesini...
+
+748
+02:06:05,492 --> 02:06:22,832
+Dersin başında arkadaşlarınızla paylaştım. Aynı zamanda şu andaki Zoom session'ın chat kısmında da dersin sayfasının linkini koydum. Oradan alabilirsiniz.
+
+749
+02:06:23,475 --> 02:06:36,235
+Dersin sayfasında dersle ilgili bütün ders materyallerini, bu slide'ları, aynı zamanda dersle ilgili derste işlediğim bütün kodları bulabilirsiniz. Bunların hepsini indirmenizi tavsiye ediyorum.
+
+750
+02:06:38,931 --> 02:07:01,531
+Dönem içerisindeki vizeler, projeler ve lapların yüzdesel olarak katılımı belli. Yani bunlardan alacağınız puanların yüzdesel olarak derse katılımını düşünerekten dönem içerisindeki total aktivitelerinizden alacağınız puanın ne olduğunu hesaplayabilirsiniz.
+
+751
+02:07:02,800 --> 02:07:16,740
+40'ın altında olacak olursa finale girme hakkınız maalesef olmuyor. O yüzden dönem içerisindeki bu notlarınıza mutlaka dikkat edin arkadaşlar. Bu bizim değiştirebileceğimiz bir şey değil.
+
+752
+02:07:17,980 --> 02:07:24,300
+Asistan hocalarınızın Avesiz sayfasını takip edin. Özellikle laplarla ilgili duyurlar burada olacak.
+
+753
+02:07:25,079 --> 02:07:29,860
+3 tane asistan hocanız var. Onların da bilgisini ben gelecek hafta size veririm.
+
+754
+02:07:31,507 --> 02:07:52,268
+Bunun dışında laplarla ilgili duyurum nasıl yapılacağını söyledik. Bu dersi ikinci defa alan arkadaşlar varsa ve bu ikinci defa alan arkadaşlardan geçen aldıklarında notları F0 değilse yani hiç derse katılım yapmamış durumları yoksa
+
+755
+02:07:53,076 --> 02:08:05,576
+Bu durumda labları almalarına gerek yok. Bu durumdaki öğrencilerin notları hesaplanırken şu %10'luk lab için ayrılan puanı diğerlerine eşit olarak dağıtıyoruz.
+
+756
+02:08:06,931 --> 02:08:26,771
+Demek ki lablara girme zorunluluğu olmayan bir tek öğrenciler bu dersi ikinci defa alanlar ama ikinci defa alanlardan da dersten F0 almayanlar. Eğer F0 almışsa bu öğrencinin tekrardan bu lablara girmesi gerekli. Eğer girmezse bu durumdan labdan 0 alacak.
+
+757
+02:08:31,444 --> 02:08:35,824
+Dersle ilgili dersin başında yaptığım duyurular böyle.
+
+758
+02:08:36,724 --> 02:08:44,524
+Onun dışında sizlerin dersle ilgili sorunuz varsa mikrofonunuzu açıp sorabilirsiniz ya da chatten yazabilirsiniz.
+
+759
+02:08:45,944 --> 02:08:48,884
+Sanırım chatten de bir soru var. Şimdi ona da bakalım.
+
+760
+02:09:06,355 --> 02:09:16,435
+Evet, yokmuş. Tamamdır arkadaşlar. Bugünkü dersimiz bu kadar. Katılımınız için teşekkür ederim. Gelecek hafta kaldığımız yerden devam ediyoruz.
+
+761
+02:09:16,935 --> 02:09:17,996
+Teşekkür ederiz hocam.
+
+762
+02:09:18,015 --> 02:09:19,395
+Sağ olun hocam, iyi günler.
+
+763
+02:09:20,076 --> 02:09:22,055
+İyi günler, iyi dersler diliyorum hepinizi.

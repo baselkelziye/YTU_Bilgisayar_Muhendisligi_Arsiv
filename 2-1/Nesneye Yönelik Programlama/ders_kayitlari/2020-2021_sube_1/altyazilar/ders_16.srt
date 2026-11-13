@@ -1,0 +1,2039 @@
+1
+00:00:04,756 --> 00:00:05,708
+Evet.
+
+2
+00:04:33,363 --> 00:04:34,383
+Herkese merhabalar.
+
+3
+00:04:37,747 --> 00:04:38,387
+Evet, bu işe.
+
+4
+00:04:46,836 --> 00:04:49,076
+Daha gelen vardır. Bekliyorum biraz ama.
+
+5
+00:04:51,016 --> 00:04:58,235
+Hocam bir şey soracaktım. Biz geçen hafta Mehmet Hoca hastalıklığıyla ders yapmadı. Bu haftaki labda ne göreceğiz?
+
+6
+00:04:59,556 --> 00:05:11,656
+Bu hafta lablarda interface, collectionlar, exceptionlar ve jenerikler. Yani interface zaten interface. Collection'dan custom ArrayList gibi işte sonra.
+
+7
+00:05:12,115 --> 00:05:18,575
+Tabii kuyruk falan görmeyeceğiz ama onlar da var mesela. ArrayList göreceğiz. HashMap göreceğiz.
+
+8
+00:05:20,336 --> 00:05:22,415
+Onları hiç görmedik derste de.
+
+9
+00:05:23,455 --> 00:05:27,815
+Teorik olarak yani anladım. Pratikte ben yine anlatayım.
+
+10
+00:05:29,795 --> 00:05:31,515
+Teorik olarak hocam şey yapar herhalde.
+
+11
+00:05:31,935 --> 00:05:33,716
+Üzerinden geçerseniz iyi olur hocam.
+
+12
+00:05:35,515 --> 00:05:36,275
+Fena feler.
+
+13
+00:06:47,891 --> 00:06:48,932
+Evet, başlayalım biz.
+
+14
+00:07:00,468 --> 00:07:25,248
+Interface'ler arkadaşlar, şurada tanımlandığını görelim. Interface'lerdeki amaç, mesela şöyle yapayım ya da, bir class, biliyorsunuz ki bir class'tan kalıtım olabilir. Başka bir class'tan kalıtım olamaz. Ama birden fazla interface'den implement edebilir. Yani,
+
+15
+00:07:25,747 --> 00:07:48,447
+Buradaki aynı class mantığı, şey kalıtı mantığı gibi. Buradaki public void method ve void method 2 sanki burada varmış gibi, kalıtımdaki gibi yani şey yapabiliyoruz, implement ederek tekrardan burada yazmadan buradakini kullanabiliyoruz yani.
+
+16
+00:07:55,572 --> 00:08:20,831
+Mesela biliyorsunuz ki kalıtımda ne yapıyorduk? İşte parent'tan kalıtım aldık. Method 5 sanki burada varmış gibi kabul ediyoruz artık değil mi? Kalıtımda buydu. Hani method 5 burada yazılmasa da varmış gibi oluyordu. Zaten kalıtımın olayı o. Yani hani bir yerde yazıp tekrar tekrar başka yerlerde yazmamak için yapılan bir şey. Kolaylık.
+
+17
+00:08:23,699 --> 00:08:42,635
+implement de aynı bunun gibi. Ama implementdeki farklılık ne? Siz bir interfaceden implement yaptığınız zaman ne yapıyorsunuz? Bunu override etmek zorunda kalıyorsunuz. Yani sizi, bunu override etmek zorunda bırakıyor. Burada hata göreceksinizdir.
+
+18
+00:08:47,347 --> 00:09:14,907
+Peki bir interface nasıl olur? Onu anlatayım. Bir interface de normalde şuradaki gibi şey olmaz. Bu bir interface. Interface nasıl tanımlanır? Interface anahtar kelimesiyle tanımlanır. Bir tane aynı class tanımlı yani. Interface, interface adı. Bu arada default olarak, default olarak demeyeyim de işte hani standart olarak interface'lerin başına şu I harfini
+
+19
+00:09:15,604 --> 00:09:42,004
+koyuyoruz ki interface isimlerinin başlarına. Bunun interface olduğu belli olsun. Yani bu bir standarttır. Koymasak da olur. Ama akunurluluk açısından. Herkes şu ayı gördüğü zaman diyecek ki ya bu bir interface'miş yani. Tamam. Interface'in metotları nasıl tanımlanır? Burada gördüğünüz gibi arkadaşlar. Sadece prototip bir tanımlama yapılır. Gövdesi yazılmaz interfacelerde. Lakin
+
+20
+00:09:42,548 --> 00:10:08,187
+Default anahtar kelimesi kullanıldığı zaman ne oluyor? Hani gövdesinde yazabiliyorsunuz. Default anahtar kelimesiyle ne demek istemiş oluyoruz? Sen artık işte burada mesela child class'ı diyelim mesela iClass'tan implement aldı. O zaman metod 2'yi override etmene lüzum yok. Ben seni buna zorunlu tutmuyorum. Ama
+
+21
+00:10:09,491 --> 00:10:15,692
+Hani, method 2 kullanırsan, 1-2 bu kod çalışacak. Ha, istersen override edebilirsin.
+
+22
+00:10:16,692 --> 00:10:31,491
+override etmek zorunda değilsin ama. Ama, i-class'ı implement eden bir class, ne yapacak? Method 1'i override etmek zorunda kalacak. Yoksa program çalışması hata verir. Interface olayı bu.
+
+23
+00:10:33,091 --> 00:10:35,980
+Bir şablon yapıyor yani, diyor ki işte sen
+
+24
+00:10:36,403 --> 00:11:00,963
+Bu interface'den implement yaparsan, bunlar, bunlar, bunlar bulunması gerekir. Burada sadece public void method 1 vardı. Method 1'in implement eden class, method 1'in bulundurması gerekir. Tamam. Mesela burada bakın, başka bir interface'imiz var. Ne yapıyor? Bir diğer interface'den extent alıyor.
+
+25
+00:11:02,868 --> 00:11:09,067
+Extend alınca ne alıyordu? Bildiğiniz gibi sanki buradaki Fabric Void Method 1 buradaymış gibi.
+
+26
+00:11:09,908 --> 00:11:15,148
+Aynı şekilde Method 2 de aynı şekilde buradaymış gibi kabul ediliyor.
+
+27
+00:11:17,268 --> 00:11:22,348
+O yüzden mesela bakın burada sadece iClass 2 implement ettik. Niye?
+
+28
+00:11:22,348 --> 00:11:25,988
+iClass'taki kodlar da çalışacak çünkü buradan kalıtım aldı.
+
+29
+00:11:28,388 --> 00:11:29,388
+Tamam.
+
+30
+00:11:31,220 --> 00:11:43,300
+parent, normal geçen seferde anlattı, geçen uygulamada da anlattığımız gibi, hani kalıtım şeyi, bir tane class'ımız var. Ne yaptı? Bir tane de child class'ımız var. Parent'ten ne yaptı? Kalıtım aldı.
+
+31
+00:11:45,500 --> 00:11:55,420
+Biliyorsunuz ki bir tane class'tan kalıtım alabilir ama birden fazla interface'den implement edebilir yani. Onu da söyleyeyim.
+
+32
+00:11:57,427 --> 00:11:59,687
+Hocam bir şey sorabilir miyim? Tabii ki.
+
+33
+00:12:00,988 --> 00:12:09,508
+Kaçırmadıysam bir interface, diğer interface'i implemente değil de extend ediyor. Birden fazla interface'i de extend edebiliyor mu?
+
+34
+00:12:10,508 --> 00:12:14,968
+Deneyelim. Edemez diye biliyorum ama. Deneyelim.
+
+35
+00:12:17,968 --> 00:12:18,988
+Interface, ay.
+
+36
+00:12:32,980 --> 00:12:33,420
+Koksum.
+
+37
+00:12:42,100 --> 00:12:44,940
+Evet, gördüğünüz üzere, demek ki yapabiliyormuş.
+
+38
+00:12:52,628 --> 00:12:54,168
+Bir class sadece...
+
+39
+00:13:10,419 --> 00:13:30,819
+Her şey, tabii burada hata verdi. Niye? Çünkü biliyorsunuz buradaki iClass 2, iClass 3'ten ne yaptı? Kalıtım aldı. Aynı iClass'dan kalıtım aldığı gibi, yani method 1'i nasıl burada override ettiysek, method fonksiyon şunu da override etmemiz gerekiyor yani. Burada o yüzden hata veriyorum.
+
+40
+00:13:32,659 --> 00:13:37,779
+Bu şekilde kullanabiliriz birden fazla. Interfeyse, extend edebiliriz.
+
+41
+00:13:38,611 --> 00:13:50,111
+Demek ki öyle oluyormuş, evet. Ben de, bilmiyorum açıkçası. Yani sadece bir tane diye zannediyordum. Onu ben de görmüş oldum.
+
+42
+00:13:50,932 --> 00:13:51,831
+Teşekkür ederim.
+
+43
+00:13:58,548 --> 00:13:59,627
+Neyse, geri dönelim.
+
+44
+00:14:02,447 --> 00:14:03,127
+Tamam.
+
+45
+00:14:04,228 --> 00:14:06,627
+Yani şu kısım tamam değil mi? Anlaşıldı.
+
+46
+00:14:07,187 --> 00:14:13,447
+Şimdi mesela şöyle, bir tane void, bir tane main fonksiyonumuz var.
+
+47
+00:14:13,508 --> 00:14:15,447
+Biliyorsunuz program her zaman buradan başlar.
+
+48
+00:14:16,587 --> 00:14:20,728
+Bir tane ne yaptık? Child sınıfından bir nesne oluşturdu.
+
+49
+00:14:20,728 --> 00:14:24,347
+Ve oradan metod 1, metod 2 ve metod 3'ü çağırdık.
+
+50
+00:14:24,508 --> 00:14:25,028
+Şimdi bakalım.
+
+51
+00:14:25,716 --> 00:14:27,036
+Child sınıfındayız.
+
+52
+00:14:28,516 --> 00:14:29,536
+Metop 1'imiz var.
+
+53
+00:14:30,916 --> 00:14:32,196
+Şunlar kafayı karıştırmasın.
+
+54
+00:14:32,196 --> 00:14:33,456
+Şuraya yeni gelen olursun.
+
+55
+00:14:42,740 --> 00:14:48,100
+Evet, method 1, method 2 ve method 3'ü çağırdık. Tamam.
+
+56
+00:14:49,019 --> 00:14:51,440
+Method 1 burada ne yaptık? Overwrite ettik. Niye?
+
+57
+00:14:52,500 --> 00:14:55,380
+Çünkü burada prototip olarak tanımlanmış.
+
+58
+00:14:56,200 --> 00:15:02,180
+Bunu ben implement edersem, zorundan bunu implement etmedim ama sonuçta bunu iClass 2'yi implement etmedim.
+
+59
+00:15:02,180 --> 00:15:07,080
+O da iClass'ı extend etti. Dolayısıyla iClass'da implement etmiş gibi oldum yani.
+
+60
+00:15:07,940 --> 00:15:09,980
+Eğer implement edersem ne olacak?
+
+61
+00:15:10,451 --> 00:15:13,511
+Method 1'i de override etmek zorunda bırakacak menü program.
+
+62
+00:15:14,672 --> 00:15:16,932
+Yani bunu yapmazsam hata verir.
+
+63
+00:15:19,611 --> 00:15:20,912
+Implement ettim, tamam.
+
+64
+00:15:21,591 --> 00:15:22,572
+Ne oldu? Bu çalışacak.
+
+65
+00:15:23,192 --> 00:15:24,791
+Child sınıfında Method 1 çalıştı.
+
+66
+00:15:25,412 --> 00:15:25,771
+Bakın.
+
+67
+00:15:27,471 --> 00:15:28,791
+Sonra Method 2'yi çağırdım.
+
+68
+00:15:29,851 --> 00:15:30,192
+Ne var?
+
+69
+00:15:30,811 --> 00:15:32,871
+Default diye bir Method 2 tanımlamış.
+
+70
+00:15:32,951 --> 00:15:34,511
+Burada şey yapmadım, override etmedim.
+
+71
+00:15:36,091 --> 00:15:36,991
+Zorunda da değildim.
+
+72
+00:15:38,067 --> 00:15:42,288
+Çünkü default olarak, default anahtar kelimesi kullanılarak bir tane tanımlanmış.
+
+73
+00:15:42,927 --> 00:15:46,467
+Ve default kullanıldığı için bakın burada fonksiyonun gövdesi de yazılmış.
+
+74
+00:15:46,467 --> 00:15:53,887
+Normalde, şöyle bir fonksiyon tanımladığımız zaman asla gövdesi yazılmaz.
+
+75
+00:15:54,647 --> 00:15:56,327
+Sadece prototip olarak yazılır.
+
+76
+00:15:56,427 --> 00:15:58,147
+Yani buraya başka örnekler de koyulmuş.
+
+77
+00:16:04,371 --> 00:16:05,251
+public void.
+
+78
+00:16:09,331 --> 00:16:10,292
+Böyle
+
+79
+00:16:10,292 --> 00:16:15,211
+interface tanımlayacağımız zaman böyle tanımlarız.
+
+80
+00:16:15,932 --> 00:16:18,271
+Bu interface implement eden class ne yapar?
+
+81
+00:16:19,131 --> 00:16:20,891
+Buradaki fonksiyonları override eder.
+
+82
+00:16:21,812 --> 00:16:24,172
+Ve orada kendi artık ne yaptırmak istiyorsa
+
+83
+00:16:24,172 --> 00:16:26,731
+override fonksiyonun içinde onu yazdırır.
+
+84
+00:16:30,292 --> 00:16:30,772
+Tamam.
+
+85
+00:16:33,892 --> 00:16:34,952
+Default dedik.
+
+86
+00:16:36,112 --> 00:16:42,652
+Default yazdığımız için implement eden class otomatik olarak metodi 2'ye sahip oluyor.
+
+87
+00:16:43,172 --> 00:16:45,552
+Normal bir fonksiyon gibi oluyor burada.
+
+88
+00:16:45,932 --> 00:16:47,252
+Default anahtar kelimesiyle.
+
+89
+00:16:48,632 --> 00:16:49,032
+Ne yapıyor?
+
+90
+00:16:49,132 --> 00:16:52,832
+Otomatik olarak burada bakın override etmedim.
+
+91
+00:16:53,012 --> 00:16:57,112
+Herhangi bir şekilde yazmadım ama yine iClass sınıfında metodi 2 çalıştı.
+
+92
+00:16:57,683 --> 00:16:59,683
+buraya geliyor ve bunu yazdırıyor.
+
+93
+00:17:00,984 --> 00:17:04,284
+3 aynı şekilde. 3 de zaten iClass2'deydi.
+
+94
+00:17:05,124 --> 00:17:07,124
+Onu da aynı şekilde yazdırdı.
+
+95
+00:17:07,324 --> 00:17:10,543
+Yani implemented. Method 1'deki gibi.
+
+96
+00:17:10,784 --> 00:17:16,084
+Çok bir farkı yok. Method 1 sadece iClass2'deydi.
+
+97
+00:17:16,324 --> 00:17:19,244
+iClass2'nin iClass'tan Extent ettiği durumdaydı.
+
+98
+00:17:20,543 --> 00:17:24,624
+Evet. Method 4. Bakın görüyorsunuz. Statik bir metot.
+
+99
+00:17:24,980 --> 00:17:30,159
+Statik metotları görmüştüm zaten. Statik olarak tanımlandığında burada da gövde tanımlanıyor.
+
+100
+00:17:32,079 --> 00:17:36,960
+Ve nasıl çağrıldığını önceden de gördüğümüz gibi bu şekilde kullanılabiliniyor.
+
+101
+00:17:39,139 --> 00:17:44,460
+Method 5. Bu da current'tan kalıtım almıştı biliyorsunuz.
+
+102
+00:17:45,400 --> 00:17:48,119
+Geçen derslerimizde de gösterdi, anlattığımız gibi.
+
+103
+00:17:49,652 --> 00:18:05,912
+Yani burada method 5 bulunmasa da, sanki method 5 varmış gibi ben child, parent'tan kalıtımı aldığı zaman, child'ın da method 5'i olmuş oluyor. Dolayısıyla onu da kullanabiliyoruz. Burada her ne kadar yazmasak da.
+
+104
+00:18:07,112 --> 00:18:15,471
+Interface'lerle alakalı anlatılabilecek şeyler, anlatabileceğim bir şeyler bunlar. Teorik konuya girmeyeceğim çünkü
+
+105
+00:18:16,019 --> 00:18:18,799
+Ne anlatacağımı, ne anlatmam gerektiğini bilmiyorum.
+
+106
+00:18:18,920 --> 00:18:21,239
+Onu artık Mehmet Hoca şey yapar.
+
+107
+00:18:22,039 --> 00:18:23,719
+Ama aklınıza takılan bir şey var mı?
+
+108
+00:18:28,596 --> 00:18:31,355
+Eğer varsa bu konuda hemen sorun.
+
+109
+00:18:33,375 --> 00:18:36,235
+İnterfeyste sonra derste geçtiğimiz için hatırlıyoruz hocam.
+
+110
+00:18:36,895 --> 00:18:37,375
+Evet, tamam.
+
+111
+00:18:37,795 --> 00:18:39,835
+Konular işlemedik henüz.
+
+112
+00:18:40,835 --> 00:18:42,556
+Şunları mı işlemediniz? Collection'ları falan.
+
+113
+00:18:42,755 --> 00:18:46,195
+Evet, Collection, Exception ve Generic Staysom işlemedik.
+
+114
+00:18:50,483 --> 00:18:52,804
+İnterfeste alakalı sorunuz yoksa geçiyorum.
+
+115
+00:18:56,243 --> 00:18:56,884
+Geçti.
+
+116
+00:19:09,683 --> 00:19:11,683
+Şimdi ArrayListler var.
+
+117
+00:19:13,683 --> 00:19:16,683
+Yani dizilere benzer tabi ama tabi dizi değil.
+
+118
+00:19:19,183 --> 00:19:27,683
+Mesela ben bir liste tutuyorum ArrayList. Bu liste nedir? String veri tipinde nesneler tutuyor.
+
+119
+00:19:30,183 --> 00:19:32,683
+Ya da String veri tipini tutuyor.
+
+120
+00:19:34,963 --> 00:19:38,563
+Çünkü string ilkel bir veri tipi. Resnedenen uygun olmaz.
+
+121
+00:19:40,483 --> 00:19:42,103
+Tamam. Şöyle ArrayList.
+
+122
+00:19:43,243 --> 00:19:47,783
+Küçüktür, büyüktür işaretler arasında hangi veri tipini tutacağımızı yazıyoruz.
+
+123
+00:19:49,143 --> 00:19:50,603
+Burası integer de olabilirdi.
+
+124
+00:19:54,183 --> 00:19:55,763
+Double de olabilirdi.
+
+125
+00:20:00,000 --> 00:20:04,599
+Olabilir yani. Sonra mesela burada student class'ı var. Student da olabilirdi.
+
+126
+00:20:08,884 --> 00:20:14,423
+Tamam. Mesela listem.et dedim. Haydar Haydar. Bunu çalıştırayım.
+
+127
+00:20:19,220 --> 00:20:31,079
+listem.et dedim. Bunları ardışık olarak ekledi işte. Et de ne yapıyor? Et fonksiyonuyla şu değerleri bir listeye ekliyoruz.
+
+128
+00:20:35,923 --> 00:20:39,923
+Sonra listede mesela iteratör diye bir fonksiyon var. Bu ne yapıyor?
+
+129
+00:20:39,923 --> 00:20:44,923
+İteratörü, yani listenin iteratörüne döndürüyor. Bu iteratör ne işe yarıyor?
+
+130
+00:20:44,923 --> 00:20:50,923
+Mesela bakın iteratör.haznext ile ben, şimdi burada 4 tane elemanım var ya bir listede.
+
+131
+00:20:50,923 --> 00:20:55,923
+İlk önce ne yaptım? hasnext dedim, hide-hide-hide-a geldim.
+
+132
+00:20:55,923 --> 00:21:00,923
+Sonra bir daha hasnext dedim, dalgalandığımda durulduğuma geldim.
+
+133
+00:21:01,587 --> 00:21:29,087
+Bir daha hazinex dedim, işte buna geldim, buna geldim. Bu iteratörle de bunun şeyini tutuyorum, iteratörünü tutuyorum. Bu bana iteratörünü döndürüyor. Bakın iteratör stickle bunu tutuyorum. Sonra file ile yazdırdık. İşte hani söyledim, hazinex ile bunları dönüyoruz. Bunu nasıl yapıyoruz? İşte bunu böyle yapmaya lüzum yoktu da. ForEach ile zaten yapıyorduk.
+
+134
+00:21:29,523 --> 00:21:51,523
+biliyorsunuz. Ama bu nedir? Hani siz ArrayList gibi farklı bir collection yazarsınız. Mesela o zaman iteratörünü de yazmak durumunda kalırsınız. O yüzden bunu da gösteriyoruz ki. Bilin yani. Yoksa zaten düz böyle yazıyoruz.
+
+135
+00:21:56,564 --> 00:21:58,564
+sorunuz olduğu zaman hani direkt soru
+
+136
+00:22:01,124 --> 00:22:04,004
+böylelikle hani aklınıza soru işaret kalmasın
+
+137
+00:22:05,684 --> 00:22:08,084
+şeyleri geçtikçe çünkü şey olabilir
+
+138
+00:22:08,084 --> 00:22:10,884
+böyle sıkıntı olabilir sizin için
+
+139
+00:22:12,524 --> 00:22:13,524
+tamam
+
+140
+00:22:14,084 --> 00:22:15,684
+şimdi başka bir örneğe bakalım
+
+141
+00:22:15,684 --> 00:22:19,364
+üç tane student nesnesi oluşturdum hemen student class'ı nasılmış görelim
+
+142
+00:22:19,364 --> 00:22:20,364
+üç tane
+
+143
+00:22:21,364 --> 00:22:22,963
+değişkenimiz var
+
+144
+00:22:23,827 --> 00:22:28,387
+Bunların yapıcı fonksiyonu ve getleri var. O kadar. Çok basit bir class yani.
+
+145
+00:22:30,288 --> 00:22:30,567
+Tamam.
+
+146
+00:22:32,307 --> 00:22:33,127
+Ne yaptık işte?
+
+147
+00:22:33,887 --> 00:22:36,048
+Üç tane nesne oluşturduk. Student nesnesi.
+
+148
+00:22:36,668 --> 00:22:38,768
+Bakın görüyorsunuz ArrayList dedik.
+
+149
+00:22:39,548 --> 00:22:41,048
+Student nesnelerini tutuyor.
+
+150
+00:22:42,827 --> 00:22:45,648
+Yani student nesnelerini ne yapıyor tutuyor.
+
+151
+00:22:49,779 --> 00:23:05,880
+Evet, ne yapıyoruz? Şöyle yani. Burada şunu dedik. Student tipinden, veri tipinden, nesnesinden bir ArrayList tanımladık. Sonra da o ArrayList şambor. Ne yaptık? Add fonksiyonuyla bu üç nesneyi buraya ekledik.
+
+152
+00:23:11,604 --> 00:23:15,443
+Bunu daha önce dizilerle yapmıştık zaten. Biliyorsunuz.
+
+153
+00:23:16,983 --> 00:23:19,144
+Biraz dizilere benziyor tabi ama
+
+154
+00:23:19,544 --> 00:23:22,364
+Mesela dizide sütüntü tutamazsınız.
+
+155
+00:23:25,164 --> 00:23:27,224
+Gerçi tutarsanız niye tutamıyorsunuz?
+
+156
+00:23:28,764 --> 00:23:31,224
+Bu biraz daha şey nasıl desem
+
+157
+00:23:31,704 --> 00:23:37,204
+Dinamiklik sağlıyor yani. Hani ekleme çıkarmada falan. Biz mesela dizinin şeyi olduğu zaman
+
+158
+00:23:39,508 --> 00:23:46,008
+İndeksi de olduğu zaman, dizi 10 elemanlıysa, 11.sinde ne yapıyorduk? Hani tekrar tanımlama falan yapıyorduk değil mi?
+
+159
+00:23:46,008 --> 00:23:50,508
+Burada 11. 10. diye bir şey yok. Ekle ekleyebildiğin kadar.
+
+160
+00:24:00,180 --> 00:24:04,960
+Şimdi liste göster diye bir fonksiyon tanımlanmış. Buraya da bizim yere listemizi göndermişiz.
+
+161
+00:24:06,820 --> 00:24:14,820
+Bakalım ona. İşte onu ne yapıyoruz? İteratörünü çağırıyoruz. Sonra file ile dönüyoruz ve yazdırıyoruz yani.
+
+162
+00:24:16,599 --> 00:24:24,019
+Evet. Normal bildiğiniz yazdırmayı yapıyor. Üstü liste ne vardı? Şuradayız.
+
+163
+00:24:25,740 --> 00:24:27,640
+Üç tane elemanı ne yaptı? Ekledi.
+
+164
+00:24:29,332 --> 00:24:30,732
+Çalıştığımı açmıyor da.
+
+165
+00:24:34,996 --> 00:24:36,856
+İşte listenin ilk öğrencilerin ismi.
+
+166
+00:24:38,556 --> 00:24:39,195
+Ekledik.
+
+167
+00:24:39,956 --> 00:24:40,576
+Bunlar vardı.
+
+168
+00:24:41,236 --> 00:24:42,296
+Ne yaptı? Onları yazdırdı.
+
+169
+00:24:42,356 --> 00:24:46,635
+Mehmet Akif Ersoy, Abdülhamit Tarhan ve Mithat Cemal Kuntay.
+
+170
+00:24:49,376 --> 00:24:51,556
+Ondan sonra yeni bir tane liste oluşturduk.
+
+171
+00:24:51,716 --> 00:24:53,316
+Liste gösterle yazdırdık burayı.
+
+172
+00:24:55,216 --> 00:24:56,596
+Yeni bir tane liste oluşturduk.
+
+173
+00:24:56,615 --> 00:24:57,036
+EriList.
+
+174
+00:24:58,556 --> 00:25:00,615
+Buna da işte Stylist 2 dedik.
+
+175
+00:25:01,172 --> 00:25:11,452
+Buna da iki tane farklı öğrenci ekledik. Bakın burada şey yapmıştık, S1 ile tutmuştuk, S2 ile S3 ile. Burada öyle bir şey yapmadık. Direkt new dedik.
+
+176
+00:25:12,892 --> 00:25:13,771
+Eklendik.
+
+177
+00:25:17,748 --> 00:25:25,867
+Stylist.at.all ile bir listedeki yani şu Stylist 2 var ya bu listedeki tüm elemanları şuna ekle demek bu.
+
+178
+00:25:28,648 --> 00:25:31,528
+Tabi sonuna ekleme yapıyor yani default olarak.
+
+179
+00:25:32,748 --> 00:25:33,528
+Onu da belirteyim.
+
+180
+00:25:38,099 --> 00:25:46,979
+Sonra işte tekrar listeyi yazdırdığımız zaman bakın buraya Hamza Yerlikaya ve Naim Süleymanoğlu da gelmiş oldu.
+
+181
+00:25:55,955 --> 00:26:03,315
+Sonra listeden 3. elemanı kaldırdık. 3. eleman derken 0, 1, 2, 3. Yani Hamza yerlikaya.
+
+182
+00:26:04,655 --> 00:26:08,675
+Hamza yerlikayı ne yaptık? Kaldırdık. Tekrar yazdırdığımızda
+
+183
+00:26:12,819 --> 00:26:13,580
+Şuradan tabi.
+
+184
+00:26:29,428 --> 00:26:33,668
+Bakın tekrar yazdırdığımızda ne oldu? Hamza yerli kaya artık yok.
+
+185
+00:26:37,172 --> 00:26:42,152
+Peki ikinci listeye bir şey oldu mu? Yok olmadı. İkinci liste aynı şekilde duruyor.
+
+186
+00:26:45,811 --> 00:26:50,311
+Remove all ile bir listeden diğer listeyi çıkartıyoruz.
+
+187
+00:26:52,092 --> 00:27:00,152
+Önceden ne kalmıştı? Zaten üçüncüyü yani Hamza Yerlikaya'yı çıkardıktan sonra geriye Naim Süleymanoğlu kalmıştı ikinci listeden.
+
+188
+00:27:00,152 --> 00:27:03,372
+Biz ne yaptık? İşte remove all üstü liste 2 diyerek
+
+189
+00:27:04,115 --> 00:27:10,735
+Stulisten, Naim Süleymanoğlu'nu da kaldırmış olduk.
+
+190
+00:27:13,555 --> 00:27:19,075
+Ondan sonra tekrar yazdırdığımızda, bakın ikinci listeyi istedikten sonra eski haline gelmiş oldu.
+
+191
+00:27:19,935 --> 00:27:25,555
+Yani tabii hani şunu kaldırmasaydık, Hamza Yerlikay'ı kaldırmasaydık da yine aynı bu sonucu alacaktık.
+
+192
+00:27:25,635 --> 00:27:28,915
+Niye? Çünkü liste birden tüm liste iki çıkar demek bu.
+
+193
+00:27:33,940 --> 00:27:59,119
+Retain all var. Ne yapıyor? Bu da ikinci listeyi korunuyor. Yani şunun tam tersi, şey, remove all'un tam tersi gibi. Hani buradan bunu çıkartıyorduk. Bu sefer bu hariç her şeyi çıkartıyoruz. Retain all o demek. Bakın Hamza Yerlikaya ve Naim Süleymanoğlu kaldı.
+
+194
+00:27:59,423 --> 00:28:10,543
+Tabii şurada al diyerek tekrar reski haline getirmiştik. O liste 2'yi de eklemiştik. Ondan sonra bunu diyerek ne yaptık? Liste 2'nin dışındaki bütün verileri silmiş olduk.
+
+195
+00:28:13,423 --> 00:28:16,884
+Evet. Sorunuz var mı?
+
+196
+00:28:23,604 --> 00:28:24,943
+Örnek 3'e bakalım o zaman.
+
+197
+00:28:27,183 --> 00:28:28,804
+Burada da Linked liste oluşturuluyor.
+
+198
+00:28:33,284 --> 00:28:37,463
+Evet, bu karakter listesi. Karakterleri tutuyor yani. O yüzden karakter ekledik.
+
+199
+00:28:38,663 --> 00:28:40,864
+Yine aynı şekilde iteratörle ne yaptık? Dolaştık.
+
+200
+00:28:42,144 --> 00:28:44,503
+Örnek 3 bu kadar. Çoktan şey değil.
+
+201
+00:28:48,307 --> 00:28:49,567
+Şimdi örnekle de bakalım.
+
+202
+00:29:08,180 --> 00:29:26,180
+Mesela bakın, burada LinkedList'ten bir nesne oluşturuluyor. List ile tutuyoruz. Hangi verileri tutuyormuşuz? Book. Book klasından verileri tutuyoruz. Book klasına bakalım hemen iki dakikada.
+
+203
+00:29:35,188 --> 00:29:39,028
+Yapıcı fonksiyonu da bunları atama işlemleri yapılmış.
+
+204
+00:29:40,568 --> 00:29:42,768
+Yani basit bir class.
+
+205
+00:29:45,768 --> 00:29:49,048
+Tamam, LinkedList oluşturduk. List ile tuttuk.
+
+206
+00:29:49,128 --> 00:29:53,268
+Niye? Çünkü LinkedList, listten kalıtım alıyor ki demek ki.
+
+207
+00:29:53,988 --> 00:29:54,828
+Bunu yapabiliyoruz.
+
+208
+00:29:56,768 --> 00:29:59,108
+Bundan önce de kartlarla alakalı yapılmıştı.
+
+209
+00:29:59,108 --> 00:30:00,000
+Hani öğrenci...
+
+210
+00:30:00,000 --> 00:30:24,500
+bir kartı vardı. Bir de normal kullanıcı kartı vardı galiba. Ne yapıyorduk? İki kartla tutabiliyorduk. İki tane farklı classlar nesne üretiyorduk ama kart veri tipiyle bunu tutabiliyorduk. Aynı bunun gibi. Burada da Linked List listten kalıbımı aldığı için ne yapabiliyoruz? Böyle bu şekilde yazabiliyoruz.
+
+211
+00:30:25,779 --> 00:30:29,779
+İki tane book meselesi oluşturmuşuz. İşte değerleri burada.
+
+212
+00:30:31,059 --> 00:30:34,279
+Bakın kitaplar diye oluşturduğumuz listeye ne yaptık? Bunları ekledik.
+
+213
+00:30:36,139 --> 00:30:37,019
+Tamam.
+
+214
+00:30:38,839 --> 00:30:41,459
+Kitapları tek tek dolaşıyoruz. For each ile.
+
+215
+00:30:42,139 --> 00:30:43,839
+Tekrar çalıştım şuraya.
+
+216
+00:30:47,635 --> 00:30:51,875
+yazdırıyoruz. Neydi? İki tane kitap vardı zaten. Onu burada yazdırdık.
+
+217
+00:30:56,403 --> 00:30:59,763
+Bir de list iteratör ile yazdırmaya başlayacağız şimdi.
+
+218
+00:31:01,683 --> 00:31:03,563
+List iteratörü çağırdı işte.
+
+219
+00:31:04,183 --> 00:31:05,443
+Itere'de bunu tutuyoruz.
+
+220
+00:31:06,124 --> 00:31:07,364
+Kitapların iteratörünü.
+
+221
+00:31:08,503 --> 00:31:11,743
+Burada yalnız fark olarak has next ve has previous vardı.
+
+222
+00:31:11,743 --> 00:31:15,364
+Çünkü LinkedList'te nasıl oluyordu?
+
+223
+00:31:15,543 --> 00:31:17,583
+Hani iki tane düğüm vardı.
+
+224
+00:31:18,743 --> 00:31:19,443
+Nasıl göstereyim?
+
+225
+00:31:20,763 --> 00:31:21,624
+Gösteremeyeceğim.
+
+226
+00:31:22,932 --> 00:31:24,672
+İki tane düğüm vardı şöyle.
+
+227
+00:31:26,571 --> 00:31:28,851
+İste mesela bu bir böyle olur.
+
+228
+00:31:29,011 --> 00:31:31,891
+Yani bunun sonrakisi ikinci veriyi gösteriyor.
+
+229
+00:31:32,011 --> 00:31:33,651
+Bunun öncekisi de birinciyi gösteriyor.
+
+230
+00:31:45,076 --> 00:31:46,576
+Adcom Theory de Bülismus.
+
+231
+00:31:51,539 --> 00:32:19,120
+Hasnext ile ne yaptık? Bu iki tane kutudan ilkine gittik. Çünkü hani başta şey var. İlkine geldik. İlkindekini yazdırdık. Sonra tekrar Hasnext dedik. While döngüsü içerisinde çünkü. İkincisine gittik. İkincisini yazdırdık. Bitti. Bitince bu sefer de ne yaptık? Hasprevious dedik. En sonda olduğumuz için şu anda. İterasyon, iteramız en sonda. O yüzden ne yaptı? Previous ile
+
+232
+00:32:19,604 --> 00:32:21,124
+Buraya gelebiliyor yani.
+
+233
+00:32:22,763 --> 00:32:25,443
+Tabii şuraya geldi. Sonra buraya gelebiliyor. Sonra buraya gelebiliyor.
+
+234
+00:32:29,140 --> 00:32:32,980
+Mesela şöyle söyleyeyim. Bakın, as next dedik.
+
+235
+00:32:36,100 --> 00:32:37,460
+Neyse, oraya girmeyeyim.
+
+236
+00:32:41,076 --> 00:33:08,556
+Yani şey, bunu yaz, yani ilk eleman birinci kitabı yazdı, sonra ikinci kitabı yazdı. Sonra bir daha has next dediği için her ne kadar why ile girmese de bir daha dedi onu. Nalı gösterecek üçüncü olarak da. Ondan sonra has previous dedik. İlk has previous dediği için tekrar ikinci kitaba geldi. Sonra tekrar has previous dediği için birinci kitaba geldi.
+
+237
+00:33:09,044 --> 00:33:16,864
+Sonra bir daha HESPREVIS dediği başlangıçtaki şeyi gösteriyor. Ama sonuçta buraya tekrar girmeyeceği için bir şey yok.
+
+238
+00:33:21,236 --> 00:33:21,676
+Tamam.
+
+239
+00:33:23,796 --> 00:33:30,356
+Hasnext'le pardon özür diliyorum. Hasnext'le var mı yok mu onu takip ediyor? Varsa next diyordu.
+
+240
+00:33:31,356 --> 00:33:36,836
+Şimdi yanlış oldu. Hasnext'de varsa eğer nal değilse demek o zaman girecek buraya.
+
+241
+00:33:37,376 --> 00:33:43,556
+Iterext'le o zaman onu anlatacak sonra iterext dediği için de tabii şey bir sonrakine geçecek sonra.
+
+242
+00:33:44,756 --> 00:33:48,676
+Tekrar o var mı? Varsa geç yazdır.
+
+243
+00:33:49,364 --> 00:33:50,544
+Falk şeklinde yani.
+
+244
+00:33:52,304 --> 00:33:53,784
+Biraz karışık anlattım ama
+
+245
+00:33:53,784 --> 00:33:58,324
+sorunuz varsa lütfen sorun.
+
+246
+00:34:02,804 --> 00:34:09,083
+Linkit list ile ArrayList'tin.
+
+247
+00:34:10,583 --> 00:34:13,423
+ArrayList biraz daha tek taraflı.
+
+248
+00:34:15,203 --> 00:34:23,784
+Hani şöyle, bir düğüm var, buraya gittin, bir düğüm var, bir düğüm var, bir düğüm var, sonunu ekliyorsun falan mesela yani.
+
+249
+00:34:25,264 --> 00:34:26,463
+Ama Linkit list'te ne yapıyorsun?
+
+250
+00:34:27,163 --> 00:34:27,864
+Buraya gittin.
+
+251
+00:34:28,500 --> 00:34:33,260
+3. düğme geldin, 4. düğme geldin, sonra istiyorsun ki 3. düğme gideyim gidebiliyorsun.
+
+252
+00:34:35,340 --> 00:34:36,840
+Link liste olabilir mi?
+
+253
+00:34:38,460 --> 00:34:42,139
+Reelistlerde geriye dönme yok mu? Bir basama.
+
+254
+00:34:43,500 --> 00:34:44,899
+Hemen bakalım.
+
+255
+00:34:45,420 --> 00:34:46,819
+Burada gidiyor mu? Aynen.
+
+256
+00:34:47,460 --> 00:34:48,899
+Mesela bakalım.
+
+257
+00:34:53,715 --> 00:34:54,456
+Mock time.
+
+258
+00:35:02,195 --> 00:35:03,715
+İzatı, bu ne serin o accessi.
+
+259
+00:35:14,291 --> 00:35:18,511
+Bak mesela next var. Ama previous yok.
+
+260
+00:35:21,612 --> 00:35:23,271
+Unladım hocam, teşekkür ederim.
+
+261
+00:35:24,851 --> 00:35:33,311
+Tabii bunun teori kısmında daha yanlayacağınız da. Ben ona hiç hazırlık yapmadım çünkü. Benimde de hiçbir şey yok. Masa makine.
+
+262
+00:35:49,012 --> 00:35:52,872
+Baştan anlatayım mı? Yani hani anlamadıysanız.
+
+263
+00:35:54,372 --> 00:36:02,652
+Hocam sadece ikisi de birbirine yakın geldi. İkisi de aynı şekilde add fonksiyonu ile ekleyip yapınca ben arasında bir fark merak ettim.
+
+264
+00:36:07,284 --> 00:36:08,644
+Onlar işlem yapıyoruz.
+
+265
+00:36:09,304 --> 00:36:13,104
+Hep bu işlemler oluyor. Aralarındaki fark o yani.
+
+266
+00:36:13,463 --> 00:36:17,463
+Birinci elemandan sonra ikinci elemana gidebiliyorum. İkinci elemandan sonra dönemiyor.
+
+267
+00:36:17,463 --> 00:36:22,604
+Mesela sonra şey var. Haka şeklinde adını unuttum.
+
+268
+00:36:23,644 --> 00:36:26,203
+Mesela sonuncu elemandan birinci elemana gidebiliyoruz.
+
+269
+00:36:27,203 --> 00:36:29,463
+Birinci elemandan sonuncu elemana gidebiliyoruz.
+
+270
+00:36:31,384 --> 00:36:34,784
+Gibi. Aralarındaki fark bu oluyor genelde.
+
+271
+00:36:36,403 --> 00:37:02,123
+Ama şey hani ekleme yaptığın zaman onu ekliyorsun. Sonra mesela araya ekleme yapabilirsin. Bunu veri yapılarından da görmüş olabilirsiniz zaten. Hani mesela ArrayList'te araya ekleme diye bir şey yok. Ama LinkedList'te yapılabilir yani. Çünkü mesela burada iter iter dolaşıyoruz ya. ArrayList'te de yapılabilir. Neyse.
+
+272
+00:37:06,003 --> 00:37:07,788
+5. örneğe geçiyorum.
+
+273
+00:37:12,788 --> 00:37:14,635
+Yine bir tane link tuttiyiz.
+
+274
+00:37:18,003 --> 00:37:23,884
+Yine booklardan oluşuyor. Bu sefer bir tane de ArrayList oluşturmuşuz. Öğrencilerden oluşuyor.
+
+275
+00:37:25,804 --> 00:37:33,143
+Bakın mesela burada ne yapmışız? Kitapları ve öğrencilerin listesini yazdırmaya çalışmışız.
+
+276
+00:37:34,563 --> 00:37:40,203
+Bakın bu ArrayList, LinkedListe ne yapıyor? Listeden kalıtımı aldığı için ne yapabiliyoruz? Bakın bu şekilde tutabiliyoruz.
+
+277
+00:37:46,931 --> 00:37:49,951
+Bunun yazdı dediğimizde sizce ne yazar?
+
+278
+00:37:52,671 --> 00:38:01,032
+Mesela kitapları yazdırdığımızda şuradaki yazılar çıkar mı? İşte Peraf, Halasta, Gece Yarısı falan filan.
+
+279
+00:38:03,671 --> 00:38:05,011
+Çıkmaz tabii ki de.
+
+280
+00:38:07,171 --> 00:38:10,411
+Çıkacağı şey budur. Bunun bir collection olduğunu.
+
+281
+00:38:10,996 --> 00:38:37,256
+Book'tan nesneler tuttuğunu ve bu ilk elemanın da şu adresli olduğunu yazıyor. Çünkü biz kitapların genel hani şunu yazdırmaya çalışıyoruz yani. Şu Linked List nesnesini yazdırmaya çalışıyoruz. Böyle bir şey yok ama. Ne yazdırabiliriz? Mesela Book'u yazdıramayız, bir nesneyi yazdıramayız.
+
+282
+00:38:38,387 --> 00:38:43,507
+ne yazdırırız? String'i yazdırırız. Integer yazdırırız. Ama bunu
+
+283
+00:38:46,447 --> 00:38:48,447
+şey yapmıştık.
+
+284
+00:38:49,608 --> 00:38:55,947
+Mesela toString fonksiyonu veririz değil mi? OnOverwrite ederek ne yapıyorduk? Geçmişlerde
+
+285
+00:38:56,587 --> 00:39:04,447
+onOverwrite ederek sanki bu nesneyi yazdırıyormuşuz gibi yazdırabiliyorduk. Anca öyle yapılabilir yani.
+
+286
+00:39:16,755 --> 00:39:17,515
+HashMap.
+
+287
+00:39:19,135 --> 00:39:24,095
+HashMap'te de iki tane veri yapısını tutabiliyoruz.
+
+288
+00:39:25,215 --> 00:39:27,215
+Mesela burası anahtar oluyor, burası da key oluyor.
+
+289
+00:39:45,652 --> 00:39:49,652
+Bakın, üçüncüye izin vermiyor. Bir dik sinirleri gibi yani biraz.
+
+290
+00:39:54,996 --> 00:40:11,655
+Tamam. Burada mesela ama bakın burada ne yaptık? Edile değil, putile ekleme yapıyoruz. Bunlar anahtar. Yani burası k, burası da value olarak. Putile ekleme yapıyoruz.
+
+291
+00:40:15,655 --> 00:40:21,516
+Mesela integer değeri 1, yani şeyi 1, valuesu fati olarak.
+
+292
+00:40:22,068 --> 00:40:37,548
+şey yapmışız. K36 valliusu Yasin, K25 valliusu Furkan, yani diğeri Furkan. Şeklinde üç tane nesne eklemişiz. Üç tane şey eklemişiz. Biri eklemişiz.
+
+293
+00:40:39,548 --> 00:40:48,948
+Sonra işte bu hash map'ten ne yaptık? Entry kümesini aldık. Entry ile bakın integer string yine aynı şekilde tutuyoruz.
+
+294
+00:40:48,960 --> 00:40:50,920
+ve bunları ne yapıyoruz? Yani yazdırıyoruz.
+
+295
+00:40:52,779 --> 00:40:54,460
+For each şeklinde yani hepsini yazdıracak.
+
+296
+00:40:56,779 --> 00:40:59,720
+Sonra replace diye bir fonksiyon var mesela burada.
+
+297
+00:41:00,619 --> 00:41:05,519
+Yine k25, eski değeri Furkan, yeni değeri Tarık.
+
+298
+00:41:06,920 --> 00:41:11,079
+Onu yazdırdığımızda işte 25 eşittir Tarık çıkacak yani.
+
+299
+00:41:12,724 --> 00:41:20,463
+Aynı şekilde 25'tir, demo yaptığımızda kaldırdığımızda artık ne olacak? 25 yazılmayacak.
+
+300
+00:41:25,012 --> 00:41:26,032
+çalıştıralım.
+
+301
+00:41:27,052 --> 00:41:27,492
+Gördüm.
+
+302
+00:41:29,412 --> 00:41:29,932
+Bakın.
+
+303
+00:41:33,844 --> 00:41:35,844
+Fatih 1
+
+304
+00:41:35,844 --> 00:41:37,844
+Yani
+
+305
+00:41:37,844 --> 00:41:40,844
+Şurada yazdığımız şekilde
+
+306
+00:41:40,844 --> 00:41:45,844
+Fatih 1, Yasin 36, Kukan 25 yazdı. Sonra replace dedik.
+
+307
+00:41:45,844 --> 00:41:47,844
+25
+
+308
+00:41:47,844 --> 00:41:48,844
+şey
+
+309
+00:41:48,844 --> 00:41:50,844
+eski değeri
+
+310
+00:41:50,844 --> 00:41:52,844
+yeni değeri
+
+311
+00:41:52,844 --> 00:41:54,844
+ne oldu artık 25 tarık oldu. Bakın
+
+312
+00:41:54,844 --> 00:41:56,844
+diğerlerine birleşme yok.
+
+313
+00:41:56,844 --> 00:41:58,844
+remote dedik, 25 kaldırdık.
+
+314
+00:41:58,844 --> 00:41:59,980
+Bu oldu.
+
+315
+00:42:00,115 --> 00:42:13,076
+Tarık kalktı tamamen. Bu class'a bakmıştık zaten. Collection'larla alakalı arkadaşlar, bir sorunuz, bir sıkıntınız varsa hemen sorun yıkın.
+
+316
+00:42:22,483 --> 00:42:28,983
+Yoksa exceptionlara geçeceğim. Bu arada sorunuz olursa muhakkak bana sorun, mail atın yani.
+
+317
+00:42:37,331 --> 00:42:39,331
+Evet, exception'lara geçiyorum.
+
+318
+00:42:40,331 --> 00:42:42,331
+Exception'ların olayı nedir?
+
+319
+00:42:42,331 --> 00:42:43,331
+Hani,
+
+320
+00:42:43,831 --> 00:42:48,831
+TrayCatch blokları arasında kodlarımızı yazıyoruz.
+
+321
+00:42:49,831 --> 00:42:53,331
+Yani bir kodumuz var, mesela a, a, a bölü sıfır.
+
+322
+00:42:53,331 --> 00:42:56,831
+Bunu TrayBloğu arasında deniyoruz.
+
+323
+00:42:56,831 --> 00:42:59,831
+Eğer hata çıkmazsa, tamam, bunu çalıştıracak.
+
+324
+00:42:59,831 --> 00:43:01,279
+Ama hata çıkarsa,
+
+325
+00:43:01,280 --> 00:43:27,100
+Hangi hata ise, mesela buradaki aritmatik exception'dir. O zaman buraya gelecek ve buradaki cache'teki fonksiyonları yazacak. Mesela bu hiç olmasaydı ne olacaktı peki şu? O zaman da exception genel şeyidir. Yani ne hata olursa olsun demek. O zaman da bunu yazacaktı. Ondan sonra da bu kodları çalıştıracak işte.
+
+326
+00:43:28,052 --> 00:43:29,851
+Track Edge'i niye kullanıyoruz?
+
+327
+00:43:32,372 --> 00:43:34,971
+Yani şimdi mesela A eşittir A bölü sıfır.
+
+328
+00:43:36,292 --> 00:43:41,152
+Eğer bunu Track Edge arasında yapmazsak, düz yazarsak, yazarsak ne olacak?
+
+329
+00:43:42,731 --> 00:43:43,891
+Program patlayacak.
+
+330
+00:43:45,692 --> 00:43:48,092
+Biz ne yapmak istiyoruz? Program patlamasın.
+
+331
+00:43:48,412 --> 00:43:51,391
+İstisnalarda başka bir yön yapalım, başka bir yol gösterelim.
+
+332
+00:43:51,552 --> 00:43:54,072
+Ama program sürekli çalışsın.
+
+333
+00:43:56,755 --> 00:44:02,435
+Bunu istiyoruz. O nedenle de Track Edge'i kullanıyoruz. Oldukça fazla.
+
+334
+00:44:06,931 --> 00:44:16,711
+anlatayım bakayım baştan. Bir tane A eşittir 1 diye bir değişken tanımlanmış. Bir tane de B integer dizisi oluşturulmuş 5 tane.
+
+335
+00:44:27,284 --> 00:44:51,583
+Sonra işte tree'nin arasında deniyoruz. A eşittir, A bölü 0. A bölü 0 nedir? Yani 1 bölü 0. 1 bölü 0 nedir? Aritematik exception'dir. Aritematik exception'a gelince ne olacak? A eşittir 0 olacak. Yani A'yı direkt ne yaptı? 0'ladı. Sonra B'nin 10. indisi diyor. Oysa ki B'nin 10. indisi yok.
+
+336
+00:44:51,987 --> 00:44:55,127
+B'nin en fazla 4. indisi vardır. Çünkü 5 elemanlı.
+
+337
+00:44:57,427 --> 00:45:01,387
+4. indisi nedir? A'dır demiş. A'yı bir 0 yapmıştık.
+
+338
+00:45:02,667 --> 00:45:06,067
+Ya tabii şurada hata verecek. Çünkü onun cincisi yok. Ne hatası verecek?
+
+339
+00:45:08,608 --> 00:45:11,947
+Array'in indeksini taşma hatası verecek. Yani taşma hatası.
+
+340
+00:45:13,027 --> 00:45:18,207
+Tamam. Bu hatayı aldığımız zaman ne yapacak? Buraya girecek. Bu exception'a, bu catch-glo'una girecek.
+
+341
+00:45:19,251 --> 00:45:31,511
+ve B'nin lenghti, yani B'nin lenghti 5'tir, eksi 1, 4, yani son elemanına ne yap diyor? A'ya ata diyor. A neydi? 0'dı. O zaman B'nin son elemanında ne var? 0 var.
+
+342
+00:45:33,452 --> 00:45:38,751
+Burada iki tane hatamız zaten buraya girdiği için buraya daha girmeye gerek durmayacak. Girmeyecek yani.
+
+343
+00:45:39,872 --> 00:45:45,672
+Sonra A 0'dı. 0 ile 5'e çarptı. A yine 0 oldu. En son nihayetinde A'nın değeri 0.
+
+344
+00:45:46,228 --> 00:45:50,768
+B'nin de dördüncü elemanının değerinin sıfır olduğunu göreceğiz.
+
+345
+00:45:53,228 --> 00:45:54,307
+Gördüğümüz gibi.
+
+346
+00:45:55,408 --> 00:45:56,827
+Mesela bunu kapatayım.
+
+347
+00:45:57,768 --> 00:45:59,788
+Ne olacak? Sadece şuraya girecek.
+
+348
+00:46:00,927 --> 00:46:01,788
+Buraya A'ya atayacak.
+
+349
+00:46:08,403 --> 00:46:20,484
+A'nın son değeri 5, B10'un değeri ise 1 olarak, B10 yazdı aslında şey hani, B'nin son, en son ki elemanında bulunan değeri yazdırdık.
+
+350
+00:46:23,304 --> 00:46:34,583
+Ne yaptı? Şimdi burada hata verdi, o yüzden buraya girdi. B'nin son elemanında A'yı atadık. A'nın değeri ne? Hala 1. O yüzden 1 atandı.
+
+351
+00:46:35,155 --> 00:46:39,635
+Sonra buradaki keçilere girmeyecek çünkü bir tane hata oluştu ve o da buraya girdi zaten.
+
+352
+00:46:49,684 --> 00:46:52,463
+Şunu da göstereyim. Mesela demiştik mi ya?
+
+353
+00:46:57,427 --> 00:47:08,427
+Mesela A eşittir, A bölü 0 hatası verdi. Aritmatik exception'di. Ama aritmatik exception tanımlamadık burada, catch'in içerisinde. O zaman ne olacak? Genel olarak exception'e gidecek.
+
+354
+00:47:12,371 --> 00:47:30,151
+Bakın ne oldu? Exception'e geldi. Program çalıştı. A'nın son değeri 5, B'nin son, B'nin son değeri 0 olarak yazdırdı. Ama buraya geldi ve burada da dedi ki hani böyle bir hata var, haberin olsun. Bir. Böyle bir hata aldım dedi. Ama program çalıştı yani program patlamadı.
+
+355
+00:47:31,631 --> 00:47:35,271
+Tereket yazmasaydı program patlayacaktı, duracaktı.
+
+356
+00:47:38,867 --> 00:47:42,128
+Bu şekilde çalıştı ama böyle bir hata olduğunda yazdırdı.
+
+357
+00:47:47,923 --> 00:47:49,423
+Evet, sonrakiye geçiyorum.
+
+358
+00:48:08,532 --> 00:48:35,932
+Bir tane integer ve integer bir tane değişken tanımladık. Daha değerini belirlemedik. Mesela train arasında ne yaptık? Data eşittir null. Sonra dedik ki datanın integer değerini getir. Ne olacak? Null'ın integer değeri olur mu? Olmaz. Null pointer exception'e gidecek o yüzden. Tabi burada bir şey yazdırmamışız. O yüzden hiçbir şey yapmayacak yani.
+
+359
+00:48:36,500 --> 00:48:40,500
+En sonunda da, Finally Code Bulon'a girecek.
+
+360
+00:48:41,500 --> 00:48:44,500
+Data eşit 5 oldu.
+
+361
+00:48:44,500 --> 00:48:48,500
+Sistem altı nitelenmedi, her zaman çalışır.
+
+362
+00:48:49,500 --> 00:48:57,500
+Her zaman çalışır yazdırdı. Sonra datayı 5 yaptı. En son Finally'in de ardından, datanın integer değerini yazdırdı.
+
+363
+00:49:01,076 --> 00:49:08,195
+Bakın her zaman başlar, data'nın da integer değerini yazdırdı.
+
+364
+00:49:08,315 --> 00:49:09,635
+Data'yı çünkü 5 yaptı burada.
+
+365
+00:49:11,355 --> 00:49:13,435
+Data ne olduğu için ne oldu? Keçe girdi.
+
+366
+00:49:15,355 --> 00:49:19,476
+Keçe girdi için de, tabi burada bir şey yazdırmadık.
+
+367
+00:49:20,115 --> 00:49:22,275
+Hiçbir şey yapmadık. O yüzden buraya girdi ama.
+
+368
+00:49:28,211 --> 00:49:33,211
+Bakın mesela şimdi görün. Null Point, exception, buraya yazdırdı yani.
+
+369
+00:49:34,211 --> 00:49:38,211
+Catch'e girdi. Catch'ten sonra final'ye girdi. Sonra devam etti. Tamam.
+
+370
+00:49:38,211 --> 00:49:44,211
+Mesela null değil de 3 olsaydı, bu sefer de ne olacaktı?
+
+371
+00:49:44,211 --> 00:49:49,211
+Buradaki kodlar çalışacak. Buraya girmeyecek. Şunu yine açayım.
+
+372
+00:49:49,211 --> 00:49:55,755
+Buraya girmeyecek. Yine final'ye girecek. Çünkü final'nin olayına trade de çalışsa, catch de çalışsa,
+
+373
+00:49:56,115 --> 00:49:58,976
+Finali çalışacak yani nihayetinde Finali çalışacak.
+
+374
+00:50:02,420 --> 00:50:06,720
+Tamam, bunları yaptı. Sonra tekrar bunu yazdırdı. Evet, bakalım.
+
+375
+00:50:09,300 --> 00:50:18,080
+Bakın mesela ne yaptı? Önce 3'ü yazdırdı, tray'e girdi. Sonra tray'den de çıktıktan sonra final'e girdi. Her zaman başları yazdırdı.
+
+376
+00:50:18,820 --> 00:50:25,760
+Datayı 5 yaptı. Sonra final'den de çıktıktan sonra datayı yazdırarak 5'i gördük burada yani.
+
+377
+00:50:29,556 --> 00:50:54,135
+Tamam. Bu sefer de bakın yani bu zamana kadar şu iki örnekte şunu gördük. Bir hata fırlatılmıştı. Biz onu yakaladık. Mesela A eşittir A bölü sıfırda neden al pointer hatası dedik değil mi? Bu hata fırlatıldı da biz yakaladık. Fırlatıldı. Biz de burada ne yaptık? Aritmatic exception'de onu yakaladık.
+
+378
+00:50:55,668 --> 00:50:57,208
+Şimdi biz bir hata fırlatacağız.
+
+379
+00:50:58,748 --> 00:51:00,728
+Nasıl fırlatıyoruz? Throw ile.
+
+380
+00:51:02,467 --> 00:51:04,527
+Mesela nasıl yani? Mesela bakalım.
+
+381
+00:51:05,107 --> 00:51:10,307
+Integer H13, H18'den küçükse ne yapsın?
+
+382
+00:51:13,148 --> 00:51:16,927
+Aritmatik exception hatası yollasın. Not valid diye, uygun değil diye.
+
+383
+00:51:18,128 --> 00:51:22,407
+Eğer ki 18'den küçük değilse o zaman Welcome to what rest of the code.
+
+384
+00:51:23,188 --> 00:51:24,387
+yazsın.
+
+385
+00:51:25,587 --> 00:51:27,587
+Demişiz, mesela çalıştıralım.
+
+386
+00:51:28,987 --> 00:51:30,987
+Ne oldu? Bakın hata fırlattı.
+
+387
+00:51:32,688 --> 00:51:36,188
+Eğer bunu bir 18-19 yaparsak
+
+388
+00:51:39,188 --> 00:51:41,387
+ne oldu? Bakın burası yazdı.
+
+389
+00:51:42,188 --> 00:51:44,188
+Troll'a ne yapıyoruz? Hata fırlatıyoruz.
+
+390
+00:51:46,587 --> 00:51:48,188
+Örnek 4'e bakalım.
+
+391
+00:51:49,387 --> 00:51:50,188
+Burada
+
+392
+00:51:52,820 --> 00:52:02,820
+Mesela bir tane parent class'ımız var. Bir tane message fonksiyonu var. Ne yaptık? Bir tane daha farklı bir class'ımız var. Parent'tan kalıtım aldı.
+
+393
+00:52:03,820 --> 00:52:10,820
+Ve overwrite etti bu fonksiyonu. Etme zorunda değildi. Ama etti. Kendisi başka bir şey tanımayacak.
+
+394
+00:52:16,532 --> 00:52:20,951
+O zaman aritmetik exception hatası fırlatılabilir yani diyor.
+
+395
+00:52:26,291 --> 00:52:31,892
+Bir tane daha fonksiyonumuz var. Main fonksiyonu. Biliyorsunuz kodlar ilk buradan çalışır.
+
+396
+00:52:33,291 --> 00:52:39,892
+Örnek 4'ten bir tane nesne oluşturduk. Onun mesajını çağırdık. Ne oldu?
+
+397
+00:52:42,291 --> 00:52:46,892
+Bakın test exception child. System outprintlnelerine o yazdı.
+
+398
+00:52:47,291 --> 00:52:51,492
+Yani şunu tanımladık ama tabii hata çıkmadı. O yüzden fullatmalık bir şey yok.
+
+399
+00:52:51,987 --> 00:52:57,747
+Şu an bir hata yok. O yüzden flatland bir şey yok. Ama bir hata olsaydı mesela ne gibi bir hata olsaydı yine.
+
+400
+00:53:13,235 --> 00:53:14,835
+Aslında böyle bir şey yaptık. Bakalım ne olacak?
+
+401
+00:53:18,324 --> 00:53:20,004
+Bakın hata fırlattı gördünüz mü?
+
+402
+00:53:22,184 --> 00:53:29,964
+Burada mesela tamam şunu yorum satırına aldım. Bakın bu seferde sadece try catch'li kısım var.
+
+403
+00:53:34,195 --> 00:53:36,195
+Bakın hata fırlatmadı.
+
+404
+00:53:36,195 --> 00:53:40,195
+Niye? Çünkü biz track-hash ile yakaladık onu.
+
+405
+00:53:40,195 --> 00:53:48,195
+Hata çıktı evet. A eşittir A bölü sıfırda sıfıra bölümü hatası çıktı. Bu fonksiyonu hatayı fırlattı.
+
+406
+00:53:48,884 --> 00:54:02,644
+Sonra ne oldu? E tabi burada hata çıktığı için exception A'ye girdi. Niye? Çünkü exception A biliyorsunuz en genel tanımıyla hataların. Yani ne hatası olursa olsun eğer özel olarak tanımlamamışsa o başka bir cache de buraya muhakkak girer o.
+
+407
+00:54:02,644 --> 00:54:09,804
+Mesela system.out.print.elen dedik.
+
+408
+00:54:17,076 --> 00:54:18,536
+Hata yakalandı diyelim.
+
+409
+00:54:19,936 --> 00:54:22,695
+Bu sefer hata yakalandı diye bir yazı çıkarttık.
+
+410
+00:54:26,739 --> 00:54:30,739
+Ama bakın biz bunu track-hatch ile yapmadık. Ne oldu?
+
+411
+00:54:31,939 --> 00:54:36,739
+Patladı. Buradaki de çalışmadı. Program patladı direkt.
+
+412
+00:54:39,139 --> 00:54:40,939
+Yani şuradaki gibi...
+
+413
+00:54:46,132 --> 00:54:48,852
+Burada mıydı? Buradaki gibi değil yani.
+
+414
+00:54:57,076 --> 00:54:58,736
+Mesela şunu şey yaptım.
+
+415
+00:55:04,467 --> 00:55:05,607
+Ha, şu, şu, şu, şu.
+
+416
+00:55:12,755 --> 00:55:35,895
+Mesela buradaki gibi değil. Burada niye? Hata, bakın yazdırdı, hatayı yazdırdı yani. Hani hataya kalırdık, program çalışmaya devam ediyor. Hatayı yazdırdı. Ama program çalışıyor yani. O hataya göre çalışıyor. Hani değerler, istediğimiz değerler olmayabilir ama çalışıyor. Tabii o değerleri ne yapacağız? Burada ayarlarız.
+
+417
+00:55:36,980 --> 00:56:03,980
+Amaç o. Yani hata olduğu zaman, bir istisna olduğu zaman bunu ne yapalım? Hani ona göre farklı bir şey yapalım. Ama burada öyle bir şey yok. Burada hiç Trackage içerisinden olmadığımız için. Direkt patladık program, direkt durdu yani. Tamam. Trackage, finally hakkında, exceptionlar hakkında, collectionlar hakkında.
+
+418
+00:56:04,947 --> 00:56:06,547
+Herhangi bir sorunuz var mı?
+
+419
+00:56:15,411 --> 00:56:16,411
+Evet.
+
+420
+00:56:18,011 --> 00:56:19,011
+Var mı bir şey?
+
+421
+00:56:23,027 --> 00:56:23,728
+Teşekkürler.
+
+422
+00:56:30,867 --> 00:56:56,228
+Şimdi, tabi ben chat'i görmemiştim. ArrayList ve LinkedList listten mi türetilmiş? Yani, şunu söyleyebilirim. Biliyorsunuz ki, bu list genel bir tanım. LinkedList'te dolayısıyla listeden kalıtım alıyor. Zaten kalıtım almasaydı,
+
+423
+00:56:57,396 --> 00:56:59,396
+bu şekilde tanımlayamazdık.
+
+424
+00:57:02,196 --> 00:57:03,196
+Tamam.
+
+425
+00:57:03,756 --> 00:57:05,756
+Örnek 6.
+
+426
+00:57:06,756 --> 00:57:10,196
+Herhalde collection'lardaki örnek 6'dan bahsediyorsunuz.
+
+427
+00:57:11,096 --> 00:57:12,972
+M'yi neye göre seçtik?
+
+428
+00:57:17,300 --> 00:57:23,000
+Ya o bir önemi yok. Ya o sadece bir adlandırma yani. İsim, değişkenin adı gibi.
+
+429
+00:57:25,640 --> 00:57:29,720
+Onun bir önemi yok. Yani M'nin bir anlamı, M değil de başka bir şey diyor.
+
+430
+00:57:30,800 --> 00:57:31,640
+Ne diyelim?
+
+431
+00:57:32,560 --> 00:57:33,400
+Deneme diyelim.
+
+432
+00:57:35,940 --> 00:57:40,760
+Başta tabii deneme dersek, buradaki M'ler de ne yapacağız? Deneme yapacağız tabii ki.
+
+433
+00:57:45,331 --> 00:57:46,531
+Bakın, bir fark yok.
+
+434
+00:57:47,811 --> 00:57:49,171
+Başka sorusu olan var mı?
+
+435
+00:57:58,579 --> 00:57:59,579
+Yönelik
+
+436
+00:58:05,235 --> 00:58:14,219
+Laps sayısında ya tablinde bir değişiklik var mı? Şu an bir bilgim yok. O konuda duyurusu atılır.
+
+437
+00:58:19,923 --> 00:58:21,923
+Zürüs atılır şey olunca yanım.
+
+438
+00:58:25,780 --> 00:58:27,580
+O zaman jenerikslere geçiyorum.
+
+439
+00:58:31,795 --> 00:58:36,795
+Özellikle bu exception'lar ve collection'ları çok kullanacaksınız. Yani onu size söyleyeyim.
+
+440
+00:58:37,996 --> 00:58:40,396
+İnterfeşte de kullanırsınız tabii ya.
+
+441
+00:58:40,996 --> 00:58:42,596
+Kullanırsınız da yani.
+
+442
+00:58:44,396 --> 00:58:46,396
+Bunları çok kullanacaksınız ama.
+
+443
+00:58:55,731 --> 00:58:57,392
+Evet, jeneriklere geçelim.
+
+444
+00:58:59,032 --> 00:59:00,452
+Jeneriklerin olayı nedir?
+
+445
+00:59:01,292 --> 00:59:02,072
+Yani jenerik,
+
+446
+00:59:03,152 --> 00:59:05,632
+mesela işte ben bir fonksiyon tanımladım.
+
+447
+00:59:06,771 --> 00:59:07,672
+Ama bakın hani burada
+
+448
+00:59:11,539 --> 00:59:26,559
+Bir tane jenerik tanımlamışım. Nasıl tanımıyorum? Küçüktür, büyüktür. Şu E'nin bir anlamı yok. Bir önemi yok. Yani bu E değil, deneme de olabilir. Tamam mı? Ama hani standarttır. E yapılır yani. Standarttır. Herkes E yapar.
+
+449
+00:59:29,359 --> 00:59:35,799
+Bir tane bakın ne oldu? E dizisi oluşturmuşuz. E dizisi ne anlama geliyor ya?
+
+450
+00:59:36,244 --> 00:59:59,004
+E dizisi arkadaşlar, şöyle yani, ben şimdi mesela, bu fonksiyonu kullanarak, bir listenin, bir dizinin, içini dolaşmak istiyorum. Ama işte biliyorsunuz, integer için ayrı yazmak gerekir, double için ayrı yazmak gerekir, string için ayrı yazmak gerekir.
+
+451
+01:00:03,987 --> 01:00:05,048
+Buna lüzum yok.
+
+452
+01:00:06,608 --> 01:00:11,307
+Ben diyorum ki ben bir tane dizi değişkeni tutacakmışım.
+
+453
+01:00:11,427 --> 01:00:13,548
+Şu bakın burada köşeli parantezler var.
+
+454
+01:00:14,068 --> 01:00:17,987
+Bunun da veri tipi ne olursa olsun gelsin burada çalışsın.
+
+455
+01:00:19,668 --> 01:00:23,947
+Sonradan diyorum ki ben bu fonksiyonu kullanacağım.
+
+456
+01:00:24,807 --> 01:00:25,987
+Integer veri tipi gönderiyorum.
+
+457
+01:00:27,867 --> 01:00:29,007
+Onun için kullanacağım.
+
+458
+01:00:29,327 --> 01:00:31,947
+diyorum. Sonradan veri tipini belirliyorum yani.
+
+459
+01:00:34,208 --> 01:00:36,307
+Mesela burada örneğimize bakalım.
+
+460
+01:00:37,788 --> 01:00:40,068
+İşte üç tane dizi tanımlanmış.
+
+461
+01:00:40,688 --> 01:00:42,728
+Integer, Double ve Karakter dizisi.
+
+462
+01:00:43,668 --> 01:00:45,548
+Mesela önce Integer diziyi gönderiyoruz.
+
+463
+01:00:46,568 --> 01:00:48,507
+Burada Integer diye bir tanımlama yapmadık.
+
+464
+01:00:49,608 --> 01:00:50,987
+E diye bir tanımlama yaptık.
+
+465
+01:00:52,884 --> 01:00:59,963
+Ne oluyor? Bu integer dizi, yani 1, 2, 3, 4, 5'i gönderiyoruz. Onu tek tek dolaşıyor ve yazdırıyor.
+
+466
+01:01:02,304 --> 01:01:08,184
+Yine aynı fonksiyonu kullanıyorum. Farklı bir veriti, farklı bir değişiklik yapmadan.
+
+467
+01:01:08,184 --> 01:01:16,423
+Bu sefer double gönderiyorum ve double listesini, double array'deki 1.1, 2.2'yi vesaire.
+
+468
+01:01:17,012 --> 01:01:20,792
+yazdırabiliyorum. Aynı şekilde karakter araya gönderiyorum.
+
+469
+01:01:21,252 --> 01:01:26,712
+H'yi, E'yi, L'yi şuradaki fonksiyondan hiç değişiklik yapmadan ne yapabiliyorum?
+
+470
+01:01:26,832 --> 01:01:27,452
+Kullanabiliyorum.
+
+471
+01:01:29,272 --> 01:01:29,912
+Çalıştırayım.
+
+472
+01:01:31,752 --> 01:01:32,472
+Bakın.
+
+473
+01:01:34,972 --> 01:01:40,772
+Burada boşluklarla yazdırmışız. Sonra tabii bir tane de şey yapmışız.
+
+474
+01:01:43,092 --> 01:01:44,792
+Bir alt satıra geçmişiz zannet.
+
+475
+01:01:45,844 --> 01:01:46,344
+Tamam.
+
+476
+01:01:48,623 --> 01:01:49,724
+Anlaşıldı değil mi?
+
+477
+01:01:49,824 --> 01:01:50,983
+Hani jenerik nedir?
+
+478
+01:01:51,144 --> 01:01:53,764
+Ben sonradan bunun veri tipini belirleyeceğim yani.
+
+479
+01:01:55,063 --> 01:01:55,603
+Jenerik bu.
+
+480
+01:01:59,603 --> 01:02:05,283
+Farklı veri tipleri için aynı fonksiyonu çalıştırıyoruz.
+
+481
+01:02:08,203 --> 01:02:15,643
+Burada bir tane vardı. Hani bir tane farklı bir veri tipiyle alakalı bir tane şeyimiz vardı. Değişkinimiz vardı. Burada iki tane var.
+
+482
+01:02:16,343 --> 01:02:21,763
+Bakın burada da T ve U demişiz. E'nin, T'nin, U'nun hiçbir anlamı yok.
+
+483
+01:02:22,623 --> 01:02:24,283
+Onlar sizin kendi...
+
+484
+01:02:26,387 --> 01:02:32,128
+Yani isteğiniz, istediğiniz şeyi yazabilirsiniz. Mesela deneme yazabilirsiniz.
+
+485
+01:02:33,528 --> 01:02:34,088
+Tamam.
+
+486
+01:02:36,088 --> 01:02:44,908
+Tabii deneme yazarsanız, ya T yazarsanız dersin ki ben T türünden bir, object 1, T türünden olacak. Object 2 de U türünden olacak.
+
+487
+01:02:45,448 --> 01:02:50,968
+Burada da şey yaparken, mesela bakın burada bir tane nesli üretiyorsunuz. String integer diyorsunuz. Demek ki ne demek?
+
+488
+01:02:51,795 --> 01:03:01,115
+Bunu kullanacağınız zaman, buradaki object 1 nokta, print dediğiniz zaman, t derken aslında stringi, u derken de integer'ı ifade ediyoruz.
+
+489
+01:03:02,155 --> 01:03:07,035
+Ama hani bunu ben önceden dedim ki, sen sonradan veri tipini belirle.
+
+490
+01:03:12,019 --> 01:03:24,180
+Buraya mesela ben string ve integer yazmadım. Eğer string ve integer yazsaydım o zaman bunu kullanamazdım mesela. Çünkü karakter ve karakter için de aynı class'ı kullanıyoruz.
+
+491
+01:03:26,320 --> 01:03:27,099
+Tamam.
+
+492
+01:03:31,188 --> 01:03:33,188
+Bir tane nesne oluşturduk.
+
+493
+01:03:34,188 --> 01:03:36,188
+Bakın, obje 1 adında bir tane nesne oluşturduk.
+
+494
+01:03:36,188 --> 01:03:38,188
+Buradaki obje 1 ile karışmasın kafanız.
+
+495
+01:03:38,188 --> 01:03:42,188
+Bu obje 1 main şeylerin arasında.
+
+496
+01:03:45,188 --> 01:03:47,188
+Küme parantezlerinin arasında.
+
+497
+01:03:48,188 --> 01:03:51,188
+O yüzden obje 1 derken şunu kastediyoruz.
+
+498
+01:03:51,188 --> 01:03:56,188
+Yoksa buradaki yeri değil. Buradakiler ayrı bir küme parantezinin içerisinde.
+
+499
+01:04:00,403 --> 01:04:17,004
+Tamam, object 1.print dedik. Bakın ne yaptık, burayı çalıştırdık. Object 1, tu derken neydi? String integer idi. Tamam, sonra string integer ne yaptık? Bakın, nyp ve 2018.2'yi ne yaptık? Yapıcı fonksiyonu gönderdik.
+
+500
+01:04:17,864 --> 01:04:25,864
+nyp string bir değer. Bakın object 1 eşittir, object 1 dedik. Bu nyp ne oldu? Buraya geldi, buraya atandı.
+
+501
+01:04:26,835 --> 01:04:33,936
+Bu da sayısal bir değer. Aynı şekilde o da object 2'ye atındı. Sonra print dedik, ne yaptık? Object 1 ile bu object 2'yi yazdırdık.
+
+502
+01:04:35,496 --> 01:04:50,255
+Sonra object 2 dedik. Burada da karakter karakter olarak tanımlamışız. Yani object 1 ve object 2 bu sefer karakter karakter. Object 1 karakter tipinde, object 2 karakter tipinde olarak kullanıyoruz.
+
+503
+01:04:53,076 --> 01:04:54,556
+Ondan sonra onu yazdırdık.
+
+504
+01:04:55,443 --> 01:04:59,544
+Evet, interface'i anlattım. Her şeyi anlattım.
+
+505
+01:05:00,824 --> 01:05:04,003
+Son olarak, eğer bir sorunuz varsa, sorun.
+
+506
+01:05:05,403 --> 01:05:08,604
+Yoksa sonradan sorunuz olursa, mail atın.
+
+507
+01:05:26,164 --> 01:05:27,943
+Şimdiden bayramınız gübarık olsun.
+
+508
+01:05:33,652 --> 01:05:35,652
+Allah'a emanet olun.
+
+509
+01:05:36,952 --> 01:05:37,952
+Kapatıyorum.
+
+510
+01:05:48,500 --> 01:05:49,000
+Bulduk.
