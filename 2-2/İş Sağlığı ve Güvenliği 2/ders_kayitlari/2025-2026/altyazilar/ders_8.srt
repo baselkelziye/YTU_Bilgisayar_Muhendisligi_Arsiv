@@ -1,0 +1,1191 @@
+1
+00:08:33,748 --> 00:08:34,768
+Arkadaşlar merhaba.
+
+2
+00:08:40,211 --> 00:08:48,991
+Tamam, 35 kişi riskiyor, benimle de gitti. Bir 40'a kadar bekleyelim, sonrasında başlayacağım.
+
+3
+00:08:49,851 --> 00:08:52,032
+Size sormak istediğiniz bir şey var mı bu süreçte?
+
+4
+00:08:52,951 --> 00:08:54,771
+Hocam, ikinci vize tarihi belli mi?
+
+5
+00:08:55,604 --> 00:09:07,684
+İkinci vize tarihi henüz belli değil. Ama sanırım 22'sine kadar, Mayıs'ın 22'sine kadar yapılması gerekiyormuş diye bana bir konuyla ilgili bir bilgi geldi. Tam resmi olmayacak şekilde.
+
+6
+00:09:10,084 --> 00:09:22,544
+O yüzden ben şöyle iki hafta boyunca olmayacağım için, bunu muhtemelen ben 19 Mayıs haftasında yani 18 ile 22'si arasında yapmayı planlıyorum.
+
+7
+00:09:24,563 --> 00:09:32,803
+Şöyle kal. Sesim geliyor mu? Tamamdır hocam geliyor. Tamamdır. Niye bağlanmadı sadece?
+
+8
+00:10:02,227 --> 00:10:26,147
+Muhtemelen de tam olarak da şu an kesin olmamakla birlikte 21 Mayıs'ı diyebilirim diye düşünüyorum. Ya da 20 Mayıs olarak söyleyebilirim. Ama kesin olmamakla birlikte ben daha öncesinde tabii ki sizlere haberdar ederim. Nura mesaj atarak.
+
+9
+00:10:31,700 --> 00:10:33,320
+Tamamdır hocam, teşekkür ederim.
+
+10
+00:10:33,700 --> 00:10:34,759
+Rica ederim [öğrenci].
+
+11
+00:10:38,227 --> 00:10:40,467
+Başka sorusu olan var mıydı?
+
+12
+00:10:42,627 --> 00:10:45,407
+Diğer arkadaşlar beklerken en azından.
+
+13
+00:16:29,748 --> 00:16:42,948
+Evet arkadaşlar, geçtiğimiz hafta biraz makine ile ilgili biraz bahsetmiştik. Makine güvenliğinden biraz bahsedeceğiz demiştik. Genellikle makine güvenliğinde ne olduğuna bir giriş yapmıştık.
+
+14
+00:16:44,248 --> 00:16:55,228
+Makine güvenliği tarafı aslında biraz da sistem tarafı diyebiliriz. Yani bir sistemin korunmasıyla ilgili olarak süreci kapsayan bir.
+
+15
+00:16:55,552 --> 00:17:00,792
+nokta olduğunu açıkçası söyleyebiliriz.
+
+16
+00:17:15,092 --> 00:17:21,632
+Bu noktada makine güvenliği dediğimiz aslında olay genel olarak neydi?
+
+17
+00:17:21,792 --> 00:17:31,172
+Hatırlarsak geçtiğimiz haftaki slide'lardan mesela bir sistemin korunması üzerine kurulan bir düzenek diyebiliriz.
+
+18
+00:17:31,332 --> 00:17:36,752
+Ve bu genel olarak insan yerine biraz daha makineydi.
+
+19
+00:17:37,236 --> 00:17:47,236
+Makineyi makineyle korumayla alakalı bir süreç diyebiliriz. Çünkü burada belli başlı izinlerin, belli başlı ürünlerin vesaire...
+
+20
+00:17:48,211 --> 00:18:10,632
+Giriş izinlerinin olması, lotodan bahsetmiştik, logout, tagout vs. bunlardan bahsetmiştik. Bunların neler olduğundan. Çünkü bir makineye izinsiz, yetkisiz birinin girmemesi, temel mantık buydu çünkü yetkisiz birinin girmemesi üzerineydi. Yetkisiz birinin girmemesi için yapılan bir düzenek aslında temel olarak baktığımızda.
+
+21
+00:18:14,324 --> 00:18:24,403
+Bu hafta da biraz gireceğimiz taraf açıkçası, biraz kanunlardan vesaire de bahsedeceğim, biraz standartlara gireceğim.
+
+22
+00:18:26,464 --> 00:18:38,184
+Bu haftayı bu şekilde tamamlayalım. Aynı zamanda ufaktan bir makinenin ürünleri, özellikle motor, içten yanmağı motor, ufacık bir bahsedeceğim konunun gereği.
+
+23
+00:18:40,627 --> 00:18:55,347
+Bundan biraz bahsetmem gerekiyor. Ancak sizi çok ilgilendiren bir taraf değil. Daha çok sizi ilgilendiren taraf. Çünkü aslında baktığımızda makine güvenliği, makine emniyeti daha doğru bir tabirle söyleyebiliriz.
+
+24
+00:18:55,347 --> 00:19:00,347
+Peki, buna geçmeden önce güvenlik ve emniyet arasındaki fark...
+
+25
+00:19:07,763 --> 00:19:13,823
+Nedir diye sorsam? Cevap verebilen var mıdır? Güvenlik nedir? Emniyet nedir?
+
+26
+00:19:25,556 --> 00:19:27,976
+Güvenlik ve emniyet arasındaki fark nedir diye.
+
+27
+00:19:30,216 --> 00:19:31,615
+Bir fark var mı ya da?
+
+28
+00:19:43,508 --> 00:19:50,908
+Yok, uygun bir babaya gitti. Cevap verebilecek. Fikir beyan edebilecek en azından.
+
+29
+00:20:04,627 --> 00:20:06,567
+Siz bana bakın, ben size bakayım.
+
+30
+00:20:07,447 --> 00:20:25,627
+Şimdi güvenlik ve emniyet arasındaki fark şu, aslında kelimenin kökenine indiğimizde birinin biraz daha davranışsal duygu, diğerinin ise biraz daha fiziksel açıdan aslında benzer anlamlara geliyor.
+
+31
+00:20:25,627 --> 00:20:28,627
+Ancak İngilizceki safety ve security aslında.
+
+32
+00:20:29,011 --> 00:20:39,091
+Kelimelerin karşılıklı, safety dediğimizde olay güvenlik oluyor. Security dediğimizde olay emniyet tarafı oluyor.
+
+33
+00:20:39,796 --> 00:21:06,195
+Emniyet güçleri deriz ya da emniyet müdürlüğü deriz. Bunlar nedir? Kişilerin fiziksel açıdan iyi olmasını sağlayan bir ekip olarak. Emin olmaktan geliyor emniyet kısmı. Güvenlikte yine her şekilde güvenmekten geliyor. Biraz daha duygusal, biraz daha davranışsal boyutta olan kısım. Bu yüzden ikisi arasındaki bir makine emniyeti dediğimizde aslında makineyi fiziksel olarak korumak.
+
+34
+00:21:06,836 --> 00:21:13,175
+üzerinden gidiyoruz. Makine güvenliği mi, makine emniyeti mi? Makine emniyetidir. Machine safety olarak geçiyor.
+
+35
+00:21:13,715 --> 00:21:35,755
+Ama bizim Türkçedeki karşılığı burada makine emniyeti olarak geçer. Bu dediğim gibi biraz bizde eksik kalan bir konu, tartışılan bir konu demeyeceğim. Çünkü tartışmaktan ziyade eksik kalan bir konu. Ne emniyet dediğimiz ne sağlığı ve güvenliği alan için konuşuyorum bunu. Alan dışındaki kullanımlar üzerinden.
+
+36
+00:21:37,364 --> 00:21:55,500
+Bir bilgim yok. Konuştuğum alan tarafı iş sağlığı ve güvenliği tarafı. Bu noktada iş sağlığı ve güvenliği tarafında dediğim gibi herhangi bir tartışma var diyemeyeceğim. Ancak burada dediğim nokta...
+
+37
+00:21:56,564 --> 00:22:06,544
+Bir tartışma yok. Bir belirsizlik var çünkü bunun üzerinde. O yüzden makine emniyeti aslında daha doğru bir ifadedir, daha doğru bir kullanımdır.
+
+38
+00:22:07,184 --> 00:22:22,124
+Şimdi şuradan hızlıca şu haftayı bir bitirelim. Bu haftayı hızlıca geçeceğim. Bu haftayı sadece dediğim gibi, sadece bir genel kültür bir bilgiler, belki biliyorsunuzdur zaten, o ayrı bir konu. Ben sadece hızlı bir şekilde geçeceğim.
+
+39
+00:22:23,220 --> 00:22:25,220
+Evet, bu.
+
+40
+00:22:33,715 --> 00:22:34,215
+Evet.
+
+41
+00:22:35,412 --> 00:23:03,192
+İçten yanma motorların türleri tabii ki, benzinli dizel motorlar, iki zamanlı motorlar, bunlar hibrit olarak geçiyor. Benzinli motorlar, dizel motorlar bunlar, motor tipleri, otomobiller ve hafif araçlarda yaygın olarak kullanılır, yüksek devirlerde çalışabilir ve daha hızlı hızlanma sağlarlar. Ancak dizel motorlar göre yakıt türlü keviden. Daha fazla da dizel motorlarda ise kamyonlar vs. daha ağır hizmet veren araçlarda kullanılır.
+
+42
+00:23:03,412 --> 00:23:07,711
+Daha hızlı yakıt tüketiciler, benzinli motora göre daha gürültülü ve ağırdırlar.
+
+43
+00:23:07,832 --> 00:23:11,032
+Genel olarak baktığımızda ama daha güçlü motorlar olarak kabul ediliyor.
+
+44
+00:23:14,652 --> 00:23:25,132
+İki zamanlı motorlar ama motosikletler motorlu testlerle ve küçük deniz araçlarında kullanılır. Basit bir yapıya sahiptirler ve yüksek güç ağırlıklı vs. diye gidiyor.
+
+45
+00:23:25,132 --> 00:23:27,512
+Dediğim gibi buraları hızlıca geçeceğim.
+
+46
+00:23:28,147 --> 00:23:36,087
+Ağır makinelerde hidrolik ve güç aktarımı, hassas kontrolü ve 3 olarak da dayanıklılık olarak sistemsel bulunuyor.
+
+47
+00:23:36,307 --> 00:23:41,567
+Bunlar hidrolik sistemler. Ağır makinelerde gücü belirli bir şekilde aktarılır.
+
+48
+00:23:41,987 --> 00:23:51,507
+Hidrolik sistemler, hassas kontrolü, imkanlısı, operatörden baktığına hak ettiği, milimetrik olarak ayarlıyor ve bu da iş güvenliğini arttıran bir noktadır.
+
+49
+00:23:52,248 --> 00:23:56,047
+Dayanıklıkta tabii ki zorlu çalışma koşullar. Dayanıklı olması gereken yüksek başı.
+
+50
+00:23:56,147 --> 00:24:00,907
+ve sıcaklıkları maruz kalmalarına rağmen uzun bir süre devam edeni sağlar.
+
+51
+00:24:01,748 --> 00:24:06,147
+Winchler, kule winchler, mobil winchler ve paletli winchler olarak, winchler aslında...
+
+52
+00:24:13,107 --> 00:24:15,947
+Binçler aslında genel olarak baktığımızda
+
+53
+00:24:18,163 --> 00:24:38,163
+İş güvenliği, özellikle inşaatlarda en tehlikeli olan durumlardan bir tanesi, Winch'lerin kullanımı. Hem Winch'lerin kullanımı hem de Winch çalışırken ki geçen süre içerisindeki, yani Winch çalışıyor, rüzgar ne kadar esiyor? Rüzgar eğer çok fazla rüzgar varsa Winch o gün çalışmaz.
+
+54
+00:24:46,163 --> 00:24:55,844
+İşin yapılamaması demek. O yüzden winchler, çünkü neler ülkereye doğru çıktıkça aslında temel mantık olarak winchler daha kullanılmaz halde gelirler.
+
+55
+00:24:56,824 --> 00:25:02,223
+Haletli winchler var. Tabii ki zorlarızı koşullarında çalışabilirler. Daha büyük ve daha ağır yükleri kaldırabilirler.
+
+56
+00:25:02,324 --> 00:25:06,603
+Mobil winchler inşaat sahasında farklı noktaları hareket edebilir, daha esnek bir kullanım imkanı.
+
+57
+00:25:06,943 --> 00:25:12,003
+Kule winchler de zaten az önce bahsettiğim gibi. Kule winchler kullanılmalı taktirde, mobil winchler kullanılabilir.
+
+58
+00:25:14,420 --> 00:25:26,940
+İş ekipmanları, bulldozerler, tarım makineleri ve traktörler, hasat makineleri olarak karşımıza çıkıyor. AC ve DC ikisini de biliyorsunuz.
+
+59
+00:25:27,248 --> 00:25:55,248
+Biri alternatif akım, diğeri de doğrusal, direkt akım ya da doğruluğsal akım olarak da geçiyor. Alternatif akımla çalışıyoruz. AC motor dediğimiz alternatif akımla, sanayi uygulamada, ev valetlerin, yangın uygulamada, DC motorlarda, oyuncaklarda, otomobil uygulamalarla ve bazen ekipmanlarda kullanılır. Servo motorlarda hassas konumlandırma gerekirken uygulamalar da kullanılır. Siyasi makine, robotik gibi vs. Bunlar da...
+
+60
+00:25:55,248 --> 00:25:57,668
+Direkt doğal kullanılıyor. Geçiyorum.
+
+61
+00:25:59,768 --> 00:26:05,887
+Vinç operasyonunun güvenliği, doğru yükle hava teknikleri, güvenlik alımı ve acil durum planı.
+
+62
+00:26:06,128 --> 00:26:11,467
+Bundan daha önemlisi vinç operasyonunda özellikle bunu söylüyorum.
+
+63
+00:26:11,467 --> 00:26:17,887
+İletişim, iletişim zaten genel iş güvenliği ya da insani faaliyetin en önemli usul durumda bir tanesi.
+
+64
+00:26:18,048 --> 00:26:22,148
+Çünkü çok basit bir laf var, insanlar konuşuyor konuşuyor anlaşır diye.
+
+65
+00:26:22,675 --> 00:26:48,456
+İnsanların konuşması gerekiyor ve bunun karşılıklı kişinin ne olduğunu anlayarak da konuşması gerekiyor. Bir eğitim vereceksiniz. Bu eğitim verirken eğer siz karşınızdaki topluluğun kim olduğunu, ne olduğunu vesaire bilmeden eğer anlatırsanız, anlattığınız şey karşılığı olmaz. Boşa anlatmış olursunuz. Çok basit, temel bir mantıkla konuşuyorum.
+
+66
+00:26:48,915 --> 00:27:00,016
+Bir ilkokul sınıfına, şu anda sizin öğrendiğiniz herhangi bir şeyi öğretmeye çalışın, anlatmaya çalışın. Annem bu şekilde.
+
+67
+00:27:01,428 --> 00:27:27,968
+Anlamazlar. Çünkü ilk okula giden bir kişinin kafa yapısıyla inanç ve yetişkin birisi de kafa yapısı bir değil. Karşılıklı kişinin eğitim noktası da, eğitim noktasından kastım şu, nelere maruz kalmış, hangi eğitimlere var? Burada bahsettiğim lisanslar, ön lisanslar, yüksek lisanslar vs. değil. İşle alakalı olan herhangi bir bilgiye, bilgime vs. sahip mi? Değil.
+
+68
+00:27:28,660 --> 00:27:39,860
+Bu önemli nokta oluyor. Eğer karşısındaki kişi bunlardan anlayacak değil, daha çok resime, görselden anlayacağı kişilerse, o insanların yapacağınız tek şey görsel göstermek.
+
+69
+00:27:40,440 --> 00:27:48,920
+Yani kişiyi anlayacağı dille konuşmak aslında temel mantık. O yüzden bu winch operasyonunda da en önemli nokta iletişim.
+
+70
+00:27:49,160 --> 00:27:53,680
+Kimle iletişim? Winch operasyonuyla aşağıdaki süreci yürüten yerdeki kişi.
+
+71
+00:27:54,132 --> 00:28:11,972
+İkisi arasında eğer bir iletişim kopukluğu olursa büyük ihtimal kaza olur. Bu kaçılmaz bir gerçektir. Çünkü atıyorum adam sağa git der, sen winch operatörü sola götürür, solda bir perde vardır, perdeye çarpar, perdeye kılır, orada bir işçi vardır, işçi düşer, iş kazası.
+
+72
+00:28:12,723 --> 00:28:22,003
+Bu en basit nokta. Çünkü vinç operasyonlarının en önemli noktası tamamıyla iletişim. Daha sonrasında doğru yük bağlama teknikleri.
+
+73
+00:28:22,003 --> 00:28:34,203
+Eğer yine iletişime geleceğim, alttaki kişi yani yerdeki kişi, süreci yürüten kişi oradaki yükü doğru bir şekilde bağlayamazsa,
+
+74
+00:28:34,579 --> 00:28:50,319
+Bu da yaşanabiliyor. En çok yaşanan bir şeylerden bir tanesi. Bu noktada yukarıya talimat, telsiz de talimat veriyor. Telsizdeki talimat arada bir kopukluk olduğunda bekle dediğinde farklı bir anlam, yukarıdaki farklı bir şey devam edecek bir şey algılarsa.
+
+75
+00:28:51,155 --> 00:29:06,175
+Yine aynı şekilde kaza olmama gibi bir lüks yok. Bir noktadan sonrasında doğru yük bağlanmamadan dolayı yükler düşer ve altta eğer işçi varsa mutlaka yine bir ölümlü iş kazasına sebebiyet verir.
+
+76
+00:29:10,900 --> 00:29:29,079
+Vaka çalışması, yanlış makine kullanım nedeniyle bir kaza yine aynı şekilde. Az önce de bahsettiğim. Genel motorların ya da bir makinenin yağ değişimi, bakımı vesaire en temel noktalardır. O yüzden bunları da geçiyorum.
+
+77
+00:29:36,948 --> 00:29:54,568
+Geleceğin makinelerinden kısaca bahsetmek gerekirse, otonom makine, akıllı makine, elektrik makine. Şu anda çoğu firma aslında buna geçmeye başlıyor. Özellikle şu anda Amerika'da bu çok daha yaygın.
+
+78
+00:29:54,788 --> 00:30:03,988
+Şöyle acı bir gerçek var maalesef. Ne kadar teknoloji vs. bu kadar yakınlaşmış olsak da şeyle ilgili.
+
+79
+00:30:04,723 --> 00:30:22,543
+Amerika'ya ilgi, ben bu noktada ileride olan durum aslında, çalışan olmayan marketler, sürücüsüz taksiler vs. vs. bu tarz şeyleri sosyal medyada görüyorsun. Bunların Türkiye'ye gelmesi 5 yıl sonra.
+
+80
+00:30:22,543 --> 00:30:31,923
+Yani Amerika'da olan herhangi bir şey, otonom makinelerden, kallı makineler üzerinden konuşuyorum, bunların Türkiye'ye geliş süreci 10 yıl.
+
+81
+00:30:32,435 --> 00:30:38,235
+Maksimum 10 yıl. 10 yıl sonrasında Türkiye'de görürsünüz. 10 yıl olacak Amerika'da gördüğünüz şeyler, 10 yıl sonra Türkiye'de görürsünüz.
+
+82
+00:30:40,255 --> 00:30:46,655
+Bu maalesef böyle bir süreç var. Orada aslında biraz daha farklı bir şekilde ediyor.
+
+83
+00:30:56,884 --> 00:31:10,923
+Otomobil makinelerde şu anda Amerika çok daha önde bir ülke. Ya da Çin şu anda ayrı bir noktada tabii ki. İkisi şu anda büyük bir savaş veriyorlar kendine içlerinde.
+
+84
+00:31:30,708 --> 00:31:56,847
+Ama olayları aslında biraz daha robotlaşmıyor, yani otonom şeklinde. Aslında bunun temel amacı nedir? Bir üretim hızlandırmak ki en önemli sebeplerden bir tanesi, üretimin artmasını sağlamak. Üretim nasıl artırılır aslında? İş güvenliği neden var diyoruz ya da iş güvenliği neden önemli diyoruz? Çünkü kayıp zamanlı bir iş kazası geçirilmemesi için, kayıp zamanlı iş kazasını geçirilmesi durumun bir kişi işinden oluyor.
+
+85
+00:31:57,460 --> 00:32:12,980
+İkinci olarak işveren işçiden yararlanamıyor, doğalde ürün eksiği oluşuyor. Ya da bir kişiye iki iş yükleniyor. Bunların hepsi aslında baktığımızda bir yük genel olarak.
+
+86
+00:32:13,428 --> 00:32:27,928
+Bu genel olarak yük olduğu için iş güvenliğini robotik seviyeye çekiyorlar. Hem iş kazası olursa, kayıp zamanlı iş kazası olursa çalışan gücünden etkilenmeyeyim diye.
+
+87
+00:32:28,403 --> 00:32:37,583
+Hem de tabii ki en başta sebebi de, en birinci sebebi de üretim odaklı olunması. Bunun makineli temel olarak çıkarılmasının en büyük sebeplerinden bir tanesi.
+
+88
+00:32:38,663 --> 00:32:54,864
+Her zaman talimatları okuyun, kalkatırın ve eğitimleri. Bunlar aslında güvenliğin en temel noktaları ki talimat ve prosedür oluşturmak bir iş yerinde güvenlik kültürü açısından ya da güvenliği sağlanması açısından en temel noktadır.
+
+89
+00:32:56,403 --> 00:32:57,884
+ödür noktası olursa.
+
+90
+00:33:01,503 --> 00:33:02,423
+Kalimatlar ve
+
+91
+00:33:02,423 --> 00:33:04,384
+proseder yeteri kadar açık olmadığı
+
+92
+00:33:04,384 --> 00:33:06,203
+takdirde kişiler de anlayamaz.
+
+93
+00:33:07,443 --> 00:33:08,243
+Kişiler de
+
+94
+00:33:08,243 --> 00:33:09,064
+etkili bir şekilde
+
+95
+00:33:09,064 --> 00:33:12,084
+anlayamaz, kavrayamaz ve bu nedenden
+
+96
+00:33:12,084 --> 00:33:12,884
+dolayı tam
+
+97
+00:33:12,884 --> 00:33:15,784
+verimli bir şekilde
+
+98
+00:33:15,784 --> 00:33:16,804
+yapamazlar.
+
+99
+00:33:18,384 --> 00:33:19,884
+Bu yüzden de
+
+100
+00:33:19,884 --> 00:33:22,104
+kutura bakmayın.
+
+101
+00:34:01,268 --> 00:34:21,667
+Doğru okumayın. Talimatlar ve prosedürler bir iş yerinde aslında herhangi bir iş içinde ve başladığı güvenlik için en önemli nokta. Eğer yeteri kadar açık olmadığı takdirde de kişilerin hatalı bir hareket, hatalı bir eylem yapma durumları da %80 oranında artmaktadır.
+
+102
+00:34:21,667 --> 00:34:27,967
+Dediğim gibi bu slide'ı geçiyorum. Bu slide'dan sadece bahsetmem gerekiyordu.
+
+103
+00:34:28,563 --> 00:34:30,783
+Bunu denne dolayı bas ettim.
+
+104
+00:34:34,643 --> 00:34:38,763
+Diğer slide'a geldiğimde
+
+105
+00:34:51,956 --> 00:35:06,596
+Makine güvenliği demiştim. Yasal mevzuat ve minimum gerekliliklerle ilgili olarak. Burada ne yapmaması gerekiyor, ne yapmaması gerekiyor. Bunlarla ilgili olarak temel düzeydeki...
+
+106
+00:35:11,443 --> 00:35:19,903
+Kanunlardan, yasal uygulamalardan mesaj bahsedeceğim. Ama bu saydığı aslında paylaşmadan önce şurada kanuna geldiğimde bir kanun paylaşacağım.
+
+107
+00:35:25,903 --> 00:35:35,224
+72-23 sayılı kanun numarası. Kanun ne? Ürün güvenliği ve teknik düzenlemeler kanunu diye bir kanun var. Bu kanun üzerinden.
+
+108
+00:35:39,284 --> 00:35:54,624
+Makine emniyette yine aynı şekilde sağlayalım. Bu da onlardan bir tanesi. Aslında tam anlamıyla buradan değil ama ülkemizdeki makine güvenliğini sağlayacak yasal dayanaklardan bir tanesi.
+
+109
+00:35:58,124 --> 00:36:03,704
+Burada önemli olan noktalardan bir tanesi bu yönetmelikte.
+
+110
+00:36:04,532 --> 00:36:25,472
+Madde 5'te ürün güvenliği diyor. İkinci bölümde yer alan ürün güvenliği aslında makine güvenliğiyle ilgili olarak en temel durumlardan bir tanesi. Burada dediği şey şu, ürün güvenliği olması zorundur. Yani ürünün kendi kendine, yani herhangi bir ürün bu arada ne?
+
+111
+00:36:27,476 --> 00:36:44,476
+Makinedir, bilgisayarların bilgisayar ekstradan bir tehlike yaymamalı, bir risk oluşturmadan bir bilgisayar üzerinden gidiyorum şu anda. Dediğim gibi bir mouse mesela. Mouse ekstradan bir...
+
+112
+00:36:45,300 --> 00:37:10,539
+Risk oluşturmamalı kişiye. Çünkü bununla çalışıyorsun ve bu ekstra bir tehlikeli, ekstra bir risk yaratmamalı. Ya da klavye, ya da şu anda ofis ortamında çalıştığım için oturduğum sandalye, oturduğum düzene emin olduğum masane. Buradakiler güvenli olmak zorundadır. Kanun nezdinde. 72-23 sayıda ürün güvenliği kanunu kapsamında. Madde 5'te.
+
+113
+00:37:10,931 --> 00:37:24,431
+Bu, bu şekilde ifade ediliyor. İkinci, HAZOP'da diyor ki, teknik düzenleminin insan sağlığı ve güvenliği ile ilgili hükümlerine uygun ürün, aksi ispatlanına kadar güvenli olarak kabul edilir şeklinde bir ifade var.
+
+114
+00:37:28,527 --> 00:37:42,827
+Dediğim gibi hani düz mouse'lar vs. var. Bu kesinlikle kişinin sağlığını etkileyen bir şey değil. Ama ne olabilir? Şuradaki sinirler, Karpel Tünel Sendromu diye bir sendrom var. Duyanınız var mı aranızda?
+
+115
+00:38:00,628 --> 00:38:04,668
+Yazabilirsiniz illa cevap verin, yani sesinizi duymama gerek yok.
+
+116
+00:38:07,488 --> 00:38:08,768
+Carpel Tünel Sendromu
+
+117
+00:38:28,019 --> 00:38:45,019
+Teknik düzenleme, Carpentine Sendrom, ofis çalışanların hastalığı olarak geçer. Genellikle belirtileri şuradan bir uyuşma ya da ağrı olup, şu üç parmağın uyuşmasından anlaşılabilir.
+
+118
+00:38:45,019 --> 00:38:56,019
+Eğer hani ileriki süreçte bir durum yaşarsanız, yaşamazsınız umarım. Şu üç parmağınızda eğer, yani baş parmak işaret var.
+
+119
+00:38:56,019 --> 00:39:04,019
+Orta parmağınızda aynı anda ya da benzer farklı şekillerde bir uyuşmaya çalışırsanız, Tarpat Tünel başlangıcınız olma ihtimali var.
+
+120
+00:39:04,119 --> 00:39:06,600
+Şurada da tam olarak da görebiliyorum.
+
+121
+00:39:08,500 --> 00:39:17,659
+Şurada bir ağrı başlarsa ve şu üç parmakta da uyuşma olursa, Karpatüner sendromu başlangıcı olacaktır.
+
+122
+00:39:17,659 --> 00:39:34,239
+Karpatüner sendromu başlangıcından olması durumunda öncesinde doktora gitmeniz ve bununla ilgili olarak gerekli fiziksel tedavi yöntemleriyle ya da geçtiğimiz haftalarda ben de tatmıştım bir.
+
+123
+00:39:35,507 --> 00:39:47,787
+Alter veriliyor. Bu alterle beraber biraz daha parmaklarınız rahatlıyor. Ama tabii ki erken tesis her zaman daha rahatlatır sizi. Bu yüzden mümkün mümkün mümkün.
+
+124
+00:39:47,787 --> 00:39:56,167
+Tabii dikkat edin buna. Bunlarla ilgili olarak, ofis çalışanlarla ilgili yok. Bunlar herhangi bir şekilde aksi kanıtlanmamış.
+
+125
+00:40:00,000 --> 00:40:04,380
+Ergonomik olarak geçiyor. Ergonomik olarak geçmesinin sebebi ne diye söylemiştik ilk derste.
+
+126
+00:40:04,819 --> 00:40:10,819
+Bunu böyle boş bıraktığımızda, bunu tuttuğumuzda aslında direkt elimize oturan kısımda oluyor demiştik.
+
+127
+00:40:10,819 --> 00:40:12,760
+Bu nedenden dolayı.
+
+128
+00:40:14,547 --> 00:40:30,847
+Bunların tercih edilmesi gerektiği vs. söyleniyor. Teknik düzenleme bulunmadığı veya insan sağlığı ve güvenliğine ilişkin hükümler içermediği durumlarda bir ürünün güvenliği olup olmadığını değerlendirmesi, gelen ilim güvenliği mevzuatına göre yapılış şeklinde bir ifade var.
+
+129
+00:40:35,067 --> 00:40:40,847
+Daha sonrasında ürün sorumluluğu tazminatı ile aynı şekilde makine güvenliği ile ilgili olarak.
+
+130
+00:40:43,443 --> 00:40:46,063
+Arkadaşlar, bir saniyemizi rica edeceğim.
+
+131
+00:40:47,443 --> 00:40:50,443
+Makine güvenliği ile ilgili olarak...
+
+132
+00:40:57,204 --> 00:41:12,324
+Makine güvenliği ile ilgili olarak ürün sorumluluğu tazminatı da yine aynı şekilde bir kişiye veya bir manalarla zarar vermesi halinde bu ürünün imalatçısı veya ithalatçısı zararı gidermekte yükümlüdür şeklinde.
+
+133
+00:41:13,583 --> 00:41:17,164
+Madde altının birinci benliğinde bu şekilde bir ifade bulunuyor.
+
+134
+00:41:18,284 --> 00:41:25,132
+İkinci benliğinde imalatçı veya ithalatçının sorumluluğu tutulabilmesi için zarar gören tarafın uğradığı zararı veya...
+
+135
+00:41:25,523 --> 00:41:31,043
+Uygunsuzluk ile zarar arasındaki nedensellik bağını ispat etmesi zorunludur.
+
+136
+00:41:31,411 --> 00:41:54,192
+Ürünün sebep olduğu zararlardan birden fazla imalatçı ve ithalatçının sorumlu olması halindedir. Bundan müteselsiyle sorumlu tuturlar. Yani eşit derecede sorumlu tuturlar. İmalatçı veya ithalatçı ürünle kaynaklanan tazminat sorumluluğuna kurtaran ya da bu sorumluluğu azaltan sözleşmeyin ilgili maddeleri hükümsüzdür. Ürünün sebep olduğu zarar nedeniyle ödenecek maddi manevi teyit.
+
+137
+00:41:54,835 --> 00:42:01,955
+Tazminat miktarının belirlenmesinde de 2011 tarihli, 60-98 sayılı Türk Borçlar Kanunu'yu hükümleri uygulanır.
+
+138
+00:42:09,364 --> 00:42:14,364
+Tazminat talebi için zamanlaşımın süresi zarar görevinin zararı veya tazminat yükümlülüğünün...
+
+139
+00:42:14,835 --> 00:42:24,775
+Hükümlüsünün öğrendiği tarihten itibaren 3 yıl ve her halde zararın doğduğu tarihten itibaren de 10 yıl olarak zaman aşım türesi bulunuyor.
+
+140
+00:42:24,775 --> 00:42:37,536
+Yani bunu şöyle bir şey olarak düşünebilirsiniz. Dediğim gibi ben şu anda ofis ortamındayım. Ofis ortamı üzerinden değil. Burada maksimum olsa olsa kullandığım cihazın ürün fiyatı 35-40 bin lira olsun.
+
+141
+00:42:40,467 --> 00:43:08,167
+Bilmiyorum şu anda tam piyasayı. Ama bir makine olduğunda burada milyon dolarlardan konuşuyoruz. Bu yüzden ürün sorumluluğu tazminatı ve ürün güvenliği mutlaka yapılması gerekiyor. Burada daha bir resimde bahsedilmiştir mutlaka. Güvenlik bilgi formaları var. Eski adı MSDS, şu anki güncel adı STS, Safety Data Sheet olarak geçiyor. Ya da güvenlik bilgi formu yani GBF ya da MGBF şeklinde Türkçesi var.
+
+142
+00:43:08,467 --> 00:43:18,527
+Burada da yine aynı şekilde ithalatçı ya da imalatçının güvenlik bilgi formlarında yazması gerekiyor.
+
+143
+00:43:18,587 --> 00:43:23,707
+Güvenlik bilgi formu neydi genel olarak baktığımızda? Güvenlik bilgi formu bir kimyasal kimlik kartı.
+
+144
+00:43:24,627 --> 00:43:25,827
+Kaba tabirle.
+
+145
+00:43:26,239 --> 00:43:41,119
+Kim yansan kimlik kartı nedir diye sorduğumuzu güvenlik bilgi formları söyleniyor. İçerisinde ne ile yapıldı, ne yapıldı, hangi maddelerle depolanabileceği, hangi maddelerle depolanamayacağı aynı şekilde.
+
+146
+00:43:42,579 --> 00:44:06,800
+Korunma tedbirleri ne olmalıdır? Patlama tehlikesi nedir? Patlama riski nedir daha doğrusu? Bunlar ne sebep olabilir? İmalatçının adresi, kimden imalat edilmiş ya da kim ithal etmiş? Bunların hepsinin olduğu nokta. Bu da yine aynı şekilde bir ürün ve burada da yine aynı şekilde ürünün güvenli olması gerektiği bir ürün güvenliği nedir?
+
+147
+00:44:08,884 --> 00:44:13,983
+Durup dururken ekstradan bir sorun çıkarmaması gerekiyor. Temel mantık bu.
+
+148
+00:44:15,644 --> 00:44:26,123
+Madde 7'ye geldiğimizde imalatçı piyasaya ancak teknik düzenlemesine veya 5. maddenin 3. fıkrasına belirten genel ürün güvenliği mevzuatına uygun ürünleri aras eder.
+
+149
+00:44:27,023 --> 00:44:29,403
+Burada neydi? 5. fıkrası diyor.
+
+150
+00:44:37,427 --> 00:44:47,247
+5. madde 3. fıkrasında dediği, teknik düzenleme bulunmadığı veya insan sağlığı ve güvenliği değişikliği hükümde içermediği durumlarla ilgili belirtiyor.
+
+151
+00:44:48,027 --> 00:45:00,927
+Mevzuatın gerektirdiği hallerde teknik dosyayı tanzim eder, uygunluk değerlendirme işlemini yapar veya yaptırıp uygunluk beyanını veya uygunluğunu gösteren diğer belgeleri düzenler ve uygunluk işaretini ürüne koyar.
+
+152
+00:45:02,127 --> 00:45:03,407
+Genel olarak baktığımızda.
+
+153
+00:45:03,923 --> 00:45:18,864
+Uygunluk değerlendirmesine ilişkin teknik dosyayı ve belgeleri teknik düzenlemede beliren süre, süre belirsimlediği hallerde de ürünü piyasaya arz edil tarihte etibar en az 10 yıl boyunca muhafaza eder bu teknik dosyayı.
+
+154
+00:45:18,864 --> 00:45:31,384
+Yani aslında bu ürün güvenliği kapsamında genel saklama koşulları nedir diye sorulduğunda bir soru olsa, onun aslında ezberlen olacak bir cevap. Yani 72-23 sayıyla.
+
+155
+00:45:32,275 --> 00:45:50,715
+Ürün güvenliği kanunu kapsamında zaman aşımı süresidir, uygunluk değerlenmesi ilişkin teknik dosya ve ilginç döküm antasyon kısmıdır. Bunlar 10 yıl süreyle saklanması gereken durumlar.
+
+156
+00:45:56,148 --> 00:46:13,628
+Ürünün ilgili kurallara uygunluğunun seri üretim boyunca da sürdürülmesi için gerekli önlemler alır. Ürünün tasarımı veya niteliğindeki değişikliklerle uygun olduğunu beyan ettiği kurallardaki değişikliğe takip eder ve gereğini yapar. İmalatçının yükümlülükleri bunlar.
+
+157
+00:46:14,771 --> 00:46:29,452
+Kaşıdıkları muhtemel risklerle orantılı olarak piyasada bulunan ürünlerinden numune alarak test eder, inceleme yapar, şikayetleyin, uygun olmayan ve geri çağırılan ürüne kaydını tutar ve yaptığı izleme faaliyeti hakkında dağıtışları bilgilendirir.
+
+158
+00:46:30,291 --> 00:46:35,391
+Yine aynı şekilde bu da bir imalatçının yükümlülüğü olan bir maddedir, bir fıkradır.
+
+159
+00:46:35,391 --> 00:46:37,391
+Ürünün mevzuat...
+
+160
+00:46:37,556 --> 00:46:46,556
+Bu mevzuatın gerektirdiği model, parti ve seyir numarası veya ayet edilmesi sağlayacak diğer bilgiler kolayca görülebilir, okunabilir şekilde taşınmasını temin eder.
+
+161
+00:46:47,175 --> 00:47:00,775
+Yani ben bir makine yaptım, bir problem yaşadım, bu problemi bir kodu olması gerekiyor o ürünün ki direkt olarak imal edilirken ki yaşanılan sıkıntıları direkt olarak ortaya çıkarılabilsin.
+
+162
+00:47:08,692 --> 00:47:10,632
+Evet, böyle davran.
+
+163
+00:47:12,971 --> 00:47:16,612
+İmalatçının yükümlülükleri devam ediyoruz.
+
+164
+00:47:17,452 --> 00:47:30,751
+Mevzuatın gerektirdiği hallerde ismini, kayıtlı ticari ünvanı veya markasını ve kendisine ulaşılabilecek açık adresini ürün üzerinde bunun mümkün olmadığı durumlarda da ürünün ambalajında veya ürüne eşlik eden bir belgede belirtir.
+
+165
+00:47:31,668 --> 00:47:41,368
+Yine güvenlik bilgi formuna değineceğim. Güvenlik bilgi formunu biliyorsunuzdur diye şu anda tekrar da geçmiyorum üzerine ne olduğuna dair.
+
+166
+00:47:41,828 --> 00:47:50,688
+16 maddeden oluşan bir kimyasal kimlik kartı. Yani halk ağzındaki adını diyeyim ya da benim söylediğim adı diyeyim kimlik kartı diyebiliriz.
+
+167
+00:47:50,688 --> 00:47:52,688
+Ama...
+
+168
+00:47:54,291 --> 00:48:22,291
+Genel adı olarak da güvenlik bilgi formu diye geçer. Burada da yine aynı şekilde belki kimyasalın üzerinde yazmaz ya da bir makinenin üzerinde yazmaz. Bir iş makinesi olsun, CNC tezgah olsun, torun tezgah olsun. Fark etmiyor. Bunun üzerinde bir tane seri numarası bulunması gerekiyor. Bulunmadığı durumlarda da bununla ilgili olarak ek bir belgede bunlara sunulması gerekiyor. Önemli olan nokta aslında bu. Evet, yapılamayabilir belki üründe yeteri kadar alan yoktur ya da...
+
+169
+00:48:22,291 --> 00:48:24,152
+Güvenliği alan yoktur, vesaire, vesaire.
+
+170
+00:48:29,364 --> 00:48:40,043
+Önemli olan nokta, bunun bir şekilde temin edilebilmesi. Çünkü siz bir ürün alıyorsunuz, karşınızdaki kişinin sattığı ürünün arkasında durmasını beklersiniz genel olarak.
+
+171
+00:48:43,163 --> 00:48:53,304
+Ürünün taşıyabileceği risklere karşı gereken tehlikeleri alır. Bunlardan sakınabilmeleri için nihai kullanıcılara gerekli bir ilgileri sağlar. Bakın burası da yine aynı şekilde.
+
+172
+00:48:54,387 --> 00:48:57,707
+Şimdi şöyle bir şey açayım.
+
+173
+00:49:18,068 --> 00:49:20,887
+Görüyorsunuzdur diye düşünüyorum.
+
+174
+00:49:26,195 --> 00:49:51,475
+Şurada bu ITÜ'nün sitesinde MSTS formları diye formları, MSTS eski adı bu, STS diye güncellenmesi gerekiyor. Atıyorum burada süflür gasit var. Bu tamamen rastgele açtım. Burada aslında az önce bahsettiğim şeylerin bir bilgisi olsun diye size söylüyorum. Bunu bir ne olarak algılayabilirsiniz? Belki bir pro forma üzerinden de algılayabilirsiniz. Onu o şekilde söyleyebiliriz ama.
+
+175
+00:49:52,820 --> 00:49:59,820
+Burada nasıl korunması gerekiyor? Hangi tehlikeler oluşabilir? Zararlılık işareti neymiş?
+
+176
+00:50:00,000 --> 00:50:07,139
+Aşındırabilir şeklinde bir ifadesi varmış. Bunları söylüyoruz. Sonrasında önlem açıklama. Nasıl siz bundan korunursunuz diye.
+
+177
+00:50:07,639 --> 00:50:14,359
+İşte buradan P kodlu değerler var. İşte ne diyor? Koruyucu, ediven, koruyucu giysi, göz vesaire bunları kullanılıyor.
+
+178
+00:50:14,359 --> 00:50:21,519
+Eğer solumluğunda zarar gören kişiyi temizleme. Yani nasıl? Tıpkı şuradan.
+
+179
+00:50:22,132 --> 00:50:28,632
+Ürünün taşıyabileceği riskliye karşı gereken tedbirleri alır. Bunlardan sakınabilme için nihayet kullanıcıları gerekli bilgiyi sağlar.
+
+180
+00:50:28,832 --> 00:50:34,492
+Nihayet kullanıcı sağlığı bilgi de burada. Zayar gören kişiyi temiz havaya çıkartmamız gerektiğini belirtiyor.
+
+181
+00:50:34,612 --> 00:50:44,672
+Bunlar dediğim gibi belki kimyasanın üzerinde yazmıyor. Ama nerede yazıyor? Yanında temin ettiği ikinci bir belge bulunuyor. Burada bunu ifade edelim.
+
+182
+00:50:46,471 --> 00:50:47,692
+Dönelim tekrardan.
+
+183
+00:50:48,692 --> 00:51:05,072
+Ürün veya ambalajının üzerinde veya ürünle eşlik eden belgelerde yer alan G-Band'in de belirtilen bilgileri ve montaj, kullanım, bakım ve bununla birlikte güvenli kurallarının Türkçe olmasını sağlar.
+
+184
+00:51:05,072 --> 00:51:07,052
+Bu da yine aynı şekilde önemli.
+
+185
+00:51:07,211 --> 00:51:10,971
+Şimdi burada şuraya baktığımızda, buraya tekrar MSTS'lere gelin.
+
+186
+00:51:13,811 --> 00:51:32,632
+Mesela, bu kabul edilebilir bir şey değil. Neden diye sorduğumuzda, çünkü bu İngilizce, bunun Türkçe olması gerekiyordu. Bir ürün var, bu ürün Türkiye'ye de satılıyorsa, eğer bu Türkçe olmak zorunda. Mesela geldik buraya, bu da aynı şekilde İngilizce mesela.
+
+187
+00:51:33,492 --> 00:51:56,012
+Bunların hepsinin, burada bulunan bütün hepsinin Türkçe olması gerekiyor. Mesela sadece bir tanesi Türkçe. Bunlar da yine aynı şekilde olması gereken durumlar dışında. Çünkü bunların hepsi, sanayideki herkes İngilizce bildiğini ben çok düşünmüyorum. Yaşadıkları belki tecrübeli adam vardır, 10 yıldır orada çalışıyor, biliyorduk. Bundan bir şey diyemem.
+
+188
+00:52:01,492 --> 00:52:10,992
+Bence bilme gibi bir lüksü olmaması gerekiyor. Sonuç olarak Türkiye'de yaşıyoruz ve Türkçe olmak durumunda.
+
+189
+00:52:11,572 --> 00:52:29,172
+Ve bundan dolayı da adama neden İngilizce ya da neden yabancı diye bilmiyorsun diye bir şey sorulamaz. Bunu da sorulması gereken nokta, belki bu ITÜ laboratuvarı, tamam üniversite vesaire diyebiliriz ama sonuç olarak kanunda yazan şey Türkçe olması ile ilgili olarak.
+
+190
+00:52:35,795 --> 00:53:00,716
+Makine olsun, endüstriyel makine olsun, bilgisayar olsun vs. Bunlar fark etmesini, bunlar yine aynı şekilde Türkçe olmak zorunda. Piyasaya arz etmiş olduğu bir ürünün uygun olmadığını, öğrendiğini veya bilmesinin gerektiği hallerde ürünü uygun duruma getirmek ve bir gerektiğinde ürünün piyasaya arzını durdurmak, ürünü piyasadan çekmek veya geri çağırmak için gerekli düzelce önlemleri ibedilikle alır.
+
+191
+00:53:01,715 --> 00:53:06,315
+Ürünün risk taşıdığı durumlarda özellikle sağlık ve güvenlik bakımından risk teşkil eden,
+
+192
+00:53:17,523 --> 00:53:19,523
+Akasiyah, ne? Kısalababa.
+
+193
+00:53:42,228 --> 00:53:43,248
+Kusura bakmayın.
+
+194
+00:54:03,764 --> 00:54:04,764
+Evet.
+
+195
+00:54:08,307 --> 00:54:28,568
+Tekrardan geldiğimizde, piyasaya arz ettiği ürünlerin taşıdığı risklerin ortadan kaldırması amacı yapılan faaliyetlerde yetkili kuruşun talimatların yerine getirir ve ürüne uygunluğu gösteren gerekli tüm bilgi ve belgeli yetkili kuruşa Türkçe veya yetkili kuruşun kabul edeceği diğer bir dilde sağlar.
+
+196
+00:54:31,887 --> 00:54:33,327
+Öncelik olarak Türkçe.
+
+197
+00:54:34,132 --> 00:54:40,831
+İlgili teknik düzenleme gerektirdiği hallerde ve öngördüğü usuller çerçevesinde resmi kayıt işlemlerini yapar veya yaptırır.
+
+198
+00:54:40,911 --> 00:54:52,471
+Numunenin imalatçı dışındaki gerçek veya tüzel kişilerin alınması durumunda numune bedeli, imalatçı tarafından numunenin alını gerçek veya tüzel kişiye yine aynı şekilde ödenir.
+
+199
+00:54:53,427 --> 00:55:06,887
+Daha sonrasında burada ithalatçının yükümlülükleri var, dağıtıcının yükümlülükleri var. Burada bir de uygunluk işaretleri, belgelemeleri, uygunluk değerlendirmek işlemleri ve kuruluşları şeklinde bir üçüncü bölümde ifade var. Madde 13'te.
+
+200
+00:55:11,059 --> 00:55:22,940
+Piyasada bulundurulabilmesi veya hizmete sunulabilmesi için teknik düzenlemede bu ürüne ilişkin öngörülen zorunlu uygunluk değerlendirme işlemleri tamamlanması ve olumlu sonuçlanması gerekir.
+
+201
+00:55:23,780 --> 00:55:30,559
+Temel kapsamda bunun ne anlamı geliyor? Aslında bir standartize edilmesi gerekiyor diyor. Temel mantık da bunu söylüyor. Uzun lafın kısası.
+
+202
+00:55:31,155 --> 00:55:46,615
+İkinci Fıkra'da şunu diyor, bir teknik düzenlemenin gerektirdiği ürünlere ilişkinliği her türlü uygunluk işareti ve belgesinin test raporlarının ve diğer belgelerin gerçeğe aykırı şekilde düzenlenmesi, kullanılması, tarif veya taklit edilmesi yasaktır.
+
+203
+00:55:48,615 --> 00:55:54,615
+Uygunluk işareti sadece teknik düzenlemelerin bu işaretlerin konulmasını öngördüğü ürünlerde kullanılabilir diyor.
+
+204
+00:55:55,891 --> 00:56:05,672
+Ürünün uygunluğunu gösteren işaret ve belgeler uygulama mevzusunda veya teknik düzenlemede belirtilen usul ve esasla uygun olarak düzenlenir ve kullanılır diyor.
+
+205
+00:56:05,672 --> 00:56:13,971
+Ürüne uygunluk işaretinin anlamı ve şekli hakkında üçüncü tarafları yanıltacak başka işaretler veya betimler konulamaz.
+
+206
+00:56:14,551 --> 00:56:23,391
+Her türlü işaret ürüne ancak uygunluk işaretinin görünebilirliğini, okunabilirliğini ve anlamını bozmayacak şekilde konulabileceğini.
+
+207
+00:56:23,891 --> 00:56:24,791
+ifade ediyor.
+
+208
+00:56:27,059 --> 00:56:55,000
+Buralarda yine aynı şekilde ürünle, eğitimle ilişkin genel hususlar vs. bunlardan bahsediliyor. Bir de ben burada sizlere madde 20'de ideal para cezalarından bahsedeceğim. Eğer bu kanun 7. maddesinin 1. fıkrasında A bendi ile 9. maddesinin 1. fıkrasında A bendinde atıf yapılan teknik düzenlemelerine ve genel ürün güvenliği mevzuatının ürün güvenliğine ilişkin hükümlerine aykırı hareket ederlerse 50 bin Türk lirası.
+
+209
+00:56:55,059 --> 00:57:02,059
+Aslında 500 bin Türk Lirası'na kadar bir ceza söz konusu var. Burada tabii ki...
+
+210
+00:57:15,987 --> 00:57:21,107
+Bir kanunu şey düşünmüş. Bu maddede kanunu getirmiş olan miktarlar aynen bırakılmış olup,
+
+211
+00:57:21,523 --> 00:57:43,023
+31-12-2025 tarihli sayılı yazılan bu ürün güvenliği ve denetiminin 2026'ya 13 nolu tebliğ ile 010-2026 tarihine kadar geçerli olmak üzere belirlenen yeni değerler metne partisi siyah punto yani bu 50 bin kalıyor.
+
+212
+00:57:49,523 --> 00:58:01,384
+505 liradan 4.345.058 liraya kadar, Türk lirasına kadar bir cezai yaptırım bulunuyor. Yine aynı şekilde 7. maddenin birinci fıkrası. 7. maddenin birinci fıkrası bize ne diyordu?
+
+213
+00:58:06,963 --> 00:58:21,403
+Birinci fıkrasının A-Bend'i. Diyor ki bize piyasaya ancak teknik düzenlemesine veya beşinci maddenin üçüncü fıkrasına belirtilen genel ürün güvenliği mevzuatına uygun ürünleri üretir diye bir ifade bulunuyor.
+
+214
+00:58:24,403 --> 00:58:37,804
+Atıf yapılan teknik düzen ve genel ürün güvenliği mezunatının ürün güvenliği dışındaki hükümlerine aykırı hareket edenler, 2026 yılı içerisinde 173.000'den 1.738.022 liraya kadar ceza verileceği belirtilmiş.
+
+215
+00:58:53,684 --> 00:59:10,804
+Bunlara aykırı hareket edenler, 86.900'den 869.010 TL'ye kadar cezalandırılmakla yükümlüler. Burada da aslında cezalar bulunuyor. Yani 20. madde genel olarak bizlere cezaları yani, para cezalarını ifade eden bir nokta.
+
+216
+00:59:14,804 --> 00:59:16,804
+Burayı durdurayım.
+
+217
+00:59:18,068 --> 00:59:35,307
+Bir 5 ya da 10 dakika diyelim. Tekrardan 33 geçe kadar geri döneriz. Bir 5-10 dakika bir ara verelim. Sonrasında da saat 6-6'yı 5 geçe kadar da ders devam ettirir. Bu haftalık da bu kadar deriz. Sorusu olan var mıydı bu noktaya kadar?
+
+218
+00:59:42,356 --> 00:59:46,236
+Tamamdır, yok o zaman. 35 geçe görüşürüz arkadaşlar.
+
+219
+01:11:29,619 --> 01:11:31,100
+Arkadaşlar, bir merhaba tekrardan.
+
+220
+01:11:45,300 --> 01:11:46,620
+Bu sürü kanlı şahin.
+
+221
+01:11:53,011 --> 01:11:55,971
+İş Sağlığı ve Güvenliği Genel Müdürlüğü tarafından paylaşılan
+
+222
+01:12:03,828 --> 01:12:11,068
+Makine Emniyetine giriş aslında. Bu ikincisi tabiki.
+
+223
+01:12:23,252 --> 01:12:26,572
+Makinistiyalarımız Eğitim Modül 1.
+
+224
+01:12:27,852 --> 01:12:29,132
+Artık buradadır.
+
+225
+01:20:13,492 --> 01:20:14,711
+Teşekkür ediyorum.
+
+226
+01:20:16,211 --> 01:20:17,072
+[öğrenci].
+
+227
+01:20:20,756 --> 01:20:22,756
+Sen dinliyormuşsun muhtemelen.
+
+228
+01:20:24,496 --> 01:20:25,756
+Teşekkür ettim.
+
+229
+01:20:30,456 --> 01:20:35,796
+Nereden itibaren duymadınız ama çoğun muhtemelen burada çoğunla itibaren duymadınız.
+
+230
+01:20:37,615 --> 01:20:38,756
+Makine Emniyetli...
+
+231
+01:20:42,771 --> 01:20:50,032
+C işareti vardı, ondan beri sesim yoksa eğer o zaman C işareti, evet şurada itibaren yok.
+
+232
+01:20:52,832 --> 01:20:59,811
+Kısmen tanımlanmış, tamamlanmış makine, çok da bir şey yoktu. Geçiyorum, okursunuz tamamlanan, yine aynı şekilde.
+
+233
+01:21:00,352 --> 01:21:05,192
+Burada eşekin manları kullanımında sağlık ve güvenliği şartları yönetmeliği bulunuyor.
+
+234
+01:21:05,192 --> 01:21:07,192
+Bu yönetmelik...
+
+235
+01:21:07,731 --> 01:21:26,051
+Yine aynı şekilde ekipmanların nasıl doğru kullanılmasıyla ilgili olarak ifadeler bulunuyor. Bununla beraber bahsedilen durumlardan bir tanesi de ekikide uygun şartları sağlayarak devreye alınmış veya kullanıma hazır iş ekipmanların kullanımlarıyla ilgili hususta genel olarak düzenlenmiştir.
+
+236
+01:21:26,131 --> 01:21:35,332
+Bu bölümde tüm iş ekipmanlarıyla ilgili bilgiler, mobil ekipmanlar, yük kaldırma ve yüksekte yapılan geçici işlerle ilgili hükümler detaylandırılmıştır.
+
+237
+01:21:35,731 --> 01:21:52,011
+Burada önemli olan nokta şu, kullanım ve eğitim kısmı. Evet tamam, bunların nasıl kullanılması, güvenliği şartlarını bildiriyoruz ama daha sonra böyle bir yönetmelik var. Ancak bunu nasıl değerlendirebiliriz?
+
+238
+01:21:54,484 --> 01:22:15,924
+Nasıl yapmalıyız diye aslında baktığımızda kullanım ve eğitim noktası. Yani kişiye bununla ilgili olarak eğitimlerin verilmesi gerekiyor. Eğer eğitim verilmediği takdirde kazalar zaten mutlaka ve mutlaka yaşanacaktır. Çünkü kişi deneme yanılma yöntemiyle bu işi yapacak. Bu yüzden kişiye eğitim vermek önemli.
+
+239
+01:22:22,484 --> 01:22:28,824
+Bunu ben çok düşünmüyorum. Çünkü işle alakalı eğitim.
+
+240
+01:22:29,363 --> 01:22:57,183
+Amaca yönelik eğitim. Yoksa genel geçerli bir eğitimle çok da doğru olduğunu düşünmüyorum. Bakım ve kontrol yine aynı şekilde. Ekipmanın güvenli ve verimli çalışmasını ve uzun ömürlü olmasını sağlamak amacıyla düzenli bakım ve kontrol işlemleri mutlaka yapılmalıdır. Güvenlik ve koruyucu önlemler. Ekipmanın fiziksel güvenliği kullanıcılar için uygun koruyucu önlemler alınarak sağlanmalı. Fiziksel koruma elemanları kullanıcıya potansiyel tehlikeler.
+
+241
+01:22:57,363 --> 01:23:04,203
+Koruyacak şekilde tasarlanmalı ve ekipman üzerinde gerekli uyarı işaretleri ile güvenlik etiketleri mutlaka bulunmalı.
+
+242
+01:23:04,304 --> 01:23:07,623
+Güvenlik etiketlerinden geçtiğimiz haftalarda bahsetmiştik ne olduğunu.
+
+243
+01:23:08,623 --> 01:23:11,063
+Uyarı işaretlerine bahsediyoruz.
+
+244
+01:23:11,183 --> 01:23:19,623
+Yaklaşma, acil durumlarda çalışmaya devam etme gibisinden ya da...
+
+245
+01:23:20,435 --> 01:23:34,415
+Kaygan zemeli bunlar yine aynı şekilde birer güvenlik işaretleri, uyarı işaretleri. Bunlar da onlardan bir tanesidir. Sigara içme gibisinden bunların olması önem arz ediyor. Güvenlik ve koruyucu önemler kapsamında.
+
+246
+01:23:35,175 --> 01:23:48,435
+Acil durum yönetimi ekipmanla ilgili potansiyel acil durum senaryoları için prosedürler geliştirilmelidir. Acil durumlarda ekipmanın güvenli bir şekilde durdurulabilmesi ve kullanıcıların acil durum prosedürlerini bilmesi sağlanabilir.
+
+247
+01:23:48,435 --> 01:23:54,675
+Çalışanlar bu prosedürlere göre eğitim almalı ve acil durum tatbikatları düzenlenmelidir.
+
+248
+01:23:55,956 --> 01:24:08,236
+Eğitim ve bilgilendirme, sürekli eğitim ekipmanların güvenliği konusunda çalışanların bilgi seviyesini artırmak için önemlidir. Eğitim programları, ekipman ve mevzuat değişikliğine göre güncellenmelidir yine her şekilde.
+
+249
+01:24:09,816 --> 01:24:17,736
+Standartlar var, A sınıfı standart, B sınıfı standart ve C sınıfı standartlar. A sınıfı standartlar tüm makineleri kapsayan standartlardır, sayısı çok azdır.
+
+250
+01:24:23,956 --> 01:24:38,576
+uygulamayacak genel güvenlik prensipleri ve metolojileri sağlar. TSN ISO 12100 makinelerin güvenliği, tasarım için genel prensipler vs. makine güvenliği temel prensiplerini açıklar.
+
+251
+01:24:38,576 --> 01:24:51,336
+Buna daha sonrasında gireceğiz. Bu makine güvenliğinin standartıdır. Yani makine güvenliğinin nasıl yapılması, risk değerlendirmesini nasıl yapılmasını açıklayan standart.
+
+252
+01:24:51,956 --> 01:25:07,656
+DSEN-ISO-12100. Bu önemli arkadaşlar. Kaç tane standart var? 3 tane standart var. A, B, C. A tipi standartlar tüm makineleri kapsıyor. B tipi standartlar belli bir tür veya kategori için güvenlik gerektiklerini belirler.
+
+253
+01:25:09,043 --> 01:25:29,523
+C sınıfı standartlarda belli makine türleri ve uygulama alanları için özel gerekleri bildirilen. Örnek olarak da makine aletleri, güvenliği preslerle ilgili olarak ya da standartı hidrolik presler için olanlarla ilgili olarak bulunan standartlar.
+
+254
+01:25:29,523 --> 01:25:36,943
+Her makine ve güvenlik cihazı için ayrı ve özel hazırlanmış standartlardır. Ürüne ait uyumlaştırılmış C tipi standart var ise,
+
+255
+01:25:37,043 --> 01:25:43,043
+Pasarım buna göre yapılacaksa temel gerekli uyum sağlanmış demektir.
+
+256
+01:25:43,043 --> 01:25:49,043
+Standart okurken hangi başlıklardan neleri bulmayız?
+
+257
+01:25:49,043 --> 01:25:54,043
+Kapsam nokta standartın hangi tür makineler ve uygulaması için geçerli olduğu ilk önce.
+
+258
+01:25:54,043 --> 01:25:57,043
+Bizim hedef noktamız nedir bu belirtilmesi gerekiyor.
+
+259
+01:25:57,043 --> 01:26:04,907
+Daha sonrasında güvenlik gerektikleri, TK listesi, risk deneme, test ve ölçüm ötemleri şeklinde olması gerekiyor.
+
+260
+01:26:06,420 --> 01:26:26,619
+Bu bir üçgen sınıf üçgeni olarak geçiyor. Makine sınıf üçgeni olarak geçiyor. A, B, C sınıf makine tipleri bulunuyor. A tipi standartlar, B tipi standartlar, C tipi standartlar. Makine özel standartlar, grup güvenlik standartlar ve temel güvenlik standartlar.
+
+261
+01:26:30,484 --> 01:26:39,504
+standartlarında hangi standartta bulunuyor dendiğinde TSE, N, ISO 12100 standartında bunlar geçiyor.
+
+262
+01:26:41,203 --> 01:26:53,224
+Ekimman alırken dikkat edilmesi gereken hususlar, güvenli makine kavramı. Az önce de bir ilk terste konuştuğumuz üzere güvenli makine olması gerekiyor.
+
+263
+01:26:53,876 --> 01:27:13,095
+Güvenli makinenin tanımına baktığımızda, kullanım süreci boyunca çalışma, taşınma, bakım, söküm vs. yaralanmalara veya sağlık zararlarına yol açmadan görevini yerine getirebiliyorsa, yani makine çalışmaya başladığı bir makine tamam ses çıkartıyor ama kabul edebilir seviyede ses çıkartıyor.
+
+264
+01:27:21,876 --> 01:27:31,935
+Gürültü oluyordu. Gürültün tanımı neydi hatırlayan var mı? Ben işlemedim ama geçtiğimiz sene işlemişiz mi sanırım?
+
+265
+01:27:54,676 --> 01:27:57,676
+Var mı gürültün tanımını yapabilecek?
+
+266
+01:28:10,931 --> 01:28:23,771
+Gürültü, arkadaşlar, rahatsız edici ses olarak geçer. Gürültün tanımına baktığımızı. Bu yüzden eğer sizi bir şey rahatsız ediyorsa, bu gürültüdür.
+
+267
+01:28:26,951 --> 01:28:37,771
+Konserler, statlar vs. sevdiğiniz aktiviteleri yaptığınız noktada bunlar beyaz gürültüdür. Çünkü bunlar sizi rahatsız etmez. Hatta daha fazla sizi...
+
+268
+01:28:38,676 --> 01:28:44,816
+Neşelendirir, hoşnut eder. Ancak gürültüyleştirilmez.
+
+269
+01:28:45,971 --> 01:29:06,891
+Siz bunu sevmiş olmanız aslında rahatsız edici noktasında olmuyor. Evet, tanım olarak baktığımızda rahatsız edici ses. Teknik açıdan bu gürültü sayılır ancak sosyal açıdan bu bir gürültü sayılmıyor. Neden? Çünkü sizi rahatsız etmiyor. Sizi rahatsız ettiği takdirde siz buna gürültüyle. O yüzden gürültü dediğim şey bir subjektif bir kavramdır.
+
+270
+01:29:12,884 --> 01:29:20,444
+Güvenli makine kavramının temel mantığında anlaşılır. Yarı alma ve sağlık zararına yol açmadan görevini yenileye getiren makinelerdir.
+
+271
+01:29:21,264 --> 01:29:30,244
+Kalite makine kavramı ile karıştırılmalı, kaliteli makine kavramı ile karıştırılmalı, güvenli makine kazaya neden olmayan insan, çevre ve mala zermen makinedir.
+
+272
+01:29:30,924 --> 01:29:38,703
+Kaliteli makine ise uzun ömür, garanti ve servis olmaklarıyla ilgilidir. Yani bir şeyin kalitesini uzun ömründen anlayabiliriz.
+
+273
+01:29:40,884 --> 01:29:59,744
+Bu süreçler, bu süreçler, makinenin seçimi, tedarik edilmesi, kabulü ve faaliyeti geçirmesi aşamada içerir.
+
+274
+01:30:00,000 --> 01:30:13,220
+Makine satın alması sürecinde kapılaşılmasına kadar olan adımlar, ihtiyaç analizi, neye ihtiyacımız var, tedarikçi değerlendirmesi, birden fazla tedarikçi, en uygun fiyat veren ya da en güvenli olan makinenin seçimi.
+
+275
+01:30:14,260 --> 01:30:22,319
+Sonrasında makinenin teslim alımı ve kontrolü, kabul testleri ve performans arası tamam ben bunu aldım ilk önce benim bunu bir testlerden geçirmem gerekiyor.
+
+276
+01:30:22,440 --> 01:30:27,360
+Çünkü bunlar gerçekten benim için yararlı mı değil mi öğrenmem gerekiyor.
+
+277
+01:30:29,076 --> 01:30:41,855
+Daha sonrasında kurulum ve montaj yapılıyor. Çünkü ilk önce bir test edilmesi gerekiyor. Eğer test etmezsek bu noktada maalesef sonrasında sıkıntılar yaşanabilir.
+
+278
+01:30:42,547 --> 01:30:54,608
+Kurulum ve montaj süreci, makinenin faaliyete geçirmesine uygunluk gerektiği prosedür, eğitim ve bilgilenme, bakım ve teknik destek, dokumentasyon ve izleme makinenin üzerinde bulunması gereken işaretlemeler ve etiketler var mı yok mu?
+
+279
+01:30:54,608 --> 01:31:02,887
+Bir makine satılarken, kullanılırken, üzerinde yaranın işaretlemeler ve etiketler hem yasal uygunluk hem de güvenli kullanım açısından büyük önem taşıyor.
+
+280
+01:31:04,227 --> 01:31:06,028
+Az önce de söylüyorum CE işareti.
+
+281
+01:31:07,060 --> 01:31:30,520
+Avrupa Birliği standartlarına uygunluğunu vs. bunu gösterir. Makine üzerinde yer alan ISO işaretleri de kalite ve güvenlik açısından yol göstereceğiz. Neden? Çünkü 12100 demiştik. Temel makine standartı olarak. TSE, N, ISO 12100. Daha sonrasında 9001 neydi? ISO 9001 kalite yönetimiydi.
+
+282
+01:31:31,636 --> 01:31:41,996
+12.100'de makine güvenliği prensiplerinin uygun tasarlandığını gösterir. Yani ISO eğer varsa burada sistemleri, yönetim sistemlerinin uygunluğunu gösteriyor.
+
+283
+01:31:42,956 --> 01:31:48,916
+Bununla birlikte makinelerin birlikte verilen kullanım konusu doğru kullanım, bakım ve güvenlik kalimatlarını içerir.
+
+284
+01:31:50,036 --> 01:32:05,855
+Makine üzerindeki uyarı ve bilgilendim etiketleri ise kullanıcı olası tehlikeye karşı bilgilendirir, dikkat sıcak yüze, tehlike, elektrik akımı, elinize yaklaştırmanın hareketli parça ve benzeri durumlar var ise bu da yine aynı şekilde üretici kimlik bilgilerinde yer almalı.
+
+285
+01:32:05,956 --> 01:32:13,216
+Bu bilgiler ürünün orijinali, kanıtlar ve teknik destek, yedek parça ve garanti hizmetleri için başvuru yapılmasını kolaylaştırır.
+
+286
+01:32:14,612 --> 01:32:28,292
+Örnek olarak da bir pres makinesi satın alarken, C işaretiyle ASOS standartlarının yanı sıra makinenin gürüzü ve titreşim seviyesi hakkında bilgi içen etiketler kontrol edilmediği güvenlik uyarıları makinenin hareketli parçalarını ve yüksek sıcaklıklara dikkat çekmelidir.
+
+287
+01:32:28,292 --> 01:32:37,731
+Bir elektrikli ekipmanın satın alımında enerji verimli etiketler ve kullanım kılavusundaki elektrik güvenliği uyarıları göz önünde bulundurulmalıdır.
+
+288
+01:32:39,923 --> 01:33:04,923
+Makinelerdeki tehlikeler ve çözüm önüne geçmeden bu hafta ben dersi bitireceğim. Önümüzdeki hafta dersimizi yapabilir miyim bilmiyorum. Yapabileceğimi çok sanmıyorum. Çünkü Erasmus'la Polonya'ya gideceğim. O yüzden hafta bugün...
+
+289
+01:33:07,152 --> 01:33:18,551
+Çalıştayda olacağım. Yapabileceğimi çok sanmıyorum. O yüzden önümüzdeki hafta dersimiz olmayacak. Ben [öğrenci]'a tekrardan bilgilendireceğim yapılmayacağını.
+
+290
+01:33:18,551 --> 01:33:22,951
+Bu dosyayı da paylaşacağım şimdi sizinle de.
+
+291
+01:33:26,451 --> 01:33:32,051
+Şöyle ders duvarında paylaşayım.
+
+292
+01:33:48,020 --> 01:33:49,800
+Sorusu olan var mı bu arada?
+
+293
+01:34:34,387 --> 01:34:40,448
+sorusu olan da yok. Dediğim gibi önümüzdeki hafta dersimiz olmayacak. Ben notumda şimdi paylaşacağım.
+
+294
+01:34:42,688 --> 01:34:44,927
+Bununla ilgili Nura da bilgisini vereceğim.
+
+295
+01:34:46,128 --> 01:34:48,427
+Onun dışında...
+
+296
+01:34:52,435 --> 01:34:57,956
+Benim aklıma şu anda gelen bir şey yok. Sonraki hafta zaten yine aynı şekilde online'dan devam edeceğiz.
+
+297
+01:34:58,915 --> 01:35:03,195
+Eğer sorunuz yoksa da bu haftalık bu kadar arkadaşlar. Kendinize iyi bakın.
+
+298
+01:35:04,735 --> 01:35:08,015
+İyi akşamlar diliyorum. İyi hafta sonları şimdiden.

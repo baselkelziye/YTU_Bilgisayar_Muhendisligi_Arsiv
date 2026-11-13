@@ -1,0 +1,335 @@
+1
+00:13:01,844 --> 00:13:06,884
+Arkadaşlar merhaba. Herkes iyidir umarım.
+
+2
+00:13:11,091 --> 00:13:12,292
+Son dersimiz
+
+3
+00:13:21,043 --> 00:13:22,303
+Ekran'a paylaşayım.
+
+4
+00:13:28,307 --> 00:13:33,727
+Makine risk yerlerimizin son modülü var demiştik. Son 5. modülü değiştirdikten sonrasında.
+
+5
+00:13:38,899 --> 00:13:57,939
+Genel bir tekrarla beraber bitireceğimizi belirtmiştim bir önceki dersimizde. Burada daha sonra bu modülde, son modülde, İş Sağlığı ve Güvenliği Müdürlüğü tarafından düzenli, son modülde, Uluslararası Elektrik Mühendisleri Odası tarafından.
+
+6
+00:13:58,836 --> 00:14:08,556
+6204 bir kodlu ve AD tasamında güvenliği kullanımına hedefleyen bir modül. Buradaki temel amaç...
+
+7
+00:14:08,980 --> 00:14:19,920
+Baktığımızda, bu standardın gereksinliği ama eğitimli makinenin tasarımında güvenli kullanma bakımının doğru bir şekilde gerçekleştirmesiyle ilgili olarak.
+
+8
+00:14:19,920 --> 00:14:29,320
+Bu standardın kapsamında N6204'de bir makine emniyeti ve makinenin eğitimliği ekipmanları standarda kullanılıyor.
+
+9
+00:14:29,460 --> 00:14:36,980
+Sabit taşımaz makinelerin elektrikli ekipmanı programlanabilir, elektronik ekipmanların uygar ve makine ait elektrikli ekipmanın beslemesini.
+
+10
+00:14:36,980 --> 00:14:46,000
+İstediğinden itibaren uygulanır ve temel amaç olarak dediğim gibi makinelerin güvenliğini arttırmak amacıyla tasarlanmış bir standart.
+
+11
+00:14:46,707 --> 00:15:01,867
+Burada en önemli noktada bir tanesi güç kaynağı ve besleme makinelerinin ana enerji beslemeleri ve ergonomi gibi banların beslenmesi nedenlerinde farklı voltaj seviyelerine enerji ihtiyacı duyulması halinde farklı voltaj seviyeleri ana enerji kaynağından üretilmeli oldu.
+
+12
+00:15:01,867 --> 00:15:10,867
+Ve ana şalter makinelerin enerjisi yani aslında sigorta kısmında ana şalter kısmında bir de kaçak akım rövüsü değiller şeyde olması gerekiyordu.
+
+13
+00:15:11,168 --> 00:15:14,707
+Kaçak akım rövüsü insanı sigorta ise makineye cihaz.
+
+14
+00:15:14,707 --> 00:15:27,947
+cihazı koruyan bir sistemdir. Bunu unutmayın. Makinenin enerjisini kesmek için kullanılan anlaşıcayla kolay bir şey olacak. Bir yere mont edilmeme önerilen montaj yüksekliği 60 ile 170 sayı arasında olmalıdır.
+
+15
+00:15:28,563 --> 00:15:39,644
+Anaşeritler topatında enerjili kalması gerekebilir. Bakım alanı çalışmalı, kontrol planı ve makinle ayrılması için kullanılan devreden enerjili kalması gerekiyor.
+
+16
+00:15:39,764 --> 00:15:49,943
+Kitleme konulukları amaçlı kullanılan kontrol devredleri yine aynı şekilde. Ne kadar anaşeritler gitse dahi bunların açık olması gerekiyor. Bunu kullanarak kontrol edebilir olması gerekiyor.
+
+17
+00:15:51,731 --> 00:15:58,311
+Bu süreçteki tedbirlerde de kapatılığında daha iyi enerji olduğunu belirten uyarıcı örneğin.
+
+18
+00:15:58,803 --> 00:16:19,803
+Kontrol kalemini biliyorsunuzdur. Kontrol kaleminin genel mantığı nedir? Elektrik var mı? Bunu aslında tespit etmektir. Burada da yine aynı şekilde bu makinede elektrin olup olmadığını ya kırmızı, yeşil yana hiçbir şey yanmaz. Ama bir şey yanması gerektiği daha önemli. Çünkü atıyorum hiçbir şey yanmazsa belki...
+
+19
+00:16:20,692 --> 00:16:36,012
+Makine bozulduğunu da anlayabilir miyiz? Gerçekten ışık noktası bozuldu ama anlaşılmıyor. Bu yüzden eğer devrede bir elektrik varsa kırmızıdır, devrede elektrik yoksa yeşildir şeklinde uyarın tarzında olması gerekiyor.
+
+20
+00:16:37,331 --> 00:16:50,172
+Elektrik çarpılmasına korunma, elektrik çarpılmalar gerekli doğrudan temas yöntemleriyle oluşan çarpılmalar, yalıtım hatta sonucu ortaya çıkan enerji altındaki iletken kısmına temas verilirle oluşan çarpılmalar.
+
+21
+00:16:50,711 --> 00:16:58,471
+Artık voltaj nedeniyle oluşan çarpılmalar olarak 3'e ayrılıyor. Bunlardan nasıl korunmasıyla ilgili olarak şimdi ona bakacağız.
+
+22
+00:16:59,152 --> 00:17:19,032
+Elektrik akım, insan cümlelerindeki etkileri, 1 milyar amper altındaki akımın hissedilme sınırı elde gıdıklanma oluyor. Burada 2 amper yukarısında kas kontrolü kaybı, kas kasılma akım kesilene kadar devam ediyor. Kalp durumu akşam yana aslında bilinç kaybol ve maalesef ölüme kadar gidebilecek bir noktaya doğru gider.
+
+23
+00:17:27,152 --> 00:17:33,512
+Bu durum durum olabilir.
+
+24
+00:17:35,012 --> 00:17:37,152
+Gerilim ve akım gereksinimleri.
+
+25
+00:17:38,152 --> 00:17:43,932
+Buradaki seçim, gerilim seçimlerinde cihazların nominal gerilim değerlerini belirlenmesi için standartta uygun olmasına şartılıyor.
+
+26
+00:17:44,072 --> 00:17:48,652
+Buradaki hangi standartta makine emniyetiyle ilgili almış?
+
+27
+00:17:48,751 --> 00:17:51,992
+204 kodlu standartta burada eğer hatırlarsanız.
+
+28
+00:17:53,299 --> 00:17:56,000
+MN60-204 standardı.
+
+29
+00:17:59,571 --> 00:18:21,431
+Kablola ve diğer birleşenler, makinenin çalışması sırasında geçireceği akıma uygun olan seçimiyedir. Aksi taktirde aşırı ısınma ve güvenlik riskleri ortaya çıkabilir. Güç kanı, aşırı akımı koruma, topraklama, sıfırlamadır aslında. Benzerlikleri aslında. Tam aynı değil ama benzerdir. Ekipmanların elektriksel güvenliğini sağlamak için kritik öneme sahiptir.
+
+30
+00:18:22,355 --> 00:18:29,715
+Topraklama hatları, elektriksel arzası sırasında kullanıcıları koru ve cihazların güvenliği çalışmasını sağlayan aynı zamanda cihazı da güvenliği bir şekilde tutar.
+
+31
+00:18:30,775 --> 00:18:44,915
+Burada tasarım ve montaj kısmında kablo seçimi, kablosu yönlendirmesi, kablo renk kodları ve etiketlemeler, düz siyah bir kablo varsa o AC-DC güç devrelerini ifade eder.
+
+32
+00:18:48,991 --> 00:18:52,652
+Doğru akımı ifade eder.
+
+33
+00:18:52,871 --> 00:18:57,051
+Turuncu şalter kapatıldığında enerji devirleri ifade eder.
+
+34
+00:18:59,051 --> 00:19:00,471
+Çizgili şeritli olanlar.
+
+35
+00:19:06,963 --> 00:19:19,503
+Biraz onu kontrol edip söyleyeceğim. Nötr olan da zaten nötr olan içerisinde herhangi bir şey olmayan. 3 faz besleme için kullanılan çok damarlı kablolar için renk kodları L1K ve L2CR, L3 gri şeklindedir.
+
+36
+00:19:27,667 --> 00:19:39,667
+Şurada koruma cihazlarında koruma göre güvenliği, koruma göre kısa devre ve aşırı akım durumlarına algıverme sistemi güvenliği sağlar, güvenliği göre güvenliği göre güvenliği göre ayırlanmak için güvenliği bir şekilde durmak için sağlar ve operatörünün güvenliğini artırır.
+
+37
+00:19:40,307 --> 00:19:43,248
+Buradaki önemli noktalardan bir tane koruma cihazlarında.
+
+38
+00:19:44,147 --> 00:20:09,768
+Topraklar mezafeyi zaten az önce bahsettik. Elektrik ve çalışan makinelerin kullanımı, kullanıcı eğitimi, temel eğitim, güvenlik talimatları, kullanım kılavuzları, yani temel olarak kişiyi bilgilendirmek üzerine, evet bir temel eğitim geliyor ama bu temel eğitim önemli nokta, güvenlik açısından neler reaktif edilmeli, bu prosedür güvenli bir çalışma ortamında bulunduğumuzu.
+
+39
+00:20:11,380 --> 00:20:22,680
+Anlamak adına, hani kişilerde bir form vesaire de verilebilir, hani bunda tamamladık daha sonra çalışılabilir gibisinden belli başlı şeyler de yapılabilir.
+
+40
+00:20:23,560 --> 00:20:31,580
+Ama güvenlik talimatları, kullanım kılavuzları ve güvenlik açısından, daha sonra prosedürler noktasında.
+
+41
+00:20:32,276 --> 00:20:50,276
+En önemli noktalardan bir tanesinde, bir güvenliğin sağlanabilmesinin açık ve net olması burada önem arz ediyor. Bu nedenden dolayı aslında prosedür kısmı işin en önemli kısmı. Eğitim, bilgilendirme vesaire diyoruz ama...
+
+42
+00:20:52,372 --> 00:21:04,992
+Bunu kişiye karşıya açık ve net bir şekilde ifade etmek gerekiyor. Çünkü eğer karşıya geçmediği şartları, bunu eğer anlamadığımız takipte karşıya geçmeyen hiçbir şey aslında tam anlamıyla yapılmış sayamıyor.
+
+43
+00:21:05,852 --> 00:21:12,211
+Kullanım kılavuzla kılavuz içeriği olarak makinenin kurulumu çalıştırması, bakım ve güvenliği tarihattan içermeli.
+
+44
+00:21:13,332 --> 00:21:28,792
+Güvenlik projesi, acil durma butonları, acil durum prosedürleri yine aynı şekilde. Kişisel koruyucu donanımdan bahsettik. Erişim kontrolü, makineye, yalnızca yetkili kişilerin erişimine izin vermelidir. Güvenlik bariyerleri ve kontrolü operatörlerin tehlikeli bölgeye erişimine engeller.
+
+45
+00:21:40,339 --> 00:21:51,339
+İçerisinde bir elektrikle çalışma yapıldı. Bir makine var, makineye girdiniz, orada elektriği kestiniz. Çünkü bir bakım çalışması yapılacak. Burada zaten bir erişim kontrolü...
+
+46
+00:21:53,587 --> 00:22:21,587
+Öğütü kontrolünün olmasının sebebi, yetkili kişilerin girmesi. Ama yetkili kişilerin orada bakım olpamadığına haberdar olması için belki duymamıştır. Maillerini kontrol etmemiştir ve bir anda oraya girdi ya da baktı makine çalışmayı ve şalteri açtı. İçeride bakım yapan kişi direkt olarak orada maalesef kaybediliyor. Bu nedenden dolayı eğitim çalışma izni fonu. Eğer bir çalışma izni fonu varsa ve bu çalışma izni fonu varsa olması...
+
+47
+00:22:21,587 --> 00:22:48,167
+O çalışma izin formuyla beraber oradaki süpervizör, kimse süpervizörle ilgili olarak burada bir çalışma yaptığında görsel, etiket ya da bir kilit, bunun oradaki sigortanın aralarına geçirilmesi gerekiyor ki kişi açamasın ya da burada çalışma olduğunu anlasın ve bununla birlikte de yine aynı şekilde hareket edebilsin.
+
+48
+00:22:48,756 --> 00:22:51,976
+Bakımının, yani çalışmasını rahat bir şekilde yapabilsin.
+
+49
+00:22:52,896 --> 00:22:55,396
+Periyodik kontroller işin aslında en önemli noktalarından.
+
+50
+00:22:55,516 --> 00:23:05,896
+Bir tanesi iş ekipmanlarının bakımı onarım ve periyodik kontroller ve ilgili ulusal ve ulusal standartlarda belirlenen ağırlıklarda ve kriterlerde imalatçı verileriyle term ve tekniğin gerekli iletişleri dikkate alınarak yapılır.
+
+51
+00:23:06,756 --> 00:23:08,155
+Bakım, temizlik ve onarım.
+
+52
+00:23:15,476 --> 00:23:28,496
+Arıza tespitinde tespit önlemleri zaten periyodik bakımın aslında en önemliliklerinden bir tanesi de şu periyodik bir şekilde kontrol edip takdirde senede bir genellikle olur. Bu eğer özel bir durum belirtilmediyse.
+
+53
+00:23:31,155 --> 00:23:53,775
+Bazı vakitlerde 10 senede 1'de olabilir ama ufak tefek durumlarla karşılış olması adına bu bakımla periyodik kontroller yapılmalıdır. Bu dönem ve anahtarında bir tanesi iş ekipmanının kullanımında sağlık ve güvenliği şartları yönetmeliğin 4. maddesinde yönetmelikte öngörü aralıklarda dediği şey genellikle 1 yıla başta 10 yıla kadar bu devam eder.
+
+54
+00:23:59,155 --> 00:24:14,975
+Kontrol gerçekleştiren kişi, Equip.net kayıt numarasının bulunması gerekir. Bu arkadaşlar, Equip.net kayıt uygulaması dediğimiz şey, bu makinelerin kayıtlarıyla ilgili olan bir durumdu ve önemli de nerede kayıt yapılması gerektiği, Equip.net'te yapılması gerekiyor.
+
+55
+00:24:17,172 --> 00:24:32,932
+İş ekipmanlar ve birleşenlere yapılan her türlü revizyon, tamiri vs. bu tip durumlarda herhangi birisinin birkaçın birlikte uygulandığı işlemlerdir bakım noktaları. Elektriksel ekipmanlar için düzenli bakım ve kontrol planı oluşturmalı. Bu planlar ekipmanların düzenli bakımın yapılmasını sağlar.
+
+56
+00:24:33,751 --> 00:24:42,711
+Arıza tespitinde elektriksel arıza doğru tespit ve anezi yöntemleri tespit edilir ve bu yöntemler sonuna köküne inerek etkiyi çözümü sunar.
+
+57
+00:24:44,339 --> 00:24:45,611
+Ah...
+
+58
+00:24:54,548 --> 00:25:07,527
+VEC 6204 standardlı makinenin elektrik ve güvenliği performansını sağlamak için önemli bir kılavuzuna ve elektrik tasarımına güvenliği planı ve bakım konularında standartla uyum ve hem riskli hem de makine performansını artırır.
+
+59
+00:25:08,627 --> 00:25:14,967
+Periyodik kontrol ve bakımlar, iş işlemi ana kullanımlar, sağlık güvenliği uygun şekilde yetkili kişiler için gerçekleştirilir.
+
+60
+00:25:14,967 --> 00:25:23,867
+Aslında bu genel olarak bu modülün amacı ve baktığımızda bir işi zamanında yapmak noktası daha önemlidir.
+
+61
+00:25:24,027 --> 00:25:36,347
+Çünkü periyodik kontrollerin, testlerin, güvenlik önlemlerin, güvenlik prosedürlerinin, kontrollerin bunların hepsinin aslında belli bir standartta, belli bir sistemde yapıldığı takdirde zaten
+
+62
+00:25:36,627 --> 00:25:42,667
+Herhangi bir şekilde aslında arıza verme ihtimalini de düşürüyoruz biz periyodik bakımlarını da yaparak.
+
+63
+00:25:43,327 --> 00:25:49,467
+Ve periyodik bakımların arıza tespit ve tespit yöntemlerinde de yine aynı şekilde daha kolay bir şekilde tespit edilebilmesini sağlıyoruz.
+
+64
+00:25:50,107 --> 00:26:00,427
+Sorun gidermede bir de onarım ve yedek parçalarda da eğer makine çok eskimeye başladıysa bu noktada eski malzeme olduğu için çok daha zor olur bulunması.
+
+65
+00:26:00,427 --> 00:26:02,748
+Bir kez tedarik noktası da yine aynı şekilde.
+
+66
+00:26:04,627 --> 00:26:26,427
+Televubu, o mabası da yine aynı şekilde tartışılabilir nokta olabilir. O yüzden mümkün mertebe anı kurtaracak değil, genel bir çözüm alınabilecek şekilde gerekirse belki bir günde kapalı kalsa hızlı bir şekilde bunun aksiyonu olarak en azından en doğru yöntemi bulmak önemli oluyor.
+
+67
+00:26:26,963 --> 00:26:44,483
+Güvenlik kontrollerinde burada yıldız testleri var, test prosedürleri var. Eksis ekipmanın güvenlik performansını, değerli testler ekipmanın güvenliği çalışıp çalışmadığı, yani yıldız testlerinde ekipmanın güvenliği çalışıp çalışmadığı, test sonuçta bir raporla değerlendirme, gelecekte iyi lepsi meşhur.
+
+68
+00:26:44,483 --> 00:26:52,264
+Veri sağlar temel amaç ama burada yıldız testlerinin temel amacı ekipmanın güvenliği çalışıp çalışmadığını belirler.
+
+69
+00:27:02,579 --> 00:27:04,556
+Sol su olan var mıydı?
+
+70
+00:27:43,412 --> 00:27:50,412
+Sorusu olan yok. Tamam. Şimdi o zaman final sınavıyla ilgili olarak...
+
+71
+00:27:51,635 --> 00:28:14,496
+Soracağım, söyleyeceğim daha doğrusu. Fine-Kinney, HAZOP'u yine aynı şekilde arkadaşlar, 20 soruluk bir testten oluşacak, 5'lik de olacak. Sorular vizeden öncesinde, vizelerden de olacak ama ağırlıklı olarak vize sonrası, özellikle birinci vize sonrasında istediğimiz makine, ekipman yönetmeliği ve bu modüller üzerinden gelecek.
+
+72
+00:28:14,496 --> 00:28:19,576
+Tabii ki vizeden, her iki vizeden de sorular benzer sorularla karşılaşabilir.
+
+73
+00:28:19,635 --> 00:28:45,336
+Ancak çoğunluk olarak dediğim gibi bu konulardan olacak. Onun dışında sınavın süresi 30 dakika olur diye düşünüyorum. Soru zorluğunu zaten gördünüz nasıl olduğunu. Bunun üzerine eksilen bir şey söylemiyorum.
+
+74
+00:28:48,564 --> 00:28:57,264
+Başka benim aklıma gelecek bir şey yok. Genel olarak bir tekrar yaptığımızda modül 1'lerle ilgili, modül 2, modül toplam 5 tane modül var.
+
+75
+00:28:57,364 --> 00:29:08,384
+İş Sağlığı ve Güvenliği Genel Müdürlüğü tarafından verilen. Bir de tabii ki 3 tane de slide vardı yanlış hatırlamıyorsam. Bunlardan gecikmem, bunların dışına çıkmam.
+
+76
+00:29:10,604 --> 00:29:13,484
+Onun dışında başka bir şey var mı benim aklıma gelen?
+
+77
+00:29:16,531 --> 00:29:17,672
+Açıkçası yok.
+
+78
+00:29:21,551 --> 00:29:25,471
+Sizlerin her sorusu varsa onları cevaplandırayım.
+
+79
+00:29:50,644 --> 00:29:53,612
+O zaman arkadaşlar...
+
+80
+00:30:00,660 --> 00:30:17,800
+Hepinizle tanışmadım ama tabii ki ilk dersimizde sadece görüştük. Derse sürekli katılan birkaç tane kişi vardı. [öğrenci]'yu hatırlıyorum. [öğrenci]'yi hatırlıyorum.
+
+81
+00:30:19,284 --> 00:30:26,864
+Yani genel olarak hepiniz benzer bir şekilde katılım sağlamaya çalıştığınız. Şu anda sınıfınız az kişi biliyorum.
+
+82
+00:30:30,944 --> 00:30:36,364
+Ben katıldığınız için bu süreçte teşekkür ediyorum. Tanıştırmadan memnun oldum hepinizle.
+
+83
+00:30:37,224 --> 00:30:43,664
+Eğer bir sorunuz olursa yardımcı olmaya çalışayım eğer yoksa da.
+
+84
+00:30:44,276 --> 00:30:53,115
+Bu dönemlikte bu kadar. Hepinize başarılı sınavlar, size başarılar diliyorum. Kendinize iyi bakın. Görüşmek üzere.
