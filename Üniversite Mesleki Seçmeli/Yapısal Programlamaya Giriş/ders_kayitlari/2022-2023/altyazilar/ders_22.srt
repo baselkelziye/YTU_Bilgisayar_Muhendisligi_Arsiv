@@ -1,0 +1,3459 @@
+1
+00:00:58,292 --> 00:01:00,451
+Gayetler arkadaşlar, ses geliyor mu acaba?
+
+2
+00:01:06,036 --> 00:01:07,236
+Duyuyor musunuz?
+
+3
+00:01:34,292 --> 00:01:39,275
+...bir problem var. Şu an net geliyor mu peki?
+
+4
+00:01:57,939 --> 00:01:59,939
+Bu geliyor mu? Normal.
+
+5
+00:02:28,500 --> 00:02:29,484
+Test.
+
+6
+00:02:32,596 --> 00:02:34,135
+Şimdi normaldir herhalde.
+
+7
+00:02:45,716 --> 00:02:47,716
+Tamam, teşekkürler, çok sağ ol.
+
+8
+00:02:56,340 --> 00:02:56,939
+Evet.
+
+9
+00:03:01,139 --> 00:03:08,139
+Evet arkadaşlar, merhabalar. Dersimize hemen başlıyoruz.
+
+10
+00:03:12,532 --> 00:03:32,012
+Şimdi, bugün ne yapacağız? Önce şu takvimimize bakalım. Okul zannediyorum 3 Mayıs haftası, yani şu hafta en son. Dün akademik takvime bakmıştım. Dolayısıyla bu haftadan ayrı 3 hafta dersimiz var.
+
+11
+00:03:34,068 --> 00:03:41,068
+Laboratuvarda da bir laboratuvar, bir uygulama, bir laboratuvar daha yapacaksınız. İşte pazartesi günleri pulde olursunuz.
+
+12
+00:03:42,068 --> 00:03:56,652
+Bundan sonraki haftalar için yapısal programlama açısından baktığımızda, diziler, maddisler, curgeon, bununla alakalı random falan konuştuk, rastgelelik.
+
+13
+00:03:56,756 --> 00:04:07,555
+Artık bundan sonraki konularımız şu ana kadar gördüğümüz konuların bilgisayar bilimlerindeki farklı uygulamaları şeklinde olacak.
+
+14
+00:04:07,555 --> 00:04:15,756
+İşte bu 10, 11 ve 12 diye üç tane ders notumuz var. Bunların içerisinde neler var?
+
+15
+00:04:15,756 --> 00:04:21,483
+İşte kriptolojiden örnek vereceğiz. Bugün sepet analizi dediğimiz bir konu var.
+
+16
+00:04:21,716 --> 00:04:32,716
+Yaygın bir konu, bunun dil işlemedeki örneğine bakacağız. Gelecek hafta, işte bu hafta bunun bir kısmını bitireceğiz, bir kısmına gelecek hafta devam ederiz.
+
+17
+00:04:32,716 --> 00:04:45,716
+Sonra, görüntü işleme örneği yapmak istiyorum gibi, yani şu ana kadar gördüğümüz şeyleri farklı problemlere uyarlamaya çalışacağız.
+
+18
+00:04:45,875 --> 00:04:53,875
+Aslında hep ya dizi kullanacağız ya matriz kullanacağız. Gerektiğinde recursion ile çözüme gidebiliriz.
+
+19
+00:04:53,875 --> 00:05:01,875
+Yaptığımız işlemleri elbette fonksiyonlarla gerçekleştireceğiz. Böyle uygulamalı bir ders olacak.
+
+20
+00:05:01,875 --> 00:05:07,875
+Şimdi birinci sorumuzla başlayalım. Şunu bir ekran görüntüsü olarak alayım.
+
+21
+00:05:11,475 --> 00:05:13,355
+İpişat dedik, niye anlamadık.
+
+22
+00:05:22,579 --> 00:05:49,579
+Şu an tek ekran kullandığım için sizin yazdıklarınızı anlık göremeyebilirim arkadaşlar. Onun için mümkün oldukça mikrofonla katılım yapmanızı tavsiye ediyorum. Göreceğim ama ara sıra bakıp, chat ekranında bir şey var mı yok mu onu... Çünkü şu şeyi ekrana getirince siz her zaman rahat göremiyordunuz. Onun için biraz...
+
+23
+00:05:50,291 --> 00:06:11,291
+Sizden konuşmanızı bekliyorum. Şimdi sepet analizi nedir? Şuradaki örnekte olduğu gibi bizim bir veri tabanımız olsun. Bu veri tabanı işte böyle iki şey içeriyor. Birincisi sepet ID, öbür de ürün ID şeyler içeren bir sütunumuz var.
+
+24
+00:06:11,699 --> 00:06:36,699
+Birinci sepette hangi ürünün ID'si var? Mesela burada bir tane vermişiz. Birinci sepette 3 nolu ürün de olsun. Sonra birinci sepette 18 nolu ürün olsun. Sonra şöyle devam edelim. İkinci sepette 789 nolu ürün varmış. Yine ikinci sepette 1 nolu ürün varmış. Bu böyle devam edip gidiyor. Yani bunun uzunluğu için...
+
+25
+00:06:36,819 --> 00:07:03,220
+sepet sayısına veya ürün sayısına göre bir şey diyemeyiz. Çünkü her bir market sepetinde değişken sayıda ürün olabilir. Dolayısıyla hani bunun işte şu kadar sayıda satır olacak diyemeyiz ama bu iki sütunlu. Eğer bunun sayısına da en tane şey dersek, eni bilmiyoruz. Böyle bir matriz.
+
+26
+00:07:03,475 --> 00:07:05,475
+Şimdi soru şu,
+
+27
+00:07:05,475 --> 00:07:08,475
+En çok
+
+28
+00:07:08,475 --> 00:07:10,348
+Hemvenen'lik
+
+29
+00:07:14,451 --> 00:07:16,172
+Birlikte satılan
+
+30
+00:07:20,564 --> 00:07:25,764
+veya alınan aslında, hani ikisi de geçerli, ürün ikilileri.
+
+31
+00:07:32,692 --> 00:07:42,692
+Bu şeyi duyunca gerçek hayattan örnek verebilir misiniz bununla alakalı? Bazı yerlerde karşılaşmış olabilirsiniz buna.
+
+32
+00:07:42,692 --> 00:07:46,692
+Mesela nasıl bir örnek verilebilir?
+
+33
+00:08:00,596 --> 00:08:01,596
+Evet.
+
+34
+00:08:07,603 --> 00:08:15,103
+Bunu gerçek hayatta nerelerde görebiliriz? Yani ne işimiz eriyecek? En çok birlikte satılan iki ürünü bulursak.
+
+35
+00:08:21,492 --> 00:08:23,492
+Genelde kullanılıyor galiba.
+
+36
+00:08:23,492 --> 00:08:25,492
+Nerede?
+
+37
+00:08:25,492 --> 00:08:27,492
+Alışveriş sitelerinde özellikle.
+
+38
+00:08:27,492 --> 00:08:28,492
+Alışveriş sitelerinde.
+
+39
+00:08:28,492 --> 00:08:30,492
+Amazon, Trendyol, vesaire.
+
+40
+00:08:30,492 --> 00:08:32,491
+Nasıl kullanılıyor?
+
+41
+00:08:33,491 --> 00:08:36,491
+Mesela bir ürünü şey yaptığımız zaman altında...
+
+42
+00:08:37,076 --> 00:08:44,076
+En çok birlikte satılanlar diye gösteririp bazen üzerine indirim koyulup kullanıcının cazibesini çekmeye çalışıyorlar.
+
+43
+00:08:44,076 --> 00:09:02,076
+Aynen tamamen bir öneri sistemi bakın bunu alanlar bunu da satın almıştı zamanında deyip seçtiğiniz bir ürünün birlikteliğini size söylüyor hatta indirim yapıyor işte diyor ki yani sizi o ürünü de almaya teşvik etmek için çünkü insanların
+
+44
+00:09:03,028 --> 00:09:18,028
+Geneline baktığınızda bir eğilimi vardır, toplumda. Bu genel eğilimden yola çıkarak, şöyle söyleyelim, patates alanlar soğanda alırlar. Bu zaten bilinen bir gerçek.
+
+45
+00:09:18,028 --> 00:09:30,028
+Ama patates alanların %90'ı ne alsın? Bulaşık teli alsın. Tamam mı?
+
+46
+00:09:30,803 --> 00:09:46,263
+Alaka var mı bu ikisi arasında? Yok. Nesnelerin kendilerine baktığımızda bir alaka yok. Ama elimizde böyle bir bilgi var. Bu bilgi mantıklı olması gerekmiyor. Şimdi bunu association analiz diyoruz.
+
+47
+00:09:54,644 --> 00:10:03,644
+İlk çalışması Amerika'da bir yerde yapılıyor yıllar önce belki 40-50 yıl önce. Veri madenciliği konusudur bu.
+
+48
+00:10:04,644 --> 00:10:13,644
+Bir bölgede, işte bir mahalle diyelim veya bir ilçe diyelim, bunu şey yapıyorlar, yani marketlere bakılıyor.
+
+49
+00:10:14,644 --> 00:10:18,644
+Acaba en çok satılan ekonu, işte bu problem üzerinde düşünmüşler.
+
+50
+00:10:19,988 --> 00:10:39,988
+Bebek bezi ve bira satışı arasında çok yüksek bir birliktelik var. Birisi bebek bezi, öbürü içecek. Ne alaka dersin? O bölgede çocuklarına bakan insanların bunu şey yaptığına dair sosyal analizler falan yapılıyor.
+
+51
+00:10:44,436 --> 00:10:49,036
+Şapıldı, uyarlandı ve güzel başarılı sonuçlar elde edildi.
+
+52
+00:10:49,036 --> 00:10:57,235
+Şimdi biz bunun ürün ikirlileri üzerinden, bunu biraz daha zorlaştırıp güçlüleri diyeceğiz, buna bakacağız.
+
+53
+00:10:57,235 --> 00:11:05,436
+Mesela sadece market deyince süpermarketleri düşünmeyin veya e-ticareti düşünmeyin.
+
+54
+00:11:08,403 --> 00:11:12,723
+müzik tavsiyesi veya YouTube'da bir şey izliyorsunuz.
+
+55
+00:11:12,723 --> 00:11:18,644
+İşte o izlediğiniz şeye bir sonraki izlemenizi devam edecek bir şeyler tavsiye ediliyor.
+
+56
+00:11:18,644 --> 00:11:25,004
+Şimdi orada yöntemlerden bir tanesi insanların kullanım analizi.
+
+57
+00:11:25,004 --> 00:11:32,524
+İşte bu videoyu izleyenler veya bu müziği dinleyenlerin % şu kadarı, %90'ı
+
+58
+00:11:32,884 --> 00:11:36,884
+Bunu da izlediler veya dinlediler deyip size tavsiye sunuyor.
+
+59
+00:11:36,884 --> 00:11:45,884
+Hani YouTube'da falan çoğunuzu yapıyorsunuz, başımıza gelmişti, bir şey izliyorsun, sağ tarafta gelen şey, bakıyorsun o da ilgini çekiyor.
+
+60
+00:11:45,884 --> 00:11:47,884
+Çünkü toplumun öyle bir eğilimi var.
+
+61
+00:11:48,884 --> 00:11:53,884
+Eğer elinizde böyle yeterince veri varsa, buradan güzel şeyler çıkabiliyor arkadaşlar.
+
+62
+00:12:01,395 --> 00:12:06,395
+Acaba en çok birlikte satılan ürün ikililerini nasıl bulacağız?
+
+63
+00:12:08,395 --> 00:12:11,395
+Ne yapabiliriz? Kodunu yazacağız birazdan.
+
+64
+00:12:14,395 --> 00:12:17,395
+Şu matriz işimize yarar mı? Acaba...
+
+65
+00:12:24,947 --> 00:12:29,347
+Yaramıyorsa ne yapabiliriz? Tavsiyeniz, öneriniz nelerdir?
+
+66
+00:12:38,707 --> 00:12:56,307
+Bir düşünün bakalım, şu matristen ne yapabilirsek, sepet ID var. Burası 1, 1, 2, 2, hangi sepette kullanıcıların yaptığı siparişler diyebilirsin. Sipariş ID'ler ve onların aldığı şeyler.
+
+67
+00:12:56,307 --> 00:13:05,908
+Burada bir nolu sepette 2 varmış, 3 varmış, 18 varmış. İki nolu sepette 789 varmış, 1 varmış. Daha bu böyle devam edip gidiyor.
+
+68
+00:13:06,292 --> 00:13:21,652
+En az bir tane ürün olacak her siparişte, yani bir tane de olabilir. Maksimum bir ürün olmak zorunda değil [öğrenci]. Şöyle düşün, şimdi buraya biz ürün ID'leri tek bir tane yazabildiğimiz için mesela bu birinci sepette üç tane ürün var.
+
+69
+00:13:21,652 --> 00:13:33,652
+Yok, bir taneden fazla yazma imkanımız yok. Araya virgül falan da koyamayız. Sonuçta bu bir matris, integer matrisi. Hani o şekilde düşünüyor olman normal.
+
+70
+00:13:33,744 --> 00:13:48,744
+Ama ne var? Bu bir yapısal bir veri. Hani C'deki matris gibi düşün. Bunu ne yapmamız lazım? Mecburen sepet ID'ye karşılık gelen birden fazla ürün varsa her bir satıra bu ürünleri tek tek böyle kodlamak gerekiyor.
+
+71
+00:13:52,371 --> 00:13:55,371
+Evet, düşünün bakalım nasıl bir yol bulabiliriz.
+
+72
+00:14:01,812 --> 00:14:21,812
+Eğer sepetlerin içeriklerini karşılaştırıp aynı olan var mı diye bakabiliriz. Sonrasında en çok aynı olanın kaç defa aynı olduğunu bir yerde tutarız. Eğer daha fazla aynılık oranı olan bir değişken varsa onu en çok olana kaydederiz. En çok satınlanırlar.
+
+73
+00:14:21,812 --> 00:14:27,563
+Bir saniye, hemen şey yapacağım. Şunu şey yapalım.
+
+74
+00:14:27,604 --> 00:14:31,804
+Şimdi bunu algoritmik olarak yapmak için elimizde şöyle bir matris var.
+
+75
+00:14:32,804 --> 00:14:40,403
+Sepet diyelim buna. Bu matris, max kadar satırı var. İki tane de sütunu var.
+
+76
+00:14:40,403 --> 00:14:44,403
+Şimdi bunun içini dolduracağız. Şu an şey görmüyorsunuz.
+
+77
+00:14:44,403 --> 00:14:53,403
+Şimdi [öğrenci], bunun üzerinde nasıl bir şey yapacağız? Döngü olarak veya nasıl bir kodu yazabiliriz?
+
+78
+00:14:53,683 --> 00:14:55,923
+söylediğimi ifade ediyorsan.
+
+79
+00:15:00,019 --> 00:15:03,019
+Satış miktarından kastın ne [öğrenci]?
+
+80
+00:15:07,187 --> 00:15:12,788
+Yani birinci ürün, bir nol ürün kaç tane satıldı? İyi mi? Soruyorsun.
+
+81
+00:15:16,596 --> 00:15:32,596
+Yok, burada bu problemde öyle bir bilgi yok. Yani problemin esası buna dayalı değil. İnsanların yaptıkları siparişler var. Almış mı, almamış mı? Yani üç tane almış, beş tane almış bu bizim için önemli değil. Birinci siparişte o ürün var mı, yok mu?
+
+82
+00:15:32,596 --> 00:15:41,596
+İşte ikinci siparişte alınan şeyler, yani ikinci sepette veya siparişte diyebiliriz.
+
+83
+00:15:41,683 --> 00:15:59,923
+Bir marketin günlük veya yıllık analizi deyin buna. Burada üçüncü sepet, dördüncü sepet, şu 1, 2, 3, 4 olan sepet ID kısımları tekrar ediyorsa, birden fazla bulunuyorsa bilin ki orada birden fazla ürün var.
+
+84
+00:15:59,923 --> 00:16:01,443
+Bakın bu 1, 1, 1.
+
+85
+00:16:01,875 --> 00:16:21,375
+2-3-18 diyor işte. Mesela şurada 27. sepet olsun, 27. sepette sadece 789. ürün olsun. Tek bir ürün almış, başka bir ürün yok. Böyle düşüneceğiz. Ali şimdi söyler misin? Her bir ürün için dedin.
+
+86
+00:16:21,375 --> 00:16:26,375
+Çok verimli olmayacak ama…
+
+87
+00:16:27,072 --> 00:16:44,072
+İlk sepetteki ilk ürünü ürüne bakıp, tüm sepetlerde bu ürünü arayıp, bu ürünün kaç defa eklendiğinde şey yapabiliriz ama bu seferde şeyi kaybediyoruz. İkinci eklenen ürün onunla birlikte mi eklendi?
+
+88
+00:16:44,072 --> 00:16:52,072
+Evet. Aynen. Yani oradan tek bir şu match üzerinde yani...
+
+89
+00:16:52,884 --> 00:17:17,884
+Matris'in şu bilgisine, işte i inci satırındaki bilgi nedir? i inci sepettir. Onun j'si de i inci sepetteki j inci üründür. Ben i'yi değişken tutup j'yi sabit tutarım demek istedin, anladığım kadarıyla. Sonra diğer sepetlere bakarım. Bu diğer sepetler üzerinde aynı üründen acaba varsa bunları sayarım dedin.
+
+90
+00:17:18,420 --> 00:17:23,420
+Ama bu seferde ne oldu? J'ler değişebilir. Yani başka başka J'ler olabilir.
+
+91
+00:17:23,420 --> 00:17:38,420
+Yani her bir ürünü saymak o açıdan bu şeyde biraz zor. Şimdi şunu şey olarak, hani şuraya bir test verisi yapalım. Initialization olsun. Mesela şuraya bir max yazayım.
+
+92
+00:17:40,420 --> 00:17:44,875
+Define max mesela 10 diyelim.
+
+93
+00:17:46,259 --> 00:17:50,259
+Şu an için 10 yeterli olur mu? Herhalde olur.
+
+94
+00:17:52,259 --> 00:17:59,259
+Mesela şuraya bir başlangıç değeri olarak şöyle bir şey yazsak.
+
+95
+00:17:59,259 --> 00:18:02,259
+İşte birinci sepette ikinci ürün olsun.
+
+96
+00:18:04,259 --> 00:18:06,251
+Ondan sonra...
+
+97
+00:18:10,355 --> 00:18:12,855
+İkinci sepet de birinci ürün olsun.
+
+98
+00:18:17,428 --> 00:18:29,728
+Bunu da yazmak biraz böyle bu şekilde yani şey tablo formatında yazayım ki diyorum. Anlaşılırdığını yüksek tutmak istiyorum şurada. İkinci sepette dördüncü ürün olsun.
+
+99
+00:18:35,028 --> 00:18:49,028
+Ondan sonra ikinci sepette ikinci ürün olsun. Hani sıralı olmak zorunda da değil. Ürünler veya sepetler de sıralı olmak zorunda değil. Yani burada karışık, sıralı olmasını gerektiren bir durum da yok çünkü.
+
+100
+00:18:49,028 --> 00:19:01,028
+Birinci sepette hatta şuraya bir dördüncü ürün ekleyelim. Sonra diyelim ki üçüncü sepet olsun. Üçüncü ürün olsun. Üçüncü ol ürün.
+
+101
+00:19:02,644 --> 00:19:13,644
+Ondan sonra bir tane daha bir şey ekleyelim. Beşinci sepette birinci ürün olsun. Beşinci sepette...
+
+102
+00:19:18,900 --> 00:19:20,900
+İkinci ürün olsun.
+
+103
+00:19:21,900 --> 00:19:26,900
+Şimdi burada gözle bakınca en çok satılan ikili hangisi?
+
+104
+00:19:28,900 --> 00:19:32,900
+Bir bakın bakalım. En çok ikili birlikte satılan ikili.
+
+105
+00:19:43,796 --> 00:19:46,796
+Önce bir gözle kontrol edin bakalım ne oluyor.
+
+106
+00:19:50,096 --> 00:19:52,096
+Bir ses geldi geri gitti [öğrenci].
+
+107
+00:19:52,796 --> 00:19:54,296
+Sanırsam 2-4.
+
+108
+00:19:54,796 --> 00:20:09,796
+Birinci sepette 2 ve 4 bir arada bulunmuş. İkinci sepette de 2 ve 4 bir arada bulunmuş. Üçüncü sepette, şey beşinci sepette 2 ile bir arada bulunmuş. Üçüncü sepette sadece şey var.
+
+109
+00:20:10,067 --> 00:20:22,367
+Şu ana kadar ki nesneler saydığımızda 2 ve 4'ün yani şu 2 no'lu ürünün ve 4 no'lu ürünün hem 1. sepette hem 2. sepette en fazla tekrar ettiğini görüyoruz.
+
+110
+00:20:22,367 --> 00:20:30,067
+O açıdan hani 2 ve 4 diyebiliriz. Peki bunu yaparken, gözle kontrol ederken [öğrenci] nasıl kontrol ettin?
+
+111
+00:20:30,067 --> 00:20:36,067
+2. sepette, şöyle başladım.
+
+112
+00:20:36,339 --> 00:20:44,339
+Sıralı olanların içerisinde aynı olanlar var mı diye baktım da burada bir sıralı değil, o birazcık şey oldu, tepet numaraları sıralı değil.
+
+113
+00:20:44,339 --> 00:20:47,339
+Ha, arada atlama yaptın mecburen. Tamam.
+
+114
+00:20:47,339 --> 00:20:49,339
+Evet, şey...
+
+115
+00:20:49,339 --> 00:20:51,339
+Tamam, sıkıntı değil.
+
+116
+00:20:51,339 --> 00:20:58,339
+Bir tepette birlikte alınan ürünlere baktım, yani, yok diyemedim hocam, maalesef.
+
+117
+00:20:58,339 --> 00:20:59,243
+Tamam.
+
+118
+00:21:00,019 --> 00:21:10,420
+Şimdi n eşittir 8 tane burada satırımız var. Yani 8 tane satır demek 8 tane bilgi var diyelim.
+
+119
+00:21:10,420 --> 00:21:24,420
+Şimdi arkadaşlar, ürün sayımız da ne olsun? Ürünlerimizin kodları sıfırdan başlasın hatta n'e kadar.
+
+120
+00:21:26,132 --> 00:21:33,132
+Şu an için mesela bizim burada ürün sayımız 1 var, 2 var, 3 var, 4 var. Ürün sayısını da 5 diyebiliriz.
+
+121
+00:21:36,132 --> 00:21:41,132
+Eşittir 5 olsun. Bir de bize sepet sayısı bilgisi lazım.
+
+122
+00:21:45,076 --> 00:21:51,076
+Şu an 1 nolu sepet var, 2 nolu sepet var, 3 nolu sepet var, 4 nolu sepet yok mesela.
+
+123
+00:21:51,076 --> 00:21:57,076
+Gerçi şuraya 4 nolu sepet yazabiliriz, bu hiçbir şeyi değiştirmez çünkü sipariş numarası.
+
+124
+00:21:57,076 --> 00:22:06,076
+0 nolu sepeti de yazmayalım diyelim ama yazalım hadi 4'e kadar olsun veya ona da 5 diyelim, problem değil bu.
+
+125
+00:22:06,076 --> 00:22:12,812
+Şimdi bizim şu matristen ürün ikillerini bir algoritmayla çıkartmamız mümkün değil.
+
+126
+00:22:13,203 --> 00:22:20,203
+Yani normal bir algoritma yani bu maddesin içerisinde kaybolur kodunuz. Onun için şöyle bir şey yapacağız.
+
+127
+00:22:22,203 --> 00:22:27,203
+Hangi ürünün hangi sepette olduğunu gösteren bir forma çevireceğiz.
+
+128
+00:22:29,203 --> 00:22:38,203
+Tamam mı? Hangi ürün hangi sepette? Bu, şöyle dersek yani şunu şöyle hatta kopyalayalım.
+
+129
+00:22:40,307 --> 00:22:44,307
+Bunun ismine A matrisi diyeceğim.
+
+130
+00:22:46,307 --> 00:22:48,307
+Bu bize şunu söyleyecek arkadaşlar.
+
+131
+00:22:50,307 --> 00:22:56,307
+Ürünlerim, birinci ürün, ikinci ürün, ürün en tane ürünüm var. Yani ürün en kadar.
+
+132
+00:22:57,307 --> 00:23:02,307
+Bakın bunların hepsi şey, yani bir ürün kategori ismi, öyle düşünün.
+
+133
+00:23:03,443 --> 00:23:13,603
+Yani ne bileyim şu kalem, şu patates, öbürü ne bileyim işte selpak, mendil gibi şeyler, öyle düşünün. Onlara karşılık geliyor.
+
+134
+00:23:13,603 --> 00:23:23,563
+Şimdi bu ürün birinci sepette var mı, yok mu? İkinci sepette var mı, yok mu? Üçüncü sepette var mı, yok mu? Dördüncü sepette var mı, yok mu? Eninci sepette var mı, yok mu?
+
+135
+00:23:23,563 --> 00:23:29,603
+Varlık veya yokluğunu gösteren şu forma dönüştürmem gerekiyor. Tamam mı?
+
+136
+00:23:30,579 --> 00:23:38,079
+O zaman, şu matrise, sepet matrisleri, bundan bunu elde etmemiz lazım kod içerisinde.
+
+137
+00:23:39,880 --> 00:23:47,380
+Peki, bu matrisin boyutu ne olacak? Ürün sayısına ürün sayısı değişkeni demiştik, o kadar bir değişken.
+
+138
+00:23:47,380 --> 00:23:51,380
+Sepet sayısına da sepet sayısı değişkeni demiştik, o kadar bir değişken.
+
+139
+00:23:57,428 --> 00:24:24,928
+S'lik bir matriz, yeni bir matriz oluşturmam gerekiyor. Şimdi bunu da max çarpı max kadar oluşturalım. Daha sonra hani gerektiği kadarını kullanabiliriz. Buna ne dedik? A matrizi dedik. Bu A matrizi max çarpı max'lık kadar yer açalım. Bunun hepsini kullanmayacağız.
+
+140
+00:24:25,428 --> 00:24:29,428
+O zaman şimdi bir de döngü değişkenlerimizi yazayım.
+
+141
+00:24:31,428 --> 00:24:43,428
+Yapacağımız şey şu şeyi, matrisi A matrisine dönüştürmek. Bunun birinci ekseni ürünleri gösterecek, ikinci eksende de sepetleri gösterecek.
+
+142
+00:24:43,428 --> 00:24:47,428
+Bir ürün herhangi bir sepette var mı yok mu bu bilgiyi alacağız.
+
+143
+00:24:47,428 --> 00:24:49,428
+Evet, burada ne yapabiliriz?
+
+144
+00:24:51,859 --> 00:25:06,979
+Şimdi ne yapacağız arkadaşlar? Şöyle bütün bu maddesi gezsek, desek ki yani şimdi bu maddesi mi gezmek lazım başka bir şey mi yapmak lazım ona baksak daha güzel aslında.
+
+145
+00:25:09,479 --> 00:25:16,479
+Nasıl bir yol, bu maddesi, şu maddesi, A maddesine biraz önce söylediğimiz maddesi nasıl çevirebiliriz?
+
+146
+00:25:19,347 --> 00:25:29,347
+Bir kere şunu da yapacağız, bu maddesin içi bir ve sıfırlarla dolu olacağı için biz birleri yazsak geri kalan sıfır olacak desek şöyle maddesi tamamen sıfırlayalım.
+
+147
+00:25:30,347 --> 00:25:37,347
+Hani içi sıfırlarla dolu olsun. Geri kalanları işte bazı yerleri bir yapacağız. Bunu nasıl yapabiliriz?
+
+148
+00:25:52,852 --> 00:26:06,252
+Şu bana ne diyor arkadaşlar? Ben şunu satır satır okusam, yani burada n tane satır var ya, bu bana ne diyor? Bir nolu sepette, iki nolu ürün var.
+
+149
+00:26:16,660 --> 00:26:20,660
+Birinci sütununu giderim bir yaparım demek değil mi? Yani şu.
+
+150
+00:26:20,660 --> 00:26:26,660
+Hocam, bu sefer şey, ürün ID'lerinin tam tutması gerekiyor.
+
+151
+00:26:26,660 --> 00:26:30,660
+Neden? Yani şu an tam tutacak şekilde ayarlı.
+
+152
+00:26:30,660 --> 00:26:35,660
+Evet, şu anda tam tutacak şekilde ayarlı da şey, ilk başta slide'daki örnekten dolayı ben buna...
+
+153
+00:26:35,660 --> 00:26:37,660
+789'a mı takıldın?
+
+154
+00:26:37,660 --> 00:26:38,660
+Evet.
+
+155
+00:26:38,660 --> 00:26:42,660
+Yani 789 mühim değil, yani şurayı 10.000'de istersen, problem değil.
+
+156
+00:26:43,476 --> 00:26:49,876
+Bu algoritmanın en basit hali, daha verimli hali başka yerlerde anlatılıyor. Sen ona takılma.
+
+157
+00:26:51,676 --> 00:26:58,316
+Tamam mı? Şimdi ben desem ki şu şeyi satır satır incelesem şu madresi.
+
+158
+00:26:59,096 --> 00:27:03,276
+Yani burada kaç tane verim var?
+
+159
+00:27:04,476 --> 00:27:11,376
+En eşittir 8 tane verim var. O zaman diyeceğim ki birinci satır, ikinci satır, üçüncü satır, dördüncü satır, sekizinci satıra kadar gideceğim.
+
+160
+00:27:11,604 --> 00:27:37,604
+Sonra diyeceğim ki bakacağım, iki nolu ürün, bir nolu sepette varmış. O zaman şu A matrisinin ikinci sütununun birinci satırını veya birinci satırının ikinci sütununun, pardon ikinci satırının birinci sütununun. Çünkü iki nolu ürün, bir nolu sepette. Tersten düşüneceğiz matrisin eksenlerini. Ne yapacağım? Bir yapacağım. O zaman yazalım. For, i eşittir, sıfır.
+
+161
+00:27:38,163 --> 00:28:04,811
+İ küçüktür. N, neden N? Çünkü her bir satırını gezmem lazım. İ art art. Sonra geldik. Şimdi A'nın bir şeyinin bir şeyi. Şimdi bu bir şeyin bir şeyi nereden gelecek? Ne olacak? Bir olacak. Şu bir şey bana nereden geliyor? Bakın şuradaki ikiyi, şuradaki biri, şuradaki dördü alacağım. Yani A'nın...
+
+162
+00:28:06,195 --> 00:28:25,195
+A'nın sepetinin nesidir arkadaşlar? İ incisinin ikincisidir değil mi? Bu bana ürün bilgisini veriyor zaten. İkin oğlu ürün. İşte bakın buradan ikin oğlu ürün bilgisi gelir.
+
+163
+00:28:34,612 --> 00:28:50,012
+Pardon, 2 diyemeyiz, şuraya 1 diyeceğiz. Çünkü C'de 0 dersek, şuradan 2 bilgisi geldi. 2 nolu ürün, buradan 2 buraya düşecek. Şuradan da 1 buraya düşecek.
+
+164
+00:28:50,012 --> 00:28:59,012
+Sonrakinde işte 1 buraya düşecek, sonrakinde 2 buraya düşecek. Bu şekilde A matrişinin ilgili yerlerini 1 ile dolduracağız. Burada anlaşılmayan bir şey var mı?
+
+165
+00:29:00,723 --> 00:29:02,263
+Hatta bunu ekrana yazdıralım.
+
+166
+00:29:02,364 --> 00:29:02,644
+For.
+
+167
+00:29:04,483 --> 00:29:05,963
+İki eşittir. Sıfır. İki.
+
+168
+00:29:06,104 --> 00:29:06,543
+Küçüktür.
+
+169
+00:29:09,604 --> 00:29:12,104
+Kaç diyeceğiz. Burada şimdi ürün sayısına
+
+170
+00:29:12,104 --> 00:29:14,283
+göre gidiyoruz. O zaman ürün sayısı
+
+171
+00:29:14,283 --> 00:29:14,763
+olacak.
+
+172
+00:29:16,763 --> 00:29:18,023
+Tamam. Tekrar anlatalım.
+
+173
+00:29:24,692 --> 00:29:26,692
+Hemen şu şeyi yazayım.
+
+174
+00:29:27,692 --> 00:29:32,692
+G eşittir sıfır, G eşittir sepet sayısı.
+
+175
+00:29:52,660 --> 00:29:54,660
+I'sinin J'si
+
+176
+00:30:12,756 --> 00:30:27,516
+Elimizde sepetin ID numarası var. Mesela birimiz gitti, alışveriş yaptı, bu ben. Sadece ikiyi aldım, bir de dördü aldım. Bu bilgiler burada var. İşte bir başkası gitti, şunları şunları aldı.
+
+177
+00:30:27,516 --> 00:30:35,996
+Buradan problemi çözebilmek mümkün olmadığı için diyoruz ki, şurada söylediğimiz gibi, hangi ürün...
+
+178
+00:30:36,211 --> 00:31:00,652
+Birden en tane ürün var, ürün en tane ürünümüz var. Hangi sepette bulunmuş şu madresi, şuradaki madresimizi buraya çevireceğiz. Bir kere bunu anladık herhalde değil mi? Burada sıkıntı yok. Bu madresi buna dönüştüreceğiz. Tamam mı? Şimdi o zaman derim ki ben...
+
+179
+00:31:02,548 --> 00:31:12,867
+Şöyle boş içi sıfırlarla dolu bir maddis oluşturuyorum. Bu maddisin şu kısmında ürünleri tutuyorum. Şurada da sepetleri tutuyorum.
+
+180
+00:31:13,867 --> 00:31:19,667
+Şimdi şuraya baktığımda bu bana ne diyor? İkin oğlu ürün. İkin oğlu ürün nedir? İkinci satırdadır şurada.
+
+181
+00:31:20,667 --> 00:31:25,268
+Hangi sepette bulunmuş? Bir noğlu sepette bulunmuş. O zaman diyorum ki git şurayı bir yap.
+
+182
+00:31:26,227 --> 00:31:28,347
+İkinci satırını okuyorum. Bir noğlu ürün.
+
+183
+00:31:30,900 --> 00:31:56,820
+Hangi sepette bulunmuş? İki nolu sepette. Git şurayı bir yap. İki nolu ürün, yine şeydeyiz, pardon. 789 nolu ürün, şurada. Nerede bulunmuş? İki nolu sepette. Gittik burayı bir yaptık. Bu maddesi böyle birlerle sıfırlarla dolduruyoruz. Burada kaç tane satır varsa o kadar satır.
+
+184
+00:31:57,523 --> 00:31:59,523
+Bu matrizi gezmek gerekiyor.
+
+185
+00:32:01,523 --> 00:32:03,523
+Tamam, anlaşıldı herhalde.
+
+186
+00:32:04,523 --> 00:32:08,523
+Basit, şöyle, en karmaşıklıklı bir algoritma oldu.
+
+187
+00:32:09,523 --> 00:32:15,307
+Şimdi, peki bu matristen, şimdi ekrana çizdirelim.
+
+188
+00:32:23,731 --> 00:32:25,731
+Sepet varınızı girelim.
+
+189
+00:32:30,548 --> 00:32:31,500
+Çile.
+
+190
+00:32:34,771 --> 00:32:41,971
+Veya ikili sepep ömrülü diyebiliriz. Ne varmış şimdi şuradaki hatalarımızı bir bulalım.
+
+191
+00:32:46,259 --> 00:32:49,460
+Bir yerde noktalı virgül eksik diyor.
+
+192
+00:32:52,884 --> 00:32:53,884
+Allahumma.
+
+193
+00:32:58,195 --> 00:33:01,195
+Hocam, sanırım son elemanın sonuna da...
+
+194
+00:33:01,195 --> 00:33:04,195
+Ha, şurada bir virgül olmayacak, evet.
+
+195
+00:33:06,195 --> 00:33:08,011
+Peki, burada ne var?
+
+196
+00:33:15,220 --> 00:33:18,220
+Sepet max'a eşittir koyacaksınız.
+
+197
+00:33:19,720 --> 00:33:21,220
+Nerede?
+
+198
+00:33:25,299 --> 00:33:36,299
+Şuraya mı? Ha şuraya eşittir koyacağız, evet. Eşittir olmadan olmaz. J'yi sıfırdan başlatacağız.
+
+199
+00:33:38,299 --> 00:33:52,912
+Tamam. Evet, şimdi mesela şuraya göre baktığımızda, birinci ürün nerede varmış? İkinci sepette varmış, dördüncü sepette varmış. Ondan sonra ikinci ürün...
+
+200
+00:33:52,912 --> 00:34:11,412
+Şöyle bakarsak, ikinci ürün, birinci sepette, ikinci sepette var, üçüncü ürün, üçüncü sepette, ondan sonra birinci, pardon dördüncü ürün, birinci ve ikinci sepette var. Bu bize bu bilgiyi verdi.
+
+201
+00:34:11,412 --> 00:34:16,412
+Peki, şimdi, acaba istediğimiz şeyi...
+
+202
+00:34:17,972 --> 00:34:23,252
+En çok birlikte satılan ürün ikillerini bu matristen elde edebilir miyiz?
+
+203
+00:34:25,812 --> 00:34:28,372
+Elde etmek istesek nasıl bir şey yapabiliriz?
+
+204
+00:34:43,092 --> 00:34:51,432
+Toplam en fazla bire sahip iki tane en büyük ürünü alabiliriz sanırım.
+
+205
+00:34:51,432 --> 00:34:54,432
+En büyük üründen kastımız ne olacak?
+
+206
+00:34:54,432 --> 00:35:03,252
+Kendi satırında kaç tane biri varsa o ürün için bir arttırabiliriz.
+
+207
+00:35:03,252 --> 00:35:09,752
+Ama şöyle düşüneceksin, şimdi birinci ürün, şurayı sayıyorsun herhalde bu satırı.
+
+208
+00:35:10,452 --> 00:35:15,452
+8 tane sepette bulunmuş. Onu mu diyorsun sen? Evet.
+
+209
+00:35:15,452 --> 00:35:27,452
+Ama şimdi orada şöyle düşün. Şimdi burada 8 tane sepette bulundu. İkinci ürün de 8 sepette bulundu. Ama hepsinin aynı olduğunu garanti edemeyiz. Aynı sepette olmaları gerekiyor.
+
+210
+00:35:27,452 --> 00:35:30,452
+Doğru. Birlikte satılacağı için.
+
+211
+00:35:33,235 --> 00:35:39,556
+Onun için neye bakacağız? Hani dediğin doğru ama bir de aynı sepette midir ona bakacağız.
+
+212
+00:35:46,900 --> 00:36:10,900
+Birinci ürün, birinci sepette yok, ikinci sepette var. Acaba ikinci sepette başka hangi ürünler var mı? Bunları saymamız gerekiyor. İkinci sepette iki nolu ürün yok, üç nolu ürün varsa bir tane var. Üç nolu üründen başka dört nolu ürün var mı, beş nolu ürün var mı? Bunları bir saymamız gerekiyor. Sonra üçüncü sepette hangi ürünler var?
+
+213
+00:36:14,483 --> 00:36:23,483
+Dolayısıyla bakın bu maddes de çok işe yaramayacak gibi arkadaşlar. Buradan bir şey türetmemiz gerekiyor. Yeterli olmadı.
+
+214
+00:36:33,300 --> 00:36:34,892
+Var mı başka yorum olan?
+
+215
+00:36:39,731 --> 00:36:48,231
+O zaman şunu yapacağız. Hangi ürünün hangi ürünle birlikte kaç kez satıldığını gösteren bir matrise ihtiyacımız var?
+
+216
+00:36:50,632 --> 00:36:58,931
+Burada hani iş biraz daha hani yani bilgiyi elde etmek bakın ilk matristen mümkün değil, ikinci matristen de mümkün olmadı.
+
+217
+00:36:59,632 --> 00:37:03,132
+Diyoruz ki bir T matrisimiz olsun.
+
+218
+00:37:05,032 --> 00:37:06,132
+Hangi ürün
+
+219
+00:37:06,335 --> 00:37:11,335
+Hangi ürünle birlikte, aynı sepette kaç kez satılmış?
+
+220
+00:37:12,335 --> 00:37:15,335
+Şu A maddesini gezeceğiz.
+
+221
+00:37:15,335 --> 00:37:22,335
+Bunu gezerken, diyeceğiz ki bir nolu ürün, bir nolu sepette var mı? Var. O zaman bir tane ekle.
+
+222
+00:37:23,335 --> 00:37:28,335
+Şimdi bir nolu ürün, bir nolu ürünle birlikte satılacak. Bakın bunun diagonali 0 gidecek.
+
+223
+00:37:28,335 --> 00:37:34,059
+Bir nolu ürün, iki nolu ürünle aynı sepette, sepetlerin içine hepsine bakacağız.
+
+224
+00:37:34,516 --> 00:37:36,516
+12 defa bulunmuş.
+
+225
+00:37:36,516 --> 00:37:45,516
+2 nolu ürün, 1 nolu ürünle, aslında şurada bir mantıksızlık var, 23 defa bulunmuş olmaz, hani şurayı yazmayalım.
+
+226
+00:37:45,516 --> 00:37:57,516
+1 nolun 2 nolu ürünle, 1 nolu ürün, işte 3 nolu ürünle kaç tane, bu maddesi dolduracağız. A maddesinden bunu elde edeceğiz.
+
+227
+00:37:57,516 --> 00:38:00,268
+Yazalım.
+
+228
+00:38:01,300 --> 00:38:25,060
+A maddesinden bu bilgi, işte bir T maddesi oluşturacağım yine. Onu da şu şekilde oluşturayım. Toplam bilgi şey var. Bu da ürün sayısı çarpı ürün sayısı kadar bir maddesi olacak. Çünkü artık ürün ürün üzerinden gideceğiz. O zaman şöyle şey yapayım bir tane.
+
+229
+00:38:28,596 --> 00:38:47,956
+Alalım döngüleri. Şimdi, i-inci üründen başlarım, ürün sayısı kadar arama yapacağım. Şimdi, i-inci ürünle, yani sıfırıncı ürünle, birinci ürünü, ikiyi, üçü, dördü, beşi ne yapmam gerekiyor? Kontrol etmem gerekiyor.
+
+230
+00:38:48,628 --> 00:38:55,568
+Sonra 0. ürünle her şeyi kontrol ettim, bundan sonra 1. ürünle 0. ürünü kontrol etmeme gerek yok.
+
+231
+00:38:55,568 --> 00:38:59,568
+1 ile kendinden sonraki 2-3-4'ü kontrol etmeme gerek yok.
+
+232
+00:38:59,568 --> 00:39:04,088
+Dolayısıyla şuradan yapacağım şey arkadaşlar, bunu i artı 1'den başlatmak olur.
+
+233
+00:39:04,088 --> 00:39:10,088
+Anlatabildim mi? Bütün aynı şeylere tekrar tekrar bakmaya gerek yok.
+
+234
+00:39:10,088 --> 00:39:15,927
+0. ürünle 1-2-3-4-5, 1. ürünle 2-3-4-5, 2. ürünle 3-4-5.
+
+235
+00:39:16,179 --> 00:39:37,179
+Bakmam gerekiyor. Tabi şu değişkenimiz ne olacak? Ürün sayısı olacak. Şimdi yapacağımız şey ne olacak burada? Şöyle en genel basit haliyle yazalım. Eğer A matrisinin, hatta şöyle yazayım A matrisinin, bir de burada sepetleri gezmem gerekiyor. Şimdi onu yazmadık.
+
+236
+00:39:37,556 --> 00:39:46,056
+For diyelim. Şimdi sepetleri gezmek için ne yapacağız? Şimdi ürünlere bakıyoruz. Ürünler hangi sepetlerde birlikte? O zaman burada yeni bir döngüye ihtiyacımız var.
+
+237
+00:39:46,056 --> 00:39:51,256
+K eşittir sıfırıncı sepetten, K küçüktür sepet sayısına kadar.
+
+238
+00:39:55,256 --> 00:39:58,056
+Bakmam gerekiyor. Bunu da unutmamam gerekiyor.
+
+239
+00:39:58,056 --> 00:40:00,000
+Şimdi yapacağımız şey şu.
+
+240
+00:40:03,123 --> 00:40:27,884
+İ inci ürün, K'ıncı sepette var mı? Yani A'nın İ'sinin K'sı eşittir eşittir bir mi? Aynı zamanda J inci ürün, K'ıncı sepette var mı? Bu ne demek? Bu iki ürün aynı sepette, yani İ inci ürün ve J inci ürün aynı sepette birlikte bulunmuşlar demektir.
+
+241
+00:40:28,403 --> 00:40:40,903
+Sepetler değiştikçe ve ürünler değiştikçe, şuradaki döngü değişkendiriyle, ben ne yapmış olacağım arkadaşlar? Bütün birlikte satılan ürünlerin sayılarını bulacağım. Nasıl bulacağım?
+
+242
+00:40:40,903 --> 00:40:54,668
+H'nin, İ'sinin, J'sini, İ inci ve J inci ürünün birlikteliğine bakıyoruz burada. Artı eşitleri 1 yaparım. 1 arttırırım. Sıfırdan başlamıştık.
+
+243
+00:40:54,931 --> 00:40:56,931
+Bu şekilde olayı çözeriz.
+
+244
+00:40:56,931 --> 00:41:00,459
+Şimdi şurayı alacağım.
+
+245
+00:41:04,788 --> 00:41:11,788
+Şuna gerek yok. Şunu şurada ekrana bastıralım. Şu ürün sayısı olacak.
+
+246
+00:41:15,092 --> 00:41:18,092
+Bu sefer ürün sayısı ürün sayısı kadar.
+
+247
+00:41:19,491 --> 00:41:23,092
+T'nin iyisini, C'sini yazdım. Bakın, burayı anladık mı?
+
+248
+00:41:23,592 --> 00:41:31,092
+1 ile 0. ürünle 1, 2, 3, 4, 5'e bakacağım. Bu 1, 2, 3, 4, 5 ne olacak?
+
+249
+00:41:32,148 --> 00:41:48,788
+Hangi sepetlerde birlikte bulunmuş? K artı artı olacak. Hangi sepetlerde birlikte bulunmuş? Eğer i inci ürün k inci sepette ise ve aynı zamanda j inci ürün k inci sepette ise o zaman i ve j bir defa birlikte satılmışlar demektir.
+
+250
+00:41:48,788 --> 00:41:58,228
+Bütün bu maddesi gezince, a maddesini gezince ama nasıl geziyoruz? Bakın şöyle geziyoruz. A maddesini şöyle kabul edersek.
+
+251
+00:42:00,563 --> 00:42:08,243
+Gezinti işlemini şöyle yapıyoruz. İşte böyle yaptık, sonra şuna baktık, sonra buna baktık, sonra buna baktık.
+
+252
+00:42:08,788 --> 00:42:14,168
+Şöyle geziyoruz dikkat edersin. Yani 1 ile kendinden sonrakiler, 2 ile kendinden sonrakiler.
+
+253
+00:42:14,168 --> 00:42:19,407
+Normal şöyle gezecek tam gezme ne demek? Tam gezme işte hepsine böyle böyle bakmak demek.
+
+254
+00:42:19,407 --> 00:42:28,788
+Ama zaten 1 ile 2'yi bir defa hesaplayınca 2 ile 1'i tekrardan hesaplamama gerek. Onun için şu kısma bakmak veya tam tersinden bakmak yeterli olur.
+
+255
+00:42:30,788 --> 00:42:34,788
+Şu yazdığımız kodun mantığı anlaşıldı mı? Var mı burada bir sorunumuz?
+
+256
+00:42:41,748 --> 00:42:48,467
+Peki, şurada göreceğimiz şeye bakalım. T maddesinin yazımına bir bakalım.
+
+257
+00:42:51,795 --> 00:42:54,795
+K'yı tanımlamamışız, şuraya da K tanımlayalım.
+
+258
+00:42:57,295 --> 00:43:00,748
+Chat'te bir şey var, K++ onu değiştirelim.
+
+259
+00:43:05,556 --> 00:43:07,556
+Araya da şöyle bir şey ekleyelim arkadaşlar.
+
+260
+00:43:17,876 --> 00:43:40,876
+Evet, bu bize neyi söylüyor? Birinci ürün, ikinci ürünle birlikte iki defa satılmış. İkinci ürün, dördüncü ürünle birlikte iki defa satılmış. İkinci ürün, ondan sonra birinci ürün, dördüncü ürünle birlikte bir defa satılmış.
+
+261
+00:43:42,876 --> 00:43:43,876
+Diyoruz.
+
+262
+00:43:46,036 --> 00:43:47,916
+Anlamadım [öğrenci], ne yazdın?
+
+263
+00:43:51,155 --> 00:44:03,155
+Evet, yani bu şekilde üçgensel bir maddes oluyor. Çünkü birinci ürün ikinci ürünle satılmışsa, bunu ikinci ürün birinci ürünle satılmıştır. Yani sonuçta birlik dereye bakıyoruz. Karşılıklı bir şey.
+
+264
+00:44:03,155 --> 00:44:15,155
+Sadece şu üst tarafa bakmak veya tam tersinden alt tarafa da artık nasıl modellersin, o şekilde bakmak yeterli. Bakın üçüncü ürün bir sepette bulundu ama bir başka ürünle birlikte...
+
+265
+00:44:15,603 --> 00:44:42,603
+Bir yerde bulunmadığı için bunun hiçbir şekilde bir başkasıyla satılışı yok. Birlikteliği olanlara bakıyoruz. Şimdi ben bu maddesin en büyük değerini bulursam, maddesin içerisindeki en büyük değere bakarsam, en büyük değer mesela hani şu an 3 olduğunu kabul edelim. En büyük değerin olduğu satır ve sütün indisleri bana neyi verir? En çok birlikte satılan...
+
+266
+00:44:43,284 --> 00:45:03,115
+ürünü verir değil mi? Tabi burada şu an iki tane var. O zaman şurayı biraz şöyle değiştirelim. Mesela bir ile iki diyelim, iki ile bir diyelim, iki ile dört diyelim. Mesela üçüncü sepetle de iki bulunsun. Ne olacak? Bir dakika, niye böyle oldu?
+
+267
+00:45:07,635 --> 00:45:10,635
+İki ne olurun, iki ne olurun.
+
+268
+00:45:12,135 --> 00:45:16,635
+Tabii üçüncü sepete bir de dört ekleyeceğiz. Yani yeterli değil.
+
+269
+00:45:17,635 --> 00:45:20,635
+Mesela diyelim, şunu da üçe dört ekleyelim.
+
+270
+00:45:25,876 --> 00:45:29,876
+Allah Allah, burada niye kodu derlemiyor?
+
+271
+00:45:36,436 --> 00:45:56,436
+Şurada niye böyle bir şey oldu? 3. sepette 4 var, 3. sepette 2 var, 4. sepette 1 var, 4. sepette... Hayır, şunları 2 değil de... 1 ve... Pardon. Şunu 1 desek...
+
+272
+00:46:02,708 --> 00:46:14,708
+Şimdi oldu. Tamam. Ne yapıyoruz? Birinci ürünle, bu Max'in en büyük değerine baktığımızda ikinci ürünün en fazla birlikte satıldığını görüyoruz.
+
+273
+00:46:14,708 --> 00:46:26,708
+Baktığımızda şöyle, ürün kodu 1 olan ürün 2'de var, 3'de var, 4'de var, ondan sonra 2 olan ürün 1'de var.
+
+274
+00:46:27,572 --> 00:46:34,572
+Yine 3'te var, yine 4'te var diyebiliriz. Anlaşılmayan bir şey var mı burada?
+
+275
+00:46:34,572 --> 00:46:46,572
+Ha bu matriz, şu sepet dediğimiz matriz veya sepetler dediğimiz matriz çok çok büyük bir matriz. Bir sürü veriler var, belki milyonlarca veriler var.
+
+276
+00:46:46,572 --> 00:46:52,572
+Ama bu matrizi bakın şurada en defa dolaşarak buna çevirdik.
+
+277
+00:46:53,523 --> 00:47:08,644
+Ürün sayısı çarpı sepet sayısı çarpı ürün sayısının karesi çarpı sepet sayısı kadar gezerek, önce hangi ürünün hangi sepette bulunduğuna baktık.
+
+278
+00:47:08,644 --> 00:47:18,403
+Ondan sonra hangi ürün hangi ürünle birlikte kaç defa satılmış, aynı sepette kaç kez bulunmuş bunu bulduk.
+
+279
+00:47:18,804 --> 00:47:27,804
+En sonunda, şu matrizin, artık T matrizinin en büyük değerine bakarak, en büyük değerine bakmaya artık size geri kalan kısmı nedir?
+
+280
+00:47:27,804 --> 00:47:34,804
+Matrizin en büyük değerini buluyorsunuz, en büyük değerin geçtiği i'inci ve j'inci satırlara saklıyorsunuz.
+
+281
+00:47:34,804 --> 00:47:41,804
+Yani basit bir matriz içerisinde maksimum bulma sorusu, orayı size bırakıyorum, onu ayrıca yazmayacağım. Basit bir kod.
+
+282
+00:47:41,804 --> 00:47:44,715
+Buradan elde edebiliyoruz arkadaşlar.
+
+283
+00:47:45,427 --> 00:47:49,427
+Şimdi şurada bir iyileştirme yapabiliriz. Şu if'ten kurtulmak için ne yapabiliriz?
+
+284
+00:47:59,155 --> 00:48:01,155
+If'den kurtulmak istiyoruz.
+
+285
+00:48:04,155 --> 00:48:06,155
+If'den kurtulmak için while olmaz.
+
+286
+00:48:06,155 --> 00:48:08,155
+Yani while bir döngü…
+
+287
+00:48:08,155 --> 00:48:16,155
+Y, G, C ile A'nın I, K'sı ile A'nın C, K'sının çarpımını toplayabiliriz.
+
+288
+00:48:16,155 --> 00:48:23,155
+Aynen. Çünkü bunlar 1-1 olduğunda ancak şey olacak ya, bu V demek…
+
+289
+00:48:23,840 --> 00:48:47,299
+Bir anlamda kesişim demek. Şimdi desek ki, A'nın İ'sinin K'sıyla A'nın J'sinin K'sı ikisi de bir olunca, yani sonuç o zaman ancak bir olacaktır. Eğer ben bunları çarparsam, şununla aynı şey demektir. Bunları çarpacağım. Bu çarpımı nereye ekleyeceğim?
+
+290
+00:48:47,987 --> 00:49:10,987
+T'nin, i'sinin, j'sinin üstüne ekleyeceğim. Yine artı eşittir. Şu çarpım eğer birse ne yapacak? Burayı bir arttıracak. Eğer sıfırsa, sıfırsa ne demek? Ya şu sıfırdır, ya bu sıfırdır, ya ikisi birden sıfırdır. Bunun için şurada şu if ifadesi yerine...
+
+291
+00:49:12,947 --> 00:49:22,947
+İftten kurtulmak için while olmaz. While olursa şey yaparız. Onu bir döngüye çevirmek demektir. O zaman buradaki işler daha böyle şey olur.
+
+292
+00:49:22,947 --> 00:49:32,947
+İftin maliyetinden biraz daha az. Şu karşılaştırma, bir tane karşılaştırma, şurada bir daha karşılaştırma, şurada bir daha karşılaştırma, ne oldu? Üç.
+
+293
+00:49:32,947 --> 00:49:40,940
+Bir de burada arttırma, dört. Burada ne yaptık? Bir çarpma, bir de toplama. Yani dört işlemi iki işleme düşürdük.
+
+294
+00:49:41,268 --> 00:49:48,387
+Tekrar çalıştıralım, aynı sonucu görelim. Şurada bir yerde bir şey unuttuk muhtemelen.
+
+295
+00:49:55,860 --> 00:49:57,740
+Nereden yoğun tuşkine ya?
+
+296
+00:50:01,012 --> 00:50:03,932
+Yorum satırını aldıktan sonra mı oldu bu acaba?
+
+297
+00:50:03,932 --> 00:50:07,532
+Hocam, if-in kapama şeyi kaldı, süslü parantez.
+
+298
+00:50:07,532 --> 00:50:09,932
+Ha evet, doğru diyorsun.
+
+299
+00:50:09,932 --> 00:50:18,092
+Şunu, evet şunu o zaman şuraya alalım, kafa karıştırmasın.
+
+300
+00:50:22,356 --> 00:50:34,036
+Yine aynı sonucu elde edebiliyoruz. Bunun devamı size ait. Burada yapacağınız şey şu maddesin en büyüğünü bulup en büyüğe karşılık gelen i ve j satırlarını bulmak.
+
+301
+00:50:36,756 --> 00:50:40,836
+Peki, şimdi soruyu biraz daha ilerletelim.
+
+302
+00:50:42,836 --> 00:50:47,316
+Acaba en çok birlikte satılan ürün üçlülerini isteseydik?
+
+303
+00:50:49,331 --> 00:51:11,331
+Yani ikinci ürün, üçüncü ürün ve dördüncü ürün birlikte en çok satılmış. Burada düşüncemiz ne olabilir? Bunu bir düşünün. Şu an 48 geçiyor. Saat 10'a kadar vaktimiz olsun. Geldiğimizde bunun çözümünü düşünelim arkadaşlar. 12 dakika sonra görüşmek üzere.
+
+304
+00:51:11,331 --> 00:51:16,268
+Şöyle şöyle açayım daha diye şunu şu kadar söyleyelim. Geri kalanla neyelim?
+
+305
+00:51:16,371 --> 00:51:18,771
+Siz düşünün üzerinde yorum yapacağız.
+
+306
+01:02:58,228 --> 01:03:05,932
+Evet arkadaşlar, devam edelim. Evet var mı çözüm enerji olan?
+
+307
+01:03:09,076 --> 01:03:18,076
+Birinci maddesimiz S maddesiydi. Sonra A maddesini oluşturduk. Sonra T maddesi yaptık. Ürün ikilileri için.
+
+308
+01:03:18,076 --> 01:03:33,076
+En çok birlikte satılan soru olarak ürün üçlüleri nedir diye sorumuzu revize edersek.
+
+309
+01:03:33,972 --> 01:03:37,972
+Buradan neye, nasıl bir yol bulabiliriz?
+
+310
+01:03:43,668 --> 01:03:44,868
+Var mı fikir olan?
+
+311
+01:03:51,123 --> 01:03:53,123
+Bir kere şu matrizsiniz...
+
+312
+01:03:53,123 --> 01:03:55,123
+Efendim?
+
+313
+01:03:55,123 --> 01:04:01,123
+Düz mantık gidersek, şu en son dizimizi iki boyuttan üç boyuta çıkartabiliriz.
+
+314
+01:04:01,123 --> 01:04:13,123
+Evet, değil mi? Çünkü herhangi bir i inci ürünle, j inci ürün, i, j'den farklı, bununla birlikte bir de k inci ürün olacak.
+
+315
+01:04:13,123 --> 01:04:16,875
+Yani biz birle 2, 3, 4, 5'e bakmıştık.
+
+316
+01:04:17,523 --> 01:04:38,523
+Şöyle, hani bütün birazcık kombinasyon gibi düşüneceğiz. İşte birinci ürün var. İki, üçüncü, dördüncü ürün olsun. Şimdi birle iki, birle üç, ağaç gibi düşünün. Birle iki, birle üç, birle dört. Ama birle iki ile birlikte birle iki ve üç. Birle iki ve dört.
+
+317
+01:04:45,012 --> 01:04:57,012
+1 ve 4 zaten bakılmış oluyor. Sonra 2 ile 2, 3, 4'e bakacağız. Bu şekilde üçlüleri saymaya çalışacağız.
+
+318
+01:04:57,012 --> 01:05:03,012
+Üçlüleri sayarken, biraz önce iki boyutta saydık ama şimdi 1, 2 ve 3...
+
+319
+01:05:03,315 --> 01:05:08,995
+Aynı anda kaç defa satılmış diye bakacak olursak, bu sefer işin içine maddes giriyor.
+
+320
+01:05:08,995 --> 01:05:14,195
+Hani bunun birisine i desek, birisine j desek, öbürüne k desek gezmek için.
+
+321
+01:05:14,195 --> 01:05:18,915
+Üç boyutlu bir yapıya ihtiyacım var. Şu aynı, bu da aynı.
+
+322
+01:05:18,915 --> 01:05:23,555
+Çünkü sepet dediğimiz şey ikinci boyutumuz.
+
+323
+01:05:23,860 --> 01:05:31,860
+Bir sepete istediğimiz kadar ürün atıyoruz. Burada bu maddesi değiştirmeye gerek yok. Bir ürün bir sepette var mı yok mu? Buna baktık.
+
+324
+01:05:31,860 --> 01:05:37,860
+Ama burada şunu revize etmemiz gerekiyor. Bu artık üç boyutlu olacak demektir.
+
+325
+01:05:37,860 --> 01:05:49,860
+Şimdi kodu kopyaladım, yeni bir dosya açtım. Bakın sepet maddesim aynı, A maddesim de aynı ama artık T maddesimiz üç boyutlu hale geliyor.
+
+326
+01:05:52,052 --> 01:06:02,052
+O zaman burası biraz karışık. Şimdi şunu bir daha böyle şey yaparsak, bütün değerleri sıfırlarız.
+
+327
+01:06:02,052 --> 01:06:07,052
+Veya olmazsa da burada statik kullanabiliriz ama bizim kadarıyla oluyor.
+
+328
+01:06:07,052 --> 01:06:17,052
+Şunu compile diyelim. Şimdi, T artık 3 boyutluysa, T'yi 3 boyutlu erişecek şekilde manipüle edeceğiz.
+
+329
+01:06:18,260 --> 01:06:32,260
+Burası zaten değişmeyecek dedik A madrisi. Ondan sonra diğer madrisimizi de ekrana yazdırdık. Artık A madrisinden T madrisini elde ederken şuna bakacağız.
+
+330
+01:06:32,260 --> 01:06:43,260
+İ inci ürün, J inci ürün, bu yetmiyor, K inci ürün olacak. K'yı bu iş için burada kullanacağım.
+
+331
+01:06:44,467 --> 01:06:55,467
+Ve K'ıncı ürün ne olacak? Kendinden öncekileri aynı şekilde tekrar etmesinde K artı bir diyorum. Pardon, K eşittir J artı bir diyorum.
+
+332
+01:06:55,467 --> 01:07:08,467
+Yani bir ve iki ve üç, bir ve iki ve dört. Ondan sonra bir ve üç ve dört gibi şeylere bakacağız. Yine burada sepet olarak ayrıca bir döngü koymamız gerekiyor.
+
+333
+01:07:09,619 --> 01:07:20,619
+M'ye diyelim. M eşittir 0.0. M küçüktür. Sepet sayısı.
+
+334
+01:07:25,556 --> 01:07:27,556
+M++
+
+335
+01:07:29,556 --> 01:07:34,556
+Şimdi şu şekilde en genel haliyle düşünelim, şunu sonra yazarız.
+
+336
+01:07:36,556 --> 01:07:45,556
+Şimdi diyoruz ki, A'nın iyisinin K'sı değil artık A'nın iyisinin M'si, 1'e eşitme.
+
+337
+01:07:46,556 --> 01:07:51,556
+A'nın J'sinin M'si, yani M'inci sepette iyi inci ürün var mı?
+
+338
+01:07:51,664 --> 01:07:59,664
+Aynı zamanda, bakın V dedik, M inci sepette J inci ürün var mı? Ve aynı zamanda
+
+339
+01:08:02,963 --> 01:08:09,963
+M. sepette K. ürün var mı? Bu üçlüler varsa yapman gereken şey nedir?
+
+340
+01:08:09,963 --> 01:08:17,963
+T'nin İ'sinin J'sinin K'sını bir arttırmam gerekir.
+
+341
+01:08:17,963 --> 01:08:27,963
+Bunu daha kısa yoldan yazalım dersek, T'nin İ'sinin J'sinin K'sı, A'nın İ'sinin M'si, A'nın J'sinin M'si,
+
+342
+01:08:28,467 --> 01:08:31,087
+ve A'nın K'sının M'si olacak.
+
+343
+01:08:34,260 --> 01:08:44,260
+Şu şekilde kısaltabiliriz. Şimdi bu şöyle bir dursun. Şimdi bunu üç boyutlu yazdırmak gerekiyor arkadaşlar. Şimdi üç boyutlu yazdırmada şöyle bir problem var.
+
+344
+01:08:47,260 --> 01:08:56,260
+Şimdi üçüncü boyutu doğrudan üç boyutlu burada ekranı yazdırmak mümkün değil. Her bir matrisi işte ayrı ayrı alt alta veya yan yana yazacak şekilde yazmak gerekiyor.
+
+345
+01:09:02,195 --> 01:09:08,695
+i'ye j'yi dedik, artık burada ta i, j ve k olacak. Bir döngü daha ekliyoruz şuraya.
+
+346
+01:09:12,051 --> 01:09:13,332
+Yok böyle değil, pardon.
+
+347
+01:09:18,868 --> 01:09:32,868
+For k eşittir 0, k küçüktür ürün sayısı k küçüktür.
+
+348
+01:09:34,868 --> 01:09:40,868
+Şimdi burada yazacağımız şey şu olacak, birinci en dipteki maddesi yazacağız.
+
+349
+01:09:40,868 --> 01:09:45,868
+Yani burada üst üste küp gibi yığılmış maddesler düşünün.
+
+350
+01:09:46,355 --> 01:09:58,355
+i sabit, j sabit, k değişken, o zaman t, i, j, k yazarım. Sonra bu bir matris biter. Şurada bir backslash n koyalım.
+
+351
+01:09:58,355 --> 01:10:01,355
+Şöyle yapalım hatta.
+
+352
+01:10:06,707 --> 01:10:16,707
+Bu bittikten sonra bir diğer maddesi yazmak için bir backslash n koyup, ondan sonra araya şöyle bir tıra koyalım, sonra tekrar bir backslash n koyalım, şöyle süslemeye çalışalım.
+
+353
+01:10:16,707 --> 01:10:22,707
+Bakın burada üç boyutlu maddesi yazdırmaya çalışıyoruz. Şöyle parantezlerimize bakalım.
+
+354
+01:10:22,707 --> 01:10:31,627
+Bir m değişkeni tanımlayacağız şurada. Bir değerleyelim bakalım. Mantıkta anlaşılmayan bir şey var mı?
+
+355
+01:10:33,779 --> 01:10:41,643
+Aynı noktadan yola çıkarak ne yaptık? Sadece üçlüler dediğimiz için üç boyutlu hale getirdik.
+
+356
+01:10:47,091 --> 01:11:12,091
+Bakın şimdi şöyle bakıldığında, bu ne diyor bize? Birinci ürünle ikinci ürün bir defa satılmış. Birinci ürünle üçüncü ürün bir defa satılmış. Birinci ürünle dördüncü ürün bir defa satılmış. Ondan sonra ikinci ürünle...
+
+357
+01:11:12,500 --> 01:11:32,500
+Birinci ürün bir defa satılmış ki zaten şurası simetrik olduğu için bunlar aynı olacak. Şuradaki bir mühim değil. Buradaki biri geri almamız için mesela şu diagonali tekrar sıfırlamamız gerekir arkadaşlar. Mesela şurada, bunu ikili üzerinden göstereyim.
+
+358
+01:11:35,891 --> 01:11:41,891
+Gerçi şey yapmıyoruz da. O diagonali tekrar sıfırlamak gerekiyor. Onun kaçarı yok.
+
+359
+01:11:41,891 --> 01:11:58,891
+Burada 5 tane ürünümüz olduğu için matrisimiz 6 tane mi oluyor? Evet, 5 tane ürün 5'e kadar dedik. Bu kadar 6 tane matris basmak zorundayız.
+
+360
+01:12:05,171 --> 01:12:14,291
+Bir dakika, şurayı yanlış yaptık. Şunun üzerinden gitmeyeceğiz arkadaşlar. Şuradakiler üzerinden gideceğiz. Şunun başına bir T ekleyelim de kafamız karışmasın.
+
+361
+01:12:19,731 --> 01:12:21,152
+E-matrisi diyelim.
+
+362
+01:12:28,275 --> 01:12:41,076
+Şimdi T maddesine baktığımızda ne görüyoruz? Şu ikinci ürünle şu ürün bir defa birlikte satılmış. 2 ile 4. ürün. Bakalım hemen şuraya.
+
+363
+01:12:41,076 --> 01:12:54,876
+2 ile 4. ürün bir sepette var mı? Var. 2 ile 4 burada. Sonra 2 ile 4 başka yok. Yani 2 ile 4 bir defa bulunuyor.
+
+364
+01:12:55,731 --> 01:13:22,699
+O da şey, sadece ikinolu sepette. Sonra devam ettiğimizde üçlü satılan hiçbir şey yok bakın. Eğer üçlü satılmasını istiyorsak şöyle biraz oynayacağız burayı. Mesela birinci sepette iki olsun, birinci sepette şöyle diyelim, birinci sepette üç olsun, birinci sepette dört olsun.
+
+365
+01:13:22,996 --> 01:13:42,996
+İkinci sepette 2 olsun, ikinci sepette 4 olsun, ikinci sepette 3 olsun. Şimdi ne yaptık? 2, 3 ve 4'ü, yanlış bir şey yapmadıysam, 2, 3 ve 4, 2, 3 ve 4 aynı sepette bulunacak şekilde. Bakın şuradaki değer bize bunu söylüyor.
+
+366
+01:13:42,996 --> 01:13:47,996
+Tabi bunu üst üste düşünüp yorumlamak gerekiyor. Onun yerine şunu yapabiliriz.
+
+367
+01:13:50,228 --> 01:14:15,028
+Şu T'nin, hani bunu yapalım, en büyüğünü burada yazdırmak yerine, T'nin en büyük değerini bulduğumuzdaki en çok satılan üçlüyü i, j, v, k olarak söyledik ya, T'nin en büyüğünü bulalım, o en büyüğü gösteren i, j, v, k'yı saklayalım ve ekrana üçlüleri bulmuş oluruz.
+
+368
+01:14:16,467 --> 01:14:26,927
+Max diye bir şey mi olacak? Max eşittir 0 olsun mesela. Diyelim ki, şurada artık yazdırmayacağım. Bunu yazdırma yerine şöyle diyelim.
+
+369
+01:14:43,539 --> 01:15:08,899
+İ'sinin, C'sinin, K'sı olsun, D. Ve aynı zamanda bunları yedekle şimdi. Yedek İ, yedek J, yedek K tanımlayacağız. Şimdilik bunları burada tanımlayalım da, yukarıya aldırım birazdan. Yedek İ, yedek İ'ler ne olacak? Y, İ, eşittir İ.
+
+370
+01:15:11,155 --> 01:15:13,996
+Yeşişi eşit târşi.
+
+371
+01:15:18,452 --> 01:15:43,932
+Y, A, eşittir, A. Bunları sakladık. Şunlara gerek yok. Bu döngüler bittiğinde bu üç boyutlu matrisin en büyük değerini bulmuş oluruz. En büyük değerini bulduğumuz yerde de bunu yazdırırız. Şurada printf en çok satılan üçlü. Nedir?
+
+372
+01:15:45,268 --> 01:16:06,768
+İki nokta, yüzde de, diyelim, tıre, yüzde de, tıre, yüzde de. Yedek yi, yedek şi ve yedek k şeklinde söyleyelim. Şunları da alalım. C kuralları gereği, hepsinin burada tasarlanması lazım.
+
+373
+01:16:11,731 --> 01:16:15,811
+Şimdi ne dedik? 2, 3 ve 4'ün en çok satıldığını gördük.
+
+374
+01:16:15,811 --> 01:16:25,451
+Siz bunu zorlayın, farklı örnekler üzerinde, şuradaki veri sayısını arttırın, kodu birazcık inceleyin.
+
+375
+01:16:25,451 --> 01:16:29,451
+Kodun doğru düzgün çalıştığını görüyorsunuz. Peki bunun karmaşıklığı ne olur?
+
+376
+01:16:29,451 --> 01:16:36,731
+Projede dedik ki, algoritmanızın karmaşıklığına bakacaksınız. Bakalım şimdi şöyle adım adım gidelim.
+
+377
+01:16:36,916 --> 01:16:47,916
+Burada ne var? N tane işlem var. Şuranın karmaşıklığı ne? N. Şurada baktığım zaman ürün sayısı, sepet sayısı. Bunları birbirine yakın kabul edersek burada ne var arkadaşlar?
+
+378
+01:16:47,916 --> 01:17:02,764
+Burası nasıl bir şeydir? N karelik bir işlem gibidir. Ürün sayısı. Tabi N'in çok büyük değerlerinin olduğunu düşünüyoruz. Ürün sayısı, ürün sayısı, ürün sayısı, sepet sayısı. Burada ne var? Bakın buranın karmaşıklığı ne peki?
+
+379
+01:17:08,148 --> 01:17:18,148
+Yaklaşık olarak. Birer birer arttığı için bunları doğrudan en kare diyebildim. Buranın karmaşıklığı ne olur?
+
+380
+01:17:25,811 --> 01:17:32,412
+Evet arkadaşlar, bu zor bir soru değil. Bu döngüler kaç defa döner?
+
+381
+01:17:36,595 --> 01:17:38,095
+En üzeri 4.
+
+382
+01:17:38,095 --> 01:17:40,095
+Aynen, en üzeri 4. Çok güzel.
+
+383
+01:17:41,095 --> 01:17:50,955
+Neden en üzeri 4? Hani biz şurada zaten ikisini birbirine eşit kabul ettik. Ürün sayısı ve sepet sayısı. Şurada da n dedik.
+
+384
+01:17:51,028 --> 01:17:56,587
+Şu n kare defa dönüyor, bu da n üzeri 4 defa, bu n defa, bu n defa, bu n defa, bu n defa.
+
+385
+01:17:56,587 --> 01:18:05,467
+Tabii şunları hani göz ardı etmemiz gerekiyor. Yani n kareden daha eksik veya n üzeri 4'ten daha eksik bir durum diye, tabii şurası n üzeri 4 olacak.
+
+386
+01:18:05,467 --> 01:18:08,628
+4 defa iç içe birer birer artan döngü.
+
+387
+01:18:08,628 --> 01:18:14,387
+En üzeri 4, hani bunun eksisi falan var da, işte n üzeri 4 eksi n kareli falan bir şey.
+
+388
+01:18:14,387 --> 01:18:18,268
+Tek tek hesabını yapsak öyle bir şey çıkar ama gerek yok, n üzeri 4.
+
+389
+01:18:18,319 --> 01:18:33,119
+Bu kocaman algoritma, bakın ne oluyor? Hatta şurası da ne? En yüksek dereceli terimimiz ne burada? En üzeri 4. O zaman bu algoritmanın orderı, bir o ile yazdığım şey neye ulaşıyor? En üzeri 4'e ulaşıyor.
+
+390
+01:18:33,119 --> 01:18:45,119
+Ürün ikililerinde kaça ulaşır? Üçlülerinde en üzeri 4 oldu. Ürün ikilileri için ki kodu aklınıza getirin. O kodu açmadan ne dersiniz?
+
+391
+01:18:46,707 --> 01:18:59,027
+O da en üzeri 3 olacaktır, aynen. Çünkü orada da ne yapıyoruz? Ürün sayısı, ürün sayısı, sepet sayısı kadar. İşin en hayati kısmı şurası, orası da n küpe kadar gider.
+
+392
+01:18:59,027 --> 01:19:04,707
+Aslında n küp yerine şunu diyebiliriz, ürün sayısının karesi çarpı sepet sayısı.
+
+393
+01:19:04,916 --> 01:19:14,176
+Bunları n, m gibi söylemezsek o kadar bir karmaşıklık var. Bunları hepsini eşit kabul ettiğimizde en üzeri 4, oradaki de en üzeri 3 oldu.
+
+394
+01:19:14,176 --> 01:19:29,916
+Peki, bunlar daha iyi iyileştirilebiliyor mu? Bakın, klasik algoritma ve veri yapılarıyla dördüncü dereceden işlemler bulduk. Daha azaltılabilecek durumlar var mıdır?
+
+395
+01:19:32,020 --> 01:19:34,420
+Olabilir mi veya olmalı mı sizce?
+
+396
+01:19:38,836 --> 01:19:55,076
+Ürün altılıları desek, en üzeri 7'li bir algoritma çıkacak ve düşünün, bunun zaman karmaşıklığı en üzeri 7, ama bir de ortaya bellek karmaşıklığı çıkıyor arkadaşlar. Bakın bellek karmaşıklığı da ne? N küp.
+
+397
+01:19:56,076 --> 01:20:06,076
+Yani bizim şu kadar bir verimiz var, bunun dışında tutmamız gereken, hem şu, hani şunu daha sonradan iptal edebiliriz de.
+
+398
+01:20:06,228 --> 01:20:14,827
+Ama aslolan şu kadar bir şeye ihtiyacımız var, n küp kadar. Ürün altılıları desek altı boyutlu maddesiz. Yani altı tane şey yazdığınızı düşünün.
+
+399
+01:20:15,728 --> 01:20:17,927
+Öyle bir yere ihtiyaç var. Buyurun.
+
+400
+01:20:17,927 --> 01:20:20,228
+Hocam ondan kurtulabiliriz istersek T'den.
+
+401
+01:20:21,728 --> 01:20:23,228
+Nasıl kurtulacağız?
+
+402
+01:20:25,228 --> 01:20:30,228
+Biz T'ye atama yapmak için zaten T'nin elemanlarını dolaşıyoruz teknik olarak.
+
+403
+01:20:30,228 --> 01:20:31,228
+Evet.
+
+404
+01:20:32,659 --> 01:20:37,659
+T'ye atamak yerine doğrudan onun bilgilerini karşılaştırabiliriz.
+
+405
+01:20:38,659 --> 01:20:41,659
+Yani A maddesi üzerinden mi yapalım diyorsun?
+
+406
+01:20:42,659 --> 01:20:51,659
+Hani şu en üzeri dörtlük algoritma ile birlikte T'nin içine dolduruyoruz ya.
+
+407
+01:20:53,659 --> 01:20:57,659
+Bunu yapabilmek için biz T'nin içerisindeki elemanları zaten biliyor olmamız lazım.
+
+408
+01:20:58,804 --> 01:21:04,804
+Bilmiyoruz, çünkü T'nin içerisinde şu an hepsi sıfır, T'nin içerisinde sayma yapıyoruz.
+
+409
+01:21:04,804 --> 01:21:16,804
+Yani hocam, şu an bu son for döngüsünün dışına çıkacak olursak, T'nin iyice K'sindeki elemanı görüyoruz.
+
+410
+01:21:16,804 --> 01:21:19,804
+Nerede görüyoruz? Anlamadım.
+
+411
+01:21:21,024 --> 01:21:28,024
+Öğrencice konuştun, biraz daha detaylı konuştun.
+
+412
+01:21:28,024 --> 01:21:34,024
+Şimdi burada T'nin I, J, K'si demek yerine,
+
+413
+01:21:34,024 --> 01:21:38,024
+ne dersek?
+
+414
+01:21:38,024 --> 01:21:44,024
+diye bir değişken koyarsak...
+
+415
+01:21:45,171 --> 01:21:50,171
+Burada i, j, k bizim indistilerimize denk geliyor, karşılık geliyor zaten.
+
+416
+01:21:50,171 --> 01:21:51,171
+Tamam.
+
+417
+01:21:51,171 --> 01:21:58,171
+T'nin i'sine, j'sinin k'sine olacak eleman, current değişkeni olacak.
+
+418
+01:21:59,171 --> 01:22:13,003
+Anladım. Yani, şurada en büyük bulma işlemini, diyorsun ki, bir şeyde tutarım, geçici değişkende tutarım.
+
+419
+01:22:13,971 --> 01:22:19,791
+Yani, o olabilir mi? Bakayım. Ama saymadan bunu nasıl yapacağız?
+
+420
+01:22:19,791 --> 01:22:21,791
+Sayacağız hocam.
+
+421
+01:22:21,791 --> 01:22:30,271
+Tamam, şurada C diye bir değişken söyledim, artı bir dedim.
+
+422
+01:22:30,271 --> 01:22:32,271
+Öyle değil mi?
+
+423
+01:22:32,271 --> 01:22:33,271
+Evet hocam.
+
+424
+01:22:33,271 --> 01:22:36,771
+Yani, C değişkenini topladım, evet.
+
+425
+01:22:36,771 --> 01:22:38,271
+Şimdi soracağım.
+
+426
+01:22:38,271 --> 01:22:40,271
+Bu değişkeni nereye tutacağız?
+
+427
+01:22:40,271 --> 01:22:41,271
+Nerede tutacağız?
+
+428
+01:22:41,395 --> 01:22:44,956
+Şu aşağıda max bulma şeyimiz var ya, algoritmamız var ya.
+
+429
+01:22:44,956 --> 01:22:45,956
+Evet.
+
+430
+01:22:45,956 --> 01:22:51,995
+Onu da son for döngüsünün dışına alacağız. Yani üçüncü for döngüsünün içinde olacak.
+
+431
+01:22:51,995 --> 01:22:54,355
+Sadece şu iç kısmı.
+
+432
+01:22:54,355 --> 01:22:57,956
+Şuraya, yani şu kısmı alacağız, şurayı diyorsun.
+
+433
+01:22:57,956 --> 01:22:59,155
+Evet hocam.
+
+434
+01:22:59,155 --> 01:23:03,395
+Evet, yani bunun bir önceki değerini de o zaman tutmamız gerekiyor.
+
+435
+01:23:04,051 --> 01:23:30,551
+C'nin bir önceki değerini de tutmamız gerekiyor ki. Yok hocam, maksimum değerimiz zaten tutuyor ya onu. Tamam, maksımız var. Buraya şunu aldık. Şöyle yapalım. Şuraya dedik ki, C büyükse maks'tan. Evet hocam. Max eşittir C olsun. Evet hocam. Y, i, i, j, k'lar olsun. Tamam, evet. Şu anda o çalışıyor olması lazım.
+
+436
+01:23:31,380 --> 01:23:37,380
+Şimdi şöyle düşünelim. Hatta şöyle diyelim. Şunları yorum yapayım.
+
+437
+01:23:43,283 --> 01:23:57,283
+Başka eklememiz gereken bir tane C değişkeni ekleyeceğiz. Öyle değil mi? Evet hocam. Bakalım, bakalım, bakalım. Şu iş bittikten sonra o zaman diyelim ki şurayı da şöyle bir koment yapalım.
+
+438
+01:24:03,604 --> 01:24:10,604
+Çünkü zaten dizinin içerisinden sadece aradığımız kriterlerdeki elemanı çekmeye çalıştığımız için dizide eleman tutmamıza gerek yok.
+
+439
+01:24:10,604 --> 01:24:11,604
+Doğru, haklısın.
+
+440
+01:24:12,604 --> 01:24:19,604
+Evet, yani güzel bir iyileştirme oldu. Ne yaptık? Şu kadar bellekten fayda sağlık.
+
+441
+01:24:20,604 --> 01:24:26,604
+Yine karmaşıklığımız en üzeri 4 mü? Evet, en üzeri 4 zaman açısından. Bakın güzel bir iyileştirme.
+
+442
+01:24:29,216 --> 01:24:37,716
+Bu kadar yer tutmuş olmamız, yani bir anlamda zaten şurada en büyük tespit edince bunu kullanabiliyoruz. Teşekkür ederim, güzel.
+
+443
+01:24:39,716 --> 01:24:43,716
+Başka bir iyileştirme, zamansal iyileştirme [öğrenci] düşünebilir misin?
+
+444
+01:24:48,404 --> 01:25:15,264
+Zamansal İlleştirme şu şekilde olabilir. Şimdi deriz ki, i. ürüne bakıyorum. Eğer a'nın i'sinin sepet sayısını en dışa alsak, nasıl desem, şu kodu şöyle bir alayım. Şöyle biraz aşağılara gidelim.
+
+445
+01:25:18,387 --> 01:25:20,387
+Şunu en dışa alıyorum.
+
+446
+01:25:22,887 --> 01:25:24,887
+Diyorum ki her bir sepeti gezeceğim.
+
+447
+01:25:33,652 --> 01:25:59,992
+Şimdi gezdiğim sepette i inci ürüne bakacağım. Ondan sonra j inci ürüne bakacağım, ondan sonra k inci ürüne bakacağım. Mesela şu olabilir. Eğer i inci ürün birse j inci ürüne baksın. Yani sıfırsa bakmasına gerek yok. Anlatabildim mi? Veya işte bu birse diğerine baksın. Böyle bir yaklaşımda ilerletebilirsiniz.
+
+448
+01:26:00,756 --> 01:26:11,156
+Bunu da söylemiş olalım. Yine yani A'nın, İ'sinin M'sine bakacağım aslında şurada. Yani genel olarak şöyle hızlıca biraz karalayalım.
+
+449
+01:26:11,156 --> 01:26:16,796
+A'nın, tabi burada İ henüz yok.
+
+450
+01:26:16,796 --> 01:26:25,716
+Şöyle, A'nın, İ'sinin M'sine bakarım.
+
+451
+01:26:27,380 --> 01:26:32,079
+Eğer bu eşitse 1'e, yani şuraya bir if koyarız.
+
+452
+01:26:35,180 --> 01:26:39,880
+Demek ki bu ürün m. sepette var demektir. Öyle değil mi?
+
+453
+01:26:39,880 --> 01:26:45,380
+Eğer varsa, derim ki bir de j. ürüne bak.
+
+454
+01:26:47,380 --> 01:26:53,380
+Şu an hani böyle karalama gibi yazıyorum ama hani herhalde açıktır.
+
+455
+01:26:54,515 --> 01:26:58,515
+Şimdi J. ürüne baktığımda aynı şeyi burada bunun için yapacağım.
+
+456
+01:26:58,515 --> 01:26:59,315
+A'nın
+
+457
+01:27:02,676 --> 01:27:11,176
+J incisinin m'si, j'sinin m'si birse, bir de neye bak, bir de k'ya bak.
+
+458
+01:27:21,140 --> 01:27:26,640
+Böyle şey oluyor, hani karmaşık gibi geliyor. Eğer bu da...
+
+459
+01:27:31,604 --> 01:27:34,003
+A'nın K'sının M'si birse.
+
+460
+01:27:36,083 --> 01:27:36,804
+If.
+
+461
+01:27:44,051 --> 01:27:56,051
+Tabi test etmedim, yani şu an aklıma gelen bir şey bu. A'nın K'sının M'si de birse, artık ne? Üçü de bir, bir, bir denk geldi. Yani gereksiz karşılaştırmaların önüne geçiyorum.
+
+462
+01:27:56,051 --> 01:28:06,051
+Önce şuradan bir kontrol, sonra buradan bir kontrol, sonra buradan bir kontrol, sonra geri kalan işte nedir? Ali'nin biraz önce söylediği gibi, hani bir T şeyine gerek kalmadan
+
+463
+01:28:06,260 --> 01:28:18,260
+Burada i, j ve k'yı c üzerinde bir arttırıp daha sonra bu c değerlerini sayıp bir şeyler gerçekleştirebiliriz. Bunun devamını size bırakalım.
+
+464
+01:28:18,260 --> 01:28:21,260
+Şöyle geri alayım da orijinal kodumuz...
+
+465
+01:28:21,260 --> 01:28:26,260
+...geri dönelim, şuradaki şeyler gitsin.
+
+466
+01:28:37,555 --> 01:28:55,255
+C kalsın yine, yani o C'li çözümümüz dursun. Biraz ileri alacağım. Tamam, şöyle ileriye gidiyoruz şimdi. Bakın bu ileri al geri al mekanizması sizce nasıl oluyor? Hani bir programda.
+
+467
+01:29:01,171 --> 01:29:12,371
+Yani, şey yaparken başka bir şey de görmüş olalım. Şöyleydi herhalde. İleri al geri al, bir önceki adım, bir sonraki adım nasıl oluyordur?
+
+468
+01:29:12,371 --> 01:29:18,871
+Yani hocam birkaç farklı şekilde yapabiliriz. İstersek tüm belgenin eski haline şey yapabiliriz ya da...
+
+469
+01:29:18,871 --> 01:29:21,871
+Yok yani, nasıl bir veri yapısı kullanıyordur?
+
+470
+01:29:25,363 --> 01:29:30,363
+Yani bir dizi mi, maddis mi? Evet, [öğrenci] bir şey söyleyeceksin herhalde.
+
+471
+01:29:30,363 --> 01:29:39,363
+Hocam, ismim [öğrenci] arkadaşının linkinden girdim de. Ben biliyordum bir tık, oradan söyleyeyim. Stag yapısıyla kullanıyoruz herhalde.
+
+472
+01:29:39,363 --> 01:29:43,363
+Evet. Mesela web browserlarda.
+
+473
+01:29:43,363 --> 01:29:48,907
+Aynen. O ileri geri tuşları. Mesela masanın üstüne kitap koymak gibi.
+
+474
+01:29:49,140 --> 01:29:51,140
+Alttan kitap almak yasak.
+
+475
+01:29:51,140 --> 01:30:09,140
+Zaten staki şeyde anlattık ya, aksiyonlarda en son kaldığımız yerde, nasıl en son kaldığımız yere geri geleceğiz, program nerede kaldı, önceki şeylerde şurada, şurada vardı, bir yerlerde, recursion'da da anlattık.
+
+476
+01:30:09,140 --> 01:30:15,140
+Orada da programın staki'ni saklıyorsunuz. Bakın aynen burada bir şey var, staki memory var.
+
+477
+01:30:15,699 --> 01:30:20,059
+Programın state'ini belleğe stek olarak yedekliyorsunuz.
+
+478
+01:30:20,059 --> 01:30:23,139
+İşte geri al dediğinizde, tabi bu birkaç farklı stek var.
+
+479
+01:30:23,139 --> 01:30:26,459
+Geri aldığınızda sizi bir önceki duruma geri getiriyor.
+
+480
+01:30:26,459 --> 01:30:31,260
+Yani bu Word'deki, işte browser'lardaki ileri al geri al meselesi böyle oluyor.
+
+481
+01:30:31,260 --> 01:30:38,739
+Hocam, bu programın çalıştığı stek ile bizim kodun içinde tasarladığımız veriyapsı olan stek aynı şey mi oluyor?
+
+482
+01:30:38,739 --> 01:30:43,459
+Düşündüğü olarak aynı, yapı olarak aynı. İki tane temel operasyonu var.
+
+483
+01:30:43,667 --> 01:30:54,067
+Şimdi stack, veriye erişmek için kullanılan bir veriyapısı. Onu belki vakit kalırsa bu derste anlatacağız da, gelecek dönem ayrık matematiğin konusu.
+
+484
+01:30:54,067 --> 01:30:58,067
+Şimdi dizi, veriyi saklamak için kullanılan bir veriyapısıdır.
+
+485
+01:30:58,067 --> 01:31:03,267
+Değer linkli liste. Şimdi dizide ne yaparsınız? Verileri böyle istediğiniz gibi saklarsınız.
+
+486
+01:31:03,923 --> 01:31:25,083
+Ondan sonra, linkli liste de anlatacağız size, o da bir veriyi saklamak için. Ama veriye erişmek için hem saklıyorsunuz hem de erişiyorsunuz. Şunu şöyle dikey düşünün. Stake'de iki temel operasyon var. Tepeden ekleyip tepeden kaldırabiyorsunuz. Böyle araya istediğiniz yeri ekleyemiyorsunuz. Bir tane değişkeniniz var, nereye ekleyeceğinizi, nereden sileceğinizi size gösteriyor.
+
+487
+01:31:25,811 --> 01:31:30,811
+Şuraya ekle diyorsa, bir şeyi buraya ekleniyor. İşte 8 diyelim, mesela burada 4, 5 olsun falan.
+
+488
+01:31:30,811 --> 01:31:34,811
+En son burayı göstereyim, buraya ekleniyor. Sonra kendisi bu 1'e artıyor.
+
+489
+01:31:34,811 --> 01:31:39,811
+Bir şeyi sileceğinizde de 1 azalıyor, oradakini siliyorsunuz. Bir de kuyruk var.
+
+490
+01:31:39,811 --> 01:31:44,811
+An temel yapılarımızdan. Kuyruk nedir? Gerçek hayatta bildiğimiz bir kuyruk.
+
+491
+01:31:44,811 --> 01:31:50,811
+Kuyruğun önden çıkarız, arkasından ekleme yaparız. Önden gelen önce servis alır, hizmet alır.
+
+492
+01:31:50,811 --> 01:31:53,707
+Arkadan gelen de kuyruğa girer, sırasını bekler.
+
+493
+01:31:54,003 --> 01:32:20,503
+Bunlar ikisi veriye erişim için kullanılıyor. Bunların genel mantıkları var. Mantıklardan bir tanesi, bu ileri al geri al meselesi. Aynı şekilde stek hafızasının program akışı içerisinde kullanılmasında da aynı mantıkla kullanılıyor. Bir sürü kullanım alanı var. Hatta işlemcinin içinde stek pointer diye bir şey var. Belki geçen dönem size işlemci anlattılar. Stek pointer diye bir register var.
+
+494
+01:32:21,460 --> 01:32:34,460
+Gelecek sene Assembli dersinde Stake pointer'ı çok çok kullanacaksınız. Orada size programlama yazdıracaklar, Assembli programlama orada göreceksiniz. Tamam mı?
+
+495
+01:32:34,460 --> 01:32:47,460
+Hocam ben şeye takıldım. Biraz daha kuyruk yapısı gibi olmaz mı size göre? Çünkü şey olarak belli bir geri alakalı.
+
+496
+01:32:47,828 --> 01:33:02,828
+Şu geri alma mekanizmasında. Yok, şimdi kuyruk olursa orada şöyle düşün, yani kuyruk normal sırayı düşün. Yani şimdi sen sıradan çıkınca, bankada sıra bekliyorsun, sıradan çıkınca geri geliyor musun her zaman? Çıktın gitti, o iş bitti.
+
+497
+01:33:02,828 --> 01:33:08,828
+Geri almak, yani belli bir geri alma limitimiz oluyor çoğu uygulamada.
+
+498
+01:33:09,171 --> 01:33:19,171
+Tamam, işte o siteğin sınırlı olması ile alakalı. Siteyi eğer sen diziyle tutarsan belli bir limitin var ama onu linkli listeyle yaparsan bunları anlatacağız.
+
+499
+01:33:19,171 --> 01:33:25,171
+Yani sınırsız bir dizi gibi düşün. O zaman sınırsız geri alma, sınırsız ileri alma imkanlı oluyor.
+
+500
+01:33:25,171 --> 01:33:31,171
+Yani geriye aldıklarının da bir siteyi oluyor aslında. İki tane burada birden fazla stek tutuluyor, tamam mı?
+
+501
+01:33:31,171 --> 01:33:34,507
+Kuyruk da oradan burada hani şey olarak yok.
+
+502
+01:33:36,467 --> 01:33:38,467
+Söyleyeyim. Oldu mu şu an?
+
+503
+01:33:40,467 --> 01:33:42,467
+Tam oturmadı.
+
+504
+01:33:42,467 --> 01:33:46,467
+Şimdi şöyle düşün. Stake yapımı kullanarak son kadar gidebilir miyiz?
+
+505
+01:33:46,467 --> 01:33:53,467
+Gidebilirsin. Sonsuz derken bellek sonsuz değil ama belleğin bayağı bir kapasitesi var. Şimdi beş elemanlı Stake düşün.
+
+506
+01:33:54,452 --> 01:33:59,452
+Burada en fazla bulunduğu şeyden 5 adım geriye gelebilirsin veya ileriye gidebilirsin şeklinde.
+
+507
+01:33:59,452 --> 01:34:05,452
+Şimdi, geriye geldiklerinde bir stekte, ileriye gitmek istediklerinde öbür stekte tutarsan,
+
+508
+01:34:05,452 --> 01:34:10,452
+işte mesela şu an hani bunu durum makinesi diyoruz.
+
+509
+01:34:10,452 --> 01:34:14,452
+İşte A yazdın, B yazdın, C yazdın, D yazdın, E yazdın.
+
+510
+01:34:14,452 --> 01:34:18,452
+Şimdi A eklendi, sonra B eklendi, sonra C, sonra D, sonra E eklendi.
+
+511
+01:34:18,452 --> 01:34:19,404
+Geri aldın ya.
+
+512
+01:34:19,507 --> 01:34:27,967
+E buraya ekleniyor, bir daha geri aldım, D buraya ekleniyor. Sonra ileri aldığında bu buraya eklenip birinden alınıp öbürüne siliniyor.
+
+513
+01:34:27,967 --> 01:34:32,047
+Mesela hocam, ben burada F'ye gitsem, A'ya ne olur gibisine.
+
+514
+01:34:32,047 --> 01:34:33,368
+Nereye gitsem?
+
+515
+01:34:33,368 --> 01:34:34,967
+F'ye gitsem.
+
+516
+01:34:34,967 --> 01:34:36,967
+Bir de F ekledim.
+
+517
+01:34:36,967 --> 01:34:41,047
+F yazdıysan şöyle, A, B, C, D, E yazdım, ondan sonra F yazdım, bu böyle.
+
+518
+01:34:41,047 --> 01:34:44,047
+Hani bir şey silmediğini kabul ediyorum veya geri almadığını kabul ediyorum.
+
+519
+01:34:44,047 --> 01:34:45,347
+Tamam mı?
+
+520
+01:34:45,684 --> 01:35:09,684
+A, B, C, D yazdın, sonra geri aldın. Şimdi şöyle dur. A yazdın, B yazdın, C yazdın, D yazdın, tamam. Şurası da ilk başta boş. Sonra geri al yaptın. Geri al yapınca ne olacak? D silinecek. Sildiğin D'yi buraya alacaksın. Sonra F yazdın veya E yazdın. Şimdi E yazınca...
+
+521
+01:35:11,220 --> 01:35:37,460
+Yani D yok, E yazdım, bu şekilde bir duruma geldim. Şimdi bunu geri al yaptığında kelime işlemcilerin farklı mekanizmaları vardır veya işte browserlarının başka şeylerin farklı mekanizmaları vardır. Çünkü bunlar her zaman yazmayla da şey değil. E burada yazacak, ekranda da E yazacak. Hani bunu geri al dediğinde bu sefer E'yi geri alacak. E'yi buradan sileceği için E buraya gelir. Bir daha geri al yazdığında D'yi elde edemeyebilirsin.
+
+522
+01:35:37,844 --> 01:35:42,844
+Yani bu şeyde mesela deneyelim. Şunu da deneyelim.
+
+523
+01:35:46,804 --> 01:35:53,203
+Veya niye burada deniyoruz ki? Şeyde direkt burada deneyebiliriz. Metin kutusu diyelim.
+
+524
+01:35:55,203 --> 01:36:00,804
+Şöyle beyaz yapayım. A yazdım, B yazdım.
+
+525
+01:36:03,203 --> 01:36:13,163
+C yazdım, D yazdım, Ctrl-Z dedim, E yazdım. Gerçi hepsini birden bakış yap. A, B, C.
+
+526
+01:36:13,652 --> 01:36:26,652
+Biraz ara verelim, Ctrl-Z diyelim, yok hepsini birden alıyorum. Şöyle yapayım, A, B, boşluk, C, D, Ctrl-Z dedim, B'ye kadar. Mesela E yapayım, tamam.
+
+527
+01:36:26,652 --> 01:36:34,652
+Ctrl-Z dediğimde E'yi siler, bir daha Ctrl-Z dediğimde bak ne oldu, farklı bir mekanizma ile geri gidiyor.
+
+528
+01:36:35,220 --> 01:36:46,020
+Bu durum geçişlerini saklama mantığı her uygulamada farklıdır ama kullandığı şey stektir. Bir tane stek kullanmak zorunda değil, birden fazla stek kullanabilir.
+
+529
+01:36:46,020 --> 01:36:58,420
+Şunu da bilmek gerekiyor, steklerin uzunlukları sabitse, 3-5 gibi şeyse en fazla 3-5 adımı geri alabilirsin ama sabit olmak zorunda değil, linkli listelerle
+
+530
+01:36:58,676 --> 01:37:04,676
+Bellek miktarı ile sınırlı ama sınırsızmış gibi stackler oluşturulabilir. Tamam mı?
+
+531
+01:37:04,676 --> 01:37:11,676
+Yani hocam benim takıldığım şey şuydu mesela, 5 geri alma hakkımızın olduğu uygulamalarda en alttaki nasıl siliniyor?
+
+532
+01:37:11,676 --> 01:37:18,676
+En alttakini ne yapıyor? Orada aslında silmiyor. Yani o orada duruyor. Üstüne başka bir şey gelince o en alttakinin yerine yazıyor.
+
+533
+01:37:19,283 --> 01:37:27,843
+Stag'de bir şey kaldırdığında, şu şöyle Stag pointer dediğimiz şey yukarı aşağıya doğru hareket eder.
+
+534
+01:37:27,843 --> 01:37:33,043
+Sen yeni bir şey eklediğinde, eğer bunu sildiysen daha önce yeni bir şey yazdığında bunun üzerine yazılır.
+
+535
+01:37:33,043 --> 01:37:37,899
+Tamam mı? Bu böyle.
+
+536
+01:37:38,868 --> 01:38:01,068
+Başka detaylar var mıdır? Elbette var. Çünkü bu kuyruk ve stek ile alakalı teori diye bir konu var. Daha detaylı bu konular üzerinde çalışıyorlar. Yani farklı bir ders veya bilim dalı gibi diyelim. Bunların farklı farklı implementasyonları mevcut. Ama bilinen yaygın uygulamalarda ileri al geri al meselesi bu şekilde.
+
+537
+01:38:03,764 --> 01:38:19,764
+Evet, soru yoksa devam edeceğim. Şimdi arkadaşlar, şu ders notunuza baktığınızda, burada şey görüyoruz, hani şu üçlülerden sonra, kriptoloji ile alakalı örneklere giriyoruz. Bunu ben şimdilik es geçeceğim. Gelecek hafta buradan devam edeceğiz.
+
+538
+01:38:19,764 --> 01:38:26,764
+Buradaki detaya girersek, şu yaptığımız, biraz önce yaptığımız konunun özünü birazcık kaçırmış oluyoruz.
+
+539
+01:38:27,283 --> 01:38:33,083
+Şimdi bizim bu problemi farklı, biraz önce yaptığım şeyi farklı bir şeye uygulamak istiyorum.
+
+540
+01:38:34,083 --> 01:38:40,283
+Farklı bir alana uygulayacağız. Diyoruz ki kelimeler arda arda şeklinde bir şeyimiz var.
+
+541
+01:38:40,283 --> 01:38:48,283
+Bizim bir metnimiz var. Bu metin böyle bir cümle falan değil. Kullanıcıdan alınacak, klavyeden girilecek bir şey düşünmeyin.
+
+542
+01:38:52,176 --> 01:38:58,176
+Bir sürü sayfa tanırdınız, milyonlarca sayfa tanırdınız, o sayfalardan metinler elde ediyorsunuz.
+
+543
+01:38:58,176 --> 01:39:09,176
+Veya kitapları dijitize ettiniz, o dijitize ettiğiniz kitaplardaki metinleri aldınız, her bir kelimeye de bir ID verdiniz.
+
+544
+01:39:11,176 --> 01:39:14,176
+Sonuçta ne var? Elimizde bir dizi olur değil mi arkadaşlar?
+
+545
+01:39:14,176 --> 01:39:19,176
+Yani bir sürü metni aldık, her bir kelimeye de ID verdik.
+
+546
+01:39:20,148 --> 01:39:36,148
+Elimizde Metin diye bir dizi var. Bu Metin dizisi içinde işte 8 no'lu kelime, 3 no'lu kelime, işte 10 milyon no'lu kelime, milyon oldu mu? Böyle bir daha yapalım.
+
+547
+01:39:36,148 --> 01:39:45,148
+Neyse artık. Böyle uzun ve içinde çok büyük veya çok küçük işte 0 no'lu kelime gibi böyle bir dizimiz var.
+
+548
+01:39:46,931 --> 01:39:47,931
+Konuyu anladık mı?
+
+549
+01:39:47,931 --> 01:39:52,931
+Kullancıdan almıyoruz.
+
+550
+01:39:52,931 --> 01:39:54,931
+Her bir kelimeyi kodluyoruz.
+
+551
+01:39:54,931 --> 01:39:57,931
+İşte 8 nolu kelime gel olsun.
+
+552
+01:39:57,931 --> 01:40:00,931
+3 nolu kelime kedi olsun.
+
+553
+01:40:00,931 --> 01:40:05,931
+10 milyon nolu kelime ne olsun.
+
+554
+01:40:05,931 --> 01:40:10,931
+Böyle biraz az kullanımlı, çok kullanılanlar düşük idli olsunlar.
+
+555
+01:40:12,884 --> 01:40:14,884
+Az kullanılan bir kelime söyleyin.
+
+556
+01:40:20,275 --> 01:40:28,275
+Müsabaka diyelim, bir chatten bir şey geldi. Enjektör. Tamam. Güzel.
+
+557
+01:40:28,275 --> 01:40:38,275
+Haşmet Mehab, o ne ya? Haşmet Mehab şey, sayın gibi bir şey mi? Enjektör.
+
+558
+01:40:38,275 --> 01:40:47,148
+Veya şey, tamam. Şimdi bu bilgiler böyle kodlandı.
+
+559
+01:40:47,380 --> 01:40:58,380
+Yani biz bütün bir dildeki, işte Türkçe'de 100.000 kelime falan derler, İngilizce'de 1 milyona yakın falan derler.
+
+560
+01:40:58,380 --> 01:41:10,284
+Hani ne kadar doğru bilmiyorum da, işte ben dil hocalarımdan duyduğum rakamlar, sayılar. Bunları birer birer, her kelimeyi kodladığımızı düşünelim. Böyle bir şey var.
+
+561
+01:41:10,804 --> 01:41:16,804
+Sorumuz şu, bu metinde arka arkaya en çok geçen kelime ikililerini bulmak istiyoruz.
+
+562
+01:41:18,304 --> 01:41:23,804
+Yani arka arkaya gelecek kelime ikilileri.
+
+563
+01:41:23,804 --> 01:41:33,304
+Şimdi diziyi şöyle kabul edersek, sonuçta dizi yani bakın tek boyutlu bir şey içinde sayılar var.
+
+564
+01:41:38,452 --> 01:41:47,452
+Şununla şuna bakacağım. Bununla buna bakacağım. Yani bununla bu kaç defa geçmiş? Bununla bu kaç defa geçmiş? İşte böyle kontrol yapacağım.
+
+565
+01:41:47,452 --> 01:42:05,452
+Birinci sorumuz bu. Bu bir diyelim arka arkaya en çok geçen kelime ikilileri.
+
+566
+01:42:05,684 --> 01:42:13,684
+Şimdi bunlar ne için kullanılıyor olabilir? Bu ne işimize yarayacak böyle bir şey yapmak? Ne dersiniz?
+
+567
+01:42:20,692 --> 01:42:22,692
+Size bir şey açacağım şimdi.
+
+568
+01:42:36,307 --> 01:42:45,307
+Bir metnin ana fikri. Şimdi bir metnin ana fikri hakkında bilgi, onu da açıklar mısın? Yani istersen söyle.
+
+569
+01:42:47,307 --> 01:42:59,307
+Yani bir biri en çok geçen, mesela en çok geçen iki kelime ve ben olsa. O metnin ana fikri ve ben olur mu? Hani ve ben, ve ben bir sürü yerde ve ben geçiyor mesela.
+
+570
+01:42:59,307 --> 01:43:04,108
+Ve fakat veya böyle hani bazı şeylerde kullanılır ya.
+
+571
+01:43:07,155 --> 01:43:17,755
+Başka ne olabilir arkadaşlar? Aslında dediğin doğru da, yani kısmen doğru, her durum için şey değil.
+
+572
+01:43:24,692 --> 01:43:29,892
+Hocam, o dilde en çok kullanılan konuşma kalıplarını tespit etmiş olur gibiyiz.
+
+573
+01:43:29,892 --> 01:43:35,892
+Ha, mesela İngilizce veya Türkçe bir örnek versene.
+
+574
+01:43:35,892 --> 01:43:40,292
+Bir düşüneyim hocam, hemen aklıma gelmedi.
+
+575
+01:43:40,292 --> 01:43:45,492
+Hocam, aslında şey gibi ya, atasözleri gibi, daha çok orada karşımıza çıkıyor.
+
+576
+01:43:46,547 --> 01:43:53,547
+Bir atasözünün, mesela bir atasözünün başladığında söylerken hemen kafamızda tamamlarız ya, gerisinin ne olacağını.
+
+577
+01:43:53,547 --> 01:43:59,547
+Evet ama şimdi şöyle atasözü veya bir başka metin, yani şimdi kelime ikillerinden bahsediyoruz.
+
+578
+01:44:00,547 --> 01:44:07,547
+Tamlamalar gibi, tamlamayı biraz detaylandırırsan olacak gibi [öğrenci].
+
+579
+01:44:14,323 --> 01:44:21,323
+Hocam, örnek tam aklıma gelmedim ama bu şeyde kullanılıyor olabilir. Bu doğal dil işleme süreçlerinde yapay zekanya bir cümleyi...
+
+580
+01:44:21,323 --> 01:44:26,323
+Zaten doğal dil işlemede kullanacağız da hani orası kesin, oraya doğru geliyoruz.
+
+581
+01:44:26,323 --> 01:44:32,323
+Şeyi tamamlamak için işte cümleleri falan. Ama örnek aklıma gelmedi.
+
+582
+01:44:32,323 --> 01:44:36,323
+Bir saniye, şimdi ben bir şey arıyorum bu arada.
+
+583
+01:44:36,323 --> 01:44:39,323
+Mesela...
+
+584
+01:44:42,131 --> 01:44:46,491
+Oto düzeltme için olabilir. Biraz daha dilsel düşünün arkadaşlar.
+
+585
+01:44:48,011 --> 01:44:54,091
+Hani sadece bilgisayar bilimlerine faydası olmasın, dil açısından düşünün, öyle söyleyeyim.
+
+586
+01:44:57,971 --> 01:45:08,971
+Mesela bir cümle kuruyorsunuz. Cümlede kurduğunuz kelimelerin öncekisi ve sonrakisinin arasında bir anlam ilişkisi olması gerekiyor değil mi?
+
+587
+01:45:08,971 --> 01:45:20,971
+Mesela bir şey arttı. Bir şey nasıl artar? Hızlı artar, kayda değer bir şekilde artar, yavaş artar. Hani onun önüne bir zarf...
+
+588
+01:45:21,652 --> 01:45:31,652
+İngilizce söyleyecek olursak, dramatically increased, ondan sonra slightly increased, öyle değil mi? Böyle şeyler koyarız.
+
+589
+01:45:31,652 --> 01:45:40,652
+Şimdi bu, bir şeyin artışının öncesinde kullandığımız bu kelime, mavi arttı demeyiz mesela yani.
+
+590
+01:45:40,652 --> 01:45:44,652
+Kullandığımız önceki kelimenin bir anlam bütünlüğü olması lazım.
+
+591
+01:45:49,363 --> 01:46:06,844
+Şimdi bunu İngilizce'de araştırmışlar. Türkçe'de de belki araştırma vardır. İngilizce araştırmalar çok olduğu için. Mesela ilk araştırma şu, Academic Word List. Belki hazırlıkta gördüğünüz, duyan var mı bunu? Academic Word List diye. Bir yerde hazırlıkta size anlattılar mı?
+
+592
+01:46:07,507 --> 01:46:17,188
+İngilizce kelime öğrenmek, nasıl kelime öğrenebilirim tarzında hep böyle İngilizceye başlayanlar için şeyler vardır.
+
+593
+01:46:17,188 --> 01:46:20,467
+Öğrencilerin de böyle kanayan yarasıdır diyelim.
+
+594
+01:46:20,467 --> 01:46:26,548
+Academic Wordless nasıl oluşturulmuş? Demiş ki, belli bir korpus var.
+
+595
+01:46:26,548 --> 01:46:30,628
+Yani bazı kitaplarda muhtemelen eklenmiştir.
+
+596
+01:46:30,628 --> 01:46:35,347
+Hani siz hangi kitabı kullandığınızı bilmiyorum da isterseniz o kitabı yazabilirsiniz, araştırırız.
+
+597
+01:46:35,956 --> 01:46:44,956
+Şimdi bunlar akademik metinleri tarıyorlar, bu çalışan kişiler. Akademik metinleri taradıklarında ne çıkıyor?
+
+598
+01:46:44,956 --> 01:46:58,860
+İşte bu metinlerin içerisinde %90 olasılıkla geçen kelimeler kök kelime olarak, hani bir ana kök kelime olarak 500 veya 600 tane kelime çıkıyor.
+
+599
+01:46:59,475 --> 01:47:10,475
+Şimdi analiz mesela alalım. Bu bir kök kelime. Analiz edilmiş, analiz edici, analiz edenler, analizin şey işte ayencili hali gibi bakın burada farklı formları var.
+
+600
+01:47:10,475 --> 01:47:18,475
+Şimdi bu kelimelerin köklü kelimelere baktığında işte 400-500 civarı bir şey oluyor. Yani bunu bilirsen...
+
+601
+01:47:18,899 --> 01:47:24,899
+Bu araştırmaya göre, İngilizce metinlerin %90'ını anlayacak seviyeye gelebiliyorsun.
+
+602
+01:47:24,899 --> 01:47:29,899
+Türetmeleri de tabi bilirsen, bu ne oluyor? Katlanıyor. Mesela şurada kaç tane şey var?
+
+603
+01:47:29,899 --> 01:47:34,899
+10 tane diyelim. 400 kelime oluyor sana 4000-5000 kelime.
+
+604
+01:47:34,899 --> 01:47:39,899
+Yani kelime hazneni bu şekilde biraz daha hızlı geliştirebiliyorsun.
+
+605
+01:47:39,899 --> 01:47:41,899
+Tabi her kelimenin 10 tane...
+
+606
+01:47:42,003 --> 01:47:50,003
+Formation'ı yok, işte Otorite demiş, Otorite, Otoriterleşme gibi veya başka bir şey, işte şurada iki tane var.
+
+607
+01:47:50,003 --> 01:47:55,003
+Bu birinci araştırma. İkinci araştırma, Collocation Listesi.
+
+608
+01:47:55,003 --> 01:48:04,003
+Mesela bu, Drake Pearson'ın sayfasında yayınlanmış bir şey, bunu PDF olarak indirebiliyorsunuz.
+
+609
+01:48:04,003 --> 01:48:08,003
+Collocation ne? Birlikte kullanımlar. Tabi bu birlikte kullanım nedir?
+
+610
+01:48:08,467 --> 01:48:30,467
+İkili, üçlü. Mesela demiş ki, bu da yine benzer çalışma. Yani bu, yani şurada detayları var. Avustralya'da bildiğim kadarıyla yapılmış bir çalışma. Diyor ki, abstract kelimesi en çok konsept kelimesi ile birlikte geçiyor. Abstract, konsept, soyut kavram.
+
+611
+01:48:31,123 --> 01:48:36,283
+Akademik başarı, akademik kariyer, akademik circle, ne bileyim akademik muz diye bir şey olmaz.
+
+612
+01:48:36,283 --> 01:48:41,724
+Akademik mavi, buraya bir noun gelecek sıfattan sonra.
+
+613
+01:48:41,724 --> 01:48:44,363
+Akademik hayat, bunlar normal şeyler.
+
+614
+01:48:44,363 --> 01:48:48,363
+Birlikte geçme olasılıkları yüksek olan şeyler.
+
+615
+01:48:48,363 --> 01:48:51,363
+Ama düşük şeyleri düşündüğünüzde diğer bütün kelimeleri düşünün.
+
+616
+01:48:51,363 --> 01:48:56,363
+Akademik şehir, yok akademik ülke pek çok yoktur yani.
+
+617
+01:48:56,363 --> 01:48:58,083
+Akademik yemek.
+
+618
+01:48:58,323 --> 01:49:25,823
+Çok olan şeyler değil. Bakın bu tarz şeyler de kullanılıyor. Bu bir. Birazdan farklı kullanımlarını da göstereceğim. Bu kaynağı inceleyebilirsiniz. Kelime, collocation'larına ilginiz varsa güzel bir kaynak aslında. Şöyle isterseniz şeyi paylaşabilirim veya şurayı paylaşayım da oradan. Academic Word List'in ve Academic Collocation List'in ileride dil skorları size lazım olacak.
+
+619
+01:49:26,131 --> 01:49:39,131
+tavsiye ederim. Bunun farklı farklı şeyleri var. Hatta Oxford'un belli bir araştırması var. İşte Oxford 500, Oxford 1500 gibi sınav. En sık geçen kelimeler şeklinde.
+
+620
+01:49:39,131 --> 01:49:51,131
+Bizim amacımız şu an arka arkaya gelen kelimelere bakmak. Elimizde bir sayı dizisi olacak. Bu sayı dizisinde arka arkaya en sık geçen şeyler nelerdir buna bakacağız. Şimdi bunu bulmak için
+
+621
+01:49:54,452 --> 01:50:02,452
+Doğrudan buradan bulabilir miyiz acaba? Mesela buna biz ne diyelim? M maddesi diyelim. Metnin M'si olsun.
+
+622
+01:50:02,452 --> 01:50:18,452
+1 ile 2 kaç defa geçiyor? 8 defa geçiyor. 2 ile 3 kaç defa geçiyor? 10 defa geçiyor. Böyle bir döngüyle bunu bulabilir miyiz? Yoksa başka bir şey mi yapmamız gerekecek? Nasıl bir çözüm üretebiliriz?
+
+623
+01:50:33,844 --> 01:50:34,699
+Evet.
+
+624
+01:50:40,979 --> 01:50:42,979
+Algorithmımız nasıl olabilir mesela?
+
+625
+01:50:52,979 --> 01:51:04,140
+Şimdi 1 ile 2'nin birlikte geçmesi, 2 ile 3'ün birlikte geçmesi, yani şimdi böyle bir metinden bir sürü var elimizde.
+
+626
+01:51:08,372 --> 01:51:19,171
+Soruyu tekrar hani şuraya açacak olursam, kelime ne dediğimiz şey, metindeki farklı kelime sayımız, yani bir dilde geçen bütün kelimeleri kodladık dedik.
+
+627
+01:51:19,171 --> 01:51:28,171
+Bir metnimiz var, burada id'ler tutuluyor. Bu metinde arka arkaya en çok geçen kelime ikilileri.
+
+628
+01:51:28,171 --> 01:51:34,171
+Şimdi ne yapacağız? Bunu buradan bulamayız doğrudan. Bir matrise aktarmamız gerekiyor.
+
+629
+01:51:34,771 --> 01:51:37,452
+Bu maddi ise, işte W maddisi diyelim.
+
+630
+01:51:39,851 --> 01:51:47,252
+Metnin i'si ile i artı birini sayarım arkadaşlar. Yani 1 ile 2 kaç tane geçmiş?
+
+631
+01:51:47,811 --> 01:51:54,692
+2 ile 3 kaç tane geçmiş? 3 ile 4 kaç tane geçmiş? Bakın ne yapıyoruz? Şurada bir pol döngüsü ile bunu sayarız.
+
+632
+01:51:55,372 --> 01:51:56,372
+O zaman yazalım.
+
+633
+01:52:08,595 --> 01:52:10,095
+Saat 50 mi geçiyor?
+
+634
+01:52:12,296 --> 01:52:15,695
+Şimdi blok yapalım mı, ara verelim mi arkadaşlar?
+
+635
+01:52:19,988 --> 01:52:24,988
+Tamam, blok yapalım. Çünkü kriptoloji ile alakalı kısma girmeyeceğiz.
+
+636
+01:52:26,988 --> 01:52:31,988
+Mesela diyelim ki int, m, 10 elemanlı bir şey olsun.
+
+637
+01:52:33,988 --> 01:52:41,988
+Burada geçen kelimeler, 2 nolu kelime, 4 nolu kelime var bir metinde, 3 nolu kelime, 5 nolu kelime var.
+
+638
+01:52:42,484 --> 01:52:48,484
+İki ne oldu kelime, sonra dört ne oldu kelime, sonra beş ne oldu kelime, sonra iki ne oldu kelime, sonra dört ne oldu kelime.
+
+639
+01:52:48,484 --> 01:52:55,484
+Böyle bir cümle pek olmaz. Şurada söylediğim bir şeyi, şurada aynısını tekrar söylüyorsun, şurada bir daha söylüyorsun.
+
+640
+01:52:55,484 --> 01:53:06,412
+Yani ben geldim ama dün ben geldim işte böyle saçma bir şey olur ama yine bunu çok uzun bir metin olarak düşünün. Yani burada bir milyon tane kelime var.
+
+641
+01:53:06,899 --> 01:53:20,699
+Şu birlikteliklere bakıyoruz. En yüksek şimdi şununla şunun sayısına, bununla bunun sayısına bakmak için bu ikisini alıp daha geri tarafta şey yapmak gerekiyor. Onun için bunu bir matrise yazmak gerekiyor arkadaşlar.
+
+642
+01:53:20,699 --> 01:53:29,699
+V matrisim olsun. W matrisim. Bu W matrisimiz de en fazla 10'a 10'luk. Hatta şuraya define diyelim.
+
+643
+01:53:31,699 --> 01:53:33,699
+Max 10 diyelim.
+
+644
+01:53:40,692 --> 01:53:52,091
+Bu bir kere max'a max olacak. Yani, diyeceğim ki şu i ve j diye kabul ettiğim şey başka kaç defa geçmiş. Bunu ilk başta şöyle sıfırlayalım.
+
+645
+01:53:57,427 --> 01:54:09,228
+Peki, burada nasıl sayacağız? 1 ile 2, 2 ile 3, 3 ile 4, şu diziyi gezerek matis'in içerisinde sayma yapacağız.
+
+646
+01:54:09,228 --> 01:54:16,728
+Bir tane i ve j oluşturayım. Dizi gezerken ikili ikili gezmek için i ve i artı bir kullanabilirim.
+
+647
+01:54:16,728 --> 01:54:24,728
+O zaman şöyle diyebiliriz, spor, i eşittir 0, i küçüktür şeye kadar.
+
+648
+01:54:25,587 --> 01:54:30,587
+n sayısına kadar, yani pardon şurada max'a kadar değiliz, aynı.
+
+649
+01:54:30,587 --> 01:54:32,587
+İlk basmaz.
+
+650
+01:54:32,587 --> 01:54:47,587
+Şimdi v'nin m'sinin i'si ile v'nin m'sinin i artı biri.
+
+651
+01:54:47,587 --> 01:54:50,587
+Çünkü bunlar ikililer.
+
+652
+01:54:50,587 --> 01:54:53,387
+Bunların sayısını arttırırım.
+
+653
+01:54:54,163 --> 01:55:07,963
+Şimdi şurada 2'ye 4 geldik. Acaba ileride bir daha 2'ye 4 bir yerde gelirse ne olacak? Bu V'nin üzerinde 2'ye 4'ün olduğu yerler ne olacaktır? Birer artacaktır. Burayı anladık mı?
+
+654
+01:55:12,916 --> 01:55:14,764
+Burada bir sıkıntımız var mı?
+
+655
+01:55:18,036 --> 01:55:24,036
+Peki, şöyle bir şey ekrana, hocam, B'nin sütun kısmı boş mu olacak? Sütun kısmı derken...
+
+656
+01:55:26,036 --> 01:55:30,036
+Ha, tamam. Doğru, doğru. Şurası şöyle arkadaşlar.
+
+657
+01:55:33,844 --> 01:55:46,244
+V'nin M'sinin İ'si ile V'nin M'sinin İ artı biri. Şöyle diyeceğiz. Şu an oldu. Tamam, teşekkür ederim.
+
+658
+01:55:48,244 --> 01:55:56,804
+İkinci kelime, dördüncü kelime var. 2 ve 4 bir arada birlikte olduğu için 1 arttı. Sonra şurada bir daha görecek, bir daha 1 artacak. Sonra bir daha görecek, 1 artacak.
+
+659
+01:56:00,884 --> 01:56:09,884
+Hangi kelime ile bir arada bulunuyor? Bunu bir şöyle yazalım. Ekrana yazdıralım.
+
+660
+01:56:14,771 --> 01:56:19,771
+Şimdi burada kelime sayımız aslında max max olarak yazabiliriz.
+
+661
+01:56:19,771 --> 01:56:30,771
+Yani en genel halini yazalım daha sonrasını şey yapalım. Burada printf ile i inci kelimenin değerini yazdırıyorum. Diyorum ki birinci kelime şu.
+
+662
+01:56:30,771 --> 01:56:38,771
+Hatta şöyle diyelim, birinci kelimeden neler var?
+
+663
+01:56:41,844 --> 01:56:45,444
+before döngüsü daha, işte j eşittir, sıfır diyelim.
+
+664
+01:56:46,724 --> 01:56:49,684
+j küçüktür, max.
+
+665
+01:56:55,828 --> 01:57:15,828
+Burada bir %d yazalım. Bu kelime ile birlikte diğer kelimeler işte bu V'nin iyisinin, W'nun iyisini diyeceğiz. Şöyle. Ondan sonra şurada da printf diyelim.
+
+666
+01:57:28,404 --> 01:57:31,204
+Art, arda mı yazıyor? T olacak herhalde değil mi?
+
+667
+01:57:37,427 --> 01:57:57,728
+Şimdi, sıfırıncı kelimeden sonra, sıfırıncı kelime yok, hiç yok, birinci kelime hiç yok, ikinci kelimeden sonra, sıfır, bir, iki, üç, dört, dördüncü kelime üç defa geçiyormuş. Evet, bunu bulduk.
+
+668
+01:57:57,728 --> 01:58:03,927
+Şimdi bu maddesin en büyük değerini bularak neye bakabiliriz?
+
+669
+01:58:04,404 --> 01:58:21,604
+Bir sürü metinlerde, yani baktık işte böyle elde ettiğimiz şeyde, metinde iki no'lu kelime ile birlikte en çok geçen şey kelime üçmüş, sonra beş ile birlikte en çok geçen kelime ikiymiş diyebiliyoruz.
+
+670
+01:58:23,604 --> 01:58:30,204
+Bu tabi bir önceki, bunu alıp başka şeylerde kullanmak mümkün.
+
+671
+01:58:30,676 --> 01:58:42,676
+Birazdan farklı kullanım göstereceğim. Bunu biraz daha detaylı araştırmak istersek, şimdi bulunan kelimenin eksi k ile artı k aralığındaki en çok kelimenin.
+
+672
+01:58:42,676 --> 01:58:56,775
+Yani ben şöyle yapacak olursam, şu kelimenin bir sonrakisine bakıyordum, işte bunun da bir öncekisine bakıyordum. Artık diyorum ki eksi k artı k aralığındaki kelime kullanımlarına bakalım.
+
+673
+01:58:58,003 --> 01:59:05,183
+İşte şunla şu ne kadar kullanıyor, bununla bu ne kadar kullanıyor, bununla bu ne kadar, ondan sonra bununla bu ne kadar.
+
+674
+01:59:05,183 --> 01:59:08,764
+Yani bu biraz daha ne oluyor? Anlamsal olarak derinleşmeyi sağlıyor.
+
+675
+01:59:10,764 --> 01:59:21,003
+Birlikte geçen kelimeler, işte bu bir dil bilimcinin şeyi, teorisi mi diyelim veya ifadesi, anlamsal olarak birbirine yakındır.
+
+676
+01:59:22,292 --> 01:59:31,792
+Çünkü, yani biraz önce söyledik işte, slightly increased, dramatically decreased. Bunlar birlikte geçen şeyler.
+
+677
+01:59:31,792 --> 01:59:45,792
+Mesela ne artar? Bir şeylerin sayısı artar değil mi? The number of something has dramatically decreased diye bir kalıp vardır İngilizce'de veya increased.
+
+678
+01:59:45,872 --> 02:00:02,372
+Şimdi, bir şeyin sayısı artar, bir şeyin fiyatı artar, öyle değil mi? Bir şeyin rengi artar mı veya kokusu artar mı? Gerçi koku belki artabilir, hani şiddeti. Bunlar frekansa dayalı şeyler. Başka, hani bir şeyin artan, azalan şeyleri bunlardır.
+
+679
+02:00:02,372 --> 02:00:11,912
+Hani alakasız bir şey geçmez. Bir şey increased veya decreased dediğinizde, ondan bir önceki değil de birkaç önceki kelimelere baktığınızda
+
+680
+02:00:12,032 --> 02:00:28,032
+Bunun anlamlı şey, hani İngilizce sınavlarda boşluk doldurma soruları olur ya, araya gelmesi gereken kelime ne? İşte o zaten bulmanız gereken kelime, şu öncesiyle, sonrasıyla anlamlı bir şey olması lazım. Çok saçma bir şey, yani yazamıyoruz.
+
+681
+02:00:28,032 --> 02:00:34,032
+Şu anlam bütünlüğünü burada aslında sayısal olarak, programlama olarak bulmaya çalışıyoruz. Demek istediğimiz şey bu.
+
+682
+02:00:35,380 --> 02:00:39,979
+Tamam, şu eksi k artı k aralığındaki şeyi nasıl bulacağız?
+
+683
+02:00:39,979 --> 02:00:44,380
+Hani bunu da farklı bir matrisle bulalım.
+
+684
+02:00:44,380 --> 02:00:49,380
+Mesela ona da diyelim ki, wk maddisi diyelim.
+
+685
+02:00:49,380 --> 02:01:01,003
+Yine bu da öncelik-sonralık ilişkisini wk olarak tutacak ama komşu bir önceki değil de, k önceki, k sonraki.
+
+686
+02:01:01,492 --> 02:01:21,532
+Bir önceki bir sonraki ne? K önceki, K sonraki diyeceğiz. O zaman şunu birazcık güncellememiz gerekiyor. Bir kere artık bir önceki bir sonraki değil, K önceki, K sonraki dediğimiz için şöyle bir yapı olmayacak. Şunu biraz revize etmemiz gerekiyor. Nasıl yazacağız? Sizden şey söyleyin bakalım. Şurayı revize edelim.
+
+687
+02:01:28,500 --> 02:01:38,100
+İki tane for. Tamam, o iki for da mutabıklısı var. Peki, ikinci for'u nasıl yazacağız? K önceki ve sonraki komşuluk.
+
+688
+02:01:40,500 --> 02:01:48,900
+Bir tane de K değerimiz olsun mesela şurada. K eşittir mesela. Bu örnek için 8 örneğimiz var ya, diyelim ki 3 olsun.
+
+689
+02:01:54,100 --> 02:02:07,100
+Şimdi i'yi nereden başlatmamız gerekiyor? Sıfırdan başlatırsak, bunun k öncekisi olmayacağı için i'yi arkadaşlar, sıfırdan başlatırsak, eksi üçüncü eleman diye bir şey yok, hani şunu sileyim.
+
+690
+02:02:07,100 --> 02:02:17,100
+i'yi bir kere en az k'dan başlatmamız gerekiyor ki, şurada üç verdik, bunun üç öncekisine gidebilelim.
+
+691
+02:02:17,100 --> 02:02:19,100
+Onun için...
+
+692
+02:02:19,539 --> 02:02:31,539
+I döngümüz, I dediğimiz döngü, yani birinci dıştaki döngü K'dan başlayacak. Bir de bizim max tane K'ımız, şey kelimemiz varsa, max-k'ya kadar gitmemiz gerekiyor.
+
+693
+02:02:32,640 --> 02:02:38,340
+Çünkü son ilk üçü ve son üçü rezerve bir şekilde şöyle söyleyelim.
+
+694
+02:02:44,051 --> 02:03:09,612
+K, şurası mesela üçüncü olsun. Bundan önceki üçüncüye bakmak için buradan başlayalım. Bir de bundan sonraki üçüncüye bakmak için şurada da üç tane kalması gerekiyor. Şurası nedir? Max ise, şurası max-3'dür. Max-3'dir. Aynen. Max-k diyeceğiz. Bu aralıkta bir kere gezeceğiz. Sonra yapacağımız şey ne olacak arkadaşlar? İçerideki döngü.
+
+695
+02:03:10,579 --> 02:03:23,780
+Kendisinden bulunan i'den 1 önceki, 2 önceki, 3 önceki, 4 önceki, k önceki veya 1 sonraki, 2 sonraki, 3 sonraki, 4 sonraki, k sonraki kadar her bir kelime ikilisine bakacak.
+
+696
+02:03:23,780 --> 02:03:35,180
+O zaman burada j eşittir. Bir kere biz j'yi, şöyle diyelim, bulunduğumuz yerden k kadar geriye ve k kadar ileriye gideceğiz.
+
+697
+02:03:37,908 --> 02:03:46,908
+K'ya ulaşana kadar. Şimdi eksi K demek C'de sizin K değerinizi negatife çevirir. Yani eksi 3 yapar. Eksi K'dan K'ya kadar gideceğiz.
+
+698
+02:03:46,908 --> 02:03:55,908
+J eksi K'dan başta, J K'dan küçük olduğu sürece J'yi 1 artır dersek ne oluyor? Eksi K, K aralığını gezeceğiz.
+
+699
+02:03:55,908 --> 02:04:02,908
+Yani burada 2K artı bir tane dönme, gezinme işlemi yapacağız demektir.
+
+700
+02:04:05,268 --> 02:04:30,908
+Şu bizim WK maddesimizde, WK maddesimizde, metindeki İ ile, metindeki neyi, metnin İ inci, İ inci metinle neyi çalıştırmamız gerekiyor? İ artı, J inci metnin birlikteliklerine bakmamız gerekiyor.
+
+701
+02:04:32,372 --> 02:04:55,612
+Neden i artıcı? Çünkü j şurada eksi k'dan başlayacak. k i burada sabit. Bundan bir geriye doğru, bir ileriye doğru. Biz şu an üçten başladık. Üç ile ikiye, pardon üç ile önce şeye, üç ile sıfıra, sonra üç ile bire, sonra üç ile ikiye, sonra üç ile üçe, kendisiyle kendisine.
+
+702
+02:04:56,148 --> 02:05:04,148
+Sonra 3 ile 4'e, sonra 3 ile 5'e, sonra 3 ile 6'ya kadar hepsini tek tek i artıcı demek zorundayız. Bunları gezecek.
+
+703
+02:05:04,148 --> 02:05:08,148
+Ve her bir gezdiğinde bulduğu ikilileri 1 arttıracak.
+
+704
+02:05:08,148 --> 02:05:15,148
+Burada kendisiyle kendisini 1 arttırdığımız için bunu bir geri almamız gerekiyor. Hani bunu burada yapabiliriz.
+
+705
+02:05:20,159 --> 02:05:27,159
+Yine m'sinin iyisini, yani şöyle diyeceğiz. Burada böyle parantezler maalesef birbirine karışıyor.
+
+706
+02:05:27,159 --> 02:05:35,159
+M'sinin iyisi. Kendisiyle kendisi şurada bir defadan fazla toplandığı için şunu bir tane şurada geri alabiliriz.
+
+707
+02:05:35,159 --> 02:05:40,159
+Bakalım şurada parantezlerde bir, doğru evet. Burayı anladık mı?
+
+708
+02:05:46,612 --> 02:05:50,211
+Kendinden öncekiler ve aynı şeyi şurada yeniden yazıyorum.
+
+709
+02:05:54,100 --> 02:05:56,100
+Görsel olarak tamam, söyleyelim.
+
+710
+02:05:58,100 --> 02:06:05,100
+Şimdi, şu benim yeterince uzun kelime liste.
+
+711
+02:06:06,100 --> 02:06:10,100
+Mesela şuradaki şeye bakacağım.
+
+712
+02:06:10,100 --> 02:06:12,100
+Buradaki şeye bakarken...
+
+713
+02:06:14,036 --> 02:06:24,036
+Mesela döngümüz, i değişkeni buraya geldi. Yani i'yi biz burada k'dan başlattık, k eşittir, üçüncüden başlattık, gezdik, gezdik buraya.
+
+714
+02:06:24,036 --> 02:06:38,036
+Şimdi k'mız bundan eksi üç öncesi şuradan itibaren bakıyor. Bununla buna bir bakıyor. Şu kelime ile şu kelime bakıldı, bir tane geçti, bunu bir arttırdık.
+
+715
+02:06:41,332 --> 02:06:57,332
+Bununla bu geçti, bir artırdık. Sonra bununla buna bakıyor. Bununla kendisine bakıyor, daha sonra siliyoruz. Sonra bununla buna bakacak, bir artıracak. Sonra bununla buna bakacak, bir artıracak. Sonra bununla buna bakacak, bir artıracak. Tamam mı şimdi?
+
+716
+02:06:59,332 --> 02:07:07,332
+Şu kelimeyi referans aldığında, herhangi bir aradaki kelimeyi referans aldığında, kendinden önceki üç, üç kabul edelim ve kendinden sonraki
+
+717
+02:07:07,475 --> 02:07:16,475
+kullanımları saydık. Şu en son fazladan saydığımızı bir tane geri aldık. Şimdi oldu mu burası? Önce burayı halledelim, ondan sonra koda geçeriz.
+
+718
+02:07:19,475 --> 02:07:27,475
+Tek bir kelime, yani bütün kelimeler için, bütün i'ler için bakacağız. Yani şuradaki bir başka kelime, bu baştan başlıyor, böyle devam edip gidiyor. Bütün kelimeleri tarıyoruz.
+
+719
+02:07:27,475 --> 02:07:32,475
+Aynen biraz önce yaptığımız gibi, nasıl ki yani şu örnekte...
+
+720
+02:07:33,171 --> 02:07:51,171
+Pardon, şuradaki örnekte 2 ile 4, 2 ile 4, işte başka yerde var mı? Birer birer bakıyoruz. Mesela diyoruz ki burada 5, 5 ile 4 bir baktık. Sonra 5 ile 3'e baktık. Sonra 5 ile 5'e baktık. 5 ile 2'ye baktık. 5 ile 4'e baktık.
+
+721
+02:07:51,171 --> 02:08:01,003
+5 ve 4'ün eksi k, k aralığında kaç defa mesela? Şu an 5 ile 4 iki defa geçti. Sonra devam ediyoruz. Bu 5'in, şurada bir 5 ve 4 bir daha geçti.
+
+722
+02:08:01,427 --> 02:08:07,828
+Bak şurada 5 ve 4 bir daha geçti. Dolayısıyla 5 ve 4, 4 defa birlikte kullanılmış oluyor. Tamam mı?
+
+723
+02:08:07,828 --> 02:08:21,028
+Tek bir kelime için değil. Yani her bir keinek kelime ikilileri ama bu kelime ikililerinin belli bir kuşakta, yani birer komşuluk değil de bir k-k aralığındaki şeyine bakıyoruz.
+
+724
+02:08:21,028 --> 02:08:25,828
+Şimdi şurada bulduğum wk maddesini aynen şurada olduğu gibi ekrana yazdırabilirim.
+
+725
+02:08:28,051 --> 02:08:30,051
+Şunu kopyalayalım ve değiştirelim.
+
+726
+02:08:35,060 --> 02:08:54,796
+I yazdıracağız. I yazdırdıktan sonra burada w, k'yı yazdıracağız. Evet, başka burada yazarken aksa kadar. Aynen, bu şekilde olacak. Şu araya bir backslash n ekleyelim.
+
+727
+02:09:07,572 --> 02:09:11,572
+Şuradaki K, şurayı büyük K diyeceğiz.
+
+728
+02:09:21,076 --> 02:09:23,076
+Ne oldu? Bir yerde bir şeye takıldı.
+
+729
+02:09:29,363 --> 02:09:38,955
+Bir yerde muhtemelen bir döngüye girip hata veriyor. K eşittir 3 dedik. Şunu yazdırması lazım. W matresi
+
+730
+02:09:46,612 --> 02:09:52,292
+Şurada bir hatamız olmaması lazım. Şimdi şunu bir şey yapayım, gözden geçireyim tekrar.
+
+731
+02:09:55,891 --> 02:10:01,692
+Yok, bir yerde bir şey yapmışız ki, bir şey değiştirmişiz, bu şey oldu, patladı.
+
+732
+02:10:03,832 --> 02:10:10,731
+Şimdi i eşittir sıfırdan i max'a kadar diyeceğiz. i artı artı, i yazdırdık, i yazdırdık, w yazdırdık.
+
+733
+02:10:11,332 --> 02:10:13,832
+Şurada başka bir şey yapmadık bildiğim kadarıyla.
+
+734
+02:10:16,952 --> 02:10:20,631
+w maddisi, m maddisi var, m maddisi var.
+
+735
+02:10:23,380 --> 02:10:27,380
+Şurada biraz önceki sonucu yazdırması lazım. Bir değerleyelim tekrardan.
+
+736
+02:10:31,283 --> 02:10:34,483
+Allah Allah, bir yerde bir şeyin dışına çıkıyor muhtemelen.
+
+737
+02:10:37,283 --> 02:10:42,083
+Max 10 dedik, 3, 6, 9.
+
+738
+02:10:42,683 --> 02:10:45,884
+Mesela buraya, ne diyeyim, 3 ekleyelim.
+
+739
+02:10:50,515 --> 02:11:07,315
+Allah Allah! Parantezlere bakalım. Şu şöyle, bu böyle, bu böyle. En azından şurayı mesela şöyle bir şey yapayım, printf. Şöyle bir debug yapalım.
+
+740
+02:11:10,996 --> 02:11:17,996
+Şuradaki parantezlerde bir arıza var mı? i ve i artı 1'e bakıyoruz. i eşittir 0.
+
+741
+02:11:19,496 --> 02:11:21,484
+Burada da bir şey görünmüyor.
+
+742
+02:11:25,300 --> 02:11:27,699
+Yok, şunu da yazdırmadı.
+
+743
+02:11:28,899 --> 02:11:33,899
+Hocam, w içerisinde virgül koymamız gerekmiyor mu?
+
+744
+02:11:34,899 --> 02:11:36,099
+Nerede?
+
+745
+02:11:36,699 --> 02:11:38,899
+Şu on birinci satırda.
+
+746
+02:11:40,099 --> 02:11:41,699
+On birinci satırda.
+
+747
+02:11:41,699 --> 02:11:46,699
+m, i artı bir arasında virgül, yanlış mı görüyorum?
+
+748
+02:11:46,699 --> 02:11:48,300
+C'de öyle bir şey yok.
+
+749
+02:11:48,699 --> 02:11:49,699
+Pardon.
+
+750
+02:11:49,699 --> 02:11:52,300
+Sen başka dille karıştırıyorsun mutlaka.
+
+751
+02:11:52,692 --> 02:11:58,692
+Doğrudan bu böyle M matrisimiz var.
+
+752
+02:12:01,692 --> 02:12:10,692
+Bunu yaptı, şuraya girdi. Şimdi i sıfırdan başladı. i küçüktür max iken i artı artı dedi.
+
+753
+02:12:13,692 --> 02:12:18,692
+Şurada M'nin i'si ve M'nin i artı birinci değerlerini alıp
+
+754
+02:12:19,764 --> 02:12:26,644
+1 artırdı. Maddesimiz zaten sıfırlardan oluş. Hatta şöyle 0,0 diyelim.
+
+755
+02:12:27,764 --> 02:12:31,604
+Hocam en son i artı 1 diyoruz ya, herhalde max'ın dışına çıkıyor orada.
+
+756
+02:12:33,283 --> 02:12:36,003
+O, on, for'un içinde, 10. satırda.
+
+757
+02:12:36,724 --> 02:12:38,804
+Ha, şurada, evet.
+
+758
+02:12:39,764 --> 02:12:43,123
+Ama dışına çıksa da orada herhalde şey engeli var.
+
+759
+02:12:43,844 --> 02:12:45,844
+Max-1 diyelim, tamam.
+
+760
+02:12:48,115 --> 02:12:51,115
+Sonuncuya bakmasın. Heh şimdi oldu.
+
+761
+02:12:52,615 --> 02:12:53,899
+Şunu silelim.
+
+762
+02:12:57,652 --> 02:13:02,152
+Biraz önce hata vermemesinin sebebi şu, bakın bu da iyi oldu hata.
+
+763
+02:13:03,152 --> 02:13:12,152
+Şunu eklemediğimizde, bellekteki verilen yer, dışına taşmamıza rağmen izin veriliyordu.
+
+764
+02:13:13,652 --> 02:13:20,152
+Halbuki şunu ekleyince, yani bir diğer bellek yeri ekleyince, bellek de başka bir yere taştığımız için şu kodda
+
+765
+02:13:20,627 --> 02:13:35,127
+Sistem bizi engelledi bakın. İşletim sistemi dedi ki iznin olmayan yere taşıyorsun. Onun için bu engellendi. İyi bir hata oldu, iyi ki gördük. Şimdi hangi kelime hangi kelime ile birer komşuluklu. Bunu biraz önce zaten bulmuştuk. Şimdi geldik K komşuluğa.
+
+766
+02:13:44,756 --> 02:14:02,916
+Şimdi, mesela, ikinci kelime ile, ne oluyoruz? İkinci kelime, bir dakika burada, 0, 1, 2. Üçüncü kelime, bir defa işte bu eksi 3 artı 3 aralığında geçmiş. 2 ile 4, iki defa geçmiş.
+
+767
+02:14:02,916 --> 02:14:07,036
+İşte bakın, 5 ile 2, biraz önce saymıştık gözü de, 4 defa geçmiş.
+
+768
+02:14:07,699 --> 02:14:19,699
+Aynı şekilde yine bu simetrik aslında, şununla şu 4 defa, yani şuradaki 5, şu, pardon burada 4'e karşılık geliyor, şu da 5 simetrik olduğu için burada bunu görüyoruz.
+
+769
+02:14:19,699 --> 02:14:31,699
+Böyle, 5 ile 2, bir dakika, 0, 1, 2, 3, 4, 5 ile 4 de 4 defa geçiyormuş. Bakalım şurada mesela.
+
+770
+02:14:33,108 --> 02:14:47,108
+5 ile 4. Evet, 5 ile 2, 3 komşuluk, aynı şekilde 5 ile 4. Zaten burada en fazla geçen değerli. Bu bize k komşuluğun şeylerini veriyor. Burada en sık kullanılanları alabilirsiniz.
+
+771
+02:14:47,108 --> 02:14:58,108
+Şimdi, size bir soru. Tabi bu konuyu biraz değiştirecek gibi ama bağlayacağım bir yere. Bir toplantı yapacağız. Bütün sınıfı çağırdık.
+
+772
+02:14:59,444 --> 02:15:02,204
+Nerede yapalım toplantıyı? Orta bahçede yapalım.
+
+773
+02:15:03,044 --> 02:15:06,684
+Geldiğinizde ne yaparsınız arkadaşlar? Daha toplantı başlamamış olsun.
+
+774
+02:15:09,084 --> 02:15:12,404
+Orta bahçeye bir ne bileyim stand gibi bir şey açacağız.
+
+775
+02:15:13,004 --> 02:15:16,004
+Bütün sınıf herkes arkadaşlarla gelecek. Ne yaparsınız?
+
+776
+02:15:18,868 --> 02:15:29,668
+Yer seçelim. Yer yok, oturacak yer yok. Sadece çimlere oturacağınız yer seçersiniz. Tamam, yer seçerken tek başımıza mı seçersiniz?
+
+777
+02:15:29,668 --> 02:15:32,468
+Arkadaşlarımızın yanına gideriz hocam.
+
+778
+02:15:32,468 --> 02:15:34,468
+Hangi arkadaşların yanına?
+
+779
+02:15:34,644 --> 02:15:36,644
+En yakın arkadaşlarımızın.
+
+780
+02:15:36,644 --> 02:15:40,644
+En yakın arkadaşlarınızda ne olursunuz? Kümelenirsiniz değil mi? Herkes kendi.
+
+781
+02:15:40,644 --> 02:15:46,644
+Yani uzaktan bakan birisi ne yapar? İşte orada bir grup var, orada bir öbür grup var. Demek ki bunlar iyi arkadaş.
+
+782
+02:15:46,644 --> 02:15:51,644
+Hani biz bunu atasözü haline de getirmişiz. Bana arkadaşını söyle, sana kim olduğunu söyleyeyim mi demişiz.
+
+783
+02:15:51,644 --> 02:15:59,644
+Şimdi bu da ona benziyor. Kimler kimlerle birlikte kullanılıyorlar? Hangi kelime, hangi kelimelerle beraber?
+
+784
+02:16:01,363 --> 02:16:26,315
+Konunun doğal dil işleme veya bir metin madenciliği kapsamında kullanımı var. Şimdi elinizde eğer böyle bir matriz varsa, şu matrizi oluşturduğumuz matriz varsa, anlamsal ve hesaplamalı anlam bilim bu bir şey. Fatih Hoca bunu yüksek lisansta ders olarak veriyor. Veya bu matrizi oluşturmadığımız,
+
+785
+02:16:27,123 --> 02:16:29,623
+Şimdi ben size oluşturmanın başka bir yolunu göstereceğim.
+
+786
+02:16:32,123 --> 02:16:44,623
+Hani bu birazcık şey, karmaşık bir algoritma gibi görünüyor. İşte bir komşuluk yine kolay da, K komşuluk olunca en karelik bir karmaşıklık var. Bir de bunu bütün şeyler için yapacaksınız arkadaşlar.
+
+787
+02:16:44,623 --> 02:16:50,623
+Hani elinizde bir tane metin var, bu bir tane mesela kitap. Kitaptaki kelimeleri kodladınız.
+
+788
+02:16:51,476 --> 02:17:00,156
+Bir sürü kitap varsa o zaman ne olacak? Bu bir matris haline gelecek. Her matris için, her satırı için bunu yaptığımızı düşünün.
+
+789
+02:17:00,156 --> 02:17:11,355
+O zaman ne olur? Şurası iki tane for olur. N kare karmaşıklık. Eğer bunu k komşuluk yaparsak n kare çarpı k karmaşıklık olur. Değil mi?
+
+790
+02:17:11,355 --> 02:17:16,636
+Aslı olan, tabi bunu tek bir metin için değil, bir sürü metin için. Yani bu diziden...
+
+791
+02:17:16,915 --> 02:17:27,415
+Belki milyon tane var, milyon tane kitap seçtiniz, her bir kitabın kelimelerini indekslediniz, indekslediğiniz kelimeleri sayı dizileri haline dönüştürdünüz, daha sonra böyle saydığınız W'yu oluşturdunuz.
+
+792
+02:17:29,215 --> 02:17:33,215
+Bunu daha basit bir şekilde nasıl oluşturabilirsiniz sizce?
+
+793
+02:17:35,915 --> 02:17:38,915
+Oraya doğru geliyorum da slide'daki yerini bulamadım.
+
+794
+02:17:40,915 --> 02:17:47,716
+Bu yaptığımız algoritmanın başka bir uygulamayla daha basit nasıl yapılabilir?
+
+795
+02:17:50,115 --> 02:17:59,716
+Şimdi, mesela berber, bakkal, kuaför, hastane, böyle yer kelimeleri bir veri kümesi var. Burada 3, 6, 9, 10 tane, her bir gruptan 10 tane kelime var.
+
+796
+02:17:59,716 --> 02:18:06,915
+Şimdi bunlar birbirine, birbiriyle arkalı önlü geldiklerini veya işte K komşulukta geldiklerini düşünün.
+
+797
+02:18:08,275 --> 02:18:15,275
+Anlamsal olarak bunlar birbirine yakın kelimeler değil mi? Balina ile Aslan veya Akbaba ile Arı gibi.
+
+798
+02:18:15,275 --> 02:18:20,275
+Şimdi Akbaba ile Avize'nin ne alakası var? Akbaba ile Lamba'nın çok bir alakası yok.
+
+799
+02:18:20,275 --> 02:18:24,275
+Ama bunlar kendi gruplar içerisinde birlikte geçen şeyler.
+
+800
+02:18:24,275 --> 02:18:32,275
+Şimdi bu W maddesini oluşturmanın bir diğer yolu da, arama motorlarını kullanıyorsunuz.
+
+801
+02:18:33,587 --> 02:18:36,587
+Mesela neyi aratalım? Bir ikili kelime söyleyin.
+
+802
+02:18:40,595 --> 02:18:42,595
+Bir kullanım söyleyin, Türkçe olsun.
+
+803
+02:18:48,595 --> 02:19:02,595
+Puan durumu. Gayet anlamlı bir ikili değil mi? Puan durumu dediğinizde bakın size ne söylüyor Google? 84-85 milyon tane kullanım var. Ekranı görmüyorsunuz.
+
+804
+02:19:02,595 --> 02:19:15,595
+Puan durumu. 85 milyon tane geçiyormuş. Direkt Google'a yazdım. Google'un apileriyle bunu elde edebilirsiniz. İstediğiniz herhangi iki kelimeyi
+
+805
+02:19:16,659 --> 02:19:23,979
+Böyle bir döngüyle gidin Google'a aratın, şuradan gelen sayısal sonucu size zaten doğrudan kaç tane sonuç bulunduğunu verin.
+
+806
+02:19:23,979 --> 02:19:32,419
+Mesela diyelim ki kendim aratayım, ne kadar geçiyormuşum. 111 bin defa, tabii benden başka akademisyenler de var.
+
+807
+02:19:32,419 --> 02:19:37,219
+Şunların bazıları akademisyen bu arada. Onun için başkalarına mail gönderiyorlar.
+
+808
+02:19:37,219 --> 02:19:42,219
+İşte bir tanesi Isparta'da, bir tanesi başka bir üniversitedeymiş. Yani beni o zannediyorlar.
+
+809
+02:19:42,835 --> 02:19:53,835
+Bu böyle. Mesela anlamsız bir şey söyleyelim. Anlamsız bir şey olsun. Bu arada beni yazınca Ali Can Hoca çıktı ya. İkimiz ortak ders verdiğimiz için herhalde böyle.
+
+810
+02:19:59,603 --> 02:20:04,603
+Evet, anlamsız bir kelime grubu.
+
+811
+02:20:10,388 --> 02:20:12,388
+Uydurun arkadaşlar bir şey.
+
+812
+02:20:13,388 --> 02:20:15,388
+Müdür Su.
+
+813
+02:20:16,388 --> 02:20:18,388
+Hemen aratalım.
+
+814
+02:20:19,388 --> 02:20:23,388
+Böyle müdür Su diyelim.
+
+815
+02:20:24,388 --> 02:20:27,388
+Bu da 87 bin tane yani böyle bir şey mi var?
+
+816
+02:20:28,388 --> 02:20:36,388
+Ha şey, Su İdaresi Genel Müdür mesela olmadı da mesela müdürle beraber ne olabilir? Ahtapot diyelim yani.
+
+817
+02:20:39,059 --> 02:20:49,559
+211.000. Yani bu şey, böyle farklı örnekler bulmak lazım da, sıklık ne kadar azalırsa, yani şu frekans ne kadar azalırsa, anlam ilişkisi düşüyor.
+
+818
+02:20:49,559 --> 02:20:54,659
+Şimdi, bu tarz veri cümeleri üzerinde şöyle şeyler yapmışlar.
+
+819
+02:20:54,659 --> 02:21:02,259
+Şimdi bu kelimeleri birlikte kullanımlarıyla aratıyorlar ve bizim biraz önce bulduğumuz...
+
+820
+02:21:03,507 --> 02:21:20,507
+W matrislerini elde ediyorlar. Bir sürü metin üzerinde ama yani bu 3-5 böle basit yerler üzerinde değil. Bu W matrisini bir yöntemle iki boyutlu sisteme çizdiriyorlar.
+
+821
+02:21:20,507 --> 02:21:27,275
+Mesela bu Google ile bulunmuş sayılarla elde edilmiş bir kelime koordinatları.
+
+822
+02:21:27,316 --> 02:21:41,316
+Burada koordinatın bulunduğu yerin hiç önemi yok. Yani biraz önce size dedim ya, toplantı yapacağız. Herkes kendi grubuna, bu grubunun olduğu yerde, arkadaş çevresinde bir şekilde kümelenir.
+
+823
+02:21:41,316 --> 02:21:52,908
+Ama nerede oturduğunuz, nerede durduğunuz mühim değil. Yani orada bir yerde duruyorsunuz. Mesela o W maddesini koordinat sistemine çizdirdiklerinde, bakın mesela şöyle bir gruplaşma görüyoruz.
+
+824
+02:21:53,652 --> 02:22:12,152
+Alakalı şeyi bozan elbette şeyler vardır. Bakın mesela şurada sanki araçlar var. Araç bağlamında düşündüğümüzde ambulans da bir araç, otomobilde bir araç. Mesela şurada baktığımızda hastane, park, okul, hizmet sektörüne dair şeyleri görüyoruz.
+
+825
+02:22:16,435 --> 02:22:24,755
+Hani farklı bir anlam ilişkisi işte araç ilişkisi olarak baktığımızda işte vehicle dediğimiz şunları bir arada görüyoruz.
+
+826
+02:22:24,755 --> 02:22:33,155
+Ve hayvan dediğimizde şunları bir arada görüyoruz. Şurada mesela bazı hayvanlar var işte sedan nedense hani ata yakın şey gelmiştir.
+
+827
+02:22:33,155 --> 02:22:36,435
+Yani belki bununla alakalı mesela at ve sedan diye aratalım.
+
+828
+02:22:38,435 --> 02:22:40,435
+Veya sedan at diye aratalım.
+
+829
+02:22:43,188 --> 02:22:53,131
+Yani of, beş milyar şey de bu kadar, veya sedan at demeyelim de öbür kelime neydi? Bizon diye aratalım hadi.
+
+830
+02:22:57,427 --> 02:23:21,427
+Şu biraz daha bakın, 4.600.000 yani nispeten az. İlla ki şeyleri yani birlikte geçen, hatta bunu şöyle aratsak belki daha türkün bir şey yapabiliriz. Gerçi bu birebir eşleşmelere bakıyor. Bakın 4 tane. Sedan artı biz 10 dediğimizde ayrıca bakmamız lazım.
+
+831
+02:23:21,427 --> 02:23:23,852
+Şöyle bakalım.
+
+832
+02:23:28,180 --> 02:23:32,180
+Bir saniye arkadaşlar, bölümden arayan var. Hemen ona bir cevap vereyim.
+
+833
+02:23:51,731 --> 02:23:53,231
+Hemen bitireceğiz zaten.
+
+834
+02:24:04,628 --> 02:24:27,628
+Evet, şuradan devam edelim. Bu Google ile ikinci veri kümesi üzerinde yapılan şey. İkinci veri kümesi, yani şurada, bir dakika niye buradan gidiyoruz? Şu birinci veri kümesi imiş. Şurada yapılan şey aramalarda, yani ikili olarak bunları aratıyorsunuz işte. W maddesini oluştukuyorsunuz.
+
+835
+02:24:28,244 --> 02:24:36,244
+Şöyle bir şey, mesela avize, koltuk, kapı, bilgisayar, bakın şurada şöyle bir gruplaşma, hatta merdiveni de buraya dahil edebiliriz.
+
+836
+02:24:36,244 --> 02:24:44,244
+Mesela aslan, akrep, bakın yerler önemli değil. Benzer şeyler birbirine yakın yerlerde kümeleniyor.
+
+837
+02:24:44,244 --> 02:24:53,244
+Bu tarz durumlarda mesela bunu nerede kullanıyoruz? İşte bir optik karakter tanıma eski kitaplarda yapıyorsunuz.
+
+838
+02:24:55,956 --> 02:25:05,956
+Yanlış şey yapmış, koymuş oraya. Mesela kirli toprak yerine kıllı toprak koymuş. Askifying problem deniyor buna.
+
+839
+02:25:05,956 --> 02:25:14,956
+İşte Türkçe karakterleri, İngilizce karakterleri çevirirken I yerine I koyuyor. Şimdi kıllı toprak mı, kirli toprak mı?
+
+840
+02:25:14,956 --> 02:25:19,564
+Nedir bu? Muhtemelen bu anlam ilişkilerine bakarak düzeltilebilecek bir şey.
+
+841
+02:25:20,084 --> 02:25:34,584
+Birlikte kullanımlara bakarak düzeltilecek bir şey. Baktığımız zaman, şurada kirli toprak diyelim. Ben olsam ne yaparım? 471'de. Tam tersi çıkıyormuş.
+
+842
+02:25:34,584 --> 02:25:44,084
+Allah Allah, bu niye? Tabi arama motorlarının da şeyde, nedense bu tam şey çıkıyor.
+
+843
+02:25:45,139 --> 02:25:52,739
+Normal bir metinde bunlar çıkmaz yani bu kadar şey çıkmaması lazım. Bakın yani kıllı şey olarak çıkıyor. O zaman şöyle aratalım.
+
+844
+02:25:52,739 --> 02:26:05,779
+Yani birer komşuluk var. Bu 92.000 defa. Şöyle yaparsak daha doğru. İşte bu yapma ya. Niye 85.700?
+
+845
+02:26:11,615 --> 02:26:18,015
+Kıllıları da bakın böyle kirli diye yapıyor. Birebir arama yapmadığı için muhtemelen böyle.
+
+846
+02:26:18,015 --> 02:26:25,495
+Gerçek şeylere de bakıldığında bu normalde daha çok kirli olan daha çok çıkacak şeydir.
+
+847
+02:26:25,495 --> 02:26:34,136
+Bu tarz şeyler de çıkıyor. Bundan sonra bunun farklı kullanım alanları var. Bakın bu yaptığımız işlem bir ön işlemin bir ön işlemi gibi.
+
+848
+02:26:38,515 --> 02:27:00,855
+Anlamsal uzay dediğimiz, birlikte kullanılan kelimelerin böyle iki boyutlu sistemde birbiriyle ne kadar ilişkisi var? Yani şuradaki grup şurada olabilirdi, buradaki grup burada olabilirdi. Bu önemli değil. Çünkü biz kelimelere kafamıza göre ID veriyoruz, 1-2-3-4-5-6 diye.
+
+849
+02:27:01,459 --> 02:27:12,459
+Birinci kelime ile onbeşinci kelimenin arasındaki o ondört fark anlam ifade etmiyor. Birlikte kullanım burada bizim için önemli olan bir şeydir. Tamam mı?
+
+850
+02:27:12,459 --> 02:27:20,459
+Evet, burada sormak istediğiniz bir şey var mı? Şimdi bunu daha ileri seviyede yapan, ders notumuza geri dönüyorum.
+
+851
+02:27:20,459 --> 02:27:24,459
+Şeyler var, bu başka nerede işimize yarayacak?
+
+852
+02:27:28,564 --> 02:27:53,564
+Glove gibi araçlar var. Bunlar arasında mesela şey yapıyorsunuz, bir kelimenin sinonimlerini bulma veya collocation'larını bulma gibi araçlar, yani hem yapay zeka temelli hem de başka hesaplama temelli araçlar bunlar. Bunlarla bu analizler çok rahat yapılabiliyor. Yani bu bahsettiğimiz yöntemleri kullanıyor bunlar. İşte bazıları yapay zeka tekniklerinden faydalanıyor.
+
+853
+02:27:55,379 --> 02:28:03,379
+Şöyle bir kelime ile şöyle bir kelime grubunun birbiri arasında benzerlik, anlamsal benzerliği buluyorsunuz.
+
+854
+02:28:03,379 --> 02:28:07,379
+Bakın yapısal benzerlik burada her zaman işe yaramıyor.
+
+855
+02:28:07,379 --> 02:28:15,379
+Şimdi Galatasaray kelimesine çok yakın bir yapısal benzerlik nedir? İçinde a'lar, l'ler, t'ler geçen aklıma ne geliyor? Salatalık geliyor.
+
+856
+02:28:15,379 --> 02:28:21,379
+Ben de Galatasaraylıyım ama hani böyle hakaret gibi algılanmasın. Şimdi salatalık içinde S var.
+
+857
+02:28:22,036 --> 02:28:27,036
+A'lar var, L var, T var, gayet benziyor değil mi yapısal olarak birbirine baktığımızda?
+
+858
+02:28:27,036 --> 02:28:32,036
+İşte belki %60, %70 bir benze ama anlam alakası var mı? Yok.
+
+859
+02:28:32,036 --> 02:28:37,036
+Cimbom ile Galatasaray'ın birbirine yapısal benzerliği var mı? Yok.
+
+860
+02:28:37,036 --> 02:28:40,036
+İşte anlamsal benzerlik var ama.
+
+861
+02:28:40,036 --> 02:28:46,036
+Neden var? Bunlar birbirine kullanılması şey ile elde edilen frekanslara baktığınızda...
+
+862
+02:28:47,156 --> 02:28:57,976
+Yapısal bir benzerlik elde ediyoruz. Ne sayesinde? İşte şu basit, şuradaki n çarpı k'lık matriz sayesinde bunu görebiliyoruz.
+
+863
+02:28:57,976 --> 02:29:11,036
+Sorumuz var mı arkadaşlar? Burada bu uygulamayı keselim. Gelecek hafta kriptoloji ile alakalı, şifreleme ile alakalı en temel örneklerden basit birkaç örnek üzerinde konuşacağız.
+
+864
+02:29:11,252 --> 02:29:33,612
+Sonra ders 11 slide'ımız var, oradan bir şeyler başlarız. Bu şekilde örnekler çözeceğiz, görüntü işleme, kriptoloji, ondan sonra başka bazı konular var. Böyle devam edeceğiz. Bugünlük burada keselim. Bunu tamamen bilerek bitirmedim. Detaylı gidelim ve anlaşılır olsun istedim. Sorunuz yoksa bugünlük kapatabiliriz.
+
+865
+02:29:39,796 --> 02:29:44,796
+Peki, size de iyi günler. Görüşmek üzere arkadaşlar, hoşçakalın.
