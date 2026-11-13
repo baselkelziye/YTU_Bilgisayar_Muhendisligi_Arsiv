@@ -25,3 +25,6 @@
 - 📄 **Not:**[Zehra Aksoy'un Notları](./slaytlar_notlar/2024/zehra_aksoy) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- HHB

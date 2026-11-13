@@ -4004,6 +4004,10 @@
                 {
                     "kisaltma": "ZCT",
                     "ad": "Dr. Ziya Cihan Tayşi"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
                 }
             ],
             "guncel_mi": true,
@@ -4117,7 +4121,12 @@
             "yil": 0,
             "donem": "yok",
             "tip": "Lisansüstü",
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "HHB",
+                    "ad": "Prof. Dr. Hasan Hüseyin Balık"
+                }
+            ],
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "**Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2023/onder_gormez%20markdown)",
