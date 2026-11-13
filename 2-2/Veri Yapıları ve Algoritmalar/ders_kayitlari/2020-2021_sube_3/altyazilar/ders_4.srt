@@ -1,0 +1,395 @@
+1
+00:01:44,724 --> 00:01:51,103
+Evet arkadaşlar, hoş geldiniz hepiniz. İkinci haftadayız, ikinci haftada lap saatindeyiz.
+
+2
+00:01:52,264 --> 00:02:03,044
+Bu hafta çok uzun bir lap saati olmayacak. Sadece sizin sorularınıza ve dersle ilgili ya da anlattığımız konularla ilgili merak ettiklerinize vakit ayıracağım.
+
+3
+00:02:03,763 --> 00:02:15,063
+Önümüzdeki hafta kaldığımız yerden devam ediyor olacağız. O yüzden şimdi hem dersle ilgili hem konularla ilgili soru sormak isteyen varsa hemen sorular kısmına geçebiliriz.
+
+4
+00:02:17,763 --> 00:02:28,403
+Sizden şimdi el kaldırmanızı bekliyorum. İsterseniz çatıda yazabilirsiniz. Merak ettiğiniz, anlamadığınız, anlattığınız konularda kafanıza takılalım.
+
+5
+00:02:30,099 --> 00:02:35,459
+Dersle ilgili sormak istediğiniz bir şey varsa sorabilirsiniz.
+
+6
+00:02:50,259 --> 00:02:57,419
+Önümüzdeki hafta ders saatinde bu haftaki derste bahsettim ama tekrar söyleyeyim.
+
+7
+00:02:58,199 --> 00:03:09,579
+Algoritmalarınız ile ilgili kısımları, ilk o notasyonunu, kompleksitelerde worst case, best case, average case nedir, asintotic notation nedir.
+
+8
+00:03:10,479 --> 00:03:13,799
+Bunların üzerinden bir kez daha geçeceğiz detaylı bir şekilde.
+
+9
+00:03:14,259 --> 00:03:17,599
+Eksik kalan kısımları anlatacağız. Arkasından da linked listelere geçeceğiz demiştik.
+
+10
+00:03:18,195 --> 00:03:24,635
+Link listeler üzerine hatta bizlerle farklarını konuşmuştuk.
+
+11
+00:03:25,415 --> 00:03:32,875
+Neden link liste tercih ettiğiniz, aslında böyle bir veri yapısının ne tür avantajlar sağladığını kısaca bahsetmiştik.
+
+12
+00:03:32,875 --> 00:03:35,875
+Bu yapıyı kuruduktan sonra...
+
+13
+00:03:36,340 --> 00:03:41,080
+Bütün diziler üzerinde yapabildiğiniz işleri aslında linked liste üzerinde de yapabileceksiniz.
+
+14
+00:03:41,660 --> 00:03:47,780
+Fakat bazı işlemlerin daha maliyetli, bazı işlerin ise daha az maliyetli olduğunu göreceksiniz.
+
+15
+00:03:48,379 --> 00:03:51,400
+Bu birazcık yapacağınız işe bağlı.
+
+16
+00:03:51,520 --> 00:03:59,460
+O yüzden de unutmayın ki veri yapıları probleme bağlı olarak avantajlı ya da dezavantajlı olabilir.
+
+17
+00:03:59,580 --> 00:04:01,300
+Yani bir veri yapısı harikadır.
+
+18
+00:04:01,639 --> 00:04:03,639
+Her türlü sorununuzu çözen diyemiyorsunuz.
+
+19
+00:04:04,084 --> 00:04:21,204
+O probleme uygun veri yapısını kullanmak. Zaten bu dersin amaçlarından bir tanesi de gerçek hayat problemlerini, öğrendiğiniz veri yapılarının hangilerini uygulamanız gerektiğini karar vereceğiniz bilgilere sahip olmak. Çok farklı veri yapılarını konuşuyor olacağız.
+
+20
+00:04:23,860 --> 00:04:35,940
+Gerçek hayattaki problemlerle ilgili sorular da sorabilirsiniz. Mesela burada ne kullanılıyor vesaire diye de aklınıza takılan bir şey olursa bunları da konuşursak sizin için daha faydalı olacaktır diye düşünüyorum.
+
+21
+00:04:39,636 --> 00:04:47,416
+Evet, sorusu olan var mı? Geçtiğimiz hafta, bu hafta derste, evet [öğrenci]'dan bir soru geldi, dinliyorum.
+
+22
+00:04:47,956 --> 00:04:55,556
+Hocam, time complexity'yi karşılaştırmak için iki algoritmaların başka ne tür şeyler kullanıyoruz, yöntemler?
+
+23
+00:04:55,556 --> 00:05:01,936
+Tamam, güzel bir soru. Bu aslında algoritma analiz dersinin konusu olmakla birlikte. Kısaca bilgilendirme yapalım.
+
+24
+00:05:03,987 --> 00:05:31,888
+Teorik olarak iki algoritmayı karşılaştırmanın en iyi yönü asintotik notation kullanmak dedik. Bunun içinde Big O notasyonu var, Omega notasyonu var. Onun dışında bu bahsetmiş olduğumuz yapıya bir de ek olarak Theta, Big Theta notasyonu var. Big Omega ile Big O'nun aynı olduğu durumlarda Big Theta'yı kullanıyor olacağız. Bunu göreceksiniz.
+
+25
+00:05:31,987 --> 00:05:41,427
+Tight bound diyoruz. Big omega upper boundu, pardon, big O upper boundu, big omega da lower bound oluşturuyor algoritmalarını.
+
+26
+00:05:41,788 --> 00:05:46,788
+Worst case, average case ve best case'den farklı bunlar. Birbiriyle karıştırmamak lazım.
+
+27
+00:05:47,427 --> 00:05:50,987
+Ama ne kullanabiliriz sorusu için hemen cevaplayalım. Birincisi...
+
+28
+00:05:51,283 --> 00:06:09,843
+İki algoritmanın kodunu yazabilirsiniz. Kodunu yazdıktan sonra bunların sürelerini ölçebilirsiniz. En sık yapılan deneysel çözümlerden bir tanesi bu. Kodun çalışma süresini aynı input ile ölçmeniz gerekiyor.
+
+29
+00:06:10,675 --> 00:06:20,675
+Burada arka planda çalışan işlem gören proseslerden ayırmanız lazım. Bunun için de kodun başlangıcına ve bit içine time koyuyorsunuz.
+
+30
+00:06:20,675 --> 00:06:33,675
+Burada time'ı koysanız da aynı donanım üzerinde çalıştırmanız çok önemli. Aynı donanım şartları ve memory şartları üzerinde, CPU şartları üzerindeki algoritmayı karşılaştırmanız önemli.
+
+31
+00:06:37,343 --> 00:06:42,903
+Yöntemlerin başında algoritmaların implement edilmesi ve sürelerinin ölçülmesi gerekiyor.
+
+32
+00:06:43,504 --> 00:06:55,144
+Zaten ölçtüğünüz sürelerde size işte o algoritmanın O n mi, O n kare mi, O log n mi, O n log n mi olduğunu grafiği çizdiğinizde göstermiş oluyor.
+
+33
+00:06:57,244 --> 00:07:01,824
+Evet, başka sorusu olan [öğrenci].
+
+34
+00:07:03,699 --> 00:07:16,599
+Hocam merhaba, soru sorun soru da sorabilirsiniz demiştiniz de benim hakkımda bu araş bir soru var. Bu blockchain nedir? Bununla alakalı birazcık araştırdım ama tam olarak anlayamadım.
+
+35
+00:07:17,716 --> 00:07:34,136
+Blockchain konusu tabii hem dersimizin çok ötesinde bir konu hem de aslında detaylı bir şekilde anlatılması gereken bir konu ama Blockchain yapısı bize şunu sunuyor. Sizin bir bilgiyi.
+
+36
+00:07:34,548 --> 00:07:41,887
+Birden fazla bilgisayar üzerinde saklamınıza yarayan bir yapı olarak adlandırabiliriz blockchain'i.
+
+37
+00:07:41,887 --> 00:07:48,887
+Bu sayede özellikle güvenlik anlamında bu zincirden bir tanesi kırıldığı takdirde...
+
+38
+00:07:49,204 --> 00:08:11,644
+Bilgisayarlar, bilgiyi saklayan bilgisayarlardan bir tanesine erişemediğiniz takdirde o bilginin oluşturulması mümkün olmuyor. Bu da bir özellikle kriptografi aranında kullanılmasının sebebi de sizin dağıtık yapıda bilgiyi saklayarak herhangi bir saldırı anında tek bir noktanın çökertilmesi.
+
+39
+00:08:12,144 --> 00:08:22,959
+mümkün olduğunda bilgiye ulaşılabiliyor. Ama blockchain yapısında sizin bütün noktalara erişmeniz gerekiyor. Bütün dağıtık yapıdaki bilgileri bir araya getirip...
+
+40
+00:08:22,959 --> 00:08:46,319
+O bilgiyi oluşturmanız gerekiyor. Bu da güvenliği çok ciddi oranda arttırıyor. Bize dezavantajı nedir? Farklı cihazlar üzerinde dağıtık yapılarına saklandığı için ciddi derecede bir enerji tüketimi söz konusu. Bunun için özellikle şifreleme alanında o bilgisayarların, dağıtık yapılarına çalışan bilgisayarların önemli iktarda enerji harcadığını söyleyebiliriz.
+
+41
+00:08:46,703 --> 00:09:03,983
+O yüzden de kripto körüncüler için şu andaki en büyük tehditlerden bir tanesi bu kripto paraları saklamak için kullanılan blockchain yapısının ciddi derecede enerji tüketiminin yüksek olması.
+
+42
+00:09:04,523 --> 00:09:06,943
+Bununla ilgili çözümler aranıyor şu anda.
+
+43
+00:09:06,943 --> 00:09:11,943
+Çünkü herkes aynı şekilde kendi kripto körüncüsünü oluştursa.
+
+44
+00:09:12,371 --> 00:09:23,551
+Bununla ilgili enerji anlamından hem çevreye zarar hem de maliyet açısından yüksek derecede problem yaratacak bir durumla karşı karşıya kalabilirsiniz.
+
+45
+00:09:24,571 --> 00:09:38,371
+Bir nevi linked liste mi diye sormuş [öğrenci]. Yani bir bakıma öyle diyebilirsiniz. Çok doğrudan benzetmek uygun olmaz ama blockchain yapısı bilgiyi...
+
+46
+00:09:39,508 --> 00:09:47,627
+Esas ana bilgiyi oluşturmak için bir araya getirmeniz gereken alt parçalardan düşen bir yapı diye düşünemesiniz.
+
+47
+00:09:49,327 --> 00:10:04,508
+Evet, küresel ısınmaya sebebiyet verdiği için bu blockchain ile ilgili, ülkelerin açıkçası regulasyonlarını bilmiyorum ama bu konuyla ilgili o kadar hızlı ilerlenmesinin, ilerlenmemesinin en yükseklenden bir tanesi bu.
+
+48
+00:10:05,508 --> 00:10:06,508
+Enerji cüketiminin.
+
+49
+00:10:07,283 --> 00:10:28,844
+Yüksek olması sadece ısı anlamında değil. Biliyorsunuz bugün gerçekleştirdiğimiz her faaliyet, her üretim bandında suyun da kullanılması anlamına geliyor. Su kaynaklarını da bilgisayar enerji çektiği anda su kaynaklarını da tüketmiş oluyorsunuz. O yüzden aslında buradan ufak bir mesaj da verelim.
+
+50
+00:10:29,200 --> 00:10:54,040
+Belki çok sempatik karşılamayabilirsiniz ama hani böyle çok bilinen mesajları su tüketimine özellikle dikkat etmek lazım. Yoksa önümüzdeki senelerde özellikle sizler için uzun vadede sıkıntı oluşma olasılığı çok yüksek. Enerjiyi verimli kullanmamız gerekiyor, kaynakları verimli kullanmamız gerekiyor uzun vadede. Hatta bununla ilgili green computing diye bir alan var.
+
+51
+00:10:56,115 --> 00:11:02,515
+Kendi kendine enerji, yenilenebilir enerji vs. konuları var. Bu alanlarla da ilgilenebilirsiniz.
+
+52
+00:11:02,676 --> 00:11:07,035
+Uzun bir açıdan oldu ama [öğrenci] sanırım sorusunu kısmen de olsa cevaplamış olduk.
+
+53
+00:11:07,895 --> 00:11:13,775
+Bu konuya iyi alaka gösterirseniz uzun vadede size mutlaka katkı sağlayacaktır blockchain konusu.
+
+54
+00:11:14,355 --> 00:11:16,216
+Hatta bununla ilgili proje yapmayı bile düşünebilirsiniz.
+
+55
+00:11:17,596 --> 00:11:18,891
+Evet, başka sorusu olan...
+
+56
+00:11:30,676 --> 00:11:39,676
+Tabi bu ikinci hafta olduğu için belki çok sorunuz olmayabilir. Bunu normal karşılıyorum. Çünkü konular yeni başladı ki yeni konular daha hani çok...
+
+57
+00:11:40,080 --> 00:12:00,540
+dersin içerisinde ön plana çıkmadı. Ama önümüzdeki haftalardan itibaren muhtemelen derste anlattığımız konularla ilgili daha fazla aklınıza soru işareti takılıyor olacak. Onları yanıtlamak için de bu saati kullanıyor olacağız. Genelde bu saati çok uzun kullanmayacağız. Sadece quiz olursa.
+
+58
+00:12:00,916 --> 00:12:20,556
+Ödev olursa vesaire o zaman biraz ulus olacak. Ama onun için de bazen örnek çözmek için kullanacağız. O haftaki konu yeterince anlaşılmadıysa, yeterince örnek çözemediysek o zaman da bir saat civarında bir zaman dilimi harcıyor olacağız ders için yaklaşık olarak.
+
+59
+00:12:23,076 --> 00:12:26,115
+Evet, başka soru? Evet, [öğrenci].
+
+60
+00:12:27,796 --> 00:12:34,256
+Hocam, benimki soru değil de bir nevi istek. Kimsenin sorusu yoksa, arkadaşlar da katılıyorsa örnek çözümü yapabilir miyiz?
+
+61
+00:12:35,256 --> 00:12:35,896
+Bugün için mi?
+
+62
+00:12:36,496 --> 00:12:39,876
+Yani kimsenin sorusu yoksa, evet. Bugün için yapabilir miyiz?
+
+63
+00:12:40,096 --> 00:12:46,256
+Bugün için böyle bir şeyi yapamayız. Çünkü özel olarak sizin için bir örnek hazırlamadım.
+
+64
+00:12:46,607 --> 00:12:53,967
+Ama önümüzdeki haftalarda böyle bir talebiniz varsa her hafta bir örnek yapacak şekilde bir planlama yapabiliriz tabii ki.
+
+65
+00:12:54,487 --> 00:13:00,648
+Benim için güzel hocam açıkçası. Çünkü görünce daha akılda kalıcı oluyor. Sizin altınızda daha hoş oluyor.
+
+66
+00:13:01,347 --> 00:13:06,888
+Haklısın. Onun için de yeni konularla birlikte zaten bu fikrini gerçek hayata uyarlayabiliriz.
+
+67
+00:13:07,427 --> 00:13:07,687
+Tabii ki.
+
+68
+00:13:08,028 --> 00:13:08,807
+Teşekkür ederim hocam.
+
+69
+00:13:08,827 --> 00:13:10,967
+Ben teşekkür ederim. Sağ ol. Evet [öğrenci].
+
+70
+00:13:11,764 --> 00:13:18,624
+Ben ilk hafta sormuştum size, ders dışı algoritma sorusu sorarsam çözebilir miyiz, Lapsat ne diye de.
+
+71
+00:13:18,764 --> 00:13:19,764
+Bunu şöyle yapabiliriz.
+
+72
+00:13:19,764 --> 00:13:22,664
+[öğrenci]'ın dediği gibi, biraz örnek gibi olabilir.
+
+73
+00:13:23,424 --> 00:13:26,884
+Güzel, onu hatırlattın, iyi oldu [öğrenci]. Şöyle bir şey yapabilirsiniz.
+
+74
+00:13:27,424 --> 00:13:32,764
+O gün, pazartesi günkü dersten sonra bana en geç salı öğlene kadar...
+
+75
+00:13:32,912 --> 00:13:55,972
+Böyle aklınızda olan bir soru gönderirseniz ama tabii ki ders saatinde anlatılabilecek nitelikte olmalı ve konularımızla alakalı olmalı. Ben o haftaya da ondan sonra bir sonraki haftaya onunla ilgili bir hazırlık yapıp size o merak ettiğiniz soruyla ilgili bir çözüm yolu, bir yaklaşım, birlikte tartışanak yapabiliriz. Bu bir olasılık.
+
+76
+00:14:03,988 --> 00:14:10,108
+Evet, o zaman gördüğüm kadarıyla başka bir soru yok. Önerisi olan var mı? Başka bir öneri bu saati kullanmak açısından.
+
+77
+00:14:16,371 --> 00:14:17,811
+İsteği olanlar ve dersle ilgili.
+
+78
+00:14:22,548 --> 00:14:26,067
+Peki, o zaman sizin vaktinizi daha fazla almayacağım bu hafta.
+
+79
+00:14:26,908 --> 00:14:32,548
+Ama önümüzdeki hafta en kötü ihtimalle benim hazırlamış olduğum bir soruyu...
+
+80
+00:14:33,600 --> 00:14:43,920
+Bu saatlerde belli oranda en azından tartışacak, üzerine konuşacak şekilde size ek bir örnek olmasını sağlamaya çalışacağım.
+
+81
+00:14:45,120 --> 00:14:51,220
+Tabii onun dışında o haftaki konuyla ilgili de o haftaya kadar olan konularla ilgili sorunuz olursa bunları yanıtlamaya çalışacağım.
+
+82
+00:14:51,600 --> 00:14:56,480
+Teşekkür ediyorum katıldığınız için. Haftaya pazartesi kısmet size görüşmek üzere. Kendinize iyi bakın.
+
+83
+00:14:58,480 --> 00:15:00,660
+İyi haftalar diliyorum. Sağlıklı günler arkadaşlar.
+
+84
+00:15:01,172 --> 00:15:01,971
+Görüşmek üzere.
+
+85
+00:15:02,052 --> 00:15:03,032
+Görüşmek üzere hocam hocam.
+
+86
+00:15:03,211 --> 00:15:06,552
+Bu arada, çok pardon, hemen şu soruya cevap vereyim.
+
+87
+00:15:06,631 --> 00:15:11,091
+Quizlerin önceden haber verilmesi daha iyi olmaz mı diye bir soru gelmiş [öğrenci]'dan.
+
+88
+00:15:13,011 --> 00:15:16,751
+Şimdi zaten quizin olayı önceden haber verilmemesi.
+
+89
+00:15:17,071 --> 00:15:26,031
+Bir, iki, önceden haber verirsek bir kısmınız zaten bu bahsetmiş olduğunuz örnek çözümüne katılmamayı tercih edecek.
+
+90
+00:15:26,571 --> 00:15:29,851
+Burada sizin buraya katılımınızı arttırmak da biraz amaç.
+
+91
+00:15:29,851 --> 00:15:38,731
+Yani sizden sınava gizlemek değil, tam aksine sizin daha fazla bilgi almanızı sağlamak için buraya bir şekilde ayağınızın alışması diyebiliriz.
+
+92
+00:15:39,051 --> 00:15:40,051
+Kaba bir tabirle.
+
+93
+00:15:41,011 --> 00:15:53,011
+Ayrıca, hani kendinizi öz liste olmayan arkadaşlar için söylüyorum. Biraz daha mecbur kılıp daha fazla bilgi edinmenizi sağlamak. Yoksa hani bu anlamda...
+
+94
+00:15:53,812 --> 00:16:11,972
+İşinizi zorlaştırmak ya da sizi buraya çağırıp ondan sonra geri göndermek değil. Arkadaşlardan gelen talepler çok güzeldi. Her hafta bununla ilgili ufak bir soru bile tartışsak size uzun vadede katkısı olacağını düşünüyorum. Umarım [öğrenci] sorunu cevaplandırabilmişimdir.
+
+95
+00:16:15,412 --> 00:16:42,512
+[öğrenci]'in sorusuna da kısa bir cevap vereyim. Her algoritmayı ezbere akıllı tutmanız diye bir şey beklenmiyor ama nasıl çözdüğünüz konusunda fikir sahibi olmanız ve bunu başka algoritmalara yansıtabilmeniz önemli. Yani ben de oturup bir şeyi çözerken yıllardır on defa anlattığım, belki daha fazla anlattığım bir konuyu o anda ufak tefek hatalar bile yapabiliyorum. Kafadan tekrar çözmeye çalıştığım için. Yani burada önemli olan şey sizin.
+
+96
+00:16:43,028 --> 00:16:57,107
+Oradaki yaklaşımı ve nasıl problemi çözdüğümüzü, hangi veri yapılarıyla bunu çözmeye çalıştığımızı öğrenmeniz belli bir süre sonra zaten bu otomatik olarak sizde oturmaya başlıyor ve üzerini düşünmeden yapıyorsunuz.
+
+97
+00:16:57,107 --> 00:17:09,008
+Ama ezberden kaçının. Ezber en tehlikelisi çünkü soru ufak bir değişikliğe gittiğinde o esnekliği gösteremiyorsunuz ezber yaptığınız zaman. [öğrenci] sorusuna da böyle bir karşılık vermiş olalım.
+
+98
+00:17:12,692 --> 00:17:13,192
+Evet.
+
+99
+00:17:15,872 --> 00:17:18,092
+Teşekkür ediyorum. Kendinize çok iyi bakın. Görüşmek üzere.

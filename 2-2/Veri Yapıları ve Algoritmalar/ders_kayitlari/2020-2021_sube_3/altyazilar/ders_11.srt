@@ -1,0 +1,4843 @@
+1
+00:04:03,219 --> 00:04:04,979
+Günaydın arkadaşlar, hoş geldiniz.
+
+2
+00:04:06,759 --> 00:04:07,479
+Günaydın.
+
+3
+00:04:08,580 --> 00:04:09,740
+Günaydın hocam.
+
+4
+00:04:10,060 --> 00:04:11,139
+Teşekkürler, sağ olun.
+
+5
+00:04:12,259 --> 00:04:22,519
+Bu hafta, 6. hafta, 2 hafta sonra eğer bir değişiklik olmazsa ilk sınavınızda olacaksınız, büyük sınavınızı.
+
+6
+00:04:24,300 --> 00:04:27,319
+Tabii önümüzdeki hafta bir kez daha sınavla ilgili konuşuruz.
+
+7
+00:04:29,588 --> 00:04:41,528
+Belki bir tekrar yapma şansınız da olur. Ufak bir tekrar. Ama onun öncesinde vizelerinizle ilgili bir iki, vize diyorum, yalnız dedim özür dilerim, kısa sınavınız, quizinizle ilgili bir iki cümle etmek istiyorum.
+
+8
+00:04:41,528 --> 00:04:49,528
+Şimdi gördüğüm kadarıyla sonuçlar pek parlak değil. Burada...
+
+9
+00:04:50,612 --> 00:04:54,692
+Bazı eksikleriniz olduğunu tespit ettim algoritma tasarımı konusunda.
+
+10
+00:04:54,812 --> 00:04:59,232
+Aslında sınavımdaki küçük sınavdaki soru da onunla alakalıydı.
+
+11
+00:04:59,372 --> 00:05:02,352
+Yani hani ne durumdasınız onu görelim sorusuydu.
+
+12
+00:05:02,412 --> 00:05:03,612
+Çok zor bir soru değildi.
+
+13
+00:05:04,272 --> 00:05:12,211
+Ama verilen bilgileri yeterince kullanmadan doğrudan bildiğiniz çözüme yönelen arkadaşlar olmuş.
+
+14
+00:05:12,211 --> 00:05:14,211
+Onun dışında o bilgiyi kullanırken...
+
+15
+00:05:14,879 --> 00:05:19,060
+İşi daha da karmaşık hale getiren çözümler de vardı.
+
+16
+00:05:20,139 --> 00:05:24,180
+Onun ötesinde belli bir grupta da çok temel yanlışlar vardı.
+
+17
+00:05:25,220 --> 00:05:28,060
+Bunları detayını konuşmak istiyorum.
+
+18
+00:05:28,220 --> 00:05:29,379
+Tabii size geri dönüş yapacağım.
+
+19
+00:05:29,980 --> 00:05:31,839
+Ama bugün önce konularımızı işleyeceğiz.
+
+20
+00:05:31,839 --> 00:05:41,180
+Ondan sonra dersin geri kalan kısmında vaktimizin el verdiği sürece kısa kısa nelerin yanlış olduğunu size aktarmaya çalışacağım.
+
+21
+00:05:41,684 --> 00:05:55,384
+Biraz daha fazla çaba gösterirseniz, özellikle derse katılan arkadaşları kenarda tutuyorum. Onlar mutlaka durumu toparlayacaklardır ama bu dersi sonradan izleyen arkadaşlara özellikle sesleniyorum.
+
+22
+00:05:56,403 --> 00:06:05,064
+Ders sırasında burada olmanız ve soru sorarak dersi takip etmeye çalışmanız daha sizin açınızdan faydalı olacaktır.
+
+23
+00:06:05,524 --> 00:06:14,704
+Zor bir süreçten geçsek de başarı oranını yükseltmek adına buna ihtiyacımız var. Hepinize sonuçta güveniyorum.
+
+24
+00:06:15,364 --> 00:06:24,723
+Hiçbirinizin potansiyeliyle ilgili bir sıkıntı yok ama gerek şartlar gerekse motivasyon noktasında birazcık geride kaldığımızı görüyorum.
+
+25
+00:06:24,723 --> 00:06:32,223
+64 kişilik sınıfta 45-50 civarında başladığımız sayılar son haftalarda 30-35'e düşmüş durumda.
+
+26
+00:06:32,564 --> 00:06:38,903
+Bunu biraz daha yukarı çekmeye çalışalım. İnanın başarının da geldiğini göreceksiniz ki özellikle.
+
+27
+00:06:41,324 --> 00:06:44,204
+[öğrenci]'e ses gitmiyormuş. Onun dışında ses gitmeyen bir kişi var mı?
+
+28
+00:06:46,864 --> 00:06:50,084
+Sanırım [öğrenci] seninle alakalı bir durum. Teşekkürler arkadaşlar.
+
+29
+00:06:50,644 --> 00:07:02,963
+Bu noktada sizden ricam vizeyi iyi değerlendirmeniz, ödevle ilgili de geçtiğimiz hafta biliyorsunuz bir ödev vermiştik, geri dönüşlerinizi de alacağım.
+
+30
+00:07:03,504 --> 00:07:08,463
+Ama önce isterseniz bugün yapacağımız konulara geçelim.
+
+31
+00:07:10,604 --> 00:07:17,423
+Ondan sonra geri kalan vakitte hem görüşlerinizi alacağım hem de ben quizle ilgili size geri dönüş yapıyorum.
+
+32
+00:07:18,163 --> 00:07:25,723
+Olacağım. Şimdi, ağaçlarda kalmıştık. Hemen bir ekran paylaşımı yapayım.
+
+33
+00:07:30,675 --> 00:07:33,155
+Evet, şu anda görebildiğinizi tahmin ediyorum.
+
+34
+00:07:36,375 --> 00:07:38,596
+Ağaçların terminolojisinden bahsetmiştik.
+
+35
+00:07:38,695 --> 00:07:43,716
+Kısaca geçen haftanın son 10 dakikasında bir kök noktası var demiştik.
+
+36
+00:07:45,315 --> 00:07:51,115
+Bu noktadan itibaren her bir düğümün 0, 1 ya da 2.
+
+37
+00:07:52,980 --> 00:08:07,879
+Alt düğümü, yani çocuk düğümü olabiliyordu. Bu ikili ağaç için geçerliydi ama genel bir ağaç yapısından bahsediyorsak o zaman ikiden fazla da bir düğümün çocuğu olma ihtimali söz konusu.
+
+38
+00:08:07,879 --> 00:08:14,624
+Burada son noktaya ulaştığımızda yani düğümün herhangi bir şekilde...
+
+39
+00:08:14,624 --> 00:08:19,804
+Çocuğu yoksa onu yaprak olarak adlandırıyoruz, leaf node olarak adlandırıyoruz.
+
+40
+00:08:20,344 --> 00:08:24,944
+Root seviyesi sıfırdan başlıyor, ondan sonraki her seviye bir artarak ilerliyor.
+
+41
+00:08:26,584 --> 00:08:31,484
+Ağaç yapısı non-linear bir data structure diye bahsetmiştik.
+
+42
+00:08:32,403 --> 00:08:36,484
+Bize sağladığı en önemli avantaj birçok problemde...
+
+43
+00:08:37,908 --> 00:08:57,908
+n karmaşıklıktaki çözüme alternatif log n karmaşıklığında ya da n log n karmaşıklığında n karenin alternatif olarak çözümler sunması elemanlara sequential olarak değil, atlamalı bir şekilde ulaşabiliyor olmamız ve bu sayede...
+
+44
+00:08:58,803 --> 00:09:14,864
+ulaşmak istediğimiz elemana daha hızlı adımda ulaşabilecek yapılar oluşturuyoruz. Bunlardan bir tanesi binary search tree. Bu binary search tree de biliyorsunuz elemanların küçük olanları
+
+45
+00:09:15,347 --> 00:09:22,788
+düğümün sol tarafına, büyük olanları da sağ tarafına yerleşecek şekilde ağacı oluşturuyorduk.
+
+46
+00:09:22,867 --> 00:09:30,647
+Tabi her ağaç dengeli oluşmuyor. Balance tree dediğimiz, unbalanced tree dediğimiz dengeli ve dengesiz ağaçlar var.
+
+47
+00:09:31,028 --> 00:09:36,347
+En kötü olanı bir tarafa yığılmış olan, yani sola ya da sağa tamamen...
+
+48
+00:09:37,652 --> 00:09:55,751
+Gelişmiş bir ağaç. Bu istemediğimiz bir durum. O zaman n tane elemanı sağa ya da sola yığarsanız diziden bir farkı kalmaz. Bunları mümkün olduğunca dengeli bir şekilde dağıtacak bir yapı oluşturmak ya da eleman yerleşimini bunu gözeterek yapmak gerekiyor.
+
+49
+00:09:55,751 --> 00:10:02,072
+Tabii ağaçta da temel operasyonlar var. Insert, Delete, Update.
+
+50
+00:10:02,644 --> 00:10:22,764
+Bazı durumlarda. Search. En temel alanları insert, delete ve search. Bir ağacın alt ağaçlarından bahsetmiştik. Burada görüyorsunuz işte D, H, I bir tane alt ağacı oluşturuyor ya da B, D, E, H, I, J ikinci alt bir saptiri oluşturuyor.
+
+51
+00:10:23,283 --> 00:10:29,624
+Tree alternatif olarak bir de forest var. Hemen onu da yazmaya başlayayım. Bu arada.
+
+52
+00:10:30,131 --> 00:10:32,231
+Görüntüyü de artık geri alabilirim.
+
+53
+00:10:32,371 --> 00:10:35,251
+Band fit konusunda sıkıntı yaşamamak adına.
+
+54
+00:10:38,071 --> 00:10:40,131
+Evet, şimdi buradan...
+
+55
+00:10:46,100 --> 00:10:49,759
+Şu anda bir kalemle ilgili bir sıkıntım var. Ekran görüntüsünü geri alıyorum.
+
+56
+00:11:08,340 --> 00:11:10,000
+30 saniyenizi rica ediyorum.
+
+57
+00:11:15,124 --> 00:11:16,984
+Evet, şimdi yoruntuyu tekrar vereceğim.
+
+58
+00:11:23,283 --> 00:11:27,344
+Evet, şu anda sanırım görüntü geri geldi.
+
+59
+00:11:28,983 --> 00:11:32,364
+Forrest demiştik, geçen hafta bundan bahsetmemiştik.
+
+60
+00:11:37,587 --> 00:11:39,847
+Örneğin iki tane bağımsız ağaç var.
+
+61
+00:11:44,179 --> 00:12:09,819
+Hatta bazen üç tane olabilir. Bir tane de bu olsun. Burada görmüş olduğunuz üç tane ağaç birlikte forest oluşturuyorlar. Aynı ağaçların ormanı oluşturması gibi. Tree bir, tree iki. Sadece kökten oluşan bir ağaç da olabilir. Tree üç.
+
+62
+00:12:10,292 --> 00:12:36,292
+Buna da forest diyoruz. İleride makine öğrenmesi algoritmalarını gördüğünüzde ya da belki duymuşsunuzdur. Random Forest diye bir algoritma var. Bir de decision tree'ler var, karar ağaçları. Genelde decision tree'ler tek bir ağacın karar mekanizması oluşturması yönünde kurgulanıyor. Random Forest algoritması ise birden fazla ağaçtan dönen kararın...
+
+63
+00:12:36,416 --> 00:12:39,476
+Ortak bir noktada birleştirilmesi sonucunda oluşuyor.
+
+64
+00:12:39,636 --> 00:12:44,836
+İşte bu yüzden birden fazla ağacın olduğu noktalarda forest ifadesini kullanıyoruz.
+
+65
+00:12:45,516 --> 00:12:51,115
+Şimdi temel olarak şunları da belki ifade etmekte fayda var.
+
+66
+00:12:52,056 --> 00:12:55,996
+Örnek vermek gerekirse bir başka ağa çiziyorum.
+
+67
+00:12:55,996 --> 00:13:00,996
+Bu noktada bu görmüş olduğunuz...
+
+68
+00:13:03,731 --> 00:13:04,551
+Her bir
+
+69
+00:13:08,019 --> 00:13:11,319
+yuvarlak bir düğümü oluşturuyor.
+
+70
+00:13:13,480 --> 00:13:19,879
+Bu yuvarlakları bağlayan, düğümleri bağlayan çizgilere de kenar diyoruz, edge diyoruz.
+
+71
+00:13:20,579 --> 00:13:26,259
+Bunlar zaten bildiğiniz kavramlar belki ama kullanımları açısından bir kez daha ifade etmekte fayda var.
+
+72
+00:13:26,259 --> 00:13:32,700
+Bu noktada bir graf gözünüzde canlanabilir.
+
+73
+00:13:34,964 --> 00:13:42,784
+Bir kapalı çevrim oluşturmaması olduğunu söylemiştik ağaç için. En önemli farklardan bir tanesi bu.
+
+74
+00:13:44,844 --> 00:13:53,024
+Şimdi tabii ağaçlar nerelerde kullanılıyor? Bir onları konuşalım. Hemen yeni bir sayfa açalım.
+
+75
+00:13:53,304 --> 00:13:55,324
+Yani neden ağaç yapısına ihtiyaç duyuyoruz?
+
+76
+00:14:11,443 --> 00:14:13,764
+Evet, kim yorum yapmak ister?
+
+77
+00:14:16,464 --> 00:14:18,264
+Ağaçları nerelerde kullanıyoruz?
+
+78
+00:14:22,323 --> 00:14:23,243
+Evet, [öğrenci].
+
+79
+00:14:25,823 --> 00:14:28,144
+Dosya dizinlerinde kullanıyoruz hocam.
+
+80
+00:14:28,343 --> 00:14:28,683
+Güzel.
+
+81
+00:14:30,943 --> 00:14:31,723
+File management.
+
+82
+00:14:36,403 --> 00:14:39,244
+File Structure diyelim.
+
+83
+00:14:39,923 --> 00:14:40,163
+Evet.
+
+84
+00:14:41,663 --> 00:14:42,384
+Başka.
+
+85
+00:14:51,091 --> 00:14:53,552
+Başka kullandığımız birçok yer var. Nereden olabilir?
+
+86
+00:14:59,028 --> 00:15:00,028
+[öğrenci].
+
+87
+00:15:00,028 --> 00:15:07,028
+Hocam, bazı compression algoritmaları. Mesela MP3 ya da JPEG falan.
+
+88
+00:15:07,028 --> 00:15:22,028
+Compression algorithms. Ya da daha bilinen bir tanesini ifade edelim. Hufman. Algoritm diyelim. Evet, başka, güzel.
+
+89
+00:15:25,940 --> 00:15:26,560
+[öğrenci]?
+
+90
+00:15:27,460 --> 00:15:34,180
+Hocam, bazı problemleri çözmekte kullanıyoruz. Mesela en kısa yolu bulmada kullanıyorduk.
+
+91
+00:15:34,800 --> 00:15:37,460
+En kısa yolu bulmada ağaç mı kullanıyoruz yoksa?
+
+92
+00:15:37,620 --> 00:15:44,600
+Graf da ama graf hani bir üst şey olduğu için tree'nin. O yüzden düşündüm olabilir diye.
+
+93
+00:15:45,240 --> 00:15:51,660
+Evet, orada özel bir bazı ağaç algoritmaları var. Doğru, yanlış değil. Olabilir. Güzel. Başka?
+
+94
+00:15:57,076 --> 00:16:07,015
+Database'ler, veri tabanlarında veriyi saklamak için B-tree'ler, T-tree'ler kullanılıyor.
+
+95
+00:16:08,355 --> 00:16:14,515
+Farklı ağaç isimleri var. AVL-tree, B-tree, binary search tree, binary tree.
+
+96
+00:16:15,076 --> 00:16:18,615
+Farklı tipte ağaçlar var. Hemen buraya bir kısmını not edelim.
+
+97
+00:16:28,307 --> 00:16:31,228
+binary tree, binary search tree.
+
+98
+00:16:36,148 --> 00:16:37,707
+AVL3
+
+99
+00:16:41,652 --> 00:16:42,652
+B3
+
+100
+00:16:50,772 --> 00:16:52,131
+R3 var.
+
+101
+00:16:57,364 --> 00:17:07,983
+Interval tree var. Bu şekilde farklı tipler ve ağaçlar var. Bunlara merak edenler bakabilirler. Bütün detayı burada vermeyeceğiz.
+
+102
+00:17:11,508 --> 00:17:23,528
+binary tree. Hatta bunu şöyle ifade edelim. Bunun versiyonunu göreceksiniz. Heap tree olarak.
+
+103
+00:17:27,092 --> 00:17:37,472
+Bu şekilde birçok ağaç yapısı var. Database dedik. Başka? Compiler'larda var. Compiler'larda. Compiler'lar ne tür bir ağaç oluşturuyorlar? Syntax tree.
+
+104
+00:17:43,155 --> 00:17:44,956
+Sintaks kontrolünde kullanılıyor.
+
+105
+00:17:46,355 --> 00:17:47,036
+Başka?
+
+106
+00:17:55,988 --> 00:17:57,028
+priority queue,
+
+107
+00:17:59,907 --> 00:18:06,628
+öncelikli kuyruklar, ki burada heap ağacını kullanıyor olacağız.
+
+108
+00:18:13,140 --> 00:18:15,519
+Başka? Aklınıza gelen?
+
+109
+00:18:21,715 --> 00:18:22,275
+Varsa?
+
+110
+00:18:22,735 --> 00:18:27,215
+Hocam tam yapay zekada decision tree şöyle şeyler.
+
+111
+00:18:27,235 --> 00:18:28,275
+Güzel, çok güzel.
+
+112
+00:18:28,855 --> 00:18:32,076
+AI, decision tree.
+
+113
+00:18:34,036 --> 00:18:42,935
+Peki bu decision tree bir mantık yürütmeniz gerekirse ya da bilen varsa nasıl bir karar veriyor mesela?
+
+114
+00:18:43,715 --> 00:18:46,615
+Ağacın düğümleri neye göre oluşuyor?
+
+115
+00:18:47,076 --> 00:18:47,975
+Çok kabaca soruyorum.
+
+116
+00:18:48,564 --> 00:18:51,483
+Buna da gelmişken, yeri gelmişken bir değinmekte fayda var.
+
+117
+00:18:53,364 --> 00:18:53,983
+[öğrenci].
+
+118
+00:18:55,347 --> 00:19:18,827
+Mesela hocam şey durumunda işte bir çekirge diyelim sıfırdan beşe kadar bir veya iki adım alacak şekilde gitmek istiyor şeye sıfırdan beşe. Burada işte bir alırsa nasıl devam edebilir? Bir bir bir gidebilir, bir bir iki bir gidebilir. Burada bütün ihtimalleri yazdığımız bir şey oluyor aslında. O elle hesapladığımız şeyleri bir ağaca oturtuyoruz.
+
+119
+00:19:19,824 --> 00:19:21,704
+Bu şekilde iş yapmış oluyoruz.
+
+120
+00:19:22,144 --> 00:19:26,584
+Şimdi yanlış değil, bu biraz yapay zeka tarafı oldu.
+
+121
+00:19:28,684 --> 00:19:36,624
+Decision tree olarak tam olarak, orada da bir karar ağacı oluşturuyoruz ama benim söylemeye çalıştığım şey biraz daha farklıydı.
+
+122
+00:19:37,164 --> 00:19:40,284
+Mesela sınıflandırma probleminde kullanıyorsunuz decision tree'leri.
+
+123
+00:19:40,723 --> 00:19:51,364
+Diyelim ki dünyadaki farklı ırklardaki kişiler var ve resim verildiği zaman hangi ırktan olduğunu bulmaya çalışıyorsunuz.
+
+124
+00:19:52,103 --> 00:19:56,563
+Irk ayrımı için çeşitli ön plana çıkan öz nitelikler var, özellikler var.
+
+125
+00:19:58,163 --> 00:20:00,523
+Diyelim ki 10 tane özellik var.
+
+126
+00:20:01,884 --> 00:20:08,023
+Sizin oluşturduğunuz karar ağacının en tepesinde yani kök bölgesinde en ayırt edici özellik oluyor genelde.
+
+127
+00:20:08,531 --> 00:20:36,031
+Yani örneğin işte diyelim ki ten rengi. Ten rengiyle bir karar verdiğinizde önemli bir ihtimali devre dışı bırakmış oluyorsunuz. İkinci turda, ikinci düğümde yani şuraya çizecek olursak birinci düğüm ten rengiyse ikinci düğümde işte göz rengine bakıyorsunuz. Göz rengine göre gene dallanıyorsunuz. En sonunda geldiğiniz nokta oluyor. İşte burası.
+
+128
+00:20:36,564 --> 00:20:45,104
+Beyaz ırk olsun, burası siyahi ırk olsun, burası da işte uzak doğudaki sarı ırk olsun diyelim.
+
+129
+00:20:46,675 --> 00:21:00,895
+Bu noktada ağaçta siz bu öz nitelikleri kullanarak işte ne diyelim göz açıklığı şu mesafeden daha küçük olanlar, büyük olanlar diye bir öz nitelik kullanabilirsiniz.
+
+130
+00:21:01,235 --> 00:21:04,655
+İşte kafa boyutu şu olanlar, bu olanlar diye kullanabilirsiniz.
+
+131
+00:21:05,599 --> 00:21:09,619
+boyu şu olanlar, kilosu şu olanlar diye birçok özellik kullanabilirsiniz.
+
+132
+00:21:10,319 --> 00:21:22,119
+Burada karar ağacında her bir noktada bu karar noktasına geçtiğinizde daldanıyorsunuz ve en sonunda hangi sınıfa ulaşmışsanız karar olarak o sınıfı karar ağacınız üretiyor.
+
+133
+00:21:23,259 --> 00:21:25,119
+Genel mantık bu şekilde çalışıyor.
+
+134
+00:21:25,119 --> 00:21:33,119
+Bir başka kullanım şekli hemen yazalım.
+
+135
+00:21:35,092 --> 00:21:36,132
+Özellikle
+
+136
+00:21:36,132 --> 00:21:40,952
+Geografik işlerde kullanıyoruz bunu.
+
+137
+00:21:52,852 --> 00:22:01,352
+such as, diyorum, geographical coordinates.
+
+138
+00:22:09,395 --> 00:22:20,235
+Bununla ilgili nasıl bir yorum yapabilirsiniz? Mesela coğrafi konumu nasıl ağaçlarla ifade edebiliriz?
+
+139
+00:22:24,980 --> 00:22:38,960
+Hatta bunun güzel bir örneği var. Dünya üzerindeki her bir bölge belli parçalara ayrılıyor ve o şekilde erişiyoruz oralara. Ne yapabilirsiniz?
+
+140
+00:22:42,579 --> 00:22:45,339
+Hatta adres üzerinden giderseniz bile bunu anlatmak kolay.
+
+141
+00:22:50,996 --> 00:22:52,476
+Evet, peki, varsa.
+
+142
+00:22:53,476 --> 00:23:13,036
+Hocam, mesela Google Maps'teki algoritma tam, mesela, çikişler ya da, yani, edge'lar ve node'lar şöyle oluşturulabiliyor ve bizim istediğimiz yere tam bir grafing path'i olacak.
+
+143
+00:23:13,584 --> 00:23:34,903
+Evet ama benim sormak istediğim biraz daha farklı bir nokta. Yani şunu demek istiyorum. Mesela bir adrese ulaşırken hangi aşamalardan geçiyorsunuz? Mesela dünyadaki bir noktaya ulaşmak istiyorsunuz. Bu eleme işi nasıl gerçekleşiyor? O adrese bulmak için bütün adresleri tek tek kontrol ediyor musunuz?
+
+144
+00:23:40,468 --> 00:23:41,148
+Evet [öğrenci].
+
+145
+00:23:42,448 --> 00:23:46,728
+Hocam ilk önce dünyadaki yedi kıtaya bakıyoruz.
+
+146
+00:23:46,728 --> 00:23:46,948
+Evet.
+
+147
+00:23:47,387 --> 00:23:51,568
+Ondan sonra o kıtanın kuzey, güney, doğu, batasına bakıyoruz.
+
+148
+00:23:51,847 --> 00:23:53,448
+Neresinde kalıyorsa mesela.
+
+149
+00:23:53,827 --> 00:23:56,407
+Ondan sonra o şehirlerine bakıyoruz.
+
+150
+00:23:56,588 --> 00:24:00,028
+Böyle böyle gittikçe daha spesifik yerlere ulaşıyoruz.
+
+151
+00:24:00,408 --> 00:24:01,327
+Evet, teşekkür ederim.
+
+152
+00:24:01,448 --> 00:24:07,231
+Yani kıta bazında başladığınız ayırma işine, sonra ülke bazında, sonra şehir bazında, sonra...
+
+153
+00:24:07,231 --> 00:24:30,192
+İşte şehir içerisinde ilçe diyelim, kasaba diyelim vesaire, sokak, en son mahalleye kadar mahalleye iniyorsunuz. Sonra da sokağa kadar geliyorsunuz. Yani aslında sekiz adımda erişiyorsunuz. Öbür türlü olsaydı adreslere tek bir adımda erişmeye kalksaydınız dünyadaki her turda bütün adresleri
+
+154
+00:24:30,963 --> 00:24:34,783
+Her turda bir yerinde tek bir turda bütün adresleri taramanız gerekirdi.
+
+155
+00:24:35,743 --> 00:24:46,923
+İşte diyelim ki bir ne olsun, alfabetik sıra olsun o zaman dünyada milyar tane adres olduğunu varsayarsanız bütün hepsini bulana kadar tek tek taramanız gerekirdi.
+
+156
+00:24:47,023 --> 00:24:50,543
+Ama onun yerine ne yapıyorsunuz? Problemi sıkıştırıyorsunuz bir noktaya.
+
+157
+00:24:50,723 --> 00:24:58,483
+Bunun için önce kıta bilgisi, sonra ülke bilgisi kullanarak bir ağaç yapısıyla bunlara erişme şansına sahipsiniz ki.
+
+158
+00:24:58,963 --> 00:25:00,823
+Bu da işi oldukça hızlandırıyor.
+
+159
+00:25:00,823 --> 00:25:03,403
+Şimdi daha bir sürü kullanımı var aslında.
+
+160
+00:25:05,403 --> 00:25:18,523
+Ben hani genel olanlardan bahsettim ama gördüğünüz gibi çok yoğun kullanılan bir abstract data type olarak karşımıza çıkıyor.
+
+161
+00:25:19,263 --> 00:25:23,983
+Şimdi devam ediyoruz. Bir sonraki sayfaya geçiyorum.
+
+162
+00:25:27,443 --> 00:25:49,443
+Tabii ağaçlar üzerinde hareket etmek, düğünler arasında ilerlemek belirli kurallara bağlı. Normalde siz bir queue'da, bir stack'te ilerlerken, önünüze, arkasına, linked listede ilerlerken hareket edebileceğiniz...
+
+163
+00:25:49,536 --> 00:25:53,195
+Genel olarak iki tane yön var, ileri ve geri olmak üzere.
+
+164
+00:25:53,695 --> 00:25:57,036
+Ağaç tablosu böyle değil, linear bir data structure olmadığı için.
+
+165
+00:25:57,775 --> 00:25:59,816
+Örnek vermek gerekirse şöyle yapalım.
+
+166
+00:26:00,955 --> 00:26:02,536
+İşte 5 olsun.
+
+167
+00:26:04,115 --> 00:26:06,395
+Burada 15 olsun.
+
+168
+00:26:08,175 --> 00:26:13,576
+Burada diyelim ki 8 olsun.
+
+169
+00:26:16,215 --> 00:26:16,855
+Burada.
+
+170
+00:26:17,811 --> 00:26:18,851
+7 olsun.
+
+171
+00:26:20,851 --> 00:26:23,111
+Burada da 9 olsun.
+
+172
+00:26:24,491 --> 00:26:29,031
+Şimdi, normalde bu ağaç üzerinde ilk baktığınızda,
+
+173
+00:26:30,351 --> 00:26:33,011
+yukarıdan soldan sağa hareket ettiğinizde,
+
+174
+00:26:33,672 --> 00:26:35,951
+ağaca erişim şekliniz 5,
+
+175
+00:26:36,652 --> 00:26:39,231
+15,
+
+176
+00:26:40,231 --> 00:26:40,851
+8,
+
+177
+00:26:41,491 --> 00:26:43,031
+7 ve 9 şeklinde olabilir.
+
+178
+00:26:43,791 --> 00:26:44,871
+Seçeneklerden biri bu.
+
+179
+00:26:47,443 --> 00:27:00,403
+Aşağıdan yukarı doğru aynı mantığı koruyarak ilerlediğiniz zaman ne olacaktır? Soldan sağa. 7, 9, 15, 8 ve 5 olacaktır.
+
+180
+00:27:00,403 --> 00:27:12,744
+Bir tanesi from top, left to right. Bir tanesi de from bottom.
+
+181
+00:27:14,387 --> 00:27:15,468
+Left to right.
+
+182
+00:27:18,048 --> 00:27:21,167
+Şimdi ağacı böyle gezebilirsiniz, bunda bir sakınca yok.
+
+183
+00:27:21,167 --> 00:27:30,807
+Ama böyle gezmenin bizim ağacı kullanma şeklimize uygunluğu yok.
+
+184
+00:27:31,208 --> 00:27:34,028
+Neden uygunluğu yok? Böyle gezersek neyi kaçırmış oluyoruz?
+
+185
+00:27:46,836 --> 00:28:00,056
+Evet, farklı bir kişi olsun. Sürekli aynı arkadaşımız cevap veriyor. Şu anda ağaç üzerinde bu şekilde iki alternatifle gezme işlemi yapsaydık. Ağaçtaki hangi ilişkiyi bozmuş olacak?
+
+186
+00:28:13,523 --> 00:28:14,843
+[öğrenci].
+
+187
+00:28:17,783 --> 00:28:19,183
+Geliyor değil mi sesim hocam?
+
+188
+00:28:19,283 --> 00:28:19,843
+Evet, geliyor.
+
+189
+00:28:20,783 --> 00:28:23,123
+Bu kıta örneğini vermiştik ya mesela.
+
+190
+00:28:23,523 --> 00:28:23,743
+Evet.
+
+191
+00:28:23,883 --> 00:28:27,343
+Yine her adrese teker teker bakmış olacaktık.
+
+192
+00:28:27,643 --> 00:28:28,663
+Çok güzel.
+
+193
+00:28:30,063 --> 00:28:32,803
+Bu istediğimiz o kolay bulma.
+
+194
+00:28:33,203 --> 00:28:34,823
+Güzelliğini kullanamayacaktık.
+
+195
+00:28:35,283 --> 00:28:43,343
+Yani biz sanki elimizde linear data structure var gibi sequential olarak gezmiş olacaktık elemanları.
+
+196
+00:28:43,743 --> 00:28:46,223
+Aslında bizim istediğimiz hierarşik yapıyı kullanmak değil mi?
+
+197
+00:28:46,563 --> 00:28:46,783
+Evet.
+
+198
+00:28:47,303 --> 00:28:49,383
+Tamam, teşekkür ederim. Gayet güzel bir cevap oldu.
+
+199
+00:28:50,583 --> 00:28:54,243
+Şimdi bunun için şöyle yapalım.
+
+200
+00:28:55,243 --> 00:28:56,443
+Burada bir tane node olsun.
+
+201
+00:28:57,779 --> 00:29:04,119
+Bunun altında da şimdi birden fazla nolu olduğunu düşünelim.
+
+202
+00:29:06,440 --> 00:29:12,480
+Şimdi bu kısım bir tane de şurası bu kısım.
+
+203
+00:29:14,319 --> 00:29:15,579
+Ne demiştik?
+
+204
+00:29:16,720 --> 00:29:18,400
+Alt ağaçları oluşturuyor diye.
+
+205
+00:29:19,400 --> 00:29:24,220
+Left sub tree, right sub tree.
+
+206
+00:29:25,332 --> 00:29:25,952
+Evet.
+
+207
+00:29:27,952 --> 00:29:30,452
+30 saniyenizini rica ediyorum.
+
+208
+00:29:32,012 --> 00:29:32,692
+Çok pardon.
+
+209
+00:30:02,099 --> 00:30:05,379
+Evet, teşekkür ederim mektidiniz için. Kavlamaya'dan devam ediyorum.
+
+210
+00:30:06,240 --> 00:30:14,400
+Left sub tree ve right sub tree olarak adlandırmıştık nodların sol tarafını ve sağ tarafını aşağıya kadar olan bölümü.
+
+211
+00:30:14,400 --> 00:30:24,500
+Bu şekilde en aşağıya kadar eriştiğinizde sonuçta elinizde en fazla iki tane düğüm kalacak şekilde düşünebilirsiniz bir binary tree üzerinden düşünürsek.
+
+212
+00:30:24,639 --> 00:30:27,371
+Şimdi bir ağacı gezmek için...
+
+213
+00:30:28,084 --> 00:30:53,084
+Üç tane farklı yol tanımlanmış. Bir tanesi in order traversal olarak adlandırılıyor. Diğeri preorder traversal. Diğeri de postorder traversal. Bunlar
+
+214
+00:30:54,804 --> 00:31:01,624
+Ağaç gezmek için üç farklı yol bize sunuyor.
+
+215
+00:31:01,624 --> 00:31:07,344
+Evet, bana bunu kim söyleyebilir ya da tahmin edebilir?
+
+216
+00:31:07,644 --> 00:31:13,464
+Hierarşik yapıyı kullanarak ağaçları gezme biçimimiz nasıl olacaktır?
+
+217
+00:31:26,003 --> 00:31:26,604
+[öğrenci]?
+
+218
+00:31:29,104 --> 00:31:36,344
+Hocam, in order olduğunda önce sol ağacı alıyoruz, sonra node'u alıyoruz, sonra sağ ağacı alıyoruz.
+
+219
+00:31:36,864 --> 00:31:40,364
+Evet, güzel. Önce hemen yazalım yan tarafa.
+
+220
+00:31:40,364 --> 00:31:50,703
+Evet, left, sub tree, sonra node, sonra da right, sub tree.
+
+221
+00:31:51,859 --> 00:31:53,399
+Evet, [öğrenci]. Devam edebilirsin.
+
+222
+00:31:53,539 --> 00:31:58,439
+Reorder'da önce node'u alıyoruz. Ondan sonra left, sonra da sağ.
+
+223
+00:31:59,259 --> 00:32:06,459
+Tamam. Left sub tree, right sub tree. Bir sonrakinde de?
+
+224
+00:32:07,359 --> 00:32:12,659
+Bir sonrakinde de önce sol, sonra sağ, sonra da node.
+
+225
+00:32:12,659 --> 00:32:13,879
+Teşekkür ederim.
+
+226
+00:32:15,779 --> 00:32:17,339
+Right sub tree.
+
+227
+00:32:19,700 --> 00:32:32,559
+ve node. Şimdi, şunların arasına da koyalım. Şöyle hatırlayabilirsiniz, yani ben o şekilde aklımda tutuyorum.
+
+228
+00:32:34,180 --> 00:32:41,559
+In order dediğiniz zaman önce, hep soldan başlıyorsunuz zaten. Soldan başlıyorsunuz, node'a geliyorsunuz.
+
+229
+00:32:42,700 --> 00:32:46,680
+Bir nevi şöyle gösterelim. Böyle bir yol izliyorsunuz.
+
+230
+00:32:47,859 --> 00:32:59,499
+in order dediğiniz zaman, in order dediğinizde, pardon pre order dediğiniz zaman pre kelimesi yani ilk o zaman demek ki önce root gelecek yani node gelecek demek.
+
+231
+00:33:00,379 --> 00:33:07,199
+Node sonra left ve right yapıyorsunuz. Post order dediğinizde demek ki sonra gelecek node diyorsunuz. O zaman left right node diyorsunuz.
+
+232
+00:33:07,199 --> 00:33:15,119
+Genel olarak çalışma prensibi bu şekilde. Şimdi verdiğimiz örnek üzerinden ağacı gezecek olsak.
+
+233
+00:33:15,988 --> 00:33:28,847
+Bana şimdi in order olduğunu varsayalım. Hangi sırayla gezileceğini söyler misiniz?
+
+234
+00:33:32,627 --> 00:33:33,887
+Evet, farklı bir kişi.
+
+235
+00:33:42,259 --> 00:33:42,679
+[öğrenci].
+
+236
+00:33:44,019 --> 00:33:45,240
+Sesim geliyor mu hocam?
+
+237
+00:33:45,559 --> 00:33:45,879
+Geliyor.
+
+238
+00:33:47,480 --> 00:33:49,799
+7, 15, 9.
+
+239
+00:33:49,799 --> 00:33:54,480
+Bir dakika, bir dakika. Önce yavaş yavaş değerleyelim. Sol tarafa en aşağıya kadar iniyorsun.
+
+240
+00:33:55,779 --> 00:33:56,039
+Evet.
+
+241
+00:33:56,179 --> 00:34:02,740
+Left sub tree önce 15, 7, 9 geliyor. Onun da en solundaki nodu alıyorsun. 7. Sonra...
+
+242
+00:34:02,740 --> 00:34:04,859
+Evet. Sonra nodu alıyorum.
+
+243
+00:34:05,059 --> 00:34:05,759
+Aha, 15.
+
+244
+00:34:05,759 --> 00:34:06,359
+15.
+
+245
+00:34:06,771 --> 00:34:07,771
+Evet, sonra...
+
+246
+00:34:07,771 --> 00:34:09,831
+Sonra right subtree aldım, 9.
+
+247
+00:34:10,172 --> 00:34:11,452
+Şimdi orada bir duralım.
+
+248
+00:34:11,891 --> 00:34:16,971
+Demek ki arkadaşlar, burada önce left subtree'yi bitirmem gerekiyor.
+
+249
+00:34:17,771 --> 00:34:23,211
+Left subtree'yi bitirmek için, onun altında başka bir subtree olmadığı için, 7'yi, 15'i ve 9'u aldım.
+
+250
+00:34:23,652 --> 00:34:24,591
+Left subtree bitti.
+
+251
+00:34:25,132 --> 00:34:25,952
+Şimdi sırada ne var?
+
+252
+00:34:26,692 --> 00:34:29,331
+Şimdi asıl büyük ağacın nodunu alınca.
+
+253
+00:34:29,692 --> 00:34:29,992
+Tamam.
+
+254
+00:34:29,992 --> 00:34:30,612
+Yani 5'i alınca.
+
+255
+00:34:31,027 --> 00:34:33,467
+5'i alıyorum asıl büyük ağacı.
+
+256
+00:34:33,987 --> 00:34:34,147
+Evet.
+
+257
+00:34:34,527 --> 00:34:36,687
+10'un write subtree'sini 8'e alacağım.
+
+258
+00:34:36,947 --> 00:34:38,167
+Tamam. Çok teşekkür ediyorum.
+
+259
+00:34:39,467 --> 00:34:40,067
+Evet.
+
+260
+00:34:40,947 --> 00:34:44,307
+Bu şekilde in order olarak gezdik. Hemen şimdi pre-order'a geçelim.
+
+261
+00:34:49,780 --> 00:34:57,060
+Evet, pre-order konusunda kim yardımcı olmak ister? [öğrenci].
+
+262
+00:35:00,160 --> 00:35:02,240
+Önce hocam 5'i alacağız.
+
+263
+00:35:03,440 --> 00:35:07,920
+Yazalım. 5'i aldık. Sonra ne tarafa gidiyoruz?
+
+264
+00:35:08,260 --> 00:35:11,560
+Sonra left subtree'ye geçeceğiz. Orada 15'i alacağız.
+
+265
+00:35:12,300 --> 00:35:13,460
+Aldım. Sonra?
+
+266
+00:35:14,880 --> 00:35:17,039
+Sonra 7'yi alacağız.
+
+267
+00:35:17,748 --> 00:35:19,347
+Left'ini, evet. Sonra?
+
+268
+00:35:20,007 --> 00:35:21,847
+Sonra 9 alacağız sağ tarafa.
+
+269
+00:35:22,307 --> 00:35:22,608
+Tamam.
+
+270
+00:35:23,288 --> 00:35:28,507
+Sonra ana ağaçtaki sağ tarafa, right subtree'deki 8 alacağız.
+
+271
+00:35:28,688 --> 00:35:31,028
+Tamam. Çok teşekkür ediyorum. Aynen böyle.
+
+272
+00:35:31,827 --> 00:35:35,507
+Bu arada, geçen hafta bir arkadaşınız beni uyarmıştı.
+
+273
+00:35:36,047 --> 00:35:39,507
+Biz ağaçları ayrık matematikte gördük diye.
+
+274
+00:35:39,807 --> 00:35:41,788
+Bu gezme işlerini de orada gördünüz mü?
+
+275
+00:35:43,528 --> 00:35:44,427
+Gördük hocam.
+
+276
+00:35:44,947 --> 00:35:55,667
+Tamam, peki. Sınıfın önemli bir kısmı el kaldırmadığı için burada herhalde bir problem var diye düşünüyorum.
+
+277
+00:35:56,087 --> 00:36:00,228
+Hatırlamıyorsunuz ya da unuttunuz diye varsayıyorum. Ama teşekkür ediyorum [öğrenci].
+
+278
+00:36:00,967 --> 00:36:02,387
+Son olarak post order'ı sorayım.
+
+279
+00:36:09,748 --> 00:36:10,748
+Evet, [öğrenci].
+
+280
+00:36:14,483 --> 00:36:21,923
+İlk öncelikle sol alttan başlayacağız yani 7 ile. Sonra sağdakini alacağız 9.
+
+281
+00:36:23,224 --> 00:36:33,983
+Güzel. Sonra onun üstüne alacağız 15. Güzel. Sonra onun sağındaki 8'i alacağız. Güzel. En sonunda 5. Teşekkür ederim.
+
+282
+00:36:34,771 --> 00:36:39,831
+Evet, gördüğünüz gibi, daha önceden de bildiğiniz gibi, bu işler çok karışık değil.
+
+283
+00:36:39,831 --> 00:36:45,811
+Ama bunun sonuçta bir algoritmasının da tasarlanması gerekiyor.
+
+284
+00:36:45,891 --> 00:36:48,572
+Bunu kağıt üstünde elle rahatlıkla yapabiliyoruz.
+
+285
+00:36:49,211 --> 00:36:53,391
+Ama bunun bir de kodunun yazılması ve akış diagramının çizilmesi gerekiyor.
+
+286
+00:36:54,692 --> 00:37:00,612
+Şimdi bunu sorayım. Bunu gördünüz. Peki kodunu ve akış diagramı çizmiş miydiniz?
+
+287
+00:37:01,619 --> 00:37:03,619
+Kodunu yazıp bakış değerlendirme çizmiş miydiniz?
+
+288
+00:37:03,920 --> 00:37:08,019
+Çizmedik hocam. Sadece sözlü, böyle teorik olarak konuştuk.
+
+289
+00:37:09,019 --> 00:37:15,319
+Peki, teşekkür ederim. O zaman şimdi bununla ilgili iki tane bakış açısı var.
+
+290
+00:37:15,960 --> 00:37:18,840
+Biliyorsunuz algoritma geliştirirken o bakış açıları neydi?
+
+291
+00:37:21,380 --> 00:37:24,719
+İki temel problemi çözerken bakış açısıyla çözebiliriz diyoruz.
+
+292
+00:37:26,420 --> 00:37:33,239
+Bir tanesi iteratif yaklaşım, diğeri de recursive yaklaşım.
+
+293
+00:37:34,699 --> 00:37:41,779
+Şimdi burada hangisini kullanmak daha böyle ilk etapta uygun gözüküyor bu probleme?
+
+294
+00:37:52,275 --> 00:37:59,076
+Evet, gıyattan cevap gelmiş. Recursive demiş, doğru. Recursive yaklaşımı kullanmak daha uygun gözüküyor.
+
+295
+00:37:59,675 --> 00:38:04,655
+Peki şimdi o zaman bizim öncelikle bir tanımlama yapmamız lazım.
+
+296
+00:38:05,735 --> 00:38:08,015
+Bir tane node yapısı oluşturmamız lazım.
+
+297
+00:38:10,815 --> 00:38:11,915
+Struct node diyelim.
+
+298
+00:38:14,555 --> 00:38:17,675
+Struct node'un neleri olacak?
+
+299
+00:38:22,547 --> 00:38:26,827
+Hangi attribütleri ya da elemanları olacak?
+
+300
+00:38:28,887 --> 00:38:31,167
+Evet, bakıyorum. [öğrenci].
+
+301
+00:38:33,207 --> 00:38:38,587
+Bir tane left child olacak, bir tane right child olacak.
+
+302
+00:38:38,747 --> 00:38:40,507
+Onlar struct, node pointer türünden.
+
+303
+00:38:40,787 --> 00:38:41,947
+Bir tane de datası olacak.
+
+304
+00:38:41,947 --> 00:38:43,207
+Tamam, çok güzel.
+
+305
+00:38:43,947 --> 00:38:45,607
+Int data diyelim.
+
+306
+00:38:47,287 --> 00:38:49,927
+Hemen buraya bir tane struct, node.
+
+307
+00:38:50,996 --> 00:38:56,496
+Kendisine referans verdiğimiz için left diyelim.
+
+308
+00:38:57,775 --> 00:39:01,416
+Buraya daha kısa olmak. Left, C diyorum, child'ın C'si.
+
+309
+00:39:01,976 --> 00:39:08,516
+Buraya da stack, nokta, yıldız. Right, C diyorum. Burayı kapatıyorum.
+
+310
+00:39:09,976 --> 00:39:17,556
+Şimdi, bizim in order bir traversal yapmamız gerekiyor ilk etapta.
+
+311
+00:39:18,675 --> 00:39:22,996
+Bunun için bir kod yazmamız lazım.
+
+312
+00:39:23,855 --> 00:39:35,675
+Ve bu yazacağımız kodda her gezdiği noktada ulaştığı elemanı bize ilk olarak alacağımız elemanı ekrana yazdıracak bir kod olsun.
+
+313
+00:39:36,735 --> 00:39:37,775
+Nasıl bir şey yazabiliriz?
+
+314
+00:39:39,475 --> 00:39:41,096
+Ben şöyle bir başlangıç yapayım.
+
+315
+00:39:52,275 --> 00:40:01,996
+Buraya doğal olarak struct, node, yıldız, root gidecek.
+
+316
+00:40:04,996 --> 00:40:09,395
+Bunun içine ne yazabiliriz?
+
+317
+00:40:15,699 --> 00:40:16,556
+Hadi.
+
+318
+00:40:18,708 --> 00:40:21,927
+Hocam, ben yukarıda yazdığımızla ilgili bir şey sormak için kaldırmıştım.
+
+319
+00:40:22,347 --> 00:40:23,367
+Buyur, dinliyoruz.
+
+320
+00:40:23,948 --> 00:40:34,967
+Hocam, bu bütün gezme tipleri için mi böyle sağ-sol node ve sağca data var, yoksa bu gezme türlerine göre değişiyor mu bu node'ların tanımlığı?
+
+321
+00:40:34,988 --> 00:40:36,667
+Yok, gezme türlerine göre değişmiyor.
+
+322
+00:40:36,807 --> 00:40:44,788
+Çünkü bu bizim için zaten genel ağacın bağlantı yapısını temsil edebildiği için genel bir kullanım şekli.
+
+323
+00:40:46,835 --> 00:40:47,835
+Tavolo 105.
+
+324
+00:40:47,835 --> 00:40:48,835
+Gidero.
+
+325
+00:40:53,811 --> 00:41:06,152
+Evet, şimdi in order traversal yazıyoruz. Yani hangi sırayla ilerleyeceğiz? Önce left, sonra root, sonra right. Evet [öğrenci].
+
+326
+00:41:07,912 --> 00:41:16,072
+Tam dediğinizi direkt yazacaktım ama yani kendini çağırıp root left, in order traversal, root left dersek recursive olarak.
+
+327
+00:41:16,072 --> 00:41:19,672
+Hemen yazayım ben senin söylediğine. Söyle.
+
+328
+00:41:20,788 --> 00:41:24,087
+in order traversal, root left.
+
+329
+00:41:24,087 --> 00:41:26,247
+in order traversal peki.
+
+330
+00:41:26,247 --> 00:41:26,788
+içine parametre olarak.
+
+331
+00:41:27,688 --> 00:41:30,108
+root left diyelim, başka?
+
+332
+00:41:30,887 --> 00:41:34,307
+sonra da, ha tamam, root'u unuttum ben.
+
+333
+00:41:34,387 --> 00:41:36,907
+Okey, bundan sonra da da root right yapacağız aynısını.
+
+334
+00:41:37,047 --> 00:41:39,788
+ama bunların öncesinde sanırım bir de...
+
+335
+00:41:41,076 --> 00:41:43,476
+Root'u kontrol etmemiz lazım.
+
+336
+00:41:43,596 --> 00:41:44,275
+Tamam, güzel.
+
+337
+00:41:44,596 --> 00:41:45,496
+Onu atlamış oldum.
+
+338
+00:41:45,916 --> 00:41:51,195
+Tamam, o kontrol bunun öncesinde nasıl olmalı? Yani hangi noktada duracağımızı bilmemiz lazım.
+
+339
+00:41:51,956 --> 00:41:54,636
+Nedir o kontrol? Hemen şöyle kırmızıyla yazalım.
+
+340
+00:41:54,956 --> 00:41:56,676
+If null kontrolü herhalde.
+
+341
+00:41:56,876 --> 00:42:03,476
+Evet. If root null'a eşitse ne diyeceğiz? Return diyeceğiz.
+
+342
+00:42:03,476 --> 00:42:07,476
+Tamam. Peki, bu noktadan sonra...
+
+343
+00:42:08,371 --> 00:42:13,751
+in order traversal root left çağırdık hemen arkasında in order traversal root right'ı mı çağıracağız?
+
+344
+00:42:14,831 --> 00:42:15,771
+Çağıramaz mıyız?
+
+345
+00:42:16,692 --> 00:42:21,831
+Yani datayı, tabii datayı görmek istiyorsak datayı alalım, yazdıralım ya da evet.
+
+346
+00:42:22,952 --> 00:42:27,131
+Traversal diyelim, root right diyelim.
+
+347
+00:42:28,551 --> 00:42:35,291
+Ama senin söylediğin gibi datayı ekranda göstermek için bizim buraya bir printf.
+
+348
+00:42:37,556 --> 00:43:02,496
+içine de işte yüzde D diyelim, virgül root data yazmamız lazım. Evet, teşekkür ediyorum [öğrenci]. Şimdi bunun analizini yapalım. Şöyle analizini yapalım. Bir kere bir else kolu yok çünkü zaten burada eğer true koluna girerse yani root null eşitse return yapıyor, fonksiyonlar çıkıyor.
+
+349
+00:43:03,219 --> 00:43:06,739
+Zaten nala eşit değilse yoluna devam ediyor.
+
+350
+00:43:07,359 --> 00:43:10,639
+Şimdi burada bizim durma koşulumuz recursive function'larda çok önemli.
+
+351
+00:43:10,759 --> 00:43:14,219
+Zaten onu belirlediğiniz anlık işin yarısını çözmüş oluyorsunuz.
+
+352
+00:43:14,219 --> 00:43:22,159
+Burada bizim durma koşulumuz artık herhangi bir başka düğme geçiş yapma imkanımız olmanın durum.
+
+353
+00:43:22,679 --> 00:43:26,219
+Yani o düğümün herhangi bir...
+
+354
+00:43:26,771 --> 00:43:38,692
+sol ya da sağ çocuğunun olmaması durumu. Bu noktada bunu koyduk. Root Nala eşit olduğu anda geri dönecek anlamına geliyor.
+
+355
+00:43:41,032 --> 00:43:45,592
+Eğer Root Nala eşit değilse o zaman kendisini sol tarafa doğru çağıracak.
+
+356
+00:43:46,251 --> 00:43:52,912
+Sonra doğru çağırdı diyelim. Bir tane daha alt katmanda o gittiğimiz düğümün çocuğu varsa gene
+
+357
+00:43:53,556 --> 00:44:20,436
+Solu çağıracak. Solu çağırdık, çağırdı. Biraz önceki şu örnekte olduğu gibi 7'ye kadar gitti. Bu noktaya ulaştığı anda artık onun herhangi bir başka left'i kalmadığı ve nala eşit olduğu için dönüş yapacak, return edecek. Ondan sonraki adımda da printf ile root data'yı yazdıracak ve 7'yi yazdırdıktan sonra bu sefer o bulunduğumuz düğümün
+
+358
+00:44:20,884 --> 00:44:22,864
+sağ tarafına gidiyor olacak.
+
+359
+00:44:23,604 --> 00:44:26,644
+Eğer sağ tarafında bir şey varsa onu yazdırıyor olacak.
+
+360
+00:44:27,284 --> 00:44:30,983
+Ondan sonra da üst tarafa geçip, root'u yazdırıp,
+
+361
+00:44:32,184 --> 00:44:33,084
+neyden çıkmış olacak?
+
+362
+00:44:34,144 --> 00:44:39,784
+Döngüden çıkmış olacak ve fonksiyon aslında kendi kendine tamamlamış olacak.
+
+363
+00:44:39,784 --> 00:44:45,023
+Şimdi aynı mantıkta düşündüğünüz zaman, hemen bir sonraki adıma geçelim.
+
+364
+00:44:46,344 --> 00:44:46,724
+void
+
+365
+00:44:47,347 --> 00:44:49,227
+Preorder Traversal'ı yazalım.
+
+366
+00:44:55,188 --> 00:45:01,628
+gene struct node yıldız root'u gönderiyorum.
+
+367
+00:45:03,628 --> 00:45:06,088
+O zaman burada ne yapacağım?
+
+368
+00:45:10,804 --> 00:45:11,784
+Evet [öğrenci].
+
+369
+00:45:13,364 --> 00:45:18,804
+Hocam, ilk önce root'un datasını yazdıracağız burada. Ondan sonra...
+
+370
+00:45:19,444 --> 00:45:21,984
+Kontrol yapmama gerek var mı yoksa direkt yazdıracak mıyım?
+
+371
+00:45:23,444 --> 00:45:30,824
+Null değilse yazdırabilir. Bilmiyorum. Çünkü null ise o adrese erişmeye çalışırsa hata verir program.
+
+372
+00:45:38,036 --> 00:45:53,076
+if root null eşittir. Çünkü onun bir datası yok demektir. Oradan geri dönmesi gerekiyor. Return dedik. Geri döndüğü anda ilk etapta yazdırır mı dedin?
+
+373
+00:45:53,936 --> 00:45:54,536
+Evet hocam.
+
+374
+00:45:54,536 --> 00:46:04,496
+Tamam. Peki onu şöyle yazalım. Bir deneyelim bakalım. Print f %d root
+
+375
+00:46:05,268 --> 00:46:05,907
+Data.
+
+376
+00:46:08,427 --> 00:46:09,187
+Evet.
+
+377
+00:46:10,687 --> 00:46:14,847
+Sonrasında da preorder traversal root left diyeceğiz.
+
+378
+00:46:15,288 --> 00:46:16,067
+Sola gideceğiz.
+
+379
+00:46:17,187 --> 00:46:24,467
+Preorder traversal root left diyeceğiz.
+
+380
+00:46:25,587 --> 00:46:25,907
+Evet.
+
+381
+00:46:26,248 --> 00:46:27,768
+Sonra da right ne yazacağız.
+
+382
+00:46:28,228 --> 00:46:28,487
+Evet.
+
+383
+00:46:29,007 --> 00:46:29,947
+Teşekkür ederim [öğrenci].
+
+384
+00:46:30,307 --> 00:46:30,807
+Teşekkür ederim.
+
+385
+00:46:32,244 --> 00:46:50,104
+traversal, root, write diyeceğim. Sonra da fonksiyonumu kapayacağım. Evet, bu da gördüğünüz gibi bu recursive yapıda yazması çok kolay olan bir fonksiyonu oldu.
+
+386
+00:46:58,771 --> 00:47:00,771
+gene struct node
+
+387
+00:47:00,771 --> 00:47:02,771
+pardon
+
+388
+00:47:02,771 --> 00:47:06,771
+node
+
+389
+00:47:06,771 --> 00:47:08,771
+yıldız root diyorum
+
+390
+00:47:08,771 --> 00:47:14,635
+evet bunu kim söylemek ister?
+
+391
+00:47:33,172 --> 00:47:34,172
+Evet, bu arada lütfen.
+
+392
+00:47:36,632 --> 00:47:46,771
+Hocam, yine root eşit midir? Node kontrolü yapalım. Sonra da sadece sırası değişecek yine. Sol, sağ. Aynen.
+
+393
+00:47:47,432 --> 00:47:50,172
+Önce, önce solu çağıracağım herhalde.
+
+394
+00:47:50,572 --> 00:47:53,811
+Önce sol, post order traversal, root left.
+
+395
+00:47:54,572 --> 00:47:54,831
+Tamam.
+
+396
+00:47:56,912 --> 00:47:58,952
+Post order traversal.
+
+397
+00:48:00,692 --> 00:48:01,932
+Root left, evet.
+
+398
+00:48:02,572 --> 00:48:06,351
+Sonra postorder traversal, root right, sağa bakacağız.
+
+399
+00:48:07,432 --> 00:48:08,331
+Ondan sonra?
+
+400
+00:48:09,652 --> 00:48:11,012
+Root datayı yazdıracağız.
+
+401
+00:48:11,412 --> 00:48:12,372
+Tamam, teşekkürler.
+
+402
+00:48:12,771 --> 00:48:13,331
+Ben teşekkür ederim.
+
+403
+00:48:20,275 --> 00:48:29,695
+printf %d deyip root datayı yazdıracağız.
+
+404
+00:48:31,795 --> 00:48:34,536
+Evet, buraya kadar sorusu olan var mı?
+
+405
+00:48:38,963 --> 00:48:40,483
+Anlaşılmayan bir kısım var mı?
+
+406
+00:48:47,572 --> 00:49:11,612
+İteratif bir yaklaşımda çözmek oldukça karmaşık olurdu. Bu tür yapılar her zaman recursive açıdan bir tasarımı daha kaldırıyor, daha uygun oluyor. O yüzden önümüzdeki haftalarda belki 4-5 hafta sonra bu recursion ile ilgili biraz daha detaylı bilgiyi verdiğimiz bir dersimiz olacak.
+
+407
+00:49:12,563 --> 00:49:22,683
+Bu konuda belki eksikleriniz varsa, onunla kapatma şansınız olur ama recursive fonksiyonda unutmayacağınız tek şey, hatta iki tane kritik nokta var.
+
+408
+00:49:22,883 --> 00:49:30,783
+Yani bunu mesela sınavda sorduğumuzda en çok şaşırdığım nokta bir, fonksiyon içinde fonksiyonu kendini çağırması lazım.
+
+409
+00:49:31,783 --> 00:49:37,223
+Yazılan koda baktığımda fonksiyonun içinde kendi kendini çağıran bir kod yok.
+
+410
+00:49:37,599 --> 00:49:58,199
+Eğer bir kodun içinde kendi ismi geçmiyorsa zaten iki östek olma ihtimali yok. O yüzden birincisi kendi kendini çağırması lazım. İki, bu kendi kendini çağıran fonksiyonun bir durma noktası olması lazım. İki tane dikkat edeceğiniz nokta var. Ondan sonra siz çok kolay bir şekilde dizayn ediliyor, tasarlanabiliyor.
+
+411
+00:50:03,443 --> 00:50:10,284
+3 farklı şekilde gezebileceğimizi söyledik ve bunun için 3 tane farklı kod parçası yazdık.
+
+412
+00:50:11,003 --> 00:50:18,224
+Artı ilgili düğümün hangi elemanlara sahip olması gerektiğini de belirtmiş olduk.
+
+413
+00:50:18,324 --> 00:50:20,643
+Buraya kadar sorunuz yoksa şimdi bir ara vereceğiz.
+
+414
+00:50:21,804 --> 00:50:27,284
+Saat 10.51.11.05'te kaldığımız yerden devam edeceğiz.
+
+415
+00:50:28,043 --> 00:50:29,083
+Teşekkür ediyorum arkadaşlar.
+
+416
+01:03:52,340 --> 01:03:55,700
+Evet arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edelim.
+
+417
+01:03:57,100 --> 01:04:05,320
+Ağaçtaki gezme adımlarını tamamladık. Şimdi bir sonraki aşamaya geçiyoruz.
+
+418
+01:04:05,940 --> 01:04:14,280
+Ağaç türlerini konuşacağız şimdi. Öncelikle tree'nin altında yer alan binary tree.
+
+419
+01:04:20,628 --> 01:04:33,288
+A çapısı. Eğer her bir aile düğümün en fazla 2-6 çocuk düğüme sahip olduğu yapıdan oluşuyorsa bu ağaca binary tree diyoruz.
+
+420
+01:04:42,996 --> 01:04:44,016
+Örneğin bu noktada.
+
+421
+01:04:48,115 --> 01:05:14,016
+Bir düğümünün, parent'ının, iki ve üç çocukları var. İki parent'ının, dört ve beş çocukları var. Üç düğümünün de herhangi bir çocuğu yok. Tek bir düğüme de sahip olabilirdi. En fazla iki tane çocuğu olan ağaçlara binary tree adını veriyoruz tabi. Binary tree'nin de kendi altında özel halleri var.
+
+422
+01:05:14,675 --> 01:05:39,735
+Bunlardan bir tanesi full binary tree. Full binary tree'ye bakacak olursak, burada her bir düğümün sıfır ya da iki tane çocuğu olduğu durumdan bahsediyoruz. Nedir? Örnek olarak gösterelim.
+
+423
+01:05:45,172 --> 01:05:51,692
+4, 5, 6 ve 7 olsun.
+
+424
+01:05:53,531 --> 01:06:05,091
+Full binary tree de her bir ebeveyn düğüm ya da ara düğüm ya sıfır ya da iki tane çocuğa sahip.
+
+425
+01:06:05,091 --> 01:06:11,192
+Örnek vermek gerekirse, ikiyi ele alırsanız, ikinin.
+
+426
+01:06:11,603 --> 01:06:39,143
+İki tane çocuğu var. İşte örnek vermek gerekirse beşin iki tane çocuğu var. Ya da burada olduğu gibi dördün, üçün, altının hiç çocuğu yok. Yani bu özel durumda bir düğümün bir çocuğu olması durumu
+
+427
+01:06:39,923 --> 01:06:43,503
+full binary tree şartını bozuyor. Buna dikkat etmek gerekiyor.
+
+428
+01:06:45,163 --> 01:06:46,963
+Bir sonraki adıma geçelim.
+
+429
+01:06:48,663 --> 01:06:50,623
+Can a binary tree'nin özel bir hali.
+
+430
+01:06:54,260 --> 01:06:55,980
+Perfect, final tree.
+
+431
+01:07:01,235 --> 01:07:03,996
+Perfect binary tree için ne söyleyebiliriz?
+
+432
+01:07:13,556 --> 01:07:14,536
+Evet. [öğrenci]?
+
+433
+01:07:15,576 --> 01:07:17,956
+Her nodun iki child olması gerekiyor.
+
+434
+01:07:18,156 --> 01:07:21,976
+Evet. Her nodun iki tane child olması gerekiyor. Teşekkür ediyorum.
+
+435
+01:07:35,123 --> 01:07:38,423
+Gördüğünüz gibi bu bir perfect binary tree oluşturuyor.
+
+436
+01:07:39,243 --> 01:07:41,183
+Ve bir koşul daha var.
+
+437
+01:07:42,723 --> 01:07:44,123
+Bu perfect binary tree de.
+
+438
+01:07:48,148 --> 01:07:54,867
+Her bir nodun iki child olması gerektiğini söyledik. Şöyle olsaydı...
+
+439
+01:08:06,483 --> 01:08:10,623
+node'un da iki child var. Evet, [öğrenci].
+
+440
+01:08:12,523 --> 01:08:18,443
+Perfect binary tree'de bütün node'ların aynı seviyede olması lazım yani yaprakları.
+
+441
+01:08:18,984 --> 01:08:26,644
+Evet, leaf nodes should be at the same level.
+
+442
+01:08:30,612 --> 01:08:33,231
+Ek olarak bu şartın da sağlanması gerekiyor.
+
+443
+01:08:35,112 --> 01:08:40,631
+O zaman bu şartlarda şu kısmı siliyoruz.
+
+444
+01:08:43,572 --> 01:08:46,872
+Evet, bir sonraki adımına geçelim.
+
+445
+01:08:54,068 --> 01:08:57,828
+complete, binary tree.
+
+446
+01:09:19,828 --> 01:09:23,828
+Evet, şimdi Complete Binary Tree'deki durum nedir?
+
+447
+01:09:27,923 --> 01:09:29,564
+Diyarene fark dolar.
+
+448
+01:09:51,731 --> 01:09:52,971
+Evet, yorum olan var mı?
+
+449
+01:09:55,412 --> 01:09:58,971
+Complete binary tree aslında full binary tree'ye benziyor.
+
+450
+01:10:00,492 --> 01:10:04,011
+Ama bir iki ufak farklı ayrışı yolda.
+
+451
+01:10:05,051 --> 01:10:05,672
+Bir.
+
+452
+01:10:18,996 --> 01:10:25,855
+Fark şu, bütün yaprak düğümlerin sola yaslı olması gerekiyor.
+
+453
+01:10:26,595 --> 01:10:33,316
+Yani mesela 6, 3'ün sol çocuğu değil sağ çocuğu olsaydı, şöyle yapalım.
+
+454
+01:10:38,931 --> 01:10:42,152
+Şöyle olsaydı bu bir complete binary tree olmayacaktı.
+
+455
+01:10:47,380 --> 01:10:53,159
+Mutlaka tek çocuğu olan düğümün sola yastığı olması gerekiyor.
+
+456
+01:10:55,799 --> 01:10:56,920
+Başka?
+
+457
+01:11:03,155 --> 01:11:05,536
+Başka bir dikkat etmesi gereken nokta var mı?
+
+458
+01:11:15,796 --> 01:11:25,336
+Peki. O zaman size birkaç örnek sorayım, onlarla ilgili yorumunuzu alayım, ondan sonra tekrar bakalım duruma.
+
+459
+01:12:16,787 --> 01:12:18,867
+Evet, şimdi sordum.
+
+460
+01:12:19,867 --> 01:12:20,567
+Soru şu.
+
+461
+01:12:25,619 --> 01:12:49,500
+whole binary tree, complete binary tree. Diğerlerine de aynı şeyi yazalım. FBT, CBT, FBT, CBT. Evet, verilen örnekler hangi türe girer?
+
+462
+01:12:49,908 --> 01:12:54,888
+İkisine girer mi? Tekine mi girer? Yoksa ikisine de girmez mi? İlkiyle başlayalım.
+
+463
+01:12:57,168 --> 01:13:00,388
+Ve neden sağlayıp şartı sağlamadığını söyleyelim.
+
+464
+01:13:01,728 --> 01:13:03,968
+Evet, ilk tree'imiz full binary tree midir? [öğrenci].
+
+465
+01:13:05,568 --> 01:13:10,468
+İlki hocam, full binary tree değildir. Çünkü sıfırda iki tane çocuğu olmasın.
+
+466
+01:13:10,728 --> 01:13:12,188
+Tamam, teşekkür ediyorum.
+
+467
+01:13:12,884 --> 01:13:17,764
+Birincisi değil. İkincisi hemen [öğrenci], sen onu söyle, complete binary tree midir?
+
+468
+01:13:18,264 --> 01:13:21,203
+İkincisi de full binary tree'dir, doğru.
+
+469
+01:13:21,724 --> 01:13:25,504
+Hayır, hayır, pardon, yanlış sordum. Yani ilk ağaç complete binary tree midir?
+
+470
+01:13:27,184 --> 01:13:31,203
+Hayır değil, çünkü üçüncü çocuğu sağ tarafta kaldığı için.
+
+471
+01:13:31,564 --> 01:13:37,904
+Tamam, teşekkür ediyorum. Beş sağda olduğu için değildir. Şimdi hemen bir başka arkadaşıma söz vereyim.
+
+472
+01:13:39,444 --> 01:13:40,584
+Ekenca açt.
+
+473
+01:13:45,235 --> 01:13:46,796
+Evet, mesela [öğrenci].
+
+474
+01:13:51,123 --> 01:13:52,523
+Hocam, tekrarlayabilir misiniz?
+
+475
+01:13:54,443 --> 01:14:00,623
+O zaman başka bir arkadaşımıza geçelim [öğrenci]. Sen bir sonraki turda cevap verirsin. [öğrenci].
+
+476
+01:14:06,515 --> 01:14:07,315
+[öğrenci].
+
+477
+01:14:09,395 --> 01:14:09,755
+Peki.
+
+478
+01:14:12,355 --> 01:14:13,715
+[öğrenci].
+
+479
+01:14:18,260 --> 01:14:19,500
+[öğrenci].
+
+480
+01:14:23,060 --> 01:14:26,380
+Peki, ondan da cevap yok. Umutsana söz vereyim.
+
+481
+01:14:28,300 --> 01:14:34,320
+Hocam, full binary tree değildir ama complete binary tree'dir.
+
+482
+01:14:35,180 --> 01:14:39,460
+Full binary tree değildir diyorsun. Emin misin?
+
+483
+01:14:40,700 --> 01:14:41,540
+Eminim hocam.
+
+484
+01:14:42,820 --> 01:14:43,380
+Bir daha bak.
+
+485
+01:14:48,083 --> 01:14:49,703
+Karıştırmak olabilirim ama
+
+486
+01:14:49,703 --> 01:14:54,663
+Full binary tree'de iki tane çocuk olma şartı vardı hatırlıyorsam.
+
+487
+01:14:56,523 --> 01:14:57,203
+Ara düğümlerin.
+
+488
+01:14:57,904 --> 01:15:00,304
+Burada ara düğümler iki tane çocuk olma şartını sağlıyor.
+
+489
+01:15:00,404 --> 01:15:01,443
+O yüzden full binary tree.
+
+490
+01:15:02,344 --> 01:15:02,744
+Bu kısım.
+
+491
+01:15:07,463 --> 01:15:09,163
+Complete binary tree midir?
+
+492
+01:15:09,783 --> 01:15:10,564
+Yok değildir.
+
+493
+01:15:10,744 --> 01:15:12,123
+Neden olduğunu sorayım.
+
+494
+01:15:14,899 --> 01:15:22,659
+Çünkü son katmamda tam tamamlanmamış yani son seviye.
+
+495
+01:15:23,420 --> 01:15:27,039
+Tam tamamlanmamış demeyelim ama ağaç sola yastığı değil.
+
+496
+01:15:29,019 --> 01:15:29,659
+Anladım.
+
+497
+01:15:29,959 --> 01:15:35,619
+Yani 6 ve 4 ikinin altına gelirse o zaman bunu bir daha düşünmek gerekebilir.
+
+498
+01:15:35,619 --> 01:15:39,680
+Evet, bu kısımda Complete binary tree olmadığını söyledik.
+
+499
+01:15:40,623 --> 01:15:42,663
+Bir başka arkadaşımıza söz vereyim.
+
+500
+01:15:45,183 --> 01:15:46,963
+[öğrenci] olmasın, başka biri olsun.
+
+501
+01:15:49,363 --> 01:15:51,384
+Hocam ben bir soru sorabilir miyim acaba?
+
+502
+01:15:51,483 --> 01:15:52,023
+Tabii [öğrenci].
+
+503
+01:15:52,903 --> 01:15:57,243
+İkinin mesela iki tane çocuğu yok, bu nasıl o yüzden full binary tree oluyor?
+
+504
+01:15:58,103 --> 01:16:01,663
+İki bir leave node, internal node değil, parent node değil.
+
+505
+01:16:02,263 --> 01:16:02,823
+Anladın.
+
+506
+01:16:03,384 --> 01:16:03,663
+O yüzden.
+
+507
+01:16:04,943 --> 01:16:05,384
+Rica ederim.
+
+508
+01:16:06,384 --> 01:16:06,644
+Evet.
+
+509
+01:16:08,115 --> 01:16:12,916
+Üçüncüsü için söz olmak isteyen [öğrenci].
+
+510
+01:16:14,536 --> 01:16:19,675
+Hocam bu full değil çünkü ikinin iki tane çocuğu yok.
+
+511
+01:16:19,836 --> 01:16:20,615
+Güzel, çok güzel.
+
+512
+01:16:20,636 --> 01:16:24,216
+Ama komplet oluyor çünkü sola yasnı.
+
+513
+01:16:24,456 --> 01:16:26,235
+Tamam, teşekkür ederim [öğrenci].
+
+514
+01:16:28,095 --> 01:16:31,175
+Evet, son adımdayız. Bakalım.
+
+515
+01:16:32,175 --> 01:16:32,536
+[öğrenci].
+
+516
+01:16:35,155 --> 01:16:51,636
+Hocam, bir binary tree'dir. Çünkü hepsinin iki çocuğu var. Ama komplit değil. Yani dört önce olması lazım diye düşündüm komplit olması için. Ama eğer sola yastığıysa, sola yastığı o yüzden komplit de bir edilir.
+
+517
+01:16:52,095 --> 01:17:02,556
+Bizim için hangi rakamların, hangisinden önce ya da sonra geldiğinin bir önemi yok. Bizim için düğümlerin pozisyonu önemli. O yüzden sola yastığı olduğu için komplit. Teşekkürler. Evet, gördüğünüz gibi.
+
+518
+01:17:03,380 --> 01:17:15,260
+Farklı case'leri konuşmuş olduk. Complete binary tree ile full binary tree arasındaki farkları da böylece daha net bir şekilde ortaya koymuş olduk.
+
+519
+01:17:16,420 --> 01:17:20,239
+Başka bir sorusu olan var mı? Burası ile ilgili.
+
+520
+01:17:26,003 --> 01:17:26,503
+Thank you.
+
+521
+01:17:35,507 --> 01:17:37,847
+Şimdi, bir son iki.
+
+522
+01:17:38,347 --> 01:17:39,587
+Ben bir soru sorabilir miyim?
+
+523
+01:17:40,447 --> 01:17:41,307
+Tabii, olsan.
+
+524
+01:17:41,867 --> 01:17:46,007
+Complete binary tree'nin sola yatık olması haricinde başka bir şartı var mı?
+
+525
+01:17:46,707 --> 01:17:48,487
+Ben o kısmı tam anlayamadım.
+
+526
+01:17:49,427 --> 01:17:51,028
+Complete binary tree'nin mi?
+
+527
+01:17:51,467 --> 01:17:53,147
+Hemen geri dönelim.
+
+528
+01:17:55,427 --> 01:17:56,827
+Şu kısımdayız değil mi?
+
+529
+01:17:57,947 --> 01:17:58,268
+Evet.
+
+530
+01:17:59,007 --> 01:17:59,268
+Tamam.
+
+531
+01:17:59,268 --> 01:18:02,268
+Şimdi, son elemanın...
+
+532
+01:18:03,572 --> 01:18:10,391
+bir ekstradan, yani şurada gördüğün şunu çizeyim.
+
+533
+01:18:14,036 --> 01:18:38,515
+Böyle bir sağ çocuğunun olmasına gerek yok. Bu bir şart değil. Full binary tree ile en çok ayrıldığı nokta burası. 7 gelseydi bu hem full binary tree olacaktı hem complete binary tree olacaktı. Önemli olan, şunu siledim. Aslında sola dayalı olması.
+
+534
+01:18:38,895 --> 01:18:44,255
+Fakat işte 6 burada olsaydı, solda değil de sağda olsaydı gene olmuyordu.
+
+535
+01:18:44,735 --> 01:18:48,935
+Ya da şuradaki örnekte olduğu gibi, hemen şunu da işaret edeyim.
+
+536
+01:18:49,575 --> 01:18:54,275
+Şuradaki gibi aslında iki tane sağlıyor şartı.
+
+537
+01:18:55,335 --> 01:19:04,315
+Ama bu 6 ile 4 bu tarafta herhangi bir başka düğüm olmadığı için bu şartı bozduğundan dolayı complete binary tree olmuyor.
+
+538
+01:19:06,079 --> 01:19:10,939
+Önemli olan ağacın sola yastığı olması. Başka bir koşul gerekmiyor.
+
+539
+01:19:11,359 --> 01:19:12,439
+Ağabey, teşekkür ederim.
+
+540
+01:19:12,840 --> 01:19:13,319
+Mücadelek.
+
+541
+01:19:15,719 --> 01:19:18,959
+Evet, şimdi balanced binary tree dedik.
+
+542
+01:19:21,180 --> 01:19:23,340
+Bu bizim için çok önemli bir kavram.
+
+543
+01:19:23,340 --> 01:19:29,340
+Çünkü ağaçların dengeli olması aslında bizim...
+
+544
+01:19:29,716 --> 01:19:55,675
+Her koşulda log n'de en kötü ihtimalle işi çözmemizi sağlıyor. Dengesiz bir ağaçta bu n'e doğru kayıyor. Peki şimdi dengesiz bir ağacı ve dengeli bir ağacı konuşacağız. Bir ağacın dengeli olarak adlandırılması hangi koşulda mümkündür? Bana bunu söyleyebilir misiniz? Neye bakıyoruz?
+
+545
+01:19:58,100 --> 01:20:00,100
+Ya da vakıya olabiliriz tahmininiz nedir?
+
+546
+01:20:19,347 --> 01:20:19,907
+Evet, [öğrenci].
+
+547
+01:20:21,688 --> 01:20:27,247
+Hocam, hatırladığın kadarıyla yaprak notların arasındaki seviye farkı en az bir olmalıydı.
+
+548
+01:20:28,488 --> 01:20:30,728
+En az bir mi yoksa en fazla bir?
+
+549
+01:20:30,747 --> 01:20:32,768
+Yani en fazla bir farkı var.
+
+550
+01:20:33,148 --> 01:20:37,087
+Tamam, şimdi şöyle yazalım. Teşekkür ederim.
+
+551
+01:20:46,868 --> 01:20:48,628
+Yaprak notlardan çok
+
+552
+01:20:55,891 --> 01:21:02,731
+Sol ve sağ taraftaki subtree'ler aslında bizim için belirleyici oluyor.
+
+553
+01:21:18,547 --> 01:21:32,007
+Not more than one. Yani sol ve sağ ağaç, alt ağaçlarda yer alan herhangi bir düğümün farklarının birden fazla olmaması gerekiyor.
+
+554
+01:21:32,827 --> 01:21:42,528
+Şimdi, buraya baktığınız zaman bir ile iki arasındaki fark nedir? Birdir. Bir ile üç arasındaki fark nedir? Birdir.
+
+555
+01:21:42,528 --> 01:21:45,167
+Hemen sol ve sağ ağaçlara bakalım.
+
+556
+01:21:46,068 --> 01:22:06,548
+Alt ağaçlara, burası. Üçün levelı kaçtır? Birdir. Beşin levelı kaçtır? İkidir. Dördün levelı ikidir. Aralarındaki fark bir. O yüzden bu bir balanced binary tree olarak adlandırılır.
+
+557
+01:22:13,300 --> 01:22:37,300
+3'ün levelı 1 iken 6'nın levelı 3'tür ve aralarındaki fark 2'dir. O yüzden bu verilen ağaç unbalanced binary tree olarak kategorize edilir. Tek yapmanız gereken
+
+558
+01:22:37,908 --> 01:22:54,668
+Sol ve sağ alt ağaçlardaki düğümlerin arasındaki farkı kontrol etmek, buradaki fark bir tanesi bile birden fazlaysa onun balanced olmadığını rahatlıkla söyleyebiliriz.
+
+559
+01:22:57,268 --> 01:22:59,068
+Burası ile ilgili başka bir soru soru var mı?
+
+560
+01:23:03,667 --> 01:23:05,467
+Peki, teşekkürler.
+
+561
+01:23:07,567 --> 01:23:09,627
+O zaman bir sonraki slide'a geçelim.
+
+562
+01:23:15,923 --> 01:23:34,703
+Şimdi şu ana kadar Complete Binary Tree, Full Binary Tree, Perfect Binary Tree, Balanced Binary Tree gördük. Bir de Balanced olmayan kısımlar var. Bunlara da verilen isim. Unbalanced dedik ama bunların daha özel halleri var.
+
+563
+01:23:39,220 --> 01:23:42,700
+Degenerate or
+
+564
+01:23:42,700 --> 01:23:53,280
+otological tree, bir tanesinin ismi. Diğerinin ismi de
+
+565
+01:23:53,280 --> 01:23:58,360
+skewed binary tree.
+
+566
+01:24:19,155 --> 01:24:30,916
+Tek bir çocuğa sahip olan herhangi bir tarafta, solda ya da sağda bir ağaç yapısına degenerate ya da pathological tree diyoruz.
+
+567
+01:24:31,755 --> 01:24:36,175
+Burada gördüğünüz gibi bu ağaç.
+
+568
+01:24:36,627 --> 01:24:43,927
+sağda, yani soldan ilerleyip sağ tarafta bir tane tek bir ağaç yapısına sahip, düğüm yapısına sahip.
+
+569
+01:24:43,927 --> 01:24:48,287
+Bu yüzden de generate binary tree olarak geçiyor. Bir de bunun daha kötü bir versiyonu var.
+
+570
+01:24:48,347 --> 01:24:50,028
+Ambient tree'ler örnek verilecek.
+
+571
+01:24:58,003 --> 01:25:00,003
+Bu bir örnek olabilir.
+
+572
+01:25:00,003 --> 01:25:02,003
+Bu da bir örnek olabilir.
+
+573
+01:25:04,003 --> 01:25:08,003
+Bir tanesi left skewed binary diye geçiyor.
+
+574
+01:25:14,612 --> 01:25:20,532
+Diğeri de right, skewed, binary tree diye geçiyor.
+
+575
+01:25:22,532 --> 01:25:32,471
+Her iki tarafta da farkındaysanız bütün elemanlar sol ya da sağ tarafa yığılmış şekilde pozisyonlanmışlar.
+
+576
+01:25:32,971 --> 01:25:39,432
+Bunlar da unbalanced trilere verilecek iki tane güzel örnek olarak karşımıza çıkıyor.
+
+577
+01:25:41,171 --> 01:25:43,311
+Evet, şimdi bir sonraki adıma geçelim.
+
+578
+01:25:44,391 --> 01:25:45,492
+Binary search tree'ler.
+
+579
+01:25:48,371 --> 01:25:50,811
+Hemen onların da ismini koyalım.
+
+580
+01:25:55,507 --> 01:26:00,167
+Özel ikili arama ağaçları olarak geçiyor.
+
+581
+01:26:01,827 --> 01:26:10,108
+Şimdi burada bu yapı bize aramanın hızlı bir şekilde gerçekleşmesini sağlıyor.
+
+582
+01:26:10,108 --> 01:26:13,547
+Bunun için de özel bir kurula göre oluşturulmuş olması gerekiyor.
+
+583
+01:26:14,407 --> 01:26:17,108
+Bu özel kural şu.
+
+584
+01:26:18,307 --> 01:26:22,108
+Sol alt ağaçlarda yer alan tüm değerler...
+
+585
+01:26:23,507 --> 01:26:39,028
+kök düğümden daha küçük olmak zorunda. Sağ alt ağaç altında yer alan tüm düğünlerin değeri de kökten büyük olmak zorunda. Evet, şimdi bir örnek vermek gerekirse 8.
+
+586
+01:26:43,667 --> 01:26:46,367
+peş, unikir.
+
+587
+01:26:50,355 --> 01:26:58,115
+6, 1, hatta şöyle diyelim, şunu değiştirelim.
+
+588
+01:27:03,220 --> 01:27:07,460
+Burası 4 olsun, burası da 5 olsun.
+
+589
+01:27:10,340 --> 01:27:25,340
+Şimdi, burada, diyelim ki ilk 8 elinizde var, sonra 4 var, sonra 12 var, sonra 1 var, sonra 6 var, sonra da 5 var olsun.
+
+590
+01:27:26,140 --> 01:27:27,819
+8 geldiğinde yukarı yerleşti.
+
+591
+01:27:28,372 --> 01:27:45,471
+Ondan sonra 4 geldi. 4, 8'den küçük olduğu için hemen ikinci düğümün olduğu yere yerleşmiş oldu. Sonra 12 geldi. 8'den büyük olduğu için sağ tarafa yerleşti. Sonra 1 geldi.
+
+592
+01:27:46,100 --> 01:28:01,800
+8'den küçük, 4'den küçük yerleşti. Sonra 6 geldi, 8'den küçük ama 4'den büyük bu sefer 4'ün sağına yerleşti. En son 5 geldi, 8'den küçük, 4'den büyük, 6'dan küçük ve 5'de buraya yerleşmiş oldu.
+
+593
+01:28:01,800 --> 01:28:06,200
+Şimdi yazalım. Hemen kurallarımızı da.
+
+594
+01:28:08,380 --> 01:28:12,980
+Old notes of the left.
+
+595
+01:28:15,091 --> 01:28:23,971
+Sub 3 are less than the root root.
+
+596
+01:28:28,051 --> 01:28:29,231
+Older Ops.
+
+597
+01:28:32,979 --> 01:28:42,100
+of the right sub-tree are greater than.
+
+598
+01:28:48,212 --> 01:28:49,051
+Do you know what?
+
+599
+01:28:53,619 --> 01:28:57,119
+Şimdi, bu binary search tree kurallarını sağlıyor.
+
+600
+01:28:58,600 --> 01:28:59,399
+Buradaki ağaç.
+
+601
+01:29:02,399 --> 01:29:03,884
+Diyelim ki...
+
+602
+01:29:07,252 --> 01:29:08,971
+Şöyle bir rakam gelseydi.
+
+603
+01:29:13,460 --> 01:29:26,720
+3 gelseydi ve buraya yerleştirseydi 3. Ağaç bu şekilde verilseydi 8'den küçük mü 3 evet, 4'den küçük mü evet ama 1'den küçük değil.
+
+604
+01:29:26,720 --> 01:29:36,720
+Aslında 3'ün buraya yerleştirilmiş olması gerekecekti ama biz 3'ü sola yerleştirdiğimiz için bu binary search tree kuralını bozacaktı.
+
+605
+01:29:39,028 --> 01:29:42,808
+Kurala uygun olup olmadığında bir kontrol etmek gerekiyor.
+
+606
+01:29:43,587 --> 01:29:46,808
+Bazı şartlarda kurala uygun verildiği kabul edilen denilebilir.
+
+607
+01:29:47,628 --> 01:29:55,948
+Ama bu denilmiyorsa bu binary search tree'nin kuralları sağlayıp sağlamadığının da bir kontrol edilmesi gerekebilir.
+
+608
+01:29:56,388 --> 01:29:57,548
+Buna dikkat etmek gerekiyor.
+
+609
+01:30:00,368 --> 01:30:02,028
+Evet, şimdi bunları silelim.
+
+610
+01:30:04,028 --> 01:30:04,528
+Şimdi
+
+611
+01:30:05,492 --> 01:30:10,271
+Verilen bir binary search tree de arama maliyeti nedir?
+
+612
+01:30:18,739 --> 01:30:21,379
+Evet, o olsa. Kötü durum senaryosu.
+
+613
+01:30:21,979 --> 01:30:22,420
+Logend.
+
+614
+01:30:23,799 --> 01:30:26,479
+Logendir. Peki, [öğrenci]?
+
+615
+01:30:27,879 --> 01:30:34,799
+Hocam, benden şey söylemek istiyordum. Kötü durum en aşağıya şey, not.
+
+616
+01:30:40,243 --> 01:30:42,403
+Başka yorumda bulunmak isteyen var mı?
+
+617
+01:30:48,819 --> 01:30:51,939
+Peki, şöyle bir ağaç verirse.
+
+618
+01:30:55,507 --> 01:30:58,427
+Size örnek vereyim.
+
+619
+01:30:59,028 --> 01:31:04,947
+15, 8, 5, 3, 1.
+
+620
+01:31:10,452 --> 01:31:10,992
+[öğrenci]?
+
+621
+01:31:11,952 --> 01:31:14,292
+[öğrenci] en kötü durum O-N oluyor sanırım.
+
+622
+01:31:15,231 --> 01:31:18,391
+Şimdi tabii işte ağacın nasıl yerleştirildiği çok önemli.
+
+623
+01:31:19,231 --> 01:31:27,672
+O yüzden küçükten büyüye şeklinde yerleştirdiyseniz ağacı ya da büyükten küçüğe yerleştirdiyseniz,
+
+624
+01:31:27,672 --> 01:31:35,672
+o zaman arama yaptığınız zaman bu binary search tree de bu karmaşıklık...
+
+625
+01:31:36,212 --> 01:31:58,652
+O n seviyesine çıkıyor. Buna dikkat etmek lazım. O yüzden dengeli bir binary search tree'nin oluşturulduğunu kabul ettiğiniz takdirde ortalama arama bir login karmaşıklığında oluyor. Ama ağaç dengeli değilse, skewed bir binary tree ise o zaman karmaşıklık o vayne çıkıyor. Buna dikkat etmekte fayda var.
+
+626
+01:32:00,992 --> 01:32:03,532
+Peki, şimdi devam edelim.
+
+627
+01:32:10,420 --> 01:32:16,220
+binary search tree, operations.
+
+628
+01:32:20,243 --> 01:32:29,884
+neler var? Search doğal olarak, insert ve delete.
+
+629
+01:32:31,983 --> 01:32:38,343
+Şimdi update'i saymıyorum. Çünkü update biraz daha özel bir case.
+
+630
+01:32:39,724 --> 01:32:45,043
+Onun yapılıp yapılmaması gerektiğini ilerleyen derste konuşuruz.
+
+631
+01:32:45,716 --> 01:32:48,595
+Şimdi search kısmı üzerinden ilerleyelim.
+
+632
+01:32:49,655 --> 01:32:52,716
+Hemen bir tane oluşturalım.
+
+633
+01:33:14,163 --> 01:33:14,923
+16
+
+634
+01:33:14,923 --> 01:33:18,724
+8
+
+635
+01:33:22,387 --> 01:33:24,548
+25 şeklinde bir ağacımız olsun.
+
+636
+01:33:26,368 --> 01:33:30,288
+Şimdi buradaki search işlemi nasıl ilerleyecek?
+
+637
+01:33:31,268 --> 01:33:32,167
+Bana bunu kim söyler?
+
+638
+01:33:37,652 --> 01:33:41,952
+Yani bunu formülize etmek istediğim zaman sözlü olarak algoritmasını istiyorum.
+
+639
+01:33:45,332 --> 01:34:03,132
+Düğümleri şu şekilde varsayabilirsiniz. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+
+640
+01:34:11,604 --> 01:34:14,564
+seçeneklerden biri bu. Birden de başladı. [öğrenci]?
+
+641
+01:34:16,024 --> 01:34:17,384
+Sesim geliyor mu hocam acaba?
+
+642
+01:34:17,744 --> 01:34:18,084
+Geliyor.
+
+643
+01:34:18,943 --> 01:34:26,724
+Yani aranan terimle rootdaki değeri karşılaştırırız. Küçükse sol tarafa, büyükse sağ tarafa doğru sürekli ilerleriz.
+
+644
+01:34:27,144 --> 01:34:30,884
+İlk karşılaştırma şeyimiz ne olur? Operatörümüz.
+
+645
+01:34:31,264 --> 01:34:34,984
+Rootun datası ile yani level 0'da karşılaşma yaparız ve sağ veya sola.
+
+646
+01:34:35,664 --> 01:34:37,024
+Karşılaştırma operatörü yani.
+
+647
+01:34:37,844 --> 01:34:41,384
+Ne diye sormamız lazım? Küçük mü büyük mü diye sormamız lazım.
+
+648
+01:34:44,144 --> 01:34:45,863
+Yani ilk aklıma gelen mi oldu? Evet.
+
+649
+01:34:46,603 --> 01:34:48,203
+Onun yerine eşit mi diye baksak?
+
+650
+01:34:49,064 --> 01:34:50,904
+Ha dur evet. O ihtimali de var.
+
+651
+01:34:50,904 --> 01:34:54,363
+Şimdi ilk başta bir kere eşit mi diye bakmamız lazım.
+
+652
+01:34:55,264 --> 01:35:00,043
+Eşit değilse ki while döngüsünü bu şekilde kurabilirsiniz.
+
+653
+01:35:00,744 --> 01:35:02,163
+Eşit olmadığı sürece diye.
+
+654
+01:35:03,023 --> 01:35:04,904
+Eşit değilse o zaman...
+
+655
+01:35:05,876 --> 01:35:09,195
+İçine girecek Weil'ın. Küçük mü, büyük mü? Niye bakacak?
+
+656
+01:35:10,136 --> 01:35:24,336
+Küçükse sola, büyükse sağa gidecek. Peki, küçükse sola gitmesi için k'nın sıfırdan başladığı bir durumda k'yı nasıl arttırmalıyım her turda?
+
+657
+01:35:25,076 --> 01:35:28,515
+Eğer küçükse ya da büyükse.
+
+658
+01:35:29,916 --> 01:35:31,416
+k bir sonraki turda ne olmalı?
+
+659
+01:35:39,507 --> 01:35:41,608
+Bu index demeye göre.
+
+660
+01:35:45,363 --> 01:35:47,323
+Diyelim ki 8'i arıyorum.
+
+661
+01:35:47,563 --> 01:35:49,263
+Geldi. 15 eşit değil.
+
+662
+01:35:50,123 --> 01:35:51,043
+15'ten küçük.
+
+663
+01:35:51,463 --> 01:35:54,403
+K bir sonraki turda ne olacak?
+
+664
+01:35:59,828 --> 01:36:00,388
+[öğrenci]?
+
+665
+01:36:02,168 --> 01:36:05,768
+Hocam, sol taraftaki ağaça gideceğiz.
+
+666
+01:36:06,128 --> 01:36:07,608
+Saptoriye. Biri olacak o zaman.
+
+667
+01:36:08,388 --> 01:36:09,248
+Çünkü küçük.
+
+668
+01:36:10,588 --> 01:36:14,548
+Genelleştirirsek bunu kaç olması gerekiyor? [öğrenci]'ın bir sonraki turda her seferinde...
+
+669
+01:36:14,548 --> 01:36:15,368
+Biri olması lazım.
+
+670
+01:36:16,448 --> 01:36:18,208
+Artı artı olması lazım yani.
+
+671
+01:36:18,668 --> 01:36:19,968
+Artı bir sadece.
+
+672
+01:36:20,628 --> 01:36:22,148
+Yok. Öyle olmaz.
+
+673
+01:36:24,115 --> 01:36:28,716
+Bir sonraki turda biliyorsun 9'a eşit olmayacağı için 9'dan küçük olduğu için 3 olacak.
+
+674
+01:36:29,755 --> 01:36:33,036
+K artı 1 yaparsak 1 eklediğinde 2 olur.
+
+675
+01:36:33,895 --> 01:36:35,115
+Bunu genelleştirmemiz lazım.
+
+676
+01:36:36,216 --> 01:36:43,015
+Yani önce K 0 oldu, sonra K 1 oldu, sonra K 3 oldu, sonra K belki de 7 olacak.
+
+677
+01:36:45,939 --> 01:36:46,899
+Sola gittikçe.
+
+678
+01:36:47,340 --> 01:36:50,539
+İki katının bir fazlası gibi bir şey yapıyoruz.
+
+679
+01:36:50,760 --> 01:36:52,559
+Tamam, peki. Yazalım.
+
+680
+01:36:54,159 --> 01:36:57,939
+Sol tarafta 2k artı 1.
+
+681
+01:36:59,059 --> 01:36:59,859
+Sağda ne olacak?
+
+682
+01:37:06,963 --> 01:37:09,164
+Kim söyler? Sağda ne olacak?
+
+683
+01:37:14,131 --> 01:37:18,271
+Evet, günah. Sağda da 2k artı 2 olacak. Chatten yazmış arkadaşınız.
+
+684
+01:37:19,671 --> 01:37:24,711
+Eğer böyle bir indeksleme yaparsak bu şekilde olacak. İndekslemeyi ne şekilde yapabilirdik başka?
+
+685
+01:37:28,372 --> 01:37:31,592
+Ağacın indekslemesini, düğümlerin yerini.
+
+686
+01:37:37,811 --> 01:37:42,811
+Arkadaşlar, lütfen biraz gayret.
+
+687
+01:37:50,100 --> 01:37:53,180
+Soru mu anlaşılmadı? [öğrenci]?
+
+688
+01:37:54,960 --> 01:38:02,739
+Hocam, şu an infix gibi düşünürsek indeksleri, belki postfix veya prefix gibi, hani ruta sıfır.
+
+689
+01:38:03,340 --> 01:38:07,560
+O kadar karışık sormadım ya. Sıfırdan başlatacağımı neyden başlatabilirdim?
+
+690
+01:38:07,900 --> 01:38:13,480
+Ha birden mi? Bu kadar, evet. İki türlü olabilirdi.
+
+691
+01:38:14,579 --> 01:38:34,539
+3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, bu sefer 15'te bitecekti. Peki birden başlasaydı o zaman 2k artı 1 ve 2k artı 2'nin yerini ne alacaktı?
+
+692
+01:38:39,699 --> 01:38:40,739
+Kim söylemek ister?
+
+693
+01:38:46,868 --> 01:38:50,288
+Farklı bir kişi olsun. Teşekkürler bana. Başka bir kişi. [öğrenci].
+
+694
+01:38:51,648 --> 01:38:53,588
+2K'ya 2K artı 1 olur mu?
+
+695
+01:38:53,908 --> 01:38:58,908
+Evet. 2K'ya 2K artı 1 olacaktı. Yani bu şu demek oluyor.
+
+696
+01:38:59,588 --> 01:39:03,268
+Binary search tree'de bir operasyon yapacağımız zaman,
+
+697
+01:39:06,547 --> 01:39:18,907
+Nereden başladı? Belirleyici oluyor. Sıfırdan başlarsak ki implementasyon değişiyor. Birden başlarsak ki implementasyon değişiyor. Burada bir sorusu olan var mı?
+
+698
+01:39:23,347 --> 01:39:24,347
+Anlaşılmayan bir şey.
+
+699
+01:39:26,048 --> 01:39:30,988
+Peki, biraz önce dedik ki, farklı olduğu sürece dedik.
+
+700
+01:39:31,667 --> 01:39:35,167
+Mesela 8'i arıyoruz, 15'den farklı, 9'dan farklı.
+
+701
+01:39:36,448 --> 01:39:38,708
+8'i bulduk. Hangi keyiz olabilirdi başka?
+
+702
+01:39:48,948 --> 01:39:55,847
+varsa. Eşit olma durumu? Yok. Eşit olma durumunu zaten hani 8'i bulduk.
+
+703
+01:39:59,444 --> 01:40:05,644
+Tree'de aradığımız elemanın olmama durumu söz konusu olabilirdi. Mesela 7'yi arıyoruz diyelim.
+
+704
+01:40:07,044 --> 01:40:14,444
+Şimdi while döngüsünde dedik ki eşit olmadığı sürece dönsün. Başka bir koşulumuz daha olacak mı?
+
+705
+01:40:17,324 --> 01:40:18,764
+While döngüsünde kalmak için.
+
+706
+01:40:21,964 --> 01:40:25,104
+Eşit olmadığı sürece [öğrenci]
+
+707
+01:40:26,323 --> 01:40:31,184
+Hocam, eğer aradığımız değerden daha küçük bir değere ulaştıysak döngüden çıkabiliriz, o değer yok demektir.
+
+708
+01:40:33,104 --> 01:40:42,623
+Onu bilmiyoruz çünkü mesela 8, şimdi 15'ten küçük ya, şimdi 8-15'ten küçük olunca bir sonrakine bakıyoruz.
+
+709
+01:40:43,243 --> 01:40:49,323
+Ya ben şeyi düşünmüştüm mesela hani 7'yi aramak değil, 7'yi arıyorsak eğer nal olup olmadığını kontrol ederiz.
+
+710
+01:40:49,323 --> 01:40:51,323
+Ama mesela 14 gibi bir şey arıyorsak...
+
+711
+01:40:52,083 --> 01:40:57,703
+Ve 9'a ulaştıysak burada artık daha bulamayız onu gibi düşünmüştüm tarafıyla.
+
+712
+01:40:57,763 --> 01:41:03,363
+Yok, o doğru olmaz. Çünkü 9'dan sonra 12 var, 11 var, 14'de olabilir de.
+
+713
+01:41:03,603 --> 01:41:05,103
+Sağ tarafı da var. Doğru hocam. Tamam.
+
+714
+01:41:05,123 --> 01:41:16,763
+Bizim buradaki koşulumuz arkadaşlar, bir, elemandan farklı olduğu sürece, iki, düğüm, naldan farklı olduğu sürece.
+
+715
+01:41:20,756 --> 01:41:30,416
+Şimdi benim anladığım kadarıyla siz bu konuda birazcık herhalde ya katkıda bulunmuyorsunuz ya da net olmayan bir durum var.
+
+716
+01:41:31,136 --> 01:41:37,235
+Şimdi saat 11.42 oldu. Yapacağımız şey şu. Search algoritmasını, akış diagramı çizeceksiniz.
+
+717
+01:41:38,036 --> 01:41:44,695
+Saat 12'ye kadar size süre veriyorum. 12'de search algoritmasını, algoritmasını çizmiş olacaksınız akış diagramını.
+
+718
+01:41:45,195 --> 01:41:47,036
+Arkasından insert ve delete'i konuşacağız.
+
+719
+01:41:47,667 --> 01:41:56,567
+O yüzden lütfen hem küçük bir ara olarak kabul edin, bir 5-6 dakika hem de ondan sonra search algoritmasını, akıştığı ayarlarını çizmek olarak kabul edin.
+
+720
+01:41:57,287 --> 01:42:04,228
+Zaten göreceksiniz ki insert kısmı buna çok benziyor ama delete de biraz daha farklılık var. Bunları saat 12'de konuşuyor olacağız.
+
+721
+01:42:04,927 --> 01:42:06,527
+Şimdilik bu kadar arkadaşlar, görüşmek üzere.
+
+722
+01:58:32,916 --> 01:58:34,275
+Evet, yeniden merhaba arkadaşlar.
+
+723
+01:58:36,175 --> 01:58:37,855
+Dersin son bölümüne geldik.
+
+724
+01:58:38,435 --> 01:58:43,175
+Binary search tree'de search operasyonunun akış diagramını çizmenizi istemiştim.
+
+725
+01:58:44,755 --> 01:58:49,615
+Bu konuda başarılı olan var mı? Öyle sorayım.
+
+726
+01:58:50,775 --> 01:58:52,015
+Ben bitirdim tamamdır diye.
+
+727
+01:58:53,956 --> 01:58:55,175
+Evet, bakıyorum.
+
+728
+01:58:56,975 --> 01:58:57,815
+Kaldırın elleri.
+
+729
+01:58:58,739 --> 01:59:07,999
+İsteyen kişiye söz vereceğim sadece. Yapabilenleri görmek istiyorum. El kaldırdığınız için söz vermeyeceğim. Sadece yapabilenleri görmek istiyorum.
+
+730
+01:59:15,539 --> 01:59:30,539
+Peki, teşekkür ediyorum. Şimdi elleri indirebilirsiniz. Biliyorsunuz bunu çözmek için hem iteratif hem recursive yaklaşabiliriz probleme. Her ikisi de mümkün. O yüzden...
+
+731
+01:59:31,539 --> 01:59:44,159
+Yani biraz önceki gibi mutlaka recursif olsun, daha iyi olur diyeceğimiz bir problem değil. İteratif olarak da gayet rahat çözebileceğimiz bir problem.
+
+732
+01:59:44,159 --> 01:59:51,520
+Şimdi akış diagramını çizmek için size sözü vermek istiyorum. Hemen bir startla başlayalım.
+
+733
+01:59:54,039 --> 01:59:58,760
+Bir tane ağacımızın olduğunu varsayalım.
+
+734
+02:00:03,572 --> 02:00:07,432
+Bir de eleman aradığımızı binary search tree ile kabul edelim.
+
+735
+02:00:09,532 --> 02:00:15,592
+Şimdi kim bana yardımcı olmak ister, adımları hızlıca sızmak ister? [öğrenci] hemen sözü sana veriyorum.
+
+736
+02:00:16,412 --> 02:00:23,851
+Hocam, önce de şeyi sormak istiyorum ben. Yerini bulduğumuzda şu indekste ya da 4 numaralı dvf falan diye döndürecek miyiz?
+
+737
+02:00:23,952 --> 02:00:28,052
+Ben öyle yapamadım mesela. Yani yapmadım. Sadece buldum ya da bulamadım.
+
+738
+02:00:28,532 --> 02:00:54,552
+Bulduğun zaman zaten yerini bulmuş oluyorsun. Öyle mi? Onu küçük bir şey aslında. Ben while loop'u başlattım burada. Doğrudan, bu halden başladım. Aynen. Tamam, peki. İstersen başlangıç adresini verelim. 0 ya da 1 olacak. 0 diyelim. Sonra hemen arkasından bir while açıyorum.
+
+739
+02:00:55,796 --> 02:00:58,096
+Evet, bunun içindeki koşullar ne olacak bana söyler misin?
+
+740
+02:00:59,536 --> 02:01:05,655
+Aradığımız eleman n'de değil mi? n root'a eşit değilken, yani root'un datası mı diyelim ya da?
+
+741
+02:01:06,536 --> 02:01:13,155
+Ya bunu böyle C programlaması gibi düşünmeyelim de, buradaki şöyle göstereyim.
+
+742
+02:01:13,695 --> 02:01:18,416
+Bu gözlerde null değeri yerine, sıfır yerine, eksi bir bulunduğunu kabul edelim. Genelde böyledir.
+
+743
+02:01:19,815 --> 02:01:21,695
+Buradan eksi bir olduğunu kabul edelim.
+
+744
+02:01:24,051 --> 02:01:27,992
+O yüzden bir kere şunu söyleyebiliriz herhalde.
+
+745
+02:01:28,851 --> 02:01:37,851
+A, I farklı, eksi birden olduğu sürece and ne diyeceğiz?
+
+746
+02:01:38,671 --> 02:01:40,652
+Aradığımız elemana eşit olmadığı sürece.
+
+747
+02:01:40,731 --> 02:01:41,792
+Evet, A, I.
+
+748
+02:01:43,123 --> 02:01:49,163
+aradığımız elemandan farklı olduğu sürece diyeceğiz. Burada yapacağımız işi söylersen hemen bana.
+
+749
+02:01:50,563 --> 02:01:55,283
+Büyük mü küçük mü'ye bakacağız herhalde aradığımız eleman. Mesela küçük mü diyelim.
+
+750
+02:01:56,023 --> 02:02:00,263
+Tamam öyle değil. Harketmez. X küçük mü? A, I diyelim.
+
+751
+02:02:02,036 --> 02:02:13,036
+Küçük ise sola gideceğiz. Ben şey, data structure olarak düşünmüştüm. Root left falan demiştim ama burada neye denk geliyor?
+
+752
+02:02:13,036 --> 02:02:15,036
+İndislerle ilerleyeceğiz.
+
+753
+02:02:15,036 --> 02:02:18,036
+Aynen, sıfırdan gitmiştik. O zaman 2K artı 1.
+
+754
+02:02:18,036 --> 02:02:24,036
+Yani o zaman I eşittir. 2I artı 1 olacak. Doğru mu?
+
+755
+02:02:24,036 --> 02:02:25,036
+Evet.
+
+756
+02:02:25,036 --> 02:02:28,971
+Peki, eğer küçük değil, büyük ise?
+
+757
+02:02:29,235 --> 02:02:31,435
+2I artı 2 olacak I bu sefer.
+
+758
+02:02:31,555 --> 02:02:33,575
+Tamam. 2I artı 2 olacak.
+
+759
+02:02:34,035 --> 02:02:38,235
+Peki bunları yaptık. True kolunda ve false kolunda başka yapacağımız bir şey var mı?
+
+760
+02:02:40,075 --> 02:02:40,595
+Yok.
+
+761
+02:02:41,015 --> 02:02:41,815
+Yok. Tamam. Peki.
+
+762
+02:02:42,915 --> 02:02:45,635
+Çıktıktan sonra iftan, döngüde yapacağımız başka bir şey var mı?
+
+763
+02:02:46,055 --> 02:02:48,055
+Direkt while'a bağlayacağız bence.
+
+764
+02:02:48,175 --> 02:02:49,655
+Tamam. Peki. Bağladık hemen.
+
+765
+02:02:50,175 --> 02:02:53,195
+Şimdi burada işimiz bitti diyelim. Bu noktadayız.
+
+766
+02:02:53,195 --> 02:02:55,180
+Bu noktada...
+
+767
+02:02:55,604 --> 02:03:00,364
+Bir kontrol yapmamız lazım mı? Yoksa doğrudan yazdırabilir miyiz?
+
+768
+02:03:00,644 --> 02:03:03,484
+Kontrol yapacağız. Ne için çıktığımızı bakacağız.
+
+769
+02:03:03,484 --> 02:03:07,444
+Tamam, çok güzel. Hemen yapalım o zaman kontrolü. Ne diyeceğiz?
+
+770
+02:03:08,184 --> 02:03:12,024
+Null mu diyeceğiz? Yani null değil, eksi bir şey yapalım burada.
+
+771
+02:03:12,104 --> 02:03:14,804
+Tamam, eksi bir mi diyeceğiz? Neyi? A, I mı diyeceğim?
+
+772
+02:03:15,956 --> 02:03:19,315
+Evet, A-I eksi 1'i mi gösteriyor şu anda diyeceğiz.
+
+773
+02:03:19,735 --> 02:03:20,115
+Peki.
+
+774
+02:03:20,775 --> 02:03:24,235
+Eğer eksi 1 ise bulamadık. Eksi 1 değilse bulduk demek.
+
+775
+02:03:24,756 --> 02:03:25,956
+Eksi 1 ise...
+
+776
+02:03:28,436 --> 02:03:30,836
+Şöyle yapalım. Burasının çok içmesi inmedi.
+
+777
+02:03:32,916 --> 02:03:35,056
+Şurayı yukarı taşıyacağım.
+
+778
+02:03:36,756 --> 02:03:39,516
+Şuraya 1 diyelim.
+
+779
+02:03:40,775 --> 02:03:41,804
+A-I...
+
+780
+02:03:43,155 --> 02:03:45,155
+eksi 1'e eşit mi diye baktım.
+
+781
+02:03:48,036 --> 02:03:48,996
+True ise
+
+782
+02:03:48,996 --> 02:03:50,775
+not found.
+
+783
+02:03:56,083 --> 02:03:59,203
+Eğer false ise, o zaman neyi yazdırmam gerekiyor?
+
+784
+02:04:01,003 --> 02:04:04,283
+Bulduğum yeri, yani, ı'yı.
+
+785
+02:04:04,923 --> 02:04:05,524
+Tamam.
+
+786
+02:04:06,524 --> 02:04:07,604
+I'ıncı leaf'te.
+
+787
+02:04:08,583 --> 02:04:14,203
+Yani aslında birçok şeye cevap veriyorsun ama basit şeylerden niye bu kadar tereddüt ediyorsun merak ettim.
+
+788
+02:04:15,264 --> 02:04:16,264
+Değişik bir stil.
+
+789
+02:04:17,427 --> 02:04:19,587
+Evet. Peki [öğrenci] teşekkür ediyorum.
+
+790
+02:04:20,007 --> 02:04:20,667
+Ben teşekkür ederim.
+
+791
+02:04:21,188 --> 02:04:25,327
+Diğer arkadaşlarıma bu kaba çözümü yani ana çözümü sorayım.
+
+792
+02:04:25,667 --> 02:04:32,087
+Üzerinde değişiklik yapmamız gerekiyor mu? Her türlü koşulda doğru çalışır mı? Düzeltmemiz gereken bir kısmı var mı?
+
+793
+02:04:38,355 --> 02:04:39,055
+Evet, Park.
+
+794
+02:04:40,515 --> 02:04:43,635
+Hocam, bu vial'ın içindeki x küçüktür.
+
+795
+02:04:44,295 --> 02:04:51,215
+A'ı dediğimiz yerde eşitlik durumunda x'i bulduğumuzda tekrardan i'yi 2i artı 2'ye gidiyor.
+
+796
+02:04:52,175 --> 02:04:55,376
+Bu yüzden de bulamamış olacağız çıktığımızda.
+
+797
+02:04:55,376 --> 02:04:59,376
+Tamam, şimdi bu bir analiz gerektiriyor bize gördüğünüz gibi.
+
+798
+02:05:00,055 --> 02:05:02,956
+Analiz kısmını hemen yapalım.
+
+799
+02:05:05,684 --> 02:05:08,244
+Şimdi analiz yapabilmemiz için buraya n'i yazıyorum.
+
+800
+02:05:10,644 --> 02:05:11,904
+x'i yazıyorum.
+
+801
+02:05:14,464 --> 02:05:15,784
+i'yi yazıyorum.
+
+802
+02:05:16,844 --> 02:05:18,024
+ve a'ı'yı yazıyorum.
+
+803
+02:05:18,984 --> 02:05:20,284
+Bir bakalım ne olacağına.
+
+804
+02:05:21,324 --> 02:05:23,504
+Şimdi bizim için n çok kritik değil.
+
+805
+02:05:24,224 --> 02:05:25,044
+x ile başlıyorum.
+
+806
+02:05:25,124 --> 02:05:26,324
+Çünkü eksi 1 olduğunu biliyorum.
+
+807
+02:05:26,624 --> 02:05:28,644
+Diğer yerlerde eksi 1'e eşitlendiğini.
+
+808
+02:05:29,644 --> 02:05:32,924
+x'imiz diyelim ki 8'i arıyoruz.
+
+809
+02:05:33,376 --> 02:05:35,376
+I'yı sıfırdan başlattık.
+
+810
+02:05:36,196 --> 02:05:37,056
+Geldik buraya.
+
+811
+02:05:37,396 --> 02:05:39,816
+A sıfır eksi birden farklı mı?
+
+812
+02:05:39,996 --> 02:05:40,376
+Farklı.
+
+813
+02:05:40,496 --> 02:05:42,776
+Ve A, I, X'den farklı mı?
+
+814
+02:05:43,096 --> 02:05:44,556
+Yani A, I kaçtı?
+
+815
+02:05:45,556 --> 02:05:46,296
+A sıfır.
+
+816
+02:05:46,696 --> 02:05:47,696
+Şu anda on beş.
+
+817
+02:05:47,896 --> 02:05:48,276
+Farklı mı?
+
+818
+02:05:48,336 --> 02:05:48,576
+Farklı.
+
+819
+02:05:48,616 --> 02:05:49,336
+İçeri girdik.
+
+820
+02:05:49,916 --> 02:05:50,736
+X küçük mü?
+
+821
+02:05:50,856 --> 02:05:51,456
+A, I'dan.
+
+822
+02:05:51,756 --> 02:05:53,016
+X, A, I'dan küçük.
+
+823
+02:05:53,676 --> 02:05:56,016
+O zaman I, iki, I artı iki dedik.
+
+824
+02:05:56,916 --> 02:05:59,336
+A, I, I, iki oldu.
+
+825
+02:05:59,796 --> 02:06:23,736
+Tekrar döndük. I2'ye baktık. Eksi birden farklı mı? Evet. 8'den farklı mı? Burası 9. Evet. Devam ettik yolumuza. 8, 9'dan küçük mü? Evet. 8, 9'dan küçük olduğu zaman I kaç oldu? 4 oldu. Baktık. Eksi birden farklı mı? Farklı. 8, 8'e eşit mi? Evet. Eşit. Çıktık.
+
+826
+02:06:24,467 --> 02:06:32,847
+A, I, eksi, 1'e mi eşit? Hayır, 8'e eşit. O zaman I'yı doğrudan ekrana yazdırdık. Burada çalıştı. Gördüğüm kadarıyla bir problem yok.
+
+827
+02:06:34,908 --> 02:06:43,467
+Şimdi devam edelim. Bir başka örnek vermiş olsaydık. Yani diyelim ki buna 7 vermiş olsaydık.
+
+828
+02:06:50,515 --> 02:07:14,955
+4, 8. Şimdi 8'deyiz, 4'deyiz. 7, 8'den küçük olduğu için 2, I artı 2'ye gittik. O zaman 6, pardon, yanlış söylüyorum. Kaç olacak? Sola gidiyorum. Ben aslında şurada bir şey yanlış mı yazdık?
+
+829
+02:07:16,724 --> 02:07:21,604
+Yok, iki artı bire gidiyoruz değil mi? Yanılmıyorum arkadaşlar.
+
+830
+02:07:23,463 --> 02:07:25,583
+Hocam sıfırdan başlamıyor muydu?
+
+831
+02:07:26,164 --> 02:07:30,463
+Sıfırdan başlamıyor. Ben yanlış yazdım. Beni kimse de uyarmıyor. Şu anda fark ediyorum.
+
+832
+02:07:31,123 --> 02:07:36,784
+Şimdi şunlar bir kere, özür diliyorum. Şunları bir düzeltelim.
+
+833
+02:07:37,963 --> 02:07:40,064
+Gideceğim yer neresi olacak şimdi? Bana kim söyler?
+
+834
+02:07:41,908 --> 02:07:56,888
+2i artı 1'e gidiyorum. Yani 1'e gidiyorum. Sonra 3'e gidiyorum. Burada da önce 1'e gittim. Sonra 3'e gittim. Sonra 2i artı 1 yaptım. 5 oldu.
+
+835
+02:07:57,988 --> 02:08:08,908
+a5 eksi 1'den farklı mı? Değil. Dışarı çıktım. a i eksi 1'e eşit mi? Evet. O zaman not found dedim. Bu da başarıyla sonuçlandı.
+
+836
+02:08:09,716 --> 02:08:18,396
+Başka bir case var mı gözümden kaçan? Yanlış olduğunu düşündüğünüz, yaptığımız akış diagramı.
+
+837
+02:08:21,196 --> 02:08:22,896
+Evet, [öğrenci].
+
+838
+02:08:24,496 --> 02:08:33,596
+Bir şey soracağım. Bu a n'den daha büyük bir elemanı aramaya çalışırsak bir sıkıntı çıkar mı?
+
+839
+02:08:34,228 --> 02:08:46,407
+Mesela son elemana geldik, dizide olmayan bir şeyi arıyoruz ama tree'nin en sağ alttaki elemanındayız o anda diyelim. Daha büyük bir eleman gelirse A'nin dışından bir şey yapmaz mı?
+
+840
+02:08:46,407 --> 02:08:58,228
+Şöyle, oradaki önemli olan nokta son elemanın, yani örnek burada 25 var. 25'in bir sonraki level'ının hepsinin eksi birlenmesi önemli [öğrenci].
+
+841
+02:08:59,796 --> 02:09:03,416
+Öyle kabul ediyoruz o zaman. Yani zaten çıkmıyoruz o halde.
+
+842
+02:09:03,436 --> 02:09:24,616
+Zaten ona göre bir ağacın oluşturulmuş olması lazım. Başka türlü senin söylediğin gibi kontrol yapmamız gerekir. O da işi daha zorlaştırır. O yüzden kaç tane eleman verildiyse ve ya levelını biliyorsak en son leaf nodların yer aldığı bir sonraki levelı eksi birlemeliyiz. Örneğin burada level kaç? 1, 2, 3.
+
+843
+02:09:25,076 --> 02:09:34,956
+Üçüncü level neye denk geliyor? Eleman sayısı olarak 15'e denk geliyor. Bizim 32'ye kadar olan gözleri eksi birlememiz lazım.
+
+844
+02:09:36,256 --> 02:09:36,976
+Teşekkür ederim.
+
+845
+02:09:37,376 --> 02:09:42,216
+Rica ederim. Ben teşekkür ederim. [öğrenci] bir itiraz hakkını kullanmak istiyordu.
+
+846
+02:09:42,836 --> 02:09:51,976
+Hocam, çok önemli değil de şurada 7'yi ararken 0, 1, 3, 5 yazmışsınız da sonu 7'ye gidiyoruz, 5'e gitmiyoruz diyecektim. Ama bir önemi yok yani.
+
+847
+02:09:52,195 --> 02:10:00,836
+Yok, olur mu? Önemi var. Niye? Olmasın. 2K artı birden, yani 2 artı birden. Hemen onu düzeltelim. Haklısın. Bak mesela bu.
+
+848
+02:10:02,100 --> 02:10:09,820
+Konuda dikkatli olmak gerekiyor. Burada zaten değer eksi bir olacağı için otomatik olarak buradan bununla çıkacağız. Sağ ol [öğrenci], teşekkür ederim.
+
+849
+02:10:11,060 --> 02:10:26,180
+Bunlar çok önemli. Benim de gözümden kaçabilir. Çünkü ben bunu böyle ezbere yazmıyorum. Bir yerden bakarak yazmıyorum. Sizle birlikte anında tasarlıyoruz. Böylece hatalarımızı birlikte görüyoruz. O yüzden beni uyarırsanız sevinirim.
+
+850
+02:10:26,707 --> 02:10:31,087
+Gördüğünüz gibi search operasyonu bu şekilde gerçekleşiyor. Peki insert'u nasıl yapacağız?
+
+851
+02:10:35,636 --> 02:10:36,136
+Günah.
+
+852
+02:10:40,051 --> 02:10:41,051
+Sesim geliyor mu?
+
+853
+02:10:41,431 --> 02:10:41,872
+Geliyor.
+
+854
+02:10:43,252 --> 02:10:54,971
+Hocam, aynı searchteki gibi yapacağız. Sadece sonifte şey yapacağız. A'ı eksi biri eşitse A'ının gözüne elemanı yerleştireceğiz. Diğer kısmında da bir şey yapmayacağız.
+
+855
+02:10:54,971 --> 02:11:04,851
+Tamam. Şimdi o zaman bu noktada elemanın dizide ağaçta olmadığını varsayıyorum. O zaman koşulun nasıl değişecek Wild'a?
+
+856
+02:11:09,235 --> 02:11:12,235
+Ya bilemedim ben. Yani dediğim şekilde düşünmüştüm.
+
+857
+02:11:13,375 --> 02:11:19,275
+[öğrenci] aslında bildiğim bir şey yani söylediğin şey doğru da bir anda sen herhalde kendi sözüne odaklandın.
+
+858
+02:11:19,275 --> 02:11:27,775
+Tekrar sorayım. [öğrenci] arkadaşınızın anlattığı eksi biri gördüğümüz yerde oraya yerleştireceğiz elemanı dedi.
+
+859
+02:11:28,675 --> 02:11:32,955
+Wild'daki koşulumuz değişecek mi? Şu andaki koşulumuz. Evet, kalın.
+
+860
+02:11:33,908 --> 02:11:38,347
+Hocam, ağaç eşittir, x'i eşit değil, x'i kaldıracağız.
+
+861
+02:11:38,788 --> 02:11:39,888
+Neden onu kaldıracağız?
+
+862
+02:11:40,307 --> 02:11:43,828
+Çünkü zaten olmayan bir elemana koyacağımız için.
+
+863
+02:11:44,307 --> 02:11:45,508
+Bu koşula gerek yok.
+
+864
+02:11:45,828 --> 02:11:46,028
+Evet.
+
+865
+02:11:46,648 --> 02:11:46,847
+Tamam.
+
+866
+02:11:47,388 --> 02:11:50,928
+Şimdi peki, buradan şu soru da gündeme geliyor.
+
+867
+02:11:51,708 --> 02:11:55,068
+Aynı elemanlar olabilir mi?
+
+868
+02:11:56,128 --> 02:11:58,008
+Binary search tree'de ya da binary tree'de.
+
+869
+02:11:58,836 --> 02:12:14,776
+Yani mesela 15, bir tane daha 15 gelebilir mi? Gelirse ne olur? Bu çok aslında tercih ettiğimiz bir durum değil. Ağaçlarda genel olarak unique elemanların yerleştiğini söyleyebiliriz. Günah.
+
+870
+02:12:16,296 --> 02:12:24,716
+Hocam ben aslında o durumu düşünerekten o kontrolü kaldırmamıştım da hani tekrar eşit olursa aynı yere yazsın mantıklısı oluyor. Ekstra bir işlem.
+
+871
+02:12:25,171 --> 02:12:45,151
+Evet, ona gerek yok. Yani ağaçları genelde bu yönde oluşturmak ve bu yönde kurgulamak gerekiyor ama aynı yere yazmak zaten gerekli bir iş değil. Fakat şu konuda haklısın. Dışarıdan kullanıcı hatası sebebiyle aynı değer gelebilir. O zaman olduğu yere yazmak ağacın akışını bozmayacaktır.
+
+872
+02:12:45,439 --> 02:12:54,560
+Fakat söylediğim gibi bu tür kurgularda aynı değerleri özel durumlar hariç kullanmıyoruz ve ağaçları buna göre dizayn ediyoruz.
+
+873
+02:12:55,140 --> 02:12:59,460
+Insert'te de eksi birden farklı olduğu sürece ağaçla gezeceğiz.
+
+874
+02:13:00,100 --> 02:13:03,319
+Küçükse sola, büyükse sağa doğru gideceğiz.
+
+875
+02:13:03,460 --> 02:13:07,319
+En son noktada eksi biri gördüğümüz yere de yeni gelen elemanı yerleştireceğiz.
+
+876
+02:13:10,387 --> 02:13:23,868
+İşlemi tek bir eleman, yerleştirme gibi gözükebilir ama size verilen bir diziyi örneğin ağacın dengesini gözetecek şekilde yerleştirin diye bir soru geldiği zaman ne yapacağınızı bilmelisiniz.
+
+877
+02:13:23,868 --> 02:13:33,868
+Örnek veriyorum. İşte 1, 3, 5, 7, 8, 12, 19 geldi. Sizden bu diziyi...
+
+878
+02:13:34,547 --> 02:13:48,127
+Bir ağaca yerleştirmeniz istendiğinde ve dengeli bir ağaca yerleştirmeniz istendiğinde bir akıl ortaya koyup ona göre bir stratejiyle yerleştirmeniz sizden beklenebilir.
+
+879
+02:13:48,667 --> 02:13:53,487
+Bunu da düşünmekte fayda var. Bir kenara not edebilirsiniz. Pratik yapmak isteyen arkadaşlar.
+
+880
+02:13:53,487 --> 02:13:58,967
+Şimdi gelelim insert de tamam, search de tamam.
+
+881
+02:13:59,859 --> 02:14:03,579
+Şimdi geriye kaldı delete.
+
+882
+02:14:04,420 --> 02:14:06,599
+Delete bunlardan biraz daha farklı.
+
+883
+02:14:08,840 --> 02:14:10,319
+Şöyle yapalım.
+
+884
+02:14:16,148 --> 02:14:16,627
+operation
+
+885
+02:14:16,627 --> 02:14:20,707
+o ne? BST.
+
+886
+02:14:21,927 --> 02:14:24,728
+Bu arada, yani şunu ısrarla vurgulamak isterim.
+
+887
+02:14:24,828 --> 02:14:27,648
+Binary search tree ile binary search birbirinden farklı
+
+888
+02:14:27,648 --> 02:14:31,927
+kalanlar. Bunu zaman zaman karıştıran arkadaşlar olabiliyor.
+
+889
+02:14:33,068 --> 02:14:34,028
+Şimdi bu noktada
+
+890
+02:14:34,028 --> 02:14:36,507
+delayed operasyonunu
+
+891
+02:14:36,507 --> 02:14:39,087
+nasıl yanıtebiliriz?
+
+892
+02:14:39,988 --> 02:14:41,927
+Kaç farklı case'imiz var? Bir kere onu sorayım.
+
+893
+02:14:46,739 --> 02:14:49,619
+Ağaçta farklı nodları silmek istiyoruz.
+
+894
+02:14:50,919 --> 02:14:53,079
+Kaç farklı case ile karşılaşabiliriz?
+
+895
+02:14:54,279 --> 02:14:55,559
+Evet, farklı arkadaşlar olsun.
+
+896
+02:15:15,252 --> 02:15:17,492
+Evet, cevap bekliyorum. Farklı arkadaşlarla.
+
+897
+02:15:39,412 --> 02:15:40,231
+Evet, [öğrenci].
+
+898
+02:15:44,564 --> 02:15:45,664
+[öğrenci] Özbey.
+
+899
+02:15:47,104 --> 02:15:51,844
+Hocam, var olmayabilir sileceğimiz eleman.
+
+900
+02:15:53,024 --> 02:15:57,704
+Bir, var olmayabilir. Case 4 diyorum buna.
+
+901
+02:15:58,503 --> 02:15:59,963
+Evet, sondan başladım.
+
+902
+02:16:00,484 --> 02:16:07,344
+Olsun, sorun yok. Bunu case 4 dememin sebebi aslında bir ipucu da vermiş oldum. Üç tane case'den bahsedeceğiz demek ki.
+
+903
+02:16:08,164 --> 02:16:10,204
+Evet, en başta olabilir.
+
+904
+02:16:11,636 --> 02:16:30,855
+En başta olabilir demek yerine daha farklı bir case, durum üzerinden gidelim. Daha farktan kastettiğim başta, ortada, sonda olmasından çok ağacın özelliklerine göre ya da ağacın üzerine bulunan düğümlerin isimlendirmesine göre bu case'leri belirleyelim.
+
+905
+02:16:31,576 --> 02:16:33,675
+Root da olabilir o zaman.
+
+906
+02:16:33,675 --> 02:16:39,076
+Root demeyelim ona, case 3'e internal node diyelim.
+
+907
+02:16:39,136 --> 02:16:39,596
+Tamam.
+
+908
+02:16:40,596 --> 02:16:49,315
+Bu da internal node demek right ve left childlarının en azından mutlaka olduğu anlamına geliyor.
+
+909
+02:16:50,655 --> 02:16:51,155
+Case 2.
+
+910
+02:16:55,236 --> 02:16:57,736
+Burada var mesela, şu an çizeyim ağaçta.
+
+911
+02:16:59,376 --> 02:17:01,315
+Yaprak düğüm de olabilir.
+
+912
+02:17:01,736 --> 02:17:04,216
+Evet, hemen onu case 1 olarak yazacağım.
+
+913
+02:17:06,291 --> 02:17:10,171
+En kolayı bu çünkü. Bir de gene bu ağaçta var.
+
+914
+02:17:10,971 --> 02:17:16,412
+Bir de ortadakinin adı neydi hatırlayamadım. Yani aradaki düğümlerin.
+
+915
+02:17:17,511 --> 02:17:26,031
+O zaman şöyle diyelim, internal node demeyelim. Hatta internal node diyebiliriz. Şöyle diyelim, with a single child.
+
+916
+02:17:31,827 --> 02:17:33,687
+O da leaf node olacak.
+
+917
+02:17:36,147 --> 02:17:38,587
+Şimdi birlikte bu case'leri değerlendirelim.
+
+918
+02:17:38,687 --> 02:17:41,468
+Hemen sana son olarak şeyi sorayım [öğrenci].
+
+919
+02:17:42,507 --> 02:17:44,608
+Leaf node olduğunda ne yapacağız?
+
+920
+02:17:45,027 --> 02:17:46,207
+Bana bir tane örnek verebilir misin?
+
+921
+02:17:46,327 --> 02:17:47,347
+Buradan bir leaf node silelim.
+
+922
+02:17:50,347 --> 02:17:50,827
+Yani...
+
+923
+02:17:53,507 --> 02:17:54,968
+Mesela 2.
+
+924
+02:17:56,108 --> 02:17:56,948
+Tamam, 2.
+
+925
+02:17:57,940 --> 02:18:04,720
+İkiyi sileceğimiz zaman herhangi bir şey yapmamıza gerek var mı? Yapacağımız yegane şey nedir?
+
+926
+02:18:05,740 --> 02:18:06,960
+Gerekmiyor bence.
+
+927
+02:18:08,100 --> 02:18:10,860
+Tek yapacağımız şey buraya eksi bir koymak.
+
+928
+02:18:11,600 --> 02:18:11,900
+Evet.
+
+929
+02:18:13,100 --> 02:18:14,020
+Tamam mı?
+
+930
+02:18:14,500 --> 02:18:14,920
+Evet.
+
+931
+02:18:15,500 --> 02:18:16,940
+Tamam. Diğer arkadaşlarım okey mi?
+
+932
+02:18:18,520 --> 02:18:23,020
+İki vardı. Bu belief not. Bunu silmek istedim. Gittim buldum.
+
+933
+02:18:23,424 --> 02:18:33,584
+Herhangi başka hiçbir şey yapmadım. İkiyi bulduğum yerde sildim. Yani leave node olması durumunda böyle bir basit çözüm uyguladım. Teşekkür ediyorum [öğrenci].
+
+934
+02:18:34,324 --> 02:18:35,484
+Teşekkür ederim.
+
+935
+02:18:36,384 --> 02:18:39,623
+Internal node with a single child. Kim söylemek ister?
+
+936
+02:18:42,384 --> 02:18:43,884
+Burada bir tane örneği var.
+
+937
+02:18:48,180 --> 02:18:54,399
+leaf node olan, single child olan bir örneğimiz var. Bunu kim çözmek ister?
+
+938
+02:18:58,899 --> 02:18:59,659
+Evet [öğrenci].
+
+939
+02:19:01,340 --> 02:19:09,559
+Hocam, burada 17'yi silerken 16 yerine eksi 1 yazıyoruz. 16'da 17 yerine yazacağız.
+
+940
+02:19:09,759 --> 02:19:16,219
+Evet, aynen öyle. Buraya 16 yazıyoruz. Buraya da eksi 1 yazıyoruz. Yaptığımız ilgilenen şey bu.
+
+941
+02:19:17,099 --> 02:19:24,259
+Peki [öğrenci], 16 olmasaydı, burada 18 olsaydı bir şey fark eder miydi?
+
+942
+02:19:26,868 --> 02:19:30,188
+etmezdi sanırım.
+
+943
+02:19:30,788 --> 02:19:32,008
+Aynı işlemi yapacaktık.
+
+944
+02:19:32,308 --> 02:19:33,247
+Evet, şu an etmezdi.
+
+945
+02:19:33,668 --> 02:19:39,247
+Evet, eğer 18 olsaydı, yine tek bir single right child olsaydı...
+
+946
+02:19:43,092 --> 02:19:47,632
+O zaman onu da buraya taşıyacaktık yine.
+
+947
+02:19:52,452 --> 02:19:53,772
+16'da olduğu gibi.
+
+948
+02:19:54,072 --> 02:20:09,992
+Yani bir düğümün tek bir çocuğu var ise ve o bir yaprak düğüm ise çocuk, o zaman yaptığınız egenli şey o değeri parent'e aktarıyorsunuz ve çocuğun değerinde eksi biriliyorsunuz.
+
+949
+02:20:11,860 --> 02:20:15,920
+Buraya kadar sorusu olan var mı? Case 1 ve Case 2'yi konuştuk.
+
+950
+02:20:17,920 --> 02:20:18,920
+Evet, parsa.
+
+951
+02:20:19,659 --> 02:20:23,860
+Hocam mesela eğer şu dengeli bir şey olacak değil mi?
+
+952
+02:20:24,819 --> 02:20:26,119
+Dengeli denir.
+
+953
+02:20:26,119 --> 02:20:45,919
+Yani mesela 17, sonra 15, sonra 16 yani iki çocuğu vardı. 16'nın bir çocuğu daha varmış. Ve onu silerken çocuğunun çocuklarını nasıl yapacağız?
+
+954
+02:20:46,868 --> 02:20:54,188
+Şu an öyle bir durum yok. Burada söylediğim gibi tek bir çocuğu olan ve bu çocuğun leaf node olduğu durum.
+
+955
+02:20:55,328 --> 02:21:07,247
+Artık 16'nın çocuğu yok. Eğer 16'nın çocuğu olursa o zaman koşul değişir. Yani sadece tek bir çocuğu olması yetmiyor, o çocuğun da leaf node olması gerekiyor.
+
+956
+02:21:08,927 --> 02:21:12,028
+Şuraya da yazayım, yanlış anlaşılma olması. Tamam mı?
+
+957
+02:21:12,531 --> 02:21:17,072
+Evet, teşekkür ederim. Şimdi bir sonraki kez de geçeceğim. Onun için ağacı yeniden kurguluyorum.
+
+958
+02:21:18,231 --> 02:21:29,811
+5, 3, 12, 2, 4, 8, 17.
+
+959
+02:21:31,252 --> 02:21:38,691
+Şimdi bu noktada, buraya 16'yı koyalım. Senin söylediğin koşulu yaratmak için de şu 8'i sileyim.
+
+960
+02:21:39,731 --> 02:21:40,452
+Tamam mı?
+
+961
+02:21:42,671 --> 02:21:53,531
+Şimdi, bu noktada, hatta bir tane de şuraya, aslında yapabilsem güzel olacaktı ama, birazdan onu yaparız.
+
+962
+02:21:55,391 --> 02:21:58,731
+Buradan, örneğin, 12'yi silmek istiyorum.
+
+963
+02:22:01,731 --> 02:22:04,031
+Buradan, örneğin.
+
+964
+02:22:10,451 --> 02:22:12,951
+12'yi silmek istiyorum. Ne yapacağım?
+
+965
+02:22:15,051 --> 02:22:18,311
+Farsan'ın söylediği koşul oluştu. 12'nin tek bir child'ı var.
+
+966
+02:22:19,231 --> 02:22:23,031
+17. Ama o leave node değil. Onun da child'ı var.
+
+967
+02:22:25,811 --> 02:22:27,991
+12'yi silmek istediğimde ne yapacağım?
+
+968
+02:22:32,595 --> 02:22:34,775
+Akıllıca bir taktik uygulamam lazım.
+
+969
+02:22:40,884 --> 02:22:45,884
+Derste öğrendiğimiz bilgileri düşünerek bir çözüm üretebilirsiniz.
+
+970
+02:22:47,024 --> 02:22:53,524
+Bir önceki saatte, hatta iki önceki saatte öğrendiğimiz bilgilerden paylaşabilirsiniz.
+
+971
+02:22:54,244 --> 02:22:54,704
+Evet [öğrenci].
+
+972
+02:22:56,504 --> 02:23:04,364
+Hocam burada bir kuyruk yapısı tutarak geri sildikten sonra yerleştirirken sırayı bozulma yerleştirebiliriz bence.
+
+973
+02:23:05,423 --> 02:23:06,144
+Mesela nasıl?
+
+974
+02:23:06,963 --> 02:23:12,963
+Yani, bunu 12 isileceğimiz için ilk önce 17 ve 16'yı gezeriz. Bunları bir kuyruğa alırız.
+
+975
+02:23:15,564 --> 02:23:16,963
+Daha sonra...
+
+976
+02:23:19,263 --> 02:23:20,463
+İlk önce...
+
+977
+02:23:20,763 --> 02:23:24,263
+Hangisini yerleştirmemiz gerekiyor 12'nin yerine?
+
+978
+02:23:24,263 --> 02:23:26,263
+17'ye yerleşmemiz lazım.
+
+979
+02:23:28,364 --> 02:23:29,463
+Evet, müşt?
+
+980
+02:23:33,652 --> 02:23:37,691
+Ben 12'nin yerine 17, 17'nin yerine de 16 diye düşürmüştüm. 16'yı da eksi 1 yaparak.
+
+981
+02:23:37,851 --> 02:23:44,332
+Tamam, hemen yaparsak senin söylediğin şöyle bir durum olacak. 12'nin yerine 17 gelirse, buraya 16 gelirse.
+
+982
+02:23:47,860 --> 02:23:49,100
+Ardın bir saniye.
+
+983
+02:23:56,755 --> 02:23:59,615
+Arkadaşlar, bana bir iki dakika verirseniz, çok özür diliyorum.
+
+984
+02:27:34,515 --> 02:27:48,595
+Arkadaşlar, sizi beklettiğim için özür dilerim. TÜBİTAK'tan bir belge geldiği için benden imza istediler. O yüzden kendim teslim almak zorunda kaldım. O yüzden tekrar özür diliyorum, beklettim. Sizi tam ortasında bölmek zorunda kaldım.
+
+985
+02:27:48,595 --> 02:28:02,288
+Şimdi tekrar kameramı kapatıyorum. Üçüncü case'i konuşuyorduk. Arkadaşınız demişti ki, [öğrenci] 17'yi 12'nin yerine...
+
+986
+02:28:02,288 --> 02:28:06,228
+16'yı da 17'nin yerine yazarım demişti. Metin, bu durumda ne oluyor?
+
+987
+02:28:07,968 --> 02:28:09,468
+Burada sırayı bozmuş oluyor.
+
+988
+02:28:10,208 --> 02:28:17,407
+Şimdi bizim sıkıntımız bu. Aynen dediğin gibi sırayı bozmuş oluyoruz. O zaman onu öyle yapmak yerine ne yapabiliriz?
+
+989
+02:28:19,548 --> 02:28:25,747
+Güzel bir başlangıçtı. Peki o zaman Pars'ı sana söz vereyim.
+
+990
+02:28:26,644 --> 02:28:40,884
+Hocam, bence eğer data structure olarak düşünürsek, pointer ve adres olarak, mesela şu an 5'in sağına 17'nin adresine koyarız.
+
+991
+02:28:41,824 --> 02:28:42,504
+Ama eğer index...
+
+992
+02:28:42,504 --> 02:28:47,864
+Şeyi anlayamadım, Parse. 5'in sağına 17'nin adresine neyi koyacağız? Biz 12'yi silmek istiyoruz.
+
+993
+02:28:48,371 --> 02:28:50,551
+Yani beşin sağa çocuğu.
+
+994
+02:28:50,551 --> 02:28:52,691
+He, beşin sağına on yediğimi koyalım.
+
+995
+02:28:53,131 --> 02:28:57,252
+Aynen. Beşin sağa çocuğu tam linkli listeler gibi.
+
+996
+02:28:58,231 --> 02:28:59,711
+Maalesef o da doğru değil.
+
+997
+02:29:00,831 --> 02:29:04,252
+Olsam. Pardon, [öğrenci]'e söz vereceğim. [öğrenci] ilk defa söz dedi.
+
+998
+02:29:04,491 --> 02:29:09,072
+Hocam, silinecek nottan aşağı doğru bir gezinti yapmamız lazım sonuna kadar.
+
+999
+02:29:09,471 --> 02:29:09,691
+Evet.
+
+1000
+02:29:09,691 --> 02:29:15,631
+Ondan sonra aşağıdan yukarıya doğru çıkmamız lazım. Çıkılacak elemanları yukarıya doğru.
+
+1001
+02:29:16,211 --> 02:29:18,211
+Heapify diyorduk herhalde sanırsam.
+
+1002
+02:29:19,011 --> 02:29:25,072
+Ya Heapify biraz daha farklı çünkü Heap ağacındaki kural biraz daha farklı.
+
+1003
+02:29:25,572 --> 02:29:28,851
+Yani evet onu göreceğiz ama burada tam olarak o değil.
+
+1004
+02:29:29,111 --> 02:29:29,851
+Ama teşekkür ediyorum.
+
+1005
+02:29:30,092 --> 02:29:30,631
+Tamam hocam.
+
+1006
+02:29:30,791 --> 02:29:31,171
+[öğrenci]?
+
+1007
+02:29:32,435 --> 02:29:50,935
+Hocam, burada şey, bence 12'nin yerine 16'nın gelmesi lazım. Çünkü hani şöyle düşünüyorum, in order şekilde gezdiğimizde sıralamaya göre gidiyor. 2, 3, 4, 5, 12, 16 diye. Biz de o yüzden şey, 12'den sonraki in orderdakini işte oraya alabiliriz diye düşünüyorum.
+
+1008
+02:29:50,935 --> 02:29:58,236
+Tamam, güzel, doğru bir yaklaşım. Şimdi senin söylediğinin işe yarayıp yaramadığını in order successor'ı bulacağız.
+
+1009
+02:30:00,000 --> 02:30:06,059
+Bir bakalım işe yarıyor mu? 12'den in order şekilde ilerliyoruz. 12'nin sol tarafında herhangi bir şey yok.
+
+1010
+02:30:07,059 --> 02:30:16,959
+In order'da ilerleme şeklimiz belliydi. Sağ tarafına gidiyoruz. Sağ tarafına baktığımız zaman önce 17 var. 17'nin de aşağısına iniyoruz.
+
+1011
+02:30:17,059 --> 02:30:23,059
+Sonra 16'ya erişmiş oluyoruz ve 16'yı buluyoruz. 16'yı bulduktan sonra 16'yı getirip...
+
+1012
+02:30:24,115 --> 02:30:32,295
+12'nin yerine yazdığımızda, artık 16'nin yerine de eksi 1 yazdığımızda, ağaç istediğimiz koşulu sağlamaya devam ediyor.
+
+1013
+02:30:32,475 --> 02:30:35,775
+Şimdi bu çalışır bir mantık olarak gözüküyor.
+
+1014
+02:30:36,515 --> 02:30:41,495
+Diyelim ki, geri alıyorum bunları, 16'yı silmeyeceğim ben.
+
+1015
+02:30:42,376 --> 02:30:43,576
+Pardon, 12'yi silmeyeceğim.
+
+1016
+02:30:44,396 --> 02:30:45,275
+Hemen şöyle yapalım.
+
+1017
+02:30:47,095 --> 02:30:50,216
+12'yi silmek yerine 5'i silmek istiyorum.
+
+1018
+02:30:55,379 --> 02:30:57,379
+5'i silmek istediğimde
+
+1019
+02:30:57,379 --> 02:31:00,860
+ne yapacağım?
+
+1020
+02:31:10,515 --> 02:31:13,835
+in order successor arkadaşınızın söylediği işe yarar mı?
+
+1021
+02:31:24,595 --> 02:31:26,915
+Bu sefer neyle değiştirmem lazım [öğrenci]?
+
+1022
+02:31:28,655 --> 02:31:31,475
+Ya da başka şeyleri de hareket ettirmem gerekecek mi?
+
+1023
+02:31:33,216 --> 02:31:34,855
+Evet, [öğrenci].
+
+1024
+02:31:35,876 --> 02:31:37,855
+Hocam, yeni root'umuz 12 olur.
+
+1025
+02:31:38,515 --> 02:31:41,355
+Ondan sonra yine in order sırasına uymak için.
+
+1026
+02:31:41,811 --> 02:31:51,811
+17'yi 12'nin sağına, yani orayı değiştirmeyiz. Sadece 12'yi yukarı çıkartırız. 17 ile 16'nın sırasını değiştirmeyiz bence.
+
+1027
+02:31:51,811 --> 02:31:55,811
+12'yi yukarı çıkartırsak aradaki 12 ne olacak?
+
+1028
+02:31:55,811 --> 02:32:02,811
+Onun yerine 17 gelecek işte. 17'nin yerine de 16 gelecek.
+
+1029
+02:32:02,811 --> 02:32:05,811
+Tamam, peki. Bunun yerine başka bir çözüm düşünsek.
+
+1030
+02:32:08,595 --> 02:32:16,975
+Ki 5'in yerine 12 gelir, 12'nin yerine 17 gelirse, 17'in yerine 16 gelirse gene yanlış oluyor. Çünkü 16 sahada kalıyor.
+
+1031
+02:32:20,659 --> 02:32:23,860
+17'den büyük olmuyor. Küçük olduğu için sola geçmesi lazım.
+
+1032
+02:32:25,100 --> 02:32:26,100
+Başka bir çözüm.
+
+1033
+02:32:28,180 --> 02:32:31,500
+[öğrenci], arkadaşınızın biraz önceki söylediği çalışırım diye sormuştum.
+
+1034
+02:32:32,628 --> 02:32:34,728
+Evet, biraz önceki derken hocam.
+
+1035
+02:32:35,108 --> 02:32:36,028
+In order successor.
+
+1036
+02:32:36,708 --> 02:32:41,148
+Hani in order ile gezelim ve orada bulduğumuz elemanı bir tanesini yukarı alalım.
+
+1037
+02:32:41,247 --> 02:32:41,948
+Burada ne yaptık?
+
+1038
+02:32:42,548 --> 02:32:45,328
+12'nin yerine 16'yı almıştık biraz önce.
+
+1039
+02:32:45,768 --> 02:32:49,128
+Şimdi de 5'in yerine alabileceğimiz bir eleman bu mantıklı olur mu?
+
+1040
+02:32:49,608 --> 02:32:52,488
+Yani burada aslında biraz yapraklara bakmak mantıklı geliyor bana hocam.
+
+1041
+02:32:52,608 --> 02:32:56,528
+4 numarayı aldığımızda sırayı bozmadan aynı şekilde ilerlemesine devam edebiliyoruz.
+
+1042
+02:32:56,907 --> 02:32:58,568
+Evet, seçeneklerden bir tanesi bu.
+
+1043
+02:32:58,568 --> 02:33:00,568
+Bu arada yani bu ben...
+
+1044
+02:33:00,628 --> 02:33:08,348
+[öğrenci]'ın söylediği çözüm kesin yanlıştır demiyorum. Sadece şu an için yanlış çalışır. Üzerinde belki çalışılabilir, bakılabilir.
+
+1045
+02:33:08,907 --> 02:33:16,927
+Fakat burada hareket ettirdiğiniz nodlar ağacın doğal olarak balance'ını da bozabiliyor.
+
+1046
+02:33:17,448 --> 02:33:22,628
+O yüzden hangi nodu hareket ettireceğiniz ya da bir nod hareket ettirerek yapacağınız işlem...
+
+1047
+02:33:23,443 --> 02:33:32,503
+Daha az maliyetli onu mu tercih etmek gerekir yoksa ağacın balansı bozulduğu için bütün nodları yukarı taşıyarak mı bir çözüm üretmek gerekir?
+
+1048
+02:33:32,563 --> 02:33:43,223
+Tabi bunları hep değerlendirmek lazım ama şimdi buradan baktığınızda 5'in yerine gelebilecek en uygun adayın 4 olduğunu görüyorsunuz.
+
+1049
+02:33:48,724 --> 02:33:53,103
+Sağında büyüklerin, solunda da küçüklerin kaldığını görüyorsunuz.
+
+1050
+02:33:53,943 --> 02:33:54,724
+Değil mi?
+
+1051
+02:33:56,184 --> 02:33:57,204
+Bunda herhangi bir sorun yok.
+
+1052
+02:34:02,484 --> 02:34:03,243
+Evet hocam.
+
+1053
+02:34:03,844 --> 02:34:14,943
+Evet, peki bu şartlarda biz in order traversal ile gezerek bir şey elde edebilir miyiz?
+
+1054
+02:34:15,783 --> 02:34:20,004
+Bunu algoritmik olarak bir çözüme dökme şansımız olur mu?
+
+1055
+02:34:31,252 --> 02:34:33,632
+Evet, [öğrenci], [öğrenci].
+
+1056
+02:34:35,711 --> 02:34:45,192
+Şimdi sileceğimiz elemana diyelim ki 12'yi sileceğiz ya veya 5'ten devam edelim.
+
+1057
+02:34:45,352 --> 02:34:46,532
+5'ten devam edelim, daha iyi.
+
+1058
+02:34:51,219 --> 02:34:56,419
+Sırayla yaprakları kontrol edip mesela 2'ye bakıp 2, 3 ve 12 arasında mı?
+
+1059
+02:34:56,759 --> 02:35:01,419
+B'yi ise 4'e bakıp 3 ve 12 arasında mı diye tüm yaprakları geçsek uygun bir yaprağı bulup.
+
+1060
+02:35:02,559 --> 02:35:04,239
+Biraz maliyetli olmaz mı?
+
+1061
+02:35:06,119 --> 02:35:06,439
+Yani.
+
+1062
+02:35:07,459 --> 02:35:11,520
+Çünkü şunu biliyoruz. Sol taraf sağ taraftan daima küçük.
+
+1063
+02:35:13,799 --> 02:35:14,439
+Doğru.
+
+1064
+02:35:14,995 --> 02:35:18,675
+Onu gözeterek bir in order, traversal yapsak.
+
+1065
+02:35:18,675 --> 02:35:24,655
+Önce sola, sonra sağa doğru aşağı ilerlersek zaten arada bir şey bulmuş olacağız.
+
+1066
+02:35:25,895 --> 02:35:27,295
+Önce sola, sonra sağa.
+
+1067
+02:35:27,515 --> 02:35:31,975
+Yani üçün sağ tarafından bir şeyi seçersek zaten üçten büyük olmuş olacak.
+
+1068
+02:35:33,072 --> 02:35:35,672
+Ama 12'den küçük mü diye kontrol edeceğiz.
+
+1069
+02:35:36,391 --> 02:35:45,072
+O zaman burada mesela bir seviye daha olsaydı, 2'nin altında bir seviye daha olsaydı, 3'ün peşinden gidecek miydik?
+
+1070
+02:35:45,072 --> 02:35:52,832
+Yani örnek veriyorum. Burası, tabii şu anda buna göre bir yapı oluşturmadık. Bunları değiştirmek lazım.
+
+1071
+02:35:54,051 --> 02:36:00,072
+Rakamları şöyle yapalım. Şuraya 6 diyeyim. Şuraya...
+
+1072
+02:36:01,108 --> 02:36:02,648
+Hatta buraya 8 diyeyim.
+
+1073
+02:36:04,728 --> 02:36:07,608
+Burası 6 olsun.
+
+1074
+02:36:08,488 --> 02:36:09,587
+Burası 7 olsun.
+
+1075
+02:36:10,848 --> 02:36:13,288
+Burası 3 olsun.
+
+1076
+02:36:15,048 --> 02:36:16,848
+Burası 4 olsun.
+
+1077
+02:36:18,688 --> 02:36:19,587
+Burası da 1 olsun.
+
+1078
+02:36:20,768 --> 02:36:21,668
+Böyle bir ağaç olsun.
+
+1079
+02:36:21,668 --> 02:36:26,988
+Burada 8'i sildiğimizi varsayarsak 8'in yerine neresinin geçmesi gerekiyor?
+
+1080
+02:36:29,971 --> 02:36:32,531
+Hangi değerin geçmesi gerekiyor?
+
+1081
+02:36:33,492 --> 02:36:35,291
+7 olabilir.
+
+1082
+02:36:37,691 --> 02:36:38,811
+O kadar.
+
+1083
+02:36:39,772 --> 02:36:40,691
+Sadece 7 olabilir.
+
+1084
+02:36:41,752 --> 02:36:43,412
+7'nin geçmesi gerekiyor bunda.
+
+1085
+02:36:43,992 --> 02:36:48,072
+Tamam. Şimdi buna göre bir çözüm üretmek gerekiyor arkadaşlar.
+
+1086
+02:36:48,912 --> 02:36:56,171
+Yapmanız gereken şey de sizin bu delete ile ilgili olan kısmı
+
+1087
+02:36:56,468 --> 02:37:11,808
+implemente etmeye çalışmak. Bütün kezleri size anlattım. Bunun için binary search tree'deki direct operasyonunu hem algoritmik olarak akış diyarlarımı çizmenizi hem de kodlamanızı bekliyorum. Evet [öğrenci].
+
+1088
+02:37:13,728 --> 02:37:23,587
+Hocam burada aslında kökü çıkarttığımızda yaptığımız işlem biraz şöyle olmuyor mu? Soldaki yaprağın sağına bakmak, sağdaki yaprağın da soluna bakmak.
+
+1089
+02:37:25,108 --> 02:37:53,028
+Şimdi şöyle, ben durumu genelleştirmek istiyorum aslında. Kök durumu özel bir durum. Biraz önce hani 12'yi konuşmuştuk ya, burada mesela 6'yı da konuşabiliriz. Örneğin 6'yı silmeyi düşündüğünüzü varsayalım. 6'yı silmek istediğiniz zaman 6'nın aslında 2 tane çocuğu ve o çocuklardan birinin de çocukları var. Şimdi 6'yı silmek istediğiniz zaman yerine ne taşırsanız mantıklı olacaktır.
+
+1090
+02:37:53,108 --> 02:37:58,288
+Daha önce de söylemiştik. Evet, dördü taşımamız mantıklı olur. Bunu bulmanın yolu neydi?
+
+1091
+02:37:58,828 --> 02:38:02,747
+Yani aslında şey gibi hocam, çocuğunun ters tarafındaki çocuğu gibi.
+
+1092
+02:38:03,476 --> 02:38:23,056
+Öyle gibi gözüküyor ama şimdi bunu oturup sakin bir kafayla kodlamanızı istiyorum, üzerine düşünmenizi istiyorum ki algoritmik tarafınız biraz gelişsin. Yoksa hani ben çatlayacağımı söylersem zaten o zaman bu işin pek bir esprisi kalmıyor. Bir sonraki turda da zaten bunun çözümünü birlikte yapıyor olacağız. Evet [öğrenci].
+
+1093
+02:38:23,827 --> 02:38:31,707
+Ben dediğinizi ilişkin sormak istedim. Root left, root right kafasıyla mı yapalım? Ya da array gibi düşünüp, eksi birliği? Hani hangisi?
+
+1094
+02:38:32,147 --> 02:38:37,987
+Her ikisi de olur. Ben olsam ikisini de yaparım. Çünkü ikisi de bir bakış açısı kazandıracak.
+
+1095
+02:38:38,307 --> 02:38:39,288
+Biraz farklı çünkü.
+
+1096
+02:38:39,608 --> 02:38:40,768
+Evet, aynen öyle.
+
+1097
+02:38:44,347 --> 02:38:46,768
+Evet, şimdi bu kısım...
+
+1098
+02:38:47,636 --> 02:39:08,995
+Yani en azından tree'lerin kısmı çoğunluğunu bitirdik. Geriye işte delete operasyonla ilgili kaldı. Bir de kompleks treylerle ilgili bir kısım kaldı. İsterseniz kompleks trey kısmını binary search tree'de yazayım. O kısım hızlıca üzerinden geçebileceğimiz kısım. Binary search tree, kompleks trey.
+
+1099
+02:39:12,628 --> 02:39:15,427
+Bu noktada operationlarımız var.
+
+1100
+02:39:18,567 --> 02:39:27,528
+Bu operationlar search, insert, delete.
+
+1101
+02:39:29,528 --> 02:39:36,348
+Operationları best case ve worst case yazacağım.
+
+1102
+02:39:36,348 --> 02:39:38,008
+Average case yazmayacağım.
+
+1103
+02:39:42,772 --> 02:40:09,072
+Evet, search'taki best case nedir? O, log n, insert'taki O, log n, delete'taki O, log n. Ama merge case'e geldiğiniz zaman bunlar O, N, O, N, O, N noktasına gidiyor. Bunun ye gelmesi sebebi ağacın dizilim şekli.
+
+1104
+02:40:09,556 --> 02:40:16,596
+Yani dengeli bir ağaçla dengesiz bir ağacın durumunu konuşuyoruz.
+
+1105
+02:40:17,376 --> 02:40:20,268
+Space Complex diye geldiğimiz zaman da...
+
+1106
+02:40:24,659 --> 02:40:35,879
+En kötü durum senaryosunda ON'lik bir alana yerleştiğini görüyorsunuz bu yapılan operasyonların.
+
+1107
+02:40:35,879 --> 02:40:45,159
+Şimdi, gelelim biz quiz 1'e.
+
+1108
+02:40:50,420 --> 02:41:02,060
+Q101'in çözümünü asistan arkadaşlarımız yapacaklar. Ama ben özellikle üzerinde durmak istiyorum.
+
+1109
+02:41:05,060 --> 02:41:12,299
+Q101'de hatırlarsanız 0 ile K arasında renk olabileceğini söylemiştik.
+
+1110
+02:41:17,904 --> 02:41:21,423
+K bölü 3 kadar farklı renk olduğundan bahsetmiştik.
+
+1111
+02:41:23,123 --> 02:41:26,304
+N'e emlik bir matristen bahsetmiştik.
+
+1112
+02:41:27,463 --> 02:41:31,224
+Ve buradaki histogramın bulunması isteniyordu.
+
+1113
+02:41:47,731 --> 02:42:06,752
+Şimdi en çok karşılaştığımız ve sizin daha önce bildiğiniz çözümü uygulayan arkadaşlarımız olmuş. Nedir bu çözüm? Hemen söyleyebilir misiniz? İlk akla gelen.
+
+1114
+02:42:11,476 --> 02:42:12,236
+Evet [öğrenci].
+
+1115
+02:42:12,896 --> 02:42:21,556
+İki boyutlu bir fixed area'ye üst kısma o rengin kodunu, altına da onun sayısını şey yapabiliriz.
+
+1116
+02:42:21,556 --> 02:42:23,716
+Hiç ona gerek yok.
+
+1117
+02:42:24,796 --> 02:42:25,876
+Şöyle söyleyeyim.
+
+1118
+02:42:26,036 --> 02:42:28,376
+En basit ilk akla gelen şey size öğrettiğimiz.
+
+1119
+02:42:29,136 --> 02:42:34,256
+Örneğin 1 var, örneğin 5 var, örneğin 255 olsun.
+
+1120
+02:42:38,260 --> 02:42:42,180
+Bir arttırmak. Bu da sıfırdan 255'e kadar olsun.
+
+1121
+02:42:43,319 --> 02:42:45,079
+Ama bu sefer çok büyük olmaz mı hocam?
+
+1122
+02:42:45,319 --> 02:42:47,479
+Tamam işte oraya geleceğim. Bir saniye, sakin.
+
+1123
+02:42:49,260 --> 02:42:53,760
+Bu çözüm, ilk akla gelen çözüm ve biz orada özellikle şunu belirttik.
+
+1124
+02:42:54,299 --> 02:42:58,880
+Berlek açısından efisent bir çözüm istediğimizi belirttik.
+
+1125
+02:42:59,880 --> 02:43:03,760
+Yani K sayısı 256 iken bu sorun değil.
+
+1126
+02:43:04,159 --> 02:43:11,860
+Ama renk uzayı genişlediğinde sizin daha büyük bir alana ihtiyacınız var tek tek hepsini sayabilmeniz için.
+
+1127
+02:43:12,799 --> 02:43:22,779
+Ama belleği kısıtlı bir cihazda, bellek açısından komplekstiyi hesaba kattığınızda bu çözüm efficient bir çözüm değil.
+
+1128
+02:43:22,779 --> 02:43:29,560
+Yani counter, image, IJ.
+
+1129
+02:43:32,180 --> 02:43:41,479
+deyip bunu artı artı yapmak bir çözümdür ama bellek kısıtı olan bir yerde doğru bir çözüm değildir. Bunun yerine ne yapılabilir?
+
+1130
+02:43:46,260 --> 02:43:47,260
+[öğrenci]?
+
+1131
+02:43:48,260 --> 02:43:54,260
+Hocam, bir linked list açarız. Birinci iki tane içerisine integer koyarız.
+
+1132
+02:43:54,260 --> 02:44:02,260
+Yani tabii renk değerlerinden integer olduğunu varsayalım. Birincisi renk değeri, ikincisi de freqüency, kaç kez tekrar ettiğini satmak için.
+
+1133
+02:44:02,260 --> 02:44:03,260
+Çok güzel.
+
+1134
+02:44:04,020 --> 02:44:14,420
+Bu şekilde dizi içerisinde dönerek o sayı bulduğumuz takdirde frequency arttırıyoruz bir. Bir de bulmazsak o sayıyı en sona ekliyoruz.
+
+1135
+02:44:14,880 --> 02:44:26,959
+Evet. Tamam, teşekkür ederim. Linkli listeyi daha hesaba katmayalım. Arkadaşınızın söylediğini basit bir. Dizide de yapabilirsiniz, bir matrisde de yapabilirsiniz. İlk bulduğunuz değer bir.
+
+1136
+02:44:28,371 --> 02:44:37,991
+Biri eklediniz, bir tane birden var dediniz. İkinci de bir diyelim. O zaman frekansını iki yaptınız. Üçüncü de bir diyelim. Frekansını üç yaptınız.
+
+1137
+02:44:38,731 --> 02:44:51,572
+Diyelim bütün resim beyaz olsaydı ya da siyah olsaydı. Sonuçta ne olacaktı? İlgili değer, birin değeri burada n çarpı m kadar yer alacaktı.
+
+1138
+02:44:51,572 --> 02:44:54,231
+Ne kadarlık yer kaplamış olacaktınız?
+
+1139
+02:44:56,020 --> 02:44:58,500
+Arkadaşlar, space complexity kaç olacaktı?
+
+1140
+02:45:01,460 --> 02:45:02,280
+[öğrenci]?
+
+1141
+02:45:06,195 --> 02:45:21,236
+Bu örnek üzerinden düşünürsek, best case olduğunu varsayarsak, burada sadece resmin siyah ya da beyaz olması durumunda bir renk ve o renkten kaç tane olduğu bilgisini saklamış olacaktınız.
+
+1142
+02:45:22,456 --> 02:45:33,056
+Ha diyebilirsiniz ki ben matrisi burada K bölü üçlük açtım. Bazılarınız böyle yapmış. Evet. Daha iyisi nedir? Biraz önce [öğrenci] arkadaşınızın söylediği gibi.
+
+1143
+02:45:33,587 --> 02:45:39,768
+Bir linked liste yaratırsınız ya da bir diziyi tek tek genişletirsiniz ki daha çok linked liste yapmak burada akıllıcı olanı.
+
+1144
+02:45:41,087 --> 02:45:45,188
+Burada hani linked liste yapmanızdan çok bunu böyle tasarlamanız bekleniyordu.
+
+1145
+02:45:47,087 --> 02:45:51,347
+Linked listede bir tane elemanı eklersiniz ve renk bilgisini tutarsınız.
+
+1146
+02:45:51,468 --> 02:45:53,347
+Yeni bir renk geldi, yeni rengi eklersiniz.
+
+1147
+02:45:53,468 --> 02:45:58,028
+Diyelim ki birden farklı olarak resimde siyah ve beyazlar var diyelim.
+
+1148
+02:45:58,907 --> 02:46:00,528
+255'ler ve 1'ler var.
+
+1149
+02:46:00,959 --> 02:46:16,180
+O zaman birden işte diyelim ki 100 tane var. 255'ten de 200 tane var. O zaman ne olacak? Toplamda sadece 4 tane değer saklamış olacaksınız.
+
+1150
+02:46:19,319 --> 02:46:25,879
+Fakat bunu başka türlü yapanlar da var. Yukarıdaki gibi yapmamışlar.
+
+1151
+02:46:26,515 --> 02:46:32,695
+Bir tane for döngüsü açmışlar ve her renkten resimde kaç tane var onu sayıyorlar.
+
+1152
+02:46:33,675 --> 02:46:36,216
+Örneğin, sıfırdan kaç tane var bütün resmi dönüyor.
+
+1153
+02:46:37,456 --> 02:46:39,256
+Birden kaç tane var bütün resmi dönüyor.
+
+1154
+02:46:39,716 --> 02:46:41,315
+Her renk için bütün resmi dönüyor.
+
+1155
+02:46:42,216 --> 02:46:43,536
+Bu da mesela çok kötü bir tasarım.
+
+1156
+02:46:46,115 --> 02:46:49,396
+Burada yapılacak egenen şey şu, iki tane for döngüsü.
+
+1157
+02:46:51,195 --> 02:46:53,296
+Kapaca anlatıyorum, detayını size anlatacaklar.
+
+1158
+02:46:53,716 --> 02:47:17,636
+Döngü bir tanesi I0, I küçük, row. Diğeri J0, J küçük, column olsun. Bunlar böyle olsun. Bunun içerisine ne koymamız gerekiyor arkadaşlar? Bu iki forun içerisine ne koymamız gerekiyor?
+
+1159
+02:47:21,299 --> 02:47:25,739
+Bu anlattığım şekilde her yeni rengi gördüğümüzde buraya ekliyorsak.
+
+1160
+02:47:34,227 --> 02:47:35,108
+Evet [öğrenci].
+
+1161
+02:47:36,347 --> 02:47:43,487
+Hocam, o rengin kodunu bulacağız. Sonra varsa bir arttıracağız. Yoksa ekleyeceğiz.
+
+1162
+02:47:44,288 --> 02:47:53,687
+Yapacağımız yegane şey bir wild öngüsü içerisinde. O rengi şu gördüğünüz matris'te var mı yok mu diye bakmak.
+
+1163
+02:47:55,367 --> 02:47:59,167
+Bulduğunuz an burada çıkacaksınız. Örneğin bir. Biri gördünüz.
+
+1164
+02:48:00,020 --> 02:48:26,020
+Bir var ilk sırada. Değerini bir arttıracaksınız. Şurayı silelim. Diyelim ki burası birdi. Yeni bir tane daha geldi. Bunun üzerine iki yazacaksınız. Geri kalanlara bakmayacaksınız. İşiniz burada bitecek. Eğer bulamadınız, yeni bir renk geldi. Yeni renk diyelim yüz. Hemen dizinin arkasına ekleyeceksiniz. Bunu burada bitireceksiniz.
+
+1165
+02:48:28,308 --> 02:48:29,628
+Tek yapılacak şey buydu.
+
+1166
+02:48:30,587 --> 02:48:31,728
+Ki ben çok şaşırdım.
+
+1167
+02:48:32,808 --> 02:48:40,548
+Sınıfın içerisinde yani 5-6 kişi 70'in üzerinde almıştır.
+
+1168
+02:48:41,888 --> 02:48:46,528
+Bunun sebeplerinden bir tanesi kompleks diye cevap vermemiş olmanız.
+
+1169
+02:48:48,668 --> 02:48:53,528
+80 üzerinden olan kısımdan 70 ve üzeri alan...
+
+1170
+02:48:54,420 --> 02:49:14,040
+7-8 kişi vardır. O kadar. Geri kalan yaklaşık 40 kişi sınava girmiş. Çoğu kişi tamamen aklındakini, orada yazan bilgileri kullanmadan hayata geçirmiş. Lütfen verilen kriterlere dikkat edin.
+
+1171
+02:49:14,319 --> 02:49:25,860
+Space Complexity'yi önemseyin deniyorsa, o zaman buraya bir büyük dizi açıp onun içine tek tek bütün gözleri artı bir yapacak yöntemi uygulamamamız lazım.
+
+1172
+02:49:26,119 --> 02:49:36,380
+Ama denseydi ki bizim Time Complexity'nin çok düşük olması lazım, bir Space Complexity kısıtımız yok, o zaman evet bu çözüm çok güzel bir çözüm.
+
+1173
+02:49:36,380 --> 02:49:41,920
+Zaten birçok yerde de kullanıyoruz. Ama renk uzayı büyürse, mesela bir milyon.
+
+1174
+02:49:42,239 --> 02:49:48,819
+Renk var diyelim. O zaman sizin 1 milyonluk dizi açmanız lazım. Çok feasible değil. [öğrenci].
+
+1175
+02:49:52,819 --> 02:49:54,020
+Bir soru mu soracaksın belki?
+
+1176
+02:49:54,340 --> 02:49:55,840
+Aa hocam, açıldı, pardon.
+
+1177
+02:49:56,099 --> 02:49:57,799
+Tamam, mikrofon açık o yüzden sordum.
+
+1178
+02:49:58,680 --> 02:50:00,779
+Evet, şimdi kabaca size anlatmış oldum.
+
+1179
+02:50:00,880 --> 02:50:04,319
+Saat 1'e oma dersiniz vardır belki bir de o yüzden çok tutmayacağım.
+
+1180
+02:50:05,319 --> 02:50:12,380
+Sonuçta çok zor olmadığını düşündüğümüz bir soru daha iyi bir başlangıç olmasa da sizler adına,
+
+1181
+02:50:12,380 --> 02:50:20,279
+bundan sonraki süreçte her an karşınızda çıkacak bir quiz ya da ödevlere hazırlıklı olmanız gerekiyor.
+
+1182
+02:50:20,623 --> 02:50:23,384
+O yüzden sizden ricam işi biraz daha ciddiye alın.
+
+1183
+02:50:24,023 --> 02:50:24,344
+[öğrenci]?
+
+1184
+02:50:25,144 --> 02:50:27,664
+Hocam, Cahsus Code quizini değerlendirdiniz mi?
+
+1185
+02:50:28,363 --> 02:50:31,083
+Cahsus Code aslında bir quiz değil bir ödevdi.
+
+1186
+02:50:31,724 --> 02:50:33,844
+İki saatte yapıldığı için belki öyle gözüküyor olabilir.
+
+1187
+02:50:34,963 --> 02:50:37,103
+O henüz değerlendirilmedi.
+
+1188
+02:50:38,583 --> 02:50:42,083
+Herhalde bir on günlük süre içerisinde size geri dönüşü olacaktır.
+
+1189
+02:50:43,004 --> 02:50:43,724
+Teşekkürler.
+
+1190
+02:50:44,123 --> 02:50:44,603
+Rica ederim.
+
+1191
+02:50:45,724 --> 02:50:46,443
+Başka sorusu olan?
+
+1192
+02:50:49,843 --> 02:50:50,583
+Evet [öğrenci].
+
+1193
+02:50:51,903 --> 02:50:58,763
+Hocam tüm ödevler mi bir şekilde belli bir süreyle yapılmamış sencek yoksa ilk ödev'e özgür bir şey mi?
+
+1194
+02:50:58,763 --> 02:51:00,324
+Belli bir sıradan kasıt.
+
+1195
+02:51:01,203 --> 02:51:02,484
+Belli bir süre mesela.
+
+1196
+02:51:02,703 --> 02:51:25,804
+Süre. Özür dilerim. Pardon ben süreyi anlamadım. Bazı ödevler iki saatlik süreden uzun olacaklar. Mesela iki gün olabilir, bir gün olabilir, bir hafta olabilir. Ödevin kapsamına bağlı olarak. Ama quizler genel olarak işte quizin türüne bağlı olarak on beş dakikayla maksimum bir buçuk saat arasında, bir buçuk saati bile bulacağını zannetmiyorum. On beş dakikayla bir saat arasında olacaktır.
+
+1197
+02:51:27,252 --> 02:51:32,572
+Tamamdır, teşekkür ederim. Rica ederim. Başka sorusu olan? Evet [öğrenci].
+
+1198
+02:51:34,031 --> 02:51:36,871
+Hocam, ödevlerle ve lablarla ilgili bir şey sormak istiyorum. Evet.
+
+1199
+02:51:37,780 --> 02:51:51,140
+Mesela kısıtlı süre içinde verilen kısıtlarla ilgili bir çözüm gelmedi aklımıza veya çok uzun süreceğini düşünüyoruz. Basit bir şekilde brute force yöntemlerini yapıp çalışan bir kod çıkarmamız mı daha önemli?
+
+1200
+02:51:51,140 --> 02:52:03,140
+En kötü ihtimalle onu yapabilirsiniz ama örneğin yani bir fikir geldi aklınıza ve olabileceğini düşünüyorsunuz ama çok iyi hani yapamayacağınızı da düşünüyorsunuz.
+
+1201
+02:52:05,780 --> 02:52:09,080
+Yönetik ise onu yapmaya çalışmak daha anlamlı.
+
+1202
+02:52:09,960 --> 02:52:21,180
+Hani hiç istenmeyen bir şeyi, düz bir çözümü yapmaktansa o çözümü implemente etmeye çalışmak yeri geldiğinde size daha çok puan kazandırabilir.
+
+1203
+02:52:22,020 --> 02:52:22,960
+Anladım, teşekkür ederim.
+
+1204
+02:52:23,240 --> 02:52:31,700
+Yani %100 çalışmasından çok o şekilde düşündüğünüzü doğru yollarla göstermeye çalışmak bence daha önemli.
+
+1205
+02:52:32,819 --> 02:52:34,180
+Tamam, teşekkür ederim hocam.
+
+1206
+02:52:34,399 --> 02:52:54,599
+Rica ederim. Örneğin burada şunu söyleyeyim, yani ekranda gösterdiğim gibi bütün bir belleğe yerleştirip artı bir yapmak yerine aşağıdaki bahsettiğim çözümü while yerine forla yapmak, misal k bölü 3'e kadar gitmek, daha yüksek puan olacak bu çözüm.
+
+1207
+02:52:58,324 --> 02:53:05,004
+Ama for'la yapmamak gerekiyor. Tabii ki while'la yapmak daha doğru. O yüzden arada bir puan farkı olacaktır. Başka sorusu olan?
+
+1208
+02:53:07,504 --> 02:53:18,064
+Evet, o zaman teşekkür ediyorum. Çarşamba günü görüşmek üzere. Çarşamba günü derse mutlaka katılın. Genel olarak biliyorsunuz çarşamba günlerini önemsiyoruz her anlamda.
+
+1209
+02:53:20,684 --> 02:53:24,484
+Hepinize sağlıklı bir hafta diliyorum. Kendinize çok iyi bakın. Görüşmek üzere. Hoşçakalın.
+
+1210
+02:53:27,123 --> 02:53:28,183
+İyi günler hocam.
+
+1211
+02:53:28,923 --> 02:53:29,463
+İyi günler.

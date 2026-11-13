@@ -1,0 +1,2687 @@
+1
+00:00:27,603 --> 00:00:29,123
+Mikrofonlar, müzikal patlamış falan.
+
+2
+00:03:10,419 --> 00:03:22,519
+Evet, arkadaşlar hoş geldiniz. Bu hafta, biliyorsunuz pazartesi günü dersimizin müdek ziyadesi nedeniyle biraz kısa kesmiştik.
+
+3
+00:03:23,519 --> 00:03:33,939
+Stack operasyonlarını konuşuyorduk. Siteğin kullanıldığı aplikasyonlardan bahsetmiştik. Nerelerde işimize yarayacağını konuştuk.
+
+4
+00:03:34,515 --> 00:03:44,775
+Bugün kaldığımız yerden devam edeceğiz. Tabii sizden bir isteğim olacak. Yani yapanlar olursa memnun olurum.
+
+5
+00:03:45,635 --> 00:03:51,756
+Şimdi online olarak derslerimiz devam ettiği için çoğunuzun yüzünü görme şansım yok.
+
+6
+00:03:52,575 --> 00:04:00,515
+Birçoğunuzla daha önceden birinci sınıftan tanışıyoruz. Ama en azından kameralarınızı açamasanız bile...
+
+7
+00:04:01,716 --> 00:04:12,876
+Sayfadaki isimlerinizin yazdığı noktada resimlerinizi paylaşırsanız ben de sizleri en azından yüzlerinizden biraz daha yakından tanıma şansım olur.
+
+8
+00:04:13,695 --> 00:04:21,216
+Bu konuda ayarlama yaparsanız memnun olurum. Bazı arkadaşlarınız paylaşımı yapmışlar. Bu güzel. En azından onları hatırlıyorum.
+
+9
+00:04:21,875 --> 00:04:31,235
+Birçoğunuzu da hatırlamak adına resmlerinizi koymanızı rica edeceğim. Buna hassasiyet gösteren arkadaşlara da şimdiden teşekkür ediyorum.
+
+10
+00:04:31,235 --> 00:04:47,871
+Onun dışında derse stack ile devam edeceğiz. Önümüzdeki pazartesi günü queue'ları anlatıyor olacağım. Zamanımız kalırsa da artık ağaçlara geçeceğiz. Ondan sonra da yavaş yavaş
+
+11
+00:04:47,872 --> 00:04:57,091
+Ağaçlardan sonra heap sort, priority queue gibi heap tree'ler bunları anlatıp yolumuza devam ediyor olacağız.
+
+12
+00:04:58,932 --> 00:05:03,432
+Sorusu olan var mı? Hemen tekrar sözü size bırakayım.
+
+13
+00:05:04,891 --> 00:05:08,932
+Ya da bilgilendirme yapmak isteyen bir önerisi olan.
+
+14
+00:05:12,660 --> 00:05:14,060
+Hocam ben bir şey ekleyebilir miyim?
+
+15
+00:05:14,080 --> 00:05:14,260
+Peki.
+
+16
+00:05:15,440 --> 00:05:16,060
+Tabi varsa.
+
+17
+00:05:16,720 --> 00:05:21,460
+Hocam toplantı başında bazen arkadaşların mikrofonları açık ya.
+
+18
+00:05:21,460 --> 00:05:25,400
+Bu sanırım toplantı ayarlardan açık.
+
+19
+00:05:25,960 --> 00:05:28,580
+Normalde kapanması gerek.
+
+20
+00:05:30,579 --> 00:05:34,120
+Evet, onu da hatırlatalım tüm arkadaşlara.
+
+21
+00:05:34,120 --> 00:05:40,120
+Parsanın hatırlattığı default ayarlar sanırım yanlış anlamıyorsam.
+
+22
+00:05:41,620 --> 00:05:47,219
+Uygulamanızın, zoom uygulamanızın içerisine girip bir toplantı başlarken.
+
+23
+00:05:47,600 --> 00:06:08,320
+Doğrudan kapalı olmasını mikrofonun veya videonun seçerseniz bununla ilgili herhangi bir sıkıntı yaşamazsınız. O yüzden her seferinde bu duyuru ile yapmamıza gerek kalmaz. Herkes zoomdan default olarak mikrofonu ve kamerası kapalı şekilde ayarları yaparsa bu sorunu da çözmüş olacağız diye düşünüyorum.
+
+24
+00:06:08,320 --> 00:06:10,000
+Peki.
+
+25
+00:06:10,963 --> 00:06:23,283
+Yorumda olmadana göre biz kaldığımız yerden devam ediyor olacağız. Bugün dersimiz yaklaşık bire kadar sürecek. O yüzden kesintisiz bir ders yapmayı planlıyorum.
+
+26
+00:06:23,699 --> 00:06:40,059
+40 dakika sonra bir ara vermeyeceğim. Yaklaşık 50 dakika, 1 saatlik bir anlatım olacak. Öncesi sonrası olabilir konumun gidişatına göre, sizden gelecek sorulara göre. O yüzden kendinizi de ona göre hazırlarsanız sevinirim.
+
+27
+00:06:40,179 --> 00:06:44,699
+Şimdi ekran paylaşımı yapayım önce sizlerle kaldığımız yeri hatırlatmak adına.
+
+28
+00:06:47,411 --> 00:06:52,411
+Evet, şu anda sanırım görebiliyorsunuz diye düşünüyorum. Kendi görüntümü alıyorum ekrandan.
+
+29
+00:06:54,411 --> 00:07:02,411
+Şimdi en son stack operasyonlarını konuşmuştuk. Stack ile ilgili ufak hatırlatmalar yapalım.
+
+30
+00:07:04,411 --> 00:07:13,291
+Stack kullanımı ile ilgili, stack use 3 diyelim. Last in first out month'ına göre çalıştığını söylemiştik. Örneğin...
+
+31
+00:07:17,747 --> 00:07:25,228
+The weather is very beautiful cümlesini yazdığınızı düşünün.
+
+32
+00:07:31,220 --> 00:07:33,560
+Bunu bir editörde yazdığınızı varsayın.
+
+33
+00:07:34,180 --> 00:07:39,560
+Editörde ilk olarak Beautiful'ı sildiğinizi düşünün.
+
+34
+00:07:39,720 --> 00:07:43,519
+İkinci olarak da Very'i sildiğinizi düşünün.
+
+35
+00:07:44,019 --> 00:07:45,220
+Ve yerine işte...
+
+36
+00:07:47,279 --> 00:07:49,220
+Very demeyelim de...
+
+37
+00:07:49,960 --> 00:07:50,940
+Ne diyelim?
+
+38
+00:07:56,115 --> 00:08:02,815
+Partly Cloud yazacaktınız ama Very Beautiful yazmıştınız. Bunu sildiniz ve buraya yazmak istiyorsunuz.
+
+39
+00:08:02,815 --> 00:08:15,575
+Şimdi silme işlemi yaptığınızda siteye önce Beautiful basılıyor, sonra da Very kelimesi basılıyor.
+
+40
+00:08:19,860 --> 00:08:25,959
+Tekrar geri almak istiyorsunuz yazdığınızı. O zaman undo yaptığınızda
+
+41
+00:08:25,959 --> 00:08:29,480
+İlk olarak
+
+42
+00:08:33,299 --> 00:08:39,759
+The weather is very. Tekrar geliyor. Bir undo daha yaparsanız.
+
+43
+00:08:42,220 --> 00:08:47,980
+The weather is very beautiful geliyor.
+
+44
+00:08:49,659 --> 00:08:58,819
+Çok sıklıkla editörlerde undo, redo özelliğini kullanabiliyoruz. Hızlı yazarken buna ihtiyaç duyuyoruz.
+
+45
+00:08:59,152 --> 00:09:14,912
+İşte özellikle bu undo işlemini yaparken geriye doğru yaptığınız değişiklikleri geri almak için stack yapısında saklıyoruz ve böylece en son yaptığınız değişikliği ilk önce geri alabiliyorsunuz.
+
+46
+00:09:15,216 --> 00:09:20,675
+Daha önce yaptığınız değişiklikleri geri dönmek için de siteğin altına doğru ilerlemeniz gerekiyor.
+
+47
+00:09:21,256 --> 00:09:24,036
+Örneklerden bir tanesi stack use 3'da bu.
+
+48
+00:09:24,696 --> 00:09:27,216
+İkinci bir örnek olarak da gene...
+
+49
+00:09:31,124 --> 00:09:37,024
+Pazartesi günü dile getirdiğimiz bir parantez kullanımı vardı.
+
+50
+00:09:46,163 --> 00:09:56,104
+Aleyicilerde parantezleri yeterli, daha doğrusu daha doğru bir şekilde yerleştirip yerleştirmediğinizi kontrol ediyordu.
+
+51
+00:09:56,104 --> 00:10:11,624
+Örnek vermek gerekirse işte A artı B dediniz. Böyle açtınız. A artı B dediniz. A çarpı B artı C.
+
+52
+00:10:13,364 --> 00:10:14,923
+Bu şekilde yazdınız.
+
+53
+00:10:16,004 --> 00:10:17,364
+A parantez açtınız.
+
+54
+00:10:22,388 --> 00:10:31,827
+Bunların hepsi hatalı. Bunların hepsinde sintaksatası oluşacaktır.
+
+55
+00:10:44,532 --> 00:10:55,192
+Normalde doğru olan bir kullanımda örneğin şu şekilde bir yazım doğru olarak kabul edildi.
+
+56
+00:10:55,272 --> 00:11:02,491
+Peki bunu stack tarafında nasıl kontrol ediyoruz? Kim söylemek ister? Bir tane stack'imiz var diyelim.
+
+57
+00:11:07,283 --> 00:11:09,683
+Bu stack de nasıl kontrol ediyoruz?
+
+58
+00:11:21,971 --> 00:11:33,311
+Parantezlerin doğru kullanıldığı bilgisini nasıl kontrol ediyoruz verilen bir ifade üzerinde ilerlerken.
+
+59
+00:11:42,548 --> 00:11:51,427
+Evet arkadaşlar, fikir yürütebilirsiniz. İki tane genel olarak kullandığımız yapı var. Biri aç parantez, diğeri kapa parantez.
+
+60
+00:11:52,427 --> 00:12:06,368
+Bu aç parantez ve kapa parantezleri pop ve push yaklaşımıyla stackte saklayarak o ifadenin hatalı olup olmadığına, bir sintaks hatası olup olmadığına karar vermek istiyoruz.
+
+61
+00:12:06,368 --> 00:12:07,528
+Ne yapabiliriz?
+
+62
+00:12:10,292 --> 00:12:11,471
+[öğrenci]
+
+63
+00:12:15,028 --> 00:12:20,788
+Hocam, acaba iki tane stack tutuyor olabilir miyiz? Biri semboller için, biri de operatörler için.
+
+64
+00:12:22,028 --> 00:12:30,307
+Ben şu anda operatör ve operantlar için bir işlem yapmıyorum. Benim yaptığım yegane kontrol sadece parantezler için.
+
+65
+00:12:31,268 --> 00:12:42,307
+O yüzden parantezler üzerinden soruyu değerlendirirseniz daha doğru olur. Çünkü bir sonraki turda senin söylediğin noktaya geliyor olacağız [öğrenci].
+
+66
+00:12:43,220 --> 00:12:50,160
+O zaman sanırım bir tane parantez açma parantezini gördüğümde siteye atıyordur.
+
+67
+00:12:51,120 --> 00:13:00,340
+Tamam, açma parantezi gördüğümüzde hemen siteye atalım. Bir tane ilk birinci örnek üzerinden gidelim. Şu noktada. Attık. Sonra?
+
+68
+00:13:01,360 --> 00:13:04,779
+Sonra o zaman arke operatörünü atacak sanırım.
+
+69
+00:13:05,060 --> 00:13:07,920
+Operatörle de ilgilenmiyorum. Sadece parantezlerle ilgileniyorum.
+
+70
+00:13:09,107 --> 00:13:12,967
+Sonra o zaman kapama parantezini görmesi lazım.
+
+71
+00:13:14,527 --> 00:13:16,987
+Bir tane daha açma parantezi olamaz mı öncesinde?
+
+72
+00:13:18,407 --> 00:13:19,227
+Yani olabilir.
+
+73
+00:13:20,687 --> 00:13:21,487
+Mesela burada var.
+
+74
+00:13:22,727 --> 00:13:23,367
+Şurada var.
+
+75
+00:13:23,907 --> 00:13:25,567
+O zaman onu da koyacak siteye.
+
+76
+00:13:26,307 --> 00:13:28,287
+Tamam koydum. Bunu da koydum.
+
+77
+00:13:28,947 --> 00:13:35,267
+Şimdi bu noktaya geldiğimde artık benim birinci yazdığım örnekte iş bitti mi?
+
+78
+00:13:36,980 --> 00:13:43,760
+Yani ifadeyi tamamen taradım. Peki şu anda bu ifade doğru yanlış kararını neye göre vermediyim?
+
+79
+00:13:48,275 --> 00:14:01,895
+Stack şu anda dolu. Stack dolu. Stack dolu olduğuna göre biz aslında demek ki aç parantezlerin karşılığı, kapa parantezleri kullanmamışızdır.
+
+80
+00:14:02,575 --> 00:14:05,835
+Stackin dolu olması da bu işin hatalı olduğunu bize gösteriyor.
+
+81
+00:14:06,292 --> 00:14:30,991
+Halbuki alt örnekteki gibi, yani bu ikinci örnek, bu üçüncü, bu dördüncü, bu da beşinci olsun. Beşinci örnekte iki tane aç parantez vardı. Sonra kapa parantez geldiğinde, ilk kapa parantezi gördüğünüzde aç parantezi dışarı alacaksınız. Geriye ne kalacak? Bir tane aç parantez kalacak.
+
+82
+00:14:34,067 --> 00:14:50,048
+geldiğinde, bu aç parantezde dışarı alacaksınız. Burası birinci adım, burası ikinci adım. Son adıma geldiğinizde, stack'iniz boş kalacak. Eğer stack empty ise,
+
+83
+00:14:54,707 --> 00:14:56,547
+Syntax correct demektir.
+
+84
+00:14:58,887 --> 00:14:59,827
+Doğru mu?
+
+85
+00:15:01,667 --> 00:15:04,087
+Bu bir yaklaşım, bir çözüm şekli.
+
+86
+00:15:04,667 --> 00:15:09,467
+Peki, diğer yaptığımız bu beş numaralı örnek için konuşalım.
+
+87
+00:15:18,676 --> 00:15:26,796
+Diğer başka bir örneğe gelelim. İkinci örnek üzerinden gidelim. İkinci örneği kim bana söylemek ister?
+
+88
+00:15:43,668 --> 00:15:44,327
+Evet [öğrenci].
+
+89
+00:15:45,727 --> 00:15:54,867
+Hocam sanırım stack zaten boş olduğu için stackten açık parantezli açamayacağımız için hata alacağız ve direkt çıkacağız ilk karakterden itibaren.
+
+90
+00:15:54,867 --> 00:16:03,867
+Teşekkür ederim. Pop işlemi yapmak istediğimiz zaman, pardon kapa parantezi gördüğümüzde pop'a karşılık gelecek bir...
+
+91
+00:16:04,628 --> 00:16:12,168
+Aç parantez olmadığı için bir işlem yapamayacağız. Şu anda elimizde bir tane, şurada göstereyim.
+
+92
+00:16:15,028 --> 00:16:29,748
+Bir tane ikinci örnekte kapa parantez var. Kapa parantezin karşılığı pop işlemi. Bakıyorum buradan pop edebileceğim bir şey var mı? Pop edebileceğim bir şey olmadığı için doğrudan error.
+
+93
+00:16:30,515 --> 00:16:35,215
+Hatası veriyorum. Sonuçta, aç parantezin karşılığında
+
+94
+00:16:35,215 --> 00:16:38,475
+push,
+
+95
+00:16:41,475 --> 00:16:46,455
+kapa parantezin karşılığında da pop işlemi kullanıyorum.
+
+96
+00:16:46,455 --> 00:16:52,975
+Her aç parantez gördüğümde push yapıyorum, her kapa parantez gördüğümde pop yapıyorum.
+
+97
+00:16:54,315 --> 00:16:57,675
+İşlemleri tamamladığımda, bütün ifadeyi gezdiğimde
+
+98
+00:16:58,323 --> 00:17:08,403
+stack empty ise o zaman başarıyla sonlandırmışım demektir ve burada her bir parantezin karşılığı var demektir.
+
+99
+00:17:09,244 --> 00:17:11,824
+Öte yandan üçüncü örneğe bakalım.
+
+100
+00:17:15,508 --> 00:17:16,688
+Üçüncü örnekte
+
+101
+00:17:16,688 --> 00:17:20,228
+buraya bir
+
+102
+00:17:20,228 --> 00:17:23,728
+aç parantez geldi.
+
+103
+00:17:24,748 --> 00:17:26,288
+Bir tane daha aç parantez geldi.
+
+104
+00:17:27,268 --> 00:17:28,028
+Ondan sonra
+
+105
+00:17:28,028 --> 00:17:30,347
+iki tane push işlemi gerçekleşti.
+
+106
+00:17:30,508 --> 00:17:31,148
+Onu da yazalım.
+
+107
+00:17:33,427 --> 00:17:33,867
+Şöyle
+
+108
+00:17:33,867 --> 00:17:37,788
+push
+
+109
+00:17:37,788 --> 00:17:40,827
+sonra üçüncü örnekte
+
+110
+00:17:40,827 --> 00:17:41,347
+bir tane
+
+111
+00:17:42,003 --> 00:18:09,003
+Kapa parantez geldi. Kapa parantezin karşılığı pop. Aldım. Geriye bir tane elimde aç parantez kaldı. Ama ifadenin de sonuna geldim. Stack empty değil. O zaman demek ki burada bir sorun var demek. Burada herhangi bir şekilde parantezlerin karşılığı tamamlanmamış. Bu yüzden de hata.
+
+112
+00:18:09,748 --> 00:18:35,887
+oluşacak demektir. Buraya kadar sorusu olan var mı? Bu yaptığımız iş bir değerleyicinin sadece parantez kontrolü. Herhangi bir operatör ya da operantla ilgili bir değerlendirmesi yok. Bir tane fonksiyon düşünün. Tek yaptığı şey sizin ifadenizde aç ve kapı parantezler doğru sayıda mı?
+
+113
+00:18:36,339 --> 00:18:48,819
+Örneğin bunu C ile kod yazdığınızda zaman zaman yaşıyorsunuz. Bir parantez unutmuş oluyorsunuz. Size değerleyici missing parantezes diye bir hata dönüyor.
+
+114
+00:18:50,259 --> 00:19:18,059
+Farklı parantez tipleri olabilir. Burada tek bir parantez tipini konuştuk. Birden fazla parantez tipi için böyle bir kod yazmanız gerekebilir. Çünkü sonuçta programlama dillerinde farklı parantez tipleri var. O yüzden bunun için basit bir örnek üzerinden konuşsak da daha komplike örnekleri bu tarz bir stack yapısıyla kontrol etme şansına sahipsiniz. Mutlaka stack kullanmak zorunda mısınız? Hayır.
+
+115
+00:19:18,259 --> 00:19:33,940
+değil ama stack kullanımına çok uygun bir örnek olduğu için bunu sizinle paylaştım. Buraya kadar bir sorusu olan var mı? Tekrar sorayım. Anlaşılmayan bir şey.
+
+116
+00:19:38,387 --> 00:19:38,887
+Thank you.
+
+117
+00:19:42,451 --> 00:19:58,132
+Şimdi geçen hafta, ya daha doğrusu geçtiğimiz pazartesi başlık atmıştık. Stack operations demiştik, operasyonları yazmıştık. Şimdi bununla ilgili çeşitli kod parçaları yazıyor olacağız.
+
+118
+00:20:09,683 --> 00:20:11,183
+Straktyap sıcronomiyla.
+
+119
+00:20:15,508 --> 00:20:16,508
+Burada
+
+120
+00:20:20,756 --> 00:20:24,516
+item'ı saklayan bir dizimiz olsun.
+
+121
+00:20:26,036 --> 00:20:27,936
+Bir de neyi saklayacağım?
+
+122
+00:20:28,536 --> 00:20:33,956
+Yani neden tek bir dizi yapmıyorum da tek bir dizi oluşturuyorum?
+
+123
+00:20:34,036 --> 00:20:36,236
+Item dizisi ve istirahat yapısı oluşturuyorum.
+
+124
+00:20:36,796 --> 00:20:37,516
+Farklı bir kişi.
+
+125
+00:20:39,936 --> 00:20:44,936
+Yani benim için ne önemli, stackte hangi bilgiyi de saklamam lazım?
+
+126
+00:20:45,476 --> 00:20:47,096
+Bütün operasyonları yönetebilmem için.
+
+127
+00:20:48,180 --> 00:20:49,220
+Farklı bir kişi.
+
+128
+00:20:57,236 --> 00:20:59,135
+Hatırlarsanız, stack'te geziyorum.
+
+129
+00:21:00,216 --> 00:21:02,496
+Farklı noktalarda bulunuyorum her seferinde.
+
+130
+00:21:03,336 --> 00:21:07,196
+Örneğin ilk etapta şuradayken bir sonraki turda buradayım.
+
+131
+00:21:09,956 --> 00:21:12,276
+Bunu neyle saklayabilirim?
+
+132
+00:21:19,380 --> 00:21:20,200
+Evet, [öğrenci].
+
+133
+00:21:21,200 --> 00:21:23,860
+Bir length bilgisi olabilir mi? Uzunluk bilgisi?
+
+134
+00:21:24,960 --> 00:21:29,940
+Length diyelim. Onun aslında bir karşılığı var. Assemblide de gördünüz.
+
+135
+00:21:32,039 --> 00:21:34,880
+Index mi? Neticesi ismi olarak tam bilemedim.
+
+136
+00:21:35,420 --> 00:21:37,320
+Index'e yakın bir kullanım.
+
+137
+00:21:39,539 --> 00:21:40,980
+Pointer, stack pointer.
+
+138
+00:21:42,900 --> 00:21:47,140
+Base pointer vardır, stack pointer vardır, data segment pointer vardır.
+
+139
+00:21:49,800 --> 00:21:54,640
+Evet, bu noktada, [öğrenci] teşekkür ederim, [öğrenci], sana teşekkür ederim.
+
+140
+00:21:55,420 --> 00:22:00,480
+Bu noktada bir tane pointer'a ihtiyacınız var. Onu da top olarak isimlendiriyorum.
+
+141
+00:22:02,120 --> 00:22:07,480
+Ve bu structure yapısında stack olarak adlandırılıyor.
+
+142
+00:22:09,779 --> 00:22:14,099
+Diğer kod parçalarını tek tek yazmaya başlıyorum.
+
+143
+00:22:15,199 --> 00:22:17,139
+Initialize etmek istiyorum siteyi.
+
+144
+00:22:17,619 --> 00:22:19,659
+Yapmam gereken şey nedir?
+
+145
+00:22:22,199 --> 00:22:23,480
+Bana kim söyler?
+
+146
+00:22:33,875 --> 00:22:39,895
+Zaten yer ayırmakla ilgili bir şey yapmıyorum şu anda gördüğünüz gibi. Tek bir işlem yapmam gerekiyor. [öğrenci]?
+
+147
+00:22:41,556 --> 00:22:42,935
+Yok hocam vazgeçtim ben.
+
+148
+00:22:44,115 --> 00:22:45,556
+Hayırdır neden vazgeçtin?
+
+149
+00:22:46,175 --> 00:22:47,495
+Yani yanlış olduğunu düşündüm.
+
+150
+00:22:48,255 --> 00:22:49,336
+Tamam peki.
+
+151
+00:22:52,275 --> 00:22:53,695
+[öğrenci].
+
+152
+00:22:57,332 --> 00:22:58,092
+Buyurun hocam.
+
+153
+00:22:59,471 --> 00:23:00,211
+Nasılsın?
+
+154
+00:23:01,312 --> 00:23:02,312
+İyiyim hocam, siz nasılsınız?
+
+155
+00:23:02,592 --> 00:23:03,751
+Ben de iyiyim, soru sordum.
+
+156
+00:23:04,731 --> 00:23:06,392
+Soruyu ben kaçırdım da.
+
+157
+00:23:07,152 --> 00:23:12,872
+O zaman seni gönderiyoruz, adadan uğurluyoruz, teşekkür ediyoruz, yarışmaya katıldığın için.
+
+158
+00:23:14,251 --> 00:23:15,251
+[öğrenci], [öğrenci].
+
+159
+00:23:20,372 --> 00:23:21,492
+Sesim geliyor mu hocam?
+
+160
+00:23:21,732 --> 00:23:22,092
+Geliyor.
+
+161
+00:23:23,732 --> 00:23:27,652
+Ben mallokla yer açarız diye düşünmüştüm de açmayacağız dediniz.
+
+162
+00:23:28,152 --> 00:23:32,372
+Açmayacağız çünkü zaten ben sol tarafta yazdığım ifadede böyle bir pointer kullanmadım.
+
+163
+00:23:35,392 --> 00:23:36,912
+Nasıl yapacağız o zaman?
+
+164
+00:23:37,912 --> 00:23:39,432
+Evet işte ben onu soruyorum.
+
+165
+00:23:40,692 --> 00:23:41,352
+[öğrenci] [öğrenci].
+
+166
+00:23:47,827 --> 00:23:48,728
+Hocam bilmiyorum.
+
+167
+00:23:51,687 --> 00:23:53,988
+Neyi set etmemiz gerekiyoruz onu sorayım.
+
+168
+00:23:56,228 --> 00:24:00,167
+Yok hocam, internetim gitti de daha açtım, yeni açtım şeyi.
+
+169
+00:24:00,347 --> 00:24:02,448
+[öğrenci]'a söz verdiğinizde açtım.
+
+170
+00:24:03,907 --> 00:24:04,187
+Tamam.
+
+171
+00:24:04,567 --> 00:24:05,548
+Sağlık olsun.
+
+172
+00:24:05,768 --> 00:24:06,807
+Haydi, yapacak bir şey yok.
+
+173
+00:24:07,468 --> 00:24:08,468
+Sana da teşekkür ediyoruz.
+
+174
+00:24:10,728 --> 00:24:11,948
+Evet, [öğrenci].
+
+175
+00:24:15,443 --> 00:24:17,503
+Hocam, benim de bir fikrim yok.
+
+176
+00:24:17,503 --> 00:24:18,943
+Bulamadım.
+
+177
+00:24:21,023 --> 00:24:23,583
+Şöyle yapalım isterseniz.
+
+178
+00:24:24,723 --> 00:24:30,563
+Stack'te top noktası ilk başladığımızda nereyi gösterecek?
+
+179
+00:24:34,932 --> 00:24:36,572
+0 noktasını gösterecek.
+
+180
+00:24:36,972 --> 00:24:42,211
+Tek yapmanız gereken, staba 0 değerini atamak.
+
+181
+00:24:42,652 --> 00:24:46,932
+Böylece stack pointerı initialize etmiş oluyorsunuz.
+
+182
+00:24:47,852 --> 00:24:52,852
+Çünkü ilk siteyi initialize ettiğinizde, stayin içi boş arkadaşlar.
+
+183
+00:24:54,812 --> 00:24:57,332
+Birinci adımı böylece geçmiş olduk.
+
+184
+00:24:58,072 --> 00:24:59,932
+İkinci ve üçüncü adımlar.
+
+185
+00:25:01,395 --> 00:25:06,455
+Steyn boş ya da dolu olduğunun, full olduğunun kontrol edilmesi.
+
+186
+00:25:06,655 --> 00:25:10,615
+Önce boş olup olmadığını kontrol etmek istiyorum.
+
+187
+00:25:12,556 --> 00:25:14,836
+Bunun için ne yapmalıyım?
+
+188
+00:25:18,771 --> 00:25:20,251
+Artık bunu yapabilirsiniz diye düşünüyorum.
+
+189
+00:25:23,923 --> 00:25:25,583
+Farklı bir kişi, [öğrenci].
+
+190
+00:25:26,423 --> 00:25:29,403
+Stop'u sıfır gösterirse boş demektir.
+
+191
+00:25:29,403 --> 00:25:30,643
+Teşekkür ediyorum.
+
+192
+00:25:31,143 --> 00:25:41,983
+Stop sıfır gösterilirse, yani sıfır ise, stack boş demektir.
+
+193
+00:25:43,183 --> 00:25:51,343
+Değilse, zaten stack içerisinde en az bir eleman var anlamına gelecek.
+
+194
+00:25:52,019 --> 00:25:55,720
+Buraya kadar herhalde anlaşılmayan bir şey yoktur diye düşünüyorum.
+
+195
+00:25:56,240 --> 00:26:03,200
+Şimdi gelelim siteyin dolu olma durumunun kontrol edilmesine.
+
+196
+00:26:05,319 --> 00:26:07,019
+Bu noktada...
+
+197
+00:26:10,740 --> 00:26:12,700
+Kim söz almak ister?
+
+198
+00:26:14,299 --> 00:26:15,339
+Farklı bir kişi.
+
+199
+00:26:19,667 --> 00:26:22,547
+Sürekli aynı kişiler el kaldırıyor. Onlara çok teşekkür ediyorum.
+
+200
+00:26:23,287 --> 00:26:31,967
+Ama biliyorsunuz derste slivası açıklama sebebimiz derste birazcık hazırlıklı gelmeniz. [öğrenci].
+
+201
+00:26:33,427 --> 00:26:36,327
+Hocam bu taksiyede maksa eşit olup olmadığını kontrol edeceğiz.
+
+202
+00:26:36,767 --> 00:26:41,787
+Evet, teşekkür ediyorum. Aynen dediğin gibi maksa eşit olup olmadığını kontrol edeceğiz.
+
+203
+00:26:42,548 --> 00:26:47,967
+Eğer max'ı eşitse stack full demektir. Bize bir değerini döndürecektir.
+
+204
+00:26:51,347 --> 00:27:07,807
+Evet. Şimdi bunları hallettiğimize göre geriye hangi işlerimiz kaldı? Üç tane temel işimiz kaldı. Push, pop ve top ya da peak isimli fonksiyonları yazmak. Pars'a bir sorun mu var?
+
+205
+00:27:07,807 --> 00:27:12,248
+Evet hocam. Hocam top, max, max ile eşit mi?
+
+206
+00:27:13,008 --> 00:27:14,048
+Hetsi 1'e mi?
+
+207
+00:27:14,448 --> 00:27:21,627
+Şimdi bu güzel bir soru. Bu implementasyon, benim şu anda size yazdığım implementasyon kesinlikle böyle yapılır demek değil.
+
+208
+00:27:23,412 --> 00:27:47,731
+Top değerini ilk etapta eksi bir olarak atayan, empty durumunu da eksi bir'e eşit diye kontrol eden implementasyonlar da görebilirsiniz. O yüzden burada ayarlamalarınızı buna göre yapabilirsiniz. Bu arada senin soruna gelecek olursak sen şu yüzden soruyorsun. Konu konuyu açtığı için o bilgiyi verdim. Sıfırdan başlatıyoruz.
+
+209
+00:27:48,256 --> 00:28:11,516
+Acaba max-1'i mi kontrol etsek diye. Yani bu da değerlendirilebilecek bir bakış açısı. O yüzden ben bu noktada tamamen sizin stack implementasyonunuzun nasıl oluna bağlı deyip bunu max de olabilir, max-1 de olabilir. Yeter ki siz bunu doğru konfigüre edin ve istediğiniz şekilde implement edin diyorum yüksel.
+
+210
+00:28:11,935 --> 00:28:20,575
+Hocam diziyle yaparsak şimdi anlattığınız şekilde daha mı doğru olur? Siz şu anda pointer ile yaptığınız için herhalde top 0 olması çok bir şey değiştirmiyor herhalde ama
+
+211
+00:28:20,575 --> 00:28:26,275
+belki diziyle yaptığımız zaman dizi incisi 0'dan başladığı için eksi 1'den başlatmak daha mı mantıklı?
+
+212
+00:28:26,275 --> 00:28:34,435
+Şöyle tamamen implementasyon işi çünkü biraz sonra göreceksiniz biz elemanı yerleştirirken
+
+213
+00:28:34,771 --> 00:28:39,152
+Önce elemanı yerleştirip sonra pointer'ı hareket ettireceğiz.
+
+214
+00:28:39,751 --> 00:28:45,451
+Ama diğer implementasyonun eksi bir olan da önce pointer'ı hareket ettirip sonra elemanı yerleştiriyoruz.
+
+215
+00:28:45,551 --> 00:28:46,491
+Tamamen bununla alakalı.
+
+216
+00:28:46,932 --> 00:28:52,672
+İki implementasyon da birbirine göre üstünlüğü olan implementasyonlar değil.
+
+217
+00:28:53,291 --> 00:28:55,551
+Bir konuşalım ondan sonra sorularımıza devam edelim.
+
+218
+00:28:55,551 --> 00:28:57,611
+Şimdi push dedik.
+
+219
+00:28:58,711 --> 00:29:00,432
+int push
+
+220
+00:29:03,188 --> 00:29:11,288
+Pusha ne göndereceğiz? Kaç parametre göndereceğiz? Varsa?
+
+221
+00:29:12,268 --> 00:29:14,708
+Hocam sadece bir tane. Bizim değerimiz.
+
+222
+00:29:15,768 --> 00:29:18,988
+Bir de tabii şeyi göndereceğiz onu unutmayalım. Hep gönderiyoruz. Siteyi göndereceğiz.
+
+223
+00:29:20,367 --> 00:29:27,948
+Stack pointer'ını gönderiyorum ki herhangi bir fonksiyonda bu işi yapıyorsam sadece adresi gitsin diye.
+
+224
+00:29:27,948 --> 00:29:30,948
+Bir eklenecek elemanı.
+
+225
+00:29:30,996 --> 00:29:42,736
+Gönderiyorum. İki siteyin kendi adresini gönderiyorum. Sonraki ilk işlemim ne olacak? [öğrenci]?
+
+226
+00:29:44,696 --> 00:29:48,635
+Dizinin full olup olmadığını kontrol etmemiz gerekiyor.
+
+227
+00:29:48,676 --> 00:29:53,036
+Evet, teşekkür ediyorum. O yüzden hemen yazdığım fonksiyonu çağırıyorum.
+
+228
+00:29:55,096 --> 00:29:57,236
+Buradan gelen değer, değer.
+
+229
+00:30:00,000 --> 00:30:10,779
+Pozitifse yani birse o zaman ben sıfır değeri döndüreceğim çünkü stack dolu demektir. Eğer değilse, else ne yapıyorum? Hemen kim söyler?
+
+230
+00:30:19,476 --> 00:30:20,135
+Evet [öğrenci].
+
+231
+00:30:21,635 --> 00:30:26,336
+Hocam tabı arttıracağız ve o elemanı yerleştireceğiz siteye.
+
+232
+00:30:27,276 --> 00:30:28,236
+Tam tersi.
+
+233
+00:30:28,276 --> 00:30:29,195
+Kod olarak mı söyleyeyim?
+
+234
+00:30:29,435 --> 00:30:30,016
+Yok.
+
+235
+00:30:30,695 --> 00:30:33,216
+Önce elemanı yerleştireceğiz sonra tabı arttıracağız.
+
+236
+00:30:34,155 --> 00:30:36,155
+Çünkü sıfırıncı noktadayız.
+
+237
+00:30:37,096 --> 00:30:39,655
+Şu anda boş sıfıra yerleştireceğiz.
+
+238
+00:30:40,796 --> 00:30:41,016
+Doğru.
+
+239
+00:30:41,155 --> 00:30:43,915
+Benim dediğim boş bırakıp yerleştirmek gibi bir şey oluyor doğru.
+
+240
+00:30:43,915 --> 00:30:46,316
+Senin dediğin eksi bir ile eğer.
+
+241
+00:30:46,720 --> 00:30:51,279
+İlklendirseydik, o zaman senin dediğin gibi yapacaktık.
+
+242
+00:30:52,579 --> 00:31:01,220
+Yaptığım arkasından artı artı as tab yapmak ve return 1 demek.
+
+243
+00:31:04,220 --> 00:31:06,220
+Burada kapatıyorum, burada kapatıyorum.
+
+244
+00:31:06,220 --> 00:31:12,220
+Şu kısım için şöyle de yazabilirim.
+
+245
+00:31:15,604 --> 00:31:23,864
+s tab artı artı deyip x'i buraya atayabilirim.
+
+246
+00:31:24,243 --> 00:31:27,943
+Neden böyle yapıyorum? s item s tab artı artı.
+
+247
+00:31:28,563 --> 00:31:32,604
+Önce s tab'ın gösterdiği yere x'i yerleştiriyor.
+
+248
+00:31:32,743 --> 00:31:34,323
+Sonra da s tab'ın değerini bir arttırıyor.
+
+249
+00:31:34,423 --> 00:31:39,203
+Yani iki ifadeyle yazacağım şeyi tek ifadeyle yazmış oluyorum.
+
+250
+00:31:39,503 --> 00:31:40,624
+Buraya kadar soru soru var mı?
+
+251
+00:31:43,571 --> 00:31:45,291
+Anlaşılmayan bir şey. [öğrenci]?
+
+252
+00:31:46,291 --> 00:31:56,911
+Hocam, şey soracağım ben. Hani biz bu iki ifadeyle yazabiliriz, cemşetlik ifadeyle yazdık. Peki bu bize karmaşıklık anlamında bir şey kaybetiyor mu? Yine iki işlem yapıyoruz. Güzel bir avantajı var mı?
+
+253
+00:31:58,291 --> 00:32:06,511
+Şöyle, güzel soru. Bu noktada bir kod anlamında kısaltma yapıyoruz ama.
+
+254
+00:32:06,900 --> 00:32:17,440
+Karmaşıklık anlamında bu noktada S top'u arttırma işlemi yapılıyor her iki tarafta da.
+
+255
+00:32:18,240 --> 00:32:21,940
+S item'ın gözüne erişme işlemi de yapılıyor.
+
+256
+00:32:22,520 --> 00:32:24,680
+Tek farkı şöyle bir artısı var.
+
+257
+00:32:25,440 --> 00:32:28,020
+S top'un değerine bir kez erişmiş oluyorsunuz.
+
+258
+00:32:29,299 --> 00:32:35,819
+Diğer iki ifade de bir inkrement işlemi yapmak için s tab'ın bulunduğu yere erişmeniz lazım.
+
+259
+00:32:35,999 --> 00:32:39,199
+Diğerinde de s item'ın değerini değiştirmek için.
+
+260
+00:32:39,359 --> 00:32:43,939
+Yani birinde iki defa akses yapıyorsunuz, birinde bir defa akses yapıyorsunuz.
+
+261
+00:32:43,999 --> 00:32:48,979
+O yüzden avantajlı olanı sonradan yazmış olduğumuz ifade.
+
+262
+00:32:49,459 --> 00:32:51,079
+Bu çok büyük bir şey fark ettirir mi?
+
+263
+00:32:51,892 --> 00:33:00,771
+Fark ettirmez ama gömülü sistem ya da kaynaklı olan yerlerde bu tür farklılıklar işe yarayabilir.
+
+264
+00:33:01,951 --> 00:33:02,731
+Teşekkürler hocam.
+
+265
+00:33:03,251 --> 00:33:04,172
+Rica ederim.
+
+266
+00:33:05,652 --> 00:33:06,872
+Şimdi sırada pop var.
+
+267
+00:33:08,491 --> 00:33:10,771
+Bunu da daha civartta yazalım.
+
+268
+00:33:15,092 --> 00:33:32,092
+int, pop. Burada herhangi bir normalde eleman göndermemiz beklenmez. Ama biz aldığımız değeri...
+
+269
+00:33:35,667 --> 00:33:42,187
+Bellekteki başka bir değişkene atamak için bir tane değişkenin adresini gönderiyoruz.
+
+270
+00:33:43,287 --> 00:33:47,767
+İlk yaptığımız iş pop edebilmemiz için stackli eleman olması lazım.
+
+271
+00:33:47,887 --> 00:33:51,247
+O yüzden stack boş mu diye kontrol ediyoruz.
+
+272
+00:33:56,819 --> 00:34:01,639
+Eğer boşsa eleman döndüremeyeceğimiz için return 0 diyoruz.
+
+273
+00:34:02,539 --> 00:34:09,739
+Eğer boş değilse bir tane mutlaka eleman varsa o zaman ne yapacağız? O zaman ben onu sorayım size.
+
+274
+00:34:12,479 --> 00:34:13,039
+[öğrenci].
+
+275
+00:34:14,639 --> 00:34:21,639
+İlk öncelikle bir azaltıp sonradan çekmemiz lazım. Çünkü ilk başta onun üstündekini göstereceği için dinmemiz gerek.
+
+276
+00:34:22,387 --> 00:34:25,987
+Evet, şimdi diyelim ki, stack'e biz bir koymuştuk.
+
+277
+00:34:28,327 --> 00:34:31,967
+Stap'ımız bir yukarısını gösteriyor şu anda.
+
+278
+00:34:32,467 --> 00:34:33,867
+Boş olan noktayı gösteriyor.
+
+279
+00:34:34,487 --> 00:34:38,807
+Ve biz aslında stack içindeki en yukarıdaki elemanı çekmek istiyoruz.
+
+280
+00:34:39,027 --> 00:34:40,347
+O zaman biri çekmemiz lazım.
+
+281
+00:34:40,347 --> 00:34:46,807
+Stap buraya gösterdiğine göre önce stap'ı biraz azaltıyoruz.
+
+282
+00:34:47,987 --> 00:34:49,347
+Ondan sonra...
+
+283
+00:34:51,956 --> 00:34:53,396
+as item
+
+284
+00:34:58,036 --> 00:34:59,235
+and stop.
+
+285
+00:35:01,135 --> 00:35:02,635
+return 1.
+
+286
+00:35:03,235 --> 00:35:04,536
+yapıyoruz.
+
+287
+00:35:07,956 --> 00:35:09,376
+Burada bir kısaltma yapılabilir mi?
+
+288
+00:35:18,420 --> 00:35:24,899
+Evet hocam yapılır. Eksi eksi stappı parantezin içinde koyabilir miyim?
+
+289
+00:35:24,899 --> 00:35:43,720
+Evet doğrudan stappın yazdığı yere koyabiliriz çünkü önce stappı bir azaltacak ondan sonra o değeri kullanıp oradaki ilgili stackteki en yukarıdaki değeri alacak ve x'in adresine atamasını gerçekleştirecek.
+
+290
+00:35:44,947 --> 00:35:49,947
+Bu da sanırım çok karışık değil diye düşünüyorum.
+
+291
+00:35:50,827 --> 00:36:03,447
+Gelelim en son int, peak denilen ama zaman zaman da top fonksiyon olarak da isimlendirilen fonksiyona
+
+292
+00:36:08,436 --> 00:36:18,056
+stack, s, gene bir değer okutayacağımız için ilgili değişkenli adresini gönderiyoruz.
+
+293
+00:36:18,056 --> 00:36:23,115
+Bu noktada bir kontrolümüz var.
+
+294
+00:36:23,115 --> 00:36:26,155
+if is empty
+
+295
+00:36:30,579 --> 00:36:33,219
+En üstteki elemanın değerini almak istiyoruz.
+
+296
+00:36:34,760 --> 00:36:35,380
+Bütün
+
+297
+00:36:35,380 --> 00:36:39,260
+0 dedik.
+
+298
+00:36:39,939 --> 00:36:40,819
+Eğer empty ise
+
+299
+00:36:40,819 --> 00:36:41,420
+else.
+
+300
+00:36:46,260 --> 00:36:46,760
+Burada
+
+301
+00:36:46,760 --> 00:36:50,380
+s top
+
+302
+00:36:50,380 --> 00:36:54,120
+eksi eksi yaptık.
+
+303
+00:36:59,572 --> 00:37:00,572
+x dedik
+
+304
+00:37:00,572 --> 00:37:05,492
+as item
+
+305
+00:37:05,492 --> 00:37:09,032
+as
+
+306
+00:37:12,851 --> 00:37:13,891
+Top dedik.
+
+307
+00:37:20,403 --> 00:37:22,403
+Bitirten bir dedik.
+
+308
+00:37:25,344 --> 00:37:27,243
+Ve bu noktada bitirdik.
+
+309
+00:37:28,283 --> 00:37:33,323
+Burada değiştirmemiz gereken bir şey var mı? Bu doğru mudur?
+
+310
+00:37:35,523 --> 00:37:36,443
+Farklı bir kişi.
+
+311
+00:37:37,724 --> 00:37:39,903
+Hocam ben 3'teki ile ilgili bir şey soracaktım da.
+
+312
+00:37:40,903 --> 00:37:44,203
+Tabii önce bunu bir çözelim. Ondan sonra 3'teki ile ilgili soruyu alırım.
+
+313
+00:37:47,827 --> 00:37:50,768
+Farklı bir kişi, farklı kişi. Olsana sözlerim tekrar.
+
+314
+00:37:52,367 --> 00:37:57,507
+Hocam, burada değeri kaybetmememiz gerektiği için topu bir daha arttırmamız lazım.
+
+315
+00:37:58,467 --> 00:38:02,207
+Evet, şimdi yapılabilecek şeylerden bir tanesi top değerini bir daha arttırmak.
+
+316
+00:38:02,907 --> 00:38:07,068
+Onun alternatifi olarak da bir tane değişken tanımlarsınız.
+
+317
+00:38:07,347 --> 00:38:09,688
+ADR dersiniz, örnek veriyorum.
+
+318
+00:38:11,768 --> 00:38:12,827
+Top değerini...
+
+319
+00:38:13,876 --> 00:38:24,596
+kaybetmemek adına. Bunu bir TMP, TMP Pro'nu alan olarak da görebilirsiniz. Adrese s tab-1 dersiniz.
+
+320
+00:38:28,275 --> 00:38:48,615
+Şu noktaya gelip ADR edersiniz. Böylece STAP'ın gösterdiği yeri kaybetmemiş olursunuz ama en üstteki elemanın değerini de okumuş olursunuz. Bu da TAP fonksiyonunun çalışma şekli.
+
+321
+00:38:49,652 --> 00:38:56,351
+Stack pointer'ın yeri değişmemiş oldu. Evet, [öğrenci] bir sorun vardı, sorun alayım.
+
+322
+00:38:56,731 --> 00:39:01,032
+Yok hocam, anladım şimdi. Bir şeyi anlamamıştım da. Anladım bu örneği.
+
+323
+00:39:01,032 --> 00:39:11,032
+Tamam, sevindim, teşekkürler. Evet, bunlar her yerde göreceğiniz implementasyonları zaman zaman...
+
+324
+00:39:11,827 --> 00:39:31,427
+Söylediğim gibi sıfır yerine eksi bir verilerek önce eleman konulup sonra değer arttırılarak ya da işte burada olduğu gibi önce değer değiştirilip sonra eleman yerleştirilerek çözümü olan standart stack fonksiyonları.
+
+325
+00:39:31,856 --> 00:39:36,376
+Bunlarla ilgili çok önemli bir takılacağımız bir nokta olduğunu zannetmiyorum.
+
+326
+00:39:36,516 --> 00:39:40,376
+O yüzden bir sonraki adıma geçiyorum eğer sorunuz yok ise.
+
+327
+00:39:44,307 --> 00:39:44,988
+[öğrenci].
+
+328
+00:39:46,188 --> 00:39:53,307
+Hocam benim bir sorum vardı da, bu son yazdığımız P fonksiyonundaki amacı anlayamadığından ne yaptığımızı?
+
+329
+00:39:54,868 --> 00:39:58,948
+Bunu geçen hafta da aslında geçen derste de söylemiştik. Bir kez daha tekrar edeyim.
+
+330
+00:39:59,908 --> 00:40:05,368
+Bazen stack'te son elemanın, en üstteki elemanın değerine ihtiyaç duyarsınız.
+
+331
+00:40:05,948 --> 00:40:08,448
+Ama sadece o değeri kullanmak istersiniz.
+
+332
+00:40:08,947 --> 00:40:18,967
+Pop işlemi yaptığınızda üstteki elemanı dışarı çıkarttığınız için bir daha o değeri kullanma şansınız yoktur. Bir alttaki elemana geçmiş olursunuz.
+
+333
+00:40:20,307 --> 00:40:30,007
+Stack'teki elemanı kaybetmeden en üstteki elemanın değerini kullanmak için top ya da peak isimli bir fonksiyon kullanırız.
+
+334
+00:40:30,427 --> 00:40:36,047
+Bu bize sadece stack'in en üstündeki elemanın değerini verir ama stack'in en üstündeki elemanı değiştirmez.
+
+335
+00:40:36,500 --> 00:40:37,500
+Farkı bu.
+
+336
+00:40:38,500 --> 00:40:39,500
+[öğrenci]?
+
+337
+00:40:39,500 --> 00:40:46,500
+Hocam, O big sadece istediğimiz en yüksek değerimizi almak için kullanmıyor muyuz?
+
+338
+00:40:46,500 --> 00:40:54,500
+Niye return 1'e yazdık onu? Niye return x'i demedik? Zaten istediğimiz o değeri kullanmak mı?
+
+339
+00:40:54,500 --> 00:40:59,500
+Şeyi anlayamadım. Neden x yazmıyoruz derken?
+
+340
+00:40:59,500 --> 00:41:02,500
+Yani niye x vektörünü etmedik?
+
+341
+00:41:02,708 --> 00:41:03,427
+Zaten
+
+342
+00:41:03,427 --> 00:41:17,248
+X'i return etmiyoruz. Çünkü burada bütün fonksiyonların farkındaysanız return eden değer o fonksiyonun işini yapıp yapmadığını gösteriyor. Örneğin popta return 0 dönüyorsa pop yapamamış demektir.
+
+343
+00:41:18,132 --> 00:41:41,952
+Bir dönüyorsa pop'u yapabilmiş demektir. Aynı şey top içinde geçerli. Eleman yoksa işini yapamamış demektir. Bu bilgiyi alabilmenin yolunda sıfır ve bir değerlerini döndürmek. Yani tamamen fonksiyonun işini yapıp yapamadığını döndürüyor. O yüzden başka bir değişkenin adresini atama yapıyoruz. Yoksa sen haklısın. Eğer böyle bir kaygımız olmasaydı doğrudan bulduğumuz değeri döndürürdük.
+
+344
+00:41:42,631 --> 00:41:43,551
+Anladım. Teşekkür ederim.
+
+345
+00:41:44,148 --> 00:41:46,068
+[öğrenci], bir şey soracak mısın?
+
+346
+00:41:46,347 --> 00:41:48,748
+Benim bitmemiştir sorum.
+
+347
+00:41:49,128 --> 00:41:49,807
+Evet, dinliyorum.
+
+348
+00:41:49,827 --> 00:41:55,588
+Neden direkt S-item'ın S-tapıncı indeksine gidip bunu X'e kaydetmedik?
+
+349
+00:41:57,367 --> 00:42:06,367
+S-item'ın S-tapıncı indeksine gidip, yani direkt S-tap yazmadık mı?
+
+350
+00:42:06,867 --> 00:42:08,507
+Aynen. Yani neden eksilir?
+
+351
+00:42:08,668 --> 00:42:12,367
+Onu bir kez daha göstereyim. Yukarıda göstermiştim ama tam anlaşılmadı sanırım.
+
+352
+00:42:13,128 --> 00:42:15,688
+Şimdi stack'te iki tane eleman var diyelim.
+
+353
+00:42:17,188 --> 00:42:20,248
+Stack pointer dediğimiz, s tab burayı gösteriyor.
+
+354
+00:42:23,067 --> 00:42:28,427
+Altı göstermiyor. Altı göstermediği için de onu bir aşağıya çekmemiz gerekiyor.
+
+355
+00:42:28,967 --> 00:42:34,007
+Onu bir aşağıya çektiğimiz zaman da o zaman yerini kaybetmiş oluyoruz. O yüzden yeni bir değişken kullanıyoruz.
+
+356
+00:42:34,431 --> 00:42:35,971
+Evet, anladım hocam. Beraber kaçayım?
+
+357
+00:42:36,771 --> 00:42:46,172
+Yani senin söylediğin gibi diğer implementasyonuna yapsaydık o zaman doğrudan stack pointer 2'yi göstereceği için evet o zaman senin söylediğin gibi yapabilirdik.
+
+358
+00:42:47,612 --> 00:42:48,231
+Evet, [öğrenci].
+
+359
+00:42:49,907 --> 00:43:03,087
+Hocam, pop işleminde şöyle bir şey düşündüm ama, şimdi biz popta komple değeri stackten çekmemiz gerekmez mi? Ama biz burada sadece stackteki bir değeri x'e koyuyoruz ve hala o stack değer kaplıyor. Hani bir free yapmamız gerekmez miydi?
+
+360
+00:43:08,980 --> 00:43:12,500
+Nasıl diyelim, statik tanımlanmış bir alanda yer alıyor.
+
+361
+00:43:13,379 --> 00:43:17,359
+Ve işte max olarak 10'luk yer ayırmıştık hatırlarsanız.
+
+362
+00:43:17,879 --> 00:43:20,019
+Şurada max'a 10 yazmıştık.
+
+363
+00:43:20,419 --> 00:43:27,000
+Ama gerçek hayat kullanımlarında genellikle stackte yeni eleman ekledikçe siteyi büyütüyorsunuz.
+
+364
+00:43:27,000 --> 00:43:35,399
+Eleman çıkardıkça siteyi işte real.local.loc kullanarak C tarafında siteyin boyutuyla oynayabiliyorsunuz.
+
+365
+00:43:35,443 --> 00:43:58,204
+Keza bunu linked listeyle de yapabilirsiniz. O zaman senin söylediğin gibi o eleman orada durmaya devam etmeyecek. Sadece estafın yerini değiştirmemiş olacağız. Aynı zamanda o elemanın boşuna yer kaplamasını engelleyecek bellek yönetimini de yapmış olacaktık. Ama burada onu yapmıyoruz. Haklısın. Gerçek hayatta karşılığı var ama.
+
+366
+00:43:58,664 --> 00:43:59,224
+Teşekkür ederim.
+
+367
+00:43:59,536 --> 00:44:10,956
+Ben teşekkür ederim. Önemli bir noktaydı. Evet, gördüğünüz gibi bu tür anlamadığınız ya da değişik aklınıza gelen soruları paylaşmanız her zaman beni mutlu ediyor.
+
+368
+00:44:11,235 --> 00:44:22,235
+Derse katılım anlamında. O yüzden teşekkür ediyorum. Çekinmeden soru sorabilirsiniz. Şimdi ilerliyoruz. Devam ediyoruz. Bir sonraki sayfamıza geçiyoruz.
+
+369
+00:44:25,619 --> 00:44:43,619
+Bugün için şuraya bir başlık atmadık, onu yazalım. Bugün ayın 31'i değil mi? 31.2021. Hala 3. haftadayız.
+
+370
+00:44:46,019 --> 00:44:51,959
+Lab saati diyelim. Yeterli. Evet, şimdi buraya gelelim.
+
+371
+00:44:53,331 --> 00:44:55,971
+Evet, bu sayfamıza da geçelim.
+
+372
+00:44:56,611 --> 00:45:05,171
+Şimdi çok sık kullanılan bir başka derleyici tarafındaki işi çözmeye çalışacağız.
+
+373
+00:45:06,691 --> 00:45:15,811
+Bizim gözle bakıp aritmetik operasyonları yönetmemiz aslında çok zor değil.
+
+374
+00:45:20,692 --> 00:45:29,472
+Öncelik sırasını belirlemesi için bir algoritma geliştirmesi gerekiyor.
+
+375
+00:45:29,472 --> 00:45:45,132
+Örnek vermek gerekirse 3 artı 5 artı pardon çarpı 2 bölü 3 artı 7 yazdığınız zaman
+
+376
+00:45:45,684 --> 00:46:07,184
+Hepsinde parantez kullanmadığınızda işlem önceliği değişiyor. Örneğin önce artıyı yapmaktansa önce çarpıyı yapmanız gerekiyor. Ya da bir başka deyişle A artı B çarpı C yazdığınızda önce A artı B'yi yapmıyoruz. Önce işlem önceliği olan B çarpı C'yi yazıyoruz. Eğer bir parantez kullanmadıysak.
+
+377
+00:46:07,519 --> 00:46:11,519
+Bunu yaptıktan sonra çıkan sonucu A ile topluyoruz.
+
+378
+00:46:11,860 --> 00:46:24,120
+İşte biz bunu uzun bir ifade görsek de kendi bakışımızla olaya ve bilgimizle otomatik olarak beynimiz arka planda bu ayrımı yapıyor ama
+
+379
+00:46:24,120 --> 00:46:28,820
+bilgisayarın bunu yapabilmesi için bir notasyon kullanmaya ihtiyacı var.
+
+380
+00:46:29,300 --> 00:46:31,519
+Üç tane farklı notasyondan bahsediyoruz.
+
+381
+00:46:32,559 --> 00:46:33,860
+Nedir bunlar, bilen var mı?
+
+382
+00:46:34,739 --> 00:46:38,279
+Aritmetik ifadelerin gösterimi için kullandığımız notasyon. [öğrenci]?
+
+383
+00:46:39,259 --> 00:46:43,179
+Prefix ve postfix vardı ama diğerini hatırlamıyorum. Suffix.
+
+384
+00:46:44,459 --> 00:46:46,099
+Suffix de var ama o değil.
+
+385
+00:46:46,119 --> 00:46:46,899
+Infix herhalde.
+
+386
+00:46:47,419 --> 00:46:49,879
+Evet, infix. Üç tane notasyonumuz var.
+
+387
+00:46:51,000 --> 00:47:01,000
+Infix, prefix ve postfix. Bunlar aritmetik ifadelerin
+
+388
+00:47:01,588 --> 00:47:03,068
+Gösterim şekilleri.
+
+389
+00:47:03,148 --> 00:47:04,668
+Çok alakasız değilsin, suffix neydi?
+
+390
+00:47:06,068 --> 00:47:06,868
+Efendim?
+
+391
+00:47:08,088 --> 00:47:09,768
+Çok alakasız değilsin, suffix neydi?
+
+392
+00:47:12,888 --> 00:47:15,028
+Suffix neydi? Güzel sordun.
+
+393
+00:47:16,648 --> 00:47:18,408
+Dilimin ucunda söyleyeceğim.
+
+394
+00:47:25,523 --> 00:47:30,744
+Valla aklımın çok yakınında ama valla hatırlayamadım ya Safix neydi. Bilen varsa söylesin hemen.
+
+395
+00:47:32,164 --> 00:47:36,104
+Yani İngilizce anlamıyla ek ama onun dışında programlamanı.
+
+396
+00:47:36,764 --> 00:47:42,164
+Evet ama bilgisayar bilimlerindeki kullanımını hatırlayamadım şimdi de. Bir bakayım söylerim. Olur mu?
+
+397
+00:47:42,675 --> 00:47:47,975
+Hocam tabii. Ben de yani İngilizce gibi düşündüm de siz şey deyince onu merak ettim neydi diyebilirsiniz.
+
+398
+00:47:48,455 --> 00:47:54,775
+Ya çok yani bazen böyle insanın dinin ucuna gelir ya dinin ucuna ama aklıma gelmedi. Bakıp söylerim.
+
+399
+00:47:55,923 --> 00:47:59,023
+Ama İngilizce karşılığı olarak, evet, ek olarak geçiyor.
+
+400
+00:47:59,063 --> 00:48:05,244
+Hocam, file'ın sonuna karakterleri appendlemek gidiyor ama bir Google search böyle.
+
+401
+00:48:05,704 --> 00:48:09,844
+File'ın sonuna karakterleri appendlemek. Başka bir kullanımı var, o değil.
+
+402
+00:48:09,844 --> 00:48:15,364
+Yani evet, o doğru bir ifade ama bilgisayar bilimlerindeki karşılığını unuttum.
+
+403
+00:48:15,543 --> 00:48:17,423
+Çünkü bir yerde kullanıyoruz bunu.
+
+404
+00:48:18,260 --> 00:48:20,480
+Bir dahaki derse aklıma gelirse size söyleyeyim.
+
+405
+00:48:20,900 --> 00:48:24,300
+Şimdi gelelim infix prefix notasyonuna.
+
+406
+00:48:24,300 --> 00:48:31,420
+Infix aslında çok kullandığımız bizim bildiğimiz bir notasyon.
+
+407
+00:48:32,460 --> 00:48:33,920
+Şöyle yapalım.
+
+408
+00:48:34,579 --> 00:48:35,940
+Infix expression.
+
+409
+00:48:38,840 --> 00:48:40,920
+Prefix expression.
+
+410
+00:48:46,164 --> 00:48:47,404
+ve postfix.
+
+411
+00:48:49,264 --> 00:48:49,884
+Exploration.
+
+412
+00:48:52,464 --> 00:48:56,124
+Şimdi bunları böyle yazdıktan sonra
+
+413
+00:48:56,124 --> 00:48:59,104
+örneğin
+
+414
+00:48:59,104 --> 00:49:00,864
+A artı B
+
+415
+00:49:00,864 --> 00:49:04,324
+A artı B çarpı C
+
+416
+00:49:04,324 --> 00:49:07,444
+Bunun prefix notasyonunda
+
+417
+00:49:07,444 --> 00:49:09,124
+her zaman işlemler
+
+418
+00:49:09,124 --> 00:49:11,664
+operanttan önce geliyor operatörler.
+
+419
+00:49:14,452 --> 00:49:18,392
+Burada da biraz daha farklı şekilde ifade edeceğiz.
+
+420
+00:49:20,252 --> 00:49:24,432
+Önce B ile C çarpıldığı için B ve C'den önce yıldız geliyor.
+
+421
+00:49:25,132 --> 00:49:26,292
+Yani çarpma işareti.
+
+422
+00:49:27,112 --> 00:49:30,452
+Ondan sonra eklenecek toplama A geliyor.
+
+423
+00:49:30,992 --> 00:49:32,452
+Çünkü şuradaki...
+
+424
+00:49:32,820 --> 00:49:35,380
+Çıkan ifadeyi A'ya ekleyeceğiz.
+
+425
+00:49:35,780 --> 00:49:37,620
+Hemen arkasından da toplama işareti geliyor.
+
+426
+00:49:38,360 --> 00:49:43,240
+Postfix tarafına baktığınızda tam tersi bu sefer işlemler sona ekleniyor.
+
+427
+00:49:44,320 --> 00:49:45,720
+AB artı.
+
+428
+00:49:47,880 --> 00:49:51,720
+AB önce çarpı sonra artı.
+
+429
+00:49:53,840 --> 00:49:55,920
+Başka gösterim yapalım.
+
+430
+00:49:55,920 --> 00:49:59,920
+Mesela A artı.
+
+431
+00:50:00,000 --> 00:50:15,200
+B çarpı C artı D. Bunu kim yazdırmak ister? Ortadan da başlayabilirsiniz. Sağına soluna da yazdırabilirsiniz. Önce ilk yapılacak işlem ne olabilir?
+
+432
+00:50:25,684 --> 00:50:26,564
+Evet [öğrenci].
+
+433
+00:50:28,144 --> 00:50:30,044
+Önce hocam artı yazarız.
+
+434
+00:50:30,744 --> 00:50:31,504
+Peki.
+
+435
+00:50:31,984 --> 00:50:34,004
+Daha sonrasında A yazarız.
+
+436
+00:50:35,403 --> 00:50:37,923
+Daha sonrasında çarpı B, C yazarız.
+
+437
+00:50:38,544 --> 00:50:38,864
+Peki.
+
+438
+00:50:41,524 --> 00:50:45,264
+Sonra da artı B yazarız.
+
+439
+00:50:48,504 --> 00:50:49,564
+Doğru mudur?
+
+440
+00:50:53,619 --> 00:50:54,900
+Sanki tam olmadı gibi.
+
+441
+00:50:56,400 --> 00:50:57,079
+Varsa?
+
+442
+00:50:58,159 --> 00:51:00,679
+Son kısmı aynı, doğru değil gibi geldi.
+
+443
+00:51:02,480 --> 00:51:07,420
+Hocam, 2 artı, artı, artı, A çarpı, B, C, D.
+
+444
+00:51:08,099 --> 00:51:09,320
+İstersen şöyle yapalım.
+
+445
+00:51:10,219 --> 00:51:15,000
+Öncelikle ilk yapılacak işlem, B, C. Doğru mu?
+
+446
+00:51:16,219 --> 00:51:16,440
+Evet.
+
+447
+00:51:16,539 --> 00:51:18,519
+Sonra bu B, C'ye neyi ekleyeceğiz?
+
+448
+00:51:20,440 --> 00:51:20,980
+A ile.
+
+449
+00:51:21,556 --> 00:51:26,816
+A ile ekleyeceğiz. O zaman A'yı koydum, artı koydum. Sonra buna neyi ekleyeceğiz?
+
+450
+00:51:27,996 --> 00:51:28,876
+D ile.
+
+451
+00:51:29,296 --> 00:51:31,215
+D, başına da artıyı koydum.
+
+452
+00:51:32,115 --> 00:51:45,516
+Şimdi birbirine eşit seviyede işlem yapıyorsanız artı, eksi ya da çarpma, bölme gibi yani öncelik olmayan, aynı öncelikte olan işlemleri yapıyorsanız o zaman soldan sağa doğru hareket ediyoruz.
+
+453
+00:51:46,096 --> 00:51:52,255
+O yüzden B çarpı C'nin sonucunu önce A ile topluyoruz, oradan çıkan sonucu da D ile topluyoruz.
+
+454
+00:51:52,615 --> 00:51:57,556
+Her zaman eşit önceliğe sahip olan işlemlerde soldan sağa doğru hareket ediyoruz.
+
+455
+00:52:00,115 --> 00:52:01,036
+Kıraşında kimsı var abi?
+
+456
+00:52:09,076 --> 00:52:09,815
+Evet [öğrenci].
+
+457
+00:52:11,215 --> 00:52:13,215
+Hocam ilk önce BC çarpı yazalım.
+
+458
+00:52:13,576 --> 00:52:14,536
+Tamam, çok güzel.
+
+459
+00:52:15,076 --> 00:52:15,416
+Yazalım.
+
+460
+00:52:15,675 --> 00:52:15,916
+Sonra?
+
+461
+00:52:17,916 --> 00:52:19,896
+Sonra sağına artı koyalım.
+
+462
+00:52:20,715 --> 00:52:20,996
+Tamam.
+
+463
+00:52:22,596 --> 00:52:24,695
+Sol tarafa A koyalım, en sola.
+
+464
+00:52:25,255 --> 00:52:25,675
+Evet.
+
+465
+00:52:26,336 --> 00:52:28,635
+Yine en sağa artı ve en sola D.
+
+466
+00:52:30,215 --> 00:52:32,596
+Burada ufak bir değişiklik yapmamız gerekecek.
+
+467
+00:52:38,739 --> 00:52:41,219
+D'yi buraya koyacağım, artıyı buraya koyacağım.
+
+468
+00:52:43,079 --> 00:52:44,059
+Doğru, doğru hocam.
+
+469
+00:52:44,900 --> 00:52:46,840
+Ufak farklılık o diğerinden.
+
+470
+00:52:47,940 --> 00:52:51,659
+Böylece postfix expression'ı da bu şekilde ifade etmiş olduk.
+
+471
+00:52:51,719 --> 00:52:53,019
+Şimdi bu nerede işe yarayacak?
+
+472
+00:52:53,679 --> 00:52:56,980
+Bu dönüşümler, niye prefix var, niye postfix var?
+
+473
+00:52:57,480 --> 00:52:58,579
+Şimdi ondan bahsedeceğiz.
+
+474
+00:52:59,119 --> 00:52:59,739
+Öncelikle...
+
+475
+00:53:03,891 --> 00:53:05,131
+işlem önceliklerini
+
+476
+00:53:08,628 --> 00:53:09,612
+Nezada?
+
+477
+00:53:18,771 --> 00:53:38,831
+Biliyorsunuz parantez en üstte yer alıyor. Hemen arkasından çarpma ve bölme geliyor. Onların altında da artı ve eksi yani toplama ve çıkarma var. Öncelik yukarı doğru artıyor. Bunu bir hatırlatmış oldum. Zaten bildiğiniz bir şey.
+
+478
+00:53:46,195 --> 00:53:54,916
+eksi D bölü E çarpı F notasyonu verelim. Bu notasyon nedir? Infix.
+
+479
+00:54:01,300 --> 00:54:25,800
+Şimdi bu notasyondan postfix'e geçmek istiyoruz. Postfix göreceksiniz prefixe göre daha çok tercih edilen. Değerleyicilerin genelde postfix notasyonuna infix'i dönüştürüp aritmatik ifadeleri hesapladığı bir notasyon, sıklıkla kullandığı. Bu dönüşümü nasıl yapıyoruz?
+
+480
+00:54:27,603 --> 00:54:31,023
+İlk önce biz yapılacak işlem sırasını belirleyelim.
+
+481
+00:54:32,523 --> 00:54:35,224
+Önce B çarpı C yapılacak.
+
+482
+00:54:36,244 --> 00:54:37,603
+Doğru mu? Sonra...
+
+483
+00:54:41,492 --> 00:54:43,272
+Çıkan sonuç A ile toplanacak.
+
+484
+00:54:44,852 --> 00:54:46,316
+Ondan sonra...
+
+485
+00:54:50,260 --> 00:54:51,760
+D böyle E yapılacak.
+
+486
+00:54:55,411 --> 00:55:18,311
+Sonra, fail çarpım yapılacak. En sonunda da iki taraftan gelen sonuç ne yapılmış olacak? Birbirinden çıkartılmış olacak. Bir, iki, üç, dört ve beşinci sırayla bu işlemi yapıyor olacağız.
+
+487
+00:55:18,311 --> 00:55:21,811
+Peki şimdi infix'i postfix'e dönüştürmek istiyorum.
+
+488
+00:55:23,507 --> 00:55:26,007
+infix'i postfix'e nasıl dönüştürebilirim?
+
+489
+00:55:27,228 --> 00:55:28,947
+Tabii ki doğal olarak stack kullanacağım.
+
+490
+00:55:29,768 --> 00:55:30,847
+Stack konusundayız.
+
+491
+00:55:31,728 --> 00:55:33,588
+O yüzden bu örnek üzerinden konuşuyoruz.
+
+492
+00:55:34,507 --> 00:55:38,927
+Push ve pop işlemleriyle bana ne yapmam gerektiğini söyler misiniz?
+
+493
+00:55:42,367 --> 00:55:44,027
+Postfix'e çevirebilmem için.
+
+494
+00:55:45,688 --> 00:55:48,548
+Postfix karşılığını da yazayım ki, belki bakarak.
+
+495
+00:55:54,164 --> 00:55:54,983
+Daha iyi.
+
+496
+00:55:56,483 --> 00:55:58,103
+Gözünüzü de canlandırabilirsiniz.
+
+497
+00:56:01,876 --> 00:56:05,296
+Bu da postfix expression.
+
+498
+00:56:10,900 --> 00:56:12,520
+Evet, söz sizde.
+
+499
+00:56:14,140 --> 00:56:18,720
+Ben pop ve push yeteneklerimi kullanarak nasıl ilerleyebilirim?
+
+500
+00:56:19,680 --> 00:56:20,160
+[öğrenci].
+
+501
+00:56:21,120 --> 00:56:21,860
+Merhaba hocam.
+
+502
+00:56:22,260 --> 00:56:22,600
+Merhaba.
+
+503
+00:56:23,280 --> 00:56:26,620
+Önce en sağdaki eksiği push ediyoruz.
+
+504
+00:56:27,480 --> 00:56:31,200
+Sonra çarpıyı, sonra bölmeyi, sonra artıyı, sonra geri çarpıyı.
+
+505
+00:56:31,220 --> 00:56:33,240
+Ben ama infiksten postfiks'e dönmek istiyorum.
+
+506
+00:56:34,708 --> 00:56:42,367
+Yani yukarıdaki expression'dayım. Elimde sırasıyla A var, artı var, B var, çarpı var, C var, eksi var. Öyle düşün.
+
+507
+00:56:43,008 --> 00:56:44,248
+Yani önce infix'i mi?
+
+508
+00:56:46,887 --> 00:56:54,668
+Ben infix'i postfix'e çevirirken stay kullanmak istiyorum. Elimde de şuradaki şu ifade var.
+
+509
+00:56:59,731 --> 00:57:05,211
+Tamam hocam. O zaman en son yapılacak işlemi ilk başta push ediyoruz. Yine eksi oluyor.
+
+510
+00:57:06,011 --> 00:57:07,451
+Hayır. Maalesef öyle değil.
+
+511
+00:57:11,956 --> 00:57:14,956
+O zaman iç döngünün içindekini...
+
+512
+00:57:14,956 --> 00:57:20,356
+Çünkü ben daha eksiğe gelmedim. Ben sırayla gitmem lazım. Önce artıyı göreceğim. Öyle düşünebilirsin.
+
+513
+00:57:20,376 --> 00:57:28,376
+O 2. işlemi, yani çarpıyı koymamız gerekiyor. Pardon, artıyı koymamız gerekiyor. Yani infix'de o zaman dümdüz bir sırayla gideceğiz. Artıyı koyacağız.
+
+514
+00:57:29,016 --> 00:57:39,516
+İşte şimdi nerede push yapacağız, nerede pop yapacağız? Biz onu bulmaya çalışıyoruz. Önce bir push yapacağımız kesin. Ben sizin adınıza başlayayım. Şuraya bir önce artıyı push edeyim.
+
+515
+00:57:41,844 --> 00:57:46,324
+Tamam. Sonra çarpıyı da push edeyim.
+
+516
+00:57:49,972 --> 00:57:52,952
+Bu noktada sözü size bırakayım.
+
+517
+00:57:57,331 --> 00:58:01,731
+Sırada ne var? Eksi var. Eksi de ne yapacağım?
+
+518
+00:58:04,331 --> 00:58:08,711
+Yani tahbir, sadece fikir yürüteceksiniz. Yanlış bir şey de olabilir. Önemli değil. [öğrenci].
+
+519
+00:58:09,351 --> 00:58:14,151
+Hocam burada işlem önceliğinden dolayı çarpını sağına koyamıyorduk. Eksi'yi öyle hatırlıyorum.
+
+520
+00:58:15,111 --> 00:58:17,231
+Tekrar çıkartmamız lazım sanırım. Eksi'yi.
+
+521
+00:58:17,231 --> 00:58:18,071
+Çok güzel.
+
+522
+00:58:19,539 --> 00:58:21,860
+Harflerin yanına atıyorduk diye hatırlıyorum değerler.
+
+523
+00:58:22,000 --> 00:58:42,059
+Yani bizim yeni gelen operatörümüzün önceliği, şu andaki en son stackte yer alan operatörün önceliğinden daha düşük olduğu için, sırada eksi var, eksi çarpıdan daha düşük olduğu için, biz pop işlemi yapıyoruz.
+
+524
+00:58:43,639 --> 00:58:45,039
+Push, push.
+
+525
+00:58:46,164 --> 00:59:05,404
+pop diyoruz. Pop yaptığımız zaman elimizde artı kaldı. Peki, artı ve eksi için ne yapacağız? Artıyı çıkartacak mıyız? Yoksa eksiyi üzerine koyacak mıyız?
+
+526
+00:59:09,940 --> 00:59:11,940
+Gene fikir yurtmanızı bekliyorum.
+
+527
+00:59:13,259 --> 00:59:14,299
+Evet [öğrenci].
+
+528
+00:59:14,940 --> 00:59:19,940
+Yani öncelik olmadığı için bence koyabiliriz birbirine göre üstün değil birisi.
+
+529
+00:59:19,940 --> 00:59:28,940
+Hangisi önce peki yapılması gerekiyor baktığında şimdi ya da hangisi sonra yapılması gerekiyor? Şöyle bir hızlıca baktığında işlem sırasında.
+
+530
+00:59:28,940 --> 00:59:31,940
+Pardon. Artı herhalde.
+
+531
+00:59:33,380 --> 00:59:35,940
+Önce artı yapılması gerekiyor, doğru mu?
+
+532
+00:59:36,851 --> 00:59:38,632
+Sonra da eksi yapılması gerekiyor.
+
+533
+00:59:39,791 --> 00:59:40,311
+Bence.
+
+534
+00:59:41,551 --> 00:59:44,391
+Tamam. Eksi üzerine koyarsan böyle bir ihtimal kalıyor mu?
+
+535
+00:59:44,632 --> 00:59:48,592
+Haa. Tersten düşünmemiz gerekiyor. Evet. Kalmıyor.
+
+536
+00:59:49,011 --> 00:59:59,851
+Kalmıyor. O zaman demek ki biraz önce söylediğim kurala ek olarak sadece önceliği yüksek olanlar değil, pop sırasında önceliği...
+
+537
+01:00:00,000 --> 01:00:25,920
+Önceliği eşit olanlarda gördüysek pop işlemine devam ediyoruz. Eksiyle artının önceliği eşit olduğu için pop işlemi sırasında, push işlemi sırasında değil, pop işlemi sırasında pardon, artıyı çıkartıyoruz. Geriye stack de ne kaldı? Hiçbir şey kalmadı. Bu arada yazarken hangi sırayla gittim?
+
+538
+01:00:26,675 --> 01:00:53,635
+Onunla dikkatinizi çekmek istiyorum. Önce A'ya aldım, yazdım. Sonra artıyı push ettim. Sonra B'ye aldım, yazdım. Sonra çarpıyı push ettim. Sonra C'yi aldım, yazdım. Şu anda altta ilerliyorum. Sonra ne yaptım? Yıldızı pop ettim. Yıldızı yazdım. Artıyı pop ettim. Artıyı yazdım. Beşinci adımda artıyı yazmış oldum.
+
+539
+01:00:53,972 --> 01:00:58,472
+Bundan sonra elimde eksi var. Stag'te hiçbir şey yok. Ne yapacağım?
+
+540
+01:01:05,940 --> 01:01:08,140
+Evet, başka bir arkadaşım [öğrenci].
+
+541
+01:01:08,920 --> 01:01:12,560
+Hocam, bunları çıkarttıktan sonra şimdi eksi isteğin içine alabiliriz.
+
+542
+01:01:12,580 --> 01:01:14,740
+Eksi isteğin içine aldım. Sırada ne var?
+
+543
+01:01:15,880 --> 01:01:16,560
+Devam edeyim mi?
+
+544
+01:01:17,060 --> 01:01:17,580
+Tabii, lütfen.
+
+545
+01:01:18,800 --> 01:01:21,280
+Daha sonra çarpma geliyor. Çarpma...
+
+546
+01:01:21,280 --> 01:01:22,980
+Yok, çarpma gelmiyor. Bölme var önce.
+
+547
+01:01:23,220 --> 01:01:29,440
+Pardon, bölme. Bölme de eksi işleminden yüksek seviyede olduğu için koyabiliriz.
+
+548
+01:01:30,280 --> 01:01:33,120
+Bölme işlemi. Evet, koydu. Çok güzel.
+
+549
+01:01:34,708 --> 01:01:36,288
+Sonra çarpma geldi.
+
+550
+01:01:38,847 --> 01:01:41,708
+Çarpma, çarpma da eşitlik var mıydı hatırlamıyorum.
+
+551
+01:01:41,907 --> 01:01:46,548
+D'yi, E'yi buraya 6. ve 7. adım olarak yazıyorum.
+
+552
+01:01:48,968 --> 01:01:53,048
+Çarpma işareti geldiği zaman stack tab push mu yapacağım, pop mu yapacağım?
+
+553
+01:01:56,048 --> 01:01:56,688
+[öğrenci]?
+
+554
+01:01:57,396 --> 01:02:04,236
+Hocam, push edeceğiz. Çünkü ilk önce E ile F'yi çarpıp ondan sonra D'ye bölüyoruz.
+
+555
+01:02:04,256 --> 01:02:05,296
+Maalesef yanlış cevap.
+
+556
+01:02:05,776 --> 01:02:06,176
+Öyle mi?
+
+557
+01:02:06,536 --> 01:02:06,916
+[öğrenci]?
+
+558
+01:02:08,340 --> 01:02:14,880
+Hocam pop etmemiz lazım çünkü soldaki işlem, yani aynı işlem sırasındaysa soldaki daha önce yapılmalı.
+
+559
+01:02:14,920 --> 01:02:31,300
+Evet, teşekkür ediyorum. Aynı işlem sır önceliğindeyse, o yüzden soldaki önce yapılacağı için ne demiştik? Pop sırasında öncelik aynıysa, o zaman yıldız, yani çarpma işareti geldiğinde bölmeyle aynı önceliğe sahip olduğu için bunu pop ediyor olacağız.
+
+560
+01:02:32,300 --> 01:02:33,560
+Buraya pop diyelim.
+
+561
+01:02:34,260 --> 01:02:48,300
+Pop diyelim. Pop ettik. Pop ettiğimiz için geldik sekizinci adımda buraya yazdık. Sonra elimizde ne var? Artık eksi var ve çarpı var. Çarpının önceliği eksiden fazla olduğu için push ettik.
+
+562
+01:02:53,139 --> 01:03:08,239
+Ve artık elimizde F vardı onu buraya yazdık dokuzuncu olarak. Başka herhangi bir şey kalmadı sonuna geldik ifadenin. O yüzden sonuna geldiğimiz için sırasıyla elimizde kalan, stackte kalanların hepsini pop edeceğiz.
+
+563
+01:03:10,579 --> 01:03:18,159
+Önce yıldızı çarpma işaretini pop ettik. Eksi kaldı. Son olarak da eksiyi pop ettik.
+
+564
+01:03:19,347 --> 01:03:22,928
+11. ifade olarak da eksiği almış olduk.
+
+565
+01:03:22,928 --> 01:03:40,548
+Yani stack'te push ve pop işlemlerini kullanarak ve öncelik sırası bilgilerini bir kurala dönüştürerek aslında biz infiksi, postfiksi'e çeviren programı şu anda oral presentation dediğimiz yaklaşımda yani sözel olarak
+
+566
+01:03:41,492 --> 01:03:47,532
+İfade etmiş olduk. Bundan sonrası sadece akış diagramı çizmek ya da kodunu yazmak.
+
+567
+01:03:48,692 --> 01:03:55,572
+Peki, POSFIX'e dönüştükten sonra ne yapacağız sorusu belki akla gelecek.
+
+568
+01:04:00,563 --> 01:04:13,923
+Elimizde işte A için 7, B için 2, C için 4, D için 6, E için 3 ve F için 5 olsun.
+
+569
+01:04:15,403 --> 01:04:23,503
+Hatırlarsanız A, B, C çarpı artı D, E bölü çarpı eksiydi.
+
+570
+01:04:24,183 --> 01:04:25,123
+Bunların yerine
+
+571
+01:04:25,748 --> 01:04:50,508
+elemanları yerleştiriyorum. 7, 2, 4 çarpı artı 6, 3 bölü. Bu noktada sanırım bir şeyi unuttuk. Bakalım. D, E bölüden sonra şurada ufak bir düzeltme yapacağım. Şu noktada F olacak. Ondan sonra çarpı eksi olacak.
+
+572
+01:04:51,123 --> 01:05:18,043
+F'yi buraya koydum. Sonra çarpı, eksi dedim. Elimde bu postfix var. Şimdi biraz önceki grupta operatörler için stack kullanmıştım. Şimdi işlemi sonuca ulaştırabilmem için derleyici adına, çok özür düzeltelim, operant stack kullanacağım.
+
+573
+01:05:18,835 --> 01:05:25,056
+Operant stay ne demek? Yani sayılarla işimi halletmem gerekiyor. [öğrenci] bir sorun mu var?
+
+574
+01:05:26,335 --> 01:05:28,615
+Yok hocam, nasıl olacağını söyledim.
+
+575
+01:05:29,355 --> 01:05:40,135
+Pardon, özür dilerim, anladım. Şimdi ben sorayım, başka bir arkadaş cevap vermeye çalışsın. Elimizde 724 yıldız artı POSFIX'de yazılmış notasyon var.
+
+576
+01:05:43,284 --> 01:05:49,824
+Yine stack kullanıyoruz, yine push ve pop kullanıyoruz. Ne yaparsınız bu sefer?
+
+577
+01:05:56,724 --> 01:06:00,804
+Neyi push edeceğiz arkadaşlar? Şu an sayılarla iş yapıyoruz.
+
+578
+01:06:03,084 --> 01:06:08,624
+Expression'la yani operatörlerle değil. O zaman sayıları push ya da pop etmem lazım.
+
+579
+01:06:09,104 --> 01:06:10,664
+Stack şu anda empty. Ne yapacağım?
+
+580
+01:06:14,996 --> 01:06:16,816
+Evet, farklı bir kişi.
+
+581
+01:06:30,739 --> 01:06:32,000
+[öğrenci].
+
+582
+01:06:38,643 --> 01:06:39,883
+[öğrenci].
+
+583
+01:06:42,463 --> 01:06:44,323
+Evet, derste yok.
+
+584
+01:06:45,723 --> 01:06:46,363
+[öğrenci].
+
+585
+01:06:50,547 --> 01:06:51,787
+[öğrenci]
+
+586
+01:06:51,787 --> 01:06:55,827
+Derste yok
+
+587
+01:06:55,827 --> 01:07:00,027
+[öğrenci] Özbey
+
+588
+01:07:00,027 --> 01:07:03,567
+Sesim geliyor mu hocam?
+
+589
+01:07:03,827 --> 01:07:04,187
+Geliyor.
+
+590
+01:07:05,027 --> 01:07:07,427
+Önce 7'yi atarız siteye.
+
+591
+01:07:07,987 --> 01:07:08,427
+Attım.
+
+592
+01:07:09,387 --> 01:07:11,047
+Sonra 2'yi ve 4'ü.
+
+593
+01:07:12,167 --> 01:07:15,487
+2'yi ve 4'ü attım. Şu anda bir karar aşamasına geldim.
+
+594
+01:07:16,755 --> 01:07:21,815
+Şimdi çarp geldiği için 4 ve 2'yi çıkarırız.
+
+595
+01:07:22,396 --> 01:07:32,835
+Tamam. Şu anda bir işlem geldi. Bir işlem geldiği için işlem için iki tane operanta ihtiyaç duyuyorum.
+
+596
+01:07:32,835 --> 01:07:39,835
+Bunun için önce 4'ü sonra da 2'yi çıkartıyorum. Ve bunun...
+
+597
+01:07:40,532 --> 01:07:46,472
+Çarpım operatörüyle işlem yapması gerektiğini biliyorum. Çünkü sırada çarpım var. 8 değerini elde ettim.
+
+598
+01:07:48,572 --> 01:07:52,552
+İkinci adıma geldim. 7 var şu anda stackte. Ne yapacağım?
+
+599
+01:07:53,472 --> 01:07:55,791
+8'i tekrar siteye koymamız lazım.
+
+600
+01:07:56,692 --> 01:08:01,072
+Evet, teşekkür ediyorum. Bunları pop etmiştim.
+
+601
+01:08:04,271 --> 01:08:07,992
+Önce de push işlemini gerçekleştirmiştim.
+
+602
+01:08:15,027 --> 01:08:19,387
+8'i yerleştirdikten sonra yapacağım şey nedir? Tekrar sorayım.
+
+603
+01:08:19,907 --> 01:08:24,728
+Şimdi artı geldiği için tekrar 7 ve 8'i çıkarıp toplamamız lazım.
+
+604
+01:08:25,307 --> 01:08:32,487
+Evet, artı geldiği için 7 ve 8'i toplamamız lazım. Teşekkür ediyorum [öğrenci].
+
+605
+01:08:34,268 --> 01:08:35,847
+Devam etmeyeyim mi?
+
+606
+01:08:35,847 --> 01:08:38,731
+Yok, etme. Yani ben hani...
+
+607
+01:08:38,836 --> 01:09:05,095
+Sadece sizlerin katılmasını istediğim için bu şekilde sorular soruyorum. Şimdi ben devam edeceğim kaldığım yerden. Senin kaldığın yerden. Şimdi bu 15 değerini doğal olarak elde ettiğim için siteye tekrar bastım. Şimdi nerede kalmıştım? Artıda kalmıştım. Artıdan sonra sırada ne var? 6 değeri var. Sayı gördüğüm için push ettim. 3 değeri var. Sayı gördüğüm için.
+
+608
+01:09:05,971 --> 01:09:06,752
+Puş ettim.
+
+609
+01:09:07,832 --> 01:09:10,811
+Şimdi, buradaki kritik nokta şu.
+
+610
+01:09:11,391 --> 01:09:19,572
+İşlem yapacak iki sayının önce hangisinin yazılacağı, sonra hangisinin yazılacağında bir kurala göre olması gerekiyor.
+
+611
+01:09:20,271 --> 01:09:24,912
+Burada önce üçü yazıp bölme işaretini yaparsam üç bölü altı olur.
+
+612
+01:09:25,252 --> 01:09:26,131
+Doğru olan bu değil.
+
+613
+01:09:27,912 --> 01:09:30,832
+Bunun yerine üçü ikinci sıraya yazıyorum, ilk çıkardığımı.
+
+614
+01:09:31,796 --> 01:09:35,836
+Sırasıyla olması gerektiği için de ikinci çıkardığımı en başa yazıyorum.
+
+615
+01:09:37,676 --> 01:09:38,716
+Bölme işaretim var.
+
+616
+01:09:40,036 --> 01:09:42,396
+Bölme işaretini gerçekleştiriyorum.
+
+617
+01:09:42,596 --> 01:09:43,216
+2 geldi.
+
+618
+01:09:44,336 --> 01:09:45,316
+6 bölü 3'ten.
+
+619
+01:09:45,996 --> 01:09:49,096
+15'in üzerine 2'yi ekledim.
+
+620
+01:09:50,396 --> 01:09:52,435
+Şimdi bölme işini de tamamladım.
+
+621
+01:09:52,976 --> 01:09:53,916
+Sırada 5 var.
+
+622
+01:09:54,716 --> 01:09:57,416
+5'i buraya push ettim.
+
+623
+01:09:59,412 --> 01:10:24,272
+Bu arada bu üçüncü yaptığım iş 6 bölü 3'ten 2 değeri. Bu 2 değerini de buraya yazmış oldum. 5'i yazdım ve son olarak elimde ne var? Çarpma işareti var. En son gelecek işlemden önce. 2 ile 5'i dışarı çektim. Burada 15 kaldı.
+
+624
+01:10:25,684 --> 01:10:31,484
+Dördüncü iş olarak 2 çarpı 5'i gerçekleştirdim, 10.
+
+625
+01:10:33,004 --> 01:10:37,084
+15'in üzerine 10'u push ettim.
+
+626
+01:10:38,644 --> 01:10:40,703
+Son olarak elimde eksi var.
+
+627
+01:10:42,344 --> 01:10:44,484
+Son işim, beşinci işim.
+
+628
+01:10:46,203 --> 01:10:49,764
+15'i başa yazıyorum, ikinci çektiğim 10'u.
+
+629
+01:10:50,804 --> 01:10:56,123
+İkinci sıraya yazıyorum ve sonunda 5 değerini elde ediyorum.
+
+630
+01:10:57,324 --> 01:11:00,003
+Stack de boşalmış oluyor.
+
+631
+01:11:01,463 --> 01:11:11,764
+Gördüğünüz gibi postfix'e dönüştürdüğüm ifadeyi push ve pop kullanarak sıra silerek kamlıyordukça push ediyorum.
+
+632
+01:11:14,323 --> 01:11:20,723
+O işlem için iki tane rakamı stackten alıyorum, işlemi yapıyorum, sonucunu tekrar siteye basıyorum.
+
+633
+01:11:22,923 --> 01:11:33,743
+Ve stackten çektiğim ilk eleman ikinci işleme girecek eleman, ikinci çektiğim eleman da ilk işleme girecek eleman olarak kuralımı koymuş oluyorum.
+
+634
+01:11:35,884 --> 01:11:37,843
+Buraya kadar sorusu olan var mı?
+
+635
+01:11:43,252 --> 01:12:09,872
+Peki, şimdi saat 13.12 oldu, 07 gibi başladık, 1 saat 5 dakikada toparladık. Biraz karışık bir konu ama konu bitmedi. Size önümüzdeki pazartesi günü bu işin aslında compiler tarafından böyle iki tane ayrı şekilde yapılmadığını, tek bir operasyonda gerçekleştirildiğini gösteren bir örnek daha çözeceğim.
+
+636
+01:12:10,323 --> 01:12:24,283
+Anlamadığınız nokta olursa yeniden konuşuruz. Bu notasyonları öğrenmeniz önemli. Bu notasyonlar konusunda bilgi sahibi olmanız önemli. Aslında birkaç kez tekrar ederseniz oturacaktır. [öğrenci] bir sorun var sanırım.
+
+637
+01:12:25,043 --> 01:12:27,103
+Hocam bir önceki sayfaya dönme şansınız var mı?
+
+638
+01:12:27,663 --> 01:12:28,304
+Evet.
+
+639
+01:12:28,963 --> 01:12:34,187
+Burada PostFix Expression yazıyor ya aşağıda. Onun altında siz sanırım bir şeyler yazdınız ama ben...
+
+640
+01:12:34,515 --> 01:12:36,636
+Bilmiyorum sanırım bizim ekranında gözükmedi.
+
+641
+01:12:37,275 --> 01:12:43,855
+Altta bir altla bir tuşa basıyordunuz. Alt enter mıydı? O zaman gözüküyordu yanlış bilmiyorsam.
+
+642
+01:12:45,235 --> 01:12:53,876
+Burada postfix'in expression'ın sağ altında eksi ve yıldız ifadesini kullanıp push ve pop işlemlerini gösterdim.
+
+643
+01:12:53,975 --> 01:12:57,275
+Yıldız'ı yaptıktan sonra da eksi kaldı bir tek. Onun da pop işlemini gösterdim.
+
+644
+01:12:57,971 --> 01:12:59,531
+Anladım hocam, teşekkür ederim.
+
+645
+01:12:59,711 --> 01:13:02,971
+Öbür taraf gözüküyor mu? ABC, yıldız, artı kısmı?
+
+646
+01:13:03,531 --> 01:13:04,832
+Gözüküyor. Teşekkür ederim.
+
+647
+01:13:04,832 --> 01:13:06,152
+Rica ederim.
+
+648
+01:13:07,051 --> 01:13:15,031
+Şimdi söylediğim gibi bu notasyonları birkaç kez tekrar ederseniz daha net oturacaktır.
+
+649
+01:13:15,811 --> 01:13:18,811
+Eksik olan ne var yaptığımız işte, dikkate almadığımız?
+
+650
+01:13:21,587 --> 01:13:28,567
+Şu anda yaptığımız örnekte bir şeyi dikkate almadık. Onu algoritmamızın içinde şu anda implemente etmedik.
+
+651
+01:13:29,407 --> 01:13:31,507
+Hocam, operator stay?
+
+652
+01:13:33,987 --> 01:13:42,807
+Operator stay'i aslında iki aşamada yaptığımız için ilk aşamada operator'ı halletmiş olduk. Operator stay'ine ayrıca ihtiyacımız yok burada.
+
+653
+01:13:44,243 --> 01:13:48,743
+Peki o zaman empty, any error handling falan yapmadık.
+
+654
+01:13:48,903 --> 01:13:50,843
+Değil, değil. [öğrenci]'ya söz vereyim.
+
+655
+01:13:51,943 --> 01:13:54,083
+Ben de overflow durumlarını diyecektim ama okey.
+
+656
+01:13:54,183 --> 01:13:57,343
+Değil. Daha basit bir şey söyleyeceğim. Parantez yok bu yaptığımız örnekten.
+
+657
+01:13:58,564 --> 01:14:00,107
+Parantez case'ini...
+
+658
+01:14:00,115 --> 01:14:12,595
+Yani bir önceki örneğe de dönecek olursak, iç parantez kullanmanız için aç ve kapa parantezlerin nasıl değerlendirilmesi gerektiğini, algoritmik olarak handle edilmesi gerektiğini hiç konuşmadık.
+
+659
+01:14:13,496 --> 01:14:16,576
+Şu anda parantezsiz bir şekilde gayet güzel çalışıyor sistem.
+
+660
+01:14:17,140 --> 01:14:25,260
+infiks, postfiks dönüşümü. Ama parantezler olduğu zaman da ufak bir düzenleme yapmak gerekecek. İsterseniz pazartesiye kadar buna bakabilirsiniz.
+
+661
+01:14:26,340 --> 01:14:35,960
+Derslere biraz daha hazırlıklı gelirseniz, konuyu bir 15 dakika okuyup gelirseniz çok daha sizin için faydalı olur.
+
+662
+01:14:36,960 --> 01:14:41,980
+Tavsiye vakti olanlara tabii ki bir zorunluluk değil.
+
+663
+01:14:42,452 --> 01:14:44,832
+Çok daha verimli bir ders geçireceğimizi düşünüyorum.
+
+664
+01:14:45,471 --> 01:14:48,912
+Bugün vakit ayırdığınız, dinlediğiniz için teşekkür ediyorum.
+
+665
+01:14:49,112 --> 01:14:51,092
+Tüm katkı verenlere ayrıca teşekkür ediyorum.
+
+666
+01:14:51,851 --> 01:14:53,432
+Hepinize güzel bir hafta diliyorum.
+
+667
+01:14:53,752 --> 01:14:54,371
+Kendinize iyi bakın.
+
+668
+01:14:54,532 --> 01:14:55,492
+Sağlıklı günler arkadaşlar.
+
+669
+01:14:56,012 --> 01:14:56,692
+Siz de hocam.
+
+670
+01:14:56,832 --> 01:14:57,051
+İyi günler.
+
+671
+01:14:57,051 --> 01:14:57,631
+Görüşmek üzere.
+
+672
+01:14:58,211 --> 01:14:58,992
+İyi günler hocam.

@@ -1,0 +1,651 @@
+1
+00:05:09,459 --> 00:05:36,539
+Evet arkadaşlar, hoş geldiniz. Bugün ödevinizle ilgili konuşacağım. Önümüzdeki haftaki sınavla ilgili de sorularınız varsa onları yanıtlayacağım. Şimdi ödevle ilgili bilgilendirmeyi yapayım önce. Bu haftaki ödevinizi sizden gelen talep doğrultusunda da yaptığımız görüşme sonucunda bugün saat 1 itibariyle başlatıp
+
+2
+00:05:36,692 --> 00:05:50,831
+Yarın akşam gece yarısı 12'ye kadar süre vermeye karar verdik. O yüzden iki saate sıkışmadan normalde rahatlıkla kısa bir sürede yapabileceğiniz bir ödev.
+
+3
+00:05:54,228 --> 00:06:17,228
+Bu gelen hattı talebiniz üzerine böyle bir size katkıda bulunmak istedik. O yüzden ödeviniz saat 1 itibariyle indirilebilir olacak ve yarın akşam 12'ye kadar teslimi yapabiliyor olacaksınız. Teslim için son dakikalara kalmayın sıkıntı yaşamamak adına. Zaten ödevle ilgili herhangi bir...
+
+4
+00:06:18,420 --> 00:06:24,920
+Şöyle diyelim, bir sorun yaşayacağınızı zannetmiyorum. Gelelim ödevle ilgili açıklama kısmına. Hemen ekranımı paylaşayım.
+
+5
+00:06:34,067 --> 00:06:43,967
+Sanırım görebiliyorsunuzdur ekranımı. Geçtiğimiz gün kaldığımız noktadan itibaren şöyle yapalım.
+
+6
+00:06:44,647 --> 00:06:52,168
+Şimdi bir tane ödevde işletim sistemindeki directory yapısı oluşturmanız bekleniyor sizden.
+
+7
+00:06:52,887 --> 00:07:01,087
+Örneğin biliyorsunuz en üst noktada root var. Bunun altında diyelim ki home olabilir, işte USR olabilir.
+
+8
+00:07:02,420 --> 00:07:11,379
+1000 olabilir. Gene bunun altında X kullanıcısı, Y kullanıcısı, Z kullanıcısı olabilir.
+
+9
+00:07:11,872 --> 00:07:31,052
+Sizden bu yapıyı yazacağınız program ile oluşturmanız ve bu yapı arasında gezinerek direktörler arasında geçiş yapmanız, yeni direktör yaratabilmeniz, eski direktör yaratabilmeniz, bir direktörde kaç tane...
+
+10
+00:07:31,220 --> 00:07:38,520
+Altında directory var. Bunu hesaplamanız, o directory'nin altındaki directoryleri listelemeniz bekleniyor.
+
+11
+00:07:38,520 --> 00:07:49,460
+Temelde mkdir directory yaratan komut, change directory chdir, remove directory.
+
+12
+00:07:53,875 --> 00:07:56,995
+ve count.
+
+13
+00:07:57,684 --> 00:08:19,803
+Komutları program içerisinde implemente ediyor olacaksınız. Bu şu demek, bunların hiçbir işletim sistemi seviyesinde kullanmanız gereken komutlar değil. Siz bu komutlarla işlem yapmak istediğinizde kendi kodunuzun içerisinde bu komutların ilgili directory yaratması, silmesi ya da directory altındaki directoryleri göstermesi bekleniyor.
+
+14
+00:08:25,684 --> 00:08:49,963
+Ağaç veri yapısını kullanarak bu ödevi implemente edeceksiniz. Bu ağaç yapısına temelde emery tree adı veriliyor ve bildiğiniz trilerdeki birden fazla yani daha doğrusu ikiden fazla çocuk sahibi olabilecek ağaçları aslında temsil ediyor.
+
+15
+00:08:52,019 --> 00:09:04,019
+Ağacın en üstünde kök var. Bunun altında birden fazla node olabilir. İkiden fazla. Bunun altında daha da fazla node olabilir.
+
+16
+00:09:06,700 --> 00:09:12,740
+İşte bu ağaç yapısı aslında sizin directory yapınızı oluşturmak için kullanacağınız ağaç yapısı.
+
+17
+00:09:13,971 --> 00:09:34,372
+Şunu çekeyim, evet, mouse'u. Bu noktada tabii structure yapısı kullanmanız sizden beklenecek. Bu structure yapısında da aslında bir linked liste mantığını gözeterek bu bahsettiğimiz directory yapısını gerçekleştirebilirsiniz.
+
+18
+00:09:34,872 --> 00:09:40,031
+Örnek vermek gerekirse işte A olsun, B olsun, C olsun, D.
+
+19
+00:09:41,107 --> 00:09:44,788
+E, F, G, H, Ö olsun.
+
+20
+00:09:46,048 --> 00:09:51,807
+Burada bir linked listiniz olduğunu düşünün.
+
+21
+00:09:51,807 --> 00:09:56,268
+Bu linked liste kendisi altında aslında 3 tane.
+
+22
+00:10:00,179 --> 00:10:02,399
+node'a refer ediyor.
+
+23
+00:10:04,179 --> 00:10:07,539
+Şimdi, bunun altına indiğiniz zaman,
+
+24
+00:10:11,956 --> 00:10:20,395
+Yine birden fazla çocuğu olan bir düğümün yapısını implemente etmeniz gerekiyor.
+
+25
+00:10:20,776 --> 00:10:22,516
+Buradaki kritik nokta nedir?
+
+26
+00:10:22,875 --> 00:10:32,436
+Yani siz en üstteki root'u alttakilere tek tek mi bağlayacaksınız yoksa başka bir yöntem mi gözetmek gerekir acaba?
+
+27
+00:10:33,076 --> 00:10:38,615
+Bu konuda kim yorum yapmak ister, fikir yürütmek ister?
+
+28
+00:10:50,004 --> 00:10:50,744
+Evet [öğrenci].
+
+29
+00:10:52,244 --> 00:11:03,104
+Hocam, nodların çocuklarının sayısı farklı olabileceğinden bence pointer array'i şey yapsak mantıklı olur diye düşündüm.
+
+30
+00:11:03,104 --> 00:11:13,783
+Şimdi bir kere sizin üreteceğiniz structure yapısında bir first child.
+
+31
+00:11:17,011 --> 00:11:39,151
+olması gerekiyor. Bir de bu ilk çocuğun yanında onun kardeşleri olması gerekiyor. O zaman şu kısmı bir daha kurgulayacağız. Hatta şunun ismini de güzel yazalım ki.
+
+32
+00:11:47,155 --> 00:11:55,475
+struct node diyelim, struct node diyelim, struct node diyelim,
+
+33
+00:12:05,587 --> 00:12:13,248
+Struct node, yıldız.
+
+34
+00:12:15,248 --> 00:12:25,107
+Şimdi, bu doğrultuda sizin elemanlarınızın birbirleriyle bağlantısının kurulması gerekiyor.
+
+35
+00:12:25,107 --> 00:12:33,168
+Yukarıdaki, en tepedeki elemanın ilk child'ı olarak siz,
+
+36
+00:12:35,923 --> 00:13:03,024
+A'yı işaretleyebilirsiniz. Sonra, özür dilerim A diyorum, B'yi işaretleyebilirsiniz. Sonra bunları B'den itibaren neyle işaretleyebilirsiniz? C ile işaretleyebilirsiniz. D. Bu şekilde devam edebilirsiniz. Kaç tane kardeşi varsa B'nin o kadar yan yana ekleyerek bu yapıyı saklama şansına sahipsiniz. Sonra B'den.
+
+37
+00:13:04,244 --> 00:13:05,744
+Bu sefer E'ye geçersiniz.
+
+38
+00:13:07,324 --> 00:13:10,064
+Aynı şey B'nin çocukları için geçerli.
+
+39
+00:13:10,163 --> 00:13:12,104
+First size olarak E'yi işaretlersiniz.
+
+40
+00:13:12,703 --> 00:13:16,024
+Sonra F, G,
+
+41
+00:13:20,532 --> 00:13:33,152
+E ve Ö olmak üzere B'ye ait olan, B'nin altında yer alan direct zirileri bu mantıkla saklayabilirsiniz.
+
+42
+00:13:33,152 --> 00:13:34,152
+Demek ki...
+
+43
+00:13:34,836 --> 00:13:55,115
+Bir parent'ın ilk çocuğunu sakladıktan sonra birden fazla çocuğu varsa o birden fazla çocuğu birbirlerine bağlayarak ve ilk çocuk da parent'a bağlı olacak şekilde saklama mantığını bu ödevde kullanarak yapınızı oluşturmanız bekleniyor.
+
+44
+00:13:55,115 --> 00:14:00,556
+Şimdi ilk etapta elinizde sadece root ile başladığınızı düşünün.
+
+45
+00:14:01,556 --> 00:14:24,696
+Bunları silelim. Bu kısım olmasın. Root directory var diyelim. Ki bu başlangıç konumu olarak da burada olacaksınız. Diyelim ki buraya bir komut yazıyorsunuz. mkdir mesela ne olsun data structures olsun.
+
+46
+00:14:27,283 --> 00:14:40,783
+mkdir data structures dediğiniz zaman root'un altında bir tane artık data structures directives yaratıyor olacaksınız.
+
+47
+00:14:40,884 --> 00:14:43,063
+Bunu ilk çocuk olarak root'a bağlayacaksınız.
+
+48
+00:14:43,563 --> 00:14:53,504
+Aynı yerde bir mkdir diyelim ki algoritm analisi isterseniz artık bu yarattığınız algoritm analisi
+
+49
+00:14:54,144 --> 00:15:07,464
+Data structures'a bağlamanız, bu şekilde yeni yaratacağınız directoryleri arka arkaya birbirine ekleyerek bir parent'ın altında çocukları saklama şansına sahipsiniz.
+
+50
+00:15:08,104 --> 00:15:11,324
+Diyelim ki bunlardan bir tanesinin içerisine giriş geçiş yapacaksınız.
+
+51
+00:15:11,324 --> 00:15:16,524
+O zaman CH1 diyorsunuz, data structures diyorsunuz.
+
+52
+00:15:19,124 --> 00:15:21,903
+Bu sefer artık data structures'ın altına girdiniz.
+
+53
+00:15:21,903 --> 00:15:32,903
+Burada isterseniz mkdir ile mkdir deyip q deyip data structures'ın altında q yaratabiliyorsunuz.
+
+54
+00:15:33,744 --> 00:15:36,783
+İsterseniz mkdir deyip stacks yaratabiliyorsunuz.
+
+55
+00:15:36,864 --> 00:15:37,663
+Stacks diyorsunuz.
+
+56
+00:15:38,184 --> 00:15:42,903
+İsterseniz mkdir deyip tree diyerek ilgili...
+
+57
+00:15:45,524 --> 00:16:01,863
+düğümleri ve ilgili directoryleri sisteme eklemiş oluyorsunuz. Remove directory yani RM'dir. RM'dir yaparken neye dikkat etmeniz gerekiyor? O directory'den gerçekten orada o isimli bir directory var mı?
+
+58
+00:16:02,288 --> 00:16:05,227
+Yoksa hata mesajı vermeniz gerekiyor.
+
+59
+00:16:05,687 --> 00:16:12,407
+mkdir yaparken de aynı isimli bir directory varsa gene hata mesajı vermeniz gerekiyor.
+
+60
+00:16:12,407 --> 00:16:14,887
+dir komutunu çalıştırdığınızda
+
+61
+00:16:15,956 --> 00:16:21,416
+Örneğin, data structures seviyesinde bulunuyorsunuz.
+
+62
+00:16:21,855 --> 00:16:30,936
+Dir komutunu çalıştırdığınızda onun altındaki seviyede kaç tane directory varsa onların isimlerini ekrana yazdırıyor olacak.
+
+63
+00:16:31,596 --> 00:16:36,735
+Count'u çalıştırdığınızda da kaç tane varsa sadece sayısını ekrana yazdırıyor olacak.
+
+64
+00:16:37,336 --> 00:16:40,975
+Genel olarak kurgu bu şekilde gerçekleşecek.
+
+65
+00:16:40,975 --> 00:16:43,956
+Şimdi bu anlattıklarımla ilgili...
+
+66
+00:16:43,956 --> 00:16:47,956
+sorusu olan var mı öncelikle? Evet [öğrenci].
+
+67
+00:16:47,956 --> 00:16:57,956
+Hocam şimdi RM-DIR komutunu çalıştırdığımızda alttaki direktörler değil, üstteki direktörlerden biri silinirse nasıl bir işlem yapmamızı beklenir acaba?
+
+68
+00:16:57,956 --> 00:17:08,956
+Güzel bir soru. Bu konuyla ilgili yorum yapmak isteyen var mı? Çünkü buradaki sıkıntımız şu, bir RM-DIR yaptığınızda...
+
+69
+00:17:09,460 --> 00:17:14,039
+O klasörün, o darekterin altında da darekteriler olabilir. Evet [öğrenci].
+
+70
+00:17:21,107 --> 00:17:21,803
+Ora?
+
+71
+00:17:25,460 --> 00:17:28,420
+Söylediklerim duyulmuyor. O zaman başka bir arkadaşına söz vereyim.
+
+72
+00:17:30,340 --> 00:17:31,640
+Bir kişi daha el kaldırmıştı.
+
+73
+00:17:33,920 --> 00:17:34,599
+[öğrenci].
+
+74
+00:17:36,160 --> 00:17:43,000
+Hocam, alt direktörleri de kontrol edip yani çocukları var mı diye kontrol edip çocuklarını da silmemiz gerekecek.
+
+75
+00:17:43,160 --> 00:17:47,440
+Ben bir de bir şey soracağım. Bu stack yapısında parent bilgisini tutmamız gerekecek değil mi?
+
+76
+00:17:48,372 --> 00:18:07,231
+Ben burada sadece size fikir vermesi açısından birkaç örnek bilgi paylaştım. Bütün struct node'un aslında yapısını yazmadım ekrana. Burada tabii başka bilgileri de tutmanız gerekiyor. Mesela ismi tutmanız gerekiyor, veli tutmanız gerekiyor gibi. Tabii ki burada ihtiyaç duyduğunuz bilgileri tutmanız gerekiyor.
+
+77
+00:18:07,271 --> 00:18:08,112
+Tamam hocam, sağ olun.
+
+78
+00:18:08,652 --> 00:18:09,172
+Rica ederim.
+
+79
+00:18:09,599 --> 00:18:18,059
+Ama burada çok kritik olan şey veri yapınızı oluştururken de gereksiz veri tutmamaya özen göstermeniz gerekiyor.
+
+80
+00:18:22,099 --> 00:18:38,619
+Chat'ten yazmış arkadaşlarınız. Tabi burada RM komutunun Linux'taki karşılığında yani RM'dir Windows karşılığı, RM Linux karşılığı. Farklı parametreleri var. Biz ödevimizin daha karmaşık hale gelmemesi için.
+
+81
+00:18:39,316 --> 00:18:51,076
+Bu parametreleri işin içine katmadık. Normalde o directory'nin altını eğer silmek istediğinizde directory altında klasörler varsa sizi uyarır.
+
+82
+00:18:51,416 --> 00:18:56,576
+Taşeneklerden biri budur. Ya da siz hepsini silmesi için belirli parametreleri verirsiniz.
+
+83
+00:18:57,076 --> 00:19:07,275
+Ve o parametrelerle hepsi silinir. Şu anda bizim en son konuştuğumuzda, remdir çalıştığında bir kez daha kontrol edeyim yanlış bir bilgi söylememek adına.
+
+84
+00:19:07,316 --> 00:19:07,788
+Arkadaşlar, bu kadar.
+
+85
+00:19:14,163 --> 00:19:26,124
+Bunu düzelteyim. Bunu ödev dokümanında da göreceksiniz. Burada şöyle bir son karar alınmış. Ben o noktayı sizlere yanlış aktarmış oldum. Hemen düzelteyim.
+
+86
+00:19:27,403 --> 00:19:32,003
+Bir direct'in, o da sizin tabii daha kolay yapabilmeniz için aldığımız bir karar.
+
+87
+00:19:35,375 --> 00:19:40,275
+Başka directirler varsa o silmek istediğiniz directirine o zaman hata mesajı vereceksiniz.
+
+88
+00:19:40,695 --> 00:19:42,556
+Onları bir daha silmekle uğraşmayacaksınız.
+
+89
+00:19:42,956 --> 00:19:46,836
+Eğer directirinin altında başka bir directir yoksa o zaman o directiriyi silebileceksiniz.
+
+90
+00:19:47,395 --> 00:19:51,516
+Böylece daha kolay bir implementasyon gerçekleştirmiş olacaksınız.
+
+91
+00:19:52,175 --> 00:19:55,355
+Bunu da paylaşmış olayım ama bütün detay zaten dokümanda var.
+
+92
+00:19:56,316 --> 00:19:57,076
+Başka sorusu olan?
+
+93
+00:20:03,316 --> 00:20:03,996
+[öğrenci]?
+
+94
+00:20:04,996 --> 00:20:10,635
+Ya usulü değil de stack, queue içinde karakter mi kullanacağız yoksa integer yoksa fark etmeyeceğiz?
+
+95
+00:20:12,255 --> 00:20:16,755
+Bildiğin üzere burada kullandığımız mkdir ile hep klasör isimleri kullanıyoruz.
+
+96
+00:20:16,875 --> 00:20:22,936
+O yüzden bu gerçek bir eşitim sistemindeki directory yapısını implemente edilecek şekilde olacak.
+
+97
+00:20:24,996 --> 00:20:30,875
+Yani integer bildiğimiz ağaç yapısındaki gösterdiğimiz örneklerdeki gibi rakamlar saklamayacağız.
+
+98
+00:20:31,508 --> 00:20:32,548
+Kao.
+
+99
+00:20:33,188 --> 00:20:35,048
+Rica ederim. Başka soru sola.
+
+100
+00:20:39,380 --> 00:20:52,240
+Burada benim size gösterdiğim kabaca bir örnek. Çünkü daha detaya girersem bütün ödevin aslında detaylarını vermiş olacağım. O yüzden bununla ilgili bakıp kendiniz de lütfen.
+
+101
+00:20:52,948 --> 00:21:05,188
+Nasıl bir tree yapısı oluşturmanız gerekiyor? Linked listeyi nasıl bağlamanız gerekiyor? Farklı bir yaklaşım var mıdır? Daha efficient bir çözüm olabilir mi? Bunları lütfen araştırın.
+
+102
+00:21:06,307 --> 00:21:18,368
+Hani çok uzun bakmanıza gerek yok. Kabaca ne yapacağınız aslında belli. Ama bu keywordlar ve bu bilgiler üzerinden bakarsanız bir saatlik araştırma size fazla fazla yetecektir.
+
+103
+00:21:26,036 --> 00:21:29,256
+Başka sorusu olan var mı?
+
+104
+00:21:30,056 --> 00:21:30,456
+Varsa.
+
+105
+00:21:31,092 --> 00:21:39,092
+Hocam mesela daha gelişmiş olanı da yazabilir miyiz? Onlara da ekleyebilirsek, eklersek...
+
+106
+00:21:39,092 --> 00:21:48,271
+Kendiniz yaparsanız bunun raporda ben bunları yaptım istenilenleri ek olarak şunları ekledim diye not düşebilirsiniz.
+
+107
+00:21:49,012 --> 00:21:55,092
+Bu bir sıkıntı değil ama burada çok kritik olan şey...
+
+108
+00:21:55,347 --> 00:22:14,987
+Kendinizin implement etmesi, yoksa bir şeyi hazır bulup fazladan da bilgiler varsa onu da hiç içerisinden çıkarmadan birebir koyarsanız ya da içerisinden temizleyip o kıspı koyarsanız da bunda sıfır almaktan başka bir durum söz konusu olmayacaktır.
+
+109
+00:22:15,067 --> 00:22:19,507
+Özellikle bu konuda kendinizin yapması gerektiğini bir kez daha vurgulamış olayım.
+
+110
+00:22:20,019 --> 00:22:35,000
+Kendi aranızda da yardım almak konusunda tabii ki serbestsiniz, birbirinize danışabilirsiniz ama ödevi sadece aldığınız bilgileri kullanarak kendinizi implement etmek koşuluyla yüksel.
+
+111
+00:22:36,115 --> 00:22:41,895
+Hocam bu count sadece seçtiğimiz klasörün alt klasörlerinin sayısını verecek değil mi?
+
+112
+00:22:42,255 --> 00:22:45,855
+Seçtiğimiz klasörün altındaki ilk seviyedeki klasör sayısı.
+
+113
+00:22:46,556 --> 00:22:55,115
+Alttaki klasörlere inmeyeceğiz. Bu da sürenin kısıtlı olması ve sizi sınav haftası öncesinde çok yormamak adına özellikle böyle seçildi.
+
+114
+00:22:55,735 --> 00:22:57,135
+Tamam hocam. Teşekkür ederim hocam.
+
+115
+00:22:57,435 --> 00:22:57,695
+Güzel.
+
+116
+00:22:59,455 --> 00:23:01,735
+Başka sorusu olan var mı ödevle ilgili olarak?
+
+117
+00:23:04,564 --> 00:23:05,444
+Evet [öğrenci].
+
+118
+00:23:06,384 --> 00:23:12,304
+Yok, ödevle ilgili değil de ben quizlerin yüzde kaç etkilediğini unuttum da onu sormak için.
+
+119
+00:23:13,024 --> 00:23:19,024
+Hemen dokümanımı açayım ki bu arada quiz sonuçlarını ders duvarına koymuştum. Bunları gördünüz değil mi?
+
+120
+00:23:20,744 --> 00:23:21,824
+Daha görmedim hocam.
+
+121
+00:23:23,403 --> 00:23:26,024
+Arkadaşlar sizler ders duvarındaki dokümana baktınız mı?
+
+122
+00:23:33,011 --> 00:23:50,652
+Yani gerçekten sizle nasıl iletişim kuracağım konusunda zorlanıyorum. Bir soru sorduğumda sadece chatten yazanlarla iletişim kuruyorum zaman zaman. Evet, hayır demek çok zor değil. Teşekkür ediyorum [öğrenci].
+
+123
+00:23:51,347 --> 00:24:10,508
+Evet, [öğrenci]. Gördüğünüze göre ders duvarında Cuma günü açıklamıştım notlarınızı. Şimdi gelelim [öğrenci]'ın sorusuna. [öğrenci] oranı sormuştu. Ezbere bilmediğim için hemen açıyorum. O da ders duvarında var, Silivis'ta. Quizler %15 gözüküyor [öğrenci].
+
+124
+00:24:12,727 --> 00:24:13,927
+Tamam hocam, teşekkür ederim.
+
+125
+00:24:14,367 --> 00:24:17,867
+Ödevler de %15 gözüküyor. Semester projesi %10.
+
+126
+00:24:18,271 --> 00:24:21,432
+Midterm %20, final %40 gözüküyor.
+
+127
+00:24:23,652 --> 00:24:26,379
+Rica ederim. Başka evet sorusu olan...
+
+128
+00:24:34,195 --> 00:24:58,495
+Ağaç yapısıyla ilgili bu emery tree'nin oluşturulmasındaki linked liste mantığı yani bir soyuk yapısı var. Bir de linked listede en tepede root var. Bunu head olarak da kabul edebilirsiniz belki. Onun altında birden fazla link söz konusu oluyor. Bu yapıyı iyi oluşturmak gerekiyor.
+
+129
+00:24:59,028 --> 00:25:06,268
+Özellikle binodun ilk child'ı temsil etmesi gerekiyor. Bir de side linkler var.
+
+130
+00:25:18,099 --> 00:25:26,679
+[öğrenci] Dir directory'deki, o directory altındaki bulunan directory'lerin isimlerini listeliyor.
+
+131
+00:25:27,579 --> 00:25:30,739
+Dokümanında zaten detayını bulacaksınız, daha fazla serciyor orada.
+
+132
+00:25:36,468 --> 00:25:45,348
+Evet, şimdi önümüzdeki haftaki sınavla ilgili sormak istediğiniz sorular varsa onları alabilirim. Anlamadığınız bir konuyla ilgili danışmak istediğiniz bir şey.
+
+133
+00:25:53,971 --> 00:25:54,531
+[öğrenci]?
+
+134
+00:25:56,392 --> 00:26:09,132
+Hocam, sınav sadece kod yazacağımız bir şekilde mi olacak yoksa biz geçen dönem SMB dersinde test soruları geliyor, arada kod geliyor falan bu tarzda mı olacak?
+
+135
+00:26:10,491 --> 00:26:18,231
+Sınav muhtemelen algoritma soruları ağırlıklı olacak şekilde kod ya da akış diagramı çizimi.
+
+136
+00:26:18,867 --> 00:26:31,228
+Artı belli oranda da quiz tarzında boşluk doldurma, değer hesaplama ya da şıklı birkaç soru olacak şekilde konulanacak.
+
+137
+00:26:31,347 --> 00:26:35,427
+Ama ağırlık biraz daha algoritmik sorularda olacak.
+
+138
+00:26:36,748 --> 00:26:40,528
+Yani hocam bir şey göndermemiz gerekecek mi?
+
+139
+00:26:40,528 --> 00:26:43,087
+Evet, göndermemiz gerekecek.
+
+140
+00:26:43,407 --> 00:26:43,508
+Evet.
+
+141
+00:26:44,008 --> 00:26:45,008
+Hocam teşekkürler.
+
+142
+00:26:45,248 --> 00:26:45,667
+Rica ederim.
+
+143
+00:26:46,355 --> 00:26:48,435
+Hocam, bir de kaç saat olacak sınav?
+
+144
+00:26:49,576 --> 00:26:56,395
+Bir sınav oluşmadığı için bir hesap yapmadık ama bir buçuk saatlik bir zaman dilimi ayrılmış durumda.
+
+145
+00:26:56,556 --> 00:26:59,536
+Muhtemelen o saat dilimi kullanılacaktır diye tahmin ediyorum.
+
+146
+00:27:00,395 --> 00:27:01,195
+Teşekkürler hocam.
+
+147
+00:27:01,615 --> 00:27:02,036
+Rica ederim.
+
+148
+00:27:09,748 --> 00:27:25,668
+Sınav bölümleri parça parça olabilir. Daha önceden tecrübe etmiş olanlar olabilir. Sınav birkaç bölümden oluşabilir. Yani bir 20 dakikalık, bir 40 dakikalık, bir 40 dakikalık bölüm olabilir. Şu anda bilmiyorum ama böyle ihtimaller söz konusu.
+
+149
+00:27:29,172 --> 00:27:32,672
+En son noktaya kadar geldiğimiz noktaya kadar sorumlusunuz.
+
+150
+00:27:33,512 --> 00:27:35,752
+Heapsort kısmını da görmüştünüz.
+
+151
+00:27:36,092 --> 00:27:53,292
+Ağaçlar, stack, queue, linked list, karmaşıklık, space complexity, time complexity, temel olarak kullanılan bu derste göreceğiniz veri yapıları.
+
+152
+00:27:56,852 --> 00:28:01,912
+Bir algoritmanın efektif tasarlanması için yapılabilecek çözümler.
+
+153
+00:28:02,992 --> 00:28:06,212
+Bunlarla ilgili sorulardan sorumlusunuz.
+
+154
+00:28:14,804 --> 00:28:16,304
+Başka bir soru sormak istiyorum.
+
+155
+00:28:24,435 --> 00:28:50,695
+O zaman peki, başka bir soru yoksa, ödeviniz saat 1 itibariyle yayınlanmış olacak. Yarın akşam 23.59'a kadar süreniz var. Bu süreçte çok önemli bir sorun tespit ederseniz, sormanız gereken bir şey, bize mail gönderebilirsiniz.
+
+156
+00:28:51,248 --> 00:29:03,708
+Ve bununla ilgili genel bir açıklama yapılma ihtimali söz konusu olursa yani bizden kaynaklı bir hata vs. mutlaka size e-mail yoluyla topluca herkese bilgilendirme yaparız.
+
+157
+00:29:04,708 --> 00:29:10,228
+Onun dışında dokümandaki kurallara bağlı kalırsanız.
+
+158
+00:29:10,740 --> 00:29:15,340
+Kısa sürede implemente edebileceğinizi düşünüyorum.
+
+159
+00:29:15,840 --> 00:29:22,820
+Bu kısa süre ne kadar ederseniz, en fazla 3 saatte ödevinizi toparlarsınız diye tahmin ediyorum.
+
+160
+00:29:24,520 --> 00:29:29,700
+Umarım bir şeyler öğrendiğiniz, keyifle yaptığınız bir ödev olur ve başarıyla tamamlarsınız.
+
+161
+00:29:30,460 --> 00:29:33,600
+Hepinize teşekkür ediyorum. Önümüzdeki haftaki sınavlarınızda başarılar.
+
+162
+00:29:33,983 --> 00:29:38,563
+Şimdi de sağlıklı günler diliyorum hepimize. Görüşmek üzere arkadaşlar.
+
+163
+00:29:39,103 --> 00:29:40,863
+Teşekkür ederim hocam. İyi günler.

@@ -1,0 +1,1079 @@
+1
+00:00:00,000 --> 00:00:00,720
+Yana yaldır.
+
+2
+00:00:11,827 --> 00:00:12,827
+Bunlar.
+
+3
+00:00:12,827 --> 00:00:15,468
+Yürmey.
+
+4
+00:01:07,796 --> 00:01:08,936
+Neydi bunun markası?
+
+5
+00:01:37,876 --> 00:01:40,236
+Tonla marka var, bu yok yani.
+
+6
+00:01:41,756 --> 00:01:43,436
+Arkadaşlar, mikrofonları kapatalım.
+
+7
+00:03:09,012 --> 00:03:10,831
+Evet arkadaşlar, hepiniz hoş geldiniz.
+
+8
+00:03:12,632 --> 00:03:15,391
+Şimdi bugünkü dersimize hemen başlayacağız.
+
+9
+00:03:15,611 --> 00:03:19,192
+Yaklaşık yarım saatlik bir süremiz olacak.
+
+10
+00:03:19,572 --> 00:03:25,171
+Bu sürede hem sorularınız varsa yanıtlayacağım hem de küçük bir örnek yapacağım.
+
+11
+00:03:25,271 --> 00:03:29,171
+Bildiğiniz çok basit bir örnek olacak ama önümüzdeki haftaya da hazırlık olacak.
+
+12
+00:03:30,931 --> 00:03:33,572
+Hatırlamayanlar hatırlamış olacaklar.
+
+13
+00:03:33,972 --> 00:03:37,312
+Sorusu olanlar da konuyla ilgili sorularını aktarabilirler.
+
+14
+00:03:37,451 --> 00:03:45,271
+Şimdi öncelikle geçtiğimiz iki gün önceki dersle ilgili ya da dersin geneliyle ilgili sorusu olan var mıdır onu sorayım.
+
+15
+00:03:49,620 --> 00:03:52,060
+Görüş aktarmak isteyen, bir soru sormak isteyen.
+
+16
+00:03:54,700 --> 00:03:56,860
+Peki, gördüğüm kadarıyla yok.
+
+17
+00:03:59,700 --> 00:04:03,980
+Şimdi, bugünkü derste ekran paylaşımını yapayım hemen.
+
+18
+00:04:13,972 --> 00:04:26,512
+Evet, şu anda sanırım ekranı görüyorsunuz. Bugün basit search algoritmalarından bahsedeceğim.
+
+19
+00:04:31,091 --> 00:04:34,471
+Bu search algoritmalarıyla ilgili birkaç soru soracağım.
+
+20
+00:04:35,291 --> 00:04:40,891
+Şimdi biliyorsunuz, geçen günde buna değinmiştik.
+
+21
+00:04:41,611 --> 00:04:47,731
+Dinoer, bir başka ismiyle sequential search var demiştim.
+
+22
+00:04:49,331 --> 00:04:56,552
+Bu sequential search, adım adım arama yaptığımız bildiğiniz bir dizi üzerinde.
+
+23
+00:04:57,012 --> 00:05:09,192
+Bir sayıyı arama şeklimiz. 5, 7, 1, 2, 8, 9 şeklinde verilmiş bir dizi üzerinde bir sayı var ya da yoktur. Varsa hangi noktada olduğunu istiyor olabiliriz.
+
+24
+00:05:09,271 --> 00:05:17,751
+Tabi burada unique elemanlardan oluşan bir diziden bahsediyoruz ve sıralı olmayan bir diziden bahsediyoruz.
+
+25
+00:05:17,751 --> 00:05:21,751
+Yani burada işte bir sayısını arıyorsanız.
+
+26
+00:05:21,812 --> 00:05:26,451
+Bu sayı varken, işte 3 sayısını arıyorsanız bu sayı yoktur.
+
+27
+00:05:27,072 --> 00:05:32,412
+Ancak sıralı olmayan ama unique elemanlardan oluşmayan dizi de olabilir.
+
+28
+00:05:33,032 --> 00:05:36,532
+Nedir bu? 5, 7, 1, 1.
+
+29
+00:05:37,108 --> 00:05:38,888
+2, 8 şeklinde.
+
+30
+00:05:39,587 --> 00:05:47,327
+Biri arıyorsanız birin kaç tane geçtiğini bulmak isteyebilirsiniz bu dizi içerisinde ve yerlerini bulmak isteyebilirsiniz.
+
+31
+00:05:47,648 --> 00:05:50,728
+O yüzden burada uygulayacağınız arama stratejisi farklı olacaktır.
+
+32
+00:05:51,348 --> 00:05:54,268
+Ve bunun doğal olarak karmaşıklığı da farklı olacaktır.
+
+33
+00:05:54,612 --> 00:05:58,992
+Çünkü yukarıdaki örnekte bir sayısını bulduğunuzda işiniz bitecektir.
+
+34
+00:05:59,632 --> 00:06:01,792
+Ama bulmadığınız sürece sonuna kadar bakacaksınız.
+
+35
+00:06:01,932 --> 00:06:13,711
+Ama aşağıdaki örnekte yani birden fazla elemanın tekrar ettiği bir veri setinde arama yapıyorsanız o zaman veri setinin sonuna kadar bakmanız gerekiyor.
+
+36
+00:06:13,711 --> 00:06:16,331
+Burada unsorted array'den bahsettik.
+
+37
+00:06:17,772 --> 00:06:20,711
+Tabii öte yandan bu noktada...
+
+38
+00:06:21,555 --> 00:06:24,735
+Tekrar eden sayılar da olabilir.
+
+39
+00:06:26,635 --> 00:06:29,675
+Evet, şimdi sorted array'e geçeceğiz şimdi.
+
+40
+00:06:33,396 --> 00:06:35,396
+sorted array'de
+
+41
+00:06:35,396 --> 00:06:41,156
+1, 2, 3, 5, 7, 8
+
+42
+00:06:46,067 --> 00:07:02,148
+Arama yaptığınızda örneğin diyelim ki 4'ü arıyorsunuz. 4'ü aradığınızda artık 3'ten sonra 4'ü bulma olasılığınız ortadan kalkıyor. O yüzden geri kalanına bakmak anlamlı değil.
+
+43
+00:07:03,007 --> 00:07:12,831
+Sıralı dizinin, sıralı veri setinin burada avantajını kullanıyorsunuz ve geri kalanına bakmamak üzerine kurulu bir algoritma tasarlamaya çalışıyorsunuz. Bu oldukça önemli bir...
+
+44
+00:07:12,831 --> 00:07:23,671
+Bu nokta, bu tür trikleri yakalamanız gerekiyor. Veri yapılarında da artık bunları rahatlıkla kendi algoritmalarınızda uygulayabiliyor olmanız önemli.
+
+45
+00:07:24,671 --> 00:07:32,331
+Bu noktada şimdi tabii algoritmik akışla geçmeden önce şunu konuşmakta fayda var.
+
+46
+00:07:33,252 --> 00:07:38,491
+Algoritma analizi diyoruz ve bunun için iki tane
+
+47
+00:07:39,603 --> 00:07:49,923
+Temel başlığımız vardı. Bir tanesi time complexity, zamansal karmaşıklık, diğeri de space complexity.
+
+48
+00:07:51,763 --> 00:07:58,223
+Bu konuların detayını, bir daha ki seni algoritmaların izlerinde göreceksiniz ama burada kısaca bahsetmeye başlayalım.
+
+49
+00:07:58,963 --> 00:08:16,324
+Zamansal karmaşıklıktan bahsettiğiniz zaman iki algoritmayı kıyaslarken bu algoritmaların işlemi yapma süreleri üzerinden karmaşıklıklarını hesaplıyorsunuz ya da işlemi yapma adım sayıları üzerinden bunu hesaplıyorsunuz.
+
+50
+00:08:16,324 --> 00:08:19,947
+Space Complex dediğimiz zaman da o...
+
+51
+00:08:20,019 --> 00:08:24,819
+Algoritmanın ne kadar bellek kullandığını hesaplıyorsunuz.
+
+52
+00:08:25,259 --> 00:08:31,259
+Diyorsunuz bazı algoritmalar daha kısa sürede sonuçlanıyor ama daha fazla bellek kullanıyorlar.
+
+53
+00:08:31,259 --> 00:08:35,679
+Bazı algoritmalar da daha az bellek kullanıp daha uzun sürede sonuçlanabiliyorlar.
+
+54
+00:08:36,119 --> 00:08:39,779
+Ama algoritma analiz dediğimiz zaman iki tane temel başlık aklınıza gelecek.
+
+55
+00:08:39,940 --> 00:08:43,359
+Bir tanesi time complexity, diğeri de space complexity.
+
+56
+00:08:43,940 --> 00:08:46,251
+Tabi time complexity dediğimiz zaman...
+
+57
+00:08:46,772 --> 00:09:02,252
+Yani zamansal karmaşıklığı ifade etmek istediğimizde 3 farklı case'den bahsediyoruz. Bunlar best case, average case ve worst case.
+
+58
+00:09:05,232 --> 00:09:11,951
+Şimdi ben size sorayım best case, average case ve worst case nedir diye.
+
+59
+00:09:25,395 --> 00:09:26,195
+Evet, [öğrenci].
+
+60
+00:09:28,895 --> 00:09:36,336
+Best case hocam, algoritmanın optimum yani en iyi halidir. En kısa sürede sonuca ulaştığımız halidir.
+
+61
+00:09:37,115 --> 00:09:39,235
+Biraz daha açıklayabilir misin mesela bu örnek üzerinden?
+
+62
+00:09:39,596 --> 00:09:40,235
+Sequential sorts.
+
+63
+00:09:42,235 --> 00:09:49,855
+Sequential sorts üzerinden. Yani hocam sıralı olsa algoritma direkt biter. Bir de tek denemede halletmiş oluruz.
+
+64
+00:09:50,740 --> 00:09:52,900
+Neyi halletmiş oluruz sıralı olsa?
+
+65
+00:09:53,019 --> 00:09:55,740
+Yani sıralam...
+
+66
+00:09:55,740 --> 00:09:57,559
+Bir dakika.
+
+67
+00:09:57,680 --> 00:09:58,720
+Bir sıralama yapmıyoruz burada.
+
+68
+00:09:59,240 --> 00:10:01,620
+Pardon, ben derse 2-3 dakika geç katıldım da hocam.
+
+69
+00:10:02,039 --> 00:10:06,779
+Hocam aradığımızı ilk denemede bulursak eğer, o zaman tek seferde halletmiş oluyoruz.
+
+70
+00:10:07,779 --> 00:10:07,980
+Peki.
+
+71
+00:10:09,079 --> 00:10:09,740
+Şimdi...
+
+72
+00:10:10,259 --> 00:10:26,120
+Buradaki örneğe bakacak olursanız bir arama işi yapıyoruz ve arama işini ilk adımda bulma ihtimalimiz var. O zaman demek ki bu tasarlayacağımız algoritma hangisi olursa olsun best case'i en iyi ihtimalle birinci adımda bulma ihtimalimiz var.
+
+73
+00:10:26,920 --> 00:10:30,700
+Peki worst case'i konuşalım. [öğrenci]'e söz vereyim.
+
+74
+00:10:31,764 --> 00:10:50,764
+Worst case durumunda aradığımız elemanın bize verilen dizide bulunmama durumu. Bütün elemanlara teker teker bakacağız ve son elemana da bakıp çıkmak durumunda kalacağız. Yani for döngüsüyle bütün elemanlara dönmüş kadar olacağız. Yani n kadar dönmemiz gerekecek her durumda.
+
+75
+00:10:50,764 --> 00:10:53,923
+Şimdi bunun bir n elemandan oluştuğunu düşünelim.
+
+76
+00:10:57,812 --> 00:11:09,852
+Bu noktada sıralı da sırasız da olsa siz en kötü durumda 9'u arıyorsanız ya da alt dizide sıralı dizide 8'i arıyorsanız mutlaka bütün diziyi dönmek zorundasınız.
+
+77
+00:11:09,971 --> 00:11:11,592
+Bütün diziyi kontrol etmek zorundasınız.
+
+78
+00:11:12,132 --> 00:11:17,032
+En kötü durumdaki karmaşıklık Big O notasyonuyla O N olarak ifade ediliyor.
+
+79
+00:11:17,032 --> 00:11:25,032
+Şimdi burada O N olarak yazıyorum bunu önümüzdeki hafta.
+
+80
+00:11:27,316 --> 00:11:34,615
+Üzerinden daha detaylı bir şekilde geçeceğiz. Şu anda birazcık ön giriş yapmışız gibi düşünün.
+
+81
+00:11:36,563 --> 00:11:50,824
+Daha çok burada arkadaşınızın söylediği gibi for döngüsünün kaç tane olduğu ile ve iç içe kaç tane for döngüsü olduğu ile alakalı olarak tespit ediliyor ama bunun detaylarını önümüzdeki hafta derste veriyor olacağım.
+
+82
+00:11:51,283 --> 00:11:57,923
+Gelelim en kötü durum senaryosunda dizinin sıralı olması ve sıralı olmasında bir durum değişmiyor dedik.
+
+83
+00:11:58,384 --> 00:12:01,923
+8 ve 9'u arıyorsak en defa bakarız dedik. Bir de arkadaşınız dedi ki
+
+84
+00:12:02,323 --> 00:12:10,723
+Biraz önce elemanı bulamama bir case'i de vardır dedi. Evet doğru. Diyelim 4'ü arıyorsunuz.
+
+85
+00:12:11,363 --> 00:12:20,943
+Sıralı olmayan dizide 4'ü ararsanız sıralı olmayan dizide sonuna kadar gitmeniz gerekiyor. Mutlaka en tane kontrol yapmanız gerekiyor.
+
+86
+00:12:21,283 --> 00:12:28,783
+Peki sıralı olan dizide 4'ü arıyorsunuz diyelim. O zaman kaç kontrol yapıyorsunuz? O zaman 3 kontrol yapıyorsunuz sadece.
+
+87
+00:12:29,620 --> 00:12:32,539
+Fakat bu worst case'i ifade etmiyor.
+
+88
+00:12:33,299 --> 00:12:35,500
+Sıralı olan dizideki worst case nedir?
+
+89
+00:12:36,379 --> 00:12:37,319
+Bana onu söyler misiniz?
+
+90
+00:12:39,120 --> 00:12:41,319
+Dördü arama işlemi bir worst case değildir.
+
+91
+00:12:42,199 --> 00:12:43,399
+Başka bir arkadaşınız lütfen.
+
+92
+00:12:43,519 --> 00:12:44,399
+[öğrenci] teşekkür ediyorum.
+
+93
+00:12:46,480 --> 00:12:46,819
+[öğrenci].
+
+94
+00:12:47,988 --> 00:12:55,448
+Hocam, sıralı dizinin en sonundaki, en sağındaki sayıdan büyük bir sayı arıyorsak bu worst case olmuş.
+
+95
+00:12:55,448 --> 00:13:04,728
+Evet, mesela 9'u arıyorsak aşağıdaki örnekte ya da 10'u arıyorsak bu bir worst case'dir ama 4'ü aramak bir worst case değildir.
+
+96
+00:13:06,035 --> 00:13:08,775
+Yukarıdaki örnekte bu bir worst case olarak gözükse de.
+
+97
+00:13:09,315 --> 00:13:14,395
+Şimdi aradaki fark ne peki? İkisinin worst case'i aslında o n olarak ifade ediliyor.
+
+98
+00:13:14,995 --> 00:13:20,035
+Hem sıralı dizide hem de sırasız dizide worst case de mutlaka n elemana bakmanız lazım.
+
+99
+00:13:21,035 --> 00:13:25,335
+Peki sıralı olmasının bize getirdiği avantajı nerede kullanıyoruz?
+
+100
+00:13:25,495 --> 00:13:27,555
+Bunu bir kez daha vurgulamak adına soruyorum. Kim söyler?
+
+101
+00:13:30,135 --> 00:13:30,835
+[öğrenci]?
+
+102
+00:13:32,788 --> 00:13:39,827
+Hocam eğer aradığımız sayıdan daha büyük bir sayıya denk gelirsek işlemi durdurup bu dizide yoktur diyebiliriz.
+
+103
+00:13:40,247 --> 00:13:42,648
+Evet, örneğin bir milyon tane eleman var diyelim.
+
+104
+00:13:43,427 --> 00:13:51,668
+Siz ilk beş tane elemana baktıktan sonra o eleman artık ilk beş elemandan daha büyük bir değere sahip olduysa
+
+105
+00:13:51,668 --> 00:13:56,687
+geri kalan bir milyondan beş taneyi düşünün elemana bakmanıza gerek kalmaz.
+
+106
+00:13:57,875 --> 00:14:03,695
+Bu sıralı diziye göre tasarlayacağımız algoritmanın avantajını kullanmış oluyoruz.
+
+107
+00:14:03,755 --> 00:14:06,096
+Her ne kadar ikisinin worst case ile eşit olsa da.
+
+108
+00:14:06,755 --> 00:14:10,975
+Average case konusu biraz daha derinlemesine irdelenmesi gereken bir konu.
+
+109
+00:14:11,515 --> 00:14:14,415
+Şu an onunla ilgili size detaylı bilgi vermeyeceğim.
+
+110
+00:14:14,575 --> 00:14:17,915
+Best case ve worst case dizi bilmeniz yeterli.
+
+111
+00:14:17,915 --> 00:14:18,915
+Bir algoritmanın...
+
+112
+00:14:19,379 --> 00:14:30,819
+En iyi ihtimalle sonuçlanma adım sayısı, en kötü ihtimalle sonuçlanma adım sayısını ifade etmeye çalışıyoruz şu andaki örnek üzerinden.
+
+113
+00:14:31,459 --> 00:14:38,199
+Peki, sequential search'u konuşuyorduk ve bununla ilgili de bir akış diagramı çizelim.
+
+114
+00:14:38,199 --> 00:14:40,099
+Start.
+
+115
+00:14:44,596 --> 00:14:51,375
+n eleman, a n dizisi ve x elemanı arıyoruz diyelim.
+
+116
+00:14:54,868 --> 00:14:58,468
+Dizinin sıralı verildiğini varsayalım.
+
+117
+00:15:00,768 --> 00:15:05,908
+Burada bir sonraki adımda ne yazmam gerekiyor hemen size sorayım.
+
+118
+00:15:07,968 --> 00:15:08,908
+Kim cevap vermek ister?
+
+119
+00:15:10,548 --> 00:15:16,828
+Bunlar nispeten kolay sorular olduğu için dönem başında yardımcı olursanız sevinirim.
+
+120
+00:15:18,508 --> 00:15:19,168
+Evet, varsa.
+
+121
+00:15:20,052 --> 00:15:22,552
+Hocam bir while loop'u oluşturacağız.
+
+122
+00:15:22,892 --> 00:15:25,792
+Tamam. While loop'unda nasıl bir condition koyacağız?
+
+123
+00:15:26,392 --> 00:15:33,012
+Peki bir i ya da x. x olabilir. x neden daha küçükse.
+
+124
+00:15:33,472 --> 00:15:46,532
+İstersen şöyle bir i eşittir sıfır diyelim. Şuraya. Sonra bir tane while açıyorum. Evet. Dinliyorum seni.
+
+125
+00:15:47,316 --> 00:15:51,316
+İ n'den daha küçükse ve
+
+126
+00:15:51,316 --> 00:15:53,976
+N'den daha küçükse ve
+
+127
+00:15:53,976 --> 00:15:58,036
+A n'ı
+
+128
+00:15:58,036 --> 00:15:59,316
+A'ı
+
+129
+00:15:59,316 --> 00:16:05,316
+X'e eşit değilse
+
+130
+00:16:05,316 --> 00:16:07,676
+Ya da daha küçükse
+
+131
+00:16:07,676 --> 00:16:09,676
+Hangisini tercih edelim?
+
+132
+00:16:10,436 --> 00:16:11,516
+Daha küçükse de A'yı
+
+133
+00:16:12,148 --> 00:16:14,948
+Yani X, A, I'dan küçükse mi diyeceğiz?
+
+134
+00:16:16,328 --> 00:16:16,968
+Şöyle değil mi?
+
+135
+00:16:19,048 --> 00:16:22,088
+Hayır, A, I, X'den daha küçükse.
+
+136
+00:16:22,508 --> 00:16:22,768
+Peki.
+
+137
+00:16:22,768 --> 00:16:23,548
+Şunu demişim.
+
+138
+00:16:27,539 --> 00:16:28,119
+Yani şöyle.
+
+139
+00:16:29,979 --> 00:16:30,219
+Evet.
+
+140
+00:16:30,819 --> 00:16:31,099
+Tamam.
+
+141
+00:16:32,259 --> 00:16:33,019
+İçeri girdik.
+
+142
+00:16:33,279 --> 00:16:33,939
+Burada ne yapacağız?
+
+143
+00:16:39,604 --> 00:16:40,504
+Ben mi yapayım?
+
+144
+00:16:41,163 --> 00:16:41,584
+Olur.
+
+145
+00:16:42,264 --> 00:16:43,324
+Hazır söz sendeyken.
+
+146
+00:16:46,684 --> 00:16:56,564
+Peki şey eğer A, Ü sadece İ++ yaparız.
+
+147
+00:16:56,564 --> 00:16:57,384
+Peki.
+
+148
+00:16:58,724 --> 00:17:04,003
+Akış diagramında bunu ifade ederken Ü eşittir, Ü artır olarak yazıyoruz.
+
+149
+00:17:05,443 --> 00:17:06,204
+Dönüyoruz.
+
+150
+00:17:07,443 --> 00:17:10,743
+Buraya geliyoruz. Buradan bir ile çıkıyoruz.
+
+151
+00:17:12,623 --> 00:17:17,824
+Bu noktaya geldiğimizde ne kontrolü yapmamız gerektiğini başka bir arkadaşa sorayım.
+
+152
+00:17:20,623 --> 00:17:21,463
+[öğrenci].
+
+153
+00:17:23,463 --> 00:17:24,344
+Merhaba hocam.
+
+154
+00:17:24,643 --> 00:17:24,963
+Merhaba.
+
+155
+00:17:25,344 --> 00:17:30,903
+Bir if içinde a'nın x'e eşit olup olmadığını kontrol edebiliriz.
+
+156
+00:17:30,903 --> 00:17:33,903
+Yani aradığımız sayı bulduk mu yoksa...
+
+157
+00:17:34,132 --> 00:17:58,312
+Geçti ki mi? Oldu, olacağı. Peki, böyle bir kontrol yapalım. Şunu diyorsun değil mi? Evet. Tamam, şimdi hemen bir analiz yapacağız. Analizi yaparken hatırlarsanız I yazıyorduk, N yazıyorduk, X yazıyorduk, A, I yazıyorduk.
+
+158
+00:18:00,147 --> 00:18:18,067
+İlgili değişkenleri yazıyorduk. Şimdi bizim dizimizin sıralı olduğunu kabul etmiştik. 1, 2, 3, 5, 7, 8 verilmişti. I sıfırla başlıyor. Eleman sayısı 6 adet. Aradığımız eleman örneğin 4 olsun.
+
+159
+00:18:21,584 --> 00:18:39,943
+0, 6'dan küçük mü? Evet. X, A, I'dan büyük mü? A, 0 bu arada, 1. Büyük mü? Evet, büyük. O zaman I'yı 1 arttıracağız. I'ı 1 oldu. I'ı 1 olduğunda 1, 6'dan küçük mü? Evet.
+
+160
+00:18:40,531 --> 00:18:43,991
+X'miz hala 4 olarak devam ediyor.
+
+161
+00:18:44,592 --> 00:18:49,231
+A, I, 2 oldu. 4, 2'den büyük mü? Evet. Yola devam ediyoruz.
+
+162
+00:18:49,511 --> 00:18:57,431
+I, 2 oldu. Bu sefer A, 3 oldu. 4, 3'den büyük mü? Evet.
+
+163
+00:18:58,531 --> 00:19:03,451
+I, 3 oldu. Şuraya şunları da yazalım. 0, 1, 2, 3, 4, 5.
+
+164
+00:19:04,660 --> 00:19:21,140
+Ö3 oldu demiştik. Ö3'te 5 var. 4, 5'ten büyük mü? Hayır değil. Büyük olmadığı için çıktık. Eşit mi diye baktık. Eşit değil. O zaman false column da not found dedik.
+
+165
+00:19:26,387 --> 00:19:30,347
+Hatta bunu tek tırnakla yazalım.
+
+166
+00:19:32,347 --> 00:19:34,587
+Bu şekilde yaptık.
+
+167
+00:19:35,367 --> 00:19:37,307
+Diyelim ki aradığımız elemanı bulsaydık.
+
+168
+00:19:37,447 --> 00:19:39,248
+Yani örneğin 8'i arıyor olsaydık.
+
+169
+00:19:39,347 --> 00:19:40,288
+Devam edecektik.
+
+170
+00:19:41,107 --> 00:19:43,847
+8, şurada ufak bir düzeltme yapalım.
+
+171
+00:19:44,668 --> 00:19:47,387
+4 yerine buraya...
+
+172
+00:19:47,731 --> 00:20:13,251
+8 yazalım. 8'i arıyoruz. 8, 5'den büyük mü? Evet. 4 oldu. Bu arada burada 5, 8 olarak ilerliyor. Pardon, şunu hemen geri alayım. 7 olacak burası. 8, 7'den büyük mü? Evet. En son çıktık. 8, 7'den büyük mü? Evet dediğimiz için içeri girdik. En son 5 oldu.
+
+173
+00:20:15,124 --> 00:20:24,083
+5, 6'dan küçük mü? Evet. 8, 8'den küçük mü diye sorduk. Daha doğrusu büyük mü diye sorduk. Hayır değil. Çıktık.
+
+174
+00:20:24,884 --> 00:20:37,663
+Çıktığımız yerde 8'in 8'e eşit olduğunu gördük. O zaman ekrana neyi yazdırdık? Bulunduğu yeri yazdırdık.
+
+175
+00:20:38,228 --> 00:20:51,248
+Ve burayı tamamladık. Bir case'imiz de elemanın sonda olma durumuydu. Peki eleman bu elemanlardan daha büyük olsaydı, yani 9'u arıyor olsaydık, o zaman 9, 8'den büyük mü diye soracaktık.
+
+176
+00:20:52,208 --> 00:21:00,228
+9, 8'den büyük, evet, I bir tane daha artacaktı. O zaman I 6 olacaktı. Bu sefer ilk koşulda I...
+
+177
+00:21:01,268 --> 00:21:14,548
+küçük n mi diye sorduğumuzda, 6 küçük 6 dediğimizde, koçla uymadığı için girmeyecektik içeri. Bu sefer gidecekti, A6'ya bakacaktı. Peki burada nasıl bir durum olacaktı?
+
+178
+00:21:20,884 --> 00:21:21,644
+Evet [öğrenci].
+
+179
+00:21:22,503 --> 00:21:24,604
+C dilinde bir hata veriyordu.
+
+180
+00:21:25,844 --> 00:21:31,583
+Dizinin sonunda yani öyle bir alan ayrılmadığı için hata veriyordu.
+
+181
+00:21:31,683 --> 00:21:32,543
+İsmini unuttum da.
+
+182
+00:21:32,624 --> 00:21:33,644
+Segmentation Fold.
+
+183
+00:21:33,844 --> 00:21:34,743
+Evet hocam.
+
+184
+00:21:35,071 --> 00:21:47,871
+Şimdi siz aslında burada nereye erişmiş oluyorsunuz? Sizin kullanmak için izin almadığınız bir noktaya yani 6. göze bir başka de işte 7. göze erişmeye çalışıyorsunuz.
+
+185
+00:21:47,871 --> 00:21:53,871
+Demek ki bu şekilde ifade edersek algoritmayı, algoritmamızda...
+
+186
+00:21:55,028 --> 00:22:02,548
+O tabii ki platforma bağlı ama normal bir standart, ANC standartlarına yazılmış bir kodda segmentation fault alırsınız.
+
+187
+00:22:03,327 --> 00:22:10,728
+Ama işte Windows gibi platformlar bunu görmezden gelebiliyor ya da o alanı sizin erişiminize mümkün kılabiliyor.
+
+188
+00:22:11,368 --> 00:22:14,908
+Siz A6'ya erişmek için bu koşulu çalıştırmış olabiliyorsunuz.
+
+189
+00:22:14,948 --> 00:22:17,048
+O zaman burada neyi değiştirmemiz lazım?
+
+190
+00:22:25,044 --> 00:22:25,764
+Evet, [öğrenci].
+
+191
+00:22:28,844 --> 00:22:34,684
+İlk olarak hocam, i'nin n'den büyük olup olmadığını kontrol etmemiz lazım.
+
+192
+00:22:35,284 --> 00:22:36,204
+Zaten onu yapıyoruz.
+
+193
+00:22:38,584 --> 00:22:40,644
+Hangi kısımda ilk olarak yapmamız lazım?
+
+194
+00:22:42,004 --> 00:22:46,304
+Tamam, while'dan çıktıktan sonra yapmamız gerekmiyor.
+
+195
+00:22:47,524 --> 00:22:51,724
+Hangi koşul yani sonra çıkardı ve o yüzden while'dan çıktık?
+
+196
+00:22:52,051 --> 00:22:53,631
+Bunu konuşmamız gerekiyor.
+
+197
+00:22:53,651 --> 00:22:59,271
+Okey ama buradaki sıkıntı şu. Ben eğer i koşuluna kontrol ersem iki tane koşul koymuş olacağım. Doğru mu?
+
+198
+00:23:00,111 --> 00:23:00,391
+Hı hı.
+
+199
+00:23:01,531 --> 00:23:12,391
+O zaman şimdi onun yerine bunu kaldırıp a eşittir, a i eşittir, x'i kaldırıp sadece i küçük n desem olur mu?
+
+200
+00:23:14,391 --> 00:23:15,031
+Hı hı.
+
+201
+00:23:17,652 --> 00:23:20,672
+Sanırım yine kontrol etmemiz gerekecek.
+
+202
+00:23:23,031 --> 00:23:25,771
+Peki, başka önerisi olan, teşekkür ediyorum [öğrenci]'a.
+
+203
+00:23:28,811 --> 00:23:30,831
+Evet, bu arada yine aynı kişilerle ders yapıyorum.
+
+204
+00:23:31,912 --> 00:23:35,071
+Bu son dersimiz olacak bu şekilde.
+
+205
+00:23:35,172 --> 00:23:37,231
+Bundan sonraki derste tek tek soru soruyor olacağım.
+
+206
+00:23:37,791 --> 00:23:43,311
+O yüzden lütfen katılabilecek bilgi sahibi olan arkadaşlarımız derse katkı sağlasınlar.
+
+207
+00:23:44,723 --> 00:23:53,064
+Tekrar soruyorum, şu anda neyi değiştirirsek bu algoritmadaki segmentation fault oluşma riskini ortadan kaldırırız.
+
+208
+00:23:53,644 --> 00:23:54,423
+Akış diagramındaki.
+
+209
+00:24:04,243 --> 00:24:04,963
+Evet, [öğrenci].
+
+210
+00:24:06,763 --> 00:24:10,683
+Hocam, küçüktür, ı, küçüktür, n yapacağımızda küçük eşit yapsak orada.
+
+211
+00:24:10,683 --> 00:24:29,611
+Evet, bir fikir hemen deneyelim. Arkadaşınızdan bir fikir geldi. Şuraya ı, küçük, eşit, n koyalım. I, küçük, n yerine diyor. Bakalım. Şimdi diyelim ki burada...
+
+212
+00:24:29,619 --> 00:24:45,680
+6. noktaya geldik ve 6 küçük eşit 6 mı dedik? Evet. Bu sefer A6 küçük müdür X diyeceğiz [öğrenci]. Bu sefer de gene A6'ya erişmeye çalışıyoruz. Doğru mu?
+
+213
+00:24:49,395 --> 00:24:53,735
+Evet hocam, o zaman büyük türü yapabiliriz hocam.
+
+214
+00:24:54,175 --> 00:24:59,495
+Bu da çok tercih edeceğimiz bir durum değil. Evet, farklılığına yapabiliriz.
+
+215
+00:25:00,035 --> 00:25:04,895
+Mesela şimdi arkadaşlar, hani demiştim ya bu algoritma çok kolay, işte hani üzerinden hızlıca geçeceğiz.
+
+216
+00:25:04,995 --> 00:25:13,295
+Şu anda farkındaysanız hala çok önceden bu işi bitirmiş olduğumuz bir algoritmayı konuşuyoruz ve hala istediğimiz cevabı alamadık.
+
+217
+00:25:13,295 --> 00:25:15,295
+İşte bu...
+
+218
+00:25:15,824 --> 00:25:19,984
+Yüzden bu tür basit algoritmalarla başladık. Bunları çözmemiz lazım.
+
+219
+00:25:21,024 --> 00:25:21,424
+[öğrenci].
+
+220
+00:25:26,579 --> 00:25:27,079
+[öğrenci]?
+
+221
+00:25:30,079 --> 00:25:33,019
+Küçük eşittir, n-1 dersek olur mu hocam?
+
+222
+00:25:34,279 --> 00:25:37,579
+Küçük eşittir, n-1 dememizin n'den farkı nedir?
+
+223
+00:25:40,360 --> 00:25:42,259
+Hiçbir farkı yok benim düşünmüyorum.
+
+224
+00:25:42,299 --> 00:25:48,019
+Hocam, küçüktür, n-1 dersek şey olur. Pardon, eşittir olmayacak hocam, yanlış söyledim.
+
+225
+00:25:49,720 --> 00:25:51,579
+Küçüktür, n-1 olursa bu sefer...
+
+226
+00:25:53,652 --> 00:26:00,572
+Sonuncusunu kontrol eder gene ama altıncı bizim sorun olan yeğen kontrol etmez.
+
+227
+00:26:01,032 --> 00:26:02,272
+Bir fikir hemen deneyelim.
+
+228
+00:26:06,675 --> 00:26:19,695
+Arkadaşınız der ki buraya n-1 koyarsak n yerine küçük türlü değiştirmezsek sorun çözülecektir. Bakalım bir örnek olarak mantıklı mı değil mi?
+
+229
+00:26:19,695 --> 00:26:29,935
+Şimdi biz 6 tane örneğimiz vardı. 9 sayısını burada arıyorduk. Onu da düzeltelim hemen. Şuraya 9 yazalım.
+
+230
+00:26:33,299 --> 00:26:52,460
+9'u aradığımızda biz en son 5 i 5 iken 5 küçük 5 mi dedik? Pardon 5 küçük et. 6-1'den dolayı 5 küçük 5 mi dedik? Hayır değil. O yüzden çıktık. Gittik. Bu sefer nereye geldik? Şu ifin olduğu yere geldik.
+
+231
+00:26:53,839 --> 00:27:16,839
+A, I'ye eşit mi diye baktık. I neydi? 5. X neydi? 9. 9, A5'e eşit mi? 9, 8'e eşit olmadığı için not found dedi çıktı. Demek ki başarıyla burayı atlattık. Peki 8'i arıyor olsaydık o zaman ne olacaktı? Gene burada I, 5 iken çıkmış olacaktı. Buraya geldiğinde bu sefer...
+
+232
+00:27:17,332 --> 00:27:22,272
+X8 olduğu için A5 ile 8 olduğu için 8 8'e eşit mi? Evet.
+
+233
+00:27:23,052 --> 00:27:27,532
+Buraya I yazılacaktık ve program sonlanmış olacaktı.
+
+234
+00:27:27,532 --> 00:27:40,731
+Demek ki [öğrenci]'in burada vermiş olduğu bu basit değişiklik konusundaki bilgi bizim akış diagramımızın ve algoritmalarımızın doğru çalışmasına katkıda bulunmuş oldu.
+
+235
+00:27:40,812 --> 00:27:41,832
+Evet, teşekkür ediyorum [öğrenci].
+
+236
+00:27:44,819 --> 00:27:47,059
+Sorusu olan var mı burada anlaşılmayan bir şey?
+
+237
+00:27:49,799 --> 00:27:55,279
+Niye n'den neksi 1'e geçtik? Çünkü n olsaydı a6'ya erişmek isteyecekti.
+
+238
+00:27:55,731 --> 00:28:09,731
+Herhangi bir case'de yani diyelim ki 9'u aradığımızda o zaman da A6'ya dizi 5'e kadar bize ayrıldığı için A6'ya erişme hakkımız olmadığı için segmentation fault araya alıyor olacaktık.
+
+239
+00:28:10,131 --> 00:28:23,131
+Bu da dikkat edilmesi gereken noktalardan özellikle sınırlarla ilgili n, n-1, n-2 geçen haftada biliyorsunuz daha doğrusu geçtiğimiz derste de bu.
+
+240
+00:28:23,731 --> 00:28:28,491
+Selection sort'un sınırlarını konuşmuştuk. Bunlara dikkat etmekte fayda var.
+
+241
+00:28:30,311 --> 00:28:31,371
+Evet [öğrenci].
+
+242
+00:28:32,591 --> 00:28:43,371
+Hocam aklıma bir şey takıldı da. İlk başta I'yi sıfırdan başlatıyoruz. Ondan sonra girdiğimiz gibi direkt dediğimiz için A sıfır kontrol etmiyoruz sanki. Ben mi yanlış görüyorum?
+
+243
+00:28:44,491 --> 00:28:50,651
+Nerede kontrol ediyoruz? Biz A'ı küçüktür, X'i wilde kontrol ediyoruz. Doğru mu?
+
+244
+00:28:51,284 --> 00:28:52,324
+Evet.
+
+245
+00:28:52,944 --> 00:28:54,864
+Tamam, o zaman demek ki I daha değişmiyor.
+
+246
+00:28:57,184 --> 00:29:02,324
+Ama şey, şurada hani A0 eşittir X, True False kontrolü yapmıyoruz.
+
+247
+00:29:04,064 --> 00:29:09,764
+Şimdi evet, düşündüğüm hatayı maalesef görüyorum şu anda.
+
+248
+00:29:09,764 --> 00:29:11,764
+Senin aslında...
+
+249
+00:29:12,307 --> 00:29:23,648
+Hataya sebebiyet veren şey şu. Sen bizim bir şeklinde çıktığımız noktanın, yani şuranın buraya bağlandığı noktanın döngü içinde olduğunu mu düşünüyorsun?
+
+250
+00:29:23,968 --> 00:29:24,688
+Evet, öyle.
+
+251
+00:29:25,228 --> 00:29:33,788
+Öyle düşünüyorsun. Arkadaşlar bu çok ciddi dikkat etmeniz gereken bir nokta. Biz şuradan itibaren artık Wild'dan çıkmış oluyoruz. Bütün mevzu burada oluyor.
+
+252
+00:29:35,148 --> 00:29:38,848
+Wild'ın burada başladığını ve şurada bittiğini unutmayın. Tamam.
+
+253
+00:29:39,827 --> 00:29:40,548
+Tamamdır.
+
+254
+00:29:41,028 --> 00:29:54,168
+Yani bu bir anlık olabilir. Şu an görselden kaynaklı da olabilir ama bazen bu hakikaten sizin dikkatsizliğinizin ötesinde başka sebeplerle bunu yanlış yorumlayabiliyorsunuz. Bunlara dikkat etmekte fayda var. [öğrenci] bir soru mu soracaksın?
+
+255
+00:29:56,827 --> 00:29:58,888
+Yok hocam elim havada kalmış indireyim.
+
+256
+00:29:58,888 --> 00:30:02,587
+Okey. Başka sorusu olan var mı bu konuyla ilgili?
+
+257
+00:30:04,531 --> 00:30:07,871
+Geçtiğimiz, derste yaptığımız konularla ilgili sorusu olanlar mı?
+
+258
+00:30:08,692 --> 00:30:12,971
+Şimdi kısa özet ve sonra dersi, bugünkü dersi tamamlıyoruz.
+
+259
+00:30:13,192 --> 00:30:15,871
+Bir, bugün neyi gördük?
+
+260
+00:30:17,251 --> 00:30:20,991
+Algoritma analizi yaparken iki türlü analiz yapabileceğimizi.
+
+261
+00:30:21,071 --> 00:30:23,731
+Bir, zaman karmaşıklığı. İki, yer karmaşıklığı.
+
+262
+00:30:25,831 --> 00:30:26,531
+Onun ötesinde...
+
+263
+00:30:27,188 --> 00:30:36,288
+Time Complexity için kaç farklı case'i değerlendirebileceğimiz best case, average case ve worst case ki bunlardan daha çok worst case üzerinde duracağız.
+
+264
+00:30:37,188 --> 00:30:45,988
+Bunları ifade ederken Big O notasyonunu kullanacağımızı ve bu Big O notasyonunu belirlerken de döngülerin belirleyici olduğunu söylemiştik.
+
+265
+00:30:46,836 --> 00:30:59,656
+Burada da bir döngümüz var ve bu döngünün neticesinde sıralı ve sırasız dizide arama yapmanın, sequential search kullanarak arama yapmanın bize maliyeti en kötü durumda o an olarak ifade edilir dedik.
+
+266
+00:31:00,976 --> 00:31:09,576
+Linear ve diğer adıyla sequential search'un unsorted eraylerde ve sorted eraylerde ki ufak farkından bahsettik.
+
+267
+00:31:10,804 --> 00:31:21,064
+Artı bir dizide unique elemanlar var olduğunu kabul ederek yaptığımız search konusunda şu anda bir çözüm geliştirdik.
+
+268
+00:31:21,604 --> 00:31:28,443
+Eğer birden fazla eleman olsaydı tek tek bütün döngüdeki elemanlara bakmamız gerektiğinden bahsettik.
+
+269
+00:31:28,584 --> 00:31:35,604
+Eğer eleman sayısını bilmiyor isek, eleman sayısını biliyor isek gene bunun kontrolünü yapma şansımızı konuştuk.
+
+270
+00:31:37,076 --> 00:32:02,096
+Sınır değerleri ne kadar kritik olduğunu gördük. Segmentation fault almanızı engelleyebilecek çözümden bahsettik. Bir de analizin nasıl yapılabileceğini size hatırlatmış olduk. Bu yorum saat içinde oldukça çok fazla konuya değinmiş olduk. Katıldığınız için teşekkür ediyorum. Pazartesi günü görüşmek üzere arkadaşlar. İyi haftalar. Kendinize iyi bakın.
