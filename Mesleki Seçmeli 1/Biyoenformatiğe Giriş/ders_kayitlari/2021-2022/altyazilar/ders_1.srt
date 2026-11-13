@@ -1,0 +1,3203 @@
+1
+00:01:59,347 --> 00:02:00,987
+Genelden sesini görebiliyor musunuz?
+
+2
+00:02:04,691 --> 00:02:05,311
+Evet hocam.
+
+3
+00:02:06,991 --> 00:02:08,411
+Tamam, net anlaşabilirim.
+
+4
+00:02:17,843 --> 00:02:21,243
+Tabi bu hastalık online oldu.
+
+5
+00:02:21,243 --> 00:02:23,644
+Sahtimiz olduğu için okula.
+
+6
+00:02:23,644 --> 00:02:26,443
+Anlımda ekmeyi sorun.
+
+7
+00:02:26,443 --> 00:02:28,843
+Sahtaya normal vermeyeceğiz.
+
+8
+00:02:34,324 --> 00:02:36,164
+Karnımcayağı, tamam.
+
+9
+00:03:26,259 --> 00:03:28,259
+Ekleyen veriyorsunuz.
+
+10
+00:03:36,627 --> 00:03:37,487
+Görünüyor hocam.
+
+11
+00:03:39,667 --> 00:03:44,167
+Okay, we continue with some basic introductions.
+
+12
+00:03:45,767 --> 00:03:56,267
+Let's go over one by one of these subfields of computational biology, genomics.
+
+13
+00:03:58,407 --> 00:04:03,987
+Genomics is the study of the genome.
+
+14
+00:04:04,756 --> 00:04:17,956
+Study of the genome. As you know, the ICS Latin, it comes after a word, it also means the study of something.
+
+15
+00:04:21,156 --> 00:04:30,596
+Genomics means study of genome. So, genome is the complete set of the genetic material or DNA.
+
+16
+00:04:31,088 --> 00:04:33,088
+present in an organism.
+
+17
+00:04:35,848 --> 00:04:46,248
+Although we will mention what DNA is or what, this sort of information in the next lectures,
+
+18
+00:04:46,968 --> 00:04:50,807
+you should remember from the biology courses.
+
+19
+00:04:51,968 --> 00:04:53,260
+Genomics...
+
+20
+00:04:53,396 --> 00:05:20,268
+ve genelde
+
+21
+00:05:20,276 --> 00:05:43,148
+Bu, bu
+
+22
+00:05:43,956 --> 00:05:48,875
+gen etik blueprint of a human being.
+
+23
+00:05:50,995 --> 00:05:54,036
+Another field was proteomics.
+
+24
+00:05:55,196 --> 00:05:59,475
+Again, it is a large scale study of proteomics.
+
+25
+00:06:00,556 --> 00:06:10,915
+A proteome is a set of proteins produced in an organism or system or biological context.
+
+26
+00:06:37,139 --> 00:06:42,939
+constant, it differs from cell to cell and changes over time.
+
+27
+00:06:44,539 --> 00:06:50,740
+To some degree, the protein reflects the underlying transcript form.
+
+28
+00:06:51,740 --> 00:06:58,139
+Our protein activity is also modulated by many factors.
+
+29
+00:06:59,187 --> 00:07:06,187
+Affected by many factors in addition to an expression level of the relevant gene.
+
+30
+00:07:09,788 --> 00:07:15,067
+Protonics is used to investigate when and where proteins are expressed,
+
+31
+00:07:17,107 --> 00:07:24,187
+rates of protein production, regulation and steady state abundance, how proteins are modified.
+
+32
+00:08:07,795 --> 00:08:26,603
+Bu, bu
+
+33
+00:08:27,444 --> 00:08:34,443
+Protonimist can provide significant biological information for many biological problems,
+
+34
+00:08:34,443 --> 00:08:39,443
+such as, which proteins interact with a particular protein of interest?
+
+35
+00:08:41,443 --> 00:08:50,443
+There are a lot of bioinformatic studies investigating these interactions computationally.
+
+36
+00:08:51,091 --> 00:08:55,591
+Which proteins are localized to the sub-cellular compartment?
+
+37
+00:08:56,591 --> 00:09:00,364
+Which proteins are involved in a biological process?
+
+38
+00:09:09,248 --> 00:09:21,355
+İç proteinlerle
+
+39
+00:09:08,019 --> 00:09:21,019
+The bees are usually some studies you may get involved eventually if you decide to go into bioinformatics here.
+
+40
+00:09:25,796 --> 00:09:29,796
+İç proteinlerle
+
+41
+00:09:24,403 --> 00:09:33,483
+Structural bioinformatik, or structural genomics, is the branch of bioinformatik, as we said before,
+
+42
+00:09:34,283 --> 00:09:40,844
+which is related to analysis and prediction of the three-dimensional structure of biological micro-molecules,
+
+43
+00:09:41,584 --> 00:09:47,963
+such as proteins, RNA, and DNA, is geared with this structure basically.
+
+44
+00:09:50,163 --> 00:10:11,163
+So, it deals with generalizations of micromolecular TV structure, such as comparisions of power folds and local motifs, principles of molecular folding, evolution and binding interactions, and structure-function relationships.
+
+45
+00:10:11,163 --> 00:10:17,163
+Working both from experimental solve structures and from computational models.
+
+46
+00:10:20,851 --> 00:10:24,971
+Function genomics is a field of molecular biology,
+
+47
+00:10:24,971 --> 00:10:34,251
+which attempts to make use of the vast wealth of data given by genomic and transcriptomic projects
+
+48
+00:10:35,971 --> 00:10:39,892
+to describe gene functions and interactions.
+
+49
+00:10:41,908 --> 00:10:49,228
+Bu dağlayı, struktural genomics ile buçuk
+
+50
+00:11:58,419 --> 00:12:26,155
+Bu da bilgilerin, bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin
+
+51
+00:12:27,251 --> 00:12:40,251
+Bu graph shows a growth of gen bank based here, the database gen bank.
+
+52
+00:12:40,251 --> 00:12:48,251
+It shows the growth rate until 99.5% future.
+
+53
+00:12:48,251 --> 00:12:52,251
+It is much, much higher now.
+
+54
+00:12:54,868 --> 00:12:59,888
+İzlediğiniz için, bu
+
+55
+00:12:59,888 --> 00:13:00,947
+2000
+
+56
+00:13:07,508 --> 00:13:17,508
+So one of the main purposes of the fight human disease is basically, or a quick deal of bioinformatics.
+
+57
+00:13:17,508 --> 00:13:35,340
+There are diseases genetically inherited, such as diabetes, et cetera, or there are viral diseases which we suffer personally, or suffer last bit, more commonly called COVID, et cetera.
+
+58
+00:13:35,347 --> 00:14:00,747
+Baktere, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar, baksanlar
+
+59
+00:14:01,331 --> 00:14:27,052
+Bu, bu
+
+60
+00:14:28,275 --> 00:14:55,039
+Bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarzı bu tarz
+
+61
+00:14:55,039 --> 00:15:00,039
+A substance is discovered, it is, it can be used.
+
+62
+00:15:00,039 --> 00:15:04,039
+Then this substance is tested.
+
+63
+00:15:08,039 --> 00:15:10,039
+On lab and...
+
+64
+00:15:10,039 --> 00:15:14,039
+In lab and animal, on animals.
+
+65
+00:15:14,039 --> 00:15:16,039
+In triclimitim testing.
+
+66
+00:15:18,039 --> 00:15:20,039
+In phase one...
+
+67
+00:15:20,851 --> 00:15:46,699
+Bu, bu
+
+68
+00:15:47,059 --> 00:16:14,955
+...
+
+69
+00:16:15,155 --> 00:16:17,155
+1000-5000
+
+70
+00:16:19,155 --> 00:16:22,155
+ve
+
+71
+00:16:22,155 --> 00:16:23,155
+drugs
+
+72
+00:16:23,155 --> 00:16:25,155
+ve
+
+73
+00:16:27,155 --> 00:16:29,155
+federal drug agency
+
+74
+00:16:29,155 --> 00:16:31,155
+or
+
+75
+00:16:31,155 --> 00:16:32,155
+Sağlık Bakanlı
+
+76
+00:16:32,155 --> 00:16:33,155
+or
+
+77
+00:16:33,155 --> 00:16:34,155
+any other
+
+78
+00:16:34,155 --> 00:16:35,155
+agencies
+
+79
+00:16:35,155 --> 00:16:37,155
+in many countries
+
+80
+00:16:37,155 --> 00:16:39,155
+approves
+
+81
+00:16:39,155 --> 00:16:41,155
+this drug to be used
+
+82
+00:16:55,956 --> 00:17:02,539
+ve bu kıyısız, bu kıyısız çayda ç
+
+83
+00:17:05,715 --> 00:17:12,715
+ve bu durumda bir şey var.
+
+84
+00:17:33,971 --> 00:17:57,900
+Bu, bu
+
+85
+00:18:54,932 --> 00:19:22,508
+...
+
+86
+00:19:26,963 --> 00:19:35,083
+Bu, bu, biotecnoloji, özellikle drug industry,
+
+87
+00:19:35,083 --> 00:19:39,804
+birçok kullanıcı birçok kullanıcıdır.
+
+88
+00:20:20,051 --> 00:20:42,051
+bu
+
+89
+00:20:43,859 --> 00:20:54,440
+Oportajı, genel olarak, medisiyem, personalizasy, medisiyem, everybody must get their own specific drug.
+
+90
+00:20:56,759 --> 00:21:04,559
+Now just in a minute, we've seen the drug development life cycle.
+
+91
+00:21:04,559 --> 00:21:11,559
+It takes 5-15 years if personalized drug is...
+
+92
+00:21:12,211 --> 00:21:39,211
+Bu, bu
+
+93
+00:21:39,347 --> 00:21:54,379
+Bu da bu da bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir çoğunla ilgili bir ç
+
+94
+00:21:56,468 --> 00:22:02,228
+Bu, bu olden olden modern medicine,
+
+95
+00:22:02,228 --> 00:22:05,028
+drug industry,
+
+96
+00:22:05,028 --> 00:22:08,508
+doctor,
+
+97
+00:22:08,508 --> 00:22:10,508
+bu bir medicine için,
+
+98
+00:22:10,508 --> 00:22:12,508
+bu bir medicine için.
+
+99
+00:22:12,508 --> 00:22:16,428
+Bu, drug industry,
+
+100
+00:22:16,428 --> 00:22:19,508
+geri dönemler için,
+
+101
+00:22:19,508 --> 00:22:24,148
+bu,
+
+102
+00:22:24,339 --> 00:22:32,339
+Bir şey var.
+
+103
+00:22:43,251 --> 00:22:47,251
+ve ettenli olmalıdır.
+
+104
+00:22:47,251 --> 00:22:50,251
+Yani bu da bir şey yoktu.
+
+105
+00:22:50,251 --> 00:23:01,067
+Bu bir şey yoktu.
+
+106
+00:23:09,907 --> 00:23:10,907
+Evet.
+
+107
+00:23:34,867 --> 00:23:36,867
+İntro kuşu sampleri.
+
+108
+00:23:36,867 --> 00:23:39,867
+Bu da bir zilalık.
+
+109
+00:24:00,764 --> 00:24:02,764
+İntro, kuşu sampleri.
+
+110
+00:24:05,723 --> 00:24:07,723
+Bu, biotecnologi,
+
+111
+00:24:07,723 --> 00:24:10,044
+ishiden,
+
+112
+00:24:10,044 --> 00:24:28,192
+onlattık,
+
+113
+00:24:26,067 --> 00:24:28,988
+ve alayız is soğ,
+
+114
+00:24:30,148 --> 00:24:30,988
+it
+
+115
+00:24:32,108 --> 00:24:33,788
+highly depends on
+
+116
+00:24:33,788 --> 00:24:35,468
+concept of konularını.
+
+117
+00:24:36,468 --> 00:24:37,548
+It's key
+
+118
+00:24:37,988 --> 00:24:40,508
+the processes, especially testing,
+
+119
+00:24:40,508 --> 00:24:41,428
+panamogies
+
+120
+00:24:41,948 --> 00:24:43,748
+flux into this cycle.
+
+121
+00:24:51,892 --> 00:24:52,892
+I think...
+
+122
+00:25:26,195 --> 00:25:31,195
+There are many central resources such as NCDI, MDI,
+
+123
+00:25:31,195 --> 00:25:38,195
+we will be discussing this concept later.
+
+124
+00:25:38,195 --> 00:25:48,195
+There are many genomic browsers, web-based applications, web-based software to use, tool-based software.
+
+125
+00:25:50,195 --> 00:25:51,195
+On the other hand,
+
+126
+00:26:30,132 --> 00:26:30,552
+Thank you.
+
+127
+00:26:35,251 --> 00:26:42,751
+So, the question is, should you learn to use Linux operating C?
+
+128
+00:26:42,751 --> 00:26:44,011
+Yes, we should, of course.
+
+129
+00:26:45,612 --> 00:26:48,291
+Should you learn Python or Perl or R?
+
+130
+00:26:49,291 --> 00:26:50,612
+Of course you should learn.
+
+131
+00:26:51,251 --> 00:26:55,372
+And we will be using mostly Perl in this lecture.
+
+132
+00:26:57,044 --> 00:27:23,372
+İlk olarak kullanırsa R, Python ve bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yasla kullanırsa bir yas
+
+133
+00:27:30,996 --> 00:28:22,475
+Bu, bu
+
+134
+00:28:26,099 --> 00:28:52,139
+Kürlüsü'nün
+
+135
+00:29:15,763 --> 00:29:38,443
+Bu da bu
+
+136
+00:30:09,395 --> 00:30:23,243
+... ...
+
+137
+00:30:26,483 --> 00:30:48,139
+Bu, bu
+
+138
+00:32:34,355 --> 00:32:38,355
+Learning comes to visual perception.
+
+139
+00:32:40,355 --> 00:32:44,355
+So if you do this, it becomes your own.
+
+140
+00:32:44,355 --> 00:32:46,355
+You have to learn by heart.
+
+141
+00:32:48,355 --> 00:32:49,355
+Ok.
+
+142
+00:33:00,339 --> 00:33:02,339
+Bir study,
+
+143
+00:33:02,339 --> 00:33:04,339
+sometimes
+
+144
+00:33:04,339 --> 00:33:06,339
+you...
+
+145
+00:33:06,339 --> 00:33:08,339
+at least
+
+146
+00:33:08,339 --> 00:33:12,339
+before you graduate
+
+147
+00:33:12,339 --> 00:33:18,339
+you have to
+
+148
+00:33:18,339 --> 00:33:20,339
+make two projects.
+
+149
+00:33:20,339 --> 00:33:22,339
+One is project
+
+150
+00:33:22,339 --> 00:33:24,339
+complete project
+
+151
+00:33:24,339 --> 00:33:26,339
+and the other one is graduation project.
+
+152
+00:33:28,884 --> 00:33:34,384
+ve en çok çalışmalıdır.
+
+153
+00:33:54,804 --> 00:34:17,132
+Bu da bu
+
+154
+00:34:17,364 --> 00:35:10,572
+Bu, bu
+
+155
+00:35:11,731 --> 00:35:29,451
+ve bu şekilde
+
+156
+00:35:32,916 --> 00:35:44,916
+Another important aspect, when you do anything, when you want to draw future working to work base,
+
+157
+00:35:44,916 --> 00:35:47,916
+the work law should be well documented.
+
+158
+00:35:49,916 --> 00:35:57,676
+This may include keeping text documents on your computer in which you can copy on face complex commands.
+
+159
+00:35:57,876 --> 00:36:00,876
+PRLs or other funks of data.
+
+160
+00:36:00,876 --> 00:36:08,876
+To facilitate your work, information stored on a computer should be well-organized.
+
+161
+00:36:08,876 --> 00:36:12,652
+Data should be made available to others.
+
+162
+00:36:18,963 --> 00:36:22,963
+Metadata can be equally exclusive of data.
+
+163
+00:36:22,963 --> 00:36:27,963
+You might have a huge data file.
+
+164
+00:36:27,963 --> 00:36:34,963
+If you do not have any data explaining metadata,
+
+165
+00:36:34,963 --> 00:36:43,963
+in the future you might have problem to remember what the data was.
+
+166
+00:36:47,411 --> 00:37:13,611
+Bu, bu
+
+167
+00:37:47,003 --> 00:37:49,983
+Ama
+
+168
+00:38:24,115 --> 00:38:26,115
+There is comments from the program.
+
+169
+00:38:28,115 --> 00:38:33,003
+Again, you may struggle with the class after a couple of months later.
+
+170
+00:38:54,931 --> 00:39:08,931
+İntara, protein, anağız, and structure production, next generation sequencing technology, kompetent, chicken sanatçı, systems biology, and test mind and information extraction.
+
+171
+00:39:08,931 --> 00:39:14,931
+These are our summaries of this bioinformatik research IAS.
+
+172
+00:39:23,668 --> 00:39:25,668
+Google Searching
+
+173
+00:39:25,668 --> 00:39:28,668
+Reading 11 Proof
+
+174
+00:39:28,668 --> 00:39:30,668
+Artikası
+
+175
+00:39:30,668 --> 00:39:32,668
+Genel
+
+176
+00:39:32,668 --> 00:39:33,668
+Conferences
+
+177
+00:40:06,228 --> 00:40:07,828
+So, do you have any questions?
+
+178
+00:40:13,043 --> 00:40:13,864
+Yok hocam.
+
+179
+00:40:16,824 --> 00:40:19,463
+Biz de duymak istiyoruz. Oradan oku değilim.
+
+180
+00:40:24,384 --> 00:40:26,503
+Döntümüzü de açıyla diyemiyoruz.
+
+181
+00:40:43,668 --> 00:40:45,668
+Ok, next.
+
+182
+00:40:45,668 --> 00:40:48,668
+Again, we'll be covering some fundamentals.
+
+183
+00:40:48,668 --> 00:40:59,668
+Just to remind you that probably most of you have already seen what I'm going to present now.
+
+184
+00:40:59,668 --> 00:41:04,668
+These slides.
+
+185
+00:41:07,699 --> 00:41:34,539
+Bu, bu
+
+186
+00:42:11,956 --> 00:42:12,635
+M-m-m.
+
+187
+00:42:17,780 --> 00:42:20,880
+Ekranı ötüydü, bir şey işleyip kapatmamıştım.
+
+188
+00:42:26,164 --> 00:42:29,824
+[öğrenci] görülüyorsun değil mi? Evet hocam görülüyorum.
+
+189
+00:42:32,744 --> 00:42:33,864
+Evet hocam görülüyorum.
+
+190
+00:43:21,364 --> 00:43:24,364
+Science of Information plus
+
+191
+00:43:25,844 --> 00:43:33,043
+Origin Reward is developed by combination of information and automatics
+
+192
+00:43:34,684 --> 00:43:38,123
+Implant that informatics in the science of
+
+193
+00:43:41,364 --> 00:43:45,123
+Automation of information processing
+
+194
+00:43:46,203 --> 00:43:48,003
+Science of Information
+
+195
+00:43:48,307 --> 00:44:12,876
+ve bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel bilimsel
+
+196
+00:44:15,059 --> 00:44:41,739
+ve bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilg
+
+197
+00:44:41,907 --> 00:44:42,947
+İmtiğin.
+
+198
+00:45:13,460 --> 00:45:20,340
+So, the information is data that has been interpreted or processed.
+
+199
+00:45:21,619 --> 00:45:29,860
+That is some meaning for the user because we process the data and we obtain some information.
+
+200
+00:45:30,779 --> 00:45:39,619
+Over the time, if we obtain many information and now we have...
+
+201
+00:45:40,467 --> 00:45:48,747
+ve bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilgilerin, bilg
+
+202
+00:45:52,403 --> 00:46:15,980
+...
+
+203
+00:46:16,724 --> 00:46:20,724
+So, we will talk about data later.
+
+204
+00:46:20,724 --> 00:46:29,724
+Again, data has some properties, important properties.
+
+205
+00:47:07,635 --> 00:47:09,635
+Doğru, ne?
+
+206
+00:47:17,172 --> 00:47:25,172
+A system simply can be defined as an integrated set of elements that accomplish and define objectives.
+
+207
+00:47:25,172 --> 00:47:32,172
+Now this is a very concise definition of the system.
+
+208
+00:47:32,172 --> 00:47:34,172
+How it fits, it says,
+
+209
+00:47:34,172 --> 00:47:40,172
+a system has some components or sub-elements.
+
+210
+00:47:40,172 --> 00:47:44,172
+This is the first one. The second.
+
+211
+00:47:44,884 --> 00:47:49,384
+Bu birçok suelemeni de birbirine farklı birbirine var.
+
+212
+00:47:54,132 --> 00:48:06,132
+But, they are called around a specific purpose, they have a common objective, a final objective.
+
+213
+00:48:08,692 --> 00:48:20,132
+So, if they have this properties, then these separate elements can form a system or we call it system.
+
+214
+00:48:50,996 --> 00:48:54,996
+Bu birçok, bu birçok, birçok.
+
+215
+00:49:17,311 --> 00:49:45,195
+İlk olarak, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde,
+
+216
+00:49:45,619 --> 00:49:50,059
+Stor, move, organize, process, filen, information.
+
+217
+00:49:50,579 --> 00:49:57,179
+Now, the storing, moving, organizing, and processing basically refers to...
+
+218
+00:49:58,899 --> 00:50:04,339
+...somehow, fundamental, contiguous definition.
+
+219
+00:50:06,099 --> 00:50:13,500
+Information Technology, ABP covers, Components that implement, Information Systems.
+
+220
+00:50:15,099 --> 00:50:26,500
+These are hardware, not only computers, but tools such as, paper, test, whatever.
+
+221
+00:50:28,099 --> 00:50:31,099
+Software, it is for computers.
+
+222
+00:50:49,916 --> 00:50:52,916
+Şimdi, digital system.
+
+223
+00:51:02,068 --> 00:51:05,068
+İntro states and outputs
+
+224
+00:51:06,068 --> 00:51:10,068
+But in digital systems inputs are discrete
+
+225
+00:51:10,068 --> 00:51:13,068
+Internal systems states are discrete
+
+226
+00:51:13,068 --> 00:51:15,068
+And outputs are discrete
+
+227
+00:51:15,068 --> 00:51:19,068
+Here the keyword is discrete for the digital system
+
+228
+00:51:20,068 --> 00:51:23,068
+The information representation
+
+229
+00:51:23,068 --> 00:51:27,068
+Or data representation in digital systems
+
+230
+00:51:35,603 --> 00:52:00,939
+İzlediğiniz için,
+
+231
+00:52:02,260 --> 00:52:28,876
+İmkansı bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilg
+
+232
+00:52:28,884 --> 00:52:52,523
+ve daha çok daha çok
+
+233
+00:52:56,115 --> 00:53:20,115
+İngiltere
+
+234
+00:53:21,427 --> 00:53:28,427
+ve
+
+235
+00:53:28,427 --> 00:53:36,427
+modern computing systems suffer from these two constraints.
+
+236
+00:53:36,427 --> 00:53:40,427
+Limited memory and limited to C power.
+
+237
+00:53:40,427 --> 00:53:46,427
+Now we said that the continuous data...
+
+238
+00:53:47,539 --> 00:54:13,291
+bu konfaltı ile ilgili bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı bilgilerin alınmaktı
+
+239
+00:54:13,460 --> 00:54:16,460
+How are we going to process them?
+
+240
+00:54:16,460 --> 00:54:18,460
+And how are we going to get results?
+
+241
+00:54:18,460 --> 00:54:22,460
+We need to wait infinitely to see the results.
+
+242
+00:54:22,460 --> 00:54:25,460
+We need an infinite size of memory
+
+243
+00:54:25,460 --> 00:54:29,460
+to be able to store this infinite information.
+
+244
+00:54:29,460 --> 00:54:33,460
+Therefore, this infinite information
+
+245
+00:54:33,460 --> 00:54:37,228
+must be converted to finite.
+
+246
+00:54:37,907 --> 00:54:46,748
+Bu şekilde bu şekilde kullanmak için bir teknik called sampling.
+
+247
+00:54:46,748 --> 00:54:54,587
+Resample bu continualı information to obtain discrete information.
+
+248
+00:54:57,068 --> 00:55:00,907
+Bu şekilde, bu sistemden bir şekilde,
+
+249
+00:55:00,907 --> 00:55:02,907
+internistik bir şekilde,
+
+250
+00:55:02,907 --> 00:55:05,827
+ve bu şekilde.
+
+251
+00:55:06,260 --> 00:55:34,028
+Bu şekilde, bu konferin alın
+
+252
+00:55:34,931 --> 00:55:45,931
+Continuous information is sampled, 10-quantized, 10-e-tized.
+
+253
+00:55:48,931 --> 00:55:50,931
+And this process is...
+
+254
+00:55:56,931 --> 00:55:59,931
+I'll just say this process is...
+
+255
+00:56:01,043 --> 00:56:03,043
+Şunu görelim.
+
+256
+00:56:28,211 --> 00:56:30,211
+Binary code.
+
+257
+00:56:30,211 --> 00:56:55,851
+Bu şekilde.
+
+258
+00:56:56,148 --> 00:57:02,307
+On each level, then is covered with a bit by little code.
+
+259
+00:57:02,307 --> 00:57:12,648
+Because we have 8 levels, we able to cut these 8 levels with a bit of code.
+
+260
+00:57:16,148 --> 00:57:18,548
+2. nber of levels.
+
+261
+00:57:22,003 --> 00:57:25,003
+Log8,
+
+262
+00:57:27,204 --> 00:57:28,664
+on Bayes-QR,
+
+263
+00:57:29,003 --> 00:57:31,204
+will give us 3 kaket.
+
+264
+00:57:31,204 --> 00:57:34,503
+3 kaket is enough to call this information.
+
+265
+00:57:34,503 --> 00:57:41,003
+Now we have, normally we have infinite amount of information,
+
+266
+00:57:41,003 --> 00:57:46,003
+but now we have just only the example 1 kaket.
+
+267
+00:58:32,307 --> 00:58:38,907
+İlteci between these three samples are lost forever.
+
+268
+00:58:39,907 --> 00:58:49,507
+This is one source of error in the presentation.
+
+269
+00:58:49,507 --> 00:58:58,708
+The second error will round up or down these sample values, which is known as quantitation errors.
+
+270
+00:59:00,659 --> 00:59:12,019
+But for us, still this very good documentation still is enough to be able to provide some information.
+
+271
+00:59:13,619 --> 00:59:21,699
+Although we lost most of the information, still we have enough information.
+
+272
+00:59:29,715 --> 00:59:30,715
+Ok.
+
+273
+00:59:32,996 --> 00:59:35,596
+To be able to convert,
+
+274
+00:59:36,516 --> 00:59:37,516
+this is in,
+
+275
+00:59:40,275 --> 00:59:44,155
+this is for representation of analog silvers,
+
+276
+00:59:44,635 --> 00:59:45,956
+and musical ones,
+
+277
+00:59:45,956 --> 00:59:50,355
+we have to convert them analogical converters.
+
+278
+00:59:51,315 --> 00:59:52,635
+You already know this.
+
+279
+00:59:53,300 --> 00:59:59,460
+ve gen ifadesi konularını işlemediklerine izledi.
+
+280
+01:00:29,748 --> 01:00:33,288
+Konfetim sistem, ya da olmalı.
+
+281
+01:00:38,771 --> 01:01:00,612
+İlk,
+
+282
+01:01:01,972 --> 01:01:06,972
+ve gen ifadesi, numarik apasit,
+
+283
+01:01:06,972 --> 01:01:16,972
+ve gen ifadesi konuları,
+
+284
+01:01:31,668 --> 01:01:35,868
+Mergesi of pine and space.
+
+285
+01:01:38,208 --> 01:01:41,188
+We use base 10.
+
+286
+01:01:41,188 --> 01:01:45,528
+We are expressing mergesi of pine and space.
+
+287
+01:01:54,356 --> 01:02:14,356
+So, we already said that the information in the current looking system is represented, the digital data, the script, digital data, finite, with a finite precision.
+
+288
+01:02:16,500 --> 01:02:44,204
+Bu, bu
+
+289
+01:02:44,467 --> 01:02:53,467
+...data types.
+
+290
+01:02:55,467 --> 01:03:03,467
+Basically, in a computing system, two main data types are represented.
+
+291
+01:03:03,467 --> 01:03:10,467
+The first, quantitative, then...
+
+292
+01:03:11,072 --> 01:03:13,372
+Quantitatifli Data Times.
+
+293
+01:03:16,724 --> 01:03:20,724
+Quantitative data types are basically numbers.
+
+294
+01:03:21,724 --> 01:03:26,724
+These can be simply defined as number representation.
+
+295
+01:03:27,724 --> 01:03:33,724
+Quantitative data types can be many different
+
+296
+01:03:34,724 --> 01:03:40,724
+apropos, it could be colors, music, text,
+
+297
+01:03:43,731 --> 01:03:49,731
+ve kodlar, sanki, kodlar, et cetera, many other things could be.
+
+298
+01:03:49,731 --> 01:03:56,731
+Let's start with numeric data pires, number of systems.
+
+299
+01:03:57,731 --> 01:04:04,731
+In concreting system, there are three basic data pires.
+
+300
+01:04:12,467 --> 01:04:45,016
+İntro
+
+301
+01:05:41,907 --> 01:05:47,407
+Bu da A0'a bir şey.
+
+302
+01:05:47,407 --> 01:05:49,407
+A1'a bir şey.
+
+303
+01:05:49,407 --> 01:05:54,407
+Bu da A1'a bir şey.
+
+304
+01:06:08,692 --> 01:06:18,211
+A1'in Türkçe, birler basamağı, onlar basamağı.
+
+305
+01:06:25,204 --> 01:06:37,304
+10. 10, exactly. Then 100, 1000, etc. Then the right side of the fraction is 110, 100, etc.
+
+306
+01:06:41,304 --> 01:06:45,364
+We call it basamaq rather than ağaç.
+
+307
+01:06:45,364 --> 01:06:49,764
+We learn to not that. But it is normal.
+
+308
+01:06:50,483 --> 01:07:09,291
+University of Oklahoma'ın bu şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde
+
+309
+01:07:13,619 --> 01:07:14,079
+2.
+
+310
+01:07:15,079 --> 01:07:15,639
+No.
+
+311
+01:07:16,179 --> 01:07:16,840
+No what?
+
+312
+01:07:17,320 --> 01:07:18,599
+1.
+
+313
+01:07:19,880 --> 01:07:20,460
+A0.
+
+314
+01:07:20,579 --> 01:07:22,880
+This is because this is 2 to 0.
+
+315
+01:07:23,139 --> 01:07:24,880
+A1.
+
+316
+01:07:43,507 --> 01:08:07,823
+Bir de bir
+
+317
+01:08:07,824 --> 01:08:32,684
+Bases, bazen, baz
+
+318
+01:08:33,395 --> 01:08:38,395
+ve gen ifadesi konularını işlemiyemizde, ama aslında,
+
+319
+01:08:38,395 --> 01:08:40,395
+ve gen ifadesi konularını işlemiyemizde,
+
+320
+01:08:40,395 --> 01:08:42,395
+ve gen ifadesi konularını işlemiyemizde.
+
+321
+01:08:44,395 --> 01:08:45,395
+Bu, şimdi,
+
+322
+01:08:46,395 --> 01:09:03,943
+bu,
+
+323
+01:08:53,268 --> 01:08:58,467
+unsigned integer. Unsigned integer is a basic data type.
+
+324
+01:08:59,467 --> 01:09:07,467
+We use the computing system to represent unsigned integers.
+
+325
+01:09:09,268 --> 01:09:17,068
+It is basically the number when you convert a decimal into binary.
+
+326
+01:09:18,068 --> 01:09:20,868
+And its range is 0.
+
+327
+01:09:21,747 --> 01:09:23,747
+2, 2, n minus 1.
+
+328
+01:09:24,467 --> 01:09:33,347
+Including this, it should be actually the same as this sign here.
+
+329
+01:09:38,147 --> 01:09:42,227
+For example, we treat it with 0 to 7.
+
+330
+01:09:44,307 --> 01:09:46,147
+We call it 0 to 15.
+
+331
+01:09:47,587 --> 01:09:48,467
+And this...
+
+332
+01:09:49,043 --> 01:10:14,572
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+333
+01:10:16,115 --> 01:10:27,036
+İnteger, adresi nefekonkutu sistem, nemole adresi, adresi sistem.
+
+334
+01:10:28,136 --> 01:10:29,915
+Let's assign binary integer.
+
+335
+01:10:31,136 --> 01:10:37,576
+The second type is assigned binary integer.
+
+336
+01:10:37,576 --> 01:10:42,975
+When you assign a variable in C,
+
+337
+01:10:44,851 --> 01:10:51,851
+Bu da
+
+338
+01:11:01,492 --> 01:11:28,716
+Bu, bu
+
+339
+01:11:28,884 --> 01:11:50,091
+...
+
+340
+01:11:50,996 --> 01:12:00,996
+Sine, finally, integer, in this component representation, minus 2n-1, to 2n-1-1.
+
+341
+01:12:00,996 --> 01:12:07,996
+It trivits, that means from minus 1 to minus 4 to plus 2.
+
+342
+01:12:09,996 --> 01:12:16,996
+Now, the important thing is that in this representation,
+
+343
+01:12:24,724 --> 01:12:32,623
+Bindarı, numbering, pure component is negative.
+
+344
+01:12:36,564 --> 01:12:39,224
+İ, İ, İ, İ.
+
+345
+01:12:53,028 --> 01:12:56,028
+Şimdi, birçok bir soru var.
+
+346
+01:12:56,028 --> 01:13:00,028
+Bir soru var.
+
+347
+01:13:05,028 --> 01:13:08,028
+Ve bu soru var.
+
+348
+01:13:08,591 --> 01:13:19,307
+...
+
+349
+01:13:23,220 --> 01:13:35,860
+If you think that this one represents a minus in your answer, then your answer is wrong.
+
+350
+01:13:39,060 --> 01:13:41,700
+The correct thinking should be this.
+
+351
+01:13:43,300 --> 01:13:46,260
+A number, please complement.
+
+352
+01:13:47,539 --> 01:14:07,979
+İntro, tüm t
+
+353
+01:14:08,595 --> 01:14:13,595
+We and computer uses the weighted number system.
+
+354
+01:14:13,595 --> 01:14:21,595
+The weighted number system, the total amount is the combination of symbols represent,
+
+355
+01:14:21,595 --> 01:14:23,595
+is found by adding them up.
+
+356
+01:14:23,595 --> 01:14:30,595
+We just multiply the digits and we add them up and we get the number.
+
+357
+01:14:32,532 --> 01:14:39,852
+İntuos component representation as well, it is the same concept, it is exactly the same.
+
+358
+01:14:39,852 --> 01:14:49,452
+You multiply with the weights and add them up, whatever you get, that's the number representation.
+
+359
+01:14:49,452 --> 01:14:57,452
+The only trick is that in two components.
+
+360
+01:14:58,228 --> 01:15:05,228
+ve engeçli bir şekilde
+
+361
+01:15:05,228 --> 01:15:25,163
+bir şekilde
+
+362
+01:15:25,492 --> 01:15:28,792
+Çünkü bu kadar değerli bir şekilde,
+
+363
+01:15:31,292 --> 01:15:33,692
+bu kadar değerli bir şekilde,
+
+364
+01:15:33,692 --> 01:15:39,692
+mesela, bu kadar 16,
+
+365
+01:15:39,692 --> 01:15:41,192
+16.
+
+366
+01:15:42,192 --> 01:15:44,692
+Bu 0 x 1,
+
+367
+01:15:44,692 --> 01:15:46,692
+0 x 2,
+
+368
+01:15:46,692 --> 01:15:48,192
+0 x 4,
+
+369
+01:15:48,192 --> 01:15:49,692
+0 x 8,
+
+370
+01:15:49,692 --> 01:15:53,192
+1 x minus 16.
+
+371
+01:15:53,427 --> 01:15:59,228
+Çünkü, weight of most significant is minus 16.
+
+372
+01:15:59,228 --> 01:16:01,228
+This one for example.
+
+373
+01:16:01,228 --> 01:16:18,028
+1 x 1, 0 x 2, 1 x 4, 5.
+
+374
+01:16:20,659 --> 01:16:25,659
+1 x 8
+
+375
+01:16:29,043 --> 01:16:32,043
+13,
+
+376
+01:16:37,043 --> 01:16:39,043
+1 x minus 16,
+
+377
+01:16:41,043 --> 01:16:44,043
+minus 16 plus 13 minus 3.
+
+378
+01:16:46,043 --> 01:16:49,043
+That's the main difference between
+
+379
+01:16:50,043 --> 01:16:55,043
+sine, magnitude and each component representation.
+
+380
+01:16:55,043 --> 01:16:56,043
+Usually,
+
+381
+01:17:21,811 --> 01:17:25,291
+Ama sadece bir şekilde
+
+382
+01:17:26,652 --> 01:17:27,631
+Hz ve negatif
+
+383
+01:17:31,764 --> 01:17:34,764
+Bu önemli bir şey.
+
+384
+01:17:38,164 --> 01:17:41,963
+Bu, bütün matematik operasyon,
+
+385
+01:17:41,963 --> 01:17:43,564
+aracılık operasyonu,
+
+386
+01:17:43,564 --> 01:17:46,564
+modern computing system
+
+387
+01:17:47,164 --> 01:17:50,564
+performansız bu numaral sistem.
+
+388
+01:17:56,787 --> 01:18:00,107
+ve gen ifadesi konularını işlemiyemizde.
+
+389
+01:18:33,747 --> 01:18:39,567
+İki 32-bit format, ve ne u
+
+390
+01:18:39,567 --> 01:18:44,927
+sivariablen asplot, ve ne format dinle,
+
+391
+01:18:44,927 --> 01:18:51,127
+yi mosimli, is for sivariablen,
+
+392
+01:18:53,867 --> 01:18:54,867
+negative.
+
+393
+01:19:15,475 --> 01:19:41,931
+ve bu nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir nereyden bir n
+
+394
+01:20:09,844 --> 01:20:35,724
+Bu, bu
+
+395
+01:20:35,859 --> 01:20:38,779
+Therefore, the name comes floating point.
+
+396
+01:20:38,779 --> 01:20:46,099
+We floated this fractional point to the left from the 4,
+
+397
+01:20:46,099 --> 01:20:51,099
+with 1.10011110.
+
+398
+01:20:51,099 --> 01:20:56,299
+Because we floated to the left 4 times,
+
+399
+01:20:56,299 --> 01:21:00,019
+we must multiply by 2 to 4.
+
+400
+01:21:02,003 --> 01:21:24,460
+Bu konverti olarak, bu konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir konverti olarak bir kon
+
+401
+01:21:35,507 --> 01:22:02,059
+Bu bir
+
+402
+01:22:26,131 --> 01:22:30,131
+Bu final numarını bu.
+
+403
+01:22:30,131 --> 01:22:34,131
+Bu numarını görelim.
+
+404
+01:22:42,484 --> 01:22:46,484
+ve sınırma, birçok.
+
+405
+01:22:47,484 --> 01:22:50,484
+Ve sınırma, birçok.
+
+406
+01:22:51,484 --> 01:23:01,484
+Ok, now if this type of floating coin number is not enough to represent our data,
+
+407
+01:23:01,484 --> 01:23:07,484
+then we have double, precision floating coin, which is...
+
+408
+01:24:04,243 --> 01:24:11,243
+Bu, eksempel, uygulamaların bir şekilde, uygulamaların bir şekilde,
+
+409
+01:24:11,243 --> 01:24:17,243
+bu, uygulamaların bir şekilde, uygulamaların bir şekilde,
+
+410
+01:24:17,243 --> 01:24:29,243
+uygulamaların bir şekilde, uygulamaların bir şekilde,
+
+411
+01:24:31,828 --> 01:24:35,768
+ve bu kursa, bu kursa.
+
+412
+01:24:39,315 --> 01:24:46,315
+So, other type of representations would be,
+
+413
+01:24:48,916 --> 01:24:52,716
+non-ameral concept representation or,
+
+414
+01:24:54,315 --> 01:24:58,315
+representation of qualities in a computing system.
+
+415
+01:25:01,315 --> 01:25:03,315
+For example, color.
+
+416
+01:25:03,315 --> 01:25:06,315
+Again, we'll be using final numbers.
+
+417
+01:25:06,804 --> 01:25:11,804
+İzlediğiniz için önemli bir şey.
+
+418
+01:25:53,268 --> 01:26:20,427
+Açık bir matrix ile bir
+
+419
+01:26:21,011 --> 01:26:27,011
+0 for black, 1 for white, for example.
+
+420
+01:26:27,011 --> 01:26:40,011
+But if you have 56 colors to represent each pixel, then we need 8 bits to represent each pixel.
+
+421
+01:27:18,292 --> 01:27:43,948
+Çünkü daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir daha fazla bir
+
+422
+01:27:48,275 --> 01:27:53,775
+You arrange your information in such a way that,
+
+423
+01:27:54,275 --> 01:27:56,476
+your data in such a way that,
+
+424
+01:27:56,876 --> 01:28:02,475
+the number of ones in the data could be even or odd.
+
+425
+01:28:51,655 --> 01:28:56,655
+İzledi bir
+
+426
+01:29:42,036 --> 01:29:47,076
+So, ASCII-Character Codes,
+
+427
+01:29:47,876 --> 01:29:53,636
+which enables us to code ASCII-Character on the keyboard.
+
+428
+01:29:54,676 --> 01:29:58,436
+These are not macro-representations, these are codings.
+
+429
+01:30:01,556 --> 01:30:03,636
+Then there is Unicode,
+
+430
+01:30:05,076 --> 01:30:09,235
+which enables us to code many different...
+
+431
+01:30:11,347 --> 01:30:13,347
+ve şekil
+
+432
+01:30:16,347 --> 01:30:19,347
+ve
+
+433
+01:30:19,347 --> 01:30:39,887
+bir
+
+434
+01:30:38,355 --> 01:30:53,387
+Bu bir
+
+435
+01:30:56,435 --> 01:31:11,195
+So, all this binary logic or implementations, these logic systems or my fanatics is implemented by using logic.
+
+436
+01:31:12,036 --> 01:31:21,195
+As we know these are basic operations in logic, colon logic, colon algebra.
+
+437
+01:31:23,060 --> 01:31:45,324
+Bu da, çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha
+
+438
+01:31:49,363 --> 01:31:56,363
+Bu da
+
+439
+01:32:03,764 --> 01:32:12,264
+All of you probably knew this already, but it is always good to be reminded.
+
+440
+01:32:13,423 --> 01:32:14,684
+Do you have any questions?
+
+441
+01:32:28,979 --> 01:32:31,420
+Do you have any comments, questions?
+
+442
+01:32:36,404 --> 01:32:37,404
+Benim yok hocam.
+
+443
+01:32:40,404 --> 01:32:44,724
+Şöyle saat on buçuk oldu. Bir ara verelim ya.
+
+444
+01:32:48,084 --> 01:32:51,284
+Şöyle on beş dakika bir ara verelim.
+
+445
+01:32:54,868 --> 01:32:56,028
+Şu anda ona tüze.
+
+446
+01:33:06,644 --> 01:33:07,644
+11 Ağın Kala.
+
+447
+01:56:14,963 --> 01:56:15,724
+Evet, none of them.
+
+448
+01:57:09,140 --> 01:57:09,460
+Ok.
+
+449
+01:57:35,444 --> 01:57:47,064
+Genelde, data, bioinformatik, can be considered as biomedical data.
+
+450
+01:57:47,064 --> 01:57:51,984
+Therefore, we will be covering some aspects of the biomedical data.
+
+451
+01:57:53,064 --> 01:57:59,264
+After this lecture, we should be able to understand fundamentals of molecular biology.
+
+452
+01:57:59,923 --> 01:58:26,636
+Bu dizinin betimlemesi için de birçok genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan genelde bulunan gen
+
+453
+01:58:31,091 --> 01:58:55,051
+Bu, ilk olarak, bu da bilimde
+
+454
+01:58:56,051 --> 01:59:07,051
+In a typical biology medical textbooks, we see photographs, taradroms, stories, chemical formulas and lots of description.
+
+455
+01:59:08,051 --> 01:59:19,051
+About the attributes of biological antitrust, such as cells, organs, tissues, fluids, chemical compounds, on-node, on-node, on-node, on-node, on-node, on-node.
+
+456
+01:59:19,051 --> 01:59:21,051
+About the relations between these.
+
+457
+01:59:22,676 --> 01:59:25,676
+ve aynı zamanda propertiyiz.
+
+458
+01:59:28,676 --> 01:59:34,676
+Actually, the photographs, diagrams, drawings, chemical formulas,
+
+459
+01:59:34,676 --> 01:59:40,676
+these are basically,
+
+460
+01:59:40,676 --> 01:59:46,676
+it is referred to many different data types as we see later.
+
+461
+01:59:49,876 --> 01:59:56,196
+Some of the properties of biological objects can be numerical,
+
+462
+01:59:56,916 --> 02:00:00,196
+with pretty quant, quantities,
+
+463
+02:00:01,076 --> 02:00:05,636
+such as concentration of certain chemicals in blood,
+
+464
+02:00:06,756 --> 02:00:08,596
+the size of a tumor,
+
+465
+02:00:09,156 --> 02:00:15,636
+or the pH in a cell, tissue, or the body weight.
+
+466
+02:00:19,347 --> 02:00:28,347
+Some of properties of biological objects could be qualities that can only remain but not quantified.
+
+467
+02:00:29,147 --> 02:00:38,347
+Such as the protein is produced by gene transcription, or the presence or absence of an organ in an organism,
+
+468
+02:00:38,347 --> 02:00:43,347
+the parts of an organ or conditioned organ.
+
+469
+02:01:06,579 --> 02:01:17,779
+Metadata, which we mentioned briefly, is a set of data that describes and gives information about other data.
+
+470
+02:01:17,779 --> 02:01:20,500
+It is known as metadata.
+
+471
+02:01:21,779 --> 02:01:26,779
+There are different types of metadata, it's worth mentioning.
+
+472
+02:01:26,779 --> 02:01:30,659
+First, descriptive metadata.
+
+473
+02:01:32,115 --> 02:01:35,716
+Bu, finding or understanding a resource.
+
+474
+02:01:37,316 --> 02:01:40,115
+Administrative metadata,
+
+475
+02:01:40,716 --> 02:01:44,516
+or some technical information in metadata,
+
+476
+02:01:45,716 --> 02:01:49,316
+for example, for decoding and rendering of files.
+
+477
+02:01:50,716 --> 02:01:53,115
+Reservation in metadata,
+
+478
+02:01:53,516 --> 02:01:55,916
+or long-term management of files.
+
+479
+02:01:56,916 --> 02:01:58,516
+Rights metadata.
+
+480
+02:01:59,731 --> 02:02:04,731
+İntelektüel propertiyaz, kasvir, kontent.
+
+481
+02:02:05,731 --> 02:02:08,731
+And there are structural metadata,
+
+482
+02:02:08,731 --> 02:02:15,731
+which indicates relationship of parts of this also to one another.
+
+483
+02:02:16,731 --> 02:02:21,731
+And markup languages are also considered metadata.
+
+484
+02:02:24,115 --> 02:02:31,115
+This integrates metadata and flex or other structure for someone with features within content.
+
+485
+02:02:34,644 --> 02:02:41,844
+Of course, metadata is defined as the data providing information about one or more aspects of the data.
+
+486
+02:02:41,844 --> 02:02:50,644
+It is used to summarize basic information about data which can be tested and working with specific data easier.
+
+487
+02:02:52,948 --> 02:02:54,948
+Bir example,
+
+488
+02:02:54,948 --> 02:02:57,948
+means of creation of the data,
+
+489
+02:02:57,948 --> 02:02:58,948
+purpose of the data,
+
+490
+02:02:58,948 --> 02:03:00,948
+time and date of creation,
+
+491
+02:03:00,948 --> 02:03:04,948
+creator or another of the data,
+
+492
+02:03:04,948 --> 02:03:07,948
+location on a common people network
+
+493
+02:03:07,948 --> 02:03:10,948
+where data was created,
+
+494
+02:03:10,948 --> 02:03:12,948
+standards used,
+
+495
+02:03:12,948 --> 02:03:15,948
+file size, etc.
+
+496
+02:03:32,020 --> 02:03:45,020
+Let's go over molecular biology. Of course, we are not expert on molecular biology, but just some sort of exposure to these concepts here.
+
+497
+02:03:45,020 --> 02:03:55,020
+Since main data type, bioinformatics setting will come from the molecular biology studies.
+
+498
+02:03:57,363 --> 02:04:02,163
+Monikular Biology, Studio, Biology at a Monikular Level.
+
+499
+02:04:06,836 --> 02:04:33,739
+Bu, bu
+
+500
+02:04:39,731 --> 02:04:51,271
+You should remember the concepts of cells, chromosomes, DNA, RNA, amino acids, proteins, genomes, transkiptomes, proton...
+
+501
+02:05:12,595 --> 02:05:20,576
+İzlediğiniz için, bu da
+
+502
+02:05:20,576 --> 02:05:22,576
+ben de bir bilgisayar.
+
+503
+02:05:22,576 --> 02:05:27,576
+Bu da bu bilgisayar.
+
+504
+02:05:27,576 --> 02:05:37,099
+İzlediğiniz için, bu bilgisayar.
+
+505
+02:06:11,155 --> 02:06:17,155
+Cels are complex systems, including a manvay, as illustrated in the video.
+
+506
+02:06:20,155 --> 02:06:28,155
+The structural and functional unit of all non-leaving organisms are called cells.
+
+507
+02:06:30,155 --> 02:06:38,155
+The smallest unit of an organism that is classified as leading is often called the building block of life.
+
+508
+02:07:04,243 --> 02:07:09,931
+Adır, organizm, saçıyas
+
+509
+02:07:26,452 --> 02:07:35,752
+Atypical cell size is 10 micro-metad, 10 micron. Atypical cell mass in one nanogram.
+
+510
+02:07:36,952 --> 02:07:40,452
+Of course, we get what we do average.
+
+511
+02:07:47,188 --> 02:07:49,188
+Dikkatli bir cilin var.
+
+512
+02:07:49,188 --> 02:07:51,188
+Buna baktığınızda,
+
+513
+02:07:51,188 --> 02:07:55,188
+kısımlar,
+
+514
+02:07:55,188 --> 02:07:56,188
+kısımlar.
+
+515
+02:07:56,188 --> 02:08:11,948
+Bu cilin var.
+
+516
+02:08:14,003 --> 02:08:39,003
+But we can, although the way to a numerical body is, for example, the individual concentration of the blood types, red cells, for example, white cells, blood count, et cetera.
+
+517
+02:08:39,003 --> 02:08:41,739
+These are numerical.
+
+518
+02:08:49,716 --> 02:08:57,716
+Organizans are classified into three parts as we remember, prokaryotes, e-karyotes.
+
+519
+02:09:00,716 --> 02:09:04,716
+Not all single cell organisms are prokaryotes of this thing.
+
+520
+02:09:05,716 --> 02:09:08,716
+These are typical prokaryotic cells.
+
+521
+02:09:09,716 --> 02:09:14,716
+They let a little envelope and a semi-close.
+
+522
+02:09:17,811 --> 02:09:21,371
+Bu da, böylecele altyazı,
+
+523
+02:09:21,371 --> 02:09:25,711
+ve bu pariyatik cells,
+
+524
+02:09:26,551 --> 02:09:29,851
+ve bu pariyatik celli,
+
+525
+02:09:29,851 --> 02:09:36,191
+bu pariyatik celli,
+
+526
+02:09:36,191 --> 02:09:38,431
+bu pariyatik,
+
+527
+02:09:41,524 --> 02:09:52,524
+Most functions of organella, such as the nuclear, cambria, global, blast, and the global apparatus are taken over by the pocaryotic cells, plasma, among them.
+
+528
+02:09:52,524 --> 02:09:57,524
+Pocaryotic cells have three architectural regions.
+
+529
+02:10:00,524 --> 02:10:02,524
+Appendages.
+
+530
+02:10:04,524 --> 02:10:06,155
+Asel analog.
+
+531
+02:10:07,091 --> 02:10:10,091
+Ve sikra klasik regionu,
+
+532
+02:10:10,091 --> 02:10:35,083
+klasik regionu,
+
+533
+02:10:37,524 --> 02:11:01,963
+Bu, bu
+
+534
+02:11:25,171 --> 02:11:31,532
+İkaryotic DNA is organizing one or more DNA molecules called homosomes,
+
+535
+02:11:31,532 --> 02:11:39,211
+which are associated with eastern proteins, all homosomes in DNA stored in the cell details,
+
+536
+02:11:39,952 --> 02:11:46,851
+separated from the cytoplasin by a number of sun-ikaryotic organelles,
+
+537
+02:11:47,271 --> 02:11:51,211
+such as infotronibia or the contains DNA.
+
+538
+02:12:02,036 --> 02:12:04,736
+You should remember the chromosomes,
+
+539
+02:12:05,236 --> 02:12:10,836
+which are organized factors of DNA and proteins that are on your cells.
+
+540
+02:12:12,336 --> 02:12:16,136
+The chromosome is it is a weird word.
+
+541
+02:12:16,836 --> 02:12:23,136
+It comes from chroma, telet, and soma, body.
+
+542
+02:12:23,636 --> 02:12:28,536
+There to be a property of being stained very strongly by sunbites.
+
+543
+02:12:29,524 --> 02:12:53,740
+Bu da kullanımlar, bu da kullanımlar, bu da kullanımlar, bu da kullanımlar, bu da kullanımlar.
+
+544
+02:13:13,747 --> 02:13:34,747
+...
+
+545
+02:13:33,939 --> 02:13:41,939
+Somosom-tolder-continent DNA-bond proteins, which serve to package the DNA and control its functions.
+
+546
+02:13:45,427 --> 02:13:50,427
+Okay, very extensively between different organisms.
+
+547
+02:13:52,427 --> 02:14:02,427
+DNA molecule, maybe circular or linear, can contain anything from tens of kilobase pairs to hundreds of megabase pairs.
+
+548
+02:14:03,427 --> 02:14:10,427
+Typically, karyotic cells have large linear commodoms and for karyotic cells, smaller circular commodoms.
+
+549
+02:14:11,891 --> 02:14:17,891
+Somosom-sumal list is either duplicated or unduplicated.
+
+550
+02:14:19,891 --> 02:14:31,627
+Unduplicated ones are single-general stram, whereas two-duplicated ones contain two copies joined by central major.
+
+551
+02:14:37,203 --> 02:14:45,203
+İkiyat is in place, one of several double standard DNA molecules organize as chromosomes.
+
+552
+02:14:46,083 --> 02:14:50,987
+Gen is a 22 phase of protozoam 126 chromosomes.
+
+553
+02:15:12,467 --> 02:15:14,467
+Here are some pictures.
+
+554
+02:15:14,467 --> 02:15:18,467
+Scale is 5 micromotor.
+
+555
+02:15:21,811 --> 02:15:25,371
+Oh, you have some,
+
+556
+02:15:25,371 --> 02:15:28,091
+chromosome numbers in some sense.
+
+557
+02:15:30,091 --> 02:15:31,019
+Oh.
+
+558
+02:15:37,456 --> 02:15:45,456
+...
+
+559
+02:15:36,819 --> 02:16:00,043
+Bu, eğer, bu,
+
+560
+02:16:09,043 --> 02:16:12,123
+Kermosom numbers in some animals.
+
+561
+02:16:15,043 --> 02:16:19,043
+Starting from Kanan-Pred blood, which has 8 kermosom.
+
+562
+02:16:20,043 --> 02:16:26,043
+And Goldfish has as much as 100 kermosoms.
+
+563
+02:16:27,043 --> 02:16:29,043
+He fish has 130 kermosoms.
+
+564
+02:16:35,476 --> 02:16:38,396
+Marder's call to, et cetera.
+
+565
+02:16:46,388 --> 02:16:50,388
+Bu da bir çiftçik bir çiftçik bir çiftçik.
+
+566
+02:16:53,388 --> 02:17:01,388
+Bu çiftçik bir çiftçik.
+
+567
+02:17:02,388 --> 02:17:10,060
+Çiftçik bir çiftçik.
+
+568
+02:17:16,211 --> 02:17:30,211
+DNA, hormonel DNA, DNA is a short form of deoxyribonucleic acid, short DNA.
+
+569
+02:17:30,211 --> 02:17:39,211
+It's a nükleic acid that contains the genetic instructions you can develop on.
+
+570
+02:17:39,956 --> 02:17:45,547
+ve bütün
+
+571
+02:17:58,835 --> 02:18:04,395
+DNA molekules'in long-term storage of information.
+
+572
+02:18:04,395 --> 02:18:09,675
+Now it came back to information storage and information.
+
+573
+02:18:09,675 --> 02:18:18,395
+Now we have DNA. DNA carries information.
+
+574
+02:18:20,915 --> 02:18:38,915
+At the beginning, when we were discussing these fundamentals on informatics or information systems or whatever, what we stated, our purpose of processing data is to extract information.
+
+575
+02:18:38,915 --> 02:18:45,915
+My DNA carries some information, what I want to think.
+
+576
+02:18:48,020 --> 02:19:13,260
+...
+
+577
+02:19:15,443 --> 02:19:35,384
+DNA is often compared to a set of nutrients or a recipe or a code since it contains the instructions needed to construct other components of cells, such as putting some fermin molecules.
+
+578
+02:19:45,299 --> 02:19:50,899
+DNA segments that came with genetic information are called genes.
+
+579
+02:19:52,819 --> 02:19:57,099
+But other DNA sequences, structural purposes
+
+580
+02:19:57,619 --> 02:20:04,099
+are involved in regulating the means of genetic information.
+
+581
+02:20:04,340 --> 02:20:09,379
+There is quite a lot of information there.
+
+582
+02:20:15,059 --> 02:20:22,459
+Genetli, DNA consists of neuron polymers of simple units called nucleotides,
+
+583
+02:20:22,459 --> 02:20:28,860
+with backbonds made of sugars and phosphate fruits determined by astral bonds.
+
+584
+02:20:28,860 --> 02:20:37,036
+But this part is what most of us do not understand because it is most thankful.
+
+585
+02:20:37,523 --> 02:21:03,307
+İki bir şekilde, iki bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir
+
+586
+02:21:03,379 --> 02:21:12,379
+This information is that using the genetic code, it specifies the sequence of amino acids within proteins.
+
+587
+02:21:12,379 --> 02:21:23,379
+The code is read by copying the traces of DNA into the related tucleotracid RNA in a process called transcription.
+
+588
+02:21:25,940 --> 02:21:31,600
+Bence, DNA is organized into structures called chromosomes.
+
+589
+02:21:31,600 --> 02:21:39,500
+These chromosomes are duplicated before cell divide in a process called DNA replication.
+
+590
+02:21:39,500 --> 02:21:50,840
+İkariotik organisms store the DNA inside the cell mutlens, while in prokariotik it only is acycoplasm.
+
+591
+02:21:51,219 --> 02:21:58,219
+geni-chromosom, chromatin, proteinin, such as pistons, compact and organized DNA.
+
+592
+02:21:58,219 --> 02:22:06,219
+These compact structures guide the interactions between DNA and other proteins,
+
+593
+02:22:06,219 --> 02:22:13,219
+helping control which parts of DNA are transcribed.
+
+594
+02:22:17,075 --> 02:22:22,075
+İlustrasyon,
+
+595
+02:22:22,075 --> 02:22:54,492
+ve gen ifadesi,
+
+596
+02:22:41,268 --> 02:22:49,708
+Adenine, Ciposum, Granine, Paramine, obviously herbivoresin biologi
+
+597
+02:22:49,708 --> 02:23:05,708
+process, Ciposurtenin, ACG2, all these are being used as S-Penol, sequenesis, nükleotites,
+
+598
+02:23:06,611 --> 02:23:17,611
+Arorganic compounds the consist of two joint structures, a nitrogenic base, sugar and a phosphate group,
+
+599
+02:23:18,611 --> 02:23:31,611
+the most common nitrofels, and we're divided into two groups, the first one pideens, A and T belong to the group and
+
+600
+02:24:00,180 --> 02:24:13,708
+Bu, bu
+
+601
+02:24:17,683 --> 02:24:22,123
+Nükleotit, ciberstructural roots of RNA and DNA.
+
+602
+02:24:23,243 --> 02:24:26,243
+This is not more.
+
+603
+02:24:27,563 --> 02:24:36,763
+A genetic code is the set of rules by which information encoded within genetic material
+
+604
+02:24:37,884 --> 02:24:41,643
+is translated into proteins by willing science.
+
+605
+02:24:43,987 --> 02:24:55,188
+Translation is accomplished by ribosome, which leads amino acids in an order specified by messenger RNA, short, you know, nRNA.
+
+606
+02:24:57,087 --> 02:25:10,227
+We will transfer RNA, which is monos-q RNA, molecules to kill amino acids and to read the messenger RNA, two minute voltants at a time.
+
+607
+02:25:13,459 --> 02:25:25,459
+Genetik code is very similar among all organisms and can be expressed in a simple ergonomim, C4M-Tis.
+
+608
+02:25:27,459 --> 02:25:32,459
+The code defines how sequences of nucleotide triplets
+
+609
+02:26:14,004 --> 02:26:39,659
+Bu, bu
+
+610
+02:26:41,396 --> 02:27:03,884
+Bu bir şeyin
+
+611
+02:27:07,763 --> 02:27:21,543
+Mechanical structures of the bases are given here, but again in the graphical or symbolic description of some chemical interaction.
+
+612
+02:27:25,299 --> 02:27:30,299
+Bu pyranyzine bazı.
+
+613
+02:27:41,523 --> 02:27:43,523
+İmdatıcı,
+
+614
+02:27:43,523 --> 02:27:48,523
+birçokal
+
+615
+02:27:48,523 --> 02:27:49,523
+DNA moleküle
+
+616
+02:27:49,523 --> 02:27:51,523
+ve
+
+617
+02:27:51,523 --> 02:27:53,523
+c,
+
+618
+02:27:53,523 --> 02:27:55,523
+a,
+
+619
+02:27:55,523 --> 02:27:56,523
+t
+
+620
+02:27:56,523 --> 02:28:07,979
+birçokal
+
+621
+02:28:08,500 --> 02:28:22,252
+Bu, bu
+
+622
+02:28:40,244 --> 02:28:42,244
+DNA molekule,
+
+623
+02:28:44,244 --> 02:28:46,244
+is a double-stranded.
+
+624
+02:28:48,244 --> 02:28:49,244
+These are paired uniquely.
+
+625
+02:28:50,244 --> 02:28:54,244
+A is paired with Q and G paired with C.
+
+626
+02:28:55,244 --> 02:29:00,244
+So that only the basis on one strand uniquely represented and similar.
+
+627
+02:29:02,244 --> 02:29:06,244
+And this is an example of DNA sequence.
+
+628
+02:29:10,195 --> 02:29:37,100
+Bu, bu
+
+629
+02:29:39,188 --> 02:29:53,996
+ve genişliğe,
+
+630
+02:29:58,131 --> 02:30:06,792
+This is a small fragment of region around the well known gene associated with breast cancer called BRCA.
+
+631
+02:30:08,592 --> 02:30:12,631
+Short handle, breast cancer gene BRCA.
+
+632
+02:30:13,832 --> 02:30:15,131
+Now we...
+
+633
+02:30:17,731 --> 02:30:20,531
+Let me put forward the problem.
+
+634
+02:30:21,731 --> 02:30:23,432
+We have a piece of...
+
+635
+02:30:25,172 --> 02:30:29,172
+Bu bir karakter var.
+
+636
+02:30:29,172 --> 02:30:54,448
+Bir karakter var.
+
+637
+02:30:51,827 --> 02:31:03,659
+...
+
+638
+02:31:13,172 --> 02:31:20,172
+As we said, genetik protein dizi hizalama, A-C-G-U.
+
+639
+02:31:22,172 --> 02:31:30,172
+Each combination of three of these nucleotides, these are known as nucleotides, A-C-G-U,
+
+640
+02:31:31,172 --> 02:31:33,172
+and they are called codon.
+
+641
+02:31:34,172 --> 02:31:36,172
+We all mentioned this.
+
+642
+02:31:36,172 --> 02:31:37,172
+Therefore,
+
+643
+02:31:39,283 --> 02:31:43,283
+There are six possible konular sequences in trouble.
+
+644
+02:31:48,691 --> 02:32:00,851
+Not all codons correspond to amino acids. Normalde these codons correspond to a certain amino acid, but not all of them.
+
+645
+02:32:02,611 --> 02:32:05,931
+For example, there is a specific start codon,
+
+646
+02:32:08,891 --> 02:32:14,651
+which are A, U, G. This is a start codon.
+
+647
+02:32:15,316 --> 02:32:17,316
+ve stop codon,
+
+648
+02:32:18,516 --> 02:32:23,516
+which are U, A, U, A, G, U, G, A.
+
+649
+02:32:25,916 --> 02:32:37,516
+Now you study the computer organization and there are probably five organizations in a computer, CV, I don't know, or in a hard disk.
+
+650
+02:32:43,283 --> 02:32:55,283
+Evet, bu konceptı var.
+
+651
+02:33:08,543 --> 02:33:13,543
+A-U-G starts to ray or coğ,
+
+652
+02:33:14,543 --> 02:33:15,543
+then sunlet,
+
+653
+02:33:16,543 --> 02:33:19,543
+one of these codons,
+
+654
+02:33:19,543 --> 02:33:23,543
+will signal the end of this array,
+
+655
+02:33:24,543 --> 02:33:25,543
+stop codon.
+
+656
+02:33:30,451 --> 02:33:33,772
+61 kodons, it exists.
+
+657
+02:33:36,811 --> 02:33:41,451
+This 4 are used as in salt and stock kodons.
+
+658
+02:33:42,011 --> 02:33:48,451
+And remaining 61 kodons, it all for amino acids.
+
+659
+02:33:51,131 --> 02:33:53,252
+Into the LUG.
+
+660
+02:33:55,476 --> 02:34:00,476
+20 aminoasit, 20 aminoasit, 20 aminoasit.
+
+661
+02:34:00,476 --> 02:34:05,476
+Now, hold on, we have these codons, codons,
+
+662
+02:34:05,476 --> 02:34:09,476
+it says that there are 64 possible codons,
+
+663
+02:34:09,476 --> 02:34:22,347
+but normally, totally, there are 20 amino acids to form the proteins and leave it bad all.
+
+664
+02:34:22,355 --> 02:34:24,355
+İzlediğiniz için.
+
+665
+02:34:49,108 --> 02:34:51,108
+A-N-G.
+
+666
+02:34:52,108 --> 02:34:54,108
+These are
+
+667
+02:34:56,108 --> 02:34:57,108
+nicodons.
+
+668
+02:34:57,108 --> 02:35:03,108
+And levitlinin is represented by any one of six nicodons.
+
+669
+02:35:08,180 --> 02:35:14,739
+Here are 20 amino acids, which corresponds to each codon,
+
+670
+02:35:14,739 --> 02:35:20,739
+B, C, N, N, N, V, et cetera, et cetera, and start with bakulans.
+
+671
+02:35:21,619 --> 02:35:24,020
+Start with GAV bakulans.
+
+672
+02:35:45,139 --> 02:35:51,139
+U, A, H, U, G, A
+
+673
+02:35:51,139 --> 02:35:57,139
+U, A, G, A
+
+674
+02:35:57,139 --> 02:35:59,139
+U, A, G
+
+675
+02:35:59,139 --> 02:36:03,139
+A, G, A
+
+676
+02:36:19,763 --> 02:36:41,515
+Bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin
+
+677
+02:37:16,115 --> 02:37:22,416
+So, now we know that amino acids are the basic structural building units of proteins.
+
+678
+02:37:25,843 --> 02:37:33,843
+Altyazı ekleyen bir şey.
+
+679
+02:37:37,332 --> 02:37:40,332
+Yağımın asitin içeri, water soluble.
+
+680
+02:37:45,652 --> 02:37:51,652
+Bu, anhyosis, which loves water, basically.
+
+681
+02:37:52,851 --> 02:38:00,051
+And some are hydrophobic, which are not water soluble or the field of water.
+
+682
+02:38:00,652 --> 02:38:01,652
+That looks good.
+
+683
+02:38:02,652 --> 02:38:12,652
+These are two protein of anhyosis in terms of the relationship with water.
+
+684
+02:38:13,716 --> 02:38:22,716
+They form short polymer chains called peptides or longer chains called polypeptides or proteins.
+
+685
+02:38:22,716 --> 02:38:32,716
+The process of such formation from an already template is known as transgression, which is part of protein biosynthesis.
+
+686
+02:38:34,227 --> 02:38:45,227
+20 amino asids are encoded by the standard genetic coden are called proteinogenic, genic or standard amino asids.
+
+687
+02:38:48,227 --> 02:38:54,227
+Other amino asids contained in potensi are usually formed by post-translational modiflations,
+
+688
+02:38:54,227 --> 02:38:58,227
+instead of modiflations after translation in potensi synthesis.
+
+689
+02:39:00,500 --> 02:39:25,644
+Bu, bu
+
+690
+02:39:27,924 --> 02:39:36,044
+Bu, o body'a ihtiyacımızın, hayat ve enerjiyeceği,
+
+691
+02:39:38,044 --> 02:39:44,124
+ve enerjiyeceği,
+
+692
+02:39:44,124 --> 02:39:48,484
+bu, proteinlerle,
+
+693
+02:39:52,979 --> 02:39:54,979
+Bu da molekuların neşini.
+
+694
+02:40:24,500 --> 02:40:31,560
+The gene that codes for it, diseases that may link its oxen somut ratio.
+
+695
+02:40:35,603 --> 02:40:39,804
+Proteins ve many different roles in cells and tissues.
+
+696
+02:40:41,804 --> 02:40:47,203
+They can stabilize enzymes to facilitate biochemical reactions,
+
+697
+02:40:49,804 --> 02:40:54,403
+such as metabolism of glucose.
+
+698
+02:40:55,603 --> 02:41:00,804
+They can regulate other processes by serving their signals.
+
+699
+02:41:02,899 --> 02:41:07,860
+Protein sold are component of cell and tissue structure.
+
+700
+02:41:13,427 --> 02:41:30,907
+They are large organic compounds made of amino acids arranged in a genome turned together by peptide bonds between the tyboxyl and amino groups of ingesent amino acid residues.
+
+701
+02:41:59,028 --> 02:42:05,528
+Proteins are essential parts of organisms and parts they mainly process in the sun.
+
+702
+02:42:07,028 --> 02:42:13,528
+Here are some practical examples of just these are the presentations.
+
+703
+02:42:13,528 --> 02:42:22,528
+Many proteins are enzymes that catalog biochemical reactions and are vital to metabolism.
+
+704
+02:42:22,528 --> 02:42:25,528
+So can we already mention these?
+
+705
+02:42:42,932 --> 02:42:59,932
+...
+
+706
+02:43:03,092 --> 02:43:08,092
+Altyazı, proteinler, nükleotit,
+
+707
+02:43:29,843 --> 02:43:31,843
+...animal protein diziler.
+
+708
+02:43:31,843 --> 02:43:38,731
+They don't ingest the protein into three amino acids that are being used in metabolism.
+
+709
+02:43:42,036 --> 02:43:50,036
+Let's see an example HIV protein.
+
+710
+02:43:52,036 --> 02:44:02,036
+How HIV virus will infect, you know, or accept.
+
+711
+02:44:03,036 --> 02:44:07,036
+It is a representative picture of this.
+
+712
+02:44:08,340 --> 02:44:10,619
+İçeride bir üniversite.
+
+713
+02:44:16,824 --> 02:44:26,824
+...
+
+714
+02:44:15,028 --> 02:44:42,847
+İlk, bir şey, bir şey, bir virus ve bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir
+
+715
+02:44:42,847 --> 02:44:46,847
+Sel, by binding itself to a certain...
+
+716
+02:44:46,847 --> 02:44:48,847
+...alright...
+
+717
+02:44:50,847 --> 02:44:55,847
+...your own cell reads the HIV code...
+
+718
+02:44:57,847 --> 02:45:00,847
+...and creates the HIV protein.
+
+719
+02:45:01,847 --> 02:45:02,847
+Now what happens?
+
+720
+02:45:02,847 --> 02:45:05,847
+The virus is not able to...
+
+721
+02:45:33,940 --> 02:45:40,940
+ve bu
+
+722
+02:45:57,780 --> 02:46:22,731
+Yolom celli ile HIV-CoV
+
+723
+02:46:23,028 --> 02:46:47,564
+ve bu da
+
+724
+02:46:58,131 --> 02:47:03,131
+Peki, how to prevent this process?
+
+725
+02:47:03,131 --> 02:47:16,131
+To prevent this process, do you have to prevent a virus to dock your...
+
+726
+02:47:29,780 --> 02:47:36,780
+Düzgün, bu
+
+727
+02:47:45,172 --> 02:48:09,515
+Birçok bir çalışma ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve genetik ve
+
+728
+02:48:10,772 --> 02:48:21,051
+Many drugs, great drugs basically binds, binds your cell where the virus is supposed to bind.
+
+729
+02:48:21,051 --> 02:48:31,692
+So, because it's already a part, infection points are already, the virus is not able to contain the cell.
+
+730
+02:48:33,272 --> 02:48:37,632
+That means it's in the vehicle drugs.
+
+731
+02:48:39,188 --> 02:48:41,188
+İngiltedakçılık bir drug.
+
+732
+02:48:41,887 --> 02:48:47,308
+Bu da ilginç alırıcısını
+
+733
+02:48:48,688 --> 02:48:50,567
+Bu da bir example,
+
+734
+02:48:50,567 --> 02:48:53,747
+bu da informatik kanıda kullanmak için
+
+735
+02:48:53,747 --> 02:48:55,868
+bir de kullanmak için
+
+736
+02:48:59,956 --> 02:49:24,556
+İndisikovuları.
+
+737
+02:49:27,347 --> 02:49:33,347
+So, in answer to the question, what sort of molecule will bind to this protein?
+
+738
+02:49:34,347 --> 02:49:36,347
+Then, the toxicology.
+
+739
+02:49:38,347 --> 02:49:45,347
+We need to study the effect of the virus, and kill the patient, and drug as well.
+
+740
+02:49:46,347 --> 02:49:52,347
+Drug, although the virus will protect,
+
+741
+02:50:10,611 --> 02:50:14,611
+Bu da kallar-toxicoloji studies, bu da kalların.
+
+742
+02:50:59,092 --> 02:51:06,092
+Bu şekilde bu şekilde bir şekilde görüntü.
+
+743
+02:51:08,692 --> 02:51:14,092
+Bir sonraki bir şekilde görüntü.
+
+744
+02:51:26,067 --> 02:51:51,115
+Bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda
+
+745
+02:51:58,899 --> 02:52:00,899
+Bu da bir sürü tüürür.
+
+746
+02:52:08,404 --> 02:52:11,324
+We already mentioned some concepts.
+
+747
+02:52:13,164 --> 02:52:17,763
+And these called genomics, protomix,
+
+748
+02:52:20,244 --> 02:52:25,603
+structural bioinformatics, and functional informatics.
+
+749
+02:52:26,324 --> 02:52:30,404
+I already mentioned these concepts, I will skip.
+
+750
+02:52:33,044 --> 02:52:36,396
+Some of the definitions here, protomix.
+
+751
+02:52:38,195 --> 02:52:40,195
+Biyoenformatiğ.
+
+752
+02:52:41,076 --> 02:52:43,956
+Now, we need to, this will be called,
+
+753
+02:52:45,795 --> 02:52:47,556
+Rob, RNA,
+
+754
+02:52:48,036 --> 02:52:50,675
+because not at least a lot of studies now,
+
+755
+02:52:53,315 --> 02:52:55,635
+concentrated around RNA,
+
+756
+02:52:55,635 --> 02:52:56,435
+and even,
+
+757
+02:52:58,275 --> 02:52:59,315
+BioNTech.
+
+758
+02:53:03,252 --> 02:53:18,252
+İlvançın, RNA, RNA, RNA, is short form of ribonitleitacid. İlvanitleitacid, buz, it consists of a long chain of nitreotide units.
+
+759
+02:53:20,252 --> 02:53:29,252
+Each nitreotide consists of a nitrogenous base, a strebol, sugar and a phosphate, in its chemical composition.
+
+760
+02:53:31,763 --> 02:53:37,763
+RNA is very similar to DNA, but it is making the important structure of the plant.
+
+761
+02:53:37,763 --> 02:53:46,763
+The first one in the cell, RNA is usually single-stranded, while DNA is double.
+
+762
+02:53:47,763 --> 02:53:54,763
+RNA nitroplates contain revolts, while DNA contains denoxy revolts,
+
+763
+02:53:54,763 --> 02:53:58,763
+to the type of revolts that makes one oxygen.
+
+764
+02:53:59,028 --> 02:54:09,347
+RNA has the base uracil, rather than tarnin, that is present in DNA.
+
+765
+02:54:10,247 --> 02:54:13,828
+These are two differences between RNA and DNA.
+
+766
+02:54:14,608 --> 02:54:21,007
+RNA is transcribed from DNA by enzymes called RNA polymerases
+
+767
+02:54:21,007 --> 02:54:25,548
+and is generally processed by other enzymes.
+
+768
+02:54:26,963 --> 02:54:43,763
+RNA is a central to synthesis of proteins, it's a middle structure in the process of generation of proteins, synthesis of proteins.
+
+769
+02:54:45,203 --> 02:54:48,403
+There are RNAs with other roles.
+
+770
+02:54:49,747 --> 02:55:17,355
+ve genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki genişlerindeki geniş
+
+771
+02:55:23,603 --> 02:55:24,603
+Structure.
+
+772
+02:55:26,884 --> 02:55:28,884
+Therefore called messenger RNA.
+
+773
+02:55:31,363 --> 02:55:35,523
+These rudolombs are made from proteins and fibosomal RNAs,
+
+774
+02:55:35,523 --> 02:55:41,443
+which come together to form a molecular machine that can read messenger RNAs
+
+775
+02:55:41,443 --> 02:55:46,324
+and translate the information with different proteins.
+
+776
+02:55:47,476 --> 02:56:01,476
+Now the protein synthesis can be, you remember when we made analogy with doing machine, information flowing process.
+
+777
+02:56:04,476 --> 02:56:13,476
+Diner molecule, and calling genetic information, cotestan DNA, molecule, mRNA, DNA molecule.
+
+778
+02:57:20,435 --> 02:57:22,435
+mRNA-procesi,
+
+779
+02:57:23,236 --> 02:57:26,435
+removes introns because they do not
+
+780
+02:57:28,236 --> 02:57:31,435
+get information because non-codilegins,
+
+781
+02:57:32,435 --> 02:57:34,435
+and splices axons together.
+
+782
+02:57:35,435 --> 02:57:37,435
+Slicing means
+
+783
+02:57:37,435 --> 02:57:39,435
+joining together.
+
+784
+02:57:40,435 --> 02:57:45,435
+Take axons, codilegins, and join together.
+
+785
+02:57:46,804 --> 02:57:57,324
+RNA-procesi, a transpecution process, easily splices DNA and joins the exhaust together.
+
+786
+02:57:59,164 --> 02:58:00,564
+Coğutu-pöyübens.
+
+787
+02:58:01,804 --> 02:58:08,923
+A processed machine RNA can be translated into protein segment.
+
+788
+02:58:36,500 --> 02:58:37,500
+Okay.
+
+789
+02:58:39,500 --> 02:58:44,500
+Here is a pictorial description of the mRNA processing.
+
+790
+02:58:45,500 --> 02:58:54,500
+We have exons indicated by neurodineers and introns indicated by the analog.
+
+791
+02:58:56,500 --> 02:59:01,500
+Page 2, during transcription and mRNA processing.
+
+792
+02:59:02,324 --> 02:59:15,884
+These introns are the splicing process, mistrating these blue ones and joining together to form messenger RNA.
+
+793
+02:59:34,739 --> 02:59:35,459
+Antima.
+
+794
+02:59:49,747 --> 02:59:50,907
+Bir sorunuz var mı?
+
+795
+02:59:52,507 --> 02:59:53,108
+Yok hocam.
+
+796
+02:59:54,527 --> 03:00:07,867
+Bu konuya devam edelim. Biraz daha anlayarak bu konuları. Ben de anlıyorum. Şimdi anlamanızı istiyorum çünkü gen ifadesi konular etrafında dönüyor.
+
+797
+03:00:11,092 --> 03:00:14,532
+İzlediğiniz için biraz yoruluk kısmını anlayabilirsiniz.
+
+798
+03:00:15,852 --> 03:00:18,072
+Computational kısmı zaten değiştireceğiz.
+
+799
+03:00:18,912 --> 03:00:20,292
+Daha kolay olur.
+
+800
+03:00:24,180 --> 03:00:25,900
+Konumak, ben gelişmek üzere.
+
+801
+03:00:49,299 --> 03:00:50,079
+Çıkabilirsiniz.
