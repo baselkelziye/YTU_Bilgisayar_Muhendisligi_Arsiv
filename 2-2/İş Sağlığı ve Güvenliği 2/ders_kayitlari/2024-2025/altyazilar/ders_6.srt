@@ -1,0 +1,639 @@
+1
+00:00:26,707 --> 00:00:32,088
+Merhaba arkadaşlar. Bir iki dakika bekleyin, diğer arkadaşlarımız da katılsın, ondan sonra bugünkü dersimize başlarız.
+
+2
+00:03:30,451 --> 00:03:34,731
+Evet arkadaşlar, şu an sesim geliyor, görüntü geldi mi size?
+
+3
+00:03:41,876 --> 00:03:47,036
+Evet, ses ve görüntümüz size ulaştığına göre o zaman bu haftaki dersimize başlayabiliriz.
+
+4
+00:03:47,735 --> 00:03:56,336
+Derse başlamadan önce ayın 9'unda saat 5.30'da birinci vizemiz olacak.
+
+5
+00:03:56,336 --> 00:04:04,336
+Ben bu vize konusuyla alakalı olarak sınavda konu olacak notları, sınav notlarını...
+
+6
+00:04:05,300 --> 00:04:18,500
+Ve sınavda konu olacak soruların altyapılarını sisteme yükleyeceğim. Sistemden çekip çalışabilirsiniz.
+
+7
+00:04:20,079 --> 00:04:38,439
+Herhangi bir şekilde arkadaşlar, herhangi bir projeye göreve başladık. Kendi mesleğimizi icra ediyoruz. Ama konunun bir de iş sağlığı, güvenliği tarafı ve hukuk bir tarafı var. Bu hukuki tarafında ve iş sağlığı, güvenliği teknik tarafında da her ne iş yapıyor olursak olalım bu süreci yürütmemiz, bu sürecin içerisinde görev yapıyormamız gerekecek.
+
+8
+00:04:39,603 --> 00:04:56,743
+Şimdi, peki ne yapmamız gerekiyor? Nereden başlayacağız? İş sağlığı ve güvenliği ile alakalı ne yapacağımızı düşünürsek, eğer ki bir yapı projesinde nereden başlanacağı ve nasıl ilerleneceği ile alakalı örnek bir case çalışması var şu an elimde. Daha önce yaptığım ve hazırladığım. Şu an onun üzerinden ilerliyor olacağız.
+
+9
+00:04:57,363 --> 00:05:07,144
+Diyelim ki bir yapı projesinin iş sağlığı ve güvenliği süreçleri ile alakalı bir değerlendirme yapmamız gerekiyor. Şimdi bununla alakalı, çünkü neden yapı projesi? Ona da bakacağız.
+
+10
+00:05:07,603 --> 00:05:29,463
+Şimdi, evet. Çünkü en çok iş kazası meydana gelen sektörlerin baş sırasında, ilk sırlarına birinde gelen konu bu. Yani, en çok iş kazası, ölüm kaza geliyor. Şimdi SGK'nın verilerine baktığımız zaman, SGK verilerinde,
+
+11
+00:05:31,699 --> 00:05:48,159
+%34 Türkiye genelindeki ölümlü kazalar inşaat sektörüne medyada geliyor. Bunun dışındaki diğer alanlarda da yine bir sonraki yıllarda da baktığımız zaman inşaat sektörü ölümlü kaza noktasına liderleri elinde bırakmıyor.
+
+12
+00:05:48,692 --> 00:05:54,091
+Şimdi tamam, biz bunu biliyoruz ama bu bilgi bizim işimize neye yarıyor? İnşaatta ölümlü kazalılıyor. Tamam.
+
+13
+00:05:54,632 --> 00:06:01,012
+Da bunun bize bir faydası ya da bir amacı, bir getirdiği bir katkısı yok. Bunu daha da ileri noktaya götürmemiz lazım. Peki.
+
+14
+00:06:02,471 --> 00:06:03,692
+O zaman sektöre özel...
+
+15
+00:06:06,067 --> 00:06:34,067
+Analiz yapmamız lazım. Şimdi ilk etapta analiz yapmak, yani geçmişte yaşanılan süreçlerin problemlerini ortaya çıkarmak ve bilmek, bundan sonra ortaya çıkacak ve problemli olan süreçleri ortadan kaldırmaya derhalde eder. Yani getirir. Yani geçmişteki hatalar bir sonra gelecekteki hatalara da işaret eder. Eğer ki biz geçmişteki istatistiksel verilere göre yol alırsak, kısıtlı olan imkanımızı, zamanımızı planlamamızı da bunun eşliğinde...
+
+16
+00:06:34,067 --> 00:06:41,987
+yapabiliriz. Şimdi hemen baktığım zaman arkadaşlar, çok güzel bir çalışma karşıma çıkıyor benim bu konuyla alakalı olarak.
+
+17
+00:06:43,187 --> 00:07:01,147
+İstanbul Teknik Üniversitesi 1979 yılından 2010 yılına kadar toplam 5239 adet iş kazasını inceliyor ve bununla alakalı bir değerlendirme yapıyor.
+
+18
+00:07:04,468 --> 00:07:25,427
+Ve bu yaptığı değerlendirmelerle alakalı istatiksel bir sonuç ortaya çıkartıyor. Bunun 4347'sini arşiv iş kazası dosyalarından 892'sinin neredeyse bine yakınını, %20'sine yakınında mahkemelere yansımış dava konularından, dava dosyalarından bilgisayar raporlarına elde ediyor.
+
+19
+00:07:27,827 --> 00:07:51,647
+Örnek bir case olabilecek database'e yani bir sayıya sahip. Yani Türkiye'deki yapı sektöründeki iş kazalarını analiz edebilmek açısından güzel bir açık. Şimdi baktığımız zaman burada bakın birinci sıradaki iş kazası en çok ölüm olanlarına baktığımız zaman ilk sütunlarda ölümlü kaza oranları mevcut. Ölümlü kaza oranlarına baktığımız zaman insan düşmesi
+
+20
+00:07:54,548 --> 00:08:01,608
+%42, malzeme düşmesi %10.5. Şimdi arkadaşlar,
+
+21
+00:08:02,196 --> 00:08:11,735
+Biz daha önceki dönemde sizlerle beraber konuyu çalışırken iş sağlığı, güvenliğini dedik ki tehlike analizi yapardık, tehlikeyi belirlerdik.
+
+22
+00:08:12,235 --> 00:08:20,176
+Tehlike kök sebepti bizim için. Şimdi insan düşmesi ya da malzeme düşmesi dediğimiz zaman bunlar birer riskli ama ikisinin de kök tehlikesi aynı.
+
+23
+00:08:20,716 --> 00:08:26,915
+Yükseklik, yani yükseklik tehlikesinden kaynaklı risklerdir bunlar. İnsanın düşmesi ya da malzeme düşmesi.
+
+24
+00:08:26,915 --> 00:08:30,196
+Ben yüksekliği bir tehlike olmaktan çıkartır isemek.
+
+25
+00:08:30,196 --> 00:08:34,556
+Eğer, o zaman insan düşmesi ve malzeme düşmesini de otomatik olarak engelleyebilirim.
+
+26
+00:08:34,615 --> 00:08:45,975
+Aynı çök sebebe bağlı olduğu için insan ve malzemeyi toplarsam eğer, %53.4 ölümlü kaza oranını ortadan kaldırmış oluyorum.
+
+27
+00:08:48,884 --> 00:08:57,144
+Alana yöneldiğim zaman bile olası iş kazalarını yapı sektöründe %50'den fazla azaltmış oluyorum.
+
+28
+00:08:57,144 --> 00:09:15,564
+Yani ben sağın organizasyonel yapısı içerisinde bulunan bir yönetici, bir amir olarak yapacağım çalışmada sadece buraya baktığım zaman isteksel çalışmaya göre kısıtlı zamanımı ve imkanlarımı en verimli şekilde kullanmak adına
+
+29
+00:09:16,371 --> 00:09:37,531
+Bir plan yaptığımda, yükseklik temelli, tehlikeleri ortadan kaldırabildiğim takdirde, insan ve malzeme düşme riskini ortadan kaldıracağım için, toplamda %53,5'a yakın, %54'e yakın bir kazalanma, ölümlü kazalanma ortadan kaldırmış oluyor.
+
+30
+00:09:38,131 --> 00:10:00,511
+Tekrar listeye bakıyorum. Şöyle aşağı doğru baktığım zaman yüksek rakamlara bakmaya çalışıyorum. Ölümlü kaza oranlarının yüzdesel olarak yükseklik olanlarına bakıyorum. İnsan düşmesi %42.9, malzeme düşmesi 10.5, malzeme sıçraması 0.4. Şöyle aşağı doğru baktığım zaman %12.2 ile gözüme elektrik çarpması geliyor.
+
+31
+00:10:02,384 --> 00:10:17,084
+değerlendirdiğim zaman, evet elektrik çarpması görülmez, kokusu olmaz, çarptığı zaman insana sarsar ve hissettirir ve %12.2 ölümlü kaza oranına sahip.
+
+32
+00:10:17,084 --> 00:10:25,683
+Şimdi çok basit önlemler var. Bir önceki dönemde yine elektrikle alakalı süreçleri öncelediğimiz zaman kaçak akım ölesi kullanma gibi.
+
+33
+00:10:29,172 --> 00:10:42,491
+Teknik bir önlemden bahsetmiştim. Şimdi kaçak öncesi kullandığımız zaman, kaçak anında devreyi keseceği için ölümlü bir kazayla sonuçlanması mümkün olmayacak bir sonuçta karşımıza çıkacaktır demiştik.
+
+34
+00:10:55,764 --> 00:11:16,283
+Yükseklikti. 12.3, öbürü 53.3'tü galiba ya da 4'tü. Diğeri 12.2. Topladığım zaman %65 üzerinde bir kazalanmayı engelleme durumu söz konusu oluyor.
+
+35
+00:11:22,227 --> 00:11:46,155
+Şey yaptığım zaman, önlem aldığım zaman, öncelik koyduğum zaman, %70-80'e yakın ölümlü kazalanma oranını azaltmış oluyor. Mesela bakın 13. sırada şantiye içi, yani yapı sahası için trafik kazası %7. Bakın ölen insan sayısı 168. Sadece 168 kişi...
+
+36
+00:11:46,355 --> 00:12:01,355
+Şantiye içinde yaşanan trafik kazalarından dolayı hayatını kaybetmişti. Ne kadar acı ve ne kadar büyük bir rakam ve ne kadar basit çözümü olabilecek bir süreç. Yani şantiye içerisindeki transfer yolları...
+
+37
+00:12:01,663 --> 00:12:25,663
+Depo alanları, sevkiyat sahaları ve geçiş yollarının trafik dizaynının yapılması, bazı yerlerde tek yön gidişinin yapılması, araç park yerlerinin ya da geçiş güzergahlarının, insan geçiş yollarının ve araç geçiş yollarının birbirinden ayrılması gibi çok basit diyebileceğimiz temel idari konular ile 168 kişinin
+
+38
+00:12:27,475 --> 00:12:35,975
+Hayatını kaybetmesine engel olabilirdik. %7. Çok ciddi bir oran baktığımız zaman. Bunları topladığımız zaman
+
+39
+00:12:39,860 --> 00:12:46,879
+Sadece bu iki kalemle, üç kalemle, dört kalemle yüzde doksana kadar gidebiliyoruz. Mesela yapım makinesi kazaları.
+
+40
+00:12:47,580 --> 00:12:57,700
+206 kişi vefat etmiş, 8.6. Yüzde 8.6'sı. Şimdi yapım makinesi. Şimdi bunları arkadaşlar konuşurken geniş vizyondan ve perspektiften bakmak lazım.
+
+41
+00:12:57,700 --> 00:13:00,460
+Mesela görüntü işleme teknolojisinin.
+
+42
+00:13:01,011 --> 00:13:11,311
+Entegre ettiğiniz zaman bu yapıya, iş sağlığı, güvenliğine, ki bunu şu an yapan ve bizim partner beraber çalıştığımız firmalar var, sahaya çıkan çalışanın,
+
+43
+00:13:11,827 --> 00:13:39,827
+Üzerinde yeleği, baleti yoksa adama geçiş izni vermiyor. Açmak istediği kapılar açamıyor mesela. Ya da iş makinesi diyebileceğimiz bir aracın yakın çevresine bir insan yaklaştığı zaman otomatik olarak araca stop uyarısı gönderebiliyor. Ya da sesli stop uyarısından önce görsel ve sesli uyarılar yaparak karşı tarafı uyarabiliyor. Ya da daha da ileri gidip yaklaşmaya devam ettiğin zaman kazayı engellemek adına otomatik olarak...
+
+44
+00:13:39,827 --> 00:13:44,847
+Sistemi stop edip ya da yavaşlatabilecek yapılar ve sistemler mevcut.
+
+45
+00:13:46,067 --> 00:13:53,827
+Mesela işinin sahaya girdiği zamanki kamerada, bareti yoksa, üzerine yeleği yoksa, iş ayakkabısı yoksa,
+
+46
+00:13:57,347 --> 00:13:59,767
+bunu görüntü işleme teknolojisiyle algılayıp,
+
+47
+00:14:02,355 --> 00:14:16,275
+Kişinin bu anlamda uyarısının verilmesi ya da sağdaki işçilerin kapatılması artık günümüzde çok da zor değil ve arka planda bunları yapanlar yine sizler siz arkadaşlar bilgisayar mühendisi çalışanlar bunları yönetip bu süreçleri yapabiliyorlar.
+
+48
+00:14:30,355 --> 00:14:32,875
+Hayatını kaybetmesine engel olabilecek bir durumdu.
+
+49
+00:14:36,692 --> 00:14:39,631
+Dersleyim. Çıkınca haber vereyim sana.
+
+50
+00:14:43,692 --> 00:14:45,131
+Biraz daha haber vereyim.
+
+51
+00:14:46,671 --> 00:14:53,591
+Toplamına baktığınız zaman arkadaşlar, yapı işlerini kazan edenlerine baktığınız zaman bu Türkiye'deki.
+
+52
+00:14:54,591 --> 00:14:58,631
+%40'ı düşme, %14'ü...
+
+53
+00:14:59,956 --> 00:15:18,495
+Makine, yine %14'ü düşen cisimler, %8 elektrik, %24'ü diğerleri. Yani ana temeli düşen cisimler, yüksekten düşme, makine ve elektrik kazalarına baktığımız zaman %76'sını sağlıyor arkadaşlar.
+
+54
+00:15:18,495 --> 00:15:23,875
+Şimdi size ilginç bir tablo daha göstereceğim. Yüzdesel oranda, bursantaj oranıyla bakıyoruz.
+
+55
+00:15:24,563 --> 00:15:42,563
+Bu da Avrupa'daki oran. Bakın tekrar dönüyorum. Türkiye'deki oran, Avrupa'daki oran. Baktığınız zaman aslında arada 1-2 puanlık oynamalar var elektrik hariç. Elektrik de %8'den %4'e düşmüş elektrik işlerindeki kazalanma oranları. Şimdi baktığımızda...
+
+56
+00:15:45,043 --> 00:15:56,703
+Demek ki bu işin doğası gereği, bu işin sektörel yapısı gereği, eğer gerekli önlemleri almaz isek, karşılaşacağımız kazalanma oranı dünyanın her yerinde 3 aşağı 5 şukarı benzer şekilde olabiliyor.
+
+57
+00:15:57,563 --> 00:16:07,483
+Yani 1-2 puan oynuyor. Bunları engellemek adına yüksekte çalışma konularını, temel itibariyle, yüksekte çalışma konularını,
+
+58
+00:16:08,179 --> 00:16:34,439
+Tehlike itibariyle gidermek, elektrik konularını gidermek ve makinelerin sebep olduğu kazaları gidermek çoğu sürecimizi tamamlıyor. Bunları bir şekilde operasyon olarak üretebiliyoruz. Peki neden %100 elektrikçiler değişmiş diye baktığımız zaman orada karşımıza şu çıkıyor. Avrupa ülkelerinde meslek icrası konusundaki mesleki yeterlilik ve bunun denetimi çok sıkı yapılıyor. O yüzden elektrik işini hakikaten elektrikçi olanlar yapıyor.
+
+59
+00:16:36,179 --> 00:16:51,120
+Alaylı bile olsa gidip bir yerden temel eğitimini alması ve bu belgelerden yapılması bekleniyor. Avrupa'da alaylı birisi eğer eğitim almadıysa buna çalışmaya müsaade edilmiyor. O yüzden elektrik işlerinde %100 fark mevcut.
+
+60
+00:17:02,707 --> 00:17:27,307
+Yollarda 8.5, demir yolu da tespit edilmemiş bu şeylerde. İşte köprü ve düklerde %3.6 gibi kazalanma oranları oluşan. En fazla binalarda. Neden? Binalar çok yapıldığı için mi? Belki küçük bir tesir olabilir ama binaların çok yapılmasından bir adet.
+
+61
+00:17:27,923 --> 00:17:43,923
+Asıl sebep yükseklik kaynağının en fazla orada olması ve değişken yükseklik kaynağı ile çalışılır. Değişken bir yükseklik kaynağı var. Bundan dolayı kazalanma binalarda çok fazla oluyor. Bina inşaatlarından. Peki incelendiği zaman...
+
+62
+00:17:44,660 --> 00:18:10,300
+Şantiyenin büyük bir önüne göre bakıldığında, 1 ila 10 kişi çalışıldığında %20.6, 11 ila 50 kişi çalıştığında %3.6. Yani 7'de bir oran neredeyse bir azalma var. Yani bir anda bu kadar büyük bir artışın, yani ya da doğru söylemek gerekirse, kazalanma oranında azalışın olması sebebi nedir diye düşündüğümüz zaman, iş kazalarındaki
+
+63
+00:18:11,124 --> 00:18:28,284
+En önemli süreçte bir tanesi insan davranışlarıydı, tehlikeli davranışlar. Tehlikeli davranışlar insan hal ve hareketiyleydi. Personel sayısı arttıkça kontrol ve koordinasyon artmaya başlıyor. Arada birim amirler, bir organizasyon şeması dahilinde hareket ediyor.
+
+64
+00:18:32,019 --> 00:18:55,880
+Birim amirler ortaya çıkıyor. Birim amirler ortaya çıktığı için de bir anda kazalanma oranı 7 kat birden azalıyor. Yani proje büyüdükçe kazalanma oranı da azalıyor. Mesela şöyle bakalım. Sayımız 50 ile 100 arasına geldiği zaman 3.6 ile 2.3 arasında neredeyse %33'e yakın bir azalma meydana geliyor.
+
+65
+00:18:56,403 --> 00:19:14,784
+100 ila 500 arasında operasyonel yapı olarak bir farklılık olmadığı için ya da olamayacağı için aynı şekilde devam ederken 500'den fazla çalışan olan bir kurum için %1.6 yani 500'den fazla olduğunda yaklaşık yarı yarıya aşağıya düşüyor diyebiliyoruz.
+
+66
+00:19:22,720 --> 00:19:30,280
+Kurguladığımız operasyonel süreçler ya da hiyerarşik süreçler bu anlamda fayda sağlıyor.
+
+67
+00:19:35,092 --> 00:19:39,252
+En çok bir kazalama hangi meslek gruplarına karşımıza çıkıyor diye baktığımız zaman
+
+68
+00:19:39,252 --> 00:19:51,292
+Vasıfsız işçilerde %59, 56.9 ustalarına 16.7 çıraklarda %1.
+
+69
+00:19:51,932 --> 00:19:54,372
+Şimdi, vasıfsız işçiler niye bu kadar yüksek bu oran?
+
+70
+00:19:54,372 --> 00:20:02,392
+Çünkü vasıfsız işçi kontrol ve koordinasyona girmeden, kendini kontrol etmeden, yeteri kadar önlem almadan
+
+71
+00:20:03,155 --> 00:20:08,056
+Çalıştığı için ve bu algı sürecine girmediği için bunlar da kazalanma oranı daha yüksek oluyor.
+
+72
+00:20:08,976 --> 00:20:16,675
+Ustalarda %16.7, %18'e, %20'ye yakın baktığınız zaman, bu da aslında baktığınız zaman azımsayacak bir öğren değil.
+
+73
+00:20:16,755 --> 00:20:20,135
+Çünkü usta dediğiniz kişi, artık o işi yapmakta, ekspert.
+
+74
+00:20:21,096 --> 00:20:24,155
+Eğer hala kaza oluyorsa demek ki burada başka bir sıkıntı var demektir.
+
+75
+00:20:24,875 --> 00:20:29,476
+Bununla alakalı sıkıntı da genel itibariyle şu, ustalar kendilerine güveniyorlar.
+
+76
+00:20:30,003 --> 00:20:38,203
+ve kendine güvendikleri için de önlem almadan çalışmaya devam ediyorlar. Bundan dolayı da yani özgüven de insanları bu noktaya getiriyor.
+
+77
+00:20:38,203 --> 00:20:42,403
+Çıraklarda %1 neden? Çıraklarda da bir...
+
+78
+00:20:42,675 --> 00:20:50,855
+Çırak cesareti olduğu için, yetkisi olmayan işlere bazen girebildiği için onlara da kazalanma ihtimali karşımıza çıkıyor.
+
+79
+00:20:51,576 --> 00:20:57,375
+Yani totale baktığımız zaman %74-75'ini çok rahat birkaç kalemde elde edebiliyoruz.
+
+80
+00:20:57,956 --> 00:21:04,036
+Peki, ne yaparsak bu kazalanmayı azaltabilir, süreci daha sağlıklı yönetebiliriz?
+
+81
+00:21:04,576 --> 00:21:08,175
+İş sağlığı ve güvenliği arkadaşlar doğru yöneterek tasarımda başlar.
+
+82
+00:21:08,819 --> 00:21:19,819
+Proje kapsamında devam eder, sahada hayat bulur ve asla bitmez. Hiçbir zaman bitmeyen bir döngüdür. Bitmeyecek de bir döngüdür. Sürekli kontrol ve koronatasyon sağlanması gerekir.
+
+83
+00:21:24,692 --> 00:21:40,071
+Yapı alanlarında muhakkak sınır güvenliği salamalı. Eğer sınırları kontrol edemiyorsak, onlardan herhangi bir kontrol ile söz edemeyiz. Kapı girişlerimiz, yollarımız, geçeceğimiz güzergahlar belli olmalı.
+
+84
+00:21:45,652 --> 00:21:56,592
+izin olmalı. Yani herhangi bir kişi kafasına göre ben bu projede çalışıyorum deyip içeri giremez, girmemesi gerekir. Bununla alakalı tanımlamalar yaparak kart sistemi olabilir.
+
+85
+00:21:57,119 --> 00:22:11,299
+Parade üzerine gördüğümüz stickerları yapıştırarak tanıtım şekli olabilir. Mesela burada asansör, sorumlusuysa asansör kullanımı ona ait yük asansöründe o kullanıcısı, sadece onda bu asansör sorumlusu yetkisi olur.
+
+86
+00:22:11,299 --> 00:22:20,799
+Winch için kullanacaksa ya da ona bir sapancılık yapacaksa onda benzer bir sertika olur.
+
+87
+00:22:21,044 --> 00:22:34,683
+gibi mesela adam yükselte çalışacaksa, yükselte çalışma belgesi olabilmesi adına ya da sahada izin görülebilmesi için bunun bayatın üzerine yapıştırılması bir basit çözüm önerisi olarak kullanılabilir.
+
+88
+00:22:35,244 --> 00:22:41,004
+Belgeleri tamsa ve üzerine eğitim aldığı takdirde bu belgeyi ve bunu kullanmaya yetkisiz sahip olur.
+
+89
+00:22:41,844 --> 00:22:45,584
+Peki bunlarla alakalı ne eğitimin ve nasıl eğitim verilmesi gerekir?
+
+90
+00:22:45,584 --> 00:22:48,624
+Daha önce de bahsetmiştik, çalışan eğitim usul esasları yönetmeliği vardı.
+
+91
+00:22:49,044 --> 00:23:13,943
+Ve bu yönetmeliğin 3-2 vardı. Genel konular, teknik konular ve sağlık konuları. Genel konularda kişinin hukuki mevzuatla alakalı temel haklı sorunların bilinmesiyle alakalı ve bunlardan doğan hukuki sonuçlar değerlendirilirken, teknik konularda bireyle alakalı daha çok kimyasal, fiziksel ve ergonomik yükseklenmeleri, elle kaldırma, taşıma, patlama, parlama gibi teknik konularda değerlendirilir.
+
+92
+00:23:14,451 --> 00:23:30,231
+Sağlık konuları son olarak çalışan verilmesi gereken meslek hastalığı, hastalıktan korumak prensipleri ve korumak etkilerinin uygulanması, biyolojik ve sosyal risk etmenleri, ilk yardım gibi süreçlerde kişinin kaçışabileceği durumlarla karşı güçlenmek adına yaptığımız çalışmalar olması gerekiyor.
+
+93
+00:23:31,031 --> 00:23:33,672
+Peki, zorunlu eğitimler nelerdir? Gerekli eğitimler nelerdir?
+
+94
+00:23:33,672 --> 00:23:38,832
+Şimdi, temel iş güvenliği eğitimi dediğimiz eğitim zorunlu. Mesleki eğitim zorunlu.
+
+95
+00:23:39,263 --> 00:23:44,423
+İş Sağlığı ve Güvenliği kuruluk kurulma zorunlu ama belki burada 50'den fazla personel varsa.
+
+96
+00:23:45,743 --> 00:23:48,903
+Ağzorlu ekipleri oluşturulmalı ve bunlara eğitim verilmeli.
+
+97
+00:23:51,624 --> 00:23:55,743
+İlk yardım eğitmenin, iyi de ilk yardım eğitimi verilmeli.
+
+98
+00:23:56,463 --> 00:23:59,544
+Yangın eğitimi verilmeli, Yangın Hoca'sı tarafından.
+
+99
+00:24:00,660 --> 00:24:23,980
+Yüksekte çalışma eğitimi verilmeli. Yüksekte çalışma için önemli bir çalışmadır. Bacalarda vesaire falan çok çalışılma yapılabilir. Bir de gerekli eğitimler vardır. Beyaz yakaya eğitim, oryantasyon dediğimiz işbaşı eğitimi, çalışan temsilcisi eğitimi, koruma, kurtarma, tahliye eğitimleri, risk-kont analizi ekibi, toolbox eğitimi.
+
+100
+00:24:24,692 --> 00:24:31,611
+ve kullanılan makine ve ekipmanların eğitimi gibi eğitimler karşımıza eğitim olarak çıkmakların süreçte.
+
+101
+00:24:39,284 --> 00:24:46,683
+Profesyonel iş yönetimlerinde iş güvenliği ilk çalışanla temas ettiği için çok önemlidir.
+
+102
+00:24:47,644 --> 00:24:53,764
+Bununla alakalı hem online hem yüz yüze organizasyonlar yapılabilir.
+
+103
+00:24:54,804 --> 00:25:02,224
+Ki bu eğitim noktasında sürecin içerisine İSG'deki diğer profesyonel ve kurumdaki diğer çalışanlara da katabilmek adına.
+
+104
+00:25:04,403 --> 00:25:17,763
+Olay aslında bir bireyden, bir yapıdan çok daha bağımsız. Olay aslında bir sistem kurma olayı. Sistemini doğru kuran, doğru yöneten, doğru yönelilen bir kişi bu süreç içerisinde muvaffak etki çıkar.
+
+105
+00:25:20,583 --> 00:25:22,783
+Eğitindeki ilk hedef ne olmalı diye baktığımız zaman
+
+106
+00:25:23,635 --> 00:25:31,516
+Davranış değişikliği ile neden olması gerekir. Yani eğer bir davranış değişikliği neden olmuyorsa, bu eğitimin anlamına, anlamamıza da bir gerek kalmıyor.
+
+107
+00:25:32,456 --> 00:25:43,416
+Sağda eğitimler, sağda hayat buluyor. Çalışana değer katıyor. Sistem organosuna değer katmalı. Toplam edici oluşturmalı.
+
+108
+00:25:45,556 --> 00:25:49,355
+Ve tüm eğitimler doküvenliği elde edebilir olmalı. Eğer doküvenliği etmiyorsak bir anlamda yok.
+
+109
+00:25:54,291 --> 00:26:12,231
+Peki, eğitimlere baktığımız zaman insanlar okuduklarının %10'unu, duyguların %20'sini, görüntülerin %30'unu, hem gökühanlıklarının %50'sini, görüp işitli ve söylediklerini %80'ini, görüp işitli ve bu konu söylediklerini ise %90'ını hatırlamak olurlar.
+
+110
+00:26:27,667 --> 00:26:28,667
+Evet.
+
+111
+00:26:46,387 --> 00:26:50,567
+Şimdi bir örnek case inceleyelim sizinle beraber.
+
+112
+00:26:51,227 --> 00:27:06,527
+6 Temmuz 1988, İngiltere'nin Kuzey Denizi'nin, İskoçya'nın Doğu kıyısında 100 mil açığında bulunan Pfeiffer Alpha petrol platformu ile alevlenebilir bir gaz sızıntısı sonucu meydana gelen patlama ve yangında 167 kişi hayatını kaybetti.
+
+113
+00:27:07,967 --> 00:27:11,367
+Hayatını kaybedenler, direkt ve indirekt ilişkisi olan pek çok kişi üzerine etkileri oldu.
+
+114
+00:27:12,339 --> 00:27:38,339
+Petro platformu sahibi Oşidental Grup tahminen 4 milyar doların üzerinde mav bir zararla tazminatla karşılaştı. Bunun haricinde çevre zararı, balıkların zararı, okyanusun zararı ve hala tahribatı giderilemeyen kalıntıları bulunan zararlar hala daha etkisiyle beraber devam ediyor. O bölgenin resmen...
+
+115
+00:27:39,731 --> 00:27:52,231
+bitki örtüsünü ve canlı popülasyonunu değiştirdi bu kaza. Aynı zamanda 167 kişi gibi çok ciddi anlamda bir insanın ölmesine sebep oldu.
+
+116
+00:27:53,011 --> 00:28:02,552
+Kazanın temel sebebi bir kondestat pompasının hizmete alınması sırasında pomp hattının aşağı kısımlarında bulunması gereken basınç Rölyef Vanası'nın
+
+117
+00:28:02,928 --> 00:28:12,087
+Bakım için sökülmüş olması sebebiyle sıvılaştırılmış, ayrılabilir yangın malarının söküldüğü yerde sahaya basınç altında sızması.
+
+118
+00:28:15,168 --> 00:28:25,948
+Kazana sonra yapılan araştırmalarda pompayı devre alan kişilerin kendi yapmış oldukları faaliyetler üzerinde açık, direkt ve önemli etkileri oluşabilecek basınçı ve lef vanalarının daha önce sökülmüş olduğunun farkında oldukları görülmüş.
+
+119
+00:28:26,928 --> 00:28:29,307
+Kazanın oluşu ile ilgili en büyük faktör olan
+
+120
+00:28:29,715 --> 00:28:36,195
+Fine-Five'nin işizin sistemini aşağıdaki belirlikten alanları yetersiz olur. Arkadaşlar şöyle düşünün, Postgre bir petrol platformu var.
+
+121
+00:28:36,955 --> 00:28:46,715
+Petrol platformunda rölyef vanasını söküyorlar bir ekip. Tabi bunlar çok büyük hatlar ve devasa vanalar olduğu için saatler sürüyor bunları.
+
+122
+00:28:47,515 --> 00:28:54,475
+Finçlerle bağlamak, sökmek ve tekrar montajını yapmak. Adamlar sökmüşler ama işleri devam ediyor.
+
+123
+00:28:55,859 --> 00:29:13,480
+Arada var diye değişim oluyor ya da başka bir ekip geliyor. Yeni gelen ekip bakıyorlarken vanalar kapalı. Yani sistem merkezinde bir akış yok. Akış olması lazım. Sonuçta her an orası dakikası para. Bir para kazanması lazım. Bunun için de petrol platformunun zemininden petrol çekme devam etmesi lazım.
+
+124
+00:29:39,092 --> 00:30:00,451
+Evet. Adamlar yeni gelen ekip, Vanana söküldüğünden bir haberler. Bakıyorlar ki sistem durmuş. Dakikası para, sistemin durmaması lazım. O yüzden sistemi tekrar açıyorlar, devreye alıyorlar. Devreye alınca da bu sefer aldıkları oradaki kas sızıntı yapıyor.
+
+125
+00:30:00,960 --> 00:30:19,540
+Petrol sızıntı yapıyor, patlama yapıyor, patlama yapınca platform komple yerli bir oluyor. Şimdi bakıldığı zaman aslında burada çok basit bir yapının uygulanmadığını ya da ilgilenin olduğunu görüyoruz. Peki nedir bu? Bu arkadaşlar iş izin sistemi.
+
+126
+00:30:20,051 --> 00:30:48,031
+Yani nerede, kim çalışıyor, ne yapıyor, nasıl ilerliyor, bunun işlemesi ve yürümesi gerekiyordu. Burada eksiklerin olduğunu fark ediyorlar. Risklerden öneri yetersiz, sistemde bilinen eksiklerin giderilmesinin olmaması, işizmiz sisteminin uygulamasının yeterli önemlerinin verilmemesi, işizmiz sistemine ilgili resmi bir eğitim alınmamış olması, işizmiz sisteminin yeterince denetlenmemiş olması, üst yönetiminin iç sağlığı ve güvenliği tahdülünün yetersiz olması. Bu noktada karşımıza çıkan temel şeyler. Bir de eket dediğimiz etki.
+
+127
+00:30:48,051 --> 00:30:48,671
+Kitleme, kitleme.
+
+128
+00:30:49,236 --> 00:31:17,196
+Hatta yakın zamanda bu etiketleme, kitleme sistemlerinin bir bilgisayar mühendisliği tarafından, bunun otomasyonunun da yapıldığı ve uzaktan takip edilebilir bir hal ile kullanıldığını da gördük, yapmıştı. Yani bu süreçler insan hayatlarını engelli, ölümü engelleyebilecek, kazalanmayı engelleyebilecek süreçler olduğu için teknoloji ile de paralel şekilde kendini güncelleyip geliştirebilen yapılar. Bunlarla alakalı sizlerle gerektiği...
+
+129
+00:31:17,236 --> 00:31:36,776
+çalışmaları yapabilirsiniz. Hatta ben bununla alakalı dijital birkaç proje ve çalışma içerisindeyim. Bilgisayar mühendisliği içerisinde öğrenci arkadaşlarımızdan da katılmak ve görev almak isteyenler olursa bana ulaştıkları takdirde onları da bu projelerin içerisinde kullanabiliriz.
+
+130
+00:31:40,276 --> 00:31:53,156
+Evet, Eket sistemini doğru uygulamadıkları için, yani etiketleme kitleme sistemini yapmadıkları için burada petrol platformu patladı ve bu kadar insan hayatını kaybetti.
+
+131
+00:31:56,756 --> 00:32:04,156
+Bunun yanı sıra Health and Safety Executive tarafından yapılan araştırmada,
+
+132
+00:32:08,243 --> 00:32:21,903
+Kimya sanayinde meydana gelen kazanın 3'te 1'i bakımlarım sırasında ve bu iş izin sisteminin yokluğu ya da eksikliği sebebiyle olduğu ortaya çıkıyor. Demek ki iş izin sistemi bu anlamda bu kadar hayati önem taşıyan bir yapı.
+
+133
+00:32:21,903 --> 00:32:25,183
+Peki iş izin sisteminin nasıl kurulur?
+
+134
+00:32:36,468 --> 00:32:46,108
+Son noktadaki kullanıcının ya da uygulayıcının kontrolü ve denetimi dışında herhangi bir hattın çıkmasını engellemek, bir problemini engellemek adına önem arz ediyor.
+
+135
+00:32:46,368 --> 00:32:56,748
+İşin sistemi birlikte risk analizi sistemiyle entegre edilerek her işe başlamadan önce işe özel risk analizi yaparak saha içen en doğru çalışma usulünün uygulanması gerekiyor.
+
+136
+00:32:59,892 --> 00:33:12,992
+İş izlenen etkilenebilecek, oradaki yapacak çalışmaların etkilenebilecek diğer çalışanların önceden bildirilmesi, kontrol ve koordine edilmesi gerekiyor. İşe başladığı dönüşe çalışmaların işe dair almaları gerekli, özel eğitimler düzenlenmeleri gerekiyor.
+
+137
+00:33:18,355 --> 00:33:26,776
+Yapılacak işin niteliği, nasıl yapılacağı, yapılırken hangi tekliflere uygulanacağı, hangi yapım malzemelerini ve iş ihtimali kullanacağı konusunda bilgilendirmeler yapılması gerekir.
+
+138
+00:33:30,579 --> 00:33:31,692
+Eee...
+
+139
+00:33:36,948 --> 00:33:37,948
+Evet.
+
+140
+00:33:41,236 --> 00:34:04,036
+İşizin sistemin örneğine baktığımız zaman arkadaşlar, yapım amirliğinin ona ilgili işi yapacak kısım hazırlar, yapı birim amirine sunar, yapım metodunu ve malzemelerini kullanacağı malzemeleri sunar, yapım yöntemleri incelenir, yapım metotları incelenir, teknik birimi, iş güvenliği, iş şefleri onaylar.
+
+141
+00:34:06,355 --> 00:34:14,635
+Yapı birimi metot onayına istinaden işe başlamak için izin talep eder. İş izni için birim amirin onayından sonra bunu onaylanır.
+
+142
+00:34:15,135 --> 00:34:23,695
+Baktığınız zaman İSG bir çalışmalarının her yerinde inceler, risk analizi yapar. Varsa önemli bir durum yerine gerekli önlemler alır. Risk analizinin kopyasını çalışma haline bırakır.
+
+143
+00:34:23,695 --> 00:34:28,876
+İSG birimi onayından sonra işe başlanır. İş bitiminde İSG birimine haber verilir.
+
+144
+00:34:46,739 --> 00:35:11,879
+Temel itibariyle arkadaşlar, iş izin sistemini bu anlamda bahsetmiş olduk. İş izin sistemi, iş sağlığı ve güvenliğinde özellikle birden fazla ekibin ya da kalabalık ekiplerin bir arada bulunduğu süreçlerde, proses güvenliğinde, hatlarda,
+
+145
+00:35:14,320 --> 00:35:39,060
+Uygulanması gereken bir yapı. İş izin sisteminde şudur, özellikle yüksekte çalışma, kapalı alanlarda çalışma gibi risklerin bulunduğu yerlerde yapılacak çalışmaların, yani özel çalışmaların, önceden izin alarak, koordinatisinin yapılarak, tüm birimlere bildirimlerinin yapılarak uygulanmasının sağlanmasıdır.
+
+146
+00:35:39,476 --> 00:35:54,735
+İşin sistemi bu. Eket sistemi dediğimiz etiketleme-kitleme sistemi ya da buna loto da diyorlar. Look out, take out'tan geliyor İngilizce şeyleri. Ama Türkiye'de en çok eket kullanılıyor etiketleme-kitleme sistemleri diye.
+
+147
+00:36:09,300 --> 00:36:16,340
+Hattı kitliyor. Üzerine de etiket olarak kendi ismini ve orada yaptığı çalışmayla alakalı bir şey yazıyor.
+
+148
+00:36:16,340 --> 00:36:26,539
+Ta ki kitlediği için, kilitle bayağı bildiğiniz anahtarla kilitle kitlediği için o açmadığı müddetçe hattı kimse devreye alamıyor.
+
+149
+00:36:27,059 --> 00:36:31,099
+Bu da kişinin hat üzerinde çalıştığı süre boyunca güvenliği çalışmasını sağlıyor.
+
+150
+00:36:31,099 --> 00:36:34,840
+Aynı şey mekanik tesisatta, borularda ve vanalarda da geçerli.
+
+151
+00:36:35,399 --> 00:36:42,579
+Aynı şey elektrik tesisatında, elektrik kablo hatlarında, enerji hatlarının transferinde de geçerli.
+
+152
+00:36:43,159 --> 00:36:49,099
+Panolara ya da vanalara koyulacak etiketleme, kitleme sistemleri bu anlamda...
+
+153
+00:36:50,260 --> 00:37:06,700
+Bu, üzerinde, hat üzerine çalışacak kişi ya da kişileri korumak için uygundur. Diğer iki bir hat var, uzun bir hat. Birden fazla kişi çalışacak. Herkes ayrı ayrı kendi kendine koyacak. Tüm çalışan adamlar güvenli bir şekilde çalıştıktan sonra, emin olduktan sonra.
+
+154
+00:37:07,380 --> 00:37:34,700
+Hat tekrar devreye alınabilir. Türkiye'de de meydana geliyor. Uzun bir elektrik hattı var. Elektrik hattına adam çalışmaya gönderiliyor. Ama arkadan gelen ekip bakıyor ki hat kapalı. Ya bu hattı niye kapatmışlar? Deyip kimseye sormadan, araştırmadan hattı tekrar devreye alıyorlar. Hattı devreye alınca hattın ucunda çalışan diğer ekipler hayatlarını kaybediyorlar. Bu ve buna benzer çok fazla yaşanan olay maalesef ki hayatımıza, karşımıza çıkıyor.
+
+155
+00:37:36,115 --> 00:37:51,376
+Evet arkadaşlar, bu haftalık konumuz buydu. Ben sınavda mesul olacağınız tüm konuları, özet notları ve bunlarla alakalı ulaşabilecek ne varsa hepsini bu hafta içerisinde yükleyeceğim sisteme.
+
+156
+00:38:00,596 --> 00:38:16,256
+Saat 15.17.30, 5.30 sınav tarihimiz, vize tarihimiz olacak. Vize tarihine kadar, vize sınav tarihine kadar ulaşmak istediğiniz, sormak istediğiniz herhangi bir şey varsa mailde ya da buradan da ertten bana sorabilirsiniz.
+
+157
+00:38:16,796 --> 00:38:22,476
+Mail adresim sanırım herkeste vardı, yine olmayabilir diye şuradan notumu atayım.
+
+158
+00:38:31,219 --> 00:38:35,719
+mail arasında tekrar yazdım. Mail ile isteyenler bana buradan ulaşabilirler.
+
+159
+00:38:42,963 --> 00:38:44,403
+Herhangi bir sorusu var mı?
+
+160
+00:38:58,260 --> 00:39:04,940
+O zaman herkese iyi aflar diliyorum arkadaşlar. İyi bayramlar, kazasız günler. Bu arada bugün kandil kandilin mübarek olsun.
