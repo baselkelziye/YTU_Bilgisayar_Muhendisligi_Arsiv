@@ -1,0 +1,2179 @@
+1
+00:00:02,355 --> 00:00:07,756
+Şimdi bir saniye, videoyu doldurayım. Ha bir de mülke alayım.
+
+2
+00:09:05,875 --> 00:09:09,875
+Merhaba arkadaşlar.
+
+3
+00:09:09,875 --> 00:09:21,875
+Arkadaşlar, yine mesajda da yazdık. Bu haftada Cihan Hocamızla birlikte iki grup halinde dersi işleyeceğiz. Aslında doğalımız bu. Bu dersi bu şekilde işliyoruz.
+
+4
+00:09:21,875 --> 00:09:32,875
+Şimdi katılım sayısında ciddi ağırlığında düşüş var ama herhalde büyük bir çoğunluğumuz sonrasında kayıttan bizden intercih ediliyor.
+
+5
+00:09:34,419 --> 00:09:58,419
+O şekilde neşey oluyorsa yeterli olur. Geçen hafta hatırlarsanız, quality of service noktasına kadar gelmiştik. Bu haftaki amacımız da quality of service'i olabildiğince derinlemesine bir şekilde, detaylı bir şekilde gözden geçirip bu haftayı tamamlamak.
+
+6
+00:10:00,000 --> 00:10:05,759
+Sonrasında internet networking konusu var. İnternet networking dediğimizde doğal olarak,
+
+7
+00:10:05,759 --> 00:10:13,919
+Çin içerisine TCP, IP girecek. Network layer ağ katmanı olduğu için IP tarafıyla başlayacağız.
+
+8
+00:10:13,919 --> 00:10:21,919
+Sonrasında da yukarıya doğru ilerleyeceğiz. Yani bugünkü fokusumuz, odağımız Quality of Service.
+
+9
+00:10:22,484 --> 00:10:31,044
+Şimdi Quality of Service başlığı altında işleyeceğimiz konular aslında düz slide'da verilmiş durumda.
+
+10
+00:10:31,044 --> 00:10:40,084
+Bir, uygulamalar açısından Quality of Service ne anlamak geliyor? Bunu bir anlamamız lazım.
+
+11
+00:10:40,084 --> 00:10:47,484
+Yani bütün uygulamaların ihtiyaçları aynı olsaydı aslında uygulamaların...
+
+12
+00:10:48,436 --> 00:10:58,956
+A trafiğine bağlı olarak farklı davranışları olmasaydı, o zaman Quality of Service'den de bahsetmek çok anlamlı olmayabilir.
+
+13
+00:10:58,956 --> 00:11:07,436
+Ancak birazdan göreceğiz ki uygulamaları belirli örnekler üzerinden kategorize edebiliriz.
+
+14
+00:11:07,436 --> 00:11:13,436
+Ve bu kategorilere de yine öğreneceğimiz birtakım kriterlerle.
+
+15
+00:11:14,995 --> 00:11:16,995
+Sandartları getirelimiz.
+
+16
+00:11:16,995 --> 00:11:17,995
+Mantık emiştiriyoruz.
+
+17
+00:11:17,995 --> 00:11:18,995
+Hocam bir saniye.
+
+18
+00:11:18,995 --> 00:11:25,995
+Şu an mesela seste bir düzelme var mı ya da bir iyileşme var mı?
+
+19
+00:11:25,995 --> 00:11:31,995
+Gökhan hocanın sesiniz gayet normal geliyor ama Gökhan hocanın sesi biraz az geliyor.
+
+20
+00:11:31,995 --> 00:11:36,995
+Tamam, ona şu an çok fazla bir etkimiz olamıyor maalesef.
+
+21
+00:11:36,995 --> 00:11:38,995
+Hani dersi beraber yapıyoruz ama...
+
+22
+00:11:40,148 --> 00:11:48,148
+Farklı lokasyonlarda beraber yapmak durumundayız. Biz de network'in sınırlarını zorluyorduk aslında.
+
+23
+00:11:48,148 --> 00:11:56,148
+Quality of Service kısıtlarından da şu anda tam bahsederken aslında bu yaşadığımız şey de onun bir parçası.
+
+24
+00:11:56,148 --> 00:12:06,148
+Ses trafiği veya görüntü trafiği veya normal data trafiği. Şu anda daha mı iyi arkadaşlar o tarafta ses? Nasıl? Rahat duyabiliyor musunuz?
+
+25
+00:12:07,316 --> 00:12:10,716
+Şu an biraz böyle ankesörlü telefonla konuşuyormuşuz gibi geliyor.
+
+26
+00:12:10,716 --> 00:12:15,316
+Sen ankesörlü telefonu hatırlıyor musun ya? O kadar yok.
+
+27
+00:12:15,316 --> 00:12:16,716
+Hatırlıyorum.
+
+28
+00:12:16,716 --> 00:12:17,716
+İyiymiş.
+
+29
+00:12:22,803 --> 00:12:29,803
+Evet, evet zaten amacımız o hepimize birden bir seferde bunu böyle topluca anlatabilmek, aktarabilmek.
+
+30
+00:12:29,803 --> 00:12:37,803
+Ama evet, yani cep telefonu teknolojisi kullanıyoruz ama demek ki ses kalitesi neymiş birazdan göreceksiniz.
+
+31
+00:12:37,803 --> 00:12:42,803
+Cep telefonu olsun, ister ankesörlü telefon olsun değişmiyor.
+
+32
+00:12:42,803 --> 00:12:48,587
+Bir sonraki slide de bunun tam böyle cuk yerine oturacak bilgiler içeriyor.
+
+33
+00:12:48,884 --> 00:12:54,884
+İkinci başlığa geçecek olursak, ben şimdi önceden her biriyle alakalı basit şeyler...
+
+34
+00:12:54,884 --> 00:12:56,884
+Slider geçmediniz değil mi?
+
+35
+00:12:56,884 --> 00:13:08,884
+Yok yok, hayır. Pardon, [öğrenci], chat'e MMO Yıldız yazmış. Ne olduğunu bilmiyorum.
+
+36
+00:13:08,884 --> 00:13:13,884
+Açıkçası MMO neyin kısaltması? [öğrenci], soru mu soruyorsun, başka bir şey mi söylüyorsun?
+
+37
+00:13:20,340 --> 00:13:22,340
+Neymiş peki? MMO?
+
+38
+00:13:23,340 --> 00:13:31,340
+Şey, çok oyunculuğu online oyunlar için kullanılan bir şeydi. Bir de, biz yani çok bir şey bağlandığımız için dersi.
+
+39
+00:13:31,340 --> 00:13:37,340
+Haa, tamam anladım. Açıklılık söyler misin bana? Multiplayer haricinde değil mi? MMO?
+
+40
+00:13:38,340 --> 00:13:40,340
+Masive Multiplayer Online.
+
+41
+00:13:40,340 --> 00:13:45,340
+Haa, Masive Multiplayer Online. Anladım, okey. Tamam. Allah Allah.
+
+42
+00:13:45,340 --> 00:13:45,836
+Hocam böyle bir saniye versin.
+
+43
+00:13:45,940 --> 00:13:51,940
+Yani çete herkese yazınca ben de soru soruyorsun diye doğal olarak cevap veriyorum yani.
+
+44
+00:13:52,940 --> 00:13:55,940
+Çok iletiştiriyor. Neyse.
+
+45
+00:13:56,940 --> 00:14:02,940
+İkinci, bu konuyla alakalı önemli başlık trafiğin şekillendirilmesi.
+
+46
+00:14:02,940 --> 00:14:10,940
+Çünkü aslında şu ana kadar artık konuyu kavramış olmanız gerekiyor, hissedebiliyor olmanız lazım.
+
+47
+00:14:12,628 --> 00:14:19,628
+Topolojide paketlerin bir noktadan bir başka noktaya atlamalı bir şekilde aktarılmasını sağlıyor.
+
+48
+00:14:19,628 --> 00:14:29,628
+Ve geçen haftada gördük, eğer düzgün yapmazsak, topolojinin tasarımsal kriterlerine uymazsak
+
+49
+00:14:29,628 --> 00:14:38,628
+veyahut da söz verdiğimizin üzerinde trafik, paket oluşturursak doğrudan tıkanıklığa sebep oluyorduk, başka sıkıntılara sebep oluyorduk.
+
+50
+00:14:40,148 --> 00:15:03,148
+Biz ise burada da servisin kalitesini kontrol edebilmenin en güzel yolu trafiği şekillendirmek. Bir şekilde göreceğiz o yöntemleri. Trafiğin uygulamada çıkışından bağımsız olacak tarzda network katmanında, ağ katmanında şekillendirilmesini sağlayacağız.
+
+51
+00:15:07,604 --> 00:15:33,604
+olması gerekiyor. Yani hostun ya bunu enforce etmesi gerekiyor ya da sonuçta bu host bir yerlerde bir ISP'ye bağlı. ISP tarafından yapılması gerekiyor. Host tarafından yapıldığı zaman bu hani trafik shaping ama ISP tarafından yapıldığında onu da konuşacağız. Bu sefer hani polislik oluyor. Trafik polisi, polising oluyor.
+
+52
+00:15:33,604 --> 00:15:34,604
+Aynen.
+
+53
+00:15:34,868 --> 00:15:45,668
+Holistik'ten kastımız topolojinin genelinde bir bütününde. Çünkü neden? ISP o topolojiye sahip. Onun yürütücüsü, yöneticisi, şekillendiricisi.
+
+54
+00:15:45,668 --> 00:15:57,168
+Bunu sadece uygulamanın çıkış noktasında uygulama yapmış olmuyor. Network'ün tamamında bir bütün olarak, total bir şekilde, holistik bir şekilde yapılmış oluyor.
+
+55
+00:15:57,168 --> 00:15:59,368
+Onu da gözden geçiyoruz.
+
+56
+00:15:59,440 --> 00:16:10,440
+Tabii ki işletim sistemleri dersi aldınız, almayanınız yoktur diye tahmin ediyorum. Orada paylaşılan kaynakları...
+
+57
+00:16:11,028 --> 00:16:21,548
+Paylaştırmanın en güzel yollarından bir tanesi neydi? İşlemci örneğinden yola çıkacak olursak işlemci zamanının planlanmasıydı, schedule edilmesiydi.
+
+58
+00:16:21,548 --> 00:16:39,028
+Burada da hani Network'ta az önce söylediğim ya, geçen haftada işlediğimiz konu temel yönetmemiz, Network'ü, topolojiyi rahatlatacak şekilde uygulamaları da en az etkileyecek şekilde yönetmemiz gereken kaynak, paketlerin hareket etmesi bir...
+
+59
+00:16:39,028 --> 00:17:03,628
+bir noktadan bir başka noktaya aktarılması. Yani paketler üzerinden, onların hareketi üzerinden bir zamanlama yapmamız, bir scheduling yapmamız gerekiyor. Diğer taraftan bunu congestion kontrolde de konuşmuştuk. Uygulama servis sağlayıcıyla el sıkışıp diyor ki benim ihtiyaçlarım şunlar.
+
+60
+00:17:03,923 --> 00:17:11,403
+Band fit açısından ihtiyacım bu, hız açısından ihtiyacım bu, gecikme açısından ihtiyacım bu.
+
+61
+00:17:11,403 --> 00:17:21,923
+Ben bunlara uyacağım ama sen de buna göre bana karşı tarafa benim ihtiyaçlarımı uygun şekilde paketlerimin gitmesini sağlar.
+
+62
+00:17:21,923 --> 00:17:31,923
+Congest'in kontrolde de bu yine neydi? Etmişin kontroldü. Burada da yine etmişin kontrol. Çok bir şey fark etmiyor. Demek ki...
+
+63
+00:17:31,923 --> 00:17:34,283
+tıkanıklığı kontrol etmek için
+
+64
+00:17:34,283 --> 00:17:36,423
+tam da böyle orta noktada duruyordu.
+
+65
+00:17:36,564 --> 00:17:38,043
+Hatta bir arkadaşınız sordu
+
+66
+00:17:38,043 --> 00:17:40,384
+hani onun sol tarafı
+
+67
+00:17:40,384 --> 00:17:40,763
+böyle
+
+68
+00:17:42,483 --> 00:18:10,483
+Önceden alınan tedbirler proaktif veya engelleyici tedbirler, preventif. Sağ tarafı ise reaktif tedbirlerdi. Hangisine giriyor diye ona da yorum yapmıştım. Tam aslında o noktadaki yorumdan yola çıkacak olursak, Ethernet, kontrol de uygulamalar ile topoloji arasında, topolojiyi yönetenler arasında uygulama seviyesinde bir evsiz.
+
+69
+00:18:10,483 --> 00:18:12,923
+Tıkışma, karşılıklı anlaşma.
+
+70
+00:18:14,483 --> 00:18:17,483
+Şimdi Quality of Service'i uygularken
+
+71
+00:18:18,163 --> 00:18:27,163
+olaya hani ne taraftan baktığımıza bağlı olarak integrated services de diyebiliyoruz, differentiated services de diyebiliyoruz.
+
+72
+00:18:27,163 --> 00:18:33,163
+Bunu böyle şey diye düşünebilirsiniz hani İngilizlerin, Amerikalıların kullandığı deyim vardır.
+
+73
+00:18:33,163 --> 00:18:39,163
+Domates biri tomato der, öbürü tomato der. İkisi de aynı katıya çıkıyor. Yani servisler var.
+
+74
+00:18:39,163 --> 00:18:46,163
+Bu servisleri ben aynı topoloji üzerinden bir şekilde başlangıç noktalarından hedef noktalarından...
+
+75
+00:18:46,163 --> 00:18:58,163
+aktarmak zorundayım. Başka çarem yok. Bunları bir kurala göre birleştirerek aktaracağım. Birleştirirken de her birinin bana beyan ettiği...
+
+76
+00:18:58,612 --> 00:19:26,012
+şu şekilde trafik oluşturacağım diye beyan ettiği kuralları gözeterek aktaracağım veya diğer taraftan bana gelen trafiği topoloji olarak bakıyorum, servis sağlayıcı olarak bakıyorum, gözlem geçireceğim, ona göre sınıflandıracağım, ayıracağım, differentiation, farklılıkları ortaya çıkartmak ve adayacağım bu kategoride, bu tefede, bu sınıfta bir uygulama o zaman onu bunu uygulayacağım.
+
+77
+00:19:26,612 --> 00:19:51,012
+olaya ne taraftan baktığınıza bağlı olarak? Aslında o Differentiated Services bir taraftan baktığınız zaman sadece Quality of Service anlamında ya da kullanıcının Quality of Service isteminde değil, şey olarak da düşünebilirsiniz. Şimdi bir ISP var, üzerinden trafik taşıyor ve bu trafiği
+
+78
+00:19:51,251 --> 00:20:04,652
+şey vardır ya, en basit hali, peer-to-peer network'ü bir şekilde ISP'ler istemez, çok tasvip etmez. Dolayısıyla onu limitlemek, kısmak ya da Voice over IP'yi
+
+79
+00:20:05,044 --> 00:20:22,044
+Mesela Telekom kendisi dışında herhangi birinin kendi attığı üzerinden VoiceOver IP yapmasını istemez. Bu sözleşmelerinde yasaktır. Dolayısıyla bu trafiği tanımlamak, Gökhan Hoca'nın söylediği o klas olarak bunu identify edip bunu ya limitlemek ya da atmak ister.
+
+80
+00:20:22,708 --> 00:20:35,008
+Aynen veya farklı bir fiyat ona belirlemek için kullanırken bu paketlere diğerlerinden iki kat daha, üç kat daha fazla fiyat düştüm diyebilirim.
+
+81
+00:20:35,008 --> 00:20:42,208
+Dolayısıyla quality of service'e aslında hani sadece şey diye bakmamak lazım, burada konuşacağımız yöntemlere, tekniklere.
+
+82
+00:20:42,208 --> 00:20:50,708
+Hani sadece servis kalitesi hani kullanıcının servis kalitesi ya da uygulamaların servis kalitesi değil, genel network'ün servis kalitesi.
+
+83
+00:20:50,708 --> 00:21:05,708
+olarak da bakmak lazım. Çünkü yani over provisioning yaparsanız yani şeyde konuşmuşsunuzdur, congestion control'da konuşmuşsunuzdur. Hani network'ı tasarlarken evet ben geçen hafta maalesef şey yapamadım.
+
+84
+00:21:07,316 --> 00:21:16,715
+Orada hani network'ü geniş geniş tasarlarsanız ki mesela telefon network'ü bunun genel örneklerinden bir tanesidir.
+
+85
+00:21:16,715 --> 00:21:26,316
+Telefonu açtığınız zaman karasal telefondan bahsediyorum. Cep telefonu hala sıkıntılı ama karasal telefonda her zaman bir dial tonu alırsınız.
+
+86
+00:21:26,675 --> 00:21:35,295
+Çünkü kapasite boldur. Hani 1970'ler, 80'lerde olmadığımıza göre şu an rahat bir kapasite var. Tıkır tıkır kullanabiliyorsunuz.
+
+87
+00:21:35,295 --> 00:21:47,675
+Bir beklemeniz yok. Dolayısıyla hani over provisioning yaparsanız gereğinden fazla kaynak tüketirseniz zaten quality of service vesaireyle uğraşmanıza gerek kalmaz. Ama
+
+88
+00:21:47,955 --> 00:22:13,955
+O gereğinden fazlanın ne kadar fazla olması gerektiğini bilmiyoruz. Yani siz bugün için fazla tasarladığınız şey, bundan üç yıl ya da beş yıl sonra yetersiz hale gelecek. Ya da gelme ihtimali olacak, söz konusu olacak. Dolayısıyla elinde sonunda aslında şeye ihtiyacımız var. Qualitator Service'e ihtiyacımız var. Böyle bakmak lazım.
+
+89
+00:22:14,324 --> 00:22:16,764
+Bir sonraki slide'a geçebiliriz ya.
+
+90
+00:22:16,764 --> 00:22:17,764
+Tamam.
+
+91
+00:22:17,764 --> 00:22:29,355
+Şimdi arkadaşlar, az önce de konuşuyorduk tam, hatta böyle esprilerini yaptık. Bir sonraki slide'da konuyla alakalı bilgiler var.
+
+92
+00:22:33,683 --> 00:22:48,299
+bir ağ katmanından, halite açısından kontrol edilmesini beklediği kriterler, bandwidth, band genişliği, delay, gecikme, jitter,
+
+93
+00:22:48,500 --> 00:23:07,500
+Gecikmenin anlık değişimi, o değişimin standart satması, dağılımlarda ve bu Gauss verisi normalde, onun ne kadar geniş, basık bir şapka gibi mi, yoksa daha böyle sivri bir oka benzer gibi mi olduğu, loss'ta kayıp.
+
+94
+00:23:07,500 --> 00:23:15,500
+Şimdi sol tarafta da, aslında burada bir matriz var, sol tarafta da dikkat edin uygulamalar var. Bu uygulamalar...
+
+95
+00:23:17,011 --> 00:23:28,612
+Kendi işlerimde az önce de söyledim, böyle öne çıkan ama aslında gerçekte belirli kategorilere tekabül eden, renk düşen uygulamalar.
+
+96
+00:23:28,612 --> 00:23:37,612
+E-mail, file sharing, web access, remote login, audio on demand, video on demand, telefon ve video konferansı.
+
+97
+00:23:37,612 --> 00:23:43,211
+Şimdi şöyle düşünün, e-mail, e-mail gönderdiniz, bunun...
+
+98
+00:23:43,375 --> 00:24:03,175
+Yani siz gönderip de sende basıp da gönderdiğiniz anda, karşı tarafın alıcının posta kutusuna düşmesini bekleme gibi bir şeyiniz yoksa, sizden çıktıysa sizin için bitmiş demektir. Yani olay orada sizin açınızdan bağlayıcılığı yitiriyor.
+
+99
+00:24:03,175 --> 00:24:11,375
+Tabii ondan sonra ne başlıyor? Karşı tarafın cevap verme süreci başlıyor. Ama bir bilgiyi...
+
+100
+00:24:11,375 --> 00:24:34,976
+bu noktadan, çıkış noktasından, varış noktasına gönderip, oradan onunla alakalı cevabı almak, birbirlerinden olabildiğince zamansal olarak akutlay edilmiş durumda. Birbirinden ayrılmış durumda. Çok asenkro. Yani böyle anlık request-response'dan bahsetmiyoruz.
+
+101
+00:24:35,092 --> 00:24:45,291
+Şimdi, artık e-mailler günümüzde artık videoda içerebiliyorlar, görüntü, ses aklınıza girebilecek her türlü şey içerebiliyorlar.
+
+102
+00:24:45,291 --> 00:24:53,092
+Ama klasik e-maili düşündüğümüzde yazıdan oluşuyor, netin teksten oluşuyor. Ondan ötürü de...
+
+103
+00:24:53,652 --> 00:25:16,052
+Belfit requirementları düşük olarak kabul ediyoruz. Yani çok fazla bir Belfit'e ihtiyaçları yok. Delay, delayden etkilenmeleri de düşük. Çünkü az önce anlattığım sebepten ötürü, 10 dakika geçmiş veya 10 dakika geçmiş.
+
+104
+00:25:16,240 --> 00:25:18,639
+çok büyük bir önem taşınmıyor.
+
+105
+00:25:18,639 --> 00:25:26,319
+E-mail'i gönderirken sonuçta hani uç noktadaki istemci bir mail sunucuya öncelikle bunu transfer ediyor.
+
+106
+00:25:26,319 --> 00:25:29,759
+Hani sonra da mail sunucular birbiri arasında transfer ediyor.
+
+107
+00:25:29,759 --> 00:25:36,159
+Bu transfer sırasında zaten hani Gmail'de bile gönderebildiğiniz maksimum mail boyutu belli.
+
+108
+00:25:36,159 --> 00:25:42,960
+Dolayısıyla bunun hızlı olması, yavaş olması vesairesi gibi bir ihtiyaç yok, kısıt yok.
+
+109
+00:25:43,059 --> 00:26:10,379
+Bir paketle diğer paket arasındaki gecikme süresinin oynamasında oluşan jitter'ın ne kadar olduğunu, hani bir paketim 10 milisaniye diğeri 50 milisaniye gecikti gibi bir dert yok. Çünkü bunların hiçbiri şey değil, nedir o? Benim dosyayı, o maili transfer etmeme engel değil. Sıkıntı ne olabilir? Burada en büyük sıkıntı e-mail'de bir veriyi kaybetmek. Kaybettiğiniz zaman tekrar göndermeniz lazım.
+
+110
+00:26:11,059 --> 00:26:18,059
+Şimdi canlı bir örnek veriyor olacağım. Benzer bir şey nedir o?
+
+111
+00:26:18,644 --> 00:26:39,044
+paketler arasındaki gecikmenin değişmesi, Jitter'ın artması ya da azalması. Şu an bir telefon görüşmesi yapıyoruz aslına bakarsanız, Belli açılardan. Bir taraftan da Audio On Demand yapıyoruz. İkisinde de Jitter'ın durumu ne gözüküyor? Pembe gözüküyor. Dolayısıyla...
+
+112
+00:26:39,476 --> 00:26:50,236
+Aslında bizim sesimizi iyi ya da kötü duymanız delay'e ve jitter'e bağlı teknik olarak. Jitter kötü olduğu zaman kalitemiz de kötü oluyor.
+
+113
+00:26:51,516 --> 00:26:58,236
+Aynen, aynen. Ve burada şeyi de vurgulamamız lazım Cihan. Aşağıda yazılıyor ama...
+
+114
+00:26:58,708 --> 00:27:07,908
+dikkatden kaçmasın. Buradaki low, medium veya high, bandwidth'in düşük olması, ortalama olması veya yüksek olması değil.
+
+115
+00:27:07,908 --> 00:27:17,908
+bandwidth'in bu olaya etkisini yani quality of service açısından veya delay'in etkisini, jitter'ın etkisini, loss'un etkisini.
+
+116
+00:27:21,076 --> 00:27:26,675
+Dilek çok fazla etkili değil. Dilek çok fazla etkili değil. Hayır ise çok etkili.
+
+117
+00:27:26,675 --> 00:27:32,076
+İşte bakın az önce Cihan Hocamız bunun çok net bir açıklamasını yaptı.
+
+118
+00:27:32,076 --> 00:27:35,875
+Biz hem telefon görüşmesi hem de...
+
+119
+00:27:36,211 --> 00:28:04,211
+Audio On Demand yapıyoruz. Veya Audio Conferencing yapıyoruz aslında. Çünkü On Demand, siz bunu kaydettikten sonra izlediğiniz hali, bu listede Audio Conferencing ile telefonu aynı kefeye düşüyor, aynı kategoriye düşüyor. İkisinde de olayı belirleyen, kaliteyi belirleyen, aslında dikkat edin, delay ve jitter. Yani bat genişliği zaten bunu karşılayın.
+
+120
+00:28:04,211 --> 00:28:16,211
+Bence bat genişliğinin olması lazım. O çok böyle anlık olarak değişecek bir şey değil. Veya değişse de çok bizi etkilemeyecek. Bu tabladan anladın.
+
+121
+00:28:16,211 --> 00:28:20,211
+Zaten hani audio için gerekli bent width oldukça...
+
+122
+00:28:20,915 --> 00:28:23,915
+Düşük, hani teknik olarak baktığımızda.
+
+123
+00:28:23,915 --> 00:28:30,316
+Şey özellikle de videoya ya da videokonferansinge şey yaptığımız zaman, karşılaştırdığımız zaman
+
+124
+00:28:30,316 --> 00:28:36,915
+birinde hani şey aktarmanız lazım. Videokonferansing ya da video on demand yapıyorsanız
+
+125
+00:28:36,915 --> 00:28:42,915
+ses artı görüntü aktarmanız lazım. Audio ile alakalı şeyler de telefonda
+
+126
+00:28:42,915 --> 00:28:48,915
+ya da sadece audio on demand gibi bir şey yani bir podcast yayınını dinliyorsanız
+
+127
+00:28:48,915 --> 00:28:57,415
+Vesaire öyle bir şey yapıyorsanız, oldukça düşük bir bandwidth ile bu işi kurtarabilirsiniz sonuç olarak.
+
+128
+00:28:57,415 --> 00:29:01,415
+Aynen. Ama bakın...
+
+129
+00:29:01,652 --> 00:29:21,504
+Mesela file sharing, orada esas baskın olan ne? Bandwidth, Hive. Çünkü niye? Şimdi dosya lokalde diskimizde ise, düşünsenize artık günümüzde SSD diskler kullanıyoruz. SSD diskleri bile PCI Express, NBME olarak kullanıyoruz.
+
+130
+00:29:21,503 --> 00:29:37,503
+Yani diskten erişimdeki gecikmeye toleransımız yok neredeyse. Çünkü işlemciler ve front-track buslar inanılmaz hızlanmış durumda. İşleyeceğimiz veri miktarı büyük. O zaman benim de bu veriyi networkten...
+
+131
+00:29:38,324 --> 00:30:02,324
+alırken birinci kriterim ne olarak karşıma çıkıyor? Band genişliği olarak karşıma çıkıyor. Yani 100 megabit ile almak yerine 1 gigabit, 1 gigabit yerine 10 gigabit oluyorsa 100 gigabit ile almak istiyorum. Böyle bir şey var. Öyleyse, demek ki, bizim aslında şunu kabul etmemiz lazım. Topoloji de...
+
+132
+00:30:02,751 --> 00:30:13,751
+Aynı anda her zaman sadece tek tip uygulamanın paketleri akacak, ilerletilecek diye bir kural yok.
+
+133
+00:30:14,751 --> 00:30:23,751
+Pek çok farklı tikteki uygulamanın paketleri aynı anda topoloji üzerinden akacaklar.
+
+134
+00:30:24,751 --> 00:30:28,587
+Ve topolojiyi en verimli şekilde kullanmak...
+
+135
+00:30:28,627 --> 00:30:52,627
+Geçen haftaya da geri dönecek olursak, hatırlayın, her topolojinin bir bilim zamanda aktarabileceği maksimum paket miktarı vardı. Bunun üzerine çıktığımız zaman tıkanık bir konca için başlıyordu. O zaman bizim mühendislik açısından bu maksimum bilim zamanda aktarılabilecek olan paket miktarını...
+
+136
+00:30:53,236 --> 00:31:09,836
+O anda aktarılacak olan paket tiplerini en iyi şekilde bir araya getirip, bunların birbirlerinin ayaklarına en az basacak şekilde bir araya getirip, aktarılması yönünde tasarlamamız ve gerçekleştirmemiz lazım.
+
+137
+00:31:10,324 --> 00:31:21,324
+Şimdi burada hani doğrudan belki şey noktası değil ama şöyle bir kavram var. Noisy-neighbor kavramı var. Ne anlama geliyor? Şimdi...
+
+138
+00:31:21,811 --> 00:31:30,211
+apartmandasınız, daireler birbirlerinden duvarlar ile ayrılmış ve aslında bunları biz birbirinden izole ettik diyoruz değil mi?
+
+139
+00:31:30,211 --> 00:31:36,211
+Fiziksel olarak öbür tarafı görmüşsünüz, kapısından geçmediğiniz sürece öbür tarafa girmişsiniz.
+
+140
+00:31:36,211 --> 00:31:44,811
+Ama eğer yan taraf televizyonu veya müziği yüksek sesle dinliyorsa veya aradaki duvar inceyse
+
+141
+00:31:44,811 --> 00:31:49,811
+veya ne mi çok yüksek sesle konuşuyor, bağırış, ağırış, överse siz de rahatsız olursunuz.
+
+142
+00:31:49,811 --> 00:32:03,211
+Şimdi burada da öyle bir şey var. Bazı uygulamalar var ki, mesela bir file sharing uygulaması şuradan bankfetuna baktığında ne kadar bankfet varsa o kadar kullanmaya meraklı bir uygulama.
+
+143
+00:32:03,380 --> 00:32:18,380
+Siz eğer bunu kısıtlamazsanız, otomatikman ne yapma eğiliminde olacak? Topoloji ve network'in kaynaklarını elinde tutma, monopolize etme şeyinde olacak ve diğer uygulamaları rahatsız edecek.
+
+144
+00:32:18,380 --> 00:32:28,380
+Şimdi eğer aynı anda bunlardan birden fazlası varsa veya aynı anda bir kriter açısından
+
+145
+00:32:28,415 --> 00:32:48,816
+İhtiyacı yüksek olanlar eş zamanlı olarak topolojiden aktarılmak durumundaysalar, topolojiye gelen yük, stres daha fazla artmış olacak. Bizim öyleyse yapmamız gereken şey, uygulamanın kitne göre en uygun...
+
+146
+00:32:48,915 --> 00:32:57,155
+takipte parametrelerini uygulamaya sunmak, diğer taraftan da uygulamanın ne olduğunu anlayabilmek.
+
+147
+00:32:57,155 --> 00:33:03,915
+Az önce Cihan hocanız söyledi ya, mesela servis sağlayıcılar peer-to-peer tracking'i çok sevmezler.
+
+148
+00:33:03,915 --> 00:33:11,155
+IP telefonu, kendi sunmadıkları voice over IP şeyini çok sevmezler.
+
+149
+00:33:11,380 --> 00:33:17,980
+Yani FMM'leri az önce söylediğimiz sebeplerinin harici bir defikyalara, diğer taraftan da
+
+150
+00:33:18,355 --> 00:33:43,035
+Şu söylediğimiz bandwidth, delay, jitter, nose kategorilerinde ilgili ayarlamaları yapıp, bu uygulamaları aynı anda yaşatabilmemiz için, eğer bize önceden bir bilgi derilmiyorsa, uygulamanın tipiyle alakalı, ya oluruyla alakalı bize bir şey verilmiyorsa, o zaman bunları anlayabilmemiz lazım, farkına varabilmemiz lazım.
+
+151
+00:33:44,051 --> 00:33:46,551
+Slide değiştirebiliriz Cihan bence.
+
+152
+00:33:46,551 --> 00:33:48,551
+Tamam, geçiyorum.
+
+153
+00:33:48,551 --> 00:33:50,051
+Tamam.
+
+154
+00:33:50,051 --> 00:33:53,551
+Bir dakika, yine tuş şeyi oldu. Ha, tamam.
+
+155
+00:33:54,051 --> 00:33:55,551
+Tamam.
+
+156
+00:33:56,051 --> 00:34:01,551
+Bakın mesela, ATM, buradaki ATM'in para çektiğimiz ATM ile hiçbir alakası yok.
+
+157
+00:34:01,551 --> 00:34:05,355
+Asynchronous Transfer Mode Network demek.
+
+158
+00:34:05,428 --> 00:34:28,228
+Sel yapısında çalışıyor. Şu anki paket switching'in daha da mikro versiyonu diye düşünüyorum. Seller var, 53 byte uzunluğunda. Ama bu seller özel switch'ler üzerinden anahtarlanarak aktarılıyor. O sırada da bufferlama veya diğer sınırlandırma şeyleri yapılıyor. Oradan...
+
+159
+00:34:29,523 --> 00:34:36,243
+hayata geçirilmiş. Yani baklılığı zaman kualite oluştururumuz çok çalışılmış bir konu.
+
+160
+00:34:36,447 --> 00:34:58,447
+Klasik, standart, telefon network'ünde de çok çalışmış bir konu. Orada zaten oturmuş bir konu. Çünkü tek tip trafiğimiz var, ses trafiğimiz var. Ama işte dijital dünyanın içine girmesi, Audio on demand yerine Audio konferans imgili veya Video on demand yerine Video konferans imgili devreye girmesi olayı farklılaştırmış. İşte o klasik...
+
+161
+00:34:58,804 --> 00:35:05,304
+Telefon networklerinden yola çıkılarak benzer bir şekilde oluşturulmuş ATM networkleri var.
+
+162
+00:35:05,304 --> 00:35:11,304
+Ethernet ile bir ara beraber gidiyorlar ama şu an artık günümüzde çok fazla bir örneğe kalmadı.
+
+163
+00:35:11,304 --> 00:35:14,804
+Aslında ATM'i hala şey anlamında kullanıyoruz.
+
+164
+00:35:14,804 --> 00:35:18,304
+EDSL içerisinde bir layer olarak.
+
+165
+00:35:18,304 --> 00:35:21,304
+Layer olarak, Adaptation Layer'ı kullanıyoruz.
+
+166
+00:35:21,304 --> 00:35:24,304
+Adaptation Layer 5 kullanıyoruz.
+
+167
+00:35:26,804 --> 00:35:35,564
+Gökhan Yücum söyledi, 53 byte var. Gerçi o bir Arap seçeneğine dönmesi Amerika-Avrupa karmaşası. Hani 48-64, hani öyle olsun, böyle olsun.
+
+168
+00:35:35,564 --> 00:35:45,043
+Ama oradaki asıl olay hani küçük paket boyutu sayesinde Quality of Service uygulama şansınız artıyor.
+
+169
+00:35:45,619 --> 00:35:54,619
+Böylece veriyi daha hassas bir şekilde ölçümleyebiliyorsunuz, idare edebiliyorsunuz. Büyük paketler yerine küçük paketler üzerinden gidiyorsunuz.
+
+170
+00:35:54,619 --> 00:36:04,619
+Şimdi bu söyleneni bir aklınızda tutun arkadaşlar. Çünkü ilerleyen slide'larda bu ölçümlemenin hassasiyetini konuşacağız, ne yapılması gerektiğini.
+
+171
+00:36:04,619 --> 00:36:13,619
+Özellikle paket skecilik de yani ne kadar az olursa o kadar belirli bir mertebenin de üstünde olması lazım ama o kadar hassas şey yapmıyor.
+
+172
+00:36:13,619 --> 00:36:17,619
+Paket Scheduling'de sizin verdiğiniz örneğini de konuşacağız.
+
+173
+00:36:17,619 --> 00:36:20,619
+Hani Noisy Neighbor'ı da konuşacağız.
+
+174
+00:36:20,619 --> 00:36:24,619
+Çünkü baskın karakterin nasıl bozduğunu vesaireyi.
+
+175
+00:36:24,619 --> 00:36:26,619
+Pardon, ben şu paraya girdim.
+
+176
+00:36:26,619 --> 00:36:29,619
+Onu da orada konuşacağız ama şimdi de ön birisi.
+
+177
+00:36:29,619 --> 00:36:39,619
+Şimdi ATM network olsun, farklı bir network olsun, günümüzdeki networklerde şu görmüş olduğunuz servis tipleri artık kabul görüyor.
+
+178
+00:36:39,619 --> 00:36:41,132
+Yerleşmiş şeyler nedir?
+
+179
+00:36:41,331 --> 00:37:05,452
+Constant Bitrate, CVR. Bitrate, yani band genişliği açısından sabit, değişmiyor. En temel örneği telefon. Şöyle düşünün, biz normalde konuşurken çıkarttığımız sesler, konuşma sesleri, üst sınırı 4 GHz falan. 3-604.
+
+180
+00:37:05,780 --> 00:37:17,780
+Şimdi bunu dijitale dönüştürdüğümüzde, yine okuduğunuz derslerimizde, Sertling teoreninden ötürü bunu iki katıyla örneklemem lazım.
+
+181
+00:37:17,780 --> 00:37:30,700
+Nyquist, bunu bize böyle soruluyor ispatıyla şeyle. Nyquist teoreninden ötürü. Yani 8 külhersle o zaman demek ki benim bir telefon kanalımı...
+
+182
+00:37:30,963 --> 00:37:36,243
+ne olursa olsun, maksimum genişliği iskiraş olacak.
+
+183
+00:37:36,916 --> 00:37:45,516
+Yani constant bitrate bakın nasıl map ettin? Kalkıp benim telefon kanalı için 10, 12, 20, 30 falan vermemin bir anlamı yok.
+
+184
+00:37:45,516 --> 00:37:51,716
+Çünkü biz insanlar şarkı söylemediğimiz sürece şarkıcılar çünkü çok yüksek seslere,
+
+185
+00:37:51,716 --> 00:37:59,716
+20 THz'lere kadar falan çıkabiliyorlar, 22'ye kadar falan çıkabiliyorlar. Ama normal konuşma sırasında işte 3604.
+
+186
+00:37:59,860 --> 00:38:07,860
+Buradan da ne oluyor? Constant Bitrate, CBR. Yazın bunu aklınızın bir kenarına, önemli bir şey.
+
+187
+00:38:07,860 --> 00:38:18,860
+Diğer taraftan, sınavda çıkar çıkmaz, esas hayatta karşılaşacaklar bence. O zaman şey yapmaları, karar vermeleri ve olayı değerlendirmeleri kolay olacak.
+
+188
+00:38:18,860 --> 00:38:24,860
+Diğer taraftan, video konferanslık. Şimdi hepimiz...
+
+189
+00:38:25,043 --> 00:38:35,043
+Özellikle şu dönemde Zoom üzerinden veya başka platformlar üzerinden görüntülü olarak online görüşmelere katılıyorsunuz.
+
+190
+00:38:37,043 --> 00:38:39,723
+Videonun en temel özelliği...
+
+191
+00:38:40,436 --> 00:38:52,736
+Bir sahnenin diğer bir sahneye uymuyor olması. Bu olasılığın çok yüksek olması. Yani birinde aydınlık daha fazla olabiliyor, diğerinde daha az olabiliyor. Kontrast değişebiliyor.
+
+192
+00:38:52,736 --> 00:39:08,436
+Siz aynı aydınlatmaya sahip ortamda hareket ederken bile vücudunuzun, başınızın neyse duruşundan, ışığın yansımasından dolayı bir anda sahnede değerler değişiyor. Aydınlık ve renkler açısından. Bu neyi değiştiriyor?
+
+193
+00:39:08,436 --> 00:39:36,436
+arkadaşlar, aynı noktanın kaç biter ifade edileceğini, orada bir dinamik ifade etme şeyi var. Duran resimlerde JPEG ile yapıyoruz bunu, hareketli resimlerde MPG ile yapıyoruz. Ama arka tarafta yine aynı mantık var. O bölgedeki değişimi sahne sahne aktarıyoruz. Büyük görüntüyü kendi içerisinde parçalara görüyoruz. Alt parçalardaki değişim delta olarak geliyor.
+
+194
+00:39:36,436 --> 00:39:48,036
+O zaman bakın, bir görüntünün minimum geçitmeyle karşıya gitmesi lazım ki, garip bir şey olmasın. Yani ben kafamı hareket ettirdim, bir saniye sonra karşı da hareket ediyor.
+
+195
+00:39:48,036 --> 00:39:56,436
+Bunu beynimiz algılıyor. Çünkü neden? Normalde arada hiçbir bağlantı yokken, yüz yüzeyken hareketler öyle saniye falan sürmüyor.
+
+196
+00:39:56,436 --> 00:40:00,000
+Milli saniyelerde artırılsın, kısırıyor. Öyleyse bir taraftan onu sağlamak.
+
+197
+00:40:00,000 --> 00:40:23,000
+yapmam lazım, real-time. Ama diğer taraftan da sahnedeki değişim, aydınlanma, renk sayısı, arka plan ve diğer şeylerden ötürü anlık bitrate ihtiyacın değişiyor. Buna da ne diyoruz? Real-time, variable bitrate. Variable bitrate'in kısaltması da iyi bir yer. Ama real-time.
+
+198
+00:40:23,092 --> 00:40:45,092
+Bu işi eğer kaydedip, hani bu dersle ilgili de konuştuk ya, dersi kaydettiniz sonra dinlemeye başladınız, görüntülü bir ders ya da herhangi bir yerden video izliyorsunuz. Yani YouTube'dan vs. Şimdi burada bir real-time'lık yok. Yani olaylar siz izlediğiniz anda gelişmiyor aslında. Zaten gelişmiş, kaydedilmiş, kenara konmuş.
+
+199
+00:40:46,387 --> 00:41:01,387
+Dolayısıyla gene variable bir bitrate var. Çünkü her bir frame'in arasındaki fark yok. Ono can demin anlattığı üzere değişkenlik gösteriyor. Dolayısıyla her bir frame için aktarmanız gereken bilgi boyutu farklılık gösteriyor.
+
+200
+00:41:01,387 --> 00:41:11,275
+Fakat şöyle bir şansınız var. Burada videoyu aktarırken önden gidip istemci tarafında bu bilgiyi bufferlayabilirsiniz.
+
+201
+00:41:11,411 --> 00:41:18,411
+Yani ben size şu an 19. saniyeyi izletirken arkada 20, 21 ve 22'yi alıp kenara koyup bufferlayabilirim.
+
+202
+00:41:18,411 --> 00:41:22,411
+Dolayısıyla real time'ını ortadan kaldırıyorum bu şekilde.
+
+203
+00:41:22,411 --> 00:41:28,411
+Aynen. Cihan, iki... Yok, bir slide geriye dönebilir misin?
+
+204
+00:41:28,411 --> 00:41:29,411
+Döndüm.
+
+205
+00:41:29,411 --> 00:41:33,411
+Tamam. Şimdi arkadaşlar, bakın...
+
+206
+00:41:34,003 --> 00:41:57,503
+aslında bir tane hi var, onu pembe yapmayı unutmuşlar. Video on demand'in hi, bent yük için olan hi unutulmuş. Video on demand ve video conferencing'i karşılaştıracaksınız zannımca, delay açısından farkınız. Aynen, aynen. Kesinlikle bakın, video on demand'de az önce Cihan Hoca'nın söylediği, delay'in etkisi düşük.
+
+207
+00:41:57,619 --> 00:42:00,420
+Çünkü neden? Kaydedilmiş bir şey izliyorum.
+
+208
+00:42:00,420 --> 00:42:09,819
+Client'ın bufferlama şeyi var. Client bufferladı, siz seyretme tuşuna bastınız, video yarım saniye sonra başladı.
+
+209
+00:42:11,019 --> 00:42:17,420
+O sırada aslında o kadar çok şey bufferlandı ki ama ondan sonra böyle bir stream şeklinde akıyor.
+
+210
+00:42:17,811 --> 00:42:42,811
+Ama video konferansında bakın Drey'in etkisine hype. Az önce konuştuğumuz şey. Çok benzer birbirlerine ikisinde de video aktarıyoruz ama biri real-time, biri non-real-time. Şimdi sonraki slide'a geçebiliriz. Öyle olunca da her ikisi de VBR ama biri real-time VBR, öbürü non-real-time.
+
+211
+00:42:44,628 --> 00:43:11,628
+Son kategoride ABR olarak geçiyor. Available Bit Rate. Yani bu kadar şeyden sonra... Olduğu kadar. Zaten en alta yazılmasının sebebi de o. Yani CBR'ları sağlamam lazım. Çünkü CBR'lar adı üzerinde bu kadar constant bit rate'e ihtiyaç var. Bunları sağlayacağım. Sonrasında real-time ABR'ları. Sonrasında non-real-time ABR'ları.
+
+212
+00:43:11,668 --> 00:43:28,268
+Geriye de ne kaldıysa onu. Olduğu kadar. Ona da ne diyoruz? A, B, R. En şeyi file transfer. Şimdi internetten bir şey download ediyorsunuz. Bazen bir uygulamayı yüklemek için. Bazen böyle downloadçu bu.
+
+213
+00:43:28,500 --> 00:43:33,899
+baştan sona gözünüzü kırpana kadar hızlıca ilerliyor. O an ne kadar hızlı diyorsunuz.
+
+214
+00:43:33,899 --> 00:43:44,099
+Bazen ise bu böyle tık tık tık tık tık yavaş yavaş ilerliyor. Ki zaten yanında da saniyedeki işte megabayt veya kilobayt değerini veriyor.
+
+215
+00:43:44,099 --> 00:43:52,500
+O zaman da yavaş diyorsunuz. Şimdi aslında artık bu bilgileri öğrendiğinize göre şunu söyleyebiliyor olmanız lazım.
+
+216
+00:43:55,103 --> 00:44:03,903
+Network, yukarıdaki üç kategoride yer alan uygulamalar tarafından daha baskın bir şekilde kullanılıyorsa,
+
+217
+00:44:04,340 --> 00:44:28,340
+Mesela özellikle pandemi döneminden ötürü insanlar daha çok online video istiyorlar, online içecek, dersler ve benzeri şeyler. Bunları da belirli saatlerden sonra daha çok yapıyorlar veya hafta sonları yasakların olduğu saatlerde. O zaman bu saatlerde LBR kapasitesi azalıyor. Downloadlarınız yavaşlıyor.
+
+218
+00:44:28,436 --> 00:44:45,836
+Network aynı network, topoloji aynı topoloji. Sizin bağlantı hızınız, servis sağlayıcınızla bağlantı hızınız aynı ama sizin çalıştırdığınız bir başka uygulama bile downloadunuzun hızını düşürebiliyor. Çünkü onlar en alt seviyededir.
+
+219
+00:44:46,643 --> 00:44:49,963
+Sonraki slide'a geçelim istersen senin başka bir yorumun.
+
+220
+00:44:49,963 --> 00:44:54,403
+Yok yok, zaten baya bir konuşma aslında fazla bile konuştuk bunun üzerine.
+
+221
+00:44:54,403 --> 00:45:04,403
+Olsun, bence iyice bir yerleşsin şey olsun. Evet, şimdi bakın, traffic shaping ile başlıyoruz.
+
+222
+00:45:04,403 --> 00:45:10,443
+Burada, traffic shaping için...
+
+223
+00:45:13,300 --> 00:45:15,300
+Sesin geliyor mu [öğrenci]?
+
+224
+00:45:15,300 --> 00:45:17,300
+Geliyor [öğrenci] sesin.
+
+225
+00:45:19,300 --> 00:45:22,300
+Bir soru sorabilir miyim? Ben kaldırdım ama görmedim.
+
+226
+00:45:22,300 --> 00:45:27,300
+Yok, görmedim. Nerede? Tamam, sorun değil. Tamam, sor tabii ki.
+
+227
+00:45:27,300 --> 00:45:29,300
+Ben de inmediğim soracağım.
+
+228
+00:45:29,300 --> 00:45:37,036
+Tamam, [öğrenci] arasındaki bu muhteşem fark benim ülkem anet mi? Yoksa normalde bütün dünyanın her tarafında böyle.
+
+229
+00:45:37,331 --> 00:45:42,331
+Bu aslında tamamen kullandığın altyapıyla alakalı bir durum.
+
+230
+00:45:42,331 --> 00:45:44,331
+Yani birinci adım o.
+
+231
+00:45:44,331 --> 00:45:59,331
+Evet, mesela ADSL kullanıyorsak aslında DSL Digital Subscriber Line ama oradaki A, başındaki A bunun asimetrik olduğunu söyledi.
+
+232
+00:45:59,331 --> 00:46:04,331
+Çünkü baktığımız zaman downloadumuz daha fazla.
+
+233
+00:46:05,715 --> 00:46:17,115
+uploadumuz daha az. Evimize bulunduğumuz yere doğru servis alırız. Çünkü biz servis sağlayıcı değiliz normalde ev kullanıcıları olarak.
+
+234
+00:46:17,115 --> 00:46:32,715
+EDSR de bu mantık üzerine kurulu ve özellikle o kanalı, dijital kanalı iki tarafı simetrik olacak şekilde şekillendirmiyor. Geliş tarafı...
+
+235
+00:46:32,880 --> 00:46:39,679
+eve gelen tarafında daha fazla kapasite veriyor, evden çıkan tarafında daha az kapasite veriyor.
+
+236
+00:46:39,679 --> 00:46:43,679
+Bu kablo modemde de benzer bir durum bu arada.
+
+237
+00:46:43,679 --> 00:46:45,679
+Tabii, tabii.
+
+238
+00:46:45,679 --> 00:46:46,679
+Onu da...
+
+239
+00:46:46,679 --> 00:46:51,380
+...cep telefonu çok geniş, muhteş. Yani normalde iki saat, üç buçuk saat,
+
+240
+00:46:51,380 --> 00:46:55,380
+...idreselde süren bir akutu ve cep telefonunda 4 dakika bitirebilir.
+
+241
+00:46:55,380 --> 00:46:56,880
+Çünkü cep telefonu...
+
+242
+00:46:56,880 --> 00:46:57,880
+...cep telefonu...
+
+243
+00:46:57,880 --> 00:46:58,880
+...asimetrik.
+
+244
+00:46:59,380 --> 00:47:02,579
+Aslında simetrik, cep telefonu simetrik.
+
+245
+00:47:03,380 --> 00:47:04,380
+En temel...
+
+246
+00:47:05,380 --> 00:47:07,380
+Bu, bu kadar duyarlı, bilmiyorum hocam.
+
+247
+00:47:07,380 --> 00:47:10,380
+Yok, sor. Yani sen bir şey söyleyecektin, onun üzerine devam ederim ben.
+
+248
+00:47:11,380 --> 00:47:13,380
+Şeyi, eee...
+
+249
+00:47:13,380 --> 00:47:16,380
+Ön başvuruyu yaptık inşallah bir terslik olmazsa.
+
+250
+00:47:16,380 --> 00:47:19,380
+Starlink'teki olayla aynı olur, uyarınmazsın.
+
+251
+00:47:19,764 --> 00:47:27,764
+Valla o kadar ayrıntılı incelemedim ama up ve down linklerin aynı olmaması lazım.
+
+252
+00:47:27,764 --> 00:47:29,764
+Teknik olarak mümkün değil.
+
+253
+00:47:29,764 --> 00:47:36,764
+Gökyüzünden aşağıya bir şeyi çok daha hızlı indirebilirsin, şey yapabilirsin de buradan yukarıya toplayıp çıkartman lazım.
+
+254
+00:47:36,764 --> 00:47:44,764
+İki taraflı normal uydu linklerinde de mevcut uydu linklerinde de...
+
+255
+00:47:44,896 --> 00:47:58,096
+Senkron değildir kanallar, asenkrondur. Ama ayrıntı olarak incelemedim. Sadece genel hissiyatım ve genel teknik bilgimle asenkron olduğunu söyleyebilirim sana. Öbür türlü çok pahalı olur.
+
+256
+00:47:58,096 --> 00:47:59,096
+Bu arada...
+
+257
+00:47:59,096 --> 00:48:08,096
+Yapmışım, pardon canım, şimdi yapmış olabilirler. Ödediğim paraya bağlı olarak sana senkron da verebilirim, asenkron da verebilir. Teknik olarak mümkün.
+
+258
+00:48:08,096 --> 00:48:09,496
+Evet.
+
+259
+00:48:13,108 --> 00:48:34,092
+11 bine yakın uydusu var. Bunu bu sene sonunda 40 bin civarı yapmayı düşünüyor, etrafı saracak şekilde. Bunu sardıktan sonra burada oluşturacağı bir kablosuz bir ağda, bunun işte bir kısmı kullansın, bir kısmı kullanmasın, bunu nasıl mantıklı olarak tanırabiliyor hocam? [öğrenci] şu şey yaptım.
+
+260
+00:48:34,164 --> 00:48:53,684
+Yani network admission, az önce konuştuk ya, o da onun bir parçası. Yani her türlü şekilde fiziksel seviyede dahi birinin bir network'ün parçası olup olmamasını sağlayabilirsin. İlla ki bunun için telle, fiber, optikle, fiziksel bir bağlantıyla olmak zorunda değil.
+
+261
+00:48:53,684 --> 00:48:59,684
+Yani çok özgür bir ortamda bulun. Sadece...
+
+262
+00:48:59,731 --> 00:49:14,731
+Benimle onun arasında kalmasını sağlama şekli nasıl oluyor? Yani yürüyen kısmın işte ortamı, bu kısmı bana ait, bu kısmı size ait falan böyle bir şey yok. Bahsettiğimiz şey tamamıyla iyonizli ortamı, dışarıdaki ortamı.
+
+263
+00:49:14,731 --> 00:49:17,731
+Tamam ama arada...
+
+264
+00:49:18,260 --> 00:49:33,260
+Fiziksel katman RF bile olsa, wireless bile olsa, sonuçta ben o fiziksel katmanın üzerine oturttuğum diğer katmanlar ile band genişliği sınırlaması yapabilirim.
+
+265
+00:49:33,260 --> 00:49:43,260
+Hiçbir engell yok bunun için. Yani bunu yapmak adına illaki filerop değil, illaki bakır kablonun olması gerekmiyor. Her ortamda bunu yapabiliriz.
+
+266
+00:49:43,260 --> 00:49:46,260
+Ki zaten nasıl yapacağımızın şey de bu trafik...
+
+267
+00:49:46,260 --> 00:50:08,972
+Yani cep telefonunda yaptığınız şey de o. Yani sen şu an mesela cep telefonunda mesela Türkcell'in 4.5G'siyle speed test yapsan 130, 200 vesaire gibi hızları görebiliyorsun. Ama cep telefonu evet hani şey...
+
+268
+00:50:08,980 --> 00:50:34,279
+simetrik bir yapı. Ama içerisinde aslında galiba 4.5G'nin bir kısmında asimetrik bir bölüm de var. Yani kanalların kullanımı, o lojik kanalların kullanımı ile ilgili bir de asimetrik tarafı da var. Dolayısıyla şu an son durumda şu yaşanıyor. Buradaki kullanıcı sayısı arttıkça, bölgesel kullanıcı sayısı arttıkça hızın da gitgide düşüyor.
+
+269
+00:50:34,996 --> 00:50:40,996
+Yani şey yapmak zorundasın, paylaşmak zorundasın. Yarın öbür gün Starlink'te de aynı şey olacak.
+
+270
+00:50:40,996 --> 00:50:49,996
+Şimdi gökyüzüne attığı uyduda bir sıkıntı yok. O uydular kendi içerisinde çok temiz haberleşecek, aşağı doğru da temiz haberleşecek ama o uydulara çıkış için,
+
+271
+00:50:49,996 --> 00:50:58,996
+yani hepimiz uyduya uplink yapamayacağımıza göre bir merkeze gidiyor olması lazım. Oradan erişeceğiz.
+
+272
+00:50:58,996 --> 00:51:00,996
+Dolayısıyla...
+
+273
+00:51:02,579 --> 00:51:05,387
+Bu konuyu canlatırken kapamda canlandırken merkez kıyımdan...
+
+274
+00:51:05,652 --> 00:51:12,052
+Ama dünyanın etrafını komple sağlamak için adamın zaten düşüncesi o.
+
+275
+00:51:12,052 --> 00:51:14,251
+Yani o 50 bin sayısı zaten o yüzden geliyor.
+
+276
+00:51:14,251 --> 00:51:15,652
+50 sayısı olarak da.
+
+277
+00:51:15,652 --> 00:51:19,452
+Yani sanmak gibi bir tutularsa o zaman şeye de ihtiyacı yok.
+
+278
+00:51:19,452 --> 00:51:22,851
+Siz söyleyin, herhangi bir merkeze de ihtiyacı yok.
+
+279
+00:51:22,851 --> 00:51:30,251
+Direkt yani şey içerisinde, kabuk içerisindeki bir tekindeki gibi düşünün.
+
+280
+00:51:30,251 --> 00:51:33,652
+Yani öyle olacağını düşünüyorum ama tabii bu ne zaman onu bile.
+
+281
+00:51:33,652 --> 00:51:40,972
+Şimdi [öğrenci], boş zamanında okumanı tavsiye ederim sana. Aslında bu Billon Musk'ın...
+
+282
+00:51:40,972 --> 00:51:59,892
+Tamam, bu projesi oldukça eski bir proje. 80'lerin sonunda ortaya atılan 90'larda da motor alanı, Evidyum projesine bir bak istersen. Tamam mı?
+
+283
+00:52:00,244 --> 00:52:14,684
+Motorola'nın Iridium projesi, o dönemde yeterli olgunluk yoktu, yeterli şey yoktu. Aslında Motorola bunu yaptı, belirdi bir noktaya kadar. Amerika'da da hizmet verdi, bütün dünyayı kapsinize.
+
+284
+00:52:14,684 --> 00:52:16,684
+Baraküda'ydı o zamanki ismi.
+
+285
+00:52:16,684 --> 00:52:18,483
+Efendim canım, Baraküda.
+
+286
+00:52:18,483 --> 00:52:19,483
+Baraküda'ydı.
+
+287
+00:52:19,572 --> 00:52:21,572
+Barakütay'da aynen öyle.
+
+288
+00:52:21,572 --> 00:52:24,572
+Türkiye'de de vardı bu arada uydusunu biliyordun.
+
+289
+00:52:24,572 --> 00:52:28,572
+Telefonla upload yapıyordun, uyduyla download yapıyordun.
+
+290
+00:52:28,572 --> 00:52:31,572
+Aynen, telefonla şey yapıyordun. Aynen.
+
+291
+00:52:31,572 --> 00:52:35,572
+Gridium projesinin şeyi oradan da şey yapabilirsin.
+
+292
+00:52:35,572 --> 00:52:37,572
+Çok teşekkür ederim.
+
+293
+00:52:37,572 --> 00:52:40,572
+Estağfurullah. Şimdi devam edelim arkadaşlar.
+
+294
+00:52:42,572 --> 00:52:43,572
+Trafik shaping.
+
+295
+00:52:45,300 --> 00:52:59,700
+Trafik shapingi, trafik şekillendirmenin iki tane önemli noktası var. Bir, ortalama hızı şekillendiriyoruz, ayarlıyoruz.
+
+296
+00:52:59,700 --> 00:53:11,788
+İki, burst-niz yani anlık artışları. Bu ikisi çok önemli. Birbirleriyle hem ilişkililer hem de farklılar.
+
+297
+00:53:15,155 --> 00:53:31,596
+TBR dediğimiz zaman, constant bitrate, bu zaten, işte az önce telefon olayından konuştuk, 8 kHz ile hani bunu da kibit diye ifade edeyim ben size şu anda, 8 kHz ile pıt pıt pıt pıt pıt pıt hiç durmadan gelecek.
+
+298
+00:53:31,596 --> 00:53:41,796
+Ortalama şey bu, değişmiyor. Ama hani onun altında şey vardı ya, denay bu bitrate vardı ya, şimdi sahne simsiyah.
+
+299
+00:53:42,036 --> 00:54:00,036
+Neredeyse kontlanması gereken hiçbir şey yok. Bir de tabii ki, JPEG ve NPEG'i okursanız orada göreceksiniz, compression da yapılıyor, sıkıştırılıyor. Neredeyse giden bilgi sıfır. Yani abartıyorum ben böyle uç noktalara çekiyorum ki şey olsun diye. Ama sonra diyelim bir güneş doğması oluyor.
+
+300
+00:54:00,307 --> 00:54:22,028
+O bütün aydınlığıyla sahneyi kaplıyor, her taraf aydınlanıyor. O sıfır olan değerler, hani bir de 4K derseniz, 12 bitlik şey, 4K derseniz, 4096, sıfır, 4096, 10 bitlik değerlere böyle yayılıyor. Çılgınca bir şey. Eee, ne oluyor?
+
+301
+00:54:23,476 --> 00:54:29,175
+daha fazla bir band genişliği ve anlık olarak ortaya çıkıyor. Burst konuşuyor.
+
+302
+00:54:29,175 --> 00:54:35,175
+Burst'un da, çok özür dilerim, araya girdim ama, konca dışında konuşmuşsunuzdur.
+
+303
+00:54:35,175 --> 00:54:39,675
+Burst'un, yani biz niye Burst istemiyoruz? Şundan dolayı istemiyoruz.
+
+304
+00:54:39,675 --> 00:54:45,175
+Her network cihazının aslında bir buffer alanı var, interfaceleri için.
+
+305
+00:54:45,175 --> 00:54:47,476
+Yani oradan alabildiği ve...
+
+306
+00:54:47,956 --> 00:54:54,956
+aldığı bilgiyi bir başka hatta aktardığını biliyoruz. Yani bir hattan alıyor, diğer hatta aktarıyor. Bu bir switch ise,
+
+307
+00:54:54,956 --> 00:55:06,456
+faiz misal 48 tane downlinkinden alıyor, bir uplink'e aktarıyor. Başka bir router ise 3 tane, 5 tane interfejse arasında pakete aktarıyor. Hat hızında çalışsa bile
+
+308
+00:55:06,771 --> 00:55:29,771
+hatların hızları birbirinden farklı olabilir. Cihazın o anda birden fazla interfaysinden gelen yoğun trafik olabilir. Bunların hepsi neye sorbep olacak? Aslında cihazın bufferının dolmasına ve sonunda da paket drop etmesine. Böylece burst anlık geldiği zaman sıkıntı. Bizim bunu...
+
+309
+00:55:29,780 --> 00:55:41,460
+Zaman'a yaymamız, Gökhan Öcenin söylediği constant yere getirmemiz. Sanki constant gibi şekillendirmemiz lazım.
+
+310
+00:55:48,179 --> 00:56:10,179
+Bu söylediğimiz iki şeyi sağlayacak ve mümkünse aynı anda sağlayacak. Hem average rate, ortalama hız diyelim, hem de hızdaki ani artışlar. Yani burstness'ı hep artış olarak değerlendiriyoruz. Çünkü azalırsa zaten işimize gelen bir şey. Ve bu arada da...
+
+311
+00:56:10,260 --> 00:56:17,380
+Bu arada da bunu garantili yapması lazım. Yani bakın, Admission Kontroller'da bahsedeceğiz.
+
+312
+00:56:18,771 --> 00:56:32,771
+Yani şöyle garantili yapması lazım. Servis sağlayıcıyla ben ev sıkıştım, anlaştım. Benim CBR değerim şu kadardır. Diğer tarafta da, veray bu bitrate de, burstiniz şeyin bu kadardır değil.
+
+313
+00:56:32,771 --> 00:56:46,771
+Fiyat olarak da kendime uygun bir tarifeyi belirtelim. Ondan sonra da kimlik yapıp, daha yüksek bir CBR'la veya daha farklı bir burstinizle trafik oluşturmaya çalışıyorum.
+
+314
+00:56:46,771 --> 00:57:07,771
+Daha sonra bunlar bunu regüle edemezler, bunu garanti edemezler, ben aradan sıyrılırım, ucuza bunu kapatırım gibi bir şey olmaması gerekiyor. Yani servis sağlayıcının en azından arasal birtakım endişelerinden ötürü, finansal şeylerinden ötürü bunun düzgün olması lazım. Diğer taraftan da...
+
+315
+00:57:08,115 --> 00:57:15,915
+Bunu sağlayamıyorsa bir servis sağlayıcı, aynı anda bu tarz kullanıcıların olduğu bir ortamda,
+
+316
+00:57:15,915 --> 00:57:23,215
+bu sefer kullanıcılar hiçbiri memnun kalmayacağı için, herkes farklı bir şekilde trafiğin gecikmesinden,
+
+317
+00:57:23,215 --> 00:57:29,715
+kaybından, jitterından ve benzeri şeyinden rahatsız olacağı için topluca bir sıkıntı yaşanacak.
+
+318
+00:57:29,715 --> 00:57:35,515
+Öyleyse trafik şehrin yönteminin sadece ortalama hızı ve anlık hız artışını...
+
+319
+00:57:35,827 --> 00:57:59,827
+regüle etmesi değil, bunu garantili bir şekilde regüle etmesi lazım. Bakın, yan taraftaki şekilde ne diyor? Orada bir çizgi çekilmiş. Yukarıda paketler ne hızla gelirse gelsin, ne şeyle gelirse gelsin, aşağıda bizim belirlediğimiz kurala göre çıkış yapacaklar.
+
+320
+00:58:03,987 --> 00:58:10,587
+Bunun için de zaten aynı güzel yöntem, linki bucket ya da sonrası token bucket.
+
+321
+00:58:10,587 --> 00:58:23,987
+Şimdi iki tane yöntemimiz var. Bunlardan aslında şekildeki sırayla uymuyor, token ne linki bucket diye yukarıya yazılmış.
+
+322
+00:58:23,987 --> 00:58:31,851
+Ancak sol taraftaki linki bucket, sağ tarafta şöyle token bucket. Bucket ne kova arkadaşlar.
+
+323
+00:58:31,956 --> 00:58:36,155
+Leak'i damlatan, kaçıran delik kola.
+
+324
+00:58:36,155 --> 00:58:39,556
+Şimdi, şöyle düşünün.
+
+325
+00:58:39,556 --> 00:58:42,556
+O deliğin...
+
+326
+00:58:46,675 --> 00:58:55,403
+su miktarını belirleyeceğiz. Yukarıdaki kovanın içinde su ne olursa olsun. Değil mi?
+
+327
+00:58:55,635 --> 00:59:07,355
+Toplu iğne başı kadar bir delik varsa, ancak o kadarlık bir delikten aşağıya böyle belki de sızarcasına, hani damlamadan bir parça daha böyle bir iplik gibi akacak.
+
+328
+00:59:07,355 --> 00:59:14,075
+Ama siz onu daha geniş bir şeyle delerseniz, bu sefer su daha geniş akmaya başlayacak.
+
+329
+00:59:14,075 --> 00:59:23,315
+Fakat yukarıdaki su bitene kadar aşağıdaki akışın hızı hiçbir zaman değişmeyecek.
+
+330
+00:59:23,476 --> 00:59:33,155
+Hatta ve hatta, uç senaryoyu düşünüyorum. Yukarıya ben bir muslukla su veriyorum. Musluğumu kapatmıyorum.
+
+331
+00:59:33,155 --> 00:59:44,275
+Ve hani bu meşhur bizim dolu havuz, boş havuz problemlerimiz vardı ya, üniversite sınavlarında, lise giriş, ortaokul giriş sınavlarında, onun gibi tam bir havuz problemi.
+
+332
+00:59:44,275 --> 00:59:51,155
+Su sürekli akmaya devam ediyor ve bir yerde ne oluyor? Kova taşıyor.
+
+333
+00:59:51,443 --> 01:00:05,204
+Kova taşsa bile, yeni gelen suyu alacak yer olmasa bile, aşağıdaki deliğin çapı değişmeyeceğine göre aşağıda çıkış aynı hızda devam edecek.
+
+334
+01:00:05,204 --> 01:00:13,684
+Peki, kovanın taşması, yeni gelen suyu kovada durmaması ne anlama geliyor arkadaşlar?
+
+335
+01:00:13,887 --> 01:00:35,127
+paketlerin drop edilmesi, paketlerin işlenememesi, az önce Cihan hocanızın söylediği router olsun, host olsun, oradaki o network interface'ine bağlı olan bufferların dolmuş olması. Öyleyse, az öncekiyle birleştirecek olursak,
+
+336
+01:00:35,411 --> 01:00:44,211
+Her host'un, her router'a, her network interface'in bir buffer'ı var. Bunu bir kova olarak canlandırmışlar.
+
+337
+01:00:44,211 --> 01:00:50,612
+Bu gökdelen ortaya atanlar gözlerinde. O şekilde bir terapide girmiş.
+
+338
+01:00:50,612 --> 01:01:01,612
+Ve demişler ki, bu kovanın altındaki deliğin çapı, yani aslında eşittir buffer'dan dışarıya bir ilgi çıkartmanın hızı...
+
+339
+01:01:02,900 --> 01:01:29,900
+O çapla çarpma hızı sabit. Hiç değişmeyecek. O zaman, leak-i bucket hangi trafik için uygulanan bir yöntem? Constant bit rate için uygulanan bir yöntem. Hiçbir zaman değişmiyor. Diğer tarafta, diğer tarafta, token bucket var.
+
+340
+01:01:31,380 --> 01:01:36,580
+Şimdi, token bakın, şöyle bir şey.
+
+341
+01:01:40,179 --> 01:01:54,859
+token bucket'tan bir şey çıkartabilmeniz için elinizde bir kredinizin olması lazım. Krediniz varsa token bucket aşağıdaki deliği açık ve...
+
+342
+01:01:55,539 --> 01:02:10,284
+Akıtıyor. Öyle düşünün. Yani bunu şey gibi algılayabiliriz. Aslında çaycılar gibi olabilir. Çaycılardaki pul mantığı olabilir. Yani pulun varsa çay söyleyebiliyorsun gibi. Evet. Aynen. Pulun bitene kadar adam sana para veriyor.
+
+343
+01:02:10,900 --> 01:02:31,900
+Yani pul gösterdikçe sana çay getirir, pul gösterdikçe sana çay getirir, sen önden pulu almışsındır. Ama pulun bittiği zaman yeni çay alabilmen için, yani yeni paket dışarı çıkartabilmen için ne yapman lazım? Yeni bir pul alman lazım. İşte token bucket'ın çalışması da bu şekilde.
+
+344
+01:02:31,987 --> 01:02:52,960
+Öyleyse, bakın, CBR değil de bu aslında neye uygun? VBR, variable bitrate. Bir öncekinde delik çapı hiç değişmiyordu. Hep aynı miktarda bir şey çıkıyordu. Burada ise elde olan token miktarına bağlı olarak...
+
+345
+01:02:52,960 --> 01:03:01,639
+token adedine bağlı olarak, o tokenlar bitene kadar gelen paketler hiç gecikme yaşamadan dışarıya çıkartılabiliyor.
+
+346
+01:03:01,639 --> 01:03:09,199
+Tak tak tak tak tak argat diye. Ama token bittikten sonra bir sonraki token gelene kadar beklemek zorundasınız.
+
+347
+01:03:09,199 --> 01:03:18,960
+Öyleyse bir token generation time var. Token generation time'da bir token üretiliyor, kenara konuluyor.
+
+348
+01:03:19,251 --> 01:03:39,652
+Trafik gelmedi, duruyor. Bir tane daha üretiyor. Konuluyor kenara. Trafik gelmedi, bekliyor, birikiyor, birikiyor, birikiyor. 10 tur boyunca hiç trafik gelmedi. Kenarda 10 tane token var. Şu an gelen trafik 10 tane token'ın...
+
+349
+01:03:40,244 --> 01:03:47,404
+anlık dışarı trafik çıkartma kapasitesine eşit veya daha azsa hiç beklemeden çıkacak.
+
+350
+01:03:47,404 --> 01:03:49,724
+Bakın anlık bir burst oldu.
+
+351
+01:03:49,724 --> 01:03:54,524
+Ama bu burst en fazla ne kadar devam edebilecek arkadaşlar?
+
+352
+01:03:54,524 --> 01:03:58,964
+Orada kenarda birikmiş olan 10 tane token katılır.
+
+353
+01:03:58,964 --> 01:04:02,004
+Bitti, trafik gelmeye devam ediyor.
+
+354
+01:04:02,004 --> 01:04:03,364
+Neye dönüşecek?
+
+355
+01:04:03,364 --> 01:04:06,644
+CVR'a dönüşecek, custom bitrate.
+
+356
+01:04:06,835 --> 01:04:10,835
+Bu bize neyi sağlıyor? Bir emniyet valfi.
+
+357
+01:04:10,835 --> 01:04:18,835
+Şimdi biz çıkış hattımıza birdenbire böyle kontrolsüz gelen trafiği olduğu gibi bastık verdik.
+
+358
+01:04:18,963 --> 01:04:28,963
+Ama eğer bunu hiç durmadan yapacak olursak, geçen haftayı hatırlayıp otomatikman tıkanıklığa yol açmış olacağız, congestion'a yol açmış olacağız.
+
+359
+01:04:28,963 --> 01:04:43,963
+Öyleyse, elde biriken token bitene kadar en fazla buna izin vereceğiz. Sonrasında aynen leaky bucketta olduğu gibi belirli bir hızla devam edeceğiz.
+
+360
+01:04:44,596 --> 01:05:10,596
+Öyleyse, biri adaptif, biri çok böyle katı kuralı, bir iki vakit katı kuralı da adaptif etmiyor kendini. Ne gelirse ben sadece sabit hızla çıkartırım diyor. Diğeri ise adaptif, biri kenarda duran token miktarına bağlı olarak onu da sınırlandırmamız lazım. Neyle sınırlandırmamız lazım?
+
+361
+01:05:10,672 --> 01:05:20,672
+Buffer boyutumuzla bufferın taşmaması, daha fazlası olamaz çünkü o zaman hani bir öncekinde komadan suların taşması örneğin bence o duruma gelmek istemiyoruz.
+
+362
+01:05:20,672 --> 01:05:34,672
+En fazla dışarıya çıkartacağım trafiği de buffer miktarımla sınırlamam lazım ki, benden bir sonraki router'a gereksiz bir yük oluşturmayın. Onu...
+
+363
+01:05:35,731 --> 01:05:41,492
+SES'e sokmayayım çünkü onda buffer bitecek. Onda buffer biterse paket drop etmek zorunda kalacak.
+
+364
+01:05:41,492 --> 01:05:50,132
+O drop edemedi derken onca sınavk gidecek. Senin burayla alakalı ekleyeceğin bir şey var mı?
+
+365
+01:05:50,132 --> 01:05:59,731
+Yok hocam zaten baya bir konuştuk linki ve token ile ilgili de. Bir sonraki slide'da bir grafiksel gösterimi olması lazım.
+
+366
+01:06:00,371 --> 01:06:04,371
+Evet, aynen. Geçiyoruz o zaman bir sonraki slide'a.
+
+367
+01:06:09,012 --> 01:06:27,211
+Burada da aslında sizin bahsettiğiniz boyutun ne olacağının trafiğe nasıl bir etkisi olduğunu anlatıldığı bir kısım. Yani B değeri, o kovanın boyutunun ne olduğunu söylüyor bize.
+
+368
+01:06:27,211 --> 01:06:35,612
+16.000 kilobyte olması, 9.600 kilobyte olması ya da 0 olması durumunda ne olur?
+
+369
+01:06:35,827 --> 01:06:42,228
+Bu trafiği nasıl şekillendirmiş oluruz? Ne kadar bursteye izin vermiş oluruz, ne kadar bursteye izin vermemiş oluruz?
+
+370
+01:06:42,228 --> 01:06:46,627
+Aynen. Yani şöyle düşünmek lazım.
+
+371
+01:06:46,627 --> 01:07:03,228
+Bakın, 200 Mbps değişmiyor ama 16000 KB olursa, 125 ms için 125 Mbps'da dışarıya bilgi çıkartabiliyorum.
+
+372
+01:07:03,635 --> 01:07:07,635
+Müthiş bir hız değil mi? Ama sadece 125.000 saniye için.
+
+373
+01:07:07,635 --> 01:07:17,635
+Fakat sonrasında eğer bu bucket size 9600 ise daha kısa bir süre bunu dışarı çıkartıyorum.
+
+374
+01:07:17,635 --> 01:07:20,635
+Sonra sabit gidiyorum ama neyim bitiyor?
+
+375
+01:07:20,635 --> 01:07:25,635
+Tokenlarım bitiyor. Ne bitmesini beklemem lazım, ne oluşmasını beklemem lazım.
+
+376
+01:07:25,635 --> 01:07:30,335
+Token oluşmasını beklemem lazım. Eğer B değerini...
+
+377
+01:07:30,335 --> 01:07:39,735
+0 yaparsam, yani token bucket sayısını, token bucket ne olarak çalışmaya başlıyor?
+
+378
+01:07:39,735 --> 01:07:46,735
+1-2 bucket olarak çalışmaya başlıyor. Geldikçe çıkartacak, geldikçe çıkartacak. Öyle düşün.
+
+379
+01:07:46,735 --> 01:07:50,935
+Tamam mı Diyan?
+
+380
+01:07:50,935 --> 01:07:52,935
+Evet evet, bunu da geçiyorum.
+
+381
+01:07:52,935 --> 01:07:54,935
+Tamam, okey.
+
+382
+01:07:54,935 --> 01:07:56,779
+Şimdi...
+
+383
+01:07:57,139 --> 01:08:17,139
+Aslında araya ihtiyacınız var mı arkadaşlar? Çok fazla bir slide'ımız kalmadı bu konuyla alakalı. Yani 7-8 tane bir şeyimiz var. İsterseniz bir 10 dakika ara verip devam edebiliriz veya dinliyoruz, sorunumuz yok diyorsanız ara vermeden de devam edebiliriz.
+
+384
+01:08:21,716 --> 01:08:24,796
+Ben de kimseden bir yorum gelmiyor şu an. Sen de gelmiyor.
+
+385
+01:08:24,796 --> 01:08:31,156
+Bana demin biri ara verecek miyiz hocam diye yazmış. Ben onu şimdi gördüm mesela çıkmadan ama
+
+386
+01:08:31,156 --> 01:08:36,115
+bir kişi yazmış Gerika'nın sesi çıkmadığına göre aslında şey de olabilir.
+
+387
+01:08:36,115 --> 01:08:38,515
+Dinleriz hocam, devam edelim.
+
+388
+01:08:38,515 --> 01:08:41,156
+Bence de devam ederim. Hiç kopartmayalım.
+
+389
+01:08:41,156 --> 01:08:43,115
+Tamam.
+
+390
+01:08:43,283 --> 01:08:51,683
+Evet, bende de devam edelim yazanlar oldu. Devam edelim çünkü konu zaten bütünleşik ve az kaldı. Hızlıca toparlarız.
+
+391
+01:08:51,683 --> 01:08:54,483
+O zaman devam ediyoruz arkadaşlar.
+
+392
+01:08:54,483 --> 01:08:56,011
+Şimdi...
+
+393
+01:08:56,372 --> 01:08:58,372
+Sen mi şey yapacaksın?
+
+394
+01:08:58,372 --> 01:09:17,100
+Fark etmez. Yani şey anlamında, bunu aslında ilk başta siz söylemiştiniz. Nasıl CPU Scheduling yapıyorsak, bir taraftan da paket Scheduling'e ihtiyacımız var. Çünkü aslında birden fazla interfaceden gelen bilgiyi başka bir interfaceden çıkartmamız gerekiyor çoğu zaman.
+
+395
+01:09:18,003 --> 01:09:38,003
+Dolayısıyla farklı input queue'larımız var. Buradan bilgi çıkartacağız. Buradan gelen farklı akışlarımız var. Bu akışlardan böyle greedy olan yani saldırgan, agresif olan, devamlı bilgi basan adam, standart bir first in first out uyguladığımızda ne olacak?
+
+396
+01:09:38,260 --> 01:09:48,579
+kuyruğa çok daha fazla paket sokacağı, çok daha fazla veri sokacağı için onun trafiği diğer trafiklerin ezilmesine neden olacak.
+
+397
+01:09:50,500 --> 01:09:58,100
+Bu noktada da hani bunu biraz daha fair hale getirmeye çalışıyoruz değil mi?
+
+398
+01:09:58,100 --> 01:09:59,100
+Çalışıyoruz.
+
+399
+01:09:59,100 --> 01:10:03,500
+Şimdi bakın arkadaşlar dikkat edin. Burada da
+
+400
+01:10:03,764 --> 01:10:12,003
+Genel yöntemin adı ne? Round Robin. Bunu işletim sisteminden de biliyorsunuz. Round Robin Scheduling.
+
+401
+01:10:12,003 --> 01:10:21,523
+Ancak Cihan Hocanızın dediği gibi, bir tanesi daha baskınsa veya şu şekilde...
+
+402
+01:10:21,779 --> 01:10:35,779
+Bazıları daha geniş, bazıları daha dar çizilmiş ya paketlerin. Geniş olanla dar olan arasındaki fark paketin boyutunu gösteriyor.
+
+403
+01:10:35,779 --> 01:10:45,779
+O zaman ben hiçbir kural gözetmeden birinci kuyruktan aldım, ikiden aldım, üçten aldım, birden aldım, ikiden aldım, üçten aldım.
+
+404
+01:10:46,032 --> 01:11:00,032
+Şimdi bakın, birden daha büyük bir paket almışım, ikiden daha küçük bir paket, üçten daha büyük bir paket. Hadi tamam dedik. İkinci turda birden küçük paket aldım, ikiden büyük aldım, ooo ne güzel oldu dedim.
+
+405
+01:11:00,032 --> 01:11:10,032
+Yani birden çektiğim iki turun sonunda birden çektiğim paketlerin uzunluğunun toplamı ile ikiden çektiğim paketlerin uzunluğunun toplamı aynı oldu. Süper.
+
+406
+01:11:10,032 --> 01:11:14,032
+Ama üçüncü kuyrukta ikinci paket de birinci paket gibi.
+
+407
+01:11:14,032 --> 01:11:24,112
+Büyük paket. Ne oldu? 1 ve 2'ye göre 3'ten ben dışarıya daha fazla boyutta bir şey çıkartmış oldum.
+
+408
+01:11:24,532 --> 01:11:44,108
+Ki İngilt Cihan Hocanızın söylediği gibi böyle greedy, agresif olarak paket yollayan ve büyük paket yollayan bir kuyruk varsa, öyle bir uygulama varsa, o zaman bu klasik round robini uyguladığımda bir tane kuyruk veya birden fazla kuyruk diğerlerine göre...
+
+409
+01:11:44,948 --> 01:12:10,548
+Bilim zamanda daha fazla ne çıkartmış olacak? Paket çıkartmış, yani bit çıkartmış olacak. Paketi bite dönüştürmemiz lazım. Niye? Biz band genişliğini sonuçta bit first second cinsinden ifade ediyoruz. Öyleyse klasik Rauh Trubini uygularsak...
+
+410
+01:12:12,020 --> 01:12:38,420
+dengesiz bir çıkış oluşma ihtimali çok yüksek. Bunun en temel çözümünü diyebilirsiniz ki, paketlerin tamamı aynı boyutta olacak. Paketler değişken boyutta olmayacak. Bütün uygulamalar için bunu sağlamamız her zaman mümkün olmayabilir.
+
+411
+01:12:40,180 --> 01:12:50,180
+Fakat diğer taraftan da hatırlayın, hani maksimum paket boyutu falan daha net görmedik ama bunları konuştuk dersimiz taraflarında.
+
+412
+01:12:50,180 --> 01:13:02,180
+Eğer öyle bir şey yaparsak, bir topoloji için maksimum paket boyutu budur, bunun kullanılması daha uygundur gibi bir...
+
+413
+01:13:02,579 --> 01:13:27,779
+kural belirlersek ve bu kuralı her noktada uygularsak, o zaman son paket haricindekilerin hepsi neredeyse aynı boyutta olur. Son pakette farklılık olabilir. Orada bir dengeleme olabilir. İnternet networking'te TCP, IP, oradan da IP gördüğümüzde bu konularıyla alakalı daha ayrıntılı bir şekilde konuşacağız. Ancak...
+
+414
+01:13:28,564 --> 01:13:38,564
+Klasik round robine göre işi dengeri hale getirmek için yapabileceğimiz bir başka şey de arka slide olması lazım değil mi Cihan?
+
+415
+01:13:38,564 --> 01:13:39,564
+Evet.
+
+416
+01:13:39,564 --> 01:13:40,564
+Bir saniye.
+
+417
+01:13:40,564 --> 01:13:41,292
+Evet.
+
+418
+01:13:44,659 --> 01:13:49,659
+Bak et ki ikinci kısım yani weighted yapmak kısmı.
+
+419
+01:13:49,659 --> 01:13:54,659
+Evet, burada weighted fair queen diyoruz.
+
+420
+01:13:54,659 --> 01:14:05,659
+Fair ne? Hakkaniyetli demek, karşılıklı hakların gözetilmesi demek, eşit davranmak demek, kuyruklama yapacağız ama...
+
+421
+01:14:06,127 --> 01:14:15,127
+Kuyruklara ne vereceğiz arkadaşlar? Wait vereceğiz. Aslında bu mantığı da işletim sistemlerindeki şeyle oturtabilirsiniz.
+
+422
+01:14:15,127 --> 01:14:29,127
+Kafanızda öyle canlandırıp yerleştirebilirsiniz. Birden fazla seviye yapıyorduk ya, multi-level feedback queue yapıyorduk ya, multi-level queue yapıyorduk.
+
+423
+01:14:33,171 --> 01:14:38,492
+Time Quantum değeri veriyorduk ama bunlar birbirlerinin katı şeklinde oluyordu.
+
+424
+01:14:38,492 --> 01:14:46,331
+İşte bir tanesinden sekiz tane yapınca diğerinden bir tane yaptım, ondan sekiz tane yapınca öbüründen bir tane yaptım.
+
+425
+01:14:46,331 --> 01:14:55,291
+Bunlar birbirleri arasında katlı bir şekilde ilişki olduğunda, hepsinden birer tane yaptık, bir tur tamamlandığında,
+
+426
+01:14:55,291 --> 01:15:01,067
+hepsinden eşit miktarda TQ kadar zaman geçmiş oluyordu.
+
+427
+01:15:01,235 --> 01:15:12,735
+Burada da uygulanmaya çalışılan şeylerden bir tanesi bu. Yani zaten dikkat edin, burada pembeyle yazılmış,
+
+428
+01:15:16,127 --> 01:15:44,127
+Network layer paketleri sırasız gönderme hakkına sahip ya, sıralarını kaybetme, işi bozma hakkına sahip ya, sonuçta bunların geldiği yerde birleştirilmesi gerekiyor. Bunun düzeninde çok konuştuk. Özellikle Datagram Network'lerinde durumun böyle olduğu. Şimdi bunu da biliyorsak, lay'ımıza kullanabiliriz değil mi? Verdiğimiz kuyruklara, verdiğimiz ağırlıklara bağlı olabiliyoruz.
+
+429
+01:15:44,127 --> 01:15:44,844
+olarak,
+
+430
+01:15:45,300 --> 01:16:13,300
+Birinci Q'dan şu uzunlukta bir şey çektiysem, ikinci Q'dan da ona en yakın uzunlukta olan, ama en başta değil de ikinci sırada, üçüncü sırada bekleyen paketi göndereyim, üçüncü Q'dan da buna benzer bir paketi göndereyim. Böylece ne yapmış olacağım? Aslında üçünden de birim zamanda, aynı miktarda, aynı uzunlukta paketi göndermiş olacağım. Zaten network layer olarak sırasını bozma...
+
+431
+01:16:13,300 --> 01:16:41,300
+O hakkına sahip olduğun bir şeyi burada trafiği regülü etmek adına bozmuş olacağım. Sonrasında zaten bu paketlerin sırasının nerede düzenlenmesi gerekiyor? Varış noktasında düzenlenmesi, orada bunların bir araya getirilmesi gerekiyor. Ayrıca bir kuyrukta bekleyen paketlerin tamamının aynı uygulamadan arka arkaya gelen paketler olduğunu düşünüyorum.
+
+432
+01:16:41,300 --> 01:17:07,244
+Bunun da bir garanti yok. Çünkü bunlar giriş kuyrukları, çok farklı noktalardan o paketler gelmiş olabilir. Biri bir numaralı hostan, öbürü iki, öbürü üç numaralı hostan dışarı uygulamalardan gelmiş olabilir. Yani bunların sırasını bozarak altın order sırasız bir şekilde çıkışa aktarmam sadece uzunlukları denk düşecek şekilde...
+
+433
+01:17:07,699 --> 01:17:22,100
+şey yaparak, onu gözeterek aktarılan çok da büyük bir karmaşıklık oluşturmayacak. Diğer tarafta bir başka yaklaşımda bekleme süresi yani...
+
+434
+01:17:22,195 --> 01:17:48,395
+paketin gelmesiyle çıkması arasındaki zamanı oranlayarak o ortalama bekleme süresi eşit olacak şekilde paket uzunluğuna göre eşit olacak şekilde bir normalizasyon yapabilirim. Bu da uygulanan yöntemlerden bir tanesi. Ama sonuç olarak hep neyi yapmaya çalışıyoruz? Farklı kurulardan...
+
+435
+01:17:48,948 --> 01:18:10,708
+Çekiyoruz paketleri, ancak turlar sonucunda çektiğimiz paketlerin ortalama olarak bir illeriyle eşliğe olmasını, yani zamana göre yaydığımızda ortalamasını aldığımızda birbirine göre eşliğe olmasını sağlamaya çalışıyoruz. Uzunluk cinsinden, bekleme süresi cinsinden ve benzeri.
+
+436
+01:18:12,180 --> 01:18:19,180
+geçiyoruz herhalde. Tabii tabii. Yani burada senin ekleyeceğin bir şey varsa...
+
+437
+01:18:19,180 --> 01:18:27,084
+Şeyi ne kadar konuştuk orada hani, en ufak noktasına kadar. Evet, ne kadar konuştuk. Evet. Şimdi, Ethernet, switch, control...
+
+438
+01:18:28,500 --> 01:18:47,467
+Aslında bu noktada şeye ihtiyacımız var. Admission control yapacaksak, bu network'e, bu ağa girecek olan trafiğin tanımlanmasına ihtiyacımız var. Yani bir noktadan diğer noktaya akan trafiğe aslında akış diyoruz.
+
+439
+01:18:48,404 --> 01:19:07,212
+Bu trafik akışının bir şekilde belirtilebilmesi lazım. Hani bu trafik akışı neye sebep oluyor? Alt tarafta aslında konuşuyoruz deminden beri. İşlemci yüküne sebep oluyor cihazlarda. Buffer kullanımına sebep oluyor. Bandwidth kullanımına sebep oluyor ama bunları hani...
+
+440
+01:19:07,220 --> 01:19:31,720
+Bu şekilde ifade edebilmemiz çok mümkün değil. Hangi trafiğin, hangi router üzerinde nasıl bir CPU yüzücü olacak vesaire gibi şeylerle ifade edemeyiz. Bunun yerine başka tanımlayıcı bilgilere ihtiyacımız var. Ki bu bilgiyi alan network bu akışın buraya uygun olup olmadığına karar verebilsin.
+
+441
+01:19:32,884 --> 01:20:00,000
+Burada da aslında hani birkaç tane temel parametre var. Şu ana kadar konuştuklarımızla alakalı bu parametrelerde. Nedir? Token bucket'ı konuştuk. Token bucket'ta neyi konuştuk? Bir rate konuştuk, bir de bucket size konuştuk. Dolayısıyla bunlar bizim için parametre. Data rate'imizin en tavan noktası ne olabilir? Bu bizim için bir parametre.
+
+442
+01:20:00,000 --> 01:20:20,000
+bir de minimum ve maksimum paket boyutumuzun ne olduğu bizim için parametre. Bunlar üzerinden aslında şeye karar verebiliriz. Bu trafiğin bu networkta taşınmaya uygun olup olmadığına karar verebiliriz. Değil mi hocam?
+
+443
+01:20:20,000 --> 01:20:20,684
+Aynen.
+
+444
+01:20:26,739 --> 01:20:52,739
+Oluşturulacaksa, oluşturulacak olan bir virtual circuit için yol belirlerken bu parametrelere uygun routerlar üzerinden yol belirlenmesini sağlayabiliriz. Ve tüm yol boyunca da seçilmiş olan routerlar, genel trafiği bu parametrelere göre taşırlar. Böylece routerların hepsi
+
+445
+01:20:52,948 --> 01:21:15,148
+kendi kapasitelerini, bu değerler parametre üzerinden kendi değerlerini bildikleri için yeni bir trafik kabul ettikçe veya etme durumundalarken elde olan mevcut değerlerin yeni gelen isteği karşılayıp karşılayamayacağına çok kolay karar verebilirler.
+
+446
+01:21:17,203 --> 01:21:24,604
+İşte token bucket size, rate, peak data rate, minimum packet size, maximum packet size cinsinden
+
+447
+01:21:24,604 --> 01:21:34,404
+o anki kaynakları yeterliyse, buffer kaynağı yeterliyse, işlem iş güç kaynağı yeterliyse, o zaman router bunu kabul edebilir.
+
+448
+01:21:34,404 --> 01:21:35,604
+Router bunu...
+
+449
+01:21:35,764 --> 01:21:41,764
+karşılayamayacak durumda ise, bunu ne yapması lazım? Bu isteği ne yapması lazım? Gir çevirmesi lazım.
+
+450
+01:21:41,764 --> 01:21:50,764
+Aslında çok özür dilerim araya girdim ama burada mesela isteği karşılayamaması durumunda alternatif sunmak da bir ihtimal.
+
+451
+01:21:50,764 --> 01:21:59,764
+Yani doğrudan reddetmek durumunda da değil. Hani varcılınsel buradaki reyti değiştirerek...
+
+452
+01:22:00,764 --> 01:22:02,764
+Tabii tabii yani her şey yapabilir.
+
+453
+01:22:02,931 --> 01:22:14,931
+Evet, sen bunu bana söylüyorsun ama ben bunu karşılıyorum da diyebilir veya yani bu hiç yapmayabilir ama senin söylediğin de bir seçenek.
+
+454
+01:22:14,931 --> 01:22:29,739
+Ancak hangisi olursa olsun sonuçta bu akış, ben doğrusu bu çalışma prensibi, network akışıyla karışmasın, bu çalışma prensibine bağlı olarak da routing gerçekleşmiş olur.
+
+455
+01:22:29,779 --> 01:22:52,380
+Virtual Circuit adım adım Admission Control parametrelerine bağlı olarak ilk giriş noktasında son çıkış noktasına kadar her bir router'a bunlar aktarılıp uygun mudur, değil midir sorusunun cevabı anlarak adım adım bir routing oluşturulabilir ki zaten...
+
+456
+01:22:52,692 --> 01:22:59,291
+Bu da ignition control'ün uygulandığı yapılarda gerçekleştirilen bir şey.
+
+457
+01:23:00,171 --> 01:23:05,291
+Ve bakın bunun ismi Flow Specification. Bunu da aklınızda tutun.
+
+458
+01:23:06,011 --> 01:23:10,891
+Akışın tariflenmesini sağlıyor. Yani bir network akışının tariflenmesini sağlıyor.
+
+459
+01:23:11,211 --> 01:23:17,532
+Akıştan, network akışından, A akışından anladığımız şey ne arkadaşlar? Anladığımız şey şu.
+
+460
+01:23:18,100 --> 01:23:31,100
+İki uygulama arasında, network tarafından, topoloji tarafından, packet by packet aktarılan ve sıralı olarak...
+
+461
+01:23:31,828 --> 01:23:41,828
+çıktığı noktada sıralı, girdiği noktada sıralı olarak yani gönderen uygulamayla alan uygulama açısından bakıldığında aynı sırada olan birbirini takip eden paketler.
+
+462
+01:23:41,828 --> 01:23:51,828
+Ancak bunlar topolojide virtual circuit veya datagram kullanılmasına bağlı olarak hakikaten sıralı olarak da ilerleyebilirler veyahut da sırasız olarak da ilerleyebilirler.
+
+463
+01:23:51,828 --> 01:23:54,828
+Ama biz buna flow diyoruz.
+
+464
+01:23:56,659 --> 01:24:12,020
+Ç'ye geçtiğimizde, internet working ya da TCP, IP'ye geçtiğimizde, bir flow'un nasıl tariflendiğini de, hangi parametre, hangi kriterler üzerinden tariflendiğini de göreceğiz.
+
+465
+01:24:12,020 --> 01:24:22,100
+İşte source adresi, destination adresi, source portu, destination portu ve protokolü, işte beşte bir tane şey var. Onun ayrıntılarını da gözlem geçirmiş olacağız.
+
+466
+01:24:22,228 --> 01:24:36,228
+Evet, devam. Bir sonrakine geçelim o zaman. Etmişim kontrolü. Etmişim kontrolü, az önce konuştuğumuz şey, sol tarafta trafik kaynağı var. Trafik...
+
+467
+01:24:36,340 --> 01:25:03,980
+Bu trafik kaynağı, router'a girerken şeylerini belirtiyor. 70 bin parametrelerini belirtiyor. Token, buffer, bucket ile alakalı parametrelerini belirtiyor. Gecikme ile alakalı şeylerini belirtiyor. Ona göre ne yapılıyor? Bu trafik router'da bir kuyruğa map ediliyor. Çünkü daha önceden gördük ya şu VATIC, VATIC, VATIC, VATIC falan onları konuştu.
+
+468
+01:25:04,724 --> 01:25:21,844
+Round Robin mantıyla da oradan çıkartılıyordu. Tamam deniyor. O zaman bu trafiğin özelliği buysa, bende de bu tarz trafik için şu kuyruk var, o zaman gelen trafiği ben bu kuyruğuma mep edeceğim. Buradan dışarıya çıkartacağım.
+
+469
+01:25:24,627 --> 01:25:46,027
+Bu arada ne diyor? Hold for all traffic patterns, all topologies. Yani topolojinin tamamında bunun uygulanması lazım. Yani bir noktadaki bir routerın bunu tek başına yapıyor olması sonrasında bunun böyle devam edeceği anlamına gelmiyor. Topolojideki routerların bunu ortak uygulamaları gerekiyor.
+
+470
+01:25:48,027 --> 01:25:49,027
+Devamacağım.
+
+471
+01:25:51,123 --> 01:25:55,823
+Integrated Services.
+
+472
+01:25:58,123 --> 01:26:00,923
+Şimdi her Flow için
+
+473
+01:26:03,423 --> 01:26:07,923
+Quality of Service parametreleri verebiliyoruz.
+
+474
+01:26:07,923 --> 01:26:11,923
+Aynı zamanda multi-cast trafiğin de
+
+475
+01:26:13,723 --> 01:26:17,923
+diğer trafiklerle beraber bir arada yer almasını sağlayabiliyor.
+
+476
+01:26:18,228 --> 01:26:27,228
+MultiCast'i hatırlayın, özellikle bu video on demand ve audio on demand de önemli olacak bir şey.
+
+477
+01:26:27,228 --> 01:26:39,228
+Bir kaynak aynı anda topolojinin içerisindeki tamamına değil de bir gruba bir bilgiyi ortak olarak yolluyor.
+
+478
+01:26:39,228 --> 01:26:45,228
+Hepsi neredeyse eş zamanlı olarak bu bilgiyi alıyorlar. Bu bir MultiCast.
+
+479
+01:26:47,475 --> 01:26:53,235
+Admission uygulanması lazım. Az önce gördüğünüz Admission'ın uygulanması lazım.
+
+480
+01:26:53,235 --> 01:27:02,955
+Integrated Service'in zaten mantığı o. Mevcut yapıya bunu entegre edeceğim ben ama entegre ederken de neyle entegre edeceğim?
+
+481
+01:27:02,955 --> 01:27:13,395
+Hangi özelliklerde? Yani bir Admission yapmam lazım. Orada kullanılan protokolün adına da Resource Reservation Protocol diyoruz. RS.
+
+482
+01:27:13,395 --> 01:27:14,395
+RSVP?
+
+483
+01:27:14,395 --> 01:27:15,395
+Evet.
+
+484
+01:27:15,475 --> 01:27:38,283
+OSP, Resource Reservation Protocol. Aslında grafik üzerinden anlatsak daha iyi olabilir belki. Bir sonraki slide'da grafiği olması lazım. Üst taraflar, şey, bir, iki diye gördüğünüz, üç grafikte de bir, iki diye gördüğünüz şeyler kaynak gibi düşünün. Yani bu yayını yapan.
+
+485
+01:27:38,323 --> 01:28:04,323
+Farz Misal herhangi bir canlı video broadcasti yapan yapılar aşağıdaki 3, 4, 5 diye gördüğünüz yerlerde burayı aslında izlemek isteyenler. Bunların arasında, şimdi mesela ilk şeye baktığınız zaman, soldaki resme baktığınız zaman, 3 ile 1 arasında...
+
+486
+01:28:04,948 --> 01:28:27,148
+bir rezervasyon yapılıyor. Bu rezervasyon nasıl yapılıyor? Üçten bire doğru giden bir istek üzerinden yapılıyor. Çünkü ben oraya aslında subscribe oluyorum bir nevi. Hani ben bu yayını izleyeceğim. Bunun için bana ne kadar bandwidth gerekiyorsa, ne gerekiyorsa, parametreleri neyse, bunun üzerinden yol J, H, E ve A üzerinden giderek oluşturulmuş.
+
+487
+01:28:28,819 --> 01:28:47,819
+Aynı adam bir taraftan da hani Picture in Picture gibi bir taraftan biri izlerken bir taraftan da ikiyi izlemek istediğinde bu sefer J, H, E ve C üzerinden bir yol oluşuyor.
+
+488
+01:28:49,811 --> 01:29:01,612
+Asıl işlerin değiştiği ya da spesifikasyonların içine girdiği, multi-cast mantının daha doğrudan oturduğu yer, 5 numaralı istemcinin devreye girdiği yer.
+
+489
+01:29:01,612 --> 01:29:08,612
+5'te birden olan yayını izlemeye kalktığı zaman, H ve E arasında zaten...
+
+490
+01:29:09,524 --> 01:29:20,724
+A ile E arasında da üç numaralı istemci için oluşturulmuş, rezerve edilmiş bir kaynak var. Bu yol zaten oradan oluşturulmuş bir kere.
+
+491
+01:29:20,948 --> 01:29:37,448
+5 numarada aynı yayını dinleyeceği için aslında buradan gelen istek ki bu şey anlamında farklı olabilir. Parz-i misal 3 numaralı istemci çok zengindir, 4K çözünürlüğünde izliyordur.
+
+492
+01:29:37,712 --> 01:30:03,112
+5 kullanıcısı daha hani fakirdir 640'a 480 izliyordur ya da daha düşük bir çözünürlükte izliyordur. Bu bandwidth ihtiyacını eğer karşılayacak şekilde ise, yani ilk söylediğim senaryodaki gibi ise, 3 daha büyük bir bandwidth rezerve ettiyse, 5'i bu işe Gökhan Hoca'nın demin söylediği şekilde entegre edilecek. Yani integrated olacak ve buna dahil edilecek.
+
+493
+01:30:04,083 --> 01:30:18,083
+Onun için yeni bir flow başlatılmayacak. Flow zaten şu ortadaki H noktasına kadar geliyor. Oradan dallanacak. H'dan L'ye, L'den de 5 numaraya gidecek.
+
+494
+01:30:18,083 --> 01:30:28,083
+Ama dikkat edin, Cihan Hoca'nın örnekle söyledi, burada istenciler bu işi başlatıyorlar aslında.
+
+495
+01:30:29,039 --> 01:30:51,039
+Network'te bir tarafın istenci diğer tarafın da sunucu şeklinde olması lazım. Daha çok da video on demand için veya işte bu digital broadcasting için kullandığımız şeylerden biri, yaklaşımlardan biri. Devam edebiliriz bence Ceyap değil mi?
+
+496
+01:30:51,039 --> 01:30:51,756
+Okey.
+
+497
+01:30:52,659 --> 01:30:54,659
+Differenşiyatı söylemişiz.
+
+498
+01:30:54,659 --> 01:31:04,492
+Burada aslında Differenşiyatı da hani şeyi konuşmak lazım. Bu iki farklı şekilde yapabilirsiniz.
+
+499
+01:31:04,532 --> 01:31:25,452
+diyeyim kabaca. Hani bunu Expedited ya da Assured Forwarding gibi şeylere bölebilirsiniz. Hani burada amaç aslında şey, en başta siz söylemiştiniz hocam, farklı trafik sınıfları oluşturmak ve bunlara nasıl davrandınız? Bunu en basit seviyede...
+
+500
+01:31:25,555 --> 01:31:50,555
+Sıradan ve önemli gibi ayırabilirsiniz. Yani sizin sıradan normal trafiğiniz için bir kanalınız olur. Buraya bütün normal paketleri koyarsınız ve fakat bir grup paket için ne zaman geleceğini bilmediğiniz, ne zaman elinize ulaşacağını bilmediğiniz bir grup paket için de
+
+501
+01:31:51,572 --> 01:32:09,572
+elinizdeki kaynağı rezerve eder tutarsınız. Bu paketler geldiğinde de o kaynak üzerinden gönderirsiniz. Böylece hani bu resimdeki gibi gözüken alttaki kaosun altına girmez o özel paketler yukarıdan devam eder. Yani bunun örneğini aslında günlük hayatta çok yerde görüyorsunuz. Misal kargo...
+
+502
+01:32:10,836 --> 01:32:38,836
+firması hani buradan Ankara'ya paket gönderdiğiniz zaman hani sıradan mı diyor bir günlük mü diye soruyor size hani barz misal ya da ne bileyim bu aslında Amerika'da çokça gördüğünüz bir şey hani normalde eğlence parkına gittiğiniz zaman bile sıradan bir kuyruk var giriyorsunuz zaten herkes bilet almış orada ekstra bilet alma falan gibi bir şey de yok biletiniz var sıraya giriyorsunuz bir de paralı olan kısım var 5 dolar daha fazla verince
+
+503
+01:32:38,836 --> 01:33:01,336
+dümdüz geçiyorsun. Öyle bir kuyruk var. Yani expedited bir kuyruk var. Buradaki yani differentiated serviste tanımlanan yapı bu aslında. İki sınıfınız var. Sıradan ve hani şey daha önemli diyeyim. Bak nasıl tarif edeyim bilmiyorum. Bu kadar para örneğinden sonra daha zengin diyesi geliyor insanın ama hani daha önemli bir trafik var.
+
+504
+01:33:01,939 --> 01:33:03,939
+O trafik için bir...
+
+505
+01:33:03,939 --> 01:33:05,939
+Aciliyeti yüksek diyoruz.
+
+506
+01:33:05,939 --> 01:33:07,939
+Olur, ben nedense bu sefer hep paraya bağladım.
+
+507
+01:33:07,939 --> 01:33:10,939
+Aciliyeti yüksek diyoruz.
+
+508
+01:33:10,939 --> 01:33:17,939
+Yani, dolayısıyla eğer bu işi expedited forwarding ile yapacaksanız, bu şekilde...
+
+509
+01:33:18,963 --> 01:33:23,963
+Bir durum söz konusu. Bilmiyorum hocam sizin ekleyeceğiniz bir şey var mıydı?
+
+510
+01:33:23,963 --> 01:33:31,963
+Doğru. Zaten bir sonraki slide'a geçtiğimizde şey olacak, o söyledikleri daha da bir görsel olarak karşımıza çıkacak.
+
+511
+01:33:31,963 --> 01:33:33,963
+Geçiyorum ben, sen de geç istersen.
+
+512
+01:33:33,963 --> 01:33:34,963
+Geçtim.
+
+513
+01:33:34,963 --> 01:33:39,963
+İşte maket kaynağı var.
+
+514
+01:33:40,532 --> 01:33:41,532
+Paket sorusu.
+
+515
+01:33:41,532 --> 01:33:42,532
+Efendim?
+
+516
+01:33:42,532 --> 01:34:04,532
+Tamam, burada da şey aslında hani bu Assured Forwarding dediği şey değil mi? Hani farklı servis sınıfları oluştur. O farklı servis sınıfları üzerinde de paket drop edileceği zaman hangisinden nasıl drop edeceğine dair ayrı drop klasları oluştur.
+
+517
+01:34:05,332 --> 01:34:15,832
+Bunların çaprazlanması sonucu bir ton sınıf olsun ve buna göre davran. Bu mesela söylediğimiz yapıya çok uyuyor.
+
+518
+01:34:15,832 --> 01:34:32,332
+Hani ISP'nin kullanıcı trafiğini sınıflandırıp o trafik içerisinde bir congestion anında ya da bir sıkıntı anında hangilerini düşürmek isteyeceğini, hangilerine öncelik vereceğini belirtmek için bu daha uygun bir yapı mesela.
+
+519
+01:34:32,756 --> 01:34:46,756
+Şu an neredeyse bütün ISP'ler söylediğim gibi bu mantıkla çalışıyor. Hatta şöyle bir örnek vereyim. Bu, Turkcell'in TV Plus'ı mı var? Öyle bir kullanılması da var.
+
+520
+01:34:46,756 --> 01:34:54,756
+Ama Turkcell TV Plus şu anda da devam ediyor galiba. Ayrı bir kutuyla çıktı.
+
+521
+01:34:56,372 --> 01:35:17,872
+O kutuyla çıktığı gibi, aynı zamanda, filonoptik bağlantılar üzerinde, o kutuyu bağladığın portun, gidip konfigürasyonunda, bu Turkcell TV Plus kutusu bağlantısı diye bir konfigürasyon yapıyorsun, bir şey tıklıyorsun. Etiketliyorlar aslında.
+
+522
+01:35:23,060 --> 01:35:35,860
+etiketleniyor. Eve girerken de etiketlenmişi oraya gönderiyor. Yani şurada yaptığımız, anlattığımız, different share service'in farklı bir şekilde uygulamasın.
+
+523
+01:35:35,860 --> 01:35:39,300
+Aslında bunu statik olarak yapıyorlar. Tabii.
+
+524
+01:35:39,300 --> 01:35:47,860
+Hatta bunu şeyde de yapıyor. Mesela cep telefonu üzerinden data hattıyla çıkıyorsunuz.
+
+525
+01:35:49,619 --> 01:36:01,612
+Fakat hani şeyler de var. Sadece mesela tabletlerde kullanabileceğiniz data için kullanılan SIM'ler de var. Onların çıkışı da aslında benzer şekilde etiketleniyor.
+
+526
+01:36:01,908 --> 01:36:28,108
+Aynen, aynen kesinlikle çıkarken ona göre bir etiketleme yapıyor ve daha sonrasında trafiği buna göre routerlerden geçerken, işte şu örnekte gördüğünüz gibi neler yapmış? Gold demiş, silver demiş, bronze demiş, geri kalanı da ben diyorum pin, teneke sınıfı dört tane sınıfa ayırmış oluyor. Bunlar da Rated FQ farklı bir şekilde uygulaması.
+
+527
+01:36:29,908 --> 01:36:41,908
+RFC'de tanımlı ama hani Gold Seal, Bronze falan bu kitabın örneği. Yani aklınızda öyle kalmasın. Yani olay Gold Seal, Bronze ve Adır değil yani.
+
+528
+01:36:41,908 --> 01:36:51,908
+Evet. Bundan sonrası internet working zaten. Hani ona girmeyelim diye konuşmuş. Kafa çok karışır.
+
+529
+01:36:57,076 --> 01:37:03,676
+Leaky Bucket ve Token Bucket ile alakalı kitapta formüller var.
+
+530
+01:37:04,275 --> 01:37:15,595
+Hani size hep söylüyoruz ya, slide'lar kitabın komprime edilmiş, kompres edilmiş hali. Bazen bir slide kitaptaki 10-15 sayfaya denk düşebiliyor.
+
+531
+01:37:15,595 --> 01:37:27,075
+Zaten kitap bilgisini de internetten basit bir sorgu sualle nasıl download edeceğinizi de size söylemiştim. Lütfen kitaptan...
+
+532
+01:37:27,347 --> 01:37:49,467
+hem Leaky Bucket hem de Token Bucket ile alakalı o formüllerin olduğu kısmı ayrıca bir özellikle okuyun. Zaten bu anlattıklarımızı okuduğunuzu varsayıyoruz ama burada slidelerde formüllere doğrudan yer vermedik. Ancak onları lütfen okuyun. Durum böyle.
+
+533
+01:37:50,868 --> 01:37:56,307
+Biz bugünkü dersi bitirebiliriz. Var bu sorusu olan arkadaşlar.
+
+534
+01:37:59,859 --> 01:38:01,859
+Görünüşte yok.
+
+535
+01:38:01,859 --> 01:38:03,859
+Benim tarafım yok.
+
+536
+01:38:03,859 --> 01:38:05,859
+Tamam, o zaman hepinize iyi günler.
+
+537
+01:38:05,859 --> 01:38:08,859
+Evet, hepinize iyi günler. Haftaya görüşmek üzere.
+
+538
+01:38:09,859 --> 01:38:10,859
+Bir soru geldi.
+
+539
+01:38:10,859 --> 01:38:11,859
+Ha, pardon.
+
+540
+01:38:11,859 --> 01:38:13,859
+Yok, iyi günler gelmiş. Özür dilerim. Tamam.
+
+541
+01:38:13,859 --> 01:38:15,859
+Haydi o zaman arkadaşlar.
+
+542
+01:38:15,859 --> 01:38:16,859
+Ben de kapatıyorum.
+
+543
+01:38:16,859 --> 01:38:17,859
+Görüşmek üzere.
+
+544
+01:38:17,859 --> 01:38:19,859
+Hepinize iyi günler tekrar.
+
+545
+01:38:19,859 --> 01:38:21,599
+Aynen.

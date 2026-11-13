@@ -1,0 +1,1687 @@
+1
+00:00:00,532 --> 00:00:01,644
+Bluetooth, D-M
+
+2
+00:11:47,028 --> 00:11:59,028
+Evet arkadaşlar, merhabalar. Sesim geliyor mu arkadaşlar? Seslerimiz geliyor mu? Duyuyor musunuz? Geliyor hocam. Sağ olun.
+
+3
+00:11:59,392 --> 00:12:06,392
+Tamam arkadaşlar. Şimdi geçen hafta... Pardon hocam. Sen söyle hadi devam et.
+
+4
+00:12:06,392 --> 00:12:15,392
+Yok yok, Connection release'de kalmıştık. Bugün oradan devam edeceğiz. Gökhan Hoca başlayacak oraya. Ben sadece şeyi söyleyeyim dedim. Hani atlamadan başlangıçta.
+
+5
+00:12:15,392 --> 00:12:26,392
+Unutmadık, evet. Evet. Şey olmasın, sürpriz olmasın. Bir de önden hazırlık şansınız olsun. Daha fazla hazırlık şansınız olsun. Önümüzdeki hafta değil...
+
+6
+00:12:26,964 --> 00:12:32,284
+Ondan sonraki hafta, hayırlısıyla ikinci vizemizi yapacağız.
+
+7
+00:12:33,484 --> 00:12:42,844
+Yani 1 Haziran'da ikinci vize olacak. Aklınızda olsun. Zaten sisteme gireceğiz.
+
+8
+00:12:44,684 --> 00:12:53,124
+Şey yaparsınız, orada da görürsünüz. Önümüzdeki hafta tekrar hatırlatırız. Ama bu haftadan söyleyelim. Böylece siz de rahat rahat hazırlanıyor olun.
+
+9
+00:12:53,908 --> 00:13:20,348
+Ben o noktada bir uyarı da daha bulunayım, hatırlatma da daha bulunayım. Ders saati arkadaşlar 3 ile 5 arası sınav ders saati içerisinde olacak. Lütfen 3 ile 5 arasına başka herhangi bir randevunuzu veya bir toplantınızı sınav 3'te başlar, şurada biter kararıyla koymayın. 3-5 arasını boş bırakın.
+
+10
+00:13:21,908 --> 00:13:49,908
+Bu, bizim gruptan [öğrenci] bir soru sormuş. İkinci vizelerimiz bölüm olarak o hafta mı yoksa ders üzerinde mi düşünelim diye. Bu tamamen ders üzerinde arkadaşlar. Çünkü biliyorsunuz ikinci vizeler şey opsiyonel olarak bırakıldı. Hani vize yerine ödev, ödev yerine proje vesaire falan gibi farklı sistematikler de var. Normalde biz 12. haftada yapıyorduk ikinci vizeyi ama burada araya bayram tatili vesaire de girdi. Dolayısıyla
+
+11
+00:13:49,908 --> 00:14:07,508
+Yeteri kadar ilerleyemedik. Bu hafta ve önümüzdeki hafta ilerleyip vizeyi öyle yapacağız. Son haftada telafi ile ilgili zaten sınavı yapıyor olacağız. 14. hafta. Ama onu zaten yeri geldiğinde ayrıca duyuruyor oluruz. Şey yapmayın.
+
+12
+00:14:07,508 --> 00:14:11,467
+Evet.
+
+13
+00:14:12,083 --> 00:14:16,083
+O zaman Connection Release ile devam edelim.
+
+14
+00:14:16,083 --> 00:14:23,083
+Cihan hocanızın söylediği gibi en son Connection Establishment, Connection Setup'ı gözlemlemiştim.
+
+15
+00:14:23,083 --> 00:14:32,083
+Orada Three-Way Handshake üzerinde durmuştuk. Üç tane mesajlaşma ile bağlantıyı başlatıyorduk.
+
+16
+00:14:32,083 --> 00:14:40,043
+Şimdi bağlantının sonlanması da aslında bağlantının başlatılması kadar.
+
+17
+00:14:40,052 --> 00:14:48,552
+önemli ve hassas değerlendirilmesi gereken noktalardan biri. Niye diye sorarsanız, burada
+
+18
+00:14:48,552 --> 00:14:58,052
+Connection Oriented çalıştığımız için alt taraftaki network katmanı paket kaybedebiliyor olsa bile, bizim
+
+19
+00:14:58,052 --> 00:15:07,052
+Connection oluşturulduktan sonra kapanması, sonlandırılması da dahil olmak üzere paket kaybetmememiz lazım.
+
+20
+00:15:07,700 --> 00:15:21,100
+Gönderici taraftan çıkan paketleri son pakete kadar o da dahil olmak üzere düzgün ve güvenilir ve sıralı bir şekilde karşı tarafa aktarabilmemiz lazım.
+
+21
+00:15:21,620 --> 00:15:49,620
+Şimdi, sonuç olarak alt taraftaki network katmanı güvenilir olmadığı için, çoğu zaman datagram modunda çalıştığı için, paketler kaybolabiliyor, gecikebiliyor, daplike olabiliyor gibi her türlü sıkıntılı durumlar söz konusu olabildiği için, bağlantıyı sonlandırırken de paketlerin, en son çıkmış olarak paketlerin de hedefe vardığından eminim.
+
+22
+00:15:49,620 --> 00:16:13,615
+emin olmak zorundayız. Bir de unutmayın, bunu daha önce söylemiştik, aslında A hostu oradaki uygulama, B hostundaki uygulama ile konuşurken, çok ekstra bir durum olmadığı sürece, çift taraflı konuştuğunu varsayıyoruz. Yani bir duplex communication ile bahsediyoruz. Ancak duplex communication'ı...
+
+23
+00:16:13,615 --> 00:16:41,216
+hem A katmanı hem de transport katmanı da iki tane unitlex tek yönlü akışla sağlıyoruz. Yani biri A uygulamasından B uygulamasına, diğeri ise B uygulamasından A uygulamasına doğru. Şimdi bu durumda geneli düşüncek olursak, bağlantıyı A tarafı kapatmak istediğimde hala daha
+
+24
+00:16:41,299 --> 00:16:51,299
+B tarafından A tarafına akış devam edebilir. Bunu engelleyen hiçbir şey yok. Çünkü neden? İki tane Uniplex akıştan bahsediyoruz dedik.
+
+25
+00:16:51,299 --> 00:17:03,299
+Benzer şekilde B tarafı A tarafını durdurmak istiyorsa, artık oraya bir şey göndermek istemiyorsa, A tarafından B'ye duracağının bir garantisi yok.
+
+26
+00:17:03,299 --> 00:17:08,203
+Öyleyse connection release'in temelinde yatan...
+
+27
+00:17:08,243 --> 00:17:26,844
+ana fikir, hangi taraf başlatırsa başlatsın, ister A tarafı, ister B tarafı, diğer tarafın bu bağlantının sonlandırılacağından haberdar olması, buna göre de artık paket göndermeyi kesmesi ve...
+
+28
+00:17:26,932 --> 00:17:51,412
+olası network katmanında hala daha hareket halinde olan farklı yollardan geldiği için farklı gecikmelerle hedefe teslim edilecek olan paketlerin hedefe varmasının beklenmesi. Olay bunun üzerine kuruluyor. Ve bakın, slide'ta da ne diyor? Asimetrik release diyor. A tarafı da B tarafı da bunu başlatabilir.
+
+29
+00:17:51,892 --> 00:18:11,892
+Ne konuşmuştuk? Bir taraf client görevini işleniyordu, islemci diğer taraf server, sunucu görevini işleniyordu. Ancak sunucu da bağlantıyı kapatabilir, islemci de bağlantıyı kapatabilir. Şimdi bağlantıyı kapattım, sonrası beni ilgilendirmez.
+
+30
+00:18:12,084 --> 00:18:21,684
+demek olmuyor. Bu durum şu slide'daki app-rupt kısmına yani kopartılıp atılma sonrasının da ortada kalması kısmına denk düşüyor.
+
+31
+00:18:21,684 --> 00:18:32,084
+App-rupt şey hani kesinti, inter-rupt'ta da var ya oradan aklınızda kalabilir. App-rupt ve app-normal'da da app ekini kullanıyoruz.
+
+32
+00:18:32,084 --> 00:18:39,684
+Bir şeylerin aslında sağlıklı olmadığını, sıkıntılı olduğunu söylüyor bize. Böyle bir şeyin olmaması lazım.
+
+33
+00:18:39,955 --> 00:19:03,955
+Şimdi bakın, normal akış, Connection Release'i host 1 gönderiyor, host 2, technology gönderiyor. Ama bu arada hala daha ne gelebiliyor arkadaşlar? Data gelebiliyor. Yukarıda bakın, data var. Ancak ikinci data...
+
+34
+00:19:04,192 --> 00:19:13,192
+gelirken öbür taraf, OSII, artık ne yapmış? Disconnect request göndermiş.
+
+35
+00:19:14,483 --> 00:19:40,283
+Şimdi öyleyse, yani OSP1 de bunu kabul etmiş durumda, OSP2 de bunu kabul etmiş durumda. Burada hani normal bir ilerleme söz konusu olacak. Ama eğer bunu bir şekilde gözetmezsek, düzgün bir şekilde bunu yapmazsak, A'dan B'ye, OSP1'den OSP2'ye veya OSP2'den OSP'ye, akır kaybetme ihtimalimiz çok yüksek.
+
+36
+00:19:40,980 --> 00:19:42,980
+Slight değiştiriyorum diye.
+
+37
+00:19:42,980 --> 00:19:43,980
+Aynen.
+
+38
+00:19:45,980 --> 00:20:05,951
+Simetrik release, yani iki tarafın da tamam biz bunu karşılıklı kapatalım, iki tarafın aynı anda bağlantıyı kapatmaya ikna olması veya karar vermesi maalesef tek başına
+
+39
+00:20:05,951 --> 00:20:33,067
+Transport player tarafından sağlanamaz. Çünkü daha sonra da göreceğiz bunu. Bir katmanda, o katmanı etkileyecek şekilde gerçekleşen hata durumlarının, o katmanın içinde çözülmesi mümkün değil. Mutlaka bunun çözümünün bir üst katmanda gerçekleşmesi gerekiyor.
+
+40
+00:20:33,971 --> 00:20:42,971
+Bu işin doğasında olan bir şey. Bakın, bu problem çok tipik bir problem ve two army problem olarak geçiyor.
+
+41
+00:20:42,971 --> 00:20:56,971
+Şimdi beyaz bayraklılar var, siyah bayraklılar var. Beyaz bayraklılar ortadaki çukur kısımda, vadi diyelim, orada konumlanmış durumdalar.
+
+42
+00:21:01,523 --> 00:21:20,243
+Sayıca daha fazlalar değil mi? Topladığınız zaman 4 tane var, öbürlerinden 3 tane var. Üstünlük sağlamış durumdalar. Ama bu üstünlüğün gerçekleşebilmesi için sol taraftaki siyah bayraklılarla, sağ taraftaki siyah bayraklıların senkron aynı anda saldırması lazım.
+
+43
+00:21:20,243 --> 00:21:28,643
+Eğer senkron saldırmazlarsa sayıları 3'ten az olduğu için yenilecekler. Yani bir bütün oluşturmaları gerekiyor.
+
+44
+00:21:28,788 --> 00:21:46,768
+Fakat saldırı anını senkronize edebilmek için aralarında mesajlaşmaya gidecek olurlarsa, bu mesajlaşma Beyaz Bayraklılar tarafından görünecek, anlaşılacak. Böylece o senkronizasyon sağlamayacak.
+
+45
+00:21:46,768 --> 00:21:49,507
+Bu tipik literatürde geçen bir problem.
+
+46
+00:21:49,507 --> 00:21:57,768
+Hani günlük hayattan alınmış, doğal akıştan, insan hayatından alınmış bir örnek savaş üzerine kurulu ama niye böyle bir şey biliyoruz?
+
+47
+00:21:57,768 --> 00:22:03,407
+Network layer, transport layer'a ait paketleri kaybederken...
+
+48
+00:22:03,476 --> 00:22:29,260
+Tabi ki bu paketleri bilerek isteyerek böyle bir düşman gözüyle kaybetmiyor ama bu paketleri kaybederken otomatikman transport layer seviyesindeki birtakım senkronizasyonların, birtakım simetrik yapıların bozulmasına sebep oluyor. Bunu isteyerek yapmıyor. Ama bakın paketler gecikebiliyor, paketler kaybolabiliyor, paketler yanlış yere gidebiliyor, paketler çifte gelebiliyor.
+
+49
+00:22:29,619 --> 00:22:56,619
+Veya farklı gecikmelerle gelebiliyor. O da bir sıkıntı. Böyle olunca demek ki, basit kağıt üzerinde ne olacak A ve B aralarında anlaşırlar, harika aynı anda kapatıyoruz deyip, hani milisaniyesine, mikrosaniyesine varıncaya kadar aynı anda bu bağlantıyı sonlandırırlar. Ne yazık ki öyle bir şey yok. Var olan network katmanının...
+
+50
+00:22:57,172 --> 00:23:17,172
+sıkıntıları bilinerek, bunlar gözetilerek bir çözüm üretmek zorundayız. Bir sonraki slide'a geçiyorum. Tamam. Tamam. Şimdi, bakın, normal bir release sekansı, OSPİR tarafından...
+
+51
+00:23:17,200 --> 00:23:26,800
+OSI başlatılıyor. Bir disconnect request gönderiyor. Disconnect request gönderdiği anda OSI bir timer başlatıyor.
+
+52
+00:23:26,800 --> 00:23:30,508
+Niçin? Şunu bekliyor.
+
+53
+00:23:30,708 --> 00:23:37,008
+Bu Disconnect Release, Host2'ye bir süre sonra, makul bir süre sonra gidecek.
+
+54
+00:23:37,008 --> 00:23:46,508
+Ve Host2 de bu Disconnect Request'i sağ taraftaki akışta görüldüğü gibi bir Disconnect Request ile onaylayacak.
+
+55
+00:23:46,508 --> 00:23:48,508
+Normalde...
+
+56
+00:23:49,395 --> 00:24:02,395
+OSII'nin, Disconnect Request mesajının, OSII'nin başlattığı, timer expire etmeden, yani bir interrupt oluşturmadan gelmesini bekliyoruz OSII'nin.
+
+57
+00:24:02,395 --> 00:24:16,203
+Ancak dikkat edin, OSII'de, Disconnect Request'i gönderdiği zaman, benzer şekilde bir timer başlatıyor. Yani bir timeout'u çalıştırıyor. Niçin?
+
+58
+00:24:16,500 --> 00:24:25,500
+O da karşı taraftan, OSP1'den kendisinin gönderdiği, Disconnect Request'e bir technology bekliyor.
+
+59
+00:24:25,811 --> 00:24:44,612
+Öyleyse bakın normal akış, her şey düzgünken, hiçbir paket kaybı olmazken, ekstra gecikme yaşanmazken, network değil, TikTok her şeyle düzgün çalışırken yine üç tane mesajlaşma ile bağlantıyı sonlandırabiliyoruz.
+
+60
+00:24:44,723 --> 00:25:12,723
+Treeway Handshake'te nasıl bağlantıyı kurduysak, üç tane mesajlaşmayla da, burada da yine bir el sıkışma var ama bu sefer bağlantıyı hadi başlatalım diye sonlandıralım diyebiliriz. Yalnız bu Treeway Handshake hep bağlantının kurulmasına yönelik kullanıldığı için, onunla ilişkilendirildiği için, lütfen bağlantının sonlandırılması için Treeway Handshake kullanmayın. Yanlış kullanmışsınız. Ama neyi bilin? Yine üç tane...
+
+61
+00:25:12,723 --> 00:25:19,023
+mesajlar. Öyleyse, OSP bir disconnect request gönderiyor, timer başlatıyor, timer expire etmeden
+
+62
+00:25:19,023 --> 00:25:26,824
+OSP2'ye gidiyor. OSP2 bunun karşılığındaki disconnect request'i gönderiyor, timer başlatıyor. Bu timer ve
+
+63
+00:25:26,824 --> 00:25:34,023
+expire etmeden OSP1, final acknowledge'ı gönderiyor ve bağlantı sonlanmış oluyor.
+
+64
+00:25:34,483 --> 00:25:41,483
+Peki, şunu söyleyeyim size. Hem sorayım hem söyleyeyim kafanızda bir jimnastik yapmış olun. Bu Tyler'lar.
+
+65
+00:25:42,291 --> 00:25:53,091
+sadece disconnect request'in karşı tarafa belirli bir sürede gitmesini ve buna bir cevap üretilmesini sağlamayacak.
+
+66
+00:25:53,091 --> 00:26:01,891
+Aynı zamanda bu timer'ların değerinin neyi de garanti edecek kadar uzun seçilmiş olması lazım.
+
+67
+00:26:01,891 --> 00:26:05,491
+Network layer'dan hala daha...
+
+68
+00:26:05,567 --> 00:26:15,168
+aktarılan farklı yollardan, farklı gecikmeler, farklı sıkıntılarla aktarılan paketlerin de gelmesini sağlayacak.
+
+69
+00:26:15,168 --> 00:26:22,168
+Çünkü onların da hedeflerine yani OSPİ'den OSPİ'ye, OSPİ'den OSPİ'ye varmış olmalarını bekliyoruz.
+
+70
+00:26:22,168 --> 00:26:27,367
+Paket kaybolmayacak dedik ya. Onu da aklımızın bir kenarına yazmamız lazım.
+
+71
+00:26:27,367 --> 00:26:29,768
+Sonraki slide'a geçebiliriz.
+
+72
+00:26:31,316 --> 00:26:33,316
+Bu da zaten şey durumları.
+
+73
+00:26:33,316 --> 00:26:57,316
+Şimdi, burada ise hani bir önceki happy senaryo, happy pet diyoruz. Burada ise hani worst case senaryolar, farklı sıkıntılar var. Nedir bakın, en soldaki senaryoda final acknowledgement kayboluyor. Ortadaki senaryoda...
+
+74
+00:26:57,652 --> 00:27:18,251
+Kaybolan bir disconnect request var. Retransmission'a sebep oluyor. En sağdaki senaryo ise ExtremeCase, yani en 3 nokta. O kadar çok disconnect request kayboluyor ki, yani aradaki network o kadar kötü bir durumda ki, iki host birden timeout oluyor.
+
+75
+00:27:18,291 --> 00:27:29,411
+Şimdi, böyle genel bir konuştuktan sonra aslında kanalımızda canlanmıştır diye tahmin ediyorum. Az önceki anlattıklarımızı da eklediğinizde, üst üste alt alta.
+
+76
+00:27:29,411 --> 00:27:36,411
+Sol tarafta en kolay şey, OSP1'den OSP2'ye disconnect request gitti.
+
+77
+00:27:39,059 --> 00:28:00,940
+İçerisinde OSII'den OSPF'e diskonnet, IPv6 geldi, çok güzel. Ancak OSII'nin Time Out'u içerisinde OSI'den OSII'ye Ekno'lu hiç gelmedi, kayboldu yok. O zaman retry mekanizmasını şu anda...
+
+78
+00:28:20,660 --> 00:28:33,660
+Evet şu an duyuyor. GSM hattı bizi kaldırmadı artık. Bu sefer Blacklist'i aldılar herhalde. Bunlar böyle her çarşamba, her salı saat 3'ten 5'e bıdır bıdır konuşuyorlar. Ne konuşuyorlar bunlar yahu?
+
+79
+00:28:33,660 --> 00:28:34,660
+Diyip kestiler.
+
+80
+00:28:34,660 --> 00:28:45,660
+Vedava dakikalar boşa gidiyor diye bence şey yaptılar. Tamam. Ben unmute edeyim, tekrar şey yapalım.
+
+81
+00:28:47,955 --> 00:29:04,755
+Cehan Hoca'nın aramızdaki bağlantıyı tekrar sağladık. Şimdi, şeyden karşı taraf duymamış olabilir diye, Cehan Hoca'nın öğrencileri duymamış olabilir diye, sol taraftaki durumun incelenmesinden devam edeceğim tekrar.
+
+82
+00:29:04,755 --> 00:29:12,355
+Orada şeyler geldi bu arada hani, diskonlektrik, kukresti vesaireyi söylediniz. Bunlar geldi.
+
+83
+00:29:12,355 --> 00:29:14,827
+Tamam, geldi, süper. O zaman...
+
+84
+00:29:18,067 --> 00:29:26,635
+Connect Request'den sonra ne yazık ki Host 1'in gönderdiği etknowledge, Host 2'nin set ettiği timeout için...
+
+85
+00:29:42,675 --> 00:30:01,291
+Yan tarafta göreceğiz. Ama en yalın haliyle, OSP2 diyebilir ki, OSP1'den bana disconnect request geldi. Çok güzel. Ben de ona gönderdim. Zaten ondan bana artık extra gelecek bir paket kalmamıştır. Benim timeout'um da expired oldu.
+
+86
+00:35:43,476 --> 00:35:58,476
+Hocam, burada bir şey daha o zaman söyleyeyim, müsaade ederseniz. Aslında bu senaryolar arasında bir şekilde tam işlenmemiş, bunların hepsinin bir kombinasyonu olan bir senaryo daha var, daha da felaket olan.
+
+87
+00:35:58,476 --> 00:36:08,476
+Bilmiyorum çocukların bir fikri var mı ama önce onlara bir sorayım. Aklınıza gelen bir durum var mı? Daha kötü olabilecek.
+
+88
+00:36:13,844 --> 00:36:16,844
+Çocuklar orada değil mi bu arada? Kayıt değiller yani.
+
+89
+00:36:16,844 --> 00:36:19,844
+Bende bağlı görünüyorlar, sende de bağlı.
+
+90
+00:36:19,844 --> 00:36:23,844
+Bende de 40 kişi var ama bir hareket var.
+
+91
+00:36:23,844 --> 00:36:32,844
+Şimdi bu selaryoların hepsinde ilk disconnect request'in doğrudan ve temiz bir şekilde karşıya gittiği düşüncesi var.
+
+92
+00:36:32,844 --> 00:36:34,412
+Evet.
+
+93
+00:36:34,708 --> 00:36:43,608
+Ancak ve lakin bir taraftan host bir disconnect request'i gönderdi ama diyelim ki o kayboldu, havada kaldı.
+
+94
+00:36:45,492 --> 00:37:13,492
+Tekrar gönderdi. Yani aslında en sağdaki durumun bir alt versiyonu gibi. Tekrar gönderdi, tekrar kayboldu. Tekrar gönderdi, tekrar kayboldu. Ne olacak? Hani bu konuştuğumuz mekanizmaya göre aslında en adım sonra işte her timeout tuttadan sonra bir daha deneyecek, bir daha deneyecek. Ama en adım sonra pes edecek ve hani bence bitti diyecek. Büyük ihtimalle. Ben hani olmuyor, kapatamıyorum diyecek, kapatacak, geçecek. Ama ikinci hostun aslında bundan...
+
+95
+00:37:13,492 --> 00:37:33,792
+hiç haberi bile olmayacak. Yani olası bence en kötü senaryo bu. Zaten onun için de hani şeyi kullanıyoruz daha çok hani aktivite olup olmadığına bakmak, hani bir keep-alive mekanizması kurmak vesaire gibi şeyler kullanıyoruz aslında.
+
+96
+00:37:35,380 --> 00:37:41,779
+Onu söyleyeyim demiştim ama zaten tribünlerden hiç hareket gelmedi. Biz galiba kendi kendimize...
+
+97
+00:37:41,779 --> 00:37:47,152
+Hiçbir şey yapmadılar, seçeneği daha etmediler. Biz de hiç izlemedik.
+
+98
+00:37:47,152 --> 00:38:04,152
+Aynen öyle, error control ve flow control. Aslında datacom dersinde arkadaşlarım bununla ilgili konuşmuş olması, üzerine biraz detaylandırmış olması lazım ama.
+
+99
+00:38:07,284 --> 00:38:27,980
+Error kontrol dediğimiz mekanizma aslında bilginin, verinin bir yerden diğer yere istenilen bir güvenilirlik seviyesinde aktarılması ki buradaki istenilen güvenilirlik seviyesi hatasız olması yani baştan sona orijinaliyle aynı olsun durumu. Flow kontrol ise
+
+100
+00:38:28,115 --> 00:38:50,515
+hızlı bir göndericinin yavaş bir alıcıyı ezmesini engellemek. Yani gönderim hızını kontrol altına almak. En basit haliyle. Bunu zaten data link layer'da yapıyoruz. Bununla ilgili mekanizmalar var. Ne yapıyoruz? Hata kontrolü uyguluyoruz, error detecting kod koyuyoruz.
+
+101
+00:38:51,507 --> 00:39:03,268
+Bir şeyler doğru mu değil mi vesaire yapabilmek için. Otomatik repeat request'i işin içerisine katıyoruz. Şeyi belirliyoruz.
+
+102
+00:39:04,052 --> 00:39:22,052
+Flow Control adına da benzer şekilde Stop and Wait ve Sliding Window kullanıyoruz. Ne yapıyoruz? Hatta çıkartabileceği paket sayısını kontrol altında tutuyoruz. Hatta da Utilize etmeye çalışıyoruz. Bu şekilde aslında bu işleri biz Data Link Layer'da yapıyoruz.
+
+103
+00:39:23,052 --> 00:39:31,052
+Tabi bu cümleyi söyledikten hemen sonra akla gelecek olan şey şu, Data Link Layer'da yaptığımızı transport katmanında niye bir daha yapıyoruz?
+
+104
+00:39:32,307 --> 00:39:59,307
+haliyle. Şimdi en basitinden hata kontrolü için baktığınız zaman şöyle bir şey var. Data Link Layer'da yaptığımız hata kontrolü aslında iki hop arasında yapılıyor. Yani A hostu ile B hostu arasında bir atlama içerisinde yapılıyor. Birinden diğerine doğru aktarılıp aktarılmadığını kontrol etmek adına. Ve fakat şu her zaman olası bir yapı ve ihtimal.
+
+105
+00:40:00,000 --> 00:40:22,000
+sizin gönderdiğiniz paket bir sonraki düğme geçti, o düğümden bir sonraki düğme aktarıldı. O düğümün bir yerinde beklerken bufferında bir şekilde orada bir hata oluştu. O hata, oluşan hata aynen kopyalanarak atlamaları devam etmeye gidebilir.
+
+106
+00:40:22,228 --> 00:40:44,728
+hiçbir sıkıntı olmadan. Son noktada bir de uçtan uca bunun hakikaten orijinal bilgi olup olmadığını kontrol edebiliyor olmanız lazım. Bunun hani ispatlanmış şeyi var. Hatta, nedir o? Bununla ilgili çalışmalar ve yayınlar var. Bu ekstra bir şey, hata kontrol mekanizması size tam kontrolü sunabilir hale getiriyor.
+
+107
+00:40:47,188 --> 00:41:12,868
+Benzer şekilde Flow Control'de de aynı yapı var. Yani siz aslında ne yapıyorsunuz? Data Link'e uyguladığınız Flow Control ile aradaki sadece o iki düğüm arasındaki tek hattaki hızı kontrol ediyorsunuz. Ve fakat aslında buradaki Flow Control birden fazla atlamayı içeriyor. Artı şunu da içeriyor.
+
+108
+00:41:13,235 --> 00:41:24,235
+Bir sunucu üzerinde, bir host üzerinde sadece T anında haberleşen tek bir uygulama, tek bir işlem olmak zorunda değil.
+
+109
+00:41:24,235 --> 00:41:30,235
+Birden fazla haberleşme, uçtan uca haberleşmeyi gerçekleştiriyor olabilir, bir.
+
+110
+00:41:30,235 --> 00:41:37,235
+Birden fazla interfeese sahip olabilir, iki. Bunların tamamının kontrol ediliyor olması lazım.
+
+111
+00:41:37,235 --> 00:41:39,235
+Artı bir de ne yapıyoruz tabi ki?
+
+112
+00:41:39,411 --> 00:41:43,811
+Data linkleri de sadece o hatla sınırlıyız, o linkle sınırlıyız.
+
+113
+00:41:43,811 --> 00:41:51,011
+Ve fakat aslında o link üzerine çok daha farklı yerlerden ve noktalardan birleşen ve gelen trafikler var.
+
+114
+00:41:51,011 --> 00:41:59,211
+Dolayısıyla bu yüzden de hem alt katmanda hem de transport katmanda bu işleri bir arada yapıyor olmamız lazım.
+
+115
+00:42:02,211 --> 00:42:06,011
+Şimdi ben dediğim şey ettim mi?
+
+116
+00:42:06,011 --> 00:42:06,612
+Tabii ki.
+
+117
+00:42:07,668 --> 00:42:16,620
+Senin dediğin şey bence en önemli noktalardan bir tanesi. Arkadaşların bunu hiçbir zaman atlamaması lazım. Data-lead layer.
+
+118
+00:42:23,251 --> 00:42:35,019
+Multiple Hop'tan bahsediyoruz. Single Hop ise, Link'te yapacağı şey. Zaten Single Hop'ta da geçerli. Ama Multiple Hop dediğimiz zaman yine az önceki plan...
+
+119
+00:42:39,476 --> 00:42:42,988
+diye üst katmanlarda bunun kontrolü...
+
+120
+00:42:46,963 --> 00:42:48,963
+nereye da taşımamız gerekiyor?
+
+121
+00:42:48,963 --> 00:42:49,643
+NetSort.
+
+122
+00:42:58,036 --> 00:43:01,716
+application'a vermek de çok anlamlı değil. Ondan ötürü
+
+123
+00:43:06,547 --> 00:43:16,139
+Dış katmana görünmüş, dış katmanla da yapılır bir şey. Errol içinde, aynen Cihan hocamızın söylediği gibi.
+
+124
+00:43:24,307 --> 00:43:28,307
+uçtan ucada düzgün olacağının garantisi değil.
+
+125
+00:43:28,307 --> 00:43:29,307
+Bir de burada...
+
+126
+00:43:42,996 --> 00:43:47,996
+Buna en hızlı şekilde mizare edip minimum kayıtla o hatadan kurtulabilmesi.
+
+127
+00:44:26,612 --> 00:44:31,291
+Tabi ki ideal olan ne? Daha önce de bunu derste söyledik. Yine...
+
+128
+00:45:10,739 --> 00:45:11,739
+Şimdiki de.
+
+129
+00:45:28,692 --> 00:45:30,692
+O zamanlarla faydalı olabiliyor.
+
+130
+00:45:41,204 --> 00:45:43,204
+...arttırabiliyoruz.
+
+131
+00:45:43,644 --> 00:45:46,204
+Sendir o anda boğulduysa...
+
+132
+00:45:52,724 --> 00:45:57,043
+Windows sayesini, data bitmeyelde size...
+
+133
+00:46:00,724 --> 00:46:01,724
+Numa ve şu anda.
+
+134
+00:46:01,724 --> 00:46:02,224
+Dilek.
+
+135
+00:46:06,739 --> 00:46:12,539
+Yani üç kitle, yedi kitle falan. Burada ise bunlar değişebiliyor daha, esnek olabiliyor.
+
+136
+00:46:12,539 --> 00:46:16,539
+Bunu da hesaba katmamız lazım. Bunları ekleyin istedim.
+
+137
+00:46:36,563 --> 00:47:03,563
+Şöyle, daha iyi canlanması için vermeyeyim ama, yani şimdi şöyle bir şey var. Ya da örnekliyim ama referansı da vereyim. Öncelikle referansı söyleyeyim. Saltzer'in bir çalışması var, 1984. Bu işin hani sadece data link layer ile olmayacağına dair, entland olması durumunda daha iyi olacağına dair. Şimdi data link katmanında ne yapabilirsin?
+
+138
+00:47:03,987 --> 00:47:14,187
+Error Correction ya da Error Detection uygulayabilirsin. Error Correction uyguladın, kaç tane hataya karşılık uygulayacaksın?
+
+139
+00:47:14,187 --> 00:47:31,307
+1, 2, 3, 4, 5, 10. Kaça uygularsan uygula. Uyguladığından daha fazlası olduğu zaman, mesela tek hataya göre uyguladın ama öyle iki hata oldu ki bütün çeksamlar düzgün çıkıyor.
+
+140
+00:47:31,507 --> 00:47:38,007
+ne yapacaksın? Hata mı var diyeceksin. Hissettim hata oldu diyemezsin. Çeksemler tuttuğuna göre devam edeceksin.
+
+141
+00:47:38,007 --> 00:47:43,807
+O hopu geçeceksin. Son noktaya varacaksın. Paket düzgün deyip geri koyarsın.
+
+142
+00:47:43,807 --> 00:47:51,007
+Eğer üst tarafta da bir error correction ya da error detection ya da daha doğrusu genel anlamıyla error control yapmıyorsan.
+
+143
+00:47:51,007 --> 00:47:53,419
+Tamam mı? Yani en basit haliyle.
+
+144
+00:48:18,835 --> 00:48:28,915
+Windows size, Frame size, ne de bakacak olursak, aynı frame'in içerisinde iki tane burst veya n tane burst olmaması lazım.
+
+145
+00:48:28,915 --> 00:48:37,547
+Bir diğer şartlarda. Fakat olduğu zaman, az önce, Cem hocamızın söylediği gibi, yani bir bit-flip hatası...
+
+146
+00:48:47,092 --> 00:49:10,092
+%100 değil orada. Siyasinin gelecesine bağlı olarak 99.98. Single bit errorların tamamını bulur da, 2 bit olursa şu kadarını bulur, 3 bit olursa fark eder veya etmeyebilir. Zaten ondan sonrası hikaye. O yüzden Data Link Layer'da bir freyinin...
+
+147
+00:49:10,996 --> 00:49:19,307
+Bir ülkenin bir ucunda öbür ucuna hatasız gitmiş olması aslında hatasız olduğu anlamına yükseliyor.
+
+148
+00:49:23,699 --> 00:49:25,699
+Eeeeh...
+
+149
+00:49:25,699 --> 00:49:26,699
+Pardon?
+
+150
+00:49:32,884 --> 00:49:34,884
+Bir sonraki sıvayla devam ediliriz.
+
+151
+00:49:34,884 --> 00:49:38,884
+Olur yani, ha tamam burada anlatırız.
+
+152
+00:49:38,884 --> 00:49:46,884
+Flow kontrol de aslında ne? Hani bizim bir göndericimiz bir de alıcımız var sender and receiver.
+
+153
+00:49:46,884 --> 00:49:48,884
+Ne yapıyor olmamız lazım?
+
+154
+00:49:48,884 --> 00:49:54,884
+Gönderilenleri bir şekilde işleyebilmek için bufferlıyor olmamız lazım.
+
+155
+00:49:54,884 --> 00:49:58,884
+Dolayısıyla bu bufferın nasıl yönetileceği...
+
+156
+00:50:00,000 --> 00:50:10,000
+önemli stratejilerden bir tanesi. Bir, hani ağda gördüğünüz şekil o. Bu işi sabit boyutlu bufferlarla yapabilirsiniz.
+
+157
+00:50:11,860 --> 00:50:20,860
+Yani şeyi hatırlayın, işletim sistemlerini hatırlayın. Orada mesela ne yapıyoruz? Threat pool'u oluşturuyoruz ya.
+
+158
+00:50:20,860 --> 00:50:30,443
+Hani önceden ben 100 tane thread oluşturayım, gelen isteği ona yönlendireyim, öyle devam edeyim. Bunun gibi düşünün. Hani önceden belirlediğiniz bir boyut var.
+
+159
+00:50:30,579 --> 00:50:36,140
+Her paket geldiğinde o boyutta bir alokasyon yapıyorsunuz. Dikkat edin bunlar linkli liste gibi gösteriliyor.
+
+160
+00:50:36,140 --> 00:50:42,180
+Şundan dolayı ben doğrudan bütün bufferımı allocate etmiyorum. Bütün memori kullanmaya başlamıyorum.
+
+161
+00:50:42,180 --> 00:50:49,180
+İhtiyaç oldukça alokasyonu yaparak ilerliyorum. Bu alokasyonu yaparken de linkli liste yapısını kullanıyorum ki hızlı olsun.
+
+162
+00:50:49,180 --> 00:50:55,180
+Dolayısıyla ne olabilir? A reslime bakacak olursanız soldakine.
+
+163
+00:50:55,248 --> 00:51:13,748
+Oradaki böyle farklı kahverengi gri gibi olan yer aslında boş alanı gösteriyor. Benim bütün bufferlarım aynı boy olursa daha küçük paketler ne olacak? Belli bir miktar belleğin aslında boşa kullanılmasına neden olacak.
+
+164
+00:51:22,675 --> 00:51:31,076
+O da var. Aynı şey oluyor. Bu yüzden ne yapabilirim? Farklı boyutlarda bufferlar oluşturabilirim.
+
+165
+00:51:32,596 --> 00:51:40,195
+Yani şeyi yönetmeye çalışabilirim. Her gelen isteğe, o istek kadar bir buffer oluştururum vesaire gibi bir şey yapabilirim.
+
+166
+00:51:40,195 --> 00:51:45,836
+Orada da yine aslında internal fragmentation oluşmasına engel olamazsınız.
+
+167
+00:51:45,836 --> 00:51:51,395
+Gene hani allocate ettiğiniz yere daha sonra koyacağınız paket, değişecek paket vesaire. Gene...
+
+168
+00:51:51,572 --> 00:52:03,572
+bir boşluk olacak. O yüzden üçüncü bir alternatif var. O üçüncü alternatif de aslında bu işi düz bir buffer alanı gibi düşünüp, circular bir buffer halinde implement etmek.
+
+169
+00:52:03,572 --> 00:52:09,572
+Dolayısıyla hani en sağdakine bakarsanız, C diye gözüken kısma
+
+170
+00:52:11,539 --> 00:52:34,539
+Her birinde tp, dv, 1, 2, 3, 4 diye işaretlenmiş. Tamamen birbirinden farklı boyutlardaki segmentler var aslında. Her gelen segmenti buffer'a kaldığı yerden yazıyorsunuz. Baktığınız zaman hiç fragmentasyon yok aslında. Ama şöyle bir sıkıntı var. Dikkat edin, bu yapıyı yapabilmek için, yani tek bir circular buffer'ı oluşturabilmek için ne yapmanız lazım?
+
+171
+00:52:36,079 --> 00:53:03,079
+tüm aslında buffer'ınızı allocate etmeniz lazım. Bu iş için kullanmayı düşündüğünüz tüm memory'ı önceden allocate etmeniz lazım. Bu yaklaşım o yüzden hani şeyi çok nedir o? Utilization'ı çok yüksek olmayan, buffer kullanım çok yüksek olmayacak yerlerde çok mantıklı değil. Bunun tam efektif hale gelebilmesi için aslında ne olması lazım? O bağlantının gerçek anlamda böyle sonuna kadar kullanılıyor olması lazım.
+
+172
+00:53:04,052 --> 00:53:15,948
+O zaman ne olacaktır? En son gördüğünüz kullanılmayan alan diye unused space diye işaretlenmiş olan alan otomatikman küçülecektir. Siz memory utilization ile arttırmış olacaksınız.
+
+173
+00:53:21,492 --> 00:53:31,852
+Şimdi normalde çok yüksek bir network trafiği yoksa, seyrek düşük bir volume varsa o zaman bakınlara ister...
+
+174
+00:53:34,867 --> 00:53:41,867
+alokasyon ve de alokasyon şeklinde kullanılması büyük bir problem değil. Ama eğer trafik...
+
+175
+00:53:45,364 --> 00:53:56,364
+Bu, gerçek en kötü senaryolardan biri. Batırı alokiyet ediyorsunuz, kullanıyorsunuz ve alokiyet ediyorsunuz, kullanıyorsunuz ve alokiyet ediyorsunuz. Bu böyle bir ağa mücün.
+
+176
+00:53:56,364 --> 00:54:12,811
+Şimdi senaryo çok düzgün görünüyor ama bir sıkıntısı var. Arka tarafta bu alokasyon, hatırlayın programlama bir tarafta, nerede gerçekleşiyor? SİP alanında gerçekleşiyor. Yani bir uygulama alt tarafta sonuçta SİP.
+
+177
+00:54:15,219 --> 00:54:18,819
+Ancak ilk oturu alo-kintesi...
+
+178
+00:54:28,307 --> 00:54:39,028
+Meseleniz aynı bilmaksız. Şimdi niye? Orada boş alanın bulunması, boş alanların geri geldiğinde yine işletim sistemlerinden hatırlayın,
+
+179
+00:54:39,028 --> 00:54:46,627
+kompansiyon mantığıyla, şeyde bu, garbage collection diye geçiyor, dinamik memori alakasyonunda.
+
+180
+00:54:46,627 --> 00:54:54,315
+Garbage collection'da boş alanların kullanılabilecek düzgün bir şekilde bir bütün ardı dönüş kurulması falan derken,
+
+181
+00:54:55,092 --> 00:55:07,307
+alokasyon paylı milyar olmaktan çıkıyor. Bunun nam milyar tesisleri yüksek trafik altında sürekli alokasyon paylı alokasyon paylı milyar olmaktan çıkıyor.
+
+182
+00:55:10,835 --> 00:55:14,435
+O zaman, OSI'a geçirmelerimiz değişiyor. Yani trafiğe
+
+183
+00:55:33,331 --> 00:55:37,331
+Güzel bir çözüm ama yüksek tıra.
+
+184
+00:55:43,635 --> 00:55:44,556
+Türkiye'de de meşe daha.
+
+185
+00:55:48,244 --> 00:55:54,123
+Bunları gruplu gruplu yapalım. Yani chunk, chunk. Bir buffer değil de diyelim ki...
+
+186
+00:55:58,516 --> 00:56:01,836
+yapmanız lazım ki. O şikri ne yapmış olun?
+
+187
+00:56:01,836 --> 00:56:03,980
+Bir miyik gördüğünüz zaman
+
+188
+00:56:11,443 --> 00:56:15,371
+en misafeti çocuk, en ideal
+
+189
+00:56:18,931 --> 00:56:22,291
+kaynağı, en değerli kaynaklardan bir memory.
+
+190
+00:56:29,780 --> 00:56:34,780
+Devamlı ne yapalım? Araba verelim. Bence devam edelim hocam.
+
+191
+00:56:34,780 --> 00:56:36,780
+Okey. Hadi bakalım.
+
+192
+00:56:36,780 --> 00:56:39,780
+Sonraki sınayetleri. Aa, doğru. Zaten anlık olduk.
+
+193
+00:56:39,780 --> 00:56:40,460
+Yani.
+
+194
+00:56:43,987 --> 00:56:49,667
+Bu Flow, yani Flow bir sorun var, bir şey mi geldi oradan? Yok.
+
+195
+00:56:49,667 --> 00:56:51,827
+Bakın, bende de yok.
+
+196
+00:56:51,827 --> 00:57:01,268
+Hayır tamam, yok. Sizin taraftan bir şey gibi geldi, biri bir şey söylüyormuş gibi geldi bir anda sanırım hattın parazitiydi. Neyse.
+
+197
+00:57:01,268 --> 00:57:08,307
+Şimdi bu işi aslında Flow Kontrolü yönetmenin yollarından bir tanesine...
+
+198
+00:57:14,579 --> 00:57:40,780
+İşi gönderici ve alıcı arasında bir anlaşma yapısına çevirmek. Burada da gördüğünüz önerilen bir yapı aslında. Nedir? A tarafı var, gönderici taraf, B tarafı var, alıcı taraf. Burada da bir mesaj sekansını görüyorsunuz. 16 adımlık bir mesaj sekansı var. A başta diyor ki, bana sekizlik bir buffer lazım.
+
+199
+00:57:41,331 --> 00:57:50,331
+B ise ben bu 8'i karşılayamam, 4 ile yetineceksin diyor sıfırla 3 arasına. Dolayısıyla M'ye başlıyoruz.
+
+200
+00:57:50,331 --> 00:57:59,331
+A, sıfır sekansıyla birinciyi gönderiyor, bir sekansıyla ikinciyi gönderiyor, iki sekansıyla ikinciyi gönderiyor.
+
+201
+00:57:59,331 --> 00:58:09,003
+Ama dikkat edin, ikinciyi gönderdiği zaman, yani beş numaralı adımda paket kayboldu.
+
+202
+00:58:09,652 --> 00:58:20,052
+B'ye erişmedi. Ama A bu anlamda neyi düşünüyor? Ben 0, 1, 2'yi gönderdim. Geriye sadece bir tane kaldı göndereceğim.
+
+203
+00:58:20,052 --> 00:58:31,251
+B'nin burada 0 ve 1'e ek ne oluş ettiğini görüyorsunuz karşılık olarak. Buffer'ın da 3 olduğunu söylüyor.
+
+204
+00:58:39,635 --> 00:58:48,135
+Arkadaşların kafası karışacak her sene benzer bir şey oluyor. Normalde gerçek hayat implementasyonlarında,
+
+205
+00:58:48,135 --> 00:58:56,012
+acknowledge bir sonraki beklenen sekans numarasını gösterir. Ancak...
+
+206
+00:58:59,987 --> 00:59:01,027
+En Proluchin.
+
+207
+00:59:05,523 --> 00:59:17,923
+Bu ikisini ne olur şey yapmayın. Bu grafik, bu slide, özen. Yani burada EcnoLuz 1 demek, 1 de dahil olmak üzere doğru aldım.
+
+208
+00:59:17,923 --> 00:59:25,003
+Ama gerçek hayatta bunun karşılığı EcnoLuz 2, yani ben 2'yi bekliyorum. Bunu unutmayın arkadaşlar.
+
+209
+00:59:25,876 --> 00:59:44,676
+Yani şöyle bir şey var, bu aslında hani şey hali değil, teorik olarak konuştuğumuz protokol versiyonu. Kitap boyu aslında hep şunu yaptık. Herhangi bir protokolü yani gerçek hayatta kullandığımız bir şey konuşmadan önce kitapta olası önerilen...
+
+210
+00:59:44,719 --> 01:00:00,683
+olabilecek bazı protokoller var. Hep önce onları konuşuyoruz, sonra gerçeği konuşuyoruz. Burada da benzer şekilde şimdi Error Control ve Flow Control'da olabilecekleri konuşuyoruz, yapılabileceği konuşuyoruz. Bir adım sonra UDP,
+
+211
+01:00:01,204 --> 01:00:15,204
+RTP ve TCP'yi konuşacağız. Orada gerçekten olanları, yani gerçekten derken gerçek hayatta kullandığımız protokollerin içindekileri konuşacağız. Yani bu hep aklınızda olsun zaten arkadaşlar.
+
+212
+01:00:15,204 --> 01:00:19,204
+Bir dakika, ne demiştim ben? Neredeyim?
+
+213
+01:00:19,204 --> 01:00:22,204
+7. saturdaydı. 7. şeydi mesajlar.
+
+214
+01:00:22,204 --> 01:00:26,204
+B şeyi eknoldü çetti. 0 ve 1'i eknoldü çetti.
+
+215
+01:00:26,931 --> 01:00:34,331
+A'da daha önce 2'yi göndermişti. Dolayısıyla göndermeye devam etti 3 ve 4'ten.
+
+216
+01:00:34,331 --> 01:00:44,331
+2 içinse time out oldu. Onunla ilgili herhangi bir şey yapmadığı için onu da tekrar gönderdi, doldurdu.
+
+217
+01:00:44,331 --> 01:00:54,131
+Sonrasında 10. satırda Ecnolojileri görmeye başlıyorsunuz. Nedir o?
+
+218
+01:00:55,092 --> 01:01:05,592
+4 için EcnoLage gönderdi. Buffer'ı sıfırladı, 1'ledi, 2'ledi, boşaltıyor ve kendi buffer'ını açıyor bir taraftan.
+
+219
+01:01:07,592 --> 01:01:18,592
+O açtıkça da neyi görüyorsunuz alt satırlarda? A'nın sekans numarasını arttırarak yeni veri göndermeye devam ettiğini görüyorsunuz.
+
+220
+01:01:19,155 --> 01:01:43,955
+Burada en son 14. satırda gördüğümüz şey ne? 6. bilgiyi de gönderdi A. Ama hiçbir şey için, 4'ten sonraki hiçbir şey için, yani ne 5 ne 6 için ne almadı? Bir eknoloj almadı. Dolayısıyla artık buffer'ını ilerletemiyor. Yani window'unu ilerletemiyor.
+
+221
+01:01:44,052 --> 01:01:50,552
+hala buffer dolu, B tarafındaki buffer dolu. Dolayısıyla ne hale geldi? Block edilmiş hale geldi.
+
+222
+01:01:50,552 --> 01:01:59,052
+Zaten 15'te de gelen EcnoLeg 6'nın alındığı, bufferın da 0 olduğu, şu an yer olmadığı yönünde.
+
+223
+01:01:59,052 --> 01:02:07,052
+A beklemede kalacak. Bir adım sonra ne geliyor? 16. satırda EcnoLeg 6
+
+224
+01:02:07,347 --> 01:02:31,547
+geldi 6, buffer 4 yani bundan sonra 7, 8, 9 ve 10'u gönderebilirsin. Ve fakat burada neyi görüyorsunuz? A tarafında 3 tane nokta var. O B tarafında olduğu zaman paketin yok olduğu gelmediği B'ye anlamındaydı. Burada da A'ya gelmediğini ifade ediyor. Bu ekne oluş, B'den çıkan ekne oluş A'ya gelmezse ne olacak? Bu haliyle bu.
+
+225
+01:02:31,635 --> 01:02:48,235
+Propos ettiğimiz haliyle bu protokolde, A, blok olacak. Blok olmaya devam edecek. B'de bir şey alamadığı için o da blok olacak. Potansiyel bir deadlock durumu bu aslında.
+
+226
+01:02:57,556 --> 01:03:13,056
+Bir mekanizma burada timeout olabilir dediğiniz gibi hocam. Diğer mekanizma da bu işi periyodik yapmak olabilir. Aslında yine aynı şeye denk düşüyor. Belli bir timeout sonunda o e-knowledgement'ı bir daha göndermek gibi.
+
+227
+01:03:14,056 --> 01:03:17,324
+Aynen. Bir de arkadaşlar...
+
+228
+01:03:25,427 --> 01:03:40,427
+göndermiyoruz artık. Slow açısından da bir sonraki turda ne kadar bilgi kabul edebilirim bilgisini de gönderiyoruz. İşte Buffer'ın 0, 1 veya 2 olması buna denk düşüyor.
+
+229
+01:03:40,427 --> 01:03:42,427
+O zaman hani...
+
+230
+01:03:46,612 --> 01:03:57,003
+kullanılabilir. Bakın hani sıfır bilgi kabul edebilirim derken iki adım sonra iki bilgi kabul edebilirim diyor ama aşağıda en son kaybolan mesajlar.
+
+231
+01:04:01,811 --> 01:04:19,012
+Windows size değişiyor. Bunu da unutmayalım. Yani sadece Teknolojiliği aynı zamanda Flow Control açısından da bir sonraki turda kaç bilimlik diyelim isterseniz bilgi kabul edilebilir ve aktarılır.
+
+232
+01:04:19,012 --> 01:04:22,380
+Sonradaki slide da geçeyim mi? Tamam.
+
+233
+01:04:22,804 --> 01:04:36,804
+multiplexing var mı? Evet. Zaten multiplexing'in aslında bir kısmını konuştuk. Yani burada multiplexing, transport katmanında iki şey için gerekli. Birini daha önce konuştuk. Ne için konuştuk? Şimdi network katmanına gelen bilginin...
+
+234
+01:04:36,884 --> 01:04:51,884
+Kime aktarılacağı yapısı? Hani bir port mekanizması var ve o port mekanizması üzerinden aslında bu bilgi kime gidecek? Burada bir multiplexing yapılması lazım diye konuşmuştuk. Gökhan Hoca anlatmış da hatırlarsınız gençler.
+
+235
+01:04:52,500 --> 01:04:59,900
+Bir tanesi bu. Böyle bir multiplexing'e ihtiyaç var. Bir diğer multiplexing ihtiyacı da şu.
+
+236
+01:04:59,900 --> 01:05:05,699
+Şey ile sınırlı değiliz biliyorsunuz. Bir host'un bir tane network adresi olur ile sınırlı değiliz.
+
+237
+01:05:05,699 --> 01:05:11,900
+Bir host'un bir tane network kartı olur, interface olur ile sınırlı değiliz. Dolayısıyla ne yapabiliriz?
+
+238
+01:05:19,347 --> 01:05:34,748
+Eğer bir hostun birden fazla interfeyesi varsa, bağlantılarımızı bu interfeyeslerin hepsini ya da birkaçını aynı anda destekleyecek şekilde kullanabiliriz. Biz bunu mesela şeyde çokça yapıyoruz, yapıyorduk.
+
+239
+01:05:34,896 --> 01:05:51,019
+kullanıyorduk Gökhan Hocam ile beraber hem bizim bölümün sistem odasında hem bilgi işlem tarafında ne yapıyoruz? Aslında her bağlantıyı crosslayarak kullanıyoruz. Yani bir switch üzerinden
+
+240
+01:05:51,059 --> 01:05:56,559
+Bir cihazın iki tane interfejsi varsa biri bir switch üzerinden, diğeri diğer switch üzerinden geçiyor.
+
+241
+01:05:56,559 --> 01:06:02,559
+Onlar daha farklı şekilde bir daha çaprazlanıyor ve gidiyor. Bu ne için? Failover için.
+
+242
+01:06:02,559 --> 01:06:06,559
+Hani birinin başına bir şey geldiği zaman diğerinden devam edebilsin diye.
+
+243
+01:06:06,559 --> 01:06:14,059
+Ama orada öyle bir kapasite ve hattınız varsa illa felaket olunca o diğerine geçsin diye kullanmıyorsunuz bunu.
+
+244
+01:06:14,059 --> 01:06:19,059
+Ne yapıyorsunuz? İkisi birden çalışabilir durumdayken kapasiteyi iki katına çıkartabilmek için.
+
+245
+01:06:19,059 --> 01:06:26,059
+İçin kullanıyorsunuz? Yani böyle bir multiplexing ihtiyacı da var. Buna inverse multiplexing demiş burada arkadaş.
+
+246
+01:06:26,059 --> 01:06:32,556
+Ama işte inverse multiplexing'i düzgün yapabilmek için aslında...
+
+247
+01:06:39,699 --> 01:06:52,556
+Yani e-bag'i ederek, bir araya getirerek kullanmak gerekiyor. Sonuçta yine şu da var. Birinci öncelik, hangi link üzerinden gönder...
+
+248
+01:06:56,916 --> 01:07:00,316
+gelemiyorsa bir üzerinden gelecek.
+
+249
+01:07:00,316 --> 01:07:02,716
+İşte onun da gönderilmesi gerekiyor.
+
+250
+01:07:02,716 --> 01:07:05,516
+Orada da daha alt katman da
+
+251
+01:07:10,771 --> 01:07:15,628
+O anki konuştuğumuz şeylerin içerisinde değil, o network'teyim.
+
+252
+01:07:18,739 --> 01:07:25,707
+OSI, TCP Link Aggregation Control Protocol, MAC parçasıdır, Medium Access Control parçasıdır. O da Ethernet.
+
+253
+01:07:34,003 --> 01:07:42,380
+Yukarıdan aşağıya doğru da bir universe mountaintik yapabilmem lazım. Çünkü bir OSP'un birden fazla network adresi olabilir.
+
+254
+01:07:45,715 --> 01:08:01,715
+Devam mı? Devam. Yani. Şimdi, crash, şey konuşuyor olmamız abi. Şimdi normal şartlarda zaten biz ne yapıyoruz? Birkaç tane crash durumumuz var aslında. Ayrı ayrı bakmak lazım.
+
+255
+01:08:07,539 --> 01:08:31,539
+Aslında transport entitileri, hani ISP içerisindeki cihazlar vesaireler hep router ve üçünü seviyor. Orada olmayı daha çok seviyorlar. Çünkü geri kalan sorumluluklardan kurtuluyorlar. Dolayısıyla hostlarda transport entitiler var. Dolayısıyla network tarafında kaybolan her paket için ne yapıyoruz? Retransmit ediyoruz. Dolayısıyla sizin routerlarınızdan bir çökse, crash olsa...
+
+256
+01:08:32,467 --> 01:09:00,147
+reboot etse vesaire etse bile bunu recover edebiliyorsunuz. Burada bir sıkıntı yok. Bu zaten temiz. Ama bu crash, bu felaket anı hostlardan birinde olursa ne yapacaksınız? Yani burada asıl konuştuğumuz şey bu. Burada zaten göstermeye çalıştığı şey de o arkadaşın. Normal şartlarda şunu düşünün.
+
+257
+01:09:02,484 --> 01:09:12,984
+Farz misal bir file serverınız var. Stop and wait bir protokoll kullanıyor. Gelen herhangi bir segmenti de ne yapıyorsunuz?
+
+258
+01:09:15,804 --> 01:09:23,484
+Üst katmana veriyorsunuz ya da yazıyorsunuz, devam ediyorsunuz. Karşı tarafa da acknowledge veriyorsunuz. Tamam ben bu paketi aldım diye.
+
+259
+01:09:24,659 --> 01:09:51,659
+Şimdi buradaki sıkıntı şu. Siz şeyi aldınız, nedir o? Paketi aldınız ve crash ettiniz. Siz paketi aldınız, yazdınız, crash ettiniz. Siz paketi aldınız, yazdınız, acknowledge gönderdiniz, crash ettiniz. Bunlar her biri ayrı ayrı olabilecek senaryolar. Her birinin sonucunda da ne sıkıntısı var?
+
+260
+01:09:51,855 --> 01:10:12,855
+farklı problemler oluşma ihtimali var. Misal, diyebilirsiniz ki, diyelim ki ben paketi aldım, aldığım her paket için önce Knowledge gönderiyorum, sonra kenara yazıyorum. Ben paketi aldım, Knowledge'ı gönderdim, crash ettim. Burada olacak olan sıkıntı ne? Ben tekrar...
+
+261
+01:10:13,203 --> 01:10:25,603
+geri ayağa kalktığım zaman karşı taraf ne sanıyor? Benim son gönderdiğim paketin alındığını, kenara yazıldığını ve her şeyin normal olduğunu sanıyor. Ama olan ne? Ben paketi aldım, Ecnoology'u gönderdim ama yazamadım. Uçtu gitti aslında.
+
+262
+01:10:25,603 --> 01:10:38,404
+Tamam, bunu hemen çözelim. Nasıl çözelim? Paketi al, yaz, ondan sonra Ecnoology gönder. Peki, paketi aldım, yazdım.
+
+263
+01:10:40,372 --> 01:10:42,372
+Crash oldu.
+
+264
+01:10:43,372 --> 01:10:45,372
+Ecology'ı göndermedim.
+
+265
+01:10:45,372 --> 01:10:51,372
+Tekrar geri geldiğim zaman karşı taraf Ecology göndermediğim için paketi tekrar gönderecek.
+
+266
+01:10:51,372 --> 01:10:54,372
+Yani duplicate olacağım bu sefer.
+
+267
+01:10:55,372 --> 01:11:01,372
+Dolayısıyla bu aslında Gökhan Hoca'nın dersinin en başında söylediği şeye geliyor.
+
+268
+01:11:01,372 --> 01:11:05,372
+Bu katmanla ilgili problemi bu katmanda çözemezsiniz.
+
+269
+01:11:06,003 --> 01:11:15,692
+Bunu nereye bırakıyor olmanız lazım? Bir üst katmana bırakıyor olmanız lazım. Burada da hani aslında tabloda gördüğünüz her şey
+
+270
+01:11:16,404 --> 01:11:25,804
+Bu söylediğim sekansın olma şeyine göre, önce ekne oluşumu verdin, önce yazdın mı durumuna göre, olabilecek durumları gösteriyor.
+
+271
+01:11:25,804 --> 01:11:35,404
+Ve hiçbiri de çok güzel sonuçla bitmiyor gördüğünüz üzere. Ya bir paket lost ediyorsunuz, ya duplicate ediyorsunuz, ya başka bir şey yapıyorsunuz.
+
+272
+01:11:35,404 --> 01:11:38,284
+İlla bir...
+
+273
+01:11:46,163 --> 01:12:02,163
+O yüzden de hani artık şey genel ifade şu, eğer en inci katmanda bir probleminiz ya da crash'iniz var ise bunu ancak en artı birinci katmanda çözersiniz. Şey bu, yaklaşım bu.
+
+274
+01:12:02,163 --> 01:12:09,163
+Burada da aslında üç aşağı beş yukarı benim söyleyeceklerim bu var mıydı sizin hocam ekleyeceğiniz bir şey?
+
+275
+01:12:09,163 --> 01:12:12,876
+Yok yok bu kadar hani arkadaşlar şeyi merak edelim.
+
+276
+01:12:26,676 --> 01:12:34,604
+Bu bir para çekme transakşını. Sending cost, adam parasını...
+
+277
+01:12:46,547 --> 01:12:59,532
+500 lira vermesine rağmen, on ve eksiltere switch bankından dolayı, et altımızdan 1000 lira düşüyor. Yani birtakım transakçonlar, arka arkaya, en defa yapılsa...
+
+278
+01:13:03,636 --> 01:13:08,204
+Sıkıntıya sebep olmazlar. Konsistensiye açısından bir sıkıntıya sebep olmaz.
+
+279
+01:13:11,667 --> 01:13:13,987
+İnderli Potent Transaction deniyor.
+
+280
+01:13:13,987 --> 01:13:18,227
+Ama bazı transactionler, işte o az önce söylediğim ara çekme olayı,
+
+281
+01:13:18,227 --> 01:13:19,851
+aynısını en de...
+
+282
+01:13:23,572 --> 01:13:27,212
+ve kötü sonuçlara endelersiniz. Elimizde 5 şıkkı da var.
+
+283
+01:13:31,507 --> 01:13:47,819
+bir şey değil. Lost da kabul edilecek bir şey değil. Ne kadar güzel. Hesabımızdan 500 lira çektiniz ama bu arka taraftaki şeye yansımadı. Hala daha hesabımızda 500 lira görünüyor. Yani bakın bir senaryosunuzda avantajlıyken...
+
+284
+01:13:51,380 --> 01:13:52,172
+Onun yüzden bunları...
+
+285
+01:14:13,619 --> 01:14:15,619
+Bir sonrakine geçelim.
+
+286
+01:14:15,619 --> 01:14:17,619
+Aynen, aynen.
+
+287
+01:16:29,587 --> 01:16:32,987
+Bir dakika geçmedi ben de söyledim. Şimdi geçtim. Evet.
+
+288
+01:16:32,987 --> 01:16:35,947
+Şimdi, desire, desire, ben sık, alır.
+
+289
+01:16:39,380 --> 01:16:43,243
+Ön gördüğünüz gibi uygulamalar...
+
+290
+01:20:00,000 --> 01:20:02,500
+O,
+
+291
+01:20:05,363 --> 01:20:07,043
+Sövbe de çizilmiş.
+
+292
+01:20:07,583 --> 01:20:07,884
+Yani
+
+293
+01:20:07,884 --> 01:20:09,623
+Condition Collapse
+
+294
+01:20:09,623 --> 01:20:11,143
+veya Dizel İstor.
+
+295
+01:20:16,399 --> 01:25:27,980
+O,
+
+296
+01:25:08,020 --> 01:25:28,020
+Max, Min, Fairness aslında şey gibi söyleyebilir miyiz hocam bu durumda? Herhangi bir flow'un, o flow'a verilen kapasitenin, diğer flow'ların bandwidth kullanımını etkilemeyecek şekilde arttırılabilmesi.
+
+297
+01:25:29,395 --> 01:25:36,895
+Ben birinin kapasitesini arttırırken diğerlerinin kapasitesini indirmek zorunda kalıyorsam,
+
+298
+01:25:36,895 --> 01:25:42,796
+Max Min Fairness da değilim. Yani fair davranamıyorum. O yüzden de aslında buradaki yapıyı,
+
+299
+01:25:42,796 --> 01:25:50,195
+anlattığınız yapıyı oluştururken de, ya network'in geneli hakkında bir fikir sahibi olmak gerekiyor.
+
+300
+01:25:50,195 --> 01:25:57,195
+Yani bütün network'te hangi flow'lar var, kim nereden geçiyor vesaireye bakıp böyle bir planlamak yapmak lazım ki bu
+
+301
+01:25:57,395 --> 01:26:09,395
+Çok olası bir durum değil. Ya da alternatif olarak bununla ilgili varsayımsal bir yol izlemek ve her bir flow'un böyle kapasitesini adım adım arttırmak,
+
+302
+01:26:09,395 --> 01:26:20,395
+belli bir kapasiteye geldiği ve arttırılması durumda diğer flow'ların etkileneceği düşündüğümüz yerde onu durdurmak, kalan kapasiteyi diğer flow'lar arasında paylaştırmak.
+
+303
+01:26:22,003 --> 01:26:29,003
+Kesinlikle, kesinlikle, aynen öyle. Kesinlikle o şekilde yapmamız lazım. Tamam, o zaman...
+
+304
+01:26:29,003 --> 01:26:32,003
+Tamam, o zaman...
+
+305
+01:26:32,003 --> 01:26:33,452
+Bir süre, buyurun.
+
+306
+01:26:48,372 --> 01:26:50,932
+değil. Yani böyle bir
+
+307
+01:26:50,932 --> 01:26:52,252
+şey getiremeyiz.
+
+308
+01:26:52,692 --> 01:26:54,492
+Ancak ne vardı? Mesela
+
+309
+01:26:54,492 --> 01:26:55,132
+diyorduk ki
+
+310
+01:27:15,764 --> 01:27:27,764
+Sadece bir telefon görüşmesiyle, sadece bir sitik bir dersi, bir ben kitleyeceğim. Muhteşem.
+
+311
+01:27:27,764 --> 01:27:35,764
+Atılıyorsunuz, bunu da hani yine Quality Observer Parameterinin içerisinde kullanmıştık, network katmanında bundan bahsetmiştik.
+
+312
+01:27:35,764 --> 01:27:39,764
+Ama işte video on binat yapıyorum.
+
+313
+01:27:40,275 --> 01:27:53,996
+Video call yapıyorum, audio call yapıyorum, real time video konferans yapıyorum. Sahneler değişiyor, konuşan sayısı değişiyor, sessizlikler geliyor, görüntüler geliyor.
+
+314
+01:27:59,123 --> 01:28:05,739
+Uygulamanın özelliği, ne oluyor? Brand Friday'ler falan, bir saat önce...
+
+315
+01:28:09,332 --> 01:28:17,900
+e-commerce sitesi bir saat sonra çığlınca trafik almaya başlıyor veya birçok sonucu açıklanıyor, sınav sonucu açıklanıyor.
+
+316
+01:28:29,427 --> 01:28:30,148
+Gel nandı.
+
+317
+01:28:59,380 --> 01:29:26,380
+devre dersimizden örnek vereceğim. Bir impuls uygularsam, yani genişliği sıfıra yakın ama yüksekliği sonsuz olan bir şey uygularsam, ondan sonra da bunun frekanst spektrumunu açarsam, içinde bir sürü frekanstan çok yüksek değerli birleşen görülür. Çünkü neden? Mevcut dengede olan bir sistemin dengesini bir anda çok...
+
+318
+01:29:27,060 --> 01:29:34,347
+O, ABD'nin bir şekilde bozmuşumdur ve onu oturup da düzgün bir noktaya gelmesin, durunca bir süre olacak. İşte burada aynı durum.
+
+319
+01:29:56,724 --> 01:30:15,724
+daha önce oluşmasına sebep olur. Şimdi bakın, tek flow var. Tek flow, %100 kullanıyor. Zaten %100'in üstünü düşünemiyoruz ama anlık olarak aslında orayı zorluyoruz. Zorladığınız zaman arkadaşlar konulacak şeyler.
+
+320
+01:30:24,340 --> 01:30:51,083
+Sistem bunu algılıyor. Bir önceki fenizmizi de düşünün, burada bir farklı şey var. Orada şeyden ferah etmeli. Çünkü zaten başlangıçta ne olacağını konuşmuştuk. Bu bir bölüm üç demiştik. Buradaki şöyle bir şey yok. Hat boş bir tamamını kullanıyordu. Flow 1 azalırken Flow 2 artıyor ve bunlar nerede birleşiyorlar? 0-5-10.
+
+321
+01:30:51,891 --> 01:30:59,572
+Çünkü ne Flow 1 için ne de Flow 2 için şeyler beğenmemiş. Bunların maksimum şudur.
+
+322
+01:31:14,355 --> 01:31:19,979
+3. flow başlıyor. Bakın, ikisi bir daha 3. flow başlıyor.
+
+323
+01:31:32,564 --> 01:31:59,564
+ve Flow 2, 9'da duruyor. Flow 3'te bir artış yok çünkü Flow 3 zaten kendini o kadar da sınırlamış. Yani daha ekstra bir ihtiyacı söz konusu olmamış. Ekstra bir belki ihtiyacı. Bu durumda Flow 1, Flow 2'ye uygun olarak...
+
+324
+01:32:08,051 --> 01:32:10,051
+O, ekip, uluvutucu, lukardaki...
+
+325
+01:32:13,460 --> 01:32:13,559
+O zaman, OSI ve
+
+326
+01:32:13,559 --> 01:32:16,460
+OSI ve
+
+327
+01:32:32,180 --> 01:32:37,180
+bizimle beraber ayak uyduracak şekilde yönetmemiz lazım. Bir diğer durum.
+
+328
+01:32:42,323 --> 01:32:45,903
+Devam hocam. Yani zaten senden bir şey var mı?
+
+329
+01:32:45,903 --> 01:32:47,443
+Yok yok yok.
+
+330
+01:32:47,963 --> 01:32:49,483
+Tamam.
+
+331
+01:32:51,023 --> 01:32:51,804
+Şimdi.
+
+332
+01:32:58,195 --> 01:33:07,876
+Yabancılık yok. Bakın yine ne yukarıda yumuşluk var, yumuşak yalnızlığı damlıyor, bir bunyi var. Ondan sonra belirli bir genişlik.
+
+333
+01:33:11,667 --> 01:33:18,667
+bir blok yapısını, cestini, konum, cestini, topolojiyi, şeyleri gibi alt tarafta da bir resimler var.
+
+334
+01:33:18,667 --> 01:33:19,275
+Şimdi...
+
+335
+01:33:53,524 --> 01:34:09,524
+hızlı bir gönderici varsa, ancak bu hızlı göndericinin karşı taraftaki alıcısı düşük kapasitedirse, yön kontrol yapmamız lazım. Bakın burada bu pembe ile çok net bir şekilde yazılır.
+
+336
+01:34:09,524 --> 01:34:10,636
+İkinci sene...
+
+337
+01:34:40,148 --> 01:34:57,148
+Şimdi mi söylüyorum? Tamam tamam tamam tamam. Şeyi söyleyecektim ama sonraki slide'ları şimdi ezbere de hatırlayamadım. Önce mi olur, erken mi olur, geç mi olur bilemedim ama şimdi normal şartlarda ne yapıyor olmamız lazım?
+
+338
+01:34:57,152 --> 01:35:12,391
+bir şekilde bu tıkanıklık hani networkten ya da alıcıdan daha doğrusu tıkanıklık demeyeyim tıkanıklık network tarafında flow kontrol ihtiyacı da receiver tarafında olan şeyler herhangi ikisinin de sonucunda bizim ne yapıyor olmamız lazım?
+
+339
+01:35:12,391 --> 01:35:17,992
+Bir şekilde gönderim hızını ayarlıyor olmamız lazım. Gönderim hızını nasıl ayarlayabiliriz?
+
+340
+01:35:19,471 --> 01:35:32,471
+explicit olarak ayarlayabiliriz, bir de implicit olarak ayarlayabiliriz. Yani haricen doğrudan adama gidip yavaş diyebilirsiniz göndericiye. Ya da...
+
+341
+01:35:32,471 --> 01:35:33,228
+Aynen.
+
+342
+01:35:33,332 --> 01:35:54,832
+Adamın bunu kendi kendine ölçmesini bekleyebilirsiniz. Ne yapabilir? Bilginin gelip gitme süresine bakar, round trip time'a bakar. Oradaki süre artıyorsa, network'ta bir sıkıntı var, bir şey var. O zaman ben yavaşlayayım diyebilir. Bu süre düşüyorsa biraz hızlanayım diyebilir. Kendi kendine çıkarımda bulunabilir.
+
+343
+01:35:55,252 --> 01:36:12,492
+Bu işi yaparken benzer şekilde doğrudan yavaş dediğiniz zaman sadece yavaş demeyip daha detaylı bir şey söyleyebilirsiniz. Mesela şu hıza düş ya da bu hıza çık gibi bir şeyler söyleyebilirsiniz. O zaman da precise ya da imprecise yapmış olursunuz bunu.
+
+344
+01:36:12,492 --> 01:36:17,252
+Aynen. Ama bizim burada, bizim burada, pardon.
+
+345
+01:36:17,252 --> 01:36:18,572
+Sen de söylediğim gibi.
+
+346
+01:36:29,203 --> 01:36:51,203
+Evet. [öğrenci], geçelim diğer slide'a hocam. Yani o explicit, implicit ve hani şey nedir o? Precise, imprecise özellikle söylemek istedim de hani, bilgisi sonrası bilemediğim için bir an slide biri hatırlayamadım. O yüzden orada... Yok zaten oraya geleceğiz.
+
+347
+01:36:52,051 --> 01:36:59,331
+TCP'ye yapılma şeyini falan dırken oraya doğru yaklaşacağız. Yani yine işin teorik kısmını konuşuyoruz.
+
+348
+01:36:59,331 --> 01:37:04,611
+Ama pratik gerçek hayat uygulamasını TCP, IP içerisinden geliyor.
+
+349
+01:37:04,611 --> 01:37:12,771
+Aynen. Bu slide'da çok bir şey yok aslında. Zaten hani asıl kullanacağımız, çözeceğimiz şeyin congestion olduğunu da söyledik.
+
+350
+01:37:12,771 --> 01:37:14,771
+Hani bunu yoğunlaşacağımız da söyledik.
+
+351
+01:37:14,771 --> 01:37:18,667
+Evet. Yani ama hani şey olsun...
+
+352
+01:37:32,724 --> 01:37:48,011
+Receiver aslında burada şey değil, birinci slide'da bir, önceki slide'da Receiver sıkıntıydı, kapasitesi yeterli değildi. Net slide'da her anlı bir şey yoktu. O zaman bunu flow kontrolüde çözebiliyorduk. Ama burada Receiver'ın kapasitesi falan yönünde hiçbir sıkıntı yok.
+
+353
+01:37:52,819 --> 01:38:07,692
+Bu koncret için kontrol uygulanması lazım.
+
+354
+01:38:11,060 --> 01:38:22,412
+çok benzermiş gibi görünüyorlar ama bu iki slide hangi durumda flow control, hangi durumda congestion control yapılması gerektiğini çok temsil ediyor.
+
+355
+01:38:29,140 --> 01:38:32,140
+Senin söylediğin şey buraya gelin olurdu ya.
+
+356
+01:38:32,140 --> 01:38:33,140
+Evet, evet, evet.
+
+357
+01:38:48,307 --> 01:39:11,307
+Yani şimdi bu şeyi söylemiştik hatırlarsanız arkadaşlar. Ne yapabilirsiniz? Özellikle birine yavaşlaması ya da hızlanması gerektiğini söyleyebilirsiniz. Yani kendi çıkarım yapması yerine özellikle söyleyebilirsiniz. Bunun için ayrı bir şey gönderiyor olabilirsiniz. Explicit diyoruz buna.
+
+358
+01:39:12,960 --> 01:39:28,960
+Eğer bunu explicit yapmıyorsanız, implicit yapıyorsanız, yani kendi kendine bir çıkarım yapmasını bekliyorsanız, misal round trip time üzerinden bir örnek vermiştir. O şekilde yapmasını, göndericinin kendi kendine çıkartmasını bekliyorabilirsiniz.
+
+359
+01:39:28,960 --> 01:39:38,960
+Explicit takılırken, yani özellikle sen yavaş gönder diye karşı tarafa söylüyorken,
+
+360
+01:39:39,475 --> 01:39:47,475
+Bunu precise ya da imprecise olarak söyleyebilirsiniz. Yani sadece yavaşlamasını söylemek precise olmaz.
+
+361
+01:39:47,475 --> 01:39:58,475
+Ama işte 2 Mbps'a indir hızını demek bunu precise yapar. Baktığımız zaman explicit congestion protokoller, XCP diye geçiyor.
+
+362
+01:40:07,828 --> 01:40:21,828
+gönderici tarafa ne yapması gerektiğini birebir söylüyor. ECN, o da aslında ilginç bir şekilde aynı kısaltmaya sahip.
+
+363
+01:40:21,828 --> 01:40:32,828
+Explicit Congestion Notification bu sefer sadece. Protokol değil, Notification diye geçiyor. Bunu TCP ile beraber kullanıyorsunuz. Onda aslında routerlar
+
+364
+01:40:34,195 --> 01:41:01,036
+şey yapıyor, paketleri işaretliyor ve böylece sender'a yavaşlaması gerektiğini söylüyor. Ama precise bir şekilde mi söylüyor? Hayır, sadece yavaşlaması gerektiğini söylüyor. Explicit olarak, yavaşlayacağını set ettiği flag ile söylüyor ama bir miktar belirtmiyor. Dolayısıyla precise değil o yüzden. Fast TCP baktığınız zaman,
+
+365
+01:41:01,076 --> 01:41:17,076
+Implicit bir dizayn çünkü, demin verdiğim örnek, round trip delayleri ölçüyor ve bunu hani condresini engellemek için kullanıyor. Şey tarafında,
+
+366
+01:41:25,460 --> 01:41:43,260
+şeyi kullanıyordu yanlış hatırlamıyorsam, şimdi bir an, Drop Tail ve Red üzerinden gidiyor. Dolayısıyla ne explicit ne precise aslında baktığımız zaman. Benzer şekilde TCP'nin kendisine de baktığımız zaman,
+
+367
+01:41:43,380 --> 01:41:58,579
+Aslında bunu daha önce de konuşmuştuk. IP katmanında konuşurken de söylemiştik. Doğrudan sadece paket loss'a bakıyor. Paket loss için ayrıca hani bir daha bu paket kayboldu vesaire demenin bir esprisi olmadığını da konuşmuştuk hatırlarsanız.
+
+368
+01:41:58,868 --> 01:42:15,667
+alt katmanı konuşurken neden? Aslında yangına hani şeyle gitmek gibi oluyor, üzerine biraz daha mazot dökmek, benzin dökmek gibi oluyor. Siz paketler kaybolurken network'e ekstra paket veriyorsunuz bir daha söyleyeyim diye. O yüzden TCP'de mesela bunu kullanmıyor.
+
+369
+01:43:16,916 --> 01:43:20,916
+Şimdi burada, buraya burada mı girelim?
+
+370
+01:43:29,971 --> 01:43:37,971
+Zaten bakayım, bir slide, iki slide. Evet, iki slide var. Yani bunu şey yaparken bırakmayalım bence.
+
+371
+01:43:37,971 --> 01:43:44,971
+Tamam peki. Şimdi burada şöyle yapmamız lazım. Hani az önce konuştuklar arkadaşlar, bir tane flow...
+
+372
+01:43:48,692 --> 01:43:53,771
+Sonra bir süre sonra diğeri geldi ve bunlar ortada 05 ile birleştiler.
+
+373
+01:44:00,948 --> 01:44:01,948
+İzmiromu, sir.
+
+374
+01:44:11,155 --> 01:44:16,652
+İkinci, on yüzünüze kadar. Bunlar tek başlarına iken, tek başlarına iken.
+
+375
+01:44:31,859 --> 01:44:32,811
+VLAN.
+
+376
+01:44:36,724 --> 01:44:42,724
+İkisinin kesiştiği noktayı gördüğümüzde burası ne oluyor? Okyumun oktu oluyor.
+
+377
+01:44:42,724 --> 01:44:44,724
+Orada iki noktalar şeyde...
+
+378
+01:44:52,083 --> 01:44:54,484
+İkisi 05 çoğutasında birleşti.
+
+379
+01:45:16,083 --> 01:45:16,811
+Ve
+
+380
+01:45:38,387 --> 01:45:57,355
+Ancak, famous line'e göre, multiplicative increase veya decuribili yapabilir. O zaman bakın, yani geri paralel giderken, geri dediği açıyla, yani o famous line ile arttırma hayatta eksilme, sıfır noktasına göre ikinci bir tane daha...
+
+381
+01:46:01,011 --> 01:46:02,859
+ve
+
+382
+01:46:09,779 --> 01:46:10,699
+Ayrıca eksik.
+
+383
+01:46:14,260 --> 01:46:15,180
+VLAN, PIC, POO!
+
+384
+01:46:19,636 --> 01:46:26,115
+yapmak istiyorsam, tabii ki hani düşündüğünüz zaman nasıl yapmam lazım? [öğrenci]'un katif olarak diler lazım.
+
+385
+01:46:29,332 --> 01:46:29,432
+Öncelikle, OSI ve
+
+386
+01:46:29,432 --> 01:46:34,432
+OSI ve
+
+387
+01:46:38,036 --> 01:46:46,235
+olması gereken yere yakın için sonra da ince ayar.
+
+388
+01:46:51,604 --> 01:46:54,604
+Bu durumda, Cihan bir sonraki sınavına geçelim.
+
+389
+01:46:54,604 --> 01:46:56,460
+Bu durumda,
+
+390
+01:47:07,507 --> 01:47:09,747
+Ve bu, bu, bu, bu, kontrol.
+
+391
+01:47:13,716 --> 01:47:27,468
+ETHROP için geçerli değil. Aynı zamanda kontrol, proses kontrolleri, bir değeri, bir motorun dönüş hızını veya bir şeyin açısını böyle olabildiğince hızlı ama aynı...
+
+392
+01:47:31,764 --> 01:47:34,764
+Burada nefes olarak için uygulamış.
+
+393
+01:47:39,796 --> 01:47:42,615
+Evet, yani mümkün olduğu kadar hızlı bir şekilde.
+
+394
+01:47:42,615 --> 01:47:45,936
+Aslında burada bir güzelliği daha var. Pardon hocam böldüm ama.
+
+395
+01:47:45,936 --> 01:47:46,456
+Tabii.
+
+396
+01:47:46,456 --> 01:47:50,296
+Şimdi, additive increase yapıyorsunuz.
+
+397
+01:47:50,796 --> 01:47:52,596
+Decrease'i çok hızlı yapıyorsunuz.
+
+398
+01:47:52,596 --> 01:48:03,596
+Böylece aslında increase ederken bir anda bunu editif değil de multiplicative yaparsanız, çarpımsal yaparsanız ne olacak?
+
+399
+01:48:03,856 --> 01:48:05,656
+Bir anda congestion oluşturabilirsiniz.
+
+400
+01:48:06,355 --> 01:48:18,355
+Ama editif şekilde yaparsanız daha kontrollü gitme şansınız var. Yani aslında bir nevi bir taraftan Condition Avoidance gibi bir şey de yapıyorsunuz hareketinizi yaparken.
+
+401
+01:48:18,355 --> 01:48:19,355
+Aynen.
+
+402
+01:48:43,699 --> 01:48:45,699
+Bu konuda bir sual kılıklık bir kriz.
+
+403
+01:48:45,699 --> 01:48:48,699
+Ve bunu da ne üzerinden ölçüyor arkadaşlar?
+
+404
+01:48:48,699 --> 01:48:49,699
+Az önceki anlattım.
+
+405
+01:48:49,699 --> 01:48:52,699
+Söyle bir ne üzerinden tekik diye bu işi gerçekleştiriyor.
+
+406
+01:48:52,699 --> 01:48:54,699
+Kalketlok üzerinden.
+
+407
+01:48:54,699 --> 01:48:55,699
+Şimdi.
+
+408
+01:48:58,963 --> 01:49:21,963
+Ruslan'la böyle bir konuşuyoruz, gerçek veya bir tanıda tarzını değiliz ya, TCP, IP'yi daha yakından incelerken aslında buradaki esas ana protokollerine de işte ne gibi bir LEMO'ydu yanlış hatırlamıyorsam, diğerİ TAHV'ydu. Böyle Amerika'daki çönderin falan takım yerlerinin, mektilerinin, isimleri verilmiş. Öyle şeyleri var.
+
+409
+01:49:30,739 --> 01:49:37,139
+Önümüzdeki ders göreceğiz galiba. Oranın slide vereceğiz.
+
+410
+01:49:37,139 --> 01:49:40,340
+Yetişiriz herhalde bir sonraki dersi ama.
+
+411
+01:49:40,340 --> 01:49:45,139
+Evet, şimdi sonraki slide, VLAN issues, bunu geçebiliriz.
+
+412
+01:49:45,139 --> 01:49:50,739
+Öyle bir şeyimiz yok. UDP'ye geldik, burada duruyoruz o zaman.
+
+413
+01:49:50,739 --> 01:49:54,739
+Evet, bugün duruyoruz. Zaten çocuklarda, bendekiler pert oldu galiba.
+
+414
+01:49:54,739 --> 01:49:57,139
+40'tan 30'u indi katılımcı sayısı.
+
+415
+01:49:59,220 --> 01:50:02,220
+Onlar da sıcak yiyorsa şu an hava...
+
+416
+01:50:03,220 --> 01:50:04,220
+Doğrudur.
+
+417
+01:50:04,220 --> 01:50:10,220
+Evet, arkadaşlar hepinizde iyi haftalar. Haftaya görüşmek üzere.
+
+418
+01:50:10,220 --> 01:50:15,220
+Haftaya görüşmek üzere. Bir sonraki haftada da sınavınız olacak. Unutmayın lütfen.
+
+419
+01:50:15,220 --> 01:50:16,220
+Evet.
+
+420
+01:50:16,220 --> 01:50:17,220
+Hazırlanmaya başlayın.
+
+421
+01:50:17,220 --> 01:50:20,220
+Evet, başlarsınız. İyi günler.
+
+422
+01:50:20,220 --> 01:50:21,220
+Teşekkürler.
