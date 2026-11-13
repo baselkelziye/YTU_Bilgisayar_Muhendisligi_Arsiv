@@ -2974,6 +2974,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AÖ](#-dr-ayşe-öcal)
     - [ZCT](#-dr-ziya-cihan-tayşi)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik)
 
 
@@ -2997,6 +2998,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [HHB](#-prof-dr-hasan-hüseyin-balık)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi)
 
 
@@ -4137,6 +4140,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
+  - 📖 [Araştırma Yöntemleri ve Bilimsel Etik](#-araştırma-yöntemleri-ve-bilimsel-etik)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -5298,6 +5302,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 [Ağ Teknolojileri](#-ağ-teknolojileri)
   - 📖 [Bilişim Sistemleri Güvenliği](#-bilişim-sistemleri-güvenliği)
+  - 📖 [Bilgisayar Sistemleri ve Ağ Güvenliği](#-bilgisayar-sistemleri-ve-ağ-güvenliği)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
