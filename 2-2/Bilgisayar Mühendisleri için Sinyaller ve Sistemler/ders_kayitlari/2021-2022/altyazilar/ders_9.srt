@@ -1,0 +1,2559 @@
+1
+00:10:24,052 --> 00:10:26,052
+Merhaba arkadaşlar.
+
+2
+00:10:26,052 --> 00:10:28,052
+Ses geliyor mu?
+
+3
+00:10:36,340 --> 00:10:39,139
+İkinci gruptan bazı arkadaşlar var.
+
+4
+00:10:39,639 --> 00:10:42,420
+Emircan, kendi grubunuza paylaşır mısın buranın linkini?
+
+5
+00:10:42,500 --> 00:10:48,100
+Ben Google Plastroom'dan paylaştım ama şu an kimseye mail gönderemiyorum.
+
+6
+00:10:48,519 --> 00:10:49,779
+Sistemler hata veriyor.
+
+7
+00:10:52,180 --> 00:10:53,600
+Ben hemen paylaşırmayacağım şimdi.
+
+8
+00:10:53,600 --> 00:10:54,259
+Tamam.
+
+9
+00:11:00,211 --> 00:11:24,532
+Şimdi, geçen hafta Fourier Transform konusunu neredeyse tamamladık. Bir tane soru çözeceğim. Ondan sonra sampling konusu var, ona bakacağız. Ödevde kullanacağımız bir konu var, biraz da ondan çalışacağız. Dersimizi tamamlayacağız arkadaşlar. İki seansta bitiririz. Biz diğer gruptan biraz önce olduğumuz için.
+
+10
+00:11:26,259 --> 00:11:28,259
+Rahat biter diye düşünüyorum.
+
+11
+00:11:33,172 --> 00:11:36,172
+Fourier Transform ne için kullanılıyordu?
+
+12
+00:11:36,172 --> 00:11:41,172
+Periyodik olmayan işaretlerin frekans spektrum analizini yapmak için kullanılıyordu.
+
+13
+00:11:41,172 --> 00:11:46,172
+Fourier Transform dönüşüm çiftini unutmamamız lazım.
+
+14
+00:11:51,860 --> 00:11:59,820
+Herhangi bir XT işaretinden XF işareti veya XOmega işaretini elde etmek için ne yapıyoruz?
+
+15
+00:12:00,039 --> 00:12:10,259
+X'i sonsuzdan artı sonsuza XT çarpı E1'i XJ Omega T DT dönüşümünü uyguluyoruz.
+
+16
+00:12:11,480 --> 00:12:16,060
+Bu bize frekans düzenine geçişi veriyordu. Özelliklerini falan konuşmuştuk.
+
+17
+00:12:16,947 --> 00:12:20,467
+Kısaca bir hatırlayalım, Bağlı Şidra'yı anladın, sayfaya ne yazmışım?
+
+18
+00:12:23,668 --> 00:12:25,932
+Bu da bu
+
+19
+00:12:39,379 --> 00:12:48,379
+Tabloyu detaylı olarak sınıfta hangileri bizim için önemli, hangileri değil anlattık, burada da anlattık.
+
+20
+00:12:48,379 --> 00:12:58,379
+Zamanla türev alma, zamanda integral alma, evolüsyon. En son bunları konuşmuştuk.
+
+21
+00:13:02,035 --> 00:13:03,335
+Şöyle bir işe yapalım.
+
+22
+00:13:07,796 --> 00:13:14,916
+Evet, mesela konvolüsyon bizim zaman düzlemindeki işlemimiz neydi? Şöyle bir özellikti.
+
+23
+00:13:18,515 --> 00:13:26,195
+Ters, bunu frekans düzeninde doğrudan çarpma olarak yapabiliyoruz. Şimdi birazdan onun örneğini yapacağız.
+
+24
+00:13:26,195 --> 00:13:31,715
+Ters, Fourier dönüşümünün ne olduğunu söyledik.
+
+25
+00:13:33,715 --> 00:13:36,515
+Burada bazı uygulamalar var.
+
+26
+00:13:37,855 --> 00:13:39,735
+Onlardan da bahsettik. Tamam.
+
+27
+00:13:40,655 --> 00:13:43,235
+Şimdi size paylaştığım klasörlerde arkadaşlar,
+
+28
+00:13:44,935 --> 00:13:45,895
+şu dokuzuncu
+
+29
+00:13:46,995 --> 00:13:59,235
+PDF ve bunun 9.2 FIR olan. Zaman kalırsa bunlara geleceğiz. Frekans domain analizinde bazı uygulamalar aslında bunlar.
+
+30
+00:14:00,275 --> 00:14:06,935
+Şimdi bir tanesini yapacağız da. Burada çok fazla uygulamalar var. Yani değişik alanlardan veya değişik filtre alanlar falan var.
+
+31
+00:14:08,255 --> 00:14:12,135
+Hepsi frekans düzlerine geçiş yapıp analiz yapan.
+
+32
+00:14:12,788 --> 00:14:39,408
+Bazıları örnek, bazıları işte kavramsal konu. Bir kısmı sizi yani haberleşmeci veya kontrolcü olmadığınız için ilgilendirmiyor. Ama buradaki örnekleri incelemeniz faydanıza olur. Bunun bir kısmı da şey, f-ir olan, biz z-transformu gördükten sonra frekans-sizmosla alakalı bu daha, şimdi bakmanıza gerek yok, z-transformu da görelim, o ikisi birlikte daha şey olur.
+
+33
+00:14:40,052 --> 00:14:48,552
+Çünkü biliyorsunuz bu Fourier transform'u şu an hangi tür işaretler için? Ayrık işaretler mi, sürekli işaretler mi?
+
+34
+00:14:52,755 --> 00:15:17,195
+Bu yaptığımız sürekli işaretlerde. Bunun ayrık zamanda olanı da var. Bu sürekli zamandaki Fourier transformunun gelecek hafta daha genel hali olan Laplace transformunu anlatacağız. Ondan sonra diyeceğiz ki Fourier transformunun ayrık haline bakalım. Bir de o ayrık olanın daha genel hali var. Z-transformu. O şekilde transformları tamamlayacağız.
+
+35
+00:15:19,187 --> 00:15:24,187
+Yani her zaman bu Fourier dediğimiz şey illaki sürekli işaretler olacak diye bir şey yok.
+
+36
+00:15:24,947 --> 00:15:33,807
+N düzleminde XN diye bir şey verdiğimizde, orada da diyeceğiz ki X'in yerine küçük omega değil, büyük omega.
+
+37
+00:15:35,127 --> 00:15:41,268
+Artık bu grek alfabelerini Covid sayesinde öğrendiniz. Bu küçük omega'dır, büyük omega.
+
+38
+00:15:44,884 --> 00:15:47,203
+Varyantlar çiftlikçe daha iyi de öğrenirsiniz.
+
+39
+00:15:53,395 --> 00:16:07,215
+Bu yapılan dönüşme de Discrete, Fourier, Transform veya Ayrık Zaman diyebiliriz. Genel hali Discrete diyelim de.
+
+40
+00:16:08,495 --> 00:16:11,576
+Peki, şimdi şöyle bir sorumuz var.
+
+41
+00:16:22,836 --> 00:16:50,016
+Y türev T artı 2Y t eşittir X t artı X türev T şeklinde bir sistem tanımlıyor. Bu bir sistem çünkü giriş var çıkış var. Bu sistemin frekans responsu
+
+42
+00:16:53,524 --> 00:16:57,283
+Nedir? Bunu bulduk. Şimdi frekans-respons kavramını konuşmuştuk.
+
+43
+00:16:58,543 --> 00:17:02,084
+İmpuls responsumuz vardı. Bunu hangi harfle söylüyorduk?
+
+44
+00:17:03,844 --> 00:17:06,384
+Dürtü cevabı diye Türkçeleştirilmiyor.
+
+45
+00:17:07,244 --> 00:17:07,543
+H.
+
+46
+00:17:08,223 --> 00:17:14,183
+İmpuls responsu T düzlemindeydi. Bunun frekans düzlemindeki karşılığı
+
+47
+00:17:25,332 --> 00:17:29,692
+yine H olacak ama H omega diyeceğiz.
+
+48
+00:17:31,732 --> 00:17:38,132
+Şimdi bunun impuls responsunu bulabiliriz. Eğer diferansiyel denklem çözmeyi biliyorsak
+
+49
+00:17:39,152 --> 00:17:47,852
+bu işaretin önce impuls responsunu buluruz. O işaretini de daha sonradan frekans düzlemindeki karşılığını Fourier dönüşümü ile alabiliriz.
+
+50
+00:17:49,132 --> 00:17:50,172
+Ondan sonra
+
+51
+00:17:50,932 --> 00:18:00,932
+Fourier dönüşümü, frekans responsu elde ettirir. Fakat biz dedik ki şeyi bilmiyoruz, diferansiyel denklem çözmeyi bilmiyoruz. Bu kaçıncı mertebeden bir diferansiyel denklem?
+
+52
+00:18:05,779 --> 00:18:08,799
+Birinci mertte. Sabit katsayırımı, değişken katsayırımı.
+
+53
+00:18:17,460 --> 00:18:24,460
+sabit. Niye? Terimlerin önünde T diye bir tane şey yok. Mesela şurada şöyle bir T olsaydı, o zaman sabit fassaydı olmazdı.
+
+54
+00:18:24,460 --> 00:18:40,460
+Tamam, yani aslında çok zor bir diferans yazmak değil de, o konuyu bilmediğimiz için mecburen buradan ilerleyemeyiz. Yani bu yoldan gidiş yok. O zaman Fourier dönüşümünün özelliklerinden buna bakacağız.
+
+55
+00:18:47,220 --> 00:18:52,220
+Şöyle Fourier operatörünü çizmeye çalışayım. Şöyle yapalım.
+
+56
+00:18:56,147 --> 00:18:56,947
+X Omega.
+
+57
+00:19:03,604 --> 00:19:05,604
+Şunun sonucu nedir arkadaşlar?
+
+58
+00:19:05,604 --> 00:19:07,468
+Bu Fourier operatörü ise
+
+59
+00:19:12,019 --> 00:19:13,299
+Xomever, güzel.
+
+60
+00:19:15,099 --> 00:19:16,619
+Peki şunun sonucu nedir?
+
+61
+00:19:17,900 --> 00:19:18,892
+İşledim mi?
+
+62
+00:19:33,811 --> 00:19:48,571
+Bu da Yω. Büyük Y'de yazabiliriz, küçük Y'de yazabiliriz. Yani Fourier transformu bize ne yapıyor? Bu düzlemden bu düzleme geçiş yapımı, fonksiyonun değerini değiştiğini söyleyeyim. Şöyle bunu gruplandırayım, hepsini buraya sığdırmaya çalışacağım.
+
+63
+00:19:49,951 --> 00:20:00,000
+Bunlardan yola çıkarak bu problemi acaba çözebilir miyiz diyeceğim şimdi. Bir de hatırlarsanız, bir işaret
+
+64
+00:20:00,000 --> 00:20:04,000
+Türemi'nin Fourier transformunun bir eşitliği vardı. Neydi o?
+
+65
+00:20:06,000 --> 00:20:08,000
+Hatırlayalım. Var mı?
+
+66
+00:20:17,172 --> 00:20:32,432
+JV'li bir şeydi güzel. Elimizde hangi işaret varsa, örneğin XT işaretini ele alalım. Eğer XT'nin Fourier transformu X Omega ise X Omega'nın ters Fourier transformu da şey olacak.
+
+67
+00:20:34,932 --> 00:20:43,852
+Eğer X türev T dersek veya n'inci mertebeden türev diyelim, genelleştirelim. Bu X Omega çarpı
+
+68
+00:20:44,627 --> 00:20:47,467
+J Omega'nın eninci kuvvetiydi.
+
+69
+00:20:49,307 --> 00:20:53,228
+Şu J Omega dediğim, J dediğim zaten eksi birim kare kökü.
+
+70
+00:20:53,987 --> 00:20:55,807
+Omega da zaten benim buradaki değişkenim.
+
+71
+00:20:56,347 --> 00:20:57,788
+Şu an iş biraz kolaylaşıyor.
+
+72
+00:20:58,507 --> 00:21:02,187
+O zaman şu eşitliği aynen yazıyorum.
+
+73
+00:21:02,187 --> 00:21:10,887
+Bu birinci mertebeden türesi, J Omega'nın birinci dereceden üstü, J Omega üzeri bir.
+
+74
+00:21:11,412 --> 00:21:13,791
+çarpı Y omega.
+
+75
+00:21:15,072 --> 00:21:17,311
+Dönüşüm budur. Artı
+
+76
+00:21:17,311 --> 00:21:20,331
+iki çarpı Y omega
+
+77
+00:21:20,331 --> 00:21:21,652
+eşittir.
+
+78
+00:21:22,991 --> 00:21:24,751
+Burada XT var. XT'nin
+
+79
+00:21:24,751 --> 00:21:29,211
+Fourier transformı X omega artı
+
+80
+00:21:29,211 --> 00:21:31,112
+X omega
+
+81
+00:21:31,112 --> 00:21:33,791
+çarpı J omega.
+
+82
+00:21:34,791 --> 00:21:37,271
+J omegaları da parantez için alabiliriz.
+
+83
+00:21:37,271 --> 00:21:37,791
+Gerek yok.
+
+84
+00:21:39,347 --> 00:21:54,967
+Şimdi HT ve HOMEGA'yı söyledik. Peki, HT'yi biz nasıl yapıyorduk arkadaşlar? YT'nin XT'ye yani çıkışın girişe oranıyla. Hadi bunu bilmediğimizi kabul edelim.
+
+85
+00:21:55,307 --> 00:22:04,367
+HOMEGA'yı ama biliyoruz. Yani geçenlerde de söyledik. HOMEGA, YOMEGA bölü XOMEGA'dır. Yani çıkış burada Y, giriş de X ise.
+
+86
+00:22:04,768 --> 00:22:27,288
+Çıkışın girişi oranı bize sistemin nasıl davrandığını verecek. Frekans responsu bunu verecek. Biz bu frekans responsunu, şuraya not olarak söyleyelim, transfer fonksiyon olarak, yani HS diyeceğiz orada da, Laplace dönüşünü de göreceğiz.
+
+87
+00:22:29,203 --> 00:22:33,123
+Her şey aynı, yine H. Orada da adına transfer fonksiyonu diyeceğiz.
+
+88
+00:22:34,463 --> 00:22:39,643
+Peki gelelim buradan şeyi bulmaya çalışalım. Y omega'nın X omega'ya oranı.
+
+89
+00:22:39,643 --> 00:22:46,763
+Şurada Y omega parantezini alırsak ne oluyor? 2 artı J omega.
+
+90
+00:22:47,643 --> 00:22:54,083
+Burada da X omega parantezini alırsak 1 artı J omega gelecek.
+
+91
+00:22:55,092 --> 00:23:10,812
+Y'leri ve X'leri oranladığında Y omega bölü X omega. Yani her iki tarafı bir X omega'ya böleceğim. Bir de Y omega'dan yanındakinden kurtulmak için 2 artı J omega'ya böleceğim.
+
+92
+00:23:13,332 --> 00:23:20,472
+Şurada da 2 artı J omega. Bunlar bunu götürecek, bunlar bunu götürecek. Y omega bölü X bölü. Bakın C bir ser işlemine.
+
+93
+00:23:20,816 --> 00:23:25,375
+1 artı J omega bölü 2 artı J omega geliyor.
+
+94
+00:23:27,255 --> 00:23:33,456
+Bunu basit kesirlere, şimdi bunun bir kere H omega olduğunu biliyoruz.
+
+95
+00:23:33,496 --> 00:23:35,855
+Bakın bu sistemin frekansı disponsudur.
+
+96
+00:23:36,436 --> 00:23:37,675
+Sorunun cevabı burada bitiyor.
+
+97
+00:23:39,036 --> 00:23:42,255
+Bunu daha basit bir halde yazmak isteyebiliriz.
+
+98
+00:23:43,395 --> 00:23:45,916
+Basit kesirlere ayırma diye bir şey vardır.
+
+99
+00:23:46,076 --> 00:23:47,135
+Bunu buna bölerseniz,
+
+100
+00:23:47,635 --> 00:23:52,496
+Bu nedir? 1-1 bölü 2 artı j omega'dır.
+
+101
+00:23:53,775 --> 00:23:55,576
+Niye böyle yazdık? Şimdi onu da anlatacağım.
+
+102
+00:23:56,775 --> 00:24:05,635
+Bakın frekans responsu bu. Yani ben buna bu sisteme birim basamak şeklinde frekans düzleminde
+
+103
+00:24:05,635 --> 00:24:14,755
+şu drag delta fonksiyonlarını uyguladığında bu linear ve zamanla değişmeyen olduğu için böyle bir şey oluyormuş.
+
+104
+00:24:15,796 --> 00:24:17,936
+Yeteri kadar bundan uyguladığımızı unutluyoruz.
+
+105
+00:24:18,976 --> 00:24:21,756
+Peki diyelim ki buradan HT'yi de bulalım.
+
+106
+00:24:22,096 --> 00:24:24,695
+Bu sistem acaba zaman düzleminde nasıl çalışıyor?
+
+107
+00:24:25,596 --> 00:24:33,135
+Niye ben HT'yi bulursam, ona herhangi bir XT girişi uyguladığında sistemin nasıl çalışacağını buluruz?
+
+108
+00:24:34,576 --> 00:24:36,836
+Peki HT nasıl bulunacak?
+
+109
+00:24:37,736 --> 00:24:38,836
+HT eşittir.
+
+110
+00:24:40,356 --> 00:24:43,216
+Bu diğer eksi bir üzeri H omega değil midir?
+
+111
+00:24:44,276 --> 00:24:53,576
+Yani ters Fourier dönüşümüne bulmadım. O zaman ben Fourier eksi bir, bir eksi bir bölü iki artı çi Omega'yı bulacağım demektir.
+
+112
+00:24:54,796 --> 00:24:59,556
+Fourier dönüşümü hatırlarsanız lineer bir dönüşüm. Ne demek? Şunun Fourier dönüşümü ayrı.
+
+113
+00:25:03,476 --> 00:25:05,916
+Bunun Fourier dönüşümü ayrı oluyor.
+
+114
+00:25:06,916 --> 00:25:11,716
+O zaman Fourier eksi bir, bir bölü iki artı j omega.
+
+115
+00:25:13,096 --> 00:25:14,956
+Aynı şekilde ters Fourier dönüşümünde de var.
+
+116
+00:25:16,316 --> 00:25:18,216
+Neyin Fourier dönüşümü birdir?
+
+117
+00:25:19,615 --> 00:25:21,256
+Şimdi biraz önceki slide'ı bir daha açayım.
+
+118
+00:25:33,907 --> 00:25:35,907
+Neyin Fourier dönüşümü birmiş?
+
+119
+00:25:39,796 --> 00:25:50,235
+Draktelta güzel. O zaman birinci bölüm. Zaten Draktelta'nın her şeyi neredeyse 1 çıkıyor arkadaşlar. Fourier'i de, Laplace'i de. Bu Draktel.
+
+120
+00:25:52,396 --> 00:25:59,096
+Yani ben bunu zaman düzleminde incelediğimde t eşittir sıfır anında bir şey gösteriyor, bir durumu var.
+
+121
+00:26:00,096 --> 00:26:06,195
+X, T ve H, T dediğimizde. Şimdi şuranın Fourier dönüşümünü olabilir. 2 artı J omega.
+
+122
+00:26:08,819 --> 00:26:12,759
+Şimdi bu bir şeye benziyor. Sizce neye benziyor?
+
+123
+00:26:12,759 --> 00:26:14,759
+E üzeri eksi 2t mi hocam?
+
+124
+00:26:14,759 --> 00:26:16,319
+Kim söyledi onu?
+
+125
+00:26:16,319 --> 00:26:17,759
+Ben [öğrenci].
+
+126
+00:26:17,759 --> 00:26:23,759
+[öğrenci]. Teşekkür ediyorum.
+
+127
+00:26:23,759 --> 00:26:29,759
+Bunun örneğini E üzeri eksi A, T diye yaptık arkadaşlar.
+
+128
+00:26:29,759 --> 00:26:32,759
+E üzeri eksi B, T diye. Pardon.
+
+129
+00:26:36,884 --> 00:27:01,884
+[öğrenci]'ın dediğinde az bir eksik var. Sıfırdan büyük değerler için çalışacak. E üzeri eksi BT UT formunda bir şey. Hani bunu bulamadık. O zaman ne yapacağız? İş başa düşer. Şuradan gideceksiniz. Neredeydi biraz önceki integralimiz? Ters Fourier dönüşüm integralini bunu yerine koyacaksınız. Bununla alakalı bir ödev vereceğiz size. Üçüncü ödev muhtemelen bununla alakalı olabilir.
+
+130
+00:27:05,587 --> 00:27:08,268
+2 artı j omega'yı buraya yerine koyarsınız.
+
+131
+00:27:09,427 --> 00:27:13,788
+1 bölü 2 artı j omega. Sonra bu işlemi yaparsınız.
+
+132
+00:27:14,548 --> 00:27:21,708
+Ve bunun sonucunda elde edeceğiniz x de sizin t düzenlendeki işaretinizdir. Fakat dedik ki bu her zaman gerekli değil.
+
+133
+00:27:22,487 --> 00:27:27,347
+Yani biz de hem dersimiz için hem de genel çalışmalar için zaten
+
+134
+00:27:27,607 --> 00:27:30,427
+Computation olarak da Math Lab'de falan da bunlar yapılıyor.
+
+135
+00:27:30,927 --> 00:27:32,208
+O zaman bu neymiş?
+
+136
+00:27:32,435 --> 00:27:34,435
+e üzeri eksi
+
+137
+00:27:36,435 --> 00:27:38,435
+nereden gelecekti?
+
+138
+00:27:38,435 --> 00:27:39,435
+hepsini açtım
+
+139
+00:27:40,435 --> 00:27:41,435
+e üzeri
+
+140
+00:27:41,435 --> 00:27:43,435
+eksi 2T
+
+141
+00:27:43,435 --> 00:27:44,435
+UT
+
+142
+00:27:44,435 --> 00:27:46,435
+işaretiymiş
+
+143
+00:27:46,435 --> 00:27:48,435
+UT'yi unutmuyoruz
+
+144
+00:27:50,435 --> 00:27:53,435
+ve bu işlem bizim HT'mizi verecek
+
+145
+00:27:54,435 --> 00:27:59,435
+artık ben elimde herhangi bir XT işareti olsa mesela XT eşittir
+
+146
+00:28:00,788 --> 00:28:07,468
+Girişe mesela ne uygulayacağımı kendim seçebilirim. Sinüs 3PT uygulasam.
+
+147
+00:28:08,748 --> 00:28:10,948
+YT'yi nasıl bulmam lazım şimdi?
+
+148
+00:28:17,332 --> 00:28:25,572
+Elimde HT var. Ondan sonra 2T ile Sinus 3PT seçtim. YT'yi nasıl bulabilirim?
+
+149
+00:28:33,683 --> 00:28:35,683
+Konvolüsyon arkadaşlar.
+
+150
+00:28:36,183 --> 00:28:40,284
+HT bizim sistemimizin nasıl çalıştığını söyleyen bir şeydi.
+
+151
+00:28:40,784 --> 00:28:45,784
+XT de girişimiz. Bunun konvolüsyonu uyguladığında YT eğer bu girişi uyguladığında.
+
+152
+00:28:46,784 --> 00:28:51,284
+Eğer elimde zaten H omega varsa bu konvolüsyona gerek yoktu biliyorsunuz.
+
+153
+00:28:51,483 --> 00:28:58,284
+Ben XT'nin Fourier transformunu alırım, onları çarparım H omega ile.
+
+154
+00:28:58,675 --> 00:29:04,675
+O elde ettiğim sonuç Y omega olur. Y omega'nın bu sefer ters dönüşümünü aldığında Y T'yi bulmuş olur.
+
+155
+00:29:04,675 --> 00:29:13,675
+Bakın şu konvolüsyonu almaktansa, şunun ters Fourier'ini alıp, çarpıp ters dönüşüm almak her zaman için daha kolay olacak.
+
+156
+00:29:14,675 --> 00:29:16,331
+Burayı anladık mı?
+
+157
+00:29:21,811 --> 00:29:32,172
+Var mı sıkıntımız? Peki, soruyu biraz daha farklılaştıralım. Herhalde mantığı zor değildir.
+
+158
+00:29:34,091 --> 00:29:38,931
+Bir LTI'lı sistem, yani doğrusal zamanla değişmeyen sistem şöyle tanımlanıyor.
+
+159
+00:29:38,931 --> 00:29:48,811
+BYT bölü, DT, yani bu bilinciler eden türev, artı 2YT eşittir, XT olsun.
+
+160
+00:29:51,988 --> 00:29:55,668
+Bunu Fourier transform'u kullanarak YT'yi buluruz diyor.
+
+161
+00:30:00,548 --> 00:30:01,907
+Yalnız YT'yi bulurken
+
+162
+00:30:03,188 --> 00:30:08,148
+farklı input'lar uygulayacağız. Yani biz burada doğrudan YT'yi bulamayız. Bir kere HT'yi bulabiliriz.
+
+163
+00:30:09,347 --> 00:30:10,067
+A
+
+164
+00:30:10,708 --> 00:30:12,307
+XT şu olduğunda
+
+165
+00:30:13,228 --> 00:30:14,748
+E üzeri eksi T
+
+166
+00:30:16,347 --> 00:30:17,788
+UT olduğunda
+
+167
+00:30:18,988 --> 00:30:19,788
+B
+
+168
+00:30:20,596 --> 00:30:24,596
+XT eşittir, UT olduğunda.
+
+169
+00:30:26,596 --> 00:30:28,596
+Sistem nasıl çalışacak, bunu bilirim.
+
+170
+00:30:29,596 --> 00:30:35,596
+Ne yapacağız? Yine diferansiyel denklem olduğu için bu diferansiyel denklemi ya çözeceğiz ya da Fourier transform'u uygulayacağız.
+
+171
+00:30:36,596 --> 00:30:47,596
+Yapalım. J omega, Y omega, bu ifade böyle, artı 2Y omega,
+
+172
+00:30:48,160 --> 00:31:13,580
+Eşittir. X omega. Niye böyle yaptık? Türevi olduğu için. Bakın arkadaşlar, ezberlemeyin. Genelde ezberleniyor. Yani burada ezberlenecek bir şey varsa da şudur. Yt'nin Fourier transformu Y omega. Xt'nin Fourier transformu X omega. O da ezber değil aslında yani. Bunun mantığı. Peki biz buradan Y omega'yı Y omega bölü
+
+173
+00:31:15,155 --> 00:31:27,155
+X Omega'yı bulsak, buna da H Omega diyebiliyoruz. Frekans responsu dediğimiz şey. Bölersek ne olur? 1 bölü 2 artı J Omega olur.
+
+174
+00:31:28,155 --> 00:31:35,155
+Yani biraz önce arkadaşımızın söylediği, bakın yine neye geldik? Şuraya geldik. E üzeri eksi 2T U T'dir bu aslında.
+
+175
+00:31:36,155 --> 00:31:42,155
+O zaman H T'yi de şu kenara bir not edelim. E üzeri eksi 2T U T diyebiliriz.
+
+176
+00:31:43,955 --> 00:31:55,955
+Peki diyor ki, sistem YT'yi bulun bana, XT şu olduğunda veya XT şu olduğunda.
+
+177
+00:31:55,955 --> 00:32:05,955
+Burada ne yapacağız? Ya konvolüsyon uygulayacağız biraz önce dediğim gibi ya da XT'le Fourier Transform'ını alıp
+
+178
+00:32:07,667 --> 00:32:12,667
+elde ettiğimiz bu sonuçtan çarpma uygulayacağız ve bu çarpmanın sonucuna bakacağız.
+
+179
+00:32:12,667 --> 00:32:25,611
+Şimdi biz H-omega'nın bu olduğunu biliyoruz, 2 artı c-omega olduğunu biliyoruz. Peki X-omega ne de A maddesi için? X-omega'ya ne dersiniz?
+
+180
+00:32:34,291 --> 00:32:35,491
+çok daha söyleniriz.
+
+181
+00:32:39,155 --> 00:32:41,555
+Şu ters dönüşme yaptıktan sonra
+
+182
+00:32:42,855 --> 00:32:44,655
+Buna çok benziyor, dikkat edersiniz.
+
+183
+00:32:53,971 --> 00:32:57,051
+E üzeri eksi BT UT değil mi arkadaşlar?
+
+184
+00:33:00,564 --> 00:33:05,804
+Bunun dönüşümü ne olacak? Bakın şunun aynısı yani, şu nasıl bu ikisi birbirinin
+
+185
+00:33:06,804 --> 00:33:09,564
+dönüşümleri ise bu da bu olacak.
+
+186
+00:33:10,163 --> 00:33:11,163
+Bir bölüm
+
+187
+00:33:12,284 --> 00:33:13,364
+bir artı
+
+188
+00:33:13,484 --> 00:33:15,284
+j omega'dır bunu.
+
+189
+00:33:16,844 --> 00:33:19,364
+Bunu da bulduk. O zaman y omega
+
+190
+00:33:21,403 --> 00:33:23,683
+x omega çarpı
+
+191
+00:33:24,683 --> 00:33:25,683
+h
+
+192
+00:33:26,387 --> 00:33:35,487
+Omega diyebiliriz. Yani 1 bölü 2 artı J Omega çarpı 1 bölü 1 artı J Omega.
+
+193
+00:33:37,287 --> 00:33:47,387
+Şimdi burada yapılacak olan şey şu. Bu çarpımın sonucunu hesaplayıp, bunun ters Fourier dönüşümünü almak mesele.
+
+194
+00:33:48,147 --> 00:33:52,307
+Burada da şuna bakacağız arkadaşlar. Bu ifade
+
+195
+00:33:53,556 --> 00:34:00,195
+1 bölü 2 artı j omega çarpı 1 artı j omega'dır aslında. Şöyle değil midir? 1 bölü.
+
+196
+00:34:05,140 --> 00:34:06,460
+1 artı J.
+
+197
+00:34:07,740 --> 00:34:10,659
+Calculus dersinden hatırlarsınız, bilmeniz lazım.
+
+198
+00:34:11,780 --> 00:34:20,619
+Bu ifadeyi mesela integral olsaydı, 2 artı x, böyle bir artı x gibi bir şey olsaydı, bunu basit kesirlere ayırmanız gerekir.
+
+199
+00:34:21,280 --> 00:34:29,039
+O zaman basit kesirlere ayıracak şekilde yazarsak, o basit kesirler de zaten biraz önce şuradakine benzer bir şey olacak demektir.
+
+200
+00:34:29,800 --> 00:34:31,340
+Yani e üzeri bir şeyler bulacağız.
+
+201
+00:34:32,052 --> 00:34:44,332
+Bunun basit kesirlere ayrılması için, şimdi burası birinci dereceden Omega'ya göre bakarsak, A bölü 2 artı J Omega artı B bölü 1 artı J Omega'dır.
+
+202
+00:34:45,771 --> 00:34:47,832
+Payda eşitleme yaptığımızda ne olur?
+
+203
+00:34:49,052 --> 00:34:55,492
+Burayı 1 artı J Omega ile, şurayı da 2 artı J Omega ile çarptığımızda A çarpı
+
+204
+00:34:56,596 --> 00:35:04,476
+1 artı J omega artı B çarpı 2 artı J omega eşittir, 1 olacaktır.
+
+205
+00:35:06,376 --> 00:35:08,576
+Faydalar zaten ne oluyor? Sadeleşiyor.
+
+206
+00:35:09,476 --> 00:35:10,855
+Şimdi buradan A ve B'yi bulalım.
+
+207
+00:35:13,216 --> 00:35:17,836
+Omega yerine ne verebiliriz?
+
+208
+00:35:19,256 --> 00:35:24,115
+Şimdi yani tek tek burada açacağız. J omegalı terimler olacak bir de sabit terimler olacak.
+
+209
+00:35:24,755 --> 00:35:27,255
+Bakalım veya hiç terim vermeyelim.
+
+210
+00:35:27,556 --> 00:35:33,755
+A artı A çarpı J omega artı 2B artı
+
+211
+00:35:33,755 --> 00:35:36,195
+Şurayı daha düzgün yazayım.
+
+212
+00:35:37,855 --> 00:35:40,635
+İçeri açıyoruz. Şurayı şöyle yapalım. Yanlış oldu birazcık.
+
+213
+00:35:41,935 --> 00:35:44,435
+B çarpı 2 artı J omega.
+
+214
+00:35:45,715 --> 00:35:49,815
+Bir eşittir. A artı A çarpı J omega.
+
+215
+00:35:50,771 --> 00:36:14,872
+2B artı B çarpı J omega. Şimdi J omegalı terimleri paydaya bir ortak paranteze alıyorum. A var, bir de B var. Öbürleri de sabit terim. A artı 2B. Yanlış bir şey yapıyorsam uyarın arkadaşlar. Burada matematik olarak çok mutlu bir şeyler olabilir.
+
+216
+00:36:15,476 --> 00:36:20,195
+Şimdi J-Omega'lı terim burada yok. O zaman A artı B eşittir, sıfır olacak demektir.
+
+217
+00:36:21,476 --> 00:36:24,655
+A artı 2B sabit terimde bir olacak demektir.
+
+218
+00:36:25,936 --> 00:36:27,615
+Şundan şunu çıkartırsak ne olur?
+
+219
+00:36:28,876 --> 00:36:30,735
+B eşittir, bir gelir.
+
+220
+00:36:31,916 --> 00:36:34,135
+B bir ise A eşittir, eksi bir gelecek.
+
+221
+00:36:35,496 --> 00:36:36,836
+Bu kat sayıları bulunca
+
+222
+00:36:36,836 --> 00:36:40,676
+Y-Omega eşittir
+
+223
+00:36:42,420 --> 00:36:53,180
+B'liyi önce yazalım. 1 bölü 1 artı j omega eksi 1 bölü 2 artı j omega buyduk.
+
+224
+00:36:54,639 --> 00:36:59,180
+Basit kesirleri yazınca bakın şimdi bunlar neye benziyor? Söyleyin.
+
+225
+00:37:05,588 --> 00:37:08,988
+Bu iki ifadenin ters Fourier dönüşümü nedir arkadaşlar?
+
+226
+00:37:13,619 --> 00:37:16,699
+[öğrenci] söyledi, geri çekildi, ben Sıravumu sağdım diyor.
+
+227
+00:37:28,211 --> 00:37:29,492
+Evet arkadaşlar, bu nedir?
+
+228
+00:37:33,268 --> 00:37:34,387
+[öğrenci], gel.
+
+229
+00:37:38,708 --> 00:37:39,708
+[öğrenci] 6.
+
+230
+00:37:48,307 --> 00:37:49,307
+Kuzuk başına.
+
+231
+00:37:52,659 --> 00:38:13,119
+[öğrenci], şöyle, T çarpı E üzeri eksi T, U T, E üzeri eksi 2, 2 T, tamam, ikinci terimde bir, evet, tamam, sıkıntı yok. Şimdi oldu. Şimdi yine tabloya bakacaksınız. Yani size verilecek olan şeyler arkadaşlar bu ayarda olur.
+
+232
+00:38:14,804 --> 00:38:25,564
+Veya en fazla birkaç tane daha özellik vardı. Burada bazı özellikleri birleştirmiştik. Örneğin T üzeri n ile çarpmıştık veya kompleks eksponansiyel bir şeyle, sinüsle çarptığımız bir şeyler vardı.
+
+233
+00:38:26,784 --> 00:38:31,604
+Bu ifade T üzeri eksi T U T'dir.
+
+234
+00:38:34,963 --> 00:38:39,604
+Aşağıdaki ifadede E üzeri eksi 2 T, biraz önce zaten arkadaşımız söyledi.
+
+235
+00:38:40,664 --> 00:38:41,744
+2 T U T'dir.
+
+236
+00:38:43,347 --> 00:39:01,307
+Sağ taraflı oldukları için, U-T parantezini alırsak, E üzeri eksi T, E üzeri eksi 2T, çarpı UT olacaktır. Demek ki YT işaretimizde, bunun ters Fourier dönüşümünden elde edilecek sonuç.
+
+237
+00:39:01,307 --> 00:39:10,287
+Tabi şurada ters Fourier dönüşümü aldığımızı, şöyle Fourier operatörüyle, şöyle gösterelim, F üzeri eksi 1, F üzeri eksi 1 diyelim.
+
+238
+00:39:12,659 --> 00:39:39,339
+Evet, bu kadar. B maddesini de size bırakıyorum. B maddesinin önce Fourier dönüşümünü alacaksınız. Sonra buradaki H omega ile onun Fourier dönüşümünü çarpacaksınız. Sonra bunun ters Fourier dönüşümünü alacaksınız. Ve elde edeceğiniz sonuç, XT girişi bu şekilde uygulandığında göreceğim YT işareti bu. Şimdi mesela ben bunu biliyorsam,
+
+239
+00:39:39,860 --> 00:39:43,019
+T eşittir 100 anında bu sistem nasıl cevap verecek?
+
+240
+00:39:43,739 --> 00:39:45,519
+Diyeceğiz ki T yerine gidip 100 yazacağız.
+
+241
+00:39:45,640 --> 00:39:47,140
+Y 100 diyeceğiz yani.
+
+242
+00:39:47,960 --> 00:39:54,720
+E üzeri eksi 100, E eksi, E üzeri eksi 200, çarpı U 100.
+
+243
+00:39:56,159 --> 00:39:56,940
+Bunun sonucu neyse.
+
+244
+00:39:57,300 --> 00:40:02,100
+Sistem T eşittir eksi 300 anında nasıl çalışır peki?
+
+245
+00:40:05,619 --> 00:40:14,619
+sıfır. Niye? Çünkü UT işareti sıfırdan itibaren bir veriliktir. Bakın Fourier dönüşümünün bir kolaylığını
+
+246
+00:40:14,619 --> 00:40:23,307
+kullanmış olduk. Hiçbir şekilde diferansiyel denklem çözme işine girmeden ne yapabildik? Bunu halledebildik.
+
+247
+00:40:26,420 --> 00:40:31,539
+İkinci kısmı size bırakıyorum, ona bakarsınız. Şimdi gelelim.
+
+248
+00:40:32,300 --> 00:40:42,019
+Burada MATLAB var mıydı? Bir ara verdiğimizde arkadaşlar ödevin çözümünü de göstereyim kısaca. Gerçi MATLAB yok da şey var, Octave var, onları da gösteririz.
+
+249
+00:40:42,420 --> 00:40:47,819
+Slider'ımıza, dersimize gelelim. Şimdi sampling kısmını biz bir başlamıştık da vizeden önce...
+
+250
+00:40:48,275 --> 00:40:54,475
+Diğer grup anlatmadı, aslında anlatmadığımızda iyi oldu. Burada frekansa yönelik şeyler de var. Sampling konusuna geçiyoruz.
+
+251
+00:40:54,475 --> 00:41:11,975
+Konumuz bu. Bir de yine frekans düzleminle ile alakalı incelemeleri MATLAB'te nasıl yaparız? Biraz ondan bahsedeceğim uygulama olarak. Ödevinizi de kullanacaksınız çünkü. Ödevi de herhalde...
+
+252
+00:41:12,079 --> 00:41:17,659
+Ali Can Hoca ile konuşalım da birkaç güne duyururuz. Bir hafta veya on günlük bir ödev olacak. Üç tane ödev vereceğiz arkadaşlar.
+
+253
+00:41:19,599 --> 00:41:29,480
+Şimdi sampling işlemi ne için yapılıyordu? İşaretin sürekli zamandan ayrık zamana dönüştürülmesi ve işlenebilmesi için.
+
+254
+00:41:30,440 --> 00:41:39,180
+Bana şöyle bir soru gelmişti birinci ödev. Hocam, biz kaydettiğimiz ses sürekli bir ses. Bunu nasıl işleyeceğiz?
+
+255
+00:41:40,019 --> 00:42:03,560
+Kaydettiğin ses sürekli ses değil arkadaşım. Yani bunu derste de geçenlerde yüz yüze söyledik. Bir şeyi kaydediyorsan orada bir sampling yapılmış demektir. Ödevdeki o record fonksiyonu basit anlamda senin bilgisayarın mikrofonundan sampling yaparak ve quantization yaparak işareti sayısal hale getiriyor. Peki bu samplingin ölçüsü veya matematiksel olarak yapılışı nasıl olacak?
+
+256
+00:42:04,275 --> 00:42:09,135
+Çünkü Semplink yaptığınızda Alizing dediğimiz bir şey ortaya çıkabiliyor.
+
+257
+00:42:09,655 --> 00:42:12,475
+Bu da şimdi, bir XT işareti yazıyorum.
+
+258
+00:42:13,235 --> 00:42:14,515
+Cos
+
+259
+00:42:16,315 --> 00:42:18,355
+200PT
+
+260
+00:42:19,635 --> 00:42:20,635
+Artı
+
+261
+00:42:21,435 --> 00:42:22,456
+Cos
+
+262
+00:42:23,735 --> 00:42:26,036
+400PT
+
+263
+00:42:28,335 --> 00:42:31,416
+Biliyorsunuz ki, Cos işareti
+
+264
+00:42:33,364 --> 00:42:36,364
+Artı 2Pi eklediğinizde
+
+265
+00:42:38,563 --> 00:42:39,563
+Niye eşit olur?
+
+266
+00:42:46,547 --> 00:42:48,707
+Cosinus x'e 2pi eklediğimizde
+
+267
+00:42:56,275 --> 00:43:16,715
+Herhangi bir açı. Şuradayız. Şu x açısı. Bu x açısının kosünüsü şurası. Bu x açısına iki pi eklediğinizde geldiğiniz yer yine aynısıdır. Dolayısıyla açının kendisidir yani kosünüs x'dir. Elizing'in mevzusu bu aslında.
+
+268
+00:43:18,395 --> 00:43:23,755
+Biz bu işareti örneklediğimizde t düzleminden ne düzlemine geçeceğiz?
+
+269
+00:43:30,643 --> 00:43:34,483
+İşaret örnekleme yapıldığında T'den neye geçeceğiz? Sınav sorumuzdu.
+
+270
+00:43:37,563 --> 00:43:39,083
+N düzlemini, güzel.
+
+271
+00:43:39,603 --> 00:43:43,443
+Yani burada N'e bağlı kosinus bir şey olacak.
+
+272
+00:43:46,579 --> 00:43:55,079
+Bu bir şeyi şu an için yazıyor. Sadece n diyelim, alfa n diyelim hatta. Şurada da beta n diyelim.
+
+273
+00:43:58,804 --> 00:44:15,484
+Alfa, beta neye göre değişiyor? Semping frekansına göre, örnekleme frekansı. Yani ben T yerine bir şey yazacağım. N bölü gamma gibi bir şey yazacağım ve onun sonrasında şurada alfa, n, şurada beta, n gibi bir şey buluyor.
+
+274
+00:44:15,484 --> 00:44:24,484
+İşte bu alfa, n acaba olur da denk gelir de beta, n ile eşit olur mu? Eşit olursa ne olur?
+
+275
+00:44:24,927 --> 00:44:31,528
+İki tane sinüzoidal birleşeni olan işaret, tek bir sinüzoidal birleşeni varmış gibi davranır.
+
+276
+00:44:32,188 --> 00:44:40,547
+Örnek, posinus 0.2pn olsa, şurasını işaretlediğimizde nasıl 2pn olur?
+
+277
+00:44:41,648 --> 00:44:50,947
+Bunu T'yi n bölü 1000, yani 1000 Hz ile örneklersen ne olur? Burası 0.2pn olur.
+
+278
+00:44:52,563 --> 00:44:58,884
+Peki burayı şeyle örneklersen ne olur? 0.4pn olur.
+
+279
+00:45:01,203 --> 00:45:11,103
+Bakın 1000 ile örnekledik. Bunlar arasında cos 2pn artı 2p ama şöyle düşünelim.
+
+280
+00:45:12,143 --> 00:45:17,563
+Cos 0.2pn artı k çarpı 2p.
+
+281
+00:45:18,420 --> 00:45:22,779
+Acaba eşit midir posinus 0.4pn'e?
+
+282
+00:45:24,300 --> 00:45:32,659
+Eğer böyle bir k sayısı bulabiliyorsak, şimdi 1pn desek 2.2pn oldu.
+
+283
+00:45:33,840 --> 00:45:37,619
+Ondan sonra 2pn desek olmadı, yani 0.4pn'e gitmedi.
+
+284
+00:45:39,239 --> 00:45:44,279
+Ondan sonra şundan çıkartsak, hani bir şeyler, bir pn'ler, ne oluyor?
+
+285
+00:45:44,815 --> 00:46:12,655
+Ona da karışamıyoruz. Bakın, burada hiçbir şekilde eşitlik olmuyor. Zaten biz 1000 ile örnekledik. En az kaçta örneklememiz lazım? Şunun frekansının iki katı. Bunun frekansı kaç? 200 Hz. Bunun frekansı kaç? 100 Hz. Biz burayı en az 200 Hz ile örneklersek örtüşme olmaz diyorduk hep. Bakın 1000 ile örnekledik, yani 5 katı bir örtüşme göremedik. Ama birazdan göreceğiz ki
+
+286
+00:46:13,043 --> 00:46:33,103
+İşareti şunun iki katından, buradaki bileşenlerin iki katından daha az bir oranda örneklersek, şu alfa Pn gibi, beta Pn gibi oluşan yeni bileşenler, olur da bir yerde örtüşür mü? Ne mevzusundan? Şu sebepten dolayı. Tamamen bir trigonometri.
+
+287
+00:46:34,023 --> 00:46:37,103
+Sampling rate'imizin, frekansın...
+
+288
+00:46:38,036 --> 00:46:48,336
+Highest frekansın iki katından büyük veya eşit, eşitliği de burada söyleyebiliriz, olması gerekiyor. Burada kesinlikle elde edeceğim işaret Xn işareti olacak.
+
+289
+00:46:49,376 --> 00:46:56,516
+Ve burada elde ettiğimiz frekans, normalize edilmiş bir frekanstır arkadaşlar. Ne demek normalize edilmiş frekans?
+
+290
+00:47:05,715 --> 00:47:32,515
+örneklediğimde 2 çarpı 100 çarpı pi çarpı n bölü 1000 yapıyorum. İşte bu 2PF dediğimiz şu kısım. Bölü 1000 o da şu kısım. Normalize frekans. Siz buna 2P'nin katlarını eklediğinizde oluşacak şu şey yani şuradaki mesele.
+
+291
+00:47:32,916 --> 00:47:42,896
+Elizing. Peki, kosünüsü nereden çıkarttım hocam? Niye kosünüs? Biz frekans düzlemine geçtiğimizde işaretleri Sinyus ve Kosünüs birleşenlerine ayırmıyor muyuz buraya?
+
+292
+00:47:44,235 --> 00:47:49,516
+İşte bu kosünüsleri zaten karışınca frekans düzleminde işaretler karışmış oluyor.
+
+293
+00:47:51,636 --> 00:47:57,516
+Devam edelim. Bir kere bunu yapmaktaki amacımız...
+
+294
+00:47:58,195 --> 00:48:21,516
+İşareti sayısal olarak işlemektir. Normal bir analog sistem sürekli zamanlı bir işareti alır, ayrık zamanlı, sürekli bir zamanlı işaret olarak bize gelebilir. Fakat ben işareti değiştirmek istediğimde, geliştirmek istediğimde, başka şeyler yapmak istediğimde ve bunu bilgisayarda yapmak istediğimde olacak olan şey bu XT'den önce XT'ni elde etmemiz lazım.
+
+295
+00:48:23,155 --> 00:48:48,595
+Analog elektronik bu XT'den YTI yapıyor. Örneğin amplikatörler, sizin devre teorisindeki ördüğünüz devreler, kapasitörler, opamplar falan bunları yapıyor. Fakat dijital bir mikrofonu, yani işin içine bilgisayar girdiğinde bunu yapamıyoruz. XT'yi alacağız, Analog to Digital Converter ve XN elde edeceğiz, bilgisayarda bunu işleyeceğiz. İşte siz birinci ödevde sesinizi kaydettiğinizde
+
+296
+00:48:49,972 --> 00:48:56,532
+Bana sorulan o soru birkaç defa soruldu. Ben de dedim ki yani nedense birkaç defa soruldu aynı şeyi söylemiş olmana rağmen.
+
+297
+00:48:57,132 --> 00:49:04,532
+İşareti zaten kaydedildikten sonra sürekli değil, ayrık. Sen onu plotla çizdirirsen sürekli görürsün.
+
+298
+00:49:05,972 --> 00:49:07,972
+Onu sistemle çizdireceksin.
+
+299
+00:49:09,332 --> 00:49:14,332
+Çünkü zaten plotla çizdirirsen sürekli halini yaklaşık bir şekilde gösterirsen.
+
+300
+00:49:14,516 --> 00:49:38,536
+YN'i elde ettikten sonra artık işaretle ne yaptıysan, bunu ne yapıyorsun? Tekrar sürekliye çevirip YT işaretini elde ediyorsun. Biz ne yaptık? XN işaretine, birinci ödevde, öyle bir konvolüsyon uyguladık ki, o konvolüsyon işaretin, drag N'deki, drag N-400 müydü?
+
+301
+00:49:40,927 --> 00:49:46,927
+n-800'deki bileşenlerini işarete tekrar ekledi. Sistem böyle çalışıyordu. Bu da ne demek?
+
+302
+00:49:46,927 --> 00:50:04,927
+Sistemin içerisinde iki tane yankı bileşeni eklemek demek. Sistemin, öyle bir şey ki bu sistem, sıfırda bir pik veriyor, yanlış hatırlamıyorsa böyle bir 400'de pik veriyor, bir de 800'de pik veriyor. 800 tane eleman var, sadece buralarda bir. Ben bu sisteme herhangi bir işareti
+
+303
+00:50:05,364 --> 00:50:10,923
+Konvolüsyon yaptığında şu noktalardan kaynaklı olarak ne olacak? Şurada bir bileşen göreceğim.
+
+304
+00:50:10,923 --> 00:50:17,403
+Aynısını bir burada göreceğim, bir de burada göreceğim. Dolayısıyla bu sesin iki tane yankısı gibi bir şey olacak.
+
+305
+00:50:17,403 --> 00:50:23,603
+Şimdi de hani onun şeyini... Ama bunu yapabilmemiz için
+
+306
+00:50:23,603 --> 00:50:29,764
+şuradaki Analog Digital Converture'dan yapılan işlem, bu sampling ve quantization'ın bir önemi var.
+
+307
+00:50:34,996 --> 00:50:39,996
+N'in buradaki adı da bizim C'deki dizidimizin i inci karakteri.
+
+308
+00:50:40,356 --> 00:50:47,796
+Uniform sampling yapmak için yapacağımız şey arkadaşlar, T yerine N çarpı TS veya N bölü FS yazmak.
+
+309
+00:50:47,916 --> 00:50:49,916
+Dönemin başından beri bu fonksiyonu söylüyoruz.
+
+310
+00:50:51,635 --> 00:50:56,216
+Kesinlikle ve kesinlikle elde edeceğim işaret N olacak. Böyle parantezler de buna göre yazılır.
+
+311
+00:50:57,036 --> 00:50:58,776
+Kontinüstü dijital yaptığımızda.
+
+312
+00:50:59,168 --> 00:51:03,528
+Bir soru daha gelmişti. Hocam, kontinüüs işaretler analog mudur her zaman? Evet.
+
+313
+00:51:04,408 --> 00:51:10,208
+Buradaki kontinüüsten kastımız matematikteki kontinüüs fonksiyonu değil arkadaşlar.
+
+314
+00:51:10,408 --> 00:51:16,908
+Yani şöyle bir şey vardır. Bu matematikte kontinüüs değil ama işaret olarak kontinüüs bir işarettir.
+
+315
+00:51:17,428 --> 00:51:20,888
+Sürekli bir işarettir. Niye? Şurada süreksizlik noktaları var.
+
+316
+00:51:21,364 --> 00:51:35,364
+Ondan kaynaklı olarak Kontinüüs matematik gibi düşünmeyin. Bu Kontinüüs veya Analog veya işte bunu ayrık, diskret veya sayısal hale söyleyebiliriz.
+
+317
+00:51:37,364 --> 00:51:47,364
+Örnek olarak bir, biz TS'imizi 125 mikrosaniye verirsek, 1 bölü 125 mikrosaniye.
+
+318
+00:51:48,211 --> 00:52:14,451
+Bu 8 kHz olur. 8 kHz de 8000 Hz'dir. 1 bölü 125 mikro yazdığımızda, diyeceğiz ki bu mikro saniye ise 10 üzeri eksi 3 saniye, 1 bölü 125'in burada kalsın, 10 üzeri 3 yukarıya gitsin, ondan sonra bu kadar yazalım, deyip öyle yazabiliriz.
+
+319
+00:52:15,188 --> 00:52:25,688
+10 üzeri 3 şeklinde. Mikro bir dakika, kilo, yok 10 üzeri 6 mıydı bu mikro ya? Mikronun şeyi unuttum şu anda.
+
+320
+00:52:27,807 --> 00:52:33,988
+Bir saniye 10 üzeri 3, mikro olunca 10 üzeri eksi 3'ten biraz daha farklı. Mikro kaçtı ya bir bakayım.
+
+321
+00:52:36,387 --> 00:52:41,708
+Mikro, 10 üzeri eksi 6 oluyor. Tamam.
+
+322
+00:52:42,739 --> 00:52:44,419
+10 üzeri eksi 6 bölü şey.
+
+323
+00:52:46,119 --> 00:52:52,859
+Ve sonuçta arkadaşlar, biz işareti örneklediğimizde, ya T yerine şunlardan birisini koyup, işte X'ini elde edeceğiz.
+
+324
+00:52:52,959 --> 00:52:54,639
+Bu Uniform Sempink dediğimiz kavram.
+
+325
+00:52:55,179 --> 00:52:57,019
+Peki, gelelim bunu uygulayalım.
+
+326
+00:52:57,399 --> 00:53:00,639
+Şöyle bir işaretimiz var, cos 2p 100. Bunun frekansı kaç?
+
+327
+00:53:09,108 --> 00:53:36,108
+Ne biliyoruz? Şuradan biliyoruz. Formülünden zaten var. Veya deriz ki işaret kendisini ne kadar süreli periyotlarla tekrar ediyor buna bakabiliriz. Şu kadarlık bir periyotta tekrar ediyor gibi. O zaman bir bölü sıfır nokta sıfır bir dediğimizde bu periyot bize frekans verecektir. Bir bölü bir bölüyüz. Yani yüz. Buradan da çıkar. Demiş ki bunu şu aralıklarla
+
+328
+00:53:37,043 --> 00:54:03,483
+sampling yapalım buna. O zaman t yerine cos 2 çarpı pi çarpı 100 çarpı t yerine n bölü fs ya da n çarpı ts 0.0005 yazdığınızda şunlar şunu götürecek. Bu ikinin 5'i 10 yapacak. O da şuradaki virgülü götürecek. Ne oluyor? cos
+
+329
+00:54:04,244 --> 00:54:07,923
+n çarpı pi olmuyor mu? Herhalde n çarpı pi oluyor.
+
+330
+00:54:11,188 --> 00:54:13,067
+n'e bağlı böyle bir işaret bulduk.
+
+331
+00:54:14,128 --> 00:54:24,327
+Eğer bunu t, s eşittir 0.02 aralıklarla, bakın şundan çok çok daha az aralıklarla, yani şu aralığı azaltırsak böyle bir işaret buluyoruz.
+
+332
+00:54:25,007 --> 00:54:32,108
+İşte bunun ölçüsü iki kat dediğimiz şey de işareti geri orijinalini sağlıklı bir şekilde elde edebilmek için yapılan bir şey.
+
+333
+00:54:32,108 --> 00:54:34,407
+Şimdi sağlıklı elde etmekten kasıt iki tane.
+
+334
+00:54:35,087 --> 00:54:37,807
+Birincisi, şu noktaları birleştirdiğinde,
+
+335
+00:54:38,835 --> 00:54:40,835
+interpolasyon yaptığında
+
+336
+00:54:42,435 --> 00:54:57,035
+orijinalini bulabiliyor musun? Tabi bu bir tane sinuzoidal bileşen için belki kolay. Bir de birden fazla sinuzoidal bileşen varsa o sinuzoidal bileşenleri birbirine karıştırmadan orijinalini elde edebiliyor musun? Mevzu o.
+
+337
+00:54:58,035 --> 00:55:02,435
+Burada 100 Hz ile yapmışız. Niye 100 Hz? Çünkü
+
+338
+00:55:02,963 --> 00:55:14,324
+Pardon, 2 kHz de örneklemişiz. Niye 2 kHz? 1 bölü 0.0005 dediğimiz şey, 2 kHz de karşılık gelir saniye olarak yazdığımızda.
+
+339
+00:55:15,704 --> 00:55:18,824
+Burada da aynı şekilde 500 Hz demiş.
+
+340
+00:55:19,604 --> 00:55:30,403
+Bu sıklığın söylenmesinde hani kullanan ölçüt Shannon veya sampling teoremiye Nightly Strike dediğimiz işaretin içerisindeki bileşenlerin
+
+341
+00:55:31,315 --> 00:55:35,315
+Kaç tane bileşen varsa frekanslarını buluyorsunuz.
+
+342
+00:55:35,315 --> 00:55:38,315
+Dolayısıyla bakın bir Fourier dönüşümü gerekiyor burada.
+
+343
+00:55:38,315 --> 00:55:42,315
+Çünkü karmaşık bir işaretin içerisindeki periyodu bulmak zor.
+
+344
+00:55:42,315 --> 00:55:44,315
+Bir ses kaydedin onun periyodunu bulamazsınız.
+
+345
+00:55:44,315 --> 00:55:50,219
+Ama sesin Fourier dönüşünü aldığınızda onun frekans bileşenlerinin
+
+346
+00:55:50,452 --> 00:55:56,272
+M büyüğünün iki katını bulmak çok kolay. Kaç tane frekans bileşeni varsa Fourier transformuna bakarsınız.
+
+347
+00:55:56,852 --> 00:56:05,852
+İşte şu frekansın sıfır olduğu yer, işte şunlar F1, F2, F3. Burada F1, F2, F3, Fn. Bunları maksimumuna alırsınız.
+
+348
+00:56:06,452 --> 00:56:12,812
+Bunun da iki katı kadar bir şey sizin Fs'iniz olacaktır. Mevzu bu.
+
+349
+00:56:16,563 --> 00:56:38,103
+İşte Reconstruction'daki problem de şu arkadaşlar. Ben şu işaretle iki tane kosünç işaret var bakın burada. Birisi kırmızı çizgilerle ifade eden bir de şey. Bunları bir şekilde örnekledik. Şu mavi noktalarda örneklendi. Şimdi bunları Reconstruct ettiğinizde bulacağınız şeyle orijinal işaret kaybolabiliyor. İşte bunun kaybolmaması lazım.
+
+350
+00:56:38,739 --> 00:56:44,739
+Örnek demiş ki xn burada cos 0.4pn işareti olsun örnekledikten sonra.
+
+351
+00:56:44,739 --> 00:56:55,739
+Şimdi bu bir integer. Ben cos 0.4pn'e artı 2p eklersem cos 4pn elde ederim.
+
+352
+00:56:55,739 --> 00:57:05,739
+Eğer diğer işaret de varsa ve bu cos 2.4pn ise hatta 4.4pn de olabilir. O zaman işaretler birbirine karıştı da biridir.
+
+353
+00:57:06,324 --> 00:57:15,923
+Çünkü biz N bölü FS yaptığımızda şu elde ettiğimiz normalizasyon işlemi bizi 0-1 aralığına normalize ediyor ülke.
+
+354
+00:57:15,923 --> 00:57:25,124
+O normalizasyonun sonunda da 2 pi'ler eklediğimizde birbirine karışmaması gerekiyor. Buna bakacağız.
+
+355
+00:57:27,123 --> 00:57:37,623
+Burada dijital bir sesin kayıtlanması ile alakalı bir şey var. Şimdi demiş ki bir hesap örneği benzerini biz görüntü üzerinde ilk derslerde anlattığımız için sınavda sormuştuk.
+
+356
+00:57:37,623 --> 00:57:53,123
+CD kalitesinde bir ses diyor 44.100'lük frekansla saniyede yapılıyormuş. Bu 16 bit sample gerektiriyormuş ve stereo iki tane kanal. Bu iki kanal şu demek, siz bir ses kaydı yapıyorsunuz iki tane mikrofonla kayıt yapın.
+
+357
+00:57:54,195 --> 00:58:05,135
+O iki mikrofonun ortalaması daha kaliteli bir ses kaydı yapacaktır. Şimdi iki kanal için iki. 16 bit sample başına varsa 16 bölü 8 bu kadar byte.
+
+358
+00:58:05,135 --> 00:58:19,215
+8 byte. 60 saniye, 44100 saniye başına sample. 1 dakika için yapılacak diye 60 saniye. Toplam şu kadar megabyte gerekiyor.
+
+359
+00:58:19,635 --> 00:58:34,935
+Neden bu kadar MB? Şunları çarptığınızda muhtemelen elde edeceğiniz sayı kaçtır bunun sayısı karşı? 2 çarpı 60 çarpı 44100. Bakalım hesaplayalım.
+
+360
+00:58:34,935 --> 00:58:44,975
+44100 çarpı 60 çarpı 4.
+
+361
+00:58:48,788 --> 00:59:07,028
+Tabi bu yaklaşık arkadaşlar, 10.584, pardon 10.584. Şu mega dediğin şey milyon demektir. O milyonu ne yapıyor? İşte 10.584 milyona çeviriyor yani megabyte çekiliyor. Bunu daha doğru yazmak istersek sınavdaki gibi.
+
+362
+00:59:07,847 --> 00:59:15,907
+Bu kadar tane örneğimiz varsa, byte'mız varsa, bu kadar tane byte'ten kastımız 60x2x44100.
+
+363
+00:59:16,307 --> 00:59:40,547
+tane byte demektir. Ona bakalım, o neymiş? 44100 x 120 eşittir. 5.292.000 byte. Bunu 1024'e bölün.
+
+364
+00:59:41,780 --> 01:00:00,139
+O kadar kilobyte. Onu da 1024'e bölün, o kadar megabayt. Onu da 1024'e bölün, eğer varsa o kadar gigabayt eder. Ama zaten 1024'e bölünün de yaklaşık olarak 5000'ü yaklaşık diyelim, 5292 kilobyte. Şu 1024'ü 1000 gibi kabullenin. Onu da böldüğünüzde
+
+365
+01:00:00,980 --> 01:00:05,539
+bu kadardık işte byte'a falan geliyor. Eğer şurada başka bir hata yapmadıysam.
+
+366
+01:00:09,684 --> 01:00:17,544
+Peki, biz bunu frekans düzlemiyle biraz ilişkilendirelim. Her bir işareti biz biliyoruz ki frekans düzleminde kosmuz işaretler cinsinden yazabiliyoruz.
+
+367
+01:00:18,224 --> 01:00:29,064
+Teorik olarak. O zaman XT işaretimiz şu şekilde kosmuz olarak ifade edildi. Ben XT'den XN'e geçerken T yerine N çarpı TS veya N bölü FS yazdım.
+
+368
+01:00:29,644 --> 01:00:36,884
+Gittim burada, T'nin yerine N çarpı TS yazdım. Artık şurada ω NTS gibi bir şey oldu, artış.
+
+369
+01:00:37,427 --> 01:00:53,228
+Şimdi şuradaki n'i dışarıda bırakacağız. n'i niye dışarıda bırakıyoruz? Çarpma işleminden dışarıda bırakabiliriz. Şuradaki elde ettiğimiz şey işte Normalize Frekans dediğimiz kavram oluyor arkadaşlar. Ve bunu Omega hat ile gösteriyoruz. Şu ifade veya bu şey.
+
+370
+01:00:55,288 --> 01:01:02,487
+İşaretin frekansının örnekleme frekansına oranıdır. Başka bir şey değil.
+
+371
+01:01:05,588 --> 01:01:09,467
+Bu ifadede dijital frekans, sayısal frekans diyoruz.
+
+372
+01:01:10,507 --> 01:01:16,887
+Şimdi bu dijital frekans 0 ile 2P arasında değişkenlik gösterecek.
+
+373
+01:01:17,867 --> 01:01:25,327
+Fakat bizim F'imiz 0 ile sampling frekansı arasında değişkenlik gösteriyor.
+
+374
+01:01:27,387 --> 01:01:31,327
+Bu buradan çıkarılan bir şey. Buradaki unitler, birimlerimiz...
+
+375
+01:01:32,532 --> 01:01:41,532
+B bölü Fs ise radyan bölü radyandır. Yani radyandır buradaki şeyler. Radyan bölü saniye değildir. Çünkü doğrudan saniye yapmıyoruz.
+
+376
+01:01:41,532 --> 01:01:55,532
+Ve bu dijital frekans normalize edilmiş bir frekans oluyor. Omega 2Pf, şu da bizim TS'imizde bölü Fs. Bu bize bunu söyleyecek arkadaşlar. Şuradaki sampling frekansımız ve bunun oranı.
+
+377
+01:01:57,523 --> 01:02:02,743
+Peki, baktığımız zaman X'in işaretini şöyle örneklediğimizde elde ettiğimiz işaret şu.
+
+378
+01:02:03,583 --> 01:02:09,623
+Şimdi bu frekans düzlemine geçtiğimizde iki tane frekans bileşeni var.
+
+379
+01:02:10,543 --> 01:02:12,283
+Şu bileşen, bir de bu bileşen.
+
+380
+01:02:13,223 --> 01:02:17,443
+Bunun 1 kHz'de örneklendiğini kabul edersek, işaretin frekansı kaç?
+
+381
+01:02:18,323 --> 01:02:19,283
+Şurada 100.
+
+382
+01:02:19,283 --> 01:02:21,283
+1 kHz'de örneklersek,
+
+383
+01:02:22,579 --> 01:02:38,179
+100 bölü 1000'den normalize frekansı 0.1. Tabi bu 2P'nin katlarıyla, şuradaki şeye baktığımızda, bu 2P çarpı 0.1, ekside bunun kompleks konjügesi vardı frekans düzleminde Fourier'den.
+
+384
+01:02:38,179 --> 01:02:45,619
+Bu tek bileşen de böyle. Diğer bileşenlerde de eğer bildiğin fazlasını zorunda olursa göreceğiz.
+
+385
+01:02:46,036 --> 01:02:56,276
+Onların diğer bileşenleri de burada olacak. Önemli olan bunların 2Pi arttırıp azaltıldığında şunlarla örtüşmemesi. Örtüşüyorsa problem var demektir.
+
+386
+01:02:58,516 --> 01:03:04,036
+Bakın böyle bir işaret içerisinde DC bileşen olan bir işarettir.
+
+387
+01:03:05,556 --> 01:03:07,956
+Şimdi bunu 100 Hz ile örneklemişiz.
+
+388
+01:03:08,083 --> 01:03:33,103
+100 Hz ile örnekleyin, işaretin kendi frekansı 100. 100 bölü 100'den 2P ile bir birleşen, eksi 2P ile bir birleşen. Şimdi buna 2P eklediğimizde şurada da bir birleşen bunun aynısı vardı. Çünkü bu Kosünüs işareti. Bunun Fourier transformunu aldığımızda bu neydi? Hatırlarsanız Kosünüs'ün Fourier transformu iki tane drag delta çıkıyordu. Şimdi peki bunlara 2P eklediğimde ne olacak? Şurada bir tane birleşen olacak.
+
+389
+01:03:34,132 --> 01:03:47,132
+2P buradan, 2P buradan, hatta iki tane bileşen. Yani ben burada sıfır frekanslı bileşen olmamasına rağmen bunu yanlış örneklediğim için ters yaparsam buna bir DC bileşen eklemiş gibi oluyor.
+
+390
+01:03:49,132 --> 01:03:57,371
+Örneklemeden geriye çevirsem. Çünkü durduk yere ne oldu? Şurada bir tane daha bunun kompleks bileşeni oldu. Halbuki DC bileşen yok bu işarette belki.
+
+391
+01:03:59,668 --> 01:04:02,728
+Doğru örneklemenin MAC'ten kastımız da bu zaten.
+
+392
+01:04:04,028 --> 01:04:08,908
+İşte bu birden fazla kompleks eksponansiyelin burada olmasına Elizing diyoruz arkadaşlar.
+
+393
+01:04:08,908 --> 01:04:23,028
+Şurada şöyle olması gerekirken, bir örneklemenin böyle olması gerekirken, vurduk yere başta bir birleşenin çıkması ve bu birleşenlerin gerekirse hatta örtüşmesi Elizing oluyor.
+
+394
+01:04:23,288 --> 01:04:24,908
+Neden? Çünkü ben burada...
+
+395
+01:04:25,664 --> 01:04:31,184
+Kosünüs bileşeninden kaynaklı bir şeye 2P eklediğimde elde edilen sonuç aynı olacak demektir.
+
+396
+01:04:32,364 --> 01:04:46,624
+Örnek olarak şöyle bir örneğimiz var. Kosünüs 400PT'yi 1000 Hz'de örneklemişiz. Örnekleyebilir miyiz? Örnekleriz. Bu kosünüs 400PN bölü 10.4. Buraya kadar her şeyin önüller.
+
+397
+01:04:47,384 --> 01:04:52,964
+Peki bizim işaretimizin içerisinde ikinci bir bileşen olsaydı? Yani tek bir işaret değil, bu ikisinin toplamı.
+
+398
+01:04:53,588 --> 01:05:20,827
+XT, X1T artı X2T olsaydı. O zaman ne olacak? Bunu da örnekliyoruz mecburen. Örneklediğimizde yine 1000 Hz ile örnekliyorsak, bu da cos 2.4n. Şimdi bunlar düzlemde çizdirdiğimizde x2n cos şununla örtüşecek. Bu kadar basit. Şu 0.4pn'de
+
+399
+01:05:20,960 --> 01:05:42,180
+Yani 400 bölü şeyden 0.4p'de bir dijital frekansı var. Bunun 2.4p'de bir dijital frekansı var. Ama bunu normalize ettiğimizde, 2p'yi geriye geldiğimizde veya buna 2p'yi eklediğimizde ne oluyor? Hepsi birbirine örtüşüyor, birbirine karışıyor. İşte bu Elizing'in ortaya çıkmasının sebebi. Burayı anladık mı?
+
+400
+01:05:51,123 --> 01:05:58,324
+Formül yine aynı şekilde eğer bu frekansa belli bir şey kadar eklendiğinde elde edilen sonuç aynısını getiriyor.
+
+401
+01:05:59,764 --> 01:06:05,523
+Bizim istediğimiz şey bu kosmüs bileşenlerinin karışmaması. Aynı şeyleri tekrar tekrar burada söylemiştir arkadaşlar. Gerek yok.
+
+402
+01:06:10,884 --> 01:06:17,523
+Burada da yine XT'nin XN ile elde edilmesi ile alakalı şeyler. Yani biz buraya bir
+
+403
+01:06:18,452 --> 01:06:34,052
+Örnekleme frekansı kadar bir şey ürettiğimiz eğer bu temel frekans artı, örnekleme frekansı veya şu kadar şeyler eklediğimizde işarete birbirinin bileşenlerini bulamıyoruz, elde edemiyoruz demek istiyor.
+
+404
+01:06:35,412 --> 01:06:43,832
+Ve bu karışmadan kaynaklı olarak orijinal işaret bulunan. Ama siz kosinus 1000 pt.
+
+405
+01:06:45,427 --> 01:06:51,188
+Kosnüs 2400 Pt. Bunu en az kaçla örneklememiz lazım.
+
+406
+01:06:58,195 --> 01:07:20,795
+2400'de örneklersek, ne oluyor 2400'de örneklediğimizde? İşte 1000 bölü 2400, 2400 bölü 2400. Elde edilecek bileşenler, artı 2P, eksi 2P yaptığınızda karışmıyor. Yani 5 tane frekansımız, 5 tane Sinyaller bileşenimiz olsun, onlar da ne olacaktır? Karışmayacaktır. Realizing mevzutlu şeyi bu.
+
+407
+01:07:22,099 --> 01:07:45,559
+İşte buradan size nasıl soru gelir? Bir XT işareti veririz. İçerisinde belki 3-4 tane birleşen olur. Bunu deriz ki, şu frekansla işte FS eşittir, 500 Hz ile bunu örneklediğinizde elde edilen işareti bulun. Bu işaret örneklendikten sonra, L-Icing oluşur mu, oluşmaz mı? Oluşuyorsa niye oluşuyor, oluşmuyorsa niye oluşmuyor bunu açıklayın. Buradaki söylediğimiz ifadelerle bu problemler çözülebilir.
+
+408
+01:07:47,123 --> 01:08:05,923
+Bakın bu sefer bu işareti 1000 Hz de örneklemiş. Şimdi bu 1000 Hz'in bileşenlerine bakalım. Aynı örnek buna. Bu tabi biraz aşırı bir örneklemi arkadaşlar. 100 Hz'lik böyle frekans var. Neredeyse 10 katıyla örnekliyoruz.
+
+409
+01:08:07,923 --> 01:08:25,523
+Diğer bileşeni nerede? Eksi 0.2p, 1.8p. Şununki eksi 1.8p. Bunların ondan sonra aynı 1.8p, 3.8p ile ondan sonra eksi 3.8p ile karşılıkları ama bunlar hiçbir şekilde birbiriyle örtüşmeyecektir.
+
+410
+01:08:28,023 --> 01:08:32,324
+Şurada mesela bir işaret söylemiş. Bunu demiş ki 80 ile yapalım.
+
+411
+01:08:32,467 --> 01:08:43,268
+80 ile bunu örneklediğimizde, bunu buraya getirin 0.5P, bunu buraya getirin eksi 1.5P geldi. Şu şekilde.
+
+412
+01:08:45,747 --> 01:08:55,047
+Peki bir adım daha ilerleyecek. Bunların artı P şey kadar, yani 2P, 2P eklediğinde burada karışıklık oluyor.
+
+413
+01:08:55,667 --> 01:08:59,108
+Çünkü ne yapıyorsun? Sen yüzlük bir işareti 80 ile örnekliyorsun.
+
+414
+01:08:59,636 --> 01:09:06,636
+Buradaki birleşenler tekrar birbirine sağlamıyor ve elde edilecek işaret farklı bir işaret olur.
+
+415
+01:09:06,636 --> 01:09:18,636
+Reconstruction yapıldığında. Bakalım burada kaç sayfamız kalmış. Bir ara verelim. 10 dakika sonra geldiğimizde kaldığımız yerden devam ederiz.
+
+416
+01:20:59,444 --> 01:21:02,444
+Emrican hangi pdf bu anlattığım ders notu mu?
+
+417
+01:21:08,595 --> 01:21:09,595
+Bir dakika.
+
+418
+01:21:20,787 --> 01:21:22,227
+Şurada olması lazım.
+
+419
+01:21:24,547 --> 01:21:25,547
+Açtı.
+
+420
+01:21:26,427 --> 01:21:27,707
+SAS 5.
+
+421
+01:21:41,908 --> 01:21:50,108
+Şunu acaba hocam yanlışlıkla değiştirdim mi? Tamam bunu hemen şey yapalım aklımdayken dur, oraya kaydedi dur.
+
+422
+01:21:50,108 --> 01:21:53,108
+Gördün mü?
+
+423
+01:21:53,108 --> 01:21:55,108
+Şöyle.
+
+424
+01:21:55,108 --> 01:21:59,108
+Söyledi iyi oldu.
+
+425
+01:22:14,899 --> 01:22:16,439
+Şu an ülkeni öneye.
+
+426
+01:22:36,180 --> 01:22:59,180
+Bir başka örnek. Mesela bu işareti 100'lük işareti 125'likle örneklemiş. Şimdi mesela bu şuraya gelecek, bu buraya gelecek. Herhangi bir şekilde bakın birleşenler yani burada bir DC birleşen çıkmıyor. Bir öncekinde de baktığımızda... Aslında bir ön... Ne oldu?
+
+427
+01:23:00,148 --> 01:23:03,728
+Bir öncekinde DC birleşen çıkmıyor ama ekstra birleşen çıkıyor arkadaşlar.
+
+428
+01:23:03,728 --> 01:23:05,728
+Ben bir sürü birleşen çıkmıyor.
+
+429
+01:23:05,728 --> 01:23:06,728
+Şu.
+
+430
+01:23:08,728 --> 01:23:10,728
+Şimdi eksi iki buçuk var.
+
+431
+01:23:11,408 --> 01:23:12,948
+Artı iki buçuk var.
+
+432
+01:23:13,708 --> 01:23:21,388
+Yani bunun örnekleme frekansı 200 bölü şundan iki buçuk gelecek.
+
+433
+01:23:22,927 --> 01:23:26,268
+2 çarpı pi çarpı 100.
+
+434
+01:23:26,771 --> 01:23:53,271
+çarpı n bölü 80, şu nedir? 20 bölü 8, 2.5. Şimdi bu 2.5'ler, birisi buraya geldi, eksi 2.5'ünki buraya gelecek. Ama buna 2 eklersek eksi 1.5. Şimdi bakın burada ayrıca bir bileşen varmış gibi bir şey oldu. Yeterince örnekleme yapmadığım için.
+
+435
+01:23:53,971 --> 01:24:05,412
+Bu ne yapacak? Bu üç buçuğa geçecek. Halbuki bile burada iki buçuğun, eksi iki buçuğun örnekleri var. Artı bir buçuk. Şu aralıkta ekstra frekans bileşenleri görmüş olacağız.
+
+436
+01:24:07,332 --> 01:24:15,851
+Bunun yüzünden de bunu geri oluşturduğunuzda şöyle bir bileşen çıkacaktır. İki tane bileşeni varmış gibi.
+
+437
+01:24:17,931 --> 01:24:18,832
+Tamam mı?
+
+438
+01:24:19,699 --> 01:24:24,139
+Burada da pikli nasıl kullanılıyor? Alçak geçiren filtre yapılıyor arkadaşlar.
+
+439
+01:24:24,859 --> 01:24:31,739
+Belli aralıktaki frekanslar alınacak, yani ters Fourier dönüşümü alınacak, örneğin şuraya alalım dediğinde
+
+440
+01:24:32,260 --> 01:24:36,180
+buradaki dört tane bileşen yani iki tane sinuzoidal bileşen çıkıyor.
+
+441
+01:24:36,180 --> 01:24:42,579
+Halbuki şunların çıkması lazım, bunlar fazladan geldi. O neden geldi? Şuradaki yanlış örneklemeden,
+
+442
+01:24:42,579 --> 01:24:46,340
+örnekleme frekansının az seçilmesinden kaynaklı geldi.
+
+443
+01:24:50,131 --> 01:24:53,811
+100'ü 125'le. Burada da aynı durum var.
+
+444
+01:24:57,332 --> 01:24:58,332
+Bakayım.
+
+445
+01:25:00,131 --> 01:25:08,332
+Evet, yani bunu en az 200'de yapması lazım. Şimdi 1.6'nın bir bileşeni şurada, bunun diğer bileşeni burada.
+
+446
+01:25:13,532 --> 01:25:24,932
+Bunu da hani devam ettirirsek, belli şu aralıklarda ne olacak? Bunun 2'de bir bileşeni 2Pi'de, pardon 2.4Pi'de, bunun eksi 2.4Pi'de
+
+447
+01:25:25,268 --> 01:25:39,708
+Yani birer tane düşmesi gerekirken, burada bir tane bileşen çıkması gerekirken, iki tane simzoidal bileşen çıkıyor. Bakın bunlardan bir tanesi kosmüs 1.6 pi'lik, bir de kosmüs 0.4 pi'lik frekans bileşen.
+
+448
+01:25:51,572 --> 01:26:00,572
+Sağlıklı şekilde elde edilebilmesi için işaretin içerisindeki en büyük frekans bileşeninin iki katı kadar örnekleme yapmak zorundayız.
+
+449
+01:26:00,572 --> 01:26:04,572
+Şimdi gelelim, bu konuda bitti.
+
+450
+01:26:04,572 --> 01:26:09,572
+Aslında biraz daha sabretmişseydim, tek seansla bitirmişiz.
+
+451
+01:26:09,572 --> 01:26:14,572
+Şu örneğimiz vardı, geçen hafta bir...
+
+452
+01:26:18,804 --> 01:26:20,804
+Neredeydi bu acaba?
+
+453
+01:26:22,804 --> 01:26:30,804
+Size derste yaptığım Fourier serisinin matematiksel örneğini frekans düzlemindeki karşılığında çıkartmıştık.
+
+454
+01:26:32,804 --> 01:26:33,804
+Kare dalga üretmiştik.
+
+455
+01:26:34,804 --> 01:26:35,804
+Ona bir geri gerim.
+
+456
+01:26:37,804 --> 01:26:39,804
+Uygulama şurdaydı herhalde.
+
+457
+01:26:43,347 --> 01:26:51,467
+Şimdi bu kodda ne yapıyorduk? Kare dalların frekans düzleminde işte kaç tane bileşen? 75 tane bileşen olarak. Bakın bu bir sentez işlemiydi.
+
+458
+01:26:51,467 --> 01:26:54,788
+Bunu bir şurada editörde yazalım.
+
+459
+01:26:54,788 --> 01:26:57,347
+Çalıştıkalım.
+
+460
+01:26:57,347 --> 01:26:59,347
+Yine desktop diyeceğiz.
+
+461
+01:27:07,412 --> 01:27:17,332
+Evet, orijinal işarete yakın, işte birden dörde kadar. Şimdi ben elde ettiğim bu Y işaretini analiz ederek tekrar bu Fourier kat sayılarına yakın şeyler bulabilirim.
+
+462
+01:27:18,112 --> 01:27:22,612
+Bunun yolu Fourier Transform'unu uygulamak. Peki Fourier Transform'unu MATLAB'de nasıl uygulayacağız?
+
+463
+01:27:23,772 --> 01:27:28,852
+Bir kere biliyoruz ki, biz Fourier Transform'un dersin başında değil ki, bu sürekli bir dönüşüm. Bunun ayrığı lazım.
+
+464
+01:27:30,112 --> 01:27:32,612
+Ayrık Fourier Transform'u DFT olarak geliyor.
+
+465
+01:27:33,524 --> 01:27:36,744
+Mettebin helpini açacağım bir saniye, şuradan.
+
+466
+01:27:40,243 --> 01:27:52,404
+Netlet, VFP, discrete Fourier transform. Bu bildiğiniz herhangi bir XT işaretini, bakın şöyle bir Simzoydar işaret var.
+
+467
+01:27:53,404 --> 01:28:05,203
+İçerisinde iki tane frekans birleşeni var. Fourier transform'u ne oluyor? İki tane frekans birleşeni olduğu için Simzoydar birleşen. Bunun iki tane
+
+468
+01:28:06,292 --> 01:28:12,532
+Magnetüsünü aldığımda iki tane bileşeni göreceğiz. Bir artısında bir eksisinde, iki, iki, dört olur.
+
+469
+01:28:12,532 --> 01:28:23,252
+Bunu kaydırdığımızda, biri sinüs olduğu için bunlar, birisi yukarıda, birisi aşağıda olacak ama toplamda iki tane sinüzoider bileşen vardır diyoruz.
+
+470
+01:28:23,252 --> 01:28:32,852
+Şimdi bu işareti, x işaretini Fourier transform almak için DFT olarak kullanılan fonksiyonun adı Fast Fourier Transform.
+
+471
+01:28:33,395 --> 01:28:53,155
+Şimdi Fourier'i hatırlarsanız, bir integral, bu integralin alınmasında, şöyle bakalım, E üzeri eksi J omega t dt. Bu integral dönüşümü bize neyi verecek? X omega'yı verecek.
+
+472
+01:28:55,060 --> 01:29:04,820
+Bunu kodlamaya kalktığımızda iki tane toplam sembolüne ihtiyacımız var. T'ye göre değişir. Niye? Hem bu T'ye göre değişiyor hem bu T'ye göre değişiyor.
+
+473
+01:29:05,560 --> 01:29:10,640
+XT çarpı E üzeri eksi J omega T. Bunlar tabii eksi sonsuzdan artı sonsuza.
+
+474
+01:29:11,740 --> 01:29:16,880
+Tabii sonsuzluk yok, belli bir frekans geçeceğiz. O frekansla aralığında bu toplam sembolü olacak.
+
+475
+01:29:21,184 --> 01:29:27,844
+Ayrık frekansta da ayrık konvolüsyonla bunu yapıyoruz. Mesela 1-2-1 işaretimiz olsun, biri de 1-2-3 olsun.
+
+476
+01:29:27,844 --> 01:29:32,963
+Şimdi 1-2-1 burada duruyor. 3-2-1'i ters çeviriyoruz.
+
+477
+01:29:32,963 --> 01:29:44,484
+Örtüştüyor, ilk defa şurada örtüşecek. 1-2-3. Şununla şunu çarpıp topladık. Çarpıp topladığımızda elde ettiğimiz sonuç 1. 1-2-3 bir kaydırdık, bir daha çarpıp topladık.
+
+478
+01:29:44,703 --> 01:29:54,703
+Tekrar tekrar çarpık toplamanın sonucunda elde ettiğimiz konvolüsyon gibi burada da iç içe iki tane döngü var. Bunun karmaşıklığı ne olur? Big Oji isimden.
+
+479
+01:29:54,703 --> 01:30:11,703
+Sonsuz yerine n verirsek n² olacak. Güzel. Sonsuz tane sample'umuz yok elimizde. n tane sample var. Bu n tane sample'ı şuradaki farklı frekanslı işaretlerle
+
+480
+01:30:12,500 --> 01:30:38,920
+Konvol ediyoruz. Bu DFT'nin karşılığıdır arkadaşlar. FFT burada matematiksel bir manipülasyonla buna girmiyoruz. Yani bu algoritma konusu belki. Algoritma analizi dersinde bir anlatılıyor bu. Bunu log n log n'e indiriyor. Aynı bir sıralama algoritması gibi. Bunun sayesinde bu işlem daha hızlı oluyor. Bakın FFT fonksiyonu. Biz de burada FFT'yi kullanacağız.
+
+481
+01:30:40,948 --> 01:31:04,948
+Şimdi FFT'yi uyguladığımızda gördüğümüz sonuç şu oluyor arkadaşlar yalnız. Default uyguladığımızda işaretin belli bir yere shift edildiğini görüyoruz. Bu shift'i geri almak için FFT'yi shift ile birlikte kullanmak, FFT shift fonksiyonunu kullanmak veya elde edilen frekans düzleminin shift versiyonunu kullanmak yeterli oluyor. Yani bu...
+
+482
+01:31:05,311 --> 01:31:11,992
+Frekans spektörünü çiziyoruz ya biz matematiksel hesapta. Aynı sonucu görmek için bir Shift yapmamız lazım. MATLAB bunu böyle yapıyor.
+
+483
+01:31:11,992 --> 01:31:20,551
+Python'da nasıl oluyor bilmiyorum. Python'da da benzer fonksiyonlar var ama. FFT de var, FFT Shift de var. Şimdi şöyle çalıştıralım.
+
+484
+01:31:23,351 --> 01:31:31,471
+Burada Subplot bir daha yok mu acaba? Şu Subplot 2 ile alacağız. Bakın yukarıdaki işaretim.
+
+485
+01:31:33,908 --> 01:31:45,908
+Zaman gösterimi içerisinde 5 tane bileşen olsun. Bir de DC bileşen var. Hadi bunu 3 yapalım, az görelim. Şurada da bunu bileşenlerine ayırmış olacağız.
+
+486
+01:31:48,108 --> 01:31:58,408
+Bakın yukarısı şey, şurada yaklaştırdığımda, yeteri kadar yaklaştırdığımda bir tane DC bileşen, bunu buradan görmek zor da bir de 3 tane yanında
+
+487
+01:31:59,731 --> 01:32:24,471
+Gerçi o aradakileri de şey yapıyor, şu DC bileşen, şu birinci, ikinci, üçüncü, dördüncü. Dördüncüyü de alıyor, dördüncü muhtemelen şurada bir, iki, üç, üç tane aldığı için arada bir tane konvolüsyon, interpolasyon yapıyor, o önemli değil. Bakın bunlar frekans bileşenimiz, diğer bileşenler sıfırlanmış bir vaziyette. Çünkü o bileşenleri istemedik. Ama az da olsa o değerler var. Şimdi bunu nereden görebiliriz?
+
+488
+01:32:26,868 --> 01:32:43,868
+Büyük X'e baktığımızda, içerisinde bakın çok küçük değerler görüyoruz. Bu çok küçük değerler bir yerde hani şeydir, önemsiz değerlerdir. Zaten şuradaki örnekte de suppression yapıyor. Diyor ki, buradaki değerler diyor, şundan küçükse doğrudan bunu sıfırla diyor.
+
+489
+01:32:43,868 --> 01:32:53,868
+Güzelmiş yani. Şu örneği yapalım biz mesela, Ctrl-C diyelim. FFT işte bu işe yarayan bir örnek.
+
+490
+01:32:53,939 --> 01:33:18,180
+şey fonksiyon. Şunu şöyle alacağım. Editör diyeceğim. Şunları kosinüs yapıyorum arkadaşlar. Daha düzgün görelim diye. 2P 100T diyelim. Bir de 400T olsun. Zamanın üzerimizdeki şeyler.
+
+491
+01:33:19,347 --> 01:33:29,548
+Sonra bunun Fourier transformunu almış. Fourier transformunun magnetüsünü almak, yani kompleks taraflarını almıyor, sadece real taraflarını alıyor.
+
+492
+01:33:32,048 --> 01:33:38,948
+Ve gereksiz yerleri bastırıyor ki çok fazla küçük değerler görülmesin, düzgün bir frekans spektrumu görelim diyor.
+
+493
+01:33:40,847 --> 01:33:43,448
+Hatta şurada doğrudan hepsi varmış galiba.
+
+494
+01:33:49,203 --> 01:33:51,203
+Neyse, şuradakini bekle.
+
+495
+01:33:53,203 --> 01:33:56,203
+Sonra burada bir frekans düzlemi gösteren vektör oluşturacak.
+
+496
+01:33:58,203 --> 01:34:01,203
+Şu yukarıdakini zaten plot eklemiş.
+
+497
+01:34:04,500 --> 01:34:24,819
+Biz şöyle yapalım 3, 1, 1, 3, 1, 2, şurada da subplot, 3, 1, 1, 1, 1, 3, plot, t'ye göre x'i çizdir.
+
+498
+01:34:35,796 --> 01:34:36,636
+Bir şeye gerek yok.
+
+499
+01:34:37,996 --> 01:34:40,015
+X işaretimizi T'ye göre de çizdirelim.
+
+500
+01:34:40,115 --> 01:34:41,056
+Hepsini birlikte görelim.
+
+501
+01:34:59,283 --> 01:35:01,884
+Siyahı tut dedi, üçüncüyü niye çizmedi acaba?
+
+502
+01:35:01,884 --> 01:35:04,884
+Sat, plot, plot, star, hı?
+
+503
+01:35:13,363 --> 01:35:15,363
+Şu magnitude'umuz.
+
+504
+01:35:16,963 --> 01:35:21,363
+Şey biraz yavaş çalışıyor. Diğerlerini daha hesaplayamadı.
+
+505
+01:35:22,363 --> 01:35:25,363
+Gerçi fazla çizdirmesi lazım.
+
+506
+01:35:28,564 --> 01:35:29,924
+Şunları bir iptal edeyim.
+
+507
+01:35:29,924 --> 01:35:30,744
+Laplace-task.
+
+508
+01:35:44,564 --> 01:35:47,384
+Window bakımının normalde çalışması bir tuş görüntü.
+
+509
+01:35:57,908 --> 01:36:02,507
+Çok az görünüyor çünkü şu frekanslar mı acaba? Şunu 15 plan yapsak yine.
+
+510
+01:36:04,308 --> 01:36:05,068
+30 yapsak.
+
+511
+01:36:06,347 --> 01:36:08,148
+Cosinus 2PTX.
+
+512
+01:36:16,756 --> 01:36:23,236
+Şu bizim sayısal işaretimiz, frekansı tabii şey zamanı şey yaptık, biraz çözümünü düşük yaptık.
+
+513
+01:36:24,355 --> 01:36:36,775
+Bunun içerisinde iki tane frekans bileşeni var. Birinin frekans bileşeni 30, birisi burada şey 15 ama bakın burada shift edilmiş, sıfırdan yüze gösteriyor.
+
+514
+01:36:36,775 --> 01:36:41,876
+Normalde bunu şöyle göreceksiniz, yani yarıya bölün, 30 dediğimiz şurada.
+
+515
+01:36:42,131 --> 01:37:03,731
+Gerçi bir 15 burada, 30 da burada. Şurayı aynalanmış haliyle görmek lazım. Yani bir de bunun eksi frekansları oluyor da bunlar eksi frekanslar öyle düşünün. FFT şifre yaptığımızda onu da görebiliriz. İşte faz gösterimini zaten derste gördüğümüz gibi. Bu şekilde analiz edebiliyoruz. Mesela size bir ses dosyası kaydetmenizi isteyeceğiz.
+
+516
+01:37:04,948 --> 01:37:11,948
+Ses dosyası kaydettiğinizde telefon tuşlarının analizini hangi tuşa basınca onu bulmanızı isteyeceğiz.
+
+517
+01:37:11,948 --> 01:37:24,948
+Dolayısıyla burada da diyeceğiz ki mesela buradaki frekansımız kaç? Yani iki tane pik verdi. Birincisi 15'te, öbürü de nerede? 30'da. Bakın buna uygun bir şey bulduk.
+
+518
+01:37:24,948 --> 01:37:31,948
+Bu bulduğumuz frekanslar kaç tuşuna karşılık geliyorsa onun bir tablosu olacak. Orada göreceksiniz.
+
+519
+01:37:32,623 --> 01:37:58,884
+Bu üç nolu sestir veya bu kare tuşudur, bu artı işte beş tuşudur diye yorumlamanızı isteyeceğiz. Bunun dokümanını hazırlıyorum. Bugün yarın şey olur size duydu. Dolayısıyla FFT'yi burada kullanmanızı bekliyor olacağız. Bir tane size hazır bir dosya vereceğim. O dosyanın ne olduğunu doğru bulmanız gerekiyor. Bir de kendiniz kaydettiğiniz bir dosyanız olacak. İlk ödevler açıklandı. Google Drive Plus önünde var.
+
+520
+01:38:01,684 --> 01:38:06,644
+Kendinizde ikinci bir analiz yap, iki tane veri üzerinde analiz yapmanız gerekecek.
+
+521
+01:38:08,604 --> 01:38:13,823
+İlk ödevin çözümünü de hızlıca göstereyim, bir arkadaşımız sormuştu.
+
+522
+01:38:20,467 --> 01:38:23,807
+Şimdi şöyle bir şey de söyleyelim.
+
+523
+01:38:31,123 --> 01:38:33,123
+Burayı anladık mı şuradaki konu?
+
+524
+01:38:35,123 --> 01:38:37,123
+Önce onu bir konuşayım da.
+
+525
+01:38:43,699 --> 01:39:08,019
+Şimdi şu ödevle alakalı bir şey daha söyleyeyim. Siz kaydettiğiniz ses dosyası sürekli çizecek olursak, şöyle bir şey, böyle bir veri. Bunun bilgisayardaki karşılığı n, böyle bir şeyler. Bizim dürtü fonksiyonumuz xn neydi?
+
+526
+01:39:09,460 --> 01:39:14,800
+Şöyle bir sistemden geçtim diyordu, Y'ye neşittir, ödev metnini açayım bir dakika.
+
+527
+01:39:39,572 --> 01:39:53,572
+Xn, yn, xn artı 0.4, xn eksi 400 şu. Şimdi ben burada sistemi kurgularken bir kere dürtü yanıtını dikkate alarak yapacaktınız.
+
+528
+01:39:55,231 --> 01:40:00,751
+Puanım eksik diyenler genelde bu yüzden eksik oldu. Bu şu demek değildir arkadaşlar.
+
+529
+01:40:02,068 --> 01:40:27,208
+Elinizdeki x'en sayısal işaretin şu, sizin ses kaydettiğiniz sesi. 400. ve 800. örneğini ekleyerek konvolüsyon al demek değildir. Bu işaretin içerisinde 400. ve 800. anlardaki bileşenleri konvole et demektir. Dolayısıyla bizim burada bir hn'imiz olacak. hn nedir? Delta cinsinden yazacak olursak, deltaN.
+
+530
+01:40:27,828 --> 01:40:54,127
+Normalde bu işaretle gelen n. işareti xn'e bağlı değil. Yani herhangi bir n eşittir 0 anındaki işareti, n eşittir 400 anındaki işareti ve n eşittir 800 anındaki işareti konvolüsyona dahil edecek. Bu da ne demek? H dediğimiz dizi, bir şurada 1 var. Her yer 0, 0, 0. Bir 400. anda 1 var. Bir de 800. anda 1 var.
+
+531
+01:40:55,028 --> 01:41:22,028
+Burada bir sekiz yüz. Bundan sonrakiler de sıfır. Zaten sekiz yüz tane şey yeterli burada. Sonra ben mesela burada sekiz, yedi, on, on beş falan böyle sayılarımız var. Bunu ters çevirip getiriyorum. Şimdi getireceğim şey burada, ilk burada konvore ettiğim şey şu birlerle konvore ediyorum. Dolayısıyla ne seslendirdiysem beş saniye boyunca şurada onun aynısını bir duyuyorum. İleride
+
+532
+01:41:22,771 --> 01:41:33,872
+Tabi bu konvolüsyon kaymaya devam ediyor. Belki yeteri kadar uzunlukta, belki 500'den fazla sample var. Yani 400'e gelmeden bu konvolüsyon işlemi hala 1 ile çarpmaya devam ediyorsunuz.
+
+533
+01:41:35,051 --> 01:41:50,011
+Niye? 5 saniye çarpı 44 gün dersek zaten burada ne var? 200 gün örnek var belki. Çünkü 1'lerle çarpılırken 400'e geldiğinde örneğiniz, aynı sesler tekrar sesin içerisine katış eklenmeye başlıyor. Yani buna cocktail party denir.
+
+534
+01:41:50,644 --> 01:41:56,944
+Şurada elde ettiğim konvolüsyon sonucunun aynı sonuçları şurada bir daha ekleniyor. Dolayısıyla ilk yankı burada geliyor.
+
+535
+01:41:58,003 --> 01:42:05,304
+Biraz sonra ikinci yankı geliyor. Dolayısıyla ne oluyor? İki tane yankı eklenmiş gibi bir ses duyuyoruz. Mantığı buydu.
+
+536
+01:42:06,024 --> 01:42:14,864
+Şurada doğrudan Xn'in 400. örneğini burada konvolüsyon yapanlar yanlış yaptı. Çünkü ben Xn'in 400. örneğinde belki sıfır var.
+
+537
+01:42:15,507 --> 01:42:38,827
+Veya işte çok büyük bir değer var. Onu buraya getirip yaparsam, eklersen yanlış bir iş yapmış olurum. Bu konvolüsyon olmuyor. Konvolü edeceğimiz sistem, şuradan çıkartacağımız bilgini, bir kere Yn'in Xn oranını bulacağız. Hep dedik ki işte frekans, impuls responsu, ondan sonra dürtü, yanıtı falan dedik. Onu önce Hn'e çevirmeniz gerekiyor. Hn de bu.
+
+538
+01:42:39,283 --> 01:42:47,283
+Bundan elde edeceğiniz HN sonucuyla konvolüsyonu hesaplıyoruz. Yanıtımız da şu şekilde hemen gösterelim.
+
+539
+01:42:48,283 --> 01:42:58,283
+Zaten bir kısmını vermiştik, kolay bir ödevdi. Şurada ses kayıt yapılıyor arkadaşlar, işte sound falan var. 800'lük bir dizimiz var.
+
+540
+01:42:58,283 --> 01:43:03,283
+Burada 1, 400 ve 800 de, bunlara da 0.4 demişiz yani.
+
+541
+01:43:03,792 --> 01:43:27,332
+Birebir aynısı olmasın da, yankı biraz daha alçak sesli olsun. Aynısı olursa çünkü sesler çok böyle karmaşık olacak, daha fazla gürültü duyuruldu. Orada 0.4 demişiz, bir şey değil, sıkıntı değil. Ne oluyor? Konvolüsyon uyguluyoruz. Konvolüsyon yapacağımız şey de burada iki tane döngü. Yn ile xn-k'nın hk ile çarpımlarını sürekli yn'e toplayıp.
+
+542
+01:43:27,731 --> 01:43:38,731
+Devam ediyoruz. Bu ilk döngümüz burada 800'den başlamış, sonra 801'den işte Leng X'e kadar. Bu döngü devam ettiğinde, yani ikisi bittiğinde bu işlem tamamlanıyor demektir.
+
+543
+01:43:38,731 --> 01:43:48,731
+Dönkümüz böyleydi. Şu an mesela bunu çalıştırdığımda, Octave biraz yavaş çalışıyor, onun için hemen yanıt alamıyoruz.
+
+544
+01:43:52,819 --> 01:43:55,819
+Şimdi mesela ses kaydını aldı, belki siz duymadınız.
+
+545
+01:43:56,819 --> 01:44:09,319
+Şimdi işlemeye devam ediyor. Bakın şurada bayağı bir sürecek. Octave'ın bu işlemi seri yapmasıyla alakalı. Şimdi bunu da açıklayacağım, dersi bitireceğim. Bu yapa dursun.
+
+546
+01:44:10,819 --> 01:44:15,148
+Şurada bir şey vardı, neredeydi o? Bakalım onları koyduk.
+
+547
+01:44:18,579 --> 01:44:21,380
+DIP Metlat diye bir şey vardı ya.
+
+548
+01:44:25,811 --> 01:44:37,811
+MATLAB bir dil değil bir kere. Yani paket bir program ama arka planda dil gibi kullanabiliyorsunuz. Vektör tabanlı bir dil.
+
+549
+01:44:37,811 --> 01:44:45,811
+Eğer siz bu vektör tabanlı dilde klasik programlama gibi bir şey yaparsanız programımız yavaşlıyor.
+
+550
+01:44:45,811 --> 01:44:52,811
+Çünkü veri çok fazla büyük. Yani 10 saniye müzik kaydettiğinizde 400 bin tane sample var. Şu ana kadar hiç.
+
+551
+01:44:53,779 --> 01:45:13,140
+Belki C derslerinde 400 bin örnekle uğraşmadınız. Yani Random Lumber Generator bile yapmadınız. Dolayısıyla burada döngüler yerine paralel programlamanın amacı olan, kullanım yeri olan vektörel işlemler yapılıyor. Metrebin bu işi hızlı yapmasının sebeplerinden birisi bu.
+
+552
+01:45:14,079 --> 01:45:20,420
+Niye böyle var? Şimdi ben şöyle bir dizim var. Bir de böyle bir dizim var.
+
+553
+01:45:21,684 --> 01:45:35,184
+Bir de böyle bir dizim var. Ben buna A dizisi dedim, B dizisi dedim, buraya da C dizisi dedim. İki diziyi toplamak için nasıl bir kod yazarsınız C ile? İkisini toplayıp üçüncüye atacaksınız.
+
+554
+01:45:40,500 --> 01:45:42,039
+5 tane 4 lazım.
+
+555
+01:45:46,676 --> 01:45:48,676
+İki diziyi toplamak için iki formül lazım.
+
+556
+01:45:50,916 --> 01:45:55,116
+Bir formülü hallederiz değil mi? Yani sonuçta bu eşit uzunlukta.
+
+557
+01:45:55,836 --> 01:45:59,736
+Karşılıklı olarak A'nın İ'siyle B'nin İ'sini toplayacağım, C'nin İ'sini aktaracağım.
+
+558
+01:46:00,516 --> 01:46:01,436
+Karmaşıklık ne olur?
+
+559
+01:46:04,476 --> 01:46:05,936
+Big O'yan veya Big T'yan.
+
+560
+01:46:08,016 --> 01:46:08,956
+Güzel. Evet.
+
+561
+01:46:10,316 --> 01:46:11,556
+Şu anki işlemcinin durumu.
+
+562
+01:46:12,372 --> 01:46:31,851
+Ve Metlab'in kendi kullandığı kütüphane diyor ki, ben şuradaki şeyle, şuradaki şeyi topladığında elde edeceğim buradaki sonuç, şunların toplamını etkiliyor mu? İkincilerin toplamını etkiliyor mu? Etkilemiyor. Bunlar birbirinden bağımsız bir şekilde, paralel bir şekilde işlenebilir.
+
+563
+01:46:32,771 --> 01:46:36,952
+İşlemcide zaten yeteri kadar çekirdek var. Tek çekirdekli bir işlemci değil Allah'tan.
+
+564
+01:46:37,587 --> 01:47:04,127
+Pipeline denen bir sürü yapılar var. Diyor ki MATLAB bunu vektörel toplama yapıyor. Vektörel toplama dediğinde de şunu yaklaşık olarak O1 seviyede, ikisini tek bir seviyede de toplayıp veya çarpıp hangi matematiksel işlemi yapacaksanız sonucu elde etmesi demek. Yani bu artı bunu otomatik olarak vektörel topluyor. Onun için MATLAB vektörel veya MATLAB tavanlı bir dildir diyoruz. Aynısı çarpmada da var. Veya MATLAB'i çarpmak istiyorsunuz.
+
+565
+01:47:04,500 --> 01:47:31,760
+İki matriz çarpalım. Şuraya. Şunla şurayı çarpıp toplarken yaptığımız işi, şunla şurayı çarpıp toplarken yaptığımız işi etkilemiyor. Birbirinden bağımsız şeyler. Dolayısıyla burada bir sürü karşılıklı elementer matriz çarpım işlemleri var. Bunlar birbirinden bağımsız olacağı için karşılıklı olarak matriz çarpımlarını aynı şuradaki gibi O bir seferde yapıp O n kareden daha az karmaşıklığa, daha hızlı sonuç üretmeye.
+
+566
+01:47:32,243 --> 01:47:46,563
+üretme imkanına sahip oluyor Mettep'te. Bu Python'da da olabilir. Dolayısıyla burada for döngülerini, bu tarz dillerde çok performansı yavaşlatır. Burada bazı şeyler var, bunlar bizimle alakalı değil.
+
+567
+01:47:46,563 --> 01:47:53,843
+Bakın bu bizim bir for döngümüz, Mettep'teki. Şu da while döngüsü, bildiğimiz programıma ifadeleri.
+
+568
+01:47:55,604 --> 01:48:08,244
+Diyor ki, burada looplar çok efisent değiller, deneyi de var bunun. Demiş ki, ben birden ona kadar sayıların karesini bir vektörde tutacaksam, burada C'de yapacaksanız bunu ne yaparsınız? For döngüsü yazarsınız.
+
+569
+01:48:09,764 --> 01:48:20,503
+Bu ne yapıyor vektör olarak? X bir vektörün X vektörü oluşturuyor. Bu X vektörünün her birinin kare köklerini alıp Y vektörüne kaydediyor. Bu daha hızlıdır düşünün, paralel yapıyor.
+
+570
+01:48:23,283 --> 01:48:43,183
+YS'inin işte kare kökünü al, bu şekilde döndür, 10 defa döndür. Yani zaten işlemcinin nasıl desem yeterince şey var, çekirdeği var. Şöyle örnek vereyim, Boğaz Köprüsü 6 şerit. Siz diyorsunuz ki birer birer arabalar geçsin, trafik sıkışmasın.
+
+571
+01:48:43,731 --> 01:48:49,592
+Arka pila arkada ne oluyor? Zaten bekleme. Halbuki sen daha fazla geçirme imkanın var. Yani öyle bir şeye sahipsin.
+
+572
+01:48:50,252 --> 01:48:56,852
+Döngüler yerine bu tarz vektörel işlemleri kullanmak bu işi hızlandırıyor. Bir arkadaşınız sormuştu. Mesela şöyle bir örnek yapılmış.
+
+573
+01:48:57,372 --> 01:49:04,592
+Döngülerin kullanımı da kendi içerisinde farklı. Şimdi demiş ki bir tane vektörümüz var. 10.000 elemanını sıfırlarla doldurmuş.
+
+574
+01:49:04,592 --> 01:49:08,112
+Ve bunun işte 1'e 10.000'lik bir sayısı vardır. Bu da aynı şekilde.
+
+575
+01:49:08,787 --> 01:49:20,647
+Şimdi bu birden 11'e kadar, bu iki döngü dönecek, 10.000'e kadar dönecek ve içerisine her bir elemana 100 ekleyecek, anın içerisinde.
+
+576
+01:49:21,867 --> 01:49:26,247
+Bu işlemi yaptığında 19 saniye sürüyormuş arkadaşlar.
+
+577
+01:49:26,787 --> 01:49:31,227
+Şimdi bu bilgisayar mimarisinde matriz dolaşımı yaparken,
+
+578
+01:49:32,148 --> 01:49:37,148
+sağdan sola dolaşımla yukarıdan aşağıya dolaşım arasında bir performans farklılığı var.
+
+579
+01:49:38,148 --> 01:49:46,627
+Eğer bunu şu şekilde J'yi yukarıda, I'yi aşağıda yaparsa, sonuçta yine sonuç aynı gelecek matematik olarak. Bu üç saniyeye düşüyor.
+
+580
+01:49:46,768 --> 01:49:49,268
+Tik taklar da burada size süre farkını veren şeyler.
+
+581
+01:49:50,507 --> 01:49:56,728
+Eğer bunu doğrudan vektörel olarak her bir elemana yüz ekle dersen, bu zaten bunun yani şurada yaptığın şey aynı.
+
+582
+01:49:56,887 --> 01:49:59,987
+Bakın 0.44 saniyede bu işlemde.
+
+583
+01:50:00,000 --> 01:50:25,920
+yapıyormuş. Yani isterseniz bu kodları kopyalayıp ekran görüntüsü alın, deneyin. TikTaklarla elde edeceğiniz zaman farkı size bunu gösterecektir. Optimize program yazmak için MATLAB veya Python gibi dillerde klasik döngülerden olabildiğince kaçınmak ve işlemleri vektörel işlemleri veya matriz işlemleri yapabilmek.
+
+584
+01:50:26,804 --> 01:50:51,823
+faydalıdır. Bunun avantajı da bu. Ama bunu daha çok kontrol ve elektronikçiler kullanıyor. Siz MET'le bir bitirme projesi veya ara proje yaparken veya Python'ı o zamanlar kullanacaksınız. Sizin için önce bilgisayar mühendisi için önce Sinyin mantığından Sinyin bellek ve hız kullanımını en iyi şekilde öğrenmek. Ondan sonrası zaten daha kolay.
+
+585
+01:50:52,787 --> 01:51:01,188
+Niye önce Siyer öğretiyoruz diye bazen şey soru geliyor ya, işte sebeplerinden biri en temelden öğrenmek. Hatta size şimdi şunu da göstereyim.
+
+586
+01:51:01,188 --> 01:51:06,688
+Burada bir Mettap hocası bu derste, Mettap hocasının aynı zamanda bir Siyer hocasıyım.
+
+587
+01:51:06,688 --> 01:51:19,887
+Tio Baby Index, bu ranking sitesi. Yıllara göre en fazla kullanılan diller, tabii sürekli güncelleniyor, bunun hangi kriterleri kullandığı,
+
+588
+01:51:21,619 --> 01:51:47,880
+Şu an hesaplama bitti, bakın ses geldi bana arkadaşlar, siz duymadınız. Oktav arka planda işi bitirdi. Neyse, bunun hangi kriterleri kullandığını bu sayfadan okuyabilirsiniz. Bu benim bulduğum çok basit bir sayfa değil, bayağı dünya çapında kullanılan bir şeydir. İyi bir ranking şeyi. Kredi derecelendirme şirketleri gibi var ya, bu da onun gibi bir şey. Her yerde multiler.
+
+589
+01:51:48,756 --> 01:52:14,056
+Siyi yıllarca birinciydi, şu an yine TAP seviyede. Metlab gibi diğer liderler zaten şu an aşağılarda, bayağı aşağılarda. Siyinin gelişimine baktığınızda çok daha böyle yıllara göre şunu değiştirebiliyorsunuz. Siyi hep tepelerde kalmıştır. Hatta Assembibi de çok tepelerdedir. Metlab'e göre baktığınızda Assembibi de yukarıdır. Niye? Bir şeyi en temelden her şeyle sizin olmanız isteniyorsa,
+
+590
+01:52:14,804 --> 01:52:19,804
+En temelden yapacağınız diller maalesef hala C, C++ ve gerektiğinde assembly.
+
+591
+01:52:19,804 --> 01:52:29,804
+Üçüncü biri diyor, Python bile değil. Şu an Python'ın tepelerde olması sebebi, buradaki kullanılan ranking, kriterlerinin Python'a uygun olması aslında bir yandan.
+
+592
+01:52:29,804 --> 01:52:37,676
+Python'ı kötülemek için demiyorum tabi burada da. Yani bir MATLAB karan değil yani. MATLAB'in zaten dil olmadığını ifade ettim.
+
+593
+01:52:37,939 --> 01:52:47,539
+Data Science ile beraber ve işte gömülü sistemlerde ve web tarafında Python çok kullanıldığı için piyasaya şu an veya bu literatüre hakim bir dil.
+
+594
+01:52:48,339 --> 01:52:58,559
+Ama C'nin ilk çıktığı yılları, 60'ları göz önüne alırsanız bu durumda olması gayet C'ye saygı duyulması gerektiğini söylüyor.
+
+595
+01:52:59,619 --> 01:53:04,039
+Ve eğer bir şey her şey ile sizin olacaksa, tamamen size ait olacaksa,
+
+596
+01:53:05,011 --> 01:53:19,851
+C'yi de kodlamanız gerekiyor veya C++'da. Şu an robotikçi arkadaşların yaptığı şeyler de C++ üzerinde kütüphane yazmak bizim bölümdekilerin veya işte diğer low level seviyeye gerektiren alanlarda C ile işlem yapmak zorunda var.
+
+597
+01:53:20,851 --> 01:53:30,412
+Burada bunun kriterleri okumanızı tavsiye ederim. Bakın kimler nesene kazanmışlar? Bunların başka şeyleri var. Hangi kriterler oldu? Okursanız.
+
+598
+01:53:31,188 --> 01:53:38,627
+Bu konuda genel kültür bakım. Şu 9086, 91, 96 bunlar kimler birinci. Python'lar herhalden gelmiş.
+
+599
+01:53:38,627 --> 01:53:45,627
+Bir aralar Visual Basic çok şeydi. Şu an Visual Basic'in pek hesamcısı yok.
+
+600
+01:53:45,627 --> 01:53:53,347
+Ama şu an domine edenler şunlar. Biraz da JavaScript'in parları da çıkıyor. Var mı sorunuz?
+
+601
+01:53:55,988 --> 01:53:58,807
+Hocam, ben geçen haftaki dersle ilgili bir şey sorabilir miyim?
+
+602
+01:53:59,028 --> 01:53:59,368
+Efendim.
+
+603
+01:54:00,328 --> 01:54:09,768
+Hocam, biz geçen hafta soru çözerken temel frekansla ilgili bir soru çözmüştük de. Temel frekans şey mi acaba? Omega sıfır mı yoksa F sıfır mı? Onu soracaktım.
+
+604
+01:54:10,028 --> 01:54:11,828
+İkisi de olur. Söyleyeyim.
+
+605
+01:54:13,648 --> 01:54:15,608
+Temel frekans bir kere nasıl hesaplanıyordu?
+
+606
+01:54:18,888 --> 01:54:20,328
+Bunu hatırlıyor musun?
+
+607
+01:54:21,043 --> 01:54:23,043
+Yani omega 0 olarak mı?
+
+608
+01:54:23,043 --> 01:54:25,043
+Yok hesabı nasıldı? İkisi de?
+
+609
+01:54:26,043 --> 01:54:27,043
+İkisi de fark etmez.
+
+610
+01:54:29,043 --> 01:54:34,043
+Hocam birinde 1 bölü T0 yapıyordu, birinde 2P bölü T yapıyorduk.
+
+611
+01:54:35,043 --> 01:54:40,043
+Tamam, o periyodik bir işaretse, şöyle bir periyodik işaretimiz var.
+
+612
+01:54:42,043 --> 01:54:47,043
+İşte bu mesela periyodu 2P olsun.
+
+613
+01:54:48,435 --> 01:54:55,115
+Tamam mı? 2P'de 1 kendini şey yapsın. Bunun T0 eşittir, 2P'dir. F0 dediğimiz 1 bölü 2P'dir.
+
+614
+01:54:56,355 --> 01:55:04,695
+Omega 0'da nedir? 2P'ye F'tir. Açısal frekanstan. Yerine yazarsan omega 0'ı, 2P bölü 2P'den 1 gelir.
+
+615
+01:55:05,975 --> 01:55:12,836
+Eğer ben burada süre olarak 2P değil de mesela 5 saniye verseydim, 2P şeklinde.
+
+616
+01:55:14,100 --> 01:55:40,899
+TS0'ımız ne olurdu? 5 olurdu. F0'ımız 1 bölü 5 Hz. Omega0'ımız da 2P bölü 5 olacak. Bunun birimi Hz. Biliyorsunuz saniye temel birim, 1 bölü saniye Hz demektir. 2P radyan, şunun birimi saniye. Farkları bu. Ama bu temel frekansı periyodik bir işaretten hesaplamanın oluyordu. Bir de eğer benim Fourier serilerim varsa,
+
+617
+01:55:41,716 --> 01:55:56,396
+Yani Fourier serilerini açtıysam işaretledim. Yani karmaşık herhangi bir işaretse, x-d işaretiyse. Bunun içerisinden ben frekans bileşenlerini f1, f2, f3, fn bulsam, bunun frekansı nasıl oluyordu? f0.
+
+618
+01:55:59,596 --> 01:56:01,976
+Obef ne alıyorduk?
+
+619
+01:56:02,696 --> 01:56:03,716
+GC diye alıyorduk.
+
+620
+01:56:07,731 --> 01:56:25,452
+Frekanslar Omega cinsinden varsa onu da olabilir. B0, pardon, B1, B2, B3, F yazıyorsam, B2, B3, Bn. Bu ne demek? Bunların OBEP'lerini aldım da zaten 2P ortak ya.
+
+621
+01:56:27,032 --> 01:56:34,572
+2P'ler ortak olduğu için hiçbir şey fark etmiyor. Oradan da GCD alıp Omega 0'ı bulabilirsin veya F0'ı bulursun F0'dan.
+
+622
+01:56:35,283 --> 01:56:36,723
+Omega'ya geçişebiliriz.
+
+623
+01:56:37,943 --> 01:56:38,323
+Olur.
+
+624
+01:56:40,103 --> 01:56:40,943
+Olur mu şu an?
+
+625
+01:56:42,183 --> 01:56:46,603
+Tamam hocam, teşekkür ederim. Öyle mesela bize o tarz bir soru gelse, hangisini yazacağıma emin olmalısınız.
+
+626
+01:56:46,603 --> 01:56:53,443
+Şöyle, şimdi biz Fourier transformunda bir bölü T0 dedik.
+
+627
+01:56:54,443 --> 01:56:57,503
+XT çarpı E üzeri eksi J K
+
+628
+01:56:58,515 --> 01:57:11,155
+Omega 0 T yazıyoruz formülde. Ama bazen formülü şöyle de görürsün. E'li de eksi J, K, 2P, F0, T diye de görürsün. Hiçbir şey fark etmiyor demektir. Sadece birbirinin yerine koymaktır.
+
+629
+01:57:12,655 --> 01:57:25,256
+Omega'yı zaten eğer sen şurada hesapladıysan, burada yazmana gerek yok. Hesaplamadıysan 2P, F0 şeklinde eğer elinde F0 varsa, şurada açık halinde yazacaksın demektir.
+
+630
+01:57:26,452 --> 01:57:27,711
+Tamam hocam, teşekkür ederim.
+
+631
+01:57:28,152 --> 01:57:28,612
+Rica ederim.
+
+632
+01:57:28,851 --> 01:57:29,652
+Başka soru soru var?
+
+633
+01:57:33,587 --> 01:57:38,587
+Bu şekilde kafanıza takılan şeyleri sormaktan çekilmeyin arkadaşlar. Teşekkür ederim soru sorduğunuz için.
+
+634
+01:57:38,587 --> 01:57:46,587
+Yani daha sonra hani sınavdan sonra ancak yanlışınızı görmüş oluyorsunuz ama sınavdan sonra çok geç olabiliyor.
+
+635
+01:57:46,587 --> 01:57:50,587
+Onun için öncesinde sormak her zaman sizin için avantajlı.
+
+636
+01:57:50,587 --> 01:57:55,275
+Evet, bugünlük bu kadar. İki grup için de...
+
+637
+01:57:55,572 --> 01:58:19,352
+Hani böyle biz biraz daha onda olduğumuz için hem uygulamalı hem de biraz böyle basit konular oldu. Gelecek hafta Fourier Transform'unun bir arızası var. O arızadan bahsedip, o arızayı nasıl giderebiliriz? Yani Fourier serileri yetmiyor dedik, Fourier Transform dedik. Fourier Transform'la yetmediği durumda sürekli zamanda Laplace Transform'unu göreceğiz.
+
+638
+01:58:20,083 --> 01:58:23,304
+Ondan sonra bir de bunun ayrık tarafına bakacağız, dersimizi bitireceğiz.
+
+639
+01:58:24,463 --> 01:58:31,083
+Herkese şimdiden iyi akşamlar. Ödevi de herhalde bir iki gün içerisinde bir aksilik olmasa ilan etmiş oluruz.
+
+640
+01:58:32,063 --> 01:58:33,344
+Kendinize iyi bakın, görüşmek üzere.
