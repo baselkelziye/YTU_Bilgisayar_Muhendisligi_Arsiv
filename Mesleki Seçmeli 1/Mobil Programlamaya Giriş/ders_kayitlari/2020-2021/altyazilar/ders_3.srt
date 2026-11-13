@@ -1,0 +1,3967 @@
+1
+00:00:00,000 --> 00:01:12,719
+Evet arkadaşlar merhaba hepinize hoş geldiniz üçüncü haftaya mikrofonları kapatalım lütfen bu durum çok sık gerçekleşiyor lütfen dikkat edin zor durumda kalmayın yani ben kendi adıma çok kritik değil ama sizin için sıkıntılı olabilir özellikle birkaç kez kontrol etmenizi tavsiye ediyorum.
+
+2
+00:01:12,719 --> 00:01:42,079
+Hoş geldiniz güzel bir hafta diliyorum hepinize bu hafta kaldığımız yerden devam edeceğiz biraz geçen hafta mobil programlama tekniklerini konuşuyorduk onun ötesinde bu hafta bir ödev vereceğim size cuma günü ya da cuma ertesi gibi vermiş olurum ödevi ödev mobil uygulamalarla ilgili bir ödev olacak ama tabii kodlama ödevi değil bir araştırma ödevi olacak.
+
+3
+00:01:42,280 --> 00:02:19,539
+Detaylarını sizle paylaşıyor olacağım şimdi yavaş yavaş ben ekran paylaşımına geçiyorum hemen buradan ayarlamalarımı yapayım o sırada herhangi bir sorusu olan bir bilgi aktarmak isteyen varsa o konuda da söz olabilir şu konuda da bilgi vereyim o konuyu da netleştirelim.
+
+4
+00:02:19,539 --> 00:02:41,539
+Önümüzdeki hafta büyük olasılıkla yavaş yavaş artık başlayacağız kodlama işine o yüzden yani yüzde yüz olmamakla birlikte herhalde başlarız bir yerden diye düşünüyorum Android stüdyonun en son sürümünü indirebilirsiniz IDE olarak integrated development environment olarak.
+
+5
+00:02:41,539 --> 00:03:05,539
+Geliştireceğimiz API olarak da 8'i belirleyebilirsiniz şimdi yaygınlık açısından değerlendiriyorum kendi elimdeki araştırma fonundan aldığım telefonun sürümünü gözeterek de bunu söylüyorum tabii daha yeni sürümler kullanabilirsiniz herhangi bir sıkıntı yok.
+
+6
+00:03:05,539 --> 00:03:22,539
+Fakat benim size vereceğim ilgiler genel olarak API olarak Android 8.0 API'de de tam kaçı denk geliyordu hatırlamıyorum 27 civarında olması lazım ama buna denk geliyor bu yüklemeleri lütfen yapın.
+
+7
+00:03:22,539 --> 00:03:30,539
+Önümüzdeki hafta itibariyle burada bu detayları konuşuyor olacağız.
+
+8
+00:03:30,539 --> 00:04:06,009
+Şimdi ekran paylaşımı yapayım bu sırada şu an görebiliyorsunuz diye tahmin ediyorum en son kaldığımız nokta burasıydı.
+
+9
+00:04:06,009 --> 00:04:19,009
+Önce mobil işletim sistemlerini konuşmuştuk onların kritik noktalarından bahsetmiştik diğer işletim sistemlerinden farklarından bahsetmiştik iOS ve Android'i birbiriyle kıyaslamıştık.
+
+10
+00:04:19,009 --> 00:04:32,009
+Farklı piyasada yer alan ismi geçen geçmişte yer almış artık aramızda bulunmayan ama şu anda bulunan işletim sistemlerini de konuştuk.
+
+11
+00:04:32,009 --> 00:04:43,009
+Onları tabi biraz daha detaylı göz atmanız faydalı olacaktır bilgide harcınızı genişletmek açısından ve en son mobil uygulama geliştirme tekniklerini konuşma noktasına gelmiştik.
+
+12
+00:04:43,009 --> 00:05:01,009
+Şimdi native development dedik ilgili kurumun yani Google ve Apple'ın kendi geliştirdikleri software development kit kullanılarak geliştirilen tüm yazılımları bu kategoride değerlendiriyoruz.
+
+13
+00:05:01,009 --> 00:05:25,009
+Çeşitli artı ve eksik yönlerinden bahsetmiştik. Biraz ilerleyince bunları bir tablo ile özetleye olacağız ama user experience ve user interface tarafı en yüksek düzeyde memnuniyet verici noktada bulunan geliştirme yöntemi.
+
+14
+00:05:25,009 --> 00:05:40,009
+Aynı zamanda da ilgili işletim sisteminin ve ilgili ortamın yeteneklerini, telefonun yeteneklerini en iyi kullanmanız için alternatif native development.
+
+15
+00:05:40,009 --> 00:05:46,009
+Şimdi tabi sıkıntıları da her bir platform için ayrı ayrı geliştirme yapmanız gerekiyor demiştik.
+
+16
+00:05:46,009 --> 00:05:52,009
+Burada native development için kullanabileceğiniz programların dinlerinden bahsetmiştik.
+
+17
+00:05:52,009 --> 00:05:58,009
+IOS tarafında Swift Objective C ile geliştirme yapabiliyorsunuz.
+
+18
+00:05:58,009 --> 00:06:06,009
+Android tarafında Kotlin, Java, C ve C++ ile geliştirme yapabiliyorsunuz.
+
+19
+00:06:06,009 --> 00:06:18,009
+Tabii Android'de bir de farklı olarak SDK'ya ek olarak native development kit dediğimiz daha alt seviye program geliştirmenizi sağlayan,
+
+20
+00:06:18,009 --> 00:06:28,009
+kütüphaneler oluşturmanızı sağlayan, C dili ile yazmanızı kolaylaştıran ve özellikle gömülü sistem tarafında bize katkı sağlayan,
+
+21
+00:06:28,009 --> 00:06:32,009
+NDK'dan bahsetmiştik native development kit diye.
+
+22
+00:06:32,009 --> 00:06:43,009
+Bildiğimiz native development'dan farklı bu, SDK'nın yanına ek olarak Google'ın bize sunduğu bir geliştirme ortamı.
+
+23
+00:06:43,009 --> 00:06:46,009
+Gelelim cross platform'a.
+
+24
+00:06:46,009 --> 00:06:55,009
+Cross platform tarafında geçen hafta biraz konuşmuş olmamıza rağmen bir kez daha üzerinden geçmek adına sorayım.
+
+25
+00:06:55,009 --> 00:07:00,009
+Cross platformlar neler var bildiğiniz?
+
+26
+00:07:00,009 --> 00:07:14,069
+Evet [öğrenci].
+
+27
+00:07:14,069 --> 00:07:19,769
+Hocam Flutter, Zamarine, Iona.
+
+28
+00:07:19,769 --> 00:07:28,769
+Şimdi güzel, bunlar sayılabilecekler arasında devam edelim ondan sonra eklememi yapayım.
+
+29
+00:07:28,769 --> 00:07:30,769
+Evet [öğrenci].
+
+30
+00:07:30,769 --> 00:07:33,769
+React native demiştik sanırım hocam.
+
+31
+00:07:33,769 --> 00:07:35,769
+Evet React native demiştik güzel.
+
+32
+00:07:35,769 --> 00:07:38,769
+Ionik var hatırlarsanız.
+
+33
+00:07:38,769 --> 00:07:43,769
+Fongap var, Titanium var, Epselerator var.
+
+34
+00:07:43,769 --> 00:07:53,769
+Bunlar en temel bilinen cross platformlar ama son dönemin parlayan Yıldız, React native ve Flutter demiştik.
+
+35
+00:07:53,769 --> 00:08:01,769
+Şimdi bunların arasındaki aslında iki kategoriyi ayırırsak bir tanesi web teknolojilerini kullanarak
+
+36
+00:08:01,769 --> 00:08:08,769
+web teknolojilerinde kullandığınız dilleri kullanarak geliştirme yaptığınız frameworklar.
+
+37
+00:08:08,769 --> 00:08:18,769
+Bunlar özellikle React native tarafı, JavaScript, HTML ve CSS aralıklı olarak geliştirebiliyorsunuz.
+
+38
+00:08:18,769 --> 00:08:28,769
+Ve bu cross platformlarla yazdığınız kodlar telefon üzerinde bir package olarak yüklendikten sonra
+
+39
+00:08:29,769 --> 00:08:37,769
+web kit üzerinden derlenerek sizin kullanımınıza sunuluyor.
+
+40
+00:08:37,769 --> 00:08:48,769
+Mobil webten farkı aslında aynı yapı ile aynı dillerle konuluyor gibi gözükseniz de burada bir container söz konusu
+
+41
+00:08:48,769 --> 00:09:00,769
+ve bu container sizin geliştirdiğiniz yazılımı paketleyip bir sanki nativemiş gibi yüklemenizi sağlıyor markete.
+
+42
+00:09:00,769 --> 00:09:05,769
+İşte burada cross platformla hybrid app birbirine geçiş yapıyorlar.
+
+43
+00:09:05,769 --> 00:09:12,769
+Yani bunu birbirinden ayrı olarak söylüyoruz. Evet ikisi de ayrı yöntemler olarak karşımıza çıkıyor.
+
+44
+00:09:12,769 --> 00:09:21,769
+Ama cross platformun altındaki bazı geliştirme toolları hybrid app development yapmanızı sağlıyor.
+
+45
+00:09:21,769 --> 00:09:26,769
+Genelde literatür ve bakarsanız araştırdığınızda üç temel yaklaşım göreceksiniz.
+
+46
+00:09:26,769 --> 00:09:29,769
+Native, hybrid ve mobil web diye.
+
+47
+00:09:29,769 --> 00:09:37,769
+Ama ben burada özellikle iki farklı başlığı daha Google'a kadını bunların arasına koyuyorum.
+
+48
+00:09:37,769 --> 00:09:43,769
+Cross platformda web teknolojileri kullanmadan geliştirme yapabiliyorsunuz.
+
+49
+00:09:43,769 --> 00:09:52,769
+Örneğin burada flutter dart dili ile ön plana çıkıyor ve son dönemde de react native'in önemli bir rakibi olmuş durumda.
+
+50
+00:09:52,769 --> 00:09:59,769
+Bu başka cross platformlar için de geçerli.
+
+51
+00:10:00,769 --> 00:10:03,769
+Mesela Xamarin'de C sharp kullanabiliyorsunuz.
+
+52
+00:10:03,769 --> 00:10:10,769
+Daha çok Windows tarafına geliştirmek için ortaya atılmış bir aslında framework'tu.
+
+53
+00:10:10,769 --> 00:10:20,769
+Ama zaman içinde o da Windows'un bu işten geri adım atmasıyla iOS ve Android tarafına uygulama geliştirmenizi sağlıyor.
+
+54
+00:10:20,769 --> 00:10:27,769
+Bunun gibi farklı dillerle aslında geliştirme yapabiliyorsunuz cross platformda.
+
+55
+00:10:27,769 --> 00:10:38,769
+Cross platform size aynı kod parçası ile birden fazla platform için geçen haftada söyledik.
+
+56
+00:10:38,769 --> 00:10:42,769
+Write once, run everywhere, anywhere mantı ile çalışıyor.
+
+57
+00:10:42,769 --> 00:10:44,769
+Kod üretiyor.
+
+58
+00:10:44,769 --> 00:10:58,769
+Tabi bu kodun üretilmesi demek açıkçası arka planda çok iyi bir kütüphane yazılım detayı gerektiriyor.
+
+59
+00:10:58,769 --> 00:11:01,769
+Çünkü hem Android'e çeviriyorsunuz hem iOS'a çeviriyorsunuz.
+
+60
+00:11:01,769 --> 00:11:06,769
+Bugün gelinen noktada react native de flutter da ikisi de aynı şeyi iddia ediyor.
+
+61
+00:11:06,769 --> 00:11:13,769
+User experience özellikle UI komponentlerini neredeyse native gibi üretebiliyoruz diyor.
+
+62
+00:11:13,769 --> 00:11:33,769
+Bu çok değerli çünkü eskiden cross platform'ın en önemli sıkıntılarından biri de orada ürettiğiniz bu tone widget tarzı yapıların kullanıcının gözüne hitap etmemesiydi ve belli olan da gerçek native'den ayrışmasıydı.
+
+63
+00:11:33,769 --> 00:11:41,769
+Şu anda böyle bir fark çok kalmamış durumda birçok noktada native'in görselliğini yakalayabiliyorsunuz.
+
+64
+00:11:41,769 --> 00:11:45,769
+Bunların rezavantajı nedir?
+
+65
+00:11:45,769 --> 00:11:53,769
+Cross platform native'in bazı özelliklerini eğer o platforma framework sağlamadıysa desteklemiyor.
+
+66
+00:11:53,769 --> 00:12:01,769
+Daha çok donunun kullanım noktasında biraz eksiklik söz konusu olabiliyor.
+
+67
+00:12:01,769 --> 00:12:13,769
+Son dönemde bu alanda da ciddi gelişmeler var ama günün sonunda bunu şuna benzetiyorum siz bir kod yazdığınızda makina diline çevrilirken araya compiler giriyor mesela.
+
+68
+00:12:13,769 --> 00:12:21,769
+Ve bu compiler ne kadar iyi olursa sizin kodunuz da o kadar iyi makina diline dönüştürüyor ama sonuçta arada bir dönüştürücü var.
+
+69
+00:12:21,769 --> 00:12:33,769
+Interpreter'da da yorumlayıcı var. Bunlar sizin kodunuzu alt seviye dile çevirirken sonuçta belirli sintakslar için belirli kod parçaları üretiyorlar.
+
+70
+00:12:33,769 --> 00:12:41,769
+Aslında alt seviye dile yazsaydınız çok daha performanslı bir uygulama ortaya koyabilirdiniz.
+
+71
+00:12:41,769 --> 00:12:57,769
+Burada da aynı mantık var cross platforma ürettiğiniz kodlar native'e göre her zaman için hız olarak bir tık geride ürettiğiniz kodun uzunluğu biraz daha büyük enerji tüketimi biraz daha fazla olabilme potansiyeli taşıyorlar.
+
+72
+00:12:57,769 --> 00:13:03,769
+Genelde de böyle sonuçlanıyor. Yani özel durumları kenara bırakıyorum.
+
+73
+00:13:03,769 --> 00:13:09,769
+Performans anlamında native'in her zaman bir tık gerisinde sonuç üretiyorlar.
+
+74
+00:13:09,769 --> 00:13:25,769
+Fakat seçtiğiniz uygulamaya bağlı olarak bu performans farkı kullanıcıya yansımıyorsa yani örneğin biri 10 milisaniyede sonuç üretiyorsa diğeri 15 milisaniyede siz burada çok rahat bir şekilde şunu söyleyebilirsiniz.
+
+75
+00:13:25,769 --> 00:13:39,769
+Ben o zaman native ihtiyaç duymuyorum çünkü zaten yapacağım işleri bana cross platform tatminkar bir sürede tatminkar bir bellek kullanımıyla kaynak kullanımıyla enerji tüketimiyle zaten üretiyor.
+
+76
+00:13:39,769 --> 00:13:45,769
+O yüzden native için ekstra bir planlama yapmama gerek yok diyebilirsiniz.
+
+77
+00:13:45,769 --> 00:14:09,769
+Hybrid app tarafındaki hikaye de yani yine cross platformların bazılarıyla üretebildiğiniz web kit üzerinde çalıştığı için sonuçta web ortamının özellikle security anlamındaki zayıf noktalarına tabi isiniz.
+
+78
+00:14:09,769 --> 00:14:35,769
+native de bu sdk ile garanti altına alınmış durumda yani en azından çok büyük bir sıkıntı yaşama olasınız düşük ama browserlarda çalışan özellikle mobile web development'ınız ve web kit üzerinden çalışan hybrid app'leriniz her zaman bir tık daha saldırıya açıklar güvenlik zayıfları biraz daha fazla olabiliyor.
+
+79
+00:14:36,769 --> 00:14:44,769
+Gelelim mobile web development'a mobile web development aslında bildiğiniz web uygulaması geliştirme mantığı ile hiçbir farkı yok.
+
+80
+00:14:44,769 --> 00:14:59,850
+Bilgisayar ortamı için geliştiriliyordu şu anda tek farkı nedir ne kelimesini koyarsak mobilin yerine sanki bu işi ifade etmiş oluruz çok popüler olan kelime evet [öğrenci].
+
+81
+00:14:59,850 --> 00:15:01,850
+Evet responsif mi hocam?
+
+82
+00:15:01,850 --> 00:15:21,850
+Evet responsif yani buradaki responsifden kasıt da şu hangi cihazda çalışıyorsa kendini o cihazın formunda görsellik anlamında görüntüsel anlamda o cihazın formuna sokabiliyor olması çünkü eskiden web sayfaları telefonda bir değişik gözüküyordu tablette bir farklı gözüküyordu.
+
+83
+00:15:21,850 --> 00:15:25,850
+Kiminde çok büyük kiminde çok küçük kalıyordu.
+
+84
+00:15:25,850 --> 00:15:41,850
+Bugün artık bu yaklaşımla responsif dizayn ile yaptığınızda ki özellikle HTML5 ile de birlikte bir yazdığınız uygulamayı her türlü cihazdan erişebilir hale getiriyorsunuz.
+
+85
+00:15:41,850 --> 00:15:53,850
+Bu netve göre ne avantaj sağlıyor bir uygulama indirmek zorunda değilsiniz diğer kaplamıyor herhangi bir şekilde kurulum söz konusu değil.
+
+86
+00:15:53,850 --> 00:16:01,850
+Kurulum sırasında arka planda herhangi bir bilginize erişmek gibi bir şey söz konusu değil.
+
+87
+00:16:01,850 --> 00:16:17,850
+O yüzden mobil web ile geliştirilebilecek ve işte her türlü cihazdan erişim sağlanabilecek de çok güzel uygulamalar var buna en güzel örnek olarak ticaret uygulamalarını verebiliriz.
+
+88
+00:16:17,850 --> 00:16:21,850
+Bunlara ekstradan bir application aslında yapmaya gerek yok.
+
+89
+00:16:21,850 --> 00:16:39,850
+Pazarlama gereği birçok firma bu yönde tercihlerini native uygulamamızda olsun ya da en kötü ihtimalle cross platform ile geliştirdiğimiz markette duran bir uygulamamız olsun ki prestijimiz bu noktada eksik olmasın diye düşünüyorlar.
+
+90
+00:16:39,850 --> 00:16:54,379
+Peki, mobil web development'ın sıkıntısı ne? Orada bir yorum yapmak isteyen olursa ondan söz vermek isterim ona.
+
+91
+00:16:54,379 --> 00:17:14,069
+Farklı bir kişi, mobil web development'taki dezavantaj nedir?
+
+92
+00:17:14,069 --> 00:17:21,069
+İllaki bir dezavantaj vardır arkadaşlar bir yorum yapabilirsiniz ya o kadar da kötü durumda olmasanız gerek diye düşünüyorum.
+
+93
+00:17:21,069 --> 00:17:24,069
+[öğrenci] peki sana vereyim söz.
+
+94
+00:17:24,069 --> 00:17:32,069
+Hocam belki internet olacağı için hem mobile hem bilgisayara ara yüz ayarlama falan olabilir.
+
+95
+00:17:32,069 --> 00:17:37,069
+Aslında biraz önce bahsettiğim şey bu sorunu çözüyor responsive design.
+
+96
+00:17:37,069 --> 00:17:46,069
+Tam tersi biz zaten o yüzden responsive design artık yapabildiğimiz için bunu anlamlı kılıyoruz.
+
+97
+00:17:46,069 --> 00:17:58,170
+Bu noktada şunu soracağım, internet connection desem ne söylerseniz?
+
+98
+00:17:58,170 --> 00:18:06,960
+Güvenlik olabilir mi hocam?
+
+99
+00:18:06,960 --> 00:18:11,960
+O kadar karmaşıklık olmasın o da bir aslında seçenek.
+
+100
+00:18:11,960 --> 00:18:18,960
+Browster'ın güvenliğine mahkûmuz orada mobil web development uygulamalarında ama daha basit bir şey.
+
+101
+00:18:18,960 --> 00:18:24,849
+Evet ben buradan söz vereyim [öğrenci] mesela [öğrenci] solmaz.
+
+102
+00:18:24,849 --> 00:18:45,390
+Ali [öğrenci], [öğrenci], [öğrenci].
+
+103
+00:18:45,390 --> 00:18:50,640
+Hocam internet bağlantısı olmadan uygulamaya çalıştıramayız.
+
+104
+00:18:50,640 --> 00:18:58,640
+Evet önemli bir detay uygulamalarınızı normalde internet bağlantısı olmadan kendi telefonunuz üzerinde çalıştırabiliyorsunuz.
+
+105
+00:18:58,640 --> 00:19:07,640
+Ama internet bağlantısı olmadan mobil web üzerinde herhangi bir iş yapma şansınız yok.
+
+106
+00:19:07,640 --> 00:19:12,640
+O yüzden mobile web development'da da en büyük dezavantajlardan bir tanesi bu.
+
+107
+00:19:12,640 --> 00:19:15,640
+Peki progressive web application dediğimiz nedir?
+
+108
+00:19:15,640 --> 00:19:31,769
+Bu konuda yorum yapmak isteyen mutlaka duymuşsunuzdur.
+
+109
+00:19:31,769 --> 00:19:59,500
+[öğrenci], Aras.
+
+110
+00:19:59,500 --> 00:20:05,500
+Internet bağlantısı olmadan da çalışabiliyorlar diye hatırlıyorum hocam ama.
+
+111
+00:20:05,500 --> 00:20:11,500
+Evet doğru başka yani genel olarak ne söylüyoruz mesela?
+
+112
+00:20:12,500 --> 00:20:15,500
+Nelere isim veriyoruz bunu bu noktada?
+
+113
+00:20:15,500 --> 00:20:23,660
+Yani hangi tür uygulamalara progressive web application diyoruz?
+
+114
+00:20:23,660 --> 00:20:31,650
+Peki şöyle söyleyelim.
+
+115
+00:20:31,650 --> 00:20:39,650
+Aslında progressive web application dediğimiz zaman mobile web development'dan çok büyük bir farklılığı yok.
+
+116
+00:20:39,650 --> 00:20:49,650
+Biraz daha bugün web teknolojileriyle geliştirilen uygulamalara verilen isim olarak da karşımıza çıkıyor progressive web application.
+
+117
+00:20:49,650 --> 00:21:03,650
+Onun için mobile application'lardan farklı olarak HTML, CSS ve JavaScript teknolojisiyle geliştirilen ve bir browser üzerinden kullanılan uygulamalara progressive web application diyoruz.
+
+118
+00:21:03,650 --> 00:21:12,650
+O yüzden mobile web development ve progressive web application development birbirine backup olabilecek şekilde ifade edilebiliyor.
+
+119
+00:21:12,650 --> 00:21:16,650
+Ama biraz önce arkadaşınızın söylediği bir nokta vardı.
+
+120
+00:21:16,650 --> 00:21:22,650
+Arka planda bir internet connection'a ihtiyaç duymadan çalışabilir diye.
+
+121
+00:21:22,650 --> 00:21:44,160
+Bu konuda ne düşünüyorsunuz? Bir yorum yapabilir misiniz rica etsem?
+
+122
+00:21:44,160 --> 00:21:50,160
+Peki progressive kelimesi ne için kullanılıyor olabilir?
+
+123
+00:21:50,160 --> 00:21:59,160
+Ya da bu mobile web development'dan farklı isimlendirilmesinin sebebi ne olabilir?
+
+124
+00:21:59,160 --> 00:22:04,240
+Hocam ileri derece diye geçiyor aslında ama.
+
+125
+00:22:04,240 --> 00:22:08,240
+Tamam çok güzel. Yani neyi ileri götürüyor aslında?
+
+126
+00:22:08,240 --> 00:22:20,990
+Şimdi responsive dediğimiz zaman ilgili cihazların formundan bağımsız bir sayfa tasarımından bahsettik.
+
+127
+00:22:20,990 --> 00:22:26,990
+Yani eskiden bir web development vardı. Sonra mobile web development dediğimizde responsive design devreye girdi.
+
+128
+00:22:26,990 --> 00:22:33,990
+Şimdi progressive web app dediğimiz zaman aslında kabaca şunu ifade ediyoruz.
+
+129
+00:22:34,990 --> 00:22:45,339
+Tüm browserlarla uyumlu çalışabilecek ve tüm browserlarda belli bir aynı görüntüyü alabildiğiniz,
+
+130
+00:22:45,339 --> 00:22:53,339
+aynı ne diyelim tepkiyi alabildiğiniz bir uygulama geliştirmek olarak adlandırılıyor progressive web app development.
+
+131
+00:22:53,339 --> 00:23:00,339
+Şimdi sadece responsive dediğimiz zaman mesela firefox kullanımı safari kullanımı chrome kullanımı
+
+132
+00:23:00,339 --> 00:23:09,339
+internet explorer kullanımı gibi farklı browserlarda siz değişik reaksiyonlar alabiliyordunuz.
+
+133
+00:23:09,339 --> 00:23:15,339
+Şimdi ki progressive web app development'ın temel hedefi bu farklılıkları minimize etmek
+
+134
+00:23:15,339 --> 00:23:20,339
+ve belli standartlara uygun web application'leri oluşturmak.
+
+135
+00:23:20,339 --> 00:23:29,339
+Temel olarak bunu görüyorsunuz. Daha detaylı bir şekilde bu konuda araştırma yapabilirsiniz.
+
+136
+00:23:29,339 --> 00:23:39,660
+Sorusu olan var mı buraya kadar olan bölümde? Evet, [öğrenci]'a söz vereyim.
+
+137
+00:23:39,660 --> 00:23:44,660
+Hocam unity cross platforma mı girer acaba?
+
+138
+00:23:44,660 --> 00:23:48,660
+Evet güzel bir soru. Unity'yi niye kullanıyoruz biz?
+
+139
+00:23:48,660 --> 00:23:57,660
+Genellikle özellikle oyun geliştirme noktasında kullanıyoruz ki bugün mobil uygulamaların
+
+140
+00:23:57,660 --> 00:24:03,660
+mobil marketin önemli bir kısmı önemli bir yüzdesi oyunlardan oluşuyor.
+
+141
+00:24:03,660 --> 00:24:06,660
+Ve oyunların da kendi içerisinde çok farklı kategorileri var.
+
+142
+00:24:06,660 --> 00:24:12,660
+Evet unity de aslında bir cross platform olarak adlandırılabilir.
+
+143
+00:24:12,660 --> 00:24:22,660
+Çünkü siz o noktada unity ile geliştirdiğiniz kodları her iki tarafta da üretme şansına sahipsiniz.
+
+144
+00:24:23,660 --> 00:24:28,660
+Ama burada buna ne hybrid diyebiliriz, ne mobile, ne de native diyebiliriz.
+
+145
+00:24:28,660 --> 00:24:32,660
+O yüzden birazcık cross platforma yakın durduğunu söyleyebiliyoruz.
+
+146
+00:24:32,660 --> 00:24:44,660
+Ama unity hakikaten özellikle oyun geliştirme noktasında size bu kod dönüşümünü sağlayan önemli bir platform.
+
+147
+00:24:44,660 --> 00:24:48,660
+O yüzden hatırlattığım için teşekkür ediyorum [öğrenci].
+
+148
+00:24:48,660 --> 00:24:59,160
+Evet şimdi bunları karşılaştıracağız tabi.
+
+149
+00:24:59,160 --> 00:25:03,160
+Bunları karşılaştırmak için de bir tablo paylaşacağım sizinle.
+
+150
+00:25:03,160 --> 00:25:08,160
+Bu haftaki notlarımıza da başlayalım hemen.
+
+151
+00:25:08,160 --> 00:25:30,819
+Şimdi tabi bunları karşılaştırmalı olarak vermek önemli.
+
+152
+00:25:30,819 --> 00:25:39,819
+Ama bu noktada karşılaştırma yaparken hangi açılardan karşılaştıracağımız noktası da bir benim için soru işareti.
+
+153
+00:25:39,819 --> 00:25:47,819
+Mesela bunları hangi açılardan karşılaştırsak gerçekten aradaki farkı iyi ifade ederiz.
+
+154
+00:25:47,819 --> 00:25:53,819
+Bunu sorayım size hangi başlıklarla karşılaştırmamızın uygun olacağını düşünüyorsunuz.
+
+155
+00:25:53,819 --> 00:26:03,980
+Yani kriterlerimiz neler olacak, bunu sorayım size.
+
+156
+00:26:03,980 --> 00:26:13,019
+Konuşurken söylemiştik bir kısmını.
+
+157
+00:26:13,019 --> 00:26:18,359
+Mesela [öğrenci]'a bir daha söz vereyim.
+
+158
+00:26:18,359 --> 00:26:20,359
+Hız olabilir, erişim olabilir.
+
+159
+00:26:20,359 --> 00:26:23,700
+Güzel.
+
+160
+00:26:23,700 --> 00:26:25,700
+Zeya.
+
+161
+00:26:25,700 --> 00:26:29,700
+Hangi platformlarda oldukları olabilir, güvenlik olabilir.
+
+162
+00:26:29,700 --> 00:26:36,700
+Ya da optimizasyon, mesela native için bayağı daha optimiz edilebiliriz diğergilere kıyaslanınca.
+
+163
+00:26:36,700 --> 00:26:40,079
+Güzel. [öğrenci].
+
+164
+00:26:40,079 --> 00:26:42,079
+Güzel.
+
+165
+00:26:42,079 --> 00:26:46,079
+Biraz daha böyle farklı noktalara da düşünebilirsiniz.
+
+166
+00:26:46,079 --> 00:26:53,079
+Mesela markete dağıtım süreleri olabilir, geliştirme maniyetleri olabilir.
+
+167
+00:26:53,079 --> 00:26:55,079
+Bu başlıklarla var.
+
+168
+00:26:55,079 --> 00:26:58,079
+User experience kısmı.
+
+169
+00:26:58,079 --> 00:27:00,079
+User experience'in kalitesindedir.
+
+170
+00:27:00,079 --> 00:27:01,079
+Bunlar da olabilir.
+
+171
+00:27:01,079 --> 00:27:04,079
+Şimdi ben bunları yavaş yavaş yazıyorum.
+
+172
+00:27:04,079 --> 00:27:06,079
+Başlıklarını.
+
+173
+00:27:06,079 --> 00:27:09,079
+Burada birinci noktamız.
+
+174
+00:27:09,079 --> 00:27:15,980
+Quality of user experience.
+
+175
+00:27:15,980 --> 00:27:27,700
+İkincisi quality of applications.
+
+176
+00:27:27,700 --> 00:27:31,700
+Ki bundan arasındaki farkı da soracağım birazdan.
+
+177
+00:27:31,700 --> 00:27:33,700
+Potential users.
+
+178
+00:27:33,700 --> 00:27:37,700
+Yani ne kadar çok kullanabileceği ulaşma potansiyeliniz.
+
+179
+00:27:37,700 --> 00:27:39,700
+Uygulama geliştirme maliyetiniz.
+
+180
+00:27:39,700 --> 00:27:43,700
+Uygulamanızın güvenlik düzeyi.
+
+181
+00:27:43,700 --> 00:28:12,869
+Uygulamanızın aslında ne kadar, ne diyelim, bunu nasıl ifade etmek gerekir diye düşünüyorum.
+
+182
+00:28:12,869 --> 00:28:15,869
+Çünkü bir başlık daha var onunla karışmaması için.
+
+183
+00:28:15,869 --> 00:28:19,869
+Bir tanesi güncelleme konusunda.
+
+184
+00:28:19,869 --> 00:28:26,869
+Bir diğeri de herhangi bir sorun yaşandığında bu sorunun ne kadar çabuk usulü çözülebileceği.
+
+185
+00:28:26,869 --> 00:28:29,869
+Supportability biraz bunu ifade ediyor.
+
+186
+00:28:29,869 --> 00:28:32,869
+O yüzden ikisi birbirinden farklı.
+
+187
+00:28:32,869 --> 00:28:37,869
+Markete ulaşma süresini geliştirme süreciniz.
+
+188
+00:28:37,869 --> 00:28:41,869
+Bunlar temel başlıklar değerlendi üzerimiz.
+
+189
+00:28:41,869 --> 00:28:46,430
+Hem neler var?
+
+190
+00:28:46,430 --> 00:28:50,430
+Native Approach temelde.
+
+191
+00:28:50,430 --> 00:28:53,430
+Mobile Web ve cross platform.
+
+192
+00:28:53,430 --> 00:29:01,960
+Çünkü hybrid uygulamaları aslında cross platformlarla geliştiriyorsunuz.
+
+193
+00:29:01,960 --> 00:29:13,759
+Bunu ifade etmiştik.
+
+194
+00:29:13,759 --> 00:29:17,759
+Şimdi doğal olarak user experience bu nokta.
+
+195
+00:29:17,759 --> 00:29:21,759
+Bu noktada gerçekten en üst noktada.
+
+196
+00:29:21,759 --> 00:29:25,759
+O yüzden excellent olarak ifade ediyoruz.
+
+197
+00:29:25,759 --> 00:29:36,759
+Mobile Web'te de aslında oldukça tatminkar bir seviyede şu andaki yapılan uygulamalarda.
+
+198
+00:29:36,759 --> 00:29:44,259
+Özellikle responsive design geldikten ve progressiv design geldikten.
+
+199
+00:29:44,259 --> 00:29:52,259
+Cross platformlar aslında buna yıllardır kullandığımız başka bir ifade vardı ama onun yerine very good'u kullanacağım artık.
+
+200
+00:29:52,259 --> 00:30:05,990
+O yıllardır kullandığım ifade de not as good as native apps ifadesini kullanıyorum.
+
+201
+00:30:05,990 --> 00:30:17,990
+Bu doğru bir ifade ama şu anda cross platformlarla, özellikle bazılarıyla gerçekten çok tatminkar user experience'lar elde edebiliyorsunuz.
+
+202
+00:30:17,990 --> 00:30:26,990
+Özellikle bu scroll'un kesintisiz olmasından tutun kullandığınız görsellerin,
+
+203
+00:30:26,990 --> 00:30:35,990
+kullanıcının kullanım alışkanlığını kullananlaştırmasına kadar birçok kriteri içeriyor.
+
+204
+00:30:35,990 --> 00:30:47,990
+Hatta belki bir hafta dersin bir kısmını tamamen user experience ve UI üzerine kurgulayıp bir dışarıdan bize bu konuda ilerleyip,
+
+205
+00:30:47,990 --> 00:30:55,990
+geliştirme yapan bir gözü buraya davet edip bir firmadan size çeşitli bilgiler var mısını sağlayabilirim.
+
+206
+00:30:55,990 --> 00:31:02,990
+Quality of apps, bunla ki nokta nedir, neyi ifade eder?
+
+207
+00:31:02,990 --> 00:31:11,299
+Yani user experience'tan farkı nedir? [öğrenci], senin farkı nedir?
+
+208
+00:31:11,299 --> 00:31:16,299
+Hocam mesela uygulama çalışırken ne kadar şarj yiyor, bir şey söyleyebilir misiniz?
+
+209
+00:31:16,299 --> 00:31:53,269
+Evet söyleyebiliriz, aynen öyle. User experience'tan farkı, user experience tabi ki bataryanın tüketimini de kritik buluyor ve önemsiyor bir kullanıcı.
+
+210
+00:31:53,269 --> 00:31:58,269
+Ama daha çok kullanım anlamındaki tecrübe ön plana çıkıyor.
+
+211
+00:31:58,269 --> 00:32:09,269
+Artı kaynak kullanımı ve benzer application'ın aslında arka plandaki donanım yeteneklerine kadar kullandığına kadar bu noktaları ifade ediyoruz quality of applications dediğimiz zaman.
+
+212
+00:32:09,269 --> 00:32:24,269
+Native web'inki tabi ki yüksek, mobile web tarafı medium düzeyde, cross platform tarafı medium to low.
+
+213
+00:32:24,269 --> 00:32:26,269
+Neden sizce böyle?
+
+214
+00:32:26,269 --> 00:32:29,269
+Yani niye medium değil, niye low değil?
+
+215
+00:32:29,269 --> 00:32:30,269
+[öğrenci]?
+
+216
+00:32:30,269 --> 00:32:36,269
+Hocam çok ilkel bir yaklaşma olacak ama bazı platformlarda medium ağızlarında low mu?
+
+217
+00:32:36,269 --> 00:32:42,829
+Evet çok doğru bir yaklaşma çünkü gerçekten bu böyle.
+
+218
+00:32:42,829 --> 00:32:51,980
+cross platformların çeşitliliği çok fazla.
+
+219
+00:32:51,980 --> 00:33:13,119
+Çeşitliliğinden dolayı da siz hangi cross platformla çalışacağınızı iyi belirlemeniz lazım.
+
+220
+00:33:13,119 --> 00:33:18,119
+Bugün cross platformlarla native web flotter'i konuşuyoruz.
+
+221
+00:33:18,119 --> 00:33:25,119
+Bundan 3-4 sene evvel bunların çeşitliliğinden dolayı da siz hangi cross platformla çalışacağınızı iyi belirlemeniz lazım.
+
+222
+00:33:25,119 --> 00:33:27,400
+bir platformla çalışacağınızı iyi belirlemeniz lazım.
+
+223
+00:33:27,400 --> 00:33:31,119
+Bugün cross platformlar, ayak netif ve flutter'ı konuşuyoruz.
+
+224
+00:33:31,119 --> 00:33:37,119
+Bundan 3-4 sene evvel bunlar daha yeni yeni kullanılmaya başlanıyordu.
+
+225
+00:33:37,119 --> 00:33:42,119
+5 sene evvel belki isimlerini çok telaffuz etmediğimiz platformlardı.
+
+226
+00:33:42,119 --> 00:33:49,119
+Öte yandan bazı platformlar, Phone Gap gibi yıllardır var belki 8-9 senedir var
+
+227
+00:33:49,119 --> 00:33:54,119
+ama bir noktaya kadar taşıyabiliyorlar geliştirdikleri uygulamaların kalitesini.
+
+228
+00:33:54,119 --> 00:33:59,119
+Onlar daha çok o platformlarla uygulama geliştirebiliyor mu kullanıcı bununla ilgileniyor.
+
+229
+00:33:59,119 --> 00:34:02,119
+Performansı çok önemsemeyebiliyorlar.
+
+230
+00:34:02,119 --> 00:34:06,119
+O yüzden burada daha geniş bir skaladan bahsediyoruz.
+
+231
+00:34:06,119 --> 00:34:18,119
+Tabii potansiyel kullanıcılar native web dediğiniz zaman geliştirdiğiniz ortama tabisiniz.
+
+232
+00:34:18,119 --> 00:34:26,119
+Android için bir geliştirme yapıyorsanız o platformdaki kullanıcılar sizin için potansiyel kullanıcı.
+
+233
+00:34:26,119 --> 00:34:34,119
+Öte yandan mobile web tarafı herkese ulaşmanız demek.
+
+234
+00:34:34,119 --> 00:34:49,539
+Sadece akıllı telefonlar değil, aynı zamanda tabletler, PC'leri saymıyorum onlar zaten işin içinde.
+
+235
+00:34:49,539 --> 00:34:52,539
+Artı feature phone'lar.
+
+236
+00:34:52,539 --> 00:34:55,539
+Feature phone'u da konuşmuştuk hatırlarsanız.
+
+237
+00:34:55,539 --> 00:34:58,539
+Kayıyorsun yaptığı şeylerden bir tanesi.
+
+238
+00:34:58,539 --> 00:35:05,539
+O yüzden web üzerinde bir uygulamanız varsa illa akıllı telefonu olmak zorunda değil ilginlik işinin.
+
+239
+00:35:05,539 --> 00:35:12,539
+Öte yandan cross platform'un ki de oldukça tatminkar.
+
+240
+00:35:12,539 --> 00:35:23,860
+Çünkü hemen hemen cross platform'un eskiden Windows vesaireyi de içermesi önemliydi Blackberry'i.
+
+241
+00:35:23,860 --> 00:35:35,179
+Ama şu anda iki platform kaldığı için neredeyse orada da çok ciddi bir kullanıcı potansiyeline ulaşma şansınız var.
+
+242
+00:35:35,179 --> 00:35:55,269
+App development cost doğal olarak yüksek native app'te, mobile web de oldukça düşük.
+
+243
+00:35:55,269 --> 00:36:03,269
+Cross platform'da ise bir tık daha yüksek bir durumla karşılaşma olasınız var.
+
+244
+00:36:03,269 --> 00:36:13,269
+Niye derseniz, CSS, Scana web teknolojileri kullanıyorsanız cross platform'da low bir cost ile gerçekleştirilebilir.
+
+245
+00:36:13,269 --> 00:36:24,269
+Ama zavaring gibi C-sharp kullanan, biraz daha flutter gibi Dart dilini kullanan dillerde bu yapıyı bilen birini kullanmanız gerekiyor.
+
+246
+00:36:24,269 --> 00:36:27,269
+O da biraz daha yüksek maliyet anlamına geliyor.
+
+247
+00:36:27,269 --> 00:36:36,269
+Uygulamaların güvenliği tartışmasız, çok mükemmel seviyede olan native app var.
+
+248
+00:36:36,269 --> 00:36:43,269
+Mobile app tarafı browser security ile doğrudan ilişkili.
+
+249
+00:36:43,269 --> 00:36:54,269
+Kullandığınız, kullanılan browser, neyse sizin karşı tarafa çalıştırdığınız uygulamanın security'si de onunla sınırlı.
+
+250
+00:36:54,269 --> 00:37:07,309
+Cross platform'lar ise not good olarak ifade ediyoruz.
+
+251
+00:37:07,309 --> 00:37:11,309
+Şuraya parantez olarak better.
+
+252
+00:37:11,309 --> 00:37:21,889
+Ne diyelim, 5 years ago diyelim.
+
+253
+00:37:21,889 --> 00:37:33,889
+Çünkü bu konuda da, son yıllarda geliştirilen cross platformların bu konuya çok önem verdiğini rahatlıkla söyleyebiliriz.
+
+254
+00:37:33,889 --> 00:37:40,889
+Supportability, doğal olarak native tarafı biraz kompleks.
+
+255
+00:37:40,889 --> 00:37:49,889
+Mobile web tarafı simple, yani bir ihtiyaç olduğunda hızlıca destek verip gerekli düzeltme yapabiliyorsunuz.
+
+256
+00:37:49,889 --> 00:37:52,889
+Maintenance olarak da düşünürsünüz bu kısmı.
+
+257
+00:37:52,889 --> 00:37:55,889
+Cross platform tarafı da bu sefer medium to complex.
+
+258
+00:37:55,889 --> 00:38:02,889
+Çünkü o noktada cross platformun detaylarına hakim olmamız gerekiyor.
+
+259
+00:38:02,889 --> 00:38:05,889
+Gerekli değişiklikleri yapabilmeniz için. Evet, [öğrenci].
+
+260
+00:38:05,889 --> 00:38:10,889
+Hocam supportability ile tam olarak neyi kastlediğinizi ben çok anlamadım.
+
+261
+00:38:10,889 --> 00:38:12,889
+Şunu kastediyorum.
+
+262
+00:38:12,889 --> 00:38:27,889
+Bir uygulamanın zaman içerisinde gerek sürümün değişmesiyle Android tarafında, gerek iOS tarafında yeniden güncellenmesi ve yeni kütüphanelerle uyumlu hale getirilmesi gerekiyor.
+
+263
+00:38:27,889 --> 00:38:32,889
+Ya da gelen yeni security özelliklerinin entegre edilmesi gerekiyor.
+
+264
+00:38:32,889 --> 00:38:47,889
+Ya da izinleri manifestan alırken, örnek veriyorum, runtime sırasında almak gerekiyor gibi uzun vadede ki bu değişimlere ayak uydurulması noktasını daha çok ifade ediyoruz.
+
+265
+00:38:47,889 --> 00:38:48,889
+Sağ olun, teşekkür ederim.
+
+266
+00:38:48,889 --> 00:38:53,889
+Şimdi son iki başlığımız kaldı ama 14.44'da bulduk.
+
+267
+00:38:53,889 --> 00:38:58,889
+15 dakika ara verelim. 14.45 oldu.
+
+268
+00:38:58,889 --> 00:39:01,889
+Saat 3'de kaldığımız noktadan devam edelim.
+
+269
+00:39:01,889 --> 00:39:08,889
+Bu sırada siz de özellikle mobil vakti yani bakmak isteyenler için söylüyorum.
+
+270
+00:39:08,889 --> 00:39:10,889
+Tabii dinlenmeksizin tercihiniz.
+
+271
+00:39:10,889 --> 00:39:12,889
+Mobil programlılığa dilleri nelerdir?
+
+272
+00:39:12,889 --> 00:39:14,889
+Artı, eksi yönleri nelerdir?
+
+273
+00:39:14,889 --> 00:39:22,889
+Bunlara bir göz atıp bunlarla ilgili önümüzdeki saatte konuşacağımız noktada bizimle bilgi paylaşabilirsiniz.
+
+274
+00:39:22,889 --> 00:39:23,889
+Teşekkür ediyorum.
+
+275
+00:39:23,889 --> 00:39:24,889
+Görüşmek üzere arkadaşlar.
+
+276
+00:39:24,889 --> 00:56:19,440
+Evet arkadaşlar kaldığımız yerden devam edelim.
+
+277
+00:56:19,440 --> 00:56:28,440
+Bir arkadaşınız soruyu biraz önce sormuş bir yarım saat falan önce.
+
+278
+00:56:28,440 --> 00:56:30,440
+[öğrenci].
+
+279
+00:56:30,440 --> 00:56:37,440
+Eğitici her siteli, mobil için ayrı web için ayrı bir geliştirmeyi mi tercih ediyor yoksa native yaygın mı diye?
+
+280
+00:56:38,440 --> 00:56:52,440
+Şimdi açıkçası son dönemde birçok kuruluş özellikle söylenip prestij anlamlı ya da belli başlı işlemleri hızlandırma anlamında
+
+281
+00:56:52,440 --> 00:57:01,440
+mobil uygulamalarını native olarak ya da en kötü cross platform ile geliştirip bizimle paylaşıyorlar.
+
+282
+00:57:01,440 --> 00:57:07,440
+Bu noktada özellikle bank açılık uygulamalarında da dikkatinizi çekiyordur.
+
+283
+00:57:07,440 --> 00:57:14,440
+Telefon üzerinden işlemleri yaparken birkaç tıkla işi yapabiliyorsunuz.
+
+284
+00:57:14,440 --> 00:57:32,440
+Ama web üzerinden yaparken webdeki sayfayı kaydırmanız belli oranda ilgili bazı büyük ekranlar için yapılmış ifadelerden dolayı biraz daha fazla hareket aksiyon gerekiyor.
+
+285
+00:57:32,440 --> 00:57:38,440
+O yüzden hem güvenlik anlamında burası da önemli.
+
+286
+00:57:39,440 --> 00:57:46,440
+Browser'ın sağlığında güvenlikle yetinmeyip native'deki daha güvenliği yapıyı kullanmak adına
+
+287
+00:57:46,440 --> 00:57:57,440
+e-ticaret sitelerinin yani e-ticaret firmalarının bir şekilde native tarafa da kaydığını görüyoruz son dönemde.
+
+288
+00:57:57,440 --> 00:58:06,440
+Tabii şimdi e-ticaret istiyoruz ama bazıları tamamen sanal hizmet veriyor, bazıları gerçekte fiziksel olarak da hizmet veriyor.
+
+289
+00:58:06,440 --> 00:58:16,440
+Sanal hizmet verenler uygulama yazdırmayabiliyor, doğrudan mobile site olarak tasarlatmak onların içine geliyor.
+
+290
+00:58:16,440 --> 00:58:19,440
+Mobile web olarak tasarım yaptırmak.
+
+291
+00:58:19,440 --> 00:58:29,440
+O yüzden fiziksel mağazaları olmayanlar ağırlıklı olarak native uygulamayı tercih etmiyorlar.
+
+292
+00:58:29,440 --> 00:58:35,440
+Bazıları native uygulama bazıları da mobile web'i tercih ediyorlar diyebiliriz.
+
+293
+00:58:35,440 --> 00:58:41,440
+Şimdi tekrar görüntüyü alıyorum, devam ediyorum kaldığım yerde.
+
+294
+00:58:41,440 --> 00:58:45,440
+Güncelleme kısmını konuşuyorduk orada kalmıştık.
+
+295
+00:58:45,440 --> 00:58:53,440
+Tabii burada güncelleme kısmı şöyle ifade etmek lazım.
+
+296
+00:58:53,440 --> 00:58:59,440
+Herhangi bir şekilde yeni bir sürüm hazırlama kısmından bahsediyoruz.
+
+297
+00:58:59,440 --> 00:59:07,440
+Doğal olarak bu native web'de biraz daha yeni gerçekleştik değişiklikleri de açık olmak anlamına geliyor.
+
+298
+00:59:07,440 --> 00:59:10,440
+Paketi yeniden oluşturmanız gerekiyor.
+
+299
+00:59:10,440 --> 00:59:16,440
+Yani belli süreçleri biraz daha meşakkatli gerçekleşen bir şey.
+
+300
+00:59:16,440 --> 00:59:21,440
+Bu da yandan mobile web tarafı yine çok basit.
+
+301
+00:59:21,440 --> 00:59:28,440
+Herhangi bir değişikliği girip ilgide sayfada yaptığınız zaman zaten hiçbir başka iş yapmanıza gerek yok.
+
+302
+00:59:28,440 --> 00:59:32,440
+Otomatik olarak bütün cihazlara değişiklik yansımış oluyor.
+
+303
+00:59:32,440 --> 00:59:35,440
+Şunu da hemen şuraya yazalım.
+
+304
+00:59:35,440 --> 00:59:42,440
+Cross platformda ise yine medium to complex cross platforma bağlı olarak değişkenlik gösteriyor.
+
+305
+00:59:42,440 --> 00:59:48,440
+Peki time to market noktası da ne söylersiniz?
+
+306
+00:59:48,440 --> 00:59:51,440
+High, medium, short.
+
+307
+00:59:51,440 --> 00:59:54,440
+Üç tane kelime var nereye yerleştirirsiniz?
+
+308
+00:59:54,440 --> 00:59:59,190
+High, medium, short.
+
+309
+00:59:59,190 --> 01:00:10,440
+Evet [öğrenci].
+
+310
+01:00:10,440 --> 01:00:18,440
+Native high, cross platform, medium, mobile, short herhalde.
+
+311
+01:00:18,440 --> 01:00:21,440
+Evet şimdi bu genelde böyle söyleniyor.
+
+312
+01:00:21,440 --> 01:00:24,440
+Ama burada yerler değişecek.
+
+313
+01:00:24,440 --> 01:00:27,440
+Burada medium olacak.
+
+314
+01:00:27,440 --> 01:00:31,440
+Burada da short olacak.
+
+315
+01:00:31,440 --> 01:00:39,329
+Neden sizce?
+
+316
+01:00:39,329 --> 01:00:42,329
+Ya da hangi ifade bizi bu konuda yanıltıyor?
+
+317
+01:00:42,329 --> 01:00:46,329
+Ya da bu ifade nasıl algılanmalı time to market kısma?
+
+318
+01:00:46,329 --> 01:00:54,349
+Yani aslında burada şeyden bahsetmiyoruz onu söyleyeyim.
+
+319
+01:00:54,349 --> 01:00:59,349
+Uygulamanın markete yüklenme sürecinden bahsetmiyoruz.
+
+320
+01:00:59,349 --> 01:01:05,949
+Aslında marketten kasıt kullanıcılara ulaşma süresi.
+
+321
+01:01:05,949 --> 01:01:08,949
+Esas buradaki farklılık o yüzden yanıltıyor bu ifade.
+
+322
+01:01:08,949 --> 01:01:10,949
+Bunu tekrar uygulayayım.
+
+323
+01:01:10,949 --> 01:01:16,949
+Buradaki time to market demek geliştirdiğiniz bir uygulamanın kullanıcılara ulaşma süresi.
+
+324
+01:01:16,949 --> 01:01:18,949
+Evet [öğrenci].
+
+325
+01:01:18,949 --> 01:01:26,949
+Hocam cross platformda uygulamayı çok kısa sürede geliştirip pek çok platformun aynı anda satışa sunabiliriz.
+
+326
+01:01:26,949 --> 01:01:35,949
+Ama mobile webde bu hani pek çok kullanıcıya aynı anda haberdar etmemiz çok mümkün olmayabiliyor çünkü.
+
+327
+01:01:35,949 --> 01:01:37,949
+Çok doğru.
+
+328
+01:01:37,949 --> 01:01:39,949
+Temel farklılık burada.
+
+329
+01:01:39,949 --> 01:01:53,949
+Cross platformu hem uygulamayı hızlı geliştiriyorsunuz hem de markete doğrudan uygulamanızı koyabildiğiniz için tek bir noktadan ya da iki kaç market varsa o kadar noktadan uygulamaya erişim söz konusu oluyor.
+
+330
+01:01:53,949 --> 01:01:57,949
+Ve derli toplu bir dünya içerisinde uygulamanız yer alıyor.
+
+331
+01:01:57,949 --> 01:02:04,949
+Yani doğru key wordlarla tanıtırsanız uygulamanızı uygulamaya erişmek çok hızlı.
+
+332
+01:02:04,949 --> 01:02:21,949
+Bir web sayfasından bahsettiğimizde bir web sayfasının birileri tarafından fark edilmesi milyonlarca web sayfasının olduğu dünyada çeşitli bir market noktası da olmadığı için ancak işte reklam vs. ile mümkün olabilir.
+
+333
+01:02:21,949 --> 01:02:25,949
+O yüzden web üzerinden kullanıcıya erişiminiz bir zaman alıyor.
+
+334
+01:02:25,949 --> 01:02:54,949
+Hani o ilgili sitenin dikkat çekmesi işte Google'ın CEO dediğimiz işte tarama da ön plana çıkması vs. biraz zaman alıyor ama cross platformundaki uygulamanız muhtemelen markete girdiği için de işte eğer biraz da unique ise ilgili uygulamaların hemen arkasından uygulamanız da görüntüleniyor ve bu noktada biraz daha hızlı kullanıcılara erişmiş oluyorsunuz.
+
+335
+01:02:54,949 --> 01:03:08,440
+Aynı anda entani market üzerinden gittiğinizi varsayarsak burada sorusu olan var mı? Peki o zaman yeni bir sayfaya geçelim.
+
+336
+01:03:08,440 --> 01:03:52,880
+Şimdi bir başka başlık atacağım. Evet. Bir cross platform framework yaratmak isteseniz bu cross platform framework için nelere dikkat edilmesi gerekiyor.
+
+337
+01:03:52,880 --> 01:04:10,880
+Siz böyle bir framework'ı bugün piyasaya sunacak olsanız hem union rakibi hem plateron hem veya netvin rakibi olmasını istiyorsanız sizce dizayn kriterleriniz arasında ya da requirement arasında neler var başlıklar olarak bunları sizden duymak isterim.
+
+338
+01:04:10,880 --> 01:04:38,510
+Evet farklı bir kişi olsun lütfen. Konuştuk çünkü bunlar çok zor değil.
+
+339
+01:04:38,510 --> 01:05:20,389
+Evet [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Evet gördüğünüz gibi sorunumuz devam ediyor geçen dönemden.
+
+340
+01:05:20,389 --> 01:05:30,389
+Dersi gerçekten canı gönülden dinleyen arkadaşlarımızı böylelikle görmüş oluyoruz. Şimdi ya bu konu hakikaten can sıkıcı bir noktaya geliyor.
+
+341
+01:05:30,389 --> 01:05:42,389
+Bundan sonraki süreçte derste soru sorduğum kişiden cevap alamadığım takdirde belirli bir dönem içi nota etkileyecek puanlama uygulayacağım.
+
+342
+01:05:42,389 --> 01:05:53,389
+Ben buradayım demediği takdirde çünkü siz bu dersi alırken çok fazla sayıda kişi bu dersi aldı ve alamayan birçok kişi de var.
+
+343
+01:05:53,389 --> 01:06:03,389
+Bu dersi ders halinde dinlemeyecekseniz seçimlik dersi almanıza gerek yok. Bu konuyu bir stres noktasına getirmeyeceğim.
+
+344
+01:06:03,389 --> 01:06:11,389
+Sadece bundan sonraki uygulamada cevap alamadığım arkadaşlar için ilgili notlarımı alıp yoluma devam edeceğim.
+
+345
+01:06:11,389 --> 01:06:21,389
+Çünkü yani bu böyle olacak gibi değil. 3 kişi ile 4 kişi ile ders yapmak istemiyorum. Yapacaksam da sadece onlar katılsın diğer arkadaşlar.
+
+346
+01:06:22,389 --> 01:06:31,389
+Mümkünse kayıttan izlesinler. Çünkü ben sizden rica etmiştim. Yani fikir üretirseniz çok sevinirim diye.
+
+347
+01:06:31,389 --> 01:06:36,389
+Fikri bırakın. Bilgisayar başında bile değilsiniz. Can sıkıcı bir durum.
+
+348
+01:06:38,389 --> 01:06:48,389
+Bu kısmı son kez konuşuyorum. Bundan sonraki süreçte zaman zaman söz verdiğimde herhangi bir cevap alamadığım takdirde gerekli tasarrufun bende olduğunu hatırlatmak isterim.
+
+349
+01:06:48,389 --> 01:06:52,389
+Şimdi [öğrenci] sen el kaldırmıştın. Sana tekrar söz vereyim.
+
+350
+01:06:53,389 --> 01:06:57,389
+Programlaması kolay olur mu? Herhalde çok kolay olur mu?
+
+351
+01:06:57,389 --> 01:07:10,389
+Evet önemli noktalardan bir tanesi. Seçeceğimiz programlamalinin ne olduğu. Bunun kolay kodlanabilir bir yapıda olması.
+
+352
+01:07:10,389 --> 01:07:15,340
+Mobile programming ile engelç diyelim.
+
+353
+01:07:15,340 --> 01:07:17,340
+Evet [öğrenci].
+
+354
+01:07:17,340 --> 01:07:24,340
+Responsive olarak konuşmuştuk. Birden fazla cihazda çalışacağı için bunların hepsine uygun olması lazım yani.
+
+355
+01:07:24,340 --> 01:07:31,340
+Onun için şöyle diyelim. Responsive dediğimiz zaman tam istediğimizi karşılamayacağı için onun yerine şöyle düzelteyim.
+
+356
+01:07:31,340 --> 01:07:39,340
+Multiple mobile platform support diyelim. Böylece senin söylediğini karşılamış olalım.
+
+357
+01:07:39,340 --> 01:07:50,340
+Yani bir cross platformdan bahsediyorsak o andaki mevcut yaygın olan mobile platformları desteklemesi gerekiyor bu cross platformun.
+
+358
+01:07:50,340 --> 01:07:56,340
+Şu anda IOS Android ama başka bir tanesi geldiğinde onu destekleyebilir olmalı. Başka?
+
+359
+01:07:56,340 --> 01:07:59,340
+[öğrenci] el kaldırmıştı.
+
+360
+01:07:59,340 --> 01:08:10,219
+Hocam belki şey olabilir. Kolay ve güzel bir şekilde UI hazırlaya hazırlanabilir.
+
+361
+01:08:10,219 --> 01:08:16,220
+Evet önemli. Reach user interface diyelim. Bu da olmazsa olmazlardan bir tanesi.
+
+362
+01:08:16,220 --> 01:08:33,800
+Bunlara ek olarak çok önemli bir kalem. Security. Cross platformundaki ürettiğiniz kodların, dönüştürdüğünüz kodların güvenlik açığına serviyet vermemesi gerekiyor.
+
+363
+01:08:33,800 --> 01:08:49,329
+Bunun ötesinde power consumption. Ürettiğiniz kodların özellikle telefon üzerinde çalışırken tükettikleri enerji çok önemli.
+
+364
+01:08:49,329 --> 01:09:09,579
+Bunu dikkat etmek gerekiyor. Accessing built-in features. Evet [öğrenci].
+
+365
+01:09:10,579 --> 01:09:20,579
+Hocam şey olabilir mi? Mesela geçenlerde hatta Android'de bu night mode gelmişti. Mesela bunun desteklenmesi. Cross platform.
+
+366
+01:09:20,579 --> 01:09:32,579
+Bu da dahil olmak üzere native'de yapabildiğiniz bütün yeteneklerin sensör verisine ulaşmaktan kamerayı kullanmaya kadar
+
+367
+01:09:32,579 --> 01:09:49,579
+Low level'daki tüm işlerin artı işletim sistemi seviyesinde sdk ile kod geliştirdiğinize sahip olduğunuzda özelliklerin senin de söylediğin gibi bu dark mode'da geliştirme de olabilir.
+
+368
+01:09:49,579 --> 01:10:00,579
+Farklı bir şey de olabilir. Bu özelliklerin destekleniyor olması. O yüzden cross platformda sürekli güncellenmesi gerektiğini de uygulamış oldum.
+
+369
+01:10:00,579 --> 01:10:15,579
+Yanın içinde back-end communication'daki destek. Şu back-end ve front-end'i konuşalım. Çok sık kullanıyoruz ama aralarındaki fark nedir?
+
+370
+01:10:15,579 --> 01:10:21,579
+Ya da bir back-endçi ile front-endçi ayıran nedir [öğrenci]?
+
+371
+01:10:21,579 --> 01:10:35,579
+Hocam front-end'de renk kullanıcı yüz yüze uygulama ile karşı karşıya geldiği kısım ve back-end de arkada çalışan uygulamanın beyni diyebiliriz. Arkadaki motorlar diyebiliriz.
+
+372
+01:10:35,579 --> 01:10:38,579
+Peki front-end'i biraz daha açar mısın bize?
+
+373
+01:10:38,579 --> 01:10:44,579
+Front-end yani şu an mesela ben baktığımda ekranda ne görüyorsam?
+
+374
+01:10:44,579 --> 01:10:47,579
+Sadece tasarım mı?
+
+375
+01:10:47,579 --> 01:10:54,579
+Yani bir buton var mesela butonun tıklandığında da burada bir front-end geldi.
+
+376
+01:10:54,579 --> 01:11:09,579
+Evet aslında şöyle diyelim kullanıcının isteklerini ve kullanıcıya gönderecek mesajları kontrol eden, yöneten, yazılımı gerçekleştiren kişi front-end developer olarak geçiyor.
+
+377
+01:11:09,579 --> 01:11:20,579
+Yani sadece tasarım olarak değil de aynı zamanda ön plandaki verinin alınması ve gösterilmesi ile ilgilenen kişi front-end tarafında çalışıyor.
+
+378
+01:11:20,579 --> 01:11:41,579
+Öte yandan back-end communication kısmını söyledik. Bizim bu verilerimizi arka planda hem işleyecek kodu yazan kişi hem de sunucu tarafı ile bir bağlantı söz konusuysa orayı organiz edecek kişi olarak da back-end developer'ı adlandırabiliriz.
+
+379
+01:11:41,579 --> 01:11:47,579
+Tabii uygulamaların sunucu tarafı ile bağlantısı da kritik bu arada.
+
+380
+01:11:47,579 --> 01:11:50,579
+[öğrenci] sana söz vereyim sonra devam edeyim.
+
+381
+01:11:50,579 --> 01:12:01,579
+Hocam aslında tam ben söyleyeceğim zaman siz de o konuya girdiniz. Bu requirements'ın içinde sunucu tarafı da var eğer programımız global bir şekilde çalışacaksa.
+
+382
+01:12:01,579 --> 01:12:07,579
+Çok doğru. Şimdi peki [öğrenci] bir söz istemiş.
+
+383
+01:12:07,579 --> 01:12:16,310
+Hocam aslında bir örnek var. Donanım kısmına daha yakın olan bir örnek.
+
+384
+01:12:16,310 --> 01:12:17,310
+Tabii.
+
+385
+01:12:18,310 --> 01:12:33,310
+Aslında şey yapıyordu fotoğraf çekilirken telefonların kameraları çok farklı olabileceği için çoğunlukla fotoğrafı kameradan çekmek yerine kamera uygulamasını açtıktan sonra o ekrandakinin ekran görüntüsü de alınarak yapıyordu.
+
+386
+01:12:33,310 --> 01:12:45,310
+Hatta bu yüzden zamanında neden bazı sosyal medya uygulamalar sadece iPhone'da güzel fotoğraf çekebiliyor ve diğer akıllı telefonlarda fotoğraf çekemiyor tartışmalar çıkmıştı.
+
+387
+01:12:45,310 --> 01:12:57,310
+Bunun sebebi de geliştiricilerin daha yaygın olan donanıma yönelerek kendi uygulamasını geliştirmesiydi. Ben de burada bunu eklemek istemiştim.
+
+388
+01:12:57,310 --> 01:13:01,310
+Donanımın göz önüne alınması yani donanım farklılıklarını.
+
+389
+01:13:01,310 --> 01:13:13,310
+Evet. Doğru burada aslında bu başlığı XSync built-in features'a koyuyorum. Bu onun altında bir alt başlık olarak adlandırılabilir.
+
+390
+01:13:13,310 --> 01:13:25,310
+Bu noktada sizin donanım yeteklerini cihazın kullanabileceğiniz bir yazılım dönüş şun kodusundasınız cross platformda.
+
+391
+01:13:25,310 --> 01:13:39,310
+Karşı taraf ne kadar iyi bir yazılım geliştirirse geliştirsin. Siz donanımın yeteneklerinden faydalanmadığınız için günün sonunda cross platformun ürettiği yazılım biraz güdük kalacaktır.
+
+392
+01:13:39,310 --> 01:13:44,310
+Hep bunu şöyle de karşılaştırıyoruz.
+
+393
+01:13:44,310 --> 01:13:57,310
+C'de de iyi bir kompaylarla kötü bir kompaylar arasındaki fark diye. O yüzden cross platformun donanım seviyesindeki desteği ne kadar fazla olursa o kadar o platform tercih ediyor.
+
+394
+01:13:57,310 --> 01:14:02,310
+Backend Communication tarafında sunucuyu konuşuyorduk.
+
+395
+01:14:02,310 --> 01:14:24,310
+Şimdi burada mobil dünya ile ilgili çok dikkat etmesi gereken başka bir nokta daha var. Siz verileri topluyorsunuz telefonda ve bunu bazen telefonda işleyip bütün işi orada yapıyorsunuz ama bazı uygulamalarda bu veriyi aktarıyorsunuz.
+
+396
+01:14:24,310 --> 01:14:33,310
+Nereye? Arka plandaki sunucuya veri tabanında gönderiyorsunuz ve burada belki saklıyorsunuz ya da bunları işliyorsunuz.
+
+397
+01:14:33,310 --> 01:14:49,310
+Bu verilerin bazıları çok büyük boyutta veriler ve eğer onu daha sonradan kullanmayacaksak o veriyi topluca göndermek aslında çok da tercih ettiğiniz bir durum değil.
+
+398
+01:14:49,310 --> 01:15:03,310
+Topladığımız datayı işleyip sunucuya aktarmak en güzeli. Bazen de kesintiler oluyor mesela telefon veriyi gönderirken şarjımız bitebiliyor ya da bağlantı kopuyor.
+
+399
+01:15:03,310 --> 01:15:17,250
+Bunu çözmenin yolu nedir? Uygulamanızda nasıl bir çözüm üretmek lazım bunun için. Kullancıdan bir şeyler topladınız ve sunucuya gönderirse de yapmaz ya.
+
+400
+01:15:17,250 --> 01:15:44,250
+Yani bir başka değişle veriyi telefonda önce depolayıp ondan sonucu tarafına aktarma işlemini doğru organize etmek lazım ki herhangi bir kesintide veriniz aktarılmayan veriniz telefonunuzun üzerinde depolansın.
+
+401
+01:15:44,250 --> 01:15:56,250
+Tekrar şarj ya da sıkıntınız giderildiğinde o veri kaldığı yerden devam etsin. Mesela veriyi aktarmak için uygulamalar farklı zamanları seçerler. Hemen aldıkları zaman veriyi göndermezler.
+
+402
+01:15:56,250 --> 01:16:03,170
+Ne tür zamanlarda veri aktarmayı tercih eder uygulamalar? Mesela.
+
+403
+01:16:03,170 --> 01:16:17,579
+WhatsApp mesela gece iki de yedek diyorlar. Mesela gece yapmayı tercih ediyor seçeneklerden bir tanesi bu başka. Bir tane daha kritik bir doktor [öğrenci].
+
+404
+01:16:17,579 --> 01:16:23,579
+Hocam power supply olduğu yani şarja takıldığı zaman. Güzel çok güzel [öğrenci].
+
+405
+01:16:23,579 --> 01:16:42,579
+Evet şimdi bunlar en temel aslında işletim sistemlerinin size sunduğu özellikler ama siz tabi uygulamayı geliştirdiğiniz zaman işletim sisteminin bunu sunması yanında sizin bunu kullanıyor olmamız önemli.
+
+406
+01:16:42,579 --> 01:16:54,579
+O yüzden uygulamalar geliştirirken dikkat etmeniz gereken noktalarından bir tanesi de bu yapıyı sağlıklı bir şekilde kurmak.
+
+407
+01:16:54,579 --> 01:17:08,579
+Çünkü sizin uygulamanın çok büyük veriler gönderecekse o zaman bu verinin hangi sürede yani real time göndermesinin kritik olduğu ya da daha sonra gönderilir gönderilmeyeceğini analiz edilmesi lazım.
+
+408
+01:17:08,579 --> 01:17:17,579
+Buna bağlı olarak ne kadar bekletebileceğiniz yani gün sonunda göndermeniz mi gerekiyor yoksa 3 gün sonra gönderseniz olur mu zamanlamanın ne olduğu önemli.
+
+409
+01:17:17,579 --> 01:17:28,579
+Buna bağlı olarak siz wifi üzerinden göndermeyi ya da baz istasyonu üzerinden göndermeyi kullanıcıya seçenek olarak uygulamanızın içinde dahil sunabilirsiniz.
+
+410
+01:17:28,579 --> 01:17:38,579
+Bunlar önemli özellikler ve bu sayede kullanıcı memnuniyetini daha da yüksek noktaya getirme ihtimaliniz ortaya çıkıyor.
+
+411
+01:17:38,579 --> 01:17:48,579
+Yani çok ciddi bir veri yönetimi var arkadaşlar arka planda. Bunun için de telefon üzerinde veriyi saklama yöntemlerimiz var.
+
+412
+01:17:48,579 --> 01:17:59,579
+Bunlara değineceğiz veri tabanı, dosya sistemi, internal external memory bunları önümüzdeki 3-4 hafta içerisinde konuşuyor olacağız.
+
+413
+01:17:59,579 --> 01:18:07,579
+Hocam bu mesela internet bağlantısını kopması durumunda veri ne olacak kısmı aslında iki tarafı da ilgilendiren bir durum.
+
+414
+01:18:07,579 --> 01:18:17,579
+Mesela örnek veriyorum şu an ticaret tabanlı sitelerde bir ürünü sepet eklediğinizde mobilden internet bağlantısı kopsa da geri geldiğinizde ya da telefonu yerden başlattığınızda bile
+
+415
+01:18:17,579 --> 01:18:23,579
+o sepette duruyor. Yani bazen verinin tipine göre her iki tarafta da saklanma ihtimali var.
+
+416
+01:18:23,579 --> 01:18:32,579
+Evet önemli bir nokta bu da. Gene müşteri memnuniyetine dönüyoruz. Sizin uğraştığınız 10 tane ürün koyduğunuz bir sepet.
+
+417
+01:18:32,579 --> 01:18:45,579
+Sizin tekrar geri döndüğünüzde herhangi bir hatadan dolayı kopma yaşadığınızda ya da eksiklikten dolayı tekrar sizin önünüze çıkıyorsa bu ciddi bir mutluluk kaynağı oluyor.
+
+418
+01:18:45,579 --> 01:18:59,579
+Çünkü tekrar bir şeyleri toparlamak zaman alıyor. O yüzden uygulamalarınızın yaptığınız işleri belli oranda saklayabilme yeteneklerinde olması lazım.
+
+419
+01:18:59,579 --> 01:19:07,579
+Ama bu ne yaptığımıza göre değişir ya da telefonların sahip olduğu yeteneklere göre iyi analiz edilmesi gerekiyor.
+
+420
+01:19:07,579 --> 01:19:19,579
+Bazı uygulamalar da mesela çok fazla veri depoluyor kendi üzerinde. Mesela resim, video vs. ya da video uygulamayı indiriyorsunuz.
+
+421
+01:19:19,579 --> 01:19:27,579
+İçinde çok fazla sebebi görsel var. Bu görsellerin telefonda yüklenme yöntemleri var.
+
+422
+01:19:27,579 --> 01:19:32,579
+Örneğin, işte bu Recycler View yapısında konuştuğumuza göreceksiniz.
+
+423
+01:19:32,579 --> 01:19:38,579
+Bin tane kişinin nesini yutmayacağınızda eskiden List View'la böyle yürüyordu işler.
+
+424
+01:19:38,579 --> 01:19:53,579
+Sizin size sunulan yapıyla pay-der-pay gezdikçe ilgili noktaların bilgilerini çekebiliyor olmanız ve mobil tarafı alıyor olmanız da önemli sunucu tarafında.
+
+425
+01:19:53,579 --> 01:19:57,579
+Bunlar da kritik tasarım detayları.
+
+426
+01:19:57,579 --> 01:20:10,579
+Tabi biz şimdi cross platformdan başladık. Biraz mobil uygulamadaki kritik noktalara değindik ama bu bahsettiğim bütün yeteneklerin de cross platformlar içerisinde size sağlanabiliyor olması ödendi.
+
+427
+01:20:10,579 --> 01:20:20,579
+Yani bütün veri satlama yöntemlerinin sizin için sunulmuş olması, bunların ilgili kütüphanelerinin size sunulmuş olması kritik diye düşünüyorum.
+
+428
+01:20:20,579 --> 01:20:28,579
+Şimdi kapıca bu konuyu düşündük. Buraya bir de open source'a ekleyeceğim. Bu olursa güzel olur.
+
+429
+01:20:28,579 --> 01:20:37,579
+Çünkü open source olması community desteği demek. O zaman çok daha cross platformunuzun zenginleşmesi anlamına geliyor.
+
+430
+01:20:37,579 --> 01:20:47,579
+Zaten belli bir noktaya geldikten sonra o ürünler specific kişiler tarafından alınıp Linux'ta olduğu gibi farklı sürümler yaratılabiliyor.
+
+431
+01:20:48,579 --> 01:20:55,579
+Bir cross platformun genel bir mimarisini vereyim.
+
+432
+01:20:55,579 --> 01:23:45,399
+Evet şimdi gördüğünüz gibi bu noktada bir web teknolojileriyle geliştirme yapabileceğiniz bir cross platform'a ait bir mimari paylaştım.
+
+433
+01:23:45,399 --> 01:24:02,399
+Bu noktada API'ler çok önemli yer tutuyorlar. Aynı zamanda cross platform framework'ının zenginliği buradaki geliştirilen API'ler üzerinden ortaya konuyor.
+
+434
+01:24:02,399 --> 01:24:21,819
+Ayrıca ek olarak bir de UI komponentler var. Aslında şu kısım sizin cross platformunuzun kalbi noktasında alt planda da Android API'ler ve iOS API'lerle kurulan ilişki var.
+
+435
+01:24:21,819 --> 01:24:31,819
+Bu noktada ne kadar fazla alt taraftaki yeni Android ya da iOS API'lerini destekleyebilirsiniz.
+
+436
+01:24:31,819 --> 01:24:36,819
+Yazdığınız kodla bu dönüşlüğünü gerçekleştirebilirsiniz.
+
+437
+01:24:36,819 --> 01:24:40,819
+O oranında cross platformunuz güçlü hale geliyor.
+
+438
+01:24:40,819 --> 01:24:59,819
+Ama bu araya koyduğunuz katman sizin kodunuzun da büyümesine doğal olarak yarattığınız uygulamanın da belli oranında daha fazla enerji tüketmenize sebebiyet verebiliyor.
+
+439
+01:24:59,819 --> 01:25:15,819
+Bu kısmı ne kadar iyi organize ederseniz sizin geliştirdiğiniz uygulama Android ya da iOS API'li çünkü burada her iki ya da onların dışındaki ortamlar için de kod yazmanız lazım.
+
+440
+01:25:15,819 --> 01:25:24,819
+Hangi tarafı daha öncelikle hale getirdiyseniz o tarafta daha optimize kodlar üretme şansına sahip olabiliyorsunuz.
+
+441
+01:25:24,819 --> 01:25:31,979
+Evet buraya kadar sorus olan var mı?
+
+442
+01:25:31,979 --> 01:25:38,979
+Peki o zaman şimdi gelelim programlama dillerine.
+
+443
+01:25:38,979 --> 01:25:45,979
+Mobil uygulama geliştirmek için kullanılabilecek programlama dilleri nelerdir?
+
+444
+01:25:45,979 --> 01:25:55,060
+Evet [öğrenci].
+
+445
+01:25:56,060 --> 01:26:01,060
+C, C sharp, C++, Objective C.
+
+446
+01:26:04,659 --> 01:26:07,130
+Başka?
+
+447
+01:26:07,130 --> 01:26:08,130
+[öğrenci]?
+
+448
+01:26:08,130 --> 01:26:16,300
+[öğrenci]?
+
+449
+01:26:16,300 --> 01:26:18,300
+Sesim geliyor mu?
+
+450
+01:26:18,300 --> 01:26:20,300
+Evet duyabiliyorum şu anda.
+
+451
+01:26:20,300 --> 01:26:24,300
+Kotlin var Java var Swift var.
+
+452
+01:26:24,300 --> 01:26:26,300
+Evet başka?
+
+453
+01:26:26,300 --> 01:26:27,300
+[öğrenci]?
+
+454
+01:26:27,300 --> 01:26:31,609
+Hocam Rust var Titan var.
+
+455
+01:26:31,609 --> 01:26:32,609
+Güzel.
+
+456
+01:26:32,609 --> 01:26:34,609
+BHP?
+
+457
+01:26:34,609 --> 01:26:39,609
+Evet bakın çok farklı dilleri de şu anda konuşuyoruz.
+
+458
+01:26:39,609 --> 01:26:43,609
+Bunların çaresinde bir numarada en yaygın olan an hangisidir?
+
+459
+01:26:43,609 --> 01:26:45,609
+Bir mobile uygulama geliştirme için.
+
+460
+01:26:45,609 --> 01:26:50,970
+[öğrenci]?
+
+461
+01:26:51,970 --> 01:26:53,970
+JavaScript olabilir mi hocam?
+
+462
+01:26:53,970 --> 01:26:55,970
+Evet tartışmasız bir numara JavaScript.
+
+463
+01:26:55,970 --> 01:26:59,970
+Bugün cross platformların en çok tercih ettiği.
+
+464
+01:26:59,970 --> 01:27:04,970
+Onun dışında mobile webde de kullandığımız JavaScript var.
+
+465
+01:27:04,970 --> 01:27:07,970
+Peki JavaScript için framework'lar var mı?
+
+466
+01:27:07,970 --> 01:27:11,979
+Node.js?
+
+467
+01:27:11,979 --> 01:27:13,979
+Evet mesela Node.js.
+
+468
+01:27:13,979 --> 01:27:16,979
+Framework neden önemli peki?
+
+469
+01:27:16,979 --> 01:27:18,979
+Bize framework ne sağlıyor?
+
+470
+01:27:19,979 --> 01:27:23,979
+Niye doldan JavaScript yazmıyoruz da framework üzerine ilerliyoruz?
+
+471
+01:27:26,979 --> 01:27:27,979
+[öğrenci]?
+
+472
+01:27:27,979 --> 01:27:31,979
+Hocam belli bir standarda uyum sağlamak için olabilir mi?
+
+473
+01:27:31,979 --> 01:27:40,979
+Evet kesinlikle belli bir standarda uyum sağlamak için framework'lar hem security düzeyi anlamında bize sağlığı otomatik yapılar.
+
+474
+01:27:40,979 --> 01:27:50,979
+Hem de belli yapacağımız işlerin artık hazır bir yapı halinde bize sunulmasını sağlıyor framework'lar.
+
+475
+01:27:50,979 --> 01:28:09,979
+Bu sayede özellikle hem daha az kod yazıyoruz hem de yazmış olduğumuz, geçtirmiş olduğumuz uygulama güvenlik açısından daha standartları sağlayan bir uygulama oluyor.
+
+476
+01:28:09,979 --> 01:28:26,079
+Peki JavaScript'in artı ve eksiyonları nelerdir [öğrenci]?
+
+477
+01:28:26,079 --> 01:28:30,079
+Hocam script dili olduğu için birazcık daha yavaştır.
+
+478
+01:28:30,079 --> 01:28:36,079
+Ancak düzenleme kısmında biraz daha kolaylık sağlıyor bize sonrasında.
+
+479
+01:28:36,079 --> 01:28:38,079
+Hızlıca geliştirme sağlıyor.
+
+480
+01:28:38,079 --> 01:28:40,079
+Rahat öğrenilebilir bir deal.
+
+481
+01:28:42,079 --> 01:28:49,079
+Ama öte yandan sıkıntılarla bir tane script dili olduğu için belli bir performans eksikliği var ama
+
+482
+01:28:49,079 --> 01:28:53,079
+client side browser'lar için de söyleyeceğim.
+
+483
+01:28:53,079 --> 01:28:55,079
+[öğrenci]?
+
+484
+01:28:55,079 --> 01:28:57,079
+Dezevantajı için söyleyeceğim.
+
+485
+01:28:57,079 --> 01:28:59,079
+Teşekkür ederim.
+
+486
+01:28:59,079 --> 01:29:05,079
+Bu farklı üçüncü parti yazımlarla manipüle edilebilir.
+
+487
+01:29:05,079 --> 01:29:09,079
+Çok güzel. Security güvenliği anlamında öyle bir sorunu var. Doğru.
+
+488
+01:29:09,079 --> 01:29:14,920
+[öğrenci]?
+
+489
+01:29:14,920 --> 01:29:19,920
+Hocam çok yaygın olduğu için her uygulama ihtiyacına göre framework bulabiliriz.
+
+490
+01:29:20,920 --> 01:29:22,920
+Doğru.
+
+491
+01:29:22,920 --> 01:29:27,920
+Ama dezavantaj yorumunda da şunu söylemek lazım diye düşünüyorum.
+
+492
+01:29:27,920 --> 01:29:36,920
+Client side tarafındaki browserlarda zaman zaman farklı deneyimler yaşatma olasılığı olan bir deal.
+
+493
+01:29:36,920 --> 01:29:39,920
+Çünkü browser'ın bunu ne kadar desteklemeye bağlı.
+
+494
+01:29:39,920 --> 01:29:45,920
+O yüzden özellikle bazen bazı deneyimleri browser bazlığı yaşıyoruz.
+
+495
+01:29:46,920 --> 01:29:49,920
+Ben Chrome'da açtım şöyle bir şey oldu.
+
+496
+01:29:49,920 --> 01:29:51,920
+Ben Firefox'ta açtım.
+
+497
+01:29:51,920 --> 01:29:53,920
+Böyle oldu.
+
+498
+01:29:53,920 --> 01:29:57,420
+En önemli sıkıntılar bir tanesi olur.
+
+499
+01:29:57,420 --> 01:30:02,420
+Bir dezavantajını hatırlıyorum da farklı cihazlarda çalışılması bazen tutarsızlık oluşturabiliyor.
+
+500
+01:30:02,420 --> 01:30:04,420
+Evet kesinlikle doğru.
+
+501
+01:30:04,420 --> 01:30:06,420
+Bu da aynı şekilde doğru.
+
+502
+01:30:06,420 --> 01:30:12,739
+Gelelim Java'ya JavaScript'tan sonra.
+
+503
+01:30:12,739 --> 01:30:24,739
+Java'nın artı ve eksiyonları bu konuda artık deneyimlisinizdir diye düşünüyorum.
+
+504
+01:30:24,739 --> 01:30:26,739
+Koskoca bir dönem.
+
+505
+01:30:26,739 --> 01:30:36,069
+Java dersi gördünüz.
+
+506
+01:30:36,069 --> 01:30:38,069
+Evet [öğrenci].
+
+507
+01:30:38,069 --> 01:30:48,069
+Hocam bitcode kullandığı için C'ye göre birazcık daha düşük performansı olsa bile Java script gibi dillere göre daha performanslı.
+
+508
+01:30:48,069 --> 01:30:56,069
+Onun dışında pek çok farklı platformda çalışabiliyor Java.
+
+509
+01:30:56,069 --> 01:30:58,069
+Kanal makine kullandığı için.
+
+510
+01:30:58,069 --> 01:31:00,069
+Böyle bir artist de var.
+
+511
+01:31:00,069 --> 01:31:02,069
+Teşekkürler.
+
+512
+01:31:02,069 --> 01:31:04,069
+Şimdi bytecode yapısı.
+
+513
+01:31:04,069 --> 01:31:08,069
+Evet doğru Java'nın en temel özelliklerinden bir tanesi.
+
+514
+01:31:08,069 --> 01:31:12,069
+Portable platform independent.
+
+515
+01:31:12,069 --> 01:31:14,069
+Kendi virtual machine'i kullanıyor.
+
+516
+01:31:14,069 --> 01:31:22,069
+Ama bu dilin hem interpreter'a sahip olması gerektiriyor hem de compiler yapısına sahip olması.
+
+517
+01:31:22,069 --> 01:31:26,069
+Yani bu dil hem interpreted bir dil hem de compiled bir dil.
+
+518
+01:31:26,069 --> 01:31:28,069
+Her iki özelliği de sahip.
+
+519
+01:31:28,069 --> 01:31:30,069
+Öncelikle compile diyorsunuz.
+
+520
+01:31:30,069 --> 01:31:32,069
+Bytecode'u oluşturuyorsunuz.
+
+521
+01:31:32,069 --> 01:31:36,069
+Sonra da bu interpret ediliyor ve virtual machine üzerine çalışıyor.
+
+522
+01:31:36,069 --> 01:31:42,069
+Java Google'ın Android için belirlediği bir dil demiştik.
+
+523
+01:31:42,069 --> 01:31:44,069
+Uzun yıllardır kullanılıyor.
+
+524
+01:31:44,069 --> 01:31:46,069
+Bu dersi de kullanacağız.
+
+525
+01:31:46,069 --> 01:31:54,069
+Ama artık Java'nın hamtal yapısı nedeniyle Google yeni bir dil çıkardı.
+
+526
+01:31:54,069 --> 01:31:56,069
+Yeni bir dil vardı.
+
+527
+01:31:56,069 --> 01:32:00,069
+3-4 senedir kullanımda olan Kotlin.
+
+528
+01:32:00,069 --> 01:32:06,069
+Özellikle Java'nın bu hamtal yapısını ortadan kaldıran bir dil.
+
+529
+01:32:06,069 --> 01:32:08,069
+Daha basit bir sintaksı var.
+
+530
+01:32:08,069 --> 01:32:14,069
+Daha az kod yazarak uygulama geliştirebiliyorsunuz.
+
+531
+01:32:14,069 --> 01:32:20,069
+Java'nın bazı eksikliklerini gidare edebilecek yeteneklere sahip.
+
+532
+01:32:20,069 --> 01:32:32,069
+Sonuçta bugün bir uygulama geliştireceğiniz zaman yavaş yavaş Android tarafında Kotlin tercih ediyor olmanız gerekiyor.
+
+533
+01:32:32,069 --> 01:32:34,069
+Bundan bir iki sene önce bu kadar net değildi.
+
+534
+01:32:34,069 --> 01:32:44,069
+Ama son artık iyice oturduktan sonra bunu birçok kaynakta görebiliyorsunuz Kotlin'in neden tercih edilmesine yönelik.
+
+535
+01:32:44,069 --> 01:32:50,069
+Java'nın artı ve eksik yönlerini bir arada barındırdığı bir özelliği de Garbage Collector yapısı kullanması.
+
+536
+01:32:50,069 --> 01:32:52,069
+Bu güzel.
+
+537
+01:32:52,069 --> 01:32:58,069
+Bize havada bir komponent bırakmıyor.
+
+538
+01:32:58,069 --> 01:33:00,069
+Objekt bırakmıyor belnekte.
+
+539
+01:33:00,069 --> 01:33:08,069
+Ama öte yandan sürekli arka planda bunu kontrol eden bir yapı olduğu için de Java'nın yavaşlamasına neden oluyor.
+
+540
+01:33:08,069 --> 01:33:12,069
+Bu da kaynak tüketiminin yüksek olması demek.
+
+541
+01:33:12,069 --> 01:33:16,069
+Java'nın en büyük maliyeti kaynak tüketimi.
+
+542
+01:33:16,069 --> 01:33:24,069
+Ama şu an için Kotlin eksiklikleri gidermek üzerine ortaya çıkmış durumda.
+
+543
+01:33:24,069 --> 01:33:28,069
+Fakat onun da belli bir öğrenme süreci var.
+
+544
+01:33:28,069 --> 01:33:30,069
+Java biraz daha C'ye benziyor.
+
+545
+01:33:30,069 --> 01:33:34,069
+Kotlin biraz daha Type script bir dil.
+
+546
+01:33:34,069 --> 01:33:40,069
+O yüzden birazcık vakit alacaktır.
+
+547
+01:33:40,069 --> 01:33:46,409
+Peki C++, Java ile aynı kategoride.
+
+548
+01:33:46,409 --> 01:33:48,409
+Objekt öğrenmesi zor.
+
+549
+01:33:48,409 --> 01:33:50,409
+Daha low level bir dil.
+
+550
+01:33:50,409 --> 01:34:00,409
+Ama C++ da net bir şekilde performansın yüksek olduğunu söyleyebiliriz.
+
+551
+01:34:00,409 --> 01:34:16,409
+Telefonlar tarafında Android'te özellikle C, C++ kullanarak ilgili işi kütüphane haline getirip kütüphaneyi Java'dan ya da Kotlin'den çağırabiliyorsunuz.
+
+552
+01:34:16,409 --> 01:34:20,409
+Bu da önemli bir harita olarak karşımıza çıkıyor.
+
+553
+01:34:20,409 --> 01:34:24,409
+C sharp var.
+
+554
+01:34:24,409 --> 01:34:26,409
+Kullandığımız bir dil alarak.
+
+555
+01:34:26,409 --> 01:34:28,409
+Daha çok zaman erinde kullanılıyor.
+
+556
+01:34:28,409 --> 01:34:32,409
+Ama artık bir Windows'da bulunmadığı için çok da kritik değil.
+
+557
+01:34:32,409 --> 01:34:36,409
+Yani çok sık kullandığımız bir dil olmaktan çıktı.
+
+558
+01:34:36,409 --> 01:34:38,409
+Peki Python.
+
+559
+01:34:38,409 --> 01:34:40,409
+Python'da bir opsiyon.
+
+560
+01:34:40,409 --> 01:34:50,380
+Ama Python'ın daha çok hangi uygulamalar için kritik olduğunu söyleyebiliriz.
+
+561
+01:34:50,380 --> 01:34:52,380
+Ali [öğrenci].
+
+562
+01:34:52,380 --> 01:34:56,380
+Python'da kiwi framework'ı var.
+
+563
+01:34:56,380 --> 01:34:58,380
+O mobilya içinde geliştirilebiliyor.
+
+564
+01:34:58,380 --> 01:35:00,380
+O da bir cross platform.
+
+565
+01:35:00,380 --> 01:35:09,720
+Buradaki, [öğrenci]'a da söz vereyim.
+
+566
+01:35:09,720 --> 01:35:15,720
+Hocam, Python'un makine öğrenmesiyle ilgili daha çok şeylerim için kullanılıyor.
+
+567
+01:35:15,720 --> 01:35:25,720
+Evet, şimdi Python dediğiniz zaman aslında veri işleme için çok zengin bir kütüphane sunan bir dil.
+
+568
+01:35:25,720 --> 01:35:31,720
+Ota yandan web uygulaması geliştirmek için de sıklıkla kullanılan bir dil.
+
+569
+01:35:31,720 --> 01:35:35,720
+Ama o da interpreter yapıya sahip.
+
+570
+01:35:35,720 --> 01:35:37,720
+Alt tabanı C olan bir dil.
+
+571
+01:35:37,720 --> 01:35:45,720
+Fakat mobil uygulama geliştirme için çok da performance var eden bir dil değil.
+
+572
+01:35:45,720 --> 01:35:53,720
+O yüzden genellikle mobil uygulama tarafında şu an için çok yoğun bir şekilde kullanılmıyor.
+
+573
+01:35:53,720 --> 01:35:58,970
+Başka, başka ne söyleyebiliriz?
+
+574
+01:35:58,970 --> 01:36:04,520
+Evet, Swift'e gelelim.
+
+575
+01:36:04,520 --> 01:36:10,520
+Swift Objective-C'den neyi farklı bize sunuyor?
+
+576
+01:36:10,520 --> 01:36:24,489
+Niye sorayım?
+
+577
+01:36:24,489 --> 01:36:26,489
+[öğrenci], pardon, [öğrenci]?
+
+578
+01:36:26,489 --> 01:36:28,489
+Yalnız biliyorsam Synthet.
+
+579
+01:36:28,489 --> 01:36:30,489
+Duyamıyorum.
+
+580
+01:36:30,489 --> 01:36:32,489
+Daha kolay Synthet.
+
+581
+01:36:32,489 --> 01:36:45,489
+Bir, en büyük problemim Objective-C'nin çok kolay öğrenilmemesiydi ve bu yüzden de daha uzun kodlar yazmanız ve deployment sürecinin daha uzun olmasıydı.
+
+582
+01:36:45,489 --> 01:36:48,489
+IOS tarafındaki en büyük sorun buydu.
+
+583
+01:36:48,489 --> 01:36:59,489
+IOS da bu sorunu gidermek adına Swift'e ortaya attı ve JavaScript'in kolay kodlanabildiğini Swift ile sağlamaya çalıştı.
+
+584
+01:36:59,489 --> 01:37:03,489
+Yani JavaScript benzeri bir mantık oturtmaya çalıştı.
+
+585
+01:37:03,489 --> 01:37:13,489
+Bu anlamda şu anda IOS geliştirmek, eskiye göre IOS'ta uygulama geliştirmek daha kolay.
+
+586
+01:37:13,489 --> 01:37:16,489
+IOS'ta uygulama geliştiren var mı içimizde?
+
+587
+01:37:16,489 --> 01:37:31,319
+Evet, tabii IOS'ta uygulama geliştirmek için maalesef hem telefona ihtiyaç duyuyoruz hem de geliştirme ortamına ihtiyaç duyuyoruz.
+
+588
+01:37:31,319 --> 01:37:33,319
+Geliştirme ortamı neydi IOS'ta?
+
+589
+01:37:33,319 --> 01:37:38,840
+Framework olarak ne kullanıyorduk?
+
+590
+01:37:38,840 --> 01:37:40,840
+Evet, [öğrenci]?
+
+591
+01:37:40,840 --> 01:37:42,840
+Xcode mu hocam?
+
+592
+01:37:42,840 --> 01:37:44,840
+Evet, Xcode kullanıyoruz.
+
+593
+01:37:45,840 --> 01:37:51,840
+Bunun için bir Mac IOS işletim sistemine ihtiyaç duyuyoruz.
+
+594
+01:37:51,840 --> 01:38:07,840
+Bu anlamda belirli kriterleri açıkçası sağlamak kolay olmuyor IOS tarafında uygulama geliştirmek için çünkü ciddi bir maddi yatırım yapması gerekiyor.
+
+595
+01:38:07,840 --> 01:38:16,840
+Öte yandan Swift Objective-C'nin yetersiz kaldığı ya da bazı buglarını ortadan kaldırdı.
+
+596
+01:38:16,840 --> 01:38:21,840
+Özellikle security tarafında önemli bir katkı sağladı.
+
+597
+01:38:21,840 --> 01:38:29,840
+Bugün birçok uygulama geliştirici Objective-C yerine Swift'i tercih ediyorlar.
+
+598
+01:38:29,840 --> 01:38:35,840
+Tabii Objective-C ile de uygulama geliştirebilirsiniz.
+
+599
+01:38:35,840 --> 01:38:50,840
+Ancak Objective-C IOS'un bazı yeni özelliklerini şu an için sağlamadığı için biraz daha onu bilenler hala uygulama geliştirseler de yavaş yavaş Swift'e doğru kayıyorlar.
+
+600
+01:38:50,840 --> 01:38:52,840
+Evet, 15.44 olmuş.
+
+601
+01:38:52,840 --> 01:38:54,840
+10 dakika ara verelim.
+
+602
+01:38:54,840 --> 01:38:57,840
+15.55'de kaldığımız yerden devam edelim.
+
+603
+01:38:57,840 --> 01:51:01,220
+Evet arkadaşlar kaldığımız yerden devam edelim.
+
+604
+01:51:01,220 --> 01:51:04,220
+Dersini son bölümde görüyoruz.
+
+605
+01:51:04,220 --> 01:51:10,220
+Bugün mobil uygulama geliştirme ile ilgili teknikleri konuştuk.
+
+606
+01:51:10,220 --> 01:51:15,220
+Mobil programlama dillerinden bahsediyorduk az önce.
+
+607
+01:51:15,220 --> 01:51:20,220
+Biraz sonra da mobil uygulama kategorilerinden konuşacağım.
+
+608
+01:51:20,220 --> 01:51:34,220
+Mobil uygulama geliştirme dillerinden bahsederken tabii JavaScript'ten bahsettik ama bir de mobile web için çok kritik olan bir HTML5 var.
+
+609
+01:51:34,220 --> 01:51:43,220
+HTML eski haliyle ve yeni versiyon HTML5 ile arasındaki fark ne verdir?
+
+610
+01:51:43,220 --> 01:51:47,220
+Yani HTML5 bize ne tür yenilikler vaal ediyor?
+
+611
+01:51:47,220 --> 01:51:51,220
+Bu konuda görüşlerinizi merak ediyorum.
+
+612
+01:51:51,220 --> 01:51:53,220
+Bilgilerinizi.
+
+613
+01:51:53,220 --> 01:52:00,590
+Evet [öğrenci].
+
+614
+01:52:00,590 --> 01:52:20,590
+Normal HTML'de tamamen düz bir şekilde var olan bir aslında şu an HTML5'in biraz da JavaScript'in de tam tam ne olmasa da CSS'in de tam olmasa da biraz daha kabiliyetli olarak kendiliğinden mesela Google'ın doodle'larda kullandığı
+
+615
+01:52:20,590 --> 01:52:29,590
+eskiden video kullanıyordu bazen GIF kullanıyordu şu an HTML5 ile video yapmaya kadar bile animasyona kadar bile ilerlediler.
+
+616
+01:52:29,590 --> 01:52:32,590
+O yüzden böyle kolaylıklar sağlayabiliyor.
+
+617
+01:52:32,590 --> 01:52:37,590
+Aslında peki HTML5'in hangi teknolojinin yerini almaya çalıştığını söyleyebiliriz.
+
+618
+01:52:37,590 --> 01:52:45,770
+Yani şu anda artık support'u çok verilmeyen [öğrenci] sana söyleyebilirsin.
+
+619
+01:52:45,770 --> 01:52:50,770
+Yani düşündüğüm hocam aklıma gelmedi tam olarak hangisinden yerini alacağını.
+
+620
+01:52:50,770 --> 01:52:52,770
+Sıkıntı değil ekrana söz veririm.
+
+621
+01:52:52,770 --> 01:52:55,770
+Adobe Flash Player olabilir mi?
+
+622
+01:52:55,770 --> 01:53:08,770
+Evet. Flash Player'ın şu anda zaten birçok noktada desteğinin çekilmesi ve hantal yapısı nedeniyle yeni bir alternatif özellikle düşünüyordu.
+
+623
+01:53:08,770 --> 01:53:13,770
+HTML5'de bu noktada bu boşluğu doldurmak için çok iyi bir alternatif oldu.
+
+624
+01:53:13,770 --> 01:53:25,770
+Peki bu markup language bize biraz önce [öğrenci]'ın söylediği video gösterimini vaat ediyor.
+
+625
+01:53:25,770 --> 01:53:29,770
+Mesela animasyonlar, çeşitli animasyonlar vaat ediyor.
+
+626
+01:53:29,770 --> 01:53:34,770
+Başka neler var böyle çarpıcı özellik olarak?
+
+627
+01:53:34,770 --> 01:53:36,770
+[öğrenci]?
+
+628
+01:53:36,770 --> 01:53:42,770
+Hocam HTML5'de tamamen bu HTML'de olan görsel içerikler tamamen kaldırılıp da
+
+629
+01:53:42,770 --> 01:53:47,770
+işletsel özelliklerin yapılması sağlandı.
+
+630
+01:53:47,770 --> 01:53:54,770
+Yani tüm görsel düzenlemelerin hepsi CSS'in yapılması sağlandı.
+
+631
+01:53:54,770 --> 01:53:57,770
+Orada HTML'de artık onlar yok.
+
+632
+01:53:57,770 --> 01:54:02,770
+Peki HTML hangi görevle yer alıyor diye [öğrenci]'a sorayım.
+
+633
+01:54:02,770 --> 01:54:04,770
+HTML5.
+
+634
+01:54:04,770 --> 01:54:08,770
+Hocam ben bu kullanımına dair bir tane örnek verecektim.
+
+635
+01:54:08,770 --> 01:54:12,770
+Mesela reklamlarda playable ads'ler oluyor.
+
+636
+01:54:12,770 --> 01:54:16,770
+Bunları HTML5'de geliştiriyorlarmış.
+
+637
+01:54:16,770 --> 01:54:21,770
+Çok güzel. Bunun ötesinde biliyorsunuz WebSocket kavramı var.
+
+638
+01:54:21,770 --> 01:54:27,770
+HTML5'de beraber gelen geolocation kavramı var.
+
+639
+01:54:27,770 --> 01:54:37,770
+Yine sizin lokasyon bilgisini kullanarak özellikle kodlama yapmanız ve bu bilgiden faydalanmanızı sağlayan
+
+640
+01:54:37,770 --> 01:54:48,770
+tabi WebRTC, WebMessaging, WebStorage, WebSQL Database gibi daha bir çok başlık var.
+
+641
+01:54:48,770 --> 01:54:54,770
+Bu noktada audio ve video konusunda gelenlikler geliyor.
+
+642
+01:54:54,770 --> 01:55:03,770
+Yani HTML5 daha önce tamamen bir markup language olarak bir web sayfasının görüntülenmesi
+
+643
+01:55:03,770 --> 01:55:07,770
+ve sintaksı noktasında bize yardımcı olan HTML.
+
+644
+01:55:07,770 --> 01:55:13,770
+HTML5 ve HTML6 Media ve communication skilllerini kendi üzerine alarak
+
+645
+01:55:13,770 --> 01:55:19,770
+ve bunu standartlaştırarak kullanımına bize sunuyor.
+
+646
+01:55:19,770 --> 01:55:26,770
+Bu anlamda da HTML5'i önümüzdeki dönemlerde daha yaygın bir şekilde kullanıyor olacağız.
+
+647
+01:55:26,770 --> 01:55:30,770
+Bu noktada başka eklemek isteyen?
+
+648
+01:55:31,770 --> 01:55:36,229
+Eklemek istediğiniz bir şey var mı?
+
+649
+01:55:36,229 --> 01:55:47,229
+Peki, bunların dışında dil olarak daha önce söylediğimiz Dart var diyorsunuz Flutter tarafından.
+
+650
+01:55:47,229 --> 01:55:53,229
+Onun ötesinde başka eklemek istediğiniz bir dil var mı?
+
+651
+01:55:53,229 --> 01:56:01,439
+Evet [öğrenci]?
+
+652
+01:56:01,439 --> 01:56:03,439
+C-sharp var hocam Zamar'ın için.
+
+653
+01:56:03,439 --> 01:56:06,439
+Evet onu konuşmuştuk. Sen o sırada yoktu sanırım.
+
+654
+01:56:06,439 --> 01:56:16,859
+Evet başka?
+
+655
+01:56:16,859 --> 01:56:26,859
+Ruby, Roa ve Rust gibi dillerde kendi habitatlarını yaratıp ileride
+
+656
+01:56:26,859 --> 01:56:30,859
+Python'ın yakaladığı çıkışı yakalarlar mı göreceğiz.
+
+657
+01:56:30,859 --> 01:56:34,859
+İşte Go var, Golang dili de var.
+
+658
+01:56:34,859 --> 01:56:37,859
+Biliyorsunuz Python çok yeni bir dil değil.
+
+659
+01:56:37,859 --> 01:56:48,859
+1900'ler, 1990'larda ortaya atılmış bir dil ama bugün 2020'lerde ortada kasıp kavuruyor.
+
+660
+01:56:48,859 --> 01:57:02,300
+Bunun sebebi nedir sizce [öğrenci]?
+
+661
+01:57:02,300 --> 01:57:06,300
+Çok sayıda kütüphanesinin olması olabilir mi?
+
+662
+01:57:06,300 --> 01:57:13,300
+Evet veri işlemeye yönelik çok fazla sayıda hazır kütüphane sunması
+
+663
+01:57:13,300 --> 01:57:24,300
+data science kavramının da çok yaygınlaşmasıyla beraber bu dilin özellikle biriyi ele alış biçimi,
+
+664
+01:57:24,300 --> 01:57:31,300
+saklayış biçimi, özellikle pandas kütüphanesi vs. saiketler kütüphaneleri gibi
+
+665
+01:57:31,300 --> 01:57:38,300
+kullanıcıların kolay kodlayabilmesi, C'nin kanaşık yapısından kurtulmuş olması,
+
+666
+01:57:38,300 --> 01:57:42,300
+Java'nın hantallığından kurtulmuş olması,
+
+667
+01:57:42,300 --> 01:57:47,300
+açıkçası bu dilin önünü açtı sonuna kadar.
+
+668
+01:57:47,300 --> 01:57:51,300
+Şu anda makine öğrenmesi, derine öğrenme dediğiniz zaman,
+
+669
+01:57:51,300 --> 01:57:58,300
+veri işleme dediğiniz zaman ilk akla gelen dil ve iki satır kodla siz
+
+670
+01:57:58,300 --> 01:58:02,300
+çok ciddi derecede fazla işi,
+
+671
+01:58:02,300 --> 01:58:06,300
+otomize bir şekilde yapma şansına sahipsiniz,
+
+672
+01:58:06,300 --> 01:58:12,300
+deyip Python'ın mobil programlama için bir gelecek var etmediğini şu an için,
+
+673
+01:58:12,300 --> 01:58:17,300
+ama web application, desktop application ve data science tarafında
+
+674
+01:58:17,300 --> 01:58:23,300
+özellikle yoğun kullanıldığını söyleyebiliriz.
+
+675
+01:58:23,300 --> 01:58:28,300
+Şimdi gelelim bir sonraki başlığımıza.
+
+676
+01:58:28,300 --> 01:58:46,729
+Bu bir sonraki başlığımız Android işletim sisteminin mimarisi.
+
+677
+01:58:46,729 --> 01:59:02,869
+Aslında tabi Android'e geçiş yapıyoruz ama şu konuyu konuşmadık,
+
+678
+01:59:02,869 --> 01:59:06,869
+o aklıma geldi, o konuyu da konuşmamız gerektiğini düşünüyorum.
+
+679
+01:59:06,869 --> 01:59:10,869
+Mobil application geliştirme tekniklerini gördük,
+
+680
+01:59:10,869 --> 01:59:13,869
+programlama dillerini gördük ama
+
+681
+01:59:13,869 --> 01:59:16,869
+mobile application kategorileri nelerdir?
+
+682
+01:59:16,869 --> 01:59:24,760
+Ve bu kategoriler neden önemli midir? Ben onu sorayım size.
+
+683
+01:59:24,760 --> 01:59:34,300
+Mesela bugün mobile application kategori istediğiniz zaman aklınıza ne geliyor?
+
+684
+01:59:34,300 --> 01:59:36,300
+Evet [öğrenci].
+
+685
+01:59:36,300 --> 01:59:38,300
+Oyunlar geliyor hocam.
+
+686
+01:59:38,300 --> 01:59:41,300
+Tamam birinci sırada oyunlar geliyor.
+
+687
+01:59:41,300 --> 01:59:43,300
+Uygulamaları olabilir.
+
+688
+01:59:43,300 --> 01:59:48,300
+Update, delete yapabilen basit post uygulamaları.
+
+689
+01:59:48,300 --> 01:59:51,300
+Daha genel isimlerden bahsedelim.
+
+690
+01:59:51,300 --> 01:59:53,300
+Sosyal medya.
+
+691
+01:59:53,300 --> 01:59:57,300
+Tamam çok güzel sosyal medya uygulamaları.
+
+692
+01:59:57,300 --> 01:59:59,300
+Halibray.
+
+693
+01:59:59,300 --> 02:00:04,300
+Finansal ağırlıklı uygulamalar, bank uygulamalar ya da türevleri.
+
+694
+02:00:04,300 --> 02:00:06,300
+Evet finansal uygulamalar.
+
+695
+02:00:06,300 --> 02:00:12,699
+Proactivity uygulamaları.
+
+696
+02:00:12,699 --> 02:00:15,699
+Proactivity evet.
+
+697
+02:00:15,699 --> 02:00:19,699
+Business applications dediğimiz uygulamalar var.
+
+698
+02:00:19,699 --> 02:00:21,699
+[öğrenci].
+
+699
+02:00:21,699 --> 02:00:24,699
+Bankasılık uygulamaları kim tek diyebiliriz?
+
+700
+02:00:24,699 --> 02:00:28,699
+Evet onu finansal başlık altında söyleyelim.
+
+701
+02:00:28,699 --> 02:00:31,699
+Kişisel uygulamalar var.
+
+702
+02:00:31,699 --> 02:00:34,699
+Kişisel uygulamalar ne söyleyebilirsiniz?
+
+703
+02:00:34,699 --> 02:00:36,699
+Eğitim uygulamaları var.
+
+704
+02:00:36,699 --> 02:00:40,720
+Sağlık uygulamaları var.
+
+705
+02:00:40,720 --> 02:00:41,720
+Başka.
+
+706
+02:00:41,720 --> 02:00:43,720
+[öğrenci].
+
+707
+02:00:43,720 --> 02:00:45,720
+Donanımı kullanan uygulamalar var.
+
+708
+02:00:45,720 --> 02:00:49,720
+Mesela sensörlerden aldığı veriyle su terazisi falan.
+
+709
+02:00:49,720 --> 02:00:51,720
+Pusula falan.
+
+710
+02:00:51,720 --> 02:00:53,720
+Güzel.
+
+711
+02:00:53,720 --> 02:00:55,720
+Başka.
+
+712
+02:00:55,720 --> 02:01:05,909
+Peki.
+
+713
+02:01:05,909 --> 02:01:09,909
+Game kategorisi altında nelerden bahsedebilirsiniz?
+
+714
+02:01:09,909 --> 02:01:16,140
+Kategoriyi anlayamadım hocam.
+
+715
+02:01:16,140 --> 02:01:19,699
+Oyun kategorisi.
+
+716
+02:01:19,699 --> 02:01:23,359
+Haydi.
+
+717
+02:01:23,359 --> 02:01:26,359
+Bahsedebiliriz artırılmış gerçeklik oyunlarından.
+
+718
+02:01:26,359 --> 02:01:30,359
+Örneğin Pokemon Go veya Minecraft World gibi oyunlardan.
+
+719
+02:01:30,359 --> 02:01:32,359
+Güzel.
+
+720
+02:01:32,359 --> 02:01:34,359
+Başka.
+
+721
+02:01:34,359 --> 02:01:38,729
+Evet [öğrenci].
+
+722
+02:01:38,729 --> 02:01:41,729
+Hocam hyper casual oyunlar var bu arada.
+
+723
+02:01:41,729 --> 02:01:42,729
+Mesela.
+
+724
+02:01:42,729 --> 02:01:46,060
+Örnek olarak mı?
+
+725
+02:01:46,060 --> 02:01:47,060
+Evet evet.
+
+726
+02:01:47,060 --> 02:01:48,060
+Hani bu şey.
+
+727
+02:01:48,060 --> 02:01:51,060
+Voodoo Games'in falan çıkardığı oyunlar var mesela.
+
+728
+02:01:51,060 --> 02:01:52,060
+Tamam.
+
+729
+02:01:52,060 --> 02:01:53,060
+Güzel.
+
+730
+02:01:53,060 --> 02:01:54,060
+Ekran.
+
+731
+02:01:54,060 --> 02:02:00,630
+Hocam çok daha genelliyerek online oyunlar ve offline oyunlar diye ayırıda biliriz.
+
+732
+02:02:00,630 --> 02:02:08,630
+Tabii burada güzel bir kategorizasyon da ontoloji yaparsak en tepede online ve offline olarak ayırmamız çok önemli.
+
+733
+02:02:08,630 --> 02:02:15,630
+Çünkü online oyunların özellikle son yıllarda bittiği bir artış gösterdiğini söyleyebiliriz.
+
+734
+02:02:15,630 --> 02:02:19,630
+Çünkü herkes birbiriyle challenge etmek istiyor ama ziyar.
+
+735
+02:02:19,630 --> 02:02:23,630
+Akıllı ev yönetim uygulamaları.
+
+736
+02:02:23,630 --> 02:02:26,630
+Evet oyun dışında doğru.
+
+737
+02:02:26,630 --> 02:02:36,630
+Daha çok yani smart stick avramı altında ya da smart transportation adı altında bu tür uygulamalar var.
+
+738
+02:02:36,630 --> 02:02:38,630
+Evet [öğrenci].
+
+739
+02:02:38,630 --> 02:02:42,630
+Hocam community ile oynanan oyunlar diyebiliriz.
+
+740
+02:02:42,630 --> 02:02:46,630
+Yani online şeklinde mesela arkadaşlarla aynı anda bir oyun var mı?
+
+741
+02:02:46,630 --> 02:02:50,630
+Yani multiplayer herhalde söylemek istediğim.
+
+742
+02:02:50,630 --> 02:02:53,630
+Multiplayer ve online evet bu da önemli.
+
+743
+02:02:54,630 --> 02:02:57,630
+Şimdi bunları böyle bir konuştuk hızlıca.
+
+744
+02:02:57,630 --> 02:03:01,630
+Yani bunun altında işte food ve drink başlığı da var.
+
+745
+02:03:01,630 --> 02:03:03,630
+Productivity de var.
+
+746
+02:03:03,630 --> 02:03:06,630
+Shopping de var.
+
+747
+02:03:06,630 --> 02:03:08,630
+Education, entertainment.
+
+748
+02:03:08,630 --> 02:03:16,630
+Bunları her iki platforma girerseniz IOS ve Google'da farklı kategoriler olduğunu göreceksiniz.
+
+749
+02:03:16,630 --> 02:03:21,039
+Bu kategorilere hakim olmak neden önemli?
+
+750
+02:03:21,039 --> 02:03:29,039
+Ya biz bunları burada hani biliyoruz bunlar var zaten ama yani nasıl kategorilendirildiğini bilmek.
+
+751
+02:03:29,039 --> 02:03:36,430
+Bizi mobile uygulama geliştirirken nerede işe yarıyor?
+
+752
+02:03:36,430 --> 02:03:37,430
+Ekran.
+
+753
+02:03:37,430 --> 02:03:44,840
+Hocam geliştirdiğimiz kategorideki uygulamaya göre bazı kolaylıklar sağlanabiliyor olabilir.
+
+754
+02:03:44,840 --> 02:03:47,840
+Mesela oyun geliştirirken bir oyun motoru kullanabiliriz.
+
+755
+02:03:47,840 --> 02:03:49,840
+Unit tarzında.
+
+756
+02:03:49,840 --> 02:03:55,979
+Başka.
+
+757
+02:03:55,979 --> 02:03:56,979
+Mazia.
+
+758
+02:03:56,979 --> 02:04:02,979
+En önemlisi yani bir sektörün kendine ait ihtiyacıları var.
+
+759
+02:04:02,979 --> 02:04:11,979
+O yüzden her detayıyla son kullanıcı takip yani user experience kısmını ilgilendiren kısımda diğer uygulamaların tecrübe ettiği bazı şeyler var.
+
+760
+02:04:11,979 --> 02:04:14,979
+Onlardan ilham alıp üstüne bir şeyler koyulabilir.
+
+761
+02:04:14,979 --> 02:04:16,979
+Güzel doğru.
+
+762
+02:04:16,979 --> 02:04:18,979
+[öğrenci] el kaldırmıştı.
+
+763
+02:04:18,979 --> 02:04:21,979
+Ben de ona benzer bir şey söyleyecektim de.
+
+764
+02:04:21,979 --> 02:04:28,979
+Yani burada kategoriye göre arzı talebin dengesi yani user experience'in sağlaması önemli.
+
+765
+02:04:28,979 --> 02:04:33,979
+Yani işte bir oyundan beklenen çok farklı şey ya da bir sosyal medyadan beklenen çok farklı şeyler var.
+
+766
+02:04:33,979 --> 02:04:35,979
+Onun dengesini sağlaması.
+
+767
+02:04:35,979 --> 02:04:36,979
+Doğru.
+
+768
+02:04:36,979 --> 02:04:38,979
+Zerra.
+
+769
+02:04:38,979 --> 02:04:47,979
+Geliştirme yaparken kullanacağımız teknolojileri araştırırken tam olarak hangi kategoride neye ihtiyacımız olduğunu bilmiyoruz.
+
+770
+02:04:47,979 --> 02:04:57,979
+Evet, hepinizin ortak söylediği nokta hangi kategoride uygulama geliştiriyorsanız o kategorinin temel ihtiyaçları neler,
+
+771
+02:04:57,979 --> 02:05:02,979
+olması gereken özellikleri neler, o uygulamaları inceleyerek aslında bu fizibilite çalışması yapıyorsunuz.
+
+772
+02:05:02,979 --> 02:05:14,979
+İkincisi siz bu kategori sayesinde uygulamanızın kategorisine karar verip o kategori altında aslında uygulamanızı yayınlıyorsunuz.
+
+773
+02:05:14,979 --> 02:05:17,979
+Yani hedef kitlerinizin ne olduğuna karar veriyorsunuz.
+
+774
+02:05:17,979 --> 02:05:20,979
+Markete giderken önemli noktalardan bir tanesi de bu.
+
+775
+02:05:20,979 --> 02:05:24,979
+Uygulamayı geliştirdiğiniz zaman hangi kategori altına koyacağınız önemli.
+
+776
+02:05:24,979 --> 02:05:30,979
+Mesela yanlış bilmiyorsam Android burada size bir kategori imkanı veriyor seçmek için.
+
+777
+02:05:30,979 --> 02:05:38,979
+iOS ise bir ana kategori bir de ikinci kategori dediğimiz secondary kategori imkanı veriyor.
+
+778
+02:05:38,979 --> 02:05:52,979
+Böylece kullanıcının kategoriler altında arama yaparken sizin doğru kategoriyi seçmeniz o kullanıcılara daha fazla kullanıcıya ulaşmanız da kolaylaştırıyor.
+
+779
+02:05:52,979 --> 02:05:58,979
+O yüzden uygulamanızın aslında hangi ana kategorisinin ne olması gerektiğine çok doğru karar vermek gerekiyor.
+
+780
+02:05:58,979 --> 02:06:10,979
+Ya da bazen stratejik olarak foto video kategorisi altına koymaktansa entertainment kategorisi altına koymak daha farklı kitlelere ulaşmanızı sağlıyor.
+
+781
+02:06:10,979 --> 02:06:23,979
+Bu arada uygulama geliştirdiğiniz zaman dünyanın farklı bölgelerinde farklı uygulamaların popüler olduğunu ya da bazı uygulamaların dünya çapında kullanılsa da bazı yerlerde kullanılmadığını biliyorsunuz hala değil mi?
+
+782
+02:06:23,979 --> 02:06:25,979
+Mesela Çin örneği var.
+
+783
+02:06:25,979 --> 02:06:36,979
+Çin genelde arama motorundan tutun, WhatsApp uygulamasına kadar, instant messaging uygulamasına kadar kendi uygulamaları üzerinden ilerlemeyi tercih ediyor.
+
+784
+02:06:36,979 --> 02:06:38,979
+Bu bir devlet politikası.
+
+785
+02:06:38,979 --> 02:06:53,979
+Ama öte yandan bizim ülkemizin de geldiği noktaya baktığınızda bugün WhatsApp'ın geçen tartışılan sözleşmedeki değişiklik yaklaşımıyla bir anda herkes alternatifine gitti.
+
+786
+02:06:53,979 --> 02:06:57,979
+İşte sinyal konuşulmaya başlandı, telegram konuşulmaya başlandı.
+
+787
+02:06:57,979 --> 02:07:12,979
+Yarın öbür gün bu tarz uygulamaların devlet politikaları şeklinde de şekillenerek daha farklı, daha az kullanıcısı olan uygulamaların ön plana çıktığını görüyor olacağız.
+
+788
+02:07:12,979 --> 02:07:21,979
+Bu yüzden de bir oyun da geliştirdiğinizde dünyanın hangi noktasını hedeflediğiniz de önemli.
+
+789
+02:07:21,979 --> 02:07:27,979
+Hangi uzak doğumu, Güney Amerika mı, işte Meksika bölgesi mi, neden bu önemli?
+
+790
+02:07:27,979 --> 02:07:36,979
+Çünkü her milletin kendi karakterisi var ve tercih ettiği kategoriler var.
+
+791
+02:07:36,979 --> 02:07:39,979
+Daha çok ilgilendiği kategoriler var, oyunda da öyle.
+
+792
+02:07:40,979 --> 02:07:48,979
+Ve oranın şartlarına göre belki ekranlar oluşturmanız gerekiyor bazen.
+
+793
+02:07:48,979 --> 02:07:56,979
+Dili zaten bu şekilde ayarlamanız gerekiyor, dünya çapında bir uygulama geliştirmek istiyorsanız.
+
+794
+02:07:56,979 --> 02:08:04,979
+Bunun için Android size zaten gerekli imkanı sağlıyor, sadece sizin ilgili dönüşümleri yapmanız gerekiyor.
+
+795
+02:08:05,979 --> 02:08:13,979
+Sonuçta haberler kategorisi, navigasyon kategorisi, spor kategorisi, sosyal mendere kategorisi,
+
+796
+02:08:13,979 --> 02:08:20,979
+işte hava durumu kategorisi gibi daha böyle ana ya da alt dallar var.
+
+797
+02:08:20,979 --> 02:08:34,979
+O yüzden birbirine iOS ile Android benzese de hangi tarafta kod geliştirdiğinize bağlı olarak bu kategorileri tercih etmeniz gerekiyor.
+
+798
+02:08:34,979 --> 02:08:44,979
+Peki bugün uygulama geliştirecek olsanız ne tarz bir uygulama sizce artık old fashioned dediğimiz,
+
+799
+02:08:44,979 --> 02:08:52,979
+çok da güncel olmayan, ya bu kategoride çok şansımız olmaz diyeceğiniz bir uygulama olur.
+
+800
+02:08:52,979 --> 02:08:57,979
+Ya da hangi tür uygulama, ya bence iş yapar diyeceğiniz bir uygulama olur.
+
+801
+02:08:57,979 --> 02:09:05,979
+Fikrinizi söylemek zorunda değilsiniz, belki bazılarınızın süper bir fikri vardır ama genel olarak kategori soruyorum.
+
+802
+02:09:05,979 --> 02:09:08,979
+Evet, [öğrenci].
+
+803
+02:09:09,979 --> 02:09:14,979
+Hocam, şimdi özellikle bu pandil zamanında internetten alışveriş,
+
+804
+02:09:14,979 --> 02:09:18,979
+her ufak tefek alcanızda varsa her şey internetten almaya başladı.
+
+805
+02:09:18,979 --> 02:09:27,979
+Şu an mesela A101'ün bir dostu bir devler bile getirip anadilin karşısında çok bir şey sağlayamayken de teşahüratlanıyorlar.
+
+806
+02:09:27,979 --> 02:09:32,979
+Küçük bakkalların hali çok daha kötü durumda yani.
+
+807
+02:09:32,979 --> 02:09:40,979
+Bunlara yönelik hani daha onlara o ekonomisine uygun şekilde uygulamalar geçişçidir.
+
+808
+02:09:40,979 --> 02:09:49,979
+Onun için ayrı bir kitap bulabilirsin ki zaten hani artık bu şekilde bu teknolojiye gitmemek bir şansı kalmadı.
+
+809
+02:09:49,979 --> 02:09:51,979
+Evet, doğru kesinlikle.
+
+810
+02:09:52,979 --> 02:10:04,979
+Yani biraz daha aslında esnafın daha online dünyaya geçişini sağlayacak uygulamalar olabilir.
+
+811
+02:10:04,979 --> 02:10:10,979
+Bununla ilgili var zaten uygulamalar yani aslında ama daha spesifik uygulamalar da geliştirilebilir.
+
+812
+02:10:10,979 --> 02:10:12,979
+Doğru, [öğrenci].
+
+813
+02:10:12,979 --> 02:10:16,979
+Hocam, girilmesi zor olan alan bence sosyal medya uygulamaları.
+
+814
+02:10:16,979 --> 02:10:23,979
+Çünkü hani cidden şu anki sosyal medya devleri zaten çok büyük bütçelerle falan çalışıyor.
+
+815
+02:10:23,979 --> 02:10:34,979
+Girilmesi kolay olan bence oyun özellikle çünkü hem Türkiye bunda bir gelişme içinde yani büyük firmalar çıkarıyoruz.
+
+816
+02:10:34,979 --> 02:10:44,979
+Hem de cidden hani insanlara bir şey aldırtmadan da para kazanılabilen reklamlar aracılığıyla falan bir alan olduğundan dolayı bence oyun.
+
+817
+02:10:44,979 --> 02:10:46,979
+Teşekkür ederim, çok güzel iki tespit.
+
+818
+02:10:46,979 --> 02:11:02,979
+Birincisi sosyal medya uygulamalarının hem sayısının hem de yeteneklerinin o kadar çok arttığı bir dünyada yeni bir Instagram fikri, yeni bir Twitter fikri.
+
+819
+02:11:02,979 --> 02:11:07,979
+Önce metin paylaşımı, sonra video, daha doğrusu fotoğraf paylaşımı, sonra video paylaşımı.
+
+820
+02:11:07,979 --> 02:11:11,979
+Şu an geldiğimiz nokta bu. Artık bundan sonra neyi paylaşacağız ben de çok merak ediyorum.
+
+821
+02:11:11,979 --> 02:11:16,979
+İş hani son noktaya gelmiş durumda.
+
+822
+02:11:16,979 --> 02:11:28,979
+Hatta bunu da çok güzel bir şekilde işte videoları daha kısa versiyonlara döndürerek işte TikTok uygulaması vesaire şeklinde karşımıza çıkıyor.
+
+823
+02:11:28,979 --> 02:11:33,979
+Sonuçta multimedia paylaşımı oldukça artmış durumda.
+
+824
+02:11:33,979 --> 02:11:37,979
+Ama topladığımız bu multimedia içerikte büyüyor.
+
+825
+02:11:37,979 --> 02:11:44,979
+Bunu yönetmek lazım. Belki bunun yönetimiyle ilgili bir şeyler yapılabilir diye düşünüyorum. [öğrenci]?
+
+826
+02:11:44,979 --> 02:11:50,979
+Bir de hocam VR teknolojisi alanında çok az bir de uygulama var bu konuda.
+
+827
+02:11:50,979 --> 02:12:00,979
+Mesela yeni yeni deneniyor. Arkadaşın dediği gibi e-ticaretlerin çok artmasıyla beraber kimse gidip mağazadan bir şey denemeye şansı olmuyor.
+
+828
+02:12:00,979 --> 02:12:15,979
+Amazon'un bir denemesi gördüğünüz bir ürünün kendi odanızda görüntü işlemiyle o yüzeyi belirleyip yüzeyin üzerinde doğru bir ölçüde ne kadar uzaksanız kamera ondan ona göre kendi orijinal ölçüsünde orada yerleştirmeye çalışıyor.
+
+829
+02:12:15,979 --> 02:12:18,979
+Çok güzel bir örnek daha. Teşekkür ediyorum.
+
+830
+02:12:18,979 --> 02:12:23,979
+[öğrenci]'ın söylediğini konuştuktan sonra sen ikini de konuşacaksın.
+
+831
+02:12:23,979 --> 02:12:31,979
+[öğrenci] ek olarak oyun sektöründeki kazanma modelini söyledi. Tabii mobil uygulama geliştiriyorsanız kazanma yöntemleri var.
+
+832
+02:12:31,979 --> 02:12:39,979
+Bugün dünyada artık ürün satmaktan çok subscribe modeli işliyor biliyorsunuz.
+
+833
+02:12:40,979 --> 02:12:51,979
+Artı bir de reklam gelirleri var. Oyun dünyasında bu reklam gelirleri oldukça fazlasına ne kadar çok kişiye ulaşıyorsa oyun aslında firmalarda o kadar çok reklam veriyor size.
+
+834
+02:12:51,979 --> 02:12:59,979
+Bunu yapan tabii Google tarafı oluyor ama ona da diğer firmalar veriyor. Bu da bir gelir kapısı. Bunu da doğru kullanmak gerekiyor.
+
+835
+02:12:59,979 --> 02:13:26,979
+[öğrenci]'ın söylemiş olduğu yeni augmented reality de size aslında bir ürünü hem pandemi koşullarından dolayı gidip yerinde fiziksel olarak görmek çok mümkün olmadığı için hem de bazen bazı kişiler bir ürünü kendi bulundukları ortama koymadan fikir üretemiyorlar.
+
+836
+02:13:26,979 --> 02:13:41,979
+Bu augmented reality bize bunu sağlıyor. Bir ürünü almadan önce acaba yakışır mı, orada nasıl durur yaklaşımıyla bu teknoloji alanında oldukça yaygınlaşmaya başladı.
+
+837
+02:13:41,979 --> 02:13:49,250
+Tekranç'ın startupları oluyor.
+
+838
+02:13:49,250 --> 02:13:54,250
+Biraz daha tekrar söylemesin sesini alalım.
+
+839
+02:13:54,250 --> 02:13:56,250
+Şu an daha iyi mi?
+
+840
+02:13:56,250 --> 02:13:58,250
+Evet.
+
+841
+02:13:58,250 --> 02:14:11,250
+Tekranç'ın startupları oluyordu. Orada 2019 senesinde sanırım. Bir fikir şöyleydi. Hani bizim hep sürekli bu verilerin korunması vesaire muhabbeti şu an çok popüler bir olay ya.
+
+842
+02:14:11,250 --> 02:14:12,250
+Evet.
+
+843
+02:14:12,250 --> 02:14:23,250
+İşte bu Instagram, sosyal medya bunlar bizim verilerimiz üzerinden para kazanıyorlar çok ciddi miktarda. Diyorlardı ki bizim startupımızla biz sizin verilerinizi göndermiyoruz.
+
+844
+02:14:23,250 --> 02:14:29,250
+Eğer Instagram sizin hesabınızda şu kadar para yatırırsa o zaman verinizi ona gönderiyoruz.
+
+845
+02:14:29,250 --> 02:14:37,250
+Tabii bu bir kişinin kullanmasıyla olacak bir şey değil. Böyle bir şey yaygınlarsa çok güzel olurdu ama fikir olarak bana çok farklı gelmişti yani.
+
+846
+02:14:37,250 --> 02:14:49,250
+Evet gerçekten değişik bir fikirmiş. Şimdi bu verinin paylaşımıyla ilgili de yeni regulasyonlar söz konusu olduğu için bu verinin aslında ileride muhtemelen ticareti de olacak.
+
+847
+02:14:49,250 --> 02:14:55,250
+Yani şu anda halimizde de var da daha da böyle biraz daha yaygınlaşacak.
+
+848
+02:14:55,250 --> 02:15:10,250
+Veri setleri için ama Google'ın bir artık şeyi var, size sunduğu bir hizmeti var. Bunu biliyor musunuz? Bir alanda veri ihtiyacı duyuyorsunuz, araştırma yapacaksanız ne bileyim.
+
+849
+02:15:10,250 --> 02:15:19,250
+İşte tıp alanında bir araştırma yapacaksınız. Kanserli hücrelerle ilgili görüntülere ihtiyaç duyuyorsunuz vesaire. [öğrenci]?
+
+850
+02:15:20,500 --> 02:15:29,500
+Hocam benim iki tane aklıma geldi de [öğrenci] yazmış zaten. Biri Google Analytics bu siteyle alakalı olanlar, bir de Kaggle.
+
+851
+02:15:29,500 --> 02:15:44,380
+Evet şimdi ben yanlış mı hatırlıyorum? Şuradan bir yazayım bakayım hemen. Evet doğru hatırlıyorum.
+
+852
+02:15:44,380 --> 02:16:04,380
+Şimdi datasearch.research.google.com diye bir artık arama alanınız var. Bu hepinizde faydalı olacağını düşündüğüm bir adres. Hemen chatten size göndereyim.
+
+853
+02:16:04,380 --> 02:16:20,310
+Şimdi bu Scholar Google gibi. Scholar Google'da biliyorsunuz makale, bildiri, patent arayabiliyorsunuz, kitap arayabiliyorsunuz.
+
+854
+02:16:20,310 --> 02:16:29,310
+Dünyadaki birçok indekslenmiş yayına buradan ulaşıyorsunuz. Bu datasearch.research.google.com ile artık
+
+855
+02:16:29,310 --> 02:16:43,309
+işte COVID-19'da ilgili bir veri seti arıyorsunuz. Buraya yazıyorsunuz ilgili keywordlerinizi. Artık özel bir alandan veri seti temini yapma şansınız var.
+
+856
+02:16:43,309 --> 02:16:53,309
+Oldukça faydalanabileceğiniz bir alan diye düşünüyorum. Kaggle bunun mimarlarından bir tanesi kesinlikle.
+
+857
+02:16:53,309 --> 02:17:06,309
+Artık veri setleri üzerinde çalışmak çok yaygınlaştığı için ve veri toplamak çok kolay olmadığı için bu kaynakları kullanabilirsiniz diye düşünüyorum.
+
+858
+02:17:06,309 --> 02:17:17,309
+Bunu da ekstra bir bilgi olarak vermiş olayım. Sonuçta toparlayacak olursak artık yavaş yavaş 3 haftalık hikayelerimizin sonuna geliyoruz.
+
+859
+02:17:17,309 --> 02:17:25,309
+Bu alandaki mobil teknolojiler dünyasına ait olan bundan sonra biraz programlamaya kayacağız.
+
+860
+02:17:25,309 --> 02:17:35,309
+Biz mobil uygulama geliştireceksek bugün bundan 10 sene öncesinin bakış açısıyla geliştiremeyiz.
+
+861
+02:17:35,309 --> 02:17:43,309
+Bir, sensörleri kullanmamız gerekiyor. İki, insan hayatına daha doğrudan dokunan uygulamalar geliştirmemiz gerekiyor.
+
+862
+02:17:43,309 --> 02:17:51,309
+Lokasyon tabanında uygulamalar geliştirmemiz gerekiyor. Medikal uygulamalarla entegre olabilecek uygulamalar geliştirmemiz gerekiyor.
+
+863
+02:17:51,309 --> 02:17:59,309
+Bu doğrultuda bir fark yaratabiliriz. Tabii ki de bir de oyun sektörü var.
+
+864
+02:17:59,309 --> 02:18:05,309
+Oyun sektörü ise bambaşka bir alan. Orada benim çok büyük bir deneyimim yok.
+
+865
+02:18:05,309 --> 02:18:13,309
+Ama oyun programlama dersi açılıyor zaman zaman. Orada bu konuda daha yakından ilgi sahibi olabilirsiniz.
+
+866
+02:18:13,309 --> 02:18:19,309
+Şimdi dönelim. Android işletim sisteminin mimari yapısına.
+
+867
+02:18:19,309 --> 02:18:25,309
+Evet kaç katmanla oluşur diye sorayım. Android işletim sisteminin mimari yapısı.
+
+868
+02:18:25,309 --> 02:18:44,579
+Evet, el [öğrenci]. Pardon, el kaldırını zannettim.
+
+869
+02:18:44,579 --> 02:18:52,579
+Evet, Android mimarisini konuşuyoruz. Sizce kaç katmandan oluşuyor olabilir?
+
+870
+02:18:52,579 --> 02:19:00,579
+Bir kere bir çekirdek katmanı var. Bu çekirdek ile olan bağlantıyı sağlayan.
+
+871
+02:19:00,579 --> 02:19:08,579
+Yani doyanımsal erişimi kolaylaştıran bir hardware abstraction değerimiz var.
+
+872
+02:19:08,579 --> 02:19:20,579
+Onun ötesinde native olarak C ve C++ libri'lerin olduğu aynı zamanda Android runtime'ın bulunduğu
+
+873
+02:19:20,579 --> 02:19:26,579
+eski versiyonu Dalvik Virtual Machine kodlarınızı çalıştıran ortam var.
+
+874
+02:19:26,579 --> 02:19:32,579
+Sonra size hizmet sunan bir framework var.
+
+875
+02:19:32,579 --> 02:19:38,579
+Managerlar üzerinden Content Provider, Activity Location, Telephony Manager vs.
+
+876
+02:19:38,579 --> 02:19:42,579
+Bunlara erişmenizi sağlayan bir katman var.
+
+877
+02:19:42,579 --> 02:19:52,579
+Ve sonunda da bir tane sistem application'ın olduğu standart bir Android telefonuna gelen basit uygulamaların olduğu bir katman var.
+
+878
+02:19:52,579 --> 02:19:56,579
+Bu beş katmanı şimdi bir anı kabaca sizler çizmeye çalışacağım.
+
+879
+02:19:56,579 --> 02:20:02,579
+Bir tanesi sistem application'ın olduğu bir katman dedik.
+
+880
+02:20:02,579 --> 02:20:25,549
+Burada dialer gibi email, kalender gibi kamera uygulaması gibi uygulamalar var.
+
+881
+02:20:25,549 --> 02:20:40,190
+Bunlar bize bu mimarinin doğrudan en üst seviyede sunduğu yazılımlar.
+
+882
+02:20:40,190 --> 02:20:48,190
+Hemen bunun altında esas bizim bu derste kullanacağımız API framework var.
+
+883
+02:20:48,190 --> 02:21:13,379
+Framework sayesinde önümüzdeki hafta detaylarını göreceğiniz yapıları kullanma şansına sahip oluyoruz.
+
+884
+02:21:13,379 --> 02:21:17,379
+Bunların en başında Activity geliyor.
+
+885
+02:21:17,379 --> 02:21:22,819
+Location, Package.
+
+886
+02:21:22,819 --> 02:21:35,309
+Bu arada yazmaya başladığım için tekrar görüntümü kapatayım.
+
+887
+02:21:35,309 --> 02:21:56,000
+Notification, Telephony Manager, Window şeklinde sayabiliriz.
+
+888
+02:21:56,000 --> 02:22:13,469
+Managerlar bizim uygulamamızda bize o konuyla ilgili bütün metotları ve ilgili etribütleri sağlayacaklar.
+
+889
+02:22:13,469 --> 02:22:15,469
+Bu da ikinci katman.
+
+890
+02:22:15,469 --> 02:22:34,579
+O ikinci katmanın hemen altında artık biraz daha low level kodlama yapabildiğiniz native C, C++ kütüphaneleri var.
+
+891
+02:22:34,579 --> 02:22:41,100
+Bu kütüphaneler başında WebKit geliyor.
+
+892
+02:22:41,100 --> 02:22:49,100
+İşte size bahsettiğim bu hybrid applerin çalıştırılmasını sağlayan kütüphane.
+
+893
+02:22:49,100 --> 02:22:55,100
+Grafik işlemler için kütüphaneler var.
+
+894
+02:22:55,100 --> 02:23:01,100
+C kodlarınızı çalıştırmak için kütüphaneler var.
+
+895
+02:23:01,100 --> 02:23:07,100
+Kamera video benzeri işlemler için Media framework var.
+
+896
+02:23:07,100 --> 02:23:18,739
+OpenGL şeklinde sıralanıyor.
+
+897
+02:23:18,739 --> 02:23:29,549
+Hemen aynı katmanda farklı bir layer olarak çizilen Android Runtime var.
+
+898
+02:23:29,549 --> 02:23:36,930
+Şimdi Android Runtime olarak adlandırılıyor artık.
+
+899
+02:23:36,930 --> 02:23:42,930
+Bunun hemen altında iki katmandan bahsediyoruz.
+
+900
+02:23:42,930 --> 02:23:53,920
+Bir tanesi yine Android Runtime diye adlandırılan ART.
+
+901
+02:23:53,920 --> 02:24:01,920
+Diğeri de temel kütüphaneler çalıştırılması istediğiniz uygulama için.
+
+902
+02:24:01,920 --> 02:24:07,920
+Bu Android Runtime aslında eskiden Dalvik Virtual Machine'di.
+
+903
+02:24:07,920 --> 02:24:13,920
+Dalvik Virtual Machine, Java Virtual Machine'in sadeleştirilmiş versiyonuydu.
+
+904
+02:24:13,920 --> 02:24:19,920
+Ama belli bir versiyondan beri bu Android Runtime olarak gerçekleşiyor.
+
+905
+02:24:19,920 --> 02:24:23,920
+Artık burada da çeşitli bir sıkı sadeleştirmeye daha giderek
+
+906
+02:24:23,920 --> 02:24:29,920
+buradaki performansı arttıracak bir yapı tasarlamış oldular.
+
+907
+02:24:29,920 --> 02:24:33,920
+Burada bir sonraki katmanı yazalım.
+
+908
+02:24:33,920 --> 02:24:53,950
+Bu da Hardware Obstruction Layer.
+
+909
+02:24:53,950 --> 02:25:11,340
+Burada audio, bluetooth gibi donanımsal erişmeniz gereken ilgili yapılara erişim imkanı sağlıyor.
+
+910
+02:25:11,340 --> 02:25:20,620
+Bunların bir altında da Linux Kernel'i ve onun içerisinde driver'lar var.
+
+911
+02:25:20,620 --> 02:25:26,899
+Ne tür driver'lardan bahsediyoruz?
+
+912
+02:25:26,899 --> 02:25:40,209
+Burada bahsetmiş olduğumuz bütün donanımsal erişim sağlaması gereken USB, Wi-Fi gibi noktalara erişmenizi sağlayacak driver yapısına bahsediyoruz.
+
+913
+02:25:40,209 --> 02:25:45,409
+Evet, ekran.
+
+914
+02:25:45,409 --> 02:25:53,409
+Hocam şu anda gördüğünüz birçok, hatta Huawei'nin kullandığı, hayır sanırım neredeyse hepsinde Google Framework de var.
+
+915
+02:25:53,409 --> 02:25:55,409
+Mesela bu hangi katbanda oluyor?
+
+916
+02:25:55,409 --> 02:25:59,409
+Google'ın servisleri.
+
+917
+02:25:59,409 --> 02:26:01,409
+Evet, hocam.
+
+918
+02:26:01,409 --> 02:26:09,409
+Bu aslında bir framework yapısı olduğu için bu Java API framework'ın bulunduğu katman olarak adlandırabilirsiniz.
+
+919
+02:26:09,409 --> 02:26:13,409
+Orada o seviyede konumlanacak bir framework.
+
+920
+02:26:13,409 --> 02:26:21,409
+Çünkü birinde telefonun yeteneklerine erişmenizi sağlayacak API framework var.
+
+921
+02:26:21,409 --> 02:26:30,409
+Yani yerindeki yeteneklere erişmek, diğeri online yeteneklerine erişmek için kullandığımız bir katman var.
+
+922
+02:26:30,409 --> 02:26:34,409
+O da Java API framework ile aynı seviyede olduğunu söyleyebiliriz.
+
+923
+02:26:34,409 --> 02:26:39,409
+Hocam bilginiz var mı bilmiyorum, harici framework'lar da var.
+
+924
+02:26:39,409 --> 02:26:41,409
+X positive framework var mesela.
+
+925
+02:26:41,409 --> 02:26:45,409
+Bu da yine Java API framework katmanında mı olur?
+
+926
+02:26:45,409 --> 02:26:51,620
+Onu bilmiyorum. Ne için, ne amaçlı tasarlanmış bir framework?
+
+927
+02:26:51,620 --> 02:26:57,620
+Yani ekstra özelliklere falan erişmemizi sağlıyor. Sisteme çok daha iyi müdahale edebilmemizi sağlıyor.
+
+928
+02:26:57,620 --> 02:27:00,620
+İsmini chatten gönderir misin?
+
+929
+02:27:00,620 --> 02:27:06,379
+Root yeteneği olması gerektiriyor.
+
+930
+02:27:06,379 --> 02:27:13,379
+Tamam, bir bakayım. Ona göre bir inceleyeyim. Fikirimi belirtirim.
+
+931
+02:27:14,379 --> 02:27:24,379
+Şimdi en alt tarafta da burada ifade etmem gereken son kritik olan yer de power management.
+
+932
+02:27:24,379 --> 02:27:30,379
+Her şeyin en alt katmanında yer aldığı.
+
+933
+02:27:30,379 --> 02:27:35,379
+Zaten bu architecture yapısına developer Android com üzerinden erişebilirsiniz.
+
+934
+02:27:35,379 --> 02:27:42,379
+Ben şu anda hızlı çizdim size. Orada bunun detayına ulaşabilirsiniz.
+
+935
+02:27:42,379 --> 02:27:52,379
+Buradaki önemli noktalardan bir tanesi Android runtime yapısının kullanılmış olduğu
+
+936
+02:27:52,379 --> 02:27:58,379
+ahead of time compilation ve just in time compilation kavramı.
+
+937
+02:27:58,379 --> 02:28:00,379
+Bu konuda bilginiz var mı?
+
+938
+02:28:00,379 --> 02:28:04,379
+Ahead of time compilation nedir, just in time compilation nedir?
+
+939
+02:28:04,379 --> 02:28:13,459
+A, O, T ve JIT diye geçer.
+
+940
+02:28:13,459 --> 02:28:15,459
+Çok önemlidir.
+
+941
+02:28:15,459 --> 02:28:19,459
+İki tane farklı yaklaşımı temsil eder.
+
+942
+02:28:19,459 --> 02:28:34,340
+Peki, saat 16.35 oldu. Bu noktada bugünkü dersimizi noktalayalım.
+
+943
+02:28:34,340 --> 02:28:43,340
+Önümüzdeki hafta Android işletim sisteminin temel komponentlerini tanımladıktan sonra
+
+944
+02:28:43,340 --> 02:28:49,340
+uygulama geliştirmek için kullanılan komponentleri anlatacağım.
+
+945
+02:28:49,340 --> 02:28:55,340
+Activity gibi, Content Provider nedir?
+
+946
+02:28:55,340 --> 02:28:58,340
+Bu Broadcast Receiver nedir?
+
+947
+02:28:58,340 --> 02:29:00,340
+Service nedir?
+
+948
+02:29:00,340 --> 02:29:02,340
+Bu yapıları anlatacağım.
+
+949
+02:29:02,340 --> 02:29:11,340
+Onun arkasından da yavaş yavaş bir Android IDE açıp, bu da Android Studio olacak.
+
+950
+02:29:11,340 --> 02:29:18,340
+Bu Android Studio'nun üzerinde ne tür yapabileceklerimizi kolaylaştıracak özellikler var.
+
+951
+02:29:18,340 --> 02:29:20,340
+Bunları biraz tanımlıyor olacağız.
+
+952
+02:29:20,340 --> 02:29:25,340
+Sonra da yavaş yavaş kod yazmaya başlıyor olacağız.
+
+953
+02:29:25,340 --> 02:29:27,340
+Buraya kadar sorusu olan var mı?
+
+954
+02:29:27,340 --> 02:29:35,180
+Peki, evet [öğrenci].
+
+955
+02:29:35,180 --> 02:29:41,030
+Hocam sizin sorduğunuz sorunun cevabını merak ettim aslında.
+
+956
+02:29:41,030 --> 02:29:48,030
+Bu Ahead of Time Compilation ve Justin Time Compilation çok kısa bilgi vereyim.
+
+957
+02:29:48,030 --> 02:29:53,030
+Android ilk başta Justin Time Compilation'ı kullanıyordu.
+
+958
+02:29:53,030 --> 02:29:57,030
+Bu da şu demek siz bir uygulamaya kullanacağınız zaman,
+
+959
+02:29:57,030 --> 02:30:04,030
+kullanacağınız zaman uygulamanın açılması ve değerlenmesi anlamına geliyordu.
+
+960
+02:30:04,030 --> 02:30:08,030
+Bu tabii performansı olduğu için düşüren bir yaklaşımdı.
+
+961
+02:30:09,030 --> 02:30:16,030
+Ahead of Time Compilation daha sonra geldi ve bu uygulamayı indirdiğinizde aslında
+
+962
+02:30:16,030 --> 02:30:23,030
+derlemek ve kullanılmaya hazır hale getirmek anlamına geliyor.
+
+963
+02:30:23,030 --> 02:30:28,030
+Bu sayede uygulamayı anında performans kaybı yaşamadan çalıştırabiliyorsunuz.
+
+964
+02:30:28,030 --> 02:30:31,030
+Ama buradaki sıkıntılardan bir tanesi çok yer kaplıyor olması.
+
+965
+02:30:31,030 --> 02:30:36,030
+Yani bir şeyin derlemesini yaptığınızda, bu kodu açtığınızda daha fazla yer kaplıyordu.
+
+966
+02:30:36,030 --> 02:30:39,030
+Bunun ortası bir çözümle şu anda ilerlemi tercih ediyor.
+
+967
+02:30:39,030 --> 02:30:40,030
+[öğrenci]?
+
+968
+02:30:40,030 --> 02:30:43,030
+Hocam bu Dalvik Catch yapısı var Android'da.
+
+969
+02:30:43,030 --> 02:30:46,030
+O bu mu oluyor? Söylediğiniz şey mi oluyor?
+
+970
+02:30:46,030 --> 02:30:47,030
+Dalvik Catch.
+
+971
+02:30:47,030 --> 02:30:48,030
+Evet.
+
+972
+02:30:48,030 --> 02:30:54,030
+Yani bu Android ilk kurulurken veya uygulama yüklenirken bir Catch yap.
+
+973
+02:30:54,030 --> 02:30:57,030
+Catch bellilikle tutuluyor uygulama ile.
+
+974
+02:30:57,030 --> 02:30:58,030
+Ha, Catch. Anladım.
+
+975
+02:30:58,030 --> 02:30:59,030
+Catch, evet.
+
+976
+02:30:59,030 --> 02:31:01,030
+Evet, doğru.
+
+977
+02:31:02,030 --> 02:31:11,030
+Şöyle ki, şimdi uygulamaları artık boyutlar da büyüdüğü için bazı uygulamaların,
+
+978
+02:31:11,030 --> 02:31:20,030
+bunları Java ile de yazıldığı için ve bundan önce siz APK kullandığınız için,
+
+979
+02:31:20,030 --> 02:31:30,030
+farklı diller için, farklı telefon boyutları için bütün bilgileri aynı APK'nın içine saklıyoruz.
+
+980
+02:31:30,030 --> 02:31:34,030
+Bu da boyutları çok büyütüyordu. Bu bir sıkıntı yaratıyordu.
+
+981
+02:31:34,030 --> 02:31:40,030
+Bu yüzden de ilk etapta hani yüklediğimizde kompile edelim.
+
+982
+02:31:40,030 --> 02:31:44,030
+Çalıştırmaya hazır olsun. Performans açısından sıkıntı yaşanmasın.
+
+983
+02:31:44,030 --> 02:31:48,030
+Sonra bu noktada package yapısını da değiştirirler.
+
+984
+02:31:48,030 --> 02:31:54,030
+Artık sizin telefonunuzun tipine uygun olan kullanılacak dosyalar sadece
+
+985
+02:31:54,030 --> 02:32:00,030
+telefonunuza aktarılıyor Android Application Bundle yapısında.
+
+986
+02:32:00,030 --> 02:32:07,030
+Böylece 50 MB yerine 10 MB sizin telefonunuz için yeterliyse o sadece dosyalara aktarılıyor
+
+987
+02:32:07,030 --> 02:32:12,030
+ve ciddi derecede bir performans kazancı yaşanmış oluyor.
+
+988
+02:32:12,030 --> 02:32:18,030
+Bunların detaylarını önümüzdeki hafta daha da vereceğim ama genel olarak bir giriş yapmış olalım.
+
+989
+02:32:18,030 --> 02:32:22,030
+Evet, teşekkür ediyorum vakit ayırdığınız için.
+
+990
+02:32:22,030 --> 02:32:26,030
+Hepinize iyi haftalar diliyorum. Sağlıklı günler, görüşmek üzere.
+
+991
+02:32:26,030 --> 02:32:28,030
+İyi günler hocam.
+
+992
+02:32:28,030 --> 02:32:30,030
+İyi günler hocam.

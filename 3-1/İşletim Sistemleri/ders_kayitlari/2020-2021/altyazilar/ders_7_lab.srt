@@ -1,0 +1,3435 @@
+1
+00:00:18,640 --> 00:00:20,640
+Merhaba arkadaşlar sesim geliyor mu?
+
+2
+00:00:20,640 --> 00:00:27,640
+5 saat 3 şu anda bir 5-10 dakika içinde başlarız iyice herkes gelsin.
+
+3
+00:00:27,640 --> 00:00:31,640
+Tamam 5 geçeyle 10 geç arası başlarız.
+
+4
+00:00:31,640 --> 00:06:39,310
+Evet arkadaşlar başlayalım o zaman.
+
+5
+00:06:39,310 --> 00:06:41,310
+Sesim artık geliyordur herhalde [öğrenci].
+
+6
+00:06:41,310 --> 00:06:43,310
+Geliyor hocam.
+
+7
+00:06:43,310 --> 00:06:44,310
+Tamam.
+
+8
+00:06:44,310 --> 00:06:46,310
+Geçen kaldığımız yerden devam edelim.
+
+9
+00:06:46,310 --> 00:06:50,310
+En son size pipe komutunu göstermiştim.
+
+10
+00:06:50,310 --> 00:06:54,310
+Prosesleri listelemiştim daha sonra da route isim olan şeyleri
+
+11
+00:06:54,310 --> 00:06:58,310
+Prosesleri route ayrı olan prosesleri listelemiştim.
+
+12
+00:06:58,310 --> 00:07:02,310
+Bir sonraki komutumuz TR komutu.
+
+13
+00:07:02,310 --> 00:07:07,310
+Şu anda bir text editöründe yaptığımız aslında replay sistemlerini
+
+14
+00:07:07,310 --> 00:07:08,310
+açıklaştırabiliyoruz.
+
+15
+00:07:08,310 --> 00:07:12,310
+Cases'leri sensitif yapabiliyoruz ve insensitif yapabiliyoruz.
+
+16
+00:07:12,310 --> 00:07:14,310
+Küçük büyütebiliyoruz yani karakterleri.
+
+17
+00:07:14,310 --> 00:07:18,310
+Türü türü bir sürü normal editörde yaptığımız bütün dönüşünü
+
+18
+00:07:18,310 --> 00:07:20,310
+gerçekleştirebiliyoruz.
+
+19
+00:07:20,310 --> 00:07:22,310
+Buradaki örneğimizde
+
+20
+00:07:22,310 --> 00:07:32,740
+Şu col1, col2, col3, col4 nüktel virgal ayrılmış.
+
+21
+00:07:32,740 --> 00:07:41,740
+Şöyle 4 tane text ifadesini ekolayıp daha sonra pipe komutuyla
+
+22
+00:07:41,740 --> 00:07:44,740
+bu echo sonucunu TR komutuna gönderiyoruz.
+
+23
+00:07:44,740 --> 00:07:49,740
+TR komutu a ile z rencinde olan küçük harf dizimlerini
+
+24
+00:07:49,740 --> 00:07:52,740
+büyük a ile büyük güzel çeviriyor yani aslında küçük harfleri
+
+25
+00:07:52,740 --> 00:07:54,740
+büyük harfleri çevirme işlemi gerçekleştiriyor.
+
+26
+00:07:54,740 --> 00:08:03,740
+Sonraki testimizde 4 tane colonu bir dosya text isimi dosyaya yazıyor.
+
+27
+00:08:03,740 --> 00:08:08,740
+Daha sonra bu dosyanın içeriğini cat ile okuyup bunu TR komutuna
+
+28
+00:08:08,740 --> 00:08:11,740
+gönderip bir replacement işlemi gerçekleştiriyoruz.
+
+29
+00:08:11,740 --> 00:08:13,740
+Yukarıda a ile küçük harfleri de büyük harfleri değiştirmiştik.
+
+30
+00:08:13,740 --> 00:08:17,740
+Buradaysa noktalı virgül yani tek bir karakteri başka bir
+
+31
+00:08:17,740 --> 00:08:19,740
+karakteri değiştirme işlemi gerçekleştiriyoruz.
+
+32
+00:08:19,740 --> 00:08:22,740
+Buradaki tek karakterimiz noktalı virgül.
+
+33
+00:08:22,740 --> 00:08:27,740
+Daha sonra tekrardan echo yazıp bir dosyaya
+
+34
+00:08:27,740 --> 00:08:29,740
+sıfırdan en baştan yazıyor write işlemi uyguluyoruz.
+
+35
+00:08:29,740 --> 00:08:33,740
+Önceki de yarısını kendisine orijinal yazı yazıyor.
+
+36
+00:08:33,740 --> 00:08:39,740
+Ve burada da bir dosyadan TR komutuyla delete işlemini gerçekleştiriyoruz.
+
+37
+00:08:39,740 --> 00:08:44,740
+Çizgi de ile parametresini TR komutuna noktalı virgül istiyoruz.
+
+38
+00:08:44,740 --> 00:08:46,740
+Tabi ki birçok hareket yapabilirsin fark var.
+
+39
+00:08:46,740 --> 00:08:48,740
+Şimdi 3 tane örneği gösterdik.
+
+40
+00:08:48,740 --> 00:08:52,279
+Şimdi çalıştıralım.
+
+41
+00:08:52,279 --> 00:08:56,279
+Evet ilk komutumuz büyük harfleri dönüştürmeyi de gerçekleştirdi.
+
+42
+00:08:56,279 --> 00:08:58,279
+Küçük harflerle büyük harflerle değiştirdi.
+
+43
+00:08:58,279 --> 00:09:00,279
+İkincisinde noktalı virgüllerle değiştirildi.
+
+44
+00:09:00,279 --> 00:09:04,279
+Üçüncü komutumuzda ise gördüğünüz gibi noktalı virgülü faldeleri kaldırıldı.
+
+45
+00:09:04,279 --> 00:09:06,279
+Tamam mı arkadaşlar?
+
+46
+00:09:06,279 --> 00:09:10,279
+TR komutu da bu şekilde.
+
+47
+00:09:10,279 --> 00:09:12,279
+Editör işlemlerini gerçekleştirebiliriz.
+
+48
+00:09:12,279 --> 00:09:14,279
+Yani bir text edip yapabilirsiniz.
+
+49
+00:09:14,279 --> 00:09:15,279
+Her şeyi burada yapabilirsiniz.
+
+50
+00:09:15,279 --> 00:09:16,279
+Ben çok detaylı bilmiyorum.
+
+51
+00:09:16,279 --> 00:09:17,279
+Çok fazla kullanmadım açıkçası bunu.
+
+52
+00:09:17,279 --> 00:09:22,279
+Ama böyle bir şeyin varlığını bilmeniz sizin için bir avantaj.
+
+53
+00:09:22,279 --> 00:09:28,279
+Şimdi bir başka sık kullanılan komuta geçelim.
+
+54
+00:09:28,279 --> 00:09:30,279
+Bu AVK komutu.
+
+55
+00:09:30,279 --> 00:09:34,279
+Bu komutla aslında yapılmış şey bir parsing.
+
+56
+00:09:34,279 --> 00:09:42,279
+Yani siz bir CSV dosyasını AVK ile okuyup her bir kolonu pars edebilirsiniz.
+
+57
+00:09:42,279 --> 00:09:44,279
+Ve buna değişkenler atabilirsiniz.
+
+58
+00:09:44,279 --> 00:09:46,279
+Şimdi burada örneğimize geçelim.
+
+59
+00:09:46,279 --> 00:09:47,279
+Örneğimizi daha güzel anlatacağım.
+
+60
+00:09:47,279 --> 00:09:49,279
+Anlayacağınızı düşünüyorum.
+
+61
+00:09:49,279 --> 00:09:55,679
+Komutumuz bir text dosyasını.
+
+62
+00:09:55,679 --> 00:09:59,679
+[öğrenci] 4.1 satırını bir dosyaya yazıyor.
+
+63
+00:09:59,679 --> 00:10:04,679
+İkincisindeki de [öğrenci] 3.2'yi bir dosyaya append ediyor.
+
+64
+00:10:04,679 --> 00:10:07,679
+Ve bu şekilde bir dosyamız oluşuyor.
+
+65
+00:10:07,679 --> 00:10:10,679
+Şimdi bir dosyaya bir bakalım.
+
+66
+00:10:10,679 --> 00:10:12,679
+İçerisinde bu eski dosya gerçeği.
+
+67
+00:10:12,679 --> 00:10:14,679
+Çünkü çalıştırmadık henüz.
+
+68
+00:10:14,679 --> 00:10:22,950
+Evet dosyamız içerisinde.
+
+69
+00:10:22,950 --> 00:10:32,539
+Şöyle yapalım.
+
+70
+00:10:32,539 --> 00:10:34,539
+Dosyamızın içerisinde bakalım şimdi.
+
+71
+00:10:34,539 --> 00:10:39,350
+O zaman bir kes çalıştırdık.
+
+72
+00:10:39,350 --> 00:10:48,600
+Dosyamız içerisinde 4,1,3,2,2,3,1,4 ve 0,5 var.
+
+73
+00:10:48,600 --> 00:10:52,600
+Bunları yazdıktan sonra arkadaşlar ket bir dosya txt yazıp.
+
+74
+00:10:52,600 --> 00:10:55,600
+AVK komutuyla bunu pars edip.
+
+75
+00:10:55,600 --> 00:10:58,600
+Değeri 3'den büyük olan ekranları yazdırabiliyoruz.
+
+76
+00:10:58,600 --> 00:11:00,600
+Deneyelim.
+
+77
+00:11:00,600 --> 00:11:06,580
+Okuduk okunan çıktığı.
+
+78
+00:11:06,580 --> 00:11:11,299
+Notları bilgileri göre pars ettik.
+
+79
+00:11:11,299 --> 00:11:13,299
+Daha sonra int.
+
+80
+00:11:13,299 --> 00:11:20,490
+İkinci kolonu.
+
+81
+00:11:20,490 --> 00:11:28,029
+3'den büyük olan.
+
+82
+00:11:28,029 --> 00:11:30,029
+R şeklinde.
+
+83
+00:11:30,029 --> 00:11:32,029
+Çalıştırdığımızda.
+
+84
+00:11:32,029 --> 00:11:37,029
+Bir tek ilk kolonun ilk satırın değerinin 3'den büyük olduğunu görüyorsunuz.
+
+85
+00:11:37,029 --> 00:11:39,029
+Ve cevabı döndürdü.
+
+86
+00:11:39,029 --> 00:11:41,029
+Aslında bir finding işlemi yaptık.
+
+87
+00:11:41,029 --> 00:11:43,029
+Tabii ki farkçiler yapabilirsiniz.
+
+88
+00:11:43,029 --> 00:11:45,029
+Bununla biz sadece finding diye ekrana yazdırdık.
+
+89
+00:11:45,029 --> 00:11:47,029
+Ket dosyası ket komutuyla.
+
+90
+00:11:47,029 --> 00:11:49,029
+Çok farkçiler yapabilirsiniz.
+
+91
+00:11:49,029 --> 00:11:51,029
+Burada şunu bilmeniz çok önemli.
+
+92
+00:11:51,029 --> 00:11:54,029
+Siz AVK komutunda.
+
+93
+00:11:54,029 --> 00:11:56,029
+AVK çizgi F diyorsunuz.
+
+94
+00:11:56,029 --> 00:11:58,029
+Bu parametre, farklı parametreler de var.
+
+95
+00:11:58,029 --> 00:12:00,029
+Bu find parametresi.
+
+96
+00:12:00,029 --> 00:12:03,029
+Noktalı bilgilerle ayrıca belirtmemiz gerekiyor.
+
+97
+00:12:03,029 --> 00:12:05,029
+Delimetrimizi belirtmemiz gerekiyor.
+
+98
+00:12:05,029 --> 00:12:07,029
+Buradaki delimetrimiz noktalı bilgir.
+
+99
+00:12:07,029 --> 00:12:09,029
+Daha sonra.
+
+100
+00:12:09,029 --> 00:12:13,029
+Noktalı bilgiler pars ettikten sonra her bir.
+
+101
+00:12:13,029 --> 00:12:15,029
+Parçayı her bir parçayı bir değişken atıyor.
+
+102
+00:12:15,029 --> 00:12:17,029
+Ve bunun için bir inanmisesi oluşturuyor.
+
+103
+00:12:17,029 --> 00:12:19,029
+Örneğin dolar bir [öğrenci]'i ifade ediyor.
+
+104
+00:12:19,029 --> 00:12:21,029
+[öğrenci] kolonu ifade ediyor.
+
+105
+00:12:21,029 --> 00:12:23,029
+[öğrenci]'in olduğu kolonu yani ilk kolonu ifade ediyor.
+
+106
+00:12:23,029 --> 00:12:27,029
+Dolar iki dördün olduğu ikinci kolon ifade ediyor.
+
+107
+00:12:27,029 --> 00:12:31,029
+Dolar üçse üçüncü değişkeni üçüncü kolonu ifade ediyor.
+
+108
+00:12:31,029 --> 00:12:33,029
+Bunlar her bir vektor şeklinde tutuluyor.
+
+109
+00:12:33,029 --> 00:12:36,029
+Daha sonra siz bunlarla bir takım operatörlerle.
+
+110
+00:12:36,029 --> 00:12:38,029
+Karşılaşma operatörleriyle.
+
+111
+00:12:38,029 --> 00:12:40,029
+Bunları kıyaslayabiliyorsunuz.
+
+112
+00:12:40,029 --> 00:12:44,029
+Dostlarla sizin işlemi gerçekleştirebiliyorsunuz.
+
+113
+00:12:44,029 --> 00:12:47,759
+Nixme 1'den başlıyoruz [öğrenci].
+
+114
+00:12:47,759 --> 00:12:51,759
+Arkadaşınız sormuş Nixme 1'den başlıyoruz diye chat'a yazmış.
+
+115
+00:12:51,759 --> 00:12:53,759
+Evet 1'den başlıyoruz.
+
+116
+00:12:53,759 --> 00:12:55,759
+Tamam.
+
+117
+00:12:55,759 --> 00:12:59,259
+Devam ediyoruz.
+
+118
+00:12:59,259 --> 00:13:01,259
+Burada hesap makinesi işlemlerini gerçekleştiriyoruz.
+
+119
+00:13:01,259 --> 00:13:03,259
+Arkadaşlar.
+
+120
+00:13:03,259 --> 00:13:06,259
+Shell'de hesap makinesini çağırabiliyorsunuz.
+
+121
+00:13:06,259 --> 00:13:08,259
+Bunun için BC yazmaz yeterli.
+
+122
+00:13:08,259 --> 00:13:10,259
+Bakın şuan hesap makinesi geldi.
+
+123
+00:13:10,259 --> 00:13:12,259
+Üç büyüktür.
+
+124
+00:13:12,259 --> 00:13:14,259
+Bir dediğimizde bir yazıyor.
+
+125
+00:13:14,259 --> 00:13:16,259
+Bir true demek.
+
+126
+00:13:16,259 --> 00:13:18,259
+Üç küçüktür.
+
+127
+00:13:18,259 --> 00:13:20,259
+Üç büyüktür.
+
+128
+00:13:20,259 --> 00:13:22,259
+Dört dediğimizde ise sıfır geliyor.
+
+129
+00:13:22,259 --> 00:13:24,259
+Yani false.
+
+130
+00:13:24,259 --> 00:13:26,259
+Büyüktür.
+
+131
+00:13:26,259 --> 00:13:28,259
+Küçüktür.
+
+132
+00:13:28,259 --> 00:13:30,259
+Operatörler aynı şekilde.
+
+133
+00:13:30,259 --> 00:13:32,259
+Bir eşleştir.
+
+134
+00:13:32,259 --> 00:13:34,259
+Bir.
+
+135
+00:13:34,259 --> 00:13:40,620
+Atama tek eşleştir.
+
+136
+00:13:40,620 --> 00:13:42,620
+Atama ile iki eşleştir.
+
+137
+00:13:42,620 --> 00:13:44,620
+Şart verilmeydi.
+
+138
+00:13:44,620 --> 00:13:45,620
+Burada bu şekilde.
+
+139
+00:13:45,620 --> 00:13:49,620
+Operatörler bir şekilde bu BC'yi çağırıp çalıştırabilirsiniz.
+
+140
+00:13:49,620 --> 00:13:51,620
+Peki bunu şuan ben kendi çalıştırdım.
+
+141
+00:13:51,620 --> 00:13:53,620
+Direkt terminal reklamında.
+
+142
+00:13:53,620 --> 00:13:55,620
+Bunu Shell'e nasıl yazarız?
+
+143
+00:13:55,620 --> 00:13:57,620
+Shell'i yazmak için de.
+
+144
+00:13:57,620 --> 00:14:05,220
+Şöyle.
+
+145
+00:14:05,220 --> 00:14:07,220
+Kontrol kodu göstereyim.
+
+146
+00:14:07,220 --> 00:14:09,220
+Bu şekilde yapabiliyorsun arkadaşlar.
+
+147
+00:14:09,220 --> 00:14:11,220
+Önce BC'yi çağırıp.
+
+148
+00:14:11,220 --> 00:14:13,220
+Daha doğrusu önce echo yazıp bunu BC'ye gönderebiliyorsunuz.
+
+149
+00:14:13,220 --> 00:14:15,220
+Hesap makinesi çalıştırı şeklinde.
+
+150
+00:14:15,220 --> 00:14:17,220
+Gönderebiliyorsunuz.
+
+151
+00:14:17,220 --> 00:14:19,220
+Bu sadece BC için geçer değil.
+
+152
+00:14:19,220 --> 00:14:21,220
+Terminal operatörlüğü.
+
+153
+00:14:21,220 --> 00:14:23,220
+Terminal programlarına pipe ile bu şekilde komut gönderebilirsiniz.
+
+154
+00:14:23,220 --> 00:14:25,220
+Argümanlarını gönderebilirsiniz.
+
+155
+00:14:25,220 --> 00:14:27,220
+Ama.
+
+156
+00:14:27,220 --> 00:14:31,220
+Pipe çok sık göreceğiniz bir Shell komutu.
+
+157
+00:14:31,220 --> 00:14:35,649
+BC'nin de calculator.
+
+158
+00:14:35,649 --> 00:14:37,649
+Yani hesap makinesi olduğunu.
+
+159
+00:14:37,649 --> 00:14:39,649
+Ve yapılan işlemlerin aslında çok da basit.
+
+160
+00:14:39,649 --> 00:14:41,649
+Bildiğiniz işlemler olduğunu görüyorsunuz.
+
+161
+00:14:41,649 --> 00:14:43,649
+Belki bir gün kullanırsınız diye bunu da verdik.
+
+162
+00:14:43,649 --> 00:14:45,649
+Yoksa normalde.
+
+163
+00:14:45,649 --> 00:14:47,649
+Expression ifadesi var da hatırlarsınız.
+
+164
+00:14:47,649 --> 00:14:49,649
+Burada.
+
+165
+00:14:49,649 --> 00:14:53,649
+Burada basit işlemlerin aynılarını gerçekleştirebilirsiniz.
+
+166
+00:14:53,649 --> 00:14:55,649
+Ama logaritma almağı.
+
+167
+00:14:55,649 --> 00:14:57,649
+Exponansiyel hesaplar için.
+
+168
+00:14:57,649 --> 00:14:59,649
+Hesap makinesini ihtiyaçlayabilirsiniz diye.
+
+169
+00:14:59,649 --> 00:15:01,649
+Bunu da bu şekilde vermiş olalım.
+
+170
+00:15:01,649 --> 00:15:03,649
+Şimdi sorgular kısmına gelelim arkadaşlar.
+
+171
+00:15:03,649 --> 00:15:05,649
+Burada.
+
+172
+00:15:05,649 --> 00:15:07,649
+Bizim bir uzun bir Shell scriptimiz var.
+
+173
+00:15:07,649 --> 00:15:11,649
+Burada size göndermek istediğim iki şey var aslında.
+
+174
+00:15:11,649 --> 00:15:13,649
+Birincisi.
+
+175
+00:15:13,649 --> 00:15:15,649
+Bizim çalıştırdığımız.
+
+176
+00:15:15,649 --> 00:15:17,649
+Biz çalıştırdığımız scriptlere.
+
+177
+00:15:17,649 --> 00:15:19,649
+Argüman gönderebiliyoruz.
+
+178
+00:15:19,649 --> 00:15:21,649
+Biliyorsunuz ki her bir script.
+
+179
+00:15:21,649 --> 00:15:23,649
+Bir program gibi davranıyor.
+
+180
+00:15:23,649 --> 00:15:25,649
+Shell programıma da.
+
+181
+00:15:25,649 --> 00:15:27,649
+Ve siz de programlarınızda neler gönderebiliyorsunuz.
+
+182
+00:15:27,649 --> 00:15:31,539
+Argümanlar gönderebiliyorsunuz.
+
+183
+00:15:31,539 --> 00:15:33,539
+Bu argümanlarınız.
+
+184
+00:15:35,539 --> 00:15:37,539
+Bu argümanlarınız neler olabilir?
+
+185
+00:15:37,539 --> 00:15:39,539
+Mesela programı çalıştırmak için.
+
+186
+00:15:39,539 --> 00:15:41,539
+Gerekli parametreler olabilir.
+
+187
+00:15:41,539 --> 00:15:43,539
+Int main'e yazdığınızda gönderdiğiniz parametre olur.
+
+188
+00:15:43,539 --> 00:15:45,539
+Programı buluşturan parametreler kullanabilirsiniz.
+
+189
+00:15:45,539 --> 00:15:47,539
+Shell de bu tarz şeyler olmazsa olmaz tabi ki.
+
+190
+00:15:47,539 --> 00:15:49,539
+Bu tarz şeyler ihtiyacı duyulacaktır.
+
+191
+00:15:49,539 --> 00:15:51,539
+Onun için parametreleri şu şekilde gönderebiliyoruz.
+
+192
+00:15:51,539 --> 00:15:53,539
+Örneğimizin.
+
+193
+00:15:53,539 --> 00:15:55,539
+Sask'ımız bu olsun.
+
+194
+00:15:55,539 --> 00:15:57,539
+Buna üç tane parametre gönderelim.
+
+195
+00:15:57,539 --> 00:15:59,539
+Parametreli boşluklarla birer boşluk bırakarak gönderebiliyoruz.
+
+196
+00:15:59,539 --> 00:16:03,539
+Üç, dört, beş, altı parametresi olacak şekilde.
+
+197
+00:16:03,539 --> 00:16:05,539
+Dört tane parametre gönderebiliyoruz.
+
+198
+00:16:05,539 --> 00:16:07,539
+Parametreye sınır yok arkadaşlar.
+
+199
+00:16:07,539 --> 00:16:09,539
+Her bir göndersin.
+
+200
+00:16:09,539 --> 00:16:11,539
+Parametre aynı.
+
+201
+00:16:11,539 --> 00:16:13,539
+Önceki AVK komutuna yazdığım gibi.
+
+202
+00:16:13,539 --> 00:16:15,539
+Tek tek.
+
+203
+00:16:15,539 --> 00:16:17,539
+Üçüncü değişikendere atılıyor.
+
+204
+00:16:17,539 --> 00:16:19,539
+Sıra sıra numaralamak yok ise.
+
+205
+00:16:19,539 --> 00:16:21,539
+Bir, iki, üç, dört, beş diye numaralandırıyor.
+
+206
+00:16:21,539 --> 00:16:23,539
+Hatta şuraya şöyle yapalım.
+
+207
+00:16:23,539 --> 00:16:29,730
+Farklı olsun.
+
+208
+00:16:29,730 --> 00:16:31,730
+İlk yazdığım parametre.
+
+209
+00:16:33,730 --> 00:16:35,730
+İlk if koşumuna gidiyor arkadaşlar.
+
+210
+00:16:35,730 --> 00:16:37,730
+Diğer vermek istediğim şey de.
+
+211
+00:16:37,730 --> 00:16:39,730
+If koşullarıydı aslında.
+
+212
+00:16:39,730 --> 00:16:41,730
+Surumdan bakacak olursak.
+
+213
+00:16:41,730 --> 00:16:43,730
+İlk verdiğim parametre.
+
+214
+00:16:43,730 --> 00:16:45,730
+Önce bir dosya TXF ososu oluşturuyoruz.
+
+215
+00:16:45,730 --> 00:16:47,730
+İçine bir metin yazıyoruz.
+
+216
+00:16:47,730 --> 00:16:49,730
+Metnede örnek bir metne dosyayı koyduk.
+
+217
+00:16:49,730 --> 00:16:51,730
+Metne var.
+
+218
+00:16:51,730 --> 00:16:53,730
+Daha sonra.
+
+219
+00:16:53,730 --> 00:16:55,730
+$1 yazmışız.
+
+220
+00:16:55,730 --> 00:16:57,730
+Bu $1 arkadaşlar programa gelen göndermiş ilk argüman.
+
+221
+00:16:57,730 --> 00:16:59,730
+İlk argüman ne?
+
+222
+00:16:59,730 --> 00:17:01,730
+ASD.
+
+223
+00:17:01,730 --> 00:17:03,730
+ASD esimi DOSYA
+
+224
+00:17:03,730 --> 00:17:05,730
+yoktur diyor.
+
+225
+00:17:05,730 --> 00:17:07,730
+Eğer $1 bir sonuç gönderirse.
+
+226
+00:17:07,730 --> 00:17:09,730
+DOSYA mevcut diyecek.
+
+227
+00:17:09,730 --> 00:17:11,730
+DOSYA içeriğini okumaya çalışacak.
+
+228
+00:17:11,730 --> 00:17:13,730
+Bir hata verecek.
+
+229
+00:17:13,730 --> 00:17:15,730
+Eğer hata vermezse.
+
+230
+00:17:15,730 --> 00:17:17,730
+Bu DOSYA mevcuttur diyecek.
+
+231
+00:17:17,730 --> 00:17:19,730
+Hata verirse.
+
+232
+00:17:19,730 --> 00:17:21,730
+$1 isimli DOSYA mevcut değil diyecek.
+
+233
+00:17:21,730 --> 00:17:23,730
+Sözlüğümüz şu şekilde.
+
+234
+00:17:23,730 --> 00:17:25,730
+If ile başlayıp.
+
+235
+00:17:25,730 --> 00:17:27,730
+If'den sonra bir den gelmesi gerekiyor.
+
+236
+00:17:27,730 --> 00:17:29,730
+If.
+
+237
+00:17:29,730 --> 00:17:31,730
+Condition'ımız.
+
+238
+00:17:31,730 --> 00:17:33,730
+Den.
+
+239
+00:17:33,730 --> 00:17:35,730
+Gerek komutlarımız.
+
+240
+00:17:35,730 --> 00:17:37,730
+As.
+
+241
+00:17:37,730 --> 00:17:39,730
+Gerek komutlarımız ve fi ile bitiyor.
+
+242
+00:17:39,730 --> 00:17:41,730
+Olmadığı için.
+
+243
+00:17:41,730 --> 00:17:43,730
+If'in bitişini fi ile bitiriyoruz.
+
+244
+00:17:43,730 --> 00:17:45,730
+Bu döngülerle de benzer bir şekilde olacak.
+
+245
+00:17:45,730 --> 00:17:47,730
+Göreceksiniz döngüleri zaten.
+
+246
+00:17:47,730 --> 00:17:49,730
+Daha kompleks komutlar yazmak için.
+
+247
+00:17:49,730 --> 00:17:51,730
+Square bracket kullanıyoruz.
+
+248
+00:17:51,730 --> 00:17:53,730
+Square bracket açıp.
+
+249
+00:17:53,730 --> 00:17:55,730
+Burada mesela $,
+
+250
+00:17:55,730 --> 00:17:57,730
+$ yazmışız.
+
+251
+00:17:57,730 --> 00:17:59,730
+Genel bilgi olarak.
+
+252
+00:17:59,730 --> 00:18:01,730
+$'ın number of olduğunu biliyorsunuz.
+
+253
+00:18:01,730 --> 00:18:03,730
+Genel bir pratik olarak.
+
+254
+00:18:03,730 --> 00:18:05,730
+Number of anlamına gelir.
+
+255
+00:18:05,730 --> 00:18:07,730
+Bir şeyin sayısıdır aslında.
+
+256
+00:18:07,730 --> 00:18:09,730
+Polar da koyduğunuz zaman bu aslında şeydi.
+
+257
+00:18:09,730 --> 00:18:11,730
+Programa gönderdiniz argümanların sayısı.
+
+258
+00:18:11,730 --> 00:18:15,140
+Parametrelerin sayısı demek.
+
+259
+00:18:15,140 --> 00:18:17,140
+Köşeli parantezinin if'teki konu için
+
+260
+00:18:17,140 --> 00:18:19,140
+belirttiğimizi söylemiştik.
+
+261
+00:18:19,140 --> 00:18:21,140
+İçine çizgi GT yazdığınızda.
+
+262
+00:18:21,140 --> 00:18:23,140
+Bu aslında greater than demek arkadaşlar.
+
+263
+00:18:23,140 --> 00:18:25,140
+Biliyorsunuz ki.
+
+264
+00:18:25,140 --> 00:18:27,140
+Büyüklüğü, küçüklüğü ifadeleri sharp'de.
+
+265
+00:18:27,140 --> 00:18:29,140
+Farklı amaçlar için kullanılıyor.
+
+266
+00:18:29,140 --> 00:18:31,140
+Örneğin büyüklüğü ne için kullanılıyordu?
+
+267
+00:18:31,140 --> 00:18:33,140
+Right için kullanılıyordu.
+
+268
+00:18:33,140 --> 00:18:35,140
+O yüzden burada farklı bir sözsüzlüğü gerekiyor.
+
+269
+00:18:35,140 --> 00:18:37,140
+Onun için de çizgi GT,
+
+270
+00:18:37,140 --> 00:18:39,140
+çizgi L gibi.
+
+271
+00:18:39,140 --> 00:18:41,140
+Less than, greater than gibi.
+
+272
+00:18:41,140 --> 00:18:43,140
+Bir takım söz süzümleri kullanılıyor.
+
+273
+00:18:43,140 --> 00:18:45,140
+Burada şey demek.
+
+274
+00:18:45,140 --> 00:18:47,140
+Şu ifade.
+
+275
+00:18:47,140 --> 00:18:49,140
+Girilen parametre sayısı.
+
+276
+00:18:49,140 --> 00:18:51,140
+Üçten büyük ise, than.
+
+277
+00:18:51,140 --> 00:18:53,140
+Bu kadar parametre girdiniz.
+
+278
+00:18:53,140 --> 00:18:55,140
+Eğer değilse,
+
+279
+00:18:55,140 --> 00:18:57,140
+parametre sayısı yeterli değildi diye bir mesaj yazıyor.
+
+280
+00:18:57,140 --> 00:18:59,140
+Biz 4 adet parametre girdik.
+
+281
+00:18:59,140 --> 00:19:01,140
+Parametrelerimiz
+
+282
+00:19:01,140 --> 00:19:03,140
+ASD 3, 4, 5'ti.
+
+283
+00:19:03,140 --> 00:19:05,140
+Dolayısıyla 4 adet parametre girdiğinizi ekrana yazdım.
+
+284
+00:19:05,140 --> 00:19:08,829
+Sağ tarafta ise
+
+285
+00:19:08,829 --> 00:19:10,829
+komutun
+
+286
+00:19:10,829 --> 00:19:12,829
+scriptinin devamında
+
+287
+00:19:12,829 --> 00:19:14,829
+ise
+
+288
+00:19:14,829 --> 00:19:16,829
+3. ve 4. parametreler
+
+289
+00:19:16,829 --> 00:19:18,829
+birbirine eşit miydi?
+
+290
+00:19:18,829 --> 00:19:20,829
+3. parametremiz
+
+291
+00:19:20,829 --> 00:19:22,829
+4, 5. parametremiz
+
+292
+00:19:22,829 --> 00:19:24,829
+de 5 aslında.
+
+293
+00:19:24,829 --> 00:19:26,829
+Dolayısıyla bunlar eşit olmadığı için
+
+294
+00:19:26,829 --> 00:19:28,829
+farkı demiş.
+
+295
+00:19:28,829 --> 00:19:30,829
+Son komutumuzda ise
+
+296
+00:19:30,829 --> 00:19:32,829
+arkadaşlar
+
+297
+00:19:32,829 --> 00:19:34,829
+çizgi V var.
+
+298
+00:19:34,829 --> 00:19:36,829
+Writeable, readable demek.
+
+299
+00:19:36,829 --> 00:19:38,829
+Eğer bir dosya okunabilirse
+
+300
+00:19:38,829 --> 00:19:40,829
+çizgi V ile bu şekilde kontrol edebilirsiniz.
+
+301
+00:19:40,829 --> 00:19:42,829
+Birinci dosyaya yazdığımız okunabilir mi?
+
+302
+00:19:42,829 --> 00:19:44,829
+Hayır, ne okunabilir, ne yazılabilir dosya?
+
+303
+00:19:44,829 --> 00:19:46,829
+Çünkü böyle bir dosya yok.
+
+304
+00:19:46,829 --> 00:19:48,829
+Peki şöyle bir şeye örnek verseydik.
+
+305
+00:19:48,829 --> 00:19:50,829
+Biliyoruz ki, hatta önce önünü göstereyim.
+
+306
+00:19:50,829 --> 00:19:54,660
+Biliyoruz ki bizim
+
+307
+00:19:54,660 --> 00:19:56,660
+bir dosya
+
+308
+00:19:56,660 --> 00:19:58,660
+txt diye bir dosyamız var.
+
+309
+00:19:58,660 --> 00:20:02,799
+O zaman komutumuzu,
+
+310
+00:20:02,799 --> 00:20:04,799
+varlığını bildiğimiz bir dosya yazarak
+
+311
+00:20:04,799 --> 00:20:11,180
+çalıştıralım bir de.
+
+312
+00:20:11,180 --> 00:20:13,180
+Böyle bir dosya demiş.
+
+313
+00:20:13,180 --> 00:20:15,180
+Şöyle de bakarsanız eğer
+
+314
+00:20:15,180 --> 00:20:17,180
+bir dosyanın aslında writeable,
+
+315
+00:20:17,180 --> 00:20:19,180
+benim en azından benim kullanımcım için writeable olduğunu görüyorsunuz.
+
+316
+00:20:19,180 --> 00:20:21,180
+Bu şekilde
+
+317
+00:20:21,180 --> 00:20:23,180
+kullanabiliyorsunuz, gayet esnek kullanamazsak.
+
+318
+00:20:23,180 --> 00:20:25,180
+Ifler bu şekilde.
+
+319
+00:20:25,180 --> 00:20:27,180
+Iflerle geri özet geçecek olursak,
+
+320
+00:20:27,180 --> 00:20:29,180
+tek komut yazarsanız
+
+321
+00:20:29,180 --> 00:20:31,180
+execution olup,
+
+322
+00:20:31,180 --> 00:20:33,180
+execute edemediğine bakarsınız. Ama break it koyarsanız
+
+323
+00:20:33,180 --> 00:20:35,180
+tam bir condition sağlar size.
+
+324
+00:20:35,180 --> 00:20:37,180
+Condition'daki operatörler olarak
+
+325
+00:20:37,180 --> 00:20:39,180
+büyüktür, küçük küpürük, büyük eşittir, küçük eşittir
+
+326
+00:20:39,180 --> 00:20:41,180
+çizgi gt,
+
+327
+00:20:41,180 --> 00:20:43,180
+çizgi lt
+
+328
+00:20:43,180 --> 00:20:45,180
+vesaire
+
+329
+00:20:45,180 --> 00:20:47,180
+kullanmanız gerekiyor.
+
+330
+00:20:47,180 --> 00:20:49,180
+Bu şekilde
+
+331
+00:20:49,180 --> 00:20:51,180
+koşulları kullanabiliyorsunuz.
+
+332
+00:20:51,180 --> 00:20:53,180
+Son olarak
+
+333
+00:20:53,180 --> 00:20:55,180
+if'ten sonra
+
+334
+00:20:55,180 --> 00:20:57,180
+if else if gibi arkada gelen koşulları kullanacaksanız
+
+335
+00:20:57,180 --> 00:20:59,180
+else'den
+
+336
+00:20:59,180 --> 00:21:01,180
+else ile if'i birleştirip
+
+337
+00:21:01,180 --> 00:21:03,180
+if yazmanız gerekiyor.
+
+338
+00:21:03,180 --> 00:21:05,180
+İç içe geçmiş conditionlar,
+
+339
+00:21:05,180 --> 00:21:07,180
+if koşulları kullanacaksınız.
+
+340
+00:21:07,180 --> 00:21:09,180
+Burası da bu şekildeydi.
+
+341
+00:21:09,180 --> 00:21:12,940
+Soruklar da
+
+342
+00:21:12,940 --> 00:21:14,940
+getirtip bittiğine göre döngülere
+
+343
+00:21:14,940 --> 00:21:16,940
+geçiyoruz.
+
+344
+00:21:16,940 --> 00:21:18,940
+Döngülerde çok esnek yapılar var.
+
+345
+00:21:18,940 --> 00:21:20,940
+Bunları size göstereyim.
+
+346
+00:21:20,940 --> 00:21:22,940
+Öncelikle
+
+347
+00:21:22,940 --> 00:21:24,940
+Plasma C'de
+
+348
+00:21:24,940 --> 00:21:26,940
+değişken hatırlamamız gerekiyor.
+
+349
+00:21:26,940 --> 00:21:28,940
+Sonra condition geliyor.
+
+350
+00:21:28,940 --> 00:21:30,940
+Sonra da arttırım
+
+351
+00:21:30,940 --> 00:21:32,940
+ifadesi geliyor. Şu aşağıdaki olduğu gibi aslında.
+
+352
+00:21:32,940 --> 00:21:34,940
+Şu 13. satırda verilen
+
+353
+00:21:34,940 --> 00:21:36,940
+condition gibi ama.
+
+354
+00:21:36,940 --> 00:21:38,940
+Öncelikle bu konuda Shell
+
+355
+00:21:38,940 --> 00:21:40,940
+Range'de kullanıyor.
+
+356
+00:21:40,940 --> 00:21:42,940
+Terrasyonu da kullanıyor. O yüzden
+
+357
+00:21:42,940 --> 00:21:44,940
+çok daha basit bir söz isim
+
+358
+00:21:44,940 --> 00:21:46,940
+söz konusu burada.
+
+359
+00:21:46,940 --> 00:21:48,940
+For E in 1-2-3-4-5 demek
+
+360
+00:21:48,940 --> 00:21:50,940
+1'den 5'e kadar dönmek
+
+361
+00:21:50,940 --> 00:21:52,940
+döngü başlatmak demek.
+
+362
+00:21:52,940 --> 00:21:54,940
+Döngülerin başlaması için ve dışı için
+
+363
+00:21:54,940 --> 00:21:56,940
+bracket'lar yerine tabi ki başka bir
+
+364
+00:21:56,940 --> 00:21:58,940
+söz isimi kullanıyoruz. Buradaki
+
+365
+00:21:58,940 --> 00:22:00,940
+söz isimleri do ve don
+
+366
+00:22:00,940 --> 00:22:02,940
+yani döngü boyunca
+
+367
+00:22:02,940 --> 00:22:04,940
+do ile don arasında yapmanız bütün komutlar
+
+368
+00:22:04,940 --> 00:22:06,940
+gerçekleşiyor.
+
+369
+00:22:06,940 --> 00:22:08,940
+Bir başka
+
+370
+00:22:08,940 --> 00:22:10,940
+range ifade etmek için
+
+371
+00:22:10,940 --> 00:22:12,940
+süslü paranetriz açıp
+
+372
+00:22:12,940 --> 00:22:14,940
+curver bracket açıp 1'den 5'e kadar
+
+373
+00:22:14,940 --> 00:22:16,940
+aralarında iki nokta koyacak şekilde range
+
+374
+00:22:16,940 --> 00:22:18,940
+belirtebiliyoruz. Ve aynı şekilde bracket kapatıyoruz
+
+375
+00:22:18,940 --> 00:22:20,940
+bracket'ımızı.
+
+376
+00:22:20,940 --> 00:22:22,940
+Breaket açık kapatma ile ilgili de do ve don kullanıyoruz.
+
+377
+00:22:22,940 --> 00:22:24,940
+Yani aynı şekilde.
+
+378
+00:22:24,940 --> 00:22:26,940
+Ve iyi değişkenine
+
+379
+00:22:26,940 --> 00:22:28,940
+erişmek için de dolar ifadesini kullanıyoruz.
+
+380
+00:22:28,940 --> 00:22:30,940
+Yani Shell Script'de
+
+381
+00:22:30,940 --> 00:22:32,940
+değişkenin içerisindeki değerler erişmek için her zaman
+
+382
+00:22:32,940 --> 00:22:36,450
+dolar kullanıyoruz.
+
+383
+00:22:36,450 --> 00:22:38,450
+Burada daha
+
+384
+00:22:38,450 --> 00:22:40,450
+farklı bir söz isimi söz konusu.
+
+385
+00:22:40,450 --> 00:22:42,450
+Bu da tamamen yukarıdakiyle aynı eşit sonucu
+
+386
+00:22:42,450 --> 00:22:44,450
+çıkaran bir döngü. Bu zaten çok
+
+387
+00:22:44,450 --> 00:22:46,450
+klasikleştiği için bildiğinizi
+
+388
+00:22:46,450 --> 00:22:48,450
+düşünüyorum. Bir sonrakinde ise
+
+389
+00:22:48,450 --> 00:22:50,450
+farklı bir söz isimi var.
+
+390
+00:22:50,450 --> 00:22:52,450
+Burada 1'den 5'e kadar göstermiştik.
+
+391
+00:22:52,450 --> 00:22:54,450
+Buradan 1'den 10'a kadar gidiyoruz ama
+
+392
+00:22:54,450 --> 00:22:56,450
+2 nokta atıp 2 yazdığımızda aslında
+
+393
+00:22:56,450 --> 00:22:58,450
+iterasyon suresini 2 arttırarak
+
+394
+00:22:58,450 --> 00:23:00,450
+devam ettirebiliyoruz. Bu şekilde ifade ederek.
+
+395
+00:23:00,450 --> 00:23:02,450
+Ve burada da aslında 1,
+
+396
+00:23:02,450 --> 00:23:04,450
+3, 5, 7, 9'u yazdırmayı
+
+397
+00:23:04,450 --> 00:23:06,450
+hedeflemişiz.
+
+398
+00:23:06,450 --> 00:23:08,450
+Tabii ki şeyde yapabiliyoruz.
+
+399
+00:23:08,450 --> 00:23:10,450
+Buradaki
+
+400
+00:23:10,450 --> 00:23:12,450
+şeye kendi tamamımız
+
+401
+00:23:12,450 --> 00:23:14,450
+sayılar vermek yerine
+
+402
+00:23:14,450 --> 00:23:16,450
+komutlardan dönen değerleri de
+
+403
+00:23:16,450 --> 00:23:18,450
+döngü için alabiliyoruz. Mesela burada
+
+404
+00:23:18,450 --> 00:23:20,450
+LSK komutundan dönen bir liste olduğunu biliyoruz.
+
+405
+00:23:20,450 --> 00:23:22,450
+LSK komutunun bir listeleme komutu olduğunu
+
+406
+00:23:22,450 --> 00:23:24,450
+biliyoruz ve birden fazla sır döndürüyor bize.
+
+407
+00:23:24,450 --> 00:23:26,450
+Bu sırlardaki değerlere
+
+408
+00:23:26,450 --> 00:23:28,450
+dolar işaretiyle erişip
+
+409
+00:23:28,450 --> 00:23:30,450
+bunları döngüyle dönebiliyoruz
+
+410
+00:23:30,450 --> 00:23:32,450
+arkadaşlar.
+
+411
+00:23:32,450 --> 00:23:34,450
+Bir sonraki komutumuzda ise 2900 satırda
+
+412
+00:23:34,450 --> 00:23:36,450
+bakacak olursak, bu önce
+
+413
+00:23:36,450 --> 00:23:38,450
+diğeri
+
+414
+00:23:38,450 --> 00:23:40,450
+mevcut olduğumuz dizindeki
+
+415
+00:23:40,450 --> 00:23:42,450
+mevcut olduğumuz dizindeki
+
+416
+00:23:42,450 --> 00:23:44,450
+ifadeleri döndürüyordu. Burda ise
+
+417
+00:23:44,450 --> 00:23:46,450
+mevcut home page'indeki
+
+418
+00:23:46,450 --> 00:23:48,450
+bütün dosyaları ve klasörleri
+
+419
+00:23:48,450 --> 00:23:50,450
+dönüyor. Ve burada
+
+420
+00:23:50,450 --> 00:23:52,450
+döngü içerisinde bir önceki
+
+421
+00:23:52,450 --> 00:23:54,450
+slide'da gösterdiğim
+
+422
+00:23:54,450 --> 00:23:56,450
+ifleri de birleştirerek bir örnek
+
+423
+00:23:56,450 --> 00:23:58,450
+koymuşuz. Burda if
+
+424
+00:23:58,450 --> 00:24:00,450
+files'a eğer,
+
+425
+00:24:00,450 --> 00:24:02,450
+hatırlarsanız writable'ı, writable'larına
+
+426
+00:24:02,450 --> 00:24:04,450
+çizgi F ve çizgi V
+
+427
+00:24:04,450 --> 00:24:06,450
+ve çizgi R ile bakabiliyorduk.
+
+428
+00:24:06,450 --> 00:24:08,450
+Burda ise çizgi F ile
+
+429
+00:24:08,450 --> 00:24:10,450
+file up olmadığını, çizgi D ile de
+
+430
+00:24:10,450 --> 00:24:12,450
+directory up olmadığını görebiliyoruz.
+
+431
+00:24:12,450 --> 00:24:14,450
+Bu şekilde
+
+432
+00:24:14,450 --> 00:24:16,450
+bir script hazırlamıştım size.
+
+433
+00:24:16,450 --> 00:24:20,049
+Şimdi bunu çalıştıralım.
+
+434
+00:24:20,049 --> 00:24:22,049
+Bu herhalde
+
+435
+00:24:22,049 --> 00:24:27,819
+kapatınca gitti.
+
+436
+00:24:27,819 --> 00:24:34,849
+Bu döngümüzde 14.
+
+437
+00:24:34,849 --> 00:24:38,960
+Önce
+
+438
+00:24:38,960 --> 00:24:42,400
+ve ilk beşini yazdırdık.
+
+439
+00:24:42,400 --> 00:24:44,400
+Daha sonra ikinci beşliyi diğer
+
+440
+00:24:44,400 --> 00:24:46,400
+farklı bir şekilde yazdırdık.
+
+441
+00:24:46,400 --> 00:24:50,190
+Sonra tekrar bir
+
+442
+00:24:50,190 --> 00:24:52,190
+beşli yazdırdık.
+
+443
+00:24:52,190 --> 00:24:54,190
+Bu beşli
+
+444
+00:24:54,190 --> 00:24:56,190
+bizim bildiğimiz C'deki söz dizimine
+
+445
+00:24:56,190 --> 00:24:58,190
+yazdırdığımız. Daha sonra ikişer ikişer
+
+446
+00:24:58,190 --> 00:25:02,180
+atlayarak yazdırmıştık.
+
+447
+00:25:02,180 --> 00:25:04,180
+Sonra dosyalarımı
+
+448
+00:25:04,180 --> 00:25:06,180
+şu an mevcut klasöründeki dosyaları yazdırdım.
+
+449
+00:25:06,180 --> 00:25:08,180
+Şu gördünüz.
+
+450
+00:25:08,180 --> 00:25:10,180
+Yukarıdan
+
+451
+00:25:10,180 --> 00:25:12,180
+sayeslerden başlayıp buraya kadar giden
+
+452
+00:25:12,180 --> 00:25:14,180
+klasöründeki. Bunlar da home
+
+453
+00:25:14,180 --> 00:25:16,180
+direktöründeki klasör ve dosyalar.
+
+454
+00:25:16,180 --> 00:25:18,180
+scriptimiz
+
+455
+00:25:18,180 --> 00:25:20,180
+bu şekilde
+
+456
+00:25:20,180 --> 00:25:22,180
+bir takım döngüler gerçekleştirip
+
+457
+00:25:22,180 --> 00:25:24,180
+döngüler yapabileceğiniz farkı
+
+458
+00:25:24,180 --> 00:25:26,180
+işleyerek
+
+459
+00:25:26,180 --> 00:25:29,900
+gösterebiliyor.
+
+460
+00:25:29,900 --> 00:25:31,900
+[öğrenci]
+
+461
+00:25:31,900 --> 00:25:33,900
+Şimdi JS dosyasını
+
+462
+00:25:33,900 --> 00:25:35,900
+çalıştırabilir miyiz?
+
+463
+00:25:35,900 --> 00:25:37,900
+Shell ile
+
+464
+00:25:37,900 --> 00:25:39,900
+sadece Shell scriptleri çalıştırabilirsin.
+
+465
+00:25:39,900 --> 00:25:41,900
+JS dosyasını
+
+466
+00:25:41,900 --> 00:25:43,900
+çalıştırmak için
+
+467
+00:25:43,900 --> 00:25:45,900
+bir browser ihtiyacın olacaktır.
+
+468
+00:25:45,900 --> 00:25:47,900
+Çünkü JS dosyaları browser tarafından
+
+469
+00:25:47,900 --> 00:25:49,900
+tanımlanıyor, browser tarafından
+
+470
+00:25:49,900 --> 00:25:51,900
+çalıştırılıyor. Bir browser ihtiyacın olacaktır.
+
+471
+00:25:51,900 --> 00:25:53,900
+Ama Shell ile bir browser açıp
+
+472
+00:25:53,900 --> 00:25:55,900
+o browserdan da JS dosyasını
+
+473
+00:25:55,900 --> 00:25:57,900
+çalıştırabilir. Sonuçlarını tekrar Shell'de
+
+474
+00:25:57,900 --> 00:25:59,900
+görebilirsin. Böyle bir şey söz konusu.
+
+475
+00:25:59,900 --> 00:26:01,900
+Aynı burada Shell scriptimizde
+
+476
+00:26:01,900 --> 00:26:03,900
+yaptığımız
+
+477
+00:26:03,900 --> 00:26:05,900
+kalkültür açmak gibi
+
+478
+00:26:05,900 --> 00:26:07,900
+aslında. Önce
+
+479
+00:26:07,900 --> 00:26:09,900
+browser'ın promptuna gidip orada
+
+480
+00:26:09,900 --> 00:26:11,900
+kutlusunu çalıştırıp daha sonra
+
+481
+00:26:11,900 --> 00:26:13,900
+Shell'de
+
+482
+00:26:13,900 --> 00:26:15,900
+sonuçlarına bakabilirsiniz.
+
+483
+00:26:15,900 --> 00:26:17,900
+Ama uğraştırabilir sizi birazcık.
+
+484
+00:26:17,900 --> 00:26:19,900
+Hazır böyle bir şey yapmanız daha kolay olacaktır.
+
+485
+00:26:19,900 --> 00:26:21,900
+Böyle bir şey yapmaya kalkarsan
+
+486
+00:26:21,900 --> 00:26:23,900
+uğraşabilirsin birazcık.
+
+487
+00:26:23,900 --> 00:26:25,900
+Çünkü browser'ın
+
+488
+00:26:25,900 --> 00:26:27,900
+promptu olmayabilir veya browser
+
+489
+00:26:27,900 --> 00:26:29,900
+sana açık olmayabilir.
+
+490
+00:26:29,900 --> 00:26:31,900
+Browser'ın her versiyonu
+
+491
+00:26:31,900 --> 00:26:33,900
+farklı JavaScript
+
+492
+00:26:33,900 --> 00:26:35,900
+versiyonlarını destekliyor.
+
+493
+00:26:35,900 --> 00:26:37,900
+Dolayısıyla
+
+494
+00:26:37,900 --> 00:26:39,900
+doğru yolda olsanız bile
+
+495
+00:26:39,900 --> 00:26:41,900
+yalnız sonuçlar
+
+496
+00:26:41,900 --> 00:26:43,900
+alabilirsiniz. Çok karşıya kontrol
+
+497
+00:26:43,900 --> 00:26:45,900
+yapmanız gerekiyor.
+
+498
+00:26:45,900 --> 00:26:50,019
+Şimdi devam edelim.
+
+499
+00:26:50,019 --> 00:26:52,019
+Shell programlama 15.
+
+500
+00:26:52,019 --> 00:26:54,019
+döngülerle devam edelim. Tabii ki tek döngümüz
+
+501
+00:26:54,019 --> 00:26:56,019
+for değil, while döngülerimiz de var.
+
+502
+00:26:58,700 --> 00:27:00,700
+Browser arkadaşlar while aslında.
+
+503
+00:27:00,700 --> 00:27:02,700
+Yapmıyoruz burada.
+
+504
+00:27:02,700 --> 00:27:04,700
+E'yi ondan
+
+505
+00:27:04,700 --> 00:27:06,700
+başlatıyoruz. E'de bir değişken oluşturup
+
+506
+00:27:06,700 --> 00:27:08,700
+on veriyoruz devralarak.
+
+507
+00:27:08,700 --> 00:27:10,700
+Sonra E'deki her bir değişkene
+
+508
+00:27:10,700 --> 00:27:12,700
+for döngüsü içerisinde. While aslında bakarsınız
+
+509
+00:27:12,700 --> 00:27:14,700
+if'tir değil mi?
+
+510
+00:27:14,700 --> 00:27:16,700
+if komutudur aslında while'a.
+
+511
+00:27:16,700 --> 00:27:18,700
+Yaptığı şey if'tir.
+
+512
+00:27:18,700 --> 00:27:20,700
+if ile counter register arttırarak
+
+513
+00:27:20,700 --> 00:27:22,700
+arttırarak yapılan işlemdir aslında while.
+
+514
+00:27:22,700 --> 00:27:24,700
+For döngüsünden çok daha farklıdır.
+
+515
+00:27:24,700 --> 00:27:26,700
+Dolayısıyla
+
+516
+00:27:26,700 --> 00:27:28,700
+söz dizimi de
+
+517
+00:27:28,700 --> 00:27:30,700
+sintaksı da if'e daha çok benziyor.
+
+518
+00:27:30,700 --> 00:27:32,700
+While'dan sonra
+
+519
+00:27:32,700 --> 00:27:34,700
+bir condition'ımız geliyor.
+
+520
+00:27:34,700 --> 00:27:36,700
+Condition'ımız if'teki gibi birebir aynı.
+
+521
+00:27:36,700 --> 00:27:38,700
+Dejgeniz için değere erişip
+
+522
+00:27:38,700 --> 00:27:40,700
+greater than sonra da hangi
+
+523
+00:27:40,700 --> 00:27:42,700
+değerden daha büyükse onu yazıyoruz.
+
+524
+00:27:44,700 --> 00:27:46,700
+Do ve done aynı fordaki gibi
+
+525
+00:27:46,700 --> 00:27:48,700
+bracket'ımız ifade ediyor.
+
+526
+00:27:48,700 --> 00:27:50,700
+While döngüsün başlayıp bittiği yer ifade ediyor.
+
+527
+00:27:50,700 --> 00:27:52,700
+Echo'yla print yapıyoruz.
+
+528
+00:27:52,700 --> 00:27:54,700
+Daha sonra expression'la da
+
+529
+00:27:54,700 --> 00:27:56,700
+birer azaltarak sonuçları iyi
+
+530
+00:27:56,700 --> 00:27:58,700
+tekeratıp bitiriyoruz aslında.
+
+531
+00:28:00,700 --> 00:28:02,700
+Öbür tarafta değilse tabii ki repeat
+
+532
+00:28:02,700 --> 00:28:04,700
+antili var. Repeat antili ise
+
+533
+00:28:04,700 --> 00:28:06,700
+yapılan işlem
+
+534
+00:28:06,700 --> 00:28:08,700
+sözü biraz daha farklı.
+
+535
+00:28:08,700 --> 00:28:10,700
+Sayıcıaltıdan
+
+536
+00:28:10,700 --> 00:28:12,700
+başlatıp
+
+537
+00:28:12,700 --> 00:28:14,700
+üçten küçük olana kadar
+
+538
+00:28:14,700 --> 00:28:16,700
+do diyoruz.
+
+539
+00:28:16,700 --> 00:28:18,700
+Let, counter,
+
+540
+00:28:18,700 --> 00:28:20,700
+x1. Arkadaşlar sizin
+
+541
+00:28:20,700 --> 00:28:22,700
+şu yukarıdan iştir, expression,
+
+542
+00:28:22,700 --> 00:28:24,700
+ix1 ile aynı işi yapıyor aslında.
+
+543
+00:28:24,700 --> 00:28:26,700
+Counter'dan biraz azaltıp tekrar
+
+544
+00:28:26,700 --> 00:28:28,700
+counter'e veriyor. Yani bu let de aslında
+
+545
+00:28:28,700 --> 00:28:30,700
+expression'a aynı ifade.
+
+546
+00:28:30,700 --> 00:28:32,700
+Daha sonra echo deyip counter içerisinde
+
+547
+00:28:32,700 --> 00:28:34,700
+erektörüne bastırıp aynı işlemi
+
+548
+00:28:34,700 --> 00:28:36,700
+yapıyoruz.
+
+549
+00:28:36,700 --> 00:28:38,700
+Sonuçlar da
+
+550
+00:28:38,700 --> 00:28:40,700
+telme ekranı gördüğünüz gibi oluyor.
+
+551
+00:28:40,700 --> 00:28:42,700
+Şöyle birer çok olursak
+
+552
+00:28:42,700 --> 00:28:44,700
+birer birer aynı olduğunu görürsünüz.
+
+553
+00:28:44,700 --> 00:28:46,700
+Döngüler de bu şekilde arkadaşlar.
+
+554
+00:28:46,700 --> 00:28:48,700
+Söz hizmleri oldukça
+
+555
+00:28:48,700 --> 00:28:50,700
+basit.
+
+556
+00:28:50,700 --> 00:28:52,700
+Akılda kalıcı açıkçası.
+
+557
+00:28:52,700 --> 00:28:54,700
+Çünkü while,
+
+558
+00:28:54,700 --> 00:28:56,700
+for'a çok benziyor dual adanaksısından
+
+559
+00:28:56,700 --> 00:28:58,700
+ama aynı zamanda ife de çok benziyor.
+
+560
+00:28:58,700 --> 00:29:00,700
+Çünkü condition ifade'ler aynı. Söz hizmini ifade ediliyor.
+
+561
+00:29:00,700 --> 00:29:02,700
+Şimdi son olarak
+
+562
+00:29:02,700 --> 00:29:04,700
+case komutumuz var arkadaşlar.
+
+563
+00:29:04,700 --> 00:29:06,700
+Case komutumuzda da
+
+564
+00:29:06,700 --> 00:29:08,700
+tabi ki switch case
+
+565
+00:29:08,700 --> 00:29:10,700
+yapısı var.
+
+566
+00:29:10,700 --> 00:29:17,279
+Burada şöyle bir dosyamız var.
+
+567
+00:29:17,279 --> 00:29:19,279
+Case dosyamız
+
+568
+00:29:19,279 --> 00:29:21,279
+bir değişken
+
+569
+00:29:21,279 --> 00:29:23,279
+okuyoruz.
+
+570
+00:29:23,279 --> 00:29:25,279
+Ve bu değişkenin
+
+571
+00:29:25,279 --> 00:29:27,279
+içerisinde araç geçiyorsa
+
+572
+00:29:27,279 --> 00:29:29,279
+ekrana şunu yaz.
+
+573
+00:29:29,279 --> 00:29:31,279
+Ev geçiyorsa ekrana
+
+574
+00:29:31,279 --> 00:29:33,279
+ev için ev.com yaz.
+
+575
+00:29:33,279 --> 00:29:35,279
+Ve başka diğer herhangi bir şey geçiyorsa
+
+576
+00:29:35,279 --> 00:29:37,279
+o da yıldız ifade ediliyor.
+
+577
+00:29:37,279 --> 00:29:39,279
+Ekrana
+
+578
+00:29:39,279 --> 00:29:41,279
+biz sadece araç ev için yönlendirebiliyoruz.
+
+579
+00:29:41,279 --> 00:29:43,279
+Yaz
+
+580
+00:29:43,279 --> 00:29:45,279
+işlemini yapıyor.
+
+581
+00:29:45,279 --> 00:29:51,380
+Bir çalıştıralım bunu da.
+
+582
+00:29:51,380 --> 00:29:53,380
+Şimdi ekranda hemen girdi bekliyor.
+
+583
+00:29:53,380 --> 00:29:55,380
+Araç yazarsam
+
+584
+00:29:55,380 --> 00:29:57,380
+bunu veriyor.
+
+585
+00:29:57,380 --> 00:29:59,380
+Tekrar ekrandan girdi bekliyorum.
+
+586
+00:29:59,380 --> 00:30:01,380
+Ev yazarsa bunu veriyor.
+
+587
+00:30:01,380 --> 00:30:03,380
+Başka bir şey yazarsam da
+
+588
+00:30:03,380 --> 00:30:05,380
+biz sadece
+
+589
+00:30:05,380 --> 00:30:07,380
+ev ve araç için yönlendirebiliyoruz diye.
+
+590
+00:30:07,380 --> 00:30:09,380
+Evet
+
+591
+00:30:09,380 --> 00:30:11,380
+böylelikle
+
+592
+00:30:11,380 --> 00:30:13,380
+biraz hızlı da olsa
+
+593
+00:30:13,380 --> 00:30:15,380
+bugün ki dersimizi bitirdik.
+
+594
+00:30:15,380 --> 00:30:17,380
+Ben şu ana kadar
+
+595
+00:30:17,380 --> 00:30:19,380
+sunumda aslında size en baştan
+
+596
+00:30:19,380 --> 00:30:21,380
+gidecek olursak
+
+597
+00:30:21,380 --> 00:30:23,380
+size dosyalama, dosya oluşturma
+
+598
+00:30:23,380 --> 00:30:25,380
+dosyalara bir şeyler yazıp
+
+599
+00:30:25,380 --> 00:30:27,380
+dosyaları bir yerden bir yere taşınmayı
+
+600
+00:30:27,380 --> 00:30:29,380
+daha sonra dosyalara yetki vermeyi, kullanıcılara yetki vermeyi daha doğrusu önce gösterdim.
+
+601
+00:30:29,380 --> 00:30:31,380
+Daha sonra
+
+602
+00:30:31,380 --> 00:30:33,380
+kullanıcı gruplarını oluşturmayı gösterdim.
+
+603
+00:30:33,380 --> 00:30:35,380
+Dostlarınızı size anlattım.
+
+604
+00:30:35,380 --> 00:30:37,380
+Sonra size dosya yönetimiyle
+
+605
+00:30:37,380 --> 00:30:39,380
+dosyalara yetkilendirmeyi
+
+606
+00:30:39,380 --> 00:30:41,380
+anlattım.
+
+607
+00:30:41,380 --> 00:30:45,140
+Sonra basit bir şekilde ekolları gösterdim size.
+
+608
+00:30:45,140 --> 00:30:47,140
+Size sistem leşkenlerini anlattım.
+
+609
+00:30:47,140 --> 00:30:49,140
+Sistem leşkeni nasıl kullanacağınızı gösterdim.
+
+610
+00:30:49,140 --> 00:30:51,140
+Leşken antrenmanları gösterdim.
+
+611
+00:30:51,140 --> 00:30:53,140
+Arifmetik işlemleri, eksporasyonu nasıl yazarız onu gösterdim.
+
+612
+00:30:53,140 --> 00:30:55,140
+Daha sonra arifmetik işlemler yine
+
+613
+00:30:55,140 --> 00:30:57,140
+hesap makinesini
+
+614
+00:30:57,140 --> 00:30:59,140
+başka bir komutu daha kullanarak
+
+615
+00:30:59,140 --> 00:31:01,140
+başka bir uygulama kullanarak
+
+616
+00:31:01,140 --> 00:31:03,140
+sonuçlarını yazdırmaya de gösterdim.
+
+617
+00:31:03,140 --> 00:31:05,140
+Daha sonra
+
+618
+00:31:05,140 --> 00:31:07,140
+veri girişini size gösterdim.
+
+619
+00:31:07,140 --> 00:31:09,140
+Nasıl
+
+620
+00:31:09,140 --> 00:31:11,140
+leşkeni değer okuyoruz
+
+621
+00:31:11,140 --> 00:31:13,140
+konsol ekranından.
+
+622
+00:31:13,140 --> 00:31:15,140
+Daha sonra eşleştirmeleri gösterdim.
+
+623
+00:31:15,140 --> 00:31:17,140
+Farklı listelemeler nasıl oluyor,
+
+624
+00:31:17,140 --> 00:31:19,140
+dosyaları, fitreleri
+
+625
+00:31:19,140 --> 00:31:21,140
+nasıl listeleyebilirim gibi.
+
+626
+00:31:21,140 --> 00:31:23,140
+Daha sonra farklı dosya işlemlerinizi
+
+627
+00:31:23,140 --> 00:31:25,140
+gösterdim. Riot ile dependi farkını gösterdim.
+
+628
+00:31:25,140 --> 00:31:27,140
+Burada size
+
+629
+00:31:27,140 --> 00:31:29,140
+bir ödev de vermişim aslında. Yapmanız gereken şey
+
+630
+00:31:29,140 --> 00:31:31,140
+şunları alt satır alıp
+
+631
+00:31:31,140 --> 00:31:33,140
+tırnakları düzeltmek sadece.
+
+632
+00:31:33,140 --> 00:31:35,140
+Ben de çalışması neden o. Bir de şu
+
+633
+00:31:35,140 --> 00:31:37,140
+arka arka yazdığınız şeye çalışmayabilir.
+
+634
+00:31:37,140 --> 00:31:39,140
+Ketten sonra da tekrar denistir etmeniz
+
+635
+00:31:39,140 --> 00:31:41,140
+gerekir. Çünkü
+
+636
+00:31:41,140 --> 00:31:43,140
+bende ki 5 versiyonu ve sizin de
+
+637
+00:31:43,140 --> 00:31:45,140
+kullanacağınız 5 versiyonu bunu desteklemiyor olacak.
+
+638
+00:31:45,140 --> 00:31:48,609
+Arka arka yazılan komutları.
+
+639
+00:31:48,609 --> 00:31:50,609
+Daha sonra size
+
+640
+00:31:50,609 --> 00:31:52,609
+process'ler listeliyip grep'i göstermiştim.
+
+641
+00:31:52,609 --> 00:31:54,609
+Ve pipe komutunu göstermiştim burada.
+
+642
+00:31:56,609 --> 00:31:58,609
+Pipe komutu çok sık kullanacağınız
+
+643
+00:31:58,609 --> 00:32:00,609
+bir şey. Çünkü genelde
+
+644
+00:32:00,609 --> 00:32:02,609
+sizin yazdığınız komutları, arka arka yazdığınız komutları kombine etmeniz
+
+645
+00:32:02,609 --> 00:32:04,609
+gerekiyor. Yani bir komutunun
+
+646
+00:32:04,609 --> 00:32:06,609
+çıktığını baş komuta gönderebilmeyi sağlıyor.
+
+647
+00:32:06,609 --> 00:32:08,609
+Pipe çok sık ihtiyacınız
+
+648
+00:32:08,609 --> 00:32:10,609
+olacaktır daha kompleks işleriniz için.
+
+649
+00:32:10,609 --> 00:32:12,609
+Size pipe'i gösterdim.
+
+650
+00:32:12,609 --> 00:32:14,609
+Daha sonra bugünkü dersimize
+
+651
+00:32:14,609 --> 00:32:16,609
+dedikten itibaren zaten
+
+652
+00:32:16,609 --> 00:32:18,609
+karakter dönüşümleri,
+
+653
+00:32:18,609 --> 00:32:20,609
+parçaları ekleştiren inomatik
+
+654
+00:32:20,609 --> 00:32:22,609
+ve birtakım find işlemleri
+
+655
+00:32:22,609 --> 00:32:24,609
+veya replace veya daha farklı işler yapabilirsiniz.
+
+656
+00:32:24,609 --> 00:32:26,609
+Onları gösterdim.
+
+657
+00:32:26,609 --> 00:32:28,609
+Amerikan komutuları nasıl kullanacağınızı gösterdim.
+
+658
+00:32:28,609 --> 00:32:30,609
+Bu çok kullanışlı oluyor.
+
+659
+00:32:30,609 --> 00:32:32,609
+Özellikle Excel ve CSV dosyalarında
+
+660
+00:32:32,609 --> 00:32:34,609
+delimetreler belli olduğu için
+
+661
+00:32:34,609 --> 00:32:36,609
+dosyaları tablo gibi çok rahat
+
+662
+00:32:36,609 --> 00:32:38,609
+kullanabiliyorsunuz.
+
+663
+00:32:38,609 --> 00:32:40,609
+Size hesap makinesi uygulaması
+
+664
+00:32:40,609 --> 00:32:42,609
+üzerinden expression'ı nasıl yapacağınızı gösterdim.
+
+665
+00:32:42,609 --> 00:32:44,609
+Sonra size sorguları gösterdim.
+
+666
+00:32:44,609 --> 00:32:46,609
+Aynı zamanda
+
+667
+00:32:46,609 --> 00:32:48,609
+bunu gösterirken de
+
+668
+00:32:48,609 --> 00:32:50,609
+size shell scriptlerinizi nasıl argüman
+
+669
+00:32:50,609 --> 00:32:52,609
+gönderdiniz ve argümanlarınızı nasıl kontrol edeceğinizi
+
+670
+00:32:52,609 --> 00:32:54,609
+gösterdim.
+
+671
+00:32:54,609 --> 00:32:56,609
+Size döngüleri anlattım.
+
+672
+00:32:56,609 --> 00:32:58,609
+Farklı farklı versiyonlarına.
+
+673
+00:32:58,609 --> 00:33:00,609
+Wildberry, Pitant ile anlattım.
+
+674
+00:33:00,609 --> 00:33:02,609
+Case komutuyla da bitirdim.
+
+675
+00:33:02,609 --> 00:33:04,609
+Şu an kadar aslında
+
+676
+00:33:04,609 --> 00:33:06,609
+diğer programın üzerinde gördüğünüz temel bütün
+
+677
+00:33:06,609 --> 00:33:08,609
+fonksiyonlarını biliyor olmanız
+
+678
+00:33:08,609 --> 00:33:10,609
+ve nasıl çalıştırılacağını da
+
+679
+00:33:10,609 --> 00:33:12,609
+görmüş olmanız
+
+680
+00:33:12,609 --> 00:33:14,609
+gerekiyor.
+
+681
+00:33:14,609 --> 00:33:16,609
+Sizden beklenen şey şu anda herhangi bir shell programını
+
+682
+00:33:16,609 --> 00:33:18,609
+basit seviyede yazabilecek
+
+683
+00:33:18,609 --> 00:33:20,609
+konumda olduğunu düşünüyoruz.
+
+684
+00:33:22,609 --> 00:33:24,609
+Sorusu olan varsa bu anlattıklarımla ilgili
+
+685
+00:33:24,609 --> 00:33:26,609
+hala merak etti. Bir şeylerin kafasında yapmadığını düşünmem
+
+686
+00:33:26,609 --> 00:33:28,609
+olmamalısınız şu an chat'e yazsın.
+
+687
+00:33:28,609 --> 00:33:51,150
+Soru cevap şeklinde devam edelim.
+
+688
+00:33:51,150 --> 00:33:53,150
+Sorusu olan yok mu arkadaşlar?
+
+689
+00:33:53,150 --> 00:33:55,150
+En azından ses verin.
+
+690
+00:33:55,150 --> 00:33:58,779
+Burada izleyin.
+
+691
+00:33:58,779 --> 00:34:00,779
+Buradayız hocam.
+
+692
+00:34:00,779 --> 00:34:02,779
+Sorusu olan var mı?
+
+693
+00:34:02,779 --> 00:34:04,779
+Bu kadar iyi mi anlattım ya? Mutlaka kafanıza
+
+694
+00:34:04,779 --> 00:34:26,619
+bir şeyler takılmış olmalı.
+
+695
+00:34:26,619 --> 00:34:28,619
+Peki o zaman arkadaşlar.
+
+696
+00:34:28,619 --> 00:34:30,619
+Shell genel olarak
+
+697
+00:34:30,619 --> 00:34:32,619
+tağla bir şey sordu.
+
+698
+00:34:32,619 --> 00:34:34,619
+Sınavda bunların sonuna kadar
+
+699
+00:34:34,619 --> 00:34:36,619
+sorumluyuz değil mi demişsin?
+
+700
+00:34:36,619 --> 00:34:38,619
+Sınavda sorumlu musun bilmiyorum.
+
+701
+00:34:38,619 --> 00:34:40,619
+Sınavdan bahsettiğin
+
+702
+00:34:40,619 --> 00:34:42,619
+şey vize ise
+
+703
+00:34:42,619 --> 00:34:44,619
+vize shell programlamayla ilgili değil.
+
+704
+00:34:44,619 --> 00:34:46,619
+Bu bir uygulama dersi. Ben size
+
+705
+00:34:46,619 --> 00:34:48,619
+shell nasıl kullanılır onu gösteririm.
+
+706
+00:34:48,619 --> 00:34:50,619
+Ama sınava
+
+707
+00:34:50,619 --> 00:34:52,619
+dahil olur mu? Olmazsa
+
+708
+00:34:52,619 --> 00:34:54,619
+bunu dersin hocasına sorarsanız
+
+709
+00:34:54,619 --> 00:34:56,619
+daha iyi olur. Çok öyledir
+
+710
+00:34:56,619 --> 00:34:58,619
+bilirim yok.
+
+711
+00:34:58,619 --> 00:35:00,619
+Biz dersinizin hocasına Gökhan Hoca
+
+712
+00:35:00,619 --> 00:35:02,619
+ve Cihan Hoca'ya dönem başında
+
+713
+00:35:02,619 --> 00:35:04,619
+anlatacağımızı söylüyoruz öğrencilere.
+
+714
+00:35:04,619 --> 00:35:06,619
+Onlar sınava dahil eder mi etmez mi?
+
+715
+00:35:06,619 --> 00:35:08,619
+Bu onların takdirinde.
+
+716
+00:35:08,619 --> 00:35:10,619
+O yüzden sorunun cevabını ben veremem.
+
+717
+00:35:10,619 --> 00:35:12,619
+Ama bize bir ödev verilecek.
+
+718
+00:35:12,619 --> 00:35:14,619
+Geçen sene verdik, bu sene de vereceğiz
+
+719
+00:35:14,619 --> 00:35:16,619
+herhalde. Bir aksik olmazsa.
+
+720
+00:35:16,619 --> 00:35:18,619
+Ödevimizde shell programlamayı
+
+721
+00:35:18,619 --> 00:35:20,619
+kullanmanızı bekliyor olacağız.
+
+722
+00:35:20,619 --> 00:35:22,619
+Çünkü muhtemelen shell programlamada
+
+723
+00:35:22,619 --> 00:35:24,619
+içeren bir ödev olacak.
+
+724
+00:35:24,619 --> 00:35:26,619
+Bu arada önümüzdeki iki hafta
+
+725
+00:35:26,619 --> 00:35:28,619
+boyunca arka arkaya yine
+
+726
+00:35:28,619 --> 00:35:30,619
+devam edilecek
+
+727
+00:35:30,619 --> 00:35:32,619
+bu üç konulara.
+
+728
+00:35:32,619 --> 00:35:34,619
+Yeni uygulama derslerini iki hafta daha
+
+729
+00:35:34,619 --> 00:35:36,619
+devam edilecek. Ona da processlerle ilgili
+
+730
+00:35:36,619 --> 00:35:38,619
+interprocess communication,
+
+731
+00:35:38,619 --> 00:35:40,619
+multi-processing,
+
+732
+00:35:40,619 --> 00:35:42,619
+process buzz'lı
+
+733
+00:35:42,619 --> 00:35:44,619
+process'ları anlatan iki hafta
+
+734
+00:35:44,619 --> 00:35:46,619
+sunumunuz olacak.
+
+735
+00:35:46,619 --> 00:35:48,619
+Diğer araştırma görevse arkadaşlarım
+
+736
+00:35:48,619 --> 00:35:50,619
+devam edecek.
+
+737
+00:35:50,619 --> 00:35:52,619
+O şekilde devam edeceğiz.
+
+738
+00:35:52,619 --> 00:35:54,619
+Ondan sonra size ödev verilecek.
+
+739
+00:35:54,619 --> 00:35:56,619
+Bu dört uygulamayla ilgili, dört
+
+740
+00:35:56,619 --> 00:35:58,619
+uygulama haftasında yapılanlarla ilgili
+
+741
+00:35:58,619 --> 00:36:00,619
+verilecek. Öyle bir planımız var.
+
+742
+00:36:00,619 --> 00:36:02,619
+Sınavları paylaşacağım.
+
+743
+00:36:02,619 --> 00:36:04,619
+Sınav haftasında da var
+
+744
+00:36:04,619 --> 00:36:06,619
+dersimiz. Arkadaşlar
+
+745
+00:36:06,619 --> 00:36:08,619
+sınav haftasında dersimiz olsun.
+
+746
+00:36:08,619 --> 00:36:10,619
+Çünkü o saatte sınavımız olmayacaktır.
+
+747
+00:36:10,619 --> 00:36:12,619
+Çünkü ders saati belli. Olsun bence.
+
+748
+00:36:12,619 --> 00:36:14,619
+Çünkü bizim için de zor.
+
+749
+00:36:14,619 --> 00:36:16,619
+Mesela benim kendi derslerim de var.
+
+750
+00:36:16,619 --> 00:36:18,619
+Ben de doktor öğrencisiyim her zaman.
+
+751
+00:36:18,619 --> 00:36:20,619
+Benim kendi derslerim var, benimki sağlığım var. Ama ben onlara rağmen
+
+752
+00:36:20,619 --> 00:36:22,619
+uygulamayı iptal etmiyorum.
+
+753
+00:36:22,619 --> 00:36:24,619
+O yüzden olsun.
+
+754
+00:36:24,619 --> 00:36:26,619
+Dersimiz olsun sınav haftasında da.
+
+755
+00:36:26,619 --> 00:36:30,349
+Başka sorusu olan var mı?
+
+756
+00:36:30,349 --> 00:36:32,349
+Slidesi paylaşacağımı söylemiştim.
+
+757
+00:36:34,349 --> 00:36:41,920
+Teşekkür ederim [öğrenci].
+
+758
+00:36:41,920 --> 00:36:43,920
+Yani şöyle o zaman zaten
+
+759
+00:36:43,920 --> 00:36:45,920
+dersi verebiliyorsunuz, indirip
+
+760
+00:36:45,920 --> 00:36:47,920
+izleyebiliyorsunuz. Sınava olan
+
+761
+00:36:47,920 --> 00:36:49,920
+girmesin derse, indirip izlersiniz.
+
+762
+00:36:49,920 --> 00:36:51,920
+Yani bu ders işlensin.
+
+763
+00:36:51,920 --> 00:36:53,920
+Madem online sistem kullanıyoruz
+
+764
+00:36:53,920 --> 00:36:55,920
+biraz ekmeklerinden faydalanalım değil mi?
+
+765
+00:36:55,920 --> 00:36:57,920
+Videoları izleyebiliyoruz sonuçta.
+
+766
+00:36:57,920 --> 00:36:59,920
+Yoklama arkadaşlar. Biz haftasında
+
+767
+00:36:59,920 --> 00:37:01,920
+yoklama
+
+768
+00:37:01,920 --> 00:37:05,300
+ile ilgili
+
+769
+00:37:05,300 --> 00:37:07,300
+hiç düşünmedim aslında yoklamayı.
+
+770
+00:37:07,300 --> 00:37:09,300
+Hocam sistemsel alıncını söylüyorlardı çünkü de.
+
+771
+00:37:09,300 --> 00:37:11,300
+Ya sistemsel alınıyordur da.
+
+772
+00:37:11,300 --> 00:37:13,300
+Mesela sınav haftasında oğlu
+
+773
+00:37:13,300 --> 00:37:15,300
+diye. Ya oğlum en kötü şey olur.
+
+774
+00:37:15,300 --> 00:37:17,300
+O öğrenciler
+
+775
+00:37:17,300 --> 00:37:19,300
+eğer demamsızlıktan kalma sorunu
+
+776
+00:37:19,300 --> 00:37:21,300
+gibi bir şey söz konusu olursa
+
+777
+00:37:21,300 --> 00:37:23,300
+demamsızlıktan kalma gibi bir
+
+778
+00:37:23,300 --> 00:37:25,300
+söz konusu olsa biz orada tolerans gösteririz.
+
+779
+00:37:25,300 --> 00:37:27,300
+Ya da ben bunu o zaman şöyle yapalım
+
+780
+00:37:27,300 --> 00:37:29,300
+arkadaşlar. Şimdi önümüzdeki hafta
+
+781
+00:37:29,300 --> 00:37:31,300
+biz devam edecekmişiz gibi. Ben size bildireyim
+
+782
+00:37:31,300 --> 00:37:33,300
+evet ders yapılacak ama ben bunu bir hoca ile
+
+783
+00:37:33,300 --> 00:37:35,300
+konuşayım.
+
+784
+00:37:35,300 --> 00:37:37,300
+Hoca ile konuştuktan sonra
+
+785
+00:37:37,300 --> 00:37:39,300
+eğer iptal edersem önümüzdeki
+
+786
+00:37:39,300 --> 00:37:41,300
+hafta. Ertelenen bir durum
+
+787
+00:37:41,300 --> 00:37:43,300
+söz konusu olursa
+
+788
+00:37:43,300 --> 00:37:45,300
+size tekrar avasistten duyururum tamam.
+
+789
+00:37:45,300 --> 00:37:47,300
+Avasist takip edin o zaman. Önümüzdeki hafta aksi
+
+790
+00:37:47,300 --> 00:37:49,300
+duyurulana kadar ders işlenecek.
+
+791
+00:37:49,300 --> 00:37:51,300
+Sadece şu yoklama meselesini de
+
+792
+00:37:51,300 --> 00:37:53,300
+sorup öğrenmem lazım.
+
+793
+00:37:53,300 --> 00:37:55,300
+Öğrenirsem ve
+
+794
+00:37:55,300 --> 00:37:57,300
+iptal etme kararı olursa bunu avasist
+
+795
+00:37:57,300 --> 00:38:01,980
+duyuracağım. Devam durumu uygulama.
+
+796
+00:38:01,980 --> 00:38:03,980
+Normalde COVID olmadan önce,
+
+797
+00:38:03,980 --> 00:38:05,980
+pandemi olmadan önce uygulamayla
+
+798
+00:38:05,980 --> 00:38:07,980
+ders ayrı ayrıydı. Çünkü uygulamanın
+
+799
+00:38:07,980 --> 00:38:09,980
+dastan 180'ine
+
+800
+00:38:09,980 --> 00:38:11,980
+girmeniz gerekiyor uygulama dastanın.
+
+801
+00:38:11,980 --> 00:38:13,980
+Dolayısıyla
+
+802
+00:38:13,980 --> 00:38:15,980
+sadece bir tane girme hakkımız
+
+803
+00:38:15,980 --> 00:38:17,980
+oluyor. Dört tane uygulama olduğu için.
+
+804
+00:38:17,980 --> 00:38:21,329
+Hatta hepsine katılmaz
+
+805
+00:38:21,329 --> 00:38:23,329
+gerekiyor dört tane olduğu için. Evet.
+
+806
+00:38:25,329 --> 00:38:27,329
+O yüzden
+
+807
+00:38:27,329 --> 00:38:29,329
+ayrı ayrı oluyor yani ayrı ayrı
+
+808
+00:38:29,329 --> 00:38:31,329
+değerlendiriliyordu. Ama şu anda COVID
+
+809
+00:38:31,329 --> 00:38:33,329
+nasıl değerlendirilir bilmiyorum.
+
+810
+00:38:33,329 --> 00:38:35,329
+Çünkü
+
+811
+00:38:35,329 --> 00:38:38,670
+geçen hafta giremedik. Neden
+
+812
+00:38:38,670 --> 00:38:50,849
+giremediniz? Ders mi
+
+813
+00:38:50,849 --> 00:38:52,849
+açılmadı?
+
+814
+00:38:52,849 --> 00:38:54,849
+Geçen hafta şöyle geçen
+
+815
+00:38:54,849 --> 00:38:56,849
+hafta bu saatte ders yapıldı arkadaşlar.
+
+816
+00:38:56,849 --> 00:39:02,139
+Yo arkadaşlar ben
+
+817
+00:39:02,139 --> 00:39:04,139
+10 dakika bekleyip böyle
+
+818
+00:39:04,139 --> 00:39:06,139
+başlatıyorum dersi bugün yaptığım gibi.
+
+819
+00:39:06,139 --> 00:39:08,139
+Onu şöyle yapmıştık hatırlarsanız demiştim ki
+
+820
+00:39:08,139 --> 00:39:10,139
+grup 1 1 saatte grup 2 1 saatte şeklinde
+
+821
+00:39:10,139 --> 00:39:12,139
+şu anda grup 1'i anlatıyorum
+
+822
+00:39:12,139 --> 00:39:14,139
+diye düşünüyorum herhalde grup 1'siniz.
+
+823
+00:39:14,139 --> 00:39:16,139
+Basis
+
+824
+00:39:16,139 --> 00:39:18,139
+zaten problem
+
+825
+00:39:18,139 --> 00:39:22,960
+grup 2 içinde
+
+826
+00:39:22,960 --> 00:39:24,960
+saat
+
+827
+00:39:24,960 --> 00:39:26,960
+dörtten sonra başlıyoruz.
+
+828
+00:39:26,960 --> 00:39:28,960
+Yaklaşık bir yirmi dakika sonra diğer grubun aynı konuları anlatacağım.
+
+829
+00:39:28,960 --> 00:39:30,960
+Böyle gitmiş olacak.
+
+830
+00:39:30,960 --> 00:39:37,730
+Yani arkadaşlar siz
+
+831
+00:39:37,730 --> 00:39:39,730
+yoklamayla ilgili çok bir sorun
+
+832
+00:39:39,730 --> 00:39:41,730
+olacağını düşünmüyorum ama sorun olursa da
+
+833
+00:39:41,730 --> 00:39:43,730
+hocanız ile iletişime geçebilirsiniz.
+
+834
+00:39:43,730 --> 00:39:45,730
+Yani dersiniz ki
+
+835
+00:39:45,730 --> 00:39:47,730
+hocam ben rahatsızdım.
+
+836
+00:39:47,730 --> 00:39:49,730
+Ne bileyim
+
+837
+00:39:49,730 --> 00:39:51,730
+sorun oldu.
+
+838
+00:39:51,730 --> 00:39:53,730
+Biz normalde listelere hocaları gönderiyorduk.
+
+839
+00:39:53,730 --> 00:39:55,730
+Hocalar kendileri karar veriyordu ne olacağına.
+
+840
+00:39:55,730 --> 00:39:57,730
+Bizim bir şeyimiz yok o konuda.
+
+841
+00:39:57,730 --> 00:39:59,730
+Söyleyeceğimiz her şey yok.
+
+842
+00:39:59,730 --> 00:40:01,730
+Sadece sunumları yapıp listelere
+
+843
+00:40:01,730 --> 00:40:03,730
+hocaları veriyoruz. Hocalarla konuşuruz biz onları.
+
+844
+00:40:03,730 --> 00:40:16,989
+Başka sorusu var mı?
+
+845
+00:40:16,989 --> 00:40:18,989
+Zaten iki hafta önce galiba
+
+846
+00:40:18,989 --> 00:40:20,989
+depremden dolayı yoklama zorunluluğu
+
+847
+00:40:20,989 --> 00:40:22,989
+olmayacaktı yani.
+
+848
+00:40:22,989 --> 00:40:24,989
+O haftada hasınların dersi yapmıştık.
+
+849
+00:40:24,989 --> 00:40:26,989
+Yapmış mıydık hatırlamıyorum ama herhalde yapmıştık.
+
+850
+00:40:26,989 --> 00:40:28,989
+O haftaki
+
+851
+00:40:28,989 --> 00:40:30,989
+yoklamalarda herhalde iptal olacaktır yani.
+
+852
+00:40:30,989 --> 00:40:32,989
+Gelmeyenler için
+
+853
+00:40:32,989 --> 00:40:34,989
+uygulanacaktır.
+
+854
+00:40:34,989 --> 00:40:36,989
+Peki o zaman arkadaşlar herhalde baş
+
+855
+00:40:36,989 --> 00:40:41,010
+sorusu olan yok. Dinlediğiniz için teşekkürler.
+
+856
+00:40:43,010 --> 00:40:45,010
+Umarım keyif almışsınızdır. Ben atırken
+
+857
+00:40:45,010 --> 00:40:48,900
+keyif aldım.
+
+858
+00:40:48,900 --> 00:40:50,900
+Size sağlıklı günler diliyorum hoşçakalın.
+
+859
+00:40:50,900 --> 00:40:52,900
+İyi günler hocam hoşçakalın.

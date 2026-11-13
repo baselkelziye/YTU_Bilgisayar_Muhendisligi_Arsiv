@@ -1,0 +1,5455 @@
+1
+00:01:33,519 --> 00:01:39,019
+Merhabalar. Herkesin bağlanmasını bekleyelim. Birazdan öyle başlarız. Beş dakika sonra falan.
+
+2
+00:01:50,859 --> 00:01:52,019
+Bu arada sesim geliyor mu?
+
+3
+00:01:53,400 --> 00:01:54,120
+Evet hocam geliyor.
+
+4
+00:02:53,789 --> 00:02:57,789
+Arkadaşlar bugünkü sunumunuzu Sevgi Hoca yapacak. Onun bilgisayarına kurum yaptık.
+
+5
+00:02:58,770 --> 00:03:01,990
+Bundan sonraki sunumları ben yapacağım kendim.
+
+6
+00:03:03,689 --> 00:03:07,830
+Sunumlarla ilgili hangi günlerde yapacağımızla ilgili henüz bir net takvim yok şu anda.
+
+7
+00:03:08,150 --> 00:03:11,990
+Ben en az üç gün öncesinden size mutlaka HVS'den bildiriyor olacağım.
+
+8
+00:03:11,990 --> 00:03:16,150
+Ve tam bir takvim hazırladığımda size tam takvimde bir paylaşıcı olacağım.
+
+9
+00:03:16,270 --> 00:03:21,650
+O yüzden güncel takip edebilmek için HVS sayfama bakmanız gerekiyor.
+
+10
+00:03:21,830 --> 00:03:22,849
+Ben duyuruları oraya koyacağım.
+
+11
+00:03:23,509 --> 00:03:25,889
+Dediğim gibi bugünkü sunumu Sevgi Hoca'yla birlikte yutacağız.
+
+12
+00:03:27,509 --> 00:03:30,270
+Biraz daha bekleyelim. Arkadaşlarca toparlansın.
+
+13
+00:03:30,689 --> 00:03:33,969
+Şu an 80 kişi var. Sanırım sınıf mevcut 170 kişiydi.
+
+14
+00:03:34,330 --> 00:03:37,129
+Biraz daha bekleyelim. Bir beş dakika içinde başlarız.
+
+15
+00:03:38,009 --> 00:03:40,490
+Bugün zaten buffer off'u da anlatacağız. Onu da size söylemiştik.
+
+16
+00:03:41,990 --> 00:03:43,430
+Bir beş dakika sonra başlarız.
+
+17
+00:06:59,560 --> 00:07:02,199
+Birazdan başlayacağız arkadaşlar. Önce şu soruları cevaplayayım.
+
+18
+00:07:03,379 --> 00:07:06,939
+Tarık, hocam ben yeni katılıyorum. İsim soru isminizi öğrenebilir miyim demiş.
+
+19
+00:07:07,279 --> 00:07:10,120
+İsmim Fuat Övme. Araştırma görevlisiyim.
+
+20
+00:07:11,279 --> 00:07:15,379
+Sunumu diğer araştırma görevlisi hocamız Sevgi Hoca'yla yapacağız.
+
+21
+00:07:17,139 --> 00:07:19,100
+Diğer arkadaş Akasya'da.
+
+22
+00:07:19,839 --> 00:07:22,139
+Hocam laplar üzerinden bir değerlendirme yapılacak mı?
+
+23
+00:07:22,240 --> 00:07:24,639
+Yoksa ders işlendi mi şeklinde işlenecek?
+
+24
+00:07:24,639 --> 00:07:27,060
+Şimdi bu hafta biliyorsunuz.
+
+25
+00:07:27,319 --> 00:07:33,959
+Yoklama alamayacağız. Çünkü İzmir'deki deprem deleriyle yoklamalar bu hafta alınmıyor.
+
+26
+00:07:33,959 --> 00:07:35,959
+Dikkat alınmayacak yani.
+
+27
+00:07:35,959 --> 00:07:42,079
+Ancak tabii ki bu yapacağımız uygulamalar neticesinde size bir ödev verilmesini planlıyoruz.
+
+28
+00:07:42,079 --> 00:07:46,959
+Ve o ödev de muhtemelen uygulamalardaki anlatılan konularla alakalı olacaktır.
+
+29
+00:07:46,959 --> 00:07:52,959
+O yüzden uygulamaları dinlemeniz sizin menfaatiniz olacaktır.
+
+30
+00:07:52,959 --> 00:07:54,959
+Bu kadar.
+
+31
+00:07:54,959 --> 00:07:56,959
+İstiyorsanız yavaştan başlayalım arkadaşlar.
+
+32
+00:07:57,319 --> 00:08:07,920
+Selamlar arkadaşlar.
+
+33
+00:08:07,920 --> 00:08:10,920
+Sesimiz geliyor değil mi?
+
+34
+00:08:10,920 --> 00:08:12,920
+Geliyor hocam.
+
+35
+00:08:12,920 --> 00:08:14,920
+Tamam.
+
+36
+00:08:14,920 --> 00:08:18,920
+Ben Sevgi Hoca'nız. Tanıyanlar vardır belki.
+
+37
+00:08:18,920 --> 00:08:29,120
+Bugün Buffer Overflow'u işleyeceğiz beraber arkadaşlar Fuat Hoca'nızla beraber.
+
+38
+00:08:29,120 --> 00:08:35,120
+Önce zaten derste de görmüştünüz Buffer Overflow saldırılarını.
+
+39
+00:08:35,120 --> 00:08:39,120
+Önce beraber derste gördüklerinizi biraz hatırlayalım.
+
+40
+00:08:39,120 --> 00:08:41,120
+Küçük bir giriş yapalım.
+
+41
+00:08:41,120 --> 00:08:46,120
+Daha sonra da örneklerimize başlayalım beraber.
+
+42
+00:08:46,120 --> 00:08:50,120
+Şimdi arkadaşlar Buffer Overflow saldırıları ne demiştik?
+
+43
+00:08:50,120 --> 00:08:53,120
+Temel kontrol ele geçirme saldırılarıydı.
+
+44
+00:08:53,120 --> 00:08:59,120
+Ve bu saldırıları gerçekleştirmek için saldırgının bir servis üzerinde çalışması gerekiyordu.
+
+45
+00:08:59,120 --> 00:09:03,120
+Yani bu bir web sunucusu olabilir, mail server olabilir.
+
+46
+00:09:03,120 --> 00:09:07,120
+Örneğin size bir mail geldiğini düşünün.
+
+47
+00:09:07,120 --> 00:09:08,120
+Ve mailde bir ekran var.
+
+48
+00:09:08,120 --> 00:09:11,120
+Ve bir ek olduğunu düşünün.
+
+49
+00:09:11,120 --> 00:09:14,120
+Yani aslında bu çok bilinen bir örnektir.
+
+50
+00:09:14,120 --> 00:09:17,120
+Her zaman hani sisteme düşer, değişik mailler gelir bize.
+
+51
+00:09:17,120 --> 00:09:21,120
+Farklı egzantrik isimler tarafından.
+
+52
+00:09:21,120 --> 00:09:23,120
+Biz ne yapıyoruz?
+
+53
+00:09:23,120 --> 00:09:25,120
+Bu ekleri açmakta çekiniyoruz.
+
+54
+00:09:25,120 --> 00:09:31,120
+Çünkü bu ekler içerisinde, örneğin masum bir pdf olarak gözükebilir bu.
+
+55
+00:09:31,120 --> 00:09:36,120
+Biz karşımızda normal karakterler görürken aslında o karakterlerin içerisine örneğin bir shell code var.
+
+56
+00:09:36,120 --> 00:09:45,120
+Bir shell kodu çalıştıracak sistem çağrısı saklanmış olabilir.
+
+57
+00:09:45,120 --> 00:09:55,120
+Bu yüzden böyle masum ekleri de tıkladığımız zaman saldırganlar bizim sistemimizi ele geçirmeye çalışabilir.
+
+58
+00:09:55,120 --> 00:09:59,120
+Bunun gibi saldırılara da ne diyoruz?
+
+59
+00:09:59,120 --> 00:10:03,120
+Buffer overflow saldırıları da bunların içerisine giriyor aslında.
+
+60
+00:10:03,120 --> 00:10:04,120
+O şekilde söyleyeyim.
+
+61
+00:10:04,120 --> 00:10:05,120
+Şimdi örneğin,
+
+62
+00:10:05,120 --> 00:10:12,120
+şimdi örneklere bakacak olursak zaten siz bu örnekleri gördünüz ama integer overflow mesela nasıldı arkadaşlar?
+
+63
+00:10:12,120 --> 00:10:17,120
+Integer'ın bir alabileceği, stack'te tutabileceği bir boyut var.
+
+64
+00:10:17,120 --> 00:10:21,120
+Neydi? 4 byte, short 2 byte, örneğin karakter 1 byte.
+
+65
+00:10:21,120 --> 00:10:30,120
+Eğer bu değişkenlerin içerisine diyelim bir integer'a 4 byte'dan büyük bir değer girdiğiniz zaman o integer değişkeni ne oluyordu arkadaşlar?
+
+66
+00:10:30,120 --> 00:10:34,120
+Bir taşan değeri atanmış oluyordu.
+
+67
+00:10:34,120 --> 00:10:35,120
+Ve
+
+68
+00:10:35,120 --> 00:10:38,120
+asıl diyelim ki iki değişkeni toplamaya çalışıyoruz.
+
+69
+00:10:38,120 --> 00:10:42,120
+İki integer değişkeni ve burada bir integer overflow oluştu.
+
+70
+00:10:42,120 --> 00:10:48,120
+Toplam değeri yerine toplam içerisinde taşan değer tutulmuş oluyor.
+
+71
+00:10:48,120 --> 00:10:51,120
+Ve saldırganlar da ne yapıyor?
+
+72
+00:10:51,120 --> 00:10:54,120
+Bununla ilgili derste örnekler görmüşsünüzdür eminim ki.
+
+73
+00:10:54,120 --> 00:11:03,120
+Kontrol bloklarını, bu basit integer overflow özelliğini kullanarak kontrol bloklarını aşıp sistemdeki,
+
+74
+00:11:03,120 --> 00:11:04,120
+yani bellekteki örneğin erişilmemesi için,
+
+75
+00:11:04,120 --> 00:11:08,120
+örneğin erişilmemesi gereken adreslere erişmeye çalışıyorlar.
+
+76
+00:11:08,120 --> 00:11:13,120
+Örneğin format string zaafiyeti de aynı şekilde.
+
+77
+00:11:13,120 --> 00:11:20,120
+Örneğin geliştirici, esnek bir program yazdı ve formatı kullandığı fonksiyonu,
+
+78
+00:11:20,120 --> 00:11:23,120
+bu bir printf olabilir, scanf olabilir,
+
+79
+00:11:23,120 --> 00:11:29,120
+kullandığı fonksiyonun formatını esnek bıraktı ve oluşturmadı formatını.
+
+80
+00:11:29,120 --> 00:11:32,120
+Kullanıcı da bunu esnek bir şekilde kullandı.
+
+81
+00:11:32,120 --> 00:11:33,120
+Ama kullanıcı kötü niyetli.
+
+82
+00:11:33,120 --> 00:11:38,120
+Kötü niyetli bir saldırgan ve normalde girmesi gereken string dışında,
+
+83
+00:11:38,120 --> 00:11:44,120
+farklı boyutta, çok büyük bir boyutta, yani içerisinde program kodu barındıran mesela,
+
+84
+00:11:44,120 --> 00:11:56,120
+bir girdi ve erişilmemesi gereken adreslerin içeriğini elde etti.
+
+85
+00:11:56,120 --> 00:12:01,120
+Veya o adreslere çeşitli bilgilerin yazmasına neden oldu.
+
+86
+00:12:01,120 --> 00:12:02,120
+Bunun gibi saldırgan.
+
+87
+00:12:03,120 --> 00:12:11,120
+Şimdi bugün de sizin daha önce derste gördüğünüz buffer overflow'a giriş yapacağız.
+
+88
+00:12:11,120 --> 00:12:17,120
+Şimdi buffer overflow saldırısında asıl yaptığımız şey neydi arkadaşlar?
+
+89
+00:12:17,120 --> 00:12:23,120
+Bizim belirli bellekte bölümlerimiz var ve biz, yani saldırganlar daha doğrusu biz değil,
+
+90
+00:12:23,120 --> 00:12:31,120
+saldırganlar erişilmemesi gereken bölümlere erişmek için bu buffer overflow'ı oluşturuyor ve daha sonra da
+
+91
+00:12:31,120 --> 00:12:37,120
+kendi çalıştırmak istedikleri kodları çalıştırıyorlar, bilgisayarı ele geçirmeye çalışıyorlar.
+
+92
+00:12:37,120 --> 00:12:45,120
+Yani bilgisayarın, bilgisayar programının akışını bozarak sistemi ele geçirmeye çalışıyorlar.
+
+93
+00:12:45,120 --> 00:12:51,120
+Burada yaygın olarak CC++ programları öne çıkıyor şeklinde söyleyebiliriz.
+
+94
+00:12:51,120 --> 00:12:54,120
+Fakat neden CC++ diyoruz?
+
+95
+00:12:54,120 --> 00:12:57,120
+Aslında başka dillerde yapılamaz mı bu saldırılar?
+
+96
+00:12:57,120 --> 00:12:59,120
+Tabii ki yapılabilir.
+
+97
+00:12:59,120 --> 00:13:06,120
+İşletim sistemleri, kütüphaneler, siz de biliyorsunuz ki genellikle CC++ dilleri üzerinde yazılıyor.
+
+98
+00:13:06,120 --> 00:13:12,120
+Bu nedenle CC++ buffer overflow saldırılarında öne çıkıyor diyebiliriz.
+
+99
+00:13:12,120 --> 00:13:16,120
+Şimdi saldırıyı yapmak için bir saldırganın neyi bilmesi gerekiyor?
+
+100
+00:13:16,120 --> 00:13:18,120
+Neye sahip olması gerekiyor?
+
+101
+00:13:18,120 --> 00:13:21,120
+Öncelikle C fonksiyonları diyebiliriz.
+
+102
+00:13:21,120 --> 00:13:24,120
+Şimdi C fonksiyonlarının zafiyetleri var diyoruz her zaman.
+
+103
+00:13:24,120 --> 00:13:26,120
+Nedir bunlar?
+
+104
+00:13:26,120 --> 00:13:28,120
+String copy, printf.
+
+105
+00:13:28,120 --> 00:13:29,120
+Yani scanf.
+
+106
+00:13:29,120 --> 00:13:31,120
+Bunların hepsi zafiyeti var diyoruz.
+
+107
+00:13:31,120 --> 00:13:51,120
+Ama aslında bu fonksiyonlar geliştiricilere kullanılması için sunulan fonksiyonlar ve geliştirici eğer kontrol bloklarını düzgün kullanırsa, bu fonksiyonların düzgün kullanılmasını sağlarsa geliştirici aslında bu fonksiyonların zafiyeti kalmaz.
+
+108
+00:13:51,120 --> 00:13:55,120
+Yani o saldırganın önüne geçebilir.
+
+109
+00:13:55,120 --> 00:13:57,120
+Ve ikinci olarak bilmesi gereken şey.
+
+110
+00:13:57,120 --> 00:14:00,120
+Stack ve heap bilgisi.
+
+111
+00:14:00,120 --> 00:14:01,120
+Neden?
+
+112
+00:14:01,120 --> 00:14:06,120
+Biz zaten bellek üzerine bir işlem yapıyoruz buffer overflow yapmak için.
+
+113
+00:14:06,120 --> 00:14:12,120
+Bunun için de stack ve heap memori belleklerini bilmeden bu işlemleri yapamayız.
+
+114
+00:14:12,120 --> 00:14:17,120
+İkincisi ise, pardon üçüncüsü ise sistem çağrılarını bilmesi gerekiyor.
+
+115
+00:14:17,120 --> 00:14:21,120
+Şimdi bir bilgisayar sistemini ele geçirmek için en önemli şey nedir?
+
+116
+00:14:21,120 --> 00:14:24,120
+Tabii ki de şeyle erişebilmektir.
+
+117
+00:14:24,120 --> 00:14:26,120
+Şeyle erişebilmek için de en önemli şey.
+
+118
+00:14:26,120 --> 00:14:31,120
+En önemli kullandığımız sistem çağrısı exec sistem çağrısıdır diyebiliriz.
+
+119
+00:14:31,120 --> 00:14:34,120
+Bunlar hakkında da bilgisi olması lazım.
+
+120
+00:14:34,120 --> 00:14:40,120
+Şimdi saldırganların işlemci mimarisi ve işletim sistemini bilmesi gerekiyor diyoruz.
+
+121
+00:14:40,120 --> 00:14:48,120
+Fakat bir saldırgan bir işletim sistemine saldırıda bulunabiliyorsa diğerine bulunamaz diye bir şey yok tabii ki.
+
+122
+00:14:48,120 --> 00:14:50,120
+Bunlar arasındaki dönüşümler çok basit dönüşümler.
+
+123
+00:14:50,120 --> 00:14:55,120
+Bunlar için sadece arka planına saldırganın biraz bilmesi yeterli.
+
+124
+00:14:55,120 --> 00:14:59,120
+Şimdi bizim bundan sonraki örneklerimize de dikkat etmemiz gereken şey,
+
+125
+00:14:59,120 --> 00:15:05,120
+bizim de size örnek olarak vereceğimiz de kodları da sizinle beraber paylaşacağız.
+
+126
+00:15:05,120 --> 00:15:12,120
+Fakat bunları kodları da denemek için sizin yapmanız gereken stack frame structure'ımız 32 bit olacak.
+
+127
+00:15:12,120 --> 00:15:19,120
+Yani 32 bit Ubuntu 16.04 versiyonunu kullanarak biz örneklerimizi gerçekleştireceğiz.
+
+128
+00:15:19,120 --> 00:15:23,120
+Burada konuşmaları, yazışmaları var.
+
+129
+00:15:23,120 --> 00:15:27,120
+Konuşmaları, yazışmaları nereden açıyoruz acaba?
+
+130
+00:15:27,120 --> 00:15:49,950
+Şöyle devam edelim.
+
+131
+00:15:49,950 --> 00:15:54,950
+Bir chat ortamında soru soran var mı diye bakmak istedim de arkadaşlar.
+
+132
+00:15:54,950 --> 00:15:58,950
+Onun için bakıyorum.
+
+133
+00:15:58,950 --> 00:16:06,620
+Bir kişi soru sormuş galiba.
+
+134
+00:16:06,620 --> 00:16:24,230
+Doruk sormuş, Buffer Allflow'un C kütüphane fonksiyonu dışında bir kaynağı var mı?
+
+135
+00:16:24,230 --> 00:16:31,230
+C pointer'ları izin veren, memora aksesini doğrudan izin veren bir program dil olduğu için en çok kullanılan program dili C.
+
+136
+00:16:31,230 --> 00:16:37,230
+Tabii ki memoriye erişebileceğiniz daha alt seviye program dillerine de Buffer Allflow'u gerçekleştirebilirsiniz.
+
+137
+00:16:37,230 --> 00:16:43,230
+Ama genel olarak C++ program dillerine gerçekleştiriliyor diyebiliriz.
+
+138
+00:16:43,230 --> 00:16:45,230
+Başka soru da yok sanırım.
+
+139
+00:16:45,230 --> 00:16:47,230
+Tamam, buradan sonra devam edebiliriz.
+
+140
+00:16:47,230 --> 00:16:56,230
+Şimdi arkadaşlar sizin de zaten aşina olduğunuz memori layout'a da şöyle bir bakalım.
+
+141
+00:16:56,230 --> 00:17:00,230
+Memori layout'a baktığımız zaman en çok bilmemiz gereken şey zaten,
+
+142
+00:17:00,230 --> 00:17:03,230
+user, stack ve heap.
+
+143
+00:17:03,230 --> 00:17:08,230
+Şöyle size hatırlatayım, stack'te argümanlarımız vardı.
+
+144
+00:17:08,230 --> 00:17:10,230
+Zaten sağ tarafta da stack frame'i görüyorsunuz.
+
+145
+00:17:10,230 --> 00:17:12,230
+Ayrıntılı olarak göreceğiz.
+
+146
+00:17:12,230 --> 00:17:17,230
+Parametre, fonksiyon parametrelerimiz, lokal değişkenlerimiz, bunları tutuyoruz.
+
+147
+00:17:17,230 --> 00:17:20,230
+Ve bu stack tamamen compiler tarafından yönetilen kısım.
+
+148
+00:17:20,230 --> 00:17:23,230
+Derleme aşamasında oluşturuluyor.
+
+149
+00:17:23,230 --> 00:17:25,230
+Heap'in farkı ne peki?
+
+150
+00:17:25,230 --> 00:17:29,230
+Geliştirici tarafından kontrol edilen kısım ise heap oluyor.
+
+151
+00:17:29,230 --> 00:17:36,230
+Yani boyutunu bilmediğimiz değişkenleri runtime sırasında oluşturduğumuz dinamik belliğe heap diyoruz.
+
+152
+00:17:36,230 --> 00:17:39,230
+Malloc fonksiyonunu kullanarak oluşturuyoruz.
+
+153
+00:17:39,230 --> 00:17:42,230
+Free ile de serbest bıraktığımız alan.
+
+154
+00:17:42,230 --> 00:17:53,230
+Ve burada eğer dikkat ederseniz stack last in first out mantığıyla çalışarak push fonksiyonu ile eleman ekliyoruz.
+
+155
+00:17:53,230 --> 00:17:57,230
+Ve yüksek değerlikli adreslerden başlayarak düşük değerlikli adreslere doğru.
+
+156
+00:17:57,230 --> 00:17:58,230
+Ve yüksek değerlikli adreslerden başlayarak düşük değerlikli adreslere doğru.
+
+157
+00:17:58,230 --> 00:18:00,230
+Ve yüksek değerlikli adreslere doğru.
+
+158
+00:18:00,230 --> 00:18:02,230
+Büyüme şekli bu şekilde ilerliyor.
+
+159
+00:18:02,230 --> 00:18:10,230
+Yani bir eleman push ettiğimiz zaman adres değerimizi düşürüyoruz.
+
+160
+00:18:10,230 --> 00:18:14,230
+Pop yaptığımız zaman da adres değerimizi yükseltiyoruz.
+
+161
+00:18:14,230 --> 00:18:20,230
+Heap ve Shared Labyrinth de ters bir şekilde büyük adreslere doğru büyüyorlar.
+
+162
+00:18:20,230 --> 00:18:24,230
+Bu bölümlerin birbirlerinin üzerine geçmemesi gerekiyor.
+
+163
+00:18:24,230 --> 00:18:26,230
+İşte burada kritik noktada buffer overflow için bu.
+
+164
+00:18:26,230 --> 00:18:27,230
+İşte burada kritik noktada buffer overflow için bu.
+
+165
+00:18:27,230 --> 00:18:28,230
+Biz burada birbirinin üzerine geçmemesi gereken bölümleri ezmeye çalışacağız.
+
+166
+00:18:28,230 --> 00:18:29,230
+Biz burada birbirinin üzerine geçmemesi gereken bölümleri ezmeye çalışacağız.
+
+167
+00:18:29,230 --> 00:18:30,230
+Biz burada birbirinin üzerine geçmemesi gereken bölümleri ezmeye çalışacağız.
+
+168
+00:18:30,230 --> 00:18:31,230
+Biz burada birbirinin üzerine geçmemesi gereken bölümleri ezmeye çalışacağız.
+
+169
+00:18:31,230 --> 00:18:32,230
+Bunun öncesinde bir stack frame'e de tekrar bakalım.
+
+170
+00:18:32,230 --> 00:18:33,230
+Bunun öncesinde bir stack frame'e de tekrar bakalım.
+
+171
+00:18:33,230 --> 00:18:34,230
+Bunun öncesinde bir stack frame'e de tekrar bakalım.
+
+172
+00:18:34,230 --> 00:18:35,230
+Şimdi argümanlarda kullandığımız fonksiyonun parametreleri bulunuyor.
+
+173
+00:18:35,230 --> 00:18:36,230
+Şimdi argümanlarda kullandığımız fonksiyonun parametreleri bulunuyor.
+
+174
+00:18:36,230 --> 00:18:37,230
+Şimdi argümanlarda kullandığımız fonksiyonun parametreleri bulunuyor.
+
+175
+00:18:37,230 --> 00:18:38,230
+Bunlar value da olabilir referans da olabilir biliyorsunuz ki.
+
+176
+00:18:38,230 --> 00:18:40,470
+kullandığımız fonksiyonun parametreleri
+
+177
+00:18:40,470 --> 00:18:41,509
+bulunuyor. Bunlar
+
+178
+00:18:41,509 --> 00:18:44,450
+value de olabilir, referans da olabilir
+
+179
+00:18:44,450 --> 00:18:46,230
+biliyorsunuz ki. Return
+
+180
+00:18:46,230 --> 00:18:48,450
+adresi ise bir fonksiyon
+
+181
+00:18:48,450 --> 00:18:50,309
+yani şu an bulunduğumuz fonksiyon
+
+182
+00:18:50,309 --> 00:18:52,029
+bittikten sonra nereye döneceğiz?
+
+183
+00:18:52,670 --> 00:18:54,069
+Oranın adresini buluyoruz.
+
+184
+00:18:54,289 --> 00:18:56,369
+Aslında bu da bir ikinci kritik nokta.
+
+185
+00:18:56,730 --> 00:18:58,549
+Saldırgan ne yapıyor arkadaşlar?
+
+186
+00:18:59,430 --> 00:19:00,309
+Kendi programını
+
+187
+00:19:00,309 --> 00:19:02,049
+çalıştırması için programını
+
+188
+00:19:02,049 --> 00:19:04,230
+adresini vermesi
+
+189
+00:19:04,230 --> 00:19:06,369
+yani çalıştırmak istediği programın adresini
+
+190
+00:19:06,369 --> 00:19:08,210
+return adresine eklemesi gerekiyor.
+
+191
+00:19:08,589 --> 00:19:10,150
+Bunun için aslında buffer overflow
+
+192
+00:19:10,150 --> 00:19:12,210
+oluşturuyor. Return adresi de
+
+193
+00:19:12,210 --> 00:19:14,309
+bu nedenle önemli. Stack frame
+
+194
+00:19:14,309 --> 00:19:16,410
+pointer da bir önceki stack
+
+195
+00:19:16,410 --> 00:19:18,390
+frame pointer'a bağlı. Yani
+
+196
+00:19:18,390 --> 00:19:20,230
+ne yapıyoruz aslında? Bunu debugging
+
+197
+00:19:20,230 --> 00:19:22,789
+yaparken kullanıyoruz. Bu fonksiyonu
+
+198
+00:19:22,789 --> 00:19:24,289
+hangi fonksiyon çağırmıştı? Bunun
+
+199
+00:19:24,289 --> 00:19:25,869
+bilgisine erişmemizi sağlıyor.
+
+200
+00:19:26,349 --> 00:19:28,650
+Local variable'ları da biliyorsunuz.
+
+201
+00:19:28,990 --> 00:19:30,289
+Fonksiyon içerisinde
+
+202
+00:19:30,289 --> 00:19:32,410
+oluşturduğumuz yerel değişkenler.
+
+203
+00:19:32,730 --> 00:19:34,549
+Şimdi bizim için bunlar gerekiyor.
+
+204
+00:19:34,970 --> 00:19:36,309
+Örneğin şurada
+
+205
+00:19:36,309 --> 00:19:38,210
+bir stack pointer görüyorsunuz.
+
+206
+00:19:38,230 --> 00:19:40,609
+Stack pointer ve base pointer
+
+207
+00:19:40,609 --> 00:19:42,349
+arkadaşlar her zaman
+
+208
+00:19:42,349 --> 00:19:44,130
+stack boş olduğu zaman en başta
+
+209
+00:19:44,130 --> 00:19:45,990
+başlar ve base pointer
+
+210
+00:19:45,990 --> 00:19:48,190
+siteğin başlangıcını tutmaya devam eder.
+
+211
+00:19:48,750 --> 00:19:49,950
+Stack pointer ise
+
+212
+00:19:49,950 --> 00:19:52,049
+eleman eklendikçe adresini
+
+213
+00:19:52,049 --> 00:19:53,849
+ilerletir ve
+
+214
+00:19:53,849 --> 00:19:56,369
+siteğin aşasına doğru
+
+215
+00:19:56,369 --> 00:19:58,109
+low adrese doğru ilerler.
+
+216
+00:20:01,569 --> 00:20:03,309
+Şimdi derste de gördüğünüz
+
+217
+00:20:03,309 --> 00:20:04,970
+basit
+
+218
+00:20:04,970 --> 00:20:05,970
+bir örnekle
+
+219
+00:20:05,970 --> 00:20:08,910
+hatırlatalım nasıl yapıyorduk,
+
+220
+00:20:08,910 --> 00:20:10,910
+nasıl eziyorduk bu return'ı.
+
+221
+00:20:10,950 --> 00:20:13,950
+Return adres'e kadar bir web sunucunuz
+
+222
+00:20:13,950 --> 00:20:16,269
+olsun ve bu web sunucusunda böyle
+
+223
+00:20:16,269 --> 00:20:19,069
+basit sadece birkaç satırlık bir
+
+224
+00:20:19,069 --> 00:20:19,990
+fonksiyonumuz var.
+
+225
+00:20:19,990 --> 00:20:21,390
+Ne yapıyor bu fonksiyon?
+
+226
+00:20:21,390 --> 00:20:23,250
+Dışarıdan bir parametre string
+
+227
+00:20:23,250 --> 00:20:25,329
+parametresi alıyor ve buff diye
+
+228
+00:20:25,329 --> 00:20:27,990
+bir karakter dizimiz var.
+
+229
+00:20:27,990 --> 00:20:30,089
+Yani aslında string diyebiliriz ve
+
+230
+00:20:30,089 --> 00:20:33,150
+hiçbir kontrol yapmadan bu parametreyi
+
+231
+00:20:33,150 --> 00:20:35,710
+bizim lokal değişkenimize kopyalıyoruz.
+
+232
+00:20:35,710 --> 00:20:37,710
+Sağda da stack frame'i görüyorsunuz.
+
+233
+00:20:37,710 --> 00:20:40,609
+Argümentte str var ve
+
+234
+00:20:40,609 --> 00:20:45,609
+lokal değişkenlerimizin olduğu yerde de
+
+235
+00:20:45,609 --> 00:20:50,940
+buff değişkenimiz var.
+
+236
+00:20:50,940 --> 00:20:53,500
+Şimdi bizim buff değişkenimiz
+
+237
+00:20:53,500 --> 00:20:55,500
+128 byte uzunluğunda.
+
+238
+00:20:55,500 --> 00:20:57,900
+Değil mi? Bu arada şunu unutmayalım.
+
+239
+00:20:57,900 --> 00:20:59,900
+Bizim stack frame'imiz 32 bit
+
+240
+00:20:59,900 --> 00:21:01,900
+uzunluğunda.
+
+241
+00:21:01,900 --> 00:21:03,900
+Peki dışarıdan
+
+242
+00:21:03,900 --> 00:21:05,900
+kullanıcı 136 byte uzunluğunda
+
+243
+00:21:05,900 --> 00:21:07,900
+bir değer girerse
+
+244
+00:21:07,900 --> 00:21:09,900
+ne olur?
+
+245
+00:21:09,900 --> 00:21:11,900
+O zaman arkadaşlar
+
+246
+00:21:11,900 --> 00:21:13,900
+lokal değişkenimiz 128 byte uzunluğunda.
+
+247
+00:21:13,940 --> 00:21:15,940
+Bizim stack
+
+248
+00:21:15,940 --> 00:21:17,940
+frame pointer'ımız da bir pointer
+
+249
+00:21:17,940 --> 00:21:19,940
+yani adres. O da 32 bit.
+
+250
+00:21:19,940 --> 00:21:21,940
+Yani 4 byte.
+
+251
+00:21:21,940 --> 00:21:23,940
+Return adresimiz de 4 byte.
+
+252
+00:21:23,940 --> 00:21:25,940
+O da bir adres. Ne yapıyoruz?
+
+253
+00:21:25,940 --> 00:21:27,940
+128 byte'ımız
+
+254
+00:21:27,940 --> 00:21:29,940
+buraya geldi.
+
+255
+00:21:29,940 --> 00:21:31,940
+Daha sonra 4 byte'ımız da
+
+256
+00:21:31,940 --> 00:21:33,940
+stack frame pointer'a geldi ve
+
+257
+00:21:33,940 --> 00:21:35,940
+kalan 4 byte de return adrese
+
+258
+00:21:35,940 --> 00:21:37,940
+kadar bu stack
+
+259
+00:21:37,940 --> 00:21:39,940
+frame'i doldurmuş oldu.
+
+260
+00:21:39,940 --> 00:21:41,940
+Yani biz return adrese kadar
+
+261
+00:21:41,940 --> 00:21:43,940
+stack frame'i elde ettik.
+
+262
+00:21:43,940 --> 00:21:45,940
+Saldırgan
+
+263
+00:21:45,940 --> 00:21:47,940
+asıl olması gereken yani
+
+264
+00:21:47,940 --> 00:21:49,940
+fonksiyonun dönmesi gereken return adresi
+
+265
+00:21:49,940 --> 00:21:51,940
+değiştirip kendi
+
+266
+00:21:51,940 --> 00:21:53,940
+çalıştırmak istediği kodun
+
+267
+00:21:53,940 --> 00:21:57,309
+adresine girmiş oldu.
+
+268
+00:21:57,309 --> 00:21:59,309
+Peki şimdi şöyle bir bakalım.
+
+269
+00:21:59,309 --> 00:22:01,309
+Return adresi değiştirdik.
+
+270
+00:22:01,309 --> 00:22:03,309
+Şimdi de programı çalıştırması
+
+271
+00:22:03,309 --> 00:22:05,309
+lazım. Kendi istediği programı
+
+272
+00:22:05,309 --> 00:22:07,309
+çalıştırması lazım. Bu programda ne olsun?
+
+273
+00:22:07,309 --> 00:22:09,309
+Mesela shell çalıştıran
+
+274
+00:22:09,309 --> 00:22:11,309
+bir sistem çağrısı olsun bu programda.
+
+275
+00:22:11,309 --> 00:22:13,309
+Bunu
+
+276
+00:22:13,309 --> 00:22:15,309
+yapmak için peki şimdi
+
+277
+00:22:15,309 --> 00:22:17,309
+bizim 32 bit
+
+278
+00:22:17,309 --> 00:22:19,309
+kullandığımız için belleğimiz
+
+279
+00:22:19,309 --> 00:22:21,309
+32 bit align olması lazım.
+
+280
+00:22:21,309 --> 00:22:23,309
+Yani biz diyelim ki return
+
+281
+00:22:23,309 --> 00:22:25,309
+adresimizi buraya yazdık fakat
+
+282
+00:22:25,309 --> 00:22:27,309
+burada başka komutlar vardı önceden
+
+283
+00:22:27,309 --> 00:22:29,309
+ve biz direkt o programımızın
+
+284
+00:22:29,309 --> 00:22:31,309
+adresini tahmin edemedik.
+
+285
+00:22:31,309 --> 00:22:33,309
+Bunun için ne yapıyoruz?
+
+286
+00:22:33,309 --> 00:22:35,309
+No operation command
+
+287
+00:22:35,309 --> 00:22:37,309
+yani knob sliden'ı tek byte'lık
+
+288
+00:22:37,309 --> 00:22:39,309
+hiçbir etkisi
+
+289
+00:22:39,309 --> 00:22:41,309
+olmayan sadece geçiş komutu
+
+290
+00:22:41,309 --> 00:22:43,309
+olan bir komut kullanıyoruz.
+
+291
+00:22:43,309 --> 00:22:45,309
+Bu komutla
+
+292
+00:22:45,309 --> 00:22:47,309
+bir pipeline gibi de düşünebilirsiniz.
+
+293
+00:22:47,309 --> 00:22:49,309
+Bu knob'lar yerleştiriyoruz
+
+294
+00:22:49,309 --> 00:22:51,309
+bunları knob knob knob şeklinde
+
+295
+00:22:51,309 --> 00:22:53,309
+böyle arka arkaya bunlar çalışıyor
+
+296
+00:22:53,309 --> 00:22:55,309
+ta ki bizim saldırganımızın
+
+297
+00:22:55,309 --> 00:22:57,309
+programına gelene kadar.
+
+298
+00:22:57,309 --> 00:22:59,309
+Ve daha
+
+299
+00:22:59,309 --> 00:23:01,309
+sonra da program çalışarak
+
+300
+00:23:01,309 --> 00:23:03,309
+saldırgan shell'e ulaşmış oluyor.
+
+301
+00:23:10,670 --> 00:23:23,740
+[öğrenci] sormuş hocam
+
+302
+00:23:23,740 --> 00:23:25,740
+stack frame burada base pointer
+
+303
+00:23:25,740 --> 00:23:27,740
+mı diye. Evet aynı
+
+304
+00:23:27,740 --> 00:23:29,740
+noktayı gösteriyorlar. Yani stack frame'in
+
+305
+00:23:29,740 --> 00:23:31,740
+başlangıç noktasını gösteriyor ikisi de.
+
+306
+00:23:31,740 --> 00:23:33,740
+Bir de şey var
+
+307
+00:23:33,740 --> 00:23:35,740
+stack pointer var
+
+308
+00:23:35,740 --> 00:23:37,740
+bir de site'in ilerlediğini gösteren
+
+309
+00:23:37,740 --> 00:23:39,740
+bir base pointer var bir de stack pointer
+
+310
+00:23:39,740 --> 00:23:41,740
+var. ESP ve EBP
+
+311
+00:23:41,740 --> 00:23:43,740
+diye geçiyor. Base pointer ve stack pointer.
+
+312
+00:23:43,740 --> 00:23:45,740
+Stack pointer ilerliyor aşağıya doğru.
+
+313
+00:23:45,740 --> 00:23:47,740
+Pop and push ile
+
+314
+00:23:47,740 --> 00:23:49,740
+ilerliyor aşağıya. Push ile aşağıya doğru
+
+315
+00:23:49,740 --> 00:23:51,740
+pop ile yukarıya doğru çıkıyor.
+
+316
+00:23:51,740 --> 00:23:53,740
+Adres'ten low adres'e doğru. Ama base pointer her zaman
+
+317
+00:23:53,740 --> 00:23:55,740
+başını gösteriyor o sabit. Stack frame
+
+318
+00:23:55,740 --> 00:23:57,740
+pointer'da da her programın kendisine ait
+
+319
+00:23:57,740 --> 00:23:59,740
+adresinin
+
+320
+00:23:59,740 --> 00:24:01,740
+nereden başladığını gösteriyor. Yani
+
+321
+00:24:01,740 --> 00:24:03,740
+aynı şey. Başka
+
+322
+00:24:03,740 --> 00:24:05,740
+soru var mı?
+
+323
+00:24:05,740 --> 00:24:09,059
+Şu anda.
+
+324
+00:24:09,059 --> 00:24:11,059
+Tamamdır yazmış.
+
+325
+00:24:11,059 --> 00:24:15,069
+Ara sıra bu chat
+
+326
+00:24:15,069 --> 00:24:17,069
+ekranına bakmaya çalışacağım.
+
+327
+00:24:17,069 --> 00:24:19,069
+Şimdi bazı
+
+328
+00:24:19,069 --> 00:24:21,069
+güvenlik açığı bulunan fonksiyonlar
+
+329
+00:24:21,069 --> 00:24:23,069
+diyoruz. Ama arkadaşlar en başta söylediğim
+
+330
+00:24:23,069 --> 00:24:25,069
+gibi aslında güvenlik açığı fonksiyonlar
+
+331
+00:24:25,069 --> 00:24:27,069
+diyoruz ama bir geliştirici kontrol
+
+332
+00:24:27,069 --> 00:24:29,069
+bloklarını düzgün kullandığı zaman
+
+333
+00:24:29,069 --> 00:24:31,069
+bu açıkların önüne
+
+334
+00:24:31,069 --> 00:24:33,069
+geçmesi mümkün. Yani
+
+335
+00:24:33,069 --> 00:24:35,069
+str copy yani
+
+336
+00:24:35,069 --> 00:24:37,069
+string copy
+
+337
+00:24:37,069 --> 00:24:39,069
+kullanmamak diye bir durum yok aslında.
+
+338
+00:24:39,069 --> 00:24:41,069
+Bunu kullanacağız. Ama kontrol
+
+339
+00:24:41,069 --> 00:24:43,069
+bloklarımızı iyi
+
+340
+00:24:43,069 --> 00:24:45,069
+kullanmamız gerekiyor. Örneğin
+
+341
+00:24:45,069 --> 00:24:47,069
+str copy'nin zaten
+
+342
+00:24:47,069 --> 00:24:49,069
+strn copy şeklinde
+
+343
+00:24:49,069 --> 00:24:51,069
+boyut belirleme fonksiyonu
+
+344
+00:24:51,069 --> 00:24:53,069
+var. Ama örneğin diyelim
+
+345
+00:24:53,069 --> 00:24:55,069
+gets için ne kullanacağız?
+
+346
+00:24:55,069 --> 00:24:57,069
+Gets için de fgets kullanabilirsiniz.
+
+347
+00:24:57,069 --> 00:24:59,069
+Diyelim fgets ile
+
+348
+00:24:59,069 --> 00:25:01,069
+okudunuz. Al
+
+349
+00:25:01,069 --> 00:25:03,069
+tüm bir boyut belirleyerek
+
+350
+00:25:03,069 --> 00:25:05,069
+fgets ile okudunuz. Sonra
+
+351
+00:25:05,069 --> 00:25:07,069
+parsing yapmanız gerekiyor. Onun için
+
+352
+00:25:07,069 --> 00:25:09,069
+de scnf kullanarak parsing
+
+353
+00:25:09,069 --> 00:25:11,069
+yapabilirsiniz. String integer
+
+354
+00:25:11,069 --> 00:25:13,069
+olarak farklı değişkenlere atamanızı
+
+355
+00:25:13,069 --> 00:25:15,069
+yaparsınız.
+
+356
+00:25:15,069 --> 00:25:19,059
+Şimdi örneklerimize başlayalım.
+
+357
+00:25:19,059 --> 00:25:21,059
+Yeterince de hatırlattık.
+
+358
+00:25:21,059 --> 00:25:23,059
+Şimdi önce iki tane
+
+359
+00:25:23,059 --> 00:25:25,059
+örnek yapacağız. Bir tanesinde
+
+360
+00:25:25,059 --> 00:25:27,059
+aslında
+
+361
+00:25:27,059 --> 00:25:29,059
+küçük bir
+
+362
+00:25:29,059 --> 00:25:31,059
+menü hazırladık sizin için.
+
+363
+00:25:31,059 --> 00:25:33,059
+Bunda iki tip kullanıcı var.
+
+364
+00:25:33,059 --> 00:25:35,059
+Admin kullanıcısı ve user
+
+365
+00:25:35,059 --> 00:25:37,059
+kullanıcısı olarak. İlkinde
+
+366
+00:25:37,059 --> 00:25:39,059
+bir adminin şifresini
+
+367
+00:25:39,059 --> 00:25:41,059
+bilmeden biz admin menüyü
+
+368
+00:25:41,059 --> 00:25:43,059
+açmaya yani şifre
+
+369
+00:25:43,059 --> 00:25:45,059
+kırmak gibi düşünebiliriz basit bir şekilde.
+
+370
+00:25:45,059 --> 00:25:47,059
+Admin menüsünü açmaya
+
+371
+00:25:47,059 --> 00:25:49,059
+çalışacağız. İkincisi ise
+
+372
+00:25:49,059 --> 00:25:51,059
+dosyadan bir dosya okuyarak
+
+373
+00:25:51,059 --> 00:25:53,059
+dışarıdan bir input olarak
+
+374
+00:25:53,059 --> 00:25:55,059
+shell çalıştırmaya deneyeceğiz.
+
+375
+00:25:55,059 --> 00:26:02,140
+Şimdi
+
+376
+00:26:02,140 --> 00:26:04,140
+şöyle size de kodları
+
+377
+00:26:04,140 --> 00:26:06,140
+paylaşacağımız için bunları da
+
+378
+00:26:06,140 --> 00:26:08,140
+söyleyelim. Bu kodları denemek için
+
+379
+00:26:08,140 --> 00:26:10,140
+bir VirtualBox'a 32 bit
+
+380
+00:26:10,140 --> 00:26:12,140
+Ubuntu kurabilirsiniz.
+
+381
+00:26:12,140 --> 00:26:14,140
+Daha sonra da yapmanız gerekenler
+
+382
+00:26:14,140 --> 00:26:17,519
+şu şekilde
+
+383
+00:26:17,519 --> 00:26:19,519
+randomization,
+
+384
+00:26:19,519 --> 00:26:21,519
+stake randomization'ı kapatmanız
+
+385
+00:26:21,519 --> 00:26:23,519
+gerekiyor ki
+
+386
+00:26:23,519 --> 00:26:25,519
+stake randomization yaptığınız zaman
+
+387
+00:26:25,519 --> 00:26:27,519
+şimdi
+
+388
+00:26:27,519 --> 00:26:29,519
+adreslerin karıştığı
+
+389
+00:26:29,519 --> 00:26:31,519
+şimdi siz bir adresi tahmin etmek
+
+390
+00:26:31,519 --> 00:26:33,519
+zorundasınız ki kendi çalıştırmak
+
+391
+00:26:33,519 --> 00:26:35,519
+istediğiniz programı çalıştırın.
+
+392
+00:26:35,519 --> 00:26:37,519
+Fakat eğer
+
+393
+00:26:37,519 --> 00:26:39,519
+randomization açık olursa bu adresi
+
+394
+00:26:39,519 --> 00:26:41,519
+bunun önüne geçmek için sistem
+
+395
+00:26:41,519 --> 00:26:43,519
+randomize ediyor belleği.
+
+396
+00:26:43,519 --> 00:26:45,519
+Bunu yapmaması için de yani bizim
+
+397
+00:26:45,519 --> 00:26:47,519
+tahmin ettiğimiz adres
+
+398
+00:26:47,519 --> 00:26:49,519
+çalışması için bunu
+
+399
+00:26:49,519 --> 00:26:51,519
+kapatıyoruz. Şuradaki
+
+400
+00:26:51,519 --> 00:26:53,519
+kod ile
+
+401
+00:26:53,519 --> 00:26:55,519
+bunu kapatacağız.
+
+402
+00:26:55,519 --> 00:26:57,519
+Daha sonra da stake protector'ı
+
+403
+00:26:57,519 --> 00:26:59,519
+kapatacağız. Bunları değerleme sırasında
+
+404
+00:26:59,519 --> 00:27:01,519
+yapacağız ve
+
+405
+00:27:01,519 --> 00:27:03,519
+siteyi executable
+
+406
+00:27:03,519 --> 00:27:05,519
+hale getireceğiz. Yani biz o
+
+407
+00:27:05,519 --> 00:27:07,519
+stekte buffer overflow yapmak için
+
+408
+00:27:07,519 --> 00:27:09,519
+sistemini yapmamız gerekiyor. Bunun için
+
+409
+00:27:09,519 --> 00:27:11,519
+de executable
+
+410
+00:27:11,519 --> 00:27:13,519
+siteyi
+
+411
+00:27:13,519 --> 00:27:15,519
+executable siteyi aktif hale
+
+412
+00:27:15,519 --> 00:27:23,220
+getirmemiz gerekiyor.
+
+413
+00:27:23,220 --> 00:27:25,220
+Şunları söyledim zaten burada
+
+414
+00:27:25,220 --> 00:27:27,220
+biz zaten hani
+
+415
+00:27:27,220 --> 00:27:29,220
+bu dosyaları oluşturup
+
+416
+00:27:29,220 --> 00:27:31,220
+text file'ları da sizinle paylaşacağımız
+
+417
+00:27:31,220 --> 00:27:33,220
+için şu adımı da
+
+418
+00:27:33,220 --> 00:27:35,220
+şöyle göstereyim bu adımı da
+
+419
+00:27:35,220 --> 00:27:37,220
+yapmanıza gerek yok.
+
+420
+00:27:37,220 --> 00:27:39,220
+Buradaki text file'ları da
+
+421
+00:27:39,220 --> 00:27:41,220
+göstereceğiz ve nasıl çalıştıracağınız
+
+422
+00:27:41,220 --> 00:27:43,220
+da burada gözükecek.
+
+423
+00:27:43,220 --> 00:27:45,220
+Şöyle önce bir slide'dan bakalım
+
+424
+00:27:45,220 --> 00:27:47,220
+ne
+
+425
+00:27:47,220 --> 00:27:49,220
+yaptığımıza. Şimdi
+
+426
+00:27:49,220 --> 00:27:51,220
+ne demiştik bir
+
+427
+00:27:51,220 --> 00:27:53,220
+isadmin diye bir
+
+428
+00:27:53,220 --> 00:27:55,220
+integer tanımladık. Bu bizim
+
+429
+00:27:55,220 --> 00:27:57,220
+bir flag gibi düşünebilirsiniz.
+
+430
+00:27:57,220 --> 00:27:59,220
+Daha sonra bir
+
+431
+00:27:59,220 --> 00:28:01,220
+password'ımız ve user'ımız olacak. Şimdi
+
+432
+00:28:01,220 --> 00:28:03,220
+username'i isteyeceğiz.
+
+433
+00:28:03,220 --> 00:28:05,220
+Daha sonra password'ı isteyeceğiz.
+
+434
+00:28:05,220 --> 00:28:07,220
+Eğer username'imiz
+
+435
+00:28:07,220 --> 00:28:09,220
+adminse şifre de password'da
+
+436
+00:28:09,220 --> 00:28:11,220
+admin1234 ise sisteme
+
+437
+00:28:11,220 --> 00:28:13,220
+girebileceğiz. Peki biz
+
+438
+00:28:13,220 --> 00:28:15,220
+şifreyi bilmiyoruz.
+
+439
+00:28:15,220 --> 00:28:17,220
+Nasıl girebiliriz sizce? Önce
+
+440
+00:28:17,220 --> 00:28:19,220
+size bir sorayım. Zaten
+
+441
+00:28:19,220 --> 00:28:21,220
+çok basit. Chat'e
+
+442
+00:28:21,220 --> 00:28:35,700
+yazabilirsiniz. Fikri olan
+
+443
+00:28:35,700 --> 00:28:41,220
+yok mu?
+
+444
+00:28:41,220 --> 00:28:43,220
+Şey hocam şu admin
+
+445
+00:28:43,220 --> 00:28:45,220
+değişkenini bir yapacağız yani.
+
+446
+00:28:45,220 --> 00:28:47,220
+Evet. Onun
+
+447
+00:28:47,220 --> 00:28:49,220
+bak mesela Oğuzcan Kandemir
+
+448
+00:28:49,220 --> 00:28:51,220
+yazdı. 40 byte ezme işlemi
+
+449
+00:28:51,220 --> 00:28:53,220
+yapacağız. 40 byte yapmak için neyi
+
+450
+00:28:53,220 --> 00:28:55,220
+yapmamız lazım Oğuzcan?
+
+451
+00:28:55,220 --> 00:28:57,220
+Hangi değişkeni yapmamız lazım? Hangi değişkeni?
+
+452
+00:28:57,220 --> 00:29:04,589
+integer mı hocam?
+
+453
+00:29:04,589 --> 00:29:06,589
+Şimdi user değişkenimiz
+
+454
+00:29:06,589 --> 00:29:08,589
+ilk önce ne yaptık?
+
+455
+00:29:08,589 --> 00:29:10,589
+isadmin burada 4 byte
+
+456
+00:29:10,589 --> 00:29:12,589
+daha sonra password'ımız gelecek 20 byte
+
+457
+00:29:12,589 --> 00:29:14,589
+sonra da user
+
+458
+00:29:14,589 --> 00:29:16,589
+değişkenimiz var 20 byte. Bizim
+
+459
+00:29:16,589 --> 00:29:18,589
+şimdi isadmin'e ulaşmamız için
+
+460
+00:29:18,589 --> 00:29:20,589
+40 byte için user değişkenine
+
+461
+00:29:20,589 --> 00:29:22,589
+bir
+
+462
+00:29:22,589 --> 00:29:24,589
+40 byte'lık veri girmemiz lazım
+
+463
+00:29:24,589 --> 00:29:26,589
+değil mi isadmin'e ezmek için?
+
+464
+00:29:26,589 --> 00:29:28,589
+Evet hocam.
+
+465
+00:29:28,589 --> 00:29:30,589
+Peki bir de
+
+466
+00:29:30,589 --> 00:29:32,589
+password'dan ezmek için kaç byte
+
+467
+00:29:32,589 --> 00:29:34,589
+girmemiz gerekiyor?
+
+468
+00:29:34,589 --> 00:29:36,589
+20 byte. Yani
+
+469
+00:29:36,589 --> 00:29:38,589
+21. 1 byte
+
+470
+00:29:38,589 --> 00:29:40,589
+isadmin'i ezmek için değil mi?
+
+471
+00:29:40,589 --> 00:29:42,589
+20 byte dolduruyoruz. overflow 1 byte yapıp
+
+472
+00:29:42,589 --> 00:29:44,589
+isadmin'i dolduruyoruz
+
+473
+00:29:44,589 --> 00:29:46,589
+aslında öyle değil mi?
+
+474
+00:29:46,589 --> 00:29:48,589
+Yani iki farklı şekilde yapabilirsiniz. Hem user'ı
+
+475
+00:29:48,589 --> 00:29:50,589
+kullanarak yapabilirsiniz hem de password'ı.
+
+476
+00:29:50,589 --> 00:29:52,589
+Sonuçta ilk önce isadmin
+
+477
+00:29:52,589 --> 00:29:54,589
+tanımlı. İlk o push ediliyor.
+
+478
+00:29:54,589 --> 00:29:56,589
+Daha sonra password ve user
+
+479
+00:29:56,589 --> 00:29:58,589
+geliyor arka arkaya. Dolayısıyla
+
+480
+00:29:58,589 --> 00:30:00,589
+siz isadmin'den sonra gelen herhangi bir
+
+481
+00:30:00,589 --> 00:30:02,589
+local variable'ı yani
+
+482
+00:30:02,589 --> 00:30:04,589
+define değişkeni, password ve
+
+483
+00:30:04,589 --> 00:30:06,589
+user gibi. Bunları kullanarak
+
+484
+00:30:06,589 --> 00:30:08,589
+isadmin'in değerini değiştirebilirsiniz.
+
+485
+00:30:08,589 --> 00:30:10,589
+Ama bunları mesela
+
+486
+00:30:10,589 --> 00:30:12,589
+mavokla yapmış olsaydık birer pointer
+
+487
+00:30:12,589 --> 00:30:14,589
+tanımlayıp bunu yapmak mümkün olur muydu?
+
+488
+00:30:14,589 --> 00:30:16,589
+Bu sorunun cevabını verebilecek olan var mı aranızda?
+
+489
+00:30:16,589 --> 00:30:18,589
+Evet hocam.
+
+490
+00:30:18,589 --> 00:30:20,589
+Yani bu şey derste görmüştük hocam.
+
+491
+00:30:20,589 --> 00:30:22,589
+Hip alanına
+
+492
+00:30:22,589 --> 00:30:24,589
+knob ekliyorduk. Oradan buluyorduk gibi.
+
+493
+00:30:28,099 --> 00:30:30,099
+Evet cevapları chat'e yazarsanız
+
+494
+00:30:30,099 --> 00:30:32,099
+daha güzel olur aslında.
+
+495
+00:30:32,099 --> 00:30:34,099
+Farklı cevaplar da görmüş oluruz böylece.
+
+496
+00:30:34,099 --> 00:30:36,099
+Hip daha kolay
+
+497
+00:30:36,099 --> 00:30:38,099
+olmaz mıydı mı diyor [öğrenci]?
+
+498
+00:30:38,099 --> 00:30:40,099
+Arkadaşlar hayır
+
+499
+00:30:40,099 --> 00:30:42,099
+olmazdı çünkü hip alanı
+
+500
+00:30:42,099 --> 00:30:44,099
+öbür tarafta kalıyor biliyorsunuz ki.
+
+501
+00:30:44,099 --> 00:30:46,099
+Ve
+
+502
+00:30:46,099 --> 00:30:48,099
+hip alanı stack frame'de olmadığı için
+
+503
+00:30:48,099 --> 00:30:50,099
+stack üzerinden bu saldırıyı
+
+504
+00:30:50,099 --> 00:30:52,099
+gerçekleştiremezsiniz. Stack üzerinden
+
+505
+00:30:52,099 --> 00:30:54,099
+bu saldırıyı gerçekleştirmeniz için
+
+506
+00:30:54,099 --> 00:30:56,099
+değişkenlerinizin derleme esnasında
+
+507
+00:30:56,099 --> 00:30:58,099
+esnasında
+
+508
+00:30:58,099 --> 00:31:00,099
+şey yerleşmesi gerekiyor yani
+
+509
+00:31:00,099 --> 00:31:02,099
+predefined olması gerekiyor. Aynı bunu tanımladığımız gibi
+
+510
+00:31:02,099 --> 00:31:04,099
+int main'den sonra int
+
+511
+00:31:04,099 --> 00:31:06,099
+password user yazdık ya
+
+512
+00:31:06,099 --> 00:31:08,099
+aynı bir şekilde tanımlanmış olması gerekiyor.
+
+513
+00:31:08,099 --> 00:31:10,099
+Daha sonradan yapacağınız
+
+514
+00:31:10,099 --> 00:31:12,099
+bütün allocations'larla yaptığınız değişkenler
+
+515
+00:31:12,099 --> 00:31:14,099
+hip ile stacklanır. Dolayısıyla
+
+516
+00:31:14,099 --> 00:31:16,099
+ekleyemezsiniz.
+
+517
+00:31:16,099 --> 00:31:18,099
+Bu şekilde saldıramazsınız.
+
+518
+00:31:18,099 --> 00:31:20,099
+Sadece burada dolayısıyla password ve user'ı kullanarak
+
+519
+00:31:20,099 --> 00:31:22,099
+ancak izlenimini ezebilirsiniz
+
+520
+00:31:22,099 --> 00:31:24,099
+mevcut durumda.
+
+521
+00:31:24,099 --> 00:31:26,099
+Cevabınız bu.
+
+522
+00:31:26,099 --> 00:31:34,079
+Ama cevap veren herkese teşekkür ediyorum.
+
+523
+00:31:34,079 --> 00:31:36,079
+Şimdi ilk password'ı
+
+524
+00:31:36,079 --> 00:31:38,079
+nasıl yaptığımıza bakalım.
+
+525
+00:31:38,079 --> 00:31:40,079
+Şimdi direkt yanlış girdiğimiz zaman
+
+526
+00:31:40,079 --> 00:31:42,079
+eğer uygun boyutlarda girersek
+
+527
+00:31:42,079 --> 00:31:44,079
+zaten yanlış kullanıcı adı ve
+
+528
+00:31:44,079 --> 00:31:46,079
+password diye bize uyarıda
+
+529
+00:31:46,079 --> 00:31:48,079
+bulunuyor. Ama eğer
+
+530
+00:31:48,079 --> 00:31:50,079
+21 byte girersek ne yapıyor
+
+531
+00:31:50,079 --> 00:31:52,079
+arkadaşlar? 20 byte
+
+532
+00:31:52,079 --> 00:31:54,079
+burada password'ı
+
+533
+00:31:54,079 --> 00:31:56,079
+doldurdu
+
+534
+00:31:56,079 --> 00:31:58,079
+password alanını. Daha sonra da
+
+535
+00:31:58,079 --> 00:32:00,079
+1 byte buraya taşmış oluyoruz.
+
+536
+00:32:00,079 --> 00:32:02,079
+Peki arkadaşlar ben buraya
+
+537
+00:32:02,079 --> 00:32:04,079
+21 byte girdim
+
+538
+00:32:04,079 --> 00:32:06,079
+son byte'ın da 0'dan farklı
+
+539
+00:32:06,079 --> 00:32:08,079
+1 değeri. Sizce 49 nedir?
+
+540
+00:32:08,079 --> 00:32:17,150
+Bu 49 nereden geldi?
+
+541
+00:32:17,150 --> 00:32:19,150
+256 nereden geldi?
+
+542
+00:32:19,150 --> 00:32:21,150
+Yani 49'un
+
+543
+00:32:21,150 --> 00:32:23,150
+ne olduğuna dair bir fikri olan var mı?
+
+544
+00:32:23,150 --> 00:32:25,150
+Evet arkadaşlar.
+
+545
+00:32:25,150 --> 00:32:27,150
+Yani
+
+546
+00:32:27,150 --> 00:32:29,150
+basit aslında. Evet
+
+547
+00:32:29,150 --> 00:32:31,150
+ASCII karakteri, ASCII değeri
+
+548
+00:32:31,150 --> 00:32:33,150
+daha doğrusu
+
+549
+00:32:33,150 --> 00:32:35,150
+ASCII değerini bu şekilde
+
+550
+00:32:35,150 --> 00:32:37,150
+49 olarak
+
+551
+00:32:37,150 --> 00:32:39,150
+hesaplanmış oldu.
+
+552
+00:32:39,150 --> 00:32:41,150
+Yani aslında
+
+553
+00:32:41,150 --> 00:32:43,150
+buffer of love'a saldırmak
+
+554
+00:32:43,150 --> 00:32:45,150
+isteyen biri gerek
+
+555
+00:32:45,150 --> 00:32:47,150
+Shell açmak istesin
+
+556
+00:32:47,150 --> 00:32:49,150
+gerek herhangi bir değişikliğinin değerini
+
+557
+00:32:49,150 --> 00:32:51,150
+değiştirmek istesin. Sadece program bilgisinde değil
+
+558
+00:32:51,150 --> 00:32:53,150
+ASCII tablosunu da biliyor olması gerekiyor. Çünkü
+
+559
+00:32:53,150 --> 00:32:55,150
+yazacağınız her hexadezimal
+
+560
+00:32:55,150 --> 00:32:57,150
+code parçasının ne anlama
+
+561
+00:32:57,150 --> 00:32:59,150
+geldiğini biliyor olmanız lazım. Örneğin
+
+562
+00:32:59,150 --> 00:33:01,150
+NOB slide nasıl eklenir? Örneğin
+
+563
+00:33:01,150 --> 00:33:03,150
+Shell komutunu çalıştıracak
+
+564
+00:33:03,150 --> 00:33:05,150
+hexadezimal karakterleri hangi
+
+565
+00:33:05,150 --> 00:33:07,150
+ASCII karakterleriyle sağlayabilirim gibi. Bunları da
+
+566
+00:33:07,150 --> 00:33:09,150
+biliyor olmanız gerekiyor. Yani
+
+567
+00:33:09,150 --> 00:33:11,150
+şu ana kadar sunumda bahsettiğimiz
+
+568
+00:33:11,150 --> 00:33:13,150
+C bilgisinin yanına ASCII tablosunu da
+
+569
+00:33:13,150 --> 00:33:15,150
+ekleyebiliriz.
+
+570
+00:33:15,150 --> 00:33:17,150
+Şimdi burada zaten
+
+571
+00:33:17,150 --> 00:33:19,150
+görmüş olduğunuz admin menüsüne
+
+572
+00:33:19,150 --> 00:33:21,150
+şöyle girmiş oluyor.
+
+573
+00:33:21,150 --> 00:33:23,150
+Bir de
+
+574
+00:33:23,150 --> 00:33:25,150
+şu biraz
+
+575
+00:33:25,150 --> 00:33:27,150
+gelmiş farkında değilim.
+
+576
+00:33:27,150 --> 00:33:29,150
+Az önce ilk
+
+577
+00:33:29,150 --> 00:33:31,150
+arkadaşımızın söylediği de
+
+578
+00:33:31,150 --> 00:33:33,150
+41 karakter girdiğimiz
+
+579
+00:33:33,150 --> 00:33:35,150
+zaman onu da
+
+580
+00:33:35,150 --> 00:33:37,150
+username'den yapabiliyoruz. Username
+
+581
+00:33:37,150 --> 00:33:39,150
+burada 20 byte bir de
+
+582
+00:33:39,150 --> 00:33:41,150
+password 20 byte vardı. Her ikisini de
+
+583
+00:33:41,150 --> 00:33:43,150
+ezmiş olduk ve son
+
+584
+00:33:43,150 --> 00:33:45,150
+karakterimiz de isadmin
+
+585
+00:33:45,150 --> 00:33:47,150
+değişkeninin değerini
+
+586
+00:33:47,150 --> 00:33:49,150
+sıfırdan farklı bir değer yaptığı için de
+
+587
+00:33:49,150 --> 00:33:51,150
+admin menüsüne
+
+588
+00:33:51,150 --> 00:33:53,150
+girmiş olduk. Şimdi
+
+589
+00:33:53,150 --> 00:33:55,150
+şuradan ben
+
+590
+00:33:57,150 --> 00:33:59,150
+şu ekranımı tamamen
+
+591
+00:33:59,150 --> 00:34:04,579
+paylaşayım.
+
+592
+00:34:04,579 --> 00:34:06,579
+Ekranımı tamamen görebiliyor musunuz? Örneğin
+
+593
+00:34:06,579 --> 00:34:08,579
+chat
+
+594
+00:34:08,579 --> 00:34:10,579
+chati tutuyorum. Şuan onu da görüyor olmanız
+
+595
+00:34:10,579 --> 00:34:12,579
+lazım. Bana
+
+596
+00:34:12,579 --> 00:34:14,579
+teşekkürler. Yani böyle online
+
+597
+00:34:14,579 --> 00:34:16,579
+olunca da
+
+598
+00:34:16,579 --> 00:34:20,559
+tamam. Evet evet
+
+599
+00:34:20,559 --> 00:34:22,559
+[öğrenci] [öğrenci].
+
+600
+00:34:22,559 --> 00:34:24,559
+Byte sayısını yani o değişkenlerin
+
+601
+00:34:24,559 --> 00:34:26,559
+byte büyüklüğünü
+
+602
+00:34:26,559 --> 00:34:28,559
+diyeyim ben. Onları doldurup
+
+603
+00:34:28,559 --> 00:34:30,559
+bir fazla
+
+604
+00:34:30,559 --> 00:34:32,559
+yaptığımız zamansa o
+
+605
+00:34:32,559 --> 00:34:34,559
+değişkenin değerini değiştirmiş oluyoruz. Neden
+
+606
+00:34:34,559 --> 00:34:36,559
+sadece bir yapıyoruz da iki
+
+607
+00:34:36,559 --> 00:34:38,559
+değişkeni değiştirmiyoruz? Mesela burada
+
+608
+00:34:38,559 --> 00:34:40,559
+görüyorsunuz izadmin'de de bir hesaplama
+
+609
+00:34:40,559 --> 00:34:42,559
+yapmış oluyoruz. Çünkü izadminin
+
+610
+00:34:42,559 --> 00:34:44,559
+de 4 byte'lık bir boyutu var.
+
+611
+00:34:44,559 --> 00:34:46,559
+Diyelim biz bir karakterden fazla
+
+612
+00:34:46,559 --> 00:34:48,559
+girdik. O da hesaplanacak.
+
+613
+00:34:48,559 --> 00:34:50,559
+Daha sonra saldırgan da
+
+614
+00:34:50,559 --> 00:34:52,559
+istemediği tahmin etmediği
+
+615
+00:34:52,559 --> 00:34:54,559
+farklı bölümleri de etkileme
+
+616
+00:34:54,559 --> 00:34:56,559
+olasılığı doğmuş olur.
+
+617
+00:34:56,559 --> 00:34:58,559
+Saldırgan bunu riske atmak istemez.
+
+618
+00:34:58,559 --> 00:35:00,559
+Bu nedenle bir karakter fazla
+
+619
+00:35:00,559 --> 00:35:02,559
+giriyor ve sadece izadmin'e
+
+620
+00:35:02,559 --> 00:35:04,559
+etki etmek istiyor. Sıfırdan
+
+621
+00:35:04,559 --> 00:35:06,559
+farklı bir değer olsun ki
+
+622
+00:35:06,559 --> 00:35:08,559
+buradaki if koşulu kontrol
+
+623
+00:35:08,559 --> 00:35:10,559
+bloğu sağlansın ve admin
+
+624
+00:35:10,559 --> 00:35:12,559
+menüsü açılmış olsun.
+
+625
+00:35:12,559 --> 00:35:14,559
+Şimdi
+
+626
+00:35:14,559 --> 00:35:19,380
+VirtualBox ekranını da
+
+627
+00:35:19,380 --> 00:35:21,380
+görüyorsunuz değil mi?
+
+628
+00:35:21,380 --> 00:35:23,380
+Evet hocam görmüyor.
+
+629
+00:35:23,380 --> 00:35:25,380
+Sürekli
+
+630
+00:35:25,380 --> 00:35:27,380
+soruyoruz.
+
+631
+00:35:27,380 --> 00:35:29,380
+Bu böyle değişik bir eğitim şekli oldu.
+
+632
+00:35:29,380 --> 00:35:31,380
+Kusura bakmayın.
+
+633
+00:35:31,380 --> 00:35:33,380
+Şimdi
+
+634
+00:35:33,380 --> 00:35:35,380
+arkadaşlar şöyle
+
+635
+00:35:35,380 --> 00:35:37,380
+hazırlamıştık zaten
+
+636
+00:35:37,380 --> 00:35:39,380
+size göstermek için.
+
+637
+00:35:39,380 --> 00:35:41,380
+Şöyle bir kod parçası
+
+638
+00:35:41,380 --> 00:35:43,380
+hazırladık. Göstereyim
+
+639
+00:35:43,380 --> 00:35:45,380
+biraz VirtualBox olduğu için
+
+640
+00:35:45,380 --> 00:35:47,380
+kasıyor. Biraz yavaş çalışıyor.
+
+641
+00:35:47,380 --> 00:35:49,380
+Şimdi
+
+642
+00:35:49,380 --> 00:35:51,380
+basit bir aslında menü
+
+643
+00:35:51,380 --> 00:35:53,380
+yaptık. Ne yapıyor? İşte
+
+644
+00:35:53,380 --> 00:35:55,380
+şöyle dört tane menün
+
+645
+00:35:55,380 --> 00:35:57,380
+seçeneği var. List yaptığımız zaman
+
+646
+00:35:57,380 --> 00:35:59,380
+user'ın ayrı
+
+647
+00:35:59,380 --> 00:36:01,380
+admin'in ayrı klasörleri var ve
+
+648
+00:36:01,380 --> 00:36:03,380
+bu klasörler içerisindeki
+
+649
+00:36:03,380 --> 00:36:05,380
+içerisinde de birkaç
+
+650
+00:36:05,380 --> 00:36:07,380
+tane text file var.
+
+651
+00:36:07,380 --> 00:36:09,380
+List dediğimiz zaman bu klasörler
+
+652
+00:36:09,380 --> 00:36:11,380
+içerisindeki dosyaları listeliyor.
+
+653
+00:36:11,380 --> 00:36:13,380
+Read dediğimiz zamansa
+
+654
+00:36:13,380 --> 00:36:15,380
+küçük bir fonksiyonumuz
+
+655
+00:36:15,380 --> 00:36:17,380
+var. Onu söyleyeceğiz çalıştırırken.
+
+656
+00:36:17,380 --> 00:36:19,380
+Böyle basit bir
+
+657
+00:36:19,380 --> 00:36:21,380
+menü. Söylediğim gibi
+
+658
+00:36:21,380 --> 00:36:23,380
+user ve admin olarak iki farklı
+
+659
+00:36:23,380 --> 00:36:25,380
+kullanıcı tipi var. İlk yaptığımız
+
+660
+00:36:25,380 --> 00:36:27,380
+uygulama neydi? Şifre
+
+661
+00:36:27,380 --> 00:36:29,380
+uygulaması. Önce
+
+662
+00:36:29,380 --> 00:36:31,380
+onu şöyle
+
+663
+00:36:31,380 --> 00:36:33,380
+deneyelim. Dışarıdan
+
+664
+00:36:33,380 --> 00:36:35,380
+hiçbir input almadan.
+
+665
+00:36:35,380 --> 00:36:37,380
+Biz size şöyle bir readme
+
+666
+00:36:37,380 --> 00:36:39,380
+txt de oluşturduk.
+
+667
+00:36:39,380 --> 00:36:41,380
+Yani text dosyası. Bu
+
+668
+00:36:41,380 --> 00:36:43,380
+klasör sizinle paylaşınca
+
+669
+00:36:43,380 --> 00:36:45,380
+direkt
+
+670
+00:36:45,380 --> 00:36:47,380
+bu readme'den
+
+671
+00:36:47,380 --> 00:36:49,380
+komutları alabileceksiniz. Şimdi
+
+672
+00:36:49,380 --> 00:36:51,380
+ben alıyorum şunu. Bu neydi
+
+673
+00:36:51,380 --> 00:36:53,380
+arkadaşlar? Az önce söylemiştik.
+
+674
+00:36:53,380 --> 00:36:55,380
+Randomization'ı kapatacağım.
+
+675
+00:36:55,380 --> 00:36:59,039
+Klasörün içerisindeyim.
+
+676
+00:36:59,039 --> 00:37:01,039
+Direkt
+
+677
+00:37:01,039 --> 00:37:03,039
+randomization'ı
+
+678
+00:37:03,039 --> 00:37:05,039
+kapattım.
+
+679
+00:37:05,039 --> 00:37:07,039
+Şifremi giriyorum.
+
+680
+00:37:07,039 --> 00:37:09,039
+Şu an kapandı.
+
+681
+00:37:09,039 --> 00:37:11,039
+Sonra ne yapıyorum arkadaşlar?
+
+682
+00:37:11,039 --> 00:37:13,039
+Derlemeyi yaparken. Az önce
+
+683
+00:37:13,039 --> 00:37:15,039
+program C vardı. Derlemeyi
+
+684
+00:37:15,039 --> 00:37:17,039
+yaparken
+
+685
+00:37:17,039 --> 00:37:19,039
+siteyi executable yapıyordum
+
+686
+00:37:19,039 --> 00:37:21,039
+ve stack protector'ı da
+
+687
+00:37:21,039 --> 00:37:27,010
+kapatıyordum. Şurada eğer
+
+688
+00:37:27,010 --> 00:37:29,010
+fark ederseniz. Bakın gets var.
+
+689
+00:37:29,010 --> 00:37:31,010
+Kodumun içerisinde ve
+
+690
+00:37:31,010 --> 00:37:33,010
+gets'in tehlikeli olduğunu da
+
+691
+00:37:33,010 --> 00:37:35,010
+bana uyarı olarak
+
+692
+00:37:35,010 --> 00:37:37,010
+söylüyor.
+
+693
+00:37:37,010 --> 00:37:39,010
+Daha sonra da direkt programıma
+
+694
+00:37:39,010 --> 00:37:44,239
+olarak çalışıyor.
+
+695
+00:37:44,239 --> 00:37:46,239
+Çalıştırıyorum. Şimdi buradakiler
+
+696
+00:37:46,239 --> 00:37:48,239
+neler arkadaşlar? Benim şimdi
+
+697
+00:37:48,239 --> 00:37:50,239
+bu stack alanlarına
+
+698
+00:37:50,239 --> 00:37:52,239
+etki etmem için ya bu kodu
+
+699
+00:37:52,239 --> 00:37:54,239
+yazarken etki edebilmem
+
+700
+00:37:54,239 --> 00:37:56,239
+için adresleri hesaplamam
+
+701
+00:37:56,239 --> 00:37:58,239
+gerekiyordu. Siz kendiniz de
+
+702
+00:37:58,239 --> 00:38:00,239
+bunu denediğiniz zaman göreceksiniz.
+
+703
+00:38:00,239 --> 00:38:02,239
+Yani küçük bir farklılık bile
+
+704
+00:38:02,239 --> 00:38:04,239
+ya bunların dönüşümleri çok kolay
+
+705
+00:38:04,239 --> 00:38:06,239
+ama küçük bir farklılık bile
+
+706
+00:38:06,239 --> 00:38:08,239
+adresleri değiştirebilir.
+
+707
+00:38:08,239 --> 00:38:10,239
+Örneğin buradaki adresler
+
+708
+00:38:10,239 --> 00:38:12,239
+bu user değişkeninin
+
+709
+00:38:12,239 --> 00:38:14,239
+adresi, bu password
+
+710
+00:38:14,239 --> 00:38:16,239
+değişkeninin, bu da izletmenin
+
+711
+00:38:16,239 --> 00:38:18,239
+değişkeninin adresi. Bunları yazdırdık ki
+
+712
+00:38:18,239 --> 00:38:20,239
+bu adresleri bilerek
+
+713
+00:38:20,239 --> 00:38:22,239
+ayarlayalım şeklinde.
+
+714
+00:38:22,239 --> 00:38:24,239
+Siz de diyelim kendi
+
+715
+00:38:24,239 --> 00:38:26,239
+sisteminizi kurduğunuz zaman
+
+716
+00:38:26,239 --> 00:38:28,239
+VirtualBox'ın versiyonu farklı
+
+717
+00:38:28,239 --> 00:38:30,239
+oldu ya da yani böyle küçük
+
+718
+00:38:30,239 --> 00:38:32,239
+bir değişiklik bile bir iki
+
+719
+00:38:32,239 --> 00:38:34,239
+byte'lık bir alanı değişik
+
+720
+00:38:34,239 --> 00:38:36,239
+gösterebilir bellekte.
+
+721
+00:38:36,239 --> 00:38:38,239
+O nedenle bunları bu şekilde
+
+722
+00:38:38,239 --> 00:38:40,239
+yazdırıp kendinize uydurabilirsiniz.
+
+723
+00:38:40,239 --> 00:38:42,239
+Şimdi önce
+
+724
+00:38:42,239 --> 00:38:44,239
+geçelim buraya.
+
+725
+00:38:44,239 --> 00:38:46,239
+Yanlış bir şeyler
+
+726
+00:38:46,239 --> 00:38:48,239
+gireceğim. Bir bir dedim. Böyle bir şey
+
+727
+00:38:48,239 --> 00:38:50,239
+yok zaten. Az önce gördüğünüz gibi incorrect
+
+728
+00:38:50,239 --> 00:38:52,239
+dedi. Daha sonra bir
+
+729
+00:38:52,239 --> 00:38:54,239
+doğru girelim. Admin'de
+
+730
+00:38:54,239 --> 00:38:59,820
+şu an admin menüsüne girdim
+
+731
+00:38:59,820 --> 00:39:01,820
+ama doğru password'ı kullandım.
+
+732
+00:39:01,820 --> 00:39:03,820
+Exit yapalım.
+
+733
+00:39:03,820 --> 00:39:07,710
+Şimdi bir de
+
+734
+00:39:07,710 --> 00:39:09,710
+deneyelim bakalım. Az önceki
+
+735
+00:39:09,710 --> 00:39:17,539
+21 bytes
+
+736
+00:39:17,539 --> 00:39:19,539
+girdim password'ımı ve yine
+
+737
+00:39:19,539 --> 00:39:21,539
+admin menüsündeyim.
+
+738
+00:39:21,539 --> 00:39:23,539
+Aynı şeyi az önce
+
+739
+00:39:23,539 --> 00:39:25,539
+yaptığımız gibi username'e
+
+740
+00:39:25,539 --> 00:39:27,539
+şöyle hızlıca girmeye çalışacağım.
+
+741
+00:39:27,539 --> 00:39:29,539
+41 bytes
+
+742
+00:39:29,539 --> 00:39:38,579
+olarak. Password'a
+
+743
+00:39:38,579 --> 00:39:40,579
+istediğinizi girin. Üzerine yazacaktır.
+
+744
+00:39:40,579 --> 00:39:43,860
+Ve yine admin
+
+745
+00:39:43,860 --> 00:39:45,860
+menüsündeyim.
+
+746
+00:39:45,860 --> 00:39:47,860
+Az önceki örneğimize
+
+747
+00:39:47,860 --> 00:39:49,860
+bu şekilde
+
+748
+00:39:49,860 --> 00:39:51,860
+şey yapmış olduk. Şöyle bir
+
+749
+00:39:51,860 --> 00:39:53,860
+çıkayım. Şimdi
+
+750
+00:39:53,860 --> 00:39:55,860
+diğer örneğe
+
+751
+00:39:55,860 --> 00:39:57,860
+bakalım ama diğer örnekten önce
+
+752
+00:39:57,860 --> 00:39:59,860
+şimdi bizim user
+
+753
+00:39:59,860 --> 00:40:01,860
+klasörümüzde bir de şifreyi
+
+754
+00:40:01,860 --> 00:40:03,860
+artık gördük. Dışarıdan
+
+755
+00:40:03,860 --> 00:40:05,860
+input olarak shell çalıştırmaya
+
+756
+00:40:05,860 --> 00:40:07,860
+deneyeceğiz. Şimdi iki
+
+757
+00:40:07,860 --> 00:40:09,860
+tane user klasörümüzde
+
+758
+00:40:09,860 --> 00:40:11,860
+iki tane text dosyamız var.
+
+759
+00:40:11,860 --> 00:40:13,860
+Bir tanesi gayet normal.
+
+760
+00:40:13,860 --> 00:40:15,860
+Noktalı virgüllerle ayrılmış
+
+761
+00:40:15,860 --> 00:40:17,860
+sayılarımız var burada.
+
+762
+00:40:17,860 --> 00:40:19,860
+Bir fonksiyon yazdık.
+
+763
+00:40:19,860 --> 00:40:21,860
+Bu noktalı virgüllerle ayrılan
+
+764
+00:40:21,860 --> 00:40:23,860
+sayıları satır satır okuyarak
+
+765
+00:40:23,860 --> 00:40:25,860
+sonucunu gösteriyor sadece.
+
+766
+00:40:25,860 --> 00:40:27,860
+Örneğin burada 333 şeklinde
+
+767
+00:40:27,860 --> 00:40:29,860
+şey yapacak.
+
+768
+00:40:29,860 --> 00:40:31,860
+Topluyor yani bunları
+
+769
+00:40:31,860 --> 00:40:33,860
+333 şeklinde her noktalı
+
+770
+00:40:33,860 --> 00:40:35,860
+virgülle ayrılmış olan sayıları
+
+771
+00:40:35,860 --> 00:40:37,860
+topluyor. Diğerinde
+
+772
+00:40:37,860 --> 00:40:39,860
+ise bizim
+
+773
+00:40:39,860 --> 00:40:41,860
+yani ilk bakışta
+
+774
+00:40:41,860 --> 00:40:43,860
+bize çok anlamsız gelen
+
+775
+00:40:43,860 --> 00:40:45,860
+ama aslında altında
+
+776
+00:40:45,860 --> 00:40:47,860
+shell kodu çalıştıran
+
+777
+00:40:47,860 --> 00:40:49,860
+exec system çağrısı bulunan
+
+778
+00:40:49,860 --> 00:40:51,860
+ve hexadecimal
+
+779
+00:40:51,860 --> 00:40:53,860
+eğer hexadecimal ile
+
+780
+00:40:53,860 --> 00:40:55,860
+karşılığına baksaydık
+
+781
+00:40:55,860 --> 00:40:57,860
+zaten bakacağız birazdan
+
+782
+00:40:57,860 --> 00:40:59,860
+slide'dan da anlamlı
+
+783
+00:40:59,860 --> 00:41:01,860
+olduğunu göreceksiniz. Bu içerisinde
+
+784
+00:41:01,860 --> 00:41:03,860
+noplar bulunan
+
+785
+00:41:03,860 --> 00:41:05,860
+o byte'leri
+
+786
+00:41:05,860 --> 00:41:07,860
+bellek bölümlerine atlamamızı sağlayan
+
+787
+00:41:07,860 --> 00:41:11,260
+bölümler var.
+
+788
+00:41:11,260 --> 00:41:13,260
+Sadece evet yazmışlar.
+
+789
+00:41:13,260 --> 00:41:15,260
+Bir kısımlar
+
+790
+00:41:15,260 --> 00:41:17,260
+var. İşte bu saldırganın
+
+791
+00:41:17,260 --> 00:41:19,260
+aslında
+
+792
+00:41:19,260 --> 00:41:21,260
+input'u.
+
+793
+00:41:21,260 --> 00:41:23,260
+Şimdi
+
+794
+00:41:23,260 --> 00:41:25,260
+arkadaki şey
+
+795
+00:41:25,260 --> 00:41:27,260
+gitti. Neyse.
+
+796
+00:41:27,260 --> 00:41:29,260
+Şimdi tekrar bir
+
+797
+00:41:29,260 --> 00:41:31,260
+girelim buraya.
+
+798
+00:41:31,260 --> 00:41:33,260
+Bir user
+
+799
+00:41:33,260 --> 00:41:35,260
+1 olarak giriş
+
+800
+00:41:35,260 --> 00:41:37,260
+yapacağım. Şifresi 134'tü.
+
+801
+00:41:37,260 --> 00:41:39,260
+Şimdi ben
+
+802
+00:41:39,260 --> 00:41:41,260
+buraya girdim. Diyelim
+
+803
+00:41:41,260 --> 00:41:43,260
+list yapıyorum. Burada
+
+804
+00:41:43,260 --> 00:41:45,260
+iki tane dosyam var. A ve B
+
+805
+00:41:45,260 --> 00:41:47,260
+olarak. Daha sonra
+
+806
+00:41:47,260 --> 00:41:49,260
+önce normal olan text'i
+
+807
+00:41:49,260 --> 00:41:51,260
+bir okuyalım.
+
+808
+00:41:51,260 --> 00:41:53,260
+Ne yaptı? Satırlarda noktalı virgülle
+
+809
+00:41:53,260 --> 00:41:55,260
+ayrılmış olan sayıları topladı.
+
+810
+00:41:55,260 --> 00:42:06,190
+Şimdi
+
+811
+00:42:06,190 --> 00:42:14,940
+bunu niye yaptım? Durun bakalım
+
+812
+00:42:14,940 --> 00:42:20,780
+arkadaşlar.
+
+813
+00:42:20,780 --> 00:42:22,780
+Pardon. Evet. Şimdi
+
+814
+00:42:22,780 --> 00:42:24,780
+şöyle bir şey. Çünkü sudo olarak
+
+815
+00:42:24,780 --> 00:42:26,780
+çalıştırmadık. Şimdi
+
+816
+00:42:26,780 --> 00:42:28,780
+sudo olarak da programı çalıştı.
+
+817
+00:42:28,780 --> 00:42:30,780
+Programımızı
+
+818
+00:42:30,780 --> 00:42:32,780
+çalıştırdığımız zaman
+
+819
+00:42:32,780 --> 00:42:34,780
+bellekte küçük bir kısım
+
+820
+00:42:34,780 --> 00:42:36,780
+fark ediyor. Sudo olarak çalıştırmakla yani
+
+821
+00:42:36,780 --> 00:42:38,780
+root olarak çalıştırmakla normal olarak
+
+822
+00:42:38,780 --> 00:42:40,780
+çalıştırmak arasında küçük bir fark var.
+
+823
+00:42:40,780 --> 00:42:42,780
+Bu biz burada adresi de
+
+824
+00:42:42,780 --> 00:42:44,780
+sudo olarak çalıştırdığımızda
+
+825
+00:42:44,780 --> 00:42:46,780
+ayarlamıştık. O yüzden
+
+826
+00:42:46,780 --> 00:42:48,780
+küçük bir fark oluşmuş oldu.
+
+827
+00:42:48,780 --> 00:42:50,780
+Şimdi tekrar
+
+828
+00:42:50,780 --> 00:42:54,260
+deneyeceğim. Program
+
+829
+00:42:54,260 --> 00:42:56,260
+suda'ya göre değerlendi.
+
+830
+00:42:56,260 --> 00:42:58,260
+Yetki yetkisine göre değerlendi ve yetki
+
+831
+00:42:58,260 --> 00:43:00,260
+eklenirken code segmentlik adresler
+
+832
+00:43:00,260 --> 00:43:02,260
+yetki byte'ından dolayı
+
+833
+00:43:02,260 --> 00:43:04,260
+kaydı içinde.
+
+834
+00:43:04,260 --> 00:43:06,260
+Programı ona göre tekrar aramanız gerekecek. Yani
+
+835
+00:43:06,260 --> 00:43:08,260
+aslında programı değerlediğinizde
+
+836
+00:43:08,260 --> 00:43:10,260
+değerleme esnasında girdiğiniz
+
+837
+00:43:10,260 --> 00:43:12,260
+parametreler de programındaki
+
+838
+00:43:12,260 --> 00:43:14,260
+adresleri değiştirebiliyor.
+
+839
+00:43:14,260 --> 00:43:16,260
+Dolayısıyla
+
+840
+00:43:16,260 --> 00:43:18,260
+adres hesabını düzgün yapabilmek
+
+841
+00:43:18,260 --> 00:43:20,260
+overflow ataklarını gerçekleştiren
+
+842
+00:43:20,260 --> 00:43:22,260
+kişi için çok önemli.
+
+843
+00:43:22,260 --> 00:43:24,260
+Burada da bunun bir öğreni gördük aslında.
+
+844
+00:43:24,260 --> 00:43:26,260
+Evet aslında yanlışlıkla sudo
+
+845
+00:43:26,260 --> 00:43:28,260
+yazmayı unutmamla bunu da görmüş olduk.
+
+846
+00:43:28,260 --> 00:43:30,260
+Güzel oldu. Şu an fark ettiyseniz
+
+847
+00:43:30,260 --> 00:43:32,260
+shell'e input ile
+
+848
+00:43:32,260 --> 00:43:34,260
+girmiş oldum. Örneğin
+
+849
+00:43:34,260 --> 00:43:36,260
+şöyle
+
+850
+00:43:36,260 --> 00:43:38,260
+farklı komutlar
+
+851
+00:43:38,260 --> 00:43:40,260
+yazayım. Şu an
+
+852
+00:43:40,260 --> 00:43:42,260
+shell komutları artık
+
+853
+00:43:42,260 --> 00:43:44,260
+shell'e sahibim. Yani o bilgisayardaki
+
+854
+00:43:44,260 --> 00:43:46,260
+herhangi bir klasöre sisteme
+
+855
+00:43:46,260 --> 00:43:48,260
+erişebilir durumdayım.
+
+856
+00:43:48,260 --> 00:43:50,260
+Silebilirsin. Her şeyi yapabilirsin.
+
+857
+00:43:50,260 --> 00:43:52,260
+Silebilirim. İşlem sisteminin izin verdiği her şeyi
+
+858
+00:43:52,260 --> 00:43:54,260
+shell ile yapabilirsiniz.
+
+859
+00:43:54,260 --> 00:43:56,260
+Aslında şeyde
+
+860
+00:43:56,260 --> 00:43:58,260
+bunun bir üst versiyonu da
+
+861
+00:43:58,260 --> 00:44:00,260
+remote connection'ı direkt
+
+862
+00:44:00,260 --> 00:44:02,260
+açarak buna
+
+863
+00:44:02,260 --> 00:44:06,179
+oluşmak.
+
+864
+00:44:06,179 --> 00:44:08,179
+Segmentation fault almışsınız.
+
+865
+00:44:08,179 --> 00:44:10,179
+RMRF ile her şeyi silebilirsiniz
+
+866
+00:44:10,179 --> 00:44:12,179
+örneğin. Ama biz şu an yapmayalım tabi.
+
+867
+00:44:12,179 --> 00:44:14,179
+VM'i kurmakla çok uğraştık zaten.
+
+868
+00:44:14,179 --> 00:44:16,179
+Tekrar silmekle uğraşmayalım. Segmentation fault
+
+869
+00:44:16,179 --> 00:44:18,179
+yazmışsın [öğrenci]. Bunun nedeni ne?
+
+870
+00:44:18,179 --> 00:44:20,179
+Paralel mi test ediyorsun?
+
+871
+00:44:20,179 --> 00:44:22,179
+Segmentation fault alman çok normal.
+
+872
+00:44:22,179 --> 00:44:24,179
+Şuraya mı
+
+873
+00:44:24,179 --> 00:44:26,179
+sorayım?
+
+874
+00:44:26,179 --> 00:44:28,179
+Evet doğru. Türkçe olduğu için. Bu arada
+
+875
+00:44:28,179 --> 00:44:30,179
+Türkçe yanlışlıkla
+
+876
+00:44:30,179 --> 00:44:32,179
+seçmişiz. Sonra
+
+877
+00:44:32,179 --> 00:44:34,179
+bıraktık öyle. Çünkü sadece bu
+
+878
+00:44:34,179 --> 00:44:36,179
+uygulama için oluşturduğumuz bir
+
+879
+00:44:36,179 --> 00:44:38,179
+şeydir. Evet arkadaşlar segmentation
+
+880
+00:44:38,179 --> 00:44:40,179
+fault adresleri doğru hesaplayamazsanız
+
+881
+00:44:40,179 --> 00:44:42,179
+sürekli karşılaşacağınız bir problem.
+
+882
+00:44:42,179 --> 00:44:44,179
+Adresleri doğru hesaplamanız lazım.
+
+883
+00:44:44,179 --> 00:44:46,179
+Zaten şu ilk programı çalıştırdığımızda
+
+884
+00:44:46,179 --> 00:44:48,179
+3 tane adresi vermemizin nedeni de
+
+885
+00:44:48,179 --> 00:44:50,179
+ekrana yazmamızın nedeni de
+
+886
+00:44:50,179 --> 00:44:52,179
+siz kendi tarafınızda çalıştırırken
+
+887
+00:44:52,179 --> 00:44:54,179
+kendinizi daha kolay hesaplayın diye.
+
+888
+00:44:54,179 --> 00:44:56,179
+O yüzden. Yani kendiniz
+
+889
+00:44:56,179 --> 00:44:58,179
+bunu gönül rahatlıkla evde yapabilirsiniz.
+
+890
+00:44:58,179 --> 00:45:00,179
+Bu zararlı tekstil normalde ne yazıyor?
+
+891
+00:45:00,179 --> 00:45:02,179
+Şimdi bakacağız slide'a. Onun içerisinde
+
+892
+00:45:02,179 --> 00:45:04,179
+hexadezimal karakterler var. Az önce o gördüğünüz
+
+893
+00:45:04,179 --> 00:45:06,179
+Çince karakterler. Aslında şöyle
+
+894
+00:45:06,179 --> 00:45:08,179
+bakabiliriz.
+
+895
+00:45:08,179 --> 00:45:10,179
+Şunu da şöyle araştıralım. Evet şundan
+
+896
+00:45:10,179 --> 00:45:12,179
+gösterirseniz hocam.
+
+897
+00:45:12,179 --> 00:45:14,179
+Rekora girebilirsiniz.
+
+898
+00:45:14,179 --> 00:45:16,179
+Zaten diğerlerini
+
+899
+00:45:16,179 --> 00:45:18,179
+gösterdik. O gördüğünüz Çince
+
+900
+00:45:18,179 --> 00:45:20,179
+karakterler aslında arkadaşlar. Şuradaki
+
+901
+00:45:20,179 --> 00:45:22,179
+1,2,a,a,b,b,c,c'de
+
+902
+00:45:22,179 --> 00:45:24,179
+giden karakterler. O
+
+903
+00:45:24,179 --> 00:45:26,179
+editörün enkodlamasından kaynaklı
+
+904
+00:45:26,179 --> 00:45:28,179
+Çince gözüküyor.
+
+905
+00:45:28,179 --> 00:45:30,179
+Burada bakın bir shell bin
+
+906
+00:45:30,179 --> 00:45:32,179
+yazıyor. Buraya kadar bir
+
+907
+00:45:32,179 --> 00:45:34,179
+knob slide var. Bizim
+
+908
+00:45:34,179 --> 00:45:38,130
+1,2
+
+909
+00:45:38,130 --> 00:45:40,130
+1,2 ve giden 40
+
+910
+00:45:40,130 --> 00:45:42,130
+byte'ımız var buff'ımız. Ondan sonra bir
+
+911
+00:45:42,130 --> 00:45:44,130
+knob slide serisi geliyor. Ondan sonra
+
+912
+00:45:44,130 --> 00:45:46,130
+burada
+
+913
+00:45:46,130 --> 00:45:48,130
+bir shell kodumuz var.
+
+914
+00:45:48,130 --> 00:45:50,130
+Return adresi de biz bu shell koduna
+
+915
+00:45:50,130 --> 00:45:52,130
+doğru gitmeye çalışıyoruz. Return adres
+
+916
+00:45:52,130 --> 00:45:54,130
+bu knob sliden herhangi bir noktaya gösteriyor olması
+
+917
+00:45:54,130 --> 00:45:56,130
+yeterli bizim için. Sizin de
+
+918
+00:45:56,130 --> 00:45:58,130
+burada o ilk gösterdiğimiz adreslerde
+
+919
+00:45:58,130 --> 00:46:00,130
+return adresi aslında
+
+920
+00:46:00,130 --> 00:46:02,130
+hesaplamanız gerekiyor.
+
+921
+00:46:02,130 --> 00:46:04,130
+En önemli şey burada da
+
+922
+00:46:04,130 --> 00:46:06,130
+eğer şöyle dikkat ederseniz
+
+923
+00:46:06,130 --> 00:46:08,130
+ne yapıyoruz biz burada?
+
+924
+00:46:08,130 --> 00:46:10,130
+40 byte buff'ı
+
+925
+00:46:10,130 --> 00:46:12,130
+dolduruyoruz ve ardından
+
+926
+00:46:12,130 --> 00:46:14,130
+return adresi eziyoruz
+
+927
+00:46:14,130 --> 00:46:16,130
+ve sonra da knob, knob, knob şeklinde
+
+928
+00:46:16,130 --> 00:46:18,130
+notlarımızı arka arkaya bir pipeline
+
+929
+00:46:18,130 --> 00:46:20,130
+gibi düşünebilirsiniz.
+
+930
+00:46:20,130 --> 00:46:22,130
+Ekleyerek daha exec
+
+931
+00:46:22,130 --> 00:46:24,130
+sistem çağrısının çalışmasını
+
+932
+00:46:24,130 --> 00:46:26,130
+sağlamaya çalışıyoruz.
+
+933
+00:46:29,539 --> 00:46:31,539
+Oldu mu? [öğrenci] mı sormuştu?
+
+934
+00:46:33,539 --> 00:46:39,409
+Şöyle. Hayır
+
+935
+00:46:39,409 --> 00:46:41,409
+stack executable'ı stack'teki herhangi bir
+
+936
+00:46:41,409 --> 00:46:43,409
+komutu çalıştırabilmek için yaptık. Yani herhangi
+
+937
+00:46:43,409 --> 00:46:45,409
+bir saldırı yapmak için stack
+
+938
+00:46:45,409 --> 00:46:47,409
+executable olmak zorunda. Bu modern
+
+939
+00:46:47,409 --> 00:46:49,409
+şu an bizim kullandığımız Ubuntu 16.04
+
+940
+00:46:49,409 --> 00:46:51,409
+zaten doğal olarak
+
+941
+00:46:51,409 --> 00:46:53,409
+buffer of love'a karşı
+
+942
+00:46:53,409 --> 00:46:55,409
+savunmaları var. Biz bunların hepsini
+
+943
+00:46:55,409 --> 00:46:57,409
+kapatmak zorundayız. Bu ilk örnek içinde
+
+944
+00:46:57,409 --> 00:46:59,409
+geçerli, bunun içinde geçerli.
+
+945
+00:46:59,409 --> 00:47:01,409
+Executable stack yapmazsanız buradaki hiçbir komutu
+
+946
+00:47:01,409 --> 00:47:03,409
+çalıştıramazsınız. Hiçbir komutu.
+
+947
+00:47:03,409 --> 00:47:05,409
+Hiçbir komut çalışmaz. Dolayısıyla bir
+
+948
+00:47:05,409 --> 00:47:07,409
+nesajı çalıştırmak için mi ayarladık? Cevap hem
+
+949
+00:47:07,409 --> 00:47:09,409
+evet hem hayır. Yani
+
+950
+00:47:09,409 --> 00:47:11,409
+sadece bunun için değil, diğer örnek içinde
+
+951
+00:47:11,409 --> 00:47:13,409
+aynı şey geçerli.
+
+952
+00:47:13,409 --> 00:47:15,409
+Hocam knob stack'ları
+
+953
+00:47:15,409 --> 00:47:17,409
+ne gibi değerler atlamak için kullanıyoruz?
+
+954
+00:47:17,409 --> 00:47:19,409
+Şimdi siz buraya bir return
+
+955
+00:47:19,409 --> 00:47:21,409
+adresi kendi adresinizi yazdınız ama
+
+956
+00:47:21,409 --> 00:47:23,409
+kendi adresinize
+
+957
+00:47:23,409 --> 00:47:25,409
+gidene kadar başka komutlar da olabilir.
+
+958
+00:47:25,409 --> 00:47:27,409
+Program çalıştığınızda stack'de return adresini
+
+959
+00:47:27,409 --> 00:47:29,409
+yazdınız, atladınız oraya
+
+960
+00:47:29,409 --> 00:47:31,409
+ama atladığınız yerde başka komutlar
+
+961
+00:47:31,409 --> 00:47:33,409
+olabilir. Sizin programınızı attığınız
+
+962
+00:47:33,409 --> 00:47:35,409
+program derlenirken, sizin kendi programınızı
+
+963
+00:47:35,409 --> 00:47:37,409
+derlenirken nerede olur tam bilmiyorsunuz.
+
+964
+00:47:37,409 --> 00:47:39,409
+O yüzden onu garantilemek için knob stack'ı
+
+965
+00:47:39,409 --> 00:47:41,409
+ekliyorsunuz. Örneğin şuradaki
+
+966
+00:47:41,409 --> 00:47:43,409
+ikinci bloktan gidelim.
+
+967
+00:47:43,409 --> 00:47:45,409
+Siz buraya bir return adresi yazdınız. Kendi adresinizi
+
+968
+00:47:45,409 --> 00:47:47,409
+ezdiniz. Bilmiyorum mouse'u görüyor musunuz?
+
+969
+00:47:47,409 --> 00:47:49,409
+Bilmiyorum arkadaşlar. Biriniz sessiz
+
+970
+00:47:49,409 --> 00:47:51,409
+söylersek zor olur. Hocam mouse'umu görüyor musunuz?
+
+971
+00:47:51,409 --> 00:47:53,409
+Evet. Tamam çok zor.
+
+972
+00:47:53,409 --> 00:47:55,409
+0bffxxx yazılmış mesela.
+
+973
+00:47:55,409 --> 00:47:57,409
+Bu direkt exec bin şeyi
+
+974
+00:47:57,409 --> 00:47:59,409
+göstermiyor aslında. Bu knob stack'dan herhangi birini gösteriyor
+
+975
+00:47:59,409 --> 00:48:01,409
+olabilir. Siz bunun
+
+976
+00:48:01,409 --> 00:48:03,409
+çalışmasını garantilemek için bol bol
+
+977
+00:48:03,409 --> 00:48:05,409
+knob stack'ı ekliyorsunuz ve en üstte bir tane
+
+978
+00:48:05,409 --> 00:48:07,409
+exec bin sh yazıyorsunuz. Yani
+
+979
+00:48:07,409 --> 00:48:09,409
+shell komutunu çalıştıran sistem çağrısı komutunu.
+
+980
+00:48:09,409 --> 00:48:11,409
+Bunu garantilemek için buraya bol bol knob yazıyorsunuz ki
+
+981
+00:48:11,409 --> 00:48:13,409
+bffxxx'in kesin
+
+982
+00:48:13,409 --> 00:48:15,409
+şu noktadan arasından birine gelir. Ben
+
+983
+00:48:15,409 --> 00:48:17,409
+kendisinin komutu çalıştırana kadar knob knob knob
+
+984
+00:48:17,409 --> 00:48:19,409
+çalışır. Bunlar zaten CPU cycle
+
+985
+00:48:19,409 --> 00:48:21,409
+tüketen komutlar da değil. Çok hızlı bir şekilde
+
+986
+00:48:21,409 --> 00:48:23,409
+dinlenip sizi çalıştırmak istediğiniz esas koda
+
+987
+00:48:23,409 --> 00:48:25,409
+gelecektir. Daha sonra buradan
+
+988
+00:48:25,409 --> 00:48:27,409
+shell komutunuzu çalıştırırsınız. Tabi
+
+989
+00:48:27,409 --> 00:48:29,409
+shell komutunun çalışır çalıştırılması sistem çağrısı
+
+990
+00:48:29,409 --> 00:48:31,409
+programı bekletecek.
+
+991
+00:48:31,409 --> 00:48:33,409
+Program busy waiting yapacak ve shell açacak.
+
+992
+00:48:33,409 --> 00:48:35,409
+O shell'den her şeyi halledersiniz işlerinizi
+
+993
+00:48:35,409 --> 00:48:37,409
+halleder bitirirsiniz. Bitirdikten sonra
+
+994
+00:48:37,409 --> 00:48:39,409
+exit dedikten gidersiniz ve
+
+995
+00:48:39,409 --> 00:48:41,409
+return adresinizi giderek
+
+996
+00:48:41,409 --> 00:48:43,409
+yukarı doğru programdan
+
+997
+00:48:43,409 --> 00:48:45,409
+çıkarsınız. Buradaki knob stack'tan eklenme
+
+998
+00:48:45,409 --> 00:48:47,409
+amacı sizin
+
+999
+00:48:47,409 --> 00:48:49,409
+buraya vereceğiniz return adresini garantilemek.
+
+1000
+00:48:49,409 --> 00:48:51,409
+Ama bol bol
+
+1001
+00:48:51,409 --> 00:48:53,409
+koyuyoruz diyoruz ama eğer çok fazla
+
+1002
+00:48:53,409 --> 00:48:55,409
+koyarsanız da patlatırsınız programı.
+
+1003
+00:48:55,409 --> 00:48:57,409
+Stack frame'i de açmamanız gerekiyor.
+
+1004
+00:48:57,409 --> 00:48:59,409
+Yukarı yukarı çıkmamanız gerekiyor. Diğer return adresinden önce yapmanız
+
+1005
+00:48:59,409 --> 00:49:01,409
+gerekiyor bunu. Bir sonraki programın yani.
+
+1006
+00:49:01,409 --> 00:49:03,409
+Bunun içinde tabi bir
+
+1007
+00:49:03,409 --> 00:49:05,409
+stack segmentinin maksimum boyutundan
+
+1008
+00:49:05,409 --> 00:49:07,409
+daha küçük olduğunu anlayabilirsiniz.
+
+1009
+00:49:07,409 --> 00:49:09,409
+Yani ne kadar knob eklemeniz gerektiğini. Kesinlikle
+
+1010
+00:49:09,409 --> 00:49:11,409
+stack size'ından daha küçük
+
+1011
+00:49:11,409 --> 00:49:13,409
+olmak zorunda. Yoksa
+
+1012
+00:49:13,409 --> 00:49:15,409
+bir sonraki programın return adresine gidersiniz ve
+
+1013
+00:49:15,409 --> 00:49:17,409
+yakalayamazsınız.
+
+1014
+00:49:17,409 --> 00:49:19,409
+Başka soru var mı?
+
+1015
+00:49:19,409 --> 00:49:21,409
+Şimdi kendi fonksiyonumuzun
+
+1016
+00:49:21,409 --> 00:49:23,409
+adresini bulabiliyoruz tabi ki ama bunu garanti
+
+1017
+00:49:23,409 --> 00:49:25,409
+ediyoruz. İşte az önce zaten
+
+1018
+00:49:25,409 --> 00:49:27,409
+onu anlattı Fuat hocam. Evet bu işimizi
+
+1019
+00:49:27,409 --> 00:49:29,409
+daha kolay araştıran bir trick aslında yani. Bu bir
+
+1020
+00:49:29,409 --> 00:49:31,409
+%100 yapması gereken bir şey değil. Siz
+
+1021
+00:49:31,409 --> 00:49:33,409
+çok uğraşırsanız tabi kendi programınızı
+
+1022
+00:49:33,409 --> 00:49:35,409
+fonksiyonunuzla bulursunuz ama knob stack
+
+1023
+00:49:35,409 --> 00:49:37,409
+bu işi çok kolay araştırıyorsunuz. Kendi adresimize
+
+1024
+00:49:37,409 --> 00:49:39,409
+geldiğimizde zaten program çalıştığında
+
+1025
+00:49:39,409 --> 00:49:41,409
+anlıyoruz alasas.
+
+1026
+00:49:41,409 --> 00:49:43,409
+Programımızı çalıştırmış oluyoruz.
+
+1027
+00:49:43,409 --> 00:49:45,409
+Evet alasas. Bol bol bol
+
+1028
+00:49:45,409 --> 00:49:47,409
+deneme yapıyorsun yani. Kendi adresini tutarana kadar
+
+1029
+00:49:47,409 --> 00:49:49,409
+deneme yanılma. Çünkü zaten
+
+1030
+00:49:49,409 --> 00:49:51,409
+bu işin büyük bir kısmı deneme yanılma
+
+1031
+00:49:51,409 --> 00:49:53,409
+oluyor. Çünkü karşınızda şöyle düşünün
+
+1032
+00:49:53,409 --> 00:49:55,409
+siz şans yakalamıyorsun
+
+1033
+00:49:55,409 --> 00:49:57,409
+tabi ki. İşini şansa bırakmıyorsun.
+
+1034
+00:49:57,409 --> 00:49:59,409
+Karşıdaki bilgisayarın
+
+1035
+00:49:59,409 --> 00:50:01,409
+mimarisini tahmin etmeye çalışıyorsun. Öğrenmeye
+
+1036
+00:50:01,409 --> 00:50:03,409
+çalışıyorsun. Onun bitlerini tahmin
+
+1037
+00:50:03,409 --> 00:50:05,409
+etmeye çalışıyorsun. İşi şansa bırakmamak
+
+1038
+00:50:05,409 --> 00:50:07,409
+için zaten knob'ı ekliyoruz. Evet knob'ı ekleme
+
+1039
+00:50:07,409 --> 00:50:09,409
+nedenini zaten iş şansa bırakmamanız. Olabildiğince
+
+1040
+00:50:09,409 --> 00:50:11,409
+garanti bir şekilde
+
+1041
+00:50:11,409 --> 00:50:13,409
+sizin istediğiniz komutu çalıştırmak.
+
+1042
+00:50:13,409 --> 00:50:15,409
+Tabi ki adresleri hesaplarken şansı da
+
+1043
+00:50:15,409 --> 00:50:17,409
+hesaplamıyoruz. Olabildiğince tahmin etmeye çalışıyoruz.
+
+1044
+00:50:17,409 --> 00:50:19,409
+Burada çok ciddi bir hesap var.
+
+1045
+00:50:19,409 --> 00:50:21,409
+Mesela return adresi kaçırırsanız return
+
+1046
+00:50:21,409 --> 00:50:23,409
+başka bir programın adresine gider. Sizin
+
+1047
+00:50:23,409 --> 00:50:25,409
+istediğiniz adresine gider. Başka bir adrese gidebilir.
+
+1048
+00:50:25,409 --> 00:50:27,409
+Tam olarak return adresini kendi istediğiniz
+
+1049
+00:50:27,409 --> 00:50:29,409
+adrese yazıyor olmanız lazım. Ondan sonra da bol bol
+
+1050
+00:50:29,409 --> 00:50:31,409
+knob ekleyip sizin komutunuza
+
+1051
+00:50:31,409 --> 00:50:33,409
+gidene kadar
+
+1052
+00:50:33,409 --> 00:50:35,409
+sistem charge komutunuza gidene kadar
+
+1053
+00:50:35,409 --> 00:50:37,409
+knob çalıştırdığına emin olmanız
+
+1054
+00:50:37,409 --> 00:50:39,409
+gerekiyor. Başka?
+
+1055
+00:50:39,409 --> 00:50:41,409
+Evet slide'ı paylaşacağız.
+
+1056
+00:50:41,409 --> 00:50:43,409
+Slide'ı, kodları yani az önce gösterdiğimiz
+
+1057
+00:50:43,409 --> 00:50:45,409
+şeyleri zaten sizin için ayarladık.
+
+1058
+00:50:45,409 --> 00:50:47,409
+İçerisine bir readme file
+
+1059
+00:50:47,409 --> 00:50:49,409
+da koyduk nasıl çalıştıracağınızı.
+
+1060
+00:50:49,409 --> 00:50:51,409
+Hatta az önce benim unutup
+
+1061
+00:50:51,409 --> 00:50:53,409
+suda olarak çalıştırmadığım kısmı da
+
+1062
+00:50:53,409 --> 00:50:55,409
+ayrıyeten suda olarak çalıştırmanız
+
+1063
+00:50:55,409 --> 00:50:57,409
+lazım diye ayrı bir
+
+1064
+00:50:57,409 --> 00:50:59,409
+satırda da yazdık. Yani
+
+1065
+00:50:59,409 --> 00:51:05,730
+faydalanacaksınız hepsinden.
+
+1066
+00:51:05,730 --> 00:51:07,730
+Eğer başka soru yoksa
+
+1067
+00:51:07,730 --> 00:51:09,730
+şöyle az önce biz
+
+1068
+00:51:09,730 --> 00:51:11,730
+neleri kapattık arkadaşlar?
+
+1069
+00:51:11,730 --> 00:51:13,730
+Şurada az önceki slide'lardan
+
+1070
+00:51:13,730 --> 00:51:15,730
+birinde de önlemler yazıyordu fakat
+
+1071
+00:51:15,730 --> 00:51:17,730
+en sonunda bahsetmek istedik aslında
+
+1072
+00:51:17,730 --> 00:51:19,730
+oraya ekledik ama
+
+1073
+00:51:19,730 --> 00:51:21,730
+ne yaptık biz az önce?
+
+1074
+00:51:21,730 --> 00:51:23,730
+Randomization'ı
+
+1075
+00:51:23,730 --> 00:51:25,730
+kapattık. Aslında onun kapalı olmaması.
+
+1076
+00:51:25,730 --> 00:51:27,730
+gerekiyor ve
+
+1077
+00:51:27,730 --> 00:51:29,730
+non executable
+
+1078
+00:51:29,730 --> 00:51:31,730
+stack yani
+
+1079
+00:51:31,730 --> 00:51:33,730
+siteyi non executable
+
+1080
+00:51:33,730 --> 00:51:35,730
+yapmamız gerekiyor ve
+
+1081
+00:51:35,730 --> 00:51:37,730
+stack protectörü de kapatmamalıyız.
+
+1082
+00:51:37,730 --> 00:51:39,730
+Yani aslında bunlar
+
+1083
+00:51:39,730 --> 00:51:41,730
+düşünülmüş. Evet hani
+
+1084
+00:51:41,730 --> 00:51:43,730
+derste de gördüğünüz bir istatistik vardı.
+
+1085
+00:51:43,730 --> 00:51:45,730
+Bizim de
+
+1086
+00:51:45,730 --> 00:51:47,730
+slide'ların başında size
+
+1087
+00:51:47,730 --> 00:51:49,730
+gösterdiğimiz bir istatistik vardı.
+
+1088
+00:51:49,730 --> 00:51:51,730
+O istatistikte de
+
+1089
+00:51:51,730 --> 00:51:53,730
+yani gördüğünüz gibi çok
+
+1090
+00:51:53,730 --> 00:51:55,730
+günümüze kadar gelmiş bu saldırı.
+
+1091
+00:51:55,730 --> 00:51:57,730
+Ama aslında hani
+
+1092
+00:51:57,730 --> 00:51:59,730
+geliştiricilerin buna daha çok
+
+1093
+00:51:59,730 --> 00:52:01,730
+dikkat etmesi gerekiyor.
+
+1094
+00:52:01,730 --> 00:52:03,730
+Örneğin burada az önce de bahsettiğimiz
+
+1095
+00:52:03,730 --> 00:52:05,730
+gibi string copy fonksiyonu
+
+1096
+00:52:05,730 --> 00:52:07,730
+için string and
+
+1097
+00:52:07,730 --> 00:52:09,730
+copy kullanılabilir.
+
+1098
+00:52:09,730 --> 00:52:11,730
+Ama
+
+1099
+00:52:11,730 --> 00:52:13,730
+geliştiriciler bunun önüne geçmeye çalışıyor.
+
+1100
+00:52:13,730 --> 00:52:15,730
+Onun dışında da çeşitli işletim
+
+1101
+00:52:15,730 --> 00:52:17,730
+sistemleri de bize bazı
+
+1102
+00:52:17,730 --> 00:52:19,730
+koruma yöntemleri sunuyorlar.
+
+1103
+00:52:19,730 --> 00:52:21,730
+Evet arkadaşlar
+
+1104
+00:52:21,730 --> 00:52:23,730
+burada kernel
+
+1105
+00:52:23,730 --> 00:52:25,730
+randomization vardı. Bu adresle
+
+1106
+00:52:25,730 --> 00:52:27,730
+adres space
+
+1107
+00:52:27,730 --> 00:52:29,730
+layout randomization aslında.
+
+1108
+00:52:29,730 --> 00:52:31,730
+Burada no exec stack'le de
+
+1109
+00:52:31,730 --> 00:52:33,730
+aslında şey yapıyoruz. Site'in
+
+1110
+00:52:33,730 --> 00:52:35,730
+executable olması özelliğini kaldırıyoruz.
+
+1111
+00:52:35,730 --> 00:52:37,730
+En sondaki stack guard da aslında o
+
+1112
+00:52:37,730 --> 00:52:39,730
+canary code derste gördüğünüz canary kodları
+
+1113
+00:52:39,730 --> 00:52:41,730
+sağlayan stack guard. Yani o gidiyor
+
+1114
+00:52:41,730 --> 00:52:43,730
+sizin site'inizdeki normal
+
+1115
+00:52:43,730 --> 00:52:45,730
+kendi program
+
+1116
+00:52:45,730 --> 00:52:47,730
+değişkeninin arasına canary kodlarını
+
+1117
+00:52:47,730 --> 00:52:49,730
+yerleştiriyor. Yani oraya özel kodlar yerleştiriliyor.
+
+1118
+00:52:49,730 --> 00:52:51,730
+Ve şu kontrol ediliyor program çalıştırılırken.
+
+1119
+00:52:51,730 --> 00:52:53,730
+Bu kodlar ezilmiş mi?
+
+1120
+00:52:53,730 --> 00:52:55,730
+Overwrite edilmiş mi? Eğer overwrite edilmişse
+
+1121
+00:52:55,730 --> 00:52:57,730
+diyor ki tamam burada bir
+
+1122
+00:52:57,730 --> 00:52:59,730
+art niyetli bir buffer overflow var.
+
+1123
+00:52:59,730 --> 00:53:01,730
+Dolayısıyla program çalışmaması gerekiyor,
+
+1124
+00:53:01,730 --> 00:53:03,730
+davranmaması gerekiyor deyip programı kapatıyor.
+
+1125
+00:53:03,730 --> 00:53:05,730
+Yani burada aslında modern
+
+1126
+00:53:05,730 --> 00:53:07,730
+işletim sistemleri bu üçünü birden kullanıyor.
+
+1127
+00:53:07,730 --> 00:53:09,730
+Buffer overflow'a karşı engellemek için.
+
+1128
+00:53:09,730 --> 00:53:11,730
+Dolayısıyla sizin de kendi programını
+
+1129
+00:53:11,730 --> 00:53:13,730
+Ubuntu'yu kurduğunuzda o skibit
+
+1130
+00:53:13,730 --> 00:53:15,730
+o skibit olması nedeniyle bu arada arkadaşlar
+
+1131
+00:53:15,730 --> 00:53:17,730
+o byte hesabını daha kolay
+
+1132
+00:53:17,730 --> 00:53:19,730
+bulabilmeniz.
+
+1133
+00:53:19,730 --> 00:53:21,730
+Kurduğunuzda bu üç özelliği birden
+
+1134
+00:53:21,730 --> 00:53:23,730
+kapatmanız gerekecektir.
+
+1135
+00:53:23,730 --> 00:53:25,730
+Aslında no exec stack sadece kapatmanız belki
+
+1136
+00:53:25,730 --> 00:53:27,730
+yeterli olabilir ama modern
+
+1137
+00:53:27,730 --> 00:53:29,730
+işletim sistemlerinin bu üçünü birden
+
+1138
+00:53:29,730 --> 00:53:31,730
+kullandığını aklınıza tutarsınız.
+
+1139
+00:53:33,730 --> 00:53:35,730
+Bunun dışında sunumla ilgili
+
+1140
+00:53:35,730 --> 00:53:37,730
+buffer overflow ile ilgili
+
+1141
+00:53:37,730 --> 00:53:39,730
+sorunlu olan varsa chat'e yazabilir.
+
+1142
+00:53:41,730 --> 00:53:43,730
+Biz bunları da kapatıp
+
+1143
+00:53:43,730 --> 00:53:45,730
+şöyle bir deneyelim eğer
+
+1144
+00:53:45,730 --> 00:53:47,730
+virtualbox açılırsa.
+
+1145
+00:53:53,739 --> 00:53:55,739
+Şimdi az önce neydi şu
+
+1146
+00:53:55,739 --> 00:53:57,739
+readme file'dan
+
+1147
+00:53:57,739 --> 00:53:59,739
+hemen şunu.
+
+1148
+00:53:59,739 --> 00:54:01,739
+Hocam herhalde şey yapacaksınız
+
+1149
+00:54:01,739 --> 00:54:03,739
+bunları kapatıp da öyle deneyeceksiniz.
+
+1150
+00:54:03,739 --> 00:54:05,739
+Bir deneyelim.
+
+1151
+00:54:05,739 --> 00:54:07,739
+Şöyle ben sıfırdan farklı bir değer
+
+1152
+00:54:07,739 --> 00:54:09,739
+gireceğim.
+
+1153
+00:54:09,739 --> 00:54:11,739
+Daha sonra da programımı
+
+1154
+00:54:11,739 --> 00:54:13,739
+şey yani
+
+1155
+00:54:13,739 --> 00:54:15,739
+hiçbir
+
+1156
+00:54:15,739 --> 00:54:17,739
+ek şeyim olmadan
+
+1157
+00:54:17,739 --> 00:54:19,739
+ayarımı olmadan derleyeceğim.
+
+1158
+00:54:19,739 --> 00:54:21,739
+Yine bana gets için bir
+
+1159
+00:54:21,739 --> 00:54:23,739
+şey de bulundu.
+
+1160
+00:54:23,739 --> 00:54:25,739
+Uyarı da bulundu.
+
+1161
+00:54:25,739 --> 00:54:27,739
+Şimdi hani isim vermedim ya
+
+1162
+00:54:27,739 --> 00:54:29,739
+file için. Onun için a.alt
+
+1163
+00:54:29,739 --> 00:54:31,739
+atıyor genellikle.
+
+1164
+00:54:31,739 --> 00:54:33,739
+Onu bir çalıştıralım.
+
+1165
+00:54:33,739 --> 00:54:37,539
+Az önceki
+
+1166
+00:54:37,539 --> 00:54:39,539
+olduğu gibi geldi.
+
+1167
+00:54:39,539 --> 00:54:41,539
+Şimdi buraya
+
+1168
+00:54:41,539 --> 00:54:43,539
+az önce yaptığımız trick
+
+1169
+00:54:43,539 --> 00:54:45,539
+olayını bir kullanalım.
+
+1170
+00:54:45,539 --> 00:54:47,539
+Bakalım olacak mı?
+
+1171
+00:54:53,840 --> 00:54:55,840
+Bakın 21 byte
+
+1172
+00:54:55,840 --> 00:54:57,840
+girdim password'ı ama
+
+1173
+00:54:57,840 --> 00:54:59,840
+bana uyarıyı
+
+1174
+00:54:59,840 --> 00:55:01,840
+verdi incorrect user name diye.
+
+1175
+00:55:01,840 --> 00:55:03,840
+Yani bu ayarları da
+
+1176
+00:55:03,840 --> 00:55:05,840
+sizin eğer buffer overflow
+
+1177
+00:55:05,840 --> 00:55:07,840
+yapmak istiyorsanız
+
+1178
+00:55:07,840 --> 00:55:09,840
+ayarlamanız
+
+1179
+00:55:09,840 --> 00:55:11,840
+gerekiyor. Şöyle
+
+1180
+00:55:11,840 --> 00:55:13,840
+tekrar chat'e bakalım.
+
+1181
+00:55:13,840 --> 00:55:15,840
+Evet tabi Çince olayı şu.
+
+1182
+00:55:15,840 --> 00:55:17,840
+Şu an gidip de açtığımızda
+
+1183
+00:55:17,840 --> 00:55:19,840
+oradaki hexadezimal kodları
+
+1184
+00:55:19,840 --> 00:55:21,840
+Çince anlayıp Çince çeviriyor. Yani editor'un
+
+1185
+00:55:21,840 --> 00:55:23,840
+kendi suçu. Normalde başka bir
+
+1186
+00:55:23,840 --> 00:55:25,840
+virtual açarsanız başka karakterler görebilirsiniz. Örneğin
+
+1187
+00:55:25,840 --> 00:55:27,840
+Notepad++ açarsanız orada
+
+1188
+00:55:27,840 --> 00:55:29,840
+böyle soru işaretleri görebilirsiniz. Bol bol
+
+1189
+00:55:29,840 --> 00:55:31,840
+none görebilirsiniz. Bu tamamen
+
+1190
+00:55:31,840 --> 00:55:33,840
+o editor'ün encodlaması ile alakalı bir şey.
+
+1191
+00:55:33,840 --> 00:55:35,840
+Bizim yazdığımız orada yazdığımız aslında
+
+1192
+00:55:35,840 --> 00:55:37,840
+Çince yazan şeyler hexadezimal kod.
+
+1193
+00:55:37,840 --> 00:55:39,840
+Bildiğimiz program byte byte yazılmış.
+
+1194
+00:55:39,840 --> 00:55:41,840
+Özel belirlenmiş kodlar.
+
+1195
+00:55:41,840 --> 00:55:43,840
+Bunun dışında başka soru ne?
+
+1196
+00:55:43,840 --> 00:55:45,840
+Bu sanal makineye kaç işlem çekileceği
+
+1197
+00:55:45,840 --> 00:55:47,840
+kaç ram kaç gigabyte
+
+1198
+00:55:47,840 --> 00:55:49,840
+artistik verdiniz?
+
+1199
+00:55:49,840 --> 00:55:51,840
+Yani çok önemli değil. Çok yüksek değil.
+
+1200
+00:55:51,840 --> 00:55:53,840
+Buradan ekranı görüyorsunuzdur
+
+1201
+00:55:53,840 --> 00:55:55,840
+umarım. Çok bir şey vermedik.
+
+1202
+00:55:55,840 --> 00:55:57,840
+6-7 gigabyte vermişiz.
+
+1203
+00:55:57,840 --> 00:55:59,840
+Onun dışında bir şey yok yani ram olarak.
+
+1204
+00:55:59,840 --> 00:56:01,840
+İşlemci olarak sanırım
+
+1205
+00:56:01,840 --> 00:56:03,840
+ortak paylaşılıyor.
+
+1206
+00:56:03,840 --> 00:56:05,840
+Çok bir şey vermedik yani. Zaten kullandığımız
+
+1207
+00:56:05,840 --> 00:56:07,840
+program parçaları küçük programlar.
+
+1208
+00:56:07,840 --> 00:56:09,840
+Çok kaynaklı şeyler değil. Ubuntu ekstra
+
+1209
+00:56:09,840 --> 00:56:11,840
+bir program kurmanıza da gerek yok. Direkt
+
+1210
+00:56:11,840 --> 00:56:13,840
+yani standart
+
+1211
+00:56:13,840 --> 00:56:15,840
+Ubuntu'yu 32 bit
+
+1212
+00:56:15,840 --> 00:56:17,840
+indirin, kurun.
+
+1213
+00:56:17,840 --> 00:56:19,840
+Ubuntu yetecek kadar disk alanı ayırsanız bile yeterli.
+
+1214
+00:56:19,840 --> 00:56:21,840
+Çünkü çok basit programlar.
+
+1215
+00:56:21,840 --> 00:56:23,840
+Megabyte boyutlarında ve ekstra bir
+
+1216
+00:56:23,840 --> 00:56:25,840
+kütüphane de gerek yok. Sadece özellikleri kapatıyorsunuz
+
+1217
+00:56:25,840 --> 00:56:27,840
+işlem sistemiyle beraber gene.
+
+1218
+00:56:27,840 --> 00:56:29,840
+Ödevlerle ilgili
+
+1219
+00:56:29,840 --> 00:56:31,840
+herhangi bir şey söylenmedi. Ödevleri nasıl verileceği ile
+
+1220
+00:56:31,840 --> 00:56:33,840
+ilgili herhangi bir şey yok.
+
+1221
+00:56:33,840 --> 00:56:35,840
+Ödevleri vereceğiniz
+
+1222
+00:56:35,840 --> 00:56:37,840
+ortamı kurmak için sizden belki bir VM ve Ubuntu
+
+1223
+00:56:37,840 --> 00:56:39,840
+isteriz. Çünkü bundan sonraki
+
+1224
+00:56:39,840 --> 00:56:41,840
+sunumların hepsini Ubuntu veya Kali
+
+1225
+00:56:41,840 --> 00:56:43,840
+üzerine devam ettireceğim.
+
+1226
+00:56:43,840 --> 00:56:45,840
+Siz de bir VM kurup Ubuntu kurarsanız
+
+1227
+00:56:45,840 --> 00:56:47,840
+içine veya Linux tabanlı herhangi bir
+
+1228
+00:56:47,840 --> 00:56:49,840
+sistem kurarsanız sizin menfaatiniz olur.
+
+1229
+00:56:49,840 --> 00:56:51,840
+Ama 32 bit olma zorunluluğu yok bunun.
+
+1230
+00:56:51,840 --> 00:56:53,840
+Diğerler için.
+
+1231
+00:56:53,840 --> 00:56:55,840
+Aslında bunun da 32 bit olma zorunluluğu yok.
+
+1232
+00:56:55,840 --> 00:56:57,840
+Sadece size daha kolay hesaplamanız açısından
+
+1233
+00:56:57,840 --> 00:56:59,840
+32 bit verdik. Çünkü
+
+1234
+00:56:59,840 --> 00:57:01,840
+64 bit yaptığımız zaman integer boyutları biliyorsunuz.
+
+1235
+00:57:01,840 --> 00:57:03,840
+Değişiyor.
+
+1236
+00:57:03,840 --> 00:57:05,840
+Stack size'ın genişliği de değişiyor.
+
+1237
+00:57:05,840 --> 00:57:07,840
+Byte'dan word'e geçiyor.
+
+1238
+00:57:07,840 --> 00:57:09,840
+Double double byte'e geçiyor yani.
+
+1239
+00:57:09,840 --> 00:57:11,840
+Dolayısıyla
+
+1240
+00:57:11,840 --> 00:57:13,840
+hesaplaması daha zor olacak diye biz 32 bit'ten devam ettik.
+
+1241
+00:57:13,840 --> 00:57:15,840
+Başka sorusu olan var mı?
+
+1242
+00:57:15,840 --> 00:57:24,110
+Sanırsan yok.
+
+1243
+00:57:24,110 --> 00:57:26,110
+Şöyle ekranı şey yapalım.
+
+1244
+00:57:26,110 --> 00:57:28,110
+Şöyle bir görelim.
+
+1245
+00:57:28,110 --> 00:57:30,110
+Buradan daha rahat göreceğiz çünkü.
+
+1246
+00:57:30,110 --> 00:57:34,159
+Sorunuz yoksa arkadaşlar
+
+1247
+00:57:34,159 --> 00:57:36,159
+her şeyde
+
+1248
+00:57:36,159 --> 00:57:38,159
+paylaşacağımızı
+
+1249
+00:57:38,159 --> 00:57:43,650
+söyledik.
+
+1250
+00:57:43,650 --> 00:57:45,650
+Sorusu olan yoksa arkadaşlar
+
+1251
+00:57:45,650 --> 00:57:47,650
+dinlediğiniz için teşekkür ederiz.
+
+1252
+00:57:47,650 --> 00:57:49,650
+Bugünlük bu kadar.
+
+1253
+00:57:49,650 --> 00:57:51,650
+Dediğim gibi bir sonraki dersi duyuracağım size.
+
+1254
+00:57:51,650 --> 00:57:53,650
+En az ders başlamadan önce duyuracağım.
+
+1255
+00:57:53,650 --> 00:57:55,650
+Avesis sayfamdan duyuracağım
+
+1256
+00:57:55,650 --> 00:57:57,650
+paylaşacağım belgeleri veya
+
+1257
+00:57:57,650 --> 00:57:59,650
+Sevgi Hoca'nın Avesis'ten paylaşırız.
+
+1258
+00:57:59,650 --> 00:58:01,650
+Avesis'lerimizi biliyor musunuz arkadaşlar?
+
+1259
+00:58:01,650 --> 00:58:03,650
+Biz şöyle isimlerimizi de yazalım.
+
+1260
+00:58:03,650 --> 00:58:05,650
+Ben [öğrenci].
+
+1261
+00:58:07,650 --> 00:58:09,650
+Direkt ismimizi ve Avesis'i
+
+1262
+00:58:09,650 --> 00:58:11,650
+yazarsanız yanına
+
+1263
+00:58:11,650 --> 00:58:13,650
+girebilirsiniz arkadaşlar.
+
+1264
+00:58:13,650 --> 00:58:15,650
+Fuat Hoca'mıza,
+
+1265
+00:58:15,650 --> 00:58:17,650
+Fuat Örgüm'e.
+
+1266
+00:58:17,650 --> 00:58:19,650
+Yanına Avesis yazdığımız zaman Avesis sayfalarımıza
+
+1267
+00:58:19,650 --> 00:58:21,650
+ulaşabilirsiniz.
+
+1268
+00:58:21,650 --> 00:58:23,650
+Hocam bir sonraki lab konumuz ne olacak acaba?
+
+1269
+00:58:23,650 --> 00:58:25,650
+Muhtemelen
+
+1270
+00:58:25,650 --> 00:58:27,650
+derste paralel olarak
+
+1271
+00:58:27,650 --> 00:58:29,650
+SQL injection'la
+
+1272
+00:58:29,650 --> 00:58:31,650
+başlarız, cross-site scripting'lere
+
+1273
+00:58:31,650 --> 00:58:33,650
+gireriz, password cracking'e
+
+1274
+00:58:33,650 --> 00:58:35,650
+gireriz ve
+
+1275
+00:58:35,650 --> 00:58:37,650
+address resolution protocol spoofing
+
+1276
+00:58:37,650 --> 00:58:39,650
+arp poisoning veya spoofing
+
+1277
+00:58:39,650 --> 00:58:41,650
+onları yaparız diye düşünüyorum.
+
+1278
+00:58:41,650 --> 00:58:43,650
+Tamamlarını netleştirmedim.
+
+1279
+00:58:43,650 --> 00:58:45,650
+Bu kadar.
+
+1280
+00:58:45,650 --> 00:58:47,650
+Yani aklıma gelen herhalde bunları yapacağız.
+
+1281
+00:58:47,650 --> 00:58:49,650
+Böyle planlıyız şu anda.
+
+1282
+00:58:49,650 --> 00:58:51,650
+Thiago Cardoso,
+
+1283
+00:58:51,650 --> 00:58:53,650
+Where can I find the documents for this class?
+
+1284
+00:58:53,650 --> 00:58:55,650
+In the same method, theoretical part.
+
+1285
+00:58:55,650 --> 00:58:57,650
+We are not involved with
+
+1286
+00:58:57,650 --> 00:58:59,650
+theoretical part but
+
+1287
+00:58:59,650 --> 00:59:01,650
+you can find our documents
+
+1288
+00:59:01,650 --> 00:59:03,650
+from our Avesis pages
+
+1289
+00:59:03,650 --> 00:59:05,650
+which you can find
+
+1290
+00:59:05,650 --> 00:59:07,650
+let me share
+
+1291
+00:59:07,650 --> 00:59:23,179
+hold on
+
+1292
+00:59:23,179 --> 00:59:25,179
+you can take
+
+1293
+00:59:25,179 --> 00:59:27,179
+our documents from these pages
+
+1294
+00:59:27,179 --> 00:59:29,179
+our other
+
+1295
+00:59:29,179 --> 00:59:31,179
+participants also shared
+
+1296
+00:59:31,179 --> 00:59:33,179
+these documents' links
+
+1297
+00:59:33,179 --> 00:59:35,179
+so you can take it from there.
+
+1298
+00:59:35,179 --> 00:59:37,179
+Başka sorusu
+
+1299
+00:59:37,179 --> 00:59:39,179
+olan var mı?
+
+1300
+00:59:39,179 --> 00:59:44,860
+Any other questions?
+
+1301
+00:59:44,860 --> 00:59:46,860
+Biz teşekkür ederiz arkadaşlar.
+
+1302
+00:59:46,860 --> 00:59:48,860
+Teşekkürler arkadaşlar.
+
+1303
+00:59:48,860 --> 00:59:50,860
+Hocam bitirmeden önce bu tür atakla
+
+1304
+00:59:50,860 --> 00:59:52,860
+implementasyonu bulabileceğimiz bir kaynak
+
+1305
+00:59:52,860 --> 00:59:54,860
+var mı hocam bildiğiniz?
+
+1306
+00:59:54,860 --> 00:59:56,860
+Ne için kaynak? Tekrar alabilir miyim?
+
+1307
+00:59:56,860 --> 00:59:58,860
+Mesela bildiğiniz gibi çok atak var işte. Derste de var.
+
+1308
+00:59:58,860 --> 01:00:00,860
+Falan görüyoruz. Hani bunları biz mesela
+
+1309
+01:00:00,860 --> 01:00:02,860
+lab sayımız kısıtlı olduğu için
+
+1310
+01:00:02,860 --> 01:00:04,860
+hepsini yapamayacağız gibi görünüyor.
+
+1311
+01:00:04,860 --> 01:00:06,860
+Ne tür ataklar mesela?
+
+1312
+01:00:06,860 --> 01:00:08,860
+Mesela heap için bir teknik görmüştük hocam derste
+
+1313
+01:00:08,860 --> 01:00:10,860
+mesela onu uygulamak için
+
+1314
+01:00:10,860 --> 01:00:12,860
+kodunu işte bu şey buffer overflow
+
+1315
+01:00:12,860 --> 01:00:14,860
+buffer overflow heap üzerinden
+
+1316
+01:00:14,860 --> 01:00:16,860
+yapılan şeyleri biz işlemedik şu anda. Onlar da var ama
+
+1317
+01:00:16,860 --> 01:00:18,860
+bizim şu an
+
+1318
+01:00:18,860 --> 01:00:20,860
+bugün planladığımız anlatımda
+
+1319
+01:00:20,860 --> 01:00:22,860
+stack stack üzerinden yapılan saldırı gördük.
+
+1320
+01:00:22,860 --> 01:00:24,860
+Heap üzerine yapılanlar da var.
+
+1321
+01:00:24,860 --> 01:00:26,860
+Onları da kendiniz
+
+1322
+01:00:26,860 --> 01:00:28,860
+bulabilirsiniz. Yani aslında
+
+1323
+01:00:28,860 --> 01:00:30,860
+şu an hani direkt önerebileceğimiz bir kaynak yok.
+
+1324
+01:00:30,860 --> 01:00:32,860
+Bir kaynak yok ama şey yapabilirsiniz
+
+1325
+01:00:32,860 --> 01:00:34,860
+Red Hat Akademi'ye bakabilirsiniz. Red Hat
+
+1326
+01:00:34,860 --> 01:00:36,860
+var. Bununla ilgili bir takım kuruluşlar
+
+1327
+01:00:36,860 --> 01:00:38,860
+var. Kali'nin forum sayfalarına bakabilirsiniz.
+
+1328
+01:00:38,860 --> 01:00:40,860
+Çünkü Kali tamamen siber güvenlik
+
+1329
+01:00:40,860 --> 01:00:42,860
+üzerine çalışan
+
+1330
+01:00:42,860 --> 01:00:44,860
+kişiler üzerinde
+
+1331
+01:00:44,860 --> 01:00:46,860
+kişiler tarafından geliştirilen ve onların
+
+1332
+01:00:46,860 --> 01:00:48,860
+komünitesi tarafından destek
+
+1333
+01:00:48,860 --> 01:00:50,860
+gören bir işlem sistemi. Onun forumlarında da
+
+1334
+01:00:50,860 --> 01:00:52,860
+değişik değişik sallar görebilirsiniz.
+
+1335
+01:00:52,860 --> 01:00:54,860
+Zaten bizim işleyeceğimiz bütün
+
+1336
+01:00:54,860 --> 01:00:56,860
+derste Ubuntu'da
+
+1337
+01:00:56,860 --> 01:00:58,860
+göstereceğim bütün her şeyin
+
+1338
+01:00:58,860 --> 01:01:00,860
+tüphanelerinin, bütün saldırı tiplerinin
+
+1339
+01:01:00,860 --> 01:01:02,860
+kaynakları Kali'de hazır olarak geliyor.
+
+1340
+01:01:02,860 --> 01:01:04,860
+Yani siz Kali kurduğunuz zaman
+
+1341
+01:01:04,860 --> 01:01:06,860
+ekstra bir kurulum yapmanıza bile gerek kalmıyor.
+
+1342
+01:01:06,860 --> 01:01:08,860
+O yüzden bu alanda çalışmak istiyorsanız,
+
+1343
+01:01:08,860 --> 01:01:10,860
+meraklıysanız, size Kali'yle
+
+1344
+01:01:10,860 --> 01:01:12,860
+başlangıç yapmanızı tavsiye ederim.
+
+1345
+01:01:12,860 --> 01:01:14,860
+Dediğim gibi saldırıları ve turlarını
+
+1346
+01:01:14,860 --> 01:01:16,860
+görmek istiyorsanız da Kali'nin forum sitelerinde
+
+1347
+01:01:16,860 --> 01:01:18,860
+Red Hat Akademi'ye falan bakabilirsiniz.
+
+1348
+01:01:18,860 --> 01:01:20,860
+Bundan sonra işleyeceğim şeyler
+
+1349
+01:01:20,860 --> 01:01:22,860
+zaten bir web application üzerinde
+
+1350
+01:01:22,860 --> 01:01:24,860
+olacak. Onun üzerinden saldırılar üzerinden gidecek.
+
+1351
+01:01:24,860 --> 01:01:26,860
+Onu herhangi bir ortama kurabilirsiniz. Onda sorun yok.
+
+1352
+01:01:26,860 --> 01:01:28,860
+Bakma sorusu olan var mı?
+
+1353
+01:01:28,860 --> 01:01:34,000
+Tamam. O zaman
+
+1354
+01:01:34,000 --> 01:01:36,000
+başka sorusu falan yok herhalde.
+
+1355
+01:01:36,000 --> 01:01:38,000
+Yine biraz daha bekleyelim. Sanırım yok.
+
+1356
+01:01:38,000 --> 01:01:40,000
+Biz teşekkür ederiz arkadaşlar.
+
+1357
+01:01:40,000 --> 01:01:42,000
+Biz teşekkür ederiz arkadaşlar dinlediğiniz için.
+
+1358
+01:01:42,000 --> 01:01:44,000
+Umarım yararlı olmuştur sizler için.
+
+1359
+01:01:44,000 --> 01:01:49,420
+Bitiriyoruz öyleyse.
+
+1360
+01:01:49,420 --> 01:01:51,420
+Sağlıklı günler arkadaşlar. Hoşça kalın.
+
+1361
+01:01:51,420 --> 01:01:53,420
+Hoşça kalın.
+
+1362
+01:01:53,420 --> 01:01:55,420
+Bu arada eğer İzmir'de olan varsa
+
+1363
+01:01:55,420 --> 01:01:57,420
+çok geçmiş olsun arkadaşlar.
+
+1364
+01:01:57,420 --> 01:02:02,690
+Hoşça kalın.
