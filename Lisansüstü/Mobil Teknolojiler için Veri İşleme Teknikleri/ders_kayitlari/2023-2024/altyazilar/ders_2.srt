@@ -1,0 +1,2995 @@
+1
+00:05:15,636 --> 00:05:16,796
+Arkadaşlar, hoş geldiniz.
+
+2
+00:05:17,956 --> 00:05:19,676
+Günaydın hocam, hayırlı günler.
+
+3
+00:05:20,516 --> 00:05:22,656
+Hastadınız, geçmiş olsun, nasılsınız?
+
+4
+00:05:23,876 --> 00:05:27,915
+Yani şimdi şöyle, bu aralar biraz şanssızlık üzerinde.
+
+5
+00:05:28,656 --> 00:05:33,536
+Geçen hafta bürültüm, baya kötü oldum, hatta antibiyetiye başladım.
+
+6
+00:05:34,596 --> 00:05:40,256
+Üzerine bir de herhalde kızımdan geçen bir virüs ya da zehirlenme oldu geçen akşam.
+
+7
+00:05:41,036 --> 00:05:43,116
+Zor bir gece geçirdik tüm ailecek.
+
+8
+00:05:43,668 --> 00:05:53,307
+O yüzden şu an daha iyiyim. Ama genel olarak bir 10 gündür sıkıntılı bir süreç geçirdik diyebilirim.
+
+9
+00:05:53,307 --> 00:06:03,307
+Aslında [öğrenci]'nin de istediği oldu. Uzaktan bir ders yapsak diyordu. Hatta [öğrenci]'nin istediği nötesinde oldu. Geçen haftada yapamadık.
+
+10
+00:06:03,307 --> 00:06:10,747
+O yüzden anlayışınız için teşekkür ederim. Bu hafta böyle yapıyoruz. Haftaya bir aksınık olmazsa.
+
+11
+00:06:10,831 --> 00:06:35,951
+Sınıfta olacağız yine. Umarım sizler de iyisinizdir. Şimdi derse başlayacağız hemen. Ben bu slide'ları paylaşacağım. Yine aynı şekilde katılımınızı bekliyorum. Ders içerisinde sorularım olacak. Mümkün olduğunca interaktif olarak devam etmek tercihi.
+
+12
+00:06:36,351 --> 00:06:55,312
+Tabi biraz tempolik şekilde gidip geçtiğimiz haftayı da telafi etmemiz gerekecek. Bir iki hafta konuları yetiştirmek adına hızlı ilerlediğimiz bölümler olacak. Sormak istediğiniz sorular olursa memnuniyetle cevaplayacağım. Şimdi ben ekran paylaşım yapayım.
+
+13
+00:07:08,660 --> 00:07:10,660
+[öğrenci] görebiliyorsunuz. Doğru.
+
+14
+00:07:12,160 --> 00:07:14,160
+Evet hocam, ekran geldi.
+
+15
+00:07:14,160 --> 00:07:15,660
+Tamam, harika.
+
+16
+00:07:16,660 --> 00:07:20,160
+Şimdi en son mobil uygulama geliştirme tekniklerini konuşuyorduk.
+
+17
+00:07:20,160 --> 00:07:22,160
+Mobil işletim sistemlerini konuşmuştuk.
+
+18
+00:07:22,160 --> 00:07:28,160
+Burada mobil uygulamaların çeşitli kategorilerini görüyorsunuz.
+
+19
+00:07:28,160 --> 00:07:32,660
+Bugün birçok alt kategoride...
+
+20
+00:07:33,076 --> 00:07:53,696
+Çok hayatımızı etiketen uygulamaya da karşı karşıyayız ama en dominant olanı ve liderliği her geçen sene pekişlerinin oyun alanı. Oyun alanı getiri olarak da yüksek bir alan olduğu için burada çalışmalar yoğunlaşmıştır. Hatta start-up firmaların önemli bir bölümünde oyun alanında.
+
+21
+00:07:54,420 --> 00:08:02,700
+girişimde bulunuyorlar. Burada tabii Unity ön plana çıkıyor. Unity'lerin çok oyun geliştiriliyor.
+
+22
+00:08:03,440 --> 00:08:13,639
+Tabii onun arkasından işte Business Education Lifestyle gibi günlük hayatımızı yakından etkileyen alanlar var.
+
+23
+00:08:13,639 --> 00:08:21,300
+Niye bu uygulama kategorilerini konuşuyoruz? Şu yüzden yani bunların sıralaması çok fark eder mi diye sorabilirsiniz.
+
+24
+00:08:21,839 --> 00:08:29,839
+Bir mobil uygulama geliştirecekseniz, öncelikle hangi alana hitap ettiğinizi belirlememiz gerekiyor.
+
+25
+00:08:29,839 --> 00:08:37,839
+Bu baştan vereceğiniz karar daha sonra ilerleyen zamanlarda o uygulamanın marketteki tanıtımından tutun.
+
+26
+00:08:38,384 --> 00:09:03,804
+Onunla ilgili belirleyeceğiniz keywordlar, kişiler aradığında önünüze gelmesi hepsi etkili oluyor. Artı bir de dünyanın çeşitli bölgelerinde geliştirdiğiniz uygulamanın farklı kullanıcılar tarafından ilgi gördüğü yerler var. Mesela bir Kore'de bir uygulama tutarken Amerika'da tutmayabiliyor.
+
+27
+00:09:04,724 --> 00:09:23,964
+Bu analizleri iyi yapmak gerekiyor. Sadece teknik olarak iyi bir uygulama geliştiriyor olmanız yetmiyor. Mobil dünyada artık çok fazla sayıda uygulama olduğu için yeni uygulamanızın başarılı olabilmesi için bu analizleri daha net bir şekilde yapmamız gerekiyor.
+
+28
+00:09:32,720 --> 00:09:39,960
+Bir şirket kurdular ve burada Mental Up isimli bir uygulama yarattılar.
+
+29
+00:09:39,960 --> 00:09:51,420
+Ve bu uygulama küçük çocukların, okul öncesi ve okul çağındaki çocukların gelişimine hızlandırmak, gelişimine katkı sağlamak amacıyla,
+
+30
+00:09:52,080 --> 00:10:00,039
+işte çeşitli oyunlar vasıtasıyla onlara destek olacak bir uygulama yarattılar.
+
+31
+00:10:00,467 --> 00:10:12,147
+Herhalde bu işe başlayalı 15 seneyi bulmuştur. Şu an bildiğim kadarıyla İngiltere'ye de açılmışlar da en son orada da bir şeyler yaptığı için şu an.
+
+32
+00:10:12,147 --> 00:10:23,347
+Aslında onlar bu işe girdiklerinde çok fazla karşılığı yok tuttu uygulamanın ve ilk etapta rakipleri de yok gibi gözüküyordu.
+
+33
+00:10:27,408 --> 00:10:44,067
+Kabul edilme süreci komüniti tarafından uzun sürdü. Çeşitli okullara gittiler, doktorlarla uygulamanın daha iyi olabilmesi için görüştüler, o çocuklara daha iyi nasıl dokunabilecekler konusunda bilgiler aldılar.
+
+34
+00:10:52,768 --> 00:11:01,488
+Nasıl tercih edilebileceği ve görülebileceği noktasında bile çok değişik hikayeler var. Bunları deniyorlar.
+
+35
+00:11:01,488 --> 00:11:12,768
+İşte o uygulamaya ait konularda bilgi paylaşan bir web sitesi hazırlamak, o web sitesi üzerinden uygulamaya yönlendirmek kullanıcıları gibi değişik taktikler var. O yüzden bu tarz start-up...
+
+36
+00:11:13,172 --> 00:11:22,172
+Özellikle şirketlerinde mobil uygulamayı hayata geçirecekseniz, teknik ekip kadar bu işlere de kafa yorulması gerekiyor.
+
+37
+00:11:22,172 --> 00:11:31,172
+Burada 2021 yılında yapılan bir anket, daha doğrusu araştırma sonucunda, derilen rakamlar var.
+
+38
+00:11:31,172 --> 00:11:37,172
+Günlük olarak bir mobil devise de doğru saatlik bir süre ortalama geçirildi.
+
+39
+00:11:37,296 --> 00:12:00,076
+Tespit edilmiş. İşte bunun yüzde kırk dördünü sosyal medya uygulamaları yüzde yirmi altısının eğlence uygulamaları oluşturuyor. Bunlar da neredeyse yüzde yetmişi demek. Böyle baktığınızda bu taraftaki uygulamaların daha dominant olduğunu.
+
+40
+00:12:00,495 --> 00:12:16,615
+Görebiliyorsunuz ve birçok kişi de buradaki açığı kullanmaya çalışıyor. Ama rekabet ettiğiniz uygulamaların sayısı ve gücü yüksek olduğu için bu anlamda değişik bir şeyler getirmeniz gerekiyor.
+
+41
+00:12:27,827 --> 00:12:30,648
+Temel olarak belli fikirler numarıklılarında ayrışıyorlar.
+
+42
+00:12:31,148 --> 00:12:40,687
+YouTube'da daha çok video paylaşımının planı çıkarken, Twitter tarafında hızlı bir mesaj paylaşımının planı çıkıyor.
+
+43
+00:12:41,148 --> 00:12:43,427
+Instagram tarafında daha çok hayatımızdan kararlar çıkıyor.
+
+44
+00:12:43,587 --> 00:12:45,307
+Ama bu uygulamalar da evrildi.
+
+45
+00:12:45,768 --> 00:12:51,127
+Uygulamalar da şu an amaçlarının ötesine geçen bir kullanım şeklinde bürüldü.
+
+46
+00:12:51,228 --> 00:12:54,528
+Örneğin YouTube'da artık bir nevi televizyon kanalları var.
+
+47
+00:12:54,932 --> 00:13:04,792
+Instagram tarafında daha çok ürünlerin reklamına yönelik içerikle karşılaşıyorsunuz.
+
+48
+00:13:04,792 --> 00:13:07,792
+Twitter'da bir nevi...
+
+49
+00:13:08,467 --> 00:13:24,727
+Gazeteciliğin kişisel hali gibi değerlendirebilirsiniz. Bunların altında kirli veriler, uygunsuz içerikler olabiliyor. Bilgisayar Mühendisliği tarafı özellikle son yıllarda bu tarafta çok uğraşıyor.
+
+50
+00:13:34,035 --> 00:13:48,235
+Ne diyelim, atılan tweetlerin analiz edilerek örneğin bir tane çalışma şunu yapıyordu çok enteresan, bir kişinin attığı tweetler sonrasında ne kadar intihara meyilli oldu.
+
+51
+00:13:48,692 --> 00:14:06,192
+Çok enteresan bir bakış açısı ama baktığınızda bazı insanların son yıllarda özellikle bu şekilde hayatının son verdiğini görebiliyorsunuz. Onların tweetlerini incelediğinizde bunu daha önceden tespit etme şansınız var.
+
+52
+00:14:08,692 --> 00:14:13,912
+Çok fazla sayıda çalışma sosyal medya içerikleri üzerinde gerçekleştiriliyor.
+
+53
+00:14:14,652 --> 00:14:25,692
+Ve birçok test konusunda gerek doğal dil işkanı tarafında, gerekse görüntü işkanı, video işkanı tarafında çalışılan konular.
+
+54
+00:14:26,312 --> 00:14:31,932
+Sizlerin bu noktada söyleyeceği örnek uygulamalar olabilir mi diye size söz vereyim.
+
+55
+00:14:41,875 --> 00:14:45,615
+Veçin rândar, s-ı suntea motor者.
+
+56
+00:14:47,615 --> 00:14:48,735
+Teyze çiğme.
+
+57
+00:14:59,028 --> 00:15:06,348
+Hiç karşılaştığınızda yoruluyorkun arkadaşlar? Değişik tez konusunda. Ben bir örnek vereyim isterseniz.
+
+58
+00:15:06,348 --> 00:15:17,248
+Mesela bu finansal alanda tahmin yapmak, doların ne kadar olacağını, işte borsanın nereye gittiğini tahmin yapmak çok önemli.
+
+59
+00:15:17,628 --> 00:15:21,348
+Trend analizleri var klasikleşmiş, istatistiksel yöntemlerle.
+
+60
+00:15:22,067 --> 00:15:29,788
+Teknik analizler yapılıyor ve destek noktası, direnç noktası, kırılım noktaları belirleniyor.
+
+61
+00:15:29,788 --> 00:15:40,648
+Ama bizim ülkemizde, özellikle bizim gibi ülkelerde gidişatı sadece ekonomik indikatörler belirlemiyor.
+
+62
+00:15:41,487 --> 00:15:45,107
+Daha çok belirli demeçler sonrasında.
+
+63
+00:15:45,567 --> 00:16:01,007
+Belirli kararlar sonrasında dolar ya da döviz ya da herhangi bir el soruma aşağı ya da yukarı yönlü hareketine devam edebiliyor. Bu noktada ne yapılabilir?
+
+64
+00:16:19,028 --> 00:16:43,947
+Peki, o zaman ben devam edeyim. Ama bunu da bir kenara yazıyorum. Hiçbirinizden ses çıkmıyor olması çok sempatik bir durum değil. Şimdi bununla ilgili bir test çalışması için yola çıkmıştık ama öğrencimiz yük dışına gitmeye kararlandı. Özellikle Twitter.
+
+65
+00:16:44,532 --> 00:17:05,771
+tarafında ya da gazete tarafında verilen demeçlerin, haberlerin içeriklerinin incelenerek doların ya da dövizin ya da borsların giriş altını teknik indikatörler dışında tahmin etmek istediğimiz şeylerden bir tanesi. Çünkü gerçekten çok belirleyici oluyor.
+
+66
+00:17:08,372 --> 00:17:21,092
+Bu nedenle biz genel olarak artık bu tür tahminlere multi-feature space dediğimiz, çoklu uzaydan topladığımız bilgilerle karar vermeye çalışıyoruz.
+
+67
+00:17:21,192 --> 00:17:28,372
+Bu çoklu uzay mevzusu günümüzde daha yaygın kullanılmaya başlandı. Bununla ilgili birkaç örnek vermek gerekirse...
+
+68
+00:17:29,008 --> 00:17:49,468
+Bizim yaptığımız bir başka projede de bu bakış açısından kullandık. Bunu hatta TÜBİTAK projesi olarak yapmıştık ve yeni kapattık. Trafik akış hızı tahmini. Normalde sadece hız bilgilerini kullanıyorsunuz. Ama biliyorsunuz ki bunları etkileyen meteorolojik nöbirler var.
+
+69
+00:17:50,895 --> 00:18:16,895
+Özellik, özetlik uzaylarından bir tanesi bu. İkincisi, burayı etkileyen kaza bilgileri var. Kazanın trafiğe etkisini biliyoruz. Üç, yol bakım çalışmaları. Dört, etkinlikler. Yine işte bir maç, bir konser, bir miting bunları etkileyebiliyor. Yani bugün bu tür çalışmalar yürüttüğümüzde...
+
+70
+00:18:16,976 --> 00:18:33,136
+Standart tahmin öz nitelikleri kullanmak yerine dolaylı yoldan etkileyen ya da doğrudan etkileyen ama kullanılmamış öz nitelik uzaylarını kullanmayı denemek çok çok önemli.
+
+71
+00:18:33,136 --> 00:18:43,136
+Bu anlamda da yapacağımız çalışmalarda bakış açınızı geliştirip daha önce yapılmış...
+
+72
+00:18:43,955 --> 00:18:54,755
+Ama hesaba katılmamış ya da hesaba katılması zor özlü teklifleri de ilişkilendirmek başarınızı çok ciddi oranda, olumlu yönde etkiliyor genellikle.
+
+73
+00:18:54,755 --> 00:19:07,755
+Bu doğruluğunda da bundan sonraki çalışmalarınızda, tezgilerinizde vs. de bu çoklu uzay mantığını uygulamanız...
+
+74
+00:19:08,096 --> 00:19:13,735
+Veya hesaba katmanız size yeni bakış açıları getirecektir diye düşünüyorum.
+
+75
+00:19:15,476 --> 00:19:28,076
+Devam edelim. Bu da yine 2016 yılından bir örnek. Özellikle aradaki besleneyi de görmek adına baktığımızda yine belirgin bir şekilde oyun...
+
+76
+00:19:28,180 --> 00:19:43,960
+Sektörünün oyun uygulamalarının ön planda olduğunu ve sosyal net ve network uygulamalarının hemen arkasından geldiğini görüyorsunuz. Bu nedenle de bu alandaki aslında sayılacak girişim çok daha fazla.
+
+77
+00:19:43,960 --> 00:19:45,960
+Şimdi gelelim.
+
+78
+00:19:47,124 --> 00:20:07,543
+Bu mobil uygulamalar dünyasında ya da mobil işletim sistemlerinde yaşanan sorunlara, burada en temel sorunlardan bir tanesi çok fazla sayıda device var.
+
+79
+00:20:07,543 --> 00:20:14,543
+Ve bu cihazlar farklı ekran çözümlülüklerine, farklı ekran boyutlarına sahipler.
+
+80
+00:20:14,996 --> 00:20:37,996
+Farklı batarya seriyelerine sahipler. Bu ne demek? Bu sizin geliştirdiğiniz mobil uygulamanın. Özellikle uygulamanın butonların yerleşimi noktasında, uygulamanın görünmesi noktasında çok daha...
+
+81
+00:20:39,892 --> 00:21:01,892
+Stabil bir dizayna ihtiyaç duyması demek. Eskiden 5 sene önceye kadar bununla ilgili çok ciddi bir problemler yaşanıyordu ve bir uygulama farklı ekran boyutlarında, farklı görünümlüklerle kullanıcıyı çok da tatmin etmeyen bir seviyeye sahipti. Ama daha sonra işte gerek Android'in Material Design yapısı...
+
+82
+00:21:01,971 --> 00:21:21,971
+Gerekse de bu tarafta ortaya atılan yeni fikirler doğrultusunda standart bir kullanım haline geldi. Bunlardan bir tanesi de biliyorsunuz mobil web uygulama geliştirme. Yani bir başka de işlemi. Bu bizim...
+
+83
+00:21:24,468 --> 00:21:37,948
+Tabletteki ekrana göre, telefondaki ekrana göre ya da kullandığınız bilgisayardaki ekrana göre sayfanın kendi kendini konumlandırıyor olması. Bu yaklaşıma ne diyoruz biz?
+
+84
+00:21:40,948 --> 00:21:42,088
+Responsive olması.
+
+85
+00:21:42,088 --> 00:21:50,428
+Evet, Responsive Design. Bu Responsive Design özellikle işte işte web 5D delilikte çok yoğun bir şekilde konulmaya başlandı. Bu bir mobil web.
+
+86
+00:21:50,836 --> 00:22:15,836
+Uygulama geliştirme tekniğini konuşuyorsak, aslında web geliştirme, web uygulaması geliştirmekten farklı bir şey değil. Responsive Design özelliğini kullanabildiğimiz bir teknik olmasından da değil. Bu sayede telefonda da siz uygulamayı düzgün bir şekilde görüntülerken, büyük bir bilgisayar ekranına geçtiğiniz zaman da yine aynı şekilde bu Responsive Design'ın...
+
+87
+00:22:16,852 --> 00:22:29,912
+getirdiği avantajlardan fayda oluyorsunuz. Peki, HTML teknolojisi uzun yıllardır var. HTML5 bizden de getirdi. Bu konuda ne söyleyebilirsiniz?
+
+88
+00:22:35,827 --> 00:22:47,768
+Hocam aslında hem HTML5'in hem de JavaScript'in artık bir kullanıcı tarafında bir sonucu gibi çalışıyor olmasının avantajı birleşmiş gibi oldu bu noktada.
+
+89
+00:22:48,127 --> 00:23:00,427
+Dolayısıyla bir web sayfası hazırlarken artık karşı tarafta yani client ile yapabildiğimiz işlerin kapasite olarak genişlemesi her şeyi yapabilmemizi sağladı aslında.
+
+90
+00:23:03,827 --> 00:23:15,028
+sunucuda hazırlanan ve karşı tarafa gönderilen bir web sayfasını görüntülemek yerine artık birçok işlemi uygulama kullanır gibi tarayıcı üzerinde kullanıcılar yapabiliyor.
+
+91
+00:23:15,028 --> 00:23:20,627
+Yani HTML5'in ve JavaScript'in bir araya gelmesi burada çok avantajlı olur aslında.
+
+92
+00:23:20,788 --> 00:23:36,468
+Evet, çok güzel bir tarif oldu. Teşekkürler [öğrenci]. Gerçekten bugün sunucu tarafında yaptığımız birçok işi hem standartlaştırmak adına hem de klantin kabiliyetlerini arttırmak adına HTML5 büyük bir adım oldu.
+
+93
+00:23:36,468 --> 00:23:48,387
+JavaScript ile birlikte de kullanıldığında bugün birçok noktada artısını görüyoruz. Özellikle multimedya alanında katkı sağlığını söylemek lazım.
+
+94
+00:23:48,788 --> 00:24:01,788
+Bu da ki, html sürümleri multimedyanın kullanımını çok zorlaştırıyordu ki hatta bunun karşılığı neydi? Daha önce html meşhurken. Bugün ölü teknoloji olan.
+
+95
+00:24:05,172 --> 00:24:30,971
+Flash teknolojisi HTML5.0'nun yerini aldı ve standart bir şekilde kullanıma arttı. Hatta Flash kullanımı sayesinde zamanında çok fazla kaynak tüketimli olayısıyla bazı web sitelerin açılma süresinin uzun sürmesi gibi yüklenirken bundan kaynaklı hataların oluşması gibi sorunlar yaşıyorduk. Bugün bunların çoğunluğu sırasına gelmiş durumdayız. Ve client tarafındaki yetenekleri arttırmış durumdayız.
+
+96
+00:24:31,476 --> 00:24:33,056
+Bu?
+
+97
+00:24:33,875 --> 00:24:47,615
+Ötesinde, işte Divan Çeşitliğinden bahsetmiştik. Operating System Fragmentation dediğimiz aslında işte mobil işletim sistemlerindeki farklılıklar da söz konusu ama bu farklılıklar günlükte azalıyor.
+
+98
+00:24:47,615 --> 00:25:00,288
+Bugün iki temel işletim sistemi, bir de yan işletim sistemi kayı ortası olmak üzere bu işletim sistemleri üzerinde dönüyor ve daha stabil bir dünyadan bahsedebiliyoruz. Bir dönem...
+
+99
+00:25:00,288 --> 00:25:17,267
+Windows'un ve BlackBerry'nin olduğu dönemde mobil uygulamaların konumlandırılmasıyla ilgili de çeşitli sıkıntılar yaşanıyordu. Özellikle bu platformlarda uygulamaların diğer platformlarındaki yeteneklerini ortaya koyması açısından sıkıntılar vardı.
+
+100
+00:25:17,267 --> 00:25:24,267
+Ve kullanıcılar bu yüzden bu işletim sistemi yüklü telefonları çok tercih etmiyorlardı. Bir dönem bir...
+
+101
+00:25:25,076 --> 00:25:32,396
+Atak yapıldı ama arkası gelmediği için yavaş yavaş sorun olarak ortadan kalkmış oldular.
+
+102
+00:25:33,676 --> 00:25:37,556
+Bunları geçtiğimiz hafta yani iki hafta önce bunları konuşmuştuk.
+
+103
+00:25:37,556 --> 00:25:39,556
+İşte Native Web'ten bahsetmiştik.
+
+104
+00:25:39,556 --> 00:25:42,196
+Hibrit App'i konuştuk, Cross Platform.
+
+105
+00:25:42,675 --> 00:25:47,095
+Bunları mobil kullanma geliştirme teknikleri olarak adlandırmıştık.
+
+106
+00:25:47,095 --> 00:25:54,155
+Burada native application'larda daha çok gördüğümüz bizim yapısal dil dediğimiz,
+
+107
+00:25:54,155 --> 00:26:00,515
+ya da nesneye dayalı programlama dili dediğimiz diller alt planda oluşacak şekilde kullanılıyor.
+
+108
+00:26:00,515 --> 00:26:08,915
+Web-based ise HTML ve CSS'ler ve JavaScript dili hemen hemen bütün web teknolojilerinde ağırlıkla kullanılıyor.
+
+109
+00:26:09,039 --> 00:26:27,039
+Hibrit App'lerle de o gün de konuşmuştuk. Native bir konteynerden bahsettik. Bu bize uygulamanın markete yüklenebilmesini ve oradan indirilebilmesini sağlarken aynı zamanda...
+
+110
+00:26:27,539 --> 00:26:55,519
+Öğrenilmesi kolay, uygulanması kolay olan web teknolojileriyle ilgili de uygulamayı geliştirme imkanı sağlıyor. Aslında yukarıdaki iki yapının en temel özelliklerini bir arada kullanmayı mümkün kılıyor. Ne kadar yaygın? Çok yaygın olduğunu söyleyemeyiz. Bu noktada belirleyici olan uygulamanın ne ihtiyacı olduğu ve buna uygulamanın ihtiyacına göre karar veriyoruz.
+
+111
+00:26:55,539 --> 00:27:10,539
+Eğer cihazın teknik özelliklerini, kamerasını, sensörlerini vesaire yoğun bir şekilde kullanmak ya da performans kaygınız yoksa o zaman native application'a çok da ihtiyaç duyulmuyorsunuz.
+
+112
+00:27:19,728 --> 00:27:40,508
+Diğer seçenekler tercih edilebilir oluyor. Cross Platform uygulama geliştirmelerinde de aynı şey var. Hızlı bir şekilde bir fikri ortaya çıkarmak istiyorsanız da iki platformda da aynı anda bilinir olmak istiyorsanız Native ile uğraşmaktan çok Cross Platform'a dönebiliyorsunuz ki burada iki tane lider.
+
+113
+00:27:40,943 --> 00:27:48,244
+Son dönemde ortaya çıkan ve domine eden diğerlerinin önüne geçen react metible flutter uygulamaları var.
+
+114
+00:27:48,660 --> 00:28:16,660
+Peki, cross-platform tool'lara şöyle bir bakacak olursak. Bir kere burada cross-platform tool'ların bize sağladığı avantajlara baktığımızda birincisi bir uygulama geliştirme için yüksek yeteneğe sahip yazılımcılara ihtiyacımız yok. Daha standart bir kişiyle native konusunda bilgi sahibi olması da uygulama çıkartma potansiyelimiz var.
+
+115
+00:28:16,660 --> 00:28:23,660
+İkincisi daha düşük, daha az kod yazarak bunu yapma şansımız var.
+
+116
+00:28:34,900 --> 00:28:48,900
+Kod ile çalışıyor olması ki bunu Python ve C ile karşılaştırabiliriz. Python'da 3 satırda yazdığınızı, C'de belki birimi 30 satırda yazıyorsunuz. Aynı mantık cross-platformlar için de geçerli.
+
+117
+00:28:48,900 --> 00:29:01,900
+Bir de tabii ki tek bir kez yazıyorsunuz. Birden fazla platform için kod üretmiş oluyorsunuz. Bu da ürettiğiniz kodun küçülmesini sağlıyor.
+
+118
+00:29:02,324 --> 00:29:06,324
+Doğal olarak hızlı bir şekilde geliştiriyorsunuz.
+
+119
+00:29:06,324 --> 00:29:10,048
+Ve özellikle...
+
+120
+00:29:10,048 --> 00:29:31,488
+Native'de oluşabilecek versiyon değişimlerindeki her iki platform için sıkıntı bakım maliyetlerini yükseltiyor. Ama cross-platform da bu daha stabil bir şekilde devam ediyor ve tek bir noktadan yönettiğimiz için uzun vadeli bakım maliyetlerimiz düşüyor.
+
+121
+00:29:32,500 --> 00:29:44,179
+Burada özellikle ilgili işletim sisteminin API'ine yönelik spesifik bilgi kullanıma ihtiyacı da azalıyor.
+
+122
+00:29:45,460 --> 00:29:52,700
+Meytin yazdığımız zaman donanık o API'lerle ilgili daha fazla bilgi sahibi olmanız gerekiyor.
+
+123
+00:29:54,700 --> 00:29:59,700
+Baktığınızda daha fazla kişiye ulaş...
+
+124
+00:30:00,000 --> 00:30:25,000
+Hem de dağıtım noktasında da daha hızlı bir dağıtım gerçekleştiği için her şey çok olumlu gözüküyor. Cross Platform tarafında. Bunu daha önce de söyledi. Cross Platform özellikle performans açısından daha fazla...
+
+125
+00:30:25,844 --> 00:30:49,676
+Kod boyutu üretebilir, daha fazla enerji tüketebilir. Yaptığınız işe bağlı olarak belli yetenekleri native kadar implemente etmeyebilir. Örneğin, bir sensör kullanımı, bir kamera kullanımı söz konusu olduğu zaman ki bunların...
+
+126
+00:30:49,683 --> 00:31:17,383
+API'leri de ilgili platformlar tabii ki, her geçen gün arttırılıyor sayısın. Yani cross platformlar bir kovunu yapabiliyorlar. Ama daha low level işler yapacaksanız, cross platformlar orada yavaş yavaş size kullanıcı deneyimi anlamında da sıkıntılar yaratmaya başlıyor. En azından kullanım anlamında daha fazla enerji tüketimi gibi konularda.
+
+127
+00:31:17,683 --> 00:31:19,683
+sıkıntılar çıkartan geliyor.
+
+128
+00:31:21,983 --> 00:31:26,743
+Burada cross-platform nasıl karar vereceksiniz? Onlarla ilgili bilgiler var.
+
+129
+00:31:27,743 --> 00:31:34,243
+Tabii kaç tane işletim sistemini desteklediği önemli ama artık bugün bu çok büyük bir kriter olmak.
+
+130
+00:31:34,804 --> 00:31:47,183
+Tam çıktı çünkü zaten çok sayıda artık mobil işletim sıkımı yok. Eskiden Blackberry, Windows Mobile bir soru işlattı ama böyle bir sıkıntı yok.
+
+131
+00:31:47,183 --> 00:31:55,683
+Tabii ki burada ilgili lisansten olup olmaması. Hangi programlama dilinin...
+
+132
+00:31:55,791 --> 00:32:19,571
+Bu şu açıdan önemli. Sizin ekibinizin daha yatkın olduğu bir dilin kullanıldığı cross platformla yola devam etmek isteyebilirsiniz. Bu zaman zaman avantaj sağlayabilir size. Özellikle işletim sistemlerinin donanımsal yeteneklerini kullanabilmeniz için size sunulan API'lerin.
+
+133
+00:32:20,051 --> 00:32:39,051
+Ne kadar çeşitlilik içari, göz önce konuştuğumuz gibi kameranın benzeri noktalarda önemli. Çünkü her cross platform aynı düzeyde cihazınızın yeteneklerini kullanmanızı mümkün kılmıyor. Bunu da iyi araştırmak gerekiyor.
+
+134
+00:32:41,844 --> 00:33:04,844
+Size sunulan Native API'lere ne noktada erişebilirsiniz. Önemli. Ve tabii IDE de çok önemli. Çünkü bir uygulamayı geliştirirken biliyorsunuz, uygulamayı geliştirebilmek için işi çok hızlandıran IDE'ler var. Bunu gerek kodları yazarken...
+
+135
+00:33:05,200 --> 00:33:22,920
+Size seçenek olarak sunulmasıyla ortaya atılan yeni işle geliştirme teknikleri ve bu sayede hızlı geliştirmenizi mümkün kılan ideler var. Bu açıdan da cross platformları yakından değerlendirmek gerekiyor.
+
+136
+00:33:32,655 --> 00:33:57,875
+React Native ve Flutter ön plana çıkıyor ki bundan yaklaşık 5 sene önce çıktıklarını hatırlıyorum. Ondan önce daha çok Ionic, Zamanin, Fomya gibi uygulamaları konuşuyordu. Ama yine her iki tarafta da büyük bir destek sunan Google'ın bulunuyor olması, Facebook'un bulunuyor olması.
+
+137
+00:34:00,435 --> 00:34:11,435
+Bu platformları yine hemen plana çıkarttı ve Real Native Data Platter'la bugün Cross Platform uygulamaların 4T3'ü bu ortamlarda geliştiriliyor.
+
+138
+00:34:12,179 --> 00:34:39,260
+Bu doğrultuda, burada işte zamanın C++, pardon C Sharp'la geliştirilebilen ortamlardan bir tanesi. Zamanında Windows'cular bu işte geliştirme yapsın diye ortaya atılmıştı. Ama bunlar gelişen şartlara göre dönüşüm yaşıyorlar ve işte yıllar öncesinde daha belki bundan ilk çıktığında olan PhoneGap,
+
+139
+00:34:39,699 --> 00:34:58,800
+Bugün yerlerde kalabiliyor kullanım olarak. Yani crossplatform tarafında bugüne kadar dönüşen, değişen, yeni gelen crossplatformlar vardı ve herkes bunlar içerisinde uygulamalarını geliştiriyordu.
+
+140
+00:34:58,800 --> 00:35:07,000
+Cordoba da bunlardan bir tanesi. Eski sayılabilecek bir hibrit app geliştirebileceğiniz uygulama ama...
+
+141
+00:35:07,476 --> 00:35:15,076
+Görülen oku önümüzdeki senelere Real Native ve Flutter pek de öyle liderliği kaybedecek gibi gözükmüyor.
+
+142
+00:35:15,076 --> 00:35:24,195
+Yani Apple ve Google'ın nasıl iOS ve Android dominant bir habitat oluşturdular.
+
+143
+00:35:24,275 --> 00:35:28,556
+Burada da Real Native ve Flutter önde gidecek gibi gözüküyor.
+
+144
+00:35:34,195 --> 00:35:45,195
+Mobil dünya diyorsak, security tarafı çok önemli. Ben de açıkçası aslında fırsat bulursam, önümüzdeki senelerde...
+
+145
+00:36:38,996 --> 00:36:43,996
+Hocam şimdi geldi. Sesiniz kestirilmişti.
+
+146
+00:36:43,996 --> 00:36:53,096
+Bir internet bağlantısında bir kopma oldu. O sırada ben de bekledim. Kısa sürede geliyorum.
+
+147
+00:36:53,096 --> 00:36:56,096
+Şunu konuşuyorduk.
+
+148
+00:36:59,188 --> 00:37:16,188
+Mobil dünyadaki security ile ilgili çok değişik yeni uygulama alanları var. Burada çalışmak isteyenler olabilir. Bunlardan bir tanesi replay ataklar. Kullanıcının sesinin bir kayıt altına alınıp...
+
+149
+00:37:17,876 --> 00:37:36,655
+Başka bir ortamda kendisi konuşmuyorken sesinin başka bir cihaz aracılığı ile oynatılarak sanki kendi konuşuyormuş gibi kaydedilmiş sesiyle şifrenin ya da işte authentication mekanizmasının sağlanması.
+
+150
+00:37:46,260 --> 00:37:53,539
+Aslında çalışmalar birçok ataklara karşı güvenilir hale getirmek için devam ediliyor.
+
+151
+00:37:54,100 --> 00:38:05,420
+Mesela kişinin, şöyle sorayım size, kendisinin konuşup konuşmadığını, bir cihazdan konuşmasının kaydedilip oynatıldığını nasıl anlayabiliriz?
+
+152
+00:38:05,699 --> 00:38:07,940
+İlk akla gelen şehrin bir tanesi nedir?
+
+153
+00:38:13,076 --> 00:38:14,235
+Var mıdır bir fikriniz?
+
+154
+00:38:14,235 --> 00:38:16,576
+Jest ve mimikler olabilir mi?
+
+155
+00:38:17,536 --> 00:38:18,775
+Bir daha sorar mısın?
+
+156
+00:38:21,235 --> 00:38:23,355
+Jest ve mimikler olabilir mi hocam?
+
+157
+00:38:24,296 --> 00:38:28,096
+Mesela neyi kastediyoruz ondan? Tam anlayamadım.
+
+158
+00:38:28,096 --> 00:38:36,096
+Yani ben senaryoyu şöyle düşündüm. Konuşuyormuş gibi yapıp arkadan farklı bir kayıt oynatılıyor.
+
+159
+00:38:37,096 --> 00:38:37,536
+Ha şöyle.
+
+160
+00:38:38,867 --> 00:38:42,427
+Görüntünün olmadığını var senin. Sadece ses üzerinden konuşuyorum şu an.
+
+161
+00:38:46,047 --> 00:38:47,007
+Görüntü yok.
+
+162
+00:38:47,528 --> 00:38:53,948
+Yani mikrofondan mı konuşuyor yoksa mikrofona bir cihazdan mı ses veriliyor? Demek istediğim bu.
+
+163
+00:38:55,108 --> 00:38:57,967
+Hocam sesim biraz daha robotikliği olması olabilir mi?
+
+164
+00:39:00,028 --> 00:39:04,208
+Olabilir. Peki, güzel bir noktadan başlayalım. Başka?
+
+165
+00:39:06,036 --> 00:39:33,336
+Arada S'ler olabilir mi hocam? Duraksamaların. Olabilir. O da bir fikir. Aslında burada en önemli noktalardan bir tanesi sizin device'den çıkışınızdaki kullanılan frekans aralığıyla kişinin kendi konuşurkenki frekans aralığı mikrofona ulaşan ses açısından farklılıklar gösteriyor.
+
+166
+00:39:33,811 --> 00:39:54,851
+Çünkü cihazın da kendi içerisinde o sesi üretirken, sizin ses nodülerinizden çıkan sesle cihazın o kaydettiğiniz sesi çalarken ki halinde oluşturulan ses kendi output diriminden çıkan ses farklılık gösteriyor.
+
+167
+00:39:54,851 --> 00:39:59,992
+Tabii bariz hemen çat diye aradaki farkı söyleyebiliriz demek değil.
+
+168
+00:40:00,000 --> 00:40:15,819
+Ama bu tür analizler yapılarak gerçekten analog bir kişiden mi bu ses çıkmış yoksa dijital bir cihazdan mı bu ses dışarı veriliyor? Bu tür analizlerle incelenerek ortaya konabiliyor.
+
+169
+00:40:16,271 --> 00:40:33,592
+Bunu biraz daha dramatik hale getirecek olursak, trajik komik hale getirecek olursak, eskiden filmlerde olan kişinin parmağını kesip o parmakla bir alana giriş parmak iziyle yapılmaya çalıştırdık.
+
+170
+00:40:41,811 --> 00:40:57,851
+Arkasından parmağın sıcak olması mevzusu ısıdan anlaşılmaya çalışıldı. Bugün günümüzde bir resim herhangi bir sisteme giriş yaparken kişinin canlı mı değil mi olduğunu anlayacak kameralardan.
+
+171
+00:40:57,851 --> 00:41:09,631
+Kişinin resmini tuttuğunuzda aslında face ID'sini görebiliyorsunuz, kamerayı kandırmaya çalışıyorsunuz ama önemli olan o görüntüde canlı mı yoksa bir kişiye ait bir görsel mi kullanılmış?
+
+172
+00:41:09,811 --> 00:41:27,692
+Bu tür konularda çok ciddi çalışmalar yürütülüyor. Her ne kadar bu alanda birçok çalışma var gibi gözükse de henüz hırsız polis oyunu devam ediyor. Ve bu konuda da çok ciddi tezor olmakları var. Biometrik.
+
+173
+00:41:28,115 --> 00:41:48,576
+Identification dediğimiz alan bizim açımızdan kritik. Buna ek olarak size vermiş olduğum bazı arkadaşlarımıza konu başlıklarından bir tanesi olan Continuous Automatication konusu da en güncel olan konulardan bir tanesi. Burada da özellikle kişinin kullandığı uygulama bazında.
+
+174
+00:41:49,023 --> 00:41:56,023
+Telefonun kullanış şeklinde ya da klavyeyi kullanış şeklinde, telefonun sanal klavyesine.
+
+175
+00:41:56,023 --> 00:42:15,023
+Kullanıcıdan, telefondan aldığımız bilgiyi bu ağırlıkta olarak aksiyonetre, jilosport ve manyatometre analiz ederek belirli periyodlarla, daha önce Hindoling'i konuşmuştuk, 15 saniye, 20 saniye, 30 saniyelik periyodlar.
+
+176
+00:42:15,572 --> 00:42:24,572
+Bu periyotlarda özellikle kullanıcının o kişi olup olmadığını verifay ediyorsunuz.
+
+177
+00:42:24,572 --> 00:42:34,572
+Bu tabi zor bir konu. Henüz o kadar yüksek yüzdeyle bir başarı sağlanabilmiş değil ve genelleştirilebilmiş değil.
+
+178
+00:42:34,931 --> 00:42:59,931
+Daha spesifik uygulama, bankacılık uygulamalarında kullanılıyor. Amaç bir açıktan dolayı uygulamaya giriş yapılmışsa, uygulamanın kontrole devam edip, o açıktan faydalanan birini kullanım şekli farklıysa, yazın özellikle bunun üzerine çok çalışılıyor, klavyedeki yazın hızı ve yazın karakteristiği, o kişiyi tespit edip...
+
+179
+00:43:00,532 --> 00:43:26,632
+Sen bu uygulamayı kullanmıyor. Yani bu telefonun sahibi değilsin demek. Tabi burada challenge'lar var. Bu challenge'lardan bir tanesi siz bir kişinin verisine sahipsiniz ama bir telefonu yüz farklı kişi, bin farklı kişi ele geçirebilir ve her birinin kullanım karakteristiğine sahip değilsiniz.
+
+180
+00:43:28,371 --> 00:43:51,331
+Supervised doğrultu yapmak gibi bir şansımız yok. Onları da öğretelim sisteme. Böylece ayırt ederiz demek gibi bir şansımız yok. Bu da bir handikap. Bu nedenle daha farklı, sevgili supervised ya da unsupervised yöntemler, Anabondetect için yapabileceğiniz yöntemler ortaya atmanız gerekiyor.
+
+181
+00:43:53,108 --> 00:44:05,528
+Bu konuda Gülçer olduğunu söylemekte fayda var. Evet, bu kısmı tamamlıyoruz. Sonuç yoksa bir diğer konumuz olan sensörlere geçiş yapıyor olacağız.
+
+182
+00:44:14,132 --> 00:44:16,312
+Hocam yeni sunumu yansıtabilir misin?
+
+183
+00:44:16,452 --> 00:44:18,252
+Tabii tabii, yansıtacağım şimdi.
+
+184
+00:44:19,392 --> 00:44:20,952
+Yeni sunumu yansıtacağım.
+
+185
+00:44:22,632 --> 00:44:29,132
+Hocam, bu setini kendisi mi konuşuyor yoksa bir...
+
+186
+00:44:29,331 --> 00:44:49,331
+Hoparlör veya farklı bir cihaz vasıtasıyla mı dinletiliyor konusunda? Bazı ses formatları var. Kayıpsız kaydediyorlar. Evet, aslında frekansla ilgili bir şey söylediniz ama örneklem frekansı çok yüksek olan bir cihazdan kaydettiyse aslında anlamamızın...
+
+187
+00:44:51,284 --> 00:45:04,123
+Bu yöntemi tercih ederek anlamamızın aslında önüne geçmiş olma da biliyorlar. Yani farklı birkaç yöntemin birleşimiyle sanırım bir karar vermek daha doğru olur ama kolaylıkla aşılabilir sanki.
+
+188
+00:45:04,884 --> 00:45:21,503
+Yok yok, çok doğru söylediğin şey [öğrenci]. Şimdi dediğimiz gibi bu sadece bir başlangıç noktasıydı. Asıl gerçekten sadece onunla tespit ediliyor diyemeyiz. Çünkü bununla ilgili çok ciddi projeler, araştırmalar var.
+
+189
+00:45:33,715 --> 00:45:44,735
+Bizim konuşmamız sırasındaki doğal oluşan noyuzla telefonun kendi dijital ürettiği ses noktasındaki oluşan noyuzlar arasında da farklılık var.
+
+190
+00:45:45,115 --> 00:45:48,955
+İkinci araştırılan ve üzerinde durulan noktalarından bir tanesi de bu.
+
+191
+00:45:48,955 --> 00:45:57,575
+Bu noyuzların ayrımının tespit edilmesi ve bu noktadan bir ayırım yapmaya gitmek.
+
+192
+00:45:57,675 --> 00:46:01,715
+Ama hani dediğim gibi bu bir hırsız polis oyun.
+
+193
+00:46:01,715 --> 00:46:19,495
+Siz bunu çözen bir sistem ortaya koyduktan sonra karşı taraf belirli noyjular ekleyerek ya da belirli noyjuları temizleyerek bunları sizin algınızdan kaçıracak şekilde bir sistem ortaya koyabiliyor.
+
+194
+00:46:22,996 --> 00:46:37,695
+Evet, şimdi gelelim bizim için en kritik noktaya. Bizim için bir smartphone'un smart özelliğine sahip olması en önemli sebeplerinden bir tanesi üzerindeki sensörler.
+
+195
+00:46:46,963 --> 00:47:04,564
+Hayat ile ilgili kararlarını vermesini mümkün kılan yegenden şey beş duyu oradan. Eğer bu beş duyu oradan olmasaydı biz, ki hayvanlar için de bu geçerli, teknik olarak hayatta var olamazdık.
+
+196
+00:47:04,564 --> 00:47:11,204
+Aynı şey çevresel zeka sistemleri için.
+
+197
+00:47:11,668 --> 00:47:20,968
+Aynı şey IoT Deviceler için geçerli. Aynı şey sensör networklar için geçerli. Aynı şey akıllı telefonlar için geçerli.
+
+198
+00:47:20,968 --> 00:47:36,008
+Hatta daha da öterek ileri götürdüğümüzde bütün akıllı sistemler için bu geçerli. Akıllı olabilmeleri için mutlaka çevresel bilgileri sens ediyor olmaları gerekiyor.
+
+199
+00:47:36,488 --> 00:47:38,228
+Bunu sens edebilmenin yolu da bugün.
+
+200
+00:47:39,411 --> 00:47:53,431
+Birçok, belki yüze yakın, belki daha fazla verinin ölçülebiliyor olması. Sensör tanımı yapsaydınız ne derdiniz? Sensörü tanımlasaydınız.
+
+201
+00:48:07,123 --> 00:48:11,143
+Daha sonra algılayıcı bildiğimiz yıllarda da kullandığımız bir şey.
+
+202
+00:48:13,923 --> 00:48:20,963
+Yani şey diyebiliriz herhalde hocam, çevresel değişiklikleri algılayan cihazlar.
+
+203
+00:48:22,043 --> 00:48:25,103
+Güzel. Çok güzel. Oraya ufak bir ekleme yapayım.
+
+204
+00:48:26,103 --> 00:48:34,143
+Çevrede, çevremizde gerçekleşen fiziksel değişimi çıktı olarak.
+
+205
+00:48:34,512 --> 00:49:00,711
+Üretebilen cihazlar. Örneğin ışık. Işığın değişimini bize light sensör bir çıktı olarak üretebiliyor. Yakınlık sensörü. Bir nesnenin hangi uzaklıkta olduğu ya da uzaklıklar mertebesinde yakın, uzak, orta mesafede olduğunu bize söyleyebiliyor. Gaz sensörü, renk sensörü, lidar.
+
+206
+00:49:01,331 --> 00:49:27,371
+gibi, temperature vesaire. Burada bir kısmını gördüğümüz, bir kısmının başlıklarını gördüğümüz sensör tipleri bugün hayatımızın içerisinde yoğun olarak kullanıyor. Kimi görece büyük, kimi yıllar içerisinde teknolojik gelişmeler sayesinde oldukça küçültülmüş sensörler. Telefonun içerisine yerleştirdikleri sensörler.
+
+207
+00:49:27,744 --> 00:49:38,944
+İlk etapta bu kadar küçük değillerdi. Zaten telefonların küçülmesinin altına eten sebep de zaman içerisinde bu sensörlerin de boyutların küçülmesi ki,
+
+208
+00:49:38,944 --> 00:49:49,344
+sinometre, manyetometre gibi sensörler oldukça küçük sensörler. İşte hardbeat sensörler sizin işte…
+
+209
+00:49:49,972 --> 00:50:05,892
+kalp atış hızınızı belirleyebiliyor. Bugün bu anlamda bu tür sensörlerin hemen hepsini akıllı telefonlar üzerinde kullanabiliyoruz. Peki, akıllı telefonlar üzerinde doğrudan kullanmadığımız sensörler neler var?
+
+210
+00:50:17,235 --> 00:50:23,275
+Telefonun üzerinde kullanmadığımız derken telefonun kendisini kullandığı ama bizim kullanmadığımız mı?
+
+211
+00:50:23,435 --> 00:50:37,155
+Hayır, öyle değil. Telefonun üzerine diploy edilmeyen başka ama kullanılabilme ihtimali olan ya da ek aparatlarla bir interfaz aracılığıyla kullanılabilen sensörler var mı?
+
+212
+00:50:38,099 --> 00:51:06,099
+Hemen ben aklıma geleni söyleyeyim. Kameralar var ya, bazıları termal kameralar oluyorlar. Aslında şu anda kullandığımız yani ticari olarak satılan telefonlarda bildiğim kadarıyla yok. Ama işte telefonun şarj girişine diyeyim artık, o ara yüzüne takılıp kullanılabilen termal kameralar var. Ben açıkçası çok sevimli buluyorum. Yani şey, bir odayı termal bir kamerayla gözlemle...
+
+213
+00:51:06,099 --> 00:51:13,719
+Bence güzel bir şey. Böyle bir şey mümkün olabilir tabii ama telefonların üstünde yok ama takabiliyoruz gibi.
+
+214
+00:51:13,719 --> 00:51:27,719
+Güzel. Bu bir örnek ama çok yaygın kullanmadığımız, belki daha da yaygınlar edilmiş. Daha gerçek hayata yansımış...
+
+215
+00:51:28,947 --> 00:51:36,268
+Kullanılması, insan hayatına da olumlu etki edecek sensörler var. Neler onlar?
+
+216
+00:51:36,268 --> 00:51:41,028
+Hocam şey olabilir mi? Bu kameralara takılan balık gözük lensler?
+
+217
+00:51:41,028 --> 00:51:43,628
+Olabilir. Olabilir.
+
+218
+00:51:43,628 --> 00:51:48,427
+Ama doğrudan onu kastetmiyorum. Ama onlar da bir örnek.
+
+219
+00:51:48,427 --> 00:51:52,668
+Benim kastettiğim daha çok sağlık kitleri var.
+
+220
+00:51:52,800 --> 00:52:17,659
+Burada siz kandaki şeker değerini falan uçabilirsiniz. Bu sensörler aracılığıyla uzaktan kişilerin bilgilerini doktora aktarıp onunla ilgili teşhis koyabilmesine mümkün kanalaya çalışıyorlar. Bunlar da telefonların interfejisi üzerinden bir sensör kitle mümkün hale getirilebiliyor.
+
+221
+00:52:21,139 --> 00:52:28,379
+Şöyle enteresan bir diyalog oldu. Yani çok tesadüfen gelişti, paylaşmak istedim.
+
+222
+00:52:28,379 --> 00:52:37,379
+Ben oradayken bir hastası aradı ve işte bir konuşma gerçekleşti. Sonra telefonu kapattıktan sonra doktor şey dedi,
+
+223
+00:52:37,379 --> 00:52:43,379
+ya dedi artık öyle bir noktaya geldik ki bu dedi iPhone'lara...
+
+224
+00:52:43,539 --> 00:52:59,299
+Çok kızıyorum dedi. Hasta dedi, orada dedi, bir alert üretildiği zaman dedi, bize bu alertı gönderiyor dedi. Ondan sonra bu alertten bizim teşhis koyup, tanıyı koyup tedavi etmemizi bekleniyor.
+
+225
+00:52:59,827 --> 00:53:11,388
+Ben dedi, şunu şunu şunu şunu görme. Nasıl yapayım bunu zaten? Şimdi hatta sonra şu cümleyi, tamam dedi 50 sene sonra 40 sene sonra bunlar olacak. Ben bunu kesin olacağına inanıyorum ama şu an o noktada değiliz dedi.
+
+226
+00:53:14,088 --> 00:53:16,648
+Ben de akademisyenim, mühendisim.
+
+227
+00:53:16,943 --> 00:53:28,943
+Genelde doktorlar da bizi sevmezler pek. Çünkü biz iki kere iki dört ederiz. İsteriz dört etmesin ama doktorlar işte vaka vaka vakarlar. İşte kimin everletleri ilaç işe yarar, kimin evermez diye.
+
+228
+00:53:30,943 --> 00:53:43,943
+Aslında tabii benim de geçen gün hatta başıma geldi. Saat bana nefes düzeninizde bir bozukluk oldu. Yani bir farklılık oldu dağılmış bozukluk demeyeyim de. Gerçekten...
+
+229
+00:53:44,980 --> 00:54:11,980
+Anormal durumları tespit edebiliyorlar. Ki bu özellikle kalp krizi öncesindeki düzensizlik, oksijen ölçümü burada arkadaşımız yazmış, [öğrenci] söylediği gibi özellikle Covid döneminde çok kritikti. Bunlar destek sistemleri olarak çok kullanılıyor. Bu sensörler vasıtasıyla bugün oksijen ölçümü yapan bir ekstra bir device almadan...
+
+230
+00:54:12,224 --> 00:54:21,952
+Örneğin sadece taşı giyilebilir bir cihaz olan saatle bunları takip edebiliyorsunuz. Bundan sonraki nokta aslında bu bilgilerin...
+
+231
+00:54:21,952 --> 00:54:42,052
+Bir araya getirilerek daha kapsamlı tanılar konulabilmesi noktası. İşte doktorun henüz o noktada değiliz dediği nokta. Henüz böyle parça parça bunlar gerçekleşiyor. İşte oksijen ölçümü ayrı, kalp atış hızınızdaki düzensizlik ayrı. Bu tür.
+
+232
+00:54:43,503 --> 00:55:07,744
+Bilgilerin kompakt bir şekilde kullanılabilir sistemler üretmek önemli. Bunun için de doktorlarla ortak çalışma gerekiyor. Yani olmazsa olmaz nedir? Hangi veriler ışığında karar verilebilecek bu alanda çalışmalar üretilmesi gerekiyor ki bu iyi bir yine test çalışması olabilir.
+
+233
+00:55:08,271 --> 00:55:34,992
+Uzaktan bir hastanın hangi sensörler aracılığıyla hangi tanıları koyma olasılığınız var. Bu özel bir çalışma alanı. Henüz bununla ilgili netleşmiş ya da üzerine yapılmış çok kapsal bir çalışmalar yok. Sensörleri bu anlamda da yorumlayabilirsiniz.
+
+234
+00:55:37,460 --> 00:55:55,019
+Burada 70 tane sensör var. Gördüğünüz gibi bazıları da kendi alanlarında alt kırılımları var. Bunun içerisinde mesela 21. sırada araba sensörleri var. Araba sensörlerinden kastettiğimiz.
+
+235
+00:55:55,019 --> 00:56:02,579
+Canvas'tan gelen bilgiler işte arabanın vervi, benzin seviyesi, lastik basıncı. Bunların her biri ayrı birer sensör.
+
+236
+00:56:02,708 --> 00:56:06,988
+Bugün otonom araçlardan bahsediyorsak bu sensörler olmazsa olmaz.
+
+237
+00:56:06,988 --> 00:56:12,448
+Tabii burada önemli bir sorun var son dönemde yaşanan. Buna da dikkat çekmek lazım.
+
+238
+00:56:13,928 --> 00:56:26,327
+Yazılımsal sorunlar, dijitalleşmeden sonra arabaların belli bir noktada sisteminin kendi kendine format atma noktasına gelmesi.
+
+239
+00:56:28,403 --> 00:56:35,403
+Bir tehlike yaratacak noktada değil ama bir anda ekranlar kararıyor ve önünüzdeki bütün göstergedeki değerleri kaybediyorsunuz.
+
+240
+00:56:35,403 --> 00:56:40,403
+Dijitalleşmedeki en büyük sorunlar da bir tanesi elektronik cihazlardaki bu tur.
+
+241
+00:56:40,724 --> 00:56:52,724
+Hatta olasılığının mekanik cihazlara göre çok daha fazla ve yüksek olması. Bence önümüzdeki yıllarda yaşadığımız en büyük problemlerden bir tanesi.
+
+242
+00:56:52,724 --> 00:57:00,724
+Bu da özellikle uçaklar tarafında, aviyonik tarafında şöyle genel yapıcı yüzlüyor ki sensör networklerde de böyle.
+
+243
+00:57:00,724 --> 00:57:06,480
+Birden fazla minimum iki tane aynı sensörün diplo edilmesi.
+
+244
+00:57:06,480 --> 00:57:31,480
+Ve onlardan alınan verilerin birbiriyle verifay edilmesi ya da biri bozulduğunda diye bile devam edilebilmesi gibi bir durum. Sensör arızasıyla mesela bıçak motor arızası arasında rekans olarak baktığınızda arada bariz bir fark var. Bugüne kadar işte örnek veriyorum milyar uçuş üzerinden incelerseniz belki toplamda...
+
+245
+00:57:32,052 --> 00:57:49,552
+Onlar mertebesinde bir motor arabesasına rastlarken, yüzler ya da binler mertebesinde sensör otansına rastlarsınız. Ama sensörler yedekli oldukları için bu tür problemler genelde sıkıntılarla da çözülebilir.
+
+246
+00:57:49,552 --> 00:57:58,412
+Bu noktada son yıllarda ön plana çıkan önemli sensör başlıkları LIDAR.
+
+247
+00:57:58,996 --> 00:58:17,276
+Radar, özellikle bir dar sensörleri. Bu da otonom araçların ilerlerken etrafındaki engelleri tespit etmesi noktasında çok katkı sağlayan sensörlerden bir tanesi.
+
+248
+00:58:17,276 --> 00:58:26,216
+Peki, bir otonom araçta hangi sensörler sürüş açısından?
+
+249
+00:58:26,867 --> 00:58:28,108
+Olmazsa olmaz.
+
+250
+00:58:32,820 --> 00:58:36,139
+Hangi sensörler? Olmazsa olmaz.
+
+251
+00:58:36,920 --> 00:58:41,259
+Radar var. Lidar var dediğiniz gibi herhalde.
+
+252
+00:58:43,579 --> 00:58:45,360
+Kameralar kullanılıyor.
+
+253
+00:58:46,139 --> 00:58:47,159
+Çok doğru.
+
+254
+00:58:47,420 --> 00:58:48,940
+Görsel tabanlı olarak.
+
+255
+00:58:49,980 --> 00:58:54,320
+Bir de herhalde yakın takiplerde ultrasonik sensörler de kullanılıyor.
+
+256
+00:58:54,320 --> 00:58:57,400
+Çok doğru. Yakın mesafe özellikle park ederken.
+
+257
+00:58:57,400 --> 00:58:58,940
+Sikirciyes kullanılıyor olabilir.
+
+258
+00:58:59,411 --> 00:59:01,411
+GPS güzel.
+
+259
+00:59:03,411 --> 00:59:10,411
+Peki burada mesela lidar var neden bir görüntü kullanıyoruz? Ya da görüntü var neden lidar kullanıyoruz?
+
+260
+00:59:13,411 --> 00:59:22,411
+Hocam, lidar sensörler üç boyutlu haritalandırma yaptığı için bu sebeple kullanıyor olabilir miyiz?
+
+261
+00:59:22,411 --> 00:59:25,411
+Tamam, peki. Başka?
+
+262
+00:59:26,132 --> 00:59:31,692
+Yakınlığı algılamak lazım hocam. Yani şey, derinlikim var.
+
+263
+00:59:32,772 --> 00:59:40,592
+Evet, derinlik doğru. Yani şey, bir trafik tabelası var ve bu tabela bana ne kadar yakın?
+
+264
+00:59:41,272 --> 00:59:48,731
+Onu, yani küçük tabelalarda var, büyük tabelalarda var ya, doğrusu ve tek cins olmadıkları için, boyutu hakkında bir fikrimiz yok.
+
+265
+00:59:48,731 --> 00:59:53,492
+Bir fikrimiz olmadığı için, mecburen yakınlığını ölçmek için böyle bir sensöre gerek var.
+
+266
+00:59:53,840 --> 00:59:59,840
+Peki liderin yapamadığı, kameranın yaptığını...
+
+267
+01:00:06,068 --> 01:00:12,972
+Genk. Renk dolayısıyla...
+
+268
+01:00:17,172 --> 01:00:26,251
+LIDAR, biraz önce söylediğiniz gibi nesneyi tespit ediyor, mesafe konusunda bize bilgi veriyor. Biz hangi bilgiye onarlamıyoruz?
+
+269
+01:00:30,452 --> 01:00:32,452
+Doku olabilir mi?
+
+270
+01:00:32,452 --> 01:00:37,260
+Doku. Güzel. Oradan bir yere geleceğim. Renk, doku.
+
+271
+01:00:40,148 --> 01:00:41,208
+Yani şöyle hocam.
+
+272
+01:00:41,507 --> 01:00:43,487
+Kamerada birden fazla kanal oluyor ya.
+
+273
+01:00:43,768 --> 01:00:45,907
+Normal RGB o anlamda mı diyorsunuz?
+
+274
+01:00:45,967 --> 01:00:47,688
+Mesela birden fazla frekans kanalı var.
+
+275
+01:00:48,208 --> 01:00:49,668
+Ya tam olarak o anlamda demiyorum.
+
+276
+01:00:49,668 --> 01:00:55,208
+Yani o bilgi yok yani o kanalların olması değil ama daha üst seviye bir yere varmaya çalışıyorum.
+
+277
+01:00:55,307 --> 01:00:57,007
+Hepiniz doğru şeyler söylüyorsunuz da.
+
+278
+01:00:57,568 --> 01:00:58,327
+Yani şöyle hocam.
+
+279
+01:00:58,387 --> 01:01:03,947
+Dider'da sadece yakını vesaireyi görürken kamerada ne olduğunu görüyoruz.
+
+280
+01:01:05,043 --> 01:01:20,283
+Aslında söylediğiniz doku, renk buraya geliyor. Biz nesnenin ne olduğu ile ilgili bilgiyi kameradaki yaptığımız görüntü analizi sonrasında çıkartıyoruz. Bu bir hayvan mı, insan mı, hareketli nesne mi?
+
+281
+01:01:23,507 --> 01:01:45,727
+Nasıl söyleyeyim, yaşlı mı, değil mi, araba mı, motosiklet mi gibi bir sürü karşılığında sorunumuz var. Bunların karşılığını biz daha çok kamera tarafındaki aldığımız veriyle sağlıyoruz ve her ikisi birbiriyle kolaborasyon içerisinde sonuç üretiyor.
+
+282
+01:01:45,727 --> 01:01:48,487
+Buradan şuraya geleceğim, bunu anlatma sebebim.
+
+283
+01:01:49,619 --> 01:02:10,300
+Bunu işte aktivite tanımada da konuşuyor olacağız. Yapacağınız işlerde sadece tek bir sensör yeterli olmayabilir. Mümkün olduğu kadar az sensörle işini çözmek istiyoruz. Ama bazı durumlarda mutlaka birden fazla sensör kullanımı gerekli. Bazen de...
+
+284
+01:02:10,708 --> 01:02:31,327
+Bir sensörün maliyeti çok yüksek olur. Kamera gibi ya da GPS gibi. Onun yerine birden fazla daha az maliyetli sensör kullanıyoruz. Örneğin işte ne diyelim? İşinin hareketlerini takip ederken eskiden birçok çalışmada GPS bilgisi kullanılırdı.
+
+285
+01:02:36,916 --> 01:02:56,776
+Çok rahatak kişinin hareketiyle ilgili bilgi sağlayabilen daha sonra GPS'in maliyetinden dolayı ilme ölçer, manyetometre ve jiromskobu kullanılarak birçok GPS'in de tespit ettiği bilgiyi daha az maliyetle bu motion sensörlerin tespit edebildiği araştırmalar sonucu ortaya kondu.
+
+286
+01:02:58,356 --> 01:03:13,755
+GPS sadece gerekli koşullarda, kişinin araç değiştirdiği, otobüse bindiği, yürüdüğü, hareket ettiği, bisiklete bindiği noktalarda sadece hareket değişimi tespit etmek için kullanılabiliyor.
+
+287
+01:03:14,335 --> 01:03:18,092
+Hatta bizim kendi yaptığımız yine...
+
+288
+01:03:18,291 --> 01:03:36,711
+3-4 tane önceki bir çalışmada %90'ın üzerinde bir başarıyla kişinin hangi araçta gittiğini size tespit etmek için GPS'i de kullanmadan sadece iğme ölçen manyetometre ve jiroskop aracılığıyla bu işi yapabiliyoruz.
+
+289
+01:03:42,452 --> 01:03:59,852
+Topladığı veriyi, hangi maliyetle topladığı ve sensörün kendisinin maliyeti bu noktada belirleyici oluyor. Mümkün olduğunca düşük maliyetli sensörler ve düşük enerji harcayan sensörler kullanmakta fayda var.
+
+290
+01:04:02,547 --> 01:04:17,248
+Evet, şimdi aş aş sensörler üzerinden ilerleyeceğiz. Saat 10.30 oldu. Bir 10 dakika, pardon 10-29. Evet, online olduğumuz için bir 10 dakika ara verelim. 10 dakika sonra devam edelim.
+
+291
+01:04:20,628 --> 01:04:22,848
+Hocam, aradan önce bir şey sorabilir miyim?
+
+292
+01:04:23,288 --> 01:04:23,548
+Tabii.
+
+293
+01:04:25,348 --> 01:04:32,228
+Bu Yıldız Online'daki şeye baktım da, ismim yok makalelerde.
+
+294
+01:04:32,968 --> 01:04:33,628
+Evet, [öğrenci].
+
+295
+01:04:34,328 --> 01:04:36,148
+Derste katılıyordum ama biraz...
+
+296
+01:04:36,148 --> 01:04:38,108
+Bana mail yazmış mıydı?
+
+297
+01:04:39,347 --> 01:04:46,387
+Yok. Yani siz derste şey demiştiniz, ben bu listedeki isimlere göze alacağım demiştiniz. O yüzden ben o dediğinizde...
+
+298
+01:04:46,387 --> 01:04:51,667
+Tamam. Bana lütfen bir gönder. Ben hemen satıya tam yapayım.
+
+299
+01:04:52,627 --> 01:04:55,007
+Tamam hocam. Teşekkürler.
+
+300
+01:15:33,652 --> 01:16:00,395
+Evet, yeniden merhaba arkadaşlar. Kaldığımız yarın artık devam edelim. Sensörleri konuşuyorduk. Biraz daha yakından tutup bakacağız. O da bir farkı sensörleri. Bu konudan sonra bu sensörlerden topladığımız verileri nasıl işliyoruz? Öziteliği nasıl çeviriyoruz? Bu adımları konuşuyoruz. Telefonlar üzerinde özellikle. Telefonlar üzerinde bulunan sensörler...
+
+301
+01:16:01,011 --> 01:16:20,011
+Ağırlıkta olmak üzere konuşmaya devam edeceğiz. Bu noktada ilk sensörümüz yakınlık sensörü. Yakınlık sensörü aslında bize bir telefonun objeye olan uzaklığı ile ilgili bir bilgi verir.
+
+302
+01:16:25,811 --> 01:16:41,811
+Telefonun kulağına yakınlaştırılanın anlaşılması ve bu sayede bir ekranın kapatılması, ekran kapandığında da ulaşılmak isteyen hedef...
+
+303
+01:16:42,355 --> 01:16:49,355
+Bir, enerji tasarrufu. İki, yanlışlıkla herhangi bir tuşa basılmasının egellenmesi.
+
+304
+01:16:49,355 --> 01:16:58,355
+Sadece bu görevler için aslında proximity sensörüne faydalanıyoruz ve oldukça da kullanışlı bir sensör.
+
+305
+01:16:58,355 --> 01:17:01,355
+Proximity sensörü başka bir yerde kullanıyor muyuz?
+
+306
+01:17:07,347 --> 01:17:09,347
+Bize çıktı olarak ne üretiyor?
+
+307
+01:17:12,028 --> 01:17:23,827
+Mantık olarak aynı ama gerçekten sensör ismi proximity sensör mü veya aynı mantıkla mı çalışıyorlar emin olmamakla birlikte arabaların park sensörü de aslında temelde aynı iş yapıyor.
+
+308
+01:17:23,827 --> 01:17:29,827
+Tabii mesafe yani menzil daha uzun evet ama o da galiba proximity sensörüdür.
+
+309
+01:17:30,547 --> 01:17:34,467
+O ultrasonik sensör diye geçiyor, ultrasonik sensör.
+
+310
+01:17:34,868 --> 01:17:59,628
+Genelde arabalarda kullanılan sensörler, park sensörleri ve ultrasonik sensörler sebebi daha hassas ölçüm yapıyor olması. Senin söylediğine yakın olan sensör, Pasif Infrared. Daha çok binalarda bu saharlık dediğimiz apartman daireler arasında ışıkların yanıp sömdesini, hareketin olup olmadığını anlamak için kullandığımız bir sensör.
+
+311
+01:18:02,452 --> 01:18:25,311
+Bu aktif ve pasif olanı var. Pasif olanı daha çok kullanılıyor. Aktif olanı genelde daha maliyetli olduğu için tercih ediliyor. Ama arabalarda dediğim gibi daha hassas bir ölçüme ihtiyaç olduğu için, artık biraz daha uzun mesafede bir ölçüm yapabildiği için ultrasonik sensörleri tercih ediyoruz.
+
+312
+01:18:27,028 --> 01:18:33,628
+Ön ve arkalarda bulunuyor. Zaten dört noktaya yerleştiriliyor genelde köşe noktalara.
+
+313
+01:18:36,028 --> 01:18:43,628
+Değer olarak bize ne ürettiğini söyleyebilir misiniz? Telefonda mesela Saltim üretiyor.
+
+314
+01:18:49,619 --> 01:19:07,619
+Normalde böyle bir özelliği yeteneği var. Santimetre cinsinden bize mesafeyi söyleyebilir ama genelde telefonda kullanılan, yakın uzak şeklinde daha ne diyelim, diskrit veri üretiyor.
+
+315
+01:19:07,619 --> 01:19:16,619
+Mesafe cinsinden kontinüüs bir veri üretmiyor. Üreten belki telefon vardır.
+
+316
+01:19:17,011 --> 01:19:28,691
+Şu anda bilmiyorum ama her ikisi de mümkün. Buradaki kullanılan teknoloji de infrared teknolojisi.
+
+317
+01:19:34,195 --> 01:20:00,000
+Light Sensör. Yine telefonla sıklıkla kullanılan bir sensör. Her telefonda yok ama genellikle çoğu telefonda var. Ortanın ışığını algılıyor. Buna göre ekran parlaklığını belirliyor. Yine basit ama kritik bir sensör. Özellikle bu sensör sizin...
+
+318
+01:20:00,083 --> 01:20:18,283
+Bulunduğunuz ortama göre ekranın parlaklığını değiştirerek hem göz konforunuzu ve okuma konforunuzu iyileştirirken hem de boşu boşuna enerji tüketiminin önüne geçmiş oluyor. Bu anlamda da kritik bir sansör olduğunu söyleyebiliriz.
+
+319
+01:20:20,064 --> 01:20:27,583
+Hangi cinsten veriyor light sansör? Yani bilimi nedir light sansör?
+
+320
+01:20:31,572 --> 01:20:34,832
+Belki Lümen veya Laks.
+
+321
+01:20:34,992 --> 01:20:36,432
+Evet, Laks ve Lümen.
+
+322
+01:20:42,100 --> 01:20:50,980
+Parametre ilk başta bir dönem çok yoğun bir şekilde özellikle Android telefonlarla vardı. Sonra çoğu kullanmıyor.
+
+323
+01:20:50,980 --> 01:21:02,060
+Yani fixed bir sanatı var değil, built-in parametre'lerden bahsediyoruz. Atmosferik basıncı ölçüyor.
+
+324
+01:21:02,060 --> 01:21:09,100
+Bize ne sağlıyor olabilir? Yani telefonda kullanılmak istatmizliğin sebebi nedir?
+
+325
+01:21:22,420 --> 01:21:38,260
+Yani daha önce dinlemiş olduğum bir çalışmada da şu anda slide'da da aynısı yazıyor ama yani kullanımın sebebini çok anlayamamakla birlikte hangi konumdasın bunu daha netleştirmek için.
+
+326
+01:21:38,868 --> 01:21:57,927
+Net bilgi almak için daha doğrusu kullanıldığını bir çalışmada hatta patent meseleleri içinde başvurulduğunu duymuştum ama sonradan tabii devam ettim etmediğimi bilgim yok. Slider'da da zaten benzer bir cümle yazıyor sanırım en sonunda. Çok anlayamadım ama başka sebebi varsa dinlemek de isterim hocam.
+
+327
+01:22:01,908 --> 01:22:18,768
+Sıra, aa ben gittim. Şey, hoca gitti, evet. Girebildiniz mi hocam? Sesiniz kapalı sanırım. Ses gelmiyor. Hoca gitti, hoca geldi. Evet, hoca gitti. Duyuyor musunuz? Evet hocam, şimdi geldi. Kusura bakmayın.
+
+328
+01:22:20,916 --> 01:22:38,095
+Bir kez daha bağlantı kopmuşlar. Ne konuşuyorum soruyorum. Bayağı bir soru var. Sonunu fark ettim. Çünkü bir bağlıymışsınız gibi gözüküyordu. Kusura bakmayın lütfen. En son şeyi konuşuyorduk. Barometre. Ne kullanmışsınız barometreyle? Ne yaparsınız? Nasıl fayda mısınız? Telefonda olsaydı.
+
+329
+01:22:42,068 --> 01:22:46,108
+Bir şeyler söylemeye çalışmıştım ama hocam dilim döndüğünce duyabildiniz mi yoksa teknolojiler?
+
+330
+01:22:46,108 --> 01:22:47,148
+Yok hiç duymadım bana emri.
+
+331
+01:22:47,636 --> 01:23:02,216
+Daha önce dinlemiş olduğum bir çalışma konumu keskinleştirmek için barometreyi kullandığını anlatmışlardı. Hatta patent taşörüsü falan da yapıldığını duymuştum ama ilerlemedi mi bilmiyorum.
+
+332
+01:23:02,736 --> 01:23:14,076
+Aynı amaçla mı kullanılıyor Android cihazlarda bundan bahsettiğiniz bir ara vardı ama şimdi yok dediğiniz. Aynı amaçla mı kullanılıyor bilmiyorum ama bu kullanımının yapılmaya çalıştığını en azından duymuştum.
+
+333
+01:23:15,220 --> 01:23:39,520
+Yani şöyle, o zaman endofundan sanırım şuydu, daha çok indoor lokalizacienda kişinin bina içinde bulunduğu seviyeyi ya da bina içerisindeki hareketliliğini, aşağıya yukarıya hareket ettiğini anlamak için parametrik basınca bakılıyor. Ama sonra maniyetli olması sebebiyle ya da yer olmaması sebebiyle çok.
+
+334
+01:23:40,435 --> 01:23:57,435
+Fazla cihazda görmüyoruz artık. Özellikle kişilerin yataydaki hareketleri bir şekilde tespit edilebilirken, yukarı doğru, yukarı yönlü hareketleri her ne kadar...
+
+335
+01:23:57,939 --> 01:24:07,359
+Adım atma sekansında, climbing olarak size sağlık uygularını gösterilse de, oramette daha verileyici oluyordu.
+
+336
+01:24:07,359 --> 01:24:10,139
+Bu daha çok commercial amaçlı.
+
+337
+01:24:10,139 --> 01:24:15,420
+My slide gözükmüyor. Demişsiniz, pardon. Uzmanımla paylaşayım.
+
+338
+01:24:15,420 --> 01:24:19,859
+Bağlantıya gidince o da, belki tercih al.
+
+339
+01:24:24,404 --> 01:24:40,604
+Teşekkür ederim. Ben mobilde kullanımını bilmiyorum ama bu drone'larda vesaire de GPS'e çok güvenilmediği zamanlarda, sapırttığı zamanlarda barometreyle doğrulama yaptıklarını biliyorum. Bazen GPS'ten saçma yüksek birisinin Z verisi.
+
+340
+01:24:41,604 --> 01:24:42,604
+Çok doğru.
+
+341
+01:24:43,004 --> 01:24:47,604
+Bunu barometreyle koruyorlar. Özellikle UAV'lerde falan. Çok sinyal karıştırma oluyor.
+
+342
+01:24:48,243 --> 01:25:00,183
+%100 doğru. Hatta bununla ilgili ben de geçenlerde bir hakem devletiminde X bir firmanın bununla ilgili projelerini gördüm.
+
+343
+01:25:00,183 --> 01:25:07,183
+Yani söylediğin sebeplardan sinyal karıştırma, havadaki...
+
+344
+01:25:08,275 --> 01:25:15,775
+Hava şartlarından kaynaklı sinyallerin bozulması vs. sebeple ilgili. Burada drone tarafında çok kritik bir sensör.
+
+345
+01:25:15,775 --> 01:25:25,775
+Telefon tarafında bu kadar kişi yükseklik değiştirmediği için zaman içerisinde bu biraz devre dışı kaldı.
+
+346
+01:25:25,775 --> 01:25:34,476
+O yüzden telefonlarda işte biraz önce komoruşlu sebepler diyordum. Kişinin alışveriş merkezindeki hareketliliğini...
+
+347
+01:25:34,640 --> 01:25:57,640
+Takip edebilmek adına zamanında, hatta bunun ilk örneklerinden bir tanesi, Singapur'da kişilerin havanın şartları sebebiyle sürekli kapalı ortamlarda, nemli havadan dolayı bulunması sebebiyle, onlar alışveriş merkezine girer girmez bir promosyon...
+
+348
+01:25:57,712 --> 01:26:10,932
+Kampanya yapıyor diyelim bir firma ve beş kişilik bir öğrenci grubunun beraber hareket ettiğini tespit ettiğinde onlara mesaj gönderiyor. Diyor ki işte üç pizza alanı, iki pizza bedava gibi.
+
+349
+01:26:20,275 --> 01:26:38,915
+Daha doğrusu topluluk kullanımlarını tespit edip kişileri birlikte hareketlerinden yola çıkarak onların alışveriş merkezi içerisindeki konumlarına ve hareket rotalarına bağlı olarak belirli yönlendirmeler yapmak.
+
+350
+01:26:39,347 --> 01:26:55,688
+Amaçlı kullanılıyor. İşte üçüncü kat açıklı, ikinci kat açıklı. Çünkü parametrede o farkı rahatlıkla görebiliyorsunuz katlar arasında değişim olduğunda. Bu amaçla hayatımıza girmişti ama şu an ne kadar yaygın değil. [öğrenci]'in verildiği gibi drone tarafında ise kritik bir öneme sahip.
+
+351
+01:26:56,688 --> 01:27:04,688
+Magnetometre çok çok basit bir sensörümüz ama çok etkin bir sensörümüz. Hatta...
+
+352
+01:27:05,300 --> 01:27:12,400
+Hareket tespitinde yeme ölçer ve jiroskopun çok önemli bir destekçisi.
+
+353
+01:27:12,400 --> 01:27:20,300
+Yani onu çıkarttığınızda mutlaka bir başarı düşüşü yaşıyorsunuz. Onun başarıya bir etkisi var.
+
+354
+01:27:20,300 --> 01:27:23,300
+Enteresan, öyle baktığınızda.
+
+355
+01:27:23,300 --> 01:27:31,300
+Pusula çalışması için kullandığı bir sensör. Fakat öte yandan...
+
+356
+01:27:32,724 --> 01:27:50,703
+Sizin de hareketlerinizin tespitine yönelik bir çıkarımını kolaylaştırıyor. Bu arada barometrenin birimini hatırlarsanız ya bar cinsinden veriyoruz ya da pascal cinsinden veriyoruz. Onu da söylemeyi unutmayalım.
+
+357
+01:27:51,403 --> 01:27:54,804
+Magnetometreye geldiğimiz zaman, magnetometrenin birimi nedir?
+
+358
+01:28:01,652 --> 01:28:02,652
+Plan var mı?
+
+359
+01:28:04,652 --> 01:28:06,152
+MyCotMater'nin bile mi?
+
+360
+01:28:07,851 --> 01:28:09,652
+Açı derece olabilir mi?
+
+361
+01:28:09,951 --> 01:28:13,152
+Bak yok değil. O şeyinki, gyroskopinki.
+
+362
+01:28:19,091 --> 01:28:23,891
+Radya Mühendisliği, Jiroskop 2. Magnetometre, Tesla.
+
+363
+01:28:25,971 --> 01:28:26,731
+Galo?
+
+364
+01:28:27,551 --> 01:28:28,351
+Efendim?
+
+365
+01:28:28,811 --> 01:28:29,171
+Galo.
+
+366
+01:28:30,231 --> 01:28:31,391
+Tesla, Tesla.
+
+367
+01:28:32,412 --> 01:28:33,311
+Tesla, evet.
+
+368
+01:28:34,231 --> 01:28:35,811
+Yani mikro Tesla diye geçer ya.
+
+369
+01:28:38,011 --> 01:28:41,391
+Küçük oranda etkileşimleri ölçüyor.
+
+370
+01:28:42,091 --> 01:28:44,391
+Telefon tabii. Peki, şimdi...
+
+371
+01:28:45,300 --> 01:28:48,700
+Aslında neyi ölçüyor magnetonatı?
+
+372
+01:28:52,060 --> 01:28:55,100
+Gerçek kuzeye göre sapmanı herhalde veriyor.
+
+373
+01:28:55,340 --> 01:29:03,180
+Evet. Ama hani nerede değer yükseliyor ya da azalıyor? Hani sonuçta biz... Tamam, kuzeye doğru gittiğimizde okey ama...
+
+374
+01:29:03,180 --> 01:29:08,539
+Hani kuzeye gitmiyorsak bulunduğumuz yerdeki ne belirleyici oluyor magnetonatının değerini?
+
+375
+01:29:09,524 --> 01:29:11,744
+Manyetik alan diyebilir miyiz o zaman?
+
+376
+01:29:12,084 --> 01:29:14,188
+Güzel diyebiliriz. Onu belirleyen de...
+
+377
+01:29:17,268 --> 01:29:28,067
+Yerçekimi kompeti değil, sadece tek başına olmayabilir belki. Dünyanın çevresindeki manyetik alan diyeceğim ama sizin cevabı aynı şey olacak.
+
+378
+01:29:28,447 --> 01:29:33,027
+Sizin fiziksel olarak bulunduğunuz alanda ne etkili olabilir?
+
+379
+01:29:35,367 --> 01:29:36,768
+Alan değiştirdiğinizde değişir.
+
+380
+01:29:36,847 --> 01:29:37,707
+Metal yoğunluğu.
+
+381
+01:29:38,007 --> 01:29:39,467
+Evet, metal yoğunluğu. Aynen öyle.
+
+382
+01:29:42,484 --> 01:30:02,524
+Örneğin bir metroyla seyahat ediyorsanız, oradaki metal yoğunluğu yüksek olduğu için manitometrenizde daha farklı bir değer üretecektir. O yüzden de özellikle araçla seyahatlerinizde hangi araçla seyahat ettiğinize dair bilgiye çok önemli bir katkısı var.
+
+383
+01:30:09,043 --> 01:30:32,043
+Kullandığınız anahtarların fazlalığı, metal eşyalarınızın fazlalığı. Bu tür bilgiyi kirleten noyjlar da olabiliyor. Fakat birçok noktada magnatometrinin motion sensörler arasında gösterildiğini söyleyebiliriz.
+
+384
+01:30:36,115 --> 01:30:51,016
+Kutbuna göre konumlandırmayı ve yönünüzü bulmanıza yardımcı olmakken aynı zamanda bulunduğunuz ortamdaki metal yoğunluğundan da çıkarımlar yaptığınızı sağlayalım.
+
+385
+01:30:53,615 --> 01:31:03,315
+Gelelim iğme ölçere. İğme ölçer 3 eksenli genel olarak. Tek eksenli halde var ama 3 eksenli olarak dediği bir tür 2SZ eksenli.
+
+386
+01:31:03,731 --> 01:31:09,891
+Teknik olarak lineer bir aksiyonometre yer çekiminden bağımsız değerler üretiyor.
+
+387
+01:31:10,572 --> 01:31:21,871
+Ama lineer bir aksiyonometre bahsetmiyorsak, default bir aksiyonometre bize sizin yer çekimiyle birlikte ilmenizi veriyor.
+
+388
+01:31:21,871 --> 01:31:30,251
+Peki, bir telefonun üzerinde bir ilme ölçer var ve bu ilme ölçerinin doğru çalışmalarını da sağlamarsınız.
+
+389
+01:31:43,252 --> 01:31:54,872
+Biz bir zemine koyup orada bir kalibre ettikten sonra herhalde sonra bir rotasyon vererek düzgün bir açı veriyorum vermiyorum ama bakarım herhalde.
+
+390
+01:31:54,971 --> 01:31:56,792
+Zemine koyduk. Neye bakarım?
+
+391
+01:31:59,192 --> 01:32:08,252
+Değerlere bakarım ama onlar biraz şey olabiliyor. Sensörlerde bir satma mı diyeyim? Ufak tefek olaylar.
+
+392
+01:32:08,391 --> 01:32:09,632
+Beys kabul ediyorsunuz.
+
+393
+01:32:09,632 --> 01:32:10,231
+Tamam.
+
+394
+01:32:10,931 --> 01:32:20,311
+O base'i kabul ettikten sonra da bir açı verip, belli bir açıda çevirip, gerçekten atıyorum 30 derece diye yaklaşık bir değer vermediğine bakalım.
+
+395
+01:32:20,911 --> 01:32:29,411
+Şimdi bir kere şurada bir anlaşalım. İvme ölçerde üretilen değerin derece cinsinden olmadığını söyleyelim.
+
+396
+01:32:30,211 --> 01:32:31,211
+Evet.
+
+397
+01:32:31,211 --> 01:32:35,211
+İvme ölçü biraz önce söylediğin durum...
+
+398
+01:32:35,315 --> 01:32:56,335
+Hani şey için geçerli olabilir, jiroskop için geçerli olabilir derece açısından bir değer üretmesi. Ama ilme yolcuar metre bölüm saniye kare. Bir zemine koyduğumuzda, zemin düz olduğunu biliyorum. Gene paralel olduğunu biliyorum. Ve X, Y, Z, X, Y, Z eksenlerinde ne okumayı bekliyorum.
+
+399
+01:33:00,051 --> 01:33:02,051
+Yani kalibrası öpüyorum ya.
+
+400
+01:33:04,051 --> 01:33:09,051
+Benim bahsettiğim, lineer aksolamentli değil, non-albi aksolamentli.
+
+401
+01:33:14,644 --> 01:33:18,604
+Bir iğme olmasını beklemezsiniz. Sıfır olmasını beklersiniz dururken.
+
+402
+01:33:18,623 --> 01:33:19,724
+Hepsinin sıfır olmasını mı?
+
+403
+01:33:22,203 --> 01:33:23,984
+Yerçekimi kuvvetini hesabı kattınız mı?
+
+404
+01:33:24,524 --> 01:33:27,423
+He tamam. Şimdice et almıştı hocam.
+
+405
+01:33:28,283 --> 01:33:38,623
+Şimdi demek ki bir eksen yerçekimi kuvvetini gösterecek. Diğer eksenler de sıfır gösterecek düz bir zemine koyduğunuzda. Yani 981 civarında bir değer görmeniz gerekiyor.
+
+406
+01:33:39,155 --> 01:33:57,715
+Diğer eksenlerinde sıfır civarında olması lazım. Bire bir arkadaşınızın söylediği gibi tam olarak o değeri göremezsiniz ama etrafında biz bir kez bir telefonla çalışırken, yani çok enteresandır, koyuyoruz telefonu, bir sıkıntı olduğunu tespit ettik, 8.80 gösteriyor.
+
+407
+01:33:59,255 --> 01:34:01,735
+Ya da işte 8.90 tam şu an sizleri hatırlamıyorum.
+
+408
+01:34:02,452 --> 01:34:14,492
+Bu, o sensörün kalibrasyonda bir sorun olduğunu bize gösteriyor. Peki, telefonu 10. kattan aşağı attınız. Telefonun gösterdiği inme nedir?
+
+409
+01:34:19,604 --> 01:34:21,036
+Saniye değişir.
+
+410
+01:34:24,115 --> 01:34:30,335
+Peki, değişken değerlerin içerisinde ne görmeyi mutlarsınız ya da beklersiniz.
+
+411
+01:34:32,335 --> 01:34:40,295
+Normal çalışan telefonla bastırıyorum. Yine yerçekimi bilgisinin de dahil olduğu bir ortamdayız.
+
+412
+01:34:40,295 --> 01:34:45,295
+Yerçekimi yine de hesaba katarak bize de değer döndürüyor Yeman Açak.
+
+413
+01:34:46,615 --> 01:34:48,955
+Yukarıdan Freefall Düşüşte.
+
+414
+01:34:49,460 --> 01:34:57,819
+Lisedeki atışlar konusunda yer çekimi artı her saniye 5, 10, 15 diye sanki hatırlıyorum.
+
+415
+01:34:58,399 --> 01:35:05,460
+O hızın sanki ivmesi sabit kalır, yer çekimi ivmesiyle eşit olur diye düşünüyorum ama...
+
+416
+01:35:06,880 --> 01:35:10,539
+Yani 9.80 milimi gösterir bir eksan, düz düştüğünü düşünürsek.
+
+417
+01:35:10,539 --> 01:35:13,539
+Rütümenin düz düşerlerine bence...
+
+418
+01:35:13,539 --> 01:35:15,659
+Duyamadım Heniz.
+
+419
+01:35:16,180 --> 01:35:26,760
+Düz düşerse bence yer çekimini göstermesi lazım sadece. Yani sonuçta ebay ölçüyor. Sabit olması lazım ebay'in aşağıya doğru devamlı.
+
+420
+01:35:26,760 --> 01:35:32,820
+Peki, başka değişik bir fikir olan var mı ya da aynı fikirde olan var mı?
+
+421
+01:35:32,820 --> 01:35:36,659
+Aynı fikirdeyim. Sürtünmenin önemi yoksa veya işte...
+
+422
+01:35:36,659 --> 01:35:38,659
+Evet, sürtünmenin çok önemi yok diyelim.
+
+423
+01:35:38,659 --> 01:35:40,500
+Evet, ben de aynı fikirdeyim.
+
+424
+01:35:40,500 --> 01:35:42,500
+İse pizik problemlerden böyle.
+
+425
+01:35:43,060 --> 01:35:44,060
+Sırtınmayız.
+
+426
+01:35:45,440 --> 01:35:49,680
+Üzgünüm. İkinizin cevabı da doğru değil.
+
+427
+01:35:51,060 --> 01:35:58,600
+Telefon düşerken belirli bir doğrultuda aşağıya bütün eksemler sıfır gösterdi.
+
+428
+01:36:00,940 --> 01:36:10,100
+Çünkü siz telefonu hastanın üzerine koyduğunuzda ona bir yer çekme gibi suydurlanıyor.
+
+429
+01:36:10,739 --> 01:36:36,960
+Telefon hareketsizken 9.81'i gösteriyor. Telefon yer çekimiyle birlikte hareket ederken, doğal olarak yer çekimini hareket ettiği için değer sıfır olacaktır. Free ball, serbest düşücü. Yani biz aşağı düşerken inmemiz 9.81 değildir. Biz aşağı düşerken inmemiz sıfırdır. Çünkü serbest düşücü yapıyoruz.
+
+430
+01:36:37,971 --> 01:36:39,971
+Ölçtüğümüz değerden bahsediyorum.
+
+431
+01:36:43,988 --> 01:37:00,627
+Telefonun gösterdiği değerden. Telefon normalde iğme değerine sabit duruyorken masanın üzerinde 981 görüyoruz ya, o bize yer çekimi iğmesiyle beraber gözüküyor. Eğer sizin söylediğiniz ne zaman geçerli olurdu biliyor musunuz?
+
+432
+01:37:00,627 --> 01:37:06,967
+Bir de eğer aksanometrenin değerlerine baksaydık, o zaman orada 981'i görebilirdik.
+
+433
+01:37:09,555 --> 01:37:12,275
+Biz dışarıdan bakmayı düşündük sanki.
+
+434
+01:37:13,275 --> 01:37:18,875
+Linear aksanometre her zaman için uygulanan kuvveti yarçekimsiz olarak verir.
+
+435
+01:37:18,875 --> 01:37:20,875
+Ama birçok aksanometre...
+
+436
+01:37:22,420 --> 01:37:48,779
+uygulamasına ya da çalışmasına baktığınızda değerlerin ağırlıklı olarak yer çekimi inmesi katılarak gösterildiğini görürsünüz. Telefonda da default aksanometre uygulaması. Zaten telefonun üzerine, masanın üzerine koyduğunuzda telefonun 9.81 dememizin sebebi yer çekiminin de işin içinde olması. Ama lineal olarak baksaydık evet sıfır olacaktı ve düşerken de 9.81 olacaktı.
+
+437
+01:37:49,235 --> 01:38:02,735
+Aradaki fark bu. Yani sonuçta gösterim şekilleri farklı ama bunu kullanırken bilmek gerekiyor. Aksi takdirde yanlış sonuçlar çıkartma hızlılarımız söz konusu.
+
+438
+01:38:02,735 --> 01:38:15,235
+Burada bir imançların yapısı var, kapasitans. Nasıl ölçüm yapılıyor, değişimler sırasındaki o sistik hareketin nasıl etkilediğini gösteren.
+
+439
+01:38:15,731 --> 01:38:29,012
+Bir çizim. Burada jiloskop var. Jiloskop belirli bir eksende ne hızda hareket gerçekleştiğini ölçen bir sensör.
+
+440
+01:38:29,672 --> 01:38:38,992
+Radyan bölü saniye çizimden bize bilgi veriyor. Bu da hareketlerin tespitlerinden olması olma sensörlerden bir tanesi.
+
+441
+01:38:41,971 --> 01:39:05,532
+Termometre ve nem ölçer dediğimiz sensörler. Artık nem ölçerler çok fazla yok telefonlarda. Sıcaklık ölçümünde daha çok cihazın iç aksamındaki sıcaklığı ölçmek için var. Ortam sıcaklığı açısından çok da sık görmüyoruz.
+
+442
+01:39:05,532 --> 01:39:08,211
+İzlediğiniz için var hocam.
+
+443
+01:39:08,627 --> 01:39:19,547
+Efendim? Bilin sıcaklığını ölçmek için. Evet. O çok önemli. Onu birkaç kötü deneyimden sonra devreye aldılar.
+
+444
+01:39:20,488 --> 01:39:23,787
+Biyometrik sensörlere geldiğimizde parmak izi okuyucu.
+
+445
+01:39:26,707 --> 01:39:48,827
+Bunların dışında, bunlar hep telefon üzerindeki sensörlerdi. Günlük hayatımızda, IoT uygulamalarına baktığımızda, hava kalitesinin ölçülmesi, ondan sonra havadaki nem değerinin ölçülmesi, oksijen seviyesi, karbon dioksit seviyesi vs. bunlar önem kazandı.
+
+446
+01:39:51,828 --> 01:40:19,348
+İş çalışma ortamlarındaki ölçtüğümüz değerlere göre havalandırmaya çalıştırmanız, içeri temiz hava basmanız bu sistemlerin olmazsa olmazı ve bugün aslında günümüzde sigara, akciğer kanser ile doğrudan ilişkilendirilse de şehirde yaşayan insanların önemli bir bölümünü.
+
+447
+01:40:19,891 --> 01:40:26,692
+Hava kirliliği dolayısıyla akciğer sorunları yaşadığını, sağlık araştırmaları ortaya koyuyor.
+
+448
+01:40:26,692 --> 01:40:33,971
+Ve bu ciddi derecede büyük bir risk oluşturmakta günümüz saatte.
+
+449
+01:40:33,971 --> 01:40:42,612
+Bunun için de aslında daha fazla ölçüm yapılması, daha...
+
+450
+01:40:42,739 --> 01:40:48,699
+Buna yönelik sistemden geliştirmesi kritik arama taşıyor ve bunun için birçok sensör var.
+
+451
+01:40:49,179 --> 01:40:59,579
+Pedometre, bugün sanal olarak telefonlarda biraz önceki fiziksel sensörlerin kullanılmıyla hesaplamalar yapılabiliyor ama cihaz olarak da var.
+
+452
+01:41:00,051 --> 01:41:12,911
+Çok yaygın olarak antikeskisi kadar kullanılmasında. Çünkü bunun yerine akıllı sağlıklar almış durumda. Siz zaten adım ölçer olarak destek veriyorlar.
+
+453
+01:41:12,911 --> 01:41:14,911
+Yine...
+
+454
+01:41:15,507 --> 01:41:37,887
+Telefonların yaptığı uygulamalardan bir tanesi. Sizin kalp atış hızınızı ölçmek. Bunu farklı teknikle yapan var mı? Kalp atış sensörü dışında kullanılan bir teknik var mı? Uygulamalardan birkaç tanesi böyle bir yaklaşımla kalp atış hızınızı ölçüyor.
+
+455
+01:41:44,115 --> 01:41:47,855
+Parmağınızı kameraya koyuyorsunuz. Onu bilen var mı?
+
+456
+01:41:49,756 --> 01:41:51,895
+Hocam ben duymuştum ama denemedim.
+
+457
+01:41:52,655 --> 01:41:56,296
+Parmağınızı kameraya dokunduruyorsunuz. Uygulamanın parmağınızın...
+
+458
+01:41:56,979 --> 01:42:10,479
+Evet, eski, tam olarak Slide'daki Samsung telefonda ve birkaç cinsinde denk gelmiştim ama ondan sonra ortadan kalktı bu. Yani yok şu anda, hiçbir telefonda görmüyorum.
+
+459
+01:42:10,479 --> 01:42:18,411
+Evet, aynen öyle. Belirli bir fikir veriyordu ama açıkçası bu sensörün ölçümü...
+
+460
+01:42:18,579 --> 01:42:21,440
+Bu kadar hassasiyetle ölçmesini beklemiyoruz.
+
+461
+01:42:21,920 --> 01:42:29,220
+Evet, şu anda aktif olarak telefonlarda var mı yok mu bilmiyorum ama bu akıllı saatlerde ve bilekliklerde neredeyse hepsinde var sanırım.
+
+462
+01:42:30,020 --> 01:42:34,840
+Sanırım telefonlar da devam ediyor hocam. Anneme yeni telefon almıştık, onda da varmış.
+
+463
+01:42:34,840 --> 01:42:42,159
+Evet, şimdi orada yine şöyle bir durum var. Strateji gereği de bunu yapıyorlar.
+
+464
+01:42:45,939 --> 01:43:05,219
+XC, Z sensörü, bazı telefonlarda ABC sensörü olabilir, default sensörlerin dışında. Bu birazcık pazarlama unsur olarak da kullanılıyor. Yaygın olarak akıllı saatlere geçmiş durumda bu sağlıkla ilgili ölçümleri yapan sensörler ama telefonların bazılarında hala, arkadaşınızın söylediği gibi,
+
+465
+01:43:06,323 --> 01:43:19,043
+Bunlar bir, akıllı saat kullanmıyorsunuz ama kalp atışınızı kontrol etmek için böyle bir imkan sunuyoruz size diye telefonların tercih edilmesini sağlayabiliyor.
+
+466
+01:43:19,043 --> 01:43:24,844
+Sadece bu amaçlı bir segment telefon yaratıp onun satışını mümkün kalabiliyorlar.
+
+467
+01:43:25,384 --> 01:43:34,323
+Bu anlamda önemli ve birçok işte buradaki eploid dansı hem oksijen seviyemizde...
+
+468
+01:43:34,323 --> 01:43:59,384
+Enge kalp atışınızdaki değişikliği takip edip özellikle kalp krizi yaşanmadan birçok kişinin predictive maintenance dediğimiz kestirimci bakım, sizin de kestirimci sağlık kontrolü dediğimiz aslında hedef olmadan olma ihtimali tespit etmek ve buna göre öndem almanızı sağlamak.
+
+469
+01:44:00,051 --> 01:44:19,112
+Bugün yine bir araştırma konusu olarak karşınıza çıkan bu kestirici bakım birçok alanda deneniyor diyelim. Henüz çok verimli olduğunu söylemek mümkün değil ama örneğin düşmeden düşebilme ihtimalinizi öngörmek.
+
+470
+01:44:19,503 --> 01:44:42,184
+Yani sen denediniz ya da yürüyüşünüzde bir değişiklik oldu, sizi uyaracak ya da yakınızı uyaracak. Bu kişi her an düşebilir. Bu sayede belki dinlenmenizi ya da gözlerinizin kapanmasına bağlı olarak arabadaki uyku durumuna geçmeden uyuyabileceğinizi tespit etmek.
+
+471
+01:44:42,644 --> 01:44:52,423
+Kestirici bakım aslında bu ve kazanın önüne geçmek. Bugün endüstriyel alanda fabrikalarda da şu amaçla kullanılıyor.
+
+472
+01:44:52,963 --> 01:44:56,563
+Cihazlar var. Bunların belli periyotlarla bakıma sokulması gerekiyor.
+
+473
+01:44:56,563 --> 01:45:02,743
+Ama bu cihazların bir de bozulma potansiyelleri var. Arızalanma ihtimalleri var.
+
+474
+01:45:04,203 --> 01:45:07,563
+Ve üzerindeki çeşitli sensörlerden toplanan verilerle...
+
+475
+01:45:08,115 --> 01:45:19,716
+Özellikle vibrasyon verisi endüstriyel alanında çok sık kullanılıyor. Makinenin artık o vibrasyonun bozulmasından anomali tespiti yapılarak artık her an arıza verebilir.
+
+476
+01:45:20,775 --> 01:45:31,115
+Dil onu bakıma almanızı ve arıza olmadan ömrünü uzatmanızı mümkün kılabiliyor. Çünkü arıza olduğunda bakım...
+
+477
+01:45:31,136 --> 01:45:35,136
+Daha uzun bir süre de arıza için vakit harcayabiliyorsunuz.
+
+478
+01:45:36,636 --> 01:45:39,636
+Olmadan bir şeyi öngörebilmek,
+
+479
+01:45:39,636 --> 01:45:44,136
+gerçekten bütün gitmiş hatı değiştirebiliyor.
+
+480
+01:45:46,136 --> 01:45:48,636
+O yüzden Predictive Momentum's diye aratırsanız,
+
+481
+01:45:48,636 --> 01:45:54,636
+yine test çalışması kapsamında size farklı pencereler açılabilir.
+
+482
+01:45:54,636 --> 01:45:58,136
+Bunu da öneriyorum.
+
+483
+01:45:58,899 --> 01:46:16,000
+Birçok alanı var. O yüzden predictive maintenance'ı tek bir alana indirgemek mümkün değil. Kestirimci bakım diye adlandırılıyor. Ama detect etmekten önce, predict etmek daha önemli olan bir bakış açısı.
+
+484
+01:46:25,908 --> 01:46:44,587
+Den kestirmek ve işte ona göre inşaat çalışmalarını, o günkü yol bakım çalışmalarını, asfalt dökme işini vesaire yağmur olmayacağını bilmek. Hep bunlar müthiş bir kazak sağlıyor. Bunu farklı alanlara taşımaya çalışıyorlar günümüzde.
+
+485
+01:46:45,627 --> 01:46:49,167
+Radyasyon sansörü bu da bir başka önemli.
+
+486
+01:46:49,811 --> 01:47:10,811
+Konu ihtiyaç duyduğunda özellikle nükleer santrallerin etrafında bu tür ölçümlerin ya da çalıştırılan biyometrik alanındaki cihazların yaydığı röntgen cihazları, diş...
+
+487
+01:47:11,475 --> 01:47:24,855
+Tron tükeninin çekilmesi noktasındaki cihazın geldiği radyasyon vesaire ya da uçaklarındaki alınan radyasyon. Biliyorsunuz uçak seyahatlerinde de bir radyasyona maruz kalıyoruz. Sebebi nedir biliyor musunuz?
+
+488
+01:47:28,851 --> 01:47:31,851
+Ya da bunu daha önce duymuş muydum? Uçak seyahatlerindeki radyosu.
+
+489
+01:47:32,251 --> 01:47:36,771
+Uçuş radarıyla olan iletişimden sebep olabilir mi hocam?
+
+490
+01:47:38,532 --> 01:47:43,032
+Yani uçağın bağlı bulunduğu veya uçağı gören radarların bize ulaşan...
+
+491
+01:47:43,032 --> 01:47:45,171
+Bir tahmindir. Fener'de dursun.
+
+492
+01:47:45,652 --> 01:47:46,671
+Tamam. Başka?
+
+493
+01:47:47,331 --> 01:47:49,072
+Atlantosar ile alakalı bir şeydi sanki.
+
+494
+01:47:49,072 --> 01:47:50,671
+Yani makine...
+
+495
+01:47:50,671 --> 01:47:54,492
+Atmosar ne olabilir?
+
+496
+01:47:56,051 --> 01:47:57,252
+O kadar hatırlamıyorum hocam.
+
+497
+01:47:57,872 --> 01:48:01,971
+Aslında çok basit bir cevabı var. Sen ipucu vermiş gibi oldun. Tahmin edilebilirim ortadan itibaren.
+
+498
+01:48:03,591 --> 01:48:08,452
+Yani basıncı diyesim var ama atmosfer basıncını dengelemek için uçağın içerisinde...
+
+499
+01:48:08,452 --> 01:48:12,612
+Değil, değil. Hiç öyle bir şey değil. Bayağı bildiğiniz gün...
+
+500
+01:48:12,612 --> 01:48:14,471
+Güneş ışınlarından gelen radyasyon.
+
+501
+01:48:15,771 --> 01:48:16,711
+Bir daha tekrar alayım.
+
+502
+01:48:17,452 --> 01:48:18,671
+Güneş ışınları...
+
+503
+01:48:18,671 --> 01:48:18,971
+Evet.
+
+504
+01:48:20,591 --> 01:48:22,431
+Güneş ışınlarından gelen radyasyon.
+
+505
+01:48:23,060 --> 01:48:31,039
+Üst katmanlara çıktığınızda daha fazla bu ışınların miktarına maruz kalıyorsunuz.
+
+506
+01:48:31,079 --> 01:48:37,820
+Tabii ki bir koruyucu shield var ama her şeye rağmen hatta bir doktor şey demişti.
+
+507
+01:48:38,159 --> 01:48:49,920
+Bir uçak seyahatinde buradaki işte diş panografik fotoğraf çekiyorsunuz diyelim. Maruz kaldığım radyasyonu daha fazla radyasyona maruz kalıyorsun diye bilgi vermişti zamanında.
+
+508
+01:48:52,060 --> 01:49:04,240
+Tamamen güneş ışığı. O yüzden gece yolculukları bu anlamda daha az radyasyona maruz kaldığımız bir uçuş oluyor. Aklınızda olsun.
+
+509
+01:49:04,787 --> 01:49:13,747
+Hocam, bilginin tabii ki doğruluğunu kabul ediyorum, sorgulamıyorum ama o zaman hostesler ve pilotlar...
+
+510
+01:49:13,747 --> 01:49:23,667
+Evet, aynı soruyu ben de kendime sordum çokça kez. Bu şöyle bir şey sanırım, bu gerçekten çok büyük bir miktar değil.
+
+511
+01:49:24,627 --> 01:49:34,167
+Vücudunu absorbe edebileceği ve gece uyuduğunuz zaman üzeriniz, yani atabileceğiniz civarlarla biriktar normal bir insan vücudu çalışıyorsa.
+
+512
+01:49:34,612 --> 01:49:41,731
+Bildiğim kadarıyla. O yüzden de onların hayatında bariz bir şekilde bir şey gerçekleşmiyor.
+
+513
+01:49:42,231 --> 01:49:52,391
+Sağlık bölümü gerçekleşmiyor. Ama vücudumuzda, özellikle akşam uyku saatlerinde vücudun bir temizlenme süreci var.
+
+514
+01:49:52,391 --> 01:50:00,000
+Zaten kanser ve hücrelerin hepimizin vücudunda olduğu bir gerçek. Bunların temizlenememesi.
+
+515
+01:50:00,000 --> 01:50:13,300
+Bu durumunda birleşmesi ve çoğalması sıkıntı oluyor. Bu insanlar daha maalesef kötü etkileniyorlar bu süreçten. Benim bildiğim kadarıyla bu kadar tabii [öğrenci] ama çok bu konuda deneyimli değilim.
+
+516
+01:50:15,123 --> 01:50:17,123
+Canber, bir şey söyleyebilir miyim?
+
+517
+01:50:17,483 --> 01:50:17,763
+Tabii.
+
+518
+01:50:18,403 --> 01:50:30,303
+Yakın zamanda okuduğum haberden dolayı ben de ufositesden daha çok kansere yakalandığını öğrenmiştim. Meslek deformasyonu gibiymiş. Haberde böyle yazıyordu. Yani aslında çok da hatırladığım boyutu.
+
+519
+01:50:30,303 --> 01:50:42,283
+Ben de o oranı bilmediğim için yanlış bir şey söylemek istemedim. Hani bariz bir şekilde çok karşılaştığım bir haber değildi. Belki özellikle de bunu ön plana çıkarmalar ama yani...
+
+520
+01:50:42,323 --> 01:51:06,243
+Olasılığının daha yüksek olduğunu söyleyebiliriz sanırım. Yanlış olmayacaktır. Ama çok da bariz bir, ne diyelim, belirgin bir durum olduğunu da söyleyemiyoruz. Burada biraz vücudun yapısının, onun ne kadar beyli olduğunu değerlendirmekte fayda var.
+
+521
+01:51:07,283 --> 01:51:19,283
+Mikrofon ve kamera aslında bizim için değerli olan iki tane sensör. Yani bu biri gözümüz, biri de kulağımız gibi düşünebilirsiniz.
+
+522
+01:51:19,283 --> 01:51:32,283
+Ve ortamdan topladığımız bu verilerle birçok iş yapıyoruz ama ikisi de privacy ve security tepsisinden riskler barındırıyor.
+
+523
+01:51:32,623 --> 01:51:38,623
+Her istediğimiz görüntüyü kullanamıyoruz. Her istediğimiz ortamdan ses toplayamıyoruz.
+
+524
+01:51:38,623 --> 01:51:43,623
+Fakat günün sonunda bunlar manipüle edilebilir bilgiler dair varlığında.
+
+525
+01:51:43,623 --> 01:51:47,623
+Bununla ilgili çok aslında olay yaşıyoruz.
+
+526
+01:51:47,623 --> 01:51:58,623
+O yüzden de sensörlerinden gelen verinin manipüle edilebilirliği ve edilemezliği noktasında da birçok çalışma yürütülüyor.
+
+527
+01:51:58,868 --> 01:52:06,868
+O verinin işte, hash değerine çıkarılması gibi birçok çözüm var.
+
+528
+01:52:06,868 --> 01:52:17,740
+Tabi hepsine karşılıklı bir saldırı tekniği var. Bu alanlar, özellikle diğer sensörlerin de yine manipüle edilebilir olması önemli.
+
+529
+01:52:17,971 --> 01:52:27,771
+Ve üzerine çalışılması gereken alanlar diye düşünüyorum. Size daha önce email veerlerle ilgili şey söylemiştim. Email veer, Sandbox'da olur.
+
+530
+01:52:27,771 --> 01:52:36,071
+İlse kendini açığa çıkarmıyor. Normal bir telefonu mesela açığa çıkarıyor. Biz de Sandbox'ı normal bir telefon davrandırtmaya çalışıyoruz demiştim.
+
+531
+01:52:41,055 --> 01:52:46,055
+Beklentim de bu alandaki çalışmalara biraz daha yakından bakarak...
+
+532
+01:52:47,699 --> 01:53:04,320
+Biz bunu nasıl mimikleyebiliriz, bu davranışları nasıl değerlendirebiliriz, bunları araştırmalıyız. Güzel değişik konular çıkabilir çünkü belli davranışları mimiklemek de, onun gibi davranışlar da önemli hırsız polis oyununda.
+
+533
+01:53:04,320 --> 01:53:15,699
+Buna karşı, buna antitec üretmek de değerli. O yüzden şartlara bağlı olarak geri geldiğinde inme ölçüleri...
+
+534
+01:53:15,699 --> 01:53:29,699
+Bu soskopu da taklit edebilmek gerekiyor ve gerekecek. Sadece bir görüntü manipüle etmek değil. Aynı zamanda bu sensörlerinde manipüle edilebileceği ortamlar var. Hatta bunlarla ilgili işte...
+
+535
+01:53:29,971 --> 01:53:57,971
+Yapılacak saldırılarda üretilen değerlerin manipüle edilerek yanlış kararlara sebebiyet verilmesi, önümüzdeki 10 senelerin saldırı teklifleri arasına girecek, işte büyük sistemlerdeki bu bir uçak, otonoma açı vs. de olabilir ya da fabrika ortamları vs. yanlış veriler üretilerek bu sayede işte yangın ararının üretilmesi, boşuna işte insanların...
+
+536
+01:53:57,971 --> 01:54:03,792
+Kaynakların tüketimine serviyet verilmesi gibi senaryolar üzerinde de saldırı teknikleri üzerinde çalışılıyor.
+
+537
+01:54:03,792 --> 01:54:09,952
+Ki bu DDoS ataklarının en büyük amacı o.
+
+538
+01:54:10,452 --> 01:54:11,391
+İşte kaynağı.
+
+539
+01:54:12,212 --> 01:54:19,952
+Çok fazla saldırıya maruz bırakarak, respons vermesin, yani sürekli talepte bulunarak kullanılamaz hale getirmek.
+
+540
+01:54:19,952 --> 01:54:27,992
+Bunun gibi sensör verileriyle ilgili de değerler değiştirilerek karşı tarafa olmayan bir durum.
+
+541
+01:54:28,252 --> 01:54:29,712
+Senaryo üretilmesi hedefleri.
+
+542
+01:54:30,372 --> 01:54:32,412
+Gelelim enerji tüketimlerine.
+
+543
+01:54:33,672 --> 01:54:37,912
+Bariz bir enerji tüketimi. GPS tarafında gözüküyor. Turuncu renkli bağda.
+
+544
+01:54:38,484 --> 01:54:55,884
+Öte yandan diğer en temel hareket sensörlerine baktığımızda içlerinde manyetik, field ölçümü yapan manyetometrenin biraz daha yüksek değerler üretebildiğini görüyorsunuz.
+
+545
+01:54:56,564 --> 01:55:04,684
+Özellikle hareket halinde bu biraz daha fazlalaşıyor. Hem indoor'da hem outdoor'da.
+
+546
+01:55:05,055 --> 01:55:24,135
+Bir de Orientation Sansörü bu anlamda fark etmiş. Onun sebebi de diğer sensörlerden gelen verinin işlenmesi. Orientation Sansörü genellikle eskiden Hardware Sensörü olarak kullanıyordu. Şimdi Software Sensörü olarak kullanılıyor. Hardware Sensörü ve Software Sensörü nedir diye sorsam.
+
+547
+01:55:34,931 --> 01:55:37,391
+Harbi versen sor ve soft versen sor nedir?
+
+548
+01:55:38,036 --> 01:55:45,655
+Evet, orientation'dan yola çıkarak bunu sorduğunuzu düşünerek şöyle bir şey aklıma geliyor.
+
+549
+01:55:46,195 --> 01:55:51,096
+Yani aslında aklıma gelmenin de ziyadesinde hardware sensör gerçekten bir şey, parça.
+
+550
+01:55:51,275 --> 01:55:55,695
+Ondan sonra donanımsal bir şey. Telefona veya mobil cihazı her neyse ekleniyor.
+
+551
+01:55:56,296 --> 01:56:01,815
+Ve orada fiziksel olarak var. Ama software sensör işte bir oyun oynayacağız.
+
+552
+01:56:01,815 --> 01:56:06,036
+Zaten oyunu dikey olarak oynamıyoruz örneğin telefonda yatay genelde.
+
+553
+01:56:06,036 --> 01:56:23,435
+Benim karşılaştığım birçok oyunlar diyelim. Burada şeye gerek yok. Fiziksel olarak bir sensöre ihtiyaç yok. Mecburen telefonun ekranının yan döndüğünü bir şekilde anlayabiliyor işletim sistemi. Sadece aklıma oyun geliyor. Düşüneyim başka var mı?
+
+554
+01:56:23,435 --> 01:56:31,176
+Aslında [öğrenci] şöyle örnek olarak doğru bir yerden yola çıktın ama ifade tam doğru değil. Onu şöyle düzeltmemiz lazım.
+
+555
+01:56:32,979 --> 01:56:50,731
+Hardware sensöründe donanımsal bir yapı var. Doğru. Solskjaer sensör, donanımsal sensörleri kullanılarak karar üreten sensöre verilen isim. Solskjaer sensör, donanımsal sensörlerin değerlerini kullanılarak...
+
+556
+01:56:51,380 --> 01:57:06,340
+Çıktı üreten yazılımsal bir sensör. Yani buradaki orientation sensörü de aksanometre, manyetik field ve jeoskop verisini kullanıyor. Evet, [öğrenci].
+
+557
+01:57:07,340 --> 01:57:14,340
+Hocam, o zaman şu ana kadar işlediğimiz tüm sensörlerin hepsini fiziksel olarak...
+
+558
+01:57:14,899 --> 01:57:16,859
+Alabiliriz diye anlıyorum ben.
+
+559
+01:57:18,219 --> 01:57:20,879
+Çoğunluğu öyle bir tane örnek vereceğim.
+
+560
+01:57:20,879 --> 01:57:24,999
+O zaman algoritmalara denk gelmiş olduğunu söyleyebiliriz herhalde.
+
+561
+01:57:25,739 --> 01:57:27,739
+Mesela benim aklıma şey geldi, face recognition.
+
+562
+01:57:28,519 --> 01:57:33,199
+Yani yüz tanımı aslında bir algoritma ama bir işlev yerine getiriyor gibi düşünerek.
+
+563
+01:57:33,199 --> 01:57:35,259
+Ben şu an böyle bir yorum yapacağım ama doğru.
+
+564
+01:57:36,019 --> 01:57:37,939
+Tam olarak öyle değil, orayı bir düzeltelim.
+
+565
+01:57:38,539 --> 01:57:40,479
+Yani bir karışıklık olmasın.
+
+566
+01:57:40,839 --> 01:57:42,119
+Şimdi örneğin.
+
+567
+01:57:42,899 --> 01:57:54,763
+Akselerometre fiziksel donundan aldığı değerlerle fiziksel gerçekleşen hareketin değerini bize üretiyor. Lineer akselerometre...
+
+568
+01:57:55,091 --> 01:58:03,851
+Yani biz normalde şu ana kadar işte hep ne diyelim yer çekimini de hesaba katan aksiyonometreden bahsettik.
+
+569
+01:58:03,951 --> 01:58:10,491
+Genel aksiyonometreden bahsettik. Linear aksiyonometre donumsal olarak da bir cihazda bulunabilir.
+
+570
+01:58:10,491 --> 01:58:22,152
+Sadece o eksenlerdeki fiziksel hareket değişimi ölçü olabilir. Ya da genel aksiyonometreden bahsettiğimiz yer çekimini çıkartarak bir değer üretiyor olabilir.
+
+571
+01:58:22,676 --> 01:58:44,676
+Bu çıkartma işini yazılımsal olarak yapan ve size der ki biraz önce işte serbest düşüşte sıfır demiştik. Çıkartsaydı işte 981 diyecekti. Ya da telefonu masaya koyduğunuzda bütün eksenler sıfır olacaktı. Bunu yazılımsal olarak yapan sensör lineal aksanotri. Bir başka örnek pedometre. Pedometrede...
+
+572
+01:58:44,895 --> 01:58:55,956
+Bir yazılımsal sensördür ve aksinamometreden, şiroskoptan gelen ve manyetometreden gelen veriyi kullanır ve sizin kaç adım attığınızı söyler size.
+
+573
+01:58:56,355 --> 01:59:08,715
+Yani aslında adım sayısını birebir ölçen bir sensör değildir. Diğer sensörlerden gelen bilgiyi alır, bir hesaplama doğrultusunda size değer üretir.
+
+574
+01:59:10,387 --> 01:59:13,807
+Temel farklılık bu orientation sensör için de aynı şey geçerli.
+
+575
+01:59:13,807 --> 01:59:24,188
+Bu bahsettiğimiz motion sensörlerinden bilgiyi alır, dikey mi yatay mı telefonunuzun olduğunu size orientation sensör yazılımsal olarak söyler.
+
+576
+01:59:24,188 --> 01:59:34,148
+Eskiden ekstra bir sensör vardı ve hakikaten bunu donanım olarak aldığı değerlerle size dikey yatay olduğu bilgisini veriyordu.
+
+577
+01:59:34,148 --> 01:59:36,524
+Bilmem anlatabildim mi?
+
+578
+01:59:39,923 --> 01:59:42,764
+Benim için daha anlaşılır oldu. Çok teşekkürler.
+
+579
+01:59:44,624 --> 01:59:47,024
+Senan'ın söylediği biraz daha farklı.
+
+580
+01:59:47,423 --> 01:59:54,364
+Yani, Basic Ognation kısmında şöyle de bir örnek verelim.
+
+581
+01:59:54,364 --> 01:59:57,184
+Şimdi Hardware Sensör, Software Sensör dedik.
+
+582
+01:59:57,184 --> 02:00:01,984
+Android'in üzerinde de önemli bir kısmı da Software Sensör.
+
+583
+02:00:01,984 --> 02:00:02,684
+Çünkü...
+
+584
+02:00:03,412 --> 02:00:15,292
+Diğer sensörlerden aldığı bilgiyle iş yapabilen sensörler doğru bunu yapabiliyorsa, boşu boşu olarak bağlımsal bir mekanizma üzerine koymuyor.
+
+585
+02:00:16,072 --> 02:00:23,351
+Ve o sensörleri mümkün olduğunca temizliyor. Yani bir tane aksinometresi var, bir tane diğer aksinometre koyayım demiyor.
+
+586
+02:00:23,912 --> 02:00:30,152
+Onun yerine veriyi çıkartır, öyle temizleyerek veririm diyor. Biraz da yerden kazanak sağlamış oluyor.
+
+587
+02:00:30,623 --> 02:00:47,503
+İkincisi de virtual sensör dediğimiz bir kavram var. Sanal sensör. Buna ne örnek verebilirsiniz? Hardware sensör, software sensör dedik bir de virtual sensör.
+
+588
+02:00:57,427 --> 02:01:20,748
+Face Recognition'dan bahsettik. Face Recognition yaparken kişinin duygu durumuyla ilgili bir değer üreten bir sensör kullanmak isteseydiniz, işte mutlu, üzgün, kızgın, nötr gibi bir ifade olursunuz. Bu bir sanal sensör olurdu. Ve siz kişinin yüz bilgileri kullanarak bu bilgini üretmiş olurdunuz.
+
+589
+02:01:21,136 --> 02:01:48,515
+Bunun gibi birçok sansör aslında sanal sansör üretme şansımız var. Hatta günümüzde de bunu farkında olmadan birçok uygulamada kullanıyoruz. Sensör bilgilerinin kullanılarak yeni bir bilgi üretme biçimi aslında. Yine hava durumuyla ilgili. Hava durumunun yağmurlu olması, karlı, parçalı mutlu olması. Böyle bir sansör yok normalde.
+
+590
+02:01:49,011 --> 02:02:12,891
+Biliyorsunuz. Sıcaklık vardır, nem vardır, rüzgar vardır. Bunları ölçersiniz. Ama hava durumu bilgisini paylaştığınız zaman bu o aldığınız fiziksel sensörlerden basınç bilgisi vesaire bulut durumu gibi sensörlerden gelen bilginin birlikte yoğurulmasıyla ortaya çıkan. İşte bunlar virtual sensörler olarak geçiyor.
+
+591
+02:02:14,579 --> 02:02:28,160
+Peki, başka sensör verisi olarak kullanabiliriz diyeceğimiz burada çok konuşmadığımız neler var? Örnek Wi-Fi sinyalleri. Başka?
+
+592
+02:02:36,020 --> 02:02:38,820
+Sensör verisi olarak kullanabileceğimiz neler var?
+
+593
+02:02:38,820 --> 02:03:02,380
+Evet, karar verirken sens eden ama doğrudan fiziksel bir durumu bilgiyi alıp alt etmeyen ama bize aldığı bilgi işe yarayacak karar vermemizi destekleyecek bilgiler.
+
+594
+02:03:04,435 --> 02:03:06,315
+Telefonunuzun özelliğini düşünemersiniz.
+
+595
+02:03:09,971 --> 02:03:25,631
+Wi-Fi sinyalı demiştim. Bazı stasyonundan gelen bazı stasyonu sinyalinin gücü, RSSI oranı, Receipt Signal Strength Indicator.
+
+596
+02:03:27,771 --> 02:03:30,431
+Nasıl kullanırsınız RSSI bilgisini?
+
+597
+02:03:33,939 --> 02:03:41,099
+Distance olarak kullanılabilir mesafe. Evet çok güzel mesafe. Bunun için kullanıyoruz.
+
+598
+02:03:41,619 --> 02:03:58,059
+Mesela kullanıcıya arası say bilgisi üzerinden ya da sinyal gücünüz üzerinden bir bilgi veriyor olsanız ne bilgisi verilmeniz?
+
+599
+02:03:59,572 --> 02:04:04,231
+Göreceli konum bilgisi mi? Vaz istasyondan şu kadar metre uzaktasın gibi.
+
+600
+02:04:04,711 --> 02:04:15,572
+Mesela evet olabilir. Buna bağlı olarak bunu biraz daha böyle kişi için anlamlı hale dönüştürüp ne söylersiniz? Daha önce konuşmuştuk sağlıkla ilgili bir problemde.
+
+601
+02:04:19,031 --> 02:04:21,751
+Çok yakınsa sağlığı tehlikeye girebilir.
+
+602
+02:04:22,452 --> 02:04:36,072
+Tam tersi konuşma yapacağı zaman sinyal gücü yükseliyor demiştik, hatırlıyor musunuz bazı stasyonlar uzaktaysa? Telefonun çıkış gücü. O zaman da daha fazla radyasyona maruz kalıyor demiştik.
+
+603
+02:04:36,072 --> 02:04:49,072
+O yüzden mesela uzak bir noktada ise, çok çekmiyorsa telefonu, tabii ki bunu 3-2 bardağın yapabilirsiniz ama daha da detaylı bir bilgi verebilmek için kullanıcıya bulunduğu bölgenin...
+
+604
+02:04:49,716 --> 02:05:06,756
+Konuşma için uygun olup olmadığı yönünde bir bilgi verebilirsiniz. Hatta bunu haritalandırabilirsiniz. Hatta biraz daha ileri gidiyorum. Daha profesyonel bir çözüme doğru götürmek istiyorum. Bunun karşılığı var mı bilmiyorum. En son biz bununla ben bir ara ilgilenmek istemiştim. O sonra olmadı.
+
+605
+02:05:13,876 --> 02:05:31,876
+Daha ama amatörsünüz. Yelken ya da bir teknolojisi var. Bu RSSI İndikator'ı ya da çıkış gücünü nasıl bu denizcinin yararına kullanırsınız?
+
+606
+02:05:37,652 --> 02:05:54,672
+Denizliği örneği dışında aklıma şey geldi. O tam nasıl işleyebiliyorsun ama bu şekilde işliyor olabilir gibi bu AFAD'dan mesajlar geliyor ya. Yani senin telefonun GPS olmasa bile baz istasyonun konuğunu bildiği için o bölge olduğunu tespit edebilir. AFED bölgesinin olduğunu uyarı verebiliyor.
+
+607
+02:05:54,672 --> 02:05:57,832
+Güzel bir başka katkı.
+
+608
+02:06:03,155 --> 02:06:29,635
+Arkadaşlar, deniz üzerinde doğal olarak baz istasyonu olmadığı için belli bölgelerde telefonunuz çekmiyor. Blind spotlar var. Bu noktalarda siz telefonda iletişim kuramıyorsunuz. Tabii günümüzde bunların bulunduğu yerler azaldı ama yine de açık denizde bu noktalar var. Uydu telefonları var, evet. Doğru.
+
+609
+02:06:30,003 --> 02:06:37,763
+Ama olmadığını ve daha böyle günlük seyahatler yaptığı düşünme, acil bir durumda telefon ihtiyacınız olduğunu düşünün.
+
+610
+02:06:37,763 --> 02:06:54,655
+Eğer işlerin sinyallerinden, telefon sinyallerinden bir harita çıkartabilseydik, ki belki vardı bilmiyorum, o zaman yelkencilere ya da işte tekne sahiplerine o bölgelerin...
+
+611
+02:06:54,655 --> 02:07:18,635
+Ege'den izin bir haritasını verirsiniz ve o koylarda hangi noktaların telefonunu çektiği, hangisinin daha az çektiği, hangi noktanın daha iyi çektiği noktasında bir bilgilendirme yapabilirsiniz. Bu da birçok kişinin hayatını kurtarabilir. Çünkü bazı noktalarda acil yardım noktasında irtibat kurulamayabiliyor. Bu tür katkıları da olabilir.
+
+612
+02:07:20,475 --> 02:07:21,635
+Bence...
+
+613
+02:07:21,971 --> 02:07:37,711
+Telko şirketlerinin %100 ihtimalle böyle bir haritalandırma şeyi vardır. Çünkü reklamları yapıyorlar. %97 kapsama alanına sahibiz. %90. Onların vardır ama tabii ticari olduğu için paylaşmaları çok mümkün değil gibi.
+
+614
+02:07:37,711 --> 02:07:49,711
+Aynen. Senin söylediğin gibi burada amaç ticari olmayan daha amatör insanlar için belki çok yüksek doğrulukta değil ama genel bir fikir verilemeyecek. Bu da bir...
+
+615
+02:07:49,971 --> 02:08:17,051
+Aslında şey konusu, bunu da konuşacağız. Ne denir? İsmi de soracağım. Crowdsourcing. Crowdsensing konusu. Yani çok fazla kişiden bu bilgiyi alırsanız doğal olarak bu haritayı oluşturabilirsiniz. Ve herhangi bir efor sarf etmeler oluşturabilirsiniz. Bu yüzden önemli bir başlık. Bunun gibi başka işlerde yapılabilir. Bu sadece bir örnek.
+
+616
+02:08:17,423 --> 02:08:31,144
+Konsumşon tarafına geldiğimizde telefon üzerindeki konsumşonlara baktığımızda en yüksek tüketimlerden bir tanesinin GSM tarafında olduğunu görüyorsunuz.
+
+617
+02:08:31,144 --> 02:08:39,783
+Ama tabii ki bu verilen ikinci figürdeki örnek.
+
+618
+02:08:40,159 --> 02:09:06,159
+Suspended State konumunda verilen bir durum. Genellikle diğer işlerin çok aktif olmadığı bir durumdan bahsediyoruz ama öbür tarafta işte arka plandaki idle konumuna baktığımızda grafik işlemcinin en yüksek, daha doğrusu grafik işlerinin en yüksek...
+
+619
+02:09:06,431 --> 02:09:31,792
+Vücü tükettiğini görebiliyorsunuz. Bu noktada GSM hala yukarıda bulunuyor ama bunlar göreceli olarak baktığınızda yandaki scale ile üçüncü figürdeki scale ile aynı değil. Ama bir telefonun genel enerji tüketimine baktığınız zaman bunu oluşturan birkaç tane başlık var. Birincisi GPS. Burada dikkate almamışlar. Deney de yok.
+
+620
+02:09:32,500 --> 02:09:56,100
+İki, ekran parlaklığı. Çok önemli. Hatta ekran parlaklığı orta seviyeden sonra artık lineer artışından çok biraz daha böyle kuadratik artışa doğru gidiyor. Orta seviyeye kadar daha az, yani daha lineer ilerlerken sonra daha dramatik bir şekilde artıyor.
+
+621
+02:10:00,020 --> 02:10:26,880
+Sırasında harcanan enerji bu. GSM üzerinden de olabilir. Wi-Fi üzerinden de olabilir. GSM üzerinden tabii ki belirgin daha yüksek bir enerji harcadığını görüyorsunuz. O yüzden zaten telefon işletim sistemlerinde çok uzun yıllardır. Otomatik olarak Wi-Fi access point'e erişim açıksa kendi switch eder. Daha önce bağlandığı bir Wi-Fi bulduğunda.
+
+622
+02:10:27,391 --> 02:10:43,291
+Tabii bunun açık olması demek sürekli de bir sinyal arayışı içinde olması demek. Siz bunu yönetiyor olsaydınız nasıl yönetirdiniz? Bu sürekli bir Wi-Fi var mı noktasındaki süreci daha az enerjiyi tüketmek adına?
+
+623
+02:10:47,380 --> 02:11:11,599
+Kesinlikle kullanım alışkanlıkları. Yani kişinin evde, işte bir wifi'yi varsa, biliyorum yani telefon olarak ben, işletim sistemi olarak, saatler ve işte hafta içi günleri ise bu adam saat işte akşam 10'da muhakkak eldedir düşüncesiyle. Daha sık ararım ve bağlanıyorsam zaten artık aramama gerek yok.
+
+624
+02:11:11,988 --> 02:11:21,668
+Ama işte veya işte Wi-Fi'nin olmadığı bir yerde olacağını düşünüyorsam saat olarak daha seyrek sıklıklarla ararım Wi-Fi'yi.
+
+625
+02:11:22,100 --> 02:11:43,239
+Evet, bu dinamik aslında tarama çok, gene teşekkürler, güzel bir şey oldu, anlatım oldu. Bu dinamik tarama aslında birçok alanda, yani bu scaling, voltage scaling de yapıyoruz işte CPU tarafında, frequency scaling de yapıyoruz. Adaptif.
+
+626
+02:11:44,787 --> 02:12:03,087
+Uygulamalar çok önemli. Siz Wi-Fi'de mütemadiyen her saniyede bir, her 5 saniyede bir, her 10 saniyede bir soru bilirsiniz de. Ama bunu yaptığınızda her bir enerji tüketim demek. Bunun yerine [öğrenci]'nin söylediği gibi bunu adaptif hale getirirseniz.
+
+627
+02:12:03,604 --> 02:12:21,904
+Bir de bunun içinde kullanım alışkanlıklarını katarsanız, katmadan da yapabilirsiniz ama daha profesyonel olması ve daha etkili olması için sizin Wi-Fi'yi hangi saatlerde, nerelerde kullandığınız bilgisine dayanarak sorgulama sıklığınızı değiştirebilirsiniz.
+
+628
+02:12:24,787 --> 02:12:48,407
+Bazen dakikada bir olabilir, bazen beş dakikada bir olabilir. Bu sayede ciddi enerji kazançları mümkün olabiliyor. Zaten birçok çözünün adaptif yaklaşımdan geçtiğini göreceksiniz telefondan ilgili. Standart, ne diyelim ona, periyodik.
+
+629
+02:12:48,819 --> 02:12:52,420
+Yapılacak işlerle bunu sağlamanız pek mümkün değil.
+
+630
+02:12:55,519 --> 02:13:05,119
+Burada size bahsettiğim ekran parlaklığının ne oranda güç tüketimi yarattığını görüyorsunuz.
+
+631
+02:13:05,119 --> 02:13:16,119
+İlk etapta biraz daha lineer giden yüz parlak seviyesine kadar ondan sonra daha böyle kuadratik ilerleyen bir...
+
+632
+02:13:17,492 --> 02:13:30,212
+Eğri karşımızda var. Ekranın seçimi, ekranın yapısı da önemli midir enerji tüketiminde? Telefonda kullanılan ekranın tipi.
+
+633
+02:13:34,131 --> 02:13:40,591
+Mesela neyi tercih etmek daha uygun olur?
+
+634
+02:13:47,347 --> 02:13:52,347
+İlla teknolojiyi söylemeyebilirsiniz ama mantık olarak...
+
+635
+02:13:54,347 --> 02:13:58,247
+En dışında bir arkadaşımızı arıyorum.
+
+636
+02:13:59,367 --> 02:14:06,127
+Yani yüksek yenileme hızına sahip bir ekran kullanmak illeriki güç kullanımına arttırıyordur.
+
+637
+02:14:08,268 --> 02:14:10,347
+Evet, fakat...
+
+638
+02:14:10,384 --> 02:14:20,403
+Yüksek yenileme hızında da yenileme frekansının dinamik, son dönemde bazı telefonlar bu yönüyle öpene çıkıyorlar.
+
+639
+02:14:20,403 --> 02:14:25,403
+Dinamik yaptığınızda kullanıma bağlı olarak ciddi bir tasarruf sağlandığını görüyorsunuz.
+
+640
+02:14:26,283 --> 02:14:33,403
+Kullanırken yüksek yenileme hızı kullanmazken bunun scale ettiğini görüyorsunuz.
+
+641
+02:14:34,304 --> 02:14:36,823
+Telefonun şeyini çok ilerletiyor.
+
+642
+02:14:37,231 --> 02:14:46,532
+Pil tüketim süresini özellikle söylemek istedim ama arkasının bir soru doğru. Başka?
+
+643
+02:14:54,579 --> 02:14:56,579
+Peki [öğrenci] sana söz vereyim.
+
+644
+02:14:58,579 --> 02:15:05,579
+Son çıkan ekran cinslerinden birisi veya bilmiyorum belki de o ekranı yönetmekle ilgili bir durumdur.
+
+645
+02:15:05,579 --> 02:15:13,579
+Yani çok buradaki donanımlara hakim olmadığım için bilmiyorum ama mesela bir video izliyoruz telefondan. Tam ekran izin.
+
+646
+02:15:13,939 --> 02:15:22,599
+O videodaki siyah bölgeleri orayı siyah ışıklandırarak değil de oradaki pikselleri kapatarak...
+
+647
+02:15:22,599 --> 02:15:25,739
+Bravo. Evet, benimle gelmek istediğim nokta oydu.
+
+648
+02:15:25,739 --> 02:15:37,611
+Aslında bu teknoloji piksel tabanda, arka planda birebir her bir piksel için diyot kullanımıyla kullanılan OLED olarak da...
+
+649
+02:15:37,716 --> 02:15:53,616
+Televizyonlar tarafından avlandırılan panel kullanımı şeklinde değil de, arka plandaki ortak aydınlatma şeklinde değil de, birebir tüm oradaki diyotların yakınıp sonundurulunerek çalıştırıldığı teknoloji.
+
+650
+02:15:53,616 --> 02:16:03,616
+Bu sayesinde siyahı, o alanı, oradaki diyodu yakmadan kullanıyorsunuz ve aslında...
+
+651
+02:16:03,984 --> 02:16:07,184
+Aynı zamanda daha kaliteli siyahı da elde ediyorsunuz.
+
+652
+02:16:07,184 --> 02:16:11,904
+Ve ekran pil tüketimini düşürmüş oluyorsunuz.
+
+653
+02:16:11,904 --> 02:16:16,304
+Tabi bunların çeşitli dezavantajları da olabiliyor.
+
+654
+02:16:16,304 --> 02:16:24,624
+İşte oradaki bir pikselin bozulması ekran görüntüsünü olumsuz yönde etkiliyor.
+
+655
+02:16:24,624 --> 02:16:29,504
+Ya da hepsinin tek tek kontrol edilmesiyle ilgili daha karmaşık bir yapı söz konusu oluyor.
+
+656
+02:16:29,504 --> 02:16:31,984
+Bir de maliyetle tek tek kontrol edilmesi.
+
+657
+02:16:31,984 --> 02:16:43,443
+Bunların ekran üzerinde konumlandırılması. Bu nedenle kullanılıyor ama belirli dezavantajlarına sahipler.
+
+658
+02:16:46,835 --> 02:16:58,835
+Hocam hem kaliteli siyah meselesi var hem de belli bir kontrast oluşturduğu için. Çünkü siyah için hiçbir şey yanmıyor ya. Beyazı için harcadığı elektriği de doğa olarak düşürmüş oluyor.
+
+659
+02:16:59,036 --> 02:16:59,475
+Çok doğru.
+
+660
+02:17:00,395 --> 02:17:01,815
+Kontrast oluşuyor ekranda yani.
+
+661
+02:17:01,815 --> 02:17:12,815
+Yani her türlü kazan kazan durumu teknolojisi. Ama hala maliyeti oldukça yüksek. O yüzden...
+
+662
+02:17:12,927 --> 02:17:39,808
+Açıkçası çok yaygın bir kullanım olduğunu söyleyemez ama işletim sistemlerinin dark temalarını ya da uygulamaların dark temalarını verimli kılan bu yapı. Daha iyi sonuç almasını sağlayan bu yapı. Burada farklı senaryolar var, farklı kullanımlar var. Bir video kullanımı 9. figürde görüyorsunuz.
+
+663
+02:17:40,211 --> 02:17:52,291
+İşte arka plandaki parlaklık seviyesinin arttırılmasındaki enerji tüketiminin ne oranda değiştiği paylaşılmış.
+
+664
+02:17:52,291 --> 02:17:59,211
+%100'e geldiğimizde %67'deki farka bakarsanız korkunç bir fark var.
+
+665
+02:17:59,763 --> 02:18:17,243
+Yani ekranın en parlak noktaya getirildiğinde ki enerji tüketimi, güç tüketimi oldukça yüksek. Yine aşağıda bir SMS mesajı gönderilmesi sırasındaki dağılım gösterilmiş.
+
+666
+02:18:18,708 --> 02:18:36,188
+11. figüre baktığınızda bir görüşme yapılırkenki tüketime bakıyorsunuz. İşte orada cinsel şebekesi üzerinden haberleşmenin yarattığı, yani görüşmenin ne kadar enerji tükettiği konusunda bir fikir sahibi olabiliriz bu noktada.
+
+667
+02:18:36,755 --> 02:18:45,295
+Yani görüşmenin totalde aslında video izlemeye göre daha yüksek bir enerji tükettiğini burada bariz bir şekilde görüyorsunuz.
+
+668
+02:18:45,595 --> 02:18:51,475
+Ki zaten telefonların video izleme süreleri çok daha uzundur telefonun kullanım sürelerine göre.
+
+669
+02:18:52,135 --> 02:18:53,775
+Aradaki fark da bundan kaynaklanıyor.
+
+670
+02:18:55,595 --> 02:19:01,835
+Son senaryo da bir e-mail benchmark senaryosu.
+
+671
+02:19:02,227 --> 02:19:13,827
+Yapılmış ve işte burada da gönderim sırasındaki yine GSM üzerinden ne kadar bir çıkış olduğunu görebiliyorsunuz.
+
+672
+02:19:17,811 --> 02:19:33,452
+Evet, bir günlük kullanımla ilgili genel bir bilgi vermek adına bakıldığında Suspend, KG, Regular Business olmak üzere 5 farklı senaryodan bahsediyoruz.
+
+673
+02:19:34,731 --> 02:19:44,551
+Genellikle GSM'in kullanımı birbirine yakın. CPU kullanımları kez daha aynı şekilde.
+
+674
+02:19:45,072 --> 02:19:52,412
+Öyle ama bizim üstteki en önemli farkı 11 bulmak üzere,
+
+675
+02:19:52,412 --> 02:19:58,371
+Backlight yani telefonu çok sık kullandığımız için Brightness yaratıyor.
+
+676
+02:19:58,371 --> 02:20:09,132
+Ve bu da pil tüketimine doğrudan iki katta varacak kadar bir fark yaratıyor.
+
+677
+02:20:09,132 --> 02:20:10,932
+Bunu da burada görebiliyorsunuz.
+
+678
+02:20:13,236 --> 02:20:20,236
+Size bahsetmiş olduğum hardware ve software sensörler Android Puff platformunda yer alan işte bir aktörümetremiz var.
+
+679
+02:20:20,236 --> 02:20:29,236
+Çevresel sıcaklık oluşturan bir sıcaklık sensörümüz var. Bunlar hardware sensörler.
+
+680
+02:20:29,236 --> 02:20:33,236
+Gravity sensörümüz software ya da hardware olabiliyor.
+
+681
+02:20:33,236 --> 02:20:36,236
+Gyroscope ve light sensörlerimiz hardware.
+
+682
+02:20:37,376 --> 02:20:45,775
+Software veya Hardware olabiliyor. Bunlar standart bir telefon üzerinde genellikle bulunan sensörler.
+
+683
+02:20:45,775 --> 02:20:58,175
+Android platformunun desteklediği sensörler. Ama bugün sıcaklık ve nem sensörleri bazı telefonlarında bulunmayabiliyor.
+
+684
+02:20:58,175 --> 02:21:04,975
+Genellikle var mı? Bazıları koymuyor. Bunları konuşmuştuk.
+
+685
+02:21:05,363 --> 02:21:25,363
+Bu sensörleri kullanabiliriz telefonlar üzerinde. Özellikle healthcare tarafındaki sensörleri diye. Bugün bazı çalışmalar yürütülüyor. Özellikle sporcuların genel performanslarını artırmaya yönelik bunlarla ilgili bilgisi olan var mı?
+
+686
+02:21:28,363 --> 02:21:33,100
+Yani gerek spol kapıları gerek basketbol kapıları çeşitli ölçümler yapılıyor.
+
+687
+02:21:40,211 --> 02:22:00,992
+Özellikle kas yorgunluğuna ilgili çalışmalar var. Buna bağlı olarak ölçümler dolusuna antrenman programları belirleniyor. Kas yorgunluğuna bağlı olarak o kişinin bir sonraki müsabakada yer alıp almayacağı noktasında kararlar verilebiliyor.
+
+688
+02:22:07,796 --> 02:22:25,876
+Tenis gibi bireysel sporlarda sanal antrenörler yardımıyla sizlere eğitim verilmesi ve vuruş kalitenizin, vuruş biçiminizin yorumlanarak size geri dönüş yapılması sağlanan işler var.
+
+689
+02:22:27,096 --> 02:22:33,335
+Burada sensörleri artık spor biliminde de çok sık kullanıyorlar.
+
+690
+02:22:35,827 --> 02:22:51,788
+Dediğim gibi örneğin kol saati üzerinden bile bir tenis oynarken vuruş gücünüz, vuruş şekliniz ne kadar doğru bununla ilgili çıkarımlar yapılması mümkün.
+
+691
+02:22:51,788 --> 02:22:56,427
+O yüzden yine açık alanlardan bir tanesi ve çalıştırıcı alanlardan bir tanesi.
+
+692
+02:23:01,811 --> 02:23:17,231
+Bu sporcuların performansların artmasına yönelik çalışmalar yürütülmesi önemli. Burada bahsettiğimiz sağlık sensörleri bile bu ölçümler yapılarak sporcu sağlığı açısından da bir risk teşkilatı.
+
+693
+02:23:19,731 --> 02:23:34,551
+Yerde sporcu olmayan bir kişinin efor harcadığı sporda, bu bir halı sağlaçın olabilir, ne oranda zorlandığı, kalp atışıyla ilgili anomali olup olmadığını tespit edip onu uyarmak da önemli.
+
+694
+02:23:34,671 --> 02:23:44,791
+Çünkü bir top kişi halı sağda bu nedenle kalp krizi vesivesiyle hayatını kaybedebiliyor. Bunları da tespit etmek çalışmalarına mümkün.
+
+695
+02:23:45,587 --> 02:23:48,587
+Önemli başlıklardan bir tanesine.
+
+696
+02:23:50,587 --> 02:23:54,587
+Burada aslında lokasyon tabanlı işler.
+
+697
+02:23:54,587 --> 02:24:03,587
+Baktığınızda GPS karşınıza çıkıyor ve Outdoor Localization'da birinci tercihimiz.
+
+698
+02:24:03,587 --> 02:24:06,587
+Global Positioning Systems.
+
+699
+02:24:08,819 --> 02:24:16,819
+Triangulation Mechanizması kullanılıyor ve en az 3 ucudan gelen sinyal gücüne bağlı olarak kişinin yeri konumu kesinleştiriliyor.
+
+700
+02:24:16,819 --> 02:24:26,819
+Buradaki sıkıntı bataryanın çok tüketiliyor olması ve iç mekanlarda onun bilgisinin çalışmıyor olması.
+
+701
+02:24:26,819 --> 02:24:31,819
+Bunun için de Indoor Localization alanında çeşitli çalışmaların götürüyor.
+
+702
+02:24:31,819 --> 02:24:35,819
+Indoor Localization nasıl yapılıyor? Bilgisi olan var mı?
+
+703
+02:24:39,636 --> 02:24:51,636
+Zorametre ve cihloskopla göreceli konum buluyorlar diye biliyorum. Yine ISI'da iletip varsa eğer konumu bilinen bazı cihazlar...
+
+704
+02:24:51,636 --> 02:25:02,636
+Aynen öyle. Wi-Fi Access Point'lar özelinde de bu yapılabiliyor. Kişinin Wi-Fi Access Point'tan aldığı sinyallerle bilayçla konumlandırılmasına bakılıyor.
+
+705
+02:25:07,028 --> 02:25:20,648
+İşler yapılabiliyor. Buna ek olarak kullanılan bir teknoloji daha var. Tabi bu biraz maliyetli ve deployment gerektiren bir iş.
+
+706
+02:25:20,648 --> 02:25:22,648
+Eğimler olabilir mi hocam?
+
+707
+02:25:23,468 --> 02:25:34,547
+Beaconlar. Beaconlar. Beacon teknolojisi hali hazırda bazı noktalarda kullanılıyor.
+
+708
+02:25:35,023 --> 02:25:53,583
+Birçok uygulamada da başarılı bir şekilde çalışıyor ama çok fazla deployment gerektiriyor. Markete gittiğinizde, marketin hangi bölümüne ne kadar vakit geçirdiğiniz, mağazaya girdiğinizde hangi ürünlere baktığınız, Beacon hangi haberleşme teknolojisini kullanıyor?
+
+709
+02:26:04,531 --> 02:26:06,771
+Bluetooth No Enerji.
+
+710
+02:26:09,191 --> 02:26:21,311
+Bluetooth'unuz üzerinden gönderilen sinyaller vasıtasıyla sizin hareket ettiğiniz bölgedeki...
+
+711
+02:26:21,311 --> 02:26:28,551
+Konumunuz test ediliyor ve o bölgelerde ne kadar geçirdiniz ya da ne kadar kaldınız ya da durptunuz ve notanız belirleniyor.
+
+712
+02:26:29,332 --> 02:26:38,731
+Bir kıtları belli bölgeye yerleştirmeniz belli sıklıklarla önemli ama bu söylediğim gibi hem maliyetli bir iş.
+
+713
+02:26:39,188 --> 02:26:56,688
+Hem de fazla sayıda beacon sinyale maruz kaldığınıza sebebiyet veriyor. Fakat bunun birçok karşılığı bugün restoranlarda garsonsuz hizmet verilecek noktada bir yapı yasa.
+
+714
+02:26:56,688 --> 02:27:05,688
+Gerçi bunun karşılığında masalara beacon koymak da bir çözüm ama bunu daha nasıl diyelim...
+
+715
+02:27:06,388 --> 02:27:17,828
+Az maliyetli hale getiren teknoloji QR kodlar. QR kodlarla da bu siparişleri hangi masadan geldiğini vs. takip etme şansına sahipsiniz.
+
+716
+02:27:17,828 --> 02:27:28,828
+Ama ikinler de bu anlamda özellikle sizin bir mekandaki konumunuzun izlenmesi ve belirlenmesi açısından...
+
+717
+02:27:30,548 --> 02:27:41,548
+Ve aktif olarak siz, pasif olarak siz hiçbir şey yapmadan da bunu mümkün kılabiliyor. Ama bir türlü QR kodlu ünlüsünde bir aksiyon almanız gerekiyor.
+
+718
+02:27:41,548 --> 02:27:58,092
+Bir sipariş verdiniz, onu taratıyorsunuz. Ama işte Nikon'da herhangi bir aksiyon almanıza gerek yok. Otomatik olarak sizin orada olduğunuzu Bluetooth sinyalin üzerinden tespit edebiliyor.
+
+719
+02:27:58,260 --> 02:28:00,236
+İçin bir şey.
+
+720
+02:28:03,219 --> 02:28:30,639
+Peki, saat 11.53 oldu. İkinci bölümde biraz uzun da yaptık. Şimdi burada çok az bir slide'ımız kaldı. Önümüzdeki hafta veri işleme adımlarına geçeceğiz. Ön işleme nedir? Özellikle özitliklerini açıklatılabilir. Genel anlamıyla hangi tekniklerle karar alınıyor? Sınıflandırma nedir? Kümeleme nedir?
+
+721
+02:28:31,219 --> 02:28:57,700
+Bunları konuştuğumuz bir hafta olacak. Sekizinci hafta. Haftaya vizeniz yok. Başka derslerde belki vardır. Dokuzuncu ve onuncu hafta bir değişiklik olmazsa sizin sunum haftanız olacak. Sunumlarınızı o haftalar gerçekleştireceğiz. On birinci haftada vizenizi gerçekleştiriyor olacağız. Önümüzdeki hafta bir aksilik olmasın dersi dokuzda başlatmayı planlıyorum.
+
+722
+02:28:58,131 --> 02:29:08,851
+Tekrar bir mail atarım size. Bu aradaki açığı kapatmak adına bu bandı kullanmayı düşünüyorum. Sorusu olan var mı?
+
+723
+02:29:10,195 --> 02:29:37,456
+Çok küçük bir şey. Oradan giremediğim için soramamıştım hocam ama bazı izinler var. İşte kamera izni, mikrofon izni gibi falan. Android'i de var. Ondan sonra iOS'la da var. Ama bu denizcilik örneğinde RSI'ları alsak ve bir haritalandırma çıkarsak gibi bir şeye varmıştık ya. Burada bu RSI'yi almak için bir izin olduğunu ben hiç telefonumda görmedim. Bunun için bir izin var mı yoksa default da alabiliyor muyuz yoksa default da alamıyor muyuz?
+
+724
+02:29:38,932 --> 02:30:05,932
+Çok %100 ezbere emin değilim ama alabildiğinizi biliyorum. Ama izinle mi? En son runtime sırasında bir izle mi dönüştü? Açıkça sonu takip etmekte artık zorlanıyorum. Sürekli değişiyor izinlerle ilgili, regulasyonla, Android tarafında. Ama bununla ilgili bir şey kısıtıyor. Hayır alınamaz bu gizli bir bilgi noktasında değil. Herbise sahip bilgisi. Çünkü sizinle ilgili bir bilgi vermiyor.
+
+725
+02:30:06,899 --> 02:30:15,299
+Sadece sinyali gücüyle ilgili bilgi alıyorsunuz. Kişisel bir bilgi değil.
+
+726
+02:30:16,680 --> 02:30:17,439
+Teşekkürler.
+
+727
+02:30:17,860 --> 02:30:18,299
+Rica ederim.
+
+728
+02:30:19,579 --> 02:30:22,520
+Konum bilgisi hocam kişisel bilgi olmuyor mu? Sonuçta.
+
+729
+02:30:23,659 --> 02:30:30,419
+Ama bir konum bilgisi değil. Receipt Signal Strength Indicator size doğrudan konum bilgisi vermiyor.
+
+730
+02:30:31,092 --> 02:30:37,672
+Ama dolaylı olarak hangi baz istasyonuna yakın olduğumu biliyorlar aslında. Yani hangi bölgede bulunduğumu.
+
+731
+02:30:38,092 --> 02:30:41,211
+Ama onu kim biliyor? Onu zaten operatör biliyor.
+
+732
+02:30:41,812 --> 02:30:42,432
+Operatör.
+
+733
+02:30:42,432 --> 02:30:56,812
+Yani operatör her türlü biliyor. Hani o açıdan sizin bu veriyi dışarıdan biri alırsa izinsiz bir şekilde hani düşünelim bir uygulama Melvi diye düşünelim.
+
+734
+02:30:57,363 --> 02:31:06,324
+Bunu kullanarak GPS gibi bir nokta konu atış verme şansı yok. Öyle değil mi?
+
+735
+02:31:06,844 --> 02:31:08,583
+Ama bölge daralmış oluyor ya.
+
+736
+02:31:09,243 --> 02:31:18,684
+Evet, doğru ama muhtemelen belirli bir izin olsa da benim bildiğim son dönemde şey, bununla ilgili herhangi bir kısıt yok.
+
+737
+02:31:20,004 --> 02:31:23,384
+İlgili izin eten öpeyerek alabilirsiniz. Ama yine ben de bakacağım.
+
+738
+02:31:34,536 --> 02:31:39,736
+Deprecate olmuş olabilir ama onun için başka bir yontam da veriyor olabilirler. Ben de merak ettim bakacağım.
+
+739
+02:31:41,476 --> 02:31:43,596
+Teşekkür ediyorum hepinize katıldığınız için.
+
+740
+02:31:44,719 --> 02:31:58,199
+Bu hafta maalesef böyle online oldu. Belki resimler için daha iyi olmuş. Önceki hafta bir aksik olmazsa sınıfta görüşmek üzere diyorum. Hepinize sağlıklı güzel bir hafta diliyorum. Hoşçakalın.
+
+741
+02:31:58,819 --> 02:31:59,340
+Görüşürüz.
+
+742
+02:31:59,719 --> 02:32:00,079
+Güle güle.
+
+743
+02:32:00,079 --> 02:32:01,799
+Hoşçakalın.
+
+744
+02:32:02,919 --> 02:32:05,059
+Hocam çıkmadan size bir şey sorabilir miyim?
+
+745
+02:32:05,059 --> 02:32:05,559
+Evet.
+
+746
+02:32:06,484 --> 02:32:13,923
+Şey hocam, ödevle ilgili söyleyecek. Ben beni grup yaptığınız arkadaşa mail üzerinden ulaşmaya çalıştım ben numarası olmadığı için ama ulaşamadım.
+
+747
+02:32:15,184 --> 02:32:18,164
+Tamam. Bana lütfen durumu meyredip durumu çözeyim.
+
+748
+02:32:18,763 --> 02:32:19,984
+Tamam hocam, teşekkür ederim.
+
+749
+02:32:20,363 --> 02:32:21,543
+Ben teşekkür ederim, hoşçakal.
