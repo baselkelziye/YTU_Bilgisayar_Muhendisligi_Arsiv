@@ -1,0 +1,2475 @@
+1
+00:08:31,860 --> 00:08:38,960
+Merhaba arkadaşlar, hoş geldiniz. Gerçi katılımımız yine az. Biraz bekleyelim.
+
+2
+00:08:43,956 --> 00:08:45,735
+Birkaç dakika sonra derse başlarız.
+
+3
+00:10:43,635 --> 00:11:06,635
+Evet, beş geçiyor. Artık başlayabiliriz. Son haftamız ve bu haftaki konumuz iki tane başlığımız var. Birincisi işletim sistemleri, ikincisi de bilgisayar ağları. Bunlarla ilgili tüm bilgileri vereceğiz ve bu sayede...
+
+4
+00:11:06,799 --> 00:11:28,399
+Bilgisayar bilimlerine giriş konusunu bir dönemlik dersimizin sonuna gelmiş olacağız. Ben şimdi videoyu kapatayım. Geçen hafta yaşadığımız hatırlarsanız bazı network sıkıntıları olmuştu. Baştan videoyu kapatarak biraz band genişliğimizi arttırmış olalım.
+
+5
+00:11:28,399 --> 00:11:30,120
+Şimdi
+
+6
+00:11:31,700 --> 00:11:59,700
+Bugünkü slide'lar Türkçe olmayacak. Kitabın slide'ları, hatırlarsanız ilk hafta size önerdiğimiz ders kitabı olarak önerdiğimiz kitabın kendi slide'larıyla bugünkü dersi anlatacağım. O yüzden Türkçe'ye çevirmiş olmayacağım. Bunun bir sebebi de özellikle işletim sistemi ve bilgisayar ağlarındaki pek çok kavramın İngilizce olması. Türkçe mümkün olduğunca karşılıklarını da vereceğim ama nihayetinde pek çok terim zaten orijinal haliyle.
+
+7
+00:11:59,700 --> 00:12:03,080
+Daha iyi anlaşılacağından dolayı slideler de bu şekilde yer alacak.
+
+8
+00:12:04,540 --> 00:12:13,379
+Şimdi ilk saatimizde diyelim işletim sistemlerine bakacağız ve işletim sistemlerini incelerken de ilk önce bir tarihçesine bakacağız.
+
+9
+00:12:14,707 --> 00:12:31,247
+Nereden gelmiş, nasıl oluşmuş işletim sistemi kavramı? Buna bakıp yine bugüne kadar nasıl geldiğimizi ve bu gelişimin nasıl oluştuğunu öğrenmeye çalışacağız. Sonrasında bir işletim sisteminin mimarisi nedir? Özellikle de yazılım açısından düşündüğümüzde sonuçta bir yazılım bu.
+
+10
+00:12:31,600 --> 00:12:49,840
+Nasıl bir kategorizasyon yapıyoruz ve ne gibi parçaları var? Yani nelerden oluşuyor? İşletim sistemi deyince ne anlamamız gerekiyor? İşletim sistemini oluşturan ve destek veren parçalar neler? Bunlara bakacağız. Üçüncü başlık olarak bir makinedeki
+
+11
+00:12:50,259 --> 00:13:14,840
+çalışan uygulamaların nasıl çalışmaları gerektiğinin ayarlanması, yani çalışma sırası nasıl olacak, kim ne kadar çalışacak, bunlar hangi sırayla çalışmıyor, bunun nasıl ayarlandığı ve yine donanımımızın işte ekran olsun, klavye olsun, mouse olsun, printer olsun, diskler olsun, CD-ROM ya da ne bileyim DVD-ROM olsun aklınıza gelen bütün
+
+12
+00:13:16,275 --> 00:13:36,495
+iç ve dış bileşenlerin yine bu işlevler, programlar ya da prosesler, proses kavramını da açıklayacağım. Çalışan uygulamalara nasıl sunulmaları gerektiği ve kaynak erişimlerinin nasıl ayarlandığıyla alakalı başlıklara bakacağız 3 ve 4'te.
+
+13
+00:13:36,847 --> 00:14:04,847
+İşte yine proses dediğimiz, proses aslında şimdiden söylesek çok iyi olur. Sonrasında çünkü sürekli kullanacağız bu kavramı. Biliyorsunuz biz program kodu yazıyoruz ve bunları bir yerde depoluyoruz derleyerek çalışabilir uygulamaları haline getiriyoruz. Bunun yazılmış ve depolanmış haline program adını verirken, işte adını yazıp Enter'a basarak ya da üzerine çift tıklayarak çalıştırdığımızda özellikle bir işletim sistemi.
+
+14
+00:14:04,847 --> 00:14:12,508
+işletim sistemi tarafından sizin programınız çalıştırıldığında buna proses adını veriyoruz. Yani çalışan uygulamalara proses denir.
+
+15
+00:14:13,447 --> 00:14:25,067
+Prosesler doğal olarak dediğim gibi pek çok sistem kaynağını çalışmak için kullanmak zorundadır. Burada çakışmalar olabilir. Bunlar nasıl engellenecek? Bununla alakalı başlıklara bakacağız.
+
+16
+00:14:25,067 --> 00:14:32,827
+Ve son olarak da güvenlikle alakalı bir iki. Özellikle işletim sistemi açısından güvenlikle alakalı bir iki.
+
+17
+00:14:32,847 --> 00:14:42,887
+Başlığa baktıktan sonra iç ve dış özellikle tehdit gibi sonrasında bir ara verip bilgisayar ağlarıyla ikinci konu başlığımıza devam edeceğiz.
+
+18
+00:14:42,887 --> 00:15:00,807
+Peki, şimdi başlayalım. İşletim sistemi dedik. İşletim sistemleri zaten adı üstünde bir sistem bu ve aslında bilgisayarın işletilmesini yani bizim için operasyonel olmasını sağlayan bir uygulama, bir yazılım. Aslında başka bir şey değil.
+
+19
+00:15:00,847 --> 00:15:28,548
+Dediğim gibi sizin hizmetinize, bütün bilgisayarın donanımıyla istendiği gibi hizmet vermesini ve sizin istediğiniz işleri yapabilmesini, uygulamalarınızın çalışmasını sağlayan altyapı yazılımına biz işletim sistemi adını veriyoruz. Peki, ne yapar bir işletim sistemi? Şimdi işletim sistemi ilk olarak, madem ki elimizde uygulamalar var ve depolanmış veri var,
+
+20
+00:15:28,847 --> 00:15:38,307
+Bunların bir şekilde disklerde saklandığını biliyoruz. Yani depolama ünitelerinde. Bunların nasıl depolanmaları gerektiğiyle alakalı bir organizasyon sunması gerekiyor.
+
+21
+00:15:38,727 --> 00:15:44,508
+Artı bunların erişim kurallarının da yine işletim sistemi tarafından tanımlanmış olması gerekiyor.
+
+22
+00:15:44,647 --> 00:15:56,288
+Demek ki benim depolama ünitelerine saklama ve oradan okuma yazma yani erişim işlemlerini mutlaka bir işletim sisteminin ele alıyor ve çözüyor olması gerekli.
+
+23
+00:15:56,947 --> 00:16:01,508
+Bundan sonra diyelim ki bir programı okuduk ve artık çalıştırıyoruz.
+
+24
+00:16:02,292 --> 00:16:28,852
+Aynı anda birden fazla programı doğal olarak çalıştırabiliriz. Yani biz buna multitasking adını veriyoruz. Aynı anda birden fazla iş yapabilme kabiliyeti. Zaten hepiniz buna aşinasınız diye düşünüyorum. Şu anda bile bir yandan Zoom uygulaması açık. Oradan uzaktan eğitim sistemine bağlı ve dinliyor haldesiniz.
+
+25
+00:16:29,375 --> 00:16:57,355
+Ondan sonra bir yandan web browserınız açık. İnternet, Mozilla, Firefox ya da Chrome ya da Edge ya da Safari gibi bir browserınız açık. Belki bir kısmınız bir yandan Word açtı, bir şeyler yazıyor. Belki bir kısmınız bir yandan Dev C++'ı açtı ve hala projeyle alakalı kodlamalar yapıyor. Bir yandan müzik dinliyor olabilir. Gerçi dersi dinlerken müzik dinlemeniz biraz değişik, garip olur.
+
+26
+00:16:57,375 --> 00:17:25,296
+Ama hani aynı anda sizin aslında bilgisayarınızda çalışan pek çok uygulama var. Hem aktif olarak ekranınızda gördüğünüz hem de aktif olarak görmeseniz de arka planda çalışan pek çok uygulamanız var. Peki bunlar nasıl organize edilecek? Hangi sırayla kim nasıl çalışacak? Bunların da zaman çizelgelemesinin yapılması, yani scheduling işlemlerinin yapılması ve bunların işletilmelerinin sağlanması da yine işletim sisteminin.
+
+27
+00:17:25,375 --> 00:17:33,715
+sorumluluğu. Bunu yapmak zorunda. Düzgün bir şekilde ve hatasız olarak programların, uygulamaların, prosesler halinde çalışmasını sağlamak zorunda.
+
+28
+00:17:34,483 --> 00:17:59,483
+eee ve bunların doğal olarak bir de koordinasyonlarını da sağlaması lazım. Bir arada nasıl çalışacaklar? Eee birbirleriyle nasıl etkileşecekler? Birbirlerine nasıl hizmet sunacaklar? Ya da sistem kaynaklarına nasıl erişecekler? Bunların hepsinin koordinasyonunda işletim sistemi tarafından sağlanması gerekli. Bunlar temel işlevleri. Peki eee şimdi eee şimdi eee
+
+29
+00:17:59,988 --> 00:18:06,168
+Acaba bir işletim sistemi nasıl doğdu, nereden geldi bunun tarihçesine biraz bakalım.
+
+30
+00:18:06,168 --> 00:18:17,188
+Şimdi ilk olarak hani giriş dersimizi hatırlayacak olursanız bilgisayarın tarihçesinden bahsettiğimizde böyle çok eski 1940'lar 1950'lerdeki bilgisayarları hatırlayın.
+
+31
+00:18:17,288 --> 00:18:23,668
+Çok büyük makineler oda boyutlarında işte tape ünitelerinde depolama yapılıyor.
+
+32
+00:18:24,367 --> 00:18:27,988
+Veri girişleri delikli kartlarla delikli kartlar üzerindeki delikli kartlarla...
+
+33
+00:18:27,988 --> 00:18:55,988
+kart okuyucu tarafından okunmasıyla sağlanıyor. Hatta ENIAC gibi bir makineleri düşündüğünüzde bir sürü kablolar vardı ya da switchler vardı. Bunların takılmasıyla, birbirine bağlantıların kurgulanmasıyla aslında siz bir şekilde program kodunuzu yazmış oluyordunuz ya da işlemcinin çalışma prensipi nasıl çalışması gerektiğini tariflemiş oluyordunuz. Peki şimdi bu makinelerde şu şekilde bir kullanım söz konusuydu. Buna biz batch processing adını verelim.
+
+34
+00:18:55,988 --> 00:19:23,988
+Yani sırasıyla ve adım adım, teker teker çalıştırma. Şöyle oluyor, şimdi siz bir kullanıcısınız, yani insansınız, araştırmacısınız diyelim işte üniversitede ve sizin bir işlem, bilgisayar kullanma ihtiyacınız var. Nedir? Mesela işte elinizde bir ikinci dereceden denklem var, onun kökleri, üçüncü dereceden denklem var, onun köklerini hesaplamaya çalışıyorsunuz. O günün teknolojisiyle de doğal olarak kağıtla hesaplamaya çalışıyorsunuz.
+
+35
+00:19:23,988 --> 00:19:40,628
+programınız çok uzun sürecek ama bilgisayara bunu bir program vasıtasıyla hesaplatabilirsiniz. Şimdi oturup programınızı yazıyorsunuz. Ondan sonra verilerinizi oluşturuyorsunuz. Neyse işte hani kaç sayılarınızdır, denkleminizdir, kaç hangi denklemlerse onların girdilerini oluşturuyorsunuz.
+
+36
+00:19:40,948 --> 00:19:53,388
+Sonrasında da bu bilgisayarın durduğu binaya gidip, kapıya girip rezervasyon yapıyorsunuz aslında ve kuyrukta, bir iş kuyruğuna girmiş oluyorsunuz.
+
+37
+00:19:53,388 --> 00:19:59,948
+Bildiğiniz şey gibi, normal maç kuyruğu gibi düşünün. Teker teker içeri giriyorsunuz.
+
+38
+00:20:00,000 --> 00:20:20,360
+Onun gibi. Şimdi burada bir kuyruk mekanizması var. Kuyrukta ilk gelen doğal olarak bilgisayarın ilk kullanıcısı oluyor. Tabii buna belirli bir zaman tanınıyor. Mesela atıyorum yarım saatin var, otuz dakika süren var deniyor. Şimdi burada kullanıcı giriyor içeri ve bilgisayarın tek hakimi.
+
+39
+00:20:22,003 --> 00:20:50,003
+tek başına, bütün makineyi, cihazı tek başına kullanıyor. Ve burada işte önce kartlarını mesela delikli kartlarını kart okuyucuya yerleştiriyor. Ondan sonra yapması gereken bağlantıları varsa işte direktifleri nasıl çalışacağıyla alakalı makinenin setup'ı yani bilgisayarın bunları ayarlıyor. Ondan sonra işte düğmesine basıyor makinenin diyelim ve çalıştırıyor bilgisayarı. Bilgisayar inputları alıyor, programı okuyor. Ondan sonra yapması gereken...
+
+40
+00:20:50,003 --> 00:21:14,364
+hesaplamaları gerçekleştiriyor. 30 dakika içinde bunların hepsini tamamlaması gerekiyor. Diyelim ki 32 dakika sürdü. Ne olacak? Sıradaki kişi huysuzlanmaya başlayacak, homurlanacak doğal olarak değil mi? Çünkü onun da bir sürü girdi ve ayar yapması gerekiyor. İşlem zamanından yemiş oluyor. Pardon, kusura bakma, lütfen iki dakika idare et falan gibi böyle kavga dövüşü şeklinde işler.
+
+41
+00:21:17,236 --> 00:21:21,916
+Özetle şöyle gösterecek olursak bir kullanıcı
+
+42
+00:21:22,336 --> 00:21:48,316
+Domain'i ya da uzayı var, bir de makine ortamı, makine uzayı var. Siz buradan programınızı, verinizi ve işte bu makinenin nasıl çalışması gerektiğiyle alakalı direktiflerinizi veriyorsunuz. Bunlar burada bir kuyrukta duruyor. İlk kişinin ki burada, ikinci kişinin ki burada, üçüncü kişinin ki burada, eninci kişinin ki burada diye. Veyahsı makinede sırasıyla işte birinci kişi geliyor, kendine ayrılan zamanda bunu çalıştırıyor. Sonuçlarını alıyor gibi. Şimdi burada bir etkileşim yok.
+
+43
+00:21:51,539 --> 00:22:15,700
+işler yapılıyor. Mesela bir şey gibi düşünün, Word'ta yazı yazdığınızı düşünün. Hani böyle bir belge oluşturmaya çalıştığınızı düşünün, bir input vererek. Ne beklersiniz? Hani yazdıkça bir şey çıktıların oluşmasını beklersiniz değil mi? Ama bu batch processing de böyle bir şey söz konusu değil. Sırasıyla işler veriliyor, çalışıyor, sonuç elde ediliyor. Tek taraflı bir akış söz konusu. Şimdi şuraya geri geleyim.
+
+44
+00:22:19,635 --> 00:22:47,596
+sırayla ve tek tek veriliyor. Okey, tamam, bunda bir sıkıntı yok. Ama burada özellikle siz birden fazla kişi aynı anda acaba iş yapsa daha iyi olur mu diye bir problemle karşı karşıya kalıyorsunuz. Nedir bu problem? Yani aslında makine gitgide hani 1940'lar, 50'lar, 60'ları düşündüğünüzde, hatırlarsanız o hani transistörün icadı gibi başlayan süreçleri, makinelerin hem işlem gücü hem de hızları, kapasiteleri.
+
+45
+00:22:47,635 --> 00:23:04,635
+artmaya başlıyor. Böyle bir bütün makine senin 30 dakika boyunca sana rezerve ediyoruz mantığı aslında verimsizlik getiriyor. Çünkü arada çok fazla ayarların yapılması ile alakalı, verilerin okunması ile alakalı gereksiz bekleme boşlukları oluşmaya başlıyor. Artı
+
+46
+00:23:07,635 --> 00:23:24,815
+Interaktif bir işlem belki yapmanız gerekiyor. Örneğin işte bir sonuç çıktı, o sonuca göre başka bir girdi sağlamanız lazım. O girdiyi sağladıktan sonra belki yine başka bir çıktıya göre başka bir girdi sağlamanız lazım. Interaktif bir şekilde işlemi devam ettirme ihtiyacınız var.
+
+47
+00:23:25,268 --> 00:23:53,268
+Doğuyor zaman içindeki gelişmelerle birlikte. Şimdi burada gerekli olan şey artık gerçek zamanlı işlemlerin yapılması. Nedir bu? Siz mesela Word örneğine geri gelelim. Bir tuşa bastınız. Çıktığınız hani o harfin ikinci tuşa basmadan önce ekranda gözükmesini beklersiniz. Ya da işte bir denklemin sonucunu, kökünü buldunuz. Diğerine geçmeden öncekinin köklerinin hesabının yapılıp bir yere yazılmasını beklersiniz değil mi? Yani her adı
+
+48
+00:23:53,268 --> 00:23:57,268
+adım bitmeden başka bir adım başlamadan önce bir adımın tamamlanan
+
+49
+00:23:57,268 --> 00:24:03,268
+olarak real-time processing diyebiliriz.
+
+50
+00:24:03,700 --> 00:24:24,700
+Şimdi böyle ihtiyaçlar doğdu. Bunlarla birlikte zaman içinde artık kullanıcılar bu işleri yapmasın. Biz şuradaki gibi makine domeniyle kullanıcı domeni birbirinden ayrı tutalım ve bunlar bu şekilde gördüğünüz gibi etkileşimli olarak çalışsınlar istiyoruz. Bunun için bir operatör.
+
+51
+00:24:24,915 --> 00:24:52,915
+Ortaya çıkıyor. Nedir bu operatör? O da bir insan. Ama bu insan sizin şuradaki, şurada duruyor diyelim, tamam mı? Şuralarda bir yerlerde. Siz rezervasyon yapıp kuyruğa giriyordunuz ya, şimdi artık rezervasyon şöyle yapılıyor. Benim şu işlem isteğim var, bilgisayarı kullanma isteğim var diyorsunuz ve işte programınızı, verinizi ve nasıl yapılması gerektiğiyle alakalı direktiflerinizi operatöre veriyorsunuz. Siz verdiniz, başkası verdi. Hepsi verdi.
+
+52
+00:24:52,915 --> 00:25:10,875
+Sonra operatörler bunları bir depolama ünitesine, bir ana bellek ünitesine koyarak, yine sırasıyla koyarak, belki bazılarını önceliklendirerek ve daha önce çalışması için aşağı koyarak diyelim kuyrukta bir şekilde bunları hazırlamaya başladılar. Makineler de buna izin vermeye başladı.
+
+53
+00:25:10,875 --> 00:25:20,915
+Ve bu insanların girip, kartlarını koyup, ondan sonra bütün ayarları yapmasıyla alakalı gereken işlem zamanı
+
+54
+00:25:20,915 --> 00:25:48,915
+bu overhead, proses overhead dediğimiz kısımlar artık ihtiyaç daha hızlı bir şekilde çözülür oldu operatör sayesinde. Yani operatör sizin için bu işlemleri bir de uzman olduğu için hızlı bir şekilde gerçekleştirdi. Hatta makinelerin de gelişmesiyle bu inputların okunması, işlerin sırasıyla çalıştırılması otomatikleşmeye başladı. Şimdi burada bir job control language diye bir tanım yapıldı. Nedir bu? Hani siz girip de kabloları...
+
+55
+00:25:48,915 --> 00:25:49,556
+switchleri falan
+
+56
+00:25:49,556 --> 00:26:00,195
+tanımlar direktiflerle yapılabilir hale geldi. Bir cap çalışınca ne oluyor? Çıktılar mesela printer'a yazıyor ve bu şekilde
+
+57
+00:26:01,428 --> 00:26:29,428
+Siz çıktılarınızı elde etmiş oluyorsunuz. İnteraktif tarafa geçtiğimizde ise yine operatör var. Tamam mı? Ama siz artık bilgisayarla etkileşebiliyorsunuz. Mesela bir terminal ekranı var ve siz o terminal ekranından işiniz çalışırken, cabınız çalışırken, bunlara cab adı vermiştik, bir yandan da etkileşim de sağlayabiliyorsunuz işinizde. Okey? Bu şekilde bir ilerleme söz konusu oluyor.
+
+58
+00:26:29,428 --> 00:26:33,248
+Şimdi bundan sonra, şuraya geri gelelim ilk slide'ımıza.
+
+59
+00:26:34,748 --> 00:26:45,688
+Makinelerin gücü daha da artmaya başladı ve siz bir kişi, ikinci kişi, üçüncü kişi sıralı çalışmak yerine şöyle bir yönteme doğru evirmeye başladık.
+
+60
+00:26:46,128 --> 00:26:53,988
+Herkesin işi belirli miktarlarda çalışsın, belirli bir zaman aralığı içinde çalışsın. Örneğin.
+
+61
+00:26:54,579 --> 00:27:09,299
+Birinci iş, beş dakika çalışsın, sonra dursun. Sonra ikinci işi alalım makineye, o da bir beş dakika çalışsın, dursun. Üçüncü iş, beş dakika çalışsın, dursun. Bu sayede mesela diyelim ki ilk iş yaklaşık on dakikalık bir işti.
+
+62
+00:27:12,660 --> 00:27:39,420
+Toplamda iki Time Slot kullanacak. İkinci iş çok kısa bir iş olsun, tek Time Slot ile işini bitirecek. Ya da üçüncü iş uzun bir iş olsun, birkaç Time Slot gerektirsin. Ama bunlar dönüşümlü olarak çalıştıkları için toplamda bütün kuyrukta bekleyen insanların hepsi totalde miktar olarak daha az bir şekilde beklemiş olacaklar. Çünkü makineler de hızlandı ve bu setup tarafı da otomatikleşmeye başladı.
+
+63
+00:27:40,660 --> 00:27:53,980
+İşlerin parça parça herkese belirli bir zaman verelim ve hepsi aynı zamanda eş zamanlı gibi çalışsın mantığına biz Time Sharing adını veriyoruz. Şimdi bu nasıl yapılıyor? Multiprogramming dediğimiz.
+
+64
+00:27:56,740 --> 00:27:57,799
+Dediğim gibi.
+
+65
+00:27:58,548 --> 00:28:19,768
+Yine bilgisayardaki bütün işler, sizin iş, çalışma isteklerinize job adını veriyoruz ve bu joblar kendilerine ayrılan zaman dilimleri içinde sırayla çalışıyorlar. Yani beş saniye birinci çalıştı, beş saniye ikinci çalıştı, beş saniye üçüncü çalıştı, beş saniye dördüncü, sonra tekrar başa döndünüz, beş saniye birinciye verdiniz, beş saniye ikinciye verdiniz gibi düşünün.
+
+66
+00:28:26,548 --> 00:28:53,608
+arka arkaya aslında tek bir kaynak kullanıyorlar. Fakat baktığınızda toplamda hani uzaktan baktığınızda dördü birden birlikte çalışıyormuş gibi bir ilüzyon yaratılmış oluyor. Buna da Multiprogramming adı veriliyor. Eğer siz mesela şu andaki bilgisayarınızda tek başınıza, tek kullanıcı olarak kendi joblarınızı ki biz bunları artık günümüzde biliyorsunuz, proses diyoruz. Proseslerinizi bu aynı mantıkla çalıştırırsanız da multitasking yapmış olursunuz.
+
+67
+00:28:54,099 --> 00:29:07,819
+Şimdi günümüzde artık bir de çok iş, çoklu işlemcili makineler var. Hani sadece tek bir merkezi işlem birimi yok. Bilgisayarın içinde birden fazla merkezi işlem ünitesi olabilir.
+
+68
+00:29:08,271 --> 00:29:28,892
+Birden fazla fiziksel prosesörü olabileceği gibi bir prosesörün içinde birden fazla çekirdek de olabilir. Örneğin aritmetik, lojik işlemleri yapan dört tane çekirdeğinizin olduğunu düşünün. Bu durumda ben mesela birinci jobu birinci işlemciye, ikinci jobu ikinci işlemciye vermeyi tercih edebilirim. Ya da
+
+69
+00:29:29,215 --> 00:29:39,455
+Birinci job'u, birinci, ikinci, üçüncü, dördüncü işlemciye biraz ya da bir ve ikiye verip, diğerlerini üç ve dördüncü işlemcilere paylaştırmak isteyebilirim.
+
+70
+00:29:40,475 --> 00:29:49,255
+Özetle CPU'lara, merkezi işlemci birimlerine ben task'larımı, job'larımı dinamik bir şekilde dağıtmak isteyebilirim.
+
+71
+00:29:49,335 --> 00:29:52,755
+Buna da yük dengeleme yani load balancing adı veriliyor.
+
+72
+00:29:52,755 --> 00:29:53,235
+Tamam.
+
+73
+00:29:54,475 --> 00:29:56,755
+Ama siz mesela...
+
+74
+00:29:57,215 --> 00:30:02,495
+Bir taskı, dediğim gibi hem 1'de hem 2'de hem 3'de hem 4'de bölerek çalıştırmak istiyoruz.
+
+75
+00:30:05,268 --> 00:30:33,268
+diyoruz ve bu şekilde de bir bölütleme gerçekleştirebiliyoruz. Burada basit bir şekilde zaman bölütlemesinin ötesinde başka problemler de doğuyor. Yani senkronizasyon nasıl sağlanacak? Hangi proses hangi işlemcide? Kaynakları kimlerden nasıl isteyecek ve nasıl kullanacak? Ben bunları nasıl senkronize edeceğim gibi yeni problemler doğuyor. Bunlar da artık günümüzde hala üzerinde çalışılan ve çözülmesi için yenilikler gerçekleştirilen kısımlar.
+
+76
+00:30:33,268 --> 00:30:47,348
+yani multiprofesör çok işlemcili makine mimarileri işletim sistemlerinin işini bir hayli karmaşıklaştırıp zorlaştırıyor diyebiliriz ve bu hala üzerinde çalışılan bir alan.
+
+77
+00:30:48,403 --> 00:31:16,403
+Peki, şimdi tarihçesi bu şekilde. Yani siz önce kendiniz insan olarak kuyruğa giriyordunuz ve belirli size ayrılan bir zamanda bilgisayarı kullanıp sonuç alıyordunuz. Ondan sonra ya bunlar böyle sırayla herkes birbirini beklemesin, operatör olsun, operatör işleri bilgisayara yüklesin, bilgisayar hepsine bir zaman aralığı versin, hakkaniyetli bir şekilde eşit olarak ve toplamdaki herkesin bekleme süresini azaltalım şeklinde bir yaklaşım.
+
+78
+00:31:16,403 --> 00:31:31,284
+yaklaşımda başladı. Sonrasında artık aslında operatör de ortadan kalktı ve operatörün yaptığı bu işlerin alınması, verilerin yüklenmesi, kuyruklanması, sırasıyla işlemcide çalıştırılması sonuçların elde edilmesi.
+
+79
+00:31:33,779 --> 00:31:51,779
+işlemlerde artık yazılımlar tarafından yani bu işe özelleşmiş uygulamalar tarafından yapılmaya başladı. Bu uygulamaların hepsine birden de bu işleri yapıp da bir arada yapan işlep bilgisayarın size hizmet sağlamasını sağlayan sistemlere, yazılım sistemlerine de işletim sistemi adını verdik. Bütün olay bu kadar.
+
+80
+00:31:55,316 --> 00:32:23,316
+Özellikle sınıflandırırken, nasıl bir yazılımdır bu diye, bir yazılımın tiplerine bakmakta fayda var. Bu kesin kes doğru, herkesin üzerinde uzlaştığı bir ayrım, kategorizasyon olmak zorunda değil ama genel olarak kabul görmüştür. Şunu demek istiyorum, siz başka türlü bir bakış ressiyle yazılımları başka türlü sınıflandırabilirsiniz. Ama işletim sistemi açısından düşündüğümüzde biz genel olarak yazılımları ikinci olarak yapıyoruz.
+
+81
+00:32:23,316 --> 00:32:40,355
+ikiye ayırız. Bir, uygulama yazılımları. Yani Application Software. Bunlar bizim günlük işlerimizi yapmaya yarayan yazılımlar. İşte mesela müzik dinliyorsunuz. Nereden? Spotify uygulamasından. Ya da internette web sayfalarını geziyorsunuz. Safari kullanarak. Ya da Mozilla Firefox kullanarak.
+
+82
+00:32:40,756 --> 00:33:02,355
+Ya da işte açıp ödevinizin raporunu yazıyorsunuz, ya belki OpenOffice ile yazıyorsunuz, belki Word ile yazıyorsunuz, değil mi? Belki başka bir şey, ne bileyim, Keynote ile bir sunum hazırlıyorsunuz. Ya da DevSea++'ı açıyorsunuz, kodlama yapıyorsunuz gibi. Aklınıza gelen, sizin günlük işlerinizi yapmayı sağlayan bütün yazılımlara biz uygulama yazılımı adını veriyoruz.
+
+83
+00:33:02,784 --> 00:33:26,763
+Bir de uygulama yazılımlarının çalışmasını sağlayan, onlara altyapı hizmetlerini sunan, daha böyle kullanıcının işini görmeyen ama yazılımların düzgün çalışmalarına hizmet veren yazılımlarımız vardır. Bunlara da biz sistem yazılımları adını veririz. Sistem yazılımları genel olarak ikiye ayrılır. Bunlar da şöyle göstereyim.
+
+84
+00:33:30,163 --> 00:33:52,663
+utility program ya da utility software dediğimiz hizmet yazılımlarımız ve işletim sistemimizden oluşmaktadır. İşletim sistemimiz de aslında kendi içinde iki parçadan oluşur. Bir kernel yani çekirdek kalbi, özü, nüvesi bir de kullanıcı arayüzü. Yani sizin işletim sistemiyle etkileşime geçtiğiniz arayüzü.
+
+85
+00:33:52,799 --> 00:34:11,659
+Bu tıpkı şey gibi, User Interface dediğimiz kısım, hani eski bilgisayarlarda önce siz yapıyordunuz, sonra operatör yapmaya başladı, sonra operatör de yazılım haline döndü ya, aslında tam olarak bu. Sizin işletim sistemiyle etkileştiğiniz, yani makineyle, bilgisayarla etkileştiğiniz kısım tam olarak burası.
+
+86
+00:34:20,467 --> 00:34:38,207
+Yani hizmet yazılımını da birlikte alıyorsunuz. Şimdi bu hizmet yazılımları da aslında birer uygulama yazılımı. Çok da farklı değiller. İlla ayıracak mıyız? Hayır, ayırmak zorunda değiliz. Ama bunlar daha böyle sizin hani gündelik değil de işletim sistemi ile birlikte çalışan uygulamalar diyebiliriz. Mesela
+
+87
+00:34:39,219 --> 00:34:48,579
+bir tane flash bellek taktınız, yeni aldınız. Doğal olarak onu ilk önce bir dosya sisteminin oluşturulması için formatlamanız gerekiyor değil mi?
+
+88
+00:34:48,943 --> 00:35:13,123
+Formatlama işlemini aslında işletim sistemi yapmıyor. Formatlama işlemini yapan bir hizmet yazılımı var. Siz aslında onu kullanıyorsunuz. Tamam. Ama bu hizmet yazılımı öyle bir hizmet yazılımı ki aslında sizin işletim sisteminizle birlikte geliyor ve siz onu kurduğunuz için bilgisayarınızı işletim sistemiyle birlikte onu kullanıyorsunuz. Yani başka bir taneyi de bulup kullanabilirsiniz belki. Ya da
+
+89
+00:35:13,423 --> 00:35:41,423
+işte CD yazıcınız var diyelim, CD writer'ınız var ve işte dosyaları CD writer'ı ya da biten filmi CD'ye yakmak istiyorsunuz. Bunun için bir işte burner, CD burner yazılımı kullanıyorsunuz. Bu evet bir uygulama yazılımıydı ama artık günümüzde biliyorsunuz sağ tıklayıp işte diske gönder dediğinizde çat diye bu işlemi yapabiliyorsunuz bütün işletim sistemlerinde. Demek ki bu da artık bir hizmet haline gelmiş. Hatta mesela
+
+90
+00:35:41,423 --> 00:35:44,663
+daha da güzel bir örnek verelim. Sıkıştırma uygulamaları.
+
+91
+00:35:45,012 --> 00:36:13,012
+Vakti zamanında hiçbir işletim sisteminde beraberinde gelen bir sıkıştırma yazılımı yoktu. Ama uygulama yazılımlarıyla, örneğin Winzip gibi bir yazılımla, Winrar gibi bir yazılımla dosyaları sıkıştırma ve diskte daha az yer kaplamalarını sağlama işini gerçekleştirebiliyordunuz. Ama artık günümüzde öyle bir hale geldi ki bunlar işletim sistemlerinin birer hizmet yazılımı haline geldi. Şimdi ne yapıyorsunuz? Klasöre sağ tıklayıp sıkıştırılma.
+
+92
+00:36:13,012 --> 00:36:32,632
+yazılımı gönder diyorsunuz, gidiyor. Değil mi? Bu şekilde bunlar hizmet veren yazılımlar. Peki gelelim şimdi esas bizim odak noktamız olan işletim sistemimize. İşletim sisteminin aslında özü, yani bir işletim sistemi dediğimizde anlamamız gereken yer kernel'dır arkadaşlar. Yani çekirdeği.
+
+93
+00:36:32,896 --> 00:36:55,615
+Bu, bilgisayarın temel elektronik donanımının çalışmasını sağlayan, bütün çevre birimlerinin size hizmet verebilir halde olmalarını, sizin onları kullanabilmenizi sağlayan, depolama ünitesinde veriyi ve uygulamaların depolanmasını ve gerektiğinde geri okunmasını ve çalıştırılmasını sağlayan.
+
+94
+00:36:55,903 --> 00:37:08,304
+Sonrasında da çalışan uygulamaların bir arada mutlu mesutlu birbirini ezmeden düzgün bir şekilde çalışmalarını sağlayan yapıya, bunların hepsini paketleyen yapıya biz kernel adını veriyoruz.
+
+95
+00:37:09,264 --> 00:37:15,364
+Yani aslında bir işletim sisteminin kernel'ı temel olarak dosya işlemlerini yönetmelidir.
+
+96
+00:37:15,860 --> 00:37:25,520
+Bütün cihazların yani bilgisayarın içinde ve dışında harici olarak da bağlayabildiğiniz bütün cihazların kullanılabilir olmalarını sağlamalıdır.
+
+97
+00:37:27,264 --> 00:37:36,884
+Uygulamalar çalışırken, bellek dediğimiz alanın kullanımını düzenlemelidir ve yönetebilmelidir. Bunun için bir parçası mutlaka olmalıdır.
+
+98
+00:37:37,364 --> 00:37:55,264
+Ve işte bu belleği kullanan uygulamaların hangi sırayla kim ne kadar çalışacak, nasıl çalışacak, hangi sistem kaynaklarının ne kadar erişecek ve sırası geldiğinde bu işlemler CPU'da yani bu proses CPU'da nasıl çalışacak ve sonrasında nasıl sırasını bir...
+
+99
+00:37:55,264 --> 00:38:17,463
+sonrakine verecek bu işlemleri Dispatcher ile yapar. Dispatcher ve Scheduler gibi parçalarında mutlaka olması lazım. Peki ben bunları sağlıyorsam eğer temelde bir işletim sistemi oluşturmuş olurum. Yani bilgisayarın donanımını kullanıcı hizmet verir halde bir yapıya dönüştürmüş olurum.
+
+100
+00:38:17,780 --> 00:38:26,780
+Peki ben kullanıcı olarak nasıl etkileşeceğim bilgisayarla? İşletim sistemi üzerinden. Yani kernel ile etkileşmem lazım. Ama ben direkt kernel'a dokunamam.
+
+101
+00:38:26,780 --> 00:38:39,780
+Mantıklı değil. Çünkü o zaten kapalı bir kutu halinde çalışıyor. Bizim ona müdahale etmeden her şeyi otomatik olarak yapması, yani operatöre müdahale etmeden bilgisayarı çalıştırmasını sağlamamız gerekiyor.
+
+102
+00:38:39,780 --> 00:38:45,728
+O zaman ben nasıl etkileşeceğim? Bir arayüz vasıtasıyla. İşte buna da User Interface adını veriyoruz.
+
+103
+00:38:45,728 --> 00:38:56,128
+Bilgisayardan beklediklerinizi, aslında hani komutlarınızı, direktiflerinizi, isteklerinizi sunduğunuz ya da verilerinizi sunduğunuz arayüze kullanıcı arayüzü adı veriyoruz.
+
+104
+00:38:56,528 --> 00:39:03,828
+İki çeşit arayüz vardır temelde. Bir tanesi metin tabanlı arayüzler ki biz bunlara kabuk yani shell adını veriyoruz.
+
+105
+00:39:04,507 --> 00:39:11,967
+Bir diğeri de günümüzde çok daha yaygın bir şekilde kullanılan grafik kullanıcı arayüzleri yani GUI ortamlarımız var.
+
+106
+00:39:12,467 --> 00:39:34,648
+Şimdi, eğer bir terminal ekranınız varsa, bu direkt olarak metin temellidir. Yani aslında siz klavyeden yazıları, komutları, çalıştırmak istediğiniz uygulamaları ve verilerinizi buradan yazarak girerseniz, işte Enter'a bastığınızda aslında bir komutu işletim sistemine buyurmuş olursunuz.
+
+107
+00:39:35,123 --> 00:39:59,543
+Mesela, şu dosyayı sil deyip, sil komutunu verip, dosyayı söylediğinizde ve Enter'a bastığınızda işletim sisteminin dosya yöneticisi, ben şu dosyanın silinmesini anladım ve onu siliyorum. Gidip diskten o dosyayı silmesi beklenir. Ya da bir uygulama yaptınız, derlediniz, siyi de yazdınız. Oyun yazdınız mesela, eşini bulma oyunu.
+
+108
+00:40:00,000 --> 00:40:04,840
+Onu işte yazıp Excess'ini Enter'a bastınız. Doğal olarak o oyun çalışmaya başladı.
+
+109
+00:40:05,359 --> 00:40:09,760
+İşte oyun çalışırken mesela ekranı kullanıyor, klavyeyi kullanıyor değil mi?
+
+110
+00:40:09,760 --> 00:40:13,340
+Bu araçlardan bilgiyi nasıl alacak, buraya nasıl verecek?
+
+111
+00:40:13,800 --> 00:40:22,720
+İşte cihaz buradaki driverlar üzerinden yani bunların sürücüleri üzerinden işletim sisteminin sağladığı bu işlemleri kullanacak sizin uygulamanız.
+
+112
+00:40:23,103 --> 00:40:51,103
+Bellek kullanacak hani o diziler açıyorsunuz, değişkenler tutuyorsunuz falan. Bunların yönetilmelerini, işletim sisteminin size o bellek alanını vermesi, ondan sonra siz onu kullanmanızı düzgün bir şekilde kullanmanızı sağlaması gibi işlemleri yapabiliyor olması lazım. Sizinle birlikte başka uygulamalar da çalışıyor. Bir yandan müzik dinliyorsunuz. O işlemlerin de sırasıyla yapılmalarını kontrol edilmesi ve organize edilmesi lazım. Ve yine sırası gelen işin düzgün şekilde...
+
+113
+00:40:51,103 --> 00:40:58,283
+CPU'da çalıştırılabiliyor olması lazım. Bütün bu parçalar bir arada çalışarak sizin uygulamanızın çalışmasını sağlıyor aslında.
+
+114
+00:40:58,283 --> 00:41:03,323
+Şimdi hani Windows'da
+
+115
+00:41:03,699 --> 00:41:12,859
+işte CMD hani Command Line dediğinizde siyah küçük bir ekran çıkar. Orası aslında işte metin tabanlı kabuk dediğimiz kısmıdır.
+
+116
+00:41:13,319 --> 00:41:24,359
+Unix tabanlılarda işte Bornagen Shell, Seashell, Cornshell gibi değişik şeller mevcuttur. Farkları komut setleri biraz değişebiliyor.
+
+117
+00:41:25,019 --> 00:41:30,380
+Bazı işlemleri daha kolay yapmanızı sağlayan özelliklere sahip farklı şeller üretilebiliyor.
+
+118
+00:41:31,699 --> 00:41:35,299
+ya da MAC kullanıyorsanız Terminal belki görmüşsünüzdür.
+
+119
+00:41:38,387 --> 00:42:06,387
+aslında bir shell ortamı size sağlar. Ama Windows denilen ortamdaki Explorer, Exe, aslında o da bir proses, o da bir normal çalışan bir hizmet yazılımı, size grafik arayüzü sağlar. Ya da işte MacOS'taki arayüz ya da Unix ya da Linux ortamındaki KDE ya da GNOME gibi bir arayüz. Yani XWindow sunucusuyla bir grafik arayüzüne de sahip olabilirsiniz. Şimdi grafik arayüzünde tabii biraz daha
+
+120
+00:42:06,387 --> 00:42:27,648
+olay daha görsel hale geliyor. Uygulamalarınız pencereleri halinde çalışıyor. İndirebiliyorsunuz, arka planı atabiliyorsunuz, dosyalarınızı ekranda görebiliyorsunuz, tıklayarak bir işlemleri başlatabiliyorsunuz ya da sonlandırabiliyorsunuz gibi ekstra özellikler. Yani bir mouse kullanımı da işin içine girmeye başlıyor.
+
+121
+00:42:28,148 --> 00:42:52,076
+Temel olarak baktığımızda bunu söyledik. Hani kernel ortada, kalbi işletim sistemi, bilgisayarın çalışabilir, hizmet verebilir olmasını sağlayan yazılım. Ben kullanıcı olarak, hatta pek çok kullanıcı olarak bir user interface üzerinden ancak bununla etkileşime geçebilirim. Direkt olarak buraya dokunamam. Dokunmam da doğru olmaz. O zaman donanımın yönetimini...
+
+122
+00:42:52,307 --> 00:43:02,988
+yönetimine müdahale etmiş olurum. Bu nedenle ben mutlaka şuradaki interfej üzerinden buradaki işlemlerimi gerçekleştirmek zorundayım. Şimdi gelelim.
+
+123
+00:43:03,572 --> 00:43:31,572
+İşletim sisteminin parçalarını biraz daha hızlı tanımaya. Ne dedik? File Manager var dedik. File Manager, dosyaların diskte ya da başka bir depolama biriminde duran dosyalarımızın, verilerimizin ya da uygulama dosyalarımızın saklanmasını, okunmasını, yazılmasını, silinmesini, organize edilmesini yöneten parçası. Her işletim sisteminin kendine göre bir dosya yönetim sistemi vardır. O da aslında yine bir proje.
+
+124
+00:43:31,572 --> 00:43:59,572
+Proses olarak kendi içinde çalışır ve hepsinin bir protokolü vardır. Mesela hani belki isimlerini duymuşsunuzdur. Windows işletim sistemi genellikle NTFS ya da FET32 gibi bir dosya formatı, dosya tablolama formatı kullanır. İşte ne bileyim Linux X3 kullanır, XFET kullanır, şeyde işte zaten MacOS da yine XFET tarzı.
+
+125
+00:43:59,572 --> 00:44:06,572
+şeyler kullanır gibi hepsinin kendine göre bir şeyi vardır. Bir dosya yöneticisi, dosya sistemi mevcuttur.
+
+126
+00:44:07,372 --> 00:44:21,552
+İsterseniz, burada önemli esas olan dosyalardır. İsterseniz bunları işte klasör ya da directory ya da folder dediğiniz sanal kutucukların içinde barındırabilirsiniz, gruplayabilirsiniz.
+
+127
+00:44:22,072 --> 00:44:27,132
+Yani aslında bunlar birer kategorizasyon, başka hiçbir şey değil. Bir kökünüz var. Kökten başlayarak
+
+128
+00:44:27,572 --> 00:44:39,771
+bunları alt klasörler halinde organize edebilirsiniz. Bunları hepiniz File Manager'ları üzerinden kullandığınız için, Windows Explorer üzerinden falan, çok üzerinde durmaya gerek yok.
+
+129
+00:44:39,771 --> 00:44:48,012
+Tabi iç içe duran klasörlerin altındaki bir dosyada, PET adını verdiğimiz yol üzerinden erişebiliyoruz.
+
+130
+00:44:48,628 --> 00:44:57,628
+Ha, arada şeyden bahsetmedik tabi, Device Driver vardı hatırlarsanız, File Manager'dan sonra, şuraya şöyle geri geleyim. Device Driver dediğimizde,
+
+131
+00:44:57,628 --> 00:45:13,628
+eee, ve temel olarak sizin bilgisayarınızdaki ana bileşenlerin kullanılabilir hale gelmelerini sağlıyor. Örneğin, ekranınız var, ekranda yazdıklarınızın ya da çıktıkların görünmesini sağlıyor.
+
+132
+00:45:13,811 --> 00:45:32,671
+Klavyeden basılan tuşların hangi tuş olduğunun anlaşılmasını ve tuşları dinleyen bir yazılıma, örneğin Word'e bunların hangi tuşa basıldığının söylenmesi sağlıyor. Ya da işte ses kartınız var, operörlerden ses çıkması için gerekli dönüşümlerin yapıları.
+
+133
+00:45:35,155 --> 00:45:58,736
+printerınız var, yazıcınız, oradan kağıda çıktı alacaksınız. Yazıcının kendine göre bir dili var, bir donanımı var. O donanımın nasıl çalışması gerektiğiyle alakalı direktifler. Yani ben mesela oradan kağıdı çıkarttırmak için hangi sinyalleri yollamalıyım o printera? Başka bir printer olduğunda başka tür sinyaller yollamalıyım. Çünkü üreticisi başka, dili başka olacak. İşte bu gibi cihazların
+
+134
+00:45:59,188 --> 00:46:03,508
+ve donanımların hepsinin kullanılabilir olmasını sağlayan bileşenlere de
+
+135
+00:46:03,508 --> 00:46:09,508
+Aygat Sürücüsü ya da Device Driver adını veriyoruz. Bu da işletim sisteminin bir parçası.
+
+136
+00:46:09,619 --> 00:46:13,539
+Bir diğer önemli parçası bellek yöneticisi. Bu ne yapıyor?
+
+137
+00:46:13,819 --> 00:46:20,699
+Belleğimizin, yani RAM dediğimiz alanın, hani silinebilir, yazılabilir, elektrik gittiğinde sıfırlanan belleğimiz var ya,
+
+138
+00:46:21,099 --> 00:46:28,239
+işte oranın tamamen uygulamalar tarafından kullanılabilmesini ve onlar arasında paylaştırılmasını sağlar.
+
+139
+00:46:28,239 --> 00:46:37,579
+Şimdi, uygulamaların eş zamanlı çalışmalarıyla birlikte, yani multitasking yapmakla birlikte, hepsinin belli bir bellek ihtiyacı var.
+
+140
+00:46:37,619 --> 00:46:58,639
+Bunu biliyorsunuz. Doğal olarak var. Çünkü veri tutuyor hiçbir şey yoksa. Dizileriniz var işte gibi, değişkenleriniz var gibi düşünün. Aynı anda işte 100 tane uygulamanın çalıştığını düşünelim. Her birinin kendi bellek ihtiyacı olacak. Ama hepsi bir T anında benim gerçekten fiziksel olarak mevcut.
+
+141
+00:47:01,844 --> 00:47:26,423
+Yani daha fazla bir alana ihtiyaç duyabilirim. Örneğin, diyelim ki benim bilgisayarımın 4 GB belleği var ama o andaki çalışan bütün uygulamaların ihtiyacı olan bellek miktarı diyelim ki 8 GB. Tamam mı? Ama bende 8 GB yok. 4 GB var. O zaman işletim sistemin ne yapması lazım? Burada, yani işletim sistemi demeyelim, işletim sisteminin bellek yöneticisinin ne yapması lazım?
+
+142
+00:47:28,403 --> 00:47:55,143
+Trick yapması lazım. Yani bir sanal bellek ortamı oluşturması lazım. Biz bunlara veri paging adını veriyoruz ve başka ne var benim veri depolayabildiğim bilgisayarda? Diskler var mesela değil mi? Depolama üniteleri mesela harddiskiniz var ya da SSD'niz var. Orada bir dosya oluşturup, örneğin 4 GB'lık bir dosya ve o da sanki bellekmiş gibi kullanıp ve
+
+143
+00:47:55,536 --> 00:48:17,452
+işte yine Memory Bellek yöneticisinin belleği bloklamasıyla birlikte blokları, o anda çalışan uygulamanın verilerini belleğe taşı, çalışmayanlarınkini diskteki sanal alana yaz. Sonra işte Scheduler sayesinde başka bir proses çalışmaya başladı. Onu ön plana aldınız. İşlemci de o çalışıyor.
+
+144
+00:48:20,340 --> 00:48:33,100
+eski çalışması duranı diske yaz, diskteki o çalışması gerekenleri tekrar belleğe al şeklinde böyle bir trik ile sanki daha fazla belleğiniz varmış gibi hizmet sunabilir.
+
+145
+00:48:33,460 --> 00:48:40,100
+Tabi bu güzel bir yön, o zaman teorik olarak sonsuz belleğimiz var hocam diyebilirsiniz. Evet teorik olarak var ama aslında yok.
+
+146
+00:48:40,800 --> 00:48:48,340
+Adreslenebilir alanlar zaten mimaride kısıtlanmış durumda ama nihayetinde gerçekte olduğundan daha fazla.
+
+147
+00:48:48,340 --> 00:49:03,880
+fazla bir bellek alanınız varmış gibi bir ilüzyonla hizmet verebilmeyi sağlıyor. Dezavantajı ne? Disk üniteleri hatırlarsanız yine ilk derslerimizden, evet, bol miktarda veriyi depolayabiliyor ama yavaş.
+
+148
+00:49:04,659 --> 00:49:24,800
+Bellek, memory dediğimiz, RAM dediğimiz bellekler hızlı ama daha küçük boyutta. Fakat diskler büyük ama, depolama alanı büyük ama yavaş. Demek ki sizin böyle bir sanal bellek oyununa girmeye başladığınızda, bellek erişim hızlarınız disk erişim hızınıza kadar düşer.
+
+149
+00:49:25,168 --> 00:49:51,568
+Eğer bunu çok abartırsanız, yani böyle o hocam, şöyle 128 GB belleğim varmış gibi bir disk alanı kullanayım. Evet kullanırsın ama 128 GB'ı bildiğin hard disk hızıyla ancak okuyup yazabilirsin. O da illallah ettirir. Yani hani hiçbir efektifliği kalmaz zaman ve performans açısından. Evet, belli ekme. Bunun tabii çok daha detayları var. Bu belleğin.
+
+150
+00:49:54,452 --> 00:49:57,492
+Bu detaylara şu anda girmiyoruz. Şu anda sadece parçalarını tanıyoruz.
+
+151
+00:49:58,912 --> 00:50:03,132
+Evet, iki tane daha kaldı. Scheduler ve Dispatcher. Onlara geleceğim.
+
+152
+00:50:03,912 --> 00:50:13,052
+Ama onlara gelmeden önce şimdilik sadece bu kadar kısmıyla yani disk ve bellek yöneticisi ve çalışması gereken proseslerimiz var dedik.
+
+153
+00:50:13,352 --> 00:50:16,512
+Hani programlarımızı çalıştırıyoruz ve proses halinde çalışıyorlar dedik.
+
+154
+00:50:16,812 --> 00:50:19,372
+Bize hizmet sunuyorlar, işlerimizi yapıyorlar dedik.
+
+155
+00:50:19,891 --> 00:50:27,652
+Bunlar nasıl oluyor? Yani şu anda bilgisayarınızın kapalı olduğunu düşünün ve power düğmesine bastınız. Hani elektrik geldi.
+
+156
+00:50:30,652 --> 00:50:44,871
+Bilgisayar nasıl başlayacak? Yani bir işletim sistemi nasıl ayağa kalkacak? Ya da bir işletim sistemi, bilgisayar işletim sistemini nasıl çalıştırması gerektiğini nereden biliyor? Bu işlemler nasıl oluyor? Şimdi ona bakalım. Yani önce bir başlangıç işlemlerine bakalım.
+
+157
+00:50:46,771 --> 00:50:57,011
+Biz bu bilgisayarın, yani herhangi bir bilgisayarın ilklendirilmesine, yani başlatılması işlemine bootstrapping adını veriyoruz. Ya da kısaca boot etmek, booting. Tamam.
+
+158
+00:50:58,011 --> 00:51:13,672
+Kim yapıyor bu işi? Bootloader yapıyor. Şimdi aslında siz elektriği verdiğinizde, yani devreler canlandığında, CPU'nuz işlemeye başladığında yaptığı ilk iş, yani sıfırıncı iş diyelim.
+
+159
+00:51:14,164 --> 00:51:22,083
+gidip sıfırıncı belleği okumak. Çünkü hatırlarsanız, von Neumann mimaristisinden de bahsettiğim
+
+160
+00:51:22,083 --> 00:51:34,083
+... ...gulama kodları aynı bellekte duruyorlardı. Aslında CPU'da ilk açılığında sıfırıncı gözü okuyor. Ve sıfırıncı gözde yazan
+
+161
+00:51:34,208 --> 00:51:53,327
+İşlem neyse onu yapmaya başlıyor. Sonra birinci, ikinci, üçüncü gözleri okuyarak yoluna devam ediyor. Yani biz belleğimizin CPU tarafından okunabilir belleğimizin en ilk başına aslında bir bilgisayar açıldığında ne olması gerekir onu yazıyoruz. Şöyle göstereyim.
+
+162
+00:51:55,956 --> 00:52:22,695
+Şurası bizim belleğimiz, bastım Power On düğmesine, CPU çalıştı, CPU'nun ilk yaptığı şey, şuradaki birinci, yani ilk satırı okumak ve buradaki işlemi koşturmak. Yaptı, sonra burayı, 2, 3'ü, 4'ü, yani buradaki bellek alanını okudu, baştaki blue, tamam mı? Burada aslında tam olarak şu yazıyor, şunu kodlamış durumdayız buraya, komut setine uygun olarak.
+
+163
+00:52:23,476 --> 00:52:48,375
+Sayın CPU, disk ünitesinde, onun da adresi fiziksel olarak adresi belli, hani nereden erişebileceğini buraya kodlamış durumdayız. Git o disk ünitesinin şu adresinden bak... ...oku ve çalış, şuraya yükle. Tamam. Buradaki belleğe işletim sisteminin kernel'ını aslında, o prosesini, kernel prosesini alıyor ve yüklüyor. Tamam.
+
+164
+00:52:48,784 --> 00:53:11,903
+Bunları yükledikten sonra program counter artmaya devam ediyor ve artık bu boot işlemi bitince, buradaki işletim sisteminin diskten tamamen okunup da belleğe alınması işlemi bitince buraya koşturmaya devam ediyor. Artık bu noktada bütün iş işletim sistemine geçiyor. İşte işletim sistemi bu noktadan itibaren kernel dediğimiz prosesi çalışıyor.
+
+165
+00:53:12,304 --> 00:53:18,304
+Ve bütün bilgisayarın ilk çalışan uygulaması olduğu için her şeyin kontrolünü ele alıyor.
+
+166
+00:53:18,663 --> 00:53:24,264
+Ve işte önce mesela bellek yöneticisini ayağa kaldırıyor.
+
+167
+00:53:24,563 --> 00:53:28,204
+Sonra işte disk yöneticisini bu adreslemeyi ayağa kaldırıyor.
+
+168
+00:53:28,724 --> 00:53:36,543
+Ondan sonra işlemlerin, hatta önce scheduler'ı bundan önce, proses scheduler'ı ayağa kaldırıyor.
+
+169
+00:53:39,635 --> 00:53:58,572
+Device Driverları ayağa kaldırıyor. Hepsi birer proses bunların da. Hepsi çalışmaya başlıyor ve bunların hepsi hizmet verebilir hale geldiğinde yani aslında şuradaki kod parçası, kernel kodu çalıştık bittiğinde artık sizin bilgisayarınız açık, hazır ve böyle hani cursor yanıp sönüyor ve sizin...
+
+170
+00:53:58,579 --> 00:54:24,380
+verdiğiniz komutlara tepki verip çalışacak. Mesela bir uygulamayı çalıştıracak. Örneğin müzik dinletecek Spotify'dan. O işlemlerin yapılabilmeleri için gerekenleri hazır ve nazır şekilde tutuyor. Şimdi, peki hocam bunu kim yazıyor diyeceksiniz. Yani şuradaki ROM dediğimiz alan. Read Only Memory demektir bu. Yani sadece okunabilir alan. Özel bir bellek alanı genellikle de
+
+171
+00:54:27,507 --> 00:54:52,207
+üzerinde bir çip halinde, bir bellek çipi halinde yer alır ve bunu şöyle kabaca düşünelim şu noktada. Birisi eline almış şeyi, böyle ne bileyim çekici çiviyi tamam mı? Tık tıklaya tık tıklaya böyle hardcoded 011 011 şeklinde bir defterin ya da bir tabletin üzerine böyle taşın üzerine bunları kazımış tamam mı? Ve onu oraya çakmış.
+
+172
+00:54:52,724 --> 00:55:15,104
+İşte o çip ROM çipi, yani ROM belleği. Ve sizin CPU'nuzun ilk okuduğu, hani sıfırıncı adresten başlayarak okuduğu yer aslında orası. E peki, bunu kim yapıyor? Yani buradaki kodları kim yazıyor? Sizin makinenizin, yani bilgisayarınızın üreticisi, anakartınızın üreticisi tarafından hangi işlemci mimarisi ise ona göre yazılıyor.
+
+173
+00:55:15,539 --> 00:55:39,700
+İşte bu neden okunabilir sadece ve değiştirilemez bir alan? Eğer burayı biz değiştirirsek o zaman işletim sistemini yükleme prosedürünü bozabiliriz. Bu da kabul edilebilir bir şey değil. Çünkü işletim sisteminin kendisine müdahale, direkt müdahale olur. Bu nedenle burası sadece okunabilir bir alandır. Ve elektriği kapattığınızda da silinmez. Tamam mı?
+
+174
+00:55:40,115 --> 00:55:54,335
+Bu şekilde, hani RAM'deki her şey siliniyordu ya, şurası sıfırlanıyor elektrik kesildiğinde ama burası sıfırlanmıyor. Burası kazınmış durumda, elle çakılmış, taş tablet gibi kazınarak hani sümer tabletleri gibi düşünelim burayı.
+
+175
+00:55:54,675 --> 00:56:13,275
+Peki, hemen aklınıza şu gelecek. Ya hocam ben geçen bilgisayara şey yaptım, firmware update diye bir şey geldi. Ondan sonra bir şey çalıştırdık. Öyle oldu, böyle oldu. Ondan sonra işte bir şey versiyonu güncellenmiş. Evet, yapabilirsiniz. Yani bu şey değil. Hani şurası hiçbir şekilde yazılamaz dedik ama.
+
+176
+00:56:13,715 --> 00:56:35,175
+Doğal olarak bu bir devre, bu bir entegre bellek ünitesi. Bunu yazmanın, bu ROM belleği de programlamanın yolu yordamı var. Yani hani bir şey gibi taş ustası gibi tık tık diye tık tık diye onu yeniden yazmanın yolu yordamı var. AppROM. Elektronik programlanabilir ROM cihazı ya da uygulamasıyla bunu yapabilirsiniz.
+
+177
+00:56:41,715 --> 00:56:47,295
+Yani bilgisayar daha işletim sistemini yüklemeden çalışmasıyla ROM'unuzu değiştirebiliyorsunuz.
+
+178
+00:56:47,416 --> 00:56:49,416
+Ve buna da firmware adı veriliyor.
+
+179
+00:56:49,536 --> 00:56:50,215
+Neden firmware?
+
+180
+00:56:50,816 --> 00:56:53,476
+Dedim ya biraz önce, sizin bilgisayarınızın üreticisi.
+
+181
+00:56:53,940 --> 00:57:21,780
+Anakartınızın üreticisi aslında bunları yazıyor. O firma yazıyor. O cihazı özel yazıyor. O yüzden firmware, yani firma yazılımı şeklinde bir isimlendiriliyor. Eğer mesela bir driver konusunda ya da bir fiziksel cihazın kullanımı, sinyalleşmesi konusunda bir güncelleme yapılacak, o zaman bunu update edebilirsiniz. Firmware update derler buna da. Eğer bu ROM'un yeniden yazılması sırasında elektrik kesilirse, vay halinize, yandınız.
+
+182
+00:57:21,940 --> 00:57:23,860
+Bilgisayarınız taş olur.
+
+183
+00:57:28,148 --> 00:57:53,488
+İcahi için bir sonraki açılışta şurası. İşletim sisteminiz asla yüklenemez hale gelecektir. Bilgisayarınızı kullanamaz hale geleceksiniz ve bunu tekrar değiştirmenin orada yolu yok. Ancak anakartınızı söküp ya da o çıkarılabiliyorsa ROM ünitesini söküp başka özel bir cihazda yani yine böyle yakarak diyeyim çat çat çat tekrardan sıfırdan programlanması gerekir. Yani taş oldu diyoruz ama.
+
+184
+00:57:53,871 --> 00:58:10,351
+geri döndürmenin bir yolu var fakat yazılımsal değil donanımsal olarak bir işlemle ancak ROM'un tekrar yazılması gerekir bu noktada. Özellikle şu anda biz hani buranın yazılmayacak ya da birileri tarafından bizim için özel olarak yazılıp hazırlanmış bir bellek alanı olduğunu bilsek yeterli.
+
+185
+00:58:10,739 --> 00:58:30,039
+Hemen aklımıza burada şey gelir. E hocam, o zaman işletim sistemini de ROM'a yazalım. Madem ki o ilk okunan yer, CPU buradan başlıyor okumaya, işletim sistemiyle başlasın, değil mi? Çat diye onu okusun. Çok güzel ama ROM pahalı bir cihaz, pahalı bir devre.
+
+186
+00:58:30,452 --> 00:58:33,612
+O yüzden de çok küçük boyutlarda oluyor.
+
+187
+00:58:34,892 --> 00:58:38,052
+Kısıtlı bir bellek kapasitesine sahip oluyor.
+
+188
+00:58:38,492 --> 00:58:39,612
+Bu nedenle de bütün işletim
+
+189
+00:58:39,612 --> 00:58:43,572
+yok. Buraya sadece
+
+190
+00:58:43,572 --> 00:58:46,132
+ilk okunduğunda işletim sistemi şurada.
+
+191
+00:58:46,312 --> 00:58:47,732
+Kernel'ı oradan oku, buraya yükle.
+
+192
+00:58:47,952 --> 00:58:49,672
+Komutlarını sadece tutuyoruz.
+
+193
+00:58:52,307 --> 00:59:15,688
+Peki, burada atladığımız başka bir detay yok. Ha, bazı gömülü sistemlerde, evet, ROM'da işletim sistemi olabilir. Hani bir arabanın beynini düşünün, arabanın çalıştığı anda direkt olarak çalışır, yani bilgisayarının da çalışmaya başlaması lazım. Hani lütfen bekleyin, işletim sistemi yükleniyor, böyle Windows'un şeyi dönüp duruyor, papatya, böyle bir şey.
+
+194
+00:59:18,739 --> 00:59:46,699
+Özellikle böyle hani araç gibi sistemlerde, evet. O gibi gömülü sistemlerde, gömülü bilgisayarlarda ROM içinde işletim sistemi barındırılabilir. Ama zaten çok sınırlı ve küçük bir işletim sistemi olduğu için burada ROM alanında barındırılabilir. Ama genel amaçlı yazılım çalıştırma amaçlı bilgisayarlarımızda, sunucularımızda burada küçük bir başlangıç kodu ve yani işletim sistemin okunup buraya yüklenmesiyle alakalı bir kod. Ondan sonra da işletim sistemi çalışır, ayağa kalkar.
+
+195
+00:59:46,739 --> 00:59:55,739
+Bütün proseslerini canlandırır, hizmet veren, sonra da kullanıcılara hizmet için hazır ve nazır bir şekilde Memori'nin geri kalanıyla birlikte durur.
+
+196
+00:59:55,739 --> 01:00:00,739
+İklendirme sürecimiz mevcut.
+
+197
+01:00:01,235 --> 01:00:29,235
+Şimdi proses proses dedik, proses zaten tanımını yaptık, en başta yaptık çünkü çok konuştuk üzerinde. Bir programın çalışan hali, ne? Proses adını veriyoruz. Peki, ilk bilgisayarlara geri döndüğümüzde hani insanların işleri böyle eş zamanlıymış gibi biraz sen, biraz sen, biraz sen şeklinde çalışıyordu ya, o geçişlerin sağlanması için bir şekilde benim işletim sistemi olarak her bir çalışan prosesin durumunu
+
+198
+01:00:29,235 --> 01:00:30,235
+Biliyorum.
+
+199
+01:00:33,780 --> 01:00:56,080
+Bir prosesin state'i dediğinizde, program counter'ın değeri, CPU'nun register'larının iç değişken tutan alanları vardı ya, onların değerleri ve bu prosesin hangi bellek adreslerini kullandığı, başkaları da var tabii ve başka ilaveler de var. Bunun gibi temel verileri vardır. Tamam, şimdi bunlar böyle bir şey gibi düşünelim.
+
+200
+01:00:56,447 --> 01:01:14,447
+Bir tablo halinde, yani bir ne diyeyim, defter sayfası gibi düşünün, orada yazıyor bunlar. Ve ben bir prosesi durdurup, yani daha doğrusu askıya alıp, şimdi sen bekle sıradaki proses çalışacak dediğim anda aslında o noktada...
+
+201
+01:01:17,235 --> 01:01:45,076
+Şipşak fotoğrafını çekmem lazım, prosesi sistemi ve bir yere yazmam lazım. Bu işi de yapan aslında işletim sisteminin bir parçası olan özel bir proses var. Dispatcher yapıyor bunu. Dispatcher içinde başka bir hizmet prosesi bunu yapıyor aslında. Mesela 10 milisaniye zaman verdiniz bir prosese çalışması için. 10 milisaniyenin sonunda şipşak fotoyu çekiyoruz bu değerleri. Hemen CPU'nun özel bir bellek alanına yazıyoruz.
+
+202
+01:01:45,235 --> 01:02:03,315
+Belliğin özel bir alanına yazıyoruz CPU'nun erişebildiği. Hatta registerlarda bile tutuluyor artık bu günümüzdeki mimarlerde. Sonra ikinci proses geldi. Spotify azıcık çalıştı on milisaniye düşünün. Sonra Word geldi. Word'teki yazma işlemleriniz devam ediyor.
+
+203
+01:02:03,827 --> 01:02:29,187
+On milisaniye sonra bir şipşak daha hop mesela işte ne bileyim Internet Explorer şey geldi gibi düşünün. Böyle bir A prosesi, B prosesi, C prosesi tık tık tık tık tık sürekli yer değiştirerek işlemciye geçip çalıştırıp bilgisayarda hakim olup çalışıyor. Doğal olarak her birinin siteyini işletim sisteminin şipşak fotosunu çekebiliyor, bir yere yazabiliyor. Ondan sonra tekrar prosesi
+
+204
+01:02:29,492 --> 01:02:34,351
+CPU'ya verdiğinde çalışması için bunları geri yükleyebiliyor olması gerekiyor.
+
+205
+01:02:34,351 --> 01:02:38,972
+Buna da genel olarak proses yönetimi ya da process administration.
+
+206
+01:02:38,972 --> 01:02:48,692
+Unuttuğumuz, demin söylemediğimiz, atladığımız ya da ileride konuşacağız dediğimiz iki parçasına geri gelelim işletme sisteminin. Scheduler ve Dispatcher.
+
+207
+01:02:49,268 --> 01:03:12,268
+Scheduler sizin bütün çalışan proseslerinizin, aktif olan proseslerinizin yönetimini sağlayan işletim sistemi parçası. Mesela işte Windows'dan örnek verelim. Task Manager ile gördüğünüz bir liste var ya. İşte o liste aslında Scheduler'dan geliyor. Ve hangi proses aktif? Bazıları uyuyor, bazıları...
+
+208
+01:03:15,699 --> 01:03:40,779
+Görüyorsunuz değişimleri mesela açıp bakarsınız ve işte ya da Linux varsa kullanırsa tabla bakabilirsiniz gibi. Böyle her bir çalışan prosesin bütün bilgilerinin ve mesela kapandığında da silinmesi, artık artık CPU'da çalışmamasının sağlanmasıyla alakalı işlemleri yürüten parçaya scheduler adını veriyoruz. Peki dispatcher ne yapıyor? Dispatcher şunu yapıyor.
+
+209
+01:03:42,867 --> 01:04:07,107
+Bir scheduler dedi ki, a prosesi, dispatcher hemen çalışanı durduruyor, ship shak fotosunu alıp özel alana yazıyor, a prosesinin tablodan verilerini okuyor, a prosesinin en son kaldığı ship shak fotoğrafı alıyor, koyuyor ve bu prosesin
+
+210
+01:04:07,391 --> 01:04:13,951
+CPU'da çalışmasını yani bilgisayarın mutlak hakimi olarak bütün donanımı kullanmasını sağlıyor.
+
+211
+01:04:14,431 --> 01:04:19,271
+Tabii başlattığı anda kronometre var bir de elinde düşünün. Kronometreyi de basıyor.
+
+212
+01:04:19,891 --> 01:04:27,251
+Tamam ve 10 milisaniye dedik ya demin. 10 milisaniye sonra tak diye bir daha kronometreye basıyor.
+
+213
+01:04:27,391 --> 01:04:32,172
+Yani aslında bir sinyal. Biz bu sinyale kesme yani interrupt adını veriyoruz.
+
+214
+01:04:33,856 --> 01:04:57,316
+Interrupt Handler'ı çalıştırıyor. İşte Interrupt Handler ne yapıyor? Şipşak fotoyu çekiyor, tekrar oraya alana yazıyor ve Process Table'a yani Scheduler'a dönüyor. Ey Scheduler ben şimdi ne yapacağım? Neyi dispatch edeceğim diye soruyor. O da diyor ki B prosesini çalıştır. Hemen önceliğe göre tabii Scheduler buna karar veriyor.
+
+215
+01:04:58,164 --> 01:05:17,164
+Bunların hepsinin yöntemleri var. İşletim sistemleri dersinde detaylarını göreceksiniz. Şu anda çok böyle genel kavramlarıyla bahsediyorum. Ve sıradaki işlem, proses alınıyor Dispatcher tarafından. Tekrar CPU'ya yükleniyor. O şipşak fotosu koyuluyor. Kaldığı yerden devam ediyor. Yani böyle şey gibi düşünün.
+
+216
+01:05:18,208 --> 01:05:25,567
+Film dediğiniz yapı nedir? Böyle fotoğraflardan oluşan dizidir değil mi? Onu belli bir hızla çalıştırırsanız sürekli akıyor gibi görürsünüz.
+
+217
+01:05:25,567 --> 01:05:35,288
+Aslında buradaki bütün olay da o. Pek çok proses var. Hepsi böyle şipşak fotoğraflardan oluşuyor gibi düşünün. Onarmeli saniyelik.
+
+218
+01:05:35,788 --> 01:05:45,327
+Ve siz onları arka arkaya böyle defteri tırırt yaparsanız da onun gibi böyle zamanda işlettiğinizde bilgisayarınız hepsini aynı anda çalıştırıyormuş gibi.
+
+219
+01:05:45,715 --> 01:05:53,715
+kullanıcıya hizmet veriyor. Buna da Scheduling ve Dispatching aslında parçaları sağlamış oluyor.
+
+220
+01:05:53,715 --> 01:05:57,715
+Şöyle gösterelim bir de şey içinde.
+
+221
+01:05:58,612 --> 01:06:07,332
+zaman dilimi içerisinde. Dediğim gibi, şurada bir A prosesimiz olsun, şu yukarıda da B prosesimiz olsun. Tamam, başka hiçbir şey olmasın. Sadece iki tane proses var.
+
+222
+01:06:07,332 --> 01:06:21,324
+Yani proses A çalışıyordu, interrupt dedi. Yani ne oldu? Dispatcher'dan şak diye kronometrenin butonuna basıldı, beep diye haber geldi ve interrupt handler şurada prosesi switch etti. Değil mi?
+
+223
+01:06:21,588 --> 01:06:45,428
+Artık CPU'da B proses çalışıyor. Bu noktada tabi onun kaldığı yer neyse o şipşak foto da yüklendi. Bütün hani bellek adresleri, register'ın değerleri, program counter'ın kaldığı satır değeri gibi bunlar yüklendi. Şimdi proses B çalıştı çalıştı çalıştı tak ayrılan zaman bitti. Tekrar dispatcher buradaki B'yi rafa kaldırıp proses A'yı CPU'ya yükledi.
+
+224
+01:06:45,760 --> 01:07:09,536
+Çalıştı çalıştı, tak interrupt, tak interrupt, böyle gitti. Yani siz buna uzaktan hızlıca baktığınızda ikisi de sanki aynı anda böyle tırtır tırtır yan yana koşuyor, beraber çalışıyor gibi bir hissiyat yaşıyorsunuz. İşte Time Sharing tam olarak aslında özünde bu şekilde gerçekleştiriliyor. Şimdi bir yandan da ne dedik? Bütün prosesler bir...
+
+225
+01:07:09,536 --> 01:07:22,616
+sistem kaynağı kullanmak istiyor. Örneğin işte ne bileyim ekran ya da şeyden örnek verelim yine printer'dan örnek verelim. Printer'a çıktı üretecek. Hadi şu Word olsun tamam mı? Şu da Excel olsun.
+
+226
+01:07:22,996 --> 01:07:38,236
+Mesela burada bir Word'de yazdığınız yazıyı print etmek istiyorsunuz. Şurada da Excel'de bir tablo oluşturduğunuz tabloyu kağıda print etmek istiyorsunuz. İkisi de printer kullanmak istiyor. Yani bir kaynak var. Bu kaynağımız printer.
+
+227
+01:07:38,675 --> 01:08:00,235
+olsun sistem kaynağı ve paylaşılamayan bir kaynak çünkü bir tane printer var ve eğer bir dosyayı yazdırıyorsa başka bir dosyayı aynı anda yazdıramaz değil mi? Paylaşılamayan bir kaynak. Şimdi biraz önceki bu tık tıklı kesikli çalışma modeli açısından düşünelim. Şuraya.
+
+228
+01:08:01,172 --> 01:08:27,791
+Şeyi alalım kalemimizi. Şimdi proses B diyelim ki çalışıyor, Excel tamam mı? Siz şuraya kadar geldiniz. Şurada bir print almak istiyorum komutunu çalıştırdınız. Yani işletim sistemine gidip, ey işletim sistemi lütfen bana printer kaynağını rezerve et dediniz. Ben bir şey yazdıracağım kağıda. Şurada da şey olsun işte printer'ın P'si olsun tamam mı? Bir tane bayrak var. Şöyle.
+
+229
+01:08:29,747 --> 01:08:55,747
+Yani bir bit var, 0-1 şeklinde düşünün. Şöyle bir bayrağımız var, tamam mı? İşletim sistemi bu isteği aldı sizden. Bu da aslında Interrupt'lı oluyor. Neyse o detayı boş verin. Baktı, bayrak uygun değil mi? Yani printer boşta duruyor. Peki dedi, tam verecek size bu bayrağı tamam mı? Ama siz o arada tabii zaman ilerledi, Interrupt'ı yediniz.
+
+230
+01:08:57,268 --> 01:09:23,228
+Şimdi Process Dispatcher sizi bıraktı, dondurdu. Process A çalışmaya başladı. Process A'ya dedi ki, burada, ben de işte Word diyor bu. Word'deki dokümanı print etmek istiyorum dedi. İşletim sistemi baktı, bu hala beyaz. Tamam dedi, boyadı. Öbüründe daha boyayamamıştı. Tamam diyememişti bile. Tamam dedi, boyayamadı. Pardon.
+
+231
+01:09:24,020 --> 01:09:51,220
+Şöyle boyandı bu şimdi. Printer'a izin verdi. Artık bu proses A'ya ait. Tamam mı bu kaynak? O kullanıyor. Başladı kullanmaya, şey yapmaya ama tabii çok kısa zaman aralıkta ya bunlar. Ömrü vefa etmedi. Bu zaman bitti. Ve ondan sonra şey yaptı. Tekrar proses B'ye dispatcher sözü verdi. Şimdi proses B şurada kalmıştı ya.
+
+232
+01:09:51,604 --> 01:10:16,123
+Ondan sonra işletim sistemi ona okey demişti ve ilk yapması gereken şey şuradaki bayrağı boyamak ve kullanmaya çalışmak. Tamam, şuradan yolumuza devam ediyoruz. Ama bir baktı, bayrak boyalı. Tamam. Ve tamam bana vermişti dedi şurada işletim sistemi şeyi, kaynağı. Print etmeye çalıştı. Buraya B yazmaya çalıştı. Tamam.
+
+233
+01:10:16,724 --> 01:10:23,804
+Ama bu paylaşılabilir bir kaynak değil. Aynı anda hem A hem B bunu kullanamayacak. Ne olacak? Ne olacak?
+
+234
+01:10:24,595 --> 01:10:46,595
+İşletim sistemi burada patladı. Demek ki işletim sisteminin böyle kesikli çalışan bir ortamda proseslerin kaynaklara erişimlerini düzgün bir şekilde oluşturması gerekiyor. İşte bu yapıya biz semafor adını veriyoruz. Biraz önce özellikle şurada bayrak çizdim buna, flag yani çizdim. Bu da bir kontrol bayrağıdır aslında.
+
+235
+01:10:49,043 --> 01:10:58,744
+Bunu, şuradaki biraz önce oluşan durumu, çözmenin yolu aslında bir critical region dediğimiz
+
+236
+01:10:58,744 --> 01:11:11,264
+ve bunu mutual exclusion'a tabi tutmak. Ne diyorum ben şimdi burada? Şöyle, critical region
+
+237
+01:11:11,828 --> 01:11:19,508
+Özellikle paylaşılmayan sistem kaynaklarının bir prosese verilmesi aşamasında noktasında isteğinde
+
+238
+01:11:19,956 --> 01:11:45,835
+İşte hani boş mu, rezerve et şeklindeki hani iki soru soruyorum ya bu işlemlerin atomik olmasını bölünememesini sağlayan bir özel tanımlı bölgedir. Yani işletim sistemi işlemciye özellikle prosese bir critical region tanımı yapar daha doğrusu sistem kaynağına ve eğer bir işte kaynağın critical region'a bir proses girdiyse tamam mı?
+
+239
+01:11:46,292 --> 01:12:12,852
+Critical Region içinde Interrupt yemez. Hani şuradaki Interrupt'ın uzadığını düşünelim. Tamam ya da eğer Interrupt geliyorsa onu Critical Region'a sokmaz. Critical Region sadece şu bölgede olabilir gibi bir tanım yapar. Şurada giremezsin artık der mesela. Tamam bilmem kaç mili saniyeden az kaldıysa. O yüzden siz böyle hani sorup da sonra kaldığınız yerden aa dolmuş bu diye devam edemezsiniz.
+
+240
+01:12:13,460 --> 01:12:39,219
+Peki, bu mesela test and set diyebilirsiniz. Yani siz boş mu, bana ver gibi iki soruyu tekil, atomik olarak modellersiniz. Bölünemeyen tek bir instruction olarak, bir komut olarak bunu tanımlarsınız işletim sisteminde o kaynak için ve bu sayede dediğim gibi işte mesela şurada sokmazsınız onu Critical Region ama şu bölgede sokabilirsiniz.
+
+241
+01:12:41,460 --> 01:12:47,680
+yaptığınız için bu bayrak ya beyazdır ya da boyanır ve o proses A'ya verilir.
+
+242
+01:12:47,680 --> 01:13:01,340
+Tamam. İşte bu Critical Region ile ben özellikle semaforun set edilmesi, yani boyanması, bir kaynağın bir proses atanması konusundaki çakışmaları engelleyebilirim.
+
+243
+01:13:01,340 --> 01:13:07,579
+Tabii bunun düzgün çalışması için unutmamamız gereken nokta, herhangi bir T anında
+
+244
+01:13:07,648 --> 01:13:25,028
+Bir Critical Region'da sadece tek bir proses bulunabilir. Başka bir proses Critical Region'a giremez. Bunu da işletim sisteminin düzgün bir şekilde işletip kontrolünü sağlaması gerekiyor.
+
+245
+01:13:26,260 --> 01:13:29,860
+sistem kaynaklarının düzgün ve çakışma olmadan
+
+246
+01:13:29,860 --> 01:13:35,380
+proseslere sunulması, kullandırılmasıyla ilgili çok önemli bir işletim sistemi
+
+247
+01:13:35,380 --> 01:13:42,000
+mimarisinde yer alan parça. Bunun yine farklı implementasyonları da var.
+
+248
+01:13:43,079 --> 01:13:47,420
+Farklı sistem kaynağı tiplerine göre detaylarına çok fazla girmiyoruz ama
+
+249
+01:13:47,420 --> 01:13:54,200
+dediğim gibi isteği bölünmez bir alanda yaparsınız ve o bölünmez alanda bir teanda sadece bir prosesin
+
+250
+01:13:54,260 --> 01:14:21,140
+olmasına izin verirseniz eğer buradaki semafor yapısını, bayrak yapısını düzgün bir şekilde sağlamış, tasarlamış olursunuz. Peki şimdi tek bir kaynak için okey siz iki kişinin aynı kaynağı paylaşmasını ya da aynı anda istek yapmasını engelleyebiliyorsunuz. Peki iki ayrı sistem kaynağımız olsa ve
+
+251
+01:14:24,435 --> 01:14:32,635
+aynanı isteseler. Mesela şöyle düşünelim, şurada bir printer var. Başka ne olsun? Şurada bir tane CD-ROM var.
+
+252
+01:14:32,635 --> 01:14:43,835
+Tamam mı? Olsun hadi. Hatta CD-ROM orada olmasın. Bir dakika. Şurayı silelim.
+
+253
+01:14:48,115 --> 01:15:04,996
+CD-ROM'da şurada olsun. Tamam. Şimdi siz A prosesisiniz. Proses A. Tamam mı? Dediniz ki ben printer'ı kullanacağım. Tamam. Printer'ı size verdi.
+
+254
+01:15:07,252 --> 01:15:31,252
+O sırada, diğer Timeslot'a geçtiğinizi düşünün. Tamam mı? Bir tane de şey var, başka bir proses var, bu da B prosesi olsun. Dedi ki ben CD'den okuma yapacağım. Peki, dedi boş ya, ona verdi. Hiçbir sıkıntı yok. Şimdi, bu bunu kullanmaya devam ediyor. Printer'a yazdırıyor, tamam mı? O sistem kaynağını kullanıyor ama dedi ki işletim sistemine
+
+255
+01:15:34,868 --> 01:16:01,008
+CD'den okuma yapmak istiyorum. İşletim sistemi baktı, burayı B kullanıyor, değil mi? Dedi ki, bekle. Bir dakika bekle, o kaynak dolu. Tamam. Bu B'de, yani B prosesi de CD'den okuma yapıyor. Ama bir süre sonra mesela dedi ki, E işletim sistemi, ben printer'dan bir şeyler bastırmak istiyorum. İşletim sistemi gitti baktı, bu kaynak dolu. Neden A'ya tahsis etmişiz? Dedi ki, bekle.
+
+256
+01:16:02,068 --> 01:16:04,228
+Hadi bakalım şimdi. Ne oldu?
+
+257
+01:16:06,188 --> 01:16:11,988
+A prosesi B'nin kaynağının boşalmasını bekliyor. B prosesi de A'nın kaynağının boşalmasını bekliyor.
+
+258
+01:16:12,608 --> 01:16:16,007
+İkisi birbirini bekliyor. Birbirini kilitlediler mi? Kilitlediler.
+
+259
+01:16:16,747 --> 01:16:19,728
+İşte bu duruma biz deadlock adını veriyoruz.
+
+260
+01:16:22,963 --> 01:16:27,304
+...çin bir sistem kaynağını kullanması lazım ama o sistem kaynağı başka proses tarafından kullanılıyor.
+
+261
+01:16:27,783 --> 01:16:35,344
+A, B'yi, B, A'yı bekliyor. İkisi de birbirini bekliyor. Al sana bir deadlock. Kilit. Ne yapacağız şimdi? Hani konu kilit.
+
+262
+01:16:36,404 --> 01:16:43,224
+Eğer şu üç şart oluşursa, üç durum oluşursa emin olun mis gibi bir deadlock'ınız oluşur. Tamam mı?
+
+263
+01:16:43,703 --> 01:16:48,363
+Bir, paylaşılmayan kaynaklar için bir yarış olacak.
+
+264
+01:16:48,800 --> 01:16:54,119
+Printer'da paylaşılmayan bir kaynak CD-ROM'da, yani aynı anda iki kişi kullanamıyor bunları değil mi?
+
+265
+01:16:54,119 --> 01:17:09,239
+İki, kaynaklar böyle teker teker istenecek. Önce ben CD-ROM'dan okumak istedim. Diğeri de önce CD-ROM'dan okumak istedi, bir süre sonra printer'dan yazdırmak istedi gördük.
+
+266
+01:17:09,239 --> 01:17:10,220
+Üç,
+
+267
+01:17:11,155 --> 01:17:38,235
+Siz bir kaynağı verdiğiniz bir prosese zorla geri alamıyorsunuz. Hani çık oradan diyemiyorsunuz. Çünkü A printerı yazdırmaya devam ediyor, B CD'den okumaya devam ediyor. Dur sen okuma deme hakkınız yok. Ya da dur sen yazdırma atıyorum o kağıdı printerdan deme şansınız yok. Tamam. Eğer bu üç şart oluşursa ki demin oluştu, burada printer ve CD örneğinde oluştu, mis gibi bir deadblockınız oluşmuş olur.
+
+268
+01:17:39,155 --> 01:17:40,435
+Bir lakı da şöyle göstereyim size.
+
+269
+01:17:43,255 --> 01:17:52,395
+Bakın bir tren var, şöyle yoldan geliyor, bir yolda böyle gidiyor. Bu tren geçti, şurası bir sistem kaynağı, şurası da bir başka sistem kaynağı, tamam.
+
+270
+01:17:52,884 --> 01:18:20,884
+Bu buna sahip, A prosesi, printera sahip ama şimdi CD-ROM'dan okumak istiyor. Bu da B prosesi, CD-ROM'a sahip ama şimdi printerdan okumak istiyor. Hoppa, ikisi de birbirini bekliyor. Aslına bakarsanız, gerçekten de bu demir yolu şeyinden geliyor. Hem semeformantı hem de deadlock oluşumu. Tam olarak bilgisayar ortamında değil, işletim sistemi dünyasında değil, çok eski.
+
+271
+01:18:20,884 --> 01:18:41,523
+giden daha böyle ulaşım tren yollarından çözülmüş çözülmek için çeşitli uygulamaları yapılmış bir problem. Ben de burada zaten aynısını size çizmeye çalıştım. Demin gösterdiğim trenlerin. Peki ne yapacağız? Doğal olarak bu üç koşulun aynı anda oluşmamasını sağlayacağız. Kim sağlayacak? İşletim sistemi sağlayacak. Şimdi
+
+272
+01:18:41,971 --> 01:18:52,211
+tersten gidelim, üçten bire doğru gidelim. Eğer siz şunu çözmeye çalışıyorsanız, bir Deadlock Detection and Correction yapmış olursunuz. Yani Deadlock
+
+273
+01:18:52,211 --> 01:19:00,572
+fark etme, tanınlama ve düzeltme işlemi yapmış olursunuz.
+
+274
+01:19:00,572 --> 01:19:02,771
+Şimdi
+
+275
+01:19:03,731 --> 01:19:29,091
+Bunu nasıl, yani ne yapabilirim? Ben bunu nasıl çözebilirim bir işletim sistemi olarak? Şunu söyleyebilirim. Sen mesela, kimi seçeyim? B'yi seçeyim, tamam mı? A, B prosesi. CD-ROM kaynağını senden alıyorum. Tamam mı? Burayı boşaltmış oldunuz. Şöyle kırmızıya boyayayım.
+
+276
+01:19:29,427 --> 01:19:55,228
+Artık zorla aldığınız elinden, tamam mı? Bu zorla aldığınız noktada bu kaynak artık A'ya tahsis edilebilir. A bunu kullanır, işini bitirir. Ne zamanki P'ye de biter, o zaman B'ye tekrardan hem CD'yi hem P'yi verirsiniz. Ve bu en çok şeyde olur mesela. Diyelim ki Linux ortamındasınız. Prosesler fork ederek ve kendinden alt prosesler oluşturabilir.
+
+277
+01:19:55,712 --> 01:20:00,992
+Process Table'ınız var. Biraz önce söyledim skecularınızda.
+
+278
+01:20:02,868 --> 01:20:10,228
+Bütün prosesler fork ediyor ve tabloda bunların hepsini fork edebileceği kadar yer yok. Ne oluyor? Herkes birbirini bekliyor.
+
+279
+01:20:10,228 --> 01:20:19,587
+Ne yapıyor burada Linux işletim sistemi? Bazılarını özellikle prosesleri kil ediyor. Kilediğin yani şuradaki örnek gibi,
+
+280
+01:20:19,587 --> 01:20:30,868
+A, B prosesi, ben senden CD'yi alıyorum kardeşim diyor. Aynı onun gibi. Bazı prosesleri öldürüyor ve diğerlerine yer açıyor, ortamı rahatlatıyor, kaynakları boşaltıyor.
+
+281
+01:20:30,868 --> 01:20:56,507
+oluşan deadlock'ı fark edip düzeltiyor. Üçüncüyü çözenler böyle çalışıyor. Zorla alma, alıkoyma. İki, burada da ne diyor? Parçalı olarak istersen deadlock'a gidersin diyor değil mi? O zaman bunun oluşmasını en baştan önleyebilirim. Deadlock avoidance yapabilirim.
+
+282
+01:20:56,948 --> 01:21:12,148
+Şöyle ki, işletim sistemi bir prosese şunu söylüyor. Yani bir proses, bir kaynak request yaptığında, bir resource request yaptığında, a process, isteyeceğin bütün kaynakları bir kere de isteyebilirsin diyor.
+
+283
+01:21:12,724 --> 01:21:35,304
+Başka türlü sana sistem kaynağı ayırmam. Yani siz eğer hem printer hem CD istiyorsanız ikisini aynı anda isteyeceksiniz diyor. Tamam. O zaman mesela önce A geldi. Hem printer hem CD'yi A'ya verirsiniz. B geldiğinde de ben printer ve CD istiyorum dedi. Dur bekle. Senin kaynaklar dolu dersiniz. Onu bekletirsiniz. O da bekler. Tamam.
+
+284
+01:21:35,695 --> 01:21:45,755
+Böyle bir yapıyla her isteyeceğin bütün kaynakları bir kere de iste kardeşimle ikinci maddenin oluşmasını engelleyebilirsiniz.
+
+285
+01:21:46,155 --> 01:21:52,515
+Şimdi gelelim birinci maddeye. Burada önemli olan neydi? Kaynağın paylaşılamaz olmasıydı.
+
+286
+01:21:53,076 --> 01:22:00,795
+Şimdi burada da printer'dan örnek verelim. Hepinizin aslında bildiği farkında olmadan kullandığı bir yapı.
+
+287
+01:22:00,795 --> 01:22:02,916
+Doğal olarak siz Word'den de print edersiniz.
+
+288
+01:22:03,695 --> 01:22:26,835
+Onun printout'u bitmeden, on sayfa yazdırıyorsunuz diyelim, Excel'den de print edersiniz. Arada bir tane de fotoğraf yollarsınız. Windows mesela ne yapıyor ya da diğer bütün işletim sistemleri de ne yapıyor burada? Hayır yazdıramazsın, printer dolu diyor mu? Demiyor. Bir spooling işlemi yapıyor. Tamam mı? Yani işleri bir sanal kuyruğa koyuyor. Şöyle.
+
+289
+01:22:27,923 --> 01:22:40,203
+Mesela şurada bir bellek alanında bir alan var diyelim. Şimdi A prosesi print ediyor. Printer ona dedike ve printer çat çat çat basıyor. B prosesi de dedi ya ben print etmek istiyorum.
+
+290
+01:22:40,884 --> 01:23:08,823
+B prosesine işletim sistemi şunu söylüyor. Tamam kardeşim, print et. Sana kaynağı verdim diyor. Ama aslında gerçek kaynağı vermiyor. Nereyi veriyor? Burayı. Şimdi bu printer'a yollamak istediği her şeyi yolluyor fakat işletim sistemi onları alıyor, diskteki bir mesela dosyaya, sanal bir dosyaya yazıyor böyle bıdı bıdı bıdı bıdı bıdı. Tamam. Böyle durduruyor. Mesela o sırada başka bir C prosesi geldi. Yine printer'ı, C'ya bak. C prosesi geldi.
+
+291
+01:23:08,884 --> 01:23:14,884
+printerı istedi, onunkine de tamam diyor. Kuyrukta buraya yazdırıyor, onun yazdıracağını. Tamam.
+
+292
+01:23:15,315 --> 01:23:38,176
+Böyle böyle böyle kuyruk oluşturuyor. Ne zaman ki bunun işi bitti, hop ikinciyi yazdırıyor, hop üçüncüyü yazdırıyor. Böylece herkes sanki o kaynağı kullanmış gibi hissediyor o anda ama aslında o anda kullanmıyor, ilerleyen zamanlarda kullanıyor. Paylaşılmayan kaynakları paylaşılırmış gibi gösteriyoruz. Buna da spooling adını veriyoruz. Sprinter bu konuda en güzel örneklerden biri.
+
+293
+01:23:38,528 --> 01:24:06,087
+Peki, tamam peki, deadlock konusunda da bunlardan şunu zaten gösterdik, konuştuk. İşletim sistemleriyle alakalı son başlığımız güvenlik. Şimdi güvenlik konusunda işletim sistemlerinin user interface'ler üzerinden user'larla etkileşime geçtiğini söylemiştik. Şimdi bu user'ların kim olduğunu, hangi user olduğunu, işletim sistemi nasıl ayırt edecek? Doğal olarak kullanıcı isimleriyle ayırt edecek. Yani hangi kullanıcı olduğu ile.
+
+294
+01:24:06,319 --> 01:24:20,600
+Peki, o kullanıcının gerçekten o kullanıcı olduğunu nasıl geçerleyecek? Şifreyle, password, username, password kilisi. Eğer gerçekten o username'in password'ünü sağlayabiliyorsanız, siz işletim sistemi için o kişisinizdir.
+
+295
+01:24:20,948 --> 01:24:34,328
+Ve bütün işletim sistemlerinde mutlaka bir ana yetkili, bütün yetkilere sahip bir kullanıcının olması gerekir. Sanki o eski bilgisayarlardaki sistem operatörü gibi. Süper kullanıcı, süper yözer.
+
+296
+01:24:35,507 --> 01:25:01,507
+ya da Windows ortamında Administrator ya da işte Unix ortamlarındaki Root. Ne yaparsanız yapın mutlaka bir Root kullanıcısı ya da bir Windows'da bir Admin kullanıcısı oluşturmak zorundasınız. Bu olmadan çünkü sistem ayarlarını yapamazsınız. Yapılması gereken işitim sistemi ayarlarını yapmak için mutlaka bu yetkilere sahip bir kullanıcıya ihtiyaç duyarsınız. Şimdi siz gidip de Root
+
+297
+01:25:05,235 --> 01:25:29,855
+123456 diye yazarsanız, birisi siz tuvalete gittiğinizde gelir login ekranına, işte username bekliyor, root yazar, password'u da 123456 diye dener, tak girer. Girdikten sonra ne oldu? Artık siz bu zayıf şifreniz yüzünden sisteminize tanımadığınız birini almış oldunuz. Ya da bunu böyle direk sin terminalinizden ekranınızdan yapmak zorunda değil. Bir yazılım.
+
+298
+01:25:30,612 --> 01:25:42,612
+Örneğin işte bir tane uygulama kurdunuz ama cracklemeniz gerekiyor. Neden? Çünkü para ödemek istemiyorsunuz. Bir tane crack şeyi çalıştırdığınızı düşünün. O çalıştırdığınız crack...
+
+299
+01:25:45,492 --> 01:26:13,492
+anahtar değeri ürettiğini düşündüğünüz program aslında kötü niyetli bir program ve çalıştığı andan itibaren kendine bir proses ekliyor sürekli çalışan ve onunla birlikte sürekli çalışır hale geliyor ve mesela en basitinden sizin bütün bastığınız tuşların değerlerini nasıl ki hani işletim sistemi prosesse yolluyordu ya Word'a mesela onun gibi gidip network kartı üzerinden belli bir IP adresine yolluyor. Ne oldu? Sizin bastığınız bütün tuşlar
+
+300
+01:26:40,207 --> 01:27:05,707
+Sonra şifre yazıyorsunuz sayısal, altıhaneli, hoppa o da gitti. Siz zannediyorsunuz ki güvenli güvenli ekranda böyle bir şeyler yapıyorsunuz. Halbuki ya ekranınızı izleyerek ya da tuşlarınızı dinleyerek birileri sizin şifrelerinizi aldı götürdü. Demek ki şifrelere ve özellikle de bilmediğiniz yazılımlara işletim sisteminizin başkaları tarafından kurcalanmaması ve ele geçirmemesi için çok dikkat etmeniz gerekiyor.
+
+301
+01:27:06,000 --> 01:27:30,579
+Bununla ilgili güvenlik yazılımları var. Her türlü, mesela bir yetkisiz kullanıcının yaptığı işlemleri de takip edebilir ya da mesela böyle bir network trafiği yaratan bir prosesin çalışmasını da size raporlayabilir. Dikkat et burada bir şey gidiyor. Sürekli olarak network'e bir şey yollayan bir uygulama var gibi sizin dikkatinizi çekmek için çeşitli çözümler mevcut.
+
+302
+01:27:34,292 --> 01:27:38,252
+Tabii sadece kullanıcıların dışarıdan atakları şeklinde olmayabilir.
+
+303
+01:27:41,011 --> 01:28:08,651
+İçeriden de yani donanımsal da şeyler yapılabilir. Mesela kötü niyetli bir proses vardır ve işletim sisteminde bellek, ayışabileceği bellek alanları belliydi ya, biz bunları process table'da, process state'i diye tutuyorduk ya, pardon process table'da, process state demiştik ya, oradaki veri olarak tutuyorduk ve bir yerlere şipşak fotoğraf gibi yazıyorduk ya. Mesela bunları değiştirebildiğini düşünün.
+
+304
+01:28:09,235 --> 01:28:20,755
+ya da başka bir prosesin gidip bellek alanlarını okuduğunu düşünün, böyle kötü bir proses olduğunu düşünün. Bir işletim sisteminin bunları fark edip engellemesi ve buna izin vermemesi de
+
+305
+01:28:24,372 --> 01:28:34,612
+Yakın zamanlarda yani modern limallerde yine CPU'larda çıkan bir özellik privilege mod diye bir özellik mevcut. Şimdi şöyle
+
+306
+01:28:34,771 --> 01:28:59,972
+Önce hani boot ederken Privilege modda başlıyor. Her şey mübahtan mı? Ama orada zaten ROM'daki kod koşuyor. Sonra işletim sisteminin kernel'ı çalışıyor. Ne zamanki işletim sisteminin yüklenmesi bitiyor, hop non-privilege moda geçiyoruz. Non-privilege moda geçtiğimizde aslında siz prosesinizin kullandığı memory alanlarının yani limit değerlerinin,
+
+307
+01:29:02,771 --> 01:29:30,771
+değişmesini, başka prosesler tarafından değiştirilmesine engel olmuş oluyorsunuz. Yani kötü niyetli prosesin çalışmamasını sağlıyorsunuz. Tamam? Ve bütün normal prosesleri non-privilege modda kısıtlı olarak çalıştırmış oluyorsunuz. Ama ne zamanki privilege modda geçip tekrar çalışırsanız, o zaman bütün diğer proseslerin kullandığı bellek limitlerini değiştirebilir. Hatta kendi bellek alanlarınızda değiştirebilir hale gelebilir.
+
+308
+01:29:30,771 --> 01:29:41,392
+belki duyanlarınız olmuştur yakın geçmişte Intel işlemcilerde böyle bir açık bulunmuştu ve kötü niyetli bir
+
+309
+01:29:41,392 --> 01:29:57,912
+non-privilege moddan çıkıp privilege moda geçip başka bütün bellek alanlarını kayabildiği ve erişebildiği noktasında bir güvenlik açığı oluşmuştu. Ondan sonra yine onunla alakalı
+
+310
+01:29:58,612 --> 01:30:24,071
+Privilege mode tanımları ve privilege mode'a geçiş de aslında bir proses nihayetinde. O prosesi düzelten yamayla bu işlemler çözülmeye çalışılmıştı. Peki, işletim sistemleriyle alakalı temel başlıklarımız, beş ana başlık altında konuşacaklarımız bu kadar. Şimdi, şunu kapatalım. Şöyle.
+
+311
+01:30:27,252 --> 01:30:51,232
+Tamam. Şimdi saat kaç oldu? On beş yirmi beş. Bir kısa ara verelim. Ben de bir boğazımı dinlendireyim. Bir on dakika sonra on beş otuz beşte network konusuyla yolumuza devam edeceğiz. İkinci başlığımız bugünkü. Evet on beş otuz beşte tekrar buradayım.
+
+312
+01:41:18,068 --> 01:41:41,287
+Evet, devam edelim. Network tarafında, yani bilgisayar alı tarafında da yine beş başlığı bakacağız. Temelleri, internet nedir? İnternet üzerinde web, worldwide web dediğimiz yapı nedir, ne barındırır? Protokoller nelerdir? Hızlıca bakıp. Birkaç güvenlik sözüyle birlikte dersi, günü ve dönemi tamamlamayı düşünüyorum.
+
+313
+01:41:41,792 --> 01:41:47,632
+İlk olarak yine bir sınıflandırmayla başlayalım. Network'i nasıl sınıflandırabiliriz?
+
+314
+01:41:48,812 --> 01:41:57,712
+Tabii çok farklı yine sınıflandırmalar yapabilirsiniz ama bir kapsamıyla alakalı, genişliğe alakalı bir sınıflandırma yapabilirsiniz.
+
+315
+01:41:57,972 --> 01:42:08,452
+Örneğin, Personal Area Network dediğimiz yapı en yakın aslında cihazlar arasındaki bağlantı ya da oluşan ağ yapısı olarak karşımıza çıkıyor.
+
+316
+01:42:08,452 --> 01:42:09,292
+Nedir örnek?
+
+317
+01:42:09,695 --> 01:42:26,855
+İşte cep telefonunuz var, bir de kablosuz kulaklığınız var. Bu ikisi birbiriyle bağlanıyor ve işte bluetooth üzerinden mesela ve şey yapıyor, müzik dinlemenizi sağlıyor. Ya da bilgisayarınıza taktığınız hani USB alıcısı var, bir tane kablosuz mouse.
+
+318
+01:42:27,380 --> 01:42:46,380
+Orada da 2.4 GHz'de bir yayın yaparak o sinyalin alınmasını sağlıyor. Bunlara Personal Area Network adını veriyoruz. Eğer bir bina içindeyse ya da fiziksel olarak birbirine, fiziksel kapasite limitleri dahilinde, uzaklık dahilinde birbirine bağlanabilecek...
+
+319
+01:42:49,363 --> 01:42:55,223
+Uzaklıklardaki cihazlar bağlanarak bir yapı oluşturuluyorsa buna da Lokal Area Network adı beliriyor. Yani yerel alan.
+
+320
+01:42:57,803 --> 01:43:13,283
+Genellikle bir bina ya da bir işte binanın içindeki parçalar olabilir örnek olarak. Tabii daha geniş LAN ağları da oluşturabilirsiniz. İlla ki hani binanın dışına çıkmaz gibi de düşünmeyiz. Kesin bir sınırı yok bunun tabii ki.
+
+321
+01:43:13,844 --> 01:43:26,904
+Eğer mesela işte daha geniş aralıklarla bir cihazları birbirine bağladığınız bir ağ oluşturuyorsanız buna MAN ya da Metropolitan Area Network adı veriliyor.
+
+322
+01:43:27,583 --> 01:43:41,804
+Örnek mesela bizim üniversitenin Davutpaşa kampüsü var, Yıldız kampüsü var ya da başka ufak tefek çeşitli yerleşkeleri var. Bunların hepsinin kendi içinde LAN'ları var, lokal arayaları var ama bunları bir araya getiriyorsunuz.
+
+323
+01:43:41,844 --> 01:44:05,783
+ve işte yine aynı üniversite network içinde kalarak konuşabiliyorsunuz. Metropolitan Araya'ya örnek olarak bunu verebiliriz. Bir de Wide Araya Network var. Bu ise daha daha geniş. Hani belki iller, belki kıtalar arasındaki bağlantılar ile sağlanan yapılar. İşte örneğin bir banka var. Bankanın İstanbul'da bir bilgi işlem veri merkezi var.
+
+324
+01:44:07,859 --> 01:44:19,220
+Mesela deprem durumu ya da doğal afetler durumuna karşı hem İzmir'de hem de Ankara'da bunların kopyaları var. Bunlar hepsi bir arada çalışıyor. Wide Area Network için de böyle bir örnek kafanızda canlanabilir.
+
+325
+01:44:20,243 --> 01:44:48,243
+Sahiplik açısından bunları yorumlayabiliriz. Mesela closed dediğinizde kapalı bir networkten bahsediyorsunuz. Dışarıya açık değil. Örneğin bir şirketin kendi içinde ya da bir şirketin bir laboratuvarının içinde mesela ARGE laboratuvarının içinde kullanılan bir network. Dışarıdan erişime kapalı. Bunlar closed. Ama dışarıdan erişime açık. Örneğin hani web sayfalarına erişiyorsunuz ya öyle bir yapınız var ise de hani internet mantığı gibi düşüyoruz.
+
+326
+01:44:48,243 --> 01:45:05,523
+düşünün açık bir network, başka bağlantılara izin veren bir network yapınız var demektir. Topoloji ile göre networklerinizi sınıflandırabilirsiniz. Daha farklı pek çok topoloji olmakla birlikte en çok sık kullanılan iki tanesi Buzz ve Ethernet'tir.
+
+327
+01:45:05,876 --> 01:45:31,176
+Bas, pardon Bas, eternettir, bir de star, yani yıldız vardır. Bas'ı biz genellikle eternet olarak implement ederken, gerçeklerken, star tipindeki topolojisindeki networkleri aslında kablosuz ağlarda görüyoruz. Şöyle ki, örnekleriyle göstereyim. Şimdi Bas dediğimiz yapı aslında şu. Şuradan kalemimizi alalım. İşte burası Bas.
+
+328
+01:45:32,404 --> 01:45:51,584
+Tamam mı? Yani fiziksel olarak birbirine bağladınız bütün cihazlarınızı. Evet, şimdi, VAS yapısındaki mantık tam olarak şöyle, hani genel çalışma mantığı şu. Ben mesela buradaki A bilgisayarıyım, tamam mı? Şuradaki E bilgisayarına bir mesaj yollamak istiyorum diyelim.
+
+329
+01:45:58,195 --> 01:46:16,536
+Mesaj yollamak istiyorum. Yaptığım şey şu, buradan mesajı yolladım. Tamam mı? Üzerine de E yazdım. Yani ben bunu E'ye yolluyorum diye zarfın üzerine bir etiket yapıştırdım. Tamam. Herkes bu mesajı alır. Neden? Çünkü herkes bu A'a bağlı. Bu basın üzerinde duruyor. Bu da alır. Bu da alır.
+
+330
+01:46:17,076 --> 01:46:42,396
+Bu da alır, bu da alır. Herkes dinler. Ama herkes şöyle davranır. Bu bakıyor, bu E'ye gelmiş, benim değil der, ilgilenmez. Bana gelmemiş der, ilgilenmez. Aynı şekilde ama bu bana gelmiş deyip o mesajı alır ve ne yapması gerekiyorsa o netbörkten gelen mesajla bunu işler. Konuşurken de mesela, şöyle silgimizi alalım.
+
+331
+01:46:45,300 --> 01:46:46,680
+Şunları temizleyelim.
+
+332
+01:46:46,680 --> 01:46:49,600
+Şimdi, diyelim ki
+
+333
+01:46:50,003 --> 01:47:13,483
+Buradaki bilgisayar E'ye bir mesaj yollamak istiyor. Yapacağı şey tam olarak şu. İlk önce bakar kimse konuşuyor mu diye, hat temiz mi değil mi buna bakar ve eğer hat temizse mesajını yollar. Diyelim ki aynı anda şans eseri, şuradaki C bilgisayarı da, şuradaki D bilgisayarına bir mesaj yollamak istiyor. Bu da tam hat boşken yolladı. Ne olacak şimdi?
+
+334
+01:47:14,003 --> 01:47:21,844
+Burada da D yazıyordu. İki mesaj aynı anda bası çıkmış olacak. Bu doğal olarak çarpışmaya sebep olacak.
+
+335
+01:47:24,723 --> 01:47:28,003
+Görürüz bu gibi bir durumda. Tam olarak insanlar ne yapıyorsa onu yapıyoruz.
+
+336
+01:47:28,003 --> 01:47:33,203
+Tamam. Şimdi ikisi de aynı anda konuşmaya başladı iki insan. Ne yapar? İkisi de susar değil mi?
+
+337
+01:47:33,203 --> 01:47:39,763
+Yani ikisi de bu mesajı geri alır, bunları yollamamış olur ve sonrasında iki tarafta bir suskunluk olur.
+
+338
+01:47:40,148 --> 01:47:45,628
+Bu mesela on milisaniye bekler. Bunlar rastgele değerler. Bu da diyelim ki sekiz milisaniye bekler.
+
+339
+01:47:45,948 --> 01:47:51,588
+Şimdi sekiz milisaniye sonra bu mesajı yolladı ya boş. Tekrar baktı boş ve yolladı. Artık bu
+
+340
+01:47:52,564 --> 01:48:09,963
+Mesajı yollamaz. Neden? Çünkü şu anda hat dolu. Ne zamanki hat tekrar boşalır bu ikinci yollayacağı, e'ye yollayacağı mesajı ikinci mesaj olarak Network'e basa çıkartabilir. Temel yapı, temel mantık internet bağlantılarında bu şekilde oluşur.
+
+341
+01:48:11,244 --> 01:48:17,543
+Buysa Startup olorisi. Ortada bir Access Point var. Şunu AP diyelim.
+
+342
+01:48:17,904 --> 01:48:32,583
+Access point'imiz bu ve herkes ona bağlı. Yani herkes aslında şunun üzerinden konuşuyor. Şimdi burada doğal olarak Start Topolojisinde had boş mu? Yani ben konuşabilir miyim? şeklindeki
+
+343
+01:48:32,692 --> 01:48:39,872
+soru biraz daha sorun haline geliyor. Çünkü aynı anda hem bu hem bu aynı anda bir istek yaparsa bunun cevaplaması lazım.
+
+344
+01:48:40,412 --> 01:48:55,851
+Buradaki yapı da genel olarak şu şekildedir. Önce bir bakarsınız hat boş mu değil mi diye. Tamam mı? Sonra eğer bir süre sonra daha bir daha bakarsınız. Eğer hala hat boşsa o zaman konuşursunuz. Hani böyle bir kibarlık gibi.
+
+345
+01:48:55,851 --> 01:49:00,231
+Yola adımını atmadan önce bir bakarsın araba geliyor mu diye.
+
+346
+01:49:00,756 --> 01:49:08,076
+Ama hemen çıkmazsın yola, biraz daha beklersin, bir kere daha bakarsın, evet hakikaten gelmiyor deyip o zaman yollarsın gibi düşünebilirsiniz.
+
+347
+01:49:08,855 --> 01:49:15,536
+Genel olarak Startup Oluş'ndeki konuşma mantığı da budur. Ama tabii bunun başka sıkıntıları da olacak.
+
+348
+01:49:16,016 --> 01:49:18,576
+Şimdi onu bir örnek üzerinde de göstereceğim zaten.
+
+349
+01:49:19,060 --> 01:49:38,560
+Ama genel olarak iki tane aslında hani konuşma şekli var. Biraz önce söylediğim. CSMA CD with CD. Ne demek bu? Carrier Sense Multiple Access with Collusion Detection. Tam olarak bu. Eternetteki mantı.
+
+350
+01:49:41,043 --> 01:50:01,844
+Diyelim ki hat boş, direkt olarak konuşuyoruz. İki kişinin aynı anda konuşmaya başladığında herkes ikisi de farklı sürelerde bekliyor, tekrar deniyor. Hangisi daha kısa beklediyse o önce konuşmuş oluyor. Buna CSMACD adını veriyoruz. Bunun alternatifi ne?
+
+351
+01:50:02,256 --> 01:50:28,476
+Aslında şey, Startup Policy'inde kullandığımız CSMHCA. Bu da yine Carrier Sense, Multiple Access with Collusion, bu sefer Detection değil, Avoidance, hani kaçınma diyelim buna. Siz aslında bunu günümüzde belki duyanlarınız, görenleriniz ve aa hocam evet benim modemim böyle bir şeyi var, böyle üzerinde bu yazıyordu özelliklerinde diye.
+
+352
+01:50:31,283 --> 01:50:50,923
+IEEE 802'ye 11 standardı olarak bilirsiniz. Yani CSMACA, IEEE tarafından, bu da Elektrik ve Elektronik Mühendisleri Birliği'dir. Uluslararası bir kuruluş, böyle standartlar ortaya koyan bir meslek birliği.
+
+353
+01:50:51,376 --> 01:51:18,596
+802.11 standard olarak bunu tanımlamış durumda. Dediğim gibi hat boş, biraz daha bekliyorsun, bir daha bakıyorsun hala boş, o zaman mesajını yolluyorsun. Wi-Fi'de temel kullanılan teknik aslında bu. Tabi burada bir problem var demiştim ya, hidden terminal problem adı, yani gizli terminal problemi. Şimdi ona bakalım. Şöyle, şimdi burada bir tane şey var.
+
+354
+01:51:19,220 --> 01:51:45,195
+B bilgisayarı var diyelim. Tamam mı? Bu wireless Wi-Fi ile bağlanacak. Tamam. Onun etki alanı şuradaki gri alan. Tamam. Şurada bir C var. Onun da biraz daha etki alanı kısa, ufak. Şurada da bir tane A var. A'nın etki alanı da ortanca boyutta. Fakat şurada da bir bina var. Bu bina sinyallerin öbür tarafa geçmesine engel oluyor. Tamam. Şimdi...
+
+355
+01:51:47,572 --> 01:52:07,572
+Ben burada B olarak konuşacağım ya, ne yapıyorum CSMA, CA gereğince? Önce bir bakıyorum, hat boş mu diye, kendi range'ime bakabiliyorum sadece. Hat boş. Ondan sonra biraz daha bekliyorum, yine boş, yolluyorum mesajı. Ama bunun aynısını A'da yapıyor. Çünkü B'yi göremiyor bakın.
+
+356
+01:52:07,935 --> 01:52:34,715
+Aynısını C'de yapabilir. Aynı anda herkes konuşabilir. Çünkü hiçbiri birbirini görmüyor. Bir başkası konuşuyor mu diye görmüyor. Hepsi ortadaki şu siyah access point ile konuşmaya çalışabilir. Access point ne yapsın bu durumda? Hem B ile aynı anda, hem A ile aynı anda, hem de C ile aynı anda konuşmak zorunda kalıyor. Yani CMA with CA bunu çözmüyor. Peki, çözüm ne? Çözüm şu.
+
+357
+01:52:35,283 --> 01:52:41,283
+Şimdi ben mesela diyelim ki B'yim. Tamam mı? B, ben bununla konuşacağım.
+
+358
+01:52:41,283 --> 01:52:57,283
+Request'i yoluyorum. Tamam, şuraya request yazalım. Rec. Şöyle. Eğer Access Point'ten bana bir acknowledgement gelirse, tamam konuş diye bir onay gelirse konuşuyorum.
+
+359
+01:52:57,283 --> 01:53:01,283
+Yani hattı kullanıyorum. Mesajımı ve paketlerimi yolluyorum.
+
+360
+01:53:01,876 --> 01:53:22,315
+Eğer acknowledgement gelmezse tekrar bekliyorum. Bir süre sonra tekrar request ediyorum. Bu şekilde buradaki hidden terminal yani göremiyorum başkasının konuştuğunu. O zaman konuşacağım kişiye bir sorup cevap alıp yani onay alıp ondan sonra konuşayım ve ortak access point'i bu şekilde kullanayım gibi bir çözüm önerilmiş durumda.
+
+361
+01:53:23,572 --> 01:53:50,771
+Peki, şimdi temel olarak hani topoloji ve topolojilerin çalışma prensipleri bu şekilde. Peki ben birden fazla ağa sahip olabilirim ve bunları birleştirmek isteye olabilirim doğal olarak hani birlikte çalışan ağ yapıları oluşturmak istiyorum. Nasıl bağlayacağım? Elimde dört tane temel bağlantı cihazı var aslında. Bir tanesi repeater, bir tanesi bridge, bir tanesi switch, bir tanesi de router.
+
+362
+01:53:51,252 --> 01:54:10,692
+Şöyle şey yapalım, gösterelim. Şimdi aralarındaki farklardan bahsedelim. Şurada bir gri network var, bus topolojisinde. Şurada da beyaz bir network var, o da bus topolojisinde. Şimdi ortaya bir tane repeater koyduğumuzu düşünelim. Tamam mı? Repeater, curl lemesine
+
+363
+01:54:10,963 --> 01:54:36,123
+Bütün trafiği, soldaki trafiği alır sağa yollar, sağdaki trafiği alır sola yollar. Ne demek istiyorum? Şimdi ben mesela bu A noduyum, tamam mı? Şu B nodu olsun, şu da C nodu olsun. Ya da şu olsun C nodu, tamam mı? Şimdi diyelim ki A nodu mesaj yolladı, baktı hat boş, yolladı mesajı, tamam mı? Hatta boşluğuna da şimdi takılmayalım. Nereye yolladı? B'ye yollamak istiyor mesajı.
+
+364
+01:54:37,619 --> 01:54:48,140
+Bas'a çıktı mesaj, bu aldı, bu aldı, ilgilenmedi, bu aldı, ilgilendi. Repeater'a geldi, repeater bu tarafa pas etti, bunlar da baktı veya bize gelmemiş dediler, bıraktılar.
+
+365
+01:54:49,235 --> 01:55:11,735
+Benzer şekilde mesela C, B'ye yollayacaktı. Hepsine buradan tık tık tık gitti. Repeater'a geldi. Repeater'dan bu tarafa da gitti. Buna gitti, buna gitti, buna gitti, buna gitti. Sadece B'ye ilgilendi diye düşünebilirsiniz. Yani körlemesine, papağan gibi bütün trafiği oradan oraya, oradan oraya tekrar eder. Peki, Bridge ne yapıyor? Bridge bunun biraz daha akıllısı.
+
+366
+01:55:12,275 --> 01:55:33,435
+Ne yapıyor? Mesela A, B'ye mesaj yollayacaksa, bu basa çıktı ya mesaj, buradaki paket buna buna buna geldi, buna da geldi. Bu bakıyor ki bu B biliyor ki Green Network'te bu tarafa o mesajı yollamıyor. Bu taraf serbest kalıyor yani. Ya da tam tersi işte C, B'ye yollayacak, geliyor buraya A, B bu tarafta diyor, bu tarafa yolluyor.
+
+367
+01:55:33,844 --> 01:55:43,083
+C diyelim ki şuradaki D'ye yollayacak, bu tarafa hiç o mesaj gitmiyor. Tamam? Eğer gerekmiyorsa öbür tarafa paketi göndermiyor.
+
+368
+01:55:43,363 --> 01:55:54,503
+Bu gibi düşünebilirsiniz, Bridge olan bağlantı cihazlarının. Peki Switch ne yapıyor? Switch şimdi aynı türden birden fazla Bridge'i içinde barındırıyor gibi düşünebilirsiniz.
+
+369
+01:55:54,503 --> 01:56:01,264
+Yani şöyle gri, siyah ve beyaz networkler var. Gri ile siyahı bağlayan mesela bir B1 Bridge'imiz olsun.
+
+370
+01:56:01,876 --> 01:56:11,395
+Beyaz ile siyahı bağlayan B2 switch'imiz olsun. Gri ile beyazı bağlayan da B3 biricimiz olsun.
+
+371
+01:56:12,135 --> 01:56:19,135
+Üç tane birici birleştirdiniz, paketlediniz, işte biz buna switch adını veriyoruz. Aynı mantıkla, aynı kafayla çalışıyor.
+
+372
+01:56:19,935 --> 01:56:25,836
+Diyelim şuna yollayacak, yani gri network içinde kalması gereken bir mesaj varsa bu taraflara hiç taşımıyor.
+
+373
+01:56:26,323 --> 01:56:32,083
+Aynı şekilde beyaz ve siyah için de bunu yapıyor. Beyaz, siyahtan griye gidecekse beyaza yollamıyor.
+
+374
+01:56:32,180 --> 01:56:57,180
+Beyazdan siyaha gidecekse griye yollamıyor gibi düşünelim. Böylece hani her network kendi içinde sadece gerektiği kadar trafiği karşı tarafa taşıyarak bunları anahtarlayabilen cihazlara da Switch adını veriyoruz. Peki router ne yapıyor? Router'lar aslında temel olarak router diyen de var buna. Ben router diyorum. Router'larda
+
+375
+01:56:57,811 --> 01:57:25,811
+heterojen ağların birbirine bağlanmasını, paketlerin anahtarlanmasını ve yani mesajların hedefine doğru yol almasını sağlayan cihazlar. Aslında bunlar birer bilgisayar ama özelleşmiş çok özel bilgisayarlar, network bağlantıları çok kuvvetli ve içlerindeki hani işlemci de yazılı işletim sistemlerindeki yazılı algoritmalar, içindeki algoritmalarla yönlendirme routing algoritmalarıyla paketlerin mesajları.
+
+376
+01:57:25,811 --> 01:57:52,811
+mesajların nereye nasıl gitmeleri gerektiğini karar verip yönlendiriyor. Şimdi burada mesela bir tane bir network'ümüz var. Bunun diğer network'lerle bağlantısını sağlayan şöyle bir router'ımız var. Tamam, şurada duruyor. Burada başka bir bus network'ümüz, Ethernet'imiz, o da bir router'la bağlı. Burada da başka bir network bir router'a bağlı. Bu router'lar da birbirlerine bağlı. Şimdi mesela ben şu bilgisayar olarak...
+
+377
+01:57:52,948 --> 01:58:02,168
+Şu bilgisayara bir şey yollamak istiyorum. Mesaj. Ne yapacağım? Doğal olarak Access Point'ime gittim. Access Point'im router'a gitti. Paket burada. Mesajım burada duruyor şimdi.
+
+378
+01:58:02,928 --> 01:58:06,268
+Normalen ne yapmam beklenir? Bu buna direkt bağlı ya.
+
+379
+01:58:06,771 --> 01:58:28,031
+hani bu router'a bağlı olduğunu bileceğim ve ne yapayım şuna yollayayım diyeceğim. O da kendi içindeki network'e bunu mesajı bulaştıracak. Ama diyelim ki bu hat çok meşgul. Burası birinci köprü gibi. Her saat trafik var. Yani buradan mesaj buraya yavaş gidiyor. Ama router biliyor ki yönlendirme algoritmaları sayesinde mesela.
+
+380
+01:58:28,724 --> 01:58:49,724
+Şu hat boş, bu hat da yeterince boş. Yani ben bu paketi direkt bu router'a buradan yollamak yerine, şu router'a yollasam, o da buna yollasam, daha hızlı gidecek. Tamam mı? Sizin paket bu yoldan gitmiyor da, bu router'ın yönlendirme algoritmaları sayesinde buradan buraya, buradan buraya, buradan buraya gidiyor.
+
+381
+01:58:50,228 --> 01:59:01,867
+Bu şekilde bütün mesajların ilgili networklere iletilmesini sağlayan cihazlara da, heterojen ağ yapılarının bağlanmasını sağlayan cihazlara da router adını veriyoruz.
+
+382
+01:59:02,804 --> 01:59:14,644
+Peki, şimdi biraz önce ne dedik? Şuraya bakacak olursak, hani bu başka bir bilgisayar, bu başka bir bilgisayar, bu buna bir mesaj yolluyor, bu buna bir mesaj yolluyor, belki bu hem de buna cevap veriyor falan.
+
+383
+01:59:15,083 --> 01:59:21,483
+Birlikte çalışma söz konusu, yani bir veri alınıyor, veri gidiyor, geliyor ya da istekler gidip geliyor.
+
+384
+01:59:21,971 --> 01:59:31,971
+Biz o zaman farklı makinelerdeki çalışan birimleri nasıl bir arada çalışır hale getirebiliriz? Buna IPC adını veriyoruz. Inter-process communication.
+
+385
+01:59:31,971 --> 01:59:41,172
+Yani farklı cihazlardaki proseslerin, işletim sistemlerine geri döndüm bakın, onların bir arada haberleşerek birlikte çalışmalarını sağlayan yapılar.
+
+386
+01:59:41,568 --> 02:00:03,372
+Temelde iki tane yapı var. Tabii yani varyantları söz konusunda biz temeline bakalım şu anda. Client Server, istemci sunucu mimarisi. Burada genellikle bir tane sunucu vardır ve bu sunucu pek çok istemciye hizmet verir. Doğal olarak sunucunun hep çalışır halde kalması esastır ve bağlantıyı, isteği hep…
+
+387
+02:00:03,412 --> 02:00:30,192
+isteyenler yani client'ların başlatması beklenir. Alternatifi peer-to-peer, herkes client server burada. Bunun da en güzel örneği işte torrentler. Dosyalar herkesde duruyor, herkesde dosyanın parçaları var. Siz bir dosyayı birilerinden talep ediyorsunuz, onlar size geliyor ama siz de başkalarına, başkalarının talep ettiği dosya parçalarını gönderiyorsunuz. Yani bütün prosesler ya da bütün katılımcılar ortak, eşit olarak.
+
+388
+02:00:31,667 --> 02:00:33,867
+haberleşmeyi ve çalışmayı sağlıyor.
+
+389
+02:00:33,867 --> 02:00:36,187
+Peki.
+
+390
+02:00:36,851 --> 02:00:45,851
+Şöyle gösterelim, Server ortada, pek çok Client'a aynı anda eş zamanlı olarak hizmet verebilmesi gerekiyor dedik ama Peer'ler bu şekilde.
+
+391
+02:00:45,851 --> 02:00:56,612
+Tabi burada başka bir Peer var, burada da başka bir bağlantı var. Aynı şekilde burada başka bir Peer daha olabilir. Bu buna bağlı olabilir, bu buna bağlı olabilir, bu da buna bağlı olabilir.
+
+392
+02:00:56,612 --> 02:01:04,851
+Herkes tek tek ama bakın bu ayrı, bu ayrı, bu ayrı, bu ayrı, bu ayrı. Bütün bağlantılar tekil olacak şekilde bir IPC oluşturabilir.
+
+393
+02:01:04,851 --> 02:01:31,083
+Şimdi bunun mesela en güzel örneklerinden biri, şurada bir tane printer'ınız duruyor. Tamam mı? Şöyle şuraya da kağıt koyalım. Tamam. Bu bir printer. Şöyle duruyor. Fişi de fişe takılı. Şurada. Şimdi burada bir tane cihaz var. Buradan da bu cihaza bağlı diyelim şöyle. Bu da sizin
+
+394
+02:01:31,604 --> 02:01:33,604
+Network'ünüze bağlı.
+
+395
+02:01:34,964 --> 02:01:38,604
+Tamam, şuna access point diyelim böyle. Tamam.
+
+396
+02:01:39,644 --> 02:01:42,964
+Buna bağlı. Yani bu bir print server. Tamam mı?
+
+397
+02:01:43,644 --> 02:01:46,644
+Ve ben burada bir client'ım mesela. Diyorum ki
+
+398
+02:01:47,644 --> 02:01:54,644
+bölümde sekreterlikte duran photocopy makinesi tam olarak aslında bu şekilde çalışıyor. Bu bir sunucu.
+
+399
+02:01:54,804 --> 02:02:20,743
+Tamam mı? Hizmet sunuyor. Baskı hizmeti sunuyor. Ben de burada bir baskı istemcisiyim. Lütfen işte sınav sorularını print et diyorum. Buna yolluyorum networkten ve istek yollamış oluyorum. Print server ne yapıyor? Bunu buradan tamam diyor bana ve buradan da kağıt çıktığının oluşmasını sağlıyor. Başka birisi kitap basıyor, başka birisi ne bileyim dilekçe basıyor gibi düşünün. Herkes bir şey istiyor. Bu da onlara hizmet ediyor.
+
+400
+02:02:21,136 --> 02:02:47,496
+Tabii burada sanki siz buyuran, bu yapan gibi bir durum oluştu ama bu hizmet sunuyor. O yüzden server, siz hizmeti alıyorsunuz, o yüzden clientsınız. Bu şekilde düşünmek daha doğru olacaktır. Peki, peki. Şimdi genelde hani istemci sunucu ve peer-to-peer şeklinde çalışır dedik. Birlikte çalışacak networkdeki, farklı cihazlardaki uygulamalar. Bunlar
+
+401
+02:02:47,891 --> 02:02:55,131
+Mesela cihazlar birlikte çalışacaksa bunların modelleri neler olabilir? Bunlara da dağıtık sistemler adını veriyoruz.
+
+402
+02:02:55,871 --> 02:03:08,271
+Şimdi ne demek dağıtık sistem? Belli parçaları farklı makinelerde, farklı bilgisayarlarda, ağ ile bağlı farklı bilgisayarlarda çalışan sistemlere, birlikte çalışan ve sonuç üreten sistemlere dağıtık sistem adını veriyoruz.
+
+403
+02:03:10,127 --> 02:03:22,127
+Mesela eğer makineler birbirine yakınsa ve birbirine bağlıysa, aynı subnet içindelerse, aynı bir mesela bus üzerinde birlikte çalışıyorlarsa, bunlara cluster adını veriyoruz. Yani...
+
+404
+02:03:22,912 --> 02:03:48,052
+bir küme, bir bilgisayar hesaplama kümesi. Cluster computing denir buna. Tamam. Genellikle basit makinelerin bir araya getirilmesiyle daha büyük bir işlem gücüne erişmek için tasarlanırlar. Eğer cluster'ınızın arasındaki aralıklar açıksa, örneğin oda, farklı odalarda duruyorsa ya da farklı binalarda duruyorsa diyelim, bunlar da grid'tir. Grid computing denir buna.
+
+405
+02:03:49,011 --> 02:04:04,011
+kabaca, şimdi çok detaylarına girmeden kategorize ediyorum. Eğer tamamen dağınıksa, yani böyle biri Frankfurt'ta, biri Berlin'de veri merkezinin, öbürü Kaliforniya'da ne bileyim işte bir tanesi...
+
+406
+02:04:05,395 --> 02:04:31,015
+Toronto'da falan böyle dünyanın her yerine dağınıyor. Amazon'un web sunucuları mesela öyle o şekilde ya da Google'ın ve işte siz mesela Drive'a bir tane dosyayı koyuyorsunuz ama hani Frankfurt'ta mı gitti o dosya, Frankfurt'taki bir dosya sunucusuna mı ya da Diske mi gitti ya da işte California'ya mı gitti o tarafıyla ilgilenmiyorsunuz. Tamamen dağınık bir yapı söz konusu. Buna da
+
+407
+02:04:31,507 --> 02:04:43,188
+Bulut hesaplama ya da Cloud Computing adını veriyoruz. Dağıtık sistemler tabii kendi içinde ayrı bir apayrı bir dünya. Sadece bu kadar bir tanıtımla şimdilik geçeceğim.
+
+408
+02:04:43,859 --> 02:05:11,659
+İkinci başlığımız, üçüncü başlığımız pardon, İnternetti. Şimdi aslında İnternet küçük i ile yazıldığında bunu aslında gördük, hani routerların oluşturduğu network demiştik. Birbirine bağlı a, heterojen ağlara İnternet adı veriliyor. Peki the internet olduğunda, büyük i haline geçtiğinde ne oluyor? Bu, bütün dünyayı kaplayan, birbiriyle bağlı ağlar bütününe verilen isim. İlk önce kuruluş amacı şuydu.
+
+409
+02:05:11,859 --> 02:05:21,859
+DARPA, Amerikan Savunma Bakanlığı'nın bir projesiydi. Hani herhangi bir yerel bir felaket olursa oradaki bilgilerin...
+
+410
+02:05:24,595 --> 02:05:52,435
+şey olmaması, dağılmaması, kaybolmaması adına çeşitli üniversiteleri birbirine bağlayalım. Bunların bilgileri birbirleri arasında transfer edilebilir halde kalsın mantığıyla bir akademik proje olarak başladı. Sonrasında günümüzde tamamen böyle ticari ve bütün hepimizi saran, bütün dünyayı her şeyiyle saran bir birleşik ağ modeli haline geldi internet. Peki nasıl bir mimarisi var kabaca ona bakalım. Aslında temelde üç tane
+
+411
+02:05:52,595 --> 02:06:00,595
+katmanı var internetin. Hepsi de ISP yani internet servis provider katmanları olarak geçer.
+
+412
+02:06:00,595 --> 02:06:14,595
+Tire1 ve Tire2 tepede yer alır. Aslında Tire1 dediğiniz şey çok yüksek hızlı, çok yüksek kapasiteli uluslararası ya da kıtalar arası routerlar ağına verilen isim.
+
+413
+02:06:14,899 --> 02:06:24,799
+Bunları aslında hani belki duymuşsunuzdur, internetin omurgası falan derler. Backbone olarak da isimlendirilir.
+
+414
+02:06:25,235 --> 02:06:53,235
+Tahir Tuğ'ya geçtiğinizde ise mesela daha böyle bölgesel. Örneğin hani Avrupa'ya gittiniz, kıta Avrupa'sında. Tahir Van'dan dağılıyor. Nereye dağılıyor? İşte Fransa'ya dağılıyor, Almanya'ya dağılıyor, ne bileyim işte Baltuk ülkelerine dağılıyor, oraya gidiyor, buraya gidiyor ya da işte İtalya tarafına gidiyor gibi düşünün. Böyle daha bölgesel ya da işte Belarus bölgesine gidiyor ya da İskandinavya bölgesine dağılıyor gibi. Bunlar da Tahir Tuğ'ya oluşturur.
+
+415
+02:06:53,235 --> 02:07:04,755
+Daha yerel telekom ağları diyebiliriz. En son bağlantılarda Access ISP'ler ya da TireTree dediğimiz bunlar bizim işte
+
+416
+02:07:05,235 --> 02:07:11,735
+Türktelekom, Turkcell, ne bileyim, türk.net gibi yerel servis sağlayıcılarımız. Tamam.
+
+417
+02:07:11,735 --> 02:07:19,735
+Orada kablo olur, DSL olur, kablosuz olur, ne bileyim, 4G modem olur, bir şey olur. Bir şekilde bağlantınızı sağlarsınız.
+
+418
+02:07:19,735 --> 02:07:24,036
+Genel yapıya baktığımızda, dediğim gibi, Tire1, yukarıda, Backbone.
+
+419
+02:07:24,275 --> 02:07:31,335
+Bütün böyle kıtaları falan birbirine bağlıyor. Şurada okyanusun altından geçen fiberoptik kablolar falan gibi düşünelim bunları.
+
+420
+02:07:31,995 --> 02:07:37,235
+Burası daha bölgesel, işte Avrupa'nın içindeki ülkelerin mesela ağı gibi düşünelim.
+
+421
+02:07:37,755 --> 02:07:45,935
+Burası ise artık her bir ülkenin içinde en tane size erişim hizmeti sunan, hani fatura ödediğiniz kısım.
+
+422
+02:07:45,935 --> 02:07:52,175
+Şunlar da bizleriz. Bu bir cep telefonu da olabilir, bu bir sunucu da olabilir, bu bir data center da olabilir.
+
+423
+02:07:52,275 --> 02:08:08,695
+Tamam yani boyutu önemli değil. Bütün kutular aynı boyutta ama bunlar son sistemler. Yani bir IoT sensörü bile olabilir. Yeter ki bir Access ISP'ye yani bir işte ne bileyim Turkcell'e bağlansın ya da Turk Telekom'a bağlansın. Burada para nerede dönüyor? Trafikte dönüyor.
+
+424
+02:08:09,395 --> 02:08:36,395
+Siz burada hizmet alıp vermek için para ödüyorsunuz. İşte aylık 100 lira, 120 lira ne bileyim belki daha fazla belki daha az belli paralar ödüyorsunuz bunlara. Bunlar da yukarıdaki omurgayı kullanmak için bunlara para ödüyor işte trafik başına. Onlar da yukarıyı ödüyor gibi düşünebilirsiniz. Yani bunlar tamamen üzerlerinden geçirdikleri trafiğe göre ücret alan, nihayetinde bizden aslında bu ücretleri toplayan bir yapı.
+
+425
+02:08:37,395 --> 02:09:01,615
+söz konusu. Peki, ben burada şuyum ve bir şekilde şuna gitmek istiyorum. Nasıl gideceğim? Kendi ISP'me. Kendi ISP'min başkasına, o başkasına, o bilmem neye. Böyle backbone'a kadar gittim.
+
+426
+02:09:02,899 --> 02:09:25,000
+Başka bir router'a oradan işte ISP'ye, ISP'den buraya oradan yerel ISP'sinin üzerinden şuna erişebildim. Nasıl erişeceğim? Yani ben bunun nerede olduğunu nereden bileceğim? Adresleriyle bileceğim. Peki internetteki adresler nasıl dağıtılıyor? IP adresi dediğimiz protokole göre tanımlanmış adresler. Bunlar nedir?
+
+427
+02:09:26,323 --> 02:09:52,884
+Doted decimal notation, yani noktalı decimal notation dediğimiz, noktalı tam sayı notasyon dediğimiz bir notasyona sahip. Sekiz bitlik şöyle dört tane alan noktayla birbirinden ayrılıyor. Bunu çoğunuz zaten artık aşinadır. İşte mesela yüz doksan üç, yüz kırk, dört, bir.
+
+428
+02:09:52,975 --> 02:09:59,215
+Her biri 0 ile 255 arasında değer alabilir ama tabi hepsi kullanılamaz. Bazıları rezerve. O detaya şimdilik girmiyoruz.
+
+429
+02:09:59,215 --> 02:10:13,615
+Ve oradaki her bir, şuradaki her bir AND sisteminin aslında böyle teorik olarak belli bir tekil adresinin olması gerekiyor. Tabi burada 32 bit kullandığınızda adresler sınırlı. Dediğim gibi bir sürü de rezerve adres var.
+
+430
+02:10:14,003 --> 02:10:21,423
+Onları da düştüğünüzde tekil adresine bir sayı azalıyor. Ha ben ne yapabilirim? Şurada mesela kendi çıkışıma
+
+431
+02:10:21,652 --> 02:10:48,932
+Benim mesela şurada şirketim var. Şirketimin bir tane router'ı ile çıkıyorum. Şurada tek bir IP alırım. Kendi içimdeki bin tane bilgisayara lokal IP'ler dağıtırım, sanal IP'ler dağıtırım ve herkes bu IP üzerinden interneti çıkmış olur. Böylece tabii toplam sayıyı arttırabiliyoruz. Ama bu da yeterli değil. Özellikle IoT'de cihazlarında adreslenmeleri ile birlikte 128 bit adresleme yani IPv6'ya geçiş konusunda biliyorsunuz çalışmalar var ve
+
+432
+02:10:49,652 --> 02:10:53,231
+Bir yandan geçiş devam etmeye çalışılıyor bu konuda.
+
+433
+02:10:54,012 --> 02:10:59,212
+Her şey güzel. Sayılarla ben adreslere erişebiliyorum ama çok affedersiniz. Bir telefona bakacağım.
+
+434
+02:11:29,908 --> 02:11:53,748
+Evet, devam ediyoruz. Pardon. Kısa kesinti için. Ben tamam, hani sayısal adreslerle bunlara erişebiliyorum. Bütün uç noktaları teorik olarak erişebiliyorum da hüksini nereden aklımda tutacağım? Çok zor. İşte bunun için bir sanal isimlendirme, adresleme sistemi var. Domain name diyoruz biz bunlara, etki alanı isimleri. İşte mesela bunlar da kendi içinde
+
+435
+02:11:54,484 --> 02:12:01,024
+kategorilere sahip, bunlara da top level domain, TLD adı veriliyor. TLD'ler iki çeşit.
+
+436
+02:12:01,024 --> 02:12:06,904
+Günümüzde tabi bunlar iyice arttı. Pardon.
+
+437
+02:12:19,796 --> 02:12:22,096
+ya da dat edu gibi
+
+438
+02:12:24,396 --> 02:12:26,956
+Bu bir network'tür bu bir
+
+439
+02:12:53,279 --> 02:13:17,759
+TR koyabilirsiniz. Tamam. Bu şekilde top level domainler oluşur. Şimdi, ben Türkiye'deki ticari bir işletmeyim. Ya da kendimizden örnek verelim. Türkiye'deki bir eğitim kurumuyum. Benim etki alanım domain name'im ne? Yıldız. Yani yıldız.edu.tr adresi, domain'i.
+
+440
+02:13:18,931 --> 02:13:43,891
+Arka planda bir yerlerde işte belli bir 193 bilmem ne adresine tekabül ediyor. Peki ben bunu bu adresleme, yani şu Yıldız-EVTR diye isimlendirip insan olarak kolaylıkla erişebildiğim, hatırlayabildiğim adresi. Acaba sayısal karşılığını nereden elde edeceğim? Bunlar bir yerlerde böyle klasör gibi, hani telefon rehberi gibi duruyor. Bunlara da DNS, yani Domain Name Sistem adı veriliyor.
+
+441
+02:13:44,467 --> 02:13:52,228
+Bu hizmeti veren, DNS hizmetini veren sunuculara nameserver yani isim suncusu, alan adı suncusu adı veriliyor.
+
+442
+02:13:52,851 --> 02:14:14,452
+Yapılan işleme de yani sorgulama işlemini de DNS Lookup işlemi adı veriliyor. Yani siz mesela YılZ.R diye yazdığınızda aslında bir DNS server'a gidip ya bu adresin IP karşılığı nedir, sayısal karşılığı nedir sorusunu soruyorsunuz ve size de işte 193, 141, 1 diye bir cevap geliyor.
+
+443
+02:14:16,079 --> 02:14:42,060
+Network üzerinde konuşurken hep 193.141.1 adresiyle konuşuyorsunuz ama sanal olarak YıldızEduTR üzerinden onu girmiş, o IP adresine geçmiş oluyorsunuz. İnternetteki adres de bu şekilde. Peki bunu kim yönetecek? Yani hangi IP, hangi alan adına sahip? Bunun ucu bucağı yok. Nasıl yöneteceğiz?
+
+444
+02:14:42,612 --> 02:14:50,131
+Dünya üzerinde bu işi yöneten ICANN diye bir kurum var. Internet Corporation for Assigned Names and Numbers.
+
+445
+02:14:50,131 --> 02:14:52,532
+Aslında bütün
+
+446
+02:14:53,779 --> 02:15:12,739
+ISP'lere IP adreslerini yani hem coğrafi olarak hem lokasyon olarak ISP'lere IP adres havuzlarını dağıtıyor ve bunları da bölgelere göre dağıtıyor dedim. Ayrıca bu dağıttığı IP'lere tanımlanmış olan domain isimlerinin de neler olduğunu aslında ICANN.
+
+447
+02:15:12,819 --> 02:15:40,799
+ana olarak üst seviyede tutuyor. Ama tabii bütün her şeyi, dünyadaki bütün alan adlarını bu biliyor diye bir şey yok. Bölgesel olarak bunları lokal otoritelere dağıtmış durumda. Örneğin ben com.tr gibi bir adres, benim bir şirketim var, işte şirketim com.tr adresini almak istiyorum. TR uzantısı yakın bir zamana kadar ODTÜ'nün kontrolündeydi. Yani siz şu uzantıya sahip bir alan adına
+
+448
+02:15:40,819 --> 02:16:03,939
+iii p adresi karşılığına atamasını istiyorsanız, Ottu'daki nicktr'ye gidip, işte bakın benim şirket belgelerim bunlar, bu şirketimin adı olan comtr uzantılı adresi ben kullanmak istiyorum ve benim sunucularım şu ip adresinde duruyor, lütfen bu işlemi yapın diye başvurup parasını ödüyordunuz, o şekilde yapılıyordu. Şu anda günümüzde BTK.
+
+449
+02:16:04,304 --> 02:16:08,243
+Bilişim Teknolojileri Kurulu mu kurumu mu tam açılımını bilmiyorum.
+
+450
+02:16:09,103 --> 02:16:14,403
+Cumhurbaşkanlığına bağlı BTK kurumu bunu, bu işlemleri yürütüyor.
+
+451
+02:16:14,823 --> 02:16:20,203
+Günümüzde bu şekilde bir lokal otorite olarak devam ediyor.
+
+452
+02:16:20,304 --> 02:16:23,503
+Ama mesela Amerika'da belirli şirketlere dağıtılmış durumda.
+
+453
+02:16:23,583 --> 02:16:26,063
+İşte Go dedi'den bilmem ne komu alabiliyorsunuz.
+
+454
+02:16:26,783 --> 02:16:29,863
+Arka planda girip o IP adresi eşlemesini yapıyor.
+
+455
+02:16:30,344 --> 02:16:32,223
+Icane kadar bunlar bildiriliyor.
+
+456
+02:16:32,304 --> 02:16:56,324
+DNS serverlara bu bilgi gidiyor. DNS serverlar nerede duruyor? Şöyle geri gelelim. Tamam, siz şimdi şuradaydınız. Şuradaki adrese ulaşmaya çalışıyorsunuz. Aslında buna soruyorsunuz. DNS burada. Şu adres nedir diye soruyorsunuz. Yani yıldız elitörü nerede? Biliyorsa söylüyor. Direkt IP'yi sana söylüyor. Sen buradan bir yerden trafik yaratıp gidiyorsun.
+
+457
+02:16:56,703 --> 02:17:15,523
+Bilmiyorsa buna soruyor, bilmiyorsa üste soruyor gibi düşünün. Hep böyle üst kademeye kadar gidip bir yerde bir DNS sunucusunda o adresi buluyor. Hiçbir yerde bulamazsa böyle bir adres yoktur şeklinde. Hani yanlış bir adres girdiniz. Olmayan adres cevabı size geri dönüyor.
+
+458
+02:17:17,384 --> 02:17:20,203
+Şimdi geldik internet uygulamalarına.
+
+459
+02:17:20,528 --> 02:17:25,388
+Ben bu kadar trafiği niye yaratıyorum? Hizmet almak için ya da hizmet sunmak için yaratıyorum.
+
+460
+02:17:25,716 --> 02:17:50,036
+En birindiklerine hızlıca bir bakacağız. Mesela e-posta uygulamaları, internet trafiğinde önemli bir yer tutar. Bunun kendine göre bir protokolü, bir formatı vardır. Şimdi siz eğer bir mail yollamak istiyorsanız, bir mail sunucu olarak belli bir protokole göre konuşmanız gerekir. Buna da SMTP protokolü, Simple Mail Transfer Protokol adı verilir.
+
+461
+02:17:53,716 --> 02:18:16,256
+hani ilgili formatta yollanmış bir maili usulüne uygun olarak almak istiyorsanız, POP3 formatını, Post Office protokolünü kullanmanız gerekir. Ya da Internet Message protokolü var, onu da kullanabilirsiniz. O da IMAP Alternative. Yani SMTP ve POP3 veya IMAP'i kullanabilirsiniz.
+
+462
+02:18:16,979 --> 02:18:32,279
+Bu protokollere uygun olarak, o protokolün komutlarını, dilini ve paket yapısını implement ederek, gerçekleyerek siz trafiği yarattığınızda bunlar mail olarak, anlamlı olarak gidip gelirler. Çok detaylarına yine girmiyorum.
+
+463
+02:18:34,195 --> 02:18:47,195
+Mesela bunlar hep tekst tabanlı. Doğal olarak ASCII karakterlerinden oluşuyor. Ama ASCII karakterlerinde olmayan karakterler de var. Hiçbir şey yoksa hani emojiler var ya da
+
+464
+02:18:47,920 --> 02:19:08,360
+Türkçe karakterler, en basitinden düşünün. Onun için MIME dönüşümü, Multipurpose Internet Mail Extension diye bir dönüşüm var. O dönüşümde hepsi birer ASCII karakter dizisi haline dönüştürülebiliyor. O yüzden bazen bakarsanız anlamsız bir karakter dizilerini görebilirsiniz. Bu tip paketleri okuduğunuzda, içini açıp baktığınızda.
+
+465
+02:19:09,711 --> 02:19:20,371
+Başka, ben dosya alıp verebilirim bu network üzerinde, internet üzerinde. Onun içinde bir dosya transfer protokolü, FTP protokolü vardır. Binary dosya transferine olanak sağlar.
+
+466
+02:19:20,979 --> 02:19:41,619
+Başka ben uzak sistemlere erişip terminallerine yani onların user interface'leri üzerinden tabii tekst tabanlı user interface'leri üzerinden o sistemleri kullanmak istiyor olabilirim. Bunun için de Telnet ve SecureSocket Shell gibi iki tane farklı yine protokol mevcut. Başka ne var günümüzde? Ona bakacak olursak.
+
+467
+02:19:44,659 --> 02:19:46,599
+Ne oldu ya buna? Geri geldi pardon.
+
+468
+02:19:48,059 --> 02:19:50,880
+Mesela VoiceOver IP var artık.
+
+469
+02:19:51,139 --> 02:19:54,899
+İnternet radyo bir ara vardı, hala var ama tabii çok fazla tutmadı.
+
+470
+02:19:55,040 --> 02:20:03,159
+Neden? Çünkü onun yerine on-demand streaming yani Anycast topolojisi daha çok yer buldu.
+
+471
+02:20:03,299 --> 02:20:06,040
+Nedir on-demand streaming? İşte şey Spotify.
+
+472
+02:20:06,040 --> 02:20:07,020
+Değil mi?
+
+473
+02:20:07,476 --> 02:20:28,956
+ya da Netflix gibi uygulamalar. Siz ne istiyorsanız onu size oradaki içeriği tabi parasını ödediğiniz sürece oradaki içeriği size sunuyor. Peki nasıl sunuyor bunu? Arka planda aslında bir CDN network bir teknolojisi var. Şöyle çalışıyor kabaca. Şimdi biz neredeyiz? Türkiye'deyiz değil mi?
+
+474
+02:20:29,683 --> 02:20:52,304
+Spotify'ın belirli bir CDN üzerinde verileri duruyor. Mesela Hollanda'da bir kopyası duruyor, Rusya'da Moskova'da bir kopyası duruyor, Ankara'da bir kopyası duruyor, Atina'da bir kopyası duruyor, Amerika'da, Kaliforniya'da ve New York'ta birer kopyaları duruyor. Kabaca böyle bir şey düşünelim.
+
+475
+02:20:56,115 --> 02:21:14,675
+Siz mesela İstanbul'dan bir şarkıyı dinlemek isteğini Spotify'a verdiniz. Ne yapıyor Spotify? Bakıyor, sen nereye yakınsın İstanbul olarak, tabii Network'ün trafiğine de bakarak, sen Ankara'ya yakınsın diyor ve Ankara'daki sunucudan sana içeriği aktarıyor, akıtıyor.
+
+476
+02:21:15,283 --> 02:21:34,783
+Ama belki Ankara trafiği olanı da çok yüksek. Belki Atina'dan gelecek size. O da olabilir. Yani buna tamamen tabii algoritmalara göre karar veriliyor. Genel olarak bu yapıya, Anycaste yapısına da CDN ya da Content Delivery Network adını veriyoruz. Başka ne var? Başka protokol?
+
+477
+02:21:35,252 --> 02:22:03,211
+Bunu söylemeden tabii geçmek olmaz. HTTP protokolümüz var. Hypertext Transfer Protokolü. Yani bizim World Wide Web dediğimiz web sayfalarından oluşan birbirine bağlı ve tıklayarak gezinti başka sitelere, başka etki alanlarına geçişim sağlayan kaynaklar arasındaki bağlantıları yine bu Hypertext Protokolü sayesinde gerçekleştirebilen yapı bunların geneline.
+
+478
+02:22:03,252 --> 02:22:10,371
+yani buradaki bütün içerikle birlikte oluşan genel yapıya da World Wide Web adını veriyoruz. Peki bu web üzerinde
+
+479
+02:22:10,371 --> 02:22:17,412
+HTTP protokolü ile ben kaynaklara nasıl yerleşeceğim ya da kabaca web sayfalarına nasıl yerleşeceğim? Bütün
+
+480
+02:22:17,412 --> 02:22:22,332
+dokümanların, bütün sayfaların, bütün içeriğin benzersiz bir tanımlayıcısı vardır.
+
+481
+02:22:22,736 --> 02:22:44,588
+aynı Domain adı gibi düşünün ama bir Domain altında pek çok içerik barındırabilirsiniz. Bunlara da URL, Uniform Resource Locator adını veriyoruz. Örneğin şu şekilde, şimdi tipik bir URL görüyorsunuz. En başta protokol bilgisayarıdır. Doğal olarak HTTP. Değil mi? Neden? Çünkü ben bunu hipertext...
+
+482
+02:23:09,363 --> 02:23:32,203
+Peki, onun altında ne var? İşte buraya da subdomain adını veriyoruz. Yani mesela AW etki alanındaki SS Enterprise alt alanından bahsediyorum. Evet, dahil [öğrenci]. Finalde bu işletim sistemleri ve bilgisayar ağlarından da sorularımız olacak. Peki, şimdi burası benim domeynim.
+
+483
+02:23:32,852 --> 02:23:59,812
+Bu domeynin altında URL tanımlamaya devam ediyorum. Bunun altında bir directory varmış, tamam mı? Bir yol, bir pet. Authors'ın içinde Shakespeare, Shakespeare'in içinde de Julius Caesar.html diye bir doküman varmış. Yani burası benim işletim sistemlerindeki dosya yolum.
+
+484
+02:24:01,108 --> 02:24:04,128
+Web suncusunda erişilebildiği alt klasör.
+
+485
+02:24:07,128 --> 02:24:09,048
+En sağdaki alanda,
+
+486
+02:24:10,328 --> 02:24:14,488
+bu alandaki eriştiğim belgenin, dökümanın adı.
+
+487
+02:24:15,108 --> 02:24:16,208
+Hepsi birlikte,
+
+488
+02:24:16,728 --> 02:24:18,008
+baştan sona,
+
+489
+02:24:18,008 --> 02:24:20,308
+benim URL'imi oluşturuyor.
+
+490
+02:24:21,843 --> 02:24:46,843
+Bu URL'de içerik nasıl bir şey? HTML ile formatlıyoruz genel olarak. Genel olarak böyle etiket dediğimiz ayıraçlarla, mesela bu bir başlık, bu bir paragraf şeklinde içerikleri isimlendiriyoruz. Şöyle hızlıca bakalım. Bu bir HTML dokümanı olduğunu anlıyorum. Belirli bir başlık ve gövde alanı var. Başlıkta bir...
+
+491
+02:24:47,540 --> 02:25:06,880
+title bilgimiz mevcut. Sonrasında bir koyu yazı, bir paragraf yazısı gibi böyle etiketleniyor. Yani şu içerik bir header'dır. Header 1 tipindedir. Şu içerik bir paragraf tipindedir gibi bunları etiketliyorum. Nihayetinde sizin web browser'ınız böyle bir yapıyı size gösteriyor.
+
+492
+02:25:07,412 --> 02:25:29,631
+ya da biraz daha bunu büyütebiliriz. Mesela link mekanizması. Onu da başka bir etiketle, etiketleme ile gösteriyoruz. Here burada etiketlenmiş durumda. Ama bunun bir özelliği var. Bakın yeni bir URL vermişim. Bir referans özelliği olarak. Yani aslında buna girdiğinizde de şurada click here deyip buraya tıkladığınızda şuradaki URL adresine gidebilmenizi sağ olun.
+
+493
+02:25:29,971 --> 02:25:53,131
+Aslında HTTP protokolünün bütün gücü burada. Bir anda tıklamayla bambaşka bir domeynde, bambaşka bir içeriğe tek tıkla erişebilmenizi ve buradaki bütün içeriğin böyle bir örümcek ağ gibi hepsinin karışık bir halde birbirine bağlanabilir olmasını sağlıyor. Bu yüzden buna web adını vermiş durumdayız.
+
+494
+02:25:53,492 --> 02:26:13,492
+Aslında baktığınızda HTML, XML'in bir alt kümesi, özelleştirmiş alt kümesi diyebilirsiniz. Burada her şey etiketler tanımlı ve web browserlar yani istemciler bunları anlamlandırabiliyor ama XML'de etiketleri de siz tanımlayabiliyorsunuz. Mesela şöyle bir...
+
+495
+02:26:14,100 --> 02:26:32,159
+müzik notası olsun. Bakın burada bir anahtarı var, burada bemol tanımları var, burada ölçüsü var, burada bir S var, burada bir üçlü nota var, Sol. Ondan sonra burada bir ikilik Mi notası var gibi gibi. Şimdi ben bu bilgiyi aslında kodlayabilirim bir iximal olarak. İşte mesela
+
+496
+02:26:32,628 --> 02:26:59,268
+Ben anahtarım SOL anahtarı, ondan sonra işte şeyler DOMINOR, ölçüsü TIME, bakın 2 bölü 4, şöyle geri geleyim. Yani bu, bu, bunu tanımladım diyebilirim. Sonrasında işte NOTALAR, bakın bir ölçü içinde, MEJURE, MEJURE nedir? Müzik bilenler, şuradan şuraya kadar olan, değil mi? Başta çizilmez ama ben çizeyim şöyle.
+
+497
+02:27:02,611 --> 02:27:28,252
+İki dörtlük değil mi? Toplamda burada iki değerinde not olması beklenir. Bir Mejur içinde, şu Mejur'dan bittiği yere kadar, bakın bir tane 1 bölü 8'lik rest var, ondan sonra yine 1 bölü 8'lik 3 tane sol var. Yani aslında es, sol sol sol. Bunları tanımlamış olduk. 1 bölü 2, 1 bölü 2, 1 bölü 2, 1 bölü 2.
+
+498
+02:27:28,884 --> 02:27:31,263
+Toplamda işte ikilik oldu.
+
+499
+02:27:31,263 --> 02:27:33,844
+Birbir, birbir, birbir, pardon ikilik oldu.
+
+500
+02:27:33,844 --> 02:27:42,084
+Şuradaki Measure'da, ikinci Measure'a geçtiğimizde sadece işte bir tane Mi notasını görüyoruz.
+
+501
+02:27:42,324 --> 02:27:42,424
+Tamam.
+
+502
+02:27:43,244 --> 02:27:43,984
+Bu ne oldu?
+
+503
+02:27:44,103 --> 02:27:51,283
+Ben aslında bir müzik ifadesini şurada bir XML formatına çevirerek ifade ettim.
+
+504
+02:27:51,623 --> 02:27:55,424
+Bu sayede bunu mesela bir makine okuduğunda anlamlandırabilir.
+
+505
+02:27:56,435 --> 02:28:03,435
+Client Server mimarisinde her iki tarafta da işlevsellik sağlayabilirsiniz.
+
+506
+02:28:03,827 --> 02:28:25,487
+Özellikle islemci tarafta biz genel böyle javascriptler, ufak kontroller ya da animasyonlar tarzı işlevselliği barındırırız. Ama sunucu tarafında veriyle çalışan, veri kullanarak içerik üreten ya da tepki veren, sonuç üreten uygulamaları gerçekleştirmeyi tercih ederiz.
+
+507
+02:28:31,827 --> 02:28:50,827
+Özetle siz veri kullanarak özellikle de kullanıcıdan alınan verileri, client'tan gelen verileri de kullanarak arkada duran veri tabanında işleyerek bir sonuç üretiyor ve tepkisel bir uygulamayla hizmet veriyorsanız mutlaka sonucu tarafta bir işlevsellik sağlamanız gerekiyor.
+
+508
+02:28:58,804 --> 02:29:20,724
+Nasıl dağıtacağım? Yani mesajlaşma, trafik ya da mesajlar diyelim kabaca. İnternette nasıl dağılır? Buna belirli protokollerle karar verilir. Buna da internet protokolleri adı veriliyor. IP zaten hemen böyle internet protokol buradan gidecek. Şimdi basit bir örnekle başlayalım.
+
+509
+02:29:21,108 --> 02:29:27,768
+Burada siz varsınız ve arkadaşınıza bir tane kargo yollayacaksınız. Arkadaşınız da Amerika'da. Tamam.
+
+510
+02:29:27,768 --> 02:29:41,188
+Siz geldiniz, DHL diyelim ya da UPS'e gittiniz. Paketi teslim ettiniz. Paket ondan sonra UPS'in kendi havayoluna verildi.
+
+511
+02:29:41,188 --> 02:29:48,308
+Arada diyelim buradan uçak kalktı, Frankfurt'a indi. Frankfurt'tan kalktı.
+
+512
+02:29:48,755 --> 02:30:14,075
+New York'a indi, başka bir uçak, başka bir uçak. Sizin paket oradan oraya taşındı. New York'tan kalktı, ne bileyim, Batı Yakası'na gitti, şeye indi. California, San Francisco'ya indi, tamam mı? Sonra oradaki Yerel UPS'e gitti. Yerel UPS de sizin arkadaşınıza işte bir kilo baklavayı gönderdi. Tabi böyle gider mi baklava bilmiyorum ama.
+
+513
+02:30:14,463 --> 02:30:38,423
+Yine de hani arkadaşınıza böyle farklı farklı uçaklar arasında sizin paket dolaştırılarak gitti. İnternetteki aslında bütün mesaj trafiği de aynı mantıkla. Başka hiçbir farklı şeyi düşünmeyin. Aslında temelinde özünde bu mantıkla devam eder. Peki bunun için farklı katmanlar, sorumlulukları taşıyan, her birinin odak noktası farklı olan katmanlar tanımlanmıştır.
+
+514
+02:30:39,092 --> 02:30:46,772
+Gerçekte bunlar 7 katman OSI topolosuna göre fakat basitleştirerek 4 katman halinde anlatacağım.
+
+515
+02:30:46,772 --> 02:30:59,492
+Birincisi uygulama katmanı. Burada aslında biz kullanıcıyız ve protokole göre mesela HTTP'ye göre ya da FTP'ye göre adresimizi, mesajımızı belirtiyoruz, oluşturuyoruz.
+
+516
+02:30:59,636 --> 02:31:16,155
+Sonra bunu Transport katmanına veriyoruz. Transport Layer aslında yaptığı iş tam olarak sizin bütün protokole uygun olarak oluşturduğunuz içeriği mesajı paketlere bölüyor. Yani paket zarflara koyuyor gibi düşünelim. Tamam.
+
+517
+02:31:17,459 --> 02:31:30,579
+Sonra network ve üzerine adres yazıyor. Network katmanı, bu zarfın üzerindeki adresleri okuyarak nereye gitmesi gerektiğine, yani nasıl bir yol izlemesi gerektiğini yönetiyor.
+
+518
+02:31:30,959 --> 02:31:47,020
+Hani şey gibi kargo, hani kargoya veriyorsun, işte ne bileyim Amazon'un merkezinden kargoya veriliyor, oradan bilmem ne bölge merkezine gidiyor, oradan ilçenin dağıtım merkezine gidiyor, oradan işte kuryeye veriliyor, kurye size ertesi gün getiriyor gibi.
+
+519
+02:31:47,376 --> 02:31:59,456
+Buradaki Network, bu gidişatın nasıl olacağını yönetiyor. Linkte fiziksel katman, gerçekten paketler fiziksel olarak nasıl gidecek gelecek, bunların tanımlandığı ve işletildiği katman.
+
+520
+02:32:00,076 --> 02:32:09,615
+Yani Application Transport Network ve Link katmanları mevcut. Tabi bunlar dediğim gibi ara katmanları da var ama şimdilik bu detay bizim için yeterli. Peki nasıl çalışıyoruz biz burada?
+
+521
+02:32:10,451 --> 02:32:22,451
+Dediğim gibi, biz burada verici tarafız, gönderen, mesela clientız. Application layer'ımızda mesajımızı hazırlıyoruz, protokole uygun olarak.
+
+522
+02:32:22,451 --> 02:32:34,175
+Şuraya yollayacağım diye veriyoruz. Kime veriyoruz? Transport katmanını. Transport katmanı, bunu bizim için kesip biçip paketlere bölüyor, yani zarflıyor. Ondan sonra network katmanı.
+
+523
+02:32:34,175 --> 02:32:42,275
+Her bir paketin nereye nasıl gideceğine üzerine işliyor diyelim ve bunu fiziksel olarak link katmanına veriyor.
+
+524
+02:32:42,396 --> 02:32:47,876
+Yani uçağa bindiriyoruz ya da trene koyuyoruz ya da bir arabaya koyuyoruz, kamyona koyuyoruz gibi.
+
+525
+02:32:48,435 --> 02:32:53,396
+Tamam. Bir paket buradan gitti, baktı network, ha şuraya gitmesi lazım.
+
+526
+02:32:53,495 --> 02:32:56,635
+Buralarda aralarda tekrar transporta falan çıkmasına gerek yok.
+
+527
+02:32:57,095 --> 02:33:01,435
+Adres okuyup ha sen şuraya git dedi. Adresi okudu ha sen şuraya git dedi.
+
+528
+02:33:01,435 --> 02:33:02,175
+Tamam mı?
+
+529
+02:33:02,175 --> 02:33:26,416
+Bu şekilde, hani router örneğinden hatırlayın, tak tak tak böyle başka yollardan gidebilir demiştim. Tamam mı? Böyle böyle böyle fiziksel olarak bir bağlantı üzerinden taşındı. Her adımda da bu network katmanı nereye doğru gitmesi gerektiğine karar verdi. Alıcı tarafa geldik fiziksel olarak. Tamam mı? Yani sizin baklava paketi nedir?
+
+530
+02:33:26,768 --> 02:33:51,268
+California'ya. Sonra alıyoruz Network Layer'ına. Bu nereye gidecekti diyoruz. Tabii baklavayı şeylere bölmüşüz. Üç pakete bölmüşüz mesela. Hepsi Transport Layer'a gidiyor. Transport Layer'da bunlar birleştiriliyor. Ve Application Layer'a sizin şurada orijinal hazırladığınız mesaj, kocaman mesaj, paket parçalara bölünmüştü ya şurada.
+
+531
+02:33:51,424 --> 02:33:57,424
+Onların hepsi tekrar birleştiriliyor ve orijinal mesaj olarak burada karşı tarafa iletilmiş oluyor.
+
+532
+02:33:57,424 --> 02:34:02,424
+Yani bütün aslında mantık, internetteki trafik mantığının altyapısı bu.
+
+533
+02:34:02,424 --> 02:34:09,424
+Şimdi burada mesela Transport Layer tabii önemli görüyoruz. Çünkü paketlemeyi ve adres damgalarının basılmasını o yapıyor.
+
+534
+02:34:09,424 --> 02:34:13,424
+Burada iki tane temel yaklaşım söz konusu.
+
+535
+02:34:13,780 --> 02:34:33,620
+Güvenli ve güvensiz diyelim ya da bağlantılı ve bağlantısız opsiyonlarımız var. Özellikle TCP IP mesela en çok duyduğunuz, bildiğiniz ve kullanılan yapı. Transport layer'da. TCP ne demek? Transmission Control Protocol. UDP ne demek? User Datagram Protocol. Nedir bu?
+
+536
+02:34:34,355 --> 02:34:57,355
+Şimdi genel olarak hepsi bu adreslerin yönetilmesi katmanında IP'yi kullanıyor. Biraz önce uzun uzun anlattığım 193, 144, 1 falan dedik ya onu kullanıyor yani. Ama ona gelene kadar paketleri oluşturan TCP ya da UDP. Nasıl oluşturuyor bunları, nasıl zarflıyor? Şimdi TCP şöyle karşı tarafın varlığından emin oluyor.
+
+537
+02:34:57,843 --> 02:35:21,883
+Oradan onay alıyor, ben seninle haberleşebiliyor muyum diye, ben sana şunu yollayabiliyor muyum diye onayını alıyor ve ondan sonra paketleri oluşturup network katmanına veriyor. Tamam. O yüzden bağlantılı, yani karşı tarafın varlığından haberdar ve oraya bağlantıyı kuruduktan sonra trafiği yapıyor. Aynı bir web sayfasına bağlanmayı düşünün. Önce bakıyor web suncusu var mı?
+
+538
+02:35:22,324 --> 02:35:30,644
+varsa sizin isteğinizi oraya yolluyor. Tamam? Bu adresini bildiği için. Yani karşı taraftan bir onay, bir acknowledgement alıyor.
+
+539
+02:35:31,219 --> 02:35:55,059
+UDP ise bunu yapmıyor. UDP direkt sallıyor, yolluyor paketi. Gider mi, gitmez mi umurunda da değil. Bağlantısız ve karşı tarafın olup olmamasıyla hiçbir şekilde ilgilenmiyor. O yüzden de güvenilmez diye bildiririz buna. Tabii network katmanız yeterince iyiyse, güvenilmez dahi olsa çok büyük bir olasılıkla aslında o paketler karşıya gidecektir.
+
+540
+02:35:58,100 --> 02:36:22,620
+Hangisini ne zaman kullanalım? Yani hangi paketleme, zarflama opsiyonunu ne zaman kullanalım? Eğer güvenilir bir trafiğe ihtiyacınız varsa ama güvenilirliğe karşın doğal olarak hani bu garantici davranışlar yüzünden verimliliğiniz azalsa da çok umurunuzda değilse TCP kullanırsınız. Örneğin mail yollayacaksınız değil mi?
+
+541
+02:36:23,987 --> 02:36:34,507
+Uzun bir mailiniz var. Paketlendiğinde 6 tane paket oluştu diyelim. Şimdi siz bu 6 paketin karşı tarafa gitmemesi lüksüne sahip misiniz? Hayır.
+
+542
+02:36:34,992 --> 02:37:01,811
+ya da 1, 2, 3 gitti, 4 ile 5 kayboldu, gidemedi, 6 gitti. Siz karşı tarafın application layer'ında aynı içeriği tekrar oluşturabilecek misiniz? Hayır, eksik var. Bunu kabul edemeyiz. O yüzden güvenilir bir katmana ihtiyaç duyarız. Transport katmanına TCP kullanırız. Ama mesela ben DNS lookup yapmak istiyorum.
+
+543
+02:37:02,644 --> 02:37:27,724
+ya da Voice over IP yapmak istiyorum. Burada önemli olan hız. Verimlilik önemli. Güvenirliği azaltabilirsiniz. Örneğin Voice over IP'de bazı sesler hani bazen duyulmaz ya sesin gitti dersiniz. Bazı paketler arada düşebilir. Yolladınız DNS isteğini. Önemli olan hız orada. Tamam. Çok büyük bir ihtimalle cevap gelir ama gelmediği zamanlar da olabilir. O zaman bir daha yollarsın.
+
+544
+02:37:27,763 --> 02:37:54,603
+mesela. Tamam. O zaman UDP kullanırsınız. Her bir eee protokolün kendine göre iyi yönleri ya da kullanılmasının daha doğru olduğu noktalar var. Eee uygulamaya göre hangisini kullanacağınızı seçer, ona göre gerçekleştirmenizi yaparsınız. Şey gibi hani TCP iadeli taa iadesi demiyor taahhütlü mektup karşı tarafa gitmesini garanti ediyor ve size de mesela hatta bilgi veriyor gönderdim diye.
+
+545
+02:37:55,252 --> 02:38:20,592
+Teslim edildi mesajını veriyor. UDP ise şey, kebapçının şeyi, kuryesi broşür dağıtıyor. Atıyor böyle apartmanın kapısından, alırsan alırsın, almazsan almazsın, çok da umru değil. Ama ne yapıyor? Böyle aynı eş zamanda pek çok mesajı iletmiş oluyor. Tamam mı?
+
+546
+02:38:20,691 --> 02:38:28,691
+Kabaca böyle isimlendirebiliriz bağlantıları da, bağlantı katmanı da ve transport katmanı da.
+
+547
+02:38:28,691 --> 02:38:39,691
+Şimdi geldik son başlığımıza bugünkü yine güvenlik. Güvenlik konusunda iki tane ana konumuz var. Bir saldırı tarafı, iki korunma tarafı.
+
+548
+02:38:39,691 --> 02:38:46,575
+Saldırı tarafında neler var? Kötü niyetli yazılımlar. Bunlara Malicious Software yani Malware adı veriliyor.
+
+549
+02:38:46,575 --> 02:39:07,575
+Tiplerini şöyle hızlıca tanıtacak olursak, virüsler var. Virüs günümüzde çok zaten şey biliyorsunuz revaçta, korona falan derken insanların hayatında virüsler girdi. Tam olarak aynı mantık. Virüsün amacı bir bilgi sistemine girmek, yani bir bilgisayara bulaşmak.
+
+550
+02:39:07,956 --> 02:39:32,896
+Ondan sonra o bilgisayar üzerinde çalışan bütün uygulamalara, çalışan çalışmayan hatta bütün uygulamalara, girebildiği bütün uygulamalara girmek, kendi kodunu kopyalamak ve onlar çalıştığı sürece kendisinin de çalışır halde kalmasını sağlamak. Bu ne işe yarıyor? Mesela siz başka bir program kurdunuz ya da bir programı başkasına yolladınız, virüsü de yollamış oluyorsunuz. Tamam.
+
+551
+02:39:33,683 --> 02:39:59,343
+Virüs bu şekilde başka bir bilgisayara, başka bir kişiye de bulaşıyor. Kendi içinde tekrar çoğalıp onun organlarına da, onun kendi proseslerine de dağılıyor. Yani böyle aslında vücut vücut, bilgisayar bilgisayar içinde dağılması virüsün özüdür. Network üzerinden dağılmak gibi bir derdi yoktur. Virüsler daha networkler gelişmeden önce bile dağılıyordu, disketlerle falan mesela.
+
+552
+02:40:00,340 --> 02:40:25,959
+Warm ise solucanlar tam olarak network virüsleridir. Yani network üzerinden bulaşan virüslerdir. Aynı mantıkla ama network üzerinde yayılmaya çalışır sürekli. Truva adları, bunlar da faydalı bir şeymiş gibi görünüp aslında kendi içinde zararlı bir yazılım barındıran ya da bir yazılımın içinden çıkıp da
+
+553
+02:40:26,164 --> 02:40:43,564
+aynı şeydeki gibi mitolojideki hikayede olduğu gibi sizin sisteminize zarar veren yazılımlar. Fishing ile alakalı ve casuslukla alakalı yine yazılımlarda ayrı kategorilere sokulabilir.
+
+554
+02:40:43,808 --> 02:41:11,808
+Spyware'e keylogger falan olarak size anlatmıştım hatırlarsanız. Siz bir yazılım kuruyorsunuz, bir işi mesela crack çalıştırıyorsunuz. Aslında o aynı zamanda bir dinleme yazılımını da çalışmasını ve kurulmasını sağlıyor. Arkasından yaptığınız bütün mouse hareketleri, bastığınız bütün tuşlar, ne bileyim belki ses kaydınız, belki kamera kaydınız bir yerlere hizmet servis olarak yollanabiliyoruz.
+
+555
+02:41:11,808 --> 02:41:37,288
+biliyor yani verileri başkaları başka yerlere yollanmasına sebebiyet verebiliyor. Bu böyle daha böyle lokal hani bir bilgisayara yönelik olan atak tipi kötü niyetli yazılımlarla yapılan. Tersi de söz konusu olabilir bir kurban seçersiniz örneğin bir web sunucusu ve o web sunucusunun çalışmaz hale gelmesini isteyebilirsiniz sırf böyle kötü olsun diye.
+
+556
+02:41:37,811 --> 02:42:03,371
+Buna da Denial of Service, yani servisin engellenmesi adını verebiliriz. Bu nasıl yapılıyor? Aslına bakarsanız bu genelde Distributed Denial of Service, yani DDoS olarak yapılıyor. Şimdi siz farkında olmadan Trojan Horse'larla ya da Spyware'lerle bir şekilde bir yazılım alırsınız, almışsınızdır ve o yazılım uyur, tamam mı? Hiçbir şey yapmaz.
+
+557
+02:42:03,827 --> 02:42:22,327
+Ne zamana kadar? Ta ki bir yerden dinlediği bir porttan mesela ona gibi bir komut gelene kadar. O komut nedir? Şu adrese sürekli request yap mesela. Sekseninci porta sürekli request at. Saniyede bin tane request at gibi. Ve sizin network'ünüz üzerinden siz bir farkında bile olmadan arka planda
+
+558
+02:42:44,435 --> 02:43:12,435
+Hani onun bant genişliğine göre saniyede atıyorum on bin kullanıcıya hizmet verebiyordu. Saniyede bir milyon istek yollarsınız. Onu boğarsınız. İstekle boğarsınız. İsteklerin hiçbirine ve kuyruktakilere dahi cevap veremeyecek hale gelir. Bu sayede sunduğu servisin gerçek kullanıcılar tarafından da erişilemez hale gelmesine sebebiyet verirsiniz. Bu bir atak türü. Tabii farklı bir sürü atak türü vardır. Şimdi onların hepsini anlatamam. Belişim Sistemleri Güvenliği dersinde bunları...
+
+559
+02:43:12,435 --> 02:43:12,935
+Güzel güzel.
+
+560
+02:43:13,935 --> 02:43:16,036
+İki, üç sene sonra göreceksiniz.
+
+561
+02:43:17,255 --> 02:43:25,575
+Yine spam içerik, maille özellikle, yine kötü niyetli yazılımların dağıtılması için kullanılan bir başka kapı.
+
+562
+02:43:26,036 --> 02:43:27,956
+Peki ben bunlardan korunmak için ne yapacağım?
+
+563
+02:43:28,304 --> 02:43:56,283
+Bir kere kişisel olarak hani malware gibi kötü niyetli yazılımlardan ya da spamlerden korunmak istiyorsanız ya spam filtresi ya da antivirüs yazılımları kullanabilirsiniz. Böylece sistemlerinizi koruyabilirsiniz. Peki ağ düzeyinde neler yapabilirim? Yani network seviyesinde. Firewall kullanımı zaten artık hani olmazsa olmazdır, standarttır. Firewall sizi yazdığınız ya da otomatik olarak oluşturulabilecek kurallara göre dış ağlardan gelebilecek tehlikelerden.
+
+564
+02:43:56,304 --> 02:44:17,404
+korur. Örneğin, şey, bir atak geliyor diyelim. Dersiniz ki, mesela bot network'ü Afrika'dan yönlendirilmiş. Afrika IP havuzunu bloklarsınız. Oradan gelen hiçbir trafiği kabul etmezsiniz firewall üzerinde. Bu sayede sisteminiz, yani sunucunuz rahat rahat çalışmaya devam eder. Çünkü kendisine o istekler yığılmamıştır.
+
+565
+02:44:18,004 --> 02:44:40,004
+Ya da işte ne bileyim belli portları açıp kapatabilirsiniz. Belli uygulamalara izin verebilirsiniz. Belli kullanıcılara izin verebilirsiniz. Belli bir trafik sınırı yaratabilirsiniz. Yani çok detayına girmeyelim. Özetle firewalllarla pek çok koruma sağlanabilir. Ha tabii bunun da aşılamadığı zaman, bunun bu güvenliğin de aşıldığı zamanlar olabilir.
+
+566
+02:44:42,704 --> 02:44:45,484
+Her şeyi de bu koruyacak diye bir şey söz konusu değil.
+
+567
+02:44:45,775 --> 02:44:52,255
+Başka ne yapabiliriz? Başka proxy sunucular, yani vekil sunucular kullanabiliriz. Bu böyle aracı kullanmak gibi.
+
+568
+02:44:52,255 --> 02:45:01,536
+Yani arada bir, ne diyorlar ona, hani şeyi siz tutmayın da başkasına tutturun ateşi gibi düşünebilirsiniz.
+
+569
+02:45:01,536 --> 02:45:08,216
+Şurada sizin kendi iç sistemleriniz var. Şuraya bir tane proxy server koyarsınız, şöyle araya, tamam mı?
+
+570
+02:45:08,216 --> 02:45:09,216
+Ve...
+
+571
+02:45:09,332 --> 02:45:15,332
+Dışarıdaki bulut, internetten gelen bütün trofiği Proxy üzerinden alırsınız.
+
+572
+02:45:16,020 --> 02:45:24,020
+Şimdi bir şey olursa patlarsa çatlarsa da Proxy çatlar. Siz burada çat diye kesersiniz ve kendi iç tarafınızı korumaya devam edersiniz.
+
+573
+02:45:24,700 --> 02:45:30,340
+Ve bu dış taraf hep Proxy ile konuştuğu için içeride gerçekte kimle konuştuğunu bilmek zorunda değil.
+
+574
+02:45:30,460 --> 02:45:35,180
+Hani yerel IP'sini bilmem nesini, kim olduğunu, nasıl bir cihaz olduğunu bilmek zorunda da değil.
+
+575
+02:45:35,659 --> 02:45:40,880
+Böyle arada vekil gibi hani burada şey gibi hani burada ev sahibi var, burada kiracı var.
+
+576
+02:45:41,280 --> 02:45:55,239
+Siz emlakçı üzerinden muhabbet ediyorsunuz gibi düşünün. İki taraf da birbiriyle muhatap olmuyor. Arada bir şey olursa emlakçı oluyor. Tamam? Çatır çatır bu mesela yıkılıyor gibi düşünebiliriz. Tabii emlakçı örneği çok güzel olmadı ama
+
+577
+02:45:55,239 --> 02:46:06,500
+araya Proxy Server koymak belli uygulamalarda güvenlik için yardımcı olabilir ya da koruma için.
+
+578
+02:46:07,219 --> 02:46:19,219
+Başka ne yapabiliriz? Başka yine şifreleme yöntemlerine faydalanabiliriz. Örneğin dosya transferi yapıyoruz. Bunun güvenli versiyonunu kullanabiliriz. FTPS.
+
+579
+02:46:19,219 --> 02:46:31,219
+HTTP üzerinden HTML dosyalarını ya da HTTP protokolünü kullanıyorsak bunun Secure'unu kullanabiliriz. SSH yapacaksak bunu Secure Socket Layer'la yapabiliriz gibi.
+
+580
+02:46:34,388 --> 02:46:38,948
+Yani bütün protokolün neredeyse secure yöntemleri yani trafiği şifreleyerek
+
+581
+02:46:39,280 --> 02:47:03,780
+paketlerin içeriğini şifreleyerek trafiği yaratan versiyonlarını da kullanabiliriz. Burada genellikle kullanılan Public Key dediğimiz açık anahtar şifreleme yöntemleridir. Aslında burada iki tane anahtar vardır. Şöyle ki, şimdi bir açık anahtar vardır. Bunu yayınlarsınız, herkes bilir. Çünkü bu mesajı, yollayacağınız mesajı şifrelemek için kullanılır. Tamam mı?
+
+582
+02:47:03,956 --> 02:47:09,556
+Ama bu gelen şifrelenmiş mesajı çözmek için özel bir anahtar vardır.
+
+583
+02:47:09,656 --> 02:47:13,915
+Buna da Private Key denir. Bu tamamen size özeldir. Saklarsanız bunu kimseye vermezsiniz.
+
+584
+02:47:14,515 --> 02:47:20,296
+Size gelen mesajları bu anahtarı kullanarak geri çözüp okuyabilirsiniz.
+
+585
+02:47:21,012 --> 02:47:48,852
+Benzer web sayfalarında sertifikalar ya da dijital imzalar da aslında buradaki public key mantığıyla çalışırlar. Yani siz bir sertifikanın doğru olup olmadığını nasıl bilirsiniz? Sitenin public key belli. Bu sertifikaya göre datayı, yani şey yaparsınız, bir datayı şifreleyip yollarsınız. Sertifika tarafı kendi private key'ini kullanarak onu çözer. Eğer çözebiliyorsa, evet.
+
+586
+02:47:49,012 --> 02:47:56,951
+Doğru, Public Key tarafı doğru deyip, sizin de ters taraftan düşünerek geçerli olduğunu anlayabilir.
+
+587
+02:47:58,412 --> 02:48:06,811
+Çok detayını dediğim gibi güvenlik dersinde alırsınız. Şu anda sadece tanıtım şeklinde aktarmaya çalışıyorum.
+
+588
+02:48:07,272 --> 02:48:14,531
+Ama şöyle düşünün, şurada bir web sunucu var. Siz bir kullanıcı, web sunucunun Public Key'ini biliyor.
+
+589
+02:48:14,995 --> 02:48:35,695
+Tamam, yani sertifika bilgisine sahip ve onu alarak şifreliyor ve bütün trafiği şifreli yolluyor. Başka bir istemci var, client, o da yine aynı public key kullanarak yolluyor şifreli isteklerini. Burası da bizim sunucu tarafı. Sunucu tarafımız zaten kendi private keyine sahip.
+
+590
+02:48:35,956 --> 02:48:59,915
+İkisinden gelen mesajları da çözüp içeriğini gerçek içeriği, gerçek isteği okuyabiliyor. Kripto paralar tam olarak böyle değil. Onlar Blockchain teknolojisiyle çalışıyor. Blockchain'in internetteki protokollerle şu anda bir alakası yok. O ayrı bir konu, apayrı bir konu diyelim. Ona hiç girmeyelim ya da.
+
+591
+02:49:00,211 --> 02:49:22,951
+Neyse, şimdi şöyle bir şey olsun. Carol kötü niyetli bir işlemci olsun, tamam mı? Public key'ini biliyor ama onu sanki böyle şifreli mesajı çözebileceğin için de kullanabileceğini zannediyor. Alice, buradaki işte A işlemcisi, B sunucusuna public key'i kullanarak mesajını şifreleyip yolluyor. Bu da bu trafiği dinlemiş, paketi aldı okuyor, okumak istiyor.
+
+592
+02:49:23,376 --> 02:49:43,376
+Elindeki Public Key ile bunu çözmeye çalışıyor. Doğal olarak çözemiyor. Çünkü sadece Private Key ile bu çözülebilir. Evet. Bu sayede hani asimetrik şifreleme ile şu anahtar kimdeyse ancak o mesajın içeriğini okuyabilir doğrulaması.
+
+593
+02:49:43,680 --> 02:49:47,119
+Burada yapılabiliyor. Web sitelerinin işte bu hani
+
+594
+02:49:47,119 --> 02:49:51,340
+HTTPS ya da sertifika kontrolüyle
+
+595
+02:49:51,340 --> 02:49:53,599
+bu mesajlaşmanın devamı da
+
+596
+02:49:53,599 --> 02:49:56,019
+aynı tamamen aynı bu mantıkla
+
+597
+02:49:56,019 --> 02:49:57,819
+Public ve Private Key mantığıyla
+
+598
+02:49:57,819 --> 02:49:59,479
+işletilen bir yapı.
+
+599
+02:50:01,319 --> 02:50:03,500
+Peki o zaman
+
+600
+02:50:03,500 --> 02:50:07,719
+Network konusunda da söyleyeceklerimizin
+
+601
+02:50:07,719 --> 02:50:08,879
+sonuna geldik.
+
+602
+02:50:10,164 --> 02:50:36,923
+Son slide'ı da geçtiğimiz için bunu artık sonlandırabiliriz. Peki, bu haftalık bu kadar. Hem bilgisayar ağları hem de işletim sistemleri konusunda temel tanımlar ve işleme mantıkları, yapıları, geçmişleri, özelliklerini mümkün olduğunca basit bir şekilde sizlere aktarmaya çalıştım.
+
+603
+02:50:37,683 --> 02:50:59,443
+Evet, on dört haftamız bitti. Bir haftası resmi tatile gitmişti. On üç hafta. Hatta şey, bir haftada vize yaptık değil mi? On iki hafta boyunca ders işledik sizlerle. Umarım faydalı ve verimli olmuştur. Çünkü bu bundan sonra meslek olarak yapacağınız bilgisayar mühendisinin temellerini oluşturan ders.
+
+604
+02:50:59,924 --> 02:51:23,544
+algoritmik düşünme, algoritma tasarlama, algoritmik çözüm üretme ve bunu ifade etme ve bu ifadeyi kullanarak da bunu gerçekleştirme konusundaki temel bilgileri umarım sizlere yeterince net olarak aktarabilmişizdir. Tavsiyem mümkün olduğunca bol bol alıştırma yapın.
+
+605
+02:51:23,840 --> 02:51:34,460
+soru çözün yani problem bulun ve algoritmik çözümler geliştirin. Slideleri paylaşacak mıyım? Slideler şöyle, açık zaten slideler.
+
+606
+02:51:36,320 --> 02:51:49,100
+Kitabın slideleri, nereden indirdiğimi hatırlamıyorum ama kitabın adını yazıp slideler yazarsanız, 3. ve 4. chapter'lar yani. Özel olarak bir paylaşım yapmama gerek yok.
+
+607
+02:51:49,716 --> 02:51:52,716
+Şöyle bir dakika nasıl yapayım
+
+608
+02:52:08,915 --> 02:52:10,195
+Şurada
+
+609
+02:52:23,476 --> 02:52:31,476
+Şuraya...
+
+610
+02:52:36,280 --> 02:52:48,299
+İki videoyu izleyiciler.
+
+611
+02:52:35,123 --> 02:52:45,504
+Şöyle yazayım. Bunu yazın, Powerpoint yazın ya da Slice yazın. Oradaki üçüncü ve dördüncü chapter'lar. Direkt olarak aynen. Onları kullandık bu ders kapsamında.
+
+612
+02:52:46,584 --> 02:52:48,004
+Sınavda kod yazmamızı istedik.
+
+613
+02:52:52,827 --> 02:52:57,827
+İki videoyu izleyiciler.
+
+614
+02:52:51,347 --> 02:53:06,707
+Tabii ki çıkar. Elbette çıkar yani. Algoritma tasarımı, kodlama, baştan sona her şey. Okey. Başka? Başka soru?
+
+615
+02:53:12,724 --> 02:53:37,564
+Peki, başka sorumuz yoksa katılmanız için teşekkür ediyorum ve dönemin derslerini bu şekilde sonlandırmış, kapatmış olalım. Final sınavında hepinize başarılar diliyorum. Yüz yüze de görüşmek üzere. Sınavda debug'ı nasıl yapacaksınız? Dikkatli yazarak yapacaksınız.
+
+616
+02:53:38,611 --> 02:54:02,971
+Yani, öyle karmaşık bir kod olmaz, merak etmeyin. Ama temel kodlama bakalım ne durumda, onu da ölçmemiz gerekiyor. Sonuçta dersin hedefleri arasında var. Bu nedenle de kodlamayla alakalı bir soru da, temel kodlamayla alakalı bir soru da illaki olur. Peki. Hepinize önce sağlık, mutluluk ve başarı dileyerek.
+
+617
+02:54:03,891 --> 02:54:06,691
+finalde görüşmek üzere.
+
+618
+02:54:07,351 --> 02:54:08,631
+Diyelim. Kendinize iyi bakın.
+
+619
+02:54:09,412 --> 02:54:11,291
+İyi akşamlar ve iyi hafta sonları şimdiden.
