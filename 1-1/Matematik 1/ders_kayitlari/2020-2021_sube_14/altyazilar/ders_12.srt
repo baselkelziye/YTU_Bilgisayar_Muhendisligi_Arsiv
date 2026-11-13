@@ -1,0 +1,2423 @@
+1
+00:00:41,939 --> 00:00:43,219
+Merhaba arkadaşlar.
+
+2
+00:00:57,619 --> 00:01:19,620
+Şu an elektrikler kesik. Laptopun şarjı beni ne kadar götürürse o kadar anlatabileceğim. Sabah da laptopu şarja takmayı unutmuşum. Tam dolu da değil, yani %75 gibi. Bakalım ne yapacağız?
+
+3
+00:01:27,412 --> 00:01:31,852
+Ben size yine de dosyayı yükleyeyim. Nerede kaldı? Uygulamalar burada.
+
+4
+00:01:41,140 --> 00:01:46,700
+İçerisi de biraz loş gibi karanlık ama tahtayı görebiliyorsunuzdur umarım.
+
+5
+00:01:48,579 --> 00:01:51,560
+2 saatlik ders, bakalım ne kadar yapabilirsek.
+
+6
+00:01:53,560 --> 00:01:54,400
+Yapalım.
+
+7
+00:01:56,239 --> 00:01:59,019
+Zaman kaybetmeden başlayayım o zaman bugün.
+
+8
+00:02:07,091 --> 00:02:11,252
+Ben sıralamayı biraz değişik yapacağım.
+
+9
+00:02:11,412 --> 00:02:23,671
+Sıralamayı değişik yapacağım derken, yani ders içeriklerinde önce fonksiyonların ekstrem değerleri, arkasından rol teoremi ve ortalama değer teoremi geliyordu.
+
+10
+00:02:24,211 --> 00:02:29,632
+Ben önce o teoremleri verip sonra ekstrem değerlere bakacağım.
+
+11
+00:02:35,219 --> 00:02:49,240
+Ortalama değer teoremini vermeden önce de size bir tanım ve teorem, başka teorem vermek istiyorum. Siz elinizdeki notlardan beni takip edin. Ben uzun uzun yazmayayım. Bu arada tahtayı da sileyim.
+
+12
+00:03:20,659 --> 00:03:21,159
+şu.
+
+13
+00:03:27,795 --> 00:03:33,855
+Şöyle siyah yazan kalemle yazayım. Zaten karanlık. Silik çıkması rahat görün.
+
+14
+00:03:35,695 --> 00:03:37,955
+Biraz böyle çık oğlum orada.
+
+15
+00:03:39,315 --> 00:03:40,495
+Her yerdesin ya.
+
+16
+00:04:01,843 --> 00:04:19,704
+şunu söylüyor, diyor ki, ab aralığında tanımlı bir f fonksiyonu bu aralıktaki bir cil deyip için, yapma yavrum ya, efe, oy alsana, beni rahatsız ediyor.
+
+17
+00:04:24,884 --> 00:04:26,283
+masanın altında al onu.
+
+18
+00:04:27,204 --> 00:04:27,764
+O güzel.
+
+19
+00:04:28,504 --> 00:04:30,783
+Eğer diyor bu aralıktaki
+
+20
+00:04:30,783 --> 00:04:34,564
+bir c noktasında
+
+21
+00:04:34,564 --> 00:04:36,843
+maksimum veya
+
+22
+00:04:36,843 --> 00:04:39,544
+minimum değerini alıyorsa
+
+23
+00:04:39,544 --> 00:04:40,824
+ve de
+
+24
+00:04:40,824 --> 00:04:43,644
+f üstü c türevi
+
+25
+00:04:43,644 --> 00:04:46,004
+varsa, mevcut ise
+
+26
+00:04:46,004 --> 00:04:48,144
+o zaman bu f üstü
+
+27
+00:04:48,144 --> 00:04:49,144
+c
+
+28
+00:04:50,291 --> 00:04:53,031
+türev değeri sıfıra eşittir diyor.
+
+29
+00:04:55,311 --> 00:04:57,331
+Yani bu şu demek oluyor.
+
+30
+00:04:57,931 --> 00:05:02,951
+Eğer bir fonksiyon bir aralıkta maksimum veya minimum değer alıyorsa,
+
+31
+00:05:04,031 --> 00:05:08,391
+bu maksimum veya minimum değer aldığı noktalardaki...
+
+32
+00:05:08,391 --> 00:05:09,011
+Öyle tutma.
+
+33
+00:05:09,611 --> 00:05:10,851
+Başka bir tutamadım ki.
+
+34
+00:05:11,611 --> 00:05:12,271
+Çok türenli.
+
+35
+00:05:13,651 --> 00:05:19,611
+maksimum veya minimum değer aldığı noktalarda türevi sıfıra eşitmiş.
+
+36
+00:05:20,711 --> 00:05:25,812
+Yani biz bundan sonra maksimum ya da minimum değer arayacakken nereye bakacağız?
+
+37
+00:05:26,211 --> 00:05:29,192
+Türevi sıfır yapan noktalara bakacağız demek ki.
+
+38
+00:05:29,971 --> 00:05:30,891
+Teoremimiz bu.
+
+39
+00:05:32,572 --> 00:05:34,511
+Burada bir de tanım var.
+
+40
+00:05:36,331 --> 00:05:37,531
+Tanımda da şunu diyor.
+
+41
+00:05:38,548 --> 00:06:00,268
+bir y eşit f fonksiyonu göz önünde almışız. Bu f fonksiyonunun tanım kümesini df ile gösterelim. Tanım kümesi df olsun. Eğer bir tanım kümesindeki yine herhangi bir c noktasında,
+
+42
+00:06:04,211 --> 00:06:06,752
+f üstü c türevi
+
+43
+00:06:06,752 --> 00:06:10,871
+sıfıra eşitlisi
+
+44
+00:06:10,871 --> 00:06:12,752
+veya
+
+45
+00:06:12,752 --> 00:06:16,752
+bu noktadaki türevi
+
+46
+00:06:16,752 --> 00:06:18,991
+mevcut değilse
+
+47
+00:06:27,699 --> 00:06:35,879
+değil ise bu c noktasına f fonksiyonunun kritik noktası diyoruz diyor.
+
+48
+00:06:41,620 --> 00:07:04,120
+bir kriz açacağım ben. Kritik noktayı tanımlarken türevi sıfır yapan veya türevin mevcut olmadığı nokta dedik. Aslında türevin sıfır yapan noktalara kritik nokta, türevin mevcut olmadığı noktalara da tekil nokta diyoruz. Ama
+
+49
+00:07:06,228 --> 00:07:26,228
+Bu kitapta, baktığım bir başka kitapta da, yani kitaplar arasında böyle şeyler var. Hem türevin sıfır olduğu hem de mevcut olmadığı değerleri kısaca kritik nokta olarak almış. Bizim kitabımızda böyle olduğu için her ne kadar türevi...
+
+50
+00:07:26,516 --> 00:07:36,756
+türevin mevcut olmadığı nokta, yani türevi tanımlı yapmayan noktaya tekini nokta desek de o bizim için bir kritik nokta olacak aynı zamanda. Tamam mı?
+
+51
+00:07:37,007 --> 00:07:38,207
+Bunu böyle bilelim.
+
+52
+00:07:38,527 --> 00:07:44,947
+Yani türevin mevcut olmadığı, türevin tanımlı olmadığı nokta aynı zamanda nedir?
+
+53
+00:07:45,048 --> 00:07:45,887
+Tekil noktadır.
+
+54
+00:07:45,968 --> 00:07:47,127
+Orada tekillik vardır.
+
+55
+00:07:47,288 --> 00:07:48,747
+Tekillikler nereden geliyor?
+
+56
+00:07:49,247 --> 00:07:50,408
+Tanımsızlıktan geliyor.
+
+57
+00:07:50,408 --> 00:08:02,067
+Türev eğer o türev tanımsızsa, f'ü c değeri yoksa, örneğin kare kök x fonksiyonunu göz önüne alalım.
+
+58
+00:08:02,567 --> 00:08:04,127
+Bunun tanım kümesi nedir?
+
+59
+00:08:05,172 --> 00:08:10,372
+0 sonsuz aralığında her noktada tanımlıdır. Ancak bunun türevi nedir?
+
+60
+00:08:12,212 --> 00:08:18,072
+y üstü 1 bölü 2 kök x'dir. Bu 0 da tanımsızdır.
+
+61
+00:08:19,332 --> 00:08:26,792
+Türev fonk türevini aldığımda kök x paydaya geçti. Dolayısıyla bu 0 da tanımsızdır.
+
+62
+00:08:26,792 --> 00:08:29,392
+0 sonsuz aralığında nedir bu?
+
+63
+00:08:30,259 --> 00:08:54,500
+tanımlıdır. Dolayısıyla sıfır noktası, f'in tanım kümesinin noktası olduğu için, tanım kümesine dahil olduğu için ne yapacağım? Burada sıfır noktasında türev tanımlı olmadığı için sıfır noktasında bir kritik nokta olarak, aslında tekil noktadır ama bir kritik nokta olarak göz önüne alabileceğim.
+
+64
+00:08:59,700 --> 00:09:21,540
+kritik nokta dediğimiz noktalarda demek ki türevin değerinin sıfır olduğu veya türevin değerinin bulunmadığı noktalar olarak göz önüne alınacak. Şimdi bunu da geçelim. Bir örnek yapalım hemen. Tahtayı görebiliyor musunuz? Karanlık gerçekten, perdeleri falan her şeyi açtım ama.
+
+65
+00:09:21,540 --> 00:09:23,960
+Hücem görebiliyoruz net şu an.
+
+66
+00:09:23,960 --> 00:09:24,800
+Tamam.
+
+67
+00:09:27,251 --> 00:09:29,491
+Çünkü perde kapalı kaldı, onu da açtık.
+
+68
+00:09:30,311 --> 00:09:37,891
+Dünden beri sokakta çalışma var diyordum ya, işte herhalde o çalışmadan dolayı elektriğimizi de kestiler.
+
+69
+00:09:38,271 --> 00:09:39,751
+Şu örneği bir göz atalım.
+
+70
+00:09:43,988 --> 00:09:54,268
+fx fonksiyonu biraz büyük yazayım. x kare eksi, göremiyorum, 9.
+
+71
+00:09:57,844 --> 00:10:01,084
+Bir de g fonksiyonu almışız.
+
+72
+00:10:01,584 --> 00:10:06,124
+g'de 1 bölü x kare eksi 9.
+
+73
+00:10:06,864 --> 00:10:10,144
+f ve g'nin kritik noktalarını bulalım şimdi.
+
+74
+00:10:15,028 --> 00:10:38,728
+Ne yapacağım? Öncelikle türevlerini alalım. Öncelikle tanım kümelerini yazın. Çünkü türevi tanımsız yapan nokta, eğer tanım kümesine ait değilse onu kritik nokta olarak göz önüne alamıyorum. Çünkü kritik noktayı tanımlarken c eleman df olarak almıştım. Yani tanım kümesine ait olması gerekiyor bu noktanın.
+
+75
+00:10:39,316 --> 00:10:44,076
+Dolayısıyla bu tür sorularda önce tanım kümelerini belirleyin.
+
+76
+00:10:45,615 --> 00:10:48,336
+f'in tanım kümesini de f ile gösterelim.
+
+77
+00:10:48,756 --> 00:10:51,596
+Polinom olduğu için nedir?
+
+78
+00:10:51,836 --> 00:10:55,756
+Polinom fonksiyonların tüm real sayılardan tanımlıdır.
+
+79
+00:10:56,135 --> 00:10:58,056
+Eksi sonsuz artı sonsuz aralı.
+
+80
+00:10:58,056 --> 00:10:59,615
+G'ye bakalım.
+
+81
+00:11:00,536 --> 00:11:02,375
+G'nin tanım kümesi nedir?
+
+82
+00:11:05,139 --> 00:11:29,340
+Paydayı sıfır yapan değerler hariç tümrel sayılarda tanımlıdır. Paydayı sıfır yapan değerlerde nedir? Artı eksi 3 değerlidir. O halde R'den eksi 3 ve artı 3 değerlerini çıkarırsak G'nin tanım kümesini de yazmış oluruz. Şimdi türevlerini alalım.
+
+83
+00:11:31,475 --> 00:11:34,956
+x fonksiyonum neye eşit olacak? 2x'i eşit olacak.
+
+84
+00:11:35,495 --> 00:11:38,255
+g üstü x fonksiyonum da neye eşit olacak?
+
+85
+00:11:39,015 --> 00:11:47,416
+eksi 2x bölü x kare eksi 9'un parantez karesine eşit oldu.
+
+86
+00:11:48,096 --> 00:11:55,096
+Bunu sıfıra eşitlersek 2x eşit sıfırdan x eşit sıfır çıkacak.
+
+87
+00:11:55,892 --> 00:12:01,951
+x eşit sıfır noktası, f'in bir kritik noktası mıdır? Evet, tanım kümesine de aittir.
+
+88
+00:12:02,351 --> 00:12:10,611
+O halde bunun bu türevi, yani 2x'i tanımsız yapan herhangi bir değer yoktur.
+
+89
+00:12:11,132 --> 00:12:13,692
+Dolayısıyla tekil noktası yok.
+
+90
+00:12:14,512 --> 00:12:18,632
+O halde tek kritik noktası x eşit sıfır noktasıdır.
+
+91
+00:12:21,091 --> 00:12:23,072
+Gelelim g fonksiyonuna.
+
+92
+00:12:23,796 --> 00:12:28,556
+Bunu sıfır yapan değerler kritik nokta oluyordu. Önce ona bakalım.
+
+93
+00:12:29,216 --> 00:12:37,796
+x'i 2x bölü x kare eksi 9'un karesi eşit 0 dersek, bunun sıfır olması paya bağlı.
+
+94
+00:12:38,456 --> 00:12:48,636
+Payı sıfır yapan değerler sıfır olacak. Dolayısıyla 2x eşit 0'dan x eşit 0 noktası bir kritik noktadır.
+
+95
+00:12:51,443 --> 00:12:58,883
+Başka bir kritik noktası var mı? Çünkü bu rasyonel bir ifade. Bunu tanımsız yapan değerler var değil mi?
+
+96
+00:13:00,343 --> 00:13:05,823
+Yine bu türevler de tanımsız. x 3 artı 3 noktalarında tanımsız.
+
+97
+00:13:15,283 --> 00:13:17,124
+Pardon, bu g fonksiyonuydu.
+
+98
+00:13:17,543 --> 00:13:18,864
+g üstü x nedir?
+
+99
+00:13:19,824 --> 00:13:21,783
+Tanımsızdır, tanımlı değildir.
+
+100
+00:13:23,344 --> 00:13:25,444
+Ya da mevcut değil diyelim.
+
+101
+00:13:25,624 --> 00:13:27,464
+Türevi yok, türevi tanımsız.
+
+102
+00:13:31,091 --> 00:13:32,371
+tanımsız değilim.
+
+103
+00:13:34,052 --> 00:13:34,851
+Dolayısıyla
+
+104
+00:13:34,851 --> 00:13:39,772
+eksi 3 ve artı 3 noktaları
+
+105
+00:13:39,772 --> 00:13:42,611
+birer tekin nokta gibi görünüyor ama
+
+106
+00:13:43,155 --> 00:13:56,195
+Bunlar G'nin tanım kümesine ait değil. Zaten G'nin tanım kümesine ait olmadığı için, zaten G'nin tanım kümesine ait olmadığında biz bunların ne olarak göz önüne alamayacağız?
+
+107
+00:13:56,695 --> 00:14:05,635
+Biz kritik nokta olarak göz önüne alamayacağız. Dolayısıyla, eksi artı 3 eleman değil,
+
+108
+00:14:06,227 --> 00:14:16,047
+dg. Olduğunda, tek kritik noktamız, bu kritik nokta olamayacak. x eşit x3 ve x eşit artı 3 kritik nokta olmaz.
+
+109
+00:14:16,527 --> 00:14:26,747
+Tek kritik noktamız x eşit sıfır noktasındır. Her iki fonksiyon içinde x eşit sıfır noktası bir kritik noktadır.
+
+110
+00:14:26,747 --> 00:14:28,987
+Bunu anladık mı?
+
+111
+00:14:32,596 --> 00:14:34,855
+anlamışsınız. Çok güzel.
+
+112
+00:15:12,851 --> 00:15:17,211
+Gelelim ikinci sayfaya ve burada bir teoremimiz daha var.
+
+113
+00:15:17,711 --> 00:15:21,892
+Rol teoremi. Önemli teoremlerimizden biri.
+
+114
+00:15:51,028 --> 00:15:52,028
+Bu teoremi düşün.
+
+115
+00:15:53,788 --> 00:16:00,848
+Bir y eşit fx fonksiyonunun kapalı bir ab aralığında
+
+116
+00:16:08,275 --> 00:16:09,095
+sürekli
+
+117
+00:16:17,076 --> 00:16:19,676
+Yani bu aralıktaki her noktada sürekli olacakmış.
+
+118
+00:16:19,676 --> 00:16:31,596
+Kapalı bir AB aralığında sürekli, açık AB aralığında türevlenebilir olduğunu varsayıyoruz.
+
+119
+00:16:42,419 --> 00:16:48,059
+f a değeri f b değerine eşit ise
+
+120
+00:17:02,995 --> 00:17:03,495
+da?
+
+121
+00:17:08,435 --> 00:17:09,235
+ne diyor burada?
+
+122
+00:17:09,835 --> 00:17:11,135
+ab aralığında
+
+123
+00:17:15,859 --> 00:17:18,659
+c eşit sıfır.
+
+124
+00:17:19,980 --> 00:17:21,839
+Olmasını sağlayan
+
+125
+00:17:21,839 --> 00:17:26,719
+en az bir tane c noktası bulunur.
+
+126
+00:17:28,179 --> 00:17:30,839
+Bir saniye hemen geliyorum.
+
+127
+00:17:44,468 --> 00:17:48,567
+Bu teoremi nereden yazmışsam hiç hoşuma gitmedi şu son kısım.
+
+128
+00:17:49,128 --> 00:18:03,088
+Şöyle diyelim, fA eşit fB ise AB aralığında f üstü c eşit sıfır olacak şekilde bir c elemanı vardır diyelim.
+
+129
+00:18:03,088 --> 00:18:05,668
+Ya da artık burada ne yazıyorsa onu yazalım.
+
+130
+00:18:19,955 --> 00:18:32,035
+olacak şekilde en az bir c elemanı vardır. c vardır. ab aralığını dedik.
+
+131
+00:18:34,435 --> 00:18:41,475
+en az bir c var. birden fazla da olabilir. şimdi bu teorem bize ne diyor?
+
+132
+00:18:49,076 --> 00:18:59,836
+kapalı aralıkta ve sürekli bir fonksiyon. Kapalı aralıkta sürekli bir fonksiyon. Ancak bu sürekli fonksiyonun şöyle bir koşulu var.
+
+133
+00:19:00,596 --> 00:19:10,956
+f a eşit f b olması. Yani fonksiyon başladığı noktaya, noktadaki değerine dönüyor. Noktaya değil de değerine dönüyor.
+
+134
+00:19:11,655 --> 00:19:14,336
+Örneğin a b aralığımız şu aralık olsun.
+
+135
+00:19:15,859 --> 00:19:25,319
+Bu da ne demektir? f a eşit f b fonksiyonum şöyle de olabilir.
+
+136
+00:19:25,319 --> 00:19:26,699
+Tamam mı?
+
+137
+00:19:27,919 --> 00:19:29,639
+Ya da
+
+138
+00:19:35,380 --> 00:19:37,220
+Böyle bir fonksiyon da olabilir.
+
+139
+00:19:39,440 --> 00:19:43,600
+Şu noktası A, bu noktası B olacak şekilde.
+
+140
+00:19:45,100 --> 00:19:48,380
+Daha farklı fonksiyon da olabilir.
+
+141
+00:19:48,580 --> 00:19:50,500
+Tabii sadece bu kadar olmayıp.
+
+142
+00:19:57,172 --> 00:20:00,032
+Şöyle dalga dalga bir fonksiyon da olabilir.
+
+143
+00:20:00,192 --> 00:20:01,852
+Yani bizim için önemli olan ne?
+
+144
+00:20:02,211 --> 00:20:05,972
+Şu fA ve fB değerlerinin eşit olması.
+
+145
+00:20:06,592 --> 00:20:09,572
+Bakın şu noktada fA ve fB eşit.
+
+146
+00:20:14,900 --> 00:20:17,880
+Burada da aynı şey. Burada da sıfır olmuş mesela.
+
+147
+00:20:18,400 --> 00:20:20,539
+f a ve f b değerleri eşit.
+
+148
+00:20:20,960 --> 00:20:22,780
+Fonksiyon yani yay şeklinde.
+
+149
+00:20:23,420 --> 00:20:26,280
+Dolayısıyla bu tür fonksiyonlarda ne varmış?
+
+150
+00:20:27,599 --> 00:20:30,700
+Bu aralıkta öyle bir c noktası varmış ki
+
+151
+00:20:30,700 --> 00:20:34,420
+f üstü c sıfırmış.
+
+152
+00:20:34,599 --> 00:20:41,300
+f üstü c'nin sıfır olması, yani bu c noktasında fonksiyonun türevinin sıfır olması ne anlama geliyor?
+
+153
+00:20:43,731 --> 00:20:49,531
+Bu noktada eğriye çizilen t-yetin x eksenine paralel olması anlamına geliyor.
+
+154
+00:20:51,951 --> 00:20:55,692
+Bakın, burada da bunu sıfır yapan nokta tam şu nokta olacak.
+
+155
+00:20:56,172 --> 00:20:59,731
+Çünkü bu noktadan geçen eğri ne olacak?
+
+156
+00:21:00,471 --> 00:21:03,612
+x eksenine paralel olacak.
+
+157
+00:21:03,791 --> 00:21:05,731
+Yani t-yetleri x eksenine paralel.
+
+158
+00:21:06,731 --> 00:21:08,551
+Bu da aslında şunu gösteriyor.
+
+159
+00:21:11,604 --> 00:21:21,064
+kapalı aralıkta sürekli olan bir fonksiyon bu aralıkta bir maksimum veya minimum değerini mutlaka alıyormuş.
+
+160
+00:21:23,224 --> 00:21:30,963
+Çünkü bu noktada ne var? Fonksiyonun maksimum değeri var. Bu noktada da mesela fonksiyonun minimum değeri var. Değil mi?
+
+161
+00:21:33,172 --> 00:21:38,271
+Maksimum ya da minimum değer olan noktalarda nedir?
+
+162
+00:21:38,872 --> 00:21:42,332
+Ya tepe noktası ya da çukur nokta olması gerekiyor.
+
+163
+00:21:43,372 --> 00:21:45,052
+O noktalarda da ne oluyor?
+
+164
+00:21:45,532 --> 00:21:47,472
+Türev değeri sıfır oluyor.
+
+165
+00:21:49,312 --> 00:21:51,132
+Rol teoremi bu aslında.
+
+166
+00:21:59,220 --> 00:22:02,880
+Şimdi ben bunu sileyim. Örneğimizi yapalım.
+
+167
+00:22:37,428 --> 00:22:43,508
+bölü 3x, 3x.
+
+168
+00:22:56,627 --> 00:23:05,107
+fonksiyonu, eksi 3, 3. Kapalı aralığında sürekli bir fonksiyondur.
+
+169
+00:23:07,147 --> 00:23:14,827
+Açık aralıkta da yine aslında türevlenebilir bir fonksiyondur.
+
+170
+00:23:24,211 --> 00:23:40,112
+süreklidir. Aynı zamanda ne dedik? Kapalı aralıkta sürekli olması koşulunu, bu aralığın açık olanında da türevlenebilir olmasını istiyoruz fonksiyonların.
+
+171
+00:23:40,192 --> 00:23:47,132
+Ki bu fonksiyon nedir? x 3, 3 aralığında süreklidir. Açık aralıkta da türevlidir.
+
+172
+00:23:47,132 --> 00:23:51,291
+O halde rol teoremi gereği ne olması gerekiyor?
+
+173
+00:23:52,500 --> 00:23:53,940
+Önce şuna bakacağım.
+
+174
+00:23:54,299 --> 00:23:57,319
+f a ve f b değerleri birbirine eşit mi?
+
+175
+00:23:58,240 --> 00:23:59,700
+f eksi 3
+
+176
+00:23:59,700 --> 00:24:01,819
+Neye eşit?
+
+177
+00:24:03,619 --> 00:24:06,339
+27 bölü 3, 9 olacak değil mi?
+
+178
+00:24:06,879 --> 00:24:12,659
+Eksi 9, şurası da artı 9 olacak.
+
+179
+00:24:13,440 --> 00:24:14,559
+0 oldu.
+
+180
+00:24:14,559 --> 00:24:16,519
+f 3 değeri
+
+181
+00:24:17,619 --> 00:24:21,199
+9, eksi 9, bu da sıfır oldu.
+
+182
+00:24:21,859 --> 00:24:24,599
+f a, f b değerleri birbirine eşit.
+
+183
+00:24:26,359 --> 00:24:29,899
+Yani f eksi 3 eşit, f artı 3.
+
+184
+00:24:30,539 --> 00:24:31,219
+Dolayısıyla,
+
+185
+00:24:31,763 --> 00:24:35,423
+Rol teoreminin koşulları sağlanmış oluyor değil mi?
+
+186
+00:24:35,903 --> 00:24:42,803
+f a değeri f b değerine eşit, kapalı aralıkta sürekli, açık aralıkta türevlenebilir.
+
+187
+00:24:43,343 --> 00:24:46,023
+Rol teoreminin bütün koşulları gerçekleniyor.
+
+188
+00:24:46,343 --> 00:24:48,463
+O halde rol teoremini sağlar.
+
+189
+00:24:48,803 --> 00:24:51,543
+Yani rol teoremi gereği ne vardır?
+
+190
+00:24:51,543 --> 00:24:58,863
+Bu ab aralığında, hala ab diyorum, x 3 artı 3 açık aralığında
+
+191
+00:25:00,531 --> 00:25:04,971
+En az bir c noktasında bunun türevi sıfırdır.
+
+192
+00:25:07,031 --> 00:25:20,511
+En az bir c noktasında f üstü c eşit sıfır olacak şekilde.
+
+193
+00:25:21,251 --> 00:25:26,491
+Şöyle diyelim, f üstü c eşit sıfır olacak şekilde.
+
+194
+00:25:28,884 --> 00:25:36,003
+En az bir c eleman, eksi 3 artı 3 vardır.
+
+195
+00:25:37,703 --> 00:25:42,923
+O zaman böyle bir c elemanı bulabilecek miyiz? Ona bakalım. Bu c elemanı neymiş?
+
+196
+00:25:44,943 --> 00:25:46,584
+Fonksiyonun türevi nedir?
+
+197
+00:25:46,943 --> 00:25:52,344
+f üstü x, x kare eksi 3'tür değil mi?
+
+198
+00:26:09,715 --> 00:26:15,395
+x kare eşit olacak. x kare artı kök 3'e eşit olacak.
+
+199
+00:26:25,011 --> 00:26:25,511
+Bu halde
+
+200
+00:26:35,571 --> 00:26:38,611
+Yani c noktası olarak burada neyi alabilirim?
+
+201
+00:26:39,211 --> 00:26:41,931
+Eksi kök 3'ü ya da artı kök 3'ü alabilirim.
+
+202
+00:26:41,991 --> 00:26:46,171
+İki tane noktada bu türe sıfıra eşit oluyormuş.
+
+203
+00:26:47,651 --> 00:26:58,231
+c eşit, eksi artı kök 3 aldığımızda, bu eksi artı kök 3, eksi 3 artı 3 aralığına ait midir?
+
+204
+00:26:59,411 --> 00:27:02,391
+İki tane c alıyorum. c1, 2 diyelim.
+
+205
+00:27:03,763 --> 00:27:07,703
+Çünkü teorem en az bir tane olduğunu söylüyor.
+
+206
+00:27:08,923 --> 00:27:11,543
+Yani bu ne demektir? Birden fazla da olabilir.
+
+207
+00:27:11,703 --> 00:27:12,983
+Burada iki tane var.
+
+208
+00:27:13,403 --> 00:27:17,803
+Biri eksi 3, biri eksi köküç, biri artı köküç.
+
+209
+00:27:17,943 --> 00:27:21,843
+Dolayısıyla eksi köküçte artı köküçte nedir?
+
+210
+00:27:23,043 --> 00:27:27,023
+Eksi 3 artı 3 aralığına düşen sayılardır.
+
+211
+00:27:27,023 --> 00:27:28,023
+Dolayısıyla...
+
+212
+00:27:28,304 --> 00:27:37,703
+Şu fonksiyon x 3 artı 3 kapalı aralığında rol teoremini sağlar ve rol teoremi gereği türev nerelerde sıfır olurmuş?
+
+213
+00:27:38,304 --> 00:27:42,104
+x k 3 ve artı k 3 de sıfır olurmuş.
+
+214
+00:28:02,836 --> 00:28:17,816
+ilk yazdığımız, biz bu teoremlerin ispatını vermeden yapıyoruz ama, ilk yazdığımız teorem, dersin başında verdiğimiz teorem, bu rol teoreminin ispatında kullanılan teorendir.
+
+215
+00:28:18,435 --> 00:28:26,076
+O teorem kullanılarak ispatlanıyor çünkü o teorem bize aslında diyor ki, ne diyordu?
+
+216
+00:28:26,804 --> 00:28:34,044
+f fonksiyonu bir ab aralığında kapalı ab, yine kapalı ab idi değil mi? Ben şöyle bir bakayım.
+
+217
+00:28:36,224 --> 00:28:36,504
+Yok.
+
+218
+00:28:38,864 --> 00:28:40,704
+Açık ab aralığında
+
+219
+00:28:40,704 --> 00:28:44,684
+tanımlı
+
+220
+00:28:44,684 --> 00:28:48,204
+tanımlı olması yeterli oluyordu.
+
+221
+00:28:48,704 --> 00:28:50,964
+Maksimum veya minimum değerini alıyor ise.
+
+222
+00:28:50,964 --> 00:28:51,564
+Tamam.
+
+223
+00:28:52,980 --> 00:29:01,140
+maksimum veya minimum değerini alıyorsa o zaman diyordu ki f üstü c eşit sıfır.
+
+224
+00:29:03,476 --> 00:29:28,416
+olacak diyordu. Burada da fonksiyon kapalı bir a-b aralığında sürekli olduğu için ne olacaktır? Kapalı bir aralıkta sürekli fonksiyonlar bir maksimum ve minimum değer alırlar. Dolayısıyla f üstü c eşit sıfır olacak şekilde bir c sayısı mevcut olacaktır burada.
+
+225
+00:29:28,864 --> 00:29:40,624
+Örneğin, şimdi biz bunun ispatıyla uğraşmayacağız. Başka bir örneği var mı bunun bende şu anda? Yok ama daha sonra sizi örnek bulurum.
+
+226
+00:29:41,843 --> 00:29:50,343
+Diğer teoremimiz, ortalama değer teoremi.
+
+227
+00:30:10,932 --> 00:30:22,811
+Ortalama değer teoremi de şöyle. Ben uzun uzun yazmayayım. Siz notlardan takip edin. Yazımı da okuyabiliyor musunuz bilmiyorum. Bu eski notlarımdan bulduğum bir şey ekledim böyle.
+
+228
+00:30:26,387 --> 00:30:38,747
+Ortalama değer teoremini kısaca ODT ile gösteriyoruz. Ortalama değer teoremini de şunu diyor. y eşit fx fonksiyonu yine bir kapalı ab aralığına sürekli olacak.
+
+229
+00:30:46,932 --> 00:30:51,872
+Açık AB aralığının türevlenebilir olacak. Elektrik geldi.
+
+230
+00:31:00,723 --> 00:31:10,203
+böyle olduğunu varsayıyoruz. f fonksiyonu kapalı aralıkta, sürekli açık aralıkta, ab aralığında türevlenebilir olduğunu varsayıyoruz.
+
+231
+00:31:18,228 --> 00:31:20,688
+Bir saniye, ben oğlumu derse sokayım.
+
+232
+00:31:47,667 --> 00:31:50,067
+Bu durumda diyor ki AB aralığında
+
+233
+00:31:54,451 --> 00:32:13,652
+x kare artı 3x, c, c, f, b, f, a, bölüm, b, a. Olacak şekilde yine en az bir c eleman ab vardır.
+
+234
+00:32:39,763 --> 00:32:41,723
+diğer teoremi de bunu söylüyor.
+
+235
+00:32:45,619 --> 00:32:49,599
+Burada f'a'nın fb'ye eşit olması durumu yok aslında.
+
+236
+00:32:52,200 --> 00:32:56,500
+Bu rol teoreminin daha genel bir hali oluyor.
+
+237
+00:32:57,039 --> 00:33:01,099
+Çünkü rol teoreminde f'a fb'ye eşit oluyordu.
+
+238
+00:33:01,579 --> 00:33:06,879
+Dolayısıyla f'a'yı fb'ye eşit alırsanız burada özel olarak ne çıkacak?
+
+239
+00:33:06,879 --> 00:33:09,059
+f'ü c'ye eşit 0 çıkacak.
+
+240
+00:33:09,200 --> 00:33:11,859
+Yani rol teoremindeki o şey çıkıyor.
+
+241
+00:33:12,372 --> 00:33:17,991
+sonuç çıkıyor. Dolayısıyla bu rol teoreminin daha genel hali oluyor.
+
+242
+00:33:34,483 --> 00:33:36,263
+türevlenebilir olacak.
+
+243
+00:33:37,683 --> 00:33:38,023
+bir
+
+244
+00:33:38,023 --> 00:33:40,683
+cüz alacağız.
+
+245
+00:33:57,491 --> 00:34:00,231
+Şurayı birazcık analiz edelim mi?
+
+246
+00:34:05,940 --> 00:34:29,500
+Fonksiyon C bizim için neyi gösteriyor? Fonksiyonun bir C noktasındaki T etinin eğimini aynı zamanda biz bununla gösteriyorduk değil mi? Fonksiyonun birinci türevinin işte bir C noktasındaki değeri ne oluyordu? Fonksiyonun o noktadaki T etinin eğimi oluyordu.
+
+247
+00:34:32,275 --> 00:34:59,519
+x kare artı 2x, f'
+
+248
+00:34:59,519 --> 00:35:04,599
+y2-y1 bölüm, şu da x2-x1.
+
+249
+00:35:06,960 --> 00:35:11,039
+x2 noktasını ve x1'i a aldığınızı düşünün.
+
+250
+00:35:11,479 --> 00:35:12,920
+Bu da onların görüntüleri.
+
+251
+00:35:12,920 --> 00:35:14,159
+Dolayısıyla,
+
+252
+00:35:21,235 --> 00:35:22,916
+buna da eğim değil de ne diyelim?
+
+253
+00:35:22,916 --> 00:35:28,315
+f fonksiyonunun
+
+254
+00:35:37,588 --> 00:35:43,276
+x kare artı 2x, f'
+
+255
+00:35:47,188 --> 00:35:50,188
+f' a noktası şurası olsun diyelim.
+
+256
+00:35:51,328 --> 00:35:52,748
+b noktası da
+
+257
+00:35:52,748 --> 00:35:57,168
+şurası olsun diyelim.
+
+258
+00:36:02,907 --> 00:36:14,967
+x kare artı 2x, f'
+
+259
+00:36:02,036 --> 00:36:06,576
+A ve B noktalarından geçen doğrunun eğimi tamam, şimdi düzeltebildim.
+
+260
+00:36:07,395 --> 00:36:09,215
+Söyleyemedim demin, kiriş yani.
+
+261
+00:36:09,576 --> 00:36:13,435
+A ve B noktalarından geçen kirişin eğimini veriyor bu da bize.
+
+262
+00:36:14,235 --> 00:36:21,596
+Şu doğrunun eğimi, yani A, B noktasından geçen doğru parçası olduğu için bu sınırlı kiriş diyoruz buna.
+
+263
+00:36:21,596 --> 00:36:25,456
+Bu doğrunun eğimi neye eşitmiş?
+
+264
+00:36:28,692 --> 00:36:34,672
+c noktasındaki t'nin eğimine eşitsin bu ne oluyor? Şöyle diyelim.
+
+265
+00:36:39,539 --> 00:36:44,119
+Bu kirişe paralel bir teğet noktası oluyormuş.
+
+266
+00:36:45,279 --> 00:36:58,840
+Yani Rol Teoremin dedi, ABF üzerinde şu FA ve FB noktalarından geçen kirişin eğimi neye eşit olacakmış?
+
+267
+00:36:58,840 --> 00:37:03,239
+F'in, daha doğrusu bunun eğimi ne?
+
+268
+00:37:05,331 --> 00:37:09,032
+eşit olan bir t-et doğrusu mutlaka varmış.
+
+269
+00:37:09,471 --> 00:37:12,351
+İşte bu t-et doğrusu da nerede olurmuş?
+
+270
+00:37:12,692 --> 00:37:16,952
+ab arasındaki bir c noktasında oluyormuş.
+
+271
+00:37:17,971 --> 00:37:28,471
+f-a, f-b noktalarından geçen kirişin eğimine eşit olan, yani buna paralel olan eğri üzerinde bir t-et mutlaka varmış.
+
+272
+00:37:29,532 --> 00:37:32,652
+İşte böyle bir c'ye denk geliyor o da.
+
+273
+00:37:35,155 --> 00:37:39,556
+Ortalama değer teoremi de bize bunu söylüyor.
+
+274
+00:37:39,796 --> 00:37:45,235
+Ortalama değer teoreminin uygulamaları sınavda çokça çıkıyordu.
+
+275
+00:37:45,336 --> 00:37:52,456
+Ancak şimdi sizin sınavınız test olacağı için teste uygun mudur? Uygundur.
+
+276
+00:37:52,576 --> 00:37:54,115
+C sayısı yine sorulabilir.
+
+277
+00:37:54,376 --> 00:37:58,756
+Evet, bir tane örnek yapalım. Hatta iki tane örnek yapalım bununla ilgili.
+
+278
+00:38:02,900 --> 00:38:05,539
+testte de sorulabilir. Neden sorulması?
+
+279
+00:38:17,748 --> 00:38:20,087
+buradaki örneği önce yapalım.
+
+280
+00:38:35,731 --> 00:38:36,292
+0
+
+281
+00:38:43,507 --> 00:38:44,527
+2 aralığında
+
+282
+00:38:48,596 --> 00:38:52,695
+Bu aralıkta biz buna ortalama değer teoremi uygularsak neyi göreceğiz?
+
+283
+00:38:57,972 --> 00:39:08,152
+x fonksiyonu bir kere zaten nedir bu? Süreklidir. Sürekli olduğunu görebiliyoruz. Bunu tanımsız yapan hiçbir değer yok. Bu aralıkta sürekli.
+
+284
+00:39:11,923 --> 00:39:22,923
+Bunu görebiliyorum. Türevi de mevcut. Dolayısıyla 0-2 aralığında türevlenebilir. O halde...
+
+285
+00:39:32,275 --> 00:39:35,235
+0, 2 aralığımızda şu olsun.
+
+286
+00:39:35,395 --> 00:39:44,775
+Yani şu 0, 2 doğrusuna paralel olan bunun üzerinde bir t var mı? Ona bakacağız.
+
+287
+00:39:46,235 --> 00:39:48,655
+0, 2 aralığında da türevlenebilir.
+
+288
+00:39:48,815 --> 00:39:53,455
+Dolayısıyla ortalama değer teoreminin nesi sağlanıyor? Koşulları sağlanıyor.
+
+289
+00:39:53,455 --> 00:39:59,935
+Buna paralel olacağına göre bir f üstü c noktası vardır ki bu neye eşit?
+
+290
+00:40:00,000 --> 00:40:09,760
+fb, yani f2-f0 bölü 2-0 değerine eşit olacak.
+
+291
+00:40:10,779 --> 00:40:16,400
+f2 değeri 4, f0 değeri de 0 olduğu için şurası ne olur?
+
+292
+00:40:17,039 --> 00:40:23,079
+4-0 bölü 2, yani sonuç ne olacak? 2 olacak.
+
+293
+00:40:23,635 --> 00:40:31,676
+Bakın, f üstü c eşit 2 olacak şekilde bir c noktası vardır. Birisi bir şey soruyordu galiba.
+
+294
+00:40:40,916 --> 00:40:53,275
+f üstü c'yi, bu c değerini şimdi bulalım. Nasıl bulacağım? Fonsiyonun türevini alalım önce. f üstü x, n'ye eşit, 2x'e eşit.
+
+295
+00:40:53,275 --> 00:40:55,615
+f üstü c
+
+296
+00:40:56,500 --> 00:41:11,100
+2c olacak. Bu da neye eşit olması gerekiyor? 2'ye eşit olması gerekiyor. Dolayısıyla c burada ne çıkacak? 1 çıkacak. O halde x eşit bir noktasından geçen t'ye
+
+297
+00:41:17,523 --> 00:41:28,163
+şöyle bir alalım. x eşit bir noktasından geçen teğet şu. 0,2 noktalarındaki kirişe neymiş? Paralel oluyormuş.
+
+298
+00:41:31,731 --> 00:41:41,412
+c gerçekten neyin elemanı? c eşit 1. Bu da nedir? Ya da böyle yazmayayım. 0-2 aralığındadır.
+
+299
+00:41:52,788 --> 00:41:54,447
+nasıl soruluyor? Bir saniye.
+
+300
+00:41:55,228 --> 00:41:56,488
+Ben soruyu alayım.
+
+301
+00:42:56,211 --> 00:42:57,992
+sorusunu bile bulsam bunu.
+
+302
+00:43:07,699 --> 00:43:09,699
+ortalama değer sorusu buldum da.
+
+303
+00:43:12,380 --> 00:43:14,619
+Daha doğrusu çözümünü buldum, sorusunu bulamadım.
+
+304
+00:44:39,380 --> 00:44:40,380
+sayavang ki.
+
+305
+00:45:52,884 --> 00:46:00,203
+Bu konu bulamıyorum. İyi mi? Niye ben soruları yazmadan çözmüşüm böyle? Eklemişim bir yere ama düşmüş.
+
+306
+00:46:41,076 --> 00:46:43,815
+fonksiyonunu, şöyle mi diyeyim?
+
+307
+00:46:50,036 --> 00:46:51,036
+fonksiyonlar.
+
+308
+00:46:56,083 --> 00:47:16,063
+1. Aralığında, soruyu kendim uyduracağım, aralığında ortalama değer teoreminin, bunu büyük yazmam daha iyi olacaktı, ortalama değer teoreminin uygulanabilir olduğunu gösteriniz.
+
+309
+00:47:25,556 --> 00:47:27,315
+olduğunu gösteririz.
+
+310
+00:47:27,876 --> 00:47:28,096
+Ve
+
+311
+00:47:51,923 --> 00:48:00,203
+bulduğu, uygulanabilir olduğunu gösterin ve bu c sayısını bulun diyelim ya da. Ama öyle mi sorulur bunların sorusu?
+
+312
+00:48:33,492 --> 00:48:48,192
+Hocam, şey olarak devam edebiliriz ve 0-1 kirişine paralel olan t-t'in eğimini bulunuz. Ya da t-t noktasını.
+
+313
+00:48:48,192 --> 00:48:52,492
+Ya da hangi noktada işte o.
+
+314
+00:48:53,588 --> 00:49:06,507
+f 0, f1, ne oluyor? 0, 1 oluyor değil mi? 0, 1 noktasından geçen kirişin eğimi hangi noktada?
+
+315
+00:49:06,507 --> 00:49:16,568
+Ama şey oldu, oradaki tt eşit olacak, tt'in eğimi eşit olacak. C'yi bulun desek şimdi anlaşılır mı acaba?
+
+316
+00:49:22,708 --> 00:49:24,568
+c sayısını bulun diyelim.
+
+317
+00:49:33,300 --> 00:49:36,640
+Yani burada c ile neyi kastettiğimiz anlaşılıyor herhalde.
+
+318
+00:49:37,860 --> 00:49:52,260
+Ortalama değer teoreminde zaten c kullandık ya, f üstü c eşit bilmem f b eksi f a bölü b eksi a olacak şekilde c elemanı 0,1 var demiştik.
+
+319
+00:49:52,260 --> 00:49:54,600
+C sayısını bulun diyelim.
+
+320
+00:49:55,400 --> 00:49:58,000
+Yani neyi kastettiğimiz anlaşılıyor aslında.
+
+321
+00:49:58,539 --> 00:49:59,500
+Uzatmayalım.
+
+322
+00:50:00,320 --> 00:50:00,860
+Anladık.
+
+323
+00:50:01,523 --> 00:50:13,264
+Öncelikle, bu fonksiyona ortalama değer teoreminin uygulanabilir olması için fonksiyonun kapalı 0, 1 aralığında sürekli olması gerekiyor.
+
+324
+00:50:13,823 --> 00:50:18,943
+Bu fonksiyon, fx fonksiyonu x üzeri 2 bölü 3.
+
+325
+00:50:20,203 --> 00:50:23,863
+0, 1 aralığındaki her değer için ne olacaktır?
+
+326
+00:50:26,835 --> 00:50:32,315
+Hatta 0 ve 1 noktalarında da bu fonksiyon sürekli olacaktır. Çünkü tanımsız olmaz.
+
+327
+00:50:33,015 --> 00:50:35,155
+Sürekli olması da ne anlama geliyordu?
+
+328
+00:50:40,036 --> 00:50:44,435
+Limit değerinin fonksiyonun değerine eşit olması anlamına geliyor.
+
+329
+00:50:51,059 --> 00:50:52,720
+2 üzeri 3 neydi?
+
+330
+00:50:59,219 --> 00:51:01,460
+Şu küp kök x kare fonksiyonu değil mi?
+
+331
+00:51:04,279 --> 00:51:09,059
+Bu fonksiyon aslında 0-1 aralığında her noktada süreklidir.
+
+332
+00:51:22,356 --> 00:51:32,136
+sürekli olduğunu görebiliyor muyuz? Görüyoruz. Çünkü bunu tanımsız yapan bir değer yok. Bir de bu aralıkta hangi C değerini alırsanız alın.
+
+333
+00:51:37,043 --> 00:51:41,543
+fx değerine eşit olacak, fc değerine eşit olacak.
+
+334
+00:51:42,143 --> 00:51:44,743
+Uçlarda da biz bunu nasıl yapıyorduk?
+
+335
+00:51:45,243 --> 00:51:49,844
+Uçlarda da sağdan ve soldan limitlere bakıyorduk.
+
+336
+00:51:50,603 --> 00:52:01,143
+Şöyle diyelim, her c eleman 0, 1 için şuna eşit olacaktır değil mi?
+
+337
+00:52:11,284 --> 00:52:33,284
+x kare artı 2x, f'ye eşitlik, sorun yok. Olacağından süreklidir. Uç noktalarda da isterseniz ayrıca bakın, sıfırda sağdan, birde de soldan limitinin sürekli olması yeterli oluyordu. Uç noktalarda da bakalım isterseniz. Limit x sıfıra
+
+338
+00:52:34,003 --> 00:52:43,844
+sağdan yaklaşırken x üzeri 2 bölü 3'ün limitine eşit 0 olacak. Yani bu yine nedir? f 0 değeridir değil mi?
+
+339
+00:52:43,844 --> 00:52:56,764
+Aynı şekilde limit x 1'e soldan yaklaşırken
+
+340
+00:52:59,123 --> 00:53:09,843
+x üzeri 2 bölü 3'ün limiti ne olacaktır? x yerine 1 yazdık. Bu 1'e eşit olacak. Yani aynı zamanda bu nedir? f1 değerine eşittir.
+
+341
+00:53:10,323 --> 00:53:17,763
+Bakın sıfırda sağdan, 1'de soldan sürekli. Aralıktaki her noktadaysa sürekli.
+
+342
+00:53:18,383 --> 00:53:25,023
+c'yi ne alırsanız alın, bu fx değeri fc değerine eşit olacak.
+
+343
+00:53:28,340 --> 00:53:34,500
+Dolayısıyla fonksiyon 0-1 aralığında her noktada süreklidir diyebiliriz. Bu koşul sağlanıyor.
+
+344
+00:53:35,180 --> 00:53:38,600
+Peki, türevlenebilir midir 0-1 aralığında?
+
+345
+00:53:39,560 --> 00:53:50,320
+f'in türevini alalım. f üstü x, 2 bölü 3, x üzeri, eksi 1 dersek, eksi 1 bölü 3 olacak değil mi?
+
+346
+00:53:50,320 --> 00:53:52,360
+Bu da nedir?
+
+347
+00:53:58,387 --> 00:54:01,507
+3x'ü x üzeri 1 bölüm 3 olur.
+
+348
+00:54:03,208 --> 00:54:04,288
+40x oldu.
+
+349
+00:54:06,088 --> 00:54:07,248
+0-1 aralı.
+
+350
+00:54:07,588 --> 00:54:09,427
+Aralığım 0-1 aralı.
+
+351
+00:54:09,907 --> 00:54:13,447
+Bunu tanımsız yapan tek değer nedir? Sıfır değeridir.
+
+352
+00:54:14,067 --> 00:54:26,648
+Ancak biz türevlenebilir olduğu aralığı alırken açık aralık aldığımızda sıfır bir aralığındaki her değer için f fonksiyonu türevlenebilirdir.
+
+353
+00:54:27,067 --> 00:54:32,007
+Yani türevini tanımsız yapan hiçbir değer yoktur.
+
+354
+00:54:37,331 --> 00:54:48,771
+görevini alarak buna direkt bakabilirsiniz. O halde ne oluyor? Ortalama değer teoreminin o hipotezi sağlanmış oluyor, şartları sağlanmış oluyor.
+
+355
+00:54:50,132 --> 00:54:56,132
+0-1 aralığında bu fonksiyona ne uygulanabilir? Ortalama değer teoremi uygulanabilir.
+
+356
+00:54:56,572 --> 00:55:05,372
+Çünkü kapalı 0-1 aralığında sürekli açık aralıkta türevlenebilir. O halde ortalama değer teoremi uygulanabilir.
+
+357
+00:55:08,692 --> 00:55:13,711
+Uygulayalım o halde. Şurayı sileyim, buna ihtiyacım yok.
+
+358
+00:55:15,731 --> 00:55:19,551
+Ortalama değerli teoremini uygulayıp c noktasını bulalım.
+
+359
+00:55:24,083 --> 00:55:26,203
+x kalsın ona ihtiyacım var.
+
+360
+00:55:27,003 --> 00:55:29,043
+Onun dışındakilere ihtiyacım yok.
+
+361
+00:55:41,396 --> 00:55:48,516
+Eğer teoremini uygularsak, ortalama değer teoremini göre ne olacaktır?
+
+362
+00:55:48,936 --> 00:56:02,396
+f üstü c eşit f b eksi f a bölü b eksi a olacak şekilde bir c elemanı bulabilirim.
+
+363
+00:56:08,436 --> 00:56:27,136
+f sıfır değerimiz sıfır. Burası da 1-0'dan 1 oldu. Sonuç nedir? 1. Yani f üstü c eşit 1 olacak şekilde 0-1 aralığına ait bir c sayısı bulabilirim.
+
+364
+00:56:35,668 --> 00:56:42,568
+3x üzeri 1 bölü 3
+
+365
+00:56:42,568 --> 00:56:46,728
+f üstü c bu durumda ne olacak?
+
+366
+00:56:55,219 --> 00:56:56,820
+x eşit olmasını istiyoruz.
+
+367
+00:56:57,340 --> 00:56:59,679
+1. Artık şuraya da ihtiyacım kalmadı.
+
+368
+00:56:59,760 --> 00:57:00,519
+Bunu da siliyorum.
+
+369
+00:57:11,795 --> 00:57:16,536
+Şurayı çözüp, pardon şunu C yazmam gerekiyordu, affedersiniz.
+
+370
+00:57:23,635 --> 00:57:26,076
+Şimdi şunun çözümünden c'yi bulacağım.
+
+371
+00:57:27,215 --> 00:57:31,396
+2 eşit 3, c üzeri 1 bölü 3.
+
+372
+00:57:32,235 --> 00:57:36,275
+Her iki tarafın küpünü alırsak, daha doğrusu şurası ne olur?
+
+373
+00:57:36,275 --> 00:57:41,135
+2 bölü 3, c üzeri 1 bölü 3.
+
+374
+00:57:41,956 --> 00:57:49,755
+İki tarafın da küpünü alırsak, 8 bölü 27 olur burası değil mi?
+
+375
+00:57:50,195 --> 00:57:50,976
+3'ün küpü.
+
+376
+00:57:55,315 --> 00:58:11,595
+eşit c olur. O halde c sayısını nasıl buluruz? 8 bölü 27 olarak bulabiliriz. Bu sayıda nedir? Sıfırdan büyüktür, birden de küçüktür. Dolayısıyla
+
+377
+00:58:21,523 --> 00:58:24,403
+Nedir? 0-1 aralığına aittir.
+
+378
+00:58:32,275 --> 00:58:48,496
+Bu halde 8 bölü 27'de ne varmış? Fonksiyonun t-y'te 0-1 noktasından geçen kirişin eğimine eşit oluyormuş.
+
+379
+00:58:53,172 --> 00:58:53,672
+çoğda.
+
+380
+00:59:06,387 --> 00:59:07,068
+yedik mi bunu?
+
+381
+00:59:14,099 --> 00:59:18,579
+Anladınız mı? Sanki kendi kendime konuşuyormuşum gibi hissettim bir an.
+
+382
+00:59:19,179 --> 00:59:20,920
+Anladık hocam.
+
+383
+00:59:21,719 --> 00:59:22,079
+Tamam.
+
+384
+00:59:25,907 --> 00:59:27,107
+Ara vermedim.
+
+385
+00:59:28,648 --> 00:59:31,188
+İsterseniz bir yarım saat daha devam edelim.
+
+386
+00:59:31,927 --> 00:59:33,527
+Aa ben bu arada elektrik geldi.
+
+387
+00:59:34,128 --> 00:59:35,887
+Kendi mobil verimi kapatayım.
+
+388
+00:59:53,811 --> 00:59:55,811
+yaratı mızda problem olmadı değil mi?
+
+389
+00:59:57,811 --> 00:59:58,811
+girek geçti.
+
+390
+00:59:59,811 --> 01:00:00,811
+tamam
+
+391
+01:00:06,547 --> 01:00:13,587
+O zaman rol teoremini de geçtik. Ortalama değer teoremini de geçtim.
+
+392
+01:00:17,940 --> 01:00:19,860
+sırada ne varmış?
+
+393
+01:00:22,540 --> 01:00:26,700
+burada ikinci örneğim zaten varmış benim. Niye o kadar aradım ki?
+
+394
+01:00:28,900 --> 01:00:31,240
+tek örnek yazdım diye aklımda kalmış.
+
+395
+01:00:35,795 --> 01:00:37,915
+Neyse buna da bakarsınız artık.
+
+396
+01:01:19,059 --> 01:01:22,699
+Şimdi gelelim artan ve azalan fonksiyonlara.
+
+397
+01:01:33,108 --> 01:01:41,484
+bu anlığın tanımını daha önce fonksiyonları hatırlatırken, özet yaparken yapmıştık.
+
+398
+01:01:53,780 --> 01:01:55,840
+Tanımını nasıl yapmıştır?
+
+399
+01:01:56,119 --> 01:02:01,000
+Bir f fonksiyonunun tanımlı olduğu aralıkta
+
+400
+01:02:01,000 --> 01:02:03,320
+iki nokta alıp
+
+401
+01:02:03,320 --> 01:02:07,420
+işte x1 küçük x2 iken
+
+402
+01:02:07,420 --> 01:02:09,500
+fx1
+
+403
+01:02:09,500 --> 01:02:13,920
+küçük fx2
+
+404
+01:02:13,920 --> 01:02:16,179
+oluyorsa fonksiyon artan
+
+405
+01:02:20,148 --> 01:02:44,388
+tersi oluyorsa fx1 büyük, fx2 oluyorsa da azalan fonksiyon diyorduk. Bu tanımıydı. Şimdi biz artan ve azalanla türev kullanarak bakacağız. Dolayısıyla şunu söyleyebiliriz.
+
+406
+01:02:47,347 --> 01:02:48,427
+direk koydum.
+
+407
+01:03:00,916 --> 01:03:18,756
+Bu teorem aslında artan azalan fonksiyon teoremi. Bu teorem de bize şunu söylüyor. Bir f fonksiyonunun kapalı bir ab aralığında sürekli
+
+408
+01:03:22,931 --> 01:03:28,532
+Açık ab aralığında da türevlenebilir olduğunu kabul ediyoruz.
+
+409
+01:03:29,532 --> 01:03:31,492
+Türevlenebilir olsun diyoruz.
+
+410
+01:03:31,492 --> 01:03:37,992
+Eğer her x eleman ab için şu açık aralıktaki.
+
+411
+01:03:46,068 --> 01:03:47,852
+esin türevi
+
+412
+01:03:52,148 --> 01:03:54,155
+x kare artı 2x, f'
+
+413
+01:04:01,396 --> 01:04:09,116
+f kapalı ab aralığında artandır diyoruz.
+
+414
+01:04:13,923 --> 01:04:37,228
+x kare artı 2x, f'
+
+415
+01:04:29,492 --> 01:04:36,731
+değeri sıfırdan küçük oluyor ise o zaman da f kapalı ab aralığında
+
+416
+01:04:42,312 --> 01:05:03,916
+x kare artı 2x, f'
+
+417
+01:04:59,188 --> 01:05:01,987
+büyük eşit sıfır. Sıfıra da eşit oluyorsa
+
+418
+01:05:08,960 --> 01:05:10,923
+x kare artı 2x, f'
+
+419
+01:05:08,052 --> 01:05:10,592
+v aralığında artmayan
+
+420
+01:05:22,940 --> 01:05:34,443
+x kare artı 2x, f'
+
+421
+01:05:20,436 --> 01:05:22,775
+küçük eşit sıfır oluyorsa da
+
+422
+01:05:22,775 --> 01:05:28,215
+AB aralığına azalmayandır diyoruz.
+
+423
+01:05:28,476 --> 01:05:30,096
+Tam tersini mi söyledim?
+
+424
+01:05:30,876 --> 01:05:32,135
+Tam tersini söyledim.
+
+425
+01:05:32,996 --> 01:05:34,115
+Şu azalmayan
+
+426
+01:05:44,600 --> 01:05:45,164
+x kare artı 2x, f'
+
+427
+01:05:44,340 --> 01:05:45,160
+Bu da artımayalım.
+
+428
+01:05:50,908 --> 01:05:55,028
+x kare artı 2x, f'
+
+429
+01:05:49,972 --> 01:06:17,352
+sıfıra eşit olduğu için burada normalde artan fonksiyon demem gerekirdi. Ama sıfıra eşit olduğunda azalmayan ya da buna azalan fonksiyon demem gerekiyordu. Buna da artmayan diyoruz. Ancak şunu da söyleyeyim ki sıfıra eşit olması yani büyük eşit sıfır veya küçük eşit sıfır olması durumunda da fonksiyon yine
+
+430
+01:06:18,483 --> 01:06:38,783
+artı artan fonksiyon olabilir. Yani artan fonksiyondur. Örneğin, y eşit x küp fonksiyonunu göz önüne alın. Bunun türevi nedir? 3x karedir değil mi?
+
+431
+01:06:42,483 --> 01:06:58,724
+sıfır noktasında bu fonksiyon ne olacaktır? Şöyle nasıl yapalım? Sıfırdan büyük isler için.
+
+432
+01:07:05,619 --> 01:07:10,900
+küçük de alsam, büyük de alsam ne olacak? Burası x kare olduğu için
+
+433
+01:07:15,251 --> 01:07:18,012
+O hep ne olacak? Artan fonksiyon olacak değil mi?
+
+434
+01:07:23,635 --> 01:07:25,635
+x farklı sıfır için
+
+435
+01:07:25,635 --> 01:07:29,596
+y üstü türevi ne olur?
+
+436
+01:07:29,976 --> 01:07:30,876
+Büyük sıfır olur.
+
+437
+01:07:38,324 --> 01:07:44,384
+Ancak x eşit sıfırda y üstü türevi nedir? Sıfıra eşittir.
+
+438
+01:07:46,063 --> 01:07:51,824
+Dolayısıyla y üstü için ne diyebiliriz? Büyük eşit sıfırdır.
+
+439
+01:07:51,824 --> 01:07:59,003
+Ama büyük eşit sıfır olması bunun artan olmasına bir engel mi? Değil.
+
+440
+01:08:01,715 --> 01:08:08,355
+0'daki türevi 0 olmasına rağmen bu fonksiyon nedir? Yine artandır.
+
+441
+01:08:09,655 --> 01:08:18,556
+Yani şu büyük eşit 0, küçük eşit 0 durumunda da fonksiyon için artandır veya azalandır diyebilirsiniz.
+
+442
+01:08:23,412 --> 01:08:27,231
+Şöyle bir fonksiyonumuz vardı. x küp değil mi? Böyleydi.
+
+443
+01:08:28,952 --> 01:08:38,311
+Dolayısıyla sıfırda her ne kadar sıfır olsa da sıfıra eşit olsa da yani y üstü büyük eşit sıfır.
+
+444
+01:08:38,931 --> 01:08:41,091
+Normalde yazmamız gerekiyor.
+
+445
+01:08:41,572 --> 01:08:45,311
+Ama şurada büyük eşit sıfır olması bunu ne yapmıyor?
+
+446
+01:08:45,971 --> 01:08:48,471
+Artan olmasına engel değil.
+
+447
+01:08:48,791 --> 01:08:52,271
+Yani bu yine her koşulda artan bir fonksiyondur.
+
+448
+01:08:54,451 --> 01:08:55,371
+Silelim.
+
+449
+01:08:56,652 --> 01:09:01,231
+Demek ki bundan sonra artanlığa, azalanlığa nasıl bakacağız?
+
+450
+01:09:01,431 --> 01:09:02,531
+Türevle bakacağız.
+
+451
+01:09:04,231 --> 01:09:05,652
+Örnek yapalım şimdi.
+
+452
+01:09:35,060 --> 01:09:38,880
+biraz mürekkep koydum. Örneğimize bakalım.
+
+453
+01:09:51,283 --> 01:09:53,683
+Kamera değişmedi değil mi? Çarptı ama.
+
+454
+01:10:12,724 --> 01:10:17,064
+Bu fonksiyonun artan ve azalan olduğu aralıkları bulalım.
+
+455
+01:10:20,819 --> 01:10:22,619
+fonksiyonun türevini alıyoruz.
+
+456
+01:10:28,404 --> 01:10:39,404
+Nasıl yazarız? 3 parantezini aldığında x kare eksi 4 olacak. O da x eksi 2, x artı 2 şeklinde yazılır.
+
+457
+01:10:42,104 --> 01:10:49,764
+Dolayısıyla bunun kökleri nedir? x eşit artı 2'de ve x eşit eksi 2'de bu sıfır olacak.
+
+458
+01:10:50,624 --> 01:10:53,004
+Kökleri eksi 2 ve artı 2'dir.
+
+459
+01:10:54,515 --> 01:11:17,615
+Dolayısıyla işaretlerini incelerken, yani artan azalanlığını incelerken isterseniz tablo yapın. Hatta daha kolay olur tablo yapmak. Ben burada yazarken, açıklarken tablo yapmamışım ama yapabilirsiniz daha güzel olur. x değerleri, bunun sıfırlarını önce bul.
+
+460
+01:11:18,899 --> 01:11:40,359
+Bunu sıfır yapan değerler x eşit artı eksi 2 değerleri değil mi? Bunları yerleştirelim. Eksi 2 artı 2. Bunlar türev fonksiyonunun sıfırları. Dolayısıyla şuraya türev değerini alacağım. F üstü x yazacağım.
+
+461
+01:11:42,996 --> 01:11:57,756
+kök olduğu için şöyle yuvarlak içine alıyorum. Yani türevin sıfırları, kökleri. Onu sıfır yapan değerler. Dolayısıyla, şimdi sağında, solunda inceleyelim.
+
+462
+01:12:00,979 --> 01:12:11,340
+Şu aralıkta bunları incelerken hani burada ne çıktı? İkinci dereceden bir denklem çıktı. İkinci derece denklemlerin işaretlerine bakarken siz ne diyordunuz?
+
+463
+01:12:11,899 --> 01:12:19,359
+Köklerin arası A'nın işaretinin tersi, diğer taraflar A'nın işaretinin aynısı oluyordu.
+
+464
+01:12:20,039 --> 01:12:26,219
+İsterseniz bunu kullanın ya da aralıkta herhangi bir değer alıp
+
+465
+01:12:27,796 --> 01:12:42,916
+Şurada işaretine bakın. Bir tane değer seçmeniz yeterli. Örneğin, x2 artı 2 aralığında sıfır değerini alırsanız, x12 çıkar. Yani negatif olur. Demek ki işareti negatif.
+
+466
+01:12:43,380 --> 01:12:59,299
+x 2'den küçük değerler aldığınızda örneğin x 3 alın. x 3 değerini şurada yerine koyduğunuzda ne olacak? 3'ün karesi 9, bir de 3 ile çarptım 27, x 12 pozitif çıktı.
+
+467
+01:13:00,239 --> 01:13:06,899
+2'den büyük değerler için de zaten pozitif olacak. Dolayısıyla buradaki işaretleri de artı olacak.
+
+468
+01:13:10,399 --> 01:13:22,239
+Pozitif olduğu sıfırdan büyük olduğu yerlerde fonksiyon artan, artan olunca yukarı doğru, azalan olduğu yerlerde de aşağı doğru ok kullanarak gösteriyoruz.
+
+469
+01:13:23,039 --> 01:13:26,759
+Dolayısıyla hangi aralıklarda fonksiyon artan oluyormuş?
+
+470
+01:13:26,759 --> 01:13:35,339
+Eksi sonsuz, eksi 2 ve şurası nedir? 2.
+
+471
+01:13:36,435 --> 01:13:40,815
+sonsuz. Şurası eksi sonsuz. Burası da artı sonsuz olacak.
+
+472
+01:13:42,135 --> 01:13:46,315
+Eksi sonsuz, eksi 2 ve 2 sonsuz aralıklarında
+
+473
+01:13:46,315 --> 01:13:49,915
+artan
+
+474
+01:13:49,915 --> 01:13:55,975
+eksi 2 artı 2 aralığında ise azalan.
+
+475
+01:14:04,404 --> 01:14:11,203
+azalan olduğu aralıkları bu şekilde tablo yaparak çok daha kolay gösterebilirsiniz.
+
+476
+01:14:24,275 --> 01:14:29,916
+hırk herhalde bunu da siliyorum. Var mı sorunuz?
+
+477
+01:14:52,500 --> 01:14:55,979
+Gelelim şimdi fonksiyonların ekstremum değerlerine.
+
+478
+01:14:56,520 --> 01:14:58,979
+Türev uygulamalarının devamı.
+
+479
+01:15:20,532 --> 01:15:28,811
+ekstrem değerler içinde mutlak ekstrem ve yerel ekstrem değerler olarak bunların tanımlarını ayrı ayrı yapacağız.
+
+480
+01:15:28,811 --> 01:15:37,551
+Şimdi ben şuradan bakayım. Hatta okuyayım artık yazmaya da düşendim. Uzun bir tanım çünkü.
+
+481
+01:15:40,211 --> 01:15:46,852
+Şimdi mutlak ekstrem değerleri şu şekilde tanımlıyoruz. Bir f fonksiyonumuz var elimizde.
+
+482
+01:15:47,252 --> 01:15:59,932
+f'in tanımlı olduğu, yani f'in tanım kümesini de df ile gösterelim. Tanımlı olduğu bir küme var. Bunu da df diyelim. Bir saniye.
+
+483
+01:16:02,932 --> 01:16:05,032
+[kişisel bilgi].
+
+484
+01:16:15,155 --> 01:16:25,055
+fonksiyonum var. Tanım kümesini df ile gösterdim. Şimdi tanım kümesini alacağım. Her x için.
+
+485
+01:16:43,988 --> 01:16:49,648
+fx küçük eşit f x sıfır.
+
+486
+01:16:50,188 --> 01:17:00,548
+Olacak şekilde bir x sıfır eleman tanım kümesinde yine böyle bir x sıfır elemanı varsa,
+
+487
+01:17:02,548 --> 01:17:10,587
+varsa diyelim, o zaman x sıfıra f'in
+
+488
+01:17:14,868 --> 01:17:16,347
+Mutlak maksimum
+
+489
+01:17:16,347 --> 01:17:19,168
+bir saniye, pardon, pardon.
+
+490
+01:17:20,068 --> 01:17:22,168
+x sıfıra değil, x sıfırda
+
+491
+01:17:22,168 --> 01:17:24,248
+sıfırda
+
+492
+01:17:24,248 --> 01:17:27,288
+f fonksiyonu
+
+493
+01:17:27,288 --> 01:17:32,768
+mutlak maksimum değeri sahiptir diyoruz.
+
+494
+01:17:44,979 --> 01:17:46,603
+x kare artı 2x, f'nin değeri de nedir?
+
+495
+01:17:54,292 --> 01:18:05,992
+x sıfırdır. Şöyle diyelim, x sıfır noktasında f fonksiyonu, fx sıfır mutlak maksimum değerine sahiptir denir.
+
+496
+01:18:15,923 --> 01:18:21,264
+tersi olarak, yani fonksiyonun tanım kümesinde öyle bir x0 noktası var ki,
+
+497
+01:18:27,604 --> 01:18:41,664
+f' noktasındaki değeri diğer noktalarda aldığı değerlerden büyük, en fazla eşit olabiliyor. Hepsinden büyük. O zaman bu ne oluyor? Mutlak maksimum değer oluyor.
+
+498
+01:18:46,420 --> 01:18:51,579
+benzer olarak mutlak minimum değerini de şöyle tanımlarız.
+
+499
+01:19:06,739 --> 01:19:31,119
+Eğer yine ne olacak? Her x eleman df için f x sıfır küçük eşit fx olacak şekilde x sıfır eleman df varsa o zaman da
+
+500
+01:19:35,412 --> 01:19:46,952
+f fonksiyonu x0'da fx0 mutlak minimum değerine sahiptir deriz.
+
+501
+01:19:58,515 --> 01:19:59,815
+Anımlarımız bunlar.
+
+502
+01:20:39,667 --> 01:20:42,387
+ıslak kalınca yazmıyor.
+
+503
+01:20:50,868 --> 01:20:55,128
+Mutlak maksimum, mutlak minimum dedik. Bunlar nasıl oluyor?
+
+504
+01:21:18,996 --> 01:21:21,316
+senden niye kurtulamıyorum ben?
+
+505
+01:21:39,988 --> 01:21:41,868
+Şunu keselim, böyle bırakalım.
+
+506
+01:21:43,728 --> 01:21:45,648
+Böyle bir f fonksiyonu alalım.
+
+507
+01:21:51,155 --> 01:22:05,015
+tanım kümemizde AB olsun. Bakın, nerelerde maksimum, nerelerde minimum değeri vardır? Nasıl bakarız? Zaten grafik olunca en tepedeki noktası maksimum, en dipteki noktası da minimum olacak.
+
+508
+01:22:07,636 --> 01:22:15,796
+Bakın, şurası maksimum değeri olacak değil mi? Aslında şurası da minimum değer olacak.
+
+509
+01:22:18,515 --> 01:22:19,435
+ancak
+
+510
+01:22:22,899 --> 01:22:31,719
+Bir şey daha söyleyeyim. Henüz yerel maksimum minimumların tanımını vermedim ama onları da vereceğim. Şöyle bir açıklama yapayım size.
+
+511
+01:22:33,639 --> 01:22:44,859
+Fonksiyon ya bu şekilde tepe yaptığı noktalarda ya da böyle çukur yaptığı noktalarda ekstrem değerlere sahiptir.
+
+512
+01:22:45,859 --> 01:22:46,939
+Tamam mı?
+
+513
+01:22:48,083 --> 01:22:52,403
+Ha şu da olabilirdi. Bir şey daha ekleyeyim ben buna.
+
+514
+01:23:00,787 --> 01:23:03,907
+bu kalsın. Oraya değil de şuraya bekleyeyim ben.
+
+515
+01:23:21,811 --> 01:23:40,811
+arası da böyle köşe olsaydı. Bu noktada ne yok? t-et yok değil mi? Çünkü burada türev yok. Türevin tanımsız olduğu nokta. Köşe olan noktalarda demiştik ki türev yok. Türevi yoksa t-eti de yoktur. Burada t-et yok. Ancak...
+
+516
+01:23:41,811 --> 01:23:46,311
+Mesela baktığımda, yerel olarak, parça parça bakalım.
+
+517
+01:23:46,931 --> 01:23:50,311
+Nedir? Burada da bir pik yapmış, geri dönmüş.
+
+518
+01:23:50,631 --> 01:23:54,391
+Pik yapmış, geri dönmüş şeklinde fonksiyon böyle gidiyor.
+
+519
+01:23:56,832 --> 01:24:00,631
+Mesela şurada minimum değer vardır değil mi?
+
+520
+01:24:01,451 --> 01:24:03,692
+Burada geldim, maksimum değer var.
+
+521
+01:24:03,912 --> 01:24:08,511
+Burada minimum değer var, maksimum değer var, minimum değer var.
+
+522
+01:24:11,539 --> 01:24:26,239
+Minimum noktaların en küçüğü ki şu nokta oluyor. Burası nedir? Fonksiyonun mutlak minimum olduğu değerdir. Yani mutlak minimum değeri A noktasında almış.
+
+523
+01:24:27,699 --> 01:24:46,020
+maksimum oldu. Şurada maksimum var, burada maksimum var. Bu maksimumlar içerisinde en maksimum, en büyük olan nedir? Burada almıştır. Dolayısıyla şu mutlak maksimum değeridir. Şunlar da yerel maksimum ve minimum değerlerdir.
+
+524
+01:24:53,587 --> 01:24:57,507
+mutlak maksimum, en küçük olanı mutlak minimum.
+
+525
+01:24:58,368 --> 01:25:01,887
+Aradakilerde işte yerel maksimum minimum değerler oluyor.
+
+526
+01:25:02,788 --> 01:25:09,528
+Her mutlak maksimum veya mutlak minimum değer aynı zamanda yerel maksimum veya yerel minimum değerdir.
+
+527
+01:25:09,948 --> 01:25:12,368
+Bunu yine açıklayacağım yeri geldiğinde.
+
+528
+01:25:12,368 --> 01:25:15,368
+Şimdi bakın fonksiyonda eğer...
+
+529
+01:25:17,876 --> 01:25:25,855
+maksimum minimum yerler varsa bakın bu maksimum minimum yerler ne tür noktalarda var bir dikkat edelim biz onlara.
+
+530
+01:25:26,636 --> 01:25:32,996
+Ben şu telefonun sesini, ha şeyi, whatsapp'ı açık unuttum pardon ben şuradan whatsapp'ı kapatayım.
+
+531
+01:25:41,171 --> 01:25:46,391
+Hangi noktalarda bakalım fonksiyon maksimum minimum değerler almış?
+
+532
+01:25:46,992 --> 01:25:53,912
+Bakıyorum, bir kere tanım kümesinin uç noktalarında maksimum minimum değerler almış.
+
+533
+01:25:53,912 --> 01:25:57,971
+Tanım kümemiz kapalı AB aralığı.
+
+534
+01:25:58,551 --> 01:26:07,351
+Eğer böyle kapalı bir sınırlı aralığımız varsa bu aralığın uç noktalarında maksimum minimum değerler alıyormuş.
+
+535
+01:26:08,275 --> 01:26:09,615
+uç noktalar
+
+536
+01:26:09,615 --> 01:26:18,075
+bakın şurada türev yok ama burada da bir maksimum değer var.
+
+537
+01:26:18,435 --> 01:26:20,275
+değil mi? Bu da nedir?
+
+538
+01:26:21,915 --> 01:26:25,275
+türevin olmadığı nokta, tekin nokta diyorduk.
+
+539
+01:26:35,667 --> 01:26:41,327
+Demek ki tekin noktalarda da maksimum veya minimum değere fonksiyon sahip olabiliyor.
+
+540
+01:26:41,787 --> 01:26:45,987
+Bir de bakın şu noktalar var ki bu noktalarda nedir?
+
+541
+01:26:47,567 --> 01:26:49,727
+Bu noktalarda t'yet.
+
+542
+01:26:53,587 --> 01:27:21,167
+x eksenine paralel. t'in x eksenine paralel olması ne demektir? Fonksiyonun bu noktadaki türevinin sıfır olması demek. Yani fonksiyonun türev değerlerinin sıfır olduğu yerler. Türevin sıfır olduğu yerde ne vardır? x eksenine paralel bir doğru vardır. Yani fonksiyon
+
+543
+01:27:22,899 --> 01:27:24,659
+Burada
+
+544
+01:27:24,659 --> 01:27:29,779
+Yatay TET sahip.
+
+545
+01:27:30,119 --> 01:27:36,299
+Yatay TET sahip olduğu yerler türevin sıfır olduğu yerlerdir.
+
+546
+01:27:44,724 --> 01:28:03,404
+Bu halde bir fonksiyonun ekstrem değerlerini bulmam gerektiğinde şu üç tip noktaya bakacağız. Zaten türevin tanımlı olmadığı noktalarla türevi sıfır yapan noktaları biz hepsini birden ne olarak aldık? Kritik nokta olarak aldık.
+
+547
+01:28:06,899 --> 01:28:15,979
+O halde bir fonksiyonun her zaman türevi olmak zorunda değil.
+
+548
+01:28:16,299 --> 01:28:21,099
+Ancak ekstrem değerler varsa da şu tip noktalarda vardır.
+
+549
+01:28:21,559 --> 01:28:30,359
+Kritik noktalarda ya da tanım kümesi sonluysa o tanım kümesinin uç noktalarında vardır diyebileceğiz.
+
+550
+01:28:30,359 --> 01:28:31,319
+Peki.
+
+551
+01:28:33,395 --> 01:28:38,755
+Maksimum ve minimum değerleri ekstrem değerler diyoruz. Bunu biliyorsunuz.
+
+552
+01:28:39,655 --> 01:28:46,675
+Ekstrem değerlerin varlığı için varlık teoremi dediğimiz teoremimiz var.
+
+553
+01:28:47,315 --> 01:28:53,376
+Bu teoremi ben size kısaca okuyayım dersi bitirelim olur mu?
+
+554
+01:28:54,036 --> 01:28:56,095
+Varlık teoremimiz şunu söylüyor.
+
+555
+01:29:00,948 --> 01:29:16,327
+Aralım kümesinin sonlu, kapalı bir aralık veya bu şekildeki aralıkların sonlu bir topluluğunun birleşim olduğunu varsayalım. Bizimki sonlu aralıkların birleşimi değil mi?
+
+556
+01:29:18,707 --> 01:29:30,507
+Eğer f fonksiyonu her x eleman df noktasında sürekli ise o zaman f bir mutlak maksimum değere ve bir mutlak minimum değere sahiptir.
+
+557
+01:29:36,340 --> 01:29:37,560
+Ne anladık burada?
+
+558
+01:29:43,188 --> 01:29:44,968
+Kısaca şunu bilin.
+
+559
+01:29:46,148 --> 01:29:50,708
+Yani bir fonksiyonun ekstrem değerlerinin olması için pardon.
+
+560
+01:29:57,844 --> 01:30:03,064
+Ne zaman bir fonksiyonun ekstrem değerlerinin kesinlikle olduğunu söyleyebiliriz?
+
+561
+01:30:04,804 --> 01:30:10,543
+Fonksiyon sürekli, tanım kümesi de kapalı.
+
+562
+01:30:14,387 --> 01:30:17,387
+kapalı, sınırlı bir aralık yani.
+
+563
+01:30:22,323 --> 01:30:29,783
+Kapalı bir kümek üzerinde sürekli bir fonksiyon mutlaka maksimum ve minimum değerlerini alır.
+
+564
+01:30:43,123 --> 01:30:44,243
+olduğu için
+
+565
+01:30:44,243 --> 01:30:48,804
+a, b kapalı aralığında
+
+566
+01:30:48,804 --> 01:30:54,903
+mutlaka bu aralıkta fonksiyonun bir maksimum, bir minimum değeri vardır.
+
+567
+01:30:55,343 --> 01:30:59,423
+Yani bu teoremin özeti dediğim gibi şu.
+
+568
+01:31:00,224 --> 01:31:01,823
+Kapalı bir aralıkta
+
+569
+01:31:01,823 --> 01:31:05,683
+f fonksiyonu eğer sürekli ise
+
+570
+01:31:05,683 --> 01:31:09,263
+mutlaka bir maksimum ve bir minimum değeri vardır.
+
+571
+01:31:10,195 --> 01:31:11,576
+Vardık koşulu bu.
+
+572
+01:31:13,675 --> 01:31:19,136
+Buradaki grafiği de incelerseniz, şu bizim çizdiğimize benziyor zaten.
+
+573
+01:31:19,916 --> 01:31:21,655
+Onun gibi çizmiş oldum.
+
+574
+01:31:21,736 --> 01:31:23,136
+Orada iki tane şey var.
+
+575
+01:31:27,056 --> 01:31:28,716
+Tekil nokta var.
+
+576
+01:31:29,935 --> 01:31:36,136
+Fonksiyonun maksimum, ekstremum değerlerine baktığımızda
+
+577
+01:31:37,939 --> 01:32:02,659
+dip yapan noktalara ya da pik yapan noktalara bakacağız. O noktalar maksimum minimumun olduğu noktalar oluyor. Bunların bazılarında türev var ise nedir? Buradaki t x80 ile nedir? Paraleldir. Yani türevin sıfır olduğu noktalar, türevin tanımsız olduğu noktalar,
+
+578
+01:32:03,283 --> 01:32:06,123
+köşe noktalarda tanım yok, türev yok çünkü.
+
+579
+01:32:06,603 --> 01:32:14,263
+Bir de sonlu aralık olunca aralığın uç noktaları ekstrem değerlerin olduğu noktalardır.
+
+580
+01:32:14,724 --> 01:32:16,043
+Bugün burada bitirelim.
+
+581
+01:32:18,123 --> 01:32:19,783
+Haftaya devam ederiz.
+
+582
+01:32:21,384 --> 01:32:27,484
+Ekstrem değerler için bir de yerel ekstrem değerleri verip bir de türev testlerini vereceğiz.
+
+583
+01:32:28,336 --> 01:32:40,256
+1. türev testi ve 2. türev testi var. O testleri de vereceğiz, ekstrem değerleri bitireceğiz. Konkavlık falan var, neyse devam ederiz konuya da. Haftaya devam ederiz.
+
+584
+01:32:41,695 --> 01:32:43,015
+Hocam bir şey sorabilir miyim?
+
+585
+01:32:43,076 --> 01:32:49,496
+Varsa tabii ki, sorunuz varsa sorun, sorusu olmayanlar ya da çıkmak isteyenler çıkabilirler.
+
+586
+01:32:51,699 --> 01:32:57,079
+Hocam, sınavdan önce bize alıştırma soruları hazırlayabilir misiniz? Ya da şu anda var mı acaba?
+
+587
+01:32:58,279 --> 01:32:58,920
+Hazırlıyorum.
+
+588
+01:32:59,920 --> 01:33:00,899
+Tamam, peki teşekkür ederim.
+
+589
+01:33:01,119 --> 01:33:12,079
+Hazırlamaya başladım. Onları yüklerim, çözerim de bir kısmını size. Belki çözümsüz olarak mı yükleyeyim size ve size acaba?
+
+590
+01:33:16,148 --> 01:33:20,587
+Hocam, isterseniz çözümlerini de yükleyin. Bitirdikten sonra kontrol etmek daha kolay olur.
+
+591
+01:33:21,988 --> 01:33:24,788
+Tamam. Öyle yapayım.
+
+592
+01:33:24,847 --> 01:33:25,548
+Görürsünüz ama.
+
+593
+01:33:26,927 --> 01:33:34,888
+Tamam. Zaten birçoğu çözümlü şekilde var. Fotoğrafını çekip yükleyeceğim. Hazırlıyorum. Onları yaparız.
+
+594
+01:33:36,007 --> 01:33:38,908
+Sınavın tarihi de herhalde belli olur haftaya.
+
+595
+01:33:41,347 --> 01:33:43,087
+Teşekkür ederim hocam. İyi günler.
+
+596
+01:33:44,083 --> 01:33:52,543
+Ben teşekkür ediyorum hepinize. Hepinize iyi günler diliyorum. Kendinize iyi bakın. Hastalık bu aralar çok yayıldı. Çok dikkatli olun.
+
+597
+01:33:58,804 --> 01:34:04,443
+Hocam, sınavda işleyeceğimiz yere kadar mı sorulacak yoksa bir belirli konu var mı?
+
+598
+01:34:05,384 --> 01:34:13,224
+Dün söylemiştim. Ayrıca size yazarım da sınav tarihi belli olsa konuları da tam yazıp duyuru da göndereceğim de.
+
+599
+01:34:13,224 --> 01:34:14,744
+Şeye kadar.
+
+600
+01:34:16,664 --> 01:34:18,884
+Bugüne kadar.
+
+601
+01:34:20,404 --> 01:34:24,703
+Bugün işlediğimiz yere kadar ki konular sınava dahil.
+
+602
+01:34:25,583 --> 01:34:39,423
+en son belirsizlikler vardı ya limitte. Onlar dahil, bu ekstrem değerler falan dahil değil, tamam mı? Bunlar sınavda yok, bunlar da finalde olacak.
+
+603
+01:34:52,948 --> 01:34:55,747
+Başka sorusu olan yok herhalde, ben de çıkıyorum.
+
+604
+01:34:56,827 --> 01:34:57,327
+İyi günler.
+
+605
+01:34:57,488 --> 01:34:58,688
+Sanjee elamu, semmem.
+
+606
+01:34:59,488 --> 01:35:00,288
+İyi günler.

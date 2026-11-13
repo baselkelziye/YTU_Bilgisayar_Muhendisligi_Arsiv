@@ -1,0 +1,2179 @@
+1
+00:00:13,044 --> 00:00:14,243
+Merhaba arkadaşlar.
+
+2
+00:00:23,443 --> 00:00:36,164
+Bugün yine integralde hacimle devam edeceğiz. Dün giriş yaptık. Bugün de tamamlayacağız hacimleri. Ben size tabi dosyayı yükleyeyim yine.
+
+3
+00:01:35,828 --> 00:01:42,647
+Ben döner yüzeylerin hacimlerini nereye yüklemişim? Dosyayı bulamıyorum.
+
+4
+00:02:22,068 --> 00:02:24,888
+Dosya da üyüklendi.
+
+5
+00:02:28,948 --> 00:02:29,788
+başlıyor.
+
+6
+00:02:42,771 --> 00:02:46,051
+Dün dönen cisimlerin hacmine başladık.
+
+7
+00:02:46,211 --> 00:02:48,091
+Dizk yöntemini vermiştim size.
+
+8
+00:02:51,828 --> 00:03:36,172
+x kare artı 2x, f'
+
+9
+00:03:08,788 --> 00:03:16,848
+x fonksiyonunun eğrisini x eşit a ve x eşit b doğrularıyla sınırlıyorduk.
+
+10
+00:03:18,308 --> 00:03:21,867
+Şu yüzeyi bir de x ekseniyle sınırlıyorduk.
+
+11
+00:03:22,768 --> 00:03:29,908
+Şu bölgenin x ekseni etrafında döndürülmesiyle oluşan hacmi,
+
+12
+00:03:31,908 --> 00:03:35,747
+şöyle x ekseni etrafında döndürdüğümüzü gösterelim.
+
+13
+00:03:36,211 --> 00:03:42,371
+Şu R bölgesini x eksen etrafında döndürdüğümüzde ne çıkacaktır?
+
+14
+00:03:43,471 --> 00:03:46,551
+Şöyle bir hacim çıkacaktır değil mi?
+
+15
+00:03:46,831 --> 00:03:50,591
+Bir cisim çıkacak, hacmi olan bir cisim.
+
+16
+00:03:50,951 --> 00:03:53,512
+Bu cismin hacmini nasıl hesaplıyorduk?
+
+17
+00:03:53,811 --> 00:03:56,291
+Bu cismin hacmini şöyle hesaplamıştık.
+
+18
+00:03:56,819 --> 00:04:06,919
+Biz A-V aralığını yine tabii M parçaya böldük. Bu arada bir tanesini aldık. Şu bir parçayı şöyle göstereyim.
+
+19
+00:04:17,396 --> 00:04:19,396
+Şu genişliği ne kadar olacak?
+
+20
+00:04:20,615 --> 00:04:22,776
+Delta x i kadar olacak değil mi?
+
+21
+00:04:23,036 --> 00:04:28,376
+Şu nokta x i eksi bir noktası ise şu noktada x i noktası olacak.
+
+22
+00:04:28,536 --> 00:04:31,796
+Dolayısıyla genişlik delta x i kadar olacak.
+
+23
+00:04:31,796 --> 00:04:40,436
+Biz bu parçayı
+
+24
+00:04:42,387 --> 00:04:50,727
+döndürdüğümüzü düşünüyoruz ya, bunun oluşturduğu hacmi. Böyle çizmeyip biraz şöyle çizsem daha anlaşılır olacak.
+
+25
+00:05:15,252 --> 00:05:15,552
+şöyle
+
+26
+00:05:22,579 --> 00:05:35,019
+şeritle gösterdiğim parçanın hacmini göz önüne alalım. Biz bu hacminin böyle bir şekil çökeceğiz. Bu nedir? Bir dizi.
+
+27
+00:05:47,732 --> 00:05:55,412
+Nasıl yapacağız? Bu diskin şu parçasının genişliğini delta ile göstermiştik. Yarı çapı ne kadar olacak?
+
+28
+00:05:55,412 --> 00:06:03,412
+yarı çapı ne kadar olacak?
+
+29
+00:06:03,412 --> 00:06:07,412
+yarı çapı büyük R ile göstermiştik.
+
+30
+00:06:16,276 --> 00:06:17,355
+çizimi açarsam
+
+31
+00:06:50,259 --> 00:06:51,019
+evo...
+
+32
+00:10:54,803 --> 00:11:07,703
+Tekrar merhaba. Bugün internette çok büyük sorun yaşıyorum. Sabah da çok sorun yaşadım bağlanmak için. Şimdi beni duyabiliyorsunuz ve görebiliyorsunuz değil mi? Devam edelim.
+
+33
+00:11:32,788 --> 00:11:41,028
+Benim şununla işim yok aslında. Burada ihtiyacım olan tek şey taban alanı çarpı yüksekliktir.
+
+34
+00:11:46,676 --> 00:11:52,736
+bir disk olduğu için yarı çapıda reydi taban alanı buna göre ne olacaktır?
+
+35
+00:11:52,736 --> 00:11:54,776
+P çarpı
+
+36
+00:11:58,196 --> 00:12:00,676
+r'nin karesi olacak.
+
+37
+00:12:01,395 --> 00:12:02,796
+Yüksekliğimizde
+
+38
+00:12:02,796 --> 00:12:07,076
+şu şeritin yüksekliği yani
+
+39
+00:12:07,076 --> 00:12:09,355
+delta x kadar.
+
+40
+00:12:11,875 --> 00:12:14,996
+Ya da delta x de diyebiliriz.
+
+41
+00:12:19,059 --> 00:12:33,799
+Dolayısıyla bu bir tane şeritin oluşturduğu hacmi eğer bu şekilde buluyorsam ben bu bölgeyi en tane parçaya ayırarak oluşturduğum en tane hacmi toplarım.
+
+42
+00:12:34,355 --> 00:12:42,015
+En sonsuza giderken de integralini, limitini alırsak istenen hacmi bulmuş olurum.
+
+43
+00:12:42,015 --> 00:12:47,955
+Bir toplamın limiti A'dan B'ye belirli integral veriyordu bize.
+
+44
+00:12:48,415 --> 00:12:53,455
+Dolayısıyla V hacmi x eşit A'dan B'ye kadar
+
+45
+00:12:55,283 --> 00:13:00,504
+P çarpı R kare dx olarak hesaplanabilir.
+
+46
+00:13:00,504 --> 00:13:03,163
+R burada nasıl belirlenir?
+
+47
+00:13:03,519 --> 00:13:18,180
+Bakın, şu eğri üzerindeki noktadan x eksenine kadar olan uzaklıktır. Dolayısıyla R burada fx kadar olacak. Burada seçtiğim bir x, y noktası için fx'i yazıyorum.
+
+48
+00:13:25,556 --> 00:13:46,975
+x kare artı 2x, dx olarak elde edilir ve hacmi. Burada döndürdüğümüz bölgeden küçük şeritler alıp diskler oluşturduğumuz için buna disk yöntemi demişler. Bu şekilde
+
+49
+00:13:47,956 --> 00:13:53,276
+hacmi, dönen cismin hacmini diz yöntemiyle bu şekilde hesaplayabiliyoruz.
+
+50
+00:13:53,696 --> 00:13:59,016
+Eğer dönme ekseni y ekseni olursa o zaman da
+
+51
+00:14:09,875 --> 00:14:27,415
+Şuradaki bir eğri olsun. x eşit f, y eğrisi olsun. y eşit c ve y eşit d doğrularıyla sınırlı şu parçayı y ekseni etrafında döndürüyorum.
+
+52
+00:14:27,415 --> 00:14:36,415
+y ekseni etrafında döndürdüğümde ne olacak? Bunun simetriyini alacağım yaklaşık.
+
+53
+00:14:37,139 --> 00:14:51,980
+Şöyle çan gibi bir şekil çıkacak karşıma. Bunun hacmini bulmak istiyoruz. Nasıl yaparız? Bu sefer de diski şu şekilde seçelim değil mi?
+
+54
+00:15:12,788 --> 00:15:16,748
+Şimdi diskin genişliği şurası delta y kadar olacak.
+
+55
+00:15:18,127 --> 00:15:19,367
+R yarı çapı
+
+56
+00:15:25,524 --> 00:15:28,703
+Burası olur ki, R yarışı bu durumda ne olur?
+
+57
+00:15:28,884 --> 00:15:30,403
+F, Y, Y eşit olur.
+
+58
+00:15:31,764 --> 00:15:32,563
+Dolayısıyla,
+
+59
+00:15:33,884 --> 00:15:34,844
+V hacmi,
+
+60
+00:15:35,844 --> 00:15:38,283
+Y eşit C'den D'ye kadar,
+
+61
+00:15:40,723 --> 00:15:42,983
+P çarpı yine R kare,
+
+62
+00:15:44,483 --> 00:15:45,483
+D, Y'den,
+
+63
+00:15:46,624 --> 00:15:47,884
+C'den D'ye,
+
+64
+00:15:48,063 --> 00:15:49,144
+P çarpı,
+
+65
+00:15:50,084 --> 00:15:51,084
+F, Y'nin,
+
+66
+00:15:52,179 --> 00:15:55,559
+Kalesi neye şeklinde hesaplanır.
+
+67
+00:16:00,179 --> 00:16:05,339
+ben bunlara örnek yapmadık. Şimdi örneklerle devam edelim.
+
+68
+00:16:31,635 --> 00:16:32,695
+örneğimiz şu.
+
+69
+00:16:39,635 --> 00:16:40,836
+y ekseni
+
+70
+00:16:40,836 --> 00:16:44,096
+ile
+
+71
+00:16:44,096 --> 00:16:47,596
+x eşit
+
+72
+00:16:54,323 --> 00:16:55,563
+x kare artı 2x, f'
+
+73
+00:17:03,091 --> 00:17:23,211
+y de 1 ile 4. Yani 1-4 aralığında y ekseni 2 bölü y eğrisi ile sınırlı, bir de y eşit 1 ve y eşit 4 doğrularıyla sınırlı olan bölgenin y ekseni etrafında döndürülmesiyle elde edilen cismin hacmini bulalım.
+
+74
+00:17:24,596 --> 00:17:31,115
+Soru sizde var. Dosyada yükledim. O yüzden uzun uzun yazmayıp direkt şeklini çiziyorum.
+
+75
+00:17:32,375 --> 00:17:41,796
+x eşit 2 bölü y veya y eşit 2 bölü x. Bunların ikisi de yani tersi kendisine eşit olan bir fonksiyondur bu.
+
+76
+00:17:42,215 --> 00:17:48,956
+Dolayısıyla bu fonksiyonu şu şekilde çizelim. Böyle bir eğrisi olacaktır.
+
+77
+00:17:50,163 --> 00:17:52,983
+1 bölü x'in biraz daha geniş hali olacak.
+
+78
+00:17:54,264 --> 00:17:58,264
+y eşit 4 şurası olsun.
+
+79
+00:17:59,624 --> 00:18:02,804
+y eşit 1 de burası olsun.
+
+80
+00:18:02,804 --> 00:18:05,304
+Şu parçayı
+
+81
+00:18:11,155 --> 00:18:12,675
+Böyle devam edip gidiyoruz.
+
+82
+00:18:13,016 --> 00:18:16,836
+Şu parçayı y-netrasında döndürüyoruz.
+
+83
+00:18:23,763 --> 00:18:26,503
+verilecek hacmi hesaplamak istiyoruz.
+
+84
+00:18:27,023 --> 00:18:30,743
+y y sen etrafında döndürürsem ne yapıyorum?
+
+85
+00:18:33,943 --> 00:18:37,783
+Şöyle y'ye dik olarak hacim elemanını seçiyorum.
+
+86
+00:18:38,203 --> 00:18:39,743
+Hacim elemanı
+
+87
+00:18:40,531 --> 00:18:49,511
+küçük şerit almıştık ya, bu dönünce bir disk oluşturuyordu. Bu küçük şeriti y eksenini dik şekilde seçiyorum.
+
+88
+00:18:49,592 --> 00:18:58,711
+y eksenin etrafında döndüreceğim çünkü. Hangi eksenin etrafında döndürüyorsa, yarı çap ne olacaktır? O eksene dik olan doğru olacaktır.
+
+89
+00:18:58,711 --> 00:19:03,572
+Dolayısıyla bunun R'si neye eşit olacak? R eşit.
+
+90
+00:19:04,339 --> 00:19:08,599
+x'e eşit olur değil mi? O da nedir? 2 bölü y'dir.
+
+91
+00:19:09,480 --> 00:19:10,579
+R'yi yazdık.
+
+92
+00:19:11,819 --> 00:19:18,179
+Ve hacmimiz, y nereden de r'ye değişiyor? 1'den 4'e kadar değişiyor.
+
+93
+00:19:18,319 --> 00:19:20,899
+Şu pi'yi yazalım integralin dışına.
+
+94
+00:19:21,500 --> 00:19:28,419
+y, 1'den 4'e kadar değişirken, pi, r kare çarpı dx oluyordu.
+
+95
+00:19:28,419 --> 00:19:29,839
+r kare neydi?
+
+96
+00:19:33,907 --> 00:19:47,307
+y eksen etrafında döndürdüğüm için, şu şeritin genişliği delta y kadar olacağında, şurası dy olacak.
+
+97
+00:19:47,967 --> 00:20:01,187
+Yani pi çarpı birden dörde, iki bölü, y'nin karesi, o da ne olur? Dört bölü, y kare, dy olur.
+
+98
+00:20:01,652 --> 00:20:04,951
+Bunun integrali de oldukça kolay.
+
+99
+00:20:06,251 --> 00:20:11,932
+4pi, 1 bölü y karenin integrali, eksi 1 bölü y'dir.
+
+100
+00:20:12,372 --> 00:20:14,572
+Sınırlarımız da birden 4'e kadar.
+
+101
+00:20:15,192 --> 00:20:18,271
+Şimdi sınırları da yerine koyarak bunu hesaplarsak,
+
+102
+00:20:18,271 --> 00:20:28,951
+4pi çarpı, 4 koyduğunda eksi 1 bölü 4, eksi, eksi de buradan geliyor, artı oldu, 1.
+
+103
+00:20:29,779 --> 00:20:31,139
+Sonuç ne çıktı?
+
+104
+00:20:31,940 --> 00:20:33,900
+4-1, 3 bölü 4.
+
+105
+00:20:34,099 --> 00:20:35,079
+4'ler gitti.
+
+106
+00:20:35,659 --> 00:20:41,139
+3 pi olarak hacim hesaplanır.
+
+107
+00:20:43,079 --> 00:20:44,299
+Var mı sorunuz?
+
+108
+00:20:52,531 --> 00:20:59,131
+yorumlarına da sileyim. Biraz hızlı gidelim. Yine internet falan gitmeden ben konuyu tamamlayayım.
+
+109
+00:21:15,347 --> 00:21:16,528
+ikinci örneğimiz
+
+110
+00:21:29,044 --> 00:21:30,104
+x kare artı 1
+
+111
+00:21:34,132 --> 00:21:46,211
+x bölü ile x eşit 3 doğrusu arasındaki bölgenin x eşit 3 doğrusu etrafında döndürülmesiyle elde edilen cismin hacmi.
+
+112
+00:21:49,779 --> 00:21:54,099
+x eşit y kare artı bir paraboli nasıl bir paraboli olacak?
+
+113
+00:21:54,319 --> 00:21:59,960
+x ekseni üzerinde bir birim ötelenmiş x eşit y kare paraboli.
+
+114
+00:22:00,199 --> 00:22:09,000
+Yani x eşit y kareyi çizip bunu x ekseni üzerinde bir birim ötelerseniz şöyle bir şekil çıkar.
+
+115
+00:22:09,899 --> 00:22:14,259
+Bunu şurası bir x eşit 3 doğrusu ile kesiyor.
+
+116
+00:22:18,132 --> 00:22:21,532
+ve bu doğru etrafında döndürüyor.
+
+117
+00:22:23,112 --> 00:22:26,731
+Dönme ekseni x eşit 3 doğrusu.
+
+118
+00:22:27,972 --> 00:22:41,872
+Bu disk yönteminde dönme ekseni ister x ekseni olsun, ister y ekseni olsun ya da başka bir doğru olsun yüzeye bitişik oluyor genellikle.
+
+119
+00:22:41,872 --> 00:22:44,872
+Şu bölgeyi
+
+120
+00:22:45,907 --> 00:22:49,288
+x eşit 3 doğrusu etrafında döndürelim.
+
+121
+00:22:50,667 --> 00:22:52,887
+Önce şunları belirleyin.
+
+122
+00:22:54,007 --> 00:22:57,007
+Bu x eşit 3 doğrusu nedir?
+
+123
+00:22:57,087 --> 00:23:04,587
+y eksenine paralel olduğu için y eksen etrafında döndürüyormuş gibi düşünün.
+
+124
+00:23:06,527 --> 00:23:11,507
+Şöyle, isterseniz küçük bir şey seçin.
+
+125
+00:23:13,076 --> 00:23:27,135
+dilim, hacim elemanı diyelim biz buna. Bunun genişliği ne kadar olacak? Delta y kadar olacak değil mi? R yarı çapı, yani dönme ekseninin uzaklığı, R'si de ne kadar olur?
+
+126
+00:23:29,036 --> 00:23:39,215
+Buradaki x de bu x'in farkı kadar olur. Şuradaki x neye bağlı? y kare artı 1 denklemine bağlı. y kare artı 1 eksi.
+
+127
+00:23:39,763 --> 00:23:44,663
+3. Yani y kare eksi 2 kadar oluyor.
+
+128
+00:23:47,844 --> 00:23:49,804
+Tersini yazdım ama ya.
+
+129
+00:23:57,779 --> 00:24:13,099
+x'in sağdaki değerleri soldaki değerlerinden büyüktür. Dolayısıyla sağdaki noktadan soldaki noktayı çıkaracağım. Yani şu noktadan bu noktayı çıkaracağım. Bu nokta sabit. x eşit 3 doğrusu. 3 yani.
+
+130
+00:24:13,652 --> 00:24:26,432
+Şu noktada nedir? y kare artı 1'dir. Eksi dedik, y kare artı 1 dedik. Dolayısıyla bu ne oldu? 2 eksi y kare oldu. Demin y kare eksi 2 yazmıştık. 2 eksi y kare olacak.
+
+131
+00:24:32,307 --> 00:24:40,407
+p çarpı, şeyi belirlememiz lazım, y'nin sınırlarını belirlememiz lazım.
+
+132
+00:24:40,867 --> 00:24:42,807
+y nereden nereye değişecek?
+
+133
+00:24:43,887 --> 00:24:53,447
+Şurada x eşit 3 ile x eşit y kare artı 1 denklemlerinin ortak çözümünü alırsak,
+
+134
+00:25:01,940 --> 00:25:09,300
+y eşit artı eksi kök 2 çıkacak değil mi? O halde burası eksi kök 2, şurası da artı kök 2 olacak.
+
+135
+00:25:13,395 --> 00:25:28,995
+Eksi kök 2'den artı kök 2'ye r'nin karesi yani 2 eksi y'nin parantez karesi çarpı d'ye şeklinde yazılır.
+
+136
+00:25:29,395 --> 00:25:32,695
+Gerisi de artık integrali hesaplamaktır.
+
+137
+00:25:41,203 --> 00:25:44,139
+1224 şurası 4'ye kadar olacak
+
+138
+00:26:01,652 --> 00:26:22,992
+4y, eksi 2, eksi 4 bölü 3, y küp, artı y üzeri 5 bölü 5, eksi kök 2'den artı kök 2. Bu değerleri de yerine koyarsanız, sonuç ne çıkıyormuş? 64 pi.
+
+139
+00:26:28,692 --> 00:26:39,392
+Şöyle yazalım. 64 kök 2, pi bölü 15 olarak hacim çıkıyormuş.
+
+140
+00:26:47,316 --> 00:26:48,135
+var mı sorunuz?
+
+141
+00:26:50,135 --> 00:26:52,855
+Yoksa şimdi pul yöntemine geçelim.
+
+142
+00:27:35,539 --> 00:28:02,239
+yönteminde eğer herhangi bir eksen etrafında döndüreceğimiz yüzey dönme eksenine bitişik değilse, yani dönme eksenini kesmiyorsa o zaman arada boşluklar oluşuyor ve bu tür hacimleri hesaplarken kullandığımız yöntem de pul yöntemi oluyor.
+
+143
+00:28:02,771 --> 00:28:10,771
+kesitlerimiz artık alacağım, en parçaya bölüyoruz ya, genelde integralde yaptığımız şey budur.
+
+144
+00:28:10,816 --> 00:28:31,016
+alan ya da hacim hesaplarken bölgeyi en parçaya bölüp küçük hacim bölgeleri elde etmek. Demin en parçaya bölüp de hacim bölgeleri elde ettiğimde küçük küçük disklerin hacimlerini elde ediyordum. Sonra onları entegre ederek ne yapıyordum? Büyük hacmi buluyordum.
+
+145
+00:28:31,412 --> 00:28:59,412
+Şimdi ise artık alacağım kesit bir disk değil de bir pul olacak. Pul olması ne demek? Şöyle ortasında delik olan düz şekillere pul diyoruz değil mi? Yani şeklin oluşan hacmin de içinde bir boşluk olacak. Pul yöntemi bu tür hacimleri hesaplamak için kullanılıyor. O boşluktan dolayı kesitte boşluktan dolayı...
+
+146
+00:28:59,412 --> 00:29:01,012
+kuryotemi deniyor.
+
+147
+00:29:03,251 --> 00:29:10,172
+y eşit fx ve y eşit gx fonksiyonlarını alalım. Bunların eğrileri
+
+148
+00:29:10,172 --> 00:29:13,992
+şunlar olsun.
+
+149
+00:29:14,532 --> 00:29:16,092
+Ben nasıl çizelim? Şöyle.
+
+150
+00:29:17,471 --> 00:29:20,892
+y eşit üsttekine fx demişiz.
+
+151
+00:29:21,692 --> 00:29:23,271
+fx fonksiyonu bu olsun.
+
+152
+00:29:28,147 --> 00:29:32,647
+Bu da, böyle de çok paralel oldu, böyle yapmayalım.
+
+153
+00:29:36,819 --> 00:29:37,819
+yeşilç.
+
+154
+00:29:43,635 --> 00:29:45,395
+gx eğrisi olsun.
+
+155
+00:29:45,895 --> 00:29:47,596
+x eşit a
+
+156
+00:29:51,316 --> 00:29:53,436
+x eşit b.
+
+157
+00:29:55,536 --> 00:29:58,696
+Doğrularıyla bu şekilde sınırlandıralım.
+
+158
+00:29:59,836 --> 00:30:03,836
+Şu bölgeye r bölgesi diyelim.
+
+159
+00:30:04,536 --> 00:30:07,875
+Bu r bölgesinin ama r yarı çap için kullanacağım.
+
+160
+00:30:07,996 --> 00:30:09,776
+R demeyelim, a diyelim.
+
+161
+00:30:11,196 --> 00:30:15,576
+Şu a ile gösterdiğim düzlem bölgenin
+
+162
+00:30:15,667 --> 00:30:20,787
+x ekseni etrafında döndürülmesiyle oluşan hacmi hesaplayalım.
+
+163
+00:30:26,867 --> 00:30:28,907
+x kare artı 2x, f'nin etrafında dönmü diken.
+
+164
+00:30:36,084 --> 00:31:02,663
+x eksen etrafında döndürdüğümde ne olacak? Oluşan hacimin ortasında bir boşluk çekecek. Bunu şöyle yapabiliriz. Deminki gibi yapmak istersek, disk yöntemiyle, öncelikle şu ortadaki çizgiyi düşünmeyin, şu büyük şekli gözünün alın. Bunu x eksen etrafında döndürürsem ne olacak? Bir hacim çıkacak.
+
+165
+00:31:09,652 --> 00:31:30,652
+bu büyük olan üstteki yani fonksiyonun eğrisi ne olacak? Bir hacim oluşturacak. Bunun R yarı çapı, döndüğü için R yarı çapı ne oluyordu? Dönmekselin olan uzaklıktı. Bunun R yarı çapını büyük R ile gösterdim.
+
+166
+00:31:32,652 --> 00:31:34,912
+Şimdi bir de şuna bakalım.
+
+167
+00:31:36,692 --> 00:31:38,152
+Şöyle diyelim.
+
+168
+00:31:53,652 --> 00:31:59,952
+Bir de şu y eşit g x eğrisini göz önüne alalım.
+
+169
+00:32:00,072 --> 00:32:11,492
+y eşit g x eğrisinin de x eşit a ve x eşit b doğruları ve x ekseni ile sınırlanan şu kısmını yine x ekseni etrafında döndürürsem,
+
+170
+00:32:11,492 --> 00:32:20,192
+deminki disk yöntemine göre ne olacaktır? Bu sefer bunun yarı çapı şu küçük yarı çapı olacak.
+
+171
+00:32:20,660 --> 00:32:25,880
+Çünkü bu fonksiyon bundan küçük. R ile gösterelim, küçük R ile gösterelim.
+
+172
+00:32:26,319 --> 00:32:27,759
+Ve iki hacmimizde
+
+173
+00:32:31,923 --> 00:32:34,923
+küçük R'nin kalesi dx kadar olacak.
+
+174
+00:32:37,564 --> 00:32:39,403
+Büyük R neyi eşittir?
+
+175
+00:32:40,683 --> 00:32:45,243
+fx fonksiyonuna, küçük R de gx fonksiyonu ile belirlenir.
+
+176
+00:32:45,303 --> 00:32:47,803
+Yani eşittir derken onlarla belirleniyor.
+
+177
+00:32:48,844 --> 00:32:56,064
+Dolayısıyla, şu V1 hacminden, V2 hacmini çıkararak
+
+178
+00:32:56,372 --> 00:33:01,412
+İşte şu bölgenin x eksenin etrafında oluşturduğu hacmi buluruz değil mi?
+
+179
+00:33:01,412 --> 00:33:07,672
+V hacmi ne olacak? V1-V2'ye eşit olacak.
+
+180
+00:33:09,231 --> 00:33:17,572
+Dolayısıyla V hacmini pi çarpı a'dan b'ye integral büyük reynin karesi
+
+181
+00:33:22,420 --> 00:33:25,440
+küçük R'nin karesi dx olarak yazabilirim.
+
+182
+00:33:27,740 --> 00:33:30,279
+Belirli integral sınırlar aynı.
+
+183
+00:33:30,420 --> 00:33:33,120
+Dolayısıyla ben bunları birleştirebilirim.
+
+184
+00:33:36,539 --> 00:33:40,660
+Büyük R'nin karesi x'i küçük R'nin karesi dx.
+
+185
+00:33:41,080 --> 00:33:42,840
+Bunu da şöyle yazabiliriz.
+
+186
+00:33:46,675 --> 00:33:56,915
+Büyük olan fonksiyonum, yani en dıştaki fonksiyon fx'di. fx'in karesi, eksi, gx'in karesi,
+
+187
+00:33:58,355 --> 00:34:21,716
+çarpı 2x, şöyle köşeli parantez içine yazın, çarpı 2x olarak bunu böyle formülize edebiliriz. Yani dıştaki yarı çapın oluşturacağı hacimden, içteki yarı çapın oluşturacağı hacmi, hacmi çıkararak şu bölgenin oluşturduğu hacmi böyle hesaplayabiliyoruz.
+
+188
+00:34:25,556 --> 00:34:26,815
+örnek yapalım.
+
+189
+00:35:00,628 --> 00:35:11,488
+x kare artı 1 e'cisi ve y eşit eksi x artı 3.
+
+190
+00:35:15,155 --> 00:35:23,275
+Doğrusu ile sınırlanan bölge x ekseni etrafında döndürülerek bir cisim oluşturuluyor.
+
+191
+00:35:24,715 --> 00:35:27,596
+Bu cismin hacmini hesaplayalım.
+
+192
+00:35:46,291 --> 00:36:07,872
+y artı 1 parabolu, y eşit x parabolunun y eksenin üzerinde bir birim ötelenmiş halidir. Bu parabolu neyle keseceğiz? y eşit x artı 3. Yani x artı y eşit 3 doğrusuyla keseceğiz. Bu doğruyla da kesince şöyle bir şekil çıkıyormuş.
+
+193
+00:36:12,659 --> 00:36:13,800
+şurası 3 olacak.
+
+194
+00:36:19,155 --> 00:36:27,956
+Ortak çözümlerini alırsanız, biri eksi 2, diğeri de 1 çıkacak bunların.
+
+195
+00:36:28,996 --> 00:36:32,935
+Şu bölgeyi ne yapıyoruz? x ekseni etrafında döndürüyoruz.
+
+196
+00:36:35,175 --> 00:36:45,775
+x ekseni etrafında döndüreceksem eğer, yarı çaplar ne olmalı? x ekseni ne? Dik olmalı.
+
+197
+00:36:46,420 --> 00:36:49,539
+O halde yarı çapları önce belirleyelim.
+
+198
+00:36:50,900 --> 00:36:51,960
+Büyük yarı çap,
+
+199
+00:36:53,800 --> 00:36:54,920
+R yarı çapı bu.
+
+200
+00:36:55,420 --> 00:36:57,960
+Küçük yarı çap da şu olacak.
+
+201
+00:37:01,492 --> 00:37:07,672
+O halde v, pi çarpı x nereden nereye değişecek?
+
+202
+00:37:08,292 --> 00:37:10,892
+Eksi 2'den 1'e değişecek.
+
+203
+00:37:12,552 --> 00:37:20,432
+Eksi 2'den 1'e değişirken, büyük R'nin karesi eksi küçük R'nin karesi oluyordu burası.
+
+204
+00:37:29,556 --> 00:37:35,456
+büyük R nedir? Şu doğru denklemiyle belirleniyor. Dolayısıyla y eşit ne olacak?
+
+205
+00:37:36,456 --> 00:37:39,376
+eksi x artı 3'ün karesi.
+
+206
+00:37:40,076 --> 00:37:46,155
+eksi küçük R, parabol denklemiyle belirleniyor. Bu da nedir?
+
+207
+00:37:47,756 --> 00:37:50,536
+x kare artı 1'in karesi olacak.
+
+208
+00:37:56,628 --> 00:37:57,612
+x kare artı 2x, f'
+
+209
+00:38:12,532 --> 00:38:17,212
+Şunların karelerini alıp düzenlersek ne çıkıyormuş? Ben onu doğrudan yazayım.
+
+210
+00:38:18,092 --> 00:38:23,652
+8, 6x, x kare, x, x üzeri 4 çıkıyormuş.
+
+211
+00:38:25,372 --> 00:38:26,752
+İntegralini de alalım.
+
+212
+00:38:26,752 --> 00:38:36,311
+8x, eksi, 3x kare, x küp bölü 3.
+
+213
+00:38:37,076 --> 00:38:42,096
+x üzeri 5 bölü 5, eksi 2'den 1'e kadar.
+
+214
+00:38:43,216 --> 00:38:48,376
+Sınırları da yerine yazdığımızda 117 bölü 5 pi çıkıyormuş.
+
+215
+00:39:01,076 --> 00:39:02,735
+Başka bir örnek yapalım.
+
+216
+00:39:06,452 --> 00:39:08,552
+Anladınız mı? Sorunuz var mı?
+
+217
+00:39:39,539 --> 00:39:40,980
+örneğimiz de şu olsun.
+
+218
+00:39:48,563 --> 00:40:04,783
+Y'ci dörtte bir bölgede y eşit x kare paramolu, y eşit 2x doğrusuyla sınırlanan bölge y ekseni etrafında döndürülüyor. Bu sefer y ekseni etrafında döndürülecek cismin hacmini soruyor.
+
+219
+00:40:11,827 --> 00:40:33,547
+1. dörtte bir bölgede dediği için şunu çizdik. Neyle kesiliyor bu? y eşit 2x doğrusuyla kesilecek. y eşit 2x doğrusunu da çizelim. O da bu olsun. Şu bölge. Bu y ekseni etrafında dönüyor. Bakın y ekseniyle bitişik değil.
+
+220
+00:40:35,391 --> 00:41:02,011
+kesmiyor eksen onu. Dolayısıyla yine burada ne yapacağız? Arada boşluk olacak. Pul yöntemini kullanacağız. Yine hemen yapacağınız şey şu olsun. Niye eksen etrafında dönüyor? Bir sınırları belirleyeyim. Y'nin sınırlarını zaten şurası sıfır görüyorsunuz. Bir de şunların ortak çözümünden ne çıkacak? x kare 2 çıkacak değil mi?
+
+221
+00:41:02,900 --> 00:41:04,492
+Şurası 1x2 oluyormuş.
+
+222
+00:41:08,659 --> 00:41:31,219
+Kırmızı kalemi büyük ve küçük yarı çapı için almıştım. Büyük yarı çapı R oldu. R'de nedir? Bakın parabolden y eksenine olan uzunluk yani x karedir. Küçük R ise doğrudan y eksenine olan
+
+223
+00:41:31,615 --> 00:41:43,135
+uzaklıktır. Küçük R'de neye eşit olacak? 2x'e eşit olur. V hacmi
+
+224
+00:41:49,012 --> 00:41:50,932
+y nereden nereye değişecek?
+
+225
+00:41:51,072 --> 00:41:54,212
+0'dan 2'ye kadar değişirken
+
+226
+00:41:54,212 --> 00:41:57,231
+büyük R'nin karesi
+
+227
+00:41:57,231 --> 00:41:59,172
+eksi
+
+228
+00:41:59,172 --> 00:42:01,092
+küçük R'nin karesi
+
+229
+00:42:56,563 --> 00:43:02,563
+3x ne çıkacak? Şunu 3x, bunu 5x ile çarparsak aradaki fark 2x.
+
+230
+00:43:11,987 --> 00:43:17,947
+64 bölü 15 pi çıkar.
+
+231
+00:43:19,788 --> 00:43:22,387
+Yanlış yaptık. Nerede yanlış yaptık?
+
+232
+00:43:32,083 --> 00:43:33,783
+Hocam, özür dilerim, sesim geliyor mu?
+
+233
+00:43:33,783 --> 00:43:36,023
+Ben 2'yi almıştım.
+
+234
+00:43:36,203 --> 00:43:38,903
+y-etrafında döndürecektik, ben de onu söyleyecektim.
+
+235
+00:43:39,304 --> 00:43:50,663
+Evet, y-etrafında döndürüyorum. Şurası 2'ye 4 noktası ya, ben 2'ye aldım, 4 orası. Tamamdır. Şunlar 4 olursa.
+
+236
+00:44:00,179 --> 00:44:07,719
+Özür dilerim hocam, bir şey daha söylemek istiyorum. Bir de şeyleri de değiştirmemiz lazım hocam. O fonksiyonları da çünkü y ekseni etrafına döndüreceğiz.
+
+237
+00:44:07,719 --> 00:44:09,159
+Fonksiyonları da değiştireceğiz, evet.
+
+238
+00:44:09,619 --> 00:44:13,039
+x eşittir kök y ve bir de x eşittir y bölü 2 olur nasıl?
+
+239
+00:44:13,159 --> 00:44:18,679
+Burası x uzunluğudur değil mi? x'i çekersek parabolden kök y olacak.
+
+240
+00:44:23,572 --> 00:44:32,252
+Şurası doğrudan y-x'e ne olan uzunluk olduğu için burada x nedir? y bölü 2'dir.
+
+241
+00:44:38,356 --> 00:44:39,816
+hepsini yanlış yapmışım.
+
+242
+00:44:49,492 --> 00:44:51,372
+y'nin karesi
+
+243
+00:44:51,372 --> 00:44:54,652
+eksi
+
+244
+00:44:54,652 --> 00:44:57,452
+y bölü 2'nin karesi
+
+245
+00:45:25,012 --> 00:45:26,212
+6 bölü 2, 8
+
+246
+00:45:34,452 --> 00:45:42,692
+16 bölü 3, şey, evet, 4'ün küpü.
+
+247
+00:45:43,752 --> 00:45:48,912
+16 çarpı 4, 4 ile de 12 sadeleşti, 3, 16 bölü 3 olur.
+
+248
+00:45:49,652 --> 00:45:55,372
+8, 16, 24, 8 pi bölü 3 olur.
+
+249
+00:45:56,672 --> 00:45:57,311
+Şimdi oldu.
+
+250
+00:45:59,311 --> 00:46:01,392
+Şimdi biraz ara verelim.
+
+251
+00:46:06,867 --> 00:46:11,007
+0 ile 4 arasında almamız gerekiyor. y'ye göre yaptık ya.
+
+252
+00:46:16,788 --> 00:46:32,068
+y sınırları. Şurada ben de demin x'i buldum. Bunların ortak çözümünden ne çıktı? x kare eksi 2x eşit 0 çıktı. Buradan x eşit 0 ve x eşit ne çıkıyor? 2 çıkıyor.
+
+253
+00:46:32,463 --> 00:46:38,563
+Bunlara karşı gelen y değeri nedir? y eşit x kare ikisi herhangi birinde yerine koyun.
+
+254
+00:46:39,023 --> 00:46:42,724
+0 için 0 çıkacak, 2 için de burası 4 çıkacak.
+
+255
+00:46:43,123 --> 00:46:49,023
+y'nin sınırları, çünkü ben şu şekli parçalarken ne yapıyorum?
+
+256
+00:46:49,023 --> 00:46:52,583
+y eksenine dik doğrular çiziyorum değil mi?
+
+257
+00:46:52,963 --> 00:46:57,184
+Dolayısıyla y'nin değişim aralığı 0'dan 4'e kadar.
+
+258
+00:46:57,363 --> 00:46:59,603
+Yani y'nin değişim aralığını alıyorum.
+
+259
+00:47:00,179 --> 00:47:09,559
+R'leri de yine yazarken, R dediğim şey, şeklin dönme eksenine olan uzaklığı oluyordu.
+
+260
+00:47:09,952 --> 00:47:33,132
+Bakın şu noktanın dönme ekseni y'ye olan uzaklığı nedir? x kadardır. Peki ben bu x'i nasıl belirlerim? x eşit burada kök y olacağı için bu büyük R kök y kadardır. Karesini alacağım. Küçük y de y bölü 2 kadardır. Yani oradaki x de y bölü 2 kadar.
+
+261
+00:47:37,952 --> 00:47:38,912
+sonuç çıkıyor.
+
+262
+00:47:40,072 --> 00:47:43,271
+Ya bu sonuç doğru. Demin daldım gittim öyle.
+
+263
+00:47:44,552 --> 00:47:45,972
+Onu sildik zaten.
+
+264
+00:47:47,972 --> 00:47:49,012
+Orada şey,
+
+265
+00:47:50,231 --> 00:47:55,332
+şu bulduğum noktayı sanki y'yi bulmuşum gibi kafam karıştı öyle kullandım.
+
+266
+00:47:55,771 --> 00:47:58,032
+Bir de şeyleri de yanlış yazdım.
+
+267
+00:47:58,112 --> 00:47:59,432
+R'leri de yanlış yazdım.
+
+268
+00:48:00,432 --> 00:48:02,311
+Şimdi biraz ara verelim.
+
+269
+00:48:05,780 --> 00:48:20,380
+aradan sonra da silindirik kabuk yöntemini vereceğim. Aslında en şey hacim. Biraz zor. 10 dakika da verelim.
+
+270
+00:59:01,204 --> 00:59:03,104
+Hazırsanız devam edelim.
+
+271
+00:59:23,219 --> 00:59:33,719
+Burada bir tane de örnek yazmışım ama cevabını vermişim. Siz onunla uğraşırsınız. Çözemezseniz yine birlikte çözeriz. Şimdi gelelim silindirin kabuk yöntemine.
+
+272
+00:59:48,851 --> 00:59:53,131
+kabuk yöntemi de deniyor kısaca ya da silindirik kabuklar diyoruz buna.
+
+273
+00:59:59,572 --> 01:00:01,572
+x fonksiyonunun grafiği
+
+274
+01:00:01,572 --> 01:00:07,012
+şöyle düzgün çizeyim, bir türlü tahtayı güzel çizemiyoruz.
+
+275
+01:00:22,164 --> 01:00:23,164
+şöyle bir
+
+276
+01:00:23,164 --> 01:00:28,364
+y eşit fx fonksiyonu alalım.
+
+277
+01:00:29,264 --> 01:00:32,284
+Bunu yine x eşit a
+
+278
+01:00:35,795 --> 01:00:38,195
+x eşit b doğrularıyla sınırlayalım.
+
+279
+01:00:39,495 --> 01:00:46,655
+x eşit a ve x eşit b doğruları bir d eşit fx fonksiyonu ve x ekseniyle sınırlı şu bölgeyi
+
+280
+01:00:46,655 --> 01:00:55,115
+y ekseni etrafında döndürerek bir döner cisim elde edebiliriz.
+
+281
+01:00:55,115 --> 01:00:57,675
+Bunu y ekseni etrafında döndüreceğim.
+
+282
+01:01:06,387 --> 01:01:07,208
+yani şunu
+
+283
+01:01:11,219 --> 01:01:16,619
+x eksen etrafında döndürürsek bunu disk yöntemiyle kolayca zaten hesaplayabiliriz.
+
+284
+01:01:17,500 --> 01:01:23,979
+Şu bölgeyi y eksen etrafında döndürerek oluşturacağımız hacmi hesaplamak istiyoruz.
+
+285
+01:01:37,619 --> 01:01:40,059
+Yine aslında şunu yapıyoruz.
+
+286
+01:01:41,119 --> 01:01:45,539
+Şu bölgeyi el tane eşit parçaya bölüyoruz.
+
+287
+01:01:45,819 --> 01:01:47,840
+Ben eşit parçalara bölmeyeceğim.
+
+288
+01:01:48,000 --> 01:01:53,079
+Siz görün diye bu parçalardan bir tanesini çok büyük seçeceğim.
+
+289
+01:01:54,840 --> 01:01:56,519
+Şöyle parçalara böldük.
+
+290
+01:01:57,519 --> 01:02:00,779
+Ben şu parçayı şöyle büyük alayım.
+
+291
+01:02:03,443 --> 01:02:05,684
+ya da şöyle şuradan alabilirim.
+
+292
+01:02:10,068 --> 01:02:11,688
+adı büyük alayım, şöyle alayım.
+
+293
+01:02:14,608 --> 01:02:19,807
+Şurası x i x i bir noktası, burası da x i noktası olsun.
+
+294
+01:02:28,692 --> 01:02:41,011
+bu parçanın dönüşüyle ilgilenelim. Tamam mı? Burada bu parçayı y eksen etrafında döndürdüğünde ne oluyor? Onu bir görelim. Şu aralıkta bir ci noktası seçelim.
+
+295
+01:02:45,684 --> 01:03:07,664
+arası da ne olacaktır? fci olacaktır. Onu buraya çizmeyeyim. Onu öylece görebileceğiz. Şimdi şunu düşünüyoruz. Şu küçük parçayı y ekseni etrafında döndürüyorum. Bunu y ekseni etrafında döndürürsem,
+
+296
+01:03:14,483 --> 01:03:15,123
+oldu.
+
+297
+01:03:40,596 --> 01:03:42,596
+şunun eşitini çizmeye çalıştım.
+
+298
+01:03:53,876 --> 01:04:04,276
+Keşke bunu yukarıda alsaydım. Şu parçayı burada değildi. Siz nasılsa yazmıyorsunuz. Ben bu parçayı burada değil de şurada alırsam daha güzel göstereceğim.
+
+299
+01:04:04,276 --> 01:04:14,756
+i-1 burası olsun. i de burası olsun. Arada bir de ci noktası seçtim. Bunu yukarıya yazayım. Karışmasın.
+
+300
+01:04:19,891 --> 01:04:22,891
+bu noktayı kullanacağım. O halde
+
+301
+01:04:38,452 --> 01:04:49,372
+iki parçayı döndürdüm. Şunları silelim, temizleyelim. Arada bu güzel görünsün. Şurayı alayım oğlum.
+
+302
+01:05:05,204 --> 01:05:05,704
+Bakın
+
+303
+01:05:14,291 --> 01:05:15,532
+şöyle tabi ki
+
+304
+01:05:20,403 --> 01:05:30,744
+bir silindir oluştu. Şu kırmızıyla gösterdiğimiz silindir oldu. Şuraya çizecek olursam,
+
+305
+01:05:36,851 --> 01:05:44,891
+şöyle bir silindir oldu. Şu seçtiğim parça değil mi? Şimdi bu silindiri düzleme açalım.
+
+306
+01:05:50,804 --> 01:05:58,364
+açtığımda şu ön yüzü bir dikdörtgen olacak. Bu silindirin bir nesi var? Genişliği var, kalınlığı var.
+
+307
+01:06:02,291 --> 01:06:07,831
+Yani şurası kadar. Bu da nedir? Delta x i'dir.
+
+308
+01:06:21,268 --> 01:06:29,307
+yüksekliği var. Yüksekliği ne kadardır? fc'liği kadardır.
+
+309
+01:06:42,835 --> 01:06:57,255
+Burası ya da burası fark etmez. f c'ye kadar oldu yüksekliği. Genişliği dedik ki, şurası delta x i kadar.
+
+310
+01:07:06,739 --> 01:07:11,539
+D'nin kremesi var. Döndürdüğüm zaman bir yarı çapı olacak değil mi?
+
+311
+01:07:11,979 --> 01:07:15,719
+Şöyle renkli kalem bulsam aslında çok güzel olacak.
+
+312
+01:07:16,899 --> 01:07:20,859
+Dönme eksenine uzaklığı R kadar olacak.
+
+313
+01:07:21,519 --> 01:07:24,699
+Bu R'yi de döndürdüğümde nereye denk gelecek?
+
+314
+01:07:29,523 --> 01:07:30,583
+şuna denk gelecek.
+
+315
+01:07:31,663 --> 01:07:32,483
+şuna bakın.
+
+316
+01:07:36,916 --> 01:07:39,896
+Şurada bir R'si var. Bunun yarı çapı var değil mi?
+
+317
+01:07:50,036 --> 01:08:14,895
+Şimdi düşünün, silindirin tabanının bunu açtığım zaman şu uzunluk, yan uzunluk neye eşit olacak? Tabanın çevresine eşit olacak değil mi? Yarı çapı R olduğuna göre tabanın çevresini nasıl yazabilirim şu uzunluğu yani?
+
+318
+01:08:26,163 --> 01:08:27,923
+x olarak yazabilirim değil mi?
+
+319
+01:08:36,659 --> 01:08:43,380
+Şimdi bakın, şu dikdörtgenler prizmasının hacmini şunları kullanarak hesaplayabiliriz.
+
+320
+01:08:43,940 --> 01:08:46,180
+Delta, şöyle yapayım.
+
+321
+01:08:47,539 --> 01:08:53,260
+Delta V hacmi, şunun hacmi yani, neye eşit olacak?
+
+322
+01:08:54,139 --> 01:08:57,139
+Taban alanı çarpı yüksekliğe eşit olacak.
+
+323
+01:09:07,283 --> 01:09:19,143
+öyledir. Taban alanı çarpı yüksekliktir. Şimdi bakalım. Taban alanı nedir? Uzunluğu 2p, r. Genişliği de delta x'i olan dikdörtgendir.
+
+324
+01:09:26,452 --> 01:09:30,332
+Yüksekliği nedir? fci kadardır.
+
+325
+01:09:38,355 --> 01:09:53,335
+Bu halde, R nedir? R neye eşittir? R uzunluğu da bakın, şu yüksekliği dönme eksenine olan uzaklığıdır.
+
+326
+01:09:57,268 --> 01:10:20,708
+Yani, şu noktayı c'yi seçmiştik ya, f c'yi de bana yüksekliği veriyor. O halde şu aradaki x uzunluğu r'yi verecek bana. Yani şurası c'yi ya da x de diyebiliriz.
+
+327
+01:10:22,036 --> 01:10:26,036
+r'yi ci olarak da yazabilirim.
+
+328
+01:10:31,315 --> 01:10:35,315
+yengisinin etrafında döndürdüğünde ne oldu?
+
+329
+01:10:35,315 --> 01:10:41,315
+Ben şuradan küçük bir parça aldım, yengisinin etrafında döndürdüm.
+
+330
+01:10:41,315 --> 01:10:46,315
+Bunun kalınlığı olan, yengisinin etrafında döndürdüğünde ne oldu?
+
+331
+01:10:46,315 --> 01:10:49,315
+Kalınlığı olan bir silindir oldu.
+
+332
+01:10:49,315 --> 01:10:56,315
+O silindiri düzleme açtığımız zaman, bir dikdörtgenler prizması çıkıyor.
+
+333
+01:10:57,684 --> 01:11:19,500
+Şimdi mesela şu dikdörtgen kağıdı ben şöyle kıvırırsam silindir bir şekil çıkacak. E bunun bir de şurada kalınlığı olsaydı eğer, yani ben bir defteri ya da bir kitabı kıvırsaydım bir kalınlığı olacaktı. Onu açtığım zaman da dikdörtgenler prizması çıkacak. Dolayısıyla...
+
+334
+01:11:19,572 --> 01:11:38,572
+Şöyle, burada küçük parçalar halinde bu fx uzunluğunu parçalayıp da döndürdüğümüzde iç içe silindirler çıkacak. Ama kalınlığı olan silindirler olacak bunlar.
+
+335
+01:11:44,115 --> 01:11:50,095
+şu parçayı alırsanız bunu döndürdüğünüzde şöyle bir şey çıkacak.
+
+336
+01:11:56,692 --> 01:12:15,692
+bunun kalınlığı var. Böyle böyle iç içe silindirler olur. Her bir kabuğun hacmini hesaplayıp da toplarsanız şu aradaki boşluğu doğrudan 60 olursunuz. Her bir kabuğun hacmini hesaplayıp da bunları topladığınızda işte kabuk yöntemiyle
+
+337
+01:12:16,115 --> 01:12:18,456
+hacme hesaplamış oluyorsunuz.
+
+338
+01:12:18,536 --> 01:12:26,456
+V hacme, şunların toplamını alıp limitini aldığınızda nasıl yazarsınız belirli integral'e?
+
+339
+01:12:26,456 --> 01:12:30,456
+Bir kere ben parçalamaya şöyle...
+
+340
+01:12:30,707 --> 01:12:56,327
+y eşit fx eğrisi var. Ben bunu nasıl parçalıyorum? ab aralığını m parçaya bölerek yani a'dan b'ye kadar ben bunu bölebilirim. O halde integral aralığım a'dan b'ye kadar olacak. Şu 2p sabit olduğu için bunu integralin dışına yazalım. Ne kaldı geriye? R kaldı. R'de şurada dedim ki yüksekliği
+
+341
+01:12:56,851 --> 01:13:01,532
+yükseklikten dönme eksenine kadar olan uzaklıktı.
+
+342
+01:13:01,851 --> 01:13:04,072
+Ki bunu da x ile gösterirsek.
+
+343
+01:13:05,192 --> 01:13:11,452
+x çarpı fci, yani yükseklik fci dedik.
+
+344
+01:13:12,659 --> 01:13:20,279
+Biz bunu toplam aldığımızda artık c'yi, hani nerede seçtiğimizin önemi olmuyordu ya Riemann toplamlarında.
+
+345
+01:13:20,799 --> 01:13:27,799
+c'yi noktası olarak şu kenarları seçebilirim. Dolayısıyla onu da fx olarak yazabilirim.
+
+346
+01:13:29,379 --> 01:13:35,279
+Çarpı, delta x'i de integralde nasıl yazıyoruz? dx olarak yazıyoruz.
+
+347
+01:13:35,279 --> 01:13:36,680
+İşte bakın.
+
+348
+01:13:37,332 --> 01:13:59,192
+y x'e etrafında döndürüldüğünde bir y eşit fx fonksiyonunun eğrisi x eşit a, x eşit b doğrularıyla sınırlandırılıp y x'e etrafında döndürüldüğünde oluşan iç içe kabukları hesapladık. Yani iç içe silindirleri hesapladık biz.
+
+349
+01:14:08,500 --> 01:14:34,799
+bir silindirin hacmini topladığımızda, işte kabuk yöntemiyle o hacmi buluyoruz. Öbür türlü aradaki boşluğu çıkarmam gerekecekti değil mi? Büyük R'nin oluşturacağı hacimden, küçük R'nin oluşturacağı hacmi bulup çıkarmam gerekiyordu. Kabuk yönteminde ise bunu yx'enin etrafında döndürüyorsam, bakın her şey x'e göre yapılmış oluyor.
+
+350
+01:14:36,500 --> 01:14:59,760
+döndürdüğümde de bunların hepsi y'ye göre olacak. Bir terslik oluyor yani. Örnek yapalım. Anladınız mı bilmiyorum. Yani anlatması zor bir konu ama anladığınızda da çok kolay bir integral, hacim bulma yöntemidir. Anlayabildiniz mi? Sorunuz var mı? Bir düşünün, sorun.
+
+351
+01:15:02,036 --> 01:15:08,695
+Bunu anlamanız önemli. Bir daha dönüp anlatamayacağım çünkü. Şu anda sorularınız varsa sorun.
+
+352
+01:15:57,971 --> 01:15:59,731
+şurada x kare çöpüdır.
+
+353
+01:16:04,564 --> 01:16:07,504
+x kare artı 2x, fx kavuk yüksekliğidir.
+
+354
+01:16:15,412 --> 01:16:18,092
+Bunların çarpımı aslında neyi veriyor?
+
+355
+01:19:16,948 --> 01:19:19,228
+Ben konuşurken gitti internet.
+
+356
+01:19:20,308 --> 01:19:22,148
+Şimdi yeniden örneğe dönelim.
+
+357
+01:19:23,788 --> 01:19:25,167
+Şu an sorun yok sanıyorum.
+
+358
+01:19:32,532 --> 01:19:47,572
+y eşit kök x eğrisi x ekseni ve x eşit 4 doğrularıyla sınırlandırılıyor. Şu bölge y ekseni etrafında döndürülüyor.
+
+359
+01:19:48,891 --> 01:19:59,511
+Hacmi hesaplayacağız. Kabuk yönteminde hacim hesaplarken şunu yapın. Önce bir kabuk seçim bir fark. Şöyle.
+
+360
+01:20:01,939 --> 01:20:06,939
+Burada bunun kabuk genişliği ne olacak? delta x kadar olacak.
+
+361
+01:20:08,000 --> 01:20:15,840
+Dönme eksenimiz y, bir tane çizgi de seçseniz olur.
+
+362
+01:20:16,219 --> 01:20:19,479
+Dönme eksenimiz y, şu ne olacak?
+
+363
+01:20:20,479 --> 01:20:22,239
+Kabuğun yüksekliği olacak.
+
+364
+01:20:22,239 --> 01:20:24,119
+H yüksekliğin bu olacak.
+
+365
+01:20:24,724 --> 01:20:30,524
+h yüksekliğinin dönme eksenine uzaklığı R'de buna eşit olacak.
+
+366
+01:20:31,144 --> 01:20:36,384
+Dolayısıyla R, x'e eşit olur.
+
+367
+01:20:37,463 --> 01:20:42,824
+h değiştikçe çünkü R'de ne olacak? x'e bağlı olarak değişecek.
+
+368
+01:20:43,924 --> 01:20:46,084
+h yüksekliğimde neye eşittir?
+
+369
+01:20:46,604 --> 01:20:50,724
+Fonksiyona bağlı. O halde fonksiyon y nedir? Kök x'dir.
+
+370
+01:20:54,547 --> 01:20:59,007
+v hacmi 2pi çarpı
+
+371
+01:20:59,007 --> 01:21:04,868
+sınırlar nereden nereye? x sıfırdan 4f.
+
+372
+01:21:06,807 --> 01:21:12,987
+x çarpı R, yani kabuk yarı çapı R, x'e eşit.
+
+373
+01:21:13,587 --> 01:21:17,827
+Çarpı kabuk yüksekliği neye eşit? Kök x'e eşit.
+
+374
+01:21:19,487 --> 01:21:20,688
+Kabuk genişliği de
+
+375
+01:21:21,300 --> 01:21:26,300
+x kare artı 2x, f' işte bunu yapıp da integralini alırsanız,
+
+376
+01:21:30,707 --> 01:21:34,207
+1 bölü 2 artı 1, 3 bölü 2 yapar değil mi?
+
+377
+01:21:35,587 --> 01:21:37,307
+Bu da ne olacak? 2 pi.
+
+378
+01:21:38,927 --> 01:21:43,608
+Üzerini 1 artırırsam 5 bölü 2 olur bu.
+
+379
+01:21:45,288 --> 01:21:51,207
+2 bölü 5, x üzeri 5 bölü 2, 0'dan 4'e kadar.
+
+380
+01:21:53,987 --> 01:21:57,507
+128 bölü 5 pi çıkıyormuş buradan da.
+
+381
+01:22:02,707 --> 01:22:07,227
+diğerlerini de yazdığınızda hacim karşınıza çıkıyor.
+
+382
+01:22:10,387 --> 01:22:18,207
+y-x'e etrafında döndürünce, bakın fonksiyon y eşit efekt şeklinde veriliyor.
+
+383
+01:22:20,051 --> 01:22:30,171
+bölge x doğrularıyla sınırlanıyor, x ekseniyle sınırlanıyor ama dönme ekseni x değil, y ekseni etrafında dönüyor.
+
+384
+01:22:30,171 --> 01:22:35,431
+Yani normalde şunu x ekseni etrafında döndürüdüğü hacim oluşturursunuz ama başka bir hacim olur.
+
+385
+01:22:36,171 --> 01:22:39,191
+y ekseni etrafında dönünce de bambaşka bir hacim oluyor.
+
+386
+01:22:39,572 --> 01:22:41,471
+y ekseni etrafında dönüyor.
+
+387
+01:22:43,051 --> 01:22:43,851
+Dolayısıyla
+
+388
+01:22:44,532 --> 01:22:54,012
+kabuk yöntemini kullanmak burada avantajlı oluyor. Kabuk yöntemi kullanarak integralı bu şekilde hesaplayabiliyoruz.
+
+389
+01:23:15,859 --> 01:23:19,180
+dönme için kabuk yöntemini de yazalım.
+
+390
+01:23:50,292 --> 01:23:51,180
+birçin.
+
+391
+01:23:58,707 --> 01:24:19,427
+dönerse, döndürülürse, x ekseni etrafında döndürürsek, formülü nasıl yazarız ona bakalım. Bu durumda da y eşit fx değil de x eşit gy fonksiyonunu alalım.
+
+392
+01:24:29,876 --> 01:24:31,136
+fonksiyonumuz bu olsun.
+
+393
+01:24:31,675 --> 01:24:32,615
+Biraz kötü çizdi.
+
+394
+01:24:38,963 --> 01:24:43,003
+Şu x eşit g, y diyelim.
+
+395
+01:24:44,623 --> 01:24:54,844
+Bunu y eşit c ve y eşit d doğrularıyla sınırlandıralım.
+
+396
+01:24:56,783 --> 01:25:01,224
+Ve şu bölgeyi x ekseni etrafında döndürelim.
+
+397
+01:25:05,779 --> 01:25:22,159
+Kabuk yöntemiyle bunu nasıl yaparız? Kabuğu seçiyorum. Kabuk şuradan seçtim. Bir parça seçtim. Bunun kabuk genişliği neye eşit oldu? Delta y'ye eşit oldu.
+
+398
+01:25:29,076 --> 01:25:35,076
+yüksekliği neye eşit olacak? Burada genişlik gibi duruyor ama yine de h diyelim.
+
+399
+01:25:36,416 --> 01:25:38,416
+h yüksekliği neye eşit olacak?
+
+400
+01:25:45,363 --> 01:25:46,943
+x eksen etrafında döndüreceğim.
+
+401
+01:25:47,384 --> 01:25:52,804
+h yüksekliği, şu x uzunluğu, o da nedir?
+
+402
+01:25:53,463 --> 01:25:55,763
+y, y'ye eşit olacak.
+
+403
+01:25:58,144 --> 01:26:02,304
+x eksen etrafında döndürdüğüm için, yani yüksekliği
+
+404
+01:26:03,731 --> 01:26:05,971
+Şunun içini de alalım yüksekliği.
+
+405
+01:26:06,631 --> 01:26:11,912
+Yüksekliğin dönme ekserine olan uzaklığını R olarak göstermiştik.
+
+406
+01:26:12,271 --> 01:26:14,271
+Bu durumda R neye eşit olacak?
+
+407
+01:26:15,452 --> 01:26:17,152
+Y'ye eşit olacak değil mi?
+
+408
+01:26:19,811 --> 01:26:26,912
+Çünkü Y değiştikçe, yani kabuk şuralara yaklaştıkça, Y de değişecek, yarışak değişecek.
+
+409
+01:26:27,551 --> 01:26:28,432
+Dolayısıyla
+
+410
+01:26:29,555 --> 01:26:31,635
+b hacmi şöyle olur.
+
+411
+01:26:32,895 --> 01:26:33,595
+2p
+
+412
+01:26:33,595 --> 01:26:36,415
+y nereden nereye değişiyor?
+
+413
+01:26:36,615 --> 01:26:37,275
+c'den
+
+414
+01:26:37,275 --> 01:26:39,675
+d'ye değişecek.
+
+415
+01:26:41,036 --> 01:26:41,595
+kabuk
+
+416
+01:26:41,595 --> 01:26:46,995
+yarı çapı nedir?
+
+417
+01:26:55,764 --> 01:27:20,543
+yüksekliği yarı çapı. Yüksekliği yarı çapı y kadar. Yüksekliği g y kadar olacak. Bir de kalınlık olacak. Bunu da dy ile gösterirsek. 2pi y çarpı g y.
+
+418
+01:27:21,876 --> 01:27:25,076
+çarpı dy olarak yazabiliriz.
+
+419
+01:27:26,756 --> 01:27:35,156
+Yani x eksenine göre döndüreceksem o zaman fonksiyon bir kere x eşit gy şeklinde verilmeli.
+
+420
+01:27:38,015 --> 01:27:40,536
+Birisi de zaten aynı şekilde.
+
+421
+01:27:41,376 --> 01:27:46,275
+Ne yapıyorum? Buradan bir parça kabuk seçip onu döndürüyorum.
+
+422
+01:27:46,804 --> 01:28:00,504
+Tabuğun yüksekliğinin, genişliğinin daha doğrusu dy'ye eşit olduğunu görüyorum. Yüksekliği dy, yarı çapı da r olarak, yani x olarak, y olarak karşıma çıkıyor.
+
+423
+01:28:31,988 --> 01:28:36,807
+Şurada bir örneğimiz var ama bu örnek biraz karışık gibi geldi bana ya.
+
+424
+01:28:54,707 --> 01:28:56,307
+Ben şu alttaki örneği yapacağım.
+
+425
+01:28:57,067 --> 01:29:11,608
+Birinci dörtte bir bölgede y eşit x kare parabolu, y ekseni ve y eşit 1.
+
+426
+01:29:12,327 --> 01:29:18,007
+Doğrusuyla çevrelenen bölge x eşit 2 doğrusu etrafında döndürülüyor.
+
+427
+01:29:22,003 --> 01:29:24,744
+Şunu kabaca çizebilir miyiz şuraya?
+
+428
+01:29:25,724 --> 01:29:29,384
+y eşit x kare, birinci dörtte bir bölge dedi, burada çizeceğim.
+
+429
+01:29:29,904 --> 01:29:36,923
+y eşit x kare parabolu, y ekseni ve y eşit bir doğrusu.
+
+430
+01:29:36,963 --> 01:29:40,064
+y eşit bir doğrusu da şu doğru olsun, şu kısım.
+
+431
+01:29:41,224 --> 01:29:45,663
+Bunu x eşit iki doğrusu etrafında döndürüyorum.
+
+432
+01:29:46,324 --> 01:29:48,064
+x eşit iki doğrusu nedir?
+
+433
+01:29:48,064 --> 01:29:49,463
+Şu doğrudur.
+
+434
+01:29:50,515 --> 01:30:09,635
+etrafında döndürerek bir cisim üretiliyor. Cismin hacmini bulunuz. Kabuk yöntemiyle yapmak istersek ne olacak? Şöyle bir kabuk seçelim. Bunu
+
+435
+01:30:15,699 --> 01:30:18,719
+x kare artı 2x80'i etrafında döndürmek gerekirdi.
+
+436
+01:30:33,971 --> 01:30:38,231
+Örnekle bu örnek birazcık şey, ters gibi geldi bana.
+
+437
+01:30:57,076 --> 01:31:05,556
+yapabiliriz. Burada pul yöntemini kullanabiliriz. Ancak ben öbür türlü nasıl yapılır ona bakmak istiyorum.
+
+438
+01:31:34,612 --> 01:31:36,912
+yarı çap burası kadar oluyor ama.
+
+439
+01:31:38,192 --> 01:31:40,152
+O zaman şöyle ziçtik.
+
+440
+01:31:59,667 --> 01:32:02,707
+x yüksekliğine eşit olacak. x yüksekliği
+
+441
+01:32:06,612 --> 01:32:08,364
+1x,
+
+442
+01:32:15,891 --> 01:32:25,612
+y eşit 1, y eşit burada nedir? x kare 1 eksi x kare eşit olur. R yarı çapı,
+
+443
+01:32:32,307 --> 01:32:33,899
+x kare artı 2x, f'
+
+444
+01:32:45,171 --> 01:32:49,331
+sonluklar, şuradaki x'leri ben neye göre yazacağım?
+
+445
+01:33:05,971 --> 01:33:08,051
+Önce isterseniz şey yöntemiyle yapalım.
+
+446
+01:33:08,832 --> 01:33:12,572
+Pol yöntemiyle yapalım. Burada niye şey yapamadık?
+
+447
+01:33:15,492 --> 01:33:18,652
+Büyük yarı çapımız bu, küçük yarı çapımız bu.
+
+448
+01:33:19,391 --> 01:33:23,152
+Önce pol yöntemiyle bir yapalım. Sonuç ne çıkıyor? Ona göre de bakalım.
+
+449
+01:33:25,291 --> 01:33:27,152
+Pol yöntemiyle yaparsak.
+
+450
+01:33:37,684 --> 01:33:43,923
+d hacmi, pi çarpı, nereden nereye? y sıfırdan bire kadar değişecek.
+
+451
+01:33:45,123 --> 01:33:52,904
+Büyük R'nin karesi, büyük R neye eşit? Şu iki uzunlukta nedir? y eşit, x eşit 2'dir değil mi?
+
+452
+01:33:54,943 --> 01:34:00,984
+2'nin karesi, eksi, küçük R'nin uzunluğu, küçük R nedir?
+
+453
+01:34:03,252 --> 01:34:05,552
+x eşit kök y'dir.
+
+454
+01:34:20,916 --> 01:34:45,131
+x kare artı 2x, f'
+
+455
+01:34:27,699 --> 01:34:35,539
+Şurası 4-y, integralini alırsak 4y-y kare bölü 2, sıfırdan bire.
+
+456
+01:34:36,000 --> 01:34:38,059
+Yerlerine de koyduğunda ne olacak?
+
+457
+01:34:38,639 --> 01:34:44,780
+4-y, eksi 1 bölü 2, yani 4-1 bölü 2'den 8, 7 bölü 2 olur.
+
+458
+01:34:48,275 --> 01:34:53,915
+7 bölü 2 pi çıkar ama 13 bölü 6 pi birim.
+
+459
+01:34:56,036 --> 01:34:59,315
+Biz burada neyi yanlış alıyoruz peki?
+
+460
+01:34:59,956 --> 01:35:02,796
+x eşit 2 doğrusu etrafında döndürüyorum.
+
+461
+01:35:08,212 --> 01:35:14,352
+2'nin kareti eksi. x eşit ne olacaktır burada?
+
+462
+01:35:17,172 --> 01:35:19,112
+Kök y kadar olacak.
+
+463
+01:35:34,452 --> 01:35:35,244
+2x,
+
+464
+01:36:10,515 --> 01:36:10,876
+O zaman.
+
+465
+01:36:37,876 --> 01:36:38,876
+çöp.
+
+466
+01:37:02,323 --> 01:37:05,403
+4 bölü 4 olacak.
+
+467
+01:37:52,115 --> 01:37:56,056
+2, y eşit 1.
+
+468
+01:37:57,136 --> 01:38:03,476
+x kare parabolu, x2 doğrusu etrafında döndürülecek.
+
+469
+01:38:03,855 --> 01:38:07,255
+Yani y eksen etrafında döndürülüyormuş gibi yapacağız.
+
+470
+01:38:07,675 --> 01:38:14,476
+y eksen etrafında döndürürken, 2p, ne yapıyorduk?
+
+471
+01:38:14,556 --> 01:38:16,076
+Sınırları x'e göre yazıyorum.
+
+472
+01:38:16,076 --> 01:38:19,235
+x nereden nereye değişecek bu durumda?
+
+473
+01:38:26,644 --> 01:38:29,703
+1, 0'dan bire kadar değişecek.
+
+474
+01:38:36,340 --> 01:38:38,699
+Şurası x olacak, değil mi?
+
+475
+01:38:40,699 --> 01:38:41,979
+x çarpı
+
+476
+01:38:41,979 --> 01:38:46,920
+fx
+
+477
+01:38:46,920 --> 01:38:50,619
+ki o da nedir? x karedir.
+
+478
+01:38:55,155 --> 01:38:57,015
+yok şey var.
+
+479
+01:38:59,416 --> 01:39:01,175
+Şu yarı çap uzunluğu nedir?
+
+480
+01:39:01,315 --> 01:39:02,755
+2-y karedir.
+
+481
+01:39:06,899 --> 01:39:11,199
+2x, x kare çarpı dx olacak.
+
+482
+01:39:18,452 --> 01:39:41,012
+x eksi x küp, 2x kare, x kare oldu. x üzeri 4 bölü 4, 0'dan bire, 1 eksi 1 bölü 4, 3 bölü 4.
+
+483
+01:39:46,612 --> 01:39:50,311
+4 yani 3 bölü 2 pi çıkıyor. Yine 3 bölü 2 buldum.
+
+484
+01:39:52,512 --> 01:39:54,772
+Niye orada öyle yazmışız?
+
+485
+01:40:01,844 --> 01:40:03,500
+Dörme eksimine.
+
+486
+01:40:08,243 --> 01:40:09,243
+çürükler.
+
+487
+01:40:13,587 --> 01:40:14,268
+x kare artı 2x.
+
+488
+01:40:53,300 --> 01:40:53,979
+İki no.
+
+489
+01:41:01,460 --> 01:41:01,960
+bir put.
+
+490
+01:41:12,340 --> 01:41:15,420
+ya da niye biz bunu kabuk yöntemiyle yapıyoruz?
+
+491
+01:41:26,068 --> 01:41:27,667
+Hocam, özür dilerim, sesim geliyor mu?
+
+492
+01:41:28,608 --> 01:41:29,347
+Geliyor canım.
+
+493
+01:41:30,188 --> 01:41:33,347
+Hocam, sonuç 7 pi bölü 2 mi çıkacak acaba?
+
+494
+01:41:36,308 --> 01:41:39,868
+Şeyle yapınca öyle, 7 pi bölü 2 mi buldun?
+
+495
+01:41:40,868 --> 01:41:43,688
+Evet hocam, 7 pi bölü 2 ama ben pull'dan yaptım hocam.
+
+496
+01:41:44,708 --> 01:41:45,587
+Neyle yaptın?
+
+497
+01:41:46,355 --> 01:41:47,795
+Pol yöntemiyle yaptım hocam.
+
+498
+01:41:47,795 --> 01:41:52,635
+Pol yöntemiyle, ben de pol yöntemiyle yaptım. Yani silindirik kabuk buna uygulayamıyorum.
+
+499
+01:41:52,775 --> 01:42:01,456
+Çünkü silindirik kabuk uygulamak için bunu x eksenine paralel olan bir doğru etrafında döndürmem daha uygun olacak.
+
+500
+01:42:02,415 --> 01:42:09,795
+Pol yöntemiyle yapınca da şurası büyük R, şurası da küçük R oluyor değil mi?
+
+501
+01:42:11,796 --> 01:42:18,656
+y nereden nereye değişiyor? 0'dan bire kadar değişiyor. O zaman pi ile çarpıyoruz.
+
+502
+01:42:19,956 --> 01:42:25,036
+R 2'dir. 2'nin karesi eksi.
+
+503
+01:42:26,416 --> 01:42:30,056
+R nedir? 2 eksi x karedir.
+
+504
+01:42:35,539 --> 01:43:02,960
+x kare'si dx şeklindedir, değil mi? Böyle yapınca, 4 eksi, şuradan ne gelecek? 4 gelecek, gidecek bu dörtler. Sonra ne gelir burada? 2, 4x kare artı olacak. Bir de artı x üzeri 4'ten eksi x üzeri 4 olacak. Şunlar gitti sadece.
+
+505
+01:43:03,956 --> 01:43:12,175
+integralini aldığımızda 4 bölü 3x küp, eksi x üzeri 5 bölü 5 çıkıyor sıfırdan bire.
+
+506
+01:43:12,916 --> 01:43:14,815
+Bir de pi çarpanımız var.
+
+507
+01:43:17,015 --> 01:43:21,956
+Şurası 4 bölü 3, eksi 1 bölü 5.
+
+508
+01:43:23,416 --> 01:43:29,036
+20 eksi 3 bölü 15'den.
+
+509
+01:43:29,376 --> 01:43:33,656
+kaç oldu? 17 bölü 15 pi oldu.
+
+510
+01:43:40,724 --> 01:43:46,644
+Burada. Yani oraya yazdığım sonuçla aynı şey çıkmıyor. Sen de başka bir sonuç buldun değil mi?
+
+511
+01:43:51,252 --> 01:43:56,292
+4'ün karesi, 2'nin karesi, 4.
+
+512
+01:44:03,731 --> 01:44:14,220
+2-2
+
+513
+01:44:17,652 --> 01:44:18,432
+x üzeri 4
+
+514
+01:44:24,404 --> 01:44:26,404
+4 bölü 3x küp
+
+515
+01:44:26,404 --> 01:44:29,904
+eksi
+
+516
+01:44:34,323 --> 01:44:35,384
+1 bölü 5
+
+517
+01:44:42,228 --> 01:44:44,747
+Ben 17 bölü 15 pi'yi buluyorum.
+
+518
+01:44:47,368 --> 01:44:50,327
+Diğer derste bir sonucuna tekrar bakarız.
+
+519
+01:44:51,007 --> 01:44:52,667
+Yani buradaki sonucu bulamadık.
+
+520
+01:44:53,247 --> 01:44:54,507
+Farklı bir sonuç buldum.
+
+521
+01:44:54,507 --> 01:44:56,788
+Bu örneğe sonra tekrar bakalım.
+
+522
+01:44:57,288 --> 01:44:59,007
+Şimdi zaten zamanımız da bitti.
+
+523
+01:45:02,739 --> 01:45:20,559
+Yay uzunluğu, yüzey alanı ve improper integrallerimiz kaldı. Artık bunu da önümüzdeki hafta verip bitireceğim. Size soru çözmeye vakit olmayacak. Soruları da artık şey yaparız. Aves içe yükleyelim, oradan bakarsınız.
+
+524
+01:45:24,340 --> 01:45:49,920
+Hocam, şey olarak yaptım ben. Şimdi büyük R 2 ya, küçük R'yi de şu olarak verdim. Sizin gösterdiğiniz alan değil de diğer alan. O parabolun içi olarak. Parabol olarak da küçük R'nin sınırı parabola kadar geliyor. Ben de o yüzden y eşittir x kare parabolunu y x etrafında döndürdüğümüz için x eşittir kök y olarak yazdım. Yani onun karesi.
+
+525
+01:45:50,271 --> 01:45:52,271
+Sonra onu dışarı çıkarttım, yakarı bölge.
+
+526
+01:45:53,211 --> 01:45:56,051
+Şu uzunluklar x uzunluğu değil midir?
+
+527
+01:45:56,951 --> 01:46:01,111
+Büyük R hocam, sizin aldığınız uzunluk şekilde aldım. Küçük R'yi seçil olarak aldım hocam.
+
+528
+01:46:01,351 --> 01:46:08,271
+Şu uzunluk x, ben y'yi aldım. Doğru söylüyorsun. Burada x eşit nedir? Kök y'dir. Doğru söylüyorsun.
+
+529
+01:46:09,311 --> 01:46:10,912
+Y'ye göre almam lazım.
+
+530
+01:46:12,191 --> 01:46:13,951
+Y'ye göre niye alayım ya?
+
+531
+01:46:14,531 --> 01:46:15,992
+X'e göre almam lazım.
+
+532
+01:46:18,579 --> 01:46:30,959
+Şurası sıfır, bu tamam. 2'nin karesi, eksi. 2 eksi. Şuranın x'i nedir? y eşit x kareden x eşit kökyedir. 2 eksi kökyenin karesi.
+
+533
+01:46:33,779 --> 01:46:38,579
+Olacak. Şunun uzun d eksi değil, d y'dir.
+
+534
+01:46:41,079 --> 01:46:45,840
+Şimdi böyle yapınca, evet. Sen böyle mi yaptın?
+
+535
+01:46:50,931 --> 01:46:56,311
+Hocam, evet öyle yapmaya devam ettim. Ama şu olarak yani ben...
+
+536
+01:46:56,311 --> 01:47:09,351
+4, şuradan da 4 gelecek, 4'ler gidecek. Sadece ne kalacak? Çarpımlarının iki katından 4 kök Y kalacak. Bir de eksi Y kalacak.
+
+537
+01:47:14,707 --> 01:47:40,467
+y üzeri 1 bölü 2, 3 bölü 2, 4 çarpı 2 bölü 3, y üzeri 3 bölü 2, eksi y kare bölü 2, sıfırdan bire dersek, 8 bölü 3, eksi 1 bölü 2, 16 eksi 3, bölü 6, 13 bölü 6 çıkıyor.
+
+538
+01:47:40,467 --> 01:47:41,967
+Buradaki sonuç çıkıyor.
+
+539
+01:47:43,252 --> 01:47:47,552
+13 bölü 6 pi çıkıyor.
+
+540
+01:47:50,092 --> 01:47:53,972
+Şu x'leri yazarken hep kafam orada karışmış.
+
+541
+01:47:55,632 --> 01:47:59,972
+x yazıyorum ama x nedir? x eşit kök y'dir.
+
+542
+01:48:00,072 --> 01:48:04,492
+Ben hep x kare olarak yazdığım için demin yanlış sonuca gittim.
+
+543
+01:48:04,872 --> 01:48:07,212
+13 bölü pi çıkıyormuş. Doğru.
+
+544
+01:48:12,979 --> 01:48:14,739
+13 bölü 6p.
+
+545
+01:48:35,028 --> 01:48:47,788
+bitireceğiz. Haftaya kadar kendinize iyi bakın. Hepinize iyi günler, iyi seneler diliyorum. Görüşemeyeceğiz bu hafta artık. Hoşçakalın.
