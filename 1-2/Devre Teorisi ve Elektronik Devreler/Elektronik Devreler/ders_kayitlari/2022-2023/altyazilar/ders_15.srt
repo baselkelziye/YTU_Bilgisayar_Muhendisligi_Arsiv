@@ -1,0 +1,1071 @@
+1
+00:04:00,979 --> 00:04:02,619
+Merhabalar arkadaşlar.
+
+2
+00:04:04,299 --> 00:04:05,759
+Merhaba hocam.
+
+3
+00:04:06,619 --> 00:04:15,679
+Şimdi bu ders içerisinde arkadaşlar bu sefer transistörlerle ilgili olarak soru çözümlerini yapacağız.
+
+4
+00:04:16,279 --> 00:04:22,219
+Şöyle bir iki dakika daha bekleyelim. Ondan sonra başlarız çözümlerimize.
+
+5
+00:06:20,819 --> 00:06:34,839
+Tekrar merhaba arkadaşlar. Geçen hafta biliyorsunuz diyotlarla alakalı olarak oldukça kapsamlı sorular çözümlerini gerçekleştirdik.
+
+6
+00:06:34,839 --> 00:06:39,480
+Bu haftada kaldığımız yerden transistörlerle beraber devam ediyoruz.
+
+7
+00:06:40,360 --> 00:06:47,000
+Öncelikle sormak istediğiniz bir soru var mı? Geçmiş dersle alakalı olarak, geçmiş çözümlerle alakalı olarak kafanıza takılan.
+
+8
+00:06:48,019 --> 00:07:03,199
+Onu alayım. Tamam, yok zannedersem. Şimdi burada ransistörlerin yapılarını görmüştük. Bunların bağlamı çeşitlerini. Örneğin burada bir NPN.
+
+9
+00:07:03,699 --> 00:07:29,379
+NPN transistör var ve de ortak emetörle emetör ucu toprağa en yakın bir şekilde konumlandırılmış. En yaygın kullanılan transistör koşullama DC koşullamalarından biri var burada. VCC 12 volt olarak buradaki IB akımını sürüyor. Dolayısıyla transistör çalışır durumda.
+
+10
+00:07:29,920 --> 00:07:39,639
+Daha önce derste anlattığım gibi buradaki kapasiteler AC bileşenleri sadece girişten alıyor ve dışı çıkışa veriyor.
+
+11
+00:07:39,740 --> 00:07:42,580
+DC bileşenlerini ortadan kaldırıyor.
+
+12
+00:07:42,580 --> 00:07:47,580
+Demiş ki burada bizim çalışmadaki baz ve kolektör akımını...
+
+13
+00:07:48,211 --> 00:08:09,091
+kolektör-emetör gerilimini ve de VB noktası, VC noktası ve bunların farkını bulun demiş. Bu tür bir çözüm yaptığımızda farklı kollardan ne yapıyorduk arkadaşlar? Çözümleri gerçekleşiyorduk. Örneğin, VCC burada ne eşit? IB çarpı RB artı VBE.
+
+14
+00:08:09,939 --> 00:08:19,419
+Şeklinde yapıyorduk. VB'imiz 0.7V silisyum diyot olduğu için. Burada Vcc'imiz belli 12V.
+
+15
+00:08:19,419 --> 00:08:27,600
+RB değeri belli 240V. Bakın burada oradaki çalışma aynı bu şeyden.
+
+16
+00:08:29,427 --> 00:08:40,847
+Eşitlikten buradan IB'nin 47.08 mikro amper, mikro deyince 10 üzeri eksi 6 diye düşüneceksiniz. Bulunduğu görülüyor.
+
+17
+00:08:40,847 --> 00:08:52,327
+Daha sonra bakın transistörün betasını da vermişlerdi. IC eşittir. Beta çarpı IB formülü. Hatırlıyorsanız.
+
+18
+00:08:52,884 --> 00:09:10,403
+Burada sadece yerine koymak kalıyor. Burada da beta 50 verilmiş. 50 çarpı, daha önce bulduğumuz değerli bp, ic'nin yani buradan akan akımı da bulmuş olduk. Bu da 2.35 mA civarındaymış.
+
+19
+00:09:10,403 --> 00:09:13,644
+Hocam, buradaki beta değeri tam olarak ne işe yarıyordu?
+
+20
+00:09:18,964 --> 00:09:24,344
+Kuvvetlendiren bir katsayı. Transistöre özgü bir katsayı.
+
+21
+00:09:24,344 --> 00:09:28,344
+Biz hani hatırlarsanız beta...
+
+22
+00:09:28,500 --> 00:09:49,799
+Şeyde görmüştük, beta-h, ic bölü ib yani çıkış akımının giriş akımına oranı şeklinde tanıtmıştık bunu. Aslında bir nevi ne yapıyor? Ib akımını ne kadar kuvvetlendirdiğini, çıkışta ne kadar kuvvetlendiğini gösteren bir parametre bizim için. Transistör özgü bir parametre.
+
+23
+00:09:51,480 --> 00:09:52,259
+Teşekkürler.
+
+24
+00:09:52,259 --> 00:09:53,220
+Gelelim.
+
+25
+00:09:54,292 --> 00:10:11,471
+Artık I, C'yi de bulduğumuza göre, V, C'yi, buradaki Q harfi arkadaşlar, çalışma anındaki baz akımı, kolektör akımı veya C, E gelin manasında söyleniyor.
+
+26
+00:10:12,532 --> 00:10:19,152
+Şimdi burada, şuradaki diğer koldan gelecek olursak, bunu da mavi ile çizeyim. Ne diyeceğiz?
+
+27
+00:10:19,572 --> 00:10:35,951
+Vcc eşittir. Ic çarpı Rc artı Rce. Bakın 12 volt neye eşit olacak? Direnç üzerinde düşen gerilim. Artık kolektör emetör uçları arasındaki gerilim ve toprağa varıyoruz zaten.
+
+28
+00:10:35,951 --> 00:10:46,352
+Bakın burada Vce'yi yalnız bırakırsak. Vcc eksi Ic çarpı Rc. Vcc değeri biliniyor. 12 volt.
+
+29
+00:10:47,028 --> 00:11:00,508
+IC değeri 2.35 mA, 2.2 kOhm ve de çalışmadaki bakın 6.83'lük bir gelinim düşümü oluyormuş. Onu da bulduk.
+
+30
+00:11:00,508 --> 00:11:10,708
+Şimdi burada VB ve VC'nin bulunması var. VB dediği şu nokta yani bazdaki yani şu uç aynı şey.
+
+31
+00:11:11,604 --> 00:11:20,764
+Buradan kısa devre şey yaparsanız, VB noktasındaki gerilim. Peki başka neyi soruyor bize? Bir de VC'yi, yani şuradaki.
+
+32
+00:11:22,203 --> 00:11:31,524
+Tek biliyorsunuz, gerilimin altında verilen tek bir indis verilmişse aslında onun toprağa göre olan gerilimi olmuş oluyor.
+
+33
+00:11:32,463 --> 00:11:36,963
+Şimdi VB'yi nasıl bulabiliriz? Bir kere VBE'yi biliyoruz.
+
+34
+00:11:37,327 --> 00:11:46,807
+Çift indis verilmişse bir gerilimin altında bu neye eşittir? V bazla V emetör arasındaki gerilimi eşittir.
+
+35
+00:11:46,807 --> 00:12:00,807
+Şimdi bizim V emetörümüz yani şurası direkt toprağa bağlı olduğu için V eşittir 0. Bunun yerine eksi 0 yazdık. VB. Peki VB...
+
+36
+00:12:01,011 --> 00:12:15,771
+Baz ve emetör arasındaki gerilim neydi? Bu silisüm diyot da 0.7 volttu. Dolayısıyla bizim VB noktasındaki gerilimimiz ne eşit olacak? Direkt 0.7 volta eşit olacak.
+
+37
+00:12:29,491 --> 00:12:46,331
+Eşittir. VCE eşittir. VCE. Tamam. Onu da zaten biraz önce bulmuştuk. 6.83V. Peki bize iki nokta arasındaki gerilimi sorsalar. Örneğin VB'yi bulduk. VCE'yi.
+
+38
+00:12:55,124 --> 00:13:08,764
+ve ikinci nokta arasındaki farkı hesaplıyoruz. Bulduğumuz değerler burada 6.13 şeklinde vurulmuş durumda. Bu anlaşıldı mı arkadaşlar?
+
+39
+00:13:16,083 --> 00:13:17,823
+Ben sorayım yine de. Muhlis?
+
+40
+00:13:20,023 --> 00:13:21,123
+Evet hocam, dinliyorum.
+
+41
+00:13:21,763 --> 00:13:23,463
+Tamamdır. Anlaşılıyor değil mi?
+
+42
+00:13:23,463 --> 00:13:24,163
+Hı hı.
+
+43
+00:13:24,843 --> 00:13:25,503
+Tamamdır.
+
+44
+00:13:26,783 --> 00:13:36,263
+Şimdi benzer, deminkinden farklı olarak, bakın bu sefer şu emetör bacağına bir direnç takılacak.
+
+45
+00:13:37,023 --> 00:13:38,563
+Böyle bir konfigürasyon var.
+
+46
+00:13:39,083 --> 00:13:42,183
+Bir RC direnci var, bir RE direnci var.
+
+47
+00:13:42,707 --> 00:13:48,587
+Burada baktığımızda RB baza giden bir direnç var.
+
+48
+00:13:49,627 --> 00:14:00,107
+Vcc ise 20 volt verilmiş. Burada bize çeşitli devredeki akım ve gerilimler sormuş aynı şekilde.
+
+49
+00:14:00,627 --> 00:14:04,987
+Buna göre bir hesaplama yapmamız istenmiş. Yapalım arkadaşlar.
+
+50
+00:14:05,487 --> 00:14:10,107
+İki koldan gidebiliyoruz. Birinci kol, şu kol, böyle gideceğiz.
+
+51
+00:14:10,515 --> 00:14:19,935
+İkinci kolumuz ise buradan beri gideceğiz. İlk önce şunu bir çözelim bakalım. İlk çözümü nasıl yapmış ona bakalım.
+
+52
+00:14:36,628 --> 00:14:42,847
+Pardon emetör yani şu direncin üzerinden geçen akım.
+
+53
+00:14:42,847 --> 00:14:49,467
+E çarpı RE dememiz lazım.
+
+54
+00:14:49,467 --> 00:14:51,908
+Bir de şunu biliyorduk tabii ki.
+
+55
+00:14:51,908 --> 00:14:56,908
+I emetör eşittir.
+
+56
+00:14:56,908 --> 00:15:01,307
+I kolektör artı I baz olduğunu biliyorduk.
+
+57
+00:15:01,716 --> 00:15:21,495
+Ic'nin ise aynı zamanda ne olduğunu biliyorduk. Beta çarpı Ib olduğunu biliyorduk. Artı Ib şeklinde yaptığımızdan Ie eşittir. Beta artı bir Ib şeklinde. Ic'miz ise bizim beta Ib.
+
+58
+00:15:22,995 --> 00:15:39,795
+Zaten dikkat edin, burada beta 50, Ic'imiz yaklaşık 50 Ib. Yani buradan geçen Ib akımıdır. Beta çarpı Ib, sürüş akımıdır. 50 Ib olacak.
+
+59
+00:15:41,587 --> 00:15:50,548
+51 IB olacak. Yaklaşık olarak eşittir bunlar. Çünkü IB'ler mikroamper seviyesinde bulunduğu için eşittir.
+
+60
+00:15:50,548 --> 00:15:53,107
+Biz yine de buna göre yapılandıralım.
+
+61
+00:15:53,107 --> 00:16:06,427
+20 volt eşittir. IB çarpı RB artı 0.7 volt artı IE yerine ne yazacağız? Beta artı 1 RE.
+
+62
+00:16:07,283 --> 00:16:09,684
+Pardon şurada şeyi unuttuk.
+
+63
+00:16:10,384 --> 00:16:14,084
+Beta artı 1 çarpı IB dememiz lazım.
+
+64
+00:16:14,884 --> 00:16:18,384
+Çarpı IB çarpı VE
+
+65
+00:16:19,184 --> 00:16:24,283
+Dedik, burada IB'leri bir tarafa çekecek olursak bakın burada yapmış.
+
+66
+00:16:25,184 --> 00:16:31,584
+Ne yapmamız lazım? Vcc eksi VBE yani 20 volt eksi 0.7 volt.
+
+67
+00:16:31,860 --> 00:16:43,139
+Burada Rb artı beta artı 1 Re demiş. Bakın temelde hepsini bu çevreden bulmuş olduk. Sadece şuradaki şeyleri bilmemiz lazım.
+
+68
+00:16:43,139 --> 00:16:54,360
+Yani temelde şunları biliyor olmamız gerekiyor bu çözümlerde. Yerine koyduğumuzda arkadaşlar 40.1 mikro amper bulunmuş oluyor.
+
+69
+00:16:56,052 --> 00:17:05,271
+Zaten IB'yi bulduktan sonra, IE'yi ve de IC'yi bulmak kolay. IC'ye eşittir beta çarpı IB.
+
+70
+00:17:05,271 --> 00:17:09,612
+Yerine koyduğumuzda 2.01 mA çıkmış.
+
+71
+00:17:09,612 --> 00:17:16,532
+Bu sefer şu mavi koldan ilerlediğimizde, artık akım değerlerini biliyoruz.
+
+72
+00:17:16,532 --> 00:17:20,372
+Şöyle yazabilir miyiz arkadaşlar burası için?
+
+73
+00:17:20,372 --> 00:17:21,836
+Baktığımızda.
+
+74
+00:17:22,228 --> 00:17:42,088
+Vcc eşittir, Rec çarpı Ic artı ve kolektör emetör. Yani kolektör emetör gerilimi neresi? Burası artı eksi, kolektör ile şu kolektör ucu, burası emetör ucu ile arasındaki gerilim.
+
+75
+00:17:47,923 --> 00:17:50,963
+IE çarpı VE şekline getirdik.
+
+76
+00:17:51,824 --> 00:17:57,584
+Peki burada I, C'yi biliyoruz değil mi? I, C'ye yaklaşık olarak I, E'ye eşit.
+
+77
+00:17:58,784 --> 00:18:03,144
+Bu durumda bizden neyi istiyordu? V, C'yi istiyordu.
+
+78
+00:18:03,144 --> 00:18:07,963
+V, C, C. Şuradaki hesaba dönelim tekrar.
+
+79
+00:18:08,480 --> 00:18:21,980
+Vc'yi çektiğimizde, burada ic parantezini alabiliriz. Mesela, ic parantezinde vc artı re dediğimiz zaman, vc'yi çektiğimiz zaman öbür tarafa.
+
+80
+00:18:22,355 --> 00:18:36,675
+Ne oluyor? BCC-IC parantezinde RC-RC artı RE oluyor. Yerine koyduğumuzda kolektörle emetör arasındaki gelimin 13.97 volt olduğunu bulmuş oluyoruz.
+
+81
+00:18:36,675 --> 00:18:48,016
+Dikkat edin arkadaşlar, hep böyle aynı şeyler üzerinden çözümlerimizi. Aslında temel kavramları bildikten sonra gerisi sadece işlem olmuş oluyor. Bir de neyi sormuş?
+
+82
+00:18:50,708 --> 00:19:07,564
+Bakın, şu noktanın eğer şöyle, Vc dediğimiz zaman aslında burada gizli bir toprak vardır. İkinci parametre olarak. Vc demek, Vc toprak demektir. Yani Vc toprak ise...
+
+83
+00:19:07,635 --> 00:19:24,476
+V kolektör eksi V toprak. V toprak nedir zaten? Sıfır olduğu için. Ne oluyor? Vc eşittir. Vc dediğimiz şey bir yerin toprağa göre olan gerilimi. Dikkat edin. Buranın toprağa göre olan gerilimi iki tane şey üzerinden geçiyor.
+
+84
+00:19:28,660 --> 00:19:30,660
+gerilim olmak üzere.
+
+85
+00:19:30,660 --> 00:19:39,160
+Vc'yi bulmuştuk. Re direncin üzerindeki gerilimi nasıl buluruz? Re çarpı IE şeklinde buluruz.
+
+86
+00:19:39,160 --> 00:19:43,760
+Ve bu ikisini topladığımızda ne elde etmiş oluruz arkadaşlar?
+
+87
+00:19:43,760 --> 00:19:48,559
+Bizim kole ve kolektör.
+
+88
+00:19:48,559 --> 00:19:55,260
+kolektör gerilimize ederiz. Bir başka nokta burayı elde edebilmenin yolu.
+
+89
+00:19:55,380 --> 00:20:12,780
+20 volttan buradaki RC'nin üzerinde düşen gerilimi çıkardığımızda 20 volt eksi eksi RC çarpı IC dediğimizde burası da aynı şekilde. Yani iki taraftan da gidebilirsiniz.
+
+90
+00:20:12,780 --> 00:20:21,740
+Kolektöre yukarıdan inebiliriz ve aşağıdan hesaplayabiliriz. İkisi de aynı sonucu verecektir. Burada ne yapılmış arkadaşlar?
+
+91
+00:20:21,872 --> 00:20:35,152
+Yukarıdan ilmiş. Vcc-IcxRc demesinin adına Vcc geliminden kolektör direnci üzerindeki gelimin çıkarılmasıyla bulunmuş.
+
+92
+00:20:35,152 --> 00:20:43,152
+Ve E'yi bulalım arkadaşlar. Ve E'yi bulmanın en kolay yolu. Aynı şekilde hem yukarıdan gelebilirsiniz.
+
+93
+00:20:43,152 --> 00:20:44,152
+Şöyle.
+
+94
+00:20:44,756 --> 00:20:58,076
+Veya şundan yerinebilirsiniz. V kolektör emetörü buldunuz. Vc'yi biliyorsunuz, eksi ve. Buradan da çıkarılabilir. Veya direkt şuraya bakarsınız ve eşittir.
+
+95
+00:20:58,223 --> 00:21:06,923
+IE çarpı RE yani o noktanın toprağı olan geliniminden iki taraftan da çıkarılabilir veya yukarıdan gelirsiniz.
+
+96
+00:21:06,923 --> 00:21:15,124
+20 volt eksi RC'nin üzerinde düşen gelin eksi VCE bakın sizi buraya tekrar getirir.
+
+97
+00:21:15,124 --> 00:21:25,864
+Üç yolu da deneyebilirsiniz. Mesela burada VCE eşittir. VCE eksi VE'den devam etmiş.
+
+98
+00:21:26,112 --> 00:21:43,172
+Bakın, kaç bulmuş burada? 15.98, 13.90 bilindik değerler. Daha önce hesaplandığı değerlerden gelmiş. 2.01 veya direkt IE çarpı RE deseydi. IE yaklaşık olarak IE'yi eşitti.
+
+99
+00:21:49,395 --> 00:22:02,536
+B şeklinde de söyleyebilirsiniz. Burada yerine yazdığınızda hemen hemen aynı sonucu verecektir sizin için. Bu da 2.01 çıkmış durumda.
+
+100
+00:22:02,536 --> 00:22:17,016
+Peki, şeyi biliyoruz. VB gerilimini sormuş. VBE'yi biliyoruz buradan hareketle. VB-VE. Bu VBE 0.7V. VE'yi de biraz önce bulduk.
+
+101
+00:22:17,779 --> 00:22:26,619
+2.01 Bu tarafa gönderdiğimizde basit toplamaya dönüşüyor. 2.71 Volta dönüyor.
+
+102
+00:22:26,619 --> 00:22:40,139
+Bize artık verilenler VB'yi biliyorsak, VC'yi biliyorsak, artık bize iki nokta arasındaki gelimi soruyorsa, VBC dediği şey nedir? Burası VB.
+
+103
+00:22:40,372 --> 00:22:53,492
+Burası Vc gelimi. Burası, burası olmak üzere, burası Vbc olarak adlandırılır. Burası eksi olmak üzere arkadaşlar. Bu aradaki gelimi sormuş oluyorum.
+
+104
+00:22:55,312 --> 00:23:00,352
+Buraya kadar anlaşıldı mı? Tekrar anlatmak istediğimiz, anlatmamı istediğiniz bir kısım var mı?
+
+105
+00:23:03,092 --> 00:23:07,552
+Bunlar arkadaşlar sizin sınavlarınızda çıkacak konulardan biri.
+
+106
+00:23:08,084 --> 00:23:15,344
+Bu arada vize tarihimizi de şimdiden belirleyelim. Diğer grupta da Hamza hocamız da söyleyecek.
+
+107
+00:23:15,344 --> 00:23:28,804
+11 Mayıs'ta arkadaşlar, 11 Mayıs bizim arkadaşlar vize. Yine ders saatinde yaparız.
+
+108
+00:23:29,944 --> 00:23:34,684
+Bayramdan sonraki 9. hafta, bu kaçıncı hafta oluyor bakalım onu hesaplayalım.
+
+109
+00:23:35,571 --> 00:23:57,351
+Şu anda 20'deyiz. 8, 24'ü 9, 1. haftası 10, 1'inin haftası 10 Mayıs'ta ve de 11. hafta olmuş oluyor. 11. hafta, 11 Mayıs'ta vizemiz olmuş olacak arkadaşlar.
+
+110
+00:24:03,155 --> 00:24:13,195
+Bayramdan sonraki 9. haftaki vizelerde, yani önümüzdeki hafta vize gözüküyor. Ama ona sadece şeyler girecek arkadaşlar.
+
+111
+00:24:14,635 --> 00:24:24,536
+Daha önce dersi alıp lab notlarını yükseltmek isteyen arkadaşlar girecekti. Onu tekrar hatırlatırım sizlere.
+
+112
+00:24:25,907 --> 00:24:32,247
+Evet, bakalım önümüzdeki haftalarda duyurular, tekrar yapılır.
+
+113
+00:24:34,467 --> 00:24:41,467
+Şimdi buradaysa, gerilim bölücü bir konfigürasyon var.
+
+114
+00:24:41,467 --> 00:24:49,347
+Gerilim bölücü dediği neydi arkadaşlar? Örneğin şurası VB noktası. VB'yi nasıl hesaplıyorduk?
+
+115
+00:24:50,548 --> 00:25:09,887
+Toplam dirençler, şurası R1, şurası R2 olsun. R1 artı R2. Sadece VB'nin üzerinde düşen, yani aşağıya düşen gerilimi hesaplayacak olursak, R2 çarpı VCC şeklinde. Yani burası da VCC olmak üzere.
+
+116
+00:25:09,887 --> 00:25:16,887
+Toplam dirençlerin üzerinde sadece R2'ye düşen gerilim payı şeklinde hesaplıyorduk.
+
+117
+00:25:18,036 --> 00:25:28,316
+Şimdi burada demiş ki bize kolektör, emetör ve de IC'yi bulun demiş.
+
+118
+00:25:29,455 --> 00:25:35,215
+Böyle bir konflüyasyonda gelin bölücü devrede şuna dikkat ediyoruz arkadaşlar.
+
+119
+00:25:36,276 --> 00:25:40,695
+Sanki bu devreyi şu hale getirebiliriz çözümsel olarak.
+
+120
+00:25:40,695 --> 00:25:41,915
+Birincisi.
+
+121
+00:25:42,836 --> 00:26:06,296
+Şu şekilde planlayabiliriz. Deriz ki, bu aslında bir şöyle bir gelim kaynağımız var. Buna VTV'nin, sonra bir direnç var. RTV'nin. Geliyor bu, bazı besliyor şeklinde düşünüyoruz. Düşünebiliriz.
+
+122
+00:26:09,715 --> 00:26:30,836
+Bulduğunuz VB, VTV'nin gerilimi yerine düşecek. Yani burada sanki şu baz akımını, gerilimi, baz bacağına giden gerilim, VTV'nin, sizin burada bulmuş olduğunuz VB'den hesaplanıyor.
+
+123
+00:26:35,763 --> 00:26:41,523
+Dirençlerinin sanki bunlar toprağa gitmiş gibi paralel hali düşünebilirsiniz.
+
+124
+00:26:42,023 --> 00:26:45,223
+Aslında şöyle bir yapı oluyor gibi düşünebilirsiniz.
+
+125
+00:26:45,423 --> 00:26:50,983
+Şöyle toprağa gidiyor. Bir tanesi de R1 ve R2 toprağa gidiyor.
+
+126
+00:26:51,403 --> 00:26:53,803
+Bunun bileşik direnci nasıl hesaplanıyor?
+
+127
+00:26:54,463 --> 00:26:58,884
+1 bölü R1 artı 1 bölü R2 şeklinde hesaplanıyor.
+
+128
+00:26:59,923 --> 00:27:25,183
+Bakın, burada 1 bölü R eşi eşit. Buradan R1 ve R2'yi biliyoruz. R eş nasıl hesaplanır? R eş eşittir. R1 çarpı R2 bölü R1 artı R2. Buradan R tevenin 3.55 bulunmuş. Yani burayı 3.55 ohm şeklinde bulmuşuz.
+
+129
+00:27:26,195 --> 00:27:34,255
+Peki, benim E-Tveninim neydi? Benim R2 direnci üzerinde düşen gerilimimdi. Yani onu da buradan hesaplıyoruz.
+
+130
+00:27:34,255 --> 00:27:46,255
+Bakın, burada da E-Tvenin bulunmuş. Burada da 3.9 ve 3.9. Yani bu bir birimse bu 10 birim.
+
+131
+00:27:48,564 --> 00:28:15,964
+Yani R2 üzerinde düşen gelin 1 bölü 11'lik bir gelin düşüyor çarpı 22. Demek ki bunun 2 voltu buraya düşüyor, 20 voltu buraya düşüyor. Bakın oran 1'e 10 şeklinde. Bunlar paylaşım olarak orantılı olarak dağılmış oluyor. 2 volt bulduk. Tamam artık bizim hesabımızı şu şekilde yapıyoruz.
+
+132
+00:28:16,500 --> 00:28:42,600
+Artık bizim IB değerimizi şöyle, burada V tevenin var, TB direncim var, şöyle bir RE geldimim var. Şurayı düşünmüyorum şu anda. Burası RC şeklinde gidiyor. Buradan da VCC'ye gidiyor. Bu hale gelmiş oluyor devre.
+
+133
+00:28:43,284 --> 00:28:54,284
+Peki bu durumda neleri biliyorum? Benden ne istiyordu? I, B'yi. I, B'yi şu şekilde. I, B şuradan geçen direnç olmuş, akım olmuş oluyor.
+
+134
+00:28:54,284 --> 00:29:10,864
+Şöyle diyebiliriz. V, T, V'nin eşittir. Bu noktadaki gelin. I, B çarpı V, B. Yani buradayım. Böyle geldim. Devam et. Artı ve baz emetör arasındaki gelin.
+
+135
+00:29:12,211 --> 00:29:30,932
+Silisyumda bu 0.7 idi. Çarpı artı IE çarpı. Bu direnç üzerinde düşen gerilim nedir? IE çarpı VE. IE'yi ne yazabiliyorduk? Beta artı 1.
+
+136
+00:29:31,476 --> 00:29:41,456
+Bb diye biliyorduk. Veya beta ib diyebilirsiniz ama gerçekçi olması açısından beta artı bir ib diyeceğiz ona.
+
+137
+00:29:42,556 --> 00:29:47,616
+Bunu yerine koyduğumuzda ve ib'leri çektiğimizde şu hale geliyoruz arkadaşlar.
+
+138
+00:29:48,856 --> 00:29:54,976
+E tv'nin ne bulmuştuk? 2 volt. Eksi vb 0.7 volt. Ve tv'nin şuraya yazılmış oluyor.
+
+139
+00:29:56,019 --> 00:30:08,059
+Beta artı 1, Beta 140 vermiş, 141 çarpı Re direnci dedik ve buradan IB'yi 6.05 mikroamper. Dikkat edin, çözümlerinizde
+
+140
+00:30:08,435 --> 00:30:24,336
+Genel olarak bazdan geçen, yani şu baz akımı çok düşük çıkmak zorunda. Kendinizi öyle test edebilirsiniz. Yani miliamper derseniz, mesela Ic'yi çok daha büyük yazmanız gerekir. Kendinizi o şekilde check edebilirsiniz.
+
+141
+00:30:33,715 --> 00:30:45,955
+Beta artı 1 IB olacaktı. Yani 140 yerine 141 ile çarpıyormuş. Ufak bir fark olacak. Yani yaklaşık o yüzden bazen Ic eşittir, IE diye kabuller oluyor.
+
+142
+00:30:45,955 --> 00:30:56,095
+Peki kollektör-emetör arasındaki gerilim, yani şuradaki gerilimi bulmak istiyorsak ne yapacağız? O koldan devam edersek.
+
+143
+00:31:00,544 --> 00:31:08,903
+RC çarpı IC artı BCE artı baktığımızda.
+
+144
+00:31:08,903 --> 00:31:11,064
+Ve ne yazabiliriz bir de?
+
+145
+00:31:12,064 --> 00:31:16,264
+RE çarpı IE.
+
+146
+00:31:17,423 --> 00:31:20,884
+Bakın bu kolda yaklaşık şöyle diyebiliriz.
+
+147
+00:31:21,963 --> 00:31:23,604
+IC parantezini alırsak.
+
+148
+00:31:23,884 --> 00:31:25,943
+RC artı RE.
+
+149
+00:31:26,516 --> 00:31:50,676
+Artı VCE diyebiliriz. Bakın burada VCE'yi çekmiş öbür tarafa. VCC belli, 22 volt. IC'yi bulmuştuk, 0.85. RC artı RE'yi de dirençlerin toplamı şeklinde düşünürsek, kolektör-emeter arasında 12.22 voltluk bir gerilim düşümü gerçekleşmiş.
+
+150
+00:31:53,107 --> 00:32:02,708
+Evet, sorusu olan arkadaşım var mı buraya kadar? Deminkinden farklı olarak yerlin bölücü devreyi burada çözdük.
+
+151
+00:32:02,708 --> 00:32:09,208
+Şimdi şey yapalım. Evet, [öğrenci].
+
+152
+00:32:11,908 --> 00:32:16,908
+Buradayım hocam. Nasıl, anlaşılıyor mu çözümler?
+
+153
+00:32:17,748 --> 00:32:23,947
+Hocam ben biraz dersten koptum ya vizeler yaklaşınca. Hiç çalışmadım yani geçen hafta.
+
+154
+00:32:25,387 --> 00:32:35,607
+Yok, bunları daha önce de anlatmıştım. Daha önceki haftalarda da anlatmıştım ama çalışmamışsın. Zararını görürsün, onu söyleyeyim. [öğrenci] anlaşılıyor mu?
+
+155
+00:32:38,367 --> 00:32:39,528
+Anlaşılıyor hocam.
+
+156
+00:32:40,268 --> 00:32:43,268
+Tamamdır. [öğrenci] anlaşılıyor mu?
+
+157
+00:32:44,211 --> 00:32:49,471
+Hocam, siz anlatırken anlaşılıyor ama bu teveninle benim biraz uğraşmam gerekiyor bence.
+
+158
+00:32:49,471 --> 00:33:11,652
+Yok, basit bir şey var sadece. Tevenin ne dedik? Ve tevenini burada gerilim bölücü devreden ne kadar gerilim düşüyor? Şöyle düşünebilirsin. Burada bir gerilim kaynağı var, bir orta nokta var. Şöyle. Şurada toprağa gidiyor. Burası R1, R2.
+
+159
+00:33:12,435 --> 00:33:22,975
+Burası VB diyelim. Burası VC diyelim. VB'de düşen eğer sen R1, R2 biliyorsan orta noktaya düşen olan gerilimi nasıl bulursun?
+
+160
+00:33:25,796 --> 00:33:28,215
+İkisini paraleli olarak düşünelim.
+
+161
+00:33:28,935 --> 00:33:35,975
+Hayır, hayır. Gerilimi nasıl bulursun? Buradaki I1 akımı buradaki I2 akımına eşit değil mi?
+
+162
+00:33:38,740 --> 00:33:44,539
+I1 eşit I2. I1'i nasıl hesaplarsın?
+
+163
+00:33:44,539 --> 00:33:51,019
+Bc, şöyle bunu şöyle yapalım. Boş bir sayfaya yapmış olalım.
+
+164
+00:33:51,019 --> 00:33:57,940
+Şöyle yapalım. Bir tane direnç var.
+
+165
+00:33:57,940 --> 00:34:03,819
+Burası Vc. Bu orta nokta Vb.
+
+166
+00:34:04,435 --> 00:34:15,695
+Burası R1, Burası R2 olsun. Bunun üzerinden geçen akım I1'dir. Bunun üzerinden geçen akım I2'dir. I1 eşittir I2.
+
+167
+00:34:15,695 --> 00:34:31,635
+Ben nasıl elde ettim formülü? Aslında uzun yoldan bunu açıklıyorum. I1 nedir? R1 direnci üzerinden geçen akım. Dolayısıyla V eşittir I çarpı R'den V bölü R'ye dönüştürmüş oluyoruz I'yı. Buradan yapalım.
+
+168
+00:34:32,083 --> 00:34:54,203
+R1'in üzerine düşen gerilim nedir? R1'in üzerine düşen gerilim. Vc-Vb bölü R1. I1'i tanımlayacak olursak. Yani bunun üzerinde Vcb gerilimi var. Yani Vc-Vb gerilim. İki ucu yani direncin üzerine düşen gerilim. Vcb gerilim. Öyle değil mi?
+
+169
+00:35:00,436 --> 00:35:15,496
+İ2'nin üstünde hangi gerilim var? VB geliyor. Bir de toprak çıkartılacak sanırım. VB-V toprak. V toprak burası sıfır bölü. R2. Tamam, buraya kadar geldik.
+
+170
+00:35:28,371 --> 00:35:35,791
+eksi R2 çarpı VB eşittir. R1 çarpı VB. Öyle değil mi?
+
+171
+00:35:35,791 --> 00:35:52,172
+Şimdi buradan R2 çarpı VC eşittir. Öbür tarafa atalım bunu. VB çarpı R1 artı R2. Öyle değil mi?
+
+172
+00:35:52,628 --> 00:35:58,228
+Peki, VB'yi nasıl bulurum bu durumda? VB'yi çekersem. VB eşit.
+
+173
+00:35:58,228 --> 00:36:10,228
+R1 artı R2 öbür tarafı. Evet. Yani çarpı Vc. Denki orta noktaya düşen gelinim. VB orta noktadaki gelinim.
+
+174
+00:36:10,228 --> 00:36:18,228
+R2 toplam direnç içerisinde R2'ye düşen pay kadarmış Vcc üzerinde.
+
+175
+00:36:18,739 --> 00:36:20,420
+Buradan çıkarmış oluyorum.
+
+176
+00:36:23,699 --> 00:36:30,179
+Diğer taraftan şu TV'nin, bu VTV'nin şeyi nasıl kabul etmiştik?
+
+177
+00:36:30,300 --> 00:36:34,859
+RTV'nin direncini haline nasıl getirmiştik? RTV'nin nasıl getirmiştik?
+
+178
+00:36:35,519 --> 00:36:41,840
+RTV'nin de sanki benim bu dirençlerim, yani burada kullanmış olduğum dirençler.
+
+179
+00:36:42,516 --> 00:36:44,876
+Birbirine paralel gibi düşündük.
+
+180
+00:36:44,876 --> 00:37:04,275
+Birbirini sanki paralel gibi toprağa giden. Yani gelip bu tarafı sanki düşünün şöyle. Sanki şu ucu alıp sanki şuraya paralel hale getirmişiz. Oraya yapıştık. Burayla bağını koparıp sanki onu da toprağa getirmişiz gibi. İki tane paralel direnç olmuş oluyor.
+
+181
+00:37:04,675 --> 00:37:10,496
+Oradan da şeyden fizik dersinden biliyorsunuz zaten. Bir re eş direnci nasıl?
+
+182
+00:37:10,516 --> 00:37:19,516
+Nasıl buluyorduk? 1 bölü R1 artı 1 bölü R2 eşli 1 bölü R eşten buluyorduk. O da bizim tevenin direnci olmuş oluyor. Bu kadar.
+
+183
+00:37:22,416 --> 00:37:24,675
+Teşekkür ederim hocam. Daha iyi peki işte.
+
+184
+00:37:24,675 --> 00:37:35,456
+Evet. Şimdi deminkine, deminki sorulara benzer bir sorudan devam edelim. Burada da arkadaşlar.
+
+185
+00:37:35,987 --> 00:37:51,787
+Bir de ortak emetörlü bir yapı var. Burada sanki baz direnci, normalde buralarda tek bir baz direnci olurdu. Onun yerine ikiye bağlanmış, şuradan toprağa verilmiş.
+
+186
+00:37:59,155 --> 00:38:24,796
+Bulunduktan sonra, artı VCE'yi bulduktan sonra hep bunların bulunması üzerine genellikle sorularımızı sorarız. Yalnız burada şuna dikkat etmeniz lazım. Burası IC ise burası IC üstü. Buradan da ne akıyor? IB akıyor. Yani IC eşittir. IB, IC üstü eşittir. IC artı IB.
+
+187
+00:38:25,652 --> 00:38:38,292
+Bu IB çok düşük olduğu için yaklaşık IC üssünü IC olarak kabul ediyoruz bu tür sorularda. Bu ana koldan geçen akım çok daha büyük.
+
+188
+00:38:38,771 --> 00:38:54,112
+Baz tarafına çok daha az akım çekiliyor. Bakın 75'te biri kadar. Yani beta eşittir. Ic bölü ib idi. 75'te biri kadarmış.
+
+189
+00:38:56,532 --> 00:39:04,931
+Tamam, burada çözümümüzü yapalım. Bakalım. Burada ne diyeceğiz önce? Bakalım burada ne yapmış?
+
+190
+00:39:07,059 --> 00:39:14,039
+Evet, IB'yi anlamaya çalışıyorum. Şuradan çevreyi oluşturalım bakalım.
+
+191
+00:39:30,547 --> 00:39:56,927
+Şuradaki VBE gerilimini, artı VBE gerilimi, toprağa doğru gidiyoruz. Şöyle, artı VRE. Onu da nasıl yazabiliriz? Direncin üzerinde düşen gerilimi. RE çarpı IE. Bakın, 18 volt ne eşit? Şöyle geldiğimizde, önce bunun üzerinden geçiyoruz. Sonra böyle geliyoruz.
+
+192
+00:39:57,588 --> 00:40:14,168
+Sonra böyle geliyoruz ve gibi oluşuyoruz. O yüzden Ic üstü çarpı Rc, Ib çarpı R1 artı R2. Şurada baz emetöre, V baz emetöre geliyoruz. Arkasından Ie demiş oluyoruz.
+
+193
+00:40:24,980 --> 00:40:34,859
+Artı IB çarpı V1 artı R2 dedik. Artı V baz emetör dedik.
+
+194
+00:40:37,259 --> 00:40:42,199
+Buna ortaklaşan RB diyebiliriz mesela. Şuraya RB diyebiliriz.
+
+195
+00:40:43,099 --> 00:40:51,239
+Baz emetör dedik. En sonunda da ne vardı? IE. IE'yi de yaklaşıp IC alırsak şayet.
+
+196
+00:40:51,860 --> 00:41:00,780
+Re çarpı Ic şeklinde. Burada bazı nasıl çekebiliriz? Bakın bilinmedik burada ne var sadece?
+
+197
+00:41:17,811 --> 00:41:44,532
+Artı VBASMETÖF diyebiliriz. Burada IC'nin yerine BAS çarpı B, BETA çarpı IB dediğimiz zaman, bakın tek bilinmeyen IB olmuş oldu. Yersinin hepsini biliyoruz. Bakın bu formülde yerine koyduğumuzda VCC biliniyor. VBE biliniyor. Yani buradaki VB'yi önce karşı tarafa alıyoruz şöyle. Eksi hale geliyor. Bölüsünde ne var?
+
+198
+00:41:45,108 --> 00:42:02,308
+rb artı, burada beta çarpı, burada beta rb var, rc artı re'si var, bir de rb'si var. Gördüğünüz gibi rb'yi çektik.
+
+199
+00:42:02,308 --> 00:42:10,308
+Buradan ne bulmuşuz arkadaşlar? Yerlerine koyduğumuzda rb neydi? 91 ile 110'un toplamı.
+
+200
+00:42:10,516 --> 00:42:20,135
+Yani şurası RB olan seri olduğu için kabul ediliyor. Ve buradan 35.5 mikroampere bulmuş.
+
+201
+00:42:20,135 --> 00:42:33,016
+IC'yi bulun deseler beta çarpı IB deriz. IC'yi buluruz. Bize VC'yi sormuş burada. VC noktasındaki kelime. Yani şuranın gelimi ne demiş.
+
+202
+00:42:34,068 --> 00:42:36,308
+Bunu hesaplarken şöyle diyebiliriz.
+
+203
+00:42:36,788 --> 00:42:40,868
+Vc eşittir. Toprağa gidiyoruz şuradan itibaren.
+
+204
+00:42:41,648 --> 00:42:48,008
+Vce gelimi şuradaki artı VE gelimi.
+
+205
+00:42:49,468 --> 00:42:50,728
+Öyle değil mi?
+
+206
+00:42:52,128 --> 00:42:57,688
+Şimdi burada VE geliminin nasıl? Vc'yi bulmuş. Vc'yi hesaplamamız lazım.
+
+207
+00:42:58,528 --> 00:43:00,608
+Bir de VE'yi hesaplamamız lazım.
+
+208
+00:43:00,992 --> 00:43:14,052
+Bir diğer yol ne olabilir? Bir diğer yol 18 volttan şu direnç üzerinde, RC direnç üzerinde düşen gelin.
+
+209
+00:43:14,052 --> 00:43:23,112
+IC'yi biliyoruz. IC çarpı şeyi bulduğumuz zaman 18 volttan düştüğümüzde bakın buradaki gelimi de buluyoruz.
+
+210
+00:43:24,820 --> 00:43:37,500
+Burada neyden çıkmış? Benim dediğim gibi yapmış. Vcc'den ic üstü yaklaşık ic eşittir. Bu gerilimi düşmüş ve de 9.22 olarak bulmuş.
+
+211
+00:43:38,639 --> 00:43:45,940
+Başka bir yerde eğer vc'yi bulsaydık, diğer taraftan benim gösterdiğim yolla da aynı şekilde hesaplayabilirdik burada.
+
+212
+00:43:50,195 --> 00:44:05,635
+IE, yani I C de diyebiliriz buna. V C'yi bulmak lazım tabii ki orada. V C'yi hesaplarken bununla bunun farkı neyse. Uzun iş, onun yerine buradan direkt yukarıdan gelin düşümünü hesaplayabiliriz.
+
+213
+00:44:08,315 --> 00:44:14,715
+Evet, şimdi geldik. Bu konuyla ilgili sormak istediğiniz bir soru var mı?
+
+214
+00:44:18,452 --> 00:44:29,892
+Deminki sorunun aynısı. Burada sadece RB'yi birleştirmiş. Biz burada gidecek olursak aynı şekilde böyle bir çevreden gidelim.
+
+215
+00:44:46,324 --> 00:45:11,083
+Artı VBE. Şuradaki gelimi hiçbir zaman unutmayın arkadaşlar. Yaptığımda bakın IB'yi buradan çekmişim. Çekince IC'yi burada beta IB diyorum onu unutmayın. Dediğimde 15.51 mikro amper bulunmuş. Daha sonra IC'yi belirlemek istiyorsak beta ile çarpıyoruz. 1.86 bulunmuş.
+
+216
+00:45:11,456 --> 00:45:19,935
+Bir de VC'yi bulmak istiyorsam bu sefer mavi ile gideyim. Şu koldan gideceğim. Diyeceğim ki, VCC eşittir.
+
+217
+00:45:19,935 --> 00:45:33,516
+ICC üstü çarpır VC artı ve kolektör emetör yani şurası artı toprak artık zaten toprağa varmış oluyoruz.
+
+218
+00:45:36,480 --> 00:45:47,960
+VCE'yi hesaplamak istediğimizde, VCE'yi bir tarafa çektiğimizde, şurada VCC-I-C çarpı RC. I-C üstünü I-C diye aldık.
+
+219
+00:45:47,960 --> 00:45:53,960
+Evet, ondan sonra arada...
+
+220
+00:45:54,400 --> 00:46:14,839
+11.26 voltluk bir değer bulunuyor. Onun dışında noktasal gerilimleri de çok kolay hesaplayabilirsiniz. Çünkü bizim buradaki V emetör gerilimimiz 0 volt. Direkt toprağa gidiyor. Örneğin VB noktasını hesaplayacaksanız VB'ye eşit. O da 0.7 volt'a eşit.
+
+221
+00:46:21,907 --> 00:46:29,788
+Artık V, B ve C'yi biliyorsak, V, B, C'yi isterlerse aradaki farkı hesaplarız ve sonucu buluruz arkadaşlar.
+
+222
+00:46:30,608 --> 00:46:38,228
+Şimdi son olarak bir tane daha soru çözelim.
+
+223
+00:46:39,088 --> 00:46:42,668
+Burada ise arkadaşlar gelin bölücü bir devre verilmiş.
+
+224
+00:46:43,427 --> 00:46:47,827
+Şurada R1 ve R, C dirençleri belirsiz.
+
+225
+00:46:48,239 --> 00:47:01,399
+Ama bu sefer de bize tersten IC akımını 2 mA olarak vermiş ve buradaki gelimi VCE gelimini ise 10 volt olarak vermiş.
+
+226
+00:47:01,659 --> 00:47:12,819
+Şimdi bunu belirleyelim. İlk önce şu mavi koldan gidecek olursak 18 volt eşittir.
+
+227
+00:47:14,708 --> 00:47:35,108
+18V burada RC çarpı IC artı VCE artı IE çarpı IE çarpı RE baktığımızda.
+
+228
+00:47:35,108 --> 00:47:40,868
+Peki benim buradaki şeyim ne?
+
+229
+00:47:41,652 --> 00:47:51,652
+Kollektörü, metörü hepsi verilmiş. Buradan ben ne hesaplayabilirim? 18 volttan 18 volt eşitti.
+
+230
+00:47:51,652 --> 00:48:04,652
+Ic'yi bilmem lazım. Rc'yi biliyorum. Rc artı Rey parantezini alayım. Şurası da Ic olsun. Artı VcE'yi hesaplıyorum.
+
+231
+00:48:08,755 --> 00:48:24,695
+Yerine koyduğumuzda arkadaşlar, buradaki değerler RC bilinmiyor değil mi arkadaşlar? RC bilinmediği için artı RE dedik. RE biliniyor. IC'yi çektik. Niye bunu daha sonra hesaplamış burada?
+
+232
+00:48:28,947 --> 00:48:52,307
+Buradan bulunabilir. Buradan V'yi, R'yi çekebiliriz. Birinci yol. İkincisi, burada benim şuradaki VB gelimini hesaplayabilirsem şayet. Şuradaki VB gelimini hesaplayabilir miyim? Şeklinde bir sorum var.
+
+233
+00:48:52,820 --> 00:49:16,812
+VB'yi hesaplayabilirim çünkü VBE'yi biliyorum. Bu 0.7V. Şöyle 0.7V. Dolayısıyla burası VB-VE'yi eşit. 0.7V. Peki VE'yi bulabilir miyim? Bulurum. VE çarpı VE'dir. Bu da...
+
+234
+00:49:16,980 --> 00:49:31,920
+Ic I'ye Ic eşitlediğimde 2.4 volt. Yani şurada 2.4 volt. Buradan 0.7 Vb'nin kaç olduğunu buluyorum. 3.1 volt.
+
+235
+00:49:31,920 --> 00:49:44,000
+Peki bu orta noktadaki gerilim biliniyorsa şayet benim burada tek bilinmeyen değerim nedir arkadaşlar? Gerilim bölücü devrelerde ne diyordum?
+
+236
+00:49:44,532 --> 00:50:11,251
+VB eşittir 18V pardon. R2, şurası R2 olsun. R2 bölüm, R1 artı R2 çarpı 18V. Benim R1'imi sadece burada bilmiyorum. VB değerimi biliyorum. Kaçtı burası? 3.1V.
+
+237
+00:50:12,148 --> 00:50:25,028
+R2 değerimle 18 kilo ohm bölü R1 artı 18 kilo ohm çarpı 18 volt.
+
+238
+00:50:25,947 --> 00:50:30,208
+Bakın burada yerine koyduğumda sadece R1'i bilmiyorum.
+
+239
+00:50:30,208 --> 00:50:37,728
+Burada R1 değerim benim. Şurada 86.52 kilo ohm çıkmış.
+
+240
+00:50:38,739 --> 00:50:57,879
+Diğer taraftan, diğer taraftan ise arkadaşlar benim RC gelimi bulmak istiyorum örneğin. Ne yapmam lazım? Burada ya buradan devam edeceğim. VCE'yi biliyorum. VCE burada 10 volt.
+
+241
+00:51:02,931 --> 00:51:18,331
+1.2 kilo ohm. 1.2 kilo ohm. Ic değerim neydi benim? Ic değerim 2 ve çarpı 2 mili amper. 18 volta eşittir. 18'den çıkaralım. 8 volt eşittir.
+
+242
+00:51:29,472 --> 00:51:49,072
+Bunu böldüğümüzde arkadaşlar, 4 bölü 2, 8 bölü 2. Burası 4.
+
+243
+00:51:49,556 --> 00:52:01,576
+Eşitti. RC artı 1.2 kilo olmuş oluyor. Bir diğer hesaplama yöntemi de şurada. Buradan da bulunabilir. Ne yapabilir burada arkadaşlar?
+
+244
+00:52:02,695 --> 00:52:13,355
+RC direnci üzerindeki gerilim. Farklı bir hesaplama buradan da bulunabileceği gibi. RC üzerinde düşen gerilimi hesaplayalım. Şöyle.
+
+245
+00:52:13,972 --> 00:52:37,672
+Vrc diyelim. Burası artı burası eksi. Vrc neye eşit arkadaşlar? Buraya baktığımızda. Vrc 18 volt eksi Vc bölü. Vrc neye eşit? 2 miliampere yani Ic'ye eşit.
+
+246
+00:52:38,739 --> 00:52:43,579
+Buraya baktığımda arkadaşlar, RC direncini bilmiyorum sadece.
+
+247
+00:52:43,839 --> 00:52:45,019
+VC'yi biliyor muyum?
+
+248
+00:52:45,739 --> 00:52:49,179
+VC'yi hesaplamak istersem, VC eşitti.
+
+249
+00:52:50,079 --> 00:52:53,419
+VCE-VE.
+
+250
+00:52:54,139 --> 00:52:56,379
+Öyle değil mi? Pardon, artı VE.
+
+251
+00:52:57,379 --> 00:53:00,819
+VE'yi daha önce hesaplamıştım. Biliyorum.
+
+252
+00:53:01,999 --> 00:53:05,859
+Bu neye eşit? IE çarpı VE'ye eşit.
+
+253
+00:53:06,324 --> 00:53:25,144
+Artı Vc'yi de verdiler. Burası da 10 volttu. IE değerimi de Ic'ye eşittiğim çarpı Re'ye. Vc'yi bulmuş oldum. Vc'yi de bulduğum zaman bakın burada Vc'yi eksi Vc bölü Ic'yi alta verip Rc'yi çekmiş öbür tarafa.
+
+254
+00:53:25,652 --> 00:53:31,132
+Yerine koyduğumda 18 volt eksi 12.4 volt bölü 2 mili amper.
+
+255
+00:53:31,572 --> 00:53:37,172
+RC'de buradan 2.8 çıkar. Aynı buradan çıkacağı gibi arkadaşlar.
+
+256
+00:53:37,432 --> 00:53:44,891
+Bakın buradan da aynı şekilde RC 2.8 şeklinde kilo ohm tabii ki kilo ohm.
+
+257
+00:53:45,512 --> 00:53:49,532
+Bilimleri yazmayı unutmuyoruz arkadaşlar. Bilimler bizim için önemli.
+
+258
+00:53:53,460 --> 00:54:18,559
+Buraya kadar gelmiş olduk. Burada o pump sorusu falan var. Buna şimdilik gerek yok. Sizlerin sormak istediği başka bir şey yoksa transistörlerle ilgili kısım buraya kadar. Dediğim gibi önümüzdeki 9. hafta olan bayram haftasından sonraki hafta 27'sinde ders yok.
+
+259
+00:54:20,532 --> 00:54:34,072
+Sınava da sadece dersi, daha önce almış olan dersi, önce alan lap notunu yükseltmek.
+
+260
+00:54:35,672 --> 00:54:41,351
+Şurasına vize 1 diyeyim. Yani çoğunuzu yükseltmek isteyen girecek.
+
+261
+00:54:42,911 --> 00:54:45,652
+Dersi daha önce alan ama. Dersi daha önce alan.
+
+262
+00:54:46,036 --> 00:54:58,496
+Dolayısıyla sınıfın çoğunun zaten girmeyecekler. Eski dönemlerdeki labnotu düşük öğrencilerdi. Eğer labnotu yükünden memnun olsa o öğrenci de aynı şekilde girmeyebilir.
+
+263
+00:55:00,456 --> 00:55:06,496
+Evet, benim bu haftalık anlatacaklarım bunlar. Sizlerin sormak istediği sorular var mı arkadaşlar?
+
+264
+00:55:11,315 --> 00:55:30,515
+Yok zannedersem. Baya bir dersin derse ilgi yoğundu. Artık izlerseniz, buradan takip ederseniz, anladığınız kadar sınavlarda cevaplarsınız. Katılan arkadaşlara özellikle teşekkür ediyorum. Kendinize çok iyi bakın. Hepinize iyi bayramlar şimdiden.
+
+265
+00:55:32,980 --> 00:55:40,480
+İlk vizelerimiz büyük ihtimalle online olacak ama tekrar final zamanı yüz yüze sınavlarımıza başlayacağız.
+
+266
+00:55:40,960 --> 00:55:43,000
+Kendinize iyi bakın arkadaşlar. Görüşmek üzere.
+
+267
+00:55:43,920 --> 00:55:46,019
+Biz teşekkür ederiz hocam. İyi bayramlar.
+
+268
+00:55:46,180 --> 00:55:49,579
+İyi bayramlar herkese. Görüşmek üzere arkadaşlar.

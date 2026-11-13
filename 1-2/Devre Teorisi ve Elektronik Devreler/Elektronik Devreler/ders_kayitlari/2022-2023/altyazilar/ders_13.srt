@@ -1,0 +1,1555 @@
+1
+00:03:40,659 --> 00:03:43,699
+Merhaba arkadaşlar. Günaydın.
+
+2
+00:03:45,840 --> 00:03:47,039
+Merhaba hocam.
+
+3
+00:03:47,520 --> 00:03:48,219
+Günaydın hocam.
+
+4
+00:03:48,879 --> 00:04:04,579
+Şöyle bir iki dakika daha bekleyelim. Katılımcılar şöyle bir artsın. Şöyle beş geç ekibi dersimize başlayalım. Bu hafta soru çözümleriyle devam edeceğiz. Beş geçe görüşmek üzere o zaman.
+
+5
+00:06:29,779 --> 00:06:35,839
+Evet, merhabalar arkadaşlar. Sesim geliyor. Bir seste sorun yoktur umarım.
+
+6
+00:06:39,348 --> 00:06:40,247
+Geliyor hocam.
+
+7
+00:06:40,247 --> 00:07:02,388
+Tamamdır. Şimdi bu haftadan itibaren bugüne kadar şu zamana kadar görmüş olduğumuz teorik kısımlarla alakalı soru çözümlerine başlayacağız. İlk önce arada bazı hatırlatmalarımız da olacak. Onunla alakalı soru çözümlerini de hemen arkasından gerçekleştireceğiz.
+
+8
+00:07:02,767 --> 00:07:10,167
+İlk başlarda hatırlıyorsanız diyotları görmüştük. İdeal halini hatırlayacak olursanız diyotu.
+
+9
+00:07:10,451 --> 00:07:37,391
+En temel gösterim bu şekildeydi. Herhangi bir iç gerilimi yokken belli bir değerin üstüne çıktığında artı eksi ve diyon ne yapıyordu? Akım üzerinden akmaya başlıyordu. Eksi gerilimlerde ise şu bölgede ise herhangi bir akım akmıyordu. Pozitif tarafa niye geçmiyor diye soracak olursanız zaten bir kısa devre gibi davranıyordu diyebiliriz.
+
+10
+00:07:38,451 --> 00:08:00,911
+üzerinde herhangi bir gerilim birikmesi olmaz. Sıfırı biraz geçtiğinde yani v diyor büyük sıfır dediğimiz zaman sıfır artı epsilon kadar bir zaman sonra yani burada tam sıfırın üstünde gösterilmiş ama aslında sıfır artı epsilon kadar bir şey sonra kısa devre olarak üzerinden akımı geçiriyor. Daha sonra ne yapmıştık?
+
+11
+00:08:01,396 --> 00:08:20,896
+Üzerine, aslında bunun ideal diyotların belli bir iç gerilimi aşması gerektiği, Deplation Region'ı aşması için buna gerek olduğunu, Silisyum'da buranın 0.7, Ondan sonra Germanyum'da 0.3 olduğunu söylemiştik.
+
+12
+00:08:21,427 --> 00:08:28,528
+Ondan sonra biraz daha gerçekçi bir modelleme geçtiğimizde aslında bunun bir iç direncinin de olduğunu söylemiştik.
+
+13
+00:08:28,528 --> 00:08:41,227
+Aslında bizim diyot eğrimiz bu şekilde de gözükse de aslında biraz daha eksponansiyel olarak belli bir threshold'dan sonra akımı gerçekleştiriyordu hatırlarsınız.
+
+14
+00:08:42,067 --> 00:08:44,567
+Basit soru çözümleriyle devam edelim.
+
+15
+00:08:45,491 --> 00:08:58,831
+Öncelikli olarak basit bir devrede örneğin bir gerilim kaynağı bağladığınız silisyum diyot var ve de bir k'lık bir direnç var. Devre kendi içerisinde tamamlanacaktır.
+
+16
+00:08:58,831 --> 00:09:11,871
+Burada bakın şu A noktasındaki uç, şuraya da B noktasındaki uç diyelim. A noktasının toprağa göre olan gerilimi 10 volt.
+
+17
+00:09:12,224 --> 00:09:32,923
+B noktasının toprağa görülme olarak daha düşük. Bilmiyoruz şu an için. Ama silisyumun artı bacağında, burası daha çok toprağa yakın. Bakın burası toprağa. Aslında bunu böyle yaparken şöyle gerilim kaynağını şöyle de gösterebiliriz aslında. Buralar toprağa bağlanmış gibi de düşünebiliriz.
+
+18
+00:09:33,875 --> 00:09:42,275
+Eksi ucu toprağa daha yokun olduğu için bu silisyum içerecektir. Geçirmeye başlayacaktır.
+
+19
+00:09:42,275 --> 00:09:52,456
+Bütün gerilim, bakın burada geçireceği için daima çünkü DC bir kaynak. Bu devamlı o motor ediyor.
+
+20
+00:09:52,995 --> 00:09:54,195
+Ne yapacak arkadaşlar?
+
+21
+00:09:55,935 --> 00:10:00,000
+Bütün gerilim burada direncin üzerinde.
+
+22
+00:10:00,000 --> 00:10:21,660
+üzerinde düşecek. Yani burada 10 voltlu bir geldim bulunacak. Dolayısıyla devreden akan akım iyi ana kol akımı diyelim buna. 10 volt bölü 1 kilo 10. Bu da ne işti arkadaşlar? 10 çarpı 10 üzeri eksi 3. Yani 10 mili ampere eşit.
+
+23
+00:10:27,059 --> 00:10:37,299
+Burada şeyleri vermiş, ne demiş? Diyot karakterisinin Vdq ve Idq nedir demiş. Burada 10 mA bulduk.
+
+24
+00:10:37,299 --> 00:10:42,899
+Burada niye 2 kV vermiş bunu? Alttaki direnci.
+
+25
+00:10:42,899 --> 00:10:49,059
+Orayı yanlış yapmış. 10 mA verdiğine göre burası 1 olmalı.
+
+26
+00:10:49,059 --> 00:10:53,619
+Ondan sonra şimdi burada
+
+27
+00:10:53,940 --> 00:11:12,940
+Loadline'ı geçelim şimdilik. Onun dışında, tabi burayı da geçmemiz lazım çünkü 0.7, 9'luk bir diyelim düşürmüş orada. Ona gerek yok şimdilik. Onu daha sonra farklı sorular da açıklarız.
+
+28
+00:11:13,740 --> 00:11:19,780
+Evet, aynı şekilde bir soru daha var. Burada da bir Silisyum diyot var.
+
+29
+00:11:20,179 --> 00:11:46,359
+Burada tabii silistüm diyetimiz üzerinde eğer 0.7 düşmüşse ona göre davranmak lazım. 0.7 volt düşmesi gerekecek. 0.7 volt düşünecek. Burada 9.3 volt. Gerçekçi hesap yapacak olursak. 9.3 volt düşünmemiz lazım. 9.3 olunca 9.3 bölü 1 kilo ohm.
+
+30
+00:11:46,703 --> 00:11:51,624
+Bu da yaklaşık 9.3 çarpı 10 üzeri eksi 3'e dönüşür.
+
+31
+00:11:52,363 --> 00:12:01,803
+Gerçekçi bir hesaplamada ise 10 mA yerine aslında 9.3 mA hesaplamamız gerektiğini bilmemiz lazım arkadaşlar.
+
+32
+00:12:03,663 --> 00:12:06,983
+Evet, buradan devam edelim.
+
+33
+00:12:07,475 --> 00:12:27,236
+Şimdi burada direk zaten söylemiş, ben bir silisyum diyot veriyorum demiş. Diyotun üstünde düşen gelin silisyum olunca 0.7 volt olmuş oluyor. Dolayısıyla bu ağ ucunda 8 volt var. Bakın şöyle direkt toprağa giden bir 8 volt var.
+
+34
+00:12:27,764 --> 00:12:39,983
+Bir de diyot ve direnç üzerinden toprağa giden bir 8 volt daha var. Dolayısıyla buradan itibaren A kolundan iki tane paralel kol uzanıyormuş gibi düşünebilirsiniz.
+
+35
+00:12:39,983 --> 00:12:52,963
+Yani benim VA noktamın gerilimi ve diyot artı ve direnç gittiğimde. VA kaçtı arkadaşlar? 8 volt.
+
+36
+00:12:53,460 --> 00:13:00,460
+V diyotun üzerinde 0.7 volt düşecek artı direncin üzerinde düşen gerilim.
+
+37
+00:13:00,460 --> 00:13:10,660
+Buradan da ne diyeceğiz arkadaşlar? 7.3 volt eşittir. Direncin üzerindeki gerilimi nasıl hesaplarız arkadaşlar?
+
+38
+00:13:17,844 --> 00:13:35,584
+2.2 kilo, buradan 7.3'ü 2.2 kilo bölümde benim direnç üzerinden geçen, aynı zamanda diyotun üzerinden de geçen ana kol akımım 3.32 mA olarak bulunmuş.
+
+39
+00:13:37,344 --> 00:13:45,064
+Devam edelim diyot sorularına arkadaşlar. Şu ana kadar bir sorusu olan var mı? Soru sormak isteyen?
+
+40
+00:13:47,508 --> 00:14:08,948
+Yok zannedersem. Evet arkadaşlar, burada da hem silisyum hem de germanyum diyotlar seri olarak bağlanmış. Şimdi bu noktada, yani buraya A noktası diyelim, 12 volt artı 12 volt diyorsa anlayın ki aslında bu.
+
+41
+00:14:09,524 --> 00:14:15,963
+Şöyle bir devre aslında. 12 voltluk bir DC paynak bağlanmış devre gibi düşünebilirsiniz.
+
+42
+00:14:15,963 --> 00:14:19,403
+Peki VA noktası neye eşit olacak?
+
+43
+00:14:19,884 --> 00:14:31,844
+VA noktası V silisyum artı, yorun toplu, V germanyum artı V R.
+
+44
+00:14:32,283 --> 00:14:36,183
+Bu V R'nin bir diğer adı da aslında V out.
+
+45
+00:14:36,724 --> 00:14:44,144
+Aynı zamanda. Yani toprağa göre olan gelinme noktasında gelinme.
+
+46
+00:14:45,144 --> 00:14:49,644
+Şimdi buradan bize neler sormuş, neler çıkarabiliriz bakalım.
+
+47
+00:14:50,259 --> 00:15:07,059
+12 volt eşittir. Silisyumda 0.7 volt iletime geçti. Bunları hep iletime geçti. DC beslemede devamlı iletime geçecek gibi düşünmemiz lazım. Artı 0.3 artı VR.
+
+48
+00:15:12,307 --> 00:15:21,388
+11 volt eşittir Vr. Yani şu Vout eşittir Vr eşittir 11 voltmuş.
+
+49
+00:15:21,388 --> 00:15:33,067
+Şimdi şu direncin üzerinden geçen akımı bulabilmek için ise Vr bölü R yani 11 volt bölü 5.6k
+
+50
+00:15:33,652 --> 00:15:57,972
+1.96. Demek ki bu ana koldan 1.96 mA geçiyor olacak. Burada bilinen bu devrenin biraz daha çözüm devresini oluşturmuşlar. A noktası bakın 12 volt toprağa göre. Bu diyotun üstünde 0.7'lik.
+
+51
+00:15:58,419 --> 00:16:10,879
+Ve de ikinci diyotun üstünde 0.3'lük buna ters olarak bağlanmış gerilimlerden oluşuyor. Ona göre bu düşümü yapıyoruz arkadaşlar.
+
+52
+00:16:13,359 --> 00:16:20,879
+Bakın burada güzel ve değişik bir soru var. Dikkat edin buralarda hep biz toprağa gitmiştik.
+
+53
+00:16:26,772 --> 00:16:42,212
+Şu A noktasına 10 volt bağlanmış, şurada ise eksi 5 volt var. Bu devreyi nasıl düşünmeliyiz? Aslında bu devreyi düşünürken şöyle düşüneceğiz arkadaşlar.
+
+54
+00:16:44,352 --> 00:16:47,352
+Bu 10 voltluk kısım aslında şöyle bir...
+
+55
+00:16:47,988 --> 00:17:13,208
+Toprağa bu şekilde gidiyor. 10 volt bu noktadan bağlanmış. Eksi 5 volt ise şöyle düşüneceksiniz. Tersten bağlanmış bir 5 volt üzerinden toprağa gidiyor. Yani eksi 5 volt olarak söylememiz lazım. Bu şekilde bir çevreyi konuyor. Topraktan toprağa gideceğiz. Bu durumda ana koldan geçen akımı nasıl buluruz? Bakın.
+
+56
+00:17:13,619 --> 00:17:28,339
+10 volt A noktasına göre düşündüğümüz burası şuraya göre, toprağa göre 1 ve 2 nolu uçlar birbirine paralel değil mi? 1 ve 2 nolu çevreler birbirine paralel. Dolayısıyla gelimleri eşit olmak zorunda.
+
+57
+00:17:41,203 --> 00:17:50,804
+Burada ne diyeceğiz arkadaşlar? Eksi E2. Yani eksi 5 voltu söyleyeceğiz burada.
+
+58
+00:17:52,083 --> 00:18:03,083
+Şimdi buraya baktığımızda, şuraya eksi 5 voltu yazdığımızda, karşı defa geçirdiğimizde 15 volt.
+
+59
+00:18:04,051 --> 00:18:29,791
+Eksi silisyum diyor 0.7 volt eşittir. Vr1 artı Vr2'ye eşit olmuş olacak. Bu da 14.3 volt eşittir. Vr1'i nasıl yazabiliriz? Bakın buradan geçen ana koldan geçen akımın hepsinde sabit. I çarpı V1 artı I çarpı V2.
+
+60
+00:18:30,387 --> 00:18:38,927
+Ortak parantez alırsak, I R1 artı R2 eşittir 14.3 oldu.
+
+61
+00:18:40,528 --> 00:18:48,307
+Bunu yaptıktan sonra, bakın, artık neye ihtiyacım var benim?
+
+62
+00:18:48,736 --> 00:19:07,076
+R1 artı R2'nin değeri ne benim için? 4.7 artı 2.2K. Kaç edecek burası? 5.9 kilo on. Demek ki şurası 5.9 kilo onmuş.
+
+63
+00:19:07,076 --> 00:19:16,336
+Demek ki ana kolaklımı şöyle bulacağım. 14.3 volt bölü 5.9 kilo on.
+
+64
+00:19:16,915 --> 00:19:26,076
+Burada verilmiş mi bakalım. Verilmiş. Hemen buradan hesaplayacak olursak.
+
+65
+00:19:41,844 --> 00:19:55,963
+K 10 üzeri 3 yukarı çıkarsa 10 üzeri eksi 3 olur veya 2.42 mili amper şeklinde ana koldan geçen akımı hesaplayabiliriz arkadaşlar.
+
+66
+00:19:58,224 --> 00:20:02,324
+Evet, [öğrenci] anlaşılıyor mu çözümler şu ana kadar?
+
+67
+00:20:04,184 --> 00:20:06,164
+Evet hocam biraz anlıyorum.
+
+68
+00:20:07,384 --> 00:20:09,423
+Tamam, biraz değil tam anlaman lazım.
+
+69
+00:20:10,132 --> 00:20:12,412
+Sorun var mı? Anlaşılmayan bir yer var mı?
+
+70
+00:20:13,992 --> 00:20:15,271
+Şu an için yok hocam.
+
+71
+00:20:15,952 --> 00:20:17,512
+Tamam. Emir?
+
+72
+00:20:20,791 --> 00:20:21,731
+Nasıl gidiyor?
+
+73
+00:20:21,751 --> 00:20:22,132
+Sadece hocam.
+
+74
+00:20:23,392 --> 00:20:24,932
+Anlaşılıyor mu? Nasıl? Çözümler?
+
+75
+00:20:24,932 --> 00:20:26,032
+Evet anlaşılıyor hocam.
+
+76
+00:20:26,672 --> 00:20:28,912
+Tamam. Sevda?
+
+77
+00:20:31,092 --> 00:20:32,072
+Anlaşılıyor hocam.
+
+78
+00:20:33,172 --> 00:20:33,812
+Tamamdır.
+
+79
+00:20:34,675 --> 00:20:43,795
+Sorularınız olursa parmak, hani burada şey var ya, geççilerde parmak kaldırma gibi, onları hemen yazın veya çete yazın, haberim olsun arkadaşlar. Oldu mu?
+
+80
+00:20:45,275 --> 00:20:49,235
+Şimdi aynı şekilde çözüme devam ediyoruz.
+
+81
+00:20:50,476 --> 00:20:51,355
+Burada ise...
+
+82
+00:20:51,731 --> 00:21:13,592
+Artık iki tane diyot bağlanmış. Buradaki sordukları ne? I1, I2 ve de ID2. Yani benim direncim ana koldan I1 dediği şuradan geçen akım. I2 dediği zannedersem buradan geçen akım.
+
+83
+00:21:15,028 --> 00:21:20,327
+ve de I D 2 buradan geçen akımı bulmamızı istiyorum.
+
+84
+00:21:21,367 --> 00:21:23,288
+Peki bunun için ne yapacağız arkadaşlar?
+
+85
+00:21:25,088 --> 00:21:34,288
+Baktığımızda şu B noktası için, B noktası ile şu C noktasından dolayı benim...
+
+86
+00:21:34,740 --> 00:21:58,099
+R1 üzerinden hangi akım geçiyor olacak arkadaşlar? Bunlar birbirine paralel olduğu için. Ve de bakın 20 voltluk bir besleme var. Dolayısıyla silisyum diyotların ikisi de iletimde. İkisi de silisyum. Demek ki VBC eşittir. V diyot 2 olması lazım. Bu da 0.7 volt. Öyle mi iletimdeyken?
+
+87
+00:21:58,900 --> 00:22:25,900
+Dolayısıyla R1 direncin üzerinde, yani I R1 çarpı 3.3K eşittir. Arkadaşlar 0.7 demiştim. Buradan I R1 veya burada I R1 demiş mesela, 0.212 mA.
+
+88
+00:22:26,740 --> 00:22:50,019
+Bu arada size açıkçası şey yapayım. Biraz daha mesela 0.212 mA. Bunu mikroamper cinsinden belirtecek olsanız ne yaparsınız arkadaşlar? Mikroamper cinsinden. Ne yapmanız lazım? 1, 2, 3.
+
+89
+00:22:50,579 --> 00:23:03,820
+Bilimi kayıtlarım. 212 mikroamper aslında. Bunu miliampere çevirin dediğim zaman 1, 2, 3. Ondan sonra miliampere çeviriyorsunuz. Aklınızda olsun.
+
+90
+00:23:04,380 --> 00:23:13,079
+Miliampere dediğimiz zaman 10 üzeri 3, 10 üzeri eksi 3. Mikro dediğimiz zaman 10 üzeri eksi 6. Aklınızda olsun.
+
+91
+00:23:13,079 --> 00:23:14,699
+Tamam bunu buldum.
+
+92
+00:23:16,819 --> 00:23:44,219
+Ne hesaplamamız lazım arkadaşlar? Bizim burada diyotun üzerinden de belli bir akım geçiyor. Ondan sonra şuradaki diyotun üzerinden de geçiyor aynı şekilde. Bir de bakın şuradaki çevre buradan ne girecek? I1. Şuradan ne gelecek? ID2. Neye eşit olacak arkadaşlar o?
+
+93
+00:23:44,756 --> 00:23:46,976
+I2'ye eşit olacak.
+
+94
+00:23:48,556 --> 00:23:52,296
+Burada artık şeyi hesaplamamız lazım.
+
+95
+00:23:52,956 --> 00:23:59,236
+Diyot üstünde geçen şu akımı bulabilmek için şuradaki çevreyi oluşturmamız lazım.
+
+96
+00:23:59,236 --> 00:24:03,836
+Diyelim burada E eşittir.
+
+97
+00:24:03,936 --> 00:24:06,355
+Şöyle E eşittir.
+
+98
+00:24:13,203 --> 00:24:22,063
+V diyot 2 artı Vr2. Yani şuradaki direncin üzerine düşen geldim.
+
+99
+00:24:22,063 --> 00:24:35,063
+Diyelim 20 volt eşittir 0.7 artı 0.7 artı I2 çarpı V2. Buradan ne olacak arkadaşlar?
+
+100
+00:24:39,731 --> 00:25:01,471
+Eşittir I2 çarpı R2. R2 değerimiz de belli bizim. R2 değerimiz kaç? 5.6k. 5.6k10. İse benim I2 değerim arkadaşlar 3.32mA olmuş oluyor.
+
+101
+00:25:02,852 --> 00:25:05,451
+Şurada yazdığım eşitliğe göre neydi?
+
+102
+00:25:06,612 --> 00:25:33,491
+Diyotik'in üzerinden geçen akım artı bir IR1 demiştim. Burada I1 demişler buna. Zaten burada belirtiyormuş. I1 diyelim. Tamam oradaki tanıma uyuyalım. I1 dedik. Neye işte olacak? I2. Yani kısaca şunu demek istiyor. Eğer bu devre çalışıyorsa, şu noda göre söyleyecek olursam buradan bir akım geliyor.
+
+103
+00:25:34,228 --> 00:25:47,228
+Buradan bir akım geliyor. Bir de buradan bir akım çıkıyor. Dolayısıyla I, D2, I1 bunların toplamı neye eşit olacak? I2'ye eşit olacak. Bunu söylüyor.
+
+104
+00:26:01,523 --> 00:26:04,523
+Mili amperlik akım aktığını görüyorum.
+
+105
+00:26:09,203 --> 00:26:22,004
+Evet, bunlar diyotlarla alakalı sorulardı. Bununla alakalı sormak istediğiniz bir kısım yoksa şahit yavaştan doğrultuculara doğru geçiş yapalım arkadaşlar.
+
+106
+00:26:22,004 --> 00:26:32,304
+Evet, şimdi böyle bir input gelimi verilmiş. Bu input gelimi artı eksi.
+
+107
+00:26:32,980 --> 00:26:55,740
+Tamam, şuradan uygulanıyor. Şu A noktasından uygulanıyor. Benim çıkışım nasıl olur diyor burada. Şimdi en basitinden düşünecek olursam, benim pozitif ve A noktasına pozitif gelip uyguladığımda, pozitif gelip uyguladığımda, burası diyot.
+
+108
+00:26:56,127 --> 00:27:17,688
+Benim diyotum iletimde olmayacak. Ne zaman iletime geçer bu arkadaşlar ancak? A noktası B noktasından gerilim olarak düşük olduğunda iletişime geçer. Demek ki benim pozitifken yani bu input kısmın şuradaki kısımda ben iletimde olmayacağım.
+
+109
+00:27:20,596 --> 00:27:43,135
+Burası kopuk olacak. Burasını kopuk gibi düşünün o zaman. Tam böyle burası kopuksa. V-out dediğim şey şu B noktasının gerilimi. Ne olacak? Herhangi bir gerilim bağlanmayan direncim üstünde ne olur? Hiçbir gerilim olmaz. Demek ki pozitifken ben aslında kırmızıyla V-out çizdiğimi düşünün.
+
+110
+00:27:48,051 --> 00:27:56,391
+Ne zaman iletime geçecek? Negatif gerilimler verdiğimde, yani şuraları verdiğimde ise ne olacak?
+
+111
+00:27:56,391 --> 00:28:09,631
+A noktasının gerilimi B noktasından düşük olacak. Burası iletime geçtiğinde, şöyle iletime geçtiğinde ideal gibi düşünüyoruz. Kısa devre olacak.
+
+112
+00:28:14,291 --> 00:28:30,932
+VB noktasına eşit olacak. Yani A'ya ne verilirse B aynısını çıkacak. Yani V aynısını verecek. Yani şurayı verecek. Bakın kırmızıyla geçtiğim çözüm aslında bir yarım dalga doğrultma yapıyor.
+
+113
+00:28:38,847 --> 00:28:57,048
+Bu ortalaması nedir? Zaten ilk başta Voutput'unun DC seviyesini bulun demiş. Bu zaten bir yarım dalga doğrultucu. Bu yarım dalga doğrultucu kendini aynı şekilde tekrar ediyor.
+
+114
+00:29:02,675 --> 00:29:19,836
+Yarım dalga doğrultucuda 0.318 ile çarpıyorduk. Aklınızda olsun. Yarım dalgada. Tam dalgada ise 0.636 ile çarpıyorduk. Çünkü onda en azından iki dalga var bu şekilde.
+
+115
+00:29:20,531 --> 00:29:45,031
+İki tane silisyum, iki tane cycle da aşağı doğru inmiş durumda. Bakın burada eksiyle çarpmasının nedeni biliyoruz ki biz bu eksi taraftaki şeyi geçirmiş, cycle'ı geçirmiş. Dolayısıyla eksideki maksimum gelin nedir bunun? V max. Bu V max'ı 0.318 katı eksili olarak.
+
+116
+00:29:45,748 --> 00:30:11,648
+20 volt uygulanmış. Eksi 6.36. Bunun DC seviyesi arkadaşlar. Ortalaması yani. Altta kalan. Ben bu böyle bir mesela bunun sadece altta kalan alan ne demek? Şu demek arkadaşlar. Şurada mesela altta kalan alan benim bir periyot boyunca şöyle. Altta kalan alanım bu olsun. Ona eşit altta kalan alan.
+
+117
+00:30:12,115 --> 00:30:33,215
+Bütün şey olarak, bütün periyoda yayacak olursan şu kadar alan olmuş oluyor. O da şuradaki değeri 0.318 olmuş oluyor. O yüzden 0.318 ile çarpıyorum. Bu Vmax'ın 0.318'i kadar olmuş oluyor.
+
+118
+00:30:39,412 --> 00:30:42,192
+Negatif saykıları geçirdiğimizi göstermiş.
+
+119
+00:30:43,392 --> 00:30:59,292
+Şimdi sorunun ikinci kısmında diyor ki, ilk çözdüğünüz soru da diyor, ideal olarak kabul ettiğiniz diyotu, bunu ideal olarak kabul ettiğimiz diyotu silikisyon bir diyotla, silikon bir diyotla değiştirin diyor.
+
+120
+00:31:00,092 --> 00:31:02,032
+Bu durumda ne olacak diyor.
+
+121
+00:31:04,032 --> 00:31:06,492
+Bu sefer ne olacak arkadaşlar?
+
+122
+00:31:07,667 --> 00:31:10,627
+Şunu da hesaba katmamız gerekir bu durumda.
+
+123
+00:31:11,124 --> 00:31:29,443
+V maksimumdan, bakın burada iletim durumunda artı eksi 0.7 volt oluşacak. Dolayısıyla onu silmemiz gerekiyor. V maksimumdan düşmemiz gerekiyor.
+
+124
+00:31:37,875 --> 00:31:41,875
+6.14V'da inmiş oluyor.
+
+125
+00:31:43,875 --> 00:32:00,683
+Şimdi baktığımızda, buradaki eğer 6.36'dan 6.14'e indiğinde, bakın 0.22V'luk bir düşüş yaşadık.
+
+126
+00:32:01,044 --> 00:32:18,044
+Bu 0.22 voltluk düşüş, yaklaşık gelimin %3.5'ü kadar bir düşüş yaşamışız. Bir de ne diyor? A ve B şıklarını...
+
+127
+00:32:18,079 --> 00:32:43,220
+Eğer girişteki gerilim 200 olursa, bunu 200 yaparsak ne olur diyor. Tamam. Burada idealmiş gibi düşündüğüm A şıkkında 0.318 Vmax kullanıyordu. Burada bakın giriş gerilimde eksi 63.6 DC seviyesine sahip oldu.
+
+128
+00:32:43,827 --> 00:33:09,127
+Bakın, daha sonra diyotu üzerinde silisyum olarak kabul edecek olursak 0.7V onu düştüğümde bakın burada 63.6 ile 6.38 arasında ne kadarlık fark var?
+
+129
+00:33:12,723 --> 00:33:39,783
+2, 5'den 3, 22, 0.22 voltluk bir fark var yine. Ama bu 63 voltun yüzde olarak çok çok düşük bir kısımla tekabül ediyor. Dolayısıyla giriş gerilimi arttıkça, buradan çıkartacağımız sonuç şu, giriş gerilimi arttıkça artık diyotun üzerinde düşen gerilimin
+
+130
+00:33:40,147 --> 00:33:42,967
+Çok bir manası kalmamış oluyor arkadaşlar.
+
+131
+00:33:47,827 --> 00:33:50,548
+Evet, devam edelim.
+
+132
+00:33:50,968 --> 00:33:58,567
+Hocam, yukarıdaki soruda neden 0.318'e çarptığınızı kaçırdım da ben tekrar bahseder misiniz?
+
+133
+00:33:59,768 --> 00:34:02,388
+Şu kısmı değil mi? Şuradaki kısmı.
+
+134
+00:34:03,587 --> 00:34:03,968
+Evet.
+
+135
+00:34:04,807 --> 00:34:10,568
+Şimdi onun doğrultukla ilgili dersleri seyretmiş miydin?
+
+136
+00:34:11,923 --> 00:34:15,523
+Hani yarı doğrultucu, tam doğrultucu ile alakalı derslere.
+
+137
+00:34:15,844 --> 00:34:17,384
+Ha, katılmıştım derslere.
+
+138
+00:34:17,384 --> 00:34:37,123
+Şimdi şöyle düşünecek olursam, normalde ben bir output üretiyorum. Eğer benim output'um şöyle diyelim, bir cycle'ını geçirip öbürkünü geçirmiyorum diyelim. Bu farklı versiyonlarda da olabilir. Yani şöyle bunu geçirip öbürkünü geçirmez mesela.
+
+139
+00:34:37,844 --> 00:34:59,123
+Veya bizim sorumuzda olduğu gibi mesela bir cycle düşün. Şurayı sıfır. Diğer bir tarafın. Yani tam bir cycle'ın, şurada görmüş olduğunuz cycle'ın farklı bölgelerini geçirebilirim değil mi ben? Şurayı geçirirsem burayı geçirmiyorum. Veya tam tersi düşünelim.
+
+140
+00:35:02,083 --> 00:35:04,123
+Bunu geçirdim, bunu geçirmedim.
+
+141
+00:35:05,076 --> 00:35:11,536
+Yani benim saykılardan birini geçirmeme durumunda şöyle bir şey oluyor.
+
+142
+00:35:12,296 --> 00:35:21,895
+Output'um, bak şöyle bir şey. Bunun altında kalan alan, yani bunun ortalaması nedir diye soruyorlar bana.
+
+143
+00:35:21,895 --> 00:35:26,956
+Yani t boyunca ortalaması nedir? Bunu nasıl bulursun matematiksel olarak?
+
+144
+00:35:27,668 --> 00:35:41,728
+Altta kalın işaretin ortalama. Bu AC bir işaret. Sadece belli bir cycle'ı geçmiş. Eğer ben bunu bir DC seviyeli işarete dönüştürecek olsam, bu T boyunca.
+
+145
+00:35:54,260 --> 00:36:01,640
+Geçseydi o periyot boyunca şuradaki alan, şuradaki alana eşit olmak zorunda. Öyle değil mi?
+
+146
+00:36:03,440 --> 00:36:15,480
+Eğer ben buradaki gelimi AC olarak verdim. DC seviyesi devamlı bir periyot boyunca uygulanacaktır.
+
+147
+00:36:15,480 --> 00:36:21,780
+E peki bu VDC'yi nasıl bulabilirim? Enerjinin tek saykılda geçirilmişse.
+
+148
+00:36:22,483 --> 00:36:40,683
+Buradaki Vmax değerine göre 0.318 Vmax'a denk geliyor. Şu seviye. Seçersem bu alan şuradaki alana eşit olmuş olur.
+
+149
+00:36:40,683 --> 00:36:46,283
+Peki şöyle diyebilirsin. Bunu niye yaptık?
+
+150
+00:36:46,835 --> 00:37:10,715
+Sonuçta işaretin DC seviyesi şu şekilde ifade ediliyor. Bak bir periyot boyunca. Amacım şuradaki şeyi bulmak. Değeri bulmak. Dolayısıyla bir periyot boyunca gitmiyor tabii ki bu kırmızı kısım. Pardon kırmızı kısım. Şuradan itibaren sıfır.
+
+151
+00:37:11,155 --> 00:37:14,576
+Ama bunun bir ortalaması var. Eğer T boyunca düşünecek olursa.
+
+152
+00:37:15,036 --> 00:37:22,095
+Mesela altta kalan alanların birbirine eşit olmasını sağlayarak hesabı yapıyoruz.
+
+153
+00:37:22,215 --> 00:37:24,055
+Peki buradaki kısım ne oluyor o zaman?
+
+154
+00:37:25,015 --> 00:37:27,895
+0.318 V max oluyor.
+
+155
+00:37:28,055 --> 00:37:30,755
+Peki, aynı şekilde sorayım sana.
+
+156
+00:37:31,895 --> 00:37:34,755
+Eğer ben bir işaret verdim.
+
+157
+00:37:37,972 --> 00:37:50,992
+Bir periyot boyunca yukarı doğru çıkardım diyelim. Bu durumda benim VD'sim ne olmuş olur arkadaşlar? VD'si tek olsaydı burada olacaktı.
+
+158
+00:37:51,292 --> 00:37:56,891
+Eğer ikinci bir cycle çıktıysa altta kalan alan iki katına çıkacak.
+
+159
+00:37:57,460 --> 00:38:05,659
+Bu da arkadaşlar 0.636 Vmax'a eşit oluyor. Burası Vmax olmak üzere.
+
+160
+00:38:06,440 --> 00:38:21,860
+Yani sinüs hesabından geliyor. Sinüsün bir saykılının altta kalan alanı bizim volt DC altta kalan alanının 0.318 katı bizim DC seviyemizi veriyor.
+
+161
+00:38:23,180 --> 00:38:24,000
+Anlaşıldı mı?
+
+162
+00:38:25,268 --> 00:38:31,108
+Anladım hocam şey mi istiyor bizden? VDC'yi sonra da mı sormuştu? Orayı da kaçırdım ben de.
+
+163
+00:38:38,164 --> 00:38:39,764
+Tamamdır. Teşekkür ederim.
+
+164
+00:38:41,284 --> 00:38:50,923
+Şimdi burada ise farklı bir yapı verilmiş. Burada nasıl bir şey göstereceğiz arkadaşlar?
+
+165
+00:38:51,923 --> 00:38:58,564
+10 voltluk bir sinizoylar işareti verilmiş. Eğer 10 volt verildiyse ne olacak arkadaşlar?
+
+166
+00:38:58,564 --> 00:39:05,503
+Pozitif cycle'da yani şuradayken hangisi çalışacak? A noktasındaki uçlardan burası.
+
+167
+00:39:06,099 --> 00:39:07,939
+Şurası iletimde olacak.
+
+168
+00:39:09,939 --> 00:39:19,059
+Bu iletim üzerine geldiğimde şu D noktasından C noktasına giderken şöyle bir şey olmuş olacak.
+
+169
+00:39:19,059 --> 00:39:28,319
+Bakın benim şurası iletimde ise A noktası burası, D noktası burası.
+
+170
+00:39:29,396 --> 00:39:38,016
+Şurada 2.2 ile öbür 2.2 ne olmuş olacak arkadaşlar? Birbirine seri bağlanmış olacak.
+
+171
+00:39:39,155 --> 00:39:47,396
+Diğer 2.2 ise, şuradaki 2.2 ise bunlara paralel olarak bağlanacak.
+
+172
+00:39:48,556 --> 00:39:53,836
+Dolayısıyla benim A ve B uçları arasındaki gerilim nedir?
+
+173
+00:39:54,963 --> 00:40:10,984
+V, A, B uçları arasındaki gerilim nedir? Aynen V input ile eşittir. Yani şuradaki görüyorsunuz zaten. Burada 10 volt var. Peki V output olarak neresi tanımlanmış? Dikkat edin.
+
+174
+00:40:11,804 --> 00:40:21,943
+V output olarak neresi tanımlanmış? Şuradaki 2.2 voltun üzerinde artı uç sağda olacak şekilde tanımlanmış.
+
+175
+00:40:22,324 --> 00:40:32,324
+Geliyorum buradan, bakın, artı uçtan geliyorum ve output burası tanımlanmış. Devam ediyorum ve buradan çıkıyorum.
+
+176
+00:40:32,324 --> 00:40:45,324
+Bu durumda, bunlar birbirinin eşlenik direnci olduğu için dirençler üzerinde 5 voltlar düşüyor. Yani ben ve outputta bunu göreceğim.
+
+177
+00:40:45,588 --> 00:41:07,588
+Öyle değil mi? Ama yarısını göreceğim. Giriş 10 volt iken yarısı 2 kilo ohmda, yarısı 2 kilo ohmda düşer. Eğer bunlar 2 kilo ohm, 2 kilo ohm olmasaydı şayet, örneğin burası 3 kilo ohm, burası 7 kilo ohm olsaydı, dikkat edin bunun üzerinde 3 volt sadece düşecekti.
+
+178
+00:41:13,588 --> 00:41:22,228
+Evet, gelelim negatif cycle'a gelelim. Peki negatif cycle'da ne olacak arkadaşlar?
+
+179
+00:41:23,507 --> 00:41:29,487
+Negatif cycle'a bakalım. Benim negatif cycle'ımda bunu pozitifi gördük.
+
+180
+00:41:30,347 --> 00:41:36,588
+Negatifine gelelim. Böyle negatif. Çünkü burada negatif gelin varsa bu sefer...
+
+181
+00:41:37,043 --> 00:42:02,983
+Nereden iletim olacak arkadaşlar? Bu bir kere çalışmayacak. Negatif olduğu için bu çalışmayacak. Burası negatif olduğu için, burası daha, A noktası C'den daha düşük yerinde olduğu için burası çalışacak. Burası kısa devre. Burası kısa devre. Burası kısa devre olunca nasıl yapacağım yapıyı? Şöyle yapacağım. Burası A ucu olmuş olacak.
+
+182
+00:42:03,539 --> 00:42:27,539
+Kısa devrem oraya geliyor. Benim 2.2 kilo mum, yani şu 2.2 kilo mum, bu şekilde burası da C noktası olduğuna göre, artı eksi V'yi mutlu bağlanıyor.
+
+183
+00:42:29,492 --> 00:42:32,352
+Kısa devre olduğu için bunu buraya taşıyacaksınız.
+
+184
+00:42:33,812 --> 00:42:36,692
+Peki, şu nokta neresi? Şu nokta.
+
+185
+00:42:37,612 --> 00:42:41,472
+Bu noktada tam böyle şurasına denk geliyor.
+
+186
+00:42:43,432 --> 00:42:48,352
+Ve de Voutput'un üzerinde tanımlandığı gelin üzerinden gideyim.
+
+187
+00:42:48,352 --> 00:42:51,072
+Eksi ucundan geliyor, öbürküne gidiyor.
+
+188
+00:42:51,632 --> 00:42:54,732
+Şöyle dirençimin bir tanesi burada, bir tanesinin burada.
+
+189
+00:42:55,231 --> 00:43:20,751
+V-output nasıl tanımlanmış? Bu şekilde tanımlanmış. Gördüğünüz gibi. O da 2.2. Peki buradan A'dan negatif gerilim saykıl uyarlandığına göre bakın 2.2'nin üzerine de şu negatif saykıl düşüyor. Buraya da aynı saykıl düşüyor. Dikkat edin.
+
+190
+00:43:21,331 --> 00:43:37,072
+Ben burada 10 voltu, eksi 10 voltdayım. Eksi 10 voltu şu 1 ve 2 nolu dirençlere paylaştırıyorum. Yani eksi 5, eksi 5 paylaşılacak. Bir dikkat edeceğiniz nokta da bu.
+
+191
+00:43:37,503 --> 00:44:03,523
+Şu arkadaşlar, bakın şurasına B noktası diyelim. Zaten B demişiz orada. Dikkat edin. B noktası, pardon üzüllerim. B noktası burası olmuş oluyor. Şurası B noktası oluyor. Şu nokta ise diyelim ki B üstü noktası olsun. Yani şurası B üstü noktası olsun.
+
+192
+00:44:04,211 --> 00:44:18,652
+B üstü noktası arkadaşlar negatif kaynağa daha yakın. Yani negatif saykıl için konuşuyoruz. B noktası ise toprağa daha yakın ama negatif kaynaktan daha yüksek gerilime sahip.
+
+193
+00:44:18,891 --> 00:44:29,591
+Dolayısıyla ters kutuplama yapıldığı için burada, ters kutuplama yapıldığı için benim negatif saykılımda aynı şekilde negatif saykılımda da
+
+194
+00:44:29,876 --> 00:44:46,916
+Geçirme yapacağım şey. Mesela burada pozitif saykılda 5 voltu geçirmiştim. Negatif saykılda aynı şekilde ters bağlantı olduğu için 5 voltu geçireceğim. Bir parmak kaldırmıştım. Buyurun.
+
+195
+00:44:47,916 --> 00:44:53,195
+Hocam kusura bakmayın. Orayı kaçırıp ufak da 2.2 kilo ama nasıl geldik 2 kilo ondan?
+
+196
+00:44:53,664 --> 00:45:02,923
+Bir daha söylermişsin biraz sesle. 2.2 kilo mu nasıl bulduk hocam? 2 kilo ondan onu bir kaçırın. Pardon, pardon. 2.2 kalmış. 2 kilormuş o ya.
+
+197
+00:45:02,923 --> 00:45:03,224
+Tamam.
+
+198
+00:45:04,443 --> 00:45:20,264
+Benim öbür sorulardan 2 kalmış aklımda. Burada ters kutuplama olduğu için arkadaşlar, benim negatifte uyarlamış olduğum, negatif verdiğim gelinim burada terste gözüktüğü için şöyle, şöyle.
+
+199
+00:45:20,864 --> 00:45:24,963
+Eksi artısı bu şekilde bağlanmış olduğu için.
+
+200
+00:45:25,523 --> 00:45:27,584
+Negative Cycle niye çizmemiş burada?
+
+201
+00:45:28,523 --> 00:45:29,664
+Çizmiştir peki.
+
+202
+00:45:30,443 --> 00:45:35,164
+Ben ikinci Negative Cycle'da ve Output'ta nasıl alıyorum arkadaşlar?
+
+203
+00:45:35,744 --> 00:45:38,644
+Pozitife çekilmiş gibi düşünüyorum.
+
+204
+00:45:39,724 --> 00:45:42,304
+Bu kısma kadar sorusu olan var mı?
+
+205
+00:45:45,907 --> 00:45:55,587
+Output'um burada negatif yönden aldığı için pozitifmiş gibi düşünüyoruz.
+
+206
+00:45:56,188 --> 00:46:01,007
+Burada ise pozitif saykılı zaten artı eksi. Pozitif saykılı yukarıdaydı.
+
+207
+00:46:01,588 --> 00:46:15,887
+Tabii ki ya bu uçtan paralelleşiyor ya bu uçtan. Ya B üstünden paralelleşiyor ya B'den. İlkinde B'den paralelleşmişti, ikincisinde B üstünden paralelleşiyor dirençler diyelim.
+
+208
+00:46:16,847 --> 00:46:28,447
+Sonuçta çıkış olarak ben, bakın bu iki saykılı da geçirdiği için, hem bir hem iki nolu saykılı da geçirdiği için bu tam dalga doğrultucu.
+
+209
+00:46:30,675 --> 00:46:55,855
+Olarak adlandırılıyor. Benim bunun DC seviyesini bunun dediği zaman şunu söylüyor. Eğer bunun DC seviyesi altta kalan alanların ortalaması yani şu altta kalan alanlar benim şu her saygılımın altta kalan alanıyla eşit olacak şekilde hesaplanmalı. Bu da aslında tekini biliyoruz.
+
+210
+00:46:56,244 --> 00:47:20,184
+Eğer burası Vmax ise, Vmax'ımız kaç artık? Çıkışta 5 oldu. Bunun 0.636 katı. Yani iki tane yarım dalga doğrultucu. İki tane yarım değil mi? Bir tanesi bu saygı. 2x0.318. 0.636 çarpı Vmax.
+
+211
+00:47:20,672 --> 00:47:48,231
+Max'a göre bir değer yakır. Bu da arkadaşlar 3.18V. Demek ki benim, ben bu işaretin bir periyot boyunca ortalamasını çizin deselerdi bana, demek ki 3.18V desem, burada kalan, altta kalan alan, şu yeşille çizdiğim, maviyle çizdiğim sinüslerin,
+
+212
+00:47:48,916 --> 00:47:58,195
+Her iki saykının altında kalan alana eşit olmuş oluyor arkadaşlar. Buraların DC seviyesi olarak kabul ediliyor.
+
+213
+00:47:59,996 --> 00:48:02,416
+Evet, sorumuz var mı gençler?
+
+214
+00:48:06,771 --> 00:48:15,971
+Anlaşılıyor mu? Bir bakalım soralım ya. Herkes anlıyor galiba. Zaten basit anlamamızı da bekliyoruz tabii ki. [öğrenci].
+
+215
+00:48:20,500 --> 00:48:23,779
+Mustafa Hoca, sesim geliyor mu?
+
+216
+00:48:29,043 --> 00:48:55,583
+[öğrenci] yok. [öğrenci] burada mısın? Evet buradayım hocam. Anlaşılıyor mu? Anlaşılıyor hocam. Şey soracaktım. Bu V max'ı 5 volt almamızın sebebi bize V out olarak belirlediği kısmından 5 volt geçiyor olmak değil mi? Yani her iki biliyorsun şu yapıyı hatırla tekrar.
+
+217
+00:48:56,275 --> 00:49:00,775
+Bu girişe ne uygulanıyor? 10 volt uygulanıyor. Değil mi? Evet.
+
+218
+00:49:00,775 --> 00:49:07,775
+Şu A ve B uçları arasında, mesela şu 2 kilomun üzerinde olsaydı veyahut bu, buna 10 volt düşecekti.
+
+219
+00:49:07,835 --> 00:49:15,675
+Ama burada 2K, 2K, 2'ye ayrıldığı için 5'e düşmesinin nedeni o. Yani paylaştırılıyor dilençler arasında diyebiliriz.
+
+220
+00:49:16,235 --> 00:49:17,195
+Anladım, teşekkür ederim.
+
+221
+00:49:17,195 --> 00:49:18,375
+Tamamdır.
+
+222
+00:49:21,495 --> 00:49:23,195
+Şimdi...
+
+223
+00:49:24,115 --> 00:49:25,396
+Gelelim.
+
+224
+00:49:25,396 --> 00:49:25,856
+Hocam.
+
+225
+00:49:26,476 --> 00:49:26,996
+Efendim.
+
+226
+00:49:26,996 --> 00:49:29,956
+Bir yukarıdaki soruya tekrar dönebilir miyiz?
+
+227
+00:49:30,356 --> 00:49:30,856
+Evet.
+
+228
+00:49:34,452 --> 00:49:43,372
+Burada diyotun üzerinden geçerken, biz ortadan geçirdik ya, şu alttaki iki kilo mu neden tercih etmiyor sadece?
+
+229
+00:49:45,772 --> 00:49:48,932
+Bir daha alayım şeyi.
+
+230
+00:49:50,512 --> 00:49:55,352
+Zikzaklı geçmek yerine sadece tek bir direnç olan yolu neden tercih etmiyor?
+
+231
+00:49:55,912 --> 00:49:57,412
+Şöyle mi geçsin diyorsun?
+
+232
+00:49:58,432 --> 00:50:00,372
+Yok, o şekilde zaten geçmiyor muydu.
+
+233
+00:50:00,916 --> 00:50:25,916
+Öyle geçmiyor tabii ki. Yani baktığında bu devrenin mesela şöyle diyelim. Bu devreyi daha açıkça yapacak olursak seçim diye bir şey yok zaten. Geldim buradan gelin buradan geçin. A noktasına geldin. A noktası şurası bak. Öyle değil mi? A noktası orası.
+
+234
+00:50:27,188 --> 00:50:44,967
+Bir koldan giderken iki tane seri 2.2 kilo on var. Bak, bir, iki, seri on. Bir de bunlara paralel 2 kilo on var. Şurası B noktası, burası B noktası. Anladın mı? Senin sorun neydi tam olarak?
+
+235
+00:50:45,607 --> 00:50:47,487
+Hocam akım iki kola mı görünüyor?
+
+236
+00:50:47,487 --> 00:50:51,387
+Tabii. Bir tane seri, o burası.
+
+237
+00:50:52,179 --> 00:51:02,579
+Bak, maviyle göstereyim. Bir tane seri paralel. İki tane seri. Bak böyle gidiyor. Aslında uzatmışım buradan. Bakın o böyle bağlanıyor.
+
+238
+00:51:02,960 --> 00:51:05,559
+Tamam hocam. Ben bu kısma takılmıştım. Teşekkürler.
+
+239
+00:51:05,559 --> 00:51:18,940
+Tamamdır. Evet, geldik. Derste de çözmüş olduğumuz bu tarz Clipper Devreleri önemli arkadaşlar. Bu Clipper Devrelerinden
+
+240
+00:51:19,443 --> 00:51:24,443
+soracağım. Yani Kriper Devresi'nin nasıl yapıldığını soracağım arkadaşlar.
+
+241
+00:51:25,963 --> 00:51:32,204
+Şimdi böyle bir devre verdiğimde, bakın, böyle bir devre verdiğimde analizi nasıl yapıyorduk?
+
+242
+00:51:33,384 --> 00:51:46,384
+Şimdi girişin değerleri bunlar. Yani ben girişlerden örnek alsam, şu kırmızıyla noktaladığım gerilimleri sanki şu VI'den uyguluyormuş gibi düşünebilirim.
+
+243
+00:51:46,675 --> 00:52:05,755
+Örneğin, sıfır verdiğimde çıkışı çizeyim. Çıkışı da yeşille çizdim. Mesela sıfır volt verdiğimde buraya, yani şuradaki kırmızıdaki sıfır volt. Ne olacak? Zaten burada ben oradan Vİ'den sıfır versem bile.
+
+244
+00:52:06,547 --> 00:52:26,087
+Artık diyotun pozitif ucunda, yani A ucunda, B ucuna göre daha yüksek gelin var ve hala iletimde olacak. İletimde olunca burası kısa devre olacak. Kısa devre olunca ve outputta ne gözükecek arkadaşlar? 5 volt gözükecek değil mi?
+
+245
+00:52:28,115 --> 00:52:45,115
+Şurada bakın, şurası 5 volt gözükçü. Şu kırmızıya, input'a karşı yeşil output oluştu. Peki ben 1 volt versem, 2 volt versem, 2 volt verdiğimde...
+
+246
+00:52:45,903 --> 00:53:07,683
+Veya 1 volt, 2 volt verdiğimde ise bu 5 volt da eklenecek. Yani aslında ben buradaki gelimi arttırdıkça, örneğin şurada bir 2 volt var diyelim. 2 volt versem burada o zaman 2 artı 5. Yani A ucunda ve A'da 5 artı 2 volt. 7 volt hala iletimde.
+
+247
+00:53:12,436 --> 00:53:26,816
+İlkine 5 vermiştik burada yeşil nokta olarak veya mavi yapayım daha güzel gözüküyor. Burası 5 voltlu.
+
+248
+00:53:26,816 --> 00:53:39,936
+2 uyguladığımda ne verecek oraya? 2 uyguladığımda 7 volt verecek. 2 uyguladığımda 7 volt verecek.
+
+249
+00:53:40,500 --> 00:53:51,259
+5 uyguladığımda, bakın pozitif gerilimlerin hepsinde, mesela buraya 20 de versem, en maksimumda 20 artı 25.
+
+250
+00:53:51,259 --> 00:53:59,179
+20'nin üzerine eklenecek. Yani tam şurada 20'deyim. Şurada 25 vereceğim. 5 volt versem, 10 volt gelecek.
+
+251
+00:54:05,748 --> 00:54:14,628
+Farklı gelen bir geriliğim sıfıra geldiğinde, yani şuradaki sıfıra geldiğinde tam burada 5 voltta duracak.
+
+252
+00:54:14,628 --> 00:54:25,628
+Bakın, geldim. 5 voltta duracak. Geldim. Şimdi ters duruma geçiyorum. Pozitif saykılda...
+
+253
+00:54:26,452 --> 00:54:40,252
+0 bile versem, 0 bile versem ne oluyor bu? İletimde olduğu için V'i artı 5 volt çıkışta gözüküyor.
+
+254
+00:54:42,072 --> 00:54:53,012
+Şimdi şeye bakalım, 0'dan aşağı inelim. Örneğin buraya eksi 1 verdim. İletimde olacak mı? Yine iletimde olacak.
+
+255
+00:54:53,492 --> 00:55:15,452
+Örneğin, eksi 1 verdim diyelim, 4'e inecek. Eksi 1 verdim, 4'e indi. İndirdim. Eksi 2 verdim, ne olacak? 3'e inecek. Eksi 2 verdiğim zaman 3'e indi. Bakın iniyorum oradan. Eksi 4'e verdiğim zaman, eksi 1'e inecek. İndirdim.
+
+256
+00:55:16,724 --> 00:55:28,164
+Eksi 5 verdiğim zaman, eksi 5 artı 5 voltu getirecek ve iletimde olmayacak. Artık burası açık devre.
+
+257
+00:55:29,164 --> 00:55:36,964
+Açık devre olduğunda ne olacak arkadaşlar? Çıkışta 0 volt gözükecek.
+
+258
+00:55:42,516 --> 00:55:56,876
+Eksi 5 volt seviyesine geldiğimde tam o anda şu mavi çizgi tam burada sıfıra vurmuş olacak. Tam eksi 5 voltu verdiğim zaman.
+
+259
+00:56:07,092 --> 00:56:13,492
+Ne olacak? Şöyle dikmesini çizeyim. O ana kadar çıkış sıfırda olacak.
+
+260
+00:56:13,492 --> 00:56:19,632
+Eksi 5'in üstüne çıktığı kısımlarda yeşille çiziyorum orayı.
+
+261
+00:56:19,632 --> 00:56:25,532
+Eksi 5 voltun altına indiğinde, eksi 4, eksi 3, eksi 2 dediğinde,
+
+262
+00:56:25,532 --> 00:56:33,972
+bu sefer burası eksi 3, eksi 2 bile olsa ne olacak? 5 volttan düşüyorlar mı? 2 volt veya
+
+263
+00:56:34,164 --> 00:56:51,923
+3 volt olacağı için iletime geçmeye başlayacak. Yavaş yavaş onları da çizdirecek olursak böyle iletime başlayacak. Dikkat edin. Ben Cycle'ın öbür tarafına da sarkmış vazettiğim. Bakın şuraları sileyim.
+
+264
+00:57:01,300 --> 00:57:19,980
+Ben aslında şurada, saykının öbür tarafına da sarktım. Bakın. Yani eksi beş olduğu noktaya kadar geldim. Anca orada sıfırlandım. Bakın. Burada her noktada, şu arada beş volt var. Şurada beş volt var.
+
+265
+00:57:20,436 --> 00:57:33,356
+Bu şekilde çıkışıyı belirliyorum. Sizde bu sorularda ödev de verdim zaten. Bu tür kritik gerilimleri bulup çıkışı doğru bir şekilde çizdirmeye çalışacaksınız arkadaşlar.
+
+266
+00:57:45,684 --> 00:58:07,924
+İstenilen çıktıları rahatlıkla çizebileceksiniz. Tabi burada farklı konfigürasyonlara muhakkak çalışın. Bazen burada olduğunu düşünün. Ondan sonra bazen gelimin diyotun böyle de bağlanabilir, böyle de bağlanabilir, seri kolda da olabilir, paralel kolda da olabilir. Hepsine bir bakın arkadaşlar muhakkak. Anlaştık mı?
+
+267
+00:58:09,344 --> 00:58:12,624
+Bu soruyla alakalı şeyiniz var mı?
+
+268
+00:58:14,164 --> 00:58:38,724
+Sorumuz yok zannedersem. Burada da ayrıntılı anlatılmış. Bir de bakın burada çizdiğimiz sorumuz var aynı şekilde. Bakın öbür saykıla kadar varıyoruz. Öbür saykıda nerede kesiliyor bu? Bakın eksi beş volta kadar gelmişiz. Yani şu nokta aslında benim.
+
+269
+00:58:39,119 --> 00:58:48,440
+Eksi 5 volt'a şuraya geldiğim nokta, şurası. Eksi 5 volt'u kestiğim yer. R kadar yukarı kalkıyor yani sizin üstün bir tarafa.
+
+270
+00:58:50,019 --> 00:59:03,860
+Evet, bu soruları arkadaşlar dersin ders duvarına elektronik devre sorular 1 pdf şeklinde yüklemiş durumdayım. Oradan bakarsınız.
+
+271
+00:59:06,356 --> 00:59:16,236
+Evet, şimdi bir Zener soruna geldik. Zener nasıl çalışıyordu? Bunu anlatmak isteyen var mı arkadaşlar?
+
+272
+00:59:20,596 --> 00:59:24,375
+Evet. Zener'imiz nasıl çalışıyor bizim?
+
+273
+00:59:26,215 --> 00:59:27,875
+Diyodu ters bağlıyoruz.
+
+274
+00:59:28,415 --> 00:59:35,235
+Evet. Zener'in çalışma mantığı. Mesela bu bir Zener, 10 voltluk bir Zenermiş.
+
+275
+00:59:36,835 --> 00:59:42,435
+Eğer 10 voltluk bir Zener ise şayet ne olması lazım arkadaşlar?
+
+276
+00:59:43,284 --> 00:59:50,784
+Eğer bu gerilimi geçmiyorsa, yani O-Molt şu noktaya, A noktasına, O-Molt.
+
+277
+00:59:52,063 --> 00:59:57,704
+O-Molt'un üzerinde bir gerilim düşmüyorsa şayet, ne olacak arkadaşlar?
+
+278
+00:59:58,704 --> 01:00:00,344
+Açık devre gibi davranacak.
+
+279
+01:00:01,584 --> 01:00:02,884
+Önce oradan başlayalım.
+
+280
+01:00:03,804 --> 01:00:05,884
+Burada bir gerilim bölücü devre var değil mi?
+
+281
+01:00:06,264 --> 01:00:09,023
+Baktığımızda şu A noktası diyelim.
+
+282
+01:00:09,556 --> 01:00:35,776
+Şurasına da B noktası. Peki burada VB'yi nasıl buluruz arkadaşlar? VB'yi nasıl buluruz? Burada bir gelin bölcü var mı? Gelin bölcü devre var değil mi? Şöyle diyebiliriz. A noktasından uygulanan gelin 16 volt. Ona seri 1 kilo 10 var.
+
+283
+01:00:36,563 --> 01:00:48,243
+Tam B noktasına geldiğimde bakın bir tane toprağa giden RL gelim yani 1.2 kilo mu var.
+
+284
+01:00:49,623 --> 01:00:53,043
+Şu B noktasındaki gelimi nasıl buluyorduk arkadaşlar?
+
+285
+01:00:55,263 --> 01:00:58,963
+B noktasındaki gelim BB eşittir.
+
+286
+01:01:00,163 --> 01:01:01,603
+Buraya da VA diyelim.
+
+287
+01:01:02,612 --> 01:01:22,032
+R2 bölü, yani R2 burası olsun, burası da R1. R2 bölü, R1 artı R2'den gelin bölüşmeme. Yani benim toplam direncimin içinde senin ne kadar payın, R2'nin ne kadar payı varsa.
+
+288
+01:01:22,612 --> 01:01:47,992
+Örneğin ikisi de 1K olsaydı ne olacaktı? 1 bölü 2 olacaktı. Yarım yarım paylaşacaklardı. V A'daki gelin. Ama farklı dirençler olduğu için ne diyeceğiz? R1 artı R2 toplam direnç. R2 ise o direncin yani R2'nin üzerine düşen pay. R1'in üzerine düşen pay ne? R1 bölü R1 artı R2.
+
+289
+01:01:49,300 --> 01:02:01,680
+Burada öncelikli olarak onu hesaplamış. 16 volt, 1.2K şeklinde. Benim reykim 1.2K. 8.73 demiş.
+
+290
+01:02:10,931 --> 01:02:21,431
+10 voltluk zenerinin üstüne 8.73 düşüyormuş. Dikkat edin. Zener nasıl çalışıyor? Tekrar edelim. Şöyle verildiğinde.
+
+291
+01:02:23,471 --> 01:02:33,451
+Eğer üzerine, bu mesela 10 voltluk bir zener diyelim. Eğer siz bu artı eksi ucuna 8 volt bağlarsınız.
+
+292
+01:02:33,648 --> 01:02:50,807
+Bu açık devre gibi davranır. 7 bağlarsanız açık. Yani 10 voltun altındaki bütün gerilimlerde bu açık devre gibi davranacak. Yani üzerinden herhangi bir akım akıtmayacak. Ne zaman gerilim artık şey olmaya başlıyor arkadaşlar?
+
+293
+01:03:01,523 --> 01:03:25,503
+Ve büyükse VZener'den transistör artık açık devre değil, neyse artık tanımlı oldu. Gelin 10 voltluk bir kaynak. Mesela siz bunun üzerine 10 voltu aşacak bir gelin düşüyorsa şayet, dikkat edin bu üzerine sadece 10 voltluk kısmını alıyorum.
+
+294
+01:03:26,387 --> 01:03:51,228
+Örneğin buraya 12 volt verdim. Direnç de bağlayalım buraya. Şöyle şuradan uygulayalım. V gerilimi 12 volt oldu diyelim. Dikkat edin burada sadece üzerine 10 voltluk direnci alır, gerilimi alır. Geri kalan 2 volt direnci kalır.
+
+295
+01:03:52,115 --> 01:04:04,115
+Aştığı zaman, tanımlı olduğu, zenerin tanımlı olduğu, zener gelimi aşıldığı zaman sadece üzerine tanımlı olduğu gelimi alıyor, gerisini almıyor.
+
+296
+01:04:04,795 --> 01:04:17,456
+Aklınıza şöyle kalsın zaten, dikkat edin, B ve toprak uçları arasında eğer zener 10 voltluk zener bağlanmışsa, R'lerin üzerine maksimum 10 volt düşer.
+
+297
+01:04:17,844 --> 01:04:44,304
+İstediğiniz kadar VI'yi arttırın. Bakın VI'yi orada 16. İstediğiniz kadar arttırın. Şu B uçlarına, direncin bu paralel burnuna sadece bir üzerindeki gerilim kadar yapar. Yani aslında RL'yi korur. Sana maksimum ben 10 voltlu kısmı vermiş oluyorum diyorsunuz aslında. Bir nevi kısıtlayıcı gibi düşünebilirsiniz.
+
+298
+01:04:44,800 --> 01:05:01,780
+Üzerindeki aşılan gelin, uygulanan gelin, devreye uygulanan gelin artınca. Bu durumda arkadaşlar, devreden ne geçer arkadaşlar? Artık devrenin akımını rahatlıkla bulabiliriz.
+
+299
+01:05:09,907 --> 01:05:31,668
+VL'nin üzerine ne düşecekmiş buraya? VL 8.73 volt düşüyor. Eğer VL 8.73 volt ise R'nin üzerine 7.27 yani bunların toplamın 16 voltu verecek.
+
+300
+01:05:31,956 --> 01:05:39,276
+IZ, yani burası açık olduğuna göre, IZ kaç olacak arkadaşlar? 0 bu, 0 amper.
+
+301
+01:05:43,155 --> 01:06:01,295
+Z'nin harcadığı güç, güç hesabı arkadaşlar V çarpı I şeklinde bulunabiliyor. VZ çarpı IZ şeklinde Z'nin harcayacağı gücü bulabiliriz. IZ sıfır olduğu için sıfır var. Herhangi bir şey düşmüyor.
+
+302
+01:06:01,295 --> 01:06:10,215
+Peki, aynı soruyu diyor ki, RL'yi bu sefer 3 kilo ohm yaparak bulunduruyor bize.
+
+303
+01:06:10,675 --> 01:06:35,615
+3 kilo 10 verdiğimizde işler değişiyor. Yani burası 1.2 iken 8.73. 3 yaparsak bunu artık 4'te 3'ü R'lerin üzerine düşeceği için bu sefer bakın 4'te 3'ü. Yani 3 bölü 3 artı 1 çarpı 16 var.
+
+304
+01:06:35,987 --> 01:06:58,208
+Eşittir 12 volt. Bakın, buraya düşen uç, yani şu B noktasına gelen gerilim, 10 voltu aştı. Yani zener gerilimini aştı. Bu durumda ne olacak arkadaşlar? Şöyle davranacak zener baktığımızda. Burası gibi olmayacak. Şöyle.
+
+305
+01:06:59,347 --> 01:07:08,827
+Burada 10 volt olacak. Sağ tarafa gösterdi. Geri kalan bütün şey 6 volt ise 1K'nın üzerine düşecek.
+
+306
+01:07:09,908 --> 01:07:17,088
+Bakın bu şekilde devre bu hale gelmiş oldu bu durumda. Bu durumda bakalım gelinlere.
+
+307
+01:07:17,088 --> 01:07:20,008
+VL 10 volt. Tamam.
+
+308
+01:07:20,884 --> 01:07:33,163
+Bu Vr'nin üzerinden 6 volt. Tamam. Çizmeyeyim, lazım olacak. 6 volt. Evet, burası da tamam.
+
+309
+01:07:33,163 --> 01:07:47,243
+Peki bu I3'ün, yani 3 kilo ohm'un üzerinden ne kadarlık bir akım akar? 10 volt bölü 3 kilo ohm, 3.33. Demek ki burada 3.33 amper akıyormuş, mili amper akıyormuş. Okey.
+
+310
+01:07:47,891 --> 01:08:10,831
+Peki, burada ben şu b noduna göre düşünecek olursam ne yazmam lazım? I akımı, yani şuradaki genel I akımı ne eşit olacak? Şuradan çıkan IZ, IZ artı bu koldan giden şöyle.
+
+311
+01:08:12,179 --> 01:08:36,399
+Şöyle, I, L akımla eşit olacak. Şu noda göre çıkanları kırmızıyla çizeyim. I akımı, I, Z, I, L olacak. Dolayısıyla sırasıyla bu akımları bulmamız lazım. Şu direncin üzerindeki gelinim, düşümünü biliyordum. O, 3.33 Amper.
+
+312
+01:08:37,140 --> 01:09:03,140
+Bunun üzerindeki yerimi de biliyorum 6 volt buna düşüyor. Dolayısıyla bunun üzerinden de 6 mA düşüyor. Yerlerine koyacak olursak 6 mA eşittir. 6 mA burada eşittir. IZ'yi bilmiyorum. Artı 3.33 mA. Bu durumda IZ ne olacak arkadaşlar?
+
+313
+01:09:06,195 --> 01:09:32,636
+2.67 mA olacak. Demek ki buradan bir akım atacak. Kaynağın üzerinden akan akım 2.67 mA'miş. Bu durumda bu Zener çalışmaya devam eder mi etmez mi? Ona bakacağız. Soruda da zaten dikkat edin şöyle bir şey varmış. Bu Zener'in çalışma gücü 30 mW'miş.
+
+314
+01:09:33,024 --> 01:09:54,424
+30 milivat. 30 milivatı geçtiği zaman bu zener yanar. Yani üzerinden artık koruma özelliği kalmaz. Tamamıyla devreden çıkar. Paralel çalışma özelliği devreden çıkar. Peki bu durumda ne diyeceğiz? Hesabını yapalım.
+
+315
+01:10:00,000 --> 01:10:14,460
+çarpı, gerilimi de 10 volt. Bu neyi verdi bize? 26.7 milivalt. Yani 30 milivaltın altında kaldığı için görevini yapmaya devam ediyor arkadaşlar. Görevini yapıyor.
+
+316
+01:10:16,960 --> 01:10:24,180
+Evet. Sorumuz var mıydı? Bu zenal hakkında.
+
+317
+01:10:26,036 --> 01:10:27,736
+Anlaşıldı mı bu kısımda?
+
+318
+01:10:31,507 --> 01:10:54,268
+Tamam. Şimdi başka bir Zener sorusuna daha geçiyoruz. Burada aynı deminki soruya benzer yine 10 voltluk bir Zener var. Zenerin üzerinden geçecek maksimum vakımı vermişler bu sefer. 32 mA.
+
+319
+01:10:54,931 --> 01:11:11,271
+Ne zaman geçer bu? 10 voltu aştığı zaman. Üzerine düşen gelin 10 voltu aşacak ki ancak o zaman ne yapar bu? Akım. Üzerindeki bu 32 miliampere, maksimum 32 miliampere geçirebiliyor.
+
+320
+01:11:11,271 --> 01:11:18,332
+Buraya da bir ayarlı direnç koymuşlar arkadaşlar. Yani ben istediğim değere ayarlayabiliyorum.
+
+321
+01:11:18,688 --> 01:11:31,847
+Deminki sorudan hatırlayın. 1.2K'dan 3'e geçirdiğim zaman transistör 10 moduna geçmişti. Ve üzerinden zen en üzerinde 10 modluk gerilim kalmıştı.
+
+322
+01:11:46,931 --> 01:12:05,791
+RL ve IL'nin rençlerini, çalışma aralıklarını bulun diyor. Ki burada diyak bozulmasın, 10 voltluk çalışma, koruma gerilimini sağlasın diyor.
+
+323
+01:12:14,159 --> 01:12:40,779
+Ne yapıyoruz arkadaşlar? RL minimum bulabilmek için. Burada dikkat edin. V-VZNR dediğimiz ne olmuş oluyor? V input'umuz bizim 50V. 50V'dan 10V'u çıkarıyoruz. Bakın aslında benim neredeki gelimim oluşmuş oluyor.
+
+324
+01:12:41,555 --> 01:13:03,915
+Benim 1K üzerindeki gelişim 40 volt oluşmuş oluyor. Peki bu durumda burası 40 volt oluştuğu zaman burası da 10 volt çalıştığı durumu kastediyorum. Ancak bu durumda R'le en düşük değerinde olabilir.
+
+325
+01:13:08,659 --> 01:13:21,199
+40 volt bölü, 1K değerim ne verecek bana arkadaşlar? 40 miliamperi verecek.
+
+326
+01:13:21,199 --> 01:13:33,659
+Bu durumda 40 miliamperdeyim ve bu durumda benim diyotum açıkken yani 10 volta varmak üzereyken
+
+327
+01:13:36,576 --> 01:13:51,775
+Ne yapıyorum burada? Akım geçirdiğim zamanı aslında denk geliyorum. 40 mA denk geldi. Geri kalan 10V bunun üzerinde düşecek.
+
+328
+01:13:51,775 --> 01:14:01,376
+Burada 10V dedik. Evet 40 mA dedik.
+
+329
+01:14:01,536 --> 01:14:26,456
+40 mA, hangi direnci vermesi lazım? 10 volt, üzerinde 10 volt düşecek, eşit bölü. 40 mA çarpı ayarlı. Direnci de böyle göstereyim. Burada ne olacak arkadaşlar? Maksimum akımın aktığı, yani buranın açık devre olduğu, tamamıyla açık devre olduğu zaman.
+
+330
+01:14:27,091 --> 01:14:34,991
+10 volta dayandığı zamandır. Deminki sorudan hatırlayın. 10 volta dayandığı zamandır maksimum akım buradan akacak.
+
+331
+01:14:36,411 --> 01:14:43,031
+Maksimum akım aktığında bu DR'nin bakın maksimum akım 40 mA'de. V'nin maksimumu.
+
+332
+01:14:50,612 --> 01:15:13,992
+Ayarlı direncin üzerinde tam ona dayandığımız kısımda 40 mA oradan da geçecek. Çünkü IZ0 olacak orada. R kaç olacak bu durumda? 250 ohma geliyor. Bakın burası 250 ohma geliyor. Yani maksimum akımda direnç en küçükte olacak.
+
+333
+01:15:13,992 --> 01:15:17,332
+Şimdi devam edelim.
+
+334
+01:15:19,252 --> 01:15:37,872
+Burada da zaten onu göstermiş. Zaten 40 volt düşüyor üzerinde. Öreğin üzerinde 40 mil amper düşüyor. Peki ben buradan iletime geçtiğimi düşünün. Buradan demin 40 mil amper geçiyordu. Peki.
+
+335
+01:15:38,448 --> 01:16:00,028
+Ben buraya bir kaynak koysam şöyle, yani 10 voltu açtığımda burası 10 voltluk bir direnç olsa. Üzerinden maksimum ne kadarlık bir akım geçirecek? 32. Değil mi? Geri kalan 8 ise, 8 mA ise R üzerinden, yani ayarlı direnç üzerinden geçecek.
+
+336
+01:16:00,756 --> 01:16:17,916
+Ayarlı direnç üzerinden gelecek. Ama ayarlı direncin üzerinde de ne bulunacak? Yine 10 voltluk bir gelin bulunacak. Onu yapacak olursak 10 volt eşittir. 8 mili amper çarpı VL değeri dediğimiz zaman.
+
+337
+01:16:18,351 --> 01:16:40,351
+Oradan da 1.25K. Yani dikkat edin, akım artık buradan dağılmaya başladığı için, bakın 32 maksimumun çıktığına göre 8 mA ancak paralel koldan, yani yük direncinin üzerinden geçecek. Böyle olunca aynı gerilimi, üzerinde düşen gerilimi...
+
+338
+01:16:40,912 --> 01:16:48,652
+Eşit olabilmesi için R'lerin maksimize olması lazım. Bu da 1.25K'ya denk geliyor.
+
+339
+01:16:50,112 --> 01:16:56,632
+Bakın, R'lerin çalışma aralığı bu durumda 8 ile 40 mA arasında.
+
+340
+01:16:58,492 --> 01:17:07,472
+Peki, şey ne olacak? R'lerin çalışma aralığı 250 ile 1.25K arasında.
+
+341
+01:17:08,724 --> 01:17:16,344
+Burada, kabaca tekrar tekrar edecek olursam arkadaşlar baştan, iki tane durum söz konusu.
+
+342
+01:17:16,344 --> 01:17:18,464
+İki tane durum söz konusu.
+
+343
+01:17:20,164 --> 01:17:25,564
+Bir, buradan uygulanan gelin 50 volt olduğuna göre.
+
+344
+01:17:26,244 --> 01:17:27,264
+50 volt olduğuna göre.
+
+345
+01:17:28,423 --> 01:17:33,184
+Benim, şuradaki direnci ayarladığımı düşünün.
+
+346
+01:17:34,163 --> 01:17:45,803
+Eğer AB uçlarını, AB uçlarını örneğin 8'de düşürebilirim, 8 voltta, 9'da, 40 voltta düşürebilirim.
+
+347
+01:17:45,803 --> 01:18:02,023
+Ama ben bunu ayarlarken 10 voltun altında yani şu AB uçlarını ve AB uçları küçükken 10 volttan benim şeyim, zenerim.
+
+348
+01:18:02,452 --> 01:18:19,072
+Açık devre gibi davranıyor. Yani kopuk. Burası kopuk. Burası iptal olmuş oluyor. Bu durumda, dikkat edin arkadaşlar, maksimum akım nereden? Buradan maksimum akım geçecektir. Çünkü buradan hiçbir bölünme olmuyor.
+
+349
+01:18:19,731 --> 01:18:28,551
+Peki bu durumda çalışma aralığını soruyor bana.
+
+350
+01:18:28,979 --> 01:18:45,239
+Yine aynı şekilde transistör 10 volttan biraz önceye kadar, 10 volta çok kısa bir süre önceye kadar, 10 volta vardığında ancak, burası 10 volt diyelim, 10 volt diyelim, 10 volt diyelim.
+
+351
+01:18:55,840 --> 01:19:21,800
+Bu direncin üzerinden maksimum akım akıyor. Onu da şöyle belirlemiş durumdayız. 40 volt. Eğer ben 40 miliamper geçirirsem ve zenin üstünden 10 volt düşmeye yakın fakat hiç akım akmadığı zaman bu transistörün yüzeyi pardon ayarlanabilir direncin üzerinden ne geçecek arkadaşlar? 40 miliamper.
+
+352
+01:19:22,355 --> 01:19:38,755
+Peki 40 mA geçerken, 40 mA geçiyorsa buradan ama şey ne olacak? 10 volt paralel konu. AB noktaları arasındaki 10 volt var. 10 volt bölü, 10 volt eşittir. 40 mA.
+
+353
+01:19:39,444 --> 01:19:59,444
+Çarpı R ile ayarlanabilir. Ne olacak buradan? 250-10. Demek ki buna 250 dediğim zaman, 250-10 verdiğim zaman işin 5'te 1'ü buraya düşmüş oluyor. Yani 10 voltta geldiği sınır. Bunun çalışmaya başladığı zaman.
+
+354
+01:20:00,000 --> 01:20:07,280
+O yüzden burada 8 mA 40 volt, 40 mA maksimum akım.
+
+355
+01:20:08,000 --> 01:20:14,420
+Aynı zamanda 250 ohm da tam o andaki minimum direnç olmuş oluyor.
+
+356
+01:20:14,940 --> 01:20:19,640
+Peki, ben 10 voltu aştım.
+
+357
+01:20:20,400 --> 01:20:21,640
+10 voltu aştım artık.
+
+358
+01:20:21,640 --> 01:20:22,840
+10 voltu aştım.
+
+359
+01:20:28,180 --> 01:20:35,980
+Demin minimum akımı 0 diye hesaplamıştım. Minimum akım oradan üzerinden akım geçmesin ama o mod barındırsın demiştim.
+
+360
+01:20:36,399 --> 01:21:01,779
+Maksimum akimisi 32. Buradan 40 mA uyarı atıyordu. 32'si buraya giderse 8 mA da buraya gider. Bu durumda yine bunun AB uçları arasında 10 volt var. 10 volt eşittir. 8 mA çarpı R'le ayarlanabilir. Buradan ne çıkıyor? Bir nokta benim minimum akımım 8 olmuş oluyor.
+
+361
+01:21:03,956 --> 01:21:14,175
+Peki, RL direnci 8 mA'yken nereye çıkmış oluyor arkadaşlar? 1.25K'ya çıkmış oluyor. Anlaştık mı?
+
+362
+01:21:19,475 --> 01:21:28,956
+Evet, transistörlerle alakalı soruları da önümüzdeki haftaya bırakalım arkadaşlar.
+
+363
+01:21:30,756 --> 01:21:40,676
+Zannedersem bizim Arife günü yarım gün tatilimiz var değil mi arkadaşlar?
+
+364
+01:21:44,884 --> 01:21:46,243
+Öyle olmak lazım.
+
+365
+01:21:46,663 --> 01:21:56,224
+Yani dolayısıyla o gün ders yapılacak. O günde transistörlerle alakalı şu ikinci parti, yani transistörlerle ilgili soruları çözmeye başlarız.
+
+366
+01:21:57,203 --> 01:22:04,283
+Önceden sizler de çalışabilirsiniz, bakabilirsiniz. Temel transistör sorularını orada çözeceğiz.
+
+367
+01:22:05,743 --> 01:22:11,463
+Evet, bu haftalık bu kadar. Tekrar etmemi istediğiniz, anlamadığınız bir yer var mı acaba? Sorayım size.
+
+368
+01:22:14,515 --> 01:22:17,675
+Hocam, benim sorulardan bağımsız bir sorum vardı.
+
+369
+01:22:18,256 --> 01:22:18,515
+Tabii.
+
+370
+01:22:20,015 --> 01:22:27,155
+Clipper ve Clipper devrelerinde seri mi, paralel mi ben tam karar veremiyorum da onu nasıl anlayabiliyorduk?
+
+371
+01:22:27,576 --> 01:22:29,475
+Nasıl? Neyi kastediyorsun sen?
+
+372
+01:22:30,735 --> 01:22:36,336
+Bizim slide'da da vardı. Seri Clipper ve Clipper devreleri vardı ve paralel vardı.
+
+373
+01:22:36,752 --> 01:22:41,752
+Bir güç kaynağı, bir direnç, bir de diyottan oluşuyordu. Ama yerleri farklıydı.
+
+374
+01:22:44,972 --> 01:22:46,292
+Kaçın sürekliydi o?
+
+375
+01:22:47,852 --> 01:22:48,712
+Altı olabilir.
+
+376
+01:23:05,908 --> 01:23:06,628
+Makala.
+
+377
+01:23:13,460 --> 01:23:26,380
+Mesela burada paralel Clipper dediği zaman güç kaynakları paralel kolda ve input'a paralel olan kolda. Simple, Seri.
+
+378
+01:23:30,452 --> 01:23:46,192
+Pardon. Paralel Clipper dediği zaman Diot bizim paralel kolumuzda. Yani benim inputuma paralel olan kol neresi? Şu an Diot'un bulunduğu yer. Eli görüyorsun değil mi?
+
+379
+01:23:47,812 --> 01:23:48,872
+Evet hocam.
+
+380
+01:23:48,872 --> 01:23:52,172
+Paralel. Burası senin inputun, burası senin.
+
+381
+01:23:52,608 --> 01:24:19,387
+Paralel kolu olmak. Seri kol burası bak. İmputa serisi. Buradan itibaren paralelleşiyorsun. Paralel demesinin nedeni diyotun hep paralel kolda bulunması burada. Bak burada hep paralel kolda bulunmuyor. Seri ne zaman oluyor? Bak seri. Seri creeper. Bu diyot artık inputa hemen seri olarak devamında bağlanmış oluyor. Burada paralelleşiyor burada.
+
+382
+01:24:19,840 --> 01:24:29,259
+Bak bu seri kolda bulunduğu zaman ana kolda olmuş oluyor benim diyotum. Bu şekilde yorumlayabilirsin.
+
+383
+01:24:29,739 --> 01:24:31,340
+Tamamdır hocam, teşekkür ederim.
+
+384
+01:24:31,340 --> 01:24:32,099
+Rica ederim.
+
+385
+01:24:33,559 --> 01:24:44,380
+Evet, başka sorusu olan var mı? Başka sorusu olan yoksa arkadaşlar, haftaya tekrar görüşmek üzere diyelim.
+
+386
+01:24:44,948 --> 01:24:47,708
+Kendinize çok iyi bakın. Tekrar görüşmek üzere.
+
+387
+01:24:49,908 --> 01:24:51,448
+İyi günler.
+
+388
+01:24:51,448 --> 01:24:51,927
+Sağ ol.
+
+389
+01:24:52,488 --> 01:24:53,288
+İyi günler.
