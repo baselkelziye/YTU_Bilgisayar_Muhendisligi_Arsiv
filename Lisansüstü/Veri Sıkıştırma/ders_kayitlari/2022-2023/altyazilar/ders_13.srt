@@ -1,0 +1,2943 @@
+1
+00:00:53,875 --> 00:00:54,555
+İyi günler herkese.
+
+2
+00:02:30,740 --> 00:02:31,680
+Merhaba hocam.
+
+3
+00:02:31,980 --> 00:02:32,780
+Ne yapıyorsunuz?
+
+4
+00:02:34,060 --> 00:02:35,020
+İyiyiz hocam siz.
+
+5
+00:02:35,540 --> 00:02:40,700
+[kişisel bilgi]
+
+6
+00:02:41,960 --> 00:02:52,160
+Bu ara arkadaşlar, final takvimi belli olmuştu. Bizim finali ilk haftaya değil, ikinci haftanın pazartesine koymuşlardı.
+
+7
+00:02:52,756 --> 00:03:09,575
+Fakat lisansın da proje sınavları olduğu için benim aynı yerde iki sınavda olabilmem çok zordu. Çünkü yazılı olarak düşünüyorlar benim dersimi ki ben proje bakacağım. O yüzden sınav tarihinizi değiştirdim.
+
+8
+00:03:10,003 --> 00:03:32,063
+İlk hali görmüşseniz o değişti. Yanlış hatırlamıyorsam ikinci haftanın Perşembe günü oldu. Ama sizden şöyle bir ricam olacak. O günden önce projesini bitiren varsa lütfen bana mail versin. Böyle iki üç kişi olduğunda onları bir grup olarak önceden bakayım.
+
+9
+00:03:32,692 --> 00:03:59,572
+Her ne kadar derslik çok fazla kişi alsa da sanırım 30 kişi derse devam ediyor. Benim 30 kişinin projesine 3 saat içinde bakmam gerçekten çok zor. Bir de çok yorucu. Önceden bakabildiklerim olursa memnun olurum. Ama raporunuzu sınav gününe kadar, saatine kadar hazırlayabilirsiniz. O zaman da gönderirsiniz. Onun bir önemi yok.
+
+10
+00:04:00,659 --> 00:04:21,459
+[kişisel bilgi]
+
+11
+00:04:26,196 --> 00:04:27,596
+[kişisel bilgi]
+
+12
+00:04:27,616 --> 00:04:44,656
+[kişisel bilgi]
+
+13
+00:04:44,816 --> 00:04:45,616
+Evet hocam benim.
+
+14
+00:04:45,876 --> 00:04:50,256
+Tamam. [öğrenci]. Bugün çok kişi var.
+
+15
+00:04:51,699 --> 00:05:06,000
+O yüzden lütfen sunumlarımızı maksimum 15 dakika ile sınırlandıralım. Çünkü ben bu dersi 4'ten sonra uzatamıyorum. Genelde 4'e kadar bitiyor diye arkasına başka bir şey koydum.
+
+16
+00:05:06,451 --> 00:05:21,012
+Sizlere de fazla kesmeden ilk sistemdeki [öğrenci] ile başlıyorum. Bu arada bugün anlatanların hepsi raporlarını bu gece 24'e kadar sisteme yüklemelerini de bekliyorum.
+
+17
+00:05:21,012 --> 00:05:28,211
+Evet [öğrenci], sözü sana veriyorum. Ekran paylaşımını yaparak yapabilirsin.
+
+18
+00:05:28,912 --> 00:05:30,491
+Yaptım hocam ekran paylaşımını.
+
+19
+00:05:30,771 --> 00:05:32,552
+Tamam, şimdi gelir o.
+
+20
+00:05:33,875 --> 00:05:41,775
+Şu an şey görüyoruz yani çadır. Bir de bunu full screen'e geçirirsem benim gözlerim daha iyi görür. Evet, hazırım.
+
+21
+00:05:42,163 --> 00:05:57,363
+Şimdi buradaki ana makale kayıpsız veriler üzerinde neural network'ların kullanılmasıydı. Burada makalenin ana anlattığı konu bir neural network kullanılarak veri sıkıştırma yapabilir miyiz? Asla amaç bu.
+
+22
+00:05:58,024 --> 00:06:07,963
+Bizim ilk derslerimizde öğrendiğimiz gibi şöyle bir şey var. Çok büyük veriler var ve biz bu verileri bir yerden bir yere aktarmamız gerekiyor veya başka şekillerde bu verileri kullanmamız gerekiyor.
+
+23
+00:06:10,163 --> 00:06:16,103
+Veya aktarımda verilerin kullanabilmemiz için bunları sıkıştırmamız gerekiyor.
+
+24
+00:06:16,243 --> 00:06:21,024
+Ve bu sıkıştırmada yaparken kayıplı ve kayıpsız sıkıştırma türleri vardı ilk derslerde öğrendiğimiz gibi.
+
+25
+00:06:21,903 --> 00:06:31,423
+Buradaki asıl amaç kayıpsız veri sıkıştırmadaki verilerin boyutunu hem küçültüp tekrardan orijinal haline getirebilmek ve bunu hem hızlı yapabilmek hem de ne derler.
+
+26
+00:06:32,343 --> 00:06:36,043
+Daha az yer kaplayarak bu işi sağlayabilmek üzerine.
+
+27
+00:06:36,755 --> 00:06:59,455
+Üzerine düşünülmüş bir makale. Buradaki NNCP'nin kısa çalışma mantığı şudur. Yapay zekada yapay sınır alanını kullanarak bir öğrenme gerçekleştirir ve bu öğrenme üzerine veriyi sıkıştırmayı kullanır.
+
+28
+00:06:59,891 --> 00:07:23,012
+GPT-2 gibi büyük dil modelleri var. Dil modellerini kullanarak da çalışmalar yapmışlar. Buradaki çalışma mantığı şu şekilde ilerliyor. Yapay sinir ağları şu şekilde çalışıyor. Veride belli blokları alıyor. Belli blokları işleye işleye bir model çıkartıyor.
+
+29
+00:07:25,971 --> 00:07:33,831
+Modeli bir sıkıştırıyor. Sonra bunu tekrar geri yüklerek sinir ağ üzerinde veriyi işliyor.
+
+30
+00:07:47,987 --> 00:07:54,048
+Veri Sıkıştırma dersi daha da performanslı hale geliyor.
+
+31
+00:07:58,767 --> 00:08:01,367
+Heyecanlanma, çok heyecanlı gördüm seni.
+
+32
+00:08:01,707 --> 00:08:04,028
+[kişisel bilgi]
+
+33
+00:08:04,028 --> 00:08:10,267
+Tamam, bir şey yok, biz bizeyiz. Sanki diğerleri çok mu şey anlattı, öyle düşün.
+
+34
+00:08:10,767 --> 00:08:11,788
+Tamamdır hocam.
+
+35
+00:08:14,483 --> 00:08:29,663
+Bu modelin avantajlı olarak düşünürsek, ne avantajı var diye düşünürsek, sınır ağlayı eğitildiği için, yani yapay sınır ağlayı kullanıldığı için sıkıştırma oranları diğer modellere göre veya diğer yöntemlere göre çok daha yüksek çıkabiliyor.
+
+36
+00:08:31,803 --> 00:08:39,144
+Bir de şöyle bir avantajı var. Küçük verilerle bu modelin eğitilmesi var ve bir de çok büyük verilerle bu modelin eğitilmesi var.
+
+37
+00:08:39,508 --> 00:08:47,928
+Çok büyük verilerle biz bu modeli eğitirsek daha performanslı bir model çıkacak ve bu model daha çok yerde kullanılabilecek.
+
+38
+00:08:50,748 --> 00:08:56,028
+Bu modeli eğitildikten sonra, nasıl söyleyeyim, bu model tamamlandıktan sonra şunu fark ettiler.
+
+39
+00:08:57,307 --> 00:09:03,108
+Bu veri sıkıştırmanın yanı sıra veri işleme ve zaman serisi analizi gibi alanlarda da kullanılmış.
+
+40
+00:09:05,491 --> 00:09:13,491
+Model çok avantajlı olduğu için, sıkıştırma oranları çok başarılı olduğu için, diğer veri sıkıştırma yöntemlerinde alternatif olarak düşünülmüş.
+
+41
+00:09:13,491 --> 00:09:32,107
+Burada program ve modelleri ve size'ları görüyoruz. Gzip'in kullandığı Comparation Size 322 MB olduğu zaman, Cmix'in kullandığına baktığımız zaman 116 MB.
+
+42
+00:09:32,275 --> 00:09:59,535
+Bu bölümün boyutundan arada çok büyük bir fark var. Bir de aşağıda görürseniz, bakarsanız LCT mi ve Large 1 ve Large 2 var. Bunlar büyük veri ve küçük model. Yani büyük veride eğitim yapması ve daha büyük bir veride modelin eğitildikten sonraki farkı gösteriyor. Biri 128 MB, biri 125 MB. Large 2 daha da büyük bir model.
+
+43
+00:10:00,000 --> 00:10:02,379
+Daha da büyük bir veri üzerinde modüle eğitilmiş.
+
+44
+00:10:04,000 --> 00:10:10,500
+Devam ediyorum. Burada grafik olarak sunmuş rush oranlarıyla file'ın büyüklüğünü.
+
+45
+00:10:12,500 --> 00:10:14,299
+Bu kısmı geçip yöntemi bir daha.
+
+46
+00:10:15,731 --> 00:10:21,632
+[kişisel bilgi]
+
+47
+00:10:22,091 --> 00:10:24,412
+[kişisel bilgi]
+
+48
+00:10:24,412 --> 00:10:28,372
+[kişisel bilgi]
+
+49
+00:10:29,372 --> 00:10:33,432
+[kişisel bilgi]
+
+50
+00:10:33,672 --> 00:10:34,551
+[kişisel bilgi]
+
+51
+00:10:34,711 --> 00:10:36,031
+[kişisel bilgi]
+
+52
+00:10:37,043 --> 00:10:54,644
+[kişisel bilgi]
+
+53
+00:11:04,884 --> 00:11:16,343
+İşlerken veriyi şöyle bir şekilde işliyor. Önce teksti bir tarıyor başta. Teksti taradıktan sonra testi taradıktan sonra şey işleminden geçiyor.
+
+54
+00:11:19,043 --> 00:11:24,583
+Blokları oluşturuyor. Bu bloklar üzerinden sonra yapay sınav alanı çalıştırıyor. Kendi modelini çalıştırıyor.
+
+55
+00:11:24,960 --> 00:11:39,860
+Bir çıktı elde ediyor. Bu çıktığı elde ettikten sonra mevcut tarayacağı teksti, mevcut işleyeceği teksti veriyor. Bu teksti bu sinir ağına göre tekrardan sıkıştırıyor. Tam anlatabildim mi? Bilmiyorum da cümle mi?
+
+56
+00:11:39,860 --> 00:11:43,260
+Bir herhangi bir şeyi var mı? Blok şeması?
+
+57
+00:11:43,980 --> 00:11:45,760
+Blok şeması yok, matematik sardık formülü var.
+
+58
+00:11:46,163 --> 00:12:06,623
+Ne var? Matematiksel formü var. Matematiksel formüleri geç ya. Ben de tam çıkartamadım. Burada elestiyem modelini kullanıyor. Burada elestiyemin yapısını anlatıyor. Burada elestiyemi nasıl diyeyim? Her bir layarda nasıl çalıştığını anlatıyor. Her bir layarı anlatıyor.
+
+59
+00:12:06,623 --> 00:12:14,143
+Tamam. Kapacağı elestiyemi ben biliyorum. Ben hala şeyi anlayamadım. Elimde bir metin var. Bloklar hali.
+
+60
+00:12:14,163 --> 00:12:31,003
+Ben mesela 512'lik bir blok oluyorum. Yani 512 byte. Benim inputlarımın başlangıçta nöron network'ümde 512 tane nöron mu var? Yani her bir karakterim o nörona mı veriliyor?
+
+61
+00:12:31,503 --> 00:12:37,103
+Her bir karakter nörona verilmiyor. Bir dakika, o tarz bir şey okumadım çünkü. En azından İngilizcem yettiği kadar.
+
+62
+00:12:39,059 --> 00:13:00,819
+Yine bir üstünden geçiyorum. O sanki geçmiyordu ama bir dakika. Yine hemen bakıyorum hocam. Tamam tamam acele etme. Yok hocam o tarz bir şey geçmiyordu. Bakıyorum yine. Tamam sen sunumuna dön. O tarz bir bilgi vermiyor hocam. Tamam o tarz bir ikaleye ben bakarım sonra bir. Tamam.
+
+63
+00:13:04,083 --> 00:13:11,083
+Bu kısmı geçmeyen değil. Normalde dediğim gibi işte, modele blokları veriyor, blokları işleyip tekrardan dönüşüm sağlatıyor.
+
+64
+00:13:13,083 --> 00:13:25,083
+Buraya geçeyim. Bu makale kısa bir makale, veri sıkıştırma konusundaki aslında büyük bir makale şu olarak, yöntem olarak, matematiksel olarak çok büyük bir makale ama işlev olarak...
+
+65
+00:13:25,940 --> 00:13:49,280
+Küçük bir makale. Dediğim gibi bu yöntemle birlikte sıralı işlem ve zaman serisiyle ilgili nedeller, yerlerde kullanabildiğini söylenmiş. Aslında bir de bu makaçı çalıştırdım hocam. Bunun reposunu oturup kendim de çalıştırdım. Kodu da bir gösterebilirim. Basit bir çalıştırma şeyi var.
+
+66
+00:13:53,139 --> 00:14:01,359
+Sesi boşuna konuşuyorum. Çalıştır bakalım. Küçük bir input verelim. Küçük input verilmez de.
+
+67
+00:14:02,699 --> 00:14:05,979
+Kendi test datası var hocam. O test datası çalıştırdım.
+
+68
+00:14:05,979 --> 00:14:07,240
+Tamam. Orijinali ne mesela?
+
+69
+00:14:07,559 --> 00:14:12,939
+Orijinalini göstereyim. On kilobarklık bir dosya.
+
+70
+00:14:14,159 --> 00:14:15,899
+Bir içeriğini görelim. Ne var içinde?
+
+71
+00:14:15,899 --> 00:14:20,379
+Açalım hocam. Şöyle bir test datası var içinde.
+
+72
+00:14:21,235 --> 00:14:40,336
+Tamam. Klasik XML kodu var. Aynen. Klasik XML kodu. Nerede? Kompres ettim. Dosyayı açmıyorum bilerek. Kompresi nereye çıkarttım? Kompresi gelecek galiba. Geldi mi? Geldi de gözüm görünüyor.
+
+73
+00:14:40,336 --> 00:14:46,395
+Tarihe göre sıralı. Ben hiç göremem. Bugün en kaçı ki? 22'si.
+
+74
+00:14:48,563 --> 00:14:50,063
+2021 bunlar.
+
+75
+00:14:50,943 --> 00:14:59,264
+Yok hocam, bir dakika. Kitaptan çektim dosyayı. Bir dakika. Kompres gelmesi lazım buraya. Yanlış dosyaya bakmıyorsam.
+
+76
+00:15:03,860 --> 00:15:05,540
+Pardon, bir daha çalıştırayım.
+
+77
+00:15:08,600 --> 00:15:11,840
+Hani şey geliyor, dosya oluşuyor da nereye oluşturdu onu görse gözüm.
+
+78
+00:15:12,180 --> 00:15:14,400
+Bunu DT Görebi'ye sor etsene lütfen.
+
+79
+00:15:16,500 --> 00:15:18,180
+5-1-2023.
+
+80
+00:15:18,860 --> 00:15:21,440
+Yok burada, başka bir yere atıyor bu bunu.
+
+81
+00:15:25,268 --> 00:15:28,168
+Daha demin oluşturduğum şeyden önce ne derler?
+
+82
+00:15:28,948 --> 00:15:29,528
+Bir saniye.
+
+83
+00:15:29,528 --> 00:15:33,688
+Bir saniye olalım. Bu arada ben şimdi başka bir şey aklıma geldim.
+
+84
+00:15:34,008 --> 00:15:38,168
+Burada bir XML ya da HTML dosyasını verdik.
+
+85
+00:15:38,168 --> 00:15:50,288
+Ama bu HTML dosyasına bakarsan sanki ben o dosyalarda hep böyle tekrar eden patronlar olduğu için kolaydır sıkıştırmak.
+
+86
+00:15:50,388 --> 00:15:52,268
+Hep tekrar eden bir patron var.
+
+87
+00:15:52,916 --> 00:16:01,296
+Ben normal bir input dosyası verseydim, yani normal bir tekst, aynı başarıyı alabilecek miydim?
+
+88
+00:16:02,396 --> 00:16:06,896
+Normal bir tekst verseydim, aslında onu denemedim. Onu da deneyip rapora koyarım hocam.
+
+89
+00:16:07,956 --> 00:16:10,136
+Makalenin içinde yazmışlar mı?
+
+90
+00:16:10,736 --> 00:16:15,756
+Makalenin içinde yok. O normal bir tekst inputu ile ilgili herhangi bir şey vermeden şeyi denemişler.
+
+91
+00:16:17,971 --> 00:16:30,591
+Kelime atmaya gelmiyor. Wikipedia'nın modelini denemişler. Wikipedia'daki bütün text input'unu denemişler. Hazır bir modeli var Wikipedia'nın verdiği. O model üzerinden bir eğitim yapmışlar. Şurada da yazıyor bir yerde.
+
+92
+00:16:37,971 --> 00:16:40,591
+Wikipedia'nın 100 megabartlık bir...
+
+93
+00:16:41,299 --> 00:16:48,139
+Model dosyasalar onu vermişler. Bir sonraki aşamada da en büyük doksu çıkartmışlar da daha makaleye eklememişler.
+
+94
+00:16:48,719 --> 00:16:49,699
+Sonuçları yok.
+
+95
+00:16:50,639 --> 00:16:51,679
+Sonuçları şurada.
+
+96
+00:16:53,139 --> 00:16:54,339
+Komparasyon sonuçları.
+
+97
+00:16:54,620 --> 00:17:00,899
+Hayır, hayır. O Wikipedia'nın bilmem neyi. Onları daha koymamışlar sonuçları. Bu kadar çok sahip bir yayın.
+
+98
+00:17:01,439 --> 00:17:02,819
+2022 mi?
+
+99
+00:17:03,620 --> 00:17:07,460
+Bakayım hocam, onu hatırlamıyorum. 2019'da ilk başlangıç yapılmış. Sonra bir update geldi.
+
+100
+00:17:08,339 --> 00:17:16,779
+2019'da bir update gelmiş. Large 2 modeli de update etmişler. Bir model daha çıkartacaklar diye yazıyorduk kitap yaposunda.
+
+101
+00:17:16,779 --> 00:17:31,639
+Tamam. Yani ben şu haliyle kafamda bir takım sorular var. Halen tam olarak şeyi anlayamadım. Yani tabii şimdi bir sıkıştırmada ne bileyim ya sözlük tabanla bir şey kullanıyorum ya olasılıkları kullanıyorum.
+
+102
+00:17:32,211 --> 00:17:37,791
+Burada neye bakıyor bu aradaki? Şimdi elestiyem kullandılar.
+
+103
+00:17:38,311 --> 00:17:38,971
+Elestiyem.
+
+104
+00:17:38,971 --> 00:17:41,471
+Tamam, bu zaten elestiyemin ana.
+
+105
+00:17:42,036 --> 00:18:00,296
+O model sözlük tabanı zaten. Hayır, elestiyemde şu da var. Bir önceki, bir önceki kelimeyle kullanım olasılıkları da çıkarılıyor aslında. Bundan sonra bu gelebilir. Böyle şeyleri mi arka planda düşünerek bir şeyler yapıyor? Ben oraya anladım.
+
+106
+00:18:01,556 --> 00:18:07,776
+Anladım. Zaten altı sayfalık bir şey. Yarısı elestiyemi anlatmış. Yarısı da rızalı vermiş.
+
+107
+00:18:07,776 --> 00:18:08,456
+Anlamak zor.
+
+108
+00:18:08,980 --> 00:18:09,480
+Evet.
+
+109
+00:18:09,659 --> 00:18:10,940
+Neyse sen bu çalıştır.
+
+110
+00:18:11,519 --> 00:18:13,559
+Şunu bir daha hocam bir deneyim çünkü ben bunu çalıştırdım.
+
+111
+00:18:13,559 --> 00:18:18,980
+Tamam bir daha deney ya da bir başka arkadaşının sunumundan sonra sen araya gir.
+
+112
+00:18:19,619 --> 00:18:24,619
+Hocam hem bunu çalıştırdım bu. Bir tane de bir tekst dosyası ver bakalım.
+
+113
+00:18:25,159 --> 00:18:31,000
+Tamam onu da vereceğim hocam. Şurada bir tane şey çalıştı. Bir şey çıktı mı? Bekliyorum.
+
+114
+00:18:31,900 --> 00:18:35,320
+Tamam sıkıştırmayı yaptım ama nereye bunu attı onu bir görse gözüm.
+
+115
+00:18:35,680 --> 00:18:37,680
+Onu görmedi bir türlü gözüm.
+
+116
+00:18:38,880 --> 00:18:41,680
+Doğru Direktriğe baksan görürsün. Doğru Direktriğe baksan görürsün.
+
+117
+00:18:41,680 --> 00:18:43,680
+Doğru Direktriğe baksan görürsün.
+
+118
+00:18:43,680 --> 00:18:46,680
+Ama 2023 hep...
+
+119
+00:18:48,680 --> 00:18:50,680
+Acaba Branch'la mı atıyor?
+
+120
+00:18:50,680 --> 00:18:53,680
+Yok, Compressions ne yapmış? Hocam tamam, ben...
+
+121
+00:18:53,680 --> 00:18:57,680
+Hemen arkadaş bizledikten sonra araya dalırım.
+
+122
+00:18:57,680 --> 00:19:16,279
+Sorunuz var mı? Ben zaten anlamadığım şeyleri sordum ama onların da bazılarına [öğrenci] cevap veremez şu an. Anladığım bu. Bir çalıştırıp bir sonuçları görelim. Datanın içeriğine göre sonuç değişiyor mu? Bize [öğrenci]'ten sonra haber versin.
+
+123
+00:19:16,279 --> 00:19:20,720
+Tamam, durur. Varsa arkadaşlar sorunuz cevaplayabildiğim kadar.
+
+124
+00:19:23,059 --> 00:19:25,579
+Olmadı o zaman sorarlar gösterirken.
+
+125
+00:19:26,019 --> 00:19:26,519
+Tamamdır.
+
+126
+00:19:27,339 --> 00:19:30,440
+Sen paylaşımını durdur. [öğrenci] seni alalım.
+
+127
+00:19:32,059 --> 00:19:32,799
+Tamam hocam.
+
+128
+00:19:33,920 --> 00:19:36,480
+Sen de bir kameranı açarsan seni de göreyim.
+
+129
+00:19:37,319 --> 00:19:39,200
+Oo sen de olayın daha başındasın.
+
+130
+00:19:40,019 --> 00:19:41,799
+[kişisel bilgi]
+
+131
+00:19:41,799 --> 00:19:42,740
+[kişisel bilgi]
+
+132
+00:19:42,819 --> 00:19:46,879
+[kişisel bilgi]
+
+133
+00:19:47,380 --> 00:20:00,680
+[kişisel bilgi]
+
+134
+00:20:01,260 --> 00:20:14,360
+Aynen hocam. Buradaki problemden bahsedeyim önce. Problem şu, bir sinyali aktarmak istenildiği zaman yüksek band genişliği kullanması gerekiyor. İşte bakın mesela bazı frekans noktaları fazla kullanılmıyor.
+
+135
+00:20:14,836 --> 00:20:32,076
+Bazıları ise çok yoğun kullanılıyor ve yüksek bir band genişliği istiyor. Dolayısıyla da hava aracılığıyla iletilen veri trafiği hızla arttığı için bir kaynak sorunu oluşuyor. Bunun için de sinyali daha küçük band genişlikleriyle iletilebilmeyi hedefliyorlar.
+
+136
+00:20:32,855 --> 00:20:38,016
+Bunun iki yöntemi var. İki tane zorluğu varmış bu konuda. Düşük band genişliği gerektiren veri.
+
+137
+00:20:38,451 --> 00:20:49,392
+Ve spektrum algılama, kullanılan frekans spektrumunun izlenmesi, kullanılan frekans spektrumundaki boş alanların tespiti ve kullanıcılarla bu boş alanların paylaşılması şeklinde iki tane zorluğu varmış bu konunun.
+
+138
+00:20:50,971 --> 00:21:01,612
+Bu makaledeki yapılan çalışma ise şu. RLE ve Huffman kayıpsız sıkıştırma yöntemlerini kullanarak,
+
+139
+00:21:01,920 --> 00:21:22,119
+Metin ve görüntü verileri üzerinde sıkıştırma yapıyorlar. Görüntü verilerini sıkıştırırken çeşitli büyüklükteki görüntülerin işlenmesi çok süre aldığı için tüm resimleri grey scale'e ve 64-64 boyutuna getiriyorlar.
+
+140
+00:21:23,955 --> 00:21:35,395
+Ve karşılaştırma için hem relaya hem de dinamik Hufman kodlama yöntemiyle sıkıştırma oranı ve geçen süre parametreleriyle karşılaştırma yapıyorlar.
+
+141
+00:21:36,836 --> 00:21:44,135
+Yani hangi yöntem? Metin verilerini iletmekte daha iyi. İyi karşılaştırmak için bu iki parametreyi kullanıyorlar.
+
+142
+00:21:50,291 --> 00:22:03,571
+Resim var. Bunu alıyorlar gri ve küçük ölçüye çeviriyorlar. Bunu ben çizdim hocam. Bu makalede yoktu. Ondan sonra iki tane yöntem, rel ve dinamik kurman kodlama yöntemlerini kullanıyorlar ve sonuçları elde ediyorlar.
+
+143
+00:22:05,351 --> 00:22:14,432
+Peki ben araya girebilir miyim? Ben burada renkli bir resmi grayscale'e çevirdiğim vakit resmin rengini kaybettim.
+
+144
+00:22:15,923 --> 00:22:40,923
+Yani kayıplı bir sıkıştırma yapmış olduğum gibi bir şey oldu. Yani anladığım kadarıyla. Niye adamlar böyle bir şeye gerek duyuyor? Hocam şundan dolayı görüntülerin işlenmesi çok süre aldığı için yani renkli ve büyük ve çeşitli büyüklükte resimler var. Bunları grayscale formatına ve 64-64 boyutuna getiriyorlarmış. Getirmişler.
+
+145
+00:22:41,556 --> 00:22:43,496
+Bu kaç yılın ay bir makaleydi?
+
+146
+00:22:43,956 --> 00:22:44,396
+2012.
+
+147
+00:22:45,976 --> 00:22:52,096
+Tabii 2012'ye göre bu konular çalışma konuları olabilir de günümüz için birazcık şey kalıyor.
+
+148
+00:22:52,096 --> 00:22:58,796
+Ama hocam pardon araya girdi ama griskeyle çevirince tam kayıp olur mu?
+
+149
+00:22:58,956 --> 00:23:05,196
+Şey tarafında bütün aslında paletleri aynı şekilde oranlamış ve griye dönüştürmüş olabilirler.
+
+150
+00:23:05,875 --> 00:23:07,875
+Açarken yeniden...
+
+151
+00:23:07,875 --> 00:23:10,255
+Açarken, evet. Geriye getireceklerdir.
+
+152
+00:23:10,275 --> 00:23:13,155
+Ama o işe kemeli için bilmiyoruz öyle olup olmadığını.
+
+153
+00:23:13,515 --> 00:23:16,255
+Onunla ilgili bir bilgi ben atılamıyorum hocam.
+
+154
+00:23:16,255 --> 00:23:20,155
+Tamam, sen devam et.
+
+155
+00:23:23,015 --> 00:23:24,315
+Peki, sen...
+
+156
+00:23:24,315 --> 00:23:32,975
+Şimdi ben resimse bu Grayscale'e çevrildiyse RL'e, Dinamik Ufman'dan daha iyi sonuç verilmiş gibi geliyor. Sonuç ne oldu?
+
+157
+00:23:33,556 --> 00:23:45,695
+Evet hocam, RL'ye hem daha kısa sürede hem de daha yüksek sıkıştırma oranlarıyla, yani daha başarılı sonuçlar verdi. Onu ileriki slide'larda zaten şey yaptım.
+
+158
+00:23:49,844 --> 00:24:05,743
+Sıkıştırma yöntemleri kayıpsız olduğu için yöntemlerden kaynaklanan bir hata oluşmamaktadır. Ancak iletimde kullanılan kanaldan kaynaklanan bir gürültü bir hata oluşturmaktadır. Bu oluşan hatayı da MS ve PSNR ile hesaplıyorlar.
+
+159
+00:24:07,624 --> 00:24:15,903
+Makalede anlamadığım bir nokta var hocam. Yani bilmiyorum neden öyle oluyor. Resimlerde bu gürültü oluyor ama metinlerde olmuyor mu?
+
+160
+00:24:16,948 --> 00:24:22,568
+Çünkü metinlerde böyle bir hesaplama yapmamışlar ve gürültüden de bahsetmemişler.
+
+161
+00:24:23,388 --> 00:24:36,588
+Şimdi aslında orada da yine şöyle bir şey diyelim. Kayıpsız diyor. Eğer ben kayıpsız bir sıkıştırma yapıyorsam zaten bu MSE'nin falan sıfır çıkması lazım.
+
+162
+00:24:36,588 --> 00:24:43,888
+Hocam bu MSE yöntemden dolayı değil de iletilen kanaldan dolayı bir iletim yapılıyor ya.
+
+163
+00:24:44,211 --> 00:24:53,211
+Bu kanaldan dolayı bir gürültü oluşuyor. O gürültüden dolayı bir hata olanı çıkıyor. O farklar ondan geliyor. Aynen.
+
+164
+00:24:54,463 --> 00:24:56,723
+Yoksa zaten kayıpsız sıkıştırma yapıyorlar.
+
+165
+00:24:56,844 --> 00:25:09,364
+O zaman aynı şey tekst için de geçerli. Yani içeriğin görüntü ya da tekst olması önemli değil. Gönderdiğim kanalda gürültürün ne kadar az ya da çok olmasına bağlı olarak değişiyor.
+
+166
+00:25:09,364 --> 00:25:21,644
+Evet ama bu bildiride metinle ilgili böyle bir gürültüden bahsedilmiyor. Bu hesaplanmıyor da. Hatta yoktur diyor direkt. Ben orasını anlayamadım çünkü tam açıklama da yapmamışlar.
+
+167
+00:25:22,771 --> 00:25:47,991
+Aynı hattan gönderiyorsam, görüntüde, tekste, şimdi ben hızlı düşünüyorum kendi kendime, sonuçta bir doküman. Yani bir dosya. Dosyanın içinde ne olduğunun önemi yok. Eğer bu gürültüler hattan kaynaklanıyorsa, o zaman tekste de olmaması gerekir. Niye yazmadığı, tabii bilemem niye içine yazmadığını. Mantık olarak öyle.
+
+168
+00:25:50,420 --> 00:25:51,580
+Sen devam et.
+
+169
+00:25:52,740 --> 00:25:59,660
+Metin verilerini sıkıştırmakta ise, metin verilerinin ön işlem olarak direkt ASCII karşılıkları alınıyor.
+
+170
+00:26:00,940 --> 00:26:09,120
+Ve görüntü verilerinde olduğu gibi sıkıştırma oranıyla geçen süre, yani hesaplama süresi, şey sıkıştırma süresi hesaplanıyor.
+
+171
+00:26:09,120 --> 00:26:12,060
+Ve RL ve dinamik kurma kodlama teknikleri yine kullanılıyor.
+
+172
+00:26:13,540 --> 00:26:17,000
+Burada da işte bir TXT dosyası, ASCII karşılıkları alınıyor.
+
+173
+00:26:17,359 --> 00:26:19,599
+Yöntemler kullanılıyor ve sonuçlar elde ediliyor.
+
+174
+00:26:20,819 --> 00:26:23,759
+Şimdi sonuçlar üzerinden, sonuçları göstereyim hocam.
+
+175
+00:26:24,679 --> 00:26:28,259
+Görüntü verileri üzerinde RL ve Hufman yöntemlerinin sonuçları burada.
+
+176
+00:26:32,259 --> 00:26:34,339
+Compression ratio.
+
+177
+00:26:35,508 --> 00:26:50,268
+Şunu şöyle dövün. Bu compression performance değil, compression ratio ise 100-7.7 diye bakacağım. Hadi bu 8 olsun. %92'lik bir sıkıştırma yapıyor lna da.
+
+178
+00:26:54,003 --> 00:27:09,543
+Bu ne? Dinamik Kufman Koding. Bir dakika, şimdi dur anlayacağım ben bunu. Burası da RL Koding. 47. Bu compression ratio mu? Bunun makalede nasıl hesaplandığını vermiş mi?
+
+179
+00:27:10,624 --> 00:27:11,884
+Hocam direkt bunlar vardı.
+
+180
+00:27:12,743 --> 00:27:21,084
+Yani bu yüz eksi fark mı? Yani bu yüzde 47 başarı demek mi? Yoksa yüz eksi 47'ye mi bakacağım?
+
+181
+00:27:21,556 --> 00:27:23,096
+Bu Re-Shoysa?
+
+182
+00:27:24,296 --> 00:27:26,216
+Sıkıştırma oranı olarak geçiyordu ama.
+
+183
+00:27:26,976 --> 00:27:42,496
+%47. Yani bir resimde, grayscale resimde Re-Le'nin %47 vermesi az geldi. 63, Perot verdi Re-Le'de.
+
+184
+00:27:43,696 --> 00:27:47,196
+Acaba şeylerden kaynaklanabilir mi hocam? Hani gürültü falan oldu ya.
+
+185
+00:27:48,788 --> 00:28:13,667
+Şurası doğru görüntüde RL'ye Hufman'dan daha iyi sonuç verecek. Baktığımda daha iyi sonuç verdiğini görüyorum ve daha hızlı çalıştığını da görüyorum. Bunlar PSN'lerle, bunlarda ters orantılı var. Biri artarken diğeri azalacak. Bu hangisi için alınmış?
+
+186
+00:28:14,708 --> 00:28:15,647
+Görüntü mü hocam?
+
+187
+00:28:16,647 --> 00:28:20,307
+Görüntü hayır. Hufma Kodink için mi, RL için mi?
+
+188
+00:28:22,647 --> 00:28:23,387
+Şurası Huf.
+
+189
+00:28:23,667 --> 00:28:29,548
+Şurası tamam, bu bu. Bu hangisi için?
+
+190
+00:28:31,687 --> 00:28:33,127
+Neresini kastettiğimizi anlayamıyorum.
+
+191
+00:28:33,127 --> 00:28:37,807
+Tabii ben mouse'unu sen göremiyorsun, çok özür dilerim. Sondaki iki kolum.
+
+192
+00:28:38,160 --> 00:28:42,359
+Bu ikisi için de, yani iki yöntem için de aynı anladığım kadarıyla hocam.
+
+193
+00:28:42,359 --> 00:28:53,180
+Ama nasıl aynı sonucu verir ya? Başarıları, compression ratio'ları aynı değilken bu PSNR değerleri her ikisi için de aynı olamaz.
+
+194
+00:28:55,799 --> 00:29:04,480
+Ya başarılı olanın, en başarılı olanın sonucunu verdi RL'ni, makalede bir yerde yazıyor olması lazım.
+
+195
+00:29:05,203 --> 00:29:07,303
+Bir daha bakayım isterseniz hocam.
+
+196
+00:29:07,743 --> 00:29:13,063
+İlerle de bakarız. Bir de öteki gelsin. Tekstil için örnek gelsin.
+
+197
+00:29:13,923 --> 00:29:20,023
+Bu metinlerde de şöyle bir şey var hocam. Farklı uzunluklara sahip metinlerle örnekleme yapıyorlar.
+
+198
+00:29:21,163 --> 00:29:29,243
+İşte mesela example 1, 2 ve 3 daha küçük uzunluğa sahipken, daha küçük uzunluklardaki metinlere sahipken.
+
+199
+00:29:29,748 --> 00:29:36,568
+Eğzempel 4, 5 ve 6 ise daha büyük uzunluklarda metinlere sahip ve bunlar tabii farklılık gösteriyor.
+
+200
+00:29:38,528 --> 00:29:53,508
+Küçük uzunluklara sahip metinlerde dinamik hoofman daha yüksek bir sıkıştırma oranı sağlıyorken, rele yöntemi ise metnin uzunluğu arttıkça daha fazla sıkıştırma performansı göstermektedir.
+
+201
+00:29:53,844 --> 00:29:58,684
+Hem kısa hem de uzun olan metinlerde RLE'nin sıkıştırma işlemi daha kısa sürmektedir.
+
+202
+00:30:00,684 --> 00:30:13,344
+Bak, şimdi öncelikle buraya bakalım. Sen demin dedin ya makalede vermemişler. Minimum root square ROL piyasaları. Evet, tek seçin vermemişler.
+
+203
+00:30:13,779 --> 00:30:27,040
+Zaten genelde o metrikler görüntü için kullanılan metriklerdir ki görüntüde kayıp olduğu için gözüm algılamıyor çünkü. Ama kayıpsız diyor şeyde.
+
+204
+00:30:27,800 --> 00:30:28,300
+Evet hocam.
+
+205
+00:30:29,320 --> 00:30:35,820
+Bir de bu da şey, bu tekstin greyscale falan gelmesi diye bir şey söz konusu değil.
+
+206
+00:30:35,820 --> 00:30:38,500
+Yok burada direkt ASCII karşılıklarını kullanıyorlar.
+
+207
+00:30:39,251 --> 00:30:59,912
+Evet, şimdi buna bakarsam. Bunda da şimdi bana Dinamik Ufman, evet zaten başarılar budur. Yani 55 ile aslında bunlar belki küçük uzunluk, büyük uzunluğa bağlı olarak değişir. 65 arasında değişir de, RL'nin bu kadar başarılı olmasına şaşırdım.
+
+208
+00:31:01,011 --> 00:31:09,572
+Küçük metinlerde daha başarısız olduğunu söylüyor. Metin büyüdükçe metnin boyutu daha başarılı olduğunu söylüyor hocam.
+
+209
+00:31:09,572 --> 00:31:12,572
+Ama sonuçta benim şeyim...
+
+210
+00:31:13,556 --> 00:31:31,916
+Neyi değiştirir metrin büyüklüğü ya da küçüklüğü? R'liye nedir? Arka arkaya tekrar eden şeyler. Şimdi arka arkaya büyük metin de olsa, küçük metin de olsa A'a aynı oranda gelir. Yani Türkçe'de A'a bir saat kelimesinde var.
+
+211
+00:31:33,523 --> 00:31:52,523
+Metin uzun ya da kısa olmasına göre değişmez. Peki burada ne olabilir? Acaba bunları karakter olarak almadı da her bir askiye bit olarak alıp bir ve sıfırlar olarak mı baktı? Yani karakterlerin sıklığına değil de...
+
+212
+00:31:52,564 --> 00:32:06,424
+Bunları banyeri olarak düşünürsek, 1 ve 0'ların arka arkaya gelmesine bakarak eğer bir rel'e koding yapmışsa tamam, makul gelir. Anlatabildim mi ne demek istediğimi?
+
+213
+00:32:06,424 --> 00:32:09,004
+Anladım ama bununla ilgili bir bilgi.
+
+214
+00:32:09,804 --> 00:32:16,564
+Zaten bu makalenin içinde bir sürü şeyi eksik koymuş. 2012 yılının da çalışması. Bu nerede yayınlanmış?
+
+215
+00:32:17,076 --> 00:32:35,175
+Bir sempozyum falan mı? Bir ona baksana. Şimdi buradan da başka yere geleceğiz. Dur aşağıya. 2011. Şimdi neyi görüyorsunuz? Aslında bu bir sempozyum.
+
+216
+00:32:36,019 --> 00:32:49,080
+Genelde bu sizin için de geçerli, hepiniz için de herhangi bir konuda araştırma yapıyorsanız, özellikle tezlerinizde her zaman makalelere öncelik verin.
+
+217
+00:32:49,428 --> 00:33:15,448
+Bakın, bunun proceding olması ve uluslararası bir konferans, her konferansın kalitesi aynı değildir. Mesela genelde bu benim karşıma gelmiş olan bir çalışma olsaydı, tabii 2012 yılındaki düşüncem de ayrı, 2023 yılındaki düşüncem de ayrı ama içerik olarak çok zayıf ve sorularıma cevap vermiyor. Kabul almayabilirdim.
+
+218
+00:33:15,859 --> 00:33:21,719
+Ama böyle bir çalışmanın kesinlikle bir journalda kabul edilmesi mümkün değil.
+
+219
+00:33:21,719 --> 00:33:29,299
+Bütün bunların, bu problemlerin, her şeyin journal bir makalenin içerisinde yer alması gerekir.
+
+220
+00:33:29,859 --> 00:33:35,359
+O yüzden çalışma ve araştırma yaparken önceliklerinizi her zaman makalelere verin.
+
+221
+00:33:35,839 --> 00:33:39,459
+Çünkü daha iyi bir değerlendirmeden geçer.
+
+222
+00:33:40,079 --> 00:33:42,639
+Bu şeyin hakkında bilgimiz de yok.
+
+223
+00:33:42,639 --> 00:33:43,639
+Nasıl bir...
+
+224
+00:33:43,859 --> 00:33:48,979
+Sampozyum. Çünkü örstampozyum da o kadar şey değildir.
+
+225
+00:33:49,748 --> 00:34:16,927
+Kaliteli, kalitesiz olması şudur. Yani konumuz dışı ama bunları bilmeniz de iyi olur. Bazen mesela hakemlere gönderilir değerlendirilmek için yazarların bilgisini çıkarmazlar. Ben onun kim tarafından yapıldığını bilirim. Bu da etik olmaz. Bir şekilde tanırım, etkilenmişimdir ya da sinir oluyorumdur o kişiye ya da benim idolümdür.
+
+226
+00:34:17,748 --> 00:34:22,748
+Bir şey görmem mesela. Daha farklı bir gözle bakarım. Bu yüzden...
+
+227
+00:34:23,572 --> 00:34:51,152
+Bunlar bile sempozyumun kalitesini verir. Kimi iki tane hakeme gönderir. Üçüncü kararı sempozyumda kabul edilecek olan bildiri sayısına bakarak bir ret, bir kabul varsa işte o sempozyumda 80 tane bildiri kabul edilmesi gerekiyor diyelim. O kabul sayısını sağlamamışsa sempozyumun başkanı bunu kabul olarak alabilir.
+
+228
+00:34:51,572 --> 00:34:58,271
+Bazı sempozyumlar vardır ki resmen bu duruma düşmemek için üç tanesine gönderir.
+
+229
+00:34:58,792 --> 00:35:10,572
+Bazı sempozyumlarda hakemlerden evet kabul ya da red diye gelir ama hiçbir neden kabul ettiği, neden red ettiği, beğenip beğenmediği noktalarını anlatmaz.
+
+230
+00:35:19,572 --> 00:35:35,152
+Bunların hepsi sampozumların şeyini belirler aslında. Popülerliliğini belirleyen şeylerdir. Şimdi tamam öğrendik. Sampozumlarımız. Sen yeniden sunumuna dön.
+
+231
+00:35:45,172 --> 00:36:01,391
+Hangi yöntemi kullanmanın daha efektif olacağını öğrenmek amacıyla kayıpsız VLE ve dinamik hurfan kodlama teknikleri hem metin hem de görüntü verileri üzerinde uygulanarak sıkıştırma oranı ve geçen süre gibi değerlendirme parametreleri üzerinde karşılaştırılmıştır.
+
+232
+00:36:03,155 --> 00:36:20,275
+Görüntü sıkıştırmada RLE'ye hem daha kısa sürede hem de daha iyi bir sıkıştırma oranına sahipken, metin sıkıştırmada ise küçük uzunluklara sahip metinlerde, dinamik Hufman, yüksek büyük uzunluktaki metinlerde ise RLE daha iyi sıkıştırma oranına sahiptir.
+
+233
+00:36:29,300 --> 00:36:40,180
+Ve bununla birlikte kablosuz ortağımlarda performans açısından daha uygun teknikleri bulmak için kayıplı ve kayıpsız farklı tekniklerin denenmesi üzerine de odaklanılacaktır diye.
+
+234
+00:36:41,108 --> 00:36:42,027
+Belirtmişler.
+
+235
+00:36:42,027 --> 00:36:53,487
+Şimdi benim de en çok merak ettiğim şeylerden biri bu olur. Çalışmalarımıza future work yazarız. Acaba daha sonra bu future worklerin üzerine gidilmiş midir?
+
+236
+00:36:53,688 --> 00:36:56,947
+Hocam ben baktım. Space veriler üzerine yapmışlar.
+
+237
+00:36:57,748 --> 00:37:02,948
+Ama başka bakmadım. Öyle kısaca bir şey yapmıştım.
+
+238
+00:37:02,948 --> 00:37:17,708
+Tamam. Buna bakın mesela. Bu çok önemlidir. Hay B'ye mi yazmışlar oraya, iş olsun diye mi? Yoksa bakmışlar mı? Peki baktığında yine şuna dikkat ettin mi ya da o kadar şey baktın mı dikkatli?
+
+239
+00:37:18,128 --> 00:37:19,168
+Çok dikkatli baktım.
+
+240
+00:37:19,168 --> 00:37:21,688
+Yine DLV, Dinamik Hufman'ı mı kullanmışlar?
+
+241
+00:37:21,688 --> 00:37:21,888
+Evet.
+
+242
+00:37:22,288 --> 00:37:23,048
+Evet hocam.
+
+243
+00:37:23,368 --> 00:37:25,168
+Seste hangisi başarılı olmuş?
+
+244
+00:37:25,748 --> 00:37:31,648
+Yani çok şey yapmadım hocam. Şöyle bir gördüm. Baktım derken öyle içerisine girmedim.
+
+245
+00:37:31,768 --> 00:37:33,908
+Makale şu an bir yerde duruyor mu?
+
+246
+00:37:34,888 --> 00:37:35,928
+İnternette vardı.
+
+247
+00:37:35,928 --> 00:37:45,908
+Tamam. O zaman sen de bu arada bir hızla bak. Merak ettin. Makalenin içinde varsa, sesle çalışırken hangi yöntem daha başarılı olmuş?
+
+248
+00:37:46,351 --> 00:37:47,351
+Tamam hocam ben...
+
+249
+00:37:47,351 --> 00:38:00,651
+Mesela, tamam. Hepimiz bir düşünelim. RL'yi de, Hufman'ı da biliyoruz. Acaba ses verilerinde hangisi daha başarılı olacak? Sonuçta sesten de bir takım özellikler çıkaracak.
+
+250
+00:38:01,492 --> 00:38:28,452
+Sesten özellik çıkaran şeyler var. Melkeps bilmem ne diye çok sesle çalışmadığım için bilmiyorum. Melkeps diye bir bilmem ne şeyleri var. Bir adamın işte bir ses üzerinden şu özelliklerin çıkarılması gerekir diye belirlemiş. Onlar çıkarılmaya çalışılır. Onlarla sıkıştırma yapmıştır. Bakalım bizim dediğimiz sonucu bize verecek mi?
+
+251
+00:38:28,452 --> 00:38:29,452
+[öğrenci] arada sen...
+
+252
+00:38:29,492 --> 00:38:49,732
+Sen de buna bakarsan. Bakıyorum hocam. Kapatayım şeyi. Tamam. Sen paylaşımını durdur. [öğrenci]'e soru var mı? [öğrenci], sen bir sonuç alabildin mi? Aldım hocam. Ekranı tekrardan paylaşıyor. Hemen bize bir göster. Aklımızdan seni çıkaralım. Nelerler?
+
+253
+00:38:51,188 --> 00:39:00,428
+Test datasını çalıştırdığım zaman 19 tane stepten geçiyor. Yani 19 tane sinir ağının üzerinden geçiyor. Size zaten 10 bin.
+
+254
+00:39:00,908 --> 00:39:14,748
+10 step size dediğimiz hidden layer mi? Bir daha söylesenize hocam duymadım. Hidden layer, aradaki layer'ların sayısı mı? 19 step dediğin nedir? Kaç tane layer geçtiğinin sayısı. Tamam layer, okey, tamam.
+
+255
+00:39:15,264 --> 00:39:34,544
+Bu kendi test datasının üzerinde çalıştırmış. Size gösterdiğim test datasının üzerinde çalıştırdı. Önce kompres etti, sonra de kompres etti. Sıkıştırma oranı 10 kb'dan 7 kb'ye düşürdü. Sonradan da ben şey yaptım. Şöyle bir tane YouTube diye bir tane YouTube'nin şeyini oluşturdum. Nerede?
+
+256
+00:39:37,012 --> 00:39:46,372
+Tamam, yeni bir şey oluşturdum. Wikipedia'dan aldığım yeni bir tane bir şey oluşturdum. Normal, eczemel falan değil.
+
+257
+00:39:46,372 --> 00:39:57,372
+Aynen. Nerede o? Onda oluşturduğum zaman on stepten geçti. 5,5 kilobayttan ortama 4,2 kilobayta düşürdü.
+
+258
+00:40:00,000 --> 00:40:19,680
+Gene bir sıkıştırma anı ve şey oranı var ama düşük gördünüz mü? Bit per byte per second diyelim. Burada bir byte'ı 6.2 bit ile kodlarken yukarıda 5.6 ile kodladı.
+
+259
+00:40:22,739 --> 00:40:40,059
+Demek ki ben daha böyle şey, Jason formatında da bir şeyler verseydim. Yine yukarı bir şey çıkacaktı. Yok, vermene gerek yok. Artık rahatlıkla yorum yapabiliyoruz. Peki. Teşekkürler. Senin kurunu artık bekliyoruz.
+
+260
+00:40:40,219 --> 00:40:40,880
+Tamamdır hocam.
+
+261
+00:40:41,539 --> 00:40:42,659
+Hocam buldum bu arada.
+
+262
+00:40:43,320 --> 00:40:44,400
+Evet, sen de söyle.
+
+263
+00:40:48,724 --> 00:41:11,384
+Aç bakayım ne yazıyor? Öteki kapasın. [öğrenci], kapa sen ekranını. Kapayamıyorum. Kapayamıyorsun. Kapattım hocam. Tamam. Bu değil, bu. Git, sonuçlarına gel bakayım. Sound sound diyor. Bak aşağıda gördüm. Sonuçları burada hocam.
+
+264
+00:41:11,795 --> 00:41:21,315
+Dur şimdi bir bakalım. 80'li şeylerde çok daha başarılı. Aynı başarı görüyor musun yaklaşık olarak?
+
+265
+00:41:22,395 --> 00:41:22,835
+Evet hocam.
+
+266
+00:41:22,855 --> 00:41:23,295
+Seste.
+
+267
+00:41:23,895 --> 00:41:26,655
+Ama RL daha uzun sürede yapıyor bunu.
+
+268
+00:41:26,655 --> 00:41:38,915
+Dur şimdi oraya geliriz. Compression ratio'lar hemen hemen noktadan sonrası oynuyor. RL'deki süre daha uzun. Acaba neden?
+
+269
+00:41:42,387 --> 00:41:59,107
+Süre bayağı farklı. Acaba R'le de neden olabilir? Neden olabilir diye düşünüyorum. [öğrenci] Bey sizin hakkınıza bir şey geliyor mu?
+
+270
+00:42:00,788 --> 00:42:06,487
+Ben de acaba sampling ile alakalı bir şey mi yaptı acaba diye düşündüm ben bilemedim.
+
+271
+00:42:06,867 --> 00:42:10,527
+Arka planını bilmiyoruz. Compression ratio'lar aynı.
+
+272
+00:42:11,447 --> 00:42:14,248
+Hocam sol tarafta algoritmadan bahsediyor.
+
+273
+00:42:15,188 --> 00:42:19,628
+Yani onu anlayamayız ki öyle bakarak pat diye.
+
+274
+00:42:19,628 --> 00:42:25,288
+Ne yapıyor? Tamam çevirdik. Tamam yaptık.
+
+275
+00:42:25,844 --> 00:42:41,443
+Buraya kadar her şey aynıdır zaten. Ha, RL ve yukarısı da Hufman mı? Haa, aradaki bu Step 0, 1, 2, 3, RL'deki yukarıda yok.
+
+276
+00:42:43,043 --> 00:42:52,303
+On the fly for the sample data is being transmitted. Probability okuyoruz. On the fly for the sample data.
+
+277
+00:42:55,731 --> 00:42:57,731
+Böyle bir şeye adapte oluyordu.
+
+278
+00:43:02,452 --> 00:43:12,532
+Yani şimdi hadi buna vakit harcamayalım ama bir şey yapıyor. RL'ye öncesi başka bir işlem yaptığı için bu herhalde zamanı kullanıyor.
+
+279
+00:43:14,112 --> 00:43:27,731
+Code Salary, Assignment of Code Word. Burada başka ara bir işleme çeviriyor. Burada Code Word'ler var. Burada Bit Bit yapıyor. Burada bir olay var.
+
+280
+00:43:28,500 --> 00:43:45,880
+Neyse, şimdi olayı çözemeyiz. Ama başarılar aynı. Bu gibi durumda ne yaparsın? Benim için zaman mı önemli? Yerden tasarruf mu? İkisi de aynıysa zamanı ön plana alırım. Dynamik Ufman'ı kullanırım. Peki, tamam.
+
+281
+00:43:45,880 --> 00:43:47,400
+Bayraşımı durduruyorum.
+
+282
+00:43:47,599 --> 00:43:52,500
+Durduruyorsun. İki arkadaşınıza da sorusu olan var mı?
+
+283
+00:43:57,427 --> 00:43:59,987
+[kişisel bilgi]
+
+284
+00:44:02,507 --> 00:44:03,527
+[kişisel bilgi]
+
+285
+00:44:03,527 --> 00:44:04,327
+[kişisel bilgi]
+
+286
+00:44:06,347 --> 00:44:08,747
+[kişisel bilgi]
+
+287
+00:44:10,307 --> 00:44:12,527
+[kişisel bilgi]
+
+288
+00:44:13,387 --> 00:44:15,287
+[kişisel bilgi]
+
+289
+00:44:15,907 --> 00:44:16,407
+[kişisel bilgi]
+
+290
+00:44:16,807 --> 00:44:18,067
+[kişisel bilgi]
+
+291
+00:44:18,587 --> 00:44:22,627
+[kişisel bilgi]
+
+292
+00:44:23,440 --> 00:44:27,720
+[kişisel bilgi]
+
+293
+00:44:27,740 --> 00:44:28,100
+[kişisel bilgi]
+
+294
+00:44:28,840 --> 00:44:29,340
+[kişisel bilgi]
+
+295
+00:44:29,460 --> 00:44:40,220
+[kişisel bilgi]
+
+296
+00:44:42,600 --> 00:44:43,660
+[kişisel bilgi]
+
+297
+00:44:43,680 --> 00:44:46,660
+[kişisel bilgi]
+
+298
+00:44:48,820 --> 00:45:00,500
+[kişisel bilgi]
+
+299
+00:45:15,059 --> 00:45:16,019
+[kişisel bilgi]
+
+300
+00:45:16,739 --> 00:45:17,599
+[kişisel bilgi]
+
+301
+00:45:18,179 --> 00:45:18,739
+[kişisel bilgi]
+
+302
+00:45:21,360 --> 00:45:31,420
+[kişisel bilgi]
+
+303
+00:45:32,699 --> 00:45:39,099
+[kişisel bilgi]
+
+304
+00:45:39,280 --> 00:45:40,820
+Daha doğrusu ben istemiştim de, neyse.
+
+305
+00:45:42,963 --> 00:45:43,844
+Taktırma.
+
+306
+00:45:44,583 --> 00:45:44,844
+Evet.
+
+307
+00:45:48,183 --> 00:45:55,224
+Beşbur bilgi vermek zorundayım. Ses sıkıştırmada da amaç sesin boyutunu düşürmek ve kayıplı ve kayıpsız olarak da ikiye ayrılır.
+
+308
+00:45:55,552 --> 00:46:07,692
+İşte kayıpsız da orijinal veriyi istediğimiz için bu farklı alanlarda gerçekten o sesin, o filmin çok gerekli olduğu yerlerde ihtiyaç duyuyoruz.
+
+309
+00:46:07,692 --> 00:46:23,331
+Savunma sanayi olabilir, biyomedikal veya adli tıp konularında olabilir. Bu konularda gerçekten her türlü ses parçası ihtiyacımız olduğu için bunlardan şey yapamıyoruz. Bunlardan kayıp.
+
+310
+00:46:23,552 --> 00:46:48,632
+Çok koler edebileceğimiz bir şey değil. Ama öte yandan kayıplı da yapabileceğimiz şeyler var. Örneğin iletimlerde çoğu zaman müzik formatlarında özellikle o kayıp göz ardı edilir. Çünkü problem yaratmaz ve gene zaten çoğu ses sıkıştırma yöntemlerinde kayıplıdır. Çok da insanlar fark etmedi. İnsan algılanmaz.
+
+311
+00:46:49,652 --> 00:47:01,291
+Literatürde, şimdi benim konum cazluğum olduğu için literatürü böyle not aldım, notlar üzerinden söyleyeceğim. Buraya çok detay yazmadım. Sadece gelişimle söylemek istiyorum.
+
+312
+00:47:01,291 --> 00:47:13,692
+EPEC4 LS ile başladı. Bunu Berlin Teknik Üniversitesi'nden yapılan bir çalışmada ortaya çıktı.
+
+313
+00:47:14,192 --> 00:47:23,632
+Daha öncesinde de vardı ses sıkıştırma üzerine ama bu bit hızını düşüren bir çalışmaydı ve artık hata artık kodlama diye bir yöntem ortaya attı.
+
+314
+00:47:24,391 --> 00:47:35,231
+Totalde compression rate'i 48 veya 48.4 civarı bir şey olması gerekiyor. Böyle bir başarıyla ortaya çıktı.
+
+315
+00:47:39,347 --> 00:47:59,987
+RLS ve LMS ile birleştiren bir yapı daha ortaya çıkardılar. Burada da hata üzerine. Recursive Least Square üzerine bir çalışma çıkardı. Performansını arttırdılar. Genelde kod çözme üzerine daha hızlandı. Hata oranında da %2-3 civarında bir artış oldu.
+
+316
+00:48:02,003 --> 00:48:22,003
+Bunun üzerine bunlardan birazcık daha ileriye gitmek istedikleri için LS yöntemini ürettiler. Daha doğrusu bu yöntem vardı. Bu yöntemi buraya uyguladılar. Bu yöntemi uygulayınca %50 civarı bir başarıya ulaştılar ama artmatik kodlama kullandığından dolayı birazcık...
+
+317
+00:48:22,804 --> 00:48:32,804
+Overload oluyordu ve şişmelere sebep oluyordu. Çok başarılı bir sonuç değildi açıkçası. Daha sonra...
+
+318
+00:48:33,300 --> 00:48:50,519
+SERP çıktı. Bu SERP aslında bir yöntem, bir yaklaşım, daha hızlı kod çözme üzerine bir yöntemdi. Bu yöntemi kullanarak buradan sonraki çalışmalarda çeşitli hızlandırmalar sağladı.
+
+319
+00:48:51,092 --> 00:49:09,552
+Sparse Linear Predictor'da aynı şekilde bir yaklaşım. Bunda başarı %50'nin üzerine çıkıyor. Yani %50'den fazla bir compression elde ediyorsunuz ama süre olarak çok sıradan, diğerleriyle aynı ölçüde bir süre elde edebiliyorsunuz.
+
+320
+00:49:13,715 --> 00:49:33,775
+OLS ve NLMS, bunlar aslında filtre. Bu iki kişinin ürettiği bir filtreleme üzerine bir çalışma. Filtreleriyle hesaplama karmaşıklığını azaltma üzerine bir çalışma yapıyorlar. O çalışmadan sonra yine aynı şekilde diğer çalışmalarda etkileniyor.
+
+321
+00:49:37,940 --> 00:50:00,259
+Kodeklerden bir tanesi. O da zamanda MD5'la bir çalışma yapıyor ve bunun üzerine bir ilerleme kat ediyor. Buradaki başarısı tam belli değil. Bu zamanki başarısını bilmiyorum. Şu anki anlık başarısını biliyorum. Anlık başarısı %70. En azından bu makalenin çıktığı zamanda.
+
+322
+00:50:01,043 --> 00:50:11,264
+VowPack var. VowPack de aynı şekilde bir kodlayıcı. Bunun da başarısı %50'nin üzerinde. Monkeys Audio var. Bu da aynı şekilde %60'ın üzerinde bir başarı elde ediyor.
+
+323
+00:50:12,463 --> 00:50:17,264
+Şimdi şöyle kısa bir literatür anlatmış olayım.
+
+324
+00:50:26,483 --> 00:50:51,483
+Topluluk var. Tek bir seferde, tek bir yönteme bağlı kalmadan, total bir şekilde birkaç adımda sesi sıkıştırmayı öneriyorlar. Burada kuantize edilmiş kodların seviyelerinin kodlanması üzerine bir clustering, sampling yöntemleri kullanılıyor. Bunlardan sonra...
+
+325
+00:50:52,403 --> 00:51:07,563
+Bu şekilde Baros-Valer dönüşümün ve Hoopman kodu kullanarak sesi en son nihai sıkıştırmaya getiriyor. Kod çözmede de tam tersi şekilde geriye alıyor. Bu şekilde orijinal sinyali geri ürettiğini söylüyor.
+
+326
+00:51:19,603 --> 00:51:40,843
+Klasterlama işine sokuyor. Daha sonra bu klasterları bir quantization işlemine sokuyor ve bunları parçalıyor. Daha sonra bu parçalardan elde ettiği bitstream'i Barrow, Weller ve Hoffman'a sokup
+
+327
+00:51:41,684 --> 00:52:03,864
+Buradan net bir kodlama elde etmiş oluyor. Her bir kümeyi ayrı ayrı mı sokuyor? Evet, evet hocam. Her bir kümeyi ayrı ayrı. Quantization boyutu farklı.
+
+328
+00:52:04,788 --> 00:52:27,928
+Belki bu BVT'yi arkadaşlarınız bilmiyordur. Birisi onu almıştı diye hatırlıyorum ama BVT bir transformer. O sonundaki T transformer. Amacı şudur. Sıkıştırmadan önce veriyi hazırlamak. Daha iyi sıkıştırabilsin diye veriyi bir hazır forma getirmek.
+
+329
+00:52:32,788 --> 00:52:45,208
+Her bir kümeyi ayrı ayrı mı sokuyor? Her bir kümeyi yani o klasterı bir blok olarak alıp herhalde BVT'ye sokuyor. Arkasından da Hufman'a gönderiyor diye algıladım.
+
+330
+00:52:46,408 --> 00:52:54,827
+VEVLET kullanılıyor denilebilir değil mi? VEVLET'ler mi kullanıyor acaba? VEVLET'ler mi kullanmış acaba burada?
+
+331
+00:52:55,284 --> 00:53:01,244
+Yok, o VVT Bruce Healer Transform'ı. VVT ile alakası yok. Adamın ismi.
+
+332
+00:53:02,543 --> 00:53:11,284
+Yok, VVT ses sinyalinin içerisinde hem zaman hem frekans bilgisini tutmak için küçük küçük pencereler oluşturuluyor ya.
+
+333
+00:53:13,204 --> 00:53:19,063
+Ama X-Samping'de bu tarzda bir yöntem kullanıyor.
+
+334
+00:53:19,063 --> 00:53:20,903
+Yani sektif yaparken oluşturuyor.
+
+335
+00:53:23,315 --> 00:53:27,355
+Veriyi oluştururken o dediğiniz şeyi yapıyor sampling'te.
+
+336
+00:53:29,295 --> 00:53:31,235
+Tamam, teşekkür ederim. Kusura bakmayın.
+
+337
+00:53:31,495 --> 00:53:42,055
+Yok yok. Bugün böyle ne güzel. İnteraktif bir ders yapıyoruz. Bu arada duydunuz mu? Finaller yine online'a çevrilmiş.
+
+338
+00:53:43,275 --> 00:53:44,035
+Duyduk hocam.
+
+339
+00:53:46,055 --> 00:53:50,275
+Siz sevindiniz, ben hiç sevinmedim. Neyse, devam edelim.
+
+340
+00:53:51,380 --> 00:54:00,980
+Aynı ölçekte de geri çevrim yapıyor. Önce Huffman ve Baro Willer'dan geri çeviriyor.
+
+341
+00:54:00,980 --> 00:54:04,980
+Bir bitstream elde ediyor. O bitstream'in de ki... Bu arada yanlış oldu.
+
+342
+00:54:05,300 --> 00:54:21,720
+Bu bir sistemdeki quantization bitini algılayıp ona göre tekrar o quantizasyon seviyelerini tekrar oluşturuyor. Sonra klasterlara tekrar döndürüyor ve uçur ekleyip tekrar sesini elde ettiğini söylüyor.
+
+343
+00:54:23,860 --> 00:54:29,000
+Yöntem de dediğim gibi dört aşamadan oluşuyor aslında. İlk samprik aşamasında.
+
+344
+00:54:29,556 --> 00:54:43,436
+Ses sinyalini bir örneklemeye sokacak. Buradaki en yüksek frekans birleşimini fmax dediysek diyelim, örnekleme frekansı da fmax'ın iki katından daha büyük bir alanda oluyor.
+
+345
+00:54:43,436 --> 00:54:53,436
+Burada Nikwist sampling kriterlerinden birini kullanıyor. Oradan üretiyor bu sonucu.
+
+346
+00:54:55,059 --> 00:55:11,460
+Daha sonra burada bölümleme yaptıktan sonra klasterlama işlemine geçiyor. Sinyalin dinamik aralığını oluşturmak istiyor. Çünkü bu projenin amacı zaten dinamik klastering başta söylediği gibi. Bilgisayar Mühendisliği, Veri Saks.
+
+347
+00:55:11,987 --> 00:55:34,107
+Bu maksimum genliğinin değeri ise, minimum değeri de S mi ise bu ikisinin arasında dinamik range diyor. Bu parçanın en yüksek ve en düşük olduğu noktaları bulmak adına. Daha sonra bu aralığa göre, cluster sayısına göre bir cluster range division'ı elde ediyor dinamik range'e göre.
+
+348
+00:55:36,148 --> 00:55:50,428
+Bunu daha sonra bu bölümleme renci, bu renci şeyde kullanıyor. Mesela örnek veriyorum, 4 oydu, 4 tane klastra bölecek. Buradaki division'ı kullanarak o 4'ü nasıl dağılacağını belirliyor.
+
+349
+00:55:52,428 --> 00:55:57,428
+Daha sonra kuantilasyon işlemi yapıyor. Buradaki kuantilasyon işleminde...
+
+350
+00:55:59,027 --> 00:56:16,507
+Gülerde kümelerin hepsine aynı işlemi yapıyor. Kümeleri alıp bu kümelerdeki seviyeleri, seviyelerdeki genlik seviyelerindeki dataları belirli bir aralığa bölüp topluyor. Bunları hepsini bir araya getiriyor.
+
+351
+00:56:18,291 --> 00:56:45,211
+Bu ilk lendirme adını 2 diye belirtmiş. 2 dediği için burada otomatik olarak da zaten şuradaki hesap için konuşuyorum. 4 tane aslında seviye elde etmiş oluyor. Bu şeyleri de bu seviyeye koyuyor. Muhtemelen burada şunu yapıyor. 4 seviye var. 2 bite piyasadığı için 0, 0, 0, 1, 1, 0, 1 diye. Bunları bu bölümlere, bu seksiyonlara koyuyor.
+
+352
+00:56:45,748 --> 00:57:12,968
+Burada bunu koyduktan sonra min square quantization erroru hesaplıyor. Buradaki hesap aslında şuna etki getiriyor. Quantize edilmiş veriyle normal veri arasındaki fark, hata farkı ne kadar? Burada belli bir threshold belirliyor. Bu thresholdu kendisi bu şekilde belirlemiş. Bu belirlenen değerin altında kalıyorsa bu işlemi tekrar uyguluyor.
+
+353
+00:57:13,396 --> 00:57:28,775
+Kalmadıysa zaten direkt alıyor ve onu ikili bitlerle kodluyor. Buradaki üçgenin anlamını da söyleyeyim. Bu üçgen de aslında Quantization Step Size. Ne kadarlık steplerle ilerleyeceği.
+
+354
+00:57:29,536 --> 00:57:52,596
+Bunu bir kümeye uyguladıktan sonra bunu diğer bütün kümelere de uyguluyor. Sonuç olarak da bir aslında bitstream elde etmiş oluyoruz. Yani 0-0-0-1 böyle bol şan bir bitstream elde etmiş oluyoruz. Bu aşamadan sonrası zaten BVT ve Huffman'a kalıyor. Ben BVT'nin şöyle küçük bir örneğini koydum şuraya. Ben de araştırdım dün. Özellikle baktım buna.
+
+355
+00:57:52,596 --> 00:57:54,675
+Dün araştırdın.
+
+356
+00:57:55,188 --> 00:58:09,048
+Yok, BVT araştırdım da bunu koymadım. Bunun için bir şey araştırdım. BVT ile alakalı şöyle bir çalışma şey var. Gösterim var. En çok bunu beğendim. Bunu koymak istedim. En anlaşılır bu en azından.
+
+357
+00:58:11,251 --> 00:58:33,711
+Elimizde bir stream var. İmpul stream olabilir. Bu input stream'i oluyor. Bu input stream'i bir dolar işaretini oluşturup bunu bütün aşamalarda yerleştiriyor. İlk başta en sonuna yerleştiriyor. Daha sonra baştaki yeri manalıp buraya yerleştiriyor. Bu şekilde bütün aslında kombinasyonları oluşturmuş oluyor.
+
+358
+00:58:36,052 --> 00:58:53,832
+Kombinasyonları oluşturduktan sonra bunları bir harç sırasında sıralıyor. Bir sort işlemi yapıyor. Daha sonra bunun son kolonlarını alıyor. Bu son kolonları bunun için elde edeceği sim oluyor. Şunlara ihtiyacı oluyor.
+
+359
+00:59:00,724 --> 00:59:16,944
+Web sitesinde devamlı anlatırdım da, şu an oraya çok dağıtmayacağım. Temelde yaptığı şey, bu şekilde metinlerde sıralayıp, son kolonlarını alıp bir transform elde etme. Aynı transform da geride üretebiliyor sonucu.
+
+360
+00:59:19,219 --> 00:59:31,199
+Bu sort işleminden dolayı da aslında şey yapmış oluyor. Metinleri yan yana yerleştirdiği için, belli bir sort işlemi uyguladığı için aslında orada verileri kompres etmek mümkün olabiliyor.
+
+361
+00:59:31,199 --> 00:59:35,619
+Yani 3 tane E yan yanaysa 3E diyebiliyoruz.
+
+362
+00:59:37,364 --> 00:59:56,104
+Aynı şekilde Huffman'da da bunun adım adım zaten yerleştiriyor. Bundan sonrasında Huffman devralıyor ve SEM modülleri dönüştürüp sıkıştırıyor. Sesler stereo ise iki kanal içinde bu durum uygulanıyor ve sonuç enkode edilmiş oluyor, kompres edilmiş oluyor.
+
+363
+00:59:56,724 --> 01:00:00,864
+Dekode ederken de aynı şekilde tersten gelim uygulanıyor.
+
+364
+01:00:01,300 --> 01:00:26,800
+İlk önce Huffman'dan kökten başlayıp yaprağa doğru 0-1 diye bölüp sağ düğme, sol düğme gidiyor. 0 ise sağ, 1 ise sol düğme gidiyor. Lifle karşılaştıysa onu direkt yazdırıyor. Bu sefer birinin olduğu şeye yöneliyor tekrar. Daha sonra ters BVT uyguluyor. Burada az önce bahsettiğim gibi tersten dönüştürüyor.
+
+365
+01:00:27,411 --> 01:00:48,811
+Bu konuda dekompress ediyor. Sonra dequantization ediyor. Burada blok yapısından o quantization bitini algılamaya çalışıyor. Quantization bitini buldu diyelim. Daha sonra bunu bölüyor. Örneğin burada mesela bir örnek vermiştim. Bit 2 ise bit akışı da buysa bunu ikili ikili parçalara bölüyor. Bu sefer değeri anlamaya çalışıyor. Hani burada tam olarak ne var?
+
+366
+01:00:50,164 --> 01:00:57,104
+Bunu bütün kümeler için uyguluyor. Uyguladıktan sonra da bunları genlik değerlerinin aralıklarına göre tekrar birleştiriyor.
+
+367
+01:01:00,104 --> 01:01:12,004
+Sonuçlar için deneylerinde şöyle Rabindra, Sangres, Klasik, Pop ve Sufi olmak üzere beş farklı şarkı kategorisinden sesler denemişler.
+
+368
+01:01:12,788 --> 01:01:20,188
+3 kayıpsız teknik olan Monkey Audio, Warpac ve Flecky de kendilerine rakip olarak eklemişler.
+
+369
+01:01:22,148 --> 01:01:30,088
+Burada seslerin sample rateleri ve bitleri gözüküyor. Total sample'ları da içlerinde bu şekilde.
+
+370
+01:01:32,327 --> 01:01:37,907
+Daha sonra şimdi bunları uyguladıktan sonra buraları birazcık hızlı geçebilirim çünkü çok fazla tablo var.
+
+371
+01:01:39,251 --> 01:01:52,751
+İlk denemede, Compression Rate'lerinde ayrı ayrı 53-54 diye gidiyor. Şu Rabindra için Monkeys Audio'nun 54'müş. Valpac'in 53.
+
+372
+01:01:53,199 --> 01:02:18,599
+Flecking 72 bizim yönteminde %95. Bu tabloda hepsini geçmiş diye özetleyebiliriz. Aynen öyle. Hepsini tek tek geçmiş. Compressionca yetiyordu zaten bu. Baya yüksek yalnız. Baya baya yüksek hocam. Ben hatta ilk gördüm. Dedim şaka yapıyorlar. 95. Çok ütopik bir rakam yani. Daha sonra burada aynı şekilde gösteriyor ortalama ve overalllarını.
+
+373
+01:02:19,027 --> 01:02:22,347
+Bu da aynı tabloya denk geldiği için bunu da geçiyorum.
+
+374
+01:02:24,307 --> 01:02:31,427
+Enkoding Spitleri var. Enkoding Spitlerinde Munkies Audio 0.17 bütün sesleri için ortalama.
+
+375
+01:02:32,487 --> 01:02:42,827
+Vapec 0.15, Flex 0.12. Önerilen yöntem de 0.10. Yani hala hepsinden önde. Yani enkoding Spit'te de önde.
+
+376
+01:02:45,684 --> 01:02:58,623
+Aynı şekilde Decoding Speed'te de yine bariz bir öndelik söz konusu. 0.18 Monkey, ValvePack 0.15, Flex 0.13, yönerilen yöntem 0.11.
+
+377
+01:03:00,184 --> 01:03:01,983
+Kaç yılına ait bir çalışma bu?
+
+378
+01:03:02,824 --> 01:03:03,943
+2020 hocam.
+
+379
+01:03:04,864 --> 01:03:10,684
+Acaba bu ticari ürün haline getirildi mi? Adana bilmiyor olabiliriz. Adı değişmiştir.
+
+380
+01:03:11,251 --> 01:03:33,072
+Evet hocam, değişmiş olabilir. Oradan emin değilim. Neyse, devam edelim. Entropi bazlı baktığımızda, Monke'in 13.06, Vapak'in 13.07, Frek'in 13.05, önerilen yöntemin 13.81 olduğunu görebiliyoruz.
+
+381
+01:03:34,291 --> 01:03:38,012
+Buradaki durum da aynı şekilde yine iyi bir durumda.
+
+382
+01:03:39,795 --> 01:03:40,955
+Entropide'de.
+
+383
+01:03:42,635 --> 01:03:45,955
+Bu üst tarafta yazmamış mı? Alt tarafa yazmış.
+
+384
+01:03:46,115 --> 01:03:52,515
+SNR değerleri. Burada SNR değerlerinde bir şey söyleyeceğiz.
+
+385
+01:03:54,215 --> 01:04:03,815
+Şimdi SNR'da Monkey 31, Warpac 32, Frec 31, DC dediğimiz şey 34.03.
+
+386
+01:04:05,235 --> 01:04:15,876
+S&R'ın yüksek olması kötü bir durum. Birazcık bu noktada bence kötü bir durumda. Ama çok da tahammül edilemez bir durum olmayabilir.
+
+387
+01:04:16,876 --> 01:04:23,876
+Öte yandan S&R'da kötü olan sistem Pi S&R'da...
+
+388
+01:04:24,532 --> 01:04:45,252
+Çünkü PSNR'da da yüksek olmasını bekleriz. Yüksek olması iyidir. VAPEK'in 52, 50, 52 iken önerilen yöntem 55 ile öne çıkıyor. Genel olarak sistemin yapısı ve sonuçları bu şekilde hocam. Beni dinlediğiniz için teşekkür ederim.
+
+389
+01:04:45,252 --> 01:04:48,212
+Senin proje konum nedir [öğrenci]?
+
+390
+01:04:48,755 --> 01:05:02,175
+Ben normalde sesle alakalı bir şey seçilecektim de proje seçme sürecini kaçırdım. Yanlış hatırlamıyorsun, proje 3'ü seçmiştim hocam. XML dosyalarında istatistiksel sıkıştırma.
+
+391
+01:05:02,175 --> 01:05:04,155
+Evet [öğrenci] Bey?
+
+392
+01:05:05,235 --> 01:05:16,175
+Bir noktada benim biraz kafam karıştı da, bir yerden inceleme biti 2 bit olarak söylenmişti ama aslında 16 bit kullandığını gördüm.
+
+393
+01:05:16,543 --> 01:05:26,683
+2 bit neydi? Çok orayı anlayamadım. 2 bit çünkü kayıplı sıkıştırma yapar diye düşünüyorum. 16 bit daha mantıklı geldi bana.
+
+394
+01:05:40,724 --> 01:06:01,844
+2 bitle ifade etmeye çalışıyor. 2 bitlik parçalara bölmeye çalışıyor. O söylediğiniz yöntemde dediğinizde normalde onu 8 bitse mesela onu 16 parçaya bölüyor. Bit rate'ini 16'ya çeviriyor veya 16 bitse 8'e çeviriyor. Ama burada parçaların parçaları olduğu için 2 bitle ifade etmek yeterli oluyor.
+
+395
+01:06:02,867 --> 01:06:05,127
+İkinci aşama değerlendirme gibi.
+
+396
+01:06:06,407 --> 01:06:09,587
+İlk önce sampling, sonra clustering, sonra quantization.
+
+397
+01:06:10,547 --> 01:06:14,307
+Alt adımlar da bunu ikiye bölüyor. İki olarak alıyor.
+
+398
+01:06:17,607 --> 01:06:20,227
+Peki [öğrenci], sorusu olan var mı başka?
+
+399
+01:06:22,227 --> 01:06:25,487
+Yoksa seni de uğurluyoruz teşekkür ederekten.
+
+400
+01:06:26,007 --> 01:06:27,027
+Ben teşekkür ederim hocam.
+
+401
+01:06:27,027 --> 01:06:29,327
+Raporları unutmayalım arkadaşlar.
+
+402
+01:06:30,132 --> 01:06:47,251
+[kişisel bilgi]
+
+403
+01:06:48,179 --> 01:06:49,059
+Peki, [öğrenci].
+
+404
+01:06:49,519 --> 01:06:52,859
+Hocam, benim de bağlantım çok stabil değildi. Görüntümü kapatıp...
+
+405
+01:06:52,859 --> 01:06:56,259
+Tamam, ben sizi görürüm, sonra görüntünüzü kapatabilirsiniz.
+
+406
+01:06:56,379 --> 01:06:57,919
+Tamam hocam, çok teşekkürler.
+
+407
+01:07:05,427 --> 01:07:09,467
+Geldi mi ekranım? Geldi. Bir de fullscreen yaparsa.
+
+408
+01:07:14,643 --> 01:07:25,724
+Benim bugünkü konum Text Data Compression for Mobile Phone, Music Bar of Value Transform, Move to Front Code, and Aritmetik Coding.
+
+409
+01:07:28,284 --> 01:07:40,423
+Özet olarak ilk önce bu çalışmada ne yaptığına bakarsak, burada cep telefonlarında yer alan uygulamalardaki metin dosyalarındaki verileri sıkıştırmaya bazanmış.
+
+410
+01:07:40,884 --> 01:07:47,364
+Metin dosyaları cep telefonlara dahil olmak üzere birçok defolama cihazlarına kullanılmaya devam ediliyor.
+
+411
+01:07:48,483 --> 01:07:55,723
+Cep telefonun sabit ve küçük bellek kapasitesiyle bellek kullanımının optimizasyonu için metin sıkıştırmaya ihtiyaç duyuluyor.
+
+412
+01:07:56,503 --> 01:08:04,384
+Bu makalede de cep telefonlarına kullanılan Kur'an ve Hadis uygulamaları ele alınmış. Bu uygulamalarda da metin sıkıştırma işlemi yapılıyor.
+
+413
+01:08:04,947 --> 01:08:09,507
+Referans olarak aldığı hadis uygulaması Sinan İbni Maja.
+
+414
+01:08:11,827 --> 01:08:27,167
+Burada belli kullanımı optimizasyon için veri sıkıştırma kullanıyor. Veri sıkıştırma veri kalitesini azalsın ya da azaltmasın, belli kullanımını azaltmak ve veri iletim süresini hızlandırmak için belirli bir kod kümesini dönüştürme işlemi.
+
+415
+01:08:27,167 --> 01:08:39,788
+Burada veri sıkıştırma kayıplı veya kayıpsız olabiliyor. Kayıpsız sıkıştırmada orijinal metin sıkıştırmış verilerden yeniden düzenlenebiliyor. Kayıplı sıkıştırmada ise orijinal veri yani orijinal metin tam olarak.
+
+416
+01:08:39,828 --> 01:08:54,368
+Bu makalede kayıpsız sıkıştırmada Borough's Value Transform, Move to Front Code ve aritmatik kodinkin kombinasyonunu kullanarak farklı algoritmalar üretiyor.
+
+417
+01:08:54,368 --> 01:09:07,028
+Burada dört farklı kombinasyon üretiyor bu algoritmalarla. İlk olarak aritmatik kodinki uyguluyor sadece. Sonra Move to Front Code ve aritmatik kodinki uyguluyor.
+
+418
+01:09:07,699 --> 01:09:20,159
+Üçüncü olarak Burroughs, Wheeler, Transform ve Aritmati Koding'i uyguluyor. Multifront kullanmıyor burada. Son olarak da üçünü kullanarak bir çalışma yürütüyor. Bunları ileride inceleyeceğiz.
+
+419
+01:09:21,203 --> 01:09:35,363
+Bu makalede bu üç algoritmanın kombinasyon performansını ölçüyor ve hangi sıkıştırma sonucu mobil cihazlarda çalıştırılabilir buna cevap veriyor.
+
+420
+01:09:36,948 --> 01:09:50,648
+Veri sıkıştırmaya bakacak olursak, veri sıkıştırma daha küçük ve daha verimi, daha verimli depolama alanı gerektiren verileri, daha kompakt bir hale getirmek ve veri iletimini hızlandırmak için kullanılan bir yöntem.
+
+421
+01:09:51,188 --> 01:09:58,548
+Veriler ses, metin, resim veya video olabilir. Bu işlem kayıpta veya kayıpsız yapılabilir bahsettiğim gibi.
+
+422
+01:10:00,623 --> 01:10:05,963
+Yapılan sıkıştırma, orijinal veri sıkıştırmış veriden tekrar elde edilebiliyor.
+
+423
+01:10:06,543 --> 01:10:09,564
+Çoğunlukla metin verilerini sıkıştırmak için bu yöntem kullanılıyor.
+
+424
+01:10:10,603 --> 01:10:14,843
+Kayıplı sıkıştırmada ise sıkıştırmış veriler orijinalden farklı olabiliyor.
+
+425
+01:10:15,083 --> 01:10:23,384
+Burada da multimedya verileri, görüntü, ses ve video sıkıştırma da kullanılıyor genel olarak.
+
+426
+01:10:24,743 --> 01:10:27,483
+Aritmatik kodlamayı inceleyecek olursak.
+
+427
+01:10:28,500 --> 01:10:46,860
+Burada daha önceki, yani gördüğümüz, bizim derste gördüğümüz sıkıştırma, algoritma, sıkıştırma algoritmalara ziyaden bir bitle kod değişme fikrini atlıyor. Girdi dosyasındaki sembol dizilerini bir aritmetik, yani bir full alt sayıyla değiştiriyor.
+
+428
+01:10:47,340 --> 01:10:56,500
+Daha uzun girdi mesajları aritmetik sayı için de daha fazla bit gerektiriyor. Bir aritmetik kodlama eşyeminden elde edilen çık...
+
+429
+01:10:56,500 --> 01:11:07,760
+Çıktı. Birden küçük ve sıfırdan büyük veya sıfıra eşit tekli sayı oluyor. Bu tek sayı tam sembol akışını oluşturmak için benzersiz bir şekilde çözülebiliyor.
+
+430
+01:11:08,564 --> 01:11:23,123
+Aritmatik kodlama sembollerin olasılıklarını kullanarak veriyi daha az bitti, temsil etmeyi amaçlıyor. Enkot işlemiyle veri aritmatik kodlama yapılıyor. Dekot işlemleri sıkıştırmış veri orijinaline dönüştürülüyor.
+
+431
+01:11:23,623 --> 01:11:36,304
+Şu yanda da koyduğum örnekte bir tane metin var. Bu metinde yer alan karakter sayılarına göre ilk önce bir olasılık değeri belirleniyor. Burada karakter sayımız 10 olduğu için 10'a bölmüş. Örneğin boşluk karakteri bir tane.
+
+432
+01:11:36,564 --> 01:12:04,064
+1 bölü 10 olma olasılığı var. A karakter 3 tane 3 bölü 10 olasılığı var. Daha sonra buna belli aralıklar veriyor. Bu aralıklar da yine olasılıklarla orantılı bir şekilde veriliyor. Örneğin 1 bölü 10 aralığı için 0 ile 1 arasında bunu yine 10 parça bölüp 0 ile 0.10 arasına veriyor. Ama 3 bölü 10 olasılığı için orada 0.30'luk bir renç aralığı veriyor.
+
+433
+01:12:05,652 --> 01:12:24,211
+Move to Front koda baktığımızda burada verileri sıkıştırmayan ancak fazlalığı azaltma yardımcı olabilen bir algoritma olarak geçiyor. Bu algoritmanın ana fikri her sembolün son kullanılan semboller yanındaki indeks ile değiştirilmesiyle ilerliyor.
+
+434
+01:12:24,787 --> 01:12:34,027
+Aynı sembollerden oluşan uzun diziler sıfırla değiştirirken uzun süredir görünmeyen semboller büyük sayılarla değiştiriliyor. O da şöyle oluyor.
+
+435
+01:12:34,804 --> 01:12:57,064
+Yine burada yandaki örneğe baktığımızda, burada belli bir stringimiz var. Burada da multi front listemiz var. Bu listeye göre buradaki stringlerin indeksleri belirleniyor. İlk önce burada sıfırıncı indeksi ele alıyoruz. Bu multi frontta da sıfırda. Buraya sıfır yazıyoruz. Sonraki yine sıfır.
+
+436
+01:12:57,555 --> 01:13:20,715
+Yine A, yine sıfırıncı indeks, yine burada sıfırıncıda. Burada sürekli A verisi geldiği için burada herhangi bir ön almayış değil mi? O olmuyor. Ama mesela burada F sembolü geldiğinde buradaki indeksine bakıyoruz. Burada beşinci indekste. Onu buraya yazıyoruz. Burada da F'yi başa alıyoruz.
+
+437
+01:13:21,203 --> 01:13:41,903
+Daha sonra yine H için de aynı işlem yapılıyor. Son listimize bakıyoruz bu arada her defasında. Burada H yedinciyi indekste. Buraya 7 yazıyoruz. Burada H'yi başa alıyoruz. Böyle böyle bütün sitringi tarayacak şekilde ilerliyor. Burada da bir sitringi bir tam sayı dizisine dönüştürüyor.
+
+438
+01:13:43,923 --> 01:13:55,024
+Baros Value Transform'a baktığımızda multi-front ve aritmatik kodlama kullanılmadan önce kullanılabilir. Burada veri bloğu yeniden düzenleniyor.
+
+439
+01:13:55,744 --> 01:14:03,923
+Orijinal metin bir diz dönüştürme ve sıralama işlemiyle sıkıştırılmış bir formda temsil ediliyor. Bu bir veri dönüşüm algoritması.
+
+440
+01:14:04,591 --> 01:14:27,931
+Burada da yine yandığı örnek üzerinden incelersek, burada yine bir tane veri, bir string verilmiş. Bu stringin ilk karakteri daima sona kaydırılıyor. Buradaki bütün döngü boyunca ilk karakter sona kaydırılmış. Burada bir satır sonu işareti varmış gibi düşünülüp, bu S başa gelene kadar veri sağa kaydırılıyor.
+
+441
+01:14:27,931 --> 01:14:32,591
+Daha sonra burada makale içerisinde bu sağa kaydırılma...
+
+442
+01:14:32,591 --> 01:14:51,071
+Bütün sit-linkler burada son sütuna bakarak alfabeye göre bir sıralama yapılmış. Buradan da bir output elde edilmiş. Burada alfabeye göre sıralama yapılmasının sebebi yine buradaki outputta tekrarlanan verilerin arka arkaya gelip bir sıkıştırılma işleminin uygulanabilmesinden ötürü.
+
+443
+01:14:53,524 --> 01:15:06,884
+Bu makalede sıkıştırma oranı sıkıştırmış dosyanın boyutu, dosyanın orijinal boyutu çarpı yüz olarak hesaplanıyor. En iyi sıkıştırma algoritması en küçük sıkıştırma oranına sahiptir.
+
+444
+01:15:09,460 --> 01:15:25,739
+Çalışmada yer alan kombinasyonlara baktığımızda birazdan inceleyeceğim şema 1'de sadece aritmatik kodin kullanılıyor. 2'de Motifront ve aritmatik kodin kullanılıyor. 3'de BVT ve aritmatik kodin kullanılıyor. 4'de de 3'ü kullanılıyor.
+
+445
+01:15:27,667 --> 01:15:38,347
+Burada deneysel veriler olarak 32 bölüm içeren Sinan İbni Majah'tan bir metin dosyaları kullanılıyor.
+
+446
+01:15:39,307 --> 01:15:43,847
+Bu kitapta dosya boyutu çeşitliliğini göstermek için seçilmiş.
+
+447
+01:15:43,847 --> 01:15:48,488
+Burada gördüğümüz gibi bunun bir bölümü 5000 byte iken bir bölümü 801 bin byte.
+
+448
+01:15:48,967 --> 01:15:50,167
+Onun için seçilmiş bir kitap.
+
+449
+01:15:52,340 --> 01:16:20,340
+Burada sadece birinci şema için bir şema göstermiş. Burada birinci şemadan kalsın sadece aritmatik uygulanan kısım. Onun için bir şema göstermiş. Ama genel olarak bütün algoritmalarımızı da bu şekilde gösterebiliriz. Bir tane input file'ımız var. Bu aritmatik enkoti işlemine giriyor ve bize output file veriyor. Daha sonra bu output file'ı sıkıştırılmış veriyi çözmek için dekompresi işlemine soğuk.
+
+450
+01:16:20,340 --> 01:16:24,680
+Ona input olarak giriyor ve burada bize orijinal file'ımızı geri veriyor.
+
+451
+01:16:28,372 --> 01:16:38,212
+Burada aritmatik kodlama kullanılarak yapılan sıkıştırma oranları incelediğimizde en iyi sıkıştırma oranı %58, en kötü de %75 olarak çıkmış.
+
+452
+01:16:39,112 --> 01:16:45,592
+Gördüğümüz gibi burada orijinal boyut ilk bölüm için 5900, 4400'lük bir oran var.
+
+453
+01:16:46,311 --> 01:16:50,052
+Yani çok da iyi bir oran elde edememiş. Şimdi diğerlerine de bakacağız.
+
+454
+01:16:50,707 --> 01:17:14,148
+Burada aritmatik kodlamadan önce multifront uygulanmış. Burada birinci şemaya göre daha iyi oranlar var. En iyi sıkıştırma oranı %36, en kötüsü de %54 olarak belirlenmiş. Örneğin burada sıkıştırılmış dosya 4496 byte'dı. Burada ilk şeye baktığımızda 3213 olarak yani daha iyi bir sıkıştırma olduğunu görebiliyoruz.
+
+455
+01:17:15,923 --> 01:17:35,663
+Üçüncüsünde BVT ve aritmatik kodlama kullanılarak yapılan sıkıştırmada farklı blok boyutlarına bir sıkıştırma yapıyor. Bunlar 1024, 2048, 4096 ve 8192 olarak burada ayırmış. Hepsinin sonucunda ayrı ayrı vermiş.
+
+456
+01:17:36,275 --> 01:17:50,395
+Burada en iyi sıkıştırma oranı %59, en kötü %76 olarak çıkmış. Buradaki orana baktığımızda aritmatik kodlamayla sıkış, sıkıştırması çok iyi değil. Benzer sonuçlar elde ettik.
+
+457
+01:17:58,100 --> 01:18:23,100
+Birinci, ikinci ve üçüncüye göre çok daha iyi sonuçlar elde ediyoruz. Yani ikiden biraz daha iyi sonuçlar elde ediyoruz ama diğerlerine göre daha iyi sonuçlar elde ediyoruz. Burada şuna dikkat çekilmiş, daha büyük blok boyutunda daha iyi bir sıkıştırma var. Daha büyük blok boyutu multi front koduyla yani tam sayı kodunu değiştirecek daha fazla karakter anlamına geliştiriyor.
+
+458
+01:18:23,796 --> 01:18:28,876
+Bu da daha büyük boyutta daha iyi bir sıkıştırmayı ifade ediyor.
+
+459
+01:18:32,372 --> 01:18:48,632
+Burada sonuçlara baktığımız zaman sadece aritmatik kodlama kullanıldığında %58 oranında bir sıkıştırma verdi. Aritmatik kodlamadan önce mutfraat kullanmak %36.30 oranında bir sıkıştırma oranı elde ettik. Daha iyi bir sonuç elde ettik.
+
+460
+01:18:49,392 --> 01:18:57,952
+BVT mutfraat ve aritmatik kodlama kullanılarak sıkış sıkıştırma oranımız en iyi orada geldi. O da %36.2.
+
+461
+01:18:58,676 --> 01:19:18,376
+BVT dönüşümündeki 8192 byte blok boyutu diğer blok boyutlarına göre daha iyi sıkıştırma oranı verdi. Daha büyük blok boyutu multi front koduyla tam sayı koduyla değiştirecek daha fazla karakter anlamına geliyor. Bu yüzden daha iyi bir sonuç veriyor bize.
+
+462
+01:19:26,676 --> 01:19:50,276
+Bu araştırma sonucu baz alınarak yine en çok kullanılan diğer hadis uygulamalarında da kullanabileceğini söylemiş. Ve daha küçük sıkıştırma oranı verebiliyorsa BVT için daha büyük blok boyutu kullanmaya çalışabileceğimizi söylemiş. Bu şekilde benim anlatacaktım.
+
+463
+01:19:50,579 --> 01:19:58,480
+Teşekkürler [öğrenci]. Akıcı olarak, yani ayrıntılara girerek verdin. Benim bir sorum yok.
+
+464
+01:19:58,480 --> 01:20:00,240
+Bir sorunuz var senin arkadaşın.
+
+465
+01:20:00,240 --> 01:20:01,060
+Bir sorusu olan var mı?
+
+466
+01:20:03,720 --> 01:20:04,440
+Peki.
+
+467
+01:20:05,087 --> 01:20:27,207
+[kişisel bilgi]
+
+468
+01:20:32,115 --> 01:20:50,636
+Arkasından [öğrenci]. Geçen haftalardan olup veremeyen var mı? İçinizde. Tamam. Uzatmıyorum. [öğrenci]'e devam edeceğiz. 25 geçe. Görüşmek üzere.
+
+469
+01:20:50,636 --> 01:20:52,016
+Hocam görüşmek üzere.
+
+470
+01:28:02,195 --> 01:28:13,315
+Evet, çok hızlı geçiyor o zaman. [öğrenci] aramızda yok dedik. Ona eksiyi koyalım. Evet [öğrenci], geldin mi?
+
+471
+01:28:14,055 --> 01:28:14,876
+Evet hocam.
+
+472
+01:28:16,935 --> 01:28:17,275
+Merhaba.
+
+473
+01:28:17,376 --> 01:28:20,135
+[öğrenci], evet. Hadi bakalım.
+
+474
+01:28:21,376 --> 01:28:22,456
+Görüntümü kapatayım mı?
+
+475
+01:28:23,796 --> 01:28:28,655
+[kişisel bilgi]
+
+476
+01:28:29,043 --> 01:28:37,583
+[kişisel bilgi]
+
+477
+01:28:39,724 --> 01:28:55,384
+Ekranım geldi mi? Geldi. Bir de full screen'e geç. Şimdi oldu mu? Oldu. Allah'ım. Yang, Zang, Zang, Li, Zang, Yong, Yang. Aynı soyatlar nasıl oluyor? Evet.
+
+478
+01:28:55,792 --> 01:28:59,771
+Tamam, sana bir brak.
+
+479
+01:29:00,127 --> 01:29:11,327
+Benim konum Vehicle Text Data Compression and Transmission Methods Based on Maximum Entropy Neural Networks and Optimized Hoffman Encoding Algorithms.
+
+480
+01:29:11,807 --> 01:29:13,907
+Vay be, başlığa bak sen.
+
+481
+01:29:13,907 --> 01:29:27,147
+Biraz uzun oldu. Aslında bu çalışmanın özeti şu, bazı servis araçlarında veya toplu taşıma araçlarında araç terminali denen cihazlar var.
+
+482
+01:29:28,127 --> 01:29:49,387
+Yani tıpkı araç multimediyası gibi cihazlar. Bunlar işte ilgili servis aracı olur, toplu taşıma aracı olur. Onlarla ilgili bilgileri alıyorlar ve aracın bağlı olduğu kuruma, kurumdaki bir sunucuya artık kablosuz bağlantı üzerinden verilerini gönderiyorlar.
+
+483
+01:29:51,956 --> 01:30:01,996
+Bu çalışmanın sunduğu yöntemle bu verileri daha iyi sıkıştırma ve gönderim süresini azaltmak amaçlandı.
+
+484
+01:30:03,796 --> 01:30:11,916
+Aslında normalde veri sıkıştırmak için Huffman veya LZW gibi algoritmalar var.
+
+485
+01:30:11,916 --> 01:30:18,496
+Ancak bu algoritmalar şehirlerdeki iletişim ortamındaki farklılıkları veya düşük güçlü.
+
+486
+01:30:19,060 --> 01:30:40,380
+İletimini hesaba katmıyorlar. Yani evet sıkıştırabiliyorlar ama tabii bu verinin gönderilmesi de gerekiyor. Bu durumu hesaba katmıyorlar. Araç terminalleri genelde konum, hız, yükseklik, plakalar, aracın durumu, sürüş koşulları, sürücüler.
+
+487
+01:30:40,768 --> 01:30:44,168
+Yolcu koşulları ve diğer metin bilgilerini topluyorlar.
+
+488
+01:30:44,768 --> 01:30:51,387
+Ve bunları farklı veri formatları, boyutları ve türleri şeklinde gönderiyorlar.
+
+489
+01:30:53,208 --> 01:31:01,728
+Ama bu aracın içindeki, bu cihazdaki sıkıştırmanın dezavantajı her bir verinin sıkıştırılması gerekiyor.
+
+490
+01:31:02,168 --> 01:31:06,828
+Bu da verinin eş zamanlı olarak karşıya gönderilmesini geciktiriyor.
+
+491
+01:31:09,011 --> 01:31:30,391
+Dolayısıyla bundan dolayı geleneksel sıkıştırma algoritmalarından daha iyi bir sıkıştırma algoritması gerekiyor. Bir de araç terminalinin donanımı, yani bu aracın içindeki cihazın donanımı fazla güçlü olmadığı için bir bilgisayardaki veya bir cep telefonu kadar fazla bellek işgal etmemeli ve hafif olmalı.
+
+492
+01:31:30,868 --> 01:31:48,868
+Bunun için aslında yapay nöron ağları öneriliyor. Ama şöyle bir durum var. Yine dediğim gibi araç terminallerinin donanımsal olarak biraz düşük kaldığı için büyük modeller terminalde çalışamıyor.
+
+493
+01:31:49,268 --> 01:32:11,967
+Terminal bir bulut ortamından başka modele bağlansın diye düşünülüyor. Ama bu seferde de gizlilik riski oluşuyor. Peki çözüm ne? Çözüm de şu. Araç terminalinde daha küçük model kullanmak. Normal bir nöron ağına göre. Bu ağı da bu çalışma üç şekilde.
+
+494
+01:32:12,479 --> 01:32:25,199
+Üç adımda gerçekleştiriyor. Önemli olmayan bağlantılarını kesiyor modelin. Kuantizasyon ağırlığını arttırıyor. Bir de sonra Huffman kodlamasını kullanıyor.
+
+495
+01:32:29,199 --> 01:32:38,619
+Normalde sinir ağı sıkıştırma yönteminin özelliklerinden birisi daha yüksek sıkıştırma oranı ve açma hızı elde ediyor.
+
+496
+01:32:39,091 --> 01:32:53,511
+Ama bunda şöyle bir problem oluşuyor. Verilerin iki kez taranması gerekiyor. Çünkü önce bir model eğitilecek. Ondan sonra da mevcut veri modele göre enkode edilip öyle karşıya gönderilecek.
+
+497
+01:32:54,612 --> 01:33:06,572
+Bunun için şöyle bir model olsun diye düşünüyorlar. Gerçek olasılık dağılımını ve tutarlı tahmin sonuçlarını elde etmek için örnek verilerden bilgi alınması.
+
+498
+01:33:07,188 --> 01:33:34,268
+Ve bu bilgi gerçek durumun dağılımı ile tutarlı olması gereken istatistiksel bir model oluşturmak için kullanılması gerekiyor demişler. Daha sonra da maksimum entropi seçiliyormuş. Bir tane GX algoritması olsun diyorlar. X'e bağlı Y olasılığını, yine X'e bağlı Y olasılığı tutarlı olana kadar bir W ağırlığını ayarlamak için bir algoritma kuruyorlar.
+
+499
+01:33:34,707 --> 01:34:01,188
+Bu hem koşullu kısıtlamaları hem de kısıtlamalar altındaki maksimum entropiyi karşılayan olasılıksal bir model olur diyorlar. Ama bir de bakıyorlar ki bu istatistiksel model aslında bir sinir ağına çok benzer bir şekilde çalışıyormuş. Ondan dolayı bunu gerçekleştirmek için bu istatistiksel modeli sinir ağı şeklinde kuralım demişler.
+
+500
+01:34:02,003 --> 01:34:23,503
+Bu sinir ağında ağı da şöyle çalışıyor. Bağlama dayalı karakter olasılık dağılım modelini tahmin etmek için iki katmanlı bir sinir ağı kullanılsın demişler. Tek bir giriş nöronu her olası bağlam yani X, Y olarak ifade ediliyor. Bir çıkış nöronu ile her olası bağlamın çıkış karakteri Y, Y olarak ifade ediliyor.
+
+501
+01:34:24,340 --> 01:34:37,340
+Ve her giriş ve çıkış nöronunun onları birbirine bağlamak için W, E, J ağırlığı vardır. Yani bildiğimiz iki katmanlı bir dense layer gibi düşünebiliriz bunları.
+
+502
+01:34:38,199 --> 01:34:42,899
+Y, E output'u bir sonraki karakterin E olma olasılığını temsil ediyor.
+
+503
+01:34:43,475 --> 01:35:03,575
+Ve şekli GX kullanılarak elde edilen sonuçlarla ve maksimum entropi ilkesiyle tutarlı oluyor. Yani dediğimiz istatistiksel modele uygun deniliyor. Peki Huffman nerede kullanılıyor? Gönderilecek GPS ve tekst verisinin kayıpsız sıkıştırması için Huffman kullanılıyor.
+
+504
+01:35:04,000 --> 01:35:15,060
+Huffman için lokasyon bilgisi gibi kendini sürekli tekrar eden gereksiz veriler siliniyor ve bu veriler sonra bir depolama ara belleğinde saklanıyor.
+
+505
+01:35:16,940 --> 01:35:30,060
+Normalde Huffman için büyük ara bellek ve yüksek karmaşıklıkla kuruluyor Huffman. Bu algoritmada da Huffman'ın bu problemlerini çözmek için 7 adım uyguluyorlar.
+
+506
+01:35:31,055 --> 01:35:52,375
+Bunlardan ilki oluşturulan ikili hafman ağacı başlatılıyor. Keyfi olarak bir düğüm seçiliyor ve kök düğümünün ağırlığı sıfır olarak ayarlanıyor. İkinci adımda kodlanmayan yeni karakterler için yeni oluşturulan düğüm ağırlığını birleştiriyor ve ağırlığı sıfır olan diğer düğüm yeni bir sıfır ağırlığı olarak tanımlanıyor.
+
+507
+01:35:57,908 --> 01:36:00,668
+Kodlama karakterlerinin yeri bulunuyor.
+
+508
+01:36:07,828 --> 01:36:20,268
+[öğrenci], dondun mu? Zaten çatallaşmaya başlamıştı sesi.
+
+509
+01:36:21,948 --> 01:36:22,328
+Gitti.
+
+510
+01:36:23,128 --> 01:36:24,328
+Hepten gitti.
+
+511
+01:36:25,808 --> 01:36:27,448
+Dur şimdi biraz sonra gelir.
+
+512
+01:36:34,676 --> 01:36:38,736
+Ama çıkıp bir daha da girmiyor. Anlattığı...
+
+513
+01:36:38,736 --> 01:36:41,616
+Bence fark etmemiştir. Devam ediyordu herhalde.
+
+514
+01:36:42,316 --> 01:36:50,716
+O zaman hemen mesaj atalım. Evri bana değil de... Dur neyse Evri bana... Aa [öğrenci] gitti. Değil mi?
+
+515
+01:36:51,976 --> 01:36:52,776
+Evet düştü.
+
+516
+01:36:53,096 --> 01:36:56,476
+[kişisel bilgi]
+
+517
+01:36:56,556 --> 01:36:57,636
+Ama şurada görüyorum.
+
+518
+01:36:58,036 --> 01:36:59,296
+Merhaba hocam.
+
+519
+01:36:59,336 --> 01:37:00,996
+Evet gittin geldin yani.
+
+520
+01:37:01,396 --> 01:37:01,716
+Evet.
+
+521
+01:37:03,412 --> 01:37:05,052
+Bir saniye.
+
+522
+01:37:06,492 --> 01:37:10,012
+Bünyemiz alışkın böyle şeylere. Şok olmadık yani.
+
+523
+01:37:10,932 --> 01:37:13,052
+Kaçıncı adım mı söyledim en son?
+
+524
+01:37:14,372 --> 01:37:16,812
+Sesin çatallanıyordu zaten.
+
+525
+01:37:17,352 --> 01:37:17,712
+Anladım.
+
+526
+01:37:18,392 --> 01:37:20,092
+Sen bu slide'dan başla.
+
+527
+01:37:20,492 --> 01:37:25,872
+Yedi tane adımla geliştiriliyor Huffman. Bu adımların etkisi şöyle oluyor.
+
+528
+01:37:27,472 --> 01:37:29,952
+Kök düğümün ağırlığı sıfır sıfır.
+
+529
+01:37:30,644 --> 01:37:53,684
+Sıfıra ayarlanıyor ve sembol akışının taranması gereken sayı bire indiriliyor. Bir de sinir ağının ağırlıkları optimize edildikten ve ayarlandıktan sonra hesaplamada sadece bir olasılığı olan bir karakter taranıyor. İkili araçlar arasında yalnızca düğüm numaraları değiş tokuş ediliyor.
+
+530
+01:37:54,612 --> 01:38:02,152
+Bu yalnızca büyük miktarda ön bellek kullanımını azaltmakla kalmıyor. Aynı zamanda algoritmanın karmaşıklığını da azaltıyor.
+
+531
+01:38:02,152 --> 01:38:17,612
+Bu da benim anlama karmaşıklığımı arttırdı. Şunu mesela anlayamadım. Kök düğümün ağırlığını sıfıra ayarlayarak sembol akışının taranması gereken sayıyı bire indirir.
+
+532
+01:38:17,612 --> 01:38:18,711
+Evet.
+
+533
+01:38:19,859 --> 01:38:32,539
+Selamlısın mı? Normalde hocam Huffman'da önce tüm veriyi tananıp frekansa göre dizilip ondan sonra tekrar ağacı oluştururken veriyi bir tür daha taranıyor ya.
+
+534
+01:38:33,140 --> 01:38:48,600
+Hocam bu sanırım bundan önce maksimum entropi için ayarlanmış iki katmanlı nöron ağı var ya, ondan dolayı sadece bir kere veriyi tarayarak Huffman'ı oluşturabiliyormuş. Ben böyle anladım.
+
+535
+01:38:51,100 --> 01:38:57,600
+Ben bir de şey niye öyle yapmıyorlar onu anlamadım. Nöron Network'teki ağırlık değerlerini...
+
+536
+01:38:58,420 --> 01:39:13,900
+Bir örnekle başladın ya, E'nin P'den sonra gelme olasılığı falan filan. Niye o olasılık değerlerini kullanmıyor? Yine burada neural network'taki ağırlıkları rastgele mi veriyor?
+
+537
+01:39:17,900 --> 01:39:24,500
+Ağırlıklarına emin değilim. Sadece W'lar ayrılanır deniyor.
+
+538
+01:39:25,427 --> 01:39:48,807
+Mesela bir önceki slide'ına geç. Şurada var ya, bir algoritma var şunların şeylerini çıkarıyor. V'yi ayarlamak için kullanılan bir algoritmadır. Bu ağırlık. Sanki arka arkaya gelen iki karakterin gelme olasılıklarını ben ağırlık olarak kullanılacak diye.
+
+539
+01:39:49,311 --> 01:39:57,171
+Mesela düşündüm. Ama daha sonra bu şeye geçtiğim vakit o hufman ağacı tarafına onu pek anlamadım.
+
+540
+01:40:00,000 --> 01:40:10,759
+Zaten aslında biraz modifiye edilmiş bir Hoffman kullanıyor ve makalede de sadece bu 7 adımı söylüyordu. Bir örnek göstermediği için ben de bu kısmı aynen aldım.
+
+541
+01:40:11,219 --> 01:40:13,259
+Doğrudur. Ben sana bir şey söylüyorum.
+
+542
+01:40:13,679 --> 01:40:19,679
+Bir de özellikle rastgele sıfır bir tane ile başlıyor ya, bir rastgelelik de var ya.
+
+543
+01:40:21,300 --> 01:40:41,260
+Mesela Optimize Hoofman dediğinde bu tamam. Demek ki Hoofman ağacını optimize ederek kullanıyor. Daha hızlı oluşturuyor demek. Bir önceki Entropy Coding'i kullanarak. Hani böyle bir şey kendimce yapabiliyorum. Aradaki şeyleri tam çıkaramıyorum.
+
+544
+01:40:41,779 --> 01:40:52,880
+Çünkü adamların ne düşündüğünü tam olarak anlamak lazım. Bu şeyi yine anlamadım. O sıfır neredeydi? Bir şey vardı sıfır alır bir şey yazıyor diyorum.
+
+545
+01:40:54,279 --> 01:40:59,060
+Rastgele bir tane nodu sıfır seçiyor sonra oradan hesaplıyor. O bölüm değil mi?
+
+546
+01:40:59,060 --> 01:41:09,060
+Kodlanmayan yeni karayen üst düğümdeki iki düğüm üst düğümün ağırlığını birleştirir ve ağırlığı sıfır olan düğüm yeni bir sıfır ağırlığı tanımlar.
+
+547
+01:41:09,524 --> 01:41:12,724
+Ya sen bunu tabii böyle bir Türkçeye de çevirdin ama.
+
+548
+01:41:14,964 --> 01:41:20,024
+Evet. Yani dediğim gibi sözel olarak yazıyordu.
+
+549
+01:41:20,024 --> 01:41:33,424
+Ya doğruyu da ben sana kaynaklı değil. Ben anlamıyorum, anlamadım. Büyük bir kere sen de tam anlamadın. Orada yazılanı yazdın. Bu kaç yılının çalışmasıydı?
+
+550
+01:41:33,744 --> 01:41:34,244
+2019.
+
+551
+01:41:35,484 --> 01:41:36,444
+Yeni sayılır.
+
+552
+01:41:37,747 --> 01:41:55,148
+Demek ki ben Optimize Huffman Encoding diye bir arama yapsam mutlaka bunun nasıl gerçekleştirildiğiyle ilgili bir şey bulurum. Yani hocam merak ediyorsanız oraya bakın diyebilirsin bana. Bakarım bir ara. Tamam sen devam et.
+
+553
+01:41:56,212 --> 01:42:20,152
+Bu deneyler ve sonuçlar peki bir köy ortamına gidiliyor ve oradaki internet hızına bakılıyor. Çünkü gönderim hızı da bizim için önemli. Burada 240 tane ICMP veri paketi bir aracın terminalinden sunucuya aktarılıyor.
+
+554
+01:42:20,948 --> 01:42:47,968
+Burada pinkler ölçülüyor ve kaç tane paketin karşıya gidebildiğine bakılıyor. Pink dediğimiz şey şu, sunucuya bağlanma gecikmesi gibi bir şey. Yani buradan sunucuya veri gönderiyoruz, sunucu da bize veri gönderiyor. Ben bu paketi aldım gibisinden. Bu aradaki süreye pinkleniyor ve milisaniyeyle ölçülüyor. Düşük pink, pingin olması daha iyi her zaman.
+
+555
+01:42:48,404 --> 01:42:58,924
+Çünkü aradaki gecikmenin az olduğunu belirtir. Burada da package losslar ortalama 4-4.5 civarı çıkıyor.
+
+556
+01:43:01,404 --> 01:43:07,704
+Bir de bu algoritma ve diğer algoritmalarla veriler sıkıştırılıyor.
+
+557
+01:43:08,148 --> 01:43:15,508
+Bu algoritma dediğin ne? Orjinal olan mı? Adamların yaptığı mı? Adamların yaptığı en alttaki mi?
+
+558
+01:43:16,508 --> 01:43:20,408
+Evet tamam. İlk başta orjinal.
+
+559
+01:43:20,948 --> 01:43:40,268
+Orijinal veri sıkıştırılmadan gönderiliyor. Bir de sadece Hoffman'la sıkıştırılıp gönderiliyor. Bir de sadece LZW'yla sıkıştırılıp gönderiliyor. Bir de bu makalenin sunduğu Maximum Entropy Sinir Ağı ve Hoffman'ın birleştirilme algoritmasıyla sıkıştırılıp karşıya gönderiliyor.
+
+560
+01:43:40,756 --> 01:43:59,176
+Bu veri özelleştirilmiş toplu taşıma aracından alınıyor. 300 dakikalık bir veri toplama süresiyle elde ediliyor. Bir de bu veriler karşıya gönderilirken veri toplama süresi 5 saniyede 1 olacak şekilde, bir de 10 saniyede 1 olacak şekilde, bir de 15 saniyede 1.
+
+561
+01:43:59,859 --> 01:44:21,199
+Olacak şekilde ayarlanıyor. Yani 15 saniyelik bir veri karşıya gönderiliyor. 10 saniyelik bir veri karşıya gönderiliyor ve 5 saniyelik bir veri karşıya gönderiliyor. Burada sıkıştırılan verinin boyutu, compression ratio'ları. Hocam bu compression ratio'ya baktım makalede nasıl hesaplandığı yazılmamış.
+
+562
+01:44:21,199 --> 01:44:26,879
+Ben ama anladım. Bir ödeki üç şartı 100 vermiş.
+
+563
+01:44:27,279 --> 01:44:35,359
+Compression Ratio demiş ama çarpı 100 verdiği için 100'den mi çıkaracağız diye sormuştum ya, çıkarmamıza gerek yok.
+
+564
+01:44:35,519 --> 01:44:37,899
+Hocam çarpı 100 nerede yazıyor?
+
+565
+01:44:38,399 --> 01:44:41,979
+Sende değil. Bir önceki ya da iki öncekinde vardı.
+
+566
+01:44:41,979 --> 01:44:49,979
+Evet. Transfer Time var. Yani karşıya gönderilme süresi.
+
+567
+01:44:50,260 --> 01:45:08,520
+Transmission Error Rate'de şu. Örneğin 5 saniyelik bir veriyi gönderdim ben karşıya. 5 saniyelik bir verinin sıkıştırılmadan önceki hali mesela x uzunluğundaysa karşıya gittiğinde bunun uzunluğu ne kadar değişiyor? Bunun hata oranı. Bir de paket.
+
+568
+01:45:08,851 --> 01:45:25,032
+Package Lost Rate var. Bu da karşıya hiç gönderilemeyen paketlerin miktarını belirtiyor. Burada en iyi sıkıştırma yine bu makalenin sunduğu sıkıştırma algoritması ve süre olarak da en iyisi bu. En düşük sürede gönderiyor.
+
+569
+01:45:35,731 --> 01:45:43,492
+Hufman Kuling'i besliyor. Orada bir şey yapıyor. Onu takip olarak anlayamadım. Optimize ettiği kısım buradan kaynaklanıyor.
+
+570
+01:45:44,115 --> 01:46:10,336
+Ve bu da süreyi şey yapıyor. Tabi buradaki optimizasyonla ağacın, çünkü dinamik, ağacın gönderilmesi, ne bileyim elimizdeki kotlar arasındaki varyansı düşürüp, beklemeyi azaltıp, daha hızlı gönderme ve çözme işleminin gerçekleştirilmesi bunların hepsini kapsıyor.
+
+571
+01:46:12,916 --> 01:46:14,176
+Hadi devam edelim.
+
+572
+01:46:14,176 --> 01:46:26,988
+Bir de buna ek olarak şunu yapalım demişler. Bir tane yolcu otobüsünden elde edilen hız verilerini...
+
+573
+01:46:27,315 --> 01:46:55,036
+Sıkıştıralım, karşıya gönderelim, orijinal verilerle kıyaslayalım demişler. Gerçek verilerle ne kadar doğru çalışıyor bu algoritma diye. Decompress edildikten sonra toplam 12.600 tane hız verisi toplanıyor 4 gün boyunca bir tane yolcu otobüsünden. Ama 239'u yanlış yere gidiyor veya kayboluyor. O yüzden 12.361 tane veri gönderiliyor sıkıştırılıp.
+
+574
+01:46:55,315 --> 01:47:10,636
+Şimdi buradaki figür 1'de orijinal hız verilerini görüyoruz. 12.361 tane. Figür 2'de de sıkıştırılıp karşıya gönderilip oradan açıldıktan sonraki hız verileri var.
+
+575
+01:47:16,832 --> 01:47:40,032
+Aradaki hata miktarı ölçülmüş oluyor yani. Ve bunu ortalama kare sapmayla ölçüyorlar. Ortalama kare sapma hatası 0.23 çıkıyor ve buna makul bir aralıktadır diyorlar. Yani hız verilerini bu algoritmayla karşıya gönderebiliriz. Oradan decompress edebiliriz. Yani verilerde bozulma çok azdır diyorlar.
+
+576
+01:47:41,203 --> 01:47:57,763
+Sonuç olarak hız verileri %98.1 oranında doğru iletiliyor ve bu gerçekte kullanılır diyorlar. Bir de bu algoritma kablosuz iletiminin verimliliğini arttırıyor transfer süresini azalttığı için.
+
+577
+01:47:58,176 --> 01:48:10,556
+Bir de transfer süresini azalttığı için aslında şehirdeki farklı farklı baz istasyonları olan bölgelerde daha verimli olacağı söyleniyor.
+
+578
+01:48:13,336 --> 01:48:16,476
+Sunum bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+579
+01:48:17,596 --> 01:48:22,756
+Biz teşekkür ediyoruz. Onlara da inanıyoruz. Öyle diyorlarsa öyledir.
+
+580
+01:48:23,416 --> 01:48:25,155
+[öğrenci]'e soru var mı?
+
+581
+01:48:28,979 --> 01:48:33,619
+[kişisel bilgi]
+
+582
+01:48:34,719 --> 01:48:36,659
+[kişisel bilgi]
+
+583
+01:48:39,299 --> 01:48:41,339
+[kişisel bilgi]
+
+584
+01:48:42,500 --> 01:48:44,420
+[kişisel bilgi]
+
+585
+01:48:44,819 --> 01:48:45,960
+[kişisel bilgi]
+
+586
+01:48:46,579 --> 01:48:51,059
+[kişisel bilgi]
+
+587
+01:48:51,636 --> 01:48:53,156
+[kişisel bilgi]
+
+588
+01:48:53,316 --> 01:49:06,136
+[kişisel bilgi]
+
+589
+01:49:07,416 --> 01:49:15,116
+Merhaba tekrardan. Bugün XML sıkıştırma tekniklerini inceleyen ve karşılaştıran bir makaleden bahsedeceğim.
+
+590
+01:49:15,731 --> 01:49:39,971
+Öncelikle giriş yapalım. XML 1998 yılında sistemler arası veri transferi, loglama ve sorgulanabilir olması nedeniyle veri saklama amacıyla kullanılan bir format. Özellikle HTML'in ve World Wide Web'in buluşundan sonra çok çok kullanılmış. Hatta makale de 2008 yılında yazılmış.
+
+591
+01:49:40,448 --> 01:49:56,388
+Bu makalede de şey diye belirtiyor yazar, de facto standart olarak XML diyor. Ama günümüzde popülaritesini Jason ve YAML gibi farklı formatlara kaptırmış. Ancak SVG formatıyla beraber hala oldukça sık rastlayabiliriz.
+
+592
+01:49:57,388 --> 01:50:07,508
+XML, self-describing, kendine açıklayıcı bir format olarak tanımlanır. Çünkü her kayıtta şema tekrarlanır.
+
+593
+01:50:07,828 --> 01:50:21,048
+Bu, esnek bir şema olması nedeniyle her kayıtta aynı zamanda yarı yapılandırmış self-structured bir veri yapısı olarak da tarif edilebilir.
+
+594
+01:50:21,988 --> 01:50:31,708
+Ancak burada gördüğünüz gibi şemanın her kayıtta tekrarlanması nedeniyle XML dosyasında boyutu artıyor ve sıkıştırılmaya oldukça müsait bir hale geliyor.
+
+595
+01:50:32,532 --> 01:50:44,532
+Bu makaleyi yazarken, xml sıkıştırma tekniklerinin mevcut durumu ile ilgili bir derleme sunmak istemiş. Aynı zamanda...
+
+596
+01:50:46,036 --> 01:50:56,876
+Bu teknikleri karşılaştırmak için bir veri seti, corpus oluşturmak istemiş. Aynı zamanda XML sıkıştırma araçlarının performanslarını ayrıntılı sonuçlarla sunmuş.
+
+597
+01:50:57,475 --> 01:51:04,036
+Ve bunu da bir web sitesinde yapmış. Ancak bu web sitesi şu an erişilebilir değil. O yüzden sadece makaledeki...
+
+598
+01:51:04,948 --> 01:51:07,307
+Sonuçları paylaşabiliyor olacağım.
+
+599
+01:51:07,828 --> 01:51:09,948
+Dokuz tane böyle şey mi varmış?
+
+600
+01:51:10,528 --> 01:51:11,528
+Araç mı varmış?
+
+601
+01:51:11,807 --> 01:51:17,268
+Şöyle, genel metin sıkıştırma araçlarını da kıyaslamış.
+
+602
+01:51:17,288 --> 01:51:21,268
+Yani her şeyi kıyaslamış açıkçası.
+
+603
+01:51:22,768 --> 01:51:25,068
+İki şekilde de sınıflandırmış.
+
+604
+01:51:25,068 --> 01:51:27,248
+İlk sınıflandırma şekli.
+
+605
+01:51:28,307 --> 01:51:46,807
+XML sıkıştırılan verinin formatının XML olup olmadığını anlaması üzerine. Bu noktada da ilk sınıf General Text Compressors, genel metin sıkıştırıcılar ve XML bilincine sahip sıkıştırıcılar.
+
+606
+01:51:46,807 --> 01:51:53,847
+Bu bilince sahip sıkıştırıcılar da yine ikiye ayırmış. Şemaya ihtiyaç duyan ve şemaya ihtiyaç duymayan olarak.
+
+607
+01:51:54,996 --> 01:52:11,076
+Bir de sorguları destekleme yeteneklerine göre bir sınıflandırma yapmış. Sorgulanabilir olanlar ve sorgulanamayanlar şeklinde. Sorgulanabilir olanlarda da homomorfik ve non-homomorfik olarak ikiye ayırmış. Bunlar hakkında bilgi veriyor olacağım.
+
+608
+01:52:12,148 --> 01:52:22,307
+İlk olarak genel metin sıkıştırma araçları. XML bir text-based bir formatta tutulduğu için genel metin sıkıştırma araçlarından faydalanabiliriz.
+
+609
+01:52:22,307 --> 01:52:31,148
+Yazarda burada gzip, bizip ve ppm olarak üç tanesini kullanmış. Gzip aslında...
+
+610
+01:52:31,412 --> 01:52:56,332
+LZ77 ve Huffman kodlamasını kullanan iki aşamalı deflate kayıpsız veri sıkıştırma algoritmasını kullanıyor. İlk aşamada LZ77 ile inelenen stringler azaltılıyor. İkinci aşamada ise de Huffman kodlamasıyla daha sık kullanılan sembollere daha kısa bit uzunluğundaki semboller verilerek temsil ediliyor.
+
+611
+01:52:57,555 --> 01:53:21,295
+Bizip de birden fazla layer'dan oluşan, katmandan oluşan bir sıkıştırma. Burada aşağıdaki sırada belirtildiği gibi kullanılıyor. Öncelikle ham veri üzerinde bir RL algoritması çalıştırılıyor. Sonrasında Burroughs-Wheeler transformu yapılıyor. Onun üzerine move to front ve tekrar.
+
+612
+01:53:21,775 --> 01:53:41,655
+RL'ye, sonrasında da Huffman ile kapanış yapılıyor. Burada Barosu Yılları daha önce kimse anlatmadığı için ben de eklemiştim ama bugün iki defa anlatıldı. O yüzden geçiyorum burayı. Burada belki farklı olarak şeyi anlatabilirim. Output dosyası sonra nasıl açılıyor?
+
+613
+01:53:46,895 --> 01:54:07,395
+Kolon sütunu haline getirip yazıyoruz. Sonrasında sıralıyoruz ve bunu orijinal input'umuzun sonuna ekliyoruz. Sonra tekrar sıralıyoruz. Sonrasında çıkanı yine başına ekliyoruz ve bu string uzunluğu kadar bu işlemi yaptıktan sonra da final ilk sıkıştırılmamış haline erişebiliyoruz.
+
+614
+01:54:07,956 --> 01:54:21,536
+PPM'i de derste görmüştük. Partial String Matching, istatistiksel bir model. N-order Markov modellerini kullanılarak bir sonraki karakteri tahmin etmeye dayanan yöntem.
+
+615
+01:54:22,456 --> 01:54:31,355
+PPM basit olmasına ve bu makalede inceleden sıkıştırıcılar arasında en verimli olmasına rağmen hesaplama açısından oldukça masraflıdır.
+
+616
+01:54:35,859 --> 01:55:03,380
+Çok artıyor. Şimdi bir de XML bilincinde olan sıkıştırıcılara bakalım. İlk olarak sorgulanamayanlar. Burada ilk implementasyon XMIL adında bir sıkıştırıcı. Bu 1999 yılında AT&T'de Bell laboratuvarlarında bulunmuş ve ondan sonra gelen neredeyse tüm sıkıştırıcılara temel olmuş bir yöntem.
+
+617
+01:55:04,115 --> 01:55:14,836
+Bu yöntem ne yapıyor aslında? Verinin, XML verisinin taglerini ayrı bir şekilde sıkıştırıyor ve veriyi ayrı bir şekilde sıkıştırıyor.
+
+618
+01:55:17,011 --> 01:55:30,931
+Bunu temel alarak, ufak optimizasyonlar yaparak, önce veriden bir ön okumayla geçip tekrar edenleri sözlükteki daha kısa sembollerle değiştiren bir algoritma var.
+
+619
+01:55:31,791 --> 01:55:37,072
+X-Comp'da bellekomp kullanımında yaptığı optimizasyonla farklılaşıyor.
+
+620
+01:55:37,072 --> 01:55:39,371
+Bir de şemaya ihtiyaç duyan.
+
+621
+01:55:41,108 --> 01:55:49,728
+Yöntemler var. Bu yöntemlere de şemayı önden veriyorsunuz ve size önden bir sözlük hazırlıyor. Bu sayede daha verimli bir sıkıştırma yapıyor.
+
+622
+01:56:19,220 --> 01:56:40,260
+Örneğin, burada host'dan gelenleri IP adındaki bir konteynerı at. Request line'dan gelenleri get diye bir konteynerı at. Buradaki t'de bu semantik kompresör böyle kendi içinde hazır fonksiyonlarla geliyor. T direkt string olarak at gibi.
+
+623
+01:56:47,220 --> 01:56:54,220
+Sensor verisindeki değişimleri sadece şey yapıyor, alıyor. Kendisinden...
+
+624
+01:56:54,739 --> 01:57:15,119
+Kendisinin içinde run length encoding gibi hazır fonksiyonlar da var. Bunların hepsini bu konteynerların içinde çalıştırabiliyor. En sonunda gzip kullanarak, tabi bu da gzip de aslına bakarsanız parametrik, diğer sıkıştırma, text-based sıkıştırma algoritmalarını da verebiliyorsunuz. Bu şekilde sıkıştırıyor.
+
+625
+01:57:15,119 --> 01:57:19,079
+Burada da bir özet sunmuş.
+
+626
+01:57:19,456 --> 01:57:34,284
+XMIL, ŞAMA'ya ihtiyaç duymayan sözlük tabanlı bir sıkıştırma yöntemi. Backend olarak istediğiniz, bu üçünden istediğiniz text-based sıkıştırma yöntemini kullanabiliyorsunuz. Dediğim gibi bunların çoğu...
+
+627
+01:57:34,676 --> 01:58:01,036
+XMIL'in azıcık daha optimize edilmiş versiyonları. Burada EXALT ve XCHAP dediği şeyler aslında bakarsanız biraz daha yeni yöntemler. Ancak bu yeni yöntemler sıkıştırma konusunda çok hata almış bu testler sırasında. Özellikle XCHAP neredeyse %96 civarında hata almış ve sıkıştırma işlemini tamamlayamamış.
+
+628
+01:58:01,908 --> 01:58:12,368
+Tabii ki text-based yöntemler hiç hata almadan devam etmiş. Çünkü verinin XML ya da düz bir text olması onlar için önemli değil. O yüzden.
+
+629
+01:58:13,628 --> 01:58:22,208
+Sorgulanabilen XML sıkıştırma yöntemlerinde de aslında bakarsanız kompres edilmiş veri üzerinde sorgu çalıştırabiliyoruz.
+
+630
+01:58:22,708 --> 01:58:25,828
+Tekrardan bir dekompres etmemize gerek kalmıyor.
+
+631
+01:58:29,235 --> 01:58:51,376
+X-Grind adında bir sıkıştırıcı. X-Grind'da X-MIL gibi öncü bir çalışma olmuş ve ondan sonra gelen birçok çalışma onu temel alarak ondan farklılaştırmış açıkçası. X-Grind'da Huffman kullanılıyor. X-Press'de de Huffman yerine Aritmatik Enkoding kullanılıyor.
+
+632
+01:58:54,836 --> 01:59:18,800
+Şamaya ihtiyaç duyuyor. Şamayı verdiğiniz zaman şamayı bir enumerate ediyor. Şama değil de verileri de Huffman'la beraber sıkıştırıyor. Burada bir örnek var. Bu XML dosyası, bu verinin şaması, bu da çıktısı oluyor. Aslına bakarsanız her...
+
+633
+01:59:18,800 --> 01:59:35,920
+Tag için T0, T1, T2, T3, T4 gibi basit bir sembol vermiş. Attribütler için A0 vermiş ve buraya da NA uf diye bunu Huffman'la sıkıştırmadığına dair bir header bilgisi ekleyip arkasına da veriyi koymuş.
+
+634
+01:59:35,920 --> 01:59:44,300
+Bu Xgrind'in bir özelliği de homomorfik olması. Homomorfik orijinaline birebir aynı gibi bir anlama geliyor.
+
+635
+01:59:45,104 --> 01:59:53,783
+şekil anlamına geliyor. Burada da verinin şemasını değiştirmediği için homomorphik olarak adlandırılıyor.
+
+636
+01:59:54,703 --> 02:00:03,623
+Express'te dediğim gibi Huffman yerine aritmatik enkoding kullanarak veriyi, şuradaki verileri aritmatik enkoding ile sıkıştırıyor.
+
+637
+02:00:07,583 --> 02:00:12,423
+Sorgulanabilen XML sıkıştırma araçlarında bir de non-homomorphik olanlar var.
+
+638
+02:00:13,652 --> 02:00:37,771
+Non-homomorifik olanlar da sorgu performansını arttırmak için örneğin farklı bir indeks yapısı ekliyor. Burada da en verimli çalışan XQZip. XQZip, pet bilgisini değiştiriyor aslında. Verinin şemasını değiştiriyor ve her tag içindeki veriye de bir czip.
+
+639
+02:00:38,292 --> 02:01:04,832
+sıkıştırması uyguluyor. Burada bir örnek var. Bu çok nested bir XML dosyası olduğunu farz edelim. Bu şekilde ortak notları bularak daha sonrasında da ekstra buraya bir link list eklediğini düşünün. Bu şekilde ağacı aslında optimize etmeye yarıyor. Burada da bu XML'in orijinal şeması değiştiği için aslında
+
+640
+02:01:05,652 --> 02:01:23,811
+Bu bir non-homomorfik sıkıştırma yöntemi oluyor. Burada da özeti görebilirsiniz. Bunların hepsini denememiş, sadece kısa kısa bilgi vermiş. Performans testini yaptığı sıkıştırma yöntemlerini de açıklıyor olacağım.
+
+641
+02:01:26,163 --> 02:01:36,163
+görebilirsiniz. Çok çeşitli bir veri seti kullanmış ancak dediğim gibi yüklediği web sitesi artık kullanımda olmadığı için bu veri setine şu an erişemiyoruz.
+
+642
+02:01:36,163 --> 02:01:52,024
+Burada verinin boyutu, içinde kaç farklı tag olduğu, kaç tane düğümden, elemandan oluştuğu, maksimum derinliği, kaç defa nested bir yapı kullanılmış ve data ratio dediği de
+
+643
+02:01:52,304 --> 02:02:13,304
+Bu veri ne kadar tekst içeriyor? Yani tag bilgisini atıp veriye baktığımız zaman yüzde kaç oranında bir veri var gibi. Burada random dediği kendi ürettikleri, java koduyla ürettikleri bir veri. Bunun içinde gördüğünüz gibi taglerin...
+
+644
+02:02:14,355 --> 02:02:32,315
+Tekler açılıp kapanıyor. İçinde hiçbir şey yazılmıyor. O yüzden data ratiosu sıfır. Burada mesela örneğin Wikipedia verisi de %97-98 civarında sadece veriden oluşuyor. Bir tek bir structure yapısı çok fazla yok diyebiliriz.
+
+645
+02:02:34,899 --> 02:02:49,199
+Sonuçlarda compression ratio'yu sıkıştırılmış halinin sıkıştırılmamış haline bölünmesi, sıkıştırılma süresi ve açılma süresi olarak bunlara bağlı olarak sıralama fonksiyonları hazırlamış.
+
+646
+02:02:49,499 --> 02:03:00,519
+Üç tane. Bu fonksiyonların tek farkı kat sayıları değişiyor. Ama bu kat sayı mı değişimi de sıralamada hiçbir farka yol açmıyor. Onu da sonuçta göreceğiz şimdi.
+
+647
+02:03:02,036 --> 02:03:27,716
+Burada sonuca baktığımız zaman en verimlisi XML dosyalarında Gzip, yani verinin XML olup olmaması ile ilgilenmeyen Gzip en iyi performansa sahip. Daha sonrasında XMil'in Gzip backendini kullanan versiyonu geliyor. Daha sonrasında da PPM geliyor.
+
+648
+02:03:28,307 --> 02:03:31,108
+Evet, bu şekilde dinlediğiniz için teşekkür ederim.
+
+649
+02:03:32,568 --> 02:03:34,828
+Yani en başarılı gizlik mi şimdi?
+
+650
+02:03:35,307 --> 02:03:46,948
+Evet, öyle çıkıyor. Ama burada işte şey durumu var aslında bakarsanız. Gizlik tamam çok iyi sıkıştırıyor ama sıkıştırılmış veri üzerinde bir sorgulama yapmamıza izin vermiyor.
+
+651
+02:03:47,828 --> 02:03:52,088
+Yani şunu açmadan sorgulama yapmak istiyorum, sıkıştırmak istiyorum.
+
+652
+02:03:52,088 --> 02:04:02,288
+Evet, yani aslında memoride sıkıştırmak istiyorum mesela. Memoride sıkıştırılmış bir ilgisayar tutup onu sorgulayabilmek istiyorum. O noktada cizip bir işe yaramıyor.
+
+653
+02:04:02,588 --> 02:04:04,928
+Peki diğerlerinden bunu sağlayan var mı?
+
+654
+02:04:05,208 --> 02:04:12,508
+Diğerlerinden bunu, bu listede yok açıkçası. Çünkü onları test etmemiş. Onlar hakkında sadece bilgi vermiş.
+
+655
+02:04:13,652 --> 02:04:27,351
+Makalede onlara dair bir bilgi yoktu. Ben de web sitesini açıp bakayım dedim. Web sitesi de link açılmıyor açıkçası. Yeni hali de yok araştırdığım kadarıyla. O yüzden sadece bunlar var elimde.
+
+656
+02:04:28,072 --> 02:04:30,972
+Peki. Senin proje konuğu neydi?
+
+657
+02:04:30,972 --> 02:04:37,332
+Benim proje konuğum da XML veya JSON dosyalarının istatiksel bir yöntemle sıkıştırılması.
+
+658
+02:04:37,680 --> 02:04:39,039
+Başlamadın galiba.
+
+659
+02:04:39,300 --> 02:04:40,140
+Başlamadım ben.
+
+660
+02:04:40,320 --> 02:04:56,480
+Belli cümle kurmandan. Ama belki dört sene ya da beş sene önce olabilir. Bu konuyu biri almıştı proje olarak. Çok güzel bir şey çıkarmıştı. Yani yapılabilir bir şey. Bilmiş o.
+
+661
+02:04:57,199 --> 02:04:59,960
+Peki [öğrenci]'e sorusu olan var mı?
+
+662
+02:05:02,780 --> 02:05:04,780
+Teşekkür ediyoruz [öğrenci] sana.
+
+663
+02:05:05,811 --> 02:05:14,552
+Şimdi bir önceki haftadan sunumunu yapamayan, mazeret bildiren arkadaşınız [öğrenci].
+
+664
+02:05:15,572 --> 02:05:16,931
+Merhaba hocam.
+
+665
+02:05:17,391 --> 02:05:19,572
+Merhaba [öğrenci].
+
+666
+02:05:19,572 --> 02:05:21,572
+Sevim konuğun...
+
+667
+02:05:21,572 --> 02:05:25,271
+İnternet verimde yüksek hızlı bir iletişim için...
+
+668
+02:05:25,271 --> 02:05:28,771
+Evet, çok uzun başlık okuyayım mı diye düşündüm, vazgeçtim.
+
+669
+02:05:30,472 --> 02:05:32,252
+Ekran paylaşıyorum.
+
+670
+02:05:32,332 --> 02:05:32,592
+Tamam.
+
+671
+02:05:34,036 --> 02:05:37,935
+[öğrenci] gelmedi.
+
+672
+02:05:39,796 --> 02:05:41,336
+Ekran geldi değil mi?
+
+673
+02:05:41,756 --> 02:05:45,015
+Geldi. Bir de full screen'e geçersen.
+
+674
+02:05:46,376 --> 02:05:56,676
+Her full screen diye şimdi diyorum ki bana niye Türkçe söylemiyorsun? Bir dahakine öyle söyle diyorum. O kadar alışmış ki ağzım. Tam ekrana geçer misiniz [öğrenci] Bey?
+
+675
+02:05:57,876 --> 02:05:58,756
+Geçti değil mi?
+
+676
+02:05:59,444 --> 02:06:00,564
+Geçti.
+
+677
+02:06:01,044 --> 02:06:04,624
+[kişisel bilgi]
+
+678
+02:06:05,764 --> 02:06:07,064
+[kişisel bilgi]
+
+679
+02:06:07,064 --> 02:06:09,544
+[kişisel bilgi]
+
+680
+02:06:10,304 --> 02:06:15,144
+[kişisel bilgi]
+
+681
+02:06:15,324 --> 02:06:15,484
+Evet.
+
+682
+02:06:17,284 --> 02:06:26,064
+Benim makale konum internet üzerinden yüksek hızlı veri iletişim için metin veri sıkıştırma yönelik akıllı sözlük tabanlı kodlama algoritması.
+
+683
+02:06:26,963 --> 02:06:45,944
+Bu makalede ilgili çalışmaları inceledim. Brown Sealer dönüşümünü daha önceki arkadaşlar anlatmıştı. Ben de kısaca değineceğim. Sonra makalenin konusu olan akıllı sürdük tabanlı kodlamadan bahsedeceğim ve bunların karşılaştırılmasını vermiş makalede.
+
+684
+02:06:53,695 --> 02:07:03,516
+Ailesi gibi sıkıştırma algoritmaları teorik olarak en ilk sıkıştırma oranına ulaşmadığından bahsetmiş. Bu makale 2006 yılında yayınlanmış. Biraz eski bir makale.
+
+685
+02:07:03,536 --> 02:07:04,895
+Yok eskiymiş, evet.
+
+686
+02:07:04,895 --> 02:07:17,336
+Evet, bu sıkıştırma algoritmalarını alternatif olarak metnin dönüşümünden bahsetmiş ve dönüştürülmüş metnin sıkıştırılmasını anlatmış ve bunları karşılaştırılmış.
+
+687
+02:07:18,596 --> 02:07:21,115
+Bunu siz mi önermiştiniz bu makaleye?
+
+688
+02:07:21,471 --> 02:07:33,112
+Yok hayır hocam. Benim verdikleri. Ya ben bu tarihleri hep kontrol ediyorum. Eskileri çıkarıyorum ama gözümden kaçıyor demek ki bazıları. Tamam. Devam edelim.
+
+689
+02:07:34,323 --> 02:07:47,883
+Bahsettiğim gibi işte yine Browsealer dönüşümünden bahsetmiş. Browsealer aslında bir veri sıkıştırmıyor. Sıkıştırma öncesi bir ön hazırlık veriyi sıralıyor. Ondan bahsetmiş.
+
+690
+02:07:48,403 --> 02:08:01,883
+İlgili çalışmalar kısmında Browsealer dönüşümü nasıl olduğundan bahsetmiş. Bir input data alıyor. Bunu işte MTF, VL ve ARİ gibi şey yapıp bir tane...
+
+691
+02:08:02,323 --> 02:08:08,723
+Kod çözülme işleminde de bunun tam tersinin uygulandığını söylüyor.
+
+692
+02:08:10,355 --> 02:08:23,035
+Yine makale kapsamında yıldız kodlamasından bahsetmiş. Yıldız kodlaması da mümkün olduğunca her bir kelimede en fazla yıldızın konmasını şey yapıyor.
+
+693
+02:08:23,035 --> 02:08:36,855
+Burada aslında elimizde bir tane sözlük var. Diyelim ki işte burada bat kelimesi var. Sözlükte bat geçtiği yerde B yıldız yıldız dediği zaman bunu şey çeviriyor, B yıldız yıldızla çeviriyor batı.
+
+694
+02:08:38,355 --> 02:08:50,855
+Yıldız, O, S, Yıldıza çeviriyor. Bunun karşılığı bir sözlükte var. Burada yıldızlar ne kadar fazla olursa sıkıştırmanın o kadar daha iyi olacağından bahsetmiş.
+
+695
+02:08:50,855 --> 02:09:02,975
+Bunları kim belirliyor peki? Niye soft'a mesela iki yıldız varken hangisi o true'da daha fazla yıldız var?
+
+696
+02:09:03,359 --> 02:09:15,419
+Aslında burada şey var, bu yıldız kotlamasının şeyinden bahsetmemiş algoritmasını ama bu kendi geliştirdiği sözlük oluşturmayla ilgili bir tane algoritma vermiş.
+
+697
+02:09:15,979 --> 02:09:23,079
+Bir tane öncesinden sözlük oluşturuluyor. Bu sözlükte bir algoritmaya kendileri belirliyor aslında.
+
+698
+02:09:24,079 --> 02:09:26,699
+Ben bu yıldız kotlamasını ilk kez duydum şu an.
+
+699
+02:09:27,667 --> 02:09:35,427
+Makalede vardı. Zaten bu metinde Jumaya ve Juliet'in bir şeyinden alınmış.
+
+700
+02:09:35,891 --> 02:09:56,971
+Bu sözlüğe göre işte batı B yıldız yıldız olarak kodluyoruz. İşte soft'u yıldız O F yıldız şeklinde kodluyoruz diye. Buradaki şeyin oluşumundan bahsetmemiş. Sözlüğün oluşturulmasından bahsetmemiş. Burada zaten hazır bir sözlüğü kullanmış. Tamam, peki.
+
+701
+02:10:00,000 --> 02:10:24,779
+Sonrasında biraz önceki arkadaşlar da bahsetti. Browseiller dönüşümünden. Aslında burada da metninde bir sıkıştırma yapmıyor. Metni tersine çevrilebilir. Tekrar sıralıyor. Burasını hızlıca geçiyorum. Örnek Bahamalar diye bir karakterimiz var. Sonra bir End of Line koyup bunları her bir harfi son alacak şekilde.
+
+702
+02:10:25,300 --> 02:10:41,380
+Yerlerini değiştiriyor ve sıralıyor. En sonunda da işte bir tane kelime elde ediyor. Bunun dönüşümüyle ilgili bir şey vardı. Biraz önce yine arkadaş bunu anlatmıştı. Orijinal kelimeyi alıyor, sıralaya sıralaya şey yapıyor, orijinal metni elde ediyor.
+
+703
+02:10:43,220 --> 02:10:45,380
+Akıllı sözlük tabanlı uygulamada bu...
+
+704
+02:10:46,292 --> 02:11:09,251
+Kişilerin geliştirdiği şeyde de aslında burası. Bir sözlük oluşturuyoruz diyor. Ve girilen metne bunu kodluyoruz diyor. Biraz önceki yıldız kodlama gibi. Burada da şeyden bahsetmiş aslında. Mesela burada The Objective of This Paper dediğimiz zaman biz bunu normalde okuyoruz burada yanlış yazılmasına rağmen.
+
+705
+02:11:09,648 --> 02:11:32,287
+İşte burada şey diyor, insanlar bunu algılayabiliyor ama burada bunu bir sözlükte tutup makinenin anlayabileceği şekilde çevirmek diyor. Bu zaten Türkçe'de de var. Mesela bir harf kelime yanlış yazılmış olsa bile o kelimeyi okuduğumuz zaman ne yazıldığını anlıyoruz. Burada da ondan bahsettim işte.
+
+706
+02:11:33,555 --> 02:11:49,555
+Burada sözlük alıştırma algoritmasını vermiş. Bir metni okuyor. O metninde 33 ile 250 arasındaki asker karakterlerini vererekten bir tane sözlük oluşturuyor.
+
+707
+02:11:51,015 --> 02:11:54,935
+İşte kelime tabloda yoksa ekliyor. Varsa şey yapmıyor şeklinde.
+
+708
+02:11:57,652 --> 02:12:15,011
+Sonrasında da kodlama algoritması olarak da bu sözlüğe göre her bir kelimeyi alıyor. Sözlükte varsa biraz önceki yıldız kodlamada olduğu gibi 251 ile 254 ASKİ karakterlerini veriyor.
+
+709
+02:12:15,011 --> 02:12:24,851
+Burada dört karakterle bunları ifade etmeye çalışıyor. Burada da incilden bir metin alınmış.
+
+710
+02:12:25,300 --> 02:12:36,500
+Bunu buna çeviriyor aslında. Burada çok anlamsız karakterler geliyor. Bunu sıkıştırdığımız zaman daha fazla sıkıştıracağımızdan bahsetmiş.
+
+711
+02:12:37,203 --> 02:12:56,923
+Bunun nasıl açıldığıyla ilgili sıkıştırma algoritmasını vermiş, sözlük oluşturma algoritmasını vermiş ama tersini nasıl yapılacağıyla ilgili bir şey söylememiş. Zaten bu Brose Hill'a dönüşümün tersini olduğu için tekrar buradan metnin orijinaline dönülebiliyor diye bahsetmiş makalede.
+
+712
+02:12:58,579 --> 02:13:16,180
+Sonrasında da yalnız Brose Hill'a dönüşümünü, Yıldız Enkodu ve biraz önceki bizim IDBE diye kısalttığımız sıkıştırma algoritmalarının karşılaştırılmasını vermiş.
+
+713
+02:13:16,180 --> 02:13:19,083
+Burada baktığımız zaman...
+
+714
+02:13:20,020 --> 02:13:41,280
+108.7 kilobaytlık bir şeyi, işte bir saniyede 2.11 bit per second şeyine indirmiş. Bu yıldız enkodda 1.93'müş. Bu makalenin konusu olan algoritmanı 1.69'a kadar indirmiş bunu.
+
+715
+02:13:41,728 --> 02:13:53,728
+Yalnız burada süre biraz uzanmış şeye göre. Sadece Browseiller transformasyonuna göre. Ama bu süre Yıldız Enkoda göre daha iyi bir süre.
+
+716
+02:13:53,728 --> 02:14:02,728
+Burada bu bayağı bir metnin sıkıştırılmasıyla ilgili karşılaştırmaları vermiş.
+
+717
+02:14:04,243 --> 02:14:09,663
+Tabloyu da Kalgari Korpusundan almış.
+
+718
+02:14:10,047 --> 02:14:29,147
+Bir de bunu Kattenbury Korpusundan metinini alarak sıkıştırmaya denemiş. Burada da yine aynı şekilde Bross Hiller, Yıldız Enkot ve bizim bu makalenin konusu olan IDB algoritmasının sonuçlarını karşılaştırmış.
+
+719
+02:14:29,147 --> 02:14:35,347
+Ve yine bu makalenin konusu olan algoritmanın daha iyi sonuçlar verdiğini göstermiş.
+
+720
+02:14:37,108 --> 02:14:53,708
+Burada da grafik olarak aynı tablonun veriliyor. Bu yine Calgary Korpusundaki grafikler. Burası da Catenbury Korpusundaki veriler. Benim makale bu kadardı.
+
+721
+02:14:55,636 --> 02:15:09,315
+Sonuç olarak da şey demiş, bu verileri internetten gönderdiğimiz zaman bunlar Server ve Client tarafında ek yük getiriyor ama işte verileri daha iyi sıkıştırıyoruz diye sonuca varmışlar.
+
+722
+02:15:11,615 --> 02:15:20,055
+Evet, daha yeni yıllar olsaydı ötürü bir şey olurdu. O yıllar için iyi bir çalışma. Peki sorusu olan var mı?
+
+723
+02:15:22,260 --> 02:15:39,059
+Yok, her zamanki gibi. Ben yeniden raporlarınızı size hatırlatmak istiyorum. Haftaya son haftamız olacak. Kimler sunum yapacak bilmiyorum. Bugün onlardan hiç kimseyi şu an göremedim. Burada yoklar.
+
+724
+02:15:41,268 --> 02:15:59,427
+Final haftamız belli ama öncesinde bir tren olursa lütfen bana mail asın. Önceden bakmaya başlarım. Ama final raporlarınızı final tarihinde yükleyebilirsiniz. Eğer sorunuz yoksa hepinize teşekkür ediyorum. Haftaya görüşmek üzere.
+
+725
+02:16:02,771 --> 02:16:08,072
+Final için yazdığımız kodun yanında bir de rapor olacak değil mi?
+
+726
+02:16:08,612 --> 02:16:28,192
+Hayır. Şimdi bana aynen online açacaksın. Benim konum şuydu. Şöyle bir kodu yazdım. Tabii çok detayına girmeyeceğim. Merak edersem detaylarını sorarım. Şu input'u verdim. Şöyle output aldım. Bunu göstereceksiniz. Bana verdiğiniz rapor şu olacak.
+
+727
+02:16:28,595 --> 02:16:37,935
+Projenin konusu şuydu, şu yöntemleri kullandım, şu sonuçları aldım. Böyle bir rapor bekliyorum.
+
+728
+02:16:37,935 --> 02:16:43,955
+Anladım. Peki bugün yükleyeceğimiz raporu PDF olarak yükleyeceğiz değil mi?
+
+729
+02:16:44,455 --> 02:16:47,195
+Evet. Bir de sunumu da yanına şart yapalım.
+
+730
+02:16:47,195 --> 02:16:49,515
+Yok, sunumu istemiyorum. Anladım.
+
+731
+02:16:50,675 --> 02:16:55,635
+Sunumu istemiyorum. Bunların hepsini ala bir kirlilik oluşuyor elimde.
+
+732
+02:16:56,147 --> 02:17:02,007
+Sunumunuzu ben kullanmayacağım. Paper'ın orijinali değil, orijinaller zaten bende var.
+
+733
+02:17:02,448 --> 02:17:05,907
+Evet, sadece rapor.
+
+734
+02:17:07,747 --> 02:17:08,927
+Teşekkürler hocam.
+
+735
+02:17:09,487 --> 02:17:14,167
+Tamam, o zaman haftaya görüşürüz inşallah diyorum. Hadi hoşçakalın.
+
+736
+02:17:14,567 --> 02:17:16,847
+İyi günler.
