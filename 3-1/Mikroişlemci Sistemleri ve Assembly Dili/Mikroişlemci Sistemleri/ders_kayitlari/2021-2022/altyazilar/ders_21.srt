@@ -1,0 +1,1667 @@
+1
+00:01:42,900 --> 00:01:44,428
+Arkadaşlar merhabalar.
+
+2
+00:01:50,323 --> 00:01:51,980
+Sesim duyulabiliyor mu?
+
+3
+00:02:01,587 --> 00:02:25,087
+Bu hafta bir farklı programlanabilir yardımcı devreye geçeceğiz. 8254 entegresinin tanıtımını ve sunumunu yapacağız bu hafta. Eğer vaktimiz olursa birazcık örneklerine bakarız ama olmazsa önümüzdeki haftada örneklerine devam ediyor olacağız. 8254 ile ilgili olanı. Bununla ilişkili olarak ben ekran paylaşımı açayım.
+
+4
+00:02:44,500 --> 00:03:11,199
+Şimdi 8254 dediğimiz yardımcı devre arkadaşlar, Programmable Interval Timer olarak geçiyor. Adı üzerinde bir zamanlayıcı aslında. Mikroişlemcinin yürütmüş olduğu veyahut da bilgisayar sisteminde yürütülmekte olan bazı işlemler için belirli aralıklarla, periyodik aralıklarla bir takım işlemlerin gerçeklenmesi lazım. Bunların en temel örneği aslında,
+
+5
+00:03:11,860 --> 00:03:35,860
+Düşünecek olursak, bilgisayar açılırken bir takım kontrol işlemleri yerine getiriliyor ve bu kontrol işlemleri sonucunda hata varsa bir takım sesler üretiliyor. Bu seslerin üretilmesiyle ilgili görev alınabilir. Yani belirli, sabit, monoton bir frekans üretip bunu speaker üzerinden duymamızı sağlayabilir örneğin. Bununla birlikte hatırlayacak olursanız,
+
+6
+00:03:36,927 --> 00:03:47,108
+D-RAM'lerin, dinamik RAM'lerin belirli aralıklarla refresh edilmesi gerekiyor. Refreshten kasıtta üzerindeki değerin tekrar yazılması gerekiyor.
+
+7
+00:03:47,108 --> 00:03:53,507
+Burada da belirli aralıklarla bu periyodik işlemin gerçekleştirilmesinde de yine 8254'ten faydalanılabilir.
+
+8
+00:03:54,068 --> 00:04:08,068
+8254 ile ilgili olarak temel olarak bir zamanlayıcı ve sayıcı aslında. Tek başına sadece bir sayıcı değil, zamanlayıcı ve sayıcı olarak geçiyor. Tek başına bir zamanlayıcı değil.
+
+9
+00:04:08,068 --> 00:04:18,067
+Zamanlayıcı ile sayıcı kavramları arasındaki farkı tanımlamamız gerekiyor bu noktada. Onun nasıl olduğunu ilerleyen aşamalarda göreceğiz ama temel olarak...
+
+10
+00:04:18,384 --> 00:04:28,824
+Bir counter'a, bir counter'ın clock girişine sabit frekanslı bir kara dalga bağlarsanız bu bir zamanlayıcı oluyor.
+
+11
+00:04:29,459 --> 00:04:48,220
+Eğer ki counter'ın clock girişini ayrık olayları sayacak şekilde ayrık olayları tespit eden bir sensörü bağlarsanız bu durumda da bu bir sayıcı oluyor. Temel olarak bu şekilde ifade edebiliriz. Dolayısıyla biz 8254'ü hem sayıcı hem zamanlayıcı olarak kullanılıyor olacağız.
+
+12
+00:04:48,660 --> 00:05:11,259
+Zamanlayıcı ile kullanım örnekleri az önce verdiğim örnekler aslında. Temel olarak belirli bir monotonda ses çıkartma için, belirli bir kare dalgayı üretmek için kullandığımız durum bir zamanlayıcı örneği. Çünkü orada sabit bir frekans lazım. Dolayısıyla sistemi sabit bir frekansla besliyoruz. Yani 8254 sabit frekanslı bir kare dalgayla besliyoruz.
+
+13
+00:05:11,471 --> 00:05:27,611
+Veyahut da işte DRAM'lerin refresh rate'ini üreten, o periyodu üreten veya o frekansı ürettiği durumda da, 8254, bu da bir zamanlayıcı. Çünkü sabit frekanslı bir clock işareti bağlıyoruz ve periyodik aralıklarla bu refresh işimizi gerçekleştiriyoruz.
+
+14
+00:05:27,611 --> 00:05:30,671
+Sayıcı olarak çalışan bir örnek vermek gerekirse,
+
+15
+00:05:31,348 --> 00:05:47,668
+bir 8086 mikroişlemcili sistem tasarlamış olsak ve 8254'ün clock işaretini, 8254'ün clock işaretini bir sensöre bağlasak ve bu sensörde şunu ölçse, bir konveyör bant var ve bu konveyör banttan
+
+16
+00:05:47,824 --> 00:06:08,824
+Bu, alıcı-verici ikilisiyle birlikte çalışan bir sensör. Alıcı-verici karşılıklı olarak yerleştirilmiş konveyör banttan taşınan ürünler de bu sensörün ortasından geçiyor. Dolayısıyla bir ürün bu sensörün alıcı ve vericisi arasından geçtiğinde, 0-1 geçişi şeklinde bir kara dalga üretiyor.
+
+17
+00:06:15,824 --> 00:06:25,224
+Bir ürünün gelmesi 1 saniye sürerken, ikinci bir ürünün gelmesi 5 saniye sürebilir. Hiç önemli değil. Bunlar aperiyodik bir geliş sırası ve hızı olsun.
+
+18
+00:06:25,224 --> 00:06:39,223
+Bu durumda biz kaç tane ürün geçtiğini saymak istiyorsak, bu 8254'lü sistemle, burada clock işaretini asenkron bir sensör bilgisine bağladığımız için burada bir sayıcı olarak çalışıyor.
+
+19
+00:06:39,375 --> 00:06:56,855
+Veyahut da 8254'ün klok işaretini biz bir butona bağlayıp ayakkabımıza bağlamış olursak veya bir ivme ölçere bağlamış olursak, bu durumda da her bir adımımızda bir artacak şekilde veya her bir adımımızı sayacak şekilde bir sayıcı elde etmiş oluruz.
+
+20
+00:06:56,855 --> 00:07:02,735
+Dolayısıyla buradaki temel kavram, temel kavram ifade etmek gerekirse arkadaşlar,
+
+21
+00:07:03,475 --> 00:07:10,276
+Birinci noktada sayıcı ve zamanlayıcı arasındaki farkı bu şekilde ortaya koymuş olmamız gerekiyor.
+
+22
+00:07:10,276 --> 00:07:19,876
+Dersimiz boyunca neler göreceğiz? Dersimiz boyunca 8254'ün iç yapısı ve uç tanımlarına ilişkin olarak tanımlamalarımızı vereceğiz.
+
+23
+00:07:19,876 --> 00:07:23,076
+8254'ün kontrol veriyle ilgili
+
+24
+00:07:23,572 --> 00:07:32,572
+Ne yapabiliyoruz, nasıl ayarlayabiliyoruz? Ondan bahsedeceğiz. 8254'ün 6 adet modu var, 6 farklı çalışma modu var, onlardan bahsedeceğiz.
+
+25
+00:07:32,572 --> 00:07:41,423
+Sonrasında da 8254'ün sayma değerini alabildiğimiz counter-latch ve bununla birlikte...
+
+26
+00:07:41,423 --> 00:07:57,623
+gerek sayma değerini gerekse statüsünü okuyabildiğimiz bir readback komutları var. Bu readback komutunu da verirken bununla birlikte de status word'u inceliyor olacağız. Bu sayede 8254'ün tanımını vermiş olacağız.
+
+27
+00:08:08,692 --> 00:08:17,291
+müzik parçası üzerinden bir örnek olacak ama sanırım herhalde Alper hocanız onu belirledikten sonra yine ilan etmiş olur sonrasında.
+
+28
+00:08:18,692 --> 00:08:25,291
+8254'e baktığımız zaman arkadaşlar, programmable interval timer olarak geçen bir entegre.
+
+29
+00:08:26,291 --> 00:08:32,291
+Temelde yazılım kontrollü kesin ve doğru zaman gecikmeleri oluşturmak için.
+
+30
+00:08:32,628 --> 00:08:51,567
+kullanılan bir yardımcı devre. Dolayısıyla, 8254'e harici bir saat üretici bağlayacağız. Bu saat üretici eğer sabit bir frekansta, mükemmel bir frekansta çalışıyor ise, buradan elde ettiğimiz her bir saat darbesinin ne kadar süreye denk geldiğini hesaplayabiliriz.
+
+31
+00:08:51,567 --> 00:08:59,567
+Buna göre, 8254'ün içerisinde de bir counter var. Bu counterdaki değişim miktarına bakarak, ne kadar süre boyunca
+
+32
+00:09:00,115 --> 00:09:21,716
+Vakit geçirmişiz veya zaman harcanmış. Bunun ölçümünü hesabını yapabiliyor olacağız. Dolayısıyla hassas zamanlamalar için 8254'ü kullanmamız mümkün. Ayrıca 8254'ü olay sayıcı event counter olarak kullanılmamız mümkün. Real time block olarak kullanmak mümkün.
+
+33
+00:09:22,707 --> 00:09:44,227
+Kare dalga üreteci olarak kullanmak mümkün ve karmaşık dalga şekilleri üretmek için kullanabiliriz. Buradan kasıt şu aslında. Örneğin 8254 ve yardımcı bir takım lojik devreler veya flip-floplar kullanarak bir PVM işareti üretebiliriz. Daha önce PVM işareti gündeme gelmişti dersimiz içerisinde hatırlayacak olursanız.
+
+34
+00:09:44,659 --> 00:09:55,259
+PVM işareti sabit periyotlu bir kare dalga. Fakat bu kare dalganın bir periyodu içerisindeki birde kalma süresini değiştirebiliyoruz. Bunu ayarlayabiliyoruz.
+
+35
+00:09:55,259 --> 00:09:59,259
+Bunu temelde daha çok RC, remote control...
+
+36
+00:10:00,000 --> 00:10:12,240
+Sistemler için mesela bir model uçağı uzaktan kontrol etmek istediğimiz zaman mesela arka kanadın yüksekliğini değiştirmek için kullanabildiğimiz bir kumanda komutu gibi düşünebilirsiniz.
+
+37
+00:10:12,240 --> 00:10:21,240
+Bu PVM işaretini. Dolayısıyla burada birde kalma süresini değiştirebildiğimiz bir PVM işareti yani karmaşık bir dalga şekli üretmemiz.
+
+38
+00:10:21,408 --> 00:10:31,408
+Mümkün oluyor. Bununla birlikte one shot işlemler içinde kullanılabilir. One shot işlemler temelde belirli bir süre sonunda bir kere gerçekleşecek işlemler.
+
+39
+00:10:31,408 --> 00:10:41,408
+Yani siz şunu istiyorsunuz, T0 anından itibaren saymaya başlasın. Tamı tamına 10 saniye sonra bir tetikleme gerçekleşti, bir trigger işlemi gerçekleşti.
+
+40
+00:10:41,408 --> 00:10:48,331
+Dolayısıyla bu tür durumlar one shot olarak isimlendiriliyor. Zamanlama hassas bir kere yürütülen işlem.
+
+41
+00:10:48,467 --> 00:10:54,467
+Dolayısıyla 8254'ü bu tür görevler içinde kullanmamız mümkün olacak arkadaşlar.
+
+42
+00:10:54,467 --> 00:11:02,467
+8254'ün biraz özelliklerine bakacak olursak, 8254'te 3 tane birbirinden bağımsız 16 bitlik sayıcı mevcut.
+
+43
+00:11:02,467 --> 00:11:15,467
+16 bitlik 3 tane counter mevcut. Her bir counter'ı kendi içerisinde diğerlerinden bağımsız olarak mod 0'dan mod 5'e kadar 6 farklı modun herhangi birisinde programlamamız mümkün.
+
+44
+00:11:16,148 --> 00:11:26,908
+8254'te sayıcıların, counter'ların her birisi 8 MHz'e kadar saat girişini destekliyor.
+
+45
+00:11:26,908 --> 00:11:42,708
+8 MHz'e kadar saat girişini destekliyor. Yani bakacak olursak, 1 bölü 8x10 üzeri 6 saniyelik hassas anlık ölçümler yapabilecek bir durumda olduğunu
+
+46
+00:11:42,772 --> 00:11:44,052
+Söylememiz mümkün.
+
+47
+00:11:45,332 --> 00:12:05,052
+Şimdi, 8254'ün içerisinde 3 tane sayıcı olduğunu söylemiştik ama bu sayıcılar down counter'lar. Down counter demek ne demek? Şu demek, siz sayıcıya bir ilk değer yüklüyorsunuz, initial değer yüklüyorsunuz. Daha sonra temel olarak tabii, temel olarak nasıl çalışıyor diyecek olursak, bir ilk değer yüklüyorsunuz. Daha sonra bunun saat giriş...
+
+48
+00:12:05,716 --> 00:12:10,716
+ucuna bir kare dalga veriyorsunuz. Bu kare dalganın her 0-1 geçişlerinde
+
+49
+00:12:11,716 --> 00:12:17,716
+buradaki değer bir azalıyor. Dolayısıyla bu saat darbesi counter'ın aşağı doğru saymasını sağlıyor.
+
+50
+00:12:17,716 --> 00:12:24,716
+Counter 0'a ulaştığında, counter'ın out ucunda yani çıktı ucunda bir değişiklik oluşuyor.
+
+51
+00:12:25,231 --> 00:12:36,231
+Bu değişiklik modlara göre farklılık gösteriyor. Yine modlara göre bu ilk değer periyodik olarak tekrar yüklenip sıfıra düştükten sonra tekrar yüklenebiliyor veya bir seferlik çalışabiliyor.
+
+52
+00:12:36,231 --> 00:12:44,231
+Ama genel anlamda 8254'ün her bir counter'ı bir frekans bölücü olarak çalışıyor. Ne demek bu?
+
+53
+00:12:52,927 --> 00:13:06,728
+2 üzeri olarak düşünelim tabii bunu. O mertebede bölüp bir çıktı üretiyor. O frekansta bir çıktı üretiyor. Temel olarak böyle de düşünemiz. Dolayısıyla bu resimden aklımızda kalması gereken 8254'ün timer'ları down counter olarak çalışıyor arkadaşlar.
+
+54
+00:13:06,728 --> 00:13:10,327
+16 bitlik down counter'lar olduğunu söylememiz gerekiyor.
+
+55
+00:13:10,327 --> 00:13:17,768
+8254'ün PC'de kullanımla ilişkin örnekler vermek gerekirse
+
+56
+00:13:19,572 --> 00:13:24,851
+Sistem saatini üretmek için 8254 counter kullanılabiliyor.
+
+57
+00:13:24,851 --> 00:13:27,331
+D-RAM'leri yenilemek için kullanılıyor.
+
+58
+00:13:27,331 --> 00:13:32,052
+PC operörlerinden uyarı sesleri üretmek için yine 8254 kullanılabiliyor.
+
+59
+00:13:32,932 --> 00:13:38,532
+8254'ün iç yapısına ve uç tanımlarına bakacak olursak arkadaşlar, karşılaştığımız resim bu.
+
+60
+00:13:39,091 --> 00:13:45,892
+İçeride üç tane counter var. Her bir counter'a ilişkin olarak kendisine has bir clock girişi mevcut.
+
+61
+00:13:46,227 --> 00:14:02,727
+Counter 0, Counter 1 ve Counter 2 olarak isimlendiriliyor ve bunların her birisine ilişkin kendine ait bir clock girişi var. Bununla birlikte sayma işlemi bittiği zaman dış dünyaya karşı bir çıktı üretebilmek üzere her bir Counter'ın kendi out çıkışı var.
+
+62
+00:14:03,220 --> 00:14:17,220
+Bir de donanımsal olarak dışarıdan kontrol edilebilmek üzere counter'ları durdurmak veyahut da yeniden başlatmak için olabilir. Yani saymayı tetiklemek ve arada pause etmek için kullanılabilecek bir de control, gate ucumuz var arkadaşlar.
+
+63
+00:14:29,172 --> 00:14:39,892
+Bir kontrol ucu, bir de çıkış ucu mevcut. Bununla birlikte 8254'ün içerisinde bir iç yol var, bir kontrol devresi var, kontrol yapısı var.
+
+64
+00:14:40,892 --> 00:14:51,211
+8254'ün 8086 ile haberleşmesini sağlayan bir bus bufferımız var, 8254 tarafında ve bir de okuma-yazma kontrol loji mevcut.
+
+65
+00:14:51,535 --> 00:14:59,135
+8254 ile yapılan bağlantıları incelediğimiz zaman, yani sol tarafı incelediğimizde karşılaştığımız uçlar ise şunlar arkadaşlar.
+
+66
+00:14:59,135 --> 00:15:07,135
+8254'ün 8 adet data ucu var. Dolayısıyla şuna geliyoruz. Bu 8086 ile birlikte kullanılacak.
+
+67
+00:15:07,135 --> 00:15:13,935
+Dolayısıyla 16 bitlik veri yoluna sahip bir mikroişlemcide 8 bitlik bir çevre birim kullanıyoruz.
+
+68
+00:15:14,080 --> 00:15:32,080
+Dolayısıyla ekstra bir donanım kullanmadan bu 16 bitlik veri yoluna sahip mikroişlemci de 8254'ü uygun şekilde interfaz edip bağlayabilmek için 8254'ü ya yine ardışık çift adreslere veyahut da ardışık tek adreslere yerleştiriyor olacağız. Buradan bunu anlıyoruz.
+
+69
+00:15:32,080 --> 00:15:40,080
+Bununla birlikte mikroişlemcinin read ucu ve mikroişlemcinin write ucunun bağlı olacağı iki tane ucumuz var. 8254'ün read ve write uçları.
+
+70
+00:15:40,467 --> 00:15:50,467
+8254'ün readine 8086'nın readi, 8254'ün writeine da 886'nın write uçları bağlı olması gerekiyor.
+
+71
+00:15:50,467 --> 00:16:03,467
+8254'ün yine iki adet adres ucu var. Bu durumda bu cihaz, IO uzayında 4 byte'lık yer kaplıyor. Bunun anlamı bizde şu, dışarıdan erişilebilir 4 tane yazmacımız var anlamına geliyor.
+
+72
+00:16:07,827 --> 00:16:18,947
+Counter 0'a ilişkin yazmaçlar, Counter 1'e ilişkin yazmaçlar, Counter 2'ye ilişkin yazmaçlar, bir de Control World'e ilişkin yazmaçlar olarak tanımlayabileceğimiz yazmaçlara dışarıdan erişebiliyoruz.
+
+73
+00:16:18,947 --> 00:16:24,548
+Yine devrenin bir chip select ucu var. Chip select ucu temelde nasıl çalışıyorsa burada da aynı şekilde çalışıyor.
+
+74
+00:16:33,203 --> 00:16:41,524
+Bu adreslerle ilgili bir işlem yürüttüğümüzde, in-out komutu yürüttüğümüzde, 8254, chip select ucu üzerinden aktif ediyor.
+
+75
+00:16:41,524 --> 00:16:52,323
+Eğer cihazı seçmezsek, veri yolu 8086'nın veri yoluna yüksek empedans gösteriyor. Bunun anlamı da neydi? Sanki 8254'ün data uçları...
+
+76
+00:16:52,500 --> 00:17:06,619
+Hattan koparılmış gibi bir etki gösteriyor olacaktı. Dolayısıyla 8086 tarafındaki uçlar ve dış dünyayla yapılan bağlantı tarafları, sol ve sağ taraflar, uçları bu şekilde tanımlamamız mümkün.
+
+77
+00:17:08,000 --> 00:17:11,259
+Buraya kadar olanla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+78
+00:17:20,756 --> 00:17:23,836
+Sormak istediğiniz bir şey olursa arada bölüp sorabilirsiniz.
+
+79
+00:17:25,115 --> 00:17:33,296
+Şimdi burada adres uçlarına karşılık nelerin seçildiğini veya nerelerin adreslendiğine bakacak olursak şu şekilde.
+
+80
+00:17:33,519 --> 00:17:45,200
+Eğer adres uçlarına 0,0 değeri gelmiş ise bu counter 0'a ilişkin yazmaçlara erişmemizi sağlıyor. Şimdi şunu hatırlayalım. Her bir counter'ımız 16 bitlik yazmaçlardı.
+
+81
+00:17:45,200 --> 00:18:00,079
+Dolayısıyla ben bir counter'da bir initial değer oluşturmak istiyorsam aslında iki tane byte göndermem lazım. Niye iki tane byte göndermem lazım? Çünkü cihaz 8 bitlik veri yoluna sahip. Dolayısıyla 16 bitlik veriyi ben bunu ancak iki seferde gönderebilirim.
+
+82
+00:18:01,519 --> 00:18:15,519
+Bu çerçevede olacak. Ona dikkat edelim. Dolayısıyla burada da derken, şu ilk satır içinde bahsederken, 00 adresi seçildiğinde counter 0'a ilişkin yazmaçlara erişiliyor.
+
+83
+00:18:15,519 --> 00:18:20,235
+Burada birden fazla yazmaç olduğunu uygulamak istedim.
+
+84
+00:18:20,243 --> 00:18:28,443
+Yine adres uçları 01 ise counter 1'e ilişkin yazmaçlara erişiliyor. Adres uçları 01 ise counter 2'ye erişiliyor.
+
+85
+00:18:28,443 --> 00:18:35,603
+Counter 2'ye ilişkin yazmaçlara erişiliyor. Adres uçları 01 olduğunda da kontrol yazmacına erişmemiz mümkün oluyor.
+
+86
+00:18:35,603 --> 00:18:42,284
+Buradaki her bir counter'a ilişkin clock gate ve out uçları ne işe yarıyor?
+
+87
+00:18:42,387 --> 00:18:57,687
+Bunlar da Clock ucu bir giriş, Counter için giriş, saat darbesi girişini sağlıyor. Counter'a saat darbesi girişini sağlıyor. Gate ucu, dış kontrol ucu ne olarak fonksiyon gösterebiliyordu? Az önce bahsetmiştik.
+
+88
+00:18:57,687 --> 00:19:09,487
+Saymayı durdurma veyahut da yeni bir sayma tetikleme için kullanılabilecek Gate ucumuz var. Bir de sayma işlemi bittiğinde değişim gösteren bir Out ucumuz var.
+
+89
+00:19:09,844 --> 00:19:20,344
+Saymanın bittiğini out ucu üzerinden anlayabiliyoruz. Veyahut da dış dünyaya saymanın bittiğine ilişkin çıktısını out ucu üzerinden verdiğini söyleyebiliriz.
+
+90
+00:19:20,344 --> 00:19:31,344
+Bu durumda out ucunu aynı zamanda bir kesme istek ucu olarak da kullanmamız mümkün. Daha önce hatırlayacak olursanız, 8251 için bunlar...
+
+91
+00:19:32,723 --> 00:19:59,963
+RxRed'i ve TxRed'i pinleri olabilir diye konuşmuştuk. Yine 8255 içinde int-ra ve int-rb uçları vardı hatırlayacak olursanız mod 1 ve mod 2'ye ilişkin olarak. O uçlarda kesme istek uçları olarak kullanılabilirdi. Ama biz şu ana kadar hep polling mantığında gördük. Bu aşamada da yine polling mantığında kontrole devam edeceğiz. Yani biz 8254'ün belirli bir işlemimi bitirip bitirilmediğini anlayabilmek için.
+
+92
+00:20:00,276 --> 00:20:13,895
+Gidip, ilgili statüs yazmacından, out ucunu kontrol ediyor olacağız şu aşamada. Ama kesmeleri gördükten sonra, bunu kesme kontrol uçları üzerinden bağlayıp, daha farklı bir veri alışverişi yapmaya çalışacağız.
+
+93
+00:20:15,316 --> 00:20:35,235
+Şimdi devam edecek olursak, Control Word bizim 8254'ü programladığımız yaz maç aslında. Dolayısıyla biz 8254'e bir değer gönderdiğimizde, counter'ları ayarlamış ve bir takım komutları 8254'e göndermiş oluyoruz. Şimdi 8254'e gönderdiğimiz değere göre,
+
+94
+00:20:35,731 --> 00:20:50,231
+Ne tür fonksiyonlar gerçekleştirebiliriz onlara bakalım. Şimdi bir kere 8254'ün kontrol wordüne bir şey yazabilmek için göndereceğim koşul değerlerimiz neler, uçlarda oluşturmamız gereken koşullar neler onlara bakalım.
+
+95
+00:20:50,579 --> 00:20:55,179
+Bir kere kontrol yazmacına erişebilmek için adres uçlarında 1-1 değeri olması lazım.
+
+96
+00:20:55,179 --> 00:21:02,479
+8254'ün seçilmiş olması lazım ve 8254'ün 1-1 adresine bir yazma işlemini yapmamız gerekiyor.
+
+97
+00:21:02,479 --> 00:21:07,479
+Dolayısıyla bu koşullar sağlandığında biz kontrolörde bir değer göndermiş oluyoruz.
+
+98
+00:21:07,479 --> 00:21:13,379
+Şimdi gönderdiğimiz değere göre bunun en yüksek iki anlamlı bitine bakacak olursak,
+
+99
+00:21:18,579 --> 00:21:35,699
+0'a bir initial değer gönderiyor olacağız veya counter 0'a bir komut gönderiyor olacağız. Eğer 0, 1 ise counter 1'e bir komut gönderiyor olacağız. 1, 0 ise counter 2'ye bir komut gönderiyor olacağız. Bu noktada 1, 1'i şimdilik geçiyorum. 1, 1 özel bir durum. Ona daha sonra bakacağız.
+
+100
+00:21:42,003 --> 00:21:52,403
+Daha sonraki gelen iki bitimiz D5 ve D4 ise şunları veriyor. Burada da 0,0 özel bir durum. Onu şimdilik geçiyorum. Eğer 0,1 ise...
+
+101
+00:21:52,915 --> 00:22:18,036
+seçmiş olduğumuz counter'ı, 16 bitlik bir yazmaçtı ya bu, bu 16 bitlik counter'ın sadece düşük anlamlı 8 bitine bir değer gönderiyoruz. Initial değer olarak. Onu programlamış oluyoruz. Diyoruz ki, örneğin 00, 01 ise buradaki değerler, counter 0'a sadece 8 bitlik bir değer göndereceğim initial değer olarak. Ama daha gönderme işlemi burada gerçekleşmiyor. Şu anda sadece programlamasını yapıyoruz.
+
+102
+00:22:18,355 --> 00:22:44,035
+Eğer read write bitlerine 1.0 değeri yazılmışsa, bu durumda ise 16 bitlik değerin sadece yüksek anlamlı byte'ının değerini göndereceğiz demek bu. Bu ne demek? Mesela eğer initial değer olarak ben 16 bitlik bir değer olarak a, a, 0, 0 göndermek istiyorsam, bu durumda ilgili counter'ı seçtikten sonra
+
+103
+00:22:44,564 --> 00:22:54,564
+1.0 değerini read-write uçlarında oluşturup, daha sonrasında da initial değerin sadece yüksek anlamlı byte'ını gönderebilirim.
+
+104
+00:22:54,564 --> 00:22:59,564
+Veya read-write uçlarında 1.1 değerlerini oluşturup, ilgili counter'a
+
+105
+00:22:59,632 --> 00:23:12,592
+16 bitlik değeri 2 paket halinde önce düşük anlamlı daha sonra yüksek anlamlı byte'ları olmak üzere bu sayıcının initial değerini iki parçada önce LSB daha sonra MSB'sini göndermemiz mümkün oluyor.
+
+106
+00:23:13,779 --> 00:23:29,259
+Daha sonraki 3 bitimizi arkadaşlar bizim mod seçimimizi sağlıyor. D3, D2, D1. Örneğin mod 0 için 0, 0, 0 yazmalıyız. Mod 1 için 0, 0, 1. Mod 2 için D3'e yazdığımız bitin bir anlamı yok. 1, 0 yazmamız yeterli.
+
+107
+00:23:29,259 --> 00:23:39,700
+Mod 3 için de yine en yüksek anlamlı bitin anlamı yok. 1, 1 yazdığımız zaman mod 3 oluyor. Mod 4 için 1, 0, 0. Mod 5 için de 1, 0, 1 değerlerini buradaki
+
+108
+00:23:39,855 --> 00:23:52,155
+D3, D2, D1 bitlerine göndermemiz gerekiyor. Son bitimiz ise, seçtiğimiz counter'a göndereceğimiz initial değerin ve sayma işleminin binary mi, BCD mi yapılacağını belirtiyor.
+
+109
+00:23:54,155 --> 00:24:01,256
+Şimdi burada gönderebileceğimiz değer maksimum 16 bit ile sınırlı ya, ona dikkat edin.
+
+110
+00:24:01,715 --> 00:24:15,455
+Dolayısıyla biz eğer counter'ı seçtikten sonra önce LSB, daha sonra MSB olacak şekilde read-write tuşlarında 1-1 değeri seçmişsek, bu durumda ilgili counter'a 16 bitlik değer göndermemizi bekliyor.
+
+111
+00:24:15,455 --> 00:24:22,675
+Bu durumda bunu da iki adımda yapacağımızı söylemiştik. Önce least significant byte, daha sonra most significant byte gidecek initial değer için.
+
+112
+00:24:23,188 --> 00:24:40,188
+Bunu da dikkate alarak, eğer ki biz counter'ı binary modda ayarlamışsak, binary olarak sayma şeklinde ayarlamışsak, bu durumda counter'a yazabileceğimiz initial değer maksimum ne olur? Onu sormuş olayım.
+
+113
+00:24:40,188 --> 00:24:46,764
+Binary modda ayarlamışsak, counter'a gönderebileceğimiz maksimum değer ne olmuş olur arkadaşlar?
+
+114
+00:24:48,500 --> 00:24:52,899
+BinaryBond 16 bit gönderebileceğimiz maksimum değer ne olur?
+
+115
+00:25:04,788 --> 00:25:06,788
+Evet, bir tepki bekliyorum arkadaşlar.
+
+116
+00:25:10,548 --> 00:25:23,048
+Yani online'dan takip ediyorsunuz ama herhangi bir tepki yok. Bu durumda online dersi açıp başka şeyle ilgilendiğinizi düşünüyorum.
+
+117
+00:25:39,827 --> 00:25:41,827
+Evet arkadaşlar, bekliyorum.
+
+118
+00:25:47,380 --> 00:25:49,228
+Otkuvarma mi cevabı?
+
+119
+00:25:54,740 --> 00:25:56,620
+Ders takip ediyor muyuz?
+
+120
+00:26:06,675 --> 00:26:08,675
+[öğrenci] senin bir cevabın var mı?
+
+121
+00:26:21,491 --> 00:26:24,051
+[öğrenci], senin bir cevabın var mı?
+
+122
+00:26:37,076 --> 00:26:39,556
+Interesant. Turuk.
+
+123
+00:26:43,635 --> 00:26:44,635
+Evet hocam.
+
+124
+00:26:46,635 --> 00:26:48,635
+Evet, nedir cevabın?
+
+125
+00:26:50,635 --> 00:26:51,635
+Bilmiyorum mahasis.
+
+126
+00:26:52,635 --> 00:27:01,635
+Yani soru şu, bir counter'a initial değer yüklüyoruz. Counter'da bu initial yüklediğimiz değerden itibaren 0'a doğru sayıyor.
+
+127
+00:27:01,635 --> 00:27:07,635
+Biz counter'a maksimum 16 bitlik değer gönderebiliyoruz. Bu gönderdiğimiz değere karşılık counter
+
+128
+00:27:07,955 --> 00:27:13,596
+Eğer ki binary olarak sayıyorsa maksimum kaç adım saymış olur?
+
+129
+00:27:17,236 --> 00:27:21,236
+65535 mi?
+
+130
+00:27:21,236 --> 00:27:35,236
+Evet, yani gönderebileceğimiz bütün bitler 1 olursa bu durumda FFF göndermiş oluruz ve buna karşılık olarak da bu hegzadesimal sayının desimal karşılığı da 65535.
+
+131
+00:27:35,236 --> 00:27:40,848
+Bir de 0'a da düşecek. Dolayısıyla 65536 adım saymasını sağlayabiliriz.
+
+132
+00:27:40,847 --> 00:27:51,248
+Demek ki biz counter'ımızı binary modda ayarlarsak ve 16 bit değer göndereceğiz diye seçmiş isek, bu durumda bu cihaz 65536 adet.
+
+133
+00:27:51,508 --> 00:28:09,208
+Sayma işlemi gerçekleştirebiliyor. Şimdi sorumuzu değiştirelim. Yine biz 16 bit veri gönderecek şekilde ayarlamış olalım. Read-write tuşlarına bir bir göndermiş olalım. Fakat bu sefer bu counter'ı BCD modda sayacak şekilde ayarlayalım. Şimdi binary modda sayma nasıl oluyordu? Geriye doğru sayacak yani.
+
+134
+00:28:19,508 --> 00:28:29,748
+9FF8, gitti gitti gitti, işte FFF0 oldu, FF, E, F şeklinde tek tek tek geri sayıyordu.
+
+135
+00:28:29,748 --> 00:28:34,548
+BCD olarak yazmış olsak maksimum ne yazabiliriz öyleyse counter'a.
+
+136
+00:28:37,587 --> 00:28:41,188
+BCD olarak göstereyim, şimdi 16 bitlik bir değer gönderiyoruz.
+
+137
+00:28:41,364 --> 00:28:51,364
+Burada bakın 4 basamak olarak belirtilmiş. Yani 16 bitlik değere 4 tane BCD basamak sağar mı? Öncelikli olarak onu söyleyelim. Ne dersiniz?
+
+138
+00:28:57,587 --> 00:28:59,587
+Sığar 4 basamak.
+
+139
+00:28:59,587 --> 00:29:10,587
+Her birisi 4 bit olduğu için 4 tane basamak sığabilir. Peki BCD basamaklar hangi rençte yer alıyor? Kaçtan kaça da yer alabilir?
+
+140
+00:29:18,836 --> 00:29:34,235
+Evet, 0'dan 9'a kadar değer alabilir. İşte bu durumda biz 16 bitlik 4 tane BCD basamak gönderdiğimizde, 8254'ün bir counter'ına, bu durumda bizim elde edeceğimiz değerler şöyle oluyor arkadaşlar. Hemen şuradan yazayım.
+
+141
+00:29:34,235 --> 00:29:38,035
+Şimdi şunu da aldık.
+
+142
+00:29:41,172 --> 00:29:43,871
+Bunların her birisi bir BC'de basamak olsun.
+
+143
+00:29:50,516 --> 00:30:02,516
+Şimdi gönderebileceğimiz maksimum değer 9999 olabilir. Değil mi? Desimal olarak yazdığımızda onun binary karşılığı da şu olacak.
+
+144
+00:30:02,516 --> 00:30:04,492
+1,001
+
+145
+00:30:05,140 --> 00:30:18,540
+gönderebileceğimiz değer, demek ki BCD modda gönderebileceğimiz maksimum değer 9999 olur. Yani bu da sıfırda katacak olursak 10.000 adım sayabilir. BCD modda maksimum 10.000 adım sayabilir.
+
+146
+00:30:18,932 --> 00:30:25,652
+Binary modda maksimum 65536 adım sayabiliriz. BCD modda sayma nasıl oluyor? Geriye doğru sayacağız.
+
+147
+00:30:25,652 --> 00:30:38,132
+9999, 9998, 97, 96, 95, 94, nokta nokta 90, sonra 89 olacak. Dolayısıyla BCD modda decimal sayıyormuş gibi sayacak.
+
+148
+00:30:38,132 --> 00:30:43,812
+Ama gösterimler binary yine. BCD modda olduğu için her bir basaman binary karşılığını koymuş oluyoruz.
+
+149
+00:30:44,372 --> 00:30:51,372
+Burada dikkat edeceğimiz nokta maksimum sayma 10.000 adıma kadar olabilir diye bunu ifade etmemiz gerekiyor.
+
+150
+00:30:51,372 --> 00:31:05,372
+Dolayısıyla burada herhangi bir counter'ı seçip, kaç bitlik değer göndereceğimizi seçip, mod değerini gönderip ve bunun hangi BSD mi, binary mi sayma tipinde sayacağını burada kontrol yazmacı üzerinden belirlemiş oluyoruz.
+
+151
+00:31:05,683 --> 00:31:14,083
+Dolayısıyla 8254'ün ayarlanmasına ilişkin olarak baktığımız durum aslında kontrol word'ü belirleyip yazmak şeklinde özetleyebileceğimiz bir durum.
+
+152
+00:31:14,083 --> 00:31:27,083
+Burada bir örnek üzerinden hareket edecek olursak, 98H adresinden itibaren ardışki çift adreste de yerleştirilmiş bir 8254 için aşağıdaki komut çalıştırılırsa bunun sonucu ne olur diye soruyoruz.
+
+153
+00:31:28,019 --> 00:31:39,019
+Şimdi bakalım, 98H adresinden itibaren yerleşik ve çift adreslerde ise, 98H adresinde counter 1'i bekliyoruz değil mi?
+
+154
+00:31:39,019 --> 00:31:55,019
+Daha sonra bundan bir sonraki adresimiz ne? 999AH. 9AH'da counter 2'yi bekliyoruz. 9CH'da counter 3'ü bekliyoruz.
+
+155
+00:31:55,104 --> 00:32:02,884
+Daha sonra D ve E, 9EH adresindeyse arkadaşlar, biz kontrol yazmacını bekliyoruz.
+
+156
+00:32:03,884 --> 00:32:10,884
+Dolayısıyla bizim 9EH adresine göndermiş olduğumuz değer, şurada 9E'ye bir değer göndermişiz.
+
+157
+00:32:10,964 --> 00:32:15,844
+Bu, kontrol word'e bir değer göndermek demek. Dolayısıyla şu kontrol word değerimiz bizim.
+
+158
+00:32:16,404 --> 00:32:21,224
+Bakalım ne yapmışız? 0, 0. Dolayısıyla counter 0'ı seçmişiz.
+
+159
+00:32:21,536 --> 00:32:45,936
+Counter 0'a önce LSB, sonra MSB olacak şekilde 16 bitit bir initial değer göndereceğimizi belirtmişiz. Daha sonra mod 3'te ayarlamışız. Sonra gelen 3 bit modu belirtiyordu. Mod 3'te sayacağız ve binary modda sayacağımızı belirtmişiz. Dolayısıyla bu şeklinde her bir counter'ı ayarlamak için ayrıca bir control word değeri göndermemiz gerektiğini görmüş oluyoruz bu örnektende.
+
+160
+00:32:48,723 --> 00:33:03,723
+Peki, bunu tersten düşünecek olursak, yine 98H adresinden itibaren ardışık çift adreslere yerleştirilmiş 8254 var. Counter 0 için verilen sayma şeklini ayarlayacağız.
+
+161
+00:33:06,223 --> 00:33:08,723
+Bu arada şeyi söylemedik tabii.
+
+162
+00:33:08,884 --> 00:33:18,604
+Biz counter'lar için modu ayarladıktan sonra dedik ya hani initial değer göndereceğiz. 16 bit veya sadece LSB veya sadece MSB göndereceğiz.
+
+163
+00:33:18,604 --> 00:33:26,043
+Initial değerleri nasıl gönderiyoruz? Initial değerleri göndermek için de arkadaşlar, control word'e ayarı gönderdikten sonra,
+
+164
+00:33:26,043 --> 00:33:33,644
+kontrol işlemimizi gerçekleştirdikten sonra, control word üzerinden, daha sonra counter'ın adresine yapmış olduğumuz yazmalar,
+
+165
+00:33:36,884 --> 00:33:47,884
+ve sonra MSB veya sadece LSB veya sadece MSB anlamında counter'ın adresine yapmış olduğumuz yazmalarda bu counter'a initial değeri göndermiş oluyor. Tamam mı? Bu önemli bir nokta.
+
+166
+00:33:47,884 --> 00:34:00,884
+Demek ki biz 8254'ü kullanarak bir counter ayarlamak istiyorsak önce control word'e ilgili counter numarasını vererek bir ayar yapıyoruz. Sonrasında da counter adresini
+
+167
+00:34:01,107 --> 00:34:18,347
+Bu konuda hesaplayıp o counter adresine bir yazma işlemi yapıyoruz. Daha sonrasında counter'a yapmış olduğumuz, ikinci adımda counter'a yapmış olduğumuz, counter adresine yapmış olduğumuz yazmalar ise, counter'ın bu initial sayma değerini counter'a atamış oluyor.
+
+168
+00:34:25,311 --> 00:34:37,532
+Bu sefer göndermek istediğimiz sayma modunu tanımlıyoruz ve buna göre counter 0'ı ayarlamamız isteniyor. Burada bakalım şöyle yan yana koyalım şunları.
+
+169
+00:34:43,731 --> 00:34:51,731
+Aşağıya kaydıralım. Bakın nedenmiş? Şimdi bunların her birisi için kontrol word'u belirleyelim. Daha sonra da sayma değerlerini göndermeye çalışalım.
+
+170
+00:34:51,731 --> 00:34:57,731
+Counter 0 için. Şurada, nerede bu? Çok hareket ediyor, niye böyle?
+
+171
+00:34:58,731 --> 00:35:10,731
+Counter 0 ile ilgili bir ayarlama işlemi yapacağız. O zaman biz burada Counter 0'ı seçebilmek için en yüksek anlamlı 2 bitimize 0 değerini vermemiz gerekiyor. Sonra
+
+172
+00:35:11,027 --> 00:35:28,347
+Göndereceğimiz değer, 4282 BCD değeri. 4282 BCD olarak yazabilmek için aslında 4282 bunları hexadecimal gibi düşünmemiz lazım. Değil mi? Yazmamız gereken değer nedir burada 4282 initial değerini oluşturabilmek için? Şöyle bakalım.
+
+173
+00:35:28,347 --> 00:35:38,347
+1, 0, 0, 0, 0, 0, 0, 1, 0. Bu ikiye karşılık geliyor. Şu 8'di pardon. Şunu şöyle düzeltelim.
+
+174
+00:35:41,523 --> 00:35:52,023
+şöyle düzeltelim, 0, 1 yaparsak, 4, 2, 8 ve 2 değerleri.
+
+175
+00:35:59,315 --> 00:36:19,615
+Dolayısıyla bizim binary olarak göndermemiz gereken değer bu değer. Bunu da nasıl değerlendiriyoruz? BCD bir sayı olarak değerlendiriyoruz. Dolayısıyla bu göndereceğimiz değer 8 bite sığmaz. O zaman biz 16 bit değer göndereceğiz. 16 bit değeri de önce LSB, sonra MSB olarak gönderebiliyorduk. O yüzden readwrite bitlerini 1-1 verdik.
+
+176
+00:36:20,052 --> 00:36:29,052
+Mod 3'de kullanılacak. O yüzden mod 3'ün karşılığı 0, 1, 1'di. Ve sayıma modunda BCD modda sayacak. Dolayısıyla buna da 1 yazmamız gerekiyor.
+
+177
+00:36:29,052 --> 00:36:37,452
+O zaman bizim Control World'a göndereceğimiz değer ne olmuş oldu arkadaşlar? 37H olmuş oldu. O zaman biz ne yapacağız?
+
+178
+00:36:46,867 --> 00:37:00,867
+9eH, virgül, al ile bu ayarları göndermiş olacağız. İkinci adımda ne yapmamız lazım? İkinci adımda ise bu sayma değerini 8254'e göndermemiz lazım.
+
+179
+00:37:01,028 --> 00:37:07,788
+Sayma değeri counter 0'da initial değer oluşturacak. O zaman counter 0'ın adresine, yani 98H'a değer yazmamız lazım.
+
+180
+00:37:08,079 --> 00:37:16,079
+Fakat nasıl ayarlamıştık? Önce LSB, sonra MSB. O zaman göndereceğimiz değerinin düşük anlamlı kısmı ne? 82H.
+
+181
+00:37:16,079 --> 00:37:34,079
+O zaman şunu yapıyoruz. Move, AL, 82H. Sonra Out, 98H, AL. Bu durumda Counter'a göndereceğimiz düşük anlamlı
+
+182
+00:37:34,400 --> 00:37:38,720
+byte'ı göndermiş olduk. Sayma değerimizin düşük anlamlı byte'ını gönderdik.
+
+183
+00:37:38,720 --> 00:37:54,400
+Daha sonra yüksek anlamlı byte'ını göndereceğiz. O değerimizde 42H. Onu da move al, 42H deyip, sonra sonunda da out, yine aynı counter'a göndereceğiz.
+
+184
+00:37:58,579 --> 00:38:01,500
+göndermiş oluyoruz. Şuradan kontrol edecek olursak,
+
+185
+00:38:01,500 --> 00:38:02,859
+çok kötü.
+
+186
+00:38:06,931 --> 00:38:27,271
+37H, control world değerimizi 9Z'ye gönderdik. Daha sonra AL'ye 82, 10'u 98H'a, daha sonrasında da yine AL'ye 42 ve 98H adresini ikinci defa gönderebiliriz. Veya AX'e bu sayma değerimizi doğrudan atayıp, zaten 82H AL'de kalıyor.
+
+187
+00:38:27,827 --> 00:38:51,248
+Onu list significant byte olarak göndereceğiz. Daha sonra AH'daki 42 değerini de AL'ye alıp daha sonra onu da OUT'la göndermemiz mümkün arkadaşlar. Şimdi ikinci örneğimize bakalım. İkinci örnekte bu sefer counter 2'yi binary olarak modüşte kullanacağız ve sayma değeri olarak da C2 6A hex değeri kullanmamız gerekiyor.
+
+188
+00:38:51,603 --> 00:39:03,703
+Binary modda sayacağımız için. O zaman oradaki ayarlama modumuz ne bakalım. Şöyle tek tek yazalım. Şuraya gelelim. Counter 2. Şöyle birazcık kaydırıyorum şunu da.
+
+189
+00:39:04,500 --> 00:39:13,000
+Counter 2 için 1-0, counter seçimi 1-0. Göndereceğimiz değer 8 bite sığmıyor. O yüzden read write bitleri 1-1 olacak.
+
+190
+00:39:13,000 --> 00:39:24,000
+Mod 3 de kullanacağız, 0-1-1. Sayma işlemini de binary modda yapacağız, o da 0. Dolayısıyla baktığımız zaman şu b, şu da 6. Demek ki b6h değerini göndermemiz gerekiyor.
+
+191
+00:39:24,000 --> 00:39:30,000
+Burada bakacak olursak, 9e, control word adresine b6h'ı gönderdik.
+
+192
+00:39:30,260 --> 00:39:43,360
+Önce AL'ye atıyoruz, daha sonra bu AL'deki datayı 99EH portuna gönderiyoruz. Sonra da sayma değerini göndereceğiz. Sayma değeri C26AH binary değer olarak. Yani kaça karşılık geliyormuş bakalım.
+
+193
+00:39:47,284 --> 00:40:02,483
+C2, 6A mıydı? C2, 6A, H diyeti bakın 49.770 gibi bir adıma karşılık geliyormuş. Çok anlamlı değilmiş. Ben biraz daha anlamlı bir şey diye hatırlamıştım ama.
+
+194
+00:40:03,027 --> 00:40:17,668
+Yine ax aldık değeri. AL'de düşük anlamlı byte'ımız var. Yani 6ah var. Onu direkt 9ch adresine gönderiyoruz. 9c nereden çıktı arkadaşlar? 9c'ye bakalım şuradan.
+
+195
+00:40:28,659 --> 00:40:38,879
+Şu da counter 2 olacak. Dolayısıyla 9CH counter 2'ye gidiyor. Counter 2'nin adresi. O zaman burada önce 9CH'a AL'ye gönderdi.
+
+196
+00:40:38,879 --> 00:40:48,799
+List significant byte'ı. Daha sonra da AH'taki değeri AL'ye kopyalayıp AL'de artık yüksek anlamlı byte var. Onu da 9CH adresine göndermiş oluyoruz.
+
+197
+00:40:49,379 --> 00:40:52,879
+Üçüncü şıkkımız neyle alakalı? Üçüncü şıkta ise...
+
+198
+00:40:53,396 --> 00:41:06,396
+Clock 0, 1.2 MHz, Clock 2, 1.8 MHz ise bu ayarlamalara göre, bu ayarlamalardan sonra Clock uçlarına bağladığımız değerler bunlar ise Out1 ve Out2 frekansları ne olur?
+
+199
+00:41:06,396 --> 00:41:19,396
+Şimdi temel olarak Mod3 tekrarlı bir mod. Yani Mod3'te bir periyodik dalga üretiliyor. Bunu bilerek cevap verebiliriz ancak bu soruya. Bu noktada da yapacağımız işlem şu.
+
+200
+00:41:19,603 --> 00:41:34,324
+Bu counter ile frekans bölücü olarak çalışıyoruz. Dolayısıyla clock 0 veya counter 0, clock 0 ucuna bağlanmış olan 1.2 MHz'lık değeri 4282'ye bölüp ona göre bir çıktı üretecek.
+
+201
+00:41:34,324 --> 00:41:46,083
+Counter 2 ise clock 2 ucuna bağlı olan 1.8 MHz'lık işareti C2 6A heksidesimal değeri kaça karşılık geliyorsa o değere bölmüş olacak.
+
+202
+00:41:46,420 --> 00:42:12,779
+Frekansı o kadar azaltmış olacak. Buna göre, sıfırıncı counter'ın çıktısı 1.2 MHz bölü 4282, yani 280 Hz'lik bir çıktı üretiyoruz. Yani counter sıfırın çıktısı 280 Hz'lik bir kare dalga olmuş oluyor. Girişimiz neydi? 1.2 MHz'lik bir kare dalgaydı. Çıktığımız 280 Hz'lik bir kare dalga oluyor.
+
+203
+00:42:13,331 --> 00:42:30,532
+Buna göre Counter 2'nin çıktısına bakalım. Counter 2'nin çıktısı 1.8 MHz'lik bir saat frekansını alıyordu. Bunu C2 6A'ya bölüyordu. Yani 49.770'e bölüyordu ve bu da 36 Hz'lik bir bize çıktı üretmiş oluyor.
+
+204
+00:42:30,532 --> 00:42:40,532
+Dolayısıyla C şıkkını da bu şekilde cevaplamış olduk. Prensip ne? Counter'lar bir frekans bölücü olarak çalışıyor. Giriş frekansıyla
+
+205
+00:42:40,884 --> 00:42:50,884
+Sayma değeri neyse o kadarlık değere bölüp, çıktı olarak da bu bölüm değeri kadar yani azaltılmış bir frekansla çıktı üretmesi mümkün.
+
+206
+00:42:50,884 --> 00:43:00,304
+Burada yazan iki soruya cevap vermiştik. BCD modda yazılabilecek en büyük değer 9999, yani 9999, 10.000 adımlık sayma yapabilir.
+
+207
+00:43:00,304 --> 00:43:09,304
+binary modda yazabileceğimiz en büyük değer FFFF. Bu da 65536 adım, 0'da dair olmak üzere sayım yapabileceği anlamına geliyor.
+
+208
+00:43:11,304 --> 00:43:27,019
+8254'ün modlarına bakacak olursak arkadaşlar, 8254'ün 6 tane modu var. Bu modların bir kısmı bir kerelik çalışan modlar, yani yazılımsal olarak ayarlıyorsunuz, başlıyor saymaya, sayma işlemi bittiği zaman bir kere tetikleme üretiyor ve bitiyor.
+
+209
+00:43:27,284 --> 00:43:47,284
+Bazıları tekrarlı modlar. Tekrarlı moddan kasıt ne? Siz bunu programlıyorsunuz, initial değerleri gönderiyorsunuz, bir periyot boyunca çalışıyor, çıktı üretiyor. Daha sonra bu initial değeri tekrar yüklüyor ve yeniden çalışıyor. Yani sizin yeniden bir programlama yapmanıza gerek yok. Bir kere tekrarlı olarak programlıyorsunuz.
+
+210
+00:43:47,956 --> 00:44:12,956
+Dolayısıyla periyodik sinyal üretiyor. Bazı modlar dışarıdan gate ucu üzerinden tetiklenebilir durumda. Bazıları gate ucuyla durdurulabilir, pause edilebilir durumda. Dolayısıyla modlarımızı bu şekilde tanımlayabiliriz. Bunları isim olarak değil de fonksiyon olarak görürsek daha anlamlı olur sanırım. Dolayısıyla ilerleyen slide'larla birlikte bunları tanımlayacağız.
+
+211
+00:44:15,572 --> 00:44:38,692
+Mood 0 dediğimiz durumda arkadaşlar, sistem şöyle çalışıyor. Biz 8254'ün ilgili counter'ını control word üzerinden programladık. Bu programı gönderir göndermez ilgili counter'ın out ucu 0'a düşüyor. Normalde bir de geziyor olsun, 0'a düşüyor. 0'daysa zaten 0'da kalacak ama.
+
+212
+00:44:38,692 --> 00:44:43,052
+Out ucu control word'unu biz gönderir göndermez 0'a düşüyor.
+
+213
+00:44:44,179 --> 00:44:55,940
+Ve biz bir de initial değer gönderiyoruz counter'a. Ve counter ucuna bağlı olan frekansa göre her bir clock işaretinin düşen kenarında bir azalıyor. Down counter olduğu için azala azala gidiyor.
+
+214
+00:44:57,159 --> 00:45:05,579
+Bu süre zarfında count değeri sıfıra düşmüş ise out ucumuz bire çıkıyor ve bu şekilde kalıyor.
+
+215
+00:45:07,579 --> 00:45:11,579
+Yani control word'u gönderir göndermez uç sıfıra düştü.
+
+216
+00:45:12,596 --> 00:45:36,315
+Sıfırda sayma boyunca bekledi, sayma değerimiz sıfır olunca out ucumuz 1'e çıktı ve o şekilde kaldı. Çalışma mantığı bu, bir seferlik bir mod. Interrupt on terminal count. Yani sayma bittiğinde bir kesme veya tetikleme üretiyor. Bu şekilde düşünebiliriz. Burada gate ucu nasıl fonksiyon gösteriyor? Gate ucu pause şeklinde bir fonksiyon gösteriyor.
+
+217
+00:45:36,884 --> 00:46:03,603
+Sayma sırasında, out ucumuz 0'a düştü, control word'u göndermiştik, 0'a düştü, sayma değerlerini de gördülerdik, saymaya başladı. Daha sonrasında, arada gate ucu 0'a çekilirse, sayma duraklıyor arkadaşlar, sayma duraklıyor. Tekrar 1'e çekersek gate ucunu, sayma kaldığı yerden devam ediyor. Yani bu araya bir delay koymak için kullanılabilecek, dışarıdan kontrol ucu olarak gate'i görmüş oluyoruz.
+
+218
+00:46:04,019 --> 00:46:12,820
+Bunun dalga şekline bakacak olursak arkadaşlar, temel olarak şöyle. Öncelikli olarak bu dalga şekli neyi gösteriyor onu söyleyelim.
+
+219
+00:46:13,820 --> 00:46:22,820
+8086'dan 8254'e bir yazma işareti gönderilmiş ve veri uçlarından da şurada görmüş olduğunuz değerler gönderilmiş olsun.
+
+220
+00:46:22,820 --> 00:46:28,220
+Şuradaki Klock sinyali ilgili counter'a bağlanan Klock ucunu...
+
+221
+00:46:28,463 --> 00:46:49,204
+ucundaki salınımı gösteriyor. Burada da gate ucundaki değişim söz konusu. Ve bunlara göre out ucu nasıl değişiyor onu inceleyebiliyor. Şimdi inceleyelim. Şimdi bir control word değeri yazılmış. Yani 8086, 8254'ün control word'üne 10 değerini göndermiş. 10 değeri neye karşılık geliyor? Hemen bir hesaplayalım.
+
+222
+00:46:51,503 --> 00:46:54,024
+Şuradan bir aşağı inecek olursak.
+
+223
+00:46:57,715 --> 00:46:58,715
+Ne meres.
+
+224
+00:47:06,547 --> 00:47:07,827
+10 değerini
+
+225
+00:47:16,371 --> 00:47:25,371
+Bu şekilde düşünelim. Ne demek bu? Counter 0'a sadece lsb göndereceğim. Yani 8 bitik bir lsb değeri göndereceğim.
+
+226
+00:47:25,371 --> 00:47:32,371
+Mod 0'da kullan ve binary olarak kullan diye bir komut göndermişiz. Bu komut nerede tetikleniyor?
+
+227
+00:47:32,371 --> 00:47:38,955
+Clock işaretinin... Şurada ne zaman başlamış bu düşmeye?
+
+228
+00:47:39,315 --> 00:47:46,815
+Şurada eş anlı olarak düştüğünü varsayabilir. Demek ki kulak işaretinin yükselen kenarıyla birlikte buradaki değer örneklendi ve alındı.
+
+229
+00:47:48,315 --> 00:47:52,815
+Ve bu durumda kontrolörü yazar yazmaz out ucumuz sıfıra düştü.
+
+230
+00:47:53,315 --> 00:48:02,283
+Şu anda non değerlere sahip geçerli bir sayma değeri daha yüklemediğimiz için sayma değeri yüklememizi bekliyor.
+
+231
+00:48:02,452 --> 00:48:26,452
+Control Word'u gönderdikten sonra bir de sayma değeri olarak 3. Sadece LSB gönderecektik. Onu gönderiyoruz. Şurası, şurada ilgiliyiz pardon. 3 değerini gönderdik. Bu 3 değeri de yine yükselen kenarla birlikte örneklenmiş olsun arkadaşlar. Dolayısıyla şu noktadan itibaren sayma değerimiz 3 olarak counter'a gönderildi. Daha sonra clock işaretinin...
+
+232
+00:48:26,900 --> 00:48:39,900
+Her düşen kenarında, bakın şu düşen kenarla birlikte, her düşen kenarında sayma değerimiz, şuradaymışız pardon, 4 değeri gönderdiğimiz örnek, her düşen kenarda sayma değerimiz 1 azalıyor.
+
+233
+00:48:39,900 --> 00:48:47,615
+Sayma değerimiz 0 olduğunda ise, out ucumuz 1'e çıkıyor ve bu şekilde kalıyor.
+
+234
+00:48:47,615 --> 00:49:01,615
+Bu sayma süreci içerisinde eğer ki gate ucumuz sıfıra düşerse ne oluyor? Sayma işlemi duraklıyor. Bakın gate'in sıfıra düştüğü durumlarda düşen kenarlarda artık counter aşağı doğru saymıyor, bekliyor, duraklıyor.
+
+235
+00:49:01,615 --> 00:49:08,268
+Bir başka örneğimiz sayma başlattık. 3 değerini gönderdik. Saymaya başladı.
+
+236
+00:49:09,427 --> 00:49:19,668
+Daha sonra yeni bir değer gönderdik. Ne zaman etki gösteriyor? Bir sonraki, önceki sayma işlemi bittikten sonra yeni sayma işlemi fonksiyon göstermeye başlıyor arkadaşlar.
+
+237
+00:49:20,568 --> 00:49:27,008
+Dolayısıyla üst üste sayma değerleri gönderirsek etkisini bu şekilde olduğunu söylememiz mümkün.
+
+238
+00:49:27,668 --> 00:49:35,447
+Dolayısıyla mod 0 özetleyecek olursak sayma süresi boyunca 0'da bekliyor, sayma bitince 1'e çıkan ve o şekilde kalan bir uç.
+
+239
+00:49:36,115 --> 00:50:02,295
+Dolayısıyla yazılımsal olarak kontrol edilen bir mod bu. Yazılımsal olarak 8254 mod 0'da ayarladık. Kontrol ve sayma değerlerini gönderir göndermez saymaya başlıyor. Sayma bitince out ucu 0'dan 1'e çıkıp o şekilde kalıyor. Yeni bir mod 0 komutu gönderdiğimizde bunu tekrarlayabiliyoruz. Sadece yazılımla tekrarlanabilen bir durum söz konusu.
+
+240
+00:50:04,500 --> 00:50:07,000
+Mod 1'e baktığımızda ise şu şekilde.
+
+241
+00:50:12,083 --> 00:50:27,683
+8254'ü mod 1'de ayarlayacak şekilde kontrolörde değer yazdık. Sayma değerini de yükledik. Gate ucunda o sırada 0 var. Bu şekilde kabul edelim. Out ucu idle bekliyor, 1 de bekliyor.
+
+242
+00:50:27,956 --> 00:50:38,956
+Bu mod dışarıdan kontrol edilebilen, donanımsal olarak kontrol edilebilen bir uç. Burada mod 0'ın dışarıdan kontrol edilebilen, donanımsal olarak kontrol edilebilen bir versiyonu bu.
+
+243
+00:50:38,956 --> 00:50:55,596
+Saymaya başlatmak için gate ucunu 1'e çekartmamız lazım. Dolayısıyla bu modda, bu modda gate ucunu 1'e çektikten sonra out ucu 0'a düşüyor, tıpkı mod 0'da olduğu gibi.
+
+244
+00:50:55,923 --> 00:51:00,083
+Ve sayma bittiğinde out ucu 1'e çıkıp işlemi sonlandırıyor.
+
+245
+00:51:01,403 --> 00:51:12,384
+Her gate ucundaki 0-1 geçişi işlemi tekrarlıyor. Mod 0'da da nasıldı? Her bir yeni sayma değeri gönderdiğimizde işlem tekrarlıyordu yazılımsal olarak.
+
+246
+00:51:12,384 --> 00:51:17,224
+Burada gate ucundaki 0'dan 1'e çıkışlar sayma işlemini tekrarlıyor.
+
+247
+00:51:22,547 --> 00:51:27,347
+Örnek vermek gerekirse yine Ctrl Word değeri olarak 12 değerini göndermiş olalım.
+
+248
+00:51:28,067 --> 00:51:33,347
+Ctrl Word değeri olarak 12 göndermek, mod 1'i ayarlamak demek. Sayma değeri olarak da 3'ü göndermiş olalım.
+
+249
+00:51:34,527 --> 00:51:38,687
+Bu değerleri gönderdiğimiz haliyle Out, Idle olarak bekliyor. Ne zamana kadar?
+
+250
+00:51:39,487 --> 00:51:49,707
+Gate ucunda 0-1 geçişi görene kadar. Gate ucunda 0-1 geçişi gördükten sonra düşen kenarla birlikte artık saymaya başlıyor.
+
+251
+00:51:50,579 --> 00:52:02,579
+4, işte şey pardon 3, 2, 1 ve 0 olacak şekilde saymaya başlıyoruz. 0 olduğunda out ucumuz tekrar 1'e çıkıyor ve 1'de kalıyor.
+
+252
+00:52:02,700 --> 00:52:16,200
+Ta ki ne zamana kadar? Gate ucunda yeniden bir 0-1 geçişi görene kadar. Yeniden bir 0-1 geçişi görmüşsek, vermiş olduğumuz en son sayma değeri neyse onunla birlikte saymaya yeniden başlamış oluyor.
+
+253
+00:52:16,755 --> 00:52:25,415
+Eğer ki bu süreç zarfında sayma işlemi bitmeden yeniden bir gate ucunda bir tetikleme verirsek ne oluyor?
+
+254
+00:52:26,235 --> 00:52:34,915
+Sayma işlemi bitmeden yeniden tetikleme verirsek en son yüklediğimiz sayma değerini yeniden yükleyip saymaya yeniden başlıyor.
+
+255
+00:52:34,915 --> 00:52:37,875
+Uç sıfırdayken yeniden saymaya başlıyor.
+
+256
+00:52:39,860 --> 00:53:05,160
+Gönderdiğimiz bir yeni sayma işareti, sayma değeri ne zaman etki gösteriyor? Mesela birinci bir sayma değerini gönderdik, gate ucunda 0-1 geçiş sağladık. İki için sayma yapıyor. Ama bu sayma sırasında başka bir sayma değeri gönderirsek bunun etkisi ancak bir sonraki gate aktivasyonunda görülüyor. Dört değeri sayması bir sonraki gate geçişinde mümkün oluyor.
+
+257
+00:53:06,260 --> 00:53:26,820
+Mod 2'ye bakacak olursak arkadaşlar, Mod 2 tekrarlı bir mod, periyodik bir mod ve puls üreten bir mod. Puls üretmek demek ne demek? Mesela bir sayma değeri belirledik, 10 diyelim. Bu 10 sayma değerinin 9 süresi boyunca 1'de kalıyor, tek bir sayma cycle'ı boyunca 0 geçişi sağlıyor.
+
+258
+00:53:27,507 --> 00:53:34,107
+Anlık bir puls üretiyor. Dolayısıyla, nasıl çalıştığına bakacak olursak, tekrarlı bir mod olduğunu söylemiştik.
+
+259
+00:53:34,107 --> 00:53:37,507
+Out ucu bir de idle olarak bekliyor.
+
+260
+00:53:37,507 --> 00:53:50,107
+Sayma değerinin son sayma değeri için çıkış ucumuz sıfıra düşüyor. Daha sonra tekrar bir clock cycle boyunca sıfırda kaldıktan sonra tekrar bire çıkıyor.
+
+261
+00:53:50,107 --> 00:53:54,708
+Gate ucu saymayı duraklatmak için kullanılıyor.
+
+262
+00:53:56,115 --> 00:54:17,115
+Yeni sayma değerinin etkisi mevcut cycle bittikten sonra oluyor. Etkisini görelim. Periyodik bir işaret olduğunu söylemiştik. İlk yazma sırası tam mükemmel bir sayma miktarında sayma sağlamıyor. Ama sonraki birincisi hariç bütün cycle'lar vermiş olduğumuz sayma miktarında mükemmel uyumlu bir şekilde Pulse üretiyor.
+
+263
+00:54:22,804 --> 00:54:28,004
+Sadece LSB göndererek mod 2'de ayarlamak demek. Bunu hexadecimal olarak düşünebilirsiniz.
+
+264
+00:54:28,004 --> 00:54:38,164
+Sayma değeri olarak da 3'ü gönderdik. 3'ü gönderdikten sonra saat darbesinin düşen kenarlarıyla birlikte değer azalmaya başlıyor.
+
+265
+00:54:38,164 --> 00:54:46,964
+3, 2, 1 değeri için out ucumuz anlık olarak bir clock cycle boyunca 0'a düşüp tekrar 1'e çıkıyor.
+
+266
+00:54:47,188 --> 00:55:05,307
+Dolayısıyla burada üretilen sinyal aslında periyodik olarak bir sinyal olduğunu düşünecek olursak, anlık olarak bir sıfır geçişi, anlık olarak bir sıfır geçişi şeklinde periyodik bir işaret. Biraz daha geniş çizince daha anlaşılır oluyor sanırım. Böyle bir çıpta üretiyoruz.
+
+267
+00:55:06,367 --> 00:55:13,887
+Gate işaretinin etkisi neydi? Tıpkı mod 0'da olduğu gibi saymayı duraklatıyor. Gate arada 0'a düşmüşse sayma duraklıyor.
+
+268
+00:55:15,731 --> 00:55:24,291
+Bununla birlikte mevcut bir sayma devam ederken yeni bir sayma değeri gönderirsek bunun etkisi bir sonraki cycle'da ortaya çıkıyor.
+
+269
+00:55:24,291 --> 00:55:35,731
+Örneğin 4 gönderdik, 4'ten geriye doğru sayıyor. Sayma sırasında 5 sayma değerini gönderdik. Bunun etkisi bir sonraki cycle'da, bir sonraki pull cycle'ında ortaya çıkmış oluyor arkadaşlar.
+
+270
+00:55:35,731 --> 00:55:40,731
+Şimdi buradaki örneğe geçmeden önce buraya kadar olanla ilgili bir sorunuz var mı onu sorayım.
+
+271
+00:55:53,556 --> 00:55:55,148
+Evet, yine tepki yok.
+
+272
+00:56:01,556 --> 00:56:10,255
+Şimdi bu noktada ara vereceğiz arkadaşlar. 10 geçe kaldığımız yerden devam edeceğiz. 14.10'da devam ediyoruz.
+
+273
+00:56:13,335 --> 00:56:24,335
+Kaldığımız yerde modiki ilişkin bir örnek var. O örnek üzerinden devam ediyor olacağız. Sorunuz olursa yine chatten veya sesli olarak iletebilirsiniz. Saat 10 geçe devam edeceğiz.
+
+274
+01:05:54,483 --> 01:06:04,923
+Evet arkadaşlar, merhaba tekrarla. Kaldığımız yerden devam edelim. En son mod 2'de kalmıştık. Mod 2, hatırlayacak olursanız, sayma miktarı boyunca 1'de kalıyor.
+
+275
+01:06:04,923 --> 01:06:12,603
+Bir clock cycle boyunca 0'a düşerek bir puls üretiyor ve bunu tekrarlı olarak üreten bir mod. Buna ilişkin olarak örneğimiz...
+
+276
+01:06:13,204 --> 01:06:25,004
+50 mikrosaniyede bir puls üretecek şekilde counter 0'ı ayarlayın diyor ve clock 0'a bağlı işareti 2 MHz'lik bir işaret. Bu örnekte temel olarak aslında şunu anlamamız gerekiyor.
+
+277
+01:06:25,004 --> 01:06:37,604
+Clock işareti frekans değeriyle verilmiş, puls ise periyot değeriyle birlikte verilmiş, yani saniye cinsinden verilmiş. Bu ikisi arasındaki dönüşümü nasıl yapacağız? Yani şöyle bakacak olursak.
+
+278
+01:06:38,164 --> 01:06:48,164
+50 mikrosaniyede bir puls üretebilmesi için bu ne demek? Bunun başlangıcından itibaren bitişine kadar 50 mikrosaniye geçmesi gerekiyor.
+
+279
+01:06:48,164 --> 01:07:01,164
+50 mikrosaniye geçmesi gerekiyor. Peki 50 mikrosaniyede tekrarlanan bir işaretin frekansı nedir? 1 bölü 50 mikrosaniye.
+
+280
+01:07:05,556 --> 01:07:13,056
+Şurada bunu görebilirsiniz. 1 bölü 50 mikrosaniye. Bu aslında bizim çıkış işaretimizin frekansına denk geliyor.
+
+281
+01:07:13,056 --> 01:07:25,056
+50 mikrosaniyeyi saniye cinsinden yazacak olursak 50x10 üzeri eksi 6 yapar. Giriş frekansımız da 2 MHz. Temel kural şuydu hatırlayacak olursanız.
+
+282
+01:07:25,940 --> 01:07:38,940
+giriş frekansını sayma miktarına bölüp çıktı frekansı üretiyordu. Dolayısıyla burada biz giriş frekansımızı çıkış frekansımıza bölersek sayma miktarını buluruz.
+
+283
+01:07:38,940 --> 01:07:44,940
+Burada elde ettiğimiz değer 100 değeri oluyor. 100 değeri 64H, 8 bite sığar. Bu durumda...
+
+284
+01:07:45,715 --> 01:07:55,715
+Bizim counter 0'ı ayarlarken, bu örnekteki mod 2'de ayarlarken sadece lsb değeri göndermemiz yeterli. Öyleyse bizim burada seçeceğimiz control word.
+
+285
+01:07:55,983 --> 01:08:23,984
+Counter 0 için 0, 0, read write bitlerinde sadece LSB göndereceğimiz için 0, 1, mod 2 ayarı için 0, 1, 0 ve binary sayıcı olarak da 0 değer. Yani 14H'ı göndermemiz yeterli kontrolörde. Daha sonrasında ise Counter 0'a 64H değerini bir seferlik yazmayla göndermemiz Counter 0'ın mod 2'de çalışmasını başlatacak. Burada da bu 64 değerini Counter 0'ın adresine gönderdiğimiz örneği.
+
+286
+01:08:23,984 --> 01:08:26,984
+Bu örnek örneği tamamlamış oluyor.
+
+287
+01:08:28,984 --> 01:08:32,984
+Bir başka modumuz mod 3 arkadaşlar. Mod 3 kare dalga üretici.
+
+288
+01:08:33,984 --> 01:08:46,984
+Mod 2'den farkı ne? Mod 2'de hatırlayacak olursanız şekil şu. Yani uzun bir süre boyunca bir de tek bir saygı boyunca sıfırda kalıyor. Ama kare dalga dediğimiz zaman, kare dalga için birazcık şöyle kenara kaydıralım.
+
+289
+01:08:47,636 --> 01:08:59,636
+Kare dalga dediğimiz zaman arkadaşlar işaretin 1'de kalma ve 0'da kalma süreleri birbirine yakın ve eşit bir süre olması lazım. Kare dalgadan kasıt bu aslında.
+
+290
+01:09:01,636 --> 01:09:09,636
+Periodic olarak tekrarlanan bir işaret. Gate değerinin 0'ı yine saymayı durduruyor.
+
+291
+01:09:10,771 --> 01:09:21,771
+Mod 2'den dediğimiz durumla ayrılıyor. Mod 2'de duty değeri çok yüksek. Sıfırda kalma süresi çok kısa. Ama mod 3'de %50 duty değeri mevcut.
+
+292
+01:09:21,771 --> 01:09:24,747
+Çalışması ile ilgili örneğimize bakalım.
+
+293
+01:09:24,851 --> 01:09:33,051
+Control Word değeri olarak 16H gönderdik. 16H, Counter 0, Mod 3'te ayarlayan, Binary Mod'da ayarlayan bir Control Word değeri.
+
+294
+01:09:33,051 --> 01:09:41,652
+Bunu gönderdikten sonra Out ucumuz 1'e çıktı. Sayma değerini gönderdikten sonra da her clock işaretinin düşen kenarında bu değer
+
+295
+01:09:41,652 --> 01:09:46,451
+2'şer 2'şer azalarak yani vermiş olduğumuz sayma değerinin yarısında
+
+296
+01:09:46,612 --> 01:09:58,212
+Bir de yarısında sıfırda kalacak şekilde tekrarlı olarak o sayma değerini her bir cycle'da tekrar yükleyip, ikişer ikişer downcounting yaparak bu kare dalgayı üretmiş oluyor.
+
+297
+01:09:58,292 --> 01:10:02,131
+Peki gönderdiğimiz değer çift değil de tek bir sayı olmuş olsa ne olacak?
+
+298
+01:10:03,172 --> 01:10:12,311
+Eğer tek değerli bir, tek bir sayma değeri gönderecek olursak, o fazlalık değer işaretin bir olduğu durumda.
+
+299
+01:10:12,851 --> 01:10:26,851
+Yani beauty cycle %50'den birazcık daha büyük olmuş oluyor. Bununla birlikte gate ucunun sıfır olması anlık olarak sayma işlemini durduruyor. Onu burada bu örnek üzerinde görüyoruz.
+
+300
+01:10:26,851 --> 01:10:34,851
+Benzer şekilde mod 3'ü bu şekilde kavradıktan sonra mod 3'e ilişkin bir örnek yerine getirmeye çalışalım.
+
+301
+01:10:35,155 --> 01:10:46,675
+Counter 1'i 1 kHz frekansında kare dalga üretecek şekilde ayarlamamız isteniyor ve Counter 1'in klok ucuna da 2 MHz'lik bir klok darbesi bağlı, saat işareti bağlı.
+
+302
+01:10:46,675 --> 01:10:56,995
+Bu durumda sayma değerimizi hesaplayabiliriz. Giriş frekansı bölü çıkış frekansı dediğimizde 2x10 üzeri 6 bölü 1x10 üzeri 3, 1 kHz 1x10 üzeri 3.
+
+303
+01:10:57,524 --> 01:11:03,024
+2 MHz'de 2x10 üzeri 6. Dolayısıyla sayma değerimizin 2000 olduğunu anlamış oluyoruz.
+
+304
+01:11:04,224 --> 01:11:13,424
+Burada 2000 değeri arkadaşlar BCD sınıra da sığıyor. Hex binary sınıra da sığıyor.
+
+305
+01:11:13,424 --> 01:11:18,524
+Dolayısıyla burada değişiklik olması açısından 2000 değerini BCD olarak göndermeye çalışalım.
+
+306
+01:11:18,924 --> 01:11:24,224
+Şimdi kontrol word'umuzu belirleyeceğiz. 2000'i BCD olarak göndereceğiz ama bunu
+
+307
+01:11:24,496 --> 01:11:35,976
+Sadece 16 bite sığdığı için read ve write bitlerimizi 1-1 olarak set ederek gönderebileceğimiz bir senaryo var. Dolayısıyla counter 1'i seçtik.
+
+308
+01:11:35,976 --> 01:11:44,056
+16 bitlik önce LSB sonra MSB göndereceğimiz değer, mod 3 ve BCD modda bunu ayarladık. Bunun karşılığı 77 harç.
+
+309
+01:11:44,056 --> 01:11:52,216
+Buna ilişkin yürütmemiz gereken kodlar ise control word'ü, control adresine yazlık gönderdik.
+
+310
+01:11:52,271 --> 01:12:12,771
+Daha sonra önce LSB değerini yani 002000H'ın BCD olarak gönderecektik ya bunu düşük anlamlı kısmı 0000H'ı counter 1'in adresine gönderdik. Daha sonra da yüksek anlamlı byte'ımızı counter 1'in adresine göndermiş olduk. Bu andan itibaren counter 2000BCD değerinden itibaren geriye doğru saymaya başlıyor.
+
+311
+01:12:13,055 --> 01:12:22,055
+Bu 2000'lik sayma süresinin yarısında logic1'de out oluyor, yarısında da logic0'da out değeri set edilmiş oluyor arkadaşlar.
+
+312
+01:12:22,055 --> 01:12:33,055
+Mod4'e bakacak olursak, mod4 aslında mod2'nin tek seferlik çalışan hali.
+
+313
+01:12:33,055 --> 01:12:38,055
+Mod2'nin tek seferlik çalışan hali. Nasıl çalışıyor?
+
+314
+01:12:38,355 --> 01:12:49,355
+Idle durumda out ucumuz logic 1'de. Sayma değerini başlatıyoruz. Sayma değerini yükledik, saymaya başlıyor. Sayma süresi boyunca 1'de kalıyor.
+
+315
+01:12:49,355 --> 01:12:58,355
+Sayma değerinin son değeri için bir clock cycle boyunca 0'da kalıyor ve bu şekilde sonlanıyor. Yani bir seferlik puls gönderiyoruz burada.
+
+316
+01:12:58,528 --> 01:13:08,927
+Mod 4'de bir seferlik puls. Mod 2'de nasıldı? Mod 2'de tekrarlı olarak bu pulslar yeniden gönderiyordu. Burada bir seferlik puls gönderiyoruz.
+
+317
+01:13:08,927 --> 01:13:16,927
+Mod 5 ise mod 1'den farklı olarak gate ile tetiklenebilen bir durum. Yani mod 4'ün gate ile tetiklenen hali.
+
+318
+01:13:16,927 --> 01:13:22,927
+Bir seferlik puls üreteceğiz ama bunu gate ile tetikliyoruz. Nasıl çalışıyor diye bakacak olursak.
+
+319
+01:13:23,104 --> 01:13:26,783
+Ctrl-Word değerini gönderdik, sayma değerini gönderdik.
+
+320
+01:13:27,072 --> 01:13:36,072
+Out değeri idle'da bekliyor. Gate ucundan bir tetikleme gönderdikten sonra, clock işaretlerini düşen kenarında geriye doğru saymaya başlıyor.
+
+321
+01:13:36,072 --> 01:13:54,072
+Bir sayma süresi boyunca sıfırda kalıp daha sonra işlemini bitirmiş oluyor. Dolayısıyla çalışma şekli de dışarıdan donanımsal gate ucuyla tetiklenen mod 4 olarak özetleyebileceğimiz bir senaryo burada oluşmuş oluyor arkadaşlar. Mod 5 dediğimiz durum bu.
+
+322
+01:13:55,028 --> 01:14:05,528
+Bu şekilde modları tamamlamış olduk. Kabaca bir özetlemek gerekirse mod 0 dediğimiz durumda şöyle şuraya çizmeye çalışalım.
+
+323
+01:14:10,036 --> 01:14:18,036
+Şimdi mod 0'da nasıl çalışıyordu? Out ucumuz 0'daydı. Sayma işlemi bitince 1'e çıkıp bu şekilde kalıyordu.
+
+324
+01:14:18,036 --> 01:14:28,036
+Mod 1'de nasıldı? Mod 1'i hatırlayalım. Mod 1'de gate ucuyla tetiklenen bir senaryo vardı değil mi?
+
+325
+01:14:28,036 --> 01:14:37,036
+Mod 1'de de yine benzer şekilde sayıp daha sonra 1'e çıkıp 1'de kalıyordu ama buradaki geçişi gate ucundaki
+
+326
+01:14:37,332 --> 01:14:43,932
+Bu şekilde bir yükselen kenar sağlıyordu. Gate ucundaki böyle bir durumla bu sağlanmış oluyordu.
+
+327
+01:14:43,932 --> 01:14:48,532
+Modiki'ye baktığımızda Modiki tekrarlı puls üreticiydi.
+
+328
+01:14:53,300 --> 01:15:09,700
+Mod 3'e baktığımızda, şöyle birazcık kare kaydıyalım. Mod 3'e baktığımızda bu bir kare dalga üreteciydi. Dolayısıyla çıkan dalga şekli yaklaşık %50 duty'li bir kare dalga oluyordu. Çok güzel çizemedim ama bu şekilde.
+
+329
+01:15:09,700 --> 01:15:19,700
+Mod 4 dediğimiz durum bir seferlik pus. Dolayısıyla bir kere pus üretip daha sonrasında kalıyordu.
+
+330
+01:15:19,923 --> 01:15:30,163
+Mod 5 dediğimiz ise yine bir seferlik pus üreten bir örnekti. Ama bunu saymaya başlaması için gate ucunda bir tetikleme ihtiyacımız vardı.
+
+331
+01:15:30,163 --> 01:15:37,163
+Dolayısıyla burada karşılaşmış olduğumuz 5 modu da kabaca özetlemiş olduk arkadaşlar.
+
+332
+01:15:39,923 --> 01:15:41,836
+Devam edelim şimdi.
+
+333
+01:15:43,444 --> 01:15:53,844
+Burada da bu slide'da 8254'ün iç yapısını görüyoruz arkadaşlar. İç yapıya ilişkin olarak dikkat edeceğimiz noktalar şunlar.
+
+334
+01:15:53,844 --> 01:16:10,844
+Biz 8086 tarafından 8254'ün herhangi bir sayıcısına sayma değerlerini gönderdiğimizde arkadaşlar, şurada görmüş olduğunuz counter register'lara 8 bit, 8 bit değerler aktarılıyor. Önce low kısmına sonra
+
+335
+01:16:10,960 --> 01:16:13,960
+High kısmına bu değerler aktarılıyor.
+
+336
+01:16:15,960 --> 01:16:26,960
+Ve daha sonra bu iki ayrı değer, count elemente, 16 bitlik count elemente aktarılıp, 16 bitlik initial değerle birlikte sayma işlemi gerçekleştiriliyor.
+
+337
+01:16:26,960 --> 01:16:37,739
+Dolayısıyla burada counter register olarak gördüklerimiz, 8086'dan gelen değerlerin tutulduğu, aktarıldığı ara bir yazmaç.
+
+338
+01:16:38,515 --> 01:16:46,195
+Modlara baktığımızda veya Control Word'un çalışma mantığına baktığımızda o modlardan birisi Counter Latch komutuydu.
+
+339
+01:16:46,195 --> 01:16:55,415
+Counter Latch komutu, sayıcının o sırada saymakta olduğu değeri anlık olarak Output Latch'lerine aktaran bir örnek.
+
+340
+01:16:55,515 --> 01:17:00,875
+Yani biz sayma işlemi devam ederken Counter Latch komutu verdiğimizde o anlık sayma değeri
+
+341
+01:17:01,332 --> 01:17:12,132
+Output Latch yazmaçlarına, 8 bitlik iki tane yazmaç bunlara aktarılıyor, anlık olarak aktarılıyor ve saymaya devam ediyor Counter'e. Sadece anlık bir snapshot'ını almış oluyoruz.
+
+342
+01:17:12,132 --> 01:17:25,632
+Gidip daha sonra bu Output Latch'leri okuyarak Counter'ın hangi sayma değerinde olduğunu o anlık olarak anlamamız mümkün oluyor. Bu saymaya ilişkin durumda. Bunlarla birlikte bir de
+
+343
+01:17:26,452 --> 01:17:38,211
+Sayıcının bir de statüs yazmacı var. Bu statüs yazmacında da özel bir takım bitler var. Biz istersek ya sayma değerini leçleyebiliriz veya statüsü leçleyebiliriz.
+
+344
+01:17:38,211 --> 01:17:50,612
+Buna ilişkin olarak iki farklı komut var. Bunlardan bir tanesi counter-leç komutu. Counter-leç komutunu çalıştırdığımızda sayma değeri otomatik olarak leçleniyor. Yani kopyalanıyor, şunlara kopyalanıyor.
+
+345
+01:17:51,380 --> 01:18:15,440
+Readback komutunu çalıştırdığımızda ise orada iki farklı senaryo söz konusu. Readback komutunda biz istersek statüsü leçlemesini sağlayabiliyoruz veya sadece count değerini leçleyebiliyoruz veya istersek ikisini de leçleyebiliyoruz. Dolayısıyla burada iki bit üzerinden birbirinden bağımsız iki bit üzerinden bir kontrol yürütülüyor Readback komutunda.
+
+346
+01:18:19,380 --> 01:18:28,380
+İlersem de count değerini leçleyebilir ikinci bir kontrol bitiyle. Dolayısıyla bu iç yapıdan anlayacağımız veya değerlendirmemiz gereken nokta şu.
+
+347
+01:18:28,380 --> 01:18:40,380
+8086'dan gelen sayma değerleri, initial sayma değerleri, counter register'lar üzerinden 8 bitlik bu yazmaçlar üzerinden sayma elementine, count elemente aktarılıyor.
+
+348
+01:18:40,500 --> 01:18:48,500
+Ben istediğim herhangi bir an için count element değerini, o anki sayma değerini latchleyip, outlet latchlere aktarabilirim.
+
+349
+01:18:50,000 --> 01:18:55,500
+Bununla birlikte bu işlemi counter latch komutuyla gerçekleştirebilirim.
+
+350
+01:18:55,500 --> 01:19:04,500
+Bununla birlikte bir de readback komutu var. Readback komutunda ise, ister statüs ister count latch'i birbirinden bağımsız bir şekilde çalıştırabilirim.
+
+351
+01:19:05,203 --> 01:19:11,203
+Şimdi burada yukarı dönüp tekrar mod yazmacına bakacak, kontrol yazmacına bakacak olursak arkadaşlar,
+
+352
+01:19:11,203 --> 01:19:28,203
+buradaki önemli durum, ben counter select bitleriyle herhangi bir counter'ı seçtikten sonra read write komutlarında 00 değerlerini verirsem, bu durum counter latch oluyor.
+
+353
+01:19:29,171 --> 01:19:36,851
+Daha sonrasında burada modun bir anlamı yok, BCD'nin bir anlamı yok. Ben counter seçip
+
+354
+01:19:37,011 --> 01:19:58,291
+Buradan counter latch komutunu, yani burada counter'a ilişkin 00, 01, 01, 01, counter seçip, readwrite komutlarında da 00 verip, diğerleri don't care olsa bile kontrol yazmacına gönderirsem, seçmiş olduğum counter'a ilişkin o anlık sayma değeri leçlenmiş oluyor. Bakın şu üzerinden yaptım.
+
+355
+01:20:00,000 --> 01:20:09,600
+Readback komutunu çalıştıracaksam bu durumda counter select bitlerine 1,1 değerini veriyorum ve buna göre nasıl çalışacağına şimdi birazdan detaylı bir şekilde bakalım.
+
+356
+01:20:11,399 --> 01:20:18,880
+Geldim tekrar. Burada counter latch işlemine tekrar detaylı bir şekilde bakacak olursak, counter latch komutu nasıl gönderiliyordu?
+
+357
+01:20:18,880 --> 01:20:27,520
+Counter seçtikten sonra read write bitlerinde 0,0 değeriyle gönderiliyordu. Ben bunu herhangi bir counter için yapabiliyorum.
+
+358
+01:20:27,859 --> 01:20:37,079
+Ben bu komutu kontrol yazmacına gönderdiğim anda o kontrol yazmacına ilişkin sayma değeri output latchlere aktarılmış oluyor.
+
+359
+01:20:37,079 --> 01:20:44,180
+Ve ben gidip counter latch, output latchlerden o anlık sayma değerini okuyup değerlendirebiliyorum.
+
+360
+01:20:44,180 --> 01:20:52,359
+Counter latch komutuna bakacak olursak bir counter seçiyorum, daha sonra 0, 0 komutu var, diğerleri don't key.
+
+361
+01:20:52,359 --> 01:20:53,951
+Tamam.
+
+362
+01:20:53,952 --> 01:21:04,352
+Burada counter-latch komutunu çalıştırabilmek için readback haricindeki durumları değerlendiriyoruz. Readback haricindeki durumlar aslında counter-latch komutu olmuş oluyor.
+
+363
+01:21:04,352 --> 01:21:12,551
+Readback komutuna bakacak olursak, readback komutu bize hem sayma değerini hem de statüs değerini leçlememizi sağlayan bir komut.
+
+364
+01:21:12,724 --> 01:21:28,724
+Readback komutu nereye yazılıyor? Readback komutu nereye yazılıyor? Kontrol yazmacına yazılıyor. Counter latch komutu nereye yazılıyor? Bu da kontrol yazmacına yazılıyor. Dolayısıyla bütün bu işlemler kontrol yazmacı üzerine göndermiş olduğumuz değerlerle sağlanıyor.
+
+365
+01:21:34,676 --> 01:21:42,876
+Counter için, istersek birden fazla Counter için hem statüs hem de count değerlerini leçleme imkanımız var.
+
+366
+01:21:44,916 --> 01:21:52,976
+Eğer ki biz bir Counter'a ilişkin hem sayma değerini hem de statüs değerini leçlemiş isek,
+
+367
+01:21:53,235 --> 01:22:13,235
+Yani öyle bir komut gönderiyoruz ki, öyle bir readback komutu gönderiyoruz ki, seçmiş olduğumuz sayıcıya ilişkin hem sayma değerini kopyaladıyoruz, hem de statüsü latchle diyoruz. Böyle bir komut gönderiyorsak, bu durumda gidip daha sonra counter'ın adresinden yapmış olduğumuz okumalar bize sırasıyla şunları veriyor.
+
+368
+01:22:13,235 --> 01:22:19,235
+Counter'ın adresinden yaptığımız ilk okuma bize statüs yazmacının değerlerini veriyor.
+
+369
+01:22:19,604 --> 01:22:30,603
+Daha sonraki yapmış olduğumuz okumalar, daha sonraki yapmış olduğumuz okumalar, komutla birlikte leçlediğimiz, o anda leçlediğimiz sayma değerini veriyor.
+
+370
+01:22:31,603 --> 01:22:38,539
+Ama yine bunun peşine başka okumalar yaparsak, bu durumda da leçlenmeden o anlık...
+
+371
+01:22:38,579 --> 01:22:50,779
+Tabi bozulma ihtimali yüksek. Çünkü mesela biz counter'ın düşük kısmını ve yüksek anlamlı kısımlarını okurken o sırada counter devam ettiği için hatalı değer okuma imkanı var ama leşlenmemiş count değerlerini okumuş oluyoruz.
+
+372
+01:22:51,572 --> 01:23:18,572
+Counter Latch ile ilgili olarak tekrar da şunu söyleyelim. Counter seçtim, 0-0, read write bitlerinde 0-0 değerini beğendim. Bu ilgili seçmiş olduğum Counter'da sayma değerini Latch'liyor. Yani anlık olarak kopyalıyor. Ve bu değerleri ben nereden okuyacağım? Bu Latch'lenen değerleriyle yine gidip Counter'ın, hangi Counter'ı seçmişsem o Counter'ın adresinden okuma yaparak Latch'lenmiş olan değeri elde etmiş oluyoruz.
+
+373
+01:23:19,283 --> 01:23:35,583
+Readback komutunun yapısına bakacak olursak, en yüksek iki anlamlı bitimiz 1, 1 olduğu zaman bu Readback komutu olduğu anlamına geliyor. D1, D2 ve D3 sırasıyla Counter 0, Counter 1 ve Counter 2 için leçleme yapılıp yapılmayacağını seçiyor.
+
+374
+01:23:36,115 --> 01:23:44,115
+Dolayısıyla ben burada istersen her 3 counter içinde aynı anda hem sayma değerini hem de statüs değerini leçleyebilirim.
+
+375
+01:23:44,576 --> 01:23:49,735
+Hangisini seçmek istiyorsam counterlardan bunlara bir değerini veriyorum. Hangilerini seçeceksem.
+
+376
+01:23:50,296 --> 01:23:57,296
+Fakat burada dikkat edeceğimiz nokta D5 ve D4'te sayma değeri ve statüs değeri leçlenirken bunlar aktif 0.
+
+377
+01:23:57,296 --> 01:24:03,396
+Bunlar aktif 0. Eğer ki ben statüsü leçlemek istiyorsam D4'e 0 yazmalıyım.
+
+378
+01:24:03,471 --> 01:24:20,711
+Eğer count değerini leşlemek istiyorsam D5'e 0 yazmalıyım. Örneğin ben bütün counter'ların hem statüslerini hem count değerlerini leşlemek istiyorsam göndereceğim değer 1, 1, 0, 0, 1, 1, 1, 0 olmuş olacak. Yani bu durumda da C,
+
+379
+01:24:21,587 --> 01:24:37,188
+E değerini göndermem gerekiyor. Control Word'e. Daha sonrasında ne yapacağım? Sırasıyla gidip her bir counter'ın kendi adresinden 3'er okuma yapacağım. Örneğin, daha önceden 16 bitlik veri göndermişsem, her bir counter'ın adresinden 3'er okuma yapacağım.
+
+380
+01:24:44,307 --> 01:24:51,307
+Gerekiyorsa üçüncü okumalarda o anlık olarak leçlenmiş count değerini bize vermiş olacak arkadaşlar.
+
+381
+01:24:54,836 --> 01:25:09,675
+Readback ile ilgili özel bir durum var. Eğer ki biz bir counter'a ilişkin olarak, statüs veya count değerini leçlemişsek ve bu değeri okumamışsak, aynı counter'a ilişkin yeni leç komutları
+
+382
+01:25:09,775 --> 01:25:34,795
+Discard ediliyor, değerlendirmeye alınmıyor. Ne demek bu örneğin? Bakın şöyle bir komut gönderirsek, bunun anlamı ne? Bir readback komutu gönderiyoruz. Hem status hem count değerini leçle demişiz. Counter 0 için. Bakın counter 0'ın status ve count değerini leçle. Bunun sonucunda counter 0'ın hem status hem de count değerini leçlendi.
+
+383
+01:25:35,380 --> 01:25:47,679
+Hemen bunun peşine biz tekrar bir readback komutu gönderirsek ve bu durumda da sadece neyi göndermişiz? Statüsü müydü bu?
+
+384
+01:25:47,679 --> 01:25:56,179
+Sadece statüs değerinin leçlenmesini istemişsek ama counter 2'ye ilişkin olarak bu durumda da counter pardon counter 1'miş bu.
+
+385
+01:25:56,179 --> 01:25:57,380
+Counter 1 evet.
+
+386
+01:25:57,471 --> 01:26:15,471
+Counter 1'in statüsünü leşleme komutu göndermişsek, bu sefer Counter 1'e ilişkin o blok diagram içerisinde sadece statüs değeri leşlendi. Şu ana kadar Counter 0'ın hem sayma değerini hem de statüsünü leşledik, Counter 1'in de statüsünü leşledik ama daha hiçbirini okumadık.
+
+387
+01:26:20,051 --> 01:26:32,051
+Hem counter 1 hem counter 2'nin statüslerini leşleme komutu 3. sıradaki. Hem counter 1 hem counter 2'nin statüslerini leşleme komutu vermişiz. Ama bunlardan...
+
+388
+01:26:32,659 --> 01:26:43,279
+Counter 2'ye ilişkin olarak statüsleşleme komutu yürütülürken, Counter 1'e ilişkin olarak statüsleşleme işlemi yürütülmeyecek.
+
+389
+01:26:43,279 --> 01:26:52,379
+Niçin? Az önce Counter 1'in statüsünü leçlemiştik ama bunu okumadık. Okumadığımız için override etmiyor. Okunana kadar bunları diskart ediyor.
+
+390
+01:26:52,859 --> 01:26:57,099
+Dolayısıyla buradaki yaklaşımda eğer bir değeri leçlemişsek,
+
+391
+01:26:57,492 --> 01:27:09,792
+count değeri olur veyahut da statüs değeri olur. Bunları okumadan yeni yapmış olduğumuz readback işlemleri discard ediliyor. Tamam, buradaki değerimiz anlamımız bu.
+
+392
+01:27:16,819 --> 01:27:29,219
+Özellikle status için anlamlı bir durum. Son olarak da status byte'ına bakalım. Status byte'ını nereden okuyoruz arkadaşlar?
+
+393
+01:27:29,219 --> 01:27:41,219
+Status byte'ı kontrol yazmacından yapmış olduğumuz okumalarda mı geliyor? Nereden geliyor status byte'ı? Bakın nasıl latch'lemiştik hatırlayalım.
+
+394
+01:27:46,163 --> 01:27:53,764
+Statüsle işleme ilgili counter'a readback komutu verdiğimiz zaman sadece statüsle işleniyor.
+
+395
+01:27:53,764 --> 01:27:58,163
+Statüsü de nasıl okuyorduk öyleyse? İlgili counter adresinden okuyorduk.
+
+396
+01:27:58,163 --> 01:28:02,963
+Dolayısıyla burada yapılabilecek en büyük, karışabilecek en büyük nokta,
+
+397
+01:28:02,963 --> 01:28:06,963
+status byte'ının nereden geldiği, hangi adresten okunması gerektiği ile ilgili.
+
+398
+01:28:06,963 --> 01:28:10,163
+Status byte'ını control word'den okumuyoruz.
+
+399
+01:28:10,547 --> 01:28:23,547
+Status byte'ı readback komutu verdikten sonra status leçlemişsek gidip ilgili counter'ın adresinden okuyoruz. Her bir counter'ın kendine ait bir statüsü var çünkü.
+
+400
+01:28:23,547 --> 01:28:28,547
+Control Word'den okuyor olsaydık hangi counter'a ilişkin status byte olacaktı? Onu bilemezdim.
+
+401
+01:28:28,735 --> 01:28:44,676
+Dolayısıyla, status byte'larını okuyabilmek için her bir counter'e ilişkin readback komutu çalıştırdıktan sonra gidip, ilgili counter'ın adresinden yapmış olduğumuz okumalarda, status byte'larını, ilgili counter'a ilişkin status byte'larını elde etmiş olacağız.
+
+402
+01:28:46,131 --> 01:28:58,871
+Status byte'ına baktığımız zaman bizim için en önemli olanlardan birisi output ucu. Yani fiziki olarak output pininin, out pininin lojik değeri burada D7 bitinde bize verilmiş durumda.
+
+403
+01:28:59,923 --> 01:29:17,323
+Bununla birlikte daha önceden ilgili counter, redirect modunda ne şekilde ayarlanmış onun bilgisi var. Mod olarak neyde ayarlanmış onun bilgisi var. Bir de sayma tipi, bcd binary bunun bilgisi bu status byte'dan elde edilmiş oluyor arkadaşlar.
+
+404
+01:29:22,323 --> 01:29:33,323
+Bütün fonksiyonel blok yapılarını, uç tanımlarını, içerideki okuma latch komutlarını, counter latch ve readback komutlarını tanımlamış olduk.
+
+405
+01:29:33,323 --> 01:29:38,323
+Bunlar üzerinden erişilebilecek olan status byte'ı tanımlamış olduk ve bu sayede...
+
+406
+01:29:40,372 --> 01:29:51,372
+8254'ü tamamlamış olduk sunum olarak. Şimdi bu noktada örneklere geçmeyeceğim. Buraya kadar olan kısımla ilgili sormak istediğiniz bir şeyler var mı arkadaşlar?
+
+407
+01:29:57,140 --> 01:30:02,900
+Dediğim gibi örneklere geçmeyeceğim. Bu noktada dersi bitirebiliriz. Var mı sorunuz?
+
+408
+01:30:04,760 --> 01:30:08,120
+Haftaya 8254'ün örneklerini yapıyor olacağız.
+
+409
+01:30:08,660 --> 01:30:16,560
+Bu arada karmaşık dalga şekilleri üretecek şekilde, tek bir counter'ın üretemeyeceği belirli bir takım frekansları,
+
+410
+01:30:17,040 --> 01:30:20,720
+iki tane counter'ı peş peşe bağlayarak nasıl elde edebiliriz gibi.
+
+411
+01:30:21,043 --> 01:30:37,043
+Örnekler üzerinde duracağız. Bir tane karmaşık yine örneğimiz var. Frekans sayıcı elde edebiliyoruz. 8254 ile ilgili olarak. Ona ilişkin donanım bağlantısı ve yazılım üzerinde, SM'li kodu üzerinde duruyor olacağız. Belki...
+
+412
+01:30:38,387 --> 01:30:52,728
+8254'te belirli frekanslarda kale dalga nasıl üretilir? Onların üzerinde dururuz ve bu sayede 8254'ü haftaya yapacağımız örneklerle tamamlamış oluruz arkadaşlar. Buraya kadar olan kısmla ilgili sormak istediğiniz bir şey var mı? Tekrar ediyorum.
+
+413
+01:30:56,948 --> 01:30:58,948
+Evet, bir tepki alayım arkadaşlar.
+
+414
+01:31:09,492 --> 01:31:16,492
+Soru yoksa arkadaşlar bu haftalık dersi tamamlıyoruz. Önümüzdeki hafta dediğim gibi 8254 örnekler üzerinden devam edeceğiz.
+
+415
+01:31:19,492 --> 01:31:28,492
+8254 ile ilgili deney sorusu da oldukça ilgi çekici bir soru olacağından eminim. Daha önceki senelerde öğrencilerimiz çok beğeniyordu o soruyu.
+
+416
+01:31:29,492 --> 01:31:35,492
+Eğer farklı bir soru düşünülmüyorsa yine benzer bir soru üzerinden hareket ediyor olacağız büyük ihtimalle.
+
+417
+01:31:36,467 --> 01:31:42,887
+Öyleyse bu haftalık dersimizi bitirelim. Herkese teşekkür ediyorum katılımları için. Haftaya tekrar görüşmek üzere arkadaşlar.

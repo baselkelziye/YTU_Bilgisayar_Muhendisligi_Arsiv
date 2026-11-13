@@ -1,0 +1,1851 @@
+1
+00:02:50,836 --> 00:03:01,836
+Evet, arkadaşlar merhabalar. Geçen hafta kaldığımız noktadan devam edeceğiz ama muhteşem bir şekilde iki kişiyiz. Benden birlikte üç, nasıl oluyor?
+
+2
+00:03:43,060 --> 00:03:44,972
+Kampayla şimdi ile başlayalım.
+
+3
+00:03:52,852 --> 00:04:15,852
+Evet arkadaşlar, hatırlayacak olursanız ADC ve DAC entegrelerini inceliyorduk. Buna ilişkin olarak bulunduğumuz fiziki dünyanın analog bir dünya olduğunu söylemiştik. Mikroişlemcil veya bilgisayar sistemlerin ise sayısal bir sistem olduğunu söylemiştik. Dolayısıyla dış dünyaya ilişkin bir ölçüm yapıp bir kontrol işlemi yürütmek istiyorsak mutlaka...
+
+4
+00:04:16,755 --> 00:04:26,055
+bir ADC ve DAC'ye ihtiyaç duyduğumuzu belirtmemiz gerekiyordu. Burada aslında ADC ve DAC cihazları,
+
+5
+00:04:26,055 --> 00:04:37,315
+temel olarak elektriksel analog bir işaretin dijitale veyahut da dijital bir işaretin elektriksel analog işarete dönüştürmesini sağlayan yapılar olarak ortaya çıkıyordu.
+
+6
+00:04:37,315 --> 00:04:42,915
+Bunun haricinde bir de ölçmek istediğimiz fiziki değişkenin
+
+7
+00:04:43,636 --> 00:05:00,636
+elektriksel bir enerjiye dönüştürülebilmesi için bir dönüştürücü, transdüüsüre ihtiyacımız vardı. Bu yine kontrol yönünde de elektriksel alınmalık işaretin farklı bir fiziki enerjiye dönüştürülmesi için de yine kullanılan bir yapı olarak ortaya çıkıyordu.
+
+8
+00:05:00,636 --> 00:05:10,636
+Geçen haftaki vermiş olduğumuz örnekte ortamın ısı değerini ölçüp buna göre bir fan çalıştıracağımız bir örnekten bahsetmiştik hatırlıcak olursanız.
+
+9
+00:05:10,932 --> 00:05:20,932
+Burada ortam sıcaklığını ölçmeye ilişkin olarak kullanacağımız Transduser'ın aslında sıcaklıkla dirence değişen bir cihaz ve bir direnç elemanı olabileceğini,
+
+10
+00:05:20,932 --> 00:05:32,716
+çıktığı yönündeki Transduser'ın ise motorun kendisi, bizatihi motorun kendisi olabileceğini söylemiştik örnek olarak. Daha sonrasında analog ve dijital sinyal özelliklerine bakmıştık.
+
+11
+00:05:38,899 --> 00:05:52,779
+Bir analog sinyalden bahsediyor olabilmek için bu sinyalin zamanın her bir anında, zaman çizelgesinde, yatay eksende veyahut da zamana bağlı olarak herhangi bir T anında değer alabilmesi gerekiyor.
+
+12
+00:05:52,779 --> 00:06:03,099
+Ve bununla birlikte bu T anındaki değerinin yani görüntü kümesinde sürekli bir uzay olması gerekiyor. Dolayısıyla burada görmüş olduğunuz sol üstteki işaretimiz.
+
+13
+00:06:03,327 --> 00:06:12,727
+bir analog işaret olarak değerlendirebileceğimiz işaret. Bununla birlikte sayısal işaret hem zamanda belirli aralıklarla örneklemeye dayanan bir işarettir,
+
+14
+00:06:12,727 --> 00:06:20,527
+hem de işaretin o belirli t anındaki örnekleme anındaki alabileceği değer sadece belirli kuantalarla sınırlıdır.
+
+15
+00:06:20,527 --> 00:06:27,327
+Örneğin biz bunu 8 bitlik bir ADC çıktısı olarak değerlendirdiğimizde 0, 0, F ile
+
+16
+00:06:27,636 --> 00:06:38,136
+FFH arasında, pardon yanlış veriyordum, 00H ile FFH arasında toplam 256 farklı değer üretecek şekilde ADC entegresinin çıktısını elde ediyorduk.
+
+17
+00:06:38,456 --> 00:06:47,416
+Dolayısıyla burada sol altta görmüş olduğunuz işaret hem zamanda ayrık hem de genlik olarak ayrık, genlikte kuantalanmış işaret bir sayısal işaret olarak değerlendiriliyordu.
+
+18
+00:06:52,468 --> 00:07:02,468
+Devre tasarımı görmüştük. Son olarak da DAC entegresinin iç yapısını ve uçlanımlarını incelemeye başlamıştık.
+
+19
+00:07:02,468 --> 00:07:12,468
+Burada geçen haftada konuştuğumuz üzere belki şöyle yaparsak daha iyi olur. Şunu CS ile değiştirelim, chip select ucu olarak değiştirelim.
+
+20
+00:07:12,468 --> 00:07:18,468
+Bu entegrenin dış dünyaya ulaşacak uçları, data uçları, chip select ucu, right ucu,
+
+21
+00:07:19,220 --> 00:07:28,220
+ve bir de analog çıkış ucu. Bunun dışındaki bütün uçların içeride bağlantıların hazır bir şekilde size verilmiş olacağını varsayacağını söylemiştik.
+
+22
+00:07:28,220 --> 00:07:31,220
+Geçen haftadan hatırlatma yapmak gerekirse arkadaşlar.
+
+23
+00:07:34,220 --> 00:07:38,220
+Buna göre bu cihazın adres ucu sayısının 0 olduğunu söylemiştik.
+
+24
+00:07:38,447 --> 00:07:59,447
+Dolayısıyla bu cihaz 8086 ayı uzayında 2 üzeri 0, yani 1 byte'lık yer kaplayacak. Dolayısıyla biz bu cihaza bir adres vereceğiz ve o adres üzerinden sadece buna erişebiliyor olacağız. Dolayısıyla adres çözümleme devremiz o adresle ilgili bir yazma işlemi yaptığımızda, dikkat edin, DAC entegresi sadece çıkış yönlü olarak çalışır.
+
+25
+00:08:02,288 --> 00:08:13,288
+Dolayısıyla bu entegrede aynı adresten read işlemlerinde chip select olmaması gerekiyor. Bunu da zaten write ucu ile birlikte sağlıyor olacak zaten.
+
+26
+00:08:15,288 --> 00:08:26,288
+Dolayısıyla bizim bu adrese göndermiş olduğumuz değer, 0 ile 255 arasındaki 8 bitlik bir değer gönderebilir. 8 tane data ucu var çünkü.
+
+27
+00:08:26,963 --> 00:08:39,963
+Bu değere karşılık 0 ile şurada 0 referansı ve buradaki referansın negatifi. Yani 0 ile 5 volt arasında şuradan bir çıkış analog bir çıkış üretilebiliyoruz.
+
+28
+00:08:39,963 --> 00:08:47,963
+Bunu örneklemek gerekirse, girdi değerimiz 0,0H ise hatta bunu daha güzel şöyle yazabiliyorduk sanırım.
+
+29
+00:08:53,716 --> 00:09:05,716
+Analog gerilim değeri 0 volt oluyordu. 7F değeri için konuştuğumuzda ise, 7F değerine karşılık gelerek de 2.5 voltluk bir çıkış gerilimi elde ettiğimizi söylüyorduk.
+
+30
+00:09:05,716 --> 00:09:19,716
+Son olarak, FFH değeri için de 5 voltluk bir çıkış elde edebileceğimizi söylemiştik. Dolayısıyla bu arada, liner ölçekte yani doğrusal olarak çıktı değerimizde doğrusal şekilde analog değerler alabilir durumda.
+
+31
+00:09:20,628 --> 00:09:47,807
+DAC entegresini bu şekilde örnekleyebiliyorduk. Entegrenin bunun haricindeki diğer uçlarına ilişkin olarak arkadaşlar, burada bir detay mevcut fakat bu detay dediğim gibi sizi doğrudan bağlamıyor diyebilirim. Siz sorumlu değilseniz bununla ilgili. Bu entegrenin data uçları, chip select ucu, write ucu ve analog çıkış ucundan buradaki bağlantılardan sorumlusunuz. Bunun dışında içeride kalan bağlantı yapısıyla ilgili sorumlu değilsiniz.
+
+32
+00:09:48,211 --> 00:09:52,211
+Ama detayına bakmak isterseniz, bu slide'da bu detay mevcut arkadaşlar.
+
+33
+00:09:53,631 --> 00:10:01,391
+Bu entegrenin zamanlama diagramına bakacak olursak, şunu düşünelim, mikroişlemci bu cihaza ilişkin bir komut gönderiyor.
+
+34
+00:10:01,391 --> 00:10:06,211
+Bu cihazın adresinde DAC adres olduğunu varsayalım ve bir değer göndereceğiz.
+
+35
+00:10:06,291 --> 00:10:10,791
+Bunun içinde moveal, value diyelim, herhangi bir değer gönderiyoruz.
+
+36
+00:10:16,083 --> 00:10:25,083
+ADRS, AL dediğimiz vakit, bakın burada out işlemiyle birlikte bir yazma işlemi yapılıyor ve bir I.O. işlemi yapılıyor.
+
+37
+00:10:25,083 --> 00:10:37,083
+Bunu buradan üretilen DAC adrese göre üretilen adres değerleri, mikroişlemci tarafından üretilen adres değerleri, adres çözümleme devresi tarafından çözülerek ilgili chip select değeri üretilmesi lazım.
+
+38
+00:10:37,083 --> 00:10:42,767
+Bir. İkincisi yine out işlemi dolayısıyla mikroişlemci bir write işlemi üretecek. İki.
+
+39
+00:10:42,768 --> 00:10:49,768
+Üçüncü olarak da out işlemi olduğu için, bir gönderim işlemi olduğu için yine mikroişlemci data uçlarında bu veriyi hazırlamış olması gerekir.
+
+40
+00:10:49,768 --> 00:10:59,768
+Dolayısıyla DAC0830 entegresinin uçlarında data değerleri hazırken, cihaz seçilmiş iken, cihazı yapmış olduğumuz write işlemi sonucunda,
+
+41
+00:10:59,768 --> 00:11:09,484
+DAC entegresi göndermiş olduğumuz 8 bitlik dijital değeri alıp, buna ilişkin uygun analog değeri, belirli bir settlement time sonrasında
+
+42
+00:11:09,556 --> 00:11:14,056
+Yani bir oturma zamanından sonra üretip, çıktı da analog çıktısında üretiyor.
+
+43
+00:11:14,056 --> 00:11:21,056
+Dolayısıyla bu entegrenin verimli bir şekilde çıkış üretebilmesi için biz bu cihaza bir değer gönderdikten sonra
+
+44
+00:11:21,056 --> 00:11:26,556
+bu cihazın hazır olabilmesi için belirli bir süre beklememizde fayda var arkadaşlar.
+
+45
+00:11:26,556 --> 00:11:29,556
+Onu söyleyelim.
+
+46
+00:11:29,556 --> 00:11:33,556
+Belirli bir süre beklememizde fayda var.
+
+47
+00:11:34,707 --> 00:11:47,127
+Burada aldığımız bir örneğimiz vardı. Bu örneğimizde 1000H adresine yerleştirilmiş olan bir DAC entegresi olduğunu varsayacak olursak şeklinde ilerlemiştik. Yine geçen hafta hatırlayacak olursanız.
+
+48
+00:11:48,467 --> 00:11:59,067
+Bu entegreye ilişkin olarak da verilen kodu çalıştırdığımızda analog çıkışta göreceğimiz yaklaşım değer, yaklaşık değer ne olur diye incelemiştik.
+
+49
+00:11:59,668 --> 00:12:06,168
+Adres değeri 1000H olduğu için doğrudan immediate port adresi olarak veremeyeceğiz. Dolayısıyla DX üzerinden vermemiz lazım.
+
+50
+00:12:06,168 --> 00:12:20,167
+0 değeriyle başlıyoruz. AL'ya da 0 ile başlıyoruz. Adrese 0 değerini gönderdik. Birazcık bekledik. AL'yı arttırdık. Daha sonra tekrar arttırdığımız değeri DAC'ye gönderiyoruz. Yine bekliyoruz ve arttırarak arttırarak bu değerleri gönderiyoruz.
+
+51
+00:12:20,436 --> 00:12:28,436
+AL değeri FF'e ulaştığı zaman tekrar inkrement olduğunda ne olacak? FF'den tekrar 0,0H'a dönüş sağlayacak.
+
+52
+00:12:28,436 --> 00:12:39,436
+Dolayısıyla burada elde edeceğimiz, çıktığımız kabaca çizecek olursak, şurada genlik, şurada zaman olmak üzere, burada da gerilim değerimiz.
+
+53
+00:12:39,436 --> 00:12:47,436
+0 volttan itibaren başladık. Ta ki 5 voltluk değere ulaşana kadar, yani FF'e kadar ulaştık.
+
+54
+00:12:47,860 --> 00:13:07,860
+Burada çıkışımız linear bir şekilde artacak. Analog çıkışımız. Daha sonra tekrar 0'a düştüğümüz için bu analog çıkışımız tekrar 0'dan itibaren tekrar yükselecek. Daha sonra tekrar 0'a düşecek, yükselecek, 0'a düşecek, yükselecek, 0'a düşecek ve bu şekilde ilerleyecek.
+
+55
+00:13:16,179 --> 00:13:25,579
+yapı itibariyle de üçgen yükselen kenarlar ve doğrudan dik düşen kenarlardan oluşan bir üçgen yapısı olarak bunu örnekleyebiliriz.
+
+56
+00:13:25,579 --> 00:13:36,079
+Elde ettiğimiz değer bu şekilde bir çıktı olacak. Çıktılarımız yine analog değer olarak elde edeceğimizi geçen haftada belirtmiştik yanlış hatırlamıyorsam.
+
+57
+00:13:36,079 --> 00:13:41,679
+Dolayısıyla bu haliyle arkadaşlar DAC örneğimizi tamamlamış oluyoruz.
+
+58
+00:13:41,908 --> 00:13:46,187
+DAC tarafında sormak istediğiniz bir şey var mı? Bir konu var mı bununla ilgili olarak?
+
+59
+00:13:49,128 --> 00:13:50,488
+DAC tarafında.
+
+60
+00:14:05,716 --> 00:14:16,716
+ADC tarafına ilerleyelim. ADC tarafında ise analog digital converter'ın yine daha önceki entegre yapısında olduğu gibi öncelikli olarak devre şama yapılarını inceleyeceğiz.
+
+61
+00:14:16,716 --> 00:14:23,475
+Yani bu ADC entegrelerinin iç yapısında neler olabilir onlara ilişkin iki örneğimiz var. Onları bir inceleyeceğiz.
+
+62
+00:14:27,412 --> 00:14:36,912
+Bu şekilde kullandığımız entegre 0804 entegresi onu inceliyor olacağız. Bunun dalga şekline ve örneğine bakıyor olacağız yine benzer şekilde.
+
+63
+00:14:38,912 --> 00:14:49,912
+Öncelikli olarak ADC'nin iç yapısında neler olabilir dediğimiz noktada arkadaşlar, ADC'nin iç yapısında bunlardan birisi paralel ADC olarak isimlendirdiğimiz bir tasarımla karşılaşabiliriz.
+
+64
+00:14:52,980 --> 00:15:00,580
+Bir öncelik enkodarı ve karşılaştırıcı eriği kullanıyoruz. Karşılaştırıcı dizisi kullanıyoruz.
+
+65
+00:15:00,580 --> 00:15:05,060
+Karşılaştırıcı burada nasıl çalışıyor? Karşılaştırıcı şu şekilde çalışıyor.
+
+66
+00:15:05,060 --> 00:15:16,899
+Uçlarına gelen değerleri açısından değerlendirecek olursak, artı ve eksi giriş. Bakın bu feedback olmayan bir opamp gibi düşünebilirsiniz bunu karşılaştırıcıyı.
+
+67
+00:15:16,899 --> 00:15:19,299
+İşte A ve B girişlerimiz var.
+
+68
+00:15:20,851 --> 00:15:29,032
+Eğer ki burada AB'den büyükse arkadaşlar, AB'den büyükse gerilim olarak çıktığımız lojik 1 oluyor.
+
+69
+00:15:31,032 --> 00:15:38,331
+A büyük B şeklinde bir değerimiz varsa buradaki çıktı değerimiz, çıktı değerimiz bizim lojik 1 oluyor.
+
+70
+00:15:38,331 --> 00:15:42,231
+Eğer ki AB'den küçük eşitse diyeyim.
+
+71
+00:15:43,956 --> 00:15:49,956
+Bu durumda da yani eşitliği analog bir değer için eşitliği yakalamak aslında pek mümkün değil ama bu şekilde tanımlayalım.
+
+72
+00:15:49,956 --> 00:15:57,956
+Bu durumda da lojik sıfır üretiliyor. Dolayısıyla karşılaştırıcının çıktıları da temel olarak bu mantık çerçevesinde çalışıyor diyebiliriz.
+
+73
+00:15:57,956 --> 00:16:07,956
+Burada bizim bir dijitale çevirmek istediğimiz bir giriş işaretimiz var. Bu V-in ile işaretlenmiş durumda.
+
+74
+00:16:08,240 --> 00:16:26,240
+Bir de bizim bir referans gerilim değerimiz var. Bu referans gerilim değeri aslında bizim ölçebileceğimiz maksimum gerilim değerini tekabül ediyor olsun. Dolayısıyla biz 0-5 volt arasında çalışıyorsak burada bizim V ref'ten kastettiğimiz 5 voltluk bir gerilim değeri olduğunu varsayabiliriz.
+
+75
+00:16:26,240 --> 00:16:30,988
+Burada 5 voltluk gerilim değerinden sonra bir direnç dizisi görüyorsunuz.
+
+76
+00:16:31,091 --> 00:16:36,472
+Ve gerilim olarak da, son olarak da referans gerilimimize, yani 0 volta bağlı.
+
+77
+00:16:36,472 --> 00:16:48,752
+Baktığınız zaman 1, 2, 3, 4, 5, 6, 7 adet peş peşe bağlı, birbirine seri olarak bağlı dirençlerden ibaret bir yapı.
+
+78
+00:16:48,752 --> 00:16:54,252
+Burada elde edeceğimiz sonuç aslında şöyle oluyor. VRF değerimiz 5 olmakla birlikte.
+
+79
+00:16:55,283 --> 00:16:59,283
+Şu düğümdeki gerilim değerimiz nedir? Bunu söyleyebilir misiniz?
+
+80
+00:17:02,283 --> 00:17:05,284
+Bu düğümdeki gerilim değerimiz nedir?
+
+81
+00:17:13,364 --> 00:17:16,764
+Evet, Sayın Katılımcılar, bir ses verin bakalım.
+
+82
+00:17:22,067 --> 00:17:25,288
+Hemen hesaplıyorum hocam. Birazcık unutmuşum hesaplamayı.
+
+83
+00:17:26,228 --> 00:17:30,867
+Tamam. Ne mantığında yapacağız bunu? Gerilim bölücü mantığında yapacağız. Onu hatırlatabiliriz belki.
+
+84
+00:17:32,087 --> 00:17:36,987
+Veya işlemi söyleyebiliriz. Doğrudan değeri söylemek durumunda değiliz de işlemi de söyleseniz olur.
+
+85
+00:18:01,364 --> 00:18:05,364
+Evet, sadece işlem üzerinden söylesek de olur, onu söyleyebilir miyiz?
+
+86
+00:18:05,364 --> 00:18:09,364
+Yani şundan şunu çarpacağız, şuna böleceğiz demeniz yeterli manasında.
+
+87
+00:18:21,107 --> 00:18:23,107
+Evet, var mı cevabınız arkadaşlar?
+
+88
+00:18:28,147 --> 00:18:52,788
+5.6 volt buldum hocam. Ama 5'ten küçük olması gerek. Evet, bir yanlışlık oldu. Şöyle yapalım. Burada 5 volt var. Bu kolda akacak akımı nasıl buluyoruz? 5 volt bölü 1, 2, 3, 4, 5, 6, 7 R değil mi? 5 bölü 7 R burada akacak olan akım değil mi?
+
+89
+00:18:53,652 --> 00:19:12,432
+Peki, buradaki gerilim bulmak istiyorsak, bu kaç tane dirençten geçiyor? 1, 2, 3, 4, 5, 6 tane R'den geçiyor. Dolayısıyla buradaki gerilimimiz 30 bölü 7 yapıyor. 5 çarpı 6R bölü 7R. Yani bunu da hesaplayacak olursak, tamam değer hesaplayalım madem.
+
+90
+00:19:20,723 --> 00:19:37,223
+30 bölü 7'den, yine yanlış oldu, 30 bölü 7. 4.29 volt gibi bir şey diyebiliriz yani burada. Şunu geri alacak olursak, burada da 4.29 volt varmış.
+
+91
+00:19:42,132 --> 00:19:51,731
+29 volt varmış. Peki şuradaki gerilim nedir? Buradaki gerilimde 5 volt bölü 7R çarpı 5R olacak. O zaman onu da hesaplayalım.
+
+92
+00:19:52,932 --> 00:20:07,532
+5 volt bölü 7R çarpı 6, 6 değildi herhalde, 5 miydi? 5 taneden geçecek. 3.57 volt mesela burası. 3.57 volt.
+
+93
+00:20:08,276 --> 00:20:26,036
+İşte burası 5 bölü 7R çarpı 4R, şurası, burası çarpı 3R çarpı 2R çarpı R şeklinde her bir düğümde gerilim değeri elde edeceğiz. Şimdi buna göre bizim elimizdeki giriş işaretimiz örneğin 4 voltluk bir değer olsun.
+
+94
+00:20:26,259 --> 00:20:39,259
+Dolayısıyla birinci karşılaştırıcıya baktığımız zaman, birinci karşılaştırıcının çıktısı 0 olacak. Çünkü bir ucunda 4 volt var, artı ucunda 4 volt var, eksi ucunda da 5 volt var. Dolayısıyla çıktısı 0 olacak.
+
+95
+00:20:39,259 --> 00:20:49,132
+İkinci karşılaştırıcıya bakalım. İkinci karşılaştırıcının artı ucunda yine 4 volt var, eksi ucunda 4.29 var. Dolayısıyla bunda da 0 değeri elde ediyoruz.
+
+96
+00:20:49,460 --> 00:20:55,940
+Üçüncü karşılaştırıcıya baktığımız zaman 3.57 volt ve 4 volt. Artık burada bir değerini elde ediyoruz.
+
+97
+00:20:55,940 --> 00:21:05,220
+Ve bundan sonraki bütün karşılaştırıcı çıkışları bir değerini alacak. Sadece sonuncusu sadece. Sonuncusu zaten ground'a bağladığımız için o sıfır.
+
+98
+00:21:05,220 --> 00:21:16,099
+Peki burada priority encoder nasıl çalışıyordu? Priority encoder en yüksek anlamlı ucundan itibaren, en yüksek anlamlı ucu şurada artıyla burada eksiyle işaretliyeyim.
+
+99
+00:21:16,160 --> 00:21:25,160
+En yüksek anlamlı ucundan itibaren ilk defa biri hangi numaralı giriş ucunda görüyorsa buna karşılık çıkış işaretini binary olarak üretecekti.
+
+100
+00:21:25,720 --> 00:21:31,860
+Dolayısıyla burada bizim toplamda 1, 2, 3, 4, 5, 6, 7, 8 tane girişimiz var.
+
+101
+00:21:31,860 --> 00:21:39,080
+Dolayısıyla elde edeceğimiz değerler 0, 0, 0 ile 0, 0, 1, 1, 1 arasında olabilir.
+
+102
+00:21:39,635 --> 00:21:57,395
+Bizim ilk defa gördüğümüz en yüksek anlamlı uçta görmüş olduğumuz bir değeri 765, 5 numaralı girişimiz de var. Burası 5 numaralı giriş, burası 0, 1, 2, 3, 4 diye gidiyor. 5 numaralı giriş de var. Dolayısıyla bizim çıkışta elde edeceğimiz değer,
+
+103
+00:21:57,791 --> 00:22:15,611
+1, 0, 1 lojik değeri olacak. Aslında biz ne yapmış olduk burada? 4 volta karşılık gelen 0 ile 5 volt arasındaki karşılaştırmayı 3 bitlik bir binary sayı olarak, yani 3 bitlik bir ADC sonucu olarak 1, 0, 1 olarak elde etmiş olduk.
+
+104
+00:22:15,611 --> 00:22:21,171
+Eğer ki bizim uygulayacağımız gerilim 0 volt olmuş olsaydı arkadaşlar, şimdi bunları birazcık silelim.
+
+105
+00:22:24,564 --> 00:22:43,064
+3.57 kalsın burada ve o da önemli değil, onu da silelim. Eğer ki uyguladığımız gelin 0 volt olmuş olsaydı, 0'a 5 volt, 0 çıktısı olacak. 0'a 4.29 volt, 0 çıktısı olacak. 0'a 3.57 volt, 0. Bunların hepsi 0 gelecekti.
+
+106
+00:22:43,064 --> 00:22:46,564
+Hepsi 0 gelecekti.
+
+107
+00:22:47,028 --> 00:23:02,028
+Dolayısıyla şuradan da 0 gelecek. Eğer böyle bir durum söz konusuysa, biz de çıktı olarak elde edeceğimiz değer 0, 0, 0 binary sayısı olacak. Dolayısıyla 0 volta karşılık 0. Ondan sonra...
+
+108
+00:23:04,756 --> 00:23:28,756
+4 değeri için 5, 4 volta karşılık 5 dijital değerini elde ettik gibi bu karşılaştırıcı ve priority enkoderları kullanarak istediğimiz sonucu elde edebiliyoruz. Bu arada belki şunu şöyle güncellemekte fayda olabilir. Ben onu da değiştireyim şurada. Şu eşit işaretini, eşit işaretini şeye alıyorum, üst tarafa alıyorum.
+
+109
+00:23:29,076 --> 00:23:52,476
+5 volt için vereceğimiz örnek anlamlı olsun diye. Tamam mı? Şöyle eşiti buraya aldım. Şöyle ki, eğer ben 5 volt girmiş olsaydım buraya, 5 volt girmiş olsaydım, ilk karşılaştırıcı sonucu bir eşitlik olduğu için bir versin diye bunu bu şekilde tanımlayalım. Bu şekilde tanımladığımız zaman en yüksek anlamlıdan bir çıkışımız var.
+
+110
+00:23:52,948 --> 00:24:18,208
+Dolayısıyla buna karşılık da bu 7 numaralı ucumuzdu. Dolayısıyla çıktığımızda 1, 1, 1 binary sayısı olacak. Dolayısıyla 0 ve 5 volt arasında 3 bitlik çözünürlükte bir ADC işlemini priority encoderlar ve karşılaştırıcılar kullanarak bu mantık çerçevesinde elde etmemiz mümkün oluyor arkadaşlar. Bu ADC'ye ilişkin birinci tasarım kalıbı olarak düşünebiliriz. Bununla ilgili sormak isteyeceğiniz bir şey olur mu?
+
+111
+00:24:18,900 --> 00:24:28,900
+Burada hani referans değerimiz maksimum ölçebileceğimiz değere tekabül ediyor ve in dediğimiz şey dijitale çevireceğimiz gerilim değerini ifade ediyor.
+
+112
+00:24:28,900 --> 00:24:46,900
+Burada bir gerilim bölücü direnç merdiveni veya dizisi kullanmış durumdayız. Her bir düğümün çıktısıyla ölçmek istediğimiz referansı karşılaştırıcıdan geçirerek priority encoder'da en yüksek anlamlıdan itibaren ilk biri nerede görüyorsak ona karşılık binary çıktığı o değer.
+
+113
+00:24:46,900 --> 00:24:51,900
+O değere ilişkin, o değere karşılık gelen binary çıktığı da output tarafında üretiyoruz.
+
+114
+00:24:51,900 --> 00:24:56,060
+Ve bu sayede de dijital değerimizi elde etmiş oluyoruz.
+
+115
+00:24:56,060 --> 00:24:59,900
+Mantık bu çerçevede. Bununla ilgili sormak istediğiniz bir şey varsa onu alabiliriz.
+
+116
+00:25:00,900 --> 00:25:03,900
+Yok ise bir sonraki devre yapısına doğru ilerleyeceğim.
+
+117
+00:25:10,771 --> 00:25:29,771
+Tamam, devam edelim. Bir sonraki yapımız arkadaşlar, RAMM Converter. Şimdi bunu dikkatlice takip edin. Çünkü burada sistemin nasıl çalıştığına ilişkin karmaşık bir yapı olduğu için takip ederek ilerlerseniz daha anlamlı olacaktır. Mantık şu şekilde.
+
+118
+00:25:30,048 --> 00:25:42,368
+Burada bir counter'ımız var. Bu counter değerimiz initial değer olarak sıfırdan itibaren başlıyor. Bakın şurada ilk değerler sol taraftan besleniyor. Girdileri burası. Sıfırdan itibaren başlıyor.
+
+119
+00:25:42,836 --> 00:25:52,135
+Ve clock işaretinin gelmesiyle birlikte bu değerler arttırılarak, clock frekansıyla birlikte arttırılarak çıkışlarda üretiliyor.
+
+120
+00:25:52,135 --> 00:26:08,576
+Yani bu sayac, counter dediğimiz sayac, 0'dan itibaren başlayıp, kaç bitlik? 1, 2, 3, 4, 5, 6, 7, 8. 8 bitlik bir counter, 0, 0, F'den, F, 0, 0, H'tan, F, F, H'a kadar sırasıyla saymaya başlıyor.
+
+121
+00:26:08,960 --> 00:26:13,360
+Bu sırada bu counter'ın çıktısını bir dijital analog converter'a besliyoruz.
+
+122
+00:26:14,160 --> 00:26:28,160
+Dijital analog converter'a beslediğimiz haliyle vermiş olduğumuz 0, 0, haşa karşılık 0 volt yavaş yavaş artarak, hani biz bunu da hesaplamıştık, 8 bitlik çözünürlükte, 5 bölü 255'lik bir çözünürlüktü.
+
+123
+00:26:28,160 --> 00:26:35,760
+5 bölü 255'lik adımlarla buradaki analog değerimiz, şu çıktığı analog değerimiz artmaya başlıyor. Bu gittikçe artıyor.
+
+124
+00:26:36,339 --> 00:26:58,719
+Nereye kadar? İşte 0 volttan 5 volta kadar gidecek. Ama arada bir yerde, bakın burada yine bir karşılaştırıcı var. Bizim ölçmek istediğimiz referans değerimiz, eğer ki burada üretilen dijital analog converter çıkış analog değerinden büyük olduğuna, yani ölçmek istediğimiz değer büyük kaldığı anda,
+
+125
+00:26:59,220 --> 00:27:10,220
+Bu büyük kaldığı anda, burada bir shift register'ımız var. Shift register'a neyi yüklüyoruz? O andaki counter değerini yüklüyoruz. O andaki counter değerini, o anda ne oldu?
+
+126
+00:27:10,220 --> 00:27:17,220
+Dijital analog converter'ın analog çıktısı, bizim ölçmek istediğimiz referansın üzerine geçti.
+
+127
+00:27:17,811 --> 00:27:44,811
+Dijital Analog Converter'ın analog değeri bizim ölçmek istediğimiz referansın üzerine geçti. Dolayısıyla burada sıfır değeri üretildiği anda counter resetleniyor. Çünkü load ucuna sıfır geldiği zaman counter tekrar sıfırlanıyor. Ama sıfırlanma öncesinde yine bu uca da sıfır gelerek düşen kenarda tetiklemeli bir şekilde counter çıktı değeri de burada register'ımıza kopyalanmış oluyor.
+
+128
+00:27:45,107 --> 00:28:10,987
+Dolayısıyla bizim bu register'ımızın çıktısı olan değer, 8 bitlik değer, bizim yine ADC binary çıktığımızı üretmiş oluyor. Dolayısıyla burada bir counter vasıtasıyla sayısal olarak bir takım değerler üretip, sıralı olarak değerler üretip, bunu digital analog converter'den geçirip elde ettiğimiz analog değerin bizim referans ölçmek istediğimiz değerden büyük olma anını yakalamaya çalışıyoruz. O anı yakaladığımızda
+
+129
+00:28:11,508 --> 00:28:19,347
+Dijital Unlock Converter'a beslediğimiz dijital değeri bir Shift Register'a saklayarak ADC sonucumuzu elde ediyoruz.
+
+130
+00:28:19,347 --> 00:28:23,627
+Buradaki RAMM Converter'ın çalışma mantığı da bu çerçevede oluyor arkadaşlar.
+
+131
+00:28:26,627 --> 00:28:28,427
+Bununla ilgili bir sorunuz var mı?
+
+132
+00:28:28,427 --> 00:28:30,827
+Çerçeve bu şekilde çalışıyor.
+
+133
+00:28:33,827 --> 00:28:35,028
+Net mi burası?
+
+134
+00:28:37,667 --> 00:28:38,667
+Anlaşıldı hocam.
+
+135
+00:28:39,124 --> 00:28:59,124
+Şimdi bir de ADC entegremize bakalım. Şimdi ADC entegremizde bir takım uçlar yine kapalı black box çerçevesinde değerlendireceğimiz bir takım uçlar olacak arkadaşlar. Onları yine hazır yapılı bir şekilde size veriyor olacağız.
+
+136
+00:28:59,536 --> 00:29:06,296
+Ama bunun haricinde dış dünyaya çıkan uçlara bakacak olursak ve şu aşamada daha kesme mantığını bilmiyoruz.
+
+137
+00:29:06,296 --> 00:29:14,036
+Dolayısıyla yine bir bize dönüşümün bitip bitmediğine ilişkin olarak birtakım bilgiler yine bir fiziki uç üzerinden sağlanacak.
+
+138
+00:29:14,036 --> 00:29:21,036
+O fiziki ucu nasıl kullandığımızı burada örnekleyeceğiz. O önemli bir husus. Onu dikkat etmenizi tavsiye ederim.
+
+139
+00:29:21,036 --> 00:29:24,536
+Şimdi yavaş yavaş tane tane üzerinden de geçmeye çalışacağız.
+
+140
+00:29:24,784 --> 00:29:42,784
+Bu arada mesela şu örnek için düşünün. Bu örnek için bir ADC sonucu elde etmek birazcık vakit istiyor değil mi? Yani sıfırdan itibaren başlıyorum. Analog değerim, benim ölçmek istediğim değeri geçene kadar bir vakit geçmesi lazım. Yani bir takım vakit, biraz vakit alıyor bu ADC işlemi.
+
+141
+00:29:42,784 --> 00:29:48,784
+Dolayısıyla ben ADC entegresine dönüşüme başla diye bir komut gönderdiğimde bana hemen sonuç dönemeyecek.
+
+142
+00:29:49,119 --> 00:30:04,119
+Belirli bir zaman sonra sonuç dünecek. Hatta buradaki analog değerim ne kadar yüksekse belki de sonuç elde etme zamanım o kadar uzayacak. Dolayısıyla bana bir uç üzerinden, fiziki bir uç üzerinden dönüşümün bittiğini bildiriyor olacak. Bu çok önemli bir nokta.
+
+143
+00:30:04,119 --> 00:30:16,119
+Şimdi bu resme baktığımız zaman yine şöyle alalım. Black box olarak alalım. Bu besleme içeride kalsın. Data uçları arkadaşlar.
+
+144
+00:30:17,619 --> 00:30:35,619
+İkincisi, şuradaki chip select ucu, ikinci bir chip select ucu, ona dikkat edin. Buradaki analog giriş ucumuz, clockları almıyorum. Read, write ve chip select uçları. Şunu da IO1 demiş ama bunu da chip select olarak değiştiriyorum.
+
+145
+00:30:44,531 --> 00:31:07,531
+chip select 2 diyorum. Tamam. Şimdi dışarı çıkan uçlarımız bunlar. Bir analog inputumuz var. Zaten ADC olduğu için analog değeri dijitale çevirecek. Çevirdiği dijital değeri nerede göreceğiz biz? Şuradaki data uçlarında göreceğiz. Yani mikroişlemci bu data uçlarından okuyor olacak. Bununla birlikte bu entegrenin bir tane kendi chip select ucu var.
+
+146
+00:31:07,887 --> 00:31:25,288
+Bir tane read write ucu var, bir de ikinci bir chip select ucu var. Aslında bunun detayına baktığımızda bu uç, burada chip select 2 ile aktardığımız değer, yani şuradan şuraya aktardığımız değer, bakın neymiş? Int R ucuymuş aslında.
+
+147
+00:31:25,428 --> 00:31:48,428
+Şimdi bunu nasıl değerlendireceğiz? Mantık şu şekilde çalışacak arkadaşlar. Biz bu entegreye bir boş yazma işlemi yaptığımız zaman, boş yazma işlemi demek ne demek? Herhangi bir AL değeriyle bu cihazın adresine write işlemi, out işlemi yaptığımızda analog giriş ucundaki değer ne ise o değeri dönüştürmeye başlıyor.
+
+148
+00:31:48,948 --> 00:32:13,848
+Dönüştürme işlemi bittiğinde ise int-r ucu üzerinden bize bir sıfır değeri geliyor. Eğer int-r ucundan sıfır değeri gelmişse mevcutta başlatılan dönüşüm işlemi başarılı bir şekilde tamamlanmıştır anlamına geliyor. Dolayısıyla biz de int-r ucunu değerlendirmeliyiz. Peki bu int-r ucunu değerlendirmeyi nasıl yapmak durumunda kaldık? Şimdi bu cihazın hiçbir adres ucu yok kendi başına.
+
+149
+00:32:14,291 --> 00:32:20,771
+Dolayısıyla bunun gidip bir rejisterini okuyup oradan polink mantığına bakmak da mümkün değil. O zaman ne yapmamız gerekiyor?
+
+150
+00:32:20,771 --> 00:32:41,811
+Sanki int-r ucu tek başına 1 bitlik ayrı bir I.O cihazıymış gibi bunu değerlendiriyoruz. Bu 1 bitlik I.O cihazını bir tristate buffer üzerinden kontrol ettiğimiz vakit o da kontrol ucu da bizi bu 1 bitlik I.O cihazının chip select ucu olarak görev gösteriyor. Dolayısıyla biz şöyle yapacağız.
+
+151
+00:32:42,064 --> 00:32:57,424
+ADC entegresini bir adrese yerleştireceğiz. Örneğin 100 haşa yerleştiriyor olalım. Daha sonra bir de bunun int r ucu için ayrı bir adres tanımlayacağız. Bunu da diyelim ki mesela 200 haşa adresine yerleştirdik diyelim.
+
+152
+00:32:58,387 --> 00:33:07,667
+Dolayısıyla buna ilişkin adres çözümlemeleri yaptığımız zaman 100H adresinde seçim işlemi chip select bir ucunu seçiyor olacak.
+
+153
+00:33:08,248 --> 00:33:13,427
+200H adresinde ise chip select 2 üzerinden şu tristake buffer'ı seçiyor olacak.
+
+154
+00:33:14,327 --> 00:33:17,468
+Bizim göreceğimiz veya karşılaşacağımız senaryo bu durumda.
+
+155
+00:33:18,407 --> 00:33:22,887
+100H adresine boş bir out işlemi yaptığımız anda dönüşüm başlayacak.
+
+156
+00:33:23,220 --> 00:33:29,400
+Daha sonrasında biz dönüşümü başlatır başlatmaz 200H adresinden okumaya başlayacağız.
+
+157
+00:33:29,400 --> 00:33:33,980
+200H adresinde tek bir bit var. O da 7 numaralı data ucuna bağlı.
+
+158
+00:33:33,980 --> 00:33:46,079
+Yani biz 200H adresinden okuma yaptığımız zaman okuduğumuz 8 bitten bu bağlantı çerçevesinde, bu okuduğumuz 8 bitlik çerçeve içerisinde sadece 1 bitti anlamlı veri var.
+
+159
+00:33:46,079 --> 00:33:50,940
+Bu da okuduğumuz 8 bitlik verinin en yüksek anlamlı bitinde. Diğerlerini maskeleyip
+
+160
+00:33:51,220 --> 00:34:03,220
+En yüksek anlamlı biti değerlendirip, eğer bu bit sıfıra düşmüşse, artık bu cihaz dönüşümü bitirmiştir diye anlıyoruz. Daha sonra gidip 100H adresinden okuma yapıyoruz.
+
+161
+00:34:03,220 --> 00:34:18,220
+Dolayısıyla süreç bu şekilde işliyor. Daha interrupt meselesini bilmediğimiz için bu aşamada bu şekilde çalışıyor. Neydi sistem hatırlayalım. ADC'nin adresine yani 100H'a herhangi bir AL ile OUT yaptım.
+
+162
+00:34:18,612 --> 00:34:36,872
+Daha sonra gidip bu interrupt request ucu için oluşturmuş olduğumuz sanal bir cihazın, bir bitlik sanal cihazın, tristate buffer üzerinden kontrol edilen cihazın adresinden, 200H'dı bu, ona ilişkin adres çözümleme devresinde chip select de üretmiş olduğumuzu varsayalım.
+
+163
+00:34:39,423 --> 00:34:44,824
+Bunu AD7'ye bağlamışız. Farklı bir uca da bağlayabilirdik. Bu örnek için AD7 olduğunu varsayalım.
+
+164
+00:34:45,543 --> 00:35:01,764
+AD7 diye bas gelip kontrol ediyoruz. Bu uç sıfıra düşmüşse dönüşüm bitmiştir. Gidip 100H adresinden okuma yapıyorum. Bu da ADC işlem sonucunu bize vermiş oluyor arkadaşlar. Dolayısıyla süreç bu entegre için bu şekilde işleyecek.
+
+165
+00:35:02,132 --> 00:35:15,572
+Eğer kesmeli mantığını devreye katacak olursak da bu durumda şu sanal cihaza gerek kalmayacak intre ucunu doğrudan mikroişlemciye kesme istek ucu olarak kullanabiliyor olacağız.
+
+166
+00:35:15,572 --> 00:35:21,652
+Mantık bu çerçevede. Anlaşılmayan bir nokta var mı? Sormak istediğiniz bir konu var mı buna ilişkin olarak?
+
+167
+00:35:35,507 --> 00:35:37,507
+Var mı arkadaşlar bununla ilişkin?
+
+168
+00:35:37,507 --> 00:35:39,507
+Bakın, mantık önemli.
+
+169
+00:35:39,507 --> 00:35:47,507
+Gidip de bu cihazın bir şeyini okuyamadığımız için, yazmacını okuyamadığımız için, hiçbir adres ucu olmadığı için bir bahtlık yer kaplıyor zaten.
+
+170
+00:35:47,507 --> 00:35:50,507
+O da şu porta erişir gibi bir mantık düşünün.
+
+171
+00:35:50,867 --> 00:36:10,167
+Dolayısıyla önce 100H'a bir boş yazma yapıyoruz. Daha sonra bu cihazı intre ucuna ilişkin oluşturmuş olduğumuz sanal IO cihazının adresini ne set ettiysek, ona ilişkin chip select ucuyla bağlı olarak tabii bu, o adresten sürekli polink yapıyoruz. Hangi data ucuna bağlıysa o adresi maskeleyip sıfır olup olmadığını kontrol ediyoruz.
+
+172
+00:36:10,351 --> 00:36:21,751
+Bu uç sıfıra düştüğünde dönüşüm bitmiştir. Gidip ADC adresinden yani 100H bu örnekte okuma işlemini gerçekleştirmiş oluyoruz. Mantık ve süreç bu çerçevede işliyor olacak.
+
+173
+00:36:21,751 --> 00:36:30,751
+Soru yoksa devam edelim. Şimdi buna ilişkin dalga şeklinde bakacak olursak dalga şeklini iki aşamada inceliyelim. Bunlardan birisi...
+
+174
+00:36:31,280 --> 00:36:43,079
+ADC'nin adresine bir yazma yapmayla başlıyordu. Boş bir yazmayla başlıyordu. Dolayısıyla, ADC'nin adresine bir yazma yaptığımız zaman, adres çözümleme devresi cihazı seçecek.
+
+175
+00:36:43,079 --> 00:36:56,280
+Bir tane write işareti gönderecek mikroişlemci doğal olarak. Bunu aldıktan sonra, write işlemini aldıktan sonra arkadaşlar, belirli bir süre boyunca cihaz bu dönüşümle ilgili olarak uğraşacak.
+
+176
+00:36:59,219 --> 00:37:12,819
+ve dönüşüm bittiğinde ise valid datayı data uçlarında oluşturduktan hemen sonra ise birazcık vakit alıyor o da bakın şu kadarcık bir vakit alıyormuş. Daha sonra da int r ucunda logic 0 değeri oluşturuyor.
+
+177
+00:37:13,331 --> 00:37:31,431
+Dolayısıyla biz bir boş yazma yaptık. Boş yazmadan sonra bu komutu aldıktan belirli bir süre sonra işlemeye başlıyor analog değeri. Analog değere karşılık dijital değeri ürettikten hemen sonra da interrupt request ucunu sıfıra çekiyor. Bu birinci kontrol ucu.
+
+178
+00:37:35,059 --> 00:37:51,699
+Eğer ki bu cihazın ADC'nin adresinden bir okuma yaparsak tekrar intre 1'e çıkıp tekrar bu cycle başa döndürülmüş oluyor. Orada ne yapacak? Bu sefer yine gidip cihazın adresinden bir okuma yapıyoruz. Ve bu okuma sırasındaki valid değeri de alıp
+
+179
+00:37:51,856 --> 00:38:15,655
+Valid değeri alıp mikroişlemciye aktarmış oluyoruz. Dolayısıyla sürecin dalga şeklinde bu şekilde ifade edebiliriz. Burası boş yazmaya ilişkin kısım. Burası da intre 0'a düştükten sonra gidip cihazın adresinden ADC 0804'ün adresinden yapılan okumaya ilişkin kısmı ifade etmiş oluyor arkadaşlar. Dalga şeklinde bu şekilde değerlendirmemiz gerekiyor.
+
+180
+00:38:19,856 --> 00:38:28,136
+Bu cihazı 100H'a, buradan intre ucu için oluşturduğumuz sanal cihazı ise 200H adresine yerleştirmiş olalım.
+
+181
+00:38:28,136 --> 00:38:33,936
+Intre ucunu da 3-state buffer üzerinden, data uçlarından D7'ye aktarıyor olalım.
+
+182
+00:38:33,936 --> 00:38:39,416
+Bakın burada dikkat edecek olursanız, çift bir adres, çift bir adres.
+
+183
+00:38:39,416 --> 00:38:47,655
+Dolayısıyla şuradan çıkış ucunu D0, D7 arasındaki herhangi bir uca bağlayabilirim. Buna dikkat edin.
+
+184
+00:38:48,436 --> 00:39:04,036
+Şimdi gelelim cihazın örnek koduna. Öncelikli olarak adres değerimizi 200H'a aldık. 200H'ı DX'e aldık. Daha sonra AL'ye de rastgele bir değer oluşturduk. Herhangi bir şey olabilir. Daha sonra cihazın adresine bir yazma yapıyoruz.
+
+185
+00:39:10,324 --> 00:39:24,724
+İntr ucu için oluşturmuş olduğumuz sanal cihaz 400H adresinde, boş bir yazma yaptık. Daha sonra 400H adresini DX'e aldık. Yani bu sanal cihazı adresiyle bu.
+
+186
+00:39:24,724 --> 00:39:36,124
+Gidip o adresten okuyoruz. Yapmış olduğumuz okumanın en yüksek anlamlı bitinde intr ucu var. Intr ucunu kontrol ediyoruz, test ediyoruz. Eğer bu daha sıfıra düşmemişse
+
+187
+00:39:36,371 --> 00:39:44,371
+Tekrar 400H adresinden okuyup en yüksek anlamlı biti test etmeye devam ediyoruz. Ta ki en yüksek anlamlı bit sıfıra düşene kadar.
+
+188
+00:39:44,371 --> 00:39:55,371
+Buraya geldiğimiz zaman artık en yüksek anlamlı bit sıfıra düşmüştür. Intra'ya sıfıra düşmüştür. Bu durumda da gidip ADC 0804 adresinden bir okuma yapıyoruz.
+
+189
+00:39:55,371 --> 00:39:59,371
+Okuma yaptıktan sonra birazcık bekleyip o...
+
+190
+00:40:00,724 --> 00:40:07,964
+Tekrar kendini initialize etmesi için birazcık zaman tanıyıp, daha sonra tekrardan okuma işlemine dönmüş oluyoruz.
+
+191
+00:40:07,964 --> 00:40:14,004
+Buradaki örnek kodumuzu da bu şekilde ifade etmemiz mümkün arkadaşlar. Bu örnek kodla ilgili sormak isteyeceğiniz bir şey olur mu?
+
+192
+00:40:23,987 --> 00:40:32,107
+Soracağınız bir şey aklınıza gelirse arada kesip sorabilirsiniz. Bu arada ben şu şeyi açayım, ADC örneklerimizi açayım.
+
+193
+00:40:39,603 --> 00:40:47,003
+Önce Dijital Analog Converter örneğimize bakalım. Bu az önceki açıkladığımız örneğin kendisi.
+
+194
+00:40:47,003 --> 00:40:49,403
+Açılabilirse eğer.
+
+195
+00:40:55,603 --> 00:41:13,003
+Şimdi entegremiz bu şekilde. Yazmış olduğumuz koda bakacak olursak, AL'ye 0 değerini alıyoruz. Bu AL'deki değeri sürekli olarak DAC entegresine gönderiyoruz, arttırıyoruz ve dolayısıyla görmeyi beklediğimiz şey bir üçgen.
+
+196
+00:41:13,268 --> 00:41:32,087
+Testler edişi dalga yapısı. Yani az önceki slide'larda gördüğümüz devrenin aynısı. Cihazın adresini de ne olarak set etmişiz? 1000H olarak set etmişiz. Şurada da 1000H değerini seçtiren bir 4x8 dekoder yapısı mevcut. Tamam. Cihazımızı çalıştırdığımızda örneğimizi.
+
+197
+00:41:37,204 --> 00:41:52,704
+Bakın, A kanalı bağlı sadece. Orada testere dişi şeklinde bu dalga yapısını görebiliyoruz. Siz de bunu görmüş oluyorsunuz bu sayede. Aynı zamanda burada şöyle yapacak olursak.
+
+198
+00:41:54,356 --> 00:42:05,356
+bir analog multimetre bağlayarak, voltmetre bağlayarak aynı zamanda buradaki değerin de bir analog değer, bir sürekli genlik değeri olduğunu da bu şekilde ifade etmiş oluyoruz.
+
+199
+00:42:05,356 --> 00:42:14,356
+Şimdi bu noktadaki sorumuz şu arkadaşlar, kodda yapacağımız bir değişiklikle kare dalgayı üçgen dalgaya çevirmenizi istiyorum.
+
+200
+00:42:22,931 --> 00:42:37,131
+Üçgen dalgada ise çıkış ve inişler yaklaşık aynı eğimde şu şekilde üçgenlerden oluşan bir dalga istiyoruz. Tamam mı?
+
+201
+00:42:37,131 --> 00:42:47,231
+Bu şekilde bir dalgayı elde etmek için kodda ne gibi bir değişiklik yapmak gerekir? Evet, alalım sizden bir cevap bekliyorum. Nasıl yapabiliriz?
+
+202
+00:42:49,523 --> 00:42:59,523
+Bir de ondan önce şunu sorayım. Bakın, ondan önce şunu sorayım. Burada elde etmiş olduğumuz testere dişi işareti. Bunu one shot yapalım.
+
+203
+00:43:01,523 --> 00:43:02,523
+Bir kerelik kayıt alsın.
+
+204
+00:43:11,443 --> 00:43:13,443
+Almamı da esaretli.
+
+205
+00:43:15,443 --> 00:43:18,443
+Şöyle bir şeyi durduralım.
+
+206
+00:43:18,443 --> 00:43:32,443
+Şimdi takribi olarak buradaki işaretin periyodu arkadaşlar, şuradan şuraya 800 milisaniye tamam mı? 800 milisaniyelik bir periyoda sahip bir işaretimiz var.
+
+207
+00:43:32,443 --> 00:43:38,443
+Biz bu işaretin periyodunu arttırmak ve azaltmak istersek ne yapacağız? İlk sorumuz bu olsun.
+
+208
+00:43:38,996 --> 00:43:50,396
+Bu testere dişi işareti 800 milisaniyelik bir periyodu var. Biz bu periyodu arttırmak, azaltmak istersek ne yapmalıyız? Birinci sorumuz bu olsun. Ne dersiniz?
+
+209
+00:43:58,003 --> 00:44:00,603
+Bu cevap neye ilişkindi [öğrenci]?
+
+210
+00:44:04,788 --> 00:44:31,788
+Periyodu azaltmaya ilişkin olarak, ilk sorumuz bu olsun. Bu cevabı biraz sonra değerlendirelim. İlk sorumuz, az önce ölçtüğümüz testere dişi işareti ilişkin olarak elde ettiğimiz periyod değerini, 800 milisaniyeyi, 3 şirken yapmak için, tamam. Onu biraz sonra değerlendirelim. Şimdi ilk sorumuz şey olsun, periyodumuzu arttırmak veya azaltmak için ne yapabiliriz burada?
+
+211
+00:44:32,208 --> 00:44:42,448
+Periyodu belirleyen şey ne ayrıyeten? Onu da sormuş olalım. İşaretin mevcut durumdaki periyodunu belirleyen şey nedir şu aşamada?
+
+212
+00:44:48,563 --> 00:44:53,563
+Periyodu belirleyen şey, AL'nin sınırı, FF sınırını aşması.
+
+213
+00:44:53,563 --> 00:44:59,563
+Evet. O zaman AX kullanırsak kurtarır mı?
+
+214
+00:44:59,563 --> 00:45:06,563
+AX'i nasıl kullanacağımızı düşünüyorum da tam şu an cevapleri alamadım.
+
+215
+00:45:06,563 --> 00:45:10,155
+Aslında tam olarak o değil. Şöyle ki, bakın.
+
+216
+00:45:10,164 --> 00:45:26,164
+Burada AL değerini OUT yaptıktan sonra bir miktar bekliyoruz. Aslında biz burada barışın verdiği cevap doğru aslında. Burada biz şu değerimizi tekrar elde edip birazcık zoomlayalım arkadaşlar bakın. Şöyle pausa basayım.
+
+217
+00:45:26,164 --> 00:45:36,164
+Bakın burada aslında her bir değeri oluşturduktan sonra o değer belirli bir süre boyunca kalıyor. Yani aslında bizim gördüğümüz üçgen veya testil edişi dalga
+
+218
+00:45:36,500 --> 00:45:39,500
+Birazcık daha ne diyeyim...
+
+219
+00:45:40,179 --> 00:45:44,459
+Adım adım değerlerden oluşuyor. Yani basamak basamak değerlerden oluşuyor.
+
+220
+00:45:44,459 --> 00:45:47,779
+Belirli bir analog değeri gönderiyoruz ve belirli bir süre bekliyoruz.
+
+221
+00:45:47,779 --> 00:45:58,059
+Dolayısıyla buradaki basamak değer, basamaklarda bekleme miktarımız ne kadar fazla olursa, bunu ne kadar arttırırsak bu işaretin periyodu artacaktır.
+
+222
+00:45:58,059 --> 00:46:03,179
+Ne kadar buradaki basamakları dar tutarsak işaretin periyodu da o kadar azalacaktır.
+
+223
+00:46:03,179 --> 00:46:05,500
+Yani aslında biz kod tarafına döndüğümüzde
+
+224
+00:46:05,760 --> 00:46:20,440
+değeri DAC entegrisine gönderdikten sonra şurada çalıştırdığımız, çağırdığımız delay fonksiyonu ne kadar uzunsa bu dönüp dolaşıp neticede sadece bir basamağın genişliğini belirtiliyor bu delay fonksiyonu ama
+
+225
+00:46:20,724 --> 00:46:31,124
+Total olarak 255 kere bu delay peş peşe çağrılacağı için bir periyotta aslında işaretin periyodunu genişletmek ve uzatmakta doğrudan etkisi var.
+
+226
+00:46:31,124 --> 00:46:38,244
+O zaman biz burada örneğin delay fonksiyonunda ne var? CX'e bir değer atıyoruz ve bunu boş döngüde döndürüyoruz.
+
+227
+00:46:38,244 --> 00:46:46,724
+Eğer bizim buraya yazacağımız değer biraz daha büyük olmuş olsaydı, biraz daha büyük olmuş olsaydı şimdi bakalım periyodumuz ne oluyor?
+
+228
+00:46:50,996 --> 00:46:52,811
+Birazcık küçültmemiz lazım.
+
+229
+00:46:56,788 --> 00:46:58,788
+Bakın daha bir periyoda gelemedik bile.
+
+230
+00:47:08,500 --> 00:47:13,179
+Öyle bir değer ulaştı ki, bütün ekranı kaplıyor neredeyse.
+
+231
+00:47:14,340 --> 00:47:17,619
+Tam ölçebileceğimiz bir değer olması için o kadar da büyük vermeyelim.
+
+232
+00:47:18,340 --> 00:47:22,739
+Şuradaki delay miktarını. 5 gibi falan bir şey yapalım. 5ff olsun.
+
+233
+00:47:24,679 --> 00:47:26,860
+En azından ölçebildiğimiz, görebildiğimiz bir değer olsun.
+
+234
+00:47:32,403 --> 00:47:34,403
+Tekrar çizdirmesini bekliyorum.
+
+235
+00:47:36,403 --> 00:47:39,403
+Bakın, bir buradan başladı periyodumuz.
+
+236
+00:47:39,403 --> 00:47:42,403
+Nereye kadar gidiyor? Buraya kadar gitti.
+
+237
+00:47:42,403 --> 00:47:49,403
+Artık bakın, 4.50 mi? 4.70 saniyelik bir periyodumuz var şu aşamada.
+
+238
+00:47:49,403 --> 00:47:55,403
+Bu testere dişi dalganın periyodu 4.70 saniyeye ulaştı.
+
+239
+00:47:55,711 --> 00:48:01,032
+Şimdi bu periyodu düşürmek istesek ne yapacağız? Düşürmek istersek de buradaki delay miktarımızı azaltacağız.
+
+240
+00:48:01,032 --> 00:48:06,032
+Bakın bu sefer sadece 16 adımlık bir sayma verelim her bir basamak değeri için.
+
+241
+00:48:06,032 --> 00:48:09,472
+Onu inceleyelim. Birazcık bunu küçültmemiz lazım bu durumda.
+
+242
+00:48:09,472 --> 00:48:13,711
+Bakın burada elde ettiğimiz durumdaki periyodumuz ne oluyor?
+
+243
+00:48:13,711 --> 00:48:15,711
+Şu durdurmam lazım.
+
+244
+00:48:15,711 --> 00:48:23,032
+Şuradan itibaren bir sonraki periyoda kadar ölçtüğümüz değer.
+
+245
+00:48:23,119 --> 00:48:32,319
+60 milisaniye gibi bir şey çıkıyor. Bakın az önce ilk başta 400 milisaniyeydi. Daha sonra 4 saniyeye çıkarttık. Şimdi 60 milisaniyeye düşürebildik.
+
+246
+00:48:32,319 --> 00:48:42,679
+Dolayısıyla buradaki testere dışı dalganın periyodunu belirleyen şey, burada çağırmış olduğumuz delay fonksiyonunun ne kadarlık bir süre boyunca boş bekleme yaptığıyla ilgili.
+
+247
+00:48:43,159 --> 00:48:47,319
+Bu değerin, bu fonksiyonun bekleme yapmasıyla birlikte aslında bizim...
+
+248
+00:48:47,827 --> 00:48:53,147
+Analog olarak ürettiğimiz değer bir basamak gibi o kadar uzun süre boyunca kalıyor.
+
+249
+00:48:54,147 --> 00:49:01,147
+Dolayısıyla ilk sorumuzun cevabı bu testere dişi dalganın, periyodunu değiştirebilecek şey delay fonksiyonunun kendisidir.
+
+250
+00:49:01,707 --> 00:49:09,947
+İkinci soruya gelelim. İkinci soruda ise testere dişi değil de bir üçgen dalga yapmak istiyoruz. Bunun için ne yaparız? Bunun için ne yapacağız?
+
+251
+00:49:20,083 --> 00:49:31,723
+Orada da [öğrenci]'ın verdiği cevap üzerinden ilerleyecek olursak, öncelikli olarak 0'dan 255'e kadar arttıracağız. Daha sonra ise 0'a düşmemesini istiyoruz.
+
+252
+00:49:31,723 --> 00:49:37,723
+255'den 0'a kadar adım adım azalması gerekiyor bu durumda da. Dolayısıyla aslında bizim kodumuz
+
+253
+00:49:39,123 --> 00:49:49,723
+Öncelikli olarak artım şeklinde ilerleyecek. Bu artım bittikten sonra da azalma yönünde ilerleyecek. Bunun için yapacağımız işlem ne olması lazım?
+
+254
+00:49:53,427 --> 00:49:55,007
+Önce artım yapıyoruz.
+
+255
+00:49:57,927 --> 00:50:00,507
+Şurada bir karşılaştırma yapmamız lazım.
+
+256
+00:50:01,447 --> 00:50:04,847
+İşte cmp, al, 255.
+
+257
+00:50:05,427 --> 00:50:11,107
+Eğer al, 255'den küçükse arttırma yönünde devam edebiliriz.
+
+258
+00:50:13,107 --> 00:50:15,051
+Ama 255'den...
+
+259
+00:50:15,764 --> 00:50:21,764
+Tekrar 0 olmuşsa bu sefer azaltma yönünde gitmeyiz. Onu nasıl yapalım? Onunla ilgili siz söyleyin. Nasıl yapalım?
+
+260
+00:50:36,275 --> 00:50:37,475
+Nasıl yapalım?
+
+261
+00:50:50,804 --> 00:50:55,804
+Evet, nasıl yapalım arkadaşlar? Bu kodu nasıl değiştirelim de üçgen dalgaya dönüşsün.
+
+262
+00:50:59,476 --> 00:51:20,476
+Hocam hemen, increment alenin altında 255 olmuş mu diye kontrol edip, 255'e eşitse, loop 2 başlıklı yeni bir döngü açıp, oradan azaltmaya geçip, onun altında da 0'a eşit mi diye kontrol ettikten sonra, bu endless'a geri gelsin diyebiliriz.
+
+263
+00:51:20,476 --> 00:51:25,228
+Tamam, peki şöyle bir şey yapabilir miyiz? Kesinlikle dediğin doğru.
+
+264
+00:51:25,460 --> 00:51:35,700
+CX üzerine döngü ya bu, 255 adım gidecek ya, move CX, 255, ondan sonra şunu bir loop'a bağlayayım, L1.
+
+265
+00:51:39,347 --> 00:52:01,688
+Loop L1 desem, yani burası 255 adım dönecek. Sıfırdan itibaren başladığımız için 255'e kadar dönecek. Bu döndükten sonra AL'de 255 değeriyle şimdi tekrar gireceğiz. Yani bu loop'un çok bir benzerini tekrar alsak, çünkü sen de loop demiştin neticede. Tekrar 255 yüklesek, şunu L2 olarak değiştiriyorum.
+
+266
+00:52:05,172 --> 00:52:23,771
+Buradaki her bir adımda da bu sefer dikremen çalıştırsak. Yani önce üçgenin yükselen kenarını çizdirdik, daha sonra düşen kenarını çizdirdik, daha sonra bunu tekrarlıyoruz, sonsuz kere tekrarlıyoruz gibi düşünebilirsiniz. Şimdi buna bir inceleyelim ne çıkıyor.
+
+267
+00:52:28,340 --> 00:52:52,700
+Az önce aslında 60 milisaniyelik bir periyot belirlemiştik. Bunun periyodu ise iki katı kadar olması lazım. Yani 120 milisaniyelik bir periyot içerisinde bir üçgen dalga elde etmiş olduk arkadaşlar. Dolayısıyla buradaki elde etmiş olduğumuz üçgen dalgayı da belirli bir değere ulaştıktan sonra indirecek şekilde bunu hesaplayacağız. Peki ulaştığımız maksimum ve minimum değerler ne? Onlara bakalım mı?
+
+268
+00:52:53,235 --> 00:53:10,735
+Elde ettiğimiz minimum değer, şu cursorları silebiliyorduk şöyle. Elde ettiğimiz minimum değer arkadaşlar bakın şurada 0 volt olarak görülüyor. Şurada 0 volt değeri görüyoruz. Az önce ben gördüm ama 0 volt değerini görüyoruz.
+
+269
+00:53:20,115 --> 00:53:33,416
+Görüyoruz. Dolayısıyla 0 ile 5 volt arasında değişen bir üçgen dalga elde etmiş oluyoruz. Peki burada bir başka sorumuz şu olsun. Biz 0 ile 3 volt arasında değişen bir üçgen dalgayı yani sorumuzu şöyle tanımlayalım.
+
+270
+00:53:40,148 --> 00:54:03,268
+0, 3 volt arası değişen üçgen dalgayı, periyodu ne olsun veya frekansı diyelim, 50 Hz yeterli olur mu acaba? Bakalım.
+
+271
+00:54:09,268 --> 00:54:17,248
+50 Hz dediğimizde periyoda ne olmuş olacak? 1000 bölü 50 desek 20 milisaniye gibi bir şey olacak.
+
+272
+00:54:17,248 --> 00:54:32,788
+5 Hz diyelim. 5 Hz olacak şekilde üretin diye bir sorumuz olacak. Olsun. Yani sıfırla 3 volt arası değişen üçgen dalı değil 5 Hz olacak şekilde üretmemiz isteniyor.
+
+273
+00:54:32,788 --> 00:54:36,068
+Böyle bir soruya ilişkin yaklaşımımız ne olur?
+
+274
+00:54:36,467 --> 00:54:45,947
+Biz biliyoruz ki burada FFH'a karşılık 5 volt geliyor. Yani 255'e karşılık 5 volt geliyor. O zaman 3 volt kaça karşılık gelir?
+
+275
+00:54:45,947 --> 00:54:59,867
+Dolayısıyla 3 bölü 5, x bölü 255. 255 çarpı 3 bölü 5 diyebiliriz o zaman bunu. Kalkülüatörü açalım. 255 çarpı 3 bölü...
+
+276
+00:55:00,179 --> 00:55:25,379
+5 dediğimizde, 152 değeri, 152 değeri, yani 153'müş. Bunda şey olarak bakacak olursak, 153, pardon 153 değerimiz, 99 haşa karşılık geliyor. O zaman biz burada adımlarımızı 99 haşa kadar gidecek olursak, çıktı değerimizi 0-3 volt arasında limitlemiş oluruz. Bakalım şimdi o kontrolü yapalım.
+
+277
+00:55:28,500 --> 00:55:49,920
+Bakalım, 2 volta kadar geldik. 0 volt, 2 volt. Neyi yanlış yaptık? Şöyle şekil üzerinden gidelim. Kalemimizi alalım. 0 volta, 5 volt arası. Buradaki değerimiz 255.
+
+278
+00:55:51,507 --> 00:56:15,628
+Biz bunun 3 volt olmasını istiyoruz. Dolayısıyla 5 bölü, şurayı alacağız. 5 bölü 3, 255 bölü kaç ona karşılık gelecek? 3 bölü 5 eşittir. x bölü 255. Dolayısıyla x bize şurayı vermesi lazım.
+
+279
+00:56:16,788 --> 00:56:23,188
+0'dan itibaren başlayıp buraya kadar gideceğimiz için tekrar bir hesaplayalım. Yanlış mı çarptım acaba?
+
+280
+00:56:23,188 --> 00:56:30,788
+3 çarpı 255 bölü 5, 153 diyor, 99H.
+
+281
+00:56:34,931 --> 00:56:43,171
+Burada 99 decimal yazmışız, ondan dolayı öyle olmuş. 99H yapalım. Şimdi tekrar kontrol edelim.
+
+282
+00:56:45,971 --> 00:56:53,891
+Bakalım, maksimum çıktı değerimiz. Evet, istediğimiz gibi 3 Volta kadar geliyor. Şu anda 0 ile 3 Volta arasında bir
+
+283
+00:56:53,891 --> 00:56:58,291
+diğer üçgen dalgamızı elde ettik. Periyodumuza bir bakalım. Periyodumuz...
+
+284
+00:56:58,579 --> 00:57:11,959
+72, 73 milisaniye gibi bir değer. Halbuki biz 5 Hz istiyorsak, 5 Hz'e karşılık gelen 1 bölü 5 Hz dersek, bu durumda da bizim periyodumuz ne olmuş oluyor?
+
+285
+00:57:12,539 --> 00:57:17,839
+200 milisaniye oluyor. 200 milisaniye elde edebilmek adına buradaki değerimizi arttırmamız lazım.
+
+286
+00:57:17,839 --> 00:57:24,839
+Bu yaklaşık 7F gibi bir değere karşılık geliyor artık. Onu hesapla değil de belki deneme yanılmayla buluyor olabiliriz.
+
+287
+00:57:26,228 --> 00:57:28,172
+Birazcık şunu küçültelim.
+
+288
+00:57:44,307 --> 00:57:56,208
+Bir periyodumuz için 200 milisaniye gibi bir değer istiyoruz. Burada iki katı oldu. O zaman tekrar bir daha düşürdük. 3F için.
+
+289
+00:57:57,668 --> 00:58:05,007
+7F değildi ya. 7F 400. Biraz daha bunu yavaşlatmamız lazım.
+
+290
+00:58:06,407 --> 00:58:11,708
+Yok, hızlandırmamız lazım. 3F ile bunu elde edebiliriz gibi.
+
+291
+00:58:13,139 --> 00:58:14,339
+Tekrar bakalım.
+
+292
+00:58:16,839 --> 00:58:20,839
+Şimdi oldu sanırım 0.1 milisaniye ve yaklaşık olarak.
+
+293
+00:58:21,076 --> 00:58:45,576
+Şu anda 245-250 milisaniye gibi bir değer elde ettik. Tabi burada hassas bir hesap yapabilmek pek mümkün olmayabilir. Çünkü işte fonksiyon çağrılırken yığına atılan değerler var, return yapılırken yığından çekilen değerler var, loop'un kendi işlemi atama işlemleri falan derken, burayı böyle birazcık deneme yanılma şekliyle belki değiştirmek gerekiyor. Şöyle bir değer için deneyelim bir de.
+
+294
+00:58:46,099 --> 00:58:55,099
+Kabaca yaklaşık değerimize ulaştık mı, ulaşmadık mı diye. Şu anda daha hassas bir şekilde bu değeri elde ettiğimizi söyleyebilirim.
+
+295
+00:58:56,500 --> 00:59:08,099
+210 gibi bir şey çıkmış ama yaklaşık 200 milisaniyelik bir periyotta bu üçgen dalgayı elde etmiş olduk. Dolayısıyla bu soruyu veya bu örneği kabaca
+
+296
+00:59:08,692 --> 00:59:22,612
+Dalga şeklini değiştirerek, periyodu değiştirerek, genliği değiştirerek çeşitlendirmek mümkün arkadaşlar. Bu çerçevede bu soruyu siz de üzerinde denemeler yaparak çeşitlendirmenizde fayda var diye söyleyebilirim.
+
+297
+00:59:23,112 --> 00:59:28,132
+Bir de bu örneğimiz bu kadar dolayısıyla. Bununla ilgili sormak istediğiniz bir şey var mı öncelikli olarak? Onu alalım.
+
+298
+00:59:30,951 --> 00:59:32,871
+Var mı sormak istediğiniz bir şey bu örnekle ilgili?
+
+299
+00:59:45,492 --> 00:59:52,492
+Evet, bir sonraki örneğimize geçelim. O da DAC örneğimiz. Pardon, ADC örneğine geçecektik.
+
+300
+00:59:52,492 --> 00:59:52,972
+Kapatalım.
+
+301
+01:00:03,123 --> 01:00:12,623
+Şimdi bu ADC örneğimizde daha hassas olabilmek için burada yapabileceğimiz şey şu olur arkadaşlar.
+
+302
+01:00:12,623 --> 01:00:26,123
+Zamanlama açısındansa burada o zamanları hassas bir şekilde hesaplayabiliriz ama o da tabii işlemcinin saat frekansının aralık değerleriyle sınırlı bir şey.
+
+303
+01:00:26,239 --> 01:00:37,239
+Ama genlik açısından daha hassas bir şey yapmak istersek, o zaman daha yüksek çözünürlük, daha fazla bit sayısına sahip bir DAC kullanmamız gerekiyor.
+
+304
+01:00:37,239 --> 01:00:40,235
+Dediğim gibi, oradaki her bir...
+
+305
+01:00:40,307 --> 01:00:55,067
+Komutun ne kadar süre alacağı, kaç cycle süre alacağı belli. İşlemcinin saat frekansı da belli. Dolayısıyla bu delay fonksiyonuna çağırıp geri dönene kadar ne kadar süre geçeceğini hassas bir şekilde hesaplayabiliriz. Şimdi ben girmedim ona da.
+
+306
+01:00:55,067 --> 01:01:05,567
+Yani oradaki clock cycle değerinden, saat frekansından bir hesap yapmak mümkün. Biraz daha hassas o şekilde yapabiliriz. Şimdi buradaki örneğimizde ise arkadaşlar
+
+307
+01:01:05,748 --> 01:01:21,428
+Şöyle bir tekrar yaklaşalım. Bu sefer bir ADC entegremiz üzerinden örnek var. Bir potansiyometre üzerinden bir analog değer oluşturuyor durumdayız. Bu potansiyometrenin nasıl çalıştığını hemen şöyle bir görelim isterseniz.
+
+308
+01:01:21,428 --> 01:01:28,468
+Üretilecek değer açısından değil de sadece voltmetre açısından bunun nasıl çalıştığını görüyor olalım.
+
+309
+01:01:30,739 --> 01:01:49,940
+Şu voltmetre ucunu bağlayamıyorum. Potansiyometrenin olduğu yere bağlayalım. Şimdi burada şunu kenara çekiyorum. Şu anda potansiyometrenin ucundaki ok işaretlerini kullanarak buradaki değeri mesela sıfıra çekecek olursak.
+
+310
+01:01:55,027 --> 01:02:00,788
+Burada elde ettiğimiz analog değerinde değiştiğini görüyorsunuz. Yani buradaki değişimlerde aslında arkadaşlar
+
+311
+01:02:01,076 --> 01:02:20,076
+%100 olduğunda işte 5 volta çok yakın, 4.9995 gibi bir şey. 0'a yaklaştığımızda da 0 volta çok yakın bir analog değer aslında. Yani potansiyometre 0 ile 5 volt arasında, o düğmesini çevirdiğiniz durum potansiyometreyi hatırlarsınız devre derslerinden.
+
+312
+01:02:20,076 --> 01:02:29,076
+Potunu çevirdiğiniz durumda bu gerilim bölücü olarak çalışacak ve elde edeceğiniz gerilim 0 ile 5 volt arasında bir gerilim değeri olmuş olacak.
+
+313
+01:02:29,076 --> 01:02:49,436
+Bu potansiyometre bizim analog girişimiz olmuş olacak. Bununla birlikte kod tarafında biz 200 ve 400H adreslerini, 200H'ı ADC'nin kendi adresi olarak, 400H'ı da ADC'nin intre ucuna ilişkin olarak oluşturacağımız bu sanal cihaz için tanımlıyor olalım.
+
+314
+01:02:49,844 --> 01:03:02,384
+Dolayısıyla akışımız şu şekilde olacak. 200 haş adresine boş yazma yapacağız. 400 haş adresinden okuma yapıp ilgili data ucunun sıfıra düşüp düşmediğini kontrol edeceğiz. Uç sıfıra düşmüş ise de
+
+315
+01:03:02,592 --> 01:03:09,552
+Gidip ADC'nin adresinden okuma yapıyor olacağız. Bu süreci bir lojik analizörle devreye almış durumdayız.
+
+316
+01:03:10,072 --> 01:03:15,652
+Dolayısıyla intre işareti geldiğinde data uçlarında hangi değer var bunu çekip almaya çalışacağız.
+
+317
+01:03:15,731 --> 01:03:23,472
+Şöyle ortalarda bir yerde olsun örneğin. Tam 50 de olabilirse aslında tam değerimizde 7F'ye karşılık gelecek ya.
+
+318
+01:03:24,112 --> 01:03:29,452
+Dolayısıyla şimdi bu şekilde başlatalım simülasyonumuzu ve kayıt işlemi yapalım.
+
+319
+01:03:30,356 --> 01:03:35,356
+Bu kayıt işlemi çerçevesinde şimdi elde ettiğimiz değerleri inceleyelim arkadaşlar.
+
+320
+01:03:42,195 --> 01:03:44,195
+Şimdi biraz daha mı şöyle yapsak acaba?
+
+321
+01:03:47,195 --> 01:03:49,195
+Değil de şunu birazcık daha.
+
+322
+01:03:49,195 --> 01:03:53,195
+Heh, tamam. Şurada görüyorsunuz arkadaşlar, bakın.
+
+323
+01:03:53,195 --> 01:03:59,195
+Intr ucunun sıfıra düştüğü bir anda data uçlarında 80H değeri var.
+
+324
+01:03:59,731 --> 01:04:19,911
+intre ucu, şu intre ucuna ilişkin uç, yani A7'ye bağlamıştık. Bakın A7'de intre'nin sıfıra düştüğü bir anda data uçlarında 80H değeri var. 80H değeri, biz bunu neye ayarlamıştık? Tam orta değere. Yani 80H'da 2.5 volta karşılık geliyor. Dolayısıyla buradan okuduğumuz lojik değer 2.5 volt.
+
+325
+01:04:20,288 --> 01:04:27,967
+2.5 volta karşılık elde edeceğimiz dijital değer de 80H. Dolayısıyla bu ikisini birleştirerek elde ettiğimiz değer 80H'ı burada görüyoruz.
+
+326
+01:04:27,967 --> 01:04:34,967
+Arada sıfırlar var. Bu sıfırlar nereden geliyor? Onu bir analiz etmeye çalışalım. Bakın o da şuradan geliyor.
+
+327
+01:04:35,248 --> 01:05:01,567
+Arada ADC'nin dönüşümü başlatabilmesi için ADC'ye bir boş yazma yapacaktık. Yani AL'deki değer ne olursa olsun. Onun için sıfır değerini göndererek yapmışız AL'deki değer. Dolayısıyla gördüğümüz, çoğunlukla görmüş olduğumuz o sıfır değerleri hemen şey öncesinde, nedir onun adı, okuma öncesinde AL'ye göndermiş olduğumuz, şu biraz daha şöyle olursa, tekrar capture yapalım.
+
+328
+01:05:02,420 --> 01:05:11,659
+Bakın tekrar görüyoruz. ADC'deki intre ucu sıfıra düşer düşmez. Okuma değeri olarak 80H değeri burada üretilmiş oluyor.
+
+329
+01:05:11,659 --> 01:05:19,880
+Belirli bir süre boyunca kaldı. Bu 80H değerini okuyunca da intre ucu da kaldırıldı ve bir sonraki cycle başlatılmış oldu.
+
+330
+01:05:19,880 --> 01:05:21,880
+Burada da bu dalga şeklinin oluşumunu...
+
+331
+01:05:22,175 --> 01:05:40,175
+Uygun bir şekilde görmüş oluyoruz. Dediğim gibi, biz şu aşamada daha kesmeleri görmediğimiz için intre ucunu da, yani dönüşümün bittiğini belirten intre ucunda ekstradan bir yazmaç üzerinde de saklanmadığı için ADC üzerinde, mecburen fiziki ucu üzerinden örneklememiz lazım. Bu örneklemeyi de mecburen...
+
+332
+01:05:40,815 --> 01:05:48,815
+Sanal bir tri-state buffer üzerinden sanal bir I.O cihazı oluşturarak yapıyoruz. Bu tri-state buffer'ın çalışma mantığını hatırlayalım.
+
+333
+01:05:48,815 --> 01:05:55,815
+2 numaralı uç, 3 numaralı uca aktarılır. Ne zaman? 1 numaralı uçta logic 0 var ise.
+
+334
+01:05:55,987 --> 01:06:00,427
+Dolayısıyla bu bir numaralı ucu, bir chip select ucu olarak düşünebiliriz.
+
+335
+01:06:00,847 --> 01:06:07,527
+Chip select ucuna 0 geldiğinde, cihaz tarafından üretilen veri data hattına aktarılmış oluyor.
+
+336
+01:06:08,007 --> 01:06:11,647
+Burada AD7'ye bir bağlantı sağlamışız bu cihaz için.
+
+337
+01:06:12,067 --> 01:06:15,367
+Dolayısıyla kontrol işlemimizde 80H ile test ediyoruz.
+
+338
+01:06:17,087 --> 01:06:21,847
+Bu 400H adresindeki sanal cihazı okurken 80H ile kontrol ediyoruz.
+
+339
+01:06:23,315 --> 01:06:31,775
+ad7'ye bağlamış olmamız. Eğer ki biz bunu gelip de, oraya bir multimetre taktım. Eğer ki biz buraya gelip de,
+
+340
+01:06:34,595 --> 01:06:42,695
+biz burada ad0'a bir bağlantı sağlamış olsaydık, bu sefer kontrolümüzü hangi değer için yapmalıydık?
+
+341
+01:06:42,695 --> 01:06:47,735
+En düşük anlamlı bit olan 0,1 için yapmalıydık değil mi? Şimdi buna bakalım.
+
+342
+01:06:49,364 --> 01:06:58,964
+Yine aynı mantık çerçevesinde bir capture alalım. Bakın, 0, 1 değeri göründü ama orada 80h nerede?
+
+343
+01:07:04,500 --> 01:07:06,500
+0, 1 değeri niçin görünüyor?
+
+344
+01:07:10,675 --> 01:07:12,996
+Bir daha bir capture deneyelim bakalım.
+
+345
+01:07:18,771 --> 01:07:21,072
+Tam ortada 2.5 voltta
+
+346
+01:07:23,891 --> 01:07:26,192
+bunu alacağız. Bir değeri
+
+347
+01:07:30,164 --> 01:07:33,284
+Hamdata değerine denk gelemedik demek ki tekrar bakalım.
+
+348
+01:07:43,603 --> 01:07:46,203
+Şunu biraz daha mı yaklaşınca görürüz acaba?
+
+349
+01:07:48,003 --> 01:07:49,603
+Şurada arada kaldı, evet.
+
+350
+01:08:02,420 --> 01:08:03,307
+Bakalım.
+
+351
+01:08:08,052 --> 01:08:34,492
+Şurada çok küçük bir değişim var arkadaşlar, şu kısımda. İşte burası bizim datayı okuduğumuz kısma karşılık geliyor. Şu anda görünmüyor ama 0,1 değeri de. 0,0 değeri bizim ADC yaptığımız boş yazma. 0,1 değeri 400 haşı okurkenki değer. Şu arada kalan değer ise, kör suları silerek tekrar göstereyim. Kör suları silerek göstereyim. Şu aradaki değer de bizim okuduğumuz orijinal değer.
+
+352
+01:08:34,960 --> 01:08:40,239
+Tabi oraya yeterince bir yaklaşamadık bir türlü.
+
+353
+01:08:40,239 --> 01:08:42,220
+Tekrar bir deneyelim.
+
+354
+01:08:54,484 --> 01:08:55,484
+Başlatalım.
+
+355
+01:09:13,460 --> 01:09:19,780
+Daha orada bir yerde görmemiz gerekir. Birazcık bunu tekrar küçülteceğim.
+
+356
+01:09:23,572 --> 01:09:27,072
+Şurada okuduğumuz 80 değerini de şurada görebiliyorsunuz.
+
+357
+01:09:27,771 --> 01:09:35,771
+Dolayısıyla bu da intre ile alakalı bir zaman aralığında zamanlama sağlayarak yaptığımız bir okumaya karşılık gelmiş oluyor.
+
+358
+01:09:37,871 --> 01:09:47,572
+Bu mantık aslında bir yazmaçtan okuyamadığımız ama polink yapmamız gereken bir fiziki ucu nasıl okuruz ona ilişkin bir örnek oluşturmuş oldu.
+
+359
+01:09:47,572 --> 01:09:50,371
+Burada illa AD7'ye bağlamamız gerekmiyor.
+
+360
+01:09:50,579 --> 01:09:57,579
+Ama bu cihazı çift adrese yerleştirdiğimiz için veri yolunun düşük anlamlı 0 ile 7 arasındaki herhangi bir ucuna bağlayabiliriz.
+
+361
+01:09:57,579 --> 01:10:06,579
+Hangi uca bağladıysak o uca ilişkin olarak da maskeleme ve test işlemini yürütmemiz gerekiyor arkadaşlar. Bunları ifade etmiş olayım.
+
+362
+01:10:06,579 --> 01:10:13,579
+Bunun dışında burada sormak isteyeceğiniz bir şey var mı? Bu örnekle ilgili olarak sormak isteyeceğiniz bir şey var mı?
+
+363
+01:10:24,595 --> 01:10:27,915
+Yok ise şöyle yapabiliriz.
+
+364
+01:10:28,695 --> 01:10:36,755
+Kısacık bir sonraki haftanın konusu olan, aslında yetiştirmek adına şimdi de başlamamız gerekiyor.
+
+365
+01:10:37,456 --> 01:10:39,755
+Şu kesme konusuna bir giriş yapalım.
+
+366
+01:10:40,655 --> 01:10:42,695
+Buna ilişkin bir takım yazılım örneği var.
+
+367
+01:10:42,695 --> 01:10:45,415
+Eğer yetiştirebilirsek ona ilişkin olarak bakalım.
+
+368
+01:10:47,835 --> 01:10:49,675
+Şunu page bit'e getirelim.
+
+369
+01:10:56,467 --> 01:11:09,768
+Şimdi bir sonraki konumuz da kesmelerle ilgili olarak. Tabi burada öncelikli olarak veri haberleşme mantıklarını bir inceliyor olacağız. Tekrar hatırlıyor olacağız. Polink neydi, interrupt neydi, arasındaki fark nedir, bunu nasıl ifade edemeliyiz?
+
+370
+01:11:09,768 --> 01:11:20,167
+Daha sonra kesme kaynakları, interrupt kaynaklarını inceliyor olacağız. Temelde iki çeşit kesme kaynağı var. Bir kısmı yazılımsal, bir kısmı donanımsal olarak değerlendirebileceğimiz kesmeler.
+
+371
+01:11:20,368 --> 01:11:31,968
+Donumsal kesmeler de temelde dış dünyadan gelen kesme isteklerinin fiziki olarak karşılanabileceği iki tane uç var. Bu iki uç üzerinden karşılanan kesmeleri ifade ediyor.
+
+372
+01:11:31,968 --> 01:11:47,668
+Yazılımlıksal kesmeler ise alt başlıklar olarak biraz daha çeşitlendirilebilir. Bunların bir kısmı doğrudan int komutunu kullanarak, bir kısmı çalıştırılan komut sonucunda oluşan kesmeler ile karşılık buluyor.
+
+373
+01:11:47,855 --> 01:11:50,855
+Dolayısıyla bu iki başlık artısını da inceliyor olacağız.
+
+374
+01:11:50,855 --> 01:12:00,855
+Tabii kesmelerle ilgili olarak herhangi bir kesme oluştuğu zaman bu kesmeye ilişkin çağrılacak fonksiyonların adresleri bir yerde tutuluyor, özel bir tabloda tutuluyor.
+
+375
+01:12:00,855 --> 01:12:04,855
+Bu tablonun adı kesme vektör tablosu. Tekrar etmek gerekirse...
+
+376
+01:12:05,332 --> 01:12:24,332
+Herhangi bir kesme oluştuğunda, totalde de 8086'da 256 farklı kesme tipi tanımlanabilir. Dolayısıyla bize 256 gözlük bir tablo oluşturulmuş durumda. Bu tabloda IEO uzayının veya memory uzayının diyelim daha doğru olur, memory uzayının en düşük anlamlı...
+
+377
+01:12:24,819 --> 01:12:35,420
+Bu tablonun her bir gözü 4 byte'dan oluşuyor. Dolayısıyla 256x4 byte boyutunda bir tablodan bahsediyoruz.
+
+378
+01:12:35,420 --> 01:12:41,420
+4 byte neyi ifade ediyor? Burada 4 byte ile ifade edilen aslında...
+
+379
+01:12:42,836 --> 01:12:55,736
+2 byte offset, 2 byte segment değeri. Yani bizim kesme tipine göre çağıracağımız alt kesme fonksiyonunun adresini veren segment ve offset değerlerini içeriyor tablonun her bir gözü.
+
+380
+01:12:55,736 --> 01:13:04,336
+Dolayısıyla toplamda her biri 4 byte olan, her bir gözü 4 byte olan 256 gözlü bir tane kesme vektör tablosu tanımlanıyor olacak.
+
+381
+01:13:04,336 --> 01:13:10,836
+Biz bu tablo üzerinden kesme tetiklendiği anda otomatik olarak ilgili kesme alt programına dallanıyor olacağız.
+
+382
+01:13:10,836 --> 01:13:27,336
+Buna ilişkin kesme adımlarını inceliyor olacağız. Div sıfır kesmesini özel olarak inceleyeceğiz. Sonra donanımsal kesmeleri fiziki uçlar üzerinden tanımlıyor olacağız. Sonra 8259 entegresinin özelliklerine bakacağız ve 8259 örneğini inceliyor olacağız.
+
+383
+01:13:38,836 --> 01:13:56,476
+Bu da bu ekstegreleri için arkadaşlar şu ana kadar hep poling mantığında yapmış olduğumuz veri transferinin hepsini kesme tabanlı olarak 8259 kullanarak gerçekleştirebiliyor olacağız. Örnek vermek gerekirse 8255 için
+
+384
+01:13:57,043 --> 01:14:08,764
+Mod 1 ve Mod 2'de int-r uçları vardı. Int-r A, int-r B Mod 1 için ve int-r ucu da Mod 2 için. Bu uçlar handshaking modunda veri hazır olduğunu bize bildiren uçlardı.
+
+385
+01:14:09,543 --> 01:14:15,064
+Ve bunların aynı zamanda bir statüs yazmacı içerisinde bir bit olarak, kontrol bit olarak da bize sunuluyordu.
+
+386
+01:14:15,064 --> 01:14:21,064
+Şu ana kadarki olan bilgimiz çerçevesinde gidip ilgili statüs yazmacının...
+
+387
+01:14:21,555 --> 01:14:25,555
+İlgili bitini poling mantığında kontrol edip veri hazır mı diye bakıyordum.
+
+388
+01:14:28,555 --> 01:14:31,555
+Kesmelerle birlikte gördüğümüz haliyle şunu yapabiliyor olacağız.
+
+389
+01:14:33,555 --> 01:14:39,555
+Intre fiziki ucunu doğrudan 8259 üzerinden mikroişlemcinin kesme istek ucuna bağlıyor olacağız.
+
+390
+01:14:39,555 --> 01:14:44,555
+Ve bu sayede kesme oluştuğu anda yani veri hazır olduğunda
+
+391
+01:14:45,300 --> 01:14:49,400
+Kesme üzerinden veriyi transfer edebilecek bir süreç yürütebiliyor olacağız.
+
+392
+01:14:50,159 --> 01:15:02,460
+8255 için bunlar intre A, intre B ve intre uçları. 8251 açısından transmit ready ve receive ready uçları, fiziki uçlar. Bunları kesme isteği oluşturmak için kullanabiliyor olacağız.
+
+393
+01:15:10,511 --> 01:15:14,912
+Biz kesme isteği oluşturabilecek uçlar olarak değerlendirebiliyor olacağız.
+
+394
+01:15:14,912 --> 01:15:24,112
+Son olarak da ADC'nin int-R ucunu yine kesme isteği tanımlayabilmek adına kullanabiliyor olacağız arkadaşlar.
+
+395
+01:15:24,112 --> 01:15:33,112
+Dolayısıyla şu ana kadar görmüş olduğunuz bütün entegreleri kesme mantığıyla da donanımsal kesmeler olarak da yürütmek mümkün oluyor olacak.
+
+396
+01:15:33,112 --> 01:15:34,112
+Şimdi...
+
+397
+01:15:35,667 --> 01:15:43,667
+Bu aşamada kesme ile interapt ile poling mantığı nasıl çalışıyor onu bir görsel ifade etmeye çalışalım.
+
+398
+01:15:43,667 --> 01:15:51,667
+Ders çalışıyorsunuz, bir yandan da su kesilmiş olsun, kovayla su doldurup yedekleyeceğiz diyelim.
+
+399
+01:15:54,739 --> 01:16:06,739
+Bunun için nasıl bir süreç izlersiniz? Birazcık ders çalışırsınız, sonra su bazen geliyor bazen gelmiyor. Daha sonra gidip kovayı kontrol edersiniz. Kova dolmuşsa boşaltırsınız. Dolmamışsa geri dönersiniz.
+
+400
+01:16:06,739 --> 01:16:22,443
+Tekrar gidersiniz, geri gelirsiniz, gidersiniz gelirsiniz. Dolayısıyla bu tam olarak poling mantığı. Yani burada kovanın dolup dolmadığını bize bir işaret üzerinden bildirilmiyorsa, bu da oradan bizim gidip kontrol etmemiz, dolmuş mu dolmamış mı diye bu poling mantığının birebir karşılığı.
+
+401
+01:16:22,644 --> 01:16:34,164
+İnterap mantığı da bunu nasıl gerçekliyor, grafik olarak ifade etmek gerekirse? Bu sefer kovanın üzerine bir sensör bağlıyoruz. Bunu da hoparlöre bağladığımızı düşünelim. Bir hoparlöre bağladığımızı düşünelim.
+
+402
+01:16:35,443 --> 01:16:47,644
+Bir yandan ders çalışıyoruz. Sonrasında su bazen geliyor, bazen gelmiyor ama kova dolduğunda bize bir uyarı geliyor hoparlör üzerinden. Biz gidip kovayı var ile boşaltıyoruz. Boş kovayı tekrar yerine koyup çalışmamıza geri dönüyoruz.
+
+403
+01:16:47,956 --> 01:17:01,355
+Dolayısıyla işlem bittiğinde, işlem gerçekleştiğinde bizi bir şekilde tetikliyor ise bu, bu tıpkı bir kesme isteğinin mikroişlemci tarafından gerçeklenmesi gibi bir durum oluşturuyor diyebiliriz arkadaşlar.
+
+404
+01:17:12,724 --> 01:17:27,724
+ve donanımsal kesmeler olarak ifade etmiştik. Yazılımsal kesmeleri de iki başlık altında aslında inceleyelim demiştik. Bunlardan birincisi doğrudan int komutunu kullanarak int komutunun yanına bir değer verebilirsiniz.
+
+405
+01:17:27,724 --> 01:17:40,268
+Bu değer 00f ile ffh arasında bir değer alabilir. Yani 0 ve 255 arasında bir değer alabilir. Bu hangi tip kesmenin çağrılacağını belirtiyor.
+
+406
+01:17:40,404 --> 01:17:46,404
+Veya doğrudan int o komutunu çalıştırabilirsiniz. Interrupt Overflow komutu.
+
+407
+01:17:50,404 --> 01:17:56,404
+Veyahut da mesela sıfıra bölme işlemi yaptınız. Bir yerde denk geldi, bir şeyi sıfıra böldünüz.
+
+408
+01:17:56,404 --> 01:18:00,404
+Sıfıra bölme işlemi sonucunda otomatik olarak, yani yürütülen komut sonucunda
+
+409
+01:18:01,268 --> 01:18:19,108
+Otomatik olarak bir div zero kesmesi oluşur veya işlem sonucunda bir overflow oluştur. Eğer overflow durumu oluşmuşsa da benzer şekilde otomatik olarak overflow kesmesi yürütülebilir duruma geliyor arkadaşlar. Dolayısıyla bu yazımsal kesmeleri bu iki başlık altında inceleyebiliriz.
+
+410
+01:18:19,108 --> 01:18:27,188
+Donanımsal kesmelere geldiğimiz zaman ise donanımsal kesmelere ilişkin olarak iki tane fiziki uç var. Bunlardan bir tanesi intre ucu, interrupt request ucu.
+
+411
+01:18:27,636 --> 01:18:52,456
+Diğeri ise NME, yani non-maskable interrupt ucu. NME ucu adı üzerinde, non-maskable, yani herhangi bir şekilde maskelenemiyor, kapatılamıyor. Yani NME ucu üzerinden göndermiş olduğumuz kesme istekleri mutlaka mikroişlemci tarafından değerlendirilmesi gerekir. Dolayısıyla NME ucuna bağlamış olduğumuz kesme istekleri biraz daha kritik hayati şeyler. Örneğin, sistem boot ediyor. Boot ederken,
+
+412
+01:18:53,268 --> 01:19:03,268
+RAM hatası var veyahut da elektriksel seviye bir türlü stabil değere ulaşmıyor gibi durumlardan dolayı bu NMEI kesmesi tetikleniyor olabilir.
+
+413
+01:19:03,268 --> 01:19:11,268
+Intr-R ucu ise, şimdi NMEI non-maskabaldı dolayısıyla intr-R ucu, inter-uplec ucu maskelenebilir bir kesme istek ucu.
+
+414
+01:19:11,604 --> 01:19:21,604
+O yüzden intere ucuna gelen kesme istekleri, fiziki dünyadan gelen kesme istekleri ancak ve ancak IF bayrağı, interrupt, flag bayrağı 1 iken değerlendirilebilir.
+
+415
+01:19:21,703 --> 01:19:27,503
+Eğer IF bayrağı 0 ise intere ucundan gelen kesme istekleri değerlendirilmiyor, maskelenmiş oluyor.
+
+416
+01:19:28,623 --> 01:19:35,484
+Yine kesmelerle ilgili olarak fiziki bir başka ucumuz da interrupt, eknol ucu, aktif 0,1 ucu, interrupt, eknol ucu.
+
+417
+01:19:36,083 --> 01:19:38,264
+Interrupt, eknol ucu da şu işe yarıyor.
+
+418
+01:19:39,123 --> 01:19:58,123
+Dış dünyadan bir kesme isteğinde bulunduysak ve mikroişlemci o kesmeyi değerlendirecekse, ne zaman değerlendirir? Kesme isteği geldi ama ben o sırada tam da bir komutun tam ortasında olayım.
+
+419
+01:19:58,123 --> 01:20:00,971
+Bu durumda şunu yapmamız gerekiyor.
+
+420
+01:20:01,524 --> 01:20:14,664
+Mikroişlemci yürütmekte olduğu komutu bitirdikten sonra kesmeyi değerlendirebilir. Dolayısıyla Interrupt Ec Knowledge mevcutta devam eden komut bittikten sonra iş üye ediliyor. Yani sıfır değeri o zaman gönderiliyor.
+
+421
+01:20:16,500 --> 01:20:23,000
+Dolayısıyla kesmeyle ilgili 3 tane fiziki ucumuz var. Interrupt Request, maskelenebilir donanımsal kesmelerini aldığımız uç.
+
+422
+01:20:23,000 --> 01:20:30,099
+NME, non-maskeable interrupt, kritik hayati kesmeleri değerlendirdiğimiz uç. Interrupt Econology ucu.
+
+423
+01:20:30,099 --> 01:20:43,000
+IntR ucundan gelen kesme isteklerine eğer mikroişlemci cevap verecekse Interrupt Econology üzerinden bir Econology gönderiyor karşı tarafa ki bu durumda kesmenin değerlendirildiği anlaşılmış oluyor.
+
+424
+01:20:43,507 --> 01:20:52,507
+Kesmelerle ilgili iki tane önemli bayrak var. Bunlardan bir tanesi IF bayrağı, interrupt flag bayrağı. Bunun interrupt request ucu ile ilişkili olduğunu söylemiştik.
+
+425
+01:20:52,507 --> 01:21:03,507
+Eğer IF bayrağı 1 ise, interrupt ucundan gelen kesme istekleri değerlendirilebilir. Eğer IF bayrağı 0 ise, donanımsal kesmeler, interrupt ucundan gelen kesmeler maskelenmiş oluyordu.
+
+426
+01:21:07,220 --> 01:21:21,220
+Eğer TF bayrağı bir olarak set edilmişse, şu anlama geliyor bu, her komut yürütüldükten sonra, TF'ye ilişkin olarak, adım adım debağa ilişkin olarak kesme tetikleniyor. Bunu niçin kullanabiliriz?
+
+427
+01:21:21,220 --> 01:21:28,108
+Donanımsal olarak adım adım deba yapma için, TF bayrağını kullanabiliriz. Ne anlama gelecek bu?
+
+428
+01:21:28,243 --> 01:21:45,123
+Örneğin bir komutu yürüttükten sonra ilgili kesme alt programına gider, bütün yaz maçları bir display ile gösterebilirim. Dolayısıyla adım adım kesme dediğimiz şey her adımdan sonra yaz maçların değerlerinin nasıl değiştiğini gösterebilecek bir kesme alt programı olarak karşılaşacağımız senaryoyu bize sağlayabilir.
+
+429
+01:21:49,055 --> 01:22:12,055
+Bir kesme alt programına gittiğimizde arkadaşlar, IF ve TF bayrakları sıfıra set ediliyor. Biz şimdi ana programda IF ve TF'yi birer set etmiş olsak bile, alt yordanda yani kesme alt programlarında geldiğimiz vakit bu programlara mikroişlemci otomatik olarak bunları tekrar sıfıra set etmiş oluyor.
+
+430
+01:22:16,275 --> 01:22:29,675
+İF bayrağının 1 olduğunu ve bir kesme geldiğini düşünelim. Biz daha o kesmeyi değerlendirirken, yani kesme alt programındayken yeniden aynı kesme gelsek, kesme alt programının içerisinde o kesmeyi bir daha değerlendirmemiz gerekecek.
+
+431
+01:22:29,675 --> 01:22:39,475
+Dolayısıyla varsayılan olarak iç içe kesme yememek adına İF bayrağı kesme alt programında 0 olarak set ediliyor, benzer şekilde TF'de bu şekilde set ediliyor.
+
+432
+01:22:43,315 --> 01:22:55,916
+Alt, kesme alt programı içerisinde de kullanıcı kontrolüyle IF'yi bir yere set edip iç içe ikinci bir kesmeyi de sağlaması mümkün. Ama bu kullanıcının sorumluluğunda olmuş oluyor arkadaşlar.
+
+433
+01:22:56,855 --> 01:23:08,135
+Son olarak bir de şundan bahsedebiliriz. Kesmelere ilişkin olarak kesme alt programı yine bir prosedür olarak düşünebilirsiniz bunu ama far tipinde bir prosedür, near tipinde kesinlikle yazılamıyor.
+
+434
+01:23:08,595 --> 01:23:14,536
+far tipindeki bu prosedürlerin dönüşleri farklı bir komutla oluyor. Örneğin şunu hatırlayalım.
+
+435
+01:23:16,536 --> 01:23:24,916
+Near tipinde bir fonksiyonun dönüşü red ile oluyordu, return. Far tipindeki bir fonksiyonun dönüşü redf, yani return far ile oluyordu.
+
+436
+01:23:26,255 --> 01:23:34,695
+Bir kesme alt programının dönüşü ise interrupt return ile olmak zorunda, i-red komutu ile olmak zorunda. Onu hatırlatmış olalım.
+
+437
+01:23:35,475 --> 01:23:51,355
+Kesme vektör tablosundan da bahsedelim. Kesme vektör tablosunu görüp dersimizi öyle bitirebiliriz diye düşünüyorum. Kesme vektör tablosu ne demiştik? Memori uzayının en düşük anlamlı bölgesinde yer alan özel bir memori alanı.
+
+438
+01:23:51,796 --> 01:24:10,796
+Bu memori alanı bir tablo, bu tablo gibi yapılandırılmış durumda diyelim. Bu tablonun her bir gözünde 4 byte'lık bir değer saklanıyor. Bu değerler de aslında ilgili kesme tipine ilişkin olarak toplamda bizim 256 farklı kesme tipimiz olabilir. 0'dan 255'e kadar.
+
+439
+01:24:11,891 --> 01:24:21,891
+Her bir kesme tipine ilişkin olarak, o kesme tipiyle ilişkilendirdiğimiz ve o kesme oluştuğunda çağıracağımız kesme art programların adresleri bu tabloda yerleştik durumda.
+
+440
+01:24:22,891 --> 01:24:30,891
+Dolayısıyla bir far tipi fonksiyonun adresini ifade eden şeyler nedir? İlgili segment, hangi segmentte ve o segmentin hangi offsetinde olduğudur.
+
+441
+01:24:31,891 --> 01:24:34,891
+Dolayısıyla bu kesme vektör tablosunun her bir gözünde...
+
+442
+01:24:36,500 --> 01:24:44,000
+Kesme tipi ile ilişkili kesme alt programının segment ve offset değerleri içeren 4 byte'lık veriler yer almaktadır.
+
+443
+01:24:46,860 --> 01:24:58,500
+Dolayısıyla vektör tablosunun boyutuna baktığımızda 255x4 veya 256x4 diyelim yani 1024 byte'lık bir alan kaplar.
+
+444
+01:24:58,847 --> 01:25:22,968
+Totalde de 0H'dan 3FFH'a kadar toplamda da yine 1024 ayrık adresi ifade eder. Tablomuz aslında dediğim gibi 256 farklı gözden oluşur. Onu da şöyle ifade edelim. Bakın burada görebilirsiniz bunu. Adresler 0'dan 1023'e kadar gidiyor. 3FF1023'tür. Her bir adres gözünde de, her bir tablo gözünde de
+
+445
+01:25:23,604 --> 01:25:30,423
+Offset ve segment değerleri yerleşik durumdadır arkadaşlar. Offset ve segment değerleri yerleşik durumdadır.
+
+446
+01:25:30,423 --> 01:25:42,623
+Bir kesme tetiklendiği vakit mikroişlemci o kesmeye ilişkin kesme vektör tablosundan offset
+
+447
+01:25:43,412 --> 01:25:53,412
+Ve segment değerlerini alıp, o kesme alt programlarına dallanmış oluyor kabaca. Bunları da önümüzdeki hafta biraz daha detaylı bir şekilde ele alabiliriz.
+
+448
+01:25:53,412 --> 01:25:59,412
+Buraya kadar olan kısmla ilgili sormak istediğiniz bir şey var mı arkadaşlar? Yavaştan kesmelere de girmiş olduk.
+
+449
+01:26:01,652 --> 01:26:03,652
+Var mı buraya kadar sormak istediğiniz bir şey?
+
+450
+01:26:03,652 --> 01:26:06,652
+Hocam, merhaba. Ben başka bir şey sorabilir miyim?
+
+451
+01:26:06,652 --> 01:26:07,652
+Buyur.
+
+452
+01:26:07,652 --> 01:26:12,652
+Sınavdan önce de size sormuştum ya, şu lab barda 25 puanlık kısım var ne olacak diye.
+
+453
+01:26:12,652 --> 01:26:13,652
+Evet.
+
+454
+01:26:13,652 --> 01:26:16,652
+Sorduğum işiniz ya, onlar da lab beraber etkileyecek diye.
+
+455
+01:26:16,652 --> 01:26:17,652
+Evet.
+
+456
+01:26:17,652 --> 01:26:26,652
+Alper Hoca bize 25'lik kısımları iki labda sordu ama Kübra Hoca öyle bir şey sormayacağını söyledi, 100 puanlık yapacağını söyledi.
+
+457
+01:26:26,652 --> 01:26:27,652
+Olabilir.
+
+458
+01:26:29,652 --> 01:26:57,652
+Bu sorularımız yine yetiliyor değil mi iki lapdakiler? Tabii onlar geçerli. Yani şu baktığın zaman üçüncü lap sorusu o kadar 125'lik doğrultuda bir soru değil. Yani ekstra kısım yoktu, onu soruyorum. Tabii, bunlarda ekstra kısım yok. 3 ve 4'te olmayabilir ama ilk ikisinde var, oradaki ekstra puanlarınız ne aldıysanız o şekilde geçecek ortalamanıza. Yani 125'in %30'unu alacaksınız değil mi? Evet, öyle alacağız. Tamam hocam, çok teşekkürler.
+
+459
+01:26:57,652 --> 01:27:01,652
+Onun haricinde var mı arkadaşlar sormak istediğiniz bir şey?
+
+460
+01:27:07,604 --> 01:27:19,604
+Tamam, bu hafta bu şekilde böyle blok yapmış olalım. Hafiften kesmelere de girdik. Önümüzdeki hafta bu sözel kısımları ve tanım kısımlarını bitirip yine entegre ve örneklere geçeriz.
+
+461
+01:27:19,604 --> 01:27:31,604
+Dediğim gibi bu 8259 vasıtasıyla şu ana kadar görmüş olduğunuz bütün entegreleri kesme tabanlı olarak da kontrol edebiliyor olacağız. Onlara ilişkin örnekler de yapmaya çalışacağız.
+
+462
+01:27:32,115 --> 01:27:37,115
+Onun haricinde sizin soracağınız bir şey yoksa da dersimizi burada bitirebiliriz. Haftaya görüşmek üzere arkadaşlar.
+
+463
+01:27:38,436 --> 01:27:45,136
+Bir soru var sanki, alalım onu. Heh, yokmuş, tamam. Tamamdır arkadaşlar. Herkese iyi günler, haftaya görüşürüz. Kolay gelsin.

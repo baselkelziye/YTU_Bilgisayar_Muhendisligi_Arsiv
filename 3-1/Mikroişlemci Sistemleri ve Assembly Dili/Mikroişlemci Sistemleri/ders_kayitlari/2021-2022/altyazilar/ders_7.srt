@@ -1,0 +1,1575 @@
+1
+00:00:50,451 --> 00:00:56,692
+Merhabalar arkadaşlar, biraz bekleyelim. Biraz kavramlaşsın, başlayacağız.
+
+2
+00:01:02,612 --> 00:01:10,111
+Henüz paylaşmadım [öğrenci]. Bu sıralar başka işler vardı, o yüzden paylaşmadım. Henüz değil.
+
+3
+00:01:29,364 --> 00:01:39,864
+Aslında şu pdf'leri paylaşabilirim hemen. Geçen sayının üstünde notları kalmış ama çok da mühim değil. Hemen bir paylaşalım.
+
+4
+00:01:42,364 --> 00:01:45,864
+Bakıyorum bir ekstra hani eksik bir bilgi var mı diye.
+
+5
+00:01:50,804 --> 00:01:52,804
+Evet, yok gibi duruyor.
+
+6
+00:01:55,804 --> 00:01:57,804
+Şu haftayı hemen paylaşıyoruz.
+
+7
+00:02:47,795 --> 00:02:51,795
+Evet arkadaşlar, şimdi paylaşıyorum sunumları.
+
+8
+00:02:55,219 --> 00:03:06,819
+Oradan da takip edebilirsiniz. Bu haftanınki de var. Diğerlerini de bir kontrol edip sonra paylaşacağım. Ekran yansıtalım.
+
+9
+00:03:20,883 --> 00:03:45,883
+Evet arkadaşlar, bir tık hızlanacağız bu derste. Tabii yine üzerinde dura dura gideceğiz ama 8275'lerin entegrenin mod 0'ını bugün bitirmemiz gerekiyor. Haftaya zaten bildiğiniz üzere 29 Ekim arefesi yani öğleden sonra olduğu için dersimiz olmayacak. O yüzden hani bugün biraz hızlı gitmemiz lazım. Şunu bir şey daha çalalım.
+
+10
+00:03:47,891 --> 00:03:54,491
+Yok, Classroom ile paylaştım. Classroom üzerinden bulabilirsiniz. Classroom'a iyi olduk değil mi?
+
+11
+00:03:56,091 --> 00:04:01,491
+Kodu paylaştığımı düşünüyorum. Duymayan arkadaş varsa gruptan biri yazsın kodu.
+
+12
+00:04:01,491 --> 00:04:06,491
+Çete, en azından bilmeyen de üye olmuş olur.
+
+13
+00:04:08,147 --> 00:04:34,648
+Evet, bu hafta çevre birimleri diye tabir ettiğimiz, mikroişlemcinin dış dünyaya olan iletişimini bir led yapmak veya led söndürmek veya bir butondan bir veri okumak, giriş-çıkış birimi olarak nitelendirdiğimiz bu birimlere, birimler üzerinde yoğunlaşacağız. Hatta bu birimlerin organizasyonunu sağlayan bir entegreyi de bu hafta anlatacağız.
+
+14
+00:04:34,932 --> 00:04:40,252
+Çevre birimlerine bakacağız. Yani mikroişlemcinin çevre birimleri olan ilişkisini inceleyeceğiz.
+
+15
+00:04:40,252 --> 00:04:49,172
+Basit düğme arayüzleri yapacağız. Düğme arayüzü bir giriş portu olarak veya giriş bilgisi okuması için kullanacağımız bir arayüz olacak.
+
+16
+00:04:49,172 --> 00:04:53,412
+İşte LED arayüzü çıkışları göstermek için kullanacağımız bir arayüz olacak.
+
+17
+00:04:53,412 --> 00:05:01,731
+İşte çevre birimleri de arkadaşlar, şimdi mikroişlemcinin en büyük farkı normal bir dekoder veya işte
+
+18
+00:05:02,100 --> 00:05:04,100
+Şu tableti bir ayarlayayım.
+
+19
+00:05:04,100 --> 00:05:14,100
+Dekoder veya herhangi bir başka entegreden farkı şu, yani porta ben direkt şu ledi yak ibaresiyle bir portu seçmiyorum.
+
+20
+00:05:14,100 --> 00:05:20,100
+Bizim mikroişlemcilerde arkadaşlar adres uzayı tanımlamamız gerekiyor.
+
+21
+00:05:20,100 --> 00:05:23,100
+Şunu bir seçelim.
+
+22
+00:05:25,632 --> 00:05:40,632
+Yani işte misal biz ne yapıyorduk lojikte? Örnek verelim, dekoderimiz var. 3x8 dekoder, hatırlarsanız 3 tane girişi 8 tane çıkışı olan. Ben buradan bir, bir, bir verdiğimde işte şuradaki dediği yakabileceğimiz...
+
+23
+00:05:40,879 --> 00:05:55,279
+Bir entegre edip, tam bubble ile bir mantıklıysa, yana an dedi söndürebileceğimiz bir mimari. Mikroişlemciler böyle değil. Mikroişlemci diye bir şey, bir hafıza uzayında adresleme yapması lazım.
+
+24
+00:06:08,879 --> 00:06:31,879
+adres atamasını yapmamız lazım ki neredeki veriyi okuyacağımızı mikroişlemci algılasın. Bu yüzden bir adres bölgesine giriş çıkışlar birimleri bir adres bölgesine yerleştirip mikroişlemci de birinci kayda bu. Zaten adres yolu ve veri yolu iki farklı yol oluşmasının nedeni de bu. İlk başta ben adres yoluyla işledim.
+
+25
+00:06:32,403 --> 00:06:38,403
+düğme veya buton neyse veya LED'in nerede olduğunu mikroişlemciye göstereceğim.
+
+26
+00:06:38,403 --> 00:06:48,403
+Mikroişlemcinin o butonu veya LED'i seçmesini sağlayacağım. Sonra oraya veri okuma veya veri yazmayı mikroişlem içerisine alacağım.
+
+27
+00:06:48,403 --> 00:06:57,403
+Hafıza birimine göre adres genişliği de bir 4 byte dediğimiz zaten 16 bitlik bir mimari de.
+
+28
+00:06:58,259 --> 00:07:05,020
+Giriş çıkışları için ayrılan hafıza uzayı, yani adresleme bu ne? 16 bit olacak. Buna geleceğiz zaten.
+
+29
+00:07:06,160 --> 00:07:13,620
+Şimdi çevre birimleriyle aslında SMB'den hatırlarsınız, iki tane komut vasıtasıyla aslında çevre birimlerine erişim söz konusu.
+
+30
+00:07:13,620 --> 00:07:22,620
+Biri out, işte çıkışa gönder, porta gönder gibi. Bir de in akümülatörlere porttan veri out dediğimiz yapım.
+
+31
+00:07:23,540 --> 00:07:42,220
+Adreslerde giriş çıkışlar dediğimiz gibi her birbirinin bir adres uzayına yerleşmesi lazım. Bu adresleri de define ettiğimiz belli aralıklar var. Misal, sabit adres aralığını biz ilk 16 bit olarak algılayacağız.
+
+32
+00:07:42,355 --> 00:07:50,355
+Onun üstündeki 16 bit benim için veray bir adres olacak. Yani değişken üzerinden adresleme yapabileceğim adres uzayım olacak.
+
+33
+00:07:50,355 --> 00:08:05,355
+Toplam 20 bitlik bir adres uzayımız var. Bunun ilk 8 bitini biz port üzerinden yapacağız. Direkt port, P8, P1 gibi portlara aktif olarak kullanabileceğimiz sabit adres uzayımızı rezerve edilmiş.
+
+34
+00:08:05,355 --> 00:08:10,355
+Diğer 16 biti normal DX register'ları.
+
+35
+00:08:10,355 --> 00:08:16,755
+Bu arada 16 bit olduğu için belki buradan da çalışım yapabilir. Sonuçta bir de ilk semen 16 bitlik veri yazabilirim.
+
+36
+00:08:16,755 --> 00:08:23,355
+Ve o 16 bitlik veri bir değişken üzerinden bir adres uzayı tanımlaması da mümkün olacak.
+
+37
+00:08:23,355 --> 00:08:34,251
+Burada tekrardan işte 8 bitlik yani 0 ile 0FF adresleri arasında benim için tanımlanmış, fixlenmiş port adreslerim var.
+
+38
+00:08:34,580 --> 00:08:42,380
+Ama 0, 100H ile F, F, F, F arası ise benim DX yazma açlarını kullanabileceğim bölgeyi oluşturacak.
+
+39
+00:08:44,019 --> 00:09:04,019
+Giriş çıkış birimlerinde 8 bit veya 16 bit işlem yapabiliriz. Bu şu demek, ben AX register'ın içerisindeki 16 bit'lik sayıyı, register'ın içerisindeki 16 bit'lik değeri portlara 16 bit olarak gönderemesem de 16 bit'in porta yansımasını sağlayacağım. Yapabilirim bunu.
+
+40
+00:09:12,019 --> 00:09:22,620
+Bittik register'ın ilk 8'ini veya son 8'ini de gönderebilirim. Yüksek anlamlı 8, düşük anlamlı 8 diye ayarlayabileceğimiz olanı sunuyoruz.
+
+41
+00:09:24,620 --> 00:09:32,620
+İki tarz adresleme, yani adres düzeyini oluştururken çevre birimleri için mikroişlemci iki yaklaşımı kabul ediyor.
+
+42
+00:09:38,943 --> 00:09:59,943
+Normal hafıza adreslerinden, yani memori adreslerinden farklı bir bölgede olduğunu düşündüğümüz senaryo var. Buna isolated adresleme deniyor. Yani işte ben 32'nin oğlu göze giderken örnek verelim, main memoriye mi gideceğim yoksa main memoriye, yani memoriye'nin içerisindeki 32. göze mi gideceğim yoksa...
+
+43
+00:10:00,000 --> 00:10:13,000
+Yoksa işte hafıza uzayında input output olarak tanımladığım bölgenin 32'ye mi gideceğim, ayrıştırabileceğimiz bir pin ile belirleyebileceğimiz, ki bu pinini biz uçlarını anlatırken bahsetmiştik,
+
+44
+00:10:13,000 --> 00:10:22,000
+memory veya input output'a gideceğini belirledikten sonra aynı adres noktasında, aynı adreste veri okuma yapabiliyoruz.
+
+45
+00:10:22,000 --> 00:10:27,884
+Mesela memory seçtim, yani M ucundan bir verisi verdim, memory selected oldu, yani seçildi.
+
+46
+00:10:28,019 --> 00:10:39,419
+O memori seçildikten sonra 32, memori'deki 32'yi kastedecek ama input output ucundan, bu M, O ucundan ben 0 verisiyle memori'yi seçmedim.
+
+47
+00:10:39,419 --> 00:10:45,419
+Çevre birim uzayındaki entekleyi seçtim. O zaman da 32 dediğimiz...
+
+48
+00:10:45,587 --> 00:10:51,587
+Adres, benim için memori'den bir veri okumak veya memoriye yazmak olmayacak.
+
+49
+00:10:51,587 --> 00:10:57,788
+Input output, çevre birimlerinden bir veri okuyup çevre birimlerine veri yazmak anlamına gelecek.
+
+50
+00:10:57,788 --> 00:11:06,587
+Isolated da bu. Biz genelde lablarda ve sınavlarda isolated mappingi kullanacağız genel olarak.
+
+51
+00:11:06,587 --> 00:11:13,587
+Bir tane de memory mapping dediğimiz tek bir hafıza biriminin olduğunu kabul eden yaklaşım.
+
+52
+00:11:13,587 --> 00:11:20,587
+Burada input-output olan kısmı memurinin içerisine gömüyorlar. Şurada hatta bir şekil var.
+
+53
+00:11:20,587 --> 00:11:29,587
+Isolated olan da 20 bitlik yani 1 milyon satırlık olan veya 1 megabaytlık diye tabir ettiğimiz bir havza uzayımız var.
+
+54
+00:11:29,812 --> 00:11:49,211
+Isolated'da ama bir de 64 kilobayt, neden 64 kilobayt? Çünkü 16 bitlik bir burada adresleme yapabiliyoruz. 64 kilobayt'lık bir input output kısmı isolated olarak adreslenebilir, kabul ediyor. Böyle iki tane ayrı durumdan bahsediyoruz isolated'da.
+
+55
+00:11:57,395 --> 00:11:59,956
+Şöyle bir değer olsun.
+
+56
+00:12:00,975 --> 00:12:03,535
+Tabii bu burası olmadı, şöyle bir değer olsun.
+
+57
+00:12:04,055 --> 00:12:06,355
+Şimdi burada da aynı yere gelen
+
+58
+00:12:08,155 --> 00:12:09,675
+bir adresimiz var.
+
+59
+00:12:10,716 --> 00:12:11,735
+Şöyle bir
+
+60
+00:12:12,371 --> 00:12:34,792
+Satır. Yani bu iki yerde gidebilen bir adres tanınmamış. Bunu biz ama şurada bir, yani tabii bu conceptual şu an, bunun önünde ön devredir vesaire olacak ama şu an mantığınıza otursun diye burada input output pinin, yani şu M, I, O dediğimiz pinin, şurası bubble ile çalışan, burası da normal ile çalışan.
+
+61
+00:12:38,548 --> 00:12:49,048
+Şurada da bir 8086 olduğunu düşünelim, input şu ucunu yani bağladığımızı düşünelim de ben buraya bunu sığdırabilecek miyim? Evet, çok güzel.
+
+62
+00:12:52,275 --> 00:13:02,775
+Evet, yani bu 8086'nın M-I-O ucundan M1 geldiğinde bu seçilecek ve ilgili adres, buradaki veri, buradaki adres satırını kastedeceğiz.
+
+63
+00:13:02,775 --> 00:13:10,975
+Ama input output da işte 0 geldiğinde mi 8086'dan burayı enable etmeyecek, enable edilen kısım burası olacak.
+
+64
+00:13:10,975 --> 00:13:18,775
+Temel mantık, tabii bu direkt böyle olmayacak ama şu an temel mantık hani bu pini biz isolated'da kullanacağız.
+
+65
+00:13:18,995 --> 00:13:33,495
+Çünkü hafıza uzayları ortak bir adresi gösterebilir. Öteki tarafta ise, Memory MapIt'da aslında tek bir hafıza uzayımız var ve tek bir hafıza uzayının içerisine bir kısmı reserve etme durumu söz konusu.
+
+66
+00:13:33,495 --> 00:13:45,495
+O da 64 kilobaytlık bir alanı, bunun içerisinden aslında memorinin 1 megabayt eksi 64 kilobayt kısmını çıkartıp o kısım kalacak şekilde memoriyi kullanmamız gerekiyor.
+
+67
+00:13:46,995 --> 00:13:54,795
+var. Soldakinin avantajı, izolatif olmasının avantajının en büyük birinci avantajı şu, komutlarımız farklılaşabilir.
+
+68
+00:13:54,795 --> 00:14:08,795
+Misal, in, nasıl ters yazdım? In, out dediğimiz iki tane komuttan bahsedelim. Bu komut, memurda bir veri okumak için kullanacağımız komut değil. Bu in, outları biz,
+
+69
+00:14:11,124 --> 00:14:39,124
+Çevre birimi, isolated olmuş çevre biriminden berileri okumak için kullanacağız. Ama bu tarafta biz memory içerisinde bir rezerv ettiğimiz için bölgeyi, move komutuyla input output'tan da okumamıza gerekli kılıyor. Yani burası biraz daha programlama aşamasında daha kolay ama tabii daha satır sayısını arttıracak bir yapıya bürünüyor. Ama daha kolay, daha anlaşılır programlar yazmamıza neden oluyor isolated. Ama isolated'ın bir sıkıntısı da şu, fiziksel olarak tabii…
+
+70
+00:14:39,124 --> 00:14:51,283
+bir havza modülü daha tasarlamak gerekiyor uzayda, tanımlanmak için giriş çıkış birimlerini. Ama şeyde, memory inputta tek bir memori içerisinde bir bölgeyi kullanıyoruz diyebiliriz.
+
+71
+00:14:53,964 --> 00:15:04,084
+Burada anlattığımız kısımlar zaten yazılmış durumda. Evet, ayrı komutlara gerek yok mu? Komutuyla işlem yaptığımızdan bahsettim.
+
+72
+00:15:05,043 --> 00:15:19,043
+Fiziki uçlara gerek yok havlu işlemi için ama biz şimdi göreceksiniz isolated'da biz ekstra bir adresleme için fiziksel uçlar oluşturacağız. Ama şu an memory method üzerine yoğunlaşmayacağız.
+
+73
+00:15:20,043 --> 00:15:29,043
+Şimdi düğme arayüzü en basit bilinen input arayüzü. Yani o mikroişlemciye bir giriş girdi verebilmemizi sağlayan arayüz.
+
+74
+00:15:30,067 --> 00:15:33,388
+Burada şimdi örnek bir arayüz tasarlayacağız.
+
+75
+00:15:33,388 --> 00:15:35,708
+Ama butonlarda
+
+76
+00:15:36,208 --> 00:15:43,628
+genelde bir bouncing error diye tabir ettiğimiz örnek vermek gerekirse, misal geliyor,
+
+77
+00:15:43,888 --> 00:15:47,228
+0 bandı ve artı 5 bandı şurası da.
+
+78
+00:15:47,228 --> 00:15:50,548
+Bastınız, yani şöyle bir tasarım yaptığınızı düşünelim.
+
+79
+00:15:52,848 --> 00:15:55,408
+Artı 5 volt buton var.
+
+80
+00:15:55,927 --> 00:15:57,163
+Gene de.
+
+81
+00:15:57,299 --> 00:16:09,299
+Değil mi? Şuradan da ölçü alıyorum ve out diyelim. Şimdi düğmeye basmadığımda sıfır, düğmeye bastım, pardon şuradan yanlış aldım out'u. Niye oradan aldıysam.
+
+82
+00:16:10,451 --> 00:16:21,951
+Yani şuradan geçen akım üzerinden de gidebiliriz. Düğmeye basmadığımızda 0, bastığımızda 5 olacak değil mi? Normalde hani teoride bunu böyle çiziyoruz ama düğme basıldığında.
+
+83
+00:16:21,951 --> 00:16:31,851
+Düğmenin bouncing error diye tabir ettiğimiz bir hata payı var. Nedir o hata payı? Düğmedeki rezonans yani bir titreşim durumu.
+
+84
+00:16:31,851 --> 00:16:38,451
+Aslında benimki direkt böyle çıkmaz. Şöyle biraz tetikle sonra devam eder. İşte bu kısma bouncing error...
+
+85
+00:16:38,451 --> 00:16:45,451
+Mikroişlemci bu kısımda, eğer karar mekanizmasında, yani yazılan kodda bu kısmı yazılımsız olarak...
+
+86
+00:16:47,635 --> 00:17:07,875
+Engellemeye çalışmazsak bazen sıkıntılı analizler yapmasını sağlayabiliyor. Bunu yapmak için de buraya bir delay koymak, bir süre bastıktan bir süre sonra aslında işleme tabi olmasını, stabil moda geldikten sonra tabi olmasını yapacağız. Programlarda da yapacağız ama böyle bir hatanın olduğunu bilelim.
+
+87
+00:17:15,635 --> 00:17:27,635
+Bu, mikroişlemciye input dediğimiz şey, basılmadığı durumlarda, yani ben düğmeye bastığımda, lojik 0'a düşmesini beklerim mikroişlemcinin iç yapısında.
+
+88
+00:17:27,635 --> 00:17:41,635
+Yani aslında şurada bahsettiğimi tam tersini mikroişlemci içerisinden okumam lazım. Hep 5 volt gelecek o pin'e, ben düğmeye bastığımda 0'a indiğinin tespiti yapılır.
+
+89
+00:17:42,451 --> 00:17:52,692
+Çünkü sıfırı tespit etmek, yani gene edilemek, o pini algılamak için daha basit bir yöntemdir mikroişlemci bazında. Bu iki kaydıyı unutmayalım.
+
+90
+00:17:53,011 --> 00:18:18,011
+Şimdi burada farklı düğme arayüzleri var. Burada soru şu, hangi düğme arayüzü demin anlattığım gibi yaklaşımla çalışır mikroişlemciden? Şu pinlerin kısmı, şuralar yani 8086'yı gösteren, yani şu an tabii ön devredir falan da olacak bunun ama şu an şey diye düşünüyorum. 8086'ya gidiyor bu uç ve ben buradan bir veri okuyorum 8086'da.
+
+91
+00:18:18,483 --> 00:18:24,083
+Hangi yapıyı kullanmamız daha mantıklı? Sizce?
+
+92
+00:18:33,811 --> 00:18:42,211
+Evet. Sol üstlendi. Burası artı 5'i gösteriyor değil mi? Şu üçgenler artı 5 volt'u gösteriyor.
+
+93
+00:18:45,211 --> 00:18:50,411
+Şimdi 5 volt, düğmeye bastığımda 5 volt 8086'ya gidiyor.
+
+94
+00:18:50,528 --> 00:19:02,528
+Ama demin dedik ki, 8086 0'ı tespit etmeli. Yani ben bastığımda, 8086'ya 0 verisinin gitmesini istememiz lazım.
+
+95
+00:19:02,528 --> 00:19:14,092
+Sağ üst demişsiniz, sağ üst de basalım bakalım. Basmadığımda 0, 8086, bastığımda 8086'ya yine 1 diyebilirim.
+
+96
+00:19:17,299 --> 00:19:30,799
+Sol alt diyen var, şunlar gitti değil mi? Sol alta bakalım. Sol altta zaten 0 gelirken bastımda yine 0 geliyor. Bunun nesini kontrol edeceğiz? Bu da değil.
+
+97
+00:19:35,347 --> 00:19:45,548
+Sağ alt doğru cevap, evet. Ama şunlara bir bakalım. 5 volt, yani normalde hiçbir şey gelmiyor. Bastığımda gelir mi buradan? 8086'dan bir şey okur muyuz?
+
+98
+00:19:48,548 --> 00:20:00,000
+Arkadaşlar, yani ben bu düğmeye basmam, bir şey değiştirecek mi? Değiştirmeyecek. Çünkü dediğimiz gibi gene D'ye doğru akacak. Yani 8086'ya.
+
+99
+00:20:00,000 --> 00:20:11,400
+Bu yüzden, bu kadar bir veri gelecek, 0'da yine 0 olarak kalacak. Şu tarafa bakalım. Normalde bir verisi geliyor, 8086'ya bastığımda 0 verisi gelecek değil mi?
+
+100
+00:20:11,667 --> 00:20:28,667
+Bu uygulanabilir. Ama buradaki sıkıntı da şu, 5 voltu direkt, hani buradaki gerilimdeki dalgalanmalardan dolayı 5 voltun 80s veya başka bir gerilim kaynağının 8086'ya direkt bağlanması çok da fizibel bir yaklaşım değil.
+
+101
+00:20:28,667 --> 00:20:33,667
+Yani çünkü 8086'nın portlarından verilerin yani...
+
+102
+00:20:34,223 --> 00:21:01,223
+Birazcık sünümlendirerek okunması daha mantıklı. Burada koruma direnci dediğimiz, işte burada 8086'yı direkt 5 volt veya daha yüksek voltaj gerimlerinden koruyacak olan direnç yapısı olduğundan dolayı doğru cevap budur diyeceğiz. Çünkü bastığımda bu da aynı şekilde sıfır verisini gönderip 8086'nın sıfıra göre bir program yazmasına, yani sıfırı tespiti üzerine bir kontrol mekanizması oluşturmamızı sağlıyor.
+
+103
+00:21:03,028 --> 00:21:08,428
+Tamam herhalde. Burada Bansinki anlatmışız gene. Kontakt bürüt istiyorlar.
+
+104
+00:21:08,660 --> 00:21:28,340
+Farklı debounce, yani bu bouncing ki önleyen donanımsal yaklaşımlar var. Bunlardan biri flip-flop tasarımı çok değinmeyeceğim ama flip-flopları ufak belki lojikten hatırlarsanız şey yapıyordu, çıkışı bir sonrakinin girişi olduğu için bir süre veriyi bu içeride bekletiyordu.
+
+105
+00:21:28,340 --> 00:21:35,060
+Ve o bir süre bu boyunda beklettiği için şu ilk baştaki piki, şurayı elimine edebiliyorum.
+
+106
+00:21:35,284 --> 00:21:53,284
+Böyle bir yaklaşım hani çok üzerinde durmaya gerek yok ama sonuçta amacımız bizim şu kıpraşımı yani şuradaki anahtardaki değişimde olan salınımı sıfırlamamız lazım. Mikroişlemci içerisindeki yazacağımız işte programlarda bu kısım.
+
+107
+00:21:53,364 --> 00:22:04,084
+Yani real'da tabii bu biraz yasılımda zaten şey diyeyim, proteus üzerinde bu çok problem değil ama real'de buraya bir ön devre tasarımlamamız gerekiyor.
+
+108
+00:22:05,923 --> 00:22:13,084
+LED arayüzü dediğimiz şey ise aslında basit çıkış yani output devresi.
+
+109
+00:22:13,084 --> 00:22:21,084
+Şimdi burada da amaç şu olmalı arkadaşlar, LED'i mikroişlemcinin piniyle yakmak değil.
+
+110
+00:22:21,715 --> 00:22:39,715
+Çünkü mikroişlemcinin pinlerinden biz bir tetikleme sinyali gönderebiliriz. Yani çok yüksek değerlerde gerilim vesaire. Tekrardan söylüyorum, Proteus gibi yazılımlarda bu yine mümkün ve bu hatayı görmeyebilirsiniz. Hata demeyelim de bu, feasible yani fonksiyonelliği.
+
+111
+00:22:39,988 --> 00:22:49,988
+Gayet net, fonksiyonel diye yorumlayabilirsiniz ama gerçek hayatta aslında LED direkt mikroişlemci outputu çıkış portlarıyla beslenmez.
+
+112
+00:22:49,988 --> 00:23:00,988
+Misal örnek verelim, mikroişlemci burada. Ben öyle bir devre şeyi yaptım ki, işte mikroişlemcinin bir portu buraya bir verisi veriyor, bu LED'i yapıyor. Bu proteoste yanar.
+
+113
+00:23:00,988 --> 00:23:03,988
+Ama gerçek hayatta kullanılmaz böyle bir yaklaşım.
+
+114
+00:23:04,192 --> 00:23:18,951
+Zaten burada da artı 5 volt tersten verildiği için çalışmayacaktır. Bu tarafa bakalım. Koruma direnci konmuş buraya ama mikroişlemcinin tekrardan direkt ledi beslemesi istenen bir durum değil.
+
+115
+00:23:18,951 --> 00:23:28,192
+Öteki tarafta bu da zaten ledin hep yanmasını sağlayacak ve ben buradan mikroişlemcinin bu tarafında bir veri gönderdiğimde hiçbir anlamı yok.
+
+116
+00:23:28,723 --> 00:23:32,723
+Şuna gelelim. Genelde arkadaşlar mikroişlemci pinleri
+
+117
+00:23:33,875 --> 00:23:43,875
+Mikroişlemci pinleri tetikleme için kullanılır. Yani bir pas üretmek için, bir pas uzun süre bir seviyesinde sinyal üretmek için kullanılır.
+
+118
+00:23:43,875 --> 00:23:57,875
+Şimdi hatırlarsanız transistörlerin çalışma prensibi şu idi. Beysine bir akım verdiğinde bu beysine verilen akım ile transistör emitterden kolektöre tetiklenirdi ve akım geçmesini sağlar.
+
+119
+00:23:58,963 --> 00:24:13,063
+Şimdi normalde ben bir şey vermedim, burası sıfır, mikroişlemci bir kontrol sinyali göndermedi, burası sıfır, artı 5 volt bu ledi yakar mı? Yakmaz. Çünkü bu arada bir iletim söz konusu değil.
+
+120
+00:24:13,063 --> 00:24:21,763
+Ne zaman ki ben buraya bir seviyesinde bir sinyal verdim mikroişlemciden, bu enabled oldu yani bu...
+
+121
+00:24:21,824 --> 00:24:28,704
+Akım geçmesini sağladı. Bu led de yanlış olacak normal 5 voltu yukarıdan verdiğim için.
+
+122
+00:24:30,704 --> 00:24:33,824
+Anlaşıldı mı bu arkadaşlar? Herhalde anlaşıldı.
+
+123
+00:24:41,299 --> 00:24:50,299
+Evet, şimdi basit çevre birimleri için adres çözümleme gerekli dedik. Yani daha doğrusu mikroişlemcinin çevre birimleri basit olmasına gerek yok.
+
+124
+00:24:50,299 --> 00:25:00,299
+Yani üçüncü ders, bundan sonraki, bu hafta işleyeceğiz, giriş yapacağız ama 82'li 5 dediğimiz bir entegre var. Bu entegreyle bir adres çözümlemesi gerekecek.
+
+125
+00:25:00,299 --> 00:25:05,299
+Yani aslında bir adres uzayında o ne takılıysa onun tanımlanması lazım.
+
+126
+00:25:05,491 --> 00:25:17,791
+İşte bunun için örnek verelim bir memory bloğu, hafıza birimi ise bu 20 bit adresleme olduğundan dolayı 20 bit adresinin hepsini kullanarak bu hafıza bloğunu adresleyebiliyoruz.
+
+127
+00:25:17,791 --> 00:25:31,691
+Ama normal dış birimde, input output'larda iki farklı adresleme uyguluyoruz. Bir tanesi değişken üzerinden adresleme, bir tanesi de
+
+128
+00:25:31,859 --> 00:25:44,859
+Tanımlanmış, fixed olan, adresin, bloğunun belli olan kısım. Bunun içinde 8 bit ve 16 bitlik adres bacaklarını kullanacağız. Adres çözümlemesi devresini bu adres bacaklarına göre yapacağız.
+
+129
+00:25:44,859 --> 00:25:56,859
+Örnekten gidelim hemen. Mesela 8 tane red kullanarak demişiz, bir adres tanımlanmış 0F000 adresinde.
+
+130
+00:25:58,420 --> 00:26:15,920
+Gördüğünüz gibi 20 bitlik bir adres. Yani mikroişlemcinin A0'dan A19'a kadar olan bir adres bacağının hepsinden bir adres oluşturmamız isteniyor. Ve bu adres 0F0.00H adresi olacak. 8 dedi bu adresi yerleştirip,
+
+131
+00:26:16,596 --> 00:26:43,896
+Bunun adres çözümlemesini yapalım. İlk etap da bu. İkinci sorunun devamında da şunu söylemiş, bu yerleştirdiğimiz adres, yani bu 0, F0, 0, 0 adresine yerleşmiş olan 8 ledi bir paten olarak bir şablonda yakalım. Ne? 1, 0, 1, 0 şeklinde yansın denmiş. Bakın bu adres bası ilgilendiren kısım, bu da data bası ilgilendiren kısım.
+
+132
+00:26:44,339 --> 00:26:59,739
+Ama ben biliyorum ki bu ikisi mikroişlemci de aynı veri yollarını kullanıyor. O yüzden step by step şey yapmam lazım. İlk başta ben adresi belirlemem lazım.
+
+133
+00:26:59,739 --> 00:27:10,739
+Adresi donanımsal olarak, yani o 8 tane ledi fiziksel olarak o adreste çalışacak şekilde yerleştirmem lazım.
+
+134
+00:27:11,476 --> 00:27:22,236
+Bu benim için adres bası anlatacak ve o adrese yerleştirdiğim 8 tane lede ben veri yolundan veri göndereceğim. Nasıl bir veri? 1010 şeklinde.
+
+135
+00:27:23,676 --> 00:27:28,676
+Bakıyoruz, 74245 entegresini hatırlıyor muyuz? Ne yapıyordu bu?
+
+136
+00:27:31,076 --> 00:27:33,476
+Arkadaşlar, ne yapıyordu bu entegre?
+
+137
+00:27:38,644 --> 00:27:40,332
+İngilizcesini yazalım.
+
+138
+00:27:48,339 --> 00:27:51,659
+Burada mıyız arkadaşlar? Boşa konuşmuyorum umarım.
+
+139
+00:27:55,028 --> 00:28:10,648
+Arkadaşlar, bu entegre bizim için yön, yani direction belirtecek verinin A portundan B'ye mi yoksa B portundan A'ya doğru mu olacağını belirtecek olan entegreydi. Ve bir dır ucuyla bir enable ucu vardı.
+
+140
+00:28:10,799 --> 00:28:27,739
+Hatırlarsak, dir ucuna 5 volt verirsem, A portuna B portuna, dir ucuna GND veya 0, işte RAW verirsem, B portuna A portuna iletimden bahsedecektik. Ta ki enable 0 verilirse.
+
+141
+00:28:28,180 --> 00:28:53,599
+Enable 1 olursa bu entegre çalışmayacaktır. Şimdi aslında ben adres çözümleme dediğim şey tam olarak sadece Enable ucunda olan işleri bahsedeceğim. Çünkü misal ben 8 tane LED'i 0F00H adresine koy dedim. Değil mi? Şurası A0'dan başlıyor.
+
+142
+00:28:53,983 --> 00:29:11,163
+Hepsini yazmayacağım tabii. Şurası A19'da bitiyor. Şu kısım A15 değil mi? A15 olur, direkt 16 olur, 17 olur. Pardon yanlış oldu.
+
+143
+00:29:12,596 --> 00:29:37,596
+18, 17, 16, burası, 15, 14, 13, 12, burası değil mi? Yanlış hesaplamadıysam. Evet, böyle olması lazım. Yani A15, A14, A13, A12'den bir verisin, diğer bütün adres bacaklarından 0 verisi gittiğimde ben bu 8'de de veri yazabilirim.
+
+144
+00:29:37,940 --> 00:30:01,700
+Demek istiyoruz, adres demeden kastımız. Adres uzayına yerleştirmekten kastımız yani. Şimdi o zaman ben bu enable ucuna, bu entegrenin çalışabileceği o uca, o çalışmasını aktif hale getiren o uca, bu adres kombinasyonunda bir lojik tasarım yaparsam, sadece bu adres geldiğinde ağ uçlarından
+
+145
+00:30:01,907 --> 00:30:17,907
+Bu adres verisini gönderdiğimde A uçlarından sadece o zaman bu enable olacak. Ondan sonra tekrar veri yazdığımda buradaki veri portlara yani ledlere yansıtılabilecek diyebiliriz.
+
+146
+00:30:17,907 --> 00:30:24,907
+Yani şimdi baktığımızda, şimdi böyle bir diagram yok tabii. İşte 20 kapılı bir nant kapısı yok.
+
+147
+00:30:25,428 --> 00:30:30,428
+Ama şu an conceptual olarak mantığı, mentaliteği oturtmak için yapıldı bu.
+
+148
+00:30:30,428 --> 00:30:42,428
+İşte A15, A14, A13, A12'den F yani 1, 1, 1, 1 verisi verdim. Diğer bütün hepsinden 0, 0, 0, 0 verisi verdim.
+
+149
+00:30:42,428 --> 00:30:51,372
+Şimdi bu adres dışında herhangi bir adreste bu enable çalışır mı? Çalışmaz tabii. Yani şu...
+
+150
+00:30:51,380 --> 00:30:59,180
+Şu kısımları 19, 18, 17, 16 da enable da kullanabilir sıfır olarak. Onlar yazılmamış da.
+
+151
+00:31:00,660 --> 00:31:07,099
+Bir tane de ne uçlarım vardı hatırlarsanız. Memory mi, input output mu ucum vardı.
+
+152
+00:31:07,099 --> 00:31:15,180
+E bu da sıfır olmasını istiyorum çünkü bu bir çevre birimi, bir hafıza birimi değil. Sonuçta port da yani şey...
+
+153
+00:31:15,380 --> 00:31:26,100
+bellekleri yakıp söndüreceğim. Bir veri yazmayacağım memoriye veya bir memori blondan veri okumayacağım. O yüzden input output'u seçeceğim, mikroişlemciden 0 göndereceğim.
+
+154
+00:31:26,675 --> 00:31:35,076
+Bir de porta yazı yazacağım için right'a 0 göndermek istiyorum. Şuradaki mikroişlemcinin iç yapısında ben bunları programladım.
+
+155
+00:31:35,076 --> 00:31:48,915
+M-O-O'ya 0, right pin'ine 0, işte adres yoluna da 0F0, 0, 0, H'ı yazdım. Enable etti. Bunların hepsinin kombinasyonuyla bu anca enable olur.
+
+156
+00:31:48,915 --> 00:31:54,276
+Ola ki bir pin bile 0 iken bir göndersen, yani şunu göndersen, F0, 0.
+
+157
+00:31:54,432 --> 00:32:11,031
+Bir, birisini göndersem, bu kapı çalışmayacağı için, buradan bir üretilecek, bir üretileceği için de enable olmayacak, enable olmadığı için de bu 8 tane ledi ben adres uzayında tetiklememiş olacağım.
+
+158
+00:32:12,031 --> 00:32:15,231
+Aslında adres çözümlemeden kastımız bu.
+
+159
+00:32:17,044 --> 00:32:38,604
+Başka bir, tamam artık bunu seçtik. Tabii şu var, şimdi biz bir veri gönderdik 0F00'la, seçildi bu. Sonra başka bir veriyle bir data göndermem lazım. Ama aynı ortak yol olduğu için başka bir veri gönderemiyorum. Bir latch devresi yapmam lazım değil mi? Yani aslında şunun ön koşulu, yani şuranın altında…
+
+160
+00:32:39,092 --> 00:33:00,211
+Geçen haftanın sonunda anlattığım LEŞ devreleri vardı, hatırlıyor musunuz? O LEŞ devresinde halen tutuyorum bu veriyi. Ben buradaki başka bir sayı gönderdiğimde bu AD portuna hiçbir önemi yok. Çünkü benim için LEŞ'lendi bir önceki aşamada ve burayı her daim besliyor bu. Ta ki yeni LEŞ verisi gelene kadar.
+
+161
+00:33:00,915 --> 00:33:10,915
+O yüzden bu ön devresini geçen hafta anlattık, buraya çizmedik ama burada bir leç devresi var. Yani buradaki veriyi bu kapıda sürekli kılarak tutuyor.
+
+162
+00:33:10,915 --> 00:33:23,884
+Sonra işte ne dedik? Bir patern yani. Artık burayı seçtik. Adres uzayında 8 tane de tanımlı. Artık veri göndereceğim. Ne diyorum? 1-0, 1-0, 1-0 patern demiştik.
+
+163
+00:33:27,923 --> 00:33:37,104
+Bunun da hegzadesimal nedir bu? 55'tir değil mi? 55H olarak AL'ye birileri yazdım ve
+
+164
+00:33:37,395 --> 00:34:05,395
+Benim nereye, hangi adrese ben bu veriyi göndereceğim? DX dediğimiz gibi variable adresleme bu şu an. Yani bir değişkene atanarak yapılan bir adresleme yapıyoruz. Buradaki adres uzayında, yani bu 8 dedi adres çözümleme devresiyle seçebileceğimiz adresi DX register'ına atadık. Sonra da benim 1.0, 1.0 olan yani bir yan, bir söndür.
+
+165
+00:34:05,395 --> 00:34:16,395
+Bu konuda olan verimi, port'a out komutuyla, burada isolated olmasından dolayı out kullanıyoruz, out komutuyla port'a gönderdim.
+
+166
+00:34:16,395 --> 00:34:31,395
+Ve şu an artık adres uzayında 0F00, 0F00, 0H adresindeki 8 tane LED'e bir pattern olarak veri göndermiş oldu.
+
+167
+00:34:33,523 --> 00:34:58,023
+Anlaşıldı mı burası? Herhalde anlaşıldığını düşünüyorum. Giriş birimi üzerinde de yapalım aynı şeyi. Giriş birimde demişiz ki, 8 tane buton olacak. Bunun da adresi yine 0F0, 0, 0, 0, H adresinde yerleşmiş olsun denmiş. Bir adres çözümlemesini yapacağız bunun. Sonra bir de demiş ki, düğmelerin okunmasını istiyor.
+
+168
+00:34:59,572 --> 00:35:10,572
+Bakalım, yine 74245 entegresiyle bu seferdir, GND'ye bağlı olacak şekilde, ki bu şu demek, B'den A'ya doğru bir port okuması yap demek.
+
+169
+00:35:10,572 --> 00:35:18,572
+Ve bu sefer read olan, write değil, read olan pinin 0 olduğu durumu da kontrol etmemiz gereken.
+
+170
+00:35:19,188 --> 00:35:29,188
+Sonuçta read yani okuma işlemi yapacağım ve adresleme aşamasında yani adres çözümleme devresinde ben bunu bir input olarak işin içine katmam lazım.
+
+171
+00:35:29,188 --> 00:35:41,188
+Buradan da bir sıfır gelecek ve yine aynı şekilde bir, bir, bir, bir ve geri kalanı sıfır olacak şekilde bu enable'ı sadece bu adreste enable edecek bir yapıya büründürdük.
+
+172
+00:35:41,188 --> 00:35:44,188
+Şu an 8 tane buton benim anca...
+
+173
+00:35:44,628 --> 00:36:03,628
+0F0, 0, 0H adresi ile okunabilecek yapıya geldi. O adresi yerleştirildi. Bu yine aynı DX'e atadık ve DX'i de in komutuyla, yani bu gösterdiği variable'ın fortunundaki, giriş çıkış birimindeki...
+
+174
+00:36:04,532 --> 00:36:14,532
+Port'u okuyarak, Port demek doğru değil ama bu adresteki veriyi okuyarak, AL dediğimiz register'ın içerisine yazdık.
+
+175
+00:36:14,532 --> 00:36:19,532
+Peki soru şu, bu aşağıdaki komut ne iş yapar?
+
+176
+00:36:40,884 --> 00:36:42,884
+Evet arkadaşlar, bekliyorum.
+
+177
+00:36:49,235 --> 00:36:58,235
+Evet, [öğrenci] cevabı yazmış. Düğmelere hiçbir şey basılmadıysa, her daim düğmelerin kontrol edilmesini sağlar.
+
+178
+00:36:58,708 --> 00:37:12,467
+Çünkü ben ne dedim? 8086'nın, yani şunun okunacak porttaki verisi benim için butona basınca 1 değildir. Butona bastığımda 0'a düşme verisidir benim için veri.
+
+179
+00:37:12,467 --> 00:37:25,908
+Mesela bu örnekte de 5 voltlar direkt bağlanmış ve ben veriye okuma ilgili adresi seçtikten sonra okuma yap dediğimde zaten buralara 1, 1, 1, 1, 1 verisi gelecek. Değil mi?
+
+180
+00:37:26,708 --> 00:37:41,467
+İstediğimiz şey veya düğmenin basıldığının kontrol edilmesini sağlamamız için bizim aslında portlardan bir tanesinin bile, inputlardan, girişlerden bir tanesinin bile sıfıra inip inmemesi kontrolü.
+
+181
+00:37:41,844 --> 00:37:50,503
+Baktığımızda porttan okuma yaptık, AL'ye yazdık. AL'de bir port okuması var şu an. Yani port deyip duruyorum ama bir giriş okuması var diyelim.
+
+182
+00:37:50,503 --> 00:38:00,644
+Sesli'in kelle 5'teki port mimarisiyle kafamız karışmasın diye aslında kullanmamam lazım. Burada adresten AL'ye bir veri okudum.
+
+183
+00:38:00,644 --> 00:38:07,844
+Şimdi bu AL'deki veriyi 0FF ile compare ediyorum.
+
+184
+00:38:08,211 --> 00:38:17,211
+Yani 0FF ile kompire etmem, AL'nin içerisi bu mu demem değil mi?
+
+185
+00:38:17,211 --> 00:38:25,211
+E, bununla bu eşit olursa L1'e geri dönmüyor. Hep dönecek. Ne zaman dönmeyi bırakacak?
+
+186
+00:38:25,211 --> 00:38:32,012
+Bir tane düğmeye bastığımda ben, buradaki veri artık 1 değil, şöyle bir veri olduğunu düşünelim.
+
+187
+00:38:32,692 --> 00:38:44,692
+Artık okuduğum değer FF değil, kaç olur? FD oluyor değil mi? Yok, F kaç o ya? Şöyle düşünelim.
+
+188
+00:38:47,192 --> 00:38:57,664
+Aynen. Yani 8, 12, 13 oluyor. A, B, C, evet. D. D, F oluyor.
+
+189
+00:38:57,664 --> 00:39:01,904
+misal DF olduğu için de FF ile eşit olmayacak ve döngüden çıkacak.
+
+190
+00:39:04,104 --> 00:39:05,304
+Tamam mıyız?
+
+191
+00:39:07,064 --> 00:39:08,584
+Herhalde tamam mısın?
+
+192
+00:39:10,344 --> 00:39:21,584
+Evet, burada birkaç sorumuz var. Birinci sorumuz şu, aynı adreste, demin misal buton yaptık, aynı adreste ve sonra çıkarttık, aynı adreste bu sefer LED yaptık.
+
+193
+00:39:22,068 --> 00:39:30,568
+Hem giriş hem çıkış birimi yerleştirilse bir problem oluşturulmuşsuz. Size bir soru.
+
+194
+00:39:37,396 --> 00:39:42,076
+Yani 4 tane buton koydum, 4 tane red koydum. Bir problem oluşturur mu?
+
+195
+00:39:46,708 --> 00:39:59,307
+Hiç mi görüş yok arkadaşlar? Geçiyorum, cevap vermeyeceğim. Basit giriş birimi, çıkış birimi 0F001H adresine yerleştirmek için ne yapmalıdır?
+
+196
+00:39:59,307 --> 00:40:08,708
+Yani biz demin 0F001H adresine yerleştirmek için ne yapmamız gerekiyor?
+
+197
+00:40:18,708 --> 00:40:21,268
+Evet arkadaşlar, hiç bir yorum yok yani.
+
+198
+00:40:28,659 --> 00:40:30,659
+İkinci soruya geçtik arkadaşlar.
+
+199
+00:40:33,659 --> 00:40:35,659
+Bu soruların cevaplarını araştırırsınız arkadaşlar.
+
+200
+00:40:37,659 --> 00:40:41,659
+Yani tartışalım istiyorum ama hiç dönük olmayınca geçiyorum arkadaşlar.
+
+201
+00:40:42,659 --> 00:40:49,659
+Çevre birimleri kontrolüne geldik. Şimdi 3, normalde 2 ana başlıkta ama toplamda 3 tane farklı kontrolümüz var.
+
+202
+00:40:50,099 --> 00:40:57,420
+Çevre birimi dediğimiz yapılar, işte dediğim gibi bir buton, bir led veya bir input olabilir veya bir output olabilir.
+
+203
+00:40:57,619 --> 00:41:13,619
+Şimdi normalde iki yöntem ana başlıkta var. Biri pooling yöntemi, biri de kesme, interrupt yöntemi. Pooling'i zaten işitim sistemlerinden belki hatırlarsanız, her bir prosesin koşulması aşamasında bazı skeçinin algoritmaları vardı.
+
+204
+00:41:24,960 --> 00:41:33,460
+Öncelik ataması veyahut da öncelik atamadan, Runt Robin dediğimiz sırasal bir şekilde kontrol söz konusu olabilir.
+
+205
+00:41:33,780 --> 00:42:01,780
+Öncelik atama, akış diagramına bakacak olursak, işte birden falan üç tane düğme var, buton var. Birinci düğmeyi kontrol eder. Eğer düğmenin kontrolü biterse tekrar birincisi öncelikli olduğu için, yani bitmezse birincisi öncelikli olduğu için hep bu biri kontrol etmeye devam eder. Ama ne zaman birinci düğme veya birinci inputla işimiz bitti, ikinciye geçer, ikinciyi kontrol eder ama ikinciyle iş bittikten sonra...
+
+206
+00:42:01,780 --> 00:42:05,780
+Daha sonra, yani şey, bitmeden, ikinciyi...
+
+207
+00:42:06,068 --> 00:42:19,268
+Hep bitirisiye kadar devam etmez. Tekrar döner başa, biri tekrar kontrol eder. Eğer bir de işlem bittiyse ikiye geçer. İki de işlem bittiyse üçe geçer. Üç de işlem bitmediyse tekrar biriden kontrol eder.
+
+208
+00:42:19,268 --> 00:42:31,468
+Bunun gibi bir yaklaşım, öncelikli olan iş daha bitmediyse, bitesiye kadar o öncelikteki işi bitirmeyi hedefleyen bir yaklaşım yani port kontrollerinden bir tanesi.
+
+209
+00:42:31,795 --> 00:42:54,855
+Öncelikli olan porta daha anlamlı bir şekilde daha sık gitmesini sağlıyor. Ne zaman portta işimiz bitti veya işte o giriş birimiyle işimiz bitti, o zaman bir sonraki giriş birimine, o ikinci giriş birimindeki işin bitmemesi durumunda tekrardan birinci işi kontrol edip tekrar ikiye devam etmek esasına dayalı.
+
+210
+00:42:55,827 --> 00:43:03,027
+Bir de Runtrobin, zaten bu döngü, yani bir sırasal düzende yapılan bir işlem.
+
+211
+00:43:03,027 --> 00:43:13,027
+İşte birinci girdiği kontrol et, veriyi oku, ikinci indiği kontrol et, veriyi oku, üçü kontrol et, veriyi oku, tekrar başa al dediğimiz bir yaklaşım.
+
+212
+00:43:13,027 --> 00:43:22,827
+Yani burada en başa dönme durumu söz konusu değil. Eğer ki işte o geride bir veri yoksa direkt sonraki girdiğe devam ediyoruz. Böyle bir yaklaşım.
+
+213
+00:43:23,092 --> 00:43:46,592
+Interrupt dediğimiz şey, yani kesme olarak denedirdiğimiz girdi ise, 7 veya 8. haftalarda bunu işleyeceğiz ama, işte bir ibare, bir kesme oluştuğunda porta git mantığı, ki şu an günümüzde daha çok kullanılan yaklaşım. Onun dışında o porta, o girdi birimiyle ilgilenme dediğimiz şey olacak.
+
+214
+00:43:49,235 --> 00:43:54,515
+Tamam arkadaşlar, bu kısım bitti. Şimdi öteki kısma başlayacağız.
+
+215
+00:43:59,443 --> 00:44:02,443
+Ara vermeyeceğim arkadaşlar, zaten 2 saat.
+
+216
+00:44:05,043 --> 00:44:12,643
+Aynı teknik [öğrenci], yani Ronald Robin'in duyduğunu, schedule'ın, schedule'ın kalbırtmalarını duyduğunda buradaki aynı yaklaşım. Sadece o
+
+217
+00:44:12,643 --> 00:44:19,211
+prosesleri yani işlemleri arkadakileri belli bir süre bazında işte, belli bir...
+
+218
+00:44:19,507 --> 00:44:32,707
+zaman ayarlarını o zamanlar boyunca dönüp dönüp tekrar yapmak üzerine kurulu. Burada da o zamanlar aralarında portları veya işte girdil birimlerini sırasal düzenle kontrol etmek alakalı. Yani o alakası var.
+
+219
+00:44:38,996 --> 00:44:41,996
+Şimdi, bir tane bir yansıtmamız lazım.
+
+220
+00:44:53,108 --> 00:44:54,128
+Evet şimdi
+
+221
+00:44:54,291 --> 00:45:20,731
+Basit giriş ve çıkış birimleri olan buton ve düğme ve led izahını yaptık. Bunlar 8'li olarak kullanabileceğimiz yapılardı veya farklı farklı yapılar kullanılabilir ama bunlar bireyseldi. Yani şimdi de 8255 diye bir entegre var. Bu entegrenin pinlerini, iç yapısını vs. analiz edeceğiz bu derste. 3 tane modu var.
+
+222
+00:45:22,291 --> 00:45:37,291
+Bu işlemeden analiz edip bitireceğiz. Mod 1'e geçmeyeceğiz diye düşünüyorum. Mod 0'ın örneklerini de labınız olduğu gün yaparız. Lab'a da zaten mod 0'la alakalı bir konu vardı diye hatırlıyorum. Daha hazırlıklı girmiş olursunuz.
+
+223
+00:45:37,291 --> 00:45:45,036
+8255'in arkadaşlar genel tabiri programlanabilir çevre birimi arayüzü entegresi.
+
+224
+00:45:45,043 --> 00:45:53,244
+Yani ben programlayarak birden fazla porta sahip olan bir çevre birimini kontrol edebileceğim bir entekle.
+
+225
+00:45:53,244 --> 00:46:04,643
+3 adet genel amaçlı port içerir. Ne demek? 8 bitten oluşan 3 adet portun var demek. 8 bit veriyolu genişliğine sahiptir zaten.
+
+226
+00:46:04,768 --> 00:46:31,768
+Bir diagramımız var şurada zaten. Şu sol taraf mikroişlemcinin 8 bitlik veri girişine bağlanacak olan kısım. Ama burada bir soru işareti var. Mikroişlemcinin 16 biti var. Ama burada 8 bit giriş var. Buna değineceğiz. Yani 16 bitlik bir mikroişlemci, 8 bitlik bir port mimarisinde nasıl çalışır değineceğiz. Ama bu entegre 8 bit port alıyor.
+
+227
+00:46:32,211 --> 00:46:43,412
+ve ilgili yani daha doğrusu 8 adet, 8 bitlik veri alıyor ve ilgili porta bunu yazmayı veya ilgili porttan buraya okumayı sağlıyor.
+
+228
+00:46:43,412 --> 00:46:54,811
+A portumuz var, B ve C portumuz var. Sonra nelerimiz var? A0, A1 pinlerimiz var. Bu aslında portları seçmemize yarayacak.
+
+229
+00:46:57,780 --> 00:47:13,780
+Port A'yı seçeceğiz, 0, 1 verirsek Port B'yi seçeceğiz, 1, 0 verirsek Port C'yi seçeceğiz, 1, 1 verirsek bu entegrenin konfigürasyon ayarını yapabileceğimiz moda sokacağız. Bu çok önemli.
+
+230
+00:47:13,780 --> 00:47:21,780
+Şimdi biz çevre, sunum gözüküyor değil mi arkadaşlar? Bir uyarı aldım şimdi Amazon'dan.
+
+231
+00:47:21,780 --> 00:47:22,780
+Gözüküyor değil mi?
+
+232
+00:47:22,780 --> 00:47:23,780
+Tamam.
+
+233
+00:47:25,556 --> 00:47:42,956
+Bizim 8255 gibi bütün mikroişlemcinin çevre birim entegrelerinde bir kontrol bloğumuz olacak. Kontrol edebileceğimiz, o entegreyi farklı modlara yazılımsal olarak da sokabileceğimiz moda olacak.
+
+234
+00:47:42,956 --> 00:47:51,179
+Ve o moda geçmek için bu 8255'te A0 ve A1'e biz 1-1 verisi vereceğiz mikroişlemci tarafından.
+
+235
+00:47:51,539 --> 00:48:01,940
+Yani şuradan ben bir bir verisi verdiğimde ben artık portlarla hiçbir alakam yok. Bu entegrenin iç yapısına bir kod gömeceğim demek olacak.
+
+236
+00:48:01,940 --> 00:48:19,339
+Ama ben buraya 0, 0 verdim. O şu demek olacak. Buradaki datayı veyahut da porttaki ama hangi porttaki A portunundaki veriyi database'a veya buradaki veriyi port A'ya aktaracağını söyleyecek bize.
+
+237
+00:48:21,300 --> 00:48:37,099
+Read, write'lar, aynen mikroişlemcinin deminki örnekte olduğu gibi, memori yazacağım mı, okuyacağım mı örneğinde olduğu gibi de, burada da okuma mı yapacak porttan, yoksa porta yazı mı, yani bir şey, bir bilgi mi yazacak, bunun sinyarını vereceğiz.
+
+238
+00:48:42,447 --> 00:48:52,048
+8255'in 8086'nın adres çözümlemesinde nereye yerleşeceğini belirteceğimiz gün olacak.
+
+239
+00:48:52,048 --> 00:49:09,248
+Yani deminki örnekteki gibi 0F0, 0'a 8 tane LED nasıl yerleştiriyorsak, şu an 8255 entegresinin de 8086'nın adres uzayında nereye yerleşeceğini bu tip select ile belirleyeceğiz.
+
+240
+00:49:10,739 --> 00:49:17,239
+Başka reset uçu zaten ismini üzerinde resetlemek için. Başka da bir portu yok, şey pini yok zaten.
+
+241
+00:49:20,039 --> 00:49:22,439
+Evet, burada bahsettiğimiz şeyler var.
+
+242
+00:49:23,507 --> 00:49:43,507
+Evet, A1 ve A0 dediğimiz gibi port belirlemek için read, write'ı port A'dan data basa mı, yoksa data'dan port A, B, C, neyse ona mı yazacağını, yani aslında okuma veya yaz mı yazacağını belirlediğimiz kısım, chip select'te zaten bu entegrenin çalışmasını sağlayacak olan pin olacak.
+
+243
+00:49:51,507 --> 00:50:17,148
+Aynı şekilde okuyacağım demek için 0 verisi göndermek lazım. Misal 0, 1, 0, 1, 0 diye bir veri. Ne demek bu? A1, A0, pinleri 0, 1 olursa ben port B'yi seçtim. Read'im 0 olduğu için de port B'den veri yoluna, mikroişlemcinin ağzındaki yani o AD portlarına, AD pinlerine veriyi okumak üzere ayarlamayı gösteriyor 80255.
+
+244
+00:50:19,860 --> 00:50:35,860
+Bu da tamamdır. İç yapısına bakalım. Dediğimiz gibi read write, kontrol üniti var. Bir de A1 ve A0 ki bu A1 ve A0 aslında benim port A, port B ve port C'yi nitelendirecek.
+
+245
+00:50:35,860 --> 00:50:42,443
+Burada çok detaylıca anlatmayacağım ama şunu bilmek lazım. Port A'nın 8 tane pini var, biti var.
+
+246
+00:50:42,516 --> 00:51:10,356
+Port C'nin 8 biti var, Port B'nin 8 biti var. Evet, Port A'yı 8 bitini birden tetikleyebiliyoruz. Port B'nin 8 bitini birden tetikleyebileceğiz. Ama Port C'nin şöyle bir ayarlamasını yapabileceğiz. Üstteki işte yüksek anlamlı 4 biti şöyle tavır alsın, düşük anlamlı 4 biti şöyle tavır alsın diye programlanabilecek. Programlama kastımız neydi? 1-1 durumunda.
+
+247
+00:51:10,516 --> 00:51:17,036
+Yani A0, A1'e 1, 1 verisi verdiğimizde gömeceğimiz anlam, bilgi olacaktır.
+
+248
+00:51:17,036 --> 00:51:33,456
+Bu port C'nin şöyle bir şey yapabileceğiz. Port A'yı full input olarak kullan, port B'yi output olarak kullan, port C'nin yüksek anlamlı 4 bitini input, düşük anlamlı 4 bitini de output olarak kullan diye bunu programlayabileceğiz.
+
+249
+00:51:33,736 --> 00:51:38,036
+Neden? Çünkü bunlar iki ayrı birim olarak iç yapısında mevcut.
+
+250
+00:51:41,012 --> 00:51:45,092
+Başka da bir şey yok buradan bahsedeceğimiz.
+
+251
+00:51:47,507 --> 00:52:00,727
+Evet, burada dedikleriniz var zaten. Ayrı ayrı PCL ve PCH, yani C portunun düşük anlamlı 4'ü, C portunun yüksek anlamlı 4'ünü giriş çıkış olarak, dörder bit olarak ayarlanabilecek diyeceğiz.
+
+252
+00:52:00,727 --> 00:52:14,007
+Bir de C portunu biz, şimdi dedik ya, bu enteklinin 3 modu var. Mod 0, 1 ve 2. Mod 0 zaten düz anlamlı, değineceğiz ona. Direkt porta yaz, porttan oku modu.
+
+253
+00:52:15,507 --> 00:52:33,947
+2. Biraz daha advanced teknik, yani başka işte interruptlar girecek, handshakingler girecek vesaire. Bu modlarda port C'yi biz programlama, kontrol ve durum belirlemek için kullanacağız. Yani port C'den bir veri oku, veri yaz yapmayacağız mod 1 ve mod 2'den.
+
+254
+00:52:33,947 --> 00:52:37,947
+Ama port A ve port B'yi o amaçla hep kullanacağız.
+
+255
+00:52:40,596 --> 00:52:48,096
+Şimdi geldik baştaki soruya. 16 bit veri yolum var, D0'dan D15'e kadar mikroişlemciden çıkıyor.
+
+256
+00:52:48,096 --> 00:52:56,596
+Ama benim bu 8255 enteklemde 8 bitlik bir veri yolum var ve 8 bitlik portlara sahip.
+
+257
+00:52:56,596 --> 00:53:01,096
+3 tane 8 bitlik portu var. Bunu nasıl ben kullanabilirim?
+
+258
+00:53:01,556 --> 00:53:07,796
+Şimdi burada hatırlarsanız mikroişlemci 8086'nın pinlerini anlatırken bir pinden bahsetmiştim.
+
+259
+00:53:07,796 --> 00:53:16,780
+Bus high enable pin'i. Bu şunu yapıyordu. Ben bu bus high enable'a 0 verirsem yüksek anlamlı data yolundaki...
+
+260
+00:53:16,884 --> 00:53:29,003
+D8 ile D15'i ben aktif etmiş oluyordum. Ama BuzzHire Enable'a 1 verdiğimde düşük anlamlı olan D0 ile D7'yi aktif etmiş oluyordum.
+
+261
+00:53:31,003 --> 00:53:39,304
+Şimdi bunu kullanarak biz bir de A0'ı kullanarak ikisiyle bir adresleme yapacağız kendi içerisinden.
+
+262
+00:53:42,003 --> 00:53:58,443
+Örneğin, şimdi 8bit, 8bit analizlerinin ilk başta ve en son 8bit, 8bit iki tane farklı yaklaşımı birleştirerek 16bit veri yoluna sahip 8086'nın 8bit'li çevre biriminde kullanılmasına gireceğiz.
+
+263
+00:53:58,443 --> 00:54:08,804
+Örnek verecek olursak, 8255'e bağlanmış ve denmiş ki soruda F8H adresinden başlayacak diyor adreslemesi.
+
+264
+00:54:09,619 --> 00:54:25,119
+F8 aşı biliyoruz, F'imiz bu, 8'imiz de bu, değil mi? Şimdi buradan başlayacak ve diyor ki sadece çift adresleri kullanarak 8255'i buraya yerleştirin. Şimdi 8255'in...
+
+265
+00:54:25,364 --> 00:54:36,364
+4 tane A0 ve A1'e bağlı olarak, 8255'in girişteki A0 ve A1'e bağlı olarak, port A'sı var, port B'si var, port C'si var.
+
+266
+00:54:36,364 --> 00:54:46,364
+Bir adet de kontrolü göndereceğimiz, yani mikroişlemci, entegreyi farklı modlara sokabileceğimiz programlama pini olan bir 1 pini var.
+
+267
+00:54:46,364 --> 00:54:53,231
+Yani aslında ben 4 birimi, bir entegre var evet ama 4 birimi adres uzayına yerleştirmem lazım.
+
+268
+00:54:53,231 --> 00:55:16,076
+Mikroişlemcinin adres uzayında bu 4 tane farklı adres uzayında 4 farklı birimi yerleştirmem lazım. Örnek verelim, ben mikroişlemcinin içerisinden adres yoluna port A'yı seçmesi için bir veri göndereceğim. Ve sadece port A'yı seçecek. O durumda ben A1 yani mikroişlemcinin A1 ve A0'ına göre...
+
+269
+00:55:16,148 --> 00:55:38,387
+Oradaki A1 ve A0'ı tetikleyebilirim belki. Şu an onun çözümlemesini yapacağız. Amaç bu. Ama şimdi denmiş ki sadece çift adresleri kullan dermiş. Yani aslında ben F8'de başladım ve 4 birimi adreslemem lazım. Ötekisi çift adresler dendiği için bu olabilir.
+
+270
+00:55:38,900 --> 00:55:51,700
+Sonuçta tek adres, yani bir arttırsam, teke düşecek, bir tane de arttırdım, çift oldu. Başka bir tanesi, 2, 4 olması lazım değil mi partner şunun?
+
+271
+00:55:51,700 --> 00:56:05,700
+Şöyle, bu olacak. Üçüncüsü de ne olacak? Şuraya yazmak durumundayım arkadaşlar. Bu olacak.
+
+272
+00:56:06,579 --> 00:56:20,079
+Değil mi? Yani aslında F8, FA, FC ve FE benim için, yani çift adresler dediği için. Böyle bir sırasal düzen oluşturabilirim. Hatta buraya yazılmış zaten.
+
+273
+00:56:20,500 --> 00:56:26,880
+Baktığımda şimdi, adres bunun devamı var ama zaten 1-1 olduğu için yazılmamış. A 19'a kadar gidiyor.
+
+274
+00:56:26,880 --> 00:56:28,079
+Şimdi.
+
+275
+00:56:28,851 --> 00:56:44,091
+Baktığımda değişen pinlere göre ben aslında 8255'in A0, A1 pinlerinde port A, port B, port C ve control world için adres uzayını yerleştirmem söz konusu olabilir.
+
+276
+00:56:44,091 --> 00:56:53,971
+Dizayna bakalım. Şimdi şu iki pin benim direkt zaten demin dediğim port A, port B, port C'yi tetikleyen pinler gibi duruyor.
+
+277
+00:56:54,164 --> 00:57:16,384
+Bakıyorum, 00'dayken ben eğer ki bunu 8255'in A0 ve A1'ine gönderirsem şu sırayı, 00 port A'yı adres diyecek, 01 port B'yi, 01 port C'yi, 01 de kontrol ve ördü göndermemi sağlayacak bir adres uzayına yerleşmiş olacak 8275 değil mi?
+
+278
+00:57:17,588 --> 00:57:25,447
+Mesela, çift adreslere ben şu an 8 bit, yani 16 bit veriyor ol var ama şu an 8 bitini gönderebildim.
+
+279
+00:57:25,447 --> 00:57:31,588
+Şurada dizayn da var. 8086'mız burası.
+
+280
+00:57:33,043 --> 00:57:54,043
+A1 ve A2'yi, 8275'in A1 ve A0'ına bağladım. Buradaki 0, 0'a göre port A'yı, 0, 1'e göre port B'yi, 1, 0'a göre port C'yi, 1, 1'e göre de kontrol gördüğü seçmiş oluyoruz şu an. Bunun içerisinde. Ayrıca benim...
+
+281
+00:57:54,387 --> 00:58:01,987
+Adresleme uzayını, yani adresleri belirlediğim yerde de bir problem teşkil etmiyor. Yani yerleşmesinde bir mani yok.
+
+282
+00:58:01,987 --> 00:58:09,187
+Diğer kısımlarına, işte diğer kısmı hep bir, artık benim için önemli olan chip select'ini buna bağlamak.
+
+283
+00:58:09,187 --> 00:58:21,951
+Çünkü bu entegrenin portlarını seçeceğim, bu port A, port B, port C veya Control Word'den başka bu entegrenin sadece, neydi dokusu açmıyor, F8.
+
+284
+00:58:21,952 --> 00:58:47,252
+F8, FA, FC ve FD'de çalışmasını sağlayacak olan ön kısmını adreslemem lazım chips select. Bunun için de hani demin kullanmıştık ya, bir tane NAND kapısı kullanmıştık. Böyle şeyler tabii girişi çok olduğu için kullanılmaz arkadaşlar. Onun yerine dekoder kullanılır. Dekoder neydi? 3x8 bir dekoder bu misal.
+
+285
+00:58:47,632 --> 00:59:08,751
+Ne demek? Ben buraya 1, 1, 1, 1 yazdığımda bubble olduğu için 0 verisi veren, şöyle bir şey yazdığımda tabii A0 burası olduğu için MSB burası, şey LSB burası, MSB burası, 1, 0, 0 yazdığımda şuradan 0 verisi verecek olan bir dekoder.
+
+286
+00:59:08,751 --> 00:59:14,991
+Ona göre yani dekodere göre bir chipset modülü oluşturulabilir.
+
+287
+00:59:15,891 --> 00:59:29,891
+Burada da 3'e 8 bir dekoder kullanılmış. 7. pin olması için ben buralara 1, 1, 1 vermem lazım değil mi? E benim zaten diagramımda da F8'i buraya bir daha yazalım. Buyur değil mi?
+
+288
+00:59:38,036 --> 00:59:46,036
+A4, A5, A6, A7. Şimdi 345, yani şu kısım.
+
+289
+00:59:49,876 --> 01:00:08,655
+Şu kısım bir, buraya bağlayabilirim. İlla hem de şöyle bir durum var arkadaşlar, adresleme devreniz, yani adres uzayını yerleştirdiğiniz 82-55'in tasarımı farklı olabilir. Hiç önemli değil. Yani siz buraya A3, A4, A5 bağlamazsınız da A5, A6, A7 bağlarsınız. Hiç önemli değil.
+
+290
+01:00:08,947 --> 01:00:18,347
+Yani şuradaki tablodaki diagram, yani şey, dağılım, burada chip select'i tetiklemesi, hedef bu.
+
+291
+01:00:18,347 --> 01:00:25,548
+Ya, mesela üçten alırsınız, 0, 1, 1 olması beklenir, başka bir şekilde yaparsınız, o size kalmış.
+
+292
+01:00:26,260 --> 01:00:36,760
+Chip select'i şu an 1-1'de etiket seçiyoruz 7'yi verdiği için. Memory input output da biliyoruz ki bu bir output device, yani bir memory indekslemeyeceğim.
+
+293
+01:00:36,760 --> 01:00:50,956
+O yüzden 0 gelmesi, 0 dene bu ucuna takıldı. A0, çift adresler dendiği için ve 0 yani normalde bir sayının çift mi tek mi olduğu binary'de son bitinin 0 ve 1 olması ile anlaşılır.
+
+294
+01:00:50,963 --> 01:00:59,164
+Şimdi sıfır olan, ki hep sıfır olması lazım çift adresle yerleşmesi için, onu da bir enable'a bağladık, bubble enable'a.
+
+295
+01:00:59,987 --> 01:01:10,228
+A7 ve A6 ikisinin de 1-1 olması istenmiş. Yani daha doğrusu adres uzayı onu söylüyor bize. İkisinin de ne zaman 1-1 olduğu bir kapıyla birleştirebiliriz.
+
+296
+01:01:10,228 --> 01:01:19,547
+İşte V kapısı 1-1 olduğunda 1 çıkacak ve bu 0 enable olmayan, 1 enable olan bir pin, 1 enable pin ile bağlamış oldum.
+
+297
+01:01:25,364 --> 01:01:43,364
+Aktif olmayacak, çalışmayacak ve işte bu kısmı tutan, yani bu adresleme uzayında ilk kısmı tutan kısımdan sadece çift adreslerde port A'yı, port B'yi, port C'yi ve kontrol gördü adres uzayına yerleştirmiş oldum.
+
+298
+01:01:43,764 --> 01:01:51,364
+Ama 8 bitlik bir adres uzayına, yani daha doğrusu 8 bitlik bir verinin gönderilebileceği bir adres uzayına yerleştirmiş.
+
+299
+01:01:53,427 --> 01:01:54,427
+Şimdi
+
+300
+01:01:55,539 --> 01:02:23,480
+Gelelim öteki açıdan bakalım. Şöyle bir soru olsun. 16 bit bir yolunda 8 bitlik tek adreslere yerleştirelim. Yani 8255'i çift adreslere değil, tek adreslere yerleştirelim. Tekrar diagram yazdım. Tek adres olması için A0'ın 1 olması lazım ve işte F9'u yazdım zaten ilk. Sonra tek olması için F11 olması yani FB olması, sonra FD, sonra FF olması lazım.
+
+301
+01:02:23,539 --> 01:02:33,539
+ve burada da baktığımda yine aynı şekilde A0 ve A1 entegrasyonunu ben direkt A2 ve A1 pinlerinden alabilirim.
+
+302
+01:02:33,539 --> 01:02:37,539
+Yani şuradaki dizayn değişmiyor.
+
+303
+01:02:37,876 --> 01:02:59,596
+A0 tek olduğu için, hani bir verisini sıfırlamam için buraya bir NAT kapısı koydum, diğer diagramlar aynı. Fark ne? Ben bunu 16 biti 8'e sığdırmaya çalışıyorum ya, yüksek anlamlı 8 bite ekledim, bağladım. Yani şu an şöyle düşünebiliriz, iki tane 80255'imiz var.
+
+304
+01:03:00,083 --> 01:03:19,083
+Birini düşük anlamlı 7 bite, birini yüksek anlamlı 8 bite, diğerini yüksek anlamlı 8 bitli databasa yerleştirdim ve adres uzayında birinde A0'da NAT var, ötekinde yok. Başka her şey aynı. Ama ben iki tane 80275 kullanmak istemiyorum.
+
+305
+01:03:19,347 --> 01:03:27,947
+Tek bir tane 80255 de bunu nasıl yapabilirim? İki tane olsaydı birini tek adreslere, yüksek anlamlı tek adreslere, düşük anlamlı...
+
+306
+01:03:28,436 --> 01:03:51,436
+Düşük 8 bitini de çift adreslere deminki örnekte olduğu gibi yerleştirebilirim. Evet ama tek bir 80255 de bunu nasıl yapabilirim? Daha doğrusu yapabilir miyim? Evet yapabilirim. Neden? Çünkü bizim CPU'muz bir adet BHAE pinine sahip. Yani ben bu pini kullanarak...
+
+307
+01:03:51,827 --> 01:04:12,288
+İki cycle'da arkadaşlar, bakın tekrar ediyorum, tek bir seferde değil. İlk bir tanesi bir 8 biti, sonra öteki 8 biti gönderebilecek şekilde tek bir 8255 ile 16 bitlik veri yolunu bu 8 bitlik veri yoluna adresliye, yani veriyi gönderebilirim adres uzayını seçtikten sonra.
+
+308
+01:04:13,188 --> 01:04:19,288
+Gelelim ona. 16 bit veri yolunun hepsini nasıl yapalım? Yani hem çifti hem teki.
+
+309
+01:04:19,472 --> 01:04:31,592
+Yazalım. C0'dan başlıyormuş çifte. Sonra C1 oldu, C2 oldu, C3 oldu. Yazıldı. Bakıyorum A0 binim çift, tek,
+
+310
+01:04:34,852 --> 01:04:43,852
+çift ve tek olarak gidiyor, devam ediyor. Şimdi bu sefer A1 ile A2'yi A0'a A1'e bağlayabiliyor muyum?
+
+311
+01:04:44,211 --> 01:04:53,531
+Bağlayamıyorum. Çünkü o port A, port B, port C ve control board'ı artık tetikleyemiyorum. Onun yerine farklı bir yaklaşım yapmam lazım.
+
+312
+01:04:55,531 --> 01:05:02,891
+Nasıl bir yaklaşım veya şuradan da gidelim. Şu tabloya baktığımda aslında ben şu ikisini direkt kullanarak
+
+313
+01:05:03,539 --> 01:05:13,599
+Port A, port B, port C'yi indeksleyebilirim. Değil mi? Ama bu sefer de şeyi belirlemem lazım. İşte orada da B, H, E pinini kullanacağız.
+
+314
+01:05:13,599 --> 01:05:27,659
+Diyagrama bakalım isterseniz. Bu sefer chip select 0 seçilmiş. 0 olabilmesi için veya şuraya yazalım CH'dı, C0'dı, 1, 1, 0, 0, 0, 0, 0, 0.
+
+315
+01:05:27,903 --> 01:05:32,003
+Sonra ne gelecek? 11000001.
+
+316
+01:05:39,603 --> 01:06:06,163
+Bu değil mi? C0, C1, C2, C3. Şimdi baktığımda şu iki pin zaten benim adreslemeyi sağlarsa Merseysel 2.55'te, port A, port B, port C, port şey, control board'ü gönderebileceğim verileri, yani bu seçimi yapabiliyoruz. Ama ilk başta chip select de ayarlamam lazım. Ondan sonra bunları gönderdiğimde olabiliyor. A1 ve A0'ı direkt bağladım, evet. Read, write'ı da bağladım, evet.
+
+317
+01:06:06,655 --> 01:06:30,736
+Bu sefer, farklı tasarım tabii mümkün ama bu sefer demişiz ki, biz sıfırdan, yani sıfırıncı pinden sıfır veri süretçesini, yani buralar sıfır sıfır olması lazım. Bakıyorum, isterseniz şu sıfır sıfır sıfırı seçersiniz, isterseniz sağdaki sıfır sıfır sıfırı seçersiniz, fark etmez. Burada 2, 3, 4'ü seçmişiz. 0, 1, 2, 3, 4. Yani şunları seçmişiz.
+
+318
+01:06:36,916 --> 01:06:44,036
+Sonra memory input output da zaten input output'un NAT olduğu için, sıfır geleceği için buradan sıfıra vermişiz.
+
+319
+01:06:44,036 --> 01:06:54,916
+A5'i de ki şurası zaten, onu da sıfıra vermişiz. A7 ve A6. Şu ikisine bir vererek, şuradaki kablom silinmiş.
+
+320
+01:06:55,347 --> 01:07:09,748
+Buradan 1 olmasını sağladık. Evet, şu an her şey normal. Yani, chip selectimiz bu adreste enable olacak ve A1, A0'ı ben portları seçebileceğim. Ama bir problem var. Yüksek anlamlı veya düşük anlamlı 8 biti nasıl ayarlayacağım?
+
+321
+01:07:09,748 --> 01:07:20,028
+Şimdi baktığımızda ne dedik? Çiftlerde D07, teklerde de D815 verilebilir.
+
+322
+01:07:21,619 --> 01:07:28,940
+Çift olan buradan 0 gelmesi lazım değil mi? 0 geldiğinde ben, şurası 0 olacak.
+
+323
+01:07:29,588 --> 01:07:43,188
+Y0 dediğimiz şey zaten bir ön devre tasarlamamız gerekiyor. Bu ne zaman chip select aktif olursa, yani şuraya Y0 diyoruz, ne zaman chip select aktif olursa bu iki kapıyı da aktif etsin istiyoruz.
+
+324
+01:07:50,996 --> 01:08:04,196
+Ama benim bu 74245 entegresinin OEC, enable'ı, 0'da enable olan bir entegre değil mi? Bunlar enable olmayacağı için çalışmayacak. Yani adres uzayına yerleşmemiş olacak.
+
+325
+01:08:05,396 --> 01:08:18,195
+Öyle bir ön devre yapmışız. Buraya 0 verdiğimizde bu Y0 burayı gösteriyor aslında. Yani şuradaki Y olacak. 0 olduğunda artık diğer pinlere bakabiliriz demek oluyor.
+
+326
+01:08:19,315 --> 01:08:45,315
+Y0, 0 geldiğinde ve A0'ın benim 0 geldiğinde 0, 0'dan burası 0 çıkacağı için düşük anlamlı pinlerim aktif oldu. Şu an benim D0, D7'im, port'un D0, D7'sine girdi. Ama öteki taraftan A0'ın 1 olduğunda, 1 olduğunda burası zaten 1 geldiği için veya kapısından bunu çalıştırmayacak. Ayrıca...
+
+327
+01:08:45,456 --> 01:09:07,216
+Burayı 0 yapacağı için ve Y0'ın da 0 olduğundan dolayı şu an bu çalışır ama bushi enable da aktif etmem lazım. Yani benim aslında data 8 ile 15'i çekmem lazım data yoluna. Onun için de buranın 0 olmasını söylemiştik.
+
+328
+01:09:11,283 --> 01:09:35,783
+Bu durumda D815'in verisini veri yoluna koyuyor demiştim. Buraya sıfır yazdığımızda artık burası enable edilecek ve D8 ve D15'teki 74245'in Direction'ın nasıl tanımlandıysa ya buradaki veriyi buraya alacağız ya buradaki veriyi portlara atamak için kullanacağız.
+
+329
+01:09:36,724 --> 01:09:50,043
+Yani 16 bitlik veri yolunu tek bir 8 bitlik 8255 ile çift satırda yani çift cycle'da atıp yani okuyup kullanabiliyoruz veya yazmak için kullanabiliyoruz.
+
+330
+01:09:52,844 --> 01:09:54,644
+Anlaşıldı mı arkadaşlar?
+
+331
+01:09:58,676 --> 01:10:20,796
+Anlaşıldı diye düşünüyorum. Evet, mod 0'dan başlayacağız. Daha vaktimiz var, doğru. Bir 10 dakika ara verelim arkadaşlar. 25 geçe gelelim. Zaten çok vaktimiz kalmadı. Benim ağzım damam kurudu. Bir 10 dakika ara verelim. Saat çeyrek geçiyor. 25 geçe devam ediyoruz.
+
+332
+01:19:26,292 --> 01:19:37,572
+Arkadaşlar, tekrardan merhabalar. Ufak bir kısım kalmıştı zaten ama önemli bir kısımdı. O yüzden bir rahatlayıp su içip gelmek iyi oldu. Hemen o kısmı da bitirdim.
+
+333
+01:19:43,155 --> 01:19:54,796
+Şimdi arkadaşlar, başta şunu dedik, 8255 entegresinde 3 port var ve bu 3 portun da farklı farklı çalışabilecek 3 mod var.
+
+334
+01:19:54,796 --> 01:19:57,435
+Mod 0, Mod 1 ve Mod 2.
+
+335
+01:19:57,435 --> 01:20:00,000
+Port A, Port B ve Port C'nin...
+
+336
+01:20:00,000 --> 01:20:06,600
+Bulunduğu ve işte her port 3 modun 3'ünde de çalışmıyor ama genel olarak 3 modun olduğu diyelim.
+
+337
+01:20:06,600 --> 01:20:16,659
+1.8255 entegresinden bahsediyoruz. Şimdi mod 0 ile başlayacağız bu hafta. Mod 0'mız, sunum geliyor mu ilk onun bir kontrolünü yapalım.
+
+338
+01:20:16,659 --> 01:20:20,659
+Sunum ve ses de problem yok herhalde. Yok hocam.
+
+339
+01:20:24,916 --> 01:20:50,636
+Tamam. Mod 0 dediğimiz, basit anlamda giriş çıkış bir modu. Yani işte 3 portun da çalışabileceği bir mod. Mod 1 var, bu biraz daha karşılıklı iletişime bağlı. Mod 2 de, yani karşılıklı tek taraflı iletişime bağlı mod 1. Mod 2 ise iki taraflı karşılıklı iletişime bağlı.
+
+340
+01:20:50,752 --> 01:21:02,752
+Bu mod 1, mod 2, mod hemen daha 2, yani önümüzdeki hafta, bir iki hafta sonra falan işleyeceğiz. Şimdi mod 0'da başlayacağız. Bir de bu 3 modun dışında, bu mod...
+
+341
+01:21:02,899 --> 01:21:12,500
+Yani modun selection'ı dışında diyelim, modu seçeceğimiz o yapıya geçmeden önce bit, set, reset modumuz var.
+
+342
+01:21:12,500 --> 01:21:21,379
+Yani seçili bir bitin bir mi sıfır mı olacağını tayin edebileceğimiz, direkt tayin edebileceğimiz bir moda sokma durumumuz söz konusu.
+
+343
+01:21:21,971 --> 01:21:42,371
+Şimdi bu bütün mod ayarlamalarını A0 ve A1 diye tabir ettiğimiz, 8255'in değişimdeki o portları seçmeyi arayan, işte 00'dayken port A'yı, 01'deyken port B'yi, 0'dayken port C'yi ve 01'deyken kontrol word'ü seçtiğimiz o kısımda,
+
+344
+01:21:49,971 --> 01:22:04,252
+Arkadaşlar, adresi belirledik, o adrese de A0 ve A1'in 1, 1 olduğu bir veri gönderdik. Artık o adresteki, o 8255 kontrolü, içerisindeki iç yapıyı değiştirebileceğimiz moda geldi.
+
+345
+01:22:04,252 --> 01:22:09,292
+Veya yapıya geldi diyelim, şimdi moda gidersek modlar karışacak, yapıya geldi.
+
+346
+01:22:09,908 --> 01:22:17,908
+Şimdi o yapının içerisine biz nümerik bir data göndereceğiz. Ki bu data o entegreyi programlayabilecek olan data olacak.
+
+347
+01:22:17,908 --> 01:22:32,908
+Tabii bunun bir paterni var, bir şablonu var. 8 bitlik bir veriyi A0, A11, 11 iken gönderdiğimizde bizim için o bir programlama mentetisiyle donanımı 80255'i programlayacağız.
+
+348
+01:22:32,908 --> 01:22:36,908
+Zaten programlanamabili, periyabili…
+
+349
+01:22:37,199 --> 01:22:45,920
+Entegresi dememizdeki kasıt bu. Çevre birimi programlanabilir, çevre birimi olmasındaki kasıt bu. Yani bir bir ile biz...
+
+350
+01:22:46,484 --> 01:22:53,484
+Bunu programlanabilir yapıya soktuktan sonra gönderdiğimiz data yoluna koyduğumuz veri bizim için bir program olacak.
+
+351
+01:22:53,484 --> 01:23:01,484
+Bunun bazı şablonu var. Örnek verecek şekilde şablon mevcut. Bu şablonu ezberlemenize kesinlikle gerek yok.
+
+352
+01:23:01,484 --> 01:23:14,484
+İşte ya üçüncü pin neydi, dördüncü pin neydi vesaire. Lab'da da, sınavda da elinizin altında bu arayüzler, yani bunları arayüz diyoruz, bu arayüzler elinizde bulunacak.
+
+353
+01:23:14,484 --> 01:23:23,484
+En izde olacak. Bunun aynı görselde olduğu gibi pinler neye tekabül geliyor? En izdeki dokumandan okuyabileceksiniz. Bunu yorumlamak önemli.
+
+354
+01:23:23,484 --> 01:23:36,368
+Misal bakalım, en yüksek anlamlı şey, pin, veri, datayoluna koyduğumuz MSB bize şunu söylüyor. Ben bu...
+
+355
+01:23:36,368 --> 01:24:03,308
+Mikroişlem, 8255'i mod seçme moduna mı? Artık öyle diyeceğim, biraz karışacak ama mod seçme moduna mı sokacağım? Yani mod 0, mod 1, mod 2'yi seçeceğim modüne mi sokacağım? Yoksa bit reset diye tabir ettiğimiz seçili bitlerin 0 veya 1 olmasını ayarlayacağımız yapıya mı sokacağım? En anlamlı bit, 7. veri yolu bunu söylüyor bize.
+
+356
+01:24:03,648 --> 01:24:16,448
+6 ve 5. 6 ve 5. Şimdi grup B ve grup A diye iki tane grup var. Bir grup da şuradan geliyor hatırlarsanız. İç yapısında bahsetmiştik azıcık.
+
+357
+01:24:17,971 --> 01:24:40,715
+Grup A kontrolü ve grup B kontrolü vardı. Ve port A tamamen grup A'ya, port B de tamamen grup B'ye bağlıydı. O yüzden 8 biti in yaparsam, yani 8 tane port'a aynı anda in yapmam gerekiyor. Yani porttaki 8 tane biti aynı anda in veya out yapabiliyordum port A ve port B için. Ama port C...
+
+358
+01:24:40,819 --> 01:24:50,819
+4'ü grup A'da, 4'ü grup B'de olduğu için ayrı ayrı settings'i, konfigürasyonunu yapmamız olanak sağlayacaktı dedi.
+
+359
+01:24:50,819 --> 01:25:07,435
+Burada da şimdi o konfigürasyonu biz kodla yapacağımız için, bu kontrol wordle yapacağımız için, 6 ve 5, yani şurası, şu kısım, grup A'yı ilgilendirecek.
+
+360
+01:25:07,507 --> 01:25:22,507
+Şu kısımda grup B'yi ilgilendirecek. Grup A'da biliyorum ki ben port A var ve dördüncü pin benim için port A'nın input olarak mı, output olarak mı kullanılacağını belirleyen pin olacak.
+
+361
+01:25:23,412 --> 01:25:35,412
+İşte üçüncü pin port C'nin yüksek anlamlı dördünün input mu output mu olarak define, yani tanımlanacağını belirleyecek olan control word'ün pini olacak.
+
+362
+01:25:35,412 --> 01:25:48,412
+Ve burada dedik ki üç tane mod var, mod 0, 1, 2. Hangi modda bu grup ağının çalışacağını belirleyeceğimiz 6 ile 5 pinlerimiz bunu söyleyecek bize.
+
+363
+01:25:48,787 --> 01:26:13,807
+2'de 1'de benim için neyi söyleyecek? Grup B'deki yani port C'nin lower'ıyla port B'nin hepsi mod 0 mı mod 1 mi olarak kullanacağını belirtecek. Niye burada mod 2 yok? Çünkü mod 2 dediğimiz yapı A portunu, yani daha doğrusu port A'yı tamamen kullanan, hatta B'den de bir iki veri aldığı için burada ekstradan, yani grup B'de mod 2 olmuyor.
+
+364
+01:26:15,636 --> 01:26:22,636
+Port C'nin düşük anlamda bitlerini de input mu output mu yapacağımızı söylediğimiz kısım.
+
+365
+01:26:22,636 --> 01:26:27,636
+Şimdi örnek vereceksek, C0 hatırlıyorsak port A'yı gösteriyordu.
+
+366
+01:26:27,636 --> 01:26:30,576
+C1B'yi
+
+367
+01:26:30,576 --> 01:26:44,576
+C2, C'yi, C3'te control word'ü gösteriyordu değil mi? Şimdi ilk başta ben, Dx'e, işte veriye C3 yazdım. Sonra dedim ki, işte bu Dx'i outladım.
+
+368
+01:26:45,460 --> 01:26:58,460
+Ve adresi seçtim. Yani Dx'i, artık oradaki şey, 8255'i define ettim. Örnekleri haftaya daha detaylı yapacağız. Şu an sadece bu kısmı oluşturmak için ben bir izah etmeye çalışıyorum.
+
+369
+01:26:58,460 --> 01:27:06,460
+Dx bu adresle C3'ü şu an adresledik ve 8255'i enable ettik leçilerde. Şimdi ben...
+
+370
+01:27:06,479 --> 01:27:25,679
+Buraya ne gönderirsem, yani DX'e ne gönderirsem, benim için bu kontrol word bilgisi olacak. Çünkü 1-1, yani C3'deki şu en sondaki A0 ve A1 benim için 1-1 olduğundan, 8255'i 1-1 modundan kontrol word kabul etme modülüne geçildi.
+
+371
+01:27:25,679 --> 01:27:28,075
+Şimdi şöyle bir veri yazsam da.
+
+372
+01:27:39,475 --> 01:28:06,355
+Evet, yani ne yazdık? 93. 93 Hexa sayısını göndersem, DX portuna. Ne demek olacak bu arkadaşlar? Yorumlayabilir miyiz? Yanında Legend'ı var zaten, yani şurada ibareler var. Ne yapmak istiyorum ben?
+
+373
+01:28:13,140 --> 01:28:14,640
+Yok mu yorum diyecek.
+
+374
+01:28:29,779 --> 01:28:44,279
+Port A, mod 0, şurası mod 0'ı gösteriyor ve burası da şu pinde Port A'nın input olacağını gösteriyor.
+
+375
+01:28:44,979 --> 01:28:57,779
+Yani ben port A'ya şu an bir led bağlarsam hiçbir anlamı yok demektir. Çünkü port A bir input olarak tanımlanmış, bir veri girişi olmak zorunda demek oluyor.
+
+376
+01:28:57,779 --> 01:29:07,579
+Sonra ne dedik bu kısma? Port C'nin upper'ı yani yüksek anlamlı durumu output olacak.
+
+377
+01:29:08,532 --> 01:29:26,532
+Yani port C'nin 4, 5, 6 ve 7. pinlerine ben bir led bağlayabilirim ve orlardan veri okuyabilirim output sonuçta. Sonra ne var? Şurası gene bir mode selection, port B'de mode 0 olacak.
+
+378
+01:29:27,796 --> 01:29:41,676
+ve port B'nin input olma durumu var, port C ile beraber. Yani port B'nin ve port C'nin düşük anlamlı 0123000'lerine bir butondan veri okuma sağlayabilirim demek oldu.
+
+379
+01:29:42,003 --> 01:29:57,683
+Şu an bu ayarlamayı yapmadan, biz port A'nın hangi, port A zaten tek bir grup ama, port B'nin, port A'nın ne olacağı, port C'nin yüksek dördünün, düşük dördünün ne ifade ettiğini konfig edemiyoruz.
+
+380
+01:29:57,683 --> 01:30:08,963
+İlk başta bizim kontrol word'e, o port'a yani şeye, bir durumundaki, o 8275'e bir kontrol word yazmamız zorunlu arkadaşlar.
+
+381
+01:30:10,355 --> 01:30:23,355
+Ve bu control word, mode selection control word. Şimdi bir başka control word yapımız daha var. Onda D7 en anlamlı bit 0 olduğu anda bize şunu söylüyor.
+
+382
+01:30:23,355 --> 01:30:36,239
+Ben herhangi bir mode selection veya port işlemi yapmayacağım. Sadece hangi bitin 0 veya 1 olacağını define edeceğim. Buraların hiçbir önemi yok ne olduğunun. Şurası önemli.
+
+383
+01:30:36,239 --> 01:31:02,059
+Misal 1, 0, 1 dedim. Ne demek bunu? 5 demek değil mi? Ya 5. porttan 1 mi yoksa 0 mı alacağını defineden bir tane de pin var. Bu kadar. 1, 4, 7, 8. 8 bitlik bir kontrolü daha gönderebiliyorum. İyi ki 0 olduğu anda şu 3 tane pinin yani şeyin binary sayının karşılığı gelen portun.
+
+384
+01:31:03,155 --> 01:31:17,155
+1 mi 0 mı olacağını söylediğim bir modül daha var, 8255. Anlaşıldı mı mod 1 ile bsr, bit set, reset dediğimiz mod?
+
+385
+01:31:19,956 --> 01:31:30,155
+Mod 0'ı arkadaşlar, biz basit giriş çıkış işlemleri için kullanacağız. Herhangi bir kontrol veya headshaking yok. Mesela örnek verelim. Buton basıldığında
+
+386
+01:31:30,688 --> 01:31:38,188
+Yeni bilgi kabul etme, ta ki o buton bırakılana kadar. Böyle bir handshaking mekanizması yok. Yani mod 0,
+
+387
+01:31:38,963 --> 01:31:58,963
+Çok kaba bir şekilde herhangi bir verim geldi mi, gelmedi mi, kontrolü sunan yapısı bulunmayan, bir de etnolojimi sinyali veya bir interrupt oluşturmayan bir handshake yani el sıkışma protokolü uygulanmayan sadece Bolozama portlardan veri okuyup portlara veri yazacağımız bir moddur.
+
+388
+01:31:59,412 --> 01:32:05,592
+2 adet 8 bitlik ve 2 adet 4 bitlik yani port C ve port A, B'yi kastediyoruz 8 bitliklerde.
+
+389
+01:32:05,592 --> 01:32:10,032
+4 bitlik de port C'nin yüksek düşüğünü kastediyoruz. Portları mevcut.
+
+390
+01:32:10,032 --> 01:32:18,032
+Ayarlama kontrolörü de göre herhangi bir port giriş veya çıkış olarak define edilebilir, tanımlanabilir.
+
+391
+01:32:18,336 --> 01:32:34,936
+Ama port A'nın işte üçüncü biti giriş olsun, beşinci biti output olsun denmez. Bunu aynı kontrol gördü de denmez. Toplamda 16 farklı da konfigürasyonu modlarla beraber oluşuyor diyoruz.
+
+392
+01:32:43,155 --> 01:32:59,655
+Kaçı oluyor hatırlamıyorum ama zaten labınız da olacak. O labdan önce derste işleyeceğiz. Yani o daha iyi olacak. Labada hazırlıklı olacaksınız. Şu an zaten zamanımızda bunları hepsini işlemeye yetmez.
+
+393
+01:32:59,655 --> 01:33:03,756
+Tamam mıyız arkadaşlar? Sorumuz var mı?
+
+394
+01:33:11,699 --> 01:33:20,300
+Soru yok, tamam. İyi dersler, iyi çalışmalar diliyorum. Sağlıklı günler diliyorum. Bitiriyorum ders o zaman.

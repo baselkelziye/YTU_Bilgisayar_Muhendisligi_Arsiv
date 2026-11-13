@@ -1,0 +1,2011 @@
+1
+00:07:01,108 --> 00:07:03,108
+Alo, hocam.
+
+2
+00:07:05,108 --> 00:07:06,108
+Efendim?
+
+3
+00:07:08,108 --> 00:07:09,108
+Duyabiliyor musun?
+
+4
+00:07:10,108 --> 00:07:14,108
+Bugün ders mi yoktu? Ben duyuyorum. Bugün ders mi yoktu? Ben...
+
+5
+00:07:15,108 --> 00:07:23,108
+Ders vardı. Ama ilk katılan sensin, tek katılanda sen olursan, ona göre bir şeyler ayarlayacağız herhalde.
+
+6
+00:07:59,411 --> 00:08:02,311
+Evet [öğrenci] merhaba. Bu ders sana ithaf ediyorum.
+
+7
+00:08:03,811 --> 00:08:05,251
+Merhaba hocam.
+
+8
+00:08:06,311 --> 00:08:14,451
+Şimdi bu haftaki ders konusundan finalde kesinlikle soru gelecek. Kayıttan izleyecek arkadaşlar için.
+
+9
+00:08:15,251 --> 00:08:18,631
+Interhaft'tan bahsetmiştiniz geçen hafta onun devamıydı değil mi herhalde?
+
+10
+00:08:18,631 --> 00:08:26,572
+Interhaft'ı bitirmiştik geçen hafta. Ondan da soru gelecek, bundan da soru gelecek. Kesin. Garanti veriyorum yani.
+
+11
+00:08:29,172 --> 00:08:38,372
+Sen hani ikinci tekrar aldığın için özellikle de sana da söylemiş olayım. Özellikle bu konulara da bakarsın tamam mı final için tekrar edersin.
+
+12
+00:08:40,172 --> 00:08:41,172
+Sağ olun hocam.
+
+13
+00:08:42,172 --> 00:08:44,172
+Şimdi ben ekran paylaşacağım.
+
+14
+00:08:53,460 --> 00:09:14,460
+Bu haftaki konumuz hafıza arayüzleri, memory interface. Bu konu kapsamında şunları göreceğiz. Hafıza birimlerinin çeşitleri nelerdir onları göreceğiz. Daha sonrasında ise küçük hafıza birimlerini kullanarak daha büyük birimleri nasıl oluşturabiliriz bir ona bakacağız. Bir de
+
+15
+00:09:14,735 --> 00:09:29,096
+Oluşturmuş olduğumuz bu büyük hafıza birimlerini, belirli bir adres aralarını nasıl yerleştiririz ona bakacağız. Dolayısıyla bu dersin temel ana konusu küçük hafıza bloklarını kullanarak daha büyük hafıza blokları nasıl oluştururuz? Birinci konu bu.
+
+16
+00:09:30,296 --> 00:09:40,035
+Bunu yaparken de iki çeşit de genişleme yapacağız. Birincisi veri yolu yönünde genişleme yapabiliriz. İkincisi kapasite yönünde genişleme yapabiliriz.
+
+17
+00:09:40,384 --> 00:09:44,384
+Üçüncüsü de her iki yönde bu kapasite gelişimini yapabiliriz.
+
+18
+00:09:44,384 --> 00:09:50,384
+Dolayısıyla küçük blokları kullanarak daha geniş veri yoluna sahip elemanlar oluşturacağız.
+
+19
+00:09:50,384 --> 00:09:59,384
+Daha küçük bloklar kullanarak daha yüksek kapasitedeki monoblok halinde düşünebileceğimiz elemanlar oluşturacağız.
+
+20
+00:10:00,000 --> 00:10:12,000
+Kırk boyutlu elemanlar kullanarak hem kapasite hem de veri yolu genişliğini arttırdığımız yapılar oluşturup bunları kullanıyor olacağız.
+
+21
+00:10:12,000 --> 00:10:20,875
+Bu birinci kapsam bu şekilde. İkinci kapsam ise şu. Oluşturmuş olduğumuz hafıza bloklarını
+
+22
+00:10:21,587 --> 00:10:27,947
+Belirli bir takım adreslere yerleştirmek istiyorsak bunu nasıl yapmalıyız ona bakacağız.
+
+23
+00:10:27,947 --> 00:10:37,867
+[öğrenci]'da derse katılan ikinci kişi olarak notumu aldım. Dersin başında söylediklerimi [öğrenci]'yı dinlersin daha sonra.
+
+24
+00:10:39,867 --> 00:10:41,867
+Peki hocam mümkün mü?
+
+25
+00:10:42,323 --> 00:10:51,443
+Özellikle bu konudan ve geçen haftaki interapp konusundan kesin soru geliyor finalde. O yüzden bakarsınız, tamam mı?
+
+26
+00:10:53,003 --> 00:10:53,763
+Tamam hocam.
+
+27
+00:10:55,963 --> 00:11:08,083
+Dolayısıyla bu haftaki içeriğimiz bunlar. Buna ilişkin olarak ROM çeşitlerinden bahsedecek olursak, 8086 ile arayüz yaptığımız hafıza birimlerinden ilki ROM hafızalar, yani Read Only Memory.
+
+28
+00:11:08,659 --> 00:11:24,659
+Read Only Memory dediğimiz birim, kendi çerçevesi içerisinde değerlendirdiğimizde sadece okunabilir, adı üzerinde Read Only Memory sadece operasyon sırasında, çalışma sırasında sadece okunabilir hafıza birimleri olarak geçiyor.
+
+29
+00:11:24,659 --> 00:11:30,659
+Non-volatile ne demek? Enerjisi kesildiğinde de verisi kaybolmuyor.
+
+30
+00:11:32,371 --> 00:11:43,371
+Dolayısıyla bu cihazların özellikle 8086'nın reset vektörüne örneğin yerleştirilmiş olması lazım ki, bunun da bir BIOS ROM çipi olduğunu söyleyebiliriz.
+
+31
+00:11:43,371 --> 00:11:51,371
+Neticede bir mikroişlemci sistemi boot ettiğimiz zaman, önce BIOS çipi bootu devreye alıyor, ele alıyor.
+
+32
+00:11:51,823 --> 00:12:06,823
+ilgili kontrollerini gerçekleştiriyor. Bir sıkıntı yoksa bunu daha sonra işletim sistemine devrediyor. Dolayısıyla işletim sistemine devretmesi de ne demek? İkincil hafıza birimlerinden main memoriye bunun yüklenmesi demek ve RAM üzerinde çalışıyor aslında.
+
+33
+00:12:07,091 --> 00:12:13,692
+Dolayısıyla ilk olarak sistemi devreye alan BIOS chipinin bir ROM yapısında olduğunu söyleyebiliriz.
+
+34
+00:12:13,692 --> 00:12:20,172
+Ve dolayısıyla 8086'nın reset vektörüne bir ROM yerleştirilmesi gereklidir diyebiliriz.
+
+35
+00:12:20,172 --> 00:12:27,971
+ROM çeşitlerine bakacak olursak, bunlar üretim teknolojisi itibariyle bahsedebileceğimiz çeşitler.
+
+36
+00:12:27,971 --> 00:12:30,971
+Bunlardan ilki, Masked ROM.
+
+37
+00:12:31,091 --> 00:12:38,491
+Bu yapı imalat aşamasında programlanıyor. Dolayısıyla kullanıcı doğrudan programlanmış ROM'u almış oluyor.
+
+38
+00:12:40,491 --> 00:12:47,892
+Dolayısıyla mass ROM dediğimiz yapı imalat aşamasında programlanmış bir ROM çeşidi.
+
+39
+00:12:49,091 --> 00:12:55,091
+Programlanabilen ROM'a bakacak olursak, [öğrenci] geldi kaçtı? Onu da not ettim.
+
+40
+00:12:55,375 --> 00:13:21,836
+Programlanabilir ROM'a bakacak olursak, buradaki durum ise şu. Genel olarak programlanabilir bir vaziyette ürün veya ROM imal ediliyor. Kullanıcı bunu bir kere programlayabiliyor. Dolayısıyla bu cihaz programlanabilir ROM'lar bir kere programlanabiliyor ve daha sonra o şekilde kullanıma devam ediyor.
+
+41
+00:13:23,347 --> 00:13:27,167
+Tek sefer programlanabilir yapı yani. App-ROM ise,
+
+42
+00:13:27,167 --> 00:13:34,847
+App-ROM yapısı ise arkadaşlar, silinebilir programlanabilir ROM yapısı olarak geçiyor.
+
+43
+00:13:35,788 --> 00:13:45,347
+Bu yapı üzerinde bir pencere var. Bu pencere normalde operasyon sırasında bir şekilde kapatılıyor. Bantla veya bir izolasyon malzemesiyle kapatılıyor.
+
+44
+00:13:49,652 --> 00:13:59,251
+Programlandıktan sonra ise elektriksel olarak programlanıyor. Veyahut da işte ilgili programlama yapısıyla programlanıyor.
+
+45
+00:13:59,251 --> 00:14:10,852
+Bu programı ROM'dan silebilmek için arkadaşlar bunu belirli bir süre ultraviyole ışıkta, o açık penceresini açıp belirli bir süre boyunca ultraviyole ışıkta bekletmek gerekiyor.
+
+46
+00:14:15,604 --> 00:14:23,324
+Dolayısıyla tekrarlı olarak programlanabilen ve silinebilen bir E-Prom yapısından bahsediyoruz.
+
+47
+00:14:23,324 --> 00:14:29,724
+Burada silme işlemi ultraviyole ışıkla gerçekleşiyor. Bir de E-E-Prom var.
+
+48
+00:14:29,724 --> 00:14:32,724
+Bu yapıda ise...
+
+49
+00:14:32,724 --> 00:14:34,636
+Pardon.
+
+50
+00:14:35,956 --> 00:14:50,155
+Bu yapıda ise arkadaşlar programlama ve programı silme elektriksel olarak gerçekleşiyor. Bu ROM'un içerisinde fiziki uçlar olarak programlama uçları da var. Normal fonksiyon uçları haricinde programlama uçları da var.
+
+51
+00:14:50,155 --> 00:14:59,155
+Bu programlama uçlarında gerekli koşullamalar oluşturulduğu vakit bu cihazı da elektriksel olarak silip yeniden programlamak mümkün oluyor.
+
+52
+00:14:59,347 --> 00:15:14,827
+Bir de günümüzde kullanmış olduğumuz USB bellekler tarzı yapılarda flash memory yapısı var. Burada da tekil hücreleri silmek yerine bloklar halinde silme söz konusu. Teknoloji itibariyle farklı bir yapı ama onları da ROM çeşidi olarak ele alabiliriz.
+
+53
+00:15:21,748 --> 00:15:35,748
+Programlanabilir ROM için bu programlama aslında bir sigortanın yakılması veya korunmasıyla ilişkili bir yapı. Dolayısıyla buradaki füys veya sigortanın korunması veya yakılması şeklinde program bir kerelik sağlanabiliyor.
+
+54
+00:15:35,748 --> 00:15:41,748
+App ROM'larda bahsetmiş olduğum tencere burada şekilde görebildiğiniz bir yapı. Bunu 15-20 dakika boyunca...
+
+55
+00:15:42,480 --> 00:15:58,980
+Bu çipi ultraviyole ışıkta tutarsanız yapılan programlamalar siliniyor. Aslında buradaki yapıda yine bu sigorta yapısının, ultraviyole ışığın etkisiyle birlikte o sigorta yapısının yanık hallerinin giderilmesi şeklinde ifade edebiliriz.
+
+56
+00:15:58,980 --> 00:16:05,279
+Veya burada yanık hali olmuyor da zaten bir gate durumu oluyor. O gate durumunun değiştirilmesi şeklinde oluyor.
+
+57
+00:16:06,548 --> 00:16:29,227
+Bundan bahsetmiştik zaten, flash yapısından bahsetmiştik. Şimdi temel olarak, en temel anlamda biz bir ROM yapısı oluşturmak istesek, ROM'un içerisinde ne var diye bakmak istesek, aslında ROM'un içerisinde arkadaşlar, bir dekoder yapısı ve bir de transistör yapısı söz konusu, transistör matrisi söz konusu.
+
+58
+00:16:30,548 --> 00:16:38,048
+Örneğin, bir ROM'un en genel blok diagramından bahsedecek olursak, önce şuraya bir geçelim daha sonra geri dönelim.
+
+59
+00:16:38,048 --> 00:16:49,347
+ROM'un bir blok yapısından bahsedecek olursak, ROM'un en adet adres ucu olduğundan bahsedebiliriz ve M adet veri ucunda olduğundan bahsedebiliriz.
+
+60
+00:16:49,347 --> 00:16:54,847
+Bununla birlikte iki tane de kontrol ucu var. Bunlar output enable ve chip select uçları.
+
+61
+00:16:58,196 --> 00:17:05,876
+En adet adres ucu olması demek ROM içerisinde 2 üzeri en adet hafıza gözü olduğu anlamına geliyor.
+
+62
+00:17:05,876 --> 00:17:09,715
+Veri ucu sayısının da M olması ile şunu anlıyoruz.
+
+63
+00:17:09,715 --> 00:17:16,276
+İçerideki her bir hafıza gözünün diyelim.
+
+64
+00:17:16,448 --> 00:17:22,448
+m adet bit saklayabildiğini ifade edebiliyoruz. Dolayısıyla bir ROM'un kapasitesinden bahsedecek olursak,
+
+65
+00:17:22,448 --> 00:17:34,028
+n adet adres ucu varsa, 2 üzeri n adet hafıza gözü çarpı, her gözde de m adet bit. Dolayısıyla 2 üzeri n çarpı m kapasiteli bir ROM olarak bu ROM'u ifade ediyor olacağız.
+
+66
+00:17:34,099 --> 00:17:37,379
+Kontrol uçlarına yapılacak bağlantılar ise şu şekilde olmalı.
+
+67
+00:17:38,079 --> 00:17:42,179
+Output Enable ucu, mikroişlemcinin read ucuyla bağlantılı olmalı.
+
+68
+00:17:42,259 --> 00:17:48,179
+Dolayısıyla mikroişlemci tarafından bir read işareti gönderildiği vakit, yani bu cihazdan okuma yapmak istediği zaman,
+
+69
+00:17:48,179 --> 00:17:57,980
+bu ilgili adres uçlarına karşılık vermiş olduğumuz veya seçmiş olduğumuz adres gözünün içerisinde saklanan veri, veri uçlarına gönderilmiş olacak.
+
+70
+00:17:58,099 --> 00:18:01,059
+Veri uçlarına da mikroişlemcinin data uçları bağlı olacak.
+
+71
+00:18:02,099 --> 00:18:25,035
+Bu suçlarına mikroişlemcinin adres suçları bağlı olacak. Son olarak, chip select ucuna ise, biz bu ROM'u, şimdi ROM dediğimiz şey tabii kapasite olarak daha büyük bir yapı. Biz IO cihazları için bu kapasiteden konuştuğumuz vakit, 4 byte, 2 byte, 1 byte gibi boyutlardan konuşuyorduk. Fakat ROM için bu işte kilobyte mertebesinde değerler. Dolayısıyla...
+
+72
+00:18:25,491 --> 00:18:53,431
+Geniş bir adres aralığından bahsediyoruz. Dolayısıyla biz bu ROM'u hangi adres aralığına yerleştirmek istiyorsak, 8086 memory uzayında hangi adres aralığına yerleştirmek istiyorsak, o adresle ilgili olarak bir MOV işlemi yapıyor isek, çünkü artık ROM ve RAM ile ilgili yapacağımız hafıza işlemlerinin MOV komutuyla çalıştırmamız gerekiyor. Çünkü bunlar bir I.O. cihazı değil, bunlar bir hafıza cihazı.
+
+73
+00:18:53,743 --> 00:19:04,144
+Eğer bu bir hafıza cihazı olmuş olsaydı buradaki işlemlerimiz out ve in komutlarıyla olacaktı. Fakat bu bir hafıza birimi olduğu için bunlara move komutlarıyla erişebiliyor olacağız.
+
+74
+00:19:04,144 --> 00:19:14,543
+Dolayısıyla move komutunun yanında bu cihazı yerleştirmiş olduğumuz adres aralığıyla ilgili bir komut yürüttüğümüzde harici adres çözümleme devremiz bir chip select işareti üretecek.
+
+75
+00:19:14,543 --> 00:19:21,743
+Bu chip select işaretinde aktif 0,1 uç olması gerekiyor. Dolayısıyla ROM dediğimiz zaman anlamamız gereken blok diagram bu.
+
+76
+00:19:21,743 --> 00:19:42,804
+Şimdi bunun içerisinde ne var diye bakacak olursak, pardon fazla kaçtı. Bunun içerisinde ne var diye bakacak olursak, en adet adres ucuna karşılık 2 üzeri en adet hafıza gözüne ihtiyacımız var demiştik. Dolayısıyla en adet adres ucuna karşılık 2 üzeri en adet göz oluşturan, hafıza gözü oluşturan yapı, dekoder yapısı burada.
+
+77
+00:19:43,604 --> 00:19:57,943
+Örneğin, iki adet adres ucu olan bir ROM'dan bahsediyorsak toplamda dört adet hafıza gözü oluşur demek. Yani iki üzeri ikiden. Dolayısıyla burada görmüş olduğumuz her bir satır arkadaşlar bir hafıza gözüne karşılık geliyor.
+
+78
+00:20:00,000 --> 00:20:07,000
+Burada her bir hafıza gözü de 4 bit veri tutabiliyor. 4 tane transistörden oluşuyor. Her bir satır 4 transistörden oluşuyor.
+
+79
+00:20:07,000 --> 00:20:19,000
+Dolayısıyla 2 adet adres ucumuz olduğu için 2 üzeri 2 adet hafıza gözümüz var. Her hafıza gözünde de 4 bit tutabildiğimiz için bu ROM'un kapasitesi 4x4 olarak ifade edilebiliyor.
+
+80
+00:20:19,000 --> 00:20:26,827
+Dolayısıyla ben buraya bir adres değeri girdiğim zaman 0,0'dan 1,1'e kadar 4 farklı satırdan herhangi birisini seçmiş olacağım.
+
+81
+00:20:27,028 --> 00:20:46,827
+Seçmek demek ne demek arkadaşlar? Bu ilgili satırı seçtim örneğin ve şuna dikkat edin. Her sütunun source ucu, bunları birer MOS transistör olarak düşünecek olursak, her transistörün source ucu birbirine bağlı.
+
+82
+00:20:53,087 --> 00:21:20,587
+Şematik olarak sigorta, füsun gösterimi. Ben örneğin iki numaralı hafıza gözünü seçmiş olayım. Yani iki numaralı satırı seçmiş olayım. Burada herhangi bir sigortayı koruyor isem bunun anlamı ne? Aktif sıfır çıkışlar, bu ilgili sigortalığın ucuna sıfır değeri geldi. Sıfır değeri geldiği için transistörün source ve drain uçları birbirine bağlı değil. Sanki burası koparılmış gibi etki gösteriyor. Dolayısıyla...
+
+83
+00:21:20,864 --> 00:21:36,864
+Diğer satırlarda seçilmediği için, aktif olmadığı için o satırlar, bizim gönder, şurada da pull-up dirençle bağlı durumu düşünecek olursak, burada doğrudan 5 volt, yani lojik biri görüyor olacağız.
+
+84
+00:21:47,476 --> 00:21:50,796
+Bu durumda ise farklı bir senaryo oluşmuş olacaktı.
+
+85
+00:21:53,236 --> 00:22:19,036
+Şeyi anlatırken belki şöyle anlatmak lazımdı. Aktif sıfır çıkış değil de aktif bir çıkış ile anlatalım. Yani ben ikinci satırı seçtiğim zaman transistörün gate ucuna bir geldiğini varsayalım. Bir geldiğini varsayacak olursak kulak dirençle sürmüş olan besleme gerilimi dirençten geçtikten sonra ground'a gidiyor. Dolayısıyla benim burada göreceğim değer sıfır olmuş olur. Sigortayı yakarsam, sigortayı yaktığım durumda ise
+
+86
+00:22:19,539 --> 00:22:47,539
+pull-up direnç, source ve drain birbirinden koparılmış gibi etki gösterdi. Dolayısıyla sanki burası devrede yok. Dolayısıyla 5 volt direnç, pull-up direnç ve doğrudan data ucuna gidiyor gibi olacak. Bu durumda da lojik bir değerini göreceğiz. Dolayısıyla eğer sigortayı yakmışsam, lojik sıfır, sigortayı kuruyorsam lojik bir değerini görmüş olacağım. Dolayısıyla burada programlamaktan kasıt, ROM'u programlamaktan kasıt, ilgili sigortanın yakılmaktan kasıt,
+
+87
+00:22:47,539 --> 00:23:14,420
+Sigortayı koruyorsak, logic 0 görüyoruz. Sigortayı yakıyorsak, logic 1 görüyoruz. Tabi burada kullanmış olduğumuz transistörün yapısı da önemli. Eğer NMOS kullanıyorsak, bu anlattığım senaryo geçerli. Eğer PMOS kullanıyorsak, PMOS'ta da tam tersi geçerli. Sigortayı koruduğumuzda, sigortayı koruduğumuzda, burada logic 1 göreceğiz. Sigortayı yaktığımızda, logic 0 göreceğiz.
+
+88
+00:23:14,867 --> 00:23:31,867
+Böyle bir senaryo söz konusu olmuş olacak. Ama temel olarak yapı bu. Bunun programlanmasına ilişkin örneği inceleyecek olursak, eğer ki biz seçilen adres gözlerine 0123 diye seçtiğimiz adres gözlerine hemen yanında yazılan değerleri atamak istiyorsak yani,
+
+89
+00:23:32,723 --> 00:23:46,723
+Örneğin birinci satır, yani sıfır numaralı satırda 1.0, 1.0 değerini programlamak istiyorsak, burada da az önce anlattığımız mantık çerçevesinde sigortayı yakacağız en yüksek anlamlı bit için. Yaktığımız vakit ne oluyor?
+
+90
+00:23:47,284 --> 00:23:59,884
+Yaktığımız zaman bu transistörün source ve drain uçları, burası source, burası drain ucu, bunlar birbirinden koparılmış gibi etki gösteriyor. Dolayısıyla sanki buraya lojik bir değerini programlamışız gibi oluyor.
+
+91
+00:23:59,884 --> 00:24:09,084
+Sigortayı koruyorsak source ve drain uçları arasında bağlantı sağlanmış oluyor. Dolayısıyla burada lojik sıfır oluşmuş oluyor. Şuradaki grant dolayısıyla.
+
+92
+00:24:09,172 --> 00:24:27,092
+Sigortayı yaktığımız için 1, sigortayı koruduğumuz için 0 ve benzer şekilde diğer 0011, 0101, 0111 değerlerinde bu şekilde 0'a karşılık gelen yerlerde sigortayı koruyup 1'e karşılık gelen yerlerde sigortayı yakarak burada ROM programlanmasını sağlamış oluyoruz.
+
+93
+00:24:27,971 --> 00:24:33,951
+Buna ilişkin olarak eğer ikinci satırı seçecek olursak, yani adres uçlarına 1,0 değerini gönderecek olursak da
+
+94
+00:24:34,548 --> 00:24:53,748
+Bu durumda arkadaşlar gerçekleşen senaryo şu. Sigortasını koruduğumuz için source ve drain uçları bağlantılı. Dolayısıyla burada doğrudan lojik 0 var. Data 3 ucunda 0 değerini görüyoruz. Sigortayı yaktığımız için source ve drain bağlantılı değil. Doğrudan pull up grenç dolayısıyla burada lojik bir değerini görüyoruz.
+
+95
+00:24:59,988 --> 00:25:09,587
+Yine gronda bağlantı olduğu için 0 değerini görüyoruz. Sigortayı yaktığımız için de pull up trench dolayısıyla doğrudan 1 değerini bu ilgili hafıza gözünden okumuş oluyoruz.
+
+96
+00:25:09,587 --> 00:25:20,508
+Dolayısıyla ROM içerisinde ne var dediğimizde bir transistör matrisi var ve transistör matrisinin gate uçlarında, bütün transistörlerin gate uçlarında birer sigorta var.
+
+97
+00:25:21,067 --> 00:25:27,528
+Bu sigortayı yakarak veya koruyarak ilgili transistör gözünde bit olarak logic 1 veya 0 saklamış oluyoruz.
+
+98
+00:25:28,084 --> 00:25:43,084
+Yine burada dekoderden de bahsedebiliriz iç yapıda. O da en adrese karşılık 2 üzeri en adet hafıza gözünü oluşturan yapıda dekoderimiz olmuş oluyor. Dolayısıyla ROM içerisinde dekoder ve transistör maddesi var diyebiliriz.
+
+99
+00:25:43,084 --> 00:25:50,584
+Blok diagrama bakmıştık, o yüzden geçiyorum. RAM dediğimiz yapı ise arkadaşlar, bu geçici bir hafıza birimi.
+
+100
+00:25:51,988 --> 00:26:00,988
+Volatile memory olarak geçiyor. Okuma ve yazma hızı olarak ROM'a göre daha yüksek bir kapasiteye sahip ve dolayısıyla üretim maliyeti daha yüksek.
+
+101
+00:26:00,988 --> 00:26:09,988
+Main memory olarak kullanılıyor. Yapının ismi Random Access Memory olduğuna göre bir de bunun rastgele erişim imkanımız var.
+
+102
+00:26:09,988 --> 00:26:13,988
+Yani ben istediğim herhangi bir adrese erişme karmaşıklığım.
+
+103
+00:26:14,324 --> 00:26:38,084
+O, 1 gibi düşünebiliriz zaman karmaşıklığı açısından. Random Access de bu şekilde. Doğrudan adreslerini verip ilgili göze erişebiliyorum. Eğer bu Random Access varsa bizde bunun zıttı olan Sequential Access var. Sequential Access ise sıralı. Belirli bir adrese ulaşabilmek için baştan itibaren bütün adresleri dolaşmam gerekiyor. Örneğin bir linkli liste yapısı böyle Sequential Access 1.
+
+104
+00:26:38,516 --> 00:27:05,196
+Yapı, örneğin ben bir değer arıyorsam mecburen headden itibaren bütün linkli liste gözlerini linkler boyunca gezip aradığım değer var mı diye bakmam gerekiyor. Bunun donanım tarafındaki karşılığı ise manyetik diskler arkadaşlar. Manyetik disk değil, manyetik kasetler. Manyetik kasetlerde de benzer şekilde belirli bir adresteki değere erişebilmek için manyetik kaseti sarmak gerekiyor diyebiliriz.
+
+105
+00:27:06,420 --> 00:27:11,820
+RAM çeşitlerine bakacak olursak, statik RAM ve dinamik RAM yapıları olmak üzere ikiye ayrılıyor.
+
+106
+00:27:11,820 --> 00:27:20,019
+Statik RAM yapısı arkadaşlar aslında flip-flop mantığındaki birim hafıza elemanları şeklinde tasarlanmış durumda.
+
+107
+00:27:20,019 --> 00:27:30,220
+Dinamik RAM yapıları ise transistör ve kapasite şeklindeki ikillerden oluşan hafıza birimleri olarak oluşturuluyor.
+
+108
+00:27:30,483 --> 00:27:40,963
+Dinamik RAM'lere baktığımızda, dinamik RAM'ler kapasite ve transistörden oluştuğu için, kapasitenin de belirli bir zaman çerçevesinde içerisinde depolamış olduğu yükü.
+
+109
+00:27:41,248 --> 00:28:01,163
+Kaçak akımlarla kaybetme riski olduğu için, dinamik RAMM'ler adı üzerinde belirli zaman aralıklarıyla üzerinde kayıtlı değeri tekrar yazmamız gerekiyor. Tekrar değer yazmak demek, örneğin lojik bir tutuyorsak bir dinamik RAM hafıza hücresinde, orada belirli bir miktar yük var. Bu yük gittikçe kaybolduğu vakit...
+
+110
+00:28:01,364 --> 00:28:12,963
+Belirli bir threshold'un altına da düşmemiş olsun ama. Yani hala logic 1 olarak değerlendiriyoruz ama biraz daha dursa o veriyi logic 0 olarak anlamlandıracağımız seviyeye düşmüş olabilir.
+
+111
+00:28:12,963 --> 00:28:18,564
+İşte bu düşüş gerçekleşmeden yeniden oraya logic 1 değerini yazıyoruz ki kapasitedeki...
+
+112
+00:28:18,740 --> 00:28:24,200
+Kapasitede saklanan yük miktarını orijinal seviyesine getirmiş oluyoruz.
+
+113
+00:28:24,200 --> 00:28:30,899
+İnemlik RAM'deki yapı bu şekilde. Dolayısıyla belirli aralıklarla buradaki değerlerin tekrar üzerine yazılması söz konusu.
+
+114
+00:28:31,019 --> 00:28:33,879
+Statik RAM'lere baktığımızda da flip-flop yapısı söz konusu.
+
+115
+00:28:33,980 --> 00:28:44,819
+Flip-flopları hatırlayacak olursanız, enerjisi kesilmediği sürece stabil bir şekilde üzerinde saklamış olduğumuz değeri tutabilen hafıza birimleri olarak ortaya çıkıyordu.
+
+116
+00:28:45,875 --> 00:28:46,875
+Fazla gitti.
+
+117
+00:28:49,875 --> 00:28:54,875
+Dolayısıyla, statik RAM ve dinamik RAM mantığından bahsetmiş olduk.
+
+118
+00:28:54,875 --> 00:28:58,875
+Bir S-RAM hücresini aslında bir flip-flopla tasarlayabiliriz demiştik.
+
+119
+00:28:58,875 --> 00:29:06,875
+Flip-floplar açısından en temel durum ise birbiriyle feedback şeklinde bağlı olan iki NAT kapısı örneği verilebilir.
+
+120
+00:29:06,875 --> 00:29:10,875
+Örneğin, sadece şu kısma odaklanalım, yani flip-flopun olduğu kısma.
+
+121
+00:29:11,859 --> 00:29:24,459
+Örneğin ben sol tarafta logic 1 değeri oluşturmuş isem, NAT kapısının çıkışı logic 0, logic 0 NAT kapısından, alttaki NAT kapısından girerek tekrar logic 1 değeri oluşturuyor.
+
+122
+00:29:24,459 --> 00:29:33,387
+Dolayısıyla ben buraya bir kere logic 1 değeri gönderdiğimde, tabi bu kapıların besleme gerilimleri var ise, burada stabil bir...
+
+123
+00:29:33,428 --> 00:29:39,648
+Şu tarafta logic 1, bu tarafta logic 0 değeri oluşturmuş oluyorum ve enerji kesilene kadar bu devam ediyor.
+
+124
+00:29:39,648 --> 00:29:50,648
+Dolayısıyla statiklerine baktığımız zaman, hafıza hücresinde tutulacak değerin kendisi ve değerinin bir şekilde tutulması gerektiğini görüyoruz.
+
+125
+00:29:50,648 --> 00:30:00,000
+Bu hafıza hücresi içerisinde herhangi bir hücreyi seçebilmek için burada wordline veya adrese karşılık gelen bir seçim...
+
+126
+00:30:00,000 --> 00:30:11,000
+Bir de data uçları var. Data uçları dediğimizde içeride saklamak istediğimiz değerin kendisi ve değilini sağlayan veya sunan iki adet tel olarak ortaya çıkıyor.
+
+127
+00:30:11,000 --> 00:30:19,000
+Şimdi baktığımız zaman şu NAT kapılarının kendi içerisinde stabil olarak bu değeri, lojik bir değeri yazmaya çalışmıştık ya az önce.
+
+128
+00:30:19,000 --> 00:30:26,000
+Tutabilmesi için besleme gerilimlerinin de sağlanması gerekiyor. Burada gördüğünüz gibi VDDV ve DRAMT olmak üzere.
+
+129
+00:30:28,276 --> 00:30:54,916
+bir CMOS ikilisi olarak ortaya koyabiliriz. CMOS dediğimiz şey bir adet NMOS ve bir adet PMOS transistörü kullanarak oluşturulan yapıya deniyor CMOS yapısı. Dolayısıyla burada bakacak olursak bir PMOS ve bir NMOS yapısı ile bir NAT kapısı oluşturulmuş. Yine bu NAT kapısına ilişkin olarak da
+
+130
+00:30:55,796 --> 00:31:22,396
+Birbiriyle feedback oluşturacak şekilde bir bağlantı söz konusu. Şu taraf bir transistörün girdisi, burası ise bu NAT kapısının çıktısı. Bu NAT kapısının çıktısı diğer NAT kapısının girişine bağlı. Diğer kapının çıkışı da bir önceki kapının girişine bağlı. Bu şekilde döngü oluşturacak şekilde birbirleriyle bağlanmış durumdalar.
+
+131
+00:31:22,579 --> 00:31:48,379
+Dolayısıyla en temel yapı olarak inceleyecek olursak, bir SRAM hücresini gerçekleyebilmek için, 2 adet transistör dataları bu hücreye aktarmak için kullandığımız giriş çıkış yönlü transistörler, 4 tane transistörde hücrenin kendisi, en az 6 adet transistör kullanarak bir SRAM hücresi tasarlamak mümkün diyebiliriz. Bu noktada dikkat edeceğimiz nokta bu olabilir.
+
+132
+00:31:48,948 --> 00:32:03,448
+Şimdi bir SRAM hücresine değer yazmak istediğimizde bu nasıl çalışacak? İlgili SRAM hücresini aktif etmeliyiz. Bunu nasıl yapacağız? Wordline üzerinden bir değeri göndererek. Bir değeri gönderdiğimizde arkadaşlar,
+
+133
+00:32:03,632 --> 00:32:25,511
+ilgili giriş çıkış transistörleri aktif oluyor. Yani bunların source ve drain uçları arasında bağlantı sağlanmış oluyor. Word olarak seçtik, hücreyi seçtik. Şimdi de buraya aktarmak isteyeceğimiz değeri gönderiyoruz. Aktarmak isteyeceğimiz değer lojik bir. Bu değeri gönderdiğimiz vakit ters taraftan da yani datanın değlinin olduğu hat üzerinden de sıfır değerini göndermeliyiz.
+
+134
+00:32:25,907 --> 00:32:36,508
+Bir değerini gönderdik. Transistör açık olduğu için bu bir değeri şuraya ulaştı. Bir değeri bu NAT kapısının girişine çıkış olarak sıfır değeri üretti.
+
+135
+00:32:36,508 --> 00:32:44,307
+Burada da sıfır var, bununla da uyumlu. Dolayısıyla çakışmıyorlar. Yine sıfır değeri alttaki NAT kapısının girişine geldi, çıkışı bir.
+
+136
+00:32:44,307 --> 00:32:50,347
+Dolayısıyla bir bu tarafta, sıfır bu tarafta birbirini besleyecek şekilde bir tutarlılık sağlandı.
+
+137
+00:32:53,428 --> 00:33:07,827
+İlgili transistör veya NAT kapılarında besleme gelinleri mevcut olduğu için yine logic 1 bu tarafta, logic 0 bu tarafta kalmış olacak burada gördüğünüz gibi. Dolayısıyla burada bu hafıza ücresine bir değerini yazmış oluyoruz.
+
+138
+00:33:07,827 --> 00:33:19,827
+Logic 0 yazmak istediğimizde de yine ilgili giriş çıkış transistörlerini aktif etmek demek, buraya bu transistörü wordline üzerinden seçmek demek, yani bunun adresine girmek demek.
+
+139
+00:33:20,372 --> 00:33:41,372
+Adresi girdiğimizde data ucundan logic 0 girdik. Ters tarafından ise yani datanın değili olan hat üzerinden de logic 1 girdik. Bu durumda şu kısımda logic 0 var. Not kapısından geçti logic 1, giriş değerıyla tutarlı. Bu tarafta da logic 1 girdi, logic 0 çıktı. Dolayısıyla...
+
+140
+00:33:41,844 --> 00:33:54,084
+Stabil bir yapı oluşturduk. Dolayısıyla şurada saklanan değer, logic 0 olmuş oldu. Dolayısıyla bu hafıza ücretine, word line'ı da kaldırdığımızda, word seçiminde kaldırdığımızda, yani bu adresi de
+
+141
+00:33:54,579 --> 00:34:14,939
+Kaldırdığımızda, içeride bizim için anlamlı olan taraf bu taraf, logic 0 değerini saklamış oluyoruz. Çünkü data hattı bu tarafta ya, datanın değili bu tarafta, datanın kendisi burada olduğu için buraya logic 0 bağlı. Dolayısıyla logic 0'ı da bu hafıza ücresine saklamış oluyoruz. Okuma nasıl yapılacak arkadaşlar? Okuma için yine...
+
+142
+00:34:16,436 --> 00:34:22,676
+Sadece wordline aktif yapmak yeterli olacak. Bunun için bir de karşılaştırıcı kullanmamız gerekiyor.
+
+143
+00:34:22,963 --> 00:34:50,963
+İçeride saklı bir değer var. Örneğin, logic 1 olsun. Şurada logic 1 var, burada logic 0 var. Biz wordline'ı aktif yaptığımız zaman arkadaşlar, bu durumda ilgili data ucuna burada saklamış olduğumuz değer, yani x ulaşacak. Diğer tarafa ise x'in değili ulaşacak. Şimdi eğer sakladığımız değer logic 0'dıysa, buraya 0 geldi, buraya logic 1 geldi. Karşılaştırıcı nasıl çalışıyordu? Artı ucuna bağlanan...
+
+144
+00:34:50,963 --> 00:35:06,083
+13, eksi ucuna bağlanan uçtan gerilim olarak yüksekse çıktısı lojik bir, ters durumda da lojik 0 oluyordu. Dolayısıyla burada da lojik 0 buraya geldi, lojik 1 buraya geldi ama belki elektriksel seviyelerde birazcık kaymalar olmuştu.
+
+145
+00:35:06,387 --> 00:35:14,627
+Karşılaştırıcı bunu düzeltiyor ve net olarak çıkışta logic 0 değerini sağlıyor. Eğer burada tutmuş olduğumuz eğer logic 1 burada tuttu.
+
+146
+00:35:14,627 --> 00:35:29,148
+Burada da dolayısıyla logic 0 sağlanmış olsaydı da okuduğumuzda buraya logic 1 geldi, buraya logic 0 geldi. Burası artı 3 daha büyük olduğu için çıkışta yine logic 1'i uygun elektriksel seviyelerle sağlamış olacaktı.
+
+147
+00:35:29,148 --> 00:35:34,387
+Dolayısıyla S-RAM'den okuma mantığı da yine wordline aktif etmek sadece tek başına yeterli.
+
+148
+00:35:34,387 --> 00:35:46,387
+oluyor. SRAM'in genel blok yapısına bakacak olursak, ROM'dan farklı bir durum söz konusu burada. Özellikle buna dikkat etmeliyiz. Ama onun dışında benzer bir yapı söz konusu.
+
+149
+00:35:46,387 --> 00:36:00,387
+En adet adres ucu varsa, 2 üzeri en adet hafıza hücresinden bahsedebiliriz. Her bir hafıza hücresi M adet bitten oluşuyorsa, bu durumda da veri yolu genişliği bu SRAM'in M olmak durumunda.
+
+150
+00:36:00,576 --> 00:36:12,576
+Bununla birlikte biz RAM'e ilişkin olarak yazma ve okuma işlemleri yapabilir durumdayız. Öyleyse RAM bloğunun, S-RAM bloğunun hem okuma hem de yazma seçim uçları var.
+
+151
+00:36:12,576 --> 00:36:28,576
+Yani Write Enable ve Read Enable olarak isimlendirebileceğimiz iki tane okuma yazma kontrolücü var. Bununla birlikte bir de bu S-RAM bloğunu belirli bir adres aralığına yerleştirmek istediğimizde de bu adres aralığıyla ilgili MUL komutu çalıştırdığımızda
+
+152
+00:36:28,576 --> 00:36:43,355
+seçilmesi için bir chip select ucu mevcut. Dikkat edeceğimiz bir başka noktada veri yolu çift yönlü. Hem veri okuma hem de veri yazma açısından bir destek sağlamak açısından çift yönlü bir veri yolu mevcut olduğunu söyleyebiliriz.
+
+153
+00:36:43,891 --> 00:36:49,891
+Bu cihazı kullanmak istediğimizde de adres uçlarına mikroişlemcinin adres uçları bağlı olacak.
+
+154
+00:36:49,891 --> 00:36:56,891
+Right Enable ucuna mikroişlemcinin right ucu bağlı olacak. Read Enable ucuna mikroişlemcinin read ucu bağlı olacak.
+
+155
+00:36:56,891 --> 00:37:05,891
+Chip select ucuna adres çözümleme devresinden bir çıktı bağlanacak. Veri uçları da mikroişlemcinin data uçlarına bağlı olmak durumunda arkadaşlar.
+
+156
+00:37:05,891 --> 00:37:11,563
+SRAM'in iç yapısına baktığımızda da benzer bir durum söz konusu yine bir dekoder var.
+
+157
+00:37:11,827 --> 00:37:35,228
+Ve bununla birlikte okuma-yazma kontrolünü sağladığımız bir yapı da söz konusu olmak zorunda. Dolayısıyla içerideki hafıza matrisine karşılık yanında bir de çıkış-giriş bufferımız, şurada gördüğümüz yapı söz konusu. Dolayısıyla biz okumayı doğrudan içerideki matristen değil de şurada arayüz sağlayan buffer üzerinden yapıyoruz.
+
+158
+00:37:35,472 --> 00:37:39,872
+Okuma-yazma durumu ROM'da bahsettiğimizde benzer bir durum. Dolayısıyla geçiyorum.
+
+159
+00:37:39,872 --> 00:37:45,872
+Dinamik RAM yapısında ise her bir hafıza birimi kapasite ve transistör çiftlerinden oluşuyor.
+
+160
+00:37:45,872 --> 00:37:54,672
+Lojik değer zamanla güncellemek lazım çünkü kapasite kaçak akımlar dolayısıyla üzerindeki tutmuş olduğu yükü kaybedebiliyor yavaş yavaş.
+
+161
+00:37:54,835 --> 00:38:13,595
+Baktığımız zaman her bir hafıza hücresinde bir kapasite bir transistör var. Kapasiteleri de aslında transistörün iki ucunu birleştirerek bir kapasiteye dönüştürebiliyoruz. Dolayısıyla bu yapıda bir dinamik RAM hücresinde her bir hücrede iki adet transistör var diyebiliriz.
+
+162
+00:38:13,595 --> 00:38:22,595
+Öyleyse aynı alanda S-RAM ile karşılaştırdığımızda aynı alana karşılık dört kat daha fazla veri depolama kapasitesine...
+
+163
+00:38:22,835 --> 00:38:48,375
+Bu noktada sahip olduğunu söyleyebiliriz. Dinamik RAM'lerde 0 değeri yazıldıktan sonra bunu kaybetmek söz konusu değil. Fakat lojik 1 değeri dinamik 1 RAM'e yazılmışsa sadece ve sadece bu değerin kaybolması söz konusu. Çünkü kapasitede saklı yük lojik 1 olarak karşılık buluyor ve bu yükün yitirilmesi kayıp akımlarla birlikte bu değerin giderek lojik 0'a doğru yaklaşmasına sebebiyet veriyor.
+
+164
+00:38:48,980 --> 00:38:57,980
+Bir dinamik RAM hücresini aslında arkadaşlar temel olarak sızıntı yapan bir kova olarak düşünebilirsiniz. Bu analoji de düşünebilirsiniz.
+
+165
+00:38:57,980 --> 00:39:10,980
+Dolayısıyla bir dinamik RAM hücresini de bu şekilde adres seçimi ve data seçimi için, adres seçimi wordline yine data seçimi bitline ile ifade edilmiş yapıda sağlamamız mümkün. Temel gösterimi bu şekilde.
+
+166
+00:39:14,900 --> 00:39:31,699
+Adres değeri olarak bu dinamik RAM hücresi seçiliyor. Bu seçildiği vakit bunun source ve drain uçları arasındaki bağlantı sağlanmış oluyor. Data hattından da logic 1 değerini gönderdiğimizde bu logic 1 değeri drain ucuna bağlı olan kapasiteyi şarj ediyor.
+
+167
+00:39:32,179 --> 00:39:43,579
+Daha sonra bir adres değerini kaldırdığımızda kapasitedeki bu yüklenmiş, kapasiteye aktarılmış yük miktarı burada saklanmış oluyor. Dolayısıyla burada lojik bir değerini saklamış olduk.
+
+168
+00:39:43,579 --> 00:39:54,179
+Fakat dediğimiz gibi kapasitenin plakaları arasında veyahut da kapasitede tutulmuş olan yükler kaçak akımlar dolayısıyla zamanla yitirilme riski var.
+
+169
+00:40:00,000 --> 00:40:05,880
+mikroişlemci hücresini seçtik, wordline üzerinden. Dolayısıyla source ve drain uçları arasındaki bağlantıyı tamamladık.
+
+170
+00:40:05,880 --> 00:40:15,880
+Logic 0 değerini de data ucundan yani bitline ucundan gönderdik. Eğer ki kapasitede belirli bir yük varsa bu yük buraya bağlamış olduğumuz logic 0 dolayısıyla
+
+171
+00:40:16,079 --> 00:40:31,920
+deşarj oluyor ve burada herhangi bir yük kalmıyor. Daha sonra adres değerini kaldırdığımda kapasite deşarj olmuş şekilde logic 0 değerini saklamış oluyor. Dolayısıyla bu da dinamikleme 0, logic 0 değerini yazmaya karşılık gelen senaryo olmuş oluyor.
+
+172
+00:40:31,920 --> 00:40:44,079
+Güncellemeden bahsedecek olursak da arkadaşlar, burada kapasiteye göndermiş olduğumuz logic 1 değeri kapasiteyi şarj etmişti. Dolayısıyla kapasitedeki gerilim değeri şurada göstermiş olduğumuz
+
+173
+00:40:44,079 --> 00:40:52,720
+seviyeye ulaştı. Fakat kaçak akımlar dolayısıyla bunun eksponansiyel olarak azalması söz konusu. Yani belirli bir zaman sonra
+
+174
+00:40:52,720 --> 00:40:58,980
+logic 1 ile logic 0'ı ayırt etmiş olduğumuz threshold gerilim değerinin altına düşme riski var.
+
+175
+00:40:59,380 --> 00:41:18,380
+İşte buradaki kapasitenin zaman sabitini dikkate alarak belirli sürelerle üzerindeki saklı değeri yeniden üzerine yazıyoruz. Dolayısıyla bu yük miktarı bu treş olduğunun altına inmeden yeniden bunu orijinal maksimum yük kapasitesine kadar doldurduk ve daha sonra yine kayacak akımlar ve...
+
+176
+00:41:18,784 --> 00:41:34,284
+Yine doldurduk. Dolayısıyla dinamik RAM'in zaman olarak belirli zaman aralıklarında güncellenmesi de bu mantık çerçevesinde gerçekleşiyor arkadaşlar. Dolayısıyla bu yük miktarı, trash oldun altına düşmeden yeniden güncellenmesi gerektiğini ifade etmiş olduk.
+
+177
+00:41:34,284 --> 00:41:39,583
+Şimdi dinamik RAM'lere baktığımız zaman dinamik RAM'lerde farklı bir senaryo söz konusu.
+
+178
+00:41:41,876 --> 00:41:45,916
+Dinamik RAM ile SRAM arasındaki farkı tekrar şuradan görelim.
+
+179
+00:41:45,916 --> 00:41:51,816
+Static RAM yapısında vermiş olduğumuz adres değeri bir satırı seçtiriyordu.
+
+180
+00:41:51,816 --> 00:41:54,596
+Bir satırı seçtiriyordu. Tamam mı?
+
+181
+00:41:54,596 --> 00:42:00,736
+Şimdi dinamik RAM'lerde ise adres değerini iki farklı zamanda alabiliyoruz.
+
+182
+00:42:00,736 --> 00:42:04,136
+İki farklı zamanda. Dolayısıyla ilk gönderdiğimiz adres
+
+183
+00:42:04,403 --> 00:42:12,264
+Stun seçimi ikinci gönderdiğimiz adres satır seçimi yapabiliyor. Bu durumda ise aslında şöyle ifade edelim.
+
+184
+00:42:14,543 --> 00:42:21,304
+Statik RAM'lerde en adet adres ucuyla iki üzeri en adet hafıza gözü adresleyebiliyorduk.
+
+185
+00:42:28,884 --> 00:42:37,884
+En bittik adres değerini sütun seçim ucuna verdik ve bir adres değeri gönderdik. 2 üzeri en farklı gözlüğün seçimini sağladık.
+
+186
+00:42:37,884 --> 00:42:44,884
+Daha sonraki T1 anında ise, T2 anında ise bu sefer satır seçimi için, row select için
+
+187
+00:42:45,523 --> 00:42:55,123
+işaret gönderdik ve farklı bir adres değeri gönderdik. Yine en bitlik farklı bir adres. Bu durumda da iki üzeri en adet farklı satırdan birisini seçebiliyoruz.
+
+188
+00:42:55,123 --> 00:43:00,203
+Dolayısıyla iki üzeri en adet sütun çarpı iki üzeri en adet satır ve bunların
+
+189
+00:43:00,628 --> 00:43:13,907
+Bu satır sütün eşleştirmesinde m adet bit olduğunu varsayalım. Bu durumda dinamik lemin kapasitesini 2 üzeri 2n çarpı m olarak ifade etmek mümkün. Bunun sebebi de tekrar ediyorum.
+
+190
+00:43:14,483 --> 00:43:32,723
+Dinamik RAMM'lere gönderebileceğimiz adres değeri N adet bitten oluşuyor. Fakat farklı zamanlarda, iki farklı zamanda farklı iki adres gönderebildiğim için, iki adet N bitlik farklı adres değeri gönderebildiğim için, sanki burada iki üzeri N'lik bir adres uzayından bahsediyoruz gibi bir senaryo oluşuyor.
+
+191
+00:43:32,723 --> 00:43:41,243
+Bu senaryoda iki üzeri iki N adet hafıza gözüne karşılık geliyor. Bu iki üzeri iki N hafıza gözünün her biri de M adet veri tutabilirse,
+
+192
+00:43:41,492 --> 00:43:46,772
+Bu durumda 2 üzeri 2N çarpı M kapasiteli bir dinamik RAM'den bahsetmemiz mümkün oluyor.
+
+193
+00:43:47,972 --> 00:43:54,452
+Yine bunun da bir RAM olduğu için write enable, read enable uçları var. Read enable write ucuna bağlı olacak.
+
+194
+00:43:56,372 --> 00:44:01,731
+Write enable write ucuna bağlı olacak. Read enable ucu da mikroişlemcinin read ucuna bağlı olacak.
+
+195
+00:44:02,164 --> 00:44:13,164
+Burada satır ve sütun seçimine ilişkin olarak şu da yapılabilir. Bir adet adres ucu kullanılabilir. 0 ve 1 şeklinde belki. Birer adet adres ucu da kullanılabilir.
+
+196
+00:44:13,164 --> 00:44:26,164
+Bu durumda da farklı bir senaryo oluşur. Eğer satır ve sütun seçimi için birer adres ucu kullanıyorsak, onların bir olduğu durumda n-2 adet ucumuz kalmış olur.
+
+197
+00:44:28,980 --> 00:44:35,039
+2 üzeri en eksi 2 çarpı 2'lik bir değer çarpı M kapasitesi sağlamış oluyoruz.
+
+198
+00:44:35,039 --> 00:44:44,279
+Veyahut da ilgili dinamik RAM kontrolcülerini kullanırsak, onlar da satır ve stint seçimi için farklı değerler zaten oluşturuyor olacaklar.
+
+199
+00:44:44,379 --> 00:44:49,779
+Oradan da 2 üzeri 2 enlik hafıza gözü miktarına ulaşmış oluyoruz.
+
+200
+00:44:50,779 --> 00:44:53,879
+Dolayısıyla dinamik RAM'in iç yapısına baktığımızda arkadaşlar,
+
+201
+00:44:55,092 --> 00:45:06,092
+Sütun seçimiyle birlikte sütun seçim leçi aktif oluyor. Gönderdiğimiz adres değeri dolayısıyla bu leç de tutuluyor. Daha sonra satır seçim.
+
+202
+00:45:06,452 --> 00:45:28,452
+leçi aktif edilerek RAS üzerinden ikinci bir adres gönderiliyor. O da satır seçim leçinde tutuluyor. Dolayısıyla en adet adres burada, en adet adres burada, iki üzere en adet adreslik bir uzayı oluşturmuş oluyoruz. Buradaki her bir kesişim noktası aslında Z yönünde M adet bitten oluşabilir. Yani bu da...
+
+203
+00:45:28,916 --> 00:45:36,076
+Satır ve sütün eşleştirmesine karşılık gelen noktaya karşılık M adet biti sakladığımız senaryoyu ifade eder.
+
+204
+00:45:37,615 --> 00:45:45,816
+Bu kısım arkadaşlar bu haliyle temel olarak hafıza birimlerinin tanıtımı şeklinde ifade edeceğimiz bir yapıydı.
+
+205
+00:45:45,816 --> 00:45:53,056
+Bundan sonra artık bu hafıza birimlerinin 8086 ile bağlantısının nasıl yapılacağını tanımladığımız kısma geliyoruz.
+
+206
+00:45:53,556 --> 00:46:06,155
+8086'ya baktığımızda arkadaşlar, 20 adet adres ucu ve 16 adet veri ucuna sahip olduğunu söyleyebiliriz. Şu ana kadar görmüş olduğumuz bizim bütün hafıza birimleri 8 bitlik veri ucuna sahipti.
+
+207
+00:46:06,155 --> 00:46:14,155
+Dolayısıyla 16 bitlik veri yoluna sahip bir mikroişlemcide 8 bitlik hafıza birimleri, 8 bitlik...
+
+208
+00:46:16,115 --> 00:46:23,115
+8 bitlik IO birimlerini kullanırken bunları ardışık, çift veya ardışık tek adreslere yerleştirmiştik.
+
+209
+00:46:23,815 --> 00:46:29,815
+Veyahut da bir başka alternatif de bu 8 bitlik IO birimlerini kullanarak 16 bitlik bir IO birimi geliştirmekti.
+
+210
+00:46:30,596 --> 00:46:34,596
+Onu da doğrudan 16 bitlik, çift ve tek adreslere ardışık olarak yerleştiriyorduk.
+
+211
+00:46:35,507 --> 00:46:49,507
+Şimdi hafıza tarafına döndüğümüzde, aksi belirtilmediği sürece arkadaşlar, hafıza birimlerimizin 8 bitlik temel blok yapılarının 8 bitlik veri yolu genişliğine sahip olduğunu varsayacağız. Dolayısıyla elimizdeki hafıza birimleri 8 bitlik.
+
+212
+00:46:50,228 --> 00:47:04,188
+Ve 8086 mikroişlemcisi temelde çift adresten 16 bitlik, tek adresten 8 bitlik, çift adresten 8 bitlik okuma ve yazma işlemlerini destekliyor. Bunları da bir okuma yazma çevreminde gerçekleştirebiliyor.
+
+213
+00:47:04,188 --> 00:47:08,968
+Şimdi bunlar ne demek? Onlara bir bakalım. Şöyle tekst alalım şuradan.
+
+214
+00:47:09,876 --> 00:47:36,175
+Şimdi burada çift adresten 16 bitlik işlem şunu kastediyoruz. Move ax virgül, işte köşeli parantez içerisinde 100h adresi. Çift adresten 16 bitlik bir işlem. Veyahut da tek adresten 8 bitlik bir işlem yapalım. Al virgül 101h. Veya çift adresten 8 bitlik bir işlem yapalım. Al virgül yine 100h diyebiliriz.
+
+215
+00:47:36,371 --> 00:47:40,451
+Bunlar arkadaşlar, bu tür komutları mikroişlemci bir seferde destekliyor.
+
+216
+00:47:41,151 --> 00:47:53,791
+Dolayısıyla mikroişlemci, hafıza birimleri, 8 bitlik birimler olmakla birlikte, toplamda da 20 adet adres ucu olmasıyla birlikte, ne kapasitede hafızaya sahip bağlantı sağlanabilir?
+
+217
+00:47:53,791 --> 00:47:59,391
+20 adet adres ucu olduğuna göre, 2 üzeri 20 adet hafıza gözüne erişebilir.
+
+218
+00:48:00,115 --> 00:48:14,215
+Her bir hafıza gözünün 8 bitlik olduğunu da varsayacak olursak, 2 üzeri 20 çarpı 8 kapasitesine sahip bir hafıza birimini bu mikroişlemciye bağlayabiliriz. Dolayısıyla bunun toplam kapasitesi ne olmuş oluyor?
+
+219
+00:48:14,215 --> 00:48:25,816
+2 üzeri 20, 2 üzeri 10 çarpı 2 üzeri 10 kilo, 2 tane kilo mega yaptı. Çarpı 8'de byte, dolayısıyla 1 megabyte'lık bir kapasiteye sahip 8086.
+
+220
+00:48:26,228 --> 00:48:36,728
+Fakat 16 adet veri ucuna sahip olduğu için bu 1 megabaytlık toplam hafıza kapasitesini karşısında nasıl görmek istiyor? Çarpı 16 bit olarak görmek istiyor.
+
+221
+00:48:36,728 --> 00:48:49,827
+O zaman toplam kapasitemiz 1 megaydı. 1 megayı 2'ye böleceğiz. 1 megalık toplam kapasiteyi 2'ye böleceğiz. 512k ve 512k her biri 8 bit. Bunları yan yana çalıştıracağız bu durumda.
+
+222
+00:48:50,708 --> 00:49:18,027
+8086'nın görmek istediği hafıza uzayı karşısında 512K çarpı 16'lık bir arayüz görmek istiyor diyebiliriz. Bununla birlikte bu 512K çarpı 16'lık arayüzü oluşturduğumuzda bu arayüz mikroişlemcinin bir okuma yazma çevriminde desteklediği çift adresten 16, tek adresten 8 ve yine çift adresten 8 bitlik işlemlere karşılık destek de sağlıyor.
+
+223
+00:49:18,260 --> 00:49:19,640
+Bunun anlamı şu.
+
+224
+00:49:19,860 --> 00:49:43,940
+Eğer biz bir çift adresten 16 bitlik işlem yapmak istediğimizde ve bu iki tane bankımız var bizim 512K, 512K olarak, bu ilk 512K'lık sağdaki kısımda sadece çift adresler, soldaki kısımda da sadece tek adresler olursa, aynı satırdaki, aynı satırdaki gözlere baktığımızda bunların sadece A0 bitinin farklı olduğunu görürüz.
+
+225
+00:49:47,103 --> 00:50:11,303
+Çift adresleri A0 ile seçsek veya onun başka bir adı daha vardı, bus, bow, enable olarak da isimlendiriyordu. Dolayısıyla çift bankı A0 ile seçsek, tek bankı da bus, high, enable ile seçsek, bu durumda mikroişlemcinin burada bahsetmiş olduğumuz çift adresden 16, tek adresden 8 ve çift adresden 8 bitik işlemleri bir seferde desteklemesine katkı sunmuş oluyoruz.
+
+226
+00:50:14,996 --> 00:50:18,923
+Şimdi bunları nasıl yapacağız diye bakalım.
+
+227
+00:50:24,340 --> 00:50:31,380
+Az önce anlattığım üzere, 20 adet adres ucu olduğuna göre, 1M adet, 1Mega adet hafıza gözü adresine verir.
+
+228
+00:50:31,380 --> 00:50:38,340
+Hafıza birimlerinin her birisi 8 bit veri çıkışına sahipse, yani 1 byte, toplam kapasitemiz 1 megabyte.
+
+229
+00:50:39,180 --> 00:50:46,540
+Ama mikroişlemciye 1 megabyte'lık, yani 1M çarpı 8'lik bir arayüzü bağlayacak olursak, ne olacak arkadaşlar?
+
+230
+00:50:46,700 --> 00:50:51,780
+Asla ve asla bunun yarısını kullanamayacak. Çift adresleri kullanamayacak ama tek adresleri kullanamayacak.
+
+231
+00:50:52,244 --> 00:51:13,244
+Çünkü bunun 8 bitlik çıkışını ya D0, D7'ye bağlamayız ya 8, D15'e bağlamayız. Dolayısıyla bu şekilde arayüz yaparsak, 1M çarpı 8 olarak bağlamaya çalışırsak, bu durumda bu hafızanın yarısını mikroişlemci kullanamayacak, erişemeyecek çünkü.
+
+232
+00:51:14,260 --> 00:51:20,019
+Bu durumda mikroişlemci karşısında ne görmek istiyordu? Çarpı 16 olarak görmek istiyor. Veri yolu 16 bittik ya.
+
+233
+00:51:20,019 --> 00:51:26,980
+O zaman toplam kapasitemizi ikiye böleceğiz. 512, 512 iki tane bank oluşturacağız ve bunları birlikte çalıştıracağız.
+
+234
+00:51:26,980 --> 00:51:34,660
+Aynı satırdan bu iki tane 512'lik bankların aynı satırdan seçim yaptığımızda da 16 bittik veriyi çıkmış olacağız.
+
+235
+00:51:34,688 --> 00:51:49,688
+Sağdaki bankı A0 ile seçtireceğiz. Soldaki bankı da bus high enable ile seçtireceğiz. Sağdaki bank A0 0 olduğunda seçilecek. Soldaki bank ise bus high enable 0 olduğunda seçiliyor olacak. Şimdi düşündüğümüzde...
+
+236
+00:51:50,096 --> 00:52:10,096
+Sadece A0'ın 0 ve 1 olması bankları seçtiremez. Çünkü bizim üç tane durumumuz var. Biz ya bu sağdaki banktan bir değer okuyacağız, yani çift adresten 8 bit, ya sadece soldaki banktan okuyacağız, yani tek adresten 8 bit veya bazı durumlarda da biz isteyeceğiz ki sağdaki ve soldaki bankın...
+
+237
+00:52:10,675 --> 00:52:26,436
+Aynı satırından 16 bitlik değeri bir seferde çıkmak isteyeceğiz. Yani dolayısıyla bizim 3 tane durumumuz var. 3 tane durum için en az 2 bite ihtiyacımız var. Bu bitlerden bir tanesi A0, yani bir başka ismiyle bus low enable, diğeri ise bus high enable ucu olmuş oluyor.
+
+238
+00:52:28,375 --> 00:52:35,755
+Dolayısıyla shift adresleri A0 ile tek adresleri bus high enable'ın 0 olmasıyla seçtiriyor olacağız arkadaşlar.
+
+239
+00:52:38,195 --> 00:52:58,516
+Burada bahsetmiş olduğumuz yapıyı, az önce söylediğimiz yapıyı tasarlayıp bağlantısını sağlamış olursak, yani 1M çarpı 8'lik hafıza uzayını değiştirdik. 512K adet satırımız var ve her bir satırda bu bloklar yan yana kullanılıyor.
+
+240
+00:52:58,516 --> 00:53:04,596
+Yani hafızanın yarısı sağ blok, yarısı sol blok olarak yerleştirildi. Şuradaki yapı gibi yerleştirildi.
+
+241
+00:53:04,947 --> 00:53:19,947
+Çift adreslerin olduğu bir blok var ve tek adreslerin olduğu bir blok var. Verilen işleme göre, yürütülecek işleme göre eğer çift bank seçilecekse bu A0'la seçiliyor. Eğer tek bank seçilecekse bu da bus, I enable'la seçiliyor.
+
+242
+00:53:29,972 --> 00:53:36,432
+Bir tanesini bank seçimi için kullandık. A0'ı bank seçimi için kullandık. Geriye 19 adet adres ucu kaldı.
+
+243
+00:53:36,432 --> 00:53:47,912
+19 adres ucuyla kaç satır seçtirilebilir? 2 üzeri 19. Yani 512K değil mi? Zaten bizim oluşturduğumuz hafıza arayüzü 512K adet satırdan oluşuyordu.
+
+244
+00:53:48,012 --> 00:53:55,492
+Dolayısıyla bunda bir sakınca yok. Bunun dışında çift bankların bütün D0 uçlarını birleştirdim.
+
+245
+00:53:56,148 --> 00:54:06,648
+Ve bunu mikroişlemcinin D0 ucuna bağladım. Bütün çift banktaki bütün hafıza gözlerinin çıkışlarının D1 uçlarını birleştirdim. Bunu mikroişlemcinin D1 ucuna bağladım.
+
+246
+00:54:06,648 --> 00:54:14,908
+Nokta, nokta, nokta. Bütün çift banktaki D7 data uçlarını birleştirdim ve bunu mikroişlemcinin D7 ucuna bağladım.
+
+247
+00:54:16,820 --> 00:54:32,420
+Çift bankın, çift adreslerin yerleşik olduğu bankın data uçlarını mikroişlemcinin D0, D7 arasına bağladım. Ve yine tek banktaki bütün data uçlarında mikroişlemcinin D8, D15 uçlarına bağlamış olayım.
+
+248
+00:54:41,748 --> 00:54:51,048
+Şöyle bir komut yürütmeye çalışsak, move, al, 100h gibi bir komut yürütmeye çalışsak.
+
+249
+00:54:51,668 --> 00:54:56,448
+Bu durumda adres çift olduğu için, a0 değerimiz arkadaşlar 0'dır.
+
+250
+00:54:57,448 --> 00:55:08,528
+Bu bir çift adresten 8 bitlik işlem olduğu için, mikroişlemci bas h&a bulucunda, şöyle yanına da bir şey koyayım, üstüne çizilmek zor olduğu için, bas h&a bulucunda bir değeri oluşturur.
+
+251
+00:55:10,068 --> 00:55:18,568
+Ve mikroişlemci çift adreslerine 8 bitlik işlem yapıldığı için veriyi D0, D7 uçları arasından bekler.
+
+252
+00:55:20,068 --> 00:55:31,568
+Şimdi bunlara göre biz bu mantık çerçevesinde 512K çarpı 16'lık arayüz çerçevesinde veriyi mikroişlemciye aktarabiliyor muyuz diye bakalım.
+
+253
+00:55:32,211 --> 00:55:40,012
+A00 olduğu için şuradan bir değer seçilecek. Yani 100H adresi de bu aralıkta. Çünkü çift bir adres.
+
+254
+00:55:40,912 --> 00:55:50,751
+A00 olduğu için çift bank seçildi. Yani bu aralık seçildi. Bus I Enable 1 olduğu için odd bank seçilmedi. Yani veri D8, D15'e çıkmayacak.
+
+255
+00:55:51,188 --> 00:56:13,907
+Veri D0, D7'ye çıkacak ve zaten mikroişlemci diye veriyi D0, D7'den bekliyorduk. Gayet güzel bir şekilde şu 100H adresindeki verimizi, 8 bitlik verimizi okuyup aktarabildik. Bu güzel. Şimdi bir başka örneğe bakalım. Bu örnekte de tek adresten 8 bitlik işlem yapacağız. Tek adresten 8 bitlik işlem yaparken de şu senaryoyu ele alalım.
+
+256
+00:56:20,052 --> 00:56:39,112
+Bu komutu yürüttüğümüzde ise arkadaşlar bakın, data segment ve offset ile birlikte 20 bitlik bir adres oluşturulacak. Fakat bu adresin en düşük anlamlı biti A0. A0 sadece şeyde kullanılıyor, bank seçiminde kullanılıyor. O zaman A0 değerimiz bizim 1, kesinlikle 1.
+
+257
+00:56:39,731 --> 00:56:52,632
+Şimdi 100H için yaptığımız işlemdeki A1, A19 ile tek adres için yaptığımızda A0'ını ayırıp A1, A19 değerleri birbirine eşittir değil mi? Şunu demek istiyorum.
+
+258
+00:57:03,572 --> 00:57:29,912
+A19, kimin A1, A19'u? 100H'ın A1, A19'una eşit. Bunlar arasındaki tek var, A0. 101H'ın A0'ı 1, 100H'ın A0'ı 0. Onun dışında kalan bütün bitleri birbirine eşit. Yani ben MOVAL, 101H çalıştırdığımda 100H ile aynı satırda olan ODBANK'taki hafıza gözünün değeri veri yoluna çıkıyor.
+
+259
+00:57:30,931 --> 00:57:38,431
+Bu, biraz sonra yapacağımız durum için anlamlı. Biraz sonra, çift adresten 16 bitlik işlem yapmaya çalışacağız. Orada anlam kazanılıyor.
+
+260
+00:57:39,431 --> 00:57:50,572
+A0'a bir değeri yüklüyor. Bus, I enable'a ise, şöyle natını da koyalım, Bus, I enable'a ise, 0 değerini yüklüyor bu komutun çalıştırılması.
+
+261
+00:57:50,572 --> 00:57:56,992
+O zaman, çift bank seçilmiyor. Tek bank seçiliyor. Tek banktan da 100 haçla aynı satırda olan,
+
+262
+00:57:57,331 --> 00:58:14,731
+Değer, bu gözdeki değer, veri yolunun D8, D15'ine çıkıyor. Zaten mikroişlemci de bu komutta veriyi D8, D15 uçları arasında bekliyor. Dolayısıyla tutarlı bir senaryo elde etmiş oluyoruz.
+
+263
+00:58:14,731 --> 00:58:17,512
+Bir sonraki duruma geçelim.
+
+264
+00:58:18,420 --> 00:58:28,900
+Bir sonraki durumda çift adresten 16 bitlik işlem yapmaya çalıştığımız durum. Yani bunun örnek senaryosunda verecek olursak, MOV AX, 100H durumu.
+
+265
+00:58:29,579 --> 00:58:38,199
+Şimdi bu komut çalıştırıldığında, bu komut bir kere çift adres, dolayısıyla A0'ı 0'dır. Bu komut 16 bitlik bir komut, AX üzerinden aktarılıyor.
+
+266
+00:58:38,199 --> 00:58:44,820
+Dolayısıyla veri yolunun yüksek anlamlı kısmında da veri gelecek. O zaman mikroişlemci bus, I enable'a da 0 değeri üretiyor.
+
+267
+00:58:45,876 --> 00:58:51,376
+Ve veriyi D0, D15 arasındaki bütün uçlardan bekliyor.
+
+268
+00:58:52,376 --> 00:58:57,376
+Dolayısıyla bizim bu arayüzde verinin bütün data uçlarına çıktığından emin olmalıyız.
+
+269
+00:58:57,876 --> 00:59:02,376
+Şimdi 100H, aslında bu ne demek? 100H'dan veri okumak demek ne demek?
+
+270
+00:59:02,876 --> 00:59:12,876
+100H'daki değeri AL'ye koy, 101H'daki değeri de AH'a koy demek.
+
+271
+00:59:13,204 --> 00:59:37,524
+Dolayısıyla hem 100H hem de 101H ile ilgili işlem yapıyor gibi düşünemiyoruz. Ama az önce ne demiştik? Biz 100H ile ilgili 16 bitlik işlem yapmak istediğimizde A0'a ve bus, high enable'a 0 değerleri çıkıyor. Dolayısıyla bu oddbank ve evenbank dediğimiz çift adreslerin ve tek adreslerin olduğu hafıza bloklarında aynı satır aktif ediliyor. Aynı satır. Dolayısıyla şurası bizim 100H adresimiz.
+
+272
+00:59:38,164 --> 01:00:00,084
+Şurası da bizim aynı satırdaki 101H adresimiz olmuş oluyor. İkisi de aktif oldu. Neden? A0 aktif, bu bank seçili. A1 aktif, şey, bus enable aktif, bu bank seçili. Adres uçlarında A1'den A19'a kadar her iki bankada aynı değer gidiyor A1-A19 arasında. Dolayısıyla aynı satır seçilmiş oluyor.
+
+273
+01:00:00,467 --> 01:00:07,467
+100H adresindeki değer D0, D7'ye çıkıyor. 101H adresindeki değer de D8, D15'e çıkıyor.
+
+274
+01:00:07,467 --> 01:00:11,467
+Zaten burada little ending formatı vardı. Little ending formatı ne diyordu?
+
+275
+01:00:11,467 --> 01:00:20,467
+Verinin düşük anlamlı kısmı düşük adreste saklanır. Dolayısıyla bizim 16 bitlik verimizin düşük anlamlı kısmı veri yolunun düşük anlamlı kısmına çıktı.
+
+276
+01:00:21,139 --> 01:00:34,139
+16 bitlik verimizin, AX'e okuyacağımız verimizin yüksek anlamlı kısmı da veri yolunun yüksek anlamlı kısmından çıktı. Dolayısıyla Little Ending'in formatından da düşündüğümüzde bizim bu 16 bitlik veriyi doğru bir şekilde okuduğumuzu...
+
+277
+01:00:39,572 --> 01:00:40,572
+Görmüş oluyoruz.
+
+278
+01:00:40,572 --> 01:00:44,572
+16 büklük veriyi uygun şekilde çıkmış olduğumuzu görüyoruz.
+
+279
+01:00:49,715 --> 01:01:16,635
+Peki, mikroişlemcinin tek okuma yazma saykılığına desteklemediği durum var bir de. O da tek adresten 16 bitlik işlem. Bunu niye desteklemiyor? Bunu da şundan dolayı desteklemiyor. Örneğin burada bizim çalıştıracağımız komut, şöyle bir komut ise, move ax,5,5 diyelim. 5 offsetindeki değeri ax'e okuyacağım.
+
+280
+01:01:16,976 --> 01:01:20,176
+Bu durumda aslında yapmak istediği işlem nedir?
+
+281
+01:01:20,956 --> 01:01:33,936
+Move, AL, 5 ve move, AH, 6 işlemlerini yapmak istiyor değil mi?
+
+282
+01:01:34,496 --> 01:01:39,536
+Fakat 5 ve 6'yı biz binary olarak yazdığımızda 0, 1, 0, 1 bu 5.
+
+283
+01:01:40,148 --> 01:01:47,307
+6 değerimiz de 0, 1, 1, 0. Baktığımız zaman A0 uçlarını ayırdıktan sonra kalan değerler aynı değil arkadaşlar.
+
+284
+01:01:47,887 --> 01:01:53,588
+A0'ı ayırdıktan sonra kalan değerler aynı değil. Bunun anlamı ne? Bunlar aynı satıra denk gelmiyor.
+
+285
+01:01:54,260 --> 01:02:01,019
+Bunlar aynı satıra denk gelmiyor. Dolayısıyla aynı satırdan aynı anda seçim yapıp bunları veri hattına çıkmamız mümkün olmuyor.
+
+286
+01:02:01,019 --> 01:02:10,740
+Peki bunu nasıl değerlendiriyor mikroişlemci? Tek adresten 16 bitlik işlemleri, 2 adet 8 bitlik işleme dönüştürüyor. Ne yapıyor yani? Önce şunu yapıyor.
+
+287
+01:02:10,740 --> 01:02:17,380
+Tek adresten 8 bitlik işlem, veri DS8D15'e çıkıyor. Eğer burada...
+
+288
+01:02:17,940 --> 01:02:37,699
+Çift bankı da seçmiş olsaydı 4 adresinden değer gelecekti. Bunu istemiyoruz zaten. Birinci cycle da bunu yapıyor. İkinci cycle da ise çift adresten yine 8 bitlik bir işlem yapıyor. Bu da 6 adresine aktif edip çift banktan onun değerine D0, D7'ye çıktığımız senaryo olmuş oluyor. Dolayısıyla mikroişlemcinin kendi tasarımı gereği
+
+289
+01:02:38,228 --> 01:03:02,228
+Tek adresten 8 bit, çift adresten 8 bit ve çift adresten 16 bit işlemleri bir okuma yazma saykılığına gerçekleyebiliyor. Kontrol işaretleriyle ancak ve ancak uygun hafıza arayüzünü sağlamışsanız ve tek adresten 16 bit işlemleri ise iki okuma yazma saykılığına bölüp ancak iki seferde halledebildiğini söyleyebiliyoruz arkadaşlar. Bu da önemli bir noktaydı.
+
+290
+01:03:05,300 --> 01:03:06,200
+Devam edelim.
+
+291
+01:03:08,820 --> 01:03:16,380
+Şimdi adres çözümleme mantığına baktığımızda da arkadaşlar, adres çözümleme mantığında daha önce de I.O. cihazları içinde yapmıştık.
+
+292
+01:03:17,100 --> 01:03:20,700
+I.O. cihazlarının belirli bir adres değeri miktarı var. Değil mi?
+
+293
+01:03:21,860 --> 01:03:27,020
+A0'da bank seçimi için kullanıyoruz. Dolayısıyla burada A0'ı ayırdık.
+
+294
+01:03:29,588 --> 01:03:56,068
+A1'den artık hafıza kapasitesinin boyutuna kadar, Aİ diyelim, Aİ'ye kadar olan uçları cihazın uçlarına bağladık. Geri kalan Aİ artı birden A19'a kadar olan uçlar ise adres çözünürme devresine gitmek durumunda. Adres çözünürme devresi niçin kullanılıyordu? Tekrar onu hatırlatalım. Mikroişlemci ile bir mikroişlemcili sistemde çeşitli hafıza birimleri ve IO birimleri aynı anda bağlı.
+
+295
+01:03:57,076 --> 01:04:15,896
+Sistem olarak bağlılar. Fakat mikroişlemci sadece her seferinde bir tane hafıza birimi veya IO birimiyle konuşabilir durumda. Eğer birden fazla cihaz aynı anda aktif olursa, bunların aynı anda, aynı hatta, aynı tele, birinin logic 0, birinin logic 1 çıktığını düşünün, bir çakışma oluşacak.
+
+296
+01:04:16,016 --> 01:04:32,076
+Dolayısıyla mikroişlemci her seferinde sadece bir I.O. cihazı veya hafıza cihazıyla konuşabilmeli. Bunu sağlayan şey de adres çözümleme devresi. Nasıl sağlıyor bunu? Mikroişlemci in, out veya move şeklinde hafıza birimleriyle ilişkin komut yürüttüğünde veya I.O. cihazlarıyla ilgili komut yürüttüğünde
+
+297
+01:04:33,012 --> 01:04:48,492
+Adres uçlarının belirli bir kısmı adres çözümleme devresine bağlı. Dolayısıyla vermiş olduğumuz adres aralığına ilişkin, her bir cihaza atadığımız adres aralığına ilişkin bir komut yürütülmüşse sadece ve sadece o cihazla aktif ediliyor.
+
+298
+01:04:48,492 --> 01:04:57,132
+Örneğin MOVE AX virgül 100H dedik. 100H adresi hangi cihazın adres aralığındaysa o cihaz aktif ediliyor. Diğer cihazlar.
+
+299
+01:04:57,204 --> 01:05:03,804
+Yüksek empedans gösteriyor veri ucunda. Yani hattan koparılmış gibi etki gösteriyor. Yani mikroişlemci sadece o cihaza bağlı.
+
+300
+01:05:04,804 --> 01:05:08,204
+Dolayısıyla adres çözümlemenin kullanımı da bu şekilde ifade edebiliriz.
+
+301
+01:05:09,204 --> 01:05:21,403
+Dediğim gibi adres çözümleme tarafında adres çözümleme devresi bir lojik. İşte bunu dekoderle yaptık daha önce. Yine dekoderle yapabiliyor olacağız.
+
+302
+01:05:22,003 --> 01:05:30,123
+A1'den hafıza elemanının kapasitesine göre AI ucuna kadar olan uçlar doğrudan cihazın adres uçlarına bağlanıyor.
+
+303
+01:05:30,123 --> 01:05:33,403
+A0 ucu, çift ve tek bankları seçim için kullanılacak.
+
+304
+01:05:33,403 --> 01:05:38,803
+AI artı 1'den A19'a kadar olan uçlar da adres çözümleme mantığına gidecek.
+
+305
+01:05:38,803 --> 01:05:42,203
+Şimdi daha önce geçen bir kavram vardı, onları hatırlayalım.
+
+306
+01:05:42,356 --> 01:05:58,356
+Eğer ki biz M.I.O. ucunu da adres çözümlemede kullanıyorsak, bu isolated I.O. olarak geçiyordu. Yani 1 MB'lik bir hafıza uzayın vardı, bir de 64 KB'lik I.O. uzayın vardı. Bunlar birbirinden ayrı olarak kullanılabiliyordu M.I.O. ucunun adres çözümlemede kullanılmasıyla.
+
+307
+01:05:58,356 --> 01:06:06,356
+Ve biz dersimizde şunu kabul etmiştik, aksi belirtilmediği süreci isolated I.O. kullanıyoruz. Yani M.I.O.'yu da adres çözümleme devresinde kullanmalıydık.
+
+308
+01:06:06,864 --> 01:06:30,364
+Kullanmalıyız. Yani vize de yapılan hatalardan birisi olduğu için tekrar etmiş olmak istedim. Eğer ki MIO ucunu adres çözümleme devresinde kullanmazsak bu durumda Memory Map IO olarak isimlendiriyordu. Bunun anlamı neydi? Bizim bir tane 1 MB'lik toplam kapasitemiz var. Bunun düşük anlamlı 64 KB'ı IO için ayrılı, geri kalan kısmı ise hafıza birimleri için ayrılmış oluyordu.
+
+309
+01:06:35,219 --> 01:07:02,259
+Şimdi çift ve tek banklardan bahsetmiştik. Çift ve tek bankların seçimine ilişkin olarak kullanılacak yönteme göre iki farklı yöntem söz konusu. Bunlar isolated veya memory map IO'dan farklı bir şeyden bahsediyorum. Hani 512K çarpı 16'lık bir hafıza arayüzü oluşturduk ya, bunun çift adreslerin olduğu bankla tek adreslerin olduğu bank söz konusuydu. Bu çift ve tek bankların
+
+310
+01:07:02,639 --> 01:07:30,240
+seçimini chip select üzerinden yapıyorsak bu ayrı bir senaryo, read write uçları üzerinden yapıyorsak bu da ayrı bir senaryo. Eğer ki, chip select uçları üzerinden, o hafıza birimlerinin chip select uçlarını ayırıp, farklı, çift adresler için ayrı bir chip select ucu, tek adresler için ayrı bir chip select ucu kullanmışsak, üretmişsek, bu separate bank decoder adı üzerinde. Bankları ayrı ayrı seçtiğimiz durum, ayrı ayrı dekod ediyoruz.
+
+311
+01:07:30,804 --> 01:07:55,563
+İkinci senaryo ise, bu çift ve tek bankları tek bir adres bloğu gibi görüyoruz. Yani tek bir chip select üzerinden ikisi de seçiliyor. Ama çift ve teki nasıl ayırt ediyoruz birbirinden? Read ve write uçlarının çift ve tek adresler için olanlarını üreterek. Bu durumda da separate bank, bank, strop yöntemi olarak isimlendiriliyor. Bunun detayına bakacak olursak, isolated memoriamat ve...
+
+312
+01:07:56,403 --> 01:08:20,743
+Izole ve Memory Map IEO'yu bu şekilde ifade edebiliyoruz. Bu daha önceki derslerimizde de geçmişti. Bu Separate Bank Strop ve Separate Bank Decoder işlemlerine bakacak olursak, temel yapı şu şekilde. Bizim tek ve çift adreslerimiz vardı, bloklar olarak. Bunların tek blok için ve çift blok için ayrı birer çift select işareti üretiyorsak,
+
+313
+01:08:21,171 --> 01:08:33,671
+Bu durum Separate Bank Decoder olarak isimlendiriyor. Bu durumda adres çözümleme lojiğine kullanmadığımız, cihazlar için kullanmadığımız adres uçları A0 ve bus, I enable'un bağlı olması gerekiyor.
+
+314
+01:08:33,671 --> 01:08:41,171
+Bizim ne ihtiyacımız olabilir bu durumda? Tek bloğu seçme ihtiyacımız olabilir. Tek başına, tek adresi seçme ihtiyacımız olabilir.
+
+315
+01:08:41,171 --> 01:08:46,171
+Tek başına, çift adresi seçme ihtiyacımız olabilir veya çift adresi seçme ihtiyacımız olabilir veya çift adresi seçme ihtiyacımız olabilir.
+
+316
+01:08:49,076 --> 01:09:10,476
+hafıza birimini aktif etmemiz gerekiyor olabilir. Dolayısıyla tekrar gelecek olursak, Separate Bank Decoder mantığında, bu tek adresler bloğuyla, çift adresler bloğunu, adres çözümleme mantığı çerçevesinde, iki ayrı chip select ile aktif edebiliyoruz. Ya birini ya diğerini, veyahut da aynı anda ikisini aktif edebiliyoruz.
+
+317
+01:09:10,476 --> 01:09:16,275
+Bunlar arasındaki seçimi temelde A0 veya bus I enable belirliyor olacak.
+
+318
+01:09:17,076 --> 01:09:40,076
+Tamam mı? Diğer taraftan, Separate Bank Strobe'a geldiğimizde ise, bu blok tek bir adres bloğu gibi değerlendiriliyor. Dolayısıyla adres çözümleme devremiz, sadece kullanılmayan adres uçlarına karşılık bir chip select, yani burada bağlamadığımız, adres uçlarına bağlamadığımız geri kalan adres uçlarının belirlemiş olduğu aralığa göre chip select üretiyor.
+
+319
+01:09:41,716 --> 01:09:59,716
+Çift ve tek blokları birbirinden nasıl ayırıyoruz? Eğer ki bir read ve write işlemine bakacak olursak, A0'ın 0 olduğu durumda veya bus enable'ın 0 olduğu durumda ayrı bir kontrolücü üretiyoruz. Ne demek bunlar? Çift bloklar için bir read işaret...
+
+320
+01:10:00,000 --> 01:10:13,399
+işareti, tek bloklar için bir read işareti ve benzer şekilde çift bloklar için blok için bir write işareti ve yine çift tek blok için bir write işareti üretiyoruz. Bunu nasıl yapıyoruz? Bakın şimdi write işareti aktif 0.1.3.
+
+321
+01:10:13,524 --> 01:10:30,764
+A0, 0 iken bir write işareti vermişsek bu write çift işareti olmuş oluyor. Şimdi A0'ın 0 olması da A0'ın aktif 0 çalıştığı bir senaryo. Write da aktif 0, ikisi de aktif 0 iken aktif 0 bir çıkış or kapısıyla sağlanabilir. O yüzden or kapısı var.
+
+322
+01:10:30,764 --> 01:10:39,724
+Veya benzer şekilde bus enable 0 iken yapılan bir yazma işleminde tek bloğun seçilebilmesi için de bu ikisinin bir or kapısından birleştirilmesi gerekiyor.
+
+323
+01:10:40,307 --> 01:10:47,568
+Veyahut da son senaryomuz, ilk anlattığım çift adresten 8 bitlik işlemdi, ikinci anlattığım tek adresten 8 bitlik işlemdi.
+
+324
+01:10:48,167 --> 01:10:53,868
+Veyahut da çift adresten 16 bitlik işlem yaptığımızı düşünelim. Mikroişlemci ne yapıyordu çift adresten 16 bitlik işlemde?
+
+325
+01:10:54,408 --> 01:11:03,648
+A0'a da 0 veriyordu, bus, I enable'a da 0 veriyordu. O zaman bir de write işlemi yaptıysak, yani move işlemi yaptıysak, bu durumda da
+
+326
+01:11:04,083 --> 01:11:23,083
+Hem right teke sıfır geliyor, hem right çifte sıfır geliyor. O zaman her iki blokta, chip select, right ve read uçlarından seçilmiş oluyorlar. Dolayısıyla burada separate bank decoder ile separate bank stroke işlemlerinin arasındaki temel farkı bu şekilde ifade edebiliriz.
+
+327
+01:11:28,948 --> 01:11:35,948
+Bir NAND, çok girişli NAND kapısı kullanabiliriz, dekoder kullanabiliriz, programlanabilir, lojik elemanlar kullanabiliriz.
+
+328
+01:11:35,948 --> 01:11:41,548
+Ama bizim temelde kullanacağımız bir 3'e 8 dekoder olacak veya 2'ye 4 dekoder olacak.
+
+329
+01:11:42,228 --> 01:11:48,208
+3'e 8 veya 2'ye 4 dekoder olacak. Bunlar bakacak olursak, inceleyecek olursak aktif sıfır çıkışlı.
+
+330
+01:11:48,627 --> 01:12:07,627
+Bunun anlamı ne? Enable uçlarına uygun koşullamayı sağlarsak, yani E1'e 1, E2'ye logic 0, E3'e logic 0 verirsek, seçim uçlarında CBA anlam sırasında, en anlamlısı C olmak üzere, vermiş olduğumuz binary sayıya karşılık ilgili çıkış 0 oluyor, diğerleri 1 oluyor.
+
+331
+01:12:07,627 --> 01:12:12,627
+Eğer cihazı seçmezsek, çıkışların hepsi logic 1 oluyor. Bakın şurada.
+
+332
+01:12:13,007 --> 01:12:38,747
+Eğer cihazı seçmezsek, şu senaryo cihazı seçmediğimiz senaryolar, çıkışlarımız hep aktif 1 oluyor, lojik 1 oluyor, pardon. Eğer cihazı seçersek yani E1'de 1 var, E2'de 0 var, E3'de 0 var. Bu durumda da giriş uçlarına vermiş olduğumuz, seçim uçlarına vermiş olduğumuz değere göre en anlamlısı C olmak üzere yani 0, 0, 0 vermişsek 0, 0, 0 binary olarak 0'a karşılık geliyor. Y0'dan 0 çıkacak.
+
+333
+01:12:39,252 --> 01:12:42,471
+Diğerlerinden 1 çıkacak. Aktif 0 çıkış bu demektir.
+
+334
+01:12:42,471 --> 01:12:45,612
+2'ye 4 dekodere bakacak olursak da
+
+335
+01:12:45,792 --> 01:13:04,992
+Burada da bir tane seçim ucu var. Eğer entegreyi seçmişsek, B ve A anlam sırasında B daha yüksek anlamlı olmak üzere, buraya verdiğimiz değerlerin binary karşılığından logic 0 çıkıyor, diğer uçlardan logic 1 çıkıyor. Eğer cihazı seçmezsek, yani enable ucuna 1 bağlamışsak, bu durumda da bütün çıkışlar logic 1 oluyor.
+
+336
+01:13:04,992 --> 01:13:13,792
+Kullanacağımız dekoderde, adres çözümlemede bu şekilde bir karşılık buluyor olacak. Şimdi arkadaşlar bir 10 dakika ara verelim, ondan sonra örneklerimiz var.
+
+337
+01:13:13,792 --> 01:13:20,792
+örnekleri çözeceğiz. 30 geçe devam edelim. Tamam mı? 30 geçe devam edeceğiz. Ben şuraya yazıyorum.
+
+338
+01:13:31,764 --> 01:13:34,264
+Buraya kadar olan kısımla ilgili bir sorunuz var mı?
+
+339
+01:13:37,619 --> 01:13:38,619
+Benim yok hocam.
+
+340
+01:13:39,619 --> 01:13:50,619
+Tamam. Aradan sonra da örnekleri çözeceğiz arkadaşlar. Dediğim gibi örneklere dikkat edersiniz. O örnekler kesin benzer bir mantıkla soru gelecek.
+
+341
+01:13:50,619 --> 01:13:54,619
+Şimdi 30 geçe görüşmek üzere diyorum. Ara verelim.
+
+342
+01:27:13,076 --> 01:27:17,275
+Arkadaşlar merhaba, şimdi örnekler yapacağız demiştik. Bu örnekleri açıyorum.
+
+343
+01:27:22,771 --> 01:27:24,311
+İlk, your name is?
+
+344
+01:27:28,979 --> 01:27:36,979
+Aslında şu ikinci örnek bizim temel sorumuz da, şu birinci soruya da hızlıca bakalım isterseniz.
+
+345
+01:27:39,579 --> 01:27:55,979
+8088 mikroişlemcisinde 20 adet veri ucu var. Bu durumda bu cihazın 8088'in karşısında görmek istediği hafıza arayüzü,
+
+346
+01:27:56,659 --> 01:27:57,860
+Ne şekilde olmalı?
+
+347
+01:27:59,860 --> 01:28:02,860
+Bu şey çarpı, 8086 için ne demiştik?
+
+348
+01:28:03,600 --> 01:28:09,119
+20 adet veri yolu var, 20 adet adres ucu var. Yani 250 adet hafıza gözüne erişebilir.
+
+349
+01:28:09,652 --> 01:28:25,891
+2 üzeri 20 adet hafıza gözü, 1M adet, 1M adet hafıza gözü demek. Fakat bizim hafıza gözlerimizin her birisi 8 bitten oluştuğunu varsayıyoruz. O zaman 1MB, yani 1M çarpı 1MB'lık toplam kapasiteye sahip demektir.
+
+350
+01:28:26,144 --> 01:28:33,463
+Fakat 8086 karşısındaki veri yolunu 16 bitlik görmek istiyor. O zaman 1M çarpı 8 olarak bunu koymak mümkün değil.
+
+351
+01:28:33,463 --> 01:28:42,104
+Mecburen yarısını alıp yan yana çalıştırıp 8-8 16'lık veri yolu oluşturmak lazım. O zaman da 1 mega adet satır yerine
+
+352
+01:28:42,271 --> 01:28:54,431
+1 mega adet satırı ikiye böldüğümüz için 512K'lık bir satıra karşılık geliyor. Dolayısıyla 512K adet satır, her bir satırda da 16 bitlik bir hafıza arayüzü, 8086'nın görmek istediği arayüz.
+
+353
+01:28:54,431 --> 01:29:02,711
+Buradan hareketle 8088'in 20 adet adres ucu varsa, bu ne yapar? 1 mega, 2 üzeri 20, 1 mega adet.
+
+354
+01:29:03,507 --> 01:29:13,007
+Adres, hafıza gözüne karşılık yeri. Her bir gözümüzün de hafıza gözünün 8 bit olduğunu varsayacak olursak, 1M çarpı 8'lik bir kapasite.
+
+355
+01:29:13,007 --> 01:29:22,007
+Zaten 8088'de her bir hafıza gözünü 8 bit olarak görmek istiyor karşısında. O zaman burada 1M çarpı 8'lik bir arayüzden bahsedebiliriz.
+
+356
+01:29:22,007 --> 01:29:28,939
+8486'ya gelecek olursak, 8486'ın 32 adet adres ucu var.
+
+357
+01:29:28,948 --> 01:29:46,768
+32'de veri ucu varmış. 32 adet adres ucu 2 üzeri 32. Yani 4 çarpı 2 üzeri 10, 2 üzeri 10, 2 üzeri 10, 4 giga, 4 giga adet.
+
+358
+01:29:47,252 --> 01:30:00,000
+Hafıza gözüne karşılık gelir. Her bir hafıza gözümüz 8 bit olduğuna göre 4 GB'lik bir hafıza kapasitesini adresleyebilir. Fakat 8086 karşısında 32 bitlik bir veri yolu görmek istiyor. Yani 4 GB'lik...
+
+359
+01:30:00,000 --> 01:30:24,180
+Bu kapasiteyi 4G çarpı 8 olarak görmek istemiyor. Ne yapacağız o zaman? Her biri 8 genişliğinde olduğuna göre, 4'e bölmemiz gerekiyor. Yani 1 gigalık, 4 adet sütun şeklinde, 4 adet bank şeklinde bunu sunmamız lazım. Bu durumda da toplamdaki satır sayımız 1 giga olur. 1G çarpı 32'lik bir kapasiteyi karşısında görmek istiyor olduğunu söylemiş oluruz 486 için.
+
+360
+01:30:28,000 --> 01:30:49,000
+8086 mikroişlemcili sistemin bellek uzayına 0H adresinden itibaren 128 kB'lik alana, yani 128 kB'lik alana ne oluşturacakmışız? Bir RAM bloğu yerleştireceğiz. Bu RAM bloğu da 32K çarpı 8'lik SRAM modüllerinden gerçeklenecek.
+
+361
+01:30:49,376 --> 01:30:58,876
+Şimdi toplamda 128 kilobyte'lik bir alan olduğuna göre 32k çarpı 8'lik elemanlardan kaç tane kullanmamız gerekiyor? Nasıl yaparız hesabını?
+
+362
+01:31:01,876 --> 01:31:15,876
+Toplam kapasite 128 kilobyte. Bu kapasiteyi 32k çarpı 8'lik SRAM'lerden koyacağız. Kaç tane kullanmayız 32k çarpı 8'den ki toplamda 128 kilobyte yapsın?
+
+363
+01:31:18,868 --> 01:31:19,868
+4 tane.
+
+364
+01:31:19,868 --> 01:31:23,868
+4 tane değil mi? 128 kilobaytı şöyle yazabiliriz.
+
+365
+01:31:28,868 --> 01:31:43,868
+128 k, byte dediğimizde çarpı 8'dir ya, bunu 32 k çarpı 8'e böleceğiz. İşte 8'ler gitti, k'lar gitti, 128 bölü.
+
+366
+01:31:44,020 --> 01:31:49,840
+32, 4. Demek ki bu Sremlerden 4 tane kullanacakmışız. Bir de diyor ki bize,
+
+367
+01:31:51,828 --> 01:32:01,108
+Bitiş adresi, yani bu sıfırdan başlıyor, RAMM blok sıfırdan başlıyor, ROM blokun bitişi ise FFFF adresiymiş. Bunun da kapasitesi 128 kilobyte olsun diyor.
+
+368
+01:32:01,108 --> 01:32:14,148
+Ve burada da 64K çarpı 8'lik bloklardan, modüllerden kullanacağız. O zaman bu app ROM'lardan kaç tane kullanmalısınız bu ROM blokunu oluşturmak için? Yani 128 kilobyte oluşturacağımız alan toptal.
+
+369
+01:32:14,543 --> 01:32:20,944
+64K çarpı 8'lerden kaç tane kullanmalıyız? Aynı mantık. 128 kilobayt bölü 64K çarpı 8.
+
+370
+01:32:22,224 --> 01:32:22,984
+2.
+
+371
+01:32:23,244 --> 01:32:27,604
+Dolayısıyla orada da iki adet EPROM'dan kullanmamız gerektiği anlaşılıyor.
+
+372
+01:32:28,624 --> 01:32:39,384
+Şimdi arkadaşlar, burada vermiş olduğumuz adresler, başlangıç ve bitişler aslında hizalı adresler. Bu hizalı adres ne demek? Ona püf noktası var, onu ifade etmeye çalışayım.
+
+373
+01:32:40,115 --> 01:32:55,595
+Şimdi eğer ki bir hafıza bloğunun, hafıza bloğu, RAM olabilir, ROM olabilir. Bu hafıza bloğunun başlangıç adresi tam kapasitenin ikiye bölünmüş alanlarından başlıyor ise bu hizalı bir adrestir.
+
+374
+01:32:55,595 --> 01:33:04,235
+Yani eğer tam kapasitemiz 1 megabyte, 1 megabyte yani 20 bitlik değeri düşünün, 0000 adresinden başlıyorsa
+
+375
+01:33:04,659 --> 01:33:16,659
+Ve kapasite olarak da bu toplam kapasitenin ikiye bölünmüş bir değeri ise, yani toplamda 1 MB'lik bir kapasite ise ve sıfır adresinden başlıyorsa hizalı.
+
+376
+01:33:16,659 --> 01:33:29,659
+1 MB'li ikiye böl, 512K. 512 KB'lik bir kapasite ve sıfırdan başlıyorsa hizalı ve aynı zamanda sıfırdan değil de
+
+377
+01:33:29,811 --> 01:33:38,811
+Bir öteki adresten başlıyorsa ki o adreste 7FFF yapar, yani ikinci yarıdan başlıyorsa bu da hizalı demek.
+
+378
+01:33:39,851 --> 01:33:53,292
+Pardon, 7FF değil de ilk adresi 0'da 1 olacak. O zaman ne olur? 800000'dan başlıyorsa, yani tam ortadan başlıyorsa.
+
+379
+01:33:53,648 --> 01:34:00,847
+Veya tam baştan başlıyorsa, kapasitenin yarısı olarak. Veya toplam kapasitenin dörtte biri olup sıfırdan başlayabilir.
+
+380
+01:34:03,847 --> 01:34:07,847
+Kırktan başlayabilir, seksenden başlayabilir, C'den başlayabilir.
+
+381
+01:34:08,648 --> 01:34:13,847
+Sıfır sıfır sıfır sıfır sıfırdan başlayıp, bir megabayt bölü dört kapasitesindeyse veya
+
+382
+01:34:14,131 --> 01:34:32,291
+4.000000 adresinden başlayıp toplam 1 MB bölü 4 kapasitesindeyse, 8.000000H'dan başlayıp 1 MB bölü 4 kapasitesindeyse veya C.000000 adresinden başlayıp 1 MB bölü 4 kapasitesindeyse bunlar hep hizalı durumlar.
+
+383
+01:34:32,291 --> 01:34:40,291
+Hizalı durumlar söz konusu olduğunda doğrudan adres uçlarının arasındaki bağlantıları sağlayabiliyoruz. Eğer hizalı değilse
+
+384
+01:34:41,043 --> 01:34:49,744
+İlk hizalı olan kısma kadar ayırıp iki parçada değerlendirmek gerekiyor. Tamam mı? Dikkat edeceğimiz nokta bu. Bu bir parantez açtım şimdi buraya.
+
+385
+01:34:49,744 --> 01:34:59,543
+Sorumuza gelecek olursak, RAM ve ROM bloklarının başlangıç ve bitiş adreslerini belirtin. İlk şıkkımız bu. Sıfırdan başlıyor, 128 kilobayt. Bakalım şimdi onu nasıl yapacağız.
+
+386
+01:35:12,787 --> 01:35:34,827
+Toplamda sıfırdan başlayıp 128 kilobaytlık bir ROM adresi. Şimdi, 128K'lık toplam adres miktarı, 128, 2 üzeri 7, K'da 2 üzeri 10. Yani 17 adet uç değişecek. Sıfırdan başlarsan, 4 adet uç, birinci sıfırdan değişirse, 4 adet uç, ikinci sıfırdan değişirse, yani hexadestimal basamak var ya bunlar, her birisi 4 bit.
+
+387
+01:35:35,315 --> 01:35:42,076
+4, 8, 12, 16, 1 bit de en yüksek anlamlı heksadesimal basamaktan değişirse 17 bit değişir.
+
+388
+01:35:42,076 --> 01:35:49,356
+O zaman bizim RAM bloğumuzun başlangıç adresi 0,0,0 ise bitiş adresi de 1, f, f, f, f, f olmuş oluyor.
+
+389
+01:35:49,356 --> 01:35:51,083
+Benzer şekilde...
+
+390
+01:35:51,956 --> 01:36:04,336
+FFFFH adresinde biten bir ROM bloğumuz vardı. Onun da 128 kilobyte kapasitesi vardı. Orada da 17 uç değişecek demektir. Dolayısıyla 4 uç değişti, birleri 0 yaptım. Değişmek demek bu demek.
+
+391
+01:36:04,836 --> 01:36:18,836
+4 tane uç buradan değişse 4, 4 buradan değişse 8, 4 de buradan değişse 12, 4 buradan değişse 16. Bu 1, 1, 1, 1. Burada bir tane bitin değişmesi yeterli. Dolayısıyla F yerine E olması yeterli.
+
+392
+01:36:19,956 --> 01:36:35,956
+Bu blogumuzda E0000H adresinden başlayıp FFFFH adresine kadar ilerliyormuş. Burada yapacağımız işlem adres sınırlarını belirlemek için toplam kapasite kaç adet adres uç değişimine karşılık geliyor onu bulup o kadar biti değiştirmek. Sadece bu.
+
+393
+01:36:36,956 --> 01:36:40,956
+B şıkkımız, şöyle bakalım B şıkkı ne diyor.
+
+394
+01:36:42,956 --> 01:36:46,956
+Kullanılan SREM ve EPROM adres uç sayılarını belirleyiniz.
+
+395
+01:36:48,243 --> 01:37:05,423
+S-RAM modülümüz 32K çarpı 8, 8 veri yolu genişliğiydi. 32K adet göze sahip. O zaman 32, 2 üzeri 5, K 2 üzeri 10, 15 adet 2 üzeri 15 olduğuna göre 2 üzeri 15 adet hafıza gözü var.
+
+396
+01:37:05,923 --> 01:37:13,384
+2 üzeri 15 adet hafıza gözünü oluşturabilmek için dekoderin girişi kaçlık olmalı? 15'lik olmalı. 2 üzeri 15'i bu şekilde sağlıyoruz.
+
+397
+01:37:14,195 --> 01:37:34,955
+EPROM'un kaç adet adres ucu var? 64K çarpı 8 kapasitesindeydi. Çarpı 8 veri yolu genişliğini veriyordu. 64K adet gözü var. 2 üzeri 6 çarpı 2 üzeri 10. Yani 2 üzeri 16. 2 üzeri 16 adet göz var. Bunun içinde 16 adet bite ihtiyacım var. Yani 16 adres ucuna ihtiyacımız var. Bunu çıkartmış oluyoruz.
+
+398
+01:37:35,347 --> 01:37:47,347
+C şıkkı verilen bloklar için, yani 128 kilobaytlık RAM bloğu ve 128 kilobaytlık ROM bloğu için, 32K çarpı 8'lik SRAM'lerden kaç tane kullanmalıyız? İşte bölme işlemi 4 adet.
+
+399
+01:37:47,927 --> 01:37:55,547
+64K çarpı 8'lik EPROM'lardan kaç tane kullanmalıyız? Kapasite bölü modülün kapasitesi 2 adet kullanmamız gerekiyor.
+
+400
+01:37:56,587 --> 01:37:58,707
+Şimdi bir sonraki D şıkkına bakalım.
+
+401
+01:38:01,811 --> 01:38:09,811
+RAM ve ROM bloklarının bellek uzayında yerleşimini sağlayan adres çözümleme devresini tek bir dekoder kullanarak gerçeklememizi istiyor.
+
+402
+01:38:10,811 --> 01:38:13,811
+Ve yapılan tüm bağlantıları çizmemiz isteniyor.
+
+403
+01:38:14,811 --> 01:38:19,811
+SRAM ve EPROM'un uç tanımları verilmiş. Ona göre bir işlem yapıyor olacağız.
+
+404
+01:38:19,811 --> 01:38:22,811
+Şimdi gelelim tekrar aşağıya çözümümüze.
+
+405
+01:38:27,188 --> 01:38:52,188
+Burada tek dekoder kullanılacağı için, tek bir dekoder kullanacağımız için, burada separate strobe mantığını kullanmaya karar verdik. Bu mantık neydi? Çift ve tek bloklar için tek bir chip select üretilecek. Fakat çift ve tek blokların seçimi, read ve write uçlarının çift ve tek olan hallerini üreterek yapılacaktı.
+
+406
+01:38:52,595 --> 01:38:58,315
+Dolayısıyla bu mantık çerçevesinde ilerliyoruz. Şimdi biz şeyleri belirlemiştik hatırlayacak olursanız.
+
+407
+01:38:59,175 --> 01:39:07,935
+4 adet EPROM kullanılacak, 2 adet EPROM kullanılacak, 4 adet SREM kullanılacak diye karar vermiştik.
+
+408
+01:39:07,935 --> 01:39:14,935
+Dolayısıyla bunların yerleşimin temel olarak şu şekilde olması lazım. 4 tane kullanılacaksa bu 4 tanenin ikisi...
+
+409
+01:39:15,039 --> 01:39:29,840
+Aynı satırları gösterecek şekilde birleştirilmeli veyahut da birlikte kullanılmalı. Kalan ikisi de birlikte kullanılmalı. Dolayısıyla bizim RAM bloğumuz ortadan ikiye ayrılacak bir senaryo oluyor. Dolayısıyla burada RAM'in yüksek...
+
+410
+01:39:29,840 --> 01:39:35,600
+Düşük adres kısmı ve düşük adres kısmı olarak ikiye ayırmalıyız. Çünkü zaten dört tane cihaz var.
+
+411
+01:39:35,600 --> 01:39:43,340
+Çarpı 16 olarak görmek istiyor. Yani bu modüllerden iki tanesi yan yana kullanılacak. Geri kalan iki tanesi de yan yana kullanılacak doğal olarak.
+
+412
+01:39:43,391 --> 01:39:54,391
+İki ayrı RAM alt bloğumuz olmuş oluyor. ROM bloğumuzda çift adresler ve tek adresler için olmak üzere iki adet RAM, ROM'umuz, app ROM'umuz var zaten. Onlar birlikte bu bloğu oluşturacak.
+
+413
+01:39:54,391 --> 01:40:01,391
+Dolayısıyla bizim zaten hesapladığımız FFF'de biten ROM bloğu E000'da başlıyordu. Onu yazdık buraya.
+
+414
+01:40:01,811 --> 01:40:10,811
+Hangi aralıklara denk geldiğini. RAM aralığımızı ise, RAM bloğumuzu ise 2'ye böldük mecburen. Çünkü 2x2 şeklinde 4 taneyi kullanacağız.
+
+415
+01:40:10,811 --> 01:40:20,811
+O zaman bizim toplamda bloğumuz 0'dan 1 FFF'e kadar gidiyor iken bunu 2'ye böleceğiz. Dolayısıyla ilk alt bloğumuz 0'dan 0 FFF'e kadar gidecek.
+
+416
+01:40:20,811 --> 01:40:27,811
+Üst bloğumuz da 1 0 0 0'dan 1 FFF'e kadar gidecek. Dolayısıyla bu iki alt bloğu da iki alt blok olarak yazdık.
+
+417
+01:40:29,108 --> 01:40:33,768
+Şimdi bunlar arasındaki başlangıç ve bitiş adresleri arasındaki değişimleri inceleyeceğiz.
+
+418
+01:40:34,447 --> 01:40:41,167
+Yapmamız gereken analiz bu. ROM'un düşük bloğu için 0'dan 0FF'e kadar olan adresleri yazdık.
+
+419
+01:40:42,127 --> 01:40:50,608
+Burada toplamda 32K adet satırımız var ya burada, 32K adet satır yani 15 adet uç yapar zaten değil mi?
+
+420
+01:40:51,539 --> 01:41:03,539
+Baktığımız vakit toplamda 16 tane değişim var uçlarda. Ama biz A0'ı tek ve çift seçim için ayırmıştık. Geriye A1'den A15'e kadar 15 tane uç kaldı.
+
+421
+01:41:03,900 --> 01:41:12,199
+İşte şu aralıktaki A1'den A15'e kadar olan uçlar bizim S-RAM'lerimizin adres uçlarına bağlanacak.
+
+422
+01:41:12,199 --> 01:41:17,760
+Aynı şey RAM bloğunun high kısmı içinde geçer. Toplamda 16 tane değişim var.
+
+423
+01:41:18,484 --> 01:41:36,604
+1.00'dan 1.FF'e kadar olan adresler için 16 tane değişim var. Fakat A0'ı biz çift ve tek blok seçimi için kullanacaktık. Yani A0 burayı seçtirecek, bus, I enable burayı seçtirecek. Dolayısıyla A0'ı ne S-RAM'lerin adres ucunda kullanıyoruz ne de adres çözümleme devresinde kullanıyoruz.
+
+424
+01:41:36,604 --> 01:41:39,963
+A0'ı read-write uçlarıyla birleştirmek için kullanacağız.
+
+425
+01:41:40,916 --> 01:41:52,116
+Geriye A1'den A15'e kadar olan uçlar kaldı, 15 adet uç. Dolayısıyla bunları da bu high bloğun SRAM'lerinin adres uçlarına bağlı olacağız. Şimdi ROM bloğuna bakalım. ROM tek bir blok.
+
+426
+01:41:52,884 --> 01:42:04,484
+E000'dan FFF'e kadar olan adresler için geçerli. Buradaki adreslerin binary hallerini yazdığımız zaman ve A0'ı ayırdığımızda toplam değişim miktarının ne kadar olmasını bekliyoruz.
+
+427
+01:42:04,484 --> 01:42:11,324
+64K çarpı 16'lık bir blok burası. 64K çarpı 16. Yani 64K adet.
+
+428
+01:42:11,796 --> 01:42:35,796
+Bu satırımız var. 64K satır kaç adres ucuna karşılık geliyor? 642 üzeri 6, K da 2 üzeri 10, 16 adet adres ucuna karşılık geliyor. Sayalım. 3, bir tane burada 4, 4 burada 8, 4 daha 12, 4 de burada 16 adet adres ucu. Demek ki biz A1'den A16'da dahil olmak üzere 16 adet adres ucunu EPROM'ların adres ucuna bağlayacağız.
+
+429
+01:42:39,796 --> 01:42:48,796
+Read işaretiyle birleştirilecek. Dikkat edin, ROM'da sadece Read işlemi var. Dolayısıyla A0 ve bus enable'ı Read ucuyla birleştirip kullanıyor olacağız.
+
+430
+01:42:48,796 --> 01:42:55,796
+Geri kalan uçlar ne olacak? Geri kalan uçlar şuradaki A16'dan A19'a kadar olan bu blok.
+
+431
+01:42:56,032 --> 01:43:17,912
+Yine A16'dan A19'a kadar olan bu değer, bu sabit değer ve A17'den A19'a kadar olan 1.1.1 değeri bu bloklarımızın, bu üç tane alt bloğun seçimini belirleyecek. Dolayısıyla biz adres değeri olarak bir işlem yaptığımızda eğer ki adresin en yüksek anlamlı 3 biti 1.1.1 ise bu bizim ROM bloğuyla ilgili işlemimize karşılık geliyor.
+
+432
+01:43:18,095 --> 01:43:26,615
+Eğer adres uçları 0, 0, 0, 1 en yüksek anlamlı bitlerine sahipse bu bizim high RAMBLOG'umuzla ilgili işlem yaptığımıza karşılık geliyor.
+
+433
+01:43:26,756 --> 01:43:34,615
+Veyahut da adres uçları 0, 0, 0, 0 ise bu bizim low RAMBLOG ile ilgili işlem yaptığımız anlamına geliyor.
+
+434
+01:43:34,615 --> 01:43:44,735
+Demek ki adres çözümleme devresine A16, A15, pardon A16, A17, A18 ve A19'un bağlı olması gerekiyor.
+
+435
+01:43:45,747 --> 01:43:55,747
+Burada trikli bir durum. Toplamda mesela şu üç blok kendi içerisinde değerlendirdiğimiz zaman seçim yaptıran uçları.
+
+436
+01:43:55,747 --> 01:44:09,747
+Görüyoruz ki A16 farklı bu bloklar arasında. A15, A17 farklı. Çünkü bir olan var, sıfır olan var. A18, sıfır olan bir var.
+
+437
+01:44:10,228 --> 01:44:29,067
+Ve A19 0 olan 1 var. 0 olan var, 1 olan var. O zaman aslında bizim bu dördünü de seçim ucu olarak kullanabilmemiz lazım. Şimdi sorunun trikli kısmı burada. Bu üç bloğu kendi arasında değerlendirdiğimizde, bu üç bloğu belirleyen yüksek anlamlı adres kısımlarına baktığımızda
+
+438
+01:44:29,779 --> 01:44:39,019
+Bunların 1 ve 0 olduğu bloklar var. Dolayısıyla bizim bu 4 tane adres ucunu, A16, A17, A18 ve A19'u seçim ucunda kullanmamız lazım.
+
+439
+01:44:39,019 --> 01:44:46,939
+Ama biz 3x8 dekoder kullanacağımız için mecburen 3 tane seçim ucuyla sınırlıyız. O zaman bir trik yapıyoruz. Trikimiz de şu.
+
+440
+01:44:47,155 --> 01:45:05,416
+Verilen bloklar için A18 ve A19 uçları aynı. Gördüğünüz gibi A19 ve A18 aynı. O zaman bunların aynı olmasını sağlamak üzere enable ucuna bunları XOR'dan geçirerek veriyoruz ve aktif 0 uca bağlıyoruz. Bu ne demek? A19 ve A18 aynı ise
+
+441
+01:45:06,003 --> 01:45:33,484
+Bu dekoder bir seçim ucu üretiyor. Eğer A19 ve A18 farklıysa birbirinden hiçbir uçtan seçim değeri üretmiyor. Bu sayede A19 ve A18'in aynı olmasını garantiledik. Sonra ne yapıyoruz? A18'in 0 olmasını seçtiriyoruz. A18'in 0 olmasıyla A19 ve A18'in aynı olmasını seçtirmek demek aynı zamanda A19'un da A18 ile aynı olmasını seçtirmek demek.
+
+442
+01:45:34,644 --> 01:46:00,844
+Buradaki olayın trikli kısmı bu. M.I.O ucunu da seçim için kullanacağız. Çünkü soruda verilmişti bilgi olarak. Burada isolated I.O kullanılacak diye. Dolayısıyla M.I.O ucu da biz hafıza işlemleri yaptığımız için bir değerini alması lazım. Aktif bir uca bağladık. Aktif 0, G2A ucu boşta kaldı. Oraya da logic 0 bağladık gördüğünüz gibi. Şimdi bizim adres aralığımıza gelelim. Seçimi A18, A17 ve A16 yaptırıyor.
+
+443
+01:46:01,184 --> 01:46:05,784
+Düşük blok için nedir bu değerler? Hepsinin 0 olduğu değerler değil mi?
+
+444
+01:46:06,564 --> 01:46:13,224
+0, 0, 0. Dolayısıyla Y0 bizim RAM'imizin düşük bloğunu seçtiren uç olmuş oluyor.
+
+445
+01:46:14,244 --> 01:46:17,564
+Diğer tarafa bakalım. 18, 17, 16 uçlarına.
+
+446
+01:46:17,824 --> 01:46:22,684
+Burada 0, 0, 1 değeri bizim RAM'imizin diğer bloğunu seçtiriyor.
+
+447
+01:46:23,204 --> 01:46:26,524
+O zaman buraya da bakacak olursak 0, 0, 1.
+
+448
+01:46:27,315 --> 01:46:33,115
+Yani Y1 numaralı ucumuzda RAM'in yüksek adresli bloğunu seçtiriyor.
+
+449
+01:46:33,115 --> 01:46:39,615
+Peki, rom için gelelim. Rom için A16, A17 ve A18 bağlı.
+
+450
+01:46:39,615 --> 01:46:43,916
+Baktığımız zaman, rom için A16 ucu 0 da olabilir, 1 de olabilir.
+
+451
+01:46:43,916 --> 01:46:45,615
+O zaman şunu yapmalıyız.
+
+452
+01:46:45,615 --> 01:46:50,815
+A16'nın 0 olduğu durumda ve A16'nın 1 olduğu durumda
+
+453
+01:46:51,188 --> 01:46:55,188
+Bununla birlikte 18 ve 17'nin 1 olduğu durumda seçtirmeliyiz.
+
+454
+01:46:55,456 --> 01:47:23,456
+Dolayısıyla 17, 18'in 1 olduğu, 16'nın 0 veya 1 olabildiği durumlar hangileridir? 1, 1, 0 ve 1, 1, 1. Bunlardan herhangi birisi geldiğinde ROM'umuz seçilmeli. O zaman şöyle yapıyoruz. 1, 1, 0 olduğunda Y6 aktiftir. 1, 1, 1, 1 olduğunda Y7 aktiftir. İkisi de aktif 0 çıkış. Bunlardan herhangi birisi 0 olduğunda buradaki ucumuzun 0 olmasını istiyorum. O zaman kullanacağım lojik nedir? End kapısı. Herhangi birisi...
+
+455
+01:47:23,456 --> 01:47:40,076
+sıfırken sıfır üreten lojik AND kapısıdır. Dolayısıyla buranı da AND kapısıyla birleştirerek kullanmış olduk arkadaşlar. Peki şimdi bağlantılara bakalım. Bağlantıları nasıl yapacağız? Şimdi RAM bloğumuz için ve ROM bloğumuz için yapacağımız bağlantılar şunlar. RAM bloğumuz 32.
+
+456
+01:47:40,756 --> 01:47:51,515
+K çarpı 8'de yani içerideki uçları A0'dan A14'e kadar 15 adet adres ucu var. O zaman mikroişlemcinin A1 ile A15'ini bu uçlara bağlıyoruz.
+
+457
+01:47:53,996 --> 01:48:01,076
+Ve tek blok, tek adres bloklarımız sütunda, çift adres bloklarımız başka bir sütunda. Bununla birlikte
+
+458
+01:48:01,328 --> 01:48:09,328
+Adres aralığının yüksek anlamlı kısmı burası, düşük anlamlı kısmı da grafikte üst taraftaki blok olmuş oluyor.
+
+459
+01:48:09,328 --> 01:48:16,328
+Bu bloklar arasında şu, low kısımla high kısım aynı anda seçilemez değil mi?
+
+460
+01:48:16,328 --> 01:48:20,172
+Vermiş olduğumuz adres yerine göre low ve high kısım aynı anda seçilemez.
+
+461
+01:48:20,275 --> 01:48:33,275
+Buna göre bunların D ilgili karşılıklı gelen adres uçlarını birleştiriyoruz. 8 tane adres ucu var ve tek adres bloğu olduğu için buradan çıkan datamız D8-D15 aralığına karşılık geliyor.
+
+462
+01:48:33,275 --> 01:48:41,275
+Çift bloktan gelen adres dataları da D0-D7 olarak bağlıyoruz. Yine tüm SRAM'lerin adres uçlarını A1-A15'leri bağlıyoruz.
+
+463
+01:48:44,564 --> 01:48:49,884
+ROM tarafında da A1, A16, 16 adet arzın suçlunu bağladık ama asıl olayımız şu.
+
+464
+01:48:50,323 --> 01:49:02,323
+Bu çift ve tek blok seçimini read ve write uçları üzerinden yapacaktık. Dolayısıyla read ucunu A0 ile birleştirdiğimiz read çift ve read ucunu bus I enable'lı ikisinde 0 olduğu durumda read tek işareti ürettik.
+
+465
+01:49:02,323 --> 01:49:12,323
+Benzer şekilde write işlemi içinde A0 ve write'ın 0 olduğu durumda write çift ve write ile bus I enable'lı 0 olduğu durumda write tek işaretlerini ürettik or kapılarından geçirerek.
+
+466
+01:49:16,927 --> 01:49:24,228
+Write Enable ucuna Write Tech ucunu bağladık. Yine, Shift Address bloğundaki olanları da Output Enable ucuna Read Shift,
+
+467
+01:49:24,819 --> 01:49:31,539
+Yine çift bloğun write enable ucuna da write çift uçlarını bağladık. Bu şekilde çift ve tek blokların seçimini sağladık.
+
+468
+01:49:31,539 --> 01:49:38,619
+ROM'a geldiğimizde ROM'da sadece output enable ucu var. Onu da read tech ve read çift uçları olarak ayırarak kullanıyoruz arkadaşlar.
+
+469
+01:49:38,619 --> 01:49:45,819
+Dolayısıyla burada adres çözümleme mantığı için yapacağımız işlem ve analiz sırası bu şekilde özetlenebilir.
+
+470
+01:49:45,819 --> 01:49:48,819
+Bir de başka bir örnek var mıydı? Bir de ona bir bakayım.
+
+471
+01:49:58,579 --> 01:50:18,340
+Şu örneğe bakalım. Burada da ayrı ayrı üretmişiz. Tamam. Az önceki örnek, separate, strop mantığıyla çift ve tek blokları seçiyordu. Buradaki örnek ise, hızlıca geçeceğim bunu, separate, strop işlemi. Yani iki ayrı chip select üretiyor.
+
+472
+01:50:18,496 --> 01:50:28,395
+Burada arkadaşlar verilen adres aralığında ff800 ve ffff aralığında iki adet app rom kullanarak bir rom bloğu oluşturmak istiyoruz.
+
+473
+01:50:28,395 --> 01:50:36,195
+Isole Memory Map kullanılacak. Rom'un kelime boyutu byte olarak kabul edilecek. Buna göre adres çözme devresi nasıl olacak?
+
+474
+01:50:36,372 --> 01:50:48,372
+Buna göre arkadaşlar yapacağımız işlem bu adres aralıklarını yazmak. A0 adres çözümleme için kullanılacaktı. Dolayısıyla geri kalan uçlar 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 adet adres ucu yapıyor.
+
+475
+01:50:48,372 --> 01:50:58,124
+10 adet adres ucu da bu bloklarımıza bağlı olacak. Dolayısıyla bizim kullanacağımız 2 adet EPROM'un kapasitesi 2 üzeri 10 çarpı 8'lik.
+
+476
+01:50:58,163 --> 01:51:04,163
+Kapasiteler olacak. Çift ve tek bloklar ayırdıktan sonra bizim adres çözümleme devremize
+
+477
+01:51:04,163 --> 01:51:15,083
+A11 ve A19 arasındaki değerlerin hepsi 1 olduğu durum sadece bizim bloğa denk geliyor. Dolayısıyla adres çözümleme devremizde de
+
+478
+01:51:15,083 --> 01:51:20,703
+şu aralığın 1 olması gerekiyor. Emaion'un 1 olması gerekiyor. Basayan Eylül ve A0'ın da
+
+479
+01:51:21,119 --> 01:51:34,260
+Çift ve tek blokları duruma göre seçtirmesi gerekiyor. Bunun için kullanacağımız adres çözümleme devresi, A11'den A19'a kadar olan uçlar 1 geldiğinde, MIO 1 geldiğinde ve bus, I enable 0 geldiğinde,
+
+480
+01:51:34,920 --> 01:51:44,180
+Active 0, chip select ucu üreten bir çok girişli nant kapısı olmuş oluyor. Bu tek blokları seçtiriyor. Bus, I enable 0 iken bu seçiliyor.
+
+481
+01:51:44,591 --> 01:51:56,911
+veya A11, A19 arasındaki değerler 1 iken seçiliyor. Belirlemiş olduğumuz değerlerden farklı bir değer varken, örneğin A11, 0 gelmiş olsa bunun çıktısı 1 olur ve cihaz seçilmez.
+
+482
+01:51:56,911 --> 01:52:05,631
+Çünkü A11'in 0 olduğu durum bizim adres aralığı içerimizde değil. İkinci bloğu da çift bloğu da nasıl seçtiriyoruz? Çift bloğu da şu şekilde seçtiriyoruz.
+
+483
+01:52:06,036 --> 01:52:26,556
+Yine A11'den A19'a kadar olan uçlar 1 iken, M-I-O 1 iken, A00 iken chip select üretiyor. Bunun haricinde herhangi bir farklı değer varken chip select üretmiyor. İkisini aynı anda seçebilir mi? Yani FFFF 0 adresinden 16 bitlik bir işlem yürütebilir miyim? Yürütebilirim. Bu oluşturduğumuz tasarım bunu destekliyor.
+
+484
+01:52:27,039 --> 01:52:37,079
+Çift adresten, yani bu aralık içerisine giren çift adresten 16 bitlik işlem yaptığımda, A11, A19 arasındaki değerler 1'dir. MOV komutu kullandığım için 1'dir.
+
+485
+01:52:37,659 --> 01:52:44,840
+Bus I Enable, 16 bitlik işlem olduğu için 0'dır. Verdiğim komuttaki adres değeri çift olduğu için A0'da 0'da.
+
+486
+01:52:44,840 --> 01:52:55,039
+Dolayısıyla, bu iki hafıza bloğunun aynı satırındaki değerler yüksek anlamlı veri yoluna ve düşük anlamlı veri yoluna aynı anda çıkış sağlar. Dolayısıyla 16 bitlik...
+
+487
+01:52:55,039 --> 01:52:58,619
+işlemi kift adresten bir seferde sağlamış olurum.
+
+488
+01:53:01,960 --> 01:53:04,000
+Genel mağlantı yapısını
+
+489
+01:53:05,076 --> 01:53:26,076
+Bu separate bank decoder mantığıydı. Bunu değiştirip, separate strop mantığına da dönüştürebiliriz. Bu durumda adres çözümleme devremizin bir tane chip select çıkışı var. O da ancak şu durumda çalışıyor. A11-A19 arası 1 iken, MOIO 1 iken, aktif 0 çıkış, 0 değeri üretmeli. Dolayısıyla bu ikisi aynı anda seçiliyor.
+
+490
+01:53:33,076 --> 01:53:44,847
+Adresden 16 bitlik işlem yapmışsam her ikisi de aynı anda seçilebilmiş oluyor. Bu mantıkta arkadaşlar, separate strobe mantığı adres çözümlemeye ilişkin olarak, separate strobe mantığına ilişkin bir örnek oluşturmuş oluyor.
+
+491
+01:53:44,847 --> 01:54:06,608
+Bakmadığımız bir tane örnek kaldı. Onu da ben yine yüklerim örnek olarak. Oradan kontrol edersiniz. Dediğim gibi bu yapı kesinlikle bununla ilgili finalde soru gelecek. Önceki haftanın kesme konusuyla ilgili farklı I.O. cihazları, NME, Intre uçlarından kesmeler kesin onlayla ilgili de soru gelecek. Ona göre finaldeki...
+
+492
+01:54:06,608 --> 01:54:32,008
+Çalışmanızı belirlersiniz. Hangi yöne odaklayacağınızı kontrol ederse netleştirirsiniz. Benim bu konuyla ilgili anlatacaklarım bu kadar. Bu sayede de bu dönemi bitirmiş oluyoruz arkadaşlar. Umarım sizin için de faydalı bir dönem olmuştur. Devam açısından çok büyük sıkıntı vardı. Şahsen düşüncem o. Ama işte pandemi dolayısıyla bir şey diyemiyorum.
+
+493
+01:54:32,851 --> 01:54:43,952
+Sizin sormak isteyeceğiniz, eklemek isteyeceğiniz bir şey var mı? Onu alabiliriz. Yoksa da bu dönemi bitiriyoruz ve finalde görüşürüz diyeceğiz. Var mı sorunuz, eklemek istediğiniz bir şey?
+
+494
+01:54:49,572 --> 01:54:50,771
+Teşekkür ederim.
+
+495
+01:54:52,532 --> 01:54:54,332
+Doruk, senin bir sorun var herhalde.
+
+496
+01:54:56,672 --> 01:55:00,672
+Finalde gene bir kağıt dağıtılacak mı? Ya da geçen şeyi konuşacak mı?
+
+497
+01:55:01,716 --> 01:55:18,716
+Şeyi mutlaka yanınızda getirin. Final sınavında da arayüzleri siz çıktısını alıp getirin tamam mı? Biz onu dağıtmayacağız. Siz arayüzler çıktısını yanınızda getirmelisiniz. Tıpkı vize de olduğu gibi. Onu söyleyeyim.
+
+498
+01:55:18,716 --> 01:55:19,716
+Anladım.
+
+499
+01:55:19,716 --> 01:55:22,716
+Onun haricinde var mı soracağınız bir şey?
+
+500
+01:55:27,412 --> 01:55:47,752
+Yoksa arkadaşlar, teşekkür ediyorum. Final zamanı görüşmek üzere diyorum. Yakın zamanda sanırım lab notlarınız belli olur. Önce onları ilan ederiz. Orada bir itirazınız varsa değerlendiririz. Yoksa da işte finalde kullanılmak üzere onları not etmiş oluruz. Yıl sonu notunu belirlemek için.
+
+501
+01:55:48,372 --> 01:55:58,372
+Sonrasında da finalimizi yapıp, arf notlarını belirlemeye çalışırız. Teşekkür ediyorum tekrardan. Finallerde görüşmek üzere. Herkese iyi günler.
+
+502
+01:55:58,372 --> 01:56:00,372
+Biz teşekkür ediyoruz hocam.
+
+503
+01:56:00,372 --> 01:56:01,372
+Teşekkür ediyoruz.
