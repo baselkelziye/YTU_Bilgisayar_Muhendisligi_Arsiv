@@ -1,0 +1,463 @@
+1
+00:06:58,451 --> 00:07:02,351
+Ecem bekliyorum ben de biraz gelen olsun. Çünkü bitişi var şu anda.
+
+2
+00:07:06,228 --> 00:07:17,927
+Ben ekranı açayım, sen kendin eksersiz yap, bak çözmeye çalış. Bu sınavda çıkmış bir sorudur, tamam mı? Geçen sene. Sen bir bak, çöz bakalım, hadi sınavdaymışsın gibi.
+
+3
+00:07:44,435 --> 00:07:46,815
+Çöldüğü zaman söyle, ikinci sayfaya geçiyorum.
+
+4
+00:12:00,052 --> 00:12:01,012
+Evet, izah edeyim.
+
+5
+00:12:02,992 --> 00:12:08,471
+Bakıyoruz. Bir de biraz çözümü anlamadıysam, bunlar sınavda çıkıp direkt zorlar, bunu söyleyeyim.
+
+6
+00:12:10,152 --> 00:12:15,252
+Böyle bir integral soruluyoruz. Tabii ki biz buna, şuraya bakarak karar veriyoruz.
+
+7
+00:12:17,152 --> 00:12:21,632
+Buradan anlayamazsak buna bakıyoruz. Birinci sırada buna bakıyoruz, ikinci sırada buna bakıyoruz.
+
+8
+00:12:22,752 --> 00:12:25,792
+Burada öncelik buna bakmak. Yani neyin sınırları? X'in.
+
+9
+00:12:28,596 --> 00:12:55,676
+O zaman, x içeride var, ikisi de doğru. Bu önemli. Demek ki ben önce x'e göre integre edeceğim. Ama, x'e göre edemiyorum. Y'ye göre de edemiyorum. Yani ben bunu ne x'e göre integre edebilirim, ne de y'ye göre. E ne yapacağım? Sorayım mı bırakacağım? Hayır.
+
+10
+00:12:57,748 --> 00:13:02,968
+O zaman diyorum ki, şu bölgeyi çizeyim.
+
+11
+00:13:04,028 --> 00:13:10,067
+Yani, bak, y eşittir 0, x eşittir, y eşittir eksi 1, burası.
+
+12
+00:13:11,408 --> 00:13:13,608
+Şu doğru ve bu da oldu, tamam mı?
+
+13
+00:13:14,008 --> 00:13:14,588
+Bu bölge.
+
+14
+00:13:16,148 --> 00:13:18,728
+Şimdi bu bölgeye ne yapıyorum biliyor musun? Şöyle.
+
+15
+00:13:19,868 --> 00:13:25,268
+Bak, burada bir y eksi artı x var, bir de x eksi 2y var, tamam mı?
+
+16
+00:13:26,259 --> 00:13:28,279
+Bunların ortadan kalkması lazım.
+
+17
+00:13:28,480 --> 00:13:28,759
+O zaman.
+
+18
+00:13:29,799 --> 00:13:31,080
+X artı Y'ye U diyorum.
+
+19
+00:13:31,720 --> 00:13:33,179
+X eksi 2'ye de V diyorum.
+
+20
+00:13:33,460 --> 00:13:34,259
+Değişken dönüşüm.
+
+21
+00:13:35,639 --> 00:13:37,639
+D domeni böyleydi.
+
+22
+00:13:38,379 --> 00:13:39,100
+Şu sınırlar.
+
+23
+00:13:39,179 --> 00:13:40,200
+D üstü de şöyle bak.
+
+24
+00:13:41,559 --> 00:13:43,240
+Bunları yerine koyarak tamam mı?
+
+25
+00:13:43,259 --> 00:13:45,319
+D bölgesindeki değerleri yerine koyarak bak.
+
+26
+00:13:46,379 --> 00:13:49,120
+X eksi 2'ye V olduğu için V eşit 3.
+
+27
+00:13:50,539 --> 00:13:53,559
+X artı Y eşittir 0 olduğu için U eşit 0.
+
+28
+00:13:55,539 --> 00:14:10,819
+Bir de y yerine 0 korsak, x de 0 oluyor. Yani ikisinin de 0 olması demek, bir dakika, bir de şuna bak, buna v eşitir 0 dedim.
+
+29
+00:14:12,259 --> 00:14:12,819
+Bir de ne var?
+
+30
+00:14:15,379 --> 00:14:16,919
+Bir de şu var, bakalım.
+
+31
+00:14:21,491 --> 00:14:23,491
+Yer-Yer'in aksı fark orsak.
+
+32
+00:14:29,460 --> 00:14:34,100
+x eşittir u, x eşit f. Yani dolayısıyla u eşittir v. Tamam mı?
+
+33
+00:14:35,820 --> 00:14:37,779
+Okey. Dolayısıyla bu bölgeyi çiziyoruz.
+
+34
+00:14:38,820 --> 00:14:41,100
+v ekseni alıyoruz, u ekseni alıyoruz.
+
+35
+00:14:41,380 --> 00:14:46,720
+v eşittir 3, u eşittir v, u eşittir v, u eşittir 0.
+
+36
+00:14:46,880 --> 00:14:50,759
+Dolayısıyla burada, şeyde Jacobian'da yazalım.
+
+37
+00:14:51,960 --> 00:14:55,759
+Jacobian, aslında şu.
+
+38
+00:14:57,556 --> 00:15:22,556
+x'in u'ya, x'in b. Böyle yazamadığım için ters yako veriyordum. Bir bölüm, u'nun x'e, u'nun y'ye, b'nin x'e, b'nin y'ye, gök ismi türev. Yani, u'nun x'e bir, u'nun y'ye bir, b'nin x'e bir, b'nin y'ye eksi iki. Eksi üç. Ama dikkat edin, bunu da mutlak değerini alacağız. Değil mi? Şöyle. Çünkü...
+
+39
+00:15:22,964 --> 00:15:25,284
+Bunun yerine şunu yazacağız. Neyi yerine yazacağız?
+
+40
+00:15:27,163 --> 00:15:28,403
+Bunun yerine yazacağız.
+
+41
+00:15:31,403 --> 00:15:34,403
+Burada yerine koyduk.
+
+42
+00:15:36,384 --> 00:15:41,344
+Buradan işte, şöyle almışım çizgiyi.
+
+43
+00:15:45,344 --> 00:15:48,864
+Yani, ve eşitli sıfırdan, şey pardon.
+
+44
+00:15:50,419 --> 00:15:51,339
+Böyle almış.
+
+45
+00:15:53,339 --> 00:15:53,659
+Tamam.
+
+46
+00:15:57,268 --> 00:16:01,268
+Bir dakika. Şurayı sileyim, göremedik mi?
+
+47
+00:16:04,268 --> 00:16:06,268
+Dev, uya göre almış. Yani...
+
+48
+00:16:14,035 --> 00:16:20,035
+Ve eşittir sıfırdan, ve eşittir.
+
+49
+00:16:24,211 --> 00:16:34,711
+0'dan 3'e kadar, v eşittir 0'dan 3'e kadar, u eşittir 0'dan v'ye kadar. Tamam mı? Tamam.
+
+50
+00:16:35,612 --> 00:16:48,172
+Fakat, bunu yazdık, böyle yapılınca doğru, o zaman burası dev oluyor. Yani tamam, doğru.
+
+51
+00:16:51,379 --> 00:16:51,879
+Ok.
+
+52
+00:16:55,572 --> 00:16:55,932
+Merhaba.
+
+53
+00:17:02,836 --> 00:17:04,956
+Kafama yatmayan bir şey var da onun için bekledim.
+
+54
+00:17:09,587 --> 00:17:20,407
+O'nun sınırları, O'dan B'ye göre, tamam. O'dan B'ye göre okuyor. Tamam, sıfırdan B'ye kadar, B'de sıfırdan 3'e kadar okuyor.
+
+55
+00:17:26,548 --> 00:17:36,768
+Böyle almış. Yani V'yi düzgün almış. O zaman U eşittir sıfırdan V'ye, V eşittir sıfırdan 3'e. Okey.
+
+56
+00:17:38,387 --> 00:17:53,028
+İlk önce U'ya göre integral alacağım. U kare bölü 2. Yerine sıfırdan V'ye kadar değerler koyduğum zaman V kare geliyor ve V kareler gidiyor. Allah Allah. Tam böyle ayarlanmış ki.
+
+57
+00:17:53,364 --> 00:18:08,364
+integral anlamayacak çünkü, burada v kare koyunca, v kare bölü, v kare sıfır ettiği için, v kareler gitmiş. Şurada, şöyle olmuş yani, ve dolayısıyla v kareler gitmiş. Böyle 2 kalmış, 2 de buraya gelmiş, 6 olmuş. Tamam.
+
+58
+00:18:09,364 --> 00:18:14,364
+Buradan, 1 bölü 6, 0'dan 3'e, evleri ve evleri ve evleri.
+
+59
+00:18:17,587 --> 00:18:36,087
+O da, ev üzeri b'nin integral, ev üzeri b, bir bölü altı sıfır bir üçe kadar. Yani, eksi, eksi bir, ev üzeri sıfır bir olduğu için böyle çıkıyor. Evet, çok güzel, final soru, hazırlamış soru. Evet.
+
+60
+00:18:40,307 --> 00:18:43,628
+Bakalım başka kim soruyor? Şimdi önce sana dışı mısı verelim, bir bak bakalım.
+
+61
+00:18:45,988 --> 00:18:52,028
+Yani şey soruyor, x'e göre alınmıştan y'ye göre alınmış. Tamam mı? Bunu soruyor.
+
+62
+00:18:53,708 --> 00:18:56,228
+Önce x'e göre alacağız, sonra y'ye göre alacağız.
+
+63
+00:18:57,847 --> 00:19:00,107
+Yine sana bir şans veriyorum, hadi bak bakalım.
+
+64
+00:19:02,048 --> 00:19:05,988
+Birkaç satın görüyorsun, kendin yaparsa ne olur? Bunlar süper zor, finans zorlar.
+
+65
+00:22:10,067 --> 00:22:18,208
+Peki, inceledin diye düşünüyorum. Önce x'e göre alacağım. Baya sıra önemli değil, istersen y'ye göre alırım, fark etmez.
+
+66
+00:22:22,963 --> 00:22:42,124
+Evet, bakıyoruz. Evet, önce y'ye göre alıyoruz. Sonra, evet. Türev alıyorum önce, bakın. Normal alıyorum, böyle bir türev. Ama böyle tavsiye etmem tabii. Böyle çıkmaya da değil. Çünkü neden? Çünkü 0 koyunca 0 bölü 0. Bakalım türevinde, evet.
+
+67
+00:22:48,019 --> 00:22:50,019
+Buranın x'e göre türevi uzatmayalım.
+
+68
+00:22:53,420 --> 00:22:54,579
+Şey, y'ye göre türevi.
+
+69
+00:22:55,839 --> 00:22:57,240
+2x sabit zaten bu.
+
+70
+00:22:57,619 --> 00:22:59,519
+Çarp payda, x payda, evet bu çıktı.
+
+71
+00:22:59,759 --> 00:23:02,099
+Sonra, sıfır sıfırı koyduk.
+
+72
+00:23:04,799 --> 00:23:06,299
+Sıfır sıfırı koyduk.
+
+73
+00:23:09,011 --> 00:23:36,311
+Y'ye göre türev olduğu için biliyorsun kısmı türevde ne yapıyorduk? Ha, kısmı türev tanımak. Şöyle kısmı türevde yerine koyduk. Ha, güzel. Şimdi o zaman dikkat edin, evet bu diyor ki, önce diyor, bakın dikkat edin, Y'ye göre kısmı türevi alırım diyor, tamam mı? Sonra diyor, bakın, X'i aynen bırakırım, Y'ye, A şartıma yaparım diyor.
+
+74
+00:23:36,788 --> 00:23:37,468
+Tamam mı?
+
+75
+00:23:38,468 --> 00:23:41,488
+Ve burada yerine koyuyor, tamam mı? Bakın.
+
+76
+00:23:43,567 --> 00:23:47,788
+Bu kaydı, x'e 0 koyuyor, y'ye de 0 artı h koyuyor, tamam mı?
+
+77
+00:23:51,316 --> 00:23:51,796
+Peki.
+
+78
+00:23:54,635 --> 00:23:55,615
+Şuradan bakın.
+
+79
+00:23:57,956 --> 00:23:59,416
+X'e 0 koyuyor.
+
+80
+00:24:00,836 --> 00:24:01,615
+Y'ye de
+
+81
+00:24:01,615 --> 00:24:04,256
+ne koyuyor?
+
+82
+00:24:04,556 --> 00:24:06,375
+Y artı h koyuyor. Tamam mı?
+
+83
+00:24:08,276 --> 00:24:09,336
+O zaman bu oluyor.
+
+84
+00:24:09,655 --> 00:24:11,416
+Sonra F0, 0 da 0 oldu.
+
+85
+00:24:11,776 --> 00:24:12,395
+Bakın, peki.
+
+86
+00:24:12,895 --> 00:24:15,416
+X'e 0 koyduk, bu 0 oldu, bu da 0 oldu.
+
+87
+00:24:15,416 --> 00:24:16,416
+Eksi 2.
+
+88
+00:24:17,460 --> 00:24:34,900
+h kare geldi, eksi, eksi 0, 0, bölü h. Burada 0 giderdi, ne çekti? 0 bölü 2 h küt. Tabii ki buna 0, 0 demeyeceğiz, diye demeyeceğiz, çünkü ha bir pozitif sayı. 0 bölü sayı diyeceğiz, 0 çıkıyor. Bu tamam.
+
+89
+00:24:37,039 --> 00:24:42,319
+Sonra, evet, bunu y'ye göre türevini aldık. Şimdi, y'ye göre aldık.
+
+90
+00:24:42,576 --> 00:24:52,115
+Burada zaten ne diyoruz? Önce y'ye göre al, sonra x'e göre alıyor değil mi? Önce y'ye göre, sonra x'e göre. Şimdi tekrar y'ye göre alınmıştan x'e göre alıyorum.
+
+91
+00:24:52,755 --> 00:25:06,016
+Peki. Y'ye göre alınmıştan x'e göre alıyorum. Yani şuradan. Burada koyuyorum. Bu sefer x'e 0 artı aç koyacağım. Bu sefer şurada koyacağım. Tamam mı? Bakın.
+
+92
+00:25:06,579 --> 00:25:13,939
+y'ye göre alınmış da koyacağım şimdi. Önce başta f'de koymuştuk. Şimdi f'i y'ye göre alınmış da ne koyacağım?
+
+93
+00:25:14,399 --> 00:25:21,119
+x gördüğüm yere 0 artı aç koyacağım, y yerine 0 koyacağım. Sonra da fy 0 0 çıkartacağım.
+
+94
+00:25:22,960 --> 00:25:27,079
+O zaten fy 0 0 neydi? 0'du, 0 çıkartacağım.
+
+95
+00:25:27,539 --> 00:25:34,960
+Buradan şöyle bir sadeleştirme oluyor, 2 bölü 3. Demek ki diyoruz, türev 2 bölü 3'tür. Ama şuraya bakalım, bak videoda kayıplı.
+
+96
+00:25:36,679 --> 00:25:38,859
+Bir derse gelmeyenler bunu sınavda yapamayabilir.
+
+97
+00:25:40,199 --> 00:25:49,039
+İkinci yol, evet ikinci yol, y'ye göre türev ve kere x'e x değil, y'ye 0 artı h koymak.
+
+98
+00:25:49,879 --> 00:25:51,159
+x'i aynı x diye bırakmak.
+
+99
+00:25:52,579 --> 00:25:54,859
+Daha sonra 0, 0 koymak, tamam mı?
+
+100
+00:25:55,508 --> 00:25:57,468
+Böylece y'ye göre türev alıyorum.
+
+101
+00:25:59,907 --> 00:26:00,208
+Peki.
+
+102
+00:26:02,708 --> 00:26:03,407
+Grubu bak.
+
+103
+00:26:03,488 --> 00:26:04,847
+F'lik 0, 0'dır.
+
+104
+00:26:05,407 --> 00:26:06,608
+Yukarıda vardı zaten.
+
+105
+00:26:08,748 --> 00:26:10,708
+Bunları yerine koyduk.
+
+106
+00:26:11,847 --> 00:26:12,948
+Sadeleştirdik. Bu çift.
+
+107
+00:26:16,372 --> 00:26:18,672
+Sonra buradan da trav aldık.
+
+108
+00:26:20,332 --> 00:26:23,652
+X'e göre trav aldık. 2 bölü 3. Bakın, işte aynı cevap.
+
+109
+00:26:23,872 --> 00:26:28,432
+Böyle de olabilir. Şöyle bir bakayım, daha sonra bakarsınız. Tamam mı?
+
+110
+00:26:29,372 --> 00:26:29,992
+Evet, şöyle.
+
+111
+00:26:32,231 --> 00:26:32,792
+Bu da böyle.
+
+112
+00:26:35,672 --> 00:26:36,012
+3.
+
+113
+00:26:37,852 --> 00:26:40,711
+Yine sana bir şans veriyorum, bir baktörünce.
+
+114
+00:26:40,711 --> 00:26:42,711
+Tamam mı? Kendim burada sanki...
+
+115
+00:26:42,867 --> 00:26:54,208
+Derse çalışıyor musun? Bir de dene bakalım. Bekliyorum çünkü o daha iyi olur. Ben anlatıp da monoton yedim. Sonra ben anlatacağım. Tamam mı? Güzelce bu soruları çözelim. Bekliyorum.
+
+116
+00:31:30,740 --> 00:31:32,860
+Ben yine soruyu arada bir açacağım.

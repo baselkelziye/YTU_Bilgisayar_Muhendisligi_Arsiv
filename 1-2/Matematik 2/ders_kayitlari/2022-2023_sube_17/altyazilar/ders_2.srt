@@ -1,0 +1,1827 @@
+1
+00:00:36,148 --> 00:00:36,448
+Evet.
+
+2
+00:00:38,748 --> 00:00:39,468
+Yüksel merhaba.
+
+3
+00:00:41,987 --> 00:00:43,288
+Hemen derse başlıyorum.
+
+4
+00:01:11,251 --> 00:01:18,111
+Burada kalmıştık. Hemen hızla devam ediyoruz. Kısmi toplamların ne olduğunu anlatmıştık. Şurada bir daha değinelim.
+
+5
+00:01:19,951 --> 00:01:28,251
+Tamamdır. Şu. Bir kuralla birbirine bağlı sayılar dizisinin bütün terimlerinin toplamından elde edilen ifadeye serilenir.
+
+6
+00:01:29,331 --> 00:01:36,352
+Yani dizideki elemanların belli bir kuralla tabi dizi. Onların toplamdan oluşan ifadeye de seriliyoruz. Yani.
+
+7
+00:01:45,780 --> 00:01:50,060
+Şöyle, bu neyi ifade ediyor? Kümeç olduğuna göre bu bir gizli ifade ediyor.
+
+8
+00:01:50,760 --> 00:01:57,360
+Terimleri toplanarak A1 artı, A2 artı, nokta nokta, A'nın serisini elde ederiz. Onu da bu şekilde gösteririz.
+
+9
+00:01:57,460 --> 00:02:06,140
+Tamam mı? Sigma ile gösteriyoruz demek ki serilerini. Örneğin, n eşittir 1'den sonsuza kadar sigma nedir?
+
+10
+00:02:06,400 --> 00:02:09,540
+1 koyuyoruz, 2 koyuyoruz, sürekli toplayarak gidiyoruz değil mi?
+
+11
+00:02:11,443 --> 00:02:14,923
+İki tane önemli sembol var. Bunu kullanmıyorum da bir de pi sembolü var.
+
+12
+00:02:16,823 --> 00:02:30,063
+K eşittir, birden n'e kadar diyelim. Bu da şu. Bu da pi sembolüdür. Söyleyeyim yani, bir çarpı iki çarpı nokta nokta nokta gider.
+
+13
+00:02:30,403 --> 00:02:35,383
+Bu da n faktörüyle eşittir. Bu da pi sembolüdür ama bizim bildiğimiz 3,14 değil.
+
+14
+00:02:36,276 --> 00:02:38,915
+Bu çarpım semboldür, bu toplam semboldür.
+
+15
+00:02:40,295 --> 00:02:41,936
+Geldik, 1 bölü 2.
+
+16
+00:02:42,616 --> 00:02:44,975
+Bu serinin adı harmonik seridir.
+
+17
+00:02:46,156 --> 00:02:47,256
+Çok kullanacağız bu seri.
+
+18
+00:02:48,656 --> 00:02:49,756
+Harmonik seri.
+
+19
+00:02:54,740 --> 00:03:09,079
+Mesela şöyle bir şeyin genel terimini bulmak istedik. Alt taraf çift sayı oldu. İki en ilik kural var. Üstede tek sayılar. İki en ilikisi de. Bir koyduğumuz zaman check ettik değil mi? İkiyle de bir daha kontrol ettik yanlış bu diye. Tamam. Üç eleman için doğru olduğuna göre bu doğrudur dedik. Geçtik.
+
+20
+00:03:09,659 --> 00:03:17,600
+Buna baktık. Burada bir bölü bir bölü iki. En çarpı en artı. İki korsak iki çarpı üç. Üç korsak üç. Tamam bu da doğru. Tekrar.
+
+21
+00:03:18,379 --> 00:03:19,540
+Buna baktık.
+
+22
+00:03:21,427 --> 00:03:46,327
+Bakın aradaki fark 3, 5, 7, tabii biz bunu bilmesek de ben dün öğretmiştim. Bir daha farklarını alıyoruz. Kaçıncıda eşit çıkarsa o dereceden bir polimondur. Bu da size benim gösterdiğim, öğrettiğim bir kolay yol olsun. Eğer bu da eşit çıkmasaydı, bundan sonraki farklar eşit çıksaydı o zaman en küplüydü.
+
+23
+00:03:46,719 --> 00:04:10,539
+Diğer elemanlarında değer koyarak, deneyerek artı bir, eksı bir, onu da ayarlayacağız. Bakın, bu da kolay bir metod. Bakın, ilk farkları aldık. Buna birinci farklar diyor. Sonra ikinci farkları aldık. İkinci farklar aynı çıktı. Yani farkların farkları aynı çıktı. O zaman en kare. Bu da eşit olmasaydı, ondan sonraki eşit çıksaydı en kare. Diye size bir kolay altın bilgi vereyim.
+
+24
+00:04:13,044 --> 00:04:14,103
+Devam ediyoruz.
+
+25
+00:04:26,771 --> 00:04:37,891
+Not, bir serinin, ilk teriminin birden başlama zorunluluğu yoktur. Tamam, bunları anlatmıştım. Baten yine başladım. Gerekli olduğunda serinin incisini başka bir değerden başlatmak için değiştirebiliriz.
+
+26
+00:04:37,891 --> 00:04:50,891
+Mesela, burayı 2'ye azaltırsak, buraya M yerine M artı 2 koyuyoruz. Bakın, bu kural, altın terazi kural. Birinden çıkartıyoruz, birine ekliyoruz.
+
+27
+00:04:54,100 --> 00:04:56,780
+Mesela 7'den başlatalım. Evet.
+
+28
+00:04:57,860 --> 00:05:05,920
+Ama 7'den başlatmak istiyorsak, 4 ekleriz. Burada da M yerine M eksi 4 yatarız.
+
+29
+00:05:06,240 --> 00:05:10,680
+Bunlar, tamam mı? Böyle indiz bunlar.
+
+30
+00:05:11,700 --> 00:05:18,440
+İntegralde, tüm avamda anlatılması gereken şeyler. Ama ben her şeyi, temeliniz yok diye sıfırdan anlatıyorum.
+
+31
+00:05:20,435 --> 00:05:23,955
+Zaten uzama çözerken de bakacağız lazım sonra çözmekten.
+
+32
+00:05:24,195 --> 00:05:24,915
+Devam ediyorum.
+
+33
+00:05:26,915 --> 00:05:27,515
+Evet, buradan.
+
+34
+00:05:32,660 --> 00:05:33,388
+Teşekkürler.
+
+35
+00:05:39,444 --> 00:05:44,923
+Ayrı kısmi toplamlar dizisi, onu anlattım biliyorsunuz ayrı kıtağımda. Tamam mı? Ayrıca anlattım.
+
+36
+00:05:45,923 --> 00:05:50,224
+AYM serisinin, ESM'de gösterilen kısmi toplamlar dizisi aşırıdaki gibi tanımlanır.
+
+37
+00:05:53,843 --> 00:06:09,783
+Onu anlatmıştım biliyorsunuz. Şunun bir eleman toplamı, iki eleman toplamı A1 Arda'yı. Dizinin üç eleman toplamı S3. Bunlar da bize ne oluyor? Kısmi toplamlar dizisi. Kısmi toplamlar dizisi.
+
+38
+00:06:11,783 --> 00:06:20,604
+İleride bugün yerledikçe her şey oturacak. Bu da çok kullandığımız en inci kısmı toplam.
+
+39
+00:06:22,483 --> 00:06:27,803
+Yani ilk n terimden oluşan, eninci kısmı toplam. Özel adı var. Kısmı toplam.
+
+40
+00:06:30,303 --> 00:06:37,543
+Kısmı, belki internette sesli bir şey gelmiştir, yazıyordu bazı şeyler. Kısmı toplam.
+
+41
+00:06:38,503 --> 00:06:43,783
+Kısmı yani n tanesini, bir kısmını toplalım içeriye. Bunlardan oluşan S1 nedir? A1.
+
+42
+00:06:45,204 --> 00:07:11,863
+Şu nedir? A1 artı A2. Bunlar da demek ki bir dizi oluşturuyormuş. Bu da A1 artı A2. Bu da Esen geliyor burada. O da nokta nokta nokta devam ediyor. Esen dizisine, sıkkı svi toplamlar dizisi denilir. Çok güzel. Anlamadığınız bir yer varsa lütfen ben durdurun. Orada mesaj atın ya da sesli olarak derse girebilirsiniz. Tamam mı?
+
+43
+00:07:22,067 --> 00:07:22,507
+Evet.
+
+44
+00:07:35,156 --> 00:07:57,096
+Şimdi, Esen dizisine dizisinin kısmı toplamlar dizisi denir. Serinin eninci kısmı toplamı denir. Bu diziye Esen kısmı toplamlar dizisi. Peki yani bu Serinin kısmı toplamlar dizisi diyoruz. Eninci kısmı toplamda bu formülle bulunuyor.
+
+45
+00:07:57,439 --> 00:08:04,780
+3 yazarsak ilk 3 terimin toplamı, 4 yazarsak 4 terimin toplamı, n yazarsak n terim toplamı, en ince kısmi toplam.
+
+46
+00:08:06,300 --> 00:08:10,860
+Demek ki o kadar çok dedi ki, sürekli tekrarlıyoruz diye, iyice beyninize girsin diye.
+
+47
+00:08:24,276 --> 00:08:25,100
+Evet.
+
+48
+00:08:28,403 --> 00:08:32,764
+Evet, bir şey söylüyor, bak burada yıldızı da koymuşlar demek, önemli bir şey söyleyecek.
+
+49
+00:08:33,703 --> 00:08:39,764
+Esen, eninci kısmı toplam. Bu toplam, bu serinin eninci kısmı toplam olmak üzere eğer diyor.
+
+50
+00:08:42,844 --> 00:08:50,744
+Kısmi toplamların limiti, bakın elemanların değil, şu değil, herkes bununla karıştıracak.
+
+51
+00:08:51,804 --> 00:08:52,923
+Aya'nın limiti değil.
+
+52
+00:08:53,652 --> 00:09:14,112
+Bunu tekrarlayacağım. Tekrar tekrar tamam mı? Bu limitten bahsetmiyorum. Yani serinin genel teriminin limitinden bahsetmiyorum. Bundan değil. Nedir? Bunların kısmi toplamından oluşan bir dizi oluşturuyorum. A1, diğer eleman A1 artı A2.
+
+53
+00:09:16,392 --> 00:09:19,951
+Nokta nokta. Bu da elinci de A1'e kadar. Bu da ESM.
+
+54
+00:09:20,500 --> 00:09:28,440
+Bu diziden bahsediyorum. Yani S1, S2, S. Bunu anlatırken, diyor ki burada bakın.
+
+55
+00:09:30,559 --> 00:09:36,680
+Tabii yine buna rağmen anlamayacaksınız, yanlış yapacaksınız. Yanlış yapa yapa da doğruyu bulacağız. Şimdi bakın.
+
+56
+00:09:38,440 --> 00:09:41,920
+Burada serinin genel terimi demiyor. Ne diyor?
+
+57
+00:09:45,620 --> 00:10:04,419
+Bu serinin kısmi toplamları, diyor ki, bu kısmi toplamlar dizisinin, yani, şu şöyle bir dizi var ya, yani, S1, S2, S, şundan bahsetmiyorum yani, tamam mı? Yani, şundan bahsediyorum.
+
+58
+00:10:06,359 --> 00:10:09,139
+O dizinin serisinden bahsetmiyorum.
+
+59
+00:10:10,964 --> 00:10:34,784
+Ama öğrenci bunu zannedilecek, tamam mı? Böyle zannedilecek. O serinin, yani seriyi oluşturancısından bahseder. Bunun limiti alınacak. Bunun limiti varsa, yakınsak değil. Şunun limiti varsa, yakınsak. Çünkü bu eserin içinde A'yı yok. Bunun içinde A'yı bir den A'yı ne kadar bir toplağım var.
+
+60
+00:10:35,892 --> 00:10:42,072
+Bu toplamın, şurası sonsuz olduğu zaman, limiti varsa diyoruz, dedik.
+
+61
+00:10:43,092 --> 00:10:46,251
+Yine takılırsanız, yanlış yaparsınız, orada düzeltir.
+
+62
+00:10:48,251 --> 00:10:53,511
+Siz soru çözerken zaten bunu fark edeceksiniz. Demek ki, burada önemli olan nedir?
+
+63
+00:10:54,412 --> 00:10:58,152
+Kısmi toplamlar dizisinin limiti varsa, s ne demek biliyor musunuz?
+
+64
+00:10:58,331 --> 00:11:00,591
+S demek, limiti var demek. Bu bir real sayı.
+
+65
+00:11:01,908 --> 00:11:19,908
+Ve bir tanedir tabii, tek bir limit olduğuna göre, hep tek. O zaman bu AN serisi, S toplamına yakasıyor denip, ve bu S ile yani bunun toplamını da bulmuş oluyorum değil mi? Yani sonsuz terim toplamını da bulmuş oluyorum. Benzer şekilde, madem ki...
+
+66
+00:11:20,211 --> 00:11:43,711
+Bir serinin toplamı belli bir sayıysa, yakınsaksa, demek ki yakınsak olur. Yani sonsuz çıkmıyor. Elemanlarını alıyoruz, topluyoruz. Toplamı s çıkıyor. S'de bir real sayı çıkıyor. 3, 5, 4, neyse. O zaman yakınsak diyoruz. Ama bu limit yoksa toplam da yoktur. Yani sonsuzdur. Dolayısıyla ıraksak oluyor. Evet.
+
+67
+00:11:44,884 --> 00:11:59,543
+Uygulamaya geldiği zaman zevkle bunu yapacağız. Demek ki ilk metot bugün, başladık derslerimize ilk bir metot veriyorum. Bir serinin yakınsaklığını araştırmak için çocuklar şu limite bakıyoruz.
+
+68
+00:12:02,344 --> 00:12:12,384
+En son sıra giderken, ser. Bu limit eğer s, s demek ne demek? Baya sayı demek. Tamam mı unutmayın?
+
+69
+00:12:13,076 --> 00:12:21,696
+Varsa yakınsaktır. Toplamı da, yani bu serinin bütün elemanlarının toplamı da, yani serinin toplamı ne demek?
+
+70
+00:12:22,456 --> 00:12:28,296
+A1 artı, A2 artı, nokta nokta nokta, am değil, ta sonsuza kadar bütün toplam nedir?
+
+71
+00:12:29,096 --> 00:12:32,196
+S'dir demektir, o zaman da yakınsak demektir.
+
+72
+00:12:32,196 --> 00:12:35,596
+Peki, değilse, bıraksaktır.
+
+73
+00:12:40,755 --> 00:13:04,755
+dizi serinin esenini bulamıyoruz. Ah bulabilseydik, okul müddeti 1-2 hafta azalırdı. Çünkü 1-2 hafta sırf bu esen toplamı her şeyde bulunmadığı için, tamam mı? Bazılarını da biliyoruz da bazılarını da bulamayacağız. O zaman başka metotla bulacağız. Demek ki en tane terim toplamını bulabilseydik bütün fonksiyonları o zaman...
+
+74
+00:13:05,779 --> 00:13:15,720
+Matematik daha güzel olurdu. Eğitimde 2 hafta kısaltmak gerekirdi. Demek ki 2 hafta biz bunu yazamadığımız için başka metodlar olur.
+
+75
+00:13:18,879 --> 00:13:29,740
+Buraya baktık. Başlangıç güzel yaptık. Özet. Bu seri toplam olduğuna göre seri. Seri en önce kısmı toplam olmak üzere.
+
+76
+00:13:31,860 --> 00:13:35,860
+Bu S'ni bulabilirsek diyoruz ya, çok güzel cevap verebiliyoruz.
+
+77
+00:13:37,080 --> 00:13:40,440
+Bulursak limit almam kolay her fonksiyon, limit mi alabiliriz, sorun yok.
+
+78
+00:13:42,800 --> 00:13:49,860
+O zaman, S eşitse, seri S'ye yakınsa, yani toplamı S'dir.
+
+79
+00:13:52,020 --> 00:13:57,000
+Peki bu artı eksi sonsuz ise, seri artı eksi sonsuz olarak aksak.
+
+80
+00:14:00,307 --> 00:14:13,368
+Yani limit sonsuz çıkıyor da toplamı yok. Toplamı sonsuz. Olur mu? Sonsuz olmak demek ki toplamı yok demektir yani. Peki limit mevcut değil. Ne demek? Bir limit eksi bir çift, bir limit çift. O zaman limit olmaz. O zaman da seri, yıraksak.
+
+81
+00:14:14,668 --> 00:14:23,748
+Özettir. Bunu aldık. Bu videoda var. Sonra bir daha bakarsınız. Ama dediğiniz gibi her zaman çocuklar, seni bulamıyoruz.
+
+82
+00:14:23,748 --> 00:14:26,728
+Ha, bulacağımız formülleri söyleyeceğim.
+
+83
+00:14:27,347 --> 00:14:37,787
+Tamam mı? Onları güzel diyor, merak etmeyin. Eskiden ulussanız da, yeri gelince eski konuların hepsini tekrarlı yıkan. Şimdi evet, kıvametteki seri.
+
+84
+00:14:39,707 --> 00:14:45,787
+Tabii önce öbür tahtaya geçip, bir ders anlatır. Önce şunu bir anlatıp dönüp etkik.
+
+85
+00:14:47,547 --> 00:14:53,827
+Çocuklar, üç tane bazı özel serilerden bahsedip, ondan sonra devam ediyoruz. Biraz da kafamdan anlatayım.
+
+86
+00:14:54,580 --> 00:15:06,300
+Birincisi, en eşittim birden sonsuza, bir böleğen, bunun adı, artık adını koyduk, harmonik seri.
+
+87
+00:15:12,500 --> 00:15:23,340
+Dersleri sürekli takip edin. Videolarda var, kaçırırsanız videolara bakarsınız. Tamam mı? Anlattığım şeyi bir daha hatırlıyor muyum? Her şeyi baştan aynı bir daha anlatma şansı olmuyor. Harmonik seridir.
+
+88
+00:15:24,500 --> 00:15:36,700
+Yani ne demektir bu seri? 1 artı 1 bölü 2 artı 1 bölü 3. Böyle bir seridir tamam mı? Yani bu şekilde sonsuza kadar gidiyor.
+
+89
+00:15:38,355 --> 00:15:41,335
+Fakat esen toplamını hay aksi.
+
+90
+00:15:44,275 --> 00:15:47,735
+Tamam, maalesef, maalesef, keşke yapabilseydi.
+
+91
+00:15:49,515 --> 00:15:53,375
+Yani şunun toplamını veren bir formül yok.
+
+92
+00:15:57,268 --> 00:16:24,368
+Tamam mı? Şunun toplamını veren, Tumavar'ın formüllerinde de böyle bir formül yok. Bazıları var. Ama bu yok. Neyse, ne yapalım? Yok. Olsaydı bunun toplam formülünü yazardık sonuçta. Limitini aldırdık, biterdi. Demek ki bunun için ne yapacağız? Daha sonra anlatacağım, integral hesap yapacağız. İntegreyle yapacağız toplamı. Peki. Ona da geleceğiz. Güzel demek ki. Çok güzel. Günlük takip ederseniz.
+
+93
+00:16:24,831 --> 00:16:26,831
+konuları net anlarsınız.
+
+94
+00:16:26,831 --> 00:16:29,831
+Peki, bu harmonik seri.
+
+95
+00:16:29,831 --> 00:16:31,831
+Bir de ileride göreceğiz.
+
+96
+00:16:36,340 --> 00:16:39,740
+Şimdi birden sonsuza giderken, şöyle bir seri var.
+
+97
+00:16:42,279 --> 00:16:44,759
+Tanıtalım da önce elemanlarımızı, tamam mı? Bir böyle yani.
+
+98
+00:16:44,759 --> 00:16:49,600
+Bu da, eksi bir, artı bir, veya n artı bir koyalım şuraya.
+
+99
+00:16:52,080 --> 00:16:55,740
+n artı bir çarpı bir, yani, eksi bir üzeri iki olur.
+
+100
+00:16:56,259 --> 00:16:57,039
+Güzel yazamadım.
+
+101
+00:16:58,000 --> 00:17:01,080
+Şimdi ilk defa gördüğünüz için, ben temiz yazmak zorundayım.
+
+102
+00:17:01,971 --> 00:17:12,271
+Okul tahtasındaki işlem yapmak zorundayım. Eksi 1 üzeri n, 1 böyle, bu 1.
+
+103
+00:17:14,871 --> 00:17:19,271
+n artı 1 demiştik değil mi? n artı 1. 2 pozitif başlasın, şart değil, 1.
+
+104
+00:17:22,152 --> 00:17:26,351
+Bu da 1 artı 1 eksi gidiyor böyle, tamam mı? Yani kafayı bulmuş gibi.
+
+105
+00:17:27,604 --> 00:17:38,244
+Evet, böyle. Bunun da özel bir adı var. Alterni harmonik seri. Adını koyuyoruz bak, tamam mı? İlk önce tanıştırıyoruz, ileride görebilir. Alterni harmonik seri.
+
+106
+00:17:41,683 --> 00:17:45,423
+Bunun da toplamını tabii, sonsuz terim toplamını bulamıyoruz.
+
+107
+00:17:46,663 --> 00:17:50,943
+Bulamadığımız için de bunun da esenini yazamıyoruz.
+
+108
+00:17:51,203 --> 00:17:53,603
+Esen toplamını yazamıyoruz.
+
+109
+00:17:53,603 --> 00:17:58,603
+O zaman toplamını yapamadığımıza göre de...
+
+110
+00:18:01,428 --> 00:18:10,428
+Limit de alamıyoruz tabii, fonksiyon bulamadığımız için. Nelerini biliyoruz ona geçelim. Harmonik seriyi yazdık, tamam. Alternatif harmonik seriyi de yazdık, siliyorum.
+
+111
+00:18:12,428 --> 00:18:23,428
+Evet, buradan videoda kayıt tabii duruyor, baktığınız zaman silinmiyor tabii. Aşama, zaman, şeyde olduğu için geldik. Diğer tür, mesela şu seriden bahsedelim.
+
+112
+00:18:25,428 --> 00:18:29,420
+Hangi seriden bahsedelim? Aslında adımlarını koyuyoruz, tamam mı?
+
+113
+00:18:29,428 --> 00:18:45,307
+En eşittir birden, sonsu da C. Bu seride C artı, C artı, C artı, böyle gidiyor. Genel terimi de C. Bu da sabit seri.
+
+114
+00:18:50,900 --> 00:18:54,900
+Tabii şu da eğer böyle yazarsak küme yazabilseydim.
+
+115
+00:18:56,280 --> 00:19:01,500
+Bak küme yapıp da C yazsaydık ne olurdu?
+
+116
+00:19:01,600 --> 00:19:03,160
+C, C, C, D, D.
+
+117
+00:19:03,280 --> 00:19:04,220
+Bu dizi olur.
+
+118
+00:19:04,480 --> 00:19:05,660
+Çünkü bildiğin boyut kadar.
+
+119
+00:19:05,820 --> 00:19:06,240
+Tamam mı?
+
+120
+00:19:06,580 --> 00:19:07,280
+Bu dizi olur.
+
+121
+00:19:07,800 --> 00:19:08,560
+Bunun toplamı.
+
+122
+00:19:09,840 --> 00:19:10,060
+Peki.
+
+123
+00:19:10,480 --> 00:19:16,680
+Ha, şansımıza bu serinin SM toplamını bulabiliyoruz.
+
+124
+00:19:22,804 --> 00:19:33,804
+Pardon, k eşittir, birden n'e kadar c. Bunun formülü, k'ya bağımsız olduğu için n çarpı c'dir. Neden?
+
+125
+00:19:35,044 --> 00:19:39,724
+n tane c'yi topladığımız zaman nc olur. Dolayısıyla bunun limitini de alırız.
+
+126
+00:19:43,251 --> 00:20:08,471
+Buradan n çarpı c ne çıkar? C sıfır değilse, sıfırsa tamam sıfırsa sıfır çıkar. O zaman, ama yakınsak olur tabii. Sıfır serisi yakınsaktır da. O başka bir tek sıfır serisi yakınsaktır ama sıfırdan farklıysa ya artı sonsuz çıkar ya eksi sonsuz çıkar değil mi?
+
+127
+00:20:09,491 --> 00:20:28,312
+ç eksi ise eksi sonsu çıkar, artı ise artı sonsu çıkar, her kâlde de toplam yoktur değil mi? Toplam yoktur. Yani sonsuz real sayı olmadı ki yoktur. Dolayısıyla da sıfır hariç tamam mı? Yani sıfır serisi hariç, sabit seriler nedir? Bıraksak tırarız.
+
+128
+00:20:37,044 --> 00:20:39,364
+Sonsuz çarpı sıfır olur orada da bir.
+
+129
+00:20:41,243 --> 00:20:46,044
+Evet, yani sıfırda kullanmıyoruz ki zaten sıfır yani.
+
+130
+00:20:46,544 --> 00:20:49,124
+Atar değil mi? Sıfır serisinin hiçbir hayatında kullanmadım.
+
+131
+00:20:49,804 --> 00:20:50,044
+Evet.
+
+132
+00:20:52,243 --> 00:20:53,104
+Geçtik peki.
+
+133
+00:20:53,824 --> 00:20:54,943
+Toplam yok dedik.
+
+134
+00:20:55,423 --> 00:20:58,324
+Artı eks sonsuz demek, toplam sonsuz demek ve eks sonsuz demek.
+
+135
+00:20:58,584 --> 00:20:59,443
+O zaman da raksak oldu.
+
+136
+00:20:59,624 --> 00:20:59,784
+Tamam.
+
+137
+00:21:00,304 --> 00:21:01,384
+Sabit seriyi de gördük.
+
+138
+00:21:12,339 --> 00:21:14,763
+Başka bir seriler, tanışturalım ki, noc
+
+139
+00:21:17,907 --> 00:21:24,087
+Arada parça parça yapmaktansa ben önce bunları anlatıyorum dersimize hızlandırmaktan. Tamam devam edelim.
+
+140
+00:21:26,727 --> 00:21:28,048
+Başka ne var?
+
+141
+00:21:34,900 --> 00:21:44,759
+Ne yaptık? Bir harmonik seri yaptık. Sabit seri yaptık. Başka? Aritmetik seri.
+
+142
+00:21:52,980 --> 00:22:01,180
+Serileri tanıştırıyorum sizle, kullanacağımız. O da şu, önce aritmetik diziyi yapalım, tamam mı? Bir dizi olarak yapalım.
+
+143
+00:22:03,920 --> 00:22:15,820
+A1 artı M-1 değer, değil mi? Bu aritmetik dizi. Aritmetik seri de şu, en eşittir birden sonsuza.
+
+144
+00:22:21,619 --> 00:22:22,619
+P'den son sıra.
+
+145
+00:22:25,220 --> 00:22:26,839
+A1 artı M-1
+
+146
+00:22:26,839 --> 00:22:29,599
+D. Tamam mı?
+
+147
+00:22:31,000 --> 00:22:32,859
+Evet, bunu böyle yazarsak,
+
+148
+00:22:34,180 --> 00:22:36,519
+yani açık yazılmasına olur, A1,
+
+149
+00:22:36,899 --> 00:22:39,180
+en yerine 1 korsak, sonra A1 artı
+
+150
+00:22:39,180 --> 00:22:39,879
+D.
+
+151
+00:22:43,635 --> 00:22:46,715
+A1 artı 2 de filan ne? G'den bir şeyden bahsediyor.
+
+152
+00:22:46,715 --> 00:23:02,796
+D nedir? Difference'dan, yani İngilizce'den yüklenen bir şey fark demek. Difference fark ya. Neyin farkıdır? Bir sonraki elemanın bir önündeki elemandan farkıdır.
+
+153
+00:23:09,715 --> 00:23:11,095
+Peki, bu arttır.
+
+154
+00:23:11,375 --> 00:23:12,255
+Peki, devam ediyoruz.
+
+155
+00:23:13,895 --> 00:23:14,855
+Böyle giden
+
+156
+00:23:14,855 --> 00:23:18,015
+şeyden bahsediyoruz, tamam mı?
+
+157
+00:23:18,675 --> 00:23:19,275
+Seriden.
+
+158
+00:23:21,375 --> 00:23:22,395
+Yani, evet.
+
+159
+00:23:23,715 --> 00:23:26,395
+Peki, bunun yakınsaklı, yöraksaklı nasıl?
+
+160
+00:23:26,655 --> 00:23:27,295
+Bu dizi.
+
+161
+00:23:27,795 --> 00:23:28,535
+Bu da serisi.
+
+162
+00:23:28,535 --> 00:23:29,595
+Bu dizi.
+
+163
+00:23:32,095 --> 00:23:34,015
+Aritmetik dizi, bu aritmetik seri.
+
+164
+00:23:35,155 --> 00:23:46,635
+Yakınsak mıdır? Bakalım. Tabii dizinin yakınsaklığı başka bir şey, serinin yakınsaklığı başka bir şey. Dizinin yakınsaklığında şu yetiyor. Dizide...
+
+165
+00:23:50,195 --> 00:24:11,075
+A-N'e bakarız. Eğer A çıkıyorsa, tamam mı? Yani bir real sayı çıkıyorsa yakınsaklıyoruz. Ama dizide. Seride öyle bir olay yok. A-N'e baktık, en sonsuza giderken A çıktı diyelim, bir real sayı çıktı. Tamam mı? Bir real sayı çıktı.
+
+166
+00:24:11,615 --> 00:24:17,435
+Buna bir şey söyleyemiyoruz. Yakınsak, ıraksak diyemiyoruz. Tamam mı? Bir yorumuz yok. Ama şu var.
+
+167
+00:24:18,324 --> 00:24:30,784
+Eğer kısmi toplamları alırsak, bunun limiti varsa, kısmi toplamların dizisinin limiti varsa, o zaman yakınsak diyoruz.
+
+168
+00:24:31,284 --> 00:24:38,064
+Tamam mı? Ama genel terimi değil. Bunu söyleyelim ki hemen bir şeyi hata yapmanızı önlemek istedim.
+
+169
+00:24:39,284 --> 00:24:44,064
+Bu aritmetik seriydi. Peki bunun...
+
+170
+00:24:45,395 --> 00:24:47,596
+Şunun toplamı bulunabilir mi? Bakalım.
+
+171
+00:24:49,576 --> 00:24:53,336
+Aritmetik serinin toplamı bulunabilir mi? Değil mi kısmi toplamı? Bakalım.
+
+172
+00:24:58,291 --> 00:25:03,351
+Timobar'ı dediğimiz gibi Mat 1'de Riemann toplamlarında falan görmüştük.
+
+173
+00:25:04,672 --> 00:25:07,311
+Ama ben orada olan formülleri burada vereceğim.
+
+174
+00:25:07,672 --> 00:25:09,711
+Orada anlattım, burada anlatamadık ya.
+
+175
+00:25:10,231 --> 00:25:10,951
+Onu anlatayım.
+
+176
+00:25:13,111 --> 00:25:13,791
+Yazalım.
+
+177
+00:25:15,491 --> 00:25:18,291
+Sen, aritmetik dizide toplam.
+
+178
+00:25:19,571 --> 00:25:21,432
+K eşittir, 1'den 1'e kadar.
+
+179
+00:25:24,756 --> 00:25:32,596
+A, k eksi, d, tamam mı? Bunu bulabilir miyiz? Bakalım.
+
+180
+00:25:43,859 --> 00:25:51,460
+A'dır. Artık, K değil mi? Şöyle D'yi çıkartarak şöyle yazalım. Tamam mı?
+
+181
+00:25:56,372 --> 00:26:05,072
+Buraya k koyup sonra da, eksi, k eşittir, birden sonsuza kadar, d değil tamam mı?
+
+182
+00:26:05,072 --> 00:26:09,832
+Ne olur burası?
+
+183
+00:26:11,592 --> 00:26:13,852
+A1, sabit olduğu için A1'e ne olur?
+
+184
+00:26:24,307 --> 00:26:25,147
+En iyi olacak.
+
+185
+00:26:29,395 --> 00:26:36,316
+D çarpı, n çarpı n artı 1 bölü 2. Bunu biliyorsunuz. Nereden biliyorsunuz? Tüm avarından biliyorsunuz.
+
+186
+00:26:38,496 --> 00:26:40,096
+Bu da n çarpı d.
+
+187
+00:26:43,056 --> 00:26:44,936
+Bunun da limitini alırsak.
+
+188
+00:26:50,067 --> 00:26:52,147
+Şöyle yazalım, dn kare bölüydü.
+
+189
+00:26:55,447 --> 00:26:57,567
+R-dn
+
+190
+00:27:01,044 --> 00:27:05,044
+Bir de şuradan artı d geldi değil mi? Artı d bölü 2 geldi.
+
+191
+00:27:07,044 --> 00:27:09,044
+Ben de kafam bundan hesap etmem.
+
+192
+00:27:10,044 --> 00:27:13,044
+d bölü 2, eksi d bölü 2 olmuş.
+
+193
+00:27:16,044 --> 00:27:17,044
+Böyle oldu.
+
+194
+00:27:17,044 --> 00:27:23,044
+Tabii bir polinom olduğu için en yüksekleri de tereba koyduğumuz zaman, bunun sonucu, ya doğrusu olsun çıkar, e eksi olsun çıkar.
+
+195
+00:27:23,044 --> 00:27:26,044
+D'nin işaretinden çıkar, onu biliyoruz.
+
+196
+00:27:26,163 --> 00:27:45,323
+O zaman ıraksak. Demek ki aritmetik seriler her zaman ıraksak çıkıyormuş. O zaman siz bunu esip olmanıza gerek yok. Aritmetik seri ise ıraksak olduğunu ben size peşin söyleyeyim. Ama SM toplamından bularak söyle demiş. SM toplamının limiti sonsuz veya eksonsuz çıkar.
+
+197
+00:27:45,943 --> 00:27:52,663
+Tamam mı? Şöyle. Burada size söyleyeceğim. Eski tekrarlısı yapıyorum, tekrar söylüyorum.
+
+198
+00:27:54,804 --> 00:28:00,924
+Tumavar'ınla ilgili formülleri ben buraya, şimdi olasılır onu anlatmaya çalışacağım. Geometrik seriye de geleceğim.
+
+199
+00:28:04,372 --> 00:28:11,312
+O notlardaki şeyleri anlatıyorum aslında. Burada daha rahat anlayasınız diye sınıftaymıştım. Tahtayı kullanıyorum.
+
+200
+00:28:14,432 --> 00:28:16,552
+Şu formüller 1.
+
+201
+00:28:19,452 --> 00:28:22,312
+K eşittir, birden N'e kadar.
+
+202
+00:28:23,972 --> 00:28:25,392
+C olursa en C idi değil mi?
+
+203
+00:28:27,052 --> 00:28:27,332
+2.
+
+204
+00:28:29,268 --> 00:28:35,148
+K eşittir, birden, bazı arkadaşlar, hocam biliyoruz diyoruz ama bilmeyenler de vardır diye anlatır.
+
+205
+00:28:35,228 --> 00:28:36,768
+En şart ve en anksiz etmiştir.
+
+206
+00:28:38,688 --> 00:28:41,168
+İsevi de anlatır, üniversitede ki bunlar, üç.
+
+207
+00:28:44,088 --> 00:28:45,708
+Riman toplamları İsevi de var.
+
+208
+00:28:47,968 --> 00:28:48,488
+K kare.
+
+209
+00:28:53,619 --> 00:29:02,719
+Benim size tavsiyem, dersleri kaçırmamaya çalışır. Ders, derste öğrenir. O da böyle.
+
+210
+00:29:02,719 --> 00:29:04,219
+Dört.
+
+211
+00:29:14,612 --> 00:29:31,571
+K kutu var, bir de bu çok önemli, 3'e kadar, o da n çarpı n artı 1 bölü 2, şurada mı dikaydı mı bak, üst eti, kalnı, burada K kutu ama karesi oluyor, enteresan.
+
+212
+00:29:33,451 --> 00:29:39,912
+Peki 5, daha sonra göreceğiz, teleskop pikseli.
+
+213
+00:29:49,076 --> 00:29:50,776
+Bu da N bölü NRT1 oluyor.
+
+214
+00:29:52,616 --> 00:29:54,616
+Bunun adı da teleskopik seri.
+
+215
+00:29:59,667 --> 00:30:01,748
+Öyle abi, tamam mı? Türkçe'de çalışıyor.
+
+216
+00:30:07,124 --> 00:30:11,624
+Evet, 5 biten daha formül vereceğim.
+
+217
+00:30:17,491 --> 00:30:22,551
+altı tane formül vereceğim. Bunlar, esen toplamı bulmak için gerekmiyor. Tamam mı?
+
+218
+00:30:32,307 --> 00:30:38,007
+Bir şey söyleyeyim mesela, teleskopik seri bu ya, bak bu SM toplamı biliyorsunuz.
+
+219
+00:30:39,247 --> 00:30:40,028
+Nimitide ne olur?
+
+220
+00:30:43,267 --> 00:30:46,007
+En bölü en artı bir dersek değil mi? Bir çıkar.
+
+221
+00:30:46,167 --> 00:30:49,827
+Demek ki real sayı çıktığı için de nedir? Yakınsak deriz mesela.
+
+222
+00:30:49,947 --> 00:30:51,867
+Teleskopik serinin yakınsak oldu değil mi?
+
+223
+00:30:52,767 --> 00:30:56,548
+En son şunu da söyleyeyim altı tane, üç serileri size tanıtmış olalım.
+
+224
+00:31:09,748 --> 00:31:12,887
+Bir de geometrik seri var, çok kullanılır.
+
+225
+00:31:15,567 --> 00:31:24,107
+Geometrik seri de şu, aritmetik seride farklar eşitli biliyorsunuz, tamam mı? Difference'lar eşitli.
+
+226
+00:31:26,708 --> 00:31:27,887
+Geometrik seride de...
+
+227
+00:31:36,531 --> 00:31:50,011
+Geometrik seride de oranlar eşit. Ne demek istedim? A1, R. Orada İngilizce kelime, bu difference tamam mı?
+
+228
+00:31:53,715 --> 00:31:56,635
+Vardan Türkiye'ye geçmiş, bu ve da rejde.
+
+229
+00:32:02,228 --> 00:32:05,008
+Oran yani, oranlar eşit. Ne demek istiyorum?
+
+230
+00:32:06,088 --> 00:32:07,248
+Bu genel terim değil mi?
+
+231
+00:32:08,728 --> 00:32:10,648
+Böyle yazarsam, geometrik dizi olur.
+
+232
+00:32:14,932 --> 00:32:17,892
+geometrik fisi olur. Bunun için de yazarsam.
+
+233
+00:32:27,028 --> 00:32:43,028
+Yani A1 artı A1R artı A1R kare filan. Bu da geometrik seri oldu. Peki geometrik seri de acaba SM toplam bulabilir mi?
+
+234
+00:32:44,607 --> 00:32:50,228
+Ben şunu göstermek istiyorum. Ben şu formülü verince buradan bunu kullanabiliriz. Nedir o?
+
+235
+00:32:53,460 --> 00:33:03,119
+A1 çarpı, r üzeri k eksi 1, esen eşittir, k eşittir birden, sonsuzan, enen bakalım, enen.
+
+236
+00:33:05,460 --> 00:33:15,359
+A1, 1 eksi r üzeri en, bölü 1 eksi r, okey.
+
+237
+00:33:16,180 --> 00:33:16,619
+Tamam mı?
+
+238
+00:33:17,844 --> 00:33:31,624
+Bunu da yazdık. Tamam mı? Demek ki bu toplam olduğuna göre limiti alabiliriz artık. Limit varsa yakınsak diyeceğiz, yoksa ıraksak diyeceğiz. Peki, devam ediyoruz.
+
+239
+00:33:36,243 --> 00:33:37,283
+Tevam ettersen.
+
+240
+00:33:43,443 --> 00:33:44,663
+Buradan devam ediyoruz.
+
+241
+00:33:46,023 --> 00:33:47,543
+Bunda limitinde bakacağız.
+
+242
+00:33:47,883 --> 00:33:50,423
+Mesela neyin, şu limiti var mı, yok mu bakalım.
+
+243
+00:33:52,423 --> 00:33:53,423
+Mesela limit.
+
+244
+00:33:58,771 --> 00:33:59,611
+ve sayıda.
+
+245
+00:34:04,723 --> 00:34:07,963
+Re üzeri n diyelim, tamam mı? En son sayı derdi.
+
+246
+00:34:10,463 --> 00:34:18,123
+Eğer, bu mutlak derece re küçük birse, sıfır çıkar.
+
+247
+00:34:22,195 --> 00:34:23,295
+Büyük eşit bir ise,
+
+248
+00:34:25,895 --> 00:34:27,456
+Büyük bir ise,
+
+249
+00:34:29,375 --> 00:34:30,175
+Sonsuz çıkar.
+
+250
+00:34:31,835 --> 00:34:36,536
+Eşit bir ise de, bir üzeri sonsuz çıkar ki zaten belirsizdir.
+
+251
+00:34:36,775 --> 00:34:39,052
+Tamam mı? Belirsizdir. Dolayısıyla...
+
+252
+00:34:40,307 --> 00:34:42,188
+Bu limitleri de bilmiş olacağız.
+
+253
+00:34:42,347 --> 00:34:43,947
+Tamam mı? R. Mutlak değer olarak.
+
+254
+00:34:44,068 --> 00:34:44,947
+Birden küçükse 0.
+
+255
+00:34:45,288 --> 00:34:46,768
+Birden büyükse sonsuz.
+
+256
+00:34:47,027 --> 00:34:48,427
+Biri eşitse bir üzeri sonsuz.
+
+257
+00:34:48,527 --> 00:34:51,228
+Zaten onu da belli bir sayı diye almayacağız.
+
+258
+00:34:51,347 --> 00:34:51,987
+Raksaklık.
+
+259
+00:34:52,168 --> 00:34:52,987
+Belişsiz çiftik.
+
+260
+00:34:54,367 --> 00:34:55,568
+Bunu da söyledik.
+
+261
+00:34:57,467 --> 00:34:58,827
+Geometrikselerden de bahsettik.
+
+262
+00:34:58,887 --> 00:35:01,307
+O zaman tekrar notlarımıza devam edebiliriz.
+
+263
+00:35:03,668 --> 00:35:03,907
+Evet.
+
+264
+00:35:04,708 --> 00:35:06,027
+Notlarımıza devam edebilir.
+
+265
+00:35:06,027 --> 00:35:06,867
+Tekrar.
+
+266
+00:35:08,755 --> 00:35:22,695
+Evet, bu notlar biliyorsunuz, şeyde var, AVS sayfamda aynısı var. Ulaşamadığınız durumda söylersiniz, yerlerini değiştirip daha öne getirebilirim onları.
+
+267
+00:35:24,715 --> 00:35:35,335
+Ulaşamıyorsanız, ileriki sayfaları, 7-8 sayfa biliyorsunuz, konu var benim. Evet, buna baktık. Geometrik seriye geldik. Söyledim, değil mi bu?
+
+268
+00:35:36,019 --> 00:36:02,500
+Bu buna eşit, bunu da söyledim. Burada A ve R, A sıfır olmayacak tabii, sabit sayılardır. Okey, geometrisinin ilk terimi A sayısıdır, R sayısına serinin ortak çarpanı, ratio, yani oran. Ortak oran veya ratio. Çünkü evet. Yani bunu buna böldüğümüz zaman R çıkar. Yani bir sonraki, bir öncekine böldüğümüz zaman yani bu sabittir.
+
+269
+00:36:02,996 --> 00:36:12,275
+Yani a n artıdır, bölü a n, r. Aynı şekilde, a buçuk her terim için geçerlidir.
+
+270
+00:36:12,376 --> 00:36:19,016
+A buçuk bölü a i de r. Yani bir öndekine bir sonraki oran r'dir. Geçiyoruz, metrik devam eder.
+
+271
+00:36:20,716 --> 00:36:23,115
+Geometrik serinin yakınsaklığı, yarak saklığı.
+
+272
+00:36:24,403 --> 00:36:31,144
+En eşit de birden sonsuza A çarpı rev, seri, n-1, geometrik serisinin encik ismi toplan, eseni hesaplayalım.
+
+273
+00:36:33,744 --> 00:36:35,623
+Buradan yapmayene gerek var ki.
+
+274
+00:36:38,996 --> 00:36:45,496
+Esen'i normal, Sigma'dan zaten yaparız. Bu da başka bir yöntem, ne yapacağız merak edemez. Tamam mı?
+
+275
+00:36:45,496 --> 00:36:52,496
+Esen'i böyle yazmış, sonra R ile çarpmış. Yani, göstermiş ama böyle gerek yok.
+
+276
+00:36:56,755 --> 00:37:19,076
+Şuradan yapabiliriz. Eser yapayım, k eşittir birden n'e kadar. Bunu yazıyorum. Ayrıca bak şuradan yapıyorum. Sigma ile yapıyorum. Bu başka gelmez. Burada bir özellik olduğunu göstermiş ama bunda da bir yoksa. Öyle yapmıyor.
+
+277
+00:37:22,931 --> 00:37:28,431
+A1 diyoruz, senin adı A değil de, A1, A demiş, A diyeyim.
+
+278
+00:37:38,579 --> 00:37:40,579
+Evet, bu da.
+
+279
+00:37:48,340 --> 00:37:49,600
+A'yı dışarı çıkartalım.
+
+280
+00:37:51,520 --> 00:37:53,560
+A bölü R'yi dışarı çıkartalım.
+
+281
+00:37:57,331 --> 00:38:15,831
+Bu formülü zaten vermiştik, neymiştik? Neydi? A çarpı, 1-R üzeri, formülü verdik zaten. Konuda bu var, 1-R. Tamam, şey yapmaya gerek yok. Direkt yazabilir formülü. Onu verdik. Tamam.
+
+282
+00:38:19,539 --> 00:38:20,859
+Bunun limitini alırken,
+
+283
+00:38:24,659 --> 00:38:26,399
+Eğer sonsuza gidiyorsa,
+
+284
+00:38:34,547 --> 00:38:37,287
+Tamam, şuna bak biraz. Zaten r eşit de 1 için olmaz.
+
+285
+00:38:37,287 --> 00:38:41,407
+Bak, tekrar söylüyorum. Mutlak değer r, 1 için.
+
+286
+00:38:44,467 --> 00:38:45,947
+Burası 0 olur.
+
+287
+00:38:47,287 --> 00:38:49,487
+a bölü 1 eksi r'ye çıkar. Tamam mı?
+
+288
+00:38:51,407 --> 00:38:51,847
+Dimity.
+
+289
+00:38:53,227 --> 00:38:55,847
+a'ya bağlı, r'ye bağlı. O soruya göre değişiyor.
+
+290
+00:38:56,567 --> 00:38:56,827
+Evet.
+
+291
+00:39:02,291 --> 00:39:06,351
+Bunun içinde direk sonsuz, re, eksi sonsuz. Tamam mı? Yani, ıraksak olur.
+
+292
+00:39:07,612 --> 00:39:16,711
+Bu demek ki yakınsaklık koşulu neymiş? Mutlak değer yani re, 1 bölü 2 olacak, re, eksi 1 bölü 2, eksi 1 bölü 2. Yani birden küçük olacak.
+
+293
+00:39:17,612 --> 00:39:20,771
+O zaman bu çıkıyormuş, o zaman yakınsak oluyormuş.
+
+294
+00:39:21,731 --> 00:39:25,811
+Eğer bireyeşit ve birden büyükse ıraksak olur. Bunu anladık.
+
+295
+00:39:26,451 --> 00:39:27,811
+Zaten bir için tanımlı da.
+
+296
+00:39:28,244 --> 00:39:30,244
+Değil ayrıca değil mi? Sıfırları sıfırları.
+
+297
+00:39:34,244 --> 00:39:36,244
+Zaten R'e 1 için tanımsızlardır.
+
+298
+00:39:39,244 --> 00:39:41,244
+Birdenbirli toplama sonsuz çıkıyor.
+
+299
+00:39:41,244 --> 00:39:43,244
+Ya eksi sonsuz çıkar ya at sonsuz.
+
+300
+00:39:43,244 --> 00:39:45,244
+Şuradaki 2 ayetlere göre değişiyor.
+
+301
+00:39:45,244 --> 00:39:46,244
+Bu da tamam.
+
+302
+00:39:48,244 --> 00:39:49,244
+Böyle yapalım.
+
+303
+00:39:50,244 --> 00:39:52,244
+Eğer R'e 1 ise
+
+304
+00:39:55,827 --> 00:39:59,827
+Bir seri diyor, yani bu seri çıkar, bu da sabit seride sonsuzluk.
+
+305
+00:40:02,827 --> 00:40:07,827
+Ve sonra uzatmaya gerek yok, yani ıraksak, böyle bazı şeyleri çökülen, nasıl kim çekmeye gerek yok.
+
+306
+00:40:08,827 --> 00:40:19,827
+Burada ispatını yapmış, en yerine bir koymuş, sabit seri, sabitinde sıfır olmadığı üzere, sonsuza gittiğini biliyorsa, sonsuza ıraksak oluyor.
+
+307
+00:40:22,164 --> 00:40:28,724
+Bunu burada yazmış, ben demin ispatladım zaten. Şu böyle, bu da böyle. Bunları ispatlayıp tamam.
+
+308
+00:40:30,344 --> 00:40:30,684
+Peki.
+
+309
+00:40:32,404 --> 00:40:39,264
+Bu niye sıfırdı? Çünkü mesela 1 bölü 2'nin sonsuzluk kuvvet neydi? Sıfırdı. Bundan dolayı şurası sıfır oldu.
+
+310
+00:40:39,764 --> 00:40:42,043
+Ama 2 bölü 1 olsaydı sonsuzluk çıkardı.
+
+311
+00:40:48,148 --> 00:40:48,507
+Tamam.
+
+312
+00:40:54,804 --> 00:40:57,204
+Peki, d büyük bir ise,
+
+313
+00:41:00,064 --> 00:41:01,384
+bak, şöyle birbirlerine,
+
+314
+00:41:02,543 --> 00:41:04,463
+d eksi, sonsu, çıkarı, eksi, tamam.
+
+315
+00:41:07,243 --> 00:41:13,543
+a büyük sıfır, a negatif, belki de eksi, eksi, eksak oluyor buranın işareti. Sonsuz eksi, sonsu olması çok önemli değil.
+
+316
+00:41:14,904 --> 00:41:17,083
+Ama uygulamada gerekli olan şeydir.
+
+317
+00:41:17,724 --> 00:41:18,963
+İki eşit eksi bir ise,
+
+318
+00:41:21,043 --> 00:41:47,043
+R'nin zaten mevcut değildi. R zaten eksi birden küçük de olmaz. Çünkü, mat birden biliyoruz değil mi? Üstü sayıların tabanı ne oluyordu? Her zaman ne oluyordu değil mi? Büyük sıfır oluyordu. Mevcut değildi yani. Peki. Seri mevcut olmadığı için de seri, yakınsaklı. Peki geçtim.
+
+319
+00:41:49,780 --> 00:41:52,420
+Bütün durumları özetlersek, burada bir özet var.
+
+320
+00:41:53,140 --> 00:41:57,920
+Diyor ki, mutlak değer ve birden küçükse ona yakın sar.
+
+321
+00:41:58,620 --> 00:42:02,720
+Çünkü bireye eşit olamaz zaten, tamam mı? Evet.
+
+322
+00:42:04,420 --> 00:42:07,860
+Buraya almış zaten. Bireye eşit olsa da büyük de olsa, tamam mı?
+
+323
+00:42:08,280 --> 00:42:11,460
+A'nın pozitif, negatif olması çok önemli değil. O bizi iyi atabiliyor.
+
+324
+00:42:12,060 --> 00:42:14,480
+A artı sonsuz çıksın, haya geçiş sonsuz çıksın.
+
+325
+00:42:15,795 --> 00:42:21,795
+Ha, eksi birden küçük olduğu zaman da seri yine bıraksaktır diyoruz, tamam mı?
+
+326
+00:42:23,195 --> 00:42:30,355
+Neden? Çünkü mutlak değer R, eksi olduğu zaman mutlak değer R yine nedir? Birden büyüktür, o bakır.
+
+327
+00:42:30,355 --> 00:42:42,516
+Tamam mı? Yani mutlak değer R'den bahsettiğimiz için, R eksi olmuş olsa dahi, eksi birden küçük olduğundan dolayı mutlak değer mesela, eksi 2.
+
+328
+00:42:43,123 --> 00:42:46,683
+Mutlak değer 2. O zaman birden büyük olduk. Yine sonsuz.
+
+329
+00:42:50,263 --> 00:42:51,183
+Devam edelim.
+
+330
+00:42:55,092 --> 00:43:00,852
+Evet, 1, 1, 1 bölü 2, 1 bölü 4, 1 bölü 8, nokta nokta giden bir seriyi düşünelim.
+
+331
+00:43:03,492 --> 00:43:04,812
+Evet, bakın.
+
+332
+00:43:05,852 --> 00:43:14,992
+Birden sonsuza giderken, 1 bölü 2, üzeri n-1, baktık.
+
+333
+00:43:17,012 --> 00:43:20,112
+Bu bir geometrik seri. Neden? 1 bölü 2, levzeleri n-1.
+
+334
+00:43:21,364 --> 00:43:47,563
+A burada 1'dir, değil mi? Burada 1'dir, gizli yaz gözükmüyor. R'de 1 bölü 2'dir. Mutlak değer R, 1 bölü 2, 1'den küçük olduğu için yakınsaktır. Okey. Toplamı da yerine korsak, A yerine 1 korsak, R yerine 1 bölü 2 korsak, 2 çıkar. Toplamı da bu şekilde buluyoruz. Tamam. SM toplamıdır bu, biliyor musunuz? Şu an, zaten söylemiş. Bu, şurada bulduğumuz şu toplam SM'dir.
+
+335
+00:43:51,155 --> 00:44:09,516
+Onun da limiti, tamam mı? Pardon. S'em değil de limitidir yani. Limit S'emdir. O da sayı çıktığı için yakınsaklık. Demek ki bunun toplamı da 2'dir. Çünkü matematik böyle paradoksu bir şey anlatayım.
+
+336
+00:44:14,099 --> 00:44:24,699
+Üniversite bir deyken böyle bir yerde, yemekler bir yabancıydı böyle, Danimarkalıydı bir yerde, matematikçiydi bir yerde, bir soru sormuştu.
+
+337
+00:44:26,759 --> 00:44:36,119
+Daha biz de bu serilerde şeyleri falan daha henüz görmemiştik. Şunu söyledik böyle, dedi ki, hiç unutmuyorum.
+
+338
+00:44:40,724 --> 00:44:49,464
+Kafedeydik ve şöyle bir şey sordu dedi ki, bir metre boyuttan da küp veriyorum dedi.
+
+339
+00:44:51,964 --> 00:44:57,204
+Bunun üzerine dedi, yarım metre boyutunda üçü koy dedi.
+
+340
+00:44:59,204 --> 00:45:01,884
+Onun üzerine bir bölü üç koy dedi, tamam mı böyle?
+
+341
+00:45:02,984 --> 00:45:04,944
+Sonsuna kadar koy dedi, tamam mı?
+
+342
+00:45:04,944 --> 00:45:06,644
+Küpleri böyle bir bölü üç, bir bölü dört.
+
+343
+00:45:08,371 --> 00:45:11,592
+Ben tabii bir anda onu görüyorum, bir harmanın bir şeyden bahsedeyim.
+
+344
+00:45:11,891 --> 00:45:13,011
+Ben dedim ki şöyle yap.
+
+345
+00:45:18,164 --> 00:45:31,904
+Yine buraya 1 bölü 2, buraya 1 metre yüksekliğinde, buraya 1 bölü 2 metre yüksekliğinde, ama buraya 1 bölü 3 değil. 1 bölü 2'nin karesi, tamam mı? Yani 1 bölü 4. Sonra 1 bölü 2'nin küpü.
+
+346
+00:45:34,064 --> 00:45:42,044
+Koy, şu yükseklikleri tahmini olarak söyleyebilir misin? Bir yaklaşıp sayı salla dedi bana, tamam mı? Yani bu yükseklikler hakkında.
+
+347
+00:45:44,755 --> 00:45:52,335
+Şimdi enteresan bir şey söyleyeyim. Bu şudur bizim kitimiz geometrik serideki. 1 artı 1 bölü 2 artı 1 bölü 2 karese. Tamam mı?
+
+348
+00:45:54,435 --> 00:46:05,895
+1 bölü 2 üzeri n-1 filan neyse bu sonsuza kadar 2. Bunu temin 2 olarak bulduk zaten. Burası 2 metreymiş bak. Tamam mı? Sonsuz tane ama 2 metre. Çok enteresan değil mi?
+
+349
+00:46:12,115 --> 00:46:28,716
+Sıralı gidiyor, 1 bölü 3, 1 bölü 4, 1 bölü 5. Arada ne kadar fark var ki bak, burada bunlar zaten var değil mi, büyük olan sayılar. Bir tek burada 1 bölü 3 yok, değil mi? 1 bölü 5 yok.
+
+350
+00:46:30,556 --> 00:46:36,916
+Yani ikili kuvvetleri olanlar var. Arada büyük bir uçurum. Bu 2 metreyken.
+
+351
+00:46:37,556 --> 00:46:56,615
+Burası da son sünnet. Çocuklar, bir 10 dakika, fazla değil. Çünkü seriler 3-4 sayfa bir şey kaldırır. Derste de biter. Ama 10 dakika sonra görüşelim. Tamam mı? Çok geç kalmayın. Bir su içelim, şey yapalım. Saat tam şeyde, 4'te görüşelim.
+
+352
+00:54:36,755 --> 00:54:37,595
+Evet, devam ediyorum.
+
+353
+00:54:51,476 --> 00:54:58,396
+Pi eksi e, e kare bölü pi, serisinin toplamını konuldu diyor. Bakalım.
+
+354
+00:55:03,443 --> 00:55:10,923
+Tabii burada gördüğümüz gibi bir geometrik serisi konusu. Bunu önce sigma'da yazmamız lazım. Nasıl yazarız?
+
+355
+00:55:13,663 --> 00:55:18,324
+P eksi e. Şimdi bakın.
+
+356
+00:55:21,123 --> 00:55:29,623
+P parantezini alırsam eğer ne olur? Burada bir kalır. Burada e bölü P.
+
+357
+00:55:30,963 --> 00:55:38,684
+Burada e kare bölü pi kare, burada e küp bölü pi küp, tamam mı? Pi parantezine alınacak, böyle bir şey olur.
+
+358
+00:55:39,164 --> 00:55:44,943
+Bakın pi parantezine aldım, çarpınca bunu verdim. Dikkat ederseniz burada bir geometrik seri oluştu.
+
+359
+00:55:45,224 --> 00:55:52,463
+Yani en eşittir birden sonsuza kadar pi çarpı, eksi e bölü pi'nin en eksi birinci kuvveti.
+
+360
+00:55:53,744 --> 00:55:56,084
+Buradan a eşittir pi.
+
+361
+00:55:57,084 --> 00:55:58,184
+R nedir?
+
+362
+00:55:58,559 --> 00:56:00,480
+eksi e bölü pi
+
+363
+00:56:00,480 --> 00:56:02,920
+burada
+
+364
+00:56:07,155 --> 00:56:16,815
+Kuvvet, mutlak değerine baktığımız zaman, e'nin 2,7, bunun 3,14 olduğunu bildiğimiz için mutlak değer olarak birden küçük.
+
+365
+00:56:16,996 --> 00:56:25,056
+Yakınsak, bu da formülü, buyurun, a yerine pi koyun, v yerine e bölü pi koyun, bu nedir?
+
+366
+00:56:25,415 --> 00:56:32,315
+R sayı çıktı, yakınsak. Toplamı da budur. Toplam bu çıktığı için de bu seri yakınsaktır.
+
+367
+00:56:35,539 --> 00:56:45,420
+Kök 2 katı, kök 2 katı, kök 2 katı diye gidiyor. Yani ortak çarpan, kök 2'dir. İlk terim 1'dir. Bunu biz şöyle yazabiliriz.
+
+368
+00:56:47,640 --> 00:56:54,780
+Burada kök 2 birden büyük olduğu için de bunun toplamı sonsuz olur, ıraksak olur, tutartmaya gerek yok. Devam edelim.
+
+369
+00:56:56,380 --> 00:56:58,780
+Bakın, diyor ki bunu...
+
+370
+00:56:59,539 --> 00:57:09,339
+Serileri kullanarak toplamlık oluruz. Aslında biz bunu biliyoruz değil mi? Bunu devirli sayıda da biliyoruz ama öyle değil. Şeyleri olarak diyor.
+
+371
+00:57:16,052 --> 00:57:21,492
+serileri kullanarak, iki tam sayının oranı olarak yazdınız diyor. Yazıyorum.
+
+372
+00:57:21,972 --> 00:57:37,612
+X 0.32, 32, 32 diye gidiyor. Bunu biz şöyle yazabiliriz. 32 bölü 100, şu 32'yi yazmak için de, artı 32 bölü 100'ün karesi, şuradaki 32'yi yazmak için de, 32 bölü,
+
+373
+00:57:39,539 --> 00:58:00,920
+Tamam mı? Ondan sonra 32 bölü, onun üzeri 5, 4 falan diye gidecek. Sonuçta, şunun parantezini alırsam, böyle bir şey çıkar. R buradan 1 bölü 100 çıkar. A1 de belli zaten. Tamam mı? Buradan. Şöyle bir şey çıkar sonuçta. Bu da A1'dir.
+
+374
+00:58:02,260 --> 00:58:18,540
+1 bölü 100 de mutlak değer olarak, mutlak değer olarak 1 de küçük olduğu için yakınsak da, burada A yerine bunu, R yerine 1 bölü 100 yazarsak, demek ki biz bu evveli sayının rasyonel açılışını bulmuş oldukuz.
+
+375
+00:58:22,483 --> 00:58:28,304
+Teleskopik ve harmonik serilere geldik. Anlattım ben bunu da. Şimdi burada anlatmak hızlı gidecek tabii. Devam ediyorum.
+
+376
+00:58:30,423 --> 00:58:42,983
+Teleskopik seri, bir serinin kısmi toplamları, eğer onun terimlerini basit kesirden ayırarak, basit olarak seformeliyeti edilebiliyorsa bu seriye teleskopik, yani şunu demek istiyor.
+
+377
+00:58:45,204 --> 00:58:47,784
+Mesela bunu, şunu demek istiyor.
+
+378
+00:58:48,084 --> 00:58:49,684
+Tıp daha fazla açık yapalım. Bunu.
+
+379
+00:58:50,675 --> 00:58:54,436
+a bölü n artı b bölü n artı bir şeklinde yazabiliyoruz.
+
+380
+00:58:56,076 --> 00:59:01,115
+Basit olarak formüle edebiliriz diyor. Basit geçişleri ayırmıyor. Bunu integralda görmüştüm.
+
+381
+00:59:02,076 --> 00:59:08,856
+Yani n artı bir değil, n artı iki de olabilir. Tamam mı? Yani bu şekilde yazıp paylaştık diyerek şu halde yazma şansımız var.
+
+382
+00:59:09,336 --> 00:59:14,576
+O zaman biz buna ne diyoruz? Teleskopik seri diyoruz.
+
+383
+00:59:16,675 --> 00:59:17,356
+Peki.
+
+384
+00:59:18,643 --> 00:59:25,443
+Teleskopik seri buna diyormuş. Peki. Harmonik seri, onu da söyledik. Bir bölü en serisi dedi.
+
+385
+00:59:27,483 --> 00:59:32,583
+Kısmi toplamları da bulunamıyor biliyorsunuz. Esen toplamında yazılamıyor. Devam edelim.
+
+386
+00:59:37,331 --> 00:59:46,932
+Bu, teleskopik seri. Ben size daha kolay bunun eşitliğini vermem. Demedim ki, eser. Birazdan bir daha tekrarlayayım.
+
+387
+00:59:53,876 --> 00:59:58,876
+Böyle bir şey direkt en doğru en artı bir yazarsın. Tamam mı? Zaten bak en doğru en artı bir çıkacak.
+
+388
+01:00:05,619 --> 01:00:10,940
+Bunun da limiti 1'dir. Biraz limiti 1 olduğu için de yakınsak. Neyse, şöyle yapalım.
+
+389
+01:00:10,940 --> 01:00:14,039
+Bunu ben pratik kurallarını da veriyorum.
+
+390
+01:00:16,339 --> 01:00:20,159
+Bu çünkü böyle yazılabiliyor. Ama bunu direkt yazmış.
+
+391
+01:00:21,960 --> 01:00:25,359
+Ben ispatlıyım tabii böyle müneccidim. Nasıl yapalım? Şöyle yazıyorum.
+
+392
+01:00:27,480 --> 01:00:28,940
+1 bölü, n artı 1.
+
+393
+01:00:31,699 --> 01:00:42,739
+A bölü L, artı B bölü, en artı 1, en artı 1 ile çap, en ile çap, on.
+
+394
+01:00:45,799 --> 01:00:48,500
+A in artı A, artı B,
+
+395
+01:00:57,619 --> 01:01:01,719
+Burada bire eşitler, tamam burada var yani bir, faydaları eşitse bir eşitler.
+
+396
+01:01:06,835 --> 01:01:30,635
+B artı B, N artı A. İki polinom eşitse, A burada 1'dir. Burası da 0 olur, öyle bir de eksi 1'dir. Aynı beynirlerine kursak, tamam 1, 1'e de eksi 1 kursak bunu buluruz. Nereden geldiğini göstermiş olduk. O zaman bu buna eşittir. Sonra bunun toplamını bulmak istiyoruz.
+
+397
+01:01:31,891 --> 01:01:37,371
+Ben bunu söyledim ama diyelim, buna inanmıyoruz. Tamam mı? Onu gösterelim. En yerine bir koyduk.
+
+398
+01:01:38,931 --> 01:01:46,612
+Yani bunu öğrenmenin faydası n artı bir olmayabilir bağlı. n artı iki olur, tamam mı? Başka bir şey olur. O zaman bunu da bilmek gerekir.
+
+399
+01:01:47,572 --> 01:01:55,931
+Bir koyduk, bak. 1-1 bölü 2, 1 bölü 2-1 bölü 3, 1 bölü 3 eksi bir bölü 3, neyse böyle. Şöyle, şöyle, şöyle, şöyle gidiyor.
+
+400
+01:01:56,820 --> 01:02:12,900
+Ne kalıyor? 1 eksi, 1 bölü, n artı, 1 kalıyor. Bunun da limiti nedir? n sonsuza gittiği için 1 bölü sonsuz sıfırdır. Yani 1'e gider. Ama pratik olarak test teklifleri de ben yukarıda verdim. Devam edelim.
+
+401
+01:02:16,307 --> 01:02:16,947
+Bakalım.
+
+402
+01:02:19,407 --> 01:02:23,087
+K'şı da sıfırdan sonsuza 1 bölü k kare artı 3, k artı 2.
+
+403
+01:02:23,627 --> 01:02:31,748
+Sen, k sıfırdan öne kadar, 1 bölü k kare artı 3, bunu da k artı 1, k artı 2 diye çarpanları ayırsak.
+
+404
+01:02:39,251 --> 01:03:00,271
+Buradan, tamam. Şurada ayırdık. Sonuçta, bunu kısaca yazmış. Demek ki A1'miş, B1. Sonra da böyle açmış sıfırdan sonsuza kadar. Gidenler gitmiş kalan boyu da bu kalmış. Onun da limiti 1 çıkmış. Demek ki toplamı 1'miş demiş. Devam ediyoruz.
+
+405
+01:03:02,931 --> 01:03:07,612
+Evet, n'eşit 2'den sonsuza ln, 1 eksi, n kare, o da d'yeşittir bakıyoruz.
+
+406
+01:03:08,731 --> 01:03:11,472
+Sen, d'ye koyalım önce.
+
+407
+01:03:13,391 --> 01:03:19,251
+2 koyduk, 2 eksi, 1 bölü 4, 3 bölü 4, 8 bölü 9, neyse bunu yazdık.
+
+408
+01:03:19,251 --> 01:03:25,652
+Sonra da bunu n kare eksi, 1 bölü n kare yazdık.
+
+409
+01:03:27,072 --> 01:03:28,612
+Sadeleştirdik tamam mı bu şekilde?
+
+410
+01:03:32,692 --> 01:03:35,692
+Bunu payda eşitleriz.
+
+411
+01:03:56,307 --> 01:04:01,307
+Bununla çarpma aracadık. Demek ki şöyle bir sade retleme yaparsak.
+
+412
+01:04:03,307 --> 01:04:11,307
+3, 2, ne kaldı?
+
+413
+01:04:11,307 --> 01:04:12,307
+Sade retme.
+
+414
+01:04:17,012 --> 01:04:17,732
+Bak bakalım.
+
+415
+01:04:20,232 --> 01:04:21,972
+Nasıl gitmiş buna bakalım.
+
+416
+01:04:26,291 --> 01:04:33,051
+1 bölü 2, 3 bölü 2, 2 bölü 3, 4 bölü 3, bu şekilde yapalım. Daha yasak ne olur?
+
+417
+01:04:35,871 --> 01:04:38,831
+2 bölü 3, 3 bölü 4.
+
+418
+01:04:53,556 --> 01:04:56,615
+Bunlar karışık olarak birbiri. Ne kalıyor burada?
+
+419
+01:05:00,115 --> 01:05:10,036
+Şu terem kalıyor, en artı bir kalıyor. Bu elinde gitmesi mümkün değil. Tere kalıyor. O zaman bu kalıyor.
+
+420
+01:05:12,536 --> 01:05:16,755
+Diğerlerini açık olarak yazdığımız zaman hepsini birbirine, her sona terem yazmışlardır.
+
+421
+01:05:16,835 --> 01:05:20,675
+Önce, cekler şu kalık. Bunun da limiti.
+
+422
+01:05:21,056 --> 01:05:28,795
+Sonsuz bölü sonsuz, 1 bölü 2'ye eşit, yani elem 1 bölü 2'ye eşittir. Eğer sayı olduğu için de yakınsaklık. Peki, devam edelim.
+
+423
+01:05:31,215 --> 01:05:41,815
+Serilerle ilgili bazı teoremler, evet, bir serinin toplamı yani yakınsaklık demek. A'ymiş, bu da B'ymiş. Toplamları da nedir? A artı eksi B.
+
+424
+01:05:43,655 --> 01:05:44,576
+Evet, buradan.
+
+425
+01:05:46,612 --> 01:06:01,072
+Diyor ki, ikisi serilerde yakınsaksa, serilerin sonsuz terim toplamları da yakınsak olduğu toplamların toplamını ve farkını eşitir. Ama yakınsak demek olduğuna göre. Bir alfayla çarptığımız zaman da alfa katını eşitir.
+
+426
+01:06:01,072 --> 01:06:07,152
+Bıraksaksa, bu da ıraksaktır, hiç unu anlatmaya gerek yok. Bu seri ıraksak, bu yakınsaksa.
+
+427
+01:06:07,539 --> 01:06:15,519
+Yani biri ıraksak olduğu zaman muhakkak ıraksak olur. İkisi ıraksak da ıraksak olur. Ama ikisi yakınsak olduğu zaman yakınsak oluyor toplarken.
+
+428
+01:06:17,019 --> 01:06:23,759
+Her ikisi ıraksak olsalar dahi, diyor ki, ailemle beğen, her ikisi de ıraksak olsalar dahi, diyor.
+
+429
+01:06:25,880 --> 01:06:34,860
+Bak, bak, biri ıraksak, biri yakınsaksa her zaman ıraksak. Ama ikisi ıraksak olduğu zaman, diyor.
+
+430
+01:06:35,891 --> 01:06:46,511
+Yakınsak da olabiliyormuş enteresan. Bir ıraksak, farklıyken hep ıraksak çıkıyor ama ikisi birden ıraksaksa tesadüfen yakınsak da olabilir.
+
+431
+01:06:49,151 --> 01:06:58,651
+Ona şu örnek bu sorunları vermiş. Biri farklı olduğu zaman kesin ıraksak ama ikisi ıraksak olduğu zaman yakınsak olabilen özel seriler varmış.
+
+432
+01:06:59,572 --> 01:07:23,232
+Bir seriye sonlu sayıda terim eklemek veya silmek serinin karakterini değiştirmez. Evet. Yani çok seri var. 3 tane seriye attık, 5 tane seriyi çıkarttık. Ne oluyor? Karakter değişmiyor. Tamam mı? Peki. Devam ediyoruz. Serisi yakınsak ise bu. Evet.
+
+433
+01:07:24,083 --> 01:07:29,643
+Eklemek ve çıkartmakla değişmiyormuş. Tamam mı? Onun için gerektiği zamanı atarız, gerektiği zamanı da eklediriz.
+
+434
+01:07:29,723 --> 01:07:30,623
+Emri terim testi.
+
+435
+01:07:32,823 --> 01:07:33,583
+Baktık.
+
+436
+01:07:35,443 --> 01:07:36,843
+Emri terim testi şu.
+
+437
+01:07:38,363 --> 01:07:47,343
+Eğer bir serinin genel terimi sıfırdan farklı, bak sıfır çıktığı zaman, yakınsak da olabilir, yıraksak da olabilir.
+
+438
+01:07:47,503 --> 01:07:48,963
+Eseninden bahsetmiyorum dikaya.
+
+439
+01:07:49,603 --> 01:07:51,163
+Şunun limitinden bahsediyorum.
+
+440
+01:07:52,115 --> 01:07:55,916
+Ama sıfırdan farklı çıktığı zaman kesinlikle olarak sark.
+
+441
+01:07:56,556 --> 01:07:58,336
+Ayen, limiti.
+
+442
+01:07:58,896 --> 01:08:01,675
+Bu yeni bir terim testidir, önemli bir testidir.
+
+443
+01:08:01,836 --> 01:08:02,635
+Çok şeyin diyerek.
+
+444
+01:08:04,436 --> 01:08:05,416
+S'n ile bahsetmiyorum.
+
+445
+01:08:05,496 --> 01:08:07,716
+S'n olsa sıfır olduğumu her zaman yakın sarktı.
+
+446
+01:08:07,816 --> 01:08:08,336
+Devamlıyorum.
+
+447
+01:08:09,096 --> 01:08:10,236
+Buna baktık.
+
+448
+01:08:10,376 --> 01:08:14,936
+N sıfırdan sonsuza S üzeri N eksi iki üzeri de N bölü altı üzeri N.
+
+449
+01:08:16,655 --> 01:08:17,916
+Bunu da böyle böldük.
+
+450
+01:08:19,060 --> 01:08:38,140
+O zaman ikisini ayrı ayrı toplamlarını bulacağız. Bakın, R 1 bölü 2, birden küçük olduğu için yakınsak olacak, toplam formülü de yerine koyduk. Bu da 1 bölü 1'den küçüktü, o da yakınsak. O formülü de yerine koyduk, 1'i 2 çıktı, 1'i 3 bölü 2 çıktı, toplamda 4, 7 bölü 2 çıkar. Devam ediyoruz.
+
+451
+01:08:40,627 --> 01:08:45,247
+İki tane seri var, topluyoruz. 1 bölü 3'ü dereyen, artık 2 çarp bunu yaptık.
+
+452
+01:08:45,627 --> 01:08:48,427
+Şimdi aynı şekilde bunu ayrı hesaplıyoruz, bunu ayrı hesaplıyoruz.
+
+453
+01:08:49,688 --> 01:08:56,087
+1 bölü 3, o formülü de yerine koyuyoruz. R'si 1 bölü 3, birden küçük oldu. O zaman yakınsak oldu.
+
+454
+01:09:00,435 --> 01:09:17,375
+Bu da böyle oldu. Tamam mı? Bir alıyoruz. O formü de yerine koyuyoruz. Buranınki 1 bölü 2 çıkıyor, buranınki 4 çıkıyor. Toplamda 9 bölü 2 çıkıyor. Yakınsak mıdır diyor. Bakalım.
+
+455
+01:09:21,300 --> 01:09:46,539
+Şunun limitini alalım. 1 bölü 2, 0'dan farklı çıktı. Okey. Kesinlikle ıraksak diyoruz. Bu 0 çıksaydı şüpheliydi ama. Yakınsak da olabilir, ıraksak da olur. Ama 0'dan farklı çıktığı zaman illa ki ıraksak diyoruz. Bu da güzel bir şey. Serisi ıraksaktır çünkü diyor. Neden? Limiti mevcut değil. Evet. Çünkü bunun limiti nedir? 1 dolar. 1-1 dolar. En tekli çiftçiye göre değişir. O zaman.
+
+456
+01:09:47,123 --> 01:10:13,263
+Limit olmadığına göre her zaman, bıraksaktır. Ama bunun limiti, sıfır çıksaydı, yakınsak mıydı bilemiyoruz. Bak bu, a, n, sen değil. Onu da söyleyeyim. Peki, yeni konuya geçmeyeceğim bugün. Evet, dersi burada bitiriyorum. Evet, bu şeyimiz bitti. Evet arkadaşlar, haftaya, hey günü görüşüyoruz. Pazartesi sabah görüşürüz.
+
+457
+01:10:14,612 --> 01:10:15,771
+Hoşçakalın arkadaşlar.

@@ -1,0 +1,3639 @@
+1
+00:01:05,171 --> 00:01:06,411
+Günaydın arkadaşlar.
+
+2
+00:01:08,932 --> 00:01:09,991
+Bir iki dakika bekliyorum.
+
+3
+00:01:31,188 --> 00:01:36,748
+Günaydın arkadaşlar. Biraz mevcut artmasını bekliyorum. Birkaç dakika bekleyelim.
+
+4
+00:03:48,403 --> 00:04:15,123
+Evet, başlayalım. Bugün önce şu biraz test uygulama yapmadık. Biliyorsunuz diziler ve serileri bitirdik. Bunu bitirdikten sonra parametrik ve kutupsal denklemlere başlayacağım. Uygulama yapalım biraz. İsterseniz elinde de kağıt varsa şu sorunun, şu kısmını yazın. Tamam mı? Bu zaten videoda olduğu için ve bunu şeye koydum. Avesis'te var yani. Tamam mı bunlar?
+
+5
+00:04:16,148 --> 00:04:43,427
+Onun için sorun yok. Ben çözmeye başlıyorum. Şimdi çözümünü de açacağım. Bunun dizisiyle ilgili aşağıdakiler hangisi doğrudur? Önce bunun dizinin karakteri inceleniyor. Yakınsak, uyraksak yapacağım şey tek şu. Limit, bir dakika, biraz kalınlaştırayım kalemi. Limit.
+
+6
+00:04:44,531 --> 00:04:52,891
+Öbür tahtı da yapabilirim bunu tamam mı? Limit. En sonuçta giderken buna bakacağım.
+
+7
+00:04:57,300 --> 00:04:58,560
+Tamam mı? Buna bakacağım.
+
+8
+00:05:01,319 --> 00:05:10,139
+Bu limit varsa, tabii L gibi sayıya eşitse, yakınsak oluyor.
+
+9
+00:05:12,280 --> 00:05:15,680
+Tabii yakınsak oluyor ama L'nin değeri de önemli tabii.
+
+10
+00:05:16,040 --> 00:05:20,899
+Mesela demek ki E çıktı, diyelim onun değeri değil mi? O zaman A şıkkı doğru.
+
+11
+00:05:21,139 --> 00:05:22,920
+Sıfır çıktı, B şıkkı doğru.
+
+12
+00:05:24,019 --> 00:05:46,279
+Sonsuz çıktı, c şıkkı doğru. Bazen limit olmayabilir, tamam mı? Limit olmayabilir, sonsuz da çıkmaz ama mesela iki farklı değer çıkabilir. O zaman mevcut değildir dirilir olarak saklık olur. Veya bunun limiti bir böleyedir, yakınsak. Şimdi öbür tahtaya geçiyorum. Çözümüne geçiyorum arkadaşlar.
+
+13
+00:05:51,252 --> 00:05:52,872
+Hocam şöyle mi yapacağız?
+
+14
+00:05:54,432 --> 00:05:55,271
+Çözüme geçiyorum.
+
+15
+00:05:57,932 --> 00:05:58,651
+Şuradan.
+
+16
+00:05:59,972 --> 00:06:01,492
+Ekran gözükmüyor hocam.
+
+17
+00:06:01,732 --> 00:06:02,192
+Tamam tamam.
+
+18
+00:06:04,012 --> 00:06:07,052
+Tamam mı? Çözümüne geçiyorum. Soruyu gördük.
+
+19
+00:06:07,831 --> 00:06:10,312
+Soru bu. Şıklar var. Yani şıklar şu.
+
+20
+00:06:10,612 --> 00:06:12,852
+Şimdi bir süren katı da gösteremiyorum.
+
+21
+00:06:14,012 --> 00:06:15,172
+Bakacağım. Limit alacağım.
+
+22
+00:06:15,860 --> 00:06:43,259
+Mesela limiti sıfır çıktı. Diyeceğim ki sıfır yakınsak, bir çıktı, bir yakınsak, sonsuz çıktı, ıraksak veya limiti yok. Tamam limiti yok da olabilir. Tamam benim bir limit de, sonsuz çıkması gerekmem. Limit de yolunuyor. O zaman da ıraksaktır. Diyoruz. Olay bu. O zaman limitine bakalım. Çözüyorum. Evet, bu sınava doğru. Tamam mı? Bu uygulamadan sonra biraz seriler hakkında uygulama yapmam. Tamam mı? Yani diziler ve seriler hakkında.
+
+23
+00:06:43,668 --> 00:06:57,708
+Bugün bununla uğraşacağım. Yarın, bakalım bugün uygulama soruları bitene kadar yapacağım. Sonra artık bu hem normal, klasik uygulama yaptım hem şey yapıyorum, test uygulama yapıyorum.
+
+24
+00:06:57,968 --> 00:07:07,208
+Yani bol uygulama, bol, bol uygulama var. Çözelim, limit alıyorum. En sonsuza giderken limit alıyorum. Tamam mı? Bakın.
+
+25
+00:07:12,819 --> 00:07:19,819
+Şimdi şu kesri ters çeviriyorum. Şuradaki olayı söylemek istiyorum. Tamam mı? Şurada demek istiyorum.
+
+26
+00:07:21,819 --> 00:07:28,819
+Bunu ters çeviriyorum. Ters çevirirken ne olur? Şuradaki top böyle yaparken bir ufak ayrıntılarla dikay edilmemiş. Ben şunu söylemek istiyorum.
+
+27
+00:07:30,819 --> 00:07:37,819
+Bunu en bölü, en artı bir yaptığı inceleyi söyleyeyim ben. Tamam mı? Bak. En bölü...
+
+28
+00:07:38,740 --> 00:07:49,840
+N artı 1'i, şunu yazmak istiyorum tabii, bunu çözüm hazırlarken öğrenci bunu düşünsün diyor ama düşünmez, dönemeyebilir. N artı 1'i yazıyorum, ters yazıyorum.
+
+29
+00:07:52,320 --> 00:07:59,899
+Pardon, N artı 1 böyle, N yazıyorum. Lütfen aşama aşama siz de anlamadığınızı söyleyin, tamam mı? Güzel de çözelim, acelemiz yok.
+
+30
+00:08:02,080 --> 00:08:02,580
+N diyorum.
+
+31
+00:08:05,908 --> 00:08:24,847
+Bu, eksi bir oluyor. Yani şöyle oluyor. Burada incelik var. Olur ya. Dahalısı görür. Dahalı arkadaşlar görmeyebilir. Böyle yapın. Anlatamıyorum bunu ben. Bak. Burada göstereyim. Bu videoda kaldığı için bir artı bir bölü.
+
+32
+00:08:28,851 --> 00:08:55,672
+Tamam mı? Bakın. Eksi n kare artı bir oluyor. O da şöyle oluyor. Tamam mı? Bakın. Şu aşamaya nasıl geçtiğimizi göstermekiz. Tamam mı? Anladınız mı burayı? Anlamayan anlamadım desin. Yani şu aşamalar ifade edilmek zorunda. n artı bir bölü n yapıyor. Tamam mı? Buradan buraya nasıl geçilmiş?
+
+33
+00:08:56,179 --> 00:09:19,879
+Bazısı şöyle düşünüyor, dikkatli bakmayınca, ya nasıl oluyor bir bölü olmuş? Bak kesil değişmiş, tamam mı? N artı bir bölü, N olmuş. Üzerine eksi bir geldiği için paydaya geçmiş. Sonra ne yapılmışız? Bak dikkat edin. Bakın, sonra yapmanın işlemi söyleyeyim. N parantezini almışız. N artı bir bölü, N çıkmış burada, tamam mı?
+
+34
+00:09:27,347 --> 00:09:28,587
+Bu çıkmış yani.
+
+35
+00:09:30,207 --> 00:09:32,288
+En parantezini alınca, bu çıkmış.
+
+36
+00:09:32,288 --> 00:09:32,687
+Tamam mı?
+
+37
+00:09:34,687 --> 00:09:35,508
+Evet.
+
+38
+00:09:36,827 --> 00:09:37,647
+Yani.
+
+39
+00:09:41,908 --> 00:09:45,067
+Şöyle söyleyeyim, en ile çarpıp, en ile bölmüş gibi oluyoruz.
+
+40
+00:09:47,648 --> 00:09:49,768
+Böyle de yapabilirdik, şöyle de yapalım.
+
+41
+00:09:59,155 --> 00:10:06,155
+Şöyle yapıyorum. Ben buraya, eline çarpıp, eline bölüyorum. Şöyle yapıyorum arkadaşlar.
+
+42
+00:10:09,716 --> 00:10:21,536
+Ve bu n'i, eğer mat biriniz kuvvetliyse, e sayısının tanımı diye bir şey vardır. Bak şöyle gösteriyorum, tek tek. Tamam mı? Gördünüz değil mi? Burada daha güzel.
+
+43
+00:10:22,475 --> 00:10:35,995
+n burada, n kare artı bir bölü n burada. Tamam mı? Yani şunu bir alıyorum, renkli kalem kullanayım da. Anlamayasın söylesin. Tamam mı? Şurasını ayrı alıyorum çocuklar.
+
+44
+00:10:37,107 --> 00:10:48,467
+Şu n'i burada kullanıyorum bak. Şu n kare artı bir bölende burada. Bu ne oluyor? Artık bunun e sayısının olduğunu bilmemiz lazım.
+
+45
+00:10:48,627 --> 00:10:52,607
+E sayısının tanımıdır. Logaritmada bunu matematik 1'de gördük.
+
+46
+00:10:56,052 --> 00:11:02,912
+Yine sorunu olan varsa yazsın, anlamadığını ben söyleyeyim, tamam mı? Çok net olarak bak, dikkatlice anlatıyorum.
+
+47
+00:11:04,751 --> 00:11:07,432
+Burası E oldu, burası ne oldu?
+
+48
+00:11:09,132 --> 00:11:14,491
+Burada ayrı bir, limitli bir kural var biliyorsunuz. Limiti alıp herhangi bir fonksiyonu başına götürebiliyoruz.
+
+49
+00:11:14,491 --> 00:11:20,112
+O zaman burasını yaptığımız zaman şurası, bak şurası limit.
+
+50
+00:11:22,419 --> 00:11:43,599
+En sonsuza giderken, en kare bölü, en arka birden sonsuz olur. Neden sonsuz olur? Çünkü yukarının en kuvveti fazla, sonsuz çıkar. Tamam mı? O zaman, e çarpı, e çarpı, e üzeri sonsuz olur.
+
+51
+00:11:46,292 --> 00:11:54,292
+Onu da söylüyorum. Bütün detayları söylüyorum bakın. Herki unutan en zayıf öğrenciye göre anlatıyor. E üzeri sonsuz, sonsuzdur.
+
+52
+00:11:56,852 --> 00:12:10,432
+Bir bölü E üzeri sonsuz olsaydı mesela, basit kesir olduğu için sıfırdır. Bak bunları unutmuyorum. E sayısı birden büyük olduğu için, birden büyük olduğu için sonsuz oluyor. Olmaz.
+
+53
+00:12:21,235 --> 00:12:22,028
+Evet.
+
+54
+00:12:26,131 --> 00:12:28,631
+Devam ediyoruz. Peki. İyi.
+
+55
+00:12:31,391 --> 00:12:33,011
+Evseli sonsuz, sonsuz. Peki.
+
+56
+00:12:34,391 --> 00:12:41,891
+Bir bölü sonsuz nedir? Bak, bütün detayları yazıyorum. Bak, zayıfım diyen bunların not etsin arkadaşlar. Bak, en basit sıfır temele göre anlatıyorum.
+
+57
+00:12:42,571 --> 00:12:48,811
+Sıfır. Bunun sonucu bir real sayı çıktığı için sıfır olması şart değil. Sakın sıfır sizi yanıtmasın.
+
+58
+00:12:49,556 --> 00:12:56,976
+5 de çıkabilir. Bunun limiti olduğu sürece genel terimiz nedir bu? Yakınsaktır.
+
+59
+00:12:58,156 --> 00:13:07,395
+Limit olmasaydı, yani ya limit olmaması ne demek biliyor musunuz? Eksi 1 üzeri n, bunun limiti nedir biliyor musunuz? Söyleyeyim, eksi 1 üzeri n.
+
+60
+00:13:08,456 --> 00:13:14,155
+n sayısının tek ve çift olduğuna göre 1 de olabilir, eksi 1 de olabilir. Bilemediğimiz için limit yok deriz böyle.
+
+61
+00:13:16,563 --> 00:13:22,504
+Bazen de sonsuz çıktığı için limit yok deriz. Bunlara dikkat edelim. İşte her şeyi anlatmak.
+
+62
+00:13:22,504 --> 00:13:32,163
+Peki bunu siliyorum. Zaten bu şeyde var. Zaman şeyde olduğu için videoda silinmiyor tabii.
+
+63
+00:13:32,283 --> 00:13:38,063
+Rast istediğim zaman. Tamam mı söylüyoruz? Daha önce de bunlar var. Evet, öylece.
+
+64
+00:13:39,703 --> 00:13:42,443
+Birinci sorunun cevabı neymiş? Sıfır.
+
+65
+00:13:43,572 --> 00:14:09,611
+Arkadaşlar, bir soru sayfasına gideceğim. Şunu söyleyeyim. Aveslise girerseniz, servet hesabetsi yazdım. Dün koydum. Aynı sorular var. Bir sayfa sorular var, bir sayfada cevaplar var. Hem seriler hem de, hem seriler hem de diziler arkadaşlar. Tüyük kolaylık. Ben konu anlatırken anlamadım. Önemli bir sorulara bakın. Şu soru, zor bir soru.
+
+66
+00:14:09,971 --> 00:14:14,792
+Yani sınavda çıkacak cevap bu. Şimdi tekrar şeye geçiyorum arkadaşlar.
+
+67
+00:14:18,323 --> 00:14:30,903
+Tekrar, soru kısma geçiyorum. Soru buydu. Demek ki bunun cevabı neymiş? Çözdük. Sıfırdır yakınsaktır değil mi?
+
+68
+00:14:31,283 --> 00:14:34,803
+Hocam, o bir önceki sorunun cevabı neydi?
+
+69
+00:14:35,543 --> 00:14:38,923
+İşte bunu söyleyelim cevabını. Limit'i sıfırdır yakınsaktır.
+
+70
+00:14:38,923 --> 00:14:45,163
+Hayır hocam. Çünkü an'in limiti sıfıra eşit değilse.
+
+71
+00:14:46,035 --> 00:14:51,555
+Sıra eşit değilse, dizi, ıraksak oluyordu. Biz bulduğumuzda ne oldu, cevap ne oldu?
+
+72
+00:14:56,115 --> 00:15:05,956
+Öyle miydi? Ben mi şaşırdım? Ben sabah sabahlarımı şaşırdım. Olabilir bakalım. Limit varsa diye hatırlıyorum, sıfırsa olabilir.
+
+73
+00:15:05,956 --> 00:15:10,135
+Hayır hocam, limit A'nin limiti sıfıra eşit değilse.
+
+74
+00:15:10,135 --> 00:15:21,436
+Bir dakika, bir dakika. Özür dilerim. Bakalım. Bir saniye, pardon. Ben o şeyi bir şeyle karıştırdım. Bir dakika, bakalım.
+
+75
+00:15:22,388 --> 00:15:35,567
+Çok pardon, olabilir bir anda bende. Cevap B. Tamam, belli doğru ya. Dizi sıfırsa yakınsaktır. Değil mi? Dizi sıfır, dizi yakınsak evet.
+
+76
+00:15:35,567 --> 00:15:36,847
+Hocam.
+
+77
+00:15:39,379 --> 00:16:00,139
+Hocam, şimdi siz bu işlemi yaptınız değil mi? Bu işlem sonuca sıfır çıktı. Bu nedir? Genel terimin limiti. Biz dememiş miydi genel terimin sonsuzdaki limiti? Sıfıra eşit değilse, sıfıra eşit değilse ıraksak oluyordu. Öyle değil miydi?
+
+78
+00:16:06,196 --> 00:16:12,196
+Şimdi genel terimin limiti sıfıra eşit değilse...
+
+79
+00:16:13,396 --> 00:16:22,916
+Bir saniye. Bir dakika. Buradan geçelim. Bir dakika. Bakın kafası. Şu anda. Bir dakika. Bir saniye. Tamam. Bu limit tamam. Bu sıfır, yakınsak değil mi?
+
+80
+00:16:24,876 --> 00:16:29,216
+Tamam mı? Orada bir limit sıfır çıktı, yakınsak. Bu soru tamam değil mi?
+
+81
+00:16:33,460 --> 00:16:41,540
+Limiti varsa yakınsaklıkta, bir dakika ben, bir saniye, bir dakika, bir dakika.
+
+82
+00:16:43,080 --> 00:16:44,400
+Tamam, o şeye geçelim.
+
+83
+00:16:46,400 --> 00:16:47,360
+Bir saniye.
+
+84
+00:16:49,860 --> 00:16:51,200
+Bir dakika, bir dakika.
+
+85
+00:17:04,819 --> 00:17:17,079
+Şimdi serilerde şöyle bir olay var. Serilerde bir dizinin limiti, genel terimin limiti sıfırsa o serilerle dizileri karıştırmayalım da bir şeye bakacağım.
+
+86
+00:17:17,079 --> 00:17:23,480
+Burada bir sayfaya bakacağım. Bir dakikanızı alacak. Bir dakika.
+
+87
+00:17:37,299 --> 00:17:38,420
+Yani konu başına.
+
+88
+00:18:28,852 --> 00:18:43,052
+Hayır hayır, onu ben ne zaman söyleyeyim diye sıfır falan demedim de ben düzelteyim. Ben de dedim Allah Allah, ben yanlış mı söyleyeyim diye ben doğru, tamam. Tekrar geçiyorum buraya, öyle bir şey demedim ben. Limit varsa, tamam onu toparlayayım.
+
+89
+00:18:44,092 --> 00:18:46,231
+Hocam, eninci terim testini.
+
+90
+00:18:56,655 --> 00:19:03,495
+Şimdi ben şunu söylemek istiyorum. Ben dizileri anlatırken, çok pardon, siz de ekranı paylaşayım ben.
+
+91
+00:19:04,468 --> 00:19:11,528
+Benim de kafamı kalktı. Şimdi bir dizinin limiti sıfırsa demedim ben, nerede anlattım? Notlarıma gittim, anlattım işte.
+
+92
+00:19:11,768 --> 00:19:16,708
+Hayır hocam, öyle değil. Ben de onu demedim zaten. En inci terim testi diye bir şey var. En inci terim testi.
+
+93
+00:19:16,708 --> 00:19:25,968
+En inci terim serilerde, serilerde. Kafamı Allah kulak et. Serilerle karıştırma. En inci terim testi serilerle. Bu dizileri anlatıyorum.
+
+94
+00:19:26,488 --> 00:19:31,847
+Yani sen serilerle karıştırdın. Senin de kafanı düzelteyim. Sen benim kafamı karıştırdın, ben senin kafanı düzelteyim.
+
+95
+00:19:32,468 --> 00:19:57,807
+Serileri anlatmıyorum. Dedim acaba, Allah Allah, bir anda sıfırda, bir anda ben de şey yaptım, bir dalgımı yapıyorum. O dizinin, seriyle diziyi karıştırmayalım ama ilk terste anlattım. Dedim ki, ben şimdi seni şey yapayım, sen orada kafan karışmış, onu düzeltmek istiyorsun. Daha iyi sordun. Seri başka, seri bunların toplamı demek. Tamam mı? İki sonu var. Elemanları böyle dizersin, bu dizi olur. Tamam mı?
+
+96
+00:19:57,807 --> 00:19:59,968
+Evet hocam, anladım.
+
+97
+00:20:00,051 --> 00:20:26,431
+Tamam, sen bunu karıştırmışsın, ben de kafamı karıştırdım. Çünkü Allah Allah, ben bu notunu anlatıyorum, düşünmeden çünkü artık şartlanmışım. Burada seri bu değil, bu dizi. Seri böyle yazılıyor ve toplam gösteriyor. Toplam gösteriyor. Ben bu serileri anlatmıyorum. Bu seri toplamı yani, tamam mı? Sigma ile gösteriyor, toplam olarak gösteriyor.
+
+98
+00:20:26,867 --> 00:20:32,407
+Bunun genel teriminin limiti sıfırsa yine yakınsak olmuyor ki.
+
+99
+00:20:33,367 --> 00:20:35,947
+Evet, sıfıra eşit değilse ıraksak oluyor.
+
+100
+00:20:36,007 --> 00:20:36,807
+Tamam, o başka.
+
+101
+00:20:37,288 --> 00:20:41,587
+Tamam, sen kafan karıştı, ben de bir anda kafamı karıştırdım.
+
+102
+00:20:42,007 --> 00:20:43,467
+Tamam, biz dizileri anlatıyoruz.
+
+103
+00:20:43,607 --> 00:20:44,967
+Tamam, sen orada konuya...
+
+104
+00:20:44,967 --> 00:20:45,847
+Tamam, hakim değil misin?
+
+105
+00:20:46,688 --> 00:20:48,627
+Seninle diziyi karıştırmışsın diyorum.
+
+106
+00:20:48,768 --> 00:20:49,567
+Nereden çıktı bu?
+
+107
+00:20:49,648 --> 00:20:50,827
+Ben mi yanlış yapıyorum?
+
+108
+00:20:50,827 --> 00:20:51,827
+Çünkü ben her zaman...
+
+109
+00:20:52,147 --> 00:21:00,447
+Şey yaparım, tamam mı? Yanlış, hoca da olabilir, dalgınlıkla, yanlış anlatabilirim. Ben notlarıma gittim, geldim tekrar, tamam mı?
+
+110
+00:21:01,207 --> 00:21:19,187
+Bu dizi anlatıyorum. Dizide bir kural var. Nedir kural? Dizinin genel teriminin limiti, dizi, dizi diyorum bak, onun dizi. Belki de çok kimseyi uyardın, çok kimse sınavda uzun daha düşecekti. Aferin aslında, iyilik yaptım, herkese. Tamam, güzel.
+
+111
+00:21:20,339 --> 00:21:45,639
+Şimdi bunun limiti varsa, sıfır olur, bu olur. Ama burada sıfır çıktı. E de çıksa yakınsaklık, bir bölü E de çıksa yakınsaklık. Bu dizide böyle. Yani dizinin genel terimi, dizi çünkü elemanları tek tek sıralıyoruz, tamam mı? Bir kuralı var. Ama bunu şöyle yazsaydım, şöyle deseydim.
+
+112
+00:21:46,420 --> 00:22:08,660
+Bak, böyle diyorsaydı, bu seri olurdu. Bu seri olduğu zaman genel terimin limiti sıfır çıktığı için endüterim testi cevap vermezdi. Anladın mı dediğimi? Ama bu seri değil yani dizi. Dizide bir kural var. Dizi çok kolay. Dizinin zorunu nedir? Limit biliyormuş. Limit biliyorsan o puanı kaptın.
+
+113
+00:22:09,523 --> 00:22:14,823
+Bak, buradaki limit sorusu zordu. Neden? El sayısını tanımıştan geldin. Sen çalışacaksın.
+
+114
+00:22:18,123 --> 00:22:28,523
+Baktık. Şimdi tekrar bakıyorum. Bunun limitini bulduk. Sıfır. Yakınsaklık. Okey. Geçtik. O kadar bir şey. Peki, bunu yapsaydık sonuç bak.
+
+115
+00:22:29,243 --> 00:22:32,783
+Bak, incelemiş dikkat edersen bak, üç çık zaten birbirine aynı. Değil mi?
+
+116
+00:22:34,324 --> 00:22:44,724
+Anlatabiliyor muyum? Yani burada sıfır çıktığı için B'yi işaretli. E çıksaydı, A'yı işaretli. 1 bölü E çıksaydı, E'yi işaretli. Ama soru süper güzel bir soru. Devam ediyoruz.
+
+117
+00:22:45,864 --> 00:22:48,903
+Şimdi soruyu yazalım sonra çözüme geçelim. Tamam mı?
+
+118
+00:22:50,164 --> 00:23:01,824
+Soru şu. 1 bölü 9, 2 bölü 12. Bunu burada da hemen çile yapmanı hatırını yazmadan yapabiliriz. Bak. Böyle bir genel termineli.
+
+119
+00:23:02,548 --> 00:23:15,908
+Şimdi şeyi anladın değil mi? Diziyle seriyi karıştırmayacaksın. Burada sıfır olmasına gerek yok. Bunun genel terimi, limiti varsa 3, 5, 4, yakınsaklık. Değilse ıraksaktır. Diziler kolay.
+
+120
+00:23:16,488 --> 00:23:27,228
+Dizinin zorluğu nedir? Limit bilgin zayıfsa sorun çıkıyor. Yani mat bilgin zayıfsa sorun çıkıyor. Ama seriler öyle değil.
+
+121
+00:23:27,667 --> 00:23:55,067
+Seriler uzun. Peki, şimdi 1, 2, 4 diye gitmiş. Bu nedir? 2 üzeri 0 değil mi? 2 üzeri 1, 2 üzeri 2, 2 üzeri 3, 2 üzeri 4. Bu da kaçar kaçar artmış? 3, 3, 3 artmış. 3, 3, 3 artmış. Bir defa 3'en var. Burası 9 olduğu için de, en yerine 1 koyduğum zaman 9 çıkması için de.
+
+122
+00:23:56,500 --> 00:24:00,879
+3'en artı 6 diyeceğim o zaman buraya değil mi?
+
+123
+00:24:02,879 --> 00:24:04,619
+Yani burası da
+
+124
+00:24:04,619 --> 00:24:06,680
+n yerine
+
+125
+00:24:06,680 --> 00:24:08,700
+bu da şey olacak, yani genel terimin
+
+126
+00:24:08,700 --> 00:24:09,799
+2 üzeri n-0
+
+127
+00:24:09,799 --> 00:24:13,599
+böyle 3'en artı 6
+
+128
+00:24:13,599 --> 00:24:16,920
+bu çıktı.
+
+129
+00:24:19,039 --> 00:24:21,000
+Bakalım. Anladık mı?
+
+130
+00:24:21,000 --> 00:24:22,119
+3'e 3.
+
+131
+00:24:23,092 --> 00:24:26,951
+3'ün katı gittiği için, 3'en, 5'in katı birseydi, 5, 5, 5, 5'endi.
+
+132
+00:24:27,352 --> 00:24:31,212
+En diğerine 1 verince de 9 çıksın. Tamam. Bakalım şimdi cevaba.
+
+133
+00:24:32,812 --> 00:24:33,972
+Çözüme bakmaya gerek yok.
+
+134
+00:24:36,352 --> 00:24:37,972
+2 bölü 3'en artı 6 bakalım.
+
+135
+00:24:40,512 --> 00:24:43,672
+3'en artı 6, 2, kuşa uşa, düzelen eksilir.
+
+136
+00:24:45,672 --> 00:24:48,392
+Burada bir sorunuz var mı? Değil mi?
+
+137
+00:24:50,771 --> 00:24:56,231
+Evet, 3 en artı. Yani bu aynı şeyler. Tamam mı? 2 üzeri en eksi 1 olacak yani.
+
+138
+00:24:59,531 --> 00:25:07,291
+Evet, B şıkkı dedik. Yine diğer şeye gidelim. Emin olalım. Tamam mı? Çözüme gidelim. B şıkkı dedik. Buna tekrar çözümüne gidelim.
+
+139
+00:25:09,331 --> 00:25:16,791
+B şıkkı. Değil mi? 2 üzeri en eksi 1. Burada sorunuz var mısınız? Katılın arkadaşlar. Katılmaz. İyi oluyor. Bakın. Yanlış bir şey de olmuş olsa.
+
+140
+00:25:17,875 --> 00:25:25,115
+Çoğu kimsenin kafasını karıştırır. Ben onu en başta ilk ders söylüyorum ama yine karışmıyor. Seri ile diziyi karıştırmayın diyorum.
+
+141
+00:25:26,615 --> 00:25:33,715
+Dizide olan kurallar başka, seride başka. Seri aynı şeyin toplamı. Dizi tek tek yazılmış.
+
+142
+00:25:34,275 --> 00:25:40,115
+Bak mesela, kime içinde yazarsa dizi, tamam mı? Peki, devam ediyoruz. İyi, kalabalık gidiyorsun.
+
+143
+00:25:41,395 --> 00:25:43,055
+Şimdi devam ediyoruz.
+
+144
+00:25:45,203 --> 00:25:55,143
+Bakın, burada yaptık, gördünüz değil mi? 250. Bak burada çözümü gösterdim. 3x3 demeye gerek yok zaten. 3x6'dan da yine bu çıkıyor. Tamam mı? Sorun yok.
+
+145
+00:25:56,003 --> 00:26:10,963
+Geldik. Diğer sayfaya geçiyoruz. Böyle. Diğer sayfaya geçtik. Evet. Sorulara geçtik. Peki, bunu paylaşayım.
+
+146
+00:26:17,236 --> 00:26:19,276
+Evet, paylaştım. Devam edelim.
+
+147
+00:26:21,796 --> 00:26:22,716
+Yaptık, evet.
+
+148
+00:26:22,816 --> 00:26:26,656
+3. Genel terimi bu olan dizimin limiti nedir?
+
+149
+00:26:27,756 --> 00:26:31,776
+Buyurun. Burada hep ki hatırlıyorum, sınavda çıkmış sorular. Yazmamışız ama.
+
+150
+00:26:32,536 --> 00:26:33,956
+Sınavda çıkmış sorular.
+
+151
+00:26:35,956 --> 00:26:37,396
+Peki, bakalım.
+
+152
+00:26:42,708 --> 00:26:58,228
+Şimdi, 3 üzeri M, bunun limitini alacağım yine. Limiti varsa, zaten varsa, demek ki yakınsak, şurada var. Çünkü neden? Çiçeklerde hiç ıraksak yok zaten. Demek ki bunun limiti var. Şöyle bir limit alıyoruz.
+
+153
+00:27:03,188 --> 00:27:16,788
+En sonsuza giderken, şöyle bir de biraz zaman kazanmak için, burası, değil mi? Sonsuz çarpı sıfır oluyor. Yani sonuçta buna baktığımız zaman burası sonsuz oluyor, değil mi? Payın dergisi fazla burası da.
+
+154
+00:27:18,627 --> 00:27:25,427
+Üç bölü sonsuz sıfır, burası sıfır, belirsiz oluyor. O zaman şunu şöyle halledelim, simüs, bak şurada yapmaya çalışıyor.
+
+155
+00:27:26,847 --> 00:27:28,208
+Üç bölü en.
+
+156
+00:27:30,451 --> 00:27:40,451
+Bölü, bunu da 2N artı 1 bölü, N kare yapıyoruz. Tamam mı? Şöyle, persiyonu paylaşıyor. Şöyle yazın.
+
+157
+00:27:42,052 --> 00:27:47,451
+Sonra benim şöyle yöntemi koyuyor. Daha hoşuma gidiyor. 3 bölü, aynı T diyerek, tamam mı?
+
+158
+00:27:48,552 --> 00:27:56,451
+Böyle sinistlerde bunu yaparsanız, çok iyi olur ve daha rahat anlarsanız, o zaman
+
+159
+00:27:56,788 --> 00:28:12,788
+En son sıra giderken t'de sıfıra gider. Çünkü sinüslerde, mademki bu sinüs x bölü x'e girecek, yanda sıfıra gitmesi lazım. Bakın, limit t sıfıra giderken, sinüs de,
+
+160
+00:28:21,395 --> 00:28:25,875
+Evet, şimdi, türevda en diğerine ne koyalım? 3 bölü t.
+
+161
+00:28:38,932 --> 00:28:43,051
+3 bölüte, elin karesi, 9 bölüte, ama lütfen beni durdurun, tamam mı? Anlamadım.
+
+162
+00:28:45,351 --> 00:28:48,311
+Uygulamaya dikkat ederseniz çok nokta nokta gidiyor.
+
+163
+00:28:49,192 --> 00:28:56,751
+Çünkü diğerlerinde nokta var zaten. Ben burada el içeri yavaşlanmazsam yine zaten kafaya oturmuyor.
+
+164
+00:28:57,951 --> 00:28:59,331
+Evet, buraya baktım.
+
+165
+00:29:02,031 --> 00:29:02,971
+Evet, burada ne çıkar?
+
+166
+00:29:05,451 --> 00:29:06,111
+Siniste.
+
+167
+00:29:09,523 --> 00:29:12,344
+9 bölü t kare ile çarparsam, şimdi t bölü.
+
+168
+00:29:16,943 --> 00:29:18,344
+6 artı
+
+169
+00:29:18,344 --> 00:29:22,624
+t bölü t
+
+170
+00:29:22,624 --> 00:29:26,263
+t kare bölü 9
+
+171
+00:29:32,819 --> 00:29:33,559
+Bunlar gitti.
+
+172
+00:29:38,483 --> 00:29:39,323
+Ne kaldı bak.
+
+173
+00:29:41,883 --> 00:29:44,983
+Şurası biraz, zaten biraz o cevap şeyine getireceğim merak etmeyin.
+
+174
+00:29:45,083 --> 00:29:46,063
+9 sinüs de.
+
+175
+00:29:48,583 --> 00:29:48,903
+Böyle.
+
+176
+00:29:51,383 --> 00:29:52,603
+Şurada bir t var.
+
+177
+00:29:53,663 --> 00:29:55,343
+Çocuklar, bir de 6 t var.
+
+178
+00:29:55,343 --> 00:29:55,843
+Tamam mı?
+
+179
+00:29:59,667 --> 00:30:01,867
+Çarışta matası yapıyoruz. Şu bireye eşittir.
+
+180
+00:30:06,307 --> 00:30:10,967
+Buradan t yerine 0 yazarsak, 3 bölü 2 çıkıyor.
+
+181
+00:30:13,167 --> 00:30:15,147
+Demek ki b şıkkı çıkıyor. Tamam mı?
+
+182
+00:30:16,427 --> 00:30:18,387
+Burası çünkü t yerine 0 koydum.
+
+183
+00:30:19,087 --> 00:30:20,867
+9 bölü 6, 3 bölü 2 çıkar.
+
+184
+00:30:21,527 --> 00:30:25,147
+Bir bakın, şurada anlaşılmayan, karıştı hocam diyorsun, dert değil.
+
+185
+00:30:25,147 --> 00:30:25,887
+Tamam mı? Bakın.
+
+186
+00:30:26,579 --> 00:30:43,659
+Ben bunu söylüyorum size, çok süper bir yöntem veriyorum. Bunu sakın, bak bunun çözümünde bile böyle yapmamış olabilir. T dönüşümü her zaman için. Unutmayın, siz 1 bölü x'i gördüğünüz her yerde t dönüşümü uygulayın. Rahat edersiniz, işlem karışmaz. Sonra hepsini t'ye çevirin.
+
+187
+00:30:44,051 --> 00:31:06,391
+Şurada pay değişikleyin arkadaşlar. Tamam mı? T çarpanı geliyor. Sinüs t bölü t'nin bir olduğunu görüyorsunuz. 9 bölü 6 artı t'de 3 bölü 2 yapıyor. Böylece hem de zaten yakınsak oldu. Onu sormamış. Şimdi geçelim ömür tahtaya. Bunun çözümünü gösterelim. Tamam mı? 3'ün çözümünü gösterelim. Bakalım doğru mu yapmışız?
+
+188
+00:31:09,268 --> 00:31:35,048
+Buradan n kare bölü 2 n artıydı. Bakalım. Bakın, bu mesela öyle yapmamıştık, biliyor musunuz? Yani, şimdi bu ne kadar pratik yapmış? Hayır. Sınavda size direkt bu aklınıza gelmeyebilir yani o bakımdan. Öyle düşünmeyin. Genel yöntem her zaman daha kolaydır. Genel yöntemle de 3 bölü yani T demedir. Bakın, bunun limitini aldık.
+
+189
+00:31:37,332 --> 00:31:39,732
+Anlatabiliyor muyum? Şimdi ne yapmışız burada mesela?
+
+190
+00:31:41,952 --> 00:31:46,372
+Mesela şöyle, n kare, şöyle yapmış, ne yapmış biliyor musunuz?
+
+191
+00:31:47,172 --> 00:31:48,752
+Burada yaptığını da anlatalım.
+
+192
+00:31:49,652 --> 00:31:51,852
+n bölü 2 n artı 1'i almış.
+
+193
+00:31:55,443 --> 00:32:00,443
+Sonra bir de buraya bir bölü, bir bölü n yazmış. Tamam mı?
+
+194
+00:32:00,443 --> 00:32:02,443
+n kare var yani bu.
+
+195
+00:32:02,443 --> 00:32:04,443
+n kare.
+
+196
+00:32:04,443 --> 00:32:07,443
+Bir tane n'lerden birinde, bu n karede tamam mı?
+
+197
+00:32:07,443 --> 00:32:10,443
+n karelerinde bir bölü n de buraya gelmiş yani.
+
+198
+00:32:10,443 --> 00:32:11,443
+Tamam mı? Bir bölü n.
+
+199
+00:32:15,059 --> 00:32:23,639
+Ondan sonra şey demiş, tamam bu uydurma kural, tamam, yani doğru cevap, testi, uygun metod. Ama ben sevmedim bir şey.
+
+200
+00:32:24,559 --> 00:32:30,599
+Onun da, çünkü bu limit sıfıra giderken yazılır ama sonsuza giderken böyle özel durumlarda.
+
+201
+00:32:31,659 --> 00:32:36,259
+İşte bu bir böleğen, dolayısıyla bu bunun üç katı olduğu için üç böleği için çıkmış.
+
+202
+00:32:37,259 --> 00:32:40,799
+Burası da, bu da bir böleği için çıkmış.
+
+203
+00:32:42,291 --> 00:33:08,751
+Pardon, burası 3 çıkıyor. Tamam mı? Şu limit 3 çıkıyor. Böyle bir kural yok tabii de, siz uydurma bir yöntemi yapmıştınız. A bölü en, böyle bir bölü ene, a demiş. Cevap doğru ama teoriye uygun değil. Çünkü bu sıfıra gitmesi lazım. Sonsuza gidersem böyle yazılabiliyor. Yani yazmış. Ben neyse doğrusunu çözdüm size. Tamam mı? Dolayısıyla.
+
+204
+00:33:09,715 --> 00:33:14,075
+Buradan 3 gelir, buradan da 1 bölü 2 gelir, 3 bölü 2 gelir, uzatma.
+
+205
+00:33:15,515 --> 00:33:17,175
+Burada bir hatırlatma yapmış.
+
+206
+00:33:18,915 --> 00:33:19,575
+Beraber, ha.
+
+207
+00:33:20,435 --> 00:33:22,955
+Diyor ki bak, bir hatırlatma, bazı soru çözümler.
+
+208
+00:33:54,963 --> 00:34:02,723
+Evet, bakın. Dinleyin arkadaşlar. Tekrar sonra videolarını lütfen bakmayın, unutmayın, tamam mı? Bu online sitesinde lütfen rica ediyorum.
+
+209
+00:34:03,563 --> 00:34:10,184
+Çünkü son not, ortalamam yüksek birinci dönem. En yüksek sinif adım biriydi, aynısı olmasını istiyorum, lütfen.
+
+210
+00:34:11,644 --> 00:34:20,384
+Px, Qx, polinom, derece Px, yani M'ymiş, derece Qx, P. Başka sayılar, tamam mı? Buraya baktık.
+
+211
+00:34:20,980 --> 00:34:48,239
+Bu baş kat sayıları diyor ki, iki polinomunu hatırlatmış, mat bir hatırlatması yapıyoruz. Tamam mı? Limit hatırlatması yapıyoruz. Diyor ki, Px ve Qx bir polinomları bölünürken, mesela diyelim ki x küp bir şey var. Şöyle bir şey var. Bu da 5x küp var, tamam mı? Böyle var. O zaman diyor, eşitse diyor, kat sayılarının oranı, yani 1 bölü 5. Sonsuzlarda ama bu. Sonsuza gider. Yok, yukarısı fazlaysa.
+
+212
+00:34:49,364 --> 00:34:55,663
+Artı ve eksonsuz, aşağısı fazlaysa sıfır, onu diyor. Bazısı diyelim ki, hocam zaten biz bunları biliyoruz, evet.
+
+213
+00:34:56,184 --> 00:35:09,903
+Bir daha bilerseniz ne zararı var, değil mi? Evet, bir tekrar mahiyet meçhep. Bu limit çünkü, serilerde limit bilgisi var, büyük olduğu kadar şeye de döneceğim, peki.
+
+214
+00:35:10,703 --> 00:35:16,144
+Mesela serilere geçtiğimiz zaman da integral anlatacağım, biraz kısmı integrasyon falan anlatacağım.
+
+215
+00:35:20,148 --> 00:35:45,887
+Peki, güzel gidiyor dersimiz. Memnunsunuzlar diyorum. Evet. Ama tekrar söylüyorum. Arkadaşlar, sen en medenize sahip de var söylüyor. O kadar büyük iyilik yaptı ki ben elbikere anlasam, yine siz sınavda karıştıracaktınız. Seriyle, seriyle, dizi. Dizi dizdim tek tek. Asker sırası. Ama serinin toplamı, ikisini yakınsaklık farklı.
+
+216
+00:35:46,516 --> 00:35:49,376
+Dizilerde dizinin sıfır olması gerekmiyor.
+
+217
+00:35:49,735 --> 00:35:51,256
+Tamam, benim rekabım beğendim.
+
+218
+00:35:51,336 --> 00:35:51,896
+Niye dedim?
+
+219
+00:35:52,615 --> 00:35:54,456
+Seriyle karıştırdığını anlamadım önce.
+
+220
+00:35:55,016 --> 00:35:58,136
+Evet, dizinin limiti olması yetiyor, sıfır olması gerek var.
+
+221
+00:35:58,136 --> 00:36:04,636
+Ama serilerde dizinin limiti değil, genel terimin limiti sıfır dahi olsa yetmiyor.
+
+222
+00:36:05,940 --> 00:36:20,199
+Raksaklık için farklı çıkması gerekiyor ama sıfır çıkması, yakınsak da olabilir, yakınsak da olabilir, tamam mı? Onun için farklı testler var, 7 tane test var. Dikkat dinleyin arkadaşlar, yüksek not alın, korkmayın matematikten, evet.
+
+223
+00:36:21,340 --> 00:36:30,520
+Diyor ki mesela, şunu vermiş pratik maklalara, tamam mı? Bir an önce yaptık ya, ben bunu sevmiyorum dedim, bak, ben neyi seviyorum? Ben şunu seviyorum.
+
+224
+00:36:30,963 --> 00:36:45,423
+Ben teoriye uygun giderim. Tamam mı? Ben 41. senem bir sene ben üniversitede. A bölü x derim, şuna götürürüm işlemi. Limit t sıfıra giderken derim. Tamam mı? Ben böyle çözerim.
+
+225
+00:36:46,583 --> 00:36:54,864
+Hata yapma olasılığı sıfır olur. Sinüs de. Burası da b. 1 bölü x yerine ne yazacağım?
+
+226
+00:36:57,556 --> 00:36:58,756
+T bölü A yazacağım.
+
+227
+00:37:01,256 --> 00:37:03,516
+T bölü A. Bu bire eşittir.
+
+228
+00:37:04,996 --> 00:37:07,756
+A bölü B çıkardı. Böyle yapsanız ne olur ki yani?
+
+229
+00:37:08,396 --> 00:37:11,936
+Hata yapma olan sınıf. Bunu böyle ayarladınız. A bölü B. Tamam mı?
+
+230
+00:37:12,155 --> 00:37:16,556
+Burada mesela hiç B olmasa sonuç A çıkardı. Demin yaptık ya.
+
+231
+00:37:17,096 --> 00:37:22,076
+Mesela sinüs 1 bölü X bölü 1 bölü X'e de testte uygun olduğu için bu notu vermişler.
+
+232
+00:37:22,076 --> 00:37:23,556
+Sonsuza giderken bire eşittir.
+
+233
+00:37:24,396 --> 00:37:24,615
+Ama
+
+234
+00:37:26,483 --> 00:37:40,764
+Teoride, şuradan kaynakları t sıfıra giderken, sivis t bölü t. Aslında buradan geliyor. Bu bireyeşit ve t değişik bir bölü x dönüşüm uygulanacak. Ben bunu söylemek istiyorum. Bek geçelim.
+
+235
+00:37:43,903 --> 00:37:48,384
+Başka bir soruya geçmişiz. Geçelim. Önce sorusunu görelim arkadaşlar.
+
+236
+00:37:51,443 --> 00:37:53,443
+Peki, geldik. Devam ediyoruz.
+
+237
+00:37:55,123 --> 00:37:58,143
+Evet, bunu bitiriririz. Tamam mı? Ondan sonra seriler var.
+
+238
+00:37:58,243 --> 00:38:00,503
+Zamanında da onu da devam edelim. Evet, devam edelim.
+
+239
+00:38:02,723 --> 00:38:08,703
+Bunu yaptık. Zannediyorum, anladınız inşallah. Tamam mı? İnşallah anladınız.
+
+240
+00:38:09,804 --> 00:38:16,663
+Ne çıkmıştı bunun cevabı? 3 bölü 2 mi çıkmıştı? Peki.
+
+241
+00:38:19,363 --> 00:38:20,963
+Geldik başka bilimite.
+
+242
+00:38:20,963 --> 00:38:22,643
+A.N.
+
+243
+00:38:24,436 --> 00:38:27,276
+Yine baktık, bunun limiti nedir? Merak ediyoruz.
+
+244
+00:38:27,456 --> 00:38:31,316
+Orada şey yaptık ki, bakın bak tekrar, şu yani, cevaplar da bu.
+
+245
+00:38:32,155 --> 00:38:35,076
+1, 1 bölüki 0, sonsuz 1 bölüye.
+
+246
+00:38:35,636 --> 00:38:39,456
+Hadi öbür tarafta yapalım. Bir de şunu söyleyeyim, bunu logaritmalı yazarak yapacağım.
+
+247
+00:38:39,576 --> 00:38:45,096
+Tamam mı? En'i ne yapacağım? Elen, en üzeri en diyerek yapacağım. Tamam mı? Bakın.
+
+248
+00:38:46,016 --> 00:38:51,195
+Şöyle çevireceğim bakın. Çünkü logaritma biri, biri polinom, biri logaritma olmaz.
+
+249
+00:38:56,403 --> 00:39:03,403
+Sonra buna geçireceğim, tamam mı? Evzelen, 1 artı evzeleni yapacağım, tamam mı?
+
+250
+00:39:05,283 --> 00:39:11,023
+Sonra da evzelen parantezini alacağım. Şunayı da evzelen parantezini alacağım.
+
+251
+00:39:11,224 --> 00:39:14,443
+Zaten öbür tatlı yapacağım da, şimdi burada da gösterme göstereyim, tamam mı?
+
+252
+00:39:14,543 --> 00:39:18,203
+1 bölü evzelen artı 1 olacak, tamam mı?
+
+253
+00:39:18,203 --> 00:39:18,403
+Evet.
+
+254
+00:39:22,739 --> 00:39:25,019
+Evet, bakalım, çözümünü orada daha net görebiliriz.
+
+255
+00:39:25,300 --> 00:39:26,199
+Ve bu tahliye geçelim.
+
+256
+00:39:26,819 --> 00:39:28,800
+Dördü yapıyorum diye biraz daha hızlanmak istiyorum.
+
+257
+00:39:33,043 --> 00:39:36,703
+Lütfen, sizler de cesaretli olun.
+
+258
+00:39:40,103 --> 00:39:44,823
+Yani bir sorun sorunla, şey yapmak istemiyorum. Lütfen sorun.
+
+259
+00:39:45,283 --> 00:39:49,203
+Yanlış olabilir. Çünkü sınavda yanlış yaparsan daha iyi. Burada bunun yapmaya gerek yok. Tamam mı?
+
+260
+00:39:50,223 --> 00:39:53,223
+Lütfen. Geçelim. Biraz büyüteyim şunu.
+
+261
+00:39:54,783 --> 00:39:56,304
+Heh. Biraz daha büyüteyim.
+
+262
+00:39:57,023 --> 00:39:59,903
+Bakın. Benim yaptığım gibi değil mi? Evet. Bakın.
+
+263
+00:40:02,452 --> 00:40:11,172
+Evet. Kırmızıyı aldım da bu ikisi birbirinin olmasın renkte. Bunu yaptık. Şöyle yaptık.
+
+264
+00:40:16,788 --> 00:40:35,788
+En son ben nasıl yapmıştım? Evzelen parantezini almıştım. Ben şunu yaptırdım. Şöyle yapmıştım. Bu benim yaptığım daha güzel. Tamam mı? Bunun başındaki limiti içeriye alabiliyorum.
+
+265
+00:40:44,211 --> 00:40:46,211
+Bu, en son size giderken, tamam.
+
+266
+00:40:48,451 --> 00:40:51,072
+Bir böyle son size yapıyor, tamam. Bir böyle son.
+
+267
+00:40:53,331 --> 00:40:56,451
+Eller, ne oluyor? Parla.
+
+268
+00:40:57,992 --> 00:41:00,271
+Son size giderken.
+
+269
+00:41:02,371 --> 00:41:04,371
+Bir böyle son size giderken.
+
+270
+00:41:16,884 --> 00:41:22,184
+Bunu yanlış yazdım da onun için bak, kendi hatamı alıyorum, tamam mı? İyi yapıyorum.
+
+271
+00:41:23,184 --> 00:41:28,583
+Şurası, bu değil ya, tamam mı? Böyle yapmıyorum. Bir böyle evzeler.
+
+272
+00:41:30,884 --> 00:41:36,983
+Evet, bir böyle evzeler, tamam. Şimdi oldu. Şurayı siliyorum.
+
+273
+00:41:41,300 --> 00:42:04,380
+Bir yanlış taşıma nelere mal oluyor değil mi? Şöyle oluyor sevgili cürta. Burası bir bölü sonsuz sıfır oluyor. Bir bölü sonsuz sıfır oluyor. Sıfır olduğu için bir bölü bir, yani sonuç elem bir oluyor tamam mı? Elem bir oluyor. Elem bir de sıfır oluyor. Hem yakınsaklık hem de sıfır. Geçtik. Devam etmiş.
+
+274
+00:42:08,755 --> 00:42:17,655
+Burada biraz şey anlatmış, tamam mı? Genel olarak. Şöyle kurallar anlatmış. Diyor ki, elen evzeri x, evzeri elen x, aynı şeymiş. Burada x'e işinmiş.
+
+275
+00:42:18,195 --> 00:42:26,256
+İster böyle yazabiliriz. Şu e ile elen birbirini götürüyor. Logaritmanı x başa çarpan diye geçiyor. Elen e oluyor, elen e 1 olduğu için.
+
+276
+00:42:27,475 --> 00:42:35,195
+Bunu özvermişiz. Burada logaritma kuralı var. Eksi olduğu zaman böyle. Artı olduğu zaman da çarpım oluyor.
+
+277
+00:42:35,795 --> 00:42:43,575
+Ben şunu da söyleyeyim, ln üzeri a üzeri b'de, b çarpı, ln a oluyor.
+
+278
+00:42:43,775 --> 00:42:44,455
+Loka etma.
+
+279
+00:42:45,315 --> 00:42:47,035
+Matbird anlatıyoruz yani.
+
+280
+00:42:47,475 --> 00:42:48,975
+Matiki bırakıp matbird ediyoruz.
+
+281
+00:42:49,655 --> 00:42:57,615
+Bir de diyor ki, burada yaptığımız kurallar diyor, istersen bir limiti, bir fonksiyonun içine alabiliyorum.
+
+282
+00:42:57,915 --> 00:43:02,355
+Bu limit yerine ln, limit x artı, a'ya girece nefis edebiliyor?
+
+283
+00:43:02,855 --> 00:43:03,055
+Peki.
+
+284
+00:43:04,980 --> 00:43:16,160
+Devam ederim. Bir yerine geçiyorum. Ama bu arada ara veriyoruz tabii. Arkadaşlar, onda görüşelim. Tamam mı? Onda görüşelim, bir ara verin.
+
+285
+00:57:27,923 --> 00:57:55,103
+Kaldığımız yerden devam. Beş yıl sonuna geldik. Biraz hızlanmak istiyorum artık ama tekrar söylüyorum. Lütfen anlamadığınız yerde şey yapın. Önemli değil. Evet. Bakın genel terim diyor. Şıklar şöyle. Zaten üzerinde yapabiliriz. Bu zaten bak yap yani. Bu şıkkı da yapamıyorsanız sınava girmeyin yani.
+
+286
+00:57:56,148 --> 00:58:21,668
+Cevap vermişti. N'e 1 koydunuz. 2. N'e 1 koydunuz. 0 koydunuz N'e. Değil mi? 0 koydunuz ne oldu? N'e 0 koyunca ne oldu? Bakalım. 1 bölü 2, 1. Sonra 1 koyduk.
+
+287
+00:58:23,155 --> 00:58:26,235
+2 bölü 3.
+
+288
+00:58:27,235 --> 00:58:28,835
+Sonra 2 koyduk.
+
+289
+00:58:30,755 --> 00:58:33,655
+3 bölü 4.
+
+290
+00:58:35,955 --> 00:58:36,935
+2 koyduk.
+
+291
+00:58:37,016 --> 00:58:38,635
+Doğru.
+
+292
+00:58:40,675 --> 00:58:43,975
+Yakınsak mıdır? Bunun limitini almak kolay.
+
+293
+00:58:45,536 --> 00:58:46,155
+Burada da
+
+294
+00:58:47,827 --> 00:58:57,347
+Şöyle bir yöntem, yani böyle üstlerden şöyle bir yöntem ölüyorum. Bir pratik, bir de uzun var. Pratik şu, burada yardıma görmeyebilirsiniz bakın.
+
+295
+00:58:59,827 --> 00:59:05,307
+Şöyle yapıyorum, bir toplayıp bir çıkartıyorum. Bu pratik yöntem.
+
+296
+00:59:07,427 --> 00:59:12,228
+Bir toplayıp bir çıkartıyorum. Tamam.
+
+297
+00:59:16,052 --> 00:59:20,332
+n artı 2, eksi 1, böyle n artı 2 oldu.
+
+298
+00:59:22,172 --> 00:59:25,432
+Bu da 1 eksi, 1 bölü n artı 2 oldu, tamam mı?
+
+299
+00:59:27,812 --> 00:59:30,972
+Böyle yapabilirsiniz. O zaman ne olur? Bunun limitini alalım.
+
+300
+00:59:31,211 --> 00:59:33,532
+Tamam mı? Bunun bakışı, şurası da n olduğu zaman.
+
+301
+00:59:37,523 --> 00:59:42,564
+Bu niye n artı 2 değil? Biz şunu biliyoruz. Neyi biliyoruz?
+
+302
+00:59:44,324 --> 00:59:53,084
+1 bölü P bölü n üzeri P'nin limiti demek sonsuza gidiyor demek. Ama bu evleri P idi.
+
+303
+00:59:55,164 --> 01:00:00,184
+Ama burada baktık ki n artı 2, n değil.
+
+304
+01:00:02,704 --> 01:00:03,744
+O zaman
+
+305
+01:00:08,179 --> 01:00:13,799
+O zaman bunun el yapmak için de ne yapacağız? T dönüşümü bulacağız.
+
+306
+01:00:19,315 --> 01:00:29,355
+Ne oldu? 1 eksi 1 bölü t. Bakın. Dikkatli lütfen herkes konsantre olsun rica ediyorum. t eksi 2 tamam mı? Böyle yaparız.
+
+307
+01:00:31,615 --> 01:00:37,235
+Buradan da bu pratik yol olarak düşünüyorum. Ben bunu böyle yapmanızı istemeyeceğim zaten.
+
+308
+01:00:40,075 --> 01:00:44,915
+t çarpı 1 eksi 1 bölü t'nin eksi 2. kuvveti. Tamam mı?
+
+309
+01:00:46,675 --> 01:00:50,615
+t sonsuza giderken, tabii en sonsuza giderken t de sonsuza giderken.
+
+310
+01:00:52,016 --> 01:00:58,715
+Ondan sonra, şurası, e üzeri p, şuradan yarınarak, e üzeri eksi bir diyorum.
+
+311
+01:01:00,496 --> 01:01:05,016
+Bu da, t sonsuza giderken bir geliyor burası. Yani bir bölü e çıkıyor bu.
+
+312
+01:01:07,556 --> 01:01:12,856
+Yakınsak oluyor tabii, bu da doğru oluyor. Bir bölü e dedi, e olmadığı için bu yanlış oluyor.
+
+313
+01:01:17,844 --> 01:01:29,324
+Şimdi bu en yerine bir koyduğumuz zaman da bir sayı ne oluyor? Bu nereye kadar gidiyor? Sınırlı oluyor tabii aynı zamanda çünkü sonsuz koyduğumuz zaman da belli bir değere gidiyor.
+
+314
+01:01:30,524 --> 01:01:43,664
+Sonuçta ne oluyor? Bir, iki, üç oluyor. Yani üç tanesi doğru oluyor. Üç tanesi doğru oluyor. Böyle bulduk. Bir de uzun yoldan bulalım. Ama ben uzun yolu terbiye ederim.
+
+315
+01:01:44,851 --> 01:01:54,851
+Neden? Ya birdenbire pratik yöntemde akla gelmeyebilir sınavda, tamam mı? Bakar bakar, durmuştuk. Şöyle yaparım, baştan şöyle yaparım.
+
+316
+01:01:54,851 --> 01:01:58,851
+Şimdi bunu yapacağım ya genel serimin bakım için. Şöyle yaparım, evet.
+
+317
+01:02:03,764 --> 01:02:05,923
+Sama bu yorum tabşede ederim.
+
+318
+01:02:11,572 --> 01:02:14,672
+n artı 2'ye t derim bak. Baştan başla.
+
+319
+01:02:17,072 --> 01:02:18,492
+Peki diğerine göre.
+
+320
+01:02:19,771 --> 01:02:22,372
+Ama çözümünü böyle hazırlamışlardır ona eminim.
+
+321
+01:02:23,292 --> 01:02:23,912
+Evet şimdi,
+
+322
+01:02:25,312 --> 01:02:27,152
+tabii bu sonsuza giderken,
+
+323
+01:02:27,652 --> 01:02:29,231
+tabii ki t de sonsuza gider.
+
+324
+01:02:31,231 --> 01:02:31,912
+Limit,
+
+325
+01:02:57,523 --> 01:02:58,203
+yazıyorum.
+
+326
+01:03:15,411 --> 01:03:16,171
+Artı bir.
+
+327
+01:03:18,871 --> 01:03:21,631
+Böyle daha güzel. En yanına koyar bir de eksik.
+
+328
+01:03:24,811 --> 01:03:26,511
+En sonuçta giderken.
+
+329
+01:03:30,867 --> 01:03:39,748
+Şurası t eksi bir bölü, yani t eksi bir bölü t, yani bir eksi bir bölü t oluyor arkadaşlar.
+
+330
+01:03:46,420 --> 01:03:48,219
+Şöyle yazmaktalar ne zararı var.
+
+331
+01:03:51,699 --> 01:03:53,219
+Şurada iki parçaya eri.
+
+332
+01:03:54,840 --> 01:03:57,320
+T sonsuza giderken burası bireyeşit arkadaşlar.
+
+333
+01:03:57,699 --> 01:04:00,239
+Ama şurası bireyeşit. Burası da evzene eksil bireyeşit.
+
+334
+01:04:02,400 --> 01:04:03,480
+Evet, bir bölüye çıkar.
+
+335
+01:04:04,539 --> 01:04:06,000
+Tamam, bir de çözüme bakalım.
+
+336
+01:04:07,199 --> 01:04:08,679
+Öbür tahtaya gidip çözüme bakalım.
+
+337
+01:04:12,851 --> 01:04:13,572
+Paylaşalım.
+
+338
+01:04:15,311 --> 01:04:15,731
+Allah'a emanet olun.
+
+339
+01:04:34,420 --> 01:04:48,159
+Bakıyoruz. Beşe mi geçmiştik? Hangisinden bölüklerden? Bunu yaptık. Burayı anlattık. Bunu çözüyorum.
+
+340
+01:04:49,639 --> 01:04:57,139
+Biri böyle dizi yakınsaklı, dört yanlıştı. 3'ten doğru. Monoton ne demek?
+
+341
+01:05:01,204 --> 01:05:07,064
+başlangıç sınırlıdır yani ve ilk elemanı da sayı, sonsuz koynuluğundan da sayı çıkıyor.
+
+342
+01:05:08,204 --> 01:05:11,684
+Demek ki 3 tane doğrudur. Tamam, biz de öyle dedik zaten.
+
+343
+01:05:12,204 --> 01:05:24,344
+Burada ön bilgi veriyoruz arkadaşlar. Koyalım. Sonradan zayıfsanız, bu e sayısının tanımı, x sonsuza giderken, fx sonsuz iken, tamam mı?
+
+344
+01:05:24,344 --> 01:05:27,244
+x sonsuza giderken, bu fonksiyon da sonsuz iken de diyor.
+
+345
+01:05:28,403 --> 01:05:31,723
+Şu ikisi aynı olursa, mesela şunu demek istiyor. Ne demek istiyor?
+
+346
+01:05:31,723 --> 01:05:33,083
+Bana söyleyip ister.
+
+347
+01:05:34,703 --> 01:05:35,403
+Şunu söyleyeyim.
+
+348
+01:05:38,623 --> 01:05:40,683
+Mesela, burada 2x var.
+
+349
+01:05:41,556 --> 01:05:56,936
+Burada da 2x var, bu da ev üzeri a. Burada 2x-1 var, burada 2x-1 var, bu da ev üzeri a. Onu demek istiyorum. Buradaki de bu aynı insafi fonksiyon. Burada x kare var, burada da x kare var. Tamam mı? Mesela 1 artı a bölü x kare.
+
+350
+01:05:59,115 --> 01:06:06,775
+Burada da x kare var. Tamam mı? O zaman diyor, yine ev üzeri a'dır diye bize pratik test ekliği veriyor. Tamam mı? Geçer.
+
+351
+01:06:10,036 --> 01:06:10,796
+Peki, Taylor.
+
+352
+01:06:12,796 --> 01:06:13,956
+Başka bir soru var.
+
+353
+01:06:18,804 --> 01:06:22,324
+Burada hemen soruya bakarız. Önemli bir bakıp öyle gelelim.
+
+354
+01:06:23,824 --> 01:06:24,544
+Geçelim.
+
+355
+01:06:26,084 --> 01:06:27,044
+Sorusuna geçelim.
+
+356
+01:06:31,731 --> 01:06:32,412
+Koyeşav.
+
+357
+01:06:38,324 --> 01:06:51,244
+Evet, şimdi yaptık. 3 tanesi doğrudur, sınırlıdır. Sınırlı olduğunda sanadık ve en yerine 1 koyduk. Bir de sonsuz koyduk. İkisi de şey. Yakınsak olduğu zaman zaten sınırlıdır.
+
+358
+01:06:51,244 --> 01:06:55,564
+Tamam mı? Yakınsak bir şey. Sınırlıdır. Peki, devam ediyoruz.
+
+359
+01:06:57,504 --> 01:07:05,384
+Ayağın dizisi şu. O şurada bir daha çekmişim. Çıkma birçok. Evet, bakalım.
+
+360
+01:07:06,324 --> 01:07:09,684
+Deminki C idi, değil mi? Şurayı yapmıştık. Şurası böyleydi.
+
+361
+01:07:11,024 --> 01:07:12,464
+Ayan testi yakınsak.
+
+362
+01:07:13,664 --> 01:07:17,604
+Şimdi o kadar kolay ki bu soru.
+
+363
+01:07:17,744 --> 01:07:21,464
+Bunun testi yakınsaksa, şunun limiti ne?
+
+364
+01:07:21,804 --> 01:07:23,184
+Tamam mı? Biraz daha kalınlaştık.
+
+365
+01:07:26,835 --> 01:07:49,735
+O zaman bu limit de L'dir, alt dizi oluyor, tamam mı? Yani, n yerine herhangi bir fonksiyon, 3 en eksibi, n kare koydu o da L oluyor. Buranın limiti de 4'tür. Sonsuz bölü sonsuz değil mi? En büyük terimlerin eşit olduğu için kat sayıları olan 4'tür. O zaman 3'de, yani ben buraya limit yazmıyorum, limit aldım.
+
+366
+01:07:50,963 --> 01:08:00,824
+Buranda da iki tarafın limitini aldık. Burası 3'le, bu da 4'le, bu da 4. O zaman ne çıkar? 4 bölü 7 çıkar.
+
+367
+01:08:04,851 --> 01:08:06,851
+Oraya bakmaya gerek yok.
+
+368
+01:08:08,851 --> 01:08:11,851
+Orada nasıl çöldü merak edenlere hadi, tekrar gösterelim.
+
+369
+01:08:13,851 --> 01:08:15,851
+Evet baktım.
+
+370
+01:08:17,851 --> 01:08:19,851
+Altıya bakıyorum.
+
+371
+01:08:37,652 --> 01:08:38,652
+Ne yaptık.
+
+372
+01:08:41,532 --> 01:08:41,971
+No da.
+
+373
+01:08:46,228 --> 01:08:47,228
+Tamam tamam.
+
+374
+01:08:48,228 --> 01:08:50,228
+Sen de yapalım da checkmemişim var.
+
+375
+01:08:52,228 --> 01:08:53,228
+Peki tamam bir.
+
+376
+01:09:13,811 --> 01:09:16,252
+Bu soruyu orada göremedim. Altı orada yok.
+
+377
+01:09:17,692 --> 01:09:20,231
+Burada var, çözdüm onu. Peki, yediye bakıyorum.
+
+378
+01:09:23,667 --> 01:09:32,688
+Buna baktık yine, A1, 1 bölü 2, ilk eleman işte. O da ardıçıp tekrar eden diziler. Yine aynı şekilde söylüyorum.
+
+379
+01:09:35,587 --> 01:09:40,747
+Şimdi şöyle yapacağım, A1 artı 1, eksim 1 yazıyorum. Bunu burada yapayım yine.
+
+380
+01:09:45,140 --> 01:09:46,579
+Tamam, buraya baktık.
+
+381
+01:09:47,239 --> 01:09:48,120
+An artı 1 bu.
+
+382
+01:09:48,579 --> 01:09:51,780
+An de, evet yazıyorum.
+
+383
+01:09:53,640 --> 01:09:54,920
+Bu dizinin limitini soruyor.
+
+384
+01:09:55,280 --> 01:09:56,319
+Bunun limiti 1'miş.
+
+385
+01:10:06,996 --> 01:10:07,536
+Peki.
+
+386
+01:10:12,756 --> 01:10:22,556
+olduğuna göre diyor, bunun aynı artı bir, eksidi, yazıyorum. Şöyle yazıyorum, bir yerine koyuyorum bakın. Limit en sonsuza giderken.
+
+387
+01:10:26,292 --> 01:10:29,612
+3, kare kök 3,
+
+388
+01:10:36,340 --> 01:10:40,039
+Tancant eksi, valla, ne ya? 3 artı ay.
+
+389
+01:10:46,676 --> 01:10:55,056
+Eksi bir, eksi bir, bölüm, ayel eksi bir.
+
+390
+01:10:56,496 --> 01:10:59,716
+Peki, ayel limiti bir olduğuna göre ne çıkartıyoruz?
+
+391
+01:11:01,636 --> 01:11:09,076
+Üç artı, bir, eksi iki, bir eksi bir.
+
+392
+01:11:09,576 --> 01:11:11,316
+Sıfır bölü sıfır çıktı, belirsiz.
+
+393
+01:11:12,979 --> 01:11:18,340
+Demek ki eşitelikle çarpacak. Ne yapacağım? Ayn artı 1 ile çarpacak.
+
+394
+01:11:18,879 --> 01:11:19,479
+Yazıyorum.
+
+395
+01:11:20,539 --> 01:11:20,899
+3
+
+396
+01:11:20,899 --> 01:11:24,180
+Ayn
+
+397
+01:11:24,180 --> 01:11:26,119
+Pardon ya, ne yaptım?
+
+398
+01:11:27,739 --> 01:11:28,579
+Pardon.
+
+399
+01:11:34,868 --> 01:11:43,828
+Artı an, eksi 2, çarpı, bunun başında dimit var, tamam mı? Dimit.
+
+400
+01:11:46,568 --> 01:11:48,608
+An, sen 1'e giderken, tamam mı?
+
+401
+01:11:51,068 --> 01:11:54,408
+Çarpı, an artı 1.
+
+402
+01:11:58,676 --> 01:12:00,676
+Bunlar çarpılacak ya, eşlerik de çarpılacak.
+
+403
+01:12:05,747 --> 01:12:29,268
+Bunun artırısıyla çarpacağım, kare kök bu ya. Kare kök, 3 artı a en, artı 2 ile çarptım. Burayı da öyle yaptım, tamam mı? A en, eksi 1, çarpım. Kare kök, yani limitlerde kare kök özleştiğini biliyorsunuz.
+
+404
+01:12:32,724 --> 01:12:35,384
+Karakül, artı 2 ile çarptın.
+
+405
+01:12:36,384 --> 01:12:38,064
+Ne oldu şurası?
+
+406
+01:12:39,684 --> 01:12:44,283
+3, artı an, eksi 4 oldu.
+
+407
+01:12:44,804 --> 01:12:45,404
+Bu ne oldu?
+
+408
+01:12:47,163 --> 01:12:57,304
+An eksi 1, çarpı, karakül, 3 artı an, artı 2 oldu.
+
+409
+01:12:58,355 --> 01:13:04,296
+Bakın çocuklar, bunlar mı gider, tamam mı? Aynı eksibeler. Ne olur? Bir. Aynı yerine bir koyacağım.
+
+410
+01:13:06,335 --> 01:13:09,796
+Dört iki, biri böyle dört çıkar. Yani şurada cevap çıkar.
+
+411
+01:13:10,515 --> 01:13:13,216
+Şimdi burada ben yaptığım bir de çözümüne bakalım.
+
+412
+01:13:18,771 --> 01:13:19,811
+Bu ne yapıp, bu şapkın.
+
+413
+01:13:25,171 --> 01:13:49,871
+Bakın, bu 1 verilmiş diyor, soruyor. İşte burada yerine koyduk. Demin ben yaptığımı aynı yaptım. Bak, 0 bölü 0, hapital yapamayız. Çünkü genel terimi bilmiyoruz. Tamam, genel terimi bilmiyoruz için hapital yapamayız. Anlatabiliyor muyum? En sonsuza giderken, çünkü ben bunu aynı, yani en sonsuza giderken de aynı zamanda şeyi de kullandım. Ayanin de 1'e gittiğini kullandım. Tamam mı?
+
+414
+01:13:50,644 --> 01:14:15,543
+Aynı anda yani limitin altında. Bu son sıra giderken aynı de bire gider. Bunu kullanarak yazdım. En son sıra gider ve aynı yerine bir yazdım. Burada da bir yazdım. 0 bölü 0 oldu. Sonra eşlikle çarptım. Artırırsın. Burası aynı ekli bir oldu. Bunlar gitti. Aynı böyle yapı yaptım. Bir bölü buldu da. Bunun yerine bir korsak. Bir bölü dört. Cevap da bir çıkar. Peki, devam ediyoruz.
+
+415
+01:14:16,724 --> 01:14:18,804
+Buna bakalım, dizinin limiti nedir?
+
+416
+01:14:20,724 --> 01:14:22,564
+Evet, bakıyoruz.
+
+417
+01:14:29,619 --> 01:14:37,859
+Bakalım. İki en artı bir bölü iki en eksi üç bölü elde edip, o da demiden sonunda giderken, bir artı dört bölü iki en eksi üç.
+
+418
+01:14:39,119 --> 01:14:53,059
+Şimdi bakın, burası nereden geldi diyeceksiniz değil mi? Nereden geldiğini söyleyeyim ben size. Şuna beynet etmek için, burada yaptığı cambazlığı söylüyorum. Tam eksi üç artı üç demiş.
+
+419
+01:14:54,180 --> 01:14:56,379
+Bunu deyince, ha anladım diyeceksiniz.
+
+420
+01:14:59,283 --> 01:15:07,863
+Topladım, çıkardım. Bu da, gen eksi için, gen eksi için, gen eksi için bölürsek bir, artı dört, işte bunu yapmış. Tamam mı? Yaptığı bu.
+
+421
+01:15:16,307 --> 01:15:16,968
+Ağılık.
+
+422
+01:15:20,467 --> 01:15:25,347
+2 en eksi 3'e t'ye diyerek de artık tamam, bunları anlatmıştık, her yazıcı yapma, evet buna baktık.
+
+423
+01:15:26,288 --> 01:15:33,747
+Burada, bir şey söylemiştik, dikkatli dersi dinliyorsanız, bakalım mevcut nasıl, iyi, iyi.
+
+424
+01:15:34,567 --> 01:15:39,728
+Peki gayet iyi, 80'e karşı 60, ben gayet iyi. Evet, yazdık 2 en eksi 3.
+
+425
+01:15:41,427 --> 01:15:46,167
+Burayı 2 en eksi 3 yazarsam, ben bir şey söylemiştim, ben dedim ya, burada fx varsa.
+
+426
+01:15:47,475 --> 01:16:03,555
+Burada da fx varsa dedim, bu neye eşit olurdu? Ebzeri 4'e eşit olurdu değil mi? Kolay da söylemiştim ben. Yukarıda var, videoda kayıtlı. O zaman bunun aynı sorması için 2'ye endeksi 3 ile çarptım, 2'ye endeksi 3 ile böldüm.
+
+427
+01:16:06,175 --> 01:16:09,175
+Aynı yaptım bak, o zaman burası ne olur? Ebzeri 4 olur.
+
+428
+01:16:11,395 --> 01:16:12,335
+Ebzeri 4.
+
+429
+01:16:16,275 --> 01:16:28,355
+Üzeri, burası da n bölü, 6 ayın eksi 9. Yani buranın limitinde ayrı alabiliriz. 1 bölü 6, o bir adem.
+
+430
+01:16:29,675 --> 01:16:34,796
+Evzeri 4 bölü 6 olur. Yani evzeri 2 bölü 3 olur.
+
+431
+01:16:36,876 --> 01:16:40,796
+Şimdi orada sorusunu da görelim, cevap B şıkkıymış. Oraya bir dönüp gelelim. Tamam mı?
+
+432
+01:16:44,500 --> 01:16:48,260
+Hem de incelenmiş oluruz. Bakalım. Tam 5'lik görmüş.
+
+433
+01:16:51,180 --> 01:16:51,760
+Pardon, oraya.
+
+434
+01:16:54,340 --> 01:16:55,920
+Koyetli gibi sorularına gidecektir.
+
+435
+01:17:06,163 --> 01:17:11,623
+E üzeri 2 bölüş bulmuştuk değil mi? Sorusu bu. Demek ki 5. Diğerler de ona ben de soru almayacağım.
+
+436
+01:17:12,363 --> 01:17:12,863
+Geçelim.
+
+437
+01:17:14,203 --> 01:17:19,064
+En inci kuvvetlerin köke, eksi 1, sin 1 bölü x'in dinleti nedir? Bakalım.
+
+438
+01:17:21,423 --> 01:17:22,823
+En sonsuza giderken.
+
+439
+01:17:24,243 --> 01:17:24,463
+Evet.
+
+440
+01:17:25,983 --> 01:17:27,943
+Ne var burada? Bakalım burada.
+
+441
+01:17:28,724 --> 01:17:29,884
+E üzeri 1 bölüğe var.
+
+442
+01:17:33,427 --> 01:17:34,887
+S1 bölü yani var.
+
+443
+01:17:37,028 --> 01:17:39,628
+Ben yana sonsunu yazarsak, S0, 0 olur.
+
+444
+01:17:41,487 --> 01:17:43,907
+Erzeli 0, 1 ettiği için 0 bölü 0 olur.
+
+445
+01:17:44,528 --> 01:17:45,927
+Tamam mı? Ne yapacağız?
+
+446
+01:17:47,048 --> 01:17:49,387
+O bir tane kullanacak muhtemelen. Dönelim.
+
+447
+01:18:00,435 --> 01:18:01,755
+Bunun sorusunu buraya koydum.
+
+448
+01:18:01,755 --> 01:18:03,495
+Aslında birerde imiş.
+
+449
+01:18:10,420 --> 01:18:11,360
+Bunu yapmıştır.
+
+450
+01:18:12,360 --> 01:18:14,020
+Her evde 2-3 bulmuştuk.
+
+451
+01:18:14,760 --> 01:18:17,979
+Evet, bu demin söylemiştim altınız sorusu nerede diye.
+
+452
+01:18:18,319 --> 01:18:19,539
+Çözdük cevabını ne dedim.
+
+453
+01:18:21,460 --> 01:18:22,739
+Bunun limiti 3'dir.
+
+454
+01:18:23,380 --> 01:18:23,760
+3'le.
+
+455
+01:18:25,680 --> 01:18:26,520
+Bu da 4'le.
+
+456
+01:18:28,280 --> 01:18:31,440
+Bunu da kas sayılan 4 dedik, 4 bölü 7 işaret ettik.
+
+457
+01:18:32,659 --> 01:18:33,260
+Yapmış.
+
+458
+01:18:36,659 --> 01:18:37,460
+Evet, devam edelim.
+
+459
+01:18:38,360 --> 01:18:40,659
+4 bölü yedi.
+
+460
+01:18:42,659 --> 01:18:44,460
+4 bölü yedi bulmuştuk. Geçiyoruz.
+
+461
+01:18:46,399 --> 01:18:48,600
+Ha, şunu yapıyorduk. Devam edelim. 9.
+
+462
+01:18:49,899 --> 01:18:50,319
+Aynen.
+
+463
+01:18:51,360 --> 01:18:53,139
+Eşittir. Enerci kuvvetten köke.
+
+464
+01:18:53,300 --> 01:18:55,440
+Limit. Evet. Şöyle yaptık. Tamam mı?
+
+465
+01:18:55,860 --> 01:18:59,039
+Fonksiyon olarak düşünelim. En yerine x koydum. Tamam.
+
+466
+01:19:00,659 --> 01:19:12,819
+Top bir tane aldık arkadaşlar, evet. Türev'i aldık. Üstüne türev eksi 1 bölü x kare, çarpı ve üzeri 1 bölü x, bu da eksi 1 bölü x kare, posiyonuz 1 bölü x.
+
+467
+01:19:17,268 --> 01:19:20,307
+Bunlar gidiyor, evzeri bir bölü x, bu da cos bir bölü x.
+
+468
+01:19:21,708 --> 01:19:23,908
+Bir bölü cos 0, biri eşit cevap al.
+
+469
+01:19:25,948 --> 01:19:26,587
+Evet.
+
+470
+01:19:29,148 --> 01:19:32,388
+Buradan işte bir bölü bir, bir çakır.
+
+471
+01:19:32,528 --> 01:19:35,528
+Tamam mı? Bu şekilde hopper yapıyoruz. Başka demeye gerek yok. Başka.
+
+472
+01:19:37,408 --> 01:19:40,188
+Onuncu soru. Önce soruyu okuyalım.
+
+473
+01:19:43,859 --> 01:19:45,079
+10, bakıyoruz.
+
+474
+01:19:47,019 --> 01:19:50,599
+Kaçı doğrudur diyor, yakınsaklık testleri, o da bu genel terimli.
+
+475
+01:19:54,679 --> 01:20:00,840
+Genel terimi, bu iki üzeri en değil, yıkmış burası da.
+
+476
+01:20:02,939 --> 01:20:05,459
+Bu da üçer, üçer bilmiş, üçer.
+
+477
+01:20:07,319 --> 01:20:09,259
+A, 6, 9, bu ne?
+
+478
+01:20:11,699 --> 01:20:12,260
+Bir dakika.
+
+479
+01:20:15,139 --> 01:20:17,799
+5 galiba bu. 5 olması lazım.
+
+480
+01:20:18,760 --> 01:20:23,399
+2, 4, 6.
+
+481
+01:20:24,299 --> 01:20:28,180
+Yani ikinin, yani birinci dereceden olmuyor o zaman, şu aradaki farklara bakalım.
+
+482
+01:20:28,340 --> 01:20:31,039
+İkinci farkları, 2, 2. He, karede buluşacağız.
+
+483
+01:20:31,859 --> 01:20:36,180
+Tamam, karede buluşacağız. Yani, en kare var.
+
+484
+01:20:39,604 --> 01:20:54,344
+Eğer bu da olmasaydı bunların farklarına bakacağız. En küt var demek. En kare koyduk. Bir koyunca, şuraya da artı iki ya da artı, olay bitti. Tamam. Ama beş. Bu tutmadı mı? On altı. Allah Allah.
+
+485
+01:20:58,260 --> 01:21:13,100
+3, 5, 7, 1 koyduk, 2 koyduk, 4, 6, 6, 6, 3 koyduk, 11 tuhaflık var, bir dakika, bir avuna bak.
+
+486
+01:21:14,819 --> 01:21:18,260
+Burada bir tuhaflık var, ya bizi okuyamadın. 3, 5, 9, 10, 7, tamam.
+
+487
+01:21:21,060 --> 01:21:23,159
+Füzere, Allah Allah.
+
+488
+01:21:28,243 --> 01:21:31,783
+3, 5, 9, bir dakika, niye o farklar aynı çıktı? Olamaz.
+
+489
+01:21:33,043 --> 01:21:34,103
+Mesela bu fark 2.
+
+490
+01:21:35,863 --> 01:21:36,423
+4.
+
+491
+01:21:40,500 --> 01:21:56,440
+Burası 8, dikkat et bunlar eşit değil, özür dilerim. Burası 4, hayır olmadı. Yani şey yok. Ankara'da birleşmiyormuş bak, ben demin bir hata yaptım, nasıl iyi öyle yaptım, onu da anlamadım, bir daha öfü ederim. Tamam, tekrar geldim.
+
+492
+01:22:01,235 --> 01:22:03,515
+Fark 8, teşekkür ederim, havas.
+
+493
+01:22:04,815 --> 01:22:05,056
+Evet.
+
+494
+01:22:07,695 --> 01:22:08,395
+Doğru şey.
+
+495
+01:22:08,636 --> 01:22:08,835
+Evet.
+
+496
+01:22:09,796 --> 01:22:13,376
+Orada uyuduk, böyle, oluyor sabah olunca biz de uyuyunuz, kısaca bakmayın.
+
+497
+01:22:15,216 --> 01:22:15,735
+Evet.
+
+498
+01:22:17,615 --> 01:22:21,636
+Pazar günü olunca, pazartesi sendromu böyle, onun için siz de bana uyarın arkadaşlar.
+
+499
+01:22:23,220 --> 01:22:36,800
+Peki, 8 olduğu için olmuyor tabii. 6 dedim ben, niye 6 bilmiyorum. 6 deseydim, bal gibi olacaktı. Evet, tamam. Yani tekrar o sayfaya gelelim, oradaki hatamı gördüm.
+
+500
+01:22:38,480 --> 01:22:48,360
+Şimdi tekrar, evet, oradaki fark bir anda. Aynı çıksaydı, yanlış olması mümkün değildi, o mu? En kare olurdu bak. 2, 4.
+
+501
+01:22:48,724 --> 01:23:16,184
+6 dedim, 8'miş, arkadaşımız duyardı ama yok. Evet, o zaman olmaz. Onlar 2'nin kuvvetlerine göre düşünüyor. Tamam mı? Bir terim daha vermemiş, n kübide araştıramam. O zaman bakıyorum. 2'nin karesi artı 1, 2 üzeri n artı 1 dediğim zaman oluyor. Değil mi? 2'den 1 fazla, 4'den 1 fazla, 8'den 1 fazla, 16'dan 1 fazla. Okey. Tamam. Bu genel terim. Peki.
+
+502
+01:23:16,787 --> 01:23:30,028
+Bunun limiti nedir? 1 çıkıyor yakınsaklık, tamam mı? Yakınsak, tamam mı? Sınırlı mıdır? Tabii ki sınırlıdır. Neden sınırlıdır? Limiti zaten var ve ilk terimde 1, tamam mı? Yani ilk sayı.
+
+503
+01:23:31,407 --> 01:23:40,087
+Ahtta ve üstten sınırlıdır zaten, sınırlı oluyor, tamam mı? Neyi soruyorduk? Şimdi teste gelelim, tamam mı? Teste gelelim.
+
+504
+01:23:42,087 --> 01:23:42,327
+Evet.
+
+505
+01:23:43,731 --> 01:23:47,612
+Yakınsaktır, sınırlıdır, monotondur. Baktık, devam ediyoruz.
+
+506
+01:23:50,771 --> 01:23:56,192
+Ebas'ı 2'miş bu. Evet, evet. En büyük alt sınır. Alt sınırların en büyük. Doğrudur.
+
+507
+01:23:58,291 --> 01:24:06,192
+O da var. O da doğru. O da doğru. Ebas, yani bir korsak, 2 bölü çıkıyor.
+
+508
+01:24:07,072 --> 01:24:10,692
+Eksiyon 1 mi çıkmış? Doğru değil mi? Evet, 1 de mi çıkmış. Doğru.
+
+509
+01:24:11,891 --> 01:24:13,891
+O zaman 5 ile doğru oluyor değil mi?
+
+510
+01:24:16,092 --> 01:24:17,692
+5 ile doğru oluyor. Bakalım.
+
+511
+01:24:30,387 --> 01:24:36,887
+Dört doğru, beş doğru, e doğru. Hepsi doğruymuş arkadaşlar. Yani eşit, beşi de doğru.
+
+512
+01:24:38,627 --> 01:24:43,948
+Dizi sınırlıdır, üstten alttan sınırlı olmuş. Dizi artandır, artan, dizi üstten alttan artan.
+
+513
+01:24:44,487 --> 01:24:50,847
+Ek yüzcü var, limit buna. O zaman da yaparsın iki yüz, doğru. Monoton oldu da doğru da.
+
+514
+01:24:52,448 --> 01:24:53,307
+Geldik buraya.
+
+515
+01:24:55,060 --> 01:24:58,620
+Bunun limiti, burada direkt soruyu görmeye gerek yok arkadaşlar.
+
+516
+01:25:01,260 --> 01:25:03,960
+Bunu yazdım.
+
+517
+01:25:05,120 --> 01:25:10,880
+Biliyorsunuz, sonsuz eks sonsuz çıktığı için, yani bu limitini yazdık ya, biraz daha pratik düşünelim, tamam mı?
+
+518
+01:25:10,880 --> 01:25:14,000
+Sonsuz eks sonsuz yazdığım için eşlenik de çarpıyor, payı paydayı.
+
+519
+01:25:15,739 --> 01:25:20,760
+Yani, burada bir var ya, bununla payı ve paydayı çarpıyoruz, şurayı da çarpıyoruz.
+
+520
+01:25:21,171 --> 01:25:43,371
+Aynısı, şu çarptığıyla çarpıyoruz, tamam mı? Bu çıktı, aşağısı bu. Sonsuzdaki sonsuzlarda böyle kare çök eşlikle çarptık. Burada bunlar gitti, 2 n kare kaldı. Burada da n kare, şurayı en üzeri 4'ü n kare ile dışarı çıkartırsak, 1 artı 2 bölü n kare kaldı, bu da sıfıra gider, n karelerde gider.
+
+521
+01:25:47,155 --> 01:25:49,296
+Enkara parantezini alacağım, biraz acele et.
+
+522
+01:25:50,536 --> 01:25:52,636
+Şuradaki Enkara'yı paranteze aldık, nasıl gider?
+
+523
+01:25:55,636 --> 01:26:05,155
+Evet, yani, şuraya tamam, bunun gitmesi için şunu, şuraya bir deyip paranteze alınması lazım. O zaman gider.
+
+524
+01:26:06,816 --> 01:26:14,496
+Bu sıfır, bir bir daha iki, iki bölü ikide bir yapar. Cevap A. Neymiş cevap? Ona bakalım. Niye A'ymış?
+
+525
+01:26:31,923 --> 01:26:37,123
+Bazen soruları yeri değişik, yeri de çıkabiliyor diyeyse tamamdır. Çözdük ya, tatlaya gerek yok. Tamam.
+
+526
+01:26:40,123 --> 01:26:40,764
+Peki.
+
+527
+01:26:43,764 --> 01:26:45,003
+Bunu yapmıştık.
+
+528
+01:26:48,404 --> 01:26:51,684
+Dizisi için aşağıda kaçı doğrudur? 5 dersler doğru çıkmış.
+
+529
+01:26:54,424 --> 01:26:57,524
+Buna bakalım. Tamam, demedim, çözdük, sorun yok. 12.
+
+530
+01:27:01,427 --> 01:27:09,188
+O söz 2N artı 1 bölü 2P diziler, hangisi de orada? Limit'i mevcut değildir diyor, limit'i P'dir diyor. Bakalım.
+
+531
+01:27:11,188 --> 01:27:13,188
+En sonsuza giderken...
+
+532
+01:27:18,771 --> 01:27:35,412
+Burası nedir? 1, cos 1, cos pi. Şimdi n artı 2 bölü, yani n yerine 1 koysak, 3 bölü, 5 bölü. Eksi 1 çıkardım.
+
+533
+01:27:40,724 --> 01:27:44,524
+Eksi bir çıkardım. En yerine bir koydum, üç pi bölü iki.
+
+534
+01:27:45,944 --> 01:27:50,184
+Üç pi bölü iki nedir? Yok, bir dakika. Aman, aman, aman.
+
+535
+01:27:51,463 --> 01:27:56,184
+En yerine bir koydum, iki yüz yetmiş derece sıfır.
+
+536
+01:27:57,703 --> 01:28:01,744
+İki koydum, hepsi bu, bir iki sıfır.
+
+537
+01:28:03,744 --> 01:28:04,324
+Yakınsak.
+
+538
+01:28:24,243 --> 01:28:26,083
+Bir dakika, burada bir hata yapmışız.
+
+539
+01:28:28,023 --> 01:28:30,064
+Fonksiyonu böyle düşünürse,
+
+540
+01:28:32,183 --> 01:28:33,404
+büyük mevcut değil.
+
+541
+01:28:39,028 --> 01:28:42,347
+n'lerin tam sayı olduğu için yanlışlıkla koyuyoruz.
+
+542
+01:28:42,347 --> 01:28:43,988
+İmiti var bunun.
+
+543
+01:28:43,988 --> 01:28:46,148
+Çünkü böyle düşünemeyiz ki, neden?
+
+544
+01:28:46,148 --> 01:28:49,388
+n kurta çünkü doğal sayı, 1, 2, 3, 4 koyacağız.
+
+545
+01:28:49,388 --> 01:28:54,747
+Burada x'li yazarsak her değer koyabiliriz, yarım da koyabiliriz, çeyrek de koyabiliriz.
+
+546
+01:28:54,747 --> 01:28:58,747
+Ama böyle düşünmeyelim.
+
+547
+01:28:58,747 --> 01:29:01,747
+Yani bu vermez ama şu, bak onu hissedecektir, evet.
+
+548
+01:29:03,507 --> 01:29:18,288
+Bu sıfır çıkartmış. Doğru yaptık. Bizi yakınsak ve limiti sıfırdır. Ben yaptığım doğru. Neden? Çünkü n her değer almıyor. Tam sayı değerler alıyor. Tam sayı değerler aldığı için de n yerine bir koy.
+
+549
+01:29:19,868 --> 01:29:27,887
+Bir koy, üç bir bölü iki sıfır. İki koy, beş bir bölü iki sıfır. Üç koy, yedi bir bölü iki sıfır. Dolayısıyla
+
+550
+01:29:28,819 --> 01:29:56,420
+Bu çıkıyor tamam mı? 0, 0, 0. Sabit bir de oluyor, sabit bir de dediğim gibi 0. Yani o sayı da x olur. O zaman dizi yakınsaktır. Ama şöyle düşünemeyiz yani. En yerine tam sayı alırsak olur. Çünkü dizi bu. Ama biz bunu fx diye kabul edersek, fx diye kabul edersek bunu kosinus, böyle kabul edemeyiz yani burada. Tamam mı? Çünkü o zaman burada x yeni her değeri alabiliriz.
+
+551
+01:29:58,003 --> 01:30:12,003
+O zaman sonsuza giderken, kosünün sonsuzun ne olduğunu bilemeyiz. Ne olduğunu bilemeyiz. Ama öyle düşünmeyeceğiz. Çünkü dizidir, dizi gibi düşünüyoruz. Cevap değer. Yani yakınsak olacak, limiti doğru çıkacak. Devam edelim.
+
+552
+01:30:14,003 --> 01:30:19,003
+A n eşittir 1 en büyük eşit için. A n artı 1 bu çekirdeği verilmiş.
+
+553
+01:30:21,003 --> 01:30:24,003
+A n artı 1 eşittir.
+
+554
+01:30:25,395 --> 01:30:27,755
+Artık, üzeri, her diye verilmiş, tamam mı?
+
+555
+01:30:32,275 --> 01:30:33,416
+Genel terimi
+
+556
+01:30:33,416 --> 01:30:39,255
+Bakıyoruz, aynı artıları bu şekilde verilmiş birader.
+
+557
+01:30:42,739 --> 01:30:47,180
+A'nın artı, üstü, ren diyebilirim. En yerine 1 koyalım.
+
+558
+01:30:49,819 --> 01:30:54,260
+1 korsak, A1, 1 oluyor değil mi? A2 ne oluyor? Bak. A2.
+
+559
+01:30:56,139 --> 01:31:01,559
+1 artı, 3 oluyor. Bak. Şuraya bir yazalım, burada anlayacağız. A2 nedir? 1 artı, 3.
+
+560
+01:31:02,779 --> 01:31:05,619
+4. A3 nedir?
+
+561
+01:31:08,520 --> 01:31:09,659
+4 artı.
+
+562
+01:31:14,420 --> 01:31:16,979
+4 artı 3'ü
+
+563
+01:31:16,979 --> 01:31:19,960
+veririz.
+
+564
+01:31:27,475 --> 01:31:28,975
+Evet, sonra A4 ne dedim?
+
+565
+01:31:29,095 --> 01:31:41,975
+A4'te, 4 artı 3'ün karesi artı, 3 üzeri küp oluyor.
+
+566
+01:31:42,775 --> 01:31:44,935
+A3 buydu değil mi? 3'ün karesi.
+
+567
+01:31:45,255 --> 01:31:46,575
+Niye 3'ün karesi oldu A3?
+
+568
+01:31:49,456 --> 01:31:50,895
+Bir fazla soruyor.
+
+569
+01:31:50,895 --> 01:31:52,355
+Bu da A3 zaten doğru.
+
+570
+01:31:54,255 --> 01:31:54,876
+Bu çıktı.
+
+571
+01:31:55,923 --> 01:31:57,783
+Peki, burada ne çıkartabiliriz?
+
+572
+01:32:00,783 --> 01:32:01,384
+4
+
+573
+01:32:01,384 --> 01:32:08,064
+A1 kaç? Bir dakika, bir saniye burada arkadaşlar. A1, bir müdür.
+
+574
+01:32:11,828 --> 01:32:22,908
+1, sonra 1. Sonra bu nedir? 3 eksidir değil mi? Bu nedir?
+
+575
+01:32:26,963 --> 01:32:30,163
+Önce bu üç eksidir. Bu nedir?
+
+576
+01:32:54,195 --> 01:32:58,555
+Ben sağ oluyla arkadaşlar. Bu silik baştan bir daha yaptı.
+
+577
+01:33:00,595 --> 01:33:03,155
+Dakta nokta koyarak tam acele ettim.
+
+578
+01:33:05,355 --> 01:33:08,115
+Orada şey göndermişler, onun için...
+
+579
+01:33:10,876 --> 01:33:12,876
+Böyle silik çıkmış.
+
+580
+01:33:13,275 --> 01:33:15,819
+Onun için ben yine göremediğim için devam ediyorum.
+
+581
+01:33:21,203 --> 01:33:23,763
+Belki o sayfada daha düşündür. Bir baka iki dakika.
+
+582
+01:33:25,463 --> 01:33:26,923
+13'te bu diğer şeylere bakalım.
+
+583
+01:33:32,819 --> 01:33:35,959
+Evet, buradan yapalım. Hadi buradan çözelim.
+
+584
+01:33:38,180 --> 01:33:38,939
+Evet.
+
+585
+01:33:43,988 --> 01:33:46,888
+Şimdi, A1 bu, A2'dir, yapalım.
+
+586
+01:33:48,247 --> 01:33:49,847
+Bu net yapılacak güzel bir soru.
+
+587
+01:33:49,948 --> 01:33:51,927
+A1 kaçtı? 1.
+
+588
+01:33:53,648 --> 01:33:54,528
+A3.
+
+589
+01:33:55,968 --> 01:33:58,628
+Şurada A1'i yazalım, Kural bunu yazalım arkadaşlar.
+
+590
+01:33:58,988 --> 01:33:59,468
+Tamam mı? 1.
+
+591
+01:34:00,327 --> 01:34:00,807
+A3.
+
+592
+01:34:06,131 --> 01:34:10,072
+1 artı 3, artı 3'ün karesi.
+
+593
+01:34:12,152 --> 01:34:21,072
+A4, 1 artı 3, artı 3'ün karesi, artı 3'ün kütle oluyor.
+
+594
+01:34:23,531 --> 01:34:26,451
+O zaman bunlardan hangisi olabilir? Bakalım.
+
+595
+01:34:26,791 --> 01:34:28,391
+Işıklardan hangisi buna uydu?
+
+596
+01:34:33,652 --> 01:34:34,631
+İki korsak
+
+597
+01:34:39,412 --> 01:35:03,692
+Bu karesi, şimdi bir koysak, bir tutuyor. İki koysak, tutmuyor. Bu gitti. Bir koysak, tutuyor. İki bölü iki çıkıyor. İki koysak, dokuz, eksi bir, sekiz bölü iki, dört.
+
+598
+01:35:06,612 --> 01:35:07,271
+Bu da 4.
+
+599
+01:35:09,271 --> 01:35:10,612
+3 koyalım.
+
+600
+01:35:11,051 --> 01:35:14,752
+27, 26, 27'den 1 çıktı.
+
+601
+01:35:16,032 --> 01:35:17,391
+26 bölü 13.
+
+602
+01:35:19,112 --> 01:35:19,851
+Bu da tuttu.
+
+603
+01:35:24,180 --> 01:35:29,400
+Bir daha 4 koyalım. 3 üzeri 4, 81, 81, 82, 40 değil mi?
+
+604
+01:35:31,180 --> 01:35:39,380
+Evet, buraya baktık. 21, artı 3, artı 9, artı 27. Bu da 40.
+
+605
+01:35:42,079 --> 01:35:42,880
+Bu şık tuttu.
+
+606
+01:35:46,579 --> 01:35:53,219
+Bu niye tutmadı? En yerine bir koyduğumuz zaman iki çıkıyor zaten. Baştan kaybediyor değil mi?
+
+607
+01:35:54,920 --> 01:36:00,799
+Bu da bir koyduğumuz zaman üç boyu iki. Böyle değer koyarak bunun kurallık anlık kadar.
+
+608
+01:36:03,139 --> 01:36:08,340
+Aşağıdaki dizilerden hangisi yakınsak alttan ve en büyük alt sınırı ebası yani bir.
+
+609
+01:36:10,539 --> 01:36:12,760
+Bakalım aşağıda vardır bir daha tamam mı?
+
+610
+01:36:14,452 --> 01:36:18,512
+Ne diyor? Yakınsak, artan ve en büyük alt sınırı.
+
+611
+01:36:20,792 --> 01:36:24,172
+Evet, bakalım. Artan ve en büyük olan bakalım.
+
+612
+01:36:26,971 --> 01:36:31,592
+Alt sınırı. Bir. Bir koyduk. Bir.
+
+613
+01:36:38,228 --> 01:37:03,448
+Bu olabilir. Bu 1 bölü 2. Değil mi? Bu olmaz. Ebası 1 değil. Bu olabilir. Ebası 1. Bu da olabilir. Bu olmaz. Tamam mı? Tamam mı? Yakınsak mı? Ben limiti sonsuz yapalım. Bu olmaz. Bu da gitti. Bunun limiti 2.
+
+614
+01:37:04,212 --> 01:37:06,631
+Olabilir şu anda, tamam mı? İki tane ortaya aldım.
+
+615
+01:37:08,092 --> 01:37:08,852
+Bu olmaz.
+
+616
+01:37:16,659 --> 01:37:17,199
+Çift katlı.
+
+617
+01:37:22,003 --> 01:37:33,224
+Artan, yani artan ne demek? Bir sonraki eleman, bir öndekiden büyük kalıyor değil mi? Ve eşit kalıyor.
+
+618
+01:37:44,020 --> 01:37:46,420
+Bakın, bunu ispatlamak gerekiyor.
+
+619
+01:37:48,500 --> 01:37:50,020
+Şu ikiler gider.
+
+620
+01:37:52,819 --> 01:38:03,900
+n artı bir, n artı iki, n bölü, n artı bir.
+
+621
+01:38:04,500 --> 01:38:06,620
+Bunu ispatlayabiliriz, n artı bir ile çarp.
+
+622
+01:38:07,800 --> 01:38:09,740
+n artı iki ile çarp, tamam mı?
+
+623
+01:38:10,771 --> 01:38:19,311
+Ne olacak? Ankara, after 2. Ankara, after 2. Ankara, after 2.
+
+624
+01:38:23,188 --> 01:38:31,868
+Buradan n büyük eksikçi, doğru değil mi? Evet gerçekten n eksikten büyüktür. Evet, bu şekilde.
+
+625
+01:38:31,868 --> 01:38:39,868
+Patladık, geçelim. 15. Evet. Bakalım. Şuna da bakalım.
+
+626
+01:38:39,868 --> 01:38:48,908
+Birden son size giderken, böyle bir dizi varmış.
+
+627
+01:38:49,076 --> 01:38:50,916
+Aynı işi doğru görüyoruz. Bakalım.
+
+628
+01:38:56,307 --> 01:39:01,467
+Evet, şu integralı alalım. İlk elemanı buyurmuş. Dx bölü x, lnx yani. İlk eleman nedir?
+
+629
+01:39:04,148 --> 01:39:10,748
+ln2 eksi 1. Şu integralı kafadan aldım. Bak, basit bir integral. lnx tamam mı? ln2 eksi 2 ln1.
+
+630
+01:39:11,788 --> 01:39:14,087
+Bu nedir? Diğeri. Biri bölü 4.
+
+631
+01:39:17,528 --> 01:39:20,068
+ln4 eksi ln1.
+
+632
+01:39:25,011 --> 01:39:33,371
+O da yeri de, yeri de, yani şu elen 1'i saymıyorum, elen 1 sıfır çıkıyor, bunlar sıfır, tamam mı? Yani şu olur.
+
+633
+01:39:34,371 --> 01:39:47,492
+1 bölü 2, elen 2, 1 bölü 4, elen 4, 1 bölü 6, elen 6.
+
+634
+01:39:49,043 --> 01:39:52,903
+Bakacağız, 1 bölü 4, elen 2, elen 4. Yani bunun genel tarafı ne olur?
+
+635
+01:39:55,323 --> 01:39:56,243
+1 bölü 2
+
+636
+01:40:00,851 --> 01:40:02,851
+ve katlı bir bölge x
+
+637
+01:40:06,771 --> 01:40:10,412
+1 bölü 2x, ln 2x diyebiliriz aslında genel terimi.
+
+638
+01:40:11,292 --> 01:40:14,931
+1 koyunca bu, 2 koyunca tamam, tamam, genel terimi bu.
+
+639
+01:40:16,412 --> 01:40:23,412
+Bunun da limitini aldığımız zaman, bakın limitini alalım, ln 2x bölü 2x,
+
+640
+01:40:24,851 --> 01:40:33,091
+hopital aldığımız zaman 2 bölü 2x, bölü 2, 1 bölü,
+
+641
+01:40:33,908 --> 01:40:37,088
+2x o da 0 çıkıyor.
+
+642
+01:40:38,048 --> 01:40:39,908
+Yani yakınsak olur.
+
+643
+01:40:41,908 --> 01:40:44,648
+Evet, dimitir 0 olur, yakınsak olur. Bakalım.
+
+644
+01:40:55,572 --> 01:40:56,792
+Evet, bakıyorum çözümüne.
+
+645
+01:40:59,092 --> 01:40:59,912
+Hangisi doğrudur?
+
+646
+01:41:00,852 --> 01:41:03,612
+Sıfır oldu, yakınsak oldu, c oldu değil mi?
+
+647
+01:41:05,232 --> 01:41:05,832
+Bu anlatsız.
+
+648
+01:41:05,912 --> 01:41:06,992
+Geçmiş çeğimize bakalım.
+
+649
+01:41:10,899 --> 01:41:11,260
+Evet.
+
+650
+01:41:14,680 --> 01:41:16,140
+Evet, demikini yaptık zaten.
+
+651
+01:41:40,083 --> 01:41:49,684
+Bakıyorum. Evet, baktık. Evet, sıfır ve yakınsak da olur. Tamam, bitti. Sıfıra yakınsak. Okey, tamam.
+
+652
+01:41:52,323 --> 01:42:01,823
+Baktık. Evet, şimdi bir ara verelim arkadaşlar. On bira kadar. Tamam mı? On bira kadar ara verelim.
+
+653
+01:59:00,020 --> 01:59:01,620
+Evet, devam ediyorum kaldığım yerden.
+
+654
+01:59:03,840 --> 01:59:05,680
+Tekrar sorulara gelelim.
+
+655
+01:59:14,355 --> 01:59:20,555
+Evet, neler yapmadık? Şunu yaptık. Değil mi? Ondan sonra şuna bakalım.
+
+656
+01:59:27,220 --> 01:59:28,660
+Daha sonra gelmiş bir dakika.
+
+657
+01:59:34,707 --> 01:59:49,427
+Çözdük, bakıyorum. Bunu da yaptık. Evet, dizilerle ilgili bitmiş. Şimdi yaptık bu uygulamalar artık sınava doğru. Şimdi serilerle ilgili uygulamaya geçiyorum.
+
+658
+01:59:55,444 --> 02:00:01,244
+Şimdi serilerle ilgili uygulama, yine test usülü.
+
+659
+02:00:03,764 --> 02:00:10,444
+Tabii biz beşlik soruyoruz, önemli bir şey. İstemene kadar bir tane daha ettim yani kafada sorun yok. Tamam mı? Test sorusu.
+
+660
+02:00:11,844 --> 02:00:13,244
+Devam ediyoruz.
+
+661
+02:00:14,083 --> 02:00:15,083
+Diyor ki,
+
+662
+02:00:16,804 --> 02:00:18,123
+pi üzeri
+
+663
+02:00:19,163 --> 02:00:20,364
+eksen
+
+664
+02:00:22,068 --> 02:00:30,427
+bölük cos n pi serisinin toplamı nedir? Mesela 0 koyduğumuz zaman ne olur? Bakın 0 koyalım.
+
+665
+02:00:32,828 --> 02:00:34,108
+pi üzeri 0, 1.
+
+666
+02:00:36,587 --> 02:00:37,908
+cos 0, 1.
+
+667
+02:00:38,628 --> 02:00:39,108
+Artı.
+
+668
+02:00:40,427 --> 02:00:41,507
+1 koyduk.
+
+669
+02:00:42,288 --> 02:00:43,228
+pi üzeri eksi 1.
+
+670
+02:00:46,931 --> 02:00:47,571
+eksi 1.
+
+671
+02:00:48,891 --> 02:00:50,931
+2 koyduk.
+
+672
+02:00:51,171 --> 02:00:52,171
+Pi üzeri eksi 2.
+
+673
+02:00:54,331 --> 02:00:55,011
+Ölüm.
+
+674
+02:00:56,411 --> 02:00:56,731
+1.
+
+675
+02:00:57,971 --> 02:01:00,971
+Yani alternatik seri var. Şöyle bir şey çıkıyor.
+
+676
+02:01:01,211 --> 02:01:03,131
+Eksi 1 üzeri.
+
+677
+02:01:03,131 --> 02:01:03,611
+N.
+
+678
+02:01:05,771 --> 02:01:08,071
+Tamam, iki şey artı olmuş oluyor.
+
+679
+02:01:08,671 --> 02:01:08,911
+Sonra
+
+680
+02:01:08,911 --> 02:01:12,371
+1 bölü pi üzeri.
+
+681
+02:01:15,859 --> 02:01:18,939
+Yazıyoruz. Bakın, genel terimini yazalım.
+
+682
+02:01:22,547 --> 02:01:23,807
+1 bölü pi
+
+683
+02:01:24,347 --> 02:01:25,347
+üzeri
+
+684
+02:01:30,452 --> 02:01:33,452
+sıfır bir koydu ama bu, n.
+
+685
+02:01:34,452 --> 02:01:36,452
+İşte gene terim bu.
+
+686
+02:01:38,452 --> 02:01:41,452
+Evet, bunun toplamını soruyor.
+
+687
+02:01:43,452 --> 02:01:47,452
+Evet, b artı bir, b ekle bir bu şekilde gidiyor.
+
+688
+02:01:47,452 --> 02:01:49,452
+Peki, anlaya ne diyecekti? Yanlış mı yapıyorduk?
+
+689
+02:01:49,452 --> 02:01:52,452
+n yerine bir koydu, pi.
+
+690
+02:01:52,452 --> 02:01:55,212
+Sıfır koydu, bir koydu.
+
+691
+02:01:57,171 --> 02:02:14,011
+Evet, bir bakalım şimdi. Şu yani, serimiz şu. Yanlış yazmadıysam eğer. Size paylaştığımı bilmiyorum, belki de paylaşmadım. Size de yanıt yok ama. Peki.
+
+692
+02:02:18,195 --> 02:02:19,715
+n eşittir sıfırdan,
+
+693
+02:02:22,595 --> 02:02:23,195
+sonsuza,
+
+694
+02:02:27,859 --> 02:02:28,939
+Exibiriz herhalen.
+
+695
+02:02:32,851 --> 02:02:39,851
+Şöyle diyelim, bunu niye buraya koyuyorum ki? Değil mi? Uzatıyorum. Şu eksiği burada niye düşünüyorum ki? Şunun içine yazayım.
+
+696
+02:02:44,212 --> 02:03:07,192
+eksi 1 bölü pi üzeri, olay bitsin, değil mi? Eksi 1 bölü pi üzeri, el. O da, neydi? Sıfırdan sonusunda, istersek onu şöyle yazabiliriz, el eşittir, bakın 1'den, sonusunda değil. Burayı şey yapabilirim, eksi 1 bölü pi.
+
+697
+02:03:08,979 --> 02:03:35,119
+Üzeri n-1 yazabilirim, tamam mı? Yandım. Tamam. O zaman bu, ilk terim burada nedir? 1'dir. 1 bölü, 1-1, 1-1 bölü, 1. Bitti. Bu kadar basit. 1 bölü, 1-a bölü, 1-1 bölü, 1-e var ya hani. Bunu yazdık, o kadar.
+
+698
+02:03:36,148 --> 02:03:38,587
+Yani, 1 bölü,
+
+699
+02:03:40,387 --> 02:03:41,547
+pi artı 1 bölü pi.
+
+700
+02:03:45,108 --> 02:03:57,228
+Yani, pi bölü pi artı bir, pi bölü pi artı bir nerede var? A şıkkında var. Görünce de sevindik değil mi? Çünkü genelde birinçli yaptığın zaman aynısını görmek güzel bir şey.
+
+701
+02:03:57,608 --> 02:04:06,488
+Tamam mı? Hiç de batası yapmadığını anlıyorsun. Tesadüfen de o çıkmaz. Evet, pi bölü pi artı bir çıktı. Öbür tahtaya bakalım, şeye bakalım.
+
+702
+02:04:13,811 --> 02:04:15,792
+Ne yapmış? Burada çözümünü görüyoruz.
+
+703
+02:04:21,268 --> 02:04:21,768
+Bakalım.
+
+704
+02:04:24,988 --> 02:04:35,087
+Bu, bunu yazmış, evet. Şunu yazmış, değil mi? Bunu yazdık. Sonra biz geometrik seri, R eksi bir bölü müydü. Tamam, eksi bir bölü müydü. O da birdir.
+
+705
+02:04:39,155 --> 02:04:47,155
+Benim yaptım daha uygun, şöyle yazmakta, ne biliyor musunuz?
+
+706
+02:04:51,667 --> 02:04:54,787
+Bakın şöyle, biz şu formülü biliyoruz çocuklar.
+
+707
+02:04:56,747 --> 02:05:06,367
+En eşitli 1'den sonsuza gittiği zaman, a çarpı, levzere, en eksi 1 olduğu zaman, a bölü 1 eksi de olduğunu biliyoruz sonsuza giderken.
+
+708
+02:05:06,487 --> 02:05:12,107
+Onu yap, tamam mı? O da aşıkı çıkmış. Tamam, biz öyle bulduk zaten. Geçelim diğerine.
+
+709
+02:05:16,564 --> 02:05:20,744
+Paylaşmamış olabilirim ben size. Bir dakika.
+
+710
+02:05:22,724 --> 02:05:27,344
+Vallahi unutuyorum. Tamam mı? Bir daha bakalım siz de söylemiyorsunuz.
+
+711
+02:05:35,731 --> 02:05:38,572
+Bunu böyle yazdık. Bir daha anlatayım.
+
+712
+02:05:40,912 --> 02:05:43,012
+Her seferde yapmak lazım.
+
+713
+02:05:44,072 --> 02:05:44,952
+Buraya baktık.
+
+714
+02:05:45,992 --> 02:05:47,771
+Bunu bir yaptım.
+
+715
+02:05:50,452 --> 02:05:51,731
+Anlattım bir daha anlatıyorum.
+
+716
+02:05:52,132 --> 02:05:53,332
+Bir oldu.
+
+717
+02:05:55,771 --> 02:05:56,612
+Önemli de onun için.
+
+718
+02:05:57,012 --> 02:05:58,912
+Burası ne oldu?
+
+719
+02:05:59,692 --> 02:06:00,952
+Eksi bir, pidi.
+
+720
+02:06:02,260 --> 02:06:03,440
+n-1'i oldu.
+
+721
+02:06:05,240 --> 02:06:08,300
+Ben şunu biliyorum, bir daha söylüyorum.
+
+722
+02:06:08,480 --> 02:06:13,040
+n-1'den sonsuza, böyle bir geometrik serinin toplamı,
+
+723
+02:06:14,900 --> 02:06:18,160
+ama mutlak değer R'nin birden küçük olduğunu düşünüyorum.
+
+724
+02:06:18,380 --> 02:06:19,560
+Birden küçük zaten değil mi?
+
+725
+02:06:20,820 --> 02:06:26,560
+Bu zaten eksi 1 bölü pi, mutlak değer olarak, birden küçük değil mi bu şart var?
+
+726
+02:06:27,731 --> 02:06:30,231
+O da a bölü 1 eksi r olur.
+
+727
+02:06:31,631 --> 02:06:33,671
+O da şu olur yani, tamam mı?
+
+728
+02:06:34,931 --> 02:06:36,712
+r eksi 1 bölü pi ya.
+
+729
+02:06:39,351 --> 02:06:41,511
+Önemli olduğu için, tamam mı? Bu çıkar.
+
+730
+02:06:44,752 --> 02:06:46,912
+Serinin toplamı, bu çıkar.
+
+731
+02:06:47,091 --> 02:06:50,591
+Bu, real bir sayı çıktığı için de seri toplamı çıkar.
+
+732
+02:06:50,591 --> 02:06:53,192
+Tamam mı? Evet.
+
+733
+02:06:54,131 --> 02:07:10,171
+Yakınsak olur, cevap var. Bakalım, bu dizi verilsin diyor, seriye getirmiş soru tabii, oradaki programlar serilerle ilgili. Peki, genel terimini vermek mi? Hangisi doğrudur diyor, bakalım.
+
+734
+02:07:12,572 --> 02:07:21,271
+Şimdi bunu biraz daha dizilerle de biliyoruz, tamam mı? Şu artı iki oluşturmak ikiyle topladı, biti çıkardım yani. Artı iki, eksi iki.
+
+735
+02:07:21,680 --> 02:07:23,120
+Eksi 1 yaptım, buçuk.
+
+736
+02:07:25,180 --> 02:07:28,680
+Bu 3 en artı 2 olduğu için de burayı 3 en artı 2 ile çarptım, göldüm.
+
+737
+02:07:32,180 --> 02:07:37,040
+Sallama bir kural ama çok kolaylık sağlıyor. Yapabilirsiniz. Test sınıfı.
+
+738
+02:07:38,820 --> 02:07:45,040
+O zaman bunlar aynı olduğu için, şunlar aynı olduğu için, evzer eksi 3 çıkardır.
+
+739
+02:07:46,680 --> 02:07:51,520
+Burası ne çıkar? 1 bölü 1 çıkar. Tamam mı? Son. O zaman evzer eksi 3.
+
+740
+02:07:53,900 --> 02:07:57,780
+1 bölü 3 tamam mı? Ne çıkardır? Evzer eksi 1 çıkar.
+
+741
+02:07:59,347 --> 02:08:03,867
+Bunun limiti, hem de seri eksi 1 çıktı, senin limiti. Ne için, ne soruyor bunu merak etme.
+
+742
+02:08:05,107 --> 02:08:09,847
+Seri için soruyor, tamam mı? Bunun 1 bölü 3 çıkması, bıraksak olduğunu da gösterir biliyor musun?
+
+743
+02:08:12,487 --> 02:08:21,207
+Nerede söylemiş bu çünkü genel teriminin limiti bir sayı olduğundan ayarın, bir yakınsak.
+
+744
+02:08:22,347 --> 02:08:23,228
+En önce terim demiş.
+
+745
+02:08:25,587 --> 02:08:27,188
+O bir yerde devam ediyor arada.
+
+746
+02:08:28,467 --> 02:08:31,868
+Bir saniye. Yani ence terim testine göre de ıraksak olacağım sürekli.
+
+747
+02:08:32,188 --> 02:08:32,507
+Tamam mı?
+
+748
+02:08:33,387 --> 02:08:35,288
+O bir yerde söyleyecek arkadaşlar böyle.
+
+749
+02:08:38,408 --> 02:08:40,148
+Nerede arasın? Bakayım merak edeyim.
+
+750
+02:08:41,988 --> 02:08:43,448
+Neyse ben söyledim.
+
+751
+02:08:43,448 --> 02:08:47,387
+Yani ilk ders arkadaşımın bir soru sormuştu ya.
+
+752
+02:08:47,467 --> 02:08:50,387
+Burada mesela seri olduğu için.
+
+753
+02:08:52,692 --> 02:08:56,171
+Bakın, şu sez ya.
+
+754
+02:08:59,923 --> 02:09:24,444
+Bu, bu seri. Serinin toplamını soruyor. Nedir bu serinin toplamı? Bu çıktı. Ve serinin toplamı olduğu için, tamam mı? Toplamın limiti olduğu için, bu yakınsak başka seri toplamı, aynı değil. Ama yerine baktığımızda var. Bunun genel terimi sıfırdan farklı olduğu için.
+
+755
+02:09:25,268 --> 02:09:46,587
+Enci terim testine göre ıraksak oluyor. Seri ıraksak oluyor arkadaşlar. Dizi değil. Dizi yakınsak oluyor. Dizi yakınsak oluyor ama seri ıraksak oluyor. Neden? Enci terim testine göre sıfırdan farklı çıktığı için. Evet, yakınsak, enci terim testine göre bir şeylik var. Tamamdır.
+
+756
+02:09:46,815 --> 02:09:50,695
+Sahip olarak, onu diyeceğiz. Endüterim testine göre de yıraksak diyeceğiz.
+
+757
+02:09:51,136 --> 02:09:53,355
+Neydi ki artık, daha onu aramaya gerek yok.
+
+758
+02:09:53,895 --> 02:09:57,515
+Buna baktık, bu da böyle, klasik sorulardan birin.
+
+759
+02:10:04,627 --> 02:10:06,967
+Devam ediyorum. Toplamı soruyor.
+
+760
+02:10:09,667 --> 02:10:11,587
+Bu, böyle serilere tamam bu.
+
+761
+02:10:12,027 --> 02:10:13,927
+N artı 1 çarpı N artı 3 tamam mı?
+
+762
+02:10:13,927 --> 02:10:15,287
+Teleskopik seri diyoruz.
+
+763
+02:10:17,827 --> 02:10:19,847
+Bunu böyle çarpmalara ayırabiliriz tamam mı?
+
+764
+02:10:22,567 --> 02:10:27,027
+Sonra bunu da, bakın, şurada yapayım yine bir daha.
+
+765
+02:10:27,187 --> 02:10:27,967
+Tamam mı? Bir daha yapayım.
+
+766
+02:10:28,107 --> 02:10:29,547
+Çünkü çok klasik bir soru oldunca.
+
+767
+02:11:01,939 --> 02:11:07,239
+Aya nabı çak.
+
+768
+02:11:23,444 --> 02:11:40,623
+Burada, bakın bak güzelce hiç şey yapıldanmadım, güzelce şey yapıyorum. Bakın, mavi alalım. Bakın, şurada birbiri götürüyor değil mi şurada baktığım zaman. Enli olan terimler nedir? A artı B değil mi?
+
+769
+02:11:44,532 --> 02:11:45,471
+3A artı B.
+
+770
+02:11:47,971 --> 02:11:51,032
+Bu dörde eşit. Bu dörde eşit demek, burası dört demek.
+
+771
+02:11:52,032 --> 02:11:53,391
+Burası sıfır demek.
+
+772
+02:11:54,311 --> 02:11:54,851
+Tamam mı?
+
+773
+02:11:56,211 --> 02:11:59,171
+Bu çözüldüğü zaman, yani iki bilmeyen denklem artmış, ödemeyen.
+
+774
+02:12:00,171 --> 02:12:00,652
+Olmaz.
+
+775
+02:12:02,791 --> 02:12:04,532
+A ve B ne çıkmış onu söyleyeyim.
+
+776
+02:12:08,051 --> 02:12:11,291
+Evet, burada, A2 çıkmış.
+
+777
+02:12:13,631 --> 02:12:16,671
+N artı 1 önce mi söylemiştik? Bakalım, N artı 1'i zannettim mi?
+
+778
+02:12:16,871 --> 02:12:22,491
+Ona bakalım. Evet, A demek ki 3 çıkmış, tamam mı? Buradan anlıyoruz.
+
+779
+02:12:24,071 --> 02:12:27,651
+2 çıkmış, pardon, A2 çıkmış, B'de eksi 2 çıkmış. Onu buluruz artık.
+
+780
+02:12:27,791 --> 02:12:33,271
+Tamam, burada zaten videoda var ve aynı zamanda benim abis sayfamda da var bunlar artık.
+
+781
+02:12:33,991 --> 02:12:34,451
+Baktık.
+
+782
+02:12:34,963 --> 02:12:47,543
+Yerlerine koyduk. Devam edin. Bunu çok böyle, çok klasik diyorum ya, çıkmasında beklediğim bir soru bilemiyorum daha. Evet. En yerine bir koyduk tabii. Kaçtan başlıyorsun? Tamam bir koyduk.
+
+783
+02:12:50,163 --> 02:12:54,283
+2, 2 parantezine dalıp dışarıya koyabiliriz hepsini düşünüyorum. Tamam mı?
+
+784
+02:12:54,463 --> 02:13:02,283
+1 bölü 2, eksi 1 bölü 4, artı 1 bölü 3, eksi 1 bölü 5, artı 1 bölü 4, 1 koydum, 2 koydum, 3 koydum, bunları yazdım.
+
+785
+02:13:02,604 --> 02:13:10,024
+Bakıyorum ki, böyle yapınca bakın, belli bir yerden sonra gitmeler başlıyor. Nasıl?
+
+786
+02:13:11,804 --> 02:13:13,484
+Bakın, bunu yazdıktan sonra bakın.
+
+787
+02:13:15,344 --> 02:13:17,703
+1 bölü 4, onunla gitmiş.
+
+788
+02:13:18,644 --> 02:13:42,844
+1 bölü 3 gitmemiş. Daha sonra burada yaptığımız zaman illaki 1 bölü 5 gelecek. Tamam mı? Yani bu hepsi gidiyor bundan sonra. Tamam mı? Buraya kadar gidiyor. Birkaç tane daha terim yapın emin değilseniz. Bu da gidiyor. Ne kalıyor biliyor musunuz? Bunlar gidiyor. 2 var, 1 bölü 2 var, 1 bölü 3 var. Şu gitmemiş yalnız.
+
+789
+02:13:46,260 --> 02:13:57,260
+Çünkü bunu götürecek ileride bir terim yok. Tamam mı? Bir böyle ne yapayım? Tamam mı? Bu şekilde bir terim daha. Zaten baktığınız zaman zaten. Bu n artı 2 kalıyor.
+
+790
+02:13:59,739 --> 02:14:10,019
+n artı 3 kalıyor. Bu n artı 1 nasıl gidiyor? Onu gösterelim. Bir terim daha yazarsak. 1 bölü 5, eksi 1 bölü 6.
+
+791
+02:14:13,108 --> 02:14:16,668
+Tamam mı? Yani 1 bölü 6 ile gidiyor. 1 bölü 5 kalıyor.
+
+792
+02:14:19,427 --> 02:14:21,148
+Evet, buradan sonra geçtik.
+
+793
+02:14:22,088 --> 02:14:24,288
+1 bölü n, 1 bölü n artı 2.
+
+794
+02:14:26,068 --> 02:14:29,288
+Bundan öncekilerde, bir öncekinde yazalım. 1 bölü n eksi 1.
+
+795
+02:14:31,828 --> 02:14:33,188
+1 bölü n artı 1.
+
+796
+02:14:33,507 --> 02:14:36,108
+Bundan dolayı da bu gibi. Bir önceki terimde yazdım.
+
+797
+02:14:36,108 --> 02:14:38,868
+Bundan öncekilerde gidiyor.
+
+798
+02:14:39,028 --> 02:14:40,708
+Bunu götüren bir şey kalmıyor ama.
+
+799
+02:14:41,844 --> 02:14:46,244
+Birkaç terim daha yazmak lazım burada. En artı 2, en artı 3 kalıyor, şu kalıyor.
+
+800
+02:14:47,724 --> 02:14:52,184
+Sonra bunun da limiti en sonsuza giderken bu sıfıra gider, bu sıfıra gider.
+
+801
+02:15:07,923 --> 02:15:31,463
+En eşittir birden sonsuza, bunun toplamını soruyor. O zaman iki bölümde yapacağız. Parçalayacağız bunu. Bir bunu buna bölerek, bir de bunu bunu bölerek. Bu parçada ikisinin ayağıyla toplamını bulacağız. Bu nedir? 1 bölü 2 üzeri en eksi 1.
+
+802
+02:15:33,268 --> 02:15:40,788
+Bunun toplamı ne oluyor biliyor musunuz? A burada bir zaten olmadığı için. Bir çarpı, bir bölü, bir bölü iki, bir eksi, bir bölü iki oluyor. Tamam mı?
+
+803
+02:15:41,988 --> 02:15:54,587
+Bu bir iki çıkar yani burası. Burası iki çıkıyor arkadaşlar. Bu da bir, yine birden başlıyor. Yalnız burada bir n-1 yok. n-1 yapmak için ne yapalım biliyor musunuz?
+
+804
+02:15:56,368 --> 02:15:58,728
+Bu eksi, olmaz yani bu şekilde.
+
+805
+02:15:59,444 --> 02:16:02,004
+Eksi 1 bölü 2 ile çarpıp ölelim.
+
+806
+02:16:05,587 --> 02:16:07,167
+Yani şöyle yapalım.
+
+807
+02:16:09,527 --> 02:16:13,447
+Dediğimi anlatabilirsem mutlu olacak bu eksi 1. Tamam mı? Böyle bir şeyle çarpalım.
+
+808
+02:16:13,587 --> 02:16:17,327
+Niye biliyor musunuz? Niye? O önemli. Çünkü en olumlu olman o formü.
+
+809
+02:16:17,787 --> 02:16:19,307
+Şuranın en eksi 1 olmasını aldık.
+
+810
+02:16:19,887 --> 02:16:24,087
+Yani ne olur biliyor musunuz? Şurasını 2 bulduk. Şuraya koyduk seferine bak.
+
+811
+02:16:24,307 --> 02:16:25,147
+Bakalım buraya.
+
+812
+02:16:26,147 --> 02:16:27,907
+En eşittir birden sonsuza
+
+813
+02:16:27,907 --> 02:16:31,667
+eksi 1 bölü 2
+
+814
+02:16:32,147 --> 02:16:57,768
+Kalsın, bu A1. Burası da, eksi 1 bölü 2 üzeri, n-1 olur. Bu da, A-1 bölü 2, çarpı 1 bölü, 1-1 bölü 2, tamam mı? Yani, eksi 1 bölü 2, şurası ne olur? 3 bölü 2, yani 2 bölü 3.
+
+815
+02:16:59,443 --> 02:17:05,843
+Eksi 1 bölü 3 buldum buraya arkadaşlar. Burasını 2 bulmuştum, burayı da eksi 1 bölü 3 oldu. Bakalım doğru mu yapmıştum?
+
+816
+02:17:07,243 --> 02:17:11,363
+Bunu da toplarsak 5 bölü 3 çıkartıyor. Önce bir kendimi hem de çıkartayım.
+
+817
+02:17:12,943 --> 02:17:17,183
+Bakalım 5 bölü 3 seç yapmaya gerek. Evet 5 bölü 3 çıkıp tamamlanıyoruz.
+
+818
+02:17:19,283 --> 02:17:23,804
+Evet bu şekilde tamam mı? Yapıyoruz. Bazı şeyleri var. Dikkatli olmanız lazım.
+
+819
+02:17:24,111 --> 02:17:40,752
+Bakın hem videoda var, hem benim avestim sayfamda var. Bunlara bir daha bakarsınız. Eğer yine anlamadıysanız bana resmeni çekip, mail ile atabilirsiniz, whatsapp şeyden atabilirsiniz. Tamam mı? Mail adresime de gönderebilirsiniz. Ben cevabını kıl. Dönüyorum.
+
+820
+02:17:41,556 --> 02:17:52,796
+Aşağıdakilerden kaç tane seri ama dikaitin dizi değil ha, genel terminü aldım falan yok. Genel terminü alın tabii de sıfırdan çıkarsa iyi.
+
+821
+02:17:55,596 --> 02:18:05,536
+Evet, bugün güzel bir dizi ve seri uygulaması yaptık. Daha önceden zaten klasik sorular çözmüştü geçen hafta. Yarın şey yapıyorum.
+
+822
+02:18:07,700 --> 02:18:15,299
+Bu zaten çözebildiğim kadar çözdük. Gerisini de bakın diyeceğim o vaysi sayfanda. Yarın parametrik ve kutupsallara başlıyorum arkadaşlar.
+
+823
+02:18:21,747 --> 02:18:40,327
+Şey bilmiyorum, sınav hakkında bilgim yok. Nisan'da biliyorsun, yok, karar alacak. Eğer hibrite eğitime geçti derse, sınavın yüzde olma ihtimali çıkar. Yok, eğer online devam edecek ders açıdan, o zaman sınav online olur. Yani herhangi bir şey.
+
+824
+02:18:40,327 --> 02:18:44,247
+Hibrite geçerse dersler, yüzeye alınacak dersler de var mı?
+
+825
+02:18:45,147 --> 02:18:47,948
+Yani hayır, ben burada sakın, bu değil de ben...
+
+826
+02:18:47,956 --> 02:18:58,596
+Şöyle, hibrit eğitime geçerse, normal olarak uygulamayan, salı günleri yüzüze olacak, pazartesi online. Öyleydi zaten program, deprem olmasaydı.
+
+827
+02:18:59,815 --> 02:19:04,315
+Programımız öyleydi, yani deprem olmasaydı, Allah yardımcımız olsun tabii.
+
+828
+02:19:04,596 --> 02:19:10,435
+Hocam peki yani, mesela geçerse de nasıl yapacak, yurtlardan deprems edilir, çıkartıp öğrencileri mi alacak?
+
+829
+02:19:12,051 --> 02:19:32,891
+Anlamadım. Bilmiyorum. Bakın şimdi benim dediğimden bir polemik yaratmayın. Ben net bir şey söylemiyorum. Ben şimdi bana burada konuşturup da, hoca şöyle bir şey demiyorum. Yani bir ihtimal söylüyorum. Yani ben yok ne alacak alma derkeni bilmiyorum. Beni suçlu duruma getirme. Yani ben diyorum ki eğer diyorum derlerse ki.
+
+830
+02:19:33,492 --> 02:19:57,492
+Bilmiyorum yani, sen şimdi gelip siyasi şeyler soruyorsun. Derlerse ki, yarısı yüzde, yarısı online olacak filan hani, o zaman olursa, o zaman sınav yüzde olur. Buradan çıkıp da, aa bir hoca yüzde, yok ya alakası yok, dediğime de pişman oldum. Yani, onu demek istemiyorum. Yani, ihtimal, bilmiyorum yani.
+
+831
+02:19:57,492 --> 02:19:59,731
+Yok hocam, lütfen pişman olmayın.
+
+832
+02:20:00,000 --> 02:20:02,000
+Öyle demek istemedim.
+
+833
+02:20:02,060 --> 02:20:08,760
+Yok yok, gayrı, şey diyorsun ya, böyle onunca depremde olmayanlar, evde olmayanlar, yani ben onu bilmiyorum.
+
+834
+02:20:09,000 --> 02:20:11,159
+Ben bir ihtimal üzerinde duruyorum.
+
+835
+02:20:11,159 --> 02:20:16,799
+Yani çünkü bize net olarak online veya yüzde söylenmedi, onun için söylüyorum.
+
+836
+02:20:17,587 --> 02:20:21,628
+Şimdi buradan bir yorum yapmıyorum yani, anlatabiliyor muyum?
+
+837
+02:20:21,628 --> 02:20:22,808
+Evet hocam, haklısınız.
+
+838
+02:20:23,047 --> 02:20:27,087
+Olmasaydı diyorum deprem, şöyle diyorum, Allah gösterir, bu büyük bir feraket.
+
+839
+02:20:27,567 --> 02:20:33,168
+Olmamış olsaydı deprem, ben ondan bahsediyorum ki videoda kayıtlı olsun ki ben de suçlu duruma düşmeyeyim.
+
+840
+02:20:33,668 --> 02:20:39,347
+Ben böyle bir yorum yapmıyorum yani diyorum ki deprem olmasaydı, salı günü yüz yüzeydi.
+
+841
+02:20:40,435 --> 02:20:44,115
+Anladın mı? Ben onu söylüyorum. Salı günde 2 saat 100 cüzey.
+
+842
+02:20:44,115 --> 02:20:45,015
+Ben anladım hocam.
+
+843
+02:20:45,655 --> 02:20:51,435
+Pazartesi online. Ben karar almış gibi benimle tartışmadım. Ben bilmiyorum ki ne olacaktı.
+
+844
+02:20:51,675 --> 02:21:00,216
+Onu demek istemiyorum. Yarın çıkar ne olacağı bilmiyorum. Der ki mesela bir karar alınır. Alınır diyorum. O zaman der ki mesela yarı yarı olacak.
+
+845
+02:21:00,396 --> 02:21:05,655
+Tabii öyle bir şey alınca da burada olmayan insanlar var, yurtta çıkmış insanlar var. O da biraz zor tabii.
+
+846
+02:21:06,415 --> 02:21:29,675
+Yani öyle bir karar almaları da çok zor çünkü, yani bilemiyorum tabii. Ne alırsa biz ona uyacağız. Ama şunu söylemek istiyorum, ben hepsini geri alarak sınav hakkında bilgim yok yani. Online mi, yüz yüze mi? Bize net bildirilmedi. Anlatabiliyor muyum? Siz her ihtimale karşı da hazır olun. Yüz yüze de olabilir, online de olabilir. Bilemiyorum yani.
+
+847
+02:21:30,899 --> 02:21:53,939
+Bilmediğim bir şey söylemek, tamam mı? Bize söyleseydin, öğrencilere şöyle söyleyeyim, ben de size söylerdim. Bilmiyorum. Ama şu andaki ihtimal, online olma ihtimali çok yüksek tabii. Onu söyleyeyim. Net söylenmediği için. Anlatabiliyor muyum? Yoksa, yok, kunuğu almış, bu almış, ben kararlar niye tartışacağım? Ne alırlarsa ona göre biz davranırız.
+
+848
+02:21:57,363 --> 02:22:08,843
+Her şeyi onlar daha iyi bilir tabii. Yani üstteki makamlar daha iyi bilir. Ne olursa ona göre davranacağız. Bize yüz yüze derlerse, yüz yüze, onların derlerse, onların yapacağız.
+
+849
+02:22:09,504 --> 02:22:13,484
+Şimdi bakıyoruz. Aşağıdaki serilerden kaç tanesi yakın ser? Bakalım.
+
+850
+02:22:15,796 --> 02:22:21,815
+Baktığımız zaman, zaten şunun yakınsak olduğu böyle açık. Neden biliyor musunuz? Bu bir geometrik seriye gidiyor.
+
+851
+02:22:22,056 --> 02:22:27,855
+El süsü ve altı sallarsan, bir şey yapmak için. Çünkü 1 bölü 3, burada böyle bir şey var, tamam mı?
+
+852
+02:22:28,775 --> 02:22:36,695
+Bunun birden küçük olduğu, direkt yakınsak olduğu gözüküyor. Buna baktığımız zaman da köken.
+
+853
+02:22:37,536 --> 02:22:42,476
+Bunu da tabii deneyeceğiz. Bunun da ıraksak olduğu gözüküyor. Niye biliyor musunuz? Şöyle.
+
+854
+02:22:43,219 --> 02:22:59,859
+Bir bölü köken, o da, yani bir bölü köken de şey yapar, limit mukayese yapar, tamam mı? Limit, an bölü, tamam mı? Buna bakarız yani.
+
+855
+02:23:02,520 --> 02:23:05,520
+Bunun limitini aldınız, tamam mı? Limit mukayese testi de var.
+
+856
+02:23:09,268 --> 02:23:10,567
+Buradan da birçikar.
+
+857
+02:23:15,860 --> 02:23:23,860
+Evet, baktım. Bu da bir çıktı. Bir çıktığı zaman sıfırdan farklı çıktığı için, tamam mı? Sıfırdan farklı bir real sayı çıktı. İkisi aynı karakter.
+
+858
+02:23:23,860 --> 02:23:26,860
+Burada ıraksak deriz. Bu gitti. Çünkü...
+
+859
+02:23:27,540 --> 02:23:54,260
+Dedim ya, şöyle küçük sayıları atarsanız, serinin karakteri değişmez. Atıp bakarsınız, oran edersiniz, 1 çıktı. Sonsuz böyle sonsuzdan, tamam mı? O zaman bu, ıraksak olduğu için, çünkü neden? Niye ıraksak olacağım derseniz, şöyle. En üstüne 1 bölü 2, P, tamam mı? P eşit de 1 bölü 2. Birden, 2 eşit olduğu için ıraksak olur. P serisi, tamam.
+
+860
+02:23:55,156 --> 02:24:11,976
+Geldik. Bu da yakınsak, biliyoruz geometrikleri. Şuna, 3 bölü 2. Bunun da yakınsak olduğu bendir. Çünkü attınız bunu, tamam mı? Attınız, bu kaldı. Bunu yine limit mukayese yaptık, tamam mı? Limit mukayese yaptık.
+
+861
+02:24:13,835 --> 02:24:17,156
+Bir bölü, en üzeri 3 bölü 2, tamam mı? 3 bölü 2.
+
+862
+02:24:18,515 --> 02:24:45,056
+Bu seriyle, bu kayseriyle, bunun yakınsak olduğunu biliyoruz. Neden yakınsak çocuklar? P eşittir 3 bölü 2. Büyük bir olduğu için yakınsaktır. P serisi. O zaman bunu oranladığımız zaman da limit 1 çıkar. Ben size söyleyeyim tamam mı? 1 çıkar. Sıfırdan farklı bir sayı olduğu için, veya sayı olduğu için. İki seri aynı karakterlerdir. Bu yakınsak olduğunu bilir, bu da yakınsak. Tamam.
+
+863
+02:24:49,587 --> 02:24:59,067
+Buna baktık, evet, burada baktık, bu ıraksak, bu, mesela buna baktık, en üzeri 5, şunu attık, en üzeri 5 serisiyle yakınsak, tamam mı?
+
+864
+02:24:59,567 --> 02:25:07,768
+Bu, 3'ü at, 2'ye at, 1 böleğenle yap, tamam mı? Buna yaptığın zaman harmonik seriyle, ıraksak olacak, tamam mı?
+
+865
+02:25:08,768 --> 02:25:12,927
+Oranladığımız zaman, değil mi? Buna baktığımız zaman da, bu zaten.
+
+866
+02:25:14,324 --> 02:25:17,324
+Genel terimin limiti, sonsuz çıkmış yapmaya gerek yok.
+
+867
+02:25:17,604 --> 02:25:22,804
+En bir terim limiti dersinden, sonsuz çıkmışı zaten ıraksak, sıfırdan fark edecek.
+
+868
+02:25:23,664 --> 02:25:27,844
+Evet, böyle. 5'te, bunun hepsini bu şekilde inceleyebiliriz.
+
+869
+02:25:28,684 --> 02:25:29,443
+Buna baktık.
+
+870
+02:25:30,324 --> 02:25:32,544
+Artık bunlar bazı şeyleri hızlı çözmek zorundayım.
+
+871
+02:25:32,664 --> 02:25:33,884
+Çünkü geometrik seriye gidiyor.
+
+872
+02:25:35,304 --> 02:25:38,844
+Bunu bir çıkartın.
+
+873
+02:25:39,044 --> 02:25:40,044
+Buna bir ekleyin.
+
+874
+02:25:41,683 --> 02:25:53,243
+Birden başlatır. Tamam mı? Ne oluyor? 2 çarpı, 1 bölü 3 üzeri, n artı 1. 2 çarpı, 1 bölü 3.
+
+875
+02:25:58,004 --> 02:26:00,304
+n-1, 1 bölük, derif kare.
+
+876
+02:26:04,500 --> 02:26:25,180
+Şöyle yapacağız. Tamam mı? İlk terim ne olacak? Tamam mı? Şu olacak. İki çarpı bir bölü dokuz. Bir bölü bir eksi tamam mı? Toplam bulmak ister. Bir eksi bir bölü işleyeceğiz. Uzatmayalım. Yakınsak yani. Yakınsaklık. Buna gerek de yok. Toplam işlem yok. Tamam. Geçiyorum.
+
+877
+02:26:28,275 --> 02:26:47,095
+Aşağıdaki serilerden kaç tanesi bu seriyle aynı karakterlerdir diyor. Şu nedir? Okuyamadım bir dakika. Bakalım. Bu seri nedir? 3 bölüm. Bir çizgi yazayım da 3 bölüm. Şu kaç? Şöyle bir şey söylemiştim. Küp göken kareymiştim.
+
+878
+02:26:51,476 --> 02:27:14,815
+Tamam şu. Burada dursun. Evet, hangisi aynı karakterde diyor. Ben şunu söylemek istiyorum. Şu 3'ü attığınızı düşünün arkadaşlar. Tamam mı? 3. Bu 3'ü de hiç düşünmeyin. 1 bölü, en üzeri 2 bölü 3. Bunun ıraksak olduğunu biliyoruz. Neden? P serisi, 2 bölü 3, birden.
+
+879
+02:27:15,412 --> 02:27:24,792
+Küçük eşit olunca ne oluyor? Dıraksak olur. Değil mi? Bıraksak olur. Tamam. Dıraksak, aynı karakterdi. Bakalım. Bu da evet, bu da yıraksak. Değil mi?
+
+880
+02:27:25,971 --> 02:27:36,792
+Buna baktık. Burada, istersek şey yaparız. Tamam mı? Mesela bunu bir böyle en kareyle de mukayese edebiliriz. Tamam mı? En karenin yanında en önemi yok.
+
+881
+02:27:37,051 --> 02:27:41,092
+Deyip, bunun yakınsak olduğuna, bunun da yakınsak olduğunu gösterebiliriz. Bu değil.
+
+882
+02:27:42,548 --> 02:27:50,907
+Buna baktık, en üzeri 1 bölü 2, tabii ki çünkü 1 bölü 2, bu 2 bölü 3, bu da birden küçük, sayıp biri atarım.
+
+883
+02:27:52,648 --> 02:28:06,288
+Bu seriyle limit mukayese yaparım. 1 çıktı, yine ne olur? Bıraksak olur, bu da okey, bıraksak. Buna baktık, 4, bu ne? 3 üzeri, buna yakınsak zaten.
+
+884
+02:28:06,868 --> 02:28:32,328
+Peki bu 1 bölü 2 var arkadaşlar, yarışa, yani geometrik seri, bu da 1 bölü 3 var. Bu da 1, olmaz. Bu da olmaz. Bu 1 bölü 3 üzeri, bu ne artı 2 üzeri? Bu melez yani, bu yakınsak, bu 2 olduğu için ıraksak, geometrik seri ama mutlak değer 2 birden değil tabii. Bu değil, dolayısıyla.
+
+885
+02:28:33,556 --> 02:28:37,216
+Bu ıraksak, ikisini toplamı ıraksak olur. Bu daha incele olur.
+
+886
+02:28:37,855 --> 02:28:42,655
+1, 3, 4. Burada çözümleri de var. Bakarsınız.
+
+887
+02:28:44,655 --> 02:28:46,536
+3 diye yazdık. Bakalım.
+
+888
+02:28:48,335 --> 02:28:49,175
+Evet, baktık.
+
+889
+02:28:50,636 --> 02:28:53,456
+Evet, baktık. 3 cevabına bakalım. Geçelim.
+
+890
+02:28:56,636 --> 02:28:57,515
+Evet, bakıyoruz.
+
+891
+02:28:58,772 --> 02:29:00,692
+Cevap C. 3 seriler, yakın.
+
+892
+02:29:02,892 --> 02:29:03,992
+Buna bakalım.
+
+893
+02:29:05,832 --> 02:29:10,332
+En eşittir birden sonsuza 2 artı, siniz, en kare bölü, 1 artı, en kare.
+
+894
+02:29:17,236 --> 02:29:24,216
+Serisinin karakteri, evet, bu kayese deneyim. Serisinin karakteri, bakıyoruz.
+
+895
+02:29:25,736 --> 02:29:31,916
+Bu kayese deneyeceğiz, sinüs, böyle sinüs, kosünüs olduğu zaman niye biliyor musun? Çünkü sinüs, eksi bir de artı bir arası.
+
+896
+02:29:31,916 --> 02:29:33,836
+Tamam mı? Bakın.
+
+897
+02:29:35,816 --> 02:29:39,756
+Şimdi dikkat edin, biz sinüs en fazla hangi, kaç değeri alır arkadaşlar?
+
+898
+02:29:40,836 --> 02:29:42,596
+Bir değeri alır değil mi? En fazla.
+
+899
+02:29:44,915 --> 02:29:49,055
+O zaman bunu en fazla bir değerle alır.
+
+900
+02:29:51,095 --> 02:29:58,455
+Demek ki şu seri, buna bir korsak, 3 bölü, en kareden, bakın dikkat edin lütfen arkadaşlar buraya.
+
+901
+02:29:58,975 --> 02:30:03,575
+Alacağı en büyük değer bir, birden büyük değer alamaz. Ama küçük alabilir.
+
+902
+02:30:04,395 --> 02:30:08,395
+Demek ki bu değer, alacağı bu değer,
+
+903
+02:30:09,332 --> 02:30:34,992
+3 bölü 1 artı n kareden küçük eşittir. Doğru. O zaman buna bakacağız. Bunun yakınsak olduğunu gösterirsek, bu da yakınsak olacak. Gösterebiliriz. Niye göstermeyelim? Birisiyle 3 de önemi yok. 1 bölü n kareye bakalım. Bunun yakınsak olduğunu biliyoruz. Çünkü P serisi. Büyük 1 olduğu için yakınsak. Oran yaparsak.
+
+904
+02:30:35,412 --> 02:30:41,152
+Pozitif bir sayı çıktığı için iki seri aynı karakterde, bu yakınsak, bu yakınsak da bu da yakınsak deriz, biter.
+
+905
+02:30:41,612 --> 02:30:46,452
+Demek ki böyle sinüs, kosinüs kare olduğu zaman tamam mı? Mukayese testini deneyelim.
+
+906
+02:30:47,731 --> 02:30:50,792
+Kosinüs de olsaydı mukayese testini deneyelim. Peki buna baktık.
+
+907
+02:30:52,492 --> 02:30:55,272
+Buna baktık. Böyle bir seri var.
+
+908
+02:30:57,683 --> 02:31:03,883
+Şöyle şeylerde her zaman için fonksiyonu şey olarak düşünmeyin, tamam mı? Eni tam sayı olarak düşünmüyorlar.
+
+909
+02:31:04,484 --> 02:31:07,123
+1, 2, 3, 4 sonsuza giderken kosmüs, mpi.
+
+910
+02:31:27,507 --> 02:31:44,448
+Evet, burada artık, arkadaşlar, şu kalan kısmını da yarın tamamlar, ondan sonra parametriklere geçerim, hadi sizin için. Aslında bunları size ödemeyecektim ama yarın devam edelim, tamam mı? Allah'a emanet olun, yarın görüşmek üzere.
