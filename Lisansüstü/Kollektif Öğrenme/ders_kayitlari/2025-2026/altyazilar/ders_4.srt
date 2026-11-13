@@ -1,0 +1,3627 @@
+1
+00:00:26,707 --> 00:00:27,867
+Günaydın arkadaşlar.
+
+2
+00:00:29,628 --> 00:00:33,147
+Günaydın hocam.
+
+3
+00:00:36,564 --> 00:00:38,564
+Ben hoşgeldiniz.
+
+4
+00:00:44,243 --> 00:00:49,364
+Şimdi ben deki sırayla gideceğim.
+
+5
+00:00:52,683 --> 00:00:59,344
+O sırayla kameranızı açıp sunumunuzu açıp bize göstereceksiniz.
+
+6
+00:01:00,123 --> 00:01:02,683
+Bir saniye bekletiyorum şimdi.
+
+7
+00:01:37,396 --> 00:01:54,956
+[öğrenci] burada mı? [öğrenci]. Evet hocam buradayım. Evet başlayabilirsin [öğrenci]. Kamera açayım mı hocam? Evet. Tamamdır. Hoşçakalın.
+
+8
+00:01:58,004 --> 00:02:00,004
+Tamam, kameran geldi.
+
+9
+00:02:01,004 --> 00:02:03,004
+Slight'ı açacağım hemen.
+
+10
+00:02:22,451 --> 00:02:24,611
+Tamam mı hocam?
+
+11
+00:02:25,591 --> 00:02:26,292
+Evet, geldi.
+
+12
+00:02:27,731 --> 00:02:29,292
+Merhaba herkese.
+
+13
+00:02:30,411 --> 00:02:41,312
+Bu sunuluşa tez yılı veri seti üzerinde, daha doğrusu tez veri seti üzerinde tez yılını kollektif öğrenme metotlarıyla tahminlemeye çalıştık.
+
+14
+00:02:41,971 --> 00:02:43,132
+Çalıştım daha doğrusu.
+
+15
+00:02:44,723 --> 00:03:08,423
+Problem genel olarak başlık ve özet bilgilerini kullanarak bir tezin hangi yılda yayınlandığını tahmin etmeye çalışmak. Ama genel olarak tez konuları biraz daha yıllara yayılan bir trend gibi olduğundan dolayı başarı şansımız da düşük olmasıyla beraber tahminlemek oldukça zor burada.
+
+16
+00:03:10,195 --> 00:03:21,555
+Böyle bir şey açmamız gerekiyordu. Rastgele bir tahmin yaptığımızda bunun doğru çıkma ihtimali %4 civarında oluyor.
+
+17
+00:03:23,395 --> 00:03:31,255
+Burada ilk başta veriyi ödevdeki talimatlara göre parçaladım.
+
+18
+00:03:32,475 --> 00:03:36,995
+%50 eğitimi, %50 test olacak şekilde her yıl için 250-250.
+
+19
+00:03:37,812 --> 00:03:48,792
+Burada 2025 yılı için veri yoktu. O yüzden ödev şeyinden farklılık 12.000 veri oluştu. Burada sadece öyle bir farklılık var.
+
+20
+00:03:48,792 --> 00:04:03,052
+3 tabanlı Türk E5 larj modeliyle her tez için aslında 1024 boyutlu özellik vektörleri çıkarttım.
+
+21
+00:04:04,276 --> 00:04:22,576
+Bu vektörü çıkartma amacımız aslında ilk başta bahsettiğimiz zorlukla trendi yakalamak için aslında anlamsal ilişki kurarak, bu model kelimeler arasında anlamsal ilişki kurarak bir anlam vektörü çıkarıyor gibi bir şey oluyor.
+
+22
+00:04:22,576 --> 00:04:32,056
+Burada üç farklı şekilde çıkarttım. Sadece özet ve başlık ve özet olacak şekilde. Üç farklı verimiz oldu.
+
+23
+00:04:32,276 --> 00:04:53,556
+Burada vektörlerin genel olarak dağılımını uzay uzayda çözdirdim. Burada görüldüğü üzere aslında yıllar içerisinde çok fazla dağılım var. O yüzden kullandığım ağaç algoritmasına tam olarak yüksek bir başarıya çıkamadım.
+
+24
+00:04:54,355 --> 00:05:08,216
+Aslında şu öncelikle algoritmaları bahsedeyim. Ben Random Forest'ta özelliklerin tamamıyla rastge kısmına bakarak, 1024 özelliğin tamamıyla bakmak yerine daha azına bakarak...
+
+25
+00:05:08,216 --> 00:05:10,295
+Buraları geçebiliriz.
+
+26
+00:05:11,036 --> 00:05:22,076
+Tamamdır. Hiperparametre optimizasyonunda Agreed Search CV kullanarak tahminleyici sayısını birden fazla tahminleyici sayısıyla optimize etmeye çalıştım.
+
+27
+00:05:22,355 --> 00:05:27,816
+Algorithmada Random Forest algoritması için ağaç derinliği de yine aynı şekilde.
+
+28
+00:05:29,115 --> 00:05:42,235
+Random Subspace için maksimum örnekleme sayıları belirledim birden fazla ve buna göre birden fazla model eğiterek en iyisini bulmaya çalıştım.
+
+29
+00:05:42,896 --> 00:05:45,276
+Yine özellik seçim miktarında da aynı şekilde.
+
+30
+00:05:45,276 --> 00:05:48,276
+Burada eğittikten sonra...
+
+31
+00:05:49,204 --> 00:06:06,744
+Modeller genel olarak bu şekilde karşılaştırdım. Genel başarı oranı %4'dan yüksek çıktığı için aslında modeller rastgele bir tahmin yapmaktan daha iyi sonuç üretti. Ama yine de çok düşük bir doğruluk oranı oluştu.
+
+32
+00:06:07,252 --> 00:06:26,712
+Burada ilginç olarak şey fark ettim. Karmaşık matviselerini çizdirdiğimde aslında verilerin tamamen rastgele davamak yerine belli bir yere yakınsadığını fark ettim. Burada şu özetle özetli başlık bilgisine daha da belirgin bir şekilde oluştu.
+
+33
+00:06:34,548 --> 00:06:44,007
+Yanlış bilse bile örneğin 2004 veya 2001 deyip aslında yakın bir yıl üzerinde geziyor yine ve böyle bir kümeler oluşmasına sebep oluyor.
+
+34
+00:06:45,007 --> 00:06:51,867
+Burada aslında biraz trendi kümelemiş olduğunu düşünüyorum.
+
+35
+00:06:54,163 --> 00:07:07,143
+Değerlendirme kısmını özellikle çıkarırken belki Transformer yerini anlamsal kullanmak yerine TF-IDF diye başka bir yöntem gördüm.
+
+36
+00:07:07,143 --> 00:07:18,323
+Bu yöntem kelimelerin birbiriyle anlamları yerine daha çok anahtar kelimeler üzerinden çıkarak yani anlam yerini keyword üzerinden.
+
+37
+00:07:19,379 --> 00:07:33,399
+Bu sayede aslında belki daha bazı kelimelerin çok fazla tekrar etmesiyle özetlerde ve başlıklarda belli yılların daha iyi gruplanmasını sağlayabilirdik belki.
+
+38
+00:07:33,399 --> 00:07:37,399
+Bunun dışında genel olarak...
+
+39
+00:07:38,612 --> 00:07:50,112
+Hesap kısmında da şey yapabilirdik aslında. Ağaçların derinliği verinin özellik boyutuna göre çok az kalmış da olabilir.
+
+40
+00:07:51,132 --> 00:07:58,252
+Niye öyle bir seçim yaptın [öğrenci]? Yani 10 seçmişim mesela. 10 çok az bir derinlik değil mi? Yani 1024 boyutlu bir şey var elinde.
+
+41
+00:07:58,252 --> 00:08:05,312
+Evet, evet. Onun için söyledim. Çok daha derin bir ağaçta...
+
+42
+00:08:05,312 --> 00:08:06,391
+Niye öyle bir şey denemedin?
+
+43
+00:08:06,612 --> 00:08:23,252
+Ben şey hocam, şeyde biraz 20-30 derinliklere doğru şey yaptım. Gitmeye çalıştım ama çok çok yavaşladı. Eğitim süreleri çok uzamaya başladı bir anda. Çok uzun eğitim şeylerini yapamadım o yüzden.
+
+44
+00:08:23,971 --> 00:08:25,512
+Şu anda ne kadar sürüyor mesela?
+
+45
+00:08:26,259 --> 00:08:31,579
+Şu an 10 derinlikte bile yaklaşık 40 dakika sürdü bende.
+
+46
+00:08:32,279 --> 00:08:34,940
+Bir tane ensemble eğitmek 40 dakikamı sürüyorum.
+
+47
+00:08:35,412 --> 00:08:52,471
+Evet hocam. Ya ben kod kısmında birazcık sorunu yaşadım bilmiyorum. Çünkü çok fazla bekletti. 25 denemiştim sanırım sonrasında. Çok fazla beklettiği için şey yapamadım.
+
+48
+00:08:52,471 --> 00:08:57,711
+Peki sınıflandırma kullanmak yerine niye regresyon problemi olarak tanımlamadın problemi?
+
+49
+00:08:59,187 --> 00:09:05,708
+Burada yılları ayırt etmek için üzerine düşünmüştüm.
+
+50
+00:09:06,087 --> 00:09:11,927
+Tamam, işte onu demek istiyorum. Niye sınıflandırma diye tanınmadığında, regresyon diye tanınmasam mesela daha iyi olmaz mıydı?
+
+51
+00:09:16,908 --> 00:09:25,927
+Regresyonda tanınmasam aslında daha iyi olabilirdi hocam. Ama onu tam olarak birleştiremedim ağaç mantığıyla kafamda. O yüzden aslında biraz daha...
+
+52
+00:09:26,611 --> 00:09:31,511
+Sınıflandırmaya kaymış oldum mantık kısmında.
+
+53
+00:09:32,231 --> 00:09:36,371
+Peki, peki. Tamam. [öğrenci], teşekkürler sağ olasın.
+
+54
+00:09:36,771 --> 00:09:37,891
+Teşekkür ederim.
+
+55
+00:09:45,076 --> 00:09:48,656
+Evet, [öğrenci].
+
+56
+00:09:50,875 --> 00:09:52,236
+Sesim geliyor mu hocam?
+
+57
+00:09:52,875 --> 00:09:53,355
+Geliyor.
+
+58
+00:09:54,736 --> 00:09:57,716
+Ben sunmazlamadım ama raporum var sadece olur mu?
+
+59
+00:09:58,336 --> 00:09:59,796
+Olur.
+
+60
+00:10:00,635 --> 00:10:02,096
+Tamamdır, ekranım geliyor mu şu an?
+
+61
+00:10:04,276 --> 00:10:04,756
+Evet.
+
+62
+00:10:06,336 --> 00:10:10,656
+Herkese günaydın. Ben de ödevde yaptığım çözümü rapor üzerinden anlatacağım.
+
+63
+00:10:11,283 --> 00:10:21,283
+Çok fazla bazı kısımlar uzun tutmak istemiyorum giriş kısımlarını. Veri seti kısmında da herkesin yaptığı şeyleri yanılarak yaptım ama gördüğüm farklı durumlardan bahsetmek istiyorum.
+
+64
+00:10:21,283 --> 00:10:26,283
+Burada veri setini böyle alırdıktan sonra bir de şu konu tarafına bir bakayım dedim çünkü...
+
+65
+00:10:26,644 --> 00:10:51,463
+Konu tarafında bazı farklı örneklerin olduğunu gördüm ve tüm veri setimde toplam 160 farklı konu vardı. Bu yüzden genel olarak sonunda söyleyeceğim şeyi başta söyledim. Bir de yıl bazında da performans değerlendirmesi yaptım ben. Çünkü bazı yıllarda benzer konular yer alıyorsa başarıyla yüksek olabilir diye düşündüm bu gözlemden dolayı. Fakat çok farklı konular yer alıyorsa başarı düşük olabilir diye düşündüm. Genel olarak.
+
+66
+00:10:52,052 --> 00:10:58,192
+Mühendisliği oluşturmaktan da, bu kısımlardan da hızlıca geçmek istiyorum.
+
+67
+00:10:58,192 --> 00:10:59,731
+Şimdi ben burada...
+
+68
+00:11:00,563 --> 00:11:28,343
+Yine model eğittim. Bunları optimize ettim fakat üç farklı karşılaştırma yapmak istedim. Birinci önceliğim burada bir base modellerim olsun, base'dan modellerim olsun. Sonra bunları bir optimize edeyim. En son bunların üçünü karşılaştırmış olayım. İkisini karşılaştırmış olayım. Üçüncü olarak böyle bir şey düşündüm. Benim de eğitim süren biraz uzun sürüyordu. Hatta ilk başta ben ödevde bayağı kolapte yapıyordum. Kolapte açıkçası yavaş çalıştığını gördüm kendi bilgisayarına geçince. O yüzden ağaç dediğinde ben de başta 10 seçtim ve ağaç sesinde 50 ile.
+
+69
+00:11:28,563 --> 00:11:48,783
+Tüm algoritmalarda bu şekilde ilerledim ilk başta ve buna göre aslında çok da yüksek olmayan skorlar aldım ilk başta. Mesela title'da %4-5 civarlı ekibisi ekibisi skorları. Abstract'da %6 civarlarında ve Concret Nation'da da %6 civarlarında aldım genel olarak. Burada şöyle bir şey bekliyordum ben.
+
+70
+00:11:49,844 --> 00:12:03,584
+Titleda bilgiler daha kısa, daha öz, bir yıl tahmin için çok iyi olmayabilir diye düşündüm. Çünkü abstractta çok daha detaylı bilgilendirmeler var. O yüzden daha yüksek başarı elde etmeyi düşünüyordum. Ama ben bu Concretation'da daha da iyi olmasını bekledim abstractın.
+
+71
+00:12:04,436 --> 00:12:11,036
+Fakat burada bariz bir üstünlük yok. Genel olarak benzer sıkıyorlar. Her algoritma bir tane embedding türünde daha iyi olmuş.
+
+72
+00:12:11,036 --> 00:12:14,836
+İşte mesela, burada title'da random subspace daha iyi çalışmış.
+
+73
+00:12:14,836 --> 00:12:19,036
+İşte abstract'da begging daha iyi çalışmış. Concert'da random force daha iyi çalışmış.
+
+74
+00:12:19,036 --> 00:12:23,836
+Fakat arada ciddi bir fark olmadığını görebiliyoruz.
+
+75
+00:12:24,083 --> 00:12:33,683
+Ben concatenation daha yüksek fark olmamasının sebebini, açıkçası title ekleyince belki bir noise oluşu olabilir. O yüzden öyle olabileceğini düşündüm.
+
+76
+00:12:33,683 --> 00:12:49,643
+İlk başta elde ettiğim skorlar bu şekildeydi. Base modellerde. Bu kısımdan bahsettim. Ha bir de eğitim süreleri var. Skorlar çok fazla farklı olmadığı için, random forest kullanmak daha iyi olabilir.
+
+77
+00:12:50,067 --> 00:12:54,868
+Hız önemli. Random Top Space'de çok yavaş oldu yani eğitim. Çok uzun sürdü.
+
+78
+00:12:54,868 --> 00:13:04,168
+Burada bu grafiklerde yine oradaki skorların aslında yansımasını görüyoruz. Yine benzerse çok yakın skorların olduğunu söyleyebilirim.
+
+79
+00:13:04,168 --> 00:13:08,168
+Burada benim dikkatimi çeken şey yılbazında performanslar oldu.
+
+80
+00:13:08,340 --> 00:13:23,740
+F1 skorlarına ilerleyecek olursak, burada ilk başlardaki yıllarda 2006-2007'ye kadar ortalama genel olarak daha yüksek skorlar aldığını görüyoruz. Son yıllarda 2024'te vs. ortalama daha üzerinde skorlar olduğunu görüyoruz.
+
+81
+00:13:23,740 --> 00:13:35,120
+Bu da bence benim o başta söylediğim şeyden kaynaklı oluyor. Bunun bir görselleştirmesini yapmadım, bunu denemedim ama bundan kaynaklandığını düşünüyorum. Ortadaki yıllarda daha düşük performansların elde edildiğini gördüm genel olarak.
+
+82
+00:13:35,892 --> 00:13:52,892
+Bunlar baseline modellerden elde ettiğim skorlardır. Peki, optimizasyon yapalım dediğimizde. Dediğim gibi eğitim süreci çok uzun sürdüğü için, Gris Search TV'de kast sayısını 3 seçtim. Genelde 5 veya 10 ile yapılabiliyor ama dediğim gibi eğitim süreçten dolayı 3 ile tutmak zorunda kaldım birazcık.
+
+83
+00:13:54,004 --> 00:14:04,004
+Ben başta ISS'ni 50 olarak seçtim demiştim. Burada yaklaşılmış oldu. Bir az örnek vereyim, bir 30 tane vereyim, bir de 100 tane vereyim.
+
+84
+00:14:04,004 --> 00:14:12,004
+Arttırınca ne oluyor, azalınca ne oluyor? Bunu gözlemlemek istedim ben daha çok. Kesin olarak ISS'ni arttırınca kesin iyi bir performans elde eder miyiz?
+
+85
+00:14:12,004 --> 00:14:20,004
+Yoksa acaba düşük ise ISS'na da iyi bir performans elde edebiliyor muyuz? Ben bunu merak etmiştim. Burada bu şekilde parametreler var.
+
+86
+00:14:20,820 --> 00:14:36,820
+Buna göre elde ettiğimiz sonuçlara bakalım. Başta %4 ve %5 civarında elde ettiğimiz skorlar vardı. Burada title'larda biraz daha yükseldi skorlar. Abstract'a da %7.5'lere kadar yükseltebildim bu optimizasyon süreçleri sonucunda skorları.
+
+87
+00:14:36,820 --> 00:14:44,820
+Concatenation'da da %7'ye yakın. Fakat bu sefer abstract'ın biraz daha iyi olduğunu görebiliyoruz sonuçlarda.
+
+88
+00:14:45,940 --> 00:14:59,740
+Burada peki en iyi parametreler neler oldu? Onlardan bahsedeyim ben. Genel beklenti AX sayısını arttırdıkça başarı artar. Fakat burada mesela Random South Space'de, Title'in bildiklerinde AX sayısının az olduğu senaryoda daha iyi bir sonuç gelmiş.
+
+89
+00:14:59,740 --> 00:15:10,240
+AX sayısının 100 yaptığımız senaryoya göre daha yüksek skora almış ki burada bu şekilde sonuçta elde edilmiş. Birinci gözlemledim şey buydu. AX sayısını kesin olarak arttırmak...
+
+90
+00:15:10,464 --> 00:15:26,464
+Bize başarı garanti etmez. Bu birinci elde ettiğimiz sonuçtu burada. İkinci elde ettiğimiz sonuç şu oldu. Özellik seçiminde mesela MaxFuture burada %30 seçmiş Random Substance 5'te Title'da. Abstract'a da Concretation'da da aynı şey olmuş. Yani aslında...
+
+91
+00:15:26,515 --> 00:15:32,735
+Bizim bu 1024 boyutun %30, yaklaşık 300-320 tanesini seçtiğimiz zaman en iyi sonucu elde etmişiz.
+
+92
+00:15:32,735 --> 00:15:43,075
+Yani belki bu embeddinglerin de gereksiz bir ila çok fazla bulunuyor olabilir uzayda. O yüzden alt feature seçmek daha başarıyı arttırmış olabilir diye düşündüm.
+
+93
+00:15:43,075 --> 00:15:50,915
+İkinci gözlemlediğim şey buydu. Üçüncü gözlemlediğim şey de şu. Ağaçlarda derinliği arttırabiliriz. Ben başta 10 ile başlamıştım.
+
+94
+00:15:50,915 --> 00:15:54,115
+İşte 10-15-20 denemiştim her bir modelde.
+
+95
+00:15:54,451 --> 00:16:14,072
+Her zaman arttırmak başarı garanti etmiyor. Burada mesela Concret Eniş'in de 20 evet iyi gelmiş ama mesela diğer algoritmalarda diğer emrediklerde 10'da en iyi performans elde edilmiş. Burada bunu gördüm. Burada yine aynı şekilde performanslar aslında çok farklı değil. Biraz daha iyi ama birbirine yakın olduklarını görüyoruz.
+
+96
+00:16:15,316 --> 00:16:22,476
+Yıl bazında baktığımız zaman da yine optimizasyon sonucunda da benzer şey gördüm. Yine uç yıllarda daha yüksek başarı var.
+
+97
+00:16:24,156 --> 00:16:33,736
+Fakat mesela burada mesela bir tane 2004 yıl olması lazım. Base modelde ortalamanın bay altında bir sonuç vardı. Burada da ortalamanın üzerine çıkmış bir sonuç gördüm.
+
+98
+00:16:36,056 --> 00:16:41,996
+Optimize edilmiş sonuçlar bu şekildedir. Bir de dedim bu ikisini karşılaştırayım. Ne kadar iyileşim olmuş veya belki de kötüleşim olmuş da olabilir.
+
+99
+00:16:42,803 --> 00:17:02,263
+Onları da gözlemlemek istedim. Buna baktığımız zaman genel olarak bir iyileşmenin olduğunu söyleyebilirim. Burada iki tane modelde biraz küçük bir kültüleşme olmuş ama genel olarak %16, %17, %12, %10 civarlarında bir optimizasyon konucunda bir iyileşme olduğunu gözlemledim.
+
+100
+00:17:04,115 --> 00:17:09,876
+Burada en başarılı konfigürasyon, bahsettiğim gibi Random Subspace'in algırtmasının Uptrack Mühendisliği ile kullanılmasıydı.
+
+101
+00:17:09,876 --> 00:17:15,876
+Fakat burada eğitim süreci uzun, bunu da göz ardı etmemek lazım. Hani kullanacaksak, bu da önemli bir detay.
+
+102
+00:17:15,876 --> 00:17:26,516
+Biz başlangıçta 25 tane sınıf var. Her örneğe bir tane sınıf atsak %4 başarı elde ederdik. Şu anda %7.5 civarında bir başarı elde ediyoruz.
+
+103
+00:17:30,288 --> 00:17:50,508
+%15-20 civarında tabi elde edemiyoruz. Ama ben bunu biraz da normal karşılıyorum. Çünkü şöyle sebepler var. Literatür aslında bir önceki yıla, mevcut yıla bir önceki yıla aslında biraz benzer olabilir. Çünkü mevcut yıllık çalışmalar aslında önceki yıllık çalışmaların bir adım ileriye giderilmiş versiyon oluyor genelde.
+
+104
+00:17:50,895 --> 00:18:06,295
+O yüzden yılbağızlığı çok fazla fark olmuyor. Genel olarak aynı çalışmalar farklı yöntemlerle yine deneniyor. Bu yüzden ayırt edilmek zor. Benim birinci gözlem dediğim şey buydu, düşündüğüm şey buydu. Yani burada bir overlap olabilir sınıflar arası. Yine A konusundan 2020 yılında da...
+
+105
+00:18:06,295 --> 00:18:18,195
+Şey diyeceğim sana, şimdi bak bu gözlemin üzerine mesela demin NS'e de söylediğim şey, mesela bu tam aslında problemin bir sınıflandırma problemi değil. Bir regresyon problemi olduğunu göstermiyor mu?
+
+106
+00:18:19,155 --> 00:18:21,596
+Ben açıkçası sınıflandırma olarak düşünmüştüm.
+
+107
+00:18:22,456 --> 00:18:24,615
+Hayır, bu gözlemi yaptınca diyorum.
+
+108
+00:18:25,255 --> 00:18:33,675
+Dediğin şey, yani 2001'e 2002 demek de 2001'e 2012 demek arasında fark yok mu sence?
+
+109
+00:18:37,376 --> 00:18:41,775
+Olabilir aslında. Bu konuda... Ben bunu direkt sınıflandırma olarak düşünmüştüm ilk başta.
+
+110
+00:18:42,516 --> 00:18:45,536
+Anladım da, deminki ifadenin üzerine bunu söylüyorum.
+
+111
+00:18:46,259 --> 00:18:48,259
+Bu olabilir. Yani.
+
+112
+00:18:49,759 --> 00:18:52,759
+Peki, devam edelim. Düşünün biraz.
+
+113
+00:18:54,660 --> 00:19:06,751
+Yani öyle. Onun dışında veri seçimden bahsetmiştim. Hani çok fazla konu var demiştim. Bu da ayırt edirliği azaltmış olabiliyor dedim. Hani içeride... Bir de şey...
+
+114
+00:19:06,751 --> 00:19:12,971
+Bir yıl içerisinde çok farklı konular olabildiği için yüksek bir varyans olur. Bu yüzden performans düşmüş olabilir dedim.
+
+115
+00:19:12,971 --> 00:19:23,371
+Bir de yine bir şey için de ben burada zamanlarım dolayı işte A sesini biraz düşüktüm, kat sesini düşüktüm. Bu da biraz performanslı azaltmış olabilir. Bu şekilde gözlemlerim oldu benim de.
+
+116
+00:19:23,371 --> 00:19:26,131
+Peki, teşekkürler [öğrenci].
+
+117
+00:19:31,604 --> 00:19:35,524
+Evet, şimdi [öğrenci] [öğrenci].
+
+118
+00:19:36,284 --> 00:19:38,304
+Buradayım hocam, ekran paylaşıyorum.
+
+119
+00:19:38,764 --> 00:19:39,064
+Tamam.
+
+120
+00:19:46,036 --> 00:19:48,336
+Raporumu görebiliyor olmanız lazım.
+
+121
+00:19:48,916 --> 00:19:49,416
+Görüyorum.
+
+122
+00:19:50,436 --> 00:19:51,115
+Başlıyorum.
+
+123
+00:19:52,375 --> 00:19:57,736
+Bu eğitim öncesi adımları ben de hazırlı geçeyim. Veri toplama, filtreleme, embedding kısımları.
+
+124
+00:19:58,355 --> 00:20:06,456
+Burada işte başlık, özet, başlık ve özetin konkretin eğitilmiş hali şeklinde train ve test ayrı olmak üzere altı tane aslında bizim veri kümemiz var.
+
+125
+00:20:06,556 --> 00:20:09,976
+Bir tek sayfaya geçiş yapsana. Şöyle mi yaptın?
+
+126
+00:20:10,736 --> 00:20:12,816
+Birlikte görelim diye düşündüm ama kötü mü gözüküyor?
+
+127
+00:20:14,836 --> 00:20:19,155
+Biraz daha büyütsen iyi olur. Şöyle yaklaştırabilirim belki.
+
+128
+00:20:19,256 --> 00:20:21,175
+Yaklaştırabilirim. Evet, yaklaştırabilirim. Tamam.
+
+129
+00:20:22,195 --> 00:20:25,115
+Ben de bir ekranım ayarlayayım. Tamam.
+
+130
+00:20:25,811 --> 00:20:40,672
+Şimdi ben hiperparametre optimizasyonu yaparak başladım. Çünkü öbür türlü çok dallanacağını düşündüm. Dedim ki bir temsili sabitleyeyim. Her algoritma için bu sabitlediğim temsil üzerinde bir hiperparametre araması yapayım diye düşündüm.
+
+131
+00:20:40,672 --> 00:20:53,672
+Ve dediğim gibi title ve abstractı sabitleyerek başladım. Bu begging algoritmasında iki hiperparametre olarak anestimator ve maximum samples'ı seçtim. Önce 100 ile 200 ile başladım. Aslında çok...
+
+132
+00:20:53,811 --> 00:21:20,491
+Burada fazla deneyle gidebilirdim ama bu algoritma için biraz yavaş olduğunu gözlemledim ve daha az sayıda örnek arasından en iyisini seçmeye çalıştım. Burada tabloda gördüğümüz gibi 400'e 06 seçtiğimizde en iyisi oluyor. Yani bu algoritma için estimator sayısını artırmak faydalı oldu. Ama sample'ı 06 yapmak daha bizim için iyi bir çeşitlilik oluşturdu.
+
+133
+00:21:21,715 --> 00:21:23,715
+Devam ediyorum.
+
+134
+00:21:24,372 --> 00:21:47,251
+Random Subspace'e geçiyorum. Burada da hiperparametre olarak Enestimator ve bu sefer Max Features'ı seçtim. Bir tanesi sabit olsun diye düşündüm. O yüzden Enestimator'ı değiştirmedim. Yine 200 ve 400 olarak belirledim. Bu sefer Max Features'da oynama yaptım. Yani o bizim vektörlerimizde seçtiği Feature'lar 0.3 oranında mı olsun 0.7 oranında mı olsun diyerek başladım.
+
+135
+00:21:52,372 --> 00:21:59,571
+Aslında Estimator'ı artırmak doğru orantılı oldu. Burada da
+
+136
+00:21:59,824 --> 00:22:15,163
+Özelliklerin yalnızca %30'unu seçtiğimizde daha yüksek bir çeşitlilik oluşturduğunu söyleyebiliriz. Yani 0.3 bu açıdan daha faydalı olabilir. Ama bu arada Akürsler arasında da oynama çok minimum. Yani bunu da göz ardı etmemek gerekiyor.
+
+137
+00:22:16,064 --> 00:22:27,824
+Sonra Random Forest'a geçtim. Burada da yine Enestimator'ı sabit tuttum. Bu sefer derinlikle oynadım. Yani derinliği bir 30 düzeninde tutmak, bir de işte derinliği sınırlamamak ve tüm örnekler aynı.
+
+138
+00:22:27,824 --> 00:22:32,503
+Aynı sınıfa düşüyor mu düşmüyor mu buna göre aslında oldukça böyle geniş tutabileceğim bir hale getirdim.
+
+139
+00:22:33,263 --> 00:22:41,683
+Burada da mesela önceki iki algoritmaya zıt olarak estimator'ı daha düşük tutmak daha iyi bir sonuç verdi.
+
+140
+00:22:41,683 --> 00:22:46,263
+Derinliği aslında çok da abartmamak gerektiği en azından benim deneyimde.
+
+141
+00:22:47,743 --> 00:22:50,824
+Bu şekilde en iyi değeri 230'de aldık.
+
+142
+00:22:51,364 --> 00:22:55,824
+Ben bu hiperparametreleri sabitledikten sonra diğer karşılaştırmalara geldim.
+
+143
+00:22:55,824 --> 00:23:12,824
+Bu örneğe geçmeyi düşündüm. Yani şöyle algoritmayı bu hiperparametre optimizasyonu yaparken title ve abstract birlikte denemiştik. Şimdi işte title, abstract ve title art, abstract hepsinde bu belirlediğimiz hiperparametrelerle birlikte yaptım.
+
+144
+00:23:23,824 --> 00:23:30,943
+Ben yılı seçerken aslında demek ki title'dan çok daha az bilgi alıyorum abstracta göre.
+
+145
+00:23:30,943 --> 00:23:39,884
+Ve ben de diğer arkadaşlar gibi title ve abstract'ın birlikte daha anlamlı bilgi vereceğini, ekürüsüyi doğrudan artıracağını düşünmüştüm ama
+
+146
+00:23:39,884 --> 00:23:46,803
+hep tüm örneklerde öyle olmadı. Yani aslında en yüksek sonucu yine title ve abstract'ın birleşmiş halinde aldım.
+
+147
+00:23:46,803 --> 00:23:51,803
+Ve random subspace algoritmasını da aldım. 0.088 diye gidiyor.
+
+148
+00:23:51,824 --> 00:23:57,963
+Ama bu her zaman title ve abstract'ın birlikte en güçlü olacağı anlamına gelmiyor. Çünkü daha düşük oldu.
+
+149
+00:23:58,483 --> 00:24:03,344
+Örnekte görmüş oldum. Bir de algoritmalar üzerinden şöyle inceleyelim.
+
+150
+00:24:03,892 --> 00:24:17,412
+Algoritmalara baktığımda Random Subspace'in hem title hem de title artı abstract da daha iyi olduğunu gördüm. Zaten tüm bu dokuz karşılaştırmanın en iyisinde de Random Subspace'in iyi olduğunu gördüm.
+
+151
+00:24:17,672 --> 00:24:24,532
+Burada temsille ilgili yorumlarım var. Algoritma ile ilgili yorumları da yine şuradan göstererek gideyim.
+
+152
+00:24:25,412 --> 00:24:31,892
+Şimdi bagging algoritmasında biz ne yapıyoruz? Aslında modeller verinin farklı alt parçalarını görüyor ve farklı karar sınırları.
+
+153
+00:24:31,892 --> 00:24:49,471
+Bu deney eklememizde Bagging en iyi sonucu abstracta verdi. Random Subspace'de ise rastgelelik daha önce dediğim gibi örneklerde değil, Feature'lerde ve aslında her açı tüm tireğini görse de embeddinglerin hepsini görmüyor. Biz de %30 temsil düzeyıyla bu deney düzeni için başlamıştık.
+
+154
+00:24:49,471 --> 00:24:59,792
+Aslında Title ve abstractın birlikte kodanıldı. Yani yüksek boyutlu. Çünkü biz ne yapmış oluyoruz? 1024-1024 mesela 2048 birleşmiş oluyor aslında.
+
+155
+00:24:59,892 --> 00:25:25,172
+Bu şekilde ortaya çıkarmış diyebiliriz. Random Forest'da da hem Bagging hem de düğün bazlı bir feature rastgeleliği ama temsil boyutu arttığında zorlanmış olabilir belki diye düşündüm. Çünkü bu Random Subspace'in bu feature seleksiyonundan şurada da gördüğünüz gibi Bagging çok daha aşağıda kalıyor.
+
+156
+00:25:25,940 --> 00:25:46,900
+Evet, sonuç olarak tez yılını temin etmeye çalıştığımızda başlığın nispeten yetersiz olduğunu görüyoruz. Abstract en iyi sinyali veriyor. Abstract ve başlığı birleştirdiğimizde yine en iyi sonucu alıyoruz ama her zaman en iyi sonucu alacağımızı garanti edemiyoruz.
+
+157
+00:25:53,940 --> 00:26:06,420
+Ama dediğim gibi hiperparametreleri biraz da süreyle aslında ilişkili olarak daha kısıtlı bir kümede seçmiş oldum. Belki daha farklı bir hiperparametre ayarı yapsak daha iyi sonuç alabilirdik başka bir algoritmada.
+
+158
+00:26:07,640 --> 00:26:09,840
+Diyerek sonlandırayım.
+
+159
+00:26:11,460 --> 00:26:12,920
+Teşekkürler [öğrenci].
+
+160
+00:26:14,860 --> 00:26:15,780
+Teşekkür ederim hocam.
+
+161
+00:26:23,188 --> 00:26:25,108
+[öğrenci].
+
+162
+00:26:26,128 --> 00:26:26,908
+Merhaba hocam.
+
+163
+00:26:29,488 --> 00:26:30,628
+Geliyor.
+
+164
+00:26:30,628 --> 00:26:32,128
+Sağ olun.
+
+165
+00:26:45,364 --> 00:27:04,604
+Şu an geliyor mu? Gelmiyor. Hangi geliyor? Geldi. Şu an geliyor herhalde. Evet. Şunu başlar mısın? Ben de şey üzerinden söyleyeceğim hocam. Rapor üzerinden. Tamam. Peki.
+
+166
+00:27:05,971 --> 00:27:28,392
+Bu yine başlangıç kısımlarına hızlı geçiyorum hocam. Hepimizin yaptığı şeyler. Sadece burada 2025 verisi olmadığı için 2020'yi başlangıç verisi olarak aldım. Toplam 25 yıl değişmesin diye. Geri kalan kısımlar aynı. Burada ben öncelikle hiperparametre optimizasyonu yaptım. 3 algoritma için ortak parametre olarak bu en estimator'sı yaptım.
+
+167
+00:27:29,327 --> 00:27:36,928
+Kaç tane ensemble alt model kullandığımızı ifade ediyor. Burada 50, 100 ve 200 olarak 3 tane farklı değer var.
+
+168
+00:27:36,928 --> 00:27:49,567
+Random Force değeri için maksimum derinlik parametresini kullandım. 10, 20, 30. Bunu daha fazlasına verebilirdik. Yani daha ayrık verebilirdik belki. Kendime bir eleştiri olarak söylüyorum.
+
+169
+00:27:49,567 --> 00:27:54,848
+Bagging modelinde maksimum kullanılan samplalları biraz daha göstereyim.
+
+170
+00:27:55,155 --> 00:28:02,955
+Yardım, yarısını kullan, hepsini kullan gibisinden. Random Substance için de kullanılan Feature'ları değiştirdim.
+
+171
+00:28:02,955 --> 00:28:14,155
+Elde edilen şeyler, nasıl diyeyim, burada Grid Search yaptım ben. Grid Search ile bu sonuçları elde ettim.
+
+172
+00:28:14,155 --> 00:28:21,555
+Sonuçlara baktığımız zaman aslında Random Forest'a benzer sonuçlar verdiğini söyleyebiliriz burada bütün veri sitleri için.
+
+173
+00:28:21,567 --> 00:28:29,567
+Random Subspace'in olayı neydi? Aslında feature'ları seçip kullanmasıydı. Yani bütün sample'ları kullanıyor, bütün sample'lar için feature'ları seçiyor.
+
+174
+00:28:29,567 --> 00:28:44,567
+Buradaki feature'lar 0.7, 0.3, 0.5 olarak bakarsak, eğitmeden önce de biraz yorum yapabiliriz. Yani aslında başlık veri seti daha fazla özelliğin kullanılmasını gerektiriyor diye yorumlayabiliriz.
+
+175
+00:28:44,943 --> 00:29:11,863
+Buna kıyasla özet veri seti başlığa göre daha az, maksimum feature ile daha iyi sonuç verebilmiş gibi yorum yapabiliriz. Bagging'te de aslında hepsini kullanıyoruz. Bu da aslında şöyle bir yorum yapılmasına sebep olabilir. Bütün feature'ları kullanmak bizim bu problemimiz için o kadar da iyi olmayabilir aslında. Bunlar arasında o kadar da fark yok bütün feature'ları kullanmakla kullanmamak aslında.
+
+176
+00:29:12,319 --> 00:29:21,359
+Bütün sampoları kullanmak ve kullanma vokadasında, pardon. Ben metriklere ölçmek için EQS'i kullandım ve F1 ve Maya metriğini kullandım.
+
+177
+00:29:22,359 --> 00:29:36,199
+Bunu aslında bir sınıflandırma problemi olarak baktım. Metriği kullanmak çok böyle makul değilmiş gibi geldi. O yüzden biraz az önce araştırma zorunda kaldım. Kendimden emin olamadığım için.
+
+178
+00:29:37,259 --> 00:29:38,079
+Oldun mu [öğrenci]?
+
+179
+00:29:38,432 --> 00:29:56,731
+Oldum sonrasında. Aslında sınıflandırma olarak yaklaşmak doğru ve yanlış yanları da var. Ama bu metreyi kullanmanın iyi yanı ne kadar sattığını görebileceğiz bir yandan. Regresyon olarak yaklaşsaydık belki sınıf değerlerini şey yapmamız gerekebilirdi.
+
+180
+00:29:57,731 --> 00:30:03,731
+25 değer var mesela. O 25 değeri 01 arasına da getirebiliriz ya da 2025-2020 olarak da bırakabiliriz.
+
+181
+00:30:04,307 --> 00:30:17,908
+Regresyon modeli için bu bir farklılık ifadeleri bir günün sonunda. Oradaki normalizasyon yöntemimize de yaparsak ona da göre değişebilir. Bu şekilde burası.
+
+182
+00:30:17,908 --> 00:30:22,908
+Deneysel sonuçlardan bahsedeyim. Biraz hızlı çırptım. Geçti.
+
+183
+00:30:22,908 --> 00:30:28,708
+Şimdi burada grafikleri de inceleyeceğiz ama üstün körü hemen çok kısa bahsedelim.
+
+184
+00:30:31,604 --> 00:30:53,304
+Veri setler arasındaki farklara baktığımız zaman özet veri setinin başlık veri setinden daha iyi olduğunu görebiliyoruz. %7 bu almış, %5 bu almış. Bütün algoritmalarda bunu göreceğiz. Özet veri seti en iyi çıkacak, başlık daha kötü çıkacak. Başlık ve özet başlıktan daha kötü ama buna yakın çıkacak. Ama özet veri setinden biraz daha aşağıda olacak sürekli.
+
+185
+00:30:54,036 --> 00:31:01,436
+Burada ne kadar sattığını görebiliyoruz. Altı yıllık bir satma yaptığını görebiliyoruz.
+
+186
+00:31:01,436 --> 00:31:06,756
+F-Skolları da benzer diye çok fazla üzerine durmuyorum.
+
+187
+00:31:06,756 --> 00:31:08,756
+6 yıllık satma mı?
+
+188
+00:31:08,756 --> 00:31:09,756
+Evet.
+
+189
+00:31:09,756 --> 00:31:12,756
+Nasıl 6 yıllık satma?
+
+190
+00:31:12,756 --> 00:31:19,716
+Yani 2000 yılı için örnek veriyorum. 2006 tahmini yapıyor. Birazdan grafiğinde var hocam.
+
+191
+00:31:19,827 --> 00:31:23,228
+Sınıflandırma da öyle bir şeyi nasıl tanımlıyorsun?
+
+192
+00:31:25,427 --> 00:31:34,887
+Aslında veri ordinal olduğu için, veri sıralı olduğu için sınıflandırma problemi, nasıl diyeyim, biz problemi sınıflandırma olarak çözüyoruz.
+
+193
+00:31:34,887 --> 00:31:35,207
+Evet.
+
+194
+00:31:35,707 --> 00:31:46,087
+Ama değerlendirirken bunu ben acaba satmasını da göz önünde bulundurursak nasıl olur diye, ayrı bir metrik olsun diye oradan da gözlemlemek istedim aslında.
+
+195
+00:31:46,708 --> 00:31:51,388
+Nasıl hesaplayabildin ki onu? Bu ayı nasıl hesapladın sen?
+
+196
+00:31:53,148 --> 00:32:00,528
+Orjinal veriler oldukları için, 2010 verisi, 2010 zaten. Sayısala dönüştürüp aslında sonra şeyden çıkarıyoruz.
+
+197
+00:32:01,468 --> 00:32:05,548
+Gerçek yani, tahmin eksi gerçek yapabiliyoruz. Sayısal veri oldukları için bir yandan da.
+
+198
+00:32:05,648 --> 00:32:08,408
+Aslında tahmin ederken sayısal tahmin etmiyor tırnak içinde.
+
+199
+00:32:08,847 --> 00:32:16,467
+Ama sonrasında o veriyi sayısala çevirebildiğim için o şekilde bir ölçüm yapabildik de bir yandan.
+
+200
+00:32:18,087 --> 00:32:20,627
+İlasyon yapsan hiç böyle şeylere gerek yok.
+
+201
+00:32:20,627 --> 00:32:26,187
+Evet, hiç gerek olmuyor. Birazdan aslında dinler ki onu da fark ettim al önce. Diğer arkadaşlar yaptığınız araç sillerde.
+
+202
+00:32:28,788 --> 00:32:34,248
+Biraz sızlı da geçebilirim bu kısımları. Buralarda çok fazla incelenecek bir şey yok. Sadece belki buralara bakılabilir.
+
+203
+00:32:34,888 --> 00:32:48,367
+Şunu demek istiyorum. Sen şimdi burada sadece 6 yıllık bir tahmini, farkı yaptıysan, bilmiyorum da, %6, %7 gibi başarı çıkmazdı muhtemelen. Daha fazla başarı çıkardı diye tahmin ediyorum. Bilmiyorum.
+
+204
+00:32:49,988 --> 00:32:54,367
+Şuradan bakalım hocam buna. Burada aslında her yıl özelliğinde...
+
+205
+00:32:54,579 --> 00:33:02,319
+Ne kadar hata yaptığını görebiliyoruz. 2000 yılın üzerinde mesela 10 yıllık bir hata yapmış. Ortalaması aslında 6'ya geliyor gibi görebiliyoruz.
+
+206
+00:33:02,839 --> 00:33:07,059
+O ortalaması değil minimum 6. Nasıl ortalaması 6?
+
+207
+00:33:07,339 --> 00:33:17,559
+Ben onu yanlış bakmış olabiliyorum hocam. Emin değilim ama frekanstan dolayı ortalamaya geliyor olabiliyorum. Çünkü burası frekans değil ya. Şuradan baktığımız zaman aslında 1 yıllık hata...
+
+208
+00:33:17,559 --> 00:33:19,219
+Bütün sınıfların hepsi aynı şey değil mi?
+
+209
+00:33:20,339 --> 00:33:23,339
+Eşit değil mi bütün sınıflar ve frekanslar?
+
+210
+00:33:24,759 --> 00:33:25,439
+Değil.
+
+211
+00:33:26,039 --> 00:33:33,939
+Mesela burada, sınıf üzerinde değil, bütün sınıflar için bir yıllık hata tahmini, bir yıllık farkı olanı gösteriyor mesela.
+
+212
+00:33:35,239 --> 00:33:38,339
+Mutlak ve tahmin etsiz gerçeği mesela bu şekilde.
+
+213
+00:33:38,839 --> 00:33:40,339
+Öyle düşünüyorum aslında.
+
+214
+00:33:41,460 --> 00:33:52,460
+Bu, başlık verisiyeti içindi. Aslında burada, ne kadar fark et, nasıl diyeyim. Echorus'uyla aslında paralel bir anlam çıkarabiliriz buradan.
+
+215
+00:33:52,460 --> 00:34:05,460
+Örnek veriyorum, burada mesela 10 yıllık bir satma varken, özet verisiyeti 8 yıllık bir satma var ve frekansları da daha iyi diyebiliriz. Başlık verisiyeti ne göre.
+
+216
+00:34:06,516 --> 00:34:09,756
+Ortalarda daha az mı hata yapıyor?
+
+217
+00:34:11,036 --> 00:34:19,836
+Evet. Bu arada daha az hata yaptığını söyleyebiliriz. Verinin uç noktalarıyla aslında şeyle alakalı olabilir.
+
+218
+00:34:20,355 --> 00:34:27,675
+2000 yılındaki veriler aslında 95'ten gelen belki bir trendden dolayı farklı bir anlam noktasına gidiyor olabilir.
+
+219
+00:34:27,675 --> 00:34:31,628
+O yüzden bu arası daha kendi arasında...
+
+220
+00:34:31,635 --> 00:34:35,635
+Anlamlı olduğu için o arayı daha iyi tahmin ediyor olabilir aslında.
+
+221
+00:34:35,635 --> 00:34:42,635
+Bileştirilmiş şeyler de özet verisitlere benziyor.
+
+222
+00:34:42,635 --> 00:34:49,635
+Buradaki performanslar Random South Space'de Random Forest'dan daha iyi baktığımız zaman.
+
+223
+00:34:49,635 --> 00:34:57,635
+Burada 5'e kadar inmiş mesela ya da %79'a kadar çıkmış özet performansımız.
+
+224
+00:34:58,260 --> 00:35:04,260
+Biraz siz de geçelim hocam bu kısımları. Grafikler benzediği için. Çok hızlı göz atıyoruz şöyle.
+
+225
+00:35:04,260 --> 00:35:14,260
+Yine buradaki şey de benziyor. Başlık versetindeki performansı. Burada mesela 2006 yılında daha iyi performans göstermiş diğerlerine göre.
+
+226
+00:35:14,260 --> 00:35:24,236
+Burada yine benzer şekilde. Birazcık yukarıya çıksana. Şu karıştırılan haktı burada durabilirsin. Tamamdır.
+
+227
+00:35:24,275 --> 00:35:31,775
+En çok karıştırılan şeylere bakıyorum ya şu sağ alttaki. Mesela orada hep yakın yıllardır birileri de daha çok karıştırılmış değil mi?
+
+228
+00:35:32,775 --> 00:35:40,755
+İşte bu da aslında çok bariz bir şekilde şeyi gösteriyor değil mi? Yani bu bu problemi değil aslında bu değil mi? Peki, güzel. Devam edelim.
+
+229
+00:35:42,376 --> 00:35:48,615
+Teknik de yine benzer. Birazdan şeyde göreceğiz. Konfüjör matrikslerine de bakacağız.
+
+230
+00:35:49,108 --> 00:35:56,108
+Çok fazla sayısal verilerin üzerinde durmak istemiyorum. Yakın çıktı değerleri diye.
+
+231
+00:35:56,108 --> 00:36:06,108
+Yine grafiklere benziyor. Burada da benzeri grafikler var. Sadece burada belki karıştırılan çiftler değişebiliyor, sıraları değişebiliyor.
+
+232
+00:36:06,108 --> 00:36:10,108
+Yine benzer olduğu için grafiklere geçiyorum.
+
+233
+00:36:10,108 --> 00:36:14,860
+Bütün Confusion Matrix'lere bakmadım. En iyi performansı veren Random Space olduğu için.
+
+234
+00:36:14,931 --> 00:36:17,971
+Onun Confusion Matrix'ine bakacağız veri setler üzerinde.
+
+235
+00:36:17,971 --> 00:36:27,411
+Burada başlık veri setine baktığım zaman, aslında sınıflandırma problemi olarak ele aldığımız için de bunu bu şekilde elde etmiş olmanız normal.
+
+236
+00:36:27,411 --> 00:36:36,131
+Tabii ki günün sonunda yıllar bize bir trend elde ettiriyor ve o trendler kendi arasında kümeleniyor doğal olarak.
+
+237
+00:36:36,131 --> 00:36:38,851
+Aslında buna varacağız bu çalışmanın sonunda.
+
+238
+00:36:39,380 --> 00:37:02,960
+Burada başlık veri seti aslında çok fazla kümeleme görmüyoruz ve %10 seviyesinde bir şey var. Maksimumda %10 seviyesinde. Demek ki aslında başlık veri setinde oluşan vektörler uzayda çok alakası noktalara gidiyor. Yani benzer konular benzer noktalara gitmiyorlar. Böyle bir ürün yapabiliriz burada.
+
+239
+00:37:03,635 --> 00:37:09,635
+Mesela buradaysa, şurada bir karartı var ya da şurada böyle bir karartı var.
+
+240
+00:37:09,635 --> 00:37:16,635
+Burada nasıl bir örneğe yapabiliriz? 2004 ile 2007 arasında belki şu aradaki vektörler aslında birbirine yakın.
+
+241
+00:37:16,635 --> 00:37:28,635
+Yani aslında o yıllardaki çalışmalardan elde edilen vektörler birbirine yakın noktalar oluşturuyor diyebiliriz. Temsiller.
+
+242
+00:37:29,012 --> 00:37:36,612
+Burada birleştirmiş veri seti de özet veri setiyle benzer olduğu için bu şekilde bir sonuç elde ettik diyebiliriz.
+
+243
+00:37:37,672 --> 00:37:45,572
+Yorum kısmına gelecek olursak, genel olarak özet veri seti başlık ve birleştirmiş veri setinden daha iyi performans gösterdi.
+
+244
+00:37:46,164 --> 00:37:58,164
+Bunu az önce bahsettiğimiz gibi, özet verisinde daha fazla kelime olmasından ve daha fazla açıklayıcı olmasından ondan oluşturulan vektörlerin daha açıklayıcı ve temsillerin iyi olduğunu söyleyebiliriz.
+
+245
+00:38:00,164 --> 00:38:07,164
+Buna bağlı aslında başlık verisinde yeterince iyi açıklayıcı bir kelime olmadığı için belki de.
+
+246
+00:38:07,987 --> 00:38:21,268
+Vektörler arasında o kadar da fark yoktu. Benzer vektörler, benzer kelimeler, benzer çalışmalar ile ifade edilmiyordu. Bu yüzden oluşan Confusion Matrix görüntülüydü.
+
+247
+00:38:22,887 --> 00:38:25,268
+Birleştirmek veri setlerini...
+
+248
+00:38:26,164 --> 00:38:53,264
+Özet verisisine göre biraz sonucu kötüleştirdi. Bunun da sebebi hem aslında vektör sayısının artması da bir şey olabilir, kıstas olabilir. Yani daha fazla fişirin olması da kötüleştirmiş olabilir. Bunun dışında başlık çok fazla sağlıklı olmadığı için özete gürültü katmış da olabilir. Belki işte başlık artı özet yapıp, metin olarak yapıp sonrasında vektör alsaydık ya da vektörleri belki üst üste toplasaydık.
+
+249
+00:38:53,583 --> 00:38:58,583
+Daha farklı bir sonuç elde edebildik ya da daha iyi bir sonuç elde edebildik. Bu birleştirmiş veri setinden.
+
+250
+00:38:59,583 --> 00:39:14,583
+Burada Random Subspace modeli diğerlerine göre daha iyi sonuç verdi. Bunu da ben şöyle yorumladım. Random Subspace modeli feature'lara baktığı için yani, nasıl diyeyim, feature'ları böldüğü için ve özet veri setinde...
+
+251
+00:39:16,596 --> 00:39:41,516
+Feature'lar diğerlerine göre daha önemli olduğu için diyeyim. Özet verilmesi üzerinden gidecek olursak. Önemli olan feature'ları aslında root olarak seçiyor mesela. Ona göre daha iyi bir performans gösteriyor diye yorumladım. Burada az önce bahsetmişti Confirmatics'a oraya geçiyorum. Yine sapması 6-7 olarak gözüküyor. Aslında burada dediğiniz gibi, sizin söylediğiniz gibi regresör olarak bakmak daha doğruydu.
+
+252
+00:39:42,228 --> 00:39:52,987
+Bu problem. Çünkü bu klasifikasyon olarak baktığımız zaman şunu elde etmiş olduk. Yani trendler keskin bir çizgi değildir. Zamanla değişir.
+
+253
+00:39:52,987 --> 00:39:54,947
+Bunu elde etmiş olduk aslında.
+
+254
+00:39:54,947 --> 00:40:00,587
+Buraya geçiyorum. Ben bir de hocam ek olarak merak ettiğim için başka bir şey daha yaptım. Ondan da bahsedeyim mi çok kısa?
+
+255
+00:40:00,587 --> 00:40:03,987
+Tamam peki hızlı olsun ama.
+
+256
+00:40:03,987 --> 00:40:06,987
+Ben vektör boyutu acaba azaltırsak?
+
+257
+00:40:07,315 --> 00:40:15,835
+Ağaç algoritmas için daha iyi bir sonuç elde edebilir miyiz diye merak ettim ve MLP'yi denersek daha iyi bir sonuç elde eder miyiz diye merak ettim.
+
+258
+00:40:16,135 --> 00:40:18,815
+Base model olarak değil mi?
+
+259
+00:40:19,895 --> 00:40:20,215
+Evet.
+
+260
+00:40:21,495 --> 00:40:27,775
+Yani sıratlandırıcı olarak MLP'yi kullanırsak daha iyi bir sonuç elde eder miyiz diye bir soru yaptım.
+
+261
+00:40:28,340 --> 00:40:36,900
+Şu değil, yani Begging'in içindeki base modeller olarak MLP kullanmaktan bahsetmiyorsun. Direkt modeli MLP olarak vermekten bahsetmiyorsun.
+
+262
+00:40:36,900 --> 00:40:55,080
+Evet, girdisi MB, çıktısı sınıf olarak düşündüm yani. Burada da aslında MB'i azaltmak çok aşırı fark etti diyemem şey olarak. Bütün modellerde %1, %2 falan fark etti yani mesela. Ama burada MLP %14 olarak diğerlerine göre daha iyi sonuç verdi.
+
+263
+00:40:55,731 --> 00:41:01,291
+Ve hani şeyleri de daha iyi. Belki bunu bir regresyon olarak elde etsek daha iyi sonuçta alabildik.
+
+264
+00:41:02,492 --> 00:41:16,211
+Muhtemelen o demin bahsettiğim şeyi yapsaydınız daha da iyi olurdu. Yani karar ağacı kullanmak yerine bir SVM'dir, MLP'dir gibisinden başka bir base model kullansaydınız belki.
+
+265
+00:41:16,972 --> 00:41:21,931
+Orada daha da başarılı sonuçlar elde etmek mümkün olabilirdik diye düşünüyorum.
+
+266
+00:41:22,708 --> 00:41:28,488
+Burada mesela şey daha doğru. Confusion Matrix'i mesela daha iyi yakalamış ilişkiler.
+
+267
+00:41:28,948 --> 00:41:30,708
+Diagramı görüyoruz zaten burada direkt.
+
+268
+00:41:30,708 --> 00:41:35,048
+Evet. Bu şekilde, genel olarak hocam. Teşekkür ederim.
+
+269
+00:41:35,548 --> 00:41:36,648
+Teşekkürler [öğrenci].
+
+270
+00:41:41,139 --> 00:41:44,339
+Evet, şimdi [öğrenci] [öğrenci]'la devam ediyoruz.
+
+271
+00:41:46,259 --> 00:41:47,419
+Merhabalar hocam.
+
+272
+00:41:47,859 --> 00:41:48,359
+Merhaba.
+
+273
+00:41:48,519 --> 00:41:50,000
+Bir tanpa paylaşıyorum hemen.
+
+274
+00:41:52,219 --> 00:41:53,779
+Bir de seni de görelim.
+
+275
+00:41:56,479 --> 00:41:56,779
+Tabii.
+
+276
+00:42:03,956 --> 00:42:08,155
+Bir saniye hocam, tekrar video açmak için ekran paylaşmanı durdurmam gerekti.
+
+277
+00:42:09,715 --> 00:42:11,376
+Şu an görebiliyorsunuz diye tahmin ediyorum.
+
+278
+00:42:11,376 --> 00:42:13,076
+Evet, görüyorum. Evet, evet, görüyorum.
+
+279
+00:42:19,956 --> 00:42:40,516
+Herkese tekrar selamlar. Ben formatlı bir rapor veremedim hocam. Arkadaşların çalışmasını gördükten sonra sanırım doğru yolun olduğunu fark ettim. Bunun için özür dilerim. Ben kendi Jupyter Notebook'umun PDF çıktısı üzerinden anlatacağım.
+
+280
+00:42:45,652 --> 00:42:59,751
+Özellikle seçimlerini gerçekleştirdikten sonra bunları CSV formatında bilgisayara karat ederek sonraki denemelerde de yine kolaylıkla o API'nin gecikmelerinden kurtulmaya çalıştım.
+
+281
+00:42:59,751 --> 00:43:02,751
+Burada...
+
+282
+00:43:02,784 --> 00:43:13,284
+Her yıl için 500 tane random kelimeyi seçip, bunun ilk 250'sini eğitim, sonraki 250'sini de test için...
+
+283
+00:43:13,284 --> 00:43:16,784
+İlha, buraları geçemeyiz. Zaten herkesle ortak yani.
+
+284
+00:43:16,784 --> 00:43:20,784
+Tamam, buraları da geçiyorum o zaman.
+
+285
+00:43:20,784 --> 00:43:22,784
+Şimdi...
+
+286
+00:43:23,795 --> 00:43:48,595
+Eğitim kısmına geliyorum o zaman. Ben burada temel öğrenici olarak birkaç farklı şey denedim. Aslında ekürisinin çok düşük olduğunu görünce bu ilk etapta beni biraz endişelendirmişti. Ben de ağaç dışında farklı ne yapılabilir ekürisi arttırmak adına en iyi bulduğum yöntemi buraya koyup bunun üstüne deneyler gerçekleştirdim.
+
+287
+00:43:49,043 --> 00:44:08,003
+Burada base modelim bu şekilde. Bu diğer algoritmalara geçiyorum. İlk etapta aslında Adam optimizasyonuna odaklandım. Bununla alakalı deneyleri gerçekleştirdim ve en son bir tabloda bunu gösteriyorum. Bu kısımları da atlayabiliriz dolayısıyla.
+
+288
+00:44:09,076 --> 00:44:29,175
+En sonunda şöyle bir durum ortaya çıktı bende. Adam'ın hiperparametre optimizasyonlarını farklı şekillerde denemeye çalıştım. Burada Learning Rate'i 10 üzeri eksi 5, eksi 3 gibi değerlerle.
+
+289
+00:44:33,619 --> 00:44:39,119
+Base Learner MLP diyebiliriz hocam. Tekrar göstereyim.
+
+290
+00:44:39,119 --> 00:44:47,059
+Ha bir tane MLP kullanıyorsun. MLP'ye Adam'la eğitiyorsun. Adam'ın hiperparameterlerini denedin. Anladım. Tamam.
+
+291
+00:44:47,059 --> 00:44:49,599
+Tamam. Tekrar geçiyorum.
+
+292
+00:44:51,779 --> 00:44:58,679
+Sonrasında başarının en iyi bu şekilde elde edileceğini fark ettiğim için bunu da bir tabloda gösterdim.
+
+293
+00:44:59,092 --> 00:45:25,972
+Burada başlık, özet ve başlık artı özetin sonuçları bu orta kolonda görünüyor. Burada özet ile başlık artı özetin sonuçları birbirine oldukça yakın görünüyordu. Başlık artı özette 2048'e çıktığı için veri inputu bunu computing cost olarak eleme gerekçesi olarak gördüm.
+
+294
+00:45:27,092 --> 00:45:37,092
+Substruck üzerinden deneylere devam ettim. Burada da [öğrenci] arkadaşımızın bulduğu gibi aslında 0.14 değerlerini ben de buldum.
+
+295
+00:45:37,092 --> 00:45:50,604
+Bagging ve Random Subspace için. Random Forest için bu değer benzer şekilde gerçekleşmedi. Any 0.0925'te kaldı.
+
+296
+00:45:51,347 --> 00:45:54,347
+Yine bunları...
+
+297
+00:45:54,347 --> 00:45:57,347
+Burada base owner sayısı kaç?
+
+298
+00:45:57,940 --> 00:46:00,379
+Ona geliyordum hocam şu an.
+
+299
+00:46:01,819 --> 00:46:06,920
+Yukarı gider sabitler herhalde. Orada herhangi bir onun kararı araştırmadın. Tamam. Şimdi burada araştırıyorsun.
+
+300
+00:46:06,920 --> 00:46:20,920
+Evet hocam. Bunu 3.7.15.20 bu şekilde devam ettirdim. Burada Base Learner'ı sabit bıraktım. En iyi bulduğum optimizasyonlarını kullandım. Burada diğer tüm değerleri örneğin.
+
+301
+00:46:21,280 --> 00:46:33,580
+Ben de batch size ve epoch sayısını sabit tutaraktan eş düzeyde bir karşılaştırma yapmaya çalıştım. Ve sonuç şu şekilde çıktı bende.
+
+302
+00:46:33,760 --> 00:46:51,600
+Şimdi burada benim amacım aslında her bir model için en uygun estimator sayısını bulmaktı. Burada begging için 7, random subspace ve random forest için ise 20 değerlerinin birazcık daha uygun olduğunu gördüm.
+
+303
+00:46:51,600 --> 00:47:01,760
+Aslında ben bu deneyi sayfada çok fazla yer kaplamaması için birkaç kere tekrarlı şekilde deneyip en iyi bu değerlerin olduğunu fark ettim.
+
+304
+00:47:01,760 --> 00:47:13,360
+Örneğin, Random Forest için bazen 40, bazen 30, 35 gibi değerler de en iyi olabiliyordu. Ancak burada bu düzlüğe çıktıktan sonra,
+
+305
+00:47:13,360 --> 00:47:18,760
+Acurisyon'un aslında bunun belki de çok fazla fark etmeyeceğini, çünkü başarı oranı da düşük olduğu için,
+
+306
+00:47:18,760 --> 00:47:28,760
+geniş bir alanda, daha spars bir alanda dalgalandığını fark ettiğim için 20 olarak bıraktım. Begging için ise 7 uygun görünüyordu.
+
+307
+00:47:29,331 --> 00:47:40,331
+Sonra bu değerleri de yine sabit tutup, bu sefer batch size araştırdım. Burada da 8, 16, 32 ve 256'ya kadar denemeleri gerçekleştirdim.
+
+308
+00:47:40,331 --> 00:47:54,284
+Tabi burada artık ayrışmaya başlıyor modellerimiz. Estimator sayısı 7, 20 ve 20 şeklinde. Geri kalan parametrelerde değişken olarak giriyor işin içine.
+
+309
+00:47:54,324 --> 00:48:21,084
+Burada da yine batch size'ın en düşük olduğu, 8 olduğu değerin başarılarının daha yüksek olduğunu fark ettim. Burada da hepsini 8 yaptıktan sonra epoch sayısına geçtim. Burada da 5, 10, 15 diye devam ettirdim. Bu epoch sayısının çok fazla değişiklikle yol açmadığını gördüm. Benim aslında çalışmam buraya kadar hocam.
+
+310
+00:48:23,251 --> 00:48:24,751
+Peki, teşekkür ederim.
+
+311
+00:48:41,043 --> 00:48:43,003
+Sıra [öğrenci]'da.
+
+312
+00:48:50,547 --> 00:48:52,967
+Şükürler. Orada mı?
+
+313
+00:48:57,715 --> 00:49:00,795
+Şuraya yok. Geçeyim.
+
+314
+00:49:07,251 --> 00:49:08,231
+[öğrenci].
+
+315
+00:49:11,231 --> 00:49:12,571
+Merhaba hocam.
+
+316
+00:49:13,051 --> 00:49:13,471
+Merhaba.
+
+317
+00:49:13,591 --> 00:49:15,251
+Ben öncelikle...
+
+318
+00:49:16,931 --> 00:49:18,791
+Görüntüm geldi.
+
+319
+00:49:19,231 --> 00:49:20,631
+Geldi, görüntüm geldi.
+
+320
+00:49:20,631 --> 00:49:21,691
+Valla.
+
+321
+00:49:23,971 --> 00:49:24,871
+Şöyle açayım.
+
+322
+00:49:28,071 --> 00:49:28,631
+Şuan...
+
+323
+00:49:28,631 --> 00:49:31,791
+Bir saniye.
+
+324
+00:49:43,411 --> 00:50:10,532
+Öncelikle merhaba. Bugün tez yıl tahmininde Kollektif Öğrenme Ödev Fonusunu anlatacağım. Problem tanımınızı zaten biliyoruz. Tezin yayınlığında yılı tahmin edeceğiz. Bunu yaparken yıllara göre her yıl 500'er tahmin veri sayısı oluşturacağız. Test train diye eşit olarak dağıtacağız. Toplamda 12 bin tahmin. 2025 yılında veri olmadığından eski eşitim okusuna.
+
+325
+00:50:11,123 --> 00:50:24,863
+Enbediliklerini oluşturacağız daha sonrasında. Toplamda başlık için, özet için, birleşik halleri için bu şekilde tablodakiydi. Vektör uzayları çıkacak, matrisler çıkacak.
+
+326
+00:50:24,863 --> 00:50:34,923
+Tabii toplamda alt sahne oluşturacak bunlar. Bu kısımları geçiyorum. Tabloda hepsini genel olarak anlatacağım.
+
+327
+00:50:38,547 --> 00:50:55,547
+Şu kısmı anlatalım. Şimdi şöyle, biz bütün algoritmalarda, Bagging'te nEstimator ve MaxSample kullandım. RandomSupperspace'te nEstimator, MaxFeature, bir de Estimator, MaxDepk kullandım. Bir de RandomPostada bu özellikleri kullandım. Tabi bunları GridSearch ile...
+
+328
+00:50:56,724 --> 00:51:20,464
+Hangi, şimdi her birini farklı listeler oluşturdum. Hangi mesela en estimated'ı 10, 20, 30 gibi listeler oluşturdum. Bir sözcüsü hangi sonucun daha iyi olduğunu tespit ettim. Bunun dışında Mean Absurd Terör ve Root Mean Super Derör ile değerlendirdim. Ben bunu regresyon problemi olarak belirledim.
+
+329
+00:51:22,612 --> 00:51:47,392
+Deney sonuçlarında şu şekilde anlatayım aslında. Biz günün sonunda bagging kullanırken farklı tahminleyicimiz var ve her tahminleyici aslında bize bir model oluşturacak. Diyelim ki X1 artı 2 X2 gibi. Ama bagging olduğundan dolayı ister isteniz aynı uzaya giriyor ve aynı uzaya girildiğinden dolayı aynı özellik çıkarımdan geçecek. Bütün tahminleyicilerde benzer modelleri olup duracak.
+
+330
+00:51:49,108 --> 00:52:11,108
+Bu Random Subspace'i bunun önüne geçeceğiz. Daha aynı uzaya girmeyecek de farklı alt uzaylara geçecek ama bu tarz da bir gün teki gibi bootstrap yapılmayacak. Random Forest'a da her ikisi de yapılacak aslında. Bu yüzden günün sonunda ben Random Subspace'i ve Random Forest'ı ister istemez özellikle özet ve...
+
+331
+00:52:12,371 --> 00:52:33,511
+Özet ve özet artı birleşim yapısı için genel olarak daha iyi sonuçlar vereceğini düşünüyordum. Özellikle random satış ve random posta. Çünkü aslında ben uzayda bütün o cümlelerin, o özetlerin her birini farklı yerlerini irdeleyecek, farklı anlansa, bağlamsal uzaylarını tespit edecek ve daha doğru sonuçlar verebileceğini düşünüyordum.
+
+332
+00:52:35,092 --> 00:52:37,871
+Tabii başlık konusunda şöyle şüphelerim vardı.
+
+333
+00:52:38,356 --> 00:53:00,300
+Başlık dediğimiz şey zaten maksimum bir cümleden oluşan bir şey. İsterseniz o bağlama aynı özetteki gibi yakalayamayabilir. Çok sınırlı bir ifadeden bahsediyoruz. Bu yüzden başlıkta tam olarak istediğimiz sonucu her zaman veremeyebilir. Sonuçlara baktığımız zaman...
+
+334
+00:53:00,884 --> 00:53:20,884
+Mean Absolute Error ve dediğim gibi Root Mean Square Error olarak değerlendirdim. Genel olarak mesela title'a baktığımızda benzer sonuçlar veriyor. Ama bu da gördüğümüz gibi mesela begging için daha iyi sonuç vermiş. Random Forest'a ya da Random Subspace'a göre. Bu dediğim gibi...
+
+335
+00:53:21,588 --> 00:53:31,588
+Özellikle başlıkta daha böyle anlamını yeterince yakalayamayacağı şeyler olabilir. Bu yüzden bunu buna vurdu. Sebebi bu olduğunu düşünüyorum.
+
+336
+00:53:31,588 --> 00:53:46,188
+Onun dışında parametrelerinden de bahsedeyim. Parametrelerimde dediğim gibi Grady Search algoritması kullandım. Burada en iyi tahminleyicim Max Ample'da 0.7, Estimator'da 100 olarak belirlendi.
+
+337
+00:53:49,588 --> 00:53:51,028
+vardı. Buradan 100'ü seçti.
+
+338
+00:53:52,028 --> 00:53:53,168
+Max Sample'da da
+
+339
+00:53:53,168 --> 00:53:54,688
+0.3, 0.5, 0.7 olarak
+
+340
+00:53:54,688 --> 00:53:56,807
+vardı. Biri vardı.
+
+341
+00:53:57,268 --> 00:53:59,048
+Max Sample'mız da 0.7 olarak
+
+342
+00:53:59,048 --> 00:54:00,827
+verilmiş. Tabii mesela Bagel'te
+
+343
+00:54:00,827 --> 00:54:01,988
+Max Sample dediğimiz şey
+
+344
+00:54:01,988 --> 00:54:04,468
+bütün algoritma, mesela
+
+345
+00:54:04,468 --> 00:54:06,948
+6.000 tane verim var. 6.000 taneden
+
+346
+00:54:06,948 --> 00:54:08,848
+tekrardan aynı veriyi de seçebilirim.
+
+347
+00:54:10,928 --> 00:54:11,968
+O şekilde.
+
+348
+00:54:12,868 --> 00:54:13,868
+Onun dışında
+
+349
+00:54:13,868 --> 00:54:16,388
+Max verimlik
+
+350
+00:54:17,427 --> 00:54:27,647
+Başlık embeddingim bu şekilde. Özete baktığımız zaman özette aslında daha dediğim sonuca geliyor. Random Forest'ta bir tık daha iyi sonuç.
+
+351
+00:54:28,563 --> 00:54:44,123
+Alıyorum. Random Forest'ta az önce de dediğim gibi uzayı hem farklı örneklerle hem de farklı uzaylarda taradığından, rastgele olarak farklı uzaylarda taradığından günün sonunda o özet yapısını daha iyi anlamış oluyor.
+
+352
+00:54:44,683 --> 00:54:55,283
+Burada ama Begint'e de aslında çok yakın sonuçlar alması biraz farklı gelmişti bana. Begint'e bu kadar iyi sonuç almayı beklemiyordum.
+
+353
+00:54:56,115 --> 00:55:07,103
+Daha sonra birleştirilmiş hallerinde Random Forest'ın performansı Bagging'e yaklaştı aslında.
+
+354
+00:55:07,103 --> 00:55:19,183
+Biz title'da ister istemez o yapıyı bozuyorduk. Yani şuraya baktığımız zaman Random Forest'ta kötü sonuç alıyorduk aslında Begging'e göre.
+
+355
+00:55:19,183 --> 00:55:29,543
+Bu yüzden biz modellerin maddesi olarak yeniden birleştirdiğimizde de günün sonucunda sonucumuz da aynı buradaki gibi ister istemez birazcık daha kaydı.
+
+356
+00:55:30,203 --> 00:55:33,883
+Begging tarafına daha yakınlaştı şeklinde özetleyebilirim.
+
+357
+00:55:34,579 --> 00:55:50,119
+Bunlar grafikler. Deneş sonucu değerlendirmemde az önce yaptığım gibi başlıkta. Genel performans sıralamını bu şekilde yaptım. Çünkü az önce dediğim gibi genel uzayı değerlendirirken özet.
+
+358
+00:55:50,559 --> 00:56:09,159
+Konkak, bir de Taht'in yapısı arasında bir uzayı anlamak konusunda bir farklılıkları var. Bu yüzden abstrak deney sonuçlarından da hareketle daha iyi, genel olarak daha iyi sonuç verdi. Sonrasında Konkak, sonrasında Taht'in. Genelde değerlendirmem bu şekilde.
+
+359
+00:56:10,280 --> 00:56:12,360
+Peki, teşekkürler [öğrenci].
+
+360
+00:56:13,360 --> 00:56:14,260
+Rica ederim hocam.
+
+361
+00:56:19,603 --> 00:56:21,203
+Şimdi [öğrenci].
+
+362
+00:56:22,463 --> 00:56:23,304
+Merhabalar hocam.
+
+363
+00:56:24,384 --> 00:56:25,223
+Merhabalar.
+
+364
+00:56:25,223 --> 00:56:28,223
+Ekranı, Publisher'ı.
+
+365
+00:56:50,804 --> 00:56:52,463
+Geldi mi ekranın?
+
+366
+00:56:52,963 --> 00:56:53,403
+Geldi.
+
+367
+00:56:56,104 --> 00:56:58,403
+Merhaba öncelikle herkese.
+
+368
+00:56:59,804 --> 00:57:03,624
+Ekranın üstünde bu zoom'un gözüküyor.
+
+369
+00:57:03,864 --> 00:57:04,403
+Tamamdır.
+
+370
+00:57:04,564 --> 00:57:05,543
+Tamam gitti şimdi.
+
+371
+00:57:05,543 --> 00:57:06,784
+Şimdi şey yaptım.
+
+372
+00:57:08,275 --> 00:57:22,515
+Ben hem rapor halinde hem de kod üzerinden anlatacağım bazı görüntüleri anlatabilmek için hocam. Öncelikle veri setinde benzer şeyleri yaptım. Sadece girişte bir...
+
+373
+00:57:22,804 --> 00:57:29,264
+Boş veriler var mı gibi kontrolleri de ekleyerek o verileri çıkardım veri setinden.
+
+374
+00:57:31,264 --> 00:57:36,324
+Hazırladığım veri setin boyutunu etkilemediğini görünce yanlışlıkla onları almak istemedim.
+
+375
+00:57:36,324 --> 00:57:42,324
+Daha sonrasında ilk olarak...
+
+376
+00:57:45,172 --> 00:58:13,172
+Regresyon üzerinde çalıştım bu arada. Onu söylemeyi unuttum hocam. R2 ve RMSI parametreleri üzerinden değerlendirmeler yaptım. RMSI genelde yaklaşık çıktı. Tüm deneylerim sonucunda çok değiştiremedim o kısmı. R2'lere odaklandım. En azından onu yükseltmeye odaklandım. Çünkü bu haliyle ilk deneyimde default ayarlarda bıraktım. N-Estimators 100 olacak şekilde Max Features'da tamamlandım.
+
+377
+00:58:13,172 --> 00:58:21,112
+Tamamını kullanacak şekilde bırakmıştım. İlk yaptığımızda belki burada kötü gözüküyordur. Şuradan açabilirim. O yüzden.
+
+378
+00:58:27,827 --> 00:58:33,688
+İlk baktığımızda böyle hem eksi değer gördüm bagging tarafında hem de
+
+379
+00:58:35,572 --> 00:59:03,512
+Random Subspace tarafında da sıfırı görünce aslında bir terslik olduğunu artık bir hiperparametrelerle ufaktan oynamam gerektiğini fark ettim. İlk etapta Enestimators ile oynayayım dedim. Ağacı biraz genişletmek amaçlı. Random Forest'a biraz fazla verdim. 300, diğer ikisine de 100 Enestimators değerini vererek çalıştırdığımda artık değerler biraz daha artmaya başladı en azından. Diğer gibi eksi ve sıfır.
+
+380
+00:59:03,572 --> 00:59:30,172
+Derecesinde değildi. Fakat ama değerlere baktığımızda yine de burada maksimum 0.23 seviyesinde bir şey görürüz. Yani çok düşük aslında. Modelin genelleme yeteneği yok. Şu an hepsini ayrı ayrı değerlendirmiyorum. Total bir R2 arttırmaya odaklandım. Herhangi bir rahatsa da olur şeklinde. O yüzden estimators'ın etkili olduğunu görünce biraz daha arttırdım.
+
+381
+00:59:31,572 --> 00:59:58,932
+Oysa 500, diğer ikisine yine 300 verdim. Bu arada bunun sebebi de biraz sürelere karşı da oynamam. Hani eğitim süresiyle ilgili bir deney de yapıyordum orada. Aslında çok uzun sürmüyor. 16 çekirdekli bir bilgisayarda çalışıyorum. 12 paralelliğe kadar çıkardım çalıştırmasını. Zaten 9 tane çalışmadan bahsediyoruz. O yaklaşık 15 dakikada hepsini tamamlıyordu. Sıralı çalıştırdım tabii her.
+
+382
+00:59:59,572 --> 01:00:11,572
+Modeli ardı ardına. 500 ve 300 arasında değişiklik yaparken bir yandan da Random Subspace ve Random Forest'ın Max...
+
+383
+01:00:13,268 --> 01:00:31,108
+Feature sayısını da 0.7 olarak belirledim. Biraz düşürdüm. Belki orada alt kümelerde dolaşması. Zaten Random Subspace'da bunu yaptırıyoruz. Random Forest'ta da aynı değeri vererek onları da yarıştırmak istedim açıkçası.
+
+384
+01:00:38,208 --> 01:00:57,888
+İyice düşürsem ne kadar olur? Hani Max Feature'ımı daha da az verdiğimde nasıl tepki veriyor dediğimde ise orada tekrar art sükerler düşmeye başladı. O yüzden 0.7, biraz denedim 0.7, 0.6, 0.5 diye denediğimde en azından Max Feature'ımın 0.7'de optimal olduğunu görmüş oldum.
+
+385
+01:00:59,108 --> 01:01:05,847
+Enestimator'sı da Random Force'da 500 yapmıştım. Bir ara 1000 olarak da denedim.
+
+386
+01:01:06,208 --> 01:01:18,748
+Random First diğerlerine göre biraz daha hızlı çalıştığı için orada bir sadece denediğimde çok minimal bir farklılık yaptı, arttırdı R2. O yüzden 500'e geri çektim çünkü eğitim süresini uzatıyordu.
+
+387
+01:01:18,748 --> 01:01:21,748
+Diğer modellerinde...
+
+388
+01:01:22,804 --> 01:01:47,884
+Anestimators'ını 500'e, hepsini 500'e yapmış oldum. Daha sonra acaba boyutlarla ilgili bir mevzu mu var? Veride çok boyutlu bir veri, tamam Random Forest için aslında çok boyutlu bir veriyi kullanmak bir sıkıntı değil ama yine de boyutlarla ilgili bir durum mu yaşıyorum acaba diye PPCA uyguladım ve 256 özelliğe kadar.
+
+389
+01:01:49,076 --> 01:01:56,135
+Boyut indirgeme yaptım her model için. Ve orada da tekrar böyle...
+
+390
+01:01:56,340 --> 01:02:20,920
+Çok absurd rakamlarla karşılaştım. Yani aslında belki önemli özelliklerin etkisini kaçırmış oldum. Bazı özellikleri kaybettim. Hani gürültüyü engelleyeceğim derken aslında önemli özellikleri uçurmuş oldum büyük ihtimal diye düşünerek. O yüzden PSE'yi geri aldım. Bir daha da dokunmadım PSE'ye.
+
+391
+01:02:21,556 --> 01:02:49,556
+O yüzden buradaki yaptığım deneyden sonra daha ne yapabilirim? Aslında ağacın budamasına müdahale edebilirim belki diye düşünerek. Ama aslında R2R düşük olduğu için ağaç budamak iyi olmayabilir. Çünkü aslında biraz daha karmaşıklaşmaya ihtiyacı olabilir modelin. Ama yine de bir denemek amaçlı nasıl bir etkisi olacak diye. Orada nasıl budayabilirim diye baktım. İlk etapta Max Depth geldi aklıma ama...
+
+392
+01:02:49,556 --> 01:02:55,635
+Daha sonra farklı parametreler de gördüm kütüphaneleri içerisinde. Onu biraz kopya çekeceğim raporumdan.
+
+393
+01:02:56,436 --> 01:03:10,735
+isimlerini CCP Alpha ve Min Impurity Decrease diye iki parametre bu ağaç bulamasında karar verirken kullanılan parametreler olarak geçiyormuş bu kütüphaneler içerisinde.
+
+394
+01:03:11,396 --> 01:03:24,436
+Max Dept yerine neden bunları tercih ettim? Çünkü Max Dept belli bir derinliğe kadar çesmeyi hedefliyor ama fakat bu parametreleri kullandığımda tam öğrenmeyi yaptıktan sonra
+
+395
+01:03:24,436 --> 01:03:25,815
+Sonra...
+
+396
+01:03:26,356 --> 01:03:54,356
+Hesaplamayı yani cost to function'ların sonucunun neticesinde budamayı yapıyor. O yüzden max dep'te ciddi bir budamaya yapmaya sebep olabilirim diye bu parametrelere odaklandım biraz. Normalde SCP alfayı çok yüksek vermeyi önermiyorlar araştırdığım kadarıyla. Minimal bir seviyede tutmayı tavsiye ediyorlar. Fakat biraz cüretkâr dağınını 0.1'e kadar yükselttim. Orada biraz iyileştiğini görüyorum.
+
+397
+01:03:54,356 --> 01:04:10,356
+Hani R2'nin arttığını gördüm. Fakat Min Impurity Decrease'de olabildiğince minimal verdim. Oradaki budama şeyini. Bu iki hareketle birlikte ilk başta 2.30'larda elde ettiğim...
+
+398
+01:04:10,931 --> 01:04:29,431
+0.2.30'larda elde ettiğim R2 maksimum iyi sonucu. 0.2.36'lara kadar çıkarmış oldum. Ama model yeterli mi? Hani bence gelişmeye açık yönleri var. Belki veri setinde daha fazla veri kullanarak bir çözüm üretilebilir.
+
+399
+01:04:38,931 --> 01:04:40,971
+Sağlayabilir diye düşünüyorum.
+
+400
+01:04:41,611 --> 01:04:47,911
+Burada modeller arası karşılaştırma yaptığımızda, önce veri setlerinden başlayayım.
+
+401
+01:04:47,911 --> 01:04:53,911
+Title ile olanlar, şuradan açarsam.
+
+402
+01:04:55,668 --> 01:05:23,048
+Taitle ile ilgili olanlar en düşük skorunu elde etti. Yani Taitle çok bir açıklayıcılığı sağlayamıyor. Fakat en çok açıklayıcılığı özet bilgisi sağladı. Genel olarak ve onun dışında da özetle başlığın birleşimi aslında başlık çok düşük olmasına rağmen özetle birleştiğinde aslında özeti çok da aşağıya çekmiyor.
+
+403
+01:05:23,668 --> 01:05:36,328
+Belki farklı yetkinliklerde, farklı önemli feature'ların yakalanmasında sağlayabilecek düzeyde bir başarıya sahip.
+
+404
+01:05:37,408 --> 01:05:39,968
+Özetle çok yakın bir değerde çıkıyor.
+
+405
+01:05:52,052 --> 01:06:02,372
+Pardon, Random Forest daha yüksek başarı elde etmiş oldu. Özet bilgisiyle, hatta diğer veri setlerine göre. Genel olarak denemelerim böyleydi hocam.
+
+406
+01:06:03,152 --> 01:06:05,812
+Peki, teşekkürler [öğrenci].
+
+407
+01:06:13,972 --> 01:06:15,532
+[öğrenci] [öğrenci].
+
+408
+01:06:18,452 --> 01:06:21,092
+Merhaba hocam. Biz [öğrenci]'le yaptık. Ödedik.
+
+409
+01:06:21,892 --> 01:06:24,272
+Merhabalar hocam. Sesim geliyor mu? Ben [öğrenci].
+
+410
+01:06:25,172 --> 01:06:25,812
+Gidiyor.
+
+411
+01:06:28,312 --> 01:06:29,532
+Görelim sizi.
+
+412
+01:06:30,712 --> 01:06:31,752
+Evet hocam.
+
+413
+01:06:33,892 --> 01:06:34,732
+[öğrenci] [öğrenci]'ı gördük.
+
+414
+01:06:34,732 --> 01:06:35,532
+[öğrenci] ekran.
+
+415
+01:06:36,212 --> 01:06:37,512
+Ben video açmaya çalışıyorum.
+
+416
+01:06:38,708 --> 01:06:42,708
+Yaparım. Kamerayı açmaya çalışıyorum.
+
+417
+01:06:42,708 --> 01:06:49,708
+Evet, ikiniz de görüyorum şu anda. Tamamdır. Başlayabilirsiniz.
+
+418
+01:06:49,708 --> 01:06:53,708
+Ekran paylaşımı yapıyorum hocam. Tamam.
+
+419
+01:06:53,708 --> 01:06:59,708
+Şu an gözüküyor mu? Evet.
+
+420
+01:06:59,708 --> 01:07:05,291
+Ben giriş yapayım öncelikle.
+
+421
+01:07:05,300 --> 01:07:23,600
+Zaten bu veri işleme ve veriye hazırlığı kısımlarını es geçiyorum. Burada herkesin aynı yaptığı şeyler var. Biz de yaklaşımımızda bunu bir klasifikasyon problemi üzerinde değerlendirmek yerine regresyon problemi üzerinde değerlendirmeye karar verdik.
+
+422
+01:07:25,556 --> 01:07:36,556
+Zaten ilk başta direk regresyon olarak başlamıştık. Fakat klasifikasyonu da hani bir deneyelim belki daha farklı sonuçlar elde ederiz diye düşünmüştük. Fakat %4 gibi bir ekürisi alınca...
+
+423
+01:07:37,088 --> 01:07:52,728
+Bu fikirden vazgeçmeye karar verdik. Çünkü sınıf sayısının fazla olması ve sınıflar arasında aslında 2001 ile 2002 arasında dediğiniz gibi Koreli olabilecek şeylerin fazla olabileceğinden dolayı biz regresyon problemine kaymayı düşündük.
+
+424
+01:07:52,728 --> 01:07:55,728
+Fakat çalışmalarımızda biz...
+
+425
+01:07:57,300 --> 01:08:20,280
+Base Estimator olarak farklı SVM ya da farklı regresyon modelleri kullanmak yerine Decision Tree'nin regresyon yapan modelini kullandık. Belki ek çalışma olarak Base Estimator'larda farklı regresyon modellerine yer verebilirdik. Fakat biz Decision Tree'ler üzerine ilerledik.
+
+426
+01:08:22,351 --> 01:08:39,952
+Burada Random Forests Backlight ve Random Subspace üzerinden devam ediyoruz. Hiperparametre optimizasyonu olarak genel olarak ağaç sayısı ve ağaç derinliği parametreleri üzerinden optimizasyon yaptık. Aynı zamanda Max Feature.
+
+427
+01:08:40,404 --> 01:08:47,524
+Bagging için Max Sample, Random Subspace için ise Max Feature özelliklerini optimize ettik.
+
+428
+01:08:47,963 --> 01:08:57,524
+Optimizasyon sürecinde Random Search ya da Grid Search kullanmak yerine Bayezin Optimization kullanarak bir yapı oluşturmaya çalıştık.
+
+429
+01:08:58,344 --> 01:09:02,543
+Hiperparametre optimizasyonu sırasında şöyle bir durum oldu hocam.
+
+430
+01:09:08,404 --> 01:09:13,404
+Çünkü çok fazla olduğundan dolayı hiperparametre optimizasyonu çok uzuyordu.
+
+431
+01:09:13,404 --> 01:09:20,904
+Biz de aslında biraz daha derin ve daha çok sayıda ağaçlarla denedik.
+
+432
+01:09:20,904 --> 01:09:25,404
+Aynı zamanda daha az ağaç sayısı ve daha az derinlikte de denedik.
+
+433
+01:09:25,404 --> 01:09:35,404
+Çok anlamlı bir fark bulamadığımız için hiperparametre optimizasyonu uzayımızı daha az derinlikte ve daha az sayıda ağaç üzerinden gerçekleştirdik.
+
+434
+01:09:35,404 --> 01:09:36,404
+Onun aralıkları zaten...
+
+435
+01:09:36,404 --> 01:09:50,184
+Zaten değerlendirme sonuçlarında karşımıza çıkacak. Onu da [öğrenci] daha detaylı anlatır. Ben sadece hiperparametre optimizasyonunda Bayezin Search, özür dilerim, Bayezin Optimization neden kullandık onu anlatmak istiyorum.
+
+436
+01:09:50,184 --> 01:10:00,000
+Yani aslında biz başta random search ve grid search üzerinden ilerlemeyi düşündük. Fakat daha sonra biz hiperparametre optimizasyonu daha böyle...
+
+437
+01:10:00,000 --> 01:10:25,460
+Böyle optimizasyon gibi değerlendirmeye yönelik hareket ettik. Yani bunu bir fonksiyon, optimizasyon sürecinde bir fonksiyon ya da model üzerinden gerçekleştirip o model üzerinden yapılan çıkarımlara göre hiperparametre optimizasyonu gerçekleştirmek istediğimiz için Bayezin Optimization'ı tercih ettik. Böylece daha sağlıklı bir hiperparametre optimizasyonu gerçekleştirebileceğimizi düşündük. Güncelde de çok kullanıldığını bildiğimiz için bunu kullanmaya karar verdik.
+
+438
+01:10:25,876 --> 01:10:52,636
+Bunun için de Optuna diye bir kütüphara var. Onu kullanmış olduk. Hiperparametre optimizasyonu sırasında cross-validationlarımızı, hiperparametre optimizasyonu süreci çok uzamasın diye 3 katlı cross-validation üzerinden ilerlettik. Öbür türlü çok uzayacaktı ama daha farklı şekilde yapılabilirdi. Yani 3 katlı yerine daha yüksek katlı cross-validationlar gerçekleştirilebilirdi.
+
+439
+01:10:53,876 --> 01:10:58,836
+Burada şeyi soracağım. Bu hiperparametre optimizasyonunda hangi bir hükümesini kullandınız?
+
+440
+01:10:59,636 --> 01:11:09,416
+Traimary kümesini kullandık. Validation diye ayırmadık. Cross validation'a güvendik. O train'i kendi içerisinde ayırdığı için...
+
+441
+01:11:09,416 --> 01:11:16,515
+Yani train'i kullandınız. Test verisi hiçbir şekilde optimizasyonu sorucuna girmedi. Tamam. Doğrusu da bu zaten.
+
+442
+01:11:16,515 --> 01:11:23,015
+Şey diye düşündük hocam, bir validation da mı ayırsaydık diye düşündük ama o zaman da ödenin spesifikasyonlarından çıkacaktık.
+
+443
+01:11:23,736 --> 01:11:26,576
+Tamam tamam, doğrusunu yapmışsınız. Devam edelim.
+
+444
+01:11:27,636 --> 01:11:37,576
+O yüzden bu şekilde yaptık. Değerlendirme ve sonuçlar için de [öğrenci] arkadaşım daha detaylı size bilgi verecektir. Denildiğiniz için teşekkür ediyorum.
+
+445
+01:11:38,316 --> 01:11:40,316
+Kapatmasan hemen aşağıya indirsen olur mu?
+
+446
+01:11:40,336 --> 01:11:40,496
+Tabii.
+
+447
+01:11:41,876 --> 01:11:46,196
+Buradan devam edelim. Hiç zaman kayıt etmeyelim. Hatta direkt istiyorsan tablo. Buradan mı yapalım?
+
+448
+01:11:46,836 --> 01:12:09,836
+3 parametrimiz var değerlendirmek için. Burada parametreleri gösterelim hemen. Bağımsız ağaç sayısını dediğimiz gibi kısa tuttuk. Aslında uzun tuttuğumuz da oldu. Ben 300'e kadar çıktım Aralık'ta. 300'e kadar çıktığımda da 180'li ağaç falan buldum. Ama işte değerlendiğimiz sonuçunu çok değiştirmedi. Ondan ötürü hepsini eğitecek zamanımız da yoktu. Dedik ki o zaman ağaç sayısını daha kısa tutalım.
+
+449
+01:12:10,260 --> 01:12:23,619
+Anlamlı bir değişiklik olmadığı için değerlendirme sonuçlarında. Buradaki parametrelerimizi yazdık. Çok üstüne durdum, çok fazla vakit kaybetmeyelim diye söylüyorum. Aşağı inebiliriz bence. Bulduğumuz 5 parametreleri gösterebiliriz direkt.
+
+450
+01:12:23,619 --> 01:12:28,140
+İşte Random Forest ile ağaç sayısını 71 bulduk, ağaç sayısını 14 bulduk.
+
+451
+01:12:28,500 --> 01:12:56,500
+Aynı zamanda Rumble Force'a şeyde optimize etmeye çalıştık burada. Kullanış özletilik oranıyla örnek oranında. Burada şeyi söyleyebilirim. Bunu 10 defa denettik. Trial sayısını 10 verdik. 10 tutmamızın sebebiyle 2 sebebi var. Bir, uzun sürmesi. İkincisi de genelde şey oluyoruz. Optimizasyonda hep çok fazla denedik ve ikinci ve üçüncü denemelerde en iyi değeri buluyor bir şekilde. Ona kadar gidince daha iyisini bulamadı. O yüzden deneme sayısını o kadar yüksek tutmak istedik.
+
+452
+01:12:56,500 --> 01:13:06,500
+İstemedik. Belki olurdu. Belki 30-30 dedik, 20'de falan bulurdu da. O kadar vaktimiz yoktu, işlem gücümüz yoktu. O yüzden bu kadar kısırtmak zorunda kaldık.
+
+453
+01:13:06,500 --> 01:13:19,500
+Baking için bir random subspace için değerlerimiz bu şekilde geldi. İstesen direkt tabloya geçirelim. Biz de aşağı yukarı aynı değerleri bulduk. En aşağıda ismimizi araya.
+
+454
+01:13:20,020 --> 01:13:33,320
+Genel olarak hepsinin, ERO, RMSS, aşağıya koru aynı. Sadece şeyde biraz, abstrakta biraz reiki skorlarımız yüksek geldi. 0.177'ye kadar çıktı.
+
+455
+01:13:33,320 --> 01:13:44,520
+Genel olarak biz de düşük bulduk. Herhalde o şöyle, beslenilip bir fark oldu. Regresyon probleminin sonucu. Bu şekilde bizim değer sonuçlarımız.
+
+456
+01:13:45,395 --> 01:13:52,108
+Biz hocam belirli çıkarımlar da yaptık. Raporayı çok uzatmamak adına yazmadık ama biz mesela...
+
+457
+01:13:52,307 --> 01:14:14,268
+Aynı şekilde yıllar arasında çok fark olmamasından dolayı olacağını düşündük. Bu yeterli sonuçların elde edememesini. Bir de şeyden dolayı düşündük. Mesela çoğu tezde kullanılan kelimeleri çok büyük yoğunluğu ortak olduğu için, keyword farklılıkları çok fazla olmadığı için böyle bir sorun yaşayabileceğimizi düşündük.
+
+458
+01:14:14,268 --> 01:14:19,648
+[öğrenci] [öğrenci] farklı bir yaklaşım daha getirdi bu sonuçları elde edilmesine yönelik.
+
+459
+01:14:20,307 --> 01:14:40,307
+Domen spesifik bir çalışma yapmadığımız için de birazcık sıkıntı yaşadığımızı fark ettik. [öğrenci] [öğrenci] sayesinde. Domen spesifik ilerleseydik, yani mesela sadece bilgisayar menüsü üzerine yazılan tezler üzerinden gitseydik, belki de daha anlamlı sonuçlar elde edebilirdik. Yani işin çok gelen olması, bütün tezler üzerinde gerçekleşmesi aslında bizi...
+
+460
+01:14:42,163 --> 01:14:50,064
+Çok zorlayan bir durum. Bir çıkarım yapmamızı çok zorlaştıran bir durum olduğunu fark ettik. Bunu da ekstra olarak söylemek istedik hocam.
+
+461
+01:14:51,264 --> 01:14:52,444
+Teşekkürler arkadaşlar.
+
+462
+01:14:53,384 --> 01:14:55,423
+Teşekkür ederiz hocam. Sizin başkası çok güzel.
+
+463
+01:14:56,423 --> 01:14:57,884
+Başka sağ olun.
+
+464
+01:14:58,304 --> 01:14:59,163
+Teşekkürler hocam.
+
+465
+01:14:59,304 --> 01:14:59,923
+Teşekkür ederim.
+
+466
+01:15:03,184 --> 01:15:04,404
+[öğrenci] [öğrenci].
+
+467
+01:15:09,203 --> 01:15:10,243
+Merhaba hocam.
+
+468
+01:15:10,783 --> 01:15:11,263
+Merhaba.
+
+469
+01:15:22,484 --> 01:15:26,583
+Kameramı açtım ama bulanık gözüküyor bence. Sizledim mi o şekilde hocam?
+
+470
+01:15:26,583 --> 01:15:29,384
+Evet, niye öyle? Ekranda bir şey mi var?
+
+471
+01:15:29,384 --> 01:15:32,384
+Yok aslında ama tekrar bir kapatıp açayım.
+
+472
+01:15:39,604 --> 01:15:53,364
+Çok ilginç. Anlayamadım şu an bunu ama ilk defa böyle bir şey yaşıyorum. Şöyle ekranımı paylaşayım ama bu şekilde devam et.
+
+473
+01:15:53,364 --> 01:15:56,963
+Tamam, takılmıyorum. Devam et, tamam.
+
+474
+01:16:09,619 --> 01:16:10,819
+Geldim hocam ekranım.
+
+475
+01:16:11,239 --> 01:16:12,019
+Geldim.
+
+476
+01:16:12,539 --> 01:16:13,179
+Tamamdır.
+
+477
+01:16:16,039 --> 01:16:21,879
+Ben de hocam aynı şekilde aynı veririz etkisatı zaten. Sadece 2000 ile 2025.
+
+478
+01:16:21,879 --> 01:16:27,639
+Ezgi şu altta bir tane şey var onu da bir kapatsana. Onu da bir yere kaldıryalım. Tamamdır.
+
+479
+01:16:29,043 --> 01:16:38,644
+Ben de aynı şekilde oynayacağım. Sadece 2025 yılında veri yoktu. Onun yerine 2000 yılından aldım ben. Tam 12500 veri sesini kullanmış oldum.
+
+480
+01:16:39,028 --> 01:17:07,028
+Embedding tarafları zaten herkesle aynı şekilde. Buraları hızlı geçiyorum. Ben de aynı şekilde burada bagging hepsi için hiperparametre optimizasyonu yaptım. Bagging için estimator 50 ve 100 sample'ı da yarısı ve hepsini olacak şekilde seçtim. Random Sub-Safe ise de sadece estimator'ı sabit tuttum. Burada estimator sayısı arkadaşlar da bahsetti. Fazlalaştıkça...
+
+481
+01:17:07,028 --> 01:17:19,828
+Gerçekten eğitim süresi çok artıyor. O yüzden daha fazla seçenek uygulayamadım. Hatta bazı durumlarda önce bir hata mı alıyorum, bir önce şeyleri değiştireyim dedim. Çünkü çıktığı göremedim uzun sürede için.
+
+482
+01:17:19,828 --> 01:17:22,828
+Bu şekilde bir...
+
+483
+01:17:23,507 --> 01:17:42,727
+Parametre deneyim oldu. Şimdi öncelikle title için parametrelerin bir değişikliğini görmek istedim. Random Forest tarafında önce 20-40 ve bir de derinlik olmadığı bir durum denedim. Estimator'da 100 ve 300 olarak bir bakmak istedim.
+
+484
+01:17:43,387 --> 01:17:45,687
+Sınıflandırma problemi çözüyorsun değil mi burada?
+
+485
+01:17:46,587 --> 01:17:50,187
+Aslında evet hocam bu şekilde bakmak istedim ben. Aynen.
+
+486
+01:17:55,604 --> 01:18:12,884
+Sonra burada Random Forest'a şöyle yeşil taraf zaten. En iyi parametrinin Estimator 300 derinliğinde 40 olduğu versiyonu ben aldım. Hatta bu diğer modeller arasında da en iyisini Random Forest verdi.
+
+487
+01:18:12,884 --> 01:18:21,984
+Tabii ki hemen hemen birbirine yakın sonuçlar. Random'ın biraz daha üstünde. Random zaten seçilisi %4 civarı bir seçenek oluyordu veriye göre.
+
+488
+01:18:23,604 --> 01:18:51,584
+Daha iyi bir seçenek verdi title'da. Random subspace ve begging ise benzer yerlerde. Buradaki parametre değişimlerinde de random subspace şöyle ikinci seçenekte hangisiydi? Bu 0.7 sample feature seçildiği durumda daha farklı düşük çıktı. O yüzden buradaki en iyi parametrenin de feature'da yarısı estimator'ında.
+
+489
+01:18:51,604 --> 01:18:52,884
+Yüz olduğu durum oldu.
+
+490
+01:18:53,684 --> 01:19:08,964
+Beding'de de yine aynı şekilde bir deney yaptığımda burada da en iyi parametrenin title için sample'ın yarısının estimator'ın da 50 olduğu durum için benim deneyim de ortaya çıktı.
+
+491
+01:19:12,627 --> 01:19:19,627
+Özet kısmına geldiğimizde de burada tabii ki embedding vektör sayısı yani...
+
+492
+01:19:19,967 --> 01:19:47,967
+Bugünkü biraz daha fazla olacak çünkü metin uzun. O yüzden burada daha farklı sonuçlar elde ettim. Aslında yine parametreler aynı, değişiklik yok. Fakat burada Random Subspace'de ben daha iyi bir sonuç aldım. Genel olarak zaten daha iyi sonuçlar aldım. Abstract'ın daha uzun bir metin verisi olmasından dolayı. Öyle düşünüyorum ben. Ama burada da dediğim gibi Random Subspace'de daha yüksek, %7'lik bir sonuç.
+
+493
+01:19:47,967 --> 01:20:01,167
+Sonuç elde etmiş oldum. Yine aslında parametre burada random subspace %5'e 100. Yukarıdaki ile aslında aynı bir parametre sayısı fakat eköyüsü daha yüksek oluyor.
+
+494
+01:20:02,667 --> 01:20:09,568
+Burada da yine görüyoruz farkları parametre arasındaki eköyüsle arasındaki değişimi.
+
+495
+01:20:12,659 --> 01:20:29,000
+Title ve Abstract'ın birleştiği durumda da Random Forest'a daha yüksek ekürüs elde ettim. Burada da yine aynı parametreleri denedim. Fakat burada parametreler yine Random Subspace'de aynı. Parametreleri de daha yüksek sonucu aldım.
+
+496
+01:20:40,659 --> 01:20:58,699
+Sınırlanmadığı versiyonda sınırlamamak daha doğru olmuş gibi oldu. Estimator'um da 100 burada oldu. Diğerleriyle benzer şekilde. Aslında estimator arttırmak çok da böyle bu veri seti için, bu problem için çok da önemli bir durum değilmiş. Onu görmüş olduk.
+
+497
+01:21:01,395 --> 01:21:29,336
+Burada da en son tüm parametreler arasındaki en iyi sonuçların kendi aralarına karşılaştırmasını da görselleştirdim. Genel olarak Random Forest tüm verilerde daha yüksek ekürisi sağladı. Ben genel olarak bütün parametrelerin en iyi versiyonunda aslında %4'lük o. Random bir tane konu yıl seçilisi onu geçmiş olduğumu düşünüyorum. %4 o zaten.
+
+498
+01:21:29,395 --> 01:21:45,435
+O yüzden onu geçmiş oldum. Genel olarak %5 ile %7.6 ekürüsler arasında sonuçları elde etmiş oldum. En iyisini de abstract yani özet tarafında Random Forest'ı aldım.
+
+499
+01:21:45,811 --> 01:22:13,131
+Ve pardon, title ve abstract da aynı şekilde yüksek bir değer aldım. Burada random for us'ın aslında biraz daha bu model için, bu problem için yeterli bir model olduğu ortaya çıkmış oldu benim için. Çünkü hem daha hızlı hem de diğer modeller biraz daha yavaş kaldı. Gerçekten diğer arkadaşlar da söyledi. Bir saatte yakın her bir eğitim için beklediğim oldu. Estimator'um da yüksekti.
+
+500
+01:22:13,811 --> 01:22:30,112
+O yüzden bu problem için Random Forest'ın yeterli olabileceğini ve daha böyle cost açısından daha etkili olduğunu düşünüyorum. Bu şekilde aslında söyleyebilirim hocam. Çok da böyle farklı bir şey çıkmadı benim sonuçlarımda da.
+
+501
+01:22:31,051 --> 01:22:32,452
+Peki teşekkürler [öğrenci].
+
+502
+01:22:33,971 --> 01:22:38,391
+Ben teşekkür ederim hocam. Kameram da düzelmedi ama.
+
+503
+01:22:42,228 --> 01:22:44,407
+Hocam bitirenden çıkabilir mi acaba?
+
+504
+01:22:46,787 --> 01:22:48,347
+İsteyenden çıkabilir, evet.
+
+505
+01:22:48,907 --> 01:22:50,707
+Teşekkürler hocam. İyi günler dilerim.
+
+506
+01:22:51,067 --> 01:22:53,268
+İyi günler. [öğrenci], [öğrenci].
+
+507
+01:22:57,747 --> 01:23:00,047
+Selamları, çöğümden ekran paylaşıyorum.
+
+508
+01:23:06,163 --> 01:23:06,863
+Evet, geldi.
+
+509
+01:23:06,863 --> 01:23:07,263
+Kanka.
+
+510
+01:23:15,220 --> 01:23:17,340
+Hocam [öğrenci]'nin ekranı açık kaldı sanırım.
+
+511
+01:23:21,747 --> 01:23:22,731
+Evet.
+
+512
+01:23:26,355 --> 01:23:28,036
+Benim kapalı aslında ama...
+
+513
+01:23:38,387 --> 01:23:39,387
+Tekneme.
+
+514
+01:23:39,387 --> 01:23:47,387
+Tamam, başlıyorum. Aslında ben de benzer sonuçlar aldığım için oraya geçiyorum. Direkt sonuçlar üzerinden göstereyim.
+
+515
+01:23:47,387 --> 01:23:55,387
+Ben de ilk önce 24 sınıflık bir sınıflandırma problemi olarak yaklaştım açıkçası probleme.
+
+516
+01:23:55,387 --> 01:24:02,387
+Şunu düşündüm, zaten işte kabaca rastgele bir tahmin yapsam bir böyle 24'den %4'lük bir ekürisi gelir.
+
+517
+01:24:03,252 --> 01:24:10,692
+Hangi modelle, bunu nereye çekebilirim gibi düşünerek yaptım bu çalışmayı. Tabi ki burada Grid Search yaparak en iyi parametreleri de buldum.
+
+518
+01:24:10,692 --> 01:24:21,252
+Her bir model için. Burada bende en iyisi random subspace modeli çıktı. Aslında en iyisi de ortalama %4'den %8'e çekebildim.
+
+519
+01:24:21,684 --> 01:24:37,604
+Eccuris üzerinden konuşuyor olursak. O yüzden bir de rekresyon modeli deneyeyim dedim. Ek olarak bir Logistic Recreation modeli denedim. Burada da aslında %4'tü rastgelelik. %8'e çıkarmıştım Random Subspace ile.
+
+520
+01:24:38,355 --> 01:24:42,716
+Burada da ortalama %13'lük bir doğruluktan bahsedebiliriz.
+
+521
+01:24:42,716 --> 01:24:48,796
+Bu, Base Learner olarak Logistics Regulation kullanımı değil mi? Tek başına Logistics Regulation kullanımı.
+
+522
+01:24:48,796 --> 01:24:56,596
+Problemi yanlış tanımladım mı acaba diye merak ederek yaptım. 24 sınıflık bir sınıflandırma problemi mi acaba diye.
+
+523
+01:24:56,596 --> 01:24:59,596
+Daha iyi sonuç verdiğini de görünce zaten...
+
+524
+01:24:59,988 --> 01:25:04,988
+Sizin de bahsettiğiniz gibi bunu bir rekreasyon problemine çevirmenin daha mantıklı olacağını düşündüm.
+
+525
+01:25:04,988 --> 01:25:13,988
+Ama bunun haricinde, tabiki şu görseller birazcık şey çıkmış, kusura bakmayın onu hesap edemedim. Şöyle daha net göstereyim.
+
+526
+01:25:13,988 --> 01:25:19,988
+Hani yine burada bende de abstract modeli, yani sadece abstractta bakan modeller daha iyi sonuç verdi.
+
+527
+01:25:19,988 --> 01:25:26,988
+Onun haricinde, işte zaten title tek başına çok bir anlam ifade etmedi yine F1 score'ları üzerinden de.
+
+528
+01:25:27,988 --> 01:25:37,307
+Bu, bu modelin baseline'da en iyi sonuç veren model oldu. Sonrasında aslında, tabii ki Logic Decretion onlardan daha önde.
+
+529
+01:25:37,307 --> 01:25:43,548
+Burada şeyi merak ettim ben, zaten şeyi görmüştüm, her bir yılın...
+
+530
+01:25:44,083 --> 01:26:00,963
+Arasında böyle dramatik bir değişim yok. Yani 2021'den 2022'ye. Bunları 3 döneme bölersem ve bu 3 dönem içinde bir TF-IDF çalıştırırsam nasıl keywordler alıyorum diye baktım. Orada da erken dönemde eşit parçaya böldüğümü düşünebiliriz.
+
+531
+01:26:02,676 --> 01:26:24,956
+Pardon, okul, ilk öğretim, müfredat, öğrenci, MKB çok fazla çıkmış. Aslında baktığımda ne anlama geldiğini bulamadım. Böyle keywordlerin çok fazla olduğunu gördüm. Orta dönemde biraz daha sosyolojik keywordler vardı. Suriyeli, mülteci, mobil, internet, veri madenciliği gibi en teknik keywordler bunlardı.
+
+532
+01:26:25,971 --> 01:26:43,131
+Son dönemde ise COVID ve pandemi çok böyle major olarak yüksek TF, IDF değerleriyle çıktılar. Yine böyle derin öğrenme, yapay zeka keywordleri de vardı ama sanırım hani sosyoloji tarafındaki tezlerde COVID, pandemi belki sağlık tarafında çok fazlaydı.
+
+533
+01:26:43,131 --> 01:26:47,131
+O zaman ben de dedim hani illa sınıflandırma problemi yapacaksam.
+
+534
+01:26:48,307 --> 01:27:00,307
+24 sınıfta değil de 3 sınıfa çekeyim. Erken dönem, orta dönem ve geç dönem şeklinde. Bu 3 sınıf üzerinden bir önceki de abstract kullanmak avantajlıydı.
+
+535
+01:27:00,307 --> 01:27:10,307
+Sadece abstract tool'lanarak yine tekrardan model eğittim. Mesela Random Forest için... Şurada bir doğruluk tablamı vardı. Göstereyim.
+
+536
+01:27:10,963 --> 01:27:25,463
+Buradan da görebiliyorum ki aslında 3 sınıfa çektiğimizde en eski tez ile en yeni tezi ayırmakta daha başarılı. Çünkü bir öncekinde %8'e bile zar zor ulaşmıştı 24 sınıfta.
+
+537
+01:27:25,463 --> 01:27:37,420
+O yüzden burada görebiliyoruz erken dönem, gerçekten erken dönem dediğinin % bu. Geç dönemi bilmek de iyi. Orta dönemi de bilmek de...
+
+538
+01:27:37,652 --> 01:27:49,132
+24 sınıftan tabii ki çok çok daha iyi. Ama bu yıllarası geçişin çok da net ve keskin olmadığı için burada bir tık daha yavaş kaldığını gözlemledim.
+
+539
+01:27:52,916 --> 01:28:03,916
+24 sınıflı test tahmini yapmak zor bir problem. Bunu anladım. En iyi doğruluğun %13 civarında, o da Logistic Recreation'ı tek başına kullandığımda elde edebildiğimi gördüm.
+
+540
+01:28:03,916 --> 01:28:18,916
+O da muhtemelen uzayın yoğun ve doğrusal olduğu gerçeğini göstermiş oldu bana. Ama 3 döneme ayırdığımızda %65'e kadar doğruluğu arttırabildiğimi gördüm. Random First özelinde.
+
+541
+01:28:20,916 --> 01:28:29,916
+Sonuçlar benim sonuçlarım aslında bu şekilde. Burada yaptığım işlemlerde çok farklılık yok. Arkadaşların yaptıklarından.
+
+542
+01:28:29,916 --> 01:28:31,916
+O yüzden oraya es geçtim.
+
+543
+01:28:31,916 --> 01:28:33,916
+Peki teşekkürler [öğrenci].
+
+544
+01:28:33,916 --> 01:28:34,668
+Teşekkür ederim.
+
+545
+01:28:43,123 --> 01:28:44,064
+[öğrenci].
+
+546
+01:28:45,824 --> 01:28:48,404
+Hocam bu arada bir şey söyleyebilir miyim? Araya giriyorum ama.
+
+547
+01:28:48,904 --> 01:28:49,224
+Evet.
+
+548
+01:28:49,344 --> 01:28:56,384
+[kişisel bilgi]. Acaba [öğrenci] arkadaşımızdan sonra bir sunsak olur mu diyecektim.
+
+549
+01:28:57,043 --> 01:28:57,524
+Olur.
+
+550
+01:28:57,743 --> 01:28:58,264
+Teşekkür ederim.
+
+551
+01:28:58,264 --> 01:28:59,024
+Sağ olun.
+
+552
+01:29:01,144 --> 01:29:01,944
+[öğrenci].
+
+553
+01:29:04,243 --> 01:29:05,384
+Benim hocam.
+
+554
+01:29:06,404 --> 01:29:08,764
+Evet dinliyoruz seni [öğrenci]. Görüyoruz şu anda.
+
+555
+01:29:10,131 --> 01:29:10,891
+Haydi, şöyle.
+
+556
+01:29:19,123 --> 01:29:28,123
+Öncelikle arkadaşlarımdan anlattık gibi ben de verisetini ayırdım. Ödevize belirtildiği şekilde.
+
+557
+01:29:29,123 --> 01:29:43,123
+Daha sonra temsiller çok fazla yer kapladığı için PCI ile 356 komponente düşürdüm yani sabitledim.
+
+558
+01:29:43,956 --> 01:29:49,956
+Çünkü bilgisayarda birazcık problemli olduğu için çok dur sürüyor.
+
+559
+01:29:59,956 --> 01:30:06,956
+Bence bu veri satı kullanarak yıldız direkt doğrudan tahmin etmek bana çok kolay gelmiyor.
+
+560
+01:30:10,963 --> 01:30:22,963
+Bu verilerle tahmin yapılması isterse bende. Ben de zorlanırdım diye düşünüyorum. Ben bunu sınıflandırma problemi olarak düşünüyorum.
+
+561
+01:30:22,963 --> 01:30:36,963
+Önce regresyon olarak da bir çalışmam oldu ufak ama oradan da önce sınıflandırma olarak başladığım için regresyonda fazla başarı edemediğim için.
+
+562
+01:30:38,644 --> 01:30:49,284
+Böyle tutmaya karar verdim. Burada aslında sonuç, az önce bahsettiğim sonucu burada.
+
+563
+01:30:49,284 --> 01:31:05,284
+Devamında bagging hazırlıkması kullanıldığında, temel öğrenci karar ağacı olduğunda, karar ağacının derinli, max verimli, on verildiğinde ve 20 tane öğrenci olduğunda sonuçlar böyle oluyor.
+
+564
+01:31:06,100 --> 01:31:32,460
+En yüksek yine aksakta, yani özette kalıyoruz. Benzer şekilde bu sefer derinli otu verdiğimizde yine öğrencileri bilme olarak sabit tuttuğumuzda da bu sefer derinli arttırmamıza rağmen önceki sonucu göre çok iyi. İyileşme veya daha kötü olduğu gibi olmuş. Göremiyorum.
+
+565
+01:31:33,332 --> 01:31:43,812
+Bir öneri olarak emrulan, mesela üç tane tabloyu, üç ayrı tablo yapmak yerine bir tane tablo da göstersen daha iyi olmaz mı?
+
+566
+01:31:43,812 --> 01:31:46,412
+Olur hocam, doğru.
+
+567
+01:31:46,412 --> 01:31:55,092
+Bunları yan yana görsek, o Begging'in altında o şeyleri yazsa, MaxTep 30.
+
+568
+01:31:55,092 --> 01:31:57,092
+Doğru hocam, doğru.
+
+569
+01:31:57,555 --> 01:32:03,055
+Daha kolay yorumlarına takip edilebilir. Peki bunları buldun.
+
+570
+01:32:03,055 --> 01:32:24,651
+En son 100 öğrenci verdiğinizde de 7.3 olarak en yüksek özetçikli. Random Subspace'de de derinlik 5, 25 öğrenci olduğunda 7.6.
+
+571
+01:32:24,756 --> 01:32:35,756
+Öğrenci sayısının derinliğe arttırdığımızda da bu sefer düştü yani. Altıncı Türkiye'ye düşüyor.
+
+572
+01:32:35,756 --> 01:32:47,756
+Bu sefer farklı bir test yapıyoruz. Derinliğe 5 verip 50 öğrenci olsaydı vesaire. Buralarda da yine ciddi bir...
+
+573
+01:32:48,435 --> 01:33:13,435
+Random Policist'de de aslında aynı şey oldu. Bence bunun sebebi Decision Tree'nin yetersiz kalması gibi. Bu yüzden biraz araştırma yaptım hani ne yapabiliriz falan diye. Burada da benzer sonuçlar var. Temel öğrenci olarak ben Decision Tree'yi değiştirerek Logistic Regression'a çevirdim.
+
+574
+01:33:15,123 --> 01:33:29,923
+Bunda aslında daha bence başarılı konfeder ediyoruz. Yani tabi PCI'ye yine 256 konfeder düştüğü için belki bir veri kaybı istesemez oluyor tadı ama en azından eğitim daha hızlı olmuş oluyor.
+
+575
+01:33:31,363 --> 01:33:41,123
+Burada da hepsini birlikte benzer şeylerle, parametrelerle eğitiyoruz. Yani 40 temel öğrenci hepsi. Random Paris.
+
+576
+01:33:41,203 --> 01:33:55,923
+Zaten Decision Tree kullanıyor. Değiştirmeyi de aynen. Burada da Random Subspace'in abdurak kısmında %11 ile çıktı. Daha önceki Decision Tree çok daha iyi.
+
+577
+01:33:55,923 --> 01:34:00,483
+Ben şeyi anlayamadım. Random Subspace ile yine Decision Tree kullandın.
+
+578
+01:34:00,483 --> 01:34:07,283
+Hayır. Random Subspace'i burada Logistic Regression kullanıyor. Base Estimator olarak.
+
+579
+01:34:07,667 --> 01:34:34,987
+Tamam, tamam. Anladım. 40 tane var. 40 tane Logistic Regression var. Sadece Random Subspace'e göre işte bölümüyor, feature var vesaire. Burada %11.1'e çıktı. Ama dediğim gibi PCA'yı kullandığımız için belki bilgi kaybı oluyor. İster istemez. Büyük bir yerden çok düşük bir feature sayısını düşürdük. Burada %11.1 geldi. İşte 40 temel öğrenciyle. 10 temel öğrenciyle.
+
+580
+01:34:35,412 --> 01:34:42,012
+Daha da düştü. Yani bunun 40 ekonu olması belki daha fazla olması dahi olabilir diye düşündük.
+
+581
+01:34:42,012 --> 01:34:53,212
+100 temel önce kullanıldığında da %11.45 daha da düştü. Yani bu aralıkta bir şey olması gerekiyor diye düşündüm. Bu şekilde deneyim.
+
+582
+01:34:53,212 --> 01:34:56,612
+Peki, teşekkürler [öğrenci]'la.
+
+583
+01:35:08,180 --> 01:35:10,180
+Evet, şimdi...
+
+584
+01:35:10,180 --> 01:35:11,180
+Hocam, biz...
+
+585
+01:35:11,180 --> 01:35:11,960
+[öğrenci]...
+
+586
+01:35:11,960 --> 01:35:13,720
+[öğrenci], [öğrenci].
+
+587
+01:35:16,619 --> 01:35:18,460
+Evet, başlayabilirsiniz.
+
+588
+01:35:19,720 --> 01:35:21,760
+Tamamdır hocam, şimdi özelimizi açıyorum.
+
+589
+01:35:23,960 --> 01:35:24,820
+[öğrenci] yok mu?
+
+590
+01:35:25,440 --> 01:35:25,880
+Efendim?
+
+591
+01:35:26,300 --> 01:35:26,680
+[öğrenci] yok mu?
+
+592
+01:35:26,680 --> 01:35:29,220
+[öğrenci] burada hocam. Benden sonra da oraya geçtik.
+
+593
+01:35:29,400 --> 01:35:30,659
+[öğrenci] sen de açız derken.
+
+594
+01:35:30,880 --> 01:35:32,100
+Tamam, tamam. Gördüm şimdi, tamam.
+
+595
+01:35:32,279 --> 01:35:33,060
+Tamamdır hocam.
+
+596
+01:35:33,684 --> 01:35:49,404
+Giriş kısmı arkadaşlarımızla aynı olduğu için burayı çok hızlı geçeceğim. Biz hibrit bir şekilde aslında ele aldık. Klatifikasyonla başladık ama regressor metriklerini de devreye soktuk. Ondan biraz sonra hiperparametre optimizasyonları kısmına gelince bahsedeceğim.
+
+597
+01:35:49,644 --> 01:36:01,663
+Arkadaşlarımın bahsettiği gibi biz de hocam 2001 ve 2024 yılları arasında son yılı almadan bu veriler üzerinde 12 binlik test seti üzerinde çalıştık ve 6 bini türeğin 6 bini türeğin.
+
+598
+01:36:01,684 --> 01:36:27,684
+Son yılı almadık dediğim gibi orada çünkü veri yoktu. Sonrasında veri ön işleme kısmında title, abstract ve year olarak zaten verilerimizi almıştık ama biz burada aslında veriyi modele sokmadan önce bir anlamaya çalıştık. Karşımızda nasıl bir veri var? Veri setinin genel yapısını çektik. Bu şekilde işte title, year, abstract ve subject olarak karşımıza head fonksiyonuyla veriyi çağırdık. Veriyi bir anlamaya çalıştık en başta.
+
+599
+01:36:29,684 --> 01:36:43,024
+Bu su sınıf sayısına bakmak istedik. Acaba tez alanının hangi sınıf sayısında, hangisinde daha fazla olduğunu kategorik olarak görmeye çalıştığımızda 849'da eğitim-öğretim alanından daha fazla tezin karşılığımıza çıktığını gördük.
+
+600
+01:36:43,024 --> 01:36:57,003
+Yine çalışma süresince bu 9.5'dan beri arkadaşların anlattıklarından bazı arkadaşlarımızın eksik değer analizleri de yapmışlardı. Biz de aynı şekilde ilerledik. Acaba dedik bu çektiğimiz yılda, başlıkta, özette eksik bir değer var mı? Onları görmek istedik.
+
+601
+01:36:57,684 --> 01:37:07,564
+Subject kısmında 5 tane boş bir alan vardı. Bu da zaten bizim çalışmamızla ilgili olmadığı bir kısmıydı. Year, Title, Webstack kısmında boş alanlar olmadığından emin olduk.
+
+602
+01:37:08,163 --> 01:37:19,944
+Sonrasında biz yine veriyi anlamak için başlık uzunluğu, özet uzunluğunun yıllara göre scatterplot grafiklerine baktık ve kategorik olarak 10'lu periyodik yıllar kapsamında başlık uzunluğunun yıllara göre biraz daha arttığını gördük.
+
+603
+01:37:19,944 --> 01:37:23,104
+Bunlar dediğim gibi tamamen veriyi anlamak için yaptığımız şeylerdi.
+
+604
+01:37:25,684 --> 01:37:29,583
+Bu ilk 10'luk periyotta daha uzun olduğunu gördük sonraki yıllara oranla.
+
+605
+01:37:30,363 --> 01:37:32,923
+Yine bir istatistiksel anlamlılık testine bakmak istedik.
+
+606
+01:37:33,003 --> 01:37:40,703
+Acaba tezlerin başlık uzunlukları ya da özet uzunlukları arasında istatistiksel anlamda bir anlamlı farklılık var mı diye bir anoma testi uyguladık.
+
+607
+01:37:40,703 --> 01:37:53,604
+Bu da hipotezi, bu aslında defolt olarak yokluk hipotezini reddeden p-value'nun yaklaşık olarak sıfır değerine yakın olduğu için aslında bu metin uzunluklarının yılları arasında anlamlı farklılık da gösterdiği sonucuna ulaştık.
+
+608
+01:37:53,684 --> 01:38:09,804
+Veli dediğim gibi anlamaya çalıştığımız alanlar burası. Bir de Spearman korrelasyon analizine baktık. Acaba hem title hem de abstract uzunlukları, yani bu metin uzunluklarının yıl ile arasındaki ilişki Spearman korrelasyon katsayısıyla ne durumda olduğuna bir bakalım dedik.
+
+609
+01:38:09,804 --> 01:38:21,684
+Bu yıllar ilerledikçe aslında tez metinlerinin kısmen uzama eğiliminde olduğunu ama tek başına yıl tahmininde de yeterli olmayacağını gördük. Sonrasında embedding kısmına geçtik. Biz burada yine...
+
+610
+01:38:21,684 --> 01:38:43,003
+Arkadaşlar'ın da kullandığı aynı YTC Cosmos E5'ler modelini kullandık. Tez özetleri, tez başlıkları, title, abstract ve birleştirilmiş temsil olarak concatenate title artı abstract vektörlerini kullandık. Bunların her bir öz nitelik için bir 24 boyutlu vektör temsilleri elde ettik. Birleştirilmiş temsilde de 2048'lik concatenate temsilimizi elde ettik.
+
+611
+01:38:43,003 --> 01:38:49,543
+Yöntem kısmında biz model olarak arkadaşlarımızın da burayı hızlı geçtiği için Bagging Random Subspace ve Random Forest nedir?
+
+612
+01:38:49,684 --> 01:39:17,684
+Sadece değindiğimiz kısım. Sözel kısmı geçiyorum. Şimdi hiperparametre optimizasyonlarına gireceğiz. Bu modelleri kullandık. Ancak şimdi hiperparametre optimizasyonu olarak aslında biz epey deneme yanılma yaşadık hocam. İlk başta en iyi sonucu bulmak için Grid Search CV ile yola çıktık. Ancak modeller arasında adil bir karşılaştırma yapmak için biz hiperparametre optimizasyonlarının sayısına farklı girmiştik. Çok düşük ekürisi sonuçları elde edince adil karşılaştırma sonuçları olsun ve hiperparametre optimizasyonları...
+
+613
+01:39:17,684 --> 01:39:45,384
+Bu işe grid search ile başlayınca hiperparametre optimizasyonunda hiç abartmıyorum hocam. 8 saat sürdü. Ve 8 saat sonunda çalışma kesildi. Collab'dan ilerliyorduk. Ve sonra biz dedik ki biz bir yerde hata yapıyoruz. Bu kadar yavaş sürmemeli. Sonrasında mecburen strateji değiştirdik ve randomized search CV'ye geçtik. Burada da yine her bir modelin eğitimi aslında 40 dakikanın üzerinde sürdü. Yani yine bir epey kapsamlı bir tarama yaptık.
+
+614
+01:39:45,684 --> 01:39:59,684
+Ama hani en başta sınıflama problemi olarak ele aldık ama bildi bilemedi diye hani kurulu bir sınıflandırma problemi olarak görmedik. Hani bu işin doğasına uygun aslında hibrit olarak ele aldık. Çünkü tezlerin dilindeki bu dönemsel...
+
+615
+01:40:00,000 --> 01:40:04,420
+Değişiklikleri yakalamak için klasifikasyon algoritmalarını tercih ettik.
+
+616
+01:40:04,539 --> 01:40:09,460
+Ama aslında hedefimiz yıl olduğu için bir yıl yanılmakla on yıl yanılmak aynı şey değil.
+
+617
+01:40:09,579 --> 01:40:11,920
+Bu yüzden sadece accuracy doğruluk oranına bakmadık.
+
+618
+01:40:11,920 --> 01:40:16,399
+Bunun yanında RMCS ve RMCI ve MAE değerlerine baktık.
+
+619
+01:40:16,460 --> 01:40:18,939
+Bu regresyon metriklerini de yani işin içine kattık burada.
+
+620
+01:40:19,060 --> 01:40:26,220
+Böylece hem sınıflama problemi yaptık hem de hata payını regresyon mantığıyla ölçen çok yönlü bir analiz yapmış olduk.
+
+621
+01:40:28,000 --> 01:40:34,079
+Regresyonu Rutmin Square Error'a göre falan yani regresyona göre yapmadınız ama sonuçlarınızı regresyona göre ölçtünüz.
+
+622
+01:40:34,079 --> 01:40:42,479
+Aynen öyle hocam. Tam olarak öyle oldu. Burada ağaç sayısını gördüğünüz gibi 50 ile 121 arasında rastgele seçilecek şekilde ayarladık.
+
+623
+01:40:42,600 --> 01:40:47,539
+Yani burada amacımız aslında modelin karar mekanizmasını güçlendirecek yeterli sayıda ağacı bulmaktı.
+
+624
+01:40:47,539 --> 01:40:51,640
+Bu arada bunlarla biz sürekli oynadık. İnanın biz 10 gündür bu ödev üzerinde çalışıyoruz.
+
+625
+01:40:51,939 --> 01:40:55,539
+Bunu da istesek daha iyi sonuç alır mıyız falan diye. Ama maksimum...
+
+626
+01:40:56,000 --> 01:41:09,640
+Ağabileceğimiz değeri de burada aldık aslında. Şimdi size onları anlatacağım. Ağaç derinliğini, modelin ezberlemesini, overfitting yapmasını önlemek amacıyla çok fazla sonsuza kadar büyümesine de izin vermemek için 10 ile 20 arasında sınıfı tınırlandırdık.
+
+627
+01:41:09,640 --> 01:41:23,979
+Bu min sample leaf yaprak başına minimum örnek sayısında yani bir dalın ucunda en az kaç verinin kalması gerektiğinde 5 ila 10 arasında belirledik ama bu bizim sonuçta zaten en iyi.
+
+628
+01:41:24,000 --> 01:41:51,060
+parametreler olarak şöyle aşağıda da sonucu da koyduk. Max Depth'i 20, Min Sample Leaf'i 10, NST Maters'ı da 113 olarak en iyi parametre olarak Abstract bazında seçti. Yani bu da test verisi üzerinde kombinasyonlardan en iyi. Train setinde accuracy değeri 0.06 iken test seti accuracy değeri 0.083'lere geldi. Bu da bizim hani aslında arkadaşın şimdi [öğrenci] buradan sonrasında da ele alacak aldığımız en yüksek test seti accuracy değeridir.
+
+629
+01:41:52,000 --> 01:42:12,779
+Yine [öğrenci] arkadaşımız bakmıştı galiba. Bir arkadaşımız daha bakmıştı. Bu regresyon metriklerinden Maya değerini 5.88 bulduk. Bu da yine arkadaşımızın bahsettiği gibi biz de aynı sonuca ulaşmışız. Yılda yaklaşık olarak 6 yıllık bir sapma olduğunu göstermektedir. Bu Random Forest için de anlattıklarımda şimdi Begging'e geçiyoruz ve grup arkadaşıma devrediyorum. Teşekkür ederim.
+
+630
+01:42:17,811 --> 01:42:19,811
+Merhabalar herkese günaydın.
+
+631
+01:42:19,811 --> 01:42:21,811
+Günaydın [öğrenci].
+
+632
+01:42:21,811 --> 01:42:28,811
+Begink algoritması ile devam ediyoruz. Biz burada temel öğrenici olarak decision tree kullandık bütün algoritmalarımızda.
+
+633
+01:42:28,811 --> 01:42:36,811
+Farklı şeylerin denenebileceğini de aslında biliyorduk. Biz çünkü hibrit bir şekilde yaklaştığımız için...
+
+634
+01:42:37,119 --> 01:42:43,619
+Bu şekilde Logistic Regression falan da kullanmayı, SVM'i de kullanmayı düşündük ve hatta kullandık da.
+
+635
+01:42:44,039 --> 01:42:45,480
+Ve bazı sonuçlar elde ettik.
+
+636
+01:42:45,860 --> 01:42:50,159
+Bagging algoritmasında Enestimator'sı 50 ile 120 arasında sınırlandırdık.
+
+637
+01:42:50,159 --> 01:42:55,920
+Max Tep'i 10 ile 20 arasında Minimum Sample Leaf'i 5 ve Maximum Sample'sı da her bir ağaçın.
+
+638
+01:42:56,380 --> 01:43:01,039
+Rastgele %70 veri setindeki örneklerin %70'ini seçilerek eğittik.
+
+639
+01:43:01,340 --> 01:43:04,460
+Biz buradan çok deneme yaparak bu sonuçlara geldik aslında.
+
+640
+01:43:05,119 --> 01:43:11,619
+Çünkü çok fazla rem patlamaları ve çalışma zamanının kesilmesi olarak sonuçları elde ettik.
+
+641
+01:43:11,840 --> 01:43:13,440
+Burayı ilerletebiliriz [öğrenci]'cım.
+
+642
+01:43:16,692 --> 01:43:34,911
+NJabs üzerinde çok oynamalar yaptık. Burada da yine tek çekirdekli kullanılması, paralel olması. NJabs-1'de çok büyük, uzun çalışma sürelerine geldi. İterasyonda 8'i, burayı da yine 2 seçtik.
+
+643
+01:43:44,692 --> 01:43:58,471
+%7 olarak aldık. Yine Maya değerimiz 6, Haremci değerimiz de 7 olarak söyleyebiliriz. Random Space algoritmasında ise, burada da yine kendine özgü hiperparametreleri kullandık.
+
+644
+01:43:59,051 --> 01:44:07,451
+Farklı olarak sadece test size'ı girmek durumunda kaldık. Burada hiperparametre eğitim kümesinin tamamını vermedik. %40'ını vermiş olduk.
+
+645
+01:44:08,091 --> 01:44:12,491
+Trendset'in de tamamını kullandık tüm ağaçlarda. Max Samples'ı 1 vererek.
+
+646
+01:44:12,692 --> 01:44:39,571
+devamına geçelim. Sonuç olarak yine burada da yüzde sekize yakın bir sonuç elde ettik. Aşağı yukarı Maya ve RMC değerleri birbirine yakın sonuçlar olarak çıktı. Bulgumuzda ise devam edebiliriz. En iyi modeli Random Forest olduğunu ve Abstract olduğunu görebiliyorsunuz. Eki üstü sonucumuzda yüzde sekiz olarak elde ettik. Devam edelim.
+
+647
+01:44:41,876 --> 01:44:51,596
+Burada ekürüs karşılaştırmalarını barplot ve hitmap şeklinde göstermeyi tercih ettik. Aslında biz burada title daha az çıkacağını biliyorduk.
+
+648
+01:44:51,648 --> 01:45:10,188
+Hipotopitis o yöndeydi. Abstract'in ise tab'ın gerisinde kalacağını tahminliyorduk. Fakat burada boyutu genişlettiğimiz için, 1024'den 2048'e uzay genişlediği için maalesef burada şeyi arttırdım.
+
+649
+01:45:10,931 --> 01:45:21,511
+fazla boyutsal şeye geçti yani sıkıntı yarattı. Burada istediğimiz maalesef ekürüsüye de vermedi diyebiliriz. Devam edelim.
+
+650
+01:45:27,444 --> 01:45:47,904
+Burada asıl şu öneriler üzerine durmak istiyorum. Biz burada aslında yılları bu şekilde tekil bir şekilde almak yerine kümeleme şeklinde yapsaydık, beşer yıllık veya işte daha farklı kümeler şeklinde alsaydık, sınıf içi varyansını azaltıp doğruluk oranının yükselmesine sebep olabilecek bir öneriyle geldik.
+
+651
+01:45:55,444 --> 01:46:21,944
+Bir yaklaşım şey kullandık. Önceki literatür taramasında da aslında yılların bu şekilde değerlendirildiğini de gördük ve doğru yolda olduğumuzda burada kanaat getirdik. Veri zenginleştirme yapılabilir. Yani 25 yılına kadar yüksek bir yıl şeyi olsa da genişlik gibi görünse de aslında veriyi arttırarak veya sentetik veri üretme ki burada hiç tavsiye etmiyorum.
+
+652
+01:46:23,444 --> 01:46:29,864
+genellenebilir daha yüksek doğruluk oranına sahip sonuçlar elde edilebilir diye bir tahminlemede
+
+653
+01:46:29,864 --> 01:46:35,324
+bulunduk. Embedding'de ise farklı varyasyonlara karşılaştık yine literatürde bunları deneme
+
+654
+01:46:35,324 --> 01:46:39,284
+şansımız oldu. Ek notlarda aslında burada aldığımız sonuçları vermeyi tercih ettik.
+
+655
+01:46:39,764 --> 01:46:52,323
+Parazi konuşmak yerine. Burada k-means yöntemiyle aslında biz bunu 24 sınıftan 8 kümeleme yaparak bir sınıflandırma modeline geçtik.
+
+656
+01:46:52,724 --> 01:46:59,764
+Ve burada başarı oranımızın aslında 5 kat artarak %35'lere çıktığını biz burada aldık bu sonucu.
+
+657
+01:47:00,563 --> 01:47:04,103
+Hiperparametre optimizasyon yöntemlerinden de Optuna'yı denedik.
+
+658
+01:47:07,764 --> 01:47:16,804
+Remede aşırı yüklenme olduğundan dolayı yine maalesef burada da bir sonuç elde edemedik. Ve tekrar eski yöntemimize dönmüş olduk.
+
+659
+01:47:17,363 --> 01:47:22,463
+Embedding'de ise farklı bir yöntem dediğimiz Weighted Mean Vision. Size bundan bahsetmiştik sınıfta da.
+
+660
+01:47:22,543 --> 01:47:26,323
+Hibrit modelini kullanarak ne gibi sonuçlar elde ettiğimize baktık.
+
+661
+01:47:26,323 --> 01:47:35,764
+Ve burada da aslında bagging'de %9 olarak bir yükselme gördük. Aslında burada doğruluk oranları...
+
+662
+01:47:35,764 --> 01:47:37,764
+hafif yükseliyor gibi görünse de
+
+663
+01:47:37,764 --> 01:47:39,703
+yani metin madenciliğinde bu
+
+664
+01:47:39,703 --> 01:47:41,864
+aslında güzel
+
+665
+01:47:41,864 --> 01:47:43,284
+bir sonuç yani bunu hani
+
+666
+01:47:43,284 --> 01:47:45,524
+%1 attık diye
+
+667
+01:47:45,524 --> 01:47:47,784
+değerlendiremeyeceğimizi düşünüyorum
+
+668
+01:47:47,784 --> 01:47:49,904
+ve burada da
+
+669
+01:47:49,904 --> 01:47:51,703
+Regressor modelini de kullandık
+
+670
+01:47:51,703 --> 01:47:53,623
+Regressor modelinde de zaten
+
+671
+01:47:53,623 --> 01:47:55,864
+%5'lerde %4'lerde
+
+672
+01:47:55,864 --> 01:47:57,923
+bayağı altlarda
+
+673
+01:47:57,923 --> 01:47:59,844
+olduğunu görebiliyoruz bizim kullandığımız
+
+674
+01:47:59,844 --> 01:48:00,923
+modelin yanında
+
+675
+01:48:00,923 --> 01:48:03,564
+bir dakika [öğrenci] şey anlamadım
+
+676
+01:48:03,764 --> 01:48:15,764
+Buradaki Regressor kullanınızda buradaki değerler ne? Yüzde beş. Regressor de nasıl yüzde beş oluyor?
+
+677
+01:48:27,412 --> 01:48:28,412
+Mae?
+
+678
+01:48:28,412 --> 01:48:31,332
+Ve RMC şekilde de o.
+
+679
+01:48:31,332 --> 01:48:35,892
+Şimdi mae değerlerine baktığımızda 5 değil mi mesela?
+
+680
+01:48:36,452 --> 01:48:36,771
+Evet.
+
+681
+01:48:36,771 --> 01:48:37,892
+Mae değerlerine baktığımızda 5'ler.
+
+682
+01:48:38,332 --> 01:48:38,572
+Evet.
+
+683
+01:48:38,632 --> 01:48:40,832
+Ve sizin şu andaki mevcutlarınızdan çok daha iyi değil mi o?
+
+684
+01:48:41,372 --> 01:48:43,052
+Yani yaklaşık hocam.
+
+685
+01:48:43,312 --> 01:48:45,112
+Yani daha iyi diyemeyiz orada.
+
+686
+01:48:45,792 --> 01:48:46,132
+En iyi.
+
+687
+01:48:46,312 --> 01:48:50,912
+Buraya baktığımızda %6, %7, yani 6, 7 falan gibisinden şeyler görüyorum.
+
+688
+01:48:50,972 --> 01:48:52,231
+Orada mesela 5 falan var.
+
+689
+01:48:53,363 --> 01:48:55,363
+4.99 var mesela.
+
+690
+01:48:55,363 --> 01:48:59,863
+Hocam şöyle, şimdi en iyiye baktığımız zaman Random Forest'ın Abstract'ını aldık ya biz.
+
+691
+01:48:59,863 --> 01:49:08,163
+Burada accuracy ile beraber biz bir değerlendirme yaptık. O da nedir? 0.8 hatta 9 diyebilirim Random Forest'ta.
+
+692
+01:49:08,163 --> 01:49:19,363
+Ama mesela Maya'da 5.40. Yani birbirine çok yakın sonuçlar ve daha iyidir diyebileceğimiz bir sonuç değil maalesef bu.
+
+693
+01:49:20,787 --> 01:49:28,187
+İkisini birlikte değerlendirmeyi istedik. Birincisi, Regüresörde accuracy'nin nasıl ölçüldüğünü bilmiyorum.
+
+694
+01:49:28,187 --> 01:49:44,187
+Regüresörde bu accuracy pivot diye ifade ettiğiniz kısmının nasıl ölçüldüğünü bilmiyorum. Ama Maya açısından baktığımızda ya da root mean square error açısından baktığımızda buradaki değerler sizin yukarıdaki değerlerinizden daha iyi değiller mi?
+
+695
+01:49:44,187 --> 01:49:47,187
+Tekrar yukarı çıkabilir miyiz?
+
+696
+01:49:49,555 --> 01:49:59,255
+Tamam. Biraz aşağı inelim. Mesela burada mayeler 7, 5, 6 falan. 5 falan hiç yok mesela.
+
+697
+01:49:59,675 --> 01:50:03,795
+Var hocam. 5,88 var. O da zaten bizim kendimiz modelimiz.
+
+698
+01:50:03,935 --> 01:50:06,655
+5,88 var değil mi? En düşük.
+
+699
+01:50:07,035 --> 01:50:07,395
+Evet.
+
+700
+01:50:07,955 --> 01:50:09,575
+Mayede. Şimdi aşağı inelim.
+
+701
+01:50:13,655 --> 01:50:15,355
+Burada mayede en düşük kaç var?
+
+702
+01:50:15,355 --> 01:50:16,155
+5 var.
+
+703
+01:50:17,043 --> 01:50:39,963
+4.99 var. Evet. Bu çok daha iyi değil mi? Yani sadece o yönüne bakarsak daha iyi. Hangi yönden bakacağız? Eccurisy'yi o zaman egale etmiş oluyoruz ama hocam. Yok tamam da Eccurisy dediğimiz şey regresyonu nasıl ölçülüyor onu da bilmiyorum ben. Nasıl bir ölçüm yapılıyor orada? Yani şimdi yıl bazında şöyle yaklaşık bir şey çıkartıyorsunuz aslında.
+
+704
+01:50:40,511 --> 01:50:47,231
+Burada yıl dediğimiz şey tamamen sürekli bir değişken değil, kesikli bir değişken.
+
+705
+01:50:47,231 --> 01:50:49,791
+Evet, orada içerisi nasıl ölçülüyor?
+
+706
+01:50:49,791 --> 01:50:56,751
+Onu işte numaraye çevirdiğimiz için yılları aslında öyle bir değer elde edebiliyoruz.
+
+707
+01:51:00,435 --> 01:51:14,235
+Peki, tamam devam edelim. Sayısallaştırıyoruz ordinal bir şeyi aslında. O nedenle bu yaklaşıma geçtik biz. Tamamen burada sınıflandırma diyemem, tamamen burada regresyon diyemem. O nedenle ikisi...
+
+708
+01:51:14,235 --> 01:51:26,496
+Ben sadece şeyi merak ettim. Bazen olarak regresör kullandınız ya. Klasifier yerinde regresörleri kullandınız ya. Orada ekürisi dediğiniz şeyin karşılığı nedir acaba?
+
+709
+01:51:27,283 --> 01:51:44,963
+Maya'yı biliyoruz yani tahminle gerçeğin arasındaki işte mutlaklık. Yani anlamında bir fark eder. Evet, onlara göre daha iyi sonuçlar mesela. Ama eküriseye göre daha iyi değil diyorsunuz ya mesela. Bu eküriseye göre daha iyi olmayış ne demek yani? Ekürise ne demek burada?
+
+710
+01:51:46,899 --> 01:51:50,299
+Yani karşılaştırma yapılamaz mı demek istediniz?
+
+711
+01:51:50,299 --> 01:51:56,500
+Ben şey bilmiyorum, bu accuracy nasıl hesaplanıyor regresyon modelinde anlatabildim mi?
+
+712
+01:51:56,500 --> 01:52:03,699
+Burada bir kriter var, accuracy, Maya var, bir de root mean square error var. Burada 3 tane kriter var.
+
+713
+01:52:03,699 --> 01:52:10,099
+Bu 3 tane kriterden Maya ve root mean square error'a göre daha iyi sonuçlar elde etmişsiniz.
+
+714
+01:52:10,099 --> 01:52:12,099
+Accuracy'ye göre değil.
+
+715
+01:52:12,099 --> 01:52:13,099
+Evet.
+
+716
+01:52:13,427 --> 01:52:23,148
+İşte eküriside acaba nasıl bir şey yapılıyor ki buradaki değerler elde ediliyorlar? Orasını tam şey yapamadım, anlayamadım. Anlatabildim mi demek istediğimi?
+
+717
+01:52:23,148 --> 01:52:35,507
+Çok anlayamadım ama kodda her şey mevcut hocam. Devam edelim. Tamam burada bitti galiba.
+
+718
+01:52:35,507 --> 01:52:41,028
+Tamamdır. Elinize sağlık, teşekkürler. Teşekkür ederiz.
+
+719
+01:52:59,475 --> 01:53:08,355
+Şimdi arkadaşlar, 6 dakika bir ara verelim. 11.30'da devam edelim, tamam mı?
+
+720
+01:53:11,355 --> 01:53:14,995
+Hocam benim dersim var da, aradan sonra sunsam olur mu?
+
+721
+01:53:16,435 --> 01:53:23,135
+Evet hocam, bizim de var dersimiz. Eğer çok kişi varsa farklı bir yol izleyebilir miyiz?
+
+722
+01:53:23,395 --> 01:53:26,435
+Tamam, bir 11.30'da gelelim, görüşelim tamam mı?
+
+723
+01:53:26,576 --> 01:53:27,275
+Tamam hocam.
+
+724
+01:59:25,268 --> 01:59:27,768
+Evet, tekrardan merhaba arkadaşlar. Sesim geliyor mu?
+
+725
+01:59:29,507 --> 01:59:30,208
+Evet hocam.
+
+726
+01:59:37,939 --> 01:59:47,939
+Daha sunum yapacak 15 kişi var gibi gözüküyor. Süremize 12'de bitiyor. 12'ye kadar devam edeceğiz.
+
+727
+01:59:47,939 --> 02:00:00,939
+12'den 12'ye kadar sunum yapamayanlar ise şöyle bir şey yapacağız. Onlar da bir video çekip linkini bana gönderecekler.
+
+728
+02:00:00,939 --> 02:00:04,844
+Tamam mı? Başka daha optimal bir çözüm olmuyor.
+
+729
+02:00:04,979 --> 02:00:20,079
+O yüzden 12'ye kadar sunum yapanların link göndermesine gerek yok. O linki de şöyle diyelim. Yarın akşama kadar.
+
+730
+02:00:20,079 --> 02:00:32,099
+Tamam. Bugün akşam değil, yarın akşama kadar bana gönderirsiniz. Geri kalanların ödevlerinde o.
+
+731
+02:00:32,496 --> 02:00:38,496
+Video üzerinden, raporlarına ek olarak o video üzerinden değerlendiririz. Tamam mı?
+
+732
+02:00:38,776 --> 02:00:40,256
+O şekilde değerleriz.
+
+733
+02:00:41,016 --> 02:00:42,896
+Akşam tam olarak saat kaça kadar hocam?
+
+734
+02:00:44,056 --> 02:00:46,296
+Yarın gece 12'ye kadar.
+
+735
+02:00:48,056 --> 02:00:49,376
+Tamamdır, teşekkür ederim.
+
+736
+02:00:49,376 --> 02:00:54,996
+Şurayı bir okuyabilir misiniz acaba sonlara mı kalacağız? Sırayı göremiyoruz ya.
+
+737
+02:00:55,347 --> 02:01:08,748
+Dersini okuyayım. Ben de bir anda mesaideyim. Anladım, andım. 12'ye kalır mıyız, kalmaz mıyız diye mi merak ediyorsan? Birazdan sırayı açık hale getirsiniz. Tamam, bir saniye.
+
+738
+02:01:12,500 --> 02:01:15,500
+Şimdi biz nerede kaldık?
+
+739
+02:01:15,500 --> 02:01:17,195
+Bir dakika.
+
+740
+02:01:20,948 --> 02:01:46,167
+[öğrenci] [öğrenci]'da kaldık değil mi? Ondan sonra [öğrenci] var, [öğrenci]. Sonra [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var. Bundan sonrası muhtemelen zaten şeyde olmaz. 12'ye kadar yetişmez.
+
+741
+02:01:47,475 --> 02:01:49,695
+Ben direkt video çekmeye gidiyorum.
+
+742
+02:01:50,435 --> 02:01:51,475
+Tamam artık.
+
+743
+02:01:52,755 --> 02:01:53,015
+Peki.
+
+744
+02:01:54,635 --> 02:01:57,715
+Tamam o zaman arkadaşlar kaldığımız yerden devam edelim.
+
+745
+02:01:58,075 --> 02:02:01,235
+12'ye kadar ilerleyelim.
+
+746
+02:02:01,935 --> 02:02:04,955
+Hocam biz de yokuz hissede o zaman video çekmeye gidiyoruz.
+
+747
+02:02:05,535 --> 02:02:07,335
+Tamam, tamam. Tamamdır.
+
+748
+02:02:10,195 --> 02:02:11,235
+Görüşürüz hocam.
+
+749
+02:02:12,735 --> 02:02:13,495
+Görüşürüz.
+
+750
+02:02:14,323 --> 02:02:15,423
+Görüşürüz hocam.
+
+751
+02:02:16,104 --> 02:02:17,863
+Görüşürüz, görüşürüz iyi günler.
+
+752
+02:02:18,984 --> 02:02:21,564
+Evet [öğrenci], sendeyiz.
+
+753
+02:02:26,100 --> 02:02:27,100
+Sesin geliyor mu?
+
+754
+02:02:27,899 --> 02:02:29,020
+Sesin geliyor.
+
+755
+02:02:32,851 --> 02:02:50,912
+Görüntünde geliyor. Ekranında gelmek üzere galiba. Ekranı da paylaştım ama. Geldi, tamam geldi. Evet, dinliyoruz [öğrenci]. Biraz hızlı hızlı gidelim. Yani standart olan yerleri bir daha tekrar etmeyelim. Tamamdır.
+
+756
+02:02:50,912 --> 02:03:00,211
+3 farklı ensemble regasyon yöntemi kullandım. Veri hazırlığında ise 2025 verisi olmadığı için 2024'e kadar verileri aldım.
+
+757
+02:03:00,564 --> 02:03:17,084
+Metin temsilleri zaten önce bahsedildiği gibi. Bu kısımlara hızlı geçiyorum. Kullanan Ensemble modelleri Bagging, Random Subspace ve Random Force. Bu kısımları tablo üzerinden daha detaylı anlatacağım. En başarılı hiperparametreyi nasıl bulduğumu bahsetmek istiyorum.
+
+758
+02:03:18,420 --> 02:03:23,220
+Her model ve temsil ikilisi için önce denemek istediğim ayar kombinasyonlarını belirledim.
+
+759
+02:03:23,720 --> 02:03:26,100
+Eğitim kimesini birkaç eşit parçaya böldüm.
+
+760
+02:03:26,640 --> 02:03:34,320
+Ve her ayar kombinasyonu için parçalardan birini doğrulama, kalanını eğitim yaparak başarı üzerindeki hataları hesapladım.
+
+761
+02:03:34,320 --> 02:03:41,540
+Ve bu işlem parçalar yer değiştirilerek tekrarladım ve ortalama hataları her bir kombinasyon için hesapladım.
+
+762
+02:03:42,260 --> 02:03:46,320
+Bunları da her bir temsil ve her bir model için ayrı ayrı uyguladıktan sonra...
+
+763
+02:03:46,420 --> 02:03:51,220
+En iyi modellerin performansını hesapladım test kümesi üzerinde.
+
+764
+02:03:52,220 --> 02:04:02,180
+Kullandığım performans ölçütleri ise tahmin ile gerçek yıl arasındaki farkı doğrudan ölçmek için ortalama mutlak hatayı kullandım.
+
+765
+02:04:02,880 --> 02:04:04,260
+Kayıp fonksiyonu olarak.
+
+766
+02:04:05,260 --> 02:04:09,440
+Buna ek olarak RMS ve Rekar'ı de kullanmayı tercih ettim.
+
+767
+02:04:11,060 --> 02:04:13,740
+Grafik ve tablo üzerinden değerlendirecek olursak.
+
+768
+02:04:14,387 --> 02:04:30,027
+Başarı sıralamalarına bakacak olursak hata oranı en düşük abstract temsillerinde ortaya çıkmış. Aslında bu benim beklediğim bir şeydi zaten. Çünkü başlığa göre çok daha uzun ve kapsamlı ve yıl bilgisini daha çok içereceğini düşünüyordum ve böyle çıkmış.
+
+769
+02:04:30,487 --> 02:04:40,787
+Title ise başlık temsili ise çok daha kısa ve yıl bilgisini taşıyacak yeterli bilgi olmadığından dolayı başarı oranı diğerlerine göre daha düşük çıkmış.
+
+770
+02:04:42,387 --> 02:05:06,607
+Birleştirilmiş temsil. Bunun abstract'ten daha iyi, daha yüksek bir başarı elde edeceğini düşünüyordum. Ama öyle olmadı. Bunun temel sebebinin ise yeni bir özellik eklemesi yerine küçük bir miktarda gürültü eklediğini düşünüyorum. Çünkü buradaki özet bilgisi aslında başlık bilgisi özet bilgisinin zaten içinde. Kısmen içerdiği için bir gürültü eklendiği bu sonuçlardan anlaşılıyor.
+
+771
+02:05:09,460 --> 02:05:27,440
+Hiperparametre bakacak olursak, Begging üzerinde 3 farklı hiperparametre etkilerini inceledim. İlk olarak ağaç sayısı. Ağaç sayısını 50'den 100'e çıkardığım vakit başarı oranının arttığını, hata oranının da düştüğünü görüyoruz. Bu beklediğim bir şeydi.
+
+772
+02:05:30,800 --> 02:05:41,340
+Örnek sayısını 0.5 oranından 1 oranına yani tüm örnekleri bootstrap ile kullandığımda başarı oranı yine artmış ve hata oranı düşmüş. Burada aslında beklediğim hiphop parametre sonuçlarını aldım.
+
+773
+02:05:42,387 --> 02:06:00,460
+Random Subspace'de ise yine ağaç sayısını kullandım. Bir de buna özel olarak özellik oranını değerlendirdim. Burada 0.5 oranı en başarılı çıkmış. 0.3 oranından daha başarılı olması daha fazla özellik kullanmasından kaynaklanır. Ama 0.8 oranında kullanmama rağmen başarı...
+
+774
+02:06:00,659 --> 02:06:14,659
+Daha kötü olmuş. Bunun nedeni, Kollektif Öğrenmedeki ağaçların birbirinden bağımsız olma durumu değiştiğini düşünüyorum. Ağaçların artık birbirine benzediğini ve başarının bu yüzden düştüğünü düşünmekteyim burada.
+
+775
+02:06:14,659 --> 02:06:16,555
+Random Forest modelinde ise...
+
+776
+02:06:17,043 --> 02:06:33,783
+Yine ağaç sayısını kullandım. Benzer şekilde ve aslında ağaç sayısı burada da 100'den 200'e çıkardığımızda başarıyı attırdığını görmekteyiz. Özellik ve örnek sayısında ise aslında bir önceki açıkladığım durumlarla benzer sahiplerden bu tavlolar oluştuğunu düşünüyorum.
+
+777
+02:06:35,828 --> 02:06:51,347
+Burada temsil türlerine göre model performansını karşılaştırdığım bir bar grafiği var. Her bir model için temsil türlerinin başarısını incelediğimizde hata oranının en yüksek hepsinde title olduğunu görmekteyiz. Üçünde de benzer çıkmış.
+
+778
+02:06:51,923 --> 02:07:03,184
+Başlık performansının en yüksek hataya neden olmasının nedeni demin açıkladığım gibi kısa ve sınırlı bilgi içerisinden ve yıl tahmini için yeterli ipuç öğretmemesinden kaynaklandığını düşünmekteyim.
+
+779
+02:07:04,404 --> 02:07:08,024
+Özet temsili ise 3 model içinde en düşük.
+
+780
+02:07:08,532 --> 02:07:26,852
+Hata oranına sahip, yani en yüksek başarıya sahip. Bunun da özetler tezin kapsamını ve konusunu başlığa göre çok daha başarılı açıklayabildiğini düşündüğümden dolayı olmuş. Birleştirmiş temsil ise Ebstract'tan biraz daha yüksek. Bunun da gürültü eklediğinden dolayı kaynaklandığını demin de söylemiştim.
+
+781
+02:07:27,283 --> 02:07:43,063
+Burada ise aslında bir önceki bar grafiği ile benzer bir grafik. Sadece burada modellere göre temsili sıraladım. Burada baktığımızda bir önceki bar grafiği ile aralarındaki farklar çok daha yakın. Bu da bize aslında şunu gösteriyor. Buradaki performans başarısı.
+
+782
+02:07:43,604 --> 02:08:05,484
+Bu tablo modellerden çok bizim temsillerimizin daha etkili olduğunu kıyaslamak için yaptığım bir tabloydu. Modeler arasındaki farklar temsillere oranla çok yakın çıkmış. Hatta Bagging'de Random Force neredeyse birbirine benzer. Sadece Random Subspace'de biraz daha yüksek çıkmış. Bunda nedeni Bagging'de özelliklerin tamamını kullandığından dolayı olduğunu düşünmekteyim.
+
+783
+02:08:07,315 --> 02:08:27,475
+Bir de R² ısı haritesiyle yorumlama olarak R² kayıp fonksiyonunu değerlendirmiştim. Burada ise yine gördüğümüz üzere temsiller, yani başlık ya da özet temsillerinin başarıyı daha çok etkilediğini daha net görmekteyiz. Modeller arasındaki farklar birbirine çok yakın ama temsillerin birbirinde olan başarı farkları çok daha yüksek çıkmış.
+
+784
+02:08:29,155 --> 02:08:34,435
+Son olarak bir grafim daha var. Burada ise yıl tahmin doğruluk çalışması.
+
+785
+02:08:35,091 --> 02:08:55,391
+Burada x-eksenimde gerçek yıl, y-eksenimde ise tahmin edilen yıl grafiğim var ve her bir model ile temsil ikilisinin nasıl sonuçlar verdiğini her bir test örneği üzerinden inceledim. Bir önceki grafikteki sonuçların aslında çıktısı niteliğindedir. Benim anlatacaklarım bu kalardı.
+
+786
+02:11:10,100 --> 02:11:27,860
+Mikrofonunuz kapalı. Mikrofon kapalı tabii, doğru diyorsun. Çok teşekkürler. [öğrenci]. Merhaba hocam. Evet, seni dinliyoruz [öğrenci]. Tamam, ekran paylaşıyorum.
+
+787
+02:11:55,988 --> 02:11:56,908
+Geldi sanırım.
+
+788
+02:11:57,428 --> 02:11:58,128
+Geldi, evet.
+
+789
+02:11:59,828 --> 02:12:04,288
+Ben de burada yine ilk kısımlara geçiyorum.
+
+790
+02:12:05,888 --> 02:12:13,948
+[öğrenci] ve 2025 arasındaki tezleri aldım ama 2025'de veri olmadığı için 12 bin veri üzerinde çalıştım.
+
+791
+02:12:16,467 --> 02:12:38,907
+Kullandığım ilk bir model vardı. Begging sınıflandırma problemi olarak değerlendirdim bu arada, regresyon değil. Begging modelde ağaç sayısını 50 olarak oluşturdum. Ve her ağaç eğitim setinden tek seçmeli şekilde rastgele bu sınavı true olarak verdim.
+
+792
+02:12:40,115 --> 02:12:56,996
+Ardından Random Forest için de parametrelerimi belirledim. Burada ağaç sayısını 100 olarak belirledim. Derinliği sınırsız verdim. Bu yüzden epey zaman aldı zaten. Son olarak da Random Subspace için parametrelerimi belirledim.
+
+793
+02:12:57,908 --> 02:13:21,608
+Birazdan göstereceğim. Belirledim parametre sonuçlarını. Şimdi bunları ayarladıktan sonra sonuç olarak şu tabloyu elde ettim. Burada yine Konkat'ın tabi iyi sonuç vermesini bekledik. Çünkü başlık ve özet birleşimi olduğu için. Ama özetin Bigging'de daha iyi sonuç verdiğini gördüm.
+
+794
+02:13:25,908 --> 02:13:53,908
+Bu sonucu Random Subspace verdi. Burada title aslında çok büyük bir boyuta sahip değil. Ama ve içindeki anlamlı bilgi az. Burada gürültülerin çok olduğunu düşünüp böyle bir sonuç verdiğini düşündüm. Random Subspace'de. Abstract kısmına geçtiğimde en iyi sonucu Bagging'de aldım. Burada Bagging'in ürettiği ağaçlar daha çeşitli. Daha güçlü sinyaller elde edildi.
+
+795
+02:13:53,908 --> 02:14:01,908
+Bu konuda sonuçlar elde ettiği için Bagging burada daha tutarlı sonuçlar elde etti 0.074 diye düşündüm.
+
+796
+02:14:01,908 --> 02:14:13,324
+Concad'a baktığımda da en iyi sonucu Random Forest'da aldım. Burada Concad'da verimizin boyutu artıyor özet ve başlık birleştiği için.
+
+797
+02:14:13,876 --> 02:14:22,876
+Yüksek boyutta Random Forest avantaj sağlıyor. Bu nedenle Random Forest Konkad'da daha iyi sonuç verdi diye yorumladım.
+
+798
+02:14:22,876 --> 02:14:34,876
+Ardından parametrelerimi değiştirerek denedim. Parametrelerimi değiştirirken ilk önce karar harcı sayımı yarıya indirmedim.
+
+799
+02:14:41,876 --> 02:15:06,716
+Taitlede baktığımda, genel sonuçlara baktığımda oranların düştüğünü gördüm. Zaten bu beklediğimiz bir şeydi. Eğer karar ayı sayısını düşürürsek varyans artar ve genelleme gücü düşer. Ve beklediğim senaryoda oldu. Tüm model için bu değerlerin düştüğünü gördüm.
+
+800
+02:15:07,347 --> 02:15:11,708
+Yine aralarında Random Forest en iyi şekilde kaldı.
+
+801
+02:15:12,404 --> 02:15:30,564
+Baging, ardından bir diğer parametre değişikliğinde de şunu yaptım. Baging'de rastgelelik olmasın dedim. Normalde Baging'in temelinde rastgelelik vardır. Yani temel özelliği odur. Ama olmadığında nasıl bir davranış göstereceğini ölçmek istedim.
+
+802
+02:15:30,564 --> 02:15:39,104
+Bunu yaparken Random Forest'ta ağaç derinliğini sonsuzda değil de 20 gibi bir sabit sayıda tutmak istedim.
+
+803
+02:15:40,404 --> 02:15:49,884
+Strap Space için de yine rastgelelik değerlerinin false olmasını denedim. Bunları yaptığımda bagging de ilk önce gözlemlediğim şey,
+
+804
+02:15:49,884 --> 02:15:59,064
+bu strapın false olması yani rastgeleliğin olmaması durumunda tüm ağaçlarda aynı veriyi göreceği için rastgeleme
+
+805
+02:15:59,064 --> 02:16:05,064
+örnekleme avantajı kayboldu ve ağaçlar birbirine benzer yapıda oldu.
+
+806
+02:16:05,460 --> 02:16:13,020
+Bu nedenle performansın azaldığını ölçmüş oldum. Ardından Random Forest'ta
+
+807
+02:16:13,108 --> 02:16:25,528
+Maksimum derinliği sonsuz yapmıştık. Bunu 20 olarak sınırladım. Random Forest'ı tek tek incelediğimde düşüşlerin olduğunu gözlemledim.
+
+808
+02:16:25,528 --> 02:16:41,087
+Ama tekrar bakıyorum. Random Forest, Abstract için performansın arttığını ölçtüm. Bunun nedenini araştırdığımda Abstract verisi zaten düşük.
+
+809
+02:16:41,108 --> 02:16:42,348
+Gürültü içeriyor.
+
+810
+02:16:43,412 --> 02:16:57,412
+Ağaçlar çok derin olduğunda hepsi aşırı öğrenmeye gidiyor ve çeşitlilik azalıyor. Bunun abstrak için etkili olmadığını gördüm. Yani derinliğin azaltılmasının performansı artırdığını gözlemlemiş oldum.
+
+811
+02:17:11,412 --> 02:17:18,512
+Rastgele örnek ve rastgele feature için. Yine performansın düşmesini bekliyordum.
+
+812
+02:17:19,412 --> 02:17:47,371
+Ama yine baktığımda Random Subspace'de bunun arttığını gözlemledim. Burada da yine ağaçların aşırı derecede farklılaşması, bunlar değişti, bunlar false yapıldığında, ortak bir pattern yok aralarında. Aşırı çeşitlilik düşüklük oranını azaltıyor diye yorumladım. Ve çeşitliliğin kaldırılması performansı artırdı diye gözlemlemiş.
+
+813
+02:17:47,412 --> 02:17:48,300
+Bu şekilde örneklerle anlatacağım.
+
+814
+02:17:50,388 --> 02:18:17,708
+Genel grafiklere bakacak olursam ilk yaptığım modelde title için en yüksek sonucu random subspace de elde ettim. Abstract kısmı için en yüksek sonucu bagging de ve concat için en yüksek sonucu da random forest da elde ettim. Genel olarak abstract temsilin en iyi sonuç verdiği bu tabloda görünmektedir. Başlık tek başına çok zayıf kalmakta.
+
+815
+02:18:18,388 --> 02:18:32,268
+Bu modelin en iyi performansı verdiğini gözlemledim.
+
+816
+02:18:34,260 --> 02:18:58,139
+En iyi temsilde ortalama performansı da abstractta bulunuyor. Abstract, Concad ve Title değerlendirdiğimde. Bu da benim ilk oluşturduğum modelden aldığım sonuçlar. Bunun dışında ben bir de karar ağacı sayısını yarıya indirmiştim. Yarıya indirmek yerine bir de 10 kat artırsam olur diye aslında ölçmek istedim en son.
+
+817
+02:19:02,164 --> 02:19:26,304
+Ekranını küçültüyüm. Hala çalışmaya devam ediyor arka planda hocam. Saat 7 gibi başlattım ben bunu. Karar ağacı sayısını 10 katına çıkarmayı. Ama sadece title için sonuçlarım oluştu. Yani yaklaşık 4-5 saattir çalışıyor arka planda. Aldığım sonuçların daha iyi gittiğini görüyorum title için. Şu an diğerleri henüz oluşmadı.
+
+818
+02:19:28,691 --> 02:19:30,931
+Benim anlatacaklarım bu kadar hocam.
+
+819
+02:19:32,572 --> 02:19:34,031
+Teşekkürler [öğrenci].
+
+820
+02:19:37,652 --> 02:19:38,831
+Ben teşekkür ederim.
+
+821
+02:19:42,355 --> 02:19:44,775
+Evet, şimdi [öğrenci] başta devam ediyoruz.
+
+822
+02:19:48,915 --> 02:19:50,395
+Öğrenme hemen ekranı.
+
+823
+02:20:01,907 --> 02:20:05,687
+Görüyor musunuz raporu? Evet, görüyorum.
+
+824
+02:20:11,687 --> 02:20:15,387
+Biraz geçiyorum bu başlangıç kısımlarını.
+
+825
+02:20:16,211 --> 02:20:29,432
+Kullandığımız algoritmalar. Begging'de estimator sayısını ve max samples'ı hiperparametre optimizasyonu yaptım. Burada 50, 100, 150, 200, 250.
+
+826
+02:20:31,796 --> 02:20:55,855
+Estimatorlar kullandım. Sample sayısında da %100'üne kadar çıkarttım. %60, %80, %80 kullandım. Base estimator olarak karar ağacı kullandım. Diğer estimatorlar, başka estimatorlar da denedim. En iyisini anlamaya çalışıp onu kullanarak devam ettim. Random Subspace'de mesela Rigidic Restoration'ı seçmiştim.
+
+827
+02:20:56,884 --> 02:21:01,384
+Problemi, regresyon problemi olarak mela aldın, sınıflandırmama.
+
+828
+02:21:02,524 --> 02:21:08,043
+Regresyon problemi olarak RMSC'ye göre optimize ettim.
+
+829
+02:21:08,043 --> 02:21:09,123
+Peki.
+
+830
+02:21:11,123 --> 02:21:14,043
+Bunun dışında...
+
+831
+02:21:15,636 --> 02:21:28,576
+Random Forest'da da Max Depth'i ve NSMeters'ı hyperparametrelerinden optimiz ettim. Max Depth'de 10, 15, 20, 25, 30'u almışım.
+
+832
+02:21:30,476 --> 02:21:37,256
+Estimatorları da 50, 100, 150, 200, 250. Buraya yazmayı unuttuğum için yanından koddan bakıyorum da.
+
+833
+02:21:40,115 --> 02:21:58,216
+Burada ben RMSC, MSC'nin yanında accuracy hesaplayacak şekilde de bir baktım. Tahmin ettiğimiz yılı en yakın yıla yuvarlayıp eşit olup olmadığını kontrol ettim.
+
+834
+02:22:02,164 --> 02:22:16,923
+İki yıl içerisinde tutturabilmiş mi diye de bir inceledim. Yani yaklaşıp da mı tutturamadı yoksa uzakta mı kaldı görmek istedim.
+
+835
+02:22:18,504 --> 02:22:29,144
+Burada da tabloda görüyoruz. En iyi model Random Subspace'de title ve abstractli dataset'te çıktı.
+
+836
+02:22:29,680 --> 02:22:40,979
+Ancak bunun hemen arkasında sadece abstractlı olan Random Subspace modeli en iyi sonuçları verdi.
+
+837
+02:22:45,319 --> 02:22:56,440
+Burada çok küçük bir etkisinin olduğunu görüyoruz. Abstractlı title'ı birleştirmenin benim sonuçlarıma göre.
+
+838
+02:22:57,043 --> 02:23:08,844
+Bayzani-Kürsi'ye göre %8 yine fena değil ama aslında burada şunu beklememiz lazım.
+
+839
+02:23:17,920 --> 02:23:30,420
+Aslında tahmin ettiğim aralığı 5 katına çıkartmıyorum ama o bölgede nereye gelmiş diye baktığım zaman Ekeris'in bir 5 katından daha fazla olmasını beklerdim.
+
+840
+02:23:30,420 --> 02:23:44,340
+Artı 2 yıl tutarlılığının ama bunu da tutturamadığını gördüm. Bu beni biraz üzdü açıkçası ama yaklaşık bir 4 katı geliyor.
+
+841
+02:23:44,896 --> 02:23:47,816
+RTK yıl ekörüsüsü.
+
+842
+02:23:50,536 --> 02:23:59,056
+Algöratmalar, algöratmaların genel olarak en iyi performans göstereni Random Subspace oldu.
+
+843
+02:24:00,695 --> 02:24:06,396
+Burada RTK ve Exact Ekörüsü olarak da gösterdim.
+
+844
+02:24:07,396 --> 02:24:11,396
+RMSC olarak Random Subspace ciddi bir...
+
+845
+02:24:11,487 --> 02:24:19,147
+Farkla öne geçti diğer iki modelin. Ama diğer iki model birbirine çok yakın sonuç verdi.
+
+846
+02:24:21,187 --> 02:24:28,387
+Dataset olarak genel baktığımızda en kötü sonucu title verdi.
+
+847
+02:24:29,387 --> 02:24:34,788
+Ve diğer iki dataset birbirine çok yakın sonuçlar verdi.
+
+848
+02:24:34,788 --> 02:24:38,788
+Burada sadece abstracta baktığımızda...
+
+849
+02:24:39,476 --> 02:24:43,076
+Daha iyi sonuçlar elde edebileceğimizi de görüyoruz.
+
+850
+02:24:44,576 --> 02:24:48,216
+Hiperparametre optimizasyonundan da aslında bahsettim yukarıda.
+
+851
+02:24:49,556 --> 02:24:52,855
+Ekstra ekleyeceğim bir şey var mı diye bakıyorum.
+
+852
+02:24:54,436 --> 02:24:57,096
+Çok da uzatmak istemiyorum.
+
+853
+02:24:58,176 --> 02:24:59,596
+Ekstra ekleyeceğim çok bir şey yok gibi.
+
+854
+02:25:01,876 --> 02:25:03,355
+Teşekkürler [öğrenci].
+
+855
+02:25:03,355 --> 02:25:04,616
+Ben teşekkür ederim.
+
+856
+02:25:09,523 --> 02:25:13,243
+Son olarak [öğrenci]'ı alalım.
+
+857
+02:25:14,743 --> 02:25:15,863
+Merhaba hocam.
+
+858
+02:25:15,923 --> 02:25:16,363
+Merhaba.
+
+859
+02:25:17,043 --> 02:25:19,183
+Biz [öğrenci] ile beraber yaptık.
+
+860
+02:25:20,203 --> 02:25:22,563
+Hemen ekran paylaşayım ben aydın zamanda.
+
+861
+02:25:25,563 --> 02:25:27,903
+Şöyle. Geliyor sanırım görüntü.
+
+862
+02:25:29,523 --> 02:25:30,723
+Evet geliyor.
+
+863
+02:25:33,063 --> 02:25:35,384
+Ama ben sizi görmüyorum.
+
+864
+02:25:36,468 --> 02:25:38,124
+Öğrenme, [öğrenci].
+
+865
+02:25:46,644 --> 02:25:56,443
+Evet [öğrenci] seni gördüm. [öğrenci] seni de biraz zorlanarak göreceğim. Evet gördüm şimdi gördüm. Tamam biraz kafanı kaldırınca gördüm. Tamamdır. Evet.
+
+866
+02:25:57,139 --> 02:26:16,199
+Hızlı hızlı geçeceğim hocam hemen. Veri setini yine aynı şekilde arkadaşlar gibi her zaman 500'er tez aldık. 250-250 eğitim ve test olarak ayırdık. Özün telik çıkarımında ise E5'lar başlık temsili, özet temsili ve ikisinin birleştirilmiş haliyle.
+
+867
+02:26:16,199 --> 02:26:20,119
+Bu 2025'te veri yoktu arkadaşlarınız. Siz nasıl yaptınız onu?
+
+868
+02:26:20,539 --> 02:26:25,139
+Hocam aslında yoktu. 12.000'e çalıştık ama rapor...
+
+869
+02:26:25,139 --> 02:26:27,840
+Ödevde öyle yazdığı için raporu ona göre yazdık açıkçası.
+
+870
+02:26:28,539 --> 02:26:29,059
+Nasıl yani?
+
+871
+02:26:29,759 --> 02:26:31,219
+Ya 12.000 hocam.
+
+872
+02:26:33,520 --> 02:26:38,779
+Ödevde 12.500 yazdığı için biz de onu ayak uydurduk sadece rapor kısmında.
+
+873
+02:26:40,259 --> 02:26:43,459
+Arkadaşlar o ayak uydurmak olmaz ama öyle bir şey olmaz.
+
+874
+02:26:47,059 --> 02:26:48,819
+12.000 hocam aslında doğru.
+
+875
+02:26:50,100 --> 02:27:05,560
+Peki, algoritmalara geçecek olursak şöyle, biz farklı olarak bir regresyon bir de classification problemi olarak değerlendirdik. İki farklı yaklaşımla sonuç bulduk.
+
+876
+02:27:06,600 --> 02:27:12,500
+Algoritmalar ve hiperparametreler olarak ağaç sayısını 50 ve 100 olarak denedik bütün algoritmalarda.
+
+877
+02:27:12,948 --> 02:27:33,348
+Diğer özelliklerde de Maxample'ı Bagging'de 0,5 ve 1 olarak test ettik. Random Subspace'de 0,5 ve 1 olarak yine özellik sayısını denedik. Random Forest'ta ise bir derinliği sınırlamadan ölçtük. Bir de 10 derinlikle ölçme aldık.
+
+878
+02:27:33,971 --> 02:27:44,131
+Sonuçlarımız ise şu şekilde. Deney 1'de sadece ağaç sayılarıyla, ağaç sayılarında bir değişiklik yapıyoruz ve regresyon problemi olarak yaklaşıyoruz probleme.
+
+879
+02:27:45,092 --> 02:27:54,971
+Ağaç sayısını genel olarak arttırdığımızda min square ve r square metriklerini kullandık karşılaştırma olarak.
+
+880
+02:28:01,343 --> 02:28:20,963
+Min Square'a ördüyse bir düşüş gördük. Yani aslında doğruluğu arttırdığını söyleyebiliriz. Başlıkta aslında çok büyük bir başarı yok. Yine biz de Birleşik'te çok yüksek başarı elde edebiliriz diye düşünmüştük ilk başta ama en yüksek başarımı özette aldık.
+
+881
+02:28:21,971 --> 02:28:48,731
+Ve Begging 100'de en yüksek başarıya ulaştık. Ama dediğim gibi çok farklı sonuçlar yok aralarında. Bu da ufak bir karşılaştırması yine sütun grafiği üzerinden. Çok farklı sonuçlara ulaşmasak da Begging 100'de en yüksek başarıyı elde ettik. Deney 1 için. Deney 2'yi [öğrenci]'ye bırakacağım ben hocam. Hızlıca.
+
+882
+02:28:49,492 --> 02:28:55,492
+Merhaba hocam. Deneyim bu kısmı da sınıf anlama problemi diye ilgili. Biraz aşağıya geldin mi sınıf anlama?
+
+883
+02:29:03,316 --> 02:29:17,396
+Burada da her algoritma için en az iki parametre yeterlidir. Her kombinasyon için üç katlı çok fazla doğrulamayla ortamda doğrulamayla hesaplayıp en iyi kombinasyonu raporda sunduk.
+
+884
+02:29:17,396 --> 02:29:28,396
+Aslında böyle baktığımızda yine genel sonuçlar gibi başlıkta aslında rastgele sallanma sallanmasını yapan bir modelimiz olsa yine...
+
+885
+02:29:28,819 --> 02:29:46,619
+Aralıkça sonuçlar muhtemelen sınıf aranma probleminde. 1 bölü 24'ten. Yine özette iyi sonuçlar elde ettik. Ama mesela Bagging'in sample'ların %100'ünün kullandığı senaryoda özet artı başlık normalcılıklara daha iyi bir sonuç verdi.
+
+886
+02:29:55,791 --> 02:30:07,031
+Sanırım orada bir karışıklığı azalttığı için zaten Rundum Subspace kendi alt uzay örneklerinde rastgeleliği için daha iyi bir sonuç verdi.
+
+887
+02:30:07,031 --> 02:30:22,507
+Baking'de zaten temel fikir eğitim örneklerinden örneklem çekip her birine ayrı bir karar ağacı eğitip sonrasında çoğun boyun alası yapmakta.
+
+888
+02:30:22,995 --> 02:30:34,995
+Burada, az önce bahsettiğim gibi, başlık ve özet artı başlıktan en iyisini özette aldık. Max Sample'n da 100'ünü kullandığımızda özet artı başlıklı bir sonuç aldık.
+
+889
+02:30:34,995 --> 02:30:50,219
+Tüm veriyi kullanmamak aslında, trade-off olarak değerlendirdiğimizde daha iyi sonuç vermiş olabilir bize. Max Sample'ı 0.5 kullanmak, 1 kullanmaya göre daha iyi bir yerler.
+
+890
+02:30:50,644 --> 02:31:05,804
+Random Space'te de Begin'e çok benzeyen ama bu sefer dediğim gibi örnekler yerine özellikler üzerinde rast edilmiştir. Yani her ağaç aynı eğitim örneklerinden ama farklı bir özellik alt kümelerinden öğreniyor.
+
+891
+02:31:12,912 --> 02:31:23,672
+Başlıkta ve özette bin yum dört bin yum dört yük yüksek vektör boyutları olması özellikle özet artı başlıkta konkreten et edilmiş halinde 2048 boyuta gitmesi.
+
+892
+02:31:23,672 --> 02:31:29,832
+Bu nedenle özellik alt uzayı seçimi bu problemde daha anlamlı hale geliyor.
+
+893
+02:31:29,832 --> 02:31:33,832
+Classification problemlerinde, classification yaklaşımına daha doğrusu.
+
+894
+02:31:33,832 --> 02:31:39,752
+Burada yine gördüğünüz gibi hipermetre aralıklarını değiştirince gördüğünüz sonuçlar bu şekilde.
+
+895
+02:31:39,891 --> 02:31:45,391
+Bununla ilgili yorum da şu şekilde olur. Geçmeyelim hemen.
+
+896
+02:31:45,391 --> 02:31:55,891
+Yüksek boyutlu embeddinglerde Random Subspace'in özelliği aslında her ağacın daha küçük ve farklı bir uzay görmesini sağlıyor.
+
+897
+02:31:55,891 --> 02:32:07,391
+Bu da daha az gürültülü öğrenmesine yol açıyor. Hem de ağaçlar arasındaki konellasyon düşüyor ve performans biraz artıyor.
+
+898
+02:32:07,476 --> 02:32:13,636
+Bu yüzden bazı temsillerde Random Subspace öteki yöntemlerden daha iyi sonuç veriliyor.
+
+899
+02:32:13,636 --> 02:32:34,676
+Random Forest kısmında da sınırsız derinlik, yani maximum kullandığımızda çok karmaşık ağaçlar yerine kontrollü derinlikte, orta kompleksde de ağaçlar kullanmak için daha iyi oldu. Sanırım burada Overfift'e gitti.
+
+900
+02:32:35,028 --> 02:32:49,528
+Random Forest, özellikle lastik birleştirmesini bir arada yaptığı için, Bagging ve Random Substance'a göre bazı durumlarda hafif bir avantaj sağlıyor o özelliği sayesinde.
+
+901
+02:32:49,528 --> 02:32:53,528
+Sonuç kısmında da...
+
+902
+02:32:58,227 --> 02:33:08,727
+Aslında yani bahsettiğimizin özeti bu kısımda. Sadece başlık yıl tahmini yapmak için yetersiz kalıyor. Çünkü çok genel bilgiler var.
+
+903
+02:33:08,727 --> 02:33:19,407
+İşte algoritmalar, bagging, basit ve stabil bir performans sağlıyor. Bazı ayarlarda özet temsil için iyi sonuç veriyor diğerlerine göre.
+
+904
+02:33:25,236 --> 02:33:51,156
+Özellikle alt uzayı seçtiği için. Buraları söylemiştin [öğrenci] ama tekrar etmene gerek yok. Onun için demek istiyorum zaten. O yorumları yapmıştın. Eklemek istediğim bir şey var mı? Yok hocam. Peki. Teşekkür ediyorum arkadaşlar. [öğrenci] ve [öğrenci].
+
+905
+02:33:51,700 --> 02:34:17,360
+Peki arkadaşlar, sesini kapatıyorum. Dediğim gibi ödevini yüklemiş olan ama sunum yapamamış olan arkadaşlar, bana yarın 7 saat 12'ye kadar link şeklinde videolarını mail ile gönderecekler. Onların üzerinden şey yapacağız. Haftaya sınıfta görüşmek üzere diyorum kısmetse. Hoşçakalın.
+
+906
+02:34:17,780 --> 02:34:18,680
+Görüşürüz hocam.
+
+907
+02:34:19,059 --> 02:34:21,319
+Görüşürüz hocam. İyi günler.

@@ -1,0 +1,2799 @@
+1
+00:06:22,963 --> 00:06:40,863
+Hoş geldiniz arkadaşlar. Hepinize güzel bir hafta diliyorum. Saat 2.05 geçiyor. Şu an 30 civarındayız. Sanırım katılmasını beklediğimiz arkadaşlar aramızda belki önümüzdeki dakikalarda 5-10 kişi daha aramıza eklenir.
+
+2
+00:06:43,795 --> 00:07:08,855
+Beşinci haftaya geldiğimizi hatırlatmak istiyorum. Beşinci haftaya kadar terminolojiyi tanıdıktan sonra programlamaya da başladık. Android Studio üzerinden geçtiğimiz hafta ilk defa bir kod deneyimi yaşadık. Bir arkadaşınız benimle yapmış olduğu küçük bir projeyi paylaşmış. Ona teşekkür ediyorum.
+
+3
+00:07:11,475 --> 00:07:23,475
+Olgunlaşmadığı için belli başlı işleri yapabiliyor. Ekstra bazı şeyler de katmış. Sizinle paylaşmıyorum ama daha olgunlaşmış bir proje ile karşılaştığımda söylediklerimin...
+
+4
+00:07:24,403 --> 00:07:38,324
+Bir kısmını gerçekleştirdiğinizde benimle paylaşabilirsiniz. Sizlerin ne aşamada olduğunuzu görmek benim açımdan kıymetli. Ona göre dersin hızını da belirleme şansına sahip olabileceğim.
+
+5
+00:07:40,363 --> 00:07:46,403
+Evet, Kayra arkadaşımız mail olarak atmıştı. Geçtiğimiz hafta size söylemiştim. Burada...
+
+6
+00:07:47,827 --> 00:07:56,627
+Paylaşılmasını istediğiniz, üzerinden yorumlanmasını istediğiniz bir proje geliştirdiyseniz, konuştuklarımıza istinaden, bana gönderebilirsiniz.
+
+7
+00:07:56,627 --> 00:08:05,647
+İsim belirtmeden o projeyi paylaşıp, yorumlar yapıp, üzerinden geçeceğimiz dersler de olacak.
+
+8
+00:08:06,291 --> 00:08:16,591
+Şu an için henüz geçtiğimiz haftanın üzerine çok bir şey konmadığı için bana gelen ulaşan projede henüz paylaşmadım ama tabii daha yeni, siz de alışıyorsunuz.
+
+9
+00:08:16,731 --> 00:08:22,312
+Hiç aranızda kodlamayı, en azından mobil programlamada kodlamayı deneyimlemeyenler var.
+
+10
+00:08:23,431 --> 00:08:28,451
+Bu ders zaten daha ağırlıklı olarak o kişiler için giriş seviyesinde anlatılıyor.
+
+11
+00:08:29,911 --> 00:08:31,611
+Yavaş yavaş alışacağınızı düşünüyorum.
+
+12
+00:08:32,851 --> 00:08:42,651
+Geçtiğimiz haftalarda aktivitelerden bahsettik, komponentlerden bahsettik, Activity Lifecycle'dan bahsettik, aktiviteler arasındaki iletişimi sağlayan intentten bahsettik.
+
+13
+00:08:42,751 --> 00:08:52,971
+Explicit Intent nedir, Implicit Intent nedir? Bir aktiviteden diğer aktiviteye geçerken ne amaçla geçeriz? Geri dönmeyi bekler miyiz? Bunları konuşmuştuk.
+
+14
+00:08:52,971 --> 00:08:59,971
+Bugün kaldığımız yerden devam edeceğiz. Hafif geçtiğimiz haftayı hatırlayıp...
+
+15
+00:09:00,275 --> 00:09:18,275
+Üzerine koyarak bazı yeni bilgileri yavaş yavaş ikili aktivitelerin temasında bir bilgi geri döndüğü zaman nelerle karşılaşıyoruz, nasıl o bilgiyi alıyoruz, karşı tarafa bir şey...
+
+16
+00:09:18,303 --> 00:09:29,083
+Sormak istediğimizde, aktivite olarak hangi yolları tercih ediyoruz? Bunları bugün göreceğiz. Artı ekstra vaktimiz yetecektir diye tahmin ediyorum.
+
+17
+00:09:36,399 --> 00:09:59,179
+Ekranda görüntüleyebiliriz. Bunun için hangi yapılar var? ListView, RecyclerView gibi. Bunların farkları nelerdir? Birbirlerine göre avantajları nelerdir? Onları konuşup biraz da aslında bu ders boyunca geliştirmeyi planladığımız uygulama ekranları üzerinde konuşmak istiyorum.
+
+18
+00:09:59,179 --> 00:10:01,679
+Geçtiğimiz hafta konuşmuştuk. Bir mezun bilgi sistemi.
+
+19
+00:10:02,419 --> 00:10:06,099
+Bu bir süreç geliştirelim ders kapsamı boyunca.
+
+20
+00:10:06,439 --> 00:10:16,439
+Tabii bu bir şu an için ödev ya da dönem projesi kapsamında değil, ders süresince üzerinde kompakt bir çalışma gerçekleştireceğimiz bir proje olarak düşünün.
+
+21
+00:10:16,480 --> 00:10:18,519
+Ama sonra artık nereye evrilir?
+
+22
+00:10:18,519 --> 00:10:26,659
+Bunu zaman içerisinde göreceğiz ki önümüzdeki hafta artık yavaş yavaş ödev ve dönem projenin neler olduğunda konuşmamız gerekecek.
+
+23
+00:10:26,759 --> 00:10:27,980
+Çünkü Nisan ayına giriyoruz.
+
+24
+00:10:28,399 --> 00:10:34,919
+Artık yavaş yavaş ödev ya da dönem projesini sizlerle paylaşacağım zaman geliyor.
+
+25
+00:10:34,919 --> 00:10:41,279
+Bu mezun bilgi sisteminde bir login ekranı olacak, bir sign up ekranı olacak demiştik.
+
+26
+00:10:41,379 --> 00:10:49,599
+Bununla ilgili mezunların bilgilerini aldığımız bir ekran tasarlamanızı istemiştim.
+
+27
+00:10:50,700 --> 00:10:55,980
+Aynı zamanda mezunların buraya kendi çektikleri fotoğrafları,
+
+28
+00:10:56,563 --> 00:11:01,303
+Yükleyebildikleri bir ekran tasarlayacağımızdan bahsetmiştim.
+
+29
+00:11:01,303 --> 00:11:22,384
+Buna ek olarak bugünkü uygulamamız içerisinde mezunların sisteme girdiğinde mezunlarla ilgili ya da bölümle ilgili haberlerin paylaşıldığı bir ekran görmesini ve bu haberlerin bir liste şeklinde gelmesini implement etmeye çalışacağız.
+
+30
+00:11:22,816 --> 00:11:42,176
+Ve bu sayede bir mezun aslında uygulamaya girdiğinde hem mezunlarımızın başarıları hakkında, hem öğrencilerimizin çalışmaları, hem de öğretimlerimizin çalışmaları hakkında duyurular konusunda bilgi sahibi olabileceği bir ekrana sahip olacak.
+
+31
+00:11:50,484 --> 00:12:04,124
+Bilgilerimden sonra soru sormak isteyen ya da benimle görüşünü paylaşmak isteyen ya da dersin gidişatı noktasında beklentisi olan fikirlerini paylaşmak isteyen arkadaşımız varsa söz verebilirim.
+
+32
+00:12:10,995 --> 00:12:20,556
+Peki, tabii 100 kişilik bir grup var dersi alan. Sonradan dinleyenler çoğunlukla gördüğüm kadarıyla derse katılım açısından baktığımızda.
+
+33
+00:12:24,076 --> 00:12:33,955
+Genellikle sizlere çok fazla soru sormadan dersi ilerletmeye çalışıyorum. Bu zaman zaman tabii sürekli olarak monoton bir şekilde anlatmak çok kolay olmuyor.
+
+34
+00:12:34,432 --> 00:12:44,552
+Tempoyu düşürmeden devam etmeye çalışıyoruz ama yorum, fikir belirtmek isteyen ya da soru sormak isteyen olursa benim de bir nefes alma şansım olur.
+
+35
+00:12:45,612 --> 00:12:50,612
+En azından daha renkli bir ders olma şansına sahip olabiliriz deyip hemen slaytlara geçeyim.
+
+36
+00:12:57,812 --> 00:13:20,451
+Evet, en son bu slide'ları görmüştük aslında. Burada size şunu anlatmıştım geçen hafta. Bir aktiviteden başka bir aktiviteye geçeceğiniz zaman özellikle implicit intentlığa geçiyorsanız o aksiyonu gerçekleyebilecek aktiviteler listelenir demiştik.
+
+37
+00:13:20,916 --> 00:13:34,776
+Eğer siz default şekilde kontrol edip bunun listelenmesini istiyorsanız, kullanıcıya ilgili aktiviteyle bir kez mi çalışmak istediğini yoksa sürekli o aktivitenin tercih etmek istediğini gösteren bir ekran gelir.
+
+38
+00:13:35,635 --> 00:13:44,016
+Ve bunu eğer always olarak seçerse kullanıcı, her zaman olarak seçerse bundan sonraki süreçte artık bir daha karşısına bir seçenek çıkmayacaktır.
+
+39
+00:13:45,620 --> 00:14:01,579
+Engellemenin yolu bir Create Chooser kullanmak demiştik. Bu Create Chooser'ı yaratarak siz aslında her seferinde uygulamanızdan bir aksiyon yapıldığında alternatiflerin kullanıcının önüne çıkmasını istiyorsanız bu listeyi getirmenin yolu Create Chooser kullanmak demiştik.
+
+40
+00:14:02,259 --> 00:14:08,159
+Bu noktayı da hatırlatıp bu haftaki aslında konularımıza yavaş yavaş geçelim.
+
+41
+00:14:19,471 --> 00:14:24,851
+Bu tabii intentler bizim açımızdan önemli.
+
+42
+00:14:27,572 --> 00:14:32,851
+Bu intent yapısını kullanarak neler yapabiliriz? Bunlara bir bakacağız.
+
+43
+00:14:32,991 --> 00:14:36,271
+Çeşitli farklı intentleri aldım. Birbirine benzeyen intentler de vardı.
+
+44
+00:14:37,851 --> 00:14:40,951
+Alarm yaratabiliyorsunuz. Alarmı set edebiliyorsunuz.
+
+45
+00:14:41,192 --> 00:14:44,572
+İşte ne kadar sürecek bunu belirleyebiliyorsunuz.
+
+46
+00:14:45,711 --> 00:14:49,991
+Ve kendi aktivitenizden bir alarmı tetikleme şansına sahipsiniz.
+
+47
+00:14:53,395 --> 00:15:11,635
+Tam tersi yönde çalıştırmak istiyorsanız, o zaman kendi uygulamanızın içerisinde böyle bir aksiyonu karşılayabilecek bir yapı varsa, o zaman Intent Filter kısmına bu aksiyonu yapabildiğinizi koymanız gerekiyor.
+
+48
+00:15:18,227 --> 00:15:42,467
+İzni almanız lazım ki uygulamanız bir alarm başlatabilsin. Eğer o alarmla ilgili izni almazsanız, o zaman burada yazmış olduğunuz Create Alarm kodunun pek de bir önemi kalmıyor. O zaman uygulamanızda bir hata oluşacak ve çalışmayacaktır. Mutlaka bu izni Android Manifest içerisine yerleştirmeniz.
+
+49
+00:15:42,995 --> 00:15:43,795
+Önemli.
+
+50
+00:15:44,355 --> 00:15:48,196
+Burada tekrar hatırlatmamız gereken şey şu.
+
+51
+00:15:48,816 --> 00:15:50,995
+Burada bir alarm yaratırken, Create Alarm...
+
+52
+00:15:52,500 --> 00:16:16,479
+İsmi Unique değil. İstediğiniz başka bir isim verebilirsiniz. İlla bu olmak zorunda değil. Buraya kaç dakika, kaç saatlik bir alarm, daha doğrusu saat kaçta çalacağını belirleyeceğiniz bir alarm koymanız gerekiyor. Saat 5.28'de çalacaksa bunu set etmek için Create Alarm'a bu bilgilerin gelmesi gerekiyor.
+
+53
+00:16:16,479 --> 00:16:20,479
+İlgili alarmla ilgili ekranda bir mesaj gözükmesini istiyorsanız onu da...
+
+54
+00:16:20,500 --> 00:16:29,239
+Pas ediyorsunuz. Buradaki kritik nokta bir intent yaratmanız gerekiyor ve onun aksiyonunun Action Set Alarm olması gerekiyor.
+
+55
+00:16:30,099 --> 00:16:38,239
+Değişmemesi gereken bilgi bu. Ve ek olarak bu intente bu alarm set edebilmesi için bu ilgili...
+
+56
+00:16:38,432 --> 00:17:01,332
+Bilgilerin aktarılması gerekiyor. Bir mesaj aktarılmazsa mesaj ekranda gözükmeyecektir ama dakika ve saati aktarmanız gerekiyor ki bu alarm o dakika ve saat için kurulabilsin. Ondan sonra bir kontrol yapıyorsunuz. Herhangi bir sorun olmaması için ilgili alarmı üretecek olan aktiviteyle ilgili.
+
+57
+00:17:06,432 --> 00:17:09,572
+O saat ve dakika için üretilmiş oluyor.
+
+58
+00:17:10,872 --> 00:17:11,652
+Bu da timer.
+
+59
+00:17:12,652 --> 00:17:17,432
+Bu timer'ı da alarm benzeri bir şekilde set edebiliyorsunuz.
+
+60
+00:17:18,211 --> 00:17:23,092
+Bunun aksiyonu da, action'ı da, intent başlığı altında.
+
+61
+00:17:23,152 --> 00:17:24,112
+Action set timer.
+
+62
+00:17:24,660 --> 00:17:36,840
+Burada da timer sonunda üretilecek mesaj ne kadar süreceği ve kullanıcının ekrandan çıktığında devam edip etmemesi timer'ın.
+
+63
+00:17:36,900 --> 00:17:42,220
+Çünkü bazı timer'lar uygulamada kaldığınız sürece devam etmesini isteyebilirsiniz.
+
+64
+00:17:42,360 --> 00:17:44,579
+Bazılarında arka planda devam etmesini isteyebilirsiniz.
+
+65
+00:17:52,660 --> 00:18:16,680
+Her planda bir timer'ı tetikleyebiliyorsunuz. Diğer bilgiler değişmiyor. Bütün intentler için, yapacağınız işler için geçerli. İzin almayı unutmuyorsunuz. Böyle bir yeteneği olan bir aktivite yazıyorsanız ve Create Timer çağrıldığında sizin uygulamanız buna hizmet edecekse o zaman Intent Filter kısmına Set Timer.
+
+66
+00:18:17,140 --> 00:18:22,440
+Çağrıldığında ben de varım diyeceğiniz kodları yazıyorsunuz.
+
+67
+00:18:24,180 --> 00:18:32,180
+Burada bir kontak bilgisinin gönderilmesi söz konusu.
+
+68
+00:18:33,780 --> 00:18:35,440
+Bu kontak bilgisinin...
+
+69
+00:18:36,147 --> 00:18:48,147
+ilgili telefonunuzdaki kontakların arasına eklenmesi işini yapacak. Bunu yapmak için de Action Insert aksiyonunu...
+
+70
+00:18:48,852 --> 00:19:16,852
+Tercih etmeniz gerekiyor ki her insert aksiyonu mutlaka kontak bilgisine ekleme olmayabilir. Başka bir bilgiyi sisteme eklemek de olabilir. O yüzden type'ını da veriyorsunuz. Kontaklarla ilgili olduğunu set type ile. Sonra kullanıcıya ait name olabilir. Burada name ve e-mail'i vermiş ama siz isterseniz telefon numarasını da put ekstra'ya yükleyip bunun ilgili telefon adres book'una kaydetmeyin.
+
+71
+00:19:16,852 --> 00:19:35,112
+Bu da bir başka internet türü var. Bir dosya açılmasından bahsediyoruz ve belirli bir tipteki dosyanın açılmasından bahsediyoruz.
+
+72
+00:19:39,440 --> 00:19:44,279
+Bilgilerde de, internette tanımladığımız bilgilerde de belirli değişiklikler olmaya başlıyor.
+
+73
+00:19:44,279 --> 00:19:51,119
+İşte aksiyonuna, Constructor'a gönderirken Action Open Document aksiyonunu pas ettiniz.
+
+74
+00:19:51,940 --> 00:19:58,139
+Type olarak bir image, herhangi bir uzantıya sahip olan bir image.
+
+75
+00:20:00,000 --> 00:20:07,320
+ilgili bir işlem yapmak istediğinizi söylüyorsunuz. Kategori olarak açılabilir bir dosya bilgisi olduğundan bahsediyorsunuz.
+
+76
+00:20:07,799 --> 00:20:24,679
+Ve burada tabii önemli noktalardan bir tanesi Start Activity for Result'ı çağırıyorsunuz ve ilgili hangi dosyayı açmak istiyorsanız o açılacak dosyanın bilgilerinin tekrar geri alınıp
+
+77
+00:20:24,976 --> 00:20:33,796
+Geri alındığında da onActivityResult metodunda açılıp gerekli işlerin yapılmasını mümkün kılıyorsunuz.
+
+78
+00:20:34,436 --> 00:20:41,036
+OnActivityResult'a baktığınızda requestCode, resultCode ve intent var.
+
+79
+00:20:41,236 --> 00:20:42,196
+Üç parametre var.
+
+80
+00:20:51,071 --> 00:20:53,471
+Yapılacak işlemler birden fazla olabilir.
+
+81
+00:20:54,192 --> 00:21:03,591
+O yüzden o işlemlerin neler olduğuna bağlı olarak bir kod belirliyorsunuz ve yapmak istediğiniz kodu karşı tarafa gönderiyorsunuz.
+
+82
+00:21:03,591 --> 00:21:08,591
+Oradan dönen kodu da request kod ile aynı mı diye kontrol edip bir doğrulama yapıyorsunuz.
+
+83
+00:21:09,231 --> 00:21:12,231
+Bir de bu işin yapılıp yapılamama durumu var. O da result kod.
+
+84
+00:21:12,660 --> 00:21:17,660
+Yani karşılardaki aktivite herhangi bir sebeple bunu gerçekleştirebildi mi, gerçekleştiremedi mi?
+
+85
+00:21:18,079 --> 00:21:24,380
+İşte result OK dönerse gerçekleştirdi, result Canceled dönerse gerçekleştiremediğini anlıyorsunuz.
+
+86
+00:21:24,380 --> 00:21:33,240
+Ve bu doğrultuda gerçekleştirememişse, yani siz karşı taraftan bir doküman bilgisi almayı beklerken bu bilgiyi alamamışsanız,
+
+87
+00:21:33,280 --> 00:21:39,320
+ona göre bir kod parçası yazıp durumu kullanıcıya bildirmeniz ya da gerekli aksiyonları almanız sizden bekleniyor.
+
+88
+00:21:40,660 --> 00:21:52,844
+Sorun çıkmadıysa ve sizin talep ettiğiniz aksiyonun request kodu yere döndüyse size ve bir sorun yoksa o zaman karşı taraftan aktarılan intent...
+
+89
+00:21:52,852 --> 00:22:07,852
+Structure'dan GetData metoduyla ilgili resme ait olan bilgileri alıyorsunuz ve sonra o resimle ilgili işleri yapıyorsunuz ki çok sık yapılan işlerden bir tanesi biliyorsunuz.
+
+90
+00:22:07,852 --> 00:22:19,352
+Galeriden resim almak ya da kameraya bağlanıp oradan çektiğiniz fotoğrafın içeriğini alıp onu işleyip
+
+91
+00:22:19,508 --> 00:22:28,807
+İşte uygulamanızın içerisinde kaydetmek gibi işler olabilir. Bundan sonrası tamamen sizin yapacağınız işin özelinde belirleniyor.
+
+92
+00:22:28,807 --> 00:22:41,675
+Tabii bu yeteneğe sahip olan bir uygulama yazıyorsanız yine aşağıdaki gibi intent filter'ı hem...
+
+93
+00:22:41,971 --> 00:22:48,931
+Permission'ı ilgili manifest dosyasının içerisine mutlaka belirtmeniz sizden bekleniyor.
+
+94
+00:22:50,963 --> 00:22:58,983
+Ama burada kritik nokta unutmamız gereken nokta, set type dediğiniz noktada burada tamamen bir image'den bahsediyoruz.
+
+95
+00:22:59,103 --> 00:23:04,143
+Bazen image, işte slash PDF, JPEG diyebilirsiniz, PNG diyebilirsiniz.
+
+96
+00:23:04,563 --> 00:23:08,023
+Daha spesifik kısıtlamalarda yapma şansına sahipsiniz.
+
+97
+00:23:08,023 --> 00:23:10,763
+Ki bunu bazı web sitelerinde görürsünüz.
+
+98
+00:23:11,324 --> 00:23:18,384
+Çeşitli dokümanların belli standartlarda yüklenmesi için bu tür kısıtlamalar yapılabiliyor.
+
+99
+00:23:18,963 --> 00:23:28,423
+Başka bir doküman tipi geldiğinde kullanıcı bu anlamda uyarılıyor. Bu doküman tipi uyumsuz diye. Bunların hepsini sizin koordine ediyor olmanız bekleniyor.
+
+100
+00:23:33,268 --> 00:23:37,847
+Burada da bir medya failinin işte bir müzik olabilir, bir video olabilir.
+
+101
+00:23:38,967 --> 00:23:44,187
+Dinlenmesi ya da görsel olarak gözükmesi için küçük bir kod parçası var.
+
+102
+00:23:44,187 --> 00:23:54,587
+İşte internette Action View, yani gösterim ya da dinlenmesi anlamında müziğin bir aksiyon.
+
+103
+00:23:55,059 --> 00:23:56,980
+Peşinde olduğunuzu söylüyorsunuz.
+
+104
+00:23:57,420 --> 00:24:02,080
+Bunun için Set Data kısmına da ilgili dosya bilgisini ekleyip,
+
+105
+00:24:02,080 --> 00:24:11,440
+karşı tarafa gönderdiğinizde sistem size dinleyebileceğiniz bu medya faydını seçenekler sunuyor.
+
+106
+00:24:12,039 --> 00:24:15,980
+Siz de o seçeneklerden birini seçip bunu dinleyebiliyorsunuz.
+
+107
+00:24:16,059 --> 00:24:21,080
+Aşağıdaki örnekte sizin bir medya player gibi davrandınız ve size...
+
+108
+00:24:21,364 --> 00:24:34,203
+Gönderilmesi olası müzik ve video dosyalarını kendi uygulamanızda göstermeyi istediğinizi deklare etmiş oluyorsunuz aşağıdaki kod parçasında.
+
+109
+00:24:34,824 --> 00:24:41,723
+Ama burada tabii aşağıdaki kod parçasına baktığınız zaman sadece audio olarak.
+
+110
+00:24:42,208 --> 00:25:05,048
+Bir vaatte bulunuyorsunuz. Bir video dosyası ya da OGG uzantısı dışındaki bir tipi desteklemiyorsunuz mesela. Bunlar özel olarak sizin define ettiğiniz ve sadece bu koşula uyan bir istek gelirse sizin uygulamanızın da çağrıldacağı anlamına geliyor.
+
+111
+00:25:08,372 --> 00:25:20,412
+Evet, buraya kadar sorusu olan var mı? Genel belli başlı intentleri konuştuk. Şimdi artık Start Activity'yi çokça kullandık ama Start Activity for Result kısmını da yavaş yavaş geçelim istiyorum.
+
+112
+00:25:24,660 --> 00:25:41,599
+Peki, o zaman devam edebiliriz. Şimdi bu noktada Start Activity for Result adı da üstünde olduğu gibi bir başka aktiviteyi çağırıyorsunuz ve ondan bir beklentiniz var. Size bir bilgi döndürmesini bekliyorsunuz.
+
+113
+00:25:41,599 --> 00:25:52,556
+Bu bir işin sonucu olabilir, yapılıp yapılmadığı. Bu bir kontak bilgisi olabilir, bu bir resim olabilir. Yani sonuçta karşı taraftan bir...
+
+114
+00:25:52,852 --> 00:25:58,791
+Download adresi bile alıyor olabilirsiniz ya da forma ait bilgileri de alıyor olabilirsiniz.
+
+115
+00:25:58,791 --> 00:26:08,812
+Sonuç itibariyle size karşı taraftaki aktivite bir bilgi döndürmek üzere sizin tarafınızdan gönderilen intent karşıya ulaşıyor.
+
+116
+00:26:09,471 --> 00:26:15,692
+Bunu sağlamak için de buradaki örnekte gördüğünüz gibi üst kısımda Pick Contact isimli bir metot tanımlanmış.
+
+117
+00:26:20,115 --> 00:26:39,576
+Talep ediyorsunuz karşı taraftan. Bunu da phonebook tarafından istediğinizi pickcontactintent.set type dediğinizde o içeriği talep ettiğinizi söylüyorsunuz ki burada özellikle şunu söylemiş oluyorsunuz.
+
+118
+00:26:39,576 --> 00:26:44,516
+Telefon numarası bulunan kişilerin bilgilerini.
+
+119
+00:26:44,832 --> 00:27:01,652
+Talep ediyorum diyorsunuz. Burada belirtildiğiniz tip olarak. Bundan sonra karşı tarafa bu intenti gönderirken bir de request'inizin kodunun ne olduğunu söylüyorsunuz.
+
+120
+00:27:01,712 --> 00:27:09,772
+Çünkü bir aktivite içerisinde koşula bağlı olarak birden fazla tipte request yapılabilir.
+
+121
+00:27:10,228 --> 00:27:29,228
+Burada Peak Contact Request var, işte Peak Image Request de olabilirdi. Bunların kodları farklı olacaktı ve hangi aktiviteyi çağırdığınıza bağlı olarak o aktivite size bir geri dönüş yaptığında hangi...
+
+122
+00:27:29,364 --> 00:27:32,923
+İçeride aktiviteyi çağırdığınızı bu kodlarla takip ediyorsunuz.
+
+123
+00:27:33,003 --> 00:27:39,263
+İşte galeriden bir şey çağırdıysanız o zaman işte pick image request 2 dönmüş oluyor.
+
+124
+00:27:39,443 --> 00:27:40,864
+Onu karşılıyorsunuz.
+
+125
+00:27:41,384 --> 00:27:51,443
+Aynı aktivite içerisinde bir kişinin telefon numarası bir ikisini çağırdığınızda da pick contact request 1 döndüğü için bu sefer bir kodu üzerinden takip ediyorsunuz.
+
+126
+00:27:56,079 --> 00:28:05,879
+Taleplerde koşula bağlı olarak bulunma şansına sahip oluyorsunuz. Request kodu mutlaka karşı tarafa da pas etmeniz bekleniyor.
+
+127
+00:28:14,003 --> 00:28:18,783
+İşi talep ettiğini kişinin mutlaka bilmesi gerekiyor.
+
+128
+00:28:19,743 --> 00:28:30,003
+Alt taraftaki kod parçasına baktığınız zaman bir adresin harita üzerinde görüntülenmesi için bir aksiyon.
+
+129
+00:28:31,092 --> 00:28:49,092
+Başlatılacak. Burada dikkat çekmek istediğim nokta şu, unutmamanız gerekiyor. Bu Start Activity ya da Start Activity for Results için ikisi için de geçerli. İlgili talebinizi gerçekleştirebilecek bir aktivite yoksa...
+
+130
+00:28:49,875 --> 00:28:58,115
+Çok düşük ihtimal olmasına rağmen olabilir telefonunuzda. Artık bunun takibi Activity, Not Found, Exception gerçekleşiyor.
+
+131
+00:28:58,115 --> 00:29:11,776
+Ve sizin buna karşı işte Catch kısmına yapılacak işlemi yazmanız ve böyle bir durumda uygulamanızın crash etmemesini sağlamanız sizden bekleniyor.
+
+132
+00:29:17,140 --> 00:29:40,140
+Biraz önce bahsettik. Kısaca üzerinden tekrar geçmiş olalım. Bir talep yapıldığı zaman request kodumuzu karşı tarafa gönderiyoruz. Buna request kod diyoruz. Bir de karşı taraftan result kod dönüyor. Bu result kod da bize o işin yapılıp yapılamadığını...
+
+133
+00:29:41,044 --> 00:29:54,824
+Result OK ya da Result Canceled bilgisiyle söylüyor. Ek olarak bir de işte onActivityResult metoduna intentin kendisi dönüyor ve orada zaten bütün bilgiyi taşıyor oluyor.
+
+134
+00:29:57,204 --> 00:30:00,304
+Şimdi buradaki örneğe bir bakalım.
+
+135
+00:30:02,291 --> 00:30:09,851
+Burada karşı taraftan bir talepte bulundunuz ve bu talebin doğrultusunda beklediğiniz bilgi geldi.
+
+136
+00:30:10,791 --> 00:30:14,672
+3 tane bilgi geldi. Request Code, Result Code ve Intent'in kendisi.
+
+137
+00:30:15,531 --> 00:30:22,351
+Önce Request Code'umuzu kontrol ediyoruz. Doğru cevabı aldık mı karşı taraftan?
+
+138
+00:30:23,988 --> 00:30:43,988
+Gönder, yani istediğimiz işin cevabını aldık mı? İstediğimiz iş yapılabildi mi diye kontrol ediyoruz. Result got ok ise. Ondan sonra bize gelen intent, result intent buradaki değişkenin ismi, nokta get data ile oradan bilgiyi alıyoruz.
+
+139
+00:30:49,907 --> 00:30:52,227
+Daha doğrusu değişkenin içerisine alıyoruz.
+
+140
+00:30:52,227 --> 00:31:08,079
+Ve değişkenin içerisinde bu bilgiyi aldıktan sonra da burada yapılan şey bir cursor ile gelen kontak bilgilerinin arasında gezerek istediğimiz telefon numarası bilgisini...
+
+141
+00:31:08,079 --> 00:31:17,959
+Bir kaç adımda alınmasını sağlıyoruz ki burada birden fazla bilgi de gelebilir, tek bir bilgi de gelebilir.
+
+142
+00:31:17,959 --> 00:31:29,379
+Karşı tarafta A kişinin bir bilgisini istemiş de olabilirsiniz ya da bize telefondaki B harfiyle başlayan kişilerin bilgisini gönder demiş de olabilirsiniz.
+
+143
+00:31:29,499 --> 00:31:33,599
+Buna bağlı olarak alt taraftaki kodunuzu işletiyorsunuz.
+
+144
+00:31:36,564 --> 00:31:44,924
+Yine daha benzer bir kod, daha rahat görebileceğiniz bir kod parçası, kod bloğu.
+
+145
+00:31:45,744 --> 00:31:50,504
+Burada da bir contact request değeri sıfır olarak set ediliyor.
+
+146
+00:31:51,344 --> 00:31:56,104
+İşte onKeyDown eventine bağlanan bir aksiyon var.
+
+147
+00:31:56,544 --> 00:32:19,624
+Bu aksiyon gerçekleştiğinde Start Activity for Result çağrılıyor. Karşı taraftan bir ilgi almak istediğimiz söyleniyor. Kontakt bilgileriyle ilgilendiğimizi paylaşıyoruz ve Kontakt Request kodumuzu da karşı tarafa gönderiyoruz. Bunun karşılığında gelen datayı alıp
+
+148
+00:32:20,180 --> 00:32:41,579
+İşleyip bir de bir aktivite, başka bir aktivite başlatılmasını sağlıyoruz ki aslında burada kodun altında yer alan Start Activity gelen bilginin alınıp ekranda gösterilmesi için yeni bir aksiyon başlatıyor. Biraz önceki koddan farklı olarak.
+
+149
+00:32:43,059 --> 00:32:44,420
+Buraya kadar sorusu olan var mı?
+
+150
+00:32:50,644 --> 00:33:18,324
+Hızlı, yavaş gittiğim zaman uyarabilirsiniz. Eğer hızlı olur, anlaşılmayan bir yer olursa. Bunlar tabii böyle kod anlatılarak hemen pat diye anlaşılması çok kolay işler değil. Genel konsepti anlamanız ve sonra bunu deneyimlemeniz önemli. Kod yazmak, öğrenmek için çok çok kıymetli. Bu ders kapsamında tek tek kod yazmaya başlayalım.
+
+151
+00:33:18,675 --> 00:33:30,175
+Vaktimiz tabii ki yok çünkü işleyeceğimiz konular var. Ama sistematiği nasıl işlediğini kafanızda oturtabilirseniz bundan sonrası biraz daha sizin için kod yazarken daha rahat olacaktır.
+
+152
+00:33:30,175 --> 00:33:31,175
+Evet.
+
+153
+00:33:32,175 --> 00:33:38,875
+Geçelim mi saysın? Ölmüşsün lan. Ölmüşsün sen diyorsun.
+
+154
+00:33:39,935 --> 00:33:42,975
+Sanırım mikrofon yanlışlıkla açıldı.
+
+155
+00:33:46,259 --> 00:33:49,460
+Kupatowa.
+
+156
+00:33:52,948 --> 00:33:54,468
+Evet, devam ediyorum arkadaşlar.
+
+157
+00:33:59,028 --> 00:34:01,968
+Burada bir kez daha hatırlatmakta fayda var.
+
+158
+00:34:02,887 --> 00:34:10,648
+Bir aktivitenin herhangi bir aksiyonu gerçekleştirebileceğinizi yazdığınız kodda düşünüyorsanız,
+
+159
+00:34:10,648 --> 00:34:22,347
+onu bir intent filter ile hangi datayı handle edebileceğini, MIME tiplerini yazarak Android Manifeste tanımlayabiliyorsunuz.
+
+160
+00:34:23,731 --> 00:34:42,291
+Şimdi burada farklı filtreler var. Onları da paylaşmak istedim. Bu intent filtrelerden çok bahsettik ama burada iki tane aktivite var. Bir tanesinin adı main activity, diğeri share activity bu projenin içerisinde.
+
+161
+00:34:51,476 --> 00:35:08,016
+Ayrıca Intent Filter'lar tanımlanmış. Şimdi bir aktivitenin içerisinde birden fazla Intent Filter tanımlayabilirsiniz. Bunda hiçbir sakınca yok. Yani bir aktiviteniz birden fazla işi yapıyor olabilir. Bunun için onu mutlaka tanımlamanız sizden bekleniyor.
+
+162
+00:35:09,016 --> 00:35:13,016
+Ayrıca aktivitelerinizin yaptığı işler de birbirinden farklı olduğu için...
+
+163
+00:35:13,715 --> 00:35:29,735
+Mutlaka işte 10 tane aktiviteniz var diyelim uygulamanız içerisinde. Bazıları eğer belli işleri yapmaya talip olacaklarsa onları ayrı ayrı aktivite takleri içerisinde intent filterlarla mutlaka tanımlamanız bekleniyor.
+
+164
+00:35:29,735 --> 00:35:33,395
+Burada main activity'nin görevi launcher olduğu için.
+
+165
+00:35:33,760 --> 00:35:41,579
+Başka bir talip olabileceği bir işlem olmadığı için aslında kimseye servis yapacak durumda değil main activity.
+
+166
+00:35:42,079 --> 00:35:50,300
+Sadece uygulama başlatılırken çağrılabilecek bir aktivite olduğunu ilgili intent filterlerle tanımlamış oluyoruz.
+
+167
+00:35:50,300 --> 00:35:58,640
+Ama share activity'e baktığınız zaman iki farklı işi yerine getirmeyi vaat ediyor.
+
+168
+00:35:58,820 --> 00:35:59,300
+Bir tanesi...
+
+169
+00:36:00,148 --> 00:36:12,427
+İşte text tipindeki plain bir datayı, bunun içerisinde HTML bir datadan bahsetmiyoruz, düz bir datadan bahsediyoruz.
+
+170
+00:36:12,427 --> 00:36:14,608
+Bunu gönderebilme yeteneğine sahip.
+
+171
+00:36:27,119 --> 00:36:36,739
+Ve birden fazla görüntü veya video dosyasını da gönderebileceğini ActionSend ve ActionSendMultiple'da söylemiş oluyor.
+
+172
+00:36:37,219 --> 00:36:38,779
+Her ikisinin de yapabileceğini belirtiyor.
+
+173
+00:36:39,539 --> 00:36:41,139
+Bazı uygulamalar vardır.
+
+174
+00:36:42,939 --> 00:36:46,019
+Tek bir dosyayı aynı anda yükleyip gönderebilirsiniz.
+
+175
+00:36:46,859 --> 00:36:51,380
+Bazı uygulamalar birden fazla dosyayı ekleyerek göndermenizi sağlayabilir.
+
+176
+00:36:51,380 --> 00:36:52,380
+Örneğin...
+
+177
+00:36:52,672 --> 00:37:00,372
+Bir mail uygulaması birden fazla dosyayı gönderebiliyorsa, o zaman siz intentinizin içerisine birden fazla dosyayı koyabilirsiniz.
+
+178
+00:37:00,572 --> 00:37:06,271
+Ama göndermiyorsa, ona birden fazla dosya gönderdiğiniz zaman hata mesajı alırsınız.
+
+179
+00:37:06,271 --> 00:37:13,192
+Ve zaten bu yeteneği, hata mesajı aslında şöyle oluşmaz diyelim.
+
+180
+00:37:13,672 --> 00:37:20,672
+Bu yeteneği olmadığı için gelecek olan filtreler yapıldıktan sonra listede o yeteneği...
+
+181
+00:37:20,672 --> 00:37:23,752
+Deneyi yoksa görüntülenmeyecektir ve size hiçbir zaman gözükmeyecektir.
+
+182
+00:37:24,172 --> 00:37:26,492
+Bunu böyle söylemek daha uygun olacaktır.
+
+183
+00:37:26,492 --> 00:37:36,052
+Son olarak API level 33'ten itibaren ilgili intent filterlarla ilgili bir eşleşme sağlanamadığında
+
+184
+00:37:36,052 --> 00:37:41,431
+Activity not found exception'un true edildiğini hatırlatmış olalım.
+
+185
+00:37:41,552 --> 00:37:44,532
+Yani bir iş yaptırmak istiyorsunuz ve o işi yapabilecek hiçbir aktifte yok.
+
+186
+00:37:48,340 --> 00:38:13,720
+Yine başka bir filtre, burada ShareActivity bu sefer SMS gönderme yeteneğine sahipken bir Intent filter ile bir diğer tarafta da görüntü ve basit bir tekst gönderme yeteneğine sahip olduğunu deklare etmiş ve Android Manifeste eklemiş.
+
+187
+00:38:14,159 --> 00:38:16,119
+Buradaki kod parçasından.
+
+188
+00:38:22,356 --> 00:38:35,496
+Evet, şimdi biraz önce common intentsleri görmüştük. Bu intent özelliğini özellikle StartActivityForResult sonrasına koydum.
+
+189
+00:38:36,496 --> 00:38:43,776
+Onun diğerlerinin arasında bırakmadım ki bunu StartActivityForResult'ı konuştuktan sonra görün diye.
+
+190
+00:38:48,976 --> 00:39:06,536
+yapılmasını talep ediyoruz. Bir video ya da görüntü bilgisinin karşı taraftan talebi var. Bunun için önce Intent'e bir MediaStore üzerinden Action Image Capture yapmak istediğimizi söylüyoruz.
+
+191
+00:39:06,896 --> 00:39:32,896
+Constructor'ına bunu atıyoruz. Aynı zamanda bunu nereden yapmak istediğimiz bilgisini de gönderdiğimiz TargetFileName ile metoda iletiyoruz. Bu bilgiyi daha sonra PutExtra'ya intenti yüklüyoruz ve karşı tarafa bu intenti aksiyonuyla ve bu...
+
+192
+00:39:33,811 --> 00:39:40,592
+Açmak istediğimiz dosyayla birlikte, daha doğrusu almak istediğimiz dosyayla birlikte karşı tarafa gönderiyoruz.
+
+193
+00:39:40,971 --> 00:39:51,072
+StartActivity for result deyip, burada intent olarak tanımladığımız intentimizi ve ImageCapture, Request ImageCapture, burada bir olarak kodlamışız.
+
+194
+00:39:51,072 --> 00:40:01,072
+Karşı tarafa bunu aktarıyoruz. Dönüşte ne yapıyoruz? Dönüşte de işlem başarıyla gerçekleşmişse,
+
+195
+00:40:01,119 --> 00:40:11,559
+Karşı taraftan bize aktarılan bilgiyi, resim bilgisini alıp ne yapacaksak bitmap tipinde saklıyoruz.
+
+196
+00:40:12,220 --> 00:40:24,699
+Bunu da gelen intent data.getParseLabelExtra üzerinden thumbnail bitmap tipindeki aktarıp gerekli işleri bu şekilde gerçekleştiriyoruz.
+
+197
+00:40:27,699 --> 00:40:41,460
+Yine aynı şekilde aşağıda eğer bunu bize aktarabilecek bir uygulama yoksa bir Activity, Not Found, Exception, Throw edileceğini gösteren bir kod parçası mevcut.
+
+198
+00:40:46,547 --> 00:40:55,807
+Bu ana kadar aslında çokça konuştuk ama özellikle bu başlık altında bir kez daha vurgulamakta fayda var.
+
+199
+00:40:55,807 --> 00:41:11,791
+Eğer sizin aktiviteniz bir bilgiyi alıp iş yapma ihtimali varsa mutlaka onCreate'de SetContentView'dan sonra...
+
+200
+00:41:11,791 --> 00:41:21,891
+aktivite çalışmaya başladığı zaman GetIntent metoduyla eğer aktarılmış bir bilgi varsa bu bilgiyi alıyorsunuz.
+
+201
+00:41:21,891 --> 00:41:27,891
+Sonra bunu ilgili URI değişkenine atıyorsunuz.
+
+202
+00:41:28,612 --> 00:41:38,911
+Atadıktan sonra sizin tahlüt ettiğiniz neler varsa, işte Image, TextPlane vs.
+
+203
+00:41:39,699 --> 00:41:54,739
+Hangisi geldiyse, çünkü siz birden fazla taahhüt etmiş olabilirsiniz, onları kontrol ediyorsunuz. Gelen ne ise yapılması gereken işi de ona göre organize ediyorsunuz. Örneğin resim geldiyse, siz resimle ilgili ne yapmanız gerekiyorsa onu yapıyorsunuz.
+
+204
+00:41:57,043 --> 00:42:00,963
+Text bilgisi geldiyse onunla ilgili yapmanız gereken işi yapıyorsunuz.
+
+205
+00:42:01,403 --> 00:42:02,543
+Burada şöyle bir şey var tabii.
+
+206
+00:42:03,603 --> 00:42:12,143
+Siz bunu karşı tarafa StartActivityForResult olarak göndermiş dönüşte bunu onActivityResult'ta da yapıyor olabilirsiniz.
+
+207
+00:42:12,943 --> 00:42:15,103
+Ki orada da bu kontrolleri yapmanız gerekiyor.
+
+208
+00:42:15,163 --> 00:42:21,224
+Ya da burada olduğu gibi siz bir vaatte bulunmuşsunuzdur demişsinizdir ki ben resmi işlerim.
+
+209
+00:42:22,612 --> 00:42:38,612
+Activity işlerim. Size bu bilgi geldiğinde önce Intent'e alıyorsunuz, sonra içindeki datayı alıyorsunuz, sonra tipine bakıyorsunuz ve yapmayı tahliye ettiğiniz işi yapıp karşı tarafı bilgilendiriyorsunuz.
+
+210
+00:42:46,367 --> 00:42:54,927
+Başarı ile bu işi tamamlıyorsanız, SetResult'a Activity.Result.OK ile pastlamanız gerekiyor.
+
+211
+00:42:54,927 --> 00:43:07,907
+Bu sayede karşı tarafa siz bir bilgi döndürdüğünüzde o yaptığınız işin sorunsuz bir şekilde gerçekleştiğini aktarmış olun.
+
+212
+00:43:08,347 --> 00:43:10,207
+Bu da önemli noktalardan bir tanesi.
+
+213
+00:43:16,980 --> 00:43:26,039
+Evet, şimdi şöyle bir, tabii değişiklik var Android aslında tarafında.
+
+214
+00:43:27,123 --> 00:43:48,683
+Şu ana kadar bahsettiğimiz yapı daha önce Activity API üzerinden kullanılan ve hala kullanılmaya devam eden bir sistematik ve genel olarak da basit olduğu için kullanılmaya devam ediyor ve hala herhangi bir şekilde uygulamadan kalkmış durumda değil.
+
+215
+00:43:48,683 --> 00:43:53,183
+Ama Android son birkaç yıldır şunu der.
+
+216
+00:43:53,652 --> 00:44:07,372
+Ben yeni bir API oluşturdum. Eğer Activity Result ile yani dönen değerle ilgili bir iş yapmayı düşünüyorsanız, buna ihtiyaç duyuyorsanız o zaman bundan da faydalanabilirsiniz ki ben bunu tavsiye ediyorum der.
+
+217
+00:44:07,860 --> 00:44:27,040
+Bunun için de işte bir Activity Result Launcher tanımlamanızı, buradaki register işlerini gerçekleştirmenizi ve herhangi bir bilgi döndüğünde de onActivity Result kısmında bu bilgiyi işte Result Callback üzerinden yönetmenizi önerir.
+
+218
+00:44:27,476 --> 00:44:42,756
+Bu yapıyı da en azından ders kapsamında tanıtmış olmak istiyorum ama çok da üzerinde duracağımız bir yapı değil. İlgilenenler ve biraz daha profesyonelce kod yazmak isteyenler bu yapıya yakından bakabilirler.
+
+219
+00:44:44,176 --> 00:44:53,776
+Baktığımızda saat 14.43 oldu. Bu yapının inceliklerine bakmadan önce birkaç slide'ımız daha var. Bir ara verelim. 14.43.
+
+220
+00:44:54,271 --> 00:44:57,411
+14.55'de kaldığımız yerden devam edelim arkadaşlar.
+
+221
+00:56:22,900 --> 00:56:27,440
+Evet arkadaşlar, yeniden merhaba. Dersin ikinci bölümüne kaldığımız yerden devam edelim.
+
+222
+00:56:29,440 --> 00:56:41,420
+Slidelardan en son bu noktada kalmıştık ve sizde Android'in yeni sunduğu belli bir zamandır kullanımda olan Activity Resolve API'ndan bahsediyordum.
+
+223
+00:56:41,887 --> 00:56:56,567
+Bu API biraz önce gördüğümüz yöntemden biraz daha profesyonelce işi ele alıyor. Burada görmüş olduğunuz kod parçasında bir Activity Result Launcher var ve bu Launcher aracılığıyla...
+
+224
+00:56:57,523 --> 00:57:10,283
+Activity'yi göndermeden önce, yani bir değer döndürmesi adına launch ettiğiniz kısım burada. Önce bir launcher'ınızı tanımlıyorsunuz.
+
+225
+00:57:10,643 --> 00:57:25,203
+Ve register ediyorsunuz. Arkasından bu Activity Result'ın sonuç aldığında bir parametre döndüğünde ya da bir bilgi döndüğünde ne yapması gerektiğini onActivity Result meditasında kodluyorsunuz.
+
+226
+00:57:25,203 --> 00:57:36,783
+Sonra da işte bir butona bağladıysanız o aktiviteyi aşağıdaki kod parçasında olduğu gibi onClean'e tıklandığında işte bu Launch'ı
+
+227
+00:57:37,619 --> 00:57:44,339
+Hangi parametreyle lounge etmek istiyorsanız, ilgili parametreyi Constructor'a gönderip lounge edebiliyorsunuz.
+
+228
+00:57:46,339 --> 00:57:48,339
+Burada da...
+
+229
+00:57:51,860 --> 00:58:02,680
+Activity Result API'nin diğerlerinden fark, yani daha önce gördüğünüz örnekten farklı olarak bir ayrı sınıf olarak konumlandırıldığı örnek kodu parçasını görüyorsunuz.
+
+230
+00:58:03,340 --> 00:58:08,960
+Bir Result Launcher'ınız var, bir tane Activity Result Regist'iniz var.
+
+231
+00:58:09,391 --> 00:58:26,092
+Bunları ayrı bir yapı olarak tanımladıktan sonra Recyclerinizi Result Callback üzerinden Recycler ediyorsunuz ve yapılması gerekeni onActivityResult'a yine yazıyorsunuz.
+
+232
+00:58:26,384 --> 00:58:35,483
+Buradaki Fragment yapısında gördüğünüz gibi bir Lifecycle Observer'ınız var. Bunun üzerinden süreci yürütüyorsunuz.
+
+233
+00:58:35,943 --> 00:58:40,344
+Şimdi bunun detayına girmeyeceğimizi paylaşmıştık ama şunu söylemek isterim.
+
+234
+00:58:40,804 --> 00:58:48,804
+Özellikle Fragment yapısını da aktiviteler içerisinde çok kullanmadık. Henüz daha yeni yeni kodlamayı öğreniyorsunuz.
+
+235
+00:58:53,523 --> 00:59:13,344
+Farklı şekilde birbirinden bağımsız bir şekilde yürütülmesi bekleniyorsa genelde fragment yapısı kullanılıyor ve bu fragment yapısıyla da Activity Result API'nin uyumlu çalışmasından dolayı daha çok kullanılmaya başladığını da paylaşmak doğru olacaktır diye eklemek istiyorum.
+
+236
+00:59:21,684 --> 00:59:28,944
+Aktiviteler arası iletişim ve bu iletişimin hangi yapı ile gerçekleşeceğini konuştuk.
+
+237
+00:59:29,784 --> 00:59:33,684
+Bu dersin içerisinde layoutlara çok fazla...
+
+238
+00:59:34,516 --> 00:59:44,175
+Belki değinmeyeceğiz. UI komponentleri belki çok fazla konuşmayacağız ama şöyle bir kabaca bakmakta da fayda var diye düşünüyorum.
+
+239
+00:59:45,175 --> 00:59:57,436
+İşte view gruplar var ve o view grupların altında da view'lar var. Genellikle bu view gruplar view'ların yerleşmiş olduğu aslında görünmeyen yapılar oluyorlar.
+
+240
+01:00:00,000 --> 01:00:24,299
+Dış katmanda yer alan view gruplardan bir tanesi. Bunların içerisinde işte linear layout var, relative layout var, grid view layout var. Bu layoutlar sizin UI komponentlerinizin ekranda konumlanmasını kolaylaştıran ve belirli konseptleri oluşturmanıza yardımcı olan
+
+241
+01:00:24,724 --> 01:00:34,704
+Yapılar. Mesela buradaki linear layout'ın içerisine TextView ve Button Widget'ı yerleştiriliyor.
+
+242
+01:00:34,704 --> 01:00:47,104
+Ve Orientation'ı Vertical olarak set edilmiş, yani Dicay'de bunların konumlandırılması noktasında bir, hizalanması noktasında bir talepte bulunmuş bu kodu yazan kişi.
+
+243
+01:00:49,268 --> 01:01:10,468
+Biraz sonra göreceksiniz, Relative layout'a geldiğinizde diğer komponentlere göre konumlandırdığınızı, Linear layout'ta dikey ve yatay olmak üzere iki eksende hizalama yapıldığını, buna göre aslında bir telefon ekranının farklı şekillerde widgetleri kullanarak yerleştirilebileceğini rahatlıkla söyleyebiliriz.
+
+244
+01:01:13,844 --> 01:01:16,303
+İşte bir ID set etmeniz gerektiğinde.
+
+245
+01:01:16,303 --> 01:01:17,523
+Add artı ID.
+
+246
+01:01:18,132 --> 01:01:24,152
+O attribute'un ne olduğuna bağlı olarak ismini examen tarafındaki veriyorsunuz.
+
+247
+01:01:24,652 --> 01:01:30,052
+Refer etmek istediğiniz zaman add artı id yerine add işaretini kullanıyorsunuz.
+
+248
+01:01:30,572 --> 01:01:34,392
+Neye refer edecekseniz onu çağırıyorsunuz.
+
+249
+01:01:35,132 --> 01:01:39,932
+Bir widget tanımlayacağınız zaman onun onlarca özelliği olabilir.
+
+250
+01:01:39,932 --> 01:01:45,912
+Burada en default olanları id, layout, width, layout, height, text gibi.
+
+251
+01:01:46,132 --> 01:01:54,352
+Çok çeşitli attribütleri var. Bunları kurcalayarak öğrenebilirsiniz.
+
+252
+01:01:54,352 --> 01:02:00,352
+Ve özellikle geliştireceğiniz uygulamalarda mesela gerçekten...
+
+253
+01:02:00,980 --> 01:02:12,580
+Olması gereken UI komponenti kullanmak akıllıca. Mesela bunların içerisinde işte ScrollView olabilir, onun dışında Radio buton olabilir, Radio grup olabilir.
+
+254
+01:02:13,500 --> 01:02:26,980
+Hep aynı komponentleri kullanmak, kolay alanları kullanmak değil, gerçekten gerekli olanları ve işte tarih bilgisi alırken belki orada bir işte...
+
+255
+01:02:27,731 --> 01:02:28,612
+Most jedem.
+
+256
+01:02:29,556 --> 01:02:41,695
+Takvime uygun bir komponentten yararlanmak, string gibi almak yerine daha seçilebilir bir aralıkta listelemek şeklinde görselleştirmek daha akıllıca olacaktır.
+
+257
+01:02:42,896 --> 01:02:46,615
+Bu yüzden bu komponentlere hızlıca bakmanız yeterli olur.
+
+258
+01:02:47,315 --> 01:02:52,175
+Yarım saatlik bir süre içerisinde zaten hepsini keşfetme şansına sahip olursunuz kabaca.
+
+259
+01:02:52,356 --> 01:02:54,235
+İhtiyaç duydukça da detaylarına bakarsınız.
+
+260
+01:02:54,795 --> 01:02:57,235
+FindViewByID tarafını...
+
+261
+01:02:57,684 --> 01:03:12,543
+Daha önce de söylemiştik. Layout tarafındaki attribute'un source code tarafındaki değişken ile ilişkilendirilmesini sağlayan aslında metot. Bunu artık daha sık kullanmaya başlayacaksınız.
+
+262
+01:03:13,364 --> 01:03:21,903
+Gelelim common layoutlar neler var? Linear layout var, relative layout var, webview var. Bunları sayısını arttırabilirsiniz.
+
+263
+01:03:21,903 --> 01:03:28,824
+Ama temel farklılıkları bir tanesinde relative layoutta bağlı olmuş olduğu.
+
+264
+01:03:30,132 --> 01:03:37,192
+Kendini konumlandırmak için seçmiş olduğu objeye göre yerleşim planı gerçekleşiyor.
+
+265
+01:03:37,711 --> 01:03:45,731
+Linear layoutta ise dikey ve yatayda alanı belirli parçalara bölerek konumlandırma yapıyorsunuz.
+
+266
+01:03:45,731 --> 01:03:56,791
+WebView'da ise daha çok bir web içeriğinin görselleştirilmesi noktasında bir yapıdan faydalanma imkanınız.
+
+267
+01:03:57,235 --> 01:03:58,655
+Mevcut oluyor.
+
+268
+01:04:00,076 --> 01:04:20,135
+Öte yandan, tabii önemli noktalardan bir tanesi de bu layoutlar sadece UI komponentleri değil, aynı zamanda belirli tipteki verileri ya da karışık tipteki verileri
+
+269
+01:04:20,559 --> 01:04:37,079
+Bir den fazla tekrar eden ya da sayısı çok olan verileri bir bütün halinde göstermek için kullandığımız yapılar var. Bunlardan bir tanesi ListView, en basit olanı. Bunun dışında GridView var, RecyclerView var.
+
+270
+01:04:37,079 --> 01:04:48,559
+Buradaki temel amaç, liste şeklinde size sağlanan bir veri tabanındaki ya da dosyadaki bilgilerin ekranda paylaşılması.
+
+271
+01:04:48,559 --> 01:05:07,059
+Bu mesela X tane duyuru olabilir, Y tane resim olabilir, Z tane video olabilir, işte bazen ne diyelim ilgili bir anket yapılacak, anketteki seçenekler olabilir.
+
+272
+01:05:15,155 --> 01:05:17,556
+Görsel hale dönüştürüyoruz.
+
+273
+01:05:18,155 --> 01:05:24,675
+Burada basit olarak ListView'a ait olan işte bir Array Adapter nasıl oluşturulur?
+
+274
+01:05:24,675 --> 01:05:28,875
+Sonra o Array Adapter ListView ile nasıl bağlanır?
+
+275
+01:05:29,475 --> 01:05:32,475
+Buna ait iki tane kod parçası var.
+
+276
+01:05:33,375 --> 01:05:35,675
+Biraz sonra bunlara daha yakından hem...
+
+277
+01:05:35,860 --> 01:05:40,880
+Android Studio'da bakıyor olacağız. Hem de aralarındaki farkı konuşuyor olacağız.
+
+278
+01:05:40,880 --> 01:05:49,791
+Ama buradaki temel mantık, siz bir bilgi bütününü ekranda göstermek istiyorsanız...
+
+279
+01:05:49,791 --> 01:06:05,791
+Mutlaka source, data source kaynağı ile bir adaptör aracılığıyla ekranda gözükecek olan alanın ilişkisini kurmanız gerekiyor. O yüzden adaptör tanımlaması burada çok kritik. ListView kullandığınızda...
+
+280
+01:06:06,320 --> 01:06:15,980
+Bu adaptör hazır halde size sunulabiliyor. Buradaki haliyle basit bir şekilde. Örneğin sadece şehirleri listeleyeceksiniz, ülkeleri listeleyeceksiniz diyelim.
+
+281
+01:06:15,980 --> 01:06:27,980
+O zaman buradaki kadar basit 3-4 satır kod ile ilgili bilgilerin ekranda görüntülenmesini sağlayabiliyorsunuz.
+
+282
+01:06:28,039 --> 01:06:33,500
+Ama tabii genelde içerikler bu kadar tek düze değiller.
+
+283
+01:06:34,063 --> 01:06:50,543
+Resim, o resme ait olarak bir tarih, o resmin açıklaması ya da kontak bilgilerinde kişinin görseli, telefon numarası, adı soyadı biraz daha özelleşmiş itemlara ihtiyaç duyuyorsunuz.
+
+284
+01:06:50,543 --> 01:06:57,543
+O zaman bir dekorasyon ihtiyacı oluşuyor ve sayı büyüdükçe...
+
+285
+01:06:58,164 --> 01:07:08,464
+Gösterme potansiyeliniz olan listedeki elemanların o zaman hem bu basit yapı yetersiz kalmaya başlıyor hem de performans sorunları ortaya çıkıyor.
+
+286
+01:07:09,284 --> 01:07:18,164
+O yüzden buradaki bahsettiğimiz list view yapısı yerini birazcık RecyclerView yapısına bırakmaya başlıyor.
+
+287
+01:07:22,480 --> 01:07:41,500
+Yarattıktan sonra o adaptörü set etmeniz gerekiyor. Bu sayede siz sizin ön plandaki görsel alanında göstereceğiniz view holder diyoruz yapıyla arka plandaki data source'unuzu aslında ilişkilendirmiş oluyorsunuz.
+
+288
+01:07:47,215 --> 01:07:51,536
+Yapı daha var. Burada Simple Cursor Adapter olarak adlandırılıyor bu yapı.
+
+289
+01:07:52,096 --> 01:07:55,655
+Yine aynı mantık, biraz önceki yapıyla benzer bir mantık.
+
+290
+01:07:55,655 --> 01:07:58,655
+Bir tane adaptör tanımlıyorsunuz.
+
+291
+01:07:58,735 --> 01:08:08,536
+Kontak bilgilerini, almış olduğunuz kontak bilgilerini ekranda gösterebilmek için ilişkilendirmeyi yapıyorsunuz ListView'la.
+
+292
+01:08:08,695 --> 01:08:11,815
+ListView Set Adapter'a ilgili adaptör.
+
+293
+01:08:13,652 --> 01:08:33,712
+Aslında bağlıyorsunuz. Bu adaptörün içerisine de hangi bilgileri alacaksanız ki burada bir string dizisinden bir de integer dizisinden bilgiler geliyor. O bilgileri ilgili kaynaklarından çekip list view tarafına konumlandırıyorsunuz.
+
+294
+01:08:34,015 --> 01:08:53,636
+Buradaki yapılan iş bu. Ek olarak ListView tarafında onItemClickListener var. Yani herhangi listedeki bir item'a tıklandığında üzerine ne yapılmasını bekliyorsanız buraya o kod parçasını ekleyerek set onItemClickListener'ı
+
+295
+01:08:54,515 --> 01:09:07,715
+Aktif hale getiriyorsunuz ve bundan sonra listeye giren biri listede gezinirken herhangi bir item'a tıkladığında buradaki onItem ClickClick kısmındaki kod parçası çalışıyor ve bu işler gerçekleştiriliyor.
+
+296
+01:09:14,676 --> 01:09:26,516
+Şimdi tabii bu gördüğünüz iki ekranda yer alan itemlar RecyclerView aracılığıyla oluşturulmuş itemlar.
+
+297
+01:09:26,516 --> 01:09:41,176
+Bir tarafta işte CardView görselleştirme noktasında kullanılırken diğer tarafta daha basit bir yapı kullanılıp işte
+
+298
+01:09:41,971 --> 01:09:58,231
+Oluşturulan XML o item için layout formatı her bir item için aynısı inflate edilerek yani her yeni bilgi geldiğinde o item formatındaki bilgiler ekrana konumlandırılarak liste oluşturulmuş.
+
+299
+01:09:58,231 --> 01:10:01,391
+Sol tarafta, sağ tarafta ise bir tane CarView yapısı var.
+
+300
+01:10:01,492 --> 01:10:04,231
+Peki bu RecyclerView...
+
+301
+01:10:05,043 --> 01:10:11,384
+Niye bu kadar ListView'un önünde? Bir ona bakalım farklılıkları neler, bir onları değerlendirelim.
+
+302
+01:10:11,923 --> 01:10:26,163
+Şimdi ListView'da siz bilgileri saklarken 100 tane de eleman varsa, 1000 tane de eleman varsa o elemanların her biri için birer item.
+
+303
+01:10:26,644 --> 01:10:33,404
+alanı oluşturmanız, objesi oluşturmanız ve buna memori de yer vermeniz gerekiyor.
+
+304
+01:10:34,144 --> 01:10:36,324
+Tekrar kullanılabilirlik söz konusu değil.
+
+305
+01:10:36,324 --> 01:10:38,324
+O yüzden...
+
+306
+01:10:38,644 --> 01:10:55,064
+Liste ilk oluşturulurken item sayısı da büyükse burada performans sorunları oluşmaya başlıyor ve scroll ettiğiniz zaman bu itemların kesintisiz bir şekilde akmasında problemler yaşanıyor.
+
+307
+01:10:55,064 --> 01:11:01,644
+Eskiden tabii bu sıkıntılar daha büyük çaplıydı. Sonra bazı iyileştirilmelerle işte basit.
+
+308
+01:11:02,032 --> 01:11:22,652
+Yapıdaki verileri hala böyle kurgulayabiliyorsunuz. Bunda sorun yok. Ama verinin içeriği büyüdükçe o zaman cihazınıza bağlı olarak tabii ki cihazınızın kaynaklarına bu scroll işlemlerinde ya da o ekrandaki yapacağınız işlerde sorunlar daha büyük ya da daha küçük olabiliyor.
+
+309
+01:11:30,032 --> 01:11:40,332
+Daha önce yarattığınız ama artık ekranda gözükmeyen itemların yeniden kullanılabilmesine olanak tanıyor.
+
+310
+01:11:40,332 --> 01:11:55,412
+Böylece bin tane item yaratmak yerine işte ekranda yirmi tane item gözüküyorsa daha sonra gelebilecek olan itemların bir kısmı hazır tutulmak koşuluyla henüz scroll etmedikleriniz zaten oluşturulmuyor.
+
+311
+01:11:55,743 --> 01:12:08,724
+Score ettikçe mevcut itemlara ihtiyaç olarak yeni itemlar eklenmekle birlikte eski itemların alanları da kullanılmak üzere bir yapı oluşturulmuş.
+
+312
+01:12:13,652 --> 01:12:19,692
+Bir elemana sahip olan bir yapıyı implemente ederken önemli bir avantaj sağlıyor.
+
+313
+01:12:20,412 --> 01:12:25,332
+Ve kaynak optimizasyon noktasında müthiş bir avantaj sağlıyor.
+
+314
+01:12:25,432 --> 01:12:26,672
+Sadece farkı bu değil tabii.
+
+315
+01:12:27,492 --> 01:12:31,092
+View Holder pattern'inin kullanılması RecyclerView'da zorunlu.
+
+316
+01:12:31,212 --> 01:12:32,391
+ListView'da bir opsiyon.
+
+317
+01:12:32,391 --> 01:12:36,391
+Bu View Holder pattern'i size...
+
+318
+01:12:37,747 --> 01:12:41,747
+Burada bahsetmiş olduğumuz performans...
+
+319
+01:12:42,868 --> 01:12:53,788
+Bu problemlerini minimize eden yapılardan bir tanesi. Bu View Holder'ları tanımlayarak bu tekrar kullanılabilirliği aslında mümkün hale getiriyorsunuz.
+
+320
+01:12:54,488 --> 01:13:08,007
+Birden fazla layout manager'a sahipsiniz. RecyclerView'da, ListView'da sadece dikey yönde bunu yapabiliyorken, RecyclerView'da yatay yönde ve istediğiniz formatta
+
+321
+01:13:10,036 --> 01:13:12,855
+Elemanları konumlandırabiliyorsunuz.
+
+322
+01:13:13,956 --> 01:13:21,236
+OnItem ClickListener vardı. Burada RecyclerView'da OnItem TouchListener var.
+
+323
+01:13:21,796 --> 01:13:28,756
+ItemDecoration daha esnek ve daha çeşitli RecyclerView'da.
+
+324
+01:13:32,884 --> 01:13:42,671
+Çok modifiye edilen bir yapı yok. Item Animator ise ListView'da hiç yok. RecyclerView'da animasyonla itemlarınızın aksiyon...
+
+325
+01:13:42,671 --> 01:14:10,631
+Görselleştirebiliyorsunuz. Bu da önemli bir avantaj da alıyor. Günün sonunda basit veriler için, büyük olmayan veriler için ve hızlıca implementasyon için ListView güzel bir seçenek. Hani hiçbir zaman kullanılmıyor diyemeyiz. Ama kompleks ve daha güzel görseller için mutlaka RecyclerView yapısı performans etkisinden de düşünüldüğünde daha avantajlı.
+
+326
+01:14:10,671 --> 01:14:12,051
+hale geliyor.
+
+327
+01:14:18,868 --> 01:14:19,660
+Eeeh...
+
+328
+01:14:20,020 --> 01:14:25,079
+Burada biraz önce anlattıklarımın kısa halleri yer alıyor.
+
+329
+01:14:25,079 --> 01:14:33,820
+İşte ListView'un daha geliştirilmiş bir hale olduğu RecyclerView'un söyleniyor.
+
+330
+01:14:34,260 --> 01:14:39,300
+Farklı layout menajerleri desteklediğini yine burada görüyoruz.
+
+331
+01:14:39,960 --> 01:14:45,340
+Onun dışında ViewHolder objesinin kullanımını zorunlu tutuyor RecyclerView yapısı.
+
+332
+01:14:48,020 --> 01:14:54,240
+Older objeleri de adaptörler tarafından RecyclerView Adapter Extend edilerek yönetilebiliyor.
+
+333
+01:14:55,420 --> 01:15:06,240
+Karşılaştırmalarına gelecek olursak kısaca, ListView kolay implement edilen ve OnItemClickListener kullanarak çalıştırılan...
+
+334
+01:15:06,804 --> 01:15:21,844
+Ve onItem Click List sınırında çok basit bir mantığı var. O yüzden tercih ediliyor çoğu yerde basit bir veri grubu göstereceksiniz. Ama işte liste büyüdükçe performansı düşüyor.
+
+335
+01:15:24,148 --> 01:15:47,188
+Tabii, ViewHolder pattern'ini ListView tarafında kullanmak biraz daha karmaşık. O yüzden genelde insanlar bunu tercih etmiyorlar. O zaman da ViewHolder pattern'ini kullanmayınca da performans düşüyor ve sadece dikey listeler oluşturabiliyorsunuz. RecyclerView tarafına geldiğinizde animasyonlar konusunda, dekorasyon konusunda ListView'un çok ötesinde bir yapı görüyorsunuz.
+
+336
+01:15:49,908 --> 01:16:11,028
+Çok daha yüksek bir performans. Hatta işte set has fixed size dediğimiz yapıyı yeni elemanlar eklenmeyecekse yani dinamik bir eleman grubu seçmiyorsanız bunu her seferinde fixed bir size'a bağlarsanız performans kazancınız daha da artıyor.
+
+337
+01:16:11,028 --> 01:16:16,068
+Bu source kaynağınıza bağlı. Bazı kaynaklarda işte
+
+338
+01:16:16,659 --> 01:16:27,659
+Kaynak sürekli değişiyorsa ve sıklıkla bunu güncellemeniz gerekiyorsa, boyutun değişmesi gerekiyorsa o zaman set has fixed size'ı konumlandıramıyorsunuz.
+
+339
+01:16:28,619 --> 01:16:30,659
+Ona o zaman true özelliği set edemiyorsunuz.
+
+340
+01:16:31,503 --> 01:16:41,423
+Yine buna rağmen performans yüksek olsa da en iyi performansı, boyutu tabii çok değişmeyen listelerde aldığını söyleyebiliriz.
+
+341
+01:16:42,043 --> 01:16:45,604
+Geliştirmesi biraz daha zahmetli, biraz daha fazla kodu yazmanız gerekiyor.
+
+342
+01:16:47,184 --> 01:16:54,524
+OnItem Click Listener'ın özelliğini burada OnItem Touch Listener ile yapıyorsunuz ama biraz daha karmaşık bir yapıdan bahsediyoruz.
+
+343
+01:16:58,996 --> 01:16:59,416
+Şimdi,
+
+344
+01:17:03,252 --> 01:17:08,231
+Bu RecyclerView'u implement ederken nelere dikkat etmemiz gerekiyor?
+
+345
+01:17:08,231 --> 01:17:19,148
+Bir examen tarafı var, bir RecyclerView, layout yapısını.
+
+346
+01:17:19,252 --> 01:17:42,252
+XML dosyanızın içerisinde mutlaka tanımlamanız gerekiyor. Yani o aktivite için bir RecyclerView'a denk gelecek bir layoutun konumlandırılması gerekiyor. Bu resource tarafı. Source tarafına geldiğimiz zaman, burada RecyclerView'ları tanımlıyorsunuz, adaptörünüzü tanımlıyorsunuz. Arkasından bir RecyclerView...
+
+347
+01:17:43,091 --> 01:18:02,492
+Yapısını layout tarafındaki RecyclerView ile yine eşleştiriyorsunuz FindViewById ile. Nasıl buton, image view vs. bunu daha önce yapıyorduk. Aynı şey RecyclerView için de geçerli. O da bir UI komponent olduğu için bu ilişkiyi FindViewById ile kurmanız gerekiyor.
+
+348
+01:18:07,583 --> 01:18:16,423
+Özellikle Set Has Fixed Size'ı True yapabilirsiniz ama bu tamamen içeriğinize bağlı. Değişken bir içerikte bunu yapmak doğru değil.
+
+349
+01:18:16,423 --> 01:18:30,083
+Bir layout manager tanımlıyorsunuz. Bu layout manageriniz aslında RecyclerView'nuzdaki itemlerin nasıl konumlanacağı noktasında belirleyici oluyor.
+
+350
+01:18:30,739 --> 01:18:46,940
+Daha sonra yazacağınız bir adaptör kod var. Biraz sonra ona bakacağız. Bu adaptör koddan bir instance yaratıyorsunuz. Bu adaptörünüzde mutlaka source kodu pastıyorsunuz.
+
+351
+01:18:46,940 --> 01:18:51,960
+Source data'yı pastıyorsunuz. Burada MyDataSet.
+
+352
+01:18:52,368 --> 01:18:57,628
+Ve RecyclerView set adapter diyerek adaptörle eşleştirme işlemini yapıyorsunuz.
+
+353
+01:18:57,708 --> 01:19:01,347
+Bu aktivite tarafı. Daha adaptör kısmını görmedik.
+
+354
+01:19:01,507 --> 01:19:11,688
+Aslında bu kadar kısa bir ilişkilendirme ile bir RecyclerView şu anda eşleştirdiniz ve ilgili aktiviteye konumlandırdınız.
+
+355
+01:19:14,188 --> 01:19:17,847
+Peki gelelim asıl.
+
+356
+01:19:18,355 --> 01:19:28,495
+Adaptör kısmına, sizin bir önceki slide'da kullandığınız bir MyAdapter isimli bir adaptörünüz var. Bunu siz yarattınız. Bir kez daha görelim.
+
+357
+01:19:28,916 --> 01:19:53,916
+Şurada bir MyAdapter yarattınız. Buraya da veri setini pastladınız. Bu MyAdapter'ın aslında kodunun yazılması gerekiyor sizin tarafınızdan. Bu adaptörü yazmadan bu işi yapmanız mümkün değil. Bunun için RecyclerView Adapter'ı extend ediyorsunuz. Bir ViewHolder pastlıyorsunuz. Bu ViewHolder için öncelikle bir...
+
+358
+01:19:55,123 --> 01:20:19,123
+Alanda, yani ekranda neler gözükecek onu planlamanız gerekiyor. Bunun için bir TextView kullanılmış. Burada bir tane TextView'dan bahsediliyor. Yani sadece şehirlerin listesi olacak diyelim. O TextView'da şehir ismi yer alacak. Başka bir şey konmamış. Biraz sonra farklı bir örnekte ViewHolder'ı oluştururken yani item'ın...
+
+359
+01:20:19,475 --> 01:20:25,796
+İçerisinde hangi bilgiler nasıl konumlanacak onları daha detaylı bir şekilde görüyor olacağız.
+
+360
+01:20:26,615 --> 01:20:36,675
+Buraya aktarılan bir MyDataSet var. Adaptörünüzde mutlaka gelecek olan SourceData'nın bilgilerinin aktarılması gerekiyor.
+
+361
+01:20:36,675 --> 01:20:38,255
+Burada bir String dizisi geliyor.
+
+362
+01:20:38,804 --> 01:20:48,144
+Bu basit list view tadında bir RecyclerView ama çok daha komplekslerini yazıyor olacaksınız.
+
+363
+01:20:49,043 --> 01:20:59,604
+Bu noktadan sonra, ikisinin de konstruktörü oluştuktan sonra onCreateViewHolder metodunu yazmanız gerekiyor.
+
+364
+01:20:59,604 --> 01:21:03,484
+Ve onCreateViewHolder'ın yaptığı iş şu.
+
+365
+01:21:04,595 --> 01:21:14,615
+Her bir item için layout inflator kullanarak bir view holder oluşturulmasını sağlamak.
+
+366
+01:21:14,695 --> 01:21:27,835
+Yani her bir itemın aslında görsel olarak memorideki alanına yerleşmesini ve konumlanmasını sağlamak.
+
+367
+01:21:28,500 --> 01:21:51,940
+Henüz datayı burada basmıyoruz içine. Sadece o item hangi formda yer alacaksa, yani bir yerde bir resim, yanında bir isim yer alacaksa, o ilgili item egzemelinden eleman geldikçe inflate edilmesini, türetilmesini sağlıyoruz ve bu yapıyı oluşturuyoruz.
+
+368
+01:21:54,479 --> 01:22:03,199
+Oluşturduğumuz ViewHolder'ların içerisine Source Datadan gelen bilgiyi paslıyoruz.
+
+369
+01:22:03,979 --> 01:22:07,519
+Burada holder'ın içinde bir tane TextView tanımlamıştık hatırlıyorsanız.
+
+370
+01:22:07,519 --> 01:22:14,199
+Sadece bir isim bilgisi tutuyoruz demiştik. O da bir şehir listesi olsun ya da ülke listesi olsun.
+
+371
+01:22:20,467 --> 01:22:32,307
+O anda kaçıncı itemdaysak, Source Data'daki o pozisyondaki veriyi alıp ilgili holder'ın içine basıyoruz.
+
+372
+01:22:32,307 --> 01:22:36,387
+Yani işte part sırasına göre ise Source Data'nız.
+
+373
+01:22:36,768 --> 01:22:52,307
+Adana ile başlıyorsunuz A harfiyle. Sırayla arka arkaya hangi pozisyona geliyorsa birinci ayetima işte Adana geliyor. Ondan sonra ikinciye Adıyaman geliyor. Üçüncüye Afyon geliyor gibi düşünebilirsiniz.
+
+374
+01:23:01,844 --> 01:23:17,764
+Metotlar her bir item için çalışıyor. İlk başta bir layout oluşturuluyor. Sonra OnBindViewHolder ile onun içine data basılıyor. Bir de mutlaka unutulmaması gereken adaptörümüz de.
+
+375
+01:23:19,412 --> 01:23:42,172
+Data source'unuzun uzunluğunu döndüren bir GetItemCount ismi değişmeyen, Fix ismi olan bir metot var. Burada da mutlaka elinizdeki veri kaynağının boyutunu almasını mümkün kılacağınız bu metodu yazmanız bekleniyor size.
+
+376
+01:23:48,180 --> 01:24:15,180
+Şimdi burada bir başka adaptör daha var. Bu ekranda yazılmış olan. Yine bir custom adaptör. RecyclerView adaptörden extended edilmiş bir adaptör. Yine bir string dizisi var. Lokal dataset'iniz var. Tek bir textview var. Tanımlanmış. Bu textview, viewholder'ın içerisinde...
+
+377
+01:24:15,456 --> 01:24:28,275
+Layout'taki TextView ile ilişkilendiriliyor ve daha sonra bunun ekrandaki karşılığının alıp gösterilmesi için ayrıca bir tane GetTextView metodu yazılmış.
+
+378
+01:24:28,996 --> 01:24:35,695
+Custom Adapter Constructor'ına dataset'i pas ediyorsunuz, string dizisini burada.
+
+379
+01:24:42,836 --> 01:24:58,896
+Biraz önce gördüğünüz örnekte olduğu gibi, önce CreateViewHolder'da inflate ediyorsunuz ki buradaki kritik nokta, nokta inflate dedikten sonra ilk aktardığınız parametre r.layout.textRowItem.
+
+380
+01:25:10,131 --> 01:25:17,252
+Bazında nasıl ekranda gözükeceğini belirlediğiniz XML dosyasının ismi.
+
+381
+01:25:18,191 --> 01:25:31,131
+Mutlaka o yüzden RecyclerView'un içerisinde yer alan elemanların aynı tipte gösterilmesi için mutlaka en az bir tane XML...
+
+382
+01:25:34,228 --> 01:25:47,448
+Diyelim, dosyası formatında bir tanımlama yapmanız sizden bekleniyor. Böylece item'ın üzerine kaç tane bilgi yükleyecekseniz ki, bu biraz önce söylediğim gibi resim.
+
+383
+01:25:47,956 --> 01:25:52,515
+İşte atuz hayatı, telefon numarası, tarih gibi birden fazla olabilir.
+
+384
+01:25:53,256 --> 01:26:02,275
+Bu itemdaki bilgilerin nasıl gözükmesi gerektiğini ekranda buradaki TextDraw Item examenliğiyle set etmiş oluyorsunuz.
+
+385
+01:26:03,136 --> 01:26:10,336
+Sonra da buraya bilgiyi Online View Holder üzerinden yüklemiş oluyorsunuz.
+
+386
+01:26:11,028 --> 01:26:15,228
+Burada da Card Base layout'ı görüyorsunuz.
+
+387
+01:26:15,228 --> 01:26:28,847
+İşte biraz daha görselin de daha iyi konumlandırıldığı yeni nesil uygulamaların daha çok tercih ettiği bir layout formatı.
+
+388
+01:26:37,171 --> 01:26:43,791
+Burada bahsetmiş olduğumuz ana aktivitenin layout'unun içerisine konumlandırmanız gerekiyor.
+
+389
+01:26:43,871 --> 01:26:49,571
+Onun içerisine de koyacağınız başka ekstra bir şey varsa o bilgileri de buraya ekliyorsunuz.
+
+390
+01:26:51,231 --> 01:26:52,631
+Buraya kadar sorusu olan var mı?
+
+391
+01:27:02,452 --> 01:27:06,452
+O zaman bu noktada biraz,
+
+392
+01:27:07,452 --> 01:27:10,452
+Kotlin açısından da,
+
+393
+01:27:15,283 --> 01:27:30,264
+Size bir şeyler gösterebilmek adına şöyle bir şey yapalım. Öncelikle şu ekranı bir paylaşalım. Hatta şunu yapayım daha önce.
+
+394
+01:27:42,836 --> 01:27:43,996
+Steğe o screener.
+
+395
+01:27:52,051 --> 01:27:55,371
+Sanırım telefondaki ekranı görebiliyorsunuzdur.
+
+396
+01:27:57,331 --> 01:27:59,871
+Login dediğim zaman bir liste geldi.
+
+397
+01:27:59,871 --> 01:28:06,871
+Bu bir list view ile oluşturulmuş çeşitli...
+
+398
+01:28:08,372 --> 01:28:14,352
+Kullanılan platformlar ya da programlama dillerinin yer almış olduğu bir liste geliyor.
+
+399
+01:28:14,512 --> 01:28:16,372
+İşte bir anket yapıldığını düşünün.
+
+400
+01:28:16,432 --> 01:28:22,672
+İçerisinden birine tıkladığınızda alt tarafta Toast mesajıyla tıkladığınız itemin ismini görüyorsunuz.
+
+401
+01:28:22,932 --> 01:28:26,392
+Bu kadar aslında basit bir ekran tasarımından bahsediyoruz.
+
+402
+01:28:26,392 --> 01:28:33,392
+Peki buradaki bu yapmış olduğumuz şu anda ekranda gözüken uygulamanın kodu nasıl?
+
+403
+01:28:33,972 --> 01:28:35,432
+Bir ona bakalım isterseniz.
+
+404
+01:28:43,380 --> 01:28:45,760
+Sanırım şu an ekranda görebiliyorsunuz diyelim.
+
+405
+01:28:45,760 --> 01:28:59,939
+Bizim login ekranımız, geçen hafta kodunu yazmıştık ve buradan ilgili şurada görmüş olduğunuz logine bastığımızda eğer admin, admin girilirse ilgili diğer aktivite çağıracaktı.
+
+406
+01:29:00,000 --> 01:29:07,420
+Burada da List of Programming Languages, sizin kısaltması olan List of PL kodu çağrılacak.
+
+407
+01:29:07,599 --> 01:29:10,399
+Bu kod, nasıl bir kod isterseniz ona bakalım.
+
+408
+01:29:10,868 --> 01:29:35,068
+Burada bir tane ListView var, bir tane TextView var, bir de ListItemler var. Öncelikle bu aktiviteye ait bir tane XML dosyası var. O da şurada konumlanıyor, onu da açalım. Bunun içerisinde sadece yapılan bir tane ListView tanımlamak.
+
+409
+01:29:35,507 --> 01:29:45,567
+RecyclerView tanımlamadık. Burada sadece bir ListView var ve burada yer alan itemlerin ekranda bir liste şeklinde gösterilmesini istiyoruz.
+
+410
+01:30:01,235 --> 01:30:14,395
+Diyelim ki başka bir isim verelim farklı olsun diye. ListView, Source Code'un selecisi olsun. Bunu da selecine diyelim ki aradaki farklılıkta.
+
+411
+01:30:15,636 --> 01:30:22,796
+Belli olsun. Bu taraftaki ListView, layout tarafındaki komponent, UI komponentini teslim ediyor.
+
+412
+01:30:22,916 --> 01:30:29,956
+Buradaki ListView, Sece ise artık Source kodun içerisinde temsili olarak o komponenti temsil ediyor.
+
+413
+01:30:30,056 --> 01:30:30,936
+Gelelim şu kısma.
+
+414
+01:30:32,456 --> 01:30:37,896
+Şimdi getResources, getStringArray, r.aray.aray teknoloji.
+
+415
+01:30:37,896 --> 01:30:38,796
+Bu ne yapıyor olabilir?
+
+416
+01:30:57,747 --> 01:31:03,947
+Evet. Arkadaşlar, tekrar soruyorum. Hatta şöyle büyütelim istiyorsanız.
+
+417
+01:31:10,931 --> 01:31:12,072
+Burada gördüğünüz
+
+418
+01:31:15,796 --> 01:31:18,475
+Şu satır ne yapıyor olanış.
+
+419
+01:31:24,916 --> 01:31:31,655
+Hocam, Research'ın içinde oluşturulmuş String Array'mizi list item olarak atamıyor mu hocam orada?
+
+420
+01:31:32,696 --> 01:31:40,996
+Şimdi bu Get Resources dediğiniz zaman, burada hatırlarsanız projemizin şu kısmında bir Resources kısmı vardı.
+
+421
+01:31:42,376 --> 01:31:46,976
+Şuradan. Şu Resources'un altında Drawgun'lar var, layout'lar var.
+
+422
+01:31:47,572 --> 01:31:52,532
+Bunların altında values kısmı var. Values'ın altında strings, XML vardı.
+
+423
+01:31:53,631 --> 01:32:00,171
+Buradaki tanımlamış olduğunuz string array, işte bizim listemizi oluşturan içeriğin bulunduğu yer.
+
+424
+01:32:01,391 --> 01:32:02,911
+Yaptığı şey şu.
+
+425
+01:32:05,939 --> 01:32:09,880
+Buradaki getStringArray dediği için söylüyorum.
+
+426
+01:32:10,019 --> 01:32:21,119
+StringExaml'e git, orada tanımlı olan Array teknoloji isimli StringArray'daki bilgileri al ve buradaki String dizisi olarak tanımlanan list item'a ata demek.
+
+427
+01:32:21,699 --> 01:32:30,139
+Yani aslında bizim source, data source'umuz, veri kaynağımız tamamen StringExaml içerisindeki StringArray içerisinden geliyor.
+
+428
+01:32:30,260 --> 01:32:32,220
+Buradaki bilgi içerisinden geliyor.
+
+429
+01:32:33,171 --> 01:32:47,271
+Bu ileride bir dosyadan gelebilir, kullanıcının ekrana girdiği bir bilgi olabilir, network üzerinden gelebilir, database üzerinden gelebilir, gelebilir. Çok çeşitli.
+
+430
+01:32:50,291 --> 01:32:52,571
+Sonra ne oluyor? İsterseniz bir ona bakalım.
+
+431
+01:32:54,951 --> 01:32:56,091
+Şimdi sonra şu oluyor.
+
+432
+01:32:56,627 --> 01:33:07,047
+Bir tane array adaptör tanımlıyoruz. Bu adaptöre ihtiyacımız var çünkü source kaynağıyla ekrandaki bilgiyi konumlandıracağız.
+
+433
+01:33:07,047 --> 01:33:10,087
+Bir tane array adaptör tanımlıyoruz.
+
+434
+01:33:15,412 --> 01:33:21,931
+Hangi layout tipinde ekranda gözükmesini istediğimizi yazıyoruz. Bu hazır bir format.
+
+435
+01:33:22,572 --> 01:33:32,112
+Simple List Item alt çizgi 1 bizim tanımlamadığımız, item için özel bir egzemen oluşturmadığımız sistemde var olan hazır bir format.
+
+436
+01:33:32,112 --> 01:33:41,412
+O yüzden kullanım da çok kolay. Yaptığı yegane şey, biraz önce telefon ekranında gördüğünüz formatta itemlerin ekrana yazılmasını sağlamak.
+
+437
+01:33:42,387 --> 01:34:09,148
+Buraya işte hangi bilginin aktarılacağı, source kaynağın ne olduğu bunlar aktarılıyor ve adaptörümüz bu şekilde oluşturuluyor. Sonra yaptığınız şey adaptör isimli ki burada MyAdapter'da diyebilirdiniz. Adaptör isimli oluşturduğunuz adaptörümüzü ilgili list view'a set adapter ile pas etmek.
+
+438
+01:34:10,323 --> 01:34:24,643
+Sonra, SetOnItemClickListener özelliğini de aktif hale getirmek için, OnItemClick metoduna, Adapter.GetItemPosition diyorsunuz.
+
+439
+01:34:25,043 --> 01:34:28,804
+Yani o anda kliklenen item'ın pozisyon bilgisini alıyorsunuz.
+
+440
+01:34:31,967 --> 01:34:37,147
+İlgili değeri, şuradaki value isimli değeri, Toast mesajıyla ekrana yazdırıyorsunuz.
+
+441
+01:34:37,228 --> 01:34:44,967
+Aslında bu kadar basit ve hızlı yapabileceğiniz, hazır kaynaktan aldığınız bir bilgiyi ListView ile ekrana yazdırabiliyorsunuz.
+
+442
+01:34:45,728 --> 01:34:47,188
+Buraya kadar sorusu olan var mı?
+
+443
+01:34:57,684 --> 01:35:08,863
+Peki. O zaman burada bir ara verelim. 15.33 saat, 15.45'e kadar bir ara verelim. Sonra kaldığımız yerden devam edelim.
+
+444
+01:46:23,315 --> 01:46:44,515
+Evet arkadaşlar, yeniden merhaba. Dersimizin son bölümündeyiz, üçüncü bölümündeyiz. Biraz önce ListView ile ilgili bir örnek üzerinde konuşuyorduk. Şimdi RecyclerView ile ilgili bir örnek üzerinde konuşacağız. Sonra sizlerin bunu implemente etmesi için uygulama kısmına geçiyor olacağız.
+
+445
+01:46:49,524 --> 01:47:11,064
+Paylaşsam daha iyi olacak sanırım. Şöyle yapalım. Şunu kapatalım. Bu noktada şu an bir değişikliğe gittim ve Dogin'in bağlandığı RecyclerView'un olduğu bir başka yapıyı çağırıyorum.
+
+446
+01:47:11,064 --> 01:47:16,444
+Başka bir aktivitede. Burada ilk itemda Hello, this is the text-only view type.
+
+447
+01:47:17,108 --> 01:47:22,907
+Yazıyor. İkincisinde bir string var ve bir resim var.
+
+448
+01:47:24,947 --> 01:47:30,087
+İşte üçüncüsünde bir string var ve bir audio butonu var.
+
+449
+01:47:31,488 --> 01:47:33,648
+Ve burada bir audio çalıyor.
+
+450
+01:47:34,447 --> 01:47:38,627
+Dördüncüsünde de yine bir string ve bir resim var.
+
+451
+01:47:39,091 --> 01:47:55,171
+Burada farklı tipteki itemların aynı anda da aynı aktivite içerisinde konumlandırılabileceğini gösteren bir örnek olması açısından bunu tercih ettim. İsterseniz şimdi biraz koda bakalım.
+
+452
+01:47:57,311 --> 01:48:05,171
+Burada neler oluyor? Birincisi buraya loginden geldi. Loginden gelirken bu sefer list model dediğim.
+
+453
+01:48:07,539 --> 01:48:16,159
+Java kodunu çağırıyorum. List model tarafına baktığım zaman da şöyle yapalım, büyütelim.
+
+454
+01:48:18,720 --> 01:48:27,720
+Öncelikle yine list modeli ait bir layout'u ilişkilendiriyorum. Bir toolbar tanımı yapıyorum.
+
+455
+01:48:28,720 --> 01:48:33,180
+Sonra bir array list oluşturuyorum ve array listimin tipi de
+
+456
+01:48:33,300 --> 01:48:42,420
+Benim model olarak belirlediğim bir yapı var. Onunla ilişkilendireceğim. Onu da birazdan göstereceğim size.
+
+457
+01:48:43,119 --> 01:48:50,340
+Ve R listime tek tek o ilgili bilgileri ekliyorum. Nedir?
+
+458
+01:48:51,100 --> 01:48:57,220
+İlki tipi teksti. Buraya text type tipini gönderiyorum ki onu biraz sonra göreceksiniz.
+
+459
+01:48:57,220 --> 01:48:59,420
+Ve text bilgisi.
+
+460
+01:48:59,792 --> 01:49:13,292
+Set ediyorum. İkincisine baktığınızda, ikincisi de Image Type olduğu için ilk başta bir text piece gönderiyorum. Sonra Drawable'ın altına koyduğum VTC isimli Image'ı bas ediyorum.
+
+461
+01:49:14,011 --> 01:49:27,212
+Üçüncüsünde Audio vardı. Bu sefer RAW klasörünün altına resources'larda koyduğum Sound isimli ve biraz önce çalan ses bilgisini.
+
+462
+01:49:27,699 --> 01:49:36,899
+Gönderiyorum. Dördüncü listeye eklediğim itemda da ImageType var yine ve Drawblown'un altındaki Snow isimli resmi gönderiyorum.
+
+463
+01:49:36,980 --> 01:49:50,739
+Yani ben burada Source kaynağımı oluşturdum. Bu Source kaynağımı oluştururken de Resources'ın altına koymuş olduğum aslında ne diyelim kaynaklardan faydalandım.
+
+464
+01:49:51,252 --> 01:50:09,452
+Hem hard kodut bir şekilde gözükmesini istediğim mesajı yazıyorum pas ederken hem de listeye eleman eklerken draw'un altında ya da raw'un altında yer alan resim ya da ses dosyalarından faydalanıyorum.
+
+465
+01:50:09,452 --> 01:50:10,252
+Source.
+
+466
+01:50:10,804 --> 01:50:37,764
+Veri kaynağım, source data oluştuktan sonra diyorum ki benim bir adaptörüm var. Biraz sonra bakacağız. Bu da MultiView Type adaptör olarak isimlendirdim. Bundan bir instance yaratıyorum. Bu instance'a da array listim olan listi pas ediyorum. Sonra Dinear Layout Manager yardımıyla bir tane Dinear Layout yaratıyorum. Dikeyde konumlanmasını istediğimi söylüyorum.
+
+467
+01:50:40,307 --> 01:50:50,068
+Tabii ki doğal olarak RecyclerView kullandığım için layout'un içerisine konumlandırdığım bir RecyclerView objesini, onu da hemen şuradan gösterelim.
+
+468
+01:50:53,619 --> 01:51:03,619
+List modelin altında, şurada unumlandırmış olduğum RecyclerView objesini refer ediyorum.
+
+469
+01:51:05,300 --> 01:51:07,579
+Ve ilişkiyi kurmasını sağlıyorum.
+
+470
+01:51:08,100 --> 01:51:13,359
+SetLayoutManager'a, yani diyorum ki RecyclerView'un DinearLayout'u kullanacak.
+
+471
+01:51:14,300 --> 01:51:16,619
+SetItemAnimator'da herhangi bir...
+
+472
+01:51:17,492 --> 01:51:24,912
+Aksiyon istemiyorum. Default item animatörü kullanacağım diyorum. Bunu tanımlamayabilirsiniz. Bir şey yapmışsanız herhangi bir aksiyon olmayacaktır.
+
+473
+01:51:24,912 --> 01:51:37,931
+Ve en son, en önemlisi adaptörümü RecyclerView ve set ederek source kaynakla görsel ekran arasındaki ilişkiyi kurmuş oluyorum.
+
+474
+01:51:38,899 --> 01:51:48,759
+Bu işleri yaptığım anda aslında teknik olarak şu anda arkada adaptör varsa ve model tanımlandıysa Activity'e tam çalışacak demektir.
+
+475
+01:51:49,279 --> 01:51:53,979
+Ama biz henüz onlara bakmamıştık. Modele bakalım. Model çok basit bir data modeli.
+
+476
+01:51:54,759 --> 01:52:01,539
+İşte Text Type'in tipi 0, Text Type 0 olarak, Image Type 1 olarak, Audio Type de 2 olarak burada.
+
+477
+01:52:03,604 --> 01:52:14,744
+Ne diyelim, hard-coded olarak belirlenmiş ve bir de Constructor'ım var. Model sadece bundan ibaret. Gelen bilgileri alıyor, gelen bilgileri bu yönde kullanıyor.
+
+478
+01:52:16,623 --> 01:52:29,404
+Gelelim daha karmaşık olan TextTypeViewHolder'a. Bu nispeten, biraz önce gördüğünüz yapılara göre biraz daha karmaşık.
+
+479
+01:52:30,003 --> 01:52:48,764
+Şimdi burada daha sonra kullanacağım işte bir Array List'im var. Burada bir işte çalması için bir Media Player'ı refer eden M Player'ım var. Bu kısımlar çok kritik değil. Biraz sonra onları daha net bir şekilde konuşacağız ama önemli olan şey şu.
+
+480
+01:52:49,171 --> 01:53:12,651
+Birincisi TextType ViewHolder diye bir tane ViewHolder tanımlıyorum. Normalde bütün itemlarım aynı tip olsaydı bir tane ViewHolder tanımlayacaktım. Ama bütün itemlarım aynı tip olmadığı için burada her biri için kaç tip varsa o kadar ViewHolder tanımlamam gerekiyor. Bunun ismine de TextType dedim ki bu benim verdiğim isim.
+
+481
+01:53:13,076 --> 01:53:28,336
+Hazır bir isim değil, başka bir isim. MyViewHolder da diyebilirsiniz ama anlaşılsın diye TextTypeViewHolder diyoruz. RecyclerViewHolder'dan türüyor. İçerisinde bir TextType UI komponentiyle bir CardView var.
+
+482
+01:53:41,652 --> 01:53:52,652
+Type isimli, ne diyelim, Attribute'un ilişkilendirilmesini sağlıyor. Aynı şekilde CardiView için de bunu yapıyor.
+
+483
+01:53:53,952 --> 01:53:58,872
+Bu birinci item için ilk gördüğünüz, biraz önce şurada hatırlarsanız şöyle yapalım.
+
+484
+01:53:59,672 --> 01:54:05,231
+Bu ilk yukarıda en tepede gördüğünüz item için oluşturduğu ViewHolder yapısı.
+
+485
+01:54:08,756 --> 01:54:32,395
+Gelelim ikinci View Holder yapısına. Burada TextView ve bu sefer ImageView var. Ve ImageView olduğu için burada, bunun da zaten ImageTypeViewHolder demiştim, Background'daki resmin kullanılmasını istiyorum. Background'daki resim nerede konumlanıyor bir ona bakalım.
+
+486
+01:54:49,492 --> 01:54:55,971
+Özür diliyorum. Bu tabii, ItemView şuradan kaynaklanıyor.
+
+487
+01:54:59,988 --> 01:55:00,988
+Bir saniye.
+
+488
+01:55:03,368 --> 01:55:07,467
+Birden fazla kod parçalarını birleştirdiğim için yanlış bir şey söylemeyeyim size.
+
+489
+01:55:13,395 --> 01:55:24,076
+Her bir, şimdi size daha net bir şekilde söyleyeyim. Her bir ViewHolder'ın kullandığı item view'a. Hepsinin ilişkili olduğu.
+
+490
+01:55:24,876 --> 01:55:29,835
+ImageType ViewHolder'ın kullandığı ImageTypeXML item olarak.
+
+491
+01:55:32,532 --> 01:55:45,032
+Biraz önce buradaki item view'u kullanırken hatırlarsanız card view içeriğini barındıran item'ın olduğu XML dosyasını kullanmıştık.
+
+492
+01:55:45,492 --> 01:55:48,551
+Tekrar dönecek olursanız image type'da image view'u görüyorsunuz.
+
+493
+01:55:51,923 --> 01:55:54,264
+TextView'u görüyorsunuz.
+
+494
+01:55:58,100 --> 01:56:06,600
+Devam edelim. Bir de Audio Type View Holder var. Audio Type View Holder'a baktığınız zaman da Audio Type Exameli açalım.
+
+495
+01:56:09,600 --> 01:56:25,720
+Burada Audio Type Exameli açtığınız zaman isimlendirmeye baktığınızda şurada görmüş olduğunuz ID ismini görüyorsunuz.
+
+496
+01:56:26,100 --> 01:56:29,300
+Ve burada da Type ismini kullandığımızı görüyorsunuz.
+
+497
+01:56:30,160 --> 01:56:33,860
+Aynı şekilde, şurada tekrar açalım.
+
+498
+01:56:39,412 --> 01:56:45,752
+Add artı id fab isimli, burada gördüğünüz diğer komponent var.
+
+499
+01:56:46,272 --> 01:56:52,432
+Burada da, şurada görmüş olduğunuz, r id nokta fab'a refer ediyorsunuz.
+
+500
+01:56:52,432 --> 01:57:03,232
+Bu şu demek, bu view holder'ı oluştururken, audio type XML'i kullanan item'ın dekorasyonu için, yukarıdaki,
+
+501
+01:57:03,796 --> 01:57:07,895
+ImageTypeViewHolder'ı oluştururken ImageTypeExameli kullandı demek.
+
+502
+01:57:07,895 --> 01:57:14,576
+O yüzden ViewHolder'lar için mutlaka bir XML tanımlamanız gerekiyor.
+
+503
+01:57:14,655 --> 01:57:17,796
+ListView'dan farklı olarak. ListView'da bu hazır olarak veriliyordu.
+
+504
+01:57:18,355 --> 01:57:22,515
+Burada bu ViewHolder'ları ilgili itemlarla ilişkilendirmeniz gerekiyor.
+
+505
+01:57:24,655 --> 01:57:25,336
+Burada
+
+506
+01:57:26,131 --> 01:57:29,871
+MultiView Type Adapter ile ilgili olarak Constructor'ımız var.
+
+507
+01:57:30,072 --> 01:57:31,112
+Buraya bilgiler geliyor.
+
+508
+01:57:31,971 --> 01:57:39,032
+Ve şimdi esas View Holder'ları dizayn ettikten sonra bunların yaratılması noktasına geldik.
+
+509
+01:57:39,931 --> 01:57:41,431
+Gelen View Type'a bakıyoruz.
+
+510
+01:57:42,491 --> 01:57:52,211
+Modelin eğer Text Type'ındaysa o zaman diyoruz ki Layout Inflator burada Text Type üzerinden.
+
+511
+01:57:52,979 --> 01:57:57,779
+İlgili View yapısını oluştursun.
+
+512
+01:57:58,359 --> 01:58:01,199
+Image Type geldiyse Image Type üzerinden oluştursun.
+
+513
+01:58:02,339 --> 01:58:04,599
+Audio Type geldiyse Audio Type üzerinden oluştursun.
+
+514
+01:58:04,739 --> 01:58:06,299
+Text Type da burada bu arada.
+
+515
+01:58:07,799 --> 01:58:09,139
+Sadece bir tane Text View var.
+
+516
+01:58:10,619 --> 01:58:11,699
+Bunları kapatalım şimdi.
+
+517
+01:58:14,099 --> 01:58:15,403
+Demek ki...
+
+518
+01:58:15,412 --> 01:58:23,412
+OnCreateViewHolder'da ben istersen birden fazla tipte item inflate edebiliyorum.
+
+519
+01:58:24,271 --> 01:58:28,771
+Eğer aynı tipte inflate etseydim bu switch'e, case'lere hiç gerek olmayacaktı.
+
+520
+01:58:28,771 --> 01:58:40,851
+Sadece buradan hangisini inflate etmek istiyorsam o layouttaki examine file'ını seçecektim ve her item yaratıldığında onu inflate edecekti, yani yaratacaktı.
+
+521
+01:58:43,891 --> 01:58:46,671
+Ve doğal olarak ilgili ViewHolder'da döndürmem gerekiyor.
+
+522
+01:58:47,871 --> 01:58:57,891
+Burada ise GetItemViewType'de ise gelen item'ın pozisyon bilgisi ve onun tipi alınarak ilgili...
+
+523
+01:58:59,220 --> 01:59:11,619
+Modelin hangi tipi oluşturduğunu buradan case0, 1, 2 değerlerinden döndürerek type'ı burada görmüş olduğunuz kısma pass diyoruz.
+
+524
+01:59:11,979 --> 01:59:20,420
+Çünkü burada 0, 1, 2 değeri geliyor. Burada aldığımız şey ise modelin text type olduğu için onunla eşleştirmesini yapıyoruz.
+
+525
+01:59:20,420 --> 01:59:24,180
+Şimdi gelelim onBindViewHolder'a.
+
+526
+01:59:26,068 --> 01:59:34,247
+Model objemize Data Source'umuz üzerinden Get ederek ilgili item'ın pozisyon bilgisini alıyoruz.
+
+527
+01:59:35,287 --> 01:59:42,127
+Ve eleman var olduğu sürece aldığımız item'ın tipine bakıyoruz.
+
+528
+01:59:52,148 --> 02:00:08,467
+ilgili alanını set ediyoruz. Hatırlarsanız, ilk itemimiz sadece text bilgisine sahipti. O yüzden txt type isimli değişkeni set text ile set ettik ve işimiz bitti.
+
+529
+02:00:08,884 --> 02:00:29,844
+Ama ikincisini de birden fazla holderda yaratırken UI komponent yaratmıştık. Bir tanesi image. O yüzden set image resource diyoruz ve ilgili resmi koyuyoruz. Diğeri de oraya yazmak istediğimiz mesajda burada iki tane holdura bilgi aktarmış oluyoruz bind işlemi yaparken.
+
+530
+02:00:31,956 --> 02:00:35,456
+Burada iş tabii biraz daha karmaşık hale geliyor.
+
+531
+02:00:35,596 --> 02:00:42,536
+Çünkü buradaki kritik noktalardan bir tanesi, evet, teksti set ettik, audio type geldiyse.
+
+532
+02:00:44,256 --> 02:00:51,256
+Ama oradaki ilgili, şurada gördüğünüz, şöyle yapalım.
+
+533
+02:00:53,396 --> 02:00:59,436
+Bu Floating Action butonunun tıklandığında müzik çalabilmesi için
+
+534
+02:01:00,340 --> 02:01:03,300
+ilgili kodları yazmamız gerekiyor. O kodlar nedir?
+
+535
+02:01:04,439 --> 02:01:10,739
+İşte set onClickli sınırı çağırıyoruz. OnClick metodunun içerisine işte playing set.
+
+536
+02:01:11,283 --> 02:01:21,603
+Tıklandığında durdur ya da tam tersi start et diyoruz buradaki else kodunda ve ilgili AudioViewHolder'a bir de neyi ekliyoruz?
+
+537
+02:01:21,763 --> 02:01:29,663
+Oradaki görselin görüntülenmesini ekliyoruz ve burada son item'ı da yaratırken buradan çıkıyoruz.
+
+538
+02:01:30,112 --> 02:01:41,132
+Ve unutmamız gereken bir yer daha var. GetItemCount. Mutlaka ne demiştik? Oradaki itemlerin size'ını bize döndürecek olan kısmı yazmamız gerekiyor.
+
+539
+02:01:42,052 --> 02:01:43,552
+Buraya kadar sorusu olan var mı?
+
+540
+02:01:57,492 --> 02:02:06,351
+Peki, o zaman bir durduralım. Şöyle bir ekran paylaşayım sizinle. Şuradan bağlayalım.
+
+541
+02:02:58,963 --> 02:03:00,063
+Görebiliyor musunuz?
+
+542
+02:03:02,663 --> 02:03:03,144
+Özür dilerim.
+
+543
+02:03:04,503 --> 02:03:09,163
+Şimdi mevzularımızla ilgili bir uygulama geliştirelim demiştik.
+
+544
+02:03:10,423 --> 02:03:12,323
+Bir, şunu da çizerek anlatayım.
+
+545
+02:03:13,684 --> 02:03:18,804
+Login ya da sign in ekranımız vardı.
+
+546
+02:03:20,423 --> 02:03:25,083
+Burada işte dizaynınıza bağlı olarak kullanıcı adı ve şifre alıyordunuz.
+
+547
+02:03:25,083 --> 02:03:26,403
+Bir tane butonunuz vardı.
+
+548
+02:03:27,252 --> 02:03:47,032
+Bir tane sign up ki burada bir buton da sign up olabilir demiştik. Buradan buraya kişi kayıtladı ise gelsin. İşte ad vardı, soyad vardı, resim vardı, giriş yılı.
+
+549
+02:03:49,844 --> 02:03:59,504
+Mezun Yılı gibi bazı bilgileri geçen hafta sizlerle paylaşmıştım. Bunları not aldıysanız görebilirsiniz, almalıysanız da videoda bulabilirsiniz.
+
+550
+02:03:59,504 --> 02:04:08,004
+Şimdi bir sonraki adımda sign up olduğu kullanıcı adı ve şifresi belirlendi.
+
+551
+02:04:08,564 --> 02:04:09,844
+Bunu da buraya yazalım tabii.
+
+552
+02:04:11,364 --> 02:04:14,824
+Kullanıcı adı şifre.
+
+553
+02:04:17,652 --> 02:04:40,851
+Siz buradan login olduktan sonra bir tane ekrana geçmeniz ve burada bir resim olan, işte şöyle yazalım, bir tane duyuru ve bir de tarih diyelim buraya.
+
+554
+02:04:47,220 --> 02:04:50,760
+Böyle bir item tasarlamanız sizden bekleniyor.
+
+555
+02:04:52,860 --> 02:04:54,539
+Burası da image olsun.
+
+556
+02:04:56,100 --> 02:04:59,220
+Bunlardan arka arkaya geldiğini düşünün.
+
+557
+02:04:59,300 --> 02:05:02,780
+Doğal olarak bu bir RecyclerView olacak.
+
+558
+02:05:05,460 --> 02:05:08,900
+Ve tabii bu modeli de oluşturmanız gerekiyor.
+
+559
+02:05:09,000 --> 02:05:13,100
+Buradaki hani işte image.
+
+560
+02:05:15,123 --> 02:05:21,304
+Announcement, Head olsun.
+
+561
+02:05:24,144 --> 02:05:25,623
+Announcement, Head.
+
+562
+02:05:30,836 --> 02:05:31,596
+Date olsun.
+
+563
+02:05:35,764 --> 02:05:52,784
+Ve kullanıcı login olduğu zaman mesela ilk başta bu duyuru sayfasına girsin ve burada işte 1, 2, 3, 4, 5, 10 tane duyuru olsun ve duyurular içerisinde scroll edebilsin istiyoruz.
+
+564
+02:05:52,984 --> 02:05:55,684
+İlk yapılmasını beklediğimiz iş bu.
+
+565
+02:05:55,684 --> 02:05:59,684
+Daha önce geçen hafta işte...
+
+566
+02:06:00,243 --> 02:06:13,324
+Kameradan bahsetmiştik, resim eklemekten bahsetmiştik. Onlar da var ama şu an için bugün itibariyle yavaş yavaş başlamanızı istediğim bir diğer kısım bu.
+
+567
+02:06:13,324 --> 02:06:21,324
+Mezun sisteme giriş yaptığı anda bir duyurular ekranı gelecek. Duyurularda bir resim olacak ve resmin...
+
+568
+02:06:22,163 --> 02:06:35,023
+Yanında bir duyuru başlığı, bir de tarih olacak. Sonra işte onItem Touchless'ın üzerinden duyuruya tıklandığında duyurunun detay bilgisini gösteren bir başka sayfaya geçiş yapıyor olacağız.
+
+569
+02:06:35,023 --> 02:06:38,023
+İlk etapta bu modeli oluştururken...
+
+570
+02:06:38,543 --> 02:06:43,704
+Kendi kodunuzda burada Array liste olduğu gibi hard kod bir şekilde bilgileri girebilirsiniz.
+
+571
+02:06:43,704 --> 02:06:51,164
+Sonra bu bilgileri daha sonra işte database üzerinden ya da dosya üzerinden organize ediyor olacağız.
+
+572
+02:06:52,423 --> 02:06:54,583
+Buraya kadar sorusu olan var mı?
+
+573
+02:06:55,667 --> 02:06:57,167
+Hocam ben bir şey sorabilir miyim?
+
+574
+02:06:57,507 --> 02:06:57,747
+Tabii.
+
+575
+02:06:58,228 --> 02:07:06,627
+Şimdi işte sign-in kısmında kullanıcı adı ve şifresini tabii hani biz şimdilik biz belirliyoruz hani admin falan filan.
+
+576
+02:07:07,307 --> 02:07:12,827
+Sign-in, sign-in dediği zaman yanında çıkan işte kullanıcı adı işte kullanıcıdan ne istiyorsak üye olması için.
+
+577
+02:07:13,608 --> 02:07:17,467
+Bundan sonra tekrar hani sign-in'e girdiği zaman orada kayıtlı olması mı gerekiyor?
+
+578
+02:07:17,467 --> 02:07:22,068
+Yani mesela [öğrenci] diye girdi kullanıcı adı şifresini sign-in'de.
+
+579
+02:07:23,667 --> 02:07:27,467
+İstiklere kaydedilecek. Sonra sign-in'de girdiği zaman kabul edilecek. Doğru mu?
+
+580
+02:07:27,487 --> 02:07:27,627
+Tabii.
+
+581
+02:07:29,148 --> 02:07:32,268
+Sonra sign-in'den sonra yanında mezun uygulaması açılacak.
+
+582
+02:07:33,047 --> 02:07:42,635
+Evet, aynen öyle. İlk etapta duyurular gelecek. Bu arada sign-in tarafında sizin...
+
+583
+02:07:43,604 --> 02:07:52,704
+Resim eklemekle ilgili bir aksiyon da yapabilmenizi bekliyor olacağım. Önümüzdeki hafta onunla ilgili bir küçük uygulama göstereceğim.
+
+584
+02:07:52,704 --> 02:08:10,324
+Burada amaçlı olacak, kameranızı açacaksınız, kameranızdan o aktiviteyle görüntünüzü alacaksınız ve o aldığınız görüntüyü buradaki sign-up aracılığıyla sisteme resminizle yüklüyor olacaksınız.
+
+585
+02:08:13,619 --> 02:08:20,059
+Bu yaptığımız bizim yine kendimizin yaptığı bir alıştırma şeklinde mi? Hani yoksa ilk ödev gibi bir şey mi?
+
+586
+02:08:20,920 --> 02:08:28,939
+Valla bunların hepsi ödevinize ya da dönem projenize bir şekilde yaramasını istediğimiz çalışmalar.
+
+587
+02:08:29,679 --> 02:08:36,395
+Ben sizin yerinizde olsam yaparım. Ama tabii ki tercih sizin. Yani bu dersi...
+
+588
+02:08:36,627 --> 02:08:44,555
+Başka türlü öğrenme noktasında hani nereden bakarsanız bakın, implemente etmediğiniz takdirde sadece...
+
+589
+02:08:44,979 --> 02:09:11,039
+Bir noktaya kadar gelirsiniz. İplement ettikçe çünkü çok farklı sorunlarla karşılaşacaksınız. Örneğin sorunlardan bir tanesi bir projeyi import ettiğinizde ya da open ettiğinizde GitHub'tan bulduğunuz o projeyi hemen çalıştıramazsınız. Bununla ilgili mesela sorun yaşarsınız. Çeşitli ayarlamalar yapmanız gerekir. Bazen bu ayarlamalar versiyon uyumsuzlukları nedeniyle başınızı çok ağartabilir. Bunlarla ilgili de deneyim kazanmanız gerekiyor.
+
+590
+02:09:15,891 --> 02:09:27,731
+Evet, şimdi devam edeceğiz. Kodları açacağım. Bu kısmı şimdi kapatıyorum. Şu anda paylaştığım ekranı.
+
+591
+02:09:28,751 --> 02:09:38,271
+Benim için önemli olan sizin kodlarda anlamadığınız bir kısım varsa ya da üzerinden bir kez daha geçmemizi istediğiniz bir şey varsa onları konuşuyor olmak.
+
+592
+02:09:39,188 --> 02:09:40,507
+Hocam bir şey sorabilir miyim?
+
+593
+02:09:40,528 --> 02:09:48,708
+Aynı zamanda da tabii alacağım soruyu, aynı zamanda da yavaş yavaş bu duyuru ekranını tasarlamaya başlamanızı sağlamak.
+
+594
+02:09:49,608 --> 02:09:51,868
+Bir paylaşayım. Evet, alabilirim soruyu.
+
+595
+02:09:52,728 --> 02:09:59,128
+Geçen hafta bu Gradle versiyonları ile ilgili belki teknik anlamda bir şeyler gösterebilirim demiştiniz.
+
+596
+02:09:59,128 --> 02:10:00,347
+Hani bu hatalarla ilgili.
+
+597
+02:10:00,500 --> 02:10:05,600
+Evet, onunla ilgili şöyle küçük bir bilgi vereyim. Oradan başlayalım işinizi kolaylaştırmak adına.
+
+598
+02:10:05,600 --> 02:10:27,840
+Gradle versiyonlarında bir uyumsuzluk yaşadığınız zaman, tabii bunu çözmek için belli Gradle versiyonlarının bilgisayarınıza indirilmesi vs. gerekiyor ama kodu yazan kişinin kullandığı kütüphanelerle sizin mevcutta bir kod yazmak için oluşturduğunuz konfigürasyon uyumlu olmayabiliyor.
+
+599
+02:10:28,307 --> 02:10:50,748
+Bu durumda tavsiyem, ilgili bulduğunuz kodu kendi projenize parçalar halinde Java, yani dosya dosya, kod kod alarak kendi yeni açtığınız temiz proje üzerinde çalıştırmaya özen göstermeniz.
+
+600
+02:10:52,595 --> 02:11:09,575
+Versiyon uyumsuzluklarını gidermek için yapacağınız çabalar bazen çok daha uzun sürebiliyor. O yüzden benim size öyle bir tavsiyem olacak. Mutlaka kendiniz yeni bir proje açarak ilgili kod parçalarından faydalanmaya çalışın.
+
+601
+02:11:10,775 --> 02:11:11,995
+Tamam hocam, teşekkür ederim.
+
+602
+02:11:13,155 --> 02:11:13,735
+Rica ederim.
+
+603
+02:11:15,455 --> 02:11:18,615
+Şimdi şunu şöyle yapalım.
+
+604
+02:11:23,220 --> 02:11:37,399
+Şimdi en önemli kısım adaptör kısmı. Bir kere adaptör kısmını kendi uygulamanızda gerekli olan itemler için oluşturduğunuzda çok çok rahat ediyorsunuz.
+
+605
+02:11:37,399 --> 02:11:40,880
+Bence oradan başlamak akıllıca olacaktır diye düşünüyorum.
+
+606
+02:12:01,587 --> 02:12:28,728
+Tekrar ediyorum. Bir ViewHolder objesine ihtiyaç duyuyorsunuz adaptör oluştururken. Bu ViewHolder objesi genelde aynı tipte itemler kullanacaksanız tek bir tipte oluşturmanız yeterli. Buradaki örnekte olduğu gibi birden fazla holder'a ihtiyacınız yok. MyViewHolder deyip oluşturabilirsiniz.
+
+607
+02:12:29,460 --> 02:12:35,460
+ViewHolder'ları oluşturduktan sonra Multi View Type Adapter Constructor'ınızı yaratıyorsunuz.
+
+608
+02:12:35,460 --> 02:12:51,460
+Sonra, onCreateViewHolder tarafında ilgili item'ınızın XML tasarımını yaptığınız XML tasarımını kullanarak inflate ediyorsunuz.
+
+609
+02:12:51,460 --> 02:12:54,460
+Burada görmüş olduğunuz şu ifadelerle.
+
+610
+02:12:57,140 --> 02:13:01,560
+Ve bu genelde yine tek tip olunca bir tane oluyor. Buradaki gibi üç tane değil.
+
+611
+02:13:03,980 --> 02:13:21,500
+Ve onBindViewHolder tarafında inflate ettiğiniz view holderların içini ilgili burada almış olduğunuz dataset içerisindeki source code içerisindeki bilgilerle dolduruyorsunuz.
+
+612
+02:13:21,908 --> 02:13:32,068
+Her birini ViewHolder objesinin ilgili gözüne SetText, SetImageResource metotlarıyla konumlandırıyorsunuz.
+
+613
+02:13:37,460 --> 02:13:41,460
+Bir de Data Set'inizin, Data Source'ınızın sayesinde ihtiyaç duyuyorsunuz.
+
+614
+02:14:25,684 --> 02:14:44,784
+İsterseniz bu Type Adapter kodunu sizlerle paylaşayım. List model kodunu da paylaşayım. Buna kullanarak dönüşüm gerçekleştirin. Çünkü geçen haftada birebir çok kısa bir kod yazdığınız için kodu paylaşmak istememiştim ama bunu alıp dönüştürebilirsiniz.
+
+615
+02:14:48,819 --> 02:14:49,800
+İsteyen var mıdır?
+
+616
+02:14:51,940 --> 02:14:52,760
+Olur hocam.
+
+617
+02:14:54,440 --> 02:14:54,699
+Peki.
+
+618
+02:14:57,699 --> 02:14:58,640
+Şöyle yapalım.
+
+619
+02:16:10,131 --> 02:16:22,112
+Evet arkadaşlar, paylaştım sizinle. Bugün üzerinde çalıştığımız RecyclerView yapısı için kullandığımız 3 farklı Java dosyası paylaştım.
+
+620
+02:16:22,112 --> 02:16:33,011
+Bir tanesi adaptörle sorsun ve görselin birleştirildiği aktivite dosyası list model.
+
+621
+02:16:36,468 --> 02:16:48,788
+Dosyası ki bence o çok kritik değil. Bir de kendi adaptörünüzü oluşturmanız gerekir demiştik. O adaptör dosyasını chat üzerinden sizlere gönderdim.
+
+622
+02:17:04,275 --> 02:17:10,916
+Bunu da konuşalım isterseniz. Bu noktada benim görüşüm belli ama sizlerin de görüşünü almak isterim.
+
+623
+02:17:11,515 --> 02:17:22,416
+Dersin son bölümünde bazen yarım saat, bazen 45 dakika, bazen 1 saat sizin konuştuklarımızı implemente etmeye başladığınız bir bölüm olması gerekiyor.
+
+624
+02:17:22,416 --> 02:17:30,416
+Burada da sizden gelecek sorunlara göre ya da konuşmamız gereken...
+
+625
+02:17:31,156 --> 02:17:34,476
+Merak ettiklerinize göre bir zaman dilimi harcıyoruz.
+
+626
+02:17:35,036 --> 02:17:46,216
+Bu noktada siz buna ihtiyaç duyup duymadığınızı paylaşırsanız ona göre zorunlu bir şekilde derse devam etmek gibi bir şeyimiz yok.
+
+627
+02:17:47,396 --> 02:17:50,156
+Hiç kimseye faydalı olmayacaksa dersi sonlandırırız.
+
+628
+02:17:51,156 --> 02:17:56,156
+Ama ben burada özellikle siz kod yazmaya devam ederken yaşayacağınız sorunlar da...
+
+629
+02:17:56,755 --> 02:18:04,855
+Arka planda bekleyip, yeri geldiğinde tekrar soru sormanız için buradayım. O yüzden bu konuda fikri olan varsa, paylaşırsa sevinirim.
+
+630
+02:18:13,172 --> 02:18:30,252
+Hocam, bence bu pratik kısmı daha iyi oluyor. Çünkü teori kısımda tamam, kod görüyoruz, kodun ne yaptığını biliyoruz falan filan ama bunu kendimiz yaptığımız zaman, bir de size soru sorma fırsatımız olunca daha iyi oluyor diye düşünüyorum ben.
+
+631
+02:18:31,028 --> 02:18:34,427
+Tamam, o zaman bir kişi bile olsa benim için yeterli.
+
+632
+02:18:35,288 --> 02:18:42,448
+Ben hani şu anda kodlar da uzun olduğu ve birebir aynısını yapmayacağınız için sizle kodları paylaştım.
+
+633
+02:18:42,528 --> 02:18:48,207
+Her zaman kodları paylaşmayacağım. Bazen yazmanızı isteyeceğim çok uzun olmayan zamanlarda.
+
+634
+02:18:48,207 --> 02:18:57,587
+Bu kodlar sadece sizin bir şeyleri daha iyi anlayabilmeniz için ve dönüşüm yapabilmeniz için verilmiş kodlar.
+
+635
+02:18:59,028 --> 02:19:11,327
+Aslında çok daha basit bir yapı kurmak olacak. Ben daha komplike olan bir kod parçası paylaştım. O yüzden sizin itemlarınızda bir resim, bir başlık ve bir de tarih bilgisi olacak.
+
+636
+02:19:11,528 --> 02:19:24,028
+Bunu benim gösterdiğim gibi konumlandırmak zorunda değilsiniz. Ben biraz önce bazı çizimler yaptım. Siz nasıl uygun görüyorsanız itemların gözükme şeklini burada...
+
+637
+02:19:24,144 --> 02:19:30,524
+Dinear layout da kullanmak zorunda değilsiniz. GridView da kullanabilirsiniz, CartView da kullanabilirsiniz.
+
+638
+02:19:31,203 --> 02:19:47,064
+Buna uygun bir şekilde farklı seçeneklerde açığım. Bu itemlara tıklandığında da o duyuruya ait detay bilginin görüntülendiği bir ekrana geçiş yapılmasını da bekliyor olacağım.
+
+639
+02:19:50,064 --> 02:19:50,743
+Şimdilik.
+
+640
+02:19:51,667 --> 02:19:55,128
+Bu kadar söyleyeceklerim. Siz o zaman çalışmaya devam edin lütfen.
+
+641
+02:20:29,396 --> 02:20:30,976
+Hocam ben bir şey sorabilir miyim?
+
+642
+02:20:32,716 --> 02:20:33,716
+Tabii sorabilirsin.
+
+643
+02:20:35,236 --> 02:20:36,916
+Bence bir de paylaşayım.
+
+644
+02:20:38,916 --> 02:20:42,616
+Yani şu an bir saniye şöyle yapacağım.
+
+645
+02:20:48,979 --> 02:20:54,899
+Sanırım istediğim gibi görüntüleyemiyorum. Bir saniye.
+
+646
+02:21:03,219 --> 02:21:27,500
+Şu an görebiliyor musunuz? Evet, görünüyor. Tamam. Şimdi bunu niye gösterdim? Burada üç tane farklı item, hatta dört tane item var. Üç tane farklı tip var. Elinizdeki kodla ilişkilendirebilmeniz için bunu ekranda bırakıyor olacağım. Kodları paylaşmama gerek yok, nasıl olsa sizde. Şimdi soruyu alabilirim.
+
+647
+02:21:28,500 --> 02:21:55,780
+Benim bu mobil uygulamalarda merak ettiğim bir soru. Hani şu anki yaptığımız şeyle alakalı değil de. Mesela işte bir uygulamada Signing ekranı var ve kullanıcı adı şifremizi girdiğimiz zaman uygulama açılana kadar bir yükleme ekranı ya da işte bileyim yükleniyor şeklinde. Hani bu yazdığımız kodun çalışma süresiyle kendi mi uyarlanıyor yoksa biz mi koyuyoruz bu yükleme süresini? Hani daha iyi optimize olması için.
+
+648
+02:21:57,043 --> 02:22:10,144
+Şöyle, ekranda bir görüntü oluşuyorsa, loading gibi ve burada bir progress bar'dan bahsediyorsak, bunu geliştirici koyuyor. Herhangi bir şekilde işletim sistemi koymuyor.
+
+649
+02:22:12,083 --> 02:22:18,484
+Bazen mesela o konmayıp yükleme uzun sürdüğü zamanlar oluyor. Mesela bir sayfa geçişi olacak ya da resimler gelecek.
+
+650
+02:22:23,636 --> 02:22:29,936
+Pardon, bir mesajlaşma olduğu için oraya dikkatim kaydı. Özür diliyorum [öğrenci].
+
+651
+02:22:29,936 --> 02:22:46,015
+Bu noktada genelde uzun sürecek işlerde bir progress bar konulması ve kullanıcının 100 dosya indiriliyorsa mesela dosya indirildikçe o progress barda o değişimi görebilmesi istenir uzun işler için.
+
+652
+02:22:46,451 --> 02:22:58,651
+Ama o geçiş çok uzun değilse ki kısa tutulması önerilir. Genelde bundan kaçınırız. Yani uzun süren açılmada mobil uygulamalar tasarlamaktan kaçınırız.
+
+653
+02:22:59,971 --> 02:23:05,731
+Yani bunu uygulamayı yapan kişi koyuyor değil mi?
+
+654
+02:23:05,791 --> 02:23:13,151
+Evet, uygulamayı yapan kişi arka planda bir loading ya da processing ya da bir şey görüyorsanız onu geniştirici koyuyor.
+
+655
+02:23:13,556 --> 02:23:14,995
+Tamam, sağ olun hocam.
+
+656
+02:23:15,355 --> 02:23:15,636
+Güzel.
+
+657
+02:34:45,940 --> 02:35:08,940
+Evet arkadaşlar, şimdi bu haftaya kadar çok basit kodlar yazmanız sizden bekleniyordu ama bugün itibariyle biraz daha karmaşık yapılara giriş yaptığımız için önümüzdeki hafta dersten önce bana bunları tamamlayıp gönderebilenler olursa...
+
+658
+02:35:09,108 --> 02:35:26,488
+Konuştuklarımızı en azından dersin bir bölümünde onların kodu üzerinden birlikte geçerek faydalı bir çalışma yapabiliriz. Benim tavsiyem o yönde. Siz de kendinizi biraz buna mecbur hissedersiniz geliştirmek için.
+
+659
+02:35:37,556 --> 02:35:43,236
+Resim veya video bilgisinin telefonda kameradan alınabilmesi önemli.
+
+660
+02:35:43,456 --> 02:35:46,615
+Videodan çok resim diyelim.
+
+661
+02:35:47,855 --> 02:35:50,396
+Buna çalışmanızı rica ediyorum.
+
+662
+02:35:52,435 --> 02:35:55,995
+Şimdi başka sorusu olan var mıdır? Tekrar sorayım.
+
+663
+02:36:00,979 --> 02:36:02,380
+Ben bir şey sorabilir miyim?
+
+664
+02:36:02,860 --> 02:36:03,079
+Tabii.
+
+665
+02:36:03,779 --> 02:36:10,700
+Şimdi bu ekranın yukarısında MyApplication, bu bizim uygulamamızın ismi değil mi? Sayfanın ismi değil.
+
+666
+02:36:10,899 --> 02:36:11,779
+Şu an gözüken sayfanın ismi.
+
+667
+02:36:11,779 --> 02:36:14,959
+Bu uygulamanın ismi, string.examl'de yer alan uygulamanın ismi.
+
+668
+02:36:15,700 --> 02:36:17,280
+Tamamdır. Peki.
+
+669
+02:36:17,820 --> 02:36:26,780
+Yani bu tamamen bu tür bilgileri strings, XML gibi genelde resource dosyalarının içerisinde konumlandırıyoruz.
+
+670
+02:36:26,880 --> 02:36:31,700
+Hatta buraya ikon koyabiliriz. Uygulamanızın ekranda gözükürken...
+
+671
+02:36:36,884 --> 02:36:45,443
+Ekranda gözükürken çok özür dilerim. Şu an dersteyim.
+
+672
+02:36:50,451 --> 02:37:00,491
+Çok pardon arkadaşlar. Uygulamanızın ana ekranda, home ekranında telefonun gözükürken o ikonunu siz de belirleyebilirsiniz. Böyle bir şansınız var.
+
+673
+02:37:00,927 --> 02:37:14,987
+Bu nedenle, bu sorduğunuz sorudan yola çıkarak henüz oraları detaylı bir şekilde üzerinde durmadık ama uygulamanızın ikonundan ismine kadar, menüsüne kadar aslında ekran tasarımı oldukça önemli.
+
+674
+02:37:15,128 --> 02:37:28,907
+Aşağıda tab view'lar kullanıyor olmanız mesela güzel olabilir menü olması açısından ya da üst sağ tarafta bir menü ekranı tasarlayabilirsiniz ya da altta bir floating action point ile artı işte.
+
+675
+02:37:28,927 --> 02:37:34,808
+figürüyle tıklayıp orada bir seçenek açılmasını sağlayabilirsiniz.
+
+676
+02:37:35,527 --> 02:37:40,827
+Bu kullanıcı bilgilerini lokal database ile mi yoksa Firebase Storage'unu kullanabilir miyiz diye sormuş [öğrenci].
+
+677
+02:37:40,827 --> 02:37:43,827
+Bu şu anda ilk etapta...
+
+678
+02:37:45,811 --> 02:38:06,971
+Uygulama kapandığında ortadan kalkacak şekilde data modelde tutabilirsiniz ama daha ileri gidelim biz bir an önce hani bununla vakit kaybetmeyelim diyenler varsa, lokal database de bir seçenek, firebase storage de bir seçenek. İkisini de yapabilirsiniz. Benim açımdan bir sakınca yok. Yani kendinizi o anlamda konfor alanında hissediyorsanız ikisini de tercih edebilirsiniz.
+
+679
+02:38:09,691 --> 02:38:11,131
+Başka sorusu olan var mı?
+
+680
+02:38:13,876 --> 02:38:33,536
+Birikmemesi adına zamanında konuştuğumuz uygulamaları, Activity ekranlarını tamamlamanız önemli. Sonra ödev ya da dönem projesiyle ilgili zaman geldiğinde ekstra bir süre talep etmemeniz adına lütfen sizden rica ediyorum. Her hafta konuştuklarınızı vakit bulursanız, imkanınız varsa yapmaya çalışın.
+
+681
+02:38:39,507 --> 02:38:47,507
+Hangi state'de bulunduğunuzu söylüyor. Yani aktivitede misiniz, kılasın içinde misiniz?
+
+682
+02:38:48,015 --> 02:39:07,015
+Başka bir activity demişsiniz. O yüzden her zaman Get Application Context ile o konteksti almanız gerekiyor. This ifadesi bu kontekstlerin farklı olmasından dolayı birçok noktada problem yaratabiliyor. O yüzden ben genellikle Get Application Context'i tercih ediyorum ki...
+
+683
+02:39:08,628 --> 02:39:18,407
+O ilgili bulunduğunuz aktivite ya da sınıf durumu net bir şekilde programa bildiriliyor olsun.
+
+684
+02:39:28,084 --> 02:39:29,404
+Başka sorusu var mı?
+
+685
+02:39:36,180 --> 02:39:50,120
+Peki, çok üstelemiyorum. Uzaktan eğitim olduğu için soru sormak isteyenler, bir arkadaşınız mail yazmıştı özel olarak bazı şeyler danışmak istediğini. Ona cevap yazacağım. Sormak isteyenler olursa benimle irtibata geçebilirler.
+
+686
+02:39:51,520 --> 02:40:00,360
+İlk seçenek neydi? Uygulama ilk açıldığında anlayamadım sorunu [öğrenci]. Mikrofonla sorarsan.
+
+687
+02:40:00,755 --> 02:40:01,435
+Daha var.
+
+688
+02:40:02,435 --> 02:40:05,695
+Şimdi hocam, şimdi biz kullanıcı bilgileri saklayacağız ya.
+
+689
+02:40:06,396 --> 02:40:10,195
+Şimdi benim bildiğim kadarıyla işte bunun için bir depolama yapmamız lazım.
+
+690
+02:40:10,315 --> 02:40:10,815
+Normal şartlar.
+
+691
+02:40:10,955 --> 02:40:12,015
+Şu an depom bilmiyoruz.
+
+692
+02:40:12,015 --> 02:40:13,015
+Şimdi uygun her...
+
+693
+02:40:13,652 --> 02:40:34,592
+Şimdi anladım sormak istediğin soruyu. İlk söylediğim seçenek şuydu. Eğer siz persistent kalıcı olarak bilgiyi saklamakla ilgili bilgiye sahip değilseniz ve birkaç hafta sonra bunu göreceğiz, o zaman yaparız diyorsanız, biraz önceki Array List mantığıyla data modelde saklarsınız. Uygulama kapandığında...
+
+694
+02:40:34,592 --> 02:40:44,752
+Zaten bilgiler uçar. Uygulama tekrar açıldığında yine list.add mantığıyla listeye ekleyerek tekrar yüklemiş olursunuz. Yani hard kodut bir şekilde saklamak.
+
+695
+02:40:45,252 --> 02:40:45,691
+Evet, tamam.
+
+696
+02:40:46,152 --> 02:40:55,932
+Ama o çok anlamlı değil. Bence Firebase ya da Database'e bakmaya başlayabilirsiniz. Hani ona harcayacağınız heforu bir daha harcamamak adına diğerini yapmak daha mantıklı.
+
+697
+02:40:56,452 --> 02:40:57,252
+Sağ olun hocam, sağ olun.
+
+698
+02:40:57,632 --> 02:40:58,072
+Rica ederim.
+
+699
+02:41:01,843 --> 02:41:06,843
+O zaman teşekkür ediyorum arkadaşlar katıldığınız için, sorularınız için.
+
+700
+02:41:07,203 --> 02:41:10,943
+Kendinize iyi bakın. Haftaya görüşmek dileğiyle. Sağlıklı günler diliyorum hepinize.

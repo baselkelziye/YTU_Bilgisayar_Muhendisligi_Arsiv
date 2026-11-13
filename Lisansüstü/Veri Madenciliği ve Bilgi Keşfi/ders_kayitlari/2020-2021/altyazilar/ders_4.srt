@@ -1,0 +1,6935 @@
+1
+00:01:02,003 --> 00:01:05,823
+Hocam, mikrofonunuzdan galiba, şey, cızırtı geliyor da seslen.
+
+2
+00:01:11,091 --> 00:01:12,272
+Çok uzak geliyor hocam.
+
+3
+00:02:18,931 --> 00:02:21,831
+Evet, şimdi nasıl acaba? Ses geliyor mu?
+
+4
+00:02:24,231 --> 00:02:25,191
+Evet hocam.
+
+5
+00:02:25,851 --> 00:02:26,831
+Tamam, daha iyi değil mi?
+
+6
+00:02:31,668 --> 00:02:33,068
+18 kişi olduk.
+
+7
+00:02:37,556 --> 00:02:40,916
+Nasılsınız arkadaşlar? Nasıl gidiyor uzaktan çalışma?
+
+8
+00:02:43,696 --> 00:02:47,556
+Memnun muyuz, mutlu muyuz evimizde çalıştığımız için?
+
+9
+00:02:51,348 --> 00:02:54,368
+Yani daha rahat sanki hocam. Ben sevdim açıkçası.
+
+10
+00:02:55,708 --> 00:02:57,468
+[öğrenci] sevdim diyorsun.
+
+11
+00:02:58,648 --> 00:03:01,708
+Aslında evde daha güvende hissediyoruz.
+
+12
+00:03:02,368 --> 00:03:06,048
+Ben dışarıya çıktığım zaman çok fazla elimi yıkıyorum.
+
+13
+00:03:06,228 --> 00:03:07,987
+Sürekli dezenfektan sürüyorum.
+
+14
+00:03:09,268 --> 00:03:11,248
+Hani böyle şey gibi oluyor.
+
+15
+00:03:11,788 --> 00:03:19,487
+Artık yarım saatte, 15 dakikada bir elinize dezenfektan sürünce de daha sağlıksız bir şey oluyor.
+
+16
+00:03:19,487 --> 00:03:25,108
+İnsan evde o korkular olmadığı için daha güvende hissediyor.
+
+17
+00:03:26,068 --> 00:03:31,048
+Açıkçası bana da burada evde çalışmak daha güvenli, daha keyifli gelmeye başladı.
+
+18
+00:03:33,028 --> 00:03:37,427
+Bir tek market, çarşı, pazar işleri için çıkıyorum.
+
+19
+00:03:37,708 --> 00:03:40,487
+O günlerde bayağı bir şey yapıyor insanı.
+
+20
+00:03:41,608 --> 00:03:46,487
+Dediğim gibi 10 dakikada, 15 dakikada bir elime dezenfektan sürüyorum.
+
+21
+00:03:46,487 --> 00:03:49,487
+Zaten maskeyle dolaşıyoruz.
+
+22
+00:03:50,927 --> 00:03:54,528
+Zor ya, yani evde olmak o yüzden bana bence güzel.
+
+23
+00:03:58,292 --> 00:04:06,331
+Evet, 22 kişi olduk. Evde çalışmaktan mutlu olmayan var mı? Öyle sorayım bir de.
+
+24
+00:04:11,731 --> 00:04:16,451
+Yok gibi. Hepimiz evden çalışmayı sevdik bence de.
+
+25
+00:04:19,771 --> 00:04:20,192
+Evet.
+
+26
+00:04:22,692 --> 00:04:28,872
+Bu hafta veri indirgeme konusuna devam edeceğiz.
+
+27
+00:04:30,951 --> 00:04:35,132
+Kaldığımız yerden neler yapmıştık şöyle bir bakalım.
+
+28
+00:04:57,779 --> 00:05:08,799
+İçen hafta feature selection yöntemlerine başlamıştık. Veri içerisinde indirgeme işlemlerinin büyük bir bölümü öz nitelikler üzerinde yapılıyor demiştik.
+
+29
+00:05:08,799 --> 00:05:24,919
+Ve bu öz nitelikleri iki şekilde azaltabiliriz. Birincisi feature selection, yani ayırt ediciliği yüksek olan değerli öz nitelikleri bulmak ve onları veri setinde kullanmak.
+
+30
+00:05:24,919 --> 00:05:32,979
+Ama ayırt ediciliği düşük olan öz nitelikleri de veri setinden silmek şeklinde özetlemiştik.
+
+31
+00:05:33,099 --> 00:05:42,919
+Feature selection'ı. Feature selection işlemini eğiticili ve eğiticisiz şekilde kullanabiliyoruz.
+
+32
+00:05:43,939 --> 00:05:47,919
+Eğer elimizdeki veride sınıf etiketi varsa, geçen hafta bir örneğini yapmıştık.
+
+33
+00:05:47,919 --> 00:06:04,799
+Sınıflara ait her bir öz nitelik için ortalama değer ve varyansı hesaplayıp bunun üzerinden aslında öz nitelikleri birbirleriyle karşılaştırabileceğimizi görmüştük.
+
+34
+00:06:04,919 --> 00:06:15,059
+Bence bu güzel bir yöntem. Mantığını anlamanız, özellikle burada test işlemi için söylüyorum, çok faydalı olacaktır.
+
+35
+00:06:26,771 --> 00:06:28,231
+Slide Show'u yapalım.
+
+36
+00:06:33,471 --> 00:06:41,932
+Geçen hafta yaptığımız örnek bu şekilde. Şu an ekranınızda sizin Annotation Toolbox'ı görünüyor mu?
+
+37
+00:06:46,163 --> 00:06:49,283
+Yani bir siyah band üzerinde mouse.
+
+38
+00:06:49,803 --> 00:06:51,863
+Gözükmüyor hocam, sadece sizde gözüküyor.
+
+39
+00:06:52,303 --> 00:06:52,843
+Tamam.
+
+40
+00:06:54,543 --> 00:06:57,483
+Evet, Abdülhüsmet evet yazdı, ona gözüküyor mu?
+
+41
+00:06:59,324 --> 00:07:00,084
+Sildi.
+
+42
+00:07:01,764 --> 00:07:04,363
+Evet, yani bunu açtım.
+
+43
+00:07:04,923 --> 00:07:05,963
+Özellikle şey,
+
+44
+00:07:08,563 --> 00:07:10,163
+Hocam yukarıdan,
+
+45
+00:07:10,163 --> 00:07:13,183
+View Options dedikleri zaman, arkadaşlarla da gözüküyor.
+
+46
+00:07:13,264 --> 00:07:15,923
+View Options diyecekler, orada Annotate var.
+
+47
+00:07:16,163 --> 00:07:20,183
+Yani herkes kendisi yapmak isterse,
+
+48
+00:07:20,303 --> 00:07:22,504
+açabilir hocam ama, siz açtığınızda bize gözükmez,
+
+49
+00:07:22,723 --> 00:07:23,443
+onu demek istedim.
+
+50
+00:07:26,384 --> 00:07:28,144
+Benim açtığım size gözükmüyor, tamam.
+
+51
+00:07:28,283 --> 00:07:30,584
+Çünkü ekranı kapatıyordu, o yüzden sordum.
+
+52
+00:07:31,084 --> 00:07:32,163
+Siz de kullanabiliyorsunuz,
+
+53
+00:07:33,163 --> 00:07:34,264
+az önce denediniz,
+
+54
+00:07:34,443 --> 00:07:34,983
+gördünüz.
+
+55
+00:07:37,123 --> 00:07:38,963
+Çok müdahale etmezseniz,
+
+56
+00:07:38,963 --> 00:07:39,524
+sevinirim.
+
+57
+00:07:39,923 --> 00:07:41,403
+Sanırım denemek için yazdı,
+
+58
+00:07:41,483 --> 00:07:42,303
+arkadaşımız da.
+
+59
+00:07:42,943 --> 00:07:44,084
+Peki, şimdi,
+
+60
+00:07:44,923 --> 00:07:45,803
+geçen hafta,
+
+61
+00:07:45,803 --> 00:07:49,943
+yaptığımız örnekte,
+
+62
+00:07:49,943 --> 00:08:19,923
+öz niteliklik,
+
+63
+00:08:19,943 --> 00:08:20,963
+sonucu büyük çıkan,
+
+64
+00:08:47,764 --> 00:09:01,683
+Şimdi bunu Clear All Drawings diyelim. Feature Selection örneği bu. Devam edelim. Bu hafta aynı zamanda Feature Composition'dan da bahsedeceğim.
+
+65
+00:09:09,779 --> 00:09:26,120
+Eğiticisiz öz nitelik seçme yöntemi olarak Entropy Measure'dan bahsedeceğim. Entropy kavramı ile Entropy'yi kullanarak öz nitelikleri nasıl sıralayabiliriz bunu görmeye çalışacağız.
+
+66
+00:09:26,120 --> 00:09:37,120
+Burada eğiticisiz öz nitelik seçme dediğime göre artık benim elimde herhangi bir
+
+67
+00:09:37,120 --> 00:09:43,379
+şöyle yapalım
+
+68
+00:09:43,379 --> 00:09:50,699
+Unsupervised feature selection yöntemi dediğime göre burada
+
+69
+00:09:50,699 --> 00:09:59,919
+eğiticisiz bir yöntemden bahsediyoruz. Yani sınıf etiketi yok elimde. Bu durumda sınıf etiketinin olmadığı durumda
+
+70
+00:09:59,919 --> 00:10:03,699
+kullanılacak bir teknik
+
+71
+00:10:03,699 --> 00:10:05,579
+ve
+
+72
+00:10:05,579 --> 00:10:10,699
+bu bölümde size Entropy kavramından biraz da
+
+73
+00:10:10,699 --> 00:10:15,579
+similarity ve distance kavramlarından bahsedeceğim. Çünkü bunun üzerine kurulu
+
+74
+00:10:15,579 --> 00:10:17,439
+bir soru
+
+75
+00:10:17,439 --> 00:10:18,559
+sınıf etiketinin olmadığı
+
+76
+00:10:18,559 --> 00:10:20,559
+sınıf etiketi olmadığından bahsettik.
+
+77
+00:10:20,559 --> 00:10:22,559
+Sınıf etiketi olmadığından bahsettik.
+
+78
+00:10:27,892 --> 00:10:53,112
+Amacımız her bir öz niteliği, veri seti içerisindeki her bir öz nitelikle bir entropiya hesabı yapacağız ve verinin bütününden bir öz niteliği çıkardığımızda verinin bütünü ne kadar bozuluyor ya da değişiyor buna bağlı olarak bir öz nitelik seçme işlemi yapmaya çalışacağız bu yöntem altında.
+
+79
+00:10:53,112 --> 00:10:58,692
+Bunun için similarity measure dediğimiz benzerlik ölçüsünden faydalanacağız.
+
+80
+00:10:59,692 --> 00:11:08,112
+Tabii bu daha önce yaptığımız örneklerde bir distance kavramından bahsetmiştik.
+
+81
+00:11:08,532 --> 00:11:21,232
+Yani öz nitelikler örnekler arasında mesafe ölçüsü, distance dediğimiz mesafe ölçüsünü bulabiliyorduk.
+
+82
+00:11:21,232 --> 00:11:30,812
+Bu hafta ise buna ek olarak bir benzerlik kavramından similarity measure dediğimiz benzerlik kavramından bahsedeceğim.
+
+83
+00:11:30,812 --> 00:11:33,792
+N-dimensional samples dedi.
+
+84
+00:11:33,951 --> 00:11:41,652
+N-boyutlu bir veri seti üzerinde bunu nasıl gerçekleştiriyoruz onu göreceğiz.
+
+85
+00:11:41,652 --> 00:11:52,652
+Burada distance eğer nümerik öz nitelikler varsa elimizde nümerik öz nitelikler için mesafe ölçüsü hesaplayabiliyoruz.
+
+86
+00:11:54,492 --> 00:12:03,892
+Biz mesafe ölçüsünden benzerlik ölçüsüne geçiş yapmak istersek eğer nasıl yaparız onu da burada konuşacağız.
+
+87
+00:12:03,892 --> 00:12:12,432
+Şurada az önceki slide'da bir açıklama vardı.
+
+88
+00:12:12,612 --> 00:12:15,451
+Similarity measure S için diyor ki
+
+89
+00:12:15,451 --> 00:12:21,732
+That is an inverse proportion to the distance e diyor.
+
+90
+00:12:22,532 --> 00:12:30,812
+S yani similarity ile distance'ın birbiriyle ters orantılı olduğu kavramı da hemen burada belirtelim.
+
+91
+00:12:33,032 --> 00:12:34,451
+Ne demek istedim?
+
+92
+00:12:34,451 --> 00:12:55,352
+Aslında şuraya bakacak olursak ilk paragrafta diyor ki bir D mesafesinden bahsederken ikisi birbirine çok yakın iki örnek arasındaki mesafe için D mesafesi için bu mesafenin küçük çıkacağını hatta sıfıra yakın çıkacağını söyleyebiliriz.
+
+93
+00:12:55,352 --> 00:13:03,812
+Ama eğer örnekler birbirlerinden uzaksa bunlar arasındaki distance daha büyük çıkacaktır.
+
+94
+00:13:04,312 --> 00:13:09,012
+O nedenle burada bir dönüşüm formülü vermiş.
+
+95
+00:13:09,172 --> 00:13:22,172
+Yani elinizde i ve j sample'ları arasındaki distance'ı biliyorsanız distance'dan similarity'ye nasıl dönüşüm yaparız bunu gösteren bir denklem vermiş.
+
+96
+00:13:22,172 --> 00:13:27,432
+Bu denklem yardımıyla bu eşitlik yardımıyla aslında bu dönüşümü gerçekleştirebiliriz diyor.
+
+97
+00:13:27,912 --> 00:13:29,451
+Buradaki d i j dedi.
+
+98
+00:13:29,951 --> 00:13:34,711
+i sample ile j sample arasındaki distance'ı gösteren bir D değerimiz var.
+
+99
+00:13:35,172 --> 00:13:41,252
+Bunu e üzeri eksi alfa d i j dediği bir dönüşüm ile s i j'ye dönüştürüyor.
+
+100
+00:13:41,252 --> 00:13:54,432
+Böylece aslında ters orantıdan da faydalanarak küçük olan D değerleri için daha büyükse yani similarity değeri çıkmasını bekliyoruz.
+
+101
+00:13:54,432 --> 00:14:01,412
+İki sample birbirine çok yakınsa eğer D değeri sıfıra yakın çok küçük çıkar dedik.
+
+102
+00:14:01,971 --> 00:14:07,012
+Ama iki örnek birbirine çok yakınsa aynı zamanda bu şu demek.
+
+103
+00:14:07,192 --> 00:14:12,471
+Evet aralarındaki mesafe küçük yani birbirlerine daha çok benziyorlar demek.
+
+104
+00:14:12,852 --> 00:14:17,372
+O yüzden S i j dediğimiz değerin de büyük olması beklenir.
+
+105
+00:14:19,091 --> 00:14:28,471
+Buradaki alfa kat sayısını, yani bu distancedan similarity'e dönüşümde kullanılan alfa kat sayısı için farklı çözümler olabilir.
+
+106
+00:14:29,231 --> 00:14:41,951
+Burada bir çözüm olarak alfa eşit eksi ln 0.5 bölü D demiş. D dediği de distanced matrisindeki tüm değerlerin ortalaması alınarak bir değer bulunabilir.
+
+107
+00:14:41,951 --> 00:14:57,331
+Dataya bağlı olarak bu üretilebilir. Veya bir sabit sayı kullanılarak da alfa değeri 0.5 gibi bir değer seçilerek de bu dönüşüm işlemi gerçekleştirilebilir.
+
+108
+00:15:00,331 --> 00:15:08,172
+Bir de distanced matris ve normalized equation distance kavramından bahsediyor.
+
+109
+00:15:08,172 --> 00:15:19,292
+Amacımız şu, amacımız şu, amacımız şu, amacımız şu, elimizde eğer nümerik özüntelikler varsa, bu nümerik özüntelikler üzerinden öklük mesafesi hesaplayabiliyoruz.
+
+110
+00:15:19,292 --> 00:15:26,831
+Öklük mesafesini burada farklı vermiş, normalize öklük mesafesi olarak vermiş.
+
+111
+00:15:27,531 --> 00:15:30,152
+Şimdi aralarında ne fark var, biraz ondan bahsedelim.
+
+112
+00:15:30,152 --> 00:15:41,371
+hem de en boyutlu bir veri seti için, örnek uzayı için, bu işlem nasıl yapılıyor ona bakalım.
+
+113
+00:15:41,371 --> 00:15:50,371
+bir de
+
+114
+00:15:50,371 --> 00:15:52,371
+bir
+
+115
+00:16:06,803 --> 00:16:11,683
+Şimdi, Newshare diyelim.
+
+116
+00:16:20,884 --> 00:16:27,644
+Anides kıyılması açmıştım. Şunu kapatmam gerekiyor. Mouse kullanamıyorum. Evet. Şimdi olacak.
+
+117
+00:16:34,740 --> 00:16:52,000
+Burada yapmak istediğimiz şey şu, elimizde bir veri seti var, en boyutlu bir veri seti var. Bu data set için önce konuşacak olursak, elimizdeki data set için.
+
+118
+00:16:56,659 --> 00:17:07,200
+Her bir satırda bir sampleımız var. M adet sample var ve N adet öz nitelik var.
+
+119
+00:17:08,099 --> 00:17:17,799
+Burada bu dataset içerisinde X1, 1, X1, 2, X1, N.
+
+120
+00:17:17,799 --> 00:17:24,559
+Birinci sample'ın birinci öz niteliği, birinci sample'ın ikinci öz niteliği.
+
+121
+00:17:26,539 --> 00:17:28,899
+Hocam, ekranda da gözükmüyordu az önce.
+
+122
+00:17:29,240 --> 00:17:35,519
+Evet, gitti. Bir dakika bulacağız. Şimdi bağlantı düştü. Tekrar bağlanırsak olacak.
+
+123
+00:17:38,519 --> 00:17:39,960
+İnternet herhalde.
+
+124
+00:17:41,960 --> 00:17:43,240
+Connecting dedi.
+
+125
+00:17:43,240 --> 00:17:43,460
+Evet.
+
+126
+00:17:53,491 --> 00:17:54,771
+Şu anda bağlandık.
+
+127
+00:18:08,403 --> 00:18:20,403
+görebiliyor muyuz? Evet hocam geldi. Tamam. Dataseti tarif ettim. Dedim ki msample'dan oluşan yani sample size'ı
+
+128
+00:18:23,955 --> 00:18:41,535
+m olarak verilmiş en dayanışın al bir deyta var en tane öz niteliğimiz var bu veri setinde ikinci
+
+129
+00:18:41,535 --> 00:18:48,435
+sen pulun birinci öz niteliği ikinci sen pulun ikinci özü teliği ve ikinin eninci özü teliği
+
+130
+00:18:48,435 --> 00:19:04,035
+kata set bulmaya sen pulunun birinci öz niteliği xm bir gül gibi bu şekilde verilmiş bir data set var
+
+131
+00:19:04,035 --> 00:19:11,836
+şimdi ben bu data set üzerinde en boyutlu olduğu için daha önce yaptığımız örnek iki boyutluydu iki tane
+
+132
+00:19:11,836 --> 00:19:19,935
+bu yapı arasında uzaklık hesaplamak istiyorum Çünkü numerik öz niteliklerden oluşuyor yani şöyle düşünün
+
+133
+00:19:19,935 --> 00:19:30,375
+burada iyi satırı var burada da j satırı var ve ben de iyici dediğim iyinin j'ye olan uzaklığını yazmak
+
+134
+00:19:30,375 --> 00:19:40,275
+istiyorum bunun bunu öplik mesafesi olarak daha önce dediğim gibi yazmıştık iki boyutta şimdi bunu
+
+135
+00:19:40,275 --> 00:19:44,475
+n-dimension için yazacağız
+
+136
+00:19:47,731 --> 00:20:04,731
+D, I, J'yi, I'yi ve J'yi sample ID olarak kullandığım için, boyutu göstermek için K değişkenini kullanacağım.
+
+137
+00:20:04,731 --> 00:20:20,351
+K eşit birden N'e kadar, X, I sample'ının K öz niteliği ile X, J sample'ının K öz niteliği arasında fark alacağım.
+
+138
+00:20:20,811 --> 00:20:22,591
+Farkların karelerini alacağım.
+
+139
+00:20:23,231 --> 00:20:26,731
+Kareleri N tane öz nitelik için toplayacağım.
+
+140
+00:20:27,251 --> 00:20:32,291
+Daha sonra bu toplamın kare kökünü alarak bir distance hesaplayacağım.
+
+141
+00:20:32,291 --> 00:20:36,112
+Bu, öklü distans olarak geçiyor.
+
+142
+00:20:36,831 --> 00:20:48,331
+Şimdi, bu mesafeyi Normalized Ökledian Distance şeklinde tanımlamak için sadece şöyle bir ek yapılmış.
+
+143
+00:20:59,412 --> 00:21:17,991
+D, I, J'yi, normalized, öplediğin distance şeklinde yazarken, K eşit birden N'e kadar, az önce I sample'ının K öz niteliği ile J sample'ının K öz niteliği arasında fark almıştık.
+
+144
+00:21:17,991 --> 00:21:27,872
+Bu farkı, bu farkı, her öz niteliğin kendi maksimum, pardon,
+
+145
+00:21:33,715 --> 00:21:45,455
+Maksimum K-minimum K dediğimiz değerini, yani ikisi arasındaki farkı oranlayarak bir normalizasyon işlemi yapıyor.
+
+146
+00:21:45,455 --> 00:21:51,195
+Daha sonra bu normalize edilmiş değerin karesini alıp kare kökünü alıyor.
+
+147
+00:21:51,635 --> 00:22:03,075
+Buna da Normalized Oblidian Distance diyoruz.
+
+148
+00:22:03,715 --> 00:22:06,415
+Anlaşıldı mı? Burada tekrar söyleyeceğim.
+
+149
+00:22:06,855 --> 00:22:10,315
+K öz niteliği, her öz niteliği kendi içinde.
+
+150
+00:22:10,495 --> 00:22:14,655
+Yani karşılıklı gelen öz nitelipler arasında fark alıyorduk şurada.
+
+151
+00:22:15,055 --> 00:22:19,096
+E sample ile J sample arasında K öz niteliği için.
+
+152
+00:22:19,695 --> 00:22:23,635
+Burada bu K öz niteliği için maksimum ve minimum değer bulunuyor.
+
+153
+00:22:24,695 --> 00:22:30,395
+Bunlar arasındaki farkı oranlanarak bir normalizasyon işlemi yapılıyor.
+
+154
+00:22:30,395 --> 00:22:36,535
+Yani normal Oblidian Distance'a göre aralarındaki tek fark bu şekilde açıklanabilir.
+
+155
+00:22:36,535 --> 00:22:38,535
+K öz niteliği için.
+
+156
+00:22:40,788 --> 00:22:41,387
+Değil.
+
+157
+00:22:51,731 --> 00:23:05,831
+Burada yapılan işlemde de bunu görüyorsunuz. Normalized Euclidean Distance olarak bu formül tanımlanmış. XE sample ile XJ sample arasındaki mesafeyi hesaplamak için.
+
+158
+00:23:08,211 --> 00:23:13,751
+Sonra diyor ki, eğer elimizdeki öz nitelikler nümerik değilse.
+
+159
+00:23:13,751 --> 00:23:17,551
+Burada gördüğümüz gibi
+
+160
+00:23:17,551 --> 00:23:23,551
+Eğer elimizdeki öz nitelikler nümerik değilse
+
+161
+00:23:23,551 --> 00:23:26,531
+Distance yerine similarity hesaplayacağız.
+
+162
+00:23:27,071 --> 00:23:30,711
+Ve similarity hesabında da
+
+163
+00:23:30,711 --> 00:23:35,692
+Heming Distance adını verdiğimiz bir mesafe ölçüsü kullanacağız.
+
+164
+00:23:35,692 --> 00:23:39,112
+Şurada gördüğümüz Heming Distance
+
+165
+00:23:39,112 --> 00:23:43,432
+Adı Distance ama lütfen dikkat.
+
+166
+00:23:43,432 --> 00:24:13,412
+Fakat aslında yaptığımız işlem
+
+167
+00:24:14,132 --> 00:24:15,632
+similarity'yi yazarken
+
+168
+00:24:33,395 --> 00:24:37,255
+yaptığımız işlem, şimdi tablette açacağım, saniye.
+
+169
+00:24:45,907 --> 00:25:04,747
+Burada yaptığımız işlemde E sample ile J sample arasında K öz niteliklerinin birbirine eşit olup olmadığına bakıyoruz. Burada eşitlik kontrolü yapılıyor.
+
+170
+00:25:04,747 --> 00:25:26,967
+Eğer bu ikisi birbirine eşitse şu cardinality of set demek bu eşitlik varsa eğer buradan bir gelir, bu eşitlik yoksa eğer buradan sıfır gelir ve bunlar üst üste K eşit birden N'e kadar toplanıyor ve buradan bir similarity elde ediyoruz.
+
+171
+00:25:26,967 --> 00:25:47,987
+Amacımız sample i ile sample j arasında iki tane sample arasında similarity hesaplama, benzerlik hesaplıyoruz.
+
+172
+00:25:47,987 --> 00:25:54,147
+Ama yöntemin adı tekrar söylüyorum, Heming Distance.
+
+173
+00:25:57,971 --> 00:26:02,852
+Fakat burada da gördüğünüz gibi S sembolü var. Simuleti gösteriyor.
+
+174
+00:26:03,652 --> 00:26:13,071
+Ve karşılıklı iki tane sample'ın karşılıklı o ilgili öz niteliklerinin birbiriyle aynı olması durumunda bir değerini alıyor.
+
+175
+00:26:13,071 --> 00:26:22,491
+Yani iki sample'ın tüm öz nitelikleri birbiriyle aynı ise buradan N gelir, toplamlardan N gelecek.
+
+176
+00:26:22,491 --> 00:26:28,912
+Bunu N'e bölerek bunun sonucunu, similarity'yi bir bulacağız.
+
+177
+00:26:28,912 --> 00:26:41,951
+Eğer iki sample'ın tüm kategorik öz nitelikleri birbiriyle aynı ise similarity en büyük, en yüksek bir çıkar.
+
+178
+00:26:43,172 --> 00:26:46,112
+Bu şekilde bir sonuç döndürür.
+
+179
+00:26:53,236 --> 00:26:58,316
+Simularytiyi de bu şekilde kısaca özetledik.
+
+180
+00:26:59,355 --> 00:27:06,336
+Numerik öz nitelikler için şu anda distance hesaplamak için Euclidean distance,
+
+181
+00:27:07,196 --> 00:27:15,036
+kategorik öz nitelikler için similarity hesaplamak için coming distance formülünü biliyoruz.
+
+182
+00:27:16,736 --> 00:27:18,136
+Burada bir örnek verilmiş.
+
+183
+00:27:18,136 --> 00:27:27,716
+Örnekte diyor ki, this is an example of a simple dataset with three categorical features.
+
+184
+00:27:28,736 --> 00:27:33,216
+Corresponding similarities are given in the left table.
+
+185
+00:27:33,816 --> 00:27:37,316
+Sağdaki tabloda da bunların benzerlikleri verilmiş.
+
+186
+00:27:37,476 --> 00:27:42,436
+Aslında bu benzerlikleri ben size hesaplatacaktım ama slide'da var, gerek kalmadı.
+
+187
+00:27:42,436 --> 00:27:51,436
+Diyor ki, veri setinde beş tane sample'ımız var, üç tane öz niteliğimiz var, F1, F2, F3 öz nitelikleri.
+
+188
+00:27:51,796 --> 00:27:54,896
+Bunların her biri kategorik öz nitelikler.
+
+189
+00:27:55,356 --> 00:28:03,456
+Zaten F1 öz niteliğine baktığımız zaman aldığı değerler A, B, C, B, C gibi kategorik değer almış.
+
+190
+00:28:03,456 --> 00:28:08,756
+F2 feature'ü X, Y, Y, X, Z gibi değerler almış.
+
+191
+00:28:09,615 --> 00:28:16,036
+Üçüncü öz nitelik ise baktığımızda 1, 2, 2, 1, 3 değerlerini almış.
+
+192
+00:28:16,376 --> 00:28:18,356
+Buradan aslında şunu anlıyoruz.
+
+193
+00:28:18,776 --> 00:28:20,336
+Hani daha önce konuşmuştuk.
+
+194
+00:28:20,716 --> 00:28:32,136
+Bazı kategorik değerleri veri setinde temsil etmek için dummy variable dediğimiz sayısal bir değer ile bunu ifade edebiliriz dedik.
+
+195
+00:28:32,136 --> 00:28:36,316
+Yani aslında F3 öz niteliğinin bir tablosu var.
+
+196
+00:28:36,736 --> 00:28:41,516
+1, 2 ve 3 sayılarının neyi temsil ettiğini orada görebiliyoruz.
+
+197
+00:28:41,796 --> 00:28:46,136
+Ama buraya veri setine yazılırken bunlar sayı olarak işlenmiş.
+
+198
+00:28:47,076 --> 00:28:59,136
+Fakat aslında bu öz nitelikleri ya da sample'lar arasında benzerlik hesaplarken bunu bir nümerik öz nitelik gibi kullanamayız.
+
+199
+00:28:59,136 --> 00:29:01,396
+Çünkü bu bir dummy variable.
+
+200
+00:29:01,716 --> 00:29:04,096
+Aslında kategorik bir öz niteliktir.
+
+201
+00:29:04,756 --> 00:29:13,196
+Sağ tarafta bununla ilgili bir similarity matriz verilmiş.
+
+202
+00:29:13,816 --> 00:29:21,896
+Bu similarity matriz ölçek olarak baktığımızda 5'e 5 olmak zorunda.
+
+203
+00:29:21,896 --> 00:29:24,576
+Çünkü elimizde 5 tane sample var.
+
+204
+00:29:24,976 --> 00:29:30,736
+Ve her bir sample'ın birbirine olan uzaklığı değil benzerliğini gösterecek.
+
+205
+00:29:31,316 --> 00:29:36,356
+Bu nedenle bu matriz bir kare matriz 5'e 5.
+
+206
+00:29:36,896 --> 00:29:41,736
+Ve yine aynı distance matriz de olduğu gibi şunu söyleyebiliriz.
+
+207
+00:29:41,856 --> 00:29:45,756
+Bu simetrik bir matriz olacak.
+
+208
+00:29:45,756 --> 00:29:56,756
+Sizden ricam her ne kadar sağ taraftaki sonucu görüyorsak da sol taraftaki verilen veri setini kaydedin kağıdınıza.
+
+209
+00:29:57,756 --> 00:29:58,376
+Not alın.
+
+210
+00:29:58,796 --> 00:30:05,716
+Daha sonra bu similarity matrizi siz oluşturun ya da birlikte oluşturalım.
+
+211
+00:30:06,756 --> 00:30:07,756
+Yazmanız için bekliyorum.
+
+212
+00:30:08,476 --> 00:30:09,496
+Ekranı kapatacağım.
+
+213
+00:30:10,096 --> 00:30:11,596
+Whiteboard'a geçeceğim tekrar.
+
+214
+00:30:15,604 --> 00:30:27,604
+Hiç soru sormuyorsunuz, hiç konuşmuyorsunuz. Her şey açık mı? Arada soru sorabilirsiniz, yorum yapabilirsiniz. Sesinizi durayayım lütfen. Arada bir...
+
+215
+00:30:48,468 --> 00:30:50,348
+Bugün dersinde kimler var?
+
+216
+00:30:50,508 --> 00:30:52,028
+Hemen siz yazarken
+
+217
+00:30:52,028 --> 00:30:54,008
+tafis ikmanısı görelim.
+
+218
+00:30:54,748 --> 00:30:56,508
+Ben bütün sınıfı aynı anda
+
+219
+00:30:56,508 --> 00:30:58,388
+tek bir ekranda göremiyorum.
+
+220
+00:31:00,788 --> 00:31:02,268
+[öğrenci] [öğrenci] burada.
+
+221
+00:31:02,448 --> 00:31:04,307
+[öğrenci] burada. [öğrenci] burada.
+
+222
+00:31:05,087 --> 00:31:05,948
+[öğrenci].
+
+223
+00:31:06,188 --> 00:31:08,008
+[öğrenci] burada. [öğrenci] Erek.
+
+224
+00:31:08,168 --> 00:31:08,928
+[öğrenci] [öğrenci].
+
+225
+00:31:10,248 --> 00:31:11,128
+Ecan [öğrenci].
+
+226
+00:31:12,008 --> 00:31:13,228
+[öğrenci].
+
+227
+00:31:14,768 --> 00:31:15,748
+Hensar burada.
+
+228
+00:31:17,428 --> 00:31:18,388
+[öğrenci] burada.
+
+229
+00:31:18,468 --> 00:31:19,807
+[öğrenci] [öğrenci].
+
+230
+00:31:21,128 --> 00:31:22,148
+[öğrenci] burada.
+
+231
+00:31:22,708 --> 00:31:23,288
+[öğrenci].
+
+232
+00:31:24,408 --> 00:31:27,268
+[öğrenci]. [öğrenci] son saat yoksun biliyorum.
+
+233
+00:31:27,948 --> 00:31:28,488
+[öğrenci].
+
+234
+00:31:29,488 --> 00:31:30,327
+[öğrenci].
+
+235
+00:31:30,748 --> 00:31:31,188
+[öğrenci].
+
+236
+00:31:33,048 --> 00:31:34,088
+[öğrenci].
+
+237
+00:31:34,428 --> 00:31:35,788
+[öğrenci] [öğrenci] burada.
+
+238
+00:31:36,067 --> 00:31:37,128
+[öğrenci] burada.
+
+239
+00:31:37,347 --> 00:31:38,168
+Melihal burada.
+
+240
+00:31:40,048 --> 00:31:40,807
+[öğrenci].
+
+241
+00:31:41,288 --> 00:31:41,928
+Aslan.
+
+242
+00:31:43,528 --> 00:31:44,968
+[öğrenci]. [öğrenci].
+
+243
+00:31:44,968 --> 00:31:46,968
+[öğrenci] [öğrenci].
+
+244
+00:31:46,968 --> 00:31:49,288
+İsmiler burada.
+
+245
+00:31:51,288 --> 00:31:51,948
+Peki.
+
+246
+00:31:53,508 --> 00:31:55,307
+Herhalde not aldınız.
+
+247
+00:31:55,307 --> 00:32:00,988
+İsmiler burada.
+
+248
+00:32:06,291 --> 00:32:26,851
+Şimdi amacımız bir S matrisi oluşturmak. Bu matrisin az önce de söylediğim gibi 5 çarpı 5 olacağını belirttik. Bu bir similarity matriks.
+
+249
+00:32:38,291 --> 00:32:39,791
+Kare bir matriz.
+
+250
+00:32:41,711 --> 00:32:43,231
+Hemen şunu soracağım size.
+
+251
+00:32:43,751 --> 00:32:55,551
+Bu kare matrizin ana köşegeni, main diagonal dediğimiz ana köşegeni her bir örneğin kendi kendisine olan benzerliğini gösterir.
+
+252
+00:32:56,432 --> 00:32:58,851
+Ana köşegen üzerindeki sayılar ne olur?
+
+253
+00:33:00,271 --> 00:33:00,871
+Bir mi hocam?
+
+254
+00:33:02,271 --> 00:33:03,291
+Evet, güzel.
+
+255
+00:33:03,291 --> 00:33:12,851
+Bir olur. Çünkü her örneğin kendi kendisine olan benzerliği tamdır. Yüzde yüzdür. O yüzden bir olacak.
+
+256
+00:33:13,611 --> 00:33:23,871
+Birin bire benzerliği bir, ikinin ikiye benzerliği bir, üçün üçe benzerliği, dördün dörde ve beşin beşe benzerliği bir olacak.
+
+257
+00:33:23,871 --> 00:33:28,951
+Ve az önce konuştuğumuz gibi bu matriz simetrik bir matriz.
+
+258
+00:33:28,951 --> 00:33:44,071
+Sadece ben sağ üst köşeyi hesaplayacağım. Sol alt köşede zaten aynı. Çünkü simetrik bir matriz olduğunu biliyoruz.
+
+259
+00:33:45,511 --> 00:33:56,051
+Formüle göre notta aldığınız birinci sample ile ikinci sample arasındaki similarity, benzerliği hesaplamanızı istiyorum.
+
+260
+00:33:56,051 --> 00:33:58,672
+Şöyle yapacağım.
+
+261
+00:34:04,307 --> 00:34:06,587
+[öğrenci] sana sorayım önce.
+
+262
+00:34:09,068 --> 00:34:11,427
+Ya da hesaplayanlar söylesin.
+
+263
+00:34:11,547 --> 00:34:25,447
+Birin ikiye olan benzerliği, yani R1 sample ile R2 sample arasında baktığım zaman eşleşen öz niteliklerin sayısı bölü toplam öz nitelik sayısı.
+
+264
+00:34:26,447 --> 00:34:26,847
+Nedir?
+
+265
+00:34:28,407 --> 00:34:29,407
+Sıfır hocam.
+
+266
+00:34:29,407 --> 00:34:31,047
+Evet.
+
+267
+00:34:31,487 --> 00:34:33,947
+Hiç eşleşen öz nitelik yok.
+
+268
+00:34:34,128 --> 00:34:35,307
+Hepsi birbirinden farklı.
+
+269
+00:34:35,407 --> 00:34:36,387
+O yüzden sıfır olacak.
+
+270
+00:34:38,887 --> 00:34:40,688
+Bağlantı değil mi mi gitti?
+
+271
+00:34:41,108 --> 00:34:41,807
+Bir mi yazdım?
+
+272
+00:34:41,907 --> 00:34:43,628
+Gözüküyor şimdi yavaş yavaş.
+
+273
+00:34:44,228 --> 00:34:44,748
+Çok yavaş.
+
+274
+00:34:45,507 --> 00:34:45,768
+Peki.
+
+275
+00:34:46,708 --> 00:34:49,248
+Birin üçü olan benzerliği.
+
+276
+00:34:49,628 --> 00:34:50,387
+Sıfır.
+
+277
+00:34:50,487 --> 00:34:55,788
+R1 sample'ın, R2 sample'ına olan benzerliği.
+
+278
+00:34:55,867 --> 00:34:56,527
+Bu da sıfır.
+
+279
+00:34:56,788 --> 00:34:57,148
+Doğru.
+
+280
+00:34:57,148 --> 00:35:27,128
+Birin dördün.
+
+281
+00:35:49,523 --> 00:35:52,603
+Birin beşi olan benzerliği için ne dediniz?
+
+282
+00:35:54,463 --> 00:35:54,983
+Sıfır.
+
+283
+00:35:54,983 --> 00:35:56,403
+Sıfır bölük.
+
+284
+00:35:56,663 --> 00:35:57,804
+Sıfır, tamam.
+
+285
+00:35:59,683 --> 00:36:05,963
+İkinci satıra geçtim. İkinci satırda ikinin üçü olan benzerliğini bulmak istiyorum.
+
+286
+00:36:06,703 --> 00:36:07,324
+İki bölük.
+
+287
+00:36:07,384 --> 00:36:12,943
+Kaç tane eşleşen öz nitelik var? İki tane. O zaman iki bölü üç olacak.
+
+288
+00:36:14,143 --> 00:36:17,983
+İkinin dördüncü sample ile olan benzerliği.
+
+289
+00:36:17,983 --> 00:36:19,203
+Bir bölük.
+
+290
+00:36:20,083 --> 00:36:23,243
+Eşleşen öz nitelik bir tane.
+
+291
+00:36:23,903 --> 00:36:24,483
+Bir bölük.
+
+292
+00:36:24,483 --> 00:36:24,743
+Üç.
+
+293
+00:36:26,423 --> 00:36:35,663
+Ve ikinci satırın beşinci öz nitelikle olan benzerliği sıfır.
+
+294
+00:36:36,563 --> 00:36:38,943
+Peki, üçe geçtik.
+
+295
+00:36:39,503 --> 00:36:40,503
+Waiting for image.
+
+296
+00:36:40,723 --> 00:36:41,603
+Hala gelmedi.
+
+297
+00:36:41,603 --> 00:36:41,743
+Evet.
+
+298
+00:36:49,268 --> 00:36:51,387
+Siz ekranı göremiyorsunuz değil mi arkadaşlar?
+
+299
+00:36:51,407 --> 00:36:52,288
+Göremiyoruz hocam.
+
+300
+00:36:53,288 --> 00:36:56,768
+Hala gözükmüyor çünkü bağlantı götürüyor.
+
+301
+00:36:58,907 --> 00:37:00,128
+Şimdi geldi.
+
+302
+00:37:07,315 --> 00:37:08,775
+Tamam mıyız? Görüyoruz değil mi?
+
+303
+00:37:09,695 --> 00:37:10,015
+Evet.
+
+304
+00:37:10,795 --> 00:37:13,895
+Tamam. 3'ün 4'ü olan benzerliğini bulacağız.
+
+305
+00:37:16,576 --> 00:37:17,175
+0.
+
+306
+00:37:19,275 --> 00:37:21,795
+3'ün 4'ü olan benzerliği 0 mı?
+
+307
+00:37:22,215 --> 00:37:22,576
+0.
+
+308
+00:37:23,795 --> 00:37:24,515
+Bölük.
+
+309
+00:37:24,815 --> 00:37:26,615
+4'ü olan benzerliği 0.
+
+310
+00:37:26,875 --> 00:37:28,835
+5'ü olan benzerliği?
+
+311
+00:37:29,835 --> 00:37:30,295
+1.
+
+312
+00:37:30,455 --> 00:37:30,955
+1 bölük.
+
+313
+00:37:35,315 --> 00:37:38,735
+Dördüncü satıra geçtim. Dördünün beşi olan benzerliği.
+
+314
+00:37:43,380 --> 00:37:58,380
+Gördüm 5'e olan benzerliği 0. Evet, böylece similarity madresi doldurmuş olduk. Heming distance ile benzerlik ölçümü yapmış olduk ve buna göre bu madresi oluşturduk.
+
+315
+00:38:01,079 --> 00:38:04,500
+Güzel, şimdi slide'dan yine devam edeceğim.
+
+316
+00:38:13,076 --> 00:38:22,476
+Geldik entropi kavramına ve entropi kullanarak öz nitelikleri nasıl sıralayacağımıza.
+
+317
+00:38:22,476 --> 00:38:37,735
+Burada biraz entropiden bahsetmek gerekiyor. Entropi kavramı information teori de kullanılıyor ve burada belirtildiği gibi global bir ölçü entropi.
+
+318
+00:38:37,735 --> 00:38:55,115
+bir örnekle diyor ki eğer elinizdeki konfigürasyon içerisinde bir düzenlilik varsa, ordered configuration dediği düzeni gösteriyor, teklif olmayı gösteriyor.
+
+319
+00:38:56,135 --> 00:39:05,295
+Entropi düşük çıkıyor. Eğer disordered configuration bir düzensizlik varsa oluşturduğumuz yapıda,
+
+320
+00:39:05,295 --> 00:39:09,295
+bu durumda entropi yüksek çıkıyor.
+
+321
+00:39:09,295 --> 00:39:15,295
+Şimdi burada entropi ile ilgili size bir...
+
+322
+00:39:19,699 --> 00:39:23,119
+Hepsi de hesa açmıştım, bir sürü ne oluyor.
+
+323
+00:40:13,172 --> 00:40:16,592
+Burada Entropy ile ilgili ekranı görüyorsunuz.
+
+324
+00:40:19,972 --> 00:40:22,032
+Hemen Wikipedia'yı açtım.
+
+325
+00:40:22,132 --> 00:40:28,432
+Özellikle Entropy mühendislik alanında çok fazla farklı alanda kullanılabiliyor.
+
+326
+00:40:29,211 --> 00:40:34,311
+Bizim buradaki incelememiz Information Theory tarafında olacak.
+
+327
+00:40:34,311 --> 00:40:46,452
+Yani bilgi teorisi, bilginin kodlanması, kodlanan verinin hatta transferi, uzak mesafeler arasında transferine kadar kullanılan bir teknik.
+
+328
+00:40:49,172 --> 00:40:55,711
+O açıdan baktığımızda Information Theory arasındaki açıklamalar bizim için anlamlı.
+
+329
+00:40:55,711 --> 00:41:07,652
+Burada diyor ki bir x random variable verilmiş ve possible outcomes için burada x1, x2, xn diye değerler vermiş.
+
+330
+00:41:07,992 --> 00:41:12,711
+Daha sonra bunların olma olasılıklarını da px1, pxn şeklinde göstermiş.
+
+331
+00:41:14,072 --> 00:41:21,512
+Hx dediği burada x discrete random variable için Entropy gösteriyor.
+
+332
+00:41:21,512 --> 00:41:36,592
+ve i eşit birden n'e kadar yani n tane farklı outcome için bunların her birinin olma olasılığı çarpı log2 tabanına göre ki bu taban seçimi diyor farklı uygulamalarda farklı sayı tabanı seçilebilir.
+
+333
+00:41:37,231 --> 00:41:41,932
+Log2 tabanına göre px, i şeklinde ifade ediyor.
+
+334
+00:41:42,291 --> 00:41:47,492
+Ve bunun önünde bir eksi sembolü olduğuna dikkatinizi çekmek istiyorum.
+
+335
+00:41:47,492 --> 00:41:50,492
+Bu kullanacağımız Entropy formülü.
+
+336
+00:41:51,512 --> 00:41:55,052
+Entropy ile ilgili burada devamında daha açıklamalar var.
+
+337
+00:41:55,152 --> 00:41:56,211
+Buna da bakarsınız.
+
+338
+00:41:56,572 --> 00:42:03,112
+Ben kısaca aslında size yine whiteboard üzerinde bir pardon.
+
+339
+00:42:06,871 --> 00:42:11,552
+Yine tablet üzerinde biraz açıklama yapmak istiyorum.
+
+340
+00:42:12,512 --> 00:42:15,452
+Bu Entropy kavramıyla ilgili.
+
+341
+00:42:15,452 --> 00:42:38,452
+Şimdi verilen formüle göre h eşit eksi i eşit birden n'e kadar pi yani i'nin olma olasılığı çarpı log2 tabanına göre pi şeklinde yazabiliriz Entropy.
+
+342
+00:42:38,452 --> 00:42:46,092
+Entropy.
+
+343
+00:42:45,076 --> 00:43:05,556
+Bunu yazmak istedim çünkü biraz örneklendireceğim. Önce şundan bahsetmek istiyorum. Burada ordered configuration ve disordered configuration diye iki kavramdan bahsetmiştik. Size önce bir disordered configuration örneği vereceğim.
+
+344
+00:43:21,300 --> 00:43:34,060
+Varsayalım ki, bir yine zar deneyi gibi de olabilir, para deneyi hatta iki yazı tura deneyi gibi de olabilir.
+
+345
+00:43:34,620 --> 00:43:42,780
+Kırmızı ve mavi top örneğinden gidelim, daha güzel bir örnek.
+
+346
+00:43:46,643 --> 00:43:57,303
+Elimizde mavi ve kırmızı toplar var. Bunlar bir kutudan çekildi ve masaya yerleştirildi mantığıyla düşünebiliriz.
+
+347
+00:44:01,811 --> 00:44:19,471
+Ve bu masaya yerleştirilen toplara baktığımız zaman, mavi ve kırmızı toplar için söylüyorum, her biri için eşit sayıda örnek yerleştirilmiş masanın üzerine.
+
+348
+00:44:19,471 --> 00:44:24,072
+Bu durumda mavi ve kırmızı sınıfın olma olasılıkları birbirine eşit.
+
+349
+00:44:26,672 --> 00:44:33,692
+P1 diyelim, bu kırmızı topların olma olasılığı olsun.
+
+350
+00:44:35,531 --> 00:44:41,811
+Toplam işte 12 tane var, 6 tanesi aynı sınıftan dolayısıyla burada 1 bölü 2.
+
+351
+00:44:42,531 --> 00:44:45,632
+Mavi sınıf ise P2 olsun.
+
+352
+00:44:45,632 --> 00:44:48,632
+Bunun da yine olma olma olasılığı eşit.
+
+353
+00:44:48,632 --> 00:44:53,132
+Öncekine 1 bölü 2'dir diyebiliriz.
+
+354
+00:44:53,431 --> 00:44:56,592
+Yani eşit sayıda bir yapı var.
+
+355
+00:44:56,871 --> 00:45:00,132
+Masanın üzerinde karışık yerleşim söz konusu.
+
+356
+00:45:00,652 --> 00:45:08,871
+Tek tip değil, 2 tip örnekten eşit sayıda olduğunu gösteriyor bu.
+
+357
+00:45:08,871 --> 00:45:38,851
+Buna göre, 3 tip örnekten eşit sayıda.
+
+358
+00:45:28,724 --> 00:45:39,164
+eksi i eşit birden 2'ye kadar pi log 2 tabanına göre pi şeklinde yazabilirim.
+
+359
+00:45:39,164 --> 00:45:53,984
+Her sınıfın olma olasılığı için 1 bölü 2 log 2 tabanına göre 1 bölü 2 ve bundan 2 tane var.
+
+360
+00:45:55,364 --> 00:45:58,443
+O yüzden çarpı 2 yazdım uzun uzun yazmamak için.
+
+361
+00:45:58,724 --> 00:46:07,524
+Burada log 2 tabanına göre 1 bölü 2 log 2 tabanına göre 2 üzeri eksi 1 şeklinde yazılabilir.
+
+362
+00:46:07,524 --> 00:46:08,384
+Doğru mu?
+
+363
+00:46:09,463 --> 00:46:18,403
+Ve buradan da şu ifade log 2 tabanına göre 2 üzeri eksi 1 yazılabilir.
+
+364
+00:46:19,044 --> 00:46:28,064
+Buradan da log 2 tabanına göre 2 üzeri eksi 1 eksi 1'dir.
+
+365
+00:46:28,064 --> 00:46:30,463
+İkiler sadeleşir.
+
+366
+00:46:32,463 --> 00:46:38,364
+Ve bu entropi değeri kaç çıkar?
+
+367
+00:46:44,275 --> 00:47:04,195
+Bir çıkar. Evet. Şimdi iki durum için entropi bir çıktı ve bu entropi maksimum değeri almış oldu. İki sınıflı ifade için bakacak olursak.
+
+368
+00:47:04,195 --> 00:47:13,596
+İki tabanına göre yaptığımız için işlemi bu şeyin entropinin birimi bit olarak yazılacak.
+
+369
+00:47:14,375 --> 00:47:21,076
+Şimdi disordered configuration'ı böyle yazdıktan sonra bir de ordered configuration örneği vereceğim.
+
+370
+00:47:21,235 --> 00:47:24,215
+Ordered configuration dediğimde ise tek tip yapı var.
+
+371
+00:47:36,083 --> 00:47:42,743
+ordered configuration için
+
+372
+00:47:46,675 --> 00:47:49,675
+Tek tip yapı var yani ben...
+
+373
+00:47:55,603 --> 00:48:03,103
+Aynı sınıftan örnekler hep yerleştirilmiş olsun. Diğer sınıftan hiç örnek yok. Bu durumda
+
+374
+00:48:07,539 --> 00:48:18,940
+Kırmızı sınıftan hiç örnek olmadığı için bunun olma olasılığı P1, 0 iken, mavi sınıfın olma olasılığı 1 olacak.
+
+375
+00:48:18,940 --> 00:48:32,340
+Buradan da Entropy formülünü yazacak olursam,
+
+376
+00:48:36,148 --> 00:48:37,088
+Evet, demiştik.
+
+377
+00:48:41,012 --> 00:48:42,012
+eksi
+
+378
+00:48:44,952 --> 00:48:48,572
+sıfırlardan birinin olma olasılığı sıfır
+
+379
+00:48:52,532 --> 00:49:02,972
+diğerinin olma olasılığı 1 buradan şu ifade
+
+380
+00:49:05,372 --> 00:49:13,652
+log 2 tabanına göre 2 üzeri 0 sayı üzeri 0 1'dir buradan ne çıkar
+
+381
+00:49:13,652 --> 00:49:24,452
+sıfır çıkar şimdi başta şunu söylemiştik ordur konfigürasyon için
+
+382
+00:49:24,452 --> 00:49:30,872
+less tanımını yapmıştık küçük çıktığından bahsetmiştik entropinin
+
+383
+00:49:35,731 --> 00:49:44,572
+Disorder Configuration dediğimiz configuration için ise büyük çıktığını söylemiştik. Bir elde etmiştik.
+
+384
+00:49:44,572 --> 00:49:46,572
+Şimdi burada...
+
+385
+00:49:49,844 --> 00:49:55,164
+Sadece iki sınıflı bir yapı üzerinden gittiğim için
+
+386
+00:50:05,619 --> 00:50:24,619
+İki sınıflı bir yapı üzerinden gittiğim için, Pİ ya da birinin olma olasılığı diyelim, şuraya da entropiyi koyacak olursak eğer, olma olasılığı 0, 1 bölü 2 ve 1 için,
+
+387
+00:50:37,235 --> 00:50:41,615
+Az önce verdiğimiz örnekte sınıf sayısı 2 idi.
+
+388
+00:50:49,172 --> 00:51:08,032
+O yüzden iki sınıflı bir yapıda bakacak olursak, PI olma olasılığı, sınıflardan birinin olma olasılığı birse, diğerinin olma olasılığı bir eksi PI'den dolayı sıfır çıkıyor.
+
+389
+00:51:08,032 --> 00:51:18,231
+Ve bu yapı bize iki sınıflı bir yapıda probability ile entropi arasındaki ilişkiyi gösteriyor.
+
+390
+00:51:19,172 --> 00:51:27,871
+Ve az önce gördüğümüz gibi sınıflardan birinin olma olasılığı sıfırsa diğerinin olma olasılığı birdir.
+
+391
+00:51:28,371 --> 00:51:33,072
+Benzer şekilde birinin olma olasılığı birse öbürünün olma olasılığı sıfırdır.
+
+392
+00:51:33,072 --> 00:51:36,592
+Ve burada her iki durum için entropi sıfır çıktı.
+
+393
+00:51:36,952 --> 00:51:40,092
+Bu neyi gösteriyor? Düzenli yapıyı gösteriyor çünkü bize.
+
+394
+00:51:41,112 --> 00:51:49,012
+Olasılık bu tarafa doğru arttıkça yani bir bölü ikiye gittiğinde iki sınıf üzerinden konuşuyorum.
+
+395
+00:51:49,172 --> 00:51:53,592
+Bir bölü ikiye bir bölü ikiye bir bölü bir bölü bir bölü bir bölü ikiye gittiğinde en düzensiz formu olmuş oluyor.
+
+396
+00:51:53,592 --> 00:51:59,012
+Her sınıftan masanın üzerine örnek koydum.
+
+397
+00:52:00,371 --> 00:52:08,672
+Dolayısıyla bu düzensiz yapı için alabileceği en büyük değeri almış oluyor ve entropi bir oluyor.
+
+398
+00:52:09,371 --> 00:52:18,711
+Bu tekrar söylüyorum iki sınıflı bir yapı için entropi ile probability arasındaki ilişkiyi gösteriyor bize.
+
+399
+00:52:18,711 --> 00:52:48,692
+Soru var mı?
+
+400
+00:52:36,371 --> 00:52:39,551
+4 olsaydı eğer, bir de oradan gidelim.
+
+401
+00:52:48,500 --> 00:52:53,159
+Bu durumda ve her birinin olma olasılığı da yine eşit olduğunda diyelim.
+
+402
+00:52:57,427 --> 00:53:03,147
+Entropi en büyük çıkacak, en büyük kaç oluru cevaplandırmak istiyoruz.
+
+403
+00:53:05,427 --> 00:53:08,147
+Olma olasılıkları eşitse.
+
+404
+00:53:10,127 --> 00:53:13,407
+Bu nedir? Disordered Configuration'ı gösteriyor.
+
+405
+00:53:21,172 --> 00:53:24,492
+Ve entropi maksimumu çıkacak demiştik.
+
+406
+00:53:30,195 --> 00:53:33,956
+Sadece formülde yerine yazmanızı istiyorum.
+
+407
+00:53:36,096 --> 00:53:50,155
+i eşit 1'den 4'e kadar her birinin olma olasılığı pi log 2 tabanına göre pi formülünden ne çıkar?
+
+408
+00:53:50,155 --> 00:53:51,076
+Probability.
+
+409
+00:53:53,556 --> 00:53:56,295
+Sadece bir tanesinden de gidebilirsiniz.
+
+410
+00:53:56,295 --> 00:54:03,875
+1 bölü 4 log 2 tabanına göre 1 bölü 4 çarpı 4.
+
+411
+00:54:04,556 --> 00:54:05,976
+Ne çıkıyor? 2 çıkıyor.
+
+412
+00:54:06,715 --> 00:54:08,155
+Güzel. 2 bit.
+
+413
+00:54:10,835 --> 00:54:15,096
+Burada aslında biraz şöyle de düşünebiliriz.
+
+414
+00:54:15,215 --> 00:54:20,715
+4 tane farklı sınıf vardı.
+
+415
+00:54:20,715 --> 00:54:31,435
+Sınıfların her birini temsil etmek için 2 bit binary değişken yeterlidir gibi de düşünebilirsiniz bunu.
+
+416
+00:54:31,596 --> 00:54:33,395
+Hani tam çıktığı için söylüyorum.
+
+417
+00:54:33,395 --> 00:54:45,076
+Mesela kodlamada 00, 01, 10, 11 binary değerlerini vererek kodlama yapıyorduk.
+
+418
+00:54:45,076 --> 00:54:48,375
+Yani biraz kodlamayla ilişkilendirmek istedim.
+
+419
+00:54:49,996 --> 00:54:57,435
+2 bit'in burada ne anlama geldiğini bu veriyi ifade etmek için 2 bit'in gerekli olduğunu bize söylüyor.
+
+420
+00:54:59,016 --> 00:55:01,675
+Daha küçük değerler de alabiliyor tabii.
+
+421
+00:55:01,675 --> 00:55:09,476
+Eğer bu disordered configuration yerine biraz daha ordered configuration'a doğru gitse 1.5 olabilir.
+
+422
+00:55:10,335 --> 00:55:11,596
+0.5 olabilir.
+
+423
+00:55:11,596 --> 00:55:14,375
+Bu tür değerler de alması mümkün.
+
+424
+00:55:15,315 --> 00:55:26,775
+Sınıf sayısıyla ilişkilendirerek entropinin en çok kat çıkacağını biraz hayal edebilmeniz lazım ya da düşünebiliyor olmanız lazım.
+
+425
+00:55:26,775 --> 00:55:38,335
+İşlem yaparken bu işinizi kolaylaştıracak ve hatta bir yerde işlem sonucunun sağlamasını yapmanızı kolaylaştıracak.
+
+426
+00:55:38,935 --> 00:55:41,235
+O yüzden bu örnekleri veriyorum.
+
+427
+00:55:41,596 --> 00:55:49,476
+Yani sadece formülü verip geçmek yerine biraz üzerinde konuşmuş olduk.
+
+428
+00:55:51,375 --> 00:55:53,935
+Peki soru var mı?
+
+429
+00:55:54,596 --> 00:55:56,016
+Entropiyi öğrendik.
+
+430
+00:55:56,435 --> 00:55:59,215
+Distance ve similarity kavramlarını öğrendik.
+
+431
+00:55:59,215 --> 00:56:02,096
+Artık çözümü uygulayabiliriz.
+
+432
+00:56:02,096 --> 00:56:10,815
+Yani sınıf etiketi olmayan veri üzerinde entropi kavramını kullanarak öz nitelikleri nasıl sıralarız?
+
+433
+00:56:11,335 --> 00:56:12,215
+Sorumuz buydu.
+
+434
+00:56:12,935 --> 00:56:15,735
+Bunun için gerekli altyapıyı oluşturduk şu anda.
+
+435
+00:56:16,615 --> 00:56:22,435
+Bir similarity hesaplamayı öğrendik ve entropi kavramını şöyle bir gözden geçirdik.
+
+436
+00:56:22,435 --> 00:56:27,496
+sorunuz yoksa 10 dakika ara vereceğim.
+
+437
+00:56:27,596 --> 00:56:32,675
+Aradan sonra yöntemin nasıl kullanıldığını göreceğiz.
+
+438
+00:56:32,675 --> 00:56:46,556
+Aradan sonra yöntem.
+
+439
+00:56:37,684 --> 00:56:46,344
+Evet, peki. Soru yok anladığım kadarıyla. 10 dakika ara, 10 geçe görüşürüz.
+
+440
+01:08:20,724 --> 01:08:22,364
+Evet, ara bitti. Derse devam.
+
+441
+01:08:25,284 --> 01:08:26,144
+Kimler burada?
+
+442
+01:08:30,323 --> 01:08:52,723
+Doğbahar burada, [öğrenci] burada, [öğrenci] [öğrenci], [öğrenci] burada, [öğrenci], [öğrenci], [öğrenci], [öğrenci] burada, [öğrenci], [öğrenci] burada, [öğrenci], [öğrenci], [öğrenci], [öğrenci] burada, [öğrenci] [öğrenci], [öğrenci].
+
+443
+01:08:56,435 --> 01:08:57,175
+Gülüşen o.
+
+444
+01:09:18,579 --> 01:09:20,579
+ve ayakırı adı budak.
+
+445
+01:09:38,387 --> 01:09:39,728
+Aşk, ben de vurduyum ama.
+
+446
+01:09:45,363 --> 01:09:47,703
+Kim konuştu? Göremedim.
+
+447
+01:09:49,123 --> 01:09:51,863
+Ben konuşmuştum ama hocam. [öğrenci].
+
+448
+01:09:52,803 --> 01:10:00,563
+[öğrenci], merhaba. Elinizi az önce görmedim. Şimdi el havada tamam gördüm. Teşekkürler.
+
+449
+01:10:07,060 --> 01:10:10,340
+Hocam ben de el kaldırdım ama gördünüz mü?
+
+450
+01:10:12,900 --> 01:10:16,060
+El kaldırdığınızı gördün mü? Damla mı?
+
+451
+01:10:16,500 --> 01:10:16,880
+Evet.
+
+452
+01:10:17,620 --> 01:10:19,300
+Evet, şimdi gördüm.
+
+453
+01:10:20,980 --> 01:10:26,580
+Evet, toplandık herhalde. Hep bir aradayız şu anda. Devam edebiliriz. Teşekkür ederim.
+
+454
+01:10:30,612 --> 01:10:34,152
+Şimdi slide'dan devam edelim.
+
+455
+01:10:35,851 --> 01:10:38,292
+Slide Show'dan çıkmışız, şuradayız.
+
+456
+01:11:03,060 --> 01:11:10,240
+Şimdi entropiyi öğrendik, simületi kavramını bir örnek üzerinden gördük.
+
+457
+01:11:10,920 --> 01:11:17,380
+Burada sınıf etiketi olmayan bir veriyle çalışacağımızı söylemiştik.
+
+458
+01:11:17,920 --> 01:11:22,660
+Peki bu durumda sınıf etiketi olmayan bir veride entropi nasıl hesaplanır değil mi?
+
+459
+01:11:22,840 --> 01:11:30,620
+Yani burada gösterdiğimiz formüllerde hep bir sınıf kavramından bahsediyorduk.
+
+460
+01:11:30,620 --> 01:11:47,280
+O nedenle sınıf etiketi olmayan veriyle çalışırken bir entropi formülünde bir düzenleme yapıyor ve probability yerine similarity değerini kullanarak bir formül oluşturuyor.
+
+461
+01:11:47,280 --> 01:12:02,760
+Hatırlarsanız az önce yaptığımız bir örnekte 5 tane sample'dan oluşan bir 3 tane kategorik öz nitelikten oluşan bir veri setinde similarity matrisi beraber oluşturmuştuk.
+
+462
+01:12:02,820 --> 01:12:04,740
+5'e 5'lik bir matris oluşmuştu.
+
+463
+01:12:04,740 --> 01:12:15,120
+O matris içerisindeki her bir değeri, similarity değerini kullanarak bir entropi formülü tanımlamış burada.
+
+464
+01:12:16,060 --> 01:12:17,620
+Formüle bakacak olursak,
+
+465
+01:12:20,039 --> 01:12:23,640
+E entropiyi temsil ediyor.
+
+466
+01:12:24,340 --> 01:12:28,080
+Eksi demiş, i eşit birden n-1'e kadar.
+
+467
+01:12:28,080 --> 01:12:35,980
+Bu similarity matrisi içerisindeki satır numaralarını gösteriyor i değişkeni.
+
+468
+01:12:36,720 --> 01:12:44,080
+İkinci sigma sembolünde ise j eşit i artı birden n-1'e kadar diyor.
+
+469
+01:12:44,080 --> 01:13:06,000
+Ve böylece aslında similarity matrisinin her bir gözünü ana köşe gene göre matrisin simetrik yapıda olduğunu ve sağ taraftaki üçgen ve alt tarafta, sol taraftaki üçgen birbiriyle aynıdır hesaplamayız demiştik.
+
+470
+01:13:06,400 --> 01:13:10,740
+Burada aslında o üçgende yer alan similarity değerlerini kullanıyor.
+
+471
+01:13:10,740 --> 01:13:19,120
+Yani i eşit 1 olduğunda j 2'den başlayacak ve s 1-2 dediğimiz similarity matrisindeki 1-2 gözünü alacak.
+
+472
+01:13:19,620 --> 01:13:29,560
+Ve similarity'yi önceki formülde probability yani pi çarpı log 2 tabanına göre pi kullanıyorduk.
+
+473
+01:13:29,840 --> 01:13:36,500
+Burada onun yerine similarity geçmiş, probability yerine similarity'yi kullanıyor.
+
+474
+01:13:36,500 --> 01:13:39,600
+Ama similarity değeri olarak da tekrar söylüyorum.
+
+475
+01:13:39,600 --> 01:13:46,360
+similarity matrisindeki ana köşe gene göre matrisi iki üçgen alana ayırıyorduk.
+
+476
+01:13:46,420 --> 01:13:51,539
+O üçgen alanda kalan değerleri kullanarak sadece entropi hesaplıyor.
+
+477
+01:13:51,980 --> 01:13:53,180
+Şimdi şunu sorabilirsiniz.
+
+478
+01:13:53,400 --> 01:14:02,720
+Evet burada probability çarpı log 2 tabanına göre probability temsil eden bir se çarpı log 2 tabanına göre sej var.
+
+479
+01:14:02,720 --> 01:14:06,360
+Artı diyor bir terim daha ekliyor.
+
+480
+01:14:06,360 --> 01:14:11,200
+Bu terim ise 1-sej olarak verilmiş.
+
+481
+01:14:11,640 --> 01:14:13,700
+Şimdi size şöyle bir şey sormak istiyorum.
+
+482
+01:14:14,940 --> 01:14:20,980
+Sej similarity'yi gösteriyor ve 1 olması maksimum olduğu anlamına geliyor.
+
+483
+01:14:22,380 --> 01:14:24,660
+%100 benzerliği temsil ediyor dedik.
+
+484
+01:14:25,000 --> 01:14:29,079
+1-sej yaptığında ne elde ediyor acaba?
+
+485
+01:14:29,080 --> 01:14:31,320
+Neyi temsil edebilir?
+
+486
+01:14:32,840 --> 01:14:34,120
+Sej
+
+487
+01:14:34,120 --> 01:14:35,840
+dışındakilerin oranına...
+
+488
+01:14:35,840 --> 01:14:39,180
+Benzleşmeme oranı.
+
+489
+01:14:39,180 --> 01:14:40,180
+Bir şey
+
+490
+01:14:40,180 --> 01:15:06,180
+bir şey
+
+491
+01:14:39,539 --> 01:14:56,739
+Benzeşmeme oranı, evet güzel, benzememe oranı, güzel diyebiliriz değil mi? Ve buradan da bir terim daha ekliyor. Yani şurada entropi formülünde bu bir terim, bu da ikinci terim, bu benzerlikten elde ediyor, bu da benzemezlikten elde ediliyor.
+
+492
+01:14:56,739 --> 01:15:18,279
+Bir nevi aslında şey gibi de düşünebilirim, distance'a benzeterek bir kavram üretmiş gibi ama benzememe durumu daha güzel uydu bence. Böyle bir entropi tanımı yapıyor, etiketsiz veri için. Tamam mı? Buradan benzer veri seti için bir entropi hesaplayabilirim o halde.
+
+493
+01:15:21,939 --> 01:15:28,859
+Şimdi öz nitelikleri sıralama işini nasıl yapıyoruz ona bakalım.
+
+494
+01:15:29,439 --> 01:15:32,000
+Burada algoritmanın adımları verilmiş.
+
+495
+01:15:32,099 --> 01:15:38,539
+Birinci adımda diyor ki start with initial full set of features demiş.
+
+496
+01:15:41,839 --> 01:15:46,319
+Mouse ile ben bunu çok zor kullanıyorum ama biraz deneyeceğim kullanmayı.
+
+497
+01:15:46,319 --> 01:15:55,859
+Şimdi şöyle start with initial full set of features demiş.
+
+498
+01:15:56,179 --> 01:16:07,779
+F öz niteliklerinin tamamının kullanıldığı durum için bir entropi hesaplayacağım.
+
+499
+01:16:07,779 --> 01:16:13,199
+Bunu entropi şuraya yazalım.
+
+500
+01:16:13,199 --> 01:16:25,419
+E F diyeceğiz.
+
+501
+01:16:25,419 --> 01:16:40,199
+Entropi for F.
+
+502
+01:16:40,579 --> 01:16:46,579
+Yani tüm öz niteliklerin bir arada olduğu data set için bir entropi hesaplayacağım.
+
+503
+01:16:46,679 --> 01:16:48,679
+Buna E F diyeceğiz.
+
+504
+01:16:48,679 --> 01:16:50,779
+Sonra ikinci maddeye geçiyoruz.
+
+505
+01:16:50,939 --> 01:16:54,000
+Diyor ki form each feature F.
+
+506
+01:16:54,799 --> 01:16:59,139
+Remove one feature from büyük F dediği küme.
+
+507
+01:16:59,139 --> 01:17:00,339
+Şey gösteriyor.
+
+508
+01:17:00,659 --> 01:17:02,359
+Öz nitelik kümesini gösteriyor.
+
+509
+01:17:02,479 --> 01:17:05,919
+Bunun içerisinden bir tane öz niteliği dışarıda bırakalım diyor.
+
+510
+01:17:05,919 --> 01:17:18,299
+Ve bu subset için bir öz niteliğin dışarıda bırakıldığı subset için tekrar entropi hesaplıyor.
+
+511
+01:17:18,299 --> 01:17:30,000
+Buna da şurada gördüğümüz gibi E F-F1 diyor.
+
+512
+01:17:30,099 --> 01:17:30,679
+Bu ne demek?
+
+513
+01:17:31,219 --> 01:17:33,439
+F full set of features demekti.
+
+514
+01:17:33,519 --> 01:17:37,299
+Bunun içerisinden bir tane öz niteliği F1 öz niteliğini dışarıda bıraktı.
+
+515
+01:17:38,319 --> 01:17:43,819
+Geriye kalan öz niteliklerle yani F2 ve F3 az önceki örneğe istinaden söylüyorum.
+
+516
+01:17:43,819 --> 01:17:45,659
+Üç tane öz nitelik vardı.
+
+517
+01:17:46,279 --> 01:17:48,839
+Geriye kalan iki tanesiyle bir entropi hesapladı.
+
+518
+01:17:49,500 --> 01:17:57,319
+Bunun tüm öz niteliklerin olduğu veri için hesapladığım entropi arasındaki farkına bakıyor.
+
+519
+01:17:58,059 --> 01:18:06,739
+Benzer bir işlemi yine full set of features dediğimiz F öz niteliğinden F2'yi dışarıda bıraktı.
+
+520
+01:18:07,679 --> 01:18:09,539
+İkinci öz niteliği dışarıda bıraktı.
+
+521
+01:18:09,539 --> 01:18:14,359
+Geriye kalanlarla yani F1 ve F3'ü kullanarak bir entropi hesapladı.
+
+522
+01:18:15,339 --> 01:18:18,339
+Bu geriye kalan iki tane ile hesapladı.
+
+523
+01:18:18,459 --> 01:18:24,639
+Entropi ile full set of features için entropi arasındaki farkı buldu.
+
+524
+01:18:25,459 --> 01:18:29,439
+Bu işlemi bir de F3'ü dışarıda bırakarak tekrar yaptı.
+
+525
+01:18:31,379 --> 01:18:37,319
+Geriye kalan F1 ve F2 içerideyken kalan veri setiyle bir entropi hesapladı.
+
+526
+01:18:37,319 --> 01:18:48,159
+Ve bunun yine tüm öz niteliklerin bir arada olduğu durumda ki entropi ile arasındaki farka baktı.
+
+527
+01:18:48,239 --> 01:18:52,539
+Diyor ki bu farklar şimdi biz üç tane öz nitelik vardı.
+
+528
+01:18:52,679 --> 01:19:01,319
+Her birini bir defa dışarıda bırakarak oluşturduğumuz alt küme ile entropi hesaplayıp
+
+529
+01:19:01,319 --> 01:19:08,279
+hepsi arasındaki ana setin entropisi arasındaki farkları hesapladık.
+
+530
+01:19:08,359 --> 01:19:13,539
+Bu farkların en küçük olduğu durumu bulunuyor.
+
+531
+01:19:13,699 --> 01:19:16,259
+En küçük olması neyi ifade eder?
+
+532
+01:19:16,259 --> 01:19:22,239
+Bakın
+
+533
+01:19:19,167 --> 01:19:21,887
+En küçük olması şunu ifade ediyor.
+
+534
+01:19:22,027 --> 01:19:26,268
+Varsayalım ki birinci fark, şuradaki fark en küçük çıktı.
+
+535
+01:19:26,268 --> 01:19:28,228
+Bu şu anlama geliyor.
+
+536
+01:19:28,367 --> 01:19:40,188
+Ben F1 öz niteliğini dışarıda bıraktığımda geriye kalan iki tane öz nitelikle bulduğum entropinin ana kümenin entropisi arasındaki fark çok az.
+
+537
+01:19:40,287 --> 01:19:47,547
+Yani F1'in içeride olması, dahil edilmesi ya da edilmemesi demek ki durumu çok değiştirmiyor diyor.
+
+538
+01:19:47,547 --> 01:19:55,627
+Ve bu fark ne kadar küçük çıkıyorsa o öz nitelik bizim için o kadar az değerlidir anlamına geliyor.
+
+539
+01:19:57,228 --> 01:20:03,567
+Ve bir sıralama, ranking yapacağız dedik ya öz nitelikler arasında.
+
+540
+01:20:04,507 --> 01:20:09,268
+En kötü öz nitelik olarak listenin en altına ekleniyor diyor.
+
+541
+01:20:09,268 --> 01:20:25,407
+Burada verdiği örnekte F1 dışarıda bırakıldığında geriye kalan kümeyle oluşturulan entropinin ana kümenin entropisi arasındaki fark en küçük çıktığı varsayacak olursak diyor.
+
+542
+01:20:25,407 --> 01:20:29,887
+F1'i sıralı listenin en altına koyacağız.
+
+543
+01:20:30,307 --> 01:20:39,307
+F2 ve F3 öz nitelikleri için, geriye kalan iki tane öz nitelik için bu işlemleri tekrarlayacağız diyor.
+
+544
+01:20:39,867 --> 01:20:40,728
+Baştan yapacağız.
+
+545
+01:20:40,867 --> 01:20:42,867
+Yani baştan yapmak ne demek?
+
+546
+01:20:45,268 --> 01:20:51,507
+Full set of features'umuz, yani tüm öz niteliklerimiz iki tane öz nitelikten oluşuyor gibi düşüneceğiz.
+
+547
+01:20:51,507 --> 01:21:00,007
+Bunun için entropiyi hesaplayıp, daha sonra her birini dışarıda bıraktığımızda elde edeceğimiz entropiye bakacağız.
+
+548
+01:21:00,147 --> 01:21:13,127
+Ve bunlar arasındaki farkı en küçük yapan hangisi ise o listede F1'in üstünde en kötü öz nitelik olarak sıraya eklenmiş olacak.
+
+549
+01:21:13,587 --> 01:21:16,067
+Ama en kötüsü aslında F1 en altta.
+
+550
+01:21:16,067 --> 01:21:17,867
+Ondan sonra hangisi gelecek?
+
+551
+01:21:18,027 --> 01:21:20,567
+Bunu belirlemeye çalışıyorsunuz aslında.
+
+552
+01:21:20,747 --> 01:21:21,707
+Yaptığımız şey bu.
+
+553
+01:21:23,107 --> 01:21:28,807
+Entropi ile öz nitelikleri sıralama işlemini bu şekilde özetleyebiliriz.
+
+554
+01:21:29,487 --> 01:21:30,627
+Sorunuz var mı?
+
+555
+01:21:40,979 --> 01:21:41,659
+Hiç soru yok.
+
+556
+01:21:45,716 --> 01:21:50,756
+Peki, soru yoksa ilerleyeceğim.
+
+557
+01:21:54,868 --> 01:22:07,188
+Burada size soru sorayım o zaman. Ben soru sorayım. Entropi ile bunları sıraladık. Bu bir yöntem. Entropi kullanılabilir dedik.
+
+558
+01:22:07,188 --> 01:22:18,168
+Sınıf etiketi olmayan bir veride öz nitelikleri elerken yani selection yaparken başka ne kullanabiliriz? Aklınıza ne geliyor?
+
+559
+01:22:24,756 --> 01:22:39,996
+En topi bu yöntemlerden biri ama bunun dışında istatistiksel bir takım parametreler burada işe yarayabilir. Ne önerirsiniz? Aklınıza gelen herhangi bir şey var mı?
+
+560
+01:22:53,363 --> 01:22:57,183
+Mesela korelasyonla buradan bir sonuç çıkartılamaz mı acaba?
+
+561
+01:23:00,123 --> 01:23:10,903
+Öz niteliklerin birbirleriyle olan korelasyonuna bakıp birbirine en benzeyen, korelasyonu yüksek olan için ne dersiniz mesela?
+
+562
+01:23:12,483 --> 01:23:15,323
+Bir deriz hocam, bir değerini alır eğer en yüksekse.
+
+563
+01:23:15,323 --> 01:23:21,483
+eğer herhangi bir bağlantı yoksa sıfır olur.
+
+564
+01:23:22,403 --> 01:23:25,183
+Birbirleriyle zıt ilişkiliyse de eksi bir değerini alır.
+
+565
+01:23:25,863 --> 01:23:28,783
+Tamam. Peki bu durumda sizce
+
+566
+01:23:28,783 --> 01:23:32,723
+Feature Selection'da neyi seçmek gerekir?
+
+567
+01:23:32,923 --> 01:23:35,884
+Yani birbiriyle çok korele, birbirine çok benzeyen
+
+568
+01:23:35,884 --> 01:23:37,703
+öz nitelikler varsa
+
+569
+01:23:37,703 --> 01:23:42,983
+bunların hepsinin bir setinde olmasına aslında gerek yoktur.
+
+570
+01:23:43,563 --> 01:23:45,263
+Bunları eleyebilirsiniz.
+
+571
+01:23:45,323 --> 01:23:52,723
+korrelasyonun yüksek olan öz niteliklerden birini eleyip sadece diğerini kullandığınızda
+
+572
+01:23:52,723 --> 01:23:54,243
+aslında veri içerisinde
+
+573
+01:23:54,243 --> 01:23:58,943
+aynı bilgiyi hala taşımaya devam ediyorsunuz anlamına gelir.
+
+574
+01:23:59,603 --> 01:24:00,123
+Doğru mu?
+
+575
+01:24:00,683 --> 01:24:02,663
+Yorum yapın bakın böyle düşünürsek
+
+576
+01:24:02,663 --> 01:24:06,043
+bu da bir sınıf etiketi olmayan
+
+577
+01:24:06,043 --> 01:24:07,963
+unsupervised bir
+
+578
+01:24:07,963 --> 01:24:10,384
+selection yöntemi olarak
+
+579
+01:24:10,384 --> 01:24:11,963
+kullanılabilir.
+
+580
+01:24:13,543 --> 01:24:14,823
+Evet hocam doğru.
+
+581
+01:24:15,323 --> 01:24:20,723
+bizde hiç istatistikçi var mıydı derste acaba?
+
+582
+01:24:20,723 --> 01:24:22,723
+istatistikçiler bu işi daha böyle iyi bilir.
+
+583
+01:24:22,723 --> 01:24:30,123
+bakıyorum listemde matematik mühendisi var.
+
+584
+01:24:30,123 --> 01:24:31,123
+istatistikçi var.
+
+585
+01:24:31,123 --> 01:24:31,723
+evet.
+
+586
+01:24:31,723 --> 01:24:34,123
+dediğim gibi
+
+587
+01:24:34,123 --> 01:24:36,523
+korrelasyondan faydalanmak
+
+588
+01:24:36,523 --> 01:24:40,043
+unsupervised
+
+589
+01:24:40,043 --> 01:24:42,443
+unsupervised feature selection tarafında
+
+590
+01:24:42,443 --> 01:24:47,443
+tarafında kullanabileceğimiz bir diğer alternatif çözüm olacaktır.
+
+591
+01:24:47,443 --> 01:24:48,443
+soru yoksa
+
+592
+01:24:48,443 --> 01:24:52,443
+soru yoksa eğer
+
+593
+01:24:52,443 --> 01:24:53,643
+devam edelim
+
+594
+01:24:53,643 --> 01:24:54,443
+soru yoksa eğer
+
+595
+01:24:54,443 --> 01:24:55,843
+devam edelim
+
+596
+01:24:57,876 --> 01:25:02,756
+Annotation, Clear, Increase.
+
+597
+01:25:15,252 --> 01:25:23,492
+Value Reduction konusuna geçiyoruz ama burada aslında Feature Selection'dan sonra konuşacağımız ikinci konu neydi?
+
+598
+01:25:24,192 --> 01:25:27,252
+Bakayım hatırlıyor musunuz? Size böyle bir diagram çizmiştim.
+
+599
+01:25:29,992 --> 01:25:32,231
+Feature Composition'da yapıyorum.
+
+600
+01:25:32,372 --> 01:25:35,312
+Feature Composition var, güzel, teşekkürler.
+
+601
+01:25:38,312 --> 01:25:42,792
+Şimdi Feature Composition konusunda
+
+602
+01:25:54,387 --> 01:25:59,887
+Geçmeden önce şurada bir açıklama vardı. Aslında ondan gidelim. Neredeydi o?
+
+603
+01:26:00,887 --> 01:26:04,188
+Açılayım. Şu composition.
+
+604
+01:26:18,963 --> 01:26:25,764
+Feature Composition için burada birkaç maddeyle özetlenmiş bunun üzerinden tekrar geçmek istiyorum.
+
+605
+01:26:26,783 --> 01:26:46,163
+Feature Selection'da yaptığımız şey şuydu, ayırt edici olan öz nitelikleri seçip bunları veri setinde tutmayı, geriye kalan ayırt ediciliği yani sınıfları birbirinden ayırt etmede etkisi düşük olanları veri setinden siliyordu.
+
+606
+01:26:48,963 --> 01:26:57,264
+Bu yöntem ise alternatif olarak, alternatif bir yaklaşım olarak diyor ki,
+
+607
+01:26:57,264 --> 01:27:04,264
+ve
+
+608
+01:27:05,716 --> 01:27:07,276
+Şurada güzel özetlemiş.
+
+609
+01:27:07,655 --> 01:27:16,136
+The features are examined collectively, merged and transformed into a new set of features.
+
+610
+01:27:17,716 --> 01:27:26,615
+Elimizdeki öz nitelikleri birleştirerek yeni bir öz nitelik uzayı yaratıyoruz.
+
+611
+01:27:26,615 --> 01:27:47,756
+Ve bunlar yerleşim olarak baktığımızda da verinin bu yeni transform ettiğimiz, dönüştürdüğümüz uzaydaki yerleşimine bakarak da bazı öz niteliklerin aslında gereksiz olduğunu ve veriden atılabileceğini söyleyebiliyoruz.
+
+612
+01:27:49,856 --> 01:27:55,756
+Temel birleşen analizi dediğimiz principal komponent analizi ile bunu gerçekleştiriyoruz.
+
+613
+01:27:56,615 --> 01:28:09,356
+alternatif olarak, alternatif olarak, alternatif olarak öz nitelikleri birleştirerek yeni bir uzay tanımlayacağız, tarif edeceğiz.
+
+614
+01:28:12,356 --> 01:28:17,376
+Bunu duvarda da, dersin duvarında da paylaşmıştım.
+
+615
+01:28:19,276 --> 01:28:22,276
+Temel birleşen analizi ile ilgili bir tutorial vardı.
+
+616
+01:28:23,236 --> 01:28:24,676
+Onun üzerinden gideceğim.
+
+617
+01:28:24,676 --> 01:28:26,516
+Güzel de özetlemiş.
+
+618
+01:28:26,615 --> 01:28:56,596
+Temel birleşen analizini.
+
+619
+01:28:34,323 --> 01:28:48,023
+Temel bileşen analizini anlayabilmemiz için biraz linear cevir, biraz da biraz linear cevir bilmemiz gerekiyor.
+
+620
+01:28:48,483 --> 01:28:52,723
+Yani matris işlemleri önem kazanıyor.
+
+621
+01:28:53,783 --> 01:29:00,243
+Bir de biraz da istatistik bilmemiz gerekiyor.
+
+622
+01:29:00,243 --> 01:29:09,363
+Background mathematics kısmında bunların üstünden geçmek için kısa böyle bir özet vermiş, güzel bir özet.
+
+623
+01:29:11,103 --> 01:29:19,063
+İstatistikte veriyi temsil etmek için ortalama değer ve standart sapmadan bahsediyoruz diyor.
+
+624
+01:29:20,063 --> 01:29:28,683
+Ve standart sapmanın neden önemli olduğunu anlatmak için de iki tane basit sayı dizisi veriyor.
+
+625
+01:29:28,683 --> 01:29:33,723
+Diyor ki bir boyutta iki tane data set var elimizde.
+
+626
+01:29:34,163 --> 01:29:37,303
+Birinde 0, 8, 12, 20 değerleri olsun.
+
+627
+01:29:38,363 --> 01:29:39,963
+Annotation açalım.
+
+628
+01:29:46,996 --> 01:29:57,315
+şurada verilmiş olan sayı değerleri var elimizde. Diğer sayı dizisi ise şurada
+
+629
+01:29:57,315 --> 01:30:09,796
+gördüğümüz 8,9,11,12 olsun diyor. Sayılara baktığımız zaman bunların ortalamaları
+
+630
+01:30:09,796 --> 01:30:20,775
+da aynı çıkıyor. 20, 32, 40, 4'e böldüm, 10 çıktı. Sağ taraftaki verilmiş veri setinde de ortalama değerler aynı.
+
+631
+01:30:20,775 --> 01:30:29,655
+Yani iki farklı sayı dizisi var elimde. İstatistiksel olarak bunları temsil etmek için ortalama değerlerine baktım.
+
+632
+01:30:29,775 --> 01:30:34,996
+Ortalama değerleri aynı. Ama bu sayı dizileri birbirinden çok farklı yapısal olarak.
+
+633
+01:30:34,996 --> 01:30:51,716
+Bu farklılığı nasıl tarif edebilirsiniz? Mesela birinci veri setindeki değerlerin ortalama değeri olan uzaklığı çok fazla.
+
+634
+01:30:52,336 --> 01:31:00,275
+Sağ taraftaki sayı dizisinde ise ortalama değer 10'du. Genelde ortalama değere yakın değerler aldığını görebiliyoruz.
+
+635
+01:31:00,275 --> 01:31:10,275
+Dağılımın yani ne kadar geniş bir aralıkta dağıldığını görüyoruz birincisinde. İkincisinde ise daha dar bir aralıkta değişim gösterdiğini söyleyebiliyoruz.
+
+636
+01:31:11,155 --> 01:31:22,275
+İşte bu değişim aralığını ifade eden şey standart sapma ve standart sapmayı daha önce dersimizde uygulamalarda kullanmıştık.
+
+637
+01:31:22,275 --> 01:31:49,275
+Burada da görüyorsunuz i eşit birden n'e kadar x i eksi x ortalama her bir sample'ın ortalama ile arasındaki farkın karesi bölü n-1 sample space'de standart sapmayı hesaplarken n-1'e bölüyoruz ve kare kökünü alıp buradan standart sapmayı hesaplayabiliyoruz.
+
+638
+01:31:49,275 --> 01:31:58,636
+Buna göre birinci veri seti ve ikinci veri seti için bakacak olursak hangisinde standart sapma daha büyük çıkar?
+
+639
+01:32:01,275 --> 01:32:01,735
+Bir.
+
+640
+01:32:02,516 --> 01:32:06,275
+Birinci veri setinde daha büyük çıkar görebiliyoruz.
+
+641
+01:32:07,275 --> 01:32:34,456
+Peki.
+
+642
+01:32:17,619 --> 01:32:21,619
+Annotation Toolbox'ı açamıyorum. Tekrar açmam gerekiyor.
+
+643
+01:32:27,859 --> 01:32:49,859
+Evet, şimdi standart sapmayı konuştuktan sonra değişken sayısının birden fazla olması durumunda, burada biz standart sapma hesaplamıştık, standart sapmada kare kök işlemini almasaydık bu varyans olacaktı, bunu da söyleyebiliriz.
+
+644
+01:32:49,859 --> 01:32:55,779
+standart sapmayla varyans arasındaki ilişkiyi de hatırlıyorsunuzdur.
+
+645
+01:32:56,139 --> 01:33:05,279
+Değişken sayısı birden fazla ise eğer, bu durumda varyansa ek olarak bir kovaryans kavramından bahsedeceğiz.
+
+646
+01:33:06,139 --> 01:33:13,839
+Burada az önceki örneğin iki farklı sayı dizisinde standart sapmanın nasıl hesaplandığı gösterilmiş.
+
+647
+01:33:13,839 --> 01:33:43,819
+varyans için kovaryans var.
+
+648
+01:33:25,332 --> 01:33:30,372
+Covariance için. Covariance ise değişkenlerin sayısı.
+
+649
+01:33:30,452 --> 01:33:34,112
+Yani biz az önce yaptığımız örnekte bir boyutlu bir veri vardı.
+
+650
+01:33:34,992 --> 01:33:36,852
+Tek bir özüntelik vardı.
+
+651
+01:33:36,852 --> 01:33:50,152
+Ama özüntelik sayısı birden fazla ise yani değişken sayısı birden fazla ise bu değişkenler arasındaki değişimi ifade eden covariance kavramını kullanacağız.
+
+652
+01:33:51,172 --> 01:33:52,852
+Bunları istatistikli zaten öğrendiniz.
+
+653
+01:33:52,852 --> 01:33:59,012
+Kısaca üstünden hatırlatma amaçlı geçmek için veriyorum.
+
+654
+01:33:59,012 --> 01:34:07,811
+Diyor ki X ve Y gibi iki tane farklı öz niteliğimiz olsa veya Z gibi X, Y, Z gibi üç boyutlu bir veri seti olsa elimizde.
+
+655
+01:34:08,472 --> 01:34:16,352
+Değişken çiftleri arasındaki ilişkiyi göstermek için covariance kavramından faydalanıyoruz.
+
+656
+01:34:16,352 --> 01:34:25,012
+Bir değişkenin kendi içerisindeki değişimini gösteren varyansın nasıl hesaplandığını aslında az önce gördük.
+
+657
+01:34:25,392 --> 01:34:29,352
+Her bir örneğin ortalamayla arasındaki fark karesi demiştik.
+
+658
+01:34:29,592 --> 01:34:35,012
+Burada kare almak yerine ikisini yan yana yazıp iki fark işlemini yan yana yazıp çarpmış.
+
+659
+01:34:35,392 --> 01:34:37,372
+Ve varyansı bu şekilde ifade etmiş.
+
+660
+01:34:37,372 --> 01:34:46,932
+Covariance işleminde ise X ve Y gibi iki tane öz niteliğiniz ya da iki değişkeniniz olsun.
+
+661
+01:34:46,932 --> 01:35:02,632
+Burada Y eşit birden N'e kadar sample sayısı kadar X, Y dediği her bir sample'ın X, Y öz niteliğinin ortalaması ile arasındaki fark.
+
+662
+01:35:03,392 --> 01:35:09,012
+Y, Y öz niteliğinin kendi ortalaması ile arasındaki farkın çarpımı bölü N-1.
+
+663
+01:35:09,012 --> 01:35:11,392
+Yani varyans formülüne çok benziyor.
+
+664
+01:35:12,112 --> 01:35:20,292
+Burada varyans da X, Y değişkeninin kendi ortalaması ile arasındaki farkın karesini alıp hesaplıyorduk.
+
+665
+01:35:20,712 --> 01:35:29,652
+X ve Y gibi iki değişken arasında covariance hesaplarken bir birinci değişkenin kendi ortalaması ile arasındaki fark,
+
+666
+01:35:30,052 --> 01:35:35,192
+ikinci değişkenin kendi ortalaması ile arasındaki farkın çarpımı şeklinde ifade ediliyor.
+
+667
+01:35:35,192 --> 01:35:37,152
+Covariance formülünde.
+
+668
+01:35:39,012 --> 01:35:47,332
+Covariance yine açıklamak için burada bir basit örnek vardı.
+
+669
+01:35:47,592 --> 01:35:49,552
+Oradan bakacak olursak.
+
+670
+01:35:50,012 --> 01:36:04,072
+İşte bir veri seti sınıfta belli bir derse çalışan öğrencilerin kaç saat çalıştığını ve aldıkları notları gösteren bir dataset örneği verilmiş.
+
+671
+01:36:04,932 --> 01:36:08,612
+Veri setinde kaç tane sample var acaba?
+
+672
+01:36:12,948 --> 01:36:17,268
+Veri setindeki sample sayısı nedir?
+
+673
+01:36:18,048 --> 01:36:18,508
+12.
+
+674
+01:36:19,708 --> 01:36:22,608
+Evet, 12 tane sample'ımız var.
+
+675
+01:36:23,927 --> 01:36:25,048
+Öz nitelik sayısı?
+
+676
+01:36:26,868 --> 01:36:28,408
+2.
+
+677
+01:36:29,228 --> 01:36:40,248
+Yani süre kaç saat çalışılmış ve bu dersten alınan notu gösteren bir sütun 2 tane öz niteliğimiz var.
+
+678
+01:36:40,248 --> 01:36:43,307
+2 tane değişkenimiz var.
+
+679
+01:36:44,188 --> 01:36:55,528
+Bu iki değişkenin birbiriyle olan ilişkisini göstermek için önce her bir değişkenin ortalaması hesaplanmış.
+
+680
+01:36:57,188 --> 01:37:09,427
+12 tane öğrencinin çalışma sürelerine bakılarak ortalama çalışma süresi 13.92 saat diye çıkmış.
+
+681
+01:37:09,427 --> 01:37:17,847
+Sağ tarafta ise alınan notu 12 kişinin not ortalamasının 62 olduğu gösterilmiş.
+
+682
+01:37:18,528 --> 01:37:19,288
+Hesaplanmış.
+
+683
+01:37:19,948 --> 01:37:25,427
+Şimdi siz kendinizi bu sınıftaki bir öğrencinin yerine koyduğunuzda ilk ne yapıyorsunuz?
+
+684
+01:37:26,588 --> 01:37:27,948
+Sınıfın ortalaması ne?
+
+685
+01:37:28,028 --> 01:37:31,508
+Ben bu ortalamanın altında mıyım, üstünde mıyım diye bakıyorsunuz.
+
+686
+01:37:32,328 --> 01:37:35,288
+Benzer şekilde bir inceleme yapmamız gerekiyor aslında.
+
+687
+01:37:35,288 --> 01:37:41,188
+Her sample için mesela birinci sıradaki sample için şuna bakmam gerekiyor.
+
+688
+01:37:41,548 --> 01:37:44,728
+Birinci öğrenci 9 saat çalışmış.
+
+689
+01:37:45,688 --> 01:37:47,908
+Ve mouse hareketlerini görüyorsunuz değil mi?
+
+690
+01:37:50,307 --> 01:37:51,168
+Evet hocam.
+
+691
+01:37:51,668 --> 01:37:52,548
+Görüyorsunuz tamam.
+
+692
+01:37:54,048 --> 01:37:56,368
+Birinci öğrenci 9 saat çalışmış.
+
+693
+01:37:56,368 --> 01:37:59,368
+9 saatlik çalışmanın sonunda...
+
+694
+01:38:00,368 --> 01:38:02,368
+Açabilirsek şöyle...
+
+695
+01:38:02,927 --> 01:38:06,648
+9 saat çalışmış.
+
+696
+01:38:07,488 --> 01:38:13,688
+Bunun sonunda, bir de 9 saati sınıfın ortalaması ile karşılaştıracağım.
+
+697
+01:38:13,788 --> 01:38:16,008
+Sınıfın ortalaması 13.92.
+
+698
+01:38:16,188 --> 01:38:19,368
+Yani sınıf yaklaşık 14 saat çalışmışken,
+
+699
+01:38:19,368 --> 01:38:24,488
+öğrenci bunun neredeyse 5 saat altında bir süre çalışmış.
+
+700
+01:38:25,008 --> 01:38:26,748
+Ve aldığı not 39.
+
+701
+01:38:28,887 --> 01:38:32,488
+Sınıfın not ortalaması ise 62.
+
+702
+01:38:33,048 --> 01:38:34,288
+Beklendik bir şey değil mi?
+
+703
+01:38:34,368 --> 01:38:36,588
+Zaten ortalamanın altında çalışmıştı.
+
+704
+01:38:36,688 --> 01:38:40,508
+Dolayısıyla ortalamanın altında bir not aldı diye yorum yapabiliriz.
+
+705
+01:38:40,868 --> 01:38:42,908
+İkinci sıradaki öğrenciye bakıyorum.
+
+706
+01:38:43,908 --> 01:38:45,748
+15 saat çalışmış.
+
+707
+01:38:46,508 --> 01:38:48,108
+İkinci sıradaki öğrenci.
+
+708
+01:38:48,108 --> 01:38:51,988
+Baktığımda 15 saat ders çalışmış.
+
+709
+01:38:52,988 --> 01:38:55,828
+Sınıfın ortalamasıyla kıyasladığım zaman,
+
+710
+01:38:56,427 --> 01:38:56,788
+şunu,
+
+711
+01:38:59,448 --> 01:39:01,188
+ortalamanın çok üstünde çalışmış.
+
+712
+01:39:01,328 --> 01:39:02,168
+Yani çok üstünde demeyeyim.
+
+713
+01:39:02,228 --> 01:39:03,968
+Bir saat fazlası çalışmış.
+
+714
+01:39:04,748 --> 01:39:06,828
+Sınıfın not ortalaması 62 iken,
+
+715
+01:39:07,088 --> 01:39:09,268
+öğrencinin aldığı not 56 olmuş.
+
+716
+01:39:09,268 --> 01:39:14,188
+Bu şimdi normal şeye, yapıya biraz uymayan bir örnek.
+
+717
+01:39:14,188 --> 01:39:19,908
+Çünkü süre ortalamanın üstündeyken,
+
+718
+01:39:20,228 --> 01:39:22,748
+aldığı not ortalama notun altında olmuş.
+
+719
+01:39:23,307 --> 01:39:26,868
+Demek ki aklını derse fazla verememiş diyebiliriz.
+
+720
+01:39:27,728 --> 01:39:31,128
+Üçüncü sıradaki öğrenci 25 saat çalışmış.
+
+721
+01:39:31,368 --> 01:39:34,068
+Ortalamanın neredeyse 2 katı.
+
+722
+01:39:34,648 --> 01:39:36,148
+Aldığı not 93.
+
+723
+01:39:36,148 --> 01:39:39,807
+Yani bu sınıftaki en iyi notu almış görünüyor.
+
+724
+01:39:40,807 --> 01:39:45,088
+Bu şekilde bir değerlendirme yaparsınız veri setinde değil mi?
+
+725
+01:39:45,168 --> 01:39:48,268
+Bu değerlendirmeyi işte covariance yardımıyla yapıyoruz.
+
+726
+01:39:48,628 --> 01:39:50,648
+Ve aslında bu iki değişken arasında,
+
+727
+01:39:50,908 --> 01:39:52,768
+biz normalde ne görmeyi bekleriz?
+
+728
+01:39:52,768 --> 01:39:58,508
+Bir derse ne kadar çok çalışırsam o kadar iyi not alırım.
+
+729
+01:39:59,508 --> 01:40:00,108
+Ortalamanın...
+
+730
+01:40:00,000 --> 01:40:13,039
+ortalamanın üstünde çalışırsam, ortalamanın üstünde not alırım gibi bir yorum yaparız. İşin doğası bunu gösteriyor. O nedenle buradaki kovaryansın pozitif çıkmasını bekliyoruz.
+
+731
+01:40:13,380 --> 01:40:18,039
+Kovaryansın da aşağıda nasıl hesaplandığını görüyorsunuz.
+
+732
+01:40:18,039 --> 01:40:23,180
+Ne yapmış? Az önce bizim yaptığımız gibi
+
+733
+01:40:23,180 --> 01:40:28,439
+9 saat çalışıp 39 alan öğrenciyi
+
+734
+01:40:28,439 --> 01:40:31,899
+ortalama çalışma süresiyle arasındaki farkı
+
+735
+01:40:31,899 --> 01:40:33,159
+burada yazmış.
+
+736
+01:40:34,380 --> 01:40:35,800
+Aldığı notla
+
+737
+01:40:35,800 --> 01:40:39,619
+sınıfın ortalama notu arasındaki farkı yazmış.
+
+738
+01:40:40,619 --> 01:40:43,300
+Ve bunların çarpımını sağ tarafta
+
+739
+01:40:43,300 --> 01:40:45,460
+hesaplamış.
+
+740
+01:40:46,460 --> 01:40:47,300
+Görebiliyoruz.
+
+741
+01:40:52,115 --> 01:40:54,555
+Annotation, okay.
+
+742
+01:41:05,300 --> 01:41:08,619
+İkinci öğrenci için benzer şekilde işlem yaptık.
+
+743
+01:41:10,640 --> 01:41:19,860
+Öğrencinin çalışma süresi ile ortalama çalışma süresi arasındaki fark ve aldığı notla sınıfın not ortalaması arasındaki fark.
+
+744
+01:41:20,039 --> 01:41:23,260
+Bunların ikisinin çarpımını da en sondaki sütuna yazdık.
+
+745
+01:41:23,260 --> 01:41:38,440
+En sondaki sütunda yer alan sayıların tamamını toplayıp ortalama yani sample sayısı eksi bire bölerek sample space de buradaki kovaryansı hesaplamış oldu.
+
+746
+01:41:38,960 --> 01:41:45,000
+Kovaryansın pozitif çıkması bu iki değişken arasında doğru orantı olduğunu gösteriyor.
+
+747
+01:41:45,000 --> 01:41:50,940
+Yani biri artarken diğeri de artıyor, biri azalırken diğeri de azalıyor ilişkisini gösteriyor.
+
+748
+01:41:50,940 --> 01:41:53,460
+Pozitif olması durumunda.
+
+749
+01:41:54,060 --> 01:41:56,340
+Negatif olması neyi anlatıyor?
+
+750
+01:41:56,539 --> 01:41:57,960
+O zaman ne diyebiliriz?
+
+751
+01:41:59,659 --> 01:42:02,980
+Ters orantı vardır.
+
+752
+01:42:03,400 --> 01:42:03,560
+Evet.
+
+753
+01:42:04,720 --> 01:42:13,119
+Yani böyle bir başka bir problemde bu iki değişken birbiriyle ters orantılı gidiyor olabilir.
+
+754
+01:42:13,119 --> 01:42:16,860
+O zaman kovaryans negatif çıkar diyoruz.
+
+755
+01:42:16,860 --> 01:42:27,119
+Bu tür kavramları biliyorum istatistikte öğrendiniz ama bazen bunları çok matematik olarak öğreniyorsunuz ve hiçbir şey hatırlamıyorsunuz.
+
+756
+01:42:27,180 --> 01:42:35,239
+Aslında bazı şeyleri böyle biraz nerede nasıl kullanıldığıyla ilişkilendirip öğrenirseniz unutmazsınız diye ümit ediyorum.
+
+757
+01:42:35,239 --> 01:42:44,500
+O nedenle ben açıkçası varyans, kovaryans, korelasyon gibi istatistiksel parametrelerin anlamını,
+
+758
+01:42:44,960 --> 01:42:53,619
+formülünü de zaten anlamını biliyorsanız formülü oradan çıkartabilirsiniz ama anlamını mutlaka bilmelisiniz diye düşünüyorum.
+
+759
+01:42:54,060 --> 01:42:59,680
+Burada kovaryans bizim işimize yarayacak önemli bir parametre.
+
+760
+01:42:59,680 --> 01:43:29,680
+Evet.
+
+761
+01:43:03,444 --> 01:43:23,984
+Eğer üç tane değişken varsa bir veri setinde X, Y, Z gibi değişkenler arasında kovaryans hesaplayabiliriz dedik. Bu durumda bir kovaryans matrisinden söz edilir. Burada C ile göstermiş olan kovaryans matrisini gösteriyor.
+
+762
+01:43:23,984 --> 01:43:29,764
+Kovaryans matrisinde ana köşegen neyi gösterir acaba? Ne dersiniz?
+
+763
+01:43:30,324 --> 01:43:35,204
+Varyansı gösterir. Çok güzel, teşekkür ederim.
+
+764
+01:43:35,964 --> 01:43:42,324
+Burada kovaryans matrisinin ana köşegeni dediğim şunlar, pardon.
+
+765
+01:43:44,644 --> 01:43:49,464
+Kovaryans XX dediği X değişkeni için varyansı gösteriyor.
+
+766
+01:43:49,464 --> 01:43:54,464
+Kovaryans Y değişkenin var.
+
+767
+01:43:54,464 --> 01:44:00,064
+Ve burada Z Z dediği de Z değişkeninin varyansını gösteriyor.
+
+768
+01:44:00,064 --> 01:44:00,864
+Ana köşegen.
+
+769
+01:44:01,384 --> 01:44:04,784
+Ve kovaryans matrisi de yine simetrik bir matristir.
+
+770
+01:44:05,064 --> 01:44:09,264
+Kovaryans XY, kovaryans YX ile aynıdır.
+
+771
+01:44:09,604 --> 01:44:15,824
+Dolayısıyla simetriden dolayı şu değerler birbiriyle aynı olacaktır.
+
+772
+01:44:16,204 --> 01:44:18,804
+Bunları da yine şöyle bir hatırlamış olalım.
+
+773
+01:44:19,464 --> 01:44:23,864
+Simetrik matris olduğunu söyledik.
+
+774
+01:44:28,787 --> 01:44:41,307
+Burası PCI anlatabilmem için, yani Principal Component Analizi anlatabilmem için gerekli, istatistikle ilgili gerekli konu başlıklarıydı.
+
+775
+01:44:41,587 --> 01:44:45,867
+Şimdi biraz da linearce birle ilgili kısaca bir hatırlatma yapmam gerekiyor.
+
+776
+01:44:46,627 --> 01:44:55,947
+Özellikle öz değer, öz vektör hesaplamaları nasıl yapılıyordu onları şöyle bir hatırlamak gerekiyor.
+
+777
+01:45:05,652 --> 01:45:09,412
+Matris vektör çarpımını önce bir hatırlayalım.
+
+778
+01:45:09,412 --> 01:45:13,952
+Burada ikiye ikilik bir matris ve iki çarpı birlik bir vektör verilmiş.
+
+779
+01:45:14,051 --> 01:45:15,752
+Bu ikisinin çarpımını istiyor.
+
+780
+01:45:16,292 --> 01:45:18,112
+Matrisin birinci satırını aldım.
+
+781
+01:45:18,271 --> 01:45:20,152
+Vektörün birinci sütunuyla çarptım.
+
+782
+01:45:20,431 --> 01:45:21,832
+Sonucu elde ettim.
+
+783
+01:45:22,631 --> 01:45:27,612
+Ve şurada gördüğümüz vektör bu çarpma işleminin sonucunda çıktı.
+
+784
+01:45:28,391 --> 01:45:31,252
+İkinci satırda verilen işlemde lütfen dikkat.
+
+785
+01:45:31,252 --> 01:45:38,252
+Bize verilmiş olan matris vektör çarpımı işleminin sonucu 12'ye 8 çıkmış.
+
+786
+01:45:39,391 --> 01:45:40,112
+Yani ne yaptık?
+
+787
+01:45:40,192 --> 01:45:41,931
+Matrisin birinci satırını aldım.
+
+788
+01:45:42,032 --> 01:45:43,351
+Bu vektörle çarptım.
+
+789
+01:45:43,412 --> 01:45:47,212
+3 kere 2 6, 3 kere 2 6, 12 yaptı toplamları.
+
+790
+01:45:47,971 --> 01:45:49,931
+İkinci satırı vektörle çarptım.
+
+791
+01:45:50,051 --> 01:45:52,532
+3 kere 2 6, 2 kere 1 2.
+
+792
+01:45:52,712 --> 01:45:58,271
+Burası 6 artı 2 8 yaptı.
+
+793
+01:45:58,271 --> 01:46:03,591
+Elde ettiğim vektörü 12 8 çıktı bu vektör.
+
+794
+01:46:03,931 --> 01:46:05,771
+A tut işleminin sonucunda.
+
+795
+01:46:06,731 --> 01:46:14,271
+Bu vektörü ben sağ tarafta gördüğünüz gibi bir sabit sayı ve bir vektör çarpımı şeklinde ifade edebiliyorum.
+
+796
+01:46:15,231 --> 01:46:16,992
+Ve bu vektör lütfen dikkat.
+
+797
+01:46:17,452 --> 01:46:21,131
+Az önce çarpma işleminde kullandığım vektörü gösteriyor.
+
+798
+01:46:21,131 --> 01:46:34,051
+İşte bir matrisin bu şekilde bir vektörle çarpılması sonucu elde ettiğimiz işlem sonucunu bir kat sayı çarpı o vektör şeklinde ifade edebiliyorsak,
+
+799
+01:46:34,652 --> 01:46:49,311
+buradaki 4 sayısı şu 2'ye 2'lik matrisin öz değeri, 3 2 vektörü ise bu verilmiş olan 2'ye 2'lik matrisin öz vektörünü gösteriyordur.
+
+800
+01:46:49,311 --> 01:46:54,351
+Peki biz burada bunu bu şekilde gösterdik.
+
+801
+01:46:54,452 --> 01:47:05,811
+Acaba bize verilmiş bir 2'ye 2'lik matrisin ya da daha büyük bir kare matrisin öz değer ve öz vektörlerini nasıl hesaplayabiliriz?
+
+802
+01:47:06,311 --> 01:47:08,212
+Nasıl hesaplayabiliriz?
+
+803
+01:47:09,511 --> 01:47:10,351
+Problem bu.
+
+804
+01:47:10,351 --> 01:47:16,351
+Bunları da yine linier cebir dersinde muhtemelen öğrendiniz.
+
+805
+01:47:17,351 --> 01:47:23,372
+Bununla ilgili bir burada örnek var.
+
+806
+01:47:23,492 --> 01:47:24,792
+Onu yapabiliriz.
+
+807
+01:47:24,971 --> 01:47:28,391
+Öz değer öz vektör hesaplama işlemiyle ilgili.
+
+808
+01:47:29,492 --> 01:47:30,412
+Öz değer.
+
+809
+01:47:32,412 --> 01:47:32,851
+Evet.
+
+810
+01:47:34,112 --> 01:47:38,631
+Yine bir örnekte gösterelim.
+
+811
+01:47:38,631 --> 01:48:07,631
+Evet.
+
+812
+01:47:55,859 --> 01:48:01,859
+Bakalım, tablet duruyor yerinde, bağlantı yapmak istiyorum.
+
+813
+01:48:09,555 --> 01:48:12,555
+Evet.
+
+814
+01:48:32,307 --> 01:48:35,967
+Önce madresinizi yazalım.
+
+815
+01:48:35,967 --> 01:48:39,967
+A kırmızı oldu.
+
+816
+01:48:41,967 --> 01:48:43,948
+Kalın siyah yapalım.
+
+817
+01:48:59,507 --> 01:49:23,507
+A bir kare matrisi gösteriyor. Büyük harfle yazdım. X bir vektörü gösteriyor. A matrisiyle X vektörünü çarptım. Görebiliyor musunuz? Görüyoruz hocam. Bir şey sordu sanki biri bir ses geldi. AX. Yok birim matris çıkacak dedim hocam sonunda.
+
+818
+01:49:23,507 --> 01:49:25,547
+Evet. Şimdi
+
+819
+01:49:25,547 --> 01:49:27,667
+Eksi
+
+820
+01:49:27,667 --> 01:49:29,307
+Lambda
+
+821
+01:49:29,307 --> 01:49:31,667
+Çarpı I çarpı
+
+822
+01:49:31,667 --> 01:49:33,667
+X eşit sıfır
+
+823
+01:49:33,667 --> 01:49:35,167
+Şeklinde yazacağım.
+
+824
+01:49:35,747 --> 01:49:35,927
+Bu
+
+825
+01:49:35,927 --> 01:49:41,768
+Karakteristik
+
+826
+01:49:41,768 --> 01:50:11,768
+Dikajan
+
+827
+01:49:48,115 --> 01:49:49,235
+Giderek.
+
+828
+01:49:51,095 --> 01:50:09,115
+Çünkü biz az önce hatırlarsanız bunu nasıl tarif etmiştik? A çarpı x eşit lambda çarpı x şeklinde göstermiştim. Bunu bu şekilde yazdım.
+
+829
+01:50:09,115 --> 01:50:23,895
+ve bu yazdığım denkleme şu şekilde ifade edebilirim. x vektörü ile çarpım var her iki terimde de.
+
+830
+01:50:23,895 --> 01:50:38,836
+A eksi lambda çarpı I birim ve matriz çarpı x eşit sıfır şeklinde yeniden düzenleyebilirim.
+
+831
+01:50:40,036 --> 01:50:43,855
+Buna göre benim amacım nedir?
+
+832
+01:50:44,256 --> 01:50:52,456
+İşte bunu sağlayacak x vektörünü ve lambda öz değerlerini bulabilmek.
+
+833
+01:50:52,456 --> 01:51:08,735
+bu amaçla bu amaçla A eksi lambda I için singular olur.
+
+834
+01:51:08,735 --> 01:51:08,796
+A eksi lambda I için singular olur.
+
+835
+01:51:17,140 --> 01:51:27,300
+A-Lambda I'nın determinantını sıfıra işleyerek bunu sağlayacak.
+
+836
+01:51:28,020 --> 01:51:36,740
+Önce lambda değerini bulacağım. Daha sonra bulduğum lambda değerini, önce bunu sağlayacak lambda değerini bulacağım.
+
+837
+01:51:36,740 --> 01:51:47,240
+Daha sonra şu işlemde yerine koyarak bunu sağlayacak X vektörlerini bulmaya çalışacağım.
+
+838
+01:51:48,100 --> 01:51:56,079
+Hatırlatma, dinerce bir de dediğim gibi bunları zaten öğrenmiştiniz. Kısa bir hatırlatma.
+
+839
+01:52:03,412 --> 01:52:05,152
+Bir basit örnekle
+
+840
+01:52:11,731 --> 01:52:12,731
+gidelim
+
+841
+01:52:14,731 --> 01:52:21,131
+Bu bir A matrisi alalım ikiye ikilik küçük bir matriz
+
+842
+01:52:21,131 --> 01:52:27,731
+2 1 1 2 simetrik bir matriz
+
+843
+01:52:29,431 --> 01:52:36,532
+ve bunun için ne bulmak istiyoruz öz derbe öz vektörlerini bulmak istiyoruz
+
+844
+01:52:36,532 --> 01:52:46,332
+Az önce yazdığımız denklem de bunları yerine koyarak bulabiliriz
+
+845
+01:52:46,332 --> 01:52:51,832
+yani düzenlediğimde aslında
+
+846
+01:52:51,832 --> 01:52:58,332
+şöyle yazayım yine ne demiştik az önce determinant
+
+847
+01:52:58,332 --> 01:53:06,131
+A eksi lambda I eşit sıfır olacak şekilde
+
+848
+01:53:06,131 --> 01:53:12,131
+determinantını sıfır yapacak şekilde lambda değerlerini bulmam gerekiyor demiştim
+
+849
+01:53:12,131 --> 01:53:17,631
+bu zaman determinantını bulacağım olan bulacağım matriz
+
+850
+01:53:17,631 --> 01:53:22,431
+A eksi lambda I şeklinde olacak
+
+851
+01:53:22,431 --> 01:53:29,431
+birim matrisi I matrisi ana köşe geni bir olan matriz hatırlıyorsunuz
+
+852
+01:53:29,431 --> 01:53:32,631
+o zaman burası 2 eksi lambda
+
+853
+01:53:32,631 --> 01:53:38,631
+1 1 2 eksi lambda olacak
+
+854
+01:53:38,631 --> 01:53:44,431
+bu matrizin determinantını sıfıra eşitleyeceğim
+
+855
+01:53:44,431 --> 01:53:46,431
+bu da
+
+856
+01:53:46,431 --> 01:53:54,631
+2 eksi lambdanın karesi eksi 1 eşit sıfırdır
+
+857
+01:53:54,631 --> 01:53:57,431
+determinantını alıp yazdığımda
+
+858
+01:53:57,431 --> 01:54:03,431
+buradan bir ikinci dereceden denklem bulacağım
+
+859
+01:54:03,431 --> 01:54:06,431
+bu ikinci dereceden denklemin kökleri
+
+860
+01:54:06,431 --> 01:54:11,231
+iki tane değer iki kök bulacağım
+
+861
+01:54:11,231 --> 01:54:14,231
+bunu düzenlediğimiz zaman
+
+862
+01:54:14,231 --> 01:54:16,231
+şurayı düzenlediğimiz zaman
+
+863
+01:54:16,231 --> 01:54:19,231
+bunun için
+
+864
+01:54:19,231 --> 01:54:23,231
+evet bunun için 3 ve 1 çıkıyor
+
+865
+01:54:23,231 --> 01:54:26,231
+düzenlenmiş hali de kökleri
+
+866
+01:54:26,231 --> 01:54:30,032
+yani ben lambda değerini bir kök
+
+867
+01:54:30,032 --> 01:54:32,231
+şimdi lambda 1
+
+868
+01:54:32,231 --> 01:54:36,032
+lambda 2'yi de 3 şeklinde yazabilirim
+
+869
+01:54:36,032 --> 01:54:40,032
+buradan iki tane kök bulmuş olduk
+
+870
+01:54:40,032 --> 01:54:43,032
+bu lambda değerlerini az önce söylediğim gibi
+
+871
+01:54:43,032 --> 01:54:48,032
+matriz vektör çarpımı şeklinde yazıp
+
+872
+01:54:48,032 --> 01:54:50,032
+yerine koyacak olursam
+
+873
+01:54:50,032 --> 01:54:53,032
+oradan iki tane vektör bulacağım
+
+874
+01:54:53,032 --> 01:54:57,332
+vektörün aslında benim için önemli olan şey yönelimi
+
+875
+01:54:57,332 --> 01:55:04,231
+yani vektörün yönelimini bulmak benim için yetiyor
+
+876
+01:55:04,231 --> 01:55:05,431
+o yüzden
+
+877
+01:55:05,431 --> 01:55:14,532
+elimizdeki matriz 2,1,1,2 matriziydi
+
+878
+01:55:14,532 --> 01:55:20,032
+bunu bir x,y vektörüyle çarpıyorum
+
+879
+01:55:20,032 --> 01:55:24,231
+ve bunun sonucunda ne demiştik
+
+880
+01:55:24,231 --> 01:55:30,032
+a çarpı x eşit lambda çarpı x demiştik
+
+881
+01:55:30,032 --> 01:55:33,271
+lambda 1, lambda 2, iki tane değer bulduk
+
+882
+01:55:33,271 --> 01:55:35,332
+bunları yerlerine yazarak koyacağım
+
+883
+01:55:35,332 --> 01:55:38,072
+burada 3 ve 1 de
+
+884
+01:55:38,072 --> 01:55:39,591
+3'ü aldım önce
+
+885
+01:55:39,591 --> 01:55:41,771
+x,y dedim
+
+886
+01:55:41,771 --> 01:55:45,032
+bunu sağlayacak x,y değerlerini bulmaya çalışıyorum
+
+887
+01:55:45,032 --> 01:55:49,032
+aslında şunu çözdüğümüz zaman iki tane denklem
+
+888
+01:55:49,032 --> 01:55:52,032
+iki bilinmeyen var
+
+889
+01:55:52,032 --> 01:55:57,032
+buradan sonuç x eşit y çıkıyor
+
+890
+01:55:57,032 --> 01:55:58,032
+x eşit y çıkıyor
+
+891
+01:55:58,032 --> 01:56:02,032
+ve biz demiştik ki aslında bizim için yönelimini bilmek yeterli
+
+892
+01:56:02,032 --> 01:56:04,032
+yani ben
+
+893
+01:56:04,032 --> 01:56:30,032
+ben
+
+894
+01:56:04,787 --> 01:56:06,787
+X eşit Y şeklinde
+
+895
+01:56:06,787 --> 01:56:08,427
+bir vektör
+
+896
+01:56:08,427 --> 01:56:10,067
+aslında tarif ediyorum.
+
+897
+01:56:10,347 --> 01:56:12,587
+Yani X'i birse Y'si de bir.
+
+898
+01:56:14,587 --> 01:56:16,967
+X'i eksi birse Y'si de
+
+899
+01:56:16,967 --> 01:56:18,907
+eksi bir olan bir vektör
+
+900
+01:56:18,907 --> 01:56:20,627
+tarif ediyorum. Demek ki benim
+
+901
+01:56:20,627 --> 01:56:23,287
+aslında vektörüm
+
+902
+01:56:23,287 --> 01:56:24,847
+aradığım vektör
+
+903
+01:56:24,847 --> 01:56:26,267
+budur diyebiliyorum.
+
+904
+01:56:26,467 --> 01:56:27,587
+Yönelimini
+
+905
+01:56:27,587 --> 01:56:30,307
+çizmekti benim amacım.
+
+906
+01:56:30,427 --> 01:56:32,327
+Orijinden geçiyor. Çizime bakmayın.
+
+907
+01:56:32,447 --> 01:56:33,727
+Ben biraz yamuk çizdim.
+
+908
+01:56:34,787 --> 01:56:37,367
+Kalınlaştırayım da orijinden geçsin.
+
+909
+01:56:38,087 --> 01:56:39,227
+Evet bu şekilde
+
+910
+01:56:39,227 --> 01:56:41,827
+bir vektör. İkincisi
+
+911
+01:56:41,827 --> 01:56:43,587
+ise burada biz lambda
+
+912
+01:56:43,587 --> 01:56:46,027
+iki değerini
+
+913
+01:56:46,027 --> 01:56:47,507
+yerine koymuştuk. Lambda
+
+914
+01:56:47,507 --> 01:56:49,767
+iki eşit üç için bunu yaptık.
+
+915
+01:56:50,127 --> 01:56:51,607
+Bir de lambda bir eşit bir
+
+916
+01:56:51,607 --> 01:56:53,667
+vardı elimizde. Onu da
+
+917
+01:56:53,667 --> 01:56:55,147
+aynı şekilde denklem
+
+918
+01:56:55,147 --> 01:56:57,507
+yani bu matris vektör
+
+919
+01:56:57,507 --> 01:56:59,607
+çarpımı formunda yazıp
+
+920
+01:56:59,607 --> 01:57:01,607
+baktığımızda
+
+921
+01:57:01,607 --> 01:57:06,147
+orada da ne çıkıyor?
+
+922
+01:57:08,647 --> 01:57:10,087
+X eşit
+
+923
+01:57:10,087 --> 01:57:11,667
+eksi Y çıkıyordu.
+
+924
+01:57:13,107 --> 01:57:13,867
+Buradan
+
+925
+01:57:13,867 --> 01:57:16,907
+X eşit bir için
+
+926
+01:57:16,907 --> 01:57:18,407
+Y eksi bir çıkacak.
+
+927
+01:57:18,567 --> 01:57:20,487
+Yani öbür vektör ise
+
+928
+01:57:20,487 --> 01:57:24,027
+öbür vektör ise
+
+929
+01:57:24,027 --> 01:57:25,367
+şöyle
+
+930
+01:57:25,367 --> 01:57:28,087
+bir vektör olacak.
+
+931
+01:57:30,307 --> 01:57:31,607
+Öz vektörlerin
+
+932
+01:57:31,607 --> 01:57:32,587
+özelliği
+
+933
+01:57:32,587 --> 01:57:33,707
+birbirlerine dik
+
+934
+01:57:33,707 --> 01:57:34,427
+olmaları
+
+935
+01:57:34,427 --> 01:57:36,127
+özelliği var.
+
+936
+01:57:37,707 --> 01:57:38,827
+Başka ne diyebilirim?
+
+937
+01:57:38,947 --> 01:57:39,627
+Hatırladığım
+
+938
+01:57:39,627 --> 01:57:41,207
+bu var şu anda.
+
+939
+01:57:42,867 --> 01:57:43,827
+İki ekilik bir
+
+940
+01:57:43,827 --> 01:57:45,007
+A matrisi için
+
+941
+01:57:45,007 --> 01:57:46,487
+şu matris A matrisi
+
+942
+01:57:46,487 --> 01:57:48,627
+bu bir
+
+943
+01:57:48,627 --> 01:57:50,487
+X vektörüydü.
+
+944
+01:57:51,587 --> 01:57:51,927
+Bununla
+
+945
+01:57:51,927 --> 01:57:52,487
+çarptığımızda
+
+946
+01:57:53,067 --> 01:57:53,967
+lambda
+
+947
+01:57:53,967 --> 01:57:54,527
+çarpı
+
+948
+01:57:54,527 --> 01:57:55,387
+X şeklinde
+
+949
+01:57:55,387 --> 01:57:56,467
+bunu ifade
+
+950
+01:57:56,467 --> 01:57:57,167
+ettik.
+
+951
+01:57:57,847 --> 01:57:58,367
+Burada X
+
+952
+01:57:58,367 --> 01:57:59,467
+değişkenleri iki kere
+
+953
+01:57:59,467 --> 01:58:00,587
+kullanıldı gibi oldu.
+
+954
+01:58:00,707 --> 01:58:01,847
+Kafanız karışmasın.
+
+955
+01:58:02,047 --> 01:58:02,947
+Burada kullandığım
+
+956
+01:58:02,947 --> 01:58:03,887
+X vektörü
+
+957
+01:58:03,887 --> 01:58:04,487
+bu X vektörünün
+
+958
+01:58:05,067 --> 01:58:05,927
+parametreleri
+
+959
+01:58:05,927 --> 01:58:06,487
+aslında
+
+960
+01:58:06,487 --> 01:58:09,307
+oradaki
+
+961
+01:58:09,307 --> 01:58:10,227
+X ve Y
+
+962
+01:58:10,227 --> 01:58:11,487
+gösterdiği.
+
+963
+01:58:13,947 --> 01:58:14,787
+Böylece
+
+964
+01:58:14,787 --> 01:58:16,327
+öz değer
+
+965
+01:58:16,327 --> 01:58:17,247
+yani
+
+966
+01:58:17,247 --> 01:58:18,247
+lambda
+
+967
+01:58:18,247 --> 01:58:20,927
+Agen
+
+968
+01:58:20,927 --> 01:58:22,727
+value
+
+969
+01:58:22,727 --> 01:58:24,547
+ve
+
+970
+01:58:24,547 --> 01:58:26,027
+burada gördüğümüz
+
+971
+01:58:26,027 --> 01:58:26,527
+X
+
+972
+01:58:26,527 --> 01:58:29,487
+Agen vektörünün
+
+973
+01:58:29,487 --> 01:58:30,487
+nasıl
+
+974
+01:58:31,147 --> 01:58:32,647
+hesaplandığını
+
+975
+01:58:32,647 --> 01:58:33,967
+ve vektörler
+
+976
+01:58:33,967 --> 01:58:34,667
+arasındaki
+
+977
+01:58:34,667 --> 01:58:35,987
+işte ilişkiyi
+
+978
+01:58:35,987 --> 01:58:36,907
+vesaireyi
+
+979
+01:58:36,907 --> 01:58:38,347
+açıklamış
+
+980
+01:58:38,347 --> 01:58:38,487
+olduk.
+
+981
+01:58:40,327 --> 01:58:40,547
+Yine
+
+982
+01:58:40,547 --> 01:58:41,407
+her cebirden
+
+983
+01:58:41,407 --> 01:58:42,367
+kısa kısa
+
+984
+01:58:42,367 --> 01:58:43,807
+hatırlatmalar
+
+985
+01:58:43,807 --> 01:58:44,847
+diyelim buna da.
+
+986
+01:58:48,627 --> 01:59:03,027
+Ara saati gelmiş. Şimdi bu temel kavramları öğrendikten sonra ne yapacağız? Artık bunları yerlerine yazıp bir temel bileşen analizini, PSE'nin nasıl yapıldığını göreceğiz.
+
+987
+01:59:03,188 --> 01:59:12,047
+Dokümanda zaten adım adım anlatıyor, oradan göreceğiz. Bir 10 dakika ara vereceğim tekrar. 10 geçe başlıyoruz.
+
+988
+02:13:10,452 --> 02:13:12,012
+Evet merhaba arkadaşlar.
+
+989
+02:13:12,372 --> 02:13:14,032
+Kaldığımız yerden devam edeceğiz.
+
+990
+02:13:14,412 --> 02:13:15,612
+Önce elleri indirin.
+
+991
+02:13:15,832 --> 02:13:16,872
+Sonra kaldırın.
+
+992
+02:13:17,112 --> 02:13:19,192
+Çünkü hala eli havada olanlar var.
+
+993
+02:13:20,132 --> 02:13:22,231
+Evet önce bir burada gerçekten
+
+994
+02:13:22,231 --> 02:13:23,891
+burada mıyız bir görmek için
+
+995
+02:13:23,891 --> 02:13:26,652
+o önceki kaldırılmış eller bir insin.
+
+996
+02:13:26,851 --> 02:13:27,431
+[öğrenci].
+
+997
+02:13:29,112 --> 02:13:29,492
+Evet.
+
+998
+02:13:30,351 --> 02:13:31,592
+Tamam. Peki.
+
+999
+02:13:34,132 --> 02:13:36,132
+Anladığım kadarıyla buradasınız
+
+1000
+02:13:36,132 --> 02:13:37,231
+sevgili arkadaşlar.
+
+1001
+02:13:38,231 --> 02:13:39,931
+Az önce bir karikatür gördüm.
+
+1002
+02:13:40,452 --> 02:13:43,092
+Aslında sizinle paylaşacaktım
+
+1003
+02:13:43,092 --> 02:13:45,172
+fakat tekrar rastlayamadım.
+
+1004
+02:13:45,972 --> 02:13:47,592
+Eskiden okuldan kaçmak
+
+1005
+02:13:47,592 --> 02:13:48,792
+nasıl olurdu diye
+
+1006
+02:13:48,792 --> 02:13:50,172
+vermiş.
+
+1007
+02:13:50,712 --> 02:13:53,372
+İşte okulun duvarlarından
+
+1008
+02:13:53,372 --> 02:13:55,672
+atlamaya çalışan öğrencilerin
+
+1009
+02:13:55,672 --> 02:13:56,412
+resimleri.
+
+1010
+02:13:56,952 --> 02:13:58,072
+Günümüzde derste
+
+1011
+02:13:58,072 --> 02:14:00,891
+okuldan kaçmak diye yazılmış.
+
+1012
+02:14:02,072 --> 02:14:03,292
+Kamera ve mikrofon
+
+1013
+02:14:03,292 --> 02:14:05,391
+kapalı. Öğrenci orada mı
+
+1014
+02:14:05,391 --> 02:14:06,492
+yok mu bilmiyoruz.
+
+1015
+02:14:06,492 --> 02:14:08,891
+Biraz öyle oluyor aslında.
+
+1016
+02:14:08,891 --> 02:14:10,992
+hakikaten sizi karşımızda
+
+1017
+02:14:10,992 --> 02:14:11,532
+görememek
+
+1018
+02:14:11,532 --> 02:14:13,572
+çok üzücü.
+
+1019
+02:14:14,692 --> 02:14:16,032
+Fakat en azından
+
+1020
+02:14:16,032 --> 02:14:17,431
+bana
+
+1021
+02:14:17,431 --> 02:14:19,811
+bir işaret veriyorsunuz
+
+1022
+02:14:19,811 --> 02:14:20,512
+buradayız diye.
+
+1023
+02:14:20,652 --> 02:14:21,311
+Hoşuma gidiyor.
+
+1024
+02:14:21,452 --> 02:14:22,872
+Teşekkür ederim arkadaşlar.
+
+1025
+02:14:24,532 --> 02:14:25,972
+Ellerinizi gördüğüm için.
+
+1026
+02:14:25,972 --> 02:14:31,252
+dinlendiniz mi?
+
+1027
+02:14:31,252 --> 02:14:32,192
+Yemek yediniz mi?
+
+1028
+02:14:32,252 --> 02:14:32,652
+Bilmiyorum.
+
+1029
+02:14:32,771 --> 02:14:34,391
+Çok fazla vaktiniz yoktu ama
+
+1030
+02:14:34,391 --> 02:14:35,652
+ben bir çay aldım.
+
+1031
+02:14:36,612 --> 02:14:37,952
+Şu anda sadece
+
+1032
+02:14:37,952 --> 02:14:39,032
+çay içiyorum.
+
+1033
+02:14:39,032 --> 02:14:42,731
+derste bana hiç soru
+
+1034
+02:14:42,731 --> 02:14:43,552
+sormuyorsunuz.
+
+1035
+02:14:43,592 --> 02:14:44,152
+Nedir durum?
+
+1036
+02:14:47,152 --> 02:14:49,212
+Her şey çok güzel anlaşılıyor mu?
+
+1037
+02:14:49,292 --> 02:14:49,692
+Yoksa
+
+1038
+02:14:49,692 --> 02:14:51,092
+koptunuz,
+
+1039
+02:14:51,492 --> 02:14:52,872
+takip edemiyor musunuz?
+
+1040
+02:14:55,672 --> 02:14:56,792
+Anlamayan var mı?
+
+1041
+02:14:56,891 --> 02:14:57,771
+Anlaşılır hocam.
+
+1042
+02:14:58,771 --> 02:14:59,412
+Tamam.
+
+1043
+02:14:59,412 --> 02:15:03,012
+Lütfen anlamadığınız noktalarda
+
+1044
+02:15:03,012 --> 02:15:04,792
+soru sormaktan çekinmeyin.
+
+1045
+02:15:06,072 --> 02:15:07,912
+Yani online olması dersin
+
+1046
+02:15:07,912 --> 02:15:09,752
+interaktif olmayacağı anlamına
+
+1047
+02:15:09,752 --> 02:15:10,271
+gelmiyor.
+
+1048
+02:15:10,431 --> 02:15:11,391
+Hatta daha kolay
+
+1049
+02:15:11,391 --> 02:15:13,351
+interaktif ders yapabiliriz
+
+1050
+02:15:13,351 --> 02:15:14,192
+diye düşünüyorum.
+
+1051
+02:15:15,252 --> 02:15:16,012
+O yüzden
+
+1052
+02:15:16,012 --> 02:15:18,231
+anlaşılmayan noktalarda
+
+1053
+02:15:18,231 --> 02:15:19,672
+soru sorabilirsiniz.
+
+1054
+02:15:19,672 --> 02:15:20,912
+Her zaman.
+
+1055
+02:15:25,524 --> 02:15:31,524
+Evet. Şimdi, Share Screen yapalım.
+
+1056
+02:15:45,140 --> 02:15:47,140
+Evet en son burada kalmıştık.
+
+1057
+02:15:52,140 --> 02:15:56,920
+Artık gerekli matematiği öğrendik veya hatırladık diyelim.
+
+1058
+02:15:58,079 --> 02:16:04,980
+İstatistikte ve lineerce bir de bu işlemler nasıl yapılıyordu şöyle bir hatırlatma yaptıktan sonra.
+
+1059
+02:16:04,980 --> 02:16:22,880
+Burada temel bileşen analizi ile veri setindeki uzayı başka bir uzaya öz nitelik uzayına dönüştürme işlemi nasıl gerçekleştirilir bunu göreceğiz.
+
+1060
+02:16:24,180 --> 02:16:25,539
+Aslında oldukça kolay.
+
+1061
+02:16:25,960 --> 02:16:28,840
+Adım adım neler yaptığımıza lütfen dikkat edelim.
+
+1062
+02:16:29,980 --> 02:16:33,500
+Birinci basamak get some data demiş.
+
+1063
+02:16:33,500 --> 02:16:41,120
+Ben burada örnekli çalışacağım yine size bir örnek data set vereceğim onun üzerinden gideceğim daha kolay anlaşılsın diye.
+
+1064
+02:16:42,100 --> 02:16:44,739
+İki boyutlu bir data setimiz olduğunu varsayalım.
+
+1065
+02:16:44,899 --> 02:16:49,540
+Basit olsun ki işlemleri takip edebilen istiyorum.
+
+1066
+02:16:52,360 --> 02:17:00,720
+Tabii örneğimiz two dimensional data olarak verilmiş ama ve bunun bir çizimi de karşımıza gelecek.
+
+1067
+02:17:00,720 --> 02:17:10,579
+Ama tabii ki bu gerçek bir problemle ilgilendiğinizde öz nitelik sayısı ikiden çok fazla olabilir.
+
+1068
+02:17:10,760 --> 02:17:11,440
+Bunu biliyoruz.
+
+1069
+02:17:12,079 --> 02:17:16,220
+İkinci adım diyor ki subtract the mean data seti aldık.
+
+1070
+02:17:16,380 --> 02:17:19,500
+Her bir öz niteliğin ortalama değerini hesapladık.
+
+1071
+02:17:19,620 --> 02:17:28,600
+Her bir boyut için ayrı ayrı ortalama hesaplayıp veri setini sıfır ortalamalı bir veri seti haline getireceğiz.
+
+1072
+02:17:28,600 --> 02:17:34,300
+Bunu bir örnek üzerinden de takip edeceğimizi söylemiştim.
+
+1073
+02:17:34,399 --> 02:17:35,600
+Örneğe lütfen dikkat.
+
+1074
+02:17:37,600 --> 02:17:40,059
+X ve Y öz niteliklerimiz olsun.
+
+1075
+02:17:40,059 --> 02:17:46,440
+Veri setinde 2, 4, 6, 8, 10 tane satır görüyorsunuz.
+
+1076
+02:17:46,500 --> 02:17:48,139
+Yani 10 tane sample var.
+
+1077
+02:17:49,159 --> 02:17:58,159
+Düzlemde verilmiş örnek ve bu sample'ların her birinin yerleri, yerleşimi 2 boyutlu düzlemde,
+
+1078
+02:17:58,260 --> 02:18:02,059
+X, Y düzleminde artı işaretleriyle işaretlenmiş.
+
+1079
+02:18:02,059 --> 02:18:08,700
+Bakıyorum 3, 4, 5, 6, 7, 8, 9, 10 tane sample var.
+
+1080
+02:18:08,819 --> 02:18:11,380
+Şurada dağımlarını görebiliyorsunuz örnekle.
+
+1081
+02:18:11,380 --> 02:18:15,380
+Buna göre...
+
+1082
+02:18:19,540 --> 02:18:24,220
+Pardon sinek müsallat oldu.
+
+1083
+02:18:24,220 --> 02:18:52,060
+Buna göre ortalamaları alındıktan sonra yani her bir değişkenin x değişkeni ve y değişkenini ayrı ayrı ortalamalarını alıp her bir sample'dan bu ortalamayı çıkarttığımızda elde ettiğimiz veri seti ise sağda verilmiş data adjust diye bir tabloda verilmiş.
+
+1084
+02:18:54,220 --> 02:19:03,220
+Şimdi size aslında biraz matematiği mantığımızla ilişkilendirmek için söylüyorum ya da soruyorum.
+
+1085
+02:19:03,220 --> 02:19:25,220
+X'ye düzleminde artı işaretiyle işaretlenmiş bu örneklerin ortalamasını aldığımızda yani her bir boyut için x'ye için ortalama aldığımızda tahmini nerede çıkar bunun ortalama yeri?
+
+1086
+02:19:25,220 --> 02:19:29,220
+Bakın annotation tool'u siz de kullanabiliyorsunuz.
+
+1087
+02:19:30,060 --> 02:19:31,220
+Az önce gördünüz, denediniz.
+
+1088
+02:19:32,500 --> 02:19:34,220
+Evet biri bana bunu işaretlesin.
+
+1089
+02:19:36,100 --> 02:19:40,220
+Data setinin ortalaması tahmini.
+
+1090
+02:19:41,220 --> 02:19:42,780
+Evet [öğrenci] açtı.
+
+1091
+02:19:43,900 --> 02:19:45,300
+Süper teşekkürler.
+
+1092
+02:19:46,020 --> 02:19:47,900
+Evet [öğrenci] [öğrenci] de açtı.
+
+1093
+02:19:48,500 --> 02:19:50,240
+Tahmini bu bölgede çıkar.
+
+1094
+02:19:50,240 --> 02:19:51,000
+Çok güzel.
+
+1095
+02:19:52,160 --> 02:19:53,640
+Veri setinin ortalaması.
+
+1096
+02:19:53,820 --> 02:20:08,860
+Şimdi her bir örnekten bu ortalamayı çıkartmak demek, bakın şu demek bu koyduğunuz merkez noktasını orijine taşımak, sıfır sıfır noktasına taşımak demek.
+
+1097
+02:20:08,860 --> 02:20:19,140
+Veriyi yani alıyorsunuz şu veriyi bu merkez noktasını sıfır sıfır orijin noktasına gelecek şekilde shift ediyorsunuz.
+
+1098
+02:20:19,140 --> 02:20:32,560
+Yani burada data adjust ile vermiş olduğumuz tablo, data adjust ile vermiş olduğumuz tablo tekrar çizecek olursak düzlemde yerleşimini.
+
+1099
+02:20:33,060 --> 02:20:41,720
+Az önce tarif ettiğim gibi koyduğunuz o merkez noktası orijine taşınarak gösterilebilir.
+
+1100
+02:20:41,720 --> 02:20:45,640
+İkinci adım subtract the mean diyordu.
+
+1101
+02:20:45,640 --> 02:20:47,900
+Yani ortalama değeri çıkart diyordu.
+
+1102
+02:20:48,140 --> 02:20:59,060
+Bu ortalama değeri çıkarttık ve datanın sıfır ortalamalı hale getirildiğinde nasıl yerleştiğini de anlatmış olduk.
+
+1103
+02:20:59,060 --> 02:21:07,980
+Üçüncü adımda diyor ki, calculate the covariance matrix.
+
+1104
+02:21:09,440 --> 02:21:24,840
+Oluşturmuş olduğumuz o ortalama değer çıkarılmış data adjust verisi için covariance matrisi hesaplanacak.
+
+1105
+02:21:24,840 --> 02:21:32,300
+Şimdi veri seti eğer iki boyutlu ise covariance matrisi kaça kaç olur arkadaşlar?
+
+1106
+02:21:33,340 --> 02:21:44,900
+İki boyutlu bir veri setinde on tane sample varsa eğer covariance matrisi kaça kaç olur?
+
+1107
+02:21:44,980 --> 02:21:46,340
+Bir matris oluşturacağız.
+
+1108
+02:21:58,548 --> 02:22:05,507
+Öz nitelik sayısıyla ilişkilendirmemiz gerekiyor. Değişkenlerin birbiriyle olan değişimine baktığımıza göre,
+
+1109
+02:22:07,048 --> 02:22:18,188
+covariance matrisinin değişken sayısıyla ilişkilendirilmesi gerekiyor dedim. Yani ikiye ikilik bir covariance matrisi oluşacak.
+
+1110
+02:22:22,963 --> 02:22:28,084
+Peki 2'ye 2'lik kovaryans maddesi burada verilmiş.
+
+1111
+02:22:28,203 --> 02:22:36,004
+Kovaryans maddesinde ana köşegen üzerindeki değerleri daha önce söylemiştiniz varyansı gösteriyor.
+
+1112
+02:22:36,004 --> 02:22:41,164
+Yani X değişkeninin varyansı 0.616 imiş.
+
+1113
+02:22:41,824 --> 02:22:45,683
+Y değişkeninin varyansı 0.716 imiş.
+
+1114
+02:22:45,683 --> 02:22:58,064
+Bunun dışında X ve Y'nin kovaryansına baktığımızda 0.615 olduğunu görebiliyoruz.
+
+1115
+02:22:58,064 --> 02:23:01,343
+Bu şekilde kovaryans maddesini hesapladık.
+
+1116
+02:23:01,443 --> 02:23:02,523
+Üçüncü adımda.
+
+1117
+02:23:03,423 --> 02:23:15,404
+Eğer öz nitelik sayısı 2 değil de 5 olsaydı kovaryans maddesi 5'e 5'lik bir maddes olurdu.
+
+1118
+02:23:16,064 --> 02:23:21,824
+Öz nitelik sayısı kaçsa kovaryans maddesinin boyutu da o kadar olacak.
+
+1119
+02:23:22,804 --> 02:23:25,384
+Dördüncü adım.
+
+1120
+02:23:27,884 --> 02:23:31,463
+Egon vektör ve Egon velyularını hesaplayacağız.
+
+1121
+02:23:31,584 --> 02:23:37,244
+Bu oluşturduğumuz kovaryans maddesinin öz değer ve öz vektörlerini hesaplayacağız.
+
+1122
+02:23:37,244 --> 02:23:46,623
+Eğer 2'ye 2'lik bir matrizse az önce örneğini yapmıştık gördünüz.
+
+1123
+02:23:47,343 --> 02:23:48,923
+Öz değerlerin sayısı 2.
+
+1124
+02:23:49,623 --> 02:23:52,164
+Öz vektörlerin sayısı 2 çıkıyor.
+
+1125
+02:23:52,164 --> 02:24:00,763
+Şimdi buradaki öz değerlere baktığımda 0.049 bir de 1.28 var.
+
+1126
+02:24:01,543 --> 02:24:06,884
+Öz değerlerden biri diğerine göre belirgin bir şekilde daha küçük çıkıyor.
+
+1127
+02:24:07,043 --> 02:24:09,144
+Bu bizim için önemli bir parametre.
+
+1128
+02:24:09,144 --> 02:24:18,943
+aslında verinin bir eksen doğrultusunda değişiminin çok büyük öbür eksen doğrultusunda ise çok küçük olduğunu gösteriyor bize.
+
+1129
+02:24:18,943 --> 02:24:27,783
+Egon vektörler ise burada hesaplanmış.
+
+1130
+02:24:28,363 --> 02:24:29,603
+Şu vektör.
+
+1131
+02:24:30,603 --> 02:24:32,023
+U1 vektörü diyelim.
+
+1132
+02:24:32,384 --> 02:24:34,463
+Yani birinci öz vektörümüz.
+
+1133
+02:24:34,463 --> 02:24:36,103
+Az önce X demiştik.
+
+1134
+02:24:36,283 --> 02:24:37,963
+U da deniyor yaygın olarak.
+
+1135
+02:24:39,564 --> 02:24:40,804
+Birinci vektör.
+
+1136
+02:24:40,904 --> 02:24:42,884
+Şu da ikinci vektörü gösteriyor.
+
+1137
+02:24:43,004 --> 02:24:48,343
+İki tane vektörü bir matrizin içerisine yerleştirerek ifade etmiş.
+
+1138
+02:24:48,943 --> 02:24:50,404
+Birinci vektör bu.
+
+1139
+02:24:50,824 --> 02:24:51,443
+Tekrar söylüyorum.
+
+1140
+02:24:51,543 --> 02:24:52,564
+İkinci vektör bu.
+
+1141
+02:24:56,147 --> 02:25:04,927
+5. adımda ise choosing components and forming a feature vector demiş.
+
+1142
+02:25:07,347 --> 02:25:11,807
+Oluşturduğu öz vektörleri aslında önce çiziyor.
+
+1143
+02:25:12,667 --> 02:25:21,967
+Bakın x'ye düzleminde 0 ortalamalı veri burada artı işaretleriyle gösterilmiş yine.
+
+1144
+02:25:21,967 --> 02:25:35,967
+Bu artı işaretleriyle gösterilmiş düzlemde öz vektörlerde şuradaki kesikli çizgilerle ifade edilmiş.
+
+1145
+02:25:35,967 --> 02:25:50,188
+Buna göre aslında değişimin en çok olduğu şu vektör ya da ikisinin de x'i de y'si de negatif olan ikinci vektör.
+
+1146
+02:25:50,188 --> 02:25:55,647
+x'i y'si de negatif olan vektör şu vektör.
+
+1147
+02:25:56,307 --> 02:25:57,268
+İkinci vektör.
+
+1148
+02:25:58,067 --> 02:26:00,027
+Değişimin en fazla olduğu vektör.
+
+1149
+02:26:00,167 --> 02:26:03,947
+Değişiminde en fazla olduğu vektör derken neyi kastediyorum?
+
+1150
+02:26:04,567 --> 02:26:06,047
+Hemen açıklayayım.
+
+1151
+02:26:06,867 --> 02:26:08,787
+Annotation tool açtığımda.
+
+1152
+02:26:09,327 --> 02:26:11,268
+Sample'ların yerlerini görüyorsunuz.
+
+1153
+02:26:11,327 --> 02:26:14,007
+Artı işaretleriyle gösterilmiş.
+
+1154
+02:26:14,007 --> 02:26:30,507
+Buna göre mesela şu kesikli çizgilerle gösterilen iki tane çizgi bizim yeni koordinat düzlemimizi gösteriyor olsun.
+
+1155
+02:26:30,507 --> 02:26:40,707
+Bu yeni koordinat düzleminde sample'larımızın değişim aralığı şuradan başlıyor.
+
+1156
+02:26:41,487 --> 02:26:43,688
+Buraya kadar devam ediyor.
+
+1157
+02:26:46,987 --> 02:26:49,188
+Bu eksen üzerinde.
+
+1158
+02:26:49,907 --> 02:26:54,167
+Diğer eksen ise bakın yeni bir koordinat düzleminden bahsediyoruz.
+
+1159
+02:26:54,307 --> 02:26:55,447
+Diğer eksen ise bu.
+
+1160
+02:26:55,447 --> 02:26:59,147
+Bu eksen üzerinde rengi değiştirelim.
+
+1161
+02:27:00,507 --> 02:27:09,507
+Sample'ların iz düşümünü alıp baktığımda değişim aralığı...
+
+1162
+02:27:09,507 --> 02:27:10,507
+Değişim aralığı...
+
+1163
+02:27:11,107 --> 02:27:12,867
+Pardon çok kötü oldu.
+
+1164
+02:27:18,644 --> 02:27:21,164
+hepsini mi seyicez? Hayır, bireysir.
+
+1165
+02:27:30,835 --> 02:27:47,495
+Şuradan başlıyor. Yine izdüşümlerini alacak olursam, şu eksen üzerine izdüşümlerini alacak olursam, şurada bitiyor. Dolayısıyla değişim aralığı şu aralıkta oluyor.
+
+1166
+02:27:51,059 --> 02:27:52,920
+Yeni bir koordinat düzlemi
+
+1167
+02:27:52,920 --> 02:27:54,659
+tanımladık. Bu
+
+1168
+02:27:54,659 --> 02:27:56,559
+bizim U1
+
+1169
+02:27:56,559 --> 02:27:57,519
+vektörümüz.
+
+1170
+02:27:58,379 --> 02:28:00,899
+U1 vektörümüz. Şu bizim
+
+1171
+02:28:00,899 --> 02:28:03,079
+U2 vektörümüz.
+
+1172
+02:28:03,439 --> 02:28:04,819
+Buna U2 diyelim.
+
+1173
+02:28:05,739 --> 02:28:06,920
+U2 vektörü.
+
+1174
+02:28:07,500 --> 02:28:08,680
+Ve U2
+
+1175
+02:28:08,680 --> 02:28:10,819
+vektörünün üzerine
+
+1176
+02:28:10,819 --> 02:28:12,920
+iz düşümlerini aldığımız zaman
+
+1177
+02:28:12,920 --> 02:28:15,260
+noktaların, sample'ların
+
+1178
+02:28:15,260 --> 02:28:16,879
+değişim aralığının
+
+1179
+02:28:16,879 --> 02:28:18,779
+çok daha geniş olduğunu görüyoruz.
+
+1180
+02:28:18,779 --> 02:28:20,840
+U1 vektörü üzerine iz düşümlerini
+
+1181
+02:28:20,840 --> 02:28:22,100
+aldığımız zaman ise
+
+1182
+02:28:22,100 --> 02:28:25,100
+daha dar bir aralıkta değiştiğini görüyoruz.
+
+1183
+02:28:25,579 --> 02:28:26,680
+Şimdi bakın
+
+1184
+02:28:26,680 --> 02:28:28,859
+buradaki en büyük kilit nokta bu.
+
+1185
+02:28:31,279 --> 02:28:32,239
+Örnekleri
+
+1186
+02:28:32,239 --> 02:28:34,819
+birbirinden ayırt etmek
+
+1187
+02:28:34,819 --> 02:28:36,459
+için olabildiğince
+
+1188
+02:28:36,459 --> 02:28:38,819
+geniş bir aralıkta ifade etmek
+
+1189
+02:28:38,819 --> 02:28:40,459
+ideal olanıdır.
+
+1190
+02:28:40,579 --> 02:28:42,379
+Yani ben U2 vektörü üzerine
+
+1191
+02:28:42,379 --> 02:28:44,359
+almış olduğu iz düşümler
+
+1192
+02:28:44,359 --> 02:28:47,239
+için bakacak olursam, U2 vektörü
+
+1193
+02:28:47,239 --> 02:28:48,739
+daha geniş bir aralıkta
+
+1194
+02:28:48,739 --> 02:28:49,859
+değişim gösteriyor.
+
+1195
+02:28:50,519 --> 02:28:51,799
+U1 vektör ise
+
+1196
+02:28:51,799 --> 02:28:53,559
+bakın U1 vektörü burada.
+
+1197
+02:28:54,180 --> 02:28:55,819
+Bu vektörün üzerine iz düşüm
+
+1198
+02:28:55,819 --> 02:28:57,500
+aldığımda değişen aralık ise
+
+1199
+02:28:57,500 --> 02:28:59,439
+bu kırmızıyla işaretlediğim aralık.
+
+1200
+02:28:59,920 --> 02:29:01,199
+O daha dar bir aralık.
+
+1201
+02:29:01,319 --> 02:29:03,239
+Ve noktalar birbiri içerisine
+
+1202
+02:29:03,239 --> 02:29:05,019
+geçiyor iz düşüm aldığımda.
+
+1203
+02:29:05,680 --> 02:29:06,180
+O zaman
+
+1204
+02:29:06,180 --> 02:29:07,079
+bakın
+
+1205
+02:29:07,079 --> 02:29:08,459
+yaptığımız iş
+
+1206
+02:29:08,459 --> 02:29:12,019
+bize verilmiş olan
+
+1207
+02:29:12,019 --> 02:29:13,479
+X'ye düzleminden
+
+1208
+02:29:13,479 --> 02:29:14,479
+U1 ve
+
+1209
+02:29:14,479 --> 02:29:16,539
+U1 ve U2 düzlemine
+
+1210
+02:29:16,539 --> 02:29:17,799
+bütün noktaları
+
+1211
+02:29:17,799 --> 02:29:19,359
+yeniden taşıyacağız.
+
+1212
+02:29:19,500 --> 02:29:21,059
+Yeni yerlerini, koordinatlarını
+
+1213
+02:29:21,059 --> 02:29:21,659
+bulacağız.
+
+1214
+02:29:22,299 --> 02:29:22,559
+Ve
+
+1215
+02:29:22,559 --> 02:29:24,959
+U1 ve U2 arasında da
+
+1216
+02:29:24,959 --> 02:29:26,600
+bir seçme işlemi yapacağız.
+
+1217
+02:29:27,139 --> 02:29:29,100
+Veriyi en iyi temsil eden
+
+1218
+02:29:29,100 --> 02:29:30,039
+eksen
+
+1219
+02:29:30,039 --> 02:29:30,539
+acaba
+
+1220
+02:29:30,539 --> 02:29:33,079
+U1 midir, U2 midir?
+
+1221
+02:29:33,260 --> 02:29:34,299
+İki tane olduğu için
+
+1222
+02:29:34,299 --> 02:29:35,879
+birini eleyeceğim, biri kalacak.
+
+1223
+02:29:36,059 --> 02:29:37,180
+Daha fazla olsaydı
+
+1224
+02:29:37,180 --> 02:29:39,260
+farklı bir değerlendirme yapacaktım.
+
+1225
+02:29:39,260 --> 02:29:40,119
+Burada
+
+1226
+02:29:40,119 --> 02:29:41,959
+değişimin fazla olduğu
+
+1227
+02:29:41,959 --> 02:29:43,659
+U2 ekseni
+
+1228
+02:29:43,659 --> 02:29:44,739
+benim için
+
+1229
+02:29:44,739 --> 02:29:46,260
+daha değerli.
+
+1230
+02:29:47,399 --> 02:29:47,879
+O yüzden
+
+1231
+02:29:47,879 --> 02:29:48,739
+sadece
+
+1232
+02:29:48,739 --> 02:29:50,459
+U2 ekseni üzerine
+
+1233
+02:29:50,459 --> 02:29:51,639
+iz düşüm almam
+
+1234
+02:29:51,639 --> 02:29:52,979
+ve veriyi
+
+1235
+02:29:52,979 --> 02:29:53,979
+tek bir boyut ile
+
+1236
+02:29:53,979 --> 02:29:54,939
+ifade etmem
+
+1237
+02:29:54,939 --> 02:29:56,340
+ikiden bire düşürmem
+
+1238
+02:29:56,340 --> 02:29:57,199
+bu yeni
+
+1239
+02:29:57,199 --> 02:29:59,340
+U1-U2 düzleminde
+
+1240
+02:29:59,340 --> 02:30:00,939
+mümkündür diyorum.
+
+1241
+02:30:02,799 --> 02:30:04,079
+Peki bu
+
+1242
+02:30:04,079 --> 02:30:06,719
+dönüşüm işlemini
+
+1243
+02:30:06,719 --> 02:30:08,420
+nasıl gerçekleştireceğim?
+
+1244
+02:30:08,420 --> 02:30:09,159
+yani
+
+1245
+02:30:09,159 --> 02:30:10,879
+iz düşümlerini
+
+1246
+02:30:10,879 --> 02:30:11,199
+ya da
+
+1247
+02:30:11,199 --> 02:30:12,059
+transformu
+
+1248
+02:30:12,059 --> 02:30:13,639
+nasıl gerçekleştireceğim?
+
+1249
+02:30:14,219 --> 02:30:14,840
+Onu da
+
+1250
+02:30:14,840 --> 02:30:15,699
+şöyle
+
+1251
+02:30:15,699 --> 02:30:16,819
+tablette ben
+
+1252
+02:30:16,819 --> 02:30:18,000
+göstereceğim.
+
+1253
+02:30:20,319 --> 02:30:21,279
+Elimizde
+
+1254
+02:30:21,279 --> 02:30:48,019
+bir şey
+
+1255
+02:30:25,203 --> 02:30:30,103
+Bir düzenlenmiş data vardı. Data, data, data adjust.
+
+1256
+02:30:37,299 --> 02:30:42,500
+10 satır 2 sütundan oluşuyordu. Bunu
+
+1257
+02:30:44,579 --> 02:30:45,979
+bu bir
+
+1258
+02:30:46,340 --> 02:30:47,619
+bu iki
+
+1259
+02:30:51,379 --> 02:30:53,579
+Fektörlerine iz düşünme alıyorum.
+
+1260
+02:31:11,252 --> 02:31:23,592
+Anotehitten çıkmadan hiçbir işlem yapamıyor. Anotehitten çıkmam gerekiyor. Peki, Anotehitten çıkmadan önce düzleri temizlemem gerekiyor.
+
+1261
+02:31:28,788 --> 02:31:53,927
+Bundan çıkıp, ancak ondan sonra ekranı açabiliyorum. Şöyle arkadaşlar, elimde data adjust dediğim bir matriz var. 10 satır 2 sütundan oluşan. U1 dediğim bir vektör var. U2 dediğim bir vektör var. U1 vektörü ve U2 vektörü, az önce aslında bunları gördük.
+
+1262
+02:31:53,927 --> 02:32:19,747
+Kovaryans matrizinin öz vektörleri. U1 vektörü, işte orada değerleri verilmişti. Bir matriz içerisinde görüyorduk. Eksi 0.735. U1 vektörünün diğer bileşeni 0.677 gibi bir değerdi.
+
+1263
+02:32:19,747 --> 02:32:41,208
+Bu iki vektörü, bu iki vektörü ise, eksi 0.735. Bakın bunlar böyle iki vektör. Bu iki vektör üzerine iz düşüm almak demek.
+
+1264
+02:32:45,139 --> 02:32:55,539
+Data Adjust dediğimiz matrisin birinci satırı yani birinci sample'ın değerlerini U1 vektörüyle çarpıyorsunuz.
+
+1265
+02:32:55,619 --> 02:33:04,260
+Yani şu vektörle çarpıyorsunuz ve transform ettiğimiz batının ilk değerini elde ediyorsunuz.
+
+1266
+02:33:04,260 --> 02:33:18,260
+Data Adjust'daki birinci sample'ı U2 vektörüyle çarptığınızda yani şu vektörle çarptığınızda U2 vektörü üzerine iz düşümünü elde ediyorsunuz.
+
+1267
+02:33:19,099 --> 02:33:26,239
+Artık burası U1 ve U2 vektörleri üzerine iz düşüm değerlerini gösteriyor.
+
+1268
+02:33:26,239 --> 02:33:33,899
+Önceki Data Adjust X'ye'yi gösteriyordu. Yani X'ye düzlemindeki koordinatları gösteriyordu.
+
+1269
+02:33:34,260 --> 02:33:43,239
+Bu çarpma işleminden sonra elde ettiğimiz U1-U2 koordinat düzlemindeki yerleri oluyor bu sample'ların.
+
+1270
+02:33:43,239 --> 02:33:56,199
+Ve az önce dedik ki bu koordinat düzleminde U2 vektörü değişimin daha büyük olduğu bir vektör.
+
+1271
+02:33:56,199 --> 02:34:14,199
+Bunu da gösteren lambda 2 değeri, lambda 2 değeri U2 vektörüyle ilişkili olan lambda 2 değeri 1.28 iken lambda 1 değeri U1 vektörüyle ilişkili lambda 1 değeri 0.049'du.
+
+1272
+02:34:14,199 --> 02:34:23,959
+0.049'du. Çok küçük bir değerdi. Dolayısıyla aslında lambda bize hangi eksen üzerinde dağılımın daha büyük olduğunu gösteriyor.
+
+1273
+02:34:24,920 --> 02:34:30,199
+Ve bu dönüşüm işlemin sonunda yani ben nasıl bir dönüşüm yaptım burada arkadaşlar?
+
+1274
+02:34:30,199 --> 02:34:37,779
+X'ye düzlemindeki veriyi U1-U2 düzlemine taşımış oldum.
+
+1275
+02:34:38,559 --> 02:34:42,199
+Bu düzlemdeki artık yerlerini biliyorum.
+
+1276
+02:34:42,199 --> 02:34:57,519
+Bunun sadece değişimin büyük olduğu eksen lambda 2 yani U2 olduğu için veriyi sadece U2 ekseni üzerindeki değerlerle temsil edeceğim.
+
+1277
+02:34:58,079 --> 02:35:00,359
+Böylece bir ne yapmış olacağım?
+
+1278
+02:35:00,799 --> 02:35:05,299
+Composition yani feature composition işleminden sonra bir reduction da yapmış olacağım.
+
+1279
+02:35:05,420 --> 02:35:08,039
+Yani bir indirgeme işlemi de yapmış olacağım.
+
+1280
+02:35:08,039 --> 02:35:13,359
+Yaptığımız iş bu şekilde özetlenebilir.
+
+1281
+02:35:13,799 --> 02:35:18,699
+Burada da elde ettiğimiz matriz yine 10 çarpı 2'lik bir matriz.
+
+1282
+02:35:18,699 --> 02:35:27,959
+Ama biz bu 10 çarpı 2'lik matrizin sadece U2 vektörü üzerindeki iz düşümlerini alıp kullanacağız diyoruz.
+
+1283
+02:35:28,039 --> 02:35:31,119
+Çünkü orada değişim daha fazla olduğu için.
+
+1284
+02:35:34,963 --> 02:35:43,703
+Açıklamamız anlaşıldı. Özellikle bu çarpım tam olarak dönüşümü gösteriyor. Yani burada bir transformation var şurada.
+
+1285
+02:35:44,703 --> 02:35:56,224
+Transformation var. Ne yapıyoruz? X'ye düzleminden U1-U2 düzlemine dönüşüm gerçekleştiriyoruz.
+
+1286
+02:36:00,884 --> 02:36:22,164
+Evet. Şimdi örneğimiz iki tane öz nitelikten oluşuyordu. Dolayısıyla data 10x2'lik bir matristi. Şimdi size şöyle bir soru soracağım. Benim elimdeki veri iki boyutlu değil de beş boyutlu olsaydı mesela,
+
+1287
+02:36:22,164 --> 02:36:44,324
+o zaman ben bu dönüşüm işleminde transform ettiğimde yine beş boyutlu başka bir uzaya transform edeceğim. Ama hangi komponentleri seçeceğim, kaç tane komponent seçeceğim, bunun kararını nasıl vereceğiz?
+
+1288
+02:36:44,324 --> 02:37:13,263
+Bunun için lambda değerleri, yani lambda eigen value'ları sıralanıyor. Bu sıralama işleminden sonra, varsayalım ki lambda 1, büyük lambda 2, büyük lambda 3, bu şekilde büyükten küçüğe doğru beş tane olduğunu söyledik.
+
+1289
+02:37:13,263 --> 02:37:27,644
+Sıraladık. Sıralanmış öz ve öz değerler üzerinden biz şöyle bir analiz yapacağız. Önce lambda 1 bölü, bütün lambda değerlerinin toplamı.
+
+1290
+02:37:36,915 --> 02:37:45,456
+Acaba büyük 0.95 midir diye bakacağız. Yani bir threshold.
+
+1291
+02:37:49,108 --> 02:37:50,067
+kullanarak
+
+1292
+02:37:50,067 --> 02:37:52,628
+kaç tane
+
+1293
+02:37:52,628 --> 02:37:55,228
+bileşen benim koymuş
+
+1294
+02:37:55,228 --> 02:37:56,987
+olduğum bu treş olduğu sağlıyor
+
+1295
+02:37:56,987 --> 02:37:59,268
+buna bakacağım. Eğer
+
+1296
+02:37:59,268 --> 02:38:01,067
+tek bir tane bileşen
+
+1297
+02:38:01,067 --> 02:38:01,847
+lambda 1
+
+1298
+02:38:01,847 --> 02:38:05,368
+tüm lambdaların toplamına
+
+1299
+02:38:05,368 --> 02:38:07,487
+oranlandığında bu eşik değerini
+
+1300
+02:38:07,487 --> 02:38:09,827
+sağlamıyorsa 0.95'in
+
+1301
+02:38:09,827 --> 02:38:10,968
+altında kalıyorsa
+
+1302
+02:38:10,968 --> 02:38:13,188
+bu durumda buraya
+
+1303
+02:38:13,188 --> 02:38:15,468
+bir tane daha bileşen
+
+1304
+02:38:15,468 --> 02:38:17,388
+ekleyeceğim. Artı lambda 2
+
+1305
+02:38:17,388 --> 02:38:19,268
+sıralı değerlerden
+
+1306
+02:38:19,268 --> 02:38:20,768
+bir ikincisini ekleyeceğim.
+
+1307
+02:38:21,587 --> 02:38:23,208
+Lambda 2'yi eklediğimde
+
+1308
+02:38:23,208 --> 02:38:24,847
+bu toplamın
+
+1309
+02:38:24,847 --> 02:38:27,667
+lambda 1 artı lambda 2 toplamının
+
+1310
+02:38:27,667 --> 02:38:29,188
+bunların tamamına
+
+1311
+02:38:29,188 --> 02:38:31,308
+oranlandığında bu eşik
+
+1312
+02:38:31,308 --> 02:38:33,567
+değerini sağlayıp sağlamadığına bakacağım.
+
+1313
+02:38:34,507 --> 02:38:35,667
+Eğer sağlıyorsa
+
+1314
+02:38:35,667 --> 02:38:37,448
+sadece iki tane
+
+1315
+02:38:37,448 --> 02:38:39,448
+bileşen yeterlidir.
+
+1316
+02:38:40,048 --> 02:38:41,228
+Yani yeni
+
+1317
+02:38:41,228 --> 02:38:42,747
+öz nitelik uzayında
+
+1318
+02:38:42,747 --> 02:38:45,487
+U1 U2 vektörleri üzerindeki
+
+1319
+02:38:45,487 --> 02:38:47,228
+yerleri üzerinden iki boyutu
+
+1320
+02:38:47,388 --> 02:38:49,407
+indirgemen veriyi yeterlidir
+
+1321
+02:38:49,407 --> 02:38:49,927
+diyeceğim.
+
+1322
+02:38:51,108 --> 02:38:52,087
+Bu analiz
+
+1323
+02:38:52,087 --> 02:38:53,987
+yani şuradaki seçtiğimiz
+
+1324
+02:38:53,987 --> 02:38:55,208
+threshold'a göre
+
+1325
+02:38:55,208 --> 02:38:56,968
+kaç tane bileşenin
+
+1326
+02:38:56,968 --> 02:38:58,587
+kullanılacağını
+
+1327
+02:38:58,587 --> 02:38:59,768
+gösterir.
+
+1328
+02:39:00,128 --> 02:39:01,847
+Ve biz bu durumda
+
+1329
+02:39:01,847 --> 02:39:03,368
+bir reduction işlemi
+
+1330
+02:39:03,368 --> 02:39:04,528
+yapmış oluyoruz.
+
+1331
+02:39:05,007 --> 02:39:06,087
+5 boyuttan
+
+1332
+02:39:06,087 --> 02:39:07,808
+yani ne yapmış oluyoruz?
+
+1333
+02:39:07,927 --> 02:39:08,567
+Normalde
+
+1334
+02:39:08,567 --> 02:39:11,448
+5 boyutlu bir veri vardı.
+
+1335
+02:39:11,448 --> 02:39:14,128
+bu 5 boyuttan
+
+1336
+02:39:14,128 --> 02:39:16,288
+sadece 2 boyuta
+
+1337
+02:39:16,288 --> 02:39:17,268
+2 dimension'ı
+
+1338
+02:39:17,268 --> 02:39:20,268
+indirgemiş oluyoruz
+
+1339
+02:39:21,148 --> 02:39:25,028
+veri setini.
+
+1340
+02:39:25,827 --> 02:39:26,927
+Neye göre?
+
+1341
+02:39:27,167 --> 02:39:28,987
+Transform ettiğimiz yeni
+
+1342
+02:39:28,987 --> 02:39:30,487
+uzaya göre.
+
+1343
+02:39:30,688 --> 02:39:31,327
+Bakın artık
+
+1344
+02:39:31,327 --> 02:39:32,667
+2 boyutlu olduğunda
+
+1345
+02:39:32,667 --> 02:39:33,468
+düzlenmiyordum.
+
+1346
+02:39:33,628 --> 02:39:33,948
+Artık
+
+1347
+02:39:33,948 --> 02:39:35,288
+2 boyutun üstünde
+
+1348
+02:39:35,288 --> 02:39:36,948
+5 boyuttan bahsediyorum.
+
+1349
+02:39:36,948 --> 02:39:39,407
+5 boyutlu bir uzaydan
+
+1350
+02:39:39,407 --> 02:39:40,667
+ne yaptım?
+
+1351
+02:39:40,728 --> 02:39:41,827
+2 boyutlu bir düzleme
+
+1352
+02:39:41,827 --> 02:39:42,688
+belki burada bir
+
+1353
+02:39:42,688 --> 02:39:43,708
+üçüncü parametre
+
+1354
+02:39:43,708 --> 02:39:44,468
+gerekseydi
+
+1355
+02:39:44,468 --> 02:39:45,448
+lambda 3 diye
+
+1356
+02:39:45,448 --> 02:39:47,548
+3 boyutlu bir
+
+1357
+02:39:47,548 --> 02:39:49,548
+uzaya
+
+1358
+02:39:49,548 --> 02:39:50,308
+bunu
+
+1359
+02:39:50,308 --> 02:39:51,868
+dönüştürmüş
+
+1360
+02:39:51,868 --> 02:39:52,667
+olacaktım.
+
+1361
+02:39:53,247 --> 02:39:54,048
+Hem dönüştürme
+
+1362
+02:39:54,048 --> 02:39:54,528
+yapıyoruz
+
+1363
+02:39:54,528 --> 02:39:55,368
+hem reduction
+
+1364
+02:39:55,368 --> 02:39:56,567
+hem de azaltma
+
+1365
+02:39:56,567 --> 02:39:57,188
+işlemi
+
+1366
+02:39:57,188 --> 02:39:59,007
+gerçekleştirmiş
+
+1367
+02:39:59,007 --> 02:39:59,587
+oluyoruz.
+
+1368
+02:40:01,128 --> 02:40:01,368
+Evet
+
+1369
+02:40:01,368 --> 02:40:02,347
+bu konu
+
+1370
+02:40:02,347 --> 02:40:04,868
+bence önemli bir konu
+
+1371
+02:40:04,868 --> 02:40:05,347
+umarım
+
+1372
+02:40:05,347 --> 02:40:06,927
+açık ve anlaşılır
+
+1373
+02:40:06,927 --> 02:40:07,468
+olmuştur
+
+1374
+02:40:07,468 --> 02:40:08,308
+hepiniz için
+
+1375
+02:40:08,308 --> 02:40:11,368
+5 boyuttan
+
+1376
+02:40:11,368 --> 02:40:14,048
+nasıl
+
+1377
+02:40:14,048 --> 02:40:16,288
+boyut azaltma
+
+1378
+02:40:16,288 --> 02:40:16,987
+yaptığımızı
+
+1379
+02:40:16,987 --> 02:40:17,528
+konuştuk.
+
+1380
+02:40:18,708 --> 02:40:19,347
+Burada
+
+1381
+02:40:19,347 --> 02:40:20,327
+U1
+
+1382
+02:40:20,327 --> 02:40:20,808
+U2
+
+1383
+02:40:20,808 --> 02:40:21,487
+dediğimiz
+
+1384
+02:40:21,487 --> 02:40:22,028
+U3
+
+1385
+02:40:22,028 --> 02:40:22,808
+dediğimiz
+
+1386
+02:40:22,808 --> 02:40:23,847
+yeni
+
+1387
+02:40:23,847 --> 02:40:24,667
+yani
+
+1388
+02:40:24,667 --> 02:40:26,587
+öz vektörler
+
+1389
+02:40:26,587 --> 02:40:26,968
+bizim
+
+1390
+02:40:26,968 --> 02:40:29,188
+koordinat
+
+1391
+02:40:29,188 --> 02:40:30,388
+uzayımızı
+
+1392
+02:40:30,388 --> 02:40:31,148
+gösteriyor
+
+1393
+02:40:31,148 --> 02:40:33,487
+ve bu uzayda
+
+1394
+02:40:33,487 --> 02:40:34,827
+bu uzayda
+
+1395
+02:40:34,827 --> 02:40:37,507
+artık
+
+1396
+02:40:37,507 --> 02:40:39,388
+değişkenleriniz
+
+1397
+02:40:39,388 --> 02:40:40,327
+tamamen
+
+1398
+02:40:40,327 --> 02:40:42,128
+farklılaştı.
+
+1399
+02:40:42,628 --> 02:40:42,927
+Yani
+
+1400
+02:40:42,927 --> 02:40:43,968
+girişteki
+
+1401
+02:40:43,968 --> 02:40:44,747
+datasette
+
+1402
+02:40:44,747 --> 02:40:45,468
+XE
+
+1403
+02:40:45,468 --> 02:40:45,968
+vardı.
+
+1404
+02:40:46,108 --> 02:40:46,688
+Bu XE
+
+1405
+02:40:46,688 --> 02:40:47,228
+mesela
+
+1406
+02:40:47,228 --> 02:40:48,468
+kişilerin
+
+1407
+02:40:48,468 --> 02:40:49,968
+yaşları
+
+1408
+02:40:49,968 --> 02:40:51,048
+efendim
+
+1409
+02:40:51,048 --> 02:40:52,648
+gelirleri
+
+1410
+02:40:52,648 --> 02:40:53,128
+ya da
+
+1411
+02:40:53,128 --> 02:40:53,688
+belli bir
+
+1412
+02:40:53,688 --> 02:40:54,067
+tıbbi
+
+1413
+02:40:54,067 --> 02:40:54,788
+datasette
+
+1414
+02:40:54,788 --> 02:40:55,728
+kan ölçümleri
+
+1415
+02:40:55,728 --> 02:40:56,487
+gibi sayısal
+
+1416
+02:40:56,487 --> 02:40:57,327
+değerlerken
+
+1417
+02:40:57,327 --> 02:40:58,188
+ben
+
+1418
+02:40:58,188 --> 02:40:59,108
+uzaya
+
+1419
+02:40:59,108 --> 02:40:59,927
+yeni bir uzaya
+
+1420
+02:40:59,927 --> 02:41:01,327
+transform ettiğinde
+
+1421
+02:41:01,327 --> 02:41:01,847
+U1
+
+1422
+02:41:01,847 --> 02:41:02,388
+U2
+
+1423
+02:41:02,388 --> 02:41:04,968
+düzlemine
+
+1424
+02:41:04,968 --> 02:41:05,388
+mesela
+
+1425
+02:41:05,388 --> 02:41:06,728
+dönüştürdüğüm zaman
+
+1426
+02:41:06,728 --> 02:41:07,667
+artık
+
+1427
+02:41:07,667 --> 02:41:09,268
+bu değerler
+
+1428
+02:41:09,268 --> 02:41:09,788
+kişinin
+
+1429
+02:41:09,788 --> 02:41:10,308
+yaşı
+
+1430
+02:41:10,308 --> 02:41:11,208
+kan ölçümü
+
+1431
+02:41:11,208 --> 02:41:12,288
+olmaktan
+
+1432
+02:41:12,288 --> 02:41:12,688
+çıktı.
+
+1433
+02:41:13,247 --> 02:41:13,827
+Dolayısıyla
+
+1434
+02:41:13,827 --> 02:41:14,868
+öz nitelikler
+
+1435
+02:41:14,868 --> 02:41:15,608
+anlamını
+
+1436
+02:41:15,608 --> 02:41:16,667
+değiştirdi.
+
+1437
+02:41:17,208 --> 02:41:17,548
+Yeni bir
+
+1438
+02:41:17,548 --> 02:41:18,448
+öz nitelik elde
+
+1439
+02:41:18,448 --> 02:41:18,788
+ettik.
+
+1440
+02:41:18,948 --> 02:41:19,788
+İlk ikisinin
+
+1441
+02:41:19,788 --> 02:41:21,628
+mix edilmiş
+
+1442
+02:41:21,628 --> 02:41:22,608
+bir formu
+
+1443
+02:41:22,608 --> 02:41:23,167
+oldu bu.
+
+1444
+02:41:23,167 --> 02:41:24,587
+bu açıdan
+
+1445
+02:41:24,587 --> 02:41:25,407
+baktığımızda
+
+1446
+02:41:25,407 --> 02:41:25,948
+bazen
+
+1447
+02:41:25,948 --> 02:41:26,987
+temel
+
+1448
+02:41:26,987 --> 02:41:27,468
+bileşen
+
+1449
+02:41:27,468 --> 02:41:28,288
+analiziyle
+
+1450
+02:41:28,288 --> 02:41:28,907
+boyut
+
+1451
+02:41:28,907 --> 02:41:29,507
+azaltma
+
+1452
+02:41:29,507 --> 02:41:29,907
+işi
+
+1453
+02:41:29,907 --> 02:41:32,247
+öz niteliklerin
+
+1454
+02:41:32,247 --> 02:41:32,907
+anlamı
+
+1455
+02:41:32,907 --> 02:41:33,667
+değiştiği için
+
+1456
+02:41:33,667 --> 02:41:34,487
+çok tercih
+
+1457
+02:41:34,487 --> 02:41:35,388
+edilmeyebiliyor.
+
+1458
+02:41:35,388 --> 02:41:36,388
+bir
+
+1459
+02:41:36,388 --> 02:41:37,268
+daha
+
+1460
+02:41:37,268 --> 02:41:37,388
+bir
+
+1461
+02:41:37,388 --> 02:41:38,308
+daha
+
+1462
+02:41:38,308 --> 02:41:38,388
+bir
+
+1463
+02:41:38,388 --> 02:41:38,788
+daha
+
+1464
+02:41:38,788 --> 02:41:39,347
+bir
+
+1465
+02:41:39,347 --> 02:41:39,847
+daha
+
+1466
+02:41:36,275 --> 02:41:49,536
+Çünkü başlangıçta işte kandaki al yuvarların sayısı üzerinden bir değerlendirme yaparken şimdi ne olduğunu tarif edemediğimiz yeni bir öz nitelik üretmiş oluyoruz.
+
+1467
+02:41:50,755 --> 02:41:56,775
+O yüzden mesela bir tıpçı için bu çok kabul edilebilir bir şey değil.
+
+1468
+02:41:56,855 --> 02:42:02,036
+Bunu karar ağacına koyduğumuz zaman bunun ne olduğunu bilmek istiyor insanlar.
+
+1469
+02:42:02,036 --> 02:42:11,855
+O nedenle temel bileşen analizi burada o öz niteliğin anlamını kaybetmemize sebep oluyor.
+
+1470
+02:42:12,015 --> 02:42:14,255
+Bunu da özellikle vurgulamak isterim.
+
+1471
+02:42:14,816 --> 02:42:15,835
+Evet sorunuz var mı?
+
+1472
+02:42:17,556 --> 02:42:19,316
+Hocam müsaadenizle benim bir sorum olacaktı.
+
+1473
+02:42:19,835 --> 02:42:20,216
+Buyurun.
+
+1474
+02:42:20,216 --> 02:42:22,956
+Burada lambda 1 ve lambda 2'yi topladık.
+
+1475
+02:42:23,056 --> 02:42:27,355
+Tereşok değerinin üzerinde olduğunu gördük ve bu iki vektör kullanmamız yeterli dedik.
+
+1476
+02:42:27,435 --> 02:42:30,855
+Peki burada 4 ve 5'e hiç mi bakmıyoruz?
+
+1477
+02:42:32,036 --> 02:42:33,435
+Veya diğer bir soru.
+
+1478
+02:42:34,195 --> 02:42:37,655
+Lambda 1 ve 2'nin toplamının treş olduğu örnek veriyorum 0.96.
+
+1479
+02:42:38,355 --> 02:42:40,695
+4 ve 5'inki daha yüksek mi treş olduk?
+
+1480
+02:42:40,855 --> 02:42:44,595
+Yani treş olduktan daha yüksek 0.98 ya da 0.99.
+
+1481
+02:42:45,636 --> 02:42:52,115
+Veriyi analiz ederken lambda 4 ve 5'in toplamı daha fazla olduğu için daha anlamlı bir fark yaratır mı bana?
+
+1482
+02:42:52,115 --> 02:42:59,056
+Hayır aslında şöyle bu biz 0.95 treş oldu.
+
+1483
+02:42:59,435 --> 02:43:00,775
+Aslında bize şunu söylüyor.
+
+1484
+02:43:00,896 --> 02:43:05,495
+Orjinal veriye %95 benzer bir yapı ürettin diyor sana.
+
+1485
+02:43:06,355 --> 02:43:13,235
+Yani burada lambda 4 ve 5'i katmak sadece %5'lik bir katkı sağlayacak.
+
+1486
+02:43:13,235 --> 02:43:21,296
+Benim amacım da özün teliği azaltmak buradan kaybederken aslında diğer taraftan kazancım olmuş oluyor.
+
+1487
+02:43:22,075 --> 02:43:25,216
+Yani veri setinden siliyorsunuz doğru.
+
+1488
+02:43:25,355 --> 02:43:30,476
+Yani U4 ve U5 vektörleri üzerine iz düşümlerini şeye katmıyorsunuz.
+
+1489
+02:43:30,556 --> 02:43:32,115
+Datasete katmıyorsunuz.
+
+1490
+02:43:32,115 --> 02:43:38,956
+Ama tabii bu treş olduk mesela 0.95 değil de 0.98 de seçebilirdim.
+
+1491
+02:43:39,335 --> 02:43:42,155
+Hani benim elimde çünkü bu kararı ben veriyorum.
+
+1492
+02:43:42,536 --> 02:43:52,376
+98 benzeyen dediğim zaman belki buraya lambda 3'ü de katacak eşik değerini yükselttiğimde.
+
+1493
+02:43:53,216 --> 02:43:56,476
+Ama ne olacak yine 5'ten 3'e indirmiş olacaksınız.
+
+1494
+02:43:56,476 --> 02:44:00,435
+Yani bu dönüşüm zaten en büyük özelliği şu.
+
+1495
+02:44:01,036 --> 02:44:02,355
+En büyük özelliği şu.
+
+1496
+02:44:04,796 --> 02:44:11,675
+Bize verinin dağılımının en yoğun olduğu eksene dönüşüm yapıyor.
+
+1497
+02:44:12,036 --> 02:44:13,695
+Şimdi şekli tekrar açacağım.
+
+1498
+02:44:14,655 --> 02:44:20,816
+Bakın verinin dağılımının yönünü şöyle bulut olarak çizdiğimizi varsayalım.
+
+1499
+02:44:20,935 --> 02:44:23,115
+Ben bir annotation tool tekrar açayım.
+
+1500
+02:44:23,115 --> 02:44:34,376
+Verinin dağılımı şöyle bir bulut yapı içinde çizecek olursam bakın gördünüz mü?
+
+1501
+02:44:34,376 --> 02:44:40,095
+Aslında dağılımın bulunduğu eksendir burada U1 ekseni.
+
+1502
+02:44:40,855 --> 02:44:47,855
+En büyük dağılımın değişimin olduğu ya da dağılımın göründüğü ekseni oluşturmuş oluyor U1.
+
+1503
+02:44:47,855 --> 02:45:08,095
+Dolayısıyla bu bulduğumuz öz vektörler öz değerlere göre sıralanıp bakıldığında değişimin en büyük olduğu eksen 1. sırada zaten çok büyük ölçüde verinin dağılımı hakkında bize bilgi verecek.
+
+1504
+02:45:08,275 --> 02:45:14,956
+O yüzden genelde bir ya da iki tane eksene indirgemek yeterli oluyor.
+
+1505
+02:45:17,940 --> 02:45:24,399
+Hocam, zaten büyükten küçüğe doğru sıraladığımız için Lambda 1 ve Lambda 2'den daha büyük olma ihtimali de yok ki.
+
+1506
+02:45:24,620 --> 02:45:39,220
+Evet, evet, evet. O da tabii ki. Yani orada hani fark sadece %2'lik, %3'lük bir katkı sağlıyor sadece diğer bileşenler, diğer öz vektörler üzerindeki bileşenler.
+
+1507
+02:45:39,220 --> 02:45:49,380
+Güzel bir çözüm. Yani gerçekten temel bileşen analizi veriyle uğraşan kişilerin başta yapması gereken bir işlem olarak görülüyor.
+
+1508
+02:45:49,940 --> 02:46:00,100
+Ama dediğim gibi karar ağaçlarında da mesela kullanırken o öz nitelik artık değişmiş oluyor. Bunu da ayrıca değerlendirmek gerekir.
+
+1509
+02:46:00,100 --> 02:46:30,079
+temel bileşen bir çözüm.
+
+1510
+02:46:30,100 --> 02:47:00,079
+şu örneklerin tamamı mavi sınıfı.
+
+1511
+02:46:45,075 --> 02:46:50,775
+Ve şu işaretleyeceğim örnekler de yeşil sınıfa ait olsun.
+
+1512
+02:47:01,427 --> 02:47:03,387
+Şimdi size şöyle bir soru soruyorum.
+
+1513
+02:47:03,487 --> 02:47:14,628
+Temel bileşen analizi yaptığımızda biz burada şuradaki vektör üzerine dağılım daha belirgin olduğu için yani daha büyük olduğu için bunu kabul etmiştik.
+
+1514
+02:47:14,628 --> 02:47:23,567
+Ama şimdi sınıf etiketli olarak baktığımızda bu eksenlerden hangisi sınıfları ayırt etmede daha etkili diye sorsam.
+
+1515
+02:47:23,567 --> 02:47:30,548
+Şunun adı U2 idi.
+
+1516
+02:47:31,167 --> 02:47:32,507
+Burası U2 idi.
+
+1517
+02:47:32,847 --> 02:47:34,087
+Burası U1 idi.
+
+1518
+02:47:37,128 --> 02:47:39,608
+Özür dilerim mouse ile bu kadar yazılıyor.
+
+1519
+02:47:40,628 --> 02:47:44,708
+U2 ve U1 de sıralanmamış haliyle tabi yazdık.
+
+1520
+02:47:44,807 --> 02:47:47,268
+Bunun lambda değeri daha büyük biliyorsunuz.
+
+1521
+02:47:47,368 --> 02:47:51,608
+Şunun lambda 2 değeri 1.1. kaçtı?
+
+1522
+02:47:51,608 --> 02:47:54,327
+Lambda 2 1.4 gibi bir şeydi.
+
+1523
+02:47:54,548 --> 02:47:56,567
+1. kaçmış?
+
+1524
+02:47:56,688 --> 02:47:58,188
+1.28'miş.
+
+1525
+02:48:00,987 --> 02:48:02,847
+Çok kötü oldu bu.
+
+1526
+02:48:03,487 --> 02:48:05,188
+Neyse 1.28.
+
+1527
+02:48:05,788 --> 02:48:08,647
+Öbürü ise 0.04 gibi bir şeydi.
+
+1528
+02:48:09,188 --> 02:48:14,167
+Şimdi bu durumda nasıl bir yorum yaparsınız bana?
+
+1529
+02:48:14,167 --> 02:48:23,507
+Bakın yani sınıf etiketine hiç bakmadan ben eğer temel bileşen analizi yapsaydım U2 vektörü üzerine izdüşüm alacaktım.
+
+1530
+02:48:23,647 --> 02:48:28,368
+Ama U2 vektörü üzerine izdüşüm aldığınızda yeşil sınıf mavi sınıf.
+
+1531
+02:48:28,448 --> 02:48:29,788
+Yeşil sınıf mavi sınıf.
+
+1532
+02:48:30,407 --> 02:48:32,147
+Yeşil mavi yeşil mavi.
+
+1533
+02:48:32,827 --> 02:48:36,708
+Yani yeşilleri mavilerden ayırt etme yeteneğini kaybetti data.
+
+1534
+02:48:36,708 --> 02:48:41,868
+Ama bunun yerine U1'in üzerine izdüşüm alsaydım ne olurdu?
+
+1535
+02:48:41,987 --> 02:48:42,968
+Şimdi bir de öyle bakın.
+
+1536
+02:48:43,747 --> 02:48:51,128
+U1 üzerine izdüşüm aldığınızda mavi olan örneklerin eksenin sol tarafında,
+
+1537
+02:48:51,768 --> 02:48:55,907
+yeşil olan örneklerin ise eksenin sağ tarafında yığıldığını görüyorsunuz.
+
+1538
+02:48:55,907 --> 02:48:58,528
+Ayırt ediciliği daha fazla olmuş oldu.
+
+1539
+02:49:02,260 --> 02:49:22,100
+Yorum yapın o zaman ne diyeceğiz? Eğer sınıf etiketi varsa, temel birleşim analizi yerine, linear diskriminant analizi dediğimiz LDA, linear diskriminant analizi kullanmak çok daha mantıklı olacaktır.
+
+1540
+02:49:26,451 --> 02:49:30,131
+Evet, sevgili yüksek lisans öğrencilerim, çok sessizsiniz.
+
+1541
+02:49:32,351 --> 02:49:33,572
+Soru var mı?
+
+1542
+02:49:38,515 --> 02:49:43,315
+Yok. Her şeyi çok iyi anladınız. Ben de çok iyi anlattım o zaman. Öyle mi?
+
+1543
+02:49:43,975 --> 02:49:44,275
+Tamam.
+
+1544
+02:49:44,275 --> 02:49:44,536
+Buyurun.
+
+1545
+02:49:45,716 --> 02:49:50,235
+Şimdi izdüşüm derken sanırım orayı düşünürken sizi kaçırdım.
+
+1546
+02:49:50,956 --> 02:49:54,735
+U2 bana daha iyi ayırıyormuş gibi geldi mavi ve yeşilleri.
+
+1547
+02:49:54,855 --> 02:50:00,815
+Ama siz diğer sola yatık olan çizginin daha iyi ve net ayırdığını söylediniz.
+
+1548
+02:50:00,815 --> 02:50:05,895
+U2 üzerine izdüşüm aldığınızda şöyle bakın.
+
+1549
+02:50:05,895 --> 02:50:08,835
+Yani ben mesela şöyle bir şey diyemiyorum.
+
+1550
+02:50:09,015 --> 02:50:17,876
+U2'de sıfırdan küçük olanlar mavi sınıfa sıfırdan büyük olanlar yeşil sınıfa aittir diyemiyorum.
+
+1551
+02:50:18,015 --> 02:50:21,556
+Çünkü bir ondan bir ondan geliyor örnekler farkındaysa.
+
+1552
+02:50:21,556 --> 02:50:27,056
+Ama U1 eksenine izdüşüm aldığımda mesela şunu söyleyebilirim.
+
+1553
+02:50:27,056 --> 02:50:35,956
+U1 ekseninde U1'in de sıfırdan küçük olanlar mavi sınıfa ait sıfırdan büyük olanlar yeşil sınıfa ait diyebiliyorum.
+
+1554
+02:50:36,235 --> 02:50:38,015
+Görebiliyor musunuz söylediğim şeyi?
+
+1555
+02:50:38,475 --> 02:50:38,716
+Tamam.
+
+1556
+02:50:39,036 --> 02:50:39,255
+Evet.
+
+1557
+02:50:39,815 --> 02:50:40,615
+Anlaşıldı mı?
+
+1558
+02:50:40,675 --> 02:50:41,415
+Ne demek istediğim?
+
+1559
+02:50:41,675 --> 02:50:46,915
+Yani bu noktaların U1 eksenine izdüşümünü aldığınızda yeri burası oluyor.
+
+1560
+02:50:48,015 --> 02:50:49,655
+Bunun da yeri burası olmuş oluyor.
+
+1561
+02:50:49,655 --> 02:50:53,216
+Mavilerin yerleşimi ise hep eksenin bu tarafında kaldı.
+
+1562
+02:50:54,935 --> 02:50:58,815
+Bunların izdüşümünü aldığımda, şu noktaların izdüşümlerini aldığımda.
+
+1563
+02:50:59,415 --> 02:51:06,216
+U1'in sıfırdan küçük olanları mavi sınıf, sıfırdan büyük olanları yeşil sınıf diyebildim.
+
+1564
+02:51:06,216 --> 02:51:12,216
+Ama U1 eksenini ben veri setinden attım PCA kullandığımda.
+
+1565
+02:51:13,136 --> 02:51:16,235
+Sadece U2 ile veriyi temsil etmeye karar verdim.
+
+1566
+02:51:16,755 --> 02:51:22,556
+Bu durumda aslında faydalı bir öz niteliği silmiş oldum.
+
+1567
+02:51:23,115 --> 02:51:23,855
+Anlatabiliyor muyum?
+
+1568
+02:51:24,136 --> 02:51:30,195
+PCA o açıdan baktığınızda sınıf etiketi olan veri de her zaman iyi sonuç vermez.
+
+1569
+02:51:30,376 --> 02:51:34,296
+Yani böyle dağılımın sadece yönelimine bakarak karar veriyor.
+
+1570
+02:51:34,296 --> 02:51:36,395
+Sınıf bilgisini hiç kullanmıyor çünkü.
+
+1571
+02:51:38,615 --> 02:51:40,995
+Bu bir eksiklik o açıdan baktığınızda.
+
+1572
+02:51:42,956 --> 02:51:43,315
+Evet.
+
+1573
+02:51:44,615 --> 02:52:11,716
+Sorunuz var mıdır?
+
+1574
+02:52:00,244 --> 02:52:05,524
+Yoruldunuz. 3 saat ders yaptık. Farkındayım ve dersi bitireceğim.
+
+1575
+02:52:12,435 --> 02:52:19,755
+Slider geri dönecek olursak ne anlattık feature selection ile ilgili iki tane farklı
+
+1576
+02:52:19,755 --> 02:52:25,575
+çözümden bahsetmiştik feature selection ve feature composition feature composition
+
+1577
+02:52:25,575 --> 02:52:37,695
+kısmını da böylece tamamlamış olduk bir öz nitelik uzayında dönüşüm ve indirgeme
+
+1578
+02:52:37,695 --> 02:52:46,216
+işleminin nasıl yapıldığını görmüş olduk bu hafta bu kadar önümüzdeki hafta value reduction
+
+1579
+02:52:46,216 --> 02:52:56,115
+konusuyla devam edeceğim eğer sorunuz yoksa sanıyorum kimse de soru yok Evet sevgili
+
+1580
+02:52:56,115 --> 02:53:04,456
+arkadaşlar haftaya görüşmek üzere diyorum ve bana el sallayarak dersten çıkıyorsunuz buyrun
+
+1581
+02:53:04,456 --> 02:53:12,435
+bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa
+
+1582
+02:53:12,435 --> 02:53:23,456
+ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa
+
+1583
+02:53:23,456 --> 02:53:26,216
+ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu bir şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de bu şey yoksa ben de
+
+1584
+02:53:53,427 --> 02:53:54,688
+dosyanın adını aldım.
+
+1585
+02:53:56,048 --> 02:53:57,927
+Ben bunu Linux'ta açtım da
+
+1586
+02:53:57,927 --> 02:53:59,268
+şu anda indiremiyorum
+
+1587
+02:53:59,268 --> 02:54:00,567
+[öğrenci] [öğrenci].
+
+1588
+02:54:01,528 --> 02:54:04,028
+Ona bakacağım. Niye indiremiyorum
+
+1589
+02:54:04,028 --> 02:54:05,927
+bilmiyorum. Peki üstüne tıkladığımda
+
+1590
+02:54:05,927 --> 02:54:06,647
+da açamıyorum.
+
+1591
+02:54:08,647 --> 02:54:09,567
+Bununla ilgili
+
+1592
+02:54:09,567 --> 02:54:10,268
+yani
+
+1593
+02:54:10,268 --> 02:54:13,747
+Windows şeyde
+
+1594
+02:54:13,747 --> 02:54:15,827
+bir bakarım. Dersten sonra
+
+1595
+02:54:15,827 --> 02:54:17,587
+bana mail atın. Konuşalım oldu mu?
+
+1596
+02:54:17,708 --> 02:54:19,727
+Ben size bir açıklama dönelim.
+
+1597
+02:54:20,368 --> 02:54:20,927
+Tamam açalım.
+
+1598
+02:54:22,147 --> 02:54:22,548
+Tamam.
+
+1599
+02:54:23,427 --> 02:54:26,427
+Evet teşekkürler [öğrenci], [öğrenci],
+
+1600
+02:54:26,768 --> 02:54:27,608
+[öğrenci], [öğrenci],
+
+1601
+02:54:28,427 --> 02:54:30,708
+[öğrenci].
+
+1602
+02:54:30,807 --> 02:54:32,628
+Teşekkürler. İsimini okuduğum arkadaşlar
+
+1603
+02:54:32,628 --> 02:54:34,407
+çıkabilir. [öğrenci], [öğrenci],
+
+1604
+02:54:35,528 --> 02:54:35,987
+Bahar,
+
+1605
+02:54:37,407 --> 02:54:38,468
+[öğrenci].
+
+1606
+02:54:40,368 --> 02:54:40,868
+Hocam yine
+
+1607
+02:54:40,868 --> 02:54:42,708
+benim adım okumadınız ama ben
+
+1608
+02:54:42,708 --> 02:54:43,667
+elimi kaldırmıştım.
+
+1609
+02:54:44,948 --> 02:54:46,807
+Listede benim ekranımda altta
+
+1610
+02:54:46,807 --> 02:54:47,628
+daha geleceğim.
+
+1611
+02:54:48,288 --> 02:54:50,587
+Baya bir şey var. Şimdi görüyorum
+
+1612
+02:54:50,587 --> 02:54:52,307
+ama [öğrenci], [öğrenci]. Artık
+
+1613
+02:54:52,307 --> 02:54:53,747
+elini görebiliyorum.
+
+1614
+02:54:53,887 --> 02:54:54,647
+Teşekkürler.
+
+1615
+02:54:55,067 --> 02:54:56,067
+Tamam. Görüşmek üzere hocam.
+
+1616
+02:54:56,407 --> 02:54:57,067
+Görüşürüz.
+
+1617
+02:54:57,128 --> 02:54:57,587
+Hoşçakal.
+
+1618
+02:54:57,907 --> 02:54:58,608
+[öğrenci],
+
+1619
+02:54:59,288 --> 02:54:59,907
+[öğrenci],
+
+1620
+02:55:00,987 --> 02:55:01,807
+[öğrenci] [öğrenci],
+
+1621
+02:55:03,587 --> 02:55:04,268
+[öğrenci] [öğrenci]
+
+1622
+02:55:04,268 --> 02:55:04,907
+hoşçakal,
+
+1623
+02:55:05,768 --> 02:55:06,407
+[öğrenci],
+
+1624
+02:55:06,868 --> 02:55:07,708
+[öğrenci],
+
+1625
+02:55:07,708 --> 02:55:10,468
+[öğrenci],
+
+1626
+02:55:10,468 --> 02:55:12,468
+Toprak,
+
+1627
+02:55:12,468 --> 02:55:13,487
+[öğrenci],
+
+1628
+02:55:14,048 --> 02:55:14,727
+Büyük Üzeyne,
+
+1629
+02:55:14,868 --> 02:55:15,567
+hoşçakal,
+
+1630
+02:55:18,387 --> 02:55:19,487
+[öğrenci],
+
+1631
+02:55:19,868 --> 02:55:20,827
+teşekkürler,
+
+1632
+02:55:22,427 --> 02:55:22,788
+[öğrenci],
+
+1633
+02:55:23,507 --> 02:55:25,167
+[öğrenci] profil resmi koy lütfen.
+
+1634
+02:55:26,448 --> 02:55:27,827
+Tamam hocam. İyi günler.
+
+1635
+02:55:28,387 --> 02:55:29,067
+İyi günler.
+
+1636
+02:55:29,827 --> 02:55:30,968
+Evet arkadaşlar,
+
+1637
+02:55:31,708 --> 02:55:34,288
+derste yoksunuz galiba.
+
+1638
+02:55:34,468 --> 02:55:35,468
+[öğrenci] burada mı?
+
+1639
+02:55:35,468 --> 02:55:38,227
+Hocam ben reaksiyon atıyorum
+
+1640
+02:55:38,227 --> 02:55:40,307
+bu thumbnail'a ama gelmiyor galiba.
+
+1641
+02:55:40,468 --> 02:55:41,067
+Tam anlayamadım.
+
+1642
+02:55:41,087 --> 02:55:41,448
+Yok.
+
+1643
+02:55:41,827 --> 02:55:43,167
+Görmedim elinizi.
+
+1644
+02:55:44,227 --> 02:55:45,868
+Bu şey değil mi hocam sizin dediğiniz
+
+1645
+02:55:45,868 --> 02:55:47,288
+bu reaksiyon'daki tam zaf.
+
+1646
+02:55:48,048 --> 02:55:50,647
+Raise hand diye bir şey var.
+
+1647
+02:55:50,747 --> 02:55:51,628
+Raise your hand.
+
+1648
+02:55:51,628 --> 02:55:56,128
+bir öyle bak bakalım bulabilecek misin?
+
+1649
+02:55:56,628 --> 02:55:57,128
+[öğrenci],
+
+1650
+02:55:57,288 --> 02:55:57,847
+hoşçakal,
+
+1651
+02:55:57,927 --> 02:55:58,448
+burada mısın?
+
+1652
+02:55:58,567 --> 02:55:58,747
+Tamam,
+
+1653
+02:55:58,927 --> 02:55:59,927
+ben buradayım da
+
+1654
+02:55:59,927 --> 02:56:01,608
+arkadaşlarını zamanla almamak adına
+
+1655
+02:56:01,608 --> 02:56:03,247
+bir şey soracaktım son olarak.
+
+1656
+02:56:03,327 --> 02:56:03,827
+Dinliyorum.
+
+1657
+02:56:04,587 --> 02:56:06,327
+Ben size mail atmıştım da hocam
+
+1658
+02:56:06,327 --> 02:56:08,528
+bu projeyle ilgili bir makale,
+
+1659
+02:56:09,628 --> 02:56:13,487
+makaledeki dergilerle ilgili öneride bulunacaktınız da.
+
+1660
+02:56:14,368 --> 02:56:16,247
+Ben tez danışman hocamla konuştuğumda
+
+1661
+02:56:16,247 --> 02:56:17,827
+o bana bir makale önermişti de
+
+1662
+02:56:17,827 --> 02:56:20,067
+ben size olabilir mi diye atmıştım ama hocam.
+
+1663
+02:56:20,327 --> 02:56:24,007
+Ben gördüm onu ama dergi bir şey dergisi,
+
+1664
+02:56:24,208 --> 02:56:28,368
+yani tıbbi alanda bir dergide yayınlanmış bir makale.
+
+1665
+02:56:28,368 --> 02:56:30,927
+çok fazla içeriğine bakmadım.
+
+1666
+02:56:31,087 --> 02:56:31,688
+Yani evet,
+
+1667
+02:56:32,688 --> 02:56:34,567
+IEEE ve
+
+1668
+02:56:34,567 --> 02:56:36,948
+Elsevier dergileri iyi,
+
+1669
+02:56:37,128 --> 02:56:37,727
+güzel ama
+
+1670
+02:56:37,727 --> 02:56:40,587
+daha basit olarak ele almış.
+
+1671
+02:56:40,968 --> 02:56:43,487
+Ama hani tezde çalışacağım konu bu,
+
+1672
+02:56:43,628 --> 02:56:45,528
+o yüzden buna başlayayım diyorsa
+
+1673
+02:56:45,528 --> 02:56:47,528
+tekrar bir daha bakarım.
+
+1674
+02:56:48,327 --> 02:56:48,927
+Evet hocam,
+
+1675
+02:56:49,028 --> 02:56:52,067
+çünkü eş danışmanım benim aynı zamanda doktor da,
+
+1676
+02:56:52,907 --> 02:56:55,208
+o şeylerden bir tanesi de danışmanımdı.
+
+1677
+02:56:55,208 --> 02:56:57,807
+ben de şey üzerine çalışmaya başladım da hocam,
+
+1678
+02:56:58,167 --> 02:57:00,968
+çocuk cerrahisinde yapay zeka üzerine çalışmaya başladım,
+
+1679
+02:57:01,087 --> 02:57:02,288
+veri madenceli üzerine.
+
+1680
+02:57:02,887 --> 02:57:03,347
+Çok güzel.
+
+1681
+02:57:03,887 --> 02:57:05,227
+Onun danışmanınız kim?
+
+1682
+02:57:06,128 --> 02:57:08,208
+Şeyde matematik mühendisinde Birol Hoca hocam.
+
+1683
+02:57:09,427 --> 02:57:11,468
+Anladım.
+
+1684
+02:57:12,147 --> 02:57:13,768
+Bir inceleyeyim [öğrenci],
+
+1685
+02:57:13,907 --> 02:57:14,887
+ondan sonra şey yapayım.
+
+1686
+02:57:14,968 --> 02:57:15,628
+Evet [öğrenci],
+
+1687
+02:57:15,727 --> 02:57:16,387
+teşekkürler,
+
+1688
+02:57:16,448 --> 02:57:17,208
+elimi gördüm.
+
+1689
+02:57:17,647 --> 02:57:18,327
+Buldum hocam,
+
+1690
+02:57:18,427 --> 02:57:18,667
+aradım.
+
+1691
+02:57:18,948 --> 02:57:19,468
+Evet,
+
+1692
+02:57:19,667 --> 02:57:20,028
+evet,
+
+1693
+02:57:20,167 --> 02:57:20,448
+tamam,
+
+1694
+02:57:20,628 --> 02:57:21,368
+şimdi göründü.
+
+1695
+02:57:21,927 --> 02:57:22,087
+Evet,
+
+1696
+02:57:22,087 --> 02:57:22,528
+damla.
+
+1697
+02:57:22,628 --> 02:57:23,587
+Bulamadım ama şey,
+
+1698
+02:57:23,667 --> 02:57:24,587
+reaksiyon atıyorum ben de,
+
+1699
+02:57:24,587 --> 02:57:25,347
+[öğrenci] dediği gibi.
+
+1700
+02:57:25,487 --> 02:57:25,948
+Şeyde,
+
+1701
+02:57:26,028 --> 02:57:26,608
+bu parti,
+
+1702
+02:57:27,028 --> 02:57:28,727
+participant'a,
+
+1703
+02:57:29,128 --> 02:57:30,827
+adının yanında çıkıyor,
+
+1704
+02:57:31,548 --> 02:57:32,747
+üst tıklayınca orada.
+
+1705
+02:57:33,708 --> 02:57:34,747
+Evet.
+
+1706
+02:57:35,747 --> 02:57:36,407
+Hadi bakalım,
+
+1707
+02:57:36,528 --> 02:57:37,468
+Damla sen de bulacaksın.
+
+1708
+02:57:37,548 --> 02:57:38,548
+Ben bulamıyorum.
+
+1709
+02:57:39,347 --> 02:57:39,587
+Şey,
+
+1710
+02:57:39,768 --> 02:57:40,887
+participant'da,
+
+1711
+02:57:42,468 --> 02:57:44,468
+participant'ı tıkladığın zaman,
+
+1712
+02:57:45,268 --> 02:57:47,407
+kendi adının yanında dedi,
+
+1713
+02:57:47,407 --> 02:57:47,628
+bit.
+
+1714
+02:57:47,628 --> 02:58:03,108
+Evet.
+
+1715
+02:57:49,683 --> 02:57:51,983
+Hocam yok kendi yanına tıklayınca
+
+1716
+02:57:51,983 --> 02:57:52,943
+altta şey çıkıyor.
+
+1717
+02:57:53,063 --> 02:57:54,823
+Invite, mute, mute bir de
+
+1718
+02:57:54,823 --> 02:57:57,283
+raise hand tıklayınca da lower hand
+
+1719
+02:57:57,283 --> 02:57:58,023
+olarak geliyor.
+
+1720
+02:57:59,443 --> 02:58:01,283
+Hadi bakalım [öğrenci]. Biraz gayret
+
+1721
+02:58:01,283 --> 02:58:03,163
+olacak. Mesela ben şimdi
+
+1722
+02:58:03,163 --> 02:58:05,203
+[öğrenci]'in elini indirebiliyorum.
+
+1723
+02:58:05,304 --> 02:58:07,163
+Lower hand yaptım. Oldu mu?
+
+1724
+02:58:07,163 --> 02:58:08,963
+Evet oldu hocam.
+
+1725
+02:58:09,043 --> 02:58:11,304
+Ben de öyle müdahale edebiliyorum.
+
+1726
+02:58:12,323 --> 02:58:13,583
+Sistemi yavaş yavaş
+
+1727
+02:58:13,583 --> 02:58:14,963
+öğreniyoruz arkadaşlar.
+
+1728
+02:58:15,323 --> 02:58:16,543
+Peki [öğrenci] hoşçakal.
+
+1729
+02:58:16,783 --> 02:58:19,663
+Hoşçakalın hocam. Görüşürüz [öğrenci].
+
+1730
+02:58:19,683 --> 02:58:23,243
+Evet [öğrenci]
+
+1731
+02:58:23,243 --> 02:58:24,343
+Erek yok galiba.
+
+1732
+02:58:25,503 --> 02:58:26,363
+İyi günler hocam.
+
+1733
+02:58:27,503 --> 02:58:29,403
+Teşekkür ederim. Görüşürüz.
+
+1734
+02:58:29,483 --> 02:58:30,143
+Hoşçakalın.

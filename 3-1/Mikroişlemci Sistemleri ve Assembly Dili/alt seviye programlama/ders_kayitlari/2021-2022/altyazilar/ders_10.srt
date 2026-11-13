@@ -1,0 +1,3123 @@
+1
+00:03:29,747 --> 00:03:30,787
+Arkadaşlar merhabalar.
+
+2
+00:03:37,300 --> 00:03:46,219
+Biliyorsunuz haftaya vizelerimiz var, vize haftası var. Bizim sınavımızda perşembe günü saat 10 olarak planlanmış.
+
+3
+00:03:47,960 --> 00:03:58,220
+Sınava gelirken arkadaşlar mutlaka yanınızda Avesi sayfasından duyurmuş olduğum instruction seti mutlaka getiriyorsunuz.
+
+4
+00:03:59,660 --> 00:04:04,180
+Instruction seti siz getireceksiniz, biz size sınav sırasında vermeyeceğiz.
+
+5
+00:04:04,627 --> 00:04:25,707
+üzeri işaretleme olmayan bir çıktı olursa seviniriz. Bir de malum toplam beş ayrı sınıfa bölüneceğiz. Dolayısıyla sınavdan bir süre önce salonların önünde olursanız veya yakınlarında olursanız en azından yerleştirmeyle ilgili vakit kazanmış oluruz. Onu da söylemiş olayım.
+
+6
+00:04:27,315 --> 00:04:36,435
+Sınav nereye kadar diyecek olursak, sınav, EXE program dahil olmak üzere, baştan itibaren gördüğümüz konular kapsam dahilinde.
+
+7
+00:04:37,535 --> 00:04:42,135
+Genel olarak bu Instruction Set'i nasıl kullanmanız gerektiğini bilmeniz gerekiyor.
+
+8
+00:04:42,275 --> 00:04:48,735
+Buradan kasıt aslında Instruction Set'i açıp, belirli bir tipteki Instruction'ın boyutu nedir?
+
+9
+00:04:53,427 --> 00:05:15,608
+hangi tipte veri aldığını ayırt edebilmeniz lazım. Örneğin, immediate bir veri alan durum farklı, dolaylı adresleme üzerinden parametre aldığı durumda farklı senaryolar ortaya çıkıyor. Dolayısıyla bu bahsetmiş olduğumuz, geçen iki derslerde bahsetmiş olduğumuz adresleme modlarının etkisi nedir?
+
+10
+00:05:15,968 --> 00:05:24,668
+onu da dikkate alarak bu Instruction Set'i nasıl kullanmalıyız? Mutlaka ve mutlaka sınava gelmeden önce bunun bir denemesini yapmanız gerekiyor arkadaşlar.
+
+11
+00:05:25,388 --> 00:05:31,728
+Yani ilk defa Instruction Set ile sınav sırasında karşı karşıya kalırsanız çok büyük vakit kaybolur.
+
+12
+00:05:31,728 --> 00:05:39,664
+Sınav zaten bir saat. Hiçbir şey yapamazsınız. Ben şimdiden söyleyeyim, uyarayım. Mutlaka öncesinde Instruction'ların...
+
+13
+00:05:39,663 --> 00:05:44,043
+Mesela belirli örnekler yapıyoruz, siz de denemişsinizdir. Bu örneklere ilişkin olarak,
+
+14
+00:05:45,504 --> 00:05:55,223
+nedir onun adı, bu örneklere ilişkin olarak mutlaka ne tipte bir komut yürütülüyor, onu ayırt edebilmeniz gerekiyor.
+
+15
+00:05:55,343 --> 00:06:05,403
+Şöyle test yapabilirsiniz, kendiniz bir tahmin yaparsınız, daha sonra assemblerden geçilmiş halinde bak ortamında unassemble edip bakarsınız veya LST dosyasından bakarsınız.
+
+16
+00:06:06,259 --> 00:06:14,759
+Çıkan sonuçta sizin tahmininiz uyuşuyor mu? Biraz bu noktada mutlaka antrenman yapın. Bu önemli bir konu. Soru var bir tane. Sınav test mi?
+
+17
+00:06:20,403 --> 00:06:26,704
+Sınav, kısa sorular ve problemleri içerecek şekilde karma bir sınav diyebilirim.
+
+18
+00:06:28,724 --> 00:06:35,704
+Mazeret sınavı, bütün dersler için mazeret sınavları dönem sonunda, son hafta yapılır.
+
+19
+00:06:46,675 --> 00:06:55,875
+Yani kısa sorular da var, problem şeklinde sorular da var. Karma bir sınav. Bunu tekrar etmiş olayım.
+
+20
+00:06:59,635 --> 00:07:07,596
+Onun haricinde dediğim gibi egze program dahil olmak üzere baştan itibaren bütün konular.
+
+21
+00:07:08,884 --> 00:07:35,184
+debug kullanımıyla ilgili de birkaç örnek yapmıştık. O konuda dahil olmak üzere. Yani debugla da ne yaptık? Nasıl kullandık debugı? Data segmenti inceledik. Değil mi? Mesela yazmış olduğumuz bir data segment tanımına göre verinin yerleşimi nasıl oluyor? Bunları inceledik, gördük. Bu konuda dahil olmak üzere. Baştan itibaren gördüğümüz konular kapsama dahil arkadaşlar.
+
+22
+00:07:36,692 --> 00:07:57,032
+Yani şey de olabilir, sorduğunuz gibi bir kod bloğu şeklinde sorular da var, bir problem çözümüne ilişkin soru ve cevaplar da var, tanımlar da var, adresleme modlarına ilişkin veyahut da genel vermiş olduğumuz dersin başından itibaren tanımlar.
+
+23
+00:07:58,492 --> 00:07:59,532
+Hepsi var.
+
+24
+00:08:01,524 --> 00:08:06,624
+Yani işte kısa sorulardan kastım test ve true false şeklinde düşünebilirsiniz.
+
+25
+00:08:13,267 --> 00:08:22,267
+Yani var diyorum ya, problem çözümü var, problem var, problem üzerinden yani geçen hafta yaptığımız gibi, oncadan önceki haftalarda yaptığımız gibi problemler de var.
+
+26
+00:08:24,127 --> 00:08:27,267
+Şimdi şöyle başlayalım arkadaşlar bu hafta.
+
+27
+00:08:30,348 --> 00:08:33,967
+Ortalama ne kadar soru sorabilirsek, 100 yapabiliyorsak 100.
+
+28
+00:08:45,556 --> 00:09:08,516
+Vallahi hepsini true false yaparım, 100 tane soru sorarım mesela. O da olabilir. Tabii öyle bir şey olmayacak da. Daha önceki senelerde işte 40 soruya yakın soru oluyordu yanlış hatırlamıyorsam. Yine bir saat civarında yapıyorduk. Aşağı yukarı.
+
+29
+00:09:14,964 --> 00:09:19,324
+Evet, şimdi bu haftanın konusuyla ilgili olarak şimdi geri dönelim.
+
+30
+00:09:25,556 --> 00:09:28,956
+Öncelikli olarak arkadaşlar şunu hatırlayarak başlayalım.
+
+31
+00:09:31,036 --> 00:09:36,396
+Exe tipi bir programın iskelet yapısından bahsetmiştik hatırlayacak olursanız.
+
+32
+00:09:37,456 --> 00:09:41,256
+Daha onun öncesinde de sözde komutlardan bahsetmiştik.
+
+33
+00:09:43,496 --> 00:09:49,556
+Sözde komutlar hatırlayacak olursanız herhangi bir makine kodu karşılığı olmayan
+
+34
+00:09:51,412 --> 00:09:59,751
+nasıl hareket etmesi gerektiğini daha compile time zamanında gösteren bir takım yardımcı kelimelerdi, özel kelimelerdi.
+
+35
+00:10:00,172 --> 00:10:03,852
+Mesela DW bu şekilde bir pseudo koddu.
+
+36
+00:10:04,451 --> 00:10:07,471
+Dupe, duplicate böyle bu şekilde bir koddu.
+
+37
+00:10:08,271 --> 00:10:13,831
+Stack, para, segment gibi kelimeler özel birer pseudo koddu.
+
+38
+00:10:15,443 --> 00:10:23,843
+Doğrudan instruction olan push.dse, xor.ax, ax gibi komutlar bunlar makine kodu karşılığı olan şeylerdi.
+
+39
+00:10:25,644 --> 00:10:35,104
+Zaten bunu da LST uzantılı dosya oluşturup baktığınız zaman hangilerinin makine kodu karşılığı var, hangilerinin yok onları da görebiliyordunuz.
+
+40
+00:10:35,104 --> 00:10:37,104
+Bunu da incelemiştik hatırlayacak olursanız.
+
+41
+00:10:38,243 --> 00:10:42,604
+Şimdi bir toparlama yapmak adına şöyle başlayalım.
+
+42
+00:10:43,508 --> 00:10:51,508
+Exitipi Program iskeletine baktığımız zaman burada 3 tane segment tanımı olduğunu görüyoruz.
+
+43
+00:10:51,748 --> 00:10:58,768
+Stack segment yani yığın, veri kesimi ve kod kesimi olmak üzere 3 kesim ile tanımlanıyordu.
+
+44
+00:10:59,908 --> 00:11:06,448
+Bu kesimler işletim sistemi tarafından program çağrıldığında hafızaya uygun sırada yerleştiriliyordu.
+
+45
+00:11:06,448 --> 00:11:10,508
+Bu sıraya ilişkin olarak burada hizalama parametreleri önemliydi.
+
+46
+00:11:11,155 --> 00:11:27,235
+Örneğin işletim sistemi bu segmenti yerleştirirken hizalama tipi para olduğu için bir sonraki 16'nın tam katı adres neresiyse oradan itibaren bu segmentin yerleşimini sağlıyordu gibi bir senaryo söz konusuydu.
+
+47
+00:11:31,956 --> 00:11:46,235
+Yapıyı incelediğimiz zaman ilk tanımladığımız segment STSG isimli bir segment. Burada ismin jenerik bir şey olduğunu söylemiştik. Fakat segment, para, stack bunlar fix kelimeler, özel kelimeler.
+
+48
+00:11:46,875 --> 00:11:56,096
+AND, S yine fix ve özel kelime. Şurada class tipini tanımlıyorduk. Bu bizim verdiğimiz bir isimdi. Şu da bizim verdiğimiz bir isimdi.
+
+49
+00:11:56,692 --> 00:12:21,552
+Bu kesimin yığın kesimi olarak kullanılması veya bu kesimin yığın kesimi olacağı nereden belli oluyordu onu hatırlayalım. Şurada kullanmış olduğumuz stack özel söyle kodundan dolayı bu kesimin yığın kesimi olduğu belirlenmiş oluyordu. Yani bizim çalıştırdığımız program hafızaya yüklendiğinde işletim sistemi tarafından şuradaki stack kelimesini kontrol ederek veya bu stack kelimesine dayanaraktan
+
+50
+00:12:22,100 --> 00:12:49,460
+SS yazmacı, stack segment yazmacı bu kesimi gösterir şekilde değer atanıyordu. Dolayısıyla bu kesimin yığın kesimi olduğunu şuradaki kelime belirliyordu. Bu ikinci kesimimiz DTSG. Bununla ilgili niyetimiz bunu data segment olarak tanımlamak. Fakat bu tanımlandığı haliyle ve hafızaya yüklendiği haliyle DS doğrudan yani data segment doğrudan bunu gösterir durumda değil. Data segmentteki değer neydi onu hatırlayalım.
+
+51
+00:12:50,292 --> 00:13:09,072
+işletim sistemi bizim programımızı çağırdığında geri dönüşle ilgili görevi çağrılan programdan yerine getirmesini bekliyordu. Bunun anlamı şu, program bittikten sonra doğru yere, kaldığı yere dönme işi, görevi bu program tarafından ele alınmalı.
+
+52
+00:13:09,072 --> 00:13:13,072
+Çağrılan program tarafından ele alınmalı. Buna ilişkin olarak da...
+
+53
+00:13:13,748 --> 00:13:29,528
+işletim sistemi geri dönüş değerleriyle ilgili şu bilgiyi aktarıyordu programa. Diyordu ki, DS yazmacı içerisindeki değer senin döneceğin segment değerin ve sen bu segmentin sıfır offsetine döneceksin diye
+
+54
+00:13:30,100 --> 00:13:53,560
+bir egzotipi programla işletim sistemi arasında baştan bir anlaşma var. Dolayısıyla geri dönüşle ilgili de egzotipi program sorumlu olduğu için bu geri dönüş değerlerini yığına koyup daha sonra RET-F ile dönüş ile dönüş sırasında bu yığından uygun geri dönüş değerlerinin çekilip uygun yazmaçlara aktarılması sağlanabiliyordu.
+
+55
+00:13:54,131 --> 00:14:07,031
+Dolayısıyla tekrar bakacak olursak şu data segment niyetiyle oluşturduğumuz DTSG isimli segment program hafızaya yüklenir yüklenmez data segment tarafından işaret edilir durumda değil.
+
+56
+00:14:07,692 --> 00:14:15,731
+Tamam mı? Ne zaman işaret edilir duruma geliyor? Belirli bir takım adımlardan sonra işaret edilir hale geliyordu. Biraz sonra onu hatırlayalım.
+
+57
+00:14:16,291 --> 00:14:20,111
+Ama program yüklenir yüklenmez bu değere sahip değildi.
+
+58
+00:14:20,851 --> 00:14:27,252
+Yine bir kod segmentimiz vardı. Kod segmentle ilgili olarak şunları hatırlayacaktık. Önemli noktalar.
+
+59
+00:14:28,432 --> 00:14:34,132
+Egze tipi programlarda kod segment içerisinde bir tane far tipinde ana yordam olmalı.
+
+60
+00:14:34,231 --> 00:14:42,072
+Veyahut da bir başka deyişle egze tipi programların ana yordamı far tipinde tanımlanmalı diye bunu ifade ediyoruz.
+
+61
+00:14:46,196 --> 00:15:12,896
+far tipinde olduğunu belirtmiş oluyoruz. Bu durumda geri dönüşle ilgili olarak da far tipinde bir fonksiyon kola karşılık olarak bunun red f ile dönmesi gerekiyor. Yani return far ile dönmesi gerekiyor. Return ile return far arasındaki fark da temelde near return yığından çektiği değeri Instruction pointer'a yazıp bitiriyordu işini.
+
+62
+00:15:13,427 --> 00:15:25,127
+Fakat far return, yığından dönüş sırasında, yığından ilk çektiği değeri, instruction pointer'ı atmakla birlikte, ikinci çekmiş olduğu değeri de kod segmenti atıyordu.
+
+63
+00:15:25,247 --> 00:15:33,927
+Dolayısıyla farklı bir segmentin değişik bir offsetine dönmüş oluyorduk. Dolayısıyla far olmasının bu şekilde bir etkisi vardı.
+
+64
+00:15:34,048 --> 00:15:39,827
+Yığından iki tane değer çekilerek dönüş yapıldığına ilişkin bu bilgiyi hatırlamış olalım.
+
+65
+00:15:42,035 --> 00:16:02,675
+Şimdi, peki bu segmenti burada CD, SG ile tanımlanmış. Bununla ilgili niyetimizde bunu kod segment olarak tanımlamak olduğu belli. Bu segmentin kod segment olarak belirlenmesi, yani bu segment hafızaya yüklendiğinde CS yazmacının bunu işaret etmesi nasıl sağlanıyor?
+
+66
+00:16:09,460 --> 00:16:27,500
+hangi segment içerisindeyse bu aslında kodun giriş noktası, entry pointini belirten bir etiket. Bu entry point hangi segment içerisindeyse o segment hafızaya yüklendikten sonra CS orayı işaret edecek şekilde güncelleniyor.
+
+67
+00:16:30,611 --> 00:16:43,231
+Burada bu CDSG isimli segmentimizi, kod segment yapan şey, AND kelimesinden sonra gelen entry point etiketinin bu segment içerisinde yer alıyor olmasıydı.
+
+68
+00:16:43,731 --> 00:16:50,071
+Dolayısıyla kod buradan itibaren yürütülmeye başlandı. Ne yapıyor kod yürütüldüğünde, exotipi program yürütüldüğünde?
+
+69
+00:16:50,831 --> 00:16:54,511
+Öncelikli olarak kodun en sonunda RETF var.
+
+70
+00:16:55,091 --> 00:17:22,451
+Doğal olarak bu ana yordamın en sonunda çalıştırılacak olan fonksiyon REDF, yani işletim sistemine geri dönüş. O zaman ilk yapılacak işte işletim sistemine geri dönüş değerlerinin yığına uygun şekilde atılması. Ne göndermişti işletim sistemimize bilgi olarak? DSD geri dönülecek segment değerini ve aynı zamanda şu bilgiyi vermişti. Sana vermiş oldum DSD'deki segmentin sıfır offsetine dön. Bilgi bu şekilde.
+
+71
+00:17:23,316 --> 00:17:40,155
+Dolayısıyla data segmentteki değeri yığına attık. Daha sonra onun üzerine de bir tane sıfır değeri attık. Dolayısıyla bu işlemlere karşılık RETF'ye çalıştığında yığından ilk göreceği değer sıfırdır. Sıfırı Instruction Pointer'a yükler.
+
+72
+00:17:40,511 --> 00:18:04,051
+Sonrasında da yığından sıradaki değeri çeker ki bu da işletim sisteminin bize DS üzerinden göndermiş olduğu dönüş segment değeriydi. Onu da alır, CS'ye atar ve işletim sisteminde uygun yere dönmüş oluruz. Dolayısıyla ilk yaptığımız işlemler işletim sistemine geri dönüş, segment ve offset değerinin yığına atılması şeklindeki bu üç adımlık işlem.
+
+73
+00:18:07,763 --> 00:18:21,523
+bir immediate değeri doğrudan yığına atamadığımız için yani push 0 diye bir komut olmadığından dolayı AX'i sıfırlayıp daha sonra AX'i bu 0 değerini yığına atmış oluyorduk dolaylı bir şekilde.
+
+74
+00:18:22,683 --> 00:18:30,663
+Şu haliyle geri dönüş değerini ayarladık ve hala az önce tanınmamış olduğumuz DTSG isimli segment
+
+75
+00:18:31,124 --> 00:18:53,124
+data segment olarak gösterilebilir durumda değil. Onu nasıl sağlıyorduk? Onu da şu iki satırla sağlıyorduk. Yine programın entry noktası şuradan itibaren yürütüldüğünü düşünecek olursak, geri dönüş değerlerini ayarladıktan sonra ikinci aşamada yapılacak işlem, tanımladığımız segmentin data segment olarak veya DS ile işaret edilebilir olmasını sağlamak. Bu iki satırda...
+
+76
+00:18:53,428 --> 00:19:04,368
+Bizim tanımlamış olduğumuz segment, data segment amacıyla tanımladığımız ve hafızaya sıradaki boş noktaya yüklenmiş olan kesimin segment değerini alıp
+
+77
+00:19:04,980 --> 00:19:27,840
+bunu DS yazmacına atıyor. Dolayısıyla burada da data segment artık bizim tanımladığımız kesimi gösterir hale gelmiş oluyor. Zaten bakacak olursanız bu egze kod iskeletinde bu noktadan itibaren kodumuzu yazabilir hale geliyordu. Dolayısıyla bu yapı bizim için iskeletin tekrar bir hatırlaması.
+
+78
+00:19:28,468 --> 00:19:42,188
+Olmuş olsun. Yine geçen hafta yaptığımız bir örnekte 16 bitlik iki tane sayının toplamını normalde 17. bite taşma olabilir. İşaretsiz toplamı yapıyorduk. Bu değeri
+
+79
+00:19:43,316 --> 00:19:56,516
+32 bitlik bir sonuç olarak, saklamaya yönelik olarak bir egze programı oluşturmuştuk. Yani orada örneklerimizi de şurada topluca belirtmek adına şunu açıp şurada gösteriyor olalım.
+
+80
+00:20:23,028 --> 00:20:49,067
+Evet, şimdi örnek sıfır olarak ifade edeceğim şey aslında örnek sıfır şuydu hatırlayacak olursanız 16 bitlik A sayısı ve yine 16 bitlik B sayısını toplayarak bir sonuç elde ediyorduk ama bu sonucu da 32 bitlik bir
+
+81
+00:20:49,407 --> 00:20:59,387
+değer olarak tutuyorduk. Geçen hafta bu örneği yapmıştık. Bu örneği yaparken aslında mikro işlemcinin desteklemiş olduğu 16 bitlik toplama işlemleri üzerinden bunu yapmıştık.
+
+82
+00:21:00,087 --> 00:21:10,407
+Hatırlayacak olursanız. Dolayısıyla bununla ilgili çok büyük bir sıkıntı yoktu. Şimdi bu noktadan devam edelim. Örnek 1 olarak ifade edeceğimiz bir sorumuz olsun.
+
+83
+00:21:16,948 --> 00:21:35,608
+yine 32 bitlik bir B sayısını toplayalım ve sonucu biliyoruz aslında 33. bite taşabilir ama veri tanımı itibariyle 33 bitlik bir veri tipi yok. Dolayısıyla bunun 64 bitlik bir sonuçta saklanmasını sağlayalım. Şimdi bunu yaparken de
+
+84
+00:21:36,115 --> 00:21:49,895
+Şundan faydalanmaya çalışalım. İki farklı yaklaşım olabilir. A sayısı dediğimiz şeyleri şu şekilde 4 byte'a ayırabiliriz. B sayısını da 4 byte'a ayırabiliriz.
+
+85
+00:21:50,475 --> 00:22:03,296
+Byteler üzerinden işlem yapa yapa gelebiliriz. Mesela yaklaşımlardan birisi bu olabilir. Bir başka yaklaşım ise A ve B sayısını 16 bitlik iki çanka ayırıp
+
+86
+00:22:03,763 --> 00:22:18,763
+Bunlar üzerinden işlem yapabiliriz. Bu iki yaklaşım da mümkün. Burada tabii işlemcinin desteklemiş olduğu 16 bitlik çanklar üzerinden işlem yapabilmek bizi hızlandıracaktır diyebiliriz.
+
+87
+00:22:19,883 --> 00:22:24,283
+Şimdi bununla ilişkili olarak bu örnekle ifade ettik burada.
+
+88
+00:22:28,243 --> 00:22:29,995
+örneklerimiz.
+
+89
+00:22:48,211 --> 00:22:51,612
+bunu da işlerinden başlatalım. Exe template ile başlatalım.
+
+90
+00:22:58,036 --> 00:23:24,355
+Şimdi burada kodumuzu yazmaya çalışalım. Öncelikli olarak girdilerimiz neler? Onları bir hatırlayalım. Neredeydi onlar? Şu 32 bitlik A sayısı, 32 bitlik B sayısı ve bunların toplam sonucu olan 64 bitlik bir sonuç değişkeni. Öncelikli olarak bunları tanımlayalım. A sayısı dediğimiz şey 32 bitlik bir değer olacak. Dolayısıyla 32 bitlik bir değer tanımlayalım. Nasıl tanımlıyorduk 32 bitlik değeri? Hatırlayan var mı?
+
+91
+00:23:34,740 --> 00:23:52,559
+Eskiden bir çizgi film vardı. Onun kısaltmasına benzemiş. DDW. Şimdi tanımlamamızı DD olarak yapıyoruz. Define Double Word olarak yapıyoruz. DDW yazarsanız çizerim. Hiç acıma.
+
+92
+00:24:01,715 --> 00:24:04,495
+7, 8 şeklinde tanımlayalım.
+
+93
+00:24:07,575 --> 00:24:10,375
+Yine B sayımızı tanımlayalım.
+
+94
+00:24:11,915 --> 00:24:13,515
+Define Double Word olarak.
+
+95
+00:24:13,995 --> 00:24:18,695
+Yine elde üreteceğini bildiğimiz değerler üzerinden gidelim.
+
+96
+00:24:19,395 --> 00:24:25,415
+2, 4, 6, 8 şeklinde bir işlem sonucu olsun.
+
+97
+00:24:26,355 --> 00:24:28,635
+Bir de sonuç değeri saklayacağız.
+
+98
+00:24:28,796 --> 00:24:30,935
+Buzluğunda 64 bit olmasını istiyoruz.
+
+99
+00:24:31,076 --> 00:24:34,895
+64 bitlik bir değişken tanımı için pseudokodumuz neydi arkadaşlar?
+
+100
+00:24:39,571 --> 00:24:48,831
+o da DQ'ydu. Şimdilik bunu da sıfır olarak initialize edelim. Şimdi yaklaşım olarak hatırlayacak olursanız ne demiştik?
+
+101
+00:24:50,031 --> 00:24:59,931
+16 bitlik çanklar halinde bunları toplamaya çalışalım. Şimdi yine şekil üzerine dönecek olursak ne gibi senaryolarla karşılaşabiliriz?
+
+102
+00:24:59,931 --> 00:25:05,131
+Şimdi bu iki toplamı yapacağız. Şu toplamı yaptık.
+
+103
+00:25:05,875 --> 00:25:07,695
+Buradan bir sonuç elde ettik.
+
+104
+00:25:09,115 --> 00:25:11,955
+Bu sonucu yerine yazabiliriz.
+
+105
+00:25:13,195 --> 00:25:15,195
+Buradan bir tane elde gelmiş olabilir.
+
+106
+00:25:16,836 --> 00:25:20,056
+Buradan gelen eldeyi ne yapmamız lazım?
+
+107
+00:25:21,715 --> 00:25:23,135
+Buraya eklememiz lazım.
+
+108
+00:25:23,816 --> 00:25:25,635
+Değil mi? İkinci 16 bitlik kısma.
+
+109
+00:25:29,556 --> 00:25:32,056
+Dolayısıyla elde ettiğimiz sonuç
+
+110
+00:25:32,056 --> 00:25:36,855
+yine buraya yazdık.
+
+111
+00:25:37,395 --> 00:25:40,296
+Ama buradan da bir elde gelebilir.
+
+112
+00:25:41,155 --> 00:25:44,316
+Dolayısıyla burada da yine bir eldeli toplama yapmamız gerekiyor.
+
+113
+00:25:45,696 --> 00:25:46,436
+Bir saniye, pardon.
+
+114
+00:26:06,644 --> 00:26:32,084
+Dolayısıyla burada bakın ne var? Bir tane en düşük anlamlı basamaklardan toplama işlemi var. Daha sonra yüksek anlamlılardan toplama var ama buraya bir elde gelmiş olabilir. Yani bir ADVIT-CARY var burada. Ve daha sonra yine buradan da bir ADVIT-CARY gelme ihtimali var. Dolayısıyla iki ADVIT-CARY ile ve bir ADVIT-CARY ile çözmemiz gereken bir senaryo gibi duruyor kabaca.
+
+115
+00:26:33,268 --> 00:26:35,268
+Şimdi bakalım bunu nasıl çözebiliriz?
+
+116
+00:26:35,947 --> 00:26:41,528
+Şimdi öncelikli olarak bizim bunların ilgili 16 bitlik çanklarına erişmemiz lazım.
+
+117
+00:26:43,028 --> 00:26:46,867
+16 bitlik kısımlarına yani şu ve şu kısımlara ayrı ayrı erişmemiz lazım.
+
+118
+00:26:47,407 --> 00:26:50,247
+Fakat veri boyutu 32 bit ve 64 bitlik.
+
+119
+00:26:50,367 --> 00:26:53,067
+Bunların ayrı parçalarına nasıl erişebiliriz sizce?
+
+120
+00:26:53,347 --> 00:26:54,087
+Nedir fikriniz?
+
+121
+00:27:00,915 --> 00:27:26,596
+Evet, load effective adresle alalım. Load effective adres, SI ile A say. Yine load effective adres, DI ile B say alalım. Ve yine de load effective adres, BX ile sonucu göstermeye çalışalım. Yani burada SI
+
+122
+00:27:27,476 --> 00:27:53,135
+şu byte'ın adresini gösteriyor. DI şu byte'ın adresini gösteriyor. BX ile de sonuç isimli değişkenin en düşük anlamlı byte'ını gösteriyor durumdayız. Çünkü veri little and informatında saklandığı için en düşük anlamlı byte en düşük adreste. Biz adres değerimizi büyüttükçe daha yüksek anlamlıları görüyor olacağız.
+
+123
+00:27:55,251 --> 00:27:57,551
+Birinci noktamız bu olsun.
+
+124
+00:27:58,991 --> 00:28:04,131
+Bu noktada dediğimiz gibi ilk düşük anlamlı 16 bitin toplamasını gerçekleştirelim.
+
+125
+00:28:04,251 --> 00:28:05,131
+Onu nasıl yapacağız?
+
+126
+00:28:10,067 --> 00:28:22,220
+Şunu yapabilir miyiz?
+
+127
+00:28:25,907 --> 00:28:29,208
+SE'nin gösterdiği adresle DE'nin gösterdiği adres.
+
+128
+00:28:29,548 --> 00:28:30,127
+Toplayacağım.
+
+129
+00:28:33,347 --> 00:28:34,468
+Yapamayız değil mi bunu?
+
+130
+00:28:34,827 --> 00:28:35,887
+Ama şöyle yaparsan.
+
+131
+00:28:39,892 --> 00:28:41,331
+Böyle yapılmaz mıyız?
+
+132
+00:28:53,395 --> 00:28:55,735
+Nedir fikriniz arkadaşlar? Böyle yapabilir miyiz?
+
+133
+00:29:03,155 --> 00:29:24,995
+Double Word olsun. Ama biz 16 bitlik hallerini aldık şu anda. 16 bitlik kısımlarını okuyoruz. Evet, [öğrenci]'un verdiği cevap doğru. Şimdi buradaki sıkıntı WordPtr değil, buradaki daha büyük sıkıntı iki tane memori adresi üzerinden toplama işlemi yapmaktan dolayı kaynaklanıyor.
+
+134
+00:29:25,407 --> 00:29:32,327
+Şöyle hatırlayalım sistemi, mikro işlemci birden fazla çevre birimi ve hafıza birimine bağlantılı yollar üzerinden.
+
+135
+00:29:32,967 --> 00:29:36,927
+Fakat bir seferde sadece bunlardan bir tanesiyle konuşabilir durumda.
+
+136
+00:29:37,528 --> 00:29:42,707
+Yani her seferinde bir çevre birimi, bu hafıza da olabilir, bir de mikro işlemci var.
+
+137
+00:29:42,867 --> 00:29:46,647
+Tellin iki ucu tarafında bunlar var ve bunlar birbiriyle konuşuyor.
+
+138
+00:29:51,316 --> 00:30:04,215
+bir başkasından da ikinci bir değeri okuması mümkün değil. Bundan dolayı burada ilk alacağımız değeri, yani bu da A sayısıyla ilişkili olsun, bunun yazmaç üzerine alınması lazım.
+
+139
+00:30:05,155 --> 00:30:09,455
+İlk yapacağımız iş MOV AX SE olacak.
+
+140
+00:30:11,276 --> 00:30:12,375
+Tamam mı?
+
+141
+00:30:13,695 --> 00:30:18,155
+Daha sonra B'nin düşük anlamlı 16 bitini buraya toplayalım.
+
+142
+00:30:19,251 --> 00:30:20,451
+Onu nasıl yapacağız?
+
+143
+00:30:35,028 --> 00:30:36,708
+Evet, nasıl yapıyoruz?
+
+144
+00:30:43,508 --> 00:30:58,048
+Şimdi buradaki cevaplardan ilki doğru. Yani şurada [öğrenci]'ın verdiği cevap doğru. [öğrenci]'un verdiği cevap da Dx'i niye kullandık? Çünkü Dx'i alıp daha sonra toplayacağız ama iki adımda olur.
+
+145
+00:30:58,627 --> 00:31:06,228
+İki adımda olur. Şu anda doğrudan ADD komutunu kullanıp birine yazmaç, diğerine hafıza adresi verirsek uygun olur.
+
+146
+00:31:06,592 --> 00:31:14,572
+[öğrenci]'un verdiği cevapta WordPtr'ye gerek yok. Çünkü zaten AX kullanıyoruz. AX Word işlem olduğunu belirtiyor.
+
+147
+00:31:17,152 --> 00:31:22,932
+Dolayısıyla şu şekilde toplama işlemimizi gerçekleştirmiş oluyoruz.
+
+148
+00:31:22,932 --> 00:31:30,532
+Şu anda buradan elde ettiğimiz sonuç aslında bizim düşük anlamlı byte'a
+
+149
+00:31:30,576 --> 00:31:50,615
+düşük anlamlı sonucun, pardon şöyle söyleyelim, sonuç isimli değişkenin düşük anlamlı 16 bitine yazacağımız değer şu anda AX'de mevcut. Ama bu işlem sonucunda bir elde üretilmiş olabilir. O bir kenarda durması lazım. Ona da dikkat edeceğiz. Ama elde ettiğimiz toplam değerini kereyi bir kenarda tutarak yerine yazalım. Onu nasıl yazacağız?
+
+150
+00:31:59,284 --> 00:32:06,324
+Nasıl yazacağız? A sayısıyla B sayısının düşük anlamlı 16 bitlerini topladık, şurayı topladık.
+
+151
+00:32:06,784 --> 00:32:12,243
+Buradan elde ettiğimiz toplamı yerine yazalım. Buradan keri varsa onu da kaybetmeyelim diyoruz. Nasıl yapıyorduk?
+
+152
+00:32:18,195 --> 00:32:19,915
+Evet, MOV.
+
+153
+00:32:20,675 --> 00:32:22,815
+Sonuç olarak artık onu tutmuyoruz.
+
+154
+00:32:22,915 --> 00:32:26,595
+Sonuç çünkü bir quad word, 64 bitlik bir değer.
+
+155
+00:32:26,755 --> 00:32:31,475
+Elimizde 16 bitlik bir yazmaçta düşük anlamda 16 bit toplam sonucu var.
+
+156
+00:32:31,915 --> 00:32:34,855
+AX'i sonucu atamaya çalışırsak tip hatası verecek.
+
+157
+00:32:35,755 --> 00:32:37,195
+BX'e yazsak da...
+
+158
+00:32:37,523 --> 00:33:03,523
+iş uzar, iki adım olmuş olur. Önce BX'e atarız, daha sonra yerine yazmamız gerekir. Şu aşamada yerine yazmak en güzeli. Ve şu anda yazmamız gereken yer, sonuç isimli değişkenin en düşük anlamlı 16 biti. O neredes haklı? BX'e yazarız derken, köşeli parantez BX diyorsak doğru. O şekilde kullanacağız. Tamam. Ben de oradan BX yazmacı gibi anladım. Dolayısıyla...
+
+159
+00:33:04,307 --> 00:33:13,468
+Burada şu aslında sonuç isimli değişkenin düşük anlamda 16 bitini gösteriyor. A- buraya yazdık. Daha sonra yapacağımız işlem nedir?
+
+160
+00:33:20,084 --> 00:33:32,224
+Daha sonra yapacağımız işlem arkadaşlar, şu Kerry'i kaybetmeden, şu yüksek anlamlı 16 bitleri ve Kerry'i toplamak bir sonraki işimiz. Onu nasıl yapacağız?
+
+161
+00:33:38,003 --> 00:33:43,503
+Güzel, MOV AX virgül, SI artı 2. Neden 2 ile topladık?
+
+162
+00:33:48,564 --> 00:34:07,824
+Artı bir, bir byte. Artı iki, bir word. Bir word öteye gittik. Tamam mı? Bir word öteye gittik. Evet, tamam. Süper. Şimdi asıl problemimize gelelim. Şu değeri aldık. Bununla ve şununla toplamamız gerekiyor. Ne yaparız?
+
+163
+00:34:11,923 --> 00:34:26,423
+ADC, AX, DI artı yine burada da ikiye dikkat edelim arkadaşlar. Çünkü bir sonraki B sayısının word'ünü topladık. Şimdi burada elde etmiş olduğumuz sonuç nerede şu anda?
+
+164
+00:34:27,884 --> 00:34:32,703
+AX ve aslında şu sonuç elimizde. Bunu da yerine yazalım.
+
+165
+00:34:32,703 --> 00:34:34,324
+Bunu da yerine yazalım.
+
+166
+00:34:35,663 --> 00:34:38,764
+Onun yeri neresi? Yine MOV komutu.
+
+167
+00:34:40,115 --> 00:35:00,655
+BX'den ne kadar ötede? Bu da BX'den iki birim ötede değil mi? Güzel. AX değerimizi de buraya yazdık. Şimdi son olarak ne kaldı elimizde? Şu değer varsa bunu yerine yazmak kaldı.
+
+168
+00:35:01,396 --> 00:35:13,676
+Bu sonuç varsa bunu yerine yazmak kaldı. Ama zaten biz şu değişkenimizi sıfır olarak initialize ettiğimiz için oradaki bir sıfır bilgisini kullanabiliriz.
+
+169
+00:35:14,716 --> 00:35:27,296
+Yani aslında şu anlama geliyor. Bu değer sıfır. Burada da keri var veya yok durumuna göre bir olacak veya sıfır olacak. Onu nasıl yapacağız? Son olarak.
+
+170
+00:35:27,860 --> 00:35:29,100
+Yani 33.
+
+171
+00:35:31,220 --> 00:35:34,239
+33. bite taşan değeri nasıl aktaracağız?
+
+172
+00:35:35,019 --> 00:35:35,360
+Varsa.
+
+173
+00:35:37,220 --> 00:35:39,019
+Onu da yine nasıl yapıyoruz arkadaşlar?
+
+174
+00:35:40,619 --> 00:35:41,539
+Kere olduğuna göre.
+
+175
+00:35:43,500 --> 00:35:45,820
+ADC ile yapalım demek istemiştim.
+
+176
+00:35:46,880 --> 00:35:47,619
+ADC.
+
+177
+00:35:48,619 --> 00:35:50,659
+Daha sonra nereye ekleyeceğiz bu değeri?
+
+178
+00:35:52,692 --> 00:36:12,052
+Bu sefer bakın şuraya eklememiz lazım. Şu noktaya. Buna bu elde varsa onu ekleyeceğiz. ADC dediğimiz zaman bunu hesaba kattık. Burada sıfır değeri vardı. Bununla bunu toplayacağız yani. BX artı 3 mü acaba? BX artı 4'teki değer evet ve burada
+
+179
+00:36:12,692 --> 00:36:34,251
+Immediate değer, başka dışarıdan bir şey eklemeyeceğiz. Fakat burada dikkat etmemiz gereken bir nokta husus vardı. Burada Word PTR'yi mutlaka eklememiz gerekiyor. Tamam. Dolayısıyla şimdi sabahki örnekte yaptığımızdan farklı bir sonuç var mı? Onu bir kontrol edeyim hemen. Şuydu, düzeltilmiş hali.
+
+180
+00:36:48,083 --> 00:36:49,547
+ADJ et.
+
+181
+00:36:54,612 --> 00:36:57,792
+ne farklılık var aldık yerine yazdık
+
+182
+00:37:01,139 --> 00:37:02,819
+S, S, R,T, 2
+
+183
+00:37:14,963 --> 00:37:20,724
+Bu hangisi? Bunu yanlış isimlendirmiş herhalde şu. Diğer örnek olması lazım.
+
+184
+00:37:32,403 --> 00:37:45,423
+Herhangi farklı sonucumuz yok. Şimdi bunun değerlenmesi ve çalıştırılması ile ilgili örneklere bakalım. Arkadaşlar, herkes Dostbox'ta örnek değerleyip çalıştırabilir durumda değil mi? Bununla ilgili problem olan var mı?
+
+185
+00:38:07,539 --> 00:38:20,139
+Daha önceden yine bende MASM klasörüydü. Orada şu kod bizim geliştirdiğimiz kodun aynası.
+
+186
+00:38:21,639 --> 00:38:28,300
+Arada uzun suz bir takım işle. Yani bu da sabah iki aşamada yaptık. Önce bir basitini yaptık.
+
+187
+00:38:29,139 --> 00:38:33,300
+İlk aklımıza gelen haliyle yaptık. Daha sonra optimize etmeye çalıştık.
+
+188
+00:38:33,684 --> 00:38:41,844
+sizde ise doğrudan optimize ederek yazmaya çalıştık. Dolayısıyla bu kodlu üzerinde çalıştıracağız.
+
+189
+00:38:50,068 --> 00:38:51,068
+Açalım.
+
+190
+00:38:57,427 --> 00:38:58,427
+Hangi kısım?
+
+191
+00:39:00,007 --> 00:39:02,587
+ADD, AX, D, I kısmında.
+
+192
+00:39:03,728 --> 00:39:05,268
+Evet, güzel bir soru.
+
+193
+00:39:06,247 --> 00:39:10,567
+Şimdi şu kısım bir elde oluşturabilir.
+
+194
+00:39:10,847 --> 00:39:13,287
+Ama biz o eldeyi ta şu noktada kullanıyoruz.
+
+195
+00:39:14,087 --> 00:39:15,707
+Veya bir başka nokta daha var.
+
+196
+00:39:16,407 --> 00:39:18,007
+Buradan da bir elde oluşabilir.
+
+197
+00:39:18,627 --> 00:39:19,007
+Değil mi?
+
+198
+00:39:19,527 --> 00:39:20,947
+Buradan da bir elde oluşabilir.
+
+199
+00:39:21,107 --> 00:39:22,867
+Onu da tam şurada kullanıyoruz.
+
+200
+00:39:24,307 --> 00:39:30,667
+E arada bunlar işi bozabilir mi? Bunu nasıl anlayacağız? Bunun için şunu yapıyoruz arkadaşlar.
+
+201
+00:39:32,228 --> 00:39:35,927
+Instruction setimiz vardı ya bizim. On nerede şu anda? Burada yok mu?
+
+202
+00:40:00,000 --> 00:40:01,220
+Farklı bir şey mi soruyorsun?
+
+203
+00:40:02,340 --> 00:40:12,960
+Şu kısma bakacak olursak, bunlar düşük anlamlı byte'lar ya, düşük anlamlı 16 bit'lik değerler ya, düşük anlamlı 16 bit'lik olduğu için bunlara dışarıdan bir elde gelme ihtimali yok.
+
+204
+00:40:13,559 --> 00:40:19,460
+Ondan dolayı bu da kereyi hesaba katmamıza gerek yok bu noktada.
+
+205
+00:40:24,563 --> 00:40:38,764
+MOV komutlarına bakacağız şimdi. MOV komutları, bayrakları etkilemiyor. Dolayısıyla şundan dolayı bir keri oluşmuşsa, o şu noktaya kadar taşınabiliyor. ADC'ye kadar taşınabiliyor. Onu nasıl göreceğiz? Onu şöyle göreceğiz.
+
+206
+00:40:40,764 --> 00:40:45,344
+Tersmiş ama artık. Nerede onlar? Bakalım.
+
+207
+00:40:46,291 --> 00:40:57,692
+MOV komutları şurada. MOV komutlarına baktığımız zaman hiçbir bayrağın etkilenmediğini görüyorsunuz arkadaşlar. Dolayısıyla bundan yararlanarak oradaki işlem sonucunda
+
+208
+00:41:02,708 --> 00:41:10,068
+işlem sonucu sonraki adımlara aktarılabilir. Etkileniyor olsaydı, carry'i bir şekilde öncelikli olarak tutmamız gerekirdi.
+
+209
+00:41:11,927 --> 00:41:20,208
+Olabilir, push F, POPF olabilir. Bir başka yazmacı atayabiliriz. Doğrudan yerine atayabilirdik. İlk yaptığımız örnek öyleydi çünkü sabah.
+
+210
+00:41:20,927 --> 00:41:24,619
+Değer ürer üremez, oluşturulur oluşturulmaz. Bir sonraki...
+
+211
+00:41:24,947 --> 00:41:33,608
+sonuç anlamlı byte'ına onu atayıp daha sonra o şekilde devam ettiğimiz örnek de oldu. İki yaklaşım da mümkündür.
+
+212
+00:41:36,007 --> 00:41:39,608
+Şimdi devam edelim. Bunu derlemeye çalışacaktık.
+
+213
+00:41:56,820 --> 00:42:01,640
+Şimdi bize soruyu hatırlayacak olursanız şu isimli bir obje dosyası oluşturacağım.
+
+214
+00:42:01,780 --> 00:42:02,159
+Oluştur.
+
+215
+00:42:03,159 --> 00:42:06,079
+Bir LST dosyası oluşturmayacağım diyor.
+
+216
+00:42:06,220 --> 00:42:13,880
+İstiyorsak buraya bir dosya ismi verip LST uzantılı dosya oluşmasını sağlayabiliriz.
+
+217
+00:42:13,880 --> 00:42:15,460
+Ama istemiyoruz.
+
+218
+00:42:16,239 --> 00:42:23,260
+Daha sonra oluşan obje dosyasına arkadaşlar gelip linker'dan geçiriyoruz.
+
+219
+00:42:25,523 --> 00:42:30,023
+exe dosyamız oluştu. Daha sonrasında da oluşan exe dosyasını alıp
+
+220
+00:42:30,023 --> 00:42:41,823
+debug'tan geçireceğiz. Şimdi bu başladı burada. Bu aşamada biz yazmış olduğumuz değerleri bir kontrol edelim.
+
+221
+00:42:42,823 --> 00:42:47,443
+Calculator açalım. Normalde 32 bitlik iki tane sayının toplamı
+
+222
+00:42:47,824 --> 00:42:53,364
+sadece ve sadece 33. bite bir taşıma yapabiliriz. Daha sonraki bitlere kesinlikle taşıma yapamaz.
+
+223
+00:42:54,224 --> 00:43:03,024
+Dolayısıyla bunu kontrol etmek amacıyla A, B, C, D, E, F, 98 sayısıyla, hex olarak yazdım,
+
+224
+00:43:04,644 --> 00:43:14,543
+E, F, 98, 7, 6, 5, 4 sayısının toplamına bakacağız. Burada gördüğünüz gibi 33. bite bir taşıma var.
+
+225
+00:43:15,092 --> 00:43:27,572
+onu görmeye çalışacağız biz de. Şu kenarda dursun. Şimdi debug ekranında bunu ilerletelim. Şu anda neredeyiz? Onu görmek adına R ile yazmaç durumlarını gösteriyoruz.
+
+226
+00:43:28,851 --> 00:43:39,992
+Bir adım yürüttük. Trace ile T ile. XOR satırına geldik. Push AX 0 değerini de yanına attık. Daha sonra data segmenti gösterir hale geldik.
+
+227
+00:43:40,563 --> 00:44:03,503
+bir şeye neye bastı bilmiyorum ama birkaç adım ilerledi sanki. Güzel bir örnek bulduk. T'den sonra verdiğimiz sayısal değer kaç adım yürütüleceğini veriyormuş. Onu gördük. Dört adım birden yürüttü. Şu anda MOV AXE satırındayız. Dolayısıyla ilk değerimizin yani A sayısının düşük anlamlı dört.
+
+228
+00:44:04,340 --> 00:44:25,800
+hexadecimal basamağını, pardon şöyleydi, düşük anlamlı 4 hex basamağını almayı bekliyoruz. Trace ettik, değeri aldık. Daha sonra diğer sayımızın düşük anlamlı 4 bitini buna, şey, düşük anlamlı 4 hex basamağını buna ekledik. İşlem sonucunu, sonucun düşük anlamlı 16 bitine yazdık.
+
+229
+00:44:26,132 --> 00:44:36,472
+Bir sonraki 16 bite geçtik. Orada keri gelmiş olabilir bir önceki adımdan. Onu da dikkate alarak B sayısının yüksek anlamlı 16 bitiyle topladık.
+
+230
+00:44:36,952 --> 00:44:43,892
+Elde etmiş olduğumuz toplam sonucunu sonuç isimli değişkenin yüksek anlamlı 16 bitine yazdık.
+
+231
+00:44:44,175 --> 00:44:58,476
+ve son olarak bütün bu işlemler sonucundan oluşmuş bir elde varsa bunu da 33. bite gelecek şekilde yazdık. Bu aşamada gidip dump DS0 dersek şu anda data segmentimizi görüyoruz.
+
+232
+00:44:59,476 --> 00:45:05,215
+Bakın, data segmente ilişkin olarak bizim öncelikli olarak bu A sayısını görmemiz lazım.
+
+233
+00:45:05,355 --> 00:45:15,115
+Lidlendiğim formatında yazılacağı için önce 98, daha sonra E, F, daha sonra C, D, daha sonra AB şeklinde şu kısım bizim A sayımız.
+
+234
+00:45:15,976 --> 00:45:24,275
+B sayısına baktığımızda ise bunu 4, 3'e kadar mı gitmiş? Başka bir sayı mı yazdık biz ya?
+
+235
+00:45:25,275 --> 00:45:25,775
+Bakayım.
+
+236
+00:45:27,860 --> 00:45:39,699
+Bizim herhalde derlediğimiz örnek şu oldu. Hemen kontrol ediyorum. Evet, bizim derlediğimiz örnek bu olmuş. Fark etmez. Sayısal değeri farklıymış sadece. Tamam.
+
+237
+00:45:41,159 --> 00:45:52,860
+Bunu da bakacak olursak 4, 3, 65, 87, B9 sayısı şeklinde elde etmiş oluyoruz. O yüzden toplamımızı düzeltelim. Hangi sayıları toplamışız?
+
+238
+00:45:53,876 --> 00:46:04,896
+A, B, C, D, E, F, 98 artı, B, 98, 7, 6, 5, 4, 3 şeklinde gidiyormuş.
+
+239
+00:46:05,796 --> 00:46:07,976
+İşlem sonucunun böyle bir şey çıkması gerekiyor.
+
+240
+00:46:08,076 --> 00:46:08,936
+Şimdi bunu kontrol edelim.
+
+241
+00:46:09,016 --> 00:46:10,936
+Yine little landing formatında olduğu için.
+
+242
+00:46:11,360 --> 00:46:24,259
+DB, 54, 55, 65, 01, 00, 00, 00, 00. Bizim tanımlamış olduğumuz 64 bitlik sayı şu işaretlemiş olduğum.
+
+243
+00:46:24,563 --> 00:46:50,283
+bütün alanı kaplıyor aslında. Sayının yüksek anlamlı 4 tane byte'ı işlem sonucu itibariyle 0 olarak kaldı. Ama alan itibariyle 64 bitlik kısım şunun tamamına denk gelmiş oluyor arkadaşlar. Her birisi 8 bit. Toplamda 8 tane çiftli var. Dolayısıyla 64 biti burada elde etmiş oluyoruz.
+
+244
+00:46:50,612 --> 00:47:00,172
+işlem sonucumuzu bu şekilde görmüş olduk. Dolayısıyla bu birinci örneğimiz bu şekildeydi. Bununla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+245
+00:47:15,188 --> 00:47:38,848
+Yoksa bir ara vereceğim. Aradan sonra dizi üzerinde ortalama hesabı yapmaya çalışacağız. Buna ilişkin olarak önce bir byte dizisi tanımlayacağız. Sonra da bir word dizisi tanımlayacağız. Bu dizilerin ortalamalarını hesaplamaya çalışacağız. Peşine iki tane daha örneğimiz olacak. Bir tanesi biraz daha karmaşık bir örnek olacak. Bir tanesi ise
+
+246
+00:47:39,251 --> 00:47:49,751
+matematiksel bir egze programı olmuş olacak. Sorumuz yoksa şimdi ara verelim. Saattan beş itibariyle devam edeceğiz arkadaşlar.
+
+247
+00:47:56,659 --> 00:47:58,299
+Soru yoksa ara veriyorum.
+
+248
+00:48:00,779 --> 00:48:02,759
+Tamam. Saat beşte de görüşmek üzere.
+
+249
+01:02:15,380 --> 01:02:17,720
+Evet, arkadaşlar, merhaba tekrardan. Devam edelim.
+
+250
+01:02:19,620 --> 01:02:22,640
+Şimdiki örneğimiz ise şu şekilde olacak.
+
+251
+01:02:23,480 --> 01:02:26,440
+Yine şurada yazdığımız haliyle devam ettirelim bunları.
+
+252
+01:02:30,099 --> 01:02:30,860
+Bu seh, tj.
+
+253
+01:02:40,019 --> 01:02:41,019
+paylaşımını alın.
+
+254
+01:02:42,019 --> 01:02:42,900
+Evet.
+
+255
+01:02:44,260 --> 01:02:46,960
+Şimdi bir sonraki örneğimiz de şu.
+
+256
+01:02:57,588 --> 01:03:00,108
+örnek 3, şöyle diyelim,
+
+257
+01:03:02,108 --> 01:03:08,868
+verilen, şu düzeltmeleri kaldırabiliyor mu?
+
+258
+01:03:16,340 --> 01:03:17,460
+verilen
+
+259
+01:03:19,980 --> 01:03:21,620
+300 elemanlı
+
+260
+01:03:24,340 --> 01:03:26,100
+byte tipindeki
+
+261
+01:03:32,115 --> 01:03:33,115
+dizinin
+
+262
+01:03:36,115 --> 01:03:38,059
+ortalamasını bulan
+
+263
+01:03:41,844 --> 01:03:43,123
+EXE tipindeki
+
+264
+01:03:50,068 --> 01:03:52,068
+assembly programını yazınız.
+
+265
+01:03:57,811 --> 01:04:00,132
+Burada bir ek bilgi olarak şunu da ekleyelim.
+
+266
+01:04:01,092 --> 01:04:04,771
+300 elemanlı pozitif değerlere sahip diyelim.
+
+267
+01:04:04,771 --> 01:04:10,231
+Bir ek bilgi olarak pozitif değerlere sahip.
+
+268
+01:04:12,152 --> 01:04:13,931
+Bunu niçin söylüyoruz?
+
+269
+01:04:13,991 --> 01:04:16,652
+Şimdi ortalama almamız için bir...
+
+270
+01:04:17,172 --> 01:04:44,491
+toplayıcıda değerleri üst üste biriktirmemiz gerekiyor. Toplayarak biriktirmemiz gerekiyor. Eğer ki negatif değerler olacağını biliyorsak ona göre belki işaretli sayı bölmesi yapmamız gerekecek. Ama burada bunu netleştirmiş oluyoruz. Değerler pozitif olduğu için biriktirici toplam sonucu yine pozitif bir değer olacak. Bunu da eleman sayısına böleceğiz. Dolayısıyla elde edeceğimiz değer istediğimiz aralıkta olacak. Bu bunun A şıkkı olsun.
+
+271
+01:04:45,684 --> 01:04:54,443
+B şıkkında da şöyle yapalım. Onu da biraz sonra Word dizisi olarak yapacağız. Kaç elemanlı olduğunu biraz sonra belirleriz onun da.
+
+272
+01:04:55,384 --> 01:04:58,963
+Şimdi öncelikli olarak buradaki durumu bir analiz edelim.
+
+273
+01:05:03,903 --> 01:05:07,224
+Öncelikli olarak A şıkkıyla ilgili olarak bir inceleyelim.
+
+274
+01:05:12,500 --> 01:05:38,879
+300 elemanlı bir diziden bahsediyoruz. Pozitif değer, byte dizisi, alınabilecek maksimum değer burada 255 olur değil mi? Her bir dizi gözün alabileceği değer. Ve toplamda da 300 adet göz olduğu için buradaki değer eğer eleman sayım 255 olmuş olsaydı bu durumda 16 bite sağardı. Ama şimdi
+
+275
+01:05:39,443 --> 01:05:46,044
+Şuradaki değer 300 olduğu için 300x255 dediğimiz durum 16 bitten taşar.
+
+276
+01:05:50,068 --> 01:05:59,387
+Dolayısıyla bu işlem sonucunu yani ortalama alabilmek için önce bütün elemanları toplamam gerekiyor. Daha sonra eleman sayısına bölmem gerekiyor ya.
+
+277
+01:06:00,108 --> 01:06:09,228
+Burada biriktirici olarak kullanacağım şeyin 32 bitlik bir yaz maç veya bir geçici hafıza bölgesi olması gerekiyor.
+
+278
+01:06:09,948 --> 01:06:12,748
+Şimdi buradan elde edeceğimiz değeri net bir şekilde de görelim.
+
+279
+01:06:17,043 --> 01:06:18,083
+Reclater açamadım.
+
+280
+01:06:22,183 --> 01:06:41,303
+Zaten 300'dü. 300 çarpı 255. 65536'yı geçiyor gördüğünüz gibi. Hex olarak baktığımızda ise 33. bite tek bir bit taşıyor. Daha ilerisine taşmıyor. Yani biz bununla ilgili olarak 500 elemanlı byte dizisi demiş olsaydık da
+
+281
+01:06:41,684 --> 01:06:59,584
+500 elemanlı bir byte dizisi demiş olsaydık da bakın yine 33 bite sığıyor. 32 bite şey pardon 17 bite sığıyor yanlış söyledim. 17 bite sığıyor. Dolayısıyla mecburen 32 bitlik bir değerde tutmamız lazımdı. E şeye bakalım.
+
+282
+01:07:03,476 --> 01:07:20,396
+Eğer ki bu bir işaretli dizi olmuş olsaydı ne olacaktı? 128, eksi 128 olabilir değil mi maksimum? 300'e çarpacaktık. O zaman şeye sığıyordu, eksi 38400 oluyor. Bunu şeyle ifade edebiliyor muyuz yalnız?
+
+283
+01:07:24,851 --> 01:07:27,032
+16 bit ile ifade edebiliyor muyuz?
+
+284
+01:07:28,612 --> 01:07:30,711
+Onunla ilgili sıkıntı var mı?
+
+285
+01:07:31,251 --> 01:07:32,072
+Şöyle diyelim.
+
+286
+01:07:33,572 --> 01:07:34,072
+Eksi
+
+287
+01:07:34,072 --> 01:07:37,231
+128
+
+288
+01:07:37,231 --> 01:07:40,152
+çarpı
+
+289
+01:07:40,152 --> 01:07:42,652
+300 demiş olsaydık.
+
+290
+01:07:44,791 --> 01:07:47,072
+Evet, bakın. Bu şeye sığmıyormuş.
+
+291
+01:07:47,072 --> 01:07:49,871
+Bu da 16 bite sığmıyor.
+
+292
+01:07:50,867 --> 01:08:00,167
+en az 32 bitle ifade etmemiz gerekiyormuş gibi bir takım analizler gerekiyor burada. Şu andaki örnek üzerine odaklanacak olursak,
+
+293
+01:08:00,507 --> 01:08:12,207
+iki üç yüz elemanlı bir dizi ve her bir eleman pozitif olacağına göre maksimum sıfır veya pozitif de demeyelim, sıfırdan büyük eşit değerler diye de düşünsek.
+
+294
+01:08:12,692 --> 01:08:30,351
+Dolayısıyla işlem sonucu 17. bite taşıyor. Dolayısıyla bunu 32 bitlik bir değerde tutmamız gerekiyor. Peki ortalama sonucuyla ilgili olarak ne dersiniz? Kaç elemanlı olursa olsun bir byte dizisinin ortalama değeri için bir word değişkenliği tutmalıyız, byte değişkenliği tutmalıyız. Bununla ilgili ne dersiniz?
+
+295
+01:08:32,083 --> 01:08:39,583
+doğal olarak byte değil mi? Yani neticede en fazla değer 255 bile olsa, 255 x 300 bölü 300 diyeceğiz.
+
+296
+01:08:39,823 --> 01:08:47,144
+Elde edeceğimiz maksimum ortalama değer 255 olacak. Dolayısıyla byte değer ortalama sonuç için yeterli olmuş olacak.
+
+297
+01:08:47,144 --> 01:08:50,091
+Şimdi bu çerçevede
+
+298
+01:08:50,707 --> 01:09:18,707
+yapacağımız işlemler temelde neydi? Dizinin bütün elemanlarını dolaşıp bunlar üzerinden bir toplam alacağız. Daha sonrasında da bölme yapacağız. Yapacağımız bölme işlemi 300'e böleceğiz, eleman sayısına böleceğiz. Dolayısıyla 16 bitlik bir bölme. 16 bitlik bölme olduğu için de aslında burada biriktireceği bir hafıza bölgesi olarak değil de bölmenin varsayılan 32 bitlik sanal yazmacısı.
+
+299
+01:09:18,707 --> 01:09:22,347
+dx, ax üzerinde biriktirmeyi çalışabiliriz. Bu ne demek?
+
+300
+01:09:22,735 --> 01:09:46,636
+dx ve ax'dan dx tarafı yüksek anlamlı 16 bit olmak üzere sanal olarak oluşturduğumuz bir 32 bitlik yazmaç gibi düşünüp toplam sonucunu dx ax'de biriktirelim. Daha sonra bölme işlemi yaparken zaten dx ax'ı 300'e böleceğimiz için sıkıntı olmayacak. Birbirleriyle uyumlu bir yapı olmuş olacak. Bunu da dikkate alarak kod tasarımımızı gerçekleyelim.
+
+301
+01:09:51,252 --> 01:09:53,252
+örneklerinden ilerleyelim.
+
+302
+01:10:01,747 --> 01:10:09,387
+Şimdi nelerimiz var? Bir dizimiz olacak. Daha sonra eleman sayısını tanımlayacağız. Sonra ortalama değerini tuttuğumuz bir değişkenimiz olacak.
+
+303
+01:10:09,587 --> 01:10:18,407
+Buradan dizi diyelim. Dizinin tipi, byte tipinde bir dizi olacak. Ve bu dizinin elemanlarını biz şöyle tanımlayalım.
+
+304
+01:10:18,407 --> 01:10:28,087
+Olabilecek en kötü durum senaryosunu üretmek üzere 300 elemanlı bir diziydi. 295 tane duplicate yapıp
+
+305
+01:10:28,564 --> 01:10:40,804
+255 değerini dizelim. Bunun önüne de 5 tane değer atayalım. Bunlar da işte 10, 20, 30, 40 ve 50 olsun.
+
+306
+01:10:41,864 --> 01:10:50,924
+Toplamda işte 1 değer, 2 değer, 3, 4, 5 değer, 295 tane de buradan geldi. Toplamda 300 tane değerli bir dizi oluşturduk.
+
+307
+01:10:52,692 --> 01:11:11,631
+Dizinin son kalan 295 elemanının değeri 255. Yani ortalama 255'e yakın bir şey çıkacak ama tam 255'te çıkmayacak. Daha sonra n sayısı, eleman sayısını tanımlayalım. Bunu CX üzerinden kullanacağımız için define word olarak vermek mantıklıydı. 300 olarak bunu tanımlayalım.
+
+308
+01:11:12,083 --> 01:11:23,083
+Sonrasında bir de ortalama değişkenimiz olacak, ortalama değerimiz olacak. Ondan byte tipinde olması gerektiğini hesaplamıştık. Bunun da değeri şimdilik sıfır olarak vermiş olalım.
+
+309
+01:11:24,743 --> 01:11:35,763
+Şimdi bu kodla ilgili olarak toplama işlemini dxax sanal 32 bitlik yazmacı üzerinden biriktirecek şekilde yapmaya karar verdik diyelim.
+
+310
+01:11:39,667 --> 01:11:51,367
+neler yapmalıyız? Bir kere bir dizide döngü yapacağız. Öncelikli olarak bu döngüyü bir yapmaya çalışalım. Döngüyü yapabilmek için döngü miktarı nerede tutulmalıydı?
+
+311
+01:11:52,907 --> 01:11:58,688
+Döngü miktarı nerede tutulmalıydı arkadaşlar? CX üzerinde tutulmalıydı. Şimdi onu ayarlayalım.
+
+312
+01:12:03,155 --> 01:12:15,636
+CX, N, değişkenimizin adı N'di. Daha sonra döngümüzü tanımlayalım. L1 etiketi burada. Daha sonrasında da Loop L1 şeklinde döngümüzü oluşturduk.
+
+313
+01:12:16,836 --> 01:12:26,735
+Şimdi burada dizinin tek tek elemanlarını geçebilmek için, her birine geçebilmek için şu yaklaşımı kullanalım.
+
+314
+01:12:27,347 --> 01:12:31,128
+Onu hatırlayabileceğiz mi bakalım. Şöyle biraz kenara kaydırarak.
+
+315
+01:12:33,327 --> 01:12:38,087
+İndis yaklaşımını kullanalım. İndis yaklaşımından kasıt şu aslında.
+
+316
+01:12:41,684 --> 01:12:53,984
+Şimdi hatırlayacak olursanız biz köşeli parantez içerisine bir değer yazdığımız zaman, BX şeklinde bir değer yazdığımız zaman, işte bunu da komutla birlikte kullandığımızda bu bir dolaylı adreslemeydi.
+
+317
+01:12:55,091 --> 01:13:09,992
+offset değerini veriyorduk. Bu doğrudan adres olarak kullanılıyordu. Adres değeriyordu. Fakat şu anda kullanmamızı isteyeceğim yaklaşım indis yaklaşımı. İndis yaklaşımında da şu aslında hedefimiz.
+
+318
+01:13:10,484 --> 01:13:25,224
+Tıpkı C'de olduğu gibi dizi mesela S, I diyerek işte birinci elemana erişmek istiyorsam dizi 0, bir sonraki elemana erişmek istiyorsam bu byte dizisi olduğu için 1, bir sonraki eleman 2, 0, 1, 2 diye gitsin.
+
+319
+01:13:25,584 --> 01:13:36,724
+Burada adres olduğu için bu adres dizinin ilk elemanı mesela 100H'da olabilirdi. Dolayısıyla BX'i load efektif adresle o değişken üzerinden alıp kullanıyorduk.
+
+320
+01:13:38,484 --> 01:14:01,304
+olarak kullandığımızda sıfırdan başlayacak. Bu kesin garanti. Bunun aynı zamanda şuna denk olduğunu da unutmayalım. Bu SI artı dizi dediğimiz şey offset değeri olarak neye karşılık geliyorsa burada bir de immediate değer oluyordu. Yani aslında bu kullanım şuna karşılık geliyor. Immediate değer de burada aslında dizinin offset değeri olmuş oluyordu.
+
+321
+01:14:02,515 --> 01:14:11,515
+Bu buna eşitti. Zaten bunu derlediğimiz zaman debug ekranında baktığımızda bu şekilde görüyor olacağız. Ona da dikkat edeceğiz. Dolayısıyla bu yaklaşımı kullanalım. Tamam mı?
+
+322
+01:14:13,515 --> 01:14:23,515
+Döngüyü oluşturduk. Dizinin bir sonraki elemanına SE ile erişelim demiş [öğrenci]. Güzel. Peki, burada SE indistilerini nasıl initialize edilmeliyiz?
+
+323
+01:14:24,756 --> 01:14:41,556
+Evet, sıfırlayarak. Çünkü indiz sıfırdan itibaren başlayacak. XOR, SE, SE. Eğer ki load efektif adres demiş olsaydım, bu bir offset değeriydi. Doğrudan SE'yi köşeli parantez içerisinde kullanacaktım. Aradaki farkı netleştirmek adına tekrar tekrar söylüyorum.
+
+324
+01:14:42,115 --> 01:14:46,935
+Peki, döngüyü dönebilmek adına bir sonraki elemana geçebilmek için
+
+325
+01:14:49,747 --> 01:15:17,108
+ne gibi bir işlem yapmamız lazım? Bir sonraki elemanı gösterebilmesi için. Normalde şöyle dedik. Şuraya yazalım. Elemana erişebilmek için dizi SI ile erişeceğiz dedik. Dizinin bir sonraki, dizinin sıradaki elemanına. Dizinin bir sonraki elemanına erişebilmek için bir sonraki döngü adımında da bunu da bir adım arttırmamız gerekiyor. Evet, dolayısıyla şu anda döngümüzü
+
+326
+01:15:17,140 --> 01:15:36,520
+güzel bir şekilde oluşturduk. Şimdi toplama işlemimizi nerede yapacaktık? Toplama işlemimizi AX, DX sanal yazmacında yapacaktık. Döngü içerisinde ilk toplama işlemi için düşünelim. İlk toplama işlemi için döngünün SI0 değeriyle girdiğimiz hali için düşünelim.
+
+327
+01:15:42,131 --> 01:15:46,251
+yapamayız. Şundan dolayı köşeli parantez içerisinde CX yazabilir miyiz?
+
+328
+01:15:54,931 --> 01:15:58,592
+yazamadığımız için onu CX üzerinden yapamıyoruz.
+
+329
+01:15:59,912 --> 01:16:03,051
+Yani bu şekilde bir indis yazmacı üzerinden yapmak gerekiyor.
+
+330
+01:16:05,152 --> 01:16:10,912
+Evet, olabilir. Loop içerisinde olabilir ama aynı işi iki adımda yapmış oluyoruz sanki.
+
+331
+01:16:11,672 --> 01:16:12,512
+Öyle mi? Bakalım.
+
+332
+01:16:13,211 --> 01:16:14,851
+Burada sadece Increment SEV var.
+
+333
+01:16:15,811 --> 01:16:20,192
+Orada hem CX'i SEV'ye atacaksın.
+
+334
+01:16:20,640 --> 01:16:47,600
+Evet, o da bir adımlık bir iş. O da olabilir. Bir adım da olabiliyor. O zaman da şeye bakman lazım. MOV, CX, SI işlemi ne kadarlık bir işlem? İnkrement, SI ne kadarlık bir işlem? Bunları karşılaştırarak optimum veya en hızlısı hangisiyse onu seçme yoluna gitmekte fayda var. Ama ikisi de teknik olarak mümkün. Büyük ihtimal bence de inkrement daha hızlı çalışıyordur.
+
+335
+01:16:48,372 --> 01:17:12,172
+Şimdi, nerede kalmıştık? Dx, Ax ikilisinde değerlerimizi biriktireceğiz. İlk değer için geldik. Bir toplama işlemi yapacağız. O toplama işlemi yaparken Ax veya Dx'deki değerlerden emin miyiz? Bundan emin olmamız gerekiyor. Yani biriktireceğiz ya değerleri, toplayarak biriktireceğiz. Normalde C'de yaparken nasıl yapıyoruz? Bir biriktirme değişkenimiz varsa.
+
+336
+01:17:15,283 --> 01:17:20,683
+onları sıfırlıyoruz. Evet, dolayısıyla burada da bunları da sıfırlamamız gerekiyor.
+
+337
+01:17:21,003 --> 01:17:28,304
+Yapacağımız işlem yine XOR AX, AX ve XOR DX, DX işlemleri olsun.
+
+338
+01:17:29,783 --> 01:17:36,583
+Şimdi toplama işlemini herhangi bir adım için düşünelim. Herhangi bir ara adım için düşünelim.
+
+339
+01:17:37,543 --> 01:17:42,423
+Daha önceki yapmış olduğum toplamalardan bir elde gelmiş olabilir. Değil mi?
+
+340
+01:17:42,768 --> 01:18:09,768
+Bu eldeyi kaybetmememiz lazım arkadaşlar. Bu eldeyi kaybetmemek adına yapacağımız toplama işlemi ADD değil, ADD-VIT-CARE olmalı. Dikkat etmemiz gereken bir nokta buydu. Nasıl tekrar edeyim? Şimdi toplama işlemini ilk elemandan itibaren taşıyarak yaptık ama ortada bir yerde olduğumuzu varsayalım. Dizinin ortasında bir yerde. Daha önceki işlemlerden biriktirerek getirdiğimiz bir elde olabilir. O eldeyi
+
+341
+01:18:09,792 --> 01:18:34,852
+Şu anda bu basamağı taşımamız lazım. Onu nasıl yapacağız işte? Onunla ilgili olarak kullanmamız gereken komut ADC komutu. Şimdi burada bir takım düzenlemeler yapmamız lazım. Bir kere dizimiz byte dizisi. Dizimiz byte dizisi olduğu için biz şunu yapamayacağız. ADC, AX virgül.
+
+342
+01:18:35,891 --> 01:18:58,431
+dizisi, SI diyemeyeceğiz. Neden diyemeyeceğiz? Az önce de söyledim. Dizimiz, byte dizisi, değişkenimiz, bir word register. Dolayısıyla böyle atama yapamayız. O zaman burada yapacağımız atama ne olacak? Word PTR desek de olmaz. Çünkü burada dizinin tipi belli.
+
+343
+01:18:59,252 --> 01:19:08,252
+Bunun da tipi belli. Load efektif adres demiş olsaydık, burada dizi kullanmamış olsaydık, o zaman teknik olarak çalışırdı ama...
+
+344
+01:19:08,884 --> 01:19:30,304
+arka tarafta bir mantık hatası olmuş olurdu. Normalde biz birinci eleman ve ikinci elemanı toplamak istiyoruz. Ama WordPTR dersek, birinci eleman ve ikinci elemanın birleştirilmesinden, yan yana konulmasından oluşturulan bir 16 bitlik değeri bir başka bu şekilde oluşturulmuş hatalı 16 bitlik değerle toplama yoluna doğru gitmiş oluyoruz.
+
+345
+01:19:30,608 --> 01:19:56,108
+Amacımız, 8 bitlik değerle 8 bitlik değeri peş peşe gelenleri toplamak. Dolayısıyla yine burada da WordPTL aradığımız işlem değil. Şu bir, evet, dolayısıyla AL kullanmalıyız kesinlikle. Peki, topladık. İlk başta sıfır olarak gelmiştik. Dolayısıyla AH sıfır.
+
+346
+01:19:56,479 --> 01:20:07,539
+İlk elemanı toplarken şimdi bakıyoruz. AH0, sıkıntı yok. Topladık ama Edwitkeri ile başlıyoruz. Şimdi orta bir durum için genelleştirdik.
+
+347
+01:20:15,859 --> 01:20:40,039
+Şunu ADD yapmakta sıkıntı var. Şunu ADD yapmakta şöyle bir sıkıntı var. Şimdi mesela 20. elemana geldin. 20. elemanı bir önceki aşamadan topladığından bir elden olabilir. Onu bilmiyorsun şu aşamada. O elde işlemi bozabilir. Dolayısıyla burada mutlaka önceki kereyi düşünerek ADC ile gelmemiz gerekiyor.
+
+348
+01:20:42,323 --> 01:21:06,543
+Onu şöyle yapacağız. Onu şöyle yapacağız. Şu noktada ilk şimdi orta durum için oluşturduk ya yapıyı. Orta durum için oluşturduk. Şimdi ilk durum için analiz yapalım bir de. Ben buraya girer girmez Kerry'den emin değilim. Kerry'den emin değilim ama dizinin sıfır numara elemanıyla AL ilk başta sıfır. Sıfır değerini topladım.
+
+349
+01:21:07,123 --> 01:21:21,103
+Ama buna bir de kere ekliyorum. Herhangi bir işlemden dolayı burada kere oluşmuş olabilir. Emin değiliz. Bunu netleştirmemiz lazım. O zaman burada kere bayrağını döngüye girmeden önce sıfırlayalım. Kere bayrağını nasıl sıfırlıyorduk?
+
+350
+01:21:27,667 --> 01:21:29,327
+Carry bayrağı nasıl sıfırlıyorduk?
+
+351
+01:21:31,667 --> 01:21:35,947
+Clear Carry Flag komutuyla sıfırlıyorduk.
+
+352
+01:21:36,907 --> 01:21:42,768
+Şimdi hem orta bir durum için hem baştaki bir durum için sonucumuzu oluşturduk.
+
+353
+01:21:44,564 --> 01:21:57,283
+Herhangi bir orta adımda olduğumuzu varsayalım. SI değeri olarak orta bir değerde olduğumuzu düşünelim. ALD, o ana kadar birikmiş olan değeri, önceden gelen bir elde ile topladık.
+
+354
+01:21:58,024 --> 01:22:08,324
+Elde ettiğimiz sonuçtan, yani şuradaki ADD işleminden, şu keri bir önceki adımdan gelen kereydi. Fakat bu ADD işleminden de bir keri oluşmuş olabilir.
+
+355
+01:22:11,060 --> 01:22:33,140
+tarafa aktarmalıyız. Evet, kesinlikle doğru cevap. Orada ADC AH, 0 yaparak şuradan oluşan kereyi buraya aktardık. Peki bizim amacımız aslında şuydu, DX, AX de bunu oluşturmaktı. Şu işlem sonucunda da bir kere oluşabilir.
+
+356
+01:22:34,036 --> 01:22:52,556
+Örneğin AH o sırada FFFF'di ve şu işlem sonucunda elde oluştu. Onu da buraya ekledik ve toplamdan bir elde daha oluştu. Onu da nereye aktarmalıyız? İlla byte byte gitmemiz gerekiyor mu? Bu sefer büyük bir adım atalım.
+
+357
+01:22:57,747 --> 01:23:22,207
+dx'i aktaracağız ama. Evet. ADC, dx, 0 ile bunu da en yüksek anlamlı tarafa taşıdık. Şimdi şu aşama itibariyle elimizde dx, ax'de tabii bu da her adımda bu olacak. Döngü bittiği zaman bunu daha net bir şekilde söyleyebiliriz.
+
+358
+01:23:24,608 --> 01:23:46,148
+Şu anda sum dizi var. Bu şekilde ifade edebiliriz. Dizinin toplamı her bir elemanın toplamı BX, AX'te. Bu aşamada yapacağımız işlem bunu eleman sayısına bölmek, 300'e bölmek.
+
+359
+01:23:46,948 --> 01:23:51,148
+Sorum şu, döngü bittiğinde SI değerinin alacağı değer nedir?
+
+360
+01:23:56,083 --> 01:24:04,183
+Doğal olarak 300. Dolayısıyla bir daha n'i, S, I'ye atayıp bölmeye bile gerek yok. S, I değerini doğrudan kullanabiliriz.
+
+361
+01:24:05,404 --> 01:24:13,123
+Kesinlikle div, S, I yapmamız mümkün. Çünkü DX, A, X'i, yani bu işlem ne yapıyordu? Pardon.
+
+362
+01:24:14,344 --> 01:24:22,203
+16 bitlik bir bölme. Çünkü S, I 16 bitlik bir yazmaç. Dolayısıyla burada yürütülen işlem D, X, A, X bölü S, I işlemi.
+
+363
+01:24:22,644 --> 01:24:37,863
+Bu işlem sonucunda AX'e atanan şey bölümün kendisi, DX'e atanan ise kalan kısmı. Kalan kısmıyla ilgilenmiyoruz. Ortalama integer bölmesi olarak yürüyeceğimizden dolayı.
+
+364
+01:24:38,783 --> 01:24:49,404
+AX'e baktık. 16 bitlik bölme işlemin sonucu AX'te. Peki sorumuzun en başındaki analizi hatırlayalım. Bir byte dizisinin ortalaması ne olurdu?
+
+365
+01:24:49,939 --> 01:25:13,920
+byte olması gerekirdi ama işlem sonucu AX'de çıktı. Bununla ilgili ne söyleyebilirsiniz? AH için ne diyebilirsiniz? Tamam, güzel. Bunu yapacağız. Yapalım. [öğrenci]'ın dediğini yapıyoruz kesinlikle. MOV ORT, AL. Peki AH ne oldu? AH ile ilgili oluşabilecek değer nedir?
+
+366
+01:25:14,579 --> 01:25:31,779
+kesinlikle ve kesinlikle AH0 olarak üretilecek. Bu kesin. Dolayısıyla bu işlem bizim örnek uygulamamız olmuş oluyor. Bu işlem bu kadar. Bunu alıp ort B olarak aktaralım.
+
+367
+01:25:38,260 --> 01:26:02,940
+Şimdi derste arkadaşlar söylediler. Ben bilmiyordum. Çok güzel bir sonuç oldu. Burada bu ekran içerisinde CTRL F4 yaparsanız mount ettiğimiz Drive'daki güncellemeleri Dostbox'a yansıtıyor. Normalde eğer bu yansıtmayı yapmazsanız Dostbox'ı kapatıp açmanız gerekiyordu. Dolayısıyla bu ekranda CTRL F4 yaparsanız
+
+368
+01:26:03,279 --> 01:26:17,159
+mount ettiğimiz klasördeki değişikliği güncellemeyi DOSBox'a da yansıtıyor. Bunu kullandık şu anda. Ben kendi derleme ortamı az önce oluşturmuş olduğumuz ASM dosyasını gönderdim. Şimdi bunu derleyelim.
+
+369
+01:26:17,159 --> 01:26:20,639
+masm.ortb
+
+370
+01:26:26,515 --> 01:26:29,456
+Güzel. Sonra obje dosyası oluştu.
+
+371
+01:26:32,015 --> 01:26:33,876
+Bunu linkliyorum.
+
+372
+01:26:35,755 --> 01:26:38,315
+Sonra debug çalıştırıyoruz.
+
+373
+01:26:46,868 --> 01:26:48,587
+Şimdi nerede olduğumuzu görelim.
+
+374
+01:26:50,468 --> 01:26:53,628
+Şimdi bunu şöyle analiz yapacağız, kodu bir inceleyelim.
+
+375
+01:26:55,208 --> 01:27:01,708
+Döngünün şu noktasına kadar, yani döngüyü kırdığımız noktaya kadar bunu Go ile çalıştıracağım.
+
+376
+01:27:02,148 --> 01:27:08,468
+Şurada bizim hesap makinesi üzerinden işlem yürüterek elde etmemiz gereken değeri de kontrol edeceğim.
+
+377
+01:27:13,492 --> 01:27:21,252
+Burada yaptığımız işlem şu. Bakın tekrar söyleyelim. Bu bölme sonucunu yaptığımız zaman, bu bölme sonucu neydi?
+
+378
+01:27:22,032 --> 01:27:29,231
+SAM dizi değerini SI'ye, yani 300'e böldük. Yani şu noktada 300'e böldük bu noktadayken.
+
+379
+01:27:30,032 --> 01:27:39,952
+Kesinlikle, kesinlikle ve kesinlikle AX'de oluşacak bölme sonucunun AH değeri 0 çıkacak. Bu kesin.
+
+380
+01:27:41,488 --> 01:27:46,427
+byte tipindeki bir dizinin ortalaması maksimum 255 çıkabilir.
+
+381
+01:27:47,188 --> 01:27:56,268
+AX 16 bitlik yazmaç, bunun düşük anlamlı AL kısmında ortalamanın gerçek değeri bulunacak, AH kısmı kesinlikle 0 çıkacak.
+
+382
+01:27:56,268 --> 01:28:06,568
+Ondan dolayı AL değerimizi atıyoruz. Zaten o hesabı yaptığımız için ortalamayı biz bir byte değişkeni olarak tanımlamıştık.
+
+383
+01:28:06,836 --> 01:28:13,435
+Dolayısıyla buradaki analizimizle doğru bir sonuç oluşacak. Bunu da yine şeyden kontrol edelim isterseniz.
+
+384
+01:28:13,916 --> 01:28:20,435
+Debug adımlarını yürütürken bölüm sonucu elde ettiğimiz AH'ı kontrol edelim. Onun da sıfır çıktığını göreceğiz.
+
+385
+01:28:21,036 --> 01:28:27,836
+Sıfır çıkması kesin olduğu için bu şekilde yaptık. Ve ortalamanın byte çıkmasını beklediğimiz için AL atadık.
+
+386
+01:28:30,536 --> 01:28:31,836
+Ortalamayı da zaten...
+
+387
+01:28:32,467 --> 01:28:37,868
+Bakın ne tanımlamışız? Byte tanımlamışız. Şu anda hepsi birbiriyle uyumlu görünüyor zaten.
+
+388
+01:28:47,796 --> 01:29:02,996
+Şimdi bu soru şu aşamada evet diye cevaplıyorum. Ama lütfen bu registerları anlattığımız ilk iki haftanın derslerini yeniden bir dinleyelim. Bu önemli bir konu. Burayı atlamamış olmalıyız.
+
+389
+01:29:04,115 --> 01:29:06,595
+AL, AH, AX.
+
+390
+01:29:06,855 --> 01:29:08,536
+AX 16 bitlik yazmaç.
+
+391
+01:29:08,595 --> 01:29:12,095
+Bunun düşük ve yüksek anlamlı bitlerinin AL ve AH olarak erişebiliyoruz.
+
+392
+01:29:12,576 --> 01:29:14,275
+BX 16 bitlik yazmacı.
+
+393
+01:29:14,695 --> 01:29:18,595
+Düşük anlamlı kısmına BL, yüksek anlamlı kısmına BH olarak erişebiliyoruz.
+
+394
+01:29:19,115 --> 01:29:20,756
+CX 16 bitlik yazmaç.
+
+395
+01:29:20,836 --> 01:29:25,555
+Bunun düşük anlamlı kısmına CL, yüksek anlamlı kısmına CH ile erişebiliyoruz.
+
+396
+01:29:25,555 --> 01:29:32,115
+Benzer şekilde DX 16 bitlik yazmacının düşük anlamlı kısmına DL, yüksek anlamlı kısmına...
+
+397
+01:29:32,115 --> 01:29:33,716
+bununla DH ile erişebiliyoruz.
+
+398
+01:29:34,855 --> 01:29:36,275
+Atladığım var mı bilmiyorum ama.
+
+399
+01:29:36,615 --> 01:29:40,056
+Bunun dışında DI doğrudan 16 bitlik yazmaç.
+
+400
+01:29:40,136 --> 01:29:42,336
+Düşük ve yüksek anlamlı kısımlarına ayrı ayrı erişilemiyor.
+
+401
+01:29:42,476 --> 01:29:45,036
+SI doğrudan 16 bitlik yazmaç.
+
+402
+01:29:45,476 --> 01:29:46,556
+Ayrı ayrı erişilemiyor.
+
+403
+01:29:47,755 --> 01:29:50,836
+Segment yazmaçları zaten 16 bit olarak kullanılıyor.
+
+404
+01:29:51,515 --> 01:29:53,775
+Bunları bir güncelleyelim, tamam mı?
+
+405
+01:29:53,816 --> 01:29:55,796
+Yani tekrar bilgimizi güncelleyelim, önemli.
+
+406
+01:29:56,556 --> 01:30:00,000
+Şimdi bu noktada an assembly edip kod segmentin sıfırını...
+
+407
+01:30:00,000 --> 01:30:27,720
+satırından itibaren bir bakayım. Loop satırı da bitti. Birazcık daha ileriden baksam. Mesela 13 numaralı kod satırından itibaren baksam. Anesembo, kod segment 13'ten itibaren bakayım. Loop'un bittiği yer 21 numaralı adres gözü. O zaman ben bunu 21. adres gözüne kadar çalıştıracağım. Go, kod segment 21 dedim. Şu anda div se satırına. Yani loop'u kırdığımız satıra geldik. Şu satıra geldik.
+
+408
+01:30:27,760 --> 01:30:36,520
+Bu noktada biz, DX, AX, sanal 32 bitlik yazmacında hangi değerin oluşmasını bekliyoruz? Hemen onun kontrolünü yapalım.
+
+409
+01:30:37,559 --> 01:30:44,319
+10, 50, 60, 60 daha, 120, 150. İlk 5 değerden 150 geliyor.
+
+410
+01:30:44,720 --> 01:30:50,380
+Artı, 295 çarpı, şimdi önce 295 çarpı yapalım.
+
+411
+01:30:54,868 --> 01:31:09,888
+artı 150 elde etmeyi beklediğimiz toplam 1, 2, 6, 6, F değeri. Şimdi bunu kontrol edelim. DX'de 1 olacak, AX'de de bu değer olması gerekiyor. Bakalım bu şekilde mi? Kaydıralım şöyle.
+
+412
+01:31:10,707 --> 01:31:26,007
+Evet, bakın, DX'de bir değeri var, AX'de de 2, 6, 6, F değeri var. Dolayısıyla biriktirmeli yapmış olduğumuz toplama işlemimiz sonuç olarak doğru bir değer verdi. Bu aşamada bir sonraki işlem DIV, SI işlemi.
+
+413
+01:31:26,399 --> 01:31:43,279
+Bunu da bir adım yürütelim. Bakın bu adımı yürüttükten sonra AH'ın 0 çıktığını görüyorsunuz. Burada AH 0 çıktı. Beklentilerimiz doğrultusunda. ALD'de ortalama değer var. Şimdi bu ortalama değeri hesaplayalım burada. Bölü 300 diyorum.
+
+414
+01:31:44,212 --> 01:32:07,192
+FB çıkması gerekiyor. Yani küsuratı vardır ama integer bölmesi yaptığımız için onunla ilgilenmiyoruz. FB değerini de burada ortalama sonucu olarak elde ettik. Bunu da yerine yazıyoruz. Yerine de yazdığımız için tekrar bir ne oldu? Niye takıldık burada? Bir adımda trace ettik. Şimdi
+
+415
+01:32:07,695 --> 01:32:17,636
+data segmente bunu yazdığımızı kontrol etmek için şu hesabı yapalım. Burada 300 tane byte var. Bu 300 byte'ı geçtikten sonra bakalım.
+
+416
+01:32:18,175 --> 01:32:24,736
+Yani 300 adresinden sonra, 300 offsetinden sonra bakmak istiyoruz. 300 değerinin hex karşılığı neymiş?
+
+417
+01:32:25,716 --> 01:32:32,996
+1, 2, C. 1, 2, C offsetinden sonra eğer dump edersen data segment, yani dump, data segment neydi değerimiz?
+
+418
+01:32:33,427 --> 01:32:44,268
+1, 2, C, 1, 2, C diye bakacak olursak, ilk göreceğim değer, şu diziyi geçtikten sonra eleman sayısı olacak, sonra da ortalama değer olması lazım. Bakalım görebileceğiz mi?
+
+419
+01:32:47,327 --> 01:32:48,528
+1, 2, C
+
+420
+01:32:49,555 --> 01:33:05,175
+Bu bizim 300 değerimize karşılık gelen eleman sayısı. N değerini şurada gördük. Bu da bizim arkadaşlar ortalama değişkenimiz. Byte tipinde bir tane byte olarak FB değerini de burada gördük. Buradaki sıfırın anlamı ne? Nereden geldi? Bunu hatırlayalım.
+
+421
+01:33:11,828 --> 01:33:21,847
+Bir sonraki segmentimiz para ile başladığı için, para ile hizalı olduğu için, 16'nın tam katından başlaması gerekiyor.
+
+422
+01:33:25,608 --> 01:33:38,488
+Dolayısıyla bu data segment 16'nın tam katında bitmediğinden dolayı, 16'nın tam katına kadar olan şu adres, bir tane kalmış şansımıza, o sıfırla doldurulmuş durumda.
+
+423
+01:33:40,884 --> 01:33:42,804
+Dolayısıyla bu örneğimizi böyle vermiş olalım.
+
+424
+01:33:49,587 --> 01:33:52,847
+Evet, burada dump ettiğimiz zaman değerler daha güzel geliyor.
+
+425
+01:33:54,627 --> 01:33:55,867
+Onunla ilgili diyebiliriz, evet.
+
+426
+01:33:58,867 --> 01:34:04,567
+Bir dakikalık bir ara isteyeceğim. Şimdi hemen geliyorum, boğazım gıcık yaptı, bir su içeyim hemen.
+
+427
+01:34:32,180 --> 01:34:51,380
+Evet, devam edelim. Dolayısıyla bu sonucu da bu şekilde görebildik. Şimdi aynı senaryo üzerinden bir sonraki sorumuza geçelim. O da şuydu. Bu sefer Word dizisi üzerinden ortalama alacağız. Bununla ilgili olarak da şöyle bir değişiklik yapalım.
+
+428
+01:35:00,948 --> 01:35:01,967
+soru var galiba.
+
+429
+01:35:04,188 --> 01:35:06,528
+Tamam, bir saniye. Önce soru yazalım.
+
+430
+01:35:07,467 --> 01:35:09,768
+200 elemanlı pozitif değerli.
+
+431
+01:35:11,847 --> 01:35:14,208
+Pozitif diyemeyelim de, non-negatif diyelim.
+
+432
+01:35:23,220 --> 01:35:24,899
+Word dizisinin
+
+433
+01:35:31,347 --> 01:35:33,148
+ortalamasını bulan
+
+434
+01:35:34,108 --> 01:35:35,448
+exe tipi
+
+435
+01:35:36,988 --> 01:35:38,508
+assembly kodunu yazınız.
+
+436
+01:35:47,731 --> 01:35:50,471
+Sorumuz bu şekilde. [öğrenci] olsun.
+
+437
+01:35:52,612 --> 01:35:53,731
+Şimdi kodumuzu
+
+438
+01:35:53,731 --> 01:35:56,851
+şöyle alalım.
+
+439
+01:35:59,091 --> 01:36:00,792
+Bunun üzerinde değişiklik yapabiliriz.
+
+440
+01:36:03,731 --> 01:36:06,072
+200 elemanlı olduğu için şunu 200 yaptım.
+
+441
+01:36:07,652 --> 01:36:09,152
+Neler değiştireceğiz?
+
+442
+01:36:09,912 --> 01:36:11,811
+Tipi Word olduğu için Word yaptım.
+
+443
+01:36:13,268 --> 01:36:18,328
+Şunu da 195 yaptım. Toplamda 200 elemanlı bir dizi olsun.
+
+444
+01:36:18,628 --> 01:36:24,128
+Burada oluşabilecek maksimum değerler için 0, F, F, F, F, F, H yapalım.
+
+445
+01:36:28,083 --> 01:36:34,223
+Dolayısıyla, buradaki ortalama değerimizde, word tipinde bir sonuç dönmesi lazım.
+
+446
+01:36:35,683 --> 01:36:36,723
+Okey, başka ne var?
+
+447
+01:36:37,703 --> 01:36:42,703
+Kod kısmına geldiğimiz zaman, yine biriktirmeyi DX, AX üzerinde yapabilir miyiz? Kontrol edelim hemen.
+
+448
+01:36:44,623 --> 01:36:46,703
+200 elemanlı bir dizi çarpı.
+
+449
+01:36:49,223 --> 01:36:54,463
+Her değerimiz maksimum 1, 2, 3, 4, F olabilir. Eşittir.
+
+450
+01:36:54,963 --> 01:36:56,123
+daha fazla bastım.
+
+451
+01:36:59,724 --> 01:37:01,443
+200 çarpı
+
+452
+01:37:01,443 --> 01:37:04,644
+F, F, F, F, F
+
+453
+01:37:04,644 --> 01:37:09,083
+eşittir. Bakın işlem sonucu yine 32 bite sığıyor.
+
+454
+01:37:09,403 --> 01:37:13,003
+Sıkıntı yok yani. 200 elemanlı bir dizi olsa da. Dolayısıyla
+
+455
+01:37:13,003 --> 01:37:17,344
+DX, AX sanal 32 bit yazmacı üzerinde biriktirme yapmaya devam edebiliriz.
+
+456
+01:37:17,724 --> 01:37:18,304
+Sıkıntı yok.
+
+457
+01:37:20,224 --> 01:37:20,903
+Şimdi
+
+458
+01:37:21,684 --> 01:37:29,663
+Yine aynı yaklaşımı izleyelim. Yani dizinin erişimini indis mantığında yapalım. Tamam mı?
+
+459
+01:37:30,663 --> 01:37:33,324
+Eleman sayımız 200 yaptık mıydı? Yapmışız tamam.
+
+460
+01:37:34,503 --> 01:37:38,984
+SI ile sıfırıncı elemandan itibaren tek tek erişmeye çalışacağız.
+
+461
+01:37:39,644 --> 01:37:44,804
+DX, AX üzerinde biriktirme yapacağız. İlk eleman için kerededen emin değiliz sıfır yaptık.
+
+462
+01:37:44,804 --> 01:37:48,083
+İlk eleman için DX, AX'den emin değiliz sıfır yaptık.
+
+463
+01:37:48,212 --> 01:37:52,812
+Ara bir adım içinde düşünerekten ADC ile başladık.
+
+464
+01:37:53,772 --> 01:37:56,192
+Dizi SE bir word değer.
+
+465
+01:37:57,352 --> 01:37:58,152
+Nereye almalıyız?
+
+466
+01:38:01,292 --> 01:38:03,212
+Dolayısıyla AX'i almalıyız.
+
+467
+01:38:04,572 --> 01:38:10,692
+Peki, bu AX'i biriktirdiğimiz değerden dolayı toplama işlemi sonucunda bir taşma olabilir.
+
+468
+01:38:11,891 --> 01:38:18,891
+Bu taşmayı nereye aktaracağız? Onu da DX'e aktaracağız. Dolayısıyla aradan şunu çıkartmak yeterli olacak.
+
+469
+01:38:18,891 --> 01:38:22,891
+Peki dizinin bir sonraki elemanına nasıl erişeceğiz?
+
+470
+01:38:27,283 --> 01:38:50,123
+bunu da add, SI, 2 ile yapmış olalım. Döngüdü dönüyoruz. Dizinin her bir elemanı iki adres ötede. Bunları aldık topladık. DX, AX ile biriktirdik. Elimizde şu sonuç var. Döngüyü kırdık. Döngüyü kırdığımızda SI'daki değerimiz nedir?
+
+471
+01:39:00,404 --> 01:39:17,224
+400 olur değil mi? İkişer ikişer arttırıyoruz. İki yüz defa ikişer defa arttırdığımız iki birimi arttırdığımız an dolayı çıkışta SI'nın değeri 400. Küçük bir işlem yapalım. SI'yi eleman değerine, eleman sayısı değerine indirelim. Nasıl yapacağız?
+
+472
+01:39:29,492 --> 01:39:31,091
+Enteresan bir yere gidiyoruz. Sonra
+
+473
+01:39:34,931 --> 01:39:35,931
+bize ne lazım?
+
+474
+01:39:37,431 --> 01:39:39,251
+SEV'daki değerin yarısı lazım.
+
+475
+01:39:41,111 --> 01:39:43,711
+Bir atışta yarıya indirelim. Nasıl indiriyorduk?
+
+476
+01:39:52,372 --> 01:40:15,711
+Evet. Shift, Shift, Right, S, I, virgül, 1 dediğimiz vakit, S, I'daki değeri ikiye bölmüş olduk. 400'daki loop'tan çıkmıştık. Bir bit shift ettiğimiz vakit bu yarıya bölünmüş oldu. Dolayısıyla S, I'da artık 200 var.
+
+477
+01:40:16,340 --> 01:40:39,680
+div, SE, I dediğimiz vakitte yine DX, AX'de biriktirmiş olduğumuz toplamı 200 eleman değerine bölmüş oluyoruz ve bölüm değeri AX'de. Bizim ort diye tanımladığımız şey Word. AL'de ortalamanın bir kısmı var ama tamamı AX'de. Dolayısıyla bu şekilde güncelleyerek de sonucumuzu elde etmemiz mümkün.
+
+478
+01:40:43,731 --> 01:40:45,231
+yerine taşıyalım.
+
+479
+01:40:52,564 --> 01:40:59,564
+Evet, bunu yine ctrl, pardon önce çıkıyoruz, ctrl f4 ile güncelledim.
+
+480
+01:41:02,564 --> 01:41:06,564
+Şimdi bu dosyamızın adı ortw'ydu.
+
+481
+01:41:07,564 --> 01:41:09,564
+Güncelledim.
+
+482
+01:41:10,564 --> 01:41:12,564
+Sonra linker'ı nerede?
+
+483
+01:41:13,564 --> 01:41:15,564
+Linker'dan geçirdim.
+
+484
+01:41:16,564 --> 01:41:18,347
+Sonra da debug işlemini yapıyorum.
+
+485
+01:41:20,404 --> 01:41:37,324
+Nerede olduğumuzu görelim. Unassemble code segment sıfırdan itibaren Unassemble edelim. Yine aynı şeyi yapalım. Yani neyi amaçlıyoruz? Şurada loop'u kırdığımız noktada, yani şu satıra kadar gelelim. Buradaki toplam değerini bir kontrol edelim istiyorum. Onu da bir yandan şurada da yürütelim.
+
+486
+01:41:37,908 --> 01:41:49,088
+Toplamda bizim ne vardı bakalım? 195 tane FFFF vardı. Bir de 60, 60, 120. Yine bir de 150 değerimiz vardı. Bir de onu ekleyelim.
+
+487
+01:41:49,088 --> 01:41:59,968
+FFFF çarpı desimal miktarınca 195 artı 150.
+
+488
+01:42:02,644 --> 01:42:14,623
+Hexane decimal karşılığı, C2, FF, D3. Dolayısıyla, CX'de C2, pardon, DX'de C2'yi görmek bekliyorum. AX'de de FF, D3'ü görmeyi bekliyorum.
+
+489
+01:42:15,503 --> 01:42:25,304
+Şimdi buna ilişkin olarak, şimdi Loop'un sonu nereye kadar gidiyor? Biraz daha aşağıdan unassemble edelim. 13'den itibaren unassemble edelim.
+
+490
+01:42:25,811 --> 01:42:35,171
+Loop'un bittiği yer, 20 numaralı adres. Bunu GO, kod segment 20, 20'ye kadar çalıştıralım ve toplamı kontrol edelim.
+
+491
+01:42:35,471 --> 01:42:44,171
+DX'deki değer, C2, AX'deki değer de FFD3. Dolayısıyla toplam işlemimiz doğru.
+
+492
+01:42:45,131 --> 01:42:50,091
+SI'ye bakalım. SI'deki değer, SI nerede? SI'deki değer 190 yazıyor.
+
+493
+01:42:51,315 --> 01:43:00,155
+neyin karşılığı? Bakalım. 190. 400'ün karşılığı doğal olarak. Dolayısıyla bunun da ikiye bölünmesi gerekiyormuş hakikaten.
+
+494
+01:43:00,655 --> 01:43:08,595
+Bir adım trace ettik. Daha sonra bölme işlemini gerçekleştirdik. Elde ettiğimiz sonuç F9999 değeri. Bunu da görelim şurada.
+
+495
+01:43:17,136 --> 01:43:39,316
+eşittir, artı 150, bölü 200, F9999 değeri. Elde etmeyi beklediğimiz ortalama değeri bu. FFFF'e yakın ama değerler hepsi FF değildi. Dolayısıyla bu ortalama sonucunu da elde etmişiz. Bunu da yerine yazalım şimdi. Bir adım daha trace edelim. Ve bunu data segmentte de görmeye çalışalım.
+
+496
+01:43:45,395 --> 01:43:56,295
+ne kadar ileride olur? 400 byte ileride olur değil mi? Dolayısıyla o segmentin 400 offsetinden, yani 190 hex decimal offsetinden bakmam uygun olur.
+
+497
+01:43:56,875 --> 01:44:04,335
+Dump ediyorum, data segmentin 190 hex offsetinden itibaren baktım. Şurada ilk gördüğümüz değer arkadaşlar.
+
+498
+01:44:04,815 --> 01:44:22,515
+200 eleman sayısına ilişkin değişken yani C00C8 bu 190. Daha sonraki gelen word değeri de F999. Bu da bizim ortalama değerimiz. Uygun şekilde data segmentte de değişken yerine yazıldığını görmüş oluyoruz.
+
+499
+01:44:23,895 --> 01:44:26,155
+Bu da bu şekilde bir örneğimiz.
+
+500
+01:44:27,828 --> 01:44:44,488
+Şimdi hızlıca bir örnek daha var. Onu yapalım. Sonra ara verip son örneğe bakacağız. Bir sonraki örneğimiz şu arkadaşlar. Örnek 4 olarak ifade edeceğimiz örnek. Matematiksel bir örnek.
+
+501
+01:44:54,387 --> 01:44:57,587
+O 2 milya, 2 idi değil mi? Bu 3 olacak o zaman.
+
+502
+01:44:58,807 --> 01:44:59,867
+Review control edeyim.
+
+503
+01:45:01,787 --> 01:45:02,768
+3 yazmışım ama.
+
+504
+01:45:03,807 --> 01:45:06,127
+Hızlı bir şekilde 3 yazmışım. Bu 2 imiş.
+
+505
+01:45:07,528 --> 01:45:08,068
+Şu 2.
+
+506
+01:45:15,123 --> 01:45:17,243
+Bu da üç numaralı örneğimiz.
+
+507
+01:45:20,819 --> 01:45:33,899
+Şimdi, 3 numara örneğimiz şu arkadaşlar. Bize verilmiş olan pozitif A ve B sayıları var. Bunların en büyük ortak bölenini bulmaya çalışacağız. Bununla ilgili olarak elimizde şu bilgi var.
+
+508
+01:45:45,108 --> 01:46:08,947
+A yüzde B, A modül B. Yani A ile B'nin en büyük ortak böleni B ile A'nın B'ye bölümünden kalan değerin en büyük ortak bölenine eşittir. Bunu örneğin 20 ve 16 değerleri için yürütelim. 20 ve 16 için. Burada işte G, C, D hesabı yapmak istiyorsak.
+
+509
+01:46:15,155 --> 01:46:23,716
+Şimdi bu neye eşit olacak? B sayısının yani G, C, D, 16 virgül, 20'nin 16'ya bölümünden kalan nedir? 4'tür değil mi?
+
+510
+01:46:24,815 --> 01:46:35,496
+Daha sonra bu da neye eşit? G, C, D, 4 virgül, 16'nın 4'e bölümünden kalan 0. Dolayısıyla şu bizim sonlanma koşulumuz. Hangisiymiş o?
+
+511
+01:46:41,747 --> 01:46:42,907
+Şunu döndür.
+
+512
+01:46:44,607 --> 01:46:46,207
+Bu da A değerini döndür.
+
+513
+01:46:48,147 --> 01:46:50,807
+Sonuç olarak A'daki değeri alıyoruz.
+
+514
+01:46:50,947 --> 01:46:53,587
+Ve aynı zamanda buradan hareketle şunu da söyleyebiliriz.
+
+515
+01:46:54,387 --> 01:47:00,247
+GC'de A virgül sıfır eşittir A olacak şekilde bunu da tanımlayabiliriz.
+
+516
+01:47:00,727 --> 01:47:05,087
+Dolayısıyla burada bize verilmiş olan herhangi iki pozitif sayıya ilişkin olarak
+
+517
+01:47:05,456 --> 01:47:14,615
+en büyük ortak böleni bulmaya çalışacağız. Buradaki izleyeceğimiz adım da şurada vermiş olduğumuz matematiksel formüle dayanıyor olacak arkadaşlar.
+
+518
+01:47:20,819 --> 01:47:21,939
+Bununla ilgili olarak bakalım.
+
+519
+01:47:41,011 --> 01:47:46,251
+A sayısı ve B sayısı bunlar word şeklinde değerler olsun. Yine az önce verdiğimiz gibi 20.
+
+520
+01:47:47,811 --> 01:47:55,391
+Peki bu arada şeyi düşünmemiz lazımdı. Biz A sayısını büyük sayı olarak kabul ettik. A sayısı büyük olan sayı değilse ne yapacağız?
+
+521
+01:47:56,391 --> 01:48:03,112
+A sayısı büyük olan sayı değilse A ve B'yi exchange edeceğiz, yerlerini değiştireceğiz. Onu da baştan not etmiş olalım.
+
+522
+01:48:09,203 --> 01:48:18,104
+A ile B'yi swap edip daha sonra işlem yapacağız. Tamam mı? Bu bilgiyi de hatırlamış olalım.
+
+523
+01:48:20,104 --> 01:48:28,104
+Şimdi A sayımız 20 olsun. Hatta 16 olsun. Az önce verdiğimiz küçüklük büyüklükle aynı kıvama gelsin.
+
+524
+01:48:28,851 --> 01:48:38,271
+küçük sayıdan büyük sayıyı bölmeye çalıştığımız zaman problem olabileceği için sıfır değeri dönüyor. Kalan 16 olur.
+
+525
+01:48:39,051 --> 01:48:43,872
+Yani farklı bir hatalı bir sonuç çıkar. Bizim yürütmek istediğimiz yaklaşıma göre hatalı bir sonuç çıkar.
+
+526
+01:48:44,572 --> 01:48:49,311
+Dolayısıyla A sayısı küçük ise A ile B'yi swap etmemiz gerekiyor mutlaka.
+
+527
+01:48:50,032 --> 01:48:56,112
+B sayısına bakalım. Define Word. Bunu da 20 yapalım. Bir de G, C, D değerimiz. Bu da Word tipinde olacak.
+
+528
+01:48:56,528 --> 01:48:58,528
+Şimdilik sıfır olarak bunu belirleyelim.
+
+529
+01:49:00,768 --> 01:49:07,347
+Burada mantığı kontrol ettiğimiz zaman bir kalan işlemi elde etmemiz lazım.
+
+530
+01:49:07,467 --> 01:49:11,247
+Modül işlemi var. Bu zaten bölmeden gelen bir durum.
+
+531
+01:49:12,327 --> 01:49:18,827
+Bölmeden gelen durumla ilgili olarak değerlerimiz word tipinde olduğu için 16 bitlik bölme yapmamız lazım.
+
+532
+01:49:18,827 --> 01:49:23,787
+Yani dx, AX'i bir değere böleceğiz. Kalan dx'de birikecek.
+
+533
+01:49:24,372 --> 01:49:31,372
+ODX'deki değeri kullanarak bir takım işlemler yapmaya çalışacağız. Şimdi öncelikli olarak şu kontrolü yapalım burada.
+
+534
+01:49:35,380 --> 01:49:38,380
+Hangi değişkenlerde tutabiliriz bunları?
+
+535
+01:49:39,580 --> 01:49:42,120
+AX ve BX diye ifade etsek olur mu bakayım?
+
+536
+01:49:43,800 --> 01:49:44,460
+Evet, olabilir.
+
+537
+01:49:45,440 --> 01:49:48,240
+MOV, AX, A say diyelim.
+
+538
+01:49:49,000 --> 01:49:53,400
+Sonrasında da MOV, BX, B say diyelim.
+
+539
+01:49:53,500 --> 01:49:55,940
+Şu anda yapacağımız ilk kontrol şu olsun arkadaşlar.
+
+540
+01:49:56,800 --> 01:50:00,240
+A küçük B ise A ile B'yi swap etmemiz gerekiyor.
+
+541
+01:50:00,979 --> 01:50:03,419
+Bunu nasıl yapacağız, nasıl sağlarız bu kontrolü?
+
+542
+01:50:11,220 --> 01:50:13,559
+Evet, CMP AX, BX
+
+543
+01:50:17,492 --> 01:50:18,492
+Sonra
+
+544
+01:50:24,148 --> 01:50:26,208
+Şimdi koşulu bakalım.
+
+545
+01:50:27,648 --> 01:50:28,668
+Koşul şu aslında.
+
+546
+01:50:29,807 --> 01:50:37,628
+A küçük, B ise bunun true kolunda swap var.
+
+547
+01:50:38,608 --> 01:50:39,528
+False kolu boş.
+
+548
+01:50:40,088 --> 01:50:43,448
+Dolayısıyla hani boş kol için yazarsak bu güzel olur.
+
+549
+01:50:44,408 --> 01:50:46,148
+Eşitken bir şey yapmamıza gerek yok.
+
+550
+01:50:46,927 --> 01:50:49,728
+Küçükken yapıyor olalım.
+
+551
+01:50:49,728 --> 01:50:51,008
+Dolayısıyla
+
+552
+01:50:51,471 --> 01:51:11,011
+false callu için şartı yazacağız aslında. Yani eşit durumunu da yine ele alalım. Pozitif sayılar olduğu için jump below dersek, jump below dersek true calluna gideriz. Eğer true callunun şartıyla gidersek, şu anlama gelir bu, iki tane koşullu dallanma kullanmamız gerekiyor.
+
+553
+01:51:17,716 --> 01:51:24,196
+true callu üzerinden şartı oluşturursak, bu durumda iki tane koşullu dallanma geliyordu.
+
+554
+01:51:25,156 --> 01:51:29,756
+False callu için şartı yazarsak, tek bir koşullu dallanmayla işi bitirebiliyorduk.
+
+555
+01:51:29,836 --> 01:51:33,176
+Dolayısıyla burada da false callu için yazacağız. False callu neydi?
+
+556
+01:51:34,176 --> 01:51:38,876
+AX'in büyük olduğu durum. Yani AX'in büyük olabilmesi için de pozitif sayılarda,
+
+557
+01:51:38,876 --> 01:51:44,236
+jump, EBOV, SVP işlemi olsun, bu labelımız olsun.
+
+558
+01:51:44,884 --> 01:51:46,884
+onda şurada SVP
+
+559
+01:51:46,884 --> 01:51:52,323
+pardon, jump above ise swap yok.
+
+560
+01:51:53,823 --> 01:51:54,443
+no swap
+
+561
+01:51:54,443 --> 01:51:58,184
+no swap değil mi?
+
+562
+01:51:59,984 --> 01:52:00,283
+ama
+
+563
+01:52:00,283 --> 01:52:02,423
+AX
+
+564
+01:52:02,423 --> 01:52:04,943
+küçük eşitse, burada
+
+565
+01:52:04,943 --> 01:52:07,224
+jump above or equal'u alalım.
+
+566
+01:52:07,224 --> 01:52:09,543
+tamam mı? jump above or equal'u alalım.
+
+567
+01:52:10,292 --> 01:52:20,692
+eşitse de swap yapmamıza gerek yok. Eşitse zaten sayılardan birbirine göre modülü sıfır olacak. Bir adımda işlemden kurtarmış olacağız.
+
+568
+01:52:20,692 --> 01:52:28,492
+Swap işlemini nasıl yapacağız? Temp değişken kullanmak falan lazım. Üç adımda yapabiliriz değil mi? C'de öyle yapıyorduk.
+
+569
+01:52:28,492 --> 01:52:31,092
+Burada nasıl yapacağız?
+
+570
+01:52:36,787 --> 01:52:45,027
+Evet, burada assembly bilmenin güzelliği, assembly'de exchange komutu var. Temp değişken kullanmadan swap işlemi yapabiliyoruz.
+
+571
+01:52:46,927 --> 01:52:58,147
+AX virgül, BX olarak bunu değiştirdik. NoSwap'tan sonra yapacağımız işlemlerde zaten A'nın artık büyük olduğu duruma karşılık gelmiş oluyor.
+
+572
+01:52:58,147 --> 01:53:01,047
+A'nın büyük olduğu tarafta ne yapacağız artık?
+
+573
+01:53:02,323 --> 01:53:28,323
+şurada çizdiğimiz işlemleri yerine getirmeye çalışacağız. Neredeydi onlar? Şurada. Bir bölme işlemi yapacağız. A'yı B'ye böleceğiz. Daha sonrasında kalanı ve B sayısını ilgili değişkenlere atacağız. Ama bir şartımız var. Bakın şart nasıl başlıyor? Durma koşulumuz ilk başta sağlanmış olabilir. Durma koşulumuz ilk başta sağlanmış olabilir. Yani hiç döngüye girmeden, while döngüsüne girmeden şu
+
+574
+01:53:29,076 --> 01:53:38,956
+0 olana kadar adımları yürüttük ya, belki hiç döngüye girmeye gerek yok. İlk yapmamız gereken ikinci parametremiz 0 mı diye kontrol etmek arkadaşlar. Evet.
+
+575
+01:53:39,515 --> 01:53:54,716
+CMP, BX, 0 ile bu kontrolü yapıyoruz. Yine aynı şey burada da geçerli. BX 0'a eşit değil ise devam ediyoruz. Dolayısıyla false call'unun işlemi nedir?
+
+576
+01:53:55,055 --> 01:54:00,675
+false callu. Eşitse döngüyü kırıyorduk false callu için. Hatırlayalım.
+
+577
+01:54:01,555 --> 01:54:13,335
+Jump equal ise çıkış. Çıkış şurada bir yerde. Çıkışta ne yapıyoruz? İşlem sonucumuzu elde ettik.
+
+578
+01:54:14,155 --> 01:54:21,655
+A sayısında onu gidip G, C, D olarak yazacağız. Tamam mı? Ne yaptık burada? Tekrar söylüyorum.
+
+579
+01:54:22,868 --> 01:54:36,628
+BX sıfıra eşit değil ise döngüye devam ediyorduk. Yani burada döngünün devam etmesinin gerek şartı B sayısı eşit eşit sıfır mı diye bakıyoruz.
+
+580
+01:54:41,395 --> 01:54:42,515
+Biz nasıl yazdık onu?
+
+581
+01:54:43,416 --> 01:54:44,456
+Şöyle yazdık.
+
+582
+01:54:50,707 --> 01:55:16,707
+Bunun true kolunda, true'yu while'ı yanlış yaptım. Bunun while kolunda işte bu işlemlerimizi yapacağız. Daha sonra döngümüz buraya gelecek, şurada da çıkacağız. Bunun true kolu, false kolu nedir öyleyse? B eşit sıfır. Dolayısıyla false koluna göre şartı yazarsak, az önce söylediğim mesele, tek bir koşullu dallanmayla halledebiliyorduk. O yüzden dolayı bu tek...
+
+583
+01:55:17,503 --> 01:55:44,203
+false call için, boş olan call için diyelim daha doğrusu false call demeyelim de, boş olan call için koşulu yazarsak, daha az sayıda jump ile yani bir eksik jump ile işlemimizi sonlandırabiliriz. Şuraya geldiğimizde, artık BX sıfırdan farklı biliyoruz. Şimdi bölme işlemini yapabiliriz işte. Şu anda bölme işlemini yapabiliriz. Ne yapacağız? DIV, BX yapacağız. DIV, BX ne yapıyordu arkadaşlar? DX, AX'i.
+
+584
+01:55:44,787 --> 01:56:08,087
+BX'e bölüyordu. Bakın burada bir şey oluştu. Dikkatinizden kaçmamıştır. DX, AX'i bölüyor. DX'deki değeri garanti ettik mi? Etmedik değil mi? Dolayısıyla mutlaka bu div işleminden önce XOR DX, DX'i çalıştırmamız lazım. Bu aşamada böldük.
+
+585
+01:56:09,235 --> 01:56:31,076
+AX'de bölüm sonucu var, onunla ilgilenmiyoruz. Bize DX'deki şu değer anlamlı bizim için. DX, AX ikilisinin BX'e bölümünden kalan bizim için anlamlı. Biz DX'de kalan değerimizi elde ettik. Bu DX'deki değer nereye atanacak?
+
+586
+01:56:31,667 --> 01:56:46,788
+BX'e atanacak. BX'deki değer nereye atanacak? AX'e atanacak. O zaman önce AX'e atamayı yapalım. MOV AX, BX. Sonrasında da MOV BX, DX işlemini yapabiliriz.
+
+587
+01:56:46,788 --> 01:56:51,148
+Şimdi döngüyü, while döngüsünü devam ettirmek için ne işlem yapacağız?
+
+588
+01:56:58,707 --> 01:57:24,027
+döngüyü devam ettirmemiz gerekiyor. Şimdi bir adım yürüttük. Bakın şuradaki örneği hatırlayın. İlk adımda yürüttük. Bitmedi, bitmedi. Ve hep aslında bitti mi diye kontrol yapıyoruz. Yani while'ın başına dönüyoruz. Şu birinci adımı yürüttük. While'ın başındaki kontrole döndük. Dolayısıyla oraya bir koşulsuz dallanma yapmamız lazım. Bu komuta. Bu komutun zaten başında bir etiket var.
+
+589
+01:57:24,500 --> 01:57:27,280
+NO, SVP diye belirtelim bunu.
+
+590
+01:57:29,420 --> 01:57:31,640
+Dolayısıyla burada döngüyü devam ettirdik.
+
+591
+01:57:31,780 --> 01:57:33,200
+Döngü kırıldığında ne olacak?
+
+592
+01:57:33,640 --> 01:57:36,580
+Döngü kırıldığında ben buraya gelmişsem bu ne demek?
+
+593
+01:57:37,320 --> 01:57:38,920
+BX eşittir sıfır demek.
+
+594
+01:57:39,540 --> 01:57:42,020
+Dolayısıyla benim aradığım değer nerede şu aşamada?
+
+595
+01:57:46,387 --> 01:57:54,847
+ax'de, ax'de gidip, MOV, G, C, D, virgül, ax diye yazıp, daha sonra da döndürmemiz gerekiyor.
+
+596
+01:57:55,028 --> 01:58:00,587
+Dolayısıyla bu kodumuz kabaca bu şekilde olduğunu söyleyebiliriz.
+
+597
+01:58:01,648 --> 01:58:04,127
+Şimdi bunu yerinde güncelleyelim.
+
+598
+01:58:05,747 --> 01:58:10,327
+Sabahki gruba göre bir farklılık oluştu, onu duyuruda da söylerim tekrar.
+
+599
+01:58:17,011 --> 01:58:28,871
+Önce 16'ya 20 değeri için bir deneyelim bakalım. Önce 20'ye 16 için deneyelim. 4 olmasını bekliyoruz. Önce onu görürüz. Sonra 16'ya 20 için deneriz.
+
+600
+01:58:28,871 --> 01:58:42,131
+Şimdi şurada ctrl f4 yaptım. Derleme yapacağız. Derleyeceğimiz kodumuz gcd isimli dosyaydı. Derledik. Sonra
+
+601
+01:58:42,836 --> 01:58:46,555
+obje dosyamızı linkleyeceğiz. GC de obje.
+
+602
+01:58:48,855 --> 01:58:49,815
+Sonrasında
+
+603
+01:58:49,815 --> 01:58:53,996
+bir sonraki adımda debug işlemi yapacağız.
+
+604
+01:58:56,355 --> 01:58:57,296
+GC de
+
+605
+01:58:57,296 --> 01:59:00,475
+egze. Başladık. Şimdi
+
+606
+01:59:00,475 --> 01:59:02,996
+neredeyiz? Tamam. Trace ettim.
+
+607
+01:59:02,996 --> 01:59:06,216
+Trace ettim. Data segmenti aldım. Şimdi
+
+608
+01:59:06,804 --> 01:59:17,963
+20 değerini AX'e okudum. 14 hex 20'ye eşit, güzel. BX'e de 16 değerini okuyacağım. 10 hex 16'ye eşit, güzel. Şimdi BX ile AX'i karşılaştırdım.
+
+609
+01:59:18,703 --> 01:59:31,684
+Jump not below mu? Evet, jump not below. Doğrudan compare satırına gitti. Exchange'e atladı. BX'deki değerim 0 mı? Hayır.
+
+610
+01:59:32,787 --> 02:00:00,000
+O zaman bölme işlemine geçiyoruz. Dx'i sıfırladık. Bölme işlemini yaptık. Kalan değerim 4, bölüm değerim 1, 16 değeri de Bx'de duruyor. Bx'deki değeri AX'e atacağım. Dx'deki değeri Bx'e atacağım. Şimdi bu işlemleri yürüttüm. Daha sonra başa döndüm. Bx sıfır mı? Hayır. 16'ya 4 için GCD'yi devam ettiriyorum. Trace ettim. İşlem sonucu.
+
+611
+02:00:00,000 --> 02:00:20,380
+10. 0 mı? Hayır demiştik. Bölme işlemini yaptık. Kalanlara bakıyoruz. 16'yı 4'e bölünce kalan 0 olur. BX'de 4 var. Şimdi bunların yine BX'in AX'e, DX'in BX'e aktarılması lazım. Bu işlemleri yaptım. Tekrar while control başındaki noktaya gidiyorum.
+
+612
+02:00:25,747 --> 02:00:51,207
+Çıkışa git. Çıkışta AX'de senin sonucun vardı zaten. AX'deki değeri alıp GCD değişkenimize yazdık. Şimdi bunu da dump edip data segment sıfırdan itibaren kontrol edelim. 20 sayısı Word, 16 sayısı Word ve işlem sonucu GCD değerimiz 4 olarak elde edilmiş durumda. Şimdi aynı kodu şöyle çalıştıralım. Yine debug yapalım.
+
+613
+02:00:51,923 --> 02:00:59,843
+verdiğimiz değerleri birazcık trace edelim. Data segment görünür hale gelsin. Burada şunu yapalım.
+
+614
+02:01:01,843 --> 02:01:10,483
+AX'e değer okuduk, BX'e değer okuduk. Bunları yerini değiştirelim. Yani şunu yapacağız. Register AX diyeceğiz.
+
+615
+02:01:10,483 --> 02:01:17,783
+Şu anda 20 değeri var. Bunun yerine 16 değerini yazdım. Ve yine Register BX deyip
+
+616
+02:01:18,387 --> 02:01:31,987
+Mevcutta 16 değeri var. Bunun yerine de 20 hex değerini yazdım. Tekrar registerlar üzerinden kontrol edelim. Değerleri değiştirdim. Tekrar değerlemeye gerek kalmasın diye. Swap işlemini yapıyor mu diye kontrol etmek için yani.
+
+617
+02:01:32,987 --> 02:01:41,627
+AX, BX karşılaştırdım. AX daha küçük değil mi? AX daha küçük. Exchange işlemini yap.
+
+618
+02:01:42,036 --> 02:01:49,095
+Artık AX'de 20 var, BX'de 16 var. Bundan sonraki zaten az önce yapmış olduğumuz debug işleminin aynısı.
+
+619
+02:01:50,435 --> 02:02:00,615
+Tekrar çalıştıralım. Trace, trace, trace. AX, BX yükleyelim. Şu aşamada BX için bir değerini yükleyelim.
+
+620
+02:02:01,475 --> 02:02:08,975
+Bir değerini yükleyelim ve bunun için çalıştıralım. Bir değeriyle çalıştırdığımız vakit elde etmeyi beklediğimiz sonuç bir aslında.
+
+621
+02:02:09,939 --> 02:02:32,759
+trace edelim, exchange'e gerek yok, sıfır mı? Değil, bölme işlemini yap, yerlerini güncelle. Bakın, AX'de 1 var, BX'de 0 var. Bir adımda bitiyor. Yani GC'de A virgül bir işlemi bir değerini vererek sonlanıyor ve bunu bir adım çalıştırdıktan sonra yapıyor.
+
+622
+02:02:33,684 --> 02:03:00,284
+Tekrar BX kontrolüne geldik. Sonuç sıfır mı? Evet. Dolayısıyla çık. Çıktığım durumda da GCD yerine bir değerini yaz diye bunu sonlandırmış oluyor. Bir de aralarında asal olan değerler için deneyelim. Aralarında asal olan değerler aslında görebileceğimiz en fazla while döngü adımını üretecek değerler olacak. Yine data segmente kadar trace edelim AX, BX için.
+
+623
+02:03:00,884 --> 02:03:04,804
+Şimdi buraya yazacağımız değerler, örneğin 23'e 7 olsun.
+
+624
+02:03:06,344 --> 02:03:08,564
+23 değerimiz 17'ymiş.
+
+625
+02:03:09,684 --> 02:03:10,804
+7'de zaten 7.
+
+626
+02:03:10,963 --> 02:03:12,003
+23 neydi unuttum.
+
+627
+02:03:12,104 --> 02:03:13,123
+17'ye 7.
+
+628
+02:03:14,264 --> 02:03:18,264
+Şimdi register AX 17.
+
+629
+02:03:19,944 --> 02:03:23,884
+Register BX o da 7 olsun.
+
+630
+02:03:25,811 --> 02:03:44,652
+17 hex, 7 hex yani 23'e 7 aralarında asal olan iki değer. Bunlar için kodu çalıştırdığımızda bölme işlemini gerçekleştirdik. Birinci döngüyü tamamladık. 7'ye 2 oldu. Tekrar döngümüzü çalıştırıyoruz.
+
+631
+02:03:46,163 --> 02:04:02,604
+Bu sefer elde ettiğimiz değerler 2'ye 1. 2'ye 1 içinde tekrar bu bir adım daha çalışıyordu. 1'e 0 olacak şekilde sonuç üretiyordu. Onu da elde ettik. Tekrar döngünün başına geldik. 1'e 0 değerleriyle. Ctrl, BX, 0 mı? Evet.
+
+632
+02:04:03,944 --> 02:04:13,604
+Elde ettiğin AX'deki değer senin en büyük ortak bölenindir. Onu da GC'de değişkenine yaz ve sonlandır şeklinde sonucu elde etmiş oluyoruz arkadaşlar.
+
+633
+02:04:15,796 --> 02:04:19,716
+Şimdi bu noktada bununla ilgili sormak istedeceğiniz bir şey var mı?
+
+634
+02:04:22,156 --> 02:04:25,036
+Yoksa bir ara vereceğim ve son bir örneğimiz var.
+
+635
+02:04:25,436 --> 02:04:26,876
+Karmaşık bir dizi örneği.
+
+636
+02:04:27,616 --> 02:04:28,976
+Onu yapıp bitireceğiz dersimiz.
+
+637
+02:04:29,996 --> 02:04:32,316
+Var mı burayla ilgili sormak istediğiniz bir şey?
+
+638
+02:04:38,260 --> 02:04:39,100
+Tepki de yok.
+
+639
+02:04:41,060 --> 02:04:42,920
+Tamam, peki. Bir ara verelim.
+
+640
+02:04:43,600 --> 02:04:45,960
+18-20 geçe devam edeceğiz arkadaşlar.
+
+641
+02:04:52,756 --> 02:04:54,436
+18.20'de devam edeceğiz.
+
+642
+02:20:56,628 --> 02:21:04,388
+Evet arkadaşlar, son örneğimizle birlikte devam edelim şimdi. Ekran paylaşayım tekrar.
+
+643
+02:21:32,180 --> 02:21:33,420
+da, muzik.
+
+644
+02:21:57,427 --> 02:21:59,847
+Şimdi dördüncü örneğimizi de şöyle tanımlayalım.
+
+645
+02:22:20,340 --> 02:22:31,180
+listemiz olsun. Bu listede kişiler var. Bu kişilere ilişkin olarak ağırlık ve boy değerleri tutuluyor olsun.
+
+646
+02:22:31,180 --> 02:22:43,220
+Kişi ağırlık ve boy değerlerinin
+
+647
+02:22:47,092 --> 02:22:51,332
+tutulduğu dizileri kullanarak
+
+648
+02:22:59,956 --> 02:23:01,096
+kişilere ilişki
+
+649
+02:23:01,096 --> 02:23:04,976
+vücut kitle indeksi yani body mass
+
+650
+02:23:04,976 --> 02:23:08,456
+indeks, BMI diyebileceğimiz değeri hesaplayın.
+
+651
+02:23:14,804 --> 02:23:24,123
+bunu işte bir exe SM'li program olarak yazacağız. Burada formülü verelim. BMI dediğimiz vücut titli indeksini şöyle tanımlayacağız.
+
+652
+02:23:24,123 --> 02:23:41,224
+İşte ağırlık ama pound cinsinden. LB pound'u gösteriyor. Boyun ama inç cinsinden karesi çarpı 703 şeklinde bir formülümüz var.
+
+653
+02:23:42,260 --> 02:23:44,520
+her bir kişi için bu hesabı yapacağız.
+
+654
+02:23:45,720 --> 02:23:53,340
+Şimdi burada ağırlık, pound cinsinden, boy, inç cinsinden olduğu için bunların bir neye karşılık geldiğini göstermeye çalışalım.
+
+655
+02:23:54,100 --> 02:24:05,900
+Mesela 100 kiloluk bir kişinin aslında 220 pound'a karşılık geldiği veya işte 200 kilo bir kişinin 440 pound'a denk geldiğini görüyoruz.
+
+656
+02:24:10,420 --> 02:24:24,959
+WLB, WeightLB dediğimiz dizi bir Word dizisi olmalı. Word dizisi olmalı, bunu anlıyoruz. Bununla birlikte şeye bakalım, boylara bakalım.
+
+657
+02:24:36,879 --> 02:24:57,119
+inç oluyor veya 3 metre olamayacak ama 3 metre olsa bile taşmıyor. Yani 8 bite sığıyor. Dolayısıyla burada haş iğne yani inç cinsinden boy dizisinin de bir byte tipinde dizi olduğunu söylememiz mümkün.
+
+658
+02:24:58,195 --> 02:25:12,556
+Bunlara ilişkin olarak elde edeceğimiz BMI değerlerinin de yine bir Word tipinde dizi olduğunu varsayabiliriz. Gerçi çıkabilecek değerleri kontrol edebiliriz ama Word tipinde bir dizi olduğunu varsayalım şimdilik.
+
+659
+02:25:13,435 --> 02:25:21,456
+Buna göre kodumuzu oluşturmaya çalışalım. Mevcut bir kodu inceleyerek biraz ilerleyeceğiz burada ama şöyle yapalım.
+
+660
+02:25:23,156 --> 02:25:40,156
+Şimdi toplamda 200 kişiden oluşan bir listemiz var. Bununla ilgili olarak boy değerlerini, inç cinsinden birkaç olası değer ve işte 195 tane uç değer olarak verdik. Toplamda 200 tane değer oluşturduk.
+
+661
+02:25:41,296 --> 02:25:43,996
+Ağırlıkla ilgili olarak Word dizimizi ise işte
+
+662
+02:25:44,788 --> 02:25:58,608
+yüksek bir ağırlık, normal ortalama değerler gibi birkaç tane olabilecek değer ve 195 tane de kısmen uç değer diyebileceğimiz bir değer cinsinden tanımlamış olalım.
+
+663
+02:25:59,067 --> 02:26:05,907
+Toplamda 200 tane elemanımız olacak ve BMI hesabında elde ettiğimiz değerleri Word olarak.
+
+664
+02:26:06,772 --> 02:26:27,452
+değerlendiriyor olalım ve bunun içinde 200 word'luk yer ayıralım. Initial değer olarak da sıfır değerlerimizi oluşturmuş olalım. Bu şekilde bir tanımlama yapmış olalım. Şimdi burada erişim için şöyle bir yöntem kullanalım. Daha önce yapmadığımız bir yöntem. Normalde işte şunu yapmak mümkün doğal olarak.
+
+665
+02:26:28,244 --> 02:26:40,024
+Boy dizisini gezebilmek için SI indeks yazmacını kullanabiliriz. Ağırlıkta dolaşmak için DI'yi, BMI dizisinde dolaşmak için de BX yazmacını kullanmamız mümkün.
+
+666
+02:26:40,504 --> 02:26:51,783
+Ama burada bir kullanım senaryosu oluşturmak adına şöyle yapalım. Bütün diziler için aynı indeks yazmacını kullanalım.
+
+667
+02:26:52,180 --> 02:27:06,360
+Ama bunu yaparken örneğin boy dizisinin herhangi bir elemanıyla ilgili işlem yaparken aynı sıradaki ağırlık dizisinin aynı sırasındaki elemanına erişebilmek için bu SE indisini nasıl değiştirmeliyiz?
+
+668
+02:27:08,900 --> 02:27:11,340
+Yani döngümüz nasıl olacak onu kurmaya çalışıyoruz aslında.
+
+669
+02:27:16,211 --> 02:27:40,311
+iki ile çarpacağız aslında, tam tersi. Bakın, boy dizisi bir byte dizisi. Dolayısıyla byte dizisinin herhangi bir indisiyle ilgili işlem yaparken ağırlık isimli dizinin aynı sıradaki elemanına erişebilmek için iki kat fazla adres ilerlemem lazım. Çünkü ağırlık dizisi word tipinde bir dizi.
+
+670
+02:27:41,075 --> 02:28:04,575
+Dolayısıyla ona dikkat edeceğiz. Bir sonraki elemana geçebilmek için tekrar ikiye böleceğiz ve sonra bir artacağız. Anlatabildim mi? Şimdi döngü içerisinde SI bizim indeks yazmacımız. Dolayısıyla indeks yazmacımız boy dizisinin bir sonraki elemanına geçebilmek için increment ve increment SI ile bir sonraki elemana geçtik. Güzel, döngünün başına geldim.
+
+671
+02:28:05,012 --> 02:28:26,391
+SI değerini kullanarak boy isimli dizinin sıradaki elemanına eriştim. Ama R isimli dizinin sıradaki elemanına erişebilmek için SI'yi iki ile çarpmam gerekiyor. Veya iki katını almak için shift left yaptım bir birim, bir bit. Dolayısıyla ağırlık dizisine yani aynı boyuttaki bir word dizisinin aynı sıradaki elemanına artık erişebildim.
+
+672
+02:28:32,852 --> 02:28:58,592
+byte dizisinin indisi olarak bir arttırarak devam edebilmek adına tekrar Shift-Write yapıp ikiye böldüm. Böylece döngümüzü sağlamış olacağız. O döngüyü şurada göstereyim size nasıl ilerleteceğimizi. Şimdi sadece 200 elemanlı byte ve word dizilerinin aynı sıradaki elemanlarına erişimi sağlayacak şekilde SE'nin değişimi nasıl oluyor ona bakalım. SE'yi sıfırladım.
+
+673
+02:28:59,347 --> 02:29:02,948
+Döngümüz şurada, L1 etiketi ve Loop L1'e dikkat edin.
+
+674
+02:29:04,367 --> 02:29:09,768
+Byte tipindeki elemanın bir sonraki elemanına erişebilmek için Increment SE ile geliyorum her seferinde.
+
+675
+02:29:09,867 --> 02:29:11,227
+Başta da sıfırdı zaten.
+
+676
+02:29:11,847 --> 02:29:12,628
+Başta sıfırdı.
+
+677
+02:29:12,688 --> 02:29:14,247
+Her seferinde Increment ile gittim.
+
+678
+02:29:14,907 --> 02:29:16,507
+Dolayısıyla Boy SE diye
+
+679
+02:29:16,959 --> 02:29:34,359
+sıradaki boy dizisinin elemanına eriştim. Güzel. Ama ağırlık, yani word tipindeki dizinin aynı sıradaki elemanına erişebilmek için SI'yi ikiyle çarpmam gerekiyor. Daha sonra aynı sıradaki elemanına erişebilirim. Ve bununla birlikte tekrar
+
+680
+02:29:35,700 --> 02:29:57,459
+byte byte ilerleyen dizinin yani tek tek artım sağlayabilmek adına da tekrar SI'yi shift write ile ikiye bölmem gerekiyor. Dolayısıyla buradaki püf nokta byte ve word dizilerini tek bir indis değişkeniyle aynı sırada tarayabilmek istiyorsan bu indis değişkenim birer birer artacak byte dizisini tararken.
+
+681
+02:30:00,000 --> 02:30:25,280
+byte dizisine erişebilmek için aynı sıradaki elemanına 2 ile çarpıp öyle erişeceğim. Tekrar byte dizisindeki bir sonraki elemana geçebilmek için de 2 ile çarpmış olduğum değeri 2'ye böleceğim. Tekrar byte sırasındaki indis elemanlarını indirgeyeceğim ve onu arttıracağım. Dolayısıyla burada yaptığımız işlem, SI ile ilgili işlemi bu şekilde ifade etmemiz mümkün.
+
+682
+02:30:26,899 --> 02:30:48,659
+Formüle gelelim. Formülde ağırlık bölü boyun karesi çarpı 703 şeklinde bir işlem var. Yalnız şunu hatırlayalım. 8086'da çarpma ve bölmeler integer bölmesi, integer çarpması. O zaman burada işlem sıramızı nasıl oluşturmalıyız? İkinci dikkat edeceğimiz nokta da bu. İşlem sırasını nasıl oluşturmalıyız arkadaşlar?
+
+683
+02:30:54,995 --> 02:30:58,716
+703'te çarpmayı mı yapmalıyız? Ne dersiniz?
+
+684
+02:31:01,995 --> 02:31:03,655
+Önce çarpma. Evet.
+
+685
+02:31:04,935 --> 02:31:08,955
+Çünkü, bakın değer olarak düşünelim. W'daki değer bir word değeri.
+
+686
+02:31:09,216 --> 02:31:12,675
+Alttaki byte değerdi. Karesini aldık. Bu da word değer oldu.
+
+687
+02:31:12,775 --> 02:31:17,175
+Dolayısıyla bu ikisini birbirine böldüğümüz zaman elde edeceğimiz sonuç ya 0, ya 1, ya 2.
+
+688
+02:31:17,652 --> 02:31:37,391
+Dolayısıyla precision olarak çok büyük bir kaybımız var. Integer bölmesi yaptığımız için. Değerler birbirine yakın olduğu için. Dolayısıyla kayıp yaşadıktan sonra 703 ile çarparsak bunun düzelme şansı yok. Ama önce 703 ile ağırlığı çarpıp daha sonra bunu boyun karesine bölersek aslında güzel bir range içerisinde.
+
+689
+02:31:37,843 --> 02:32:02,324
+ayrık değerlerimizi elde etmemiz mümkün oluyor. Dolayısıyla önce 703 ile çarpacağız. Daha sonra boyun karesine bölmemiz gerekiyor. Şimdi onu nasıl yaptığımızı görelim kod tarafında. Toplamda 200 eleman için döngü yapacağız. Onu belirtmemiştik. Şimdi söyleyelim. Her seferinde bir div işlemimiz var. Önce MUL, sonra div işlemimiz var. Doğal olarak 703 ile çarpıp
+
+690
+02:32:02,388 --> 02:32:06,748
+Boyun karesine böleceğiz. Bu işlem değerimiz var. Daha onları nasıl yaptığımızı konuşmadık ama.
+
+691
+02:32:08,168 --> 02:32:18,968
+Burada 703 ile ağırlık değerini çarpabilmek için şunu yapamıyorduk hatırlayacak olursanız.
+
+692
+02:32:18,968 --> 02:32:20,288
+Yani şöyle bir komut yoktu.
+
+693
+02:32:21,556 --> 02:32:39,556
+Mesela AX virgül 703 diye bir komut yoktu. İki parametre almıyordu çünkü. Tek parametre alıyordu. Tek parametre alırken bunu immediate da alamıyordu. Böyle bir komut da yok. Ne yapabiliyorduk? Burada bir 16 bitlik çarpma yapmak istiyorsak bunu bir yazmaç üzerinden vermeliyiz. Dolayısıyla...
+
+694
+02:32:40,531 --> 02:32:50,451
+çarpı 703 kısmını mutlaka zaten bir yazmaç üzerinden vermeliydik. Onu da şurada döngü dışında DI üzerine atayarak gerçekleştirdik.
+
+695
+02:32:51,711 --> 02:32:58,951
+Şurada MUL DI dediğimiz şey aslında ağırlık ile 703'ü çarpmak için kullanacağımız değer aslında bu.
+
+696
+02:32:59,811 --> 02:33:05,191
+Burada önce şimdi kodun akışına bakalım. Genel çerçeveyi vermiştik zaten.
+
+697
+02:33:06,484 --> 02:33:14,123
+Tek tek arttırdığımızda boy dizisinin sıradaki elemanlarını çifter çifter arttırdığımızda da word dizilerinin sıradaki elemanlarına erişiyordu.
+
+698
+02:33:14,263 --> 02:33:15,644
+İlk yaptığımız işlem şu.
+
+699
+02:33:16,564 --> 02:33:21,724
+Boy isimli değişkenin SI numaralı indisindeki elemanı alıp AL'ye atadık.
+
+700
+02:33:21,963 --> 02:33:23,123
+Niçin AL'ye atadık?
+
+701
+02:33:23,543 --> 02:33:27,344
+Çünkü boy isimli değişkenimiz dizimiz bizim byte tipinde bir dizimiz.
+
+702
+02:33:28,243 --> 02:33:30,484
+Bizim amacımız boyun karesini hesaplamak.
+
+703
+02:33:30,772 --> 02:33:46,772
+Boyun karesini nasıl hesaplayabiliriz? AL'de zaten boy değeri var. AL çarpı AL yaparsak boyun karesini elde ederiz. Fakat dikkat edeceğiniz bir nokta. Şuna gerek yokmuş bu arada. Onu uçurabilirim.
+
+704
+02:33:49,372 --> 02:33:56,612
+Dikkat edeceğimiz nokta, 8 bitlik çarpma işlemi sonucunda AL'nin karesini alırken işlem sonucu AX'de saklanır.
+
+705
+02:33:57,652 --> 02:34:13,351
+Şu anda bu bölme, şey, boyun karesi AX değerinde var. Bir sonraki aşamada bölme yapacağımız için, bu bölme değeri de DX, AX'i kullanacağı için, bu AX'teki değeri geçici olarak BX'e kopyaladım. Şu anda BX'de boyun karesi mevcut.
+
+706
+02:34:14,632 --> 02:34:23,012
+Daha sonra, Word dizisinin sıradaki elemanına geçebilmek için, ister döngünün başında olsun, ister döngünün ortasında olsun fark etmez.
+
+707
+02:34:23,412 --> 02:34:46,691
+SI değerini 2 ile çarpıyoruz veya shift ettiğimiz zaman bu 2 ile çarpmaya denk geliyor. Dolayısıyla bu ağırlık word dizisinin sıradaki elemanına bu şekilde erişiyoruz. Değer bu dizimiz bir word dizisi olduğu için oradan AX değerini AX'e sıradaki elemanı çektik. Amacımız ne şimdi? Ağırlığı 703 ile çarpmak. AX'de ağırlık değerimiz var.
+
+708
+02:34:47,507 --> 02:35:10,507
+Fakat 703 değeri byte'a sığmıyordu, word'a sığıyor, DI'ya sığdı. Dolayısıyla 16 bitlik çarpma yapmamız lazım. 16 bitlik çarpma yapabilmek için işlem sonucu DX, AX'de saklanır zaten. Dolayısıyla bu da işimizi kolaylaştıracak bir şey olacak. Çünkü bir sonraki aşamada bölme yapacağız. 16 bitlik bölme yapacağız. Zaten orada da...
+
+709
+02:35:10,804 --> 02:35:18,283
+boyun karesini BX'e almıştık. 16 bitlik yazmaca. Dolayısıyla birbirleriyle etkileşimli bir şekilde kullanacağız.
+
+710
+02:35:19,364 --> 02:35:24,984
+Şurada tekrar söyleyelim. Word tipindeki ağırlık dizisinin sıradaki elemanını AX'e aldık.
+
+711
+02:35:25,716 --> 02:35:49,335
+Ağırlık değerini 703 ile çarptık, 703 DI'daydı, 16 bitlik çarpma işlem sonucu DX, AX'de saklanır. Bir sonraki aşamada da yapmak istediğimiz şey DX, AX, 32 bitlik sanal yazmaç değerini boyun karesine bölmek. Boyun karesi nerede? BX yazmacında saklanıyor. Dolayısıyla DIV, BX'i çalıştırarak birbirini takip eden bu işlemler için aslında
+
+712
+02:35:49,791 --> 02:35:58,671
+doğal olarak bir otomatik yükleme sistemi oluşturmuş olduk. Zaten DX, AX'de değer var, onu BX'e böleceğim yani.
+
+713
+02:35:59,451 --> 02:36:12,711
+Dolayısıyla DX, AX'deki ağırlık çarpı 703 değerini boyun karesine bölüyoruz. Bölüm sonucu AX'de saklanıyor. Kalan sonucu DX'de. Kalanla ilgilenmiyoruz. Integer bölme sonucuyla ilgileniyoruz.
+
+714
+02:36:13,811 --> 02:36:39,592
+elde ettiğimiz BMI değerini, o kişiye ait BMI değerini nereye saklayacağız? BMI Word dizisinin sıradaki elemanına. Word dizisi olduğu için ilk başta 0, birinci elemanın 0 adresinde, ikinci elemanı ise 2 adres ötede, 2 byte ötede. Dolayısıyla zaten shift left'ti, 0 ile girdik, shift left ettik, gene 0. Dolayısıyla ilk yazdığımız değer BMI 0'a yazıldı.
+
+715
+02:36:40,564 --> 02:37:03,864
+Daha sonra İnkrement SE, SE bir değeriyle geldik, ikiyle çarptık, iki, BMI iki adresine yazdık. Yani bir sonraki Word gözüne yazdık. Dolayısıyla bu işlem tutarlı. Word dizisinin bir sonraki elemanına elde ettiğimiz hesap BMI sonucunu yazdık. Bu şekilde bir sonuç elde ettik. Peki tekrar byte tipindeki dizinin
+
+716
+02:37:04,244 --> 02:37:29,024
+sıradaki elemanına geçeceğim. O çifter çifter artmıyor. Birer birer artıyor ya. Dolayısıyla tekrar ikiyle çarpmış oldum SI'yi Shift-Write ile ikiye böldüm. Artık indisim Byte dizisinin bir sonraki elemanını gösterebilecek şekilde bir arttığımda. Dolayısıyla İncrement SI ile bir sonraki Byte dizisinin bir sonraki elemanını gösterip tekrar ROOP'a dönüyorum. Ve buradan elde etmiş olduğumuz sonucu da
+
+717
+02:37:29,523 --> 02:37:44,443
+bütün 200 eleman boyunca tekrarladıktan sonra return etmiş oluyoruz. Buna göre bu kodumuzu şimdi buradaki değerlerle bir çalıştıralım. 300 değeri var. Şurada calculator açalım.
+
+718
+02:37:56,147 --> 02:38:05,207
+bölü 80. Elde edeceğimiz ilk BMI değeri 32 imiş. Şimdi bunun olup olmadığını şöyle kontrol edelim. Daha önceden bunu değerlemiştik ama
+
+719
+02:38:05,207 --> 02:38:11,628
+tekrar değerleyelim. Neydi bu? BMI, BMI.
+
+720
+02:38:29,236 --> 02:38:34,355
+Şimdi trace ederek başlayalım. Data segmenti gösterdik. Indies'imizi sıfırladık.
+
+721
+02:38:35,896 --> 02:38:46,556
+200 değerini CX'e yükledik. Daha sonra 703 değerini DI'ye yükledik. AX'i sıfırladık. Ona gerek yoktu önceden kalan bir şey o.
+
+722
+02:38:47,195 --> 02:38:56,096
+AL'ye boy dizisinin ilk değerini aldık. 80 değerini aldık. 50 var. 50 hex. 16 ile 5 çarparsanız 80. 80 değerini aldık.
+
+723
+02:38:56,404 --> 02:39:04,144
+Daha sonra AL'nin karesini alıyoruz. AL'deki değerle AL'yi çarpıyoruz. Bu AL'nin karesini almak. Yani kişinin boyunun karesini almak demek.
+
+724
+02:39:05,083 --> 02:39:14,004
+1900 oldu. Şimdi bunu kontrol edelim doğru mu? Calculator. Desimalde şu anda 80x80, 1900 hex yapıyor.
+
+725
+02:39:14,004 --> 02:39:21,083
+Dolayısıyla elde ettiğimiz değer 1900 hex değeri, AX'deki değer doğru. Bunu kaybetmemek adına BX'e kopyaladık.
+
+726
+02:39:22,067 --> 02:39:29,087
+SI'yi bir shift left yapıyoruz. Yani ikiyle çarpıyoruz.
+
+727
+02:39:30,427 --> 02:39:37,847
+Elde ettiğimiz indis değeri artık ağırlık dizisinin sıradaki elemanını gösteriyor.
+
+728
+02:39:38,707 --> 02:39:43,427
+Ağırlık dizisinin sıradaki elemanı nedir?
+
+729
+02:39:46,247 --> 02:39:48,927
+1, 2, C. 1, 2, C'ye bakalım neymiş?
+
+730
+02:39:50,195 --> 02:40:10,536
+1, 2, C, 300 değeri. Dolayısıyla ilk elemanı aldık. Almış olduğumuz ilk elemanı DI ile yani 703 ile çarpıyoruz. DX, AX de bunun çarpım sonucu oluşacak. Bakalım şimdi 300 çarpı. 703 değerimizi de şöyle çarpalım. 3.
+
+731
+02:40:11,092 --> 02:40:31,332
+DX'de 3 var, AX'de de 3, 7, 4, D, 4 var. Dolayısıyla 703 çarpı 300 değerimiz burada. Bunu BX'deki değere, 1900 hex'e yani 80'in karesine bölüyoruz. Bölüm sonucumuz 20. 20 hex, 32'ye eşit. Dolayısıyla bu değeri de alıp BMI dizisinin sıradaki gözüne yazıyoruz.
+
+732
+02:40:37,843 --> 02:40:47,183
+Tekrar ikiye bölüp, bir arttırıp, döngünün başına döndük ve bu sayede bir sonraki boy dizisinin elemanına erişmiş oluyoruz.
+
+733
+02:40:47,263 --> 02:40:52,824
+Ve bu şekilde bütün elemanlar üzerinden bunu yürüterek işlem sonucumuzu elde etmiş oluyoruz.
+
+734
+02:40:53,443 --> 02:40:59,263
+Şimdi burayla ilgili bir sorunuz varsa arkadaşlar, bir dakikayıcık bir ara istiyorum.
+
+735
+02:40:59,711 --> 02:41:06,351
+O sırada siz sorunuz varsa bir düşünün. Hemen geliyorum. Bir dakika içerisinde geliyorum.
+
+736
+02:43:27,347 --> 02:43:50,628
+Evet arkadaşlar, şimdi birinci sorumuz konuyla ilgili. Dizi SI mantığında eriştiğimiz için şöyle, bakın şurada az önce bir örnek vardı. Şuradaki kodu bakın, şu assembly koduna bakın. Bu aslında bizim yazdığımız şu satıra karşılık geliyor. Nerede o? Şu satıra karşılık geliyor. Tamam mı?
+
+737
+02:43:51,123 --> 02:43:55,443
+Her ne kadar BMI, SI demiş olsam da bunun karşılığı şu aslında.
+
+738
+02:43:56,123 --> 02:44:01,504
+Köşeli parantez içerisinde indeks yazmacı ve artı bir immediate değer.
+
+739
+02:44:01,623 --> 02:44:03,984
+O immediate değer şurada görmüş olduğunuz.
+
+740
+02:44:04,628 --> 02:44:25,068
+Şurada 2, 5, A olarak görmüş olduğunuz değer aslında bu BMI dizisinin başlangıç adresi. Yani data segmente göre offset değeri. Bu şu demek oluyor. Köşeli parantez içerisinde verdiğimiz her şey adres de hatırlayacak olursanız. Dolayısıyla dizi SEI desem de bu adrese dönüştü.
+
+741
+02:44:25,427 --> 02:44:52,927
+Word tipindeki bir dizinin, yani her bir elemanı Word olan dizinin, bir sonraki elemanına erişebilmek için de mutlaka iki byte ileri gitmem gerekiyor. Bundan dolayıdır ki, birer birer arttırmak, Word dizide birer birer arttırmak bize istediğimiz sonucu vermez. Bir arttırırsak, şimdi sıfırla başladık, oradaki Word'ü okuduk, güzel. Ama SE'yi bir arttırırsak, bu sefer okuduğumuz değer şu olur.
+
+742
+02:44:54,195 --> 02:45:02,115
+birinci word'un yüksek anlamlı kısmıyla ikinci word'un düşük anlamlı kısmını birleştirdiğimiz yanlış bir değeri okumuş oluruz.
+
+743
+02:45:03,075 --> 02:45:05,975
+Dolayısıyla soruya cevap olarak bu şekilde söyleyebiliriz.
+
+744
+02:45:06,036 --> 02:45:12,995
+Her ne kadar dizi SI diye erişi olsak da, köşeli parantez SI diye erişi olsak da, bu aslında yine adrese dönüşüyor.
+
+745
+02:45:13,935 --> 02:45:16,675
+Dizinin değeri de immediate değer olarak karşılık buluyor.
+
+746
+02:45:18,675 --> 02:45:41,355
+Tamam, bu şekilde erişmiş oluyoruz. Şimdi dersim, bu saatin başında şunu söylemiştim. Buradaki dizilerin her birine erişim için, örneğin şunun için SE, bunun için DI, bunun için BX kullanıp, SE'yi her döngü adımında bir arttırıp, DI ve BX'i iki arttırmak da söz konusu. Bu da çözüm. Bu da doğru bir cevap.
+
+747
+02:45:41,695 --> 02:45:59,795
+Ama biz her zaman sıralı olarak indislere erişmeyebiliriz. Öyle problemler var ki bu problemlerde bir byte dizisiyle word dizisinin sırasız bir şekilde herhangi bir indisinin her iki dizide de aynı sıradaki elemanlarına erişme ihtiyacımız oluyor.
+
+748
+02:45:59,795 --> 02:46:09,695
+İşte bu durumda burada bahsettiğim gibi byte dizisinin indis değerinin ikiyle çarpılmış hali word dizisinin aynı sıradaki elemanına erişme ihtiyacımız oluyor.
+
+749
+02:46:09,695 --> 02:46:13,575
+işim sağlıyor. Bundan dolayı bu örneği vermek istedim.
+
+750
+02:46:14,227 --> 02:46:17,367
+Umarım anlaşılmıştır kabaca örneğimiz.
+
+751
+02:46:18,047 --> 02:46:23,827
+Burada dikkat edeceğimiz nokta, aynı indisle hem Byte hem Word dizisine erişim sağladık.
+
+752
+02:46:23,948 --> 02:46:25,448
+Bu noktaya dikkat etmeliyiz.
+
+753
+02:46:25,927 --> 02:46:31,927
+İkincisi ise matematiksel bir çarpma bölme işlemi olan sonuç ürettiğimiz bir senaryo vardı.
+
+754
+02:46:31,927 --> 02:46:37,108
+Burada da doğrudan bölme işlemi üzerinden hareket edersek, önceliği ona verirsek.
+
+755
+02:46:38,388 --> 02:46:47,108
+bir precision kaybımız oluyor, integer bölmesi olduğu için. Öncelikli olarak çarpma işlemi üzerinden devam etmemiz gerekti.
+
+756
+02:46:47,188 --> 02:46:57,088
+Yani bunun da doğal bir sonucu oluştu. Önce çarpma işlemini yaptığımız durumda bölme işlemi için girdiler hazır zaten, hazır olmuş oldu zaten.
+
+757
+02:46:57,528 --> 02:47:05,408
+DX ve AX'de çarpma sonucu üretildiği için bölmede de bunları kullanacağımızdan dolayı o değerler DX, AX'de otomatik oluşmuş oldu.
+
+758
+02:47:05,791 --> 02:47:14,011
+Dolayısıyla tekrar atama yapmamıza gerek kalmadı. Bu işin doğal süreci de gördüğünüz üzere önce çarpma sonra bölmeyi yapmak şeklinde ortaya çıkıyor.
+
+759
+02:47:15,371 --> 02:47:20,291
+Kafaca böyle özetleyebilirim. Bununla ilgili yine sorunuz varsa alayım arkadaşlar.
+
+760
+02:47:25,427 --> 02:47:44,727
+Bu örnekle ilgili. Örnekleri Avesis'ten yine duyurdum. Haftaya sınav için arkadaşlar yine tekrar söylüyorum. Dersin sonunda da tekrar söylüyorum. Mutlaka ve mutlaka yanınızda instruction seti getiriyorsunuz. Instruction seti ben Avesis sayfasında duyuru olarak koydum.
+
+761
+02:47:45,172 --> 02:47:54,592
+pratik olan bir tane A4 sayfasına iki tane instruction sayfasının çıktı olduğu bire iki instruction dosyası.
+
+762
+02:47:55,012 --> 02:48:05,812
+Pratik olan o. Biz vermeyeceğiz. Siz yanınızda getireceksiniz bu instruction'ı. Eğer yanınızda getirmezseniz sınav boyunca ne yazık ki tavanı seyretmek zorunda kalırsınız.
+
+763
+02:48:05,812 --> 02:48:07,352
+Yani instruction set çok önemli.
+
+764
+02:48:09,647 --> 02:48:35,247
+yanınızda getirin ve sınavdan önce arkadaşlar mutlaka o Instruction Set nasıl okunuyor, nasıl değerlendiriliyor, elinizdeki bir komut oradaki tiplerden hangisine denk geliyor, mutlaka deneme yapın, mutlaka pratik yapın. Örneğin burada kurmuş olduğumuz kodların Instruction Set'te hangi satırdaki koda karşılık geldiğini zaten derlediğimiz zaman, debugta baktığımız zaman bakın şurada şöyle göstereyim.
+
+765
+02:48:35,603 --> 02:48:45,144
+unassemble, kod segment 0 dediğim zaman, burada mesela xoraxax'in 3, 3, C0 makine koduna karşılık geldiğini görüyoruz zaten.
+
+766
+02:48:45,644 --> 02:48:47,963
+Dolayısıyla xoraxax buymuş.
+
+767
+02:48:48,563 --> 02:48:56,623
+xoraxax'in o instruction sette 33 ile başlayan makine kodu karşılığı ürettiğini mutlaka görmeye çalışın örneğin.
+
+768
+02:48:56,623 --> 02:49:01,403
+Tamam mı? Bunlar önemli. Sınav sırasında size pratiklik kazandırır.
+
+769
+02:49:03,316 --> 02:49:15,156
+eğer ilk defa sınav sırasında bu instruction seti kullanıyor olursanız çok büyük zaman kaybolur. Getirmezseniz komple zaten sınav. Böyle tavan seyretmekle geçer söyleyeyim.
+
+770
+02:49:17,336 --> 02:49:25,616
+Dolayısıyla bunları mutlaka tamamlayın. Kendiniz benzer örnekler, problemler türetip bunları çözmeye çalışabilirsiniz.
+
+771
+02:49:26,100 --> 02:49:31,459
+Şu anda derse katılan arkadaşlardan DOSBOX tarafında derleme yapamayan kimse var mı?
+
+772
+02:49:33,079 --> 02:49:36,299
+Bunu sorayım. Herkes derleme yapabilir durumda mı teknik olarak?
+
+773
+02:49:42,324 --> 02:50:02,004
+yapamayan, yapama durumda olan varsa lütfen bildirsin. Sınav öncesi hazır hale gelmesi iyi olur. Eğer yapabileceğimiz bir şey varsa bakıp yapalım. Tamam, güzel. Yapamayan arkadaş varsa bilhale bildirsin arkadaşlar.
+
+774
+02:50:02,835 --> 02:50:21,595
+Dediğim gibi, şu ana kadar görmüş olduğumuz bütün örnekleri ben AWS sayfasında duyurdum. Siz kendiniz yazmaya çalışın. Belki biz biraz çok dikkat etmeden yazdığımız noktalar vardır. Daha iyi optimizasyonlar yapılabiliyordur. Onları üretmeye çalışın. Bu vesileyle de sınava çalışmış olursunuz zaten.
+
+775
+02:50:22,515 --> 02:50:29,595
+Sınav kapsamı da dediğim gibi baştan itibaren egzeye kadar olan kısımlar, egze dahil. Dolayısıyla baştaki tanımlamalar.
+
+776
+02:50:30,579 --> 02:50:44,396
+instruction'ların kendileri, hangi tip instruction'lar var, hangileri kabul edilir, hangileri legal, hangileri illegal. Bunlara dikkat edin. Sözde komutlara dikkat edin. Oluşturmuş olduğumuz if...
+
+777
+02:50:44,915 --> 02:51:04,915
+kontrolleri, koşullu dallanmalar, döngüler, bunların nasıl oluşturulduğunu tekrar edin. Mutlaka önemli. Ve yine yapmış olduğumuz problemleri siz de tekrarlamaya çalışın. Sınav açısından bunlar önemli diye düşünüyorum. Bunun dışında sormak isteyeceğiniz bir şey varsa onu alalım. Yoksa da...
+
+778
+02:51:07,603 --> 02:51:24,623
+COM tipi dersleri, COM tipi programları daha işlemedik. Sadece egze işledik. Egze'yi de tek bir ana yordam varken işledik. Daha alt yordamları da görmediğimiz için sadece egze, tek yordamlı egzeler var. Tamam.
+
+779
+02:51:30,515 --> 02:51:41,515
+Sanırım önceki senelerin sınav soruları online yaptığımız için bir şekilde bir yerlerde vardır. Ben ilan etmeyeceğim, vermeyeceğim onları ama varsa onlara da bakmaya çalışabilirsiniz bir yerlerde.
+
+780
+02:51:43,355 --> 02:51:46,315
+Onun haricinde soracağınız bir şey yoksa arkadaşlar, dersi bitiriyorum.
+
+781
+02:51:54,004 --> 02:51:59,024
+Sınavda görüşmek üzere. Şimdiden başarılar arkadaşlar. İyi akşamlar.

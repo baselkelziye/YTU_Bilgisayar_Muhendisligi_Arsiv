@@ -1,0 +1,2187 @@
+1
+00:03:30,003 --> 00:03:42,903
+Arkadaşlar, merhaba. Biraz oyalandım, gelen olur mu diye. Sesim geliyor mu? Bir de slide'ları görebiliyor musunuz? Onu soracağım.
+
+2
+00:03:42,903 --> 00:03:44,043
+Evet hocam.
+
+3
+00:03:44,644 --> 00:03:46,043
+Teşekkür ederim.
+
+4
+00:03:47,883 --> 00:03:54,304
+Peki, şeyden bir başlayayım. Ödeviniz, sanırım ödevi kimse duymadı.
+
+5
+00:03:56,948 --> 00:04:05,788
+Bugün bir miktar gelmeye başlıyor ama tamam artık o geçen haftada kaldı. Bir miktar az geldi ödevler.
+
+6
+00:04:07,828 --> 00:04:16,148
+Şimdi bir en son verdiğim ödevden de başlayayım. Ondan sonra birazcık da artık öğrenme kısmına geçelim.
+
+7
+00:04:17,187 --> 00:04:23,408
+Bir iki hafta nöron networklerin üzerinde duracağım. Sonra biraz daha derin öğrenmeye yönelik geçeceğiz.
+
+8
+00:04:23,848 --> 00:04:33,108
+Şeyi sorayım size, regresyonla ilgili nasıl yapılıyor bilmiyorum. Linear regresyon, non-linear regresyon.
+
+9
+00:04:33,524 --> 00:04:39,624
+Tekrarlamamı ister misiniz? Ben çok kapsam almamıştım ama.
+
+10
+00:04:43,187 --> 00:04:54,867
+Regresyon biliyorum, bilmiyorum. Makine öğrenmesi daha önce gördünüz mü o tarz dersler? Onu da bir sormuş olayım. Farklı bölümlerden gelen arkadaşlarımız da var.
+
+11
+00:04:55,947 --> 00:04:59,288
+Ben şu anda alıyorum hocam ama o dersi çok bilmiyorum.
+
+12
+00:04:59,947 --> 00:05:01,187
+Ben de aynı durumdayım hocam.
+
+13
+00:05:01,648 --> 00:05:06,967
+Regresyon çalıştınız mı hiç herhangi bir şekilde? [öğrenci] makine öğrenmesi gördüm dedi.
+
+14
+00:05:09,043 --> 00:05:33,043
+Bir şekilde başka sebeple kullanmış olabilirsiniz. Tamam, çalıştınız. Çalışmayan varsa bana chatten yazabilir mi? Kısaca bir üzerinden geçeriz olmazsa. Tamam, teşekkürler [öğrenci]. Mesajlarınızı yazarsanız kısaca bir en azından üzerinden geçerim.
+
+15
+00:05:33,043 --> 00:05:34,963
+Hocam bir şey sorabilir miyim?
+
+16
+00:05:35,444 --> 00:05:57,224
+Efendim? Bir şey sorabilir miyim? Tabii tabii. Slider'ın çıktısını almak istiyorum da, dokümanları paylaşabilir misin acaba? Ya paylaşacağım bana bu hafta ne olur müsaade edin. Çok kötü bir durumda bu hafta programım. Biraz derleyip toplayıp paylaşmak istedim de o yüzden paylaşamadım. Bir şey için soruyorum, ders sırasında bir not almak istiyorum da onun için.
+
+17
+00:05:57,600 --> 00:06:05,460
+Anladım. Bugün yapamam ama cumadan sonra paylaşmış olayım olur mu?
+
+18
+00:06:06,200 --> 00:06:06,900
+Tamam hocam.
+
+19
+00:06:07,259 --> 00:06:08,600
+Tamam, teşekkürler.
+
+20
+00:06:11,379 --> 00:06:16,220
+Bir de hocam ödevi dün akşam yollamıştım ben ama uygun olur herhalde değil mi? Bugünden önce yolladım.
+
+21
+00:06:16,240 --> 00:06:19,600
+Artık şu ana kadar gelmiş olanları kabul ettim sayın.
+
+22
+00:06:20,080 --> 00:06:21,420
+Tamam, teşekkürler.
+
+23
+00:06:21,776 --> 00:06:47,436
+Şimdi cevabını açıklayacağım zaten. O yüzden şu andan sonra geçerli değil. Gmail'ime bu arada atıyorsunuz değil mi? [öğrenci] sormuş. Evet, Gmail'e lütfen. Yıldız adresi bazen spam'a atıyor. Bir de bazen her zaman bakamıyorum. Gözümden kaçabiliyor. O yüzden ödevleri Gmail'e ve ne olur uygun bir başlıkla dosya isimlerine de bundan sonrası için söylemiş olayım.
+
+24
+00:06:47,791 --> 00:07:02,611
+Kendi isminizi koyarak ve mail konusuna da lütfen dersin ismini koyarsanız gözümden kaçmaz en azından. Onu da söylemiş olayım. Gönderdiğinizde hemen anlayabileceğim şekilde olsun.
+
+25
+00:07:04,019 --> 00:07:30,519
+Selim ulaştı mı ulaşmadı mı bilmiyorum. Yani şu anda çok böyle mailleri de bakamıyorum. Ulaşmıştır. Gmail'e attıysan ulaşmıştır. Dediğim gibi gözümden kaçmaması için sadece isminizi dosyaya verin. Bir de mail konusuna mutlaka derin öğrenme dersi falan diye bir şey yazın ki ayırabileyim. Çok fazla mail geliyor. Bazen benden de kaçabiliyor veya spam'e gidiyor. Görmeyebiliyorum.
+
+26
+00:07:31,028 --> 00:07:35,307
+Onun dışında normalde bir problem olmaz. Tedbiren söylüyorum.
+
+27
+00:07:40,500 --> 00:08:05,460
+Dedik ki maklopis ve tek katmanlı perseptronla neleri çözebiliriz? Özellikle lojik kapıları gerçekleyebildiğimiz için aslında faydalılar çözebileceğimiz bir kısım önemli problemler de var. Özellikle de maklopis nöronlarının ve perseptronun ortaya atıldığı zamanları düşünürseniz.
+
+28
+00:08:05,776 --> 00:08:31,996
+Elektronik için de bir başlangıç aşaması. Dolayısıyla o zaman için de çok kıymetli şeyler. Şu anda da hala kullanılan şeyler. Hala bir takım elektronik uygulamaları daha hızlı yapmamıza olanak verdiği durumlar var. Dolayısıyla bir takım kapı fonksiyonlarını yapay sinir ağlarıyla gerçekleyebiliyor olmak hala kıymetli.
+
+29
+00:08:32,628 --> 00:08:47,868
+Fakat işte o dönemde perseptronların bir popüler olup ondan sonra düşmesine neden olan olay, bütün diğer lojik kapıları gerçeklerken XOR kapısının gerçeklenememesi olmuş.
+
+30
+00:08:48,488 --> 00:08:54,748
+XOR'un nesi var diğerlerinden farklı? XOR problemi aslında non-linear bir problem.
+
+31
+00:08:59,956 --> 00:09:15,515
+Bir sıkıntınız var mı? Tek değişken, çok değişken dediğimde size bir şey ifade ediyor mu? Peki, kısaca söyleyerek geçeceğim. Daha sonra aralarda tekrar detaylı da dururum.
+
+32
+00:09:24,991 --> 00:09:43,231
+Bir doğruyla, bir düzlemle, yani lineer bir fonksiyonla birbirinden ayırabiliyoruz demektir. Daha diğer bir şekilde söylersem, aslında lineer bir denklem seti oluşturup buradan bilmediğimiz parametreleri çözebiliyoruz demektir.
+
+33
+00:09:43,615 --> 00:09:54,776
+Eğer elinizdeki denklem, lineal bir denklem seti oluşturup bilinmeyenleri çözmenize yetmiyorsa, o zaman probleminiz lineal değildir, en kapalı şekliyle.
+
+34
+00:09:54,776 --> 00:09:59,935
+Şimdi linearlık ve non-linearlık bakış açımıza göre iki farklı şey.
+
+35
+00:10:00,000 --> 00:10:19,319
+Yani doğru olarak gördüğümüz her şey lineerdir, geri kalan non-lineerdir diyemeyiz. Parabolün şekli lineer değil veya eğri olarak görünüyor bize ama bir parabol denklemiyle ifade edebildiğimiz problem aslında lineer bir problemdir.
+
+36
+00:10:19,319 --> 00:10:28,000
+Çünkü bir denklem seti oluşturabilirsiniz, lineerce bir yöntemleriyle çözebilirsiniz. En rahat aklınızda kalır.
+
+37
+00:10:28,000 --> 00:10:55,399
+İlk zorunluğun non-lineer olmasının sebebi aslında bir linear denklem seti oluşturup,
+
+38
+00:10:55,471 --> 00:10:59,731
+Bu örneğe çözemememizden kaynaklanıyor matematiksel anlamda.
+
+39
+00:11:00,731 --> 00:11:10,291
+Ve grafik olarak da oluşturduğumuzda çıktıları birbirinden farklı olan cevapları bir doğruyla veya düzlemle ayıramadığımız için.
+
+40
+00:11:10,803 --> 00:11:24,624
+Non-linear'dir diyoruz. İlk zor problemi non-linear olduğu için perseptronla veya tek makrofiz nöronlarıyla çözemediğimiz bir problem olarak karşımıza çıkıyor.
+
+41
+00:11:24,624 --> 00:11:32,624
+Tabii bunu genellersek perseptronlara aslında şunu da söyleyebiliyoruz.
+
+42
+00:11:32,755 --> 00:11:53,816
+Tek katmanlı perseptronla çözebileceğiniz problemler sadece lineer problemlerdir. Non-linear hiçbir problemi çözemez. Dolayısıyla bu da önemli bir kısıt sayılabilir. Bir noktada gözden düşmesinin veya bir duraklamaya girmesinin yapay sinir ağlarının sebeplerinden birisi bu.
+
+43
+00:11:55,936 --> 00:12:13,336
+Bu ent örneği, ent örneği üzerinden öncelikle bakayım. Bahsettiğim linear denklemler neler? Elimizde bir grup beri seti var. Dört tane sonuçta iki girişli bir entten bahsediyorsak. İki input, bir output olmak üzere.
+
+44
+00:12:14,548 --> 00:12:39,947
+Dört tane farklı varyasyon oluşturabiliyoruz. Dört tane verimiz var elimizde. Bu dört tane veriden bizim sonuçta nöroniyet örgümüzün nasıl çalıştığı belli. Neydi bizim her nöronumuz? Gelen inputları alıyordu, bir bağlantı ağırlığıyla çarpıp topluyordu. Sonra da bir threshold uygulayarak bir çıkış belirliyordu.
+
+45
+00:12:40,368 --> 00:13:06,448
+Dolayısıyla bu bir denklem. Bu denkleme ben bütün elimdeki verilerin değerlerini koyarak 4 tane verim varsa 4 tane denklem elde edebilirim. Bunu yapacağız. Girişin 0,0 olduğu durum için bu denklemim v1 çarpı 0 artı v2 çarpı 0 eksi theta küçüktür 0 şekline dönecek.
+
+46
+00:13:08,307 --> 00:13:23,288
+Output'umuz olan sıfırlar. Bu baktığınız dört tane eşitsizlik, dört tane denklem. Eğer ben bu denklemlerden bilinmeyenleri çözebiliyorsam, bilinmeyenler kim? W1 ile W2.
+
+47
+00:13:23,707 --> 00:13:34,548
+Yapay sinir ağında esas amacımız neydi? Sonuçta elimizde örnekler var. Dolayısıyla onlara dair değerler var elimizde, biliyoruz.
+
+48
+00:13:34,932 --> 00:13:39,591
+Bir grup değer var en azından. Ama bağlantı ağırlıklarını bilmiyoruz.
+
+49
+00:13:40,052 --> 00:13:47,512
+Biz bağlantı ağırlıklarını doğru olarak bulabildiğimizde yapay sinir ağının öğrendiğini varsayıyoruz.
+
+50
+00:13:48,052 --> 00:13:54,552
+Dolayısıyla bizim öğrenme dediğimiz şey bu ağırlık değerlerine uygun doğru değerler ayarlamak.
+
+51
+00:13:54,552 --> 00:14:05,352
+Öyle doğru değerler olsun ki bizim elimizdeki örneklerin mümkün olduğunca çoğu için bize doğru output değerini, doğru y değerini oluşturacak.
+
+52
+00:14:05,716 --> 00:14:32,795
+Bir ağırlık değeri bulalım. Dolayısıyla benim burada bilinmeyen olarak sayacağım şey nedir? W1 ile W2'dir. Bu dört tane denklemden W1 ve W2'nin değerini çözebiliyorsam bu bir lineer denklem setidir. Çünkü neden? Elimde iki tane bilinmeyen var, dört tane denklem var. Eğer lineer bir problemden bahsediyorsam iki bilinmeyeni aslında iki denklemle bile çözebilirim.
+
+53
+00:14:33,087 --> 00:14:42,668
+Dört denklemle haydi haydi çözebilmem lazım. Beklentim bu. End problemi lineer bir problem dolayısıyla çözebiliyor olmam lazım.
+
+54
+00:14:42,668 --> 00:14:53,587
+Şimdi bakıyorum. Yazdık dört tane eşitsizlik. Bu dört eşitsizliğin söylediği kriterler benim V1 ve V2 için değer bulmama yetiyor mu diye bakacağım.
+
+55
+00:14:55,107 --> 00:14:59,727
+Söylediği şey Teta'nın sıfırdan büyük seçilmesi gerektiği.
+
+56
+00:15:00,144 --> 00:15:20,043
+V2'nin ve V1'in de teta'dan küçük olması gerektiği. V1 ile V2'nin toplamı da teta'dan büyük olsun demiş. Peki ben teta'yı 2 almıştık geçen hafta örneğimizde. Yine öyle düşünürsem, teta 2 desem uygun mu? Birinci denklemime evet uygun.
+
+57
+00:15:20,532 --> 00:15:36,332
+V2'yi ikiden küçük seçmem gerektiğini söylüyor. Bir seçsem uygun mu? Uygun. V1'i de bir seçsem uygun. Son denklemimi bu seçtiğim değerler sağlıyor mu diye bakıyorum. 1 artı 1 büyük eşit 2 midir? Evet.
+
+58
+00:15:36,895 --> 00:15:59,255
+Dolayısıyla demek ki bu denklem setinin bir çözümü var. Teta 2, V1 ve V2'de 1 olarak seçildiğinde bu denklem setinin bir çözümü var. Hatta birden fazla çözümü de var. Teta'yı 3 seçip V1 ve V2'den birisini 2 seçsem bu denklem seti hala çözülebilir durumda.
+
+59
+00:16:02,868 --> 00:16:17,168
+Bir tane hatta birden fazla çözümüm var. Dolayısıyla en problemi yapay sinir ağının veya perseptronun çözebileceği bir problemdir diyebildim. Nitekim çözdük de.
+
+60
+00:16:18,228 --> 00:16:22,368
+İlk zora geldiğimizde aynı şeyi yapacağım. Sizden istediğim buydu.
+
+61
+00:16:23,412 --> 00:16:37,992
+Şimdi yazdım. İlk zorun kurallarına göre olması gereken dört tane verimi yazdım. Ondan sonra bunları yapay sinir ağının denklemine koydum. Dört tane denklem elde ettim.
+
+62
+00:16:37,992 --> 00:16:44,211
+Şimdi oluşan denklemlere bakıyorum. Değerleri yerine koyduğumda en sağdaki tabloya dönüştü.
+
+63
+00:16:44,659 --> 00:17:02,779
+Birinci denklem diyor ki teta sıfırdan büyük olsun. Tamam, sıkıntı yok olsun. Teta yine 2 olsun mesela. V2 ve V1 tetadan büyük eşit olsun. Bunda da sıkıntı yok, olabilir. Son denklem diyor ki V1 ile V2'nin toplamı tetadan küçük olsun.
+
+64
+00:17:03,251 --> 00:17:28,711
+İki ve üçüncü denklemi sağlarsam, tetanın sıfırdan büyük olduğu durumda, benim V1 ve V2'yi en az teta kadar seçmem gerekiyor. Peki iki tetalık bir toplam tetadan küçük olabilecek mi? Olamayacak. Demek ki dördüncü denklem diğer iki denklemle veya üç denklemle de çelişmiş oluyor ve bu problem çözülemez bir şey oluyor.
+
+65
+00:17:29,299 --> 00:17:42,420
+Bunu çözemediğime göre ben iki bilinmeyeni dört denklemden bulamıyorsam benim problemim lineer bir problem değil ve ilk soru da perseptronla çözemeyeceğim ortaya çıktı.
+
+66
+00:17:43,539 --> 00:17:55,659
+Perseptronla çözemiyorum diye özellikle söylememin sebebi ne? Şu ortadaki ya da sağdaki denklemleri de oluştururken kullandığım eşitlik perseptronun eşitlikleri.
+
+67
+00:17:56,115 --> 00:18:14,675
+Ben burada başka bir şeyler kullansaydım belki çözebilecektim. Dolayısıyla sadece şu anda perseptron olarak sınırlarsak, XOR problemini perseptronla çözemeyiz diye bu matematiksel ispattan sonra kesin olarak söyleyebileceğiz.
+
+68
+00:18:14,675 --> 00:18:22,235
+Demek ki perseptronla non-linear problemleri ve XOR problemini de özelde çözemiyoruz.
+
+69
+00:18:22,996 --> 00:18:24,816
+Peki, elimizde başka ne var?
+
+70
+00:18:24,816 --> 00:18:26,076
+Hocam, affedersiniz.
+
+71
+00:18:26,836 --> 00:18:27,316
+Dinliyorum.
+
+72
+00:18:28,195 --> 00:18:37,496
+Az önceki denkleme gelecek olursak, denklemleri yazarken V1 çarpı birinci giriş artı V2 çarpı ikinci giriş eksi teta diyoruz.
+
+73
+00:18:38,715 --> 00:18:42,596
+Küçüktür y dememiz mi gerekiyordu orada?
+
+74
+00:18:42,596 --> 00:18:43,416
+Yok.
+
+75
+00:18:44,051 --> 00:18:53,211
+Bu arada biraz kafam karıştı. Bazısı küçük, bazısı büyük eşit ya. Şimdi o küçük ve büyük eşit neden diye böyle bir anlayamadığım bir nokta oldu orada.
+
+76
+00:18:53,571 --> 00:19:02,211
+Şöyle söyleyeyim. Aslında orada büyük diye de diyebilirsin de, şurada küçük eşit sıfır dersem...
+
+77
+00:19:03,635 --> 00:19:13,875
+İkincisinde aslında, haklısın orada çok çok önemli değil. Şuradaki şey, aslında ben en sonunda bunları ayıran çizgiyi belirlerken hepsini eşite çevireceğim.
+
+78
+00:19:15,496 --> 00:19:29,695
+Ama şurada eğer küçük eşit dersen bu sefer teta'ya eşit olması gibi bir sınırlama getirmiş olacağım. İkinci denklemlerde değer alıyor ya, V1 ve V2'nin bir ile çarpılma durumu var.
+
+79
+00:19:30,036 --> 00:19:41,596
+Orada da sınırlamış olmak istemiyorum. Yani TETA'dan büyük olmasında da sıkıntı yok, eşit olmasında da sıkıntı yok demek istiyorum. Çok önemli değil.
+
+80
+00:19:42,963 --> 00:19:44,543
+Önemli değil yani burası.
+
+81
+00:19:45,183 --> 00:19:46,264
+Tamam, teşekkür ederim hocam.
+
+82
+00:19:46,284 --> 00:19:51,203
+Ben ayıran çizgi olarak yaparken biraz sonra onun örneğini göstereceğim.
+
+83
+00:19:51,683 --> 00:19:57,183
+Eşit olarak kabul edeceğim. Ayıran doğruları eşit olarak kabul edeceğim.
+
+84
+00:19:57,723 --> 00:20:06,804
+Şurada önemli olan TETA'nın büyük eşit sıfır olsa da TETA'yı sıfır seçsem zaten son denklem beni sıkıntıya sokacağı için.
+
+85
+00:20:07,263 --> 00:20:21,003
+Çünkü burada ne olacak o zaman? V1 artı V2 küçük eşit teta diyeceğim. Ama zaten V1'in kendisi tetadan büyük olmak durumunda veya eşit olmak durumunda son denklemi sağlayamayacağım.
+
+86
+00:20:23,003 --> 00:20:33,783
+Söylediğim çok haklı bir nokta ama önemi yok aslında bir açıdan bu problemde. Normalde de istediğiniz gibi koyabilirsiniz o büyük eşitleri.
+
+87
+00:20:35,604 --> 00:21:01,263
+Şimdi, peki başka neler yapabiliyoruz? Perseptronla yapabileceklerimiz aşağı yukarı bu kadarla kısıtlı kaldığına göre. Sonrasında insanlar tabii başka bir şeyler yapmak istemişler. En doğal aklımıza gelebilecek şey de, madem tek katmanla çözemiyoruz, o zaman iki katmanla çözebilir miyiz? diye çok katmanlı.
+
+88
+00:21:01,811 --> 00:21:21,891
+Yapay sinir ağları mimarisi oluşturuluyor. Şimdi şurada bakalım. Çok katmanlı olunca ne olacak? Aslında bir de tekrar şuraya döneyim. Bu sefer ne olacak? Bu denklemi bir kere daha aynı denklemi uygulayarak biraz daha üst dereceye yani non-linear bir denkleme yaklaştırmış olacağım.
+
+89
+00:21:22,256 --> 00:21:42,476
+Yine tekrar şekle bakmadan sadece matematiksel olarak baktığımızda da varabileceğiniz bir sonuç. Buradaki denklemler işimi çözmüyorsa, ben bu denklemi bir daha aynı denkleme koyduğumu düşünürsem, denklemim karmaşıklaşacak ve daha karışık bir şeyi ifade edebilecek hale gelecek.
+
+90
+00:21:46,031 --> 00:21:54,571
+Çok katmanlı olarak kullanırsak daha kompleks ve non-miner problemleri çözebilir miyiz diye düşünmeye başlıyoruz.
+
+91
+00:21:55,731 --> 00:21:58,771
+Şimdi burada söylemek istediğim iki tane şey var.
+
+92
+00:21:58,771 --> 00:22:07,631
+Tek katmanlı A veya Perseptron dediğimiz şeyde katman sayısı olarak saydığımız şey sadece...
+
+93
+00:22:07,632 --> 00:22:27,752
+Çıkış katmanı, yani girişi saymıyoruz veya girişi sayıyorsanız, bununla ilgili birkaç farklı notasyon görebilirsiniz. O yüzden vurgulamak istiyorum. Eğer girişi bir katman sayıyorsanız, çıkışı saymamanız lazım. Yani perseptron dediğim şeyde bir giriş, bir çıkış var ama tek katman diyorum.
+
+94
+00:22:29,268 --> 00:22:50,588
+Şimdi multi-layer dediğimde de girişten sonra en azından bir ekstra katman daha var. Sonra da çıkış katmanı var. Yani buradaki şekildekini ben 3 katmanlı değil de 2 katmanlı bir ağ olarak nitelendirebilirim. 3 katmanlı bir ağ yapmak istersem de şu araya bir katman daha koymam lazım.
+
+95
+00:22:51,155 --> 00:23:01,015
+Sayısal olarak söyleyecek olursanız eğer böyle demeniz lazım. İki katmanlı bir A bu. Veya genel söylerseniz çok katmanlı.
+
+96
+00:23:01,375 --> 00:23:21,615
+Çok katmanlı ağlar da var. Aynı zamanda bir de nitelendirirken, hit forward diye nitelendiriyoruz. İleri beslemeli diyoruz. İleri beslemeliyle kastettiğimiz şey, girişlerin ara katmanlara veya çıkışa tek yönde gittiğini nitelendiriyor mimari olarak.
+
+97
+00:23:23,055 --> 00:23:29,375
+Hesaplama olarak da şu demek, hep ileriye doğru hesaplamalar yapıyoruz. Girişi alıyoruz, bir işleme yapıyoruz.
+
+98
+00:23:29,375 --> 00:23:43,195
+Sonra bir sonraki katmana aktarıyoruz şeklinde giden bir yapı. Ana bir diğer mimarı olarak elimizde recurrent ağlar var. Geri beslemeli ağlar.
+
+99
+00:23:54,612 --> 00:24:07,732
+Eski recurrent ağlara denk gelmemişsinizdir. Çok fazla kullanılmıyor şimdi ama yine de yapay sinir ağlarında da aslında LSTM diye tanımladığımız long term, short term memory kavramı var.
+
+100
+00:24:08,372 --> 00:24:13,832
+Recurrent ağlarının aslında o isimden de anlayacağınız gibi bir nevi hafıza özelliği var.
+
+101
+00:24:14,208 --> 00:24:39,408
+Nasıl bir hafıza? Elimde dört tane yine kapılar üzerinden düşünelim. Örnek varsa, birinci örneğimi A'a verip hesaplamalarımı ileri doğru yaptığımda ara katmanda bir nöronda kalan değeri saklıyorum. İkinci örneğim için hesaplama yaparken o birinci örnekten kalan değeri de bunun üzerine ekliyorum.
+
+102
+00:24:39,859 --> 00:24:54,559
+Bu kullandığım laflar biraz genel kalıyor. Ekliyorumun kastı her zaman topluyorum değil. Bu sakladığımız değerle yaptığımız farklı farklı işlemler var. Onları biraz daha ileride göreceğiz ama.
+
+103
+00:24:54,963 --> 00:25:09,803
+Kabaca ekliyorum diye düşünün. Yani ben ikinci örneğimi işlerken birinci örneğe dair bir bilgiyi de, aslında bu değerlerin hepsini bir bilgi olarak düşünebilirsiniz, bir bilgiyi daha yansıtıyorum ikinci örneğe.
+
+104
+00:25:10,283 --> 00:25:15,283
+Bak diyorum, seninle ilgili şu hesaplamayı yapıyorum ama bak senden önceki örnek de buydu.
+
+105
+00:25:15,695 --> 00:25:42,975
+Senden önce elimde olan bilgi de buydu. Hafıza veya ismini aldığı Long Term Short Term Memory kavramı buradan geliyor. Geçmişe dair bir bilgi saklamış oluyorsunuz ve yeni gelen örnekleri işlerken o bilgiyi kullanıyorsunuz. Böyle bir şeye ihtiyacınız varsa da tercih etmeniz gereken mimari rekürıntılar. Böyle bir şeyi tercih etmemi gerektirecek problemim ne olabilir?
+
+106
+00:25:43,488 --> 00:25:56,548
+Bir, zamana bağlı değişen şeyler mesela. Nüfus diyelim en basit örnek olarak. Nüfusun 10 yılda bir %10 arttığını biliyorum.
+
+107
+00:25:56,980 --> 00:26:18,939
+10 yıl sonraki nüfus ne olacak diye merak ettiğim zaman benim önce 10 yıl önceki nüfusu bilmem lazım değil mi? %10'la hesaplayacağım tamam ama başladığım yer neresi? Bunu bilmeden bu %10'a ekleyemeyeceğime göre geçmişe dair bir şey bilmem gerekiyor. En azından bir adım öncesini bilmem gerekiyor.
+
+108
+00:26:19,316 --> 00:26:36,155
+Nüfus her yıl %10 artıyor diyebilmek için daha önceki bir sürü 10 yılı bilmem gerekiyor. Çıkarmak istediğiniz sonuca göre yani ağın çıktısında beklediğiniz, tahmin etmeye çalıştığınız şey neyse.
+
+109
+00:26:36,660 --> 00:26:53,380
+Ona bağlı olarak hafızanızda tutmanız veya geçmişe dair hatırlamak isteyeceğiniz şeyin miktarı ve içeriği de değişecektir. Ona göre de bu rekürent ağlarda da farklı farklı mimariler var. Onlardan uygun olan bir şeyi kullanmanız gerekecektir.
+
+110
+00:26:53,711 --> 00:27:11,652
+Sadece zamana bağlı şeyler mi? Yani Time Series dediğimiz şeyler. Sadece zamana bağlı veriler için mi kullanıyoruz? Hayır. Başka şeylere bağlı şeylere de kullanabiliriz. Mesela ard arda gelen görüntüler, frame'ler. Bunları değerlendireceğim.
+
+111
+00:27:11,652 --> 00:27:21,711
+Mesela ileride olacak bir olayı, bir araba kazası veya bir meydana gelme ihtimali olan bir olayı tahmin etmeye çalışıyoruz.
+
+112
+00:27:21,711 --> 00:27:26,792
+Öncesinde ne olmuş diye bakmam gereken her türlü durumda.
+
+113
+00:27:27,220 --> 00:27:44,579
+Nasıl bir çıkarım yapmak istiyorsam, bunun geçmişe bir bağlılığı varsa, rekürint ağlara ihtiyacım oluyor. Daha gelişmiş, derin öğrenmede kullandığımız, elestiyan dediğimiz yapılar hatırlayacağımız şeyin miktarını da ayarlamamızı sağlıyor.
+
+114
+00:27:44,579 --> 00:27:52,940
+Yani ne kadar geçmişi hatırlayayım, ne kadar zaman hatırlayayım. Yani tamam ben buraya bu bağlantıyı koydum diye.
+
+115
+00:27:53,364 --> 00:28:19,044
+Önümde gelecek yüz tane, bin tane örnek varsa bütün bin örneğe bunları yansıtmam gerekiyor mu, gerekmiyor mu? Ne kadar süreyle hatırlayabileceğim ben bunları veya hatırlamam gerekiyor? Bunu da ayarlayabileceğiniz, biraz kapı gibi bir mekanizma aslında diye düşünebiliriz. Mimariler de var. İleride birazcık daha bahsedeceğiz.
+
+116
+00:28:20,019 --> 00:28:36,579
+Peki, öğrenme dedik. Şimdiye kadar veya perseptrona kadar çok da belli bir öğrenme kuralı yok. Öğrenme dediğimiz şey ağırlıkları nasıl ayarlayacağımızı söyleyecek bize algoritmasında bir anlamda.
+
+117
+00:28:36,579 --> 00:28:46,539
+İlk öğrenme kuralı 1949'da aslında bir psikolojici uzmanı olan Donald Hap'ten geliyor.
+
+118
+00:28:47,951 --> 00:29:01,672
+Alanıyla ilgili olarak insanla ilgili gözlemlediği bir şeyi aslında yapay sinir ağlarına uygulabileceğini düşünerek hep öğrenmesi, hep öğrenmesi dediğimiz algoritmayı öne sürüyor.
+
+119
+00:29:01,951 --> 00:29:05,011
+Algoritma dediğime bakmayın tabii aslında çok temel bir kural.
+
+120
+00:29:05,791 --> 00:29:10,132
+Söylediği şey şu, eğer iki nöron birbirine bağlıysa,
+
+121
+00:29:10,804 --> 00:29:28,424
+Birisi aktive olduğunda, diğeri de aktive oluyorsa, yani birinin tetiklenmesi, pozitif sonuç vermesi, öbürünün de pozitif sonuç vermesine sebep oluyorsa, bunların arasındaki bağlantının ağırlığını güçlendirmeliyiz, artırmalıyız diyor.
+
+122
+00:29:29,644 --> 00:29:37,424
+Söylediği şey temelde doğru ve bir öğrenme kuralı olmak için de gayet uygun.
+
+123
+00:29:37,791 --> 00:29:44,392
+Tamam ben baktım ki bir nöronun tetiklenince öbürü tetikleniyor. Hemen aralarındaki bağlantıyı güçlendireyim.
+
+124
+00:29:44,871 --> 00:29:54,111
+Öğrenme dediğimiz sonuçta bir süreç, her gösterdiğimiz örnekle birlikte ağırlıkları yeniden ayarlamamızı gerektiren bir süreç.
+
+125
+00:29:54,731 --> 00:30:00,711
+Bu ne demektir? Her tetiklenme olduğunda ağırlıkları bir daha artıracağım, bir daha artıracağım.
+
+126
+00:30:04,211 --> 00:30:20,271
+Eğer tetiklenme olmuyorsa da azaltarak, yani tersi de doğru, birbirine bağlı iki nörondan birisi tetiklendiğinde öbürü tetiklenmiyorsa, o zaman da onların arasındaki bağın veya bağın ağırlığını zayıflatmamız lazım diyor.
+
+127
+00:30:21,731 --> 00:30:24,611
+Kural temelinde gayet mantıklı.
+
+128
+00:30:25,140 --> 00:30:43,680
+Fakat şöyle bir yetersizliği var veya sıkıntısı var. Bu sürekli tetiklenme dediğimiz şey, bir iki tetiklenmeden sonra eğer bu ağırlık değerleri çok artarsa artık o bağı zayıflatma şansınız olmaz.
+
+129
+00:30:43,680 --> 00:30:51,680
+Yani artık bir yerden sonra öğrenmeyi tersine çeviremezsiniz. Kazayla iki tane örnek, bağlantı ağırlığını...
+
+130
+00:30:51,791 --> 00:31:16,672
+Yüşlendirecek şekilde peş peşe gelmişse ve ağırlıklar yüksek miktara ulaşmışsa ondan sonra bunu zayıflatmanız mümkün olmayabilir. Diğer örnekler bunun tersini söylüyor bile olsa ağırlıkları geri düşürmekte zorlanırsanız bu sefer öğrenme maalesef oluşmayacak demektir. Böyle bir zayıflığı var ve sınırsız bir şekilde artabilir.
+
+131
+00:31:19,092 --> 00:31:26,112
+Bazı durumlarda kullandığımız bir algoritma ve bilmemiz gerekiyor.
+
+132
+00:31:26,852 --> 00:31:33,672
+HEP algoritması nasıl diyor bize, ne söylüyor? Başlangıç ağırlıklarını da ayarlayın.
+
+133
+00:31:33,672 --> 00:31:37,392
+Klasik bütün öğrenme algoritmalarında bunu yapmamız gerekiyor.
+
+134
+00:31:37,932 --> 00:31:41,672
+Ben sonuçta W değerleri ağırlıklar için bir...
+
+135
+00:31:41,743 --> 00:32:06,604
+Uygun değer bir parametre bulmaya çalışıyorum. Onlar için bir başlangıç değeri olması lazım. Elinizdeki problem için bunu bilmediğinizi varsayarak tabii ki bilmiyorsunuz ki yapay sinir ağıyla çözmeye çalışıyorsunuz. Bu ağırlık değerlerinin ne olacağını bilmediğim durumda en mantıklısı başlangıçta bu ağırlıkların hepsini sıfıra ayarlamak veya rastgele ayarı ayarlamak.
+
+136
+00:32:06,864 --> 00:32:33,084
+Bunun da söylediği bu. Bütün algoritmalarda da yapacağımız şey bu. Bu adım genel. Ağırlıkları sıfırladık. Ondan sonra her elimizdeki her eğitim vektörü için, her veri için önce inputların aktivasyonlarını ayarla diyor. Ondan sonra outputları hesapla diyor. Ondan sonra da hesapladığın output'a göre
+
+137
+00:32:33,556 --> 00:32:39,175
+Ağırlık değerlerini güncelle diyor. Ne kadar güncelle?
+
+138
+00:32:39,731 --> 00:32:44,272
+Y çarpı X kadar yani input çarpı output kadar güncellediyor.
+
+139
+00:32:44,272 --> 00:32:51,692
+Şimdi demin sözlü olarak söylediğim hep kuralının mantığına bakarsak onun matematikselleştirilmiş hali bu.
+
+140
+00:32:52,332 --> 00:32:59,772
+Şunu demek istiyor. Eğer Y pozitifse, X de pozitifse bu çarpan pozitif bir değer verecek değil mi?
+
+141
+00:33:01,192 --> 00:33:06,332
+Birisi pozitif, diğeri de pozitifken burada demek ki ben ağırlığı artırmış olacağım.
+
+142
+00:33:06,771 --> 00:33:24,932
+Birisi negatif, diğeri pozitifse burası eksi bir değer olacak. Ağırlığı azaltmış olacağım. Her ikisi de negatifse, yani birbirleriyle aynı şekilde aktive oluyor veya olmuyorsa, o zaman ağırlığı yine artırmış olacağım. Aralarındaki bağlantıyı güçlendireceğim.
+
+143
+00:33:24,932 --> 00:33:29,552
+Bu şu, biraz fiziksel örnek.
+
+144
+00:33:29,872 --> 00:33:52,451
+Güzel örnek uyduramıyorum ama. Kırmızıyı gördüğümde bana elmayı hatırlatıyorsa, yani giriş kırmızı, çıkış elma. Ben iki kere kırmızı gördüğümde elmayı hatırladıysam, elma ile kırmızı arasında benim bağlantı kurmam lazım, o bağlantıyı güçlendirmem lazım demiş oluyorum.
+
+145
+00:33:57,652 --> 00:34:05,912
+Bir noktada aslında elmayla alakası olmayan bambaşka bir sahnede ben her kırmızı gördüğümde elma hatırlamaya başlarım.
+
+146
+00:34:07,092 --> 00:34:10,492
+Öğrenme kuralının, hep öğrenme kuralının sıkıntısı burada.
+
+147
+00:34:11,592 --> 00:34:14,271
+Her gördüğüm kırmızıya elma dersem olmaz.
+
+148
+00:34:15,172 --> 00:34:21,420
+Dolayısıyla bu bağlantıları sınırsız güçlendirmek, bu...
+
+149
+00:34:21,907 --> 00:34:47,747
+Öğrenme kuralının sıkıntısı. Aynı şekilde sınırsız zayıflatmak da öyle. Yani ben kırmızı bana iki kere elmayı hatırlatmadı diye hiç hatırlatmayacak demek değil. Onun da engellemiş oluyorum. Uygun örnekte uygun tahmini yapabilmem için bu bağlantı ağırlıklarının biraz daha ayarlanabilir olması lazım. Bu kadar kontrolsüz olmaması lazım.
+
+150
+00:34:48,307 --> 00:35:13,188
+HEP kuralındaki sıkıntı burada. HEP öğrenme kuralının bir özelliği daha var. Tek iterasyon çalışıyor. Bundan sonra göreceğimiz çoğu öğrenme kuralı iteratif olarak çalışacak. Bir tek HEP öyle değil. Bütün örnekleri sadece bir kere gösteriyorsunuz. Ondan sonra bir daha göstermiyorsunuz.
+
+151
+00:35:15,123 --> 00:35:35,183
+Kastettiğim şey bir tane örnek göstermek değil. Elinizde dört örnek varsa dört örneğe de bu algoritmayı uyguluyorsunuz ve algoritmayı bitiriyorsunuz. Diğer öğrenme algoritmalarında oluşacak durum ise aynı örneği tekrar tekrar gönderiyorsunuz. Ne zamana kadar?
+
+152
+00:35:37,523 --> 00:35:48,423
+Öğrenme algoritmalarında olması gereken ikinci kriteri söyleyeyim. Bir durma koşulu belirlememiz lazım. Bir durma koşulu sağlanana kadar. Bu durma koşulu ne olabilir?
+
+153
+00:35:49,043 --> 00:36:06,023
+En basitinden sizin ulaşmayı hedeflediğiniz bir doğruluk oranı vardır. Yani 10 örneğimin 9'unu doğru tahmin ediyorsa ben artık algoritmayı durdurabilirim diyebilirsiniz. Sizin için o zaman durma koşulu %90 başarıdır.
+
+154
+00:36:08,023 --> 00:36:14,783
+Yok ben %90 başarı önemli değil benim için. Bu algoritmanın çok uzun çalışmasını istemiyorum.
+
+155
+00:36:15,188 --> 00:36:42,548
+İn iterasyonda dursun diyorsanız, iterasyon sayısı bir durma kuralı olabilir. 10 iterasyondan sonra dur diyebilirsiniz. Hep kuralında, hep algoritmasında bu durma koşulunun olmama sebebi, dediğim gibi varsayılan olarak sadece bir iterasyon çalışır, ondan sonra zaten durur. Diğer algoritmalarda ama bir de durma kuralı tanımlamamız gerekecek.
+
+156
+00:36:43,603 --> 00:36:48,583
+Peki, perseptron öğrenme kuralından da bahsedeceğiz.
+
+157
+00:36:48,743 --> 00:36:53,623
+Veya perseptronların hangi dertlerimize çözüm olabileceğini öğrendik ama,
+
+158
+00:36:54,923 --> 00:37:00,683
+perseptronun lineer problemlerin hepsine çözüm olabileceğini söyleyebilir miyiz?
+
+159
+00:37:00,683 --> 00:37:03,283
+Evet, aslında söyleyebiliyoruz.
+
+160
+00:37:03,423 --> 00:37:10,683
+Eğer probleminiz lineer ayrılabilir bir problemse, perseptron öğrenme kuralını kullanarak,
+
+161
+00:37:11,376 --> 00:37:28,516
+Mutlaka bu probleme çözüm bulabilirsiniz. Sınırımız ne? Sonlu sayıda iterasyonda çözer ama bu sonlu sayı çok büyük olabilir. Yani binlerce iterasyon yapmanız gerekebilir sonuca ulaşabilmek için.
+
+162
+00:37:28,980 --> 00:37:55,139
+Ama çözeceği garanti matematiksel olarak da kanıtlanmış bir şey bu. Zaten az önceki end probleminde yaptığımız gibi elinizde bir lineer sistem varsa, iki bilinmeyen ve en az iki tane denkleminiz varsa, bu matematiksel olarak çözebilir bir problemse, bu demektir ki Perseptron'da bunu çözebilecek kapasitededir.
+
+163
+00:37:55,507 --> 00:38:20,507
+İterasyon sayısının fazla olması dışında bir sıkıntısı yok. Başka ne sıkıntısı olabilir? Elinizdeki problemi siz iyi tanımlamamışsınızdır. Evet, lineer bir problem gibi tanımlamışsınızdır ama dikkate almanız gereken başka parametreler vardır. Almamışsınızdır. Dolayısıyla istediğiniz kadar başarı...
+
+164
+00:38:21,652 --> 00:38:34,512
+Elde edemeyebilirsiniz. Ama bu sizin hatanız olur. Perseptron verdiğiniz haliyle problem lineerse o problemi her halükarda çözer. Onu kesin olarak söyleyebiliyoruz.
+
+165
+00:38:36,132 --> 00:38:41,812
+Peki, Perseptron ikili sınıflandırıcılar için öğretmeni bir öğrenme algoritmasıdır.
+
+166
+00:38:41,812 --> 00:38:43,812
+Algoritmayı şimdi söyleyeceğim.
+
+167
+00:38:46,164 --> 00:39:04,024
+Genellikle sınıflama için kullandığımız, binary problemler için kullandığımız bir öğrenme algoritması. Perseptron'un mimarisi söylemiş olduk aslında ama şu sol alttaki şekle de bakabilirsiniz, yukarıya da bakabilirsiniz.
+
+168
+00:39:13,715 --> 00:39:31,735
+Çarpılıp, toplanması sonucunda bir de aktivasyon fonksiyonu uygulayarak çıkış evde etmenizi söyleyen bir mimari var. Öğrenme algoritması bize neyi söyleyecek? İşte bu V1 ile V2'yi nasıl değiştireceğimi söyleyecek.
+
+169
+00:39:32,115 --> 00:39:46,856
+İmput sayınızda herhangi bir kısıtlama yok. Çıktı sayınızda da aslında hiçbir kısıtlama yok. Şu anda tek çıktı. Hep size öyle şekil gösterdim ama kazayla öyle olduğunu düşünün. Birden fazla çıkışınız da olabilir.
+
+170
+00:39:48,316 --> 00:39:59,115
+Bir de BIAS'dan bahsetmiştik geçen hafta. BIAS ağırlığını kullanabiliriz. Her zaman kullanmayı tercih edin. O size bir esneklik sağlayacak.
+
+171
+00:40:00,000 --> 00:40:11,920
+Tek bir parametre. Sağ tarafta da hafif animatif bir şeyini görüyorsunuz, perseptronun. Inputlar geliyor, bağlantı ağırlıkları çarpılarak toplama giriyor.
+
+172
+00:40:11,920 --> 00:40:19,599
+Biası da ekliyorsunuz. Biası da normal bir ekstra inputmuş gibi bir B bağlantı ağırlığıyla.
+
+173
+00:40:20,083 --> 00:40:37,703
+Değeri 1 olan bir inputmuş gibi varsayacağız. Onu da toplama ekliyorsunuz. Ondan sonra bir threshold veya aktivasyon fonksiyonu uyguluyorsunuz. Şimdi Perseptron'un ilk tanımlanmasında aktivasyon fonksiyonumuz yine bir threshold fonksiyonu.
+
+174
+00:40:37,703 --> 00:40:47,703
+Ama daha sonraki kullanımlarda ve şu anda da bu öyle olmak zorunda değil. İstediğiniz başka bir fonksiyonda.
+
+175
+00:40:47,764 --> 00:40:49,403
+Kullanabiliyorsunuz burada.
+
+176
+00:40:50,324 --> 00:41:01,544
+Döneyim. Onu neden söyledim? Perseptron öğrenme kuralında yine hala aktivasyon fonksiyonumuzun bir threshold olduğunu düşünerek tasarlanmış bir kural.
+
+177
+00:41:02,184 --> 00:41:09,384
+Perseptron öğrenme kuralının orijinali o şekilde. Ama bu üniversal bir kısıt değil bizim için.
+
+178
+00:41:09,940 --> 00:41:32,000
+Algoritma hep kuralından farklı olarak iteratif. Dolayısıyla iteratif olması aslında bir güç getiriyor. Hep kuralıyla her örneği bir kere gösterip bağlantı ağırlıklarını bir de çarpan şeklinde artırdığımızda bir iterasyonun sonunda artık geri dönememe durumumuz çok kısıtlayıcıydı.
+
+179
+00:41:33,519 --> 00:41:46,259
+Yeterince çok kere bağlantı ağırlığını artırıp azaltma gibi şansımız olduğu için, iteratif olduğu için daha güçlü bir öğrenme kuralı olduğunu söyleyebiliriz.
+
+180
+00:41:48,159 --> 00:41:54,059
+Aktivasyon fonksiyonu dediğim gibi orijinalde threshold olarak kabul edilmiş.
+
+181
+00:41:54,799 --> 00:41:59,799
+Bir de bipolar gibi tanımlanmış aslında perseptron öğrenme kuralı.
+
+182
+00:42:00,179 --> 00:42:20,899
+Eğer nöronun çıkışında hesaplayacağımız değer giriş değeriyle aynı değilse öğrenmeyi devam ettiriyoruz. Onu biraz sonra algoritma üzerinden göstereyim. Aksi halde öğrenme yapmıyoruz.
+
+183
+00:42:21,376 --> 00:42:36,715
+Kural bize ne diyor? Nörona giren değer bir threshold'dan büyük mü, küçük mü? Ona bak diyor. Threshold'dan büyükse 1. Threshold'un negatif değeriyle pozitif değeri arasındaki sınıra giriyorsa 0.
+
+184
+00:42:36,715 --> 00:42:44,215
+Ve threshold'un negatif değerinden küçükse ya da threshold'dan küçükse eksi 1 olarak.
+
+185
+00:42:44,724 --> 00:42:52,864
+Sonuç verecek şekilde bir binary step fonksiyonunu, aktivasyon fonksiyonu olarak kullan diyor.
+
+186
+00:42:54,063 --> 00:43:03,244
+Algoritma nasıl yine klasik adımımızla başlıyor. Ağırlıkları ayarlıyoruz bir başlangıç değerine. O da genellikle sıfır.
+
+187
+00:43:04,324 --> 00:43:08,023
+Bias kullandığımızı düşündüğümüz için Bias'ı da aynı şekilde.
+
+188
+00:43:08,532 --> 00:43:18,392
+Biyaz bağlantısının ağırlığını da sıfıra ayarlıyoruz. Burada ekstra bir parametremiz daha var. Öğrenme kat sayısı dediğimiz.
+
+189
+00:43:18,831 --> 00:43:38,192
+Burada mü ile göstermişim. Bir katsayı daha kullanıyoruz. Hep öğrenme kuralından farklı olarak eklediğimiz bu katsayı var burada. Öğrenme katsayısı sıfırla bir arasında bir değer olarak seçiliyor. Yine biraz konuları aşina olanlar biliyordur. Aşina olmayanlar için.
+
+190
+00:43:38,708 --> 00:44:05,968
+En azından söylemiş olayım. Öğrenme kat sayısı neye yarıyor? Aslında öğrenmenin biraz daha yavaş mı, biraz daha hızlı mı olmasını istediğimize göre bu kat sayıyı ayarlıyoruz. Örnek üzerinde birazdan göstereceğim. Eğer öğrenme kat sayısını bir seçerseniz, öğrenme kuralı her neyse algoritmanın onu olduğu gibi uygulamış olacaksınız.
+
+191
+00:44:06,416 --> 00:44:15,116
+Ama daha küçük seçerseniz ağırlıklarda yapacağınız değişiklikleri de o aranda küçültmüş olacaksınız.
+
+192
+00:44:16,116 --> 00:44:27,916
+İlk değerlerimizi ayarladıktan sonra eğitim verilerimizden örnekleri göstereceğiz ve öğrenme kuralımızı uygulayacağız.
+
+193
+00:44:29,588 --> 00:44:57,048
+Şimdi çıktığı nasıl hesaplıyorduk? İşte şurası artı olmuş ve çarpı olacak. Bütün inputları ağırlıklarla çarpıyoruz, topluyoruz. Bias'ı da ekliyoruz. Bias'ı bu toplamın içinde bırakmamamın sebebi, Bias'ın zaten nöron değeri birdi ya, onu sadece B olarak alsak yeterli. İçeriye de katabilirdik. Ama böyle olunca daha iyi görünüyor, ayrı görünüyor.
+
+194
+00:44:57,619 --> 00:45:23,619
+Böyle hesapladığımız input değerine aktivasyon fonksiyonumuzu uygulayacağız. Bir çıktı hesaplayacağız. Sonra esas öğrenme nasıl oluyor? Bu çıktığı hesapladıktan sonra ağırlıkları güncellerken, deminki hep kuralına çok benziyor. Burada yalnız T ile göstermişim. Bizim hesapladığımız değer Y olsun.
+
+195
+00:45:24,083 --> 00:45:45,883
+T'de bizim hedeflediğimiz değer. Yani elimizdeki örnekler bize çıkışta ne olması gerektiğini söylüyor ya. Target değerimiz T'nin açılımı da o. Hedeflediğimiz target değeriyle bir fark var mı yok mu? Yani ben end kapısı için 0-0 verdiğimde 0 çıkmasını bekliyorum. Target değerim 0.
+
+196
+00:45:46,643 --> 00:45:55,863
+0-0 verdiğimde ne çıkıyor diye hesaplıyorum. 0'ı bulamadıysam fark oluşmuş. O zaman ağırlık güncellemem gerekiyor diyeceğim.
+
+197
+00:45:56,523 --> 00:46:09,443
+Güncelleme kuralımız da bu şekilde. Bir yandan farkı buradaki öğrenme kat sayısı ve kullandığımız değer bizim hesapladığımız y değeri değil de olması gereken t değeri.
+
+198
+00:46:10,068 --> 00:46:25,948
+Algoritma bize şunu söylüyor, eğer diyor hedeflediğin değeri tutturamadıysan, şuradaki eşit değilin anlamı o, hedeflediğin değeri tutturamadıysan ağırlıklarını ayarla, eğer tutturduysan hiçbir şey yapma.
+
+199
+00:46:25,948 --> 00:46:32,948
+Bu şekilde bütün örnekler için algoritmayı uyguluyoruz.
+
+200
+00:46:33,108 --> 00:46:37,928
+Ve her adımın sonunda da durma koşulu gerçekleşti mi diye bakıyoruz.
+
+201
+00:46:38,968 --> 00:46:43,668
+Durma koşulumuz perseptron için ve normalde de mantıklı olan,
+
+202
+00:46:44,548 --> 00:46:49,508
+eğer bir tur boyunca hiçbir örnek için ağırlıklar değişmemişse,
+
+203
+00:46:49,508 --> 00:46:57,508
+yani Ant için elimizde dört tane veri vardı ya, dört veri içinde ben hedefi tutturabildiysem,
+
+204
+00:46:57,844 --> 00:47:14,463
+Ağırlıklar olması gereken yere gelmiş demektir. Artık algoritmayı durdurabilirim. Dört örneğin ikisi için hedefi tutturduysam bu yeterli değildir. O zaman bir iterasyon daha gitmem lazım vs. gibi.
+
+205
+00:47:25,264 --> 00:47:38,003
+Ağırlık ayarlaması yaptığımız için Perseptron öğrenme kuralına hata tabanlı veya hata oluştuğunda öğrenen bir algoritma diyebiliyoruz.
+
+206
+00:47:38,516 --> 00:48:01,235
+Durma koşulu için hiçbir eğitim seti için hiçbir hata oluşmayana kadar dur diyebiliriz veya belirlenen bir sayıda çalışmasını isteyebiliriz. Şimdi burada bir kavram daha söyleyeceğim. İpok kavramı. İterasyon demedim dikkat ettiyseniz. Belirli bir ipok kadar devam et diyoruz.
+
+207
+00:48:04,351 --> 00:48:30,411
+Bütün örneklerin bir kere gösterilmesi. Yani elimde dört tane örnek varsa o dört örnekle algoritmayı bir çalıştırmam bir epok. İterasyon olarak konuşacaksam, iterasyon sayısı örnek sayımla değişir. Örnek sayım da probleme göre her zaman değişen bir şey olduğu için onu kullanmamız çok sağlıklı değil.
+
+208
+00:48:30,815 --> 00:48:46,415
+Elinizde bugün 10 tane veri vardır. 10 iterasyon çalışır algoritmanız. Eğer öyle yazarsanız kodunuzu. Yarın 100 örnekle çalıştırmak istediğinizde 100 iterasyon çalışmış olur. Siz onu erken durdurmuş olursunuz bütün örnekleri gösteremeden.
+
+209
+00:48:49,440 --> 00:48:55,880
+İfade etmek daha doğru. Her örneği kaç kere göstereceğinizi söylüyor aslında EPOC sayısı.
+
+210
+00:48:56,500 --> 00:49:04,779
+EPO'u bir seçtiğimde elimde dört örnek varsa dört örneği birer kere gösterip algoritmayı sonlandıracağım demektir.
+
+211
+00:49:05,819 --> 00:49:10,699
+EPO'u burada konuşmuş olalım. Bir tane örnek bakalım.
+
+212
+00:49:11,380 --> 00:49:16,880
+Şimdi örneğimizde de aynı zamanda şöyle tasarlanmış.
+
+213
+00:49:17,280 --> 00:49:36,040
+İmputlarımız binary olsun, bipolar kavramını da konuşmak üzere. Çıkışlarımız bipolar olsun demişiz. Bu ne demek? Yani inputlarımı 0-1 olarak vereceğim. Çıkışta da sonuç olumluysa 1, olumsuzsa eksi 1.
+
+214
+00:49:36,500 --> 00:49:48,039
+Veya sonucun ne olacağını bilmediğimiz durumlarda da sıfır olarak vereceğim demektir. Örneğimiz end kapısı olduğu için sonucun ne olduğunu bilmemek gibi bir durum yok.
+
+215
+00:49:49,860 --> 00:49:59,019
+İmputlarım sıfır sıfırken sonuç sıfır olacak vs. Şimdi ilk örneğimiz inputun bir bir olduğu durum olsun.
+
+216
+00:50:00,000 --> 00:50:10,860
+Bir de Bias'ımız vardı. Şu üçüncü bir onun için. Bias'ı da ekledik. Perceptron algoritması ile ağırlık ayarlayacağız.
+
+217
+00:50:11,248 --> 00:50:20,708
+Ağırlıkta ne kadar değişim olacağını hesaplamam gerekiyor. Yeni ağırlık değerlerini de ona göre güncellemem gerekiyor.
+
+218
+00:50:20,708 --> 00:50:31,868
+Bu örnek için inputların 1-1'si, şuradan hesaplamaları yapalım. İlk ağırlıkları 0 olarak set etmiştim. Yapacağım hesaplamalar nasıl olacak?
+
+219
+00:50:36,052 --> 00:51:03,472
+Artı biyaz içinde yapacağım aynı işlemi. Bunu yaptığım zaman, şu arada parantezden sonra bir tane eşit yine eksik kalmış arkadaşlar. Sayıları yerine koyuyorum. X1 yerine 1 koydum, X2 yerine 1 koydum. Biyaz yerine de 1 koydum. Sıfırlar nereden geliyor? Başlangıçta V1, V2 ve B'yi sıfır aldığım için onların yerine de sıfır koydum.
+
+220
+00:51:03,987 --> 00:51:26,447
+Ve hesapladığım şey ne oldu benim? Net input veya burada net diye söylemişim. Nörona giren değer oldu. Nörona sıfır değeri girdi. Buna şimdi tersektronun threshold fonksiyonunu uygulayacağım. Nörondan çıkacak output değerini hesaplayacağım.
+
+221
+00:51:26,996 --> 00:51:50,175
+0 girdiği zaman fonksiyonu hatırlarsanız threshold'dan büyük mü diye bakıyordum. Threshold'um kaçmış? Yukarıda problemin tanımında var. Threshold'um 0,2'ymiş. 0,2'den büyük olmadığına göre benim nörondan çıkan değerim 0 olacak. 0 girdi. Threshold'u geçemediği için 0 da çıktı.
+
+222
+00:51:50,900 --> 00:52:11,599
+Şimdi algoritmam ne söylüyordu bana? Target değeri tutturduğunu tutturamadın mı ona bak diyordu. Hemen şöyle bir gözle bakıyorum. Targetım 1'miş. Benim hesapladığım değer 0. Dolayısıyla tutturamadım. Dolayısıyla ne yapmam lazım? Ağırlıklarda ayarlama yapmam lazım.
+
+223
+00:52:11,983 --> 00:52:29,023
+Tutturabilseydim ne diyecektim? Benim bu ilk ayarladığım ağırlıklar iyiymiş, bir değişiklik yapmayayım diyecektim. Ama durumumuz o değil. Ağırlıklarda değişiklik yapacağım. Bu arada söylemeyi unuttum. Müh'ü öğrenme kat sayısında şimdilik bir sayıyorum.
+
+224
+00:52:38,516 --> 00:52:58,376
+Şöyle yapacağız. X1'den eski ağırlığımı, ilk ağırlığımdan eski ağırlığımı çıkaracağım. Target değeriyle çarpacağım. X1 çarpı target.
+
+225
+00:52:58,996 --> 00:53:09,996
+Çarpı mü şeklindeydi öğrenme kuralım. 1 çarpı 1 çarpı 1'den bir birim ağırlığımı değiştireceğim. Şu formüller kötü olmuş, onun için oraya bakmayın.
+
+226
+00:53:12,115 --> 00:53:25,655
+x1 çarpı target çarpı mü değeri 1. O zaman ağırlık değerim bir birim değişecek demektir. Formülümüz şu sağ alttaki gibi.
+
+227
+00:53:26,291 --> 00:53:46,492
+Şu kırmızıyla işaretli kısmı yaptım. O bir çıktı. Eski ağırlığın üzerine bir ekle diyor bana. Onu yapıyorum. Eski ağırlığım sıfırdı. Bir ekledim. Yeni ağırlık değerim bir oldu. Şu ikinci satırda yazan yeni ağırlık değerim. Masumu görebiliyorsunuz değil mi?
+
+228
+00:53:48,148 --> 00:53:48,988
+Evet hocam.
+
+229
+00:53:49,548 --> 00:53:51,028
+Tamam, teşekkür ederim.
+
+230
+00:53:52,468 --> 00:53:59,528
+Şimdi aynı işlemi her input ve bias için yapmam lazım. Her birinin bağlantı ağırlığını ayarlamam lazım.
+
+231
+00:54:00,688 --> 00:54:06,988
+Bu formülü onlara da uygulasam, şu anda her şey bir olduğu için farklı bir şey elde etmeyeceğim.
+
+232
+00:54:06,988 --> 00:54:13,788
+Bütün ağırlıklarım birer birim artacak ve yeni ağırlık değerlerim bir bir bir şeklinde olacak.
+
+233
+00:54:14,516 --> 00:54:28,795
+Bu birinci iterasyonu, birinci örneğimi gösterdiğinde oluşan sonuç. Devam etseydim, ikinci örneğimi gösterseydim mesela, [öğrenci] söyle.
+
+234
+00:54:30,056 --> 00:54:32,175
+Hocam, Mola ne zaman vereceğiz acaba?
+
+235
+00:54:33,076 --> 00:54:36,996
+Şimdi vereceğim, şimdi vereceğim. Dur şu örneğimi bitireyim vereceğim.
+
+236
+00:54:36,996 --> 00:54:37,135
+Tamam.
+
+237
+00:54:38,639 --> 00:55:00,659
+İkinci örneğimi gösterseydim 1, 0, 1 diye yine aynı formüllerle ağırlık değişimi ne kadar olacak diye hesaplayacaktım. Nasıl? x1 çarpı target, eksi 1, mülkat sayısı da 1 olduğuna göre eksi 1 ağırlık değişecek demektir. Hemen değiştiriyorum. Ağırlık sıfıra indi.
+
+238
+00:55:06,612 --> 00:55:17,811
+Target'ı bütün örnekler için tutturuyorum, artık ağırlık değişimi yapmıyorum dediğiniz bir epok geldiğinde öğrenmeniz tamamlanmıştır diyebilene kadar.
+
+239
+00:55:18,692 --> 00:55:23,251
+Peki ara vereyim, ondan sonra grafikleri göstereyim. Bir de grafik üzerinden bakacağız.
+
+240
+00:55:25,492 --> 00:55:28,952
+10 dakika, 1-5 geçe gelelim tekrar olur mu?
+
+241
+00:55:30,132 --> 00:55:30,392
+Tamam.
+
+242
+01:06:50,260 --> 01:06:51,760
+Arkadaşlar, başlayayım.
+
+243
+01:06:55,443 --> 01:07:17,523
+Şimdi kabaca söylediğim threshold fonksiyonuyla ağırlıkları update ediyoruz. Şuradan bir geriye gideceğim. Her ağırlık değiştiğinde o ilk başta gösterdiğim denklemler vardı ya.
+
+244
+01:07:17,920 --> 01:07:31,920
+Onlara göre oluşturabileceğimiz eşitsizlikler vardı. Onlar da aslında bizim ayırma çizgilerimiz veya ayırma düzlemlerimizi tarif ediyor. O eşitsizlikler de...
+
+245
+01:07:32,384 --> 01:07:43,384
+Burada küçük büyük olan yerlere eşit işaretini koyduğumu düşünerek iki tane veya dört örneğimiz varsa dört tane denklem oluşturabiliyoruz.
+
+246
+01:07:43,384 --> 01:07:59,284
+Şimdi bu denklemleri de oluşturdum. İlk andaki örneklerimizin değerini koyarak bir de V1, V2 için şu andaki mevcut değerlerimizi kullanarak en son V1 ve V2.
+
+247
+01:07:59,956 --> 01:08:12,375
+İlk örneğimi gösterdiğimde 1-1 olmuştu ya ve Bias'ı da ekleyerek. Bu denklemlerimi o değerleri V1-V2 değerlerini yerine koyarak yazdım.
+
+248
+01:08:12,375 --> 01:08:26,155
+Bu sefer X1 ile X2'nin yerine değer yazmadım. Çünkü aslında istediğim şey bu V1-V2 değerleri için oluşan denklemlerin bütün X1-X2 örneklerine uyması.
+
+249
+01:08:26,707 --> 01:08:49,247
+Onları birbirinden iyi bir şekilde ayırabilmesi. Bu şekilde yazdığım denklemler iki tane doğru denklemi temsil ediyor. Bu denklemlere göre oluşan doğruları çizersem şu anda V1 ve V2'nin 1 ve 1 olan değerleri için bu doğru denklemlerinin çizdirdiği doğrular burada.
+
+250
+01:08:53,043 --> 01:09:14,463
+Sonuçları buraya işaretledim. Pozitif olanları eksiyle, aman artıyla, negatif olanı eksiyle işaretleyerek, yani 0, 0 girdiğinde 0 çıkıyor, oraya eksi işareti. 0, 1 girdiğinde eksi, 1, 0 girdiğinde eksi, 1, 1 girdiğinde sadece artı.
+
+251
+01:09:17,779 --> 01:09:29,939
+Eğer problemi çözecek V değerlerini bulduysam ben, bu doğruların eksilerle artıları birbirinden ayıran bir konuma gelmesi, şu yukarılarda bir yerde olması lazım.
+
+252
+01:09:31,039 --> 01:09:38,619
+Grafikten baktığımda da aslında o zaman görüyorum, henüz ben çok da uygun V değerlerini bulamamışım.
+
+253
+01:09:38,619 --> 01:09:43,920
+Henüz çünkü örneklerimi birbirinden ayıracak durumda değil bu denklemler.
+
+254
+01:09:45,268 --> 01:10:09,667
+İkinci örneğimiz için ağırlık değişimlerini yaptık. Yeni ağırlık değerleri bulduk. Ondan sonra bakarsam ne duruma geldi diye. Birinci V değerleri için aşağıdaydı. Şimdi yeni doğru denklemlerim bu hale geldi. Yeni hesapladığım W değerleriyle. Onları çizdirdiğimde böyle bir durumda.
+
+255
+01:10:11,728 --> 01:10:30,728
+Eksi ve artılar bir arada duruyorlar. Demek ki hala olmamış. Uygun V değerini bulmamışım. Bu şekilde üçüncü inputu koyuyorum. Yine ağırlık değerleri değişiyor. Dördüncü inputu verdiğimde yine değişiyor ağırlık değerleri. Bu şekilde...
+
+256
+01:10:31,956 --> 01:10:53,315
+Uzun bir zaman eğitimim devam edecek aslında ve aşağı yukarı 10 epok, 10. epok da bitiyormuş bu örnek için. Yani bu ne demek? Ben 9 kere aynı örnekleri 4x9 kere çalıştırmışım bir iterasyonu.
+
+257
+01:10:53,663 --> 01:11:18,564
+10. epoğa geldiğimde durum şöyle oluyormuş. Bütün örnekleri girdiğimde ağırlıklarda hiçbir değişim yapmıyormuşum. Çünkü target değerini tutturuyormuşum. Hesapladığım şu alt satırlara bakın. Hesapladığım değer 1, target değerim 1, hesapladığım eksi 1, target'ım eksi 1. Her seferinde benim hesapladığımda target tutmuş.
+
+258
+01:11:18,996 --> 01:11:45,156
+Ağırlıklarda hiçbir değişim olmamış. İşte bu noktada bütün örnekler için ağırlıklarda değişim yapmama gerek kalmadığında durma koşulunu sağlamış oluyorum. Bu arada görsel olarak burada görmeniz için de bir epok dediğim şey işte şu dört satırdaki işlemlerin yapılması. Yani dört örneğin varsa dört kere kuralı uygulamam bir epok oluşturuyor.
+
+259
+01:11:45,716 --> 01:11:51,476
+Bu dörtdüsü bir epok, ondan sonraki 10. epok da en alttaki gibi.
+
+260
+01:11:54,115 --> 01:12:01,615
+En son baktığımızda yani 10. epoktan sonra karar sınır çizgileri için oluşan denklemler şu şekildeymiş.
+
+261
+01:12:02,100 --> 01:12:25,399
+x2 eşittir, x2 bölü 3 x1 artı 7 bölü 5 ve x2 eşittir, x2 bölü 3 x1 artı 19 bölü 5'miş. Bu doğruları çizdirdiğim zaman da grafik bu şekilde oluyormuş. Dikkat ederseniz artık negatif sonuçlar bu çizgilerin altında, pozitif sonuçlar üstünde kaldı.
+
+262
+01:12:26,036 --> 01:12:44,376
+Neden iki tane çizgim oldu? Eşitsizlik şeklindeydi. O yüzden iki tane denklem oluşturdum. Aslında bu doğrusal bir bölge diye de düşünebilirsiniz. Bu bölgenin altında ve üstünde kalsın istiyoruz. Birbirinden farklı olan sonuçlar.
+
+263
+01:12:54,452 --> 01:13:11,792
+Sonuçlar burada var ama alfa dediğim öğrenme kat sayısı, daha önce mü demiştim burada alfa demişim. Onu öyle sayın. Threshold'u sıfır seçmiş olayım. Başlangıç ağırlıklarını yine sıfır alacağım. Girdilerim bu şekilde.
+
+264
+01:13:20,144 --> 01:13:39,564
+Sizin yapmanızı istiyorum ve ne zaman algoritmanın duracağını, en son ağırlık değerlerinin ne olacağını söylemenizi isteyeceğim. Bir de bunu deneyin. Buradaki fark ne? Inputları bipolar aldık.
+
+265
+01:13:41,684 --> 01:14:04,863
+Aslında şöyle söyleyeyim, bu ödevi bana göndermeyin ama denemek için yapın. Aslında burada söylemek istediğim daha farklı bir şey var. Demin yaptığım 10 epok süren binary input bipolar outputtu. Şu anda yine bu end problemi ama bipolar input, bipolar output kullanıyorum.
+
+266
+01:14:05,427 --> 01:14:25,587
+Şimdi başımıza ne geleceğini söyleyeyim. En son iterasyonda, yani birinci epoğun son adımında herhangi bir ağırlık değişimi olmamış. Bakarsanız son satıra ağırlık değişimleri sıfır. Bu ikinci epoğda aslında bu algoritma bitmiş olacak.
+
+267
+01:14:26,579 --> 01:14:46,880
+Bunun buradan çıkarabileceğimiz sonuç veya baştan da size söylemiş olduğum söylediği şey şu ki, eğer bipolar input kullanırsanız, özellikle bu binary sınıflayıcı türündeki algoritmalarda daha hızlı yakınsama bekleyebilirsiniz.
+
+268
+01:14:47,579 --> 01:14:49,940
+Algoritma problemi daha çabuk çözer.
+
+269
+01:14:50,351 --> 01:15:11,152
+Burada da olan o. Biraz sonra ikinci epokta. Bunu da koymuşum. İkinci epokta bakarsanız hiçbir ağırlık değişimi olmuyor. Bipolar gösterim epok sayısını azalttı. Demin 10 epokta bitirdiğimiz aynı end problemi. Ama sadece yaptığımız şey inputları alttıkları bipolar gösterdik.
+
+270
+01:15:11,667 --> 01:15:23,247
+Dolayısıyla mümkün olduğun her durumda bir polar input ve output kullanmaya çalışırsanız, algoritmanızı daha çok hızlandırmış olursunuz.
+
+271
+01:15:24,307 --> 01:15:36,147
+O neden oluyor, matematiksel olarak düşünürseniz de, sıfır yutan bir sayı, bir şekilde öğrenme kuralımız bize çarpma kapsıyordu.
+
+272
+01:15:36,147 --> 01:15:38,268
+Hemen döndüm.
+
+273
+01:15:40,372 --> 01:15:54,172
+Şuradan bakın, sağ altta öğrenme kuralım var. T ile x'i çarpıyorum. Herhangi birisinin sıfır olduğu durumda t'nin değeri aslında dikkate bile alınmamış oluyor.
+
+274
+01:15:54,172 --> 01:16:02,711
+Bu kötü bir durum. Mümkün olduğunca binary gösterdiğimde buralara daha çok sıfır denk geleceği için.
+
+275
+01:16:03,039 --> 01:16:27,899
+Öğrenme yavaşlayacak. Eksi bir artı bir gibi birbirinden ayrılabilen bir şey söylersem her adımda öğrenme yapmış olacağım. Ve algoritmayı hızlandırmış olacağım. Aslında yani baştan da öngörebileceğimiz matematiksel denklemlerin getirdiği ve sıfırın lütfen bir sayı olmasından dolayı oluşan bir eğitimin uzaması durumum var.
+
+276
+01:16:28,787 --> 01:16:38,108
+Ödev olarak başka bir şey vereceğim. Elimizde şimdi üç farklı fontla yazılan 21 tane karakter var.
+
+277
+01:16:38,108 --> 01:16:41,307
+A, B, C, D, E.
+
+278
+01:16:41,743 --> 01:17:09,323
+Jk karakterleri. Her seferinde aynı karakterler ama farklı fontla kullanacağız. Birinci fontla yazılmış hali bu. İkinci fontla yazılmış hali bu. Arada belli farklar var. Şu mesela bir tane A harfine bakalım. Yukarıda 3 piksel. Bu arada bu gösterimde piksel olarak düşünün. Sayısal olarak ifade edelim diye yaptım bunu.
+
+279
+01:17:09,747 --> 01:17:35,067
+3 piksel doluyken, font 1'de yazıldığında bakın 3 piksel dolu bir de solda bir piksel dolu. Font dediğimiz şeyin özelliğinden gelen ufak pefek farkları var. Aynı farkları 3 farklı fontta göstermişiz. Dolayısıyla her font için elimizde 7 örnek olduğunu düşünürsek elimizde 21 tane örnek var.
+
+280
+01:17:35,604 --> 01:17:53,784
+Her fontu bir sınıf olarak düşünürsek üç tane de sınıf var. İstediğimiz şey bir input verdiğimizde bunun bize hangi harf olduğunu söylemesi, fonttan bağımsız ama üç font içinde tanıyabilmesi gerekiyor.
+
+281
+01:17:54,784 --> 01:18:02,724
+Çıkışın ne olduğunu söyleyebilmesi. Böyle bir şeyi perseptronu tasarlamak istersek.
+
+282
+01:18:02,996 --> 01:18:13,396
+İmputlarımız olacak, çıkışlarımız olacak. Pardon hangi font olduğunu mu söylemesini istiyoruz? Yok. Hangi harf olduğunu söylemesini istiyoruz.
+
+283
+01:18:13,956 --> 01:18:22,476
+İmputlarımız olacak, çıkışlarımız olacak. 7 tane harfim olduğuna göre 7 tane çıkışım olacak. Şurada nokta noktaları unutmuşum.
+
+284
+01:18:23,060 --> 01:18:33,819
+Y1'den Y7'ye kadar 7 tane farklı çıktı olacak. Birisi A'yı göstersin, birisi B'yi göstersin. 7 harfimi temsil eden çıktılarım olacak.
+
+285
+01:18:34,440 --> 01:18:44,560
+Inputlarım nasıl olacak? Böyle bir görsel şeyi sayısal olarak nasıl ifade edebiliriz perseptoron için diye düşünürsek.
+
+286
+01:18:50,800 --> 01:19:09,100
+yazacak olursam, böyle bir matrise de oturttuğumu düşünürsem, görüntünüzü öyle yapabilirsiniz. En küçük kaça kaçlık pikseller olarak ifade edebiliyorsanız, her pikselin dolu boş durumunu 0-1'lerle gösterebilirsiniz.
+
+287
+01:19:09,551 --> 01:19:31,731
+O şekilde temsil edeceğimi düşünürsem, bakarsam satır olarak 1, 2, 3, 4, 5, 6, 7 piksel var. Dikeyde de 1, 2, 3, 4, 5, 6, 7, 8, 9 piksel var. Yani 7'ye 9'luk bir matriste ben bütün harflerimi ifade etmişim.
+
+288
+01:19:36,435 --> 01:19:47,895
+olduğunu düşünsem, bu inputların her birinde piksel doluysa sıfır alacağım, piksel boşsa bir alacağım diye düşünsem, gayet sayısallaştırabiliyorum.
+
+289
+01:19:49,195 --> 01:19:50,876
+Açık mı buraya kadar dediğim şey?
+
+290
+01:19:50,876 --> 01:19:52,275
+Hocam bir şey sorabilir miyim?
+
+291
+01:19:52,275 --> 01:19:52,536
+Aha.
+
+292
+01:19:53,075 --> 01:19:55,355
+Bipolar input kullanabilir miyiz bunun için?
+
+293
+01:19:55,956 --> 01:19:58,655
+Kesinlikle. Kullanın diyeceğim zaten.
+
+294
+01:19:59,195 --> 01:19:59,715
+Tamam hocam.
+
+295
+01:20:00,195 --> 01:20:03,415
+Doluysa bir diyeceksiniz, boşsa eksi bir.
+
+296
+01:20:04,627 --> 01:20:20,307
+Hatta şunu isteyecektim madem sordun. Bir binary olarak verin, bir bipolar olarak verin. Size ben şeyi paylaşayım. Bunların...
+
+297
+01:20:20,543 --> 01:20:37,744
+Galiba elimde olması lazım ama banyerimi bipolar mı hatırlamıyorum. Matrise çevrilmiş hali. Şunu yapmanız gerekecek çünkü bu her karakterde boşlara sıfır, dollara bir yazarak bunları önce bir sayısallaştırmanız gerekecek.
+
+298
+01:20:39,824 --> 01:20:44,064
+Sayısallaştırılmış hali elimde var galiba. Onu sizinle paylaşacağım.
+
+299
+01:20:44,467 --> 01:21:01,368
+Onu baz alarak kullanın. Binary iken kaç iterasyonda veya kaç epokta, bipolarken kaç epokta çözebildiğinizi, ne kadar başarı elde ettiğinizi sormam gerekecek.
+
+300
+01:21:01,368 --> 01:21:11,868
+Şöyle, elimizde 3 fonttan 7 tane, 21 tane örnek var. Bu 21 karakterin kaçını tanıyabildiniz?
+
+301
+01:21:12,467 --> 01:21:39,768
+Epox sayısını da sınırlayın. Bipolar ve Binary Ayrımı da yapın. Hangi durumda ne oldu diye bir raporlama yapmanızı isteyeceğim. Anlaştık mı? Yani bu ödev biraz daha şöyle iki haftalık ödev olsun ki analiz yapmanızı istiyorum. Ondan sonra bir soracağım şey de biraz ileride konuşacağımız şeylerle ilgili olarak da olacak. Neler birbirine karışıyor?
+
+302
+01:21:40,275 --> 01:21:47,136
+Yani hangi harfler birbirine daha çok karışıyor ve neden karışıyor? Onu da bir anlamaya çalışın.
+
+303
+01:21:47,996 --> 01:21:50,556
+Pardon hocam, bir soru sorabilir miyim?
+
+304
+01:21:51,395 --> 01:21:52,735
+Tabii tabii. [öğrenci] sen misin?
+
+305
+01:21:53,796 --> 01:21:55,115
+Yok hocam.
+
+306
+01:21:55,615 --> 01:21:59,576
+Peki, [öğrenci] da el kaldırdı. Sırayla sorun. Dinliyorum.
+
+307
+01:22:06,195 --> 01:22:14,355
+Sesin kesiliyor. Anlamaya çalışacağım. Bir daha söylersen.
+
+308
+01:22:16,296 --> 01:22:20,575
+İki kişilik gruplarda da çalışabilir miyiz?
+
+309
+01:22:22,095 --> 01:22:33,495
+İki kişilik grupla çalışırsanız iki kişilik rapor beklerim. Yani daha detaylı analiz edilmiş olmasını beklerim. Olur mu? Tamam iki kişilik diyelim direkt.
+
+310
+01:22:33,939 --> 01:22:51,099
+Tek kişi çalışan belirtsin. İki kişilik olarak düşünün. Sürenizi de o zaman iki haftayla kesinlikle sınırlamış olalım. İki kişi çalışın ama yeter ki raporunuz detaylı olsun.
+
+311
+01:22:55,679 --> 01:23:00,099
+Hocam, bu ödevi söylüyorsunuz da bir ödev daha mı vardı?
+
+312
+01:23:01,140 --> 01:23:08,739
+Evet, geçen hafta minnacık egzor ödevi vardı. Dersin başında yaptığım bir şey değildi o.
+
+313
+01:23:09,039 --> 01:23:15,420
+Hocam biz eklesinle aldık. Umarım ödev geçerli değildir. O an etkilemiyordur.
+
+314
+01:23:15,920 --> 01:23:27,739
+Tamam, böyle ara ara ödevler vereceğim. Yani onun etkisi şu anda kayda değmez devamında olacak olanlar için. Öyle bir kaygıya girmenize gerek yok.
+
+315
+01:23:28,275 --> 01:23:33,496
+Ama arada bir söylüyorum ödev dersi yaparken.
+
+316
+01:23:34,576 --> 01:23:35,715
+Tamam hocam, teşekkürler.
+
+317
+01:23:35,715 --> 01:23:48,755
+Şimdi şey, ne diyecek? Burada denemenizi isteyeceğim birinci şey, inputlar binary iken kaç epokta kaç başarıya ulaştınız?
+
+318
+01:23:49,300 --> 01:24:05,279
+İmputlar bipolarken ne kadar başarıya ulaştınız? Perseptronu lütfen zaten çok basit kodu. Kendiniz kodlamaya çalışın. Onun için hatta hazır kütüphanelerde perseptron var mıdır ona bile emin değilim.
+
+319
+01:24:06,219 --> 01:24:12,479
+İkinci adımda da aslında bunu bir yapın, hızlıca yapın. Çünkü basit bu.
+
+320
+01:24:12,815 --> 01:24:38,916
+Şimdi multilayer yaptığımız zaman ne oluyor diye soracağım. Aklınızda onu da tutarak kodlayın. Kodunuz biraz daha parametrik olursa sonra değiştirmeniz kolay olur. Benzer bir şeyi multilayer ile yapalım diyeceğim. Ödev bu kabaca. Karakterlerin dijital halini ben size vereceğim. Sayısallaştırılmış halini.
+
+321
+01:24:40,404 --> 01:25:05,444
+Programlama dili için hiçbir kısıt yok. Ama benim çalıştırabileceğim bir şey isteyeceğim. Onu şey yaparsanız iyi olur. Yani bazı diller için en azından online derleyiciler var. Öyle bir yerde derlemeyi deneyip bana gönderirseniz kodunuzu çok iyi olur. Şey çok sıkıntılı oluyor yani egze gönderseniz bile. Bir de şimdilik hadi egze şey.
+
+322
+01:25:05,876 --> 01:25:21,816
+Bir şekilde bana gösterebileceğiniz bir seçenek olursa çok iyi olur. Sayınız çok olmasaydı ödevlere bakmam daha kolay olurdu ama kalabalıksınız. O yüzden ben kısıt koymayayım.
+
+323
+01:25:22,159 --> 01:25:33,899
+Ama siz hiç değilse kodunuzu, çıktısını ve dediğim gibi eğer çalıştırılabilecek bir ortam olan bir şey seçerseniz ki Python C falan onlar için var.
+
+324
+01:25:34,579 --> 01:25:38,239
+Online derleyicide çalışan bir kod yazarsanız harika olur.
+
+325
+01:25:39,439 --> 01:25:44,179
+Çok kompleks şeyler için onu yapamayacaksınız ama bunun için yapabilirsiniz en azından.
+
+326
+01:25:45,959 --> 01:25:49,639
+O kadar bir kısıt koyayım. Fazla bir kısıt koyamayacağım.
+
+327
+01:25:50,064 --> 01:26:01,423
+Bir de raporlarınız düzgün olsun ne olur. Yani en azından farklı denemeleriniz için çıktılarınızı alırsanız gösterebilecek kadar problem olmaz.
+
+328
+01:26:03,503 --> 01:26:15,923
+Çıkışlarda da 7 tane çıktımız olsun dedim. İşte A mı B mi C mi her harfe bir çıkış verdim. Burada belki daha az çıktıyla da kodlayarak da yapabilirdik ama.
+
+329
+01:26:16,351 --> 01:26:21,991
+7 tane çıkışlı bir ileri beslemeni ağ olarak düşünebilirsiniz durumu.
+
+330
+01:26:24,531 --> 01:26:38,251
+Peki, perseptronla hep arasında ne fark var? Hepin çözemediği, hep öğrenme kuralını çözemediği bazı problemler var.
+
+331
+01:26:38,251 --> 01:26:40,711
+Sağda bir tane örnek var.
+
+332
+01:26:41,055 --> 01:27:06,875
+Şöyle bir problemi hep öğrenme kuralıyla çözemiyoruz. Esas olarak da tek iterasyon çalışmasından dolayı. Yani biraz daha ilerletebilsek çözerdik. Perseptron 26 epokta da olsa çözebiliyor. Yani doğrusal ayrılabilir. Bu arada burada şeyin örneği var. 3 inputlu olduğu için bu problem aslında doğruyla değil de düzenle ayrılabilir bir problem.
+
+333
+01:27:07,412 --> 01:27:32,252
+Onu da görmüş olalım. Yani doğrusal herhangi bir şey, çok boyutlu bir düzlem de olabilir. Önemli değil. Yeter ki düzlemsel bir şeyle ayırabilelim. Bu da öyle bir problem, lineer bir problem. Dolayısıyla zaten default söylemiştik, Perseptor'un bunu her türlü çözebilmesi gerekiyor. 26 epokta da olsa çözebiliyormuş.
+
+334
+01:27:34,868 --> 01:27:51,887
+Peki, bir tane daha mimariden ve öğrenme kuralından bahsedeceğim. Bu önemli. Şu aşamadan sonra bahsedeceğimiz delta kuralı, genişletilmiş delta kuralı, hala kullandığımız kullanılan kurallar.
+
+335
+01:27:51,887 --> 01:27:59,908
+Adaline mimarisi, adaptif linear nöron kelimelerinden kısaltılmış.
+
+336
+01:28:01,792 --> 01:28:21,792
+Bernard Widrow ve Ted Hoff tarafından 1960'da geliştirilen bir algoritma. Yine tek çıktı birimi olan, birden fazla inputu olan bir yapay sinir ay yapısı bu mimarisi.
+
+337
+01:28:22,292 --> 01:28:33,332
+Kullandığı kural farklı, delta kuralı aktivasyon ve hedef arasındaki ortalama karasel hatayı hesaplayarak onu en aza indirmeye çalışıyor.
+
+338
+01:28:42,847 --> 01:29:03,788
+Hesaplanan değerin arasındaki farkı, yani hedefe ben ne kadar uzağa, şimdiye kadar onu hiç dikkate almadık. Hedefi tutturdum mu, tutturmadım mı ona bakıyorduk. Şu anda biraz daha sofistike bir şey yapıyor. Hedefe ne kadar uzağa, ona göre ayarlayayım ağırlıkları diye oluşturulmuş bir öğrenme kuralı var.
+
+339
+01:29:04,688 --> 01:29:09,807
+Birçok birimden girdi alan bir çıktı birimimiz var. Diyasımız yine var.
+
+340
+01:29:10,260 --> 01:29:30,760
+Perseptron'la aşağı yukarı aynı yapıya sahip. Burada tek söylediği bir tane çıktı olması. Esas önemli olan dediğim gibi öğrenme kuralı, delta kuralı. Delta kuralı şunu söylüyor. Yine öğrenme katsayımız var. Kusura bakmayın ben bunları bir türlü fırsat olup düzeltemedim.
+
+341
+01:29:31,104 --> 01:29:40,244
+Hep farklı sembol göstermişim ama alfa dediğim öğrenme kuralı, bazen mü ile gösterdiğim yerler var. Diğeri onları düzelteceğim inşallah.
+
+342
+01:29:40,819 --> 01:30:04,819
+Hedefle bizim hesapladığımız değerin arasındaki farkı alarak bunu çarpıyoruz inputla. Daha önce hesapladığımız değeri çarpıyordu. Perseptron hedeflediğimiz değeri çarpıyordu. Şu anda arasındaki farkı alıp onu çarpıyoruz. Öğrenme kuralı da bu şekilde.
+
+343
+01:30:07,315 --> 01:30:19,495
+Inputlar kullanmamızda fayda var. Adaline öyle zaten önermiş. Bipolar inputları kullanarak çalıştırdığımız bir algoritma.
+
+344
+01:30:19,988 --> 01:30:36,048
+Yapılan şey yine başlangıç ağırlıklarını set ediyorsunuz, öğrenme kuralının değerini set ediyorsunuz, sıfırla bir arasında olmak şartında ve durma koşulu sağlanana kadar devam ediyorsunuz.
+
+345
+01:30:37,587 --> 01:30:50,568
+Nörona gelen input'u hesaplıyoruz, output'u hesaplıyoruz. Ondan sonra da bu sefer delta kuralını kullanarak ağırlıkları update ediyoruz.
+
+346
+01:30:51,127 --> 01:30:54,867
+Sonra da durma koşulu sağlandı mı diye her adımda bakıyoruz.
+
+347
+01:30:55,488 --> 01:31:02,047
+Şurada akışı da var. Aynı söylediğim şeyler. Örnek üzerinden bakarız şimdi.
+
+348
+01:31:04,243 --> 01:31:29,863
+Öğrenme kuralının etkisi, söyledim tekrar burada da görmüş olacağınız şey. Eğer öğrenme kat sayısı çok fazlaysa yakınsama olmayabilir. Aslında o da şöyle, eğer aradığınız ağırlık değerleri çok küsuratlı ara bir sayı gibiyse öyle varsayabilirsiniz.
+
+349
+01:31:30,384 --> 01:31:33,743
+Ben o değere gelmeden o değeri...
+
+350
+01:31:33,743 --> 01:31:58,223
+Hesaplayıp da kullanamadan, test edemeden daha büyük veya daha küçük başka bir değerlerle uğraşıyor olabilirim. Atlayabilirim. Yani hiç dikkate almamış olabilirim. Dolayısıyla öğrenmenin yavaş olması yakınsamayı biraz daha kolaylaştıran bir şey. Adaların içinde öğrenme için en pratik aralık 0-1 ile.
+
+351
+01:31:58,707 --> 01:32:13,547
+Bir arasında bir sayı seçmek, o sayıyı seçerken de aslında giriş sayısını esas alırsanız diyor, o zaman daha rahat yakınlamayı sağlayabilirsiniz.
+
+352
+01:32:13,547 --> 01:32:25,167
+Yani ne demek istiyor? Benim beş tane inputum varsa, öğrenme katsayım çarpı beş, sıfır bir ile bir arasında bir değerde kalsın.
+
+353
+01:32:26,355 --> 01:32:33,055
+İntro giriş sayısına bağlı olarak öğrenme kat sayısını artırın diyor.
+
+354
+01:32:34,195 --> 01:32:43,935
+Peki, bipolar ve binary target gösterime göre Adaline A ile Ant kapısını yine öğrenelim.
+
+355
+01:32:44,715 --> 01:32:48,295
+Binary inputlar, bipolar outputlar var şu anda.
+
+356
+01:32:48,880 --> 01:33:00,819
+Adalayan Hatay'ı en az indirgecek şekilde tasarlanmış bir a. Özür dilerim. Örneğe geçmeden önce araya bu niye gelmiş?
+
+357
+01:33:11,604 --> 01:33:15,204
+Örneğin sayısalını yapmamışım galiba.
+
+358
+01:33:15,204 --> 01:33:27,084
+Peki, bunu Adaline kuralıyla da. Ödevinizi şöyle genişleteyim mi? Madem de iki kişi yapıyorsunuz.
+
+359
+01:33:27,391 --> 01:33:42,271
+Perseptron kuralının yanında ki hiçbir şey eklemiş olmuyorum. Sadece bir o kural, bir bu kural şeklinde aynı algoritmayı çalıştıracaksınız. Perseptron kuralının yanı sıra bir de delta kuralını uygulayalım, olur mu?
+
+360
+01:33:42,271 --> 01:33:53,771
+Aynı ödev harfler bir perseptron öğrenme kuralıyla bir de delta kuralıyla. O da şuydu.
+
+361
+01:33:54,323 --> 01:34:11,043
+Şuradaki kırmızıyla yazdığım denklem. Bir bu kural olsun, bir de bunun yerine alfa çarpı, mü çarpı, target x şeklinde olsun. İki farklı kuralla deneyelim. Ben çünkü buraya sayısal örnek koymamışım.
+
+362
+01:34:11,043 --> 01:34:20,503
+Peki, Adaline'ın özelliği hatayı en azından indirgeyecek şekilde ağırlıkları bulmaya çalışıyor.
+
+363
+01:34:20,944 --> 01:34:23,884
+Hata hesabını da karesel hatayla yapıyor.
+
+364
+01:34:24,724 --> 01:34:26,124
+Karesel hata ne?
+
+365
+01:34:28,664 --> 01:34:34,484
+Inputlar çarpı ağırlıklar şeklinde toplamımı hesaplıyoruz.
+
+366
+01:34:34,484 --> 01:34:43,724
+Bu T'ye kadar olan kısma bakarsanız ilk üç terim bizim nöronumuzun A kutu için hesaplayacağımız değer.
+
+367
+01:34:45,404 --> 01:34:46,484
+Bizim Y değerimiz.
+
+368
+01:34:48,595 --> 01:35:04,895
+Bir saniye beklerseniz söyleyeceğim cevabı. Arkadaşımız soru sordu. İlk üç terimin toplamı bizim nöronumuzdan çıkacak hesapladığımız değer. Neye göre? Bizim seçtiğimiz V1-V2 ağırlıklarına göre.
+
+369
+01:35:13,072 --> 01:35:35,652
+Fark olarak da hesaplanabilir çıkarma işlemiyle. Bir adım ötesi de paresel hata olarak hesaplanabilir. Yani hedeflenen ne kadar tutturduğumuzu paresel hata olarak ifade edersek daha da iyi yakın sama sağlayabiliyoruz. Ayarlamaları o şekilde yapıyoruz. Dolayısıyla hatayı...
+
+370
+01:35:35,935 --> 01:35:43,935
+En aza indirmiş oluyoruz. Şimdi arkadaşınızın sorduğu ödevi iki kişi yapacaksak grubu olmayan kişileri ben mi belirleyeceğim?
+
+371
+01:35:44,955 --> 01:35:56,095
+Tamam, siz tanışmıyorsunuz. O zaman şöyle yapayım. Biz birlikte yaparız diyenler bana mail atsınlar. Geriye kalanları ben eşleştireyim, olur mu?
+
+372
+01:35:58,095 --> 01:36:03,475
+Tamam, ben bu arkadaşımla ödev yapacağım diyen varsa bana mail atsın.
+
+373
+01:36:04,083 --> 01:36:06,183
+Hocam eşleşmeden oluyor mu?
+
+374
+01:36:07,803 --> 01:36:08,703
+İlk başınıza mı?
+
+375
+01:36:09,383 --> 01:36:21,663
+Bence öyle diyelim. Biz zaten iki kişi yapmak istiyoruz diyen arkadaşlarınıza biraz hainlik yapayım. Çok süper bir ödev falan bekleyeyim.
+
+376
+01:36:22,000 --> 01:36:45,420
+Yalnız yapılacak bir ödev çünkü. Bence de şimdi birbirinizi tanımıyorsunuz. Bir de uzaktan birlikte çalışmanız çok daha zor. Kimse kimsenin yükünü tek arkadaşlarınız öyle söylüyorlar. İki kişi yapmak isteyen kimdi? Başka var mı iki kişi yapmak isteyen?
+
+377
+01:36:45,971 --> 01:36:59,492
+Varsa yapabilirsiniz ama dediğim gibi sizden daha iyi bir performans bekleyeceğim. Artık benim aklıma gelmeyen neyle süsleyebiliyorsanız süsleyin. Analizlerinizi çok yapın.
+
+378
+01:37:01,431 --> 01:37:13,152
+WhatsApp grubu olup iletişime geçseniz olur mu? Olur. Grubu siz kurun ama olur mu? Hatta [öğrenci] sen mi istedin? Sen kur.
+
+379
+01:37:13,908 --> 01:37:39,648
+Tek yapalım diyen arkadaşlarınız çok. Bence de tek yapın. Hele bu ödev için hiç öyle bir şeye girmeye gerek yok. [öğrenci] arkadaşınız bir de WhatsApp grubu kuruyor. Zaten arkadaşım var, birlikte yapacağım veya ben biriyle eşleşeceğim diyen olup birbirinizi bulursanız ona da bir şey demiyorum. İki kişilik gelen ödeve biraz daha farklı bakarım. O kadar diyorum.
+
+380
+01:37:44,020 --> 01:37:50,159
+Şimdi, karesel hatayı da kullanabiliriz dedik. [öğrenci], evet dinliyorum.
+
+381
+01:37:51,200 --> 01:37:59,180
+Hocam, raporlama kısmını söylediniz de bunu, Jüpiter Notbook var biliyor musunuz? Orada yapsak ayrıca rapor oluşturmak yerine.
+
+382
+01:37:59,240 --> 01:38:00,720
+Ne var bir daha söyler misin?
+
+383
+01:38:01,280 --> 01:38:04,800
+Bu, Anakonda'nın bir idesi var Jüpiter Notbook diye.
+
+384
+01:38:07,800 --> 01:38:08,680
+Ya...
+
+385
+01:38:08,948 --> 01:38:16,648
+Orada çünkü yazıları da yazabiliyoruz, başlıkları atabiliyoruz. Yani rapor şeklinde sunabiliyoruz. Altında da kodlar oluyor.
+
+386
+01:38:18,167 --> 01:38:19,927
+Tamam, peki. Öyle yapın.
+
+387
+01:38:20,828 --> 01:38:21,528
+Tamam, sağ olun.
+
+388
+01:38:22,448 --> 01:38:29,087
+Bilgisayarımda hiçbir şey kalmamışta, anakondaya da gideyim. Tamam. Olur, olur. Tamam. Öyle yapın.
+
+389
+01:38:29,939 --> 01:38:34,279
+Hocam, onu zaten bir de Google Colab üzerinden de çalıştırabiliyorsunuz.
+
+390
+01:38:34,279 --> 01:38:48,939
+Bu arada yine ben şart koşmuş olmayayım. İsteyen başka bir şekilde de verebilir raporunu. Latex, Word, her şey okey. Ama kolay olur diyenler de Anaconda üzerinden yapabilirler.
+
+391
+01:38:50,279 --> 01:38:51,979
+Hocam, ben bir şey sorabilir miyim?
+
+392
+01:38:52,439 --> 01:38:53,299
+Evet, dinliyorum.
+
+393
+01:38:53,299 --> 01:38:57,299
+Bu ödevin sonuna eklediğiniz kısmı ben çok...
+
+394
+01:38:57,363 --> 01:39:00,223
+Kaçırdım galiba. O kısmı bir daha alabilir miyim?
+
+395
+01:39:01,943 --> 01:39:05,443
+Kaçırmadım. Aslında şöyle, ha şimdi eklediğim kısmı.
+
+396
+01:39:05,443 --> 01:39:07,363
+Evet, sonradan bir şey daha eklediniz.
+
+397
+01:39:08,423 --> 01:39:16,023
+Söylüyorum. Delta kuralı. Perseptron artı delta öğrenme kuralıyla yapın dedim.
+
+398
+01:39:16,563 --> 01:39:23,143
+Yani öğrenme algoritmanız hem bu delta öğrenmesi hem de perseptron olsun.
+
+399
+01:39:23,604 --> 01:39:42,184
+Tekkatmanlı A, demin döneyim probleme. A'nın mimarisi aynı olacak. Ağırlıkları ayarlama kuralınız hem persepron için ayrı yapın analiz edin hem de delta için ayrı yapın analiz edin dedim.
+
+400
+01:39:44,756 --> 01:39:52,216
+Tamam, [öğrenci], Jüpiter tamam. Buraya diyeceğiniz başka bir şey var mı? Anlamayan var mı?
+
+401
+01:39:56,435 --> 01:40:05,135
+Arkadaşınız WhatsApp için grup bilgisi gösterdi. Buradan üye olabilirsiniz gruba.
+
+402
+01:40:18,163 --> 01:40:34,163
+Peki. Eğer aynı demin çözdüğümüz AND problemini, binary input bipolar output olan AND problemini Adaline'la çözmüş olsaydık veya Delta kuralıyla çözmüş olsaydık,
+
+403
+01:40:36,532 --> 01:40:49,292
+Karesel hata hesaplayacaktık. Karesel hatayı hesapladığımızda da dört eğitim seti için, elimizdeki dört tane veri için toplam karesel hata bir olacakmış.
+
+404
+01:40:53,555 --> 01:41:01,515
+Perseptronla yaptığımız zaman karesel hata 10 bölü 9 yani birinin biraz daha üstünde oluyormuş.
+
+405
+01:41:01,515 --> 01:41:06,655
+Biraz daha iyi ayırdığını söylemek için aslında bunu söylemişiz.
+
+406
+01:41:11,667 --> 01:41:33,667
+Aslında Adaline kuralını kullandığımız zaman doğru denklemleriniz bir parça değişiyor. Daha iyi yönde değişiyor. Bu şimdi ne zaman lazım? End probleminde zaten cevaplar, örnekler birbirinden yeterince uzak. Ama eğer birbirine çok yakın verileriniz varsa...
+
+407
+01:41:34,319 --> 01:41:56,199
+Çok daha hassas ayırma yapmanız gerekiyorsa, perseptronun bunda zorlanacağını veya en azından daha uzun zamanda yakınsayabileceğini, delta kuralının ise daha hızlı yakınsayacağını ve daha hassas bir şekilde ayırma yapabileceğini söylemek istemişim. Birazcık uzun yoldan söylemişim.
+
+408
+01:41:56,692 --> 01:42:12,431
+Peki, ikisini kıyaslayacak olursak Adaline Perseptron'u, ikisi de Binary Classifier, ikisi de doğrusal problemi çözüyor. Dolayısıyla doğrusal karar sınırlarına sahip.
+
+409
+01:42:12,819 --> 01:42:17,379
+İkisi de iteratif. Threshold aktivasyon fonksiyonu kullanıyorlar.
+
+410
+01:42:18,059 --> 01:42:24,799
+Farkları, perseptron desenlerin ortak etmenlerini belirlerken sınıf etiketleri kullanıyor.
+
+411
+01:42:25,379 --> 01:42:29,079
+Adaline ise türekli tahmin değerleri kullanıyor.
+
+412
+01:42:30,259 --> 01:42:35,079
+Etiket derken neyi kastediyorum? İşte doğru yanlış. Bu da bir etiket.
+
+413
+01:42:36,019 --> 01:42:39,939
+Adaline'de ise daha bir tahmin durumu var.
+
+414
+01:42:40,948 --> 01:42:49,268
+Şimdi esas konuya geçeceğim. Buradan da yakında bir ödev gelecek de.
+
+415
+01:42:49,268 --> 01:42:57,288
+Bir saniye. Biraz slide'larım dağınık. O yüzden.
+
+416
+01:42:57,967 --> 01:43:09,947
+Şimdi Delta kuralının diğer versiyonu aslında genişletilmiş Delta olarak bundan sonra Back Propagation algoritmasında da kullanacağımız bir versiyon.
+
+417
+01:43:15,923 --> 01:43:26,304
+Net input ile hedef arasındaki farkı en azından indirgemek üzerine çalışan bir mantık.
+
+418
+01:43:26,923 --> 01:43:41,083
+Direkt aradaki farkı çıkarma işlemiyle alabileceğiniz gibi sonuçta düşürmeye çalıştığımız o fark bizim hatamızın miktarını belirttiği için bunu karesel olarak da kullanabilirsiniz.
+
+419
+01:43:41,568 --> 01:43:57,728
+Amacımız tüm eğitim modelleri üzerinde hatayı aza indirgemek olduğu için eğer karesel hata kullanırsak ve bunu bütün örnekler için karesel hataları toplayıp kullanırsak hep en iyiye doğru gitmiş oluruz.
+
+420
+01:43:57,807 --> 01:44:04,247
+Yani bütün örnekler için oluşan hataları toplayayım ve o toplamı küçültmeye çalışayım.
+
+421
+01:44:05,876 --> 01:44:24,876
+En sonunda ulaşmak istediğimiz model bu. Herhangi bir örneğin ağırlığını ayarlamak için kullanacağımız bu düz çıkarma işlemi vardı. Bir de topluca ayarlamaya kalkabiliriz. O zaman kullanacağımız kural da...
+
+422
+01:44:28,435 --> 01:44:36,895
+O zaman kullanacağımız kural da karesel hata olacak. Onun ifadesini bulmaya çalışıyorum.
+
+423
+01:44:39,475 --> 01:44:50,296
+Bütün ağırlıkları toptan ayarlamak için de, sol tarafta ikinci satır masumun olduğu yere bakarsanız, hatayı şu şekilde tanımlıyoruz.
+
+424
+01:44:50,296 --> 01:44:53,296
+Her bir örnek için t-y şeklindeydi.
+
+425
+01:44:54,036 --> 01:45:10,876
+M tane örneğimiz varsa, M tane örnek için bu farkların karesini toplayarak bir hata terimi, bir E ile gösterdiğim hata terimi olarak ifade etmeye çalışıyoruz. Sonra da bu E'yi küçültmeye çalışıyoruz.
+
+426
+01:45:16,659 --> 01:45:20,619
+Burayı şimdi atlayacağım sonra daha düzgün bir şekilde anlatmak için.
+
+427
+01:45:20,619 --> 01:45:27,880
+Ama şurada heple perseptronu kıyaslamıştık. Bir daha hatırlatmış olayım.
+
+428
+01:45:28,460 --> 01:45:33,400
+Hep kuralı hesapladığımız değerle input'u çarparak.
+
+429
+01:45:33,648 --> 01:45:57,328
+Ağırlıkta değişim yapıyordu. Perseptron hesapladığımızı değil de olması gerekeni inputla çarparak bir de öğrenme kat sayısı eklemişti. Hedefle inputu çarparak değişiklik yapıyordu. Hep kuralının bir iterasyon çalışma gibi bir durumu vardı.
+
+430
+01:45:57,908 --> 01:46:06,155
+Hem o sebepten hem de hesapladığımız değeri kullandığı için çok başarılı olmayacağı...
+
+431
+01:46:06,644 --> 01:46:30,764
+Ortada demiştik. Perseptron ondan bir derece daha iyi. Delta kuralı daha da iyi. Çünkü aslında ne hesapladığımızı, ne hedeflediğimizi dikkate alıyor. Esas hedeflediğimizden ne kadar uzak olduğumuzu söyleyen aradaki farkı dikkate alıyor. Şu üç kuralım, şu iki slide'ı hep gözünüzün önünde tutun.
+
+432
+01:46:31,087 --> 01:46:44,108
+HEP algoritması, Persepren algoritması, Delta kuralı da diyor ki, target ile output'un arasındaki farka bakın, o kadar, o oranda ayarlayın diyor.
+
+433
+01:46:55,391 --> 01:47:02,072
+Ağırlıkları ne kadar değiştireceksen, onların karesini toplayarak bir hata tanımı yapmak.
+
+434
+01:47:09,692 --> 01:47:18,371
+Şöyle bir şey yapacağım. Şunun üzerinden bir özetleyeyim. Buraya sonradan çokça döneceğiz zaten bu meseleye.
+
+435
+01:47:18,931 --> 01:47:37,271
+Ağırlıklarda yapacağımız sadece değişimi, değişim miktarını yazayım şöyle. Öğrenme katsayısı, target değerimiz, hesapladığımız değerin arasındaki fark ve girdinin çarpımı. Delta kuralı diyor ki böyle değiştireceksin.
+
+436
+01:47:37,779 --> 01:48:02,360
+Bir adım ötesi diyoruz ki, tamam bunu bütün örnekler için bir kere de hesaplayayım. Yani niye her seferde bir örnek gösteriyorum? Hepsi için topluca bu hata değerini hesaplayayım. Ondan sonra değişim yapayım. Normalde perseptronda ne yapıyorduk? Bir örneği gösteriyorduk. Eğer target'ı tutturamamışsak hemen ağırlığı değiştiriyorduk.
+
+437
+01:48:02,671 --> 01:48:21,351
+Şu anda ağırlığı değiştirmiyoruz, değiştirmiyoruz. Bu farkları hesaplıyoruz her örnek için. Bunu yine yapıyoruz her iterasyonda bir hesaplama yapıyoruz. Ama en son değişim miktarlarının ne olacağını bir araya getirip bir e-değeri hesaplıyoruz.
+
+438
+01:48:21,351 --> 01:48:30,131
+Şimdi amacımız, bu bizim toplamdaki hatamızı ifade eden bir şeyse, eyle gösterdiğim şey, karesel hata.
+
+439
+01:48:30,416 --> 01:48:39,216
+Amacımız bunu küçültmek. Türevin tanımından düşünürseniz, türev dediğimiz şey değişimdir.
+
+440
+01:48:39,764 --> 01:48:53,623
+Bu türevin yani herhangi bir ağırlığın bir hata üzerinde, e üzerindeki etkisini gösterebilme ihtimaline dayanarak şu ifadeyi yazıyoruz.
+
+441
+01:48:54,283 --> 01:49:00,384
+V-İşi ağırlığının türevdeki etkisi nedir? Türevin V'ye göre değişimi nedir?
+
+442
+01:49:01,011 --> 01:49:24,511
+Bu türevi yazarsam her ağırlığı ne kadar etkisi varsa hataya o oranda değiştiririm. Toptan herkese aynı muameleyi yapmam. Her ağırlığın ne kadar önemi varsa, hataya ne kadar katkısı varsa o oranda değiştiririm. Bu mantıkla çıkmış bir durum.
+
+443
+01:49:26,452 --> 01:49:50,492
+Bu türev ifadesini yazdığım zaman, e ifadesi burada, e'nin türevini alıyorum ve ig'ye göre. Şuradaki y'nin yerine de toplam x çarpı ve y'den gelen y'yi hesapladığımız inputların ağırlıkla çarpılması formülünü koyduğumuzu düşünün.
+
+444
+01:49:50,832 --> 01:49:59,372
+Bu türevi aldığım zaman, y'nin ifadesi şurada, e'nin ve i'ye göre türevi bu şekilde çıkıyor.
+
+445
+01:49:59,952 --> 01:50:03,271
+Eksi 2, target eksi y, çarpı x1.
+
+446
+01:50:03,923 --> 01:50:17,404
+Dolayısıyla delta kuralı aslında tamamen direkt ne kadar uzarımdan çıkmıyor. Şu türev ifadesinden de aynı delta kuralına ulaşabiliyorum.
+
+447
+01:50:17,404 --> 01:50:29,164
+Bunun barındırdığı ifade her ağırlığın veya her ağırlık değerinin hatada ne kadar etkisi varsa,
+
+448
+01:50:29,631 --> 01:50:52,611
+O kadar değişiklik yapmak üzerine bir kural. Şu türev ifadesindeki, şuradaki ikiyi falan dikkate almama gerek yok. Zaten öğrenme katsayısıyla bir parametremiz var. Çarpan olarak bir şey ifade etmiyor. Oran sadece. İçerideki terimin değişmemesi benim için yeterli.
+
+449
+01:50:54,452 --> 01:51:01,212
+Burada bir sorunuz var mı diyeceğim ama sonra tekrar döneceğim için çok da şey yapmıyorum. Söyleyin varsa eğer sorunuz.
+
+450
+01:51:07,539 --> 01:51:19,920
+Tamam, herhalde sizi kaybettim artık. Bir de Madeline diye bir A var. O da aslında Many Adaptive Linear Naurant demek.
+
+451
+01:51:23,923 --> 01:51:40,543
+Meda Line Ağında da yaptığımız şey, birçok Ada Line Ağını birbirine bağlıyoruz. Şöyle şekilden bakmaya çalışın. X1, X2 bir Z1 alt kutuna bağlanıyor.
+
+452
+01:51:49,235 --> 01:52:05,496
+Tek başına Z2'ye bağlandığı durum da bir Adalina. Ondan sonra bunların çıktılarını alıp Y'ye bağladığım zaman, inputu Z1 ve Z2 olan ve çıktısı Y olan bir Adalina daha olmuş oluyor.
+
+453
+01:52:06,163 --> 01:52:27,884
+Yani burada iki tane Adaline ağından üçüncü bir Adaline ağ daha ekleyerek biraz daha kompleks bir yapı oluşturmuş oluyoruz. Bu da terminoloji olarak bilmeniz için söylemiş olayım. Literatürde Perseptorundan sonra Adaline ve Madaline ağları var.
+
+454
+01:52:30,612 --> 01:52:47,572
+Öğrenme algoritması biraz daha değişik. Hatta üzerinde varyasyonları da yapılmış. Bidrow ve Hoff'un tanımlamasından sonra. Ondan da biraz şimdi bahsederiz. Ara istiyor musunuz? Ara verip geçeyim.
+
+455
+01:52:47,891 --> 01:52:49,471
+Olur hocam. İyi olur hocam.
+
+456
+01:52:49,971 --> 01:52:51,612
+Tamam, bayıldınız değil mi? Tamam.
+
+457
+01:52:52,331 --> 01:52:53,612
+Biraz yoğun geçiyor.
+
+458
+01:52:55,091 --> 01:53:10,171
+Özür dilerim. Aslında içerik olarak fazla bir şey söylemiyorum da ben biraz çok konuşuyorum herhalde. Ya da sözel gibi çok oldu. Bir ara verelim nefeslenin. Medeline'da anlatayım sonra bitiririz zaten.
+
+459
+01:53:11,251 --> 01:53:12,231
+Kaç dakika para?
+
+460
+01:53:12,771 --> 01:53:13,431
+Dinliyorum.
+
+461
+01:53:14,072 --> 01:53:14,572
+Konuş güzel.
+
+462
+01:53:15,311 --> 01:53:18,931
+Şu Medeline'ın slide'ında bırakabilir misiniz? Not alıyorum da.
+
+463
+01:53:18,971 --> 01:53:19,591
+Olur tabii.
+
+464
+01:53:20,211 --> 01:53:20,911
+Teşekkürler.
+
+465
+01:53:22,100 --> 01:53:23,360
+Kaç dakika hocam ara?
+
+466
+01:53:25,480 --> 01:53:33,160
+10 dakika verelim yine isterseniz. Ne oluyor? 2'yi 5 geçe başlayalım.
+
+467
+02:05:28,148 --> 02:05:31,548
+Arkadaşlar, başlayayım mı? Geldiyseniz.
+
+468
+02:05:36,180 --> 02:05:36,980
+Olur hocam.
+
+469
+02:05:40,440 --> 02:05:42,800
+Devam biraz az ama neyse.
+
+470
+02:05:43,440 --> 02:05:48,640
+Şimdi Madaline'ı tekrar şöyle bir söyleyeyim mimarinin üzerinden.
+
+471
+02:05:48,640 --> 02:05:55,100
+Burada gördüğünüz gibi iki tane Madaline var.
+
+472
+02:05:55,636 --> 02:06:04,695
+X1, X2 inputları olan, Z1 ve Z2 çıktıları olan, ondan sonra da üçüncü bir Madeline Ağı var gibi.
+
+473
+02:06:06,076 --> 02:06:15,996
+Şu soldaki X1 ve X2'nin input sağladığı çıkışı da Z1, Z2 olan ağlara gizli Madeline Ağları diyoruz.
+
+474
+02:06:17,376 --> 02:06:19,916
+Veya gizli Adeline'lar diyoruz.
+
+475
+02:06:20,404 --> 02:06:34,264
+Ondan sonraki gelen kısımda ağırlık ayarlaması yapmayacağız. Bu normal V harfiyle gösterdiğim son kısımdaki V1 ve V2 değerleri sabit olarak ayarlanıyor.
+
+476
+02:06:36,500 --> 02:06:58,600
+Birinci tip algoritma, dediğim gibi birkaç varyasyonu var öğrenme algoritmasında ama, plasik Madeline öğrenme algoritmasında V1 ve V2'yi ayarlamıyoruz. Onları direkt sabit alıyoruz. İlk kısımdaki iki tane Adeline'ın ağırlıklarını, yani şu anda dört tane ağırlık var.
+
+477
+02:07:01,779 --> 02:07:16,479
+V1-1, V1-2, V2-1 ve W2-2 olan ağırlıkları ve Bias'ların ağırlıklarını ayarlayacağız. Normal V1 ve V2 olan ağırlıkları ayarlamayacağız.
+
+478
+02:07:16,899 --> 02:07:26,459
+Algoritmanın mantığı böyle çalışıyor. Çıkış ünitesinin ağırlıkları sabit alınır. Onlar da 0-5 olarak alınıyor sabit olarak.
+
+479
+02:07:29,011 --> 02:07:49,331
+Daha başka bir versiyon olan MR2 algoritması var. Orada tüm ağırlıkları ayarlamak için bir yöntem önerilmiş. Ben şu anda bahsedeceğim MR1 algoritması dediğimiz algoritma. Dediğim gibi V1 ve V2'yi 1 bölü 2 olarak sabit alıyoruz.
+
+480
+02:07:49,775 --> 02:08:05,515
+Oradaki VIA'sı da sabit alıyoruz. Z1 ve Z2'ye giden ağırlıkları ayarlayacağız. Neyle ayarlayacağız? Normal bildiğiniz Adeline algoritması gibi ayarlayacağız.
+
+481
+02:08:07,344 --> 02:08:22,923
+Dediğim birimler için aktivasyon fonksiyonu eğer gelen girdiği sıfırdan büyükse bir, küçükse eksi bir olacak şekilde bir polar veri olacak şekilde ayarlama yapacağız.
+
+482
+02:08:22,923 --> 02:08:31,443
+Şu akış yamasını yine sonra slide'lardan bakarsınız. Örnek üzerinden direkt gideyim.
+
+483
+02:08:35,283 --> 02:08:50,543
+Örneği, şimdi XOR'u çözebileceğimiz bir versiyon aslında görmüş olacağız. Bipolar olarak ifade edilmiş XOR örneği bu. Girdiler 1-1'ken çıktı, 1-1.
+
+484
+02:08:50,912 --> 02:09:07,792
+Bu şekilde bir doğruluk tablosu olan İGZOR örneğini çözmeye çalışacağız. İlk EPOC için bakıyoruz. Başlangıç değerleri için Z1 ve Z2'ye giden ağırlıklara rastgele değerler seçtik.
+
+485
+02:09:08,243 --> 02:09:22,123
+Şu şekilde V11 0.05, V21 02, Bias ağırlığı 03, Z2'ye giden ağırlıklar da 01, 02 ve 0.15 olarak seçilmiş.
+
+486
+02:09:22,723 --> 02:09:35,443
+Dediğim gibi son katman diyeyim artık son bölümdeki ağda Y'ye giden ağırlıkları ve Bias'ı tamamen 0.5 olarak sabit alacağız ve burayla hiç oynamayacağız.
+
+487
+02:09:36,243 --> 02:10:00,000
+İlk eğitim örneğini alıyorum. 1-1-1 için eksi 1 olacak şekilde. Buradaki birlerden birisi beyaz. Her adalığın için girdiği hesaplayacağım. Klasik bildiğimiz şekilde birinci beyaz x1 çarpı v11 x2 çarpı v21 diye değerleri yerine koyuyorum.
+
+488
+02:10:00,000 --> 02:10:27,299
+Z1 nöronuna giren değer 0.55 çıkıyormuş. Z2'ye giren 0.45 çıkıyormuş. Her adalan birimi için aktivasyon fonksiyonunu uyguluyoruz arkasından. Aktivasyon fonksiyonu ne diyordu? Eğer 0'dan büyükse 1 olsun, 0'dan küçükse eksi 1 olsun diyordu. Bizim bulduğumuz her iki değer de 0'dan büyük 0.55 ve 0.45.
+
+489
+02:10:27,923 --> 02:10:47,764
+Dolayısıyla Z1'in değeri 1, Z2'nin değeri 1 olacak. Ondan sonra son kısmı hesaplarken yine klasik tabii neural network hesaplamamızı yapıyoruz. Z1, V1, Z2, V2 ve Bias eklendi. Çıkan değer 1.5.
+
+490
+02:10:48,243 --> 02:11:09,843
+Artık bu noktada yapacağımız tek şey delta kuralını uygulamak hatayı hesaplayacağız. Hem Z1 hem Z2 varken. Hedefle hesapladığımız değer arasındaki fark. Hesapladığımız değer ne? 0.55 hesaplamıştık. Aktivasyon fonksiyonuyla bu 1'e çekilmişti.
+
+491
+02:11:10,355 --> 02:11:34,615
+Bizim ilk örneğimizde beklediğimiz çıktının değeri de birdi. Dolayısıyla T ile Y'nin farkına bakacağım. Pardon, beklediğimiz değer eksi birmiş. Aradaki fark iki. Dolayısıyla hata var. Ağırlıkları ve biyası güncellemem gerekiyor. Hem Z1 için hem Z2 için bu güncellemeyi yapacağım.
+
+492
+02:11:35,091 --> 02:11:58,611
+Z1 için güncellemeleri yaptığımız zaman aradaki fark kadar bir çarpan koyduk. Şuradaki 0,5 öğrenme katsayımız bizim. 0,3'te bir yasımız. Hesapladık. Eksi 0,475 çıktı. Ağırlıkları ayarlarken de ne yapacağım? Eski değerin üzerine bu farkı ekleyeceğiz.
+
+493
+02:11:59,123 --> 02:12:18,143
+Ekledik. Birinci ağırlığımız 0.725 eksi. İkinci ağırlığımız 0.575 oldu. Z2 için aynı hesaplamaları yapıyoruz. Ve ağırlıklarımızı güncellemiş oluyoruz. Bu noktadan sonra ikinci epoğa başlayacağız.
+
+494
+02:12:20,283 --> 02:12:24,643
+Dört epok sonunda XOR'un öğrendiğini görüyormuşuz.
+
+495
+02:12:25,076 --> 02:12:45,915
+Bence elinizde bunu da bir egzersiz olarak yapıp deneyebilirsiniz. En azından bir epokta siz yürütün. En sonunda ağırlıklarımız şu değerlere ulaştığında bütün örnekler için egzor problemini çözen bir ağ elde edebiliyormuşuz.
+
+496
+02:12:47,412 --> 02:13:04,192
+Geometrik olarak bakarsak oluşan doğruları çiziyorduk ya, geometrik anlamda şimdi artık iki tane adal aynımız vardı ya, iki denklem Z1 için elde edeceğiz.
+
+497
+02:13:04,192 --> 02:13:09,192
+Bir denklem de Z2 için elde edeceğiz. Dolayısıyla Z1 için oluşan...
+
+498
+02:13:09,716 --> 02:13:20,115
+Sınır çizgisinin denklemini yazdığımızda şöyle bir şey oluyormuş. 048x1 artı 065 oluyormuş. O da burayı gösteriyor.
+
+499
+02:13:20,115 --> 02:13:33,636
+Egzor probleminin sonuçları da burada var. Pozitif olduğu yer şurada. Diğer kalanlar negatif. Bize şu ayırımı, ikisi arasındaki ayırımı yapacak bir şey lazımdı.
+
+500
+02:13:34,355 --> 02:13:36,115
+Z2 için çizdiğimizde...
+
+501
+02:13:37,268 --> 02:13:54,287
+Şu şekildeymiş. Dolayısıyla ikisini birlikte kullandığımız zaman, bu arada ilk şekilde bir hata vardı galiba. Şurası da pozitif olacak arkadaşlar. Şekilde hata var. Son şekle bakın. İki şekilde hata var. Son şekil doğru.
+
+502
+02:13:54,836 --> 02:14:13,536
+Z1'in ve Z2'nin oluşturduğu sınır çizgilerini kullandığımızda Medeline A'nın çıktısında iki tane doğrusal bölge oluştu ve artılarla eksileri birbirinden ayırabilmiş olduk.
+
+503
+02:14:22,163 --> 02:14:40,564
+[öğrenci], neye olur dedin sen? Ha, derse başlayalım olur demişsin herhalde. Tamam, başka bir şeye geçmeyeyim. Sorunuz varsa onlara bakalım. Madalayan'da anlaşılmayan bir şey var mı? Tekrar şekle döneyim. Dikkat etmeniz gereken tek şek.
+
+504
+02:14:41,235 --> 02:15:06,395
+Adaline gibi birinci Adaline'a da işlem yapıyoruz, ikinci Adaline'a da işlem yapıyoruz. Ama son kısımdaki ağırlıkları sabit 0.5 olarak alıyoruz. Orada ekstra bir işlem yapmıyoruz. En son çıktığı hesaplamak için kullanıyoruz. Z1 ve Z2'yi hesapladıktan sonra, bu ağırlıkları güncelledikten sonra bir çeşit or fonksiyonu gibi iş görüyor burası.
+
+505
+02:15:09,235 --> 02:15:33,535
+Çıktı değerini hesaplıyoruz. Çıktı değerlerimiz elimizdeki örneklerdeki tüm targıtları sağlayacak şekilde oluştuğu zaman da eğitimi sonlandırıyoruz. Buradaki durumda da dört epokta bitiyormuş işlem. Var mı sorunuz arkadaşlar?
+
+506
+02:15:35,252 --> 02:15:43,992
+Hocam benim var. Burada iki tane Edaline kullandığımız için, var olduğu için daha doğrusu iki tane Z olduğu için iki tane doğru oluştu değil mi? Doğrusu yani.
+
+507
+02:15:44,572 --> 02:15:53,671
+Aynen öyle. Yani iki tane Edaline kullanınca aslında bu da birazcık şeye yaklaşıyor, multilayer perseptrona yaklaşıyor.
+
+508
+02:15:54,144 --> 02:16:18,743
+Sanki iki tane ayrı katman kullanmışız gibi iki tane doğru oluşunca ayırma şansımız oluştu. Tek doğrumuz olsaydı nereye yerleştirseniz yerleştirin şu şekle bakayım. Çünkü artıların birisi sol yukarıda, birisi sağ aşağıda. Bunları tek bir doğrula ayırmamız mümkün değil ama iki doğru kullanınca ayırma şansımız oluşmuş oldu.
+
+509
+02:16:20,024 --> 02:16:21,104
+Dediğin gibi.
+
+510
+02:16:23,028 --> 02:16:41,608
+Zaten bundan sonrası da multilayer perseptron fikri oluşuyor. MedaLine bunu yapabildiğinde yaptığı şey iki tane ağı bir arada kullanmak. Bunları o zaman arka arkaya eklesek de olur mu diye düşündüğünüzde de multilayer perseptrona gelmiş olacağız.
+
+511
+02:16:42,484 --> 02:17:00,164
+Şimdi burada önemli olan Adaline ile Madaline artık çok kullanılan şeyler değil ama esas fikir Adaline ile oluşan hata hesaplama yöntemi. Yani target ile hesapladığımız değerin farkına bakmak ve karesel hata kullanmak.
+
+512
+02:17:00,500 --> 02:17:21,379
+Delta kuralı devamında multilayer perseptronlardadır. Şu anda hala derin öğrenmede de backpropagation algoritmasıyla birlikte kullanılıyor. Bir sonraki işleyeceğimiz şey multilayer ve backpropagation algoritması aslında en önemli konumuz olacak.
+
+513
+02:17:21,855 --> 02:17:36,475
+[öğrenci] dinliyorum. [öğrenci] da ödev testini 28 Ekim mi demiş. Bakıyorum. Evet, 28 Ekim. [öğrenci] 28 Ekim. [öğrenci] seni dinleyeyim.
+
+514
+02:17:36,852 --> 02:17:52,512
+Hocam, şimdi ödevle ilgili ben notlar aldım, ne istediğinizle ilgili. Eksik olabilir diye endişe taşıyorum. Karakterlerin sayısallaştırılmış halini bizle paylaşırken, ödevle ilgili de tam olarak istediklerinizi bizle paylaşırsanız.
+
+515
+02:17:54,652 --> 02:18:03,512
+Hepsini söylemek istemedim aslında. Şöyle yapacaksınız, çalıştırdığınız zaman şunu göreceksiniz.
+
+516
+02:18:04,852 --> 02:18:10,852
+Bir kere bipolar veya banyeri kullandığınıza göre...
+
+517
+02:18:11,120 --> 02:18:39,120
+İşlemin uzunluğu değişecek. Bir de başarı olarak en çok hangi harflerin karıştığını gördüğünüzde neden karışıyorlar onunla ilgili bir yorum yapabilecek misiniz onu merak ediyorum. Aslında o karıştığını da görecek misiniz hangi harflerin diye merak ediyordum. Ama söylemiş oluyorum bazı harfler daha sıklıkla birbirine karışıyor olacak. Neden daha çok karışıyorlar onunla ilgili yorum yapmanızı.
+
+518
+02:18:39,120 --> 02:19:06,340
+Bir de işte bipolar olunca kaç epok? Epok sayısı olarak düşünün. Evet [öğrenci], çalıştırdığınız epok sayısını artırdığınızda başarı oranı değişiyor mu? Yani 21 örnekten kaçını tanıyordum? İşte 100 epok daha eklediğimde, 10 epok daha eklediğimde daha fazlasını tanıyabildim mi?
+
+519
+02:19:07,316 --> 02:19:12,515
+Hala tanıyamadığınız, karışan harfler varsa bunlar birbirine neden karışıyor?
+
+520
+02:19:14,336 --> 02:19:19,396
+Sorduğum şey buydu. Bazı harfler birbirine karışıyor olacak.
+
+521
+02:19:19,816 --> 02:19:27,416
+Yani karışıyordan kastettiğim şey işte A diyeceğine B diyor. Neden öyle oluyor?
+
+522
+02:19:28,979 --> 02:19:46,880
+Bir epok daha çalıştırdım, on epok daha çalıştırdım. Hala bu harfle öbür harfi karıştırıyor. Neden? Böyle bir yorum yapmanızı istiyorum. Onun dışında o kadar özel bir şey istemiyorum. Ödev kolay. Bakmayın. Kolay bir ödev.
+
+523
+02:19:46,880 --> 02:19:48,399
+Teşekkür ederim.
+
+524
+02:19:48,939 --> 02:19:52,340
+Tamam. Var mı başka sorunuz?
+
+525
+02:19:57,556 --> 02:20:17,675
+Tamam, o zaman bitireyim arkadaşlar. Geçmeyeyim başka bir şey. [öğrenci] neyi? Önceki mi? Tamam. Yıldız'a gönderdiyseniz oraya da bakacağım. Bakmadığımdan değil de Yıldız'dakileri hem geç görebiliyorum hem de speme düşebiliyor. Hani şimdi konuştuk.
+
+526
+02:20:17,920 --> 02:20:43,319
+Dönüp bakarım ama daha sonrasında bana bir şey yazdığınızda vesaire Yıldız'a gönderdiyseniz gözümden kaçma ihtimali var. Genel olarak da ödevler için sormanıza gerek yok. Geldi mi gelmedi mi diye. Ben zaten size söyleyeceğim. Liste yaparım. Elime ulaşmamış görünüyorsa ben size bildirdiğimde isminiz eksikse söylersiniz bulurum maili.
+
+527
+02:20:43,924 --> 02:21:02,084
+Onun dışında genel başka bir şey yazdığınızda da lütfen mümkünse Gmail'den yazın. Gözümden kaçmasın. [öğrenci] slide'ları herhangi bir yerde henüz paylaşmıyorum. Paylaşacağım. Paylaştığımda size bilgi vereyim ben olur mu?
+
+528
+02:21:02,739 --> 02:21:26,100
+Peki dur, bir şey kararlaştıralım, nasıl yapalım? Arkadaşlar, bir ara ben şey kullanıyordum, WhatsApp'ınıza ben girmeyeyim dedim de, Google'ın ders grubun Classroom'u olması lazım. Bir saniye beklerseniz, eğer ben Classroom'u bulabiliyorsam, Classroom'a üye olun diyeyim.
+
+529
+02:21:27,092 --> 02:21:37,772
+Oradan hem ödevleri de paylaşabiliriz aslında. Ama şu anda Classroom'u bulamıyorum. Bir saniye bekletiyorum.
+
+530
+02:21:40,711 --> 02:21:46,211
+Hocam, Yıldız Sistemi'nde de Classroom gibi karşılayacak bir özellik eklenecek sanırım.
+
+531
+02:21:47,211 --> 02:21:51,891
+Evet, bir şeyler söylemişlerdi. Hatta eklendi mi diye kontrol de etmedim.
+
+532
+02:21:53,695 --> 02:22:08,652
+Oradan bir şekilde birbirimize mesaj gönderebiliyor muyuz? Veya siz WhatsApp grubuna katıldıysanız ben birinize mail atarım. Slide'ların linkini. Avesis'e koymaya çalışırım. Avesis'te nedense...
+
+533
+02:22:09,043 --> 02:22:13,324
+Daha önce bir denediğimde koyamamıştım ama Aves'e koyarım.
+
+534
+02:22:14,043 --> 02:22:19,724
+Hocam şu an dersin duvarında paylaşılıyor aslında. Başka bir derste paylaşılıyor.
+
+535
+02:22:19,724 --> 02:22:21,324
+Var mı? Baktın mı? Ha tamam.
+
+536
+02:22:22,644 --> 02:22:27,384
+O zaman tamam. Dersin duvarında paylaşayım. Başka yeni bir mecra açmayalım boşuna.
+
+537
+02:22:28,435 --> 02:22:37,735
+Yok, adres kolaydı. O adresi sizle nasıl paylaşacağım [öğrenci], onu düşünüyordum. Linki nereden size ileteyim diye.
+
+538
+02:22:37,896 --> 02:22:39,775
+Mail atabilirsiniz hocam.
+
+539
+02:22:40,515 --> 02:22:41,396
+İşte hanginize?
+
+540
+02:22:42,095 --> 02:22:44,415
+Toplu mail atılıyor, Yıldız'ın.
+
+541
+02:22:44,815 --> 02:22:49,335
+Yıldız'dan, tamam. Onu da fazla kullanmadığım için unutmuşum.
+
+542
+02:22:49,335 --> 02:22:55,635
+Tamam, o zaman ben size bir şekilde dersin duvarı diyelim şimdilik. Açılmış da kullanıma.
+
+543
+02:22:56,051 --> 02:23:17,612
+link paylaşacağım. Dediğim gibi ama bu slide'ları paylaşma işim hafta sonundan önce olacakmış gibi görünmüyor. Şimdiden söylemiş olayım. Hafta sonu paylaşırım ben sizinle. Bitiriyorum o zaman. Haftaya görüşmek üzere diyorum.
+
+544
+02:23:17,612 --> 02:23:18,652
+Görüşürüz hocam.
+
+545
+02:23:18,652 --> 02:23:19,551
+Görüşmek üzere hocam.
+
+546
+02:23:19,572 --> 02:23:20,132
+Teşekkür ederim.
+
+547
+02:23:20,272 --> 02:23:21,752
+Hepinize sağ olun.

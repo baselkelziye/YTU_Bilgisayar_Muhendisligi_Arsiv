@@ -1,0 +1,3087 @@
+1
+00:01:13,876 --> 00:01:14,956
+Günaydın arkadaşlar.
+
+2
+00:01:19,507 --> 00:01:20,387
+Günaydın hocam.
+
+3
+00:01:21,727 --> 00:01:26,927
+Biraz daha sayımız artsın. Ondan sonra sunumlara başlayalım. Bir 10 geçe başlayalım. Tamam mı arkadaşlar?
+
+4
+00:01:28,007 --> 00:01:28,587
+Tamamdır hocam.
+
+5
+00:01:28,947 --> 00:01:29,587
+Tamamdır.
+
+6
+00:05:38,612 --> 00:05:48,672
+Evet arkadaşlar, günaydın. Artık var olan arkadaşlarla beraber projelerimize bakmaya başlayalım. İlk kim gelmişti, kim anlatmak ister?
+
+7
+00:05:52,276 --> 00:06:02,696
+Hocam ben anlatabilirim. İlk kimden de bilmiyorum ama. Tamamdır. O zaman başla istersen. Ekran paylaşımı yapabiliyorsun.
+
+8
+00:06:09,843 --> 00:06:37,552
+Ekran... Evet, geldi. Evet, bir dataset'i ilgili çok ufak bir anlaşım anlatayım. 100 tane image vardı. Böyle 500x1, 500 piksel boyutunda. Burada kolon kanserinde çekirdeklerin detekledi. Classification yapılmıyordu burada. Hem normal hem...
+
+9
+00:06:37,552 --> 00:06:46,052
+Birkaç sınıf var zannedersem değil mi? Evet hocam. Her sınıfı ait 100 görüntü var zannedersem bu şeyde değil mi?
+
+10
+00:06:46,052 --> 00:06:59,752
+Evet, 100 image bu. Şuradaki 100 image'den kastım. Şöyle 100 image. Bunun bir tanesi bu. Burada mesela 6 image var. Onun gibi 100 tane image var.
+
+11
+00:06:59,752 --> 00:07:05,152
+Siyasi Datasit değil mi bu? Evet, Siyasi Datasit, evet.
+
+12
+00:07:05,247 --> 00:07:32,007
+Dört tane sınıf var benim. Dört tane sınıf var, evet. Dört sınıfa ait, her bir dört sınıfa ait yüzer görüntüden dört yüz görüntü olması lazım. Yok hocam. Şimdi bu, mesela her bir şekilin içinde dört sınıfta olabiliyor. Fibroblast, epitel, hastalıklı hücre, bir de diğerleri. Nekrotik, statik fikir, filan filan.
+
+13
+00:07:32,384 --> 00:07:52,604
+Her birinde dördü de olabiliyor. Mesela şunda epitel yok. Şunda hepsi var. Bunun gibi bu insan dokularına ait görüntüleri her birinde bazı çekirdekler var, bazılarında yok.
+
+14
+00:08:01,396 --> 00:08:19,196
+Her bu şekilde buradaki çekirdeklerin sadece çekirdekler alıyor. Ben bunları çekirdekler ortada olmak üzere fibroflast, epitel kanserli ve diğer tütük olmak üzere hepsini 27x27 size boyutunda crop ettim.
+
+15
+00:08:19,196 --> 00:08:20,196
+Tamam.
+
+16
+00:08:20,196 --> 00:08:28,076
+Fibroflast'tan 5000, yaklaşık 5149, epitel'den 7.069, kanserli altı bir. Diğer...
+
+17
+00:08:28,372 --> 00:08:33,331
+Diğer çekirdeklerinde de 1700-21 oldu.
+
+18
+00:08:35,572 --> 00:08:42,372
+Ondan sonra bunları şey yaptım, örnek olsun diye sadece iki tane yapabildim.
+
+19
+00:08:42,372 --> 00:08:45,372
+Biraz acemi dinleyecektim bunun ilk hafta yaptım.
+
+20
+00:08:45,372 --> 00:08:51,372
+O yüzden ilk yaptığım, ilk 800 net ile başladığım 66 oldu bir tanesi.
+
+21
+00:08:51,372 --> 00:08:53,372
+Tansi 75 oldu.
+
+22
+00:08:53,971 --> 00:09:09,011
+Validation yani. Ondan sonra Validation Patient varmış. Onu ben Infinity yapmasını sonradan öğrendim. INK yazma metriği getiyormuş. O sayı vardı orada. 5, 10, 15 diye. Ona INK yazınca Infinity sınırsız oluyormuş.
+
+23
+00:09:09,731 --> 00:09:19,731
+Onu yapmadığım zaman öyle kendisi 15 dakika, 20 dakika sonra bitiriyordu. Onu yaptı. Artık sonuna kadar yaptı. Bu BrestNet'e ait bir şey.
+
+24
+00:09:23,443 --> 00:09:36,563
+Önceki ağırlıkları yükleyip onun üzerine çalıştırdın değil mi? Yok hocam, sadece ResNet. Bir de Pre-trained networkleri kullanma da var bu konuda.
+
+25
+00:09:36,563 --> 00:09:50,403
+Evet, Pre-trained ve o ağırlık meselesini hocam, bir şeyleri videolarda da baktım da. Tam olarak hangisini yapamıyorum?
+
+26
+00:09:51,956 --> 00:10:00,395
+Pretrade, ResNet 50 yapınca farklı. 800 net yapınca farklı. Aynı sonuçlar vermeyebiliyor.
+
+27
+00:10:01,936 --> 00:10:12,956
+Evet, aynı sonuçları vermeyecekti. Kullandığın Mac ile bir açarsan, öncelikli olarak ağırlık yükleme, ImageNet ile alakalı bir ağırlık yükleme kısmı var mı?
+
+28
+00:10:14,475 --> 00:10:16,276
+Yok hocam o ayarlamaları bilmiyorum.
+
+29
+00:10:16,851 --> 00:10:19,971
+Şimdi yaz istersen bir Google'da yaz.
+
+30
+00:10:21,051 --> 00:10:21,851
+Tamam, tamam.
+
+31
+00:10:22,231 --> 00:10:24,371
+Geçen hafta göstermiştim herhalde sana.
+
+32
+00:10:25,152 --> 00:10:26,851
+Pretrained Networks.
+
+33
+00:10:27,851 --> 00:10:28,571
+Az bakalım.
+
+34
+00:10:29,571 --> 00:10:31,051
+Pretrained Networks.
+
+35
+00:10:36,179 --> 00:10:37,519
+Networks, MATLAB yaz.
+
+36
+00:10:42,611 --> 00:11:09,551
+Şuradan gir. Bak burada anlatılıyor. Red Bank Networkleri nasıl yapabileceğin. Buradan da sadece neler var? Mesela hangi networkler varmış? NasNet, DanceNet, Inception, Exception, DarkNet, ResNet. Bunları bir çalıştır. Bak NasNet'in falan daha çok verdiğini gösteriyor. Aşağı doğru bir kalk bakayım.
+
+37
+00:11:12,244 --> 00:11:18,184
+Görüyor musun? Load Pretrained Networks diyor. Net önce onu yüklüyorsun.
+
+38
+00:11:18,903 --> 00:11:25,244
+Ondan sonra aşağı doğru. Burada transfer learning kısmı bizim için önemli.
+
+39
+00:11:25,984 --> 00:11:32,064
+Mesela bu sayfayı oku bir de transfer learning kısmı var aşağı doğru. Biraz daha aşağıya. Görüyor musun?
+
+40
+00:11:32,064 --> 00:11:32,864
+Evet hocam.
+
+41
+00:11:33,244 --> 00:11:35,403
+Reuse Pretrained Networks diyor.
+
+42
+00:11:35,892 --> 00:11:52,852
+Mesela, Replace Final Layers diyor. Öncelikli olarak, bak burada ilk şeyde, ImageNet ile çalıştırılmış, önceden eğitilmiş networker. Bu ağırlıkları alıyorsun. Ne diyor mesela?
+
+43
+00:12:02,932 --> 00:12:17,991
+İndirme istersen. Alt seviye özellikleri zaten öğrenmiş durumda. Bir milyon imajten, binlerce sınıftan oluşturmuş. Son sınıflar diyor.
+
+44
+00:12:20,019 --> 00:12:32,559
+Biz buraları kendi network'ümüze uyarlayacağız. Özellikle sonraki box'a geçince, New Layers to Learn Future Specific to Your Dataset.
+
+45
+00:12:32,559 --> 00:12:40,179
+Burada senin o 27-27 görüntülerini özellikle son layer'larını tekrar eğiterek,
+
+46
+00:12:40,371 --> 00:13:05,432
+Biz ne yapıyoruz? Ağırlıkları bir fine tuning yapıyoruz. Buna göre sonuçları bir oluştur. Bak burada adım adım anlatmış nasıl yapıldığını. Sen bunları bir bakıver istersen. Tamam mı? Bunların sonuçlarını da bir görelim. Bak burada neler ne farklı şeyler de var. Aşağı doğru in bakayım. Kafe, PyTorch.
+
+47
+00:13:05,844 --> 00:13:22,943
+Onyx diye bir sistem varmış. Neymiş Onyx? Onyx diye farklı hem Python'ın hem Metlab'in paylaştığı bir orta katman var. Burada modeller paylaşılabiliyor.
+
+48
+00:13:23,408 --> 00:13:38,408
+Bir de internette bir search yap bakalım bizimle alakalı olan Onyx platformuna sunulmuş şeyler var mı? Tamam mı? Tamamdır. Tamamdır.
+
+49
+00:13:38,408 --> 00:13:46,408
+Tamam hocam. Buradaki bütün networkleri bir çalıştır. Anlaştık? Tamamdır. Tamamdır.
+
+50
+00:13:49,524 --> 00:14:01,403
+Başka göstereceğim bir şey var mı? Bu kadar herhalde. Tamamdır. Bir sonraki paylaşımı durdur istersen. Sırada kim anlatmak ister arkadaşlar?
+
+51
+00:14:05,683 --> 00:14:07,683
+Evet, Dr. Can I start?
+
+52
+00:14:07,683 --> 00:14:09,683
+Evet, you can start.
+
+53
+00:14:09,683 --> 00:14:10,683
+Evet, Dr.
+
+54
+00:14:10,683 --> 00:14:21,683
+First of all, introduce your dataset, your task, what kind of methodologies you are using, please emphasize that.
+
+55
+00:14:21,683 --> 00:14:26,683
+Then go on to details on dataset.
+
+56
+00:14:26,683 --> 00:14:27,683
+Ok, Dr.
+
+57
+00:14:27,683 --> 00:14:28,683
+Ok.
+
+58
+00:14:28,683 --> 00:14:30,415
+Dr. Actually,
+
+59
+00:14:30,416 --> 00:14:38,176
+You know my topic? Supplementation Method for Pathological Plane Tumor and Acured Detection Using MRI.
+
+60
+00:14:39,135 --> 00:14:53,775
+Okay. Actually in this article, this article, the dataset that taken in this article is from two types. From Harvard Medical School.
+
+61
+00:15:12,755 --> 00:15:24,683
+Doktor, aslında bu artıcılıkçı deneyimde bu artıcılıkçı deneyimde kullanmak için bir MRI, MRI, Mİsitli
+
+62
+00:15:25,491 --> 00:15:44,587
+Bu, bu
+
+63
+00:15:45,620 --> 00:16:07,947
+Bu artikel, benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benarizasyonu ile benar
+
+64
+00:16:08,403 --> 00:16:15,403
+Evet, bu
+
+65
+00:16:15,403 --> 00:16:25,583
+Bu
+
+66
+00:16:25,583 --> 00:16:32,583
+Biyomedikal işaret ve
+
+67
+00:16:52,508 --> 00:17:03,508
+Bu
+
+68
+00:16:51,187 --> 00:16:56,347
+Dr. Muzak, bu segmentation accuracy?
+
+69
+00:16:56,347 --> 00:17:00,148
+D.W.T. ve VCA
+
+70
+00:17:00,148 --> 00:17:02,908
+ve C.F.M.
+
+71
+00:17:02,908 --> 00:17:10,907
+Bu segmentation accuracy?
+
+72
+00:17:10,907 --> 00:17:13,948
+Is there a ground truth file that you can show us?
+
+73
+00:17:13,948 --> 00:17:14,948
+Yes.
+
+74
+00:17:16,147 --> 00:17:17,228
+Do you have...
+
+75
+00:17:17,228 --> 00:17:18,508
+Matlab, Dr. Muzak?
+
+76
+00:17:18,644 --> 00:17:20,644
+Evet.
+
+77
+00:17:23,763 --> 00:17:28,803
+Bu, bu bölümde de bu bölümde de kodaklığa arasında,
+
+78
+00:17:28,803 --> 00:17:43,803
+bu bölümde de bilgilerin,
+
+79
+00:17:43,803 --> 00:17:47,803
+bilgilerin, bilgilerin,
+
+80
+00:17:47,803 --> 00:17:48,779
+bu bölümde de bilgilerin.
+
+81
+00:17:48,788 --> 00:17:52,788
+Bu şekilde bu kodlar.
+
+82
+00:17:52,788 --> 00:18:03,852
+Bu kodlar.
+
+83
+00:18:07,476 --> 00:18:08,436
+Yükseler, Doktor.
+
+84
+00:18:09,336 --> 00:18:11,236
+Yes, I see that.
+
+85
+00:18:11,556 --> 00:18:17,876
+This is a segmented image you get from your methodologies.
+
+86
+00:18:18,496 --> 00:18:20,996
+I want to see that.
+
+87
+00:18:49,395 --> 00:18:51,875
+Tümör áreas, kan be seen.
+
+88
+00:18:53,016 --> 00:19:04,115
+Yes, doctor. Actually, I downloaded the other dataset to make a compare between this that you want. Do you see this, doctor?
+
+89
+00:19:04,435 --> 00:19:16,875
+Yes, I think the mask files are the ground truth files. Can you show us the one of the ground truth files?
+
+90
+00:19:21,236 --> 00:19:25,236
+Evet, bu da bir program var.
+
+91
+00:19:25,236 --> 00:19:41,868
+Bu da bir program var mı?
+
+92
+00:19:48,435 --> 00:19:50,015
+Bu da bir şey, Dr.
+
+93
+00:19:51,395 --> 00:19:52,975
+Hayır, bir şey yok.
+
+94
+00:19:53,675 --> 00:19:54,855
+Bir diğer direktör.
+
+95
+00:19:54,855 --> 00:19:56,695
+Bir masksiyonu var.
+
+96
+00:19:56,695 --> 00:19:57,975
+Bu da direktör.
+
+97
+00:19:59,535 --> 00:20:00,475
+Ok, Dr.
+
+98
+00:20:01,535 --> 00:20:03,815
+Bu da bir masksiyonu var.
+
+99
+00:20:04,935 --> 00:20:06,576
+Bir de direktör.
+
+100
+00:20:07,135 --> 00:20:09,215
+Bir de imküden ve
+
+101
+00:20:09,215 --> 00:20:11,475
+bu da direktör.
+
+102
+00:20:12,355 --> 00:20:13,955
+Bu da kullanılabilirsiniz.
+
+103
+00:20:14,415 --> 00:20:15,135
+First of all.
+
+104
+00:20:17,140 --> 00:20:38,860
+Previously, you have showed us a dataset. In that dataset, there is mask files. Can you show another directory? Okay, open directory. At the right, not this directory. Not this directory. Can you go?
+
+105
+00:20:38,860 --> 00:20:39,860
+Is it the director?
+
+106
+00:20:39,860 --> 00:20:43,759
+Yes. There is mask files here. Can you see that?
+
+107
+00:20:43,759 --> 00:20:44,759
+Evet, Dr.
+
+108
+00:21:11,759 --> 00:21:38,240
+Mask File. Can you open any mask file? Mask. Yes, doctor. I know mask file. Mask file. Can you open a mask file? I want to see inside of the mask file. Okay, just a minute. Is it hard to open a file? Another one.
+
+109
+00:22:12,180 --> 00:22:13,180
+Öncelikle,
+
+110
+00:22:17,460 --> 00:22:25,460
+In your dataset, there could be original MRI files.
+
+111
+00:22:25,460 --> 00:22:30,460
+Here you can see the school of the head positions.
+
+112
+00:22:30,460 --> 00:22:35,460
+There can be three types of different MRI dataset.
+
+113
+00:22:35,460 --> 00:22:41,460
+But besides that, there should be a ground truth file.
+
+114
+00:22:45,619 --> 00:22:47,619
+FILE.
+
+115
+00:22:47,619 --> 00:22:49,619
+In this ground turret file,
+
+116
+00:22:51,619 --> 00:22:57,619
+there is a position where the tumor is. Tumor is here.
+
+117
+00:22:57,619 --> 00:22:59,619
+So, it shows
+
+118
+00:23:02,619 --> 00:23:03,619
+tumor areas.
+
+119
+00:23:06,619 --> 00:23:13,548
+For example, you have used a method and you get a segmented image.
+
+120
+00:23:18,132 --> 00:23:23,292
+When you segment your image, you get some results like this.
+
+121
+00:23:23,292 --> 00:23:27,932
+These are for example tumor areas, but you don't know that.
+
+122
+00:23:27,932 --> 00:23:31,251
+There's also some artifacts.
+
+123
+00:23:34,012 --> 00:23:41,012
+So, if you want to compare your results, you need this ground truth file.
+
+124
+00:23:43,491 --> 00:23:45,491
+You need this ground truth file.
+
+125
+00:23:46,003 --> 00:23:49,503
+How you make your segmentation?
+
+126
+00:23:49,503 --> 00:23:54,003
+Is it a good segmentation or a bad segmentation?
+
+127
+00:23:54,003 --> 00:23:56,003
+You have to compare it.
+
+128
+00:23:56,003 --> 00:24:06,003
+For example, you are using how many tumor areas is overlapped with the or your segmented image.
+
+129
+00:24:10,516 --> 00:24:13,016
+union, for example.
+
+130
+00:24:13,016 --> 00:24:16,216
+You have to compare the positions of the tumor.
+
+131
+00:24:17,615 --> 00:24:19,615
+When you compare the results,
+
+132
+00:24:19,615 --> 00:24:22,216
+you can evaluate your results.
+
+133
+00:24:22,216 --> 00:24:24,716
+Am I segmented correctly or not?
+
+134
+00:24:24,716 --> 00:24:28,216
+For example, how many pixels are...
+
+135
+00:24:30,324 --> 00:24:39,084
+Fond in the tumor areas in the percentage or you can use intersection over union, dysmetric.
+
+136
+00:24:41,844 --> 00:24:42,524
+Okay.
+
+137
+00:24:42,524 --> 00:24:43,524
+Okay, Doctor.
+
+138
+00:24:43,524 --> 00:24:50,524
+So this is a file that you can compare your results. It's called ground truth file.
+
+139
+00:24:51,324 --> 00:24:52,124
+Okay.
+
+140
+00:24:52,124 --> 00:24:53,124
+Okay, Doctor.
+
+141
+00:24:53,124 --> 00:24:57,524
+And if you, if your test is a segmentation,
+
+142
+00:24:58,099 --> 00:25:13,931
+Bu, bu
+
+143
+00:25:17,076 --> 00:25:19,235
+Tamam, bu bir gruntur file.
+
+144
+00:25:19,836 --> 00:25:23,496
+Bu bir file ile ilgili bir matlab var mı?
+
+145
+00:25:23,935 --> 00:25:25,976
+Bu matlab var mı?
+
+146
+00:25:27,976 --> 00:25:37,076
+Bu bir matlab var mı?
+
+147
+00:25:37,076 --> 00:25:38,536
+Evet, bu bir matlab var mı?
+
+148
+00:25:39,284 --> 00:26:04,824
+Evet.
+
+149
+00:26:07,284 --> 00:26:10,444
+bu data sete, bu data sete, bu data sete,
+
+150
+00:26:10,444 --> 00:26:13,164
+bu da şeyin dediğinde, aslında.
+
+151
+00:26:13,164 --> 00:26:15,364
+Bu da?
+
+152
+00:26:15,364 --> 00:26:18,764
+Sadece groundturtdaki gibi görünüyor.
+
+153
+00:26:18,764 --> 00:26:25,164
+Evet, evet.
+
+154
+00:26:25,164 --> 00:26:29,484
+Paint file, eğer, bir fotoğraf ediyoruz,
+
+155
+00:26:29,484 --> 00:26:32,164
+we can't see the details.
+
+156
+00:26:32,164 --> 00:26:34,604
+Can you open it with...
+
+157
+00:26:35,635 --> 00:26:42,124
+Örneğin, Öpün
+
+158
+00:27:13,107 --> 00:27:16,467
+bu nasıl normal imediye,
+
+159
+00:27:16,467 --> 00:27:18,147
+nasıl normal imediye,
+
+160
+00:27:18,147 --> 00:27:19,107
+nasıl imediye.
+
+161
+00:27:19,107 --> 00:27:20,107
+Bu,
+
+162
+00:27:20,107 --> 00:27:24,107
+nesine,
+
+163
+00:27:24,107 --> 00:27:25,107
+normal imediye
+
+164
+00:27:25,107 --> 00:27:26,107
+ve tümörde
+
+165
+00:27:26,107 --> 00:27:27,107
+imediye
+
+166
+00:27:27,107 --> 00:27:28,107
+eşitliği.
+
+167
+00:27:28,107 --> 00:27:30,107
+Tamam.
+
+168
+00:27:30,107 --> 00:27:31,107
+Bu,
+
+169
+00:27:31,107 --> 00:27:42,915
+kagel'in
+
+170
+00:27:33,107 --> 00:27:35,867
+So can you go to the Kegel page?
+
+171
+00:27:35,867 --> 00:27:41,607
+You can find information about this dataset in the Kegel page, I think.
+
+172
+00:27:41,607 --> 00:27:46,107
+I'll get my dataset from there.
+
+173
+00:27:46,107 --> 00:27:47,107
+Okay.
+
+174
+00:27:47,107 --> 00:27:48,107
+That's right.
+
+175
+00:27:48,107 --> 00:27:52,107
+So go to the data.
+
+176
+00:27:52,107 --> 00:27:56,107
+Okay.
+
+177
+00:27:59,251 --> 00:28:25,867
+Bu da bu
+
+178
+00:28:26,259 --> 00:28:29,759
+Bu sadece örneğe.
+
+179
+00:28:29,759 --> 00:28:36,060
+Kegel'in pekleri, genelde Kegel'in bir kere, bir kere.
+
+180
+00:28:36,060 --> 00:28:41,259
+Bu, bu da bir yerden bir yerden bir yer.
+
+181
+00:28:41,259 --> 00:28:43,259
+Bu, bu da görmek istiyorum.
+
+182
+00:28:48,276 --> 00:28:52,276
+Bu da aynı data set?
+
+183
+00:28:52,276 --> 00:28:55,276
+Bu da aynı data set.
+
+184
+00:28:55,276 --> 00:29:01,276
+I'm also checking from brain image from my computer.
+
+185
+00:29:01,276 --> 00:29:08,276
+Brain image to morph cable.
+
+186
+00:29:27,796 --> 00:29:28,796
+Okey.
+
+187
+00:29:49,076 --> 00:29:54,715
+Bu eksempel, BREDTZ, Brain Emotion Mesh Segmentation Image in MRI.
+
+188
+00:29:55,475 --> 00:29:59,155
+Bu eksempel, you can use dataset here.
+
+189
+00:30:11,188 --> 00:30:17,188
+İlham veriyorum.
+
+190
+00:30:53,907 --> 00:30:55,947
+About this dataset, description.
+
+191
+00:30:56,407 --> 00:30:59,087
+This is the description of dataset.
+
+192
+00:31:00,527 --> 00:31:01,548
+No, no, no.
+
+193
+00:31:01,867 --> 00:31:02,367
+Go back.
+
+194
+00:31:02,727 --> 00:31:03,647
+Go back data.
+
+195
+00:31:07,587 --> 00:31:11,268
+Can you open about this dataset part?
+
+196
+00:31:14,627 --> 00:31:16,587
+There is an arrow.
+
+197
+00:31:16,907 --> 00:31:21,107
+There is an arrow at the explanation part.
+
+198
+00:31:21,428 --> 00:31:22,428
+Evet.
+
+199
+00:31:22,428 --> 00:31:23,428
+Yerdikçe?
+
+200
+00:31:23,428 --> 00:31:26,428
+Let me open it.
+
+201
+00:31:31,092 --> 00:31:34,540
+Klosyaşı Kriyün.
+
+202
+00:31:42,740 --> 00:31:44,740
+Can you see this page?
+
+203
+00:31:44,740 --> 00:31:46,740
+Yes, Doctor.
+
+204
+00:31:46,740 --> 00:31:54,740
+There's a description here. So if you want to read this description, you have to click this area.
+
+205
+00:31:54,740 --> 00:31:55,740
+Okay.
+
+206
+00:31:55,740 --> 00:31:57,740
+Yes, Doctor.
+
+207
+00:31:57,740 --> 00:31:59,740
+This is the original image.
+
+208
+00:31:59,740 --> 00:32:00,740
+Yes.
+
+209
+00:32:00,740 --> 00:32:03,740
+If you can find the details of this dataset.
+
+210
+00:32:04,084 --> 00:32:10,443
+Bu da 2015 challenge'in
+
+211
+00:32:10,443 --> 00:32:16,764
+4 types of MRI image.
+
+212
+00:32:16,764 --> 00:32:17,983
+Ok.
+
+213
+00:32:18,771 --> 00:32:20,771
+Tamam, tamam.
+
+214
+00:32:20,771 --> 00:32:22,771
+Drain cases are here.
+
+215
+00:32:22,771 --> 00:32:24,771
+Test cases are here.
+
+216
+00:32:24,771 --> 00:32:33,771
+So, you can use deep learning methods for segmentation here.
+
+217
+00:32:33,771 --> 00:32:34,771
+Okay.
+
+218
+00:32:34,771 --> 00:32:35,771
+Okay, Dr. Hamilis.
+
+219
+00:32:35,771 --> 00:32:36,771
+Is it segmentation?
+
+220
+00:32:36,771 --> 00:32:37,771
+Yes, segmentation.
+
+221
+00:32:37,771 --> 00:32:39,771
+This is a segmentation benchmark.
+
+222
+00:32:39,771 --> 00:32:40,771
+Yes.
+
+223
+00:32:40,771 --> 00:32:42,771
+So, you have to compare the results.
+
+224
+00:32:46,771 --> 00:32:52,692
+original article and read the specifications of this dataset.
+
+225
+00:32:53,412 --> 00:32:53,731
+Okay.
+
+226
+00:32:55,092 --> 00:33:00,371
+Then after downloading it, so you have to compare your results with something.
+
+227
+00:33:00,371 --> 00:33:01,572
+I understand.
+
+228
+00:33:01,572 --> 00:33:03,811
+This is original image.
+
+229
+00:33:05,092 --> 00:33:08,211
+There is a head image shown in this image.
+
+230
+00:33:09,331 --> 00:33:09,652
+Okay.
+
+231
+00:33:10,211 --> 00:33:11,891
+You need a ground truth file.
+
+232
+00:33:13,172 --> 00:33:13,412
+So.
+
+233
+00:33:13,951 --> 00:33:18,311
+Bu bir metodaki gibi, bir de learning segmentation,
+
+234
+00:33:18,311 --> 00:33:22,891
+eğer UNET, SEGNET,
+
+235
+00:33:22,891 --> 00:33:24,132
+eğer,
+
+236
+00:33:24,132 --> 00:33:27,172
+bu ime ve
+
+237
+00:33:27,172 --> 00:33:28,092
+ve
+
+238
+00:33:28,092 --> 00:33:31,211
+tümörü araya var.
+
+239
+00:33:31,211 --> 00:33:32,771
+Eğer,
+
+240
+00:33:32,771 --> 00:33:36,052
+bu salların araya var.
+
+241
+00:33:36,052 --> 00:33:37,731
+Bu,
+
+242
+00:33:37,731 --> 00:33:39,811
+bu exacte position
+
+243
+00:33:41,107 --> 00:33:57,647
+Tümör, you can find the exact position of the tumor area. So you have to compare these two images. Why? Because you have to get a numerical result for your success of your method.
+
+244
+00:33:57,948 --> 00:33:58,488
+Oh, I see.
+
+245
+00:33:59,187 --> 00:33:59,548
+Okay.
+
+246
+00:33:59,867 --> 00:34:00,927
+Okay, doctor. Get it.
+
+247
+00:34:01,847 --> 00:34:07,927
+These are, for example, overall accuracy, the overlapping, for example.
+
+248
+00:34:08,367 --> 00:34:12,367
+Ground truth you have to carry this on it.
+
+249
+00:34:12,367 --> 00:34:16,367
+How many areas are overlapped for example?
+
+250
+00:34:16,367 --> 00:34:18,367
+This is not 100 per...
+
+251
+00:34:18,367 --> 00:34:28,367
+We can't expect 100% overlapping with the ground truth.
+
+252
+00:34:28,367 --> 00:34:29,483
+So you have to get...
+
+253
+00:34:29,780 --> 00:34:34,140
+Överal Accuracy, e.g. intersection over union,
+
+254
+00:34:34,140 --> 00:34:38,780
+which kind of evaluation methods, evaluation matrix?
+
+255
+00:34:43,059 --> 00:34:58,059
+So, your duty is find MRI segmentation. MRI segmentation evaluation.
+
+256
+00:35:00,059 --> 00:35:08,940
+You have to read MRI segmentation related papers exactly from the years from 2018.
+
+257
+00:35:09,012 --> 00:35:11,012
+Tamam. Tamam.
+
+258
+00:35:11,012 --> 00:35:30,012
+How they evaluate their results? What kind of data sets they are using, for example? For example, we can start with the BRATS 15. But there's also another challenge. For example, BRATS 15.
+
+259
+00:35:33,588 --> 00:35:35,528
+18-19, I don't know.
+
+260
+00:35:36,948 --> 00:35:41,528
+First of all, start with that, then go on another BRATS datasets.
+
+261
+00:35:41,868 --> 00:35:43,488
+Okay.
+
+262
+00:35:43,828 --> 00:35:44,288
+I understand.
+
+263
+00:35:45,488 --> 00:35:45,988
+Okay.
+
+264
+00:35:46,507 --> 00:35:47,908
+Thank you so much for your information.
+
+265
+00:35:48,088 --> 00:35:52,868
+For example, you have showed us a MATLAB GUI.
+
+266
+00:35:53,387 --> 00:35:53,668
+Yeah.
+
+267
+00:35:53,668 --> 00:35:58,568
+You can load your test data and get the results.
+
+268
+00:35:59,251 --> 00:36:08,831
+Tamam, bu programı kullanabilirsiniz ama bu programı kullanabilirsiniz.
+
+269
+00:36:09,091 --> 00:36:14,471
+Ama bu programı kullanabilirsiniz. Bu programı kullanabilirsiniz. Bu programı kullanabilirsiniz.
+
+270
+00:36:14,471 --> 00:36:14,511
+Bu programı kullanabilirsiniz.
+
+271
+00:36:14,751 --> 00:36:19,351
+Tamam, doktor.
+
+272
+00:36:19,351 --> 00:36:21,451
+You can use any toolbox.
+
+273
+00:36:23,172 --> 00:36:25,091
+Tamam, doktor.
+
+274
+00:36:25,396 --> 00:36:26,596
+Tamam.
+
+275
+00:36:26,596 --> 00:36:30,496
+I don't want any gui from you.
+
+276
+00:36:30,736 --> 00:36:31,416
+Okay, understand.
+
+277
+00:36:31,536 --> 00:36:32,956
+I want just results.
+
+278
+00:36:33,115 --> 00:36:34,155
+It's enough for us.
+
+279
+00:36:34,676 --> 00:36:35,436
+Okay, that's right.
+
+280
+00:36:36,211 --> 00:36:37,331
+Yeni mi?
+
+281
+00:36:37,711 --> 00:36:38,672
+Evet, of course.
+
+282
+00:36:39,791 --> 00:36:40,791
+Okay.
+
+283
+00:36:40,992 --> 00:36:42,331
+Thank you so much for attending.
+
+284
+00:36:42,992 --> 00:36:43,431
+Okay.
+
+285
+00:36:43,711 --> 00:36:44,291
+No problem.
+
+286
+00:36:45,192 --> 00:36:49,751
+Please hurry on because we have got limited time.
+
+287
+00:36:50,751 --> 00:36:51,831
+Accelerate your works.
+
+288
+00:36:51,931 --> 00:36:52,172
+Okay.
+
+289
+00:36:52,471 --> 00:36:53,032
+Okay, doctor.
+
+290
+00:36:53,211 --> 00:36:53,492
+Of course.
+
+291
+00:36:53,931 --> 00:36:54,331
+Okay.
+
+292
+00:36:54,591 --> 00:36:55,311
+Thank you so much.
+
+293
+00:36:56,132 --> 00:36:56,532
+You too.
+
+294
+00:36:57,876 --> 00:37:09,296
+Go on, diyelim, kime diyelim? [öğrenci] mı, [öğrenci] mı? Ben anlatabilirim ama hocam. Tamamdır. Paylaş ekranını. Tamamdır.
+
+295
+00:37:12,884 --> 00:37:14,764
+Geldi mi hocam?
+
+296
+00:37:16,144 --> 00:37:16,824
+Geldi, evet.
+
+297
+00:37:18,123 --> 00:37:22,724
+Eşen hafta ne problemi vardı? Onu da bir hatırlatır mısın bize? Tam olarak hatırlayamayayım.
+
+298
+00:37:22,744 --> 00:37:39,423
+Onu çözdüm hocam. Şöyle verilen noktalar saçma yerlerde şey oluyordu, Servix 93'te. Saçma yerleri gösteriyordu. Onu çözdüm. Şu an soldaki resim orijinal yeri seçiminden alınmış görüntü.
+
+299
+00:37:39,956 --> 00:37:49,716
+Verilen koordinatları kullandığımda sağ tarafta çekirdekleri yuvarlak içine aldım. Bu yuvarlaklara Connected Component Analiz uyguladım.
+
+300
+00:37:57,172 --> 00:38:03,052
+Bu dataset'i detection için mi yoksa classification içinde kullanılıyor mu? Ne tür bir dataset'i?
+
+301
+00:38:03,572 --> 00:38:05,192
+İkisi için de kullanacağım hocam.
+
+302
+00:38:05,471 --> 00:38:11,992
+Hem detection yapacaksın hem de ne tip hücre olduklarını mı bulmaya çalışacaksın?
+
+303
+00:38:12,552 --> 00:38:19,552
+İlk segmentation yapıp çekirdekleri bulacağım. Sonrasında da bu rahim ağzı kanserinin şeyleri var hocam.
+
+304
+00:38:19,552 --> 00:38:24,332
+Nasıl, hızıl. Onları klasifika etmem gerekiyor. Çünkü veri seti öyle.
+
+305
+00:38:24,980 --> 00:38:28,340
+Yani çekirdekleri bulduktan sonra etrafında bir patch mi alacaksın?
+
+306
+00:38:28,699 --> 00:38:32,199
+Evet, öyle yapalım demiştik. Normalde veri seti var ama.
+
+307
+00:38:32,860 --> 00:38:37,000
+Peki, normal bu data setini kullanan paperlarda bizim dediğimiz gibi mi yapmış?
+
+308
+00:38:37,380 --> 00:38:43,019
+Hocam, hiç Servix 93 ile ilgili bir şey bulamadım. Çünkü bu veri seti de yeni yayınlanmış.
+
+309
+00:38:43,440 --> 00:38:43,760
+Ne zaman?
+
+310
+00:38:43,760 --> 00:38:50,199
+Sadece veri setinin şey çıkıyor. Yayınlandı, paper çıkıyor. Bir de şey var.
+
+311
+00:38:50,800 --> 00:38:52,940
+İşte hem classification hem segmentation.
+
+312
+00:38:52,980 --> 00:38:59,360
+Bunun yayınlandığı dataset de classification için bir çalışma yapılmış mı?
+
+313
+00:38:59,980 --> 00:39:06,119
+Şöyle bir veri seti vermişler. Onu size göstermiştim sanırım. Bir daha göstereyim.
+
+314
+00:39:15,603 --> 00:39:19,844
+Şöyle labels diye bir veri seti var hocam. Görebiliyor musunuz?
+
+315
+00:39:20,963 --> 00:39:21,323
+Evet.
+
+316
+00:39:22,223 --> 00:39:29,923
+Burada H olanlar hısıl, sıfır olanlar training, bir olanlar test içinde ayrıldığını gösteriyor.
+
+317
+00:39:30,683 --> 00:39:35,344
+Orjinal paper açar mısın? Onlar da bunu yayınladığına göre kullanmışlardır bir şekilde.
+
+318
+00:39:36,083 --> 00:39:36,743
+Tabii ki.
+
+319
+00:39:41,235 --> 00:39:42,076
+Olması lazım.
+
+320
+00:39:45,315 --> 00:39:52,115
+Onlar nesi sonuçları elde etmiş? Deep Learning metodları. Fullscreen yap bakayım, tam okunsun.
+
+321
+00:39:52,115 --> 00:39:59,815
+Bir saniye. İyice %100 yapayım. Şu an iyi sanırım.
+
+322
+00:40:03,076 --> 00:40:03,996
+Evet.
+
+323
+00:40:11,092 --> 00:40:12,792
+Deep Learning kullanmışlar.
+
+324
+00:40:13,752 --> 00:40:16,271
+Bizde gözükmüyor. İlk sayfada takıldı bende.
+
+325
+00:40:16,372 --> 00:40:19,472
+İlk sayfada şuradan okudum da Deep Learning diye.
+
+326
+00:40:21,771 --> 00:40:24,771
+93 gerçek imaj var diyor burada.
+
+327
+00:40:25,431 --> 00:40:31,431
+3 tane sınıfları var. Nasıl? Nasıl? Bir tane de negatif olması lazım.
+
+328
+00:40:31,431 --> 00:40:34,552
+Yani bu resmin tamamına mı ait bir sınıf?
+
+329
+00:40:35,891 --> 00:40:50,331
+Orada bir sürü detection yapacağız. Bunların hepsini detect edip, bu 93 resmin tamamı mı bir sınıfı belirtiyor? Şekirdekleri bulmamızın bize faydası ne olacak mesela?
+
+330
+00:40:52,451 --> 00:40:58,851
+Bu veri setinde nükleer segmentation de çalışılabiliyor.
+
+331
+00:40:59,219 --> 00:41:04,119
+Çalışabiliyor. Yoksa resmin bir görüntünün tamamı bir sınıfa ait. Zaten onlar da o şekilde sınıflandırılıyor.
+
+332
+00:41:04,119 --> 00:41:12,319
+O zaman biz şeyleri bulduktan sonra, peki bir tane örnek görüntü açar mısın? Demin başta açtın.
+
+333
+00:41:13,179 --> 00:41:16,339
+Mesela frame 12'yi açabilirim.
+
+334
+00:41:16,339 --> 00:41:20,239
+Şeyde, senin sunumundaki sunumunu aç.
+
+335
+00:41:21,379 --> 00:41:22,339
+Mesela...
+
+336
+00:41:22,612 --> 00:41:29,771
+Mesela buradaki hücrelerin hepsini aynı sınıftadır diyebilir miyiz? Yani aynı sınıfı işaret ediyor diyebilir miyiz bu hücrelerine?
+
+337
+00:41:29,791 --> 00:41:33,771
+Onlar öyle sınıflandırmış hocam. Mesela bu resim bir sınıfa ait.
+
+338
+00:41:34,291 --> 00:41:38,231
+Tamam. Hani şunu söyleyebilir miyiz? Daha önce servikste çalıştığın için söylüyorum.
+
+339
+00:41:39,032 --> 00:41:43,112
+Biz mesela bu çekirdeklerin etrafında ufak peçler alsak.
+
+340
+00:41:43,539 --> 00:41:52,119
+Her bir hücreyi çıkarmaya çalışsak yaklaşık. Hepsine mesela sınıf numarasına bir verdim. Kaç tane sınıf var? Dört tane mi?
+
+341
+00:41:52,279 --> 00:41:52,579
+Üç.
+
+342
+00:41:52,976 --> 00:42:14,355
+3 tane. Desek ki bu hücrelerin hepsi, bu çekirdek merkezlerini bulduktan sonra örneğin 30'a 30'a piksel alıp yaklaşık olarak hepsini kaplatmaya çalıştık mesela hücrelerin. Bunların hepsi bir sınıfa aittir diyebilir miyiz? Yani 3 sınıfın birine aittir. Başka bir resimde.
+
+343
+00:42:14,800 --> 00:42:20,960
+Hepsi hücrelerin farklı sınıfı aytı. Bir bakabilir miyiz şöyle farklı sınıflara ait resimlere?
+
+344
+00:42:20,960 --> 00:42:41,300
+Tabii ki onun veri setinden açayım. Daha bir şey olabilir. Mesela Frame 12 açabilirim. Daha bakayım. Frame 12, Frame 33, bir de Frame 77 diye bakalım. 3 farklı sınıf.
+
+345
+00:42:56,820 --> 00:42:59,800
+Bu bir sınıfa ait bir görüntü hocam.
+
+346
+00:43:04,659 --> 00:43:09,460
+Yüksek dereceden bir bozukluğun oldu. Diğerlerini de bulayım.
+
+347
+00:43:11,460 --> 00:43:15,860
+33 demiştim. Bu düşük derecede bir bozukluk.
+
+348
+00:43:17,860 --> 00:43:19,460
+Bir de 77.
+
+349
+00:43:25,427 --> 00:43:27,427
+Bu da normal bir ücret.
+
+350
+00:43:27,427 --> 00:43:29,427
+Anladım.
+
+351
+00:43:29,427 --> 00:43:33,427
+Peki bu dataset'inde multifocus değil mi?
+
+352
+00:43:33,427 --> 00:43:37,427
+Yani şöyle bir şey kullanıp, açar mısın dataset'indeki görüntüler?
+
+353
+00:43:37,427 --> 00:43:41,427
+Bir EDF gibi gri seviye resimler var.
+
+354
+00:43:41,427 --> 00:43:45,427
+Ben senden hem EDF'de çalışmanı istiyorum hem de...
+
+355
+00:43:45,427 --> 00:43:47,427
+Bir de şöyle var hocam.
+
+356
+00:43:49,588 --> 00:43:52,307
+Bir de stek stek ayırılanlar var.
+
+357
+00:43:52,307 --> 00:43:59,428
+Evet, evet. Yani stek stek bu resimleri görebileceğimiz, yani kaç stek, 20 katmanlı bir resim oluyor değil mi?
+
+358
+00:44:00,168 --> 00:44:01,807
+Evet, 20 tane var bunda.
+
+359
+00:44:02,548 --> 00:44:06,588
+Şimdi, ben senden önce segmentation yapmanı istiyorum.
+
+360
+00:44:06,807 --> 00:44:07,028
+Evet.
+
+361
+00:44:07,028 --> 00:44:11,728
+Ama bir EDF ile yapmanı istiyorum. Bir de bu 20 katmanlı haliyle yapmanı istiyorum.
+
+362
+00:44:12,096 --> 00:44:14,196
+Tamam, HDP'yi yaptım zaten.
+
+363
+00:44:15,396 --> 00:44:23,796
+Bir bakabilir miyim senin paperında daha sonrakiler için segment edilmiş bir resimler var. Ona da bir bakalım.
+
+364
+00:44:23,796 --> 00:44:25,316
+Tabii ki.
+
+365
+00:44:27,756 --> 00:44:31,556
+Paper'ı kapatmışım sonra. Tekrar atıyorum.
+
+366
+00:44:38,195 --> 00:44:40,795
+Böyle şeyleri, veri setini tanıtmışlar.
+
+367
+00:44:46,867 --> 00:44:48,067
+Aşağıya mı bakayım?
+
+368
+00:44:49,847 --> 00:44:53,467
+Precision. Şeylerini anlatmışlar. Deep Learning'ı tuttum.
+
+369
+00:44:53,967 --> 00:45:02,807
+Deep Learning'de şey mi verdiler acaba? Bunların hepsini, görüntünün tamamını verip onu mu sınıflandırmaya çalıştılar acaba?
+
+370
+00:45:04,907 --> 00:45:09,748
+75'e 75'e Image Pet yazmışlar buraya mı hocam?
+
+371
+00:45:10,260 --> 00:45:18,820
+75'e 75 resimler elde edip kaydıra kaydıra şey mi topladılar acaba?
+
+372
+00:45:19,440 --> 00:45:21,360
+Training dataset oluşturmuşlar.
+
+373
+00:45:21,360 --> 00:45:31,180
+Tamam, sen de aynı şekilde yap. Ben senden şey istiyorum [öğrenci], segmentation [öğrenci]. Yani hücre merkezlerini bulmaya gerek yok o zaman anladığım kadarıyla.
+
+374
+00:45:33,108 --> 00:45:35,847
+Yani sadece patch alacaksak bir resimden.
+
+375
+00:45:36,068 --> 00:45:38,128
+Yani evet patch alacaksak gerek yok.
+
+376
+00:45:38,148 --> 00:45:41,648
+O zaman sen transfer learning çalış bunun. Buna göre bir paper hazırla.
+
+377
+00:45:42,907 --> 00:45:49,268
+Yani learning metotları dimmetlepte gösterdik ya veya python'da göstermiştik. Ona göre sen ilerle.
+
+378
+00:45:50,467 --> 00:45:51,028
+Tamam.
+
+379
+00:45:53,168 --> 00:45:54,688
+Resimler kaça kaçtı?
+
+380
+00:45:55,288 --> 00:45:55,648
+Bakın.
+
+381
+00:45:55,648 --> 00:45:56,867
+Resimler kaça kaçtı?
+
+382
+00:45:57,268 --> 00:45:58,604
+Resim boyutları...
+
+383
+00:45:58,931 --> 00:46:03,531
+Benim çalıştıklarım 960'a 1280 sanırım hocam. Boyutları büyük.
+
+384
+00:46:03,911 --> 00:46:08,651
+Tamam sen bunlar gibi 75'e 75'e alma. 128'e 128 alarakilerle.
+
+385
+00:46:08,831 --> 00:46:11,431
+256'e 256 almıştım ben.
+
+386
+00:46:11,751 --> 00:46:12,491
+Tamam, başka?
+
+387
+00:46:14,031 --> 00:46:20,351
+128'e 128'i denedim. Sonra 256'e geldim. 512'de fazla kasıyor.
+
+388
+00:46:21,011 --> 00:46:24,271
+Diklionik çalışırken. O yüzden 256'da kaldım.
+
+389
+00:46:24,271 --> 00:46:25,011
+Tamam.
+
+390
+00:46:25,811 --> 00:46:32,611
+O zaman 64, 256 ve 128 ile karşılaştırma olarak bir çalışalım.
+
+391
+00:46:32,671 --> 00:46:36,491
+Tamam, sanki boyut büyüdükçe daha iyi oluyor gibi gelmiştim ama.
+
+392
+00:46:36,631 --> 00:46:44,591
+Tabii yani daha böyle uzamsal şeylerle çıkıyor. Zaten biz onu da vurgulayacağız altına. Peki hangi network'ü kullandın ve sonuçlar mı?
+
+393
+00:46:45,151 --> 00:46:46,571
+Yönet kullandım hocam.
+
+394
+00:46:46,963 --> 00:47:12,844
+Yönet kullandın. Ama sonuç kötü oluyor. Çünkü hem verim sayım çok az. Yönet'te daha çok segmentation yapılıyor ama daha çok. Evet, segmentation için kullandım zaten hocam. Bir dakika şöyle ki. Bu da bir de bunun segmentlerini de veriyorlar mı aynı zamanda yoksa sadece hücre merkezlerini mi veriyorlar? Hücre merkezini vermişler sadece. Bir aşağı in bakayım. Üçüncü, dördüncü slide'ına bir bakayım. Bu şekilde hocam şey yaptıktan sonra analizle.
+
+395
+00:47:13,331 --> 00:47:18,811
+Ben bunları sadece çekirdeklerini çıkardım. Şu şekilde mesela bir tanesini.
+
+396
+00:47:20,572 --> 00:47:21,411
+Tamam.
+
+397
+00:47:23,331 --> 00:47:34,871
+Böyle ayırdım. Bunu mask olarak verdim sisteme. Output olarak bunu verdim. Input olarak da şu görüntüyü verdim. Yuvarlak içine aldığım.
+
+398
+00:47:35,371 --> 00:47:39,451
+Sen çekirdekleri bulduktan sonra bunların çevresinde şeyi alıyorsun değil mi?
+
+399
+00:47:39,451 --> 00:47:40,331
+Hı hı.
+
+400
+00:47:40,692 --> 00:47:50,572
+Patch'leri alıyorsun. Evet. Tamam. Bu şekilde verdim ama ekürisi çok düşük çıkıyor. Nedenini çözmeye çalışıyorum ne yapabilirim diye.
+
+401
+00:47:50,572 --> 00:47:57,992
+[öğrenci] bakayım bir sonucuna bakayım. Şu dördüncü slide'ına bakayım senin. O şey hocam Herlev. Herlev'de bir sıkıntı yok onu yaptım.
+
+402
+00:47:58,164 --> 00:48:10,543
+Anladım. O zaman şöyle bir şey yapacaksın. Hücre merkezlerini bulduktan sonra patchleri alacaksın. Pre-trained networkleri kullanıp o 3 sınıfa göre ayarlayacaksın sen şeyini.
+
+403
+00:48:11,224 --> 00:48:11,563
+Tamam.
+
+404
+00:48:12,563 --> 00:48:16,864
+Metap'te veya Python'da yaparsın. 3 sınıfa göre ayarlayacaksın.
+
+405
+00:48:18,579 --> 00:48:34,839
+O patchleri bir de şey de yapmayı unutma tabii ki. Data Augmentation diyorlar ya. Sonuçta senin toplam kaç tane resim vardı? 93 tane var çok az hocam. Bunların kaç kaç ayrılıyordu her sınıf?
+
+406
+00:48:36,436 --> 00:48:41,795
+Ben kendim trend test yaparken %20 test şeklinde ayırdım.
+
+407
+00:48:41,856 --> 00:48:44,596
+Hayır, hayır. Onu demek istemiyorum. Bu da kaçı normaldi?
+
+408
+00:48:45,356 --> 00:48:50,175
+Sayısını hocam makalede yazıyor olabilir. Şu an hatırlamıyorum ama.
+
+409
+00:48:50,715 --> 00:48:52,175
+Hadi 30-30-30 diyelim.
+
+410
+00:48:52,175 --> 00:48:52,436
+Evet.
+
+411
+00:48:52,755 --> 00:48:58,096
+Mesela bu 30 tane normal, 30 tane başkasının, 30 tane başkasının.
+
+412
+00:48:58,516 --> 00:49:04,436
+Her birinden örneğin 30 resimden yaklaşık olarak. Mesela şu gördüğümüz resimde bakıyorum.
+
+413
+00:49:04,436 --> 00:49:25,076
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 tane resim çıkarabiliyorsun. 30 taneden 20 tane çıkarıyorsan, 20 tane hücre merkezi var ya, bunun etrafında patch alıyorsun. 64, 128 veya 212.
+
+414
+00:49:25,583 --> 00:49:33,824
+256'lık alsan yeterli. Daha sonra onu küçültürsün. Hücre merkezi gelmek kaydıyla. Tamam mı?
+
+415
+00:49:35,483 --> 00:49:48,264
+Onu yaptıktan sonra dolayısıyla her bir resimde yani bir sınıfa ait 600 tane resmin oluyor. Bir de şey yap bunlarla beraber. Data Augmentation yap. Yani datayı, patch'i döndür.
+
+416
+00:49:48,672 --> 00:49:49,172
+Evet.
+
+417
+00:49:49,412 --> 00:49:56,592
+Üç yöne, dört toplam dört yöne dönebiliyor biliyorsun. Artı bir de diagonal yansıtma yap. Tamam mı? Tamam.
+
+418
+00:49:56,592 --> 00:50:00,000
+Biz o zaman kabulümüz şu, çekilen her bir...
+
+419
+00:50:00,000 --> 00:50:08,199
+Hücrelerin tipleri aynı ve aynı genel olarak o kesilen bölge aynı hastalık tipindeki hücrelerden oluşuyor.
+
+420
+00:50:08,360 --> 00:50:18,159
+Şöyle hocam, sizin dediğinizde bir tekrar şey yapayım. Siz bana diyorsunuz ki bir görüntüdeki tüm çekim hücreleri ayrı ayrı çalış ve hepsine bir sınıf atar.
+
+421
+00:50:18,280 --> 00:50:19,000
+Patchler olarak.
+
+422
+00:50:20,079 --> 00:50:24,480
+Evet, yani bu şekilde yapmalı. Zaten patch çıkaracağız ya resimden.
+
+423
+00:50:25,043 --> 00:50:32,244
+Zaten hücre merkezlerini biliyorsak, peçleri de hücreleri içeren resimlerden çıkartmamız lazım.
+
+424
+00:50:32,824 --> 00:50:38,103
+Onlar 75'e 75 yapmış ama beyaz bölgeye gelirse ne olacak o 75'lik peçler?
+
+425
+00:50:38,503 --> 00:50:43,923
+Onlar da büyük ihtimalle hücre merkezlerini bulduktan sonra etrafında peç aldılar 75'e 75.
+
+426
+00:50:44,824 --> 00:50:46,664
+Yani onu netleştir önce kafanda.
+
+427
+00:50:46,664 --> 00:50:47,804
+Tamam denelim.
+
+428
+00:50:48,583 --> 00:50:50,344
+Data Augmentation yap.
+
+429
+00:50:50,688 --> 00:50:56,927
+Arkasından transfer learning kullanman lazım ki sonuçların daha iyi çıksın.
+
+430
+00:50:58,927 --> 00:50:59,608
+Evet.
+
+431
+00:51:01,427 --> 00:51:02,168
+Anlaştık.
+
+432
+00:51:02,208 --> 00:51:03,788
+Tamam, bu hafta buna bakalım hocam.
+
+433
+00:51:04,208 --> 00:51:06,407
+Herle bir de UNED çalışacaktım, onu yaptım.
+
+434
+00:51:07,188 --> 00:51:07,708
+Şöyle hocam.
+
+435
+00:51:07,728 --> 00:51:09,688
+Herle segmentation o zaman anladığım kadarıyla.
+
+436
+00:51:09,708 --> 00:51:11,367
+Hem segmentation hem classification.
+
+437
+00:51:12,148 --> 00:51:13,688
+Onda kaç tane sınıf vardı?
+
+438
+00:51:14,387 --> 00:51:15,048
+7 tane.
+
+439
+00:51:15,423 --> 00:51:41,483
+7 tanesini. O ikisini beraber kullanırsın o zaman. Evet, iki ayrı veri setiyle çalışma yapmış. Bunda da classification'da aynı şekilde transfer learning kullanabilirsin. Evet, evet. Ama transfer learning'de de yeni yöntemlere daha çok git. Mesela MATLAB'de bile NASNET, Inception, Exception. Inception düşünmüştüm ama hocam. Yani birkaç tane farklı metot kullanıp karşılaştıralım birbirli.
+
+440
+00:51:41,483 --> 00:51:43,144
+Tamam, ResNet, Inception.
+
+441
+00:51:43,423 --> 00:51:55,963
+İşte VGG kullanırım. VGG'ye gerek yok. VGG çok eskide kaldı. Bir de NAS Net diye bir şey var mesela yenilerden. Ona da bir bakalım. Ne dediniz hocam? Notalım. NAS Net diye bir şey var. Tamam.
+
+442
+00:51:55,963 --> 00:51:57,184
+Tamam.
+
+443
+00:51:58,103 --> 00:51:59,103
+Ona da bir bakalım.
+
+444
+00:51:59,664 --> 00:52:09,603
+Bunda sol taraftaki onların bize verdikleri mask var. Sağ tarafta da benim UNET sonucu elde ettiğim bir mask var.
+
+445
+00:52:10,195 --> 00:52:14,496
+Burada ne var? Mesela açık mavi ne? Koyu mavi ne? Bir de o sarılar ne?
+
+446
+00:52:14,496 --> 00:52:16,956
+Açık mavi şöyle hocam, çekirdek.
+
+447
+00:52:17,775 --> 00:52:18,056
+Tamam.
+
+448
+00:52:18,476 --> 00:52:23,456
+Koyu mavi, yani stoplazma sınırı. Kırmızı zaten arka plan.
+
+449
+00:52:24,235 --> 00:52:24,675
+Sarı?
+
+450
+00:52:25,876 --> 00:52:29,195
+Gri'ler de hocam, bu çıkıntılar. Onlar...
+
+451
+00:52:29,556 --> 00:52:33,155
+Biraz Herlevin veri setinde çözünürlük baya kötü.
+
+452
+00:52:33,756 --> 00:52:35,456
+Belirsiz olan bölgeler.
+
+453
+00:52:35,675 --> 00:52:39,195
+Evet ama çekirdek orta olan kısım.
+
+454
+00:52:39,256 --> 00:52:45,316
+Sen de aynı şekilde burada da çekirdeği bulma, önce bir segmentation başarısı verirsin.
+
+455
+00:52:45,836 --> 00:52:50,516
+Arkasında bunların içerisinde patchler toplayarak aynı şekilde herhalde ilerleyeceksin.
+
+456
+00:52:50,516 --> 00:52:52,816
+Evet burada da %85.
+
+457
+00:52:56,179 --> 00:53:22,179
+Bu segmentation sadece. Evet, evet. Unet'in segmentation'ı. Burada da hocam biraz daha parametreleri değiştirerek açıkçası segmentation başarısını artırmak istiyorum ama Colab GPU desteği vermiyor artık bana. Cagle'a geçmem gerekiyor. Neden vermiyor sana? Sanırım hocam çok fazla, yani öyle yazıyor. Çok fazla kullandığım için hesaplamalı işlemleri.
+
+458
+00:53:22,835 --> 00:53:24,476
+Kısıtlama getirilmiş.
+
+459
+00:53:24,996 --> 00:53:27,195
+O zaman şey yap, başka bir hesap aç şeyle.
+
+460
+00:53:28,996 --> 00:53:30,755
+Başka bir Gmail hesabı al.
+
+461
+00:53:31,735 --> 00:53:32,235
+Onunla gir.
+
+462
+00:53:33,556 --> 00:53:37,536
+Evet, öyle yapabilirim. Bir de Kaggle'a geçeceğim. Bir de orayı denemek istiyorum.
+
+463
+00:53:37,615 --> 00:53:39,155
+Tamam, ikisini de deneyebilirsin.
+
+464
+00:53:40,215 --> 00:53:40,455
+Tamam.
+
+465
+00:53:40,455 --> 00:53:45,115
+O şekilde onu halledeceğim. Bu şekilde benim söyleyeceklerim bu kadar.
+
+466
+00:53:45,536 --> 00:53:46,935
+Tamamdır, kolay gelsin.
+
+467
+00:53:47,056 --> 00:53:47,915
+Teşekkür ederim.
+
+468
+00:53:47,996 --> 00:53:49,315
+Çalışmaları hızlandıralım.
+
+469
+00:53:49,695 --> 00:53:51,003
+Tamam.
+
+470
+00:53:54,003 --> 00:53:55,623
+[öğrenci] sana geçelim.
+
+471
+00:53:56,443 --> 00:53:57,543
+Merhaba hocam.
+
+472
+00:54:01,972 --> 00:54:03,172
+Sen anlat şimdi.
+
+473
+00:54:05,291 --> 00:54:20,072
+Şimdi öncelikle ben Brass Data Set'ini kullanmaya çalışıyordum. Ama geçen haftalarda bunu koda yediremiyordum bir türlü. Yani ya kodda bir sorun çıkıyordu ya veri setini bir türlü koda alamıyordum. İki tane şey elde ettim.
+
+474
+00:54:20,692 --> 00:54:45,031
+Bu şeyde elde ettiğim... Ben onu da sorayım. Şimdi demin [öğrenci]'te bu dataset'in 2015 versiyonuyla çalışıyordu. Bir de şunu da göstermişti herhalde. Neyi? Şu dataset'ini de göstermişti herhalde. Yani bunların hepsi tümörlü mü? Şey yok hocam. Dinliyorsun bizi değil mi [öğrenci]? Ne zikta her yol.
+
+475
+00:54:45,396 --> 00:54:48,396
+[öğrenci]'a da konuşuyor musunuz?
+
+476
+00:54:48,396 --> 00:54:54,396
+Evet, Doktor. O, aynı şeyde de söylediğim gibi.
+
+477
+00:55:09,331 --> 00:55:12,452
+Hepsinde tümör bölgesi gösterilmiş mi bu datasette?
+
+478
+00:55:12,592 --> 00:55:24,791
+Şöyle hocam, mesela bu resminin genelde 155 derinliği var. İlk 40 derinlikle son 30 derinlikte falan şu maske gözükmüyor. O yüzden yok diye kabul ediliyor.
+
+479
+00:55:24,791 --> 00:55:35,791
+Derinlik dediğim aslında slice slice. Katman katman gittiği için tabii ki biz 3 boyutlu düşünelim. Her katmanda tümör olacak diye bir şey yok. Gittikçe azalacak ve yok olacak sonuçta.
+
+480
+00:55:36,947 --> 00:55:51,628
+Sonuçta bir 3 boyutlu bir nesneyi, bir 3 boyutlu nesnenin içinde arıyoruz biz değil mi? Kesit aldığımız zaman yan kesitlerini, tümör oluştuğu, tümörün olduğu bölgelerde sadece tümörü göreceğiz. Bir sonraki kesitte boyut devamlı değişecek.
+
+481
+00:55:53,827 --> 00:55:54,088
+Aynen.
+
+482
+00:55:55,447 --> 00:56:03,628
+Evet. Yani 155 katmana ait şeyler var mı? Her bir katmana ait, grand trutları da ayrı ayrı mı vermişler?
+
+483
+00:56:03,628 --> 00:56:04,068
+Evet.
+
+484
+00:56:04,788 --> 00:56:11,728
+O yüzden Halit'in ilk gösterdiği resimde bazı katmanlarda sıfırdı değil mi?
+
+485
+00:56:12,847 --> 00:56:16,528
+Evet o yüzden. Hemen şurada bir şey gösterebilirsem.
+
+486
+00:56:16,528 --> 00:56:18,148
+Ha şurada.
+
+487
+00:56:18,771 --> 00:56:34,392
+Mesela burada bu tabii farklı bir şey de, atıyorum 150'yi eklediğimizde 70. 80. katmandaki bu resmi karşılık geleması gibi bu. Ama bunu değiştirdiğimizde işte, eğer çok altlardaysa çok nadiren şey çıkıyor. Tümörlü varsa çıkıyor ama.
+
+488
+00:56:35,552 --> 00:56:36,032
+Anladım.
+
+489
+00:56:36,692 --> 00:56:38,512
+Veya çok yukarılarda da çıkmıyor genelde.
+
+490
+00:56:38,512 --> 00:56:44,032
+Peki o zaman biz bu tümör segmentation dediğimiz, bu her layer'da yapacak mıyız bunu?
+
+491
+00:56:45,396 --> 00:57:00,175
+Toplam kaç tane MR imajımız var bizim? Toplam bu set için 349. Benimki 2020 set tamam mı? Tamam 349 tane bu kafa beyin imajı var. Bunun her biri de 155 katmandan oluşuyor.
+
+492
+00:57:01,215 --> 00:57:08,516
+Bir de şey, burada bir de 4 farklı görüntü yöntemiyle alınmış görüntüler var. Bir de segmentasyon 5.
+
+493
+00:57:09,907 --> 00:57:13,007
+Segmentasyon dediği onların gram turutunu mu kastetiyor?
+
+494
+00:57:13,007 --> 00:57:17,007
+Evet, evet. Yani şu şekilde. Yine 3 boyutlu data ama sadece şu maske var.
+
+495
+00:57:18,927 --> 00:57:24,707
+Şeyi anlayamadım. Dataset için 150 katmanlı bir resim var. Doğru mu?
+
+496
+00:57:24,707 --> 00:57:25,288
+Evet.
+
+497
+00:57:26,268 --> 00:57:30,687
+Artı her katmana ait maskler var. O da 150 katmanlı.
+
+498
+00:57:32,211 --> 00:57:41,512
+Başka ne var demiştin? Farklı çekim teknikleri var. Aynen, farklı çekim teknikleri var ama sadece Flayer'da kullanılsa olur herhalde. Ben yine dördünü de kullandım da.
+
+499
+00:57:43,392 --> 00:57:52,452
+Dördünü de katman katman mı verip kullandın? Niye? Teker teker bir yap, ondan sonra dördünü beraber kullanırsın.
+
+500
+00:57:53,012 --> 00:57:55,632
+O zaman tamam, onu ayırırım şurada en başta.
+
+501
+00:57:56,172 --> 00:58:01,232
+Her biri, mesela ne atlar onların? Ben buradan okuyamıyorum, biraz yaklaştırsanın.
+
+502
+00:58:02,712 --> 00:58:08,912
+Sağda bir tane direktörü var ya, onu bir açsana. Daha büyüksene daha doğrusu, yazıları okuyayım oradaki.
+
+503
+00:58:10,912 --> 00:58:12,732
+Sağ taraftaki direktörüyü aç.
+
+504
+00:58:12,732 --> 00:58:14,432
+Sağ taraftaki.
+
+505
+00:58:15,284 --> 00:58:22,304
+Hangisini hocam? O, mouse'un üzerinde bulunduğu direktörüyü bir açsana, böyle büyütsene daha doğrusu. Okuyamıyorum dosya adlığını.
+
+506
+00:58:22,884 --> 00:58:23,903
+Tamam, pardon.
+
+507
+00:58:26,963 --> 00:58:29,364
+Tam ekran yapsana onu, böyle de gözükmüyor.
+
+508
+00:58:31,063 --> 00:58:33,364
+Monitörümün çözünürlüğü biraz yüksek, galiba ondan.
+
+509
+00:58:33,364 --> 00:58:36,140
+Biraz bir...
+
+510
+00:58:36,244 --> 00:58:54,044
+Training diyor, Training diyor. Şey işte, biraz 20 Training 001, sonra ikinci klasöre girdiğimizde 002, sonra Flayer T1, T1CE, T2. Bunlar da görüntü yöntemi. Onları hızlıca şöyle gösterebilirim.
+
+511
+00:59:01,492 --> 00:59:04,871
+Sıvı modele göre, çekim yöntemi kısaca.
+
+512
+00:59:04,871 --> 00:59:19,092
+Anladım, anladım. Mesela orijinal tipli 4 tane resmimiz olabiliyor bizim. Anladım ben kafaya göre. Dolayısıyla 4 katmanlı her bir layer için 4 tane farklı resim çıkarabiliyoruz. Öyle değil mi?
+
+513
+00:59:19,440 --> 00:59:26,659
+Ama aynı görüntünün farklı şekilde, atıyorum, filtre uygulanmış gibi düşünebiliriz.
+
+514
+00:59:26,679 --> 00:59:30,480
+Anladım. Olsun daha iyileştirebiliriz. Ayrı ayrı bir yaparız.
+
+515
+00:59:31,019 --> 00:59:34,539
+Veya dördünü de kullanabiliriz de.
+
+516
+00:59:35,259 --> 00:59:40,699
+Peki bunları yaparken segmentasyon sonucu mu var senin?
+
+517
+00:59:41,099 --> 00:59:45,800
+Her layer'de ayrı ayrı bir çalışıyorsun. Yani Grand Truth olduğu sürece.
+
+518
+00:59:45,800 --> 00:59:46,480
+Evet.
+
+519
+00:59:47,219 --> 00:59:49,239
+Direkt şey zaten, karşılık geliyor.
+
+520
+00:59:49,259 --> 00:59:52,719
+Yüzünde var diyelim. Sadece o yüzünde çalışıyorsun değil mi?
+
+521
+00:59:54,399 --> 00:59:55,539
+Mesela bunun için bir çalışma.
+
+522
+00:59:55,539 --> 00:59:56,839
+Orjinaller böyle mi çalışmış?
+
+523
+00:59:58,099 --> 01:00:05,059
+Orjinaller herhalde direkt hepsini döndürüyor. Şu an burada da olduğu gibi. Dolayısıyla atıyorum ben şurada.
+
+524
+01:00:05,907 --> 01:00:23,587
+Çok altlara baktığımda bana maske çıkarmaması lazım. Mesela burada tam ortasına baktığımız için bir de denk gelmiş. O yüzden direkt karşılık edebi maske var ama en altına baktığımızda bize maske çıkarmaması için herhalde örneklerini de geçirmek gerekiyor. Tümel olmayan bölge örneklerini.
+
+525
+01:00:23,587 --> 01:00:26,847
+Ama çalışmayı çok aşırı...
+
+526
+01:00:31,155 --> 01:00:41,115
+Veya belli bir boyutun altında sadece gürültü içeriyorsa, mesela ufak ufak benekler kaldı diyelim. Mesela bunları kullanmayacaksın. Anlayabiliyorsun değil mi?
+
+527
+01:00:43,235 --> 01:00:44,876
+Sanırım şunu diyorsunuz.
+
+528
+01:00:45,076 --> 01:00:51,255
+Maska bakınca eğer Grand Truth yoksa onu değerlendirmeye almıyorsun. Onlar da mı öyle yapmışlar?
+
+529
+01:00:51,976 --> 01:00:53,336
+Onlar da öyle yapmış olması lazım.
+
+530
+01:00:53,811 --> 01:01:00,311
+Peki, onlar nereli yöntemi kullanmışlar? Sen UNET mi kullandın?
+
+531
+01:01:00,711 --> 01:01:10,231
+Ben UNET, ondan sonra bir de RESUNET karışımı bir yöntem var. RESUNET ile UNET'in biraz hibriti. İkisini kullandım şimdilik ama bunu geliştireceğim. Bu özgün değil.
+
+532
+01:01:11,471 --> 01:01:16,251
+Bu sadece en azından elimde 2-3 farklı sonuç olsun diye ikisini buraya toparladım.
+
+533
+01:01:16,271 --> 01:01:19,491
+Bir de şey var, double UNET diye bir şey var. Duydun mu? Double UNET.
+
+534
+01:01:19,956 --> 01:01:21,996
+Double unit duymamıştım.
+
+535
+01:01:22,715 --> 01:01:37,135
+Onu da bir not al. Yani segmentation yapan networkleri, sen şimdi burada bir görüntüyü veriyorsun. Bir de ground truth vererek network'ün kendi segmentlerini çıkarabilmesini sağlamaya çalışıyorsun. Doğru mu?
+
+536
+01:01:38,547 --> 01:01:42,427
+Orijinal resimlerin boyutları kaç? Her bir slice'ın boyutu?
+
+537
+01:01:43,467 --> 01:01:44,887
+256'ya 256.
+
+538
+01:01:45,487 --> 01:01:47,367
+Tamam, güzel. Kaldırabiliyor bunu.
+
+539
+01:01:47,907 --> 01:01:49,567
+Şimdi ben senden şunu istiyorum.
+
+540
+01:01:49,567 --> 01:02:01,487
+Yani Grand Truth olduğu sürece, ki orijinalde de öyle yapmışlar zannedersem, bu 150 Slite'ın örneğin 100 tanesi veya ne bileyim 50 tanesi Grand Truth içeriyor.
+
+541
+01:02:02,228 --> 01:02:04,547
+Yani karşılaştırılabilir seviyede.
+
+542
+01:02:05,172 --> 01:02:24,871
+Demek ki bu 50 tanesiyle çalışacağız her bir şey için, her bir hasta için. Tam 349 var ama 349 tanesini de tümör bölgesinde, bu 349 olması bizi çok ilgilendirmiyor. Biz bunların sadece beyin bölgelerindeki segmentleri doğru bulup bulmadığına bakıyoruz aslında.
+
+543
+01:02:26,271 --> 01:02:27,231
+Doğru mu?
+
+544
+01:02:27,751 --> 01:02:28,011
+Evet.
+
+545
+01:02:28,011 --> 01:02:32,011
+Tamam. Dolayısıyla sen öncelikli olarak bu...
+
+546
+01:02:33,172 --> 01:02:59,992
+Önce bir kontrol yap. Grand Truth'una önce bir resmin gireceksin. Bakacaksın hangi layer'larda Grand Truth varsa onların üzerinde birebir çalışmaya başlayan. Bazı layer'larda şey olabilir. Ufak tefek noktasal birkaç piksellik, 15-20 piksellik alanlar olabilir. Aynı şu yukarıda senin çektiğin gibi mesela. Bir geri gel. Bir resim gösteriyordun bize.
+
+547
+01:03:00,596 --> 01:03:03,415
+Şunun gibi olması lazım. Şuradaki gibi biliyorsun.
+
+548
+01:03:03,435 --> 01:03:13,576
+Onun gibi olanların olduğu yeri çok gerek yok. Okula gösterdiğin yer gibi ufacık kalmışsa onları da almazsın. Orada da bir araya check yaparsın. Tamam mı?
+
+549
+01:03:13,576 --> 01:03:22,576
+Onu, bunu soracaktım size. Kafamı karıştırdı. Ben açtım böyle teker teker slicelardan bakıp tespit etmeyi sordum. Burada acaba gerçekten bir bölge mi var?
+
+550
+01:03:23,576 --> 01:03:26,975
+Ama grand truth vermişlerse kabul edeceksin onu.
+
+551
+01:03:27,731 --> 01:03:37,932
+İşte Validation Accuracy'de bayağı yüksek çıkıyor. O kafamı karıştırdı. Yani 90-99'larda Validation Accuracy'lerle buldum.
+
+552
+01:03:37,932 --> 01:03:42,432
+Şimdi, ben ekranı şey edeyim şimdi ekranı.
+
+553
+01:03:52,403 --> 01:04:13,403
+Evet. Şimdi görüyorsun değil mi? Sana 349 tane resmim var. Bir tane failin içine girdim böyle. Bunun bir Grand Truth'u var şöyle. Ondan sonra bir orijinal resim var. Bir de bunun 3 tane farklı çekim tekniği daha var. 3 mü 4 mü?
+
+554
+01:04:14,324 --> 01:04:18,204
+Toplamda 4, 3 farklı. Toplamda 4 farklı yöntem.
+
+555
+01:04:18,584 --> 01:04:19,784
+Grand Truth'ta mı katıyorsun?
+
+556
+01:04:20,500 --> 01:04:40,200
+Dört tane kafa resmi var diyelim. Şimdi benim senden istediğim şu. Bu layer'lar biliyorsunuz 150 katmanlı. Yanlışsam sen beni düzelt. 150 katmanlı. Örneğin bunun içerisinde Ground Truth olan, yani şuradaki şeye denk gelen 100 tanesinde var diyelim.
+
+557
+01:04:47,539 --> 01:05:04,400
+Sırasıyla 349'un bir tanesinden 100 tane segmentasyon elde et. Hepsinde 100 tane var diyelim. Senin toplam 34 bin, 35 binlik bir datayı değerlendirmen gerekiyor.
+
+558
+01:05:05,179 --> 01:05:10,760
+Şöyle verebilsin, UNET yapısı kullanırken de mesela bu resmin o layer'ını aldın ya örneğin.
+
+559
+01:05:11,056 --> 01:05:37,516
+Birinci mesela bu 150 tane diyelim ki 25 ile 125 arasında oldun. 25. layer'ini aldın. Bu 25. Grand Truth'un da 25. layer'ini aldın. Şunun da 25. layer'ini, şunu da 25'e aldın. Dolayısıyla 4 katmanlı 256'ya 256'lık bir resim elde ettim. Bir de bunun Grand Truth'u var şöyle.
+
+560
+01:05:38,260 --> 01:06:05,940
+Bu 25. için. Daha sonra 26'ya geçiyorsun. 26'dan da 4 tane layer çıkarıyorsun. 4 tane layer çıkartıyorsun dediğim, her birinin 25. layer'ı örneğin. Bunları vererek ondan sonra Grand Tour, Yönet'i çalıştırırsan daha iyi sonuçlar elde edersin. Çünkü burada 4 farklı öz nitelik çekim tekniğinden dolayı 4 farklı öz niteliğe sahip.
+
+561
+01:06:07,603 --> 01:06:15,103
+Ben zannedersem sadece bir grey level bir de ground truth çalıştın daha önce. Doğru mu?
+
+562
+01:06:16,123 --> 01:06:19,324
+Aslında hemen bakayım. Dört kanalda galiba resimler.
+
+563
+01:06:19,943 --> 01:06:23,143
+Dört kanaldaysa o zaman tam benim istediğim gibi olmuş.
+
+564
+01:06:24,003 --> 01:06:31,603
+Dört kanalda yani 256 çarpı 256 çarpı 4 olarak veriyorsun input'u değil mi?
+
+565
+01:06:32,123 --> 01:06:33,163
+Bir de 155.
+
+566
+01:06:34,164 --> 01:06:35,384
+Derinlikte olunca.
+
+567
+01:06:35,784 --> 01:06:37,244
+Hangi layer'ın olduğunu.
+
+568
+01:06:37,563 --> 01:06:37,943
+Evet.
+
+569
+01:06:39,644 --> 01:06:41,664
+Önce bir ground truth'tan bakacaksın.
+
+570
+01:06:41,804 --> 01:06:43,463
+Ground truth aslında şöyle bir şey.
+
+571
+01:06:44,204 --> 01:06:46,543
+Şöyle volümetrik düşünecek olursak.
+
+572
+01:06:46,983 --> 01:06:48,063
+Şöyle yaklaşıyorum.
+
+573
+01:06:48,844 --> 01:06:51,164
+Örneğin tümör bu şurada diyelim.
+
+574
+01:06:52,483 --> 01:06:54,764
+Sen bunu slice slice kesiyorsun böyle.
+
+575
+01:06:56,884 --> 01:07:22,244
+Bak, şuradakinde tümör yok da. Ne zamanki bu şeyi, şöyle keseyim, tümörü kesmeye başlıyorsun şöyle, boyutlu hale getireyim. Ne zamanki bunu kesmeye başlıyorsun, senin artık grand trutun oluşmaya başlıyor. Şöyle ufak, bir sonrakinde bu bu, bir sonrakine geçtiğinde biraz daha büyüyor.
+
+576
+01:07:22,900 --> 01:07:27,580
+Bir sonrakine geçtiğinde biraz daha büyüyor gibi. Değil mi?
+
+577
+01:07:29,580 --> 01:07:41,780
+Sen artık bunu çok küçük olmasın. Yani 25-50 piksel. Sen ona bir bakarsın. 25-pikselden altını alma. Üstlerini al.
+
+578
+01:07:42,579 --> 01:07:49,960
+Anladım hocam. Öyle bir çalışma görmüştüm. İlk 30 değerle son 40 değeri falan dışarlıyordu direkt.
+
+579
+01:07:50,519 --> 01:08:01,780
+Yani çok ufaksa parça. Etrafından bir texture yakalaması lazım ki onun tümör olduğunu anlasın.
+
+580
+01:08:01,780 --> 01:08:08,960
+Eğer yeteri kadar grand truth azsa çok da bir şey çıkaramaz. O da başarımı düşürür.
+
+581
+01:08:09,715 --> 01:08:16,915
+Belli bir büyüklüğe gelsin yani. Ona da sen gözle bir bakıver. Veya okuduğun makalelerde ne yapmış? Ona bakıver.
+
+582
+01:08:17,435 --> 01:08:33,615
+Anladım. Bir de ben buna geçen hafta aslında gan örneğini çalıştırmaya çalışıyordum ama şeyin büyüklüğü yüzünden çalışmıyordu. Verilerin çok fazla rem yemesi yüzünden çalışmıyordu. Onu gan uygulamaya çalışacağım ama.
+
+583
+01:08:35,667 --> 01:08:42,587
+Tamam. Sen önce double'ı yönet, yönetleri bir çalıştır. Ondan sonra bakarız. Yani yöntemleri zenginleştirmeye başlarız.
+
+584
+01:08:43,028 --> 01:08:43,547
+Tamam hocam.
+
+585
+01:08:44,547 --> 01:08:48,507
+Ganlarla segmentation yapan bir çalışmadan mı şey aldın?
+
+586
+01:08:48,507 --> 01:08:54,827
+Şöyle farklı bir data seti olarak çok var ama şeyde beyin olarak çok görmedim gan kullanımını.
+
+587
+01:08:55,315 --> 01:09:16,155
+Tamam, tamamdır. Bir bakarsın. Ama şey yani var. Çok görmedim derken bir tane kopyalamaya çalıştığım bir şey vardı. Çalıştıramadığım ama var yani. Tamamdır, tamamdır. Hocam var mı? Günaydın. Ben yeni katıldım. Kusura bakma. Böyle kaldım da. Tamamdır. Bir saniye. Hemen geliyorum ben.
+
+588
+01:10:26,484 --> 01:10:27,944
+Evet [öğrenci], dinliyorum seni.
+
+589
+01:10:29,504 --> 01:10:32,304
+Evet hocam, ben İkanlı Bayrısıyım o zaman.
+
+590
+01:10:44,340 --> 01:10:46,260
+Krem geldi mi hocam? Yok.
+
+591
+01:11:09,492 --> 01:11:10,672
+[öğrenci] geldi mi hocam?
+
+592
+01:11:10,932 --> 01:11:11,492
+Geldi, evet.
+
+593
+01:11:13,832 --> 01:11:15,551
+Ben bu kapatıyorum.
+
+594
+01:11:43,507 --> 01:11:44,507
+Sorum var.
+
+595
+01:12:13,619 --> 01:12:31,211
+Teşekkürler.
+
+596
+01:12:34,963 --> 01:12:44,324
+Şimdi benim hocam, DATASIT'i geçen hafta anlatayım gibi, 4 tane farklı, hani, vitamin DATASIT diyebiliriz.
+
+597
+01:12:45,324 --> 01:12:49,404
+İlk olarak bir pre-processing yaptık. E, Kıhan geldi mi abi bu aradığında?
+
+598
+01:12:49,404 --> 01:12:50,523
+Geldi, geldi evet.
+
+599
+01:12:51,203 --> 01:12:54,923
+Tamam, ilk olarak bir pre-processing yaptık.
+
+600
+01:12:55,796 --> 01:13:15,796
+Yeni bir data sette buluşup, bir bir şey yaptıktan sonra, mail filtering, histogram vs. Daha net bir feature sahip bir image alabildik. Ondan sonra segmentation'a tam bir şey uyguladım. Bir tane normal diyeceğim, base segmentation.
+
+601
+01:13:16,467 --> 01:13:39,467
+Bu metodda da var. Ondan çıkan sonuçlar normal statistikler olarak yani şu hani segmentation çıkıyor. Ondan iki tane yeni dataset çıkıyor. Bir white blood cells şu istediğimiz hücreyi, S-U-FM ya da liposite vesaire ya da red blood cells.
+
+602
+01:13:39,699 --> 01:13:44,699
+Bu şekilde yeni detasit, orijen detasitten yeni detasit çıkarttım.
+
+603
+01:13:44,699 --> 01:13:46,699
+Bir de...
+
+604
+01:13:46,699 --> 01:13:53,699
+Linfosit, monosit, nötrofil iki sınıf ama ayrılıyor.
+
+605
+01:13:53,699 --> 01:14:03,699
+Dört sınıf. Şimdi ben sadece isonofil işlemleri anlatacağım. Zaten aynı işlemle kararlayacağız şu linfosayl bayan monosayl nötrofil.
+
+606
+01:14:03,699 --> 01:14:04,699
+Anladım, anladım.
+
+607
+01:14:04,975 --> 01:14:15,975
+Peki, şey yapabiliyor muyum? Ama hücre hücre değil mi? Bu bir resmin içerisinde, ezonfil resmi ayrı, limfif resmi ayrı mı?
+
+608
+01:14:15,975 --> 01:14:27,915
+Sonra şu hücrayı çıkarttım hocam ama hepsini çıkarttı zaten. Dediğim gibi. Bunu da çıkarttım. Ondan yeni bir dahtasit duruşturduk. Bunu biraz daha fonda da göstereceğim size.
+
+609
+01:14:28,243 --> 01:14:41,243
+Bu ilk segmentation yöntem. Bir de normal deep learning segmentation yöntem var. O da semantic segmentation. Siz söylediğiniz gibi farklı bir data set pre-trained bir yöntemdi.
+
+610
+01:14:41,243 --> 01:14:53,243
+Şimdi ne oldu? Tamam. Bir yanlışlıkla şey yok. O powerpoint'e sonra bakmayın. Tamam, sorun yok. Sorun yok.
+
+611
+01:14:53,243 --> 01:14:55,243
+Tamam. Devam edeyim tekrar.
+
+612
+01:14:55,796 --> 01:15:09,775
+Dediğim gibi, ilk segmentation yöntemde yeni bir data set oluşturdum. Ona göre bu aynı, ilk klasla, bu hangi, kaç tane diyelim ki, yaratı, bilgisayar, kaç tane, yaratı, bilgisayar, onu da çıkaracak.
+
+613
+01:15:10,476 --> 01:15:23,195
+Tamam. İkinci yöntem. Onun için ilk training yapacağız. Sadece ilk adımda hangi hücrelerle çalışıyoruz? Esyonu, Filme, Lymphosite. Bu ilk training olacak. İkinci training.
+
+614
+01:15:24,180 --> 01:15:40,860
+Bu hocada herhangi bir klas içinde, kaç tane red orta ya da white orta yapacağız. Bu training de yaptık. Bir de semantik segmentation hocalar. Semantik segmentation de bizi bu aşamaya getiriyor.
+
+615
+01:15:40,860 --> 01:15:47,940
+Yani biz onu sınıflandıktan sonra artık yeni bir data set oluşturmamız gerekiyor. Derek o kendisi.
+
+616
+01:15:48,148 --> 01:15:53,708
+Hangisi Red Bloods, hangisi Background, hangisi White Bloods gösteriyor.
+
+617
+01:15:54,268 --> 01:15:59,167
+Ben şunu anlamaya çalışıyorum. Şimdi bizim dört farklı hücre tipimiz var.
+
+618
+01:15:59,728 --> 01:16:00,347
+Aynen.
+
+619
+01:16:00,448 --> 01:16:02,427
+Denfosit, Monosit, Nötrofil.
+
+620
+01:16:03,408 --> 01:16:03,747
+Doğru.
+
+621
+01:16:04,228 --> 01:16:10,968
+Şimdi bir ana bir resim aç mesela. Bunun içinde sadece ezonofili mi çıkarmış?
+
+622
+01:16:10,968 --> 01:16:11,247
+Evet.
+
+623
+01:16:11,247 --> 01:16:15,087
+Yani neredesin bu değişiklik? Senin okla gösterdiğin gibi değil mi?
+
+624
+01:16:15,667 --> 01:16:18,847
+Evet, bu ezorofil bir hücresi. Tamam.
+
+625
+01:16:19,188 --> 01:16:27,707
+Tamam. İlk başta bu 4 hücre tipi kaç tane, her bir hücre tipinden kaç tane örnek var?
+
+626
+01:16:29,011 --> 01:16:37,671
+Bundan bir, yani data seti göre bin, yani iki bin de var. Şundan da dört bin de var, üç bin de var, bin bir yeşil yüz gibi bir şey de var.
+
+627
+01:16:38,131 --> 01:16:44,271
+Öncelikli olarak şuna bakalım. Bu dört tane hücre tipini biz ayrıştırabiliyor muyuz? Ona bir bakalım istersen.
+
+628
+01:16:44,351 --> 01:16:54,152
+Hani data setinde ezonofil, lenfosit, monosit, nötrofil olmak üzere. Önce burayı bir yayın edelim. Buradan bir ne sonuç çıkacak? Ona bir bakalım.
+
+629
+01:16:57,011 --> 01:17:01,851
+Transfer Learning yöntemlerini kullanarak bunları bir bakma. Yaptın mı bunu?
+
+630
+01:17:02,671 --> 01:17:16,031
+Ben yaptım, yaptım. Bunu Allah'a izin. Dediğim gibi burada üç tane training işlem yaptım. İlk ki training şu dört tane, hocam şey ayrıldım. Örnek olarak da ResNet 50'ye kullanarak %90 accuracy'e elde ettim hocam.
+
+631
+01:17:16,971 --> 01:17:23,931
+İşlem çok zaman alıyor ya, bu yüzden farklı bir yere, yani network daha şey yani yetişemedim.
+
+632
+01:17:24,192 --> 01:17:51,292
+Tamam, sen şimdilik bunun üzerinde bir yoğunlaş. Çünkü öbür türlü, yani bu şeyi yapman yeterli. Yani farklı hücre tiplerini ayrıştırman şu anda yeterli proje için. Öncelikle farklı inception şeylerde ne derler? Bu sınıflandırma görevi. Yani bu classification taskı konunun. Senin ikinci yaptığın ise, hani bir önceki slide'lara gelirsen.
+
+633
+01:17:52,051 --> 01:17:56,832
+Bu da var hocam. Bunu da yaptın. Bunu da yaptın. Üçücünü yaptın.
+
+634
+01:17:57,912 --> 01:18:06,391
+Burada da Training Tree Classes. Bu farklı bir çalışma. O segment çalışması.
+
+635
+01:18:07,192 --> 01:18:07,811
+Aynen aynen.
+
+636
+01:18:07,811 --> 01:18:17,492
+Yani biz öncelikli olarak senden sadece klasifikasyonu bir tam anlamıyla farklı pre-trained networklerle yap.
+
+637
+01:18:17,823 --> 01:18:26,483
+Bunun sonuçlarına bakalım. Yani DenseNet, ResNet, ondan sonra NasNet var. Sen MATLAB'te mi yapıyorsun yoksa Python'da mı yapıyorsun?
+
+638
+01:18:26,483 --> 01:18:28,643
+MATLAB'de yapıyorum hocam.
+
+639
+01:18:28,884 --> 01:18:44,143
+MATLAB'de yapıyorsan o NasNet, Inception, Exception, yeni pretrained networkleri bir dene onların bir sonuçlarını göster. Segmentation aşamasına. Deep Learning Based Segmentation'ı başka bir çalışma olarak yaparız daha sonra.
+
+640
+01:18:46,163 --> 01:19:08,103
+Tamam, ben hep seni tek birini Türk için yaptım ya. O yüzden dedim ki farklı bir sonuçlar karşılaştırabiliriz. Şimdi sorun şu hocam, biz bunu çalıştırırken ancak bilgisayar, GPU sahibi bilgisayar olsun da daha hızlı yapabilirim. O da arkadaşımdan bilgisayar kullanıyordum geçen hafta. Çünkü gerçekten çok zaman alıyorum hocam.
+
+641
+01:19:08,103 --> 01:19:09,943
+Ne kadar süre alıyor?
+
+642
+01:19:10,996 --> 01:19:25,195
+Yani normal CPU yapsak belki bir hafta sürer ama CPU olsa, CPU da bir günde biter yani birkaç saat içinde. Aslında network'a bağlı, REST mi, BG16 mı ona bağlı değişiyor.
+
+643
+01:19:25,359 --> 01:19:33,359
+Şimdi onu yaptıktan sonra ben örnekte... Google Colab veya Kaggle'ın arayüzleri var. Hem de GQ'yu da kullandırıyorsun.
+
+644
+01:19:33,359 --> 01:19:37,359
+Onu kullanmaya çalıştığım onun lisansı olması gereği.
+
+645
+01:19:37,359 --> 01:19:40,359
+Matlab Center'a şey yazdım. Bana da dediler ki sen...
+
+646
+01:19:40,359 --> 01:19:44,359
+Hayır, orada Python çalışıyor pardon. Python biliyor musun?
+
+647
+01:19:45,076 --> 01:19:56,076
+Baytür'ün şey yani çok az biliyorum. Çok iyi yani. [öğrenci], Metlebin arı. Metlebin de böyle bir imkanı var zannedersem. Size daha önce giderken...
+
+648
+01:19:56,076 --> 01:20:04,456
+Cloud Center. Cloud Center dediniz. Math for Cloud Center. Ona girebildin mi?
+
+649
+01:20:05,395 --> 01:20:14,416
+Girmeye çalıştım. Lisans olması gerek dediler. Öğrenci mailine giremiyor musun?
+
+650
+01:20:14,416 --> 01:20:31,315
+Yok, giremedim. Sonra onlara mail yazdım. Dedim ki şöyle şöyle, benim lisansım var okul üzerinde. Bu yetmiyor. Paralel seyirber diye bir lisans olması gerek. Onu alman gerek dediler.
+
+651
+01:20:31,855 --> 01:20:32,975
+Anladım, anladım.
+
+652
+01:20:33,395 --> 01:20:53,815
+Ama GPU bilgisayar daha hızlı oldu. GPU üzerinde yapılıyor. Umarım diğer netöver çıkarabiliriz şu sonuçları. Ama bu ResNet 50100 üzerinde bir denemeyle yaptım.
+
+653
+01:20:54,355 --> 01:21:02,295
+S-Unefel bir hocaya da ekledim örnek olarak. O da %96, S-Unefel şeytan.
+
+654
+01:21:06,260 --> 01:21:08,619
+Yani yüzde kaç demiştin?
+
+655
+01:21:10,340 --> 01:21:18,420
+Sonuçlar burada duruyor. Hatta örnek çalıştırabilir şimdi mahtemden. Yüzde 96 ezonofil diyor. Bu hocam zaten ezonofil.
+
+656
+01:21:18,579 --> 01:21:29,680
+Yani sen resnet 50, yüzde 90 dedin ya. Yüzde 96 ezonofil için yaptı. Diğerlerini de mi düşük yaptı? Ortalamasını mı yazdın sen resnet 50'ye yüzde 90 diye?
+
+657
+01:21:30,539 --> 01:21:33,640
+Yüzde 90 hepsi. Bu şu trenin için yani.
+
+658
+01:21:35,539 --> 01:22:02,800
+Genel bir eğer 300 çıkarken sonuçta %40 ortalama şey çıktı. Peki training için ne kadar ayırdın, test için ne kadar ayırdın? Sayı olarak mı şey? Evet, evet. Yaklaşık 1200. 1200 S-12, 1200 monosight, 1200. Test için? Test için %70'i yaptım, %30'u test kaldı.
+
+659
+01:22:03,007 --> 01:22:23,487
+Anladım. [öğrenci], onu şöyle yapsana istersen. K-Fold Cross-Validation var. Yani K-Fold'da ne yapıyor? Datasetini her bir sınıfı beş parçaya bölüyor. Sırasıyla, örneğin ekran paylaşacağım. Sen ekrandan çık istersen.
+
+660
+01:22:23,487 --> 01:22:25,007
+Tamam.
+
+661
+01:22:25,908 --> 01:22:34,748
+Ben iki slide'ım kaldı da o diğer denemede yaptım. Aynı şekilde ResNet. Bir de buna bilgiyi alalım. O da yaptım.
+
+662
+01:22:34,748 --> 01:22:45,648
+Ben senden ilk başta 4 tane ücret tipini ayrıştırmanı istiyorum. Önce buna çalış. Daha sonra segmentation'a geçeriz. Tamam mı?
+
+663
+01:22:46,508 --> 01:22:48,848
+Tamam. O zaman buradan çıkıyorum hocam.
+
+664
+01:22:52,851 --> 01:22:53,612
+Vâ斜reç, ne?
+
+665
+01:23:00,659 --> 01:23:09,960
+Şimdi, Kalfold Cross-Volidation'da şöyle bir şey var. Senin sonuçta 4 tane sınıflı bir data var. 4 sınıflı bir data.
+
+666
+01:23:11,899 --> 01:23:24,679
+İndi böyle resimler var. Şimdi her sınıftan ne kadar var bilmiyorum. Yani diyelim, özonofilden 1000 tane diye düşünüyorum. Lenfositten 1000 tane. Başka ne vardı?
+
+667
+01:23:26,679 --> 01:23:27,359
+Monosay.
+
+668
+01:23:28,083 --> 01:23:31,843
+Monosat'ten de 1000 tane. Rakamları şu anda kendim uyduruyorum. Başka?
+
+669
+01:23:33,523 --> 01:23:36,483
+Başka? Lymphosat.
+
+670
+01:23:37,783 --> 01:23:40,883
+L2 diyorum buna da. Bundan da 1000 tane var. Tamam mı?
+
+671
+01:23:41,743 --> 01:23:45,023
+Şimdi elinde senin toplam 4000 tane data var.
+
+672
+01:23:45,823 --> 01:23:48,083
+Yani toplam burada 4000 tane data var.
+
+673
+01:23:48,083 --> 01:23:51,403
+Şimdi K-Fault Cross Validation'da şöyle yapıyor.
+
+674
+01:23:52,063 --> 01:23:54,723
+K-Fault Cross Validation.
+
+675
+01:23:58,963 --> 01:24:16,224
+Şimdi ne yapıyor? Örneğin şu E'ye düşünelim. Bin tane var diyelim. Bunu beş parçaya bölüyor. Tamam mı? Aynı şekilde L'yi de beş parçaya bölüyor. M'yi de beş parçaya, L2'yi de beş parçaya bölüyor.
+
+676
+01:24:20,595 --> 01:24:44,775
+E'yi diye düşünecek olursak, bunu 5 parçaya bölüyor veya 4 binlik data da düşünelim. 4 binlik data olarak düşünelim şimdi. Tamam mı? Bunu 5 parçaya bölüyor. Birinci parça, ikinci, üçüncü, dördüncü, beşinci. Bu her birinin içinde eşit sayıda sınıf var diyelim.
+
+677
+01:24:45,619 --> 01:25:04,859
+Yani burada mesela 4 tane sınıf var aslında. 2, 3, 4 tane. Anlatabiliyor muyum? Yaklaşık bunların her birinin içerisinde 4000 dediysek, 5'e bölsek ne yapar? 800 tane. Burada da 800 tane var. Burada da 800 tane var.
+
+678
+01:25:07,000 --> 01:25:08,359
+Şunu bir geri alayım.
+
+679
+01:25:08,735 --> 01:25:12,416
+Bunda da 800 tane var.
+
+680
+01:25:12,916 --> 01:25:14,876
+Toplam kaç tane diyor?
+
+681
+01:25:15,015 --> 01:25:16,655
+4000 tane resim ediyor değil mi?
+
+682
+01:25:17,576 --> 01:25:26,395
+Bu 800 tanenin, 200 tanesi birinci sınıf, 200 tanesi ikinci sınıf, 200 tanesi üçüncü sınıf, 200 tanesi dördüncü sınıf.
+
+683
+01:25:28,895 --> 01:25:31,715
+Sırasıyla ne yapıyor biliyor musun?
+
+684
+01:25:31,715 --> 01:25:32,996
+K-Fold Coast Validation.
+
+685
+01:25:33,395 --> 01:25:35,135
+İlk dördüyle train yapıyor.
+
+686
+01:25:35,891 --> 01:26:02,311
+İlk 4 ile train yapınca ne oluyor? 3200 tane train şu test olarak kalıyor. 800 tane ile test ediyor. Daha sonra bu birinci sette örneğin birinci denemede 1, 2, 3, 4'ü train olarak kullanıyor.
+
+687
+01:26:02,768 --> 01:26:27,228
+5'i test olarak kullanıyor. İkinci denemede 1, 2, 3, 5'i train olarak kullanıyor. 4'ü test ediyor. Üçüncü denemede 1, 2, 4, 5'i train olarak kullanıyor. 3'ü test ediyor. Böylece 4 ve 5. test yapıyor. Bunların ortalamasını alıyor. Test ortalamalarını alıyor.
+
+688
+01:26:27,636 --> 01:26:42,396
+Bunlar elde ettiği, örneğin bundan %91 elde etti, bundan %85 elde etti, bundan %75 elde etti. Bunların ortalamasını alarak genel bir soru şey. Dolayısıyla dataset'in her tarafını test olarak kullanmış oluyor.
+
+689
+01:26:44,436 --> 01:26:45,576
+Anladım, anladım.
+
+690
+01:26:45,576 --> 01:26:54,016
+Yani onu araştır. Metlab'de K-Fold, Cross-Bold, zannedersin.
+
+691
+01:26:54,579 --> 01:27:02,260
+Biliyorum hocam. Şöyle bir normal sevinen için yani emce için değil bir sınıflandırma şeyi yaptık.
+
+692
+01:27:04,399 --> 01:27:19,939
+Evet, evet. Segment iş için değil. Metlab diyelim bakalım. Metlab'de onun partition data for class validation. Bak, böyle bir CV partition diye komut da var. Anladın biliyor muyum?
+
+693
+01:27:20,724 --> 01:27:38,404
+Yani cross-validation için bunu kullanabilirsin. Bu ayrıntısını biraz oku. Tamam mı? Yani %70'e %30 diye elimizle kendimiz ayırmak yerine, K-Fold cross-validation'ı datanın değişik yerlerini test ve train olarak kullanalım.
+
+694
+01:27:40,024 --> 01:27:42,423
+Bu şekilde daha sağlam bir sonuçlar elde edebiliriz.
+
+695
+01:27:42,984 --> 01:27:45,224
+Daha sağlam sonuçlar elde ederiz böylece.
+
+696
+01:27:45,224 --> 01:27:47,744
+Bu. Tamam hocam.
+
+697
+01:27:48,115 --> 01:27:48,836
+Tamam mıdır?
+
+698
+01:27:49,496 --> 01:27:51,976
+Birkaç tane nütfet çalıştırayım siz.
+
+699
+01:27:52,976 --> 01:27:54,996
+Önce bir nesne yapmaya çalış.
+
+700
+01:27:55,636 --> 01:27:57,636
+Şeylere de bakalım mesela.
+
+701
+01:27:57,976 --> 01:27:59,536
+Orada göstermiştim mesela.
+
+702
+01:28:00,916 --> 01:28:06,115
+Redrained Network.
+
+703
+01:28:07,596 --> 01:28:08,556
+MATLAB.
+
+704
+01:28:11,347 --> 01:28:19,287
+Böyle baktığımda, bakın burada zaten önceden eğitilmiş networkler var. Görüyorsun ya burada.
+
+705
+01:28:20,287 --> 01:28:32,768
+Evet, nasnet, dansnet, inception, exception, dartnet. Anlatabiliyor muyum? Nasnet, mobile. Bakın özellikle şu kısım yüksek sonuçlar veriyor.
+
+706
+01:28:34,163 --> 01:29:00,563
+Mesela şunu da alabilirsin belki. ResNet'i de alabilirsin belki. ResNet'i bir dene, Inception'ı dene, Exception'ı dene. Mesela Azaltalım sayıyı şimdi. Clear diyelim. Mesela NasNet'i bir dene. Ondan sonra DanceNet'i bir dene, Inception'ı dene, Exception'ı dene, DarkNet'i bir dene bakalım.
+
+707
+01:29:03,988 --> 01:29:22,868
+Bunların bir sonucuna bakalım. Tamam mı? Bütün pre-trained networkler deneyecek, MATLAB ile çalışacak arkadaşlar, şunları bir denesin bakalım. Ne sonuçlar elde ediyor? Mesela şunlar da güzel sonuç veriyor aslında ama bunların daha iyi verdiğini söylüyor ama şunları da deneyebilirsiniz, şunları da deneyebilirsiniz. Tamam mı?
+
+708
+01:29:27,380 --> 01:29:28,659
+Anlaştık mı arkadaşlar?
+
+709
+01:29:29,779 --> 01:29:30,340
+Evet hocam.
+
+710
+01:29:33,300 --> 01:29:39,579
+Halit, öncelik olarak sen bu classification yap, daha sonra segmentationlara bakarız. Şimdilik segmentation'a girme.
+
+711
+01:29:45,747 --> 01:29:46,807
+Anlaştık mı [öğrenci]?
+
+712
+01:29:52,807 --> 01:29:55,648
+Anlaşıldı mı en son dediklerim? Görüyorsun değil mi?
+
+713
+01:29:55,648 --> 01:29:59,728
+Anladım anladım. Birkaç tane dedik. Keyfold da kullanarak.
+
+714
+01:29:59,728 --> 01:30:09,327
+Keyfold kullanarak. Örtük rast seçilme şu bilderi için.
+
+715
+01:30:09,847 --> 01:30:10,287
+Efendim?
+
+716
+01:30:12,115 --> 01:30:14,556
+Sadece classification.
+
+717
+01:30:16,976 --> 01:30:18,036
+Tamam, tamam.
+
+718
+01:30:18,756 --> 01:30:21,436
+Segmentation'ı daha sonra çalışırız. Başka bir yayın için.
+
+719
+01:30:23,056 --> 01:30:23,996
+Tamam hocam.
+
+720
+01:30:26,376 --> 01:30:30,836
+Başka soru sorun var mı arkadaşlar? Onun dışında yeni gelen bir arkadaş var mı bakalım?
+
+721
+01:30:35,155 --> 01:30:41,015
+Hocam, bir şey soracaktım size. Bu finaller ne zaman belli mi?
+
+722
+01:30:42,095 --> 01:30:55,115
+Finaller daha belli değil ama 7'sinden sonraki haftalar başlıyor. Biz tabii ki o süre zarfında ben finallerde sizin sonuçlarınızın normal ders saatinde bağlanırım ama sınav yapmam.
+
+723
+01:30:55,699 --> 01:31:12,959
+Pardon, finaller zamanı yine bir final olacaksınız ama ayrıca bir ders saati, toplantı saati belirleriz. Ben size Zoom üzerinden paylaşırım tabii ki.
+
+724
+01:31:13,427 --> 01:31:31,647
+Herkes sonuçlarını gösterir veya bir sınav yaparız. İki saatlik bir sınav yaparız. Ben burada sizlere sorular soracağım. Siz o soruları cevaplayacaksınız. Online bir sınav ayarlayacağım finaller zamanı. Daha sonra herkes sonuçlarını, projelerini gösterir ondan sonraki ders saatinde.
+
+725
+01:31:40,083 --> 01:32:00,283
+Örneğin final zamanımız, süresi belli değil ama zannedersem 7'sine kadar devam edecek okul. Herhalde 11-18 haftası olur. Bizim hangi sınavımızı hangi gün koydularsa o gün bir final sınavı yapacağız.
+
+726
+01:32:07,775 --> 01:32:27,935
+Bize bir slot ayıracaklar. Ben orada bir sınav yapacağım. Yani yazılı bir sınav olacak. Ama tabii ki bizim için asıl proje olduğu için yine ben o gün, o hafta sizinle haberleşirim. Ya finalden sonra veya akşamına doğru herkes proje gösterimini, proje gösterimi de yapacak.
+
+727
+01:32:29,108 --> 01:32:52,248
+Ben finallerde baktım yeterli olgunluğa ulaşmadı projeler. Herkesi bütünlemeye bırakacağım. Bütünlemeye bırakmanın nedeni şu, zaman kazanmak. Bir hafta, bir buçuk hafta daha zaman kazanacaksınız. Herkes o zamana kadar yaptığı sonuçları latex formatında, bildiri formatında hazırlıyor değil mi?
+
+728
+01:32:53,524 --> 01:33:15,624
+Bir yandan proje gösteriminde bu lateksler, yazdığınız introductionlar, ondan sonra literatür searchler falan bunlara bakacağız. Ondan sonra en son, bütünlemelerin sonuna kadar notların verilebileceği en son ana kadar süreyi kullandırmaya çalışacağım arkadaşlar size. Anlaştık mı?
+
+729
+01:33:17,064 --> 01:33:17,584
+Evet hocam.
+
+730
+01:33:18,452 --> 01:33:24,192
+O kısmı merak etmeyin. Yalnız final zamanı bir tane yazılı sınav olacak.
+
+731
+01:33:24,192 --> 01:33:27,192
+Final zamanı.
+
+732
+01:33:31,636 --> 01:33:33,396
+Final sınavımız olacak yani.
+
+733
+01:33:34,896 --> 01:33:39,096
+Şimdilik benim söyleyeceklerim bunlar. Sizlerin sorusu varsa onların üzerinde konuşabiliriz.
+
+734
+01:33:43,283 --> 01:33:48,803
+Hocam, ben sadece bu DoubleUnet ve NasNet üzerine mi gideyim şimdi?
+
+735
+01:33:49,923 --> 01:34:03,143
+Unet'i kullan, DoubleUnet'i kullan. Ama bunlar farklı yapılar. Onlar mesela NasNet şey yapıyor sadece. Ne derler? Sen sadece Segmentation yapıyordun. Dur seninkini unutma.
+
+736
+01:34:04,523 --> 01:34:07,843
+Segmentation yapıyorsan ben bir paper paylaşmıştım, hatırlıyor musun?
+
+737
+01:34:08,948 --> 01:34:20,788
+Bir şey, survey gibi bir şeydi. İçinde pek çok yöntemin olduğu bir yöntem karşılaştırma paperi.
+
+738
+01:34:21,608 --> 01:34:27,948
+Orada mesela farklı segmentation yapan networkler var. Deep Learning Art Segmentation.
+
+739
+01:34:29,948 --> 01:34:34,008
+Anladım. Ben onları bir yere koydum mu acaba sizin şeyinizi?
+
+740
+01:34:38,292 --> 01:34:42,612
+Dersler, sınavlara gireyim. Ben onu koydum mu?
+
+741
+01:34:48,916 --> 01:34:56,136
+Hocam benim gibi yine beynemarı çalışan bir arkadaş daha vardı galiba [öğrenci] miydi? Ona da yönet demiştiniz de.
+
+742
+01:34:56,975 --> 01:35:01,395
+Yönet yapın, o da geliştirsiniz. Yönetle başlayın, ondan sonra geliştirelim.
+
+743
+01:35:01,496 --> 01:35:06,296
+Çünkü çok derin öğrenmede temel bir yapı olarak kaldı.
+
+744
+01:35:11,176 --> 01:35:13,076
+Önce şeyi yapın siz.
+
+745
+01:35:20,564 --> 01:35:27,403
+Şunu kastediyorum. Ekran paylaşımım var değil mi şu anda? Yok hocam.
+
+746
+01:35:31,699 --> 01:35:32,859
+Şunu kastediyorum.
+
+747
+01:35:58,963 --> 01:36:00,587
+Şöyle şey yapalım.
+
+748
+01:36:25,908 --> 01:36:27,628
+Bunu ben şeye bir yükleyeyim şöyle.
+
+749
+01:36:37,140 --> 01:36:39,060
+Ders duvarına yüklüyorum ben onu.
+
+750
+01:36:41,840 --> 01:36:50,280
+Birazdan gelir herhalde. Ders duvarından indirebilirsiniz. Özellikle segmentation yapan arkadaşlar. Oradaki yeni metotlara baksınlar. Tamam mı?
+
+751
+01:36:52,920 --> 01:36:55,080
+Başka sorusu olan var mı arkadaşlar?
+
+752
+01:36:56,440 --> 01:36:57,780
+Ben bir şey sorabileyim.
+
+753
+01:36:57,780 --> 01:36:58,680
+Tabii.
+
+754
+01:36:59,743 --> 01:37:12,043
+Data-based data, bazen validation loss bir graf çıkıyor ya, bir anda %100'e geliyor, bir anda %60'ın geri dönüyor gibi bir şey dengesiz bir şekilde çıkıyor.
+
+755
+01:37:12,423 --> 01:37:13,743
+Bunun nedeni ne olabilir?
+
+756
+01:37:13,923 --> 01:37:18,763
+Yani onu bilmiyorum da şu anda incelemedim tabii işin içini.
+
+757
+01:37:19,243 --> 01:37:25,304
+Hani her bir proje dinlemesine şu anda girme şansım da çok yok ama ben şöyle bir şey söyleyebilirim.
+
+758
+01:37:27,743 --> 01:37:41,623
+Ayırmayın. Ben K-Folt Cross Validation için, yani K-Folt'da genellikle 5-Folt kullanın. %80'ini tireyin, %20'sini test için kullanın yeterli şu anda. Ara grafikleri çıkarmaya gerek yok.
+
+759
+01:37:44,756 --> 01:37:56,756
+Anladım. Söz konusu ara grafikte değil de çalışırken dengesiz bir şekilde. Yavaş yavaş %7-90'a yaklaşmıyor. Bir anında 90'a geri dönüyor.
+
+760
+01:37:57,256 --> 01:37:58,115
+Ondan bir dengesizlik.
+
+761
+01:37:58,115 --> 01:38:11,435
+Pre-trained networklerde daha önce ağırlıklar olduğu için belli bir % ile başlıyor ister istemez. Sonuçta bu da çok karmaşık resimler değil bu biyodü medikal görüntülerde.
+
+762
+01:38:12,756 --> 01:38:16,395
+Alıştırabiliyor olabilir. Data o zaman demek ki iyi ayrışıyor demektir.
+
+763
+01:38:18,456 --> 01:38:21,895
+Anladım, anladım. Yani bunun bir hata olduğunu anlama gelmiyor yani.
+
+764
+01:38:22,315 --> 01:38:23,376
+Gelmiyor, gelmiyor.
+
+765
+01:38:24,655 --> 01:38:29,876
+Bakın, bir segment, deep learning as survey'i de yükledim ben sisteme. Anlaştık mı arkadaşlar?
+
+766
+01:38:33,096 --> 01:38:33,996
+Evet hocam.
+
+767
+01:38:34,296 --> 01:38:35,496
+Başka soru soru var mı?
+
+768
+01:38:39,699 --> 01:39:04,539
+Başka sorusu olan yoksa arkadaşlar, bu haftalık bu kadar. Katılan arkadaşlarla devam ettik. Diğer arkadaşlarını da, bu dersleri dinleyen arkadaşların da zamanında katılmasını istiyorum. Bir şey yapmasalar bile katılsınlar. Çünkü farklı günlerde onlara zaman ayırabilmek kolay olmuyor. Dolayısıyla herkes zamanında gelsin, göstersin sonuçlarını. Anlaştık mı?
+
+769
+01:39:07,060 --> 01:39:13,320
+Bu notu onlara iletmiş olayım. Hepinize iyi hafta arkadaşlar. Kendinize çok iyi bakın. Görüşürüz yine.
+
+770
+01:39:13,920 --> 01:39:15,220
+Görüşürüz hocam.
+
+771
+01:39:15,700 --> 01:39:17,360
+Oldu. İyi günler. Kolay gelsin.
+
+772
+01:39:17,940 --> 01:39:18,500
+Ben köşem var.

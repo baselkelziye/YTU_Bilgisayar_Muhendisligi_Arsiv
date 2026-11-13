@@ -1,0 +1,2903 @@
+1
+00:00:41,140 --> 00:00:49,939
+Evet arkadaşlar, hepiniz hoş geldiniz. Dokuzuncu haftadayız. Önümüzdeki hafta bir vize yapacağız.
+
+2
+00:00:54,067 --> 00:01:21,407
+Bir de tabii ödev teslimleriniz var. Bu hafta ilk ara raporu teslim edeceksiniz. Bugün de süre ama ben hafta sonunda sizin sürenize dahil olsun diye pazar akşamına kadar süreyi uzattım. O yüzden ara raporunuzu pazar akşamına kadar teslim edebilirsiniz. Bir sonraki ödev tesliminiz haftaya olacaktı biliyorsunuz. Onu da perşembe gününden yine pazar akşamına kadar uzattım.
+
+3
+00:01:21,760 --> 00:01:41,020
+Böylece bir hafta sonu daha kazanmış olacaksınız. Size bir katkı olsun. En azından biraz daha vaktiniz olur diye düşünüyorum. Ama ödevle ilgili bir konuyu açıklığa kavuşturmamız lazım. Bir yanlış anlaşılma oldu galiba. Arkadaşlarınızdan gelen maillere istinaden söyleyeceğim.
+
+4
+00:01:48,691 --> 00:02:11,512
+Trafik, akış hızı tahmini üzerine bir derleme yazacaksınız. Başka bir konu üzerine değil. Yani kendiniz bir konu belirlemiyorsunuz. Burada bir yanlış anlaşılma olmuş olabilir. Ben onu düzelteyim. Sadece o konunun içerisinde değineceğiniz, ele alacağınız problemler farklı olabilir.
+
+5
+00:02:12,020 --> 00:02:30,924
+Mevcut literatürdeki derlemelerden farklı olabilir. Olmasını da istiyoruz. Buna dikkat etmeniz gerekiyor. Bu noktayı açık daha kavuşturmuş olalım istiyorum. İkincisi, veri setlerini sormuştum. Geçen haftaya kadar aslında söylemeniz gerekiyordu. Ama geçen hafta...
+
+6
+00:02:31,475 --> 00:02:51,536
+Kimse değinmedi, daha henüz bulmamıştı. Birinci ödevinizle ilgili hatırlarsanız, eğitim yaparken eğitimi her seferinde %10, %10 arttırarak başarının ne şekilde değiştiğini inceleyeceğiniz bir ödev vermiştim. Bu konuyla ilgili veri setlerinize karar verdiniz mi? Önce onu sorayım.
+
+7
+00:02:55,987 --> 00:02:59,868
+Hocam ben karar vermemiz gerektiğini anlamamış olabilir mi? O yüzden karar vermedim.
+
+8
+00:03:00,588 --> 00:03:05,828
+Burada herhalde bir, gene sözlerle olarak ifade etmenin getirdiği sıkıntı oldu.
+
+9
+00:03:07,268 --> 00:03:11,848
+Bunu bundan sonra yazılı olarak ifade etmek daha doğru olacak sanırım.
+
+10
+00:03:12,888 --> 00:03:18,828
+İlk bir haftanın sonunda biz veri setlerine karar verelim ki, konuşalım demiştim.
+
+11
+00:03:18,828 --> 00:03:23,168
+Ama orası kaçmış olabilir. Pazar gününe kadar.
+
+12
+00:03:23,584 --> 00:03:38,804
+Burayı da netleştirmiş olalım. Veri setlerine karar vermiş olmanız gerekiyor pazar akşamına kadar. Çalışacağınız veri setlerine. Zaten ödeve de başlamış olmanızı bekliyordum açıkçası. Bu konuda geç kalmamanızı tavsiye ederim.
+
+13
+00:03:39,379 --> 00:04:04,979
+Bu ödevinde dokümentasyonunu önümüzdeki günlerde yine yayınlayacağım. Diğer dokümentasyonu yayınladım, görmüşsünüzdür diye tahmin ediyorum ne istendiğine dair. Umarım yeterince açık ve anlaşılırdır. Neleri teslim edeceğiniz ve hangi konu başlıklarını irdelemeniz gerektiği. Orası benim sizin yönlendirmek için maddeleri halinde yazdığım başlıklar. Sadece o konular olmak zorunda değil, başka alt konulara da değinme şansınız var.
+
+14
+00:04:07,252 --> 00:04:13,312
+Sorunuz var mı en azından ödev dokumentasyonuyla ilgili? Onu sorayım. Aklınıza takılan bir şey var mı?
+
+15
+00:04:13,771 --> 00:04:22,752
+Hocam ben size mail de göndermiştim ama benim aklım hani mailimi gördünüz mü? Öyle sorayım da onu senden gideyim.
+
+16
+00:04:22,752 --> 00:04:23,491
+Tabii tabii.
+
+17
+00:04:24,891 --> 00:04:32,471
+Şimdi sizden geri dönüş olmayınca o yanlış mı oldu? Onu tam anlamadım ben de.
+
+18
+00:04:32,491 --> 00:04:34,651
+Ben açayım şu anda ekranımda var.
+
+19
+00:04:35,220 --> 00:04:53,520
+Bu hafta çok fazla mail geldi. Vize haftasının hemen arkası olduğu için öğrenciler çok problem yaşamışlar bu sisteme mail yüklemeyle ilgili. Sınav dökümanı yüklemeyle ilgili. O yüzden açıkçası cevap yazma şansım olmadı [öğrenci].
+
+20
+00:04:56,211 --> 00:05:06,991
+Burada dönem projesiyle ilgili trafik kullanılan yöntemler üzerine bir derleme yazmak istiyorum dediğin havadan gözlem sezak derlemeyi düşündüm demişsin ya araç samsörü ikisayar cihazla.
+
+21
+00:05:08,371 --> 00:05:12,251
+Havadan gözlem gibi farklı bir keyword soluşturmayı planladık diyorsun ya.
+
+22
+00:05:13,711 --> 00:05:14,991
+Aslında...
+
+23
+00:05:15,315 --> 00:05:36,055
+Benim buradaki keywordlerden kastettiğim bu problemin farklı keywordler tarafından literatürde yer aldı. Yani Traffic Flow Estimation, Traffic Prediction, Traffic Speed, ne diyelim, Forecasting gibi farklı keywordler var.
+
+24
+00:05:40,384 --> 00:06:00,804
+Bahsetmek ve derlemenizde bunlardan, bunların farklı anlamları var mı yok mu, hepsi aynı amaçla mı kullanılıyor, aynı ifadeye mi denk gibi var, bunlardan bahsediyordum. Yoksa başka başlıklar açmak istiyorsanız istediğiniz başlıkları açabilirsiniz, hiçbir sıkıntı yok. Ama havadan gözlem bunlara denk düşmüyor.
+
+25
+00:06:01,492 --> 00:06:11,492
+Ben sadece hocam, makaleleri araştırırken mesela bazıları sesle yapmış bu tahminleme üzerine. Bazıları havadan işte...
+
+26
+00:06:11,732 --> 00:06:23,452
+İnsan sıra var araçlarıyla yapmış. Bazıları telefondan doğru konum sergislerinden yapmış. Ben bunları görmüştüm. Bunları gruplandırmak istemiştim ben de.
+
+27
+00:06:23,452 --> 00:06:38,452
+Tamam, burada hiçbir sakınca yok. Gayet uygun bir problem görmüyorum burada. Ama buraya baktığımda sen sadece derlemenin ne tarafa doğru biraz daha yönlenme ihtimali olduğunu...
+
+28
+00:06:38,831 --> 00:06:44,331
+Fikir olarak gösteriyorsun ama bir outline yok burada. Henüz.
+
+29
+00:06:45,951 --> 00:07:03,491
+Çünkü makalelerin tamamını okumadım mesela. Belki şöyle bir sonuç da çıkabilir. Benim öngörüm mesela havayla yapılan gözlemlerle, gözlemlerde kullanılan algoritmalarla, mesela sesteki algoritmalar otomatik farkla açacak. Böyle bir öngörüm var benim.
+
+30
+00:07:05,139 --> 00:07:07,939
+Onları karşılaştırabilirim belki.
+
+31
+00:07:08,600 --> 00:07:11,939
+Şu olabilir, bunların başarılarını ortaya koyabilirsin.
+
+32
+00:07:12,160 --> 00:07:19,280
+Yani aslında farklı kaynaklardan, farklı yöntemlerle trafik akış hızını tahmin etmeye çalıştığınızdaki
+
+33
+00:07:19,280 --> 00:07:25,620
+acaba yöntemler hangi noktada tıkanıyor, hangi noktada daha iyi sonuçlar üretiyor?
+
+34
+00:07:25,720 --> 00:07:29,600
+Bunları yorumlayabilirsin. Bu güzel bir bakış açısıdır. Benim hiçbir itirazım yok buna.
+
+35
+00:07:29,600 --> 00:07:33,139
+Ama bunu kurulayabilmen için...
+
+36
+00:07:33,139 --> 00:07:58,819
+Daha outline üzerinde çalışıp outline'ı çıkartman lazım. Bu sadece şu anda senin başlangıç noktan olmuş. Bir yerden yakalamanız lazım demiştim ya, sen oradan kendince yakalamışsın. Ama bunu biraz daha açmak ve detaylandırmak gerekiyor. Buna bir itirazım yok yani gönderdiğine. Fakat teslim edeceğiniz ara rapor gerçekten makale formatında bir rapor.
+
+37
+00:08:00,115 --> 00:08:21,096
+Başlıkları olan, referansları olan, özellikle bulduğunuz referansları incelemezseniz dahi klasörlediğiniz referansları referanslar kısmına eklemenizi bekliyorum. Metin içerisinde refera etmek zorunda değilsiniz. Ama ben bunları buldum, bunları inceleyeceğim anlamına geliyor. Birazcık progres yaptığınızı görmem lazım.
+
+38
+00:08:22,516 --> 00:08:39,875
+Yapmadığınız takdirde ciddi scheduling yarısında kaldığınız anlamına gelir benim açımdan. Bu da sizin kendinizle de yüzleşmenizi sağlayacaktır. Rapor istememin sebebi o. Yoksa derim ki süre belli, istediğiniz zaman yapın. Sizi birazcık disipline etmek.
+
+39
+00:08:49,971 --> 00:09:16,392
+Baktım outline'nıza bu çok uygun değil. Ki biraz önce bir arkadaşınız gönderdi mail demiştim. O tamamen olayı benim gördüğüm kadarıyla yanlış anlamış. Muhtemelen şu anda yok galiba. Yanlış hatırlamıyorsam. İsmini unuttum. Arkadaşınızın seyreyle başladı galiba. Neydi? [öğrenci]. Evet. [öğrenci] mail göndermişti. Ona da yazdım ama bir geri dönüş olamadım. Belki bugün derse gelir diye düşünüyordum.
+
+40
+00:09:18,004 --> 00:09:21,884
+O yüzden senin soruna da cevap vermiş olayım yani [öğrenci] bu şekilde.
+
+41
+00:09:24,963 --> 00:09:26,443
+Teşekkürler hocam.
+
+42
+00:09:27,024 --> 00:09:31,323
+Rica ederim. Başka bir sorusu olan var mı?
+
+43
+00:09:34,123 --> 00:09:34,823
+Peki.
+
+44
+00:10:25,491 --> 00:10:27,632
+Şu kısımda kalmıştık. Hemen açıyorum.
+
+45
+00:10:36,788 --> 00:10:52,788
+Geçen hafta hatırlarsanız Data Preparation konusunda baya detaylı konuşmuştuk. En son Feature Selection ve Instance Selection kısmında da konuşmuştuk. Feature Selection'da uygun kümeyi bulmanın...
+
+46
+00:10:53,264 --> 00:11:04,844
+İki üzeri M eksi bir tane seçeneği denemek olduğunu konuşmuştuk ama bunları yapmanın maliyetli olduğunu, bunun yerine filter ve rapper'lar kullanmak gerektiğinden bahsetmiştik.
+
+47
+00:11:16,224 --> 00:11:26,224
+O problem özelinde başarıya ne oranda katkı sağladığını ortaya koyduğunu konuşmuştuk. Daha maliyetli olduğunu ama o problem özelinde biraz daha...
+
+48
+00:11:29,076 --> 00:11:49,796
+Yüksek başarı elde etmemizi sağladığını konuşmuştuk. Şimdi önümüzdeki hafta sınavınız olacağı için biriniz bana hatırlatırsa önümüzdeki bugün dersten sonra mail atabilir. Ben slide'ları sizinle paylaşıyor olacağım. Bugüne kadar yaptığım slide'ları. En azından sınav öncesinde onları inceleme fırsatınız olacaktır.
+
+49
+00:11:52,796 --> 00:11:56,596
+Sınav ders saatinde yapacağız.
+
+50
+00:11:57,039 --> 00:12:16,971
+Tahminimce en fazla bir buçuk saat süreceğini bekliyorum. Şu anda soruları hazırlamadım ama duruma göre size değişik bir durum varsa bilgilendiririm. Tipinle ilgili henüz karar vermedim. Belki test boşluk doldurma çok az bir kısmı olabilir ama genelde cevaplayacağınız kod...
+
+51
+00:12:17,076 --> 00:12:20,956
+Küçük pisolakot yazacağınız birkaç soru olabilir.
+
+52
+00:12:21,616 --> 00:12:26,136
+Ya da ne diyelim, tasarım yapacağınız birkaç soru olabilir.
+
+53
+00:12:26,216 --> 00:12:27,156
+O tür sorular olabilir.
+
+54
+00:12:27,676 --> 00:12:31,416
+Daha çok öğrendiklerinizi kullanacağınız sorular olacaktır.
+
+55
+00:12:31,896 --> 00:12:36,756
+Bazılarında öğrendiğiniz bilgileri kontrol etmek amaçlı sorular olacaktır.
+
+56
+00:12:36,756 --> 00:12:39,956
+Şimdi Instance Selection ve Feature Selection demiştik.
+
+57
+00:12:40,576 --> 00:12:42,056
+Gelelim Diskretization'a.
+
+58
+00:12:42,484 --> 00:12:57,704
+Diskretization'ın bizim için yaptığı iş nedir diye bakarsanız özellikle sürekli verileri kategorik verilere dönüştürme işini gerçekleştirir.
+
+59
+00:12:58,032 --> 00:13:15,792
+Burada örneğin ekranda görmüş olduğunuz bir kartezyan koordinatlar sisteminde farklı noktalarda bulunan instanslar var. Bu instansların değerlerini tek tek ifade etmektense bölgelerini...
+
+60
+00:13:16,244 --> 00:13:30,524
+özellik olarak kullanma şansına sahibiz. Böylece 1, 2, 3, 4, 5, 6 tane bölge değerimiz olacak. Bir instance geldiğinde hangi bölgede yer alıyorsa o bölgenin ailesini özellik olarak kullanmayı tercih edeceğiz.
+
+61
+00:13:32,436 --> 00:13:53,236
+Başka ne olabilir? İşte yaş bilgisi var. Kişinin 0 ile 10 yaş arasında, 10 ile 20, 20 ile 30 arasında olması. Bu yaş bilgilerini farklı kullanan birçok örnek bilirsiniz. Kimi 25-34, 35-44 diye gider. Kimi 18-25, 25-40.
+
+62
+00:13:53,652 --> 00:14:09,492
+40-55 diye gider. Farklı kategoriler vardır. Bu tamamen size bağlı. Peki, Deskriptization'ı kullanmamızın sebebi ne? Geçen hafta biraz konuştuk ama bir daha konuşacak olursak ne söylersiniz?
+
+63
+00:14:23,923 --> 00:14:25,923
+Biraz daha hocam sanki...
+
+64
+00:14:28,019 --> 00:14:34,240
+Sınıf denmez belki bunu ama özellik uzayını küçültmek belki bizim için faydalı olabilir çünkü yapacağımız işlemlerin.
+
+65
+00:14:34,440 --> 00:14:47,300
+Evet, güzel bir ifade. Özellik uzayının küçülmesi uzayın büyük olduğu durumlarda detay bilginin bir yerde toplanaması ve kaybolmasına sebep verir ve birlikte olmadıkları için de ağırlık etkisi olmayacaktır.
+
+66
+00:14:47,300 --> 00:14:56,019
+Ama siz bölgeleri ayırdığınızda ki bunu farklı örneklerde mesela street'i kullanmak yerine ilçeyi kullanmak ya da ilçeyi kullanmak yerine ili kullanmak.
+
+67
+00:14:56,019 --> 00:15:10,060
+Haktan bahsetmiştik. Sadece nümerik verilerde değil, bu kategorik verilerde de bu işlem gerçekleştirilebilir. Örneğin bir bebek mi, çocuk mu, genç mi olduğunu anlamak problemin bütün doğasını değiştirebilir.
+
+68
+00:15:10,060 --> 00:15:22,240
+Mesela COVID örneğini düşünelim. COVID'de de özellikle 63 ve 43 yaşın bir etkisi yok. Ama yaş aralıklarının bariz bir etkisi var.
+
+69
+00:15:22,644 --> 00:15:46,484
+Ve bunu sisteme siz bu şekilde feed ederseniz, sistem öğrenirken tabii ki 63 ve 43'ten bir şeyler çıkartacaktır. Ama onun ağırlığı daha azalmış olacaktır ve etkisi karar verirken biraz daha düşük olacaktır. O yüzden belli alanlara, etkin alanlara sıkıştırmak önemli. Peki bu alanları nasıl seçiyoruz?
+
+70
+00:15:48,484 --> 00:15:50,183
+Bir fikriniz var mı?
+
+71
+00:15:51,059 --> 00:15:56,659
+Yani bu diskret değerlerin, sınırlarını nasıl belirliyoruz?
+
+72
+00:15:57,759 --> 00:16:12,479
+Hocam, klasifikasyon benzetmesi bence de güzeldi. Orada şey durumu var, biraz daha tahmin üzerine. Burada ise kesin net, lojik değerler üzerinden aslında karar veriyoruz. Yani pek tahmine kalmıyor. Çok net ne olduğunu ayırabildiğimiz gruplara bölmüş oluyoruz.
+
+73
+00:16:13,139 --> 00:16:21,799
+Doğru. Peki, bunların sınırlarını nasıl belirliyoruz? Niye 25-40 bir yerde de diğer tarafta 35-44?
+
+74
+00:16:22,379 --> 00:16:29,700
+Burada büyük ihtimalle standart sapmaya bakmamız gerekecektir. Ne kadar yayıldığına bakmamız lazım datanın ve bizim kaç tane gruba ihtiyacımız var.
+
+75
+00:16:29,700 --> 00:16:39,039
+Onun dışında yapacağımız çalışma ile ilgili olarak da grupların önceden bir anlam ifade ettiğini biliyorsak ona göre de seçebiliriz. Az önce bahsettiğimiz COVID örneğinde olduğu gibi.
+
+76
+00:16:40,032 --> 00:16:49,231
+Bunun dışında yaptığımız denemelerde yine ön çalışma yaparak muhtemelen kaç grup oluşturmamız gerektiği, nereden bölmemiz gerektiğini önceden çıkartabiliriz.
+
+77
+00:16:49,652 --> 00:16:57,552
+Evet, teşekkür ederim. Burada discretize etme işleminin aslında temel adımlarını görüyorsunuz slide'da.
+
+78
+00:16:58,004 --> 00:17:17,384
+Burada bir öncelikle değerleri sıralamak gerekiyor. Farklı yaklaşımlar kullanılabilir. Binlere ayırabilirsiniz. Burada tile'ları ayırabilirsiniz. %25, %50, %75, %100'lük tile'ları ayırabilirsiniz. Bu tile'lar değişkenlik gösterebilir. Burada uygulanabilecek çok çeşitli yöntemler var.
+
+79
+00:17:19,380 --> 00:17:36,460
+Tabii burada önemli olan şey şu, sizin discretize işleminizin sonunda başarının olumlu yönüne etkilenmesi. Bunu da gözetmek zorundasınız. Bu nedenle bu önemli bir metrik olarak kullanılıyor.
+
+80
+00:17:38,624 --> 00:17:49,663
+İhtiyaçlardan bahsediliyor. Farklı ihtiyaçlardan. Aşağıdaki bu maddelere göre bu ihtiyaçları karşılamak gerekiyor.
+
+81
+00:17:50,224 --> 00:18:01,744
+Unsupervised algoritmlerden birazcık bahsedelim. Burada özellikle Equal Width ve Equal Frequency özelliğini kullanma şansına sahipsiniz.
+
+82
+00:18:06,612 --> 00:18:20,532
+Şurada baktığınızda ne görüyorsunuz? Equal width dediğimiz zaman 64-67 aralığını, 67-70 aralığını, 70-73 aralığını, 70-76 aralığını eşit mesafelerle bölünmüş yaklaşımdan bahsediyoruz.
+
+83
+00:18:20,532 --> 00:18:22,532
+Öte yandan...
+
+84
+00:18:24,468 --> 00:18:40,648
+Frekansları değerlendirebilirsiniz dağılımı hesaplarken. Yani örnek veriyorum, her bir başlangıç ve bitiş noktasına dörder tane eleman düşecek şekilde de bölmeyi tercih edebilirsiniz. Bu da bir bakış açısı.
+
+85
+00:18:41,867 --> 00:18:52,468
+Tabii ki bu yaklaşımı belirlerken son bölümdeki ayırdığınız bölge tam olarak denk gelmeyebilir. Bunun bir sıkıntı çıkarmak.
+
+86
+00:18:52,468 --> 00:19:17,228
+Bu noktada discretizerlerle ilgili çok daha farklı yöntemler üzerinde çalışabilirsiniz. Bunlara bir bakmakta, göz atmakta fayda var. Benim discretizerlerle ilgili çok daha fazla bu derste söylemek istediğim bir bilgi yok.
+
+87
+00:19:17,584 --> 00:19:34,464
+Sadece bunların belirlenirken belirli yaklaşımları gözeterek yapılması gerektiğini konuşmak istedim sizlerle ve discretization işleminin de aslında bir data preprocessing adımı olduğuna bir kez daha dikkat çekmek istedim.
+
+88
+00:19:34,464 --> 00:19:38,464
+Bunun başarı etkisini...
+
+89
+00:19:39,183 --> 00:19:53,824
+Aslında farklı algoritmalarla ortaya koyabilirsiniz. Ama bugün itibariyle bizim söyleyeceklerimiz bu konuda bu kadar. Başka burada bir şey var mı diye düşünüyorum. Bakıyorum şöyle.
+
+90
+00:19:59,476 --> 00:20:01,856
+Evet, bunları konuştuk.
+
+91
+00:20:05,096 --> 00:20:07,656
+Evet, bu slide da bu kadar.
+
+92
+00:20:08,776 --> 00:20:09,916
+Burayı da tamamlayalım.
+
+93
+00:20:12,396 --> 00:20:18,356
+Şimdi, şöyle bir şey yapacağım.
+
+94
+00:20:53,523 --> 00:21:18,864
+Şimdi Data Processing kısmını tamamladık. Gelelim bizim için çok önemli olan kısma. Machine Learning dendiği zaman kaç tane alt başlık, ana alt başlık önerirsiniz? Önce onu sorayım sonra da size bununla ilgili bir grafik göstereceğim.
+
+95
+00:21:20,435 --> 00:21:24,655
+Machine Learning dediğinizde alt başlıklara neler koyarsınız?
+
+96
+00:21:29,044 --> 00:21:31,364
+Supervised ve Unsupervised Learning olabilir.
+
+97
+00:21:31,484 --> 00:21:34,684
+Supervised Learning. İki, Unsupervised Learning. Üç,
+
+98
+00:21:39,092 --> 00:21:55,832
+Regresyon falan olabilir mi? Onlar o başlarının altına yer alacak. Reinforcement Learning. Güzel, çok güzel. Dört. Aslında [öğrenci] bunu sen söyleyebilirsin, en yakınımız sensin olan.
+
+99
+00:21:56,531 --> 00:21:59,951
+Yapay sinir ağları demek istiyorum ama yanılıyor.
+
+100
+00:21:59,951 --> 00:22:07,192
+Evet, yok doğru. Neural Networks ve Deep Learning dediğimiz tamamen yapay sinir ağlarını içeren bir başlık.
+
+101
+00:22:07,192 --> 00:22:13,971
+Ve sonuncu beşincisi. Aslında ben beşincisi için seni işaret etmiştim ama sen dördüncüyü söyledin.
+
+102
+00:22:15,991 --> 00:22:22,511
+Geçen hafta bize bir konuyu söylerken faydalanmıştın ondan, o bilgiden.
+
+103
+00:22:22,996 --> 00:22:25,236
+Kollektif öğrenme demiştim ama o fark değil mi?
+
+104
+00:22:25,236 --> 00:22:26,155
+Ensemble Learning.
+
+105
+00:22:27,296 --> 00:22:31,655
+Beş tane ana başlık var. Şimdi ben sizlerle onu grafiğini paylaşmak istiyorum.
+
+106
+00:22:33,316 --> 00:22:34,056
+Görebiliyor musunuz?
+
+107
+00:22:35,476 --> 00:22:39,476
+Bu aslında Machine Learning'i kabaca tarifleyen çok güzel bir mind map.
+
+108
+00:22:41,695 --> 00:22:44,476
+Supervised Learning tarafına geldiğimiz zaman...
+
+109
+00:22:44,884 --> 00:23:00,903
+İki yaklaşımdan bahsediyoruz temel. Bir classification, diğeri de regression. Farkı nedir? Bir tanesinde continuous veriler tahmin etmeye çalışıyorsunuz. Bir tanesi de discrete tahminler yapmaya çalışıyorsunuz sınıflarınızla.
+
+110
+00:23:11,124 --> 00:23:28,364
+Hiç Supervised Learning yaptınız mı? Bir şey soracağım yaptıysanız. Ben yaptım evet. Çok güzel. Başka? Kendimi feda ediyorum. Ödev dahilinde ben de yaptım hocam. [öğrenci] ödev dahilinde yaptın. Başka?
+
+111
+00:23:29,140 --> 00:23:32,280
+[kişisel bilgi]
+
+112
+00:23:32,420 --> 00:23:33,820
+Çok güzel [öğrenci]. [öğrenci]?
+
+113
+00:23:34,280 --> 00:23:38,260
+Hocam zaten supervised learning'i sürekli kullanıyoruz diye düşünüyorum.
+
+114
+00:23:38,440 --> 00:23:42,080
+Yani ödevlerde olsun, yaptığımız çalışmalarda olsun. Zaten kullandığınız bir şey.
+
+115
+00:23:43,188 --> 00:24:09,908
+Yani bazı kişiler belki lisans döneminde yapmamış olabilirler. Çünkü dersi normalde yok biliyorsunuz genelde. Çok lisansa inmiş düzeyde değil hala. O da enteresan bir durum. Yani ben artık makine öğrenmesinin bir seçimlilik dersi olarak olması gerektiğini düşünüyorum. Çünkü o noktadayız. Ama bunu yapay zeka ve veri madenciliği dersleri var. Hani biraz oralarla örtüştüğü için ekstra açılmıyor. Ama bence ikisi yani birbirinden farklı aslında. Yani bunu da konuşmuştuk daha önce.
+
+116
+00:24:11,188 --> 00:24:20,948
+Bu kaçınılmaz bir şey. Zaten yapay zeka en tepede yer alıyor. Şimdi yaptığınıza göre soru şu. En fazla kaç sınıflı problemle uğraştınız?
+
+117
+00:24:30,579 --> 00:24:39,819
+Hocam, benim uğraştığım problemde yaklaşık 16 tane sınıf vardı.
+
+118
+00:24:40,039 --> 00:24:40,519
+Nüksek.
+
+119
+00:24:40,519 --> 00:24:41,500
+Aksiyon sınıfları.
+
+120
+00:24:41,699 --> 00:24:44,879
+Nedir mesela? Neydi? Neyi bulmaya çalışıyordun tanımaya?
+
+121
+00:24:45,339 --> 00:24:48,919
+Şöyle, yani basit aksiyon sınıflarını tanımaya çalışıyordum.
+
+122
+00:24:49,099 --> 00:24:50,879
+İşte yürüme, koşma gibi.
+
+123
+00:24:51,399 --> 00:24:54,159
+Oh, rahmetullah. Aynı konuda çalışıyormuşuz ya.
+
+124
+00:24:54,996 --> 00:25:10,876
+Başüstüne tutturdum. Ben uzun yıllardır bu aktivite tanıma işinde çalışıyordum da ilk defa hem de bölüm dışından bir öğrenci olunca duygulandım bir anda. Peki aktivitelerde başka neler vardı 16 tane dediğine göre?
+
+125
+00:25:11,380 --> 00:25:21,760
+Yani şey işte, bir ev içerisinde yapılabilecek aktiviteler vardı genelde hocam. İşte yürüme, koşma, diş fırçalama, dulaşık yıkama.
+
+126
+00:25:22,200 --> 00:25:23,540
+Hangi sensörleri kullanıyordun?
+
+127
+00:25:24,760 --> 00:25:26,740
+Kinect kamerası kullanıyordun.
+
+128
+00:25:26,740 --> 00:25:33,080
+Kamerayı üzerinden yapıyordun. Okey. Daha çok iç ortam için bir çözüm üretiyordun değil mi?
+
+129
+00:25:33,760 --> 00:25:34,120
+Evet.
+
+130
+00:25:34,620 --> 00:25:37,460
+Tamam. Başarı oranın yüzde kaç çıkmıştı?
+
+131
+00:25:38,644 --> 00:25:56,644
+Başarı oranı, farklı bazı yöntemler denedim. Kendi aldığım görüntülerde çok büyük bir dataset oluşturmamıştım ama hazır dataset'ler üzerinde.
+
+132
+00:25:56,644 --> 00:26:03,596
+Yöntem ne kullanmıştın? Derin öğrenme mi?
+
+133
+00:26:03,796 --> 00:26:13,135
+Evet, derin öğrenme. Bir işte temporal segment network denilen bir network çeşidi var. Bunu kullanmıştım hocam.
+
+134
+00:26:13,296 --> 00:26:18,875
+Tamam. Okey. Evet, diğer arkadaşlardan da en fazla kaç sınıfla çocuklarını alayım?
+
+135
+00:26:22,955 --> 00:26:25,296
+Hocam tweetlerle çok çalışmıştım.
+
+136
+00:26:25,296 --> 00:26:28,776
+Tweetlerle, evet. Ama pozitif, negatif, netral mi?
+
+137
+00:26:29,236 --> 00:26:42,355
+Evet, yani hatırladığım o vardı. Bir de bir ara gene lisansta bir daha. O kadar çok tweetle ilgili proje yaptım ki. Bir de şey yapmıştık, topik bulma. Yani bu haber midir, siyaset midir vs.
+
+138
+00:26:42,355 --> 00:26:46,016
+8 başlık vardır. Tamam, çok güzel.
+
+139
+00:26:46,776 --> 00:26:50,596
+Hocam, benimkiler sınıf değil de regresyon programıydı.
+
+140
+00:26:50,875 --> 00:26:53,375
+Tamam, çok güzel. [öğrenci]?
+
+141
+00:26:55,635 --> 00:27:14,355
+Hocam ben de regresyon problemiyle çalıştım. Ben fiyat tahminlemesi üzerine regresyon işlemleri yapmaya çalışıyordum ben. Genelde price detection üzerine çalışmayı seviyorum ben biraz. Orada regresyonla falan çalıştım. Ama hani sınıf değildi yani. Sınıflandırma işlemi yapmadım.
+
+142
+00:27:14,355 --> 00:27:16,515
+Tamam. [öğrenci]?
+
+143
+00:27:17,140 --> 00:27:34,820
+Hocam, şu an eski ödevlerime ulaşmaya çalışıyordum da, baktığımda hazır bir data set üzerinde hazır araçları çalıştırarak aslında ödev yapmışım verim madenciliğinde ve iki sınıf vardı sadece. İki tane teki vardı. Yani doğrudan yapılmış kapsamlı bir çalışma değildi de biraz canlandırma formazımda olmuş benim yaptığım çalışma.
+
+144
+00:27:34,820 --> 00:27:39,160
+Tamam, okey. [öğrenci]'a son kez sorayım. Yani son olarak.
+
+145
+00:27:40,320 --> 00:27:41,960
+Ben çalışmadım hocam bu konuda.
+
+146
+00:27:42,483 --> 00:28:07,383
+Güzel, ilk defa hiç çalışmamış birine denk geldik. Şimdi gördüğünüz gibi farklı sınıf sayılarını konuştuk. Neden bu sınıf sayılarını gündeme getirdin? Biz genelde bu tür problemlerle ulaşırken çok yüksek sayıda sınıf içermiyor problemlerimiz. Dikkatinizi çektiyse belki. Onu hiç geçmiyoruz neredeyse.
+
+147
+00:28:07,743 --> 00:28:33,343
+Genelde 10 ve 6'nda sınıflarla ilgili tanıma işi yapıyoruz ya da recognition işi yapıyoruz. Rahmetullah'ınki birazcık spesifik bir durum ve aslında önemli bir case. Sınıf sayısı arttıkça başarı da otomatikman düşmeye başlıyor genelde. Bunun sebebi de benzer sınıflar ortaya çıkmaya başlıyor.
+
+148
+00:28:33,824 --> 00:28:50,084
+Ve ayırt edicilik çok daha zorlaşmaya başlıyor. Gerçek hayatta, aslına bakarsanız belli problemlerde sınıf sayısı sabit ama zaman içerisinde artan sınıflar da olabilir.
+
+149
+00:28:50,836 --> 00:29:05,076
+Yeni sınıflarda türeyebilir. Bu da önemli bir problem. Yani siz 5 sınıfla başladığınız, mesela Network Securities'inde kullandığımız saldırı tipi tespitinde yeni bir saldırı tipi çıktığında yeni bir sınıf demek.
+
+150
+00:29:05,076 --> 00:29:17,915
+Ve siz bunu öğretmemiş olabilirsiniz. Öğretmediğiniz bir sınıfı tahmin etmek de pek mümkün değil. O tür durumda eğer yeni bir sınıf türeme ihtimali varsa ne yapıyoruz?
+
+151
+00:29:19,124 --> 00:29:37,124
+Beş sınıfımız ve diğerleri diyoruz. Diğerleri diyerek tespit etmeye çalışıyoruz. O beş sınıfa benzemiyorsa diğer kategorisine alıyoruz. Zaman içerisinde yeni bir sınıf türe dinle de o sınıfın özelliklerini etiketleyip sisteme öğretmeyi deniyoruz. Ama sonuçta gerçek hayat...
+
+152
+00:29:37,423 --> 00:30:00,203
+Birçok noktada kısıtlı sınıflarla çalışmamızın aslında önünde bir engel. Örneğin, burada Rahmetullah'ın bahsettiği aktivite tanıma işi, basit aktivitelerde 7-8 aktiviteyken, yürüme, koşma, oturma, yatma gibi kompleks aktiviteye girdiğiniz zaman sınıf sayısı 1'den 20-30-40'lara çıkabilir.
+
+153
+00:30:00,723 --> 00:30:17,923
+Çok fazla dağlanabilirsiniz. Nedir? Diş fırçalama, araba kullanma, gitar çalma, müzik dinleme, mutfakta bulaşık yıkama, çamaşır yıkama, evi süpürme gibi çok fazla aktiviteye gidersiniz.
+
+154
+00:30:19,667 --> 00:30:39,667
+Hedef de bu. İnsanın, hani konuşmuştuk ki Ambient Intelligence demiştik, çevresel zeka ve mümkün olduğunca aksiyonları anlamanın peşindeyiz. Bu aksiyonları anladığında akıllı sistemler daha net kararlar verebilecek diye. Bu da önümüzdeki dönemde...
+
+155
+00:30:40,500 --> 00:30:54,759
+Bizim sınıf sayısının çok yüksek olduğu problemleri nasıl çözebileceğimiz sorusunu karşımıza getiriyor. Yani sınıf sayısı kısıtlı olanları çözmek nispeten belli bir noktaya başarıyı getirmiş durumda.
+
+156
+00:31:06,132 --> 00:31:20,032
+Farklı yaklaşımlar sergilemek gerekiyor. Bu da aklınızın bir köşesinde olsun. Sınıf uzayı geniş problemlerin başarısını arttırmak her zaman için daha zor ve bunlar için ekstra çözümler gerekiyor.
+
+157
+00:31:20,032 --> 00:31:24,032
+Şimdi biz tekrar konumuza dönecek olursak, bu noktada...
+
+158
+00:31:26,132 --> 00:31:52,572
+Classification ve Regression dedik. İki farklı başlık altında supervised learningi inceledik. Bunlar içerisinde şu anda gördüğünüz başlıklar, KN, Naive Bias, Logistic Regression, SVM ve Decision Tree içerisinde çalışma performansı en hızlı olan hangisi olabilir?
+
+159
+00:32:02,548 --> 00:32:04,347
+Yani başarı oranı anlamında mı acaba?
+
+160
+00:32:04,667 --> 00:32:07,207
+Yok. Karar verme hızı anlamında.
+
+161
+00:32:09,847 --> 00:32:12,347
+Yani ben decision tree demek istiyorum. Kendi adıma.
+
+162
+00:32:13,788 --> 00:32:14,887
+Farklı fikri olan.
+
+163
+00:32:20,147 --> 00:32:22,187
+Hocam, kyenen hızlı demiştik.
+
+164
+00:32:24,167 --> 00:32:26,887
+Ama çalışma karnı çalışıyoruz. Öğrenme değil.
+
+165
+00:32:27,647 --> 00:32:32,807
+Aynen. O zaman decision tree muhtemelen hızlı olacaktır bence de.
+
+166
+00:32:32,807 --> 00:32:38,347
+Şimdi, bu soruya cevap verirken tabii bilmemiz gereken parametreler var.
+
+167
+00:32:39,807 --> 00:32:43,508
+Öncelikle bu çalışma hızına etki eden parametreler neler olabilir?
+
+168
+00:32:44,167 --> 00:32:47,028
+Time kompleksliği neler etkiliyor? Bir onu konuşmakta fayda var.
+
+169
+00:32:47,347 --> 00:32:56,807
+Dolayısıyla doğrudan bir cevap vermek kolay değil ama genelleme yapmak adına evet cevaplarınızı değerlendirebiliriz.
+
+170
+00:32:57,907 --> 00:33:04,028
+Decision Tree'de çalışma performansını etkileyen neler var arkadaşlar?
+
+171
+00:33:07,731 --> 00:33:12,692
+Yani time complexity'e etki eden hangi parametreleri sayabiliriz?
+
+172
+00:33:14,772 --> 00:33:19,252
+Özellik sayısı. Bu özelliklerin entropileri.
+
+173
+00:33:19,892 --> 00:33:43,812
+Çok güzel. Dağılımı. Dağılımı. Özellik sayısı, entropileri. Ağacın dallanma miktarı. Evet. Ağacın derinliği aslında bizim için en kritik. Yani bu [öğrenci]'ın söylediği noktadan çıkarak oluşturduğumuz ağacın bizim için derinliği çok kritik. Ne kadar ağacımız derin olursa o kadar fazla karar verme işleminden geçeceğiz demek oluyor.
+
+174
+00:33:44,435 --> 00:33:48,716
+Yani bu da en kötü ihtimalle, worst case'de neye eşit?
+
+175
+00:33:52,339 --> 00:33:53,259
+İki ülde mi?
+
+176
+00:33:54,879 --> 00:33:55,779
+Yok, [öğrenci].
+
+177
+00:33:56,879 --> 00:33:57,599
+Öldürdün bizi.
+
+178
+00:33:58,599 --> 00:34:00,139
+En neye denk karşılık geliyor?
+
+179
+00:34:00,200 --> 00:34:01,000
+En siz sayısın ama.
+
+180
+00:34:03,960 --> 00:34:04,799
+Acaba örneğin.
+
+181
+00:34:07,460 --> 00:34:09,800
+Lok 2 tabanında en hocam büyük ihtimal.
+
+182
+00:34:10,899 --> 00:34:13,000
+En neye karşılık geliyor [öğrenci]?
+
+183
+00:34:14,119 --> 00:34:17,260
+Hocam, bunu geçen de yapmıştık galiba. Sonra faktörler çıkmıştı diye hatırlıyorum.
+
+184
+00:34:17,859 --> 00:34:18,960
+Yok yok, oraya gelmeyeceğiz.
+
+185
+00:34:21,268 --> 00:34:37,327
+Yani n'in instans sayısı olduğunu farz edin, d'nin de özellik sayısı olduğunu farz edin. Bu ikisini elimizde tuttuğumuzu düşünürsek, en kötü durumda ağacın derinliği neye denk düşecektir?
+
+186
+00:34:41,811 --> 00:34:44,271
+En değil mi? Yani tek dala gider.
+
+187
+00:34:44,931 --> 00:34:47,992
+Çok güzel ama [öğrenci] en değil de ne?
+
+188
+00:34:49,992 --> 00:34:51,851
+D. Yani özellik sayısı.
+
+189
+00:34:55,699 --> 00:34:57,460
+Çünkü özelliklere göre karar veriyoruz, öyle değil mi?
+
+190
+00:34:59,139 --> 00:34:59,840
+Doğru, evet.
+
+191
+00:35:00,179 --> 00:35:04,199
+Ağaçta oluştururken, biraz önce [öğrenci] demişti ki, entropilerine bakarız özelliklerin.
+
+192
+00:35:04,899 --> 00:35:13,720
+Oradan yola çıkarak, o özellik diyelim ki yaş aralığı, 45'ten büyükler sağa, 45'ten küçükler sola gidecek şekilde olduğunu varsayalım.
+
+193
+00:35:14,356 --> 00:35:23,536
+En kötü ihtimalle ağaç bir tarafa yıkıldığı için D kadar adım gitmesi gerekir ki bu en sevmediğimiz unbalance tree'dir.
+
+194
+00:35:24,596 --> 00:35:28,036
+Genelde decision tree'lerde böyle bir case çok zor oluşur.
+
+195
+00:35:28,956 --> 00:35:36,655
+Ama teorik olarak worst case'i oluşturduğunuzda özellik sayısı kadar kontrol yapmanız gerekir.
+
+196
+00:35:36,655 --> 00:35:38,655
+Bu şartlarda...
+
+197
+00:35:38,835 --> 00:35:49,956
+Siz düşündüğünüzde decision tree özellik sayısı çok fazla olmaya birçok problemde avantajlıdır.
+
+198
+00:35:51,115 --> 00:35:55,416
+Karar verme sürecinde, hızlı çalışması açısından.
+
+199
+00:35:55,860 --> 00:36:19,340
+Çünkü en kötü durumda D'ye kadar dallanacaktı. Ama normalde böyle bir ağaç oluşmayacaktır. Daha biraz daha dengeli bir ağaç oluşacaktır. Decision Tree'nin de kendi içerisinde tabii farklı ağaç türleri var. En çok kullanılanı işte yaygın olarak J48 olarak adını VEKA'da kullandığımız ama C4.5 olarak literatürde geçen bir Decision Tree kullanıyoruz.
+
+200
+00:36:22,132 --> 00:36:32,112
+Kullandığımız o algoritmanın bazı standart parametreleri var. O parametreleri değiştirdiğim zaman ağacın da karar verme şekli değişebiliyor.
+
+201
+00:36:33,172 --> 00:36:37,172
+Nive Bayez nasıl bir sınıflandırma tekniğidir?
+
+202
+00:36:42,867 --> 00:37:02,707
+Yani decision tree, ağaç yapısı dediğimiz bir yaklaşımla yani bilgilerin entropilerini başta kullanmak üzere bize dallanma sağlıyor ve işte 45 yaşından büyük olanlar, işte şeker hastalı olanlar dediğimiz zaman COVID tarafında tehlikeli riskli gruba giriyor.
+
+203
+00:37:02,707 --> 00:37:05,047
+Örnek veriyorum ya da işte hamileler diyorsunuz vesaire.
+
+204
+00:37:07,219 --> 00:37:17,059
+Nayibayes neye bakıyor? Nayibayes biraz daha istatistiksel hocam sanki. Doğru, probabilistik bir sınıflandırma yaklaşımı kullanıyor.
+
+205
+00:37:17,059 --> 00:37:30,059
+Ve bir sınıfa ait olma ihtimalini hesaplıyor. Bunu daha önce de aslında bir kez konuşmuştuk ama...
+
+206
+00:37:30,835 --> 00:37:42,835
+Burada bir sınıfa ait olmak ihtimalini hesaplarken eğitim setindeki verilerin aslında dağılımlarına ve istatistik bilgilerine bakıyor.
+
+207
+00:37:42,835 --> 00:37:56,175
+Bize ne çıkartıyor? O ne diyelim oluşturduğumuz istatistiksel formülün içerisindeki dağılıma ait parametrelerin ismini koyuyoruz.
+
+208
+00:37:56,692 --> 00:38:13,392
+Hangi değerde olduğunu söylüyoruz. Ve sonra yeni gelen bir örneğin değerini yerine yerleştirdiğimizde olasılığın ne çıktığına bakıyoruz. Peki, bu olasılığın ne çıktığına bakarken her sınıf için yapıyor muyuz bu işleme?
+
+209
+00:38:19,347 --> 00:38:22,568
+Belli bir trash ort mu var acaba?
+
+210
+00:38:28,148 --> 00:38:28,788
+Ne olabilir?
+
+211
+00:38:30,648 --> 00:38:33,027
+Bakıyoruz demek istiyorum. Öyle hatırlıyorum ama şu an.
+
+212
+00:38:33,947 --> 00:38:44,887
+Yani örneğin bir sınıfı ait olma olasılığını hesaplarken iki sınıf problemlerinde bir tane hesaplama yapıyoruz. Mantıken.
+
+213
+00:38:44,887 --> 00:38:54,887
+Yani mesela spam olma ya da olmama durumu bir mesajın. Telefona gelen bir mesajın. Ki bu durumda spam olma ihtimalini hesapladığınızda zaten spam...
+
+214
+00:38:55,027 --> 00:39:23,027
+Olma ve olmama durumunu bir threshold ile belirleyebilirsiniz. Problem iki sınıf problemi. Problem iki sınıf problemi değilse o zaman farklı sınıflara ait olma olasılıklarını gözeterek karar vermeniz gerekiyor. Çünkü iki sınıfta bir tarafın ağır basıyor olması, 0.5'ten büyük olması karar vermenizi sağlıyor. Ama diğerlerinde olasılıklar dağılıyor. 0.4 çıkabilir, 0.3 çıkabilir. İçlerinden en yükseğini almayı tercih edebilirsiniz.
+
+215
+00:39:23,027 --> 00:39:41,127
+Telefonda buraya gelmişken bir parantez açalım. Spam mesaj problemi var biliyorsunuz. Çok fazla sayıda spam mesaj geliyor. Spam mesaja karar vermek için hangi tür bilgileri kullanıyoruz?
+
+216
+00:39:47,923 --> 00:39:52,724
+Span mail ile ilgili 15-20 sene önce çok fazla sayıda çalışma yapıldı.
+
+217
+00:39:53,264 --> 00:39:54,364
+Ama sonra bu iş mesajı.
+
+218
+00:39:55,063 --> 00:39:59,943
+Gönderen kişinin repetition'ına bakıp karar verilebiliyor.
+
+219
+00:40:01,003 --> 00:40:05,143
+Eğer çok fazla span diye bildirilmişse, bundan sonra bütün mesajları span olarak bitirebiliyor.
+
+220
+00:40:06,643 --> 00:40:09,244
+Bunu mesaj olarak mı değerlendiriyoruz?
+
+221
+00:40:09,244 --> 00:40:10,864
+Mail olarak düşünüyorum.
+
+222
+00:40:10,864 --> 00:40:12,543
+Yok, mailden bahsetmiyorum. Mesajdayız.
+
+223
+00:40:13,824 --> 00:40:15,563
+SMS'i konuşuyoruz.
+
+224
+00:40:17,619 --> 00:40:41,539
+Gönderen kişiye bakılabilir mesela mesajla, SMS'te. Çünkü illa ki orada firmalarda ya zorunluluk var zaten. En başta mesajın sonuna B003 gibi bir ifade yazmak zorunda. Bu dikkat alınabilir. Çünkü reklamlarda geliyor, bankalarda gelmiyor benim bildiğim. Öyle bir case var sanırım.
+
+225
+00:40:44,179 --> 00:40:51,679
+Firmanın telefon numarası mesela. Bu da kontrol edilebilir. Güzel. Peki.
+
+226
+00:40:51,679 --> 00:40:58,507
+Bunu şöyle, şimdi zaten mesela bir telefon numarası bizi aradığında otomatikmen...
+
+227
+00:40:58,739 --> 00:41:22,239
+Bu konuda şey çıkıyor, hangi firma olduğu, nereden arandığı falan çıkıyor. Bunu da ben araştırdığımda bazılarını internetten arattırarak buluyorlarmış. Olası dolandırıcılık diye yazıyor mesela bazı numaraların sonunda. Bu internette dolananlardan gidiyorlarmış. Mesela bu da kullanılıp o mesajı spam'a atılabilir.
+
+228
+00:41:23,603 --> 00:41:25,163
+Öyle bir yöntem de kullanmak.
+
+229
+00:41:25,183 --> 00:41:35,223
+Güzel. Ben bu detayı, olası dolandırıcı numaraların detayını çok bilmiyorum. Yanlış bir şey söylemiyorum ama senin söylediğin doğrultuda konuşalım.
+
+230
+00:41:35,943 --> 00:41:40,603
+Birincisi, normalde mail'de biliyorsunuz mail'in içeriğine bakıyorduk.
+
+231
+00:41:41,423 --> 00:41:43,603
+Ve içeriğindeki kelimelerin...
+
+232
+00:41:44,079 --> 00:41:47,259
+belli kelimelerle eşleşip eşleşmediğini.
+
+233
+00:41:47,759 --> 00:41:56,079
+Çünkü eskiden spamler çok daha basit mesajlar olarak gönderiliyordu ve işte orada büyük harf kullanımı sıklığı, kullanılan kelimelerin...
+
+234
+00:41:56,179 --> 00:42:23,179
+Bunları değerlendirerek mesaj içeriğinden spam olup olmadıklarına karar veriyorduk. SMS'te de aynı yöntemi uyguluyoruz aslında. Birçok noktada işe yarıyor ama SMS'te telefonda karar verirken daha rigid kararlar vermenizi sağlayacak bazı bakış açıları da var. Örneğin rehberinizde olup olmaması. White list diye bir şey var. Bir de black list var. Sizin ekleyeceğiniz numaralar.
+
+235
+00:42:23,615 --> 00:42:42,956
+ByteList ve Blacklist kavramı aslında önemli derecede mesajların ayrışmasını sağlıyor. Yani çok basit bir kontrolü. Bunu niye anlatıyorum? Hani mobil teknolojiler için veri işleme teknikleri diyoruz ya. Hani nerelerde işe yarar diye. İşte bakın bu noktada çok basit bir problem. Herkesin aklına gelebilecek bir çözüm.
+
+236
+00:42:43,380 --> 00:42:55,580
+Ama dizayn ederken bu yapıyı bu şekilde dizayn etmek sizin telefonunuzun karar verme sürecini hızlandırıyor ve artı başarı oranını arttırıyor.
+
+237
+00:42:55,580 --> 00:42:57,420
+Peki.
+
+238
+00:42:58,547 --> 00:43:20,087
+Whitelist dedik, Blacklist dedik. [öğrenci]'in söylediği yapıyı kullanabiliriz belki. Numaranın aranması, bir API üzerinden bu bilginin soruşturulması fikri de kullanılabilir. Artı içeriye bakmak, içerikteki mesajın içerisinde regular expression kullanmak. Yani belli ifadeler geçiyor mu?
+
+239
+00:43:20,788 --> 00:43:40,507
+Bunun için birebir biçilmiş kaftan regular expression mantığını kullanmak. Buradaki B ile biten mesajın sonundaki kodlama, bizim için önemli bir kodlama. Bu tür regular expressionlarla da onun bir mesajın spam olup olmadığına karar verebiliriz.
+
+240
+00:43:48,788 --> 00:43:57,307
+Belli başlı ifadelerin kullanılıp kullanılmadığı bunlar bir özellik uzayı oluşturularak karar verilmesi sağlanabilir.
+
+241
+00:43:58,627 --> 00:44:04,527
+Sadece iki kategori mi ayırmak isteriz yoksa başka kategorileri de ayırma şansınız olsaydı tercih eder miydiniz?
+
+242
+00:44:04,527 --> 00:44:12,047
+Başka kategorilerle çalışabilir miyiz? Bu bahsettiğim SMS probleminde.
+
+243
+00:44:12,755 --> 00:44:22,556
+Spam ve non-spam mi yoksa başka kategorilerde tercih eder misiniz? Posta kutunuzun daha akıllı bir SMS kutusuna dönüşmesi olası olabilir mi?
+
+244
+00:44:24,056 --> 00:44:31,531
+Hocam şöyle bir şey olabilir belki bilmiyorum. Böyle bir uygulama var mı da. Bir kere mesajlarla bize çeşitli...
+
+245
+00:44:31,731 --> 00:44:44,191
+Bildirim kodları geliyor. Yani işte ne bileyim bankaya gireceğiz bir şey olacak falan. Bunlar bir sınıflansa sanki güzel olabilir. Veya işte bir alışveriş yapıyoruz. Siparişiniz kargoya verildi diye mesaj geliyor. Gene onlar bir kategori olabilir.
+
+246
+00:44:46,228 --> 00:44:55,468
+Bazen devlet kurumlarından mesajlar geliyor. Özellikle bu aralar. Koronada şöyle dışarı çıkmayın. Belediye falan atıyor. Onlar bir kategorilardır gibi gibi.
+
+247
+00:44:55,468 --> 00:45:02,847
+Çok güzel. Aslında bu noktaya gelmek istemiştim. Güzel bir başlangıç oldu. Verdiğin örnekler de gayet güzel.
+
+248
+00:45:05,599 --> 00:45:33,599
+Bununla ilgili aslında bir çalışma yürüttük bir öğrencimle beraber. Akıllı SMS kutusunu dizayn ettik. İlk yaptığımız 5-6 sene önceki bir çalışmada iki öğrencimle çalışmıştım. Onlarla daha basit bir mantıkla oluşturmuştuk ama sonra baktık ki [öğrenci]'ın anlattığı gibi çok fazla artık mesaj kategorisi olmaya başladı. İşte OTP'ler bankalardan gelen. Onun dışında biraz önceki gibi özellikle pandemi.
+
+249
+00:45:33,599 --> 00:45:45,739
+Bir döneminde sipariş teslimiyle ilgili kargoya verildiği teslim edildiğiyle ilgili mesajlar. Bunlar bu yeni kategori. Biz çalıştığımızda bu yoktu mesela. Yani en azından biz bunun sınıflandırılması gerektiğini düşünmüyorduk. O zaman böyle bir ihtiyaç yoktu.
+
+250
+00:45:46,959 --> 00:45:59,099
+Onun dışında reklam, reklamlar önemli. Onun dışında puan kullanımları. Mesela bir mesaj geliyor. Şu puanınız var, şu tarihe kadar kullanmanız lazım.
+
+251
+00:46:00,884 --> 00:46:25,704
+Bunları takip etmek SMS kutusunda çok zor arka arkaya geldiklerinde. Gözden kaçırıyorsunuz. Akıllı SMS kutusunu tasarlarken böyle bir yaklaşımı benimseyip yaklaşık 5 ya da 6 tane kategoriye ayırmıştık. Ki günümüzde bu kategori sayısı biraz daha arttı. Mobil telefonda çok basit bir problemi ele alıp insanların hayatını çok kolay bir hale getirebiliyorsunuz.
+
+252
+00:46:26,068 --> 00:46:35,248
+İşte size mobil teknolojiler içerisinde veri işleme teknikleri nasıl kullanılabileceğine, nasıl katkı sağlayabileceğini anlatan çok güzel bir örnek. Bununla ilgili bir tane de makale yayınladık.
+
+253
+00:46:35,568 --> 00:47:00,288
+Marmara Dergisi'nde, Ulusal Bir Dergi'de yayınlandı. Başarı oranlarını yaklaşık inceledik. Orada kullandığımız yöntemler gene Nayibayas gibi, Decision Tree gibi yaklaşımlardı. Tabii ki whitelist ve blacklist yaklaşımını da kullandık. Bu yüzden hibrit bir model oldu. Tamamen makine öğrenmesini saf supervised learning ile değil. Ama burada işte telefon numaralarına bakarak da bu işlemi gerçekleştirdik.
+
+254
+00:47:03,568 --> 00:47:16,748
+Fonlar ve akıllı saatler söz konusuysa, hibrit yaklaşımlar her zaman için daha az karmaşıklığa sahip ve daha az enerji tüketen yaklaşımlar olarak karşımıza çıkıyor.
+
+255
+00:47:17,608 --> 00:47:24,307
+Nayibayası konuştuk. Support Vector Machine genellikle iki sınıf problemleri için kullanılır.
+
+256
+00:47:25,068 --> 00:47:28,068
+Bir boundary çizer, bir hyperplane çizer.
+
+257
+00:47:31,795 --> 00:47:48,815
+M diyelim, M sınıf içinde kullanabilirsiniz. M adet sınıfınız var ve bunu kullanabilirsiniz. Bunun nasıl olduğunu 10 dakika sonra devam ettiğimiz zaman sizinle konuşuyor olacağım. Bir 10 dakikalık ara öyledim, ondan sonra kaldığımız yerden devam edelim.
+
+258
+00:58:39,027 --> 00:58:40,728
+Evet, yeniden merhaba arkadaşlar.
+
+259
+00:58:44,087 --> 00:58:45,847
+Kaldığımız yerden devam edelim.
+
+260
+00:58:50,867 --> 00:58:58,887
+Şimdi svm için konuşuyorduk. M tane class varsa ne yapabiliriz diyorduk.
+
+261
+00:59:00,007 --> 00:59:07,248
+Sınıf problemi için binary class problemi için svm'yi kullanıyoruz normalde.
+
+262
+00:59:07,248 --> 00:59:13,127
+Ama bunun belirli bir yöntemle multi-class problemlere uygulanması olası.
+
+263
+00:59:14,187 --> 00:59:14,847
+Evet, [öğrenci].
+
+264
+00:59:17,396 --> 00:59:22,135
+Aynı mekanda olduğumuz için daha rahat yakınsın bana. İlk sana sorayım dedim.
+
+265
+00:59:25,295 --> 00:59:25,896
+Buyurun hocam.
+
+266
+00:59:28,396 --> 00:59:29,896
+Soruyu galiba kaçırdık.
+
+267
+00:59:31,195 --> 00:59:34,175
+Bu kaçırdım hocam. Tekrar alayım. Hemen cevap vereceğim.
+
+268
+00:59:34,175 --> 00:59:36,076
+Hemen veriyorum soruyu tekrar.
+
+269
+00:59:37,215 --> 00:59:42,576
+Support Vector Machine, Binary Classification için kullanılan bir algoritmadır.
+
+270
+00:59:43,496 --> 00:59:44,775
+Yaklaşımdır, yöntemdir.
+
+271
+00:59:45,331 --> 00:59:51,331
+Bunu multi-class problemleri için nasıl kullanabiliriz support vector machine?
+
+272
+00:59:51,331 --> 01:00:01,331
+Hocam normalde SVM'de mesela iki boyutlu konuştuğumuzda şey gibi geliyor bana hani üç boyutlu olsa üç boyutlu dünya gibi düşünmek gerekiyor gibi geldi bana.
+
+273
+01:00:01,331 --> 01:00:09,195
+Çünkü iki boyutta da hani X ve Y'ye göre orada bir regresyonun etrafına bağımdırı çiziliyordu.
+
+274
+01:00:09,235 --> 01:00:26,815
+Onu şöyle düzelteyim mi? Orada iki boyutta görmüş olduğun doğru diyelim. Normalde bir hyperplane. Yani bunu en boyutlu bir ortamda düşün. Ona göre çizilen bir hyperplane düşün.
+
+275
+01:00:35,744 --> 01:00:48,824
+İki tane sınıfın olması durumu. İki boyutlu birbirinden ayır, iki boyutta bir çizgi çizme durumu değil. Yani hyperplane çiziyoruz ya, o hyperplane'i doğru olarak düşünme. Onu bir plane olarak düşün. Herhangi bir boyutta kestiğini düşün.
+
+276
+01:00:51,264 --> 01:00:58,704
+Ya işte üçlü olunca da ben onun şey diye geliyor, hani üç boyutlu dünyadaki gibi bir ayrım yapmak zorunda kalacak.
+
+277
+01:00:58,704 --> 01:01:02,983
+Yok, değil. Hayır. Öyle değil. Başka bir arkadaşımıza söz vereyim.
+
+278
+01:01:04,244 --> 01:01:26,724
+Hocam, aslında ilk derste söylediğiniz bir durum vardı. Bir sınıf ya da diğeri şeklinde bir sınıflandırma durumu söz konusu. Burada mesela A, B, C sınıfları olsun. A veya diğeri, mesela diğerine düştüyse de B veya C kalıyor zaten bir tek. Çok şart. Birincisi bu. One versus all diyelim.
+
+279
+01:01:27,411 --> 01:01:44,811
+Genelde böyle ifade edilir. Support Vector Machine'inde Multi Class problemi çözerken A sınıfı ve diğerlerine, diğerlerine düştüyse B sınıfı diğerleri şeklinde bir kombinasyon yapabilirsiniz. Bu birinci yaklaşım. İkinci yaklaşım ne olabilirdi? Bir tane daha var.
+
+280
+01:01:47,211 --> 01:01:49,111
+Tek tek ikili sınıfları kıyaslamak.
+
+281
+01:01:49,111 --> 01:01:50,711
+Evet, aynen öyle.
+
+282
+01:01:53,396 --> 01:02:05,115
+Kıyaslamak A ile B'yi, C ile D'yi, A ile B'den hangisi kazanıyorsa, C ile D'den hangisi kazanıyorsa, onlar arasında bir kıyaslamayı yaparak kararı vermek. İkisi de uygulanıyor, ikisi de kullanılan yaklaşımlar.
+
+283
+01:02:06,195 --> 01:02:09,155
+Turnuva yöntemi gibi mi oluyor o zaman ikinci yaklaşım?
+
+284
+01:02:09,376 --> 01:02:11,936
+Biraz turnuva yöntemi gibi oluyor. Doğru. Aynen öyle.
+
+285
+01:02:12,896 --> 01:02:14,396
+O da maliyetli değil mi hocam?
+
+286
+01:02:14,755 --> 01:02:16,175
+Maliyetli. Çok doğru.
+
+287
+01:02:18,931 --> 01:02:37,371
+İkinci yöntem şöyle tartışılır. Sınıfın hangisi olduğuna bağlı olarak tartışılır. Şu yüzden şimdi one to all yaptığınızda, one versus all yaptığınızda, şimdi beş sınıfınız olsa a ile başladığınız her biriyle tek tek karşılaştırarak dört adımda sonuca gideceksiniz.
+
+288
+01:02:44,960 --> 01:02:57,440
+Oradan bir sonuç gelecek. Üç. Aynıya mı denk geliyor? Emin olamadım şimdi. Bir daha düşünüyorum. Birinde en eksi bir adım gideceksiniz worst case'de.
+
+289
+01:02:59,840 --> 01:03:09,280
+Diğerinde login gibi oluyor hocam yine. Çünkü her ikisi tekrar bir ikiliyi üretiyor. İkiye böyle böyle gidiyoruz aslında. Değil mi?
+
+290
+01:03:11,059 --> 01:03:12,699
+Ama paralel dallar da var. Doğru.
+
+291
+01:03:12,739 --> 01:03:28,099
+Evet, paralel dallar da var. O yüzden totalde aynı kapıya çıkıyor olabilir. Çünkü biliyorsunuz ağaçta da bütün yolların toplamını hesapladığınızda aslında en eksi bire denk geliyor. O yüzden karmaşıklık değişmeyecektir. İkisi de.
+
+292
+01:03:37,300 --> 01:03:45,920
+Olasılığı yüksek bir sınıf varsa problemde, yani daha fazla derecede yer alıyorsa ona göre bir dizayn yapma şansına sahipsiniz.
+
+293
+01:03:46,599 --> 01:03:52,639
+Şimdi, kayneli konuşmamıştık ama kaynene çok kısa bir değmiştik daha önce.
+
+294
+01:03:53,260 --> 01:03:57,260
+Eğitim yapmıyoruz dedik, test karmaşıklığı var dedik.
+
+295
+01:03:57,719 --> 01:04:02,219
+Test karmaşıklığını etkileyen de instance sayısı, özellik sayısı dedik.
+
+296
+01:04:03,219 --> 01:04:03,940
+Hatırlarsanız.
+
+297
+01:04:04,403 --> 01:04:10,844
+Tabii ki K'da etkiliyor ama K'nın kaç olma ihtimali var? K'yı kaç seçeriz genelde K'yı da?
+
+298
+01:04:15,764 --> 01:04:16,620
+Yüklü.
+
+299
+01:04:20,371 --> 01:04:24,291
+Çalışmamızda 6 ya da 8 seçmiştik ama hocam geneli nedir bilemiyorum.
+
+300
+01:04:24,291 --> 01:04:24,632
+Tabii ki.
+
+301
+01:04:26,692 --> 01:04:27,411
+Evet.
+
+302
+01:04:28,851 --> 01:04:35,251
+Yani bu işte en yakın 5 komşuluk, en yakın 8 komşuluk bakımından ilerlemiyor mu bir algoritma? Yanlış mıdır?
+
+303
+01:04:37,431 --> 01:04:40,112
+Bir bakalım, soralım başka bir arkadaşı. [öğrenci].
+
+304
+01:04:43,795 --> 01:04:50,215
+Hocam o K parametresinden bahsediyoruz. O yani alınan sonuca göre değişebiliyor diye biliyorum.
+
+305
+01:04:51,195 --> 01:04:56,456
+K en en algoritmasında en yakın K komşuya bakıyoruz ya.
+
+306
+01:04:56,936 --> 01:04:57,255
+Evet.
+
+307
+01:04:59,016 --> 01:05:10,936
+Tabii ki K'yı farklı değerler için problemde kullanabiliriz ve en efektif K'yı arayabiliriz ama kaç seçilme olasılığı var? Yani K'yı kaç seçebiliriz genelde?
+
+308
+01:05:11,603 --> 01:05:13,203
+Genelde tek sayı seçiliyor.
+
+309
+01:05:14,483 --> 01:05:18,423
+Bir. Genelde tek sayı seçiliyor. [öğrenci] o yüzden şaşırdım 6 ve 8 demene.
+
+310
+01:05:19,863 --> 01:05:26,643
+İki. K'yı bir seçerseniz nearest neighbor oluyor. En yakın komşuya bakarsanız. Algorithmanın ismi.
+
+311
+01:05:28,223 --> 01:05:35,423
+K3-5-7 genelde oluyor. Yani 1-3-5-7. Hani 9-11...
+
+312
+01:05:36,083 --> 01:06:00,284
+Çok exceptional case'ler 13-15'ini hiç görmedim. O yüzden K'da genelde parametreler denenecekse, K parametresi hangisinin daha iyi olduğunu kararlandırır. Çünkü tek komşuluk riskli olabilir. Çok fazla verimli olduğu bir noktada. Fesadüfen bir veri en yakın noktada o instance'a bulunuyor olabilir.
+
+313
+01:06:00,724 --> 01:06:17,244
+Gene kolektif öğrenme bakış açısını kullanarak etraftaki komşuların çoğunluğuna bakmak, yani 3 taneden en fazla olana, 5 taneden en fazla olana bakmak daha doğru karar vermemizi sağlıyor.
+
+314
+01:06:17,244 --> 01:06:19,864
+O yüzden genelde 3-5-7'den bir tanesi seçiliyor.
+
+315
+01:06:21,172 --> 01:06:36,211
+Ama problemdeki dağılım iyiyse o zaman genelde nearest neighbor yaklaşımı bir iyi sonuç üretiyor. Ama 3 ve 5 en iyi sonuç üreten iki tane değer.
+
+316
+01:06:48,976 --> 01:06:58,596
+En iyi değerleri seçmek için, yani 1 mi, 3 mi, 5 mi, 7 mi değerlerini seçmek için bir metrik kullanıyoruz.
+
+317
+01:07:00,336 --> 01:07:10,876
+Burada tabii ekürüsü diyebilirsiniz ama burada biraz daha ekürüsüden daha iyi bize fikir veren ne olabilir?
+
+318
+01:07:10,876 --> 01:07:13,376
+Mesela K1 için.
+
+319
+01:07:13,748 --> 01:07:30,248
+K3 için, K5, K7 için değerler ürettiniz. Bu bir 3, 5, 7 değerli ürettiğiniz değerleri bir grafik kullanarak ifade etseydiniz nokta nokta curve isimli bir grafik diyelim.
+
+320
+01:07:32,248 --> 01:07:33,468
+O curve'in ismi...
+
+321
+01:07:33,468 --> 01:07:35,208
+Elbon metodu vardı herhalde.
+
+322
+01:07:35,327 --> 01:07:38,208
+Elbon metodu K-Mins algoritmasında kullanılır.
+
+323
+01:07:38,643 --> 01:07:51,963
+Clustering'tedir. Onun benzeri bir şey mi hocam? Onun benzeri bir şey ama tersi. Elbomun dirseğin, kolun aşağıdan başladığı, dirseğin yukarıda olduğu bir grafik düşünelim.
+
+324
+01:07:53,804 --> 01:08:04,903
+Rock Curve olabilirsin mi hocam? Evet, Rock Curve çok güzel. Rahmetullah doğru cevap verdi. Rock Curve'ın X ve Y'si nedir rahmetullah?
+
+325
+01:08:07,731 --> 01:08:10,731
+RockTurve'ın X ve Y'si...
+
+326
+01:08:14,032 --> 01:08:18,731
+...biri accuracy olması lazım hocam.
+
+327
+01:08:18,731 --> 01:08:22,731
+Şimdi hemen şöyle bir şey yapacağım.
+
+328
+01:08:24,731 --> 01:08:28,731
+Bir accuracy vardı. Serini tam olarak hatırlayamadım hocam ama...
+
+329
+01:08:28,731 --> 01:08:31,731
+Evet, hemen ben şimdi size...
+
+330
+01:08:32,731 --> 01:08:34,539
+...burkuda...
+
+331
+01:08:38,355 --> 01:08:39,495
+Şimdi ekran değişim yapıyorum.
+
+332
+01:09:02,163 --> 01:09:03,543
+Tahtaki bulmuşsun gibi geldi de.
+
+333
+01:09:04,644 --> 01:09:07,683
+True positive rate ve false positive rate.
+
+334
+01:09:08,123 --> 01:09:08,463
+Evet.
+
+335
+01:09:10,463 --> 01:09:13,843
+Şimdi, çok güzel.
+
+336
+01:09:15,363 --> 01:09:19,384
+Şöyle küçük bir performansla ilgili bir gösterim yapacağım.
+
+337
+01:09:19,503 --> 01:09:20,443
+Şu an görüyorsunuz değil mi?
+
+338
+01:09:22,443 --> 01:09:24,583
+Bu bizim geçtiğimiz haftalarda.
+
+339
+01:09:24,683 --> 01:09:27,103
+Gerçi bu şey bir ekran kullanayım.
+
+340
+01:09:28,180 --> 01:09:30,620
+Yeni bir ekran kullanayım. Rock Curl diyelim.
+
+341
+01:09:40,884 --> 01:09:42,884
+Şimdi Rook Curve şöyle bir curvedür.
+
+342
+01:09:46,804 --> 01:09:57,163
+x ekseni nedir? Neyi gösterir sizce? Arkadaşınız söyledi biraz önce. True pozitif ve false pozitif iki tane seçeneğimiz var.
+
+343
+01:09:57,163 --> 01:10:00,583
+False pozitif.
+
+344
+01:10:01,564 --> 01:10:03,783
+Y ekseninde true pozitif.
+
+345
+01:10:05,163 --> 01:10:08,163
+Biz burada örneğin...
+
+346
+01:10:10,452 --> 01:10:28,012
+K1 için şu değeri almış, K3 için bu değeri almış, K5 için bu değeri almış, K7 için, K9 için, K11 için bu değerleri almış olabiliriz. Hangisini seçersiniz? Yazalım şuraya. 1, 3, 5, 7, 9, 11.
+
+347
+01:10:30,012 --> 01:10:31,631
+5 ile 7 seçilebilir.
+
+348
+01:10:34,092 --> 01:10:36,092
+5 seçilebilir.
+
+349
+01:10:38,676 --> 01:10:56,836
+Şimdi dirsek mantığındaki gibi burada eğimin artık artışının düzleştiği nokta bizim için önemlidir. O yüzden 5'i seçmek şu anda akıllıca gözüküyor 7'yi seçmektense. Çünkü 5'ten 7'ye true positive çok artmamıştır ama false positive çok artmıştır.
+
+350
+01:10:58,716 --> 01:11:05,115
+Bu altta kalan alan ne kadar büyükse bizim için aslında o kadar iyi demektir.
+
+351
+01:11:05,747 --> 01:11:32,467
+Peki, teoride en iyi sonuç nedir? Rock Curve'ün şöyle çıkmasıdır. Yani herhangi bir değer için true pozitifin 1, false pozitifin de 0 olduğu bir noktadır. Bunu isteriz. Yani %100 başarı. True pozitif tam, false pozitif 0.
+
+352
+01:11:32,895 --> 01:11:35,315
+Ama genelde bu böyle olmaz.
+
+353
+01:11:37,495 --> 01:11:46,456
+Değerlendirmemizde her zaman için 45 derecenin üzerine çıkan körler bizim için istenilen körlerdir.
+
+354
+01:11:46,895 --> 01:11:47,915
+Şöyle de olabilirdi.
+
+355
+01:11:50,775 --> 01:11:51,655
+Böyle de gidebilirdi.
+
+356
+01:11:52,536 --> 01:11:55,615
+Ya da şöyle de gidebilirdi.
+
+357
+01:11:56,275 --> 01:11:57,215
+Hangisi daha iyi?
+
+358
+01:11:58,175 --> 01:12:00,315
+1, 2, 3 diye düşünürsek.
+
+359
+01:12:00,851 --> 01:12:07,871
+Bir bizim için çok daha avantajlı. Böyle bir kör çizme şansımız olsaydı, değerler böyle üretilmiş olsaydı.
+
+360
+01:12:09,051 --> 01:12:21,152
+Şimdi bunu niye anlattım? Farklı parametrelerin başarıyı etkisini incelerken en sık kullanılan yöntemlerden bir tanesidir.
+
+361
+01:12:21,731 --> 01:12:28,231
+True pozitifin, false pozitifin trade-off'unu görürsünüz burada. Bu trade-off'a göre karar vermek akıllıcadır.
+
+362
+01:12:28,595 --> 01:12:54,536
+Çünkü baktığınızda şu bizim için çok güzel 11 harika bir true positive rate vermiş. Ama false positive'i çok kötü. Şöyle çizeyim. False positive. Her şey doğru biliyor ama aynı zamanda yanlış olan şeylerden bir kısmını da doğruymuş gibi gösteriyor.
+
+363
+01:12:55,060 --> 01:13:21,020
+Hiç istemediğimiz bir durum. Nerede karşımıza çıkabilir? Mesela fraud detection'da çok sık karşılaştığımız bir durumdur. Bankacılık sektöründe fraud detection rateleri aslında oldukça yüksektir. Yani true positive rateleri. %95 civarında, %90'ın üzerinde bir fraud detection yapılmakta. Ama gelin görün ki transaction sayısı o kadar fazla ki
+
+364
+01:13:21,971 --> 01:13:35,811
+%1 bile false pozitif olsa, günlük 15 milyon civarında bir transaction olduğunu düşünün. 15 milyonun birini hesapladığımızda 1.5-150 bin ediyor değil mi?
+
+365
+01:13:37,131 --> 01:13:45,091
+150 bin tane yanlış transaction'ı sanki frağı atmış gibi sistem size sunulacak.
+
+366
+01:13:46,323 --> 01:14:00,423
+Son dönemde bana çok sıkı mesaj geliyor. Şöyle bir işlem yaptınız. Size ait değilse lütfen şunlara yarayınız diyeyim. Bunlar aslında false pozitifler. Bunu inceleyen bir ekip var.
+
+367
+01:14:12,020 --> 01:14:16,120
+Fraud, olası fraudları inceliyor ve buna göre işlem yapıyor.
+
+368
+01:14:16,960 --> 01:14:18,540
+Ve bunun başında insanlar çalışıyor.
+
+369
+01:14:18,820 --> 01:14:21,320
+Hedef, bu false pozitiflerin sayısını azaltmak.
+
+370
+01:14:22,760 --> 01:14:26,180
+O yüzden birazcık ne diyorlar?
+
+371
+01:14:27,540 --> 01:14:31,940
+Biraz feragat edip şuradaki K5'i alıyorlar.
+
+372
+01:14:31,940 --> 01:14:37,340
+True pozitif belli bir seviyedeyken false pozitifleri de daha düşürerek işlemi gerçekleştirmeye çalışıyorlar.
+
+373
+01:14:38,163 --> 01:14:48,623
+Rock Curve bizim için çok değerli. Size daha önce şey de anlatmıştım hatırlarsanız. Smartphone'larda Fall Detection demiştim.
+
+374
+01:14:51,403 --> 01:14:58,743
+Fall Detection için bir Rock Curve oluşturduğunu düşünelim. Ve bunu bir threshold ikonetemiyle yaptığımı düşünelim.
+
+375
+01:14:58,743 --> 01:15:04,743
+Bu Rock Curve'ın üzerinde ne değerli var?
+
+376
+01:15:06,579 --> 01:15:33,300
+Threshold değerleri olacak. Örneğin, 1.3 için, 1.5 için, 1.7 için, 2.1 için, 2.5 için. Ben işte burada threshold'un ne olması gerektiğine ya 1.7 ya da 2.1 olmak üzere bir karar verip rock curve ile kullandığım parametrelerin başarıya nasıl etki ettiğini değerlendirme şansına sahip olmuş oluyorum.
+
+377
+01:15:34,260 --> 01:15:37,520
+Burada anlaşılmak istediğiniz bir kısım var mı?
+
+378
+01:15:41,171 --> 01:15:41,652
+Peki.
+
+379
+01:15:45,191 --> 01:16:00,911
+Ecurisi bir parametre olarak karar vermede kullanılabilir. Ancak risklidir. İmbalans data olabilir. Eşit davmamış bir data olabilir. Eşit davmamış datanın sıkıntısı nedir?
+
+380
+01:16:03,851 --> 01:16:06,251
+Eşit sınıflarda eşit sayıda data yoksa.
+
+381
+01:16:08,372 --> 01:16:34,172
+Az olan sınıfların dahillik oranı mı denir bilmiyorum da. Yani orada bir sıkıntı oluşacak. Çünkü çok sayıda olan sınıflarda belki başarımız yüksek. Ama mesela diyelim ki az örnekli bir sınıfımız var. Diyelim iki örnek olsun. Bir tanesini yanlış bildiğimiz anda %50 orada bir şey olacak. Halbuki çok bir anlam ifade etmeyecek oradaki başarı.
+
+382
+01:16:34,868 --> 01:17:02,868
+Çok doğru. Yani burada özellikle az sayıda örneğe sahip sınıfların başarıya etkisi birazcık arada kaynayacak diyelim amiyana tabirle. Ve ekürüsü de bu anlaşılmayacak. Yani işte non-fraud işlemlerde 1 milyon işlemde siz çok başarılıysanız, fraud işlemlerde 100 tane de 50 tane biliyorsanız bu ekürüsüye baktığınızda %99.9 başarı gözüküyor.
+
+383
+01:17:02,868 --> 01:17:30,128
+Ama sizin fraud başarınız aslında %50. Bu yüzden imbalans data problemlerinde özellikle EQRİS'yi kullanmaktan kaçınmakta fayda var. Burada daha çok precision, recall, F-measure gibi değerleri kullanmak gerekecek. Performans metriklerini de ilerleyen saatlerde ya da bir sonraki haftada değerlendiriyor olacağız. Şimdi bu ekranı durdurayım. Tekrar diğer ekranı paylaşayım sizinle.
+
+384
+01:17:35,252 --> 01:17:42,252
+Burada kalmıştık. Classification tarafı tamam. Regression tarafı...
+
+385
+01:17:42,319 --> 01:17:49,260
+Yani linear regression en çok istediğimiz problem türü. Keşke öyle olsa ama olmuyor.
+
+386
+01:17:49,819 --> 01:18:05,559
+Polinomial regression x üzeri 3, x üzeri 5, x üzeri 7 polinomsal eğri oturtabiliyorsak ki burada genelleştirilebilir olması için problemin eğrinin üstsü kısmının düşük olması önemli.
+
+387
+01:18:05,559 --> 01:18:10,319
+X üzeri 13 varsa sıkıntılı demek. Genelde overfitting'e bizi...
+
+388
+01:18:10,319 --> 01:18:31,859
+Götücüktür. Regresyon problemleri, kontinyüs verileri tahmin etmek için kullandığımız problemler. Peki, regresyon tarafındaki metriklerle, klasifikasyon tarafındaki metrikler birbirinden farklı. Regresyonda kullanılan metrikler hızlıca nedir diye sorsam.
+
+389
+01:18:37,492 --> 01:18:39,592
+Min square error falan mı?
+
+390
+01:18:39,772 --> 01:19:02,152
+Bir tanesi olabilir. Min square error, root min square error. Yani bir kare kökü bir karelerin toplamı. Başka? Min absolute error. Min absolute percentage error gibi aradaki farkı karelerini almadan ve oranlayarak alabileceğiniz metrikler de var. Trafik akış hızı tahmininde de.
+
+391
+01:19:02,836 --> 01:19:20,615
+Bir regresyon problemidir. Bu metrikler kullanılır genellikle. Ama daha önce de bahsettiğim gibi ikisini kullanmak çok kritiktir. Mean Absolute Error ve Mean Absolute Percentage Error'u.
+
+392
+01:19:21,536 --> 01:19:30,336
+Percentage'i kullandığınızda 30 km hızda 6 km aşaçtığınızda %20 şaşarsınız. 60 km'de 6 şaştığınızda %10 şaşarsınız.
+
+393
+01:19:30,963 --> 01:19:46,384
+Acaba mean absolute error'u kullanmak daha akıllıca mean absolute percentage error'u kullanmak sizce? Yani ikisinde de 6 sapıyorsunuz. Absolute error'unuz 6 artı eksi ama öbüründe percentage %10, %20.
+
+394
+01:19:54,771 --> 01:19:55,352
+Ne dersiniz?
+
+395
+01:20:00,307 --> 01:20:22,927
+Hocam, hız düştükçe tahmindeki satmanın önem kazandığı bir yöntem olması lazım bu durumda. Yani 10'la gitmekle 20'yle gitmek arasında gerçekten fark var eğer ki trafik çok sıkıştıysa. Ama trafik açıksa 80'le gitmekle 90'la gitmek arasındaki fark gerçekten çok kayda değer bir şey değildir. Bu noktada bir ters sorantıya ihtiyaç var.
+
+396
+01:20:27,028 --> 01:20:37,068
+Yani bizim hata oranımızı gözlemlememiz daha önemli diye anlıyorum. Doğru mu?
+
+397
+01:20:38,648 --> 01:20:41,208
+Yoksa tam olarak kurgulayamıyorum.
+
+398
+01:20:43,764 --> 01:20:55,443
+Absolut olarak almak doğru olmayacaktır. Büyük ihtimal square cinsinden almak daha yararlı olabilir. Ancak bunun da ters orantıyla bakılması gerekebilir diye düşünüyorum hocam.
+
+399
+01:20:56,863 --> 01:20:58,683
+O zaman farklı metrik kullanmak gerektiğini düşünüyorsun.
+
+400
+01:20:58,963 --> 01:20:59,463
+Evet, aynen.
+
+401
+01:21:00,623 --> 01:21:04,463
+Buradaki sebebi de 10 ile 20 arasındaki gitmenin...
+
+402
+01:21:04,500 --> 01:21:27,579
+Bu da bir yöntem farklılığına, 80 ile 90 arasında gitmenin farklılığına bağırıyorsun. Yani bir yerde trafik 80-90 km hızda akıyorsa zaten 80 ile 90 ile giden çok bir şey fark etmeyecektir. Yol açık demektir. Onunla girme arasındaki farka baktığında birinde yol çok sıkışık demektir, diğerinde en azından bir akıcılık var demektir gibi bir yol çıkıyor değil mi?
+
+403
+01:21:28,404 --> 01:21:38,044
+Doğru hocam. Aslında bir noktada orada duruma özgü bir de kategorizasyon da yapmış oluyoruz önden aklımızda. Aslında bunun da bir etkisi var. Farklı parametreleri de işin içine katarak bunu düşünmüş olduk.
+
+404
+01:21:38,344 --> 01:21:43,044
+Aslında şuraya geliyoruz. Bir nevi discretization'ı buraya bağlayacak olursak.
+
+405
+01:21:45,619 --> 01:22:04,539
+Daha düşük hızları daha yüksek çözünürlükle kategorize ediyoruz. Yani 10-20 bir kategori, 20-30 bir kategori, 30-40 bir kategoriyken, 40-60 bir kategori, örneğin 60-80 bir kategori, 80-120 bir kategori olacak şekilde aslında aradaki skele açmış oluyoruz. Değil mi?
+
+406
+01:22:06,000 --> 01:22:06,579
+Aynen hocam.
+
+407
+01:22:07,667 --> 01:22:23,127
+Ki bunun zaten farkındaysanız bir nevi karşılığı şöyle var. Çok koyu kırmızı var. Kırmızı var. Turuncu var. Son dönemde kullanılan renkler bunlar. Sarı var.
+
+408
+01:22:23,988 --> 01:22:43,167
+Koyu Yeşil ve Açık Yeşil var. Ama ağırlıklı olarak kırmızı tarafında bir toplanma görüyorsunuz. İşte bu da problemden, probleme değişkenlik gösteriyor. Bu yüzden değerlendirmeleri yaparken bu metrikleri genel halleriyle kullanmak önemli ama problemi özelleştirmekte dikkat edilmesi gereken bir nokta.
+
+409
+01:22:43,167 --> 01:22:51,988
+Şimdi Supervised Örneğe de şunu biliyoruz ki elimizde etiketli bilgi var. Etiketli bilginin olmadığı durumlar an Supervised Örneğe.
+
+410
+01:22:51,988 --> 01:23:02,988
+K-Mils'le K-N'i karıştırdığınız dersin geçen haftalarda konuştuğumuz K-Mils A-Supervised Learning tarafından.
+
+411
+01:23:02,988 --> 01:23:13,988
+Ve burada K'yı kümet sayısını bilmeden aslında bulmaya çalışıyoruz. Yani siz önceden veriyi gruplamak için bir K veriyorsunuz.
+
+412
+01:23:15,188 --> 01:23:19,148
+Elinizdeki veriler de birbirlerine yakınlık oranlarına göre gruplanıyorlar.
+
+413
+01:23:19,636 --> 01:23:26,916
+Ama k'yı küme sayısını bilmeden verdiğimiz için gerçekten doğru k'yı verdik mi vermedik mi bilmiyoruz.
+
+414
+01:23:27,556 --> 01:23:29,356
+Peki doğru k'yı bulmanın yolu ne?
+
+415
+01:23:34,036 --> 01:23:36,676
+Elbow metodu.
+
+416
+01:23:37,396 --> 01:23:38,176
+Bir de şey mi?
+
+417
+01:23:38,176 --> 01:23:39,659
+Elbow metodunda...
+
+418
+01:23:39,859 --> 01:23:46,960
+diye bir algoritma görmüştüm ben. X-Mins diye bir algoritma görmüştüm ben.
+
+419
+01:23:47,279 --> 01:23:47,579
+Doğru.
+
+420
+01:23:47,699 --> 01:23:52,180
+Ha olmadan K-Mins gibi çalışıyor diye görmüştüm de.
+
+421
+01:23:52,180 --> 01:24:07,239
+Doğru. Ama biz K-Mins özelinde durumu teorik olarak anlatacak olursak, sizin normalde hemen bir grafik göstermek için şunu durdurayım.
+
+422
+01:24:08,115 --> 01:24:09,516
+Share Screen diyelim.
+
+423
+01:24:15,315 --> 01:24:16,855
+Elbow metodumuz var.
+
+424
+01:24:23,923 --> 01:24:32,783
+Ve burada böyle bir grafik oluşuyor. X eksene ne yazacağım? Y eksene ne yazacağım?
+
+425
+01:24:52,372 --> 01:24:56,872
+Hocam, bir keymi insin, keyini büyük ihtimalle temsil edecek bir şey olmalı.
+
+426
+01:24:59,392 --> 01:25:00,952
+Diğeriyle ilgili bir fikrim yok.
+
+427
+01:25:09,811 --> 01:25:11,211
+diğer ne olabilir?
+
+428
+01:25:18,996 --> 01:25:20,315
+Hadi yapabilirsiniz gençler.
+
+429
+01:25:20,675 --> 01:25:22,395
+Şöyle bir şey aklıma geliyor hocam.
+
+430
+01:25:22,496 --> 01:25:29,536
+KEMİS'in yapmaya çalıştığı şey belli bir grup, aslında belli sayıda grup oluşturup bunların içine oturtmaya çalışıyor.
+
+431
+01:25:29,536 --> 01:25:34,415
+Bu durumda ne kadar dağılım olduğuna bakarak aslında bir başarım göstergesi elde edebiliriz.
+
+432
+01:25:34,815 --> 01:25:44,615
+O başarım göstergesi ne kadar yüksekse, daha doğrusu varyans aslında ne kadar düşükse o kadar biz başarılı olmuşuzdur diyebileceğimiz bir parametre ortaya koyacaktır.
+
+433
+01:25:45,619 --> 01:25:51,859
+Ancak benim söylediğim şey buradakinin tersi oluyor. Bu şekilde düşmemesi de anlım yani.
+
+434
+01:25:54,619 --> 01:25:57,279
+Değişik bir start oldu ve finish oldu.
+
+435
+01:26:01,499 --> 01:26:08,259
+Ya bunları ben sizin gruptan çok ümit değilim ya. Bunları biliyorsunuzdur diye düşünüyorum. Bunlar en temel şeyler ya. Çok kolay bunlar.
+
+436
+01:26:10,339 --> 01:26:12,519
+Toplam uzaklık olabilir mi hocam?
+
+437
+01:26:12,519 --> 01:26:12,819
+Evet.
+
+438
+01:26:13,551 --> 01:26:32,731
+Toplam uzaklık. Bir başka ifadeyle error. Yani nereye error? Her bir instance'ın kendi sınıfının merkezine olan uzaklığı. Peki, hangi koşulda error sıfırdır?
+
+439
+01:26:37,716 --> 01:26:40,476
+Yani şu eğri sıfıra gelir.
+
+440
+01:26:40,796 --> 01:26:43,596
+K sample sayısına eşitse.
+
+441
+01:26:44,316 --> 01:26:46,596
+K eşittir instance sayısı ise.
+
+442
+01:26:51,188 --> 01:26:53,967
+Sıfıra gelir. Yani her biri bir küme olsaydı.
+
+443
+01:26:57,460 --> 01:27:20,619
+Peki, şurası neyi gösteriyor? Sadece kocaman toplamda bir küme olduğu durumu gösteriyor. Biz şu noktayı arıyoruz ki etrafındaki noktalar da olası grup sayısı olarak değerlendirilmeli. Yani optimum k olarak değerlendirilmeli. Bu noktadan sonra şunu görüyoruz.
+
+444
+01:27:22,479 --> 01:27:31,679
+Error çok hızlı bir şekilde düşmüş, sistem oturmaya başlamış ve bundan sonra artık yeni kümelere ayırmak çok da gerekli değil.
+
+445
+01:27:33,439 --> 01:27:40,099
+Çünkü bu noktadan sonra error artık çok az bir şekilde azalıyor. Demek ki sistem kendi doğrusunu bulmuş anında geliyor.
+
+446
+01:27:40,099 --> 01:27:47,755
+Tabii ki elbom her zaman böyle çıkmıyor. Yani bazen şöyle de çıkabiliyor. Böyle olduğu zaman...
+
+447
+01:27:47,923 --> 01:28:13,804
+Şurası mı, şurası mı, şurası mı demek çok kolay değil. Bazı noktalarda da dramatik bir şekilde şöyle çıkabiliyor. Bu birazcık elbomunuzun nasıl çıktığına bağlı olarak karnınızı belirlemelisiniz. Elbom ne kadar keskinse tahmin o kadar yüksek. Ama elbom ne kadar yayılmışsa o kallardan bir olma olasılığı sizin küme sayınızın.
+
+448
+01:28:14,323 --> 01:28:40,123
+O kadar yüksek oluyor. Buna dikkat etmekte, K'ya karar verirken lazım. Onu da vurgulamış olayım. Peki buna karar verdik. K'yı belirledik. Kümelerimizi belirledik. Üzerinde düzeltme yapmak istersek, yani kümelere karar verdik ama üzerinde düzeltme yapmak istiyoruz. Bir kez daha üzerinden geçmek istiyoruz. Neye bakacağız?
+
+449
+01:28:41,524 --> 01:28:43,148
+Neyi değiştirebiliriz?
+
+450
+01:28:47,220 --> 01:28:50,620
+Hükümelere karar verdik ama tam da içimize sinmedi.
+
+451
+01:28:54,100 --> 01:28:56,720
+Ya da bir düzeltme yapmana faydalı olacağını düşünüyoruz.
+
+452
+01:28:57,380 --> 01:28:57,680
+[öğrenci]?
+
+453
+01:28:58,200 --> 01:29:03,420
+Hocam, belki uzaklı hesaplarken kullandığımız distans metodlarını oynayabiliriz.
+
+454
+01:29:04,619 --> 01:29:05,820
+Nasıl kullanacağız onu?
+
+455
+01:29:09,400 --> 01:29:10,659
+Monoton Distans.
+
+456
+01:29:11,340 --> 01:29:14,740
+Yok, yok. O anlamda değil. Şimdi elimizde kümeler var ya, kümelere karar verdik.
+
+457
+01:29:16,212 --> 01:29:28,972
+O kümelerin karardan sonra gerçekten doğru kümeler mi, yani doğru instansları mı grupladığını emin değiliz. Belki aynı grupta olması gereken instanslar farklı gruptalar.
+
+458
+01:29:33,332 --> 01:29:53,112
+Resim işlemede direkt seçilebilirse, gözle karar verebiliyorduk ama, görsel olmayan verilerde nasıl olacak? Şöyle söyleyeyim. Eğer kümeler üzerinden bir kez geçeriz, kümeler içerisinde birbirine belli bir mesafede merkezlere yakın bulunan kümeler varsa onları birleştiririz.
+
+459
+01:30:01,108 --> 01:30:26,108
+Bazı kümeler birbirlerine belirlediğimiz threshold'dan daha yakınsa, demek ki o kümeler birbirine oldukça yakın ama kendi içinde ikiye ayrılmıştır ki bazen olabilir biliyorsunuz. Bir grup veri bir kümeyi oluştururlar ama kendi içinde iki grup daha, üç grup daha oluşturabilir. Bunları birleştirip tek grup yapmak akıllıca olacaktır. Bunu unutmamak lazım. Mutlaka clustering ile ilgili çalışırken...
+
+460
+01:30:27,252 --> 01:30:33,492
+Oluşturulan kümelerin birleştirilebilir olma ihtimalini göz önünde bulundurmak lazım.
+
+461
+01:30:37,203 --> 01:30:54,043
+Hocam, bildiğim kadarıyla başlangıç noktaları da bu konuda bayağı önemli bir etkiye sahip. Bu noktada birden fazla başlangıç noktası çalıştırıp, burada da yine bir Ensemble Learning şeklinde bakarak en kararlı seçenekleri alabiliriz.
+
+462
+01:30:54,384 --> 01:31:02,423
+Orayı konuşmamıştık. Çok güzel bir noktaya da indi. Ben oraya atladım. Kami'nin size dikkat edilmesi gereken bir diğer noktada ilk verdiğiniz seed noktaları.
+
+463
+01:31:03,784 --> 01:31:15,944
+Kümelerin başlangıç noktalarını çok rastgele seçtiğinizde başlangıç noktalarınız doğru olmazsa kümelerin dağılımı da açıkçası problemli oluyor.
+
+464
+01:31:19,807 --> 01:31:38,328
+Daha böyle akıllıcı noktalar seçerek başlamayı tercih edebiliyoruz. Nasıl yapabiliyoruz? Fikri olan var mı? K-Minist'e nokta seçimine. İlk kümelerin bir merkez bilgisi verilmesi gerekiyor. O merkez bilgisinde elimizdeki instansları kullanarak seçiyoruz genelde.
+
+465
+01:31:51,060 --> 01:31:54,560
+Şu an düşünüyorum ama nedense aklıma gelmiyor. Bir trik vardı ama.
+
+466
+01:31:55,260 --> 01:32:03,100
+Tamam, siz buna bir bakın. Sınavdan önce faydalı olabilir. Yani nasıl karar veriyoruz noktasında.
+
+467
+01:32:05,840 --> 01:32:11,280
+Şimdi bir konu daha vardı. Biraz önce [öğrenci] söyleyince aklıma geldi bu.
+
+468
+01:32:13,971 --> 01:32:23,431
+Hatırladım. K-Means'in gelişmiş bir versiyonu var. Yani X-Means olarak adlandırmayacağım onu. Gaussian Mixture Model olarak adlandıracağım.
+
+469
+01:32:25,371 --> 01:32:37,391
+Gaussian, X-Means çünkü daha farklı. X-Means'te de artı özellikler var ama Gaussian Mixture Model yapısı itibariyle kümelere karar verirken daha farklı bir yol izliyor.
+
+470
+01:32:38,292 --> 01:32:54,092
+K-Means ile Gaussian Mixture model arasındaki fark nedir? Çok temel bir fark var. Genelde Gaussian Mixture modelle kümelemeyi tercih ederseniz, kümeleme büyük oranda daha başarılı gerçekleşir.
+
+471
+01:33:04,659 --> 01:33:08,159
+Grupları bir gauss dağılımına uydurmaya mı çalışıyor?
+
+472
+01:33:08,539 --> 01:33:19,319
+Çok güzel. Uydurmaya çalışıyor. Peki bu gauss dağılımına uydururken hangi bilgiyi kullanmayı tercih ediyor ki Kavmins'e göre avantaj sağlıyor?
+
+473
+01:33:21,399 --> 01:33:24,159
+Hocam dağılım olasılığına bakıyor büyük ihtimalle.
+
+474
+01:33:25,020 --> 01:33:29,899
+Evet. Şimdi bir tarafta sadece ortalama bilgisini kullanıyorsunuz Kavmins tarafında.
+
+475
+01:33:30,515 --> 01:33:54,915
+Diğer tarafta dağılım yani standart satma bilgisini de kullanıyorsunuz. Bu işin içine girdiği zaman otomatik olarak sizin 1'de yer alan ve 5'te yer alan 1 ve 5 değerlerine sahip 2 tane elemanınız var. Ortalaması ne etti? 1, 5 daha, 6, 3 etti. Merkeziniz 3. 4 ve 2 olsaydı yine 3 olacaktı.
+
+476
+01:33:56,756 --> 01:34:14,155
+3-3 olsaydı yine 3 olacaktı. İşte K-Mins'te siz bu standart satmayı kaçırıyorsunuz. Gaussian Mixture model kullandığınızda 1-5 arasındaki 1-5 grup örneğiyle 3-3 grup örneği arasındaki fark ortaya çıkıyor.
+
+477
+01:34:23,923 --> 01:34:51,923
+Sadece merkez noktayı kullanmak olmuyor hedefiniz. Aynı zamanda dağılımın bir gauss dağılımına göre gerçekleştiğini hesaplayıp o kümede olma olasılığını hesaplıyorsunuz. Bu arada bu da ekstra üzerinde durmuş olalım. Bir gaussian mixture model kullandığınızda instance'ın bir kümeye ait olma olasılığını da hesaplamış oluyorsunuz. Yani doğrudan bir kümeye aitmiş gibi düşünmüyoruz.
+
+478
+01:34:51,923 --> 01:35:17,144
+İşte 0.8 bir kümeye, 0.2 bir kümeye diyorsunuz. Orada bir threshold belirleyip ilgili kümeye atıyorsunuz. Mantık bu şekilde çalışıyor. O yüzden bütün algoritmaların detayını anlatmak değil ama burada Gaussian Mixer modelinde, clusteringde çok ciddi derecede işinize yarayabilecek bir algoritma olduğunun üzerinde durmak lazım. Peki geri dönelim.
+
+479
+01:35:18,579 --> 01:35:21,420
+Biz share screen yapalım.
+
+480
+01:35:27,956 --> 01:35:32,056
+Burada bir agloromatif yaklaşımdan bahsediyor. Bu nedir?
+
+481
+01:35:36,020 --> 01:35:39,020
+Şu clustering'in hemen bir başka başlığı.
+
+482
+01:35:40,020 --> 01:35:40,780
+Aglomeratif.
+
+483
+01:35:41,420 --> 01:35:48,876
+Şey diyeyim mi? Her üyeyi bir tek tüm olarak kabul ediyor. Sonra...
+
+484
+01:35:48,884 --> 01:35:55,603
+Bu uzaklık hesaplama yöntemleriyle o kümeleri birleştire birleştire ilerliyor.
+
+485
+01:35:56,123 --> 01:36:06,983
+Evet, aynen öyle. İki tane yaklaşım var. Bir tanesi en tepeden başlayarak tek bir küme gibi kabul edip sonra iki kümeyi ayırmak, sonra daha fazla kümeyi ayırarak ilerlemek.
+
+486
+01:36:06,983 --> 01:36:16,884
+Bir hiyerarşik yapı kullanmak. Hiyerarşik kılkı lastrink adı altına geçiyor. Diğeri de kümeleri birleştirerek ilerlemek. Yani her bir elemanı kendisini tek bir küme olarak...
+
+487
+01:36:16,884 --> 01:36:28,863
+Ve o kümeleri birleştirdiğinizde o birleşim kümesinin oluşturduğu hata değerini hesaplamak şeklinde düşünebilirsiniz. Bunların detaylarını merak ederseniz bakabilirsiniz.
+
+488
+01:36:29,283 --> 01:36:30,823
+Association Rule Learning midir?
+
+489
+01:36:36,467 --> 01:36:46,188
+Nerede kullanılır? Hangi başlıkta? Daha çok. Çokça ismini duyarsınız ve o derste anlatılır.
+
+490
+01:36:48,188 --> 01:36:52,228
+Hocam, mobil için uyumlu olduğunu söylemiştik yanlış hatırlamıyorsam.
+
+491
+01:36:52,948 --> 01:36:55,368
+Rule Based demiştik ama aynı şey mi eminim?
+
+492
+01:36:55,368 --> 01:37:01,707
+Yok, değil. Association Rule Learning aslında ilişkilerin öğrenilmesini anlatıyor.
+
+493
+01:37:01,707 --> 01:37:09,127
+Ve ikili ilişkilerden bahsediyorsak ağırlıklı olarak veri madenciliğini işaret ediyoruzdur.
+
+494
+01:37:09,488 --> 01:37:14,707
+Çünkü veri madenciliği genellikle veriler arasındaki ilişkiyi...
+
+495
+01:37:15,119 --> 01:37:31,239
+Bu konuları ele alır. Association Rule Learning'de bu veri madenciliğinin altında yer alan bir yaklaşımdır. Keza Unsupervised Learning'de de aynı şekilde veri madenciliğinde çok sıklıkla kullanıldığını görebilirsiniz.
+
+496
+01:37:32,015 --> 01:37:51,775
+Etiketli bilgilere sahip olmadığınız noktalar olacaktır. Son olarak Dimensionality Reduction başlığını görüyorsunuz. PCI ve LDA'ya geçtiğimiz hafta konuşmuştuk hatırlarsanız. Gene elimizdeki feature'ların sayısını azaltmak üzere kullandığımız bir alt başlıktır.
+
+497
+01:37:56,627 --> 01:38:12,967
+Önemli algoritmalar var. Bunların başına da PCI ve LD'ye geliyor. Şimdi gelelim bu Unsupervised Learning tarafından Reinforcement Learning tarafına. Reinforcement Learning nedir?
+
+498
+01:38:15,787 --> 01:38:21,307
+Bileniniz var mı? Daha önce hani rahmetullah başlık olarak söylemişti ama.
+
+499
+01:38:22,804 --> 01:38:25,384
+Nerede kullanılır ve mantık nedir?
+
+500
+01:38:27,203 --> 01:38:49,804
+Bu bildiğim kadarıyla hocam, işaretli veri kullanmak yerine ödül ceza mantığıyla sistemi öğretmek istediğimiz zaman, veri işaretlemeye ihtiyaç kalmadan bir metrik belirleyip, o metreye göre bir davranışı ödüllendirmemiz mi, cezalandırmamız mı gerektiğine karar verdik.
+
+501
+01:38:51,731 --> 01:39:07,752
+Çok doğru. Ödül ve ceza sistemini baz alan ve öğrenme metodunu başarılı oldukça ödül alarak, puan toplayarak yanlış bir hareket yapıcıza ceza ile öğrettiğimiz bir yaklaşımdır.
+
+502
+01:39:07,752 --> 01:39:12,192
+Aslında bir nevi insanın da öğrenme modeline çok yakındır.
+
+503
+01:39:12,724 --> 01:39:30,724
+Bu, hayattaki deneyimleri işte en basit örnekten çocuğun sobaya dokunduğunda elinin yanmasıyla çocuk bir daha sobaya dokunma konusunda tereddüt eder. Bazen tabii yanlış şekilde öğrenmemize de sebebiyet verir yaşadığımız deneyimler ama bu...
+
+504
+01:39:31,796 --> 01:39:49,796
+Bilgisayar dünyasında, yapay zeka tarafında biraz daha insanın duygularından arındırılmış bir şekilde dizayn edilmiştir ve daha iyi bir metodolojiye sahiptir. Aslında [öğrenci] da bu konuda yorum yapabilir. Onun çalıştığı alanda bu çok sıklıkla kullanılıyor değil mi [öğrenci]?
+
+505
+01:39:50,796 --> 01:39:55,136
+Evet, yani robotikte tabii gerçekte biraz zor ben. Gerçekte çok.
+
+506
+01:39:55,667 --> 01:40:13,167
+Almanya'da bir fuara gittiğimizde orada mesela dronelar vardı. Droneları reinforcement, dronelik ile eğittiklerini söyleyen bir firma vardı ama yani orada tam ben tri'yi anlamadım. Yani bunu simülasyonla mı yapmışlar yoksa gerçekte mi? Ama evet simülasyonla özellikle uygulanabilir. Çünkü tekrar tekrar çalışması gerekir.
+
+507
+01:40:13,367 --> 01:40:21,527
+Peki [öğrenci] şunu sorayım. Ben robotik alanına çok yakından hakim değilim ama merak ettiğim noktalar da oluyor.
+
+508
+01:40:21,971 --> 01:40:34,231
+Simülasyon ortamındaki öğrenilen bilginin gerçek hayata uyarlanması konusu ne kadar başarılı ve nasıl oluyor?
+
+509
+01:40:35,372 --> 01:40:39,311
+Hocam, yani bu gene benim kendi çalışmalarımdan söyleyeyim.
+
+510
+01:40:39,752 --> 01:40:44,572
+Özellikle, hani biz bilmiyorum, çok kompleks problemlerde çalışmadığımız için şu ana kadar belki.
+
+511
+01:40:45,076 --> 01:41:05,256
+Bu geçişte çok büyük bir sıkıntı olmuyor. Ama ekstra olarak işin endüstriyel tarafını da yorumlamak gerekirse, gene ben işte Polonom'da çalışırken temiz bir fuarda hocam, otonom araba fuarıydı bu. İnanılmaz derecede simülasyon tanıtan firma vardı. Sensörler tanıtan firmalar vardı ve aşırı derecede simülasyon tanıtan firma vardı.
+
+512
+01:41:12,720 --> 01:41:17,140
+Bu kadar simülasyon şirketi var diye düşünmüştüm ben. Aşırı sayıdaydı yani.
+
+513
+01:41:18,220 --> 01:41:28,340
+Evet, tabii şimdi simülasyon tarafında modelleme dünyanın fiziksel modeli ve genel olarak hani işte ne diyelim.
+
+514
+01:41:29,108 --> 01:41:37,127
+Şartların modellenmesi durumu üzerinden ilerliyorlar ve her modellemede yeni bir case'i ele alıyorlar.
+
+515
+01:41:37,127 --> 01:41:47,807
+Hava durumu metriği devreye giriyor, binalar, fiziksel yapılar devreye giriyor. Şu anda dijital haritalar çıkarıldığı için çok önemli derecede aslında otonom araçlara katkı sağlanmış durumda.
+
+516
+01:41:48,247 --> 01:41:57,108
+Eskiden biliyorsunuz dijital haritalar tam oturmamışken otonom aracın sadece gördüğü kamera görüntüleri üzerinden karar vermesi noktası.
+
+517
+01:41:57,108 --> 01:42:17,108
+Bu da çok daha fazla parametrenin işlenmesini gerektiriyordu. Ama dijital harita önceden tanımlı olunca aracın aslında karar verme uzayı da daralmış oldu. Bu bir avantaj. Yani aslında otonom araçların başarı düzeyi...
+
+518
+01:42:17,779 --> 01:42:39,340
+Yollar, şeritler, binalar ne kadar keskin ve net olarak tariflenirse o kadar artacak. Değişen kezlerin hesabı daha rahat yapılacak. Ama bizim gibi ülkelerde şeritlerin olmadığı, silindiği ülkelerde...
+
+519
+01:42:39,636 --> 01:42:49,616
+Başka problemlerimiz var. Öbüründe zaten aracın lane'de gitmesini bekliyoruz. Ama bizde bir lane yok bazı noktalarda.
+
+520
+01:42:49,855 --> 01:43:10,355
+Bence o yüzden otonom aracı Türkiye'de bırakacaksınız. Başarılı olduğu takdirde dünyaya COVID aşısı gibi gönderebilirsiniz. Sıkıntı yok. İşi çözmüş demektir. Özellikle İstanbul trafiğinde otonom aracın birkaç sürüşünü gözlemledikten sonra araçla ilgili kararlar verebilirsiniz.
+
+521
+01:43:15,412 --> 01:43:41,572
+Dijital maplerin günümüzde çok daha değerli hale geldiğini göreceksiniz. Hatta biz bunu şeyde de konuşmuştuk. Araçların özellikle yolla ilgili kararlarında çumuk, çukur var, tümsek var, işte bir yerde çalışma var, yol çalışması var, yavaşlaması vs. bunların önceden bilinmesi lazım. Her şey o andaki görüntü işlemeyle, lidarla, radarla çözülemez.
+
+522
+01:43:41,984 --> 01:44:03,624
+Bu problemleri iyi define ederek, birbirinden ayırt ederek otonom araçlarda çalışmalar yapılırsa bence daha hızlı yol alınacağını düşünüyorum. Evet, şimdi 14.46.47 oldu. Saat 3'e kadar bir ara verelim. 3'te devam edelim. Toparlayalım. Ondan sonra yeni konuya geçiyor olacağız. Evet, teşekkür ediyorum arkadaşlar. 3'te görüşmek üzere.
+
+523
+01:58:23,444 --> 01:58:29,044
+Evet, yeniden merhaba arkadaşlar. Dersimizin son bölümüne başlıyoruz.
+
+524
+01:58:35,764 --> 01:58:46,323
+Bu bölümde geri kalan başlıkları hızlıca değerlendireceğiz ve biraz performans metriklerine geçeceğiz ve artık önümüzdeki hafta itibariyle yeni konulara geçeceğiz.
+
+525
+01:58:46,323 --> 01:58:55,583
+Bu veri işleme tekniklerini genel olarak konuşmuş olacağız. Yani iki haftada aşağı yukarı, iki, iki buçuk haftada bitirmiş olacağız.
+
+526
+01:58:57,268 --> 01:59:02,828
+Reinforcement Learning'i konuşmuştuk. Bunların içerisinde genetik algoritma da yer alıyor.
+
+527
+01:59:04,248 --> 01:59:14,427
+Tabii diğer başlıklar var. Ensemble Learning. Ensemble Learning'te de kolektif öğrenme yaklaşımlarını bulacaksınız.
+
+528
+01:59:14,427 --> 01:59:19,108
+Farklı yöntemler var. Begging, Boosting bunların başında geliyor.
+
+529
+01:59:21,203 --> 01:59:31,703
+Begging'in altında Random Forest algoritması var, çok bildiğiniz. Random Forest algoritmasının temelinde ne yatıyor? Nasıl bir karar verme mekanizmasına sahip diye sorayım.
+
+530
+01:59:32,627 --> 01:59:34,887
+Hocam başlamadan önce bir şey sorabilir miyim?
+
+531
+01:59:35,147 --> 01:59:35,347
+Tabii.
+
+532
+01:59:35,907 --> 01:59:49,567
+Pazar günü ara rapor teslimi olacak da bu ara rapor tesliminde ana ve alt başlıkları istemişsiniz. Burada sadece başlıkları mı belirtmemiz gerekiyor yoksa onları da doldurmamızı bekliyor mu acaba rapor tesliminde?
+
+533
+01:59:49,567 --> 02:00:00,000
+Onu da yazdım diye hatırlıyorum ama alt başlıklarının altında neler anlatacağınızı, madde madde ya da yazdığınız kadarını, bazılarını madde...
+
+534
+02:00:00,000 --> 02:00:26,120
+Madde, madde bazılarını metin olarak göndermenizi bekliyorum. Yani başlığın altında başlık evet ne anlatacağınızı belirliyor ama başlığın altında nelere değineceksiniz bunları madde madde yazmanız yeterli. Yoksa zaten dolduracak olsanız hepsini göndermenizi beklerim. Onu beklemiyorum. Sadece orada ne anlatacaksınız? Kısaca bir bahsetmenizi istiyorum.
+
+535
+02:00:28,275 --> 02:00:42,415
+Şimdi Random Forest'ı konuşuyorduk. Random Forest'ın özelliği ne? Yani bu kategori altında sayılmakla birlikte başka hangi kategori altında değerlendirebiliriz?
+
+536
+02:00:44,755 --> 02:00:49,855
+Decision Training daha gelişmişi değil mi? Ben mi yanlış hatırlıyorum gene?
+
+537
+02:00:50,484 --> 02:00:52,484
+Bu ele de bayıldım yani.
+
+538
+02:00:52,904 --> 02:00:56,624
+Ben mi yanlış hatırlıyorum gene? Çünkü benim hatırladıklarım da hep yanlıştı.
+
+539
+02:00:57,984 --> 02:01:02,324
+Çok iyi ya. Brandon Forrest değil mi ya? Decision Training'i gelişmiş olmalı.
+
+540
+02:01:03,155 --> 02:01:20,615
+Yani Random Forest de evet, Decision Tree yaklaşımını kendi içerisinde kullanıyor. Peki nasıl kullanıyor bunu? Farklı sayıda ağaçlar üreterek bu ağaçlardan gelen sonuçları bir kombin.
+
+541
+02:01:20,960 --> 02:01:42,960
+Deyerek kullanıyor ve kararı buna göre veriyor. Ağaç sayısını değiştirebiliyorsunuz Random Forest parametresi olarak. Bu tür farklı metrikler var. Daha güçlü bir karar verici olmasının ve birçok problemde Random Forest ismini yukarılarda görüyor olmanızın en büyük sebebi hem ağaç yapısının...
+
+542
+02:01:43,604 --> 02:02:01,184
+Karar verici sistem olarak çok başarılı çalışması çok geniş skalada. Biraz şeye benzetiyorum, ben bunu biraz komik olacak ama geniş spektrumlu antibiyotik vardır ya, hangi problemi yaşarsanız ona iyi gelir.
+
+543
+02:02:11,568 --> 02:02:16,568
+İlk genelde de 3 sırada yer alan bir algoritma sonuç olarak, başarı olarak.
+
+544
+02:02:17,768 --> 02:02:25,967
+Tabii ki ağaç sayısını değiştirdiğinizde, parametreleri değiştirdiğinizde hakikaten sonuçların da değiştiğini göreceksiniz.
+
+545
+02:02:26,087 --> 02:02:28,047
+Bu arada çok önemli bir şey söyleyeyim.
+
+546
+02:02:29,087 --> 02:02:34,568
+Bütün bu algoritmaları denediğinizde standart parametreleriyle deniyoruz biliyorsunuz.
+
+547
+02:02:35,667 --> 02:02:58,228
+Bu algoritmaların derin öğrenmede olduğu gibi hiper parametreleri var. Ve bu parametreleri değiştirerek denemek lazım. Bunların sonuçlarını irdelemek lazım. Belki ağaç sayısını azaltmak başarıyı değiştirmeyecektir. O zaman daha az ağaç sayısına karar vermek lazım. Örneğin Run-N-Force'da. Halbuki biz o anda default'u VECA'da ne tanımlıysa, scikit-learn'a ne tanımlıysa onu kullanıyoruz.
+
+548
+02:02:59,859 --> 02:03:15,260
+Ben o yüzden aslında bu konuları anlatırken mobil teknolojilerle ilişkilendirmek istediğim nokta, mümkün olduğunca iş yükünü azaltacak parametrelerle yola çıkmak.
+
+549
+02:03:16,060 --> 02:03:20,859
+Yani Random Forest'ın default bir ağaç sayısı değil, en az ağaç sayısını.
+
+550
+02:03:21,823 --> 02:03:44,123
+Belirli bir örnek veriyorum. Rock Curve'de bakıyorsunuz true-positive, false-positive oranına. Ahtisadan inceliyorsunuz. Oradaki optimum nokta yapılıp bunu tercih edebilirsiniz. Bunlar çok çok değerli. Ama genelde çalışmaları incelediğinizde literatürdeki run-and-force kullandım der, svm kullandım der. Ne bir parametre vardır?
+
+551
+02:03:44,884 --> 02:03:49,224
+Bizim yaptığımız çalışmalarda da dahil olmak üzere, yani kendimi de bunun içerisine katıyorum.
+
+552
+02:03:49,224 --> 02:03:54,623
+Çoğu çalışmamda bunların default değerlerini kullanırız. Ama aslında doğru değil.
+
+553
+02:03:55,724 --> 02:03:59,423
+Çünkü o problemi özel, farklı case'leri değerlendirmek lazım.
+
+554
+02:04:02,184 --> 02:04:05,224
+Tabii Ensemble Learning birçok noktada...
+
+555
+02:04:05,684 --> 02:04:20,619
+Çok başarılı sonuçlar üretiyor. Bunun AdaBoost algoritmasını da duymuşsunuzdur. XGBoost algoritmasını da duymuşsunuz. Bunlar da literatürde çok...
+
+556
+02:04:20,627 --> 02:04:40,015
+Sık olmasa da önemli problemler de başarılı sonuçlar üreten algoritmalar. Bu yüzden Ensemble Learning her zaman sizi mutlaka bir denemek gerektirecek bir yaklaşım olduğunu hatırlamanızda fayda var ve bunu biraz daha derinden incelemekte fayda var eğer bu dersi...
+
+557
+02:04:40,015 --> 02:05:02,275
+Bununla ilgili Machine Learning dersini almadıysanız bu konulara mutlaka özellikle doktora yeterlik sınavına girecekseniz mutlaka değinmekte ve çalışmakta fayda var. Öte yanda tezinizde veri işleme ile ilgili öğrenme ile ilgili bir şeyler yapıyorsanız bunları tarayarak hareket etmek lazım.
+
+558
+02:05:02,275 --> 02:05:06,735
+Bir de Semi-Supervised Learning var burada adını.
+
+559
+02:05:07,155 --> 02:05:14,955
+Koymadığımız Deep Learning'e geleceğim. Az kaldı. Semisupervised Learning nedir diye sorsam.
+
+560
+02:05:29,524 --> 02:05:30,024
+Ekip.
+
+561
+02:05:32,384 --> 02:05:35,024
+Ben duymadım galiba hocam. Hiçbir şey çağrıştıramadı ama.
+
+562
+02:05:35,684 --> 02:05:35,944
+Tamam.
+
+563
+02:05:37,944 --> 02:05:38,543
+Rahmetullah.
+
+564
+02:05:42,355 --> 02:05:52,296
+Yani biraz tahmin yürüteceğim hocam ama verinin bir kısmının işaretlendiği şey olarak hatırlıyorum.
+
+565
+02:05:53,036 --> 02:05:57,815
+Doğru. O bir kısım genelde ne oluyor? Bir sınıf oluyor.
+
+566
+02:05:59,815 --> 02:06:01,815
+Tek bir sınıfın işareti.
+
+567
+02:06:02,707 --> 02:06:14,527
+Yani böyle olmak zorunda değil ama genelde verinin belli bir kısmıyla ilgili bilgi sahibi olduğumuz duruma söylüyoruz ama bu verinin tek taraflı bilinmesi noktası.
+
+568
+02:06:14,527 --> 02:06:23,667
+Örnek veriyorum, hasta olmayan öğrencilerin ya da hasta olmayan kişilerin bilgisine sahip olmak ama hastaların bilgisine sahip olmamak.
+
+569
+02:06:25,487 --> 02:06:28,307
+Bu noktada sistemi hasta olmayan kişilerle eğitiyorsunuz.
+
+570
+02:06:28,916 --> 02:06:42,376
+Hasta olan bir kişi geldiği zaman bir outlier teşkil ettiği için bunu bilebiliyorsunuz ama hiçbir fikriniz, hiçbir etiketli bilginiz yoksa o zaman tabii daha farklı unsupervised turning uygulamanız gerekiyor.
+
+571
+02:06:43,315 --> 02:06:46,296
+Bu noktada anomaly detection kavramı giriyor.
+
+572
+02:06:50,100 --> 02:07:11,100
+Birçok noktada göreceksiniz. Network Security'de, ağ saldırı tespit sistemlerinde, Frout Detection'da uyguluyoruz. Farklı yöntemler var. Supervised Learning'de de uygulanıyor. Semi-supervised Learning'de de uygulanıyor. Non-Fraout'ları öğretiyorsunuz. Bir fraud geldiğinde bunun non-Fraout'lardan...
+
+573
+02:07:11,667 --> 02:07:32,667
+Farklı olduğunu ortaya koyduğunuzda anomaliyi tespit etmiş oluyorsunuz. Bir nevi outlier detection yapmış oluyorsunuz. Öte yandan unsupervised learning'te de aslında anomali tespit etme şansınız var. Orada iki gruba ayırıyorsunuz. Bir tarafta fraudlar, diğer tarafta non-fraudlar şeklinde. Küçük grubun...
+
+574
+02:07:33,427 --> 02:07:44,555
+Muhtemelen fırat olduğunu varsayarak hareket edebiliyorsunuz. Bu tür tespitler yapma şansınız var. Semispor-Wise Learning'de etiketli verinin...
+
+575
+02:07:45,203 --> 02:08:05,783
+Belli bir miktarda elimizde olduğu ama hepsinin olmadığı durumlar için kullandığımız bir yaklaşım. Gene bunun da detayına bakarsınız. Çok kapsamlı bir şekilde bilmenizi beklemiyorum ama sınava hazırlanırken bu kavramların ne olduğunu ve ne tür durumlar için kullanıldığından haberdar olmanızda fayda var.
+
+576
+02:08:06,484 --> 02:08:33,824
+Son olarak nörel network ve derin öğrenme kısmı yapay sinir ağları. Yapay sinir ağlarında nöronlar var. Bu nöronların belirli implemente ettiği fonksiyonlar var. Sigmoid fonksiyonu, tangent H fonksiyonu, farklı aktivasyon fonksiyonları. Bu aktivasyon fonksiyonlarını bir lojik kapı gibi düşünebilirsiniz. Lojik kapı bunların basit hali.
+
+577
+02:08:34,224 --> 02:08:57,224
+Burada fonksiyonlar var. O fonksiyonlara bir değer veriyorsunuz. Bu değer bir output üretiyor. Weightler değişiyor her adımda. Katmanlar var. Katman sayısı ne kadar artarsa problemin non-linearitesi de o kadar artıyor. Yani karmaşıklığı da o kadar artıyor. Birçok problemi...
+
+578
+02:08:58,036 --> 02:09:18,296
+Tek katmanla ve az sayıda nöronla çözme şansınız var. Ama bizim nörel networklerden beklediğimiz komplike problemleri çözmesi. Çünkü eğitim süreçleri uzun süren yapılar. Özellikle katman sayısı ve nöron sayısı fazlaysa.
+
+579
+02:09:18,931 --> 02:09:44,951
+Burada tabii farklı dizayn edilmiş nörel networkler var. Convolutional Nörel Network, Recurrent Nörel Network, Generative Adversial Network ve Auto-Encoder başlıkları olmak üzere. Perceptronlar, Multi-Layer Perceptronlar daha çok ilk versiyonları ve daha basit yapıda dizayn ediliyorlar.
+
+580
+02:09:45,328 --> 02:09:51,768
+Diğerleri biraz daha hani lojik geytilerle nasıl entegre devreler üretiliyor? Aynı mantık.
+
+581
+02:09:52,508 --> 02:10:01,788
+Convolutional neural network, işte recurrent neural network biraz daha bu multi-layer perceptronların daha sofistike tasarlanmış halleri de diyebilirsiniz.
+
+582
+02:10:01,788 --> 02:10:09,788
+Burada ne olduklarını konuşalım. Kısaca sonra ilerleyelim. Hiperparametreleri de değineceğiz.
+
+583
+02:10:10,348 --> 02:10:11,788
+Convolutional neural network...
+
+584
+02:10:12,467 --> 02:10:14,488
+Neyi hedefler?
+
+585
+02:10:17,168 --> 02:10:19,328
+Görüntüler üzerinde.
+
+586
+02:10:19,768 --> 02:10:28,828
+Özellikle görüntü de çok sık kullanılmıştır ve bütün piksellerin birbirleriyle ilişkisini ortaya koymaya odaklanmıştır.
+
+587
+02:10:29,728 --> 02:10:34,967
+Bu yüzden üzerinde gezdirilen, kanelden üretilen değerler kullanılır.
+
+588
+02:10:34,967 --> 02:10:37,467
+Daha çok space.
+
+589
+02:10:38,003 --> 02:11:02,064
+Anlamında ilişki kurmayı sağlar. Recurrent Neural Network ise Time özelinde bir ilişki kurmanın peşindedir. Örneğin Activate Recognition'da LSTM kullanmak, Guru kullanmak daha avantajlıdır.
+
+590
+02:11:03,923 --> 02:11:15,923
+Bir hareketi yaparken hareketin öncesi ve sonrası vardır. Bu hareketi öğretirken hareketin önce ve sonrasındaki bilgileri birlikte öğrenmenizi sağlayan, verdiğiniz bilgileri...
+
+591
+02:11:16,340 --> 02:11:24,039
+Hem belli bir kısmını saklayarak diğer öndeki kapıya nörona teslim eden bir yapı oluşturursunuz.
+
+592
+02:11:24,039 --> 02:11:31,599
+Hem de burada bu iki bilgi arasında ilişki kurulmasını sağlamış olursunuz.
+
+593
+02:11:32,899 --> 02:11:38,019
+CNN ve RNN başlıkları altındaki çözümler en çok kullanılan çözümler.
+
+594
+02:11:38,676 --> 02:11:57,996
+Ama bunların tabii alt detaylarına girmiyorum. Guru, LSTM bunlar biraz daha farklı mantıklarda çalışıyorlar. Guru 2 tane GT sahipken, LSTM 3 tane GT sahip gibi farklı dizaynları var.
+
+595
+02:11:57,996 --> 02:12:04,896
+Burada autoencoder'a dikkat çekmek istiyorum. Autoencoder ne yapar? Bizim için neden önemlidir?
+
+596
+02:12:05,363 --> 02:12:16,963
+Diğerleri bir nevi sınıflandırma görevi görüyordu. Ama özellik çıkarmak için de kullanabiliyoruz bu arada CNN ve RNN'i. Bunu da unutmamak lazım. Otoenkodur bizim için neden değerli?
+
+597
+02:12:30,292 --> 02:12:31,292
+Bir ipucu vereyim.
+
+598
+02:12:31,292 --> 02:12:32,292
+Biraz daha...
+
+599
+02:12:32,292 --> 02:12:39,292
+Dimensionality Reduction ile ilişkilendirebilirsiniz.
+
+600
+02:12:43,220 --> 02:12:47,060
+Veri içerisindeki patternların anlaşılabilmesi için.
+
+601
+02:12:47,060 --> 02:13:05,500
+Evet, verinin göremediğimiz patternlarını ortaya çıkarmak için kullandığımız bir yapı. Gene bir neural network mantığı var. Girdi inputlar var, ara katmanlar var.
+
+602
+02:13:06,068 --> 02:13:21,068
+Ara katmanlardan sonra çıktı inputlar var. Girdi ve çıktıyı birbirine eşitliyorsunuz. Yani verdiğiniz girdiğinin çıktı da olmasını bekliyorsunuz o teknik kurularda. Ve ara katmanların bunu en az hata...
+
+603
+02:13:21,344 --> 02:13:47,064
+Üretecek şekilde çıktığı üretmesini istiyorsunuz ve ara katmanların da buna göre modifiye olmasını istiyorsunuz. Örneğin 100 özelliğiniz var. 100 özelliği verdiniz. Yine 100 özellik olarak dışarıdan almak istiyorsunuz. Ara katmanları da 150-25 diye küçülterek birden fazla katman yapabilirsiniz. Kaça indirmek istiyorsanız o şekilde kodluyorsunuz.
+
+604
+02:13:48,640 --> 02:14:04,640
+PCA'de olduğu gibi farklı bir uzaya geçiyorduk hatırlıyorsanız LDA'de. Burada da Neural Network sayesinde aradaki daha az özellikle...
+
+605
+02:14:05,876 --> 02:14:19,916
+Sizin sahip olduğunuz instansı temsil etmek istiyorsunuz. 100 özellikle temsil ederken AutoEncoder'da geçirdikten sonra bunu 75'e, 50'ye, 25'e hatta genelde daha büyük sayıda özellikler için bunu yaparız.
+
+606
+02:14:19,916 --> 02:14:29,916
+1000 özelliğe sahip, 10.000 özelliğe sahip problemlerde kullanırız. Bunu daha düşük özellik sayılarına indirgeyerek mümkün olduğunca...
+
+607
+02:14:30,515 --> 02:14:47,855
+Aynı özellikleri taşıyan instans üretmeyi planlarız o Tenkudur'da. Bu sayede 10.000 özellikten 1000'e kadar indiğinizde aslında farklı bir uzay domeyninde siz 1000 özellikle probleminizi temsil edebilecek noktaya gelirsiniz.
+
+608
+02:14:47,855 --> 02:14:50,855
+Burada...
+
+609
+02:14:51,636 --> 02:15:06,216
+PCA'de sınıflar arası istatistiksel bilgiyi kullanıyorduk. Pardon, sınıfların tamamına verildiği noktada özellikler kullanılarak instanslar arasındaki ilişkisel veriyi oluşturuyorduk.
+
+610
+02:15:06,216 --> 02:15:19,636
+Oto Encoder'da da neural network yapısını kullanılarak hatta IBM'in bir sunumu olmuştu üniversitede bundan 4-5 tane evvel. Gelen konuk şunu demişti. Bizim bundan sonraki hedefimiz derin öğrenmeyi.
+
+611
+02:15:19,636 --> 02:15:45,636
+Neydi mottosu? Making Invisible Visible. Görünmeyeni görünür kılmak diye ifade etmişti. Burada da otoenkodör bize elimizdeki özelliklerden bizim kendimizin elle üretemeyeceği özellikleri öğrenmesini sağlıyor ve birçok problemde de işe yarıyor. Ama işin ilginç tarafı...
+
+612
+02:15:46,547 --> 02:15:56,587
+Belli tür problemlerle daha çok başarılı. Örneğin, biz aktivite öğrenme probleminde kullanmıştık.
+
+613
+02:15:59,380 --> 02:16:23,639
+Aktivitelerini belli pencerelerde ürettiği değerlerden autoencoder ile değer üretmeye çalışmıştık. Burada yeterince başarı üretmemişti. Ama network security probleminde, network ağlarına yapılan atakların sınıflandırmasında, yani biraz daha diskrit veriye sahip olan problemlerle daha başarılı sonuçlar ürettiğini gördük autoencoder ile. Bu enteresan bir bilgi. Yani repetitif.
+
+614
+02:16:24,275 --> 02:16:42,376
+Veri varsa autoencoderların çok da başarılı olmadığını gördük. Ama daha kategorik veriler varsa burada daha başarılı sonuçlar ürettiğini söyleyebiliriz. Peki, GAN nedir? Generative Adversial Network.
+
+615
+02:16:47,283 --> 02:16:52,164
+Bildiğim kadarıyla hocam, detayların hakim değilim ama gene bunlar da, bu da çok popüler bir alan.
+
+616
+02:16:52,543 --> 02:16:53,403
+Evet, son derece doğru.
+
+617
+02:16:53,504 --> 02:17:10,684
+İki network'ümüz var. Bir tanesi bir veri generate etmeye çalışıyor, oluşturmaya çalışıyor. Öbür network ise bunun doğru mu, gerçek mi, sahte mi olduğunu karar vermeye çalışıyor. Böylece birbirlerini karşılıklı eğitiyorlar gibi bir özet yapabilirim.
+
+618
+02:17:10,684 --> 02:17:14,443
+Çok güzel. Hırsız polis hikayesini aslında bir nevi buraya...
+
+619
+02:17:14,739 --> 02:17:39,619
+Nörel Network'a uyarlamış oluyorlar. Buradaki Generator ve Discriminator, [öğrenci]'ın bahsettiği iki yapı. Generator veri üretiyor rastgele ve amaç sentetik veri üretmek ve gerçek veriden ayırt edilemeyecek düzeyde bir başarıyla üretmek bu veriyi.
+
+620
+02:17:42,420 --> 02:17:54,180
+Resimde de kullanıyorlar. Belli resimleri öğreterek kullanmayı ama ben size daha gerçekçi derken daha anlamlı bir başka örnek vereyim.
+
+621
+02:17:54,500 --> 02:18:01,040
+Fraud verileri çok az. Network saldırı verileri çok az. Bizim amacımız bu verileri çoğaltmak.
+
+622
+02:18:01,459 --> 02:18:05,619
+Ve mümkün olduğunca da gerçek fraud verilerine uygun veri üretmek istiyoruz.
+
+623
+02:18:05,760 --> 02:18:09,440
+Data Augmentation dediğimiz bir alan var. Veri üretme alanı.
+
+624
+02:18:10,036 --> 02:18:20,536
+Bu daha az sayıdaki verileri sentetik veriyle tamamlamak adına gerçek veriye benzeyen veriler üretmek istiyoruz.
+
+625
+02:18:21,475 --> 02:18:23,456
+Generator bunun için çaba harcıyor.
+
+626
+02:18:23,456 --> 02:18:35,335
+Bu diskriminator da bunu, generator'ın ürettiği veriyi gerçekten fake mi yoksa real mı bunu anlamaya çalışıyor.
+
+627
+02:18:35,695 --> 02:18:36,935
+Burada bir trade-off var.
+
+628
+02:18:37,459 --> 02:19:04,659
+Bir tarafa gitmesi demek, yani diskriminator'un çok iyi ayırt edici olması demek, generator'ın çok kötü üretiyor olması demek. Generator'ın her ürettiğinin gerçek veri gibi kabul edilmesi ise, diskriminator'un çok başarısız bir polis olduğunu gösterir. Bu da kötü bir durum. O yüzden bunların dengeli bir şekilde veri üretmesini isteriz. Son dönemde bununla ilgili çok fazla sayıda çalışma yapılıyor.
+
+629
+02:19:05,136 --> 02:19:14,376
+Ve birçok verinin, gerçek verinin eksik olduğu veri setlerini tamamlamak için bunlar kullanılıyor.
+
+630
+02:19:15,796 --> 02:19:24,315
+Tabii bunlar genelde iki sınıf problemi için yapılıyor. En sınıf problemlerinde başka sıkıntılar var, gun kullanımı.
+
+631
+02:19:24,315 --> 02:19:28,315
+Ama gun'ın ileri de...
+
+632
+02:19:29,075 --> 02:19:48,255
+Örneğin, sizin üç tane veriyle yola çıkarak, beş tane veriyle, bunu tabii temsili olarak söylüyorum, o verileri öğrenip hiç üretilmemiş ama üretilme ihtimali olan gerçek verileri üretmenizi bekliyoruz.
+
+633
+02:19:48,255 --> 02:19:55,255
+Yani bir nevi çok iyi taklit eden bir yapı oluşturmanızı bekliyoruz. Bu sayede...
+
+634
+02:19:55,507 --> 02:20:20,347
+Veri setleriyle ilgili yaşanabilecek sıkıntılarını ortadan kaldıracağız. Bununla ilgili tabii çok iyi taklit resimler üretilmesi söz konusu. Bunlar da belki ileride olacak. Bunların en büyük değerlendirme metriklerinden bir tanesi de üretilen iki tane farklı sentetik verinin birbirine benzeme oranı.
+
+635
+02:20:20,884 --> 02:20:33,603
+Bu da çok önemli. Siz sadece küçücük bir yerini değiştirerek yeni bir veri ürettim diyebilirsiniz ama yeni her ürettiğiniz verinin bir önceki veriyle similaritesinin çok yüksek olmaması lazım.
+
+636
+02:20:33,603 --> 02:20:43,376
+Ki, örneğin sadece 3 tane değerini değiştirerek ben yeni veri ürettim derseniz bu gerçekçi bir...
+
+637
+02:20:43,376 --> 02:20:57,376
+Veri olmayacaktır. Ve belli bir süre sonra sizin ürettiğiniz, kullandığınız network'ün verisi diğerleri tarafından anlaşılacaktır. Bu alan çok popüler bir alan. Bu noktada...
+
+638
+02:20:58,164 --> 02:21:05,164
+Biz en son ganlarla aktivite tanımada aktivite üretmeye çalışıyorduk.
+
+639
+02:21:06,784 --> 02:21:14,444
+Belli bir noktaya da geldik ama yüksek lisans konusu olarak da çok güzel çalışma alanı olabilecek bir konu.
+
+640
+02:21:15,344 --> 02:21:17,164
+İlgilenen varsa buna ilgili de konuşabiliriz.
+
+641
+02:21:20,344 --> 02:21:22,244
+Evet, bunu da söyledik.
+
+642
+02:21:22,752 --> 02:21:26,632
+Derin öğrenmenin hiperparametrelerini konuşalım ve konuyu kapatalım.
+
+643
+02:21:28,072 --> 02:21:28,932
+En azından şimdilik.
+
+644
+02:21:29,871 --> 02:21:31,851
+Derin öğrenmede hiperparametreler nelerdir?
+
+645
+02:21:35,311 --> 02:21:36,952
+Dropout vardı sanırım.
+
+646
+02:21:37,871 --> 02:21:40,851
+Dropout var. Dropout ne için kullanıyoruz [öğrenci]?
+
+647
+02:21:42,112 --> 02:21:43,551
+Yanlış hatırlamıyorsam.
+
+648
+02:21:43,888 --> 02:21:52,427
+Bazı nöronların katmanlar arası geçişlerde bazı nöronlar da azaltmaya gitmek. Görülen değersiz nöronun azaltılması.
+
+649
+02:21:52,427 --> 02:22:11,888
+Doğru. Bu birazcık gerçek hayat mantığına dayanıyor. Her nöronun etkin kılmaktansa, gerçek hayatta da bazen bazı nöronların rastgelesellik usulü karar vermede etkisiz kalabileceği prensibine dayanarak hem overfittingi engellemek,
+
+650
+02:22:11,888 --> 02:22:31,968
+Teknik Hem de ürettiğimiz çözümün genelleştirilebilirliğini sağlamak için kullandığımız bir yaklaşım. Bunun karşılığında regularization da kullanabiliyoruz. Dropout'ın paralelinde bazen onların ikisinin kombinasyonu da tek tek kullanımı da bizim işimizi kolaylaştırıyor. Başka?
+
+651
+02:22:33,587 --> 02:22:34,987
+Learning rate vardı hocam.
+
+652
+02:22:35,367 --> 02:22:42,827
+Learning rate bizim için çok kritik. Çok büyük olması ve çok küçük olması ne sağlar? Yani niye bu kadar üzerinde duruyoruz?
+
+653
+02:22:43,227 --> 02:22:51,047
+Hocam aslında her iterasyonda adım büyüklüğümüzü ifade ediyor. Learning rate bunun bir kat sayısı aslında.
+
+654
+02:22:51,047 --> 02:22:51,847
+Çok güzel.
+
+655
+02:22:53,427 --> 02:23:14,387
+Ben bunu şeyden hatırlıyorum da, bir dağda olduğumuzu düşünelim. Gözümüz kapalı, yön bulmaya çalışıyoruz. O üç boyutlu grafikleri hayal edelim. En çukur yere doğru gitmeye çalışıyoruz veya en yükseğe doğru. Eğer çok büyük adım atarsak o lokal veya global minimumu kaçırabiliriz. Çok küçük adım atarsak da çok zaman alabilir o minimumla erişmek.
+
+656
+02:23:14,387 --> 02:23:15,547
+Çok doğru.
+
+657
+02:23:16,244 --> 02:23:38,564
+Aynen senin anlattığın gibi Learning Rate'de çok büyük değerler seçmemiz bizim global minimumu kaçırmamız anlamına gelebilir. Küçük adımlarla ilerlersek de lokal minimuma takılmamıza, lokal maksimuma takılmamıza sebebi eti verebilir ve gitmek istediğimiz noktaya da uzunca bir sürede ulaşmamıza sebebi eti verir.
+
+658
+02:23:44,244 --> 02:24:08,904
+Yapıları tercih etmekte, optimizerleri tercih etmekte fayda var. Bununla ilgili farklı optimizerler var. Bu optimizerleri derin öğrenmeye çalışanlar bilirler. Çalışmayanlar da zaman içerisinde öğreneceklerdir. Adam optimizer var, ada delta var gibi gibi sayabiliriz. Aktivasyon fonksiyonları var biliyorsunuz. Aktivasyon fonksiyonları da çok önemli.
+
+659
+02:24:09,459 --> 02:24:14,519
+Ama en çok kullanılan, tercih edilen aktivasyon fonksiyonu hangisi diye sorsam.
+
+660
+02:24:18,131 --> 02:24:18,971
+Son dönemde.
+
+661
+02:24:24,275 --> 02:24:25,995
+diye tahmin ediyorum ama.
+
+662
+02:24:26,635 --> 02:24:28,396
+Reno ve Sigma'in görüyordum ben.
+
+663
+02:24:28,896 --> 02:24:29,295
+Efendim?
+
+664
+02:24:29,775 --> 02:24:31,315
+Reno ve Sigma'in görüyordum.
+
+665
+02:24:31,315 --> 02:24:36,675
+Evet, Reno bir tık daha önde olmakla birlikte Sigma'in de sıklıkla kullanılıyor.
+
+666
+02:24:38,695 --> 02:24:47,515
+Burada belirli verilen değere göre 0-1 aralığında bir değer üretmeniz genelde bekleniyor ama bazen birazdan farklı dizayn edilebiliyor.
+
+667
+02:24:47,515 --> 02:24:49,635
+Mesela X değerli üretilmemesi istenebiliyor.
+
+668
+02:24:51,667 --> 02:25:02,567
+Bu da o yapıda aslında vanishing gradient dediğimiz problemin oluşmasıyla alakalı bir kullanım şekli.
+
+669
+02:25:02,647 --> 02:25:07,067
+Relu'da genelde bu vanishing gradient probleminin oluşmadığını görüyoruz.
+
+670
+02:25:09,628 --> 02:25:15,027
+Burada tabii birkaç parametre daha var, onları da konuşalım.
+
+671
+02:25:17,687 --> 02:25:18,707
+Nedir onlar?
+
+672
+02:25:19,924 --> 02:25:26,804
+Batch Size diye geçiyor. Batch Size bize neyi söylüyor [öğrenci] biliyor musun?
+
+673
+02:25:29,524 --> 02:25:34,804
+Hocam beyazır kullanmıyordum ama şey olabilir mi acaba? Verinin işlenme boyutu.
+
+674
+02:25:34,804 --> 02:25:36,424
+Aynı bir T anında gibi.
+
+675
+02:25:37,264 --> 02:25:42,804
+Bir T anında sizin...
+
+676
+02:25:44,435 --> 02:25:49,916
+Belli bloklar halinde modele verinizi verdiğiniz boyutu temsil ediyor.
+
+677
+02:25:50,556 --> 02:25:53,576
+Ve bu blokların sonunda güncellemeler yapılıyor.
+
+678
+02:25:54,775 --> 02:25:59,956
+O yüzden bu blokları aslında tek tek vermek çok maliyetli bir iş, zaman alan bir şey.
+
+679
+02:25:59,956 --> 02:26:04,275
+O yüzden genelde ikinin katları şeklinde 64, 128, 256.
+
+680
+02:26:05,007 --> 02:26:21,727
+Değerleri genelde optimum değerler olarak karşımıza çıkıyor. Bu sayede biraz daha hızlı bir öğrenme süreci yaşıyorsunuz ama tek tek vererek de bu süreci yönetme şansınız var ama böyle olduğu zaman tabii veri büyük boyutta verdiğinizde de şöyle sıkıntılar olabilir.
+
+681
+02:26:23,847 --> 02:26:27,927
+Memory de yetersizlik yaşanabiliyor.
+
+682
+02:26:28,468 --> 02:26:42,768
+En büyük problemlerden bir tanesi o. Ona dikkat etmek gerekiyor. Derin öğrenme problemlerinde en çok yaşadığımız sıkıntı belleketarsizliği. Çünkü hele resimle çalışıyorsanız çok daha büyük bir problem var demektir.
+
+683
+02:26:43,252 --> 02:27:01,972
+Zaten resimlerde de genelde 1024'de 1024 gibi boyutlar çok tercih edilmiyor. Çok büyük boyutlar. Öğrenme süreci çok uzun süren süreçler. Daha çok 256-256 kullanılıyor diyebiliriz. Başka var mı parametre?
+
+684
+02:27:08,884 --> 02:27:11,103
+Epoch'tan bahsedebilir miyim acaba?
+
+685
+02:27:11,703 --> 02:27:23,063
+Bahsedebiliriz. Epoch da aslında bizim için önemli. Epoch'un daha gitmesi gerektiğine ya da yeterli olduğuna nasıl karar veriyoruz?
+
+686
+02:27:28,404 --> 02:27:37,603
+Burada callback fonksiyonları kullanmıyor mu? Mesela Epoch'a bin verip Accuracy'ye ulaştığımızda kesebiliyoruz.
+
+687
+02:27:38,144 --> 02:27:53,504
+Tabii böyle şeyler yapabiliyoruz ama bunu ekstradan böyle bir kontrol olmadığını varsayarsak, biz gözle baktığımızda grafiğin neyine bakıyoruz? Yani çizdiğimiz grafikte neyi görmek istiyoruz?
+
+688
+02:27:55,028 --> 02:27:58,768
+Bir yüzleşme aslında görmek istiyoruz. Yüzleşmeyi gördüğümüz an.
+
+689
+02:27:59,628 --> 02:28:11,308
+Bir training accuracy tarafı var, bir de validasyon accuracy kısmı var. Genelde training accuracy daha yüksek oluyor biliyorsunuz ve bunun bir konverge etme noktasını bekliyoruz.
+
+690
+02:28:11,308 --> 02:28:20,308
+Ama esas baktığımız nokta validasyon accuracy. Validasyon accuracy converge etmediyse,
+
+691
+02:28:20,468 --> 02:28:46,907
+Hala iyileşme ihtimali gösteriyorsa bizim daha fazla epokla eğitme gereğini söyleyebiliriz rahatlıkla. Ama bazen konverj etmiyor. Hatta bir noktadan sonra epoku arttırdığı için kötüye gitmeye başlıyor. Bir de böyle bir problemimiz var. Bunu nasıl adlandırabiliriz yani?
+
+692
+02:28:47,731 --> 02:28:48,951
+Neden böyle bir durum oluyor?
+
+693
+02:28:49,371 --> 02:28:50,311
+Overlearning mi acaba?
+
+694
+02:28:53,631 --> 02:28:55,572
+Neyi kastediyorsun overlearning'de?
+
+695
+02:28:56,752 --> 02:29:01,551
+Çünkü aynı veriyi tekrar tekrar verdiğim zaman acaba o şey mi başlıyor?
+
+696
+02:29:01,772 --> 02:29:03,351
+Elberlemeye başlayıp.
+
+697
+02:29:03,351 --> 02:29:04,511
+Şunu söyleyelim.
+
+698
+02:29:04,979 --> 02:29:26,979
+Bir kere burada bundan emin olabilmemiz için training accuracy'sini görmemiz lazım. Training accuracy'si çok yüksekse, validasyonda bir konverj edeme bir durumu varsa o zaman evet bir overfitting'den bahsedebiliriz. Daha fazla train datasını öğrendiğini ve test datasına bir genelleştirilebilir bir yapı oluşturulmadığını söyleyebiliriz.
+
+699
+02:29:31,476 --> 02:29:40,296
+Aynı sıkıntı varsa, yani trend datasını öğrenirken de aynı sıkıntı varsa, o zaman ne söyleyebiliriz? Yani hem validasyon hem trende sorun var.
+
+700
+02:29:51,252 --> 02:29:52,012
+Yapabilirsiniz.
+
+701
+02:29:54,711 --> 02:30:00,231
+Doğru özellik kümesini girdi olarak vermediğimizi söyleyebiliriz arkadaşlar.
+
+702
+02:30:02,672 --> 02:30:08,472
+Ayırt edici olabilecek, öğrenebilecek bir özellik kümesiyle beslemediğimizi söyleyebiliriz.
+
+703
+02:30:09,332 --> 02:30:12,612
+Çünkü train tarafında da belli bir...
+
+704
+02:30:12,788 --> 02:30:40,167
+Doyuma ulaşmıyoruz. Validasyon da bir problem var. Bu da bizim özellik setimizde bir sıkıntı olduğunu gösterir. Her halükarda train öğreniyorsa bununla ilgili bir çıkarım yapabiliyor. Ama validasyon tarafında bir problem varsa demek ki burada ya çok fazla sayıda nöron kullanıyoruz ya çok fazla sayıda katman kullanıyoruz. Bunda bir değişikliğe gitmek gerekiyor. Nöron sayısı da bir biliyorsunuz. Hiperparametre.
+
+705
+02:30:40,628 --> 02:30:50,688
+Katma sayısı da bir hiperparametre. Bunlar arasındaki bağlantı şekilleri de bir hiperparametre aslında. Mesela fully connected networkler var.
+
+706
+02:30:52,084 --> 02:31:14,524
+Her yerde bunu kullanmak zorunda değiliz. Ama zaman zaman bu yapıları kullanabiliyoruz. Hatta bir derin öğrenme ağı içerisinde farklı bağlantı biçimlerini kullanarak dizayn ediyoruz ki bu transferli örnekte bu tarz oturmuş yapıları alıp başka bir problemi uygulamayı tercih ediyoruz.
+
+707
+02:31:14,524 --> 02:31:20,084
+Çünkü onlar zaten bu ağın başarısını ispat etmiş oluyorlar. Siz o ağ alıp diğer tarafta kullanabilirsiniz.
+
+708
+02:31:20,084 --> 02:31:47,864
+Bu transfer learning mevzusunda belki önümüzdeki haftalarda kısaca konuşmakta fayda olabilir. Evet şimdi bu konuyla ilgili benim söyleyeceklerim genel olarak bu kadar. Hızlıca machine learning dünyasına bir giriş çıkış yaptık. Size belli başlı bilgileri hatırlattık. Belli başlı bilmediklerinizi de birazcık gözünüzün önüne koyduk. Ama benim hiçbir zaman bu dersteki amacım bunlarla ilgili derinlemesine bir şey anlatmaktı.
+
+709
+02:31:48,084 --> 02:32:07,484
+Bu derslerin teorisi zaten, daha detaylı bilgisi diğer derslerde özellikle makine öğrenmesi ve derin öğrenme dersinde anlatılıyor. Ama bunların kullanım alanlarını önümüzdeki haftalarda daha detaylı bir şekilde konuşacağız. Mobil teknolojiler için nerelerde kullanıyoruz.
+
+710
+02:32:13,711 --> 02:32:21,112
+Maliyeti yüksek olurmuş gibi gözükse de çok sık rahatlıkla kullanabileceğimiz bir yapı ve öğrenmeyi sonucuda yapacağız.
+
+711
+02:32:22,112 --> 02:32:25,851
+Modelin parametrelerini sonucudan telefona aktaracağız ve telefonda sadece çalıştıracağız.
+
+712
+02:32:27,332 --> 02:32:30,031
+Oldukça başarılı sonuçlarda elde etme şansımız var.
+
+713
+02:32:32,171 --> 02:32:34,851
+Bu hafta 9. hafta, 10. hafta...
+
+714
+02:32:35,827 --> 02:32:54,628
+Sınav olacağız. Sonra final dönemi için size şey demiştim hatırlıyorsanız, bir sınav yerine ödev vermeyi planlıyorum bu sene demiştim. Öyle bir düşüncem var demiştim. Bununla ilgili teknik bir problem yoksa, ki her sene yapılıyor, bazı derslerde bu şekilde verilebiliyor.
+
+715
+02:33:01,747 --> 02:33:24,268
+süreç içerisinde sizin bir implementasyon yapmanızı bekleyeceğim. Yani bu bir telefonda olabilir ya da bu bir başka bir ortamda olabilir. Şu anda net bir şekilde karar vermedim. Ve belirli bir öğrenme metodolojisini ya da başka bir problemi çözmenizi bekliyor olacağım.
+
+716
+02:33:28,788 --> 02:33:52,468
+Sinyalini vermiş olayım. Muhtemelen finanslerimiz bu yönde kurgulanacak. Güzel bir şeyler çıkartmanızı bekliyor olacağım. Ama iki haftalık bana bir süre verin. 11. hafta itibariyle açıklamış olacağım. Zaten sizin de yaklaşık olarak 5-6 haftanız olacak. Yeterli derecede bir süreniz olacağını düşünüyorum. Önümüzdeki haftaya performans metrikleriyle başlayacağız derse.
+
+717
+02:33:52,879 --> 02:34:14,360
+Ondan sonra açıkçası birazcık sensör networklere geçmek istiyorum. Yani mobil teknolojilerin öncesindeki ilk başlangıç noktası, sensör networklerin IoT ile kesişen noktaları ve IoT'den farklarını vurgulayacağız. Sonra da yavaş yavaş crowdsourcing mekanizmasından bahsedeceğim.
+
+718
+02:34:14,768 --> 02:34:41,347
+Belki crowdsourcing önceye alabilirim, ona tam karar vermedim. Crowdsourcing nedir? Bununla ilgili yapılan uygulamalar nelerdir? Bunları anlatacağım. Sonrasında zaten IoT ve büyük veriye doğru geçişimizi tamamlayacağız gibi gözüküyor. Ama önümüzdeki hafta, sınav haftanız, 11. hafta bu söylediklerimizle devam ediyor olacağız. Bir performans nitriklerine de göz atmanızda fayda var. Çok detaylı sormam ama yani örneğin.
+
+719
+02:34:41,727 --> 02:35:04,847
+Confusion Matriz nedir? True Positive True Negative, False Positive Negative nedir? Precision Recall nedir? Bunlara bir bakmanızı öneririm sınav öncesinde. Aynı şekilde regresyon içinde bazı konuştuğumuz metrikler vardı. Bunlardan haberdar olmakta fayda var. Başka söyleyeceğim bir şey var mı diye şöyle notlarımı kontrol ediyorum.
+
+720
+02:35:06,644 --> 02:35:11,844
+Hocam zannedersem birinci ödevle ilgili dokumentasyon yayınla, cihazı söylemiştiniz geçen hafta.
+
+721
+02:35:11,984 --> 02:35:20,443
+Evet, onu hafta sonuna kadar yayınlamış olacağım. Önümüzdeki hafta pazara kadar da süresi olacak onun. Perşembeye kadar değil, bir sonraki pazara kadar süresi olacak.
+
+722
+02:35:22,004 --> 02:35:25,443
+Onunla ilgili de dokumentasyonu yayınlayacağım. Gene ders duvarından yayınladım.
+
+723
+02:35:27,884 --> 02:35:31,763
+Evet, bugünlük dersimiz bu kadar. Katıldığınız için çok teşekkür ederim.
+
+724
+02:35:32,147 --> 02:35:40,047
+Hepinize sağlıklı günler diliyorum. Güzel bir hafta sonu olsun. Önümüzdeki hafta görüşmek üzere sınavda. Bir sorunuz olursa bana mail olarak yazabilirsiniz.
+
+725
+02:35:40,787 --> 02:35:43,087
+Görüşmek üzere hocam.
+
+726
+02:35:43,487 --> 02:35:43,987
+Hoşçakalın.
