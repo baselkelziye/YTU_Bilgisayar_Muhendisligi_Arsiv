@@ -1,0 +1,1459 @@
+1
+00:05:51,827 --> 00:05:54,987
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:05:57,827 --> 00:05:58,827
+Evet hocam.
+
+3
+00:06:01,027 --> 00:06:02,627
+Tamam, teşekkürler.
+
+4
+00:06:08,372 --> 00:06:18,372
+So, last lecture, we started to the subject of two random variables.
+
+5
+00:06:32,372 --> 00:06:56,372
+We still have random variables, more than one random variables, because in life, that's what happens. You have more than one, for example, for a family, maybe you are interested in their number of people in the family, and then their income, and...
+
+6
+00:06:57,971 --> 00:07:02,891
+Income is related with the people's age in the family.
+
+7
+00:07:03,692 --> 00:07:06,591
+So these things may be related to each other.
+
+8
+00:07:08,431 --> 00:07:14,051
+And you may want to study them together.
+
+9
+00:07:14,051 --> 00:07:17,431
+So in this case, you use a joint distribution.
+
+10
+00:07:26,963 --> 00:07:53,843
+For two discrete random variables like x and y, we can define a joint probability mass function, joint pmf, and joint pmf is defined as probability of x being x and y being y.
+
+11
+00:07:56,211 --> 00:07:59,731
+And the usual stuff is valid again.
+
+12
+00:08:03,072 --> 00:08:07,911
+Probabilis are larger than 0 or equal to 0.
+
+13
+00:08:08,611 --> 00:08:12,391
+Probabilis sum up to 1, sum to 1.
+
+14
+00:08:14,752 --> 00:08:19,911
+We can define, in this case, a joint range.
+
+15
+00:08:22,355 --> 00:08:44,427
+ve y'ye
+
+16
+00:08:46,515 --> 00:09:04,515
+A joint PMF like this in a three-dimensional space. X and Y are random variables values. And you can imagine you have these point masses in specific locations.
+
+17
+00:09:13,491 --> 00:09:20,932
+Um, you can obtain marginal PDFs, so PMFs.
+
+18
+00:09:20,932 --> 00:09:26,771
+Uh, when we are talking about joint probabilities,
+
+19
+00:09:26,771 --> 00:09:37,211
+uh, PMF of a single random variable like x is called marginal.
+
+20
+00:09:40,179 --> 00:10:05,819
+again, PMF of a single random variable like y is marginal to. So basically, if you have the joint, you can sum up the other variable and get the marginal of the other one. So you can sum over y's, all possible values of y, and you can, that will give you,
+
+21
+00:10:08,947 --> 00:10:11,707
+Marginal PMF
+
+22
+00:10:11,707 --> 00:10:13,827
+Of X
+
+23
+00:10:17,748 --> 00:10:21,708
+So this is related to actually the law of total probability.
+
+24
+00:10:38,676 --> 00:10:44,576
+So, maybe you have, we have seen this example, so let's move on.
+
+25
+00:11:01,107 --> 00:11:10,048
+Now, remember that in addition to PMFs, we had CDF, Cumulative Distribution Functions.
+
+26
+00:11:13,556 --> 00:11:18,475
+Now, we can also write a joint version of that.
+
+27
+00:11:20,916 --> 00:11:39,836
+In that case, a joint CDF of x and y is probability of x having value less than or smaller than x, less than or equal to x.
+
+28
+00:11:41,107 --> 00:11:50,859
+Y'e y
+
+29
+00:12:08,019 --> 00:12:12,683
+We also saw the rectangle probability formula.
+
+30
+00:12:15,731 --> 00:12:29,811
+So, basically, if you have these continuous probabilities, these continuous probabilities,
+
+31
+00:12:34,644 --> 00:12:35,644
+ve
+
+32
+00:12:56,083 --> 00:13:21,643
+Bu, bu
+
+33
+00:13:23,988 --> 00:13:25,836
+Bu yüzden bunu kullanabilirsiniz.
+
+34
+00:13:43,059 --> 00:13:58,059
+We can talk about also about conditional PMFs. So we have two random variables, remember? So maybe one of them is condition. Maybe y is the condition here.
+
+35
+00:14:02,995 --> 00:14:11,375
+Probabiliteli X, given for a fixed Y, Y value.
+
+36
+00:14:11,375 --> 00:14:19,375
+So in that case, you know that Y is Yj, right?
+
+37
+00:14:19,375 --> 00:14:28,115
+So, you want to know probability of X having value Xi.
+
+38
+00:14:32,179 --> 00:14:49,379
+And from the definition of conditional probability, you remember this, I think, you should divide the joint probability by the Y's marginal probability.
+
+39
+00:14:54,484 --> 00:15:19,504
+And again, we have the standard for a fixed yj. If you sum up probabilities of all xi's, you get one. So this is clear that for each yj, it's clear from here that for each yj, you have a valid PMF.
+
+40
+00:15:30,259 --> 00:15:43,259
+So, now, if you have more than one variable, you can talk about their independence. So, do they affect each other?
+
+41
+00:15:50,868 --> 00:16:04,868
+So, if you know the value of y, if you know the value of y, does it change the probability of x having some value, right?
+
+42
+00:16:09,508 --> 00:16:11,067
+Let me color roll.
+
+43
+00:16:18,484 --> 00:16:39,484
+If it does not, so if you look at this equation, the fact that you know value, you know y is y, doesn't change the probability of x being x.
+
+44
+00:16:46,292 --> 00:16:49,292
+X and Y are independent.
+
+45
+00:16:49,292 --> 00:16:55,292
+You change Y, probability of X doesn't change.
+
+46
+00:16:55,292 --> 00:16:57,292
+That means they are independent.
+
+47
+00:16:57,292 --> 00:17:04,291
+So this is, you can go about the other way.
+
+48
+00:17:04,291 --> 00:17:10,291
+So if you change X and the probability of Y doesn't change, again, independent.
+
+49
+00:17:13,875 --> 00:17:25,875
+Now, if you work out this, you get to this other equation. So all three of these are equivalent, all four actually.
+
+50
+00:17:25,875 --> 00:17:39,875
+If the joint probability is equal to multiplication of the marginal probabilities, for all that's important.
+
+51
+00:17:40,692 --> 00:17:49,692
+for all x and for all y in their ranges, we say that x and y are independent.
+
+52
+00:17:57,203 --> 00:18:16,403
+We can also talk about conditional expectation. So, in this case, what is the expected value of x if we know y is y?
+
+53
+00:18:23,188 --> 00:18:35,508
+And what we do is for each value of x, because we are looking for the expectation of x,
+
+54
+00:18:36,428 --> 00:18:47,728
+we multiply that x with the conditional probability and that gives the expected value.
+
+55
+00:18:48,948 --> 00:18:53,448
+But what kind of expected value? Conditional expected value.
+
+56
+00:18:57,140 --> 00:19:10,059
+So, this expected value of x given y is a random variable, and it is a function of y.
+
+57
+00:19:13,619 --> 00:19:19,619
+So, when you change y, you are summing over all x's.
+
+58
+00:19:19,619 --> 00:19:26,571
+When you change y, this expected value changes. So, this is a function of y.
+
+59
+00:19:32,723 --> 00:19:51,523
+So, in a way, you can think of this as the best prediction of x, the expected value of x, given that we know that y is y.
+
+60
+00:20:00,000 --> 00:20:07,319
+We can also talk about the laws of total probability and expectation.
+
+61
+00:20:12,119 --> 00:20:19,000
+The law of total probability for random variables is
+
+62
+00:20:38,003 --> 00:20:56,123
+What does it say? If you multiply the conditional probability with the condition that y is yj of,
+
+63
+00:21:01,172 --> 00:21:04,231
+Probabiliteti x'in a'
+
+64
+00:21:05,771 --> 00:21:06,731
+ve
+
+65
+00:21:06,731 --> 00:21:11,372
+Marginal Probabiliteti y'in a'
+
+66
+00:21:11,372 --> 00:21:23,172
+Y'
+
+67
+00:21:26,708 --> 00:21:30,968
+ve also, we have the law of total expectation.
+
+68
+00:21:36,468 --> 00:21:48,508
+So, if you take the expected value of x given y, you get the expected value of x.
+
+69
+00:22:01,879 --> 00:22:09,879
+Y'
+
+70
+00:22:01,203 --> 00:22:04,183
+There is a nice example here about this.
+
+71
+00:22:05,463 --> 00:22:13,483
+Let's say you want to find the expected value of geometric distribution.
+
+72
+00:22:23,955 --> 00:22:45,955
+And if you try to do this using the normal expected value equation and using the geometric distribution PMF, mass function, it may be a bit complicated because you have the geometric series there.
+
+73
+00:22:52,788 --> 00:22:57,567
+But we can kind of use this trick.
+
+74
+00:22:57,567 --> 00:23:02,168
+You use this law of total expectation.
+
+75
+00:23:03,188 --> 00:23:03,907
+This idea.
+
+76
+00:23:08,596 --> 00:23:18,596
+ve ilk Koyntos' konularını, örneğin, remember, ne kadar dağılım?
+
+77
+00:23:18,596 --> 00:23:33,596
+Let's say, we are tossing coins, like we are doing Bernoulli trials, Koyntos' konularını,
+
+78
+00:23:36,468 --> 00:24:01,468
+Geometric distribution is used when you are interested in the number of trials for the first success, right? Let's say, head is a success. So, your first head, how many trials you will need to get to it?
+
+79
+00:24:11,476 --> 00:24:28,476
+ve bu güzel bir şey, bu bir şey, bu bir şey, ilk bir şey, koin tos, bu, y'de y kullanıyoruz, y'e h, y'e h, y'e h.
+
+80
+00:24:37,652 --> 00:24:59,652
+The first coin tos being heads is p. So p is the geometric distribution's parameter. And probability of first coin tos being tails is 1 minus p.
+
+81
+00:25:08,948 --> 00:25:30,448
+ve, şimdi, if the first coin tos is heads, or expected value for x, number of tos we need, for a head is just 1, we already found it, right?
+
+82
+00:26:04,692 --> 00:26:23,692
+Bu, koin tosasılık, we will need for the next head is still the same, because geometric distribution has this property called memorialist property.
+
+83
+00:26:31,667 --> 00:26:38,667
+ve
+
+84
+00:27:08,596 --> 00:27:22,876
+So, this gives you a nice simple equation for e x, expected value of x. And you can find it from there.
+
+85
+00:27:39,635 --> 00:27:45,135
+Now, similar to that, there is actually a low total variance.
+
+86
+00:27:50,355 --> 00:27:51,355
+Um,
+
+87
+00:27:56,915 --> 00:28:23,819
+First, we can discuss, we can define a conditional variance. So, condition is y equals to y. If y is equal to y, what is the variance of x, right? And these are very similar to our...
+
+88
+00:28:24,756 --> 00:28:31,115
+Varyans equations we already know. We just add the conditions here.
+
+89
+00:28:36,723 --> 00:28:59,963
+So, expected value of x², with the condition that y is y, minus expected value of x given y², right? We know this equation. It's just that we added these conditions.
+
+90
+00:29:03,604 --> 00:29:05,604
+So, that's conditional variance.
+
+91
+00:29:05,604 --> 00:29:11,604
+Now, the law of total variance is interesting.
+
+92
+00:29:11,604 --> 00:29:21,604
+It says that variance of x is equal to expected value of variance.
+
+93
+00:29:21,604 --> 00:29:27,604
+Here, the first term. Second term is variance of expected value.
+
+94
+00:29:28,852 --> 00:29:32,204
+ve bu konuları,
+
+95
+00:29:36,948 --> 00:30:00,108
+Um, so you can think maybe this may be more into an intuition about this is you are kinda summing the varians within groups and between group means.
+
+96
+00:30:05,619 --> 00:30:12,539
+Burada bir küçük bir data set var.
+
+97
+00:30:14,500 --> 00:30:17,199
+Çekmek istiyorsanız bu da bu da at home.
+
+98
+00:30:24,084 --> 00:30:46,084
+So, x is the height of an individual, y is the country, so y can be a, b, or c. And country a has only three individuals and they have these heights.
+
+99
+00:30:47,220 --> 00:30:50,220
+So, we can easily see the expected value.
+
+100
+00:30:51,000 --> 00:30:53,320
+Similarly, ctrl b, ctrl c.
+
+101
+00:31:08,051 --> 00:31:15,692
+Now we will need to calculate the variances for these and you can check this equation, check this formula.
+
+102
+00:31:21,491 --> 00:31:44,491
+Şimdi, we can also talk about functions of two random variables. So, notice that we are repeating ourselves. We did very similar things for probabilistic events of two variables.
+
+103
+00:31:52,723 --> 00:31:58,723
+We are kinda moving the logic into random variables from events.
+
+104
+00:32:06,483 --> 00:32:25,543
+So, let's say z is a function of random variables x and y, so z is equal to g of x and y, and let's say you want to find probability of z being z.
+
+105
+00:32:29,779 --> 00:32:30,539
+Um,
+
+106
+00:32:34,387 --> 00:32:37,268
+So you need a mess function.
+
+107
+00:32:50,900 --> 00:33:15,759
+Probabilité is just, you will sum for all possible values of xi and yj in the az, which is az is this set where this function gives you some z.
+
+108
+00:33:18,355 --> 00:33:23,355
+So, basically you are summing over all possible values of z.
+
+109
+00:33:26,644 --> 00:33:29,983
+And for all possible values of z in a way,
+
+110
+00:33:31,163 --> 00:33:34,503
+you are calculating the joint probability.
+
+111
+00:33:34,884 --> 00:33:37,564
+You are summing the joint probability actually.
+
+112
+00:33:39,384 --> 00:33:43,144
+And that gives you the function.
+
+113
+00:33:51,763 --> 00:33:56,083
+Now, we can write also the LOTUS for this.
+
+114
+00:33:58,403 --> 00:34:02,423
+And LOTUS is about expected value, remember?
+
+115
+00:34:03,423 --> 00:34:08,523
+Expected value of this function is,
+
+116
+00:34:09,983 --> 00:34:15,384
+you will sum for all possible values of x and y.
+
+117
+00:34:17,268 --> 00:34:24,268
+You will multiply that function with the mass, the probability mass.
+
+118
+00:34:38,643 --> 00:35:04,395
+One interesting function is just summing x and y. If you sum x and y and get the expected value, that's equal to expected value of x and expected value of y. Summed up.
+
+119
+00:35:04,659 --> 00:35:11,899
+So you have this nice linear equation.
+
+120
+00:35:12,899 --> 00:35:14,779
+So expectation is linear.
+
+121
+00:35:27,668 --> 00:35:28,428
+Um...
+
+122
+00:35:32,596 --> 00:35:57,275
+Let's say, let's do an example here. So example is finding maximum and minimum. Let's say x and y are independent, discrete, random variables. And z is the max of x and y.
+
+123
+00:35:58,771 --> 00:36:01,371
+W is the minimum of x and y.
+
+124
+00:36:02,371 --> 00:36:08,711
+So the function g is max here, min is, g is min here.
+
+125
+00:36:11,192 --> 00:36:11,711
+And
+
+126
+00:36:21,684 --> 00:36:30,124
+Let's say we want to find the cumulative distribution function for z, for the max.
+
+127
+00:36:34,228 --> 00:36:52,988
+Now, this looks a bit confusing at first. Max is not a usual function. In this case, going from the definition might be a good idea.
+
+128
+00:37:07,572 --> 00:37:29,372
+Cumulative distribution definition is f of z should be, that means probability of z being less than or equal to z, and z is maximum of x and y.
+
+129
+00:37:31,452 --> 00:37:33,892
+And since this is maximum,
+
+130
+00:37:35,572 --> 00:37:42,380
+Bu, x ve y y bu kadar daha az.
+
+131
+00:37:55,860 --> 00:37:57,860
+ve, since they are sorry,
+
+132
+00:38:02,612 --> 00:38:21,012
+Since they are independent, we can now write the joint probability as a multiplication of marginals, and less than or equal to is just.
+
+133
+00:38:26,931 --> 00:38:46,591
+Cumulative distribution value. So you have the cumulative distribution value of x, being z, and y being z. So that's how you get CDF of max.
+
+134
+00:38:49,811 --> 00:38:57,311
+ve similarly, you can find minimum, so you can research this yourself or take a look at yourself.
+
+135
+00:39:03,380 --> 00:39:13,780
+Şimdi, so far we have been actually talking about discrete random variables.
+
+136
+00:39:16,820 --> 00:39:20,579
+Let's think about continuous random variables.
+
+137
+00:39:21,000 --> 00:39:26,180
+How would they be if we think joint versions?
+
+138
+00:39:26,360 --> 00:39:28,340
+We have more than one random variable.
+
+139
+00:39:32,275 --> 00:39:46,275
+As usual, instead of probability mass function in the discrete, in continuous distributions, we have density, probability density function.
+
+140
+00:39:46,275 --> 00:39:52,275
+And instead of summation, we will use integration.
+
+141
+00:39:52,275 --> 00:40:00,000
+And probability mass function or discrete case, in the discrete case,
+
+142
+00:40:00,000 --> 00:40:24,319
+Probabilitesi, probabilitesi, non-zero values, we will talk about x being value x, but in continuous, we are talking about ranges, and we are integrating in the range, we are integrating,
+
+143
+00:40:26,356 --> 00:40:28,356
+ve integratiyon distansı.
+
+144
+00:40:32,083 --> 00:40:45,083
+Now, we say that x and y are jointly continuous distributions.
+
+145
+00:40:45,083 --> 00:40:57,083
+If we can use this double integral, and if we integrate the density,
+
+146
+00:40:59,027 --> 00:41:09,427
+over these two random variables, and if that gives you the probability of x and y being in that set.
+
+147
+00:41:12,127 --> 00:41:18,727
+The probabilities are like densities are always non-zero, sorry, non-negative.
+
+148
+00:41:19,727 --> 00:41:22,927
+And if you do this double integral,
+
+149
+00:41:25,172 --> 00:41:36,192
+...of this density in the whole real line, meaning from minus infinity to positive infinity, you get a 1.
+
+150
+00:41:54,164 --> 00:42:18,003
+Now, remember how we visualized the discrete joint distribution, joint distributions as these points in three-dimensional space.
+
+151
+00:42:20,467 --> 00:42:23,268
+So this was discrete probability.
+
+152
+00:42:24,067 --> 00:42:25,847
+These were discrete probabilities.
+
+153
+00:42:29,847 --> 00:42:34,847
+In a similar way, we can visualize...
+
+154
+00:42:41,844 --> 00:42:46,844
+Density, of the continuous random variables.
+
+155
+00:42:46,844 --> 00:42:51,844
+So you have, let's say, the joint density, F.
+
+156
+00:42:54,844 --> 00:43:00,844
+And F gives you this surface in two dimension.
+
+157
+00:43:03,844 --> 00:43:05,844
+You have this surface.
+
+158
+00:43:09,907 --> 00:43:11,371
+ve
+
+159
+00:43:15,731 --> 00:43:19,532
+Bu double integral in the range gives you the probability.
+
+160
+00:43:24,916 --> 00:43:41,316
+Now, similar to what we have done already in the discrete joints, we can describe marginal and conditional densities.
+
+161
+00:43:45,316 --> 00:43:51,148
+A marginal density is when you integrate over the real line.
+
+162
+00:43:52,628 --> 00:43:54,628
+ve joint density.
+
+163
+00:43:54,628 --> 00:44:01,628
+So, if you integrate over y, you get the marginal x.
+
+164
+00:44:01,628 --> 00:44:07,628
+And the conditional density is,
+
+165
+00:44:07,628 --> 00:44:13,628
+you know that y is y.
+
+166
+00:44:19,476 --> 00:44:36,476
+So, with that condition, the probability of x, right? Probability density of x. And similar to probabilities, you have these equations.
+
+167
+00:44:40,340 --> 00:44:46,340
+You will divide the joint density with the marginal density.
+
+168
+00:44:48,340 --> 00:44:53,340
+And again, you can think about, you can talk about independence.
+
+169
+00:44:54,340 --> 00:45:04,012
+We say that x and y are independent if joint density is the multiplication of marginal densities.
+
+170
+00:45:19,188 --> 00:45:22,188
+Do we have any questions up to this point?
+
+171
+00:46:26,547 --> 00:46:30,147
+Okay, let's have a break. Let's have a break till 10.
+
+172
+01:01:08,467 --> 01:01:10,467
+Arkadaşlar, merhabalar tekrardan.
+
+173
+01:01:15,603 --> 01:01:19,083
+So, let's look at some examples.
+
+174
+01:01:37,331 --> 01:02:03,971
+Let's look at some examples and what we learned so far. We learned that we can integrate the density, joint density, and that should give us joint probability.
+
+175
+01:02:15,443 --> 01:02:23,644
+Let's look at this example. Let's say x and y have this joint density.
+
+176
+01:02:27,764 --> 01:02:45,764
+ve, if x is between 0 and 1, ve y is between 0 and 1, ve, the density is x plus cy, ve, ve, it's just 0 otherwise.
+
+177
+01:02:53,172 --> 01:03:19,172
+This is quite simple actually. Remember that if we integrate the density, if we take the double integral over the whole line, so from minus infinity to positive infinity,
+
+178
+01:03:19,827 --> 01:03:21,407
+It should be 1, right?
+
+179
+01:03:21,887 --> 01:03:25,268
+If you sum the density,
+
+180
+01:03:25,947 --> 01:03:28,087
+if you integrate density, you get 1.
+
+181
+01:03:28,867 --> 01:03:31,628
+If you sum the probabilities, you get 1, similar.
+
+182
+01:03:33,047 --> 01:03:34,748
+So we just use that,
+
+183
+01:03:34,887 --> 01:03:37,027
+but notice that instead of minus infinity,
+
+184
+01:03:37,188 --> 01:03:38,288
+we are using 0.
+
+185
+01:03:39,188 --> 01:03:41,907
+And instead of positive infinity,
+
+186
+01:03:42,208 --> 01:03:43,788
+we use 1.
+
+187
+01:03:44,708 --> 01:03:46,288
+And that's because
+
+188
+01:03:47,152 --> 01:04:02,652
+Before zero, this density is zero. And so, integration of zero is just zero. So, we are kind of ignoring everything before zero.
+
+189
+01:04:04,652 --> 01:04:09,652
+And you just need to calculate this integral and you will get your C.
+
+190
+01:04:15,188 --> 01:04:24,188
+Let's say we found C as 3 over 4, 2 over 3.
+
+191
+01:04:24,188 --> 01:04:36,188
+Now, let's say we want to find the probability that x is between 0 and 1 over 2 and y is between 0 and 1 over 2.
+
+192
+01:04:36,188 --> 01:04:39,188
+So, we want the joint probability.
+
+193
+01:04:42,036 --> 01:05:07,036
+We will just use the integral between these boundaries. We first integrate by the x and then by the y. So, you already know this, but if you have a double integral, you can start from the middle.
+
+194
+01:05:08,532 --> 01:05:11,592
+And do it as a single integral.
+
+195
+01:05:12,912 --> 01:05:16,152
+So we can do that as.
+
+196
+01:05:17,112 --> 01:05:19,711
+So we integrate over dx.
+
+197
+01:05:22,192 --> 01:05:24,032
+We integrate over.
+
+198
+01:05:25,172 --> 01:05:27,032
+Using dx let's say.
+
+199
+01:05:28,032 --> 01:05:29,472
+And that gives you.
+
+200
+01:05:30,211 --> 01:05:32,211
+1 over 8 plus y.
+
+201
+01:05:32,751 --> 01:05:33,892
+Divided by 3.
+
+202
+01:05:35,123 --> 01:05:40,903
+And when we integrate over x, in a way we are getting rid of x.
+
+203
+01:05:41,423 --> 01:05:43,123
+Notice that there is no x here.
+
+204
+01:05:44,503 --> 01:05:49,763
+And now at this point we can just do another single integration over y.
+
+205
+01:05:50,923 --> 01:05:54,443
+And that will give you our answer.
+
+206
+01:05:59,699 --> 01:06:27,596
+Um, again, we talked about marginal densities. If you integrate joint density over the whole real line, you get marginal density. Um, we have a numeric example here, so let's say joint is this.
+
+207
+01:06:27,956 --> 01:06:31,956
+x plus 2 over 3 y.
+
+208
+01:06:33,956 --> 01:06:40,956
+And so x is between 0 and 1, y is between 0 and 1.
+
+209
+01:06:41,956 --> 01:06:51,532
+So this is joint, let's say we want to find marginal density x and marginal density of y.
+
+210
+01:06:52,884 --> 01:07:05,344
+And remember, finding marginal densities is you are integrating over the variable you want to get rid of.
+
+211
+01:07:06,043 --> 01:07:11,803
+So to find the marginal density of x, we want to get rid of y.
+
+212
+01:07:13,803 --> 01:07:16,403
+So we are integrating over y.
+
+213
+01:07:20,115 --> 01:07:36,115
+again, from minus infinity to positive infinity, but the integration before 0 and after 1 will be just 0, so we are integrating between 0 and 1.
+
+214
+01:07:36,115 --> 01:07:42,115
+You need to be very careful about these boundaries.
+
+215
+01:07:42,115 --> 01:07:47,532
+Okay, make sure you are using the right boundary.
+
+216
+01:07:50,579 --> 01:07:52,920
+And then you do the integration.
+
+217
+01:07:53,920 --> 01:07:55,900
+This gets rid of y.
+
+218
+01:07:56,219 --> 01:07:58,759
+And you are left with only x.
+
+219
+01:07:59,539 --> 01:08:03,539
+And that is your density of x.
+
+220
+01:08:04,679 --> 01:08:13,539
+And obviously, this is valid only in the 0 and 1 range.
+
+221
+01:08:14,539 --> 01:08:16,760
+You need to say that.
+
+222
+01:08:17,427 --> 01:08:24,427
+0 otherwise. So this should be a piecewise function. Piece 1, piece 2.
+
+223
+01:08:30,387 --> 01:08:36,167
+And finding y is marginal of y is similar, so I am moving on.
+
+224
+01:08:39,828 --> 01:09:04,888
+In this example, let's see, density is C times x square y. This is joint density. Both y and x are between 0 and 1, but we have this. What does this say?
+
+225
+01:09:06,355 --> 01:09:08,355
+Y neye ihtiyacımız var.
+
+226
+01:09:13,684 --> 01:09:16,123
+Otherwise, density is zero.
+
+227
+01:09:18,444 --> 01:09:32,244
+So first, let's find the range of x, y, and find the c, and then find the marginal densities.
+
+228
+01:09:33,444 --> 01:09:38,564
+Now, this corresponds to a triangular.
+
+229
+01:09:40,180 --> 01:09:46,180
+Çünkü x is between 0 and 1.
+
+230
+01:09:48,180 --> 01:09:50,940
+Y is between 0 and 1.
+
+231
+01:09:55,412 --> 01:09:59,692
+But between x and y, you have this relation.
+
+232
+01:10:00,872 --> 01:10:04,112
+Y needs to be x or less.
+
+233
+01:10:04,112 --> 01:10:06,672
+So that gives you this triangle.
+
+234
+01:10:08,552 --> 01:10:09,391
+Right?
+
+235
+01:10:10,212 --> 01:10:12,652
+So this is the valid range.
+
+236
+01:10:23,315 --> 01:10:49,315
+Now, what does this say? The constant c, what is the constant c, right? So, again, the double integral should be equal to 1. We are just putting the...
+
+237
+01:10:49,395 --> 01:10:51,395
+Density, joint density.
+
+238
+01:10:52,395 --> 01:11:05,815
+The important trick here is, let's say x is from 1 to 0, now y needs to be from 0 to x, right?
+
+239
+01:11:07,055 --> 01:11:10,956
+So y needs to be less than or equal to x.
+
+240
+01:11:12,175 --> 01:11:15,716
+So the boundary is the key here.
+
+241
+01:11:18,228 --> 01:11:23,228
+ve if you solve this integral, you should get c equals to 10.
+
+242
+01:11:33,011 --> 01:11:58,771
+And similarly, you can find marginal densities. So x is between 0 and 1, so marginal density of x. We will integrate over y. We want to get rid of y, remember. But y, again,
+
+243
+01:11:59,155 --> 01:12:02,595
+y should be from 0 to x.
+
+244
+01:12:09,395 --> 01:12:20,115
+And similarly, to find y, you need to integrate over x to get rid of x's.
+
+245
+01:12:22,235 --> 01:12:27,235
+Again, the range, now in this case,
+
+246
+01:12:56,564 --> 01:12:58,764
+Why are we integrated from y?
+
+247
+01:13:08,564 --> 01:13:35,564
+Çünkü x is between y and 1, right? In a way, we can kind of use these boundary definitions. Sorry. Sorry. So, when you are thinking about the axis range, you can kind of...
+
+248
+01:13:36,212 --> 01:13:37,812
+İşte bu.
+
+249
+01:13:40,052 --> 01:13:41,732
+Ve bu.
+
+250
+01:13:41,732 --> 01:13:42,972
+Y ve 1.
+
+251
+01:13:43,752 --> 01:13:45,532
+So, between y ve 1.
+
+252
+01:13:48,072 --> 01:13:50,532
+When you think about y.
+
+253
+01:13:52,052 --> 01:13:54,272
+The range of y.
+
+254
+01:13:58,036 --> 01:14:08,296
+You can kind of think about this part and y is between 0 and x, right? y is between 0 and x.
+
+255
+01:14:16,307 --> 01:14:17,307
+Okay.
+
+256
+01:14:20,307 --> 01:14:30,307
+We also talked about joint cumulative distribution functions, joint CDF.
+
+257
+01:14:33,307 --> 01:14:34,307
+So,
+
+258
+01:14:38,307 --> 01:14:40,307
+how do we define this?
+
+259
+01:14:45,524 --> 01:15:07,824
+Now, if you want to find, if you want, so, joint density, so joint distribution, joint cumulative distribution, is defined as probability of x being x or less, and y being y or less.
+
+260
+01:15:10,420 --> 01:15:18,500
+Bu definiçin, bu neçeride
+
+261
+01:15:21,684 --> 01:15:41,184
+Now, since we will be using x and y into boundaries here, instead of dx or dy, we need to use some others.
+
+262
+01:15:44,692 --> 01:16:11,072
+Dummy variables. These are called dummy because after the integration you will not see these dummy variables. They will be erased by the integration. So instead of let's say x, we will use u. Instead of y, we will use v, let's say. So du and dv.
+
+263
+01:16:14,003 --> 01:16:27,283
+Şimdi, density ve cumulative distribution are related.
+
+264
+01:16:41,235 --> 01:16:55,235
+You can just take the derivative with respect to x and y and get the density. So these two are related.
+
+265
+01:16:58,963 --> 01:17:01,163
+And we have also seen this.
+
+266
+01:17:03,463 --> 01:17:06,743
+We have this nice rectangle probability thing.
+
+267
+01:17:07,884 --> 01:17:18,163
+So probability of X being X1 and X2, Y being Y1 and Y2, is equal to joint...
+
+268
+01:17:28,083 --> 01:17:28,907
+Ha!
+
+269
+01:18:14,163 --> 01:18:21,163
+X being between X1 and X2, Y being Y1 and Y2.
+
+270
+01:18:21,163 --> 01:18:29,163
+You can have this nice rectangular.
+
+271
+01:18:34,804 --> 01:18:36,235
+Equation
+
+272
+01:18:43,539 --> 01:18:58,479
+We have seen the conditional density, or we can, we talked about very shortly, and conditional cumulative distribution.
+
+273
+01:19:02,355 --> 01:19:03,355
+Evet.
+
+274
+01:19:09,076 --> 01:19:11,115
+Again, you have integrals everywhere.
+
+275
+01:19:17,332 --> 01:19:25,332
+First, you need to define conditional density, which is joint density divided by marginal density.
+
+276
+01:19:28,332 --> 01:19:35,332
+And then, now you can obtain the conditional probability by the derivative of this.
+
+277
+01:19:38,332 --> 01:19:41,195
+Again, you can obtain the
+
+278
+01:19:41,363 --> 01:19:45,363
+cdf by the derivative of this.
+
+279
+01:19:45,363 --> 01:19:50,363
+You can obtain expected value by the derivative of this.
+
+280
+01:19:50,363 --> 01:19:54,363
+And we already seen this equation.
+
+281
+01:19:54,363 --> 01:19:58,363
+So, first you need to obtain this conditional density.
+
+282
+01:20:02,676 --> 01:20:08,356
+ve diğerlerden çok farklı gibi bir şey var.
+
+283
+01:20:11,316 --> 01:20:15,396
+Bu bir faktör.
+
+284
+01:20:20,692 --> 01:20:26,192
+So, let's see what we have here. We have this joint density.
+
+285
+01:20:29,072 --> 01:20:42,092
+3x² divided by 2 plus 3y² plus 2xy, 4x between 0 and 1, y between 0 and 2.
+
+286
+01:20:42,092 --> 01:20:44,092
+So,
+
+287
+01:20:44,948 --> 01:20:58,923
+Let's try to find the conditional density of x given y. Now, remember that...
+
+288
+01:21:05,684 --> 01:21:14,224
+So, to find the conditional density, we need to divide the joint by the marginal.
+
+289
+01:21:16,944 --> 01:21:20,604
+And in that example, we are already given the joint.
+
+290
+01:21:21,944 --> 01:21:23,564
+Joint density is given.
+
+291
+01:21:24,244 --> 01:21:27,884
+So, we need to find the marginal and divide them, right?
+
+292
+01:21:29,463 --> 01:21:30,104
+So,
+
+293
+01:21:33,811 --> 01:21:56,311
+So, first we will find the marginal, marginal density of y. For that, we need to get rid of x. So, we are integrating over x. X is between 0 and 1. We are integrating the joint and we should get this.
+
+294
+01:22:00,532 --> 01:22:26,931
+ve now, uh, the conditional density is the just, is just the division, right? So the upper part here is, uh, the joint, and the lower part, uh, this guy, right? We just calculated them.
+
+295
+01:22:36,532 --> 01:22:43,532
+Ve şimdi, bu condisional density, bu konuları dağılım, biz de yapabilirsiniz.
+
+296
+01:23:03,731 --> 01:23:28,731
+So, again, we have our nice integration from 1 to 1 over 2. We are integrating over x. We want to find probability x of the x because, but we are integrating the conditional density we just found here.
+
+297
+01:24:25,043 --> 01:24:30,844
+So, we also have independence of these continuous random variables.
+
+298
+01:24:32,043 --> 01:24:40,043
+And the definition is, if the joint density is multiplication of marginal densities,
+
+299
+01:24:44,543 --> 01:24:51,543
+X and Y are independent. And there is a lot of different versions of this. You can check the
+
+300
+01:24:52,020 --> 01:25:00,020
+CDFs, you can check whether conditional density is equal to marginals.
+
+301
+01:25:10,963 --> 01:25:21,764
+I am not sure if this last two is a two-way implication. I am not sure. You should check yourself.
+
+302
+01:25:28,595 --> 01:25:49,715
+So, for a quick test, you can just find the marginal densities, if you don't have them, and check whether the multiplication of marginal densities is equal to joint density.
+
+303
+01:25:51,715 --> 01:25:53,715
+And if you have...
+
+304
+01:25:54,420 --> 01:26:09,163
+As a tip, if you have something like this, so the region restricts variables, then they are not independent because the x's value...
+
+305
+01:26:12,307 --> 01:26:14,847
+Y's values.
+
+306
+01:26:15,347 --> 01:26:16,488
+Directly here.
+
+307
+01:26:16,648 --> 01:26:18,007
+We can see that
+
+308
+01:26:18,007 --> 01:26:22,927
+X and Y
+
+309
+01:26:22,927 --> 01:26:24,448
+are dependent.
+
+310
+01:26:32,564 --> 01:26:40,564
+As an example, let's say we want to determine whether x and y are independent.
+
+311
+01:26:42,564 --> 01:26:46,564
+And let's say marginal density is given only.
+
+312
+01:27:00,051 --> 01:27:00,875
+Ağılım,
+
+313
+01:27:09,427 --> 01:27:21,227
+So, the marginal density is 2 e to the minus x minus y, for both x and y larger than 0.
+
+314
+01:27:24,367 --> 01:27:34,567
+Now, first we need to find the marginal densities, and marginal densities are like this.
+
+315
+01:27:36,275 --> 01:27:43,956
+U here is the unit step function, meaning it becomes 1 at 0.
+
+316
+01:27:50,899 --> 01:27:53,219
+Before 0, it's 0.
+
+317
+01:27:59,283 --> 01:28:02,283
+Similarly,
+
+318
+01:28:05,908 --> 01:28:08,908
+Marginal density of y is this.
+
+319
+01:28:11,568 --> 01:28:14,248
+Again, we have the step function.
+
+320
+01:28:16,007 --> 01:28:22,528
+Now, if you multiply this, you get the joint density.
+
+321
+01:28:24,208 --> 01:28:30,708
+So, these two random variables are independent.
+
+322
+01:28:33,876 --> 01:28:40,236
+The second example, X and Y have this and.
+
+323
+01:28:45,203 --> 01:28:51,023
+We also have this boundary. So, x and y, the boundaries are related.
+
+324
+01:29:23,539 --> 01:29:49,644
+Bu, bu
+
+325
+01:29:57,235 --> 01:30:11,211
+We also have low of total probability, low of total expectation, and low of total variance.
+
+326
+01:30:16,083 --> 01:30:20,884
+So this is kind of, this looks weird.
+
+327
+01:30:22,064 --> 01:30:27,104
+Expectation, expected value of expected value of y given x.
+
+328
+01:30:28,323 --> 01:30:37,563
+So it is just, you will integrate over x.
+
+329
+01:30:37,563 --> 01:30:40,903
+So you are taking the expected value of.
+
+330
+01:30:41,427 --> 01:30:44,188
+bu içindeki içindeki
+
+331
+01:30:48,372 --> 01:30:50,772
+You are taking the expected value of
+
+332
+01:31:00,532 --> 01:31:01,532
+This guy.
+
+333
+01:31:18,644 --> 01:31:38,203
+There is an example here. So let's say x is uniform between 1 and 2. Y given x is exponential.
+
+334
+01:31:44,467 --> 01:31:47,587
+is exponential in x
+
+335
+01:31:52,500 --> 01:32:09,379
+So, find the expected value of y and variance of y. So, we are given x directly. We are given the conditional random variable.
+
+336
+01:32:25,587 --> 01:32:31,807
+Now, obviously, to find expected value of y, we will use this.
+
+337
+01:32:34,887 --> 01:32:40,147
+So, we need to first find expected value of y given x.
+
+338
+01:32:43,147 --> 01:32:49,188
+After we find it, we can just integrate to get the outer expectation.
+
+339
+01:32:49,887 --> 01:32:52,847
+And this gives you ln2.
+
+340
+01:32:53,908 --> 01:33:04,988
+And to find variance, we can use this equation, expected value of variance, variance of expected value.
+
+341
+01:33:06,427 --> 01:33:10,448
+Again, you will get to the variance.
+
+342
+01:33:17,587 --> 01:33:42,987
+Um, we have also seen the LOTUS for two variables, which was for any function g of x, to get the expected value, you integrate g of x y, you integrate over x and y, that g of x and y,
+
+343
+01:33:43,667 --> 01:33:45,667
+ve joint density.
+
+344
+01:33:50,667 --> 01:33:53,667
+Ve an example here.
+
+345
+01:33:55,667 --> 01:33:58,667
+Joint density is x plus y.
+
+346
+01:33:59,667 --> 01:34:04,667
+Range is between 0 and 1 for both x and 1.
+
+347
+01:34:05,667 --> 01:34:09,667
+So we want to find, let's say, x times y.
+
+348
+01:34:14,420 --> 01:34:18,619
+Now, it's very simple actually, you take the double integral,
+
+349
+01:34:22,515 --> 01:34:28,876
+x, y is, or g of x, y, right?
+
+350
+01:34:33,363 --> 01:34:39,963
+and x plus y is or density, joint density.
+
+351
+01:35:01,460 --> 01:35:17,460
+A lot of these are like we are repeating the same ideas for events, for discrete random variables, for continuous random variables.
+
+352
+01:35:17,460 --> 01:35:24,460
+We kind of have the same or similar let's say equations.
+
+353
+01:35:31,636 --> 01:35:37,756
+So, we have total lows, total low probability expectation variance.
+
+354
+01:35:37,756 --> 01:35:44,115
+We are talking about independence, conditionals, marginals, joints.
+
+355
+01:35:49,395 --> 01:35:51,395
+ve aynı zamanda, aslında.
+
+356
+01:36:15,828 --> 01:36:21,788
+The equation is like from minus infinity to positive infinity.
+
+357
+01:36:25,728 --> 01:36:37,448
+But in a real application, you need to consider where x is defined.
+
+358
+01:36:37,588 --> 01:36:43,068
+So instead of minus infinity, you may need to write 0 or 1 or whatever.
+
+359
+01:36:45,076 --> 01:36:49,336
+So, don't trip yourself, don't make a mistake.
+
+360
+01:36:51,655 --> 01:36:57,456
+Other than that, let's finish today with this.
+
+361
+01:37:01,095 --> 01:37:05,916
+I want to remind you that you need to study from the book for this course.
+
+362
+01:37:08,532 --> 01:37:17,532
+I'm just going over things, I am summarizing, I'm just overbeaving.
+
+363
+01:37:18,532 --> 01:37:26,532
+So, you need to study from the book, you need to do the problems, exercises.
+
+364
+01:37:27,532 --> 01:37:29,532
+Any questions?
+
+365
+01:37:33,235 --> 01:37:41,735
+Tamam, if there is no question, I will finish today's lecture. See you next week.
