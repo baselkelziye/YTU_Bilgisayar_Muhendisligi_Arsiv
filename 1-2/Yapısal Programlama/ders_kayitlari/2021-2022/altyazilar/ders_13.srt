@@ -1,0 +1,3971 @@
+1
+00:01:29,939 --> 00:01:30,899
+Birer günaydın.
+
+2
+00:01:38,355 --> 00:02:04,536
+Günaydın hocam. Nasılsın, iyisin? İyiyim hocam, siz nasılsınız? Sağ olasın, ben deyim. Daha kimse gelmemiş. Evet hocam. Kış hocam, kışın artık yataktan kalkmak çok zor. Zor, hani eve gitmek, evden çıkıp okula gitmek de herhalde çok zor. Arkadaşlar, buz gibi çünkü. Aynen. İki kez hastalandım.
+
+3
+00:02:05,171 --> 00:02:15,632
+Hala dünatta tekrar test aldılar benden COVID için. Negatif çıktı da. İnsanlar hasta oldukları için bile oldukları yerden kalkamıyorlar.
+
+4
+00:02:21,591 --> 00:02:25,031
+Şu anda ben de hasta olmuşum ama ben ikini nezle sadece hocam. Sorunu yok.
+
+5
+00:02:25,031 --> 00:02:32,752
+Ben de nezle diye yazdı doktor şeye. Teşhis mi artık tanımı neyse.
+
+6
+00:02:33,491 --> 00:02:50,451
+Hatta test de yaptılar dün ayrıca. Çünkü öksürük var, ondan sonra burun tıkanıyor, ondan sonra nefes alamıyorum. Hatta ders alırken öğrenci dedi, hocam nefesinizin sesi çok şey, derinden nefes alıyorsunuz, zorlanıyorsunuz. Aynen öyle dedi.
+
+7
+00:02:52,351 --> 00:02:55,132
+Nefes darlığı hocam çok zor, gerçek nefes darlığı zor.
+
+8
+00:02:58,051 --> 00:03:00,351
+Hayırlısı bakalım, inşallah bugünlerde geçer.
+
+9
+00:03:01,331 --> 00:03:04,192
+İnşallah hocam geçecek ya artık. Hani bitecek ya başvuruşluk gibi.
+
+10
+00:03:07,192 --> 00:03:18,671
+Çok bir şey kalmadı da. İşte şu mutasyondur, şudur, budur. İnsanlar hala bir de yeterince bir nişlenme olmadı. Bunların hepsi üst üste geliyor.
+
+11
+00:03:21,843 --> 00:03:25,183
+Ocak uzadıkça bilinçsizlik artıyor, bilinç artmıyor tam tersine.
+
+12
+00:03:25,443 --> 00:03:39,103
+Doğru. Yani nasıl olsa aşı oldum deyip herkes dışarı çıkıyor. Ondan sonra veya bir şey olmaz diyor. En fazla grip gibi atlatırım diyorlar. O da ayrı bir dava.
+
+13
+00:03:45,556 --> 00:04:06,036
+Evet, üç kişi olduk. Onur da geldi. Yavaş yavaş başlayalım. Şimdi bugün iki veya üç soru çözeceğim. Bakayım kaç taneymiş. Bir tane binary tree çözeceğiz. Bir tane dosyalarla alakalı örnek yapalım.
+
+14
+00:04:09,683 --> 00:04:21,443
+Terminal Rekürsler'den üç örneğim var. Bir de threadlerle alakalı biraz bilgilendirme yapacağım. Thread'ten biz bu derste sizi sınavda falan mesul tutmuyoruz da.
+
+15
+00:04:22,783 --> 00:04:32,943
+C'de thread nasıl yazılır öğrenmeniz lazım. Çünkü işletim sistemi dersinde onunla alakalı proje veya ödev falan veriyorlar.
+
+16
+00:04:32,943 --> 00:04:34,504
+Şimdiden.
+
+17
+00:04:34,995 --> 00:04:41,995
+Mantığını öğrenmek iyi olur. Başlayalım biz.
+
+18
+00:04:41,995 --> 00:04:52,995
+Şimdi ilk örneğim şu. Bir stringi recursive bir fonksiyonla tersine çevireceğiz.
+
+19
+00:04:52,995 --> 00:04:59,883
+Şöyle bir kodu açayım. Bu basit bir şey zaten.
+
+20
+00:05:01,267 --> 00:05:03,507
+Başka başka şekillerde de olabilir.
+
+21
+00:05:12,596 --> 00:05:18,196
+Reverse diye bizim şeyimiz olsun ve buraya string'in pointer'ını alalım.
+
+22
+00:05:21,524 --> 00:05:42,004
+Şimdi şöyle düşünün arkadaşlar. Bir stringin sonuna geldiğini nasıl anlıyoruz? Backslash 0'a gelip görüyorsak sonundayız demektir. Backslash 0'da ise demek ki okunacak bir karakter vardır. O zaman diyorum ki if str'nin gösterdiği yerdeki değer.
+
+23
+00:05:43,187 --> 00:05:57,788
+Bu Null ise, yani boş karakter ise if'in dışına gidecek. Eğer boş karakter değilse içeriye girip, içeride istersek şunu da yazabiliriz. İşte eşit değil, ne bileyim backslash 0, şunu yazabiliriz veya Null yazabiliriz ama gerek yok.
+
+24
+00:05:58,548 --> 00:06:02,067
+Bu bir karakter ise reverse diyorum.
+
+25
+00:06:04,403 --> 00:06:23,744
+Recursive fonksiyonlar biliyorsunuz sondan geriye doğru topluyor. Şimdi 5 faktöreli hesaplarken önce ne hesaplanıyor? Aslında 1. 1 faktöreli hesaplanıyor. 1 faktöreli sonra 2, sonra 3'ü. Yani biz hep n faktöreli çağırdığında içeriden n-1 faktöreli çağırıyoruz. Burada da aynı onun gibi yapacağım.
+
+26
+00:06:24,063 --> 00:06:31,283
+Reverse diyeceğim. str'nin gösterdiği adresin bir sonrakisini göster. Şimdi bu gidecek, gidecek, gidecek.
+
+27
+00:06:32,468 --> 00:06:47,568
+String'in sonuna kadar kendini çağıracak. Ne zaman ki bu şey bitti? Şurada printf diyelim. %c diyelim. Karakter yazılır.
+
+28
+00:07:13,172 --> 00:07:21,172
+Eğitim.
+
+29
+00:07:21,172 --> 00:07:23,172
+Masa üstüne.
+
+30
+00:07:23,172 --> 00:07:26,172
+Hafta 11 diye.
+
+31
+00:07:26,172 --> 00:07:31,172
+Hatta masa üstüne açmasam. Neyse şimdilik masa üstüne açayım da.
+
+32
+00:07:31,172 --> 00:07:36,044
+Ders bitmeden ortak klasöre popyalayayım bunu.
+
+33
+00:07:39,860 --> 00:07:41,860
+Verge reverse.
+
+34
+00:07:53,651 --> 00:08:18,531
+Ne oluyor? String kendi içerisinden bir sonrakini, bir sonrakini, bir sonrakini çağırıyor. En son tamamlandığı yerde yani backslash 0'ı gördüğümüz yerde if çalışmayacak. If çalışmayınca ne olacak? Şuraya geleceğiz. Peki buraya gelince ne olacak? Fonksiyon tamamlanacak. Fonksiyon tamamlanınca o fonksiyonu çağıran satıra geleceğiz. Burada şöyle bir şey çizebilirim.
+
+35
+00:08:20,884 --> 00:08:45,163
+Nasıl bir iş akışı oluyor onu görelim isterseniz. Çünkü bu daha önemli. Mesela DFS algoritmasını şeyde anlattık, ayrık matematik dersinde anlattık. Orada kendi içerisinde stack kullanıldık. Halbuki biz stack kullanmadan rekürsif bir şekilde DFS algoritmasını çalıştırırsak.
+
+36
+00:08:45,840 --> 00:08:51,039
+Recursive algoritmaları kendi kendine stack kullandığı için aynı işi yapmış oluruz.
+
+37
+00:08:51,039 --> 00:08:53,039
+Şimdi programımız çalışınca...
+
+38
+00:09:12,019 --> 00:09:36,700
+Öncelikle mail, stek fısıtıya aktarılıyor arkadaşlar. Sonra biz deneme diye işte reverse denemeyi çağırıyoruz. Ondan sonra bu kendi içinden reverse enemeyi çağırıyor. Hatta biz deneme diyelim, dene diyelim direkt daha kısa olsun.
+
+39
+00:09:38,227 --> 00:09:52,227
+Deneyi çağırdı. Bu n'i çağırdı. Reverse n'i çağırdı. Ve bu reverse e'yi çağırdı. Bu da reverse hiçbir şeyi çağırmadı. Yani backslash 0 çağırdı.
+
+40
+00:10:06,868 --> 00:10:24,268
+str artı bir. Burada da printf str. Şöyle str'nin gösterdiği değeri yazırız. Şimdi ben bu main'le çağırdıktan sonra şu satıra geliyorum, şunu çağırıyorum.
+
+41
+00:10:24,980 --> 00:10:27,800
+Ondan sonra yine bu satıra geliyorum bunu çağırıyor.
+
+42
+00:10:27,860 --> 00:10:29,420
+Yine bu satıra geliyorum bunu çağırıyor.
+
+43
+00:10:29,519 --> 00:10:32,060
+Bu satıra geliyorum bunu çağırıyor.
+
+44
+00:10:32,659 --> 00:10:36,759
+Yani şuna programın birinci satırı, ikinci satırı, üçüncü satırı, dördüncü satırı dersek
+
+45
+00:10:36,759 --> 00:10:43,620
+hep üçüncü satırda çağırdım, üçüncü satırda çağırdım, üçüncü satırda çağırdım, üçüncü satırda çağırdım, üçte çağırdım deyip
+
+46
+00:10:43,620 --> 00:10:47,120
+kaçıncı satırda bu fonksiyonu çağırdım bir yerde yedekliyor aslında.
+
+47
+00:10:48,060 --> 00:10:49,019
+Peki şu.
+
+48
+00:10:49,620 --> 00:11:08,940
+Üçüncü satırda bunu çağırdığımızda, R boş, üçüncü satırda çağırdığımızda ne oldu? If'e geldik. If bu sefer false oldu. False olduğu için şuraya geldik. Ve bu program alt program bitti. Alt program bitince kaldığımız yeri geri geleceğiz. Bunun için Stek'ten bir şey çekiyoruz.
+
+49
+00:11:09,620 --> 00:11:34,379
+Stekten çekince ne geldi? Üçüncü satıra R'nin E ile çağırdığımız şeye geldi. Yani şuradayız. Buradayken bu satır bittiği için üçüncü satır, dördüncü satıra geldik. Dördüncü satırda str'miz neydi? E vardı. Bu zaman burada E'yi yazacak. Sonra bu satır bitecek. Alt program bitecek. Buraya bizi çağıran alt programı çağıracağız. İşte burada...
+
+50
+00:11:34,836 --> 00:11:59,976
+Kullandığımız tek bir tane string var. İşte ne demiştik, neyi yazacak. Ondan sonra burayı çağıran işte neydi. Buradaki e'den dolayı şunu yazacağız. Ondan sonra burayı çağıran büyük neydi. Şöyle yazacağız. Bu şekilde bitecek. Sonra main'e gideceğiz. Main içerisinde bakacak başka bir satır var mı? Yok.
+
+51
+00:12:00,563 --> 00:12:24,403
+O zaman main adre steklinden çıkaracak ve programımız tamamlanacak. Burayı anladık mı? Bir şeyi izlemek istiyorsanız, rekürsif bir fonksiyonu en doğru yolu stek yapmaktır. Yani biz faktöriyel yazdık. Faktöriyel işte n. Bu aşağıda bir yerlerde n eşittir. n çarpı f n-1 yapıyoruz. Bu ne demek?
+
+52
+00:12:26,067 --> 00:12:30,528
+En alt seviyede yazılan nedir? F1 veya F2'dir diyelim.
+
+53
+00:12:31,248 --> 00:12:37,927
+F1 hesaplanacak. Ondan sonra bu geriye doğru toplaya toplaya çarpa çarpa genel sonucu hesaplayacağız.
+
+54
+00:12:40,488 --> 00:12:44,228
+Şimdi burada sorumuz yoksa başka bir şeye gelelim.
+
+55
+00:12:45,908 --> 00:12:47,328
+Bu size daha çok lazım olacak.
+
+56
+00:12:50,451 --> 00:12:54,231
+Bizim binary search trilerimiz var değil mi arkadaşlar? Bir veri yapısı.
+
+57
+00:12:59,059 --> 00:13:17,099
+Bunun özelliği ne? Bu bir ağaç, ikili ağaç olacak bir kere. İkili ağaç olmakla da kalmıyor. Bu ağacın sağ taraftaki çocuğu köktekinden büyük oluyor. Sol taraftaki çocuklar köktekinden küçük oluyor.
+
+58
+00:13:17,559 --> 00:13:25,859
+Şimdi binary tree desek ikili ağaç. Böyle bir büyüklük-küçüklük ilişkisi yok. Ama binary search tree dersek.
+
+59
+00:13:26,484 --> 00:13:46,903
+Ayrıca biraz daha özelleştirilmiş bir şey oluyor. Şimdi biliyorsunuz ki ağaç bir kökten ve kökün çocuklarından oluşan bir yapı. O zaman bizim bu ağacı modellememiz için şu birimi yazmamız gerekiyor. Bunlara node diyelim.
+
+60
+00:13:55,379 --> 00:14:17,679
+Pointer'ını Node olarak, Hatta şöyle yapalım. Yine Node olarak, Pointer, Right Child tutabiliriz. Başlangıçta bunları işte Null değer veririz, çocuğu yoktur şeklinde. Bu şekilde ağacı inşa edebiliriz. Genelde ağaç üzerinde yapılan işlemler, birincisi zaten ekleme işlemi.
+
+61
+00:14:18,355 --> 00:14:42,716
+Ne yapacak? Dataya göre eğer data büyükse sağ tarafa gidecek, o büyükse sağa gidecek, değilse sola gidecek. Bu şekilde bir ekleme algoritmasını yazacağız. Ondan sonra gezinme var, yani travers. Gezinme kaç farklı şekilde oluyor? Ağaç üzerinde gezmek. Ayıp matematiğinde bir pratiğini yapmış olalım, salıbörün sınav var.
+
+62
+00:14:49,812 --> 00:14:51,788
+Nasıl gezebiliyoruz?
+
+63
+00:14:55,892 --> 00:14:58,812
+Sağ çocuğa ya da sol çocuğa gidebiliriz.
+
+64
+00:14:59,232 --> 00:15:14,712
+İşte pre-order, post-order, ondan sonra in-order, sonra reverse post-order, sonra bir de level-order vardır.
+
+65
+00:15:16,892 --> 00:15:21,852
+Şimdi pre-order dediğimiz, örneğin ben bunu matematiksel ağaçlar üzerinde daha kolay anlaşılıyor.
+
+66
+00:15:24,211 --> 00:15:41,512
+Matematik ifadeler A artı B şeklinde ifadeler. Operatörler kökte, operantlar yapraklarda, alt çocuklarda olur. Ben bunu preorder yazarsem artı A'dır, AB'dir. Yani önce kök, sonra sol, sonra sağ. Tabii rekürsif düşüneceğiz.
+
+67
+00:15:42,259 --> 00:15:55,079
+Post Order'da önce sol, sonra sağ, sonra köktür. AB artı. Zaten Post sonrasında Pre öncesinde dedim. In Order bizim kullandığımız A artı ve sol, kök, sağ şeklinde.
+
+68
+00:15:55,779 --> 00:16:06,259
+Reverse Post Order, şuraya yazayım. BA artı. Yani önce sağ, sonra sol, sonra artı. Pek kullanılmaz. Level Order'da önce...
+
+69
+00:16:06,707 --> 00:16:29,887
+Önce birinci seviye. Yani önce artı, sonra A, sonra B. Bakın burada pre-order'a benziyor da o her zaman pre-order değil. Yani önce burayı bitirecek, sonra burayı bitirecek, soldan sağa, ondan sonra varsa işte şunları bitirecek. Örneğin devam olsaydı 1, 2, 3, 4, 5, 6, 7 böyle bir ağaç olsaydı önce bir, sonra iki, üç, sonra dört, beş, altı, yedi şeklinde.
+
+70
+00:16:30,803 --> 00:16:46,004
+Yazacaktık. Preorder'la Level Order her zaman aynı olmaz. Mesela şu ağaçta Preorder gezersek ne olur? Önce 1, sonra 2, sonra 4, sonra 5, sonra 3, sonra 6, sonra 7 şeklinde olur.
+
+71
+00:16:46,004 --> 00:16:58,303
+Bu gezinme şekillerini, bunlardan bazılarını kodlayalım. Bir de şunu yapalım arkadaşlar. Buna vakit kalmaz bugün. Silme.
+
+72
+00:16:58,932 --> 00:17:22,932
+Yani ağaçtan bir düğüm silindiğinde ne olacak? Onu animasyon üzerinde anlatacağım. Herhalde kodunu yazmaya vakit kalmaz. Çünkü bilmiyorum onu daha önceden hazırlamış mıydım? Evet onu hazırlamamışım. Yani kodunu yüklerim. O problem değildi. Onu da isterseniz kendinize yazabilirsiniz. Çok doğru bir şey değil. Biraz sadece uzun oluyor. Temelde bu işlemler yapılır. Mesela...
+
+73
+00:17:24,276 --> 00:17:48,536
+Bu bir ikili arama ağacı. Bu da bunun heap ağaçları var. Başka bir şekilde tasarlanıyor. Orada da benzer işlemler var. Bunları daha detaylı olarak veri yapıları dersinde göreceksiniz zaten. Yani bu anlattığımız şeylerin hemen hemen belki aynısını veri yapıları dersinde anlatacaklar. Orada ayrıca bu binary search tree kullanan kodlar yazacaksınız gibi gibi. O zaman biz bu yapıyı bir tasarlayalım önce.
+
+74
+00:17:54,932 --> 00:17:57,612
+Bu yapıda ne var? Bir nodumuz olacak.
+
+75
+00:17:59,912 --> 00:18:06,592
+Ve bu yapıyı kullanırken de biz sürekli düğümleri dinamik memori allokasyonuyla oluşturacağız.
+
+76
+00:18:06,592 --> 00:18:09,052
+Bunun için input önce yazalım.
+
+77
+00:18:09,231 --> 00:18:12,831
+stdio.h
+
+78
+00:18:12,831 --> 00:18:17,871
+input stdio.h
+
+79
+00:18:20,403 --> 00:18:35,703
+Type Definition diyorum. Bakın bir ağaç aslında linkli liste mantığıyla da oluşturulur. Burada linkli liste mantığıyla oluşturuyoruz. Dizilerle de oluşturulur. Yani onu belki şurada söyleyebilirdim.
+
+80
+00:18:36,304 --> 00:18:47,124
+İşte bir ağacın sol ve çağır çocukları. Burada root olur. Root'un solu burada. Left. Bunun right.
+
+81
+00:18:47,667 --> 00:19:12,907
+Left'in left'i, left'in left'i, left'in right'ı. Yani biz buraya i dersek, i'nin left child'ı şöyle diyelim ve right child'ı. Şurası işte bir ise mesela left child'ı ne oluyor? 3 oluyor. 2i artı 1 ile, şurada 2i artı 2 ile kodlanır arkadaşlar. Eğer parent'a gideceksek de i eksi 1 bölü 2.
+
+82
+00:19:13,556 --> 00:19:29,036
+Yaparız. Herhangi bir düğümün atasını, mesela 3'ün atası kimdir? 2'dir. 3-1 bölü 2, 2 bölü 2'den 1 veya 4'ün atası yine 4'den 1 çıktı. 3, 3 bölü 2, o da 1.5. 1.5'un tam kısmını alıyoruz.
+
+83
+00:19:29,036 --> 00:19:32,876
+Bu şekilde bulunalım. Ama biz bunu linkli listelerle yapacağız.
+
+84
+00:19:33,376 --> 00:19:36,776
+O zaman bu şart için hiçbir boş nodur olmaması lazım.
+
+85
+00:19:37,619 --> 00:19:39,920
+Yeni kısalı left'in left'i yoksa...
+
+86
+00:19:39,920 --> 00:20:01,900
+Evet. O zaman orayı boş bırakıyorsun. Yani mesela güzel. Örneğin bu çocuk, yani burada bir işte D diye bir şey var ama burası boş. Böyle bir şey yok. Orayı sıfır bırakıyorsun. O zamanda ne oluyor? Dizide bayağı bir boş yer kalıyor. Zaten dizi kullanmanın dezavantajlarından bir tanesi de bu oluyor. Tamam mı?
+
+87
+00:20:02,859 --> 00:20:03,639
+Tamamdır hocam.
+
+88
+00:20:04,852 --> 00:20:06,092
+Bir saniye.
+
+89
+00:20:14,324 --> 00:20:22,464
+Gelelim bu yapıyı tasarlamaya. Şimdi Type Definition, Structure, Tree Node diyelim.
+
+90
+00:20:24,403 --> 00:20:33,064
+Nodumuz burada biraz daha farklı olsun. Şimdi burada bir tane Data tutabiliriz. Data dediğim gibi başka şeyler de olabilir. İlla bu olacak değil.
+
+91
+00:20:33,064 --> 00:20:41,004
+Hatta Data diye bir Structure tanımlayıp, işte siz mesela öğrenci türünde bir şey yapıyorsunuz projede veya ders türünde.
+
+92
+00:20:41,407 --> 00:20:48,407
+Burada onu ayrıca tutabiliriz. Şimdi bunun left child'ın pointer'ını tutacağız.
+
+93
+00:21:08,372 --> 00:21:28,092
+Bu bu kadar. Şimdi bizim fonksiyonlarımızı yazalım. Note türünde pointer döndüren bir fonksiyon yazacağım. Insert diyelim. Burada iki farklı şekilde insert yapacağız. Birisi iteratif insert, diğeri recursive insert olacak.
+
+94
+00:21:36,115 --> 00:21:37,635
+Bir tane data alacağım.
+
+95
+00:21:42,612 --> 00:21:51,491
+Insert Recursive diyelim. Şuna da R. Şimdi benim bütün ağacı gezmem için neyi bilmem gerekiyor arkadaşlar ağaçta?
+
+96
+00:21:59,604 --> 00:22:09,183
+Bütün ağacın gezebilmem için neye ihtiyacımız var? Linkli listelerde bütün bir diziyi gezmek için neyi bilmemiz lazım mesela?
+
+97
+00:22:13,907 --> 00:22:16,687
+Eleman sayısı mı? Yok.
+
+98
+00:22:17,267 --> 00:22:21,027
+Pardon, şey, nala görene kadar.
+
+99
+00:22:22,507 --> 00:22:25,867
+Yok. Yani önce niye ihtiyacımız var? Head düğümü bu.
+
+100
+00:22:25,887 --> 00:22:33,107
+Evet, burada da root'u bileceğiz. Yani buradaki head'in adı root. Onu bileceğiz.
+
+101
+00:22:33,587 --> 00:22:39,207
+Şimdi bir de gezinme işlemlerini yazalım. Mesela void preorder diyelim.
+
+102
+00:22:40,147 --> 00:22:55,508
+Pre-order'da neye ihtiyacımız var? Bir tane node. Böyle node değil. Şöyle yapalım. Node'a ihtiyacımız var. Ondan sonra post-order ve in-order'ı da yazalım.
+
+103
+00:22:57,508 --> 00:23:04,407
+Post-order ve in-order. Bunların definition'ını aşağıda yapacağız.
+
+104
+00:23:09,236 --> 00:23:28,576
+Ağaca eklemek için şey yapabiliriz arkadaşlar. Sürekli kullanıcıdan data al. Örnek olarak data 0 girilene kadar veya negatif girilene kadar veri eklensin. O zaman şöyle diyelim.
+
+105
+00:23:31,988 --> 00:23:46,548
+Bir kurgu yapmak istiyorum önce. Bir kere node türünde bir tane pointer root var. Elimizde eşittir. Bu başlangıçta nav. Herhangi bir şey yok.
+
+106
+00:23:47,968 --> 00:23:54,548
+Nasıl linkli listelerde ben root'u parametre olarak aktardığımda değiştirebiliyorsam.
+
+107
+00:23:55,892 --> 00:24:07,572
+Burada da değiştirme durumu olabilir. Nerede olur? Mesela ekleme yapıldığında veya silme yapıldığında. Ama ekleme yapıldığında gerek yok. Niye gerek yok anlatacağım şimdi.
+
+108
+00:24:23,955 --> 00:24:31,975
+n büyüktür, eşittir, sıfır olduğu müddetçe bu dönsün. Şurada bir tane integer değişken tanımlayalım.
+
+109
+00:24:31,975 --> 00:24:40,995
+integer n diyelim. Sonra n sıfırdan büyükken bir değer alalım.
+
+110
+00:24:51,731 --> 00:24:56,331
+0
+
+111
+00:25:01,011 --> 00:25:01,372
+Evet.
+
+112
+00:25:08,051 --> 00:25:14,932
+Biz burada insert işlemlerine birisini kodlayacağız.
+
+113
+00:25:15,652 --> 00:25:16,652
+Route'u göndereceğiz.
+
+114
+00:25:18,291 --> 00:25:20,111
+Insert olarak şöyle diyelim.
+
+115
+00:25:22,491 --> 00:25:26,251
+Çünkü Route'un gösterdiği yere bir değişiklik aktarılacak.
+
+116
+00:25:26,251 --> 00:25:28,392
+Şöyle yanlış oldu.
+
+117
+00:25:33,940 --> 00:25:54,280
+n ile bunu gönderelim. Başka da bir şey yok. Yalnız burada ilk seferde root'un değişme ihtimali var. Çünkü root dediğini şu an hiçbir yeri göstermiyor. Ama bu fonksiyonda ekleme işlemi yapıldığında root ilk seferde değişecek.
+
+118
+00:26:02,003 --> 00:26:26,163
+6, 5, 7. Şimdi bu ağaç neye göre çalışıyor? Eğer biz binary search teri oluşturacaksak, bakın Banu Hoca ayrı matematikte dengeli binary search teri oluşturmaya anlattı, o başka. Şimdi bu binary search teri de ilk gelen eleman ne olursa olsun root olur ve bir daha değişmez. Sonraki gelen 8 bundan büyük olduğu için buraya gelir, bu da bir daha değişmez.
+
+119
+00:26:26,592 --> 00:26:53,551
+Sonraki gelen buraya gelir. Bu üç küçük olduğu için bu da değişmez. Altı gelecek. Nereye gelecek? Şuraya gelecek. Altı. Sonra beş gelecek. O buraya gelecek. Bakın dengesiz bir ağaç diye gidiyor. Sonra yedi gelecek. Şöyle olacak. Bu hiçbir şekilde değişmez arkadaşlar. Dengeli hale getirmek için ne yapıyoruz? İşte düğümlerin yerleri değişiyor. Ona göre derinlik sayısı, derinlik değerimizi derinliğe göre dengeleme yapıyoruz.
+
+120
+00:26:54,483 --> 00:27:19,503
+Demek ki ilk okuduğumuz eleman bunu alacak buraya. O zaman şöyle bir şey yapabiliriz. Yani ben burada root'u gönderiyorum pointer olarak. Root'u tekrar güncelleyeyim. Tabi bu ilk seferde güncellenecek. İkinci, üçüncü, dördüncü seferde güncellenmeyecek. Yani aynı değer tekrar atınacak. İstersen burada çift pointer'ı da gönderebilirdim.
+
+121
+00:27:21,364 --> 00:27:36,704
+Niye çift pointer? Çünkü link listelerden hatırlayın. Root ilk sefer burada sadece değişik. İkinci üçün de değişmeyecek ama bir defa bile değişmesi için bunun pointer'ını, adresini göndermem gerekiyor.
+
+122
+00:27:37,364 --> 00:27:45,724
+Ve oluşturduğum yeni düğüm artık bunun yeni düğümün adresini burada tutabilir hale getireceğim. Evet, bu işlem böyle devam edecek.
+
+123
+00:27:46,708 --> 00:27:51,748
+Bu bittikten sonra inorder'ları, postorder'ları, preorder'ları kodlayabiliriz.
+
+124
+00:27:52,048 --> 00:27:56,107
+Şimdi önce bir ekleme kodunu yazalım. İki tane yazacağız çünkü burada.
+
+125
+00:27:57,188 --> 00:28:01,028
+Önce iteratif olanı yazalım arkadaşlar.
+
+126
+00:28:02,028 --> 00:28:07,008
+Void, insert. Buraya bir tane node alacağız.
+
+127
+00:28:08,587 --> 00:28:10,347
+Root, bir tane de data alacağız.
+
+128
+00:28:15,124 --> 00:28:41,063
+Bir düğüm oluşturmamız lazım. O zaman burada yardımcı bir fonksiyon oluşturacağım. Buna void create node diyelim. Bu bir tane n diye bir şey alacak. Not türünde pointer döndüreceğiz. Bir tane n sayısı alacağız. Öncelikle burada ne yapacağız? Mallock'la bir yer açmamız lazım. Öyle değil mi?
+
+129
+00:28:42,132 --> 00:29:03,351
+Şimdi node türünde bir tane pointer, ptr eşittir, malloc, malloc ne yapıyordu? Void pointer şeklinde çalışıyordu. Bir tane sizeof çarpı node kadar yer aç. Bunu da node pointerına kest edelim. Bu kadarlık bir yer açtık.
+
+130
+00:29:09,140 --> 00:29:11,140
+Neyi görmedi burada?
+
+131
+00:29:14,140 --> 00:29:16,140
+Şunu görmesi lazım.
+
+132
+00:29:16,140 --> 00:29:18,140
+Hah şimdi gördüm.
+
+133
+00:29:18,140 --> 00:29:21,140
+ptr'nin datası eşittir, n.
+
+134
+00:29:21,140 --> 00:29:33,140
+ptr'nin lefti eşittir, ptr'nin righti o da eşittir. İkisi de ilk başta null. Yani sol ve sağ çocukları yok.
+
+135
+00:29:34,132 --> 00:29:41,812
+Sonra burada return diyorum. ptr'yi gönder. Peki geldik tekrar insert'ümüze.
+
+136
+00:29:41,812 --> 00:29:47,251
+Ekleme yapacaksak önce düğüm oluşturmamız lazım.
+
+137
+00:29:47,251 --> 00:29:59,812
+Şimdi node türünde, create node dedim. Buraya any gönderdim.
+
+138
+00:30:00,756 --> 00:30:04,215
+Bu şeyi çalıştırdık. Şimdi şunu da yukarıya alalım. Biraz daha hata almıyorum.
+
+139
+00:30:08,564 --> 00:30:30,903
+Notumuz artık elimizde var. İlk başta bakacağımız şey, root'umuz daha önceden null mı arkadaşlar? Eğer null ise bu gelen zaten ilk başta root haline geliyor. If root bu pointer olduğu için doğrudan değerine ulaşamıyor. Eğer shift pointer gelseydi root'un gösterdiği adresdeki değer diyecektik.
+
+140
+00:30:34,228 --> 00:30:51,387
+root eşittir new node diyoruz. Sonra return diyeceğiz. Artık burada root'un gösterdiği pointer neyse, yani new node'u veya root'u ikisini de gönderebiliriz.
+
+141
+00:30:52,187 --> 00:30:58,907
+Return ediyoruz. Return edince ne oluyor? Burada artık root'umuz null olmaktan çıkıyor. İlk elemanın adresini tutuyor.
+
+142
+00:30:59,347 --> 00:31:21,448
+Sonra tekrar sayı gireceğiz. Bu adres buradan gelecek. Ama bundan sonra hiçbir şekilde değişmeyecek. Yani istersek burada şunu da yapabilirdik. İlk başta ruta bir tane ilk elemanı şurada alırdık, okurduk. Create node oluştururduk. Oraya root'u eklerdik. O da yapılabilirdi. Ama burada ne yaptık? Fonksiyon kendi kendisine çalışsın, return yapsın.
+
+143
+00:31:27,859 --> 00:31:41,079
+Root'umuz null değilse. Şimdi root null değilse ne olabilir? Örneğin buraya ne ekleyelim? 2 eklemeye çalışalım. Şimdi 2 eklediğimde root null değil. Benim buraya gitmem lazım.
+
+144
+00:31:43,379 --> 00:31:52,879
+Güncelleyeceğim. Şimdi buraya giderken root'u kaybetmemek için yedek bir değişkine ihtiyacım var. İşte buna ne diyelim? Left diyelim.
+
+145
+00:31:54,708 --> 00:32:10,347
+İlk başta hani left'i root'a yedekleyeceğim. Yalnız bunun öncesi ve sonrasını yani gezdiğim yerin bu temporary yardımcı değişkenin öncesi ve sonrasını tutmak için de bir ekstra değişkine ihtiyacımız var.
+
+146
+00:32:10,347 --> 00:32:20,228
+Çünkü burada bir de data kontrolü yapacağız. Girilen data büyük müdür, küçük müdür. O zaman bir tane left, bir tane de right gibi iki tane pointer değişkenimiz olacak burada.
+
+147
+00:32:20,852 --> 00:32:35,251
+Şimdi kodlayalım herhalde daha anlaşılır. Diyorum ki node türünde bir pointer, left veya buna tmp diyelim direkt, bu da oradan root'un yerine gelsin.
+
+148
+00:32:38,420 --> 00:32:48,420
+Bunda böyle var. Sonra yine not türünde pointer. Bir tane de tmp2 diyelim buna. Bu ilk başta null.
+
+149
+00:32:48,420 --> 00:33:03,403
+Çünkü önce ekleyeceğim yeri bulacağım. Yani ben buraya iki ekleyeceksem işte geldim. Ne yapacağız? Şuraya ekleyeceğiz. Şöyle şeylerle göstereyim.
+
+150
+00:33:03,476 --> 00:33:07,456
+Buraya eklenecek. İşte onu aramam lazım. İteratif olarak.
+
+151
+00:33:08,736 --> 00:33:15,756
+TMP 2'ye naldınız. Diyoruz ki, root'un yedeği TMP naldan farklı olduğu sürece.
+
+152
+00:33:16,615 --> 00:33:19,796
+Çünkü sola mı gideceğim, sağ mı gideceğim, solun solu mu, solun sağ mı?
+
+153
+00:33:20,476 --> 00:33:22,456
+Bu ağır içerisinde bir gezinmem gerekiyor.
+
+154
+00:33:23,456 --> 00:33:30,336
+While, TMP naldan farklı hikaye dönüp dur.
+
+155
+00:33:31,220 --> 00:33:56,159
+Şimdi burada tmp'yi yedekliyorum. tmp2 eşittir. tmp diyorum. Eğer benim bu datam, şu an buraya gelen n sayım, tmp'nin gösterdiği yerdeki datadan küçükse sola gitti. Büyükse sağa gitti diyeceğim.
+
+156
+00:33:57,652 --> 00:34:04,011
+En son kaldığım hangi taraftan sola gittim, hangi taraftan sağa gittim bunu burada TMP ile yedeklemiş olacağım.
+
+157
+00:34:04,011 --> 00:34:17,791
+If data küçüktür, TMP'nin gösterdiği yerdeki datadan. Küçükse ne yaparız? Sola gideriz değil mi arkadaşlar?
+
+158
+00:34:24,980 --> 00:34:42,140
+Nasıl link listelerde işte tmp eşittir, tmp next diyorsak burada da sol tarafa git diyoruz. Değilse o zaman sağa git, tmp eşittir, tmp'nin right'ı.
+
+159
+00:34:48,800 --> 00:35:07,720
+Tekrar tmp'yi güncelle, yani geçtiğimiz düğümü al, bir önceki düğümü. Ve bu şekilde iki tane pointer, şu arkadan bir tanesine tmp dedik, öbürüne tmp2 dedik. Bu ne yapıyor? Arkadan bunu takip ediyor sürekli.
+
+160
+00:35:11,891 --> 00:35:23,591
+Bu ne zaman döngü tamamlanacak arkadaşlar? Yapraklara ulaşınca yani tmp'miz derinleştik derinleştik. Null düğme ulaştık. Orada tamamlanmış oluyor.
+
+161
+00:35:24,131 --> 00:35:33,771
+Null düğme ulaştıktan sonra şimdi kontrol yapacağız. Diyeceğiz ki if. Null düğme ulaşmamız ne demek?
+
+162
+00:35:34,483 --> 00:35:51,003
+Herhangi bir yerde sol ve sağ yok. Yani tmp2 burada nal olabilir. tmp2 nalsa tmp2'nin gösterdiği yere div nodu yaz.
+
+163
+00:35:53,123 --> 00:35:54,363
+Onu kaydettim.
+
+164
+00:35:54,363 --> 00:35:58,563
+Tmp2 nal oluyor mu hiçbir zaman? İlk sefere sadece nal oluyor.
+
+165
+00:35:58,764 --> 00:36:00,184
+Evet, ilk sefere.
+
+166
+00:36:01,076 --> 00:36:14,716
+Nal olma durumu var. Böyle bir durum varsa değilse derinleşebildiğimiz kadar derinleştik ve bir yerde nala geldik.
+
+167
+00:36:28,851 --> 00:36:38,291
+Datası büyükse bizim şu enden gelen veriden o zaman ne yapıyoruz?
+
+168
+00:36:38,291 --> 00:36:51,612
+Tmp2'nin datası büyükse Tmp2'nin write'ına bizim şu new node'u yazmamız lazım.
+
+169
+00:36:58,547 --> 00:37:00,547
+Parantez yazalım.
+
+170
+00:37:00,547 --> 00:37:07,547
+tmp2'nin leftine leaveNode yaz.
+
+171
+00:37:13,652 --> 00:37:41,292
+New Note yaz. En son şurada tekrar Return Root yapabiliriz şimdi. Yani anlamsız da. Çünkü Root bir defa şurada değişti. Bunu gönderebiliriz. Bakın şurada aralarda bir yer ekleyince, düğümü bağlayınca Root üzerinde herhangi bir değişiklik yapmıyoruz. Şimdi bunu görmek için biz şu orderlardan birini yazalım arkadaşlar. Mesela in order yazalım. Yani eklendi mi eklenmedi mi görmüş olalım.
+
+172
+00:37:42,356 --> 00:38:08,296
+Void in order. Bu in order, post order, pre order nasıl yazılabilir? Biraz algoritmayı zorlarsanız iteratif yazarsınız. Fakat yani in order ne yapıyor? Önce sola gidiyor, sonra köke gidiyor, sonra sağa gidiyor. Yani bir sürü değişken tanımlayıp döngülerle sola git, gittiğin yeri unutma, bir yerde sakla, değişken yap. Biraz zor bir şeydir iteratif.
+
+173
+00:38:08,884 --> 00:38:18,384
+Onun için biz in order, post order ve pro order'ı hemen hemen bütün kaynaklarda rekürsif görürüz. Burada root'u alacağız.
+
+174
+00:38:22,516 --> 00:38:38,036
+Gezeceğiz. Şimdi diyeceğim ki, if in order nasıl çalışıyor? In order bakın şöyle hızlıca kodlayın. A artı B şeklinde. Artı kökte, A solda, B sağda. Yani gidebildiği kadar önce sola gidecek.
+
+175
+00:38:38,036 --> 00:38:47,516
+Ondan sonra o en son gittiği solun köküne bakacak. Ondan sonra gidebildiği kadar sağa gidecek. Şimdi özgür root.
+
+176
+00:38:50,228 --> 00:39:09,088
+Null'dan farklıysa demek ki elemanlar var. Şimdi in order'ı tekrar çağırır. In order'ı çağırırken ne yapacağız? Bu in order algoritması önce sola gönderiyor. Yani root'un left'ine git diyoruz.
+
+177
+00:39:11,188 --> 00:39:18,128
+Gidebildiği kadar sola gidecek. En son gittiği yerde ne ile karşılaşacak? Null ile karşılaşacak. İşte orada o datayı yazdır diyoruz.
+
+178
+00:39:18,128 --> 00:39:20,967
+Print F %d
+
+179
+00:39:24,532 --> 00:39:43,351
+Üstede biraz şöyle boşluk bırakalım. Root'un datası. Ondan sonra gidebildiği kadar sola gittikten sonra, yani o sol artık bir o alt ağacın root'u gibi düşünün. Gidebildiğimiz kadar sağa gideceğiz.
+
+180
+00:39:49,748 --> 00:40:13,387
+Bunu nasıl yapabiliriz? Çünkü root'un left'i de, root'un right'ı da ne türde? Yine aynı türde, trinode türünde bir eleman. Yani pointer değişken. Inorder bu şekilde. Peki. Gelelim, ben şurada insert ettikten sonra inorder'ı çağır her seferinde diyorum. Ve root'u gönder.
+
+181
+00:40:14,996 --> 00:40:18,576
+Burada bir alt satıra geçme gibi bir şey yapsak mı?
+
+182
+00:40:20,376 --> 00:40:21,916
+Yok, direkt yan yana yazsın.
+
+183
+00:40:24,476 --> 00:40:28,056
+Belki şu fonksiyon tamamlandığında, yok onu da şöyle yapalım.
+
+184
+00:40:29,836 --> 00:40:30,876
+Inorder
+
+185
+00:40:31,635 --> 00:40:34,195
+Burada bir printf alt satıra geçiş diyelim.
+
+186
+00:40:35,215 --> 00:40:41,876
+Çünkü bir düğüm ekleyeceğim, eklediğim bir düğümü yazacak. Sonra alt satıra geçeceğiz, ikinci düğümü ekleyeceğim, onu yazacağız.
+
+187
+00:40:42,516 --> 00:40:53,576
+Compile edelim. Bir yerlerde hatamız var bakalım. BST Binary Search 3 diyelim.
+
+188
+00:41:00,692 --> 00:41:06,592
+Ne demiş? Ha bu void bir şey döndürmez. Mode türünde bir şey döndürecek dedik.
+
+189
+00:41:09,391 --> 00:41:13,331
+Tabi burada datamız yok. Data yerine n sayımız var.
+
+190
+00:41:14,811 --> 00:41:17,751
+Gel hani şuraya. Evet.
+
+191
+00:41:20,072 --> 00:41:23,731
+Mesela önce 6 ekliyorum.
+
+192
+00:41:25,311 --> 00:41:27,771
+6'nın sağına gidecek şekilde tabi bu
+
+193
+00:41:28,244 --> 00:41:43,423
+Mesela 9 ekleyelim. 9 mu önce 6 mu önce? 9 deyince şöyle yapalım. 6 var ağaçta. Sonra 9 ekledik.
+
+194
+00:41:55,668 --> 00:42:16,248
+Altının sağına gelecek 9 büyük olduğu için. Şimdi bunu in order yaparsak ne olur? In order A artı B idi. Sola git demek. Sola gidince hiçbir şey yok, boş. Köke gel, 6'yı yaz. Sonra B. O zaman şurada biz bir in order'da hata mı yaptık? Veya ağacı eklerken mi hata yaptık acaba?
+
+195
+00:42:17,907 --> 00:42:28,527
+9'u önce yazıyorsa, şuraya bir gelelim. 9-6 olmaması lazım. 6-9 göreceğiz. Bakayım burada. Ha şunu şöyle yapacağız arkadaşlar.
+
+196
+00:42:32,527 --> 00:42:35,107
+TMP... Bir dakika bu böyle değil.
+
+197
+00:42:40,275 --> 00:43:07,175
+Sağa gelecek, yani datanın büyük olması lazım. Onun için şöyle yapacağız. Data büyükse sağa gel. Ondan sonra küçükse sol. 6 girdim. 9 girdim. Şimdi 6'ya 9. Tamam. Çünkü yeni gelen datayı kontrol etmemiz gerekiyor. Mevcut düğümle. 6-9. Peki bir de 3 girelim. 3-6-9. Ağaç nasıl bir hale geldi?
+
+198
+00:43:08,083 --> 00:43:09,384
+Şu şekilde yazıldı.
+
+199
+00:43:14,516 --> 00:43:40,755
+Mesela ne ekleyelim? 4 ekleyelim. 4 eklesin, şuraya gelsin. Ondan sonra 2 ekleyelim, buraya gelsin. Önce 4'ü ekliyorum. Önce 4'ü eklediğimde, bakın 4'ü eklersem, şunu şimdilik yok, kabul edin arkadaşlar. Ne olacak? Önce gideceği kadar sola gidecek. Gideceği kadar sola gitti. Şurada zaten şu yok şu an için, 2 yok. Buraya geldi.
+
+200
+00:43:41,492 --> 00:43:59,392
+Şimdi solda başka düğüm olmadığı için önce 3'ü yazdı. Sonra bunun sağını yazdı. Yani boş 3, sağ 4'ü yazdı. Bunun kökünde 6 var. Ondan sonra 3, 4, 6, 9 şeklinde yazdık.
+
+201
+00:43:59,392 --> 00:44:04,892
+Şimdi 2 ekle diyorum. 2, 3, 4, 6, 9. Önce gidebildiği kadar en sona gidiyor.
+
+202
+00:44:05,492 --> 00:44:32,092
+Ondan sonra bir de ne ekleyelim? Mesela 15 ekleyelim. 15 ekleyince ne oluyor? Araya giriyor. Bir de ne ekleyelim? Kökümüzde bizim 6 vardı. 8 ekleyelim. 8'de ne oluyor? 6'dan sonra 8. Yani 15 eklediğimizde 15 bizim şuraya gelecek. 8 de buraya gelecek. Şimdi 2, 3, 4 şu.
+
+203
+00:44:32,512 --> 00:44:57,731
+Şimdi bunu in order gezersek, önce gidebildiğimiz kadar sola gidiyoruz. 2. Sonra köke gidiyoruz. 3. Sonra sağa gidiyoruz. 4. Şu altı ağaç bitti. Bu sol bittiği için bunun kökü 6. Bunun altı ağacının şeyi 9. Bu altı ağaçta gidebildiğimiz kadar sola gidiyoruz. 8. Sonra kökü 9. Sonra 15.
+
+204
+00:44:58,324 --> 00:45:20,904
+2, 3, 4, 6, 8, 9, 15 diye devam edip gidecek. 0 diyelim. Kontrolü yapmadım. Tabii 0'ı ekleyecek, eksi 1 falan değilim işte. Tamam. O zaman şuradaki kontrolümüz de while different from 0 diyelim. Şöyle yapmış olur.
+
+205
+00:45:22,996 --> 00:45:31,256
+Evet, bakın şurada insert işlemini yapmak birazcık iteratif olarak yapmak biraz zor.
+
+206
+00:45:32,416 --> 00:45:39,216
+Şimdi gelelim bunu bir de şu fonksiyonumuzla insert rekürsif halinde yazalım.
+
+207
+00:45:40,436 --> 00:45:42,156
+Onu yazalım, bir ara vereceğim.
+
+208
+00:45:43,096 --> 00:45:46,076
+Çünkü bunu yazmak hakikaten çok kolaymış hocam diyeceksiniz.
+
+209
+00:45:46,176 --> 00:45:48,316
+Ama rekürsif olarak düşünmek burada zor.
+
+210
+00:45:49,619 --> 00:46:07,159
+Yani yazması kolay da biraz daha iç içe düşünmek, böyle recursive mantıklı düşünmek her zaman kolay olmuyor. Şimdi yine aynı mantıkla ilerliyoruz. Eğer if, tabi şuraya root diyelim, buraya da data diyelim.
+
+211
+00:46:16,371 --> 00:46:38,351
+Bakın, create node'u doğrudan çalıştırmıyorum. Şimdi şurada bir tane node oluşturdum. Ondan sonra gittim, o düğme yer buldum. Fakat burada rekürsif olarak önce gideceğim yeri bulacağım, ekleyeceğim yeri bulacağım. O yere node oluşturup yapıştıracağım. Peki o da nasıl olacak?
+
+212
+00:46:39,188 --> 00:46:55,427
+ekleyeceğim yer root olacak ama her zaman root gibi düşüneceğiz. Çünkü ağaçta derinleştikçe ne zaman duracağız? Bir yerde null görünce duracağız. İşte orada bizim durma koşulumuz. Recursive fonksiyonların özelliği neydi? Bir yerde durma koşulu olması lazım.
+
+213
+00:47:03,603 --> 00:47:17,264
+Demek ki orada root'u oluştur diyoruz. Ve create node diyorum. Burada data ile düğümü oluştur ve burada return root yap.
+
+214
+00:47:30,452 --> 00:47:41,152
+Benim datam. İçeride mevcut datadan büyükse, çünkü root null değilse başka bir data var.
+
+215
+00:47:41,152 --> 00:47:44,452
+Neyi görmedi yine.
+
+216
+00:47:48,275 --> 00:47:49,815
+Bunu böyle yazarsak görmez tabii.
+
+217
+00:47:52,815 --> 00:48:05,795
+Root'un datasından büyükse, ben bu fonksiyonumu insertNode olarak çağırıyorum.
+
+218
+00:48:07,155 --> 00:48:13,635
+InsertNode kendisi, tabii insertR diyeceğiz, insert aşağıdaki değil.
+
+219
+00:48:14,452 --> 00:48:37,452
+insert R, kendisi bir rekürsif fonksiyon. Burada root'un sağ tarafındaki çocuğunu çağır demektir. Yine datayı gönder diyor. Şimdi buradan geriye bir değer dönecek. O dönen değer ne olacak? Root'un. Root diyemeyiz. Root dersek o zaman root'u bozmuş oluruz. Right olacak.
+
+220
+00:48:42,228 --> 00:48:53,867
+Ne yaptık? Mesela root'umuz null değil, sağ tarafa git dedik. Eğer mevcut datamız sağ taraftaysa artık yeniden bu fonksiyon bir alt ağaç için çağrılmış oluyor.
+
+221
+00:48:55,028 --> 00:49:01,927
+Ekleme yaptıktan sonra root eğer değişecekse ki hiçbir düğüm yoksa mesela örneğin şöyle yapalım.
+
+222
+00:49:05,523 --> 00:49:22,903
+Dört, sekiz. Şu an dört sadece var olduğunu kabul edelim. İlk durum. Sekiz ekleyeceğimizi önce burası sıfır olduğunu biliyoruz. Ne yapacak? Sekizi buraya ekleyecek ve şunun right çocuğunu bir root yoluyla değiştirmiş olacağız.
+
+223
+00:49:32,659 --> 00:49:34,460
+Left'i değişecek.
+
+224
+00:49:36,359 --> 00:49:39,319
+Eşittir. Insert Recursive.
+
+225
+00:49:40,659 --> 00:49:43,379
+Root'u left'ine git.
+
+226
+00:49:44,339 --> 00:49:46,579
+Data'yı gönder diyorum.
+
+227
+00:49:48,259 --> 00:49:53,439
+Bu da bulduğu noktada eğer sol çocuğa ekleme yapacaksak root'un left'ine.
+
+228
+00:49:54,339 --> 00:50:00,000
+Her iki durumda da biz root'u tekrardan return yapacağız.
+
+229
+00:50:00,000 --> 00:50:16,419
+Yani return anlamsız olur da gerekli değil. Çünkü bir ifin içerisinde bir şey yazdık mı, diğer durumlara da bunu yazmak gerekir. Veya en alta bir tane return yapabiliriz.
+
+230
+00:50:25,043 --> 00:50:51,403
+Şuradaki çağırdığım fonksiyonu insert R olarak değiştiriyorum. Ve compile edelim. Şu slide şurada küçük bir yerde dursun. Şimdi 4 ekleyeceğim. 8 ekleyeceğim. Ne oldu bunun in order'ı? Önce 4 sonra 8. 2 ekleyeceğim.
+
+231
+00:50:52,532 --> 00:51:06,891
+2 eklediğinde ne yapıyor? Şimdi root null değil. 2 dörtten küçük diyor ki root'un sol çocuğuna gidiyor. Şimdi root'un sol çocuğu null. Yani fonksiyonu tekrar çağırdık.
+
+232
+00:51:13,492 --> 00:51:21,972
+İkinci bir defa fonksiyon çağırmak demek. İşte o bulunduğumuz yerde ne yapıyor? New node'u atıyor ve root'u return ediyor.
+
+233
+00:51:22,072 --> 00:51:31,352
+Root'u return ettiği yerde, pardon şurada, root'u return ettiği yerde root'un write'ı, yani bizim gerçek root'umuzun write'ı ne olmuş oldu?
+
+234
+00:51:31,352 --> 00:51:38,032
+Yeni oluşturduğumuz düğüm oldu. Mesela bir ekleyelim, ondan sonra üç ekleyelim.
+
+235
+00:51:40,371 --> 00:51:49,011
+Bundan sonra ne bileyim 99 ekleyelim falan. Bu şekilde ekleme işlemleri devam edip gidecek. Burada bir sorumuz var mı?
+
+236
+00:51:57,492 --> 00:52:07,992
+Şimdi ara verelim arkadaşlar. Geldiğimizde şu pre-order. Hatta ara vermeyelim. Bir dakika. Bu çok basit bir şey.
+
+237
+00:52:10,992 --> 00:52:22,892
+In order'ı pre-order yapalım. Bunu da post-order yapalım. Pre-order'da nasıl bir şey yapacağız?
+
+238
+00:52:25,172 --> 00:52:49,291
+Preorder artı AB idi değil mi? Inorder A artı B şeklinde. Expressions'ı TRI şeklinde yazarsak daha kolay. Artı AB. Burada da AB artı şeklinde. Yani Preorder bize ne diyor? Önce kökü al. Şimdi önce kökü alacaksa benim şu printf işlemini önce yazmam lazım.
+
+239
+00:52:52,371 --> 00:53:08,992
+Oradaki değeri unutmamamız gerekiyor. Önce kökü aldıktan sonra gidebildiğin kadar sola git. Sol tarafa gidecek. O kendi içinden onu çağıracağız. Ondan sonra gidebildiğin kadar sağa git diyeceğiz. Preorder bu kadar bakın.
+
+240
+00:53:18,291 --> 00:53:38,511
+En son datayı yazdır. Yani gidebildiğimiz kadar burada ne yapıyoruz? Sol tarafa gidiyoruz. O en soldaki datayı alıyoruz. Sonra onun sağına geçiyoruz bu sayede. Şuradaki iki işlem sayesinde. Ondan sonra üst taraftan görüyoruz. Peki ben şimdi şurayı kapatayım.
+
+241
+00:53:42,996 --> 00:53:53,476
+Şurayı kapatalım. Şunu Ctrl X yapalım. Burada birkaç tane düğüm ekleyelim. Pre Order diyelim.
+
+242
+00:53:58,771 --> 00:53:59,632
+Pırın tep.
+
+243
+00:54:02,996 --> 00:54:26,355
+Şunu da alalım. Post Order diyelim. Print F. Compile. Dengeli bir ağaç girilmeye çalışayım. İşte 5 kireyim. 3 bunun soluna, 8 sağına, ondan sonra bir en sola, ondan sonra ne var? 3'ten büyük 4 var.
+
+244
+00:54:27,635 --> 00:54:45,715
+Ondan sonra 5'ten büyük 8 vardı. 7, 6 girelim. 9 girelim. 0 girelim. Şimdi ağacımızı bir inşa edelim şurada. Ondan sonra orderları görelim.
+
+245
+00:54:53,780 --> 00:55:17,059
+1 bunun soluna gelecek. 4 sağına gelecek. Ondan sonra 6 bunun soluna. 9 da sağına gelecek. 0 da eklemeden çıkacak. Şimdi burada in order yapmak ne demek? In order A artı B idi. Gidebildiğimiz kadar sola gidiyoruz. 1. Ondan sonra köke gidiyoruz. 3. Ondan sonra sağa gidiyoruz. 4.
+
+246
+00:55:17,556 --> 00:55:43,735
+Bu sol çocuk bitti. Sonra köke geldik. 5. Şimdi sağ çocuk. Burada sola geldik. 6, 8, 9. 0'ı da mı ekledi? Neyse. 0'ı da ekliyorsa o zaman şuraya 0 diyeceğiz. 0'ı eklediğinde ne olacak? Şurada 0'ımız olacak. 0 eklemenin kontrolünü belki yanlış yaptık. Ne oldu? 0, 1, 3, 4, 5, 6, 8, 9. Bu in order'dı.
+
+247
+00:55:44,563 --> 00:55:52,403
+Preordera bakalım. Preordera A artı AB. Beşi yaz. Sonra üçü yaz.
+
+248
+00:55:56,340 --> 00:56:06,539
+Gerçi ikincisi pre-order mıydı? Post-order mıydı? Onu bilmiyorum da. Şurada sıfırı bir... Neyse, ara verelim. O sıfırın kontrolünü düzeltelim arkadaşlar. Ondan sonra bakalım.
+
+249
+00:56:08,400 --> 00:56:17,599
+Saat 50'yi geçiyor. 11'de görüşmek üzere. Ben şu arada o ara şeyi düzelteyim. Vakit kaybetmeyelim. Bir de uygulamanız var bugün. Görüşürüz.
+
+250
+01:06:53,076 --> 01:07:05,316
+Evet, pek, paynarı ağaçları biz burada kodluyoruz. Kısaca mantığını anlattık. Ayrı bir matematikte gördüğümüz ağaçların basit işlemleri.
+
+251
+01:07:06,896 --> 01:07:15,256
+Şimdi şöyle, kodda ufak bir sıkıntımız, şunu tabii kopyalı yapışları yaptığınızda, biraz önce şunlar post order post order değil, biz in order'ı kopyaladık ki arkadaşlar.
+
+252
+01:07:15,776 --> 01:07:21,003
+Burada bizi tekrar in order'a götürüyordu. Yanlış görmemizin sebebi o. Bir de şurada sıfırı...
+
+253
+01:07:21,108 --> 01:07:37,027
+Hani şöyle basit bir kontrol yaptım. En sıfırdan farklıysa ekle falan dedim. Öyle bir kontrole. Şimdi geldim. Aynı değerlere giriyoruz. 5, 8, 5, 3, 8, 1, 4, 6, 9, 0. Bakın bu sırayla girersek ağaç bu şekilde.
+
+254
+01:07:39,295 --> 01:08:01,235
+5, 1, 4 girersem o zaman 1 nerede olacak? Burada olacak. 4 nerede olacak? 4 bunun işte sağında olacak. Aynı olduğu yerde. Sırayla girdiğimize göre ağaç sıraya göre. Binary Search Tree'nin içerisinde bir arama yapmak istersek karmaşıklık ne olur arkadaşlar sizce? En kötü durumda.
+
+255
+01:08:08,884 --> 01:08:10,884
+Neden [öğrenci]?
+
+256
+01:08:15,059 --> 01:08:19,420
+Login. Aslında ilk dediğim doğruydu.
+
+257
+01:08:22,868 --> 01:08:45,388
+Peki ağacın yüksekliği her zaman log n ile mi ölçülür? Örneğin şöyle bir ağaç olsa, ben şöyle değerler girsem. 1, 2, 3, 4, 5. 1 burada, 2 burada, 3 burada, 4 burada, 5 burada. Ağaç linkli liste gibi bir şey oldu gördüğünüz gibi.
+
+258
+01:08:46,195 --> 01:08:50,876
+Bu ağacın yüksekliği log n ile ölçülmedi. Ağacın yüksekliği doğrudan n.
+
+259
+01:08:52,296 --> 01:08:54,975
+Binary Searchster'lerin dezavantajında bir tanesi bu.
+
+260
+01:08:54,975 --> 01:09:02,456
+Yani eğer girilen veriler ağaç dengeli bir şekilde oluşturulmadıysa ne demek dengeli?
+
+261
+01:09:03,216 --> 01:09:09,716
+Ağacın sol ve sağ tarafının yüksekliklerinin ağacın yüksekliği ile n veya n-1 olması şeklinde.
+
+262
+01:09:10,368 --> 01:09:19,608
+Ne oluyor? Bu linkli liste gibi en defa aramanız gerekebilir. Peki gelelim şu ağacımızı in order, pro order ile.
+
+263
+01:09:19,608 --> 01:09:28,308
+Ayrık matematika ile ilgili kısa bir soru sorabilir miyim hocam? Şu sağ tarafta çizdiğiniz ağaç. Bunun ikili ağaç olduğunu düşünmesek, sadece ağaç olarak desek.
+
+264
+01:09:28,608 --> 01:09:29,268
+Bu ikili ağaç.
+
+265
+01:09:31,539 --> 01:09:54,300
+Örnek bir soru soracağım. Şu mu? Evet. Diyelim ki ikili ağaç değil, normal bildiğimiz bir ağaç sadece. Yani ağaç derken, normal ağaç derken şöyle, tek çocuklu bir ağaç mı? Tek çocuklu ya da çok çocuklu olabilir. Bir belirtim belirtilmemiş. Sadece ağaç. Bu dengeli ağaç sayılıyor mu sayılmıyor mu hocam? Bu dengeli ağaç olmaz.
+
+266
+01:09:55,923 --> 01:10:11,623
+Dengeli ağaç olması için sol taraftaki yani ağacın sol tarafının yüksekliği ile sağ tarafının yüksekliğinin birbirine birer bir fark olması lazım. İşte sol tarafının yüksekliği ense burası da en veya en eksi bir olacak.
+
+267
+01:10:11,783 --> 01:10:13,404
+Dengeli ikili ağaç için değil mi hocam?
+
+268
+01:10:14,283 --> 01:10:16,664
+Ama şimdi sen ağaç o zaman bu linkli liste.
+
+269
+01:10:17,811 --> 01:10:32,532
+Yani böyle düşünecek olsan linkli listede dengelilik diye bir şey yok. Eğer üçlü çocuk üçlü ağaç olsa orada doğrudan zaten dengeden söz edemiyoruz. İkili ağaçlarda denge kavramından söz edilir. Tamam mı?
+
+270
+01:10:35,828 --> 01:10:56,788
+Ben bir hocam tanımını, dengeli ağaç tanımını bulayım size mesaj olarak katayım. Dengeli ağaç tanımı şu şekilde geçiyordu, yanlış hatırlamıyorsam dengeli ağaç tanımı için diyorum sadece. Son uçları, yaprakların aralarındaki fark birden az olması lazım. Yapraklar burada bir tane.
+
+271
+01:10:56,788 --> 01:10:57,988
+Burada uç sadece hocam.
+
+272
+01:10:58,708 --> 01:10:59,108
+Beş.
+
+273
+01:10:59,268 --> 01:11:00,148
+Evet, bir tane var hocam.
+
+274
+01:11:00,388 --> 01:11:02,428
+Öbürlerim bunlar internals düğümler.
+
+275
+01:11:02,996 --> 01:11:28,236
+Onun için hani hanıma uyuyor gibi. Yok, şimdi bak bu ikili ağaç şeklinde ürettiğimiz için bunu. Sonuçta ben bu ağaca, bunu veriye girdim programda. İkili ağaç mantığıyla oluşturuyorum. Burada dengesiz bir ağaç var. Çünkü yaprak bir tane, internal düğüm, sol tarafıyla ağacın sol tarafıyla sağ tarafı arasında doğrudan bir dengesizlik var. Yani bu LinkedIn liste gibi oldu.
+
+276
+01:11:30,623 --> 01:11:37,523
+Bu dengesiz bir ağaçtır. Ama normal link bir liste olsaydı zaten orada da bu kavramdan söz edemezdik.
+
+277
+01:11:41,395 --> 01:11:52,895
+Bu şekilde yaprakların derecesi ile tabii o ölçülür de, ağacısız bu şekilde link liste oluştursanız burada bir tane yaprak var.
+
+278
+01:11:54,155 --> 01:11:59,295
+Yani en tane düğümden bir tanesi yaprak, en eksi bir tanesi internal düğüm. Ama ağaç dengesiz.
+
+279
+01:12:01,495 --> 01:12:04,456
+Yani şey yok çünkü yani hepsi peş peşe gelmiş.
+
+280
+01:12:07,347 --> 01:12:29,127
+Şimdi arkadaşlar, şu ağacımızı in order gezmek ne demek? In order A artı B. Önce gidebildiğimiz kadar sola gidiyoruz. 1. Sonra köke geliyoruz. 3. Sonra sağa gidiyoruz. 4. Şu altı ağaç bittikten sonra ne oldu? Altı ağaç bittikten sonra bunun solu bitti. Bunun kökünde 5 var.
+
+281
+01:12:29,876 --> 01:12:55,416
+Sonra sağ tarafa gidiyoruz. Kökün en soluna gideceğiz. Altı. Sonra köke geleceğiz. Sekiz. Sonra dokuz. Bu in order. Pre order'a bakalım. Pre order önce kökleri al. Sonra soldan al. Sonra sağdan al demektir. Beşi aldık. Sonra sola geldik. Buradaki altı ağaç var. Bu altı ağacın kökünü aldık. Üç. Onun kökünü, onun soluna geldik. Onun altı ağacı, yani şu da bir ağaç. Bir.
+
+282
+01:12:56,851 --> 01:13:17,711
+Bunun sağına geliyoruz 4. Çünkü bunun altı ağacı yok. Bu bittikten sonra 5'in sol tarafı bitti. Sağ tarafına geldik. Burada tekrardan bir altı ağaç var 8. Onun solunda altı ağaç olarak 6. Onun sağında 9. 5, 3, 1, 48, 69. İkinci sırada gördüğümüz şey.
+
+283
+01:13:19,091 --> 01:13:44,591
+Pre-order, post-order'da AB artı formunda olan yani orada önce sol, sonra sağ, sonra kö. Gidebildiğimiz kadar sola gittik. Yani bunun solu, bunun solu, bunun solu, bunun solu yok. Biri yazdık. Bunun sağına geldik, 4. Bunun köküne geldik, 3. Bu sol gitti, bunun sağına geliyoruz. Burada da gidebildiğimiz kadar sola gidiyoruz, 6.
+
+284
+01:13:45,300 --> 01:14:09,640
+Yani nal görmedikçe, nal dışında bir şey oldukça gideceğiz. 6, 9, 8, 5, 143, 69, 85. Bakın bunu iteratif kodlamayla algoritmasını bir düşünün. Preorder'ın, postorder'ın. Yani şuraya geldikten sonra şuraya atlamanız için postorder'da şunu tutmanız lazım.
+
+285
+01:14:10,323 --> 01:14:30,323
+İki tane değişken lazım. Bir tane T, bir de T2. Beni buraya getiren T. Bu önce şurada tutuluyor. Bunun next'ine gidiyorsunuz. Bunun left'i, right'i zaten null. Ama bundan sonra post order'da şuraya gelmeniz için şunun yoluyla şunun right'ına gideceksiniz. Ondan sonra bunu alacaksınız.
+
+286
+01:14:30,323 --> 01:14:36,083
+Tamam mı? Böyle veya işte tabii şuna bakılabilir.
+
+287
+01:14:36,916 --> 01:14:44,796
+İki tane değişkenimiz var. Bu T'nin altında, sol tarafta, sağ tarafta bir şey yok. Ama mesela şurada bir şeyler olabilir. O zaman iş iyice karışır.
+
+288
+01:14:45,556 --> 01:14:53,036
+Bunu alacak, dörtü alacak. Mesela şurada ne olabilir? Hani X olsun, burada da Y olsun diyelim. O zaman post ordur nasıl olur?
+
+289
+01:14:53,675 --> 01:14:59,716
+Geldi, geldi, geldi. Yani sola. Sonra sağa geleceğiz. Ama sağa gelmeden önce şu ikisi alacağız.
+
+290
+01:14:59,716 --> 01:15:01,816
+Dövcut da şuradaki değişken ne oluyor?
+
+291
+01:15:02,323 --> 01:15:10,063
+Burada tekrar yedek bir şey diyeceksiniz. İteratif olarak bayağı bir zor. Recursif ama 3-4 satırda kodlamak mümkün.
+
+292
+01:15:11,583 --> 01:15:22,603
+Evet, ağaçlarda silme işleminde siz yapabilirsiniz. Ben Google Classroom'dan bir şey gönderdim.
+
+293
+01:15:24,724 --> 01:15:28,783
+Animasyon sitesi göndermiştim. Visualization'dur, onu da bulayım.
+
+294
+01:15:30,612 --> 01:15:44,711
+Mantığını öğrenin, kodlamaya da çalışın. Yani rekürtif veya iteratif, hatta ben olsam ikisini de kodlamaya çalışırım. İnternette zaten kodları var da mantığını bir anladıktan sonra kendiniz kodlamaya çalışırsanız öğrenmiş olursunuz.
+
+295
+01:15:44,711 --> 01:15:55,051
+Binary Search Tree. Mesela ekleyelim. Biraz önceki ağacı oluşturalım. 538.
+
+296
+01:15:57,268 --> 01:16:06,268
+5 inserted, 3 inserted, 8 inserted, 1, 4.
+
+297
+01:16:12,692 --> 01:16:13,572
+6-9
+
+298
+01:16:20,916 --> 01:16:47,296
+Peki, örnek olarak ben 3'ü silmek istesem. Önce 3'ü bulacak. Yani bulmak ne demek? Ağaç üzerinde aramak demek. İşte ne yapıyor? Köke gidiyor, işte büyükse bu tarafa gel diyor. Yani bu bulma mevzusu kolay. Bir pre-order veya post-order mantığıyla veya doğrudan işte data mevcut şeyden büyükse sağa git, küçükse sola git diyebiliriz.
+
+299
+01:16:48,212 --> 01:17:09,292
+Fakat silmeye geldi. Ben bu 3'ü sildiğimde burada ne olacak? Buraya bir koyarsak olur. Dört koyarsak da olur. Bakalım bir silelim. Önce ne yapıyor? Bunu buluyor. Bulduktan sonra... Bir dakika ben bir mi yazdım oraya ya? Insert diyelim.
+
+300
+01:17:16,180 --> 01:17:33,480
+Getirdi. Sol tarafın yanındaki en küçük çocuğu, yani bunun en küçük çocuğunu buraya yazdı. Şimdi şöyle yapacağız. Birinin yanına ne ekleyelim? Gerçi orası da bir olduğu için. Sıfır insert edeyim.
+
+301
+01:17:36,540 --> 01:17:38,760
+Eksi bir insert edebiliyor muyum? Bir bakayım.
+
+302
+01:17:45,460 --> 01:17:53,000
+Eksi giremiyormuşuz. Eksiye izin vermiyor. Mesela şuradan ilerleyelim.
+
+303
+01:17:53,000 --> 01:17:55,159
+Bir olunca hocam, iki tane bir oldu burada ama.
+
+304
+01:17:56,460 --> 01:18:07,899
+İki tane bir olur. Bu eksi biri muhtemelen işaretli sayı gibi. Yani bu şeyde animasyonda bir açık var muhtemelen. Eksi bir şey yapınca şimdi bir.
+
+305
+01:18:08,372 --> 01:18:18,132
+Bundan eşit, yani eşitmiş gibi kabul etti kodda muhtemelen. Küçüğü buraya alıyor ya, büyük eşitse bu tarafa. Bundan da küçük olduğumuz için buraya getirdi. Tamam mı?
+
+306
+01:18:18,872 --> 01:18:20,872
+Bir silince bakalım. Bir silince ne yapacak?
+
+307
+01:18:22,112 --> 01:18:28,492
+Bir silince, tamam. O ilk gördüğü yerdekini, pardon şuraya yazıyoruz. İlk gördüğü yerdekini silecek.
+
+308
+01:18:30,332 --> 01:18:34,412
+Buldu, artık daha devam etmedi de buraya getirdi. Tamam mı?
+
+309
+01:18:35,220 --> 01:18:48,200
+Şimdi şurada şöyle bir şey yapsak. 7 ekleyelim. Ondan sonra bir 6 daha ekleyeyim.
+
+310
+01:18:51,796 --> 01:19:10,436
+6 doğrudan buraya geldi. Başka ne ekleyebiliriz? Peş peşe sayılar girmeseydik, aralıklı sayılar gitseydik daha iyi olur. Mesela 8'i sirmek istiyorum. 8'i sirmek istediğimde 9'u buraya getirirsem 9'dan küçükler burada olur.
+
+311
+01:19:11,444 --> 01:19:35,283
+Ne yapmış oluyor? Ağacı bozmamış oluyoruz. Çünkü binary search düğümün mantık. Ama burada ne yaptı? Şuranın en küçüğünü getirdi. Çünkü dedi ki dokuzu buraya getirsem, mesela dokuzun altında çocuklar da olabilir, bu tarafın yani bulunan alt ağacın en küçük düğümünü buraya getiriyor aslında. Pardon, alt ağacın sol tarafının en büyüğünü getiriyor. Ve bu ne demek?
+
+312
+01:19:35,828 --> 01:19:42,388
+Şuradakileri bozmayacak, buradakileri bozmayacak bir düğümü buraya getirip yerleştirmiş oluyoruz.
+
+313
+01:19:43,228 --> 01:19:47,608
+Ağacı mesela bu mantıkla, bu şeyle düğüm silinebilir. Mesela beşi silelim.
+
+314
+01:19:48,888 --> 01:20:00,000
+Kökü silelim. Beşi sildiğimde öyle bir şey gelecek ki sağ tarafın en büyüğünü getirirsem, sağın en büyüğünü, bu ağaç bozulmaz veya solun en küçüğünü getirebilirim.
+
+315
+01:20:01,971 --> 01:20:25,711
+Solun en büyüğünü getirebilirim. Solun en büyüğü 4. Şimdi burada bundan büyükler, burada bundan küçükler. Sağ tarafın en küçüğü, sol tarafın en büyüğü gelebilir. İki farklı mantığı şey var. Yani 6 getirseydik de bu ağaç ne olacaktı? Bozulmayacaktı sonuçta. Tabii şurada iki tane 6 olmadığını düşünüyoruz.
+
+316
+01:20:28,372 --> 01:20:43,971
+Altılardan birini de silelim mesela şimdi. Ne yaptı? Onun altındaki en küçük ağacı getirdi. Bu mantıkla silme işlemi gerçekleştiriliyor. Arama zaten var. Gezinmeyi de söyledik. Evet, bu şeyde bu kadar.
+
+317
+01:20:56,532 --> 01:21:09,912
+Ben burada ayrıca threadleri anlatmak istiyorum. Şu şeyi bir bulayım müsaadenizle. Slide'ım vardı.
+
+318
+01:21:28,020 --> 01:21:32,280
+Bunu da ayrıca şeye kopyalarız. Hafta film demişiz.
+
+319
+01:21:35,420 --> 01:21:43,500
+Şurada üç örneğimiz. Ha bir tane daha örneğimiz var. Bir dakika arkadaşlar, onu unuttuk. Neyse onu şöyle hızlıca anlatıvereyim.
+
+320
+01:21:44,780 --> 01:21:51,840
+Dosyadan structure'a veri okuyalım. Ve bunu birkaç farklı şekilde okuyalım.
+
+321
+01:21:55,604 --> 01:22:19,444
+Şöyle alacağım. İşte dosyada kişilerin bilgileri var. Ben geçen hafta yüz yüze derste de anlatmıştım. Bir dosya nasıl okunur, dosya nasıl yazıldıysa öyle okunur diye. Hani böyle bir kodlamış bir şekilde de zaten size açıklamıştım. Dosyamız şu şekilde yazılmış arkadaşlar. Şunu alalım. Birkaç dönem önce galiba bunu ben asistanken laboratuvarda sormuştum.
+
+322
+01:22:23,123 --> 01:22:34,623
+Bakın dosyamızın isim, soy isim ve numara. O zaman ben okuyacağım şeyi bu formata uygun okumam lazım. Bu bir de açık dosya, yani binary dosya falan değil.
+
+323
+01:22:36,523 --> 01:22:44,763
+Gelelim. Ben diyorum ki mesela örneğin buradaki kişileri sıralayalım. Tekrar dosyaya sıralı bir şekilde yazdıralım. Senaryo bu olabilir.
+
+324
+01:22:45,300 --> 01:23:01,300
+O zaman buradaki verileri alıp bir structure oluşturmam lazım. At, soyat, numarada. Böyle bir structure tasarladık. Sonra dosyayı okuyacağız. Dosyayı okurken nokta ve ok diye iki tane şey kullandım. Niye bunu yaptım? İki operatöre de...
+
+325
+01:23:01,939 --> 01:23:15,579
+Aşinalık kazanalım diye o zamanlar böyle bir şey yapmıştım. Benim 5 kişilik, burada mallok falan da kullanabilirim ama daha küçük ölçek düşünelim. Hangi şeyi de okumak istiyorsunuz? Oklama okuyacaksınız, noktayla mı okuyacaksınız? Bunun point'ını gönderiyorum.
+
+326
+01:23:16,115 --> 01:23:18,416
+Ve şurada fonksiyonlar çalışacak.
+
+327
+01:23:18,976 --> 01:23:22,536
+Gelelim burada. Bakın bu pointer'ımız var. Dosyayı açtık okumak için.
+
+328
+01:23:23,336 --> 01:23:29,956
+Fscanf diyoruz. File pointer'ın gösterdiği yerdeki değerden %s, %s, %d okup bir alt satıra in.
+
+329
+01:23:30,836 --> 01:23:33,836
+Ne yapıyor? İlk okuduğu şeyleri şuradaki değişkenlere kopyalıyor.
+
+330
+01:23:34,416 --> 01:23:38,416
+Bakın burada niye ampersant yok? Çünkü şu isim zaten bir pointer adres tutar.
+
+331
+01:23:41,076 --> 01:23:58,896
+Doğrudan pointer değil, bir değişken ismi. Onun adresini elde etmemiz lazım. Buraya point, ampersand koysak da olur. Sonra bunları printf ile ekrana bastırmışız. Doğru okuduk mu okumadık mı diye. Bu kadar. Sonra dosyayı kapatıyorum. Ondan sonra sırala tekrardan dosya printf ile yazdırır. O ayrı mevzu.
+
+332
+01:23:59,376 --> 01:24:07,456
+Ok operatörü ile okurken, şimdi okta pointer vardı. Bakın bu, şu işlem ne yapıyor? Aslında bir arka planda pointer aritmetiği yapıyor bize.
+
+333
+01:24:07,923 --> 01:24:34,024
+Ben ok ile bunu yapmak istediğimde işte person diye bir pointerımız var. Person'un isim alanına, person'un soy isim alanına ve person'un no alanının pointerına adresine değerleri dosyadan okuyorum. Sonra ekrana yazdırıyorum. Sonra hatta person hangi adreste oturuyormuş onu şurada yazdırmışım. Sonra person'u bir arttırıyorum. Ne oluyor bu? Dosya yani hangi adrese yazacağım burada belli olmuş oluyor.
+
+334
+01:24:34,707 --> 01:24:48,387
+Tabi bu başlangıçta bulduğum person adresi şurada değiştirilmiş oldu. Burada kaybettik. Orijinali tabi ki burada yine değişmez. Çünkü o sabittir. Bu şekilde bunu bir kaydedelim.
+
+335
+01:24:52,500 --> 01:25:08,000
+Refile diyelim. Şu operatörlerin değerlerini, mesela adres bilgileri, bütün değerler burada düzgün bir şekilde okunmuş oldu. İkinci de çalıştırabiliriz.
+
+336
+01:25:12,083 --> 01:25:19,623
+Burada da sadece bu değerler yazdırıyormuş. Niye öyle yapmışız? Person'un ismi, person'su ismi. Bakayım.
+
+337
+01:25:21,083 --> 01:25:27,084
+Isim, person'su ismi, person'su no. Yüz dese yüz dese. Bir eksik mi var burada acaba?
+
+338
+01:25:30,739 --> 01:25:35,099
+At, soyat. Şurada unuttuğumuz bir şey mi var acaba?
+
+339
+01:25:37,659 --> 01:25:41,579
+Heh. Yok. Bir sıkıntı yok gibi.
+
+340
+01:25:43,519 --> 01:25:45,719
+İsmi al. Yüzdesi, yüzdesi.
+
+341
+01:25:50,003 --> 01:26:10,644
+Şunu bir kapatayım. Burada bir şey eksik yazıyor gibi sanki. Ok ile okumak için bir. Tamam. Nokta ile okumak için. Bakın şurada bir %d yok arkadaşlar. İkincisini de değiştirmişiz.
+
+342
+01:26:14,452 --> 01:26:28,092
+Burada da değerler okunmuş oluyor. Şu ikisinin farkını göstermek için bu örneği de yapmış olalım. Zaten yeterince bunlarla alakalı şey yaptık da hem dosyalar hem structure'lar hem de fonksiyonların kullanımıyla alakalı bir örnek olsun.
+
+343
+01:26:28,872 --> 01:26:39,092
+Evet, burada sorumuz yoksa kısaca bir şeyler anlatacağım saat başına kadar. Sonra Fatma Nur hocanız gelecek size uygulama yapacaklar.
+
+344
+01:26:43,731 --> 01:26:44,908
+Şöyle alayım.
+
+345
+01:26:48,819 --> 01:27:04,720
+Şimdi thread ne demek? Önce onun mantığıyla bir başlayalım. Burada iki tane şey var. Random Access File'lar ve thread'ler ile alakalı şeyi tekrardan yüklerim. Bir de burada void pointer'lar varmış. Zaten onu daha önce size anlatmıştık.
+
+346
+01:27:06,600 --> 01:27:09,319
+Şimdi thread ne demek? Önce bununla bir başlayalım.
+
+347
+01:27:10,515 --> 01:27:34,695
+Sizin programınız açıldığında şu ana kadar Execution Flow diye bir şey var arkadaşlar programlar için. Bu Execution Flow ne demek? Önce bunu bir söyleyelim. Örneğin, Main fonksiyonumuz başladı. Böyle akıp gidiyor program. İşte burada bir F fonksiyonu çağırdınız. Onda sonra F'e gitti, dallanma yaptı. Bu gelecek, sonra geri gelecek. Şurada.
+
+348
+01:27:35,380 --> 01:27:46,980
+Şöyle bir şey dersek program burada sonlanıyor. Programın başından sonuna kadar daima tek bir tane execution flow var. Dikkat ederseniz.
+
+349
+01:27:47,980 --> 01:28:01,800
+Bu program değerlendi. İşte bağlama link yapıldı. Program.exe haline geldi. Gittiniz siz ona çift tıkladınız veya çalıştırdınız.
+
+350
+01:28:03,091 --> 01:28:25,031
+Artık bu bir proses haline geliyor. Process is a running program. Yani çalışır durumda olan program prosestir. Bu prosesin bilgisayar belleğinde PID dediğimiz ID'si var. Ondan sonra ona bir yer ayrılıyor. Hatta geçen hafta söylemiştim bunu yerini gösterdik. Bellekte ayrılan yer nasıl oluşturduk.
+
+351
+01:28:25,908 --> 01:28:33,788
+Bu proses aslında execution flow dediğimiz program bir yerden başlıyor. Nasıl yazılıysa, assembly gibi de düşünebilirsiniz. Aşağıya doğru devam ediyor.
+
+352
+01:28:35,068 --> 01:28:45,807
+Hiçbir yerde program birden fazla execution flow'u aynı anda yani simultaneous'lı veya concurrent'lı dediğimiz eş zamanlı bir şekilde yapılmıyor.
+
+353
+01:28:46,355 --> 01:28:55,835
+İşte bir programın çalışmasını eş zamanlı olarak birden fazla execution flow özelliğini kazandırmanın yollarından bir tanesi thread'tir.
+
+354
+01:28:55,975 --> 01:29:03,415
+İplik diyorlar. Yani bir yerde programımız böyle tek gelecek, ondan sonra birden fazla parçaya bölünecek.
+
+355
+01:29:04,475 --> 01:29:08,675
+O iki parça eş zamanlı bir şekilde koşturacak, sonra programımız devam edecek.
+
+356
+01:29:09,335 --> 01:29:12,675
+Bu da örnek. Word'de yazı yazıyorsunuz.
+
+357
+01:29:13,524 --> 01:29:34,724
+Bir şeyler yazdınız. Şimdi siz yazı yazarken bir taraftan altını böyle kırmızıyla boyuyor. Değil mi? Ne yapıyor? İşte yazım hatası var. Halbuki o yazım hatası ayrı bir proses. Sizin yazı yazmanız ayrı bir proses. İşte ne oluyor? Program bir yerde birden fazla execution flow gösteriyor. Bunu şöyle görebiliriz.
+
+358
+01:29:39,764 --> 01:29:55,603
+Şurada prosesleriniz vardır. Hatta detaylardan bakalım biz. Bakın Anydesk bir prosesmiş. Hatta benim şurada Google Drive'larım var. Bunların birkaç tane proses çalışıyor. Bunun altında da bunların threadleri çalışır. Onu şurada gösterebilir miyim acaba?
+
+359
+01:30:00,000 --> 01:30:14,759
+Opera Browser'ın veya Google Drive'ın altında birden fazla şey. Halbuki bir tane program siz açtınız. Örneğin PowerPoint şu an bende 3 tane açık. O 3 tanenin içinde alt modüller S zamanı olarak çalışıyor. Bunlara thread diyoruz.
+
+360
+01:30:14,759 --> 01:30:17,759
+Şimdi şu Veev'de...
+
+361
+01:30:17,759 --> 01:30:19,759
+Acaba...
+
+362
+01:30:22,547 --> 01:30:35,568
+Evet, bakın şunlar farklı threadleri gösteriyor size aslında. Bu Zoom'un altında şunlar şunlar varmış. Partisipantların kontrolü, chat'in kontrolü, toplantının kontrolü ayrı ayrı şekilde yapılıyor.
+
+363
+01:30:35,568 --> 01:30:41,568
+Ve bunu eş zamanlı yapmanın yolu aslında şu. Bizim işlemcimiz de...
+
+364
+01:30:42,771 --> 01:31:05,432
+Normalde bir tane işlem birimi var. Buna core diyoruz, çekirdek. Bu işlem birimi ne yapıyor? Bellekten verileri fetch instruction yapılıyor. Sonra decode instruction yapılıyor. Sonra execute instruction yapılıyor. Sonra writeback falan yapılıyor. Yani sizin bellekten komutlarınız tek tek geliyor. Fakat sizin core sayınız birden fazla günümüzde. O zaman...
+
+365
+01:31:05,779 --> 01:31:26,059
+Bellekten tek tek böyle getirmek yani aynı anda birden fazla şey getirilebilir. Örnek olarak bir yandan yazım kontrolü yapılsın, bir yandan ne bileyim işte toplantı yapılsın veya bir yandan başka bir işler yapılsın. Çok koruda bu mümkün. Tek kor olsaydı da şöyle yapılıyordu. Bu korların çalışması gigahertzler seviyesinde.
+
+366
+01:31:29,235 --> 01:31:50,175
+Trilyon defa ama 10 üzeri 9 defa işlem yapılacak demek. 10 üzeri 9 defa işlem, bizim yani saniyeyi 10 üzeri 9'a bölün, fark edemeyeceğimiz kadar hızla. Dolayısıyla bir işlem yapılıyor, ondan sonra öbürüne sıra giriyor. Örneğin bir P1 prosesimiz var, Word olsun, bir de P2 prosesimiz var.
+
+367
+01:31:56,372 --> 01:32:23,771
+Tamam sen yeter diyor. Bir P2 geçsin işlemciye. Tabi tek bir tane işlemci var. Şöyle iki tane çizmeyelim. Aradaki bu anahtarlama, context switching dediğimiz birbirine dönüşüm çok hızlı oluyor ve biz aynı anda birden fazla iş yapılıyormuş gibi görürüz. Eğer tek çekirdeğimiz olsaydı o da mümkündür. Günümüz işlemcileri zaten çok fazla çekirdekleri. Hatta çok fazla işlemcili bilgisayarlar var. İşlemci başkadır, çekirdek başkadır.
+
+368
+01:32:24,212 --> 01:32:49,971
+Örneğin bir bilgisayarda 4 tane işlemci var. Her gün içinde de 4'er tane çekirdek var. 16 tane çekirdeğimiz olur. Çekirdektir bu Patch, Decode, Execution yani komutlarınızı asıl işleyen ve gereğini yapan şey. Bunu programınızda yazdığınız kodla gerçekleştirmek için iki farklı yol var. Ya proses oluşturacaksınız. Bir proses çalışırken yeni bir proses oluşturacaksınız ya da thread oluşturacaksınız.
+
+369
+01:32:50,644 --> 01:33:15,224
+Şimdi proses oluşturmak biraz maliyetli ve bu biraz farklı bir şey. İşte proses bellekte farklı yerlerde tutuluyor. İki tane prosesin kopyasını oluşturabilmeniz mümkün. Ama bunlar birbiriyle eş zamanlı çalışmasını kontrol etmek biraz daha zor. Mümkün değil demiyorum, zor. Yapılabiliyor. Bunu C'de fork ile yapıyoruz. İşletim sistemleri dersini konuşuyor. Buraya girmiyor.
+
+370
+01:33:15,699 --> 01:33:26,319
+Ama ben tek bir bellek alanını kullanayım ve bu bellek alanında birden fazla execution flow yapayım dersek onun da yolu threadleri kullanmak olacak.
+
+371
+01:33:26,319 --> 01:33:28,979
+Şimdi gelin bunu birazcık konuşalım.
+
+372
+01:33:31,839 --> 01:33:38,179
+Herhangi bir prosesin birden fazla execution flow'a sahip olması thread olarak ifade ediliyor.
+
+373
+01:33:38,299 --> 01:33:40,079
+Thread ile prosesin farkı bu.
+
+374
+01:33:42,068 --> 01:33:53,328
+Tek bir çalışan programın, yani çalışan program demek, programın bu yani prosesin altındaki farklı execution flow'lar da thread halinde geliyor.
+
+375
+01:33:53,328 --> 01:34:00,248
+Bakın şu bir proses, bu başka bir proses.
+
+376
+01:34:01,652 --> 01:34:11,751
+Şu başka bir proses. Her birinin içinde bir tane execution flow var. Şunda üç tane execution flow var. İşte bu üç thread'li bir proses. Bunlar tek thread'li bir proses diyeceğiz.
+
+377
+01:34:12,652 --> 01:34:22,532
+Bunlar genel olarak tabii eş zamanlı çalışırmış gibi görünüyor ama arka planda şu thread'ler arasında eğer tek çekirdeğimiz varsa işlemcide.
+
+378
+01:34:22,944 --> 01:34:34,804
+Birbirinden anahtarlama yapılıyor ki günümüzde artık tek çekirdekli işlemci neredeyse kalmadı. Çok çekirdekli işlemciler var. Ve burada bir asenkron şekilde execution programımız işletiliyor.
+
+379
+01:34:35,380 --> 01:34:55,279
+Diyebiliriz. Bu multiple threadler, bir proses içerisinde koşturulan multiple threadler kendilerine ait atanmış görevleri yaparlar. Birisi yazım kontrolü yapar, birisi başka bir işi yapar gibi. Örneğin bir web browser'ı açtığınızda birden fazla sayfaya bağlanabilmenizin yolu aslında threadlerdir.
+
+380
+01:34:55,279 --> 01:35:01,899
+Veya işte grafik arayüzünde olan uygulamalar, web browser tabları demiş. Bu tarz uygulamalar da karşımıza geliyor.
+
+381
+01:35:03,412 --> 01:35:19,351
+Ve bu işlem neden gerekti? Yani ben eğer aynı anda bir işi yapamayacaksam çok fazla real time ve multimedya tarzı uygulamalarda bir anlam ifade etmez arkadaşlar.
+
+382
+01:35:20,112 --> 01:35:27,372
+Ben sizinle konuşuyorum, siz beni dinleyemezsiniz o tarz durumda. Benim konuşmam biter, sizin dinlemeniz başlar.
+
+383
+01:35:27,828 --> 01:35:53,408
+Bu çok ciddi bir senkronizasyon sorunudur. Bir sürü problemler ortaya çıkar. Bunu mümkün hale getiriyor. Şunları okuyabilirsiniz. Tabi thread ile proses arasındaki farkı söyledik. Thread bir proses altındaki çoklu execution flow. Proseste her biri ayrı ayrı çalışan programlar demek. Yani siz Word'u iki defa açın. İki tane Word prosesi oluşturursun. Bir örneği gördüğümüz gibi.
+
+384
+01:35:55,060 --> 01:36:12,819
+Bu threadler arasındaki context switching threadler arasında da mümkün. Aynı şekilde prosesler arasında da mümkün. Ki bunu işletim sistemi kontrol ediyor. Threadler arasındaki context switching dediğimiz değişim çok daha hızlı oluyor prosese göre.
+
+385
+01:36:13,652 --> 01:36:35,351
+Bu zaten günümüz işlemlerinde neredeyse hissedilmeyecek bir şey. Tabii, böyle çoklu çalışan threadler veya prosesler ortaya çıkınca hep sizin hani hocam niye global değişken kullanmayalım diye sorularınız olur ya, işte bunun bir yan etkisi senkronizasyon problemidir arkadaşlar.
+
+386
+01:36:35,923 --> 01:36:52,824
+Örneğin bir tane değişkenimiz var. Şu thread de bunu kullanıyor, bu thread de bunu kullanıyor. Genelde bunun örneğini şöyle veriyoruz. Banka hesabı, account. Siz bu threadle cep telefonunuzdan, bankanızdan para çekeceksiniz. Bu da kartınızda para yatıracaksınız.
+
+387
+01:36:52,824 --> 01:37:02,344
+Şimdi bir thread şu kaynağa eriştiğinde öbür threadin erişmesini istemiyorsak burada kontroller yapmamız gerekiyor.
+
+388
+01:37:02,804 --> 01:37:27,304
+Yani ben bu kaynağa sahibim, bu değişkenine ulaştım. Bir başkası ben işimi bitirene kadar çıkamazsın. Aynı mikrofon örneği gibi. Mikrofon kimdeyse o konuşur şeklinde. Her zaman böyle kaynak üzerinde kontrol yapmak zorunda değiliz ama işte banka hesabı gibi bu tarz uygulamalarda kaynak kontrolünü yapmamız lazım. Tabii bu bir senkronizasyon problemi. Bunun üzerinden üstesinden gelinmesi lazım.
+
+389
+01:37:27,699 --> 01:37:52,460
+Şimdi bunu kontrol edeyim derken bazı sıkıntılar oluyor. Bu sıkıntılardan bir tanesi starvation. Ne demek starvation? Oruç. Oruç. Oruç fest ile söyleniyor da açlık. Açlıktan ölmek demek. Yani çok açlık çekmek demek.
+
+390
+01:37:53,171 --> 01:37:58,331
+Mesela breakfast oradan gelir, orucu bozmak şeklinde.
+
+391
+01:37:59,771 --> 01:38:07,931
+Starvation şu, şu proses veya threat ikisi içinde söylenebilir. Bu kaynağa erişiyor, şu hiçbir zaman erişemiyor.
+
+392
+01:38:09,192 --> 01:38:14,171
+Yani kendisine sıra gelmiyor. Düşünün toplulukta konuşuyorsunuz, mikrofon istiyorsunuz, size sıra gelmiyor.
+
+393
+01:38:14,171 --> 01:38:16,171
+Bu...
+
+394
+01:38:16,532 --> 01:38:24,692
+İstediğiniz prosesleri veya threadleri senkronize edeyim derken yapılan bir hatadan kaynaklı olarak diğerine hiçbir zaman sıranın gelmemesi durumu.
+
+395
+01:38:25,312 --> 01:38:30,732
+Veya deadlock. Deadlock dediğimizde aynı şu kavşak örneğini verirler.
+
+396
+01:38:33,412 --> 01:38:36,592
+İşte ortakta, işte burada kavşağı herkes ortak kullanıyor.
+
+397
+01:38:36,592 --> 01:38:40,812
+Böyle bir şey oldu ki işte bu buraya girdi, bu buraya girdi. Kimse hareket edemiyor.
+
+398
+01:38:41,092 --> 01:38:43,592
+Hatta şöyle görselini gösterelim arkadaşlar size.
+
+399
+01:38:46,068 --> 01:38:57,288
+Deadlock. Yine bu şeyden, yani bir trafik memuru yanlış bir iş yaparsa nasıl bir deadlock oluyor trafikte? Aynen şurada olduğu gibi bakın. Hepsi birbirine girmiş.
+
+400
+01:38:57,716 --> 01:39:18,116
+Ne olması lazım? Kimse ileri gidemiyor burada. Ne bu ileri gidiyor, ne bu ileri gidebilir. Ne olacak? Birileri geri geri gidecek. O birilerinin geri geri gitmesi demek ne demek? Şuradaki araçların geri geri gitmesi demek. Bunların geri geri gitmesi demek. İşte şu geri geri giderse bir taraftaki şurayı açar. O açarsa bu gider. Ondan sonra bu gider. Mesela birilerinin devreden çıkması.
+
+401
+01:39:18,739 --> 01:39:41,960
+Böyle bir senkronizasyon yapalım derken şeye. Peki bu ne demek? Neden oluyor? Bakın şuradaki örnek güzel söylüyor. Proses A, Resource 2'ye ihtiyacı var. Fakat onu proses B'ye tutuyor. Proses B'de Resource 1'e ihtiyacı var. Onu da A tutuyor. Yani ikisi de bırakmıyor. Biri ona ihtiyaç var. Biri elinde tutuyor, biri öbürüne ihtiyaç bırak. Ne olması lazım?
+
+402
+01:39:42,644 --> 01:40:09,684
+Proses B'nin veya A'nın devreden çıkıp yeniden başlatılıp, hani bazen bilgisayar kilitlendi deriz ya, veya bir prosesiniz kilitlenir. İşte o kilitlenme bunun sebeplerinin, bunun sonuçlarından bir tanesidir. Aynı şu örneklerde olduğu gibi. Bunların böyle problemleri var ama işlerimizi çok fazla şey yapabiliyor, hani kolaylaştırıyor diyelim. Bu konteks switching dediğimiz şey tabii ekstra bir süre kaybı demek.
+
+403
+01:40:10,452 --> 01:40:23,271
+Çünkü bir thread veya proses çalışıyor, ondan sonra diğerine sıra giriyor. Bunu şöyle düşünün, markette kasada bekliyorsunuz. İşte dört tane kişi var.
+
+404
+01:40:27,796 --> 01:40:54,836
+Kasiyer dedi ki, tamam hepiniz aynı anda alacağım. Bu kişinin 8 tane parçası, bunun 3 tane, bunun 4 tane, bunun 7 tane parçası olsun. Bu kişinin 8 parçasından 3'ünü aldı, tamam ikinci kişi versin dedi. 3'ten mesela önünden birinci aldı. Şimdi üçüncü ki bu kişinin 8'ini aldı, 5'i kaldı da bu 3'ünün hesabını bir yerde saklaması lazım. Hesap problemi var.
+
+405
+01:40:55,572 --> 01:41:16,372
+Context Switching'de. Ayrıca bir de zaman kaybı ortaya çıkıyor. Yani 8'ini bitirip öbürüne sıra gelebilir. Bazı durumlarda böyle problemlerle karşılaşabiliyoruz. Bunları okursunuz. Peki C'de thread nasıl oluşturulur? P-thread kütüphanesi vardır arkadaşlar. Thread'ı oluşturup şimdi örneklerine bakacağız. Bunun için include P-thread yazıyorsunuz.
+
+406
+01:41:21,811 --> 01:41:47,112
+Eş zamanlı olarak koşturmayı sağlayan bir kütüphane. Bunun özel fonksiyonları var. Öncelikle Crate. Bir thread oluşturmak için kullanılır. Buraya bir thread pointerı verilir. Örneklerimiz var şimdi. İstersek buraya threadin özelliklerini aktarıyoruz ki bu başlı başına bir derstir. Yani ne işletim sistemi dersinde yeteri kadar anlatılır ne bu derste anlatılır.
+
+407
+01:41:47,539 --> 01:41:56,380
+Şurada yapılacak işlemler baya baya çok detaylıdır. ManPages dediğimiz bir sayfa var. Onu incelerseniz.
+
+408
+01:42:05,108 --> 01:42:17,967
+Bakayım, şurada var galiba. Men diye Manuel Page. Mesela şu kitap, bu konuları çok çok detaylı anlatan bir kitap. Ücretsiz indirebiliyorsunuz.
+
+409
+01:42:18,739 --> 01:42:41,939
+Dediğim gibi çok başlı başlı bir şey. Şimdi bu thread çalıştığında hangi fonksiyon çalıştırılacak? Burada void pointer ile çalıştırılacak sizin f fonksiyonunuzu gönderiyorsunuz. Bir de o fonksiyona hangi argümanlar gönderilecek? Onlar söyleniyor. Bir de burada integer bir değer döndürülüyor. Eğer thread başarılı bir şekilde oluşturduysa size sıfır hata olduysa sıfırdan farklı bir hata numarası verecek demektir.
+
+410
+01:42:41,939 --> 01:42:45,939
+Tamam mı? Thread'i create ettiğinizde şöyle bir şey yazıyorsunuz.
+
+411
+01:42:47,155 --> 01:43:12,615
+Gelelim örnek. Worker bir fonksiyonum var. Benim thread ile çalıştıracağım şey, bu basit bir uygulama. Çalışan bir fonksiyon, işçi fonksiyonum. Diyorum ki bir tane thread'den bir thread, thread şeyinden kütüphanesinden bir ID oluşturdum. Bu mecbur. Sonra diyorum ki pthread create ID'nin adresini gönder. Bakın burayı null göndermiş. Bu null göndermek demek default değerleri. Çünkü dedim ya şu çok detaylı bir konu.
+
+412
+01:43:12,979 --> 01:43:38,500
+Yani bir iki tane ders üzerinde, hatta üzerinde doktor bile yapılır. Null, default değerler gidiyor. Thread fonksiyonu mu çalışsın diyor. Bakın bu ne demek? Bir fonksiyon pointerı göndereceğim demek. Ve buraya argüman olarak şu an hiçbir şey göndermiyorum. Null, bir şey yapma. Sadece I am thread function diye yaz. Eğer burada başarılı bir şekilde oluştuysa şunu yaz, değilse bunu yaz dedi.
+
+413
+01:43:39,188 --> 01:43:50,868
+Ve şurada da diyor ki, I am main function diyor. Bakın burada bir main'in execution flow'u, bir de şu thread function'in execution flow'u şu satırdan itibaren çalışacak.
+
+414
+01:43:51,788 --> 01:43:54,448
+Herhalde bunun örneği var da, şimdi bir çalıştırmaya çalışayım.
+
+415
+01:43:57,128 --> 01:43:58,688
+Nerededir? Şuradadır.
+
+416
+01:44:03,412 --> 01:44:07,712
+Saatimiz daha var değil mi? Yeter herhalde.
+
+417
+01:44:07,712 --> 01:44:13,912
+Dersler, ders notları, programımı.
+
+418
+01:44:23,667 --> 01:44:25,647
+Şuna bir bakalım. Herhalde bu olacaktı.
+
+419
+01:44:36,115 --> 01:44:38,416
+Yoksa buradan kopyalı yapıştır yaparız.
+
+420
+01:44:44,564 --> 01:44:54,564
+Bunu değerlerken, tabi Windows'da çalışan bir kütüphane p-thread. Bazıları çalışmaz. Bakın burada iki tane execution flow var arkadaşlar.
+
+421
+01:44:54,564 --> 01:45:09,260
+Tabii şöyle bakalım, durduruyorum. Bakın, I am main function, I am execution function. Bir main çalışıyor, bir thread function çalışıyor. İkisinin hangi sırada çalıştığı normalde...
+
+422
+01:45:09,427 --> 01:45:21,148
+Eğer ben bunu burada çalıştırdıysam, bu fonksiyonu mesela şurada çağırsaydım, thread function'u çağır deseydim bir yerde, normal bir fonksiyon çağırsa, önce bu çalışacak, bitecek, ondan sonra sıra buraya gelecekti.
+
+423
+01:45:21,148 --> 01:45:33,188
+Ama şu thread sayesinde biraz ondan, biraz ondan iş yapıyoruz. Mantığı anladık mı? Thread'le normal bir proses, yani şeyin fonksiyon çağrısının ne olduğunu.
+
+424
+01:45:34,676 --> 01:45:49,556
+Bunun hiçbir mekanizması yok. İşletim sistemi bunu yönetiyor. Hangi trede sıra geldiyse işlemciye o gidiyor. Onun içerisindeki printf yazan kod çalıştırılıyor. Bu şekilde program sonsuza kadar gidecek.
+
+425
+01:45:59,347 --> 01:46:09,167
+Uygulamadaki thread'in o anda çalışmamasından kaynaklı bir problem aslında. Bazen çöker, tekrar yeniden başlatmak falan gerekebilir. Bunlar normal şeylerdir.
+
+426
+01:46:09,167 --> 01:46:20,467
+Evet, yani biz bir tane fonksiyon yazacağız. Hatta bazen birden fazla fonksiyon yazacağız multi-thread uygulamalar için. Ama fonksiyonun burada özelliği şu olacak arkadaşlar.
+
+427
+01:46:21,300 --> 01:46:42,560
+Void türünde argümanlar almak zorundasınız. Ve döndüreceğiniz şey de void türde bir şey olacak. Niye void türde? Bu şey çalıştığında buradan geriye parametre döndürmeniz gerekebilir. Bu çalıştırılacak olan fonksiyon global parametreler içeren, yani parametre alan ve global parametre döndüren bir yapıda olması lazım.
+
+428
+01:46:47,572 --> 01:46:52,391
+Trade'i create edip bir tane thread'den bir değişken üretiyoruz.
+
+429
+01:46:53,091 --> 01:47:01,051
+Thread'in özellikleri varsa özelliklerini aktarız. Örneğin, thread'lerin özellikleri ne olabilir? Bekleme özelliği olabilir.
+
+430
+01:47:01,051 --> 01:47:08,252
+Ondan sonra, thread'lere priority dediğimiz priority atarız. O priority'yi mesela şurada görebiliriz.
+
+431
+01:47:08,627 --> 01:47:27,367
+Detaylardan baktığımızda bu çalışan proseslerin içerisinde priority atılır. Siz de burada threadlerinize priority falan gönderebiliyorsunuz ama çok detaylı bir şeydir bu thread properties dediğimiz. Hangi fonksiyon çalışacaksa onun adresi ve bu fonksiyona bir parametre gidecekse bu değerler gönderiliyor.
+
+432
+01:47:27,367 --> 01:47:29,587
+Şimdi bakalım bir diğer örneğimize.
+
+433
+01:47:33,268 --> 01:47:43,408
+Şuradan gidelim, ondan sonra geliriz. Bunu compile ederken, normalde arkadaşlar biz direkt programımızı filenames.c, deneme.c dedik.
+
+434
+01:47:44,768 --> 01:47:54,688
+O deneme.output olarak elde edelim. Fakat bu thread kütüphanesinde içerdiği için şurada arka planda bu ekleniyor. Zaten devsi bunu yapıyor.
+
+435
+01:47:54,688 --> 01:47:58,408
+P thread kütüphanesi. Dışarıdan gelen harici bir kütüphane olduğu için.
+
+436
+01:47:59,764 --> 01:48:24,743
+Bakalım başka bir şey var. Thread ID'den iki tane değişken oluşturmuş. Şurada ekstra kütüphaneler eklenmiş. Bu diyor ki bir şey yap. Yapacak şey işte thread'in kendisinin ID'sini alacak. Bu thread nokta ser hangi thread olduğunu size söylüyor. Şu ID'lerden hangisi. Çünkü burada iki tane thread çalışacak. Bir de main var toplamda üç tane arkadaşlar. Main'in kendisi bir thread'tir.
+
+437
+01:48:25,203 --> 01:48:39,543
+İki tane de burada şey var, üç tane. Sonra diyor ki, pThreadEqualTid'nin sıfırına eşitse, yani sıfırıncı threadse first thread proses yapıyormuş, değilse ikinci thread. Sonra şurada da bakın ne yapmış, bu nedir?
+
+438
+01:48:41,844 --> 01:48:42,703
+Şu neye benziyor?
+
+439
+01:48:46,899 --> 01:48:47,500
+Pointer.
+
+440
+01:48:49,899 --> 01:48:51,479
+Neydir? Pointer mi?
+
+441
+01:48:51,539 --> 01:48:52,579
+Pointer'a benzemiyor mu hocam?
+
+442
+01:48:52,939 --> 01:48:54,699
+Yok yok, oradaki for döngüsü.
+
+443
+01:48:57,719 --> 01:48:58,799
+Ne iş yapıyor?
+
+444
+01:48:59,819 --> 01:49:01,079
+Direkt noktalı bir gün koymuş.
+
+445
+01:49:03,759 --> 01:49:05,399
+Yani gecikme arkadaşlar.
+
+446
+01:49:05,859 --> 01:49:07,079
+Hiçbir şey yapma, bir gecikme.
+
+447
+01:49:07,559 --> 01:49:08,099
+Bu da ne demek?
+
+448
+01:49:08,756 --> 01:49:23,276
+Hangi thread mesela birinci thread çalışıyorsa şunu yapacak. Ondan sonra gecikme, beklemeyi alacak. İkinci thread çalışıyorsa şunu yazacak. Ondan sonra beklemeyi alacak. Yani burada 3 tane execution flow. Bir de diyeceğiz ki şurada da main çalışıyor.
+
+449
+01:49:23,891 --> 01:49:38,031
+Şimdi şurada program bitmeden önce diyor ki, gel yani main'in çalışması burada bir yerde biter. Niye? While şeyden küçükken bir tane thread oluştur. Eğer hata yoksa işte hata oluştu, değilse hata oluşmadı de.
+
+450
+01:49:38,676 --> 01:49:52,296
+i eşittir 0 için bunu yap, i eşittir 1 için bunu yap, i eşittir 2 yaptığında buraya gel ve şurada 5 saniye bekle sonra return 0 de. Yani main thread 1 ve thread 2 burada eş zamanlı olarak çalışacak.
+
+451
+01:50:04,083 --> 01:50:30,704
+Bakın, thread created successfully dedi. First thread processing, second thread processing, sonra thread created successfully. Güzel bir sonuç elde ettik. Şimdi arkadaşlar bakın. Birinci thread oluştu. Yani main çalışıyor. Şu an main aktif durumdadır. Şunu yazdığımda. Mikrofon main'dedir. Sonra sıra first thread'e geliyor.
+
+452
+01:50:31,152 --> 01:50:55,172
+First thread'e geldiği için şurada şunu yazıyor. Mikrofon bunda. Sonra bakın, bu sıra main'e geldi. Şunu create etti. Şuradan da geçti. Yalnız sıra main'den alınıyor. İkinci thread'e veriliyor. İkinci thread'de şunu görüyoruz. Halbuki biz önce şunu görüp sonra şunu göreceğimizi düşünebiliriz. Böyle bir şey yok.
+
+453
+01:50:55,859 --> 01:51:20,859
+Şu kod çalıştıktan sonra devreye bir thread daha girdiği için ne olacak? İkinci thread'de mikrofon olacak, sıra olacak ve şunu gördük. Ondan sonra ikinci thread'den main'e tekrar geri geldik. Bakın şunu yazdık. Sonra işte bu döngü tamamlandı. Main işte 5 saniye bitti. Ondan sonra bunların da şu kadar gecikmesi tamamlandı. Mesela burada şu fonksiyon.
+
+454
+01:51:21,395 --> 01:51:34,275
+İki defa çalıştırılıyor. Yani biz bir defa yazdık ama bir defa çağırmış değiliz. Ama iki tane ayrı ayrı bağımsız bir şekilde çalışan fonksiyon uzayı var. Mesela bir daha çalıştıralım.
+
+455
+01:51:38,131 --> 01:51:55,491
+Bakın, Thread Created Successful, First Thread. Bunu önce oluşturdu, sonra ikinci sıraya geçti. Yani bakın, main oluşturdu, şu satır yapıldı, sonra şunu da yapmasına izin verdi, ondan sonra gitti ikinci thread'in şu işlemi yapıldı. Farklı farklı sonuçlar görmemiz mümkündür.
+
+456
+01:52:03,923 --> 01:52:06,083
+5 tane olsun.
+
+457
+01:52:08,344 --> 01:52:17,264
+Ondan sonra, tabii orada ayrıca şeye bakmamız lazım. 1, 2, 3, 4, 5, yani gerçi 5 tane yaparsak, şurada da 5 tane diyelim.
+
+458
+01:52:20,756 --> 01:52:32,435
+execute compile. Tabii 1, 2, 3, 4, 5'i görmeyeceğiz. Bakın birden fazla thread oluşturdum. Tabii hepsinde second, second, second dedi de orada yani şunları yazmamız lazım.
+
+459
+01:52:32,975 --> 01:52:41,655
+İşte error, sıfır, error falan diye. 5 tane thread'in her birinin karşılığını görüyoruz. Tamam mı?
+
+460
+01:52:45,011 --> 01:52:45,851
+Şimdi gelelim.
+
+461
+01:52:49,211 --> 01:52:55,112
+Bir diğer şeye. Bunlar thread'in özellikleri. Thread'in selfie dediği şey, ID'sini döndürüyor size.
+
+462
+01:52:55,891 --> 01:53:06,412
+ID türünde. Bu equal, iki thread'in ID'sini karşılaştırmıyor. Nasıl biz stringleri doğrudan eşit eşit ile karşılaştırmıyorsak, burada da pthread equal'u kullanmamız lazım.
+
+463
+01:53:09,908 --> 01:53:34,047
+Eğer slip yazmazsak arkadaşlar, şöyle bir sonuç görürüz. Yani thread successful oluşturuldu. First thread processing, thread created successful dedi. Muhtemelen main fonksiyonu tamamlanacağı için, main'in tamamlanması ne demek? Programın tamamlanması demek. Mesela bunu kaldıralım. Program tamamlanınca.
+
+464
+01:53:34,836 --> 01:53:54,156
+İkinci thread vazifesini bitiremeden öldürülmüş oluyor. Hatta zombi falan proseslerde zombi proses falan diye de anlatılır. Burada thread'i vazifesini tamamlayamadan öldürüyoruz. Çünkü o bekleme ikinci thread'in vazifesini tamamlamayı söylüyor. Tabi bunun bir join şeyi var.
+
+465
+01:53:54,528 --> 01:54:10,728
+O join ile şu beklemeye gerek kalmadan onu halledebiliyoruz. Yani strip 5 dediğinde bu önceden öngörülebilir bir şey değildir. Yani 5 olur, 55 olur. Onun için biraz daha genel şey olan join ve exit şeylerini kullanacağız.
+
+466
+01:54:11,667 --> 01:54:34,927
+Önce Exit'ı söyleyelim. Başlangıç fonksiyonunda thread'in tamamlanmasını sağlıyorsunuz arkadaşlar. Thread'in görevi burada birisi diyebilirsiniz. Join'de de özellikle main fonksiyonunda bunu yazıyoruz. Program main'de çalışacak çalışacak. Bu join'i yazdığınızda join içerisine bir ID yazacaksınız. Thread görevini bitirmeden bundan sonraki satıra geçme demektir. Dolayısıyla Push Sleep'e gerek kalmıyor.
+
+467
+01:54:35,475 --> 01:54:50,935
+Ne zamanki threadler görevini bitirdi, kaç tane threadimiz varsa ondan sonra işlemler devam edecek demektir. Bunun da örneği şurada olması lazım. Evet. Bakın örnek yine aynı. İşte şurada return işlemleri var. Mesela ptr'de execute yap.
+
+468
+01:54:51,380 --> 01:55:17,119
+Birinci thread exit yaparken return olarak 100 değerini döndür. Bu da ne demek? Void pointer ile siz buradan 100 değerini döndürebiliyorsunuz ve bunu yazdırabiliyorsunuz. Bakın global bir şekilde buradan isterseniz integer döndürün, isterseniz karakter döndürün. Değer döndürmenin yoludur. Bakın bu integer geliyor, şurada da ekrana yazdırılıyor. Çok güzel bir şey bu. Bunu başka yerlerde de kullanabilirsiniz.
+
+469
+01:55:17,716 --> 01:55:44,735
+Şu Join sayesinde diyor ki Thread 0 görevini bitirmeden bundan sonraki satıra geçme. Bu bitirmeden sen de bundan sonraki satıra geçme. Dolayısıyla burada önce Thread 0 işini bitirecek. Ondan sonra Thread 1 işini bitirecek. Ondan sonra şu değerler yazılacak. Main Thread işini bitirecek ve program tamamlanacak. Termination'ın sırası. Şimdi bu örneği de göstereyim. Hemen bitireceğim. Hocamız da geldi.
+
+470
+01:55:45,684 --> 01:55:47,684
+Afta
+
+471
+01:55:52,404 --> 01:56:04,804
+Bu üç örnek, bu ders kapsamında işletim sistemleri dersine hazırlık olsun diye sizin bu kanıyı öğrenmeniz ve bununla alakalı kendinizi geliştirmeniz için yeterli olur.
+
+472
+01:56:04,884 --> 01:56:06,884
+Bakın, threadler başarılı bir şekilde oluşturulmuş.
+
+473
+01:56:08,663 --> 01:56:09,444
+Bunu görüyoruz.
+
+474
+01:56:10,463 --> 01:56:11,984
+Yukarıda threadler çalışıyor bakın.
+
+475
+01:56:13,984 --> 01:56:15,704
+Ne yapıyor o threadler bakalım.
+
+476
+01:56:17,171 --> 01:56:34,611
+Diyor ki, baya bir gez diyor. Yani şu FFFF kadar bunun sayısal değeri baya bir fazla. Gezecek. Yani o kadar bir bekleme yapacak. O beklemeyi keşke azalsaydık. Şimdi ikisi bir ona sıra geliyor, bir ona sıra geliyor. Yani hangisinde sıra bilmiyoruz.
+
+477
+01:56:43,347 --> 01:57:02,828
+Buradan exit yaparken şurada gelip takılıp bekleyecekler. Diğerinin bitirmesini bekleyecek. Mesela şu an baya bir sürdü. Gelin bunu şöyle yapalım arkadaşlar. Bu kadar FF olmasın. FF olunca ne olur? 255'e kadar dönsün mesela. Çok fazla değer döndürmeyelim. Bakın.
+
+478
+01:57:03,188 --> 01:57:22,547
+Bir thread oluşturuldu. Öbür thread şey, first thread işe başladı. İkinci thread oluştuldu. İkinci işe başladı. Sonra ilki işini bitirdi. Buradan çıktık. Ondan sonra ikincisi işini bitirdi. Değerlerini aldık ve bu şekilde bitirdik. Mesela şunu biraz daha arttıralım.
+
+479
+01:57:31,028 --> 01:57:58,268
+Biraz daha şey, beklemesi artıyor. Bu tarz uygulamalarla arkadaşlar, yani sistem programlama, işte low level seviye üzerinde örneğin siz bir cihaz yapacaksınız. Yani bir gömülü sistem tasarlayacaksınız. Threatler çok çok kullanılır. Bu açıdan ileride lazım olacak. Öğrenmeniz, şimdiden bakmanız tavsiye olunur. Burada Void Pointer'ın zaten geçen hafta konuşmuştuk. Ne olduğunu anlatıyoruz. Herhangi bir sorunuz var mı?
+
+480
+01:58:02,484 --> 01:58:03,544
+Hocam hoş geldiniz.
+
+481
+01:58:07,731 --> 01:58:30,532
+Sizin sorunuz yoksa benim söyleyeceklerim var. [öğrenci] sana cevap ayrıca yazacağım. Dengeli ağaç yüksekliği haş olan bir ağacın yapraklarının seviyesi haş ve haş eksi birse dengeli ağaç adını alır. Tamam. Şuradaki bahsettiğimiz şekilde bir ağaç için. Nerede? Şu. Bunda bir tane yaprak var. Dolayısıyla yapraklar yok.
+
+482
+01:58:31,444 --> 01:58:36,824
+Ağacı şu şekilde birden fazla yapraklarının olduğunu düşüneceksin.
+
+483
+01:58:38,544 --> 01:58:43,664
+O zaman hocam şöyle diyeyim. Dörtten bir ok çıkarım. Dörtten bir ok çıkarım. Mesela altı bağlayalım.
+
+484
+01:58:44,324 --> 01:58:46,944
+Şuraya değil mi? Ben şuraya pardon.
+
+485
+01:58:47,144 --> 01:58:53,344
+Göremiyorum şu anda. Evet. Bu durumda iki tane yaprak var. Dengeli mi mesela şu anda?
+
+486
+01:58:53,344 --> 01:58:59,004
+Yok yine dengeli değil. Yani yapraklar dediğim mesela şunun aslında yaprağı hiçbir şey yok.
+
+487
+01:58:59,572 --> 01:59:23,592
+Burada ağacın derinliği ile yaprakların derinliği arasında dengesizlik var. Düğümler derinliği arasında. Ağacın şu şekilde olması. O zaman tanım yanlış hocam. Tanım şöyle. Worst case'i tanım içermiyor. Tanımda eksik var. Evet, olabilir. Orada bahsedilen şey ağacın şu şekilde bir şey oluşturulması.
+
+488
+01:59:29,140 --> 01:59:30,988
+Şöyle bir ağaç olsaydı...
+
+489
+01:59:35,764 --> 01:59:48,724
+İşte bu dengeli midir, bu dengesiz midir? Ama bu worst case'i falan içermiyor. Bu işin worst case'i, yani en kötü durumu ağacın oluşturulurken linked liste oluşturulmasıdır. Bu da dengesizdir.
+
+490
+01:59:49,764 --> 01:59:57,644
+Hani o tanıma bu worst case'i de ekleyebilirsin. Mesela bunu eklediğinde yapraklar yine aynı sevdiği gibi. Halbuki yine en kötü durum var.
+
+491
+02:00:00,000 --> 02:00:11,160
+Yüksekliğe bakacaksın. Ağacın yüksekliğiyle yaprakların yüksekliği arasındaki dengesizlik üzerinden ayrıca tanım yapmak gerekir. Bunu araştırayım. Ben size ayrıca paylaşırım. Tamam mı?
+
+492
+02:00:13,100 --> 02:00:13,700
+Tamamdır hocam.
+
+493
+02:00:13,720 --> 02:00:27,000
+Gerçekten bizim şeyde vardır. Rosen'in kitabında başka bir tanım da vardır. Araştırayım. Şimdi sizin sorunuz yoksa benim söyleyeceklerim var arkadaşlar. Çok kısa. Gelecek hafta bize...
+
+494
+02:00:27,412 --> 02:00:52,632
+Telafiz sınavları diye bir şey söylendi. Onun için pazartesi günü ders yapamayacağım. Salı günü de muhtemelen ders yapamayacağım. Çünkü mesela bir pazartesi ders oluyor veya salı ders oluyor bazılarınızın. Ekstra belki soru çözmem gerekebilir mi? Pek zannetmiyorum. Yani bütün konuları ben bitirdim. Yums hocam ne yaptı bilmiyorum. Belki cumartesi günü.
+
+495
+02:00:53,235 --> 02:01:20,043
+Sınava yönelik değil de böyle kapsayıcı bir örnek üzerinden benim bir tane file ve structure'larla bir tane daha yaptığım, hazırladığım bir örnek vardı. Onu belki bir saat çözeriz gerek kalırsa. Pek zannetmiyorum gerek kalacağım. Çünkü bu yaptığımız örnekler de o konuda kapsıyor. Onun için gelecek hafta ders yapmayacağız. Bunu da söylemiş olalım. Böylece dönemi kapatmış olduk. Hepinize sınavlarınızda şimdiden başarılar dilerim. Bir şey olursa...
+
+496
+02:01:20,051 --> 02:01:36,072
+Google Classroom'dan bana ulaşırsınız. Yarınki sınav için de başarılar diliyorum. Varsa sorunuzu alayım. Yoksa tabii gelecek hafta şey var, laboratuvar var, onu söyleyelim. Bu hafta uygulama, gelecek hafta da laboratuvar olacak. Var mı arkadaşlar sormak istediğinizi söylemek istediğiniz herhangi bir şey?
+
+497
+02:01:36,912 --> 02:01:37,891
+Hocam çok kısa.
+
+498
+02:01:37,891 --> 02:01:38,971
+Buyurun.
+
+499
+02:01:40,532 --> 02:02:06,771
+2-3 hafta yoktum ben. Yaptım biraz. Malum durumdan sebeplerden. Çok sağ olun hocam. İyiyim şu anda. İşte 2-3 gündür, 1 haftadır biraz kendime geldim. Bugün de ilk ki ben bu dersi online almıyorum ama yine bir şekliyle yakaladım. Gerçi bunu ben bölüme yazsam daha iyi ya. Yani bu dersleri baştan sona takip edebilme durumum olmadığı için benimle alakalı olmayan sebeplerden ötürü.
+
+500
+02:02:07,283 --> 02:02:12,824
+Bir şekliyle bunu düzenli bir şeklinde bulabileceğim bir yer. Siz şimdi klaslumları kullanıyorsunuz.
+
+501
+02:02:12,824 --> 02:02:31,024
+Şu var. Biz online'a giremiyoruz da o yüzden hocam. Tamam, dersin kayıtları var. Size ben şunu, arkadaşlar linki de paylaşabilirler. Yapısal Programlama online ders kayıtları diye hafta hafta.
+
+502
+02:02:31,347 --> 02:02:42,248
+Bunları ben buraya ekliyorum linkleri. Geçen haftayı eklememişim. Onu şimdi eklerim. Bu haftayı da dersimiz bitsin eklerim. Bunları buradan bulabilirsiniz.
+
+503
+02:02:42,248 --> 02:02:43,887
+Teşekkür ediyorum.
+
+504
+02:02:44,088 --> 02:02:53,347
+Dönem başından bu yana. Ayrıca burada şeyler var işte. Slide'larımız var, haftalık kodlarımız var. Şimdi kodu da ekleyeceğim. Hatta aklımdayken ekleyivereyim.
+
+505
+02:02:53,747 --> 02:03:17,047
+Bütün şeyler arkadaşlar, bu klastörü linki vardır sizde. Ben ayrıca paylaşırım şu şeyden. Bu sizin güzelliğiniz. Ben bunu genel itibariyle olması ve diğer arkadaşların da faydalanması için belki bölüm buna, belki etmemiştir, bölüme bir yazılı başvuruyla ben bunu yapayım daha anlamlı olur. Şimdi size konuşurken. Yoksa sizinkini zaten bulurdum da ben.
+
+506
+02:03:21,747 --> 02:03:34,547
+Geçen dönemden beri oluşturdum. Şu klasörüm, verdiğim bütün derslerin aynı şekilde slide'larıyla, kayıtlar varsa kayıtlarıyla her şeyini bu şekilde tutuyorum. Güzel oluyor. Gelecek dönemlerden de faydalı olur diye düşünüyorum.
+
+507
+02:03:34,847 --> 02:03:36,927
+Çok güzelsiniz. Çok teşekkür ediyorum. Çok sağ olun.
+
+508
+02:03:36,967 --> 02:03:39,667
+Rica ederim. Var mı başka sorunuz arkadaşlar?
+
+509
+02:03:43,764 --> 02:03:49,043
+Peki size kolay gelsin Fatma Nur Hocam. Söz sizde. Ben sizi şimdi post olarak ayarlıyorum.
+
+510
+02:03:49,943 --> 02:03:52,623
+Tamam hocam. Bir beş on dakika içerisinde ben de başlayayım.
+
+511
+02:03:52,623 --> 02:03:58,123
+Tamam. Bir dinlenme olursak, yani arkadaşlar da dinlenmiş olur.
+
+512
+02:03:58,123 --> 02:04:00,844
+Onlar da toparlanana kadar. Tamam hocam.
+
+513
+02:04:01,423 --> 02:04:08,384
+Linki de, zaten link herkes de var. Diğer arkadaşlarından, diğer gruplardan arkadaşlar katılabilir arkadaşlar. Siz kendi grubunuzda.
+
+514
+02:04:08,851 --> 02:04:12,171
+Buranın linkini paylaşırsanız arkadaşlar gelsinler buraya.
+
+515
+02:04:14,692 --> 02:04:16,872
+Peki, kolaylıklar dilerim. Görüşmek üzere.
+
+516
+02:04:16,891 --> 02:04:18,912
+Anlayacağım. Görüşmek üzere. İyi günler.
+
+517
+02:04:22,579 --> 02:04:28,420
+[öğrenci] sana ayrıca ben geri döneceğim. Tamam mı? Veya bir yerden slide'da bir güncelleme yaparız.
+
+518
+02:04:30,520 --> 02:04:49,500
+Tamamdır hocam. Bence hocam şey, Banu Hoca da bu arada siz de aynı fikirde. Ben Banu Hoca dersen atırken itiraz etmiştim. Durumu şöyle olduğunu düşünüyorum. Bence tanım yanlış değil. Bence siz dengeli ağaçla dengeli ikili ağaç arasındaki tanım farklılığında şey atmıyorsunuz.
+
+519
+02:04:50,100 --> 02:05:09,880
+Tabii ikili ağaçta zaten dengelilikten bahsediyoruz. Ama ağaç deyince de zaten aklımıza link listenin daha özelleştirilmiş hali geliyor. Link liste gibi olmaması ağaçsa bunun işte şeyleri var, ne derler, yani yaprakları var bilmem nesi var. Ona göre bunun olması lazım.
+
+520
+02:05:11,412 --> 02:05:31,311
+Dediğinizi anladın mı? Mesela ben sadece şu an programlama mantığıyla düşünüyorsunuz. Genel uygulamalar açısından düşünüyorsunuz ama çok özel bir durum olur. Farklı bir yapı gerekebilir. Sonuçta programcılık çok genel bir alan. Dengeli ağaç tanımına uyuyorum olması lazım. Artı bir de sınavda çıkar düşüncesiyle.
+
+521
+02:05:31,311 --> 02:05:36,832
+Biz sınavda öyle bir şey sormayız. O konuda müsterih ol.
+
+522
+02:05:38,515 --> 02:05:40,615
+Şimdi şöyle bir şey yapacağım.
+
+523
+02:05:40,636 --> 02:05:41,176
+Teşekkür ederim.
+
+524
+02:05:43,155 --> 02:05:46,136
+[öğrenci] Bey söylemişken, şunu da aklımdayken.
+
+525
+02:05:46,756 --> 02:05:52,536
+Bugün hariç, bugün dersi bitmediği için şey olmaz, link çıkmıyor daha.
+
+526
+02:05:53,595 --> 02:05:57,576
+[öğrenci] Bey, şu an oradaki ders kayıtlarında 11 tane ders kaydımız var.
+
+527
+02:05:59,735 --> 02:06:02,996
+Şöyle de linkini nasıl alabilirim? Şuradan alabilirim herhalde.
+
+528
+02:06:04,372 --> 02:06:06,472
+Doğru yere mi yazdık? Doğru yere yazdık.
+
+529
+02:06:07,032 --> 02:06:13,432
+Bunların hepsi classroom'da değil mi hocam? Bir de biz uzaktan aldığımız için classroom'a da girebildik mi? Onu da hatırlamıyorum.
+
+530
+02:06:13,672 --> 02:06:18,872
+Yok, classroom bu benim kendi hesabım. Yani G-Drive hesabım. Oradan girebilirsiniz.
+
+531
+02:06:19,352 --> 02:06:24,672
+Aa, süper, süper. Yok, ben sizde varım zaten birçok derste de. Tamam, bunu da görürüm büyük ihtimalle.
+
+532
+02:06:24,672 --> 02:06:29,372
+Şöyle yapacağım. Neredeyiz? Bir dakika, Yapısal Programlama online ders.
+
+533
+02:06:30,228 --> 02:06:35,788
+Evet, bunu böyle alayım. Yapısal Programlama...
+
+534
+02:06:35,788 --> 02:06:40,688
+Basit haftanda sıra toparlayayım dedim bu dönem. 2-3 hafta yatınca her şey tersiz oldu ya.
+
+535
+02:06:41,528 --> 02:06:46,408
+İşte bu hastalık zaten insanı her şeyi planları alt üst ediyor.
+
+536
+02:06:47,168 --> 02:06:55,927
+Yemin ederim öyle hocam. Yani 2-3 hafta kıpırdayamadım. Böyle bir rezillik yok ya. Yani insan birçok şeyin ne kadar boş olduğunu o zamanlarda anlıyor.
+
+537
+02:06:57,492 --> 02:07:08,891
+Yani ben neredeyse bazı derslerimi, [öğrenci] yanlış da sana geldim, şey yaptım. [kişisel bilgi]
+
+538
+02:07:08,891 --> 02:07:12,152
+Biliyorum biliyorum. Biliyorum hocam. Böyle haberler aldım ama takılamadım.
+
+539
+02:07:12,971 --> 02:07:23,692
+Şu an şu klasörde, çetteki bu klasörde açtığınız zaman şey göreceksiniz. Yapısal programlama bütün şu an slide'lar, kodlar, app kaynaklar, ödev sonuçları hepsi var orada.
+
+540
+02:07:24,051 --> 02:07:38,271
+Eyvallah hocam. Çok teşekkür ediyorum. Çok teşekkür ediyorum. İlginizi anlatan. Geçmiş olsun. Çok sağ olun. Eyvallah. Evet arkadaşlar görüşürüz. Ben gidiyorum hadi. Kolay gelsin. İyi günler hocam.
+
+541
+02:19:44,724 --> 02:20:00,423
+Merhaba arkadaşlar. Bugün iki tane soru çözeceğiz. Bir tanesi küçük, minik bir örnek var. Diğeri de dosya işlemleri yapacağımız bir örnek.
+
+542
+02:20:03,084 --> 02:20:11,263
+Şimdi bu küçük bir ikircil örneğimizle başlayalım. Şimdi önce çizerek anlatayım size ne yapmaya çalışacağımızı.
+
+543
+02:20:13,203 --> 02:20:37,203
+Koordinat sisteminde iki tane nokta düşünün. Bir tanesi ikiye, iki de olsun. Bir tanesi de beşe, çok kalın olmuş. Beşe, yedi de olsun diyelim. Bu arada sesim geliyor, görüntüde sıkıntı yok değil mi?
+
+544
+02:20:39,347 --> 02:21:03,648
+Yok hocam, sorun yok. Tamam. Bu iki nokta için, Shirk-Hörs'e çözümle birlikte şunu kontrol edeceğiz. Biz, bir birim sağa ya da bir birim yukarı giderek, hareket yönümüz sadece yukarısı ve sağa olacak şekilde, bu noktadan, A noktasından, B noktasına acaba ulaşabiliyor muyuz? Bunu kontrol edeceğiz.
+
+545
+02:21:08,755 --> 02:21:18,455
+Şu noktayı vermiş olsaydım, mesela A'dan C noktasına sağ ve yukarı giderek gidemeyeceğim için fonksiyonumun return'ünün false olması lazım.
+
+546
+02:21:18,595 --> 02:21:22,876
+Ama B noktasının koordinatlarını girdiğim zaman, hatta C'yi de belirleyelim burada.
+
+547
+02:21:22,876 --> 02:21:26,155
+Direkt fonksiyonumuzu da denemiş oluruz.
+
+548
+02:21:27,675 --> 02:21:28,935
+Bu da eksi ikiye.
+
+549
+02:21:29,855 --> 02:21:32,655
+Yedi olsun, yedinin seviyesinde çizdik. Tamam.
+
+550
+02:21:34,515 --> 02:21:44,255
+Ne yapabileceğim? A'dan B'ye gidebileceğim. Ama C'ye gidemeyeceğim. Bunun kontrolünü yaptıracağım fonksiyonunu. Anlaştık mı? Soruyla alakalı bir problemimiz yoktur herhalde.
+
+551
+02:21:45,876 --> 02:21:56,956
+Şimdi, öncelikle noktalarımızı tanımlayalım. Hani sıra tanımlayıp point oluşturmayacağım küçük bir örnek olduğu için. Çünkü çok büyük bir problem çözmeyeceğiz.
+
+552
+02:22:01,043 --> 02:22:14,703
+X ve Y koordinatlarına gireceğim. Sors X değil de A yapalım. A noktasınınki. A'nın X'ine AX yazalım. A'nın X'ine 2.
+
+553
+02:22:21,299 --> 02:22:22,879
+Yes, ney, ikkje.
+
+554
+02:22:30,131 --> 02:22:34,452
+BX-Bash.
+
+555
+02:22:42,451 --> 02:22:46,451
+7'yi de gireceği için yapacağız.
+
+556
+02:22:53,203 --> 02:23:08,403
+C'ninki de x'i eksi 2, y'si de 7. Tamam. Bunu kontrol edecek bir şeyimiz olacak, fonksiyonumuz olacak. Şimdi bir ifhans bloğu yapalım. Burada fonksiyonumuzu çağıracağız.
+
+557
+02:23:14,291 --> 02:23:35,891
+Bu fonksiyon sağlıyorsa ne vereceğiz buraya? Source'un yani çıkış noktamızdan, hedef noktamızın x ve y koordinatlarını vereceğiz değil mi? Yani source ax'i vereceğiz. Buna göre yazacağız tabii ki fonksiyonunu. Şu anda yazmadık.
+
+558
+02:23:39,507 --> 02:23:48,188
+Source değil de test yapalım. Çünkü Source'umuz A olacak.
+
+559
+02:24:02,004 --> 02:24:05,844
+Doğru verdik değil mi? AX ve AY'yi verdik, BX ve BY'yi verdik. Tamam.
+
+560
+02:24:07,544 --> 02:24:12,844
+Eğer bu fonksiyon doğruysa demek ki biz bu noktaya gidebiliyoruz.
+
+561
+02:24:14,963 --> 02:24:22,924
+Diyelim ki nokta hedeften yok.
+
+562
+02:24:24,164 --> 02:24:25,244
+Kaynaktan.
+
+563
+02:24:27,252 --> 02:24:29,672
+Hedefe yol vardır.
+
+564
+02:24:34,131 --> 02:24:36,907
+Eğer aksi durum söz konusu olursa da...
+
+565
+02:24:43,827 --> 02:24:45,227
+Yol yok diyeceğiz.
+
+566
+02:24:48,915 --> 02:24:50,915
+Tamam, şimdi fonksiyonumuzu tanımlayalım.
+
+567
+02:24:54,388 --> 02:24:57,108
+Ne dedik? IsRetable Fonksiyonu.
+
+568
+02:25:18,484 --> 02:25:20,644
+Bunlar da tabii ki de integer olacak.
+
+569
+02:25:31,283 --> 02:25:37,043
+Şimdi bu fonksiyon recursive bir fonksiyon olacak. Şunu da şöyle kenara alalım.
+
+570
+02:25:40,003 --> 02:25:44,063
+recursive bir fonksiyonumuz olacak. Nasıl yapacağız bakalım.
+
+571
+02:25:45,804 --> 02:25:51,683
+Şimdi öncelikle base case'imizi yazacağız. Base case ne demek? Yani
+
+572
+02:25:51,683 --> 02:25:56,963
+sağlamadığı durumu yazalım.
+
+573
+02:25:58,420 --> 02:26:02,819
+Ne olursa bu şart yani isReachable şartı sağlayamıyor.
+
+574
+02:26:08,852 --> 02:26:23,572
+Hareket eden, yani kontrol ettiğim nokta, B noktasından eğer daha yukarıda olursa ya da B noktasından daha sağda olursa ben artık bu noktaya demek ki sağa yukarıya giderek ulaşamamışım demek değil mi?
+
+575
+02:26:36,852 --> 02:26:48,092
+Ay noktası büyükse By'den bu fonksiyon sağlamamış olacak. Yani sıfır dönebilirim.
+
+576
+02:26:53,907 --> 02:27:03,948
+Yani bu hangi şartta sağlanır? Yani B'den daha yukarıda şöyle bir nokta verirsem ben buraya birazcık şu tarafa alıp göstereceğim.
+
+577
+02:27:09,363 --> 02:27:10,463
+Şimdi yazalım.
+
+578
+02:27:14,932 --> 02:27:16,812
+Burada da bir D noktası olsun.
+
+579
+02:27:19,132 --> 02:27:23,772
+O da 7'de ve 9'da olsun.
+
+580
+02:27:24,551 --> 02:27:26,012
+Ne olacak bu D noktası?
+
+581
+02:27:26,835 --> 02:27:42,815
+B'den zaten yukarıda. Yani D'den çıkıp B'ye sağ ve yukarı giderek ulaşmam mümkün mü? Mümkün değil. Yani burada eğer öyle bir nokta verirsem bu case'de onu sağlamış, kontrol etmiş oluyoruz.
+
+582
+02:27:43,895 --> 02:27:48,795
+Şimdi onun dışında nasıl bir şeyimiz var, bir check'imiz daha olabilir?
+
+583
+02:27:53,268 --> 02:28:04,076
+Sağlamadığı durum, bir de sağladığı durum değil mi? Sağladığı durum ne? Yani gidebildiğim durum değil mi? AX'in...
+
+584
+02:28:07,123 --> 02:28:19,064
+AX'in BX'e eşit olduğu ve AY'nin BY'ye eşit olduğu durum. Değil mi? Bunu kontrol edelim şimdi.
+
+585
+02:28:36,659 --> 02:28:57,900
+Doğru olarak döneceğiz. Olmadığı durumda demek ki hala ben varış noktasına varamamışım. Yani bu iki kezden bir tanesinde olmadığı durum. Bir tanesinde sağladığı durumu yazdım. Ama ben A'dan 2'ye 2'yim ya. 2'ye 2 noktasını B ile karşılaştırdım. 2, 7'den büyük değil.
+
+586
+02:29:00,147 --> 02:29:26,147
+2, 5'ten büyük değil. Şurayı geçtim. Buraya sağlamadım. Çıktım buradan. Buraya geldim. 10. satırdayım. A'nın x'i ile b'nin x'i, y'si ile y'si birbirine eşit değil. Bu da sağlamadı. Çıktı. Şimdi ne yapacak? Ya sağa gidecek ya da yukarı gidecek değil mi? Ve tekrar bu fonksiyonu kontrol edecek. Yani kendini tekrar çağıracak. O zaman buradan...
+
+587
+02:29:36,084 --> 02:29:40,724
+Burada ne yapacağız? Direkt Return yapacağız. Kendini çağıracak.
+
+588
+02:29:44,244 --> 02:29:55,904
+Hangi noktalarla çağıracak? Ya x'i bir arttıracağım ya da y'yi bir arttıracağım. O zaman şöyle yapalım.
+
+589
+02:29:59,476 --> 02:30:10,695
+Burada iki tane seçmelim var. Ya da diyorum buraya, V demiyorum. İki tane opsiyonum var. Ya burayı çalıştıracak, şurayı, ya burayı çalıştıracak.
+
+590
+02:30:27,860 --> 02:30:36,560
+B, Y'yi gönderdik. Diğer opsiyonda da A, X'i değil A, Y'yi artıracağız.
+
+591
+02:30:45,876 --> 02:30:46,596
+Tamamız.
+
+592
+02:30:51,603 --> 02:30:54,823
+Bir saniye tek satası yaptık mı? Bir derleyelim bakalım.
+
+593
+02:31:02,195 --> 02:31:04,435
+Evet, nokta ne gibi normalistik.
+
+594
+02:31:11,891 --> 02:31:15,652
+Şimdi bir kontrol edelim bakalım.
+
+595
+02:31:19,540 --> 02:31:26,480
+Source AX, AY ile DEST B, DEST X, Y'yı şey yapacağız, deneyeceğiz.
+
+596
+02:31:28,540 --> 02:31:34,220
+A'yı ve B'yi çalıştırdığım zaman, A noktası ile B noktasını yaptığım zaman yolun varlığını buldu.
+
+597
+02:31:35,060 --> 02:31:39,300
+Şimdi bir de C'yi çalıştıralım.
+
+598
+02:31:45,587 --> 02:31:49,288
+Gerçi C'de sadece sağa giderek, çünkü ikisi de yedide.
+
+599
+02:31:51,288 --> 02:31:53,028
+C'de ulaşabilir.
+
+600
+02:31:53,028 --> 02:31:54,067
+Yine bakalım.
+
+601
+02:32:00,147 --> 02:32:04,427
+İki sede, yedi de, yedi eksi de.
+
+602
+02:32:09,971 --> 02:32:20,511
+Eşitlik şeyini koyduğumuz için C'yi de sağlamadı. Mesela B ile D'yi deneyelim. Bir tane de şuraya D koyalım.
+
+603
+02:32:28,468 --> 02:32:30,468
+D'ninki neydi? X'si yedi.
+
+604
+02:32:33,468 --> 02:32:35,968
+Y'si dokuzdu.
+
+605
+02:32:37,468 --> 02:32:43,288
+Şimdi burası artık sorsumuz bu olacak.
+
+606
+02:32:45,988 --> 02:32:49,028
+Yolun olmadığını görmek için yapıyoruz bunu.
+
+607
+02:32:59,059 --> 02:33:05,459
+Yolun olmadığını gösterdi. Yani doğru şekilde çalışıyoruz. Recursive olarak kontrolümüzü sağladık. Tamam mıyız?
+
+608
+02:33:16,115 --> 02:33:26,455
+Anlaştık mı? Tamam, diğer örneğimize geçelim. O zaman bunu kaydedeyim. Sizinle de paylaşırım. Burayı bir temizleyelim.
+
+609
+02:33:39,700 --> 02:33:42,240
+Şimdi bu örneğimizde de şöyle bir şey yapacağız.
+
+610
+02:33:44,680 --> 02:33:49,380
+Bir dosyadan veri okuyacağız. O dosyamız da şu.
+
+611
+02:33:51,860 --> 02:33:59,840
+ID'si, ismi, departmanı olan, yani bu bilgilere sahip satırları okuyacağız.
+
+612
+02:33:59,840 --> 02:34:04,720
+Ve bu listeyi ID'ye göre sıralayacağız. Yeni bir dosyaya kaydedeceğiz.
+
+613
+02:34:05,299 --> 02:34:06,680
+Anlaştık mı? Bunu yapacağız bugün.
+
+614
+02:34:10,932 --> 02:34:18,652
+Nasıl yapacağız? Önce main'den biraz başlayalım. İhtiyaç duydukça diğer fonksiyonlarımıza, ihtiyaç duyduğumuz fonksiyonları tanımlayacağız.
+
+615
+02:34:21,092 --> 02:34:23,812
+Öncelikle dosyayı okuyacağız değil mi?
+
+616
+02:34:26,412 --> 02:34:30,871
+Dosyayı okuma fonksiyonumuzu yazalım o zaman. Ya da öncelikle straktımızı oluşturalım.
+
+617
+02:34:32,692 --> 02:34:34,391
+Yapıyı nasıl okuyacağız?
+
+618
+02:34:44,852 --> 02:34:46,731
+Taça diyorlar.
+
+619
+02:34:51,731 --> 02:34:52,932
+IDC olacak.
+
+620
+02:34:57,907 --> 02:34:58,967
+İsmi olacak.
+
+621
+02:35:01,667 --> 02:35:02,448
+Elmi diyelim.
+
+622
+02:35:10,899 --> 02:35:14,759
+Departman olacak. 20 diyelim buna da.
+
+623
+02:35:16,139 --> 02:35:20,459
+Struct tutacak içinde. Çünkü biz bunu sıralayacağız ya.
+
+624
+02:35:22,819 --> 02:35:24,599
+Link list gibi düşünebiliriz.
+
+625
+02:35:32,211 --> 02:35:35,991
+Suralamayı umarım kafamızı karıştırmadan size aktarabilirim.
+
+626
+02:35:38,131 --> 02:35:45,211
+Şimdi, link listte bir head oluyordu, sonra o next işaret ediyordu falan ya, aynı şekilde çözümeyeceğiz bunda.
+
+627
+02:35:52,244 --> 02:35:59,283
+Şimdi data tipinde bir head oluşturuyorum. Tamam mı? Bu head'e de
+
+628
+02:36:02,995 --> 02:36:12,575
+FileRead diye bir fonksiyon yazacağız şimdi. Dosyadan okuduklarımı buraya atacağım.
+
+629
+02:36:15,376 --> 02:36:20,815
+Dataset.txt değil mi? Dosyamızın adı Dataset.txt. Evet.
+
+630
+02:36:22,755 --> 02:36:25,635
+Ve bu fonksiyona da nerede girilmesi gerektiğini.
+
+631
+02:36:26,708 --> 02:36:31,728
+Pardon, neye göre separate edeceğini söylememiz gerekiyor.
+
+632
+02:36:42,131 --> 02:36:44,152
+Şimdi bu fonksiyonu bir yazalım bakalım.
+
+633
+02:36:49,108 --> 02:36:55,328
+Ödevinizde de dosyadan okuma falan vardı. Ödeve başladınız mı, ilerlediniz mi, yaptınız mı bunu?
+
+634
+02:37:05,332 --> 02:37:14,812
+Burada şimdi straktın sonuna küçük harflerle data yazdım ya [öğrenci]. O yüzden bunu datayı kullanarak çağırabiliyorum straktı oluştururken. Bak şuradan.
+
+635
+02:37:15,132 --> 02:37:18,612
+Dokuzuncu satır diyor. Dokuzuncu satıra bir bakın. Data yazılışı ikimiz.
+
+636
+02:37:21,492 --> 02:37:28,752
+Tamam o şekilde de oluşturabilirim. Çünkü straktın data olduğu için nesnesini oluştururken de küçük data ile çağırabilirim. Yani bu hata vermez.
+
+637
+02:37:31,092 --> 02:37:34,332
+Hocam yukarıda bütün harflerin büyük, altta da bütün harflerin küçük yazdığını.
+
+638
+02:37:34,932 --> 02:37:39,712
+Tamam, büyük harfle yazdığımı anladım. Tamam, doğru söylüyorsun.
+
+639
+02:37:42,652 --> 02:37:47,692
+Biri büyük, biri küçük ya, onun sadece başının büyük olduğunu fark etmedim. Teşekkür ederim.
+
+640
+02:37:49,832 --> 02:37:54,412
+Şimdi, five week dosyasının fonksiyonunu yazacaktık.
+
+641
+02:37:54,835 --> 02:38:06,315
+Size sorumu tekrarlıyorum. Ödevinizde başladınız mı projede? File read operasyonları yaptınız mı? Yoksa ilk defa birlikte mi deneyeceğiz?
+
+642
+02:38:11,443 --> 02:38:12,843
+Başlamadınız herhalde.
+
+643
+02:38:15,683 --> 02:38:17,324
+İsmini aynı yazdık.
+
+644
+02:38:17,324 --> 02:38:23,723
+Şimdi aldığımız şey file name olacak.
+
+645
+02:38:39,059 --> 02:38:51,719
+Bu delimetre dediğimiz şey de ayrıştırmak için kullandığımız. Yani burada dosyada virgülle ayırmış ya. O yüzden biz de virgülle separate edeceğiz, parçalayacağız bu verileri.
+
+646
+02:38:53,719 --> 02:38:54,719
+Şimdi.
+
+647
+02:38:57,539 --> 02:39:04,860
+Burası zaten standart olan bir şey. Nedenin içini yok. Bu fonksiyonları kullanıyorum.
+
+648
+02:39:05,363 --> 02:39:06,863
+Dosya okurken.
+
+649
+02:39:11,316 --> 02:39:32,276
+Filename kullandım. Burada da sadece okuma yaptığımı belirtiyorum. Dosyadan sadece okuyacağım. Aynı dosya üzerinde değişiklik yapmayacağım. O yüzden sadece bu dosyayı okuyorum. Yeni bir dosyaya sıraladığımız listeyi kaydedeceğiz. Tamam mı?
+
+650
+02:39:34,932 --> 02:39:38,912
+Dosyadan okumak için kullanacağım bir buffer tanımlıyorum.
+
+651
+02:39:43,796 --> 02:39:44,315
+Sarna.
+
+652
+02:39:54,388 --> 02:40:12,227
+Bu ilk başta yarattığım şu head var ya, bu head'i okuma yapacağım satır kadar her seferinde genişleteceğim. İçerisinde tutacağı veri tipi data olduğu için. Her seferinde bir datalık genişletiyoruz listemizi.
+
+653
+02:40:14,227 --> 02:40:17,508
+Şurada noktalı virgülümüzü unutmuşuz, söylemiyorsunuz.
+
+654
+02:40:19,348 --> 02:40:21,488
+Bununkini yazdık, bununkini yazdık.
+
+655
+02:40:23,188 --> 02:40:37,968
+Şimdi neye ihtiyacım olacak? Şu anda elimde tuttuğum data. Bunları tabii ki ihtiyacımız oldukça tanımlasak daha anlamlı gelecek size ama ben ihtiyacımız olduğunu daha önceden tanımladığım için biliyorum.
+
+656
+02:40:37,968 --> 02:40:42,848
+Şöyle kullandıkça size niye kullandığınızı anlatacağım.
+
+657
+02:40:46,388 --> 02:40:49,668
+Çok affedersiniz. Hemen dönüyorum.
+
+658
+02:41:08,211 --> 02:41:09,511
+Geldik, kusura bakmayın.
+
+659
+02:41:16,051 --> 02:41:19,992
+Şimdi inşallah ödeminize de katkısı olur bu dosyadan okuma işlemi.
+
+660
+02:41:26,484 --> 02:41:36,164
+Şimdi if'in içinde kontrol ediyorum. Neyi kontrol ediyorum? Fgetle dosyadan okuma yapıyorum. Neyin içine? Tanımladığım buffer'ın içine.
+
+661
+02:41:40,755 --> 02:41:46,635
+Size'ını veriyorum buffer'ın. Ve fp dediğimde bu dosyayı oluşturdum ya.
+
+662
+02:41:48,255 --> 02:41:57,295
+File'ı belirtiyorum bu dosyadan okuyacaksın diye. Ve bu fonksiyonun eğer dönüşün nala eşitse demek ki dosyada bir şey bulamadı demek.
+
+663
+02:41:57,295 --> 02:42:03,175
+Ama dosyada okuduğu ve return yaptığı şey nala eşit değilse.
+
+664
+02:42:04,084 --> 02:42:12,604
+Demek ki içinde veri var demektir. Ve bunu kontrol ettikten sonra içinde artık bufferın içinde şuradan sonra okuduğu veriyi bufferın içine kaydetti.
+
+665
+02:42:13,104 --> 02:42:19,283
+Bufferın içinde veriler var. Ben bu verileri parçalayacağım ve listeme kaydedeceğim.
+
+666
+02:42:21,024 --> 02:42:30,524
+Şimdi bunu çalıştırırken bakarız. Bakalım neler okuyor diye. Satır satır doğru okuyor muyuz, doğru veriyle uğraşıyor muyuz diye.
+
+667
+02:42:32,755 --> 02:42:37,755
+Her seferinde ben bu buffer'ı print edeyim.
+
+668
+02:42:39,755 --> 02:42:46,755
+Ve şu anda current data'ı da current data'ı yazmamışız.
+
+669
+02:42:46,755 --> 02:42:49,755
+current data'ı yazmamışız.
+
+670
+02:42:49,755 --> 02:42:53,755
+current data eşittir diyorum şu andaki derim.
+
+671
+02:42:59,188 --> 02:43:01,047
+Çok pardon, satır atladım.
+
+672
+02:43:02,628 --> 02:43:07,188
+Şimdi bunu yazdık. Bunu yaptıktan sonra siz de hiç, hocam ne saçmalıyorsunuz demiyorsunuz.
+
+673
+02:43:07,188 --> 02:43:11,028
+Bunu yaptıktan sonra bufferdaki elemanları separate edeceğim değil mi? Parçalayacağım.
+
+674
+02:43:11,868 --> 02:43:17,528
+O zaman split fonksiyonu çalıştırmam lazım. Burada bir split fonksiyonuna ihtiyacımız var.
+
+675
+02:43:20,724 --> 02:43:26,963
+Ne alacak içine? Link listemin başına alacak. İçinde veriyi okuduğum ereyi alacak.
+
+676
+02:43:27,384 --> 02:43:32,824
+Ve hangi parametreye göre parçalayacağımı alacak. O da şurada tutuluyor. Bunu gönderdim.
+
+677
+02:43:33,304 --> 02:43:38,724
+Buffer'ı yeni okudum. Şu anda okuduğum satır bunun içinde. Head de benim listem. Tamam mı?
+
+678
+02:43:39,184 --> 02:43:40,564
+Burada oluşturduğum listem.
+
+679
+02:43:41,384 --> 02:43:42,744
+Delimetre ne işe yarıyor hocam?
+
+680
+02:43:43,064 --> 02:43:47,644
+Delimetre, şimdi bak demin söyledim. Burada virgülle ayırdık ya verileri.
+
+681
+02:43:48,371 --> 02:44:04,211
+Dört virgül, alivirgül, blm diyoruz. Şimdi ben bunu okurken hangi sütün neye ait mesela dört idsi, bir virgülden sonraki ismi bunları ayırt edebilmem için arada bir pars edebileceğim bir karakter olması lazım.
+
+682
+02:44:04,659 --> 02:44:23,559
+Burada virgül kullanılmış. Ben de virgüle göre pars edeceğim, parçalayacağım veriyi. İlk virgül gördüğüm anda diyeceğim ki, virgül görene kadar okuduğum değerler bu ilk atayacağım parametreye ait. Sonra bu virgül gördükten sonraki okuyacağım değerler başka bir parametreye ait. Anlaştık mı? Ona göre pars edeceğiz.
+
+683
+02:44:23,920 --> 02:44:24,920
+Anladım. Çok teşekkür ederim.
+
+684
+02:44:24,939 --> 02:44:28,659
+Delime itirama şey yaptınız hocam, virgül yapmadınız miyide çağırırken?
+
+685
+02:44:30,000 --> 02:44:30,500
+Şöyle yaptım.
+
+686
+02:44:30,500 --> 02:44:31,619
+Vurgül yapmıştım. Evet, tamam.
+
+687
+02:44:32,211 --> 02:44:39,231
+Tamamdır. Şimdi sprit fonksiyonumuzu yazacağız. Ondan sonra buradan devam edelim. Tamam mı?
+
+688
+02:44:49,012 --> 02:45:02,072
+Bu arada buna gerçekten şey yapın, bu kodlara aşina olun. Çünkü büyük ihtimalle öbür laboratuvarınızda da bir veriyi dosyadan okuyup bir işlem yapmanız istenecek. Tamam mı?
+
+689
+02:45:04,112 --> 02:45:09,632
+Şimdi split fonksiyonunda ne gönderdik biz parametre olarak? Head'i gönderdik.
+
+690
+02:45:10,015 --> 02:45:20,335
+Folder diyoruz buna, data tipinde. Buffer gönderdik. Karakter Erey'i 255 boyutunda. Çünkü Buffer'ı da 255 olarak tanımladık.
+
+691
+02:45:20,335 --> 02:45:29,855
+Maximum 255 gelecek. Bu da delimetrimiz. O da uzunluğu 2 olan bir karakter Erey.
+
+692
+02:45:42,291 --> 02:45:44,291
+Böyle bir şey oluşturuyorum.
+
+693
+02:45:46,631 --> 02:45:49,912
+Bu oluşturduğum parametre eşittir diyeceğim.
+
+694
+02:45:53,491 --> 02:45:56,691
+strok fonksiyonuna.
+
+695
+02:45:58,211 --> 02:46:00,391
+Bunun içine de ne vereceğim?
+
+696
+02:46:00,471 --> 02:46:02,371
+Şimdi bu fonksiyonun ne yaptığını söyleyeceğim size.
+
+697
+02:46:02,531 --> 02:46:05,231
+Buffer'ı vereceğim. Veriyi okuduğum buffer'ı.
+
+698
+02:46:06,572 --> 02:46:08,231
+Ve pars edeceğim.
+
+699
+02:46:08,979 --> 02:46:20,079
+Ayrıştırma şeyini vereceğim. Karakterine virgüle göre parset diyorum. Bu fonksiyonu arkadaşlar, buraya da yazalım siz çalışırken görmüş olun.
+
+700
+02:46:37,811 --> 02:46:43,272
+Sanırlayıcı karakterleri kullanarak, yani bu sanırlayıcı karakterler dediğimiz virgül.
+
+701
+02:46:47,059 --> 02:46:48,479
+Alt satıra geçelim.
+
+702
+02:46:50,880 --> 02:46:52,059
+Kullanarak...
+
+703
+02:46:57,396 --> 02:46:59,396
+CTL parametresi
+
+704
+02:47:04,115 --> 02:47:16,435
+Ve gösterilen karakter dizisini parçalar. Biz burada STR ile değil, Vaf olarak gösterdik.
+
+705
+02:47:21,139 --> 02:47:26,020
+Şunu da bofru yazmamışım. Sadece oluşturduk.
+
+706
+02:47:30,644 --> 02:47:39,583
+Tamam mıyız? Yani bu fonksiyonun içine ben buffer'ı veriyorum, bir de delimetre veriyorum. Bana virgüle göre karakteri parçalıyor.
+
+707
+02:47:39,583 --> 02:47:42,724
+Karakter diyorum, diziyi parçalıyor. Tamam mı?
+
+708
+02:47:45,283 --> 02:47:55,583
+Sonrasında, folder'ımız var ya bizim yani head'imiz. Onun ID'si,
+
+709
+02:47:57,971 --> 02:48:07,992
+Eşittir diyeceğim. Atoy fonksiyonunu çağıracağım. Token içerisine okuduğum veriyi veriyorum. Bu ne işe yarıyor? Bunu da yazalım.
+
+710
+02:48:13,075 --> 02:48:21,015
+Atev fonksiyonu da içine aldığı string parametreyi intijre çeviriyor. Tamam mı?
+
+711
+02:48:24,435 --> 02:48:46,716
+desem özetlemiş olurum herhalde. İçine aldığı token parametresi ne şu anda? Karakter okuyor değil mi? Karakteri integer'a çeviriyor. Çünkü bizim folder id dediğimiz değer id integer bir return'ı olduğu için, veritip olduğu için ato ile bu fonksiyonu kullanarak string'i integer'a çeviriyoruz.
+
+712
+02:48:46,716 --> 02:48:50,556
+Şimdi sıradaki elemanı alacağız.
+
+713
+02:48:52,371 --> 02:49:03,011
+Şimdi bununla, şununla ilk satırı okuduk ya, şey ilk parametreyi okuduk ya, şimdi bir sonrakini de artık şöyle yapacağız.
+
+714
+02:49:04,531 --> 02:49:05,991
+Yine token eşittir diyeceğim.
+
+715
+02:49:14,611 --> 02:49:16,831
+Bu arada şurada bir tane daha t var.
+
+716
+02:49:16,831 --> 02:49:19,252
+t okey. Tamam.
+
+717
+02:49:22,092 --> 02:49:25,531
+Burada artık buffer vermeyeceğim. Çünkü artık bu fonksiyon
+
+718
+02:49:26,227 --> 02:49:46,647
+Bu file bitene kadar her seferinde token'ın içerisine bu delimetri kullanarak bir kelime atıyor tamam mı? O virgülle pars ettiği kelimeleri atıyor. Ama artık ben buffer'ı tekrar tekrar vermeme gerek yok. Bir kere veriyorum. Daha sonra kullanacağım şeylerde null ifadesini çağırıyorum fonksiyonda.
+
+719
+02:49:48,647 --> 02:49:50,827
+Ve delimetri veriyorum tekrar.
+
+720
+02:49:53,043 --> 02:49:53,984
+Anlaştık mı?
+
+721
+02:49:57,620 --> 02:49:58,600
+Buraya da yazalım.
+
+722
+02:50:02,067 --> 02:50:03,827
+Neden mal kullandık?
+
+723
+02:50:14,772 --> 02:50:16,364
+İlk çağrı
+
+724
+02:50:36,788 --> 02:50:37,728
+Şöyle yazalım.
+
+725
+02:50:39,888 --> 02:50:58,008
+Nal ile çağırdınca ilk olarak verdiğimiz buffer dizisini parçalamaya devam edecek.
+
+726
+02:50:59,927 --> 02:51:00,548
+Tamam mı?
+
+727
+02:51:03,796 --> 02:51:16,216
+Tamam, bakın okuduk. Şimdi artık string kopyalama yapacağız. Bunu okuduk. Bu okuduğumuz hangi parametre şu anda? Artık ismini okuyoruz. Sonra departmanını okuyacağız.
+
+728
+02:51:24,435 --> 02:51:43,435
+Neymi, yani sağdakini sola kopyalıyoruz. Takının içindeki parametreyi buna kopyaladım. Şimdi tekrar aynı işlemi yapıyorum. Tekrar bir okuma yapacağım. Okudum. Ondan sonrasında...
+
+729
+02:51:53,747 --> 02:51:59,847
+Şimdi artık satır sonuna geldim ya bir sonraki satıra geçeceğim. Şunu eklememiz gerekiyor.
+
+730
+02:52:20,948 --> 02:52:27,887
+Sonrasında bunu departman yapacağız. Küçük harfle mi yazdık, büyük harfle mi yazdık, küçük harfle yazmışız.
+
+731
+02:52:28,668 --> 02:52:34,427
+Departmanda takına eşit olacak. Tamam. Zaten void bir fonksiyondu.
+
+732
+02:52:34,427 --> 02:52:38,427
+Bu fonksiyonun başlangıcını atmamışız.
+
+733
+02:52:50,036 --> 02:53:14,276
+Tanınmadık. Şöyle bir tekrar bakalım bir sıkıntımız var mı? Tanınmadık. Buffer'ı ve denimetre'i verdik. İntegre'e çevirdik. Okumaya devam ettik. Null parametresiyle sonra onu değerini verdik. Neyimi okuduk. Sonra tekrar okuduk. Yaptık. Departmanı da verdik. Tamam.
+
+734
+02:53:15,443 --> 02:53:17,943
+Şu anda doğru gibi gözüküyor.
+
+735
+02:53:24,948 --> 02:53:30,448
+Şimdi kaldığımız yerden devam edelim. Adını da doğru yazdık değil mi? Tamam.
+
+736
+02:53:30,448 --> 02:53:39,948
+Bu konusunu çalıştık. Artık head'in içerisinde bunları okumuş olduk.
+
+737
+02:53:45,492 --> 02:53:47,132
+Elin içerisine okuduk.
+
+738
+02:54:10,131 --> 02:54:22,611
+Şimdi devam edelim. İlk başta previews data dediğimiz şeyi değişikleyeceğiz. Sonra.
+
+739
+02:54:25,907 --> 02:54:27,948
+Okumaya devam edeceğiz yine tamam mı?
+
+740
+02:54:29,948 --> 02:54:31,167
+Burada yaptığımız gibi.
+
+741
+02:54:37,332 --> 02:54:43,652
+Burada sadece hediğin içine bir tane okuduk. Ondan sonrasında okumaya devam ediyoruz.
+
+742
+02:54:56,435 --> 02:54:58,835
+Bir yazayım ondan sonra size açıklayacağım.
+
+743
+02:55:49,492 --> 02:55:50,452
+Ne yaptık şu an?
+
+744
+02:55:53,171 --> 02:55:58,871
+İlk önce head'i okuduk. Initial değerimizi aldık. Sonra previous data'yı head'e eşitledik.
+
+745
+02:55:59,551 --> 02:56:03,992
+Sonra tekrar bir okuma yaptık. O anda okuduğumuz data'yı current data'ya eşitledik.
+
+746
+02:56:04,152 --> 02:56:09,631
+Previous data'nın next'i yani previous data da head'e eşitli. Head'in next'i current data oldu.
+
+747
+02:56:10,231 --> 02:56:12,231
+Sonra bu current data'yı split yaptık.
+
+748
+02:56:12,628 --> 02:56:30,828
+Ayırdık parçalara. Yani içindeki parametreleri kürünük datanın extract yapısı oluşturmuştuk. Onları eşitledik. Şu fonksiyonda yaptığımız gibi. ID'sini, name'ini, departmanını. Ondan sonra da previous datayı da bir sonraki kürünük datayı eşitledik. Normalde anlaştık değil mi bu konuda?
+
+749
+02:56:32,828 --> 02:56:37,148
+Head vardı. Sonra bunu prev yaptım.
+
+750
+02:56:39,252 --> 02:56:53,092
+Ondan sonra Prev'nin neksine bir şey ekledim. Niye ekledim? Current'ı ekledim. Tamam mı? Sonra current parametresini ne yaptık? Previous data'nın neksi current oldu.
+
+751
+02:56:53,092 --> 02:57:01,092
+Onun parçaları ayrıldık. Sonra artık Previous diye ifade etti. Parametreyi current eşitledim. Yani şu parametre...
+
+752
+02:57:02,004 --> 02:57:29,564
+Head'i işaret ettiği için aslında biz şu current'ı head'e eklemiş olduk. Burada current. Ama bu aynı zamanda previous olarak head'i gösteriyordu. Artık bunu gösteriyor. Yani listenin sonu şu an head. Ondan sonra current item'i ekledi. Şu anda liste sonu bunu gösteriyor. Prev. Prev node artık bunu işaret ediyor. Prev node'una bir şey eklediğim zaman ben buraya eklemiş olacağım.
+
+753
+02:57:30,004 --> 02:57:35,043
+Anlaştık mı? Prem nodunda aslında şu anda liste sonunu tutuyoruz.
+
+754
+02:57:38,579 --> 02:57:50,800
+Bunu yaptık. Bütün şey bitti. Artık dosyadan okuma yapamayıncaya kadar bu vayenin içinde bunu yaptı. Dosyadan okuma yapamayınca bitti artık. Prev nodunu.
+
+755
+02:57:55,891 --> 02:58:06,131
+Next'ini nala eşitliyoruz. Yani artık Next'inde bir şey yok. Prev nodunun işaret ettiği nod artık son nod demiş oluyoruz.
+
+756
+02:58:07,391 --> 02:58:12,992
+F-close'la da şurada açtığımız dosya bağlantısını sonlandırdık.
+
+757
+02:58:13,912 --> 02:58:18,912
+Return olarak da listemizin başını yani head nodunu geri dönüyoruz.
+
+758
+02:58:18,912 --> 02:58:23,591
+Anlaştık mı? Çünkü bu listenin başı
+
+759
+02:58:27,667 --> 02:58:37,327
+Head nodu. Bunun içine ne kadar eklersen ekleyeyim. Bu listenin başı head. Ve dönüşte de head'i döndü. Tamam mı? Anlaştık mı?
+
+760
+02:58:40,755 --> 02:58:47,495
+Yani read okuduk ve bu head'in içerisinde artık benim bir listem var. İçinde verileri tutuyorum.
+
+761
+02:58:48,775 --> 02:58:56,435
+Şimdi sırada ne var? Önce bunu bir şey yapalım. Bir print fonksiyonu yazalım buraya.
+
+762
+02:58:58,775 --> 02:59:02,736
+Şu listeyi bir şey yapsın bize. Göstersin.
+
+763
+02:59:08,852 --> 02:59:10,852
+Şimdi fonksiyonunu da yazalım.
+
+764
+02:59:19,763 --> 02:59:22,423
+Bir çalıştıralım bakalım okuma yapabildik mi?
+
+765
+02:59:23,863 --> 02:59:25,703
+Tahtadaki örneğe de okuduk.
+
+766
+02:59:30,868 --> 02:59:39,628
+Nereye kadar gideceğim şimdi? Head nula eşit olmadığı yere kadar değil mi? Çünkü bir sonraki nodu, artık bittiği nodu nala eşitlemişti.
+
+767
+02:59:41,628 --> 02:59:47,568
+Nala olmadığı müddetçe bunun içinde veri var diyeceğim ve ben bunu basacağım. Ekrana yazdıracağım.
+
+768
+02:59:48,788 --> 02:59:49,568
+IDC
+
+769
+02:59:56,051 --> 02:59:56,731
+Neyim?
+
+770
+03:00:35,572 --> 03:00:45,752
+Bunu yaptık. Sonra en sonda ne olacak? Head eşittir artık. Head'in next'te işaret ettiği veri artık. Bir sonraki veri olacak.
+
+771
+03:00:47,832 --> 03:00:49,732
+Tamamdır. Bunu da yaptık.
+
+772
+03:00:51,352 --> 03:00:52,392
+Derleyelim bakalım.
+
+773
+03:00:54,332 --> 03:00:54,932
+Ne diyor?
+
+774
+03:01:13,843 --> 03:01:15,523
+Hocam parantezi yanlış yeri açmışsınız.
+
+775
+03:01:15,683 --> 03:01:16,304
+Burası. Şunu aynı.
+
+776
+03:01:16,304 --> 03:01:17,123
+Bak burada sonra aynı.
+
+777
+03:01:19,984 --> 03:01:22,943
+Tamamdır. Tekrar bir dergileyelim.
+
+778
+03:01:24,343 --> 03:01:25,484
+Tamamdır. Çalıştı.
+
+779
+03:01:26,263 --> 03:01:28,584
+Dosyayla aynı yerde mi bir ona bakalım.
+
+780
+03:01:35,283 --> 03:01:38,084
+Doğru yerde, tamam. Çalıştıralım bakalım.
+
+781
+03:01:39,664 --> 03:01:46,804
+Şimdi, her okuduma yaptığında okuduğun satırı yaz demiştim. Onları yazmış. Dört tane satır vardı zaten.
+
+782
+03:01:47,064 --> 03:01:53,764
+Sonra okuduklarını aynı şekilde bizim istediğimiz parametrelerle, bizim istediğimiz görüntüyle çıktısını da aldık.
+
+783
+03:01:53,764 --> 03:01:57,863
+Şimdi biz bunu sıralayacağız ve sıralı bir şekilde çıktısını görmek isteyeceğiz.
+
+784
+03:01:58,904 --> 03:02:01,724
+Dosyadan okuduk sorunsuz bir şekilde. Anlaştık mı?
+
+785
+03:02:02,899 --> 03:02:06,840
+Şimdi sorting yapacağız. Sort algoritmamızı yazalım.
+
+786
+03:02:11,283 --> 03:02:12,108
+Allah'a emanet olun.
+
+787
+03:02:15,219 --> 03:02:32,879
+Sort da gene data tipinde bir şey, not dönsün. Sort data diyorum. Başına bir öncelikli listemizi göndereceğiz. Ondan sonra içerisine function pointer ile
+
+788
+03:02:38,739 --> 03:02:43,299
+Bir şey göndereceğiz. Büyükten küçüğe mi, küçükten büyüğe mi seçeneğinden.
+
+789
+03:02:44,579 --> 03:02:46,420
+Bunu da defalarca yaptık.
+
+790
+03:03:02,644 --> 03:03:08,963
+Sort Condition dedik. Integer-Rail tipinde dönüşü olacak. Tamam.
+
+791
+03:03:14,004 --> 03:03:32,844
+Ne diyoruz şimdi? Eğer if'in içinde head'imiz nalsa ya da head'in next'i nala eşitse
+
+792
+03:03:39,924 --> 03:03:49,404
+return head yapacağız. Artık yani burada sıralanacak bir şey yok demek yani bu. Şimdi birazcık yazayım ondan sonra üzerinden anlatacağım.
+
+793
+03:03:51,703 --> 03:04:05,523
+İlk olarak, şimdi sıralama yapacağız ya, maksimum olarak neyi alacağım ben? Tabii ki de elimde var olan datayı alacağım. Head'in ilk id'sini ben maksimum olarak kendime atacağım.
+
+794
+03:04:06,515 --> 03:04:09,316
+Maksimum değişkenimin içerisine.
+
+795
+03:04:10,316 --> 03:04:15,956
+Sonrasında yine başka parametrelere ihtiyacım var.
+
+796
+03:04:15,956 --> 03:04:18,515
+Rev ilk başta head olacak.
+
+797
+03:04:20,796 --> 03:04:29,996
+Sonra data to move olarak bir değişken tanımlamışız.
+
+798
+03:04:33,299 --> 03:04:42,199
+Data Temporary dediğimizde, Head'in Next'ini işaret edecekmiş.
+
+799
+03:04:47,507 --> 03:05:03,667
+Şimdi, ilk önce yapmaya çalışacağım. Dizinin içerisinde maksimum elemanı bulmaya çalışacağım.
+
+800
+03:05:21,523 --> 03:05:29,244
+Şimdi burada invest dediğimiz şey ne? Yani kalanında şimdi head'i biz maksimum olarak aldık ya, onun devamında bütün listeleri kontrol edeceğim.
+
+801
+03:05:29,783 --> 03:05:31,904
+Maksimum elemanı bulacağım. Tamam mı?
+
+802
+03:05:39,476 --> 03:05:41,996
+Zaten bitiş noktamın alayışı olması durumu.
+
+803
+03:05:42,916 --> 03:05:45,276
+Şimdi, ipin içine geldim.
+
+804
+03:05:45,676 --> 03:05:49,136
+Sort condition'ın ne olursa artık şu anda bilmiyoruz.
+
+805
+03:05:52,316 --> 03:05:55,016
+Condition, büyükten küçüğe ya da küçükten büyüğe.
+
+806
+03:05:55,256 --> 03:05:58,996
+Yani max değil de minimum da olabilir ama biz yine de ona max eleman diyoruz.
+
+807
+03:05:59,076 --> 03:06:00,796
+Max ya da minimum olacak.
+
+808
+03:06:02,076 --> 03:06:03,576
+Sort condition'ın içine ne vereceğiz?
+
+809
+03:06:03,968 --> 03:06:13,228
+O anda kontrol ettiğim Temporary'nin ID'sini vereceğim. Ve de Max'ı vereceğim yanımda da değil mi? İkisini kontrol edecek. Hangisi Max'a bana onu dönecek.
+
+810
+03:06:14,308 --> 03:06:24,548
+Yani daha doğrusu hangisi Max'a onu dönmeyecek de bu Temporary'i ID'yi atıyorum bundan büyükse o zaman Maximum değerini değiştireceğim.
+
+811
+03:06:24,628 --> 03:06:29,228
+Yani şu Sort Condition True'u dönerse içeriye giriyorum.
+
+812
+03:06:31,667 --> 03:06:35,927
+Maksimum değerim eşit olacak benim artık Temporary ID'ye değil mi?
+
+813
+03:06:40,435 --> 03:06:58,216
+Bunu tuttum. Sonra, to move diye kullandığım değişkenimi de, şimdi burada tmp diye söylediğimiz şey neydi? Headin next değil mi? Yani bir sonraki kontrol edilecek eleman.
+
+814
+03:06:58,675 --> 03:07:18,315
+Peki, prev nodum neydi? Başlangıçtaki nodum, head'im. Yani aslında şu anda ben listemde birinci elemanla ikinci elemanı kontrol ediyorum. Şimdi eğer ikinci eleman birinci elemandan büyükse ne yapacağım? Değerini tuttum maksimumun içinde. Tumuğu da bunun için kullanacağız bu şeyi.
+
+815
+03:07:23,059 --> 03:07:27,839
+Yani aslında o nasıl diyeyim? Şöyle yapacağız. Göstermem lazım olan.
+
+816
+03:07:36,244 --> 03:07:46,004
+Şöyle üç tane nodum olsun. Bunlar birbirine bağlı. Bu bir olsun, bu üç olsun, bu da iki olsun.
+
+817
+03:07:46,764 --> 03:07:54,104
+Şimdi ben bunu birin üçten büyük olduğunu tespit ettim. Çek, üçün birden büyük olduğunu tespit ettim.
+
+818
+03:07:54,104 --> 03:08:00,024
+Tamam. O zaman ben bunu bu aradan çıkartıyorum. Baş yapacağım artık bunu.
+
+819
+03:08:02,100 --> 03:08:18,940
+Anlaştık mı? O yüzden de Tumul noduma Previous nodunu yani Maksimumu buldum. Ama bunun Previous'u neydi? Head'ti. Yani Previous nodun içerisinde tuttuğum değişken. Tumul'un içerisinde Prev değişkenini tutuyorum. Tamam mı?
+
+820
+03:08:21,020 --> 03:08:26,059
+Kaydettik. Tamam. Buradan çıktım. Ne yapıyorum şimdi?
+
+821
+03:08:27,476 --> 03:08:35,655
+Prev eşittir. Artık ben Tumul'un içinde Prev üst değişkenini tuttum ya, Prev eşittir. Temporary oldu. Bir sonrakine geçtim.
+
+822
+03:08:39,156 --> 03:08:42,616
+TMP'de artık bir sonrakini ifade edebiliriz.
+
+823
+03:08:47,796 --> 03:09:03,695
+Tamam mı? Bu şekilde ben en büyük bulacağım. Şimdi ben şu anda üçü buldum. Mesela burada bir tane daha olsaydı ve beş olsaydı bunun değeri de. Şu anda mesela şu adımdan sonra maksimumumun değeri.
+
+824
+03:09:04,371 --> 03:09:22,231
+Ne olacak? Üç olacak değil mi? Üçten sonra geldim. Üç ile ikiyi karşılaştırdım. Buraya girmedi çünkü iki üçten büyük değil. Buraya girmedi. Hala üç değişkenimi tutuyorum ve to move'un prev dediğim yani head'in next'inde saklı tamam mı şu anda?
+
+825
+03:09:22,899 --> 03:09:48,899
+Tamam. Buraya da geldim. Sonra 2 ile 5'i kontrol ediyorum. Çünkü maksimum değerle bir sonraki TMP'nin işaret ettiği ID'yi kontrol ediyorum. 3 ile 5'i kontrol ediyorum. 5 3'den daha büyük. O zaman buraya girdim. Maksimum değerim artık 3 değil 5 oldu. TUMU da artık PREVIOUS oldu. Yani PREVIOUS da bunun bir önceki. Anlaştık mı? Ondan sonra...
+
+826
+03:09:49,203 --> 03:09:51,703
+Bu döngü bitiyor. Maksimumu bulduk.
+
+827
+03:09:56,147 --> 03:09:57,227
+Maksimumu bulduk.
+
+828
+03:10:04,500 --> 03:10:19,435
+Maksimumu bulmadan önce şöyle bir ihtimal daha var. Onu da yazalım. Eğer eleman zaten en büyükse, yani listenin içinde ben büyük elemanı bir daha bulamıyorum. Çünkü zaten o en büyük. O zaman...
+
+829
+03:10:24,371 --> 03:10:27,752
+To Move değişkeni var ya, başta çünkü Muldo.
+
+830
+03:10:32,531 --> 03:10:39,131
+Başta biz TUMU değişkeni NULL yaptık. Yani ben bu listenin içerisinde TUMU'a hiçbir zaman bir değer atayamadım.
+
+831
+03:10:39,131 --> 03:10:45,012
+SORT CONDITION hiçbir zaman TRUE olmadı. Bu ihtimalde geliyorum buraya.
+
+832
+03:10:50,451 --> 03:10:52,139
+İlk
+
+833
+03:10:55,603 --> 03:10:56,683
+Eşittir.
+
+834
+03:10:58,203 --> 03:10:59,583
+Sort Data diyorum.
+
+835
+03:11:03,476 --> 03:11:26,216
+Head'in next'i. Yani artık head'i maksimum olduğunu kabul ediyorum. Çünkü değişmedi değeri. O zaman diyorum bir sonrakini bul. Bir sonraki head'den sonra bir sonraki büyük olan değeri bul. Çünkü artık head'i ondan çıkartacağız. Head'in next'i. Ve sort condition'ımızı gönderiyoruz.
+
+836
+03:11:33,747 --> 03:12:00,708
+Şimdi eğer böyle bir durum yoksa ben to move'u bulduysam buraya geliyorum. Yazalım buraya da eğer item yani prev mi oluyor bakayım. Aynen prev zaten yok. Tamam. Eğer seçili veri zaten.
+
+837
+03:12:01,332 --> 03:12:02,531
+En büyük se.
+
+838
+03:12:07,412 --> 03:12:08,412
+Şimdi.
+
+839
+03:12:11,860 --> 03:12:18,260
+Şurayı nasıl temizlediyoruz? Neyse şunu yazayım. Ondan sonra eğer oturmazsa görsel olarak çizerek anlatacağım.
+
+840
+03:12:47,860 --> 03:12:48,360
+Y'all.
+
+841
+03:12:52,531 --> 03:12:56,911
+Teşekkürler, [öğrenci].
+
+842
+03:13:03,347 --> 03:13:22,988
+Next'ini işaret ediyoruz. Sonrasında da bu listeyi düzenledikten sonra sıralama işlemimize devam ediyoruz. Şimdi yukarıda neden direkt Next ile devam ettiğimizde daha aydınlanacağız. Karışık gibi duruyor ama aslında değil.
+
+843
+03:13:23,860 --> 03:13:34,780
+Şuradaki prenext bilmem ne daha rahat yazılabilir miydi, daha basit yazılabilir miydi onu tartışabiliriz. Çünkü bu çözümü Mustafa hocanız yaptı.
+
+844
+03:13:38,484 --> 03:13:48,144
+Ben de değiştirmedim çözümünü ama bunu şimdi sizinle tartışabiliriz. Hani burada gereksiz bir atama yapmış olabilir miyiz diye bunun üzerine bir konuşalım. Çete gelmiş.
+
+845
+03:13:57,043 --> 03:13:57,644
+Şimdak.
+
+846
+03:14:02,131 --> 03:14:26,031
+[öğrenci]'ciğim sen o şekilde de bir dene bakalım çalışacak mı? Belki de sıkıntı vermez. Direkt virgül gönderebilirsin. Sıkıntı vermezse o şekilde de çalışabilirsin. Bazen böyle ekstend edilmiş örnekler olabiliyor. Direkt virgül göndererek de dene bakalım olacak mı? Ama satır sonlarını dikkate alması için bunun bu şekilde olduğunu düşünüyorum. Denemek lazım.
+
+847
+03:14:26,031 --> 03:14:27,971
+Şimdi.
+
+848
+03:14:29,139 --> 03:14:47,199
+Biz artık şu noktada maksimum elemanı tespit etmiştik değil mi? Şimdi şurada prev notun to move'a eşit olduğunu görüyoruz. Yani ben burada çizmek istiyorum. Şu örnek üzerinden şey yapacağım. Fazlalıkları sileyim.
+
+849
+03:14:57,139 --> 03:14:59,180
+Burası 2, bu da 5'ti.
+
+850
+03:15:00,979 --> 03:15:02,780
+Bunu 5 yapmayayım da ben.
+
+851
+03:15:03,280 --> 03:15:05,840
+Hadi bu da 2 id olamaz.
+
+852
+03:15:06,100 --> 03:15:08,139
+Hadi bu 0 olsun tamam mı?
+
+853
+03:15:08,399 --> 03:15:11,739
+Çünkü şu aradaki nodun üzerinden örnek göstermek istiyorum.
+
+854
+03:15:11,979 --> 03:15:13,520
+Şimdi benim maksimum elemanım
+
+855
+03:15:14,799 --> 03:15:15,579
+3 değil mi?
+
+856
+03:15:17,100 --> 03:15:18,379
+Bu listeye göre 3.
+
+857
+03:15:18,639 --> 03:15:20,940
+Ve ben 3'ü tespit ettiğim zaman
+
+858
+03:15:22,195 --> 03:15:27,956
+3'ü tespit ettiğim zaman to move'a onun preview'suna eşitliyorum değil mi? Bakalım tekrar kontrol edelim.
+
+859
+03:15:28,115 --> 03:15:33,995
+TMP şu anda head değil, head'in next'ti. Çünkü preview's head oluyor. TMP de head'in next'ti.
+
+860
+03:15:33,995 --> 03:15:41,175
+Yani ben şu anda 3 ile maksimum değeri karşılaştırıyorsam şu anda temporary değeri bu.
+
+861
+03:15:41,415 --> 03:15:48,395
+Bunu tutuyor, 3'ü tutuyor TMP ve onun preview de 1'i tutuyor. Yani şu head aslında tamam mı?
+
+862
+03:15:49,587 --> 03:16:08,727
+Tamam. Geldik. Bu bizim için açıksa. Yani Preview'sun bunu işaret ediyor. Tamam. ToMool'da bunu işaret ediyor. Değil mi?
+
+863
+03:16:12,147 --> 03:16:32,147
+Tumuğu preve eşit. Tamam. Tumuğu da previ işaret ediyor. Onu da düzeltelim. Tumuğu da previ işaret ediyor. Buraya geldiğim zaman. Tamam. Tumuğu şu anda biri işaret ediyor. Tamam mı?
+
+864
+03:16:33,363 --> 03:16:56,263
+Bunu işaret ediyor. Çünkü prev sonrasında burada değişti. Preveştir TMP oldu. O yüzden burada şu anda previus'un değerini ilk başta prev eşittir to move diyor ya, previus'un değerini to move'a eşitliyor. Yani artık previus de bunu işaret ediyor. Tamam mı? Şu satırdan sonra. Şu satırı işledik artık. To move zaten biri işaret ediyor. Head'i.
+
+865
+03:16:56,884 --> 03:17:11,863
+Artık Prev'de To Move'u işaret ediyor. Yani To Move'un işaret ettiğini işaret ediyor. Yani biri, o da biri işaret ediyor. Sonra To Move'u değiştiriyoruz. To Move artık biri değil, Prev'i değil, Prev'in Next'ini işaret ediyor. Değiştirelim bakalım ne olacak.
+
+866
+03:17:15,476 --> 03:17:38,676
+Bunu da yeşille yapalım. Tumuv artık Prev'in Next'ini işaret ediyor. Tamam. Prev'in Next'i, Prev'in Next'i, yani Head'in Next'i, bunu değiştiriyorum şu an. Head'in Next'i önceden üçü işaret ediyor. Şu an Next'ini değiştiriyorum. Prev'in Next'i artık neyi işaret ediyor?
+
+867
+03:17:41,172 --> 03:17:54,772
+Previn'in neksi bu. Bir yere gidecek. Nereye gidecek? Previn'in neksine. Buna değil, neksi üç çünkü. Onun da neksine. Yani ikiye. Birden direkt ikiye bağlandım.
+
+868
+03:17:56,752 --> 03:18:02,012
+Sonra tumul da, daha doğrusu tumulun neksi, yani üçün neksi.
+
+869
+03:18:05,172 --> 03:18:11,412
+Üçünün next'i, artık bu bağlantıyı yeniden yazıyorum. Üçünün next'ini işaret ediyorum.
+
+870
+03:18:13,912 --> 03:18:22,971
+Bu bağlantının da sonucu sort datadan gelecek. Yani listenin bir sonraki maksimum değeri, sort data maksimum değeri dönüyor değil mi?
+
+871
+03:18:23,572 --> 03:18:30,051
+Bir sonraki list, yani şurada farkında mısınız? Üçün üçle olan bağlantıyı listeden üçü çıkardık bak.
+
+872
+03:18:30,384 --> 03:18:49,123
+Maksimum 3'tü. 1, 2'ye bağlandı. 2 zaten 0'a bağlıydı. 1, 2 ve 0 kaldı. 3'ü listeden çıkarttık ve sonrasında tekrardan diyorum ki bu kalan liste içerisinde ki maksimumu bul ve o 3'ün next'ini işaret etsin.
+
+873
+03:18:49,123 --> 03:18:56,504
+Yani bir sonraki max, max'ı işaret edecek. 3. Tumul, yani Tumul 3'ü işaret ediyordu. 3.
+
+874
+03:18:56,927 --> 03:19:03,988
+Yani maksimum değerimiz bir sonraki maks işaretlecek. O da ne olacak? 2. O gelecek buraya. Burası artık 2 olacak.
+
+875
+03:19:04,948 --> 03:19:27,368
+Sonra 2 ile 1'in arasındaki bağlantı kopacak. 1 direkt 0'a bağlı olacak. Sonra 2'nin next'i şu bağlantıyı tekrar tanımlıyor olacağız. Bir sonraki next'i, bir sonraki maksimumu bulacağız. O da 1 olacak. Sonrası da 0. Bu şekilde biz listeyi sort etmiş olacağız. Büyükten küçüğe olacak olursa. Anlaştık mı? Soru var mı?
+
+876
+03:19:42,420 --> 03:19:43,680
+Anladınız mı hepiniz?
+
+877
+03:19:45,460 --> 03:19:48,920
+Yani kısaca bir daha üzerinden geçsek hocam. Tam toparlayamadım kafamda.
+
+878
+03:19:49,319 --> 03:19:55,940
+Tamam. Şu görsel üzerinden gidelim. Tamam mı? Benim mouse'umu görüyor musunuz? İmle'cimin?
+
+879
+03:19:55,940 --> 03:19:59,940
+Evet, öyle. Öncelikle ben fonksiyonda...
+
+880
+03:20:00,819 --> 03:20:16,239
+Sort data dediğimiz fonksiyon ne yapıyor? Bunu kararlaştıralım. O liste içerisindeki maksimum elemanı tespit ediyor. Şu anda gördüğümüz elemanda eğer büyükten küçüğe sıralıyorsak şu anda gördüğümüz listede en büyük eleman ney? Üç değil mi?
+
+881
+03:20:18,355 --> 03:20:31,056
+Bu listeden çıkartıyor. Yani önceden bir, üçü işaret ediyordu. Üç, ikiyi işaret ediyordu. İki, sıfır işaret ediyordu. Ama biz maksimumu üç olarak bulduk ya, onu kenara koyuyoruz. Üçü şuraya aldım.
+
+882
+03:20:36,211 --> 03:20:37,332
+Şöyle yapayım.
+
+883
+03:20:41,043 --> 03:21:06,744
+Üçü şuraya aldım. Şu da artık bunu işaret ediyor. Tamam mı? Üçü buraya aldım. Üçün bağlantısını ekleme yapacağız. Şimdi üçü buraya aldım. Üçü buraya alırken birin işaret ettiği, bir önceden üçü işaret ediyordu. Artık üçün bir sonrakinin işaret ettiğini işaret etsin diye yani şurada prevnext, prevnext, next diye karışık gördüğümüz satır var ya o aslında şunu yapıyor.
+
+884
+03:21:09,268 --> 03:21:24,787
+O aslında şunu yapıyor. Bir önceden üçü işaret ediyordu. Bunu iptal ediyor. Artık üçün işaret ettiği, üçte iki işaret ediyordu ya. Üçün işaret ettiğini işaret et demek istiyor burada.
+
+885
+03:21:24,787 --> 03:21:35,687
+Prev next artık prev next'in next'ine eşit olsun. Yani bu artık üçün işaret ettiğine eşit ve şu bağlantılar artık ortadan kalktı.
+
+886
+03:21:36,115 --> 03:22:01,475
+Bir artık üçü işaret etmiyor. Yani listenin içerisinden, biz bir, üç, iki, sıfır olan listemizin içerisinden maksimum elemanı kenara koyduk. Bir, iki, sıfırı birbirine bağladık. Liste artık üç elemanlı bir liste oldu. Bu üç elemanlı bir liste olarak kaldı. Ve artık diyorum ki bu maksimum elemanı buldum ya. Üçte diyorum işaret etsin. Neyi işaret etsin? Bir sonraki next'i işaret etsin.
+
+887
+03:22:01,567 --> 03:22:05,887
+Nerede yazıyorum onu da? Şurada. Artık neyi işaret etsin? Sort data.
+
+888
+03:22:06,515 --> 03:22:33,775
+Bu sort data fonksiyonu ne yapıyordu? Bir sonraki önceki çağırdığımızda üçü bulmuştu. Artık o listenin içinde üç yok. Yani bir, üç, iki ve sıfır olan listenin içerisinde üçü getirmişti bana. Ama sonra bu üçü bu listeden sildi. Şimdi bir, iki, sıfır kaldı. Bunun içerisinde maksimumu dönecek eğer büyükten küçüğe sıralıyorsak. Bir sonraki şeyde iki olacak değil mi? O zaman üç, ikiyi işaret ettiği zaman
+
+889
+03:22:34,548 --> 03:23:00,788
+Bu ikiyle olan bağlantıyı bu listede yine çıkartıyoruz. Yani bir artık ikiyi değil, sıfırı işaret edecek. İki de bu bağlantı kopmuş oluyor. İkiyi de üçle bağlıyoruz. Yani sıralanmış, yani şöyle düşünebiliriz. Bir tane sıralanmış dizimiz var, bir tane de sıralanmamış dizimiz var. Sıralı diziye, sıralanmamış diziden bulduğum elemanı getiriyorum, sıralı diziye ekliyorum. Sıralı olmayan diziden de o elemanı çıkartıyorum.
+
+890
+03:23:01,523 --> 03:23:17,743
+Anlaştık mı? Evet hocam, şimdi anladım. Tamam. Bu şekilde bir sorting yapıyoruz. Maksimum ve minimum değiştirmiyor şeyi, mantığı. Birinde küçük mü diye kontrol ediyoruz, birinde büyük mü? Hadi gelin şu condition kısmını yazalım şimdi.
+
+891
+03:23:28,340 --> 03:23:48,739
+Mouse'a basmayınca hareket etmiyor. Şurayı silsem artık sorun olmaz herhalde değil mi? Çünkü anladık dediniz. Burayı siliyorum. Kayıt oldu zaten. Aynen kaybediliyor. Şuraya artık şeylerimizi yazalım. Şartlarımızı int, cür dönecek.
+
+892
+03:24:18,899 --> 03:24:21,039
+Aynı şekilde tam tersini yazacağız.
+
+893
+03:24:33,876 --> 03:24:35,715
+Tamam, bunu da yaptık.
+
+894
+03:24:42,291 --> 03:24:48,491
+Şimdi listi yaptıktan sonra head diyelim eşittir.
+
+895
+03:24:49,491 --> 03:24:53,091
+Sort data artık fonksiyonumuzu çağırabiliriz.
+
+896
+03:24:53,091 --> 03:25:01,731
+Head'i vereceğiz ve sort descending olarak çağıralım bakalım.
+
+897
+03:25:05,652 --> 03:25:07,652
+Sonra print diyelim.
+
+898
+03:25:09,652 --> 03:25:10,652
+Şimdi f.
+
+899
+03:25:12,652 --> 03:25:16,556
+Desen link sıralamasında yapıyoruz bunu.
+
+900
+03:25:24,468 --> 03:25:28,728
+Bakacağız yani. Listemizi print edeceğiz. Bakalım çalışıyor mu?
+
+901
+03:25:38,675 --> 03:25:39,636
+Antomatik bakalım.
+
+902
+03:25:43,891 --> 03:25:47,631
+Hocam bence neden yapamadık biliyor musunuz? Bir print listeye gidebilir misiniz yukarıda?
+
+903
+03:25:48,271 --> 03:25:51,551
+Bir saniye, bir kontrol edeyim. Ondan sonra döneceğim.
+
+904
+03:26:02,388 --> 03:26:22,847
+Print liste mi diyorsun? Evet hocam, burada head'i değiştirdik ya, burada head yerine bir temporary yapıp, hani head artık sonu gösteriyor, ondan dolayı artık dizemiyor bence. Bir problem var burada bence. Ama parametre olarak gönderiyoruz ya, bunu tmp diyelim. Ama şey olarak geliyor. Tamam öyle yapalım.
+
+905
+03:26:56,371 --> 03:27:20,932
+Buraya hiç girmedi, onu anlayamadım. Descending çıkmadı, biz bir şeyde yanlış mı yazdık? Bakayım, Descending Print ediyor mu? Etmiyor. Yani şuradan dönmüyor. Demek oluyor bu. Şurayı bir kontrol edelim bakalım. Evet, Descending veriyoruz.
+
+906
+03:27:23,188 --> 03:27:24,188
+Teşekkürler.
+
+907
+03:27:31,860 --> 03:27:35,800
+Asa ve headin next in asa return et diyoruz. Tamam.
+
+908
+03:27:39,412 --> 03:27:42,672
+Evet, tümayınlar, hedin neçte.
+
+909
+03:27:46,067 --> 03:27:48,607
+Semperinin olmadığı müddetçe.
+
+910
+03:27:49,707 --> 03:27:52,527
+Semperi ID ile Max'ı karşılaştırıyoruz.
+
+911
+03:28:09,108 --> 03:28:12,788
+Sort data heading next'i sort condition doğru.
+
+912
+03:28:13,167 --> 03:28:14,507
+Mantıken zaten doğru.
+
+913
+03:28:14,507 --> 03:28:15,507
+Prev to move.
+
+914
+03:28:16,448 --> 03:28:17,987
+Prev in next'i.
+
+915
+03:28:18,407 --> 03:28:21,648
+Prev in next'i de next'in next'ine eşit.
+
+916
+03:28:21,948 --> 03:28:22,548
+Bu da tamam.
+
+917
+03:28:22,788 --> 03:28:29,067
+To move next'i de sort data head sort condition'a eşit oluyor.
+
+918
+03:28:30,028 --> 03:28:32,228
+Return to move deniyoruz doğru.
+
+919
+03:28:55,603 --> 03:28:57,163
+Devam ediyorum, daha bitmedi.
+
+920
+03:29:01,652 --> 03:29:07,652
+Dosyayı okuduk, onda sıkıntı yok. Sort date alıyoruz. Sortta dönüşü.
+
+921
+03:29:08,652 --> 03:29:09,652
+Ede.
+
+922
+03:29:19,796 --> 03:29:27,256
+Hocam, sort condition kısımlarının return'lerini değiştirmemiz gerekiyor.
+
+923
+03:29:30,256 --> 03:29:35,195
+Çünkü bir döndürürse değiştireceğiz, sıfır işlemi yapacağız.
+
+924
+03:29:35,996 --> 03:29:42,356
+O yüzden aslında doğru yapmışız burayı da.
+
+925
+03:29:43,436 --> 03:29:46,216
+Ben onları değişince düzeldi benim kodumda.
+
+926
+03:29:48,115 --> 03:29:50,336
+Tam tersi verdiğimde yani.
+
+927
+03:29:50,896 --> 03:29:51,236
+Evet.
+
+928
+03:29:53,576 --> 03:29:58,095
+Burayı büyük, burayı küçük. Acaba oranın şeyini mi yanlış yaptık diyeceğim de.
+
+929
+03:30:03,059 --> 03:30:11,139
+Hocam burası yanlış olsa şey olması lazım. En azından küçükten büyüyor. Yani ters sıralaması lazım sadece. Aynen. Yine çalışırdı.
+
+930
+03:30:16,468 --> 03:30:19,288
+Aynen öyle orada olması pek mümkün değil.
+
+931
+03:30:19,548 --> 03:30:22,488
+Yüksekli hocam çok küçük bir yerde yanlış yapmışsınız. Bulmak çok zor olacak.
+
+932
+03:30:23,488 --> 03:30:29,168
+Ama ben önümde yazılı kod da var. Oraya da bakıyorum. Bir sıkıntı yok gibi gözüküyor.
+
+933
+03:30:33,780 --> 03:30:39,840
+Yok, yani şey devam edelim. Biz bu fonksiyonlar write ediyordu. Ondan dolayı mı diyeceğim ama yok.
+
+934
+03:30:39,980 --> 03:30:45,080
+Buna sıraladığına göre bunda olması lazım. Yani şuna sıralıyoruz. Tumuğu dönüyor.
+
+935
+03:30:46,040 --> 03:30:52,820
+Tumuğun next'ini işaret ediyor. Yani her şey bittiği zaman şurası bitiyor ve Tumuğa geliyor.
+
+936
+03:30:54,200 --> 03:30:59,900
+Şimdi ben şurada şöyle yapmak istiyorum. Print'i göstermek istiyorum.
+
+937
+03:31:03,379 --> 03:31:09,899
+Şurada. Mesela eğer buraya girerse.
+
+938
+03:31:13,019 --> 03:31:23,039
+ID'sini ve departmanını yazsın. Daha sonrasında. Yine bu satırı komple alıyorum.
+
+939
+03:31:23,719 --> 03:31:27,239
+Çünkü burada tespit ediyoruz. Bakalım nereye kadar getiriyor.
+
+940
+03:31:41,459 --> 03:31:54,979
+200'ü bulmuş, 21'ü bulmuş, 4'ü bulmuş. 2'ye gelince patlıyor. Fark ettiniz mi? Yani dosyadan okumayla mı alakalı yok.
+
+941
+03:31:56,199 --> 03:32:08,539
+Dosyadan okumuş ki buraya yazmış. 2'ye kadar çıkarttı. Şimdi 200'ü bastı, 21'i, 4'ü buldu. 2'de neden sıkıntı yaşıyor?
+
+942
+03:32:13,811 --> 03:32:25,692
+İkiye geldiğim zaman sonuncuyum. Geldim. Bu fonksiyonu tekrar çağırdım. Ne gönderiyorum buraya?
+
+943
+03:32:28,432 --> 03:32:33,352
+Bir dakika. Head'i gönderiyorum. Buradaki head şu anda ney?
+
+944
+03:32:38,739 --> 03:32:40,620
+Ben hedi silersem ne oluyor?
+
+945
+03:32:46,484 --> 03:32:48,424
+Tamam, şey değişimi. Head'i gönderiyorum.
+
+946
+03:32:49,284 --> 03:32:52,364
+Dört konu değişimi yapıyorum. Tamam. Sadece listede iki var.
+
+947
+03:32:52,604 --> 03:32:53,084
+Geldim.
+
+948
+03:32:55,064 --> 03:32:56,244
+Head'in alayışık değil.
+
+949
+03:32:57,024 --> 03:32:58,664
+Ama head'in next'i alayışık.
+
+950
+03:33:00,244 --> 03:33:02,344
+Şunu mu silmemiz gerekiyor acaba?
+
+951
+03:33:02,684 --> 03:33:03,424
+Ama ya da var.
+
+952
+03:33:14,260 --> 03:33:16,180
+Edinmeks sınava eşitse.
+
+953
+03:33:17,560 --> 03:33:18,900
+Deneyelim bakalım.
+
+954
+03:33:25,556 --> 03:33:26,716
+Hedin iştirmedi.
+
+955
+03:33:29,136 --> 03:33:39,495
+Entity Max, Hedin ID'si 2 oldu. Previews, Hed eşit oldu. Tumul, Nol oldu. TMP'de. Hedin neksine eşit oldu ama TMP yani Hedin neks şu an bu.
+
+956
+03:33:40,236 --> 03:33:48,536
+TMP'nin Nol'a eşit değilse diyor yani buraya hiç girmeyecek ve ne olacak? Tumul eşittir Nolsa. Kondişonuna girecek.
+
+957
+03:33:54,995 --> 03:34:12,915
+Head'in Next'i Sort Data, Head'in Next'ine eşit oldu. Head şu anda 2'ydi, Head'in Next'i Nal oldu. Sort Condition'i gönderdik, tamam. Geldik. Head eşitliğini alsa dönecek, Head'i dönecek buraya.
+
+958
+03:34:14,815 --> 03:34:20,815
+Hocam, programın mantığında sorun değil. Oraya bakıyorsanız, yazım haktası falan var bir yerde. Çünkü birebir çalışıyor bende şu anda.
+
+959
+03:34:21,620 --> 03:34:22,760
+Sende çalışıyor mu?
+
+960
+03:34:23,239 --> 03:34:29,159
+Evet hocam. Küçük küçük farklar var. Max yerim, Max or min falan yazmışım. Ama atabilirim isterseniz.
+
+961
+03:34:29,700 --> 03:34:38,020
+İşte bir yerde dediğin gibi bir şeyi atladık. Ama yani şey vermez mi? Compilerör vermez mi o zaman?
+
+962
+03:34:45,012 --> 03:34:57,372
+Bir saniye, ben şeyden devam edeyim. Oradaki kodu, bende de var çalışan kodu, oradan kopyalayacağım. Niye atladık acaba? Çok merak ettim. Bakacağım dersten sonra. Şu kopyalayayım bunu.
+
+963
+03:35:00,312 --> 03:35:02,392
+Dost ya açık diye mi yapıyor acaba?
+
+964
+03:35:38,388 --> 03:35:38,888
+Atala.
+
+965
+03:36:09,971 --> 03:36:13,912
+Evet, çalıştı. Artık neresindeyse bakacağım hemen dersten sonra.
+
+966
+03:36:39,379 --> 03:36:49,799
+Tamam, bu şekilde çalıştı. Yapmak istediğimiz buydu. Allah Allah gerçekten çok kafama takıldı. Nerede sıkıntı var? Bulacağız bakalım.
+
+967
+03:36:50,868 --> 03:37:03,208
+Bu şu anda bu şekilde çalışıyor. Mantık atası değil zaten dediğiniz gibi bir nokta. Bir şeyi unuttuk demek ki acaba şu işaretlerde ne sıkıntı yaptım diye düşünüyorum. Neyse. Yakalayamadık gözle.
+
+968
+03:37:04,208 --> 03:37:11,247
+Şimdi fire write fonksiyonu kaldı bir tek. Onu da tekrardan yazmayayım. Beraber üzerinden bakalım. Şu kadarcık bir kod zaten.
+
+969
+03:37:12,435 --> 03:37:34,815
+Yine listemizin headini gönderiyoruz, ismi ve parçalama pars şeyini gönderiyoruz. Bu sefer read ile değil de v parametrize yani write komutuyla dosyayı açıyoruz fopen fonksiyonuyla. Çünkü yazma izni istiyoruz sistemden. Bu dosyaya da değişiklik yapacağımızı belirtiyoruz. Ondan sonra yine bir temporary erayı oluşturmuşuz.
+
+970
+03:37:35,188 --> 03:37:51,727
+Head nal olduğunda durduğumuz için nal olmadığı müddetçe bu döngü dönecek ve dosyanın içerisine idc, ismi, departman olarak ve sonuna slash'a ekleyerek her satırda dosyaya bu değerleri yazıyoruz.
+
+971
+03:37:52,628 --> 03:38:00,827
+Ondan sonra head'ı da next'e eşitliyoruz. Bir sonraki elemana geliyoruz. Yazma işlemimiz bittikten sonra da dosyayı kapatıyoruz. Bu kadar.
+
+972
+03:38:24,884 --> 03:38:35,203
+Anlaştık mı? Sonrasında burada file write fonksiyonumuzu çalıştırabiliriz artık.
+
+973
+03:38:36,144 --> 03:38:44,344
+Tanımladığımız, yukarıda anlattığım. İşte yine sıralı listenin başını veriyoruz. Yeni ismini veriyoruz, dosyanın ismini ve virgül gönderiyoruz.
+
+974
+03:38:45,424 --> 03:38:47,943
+Ondan sonra bu da tam tersi sıralama.
+
+975
+03:38:48,788 --> 03:38:59,528
+Ascendix olarak sıralama aynı şekilde yeni bir dosya kaydediyor. Bunu da compile edeyim. Dosyaları da görelim. Şurada oluşacak bu sefer.
+
+976
+03:39:04,564 --> 03:39:16,484
+V2 olarak kaydetti. Küçükten büyüye bu. Büyükten küçüğe yine diye kaydetti. New Dataset olarak kaydetti. O da burada. O da büyükten küçüğe.
+
+977
+03:39:18,623 --> 03:39:19,744
+Tamam mıyız?
+
+978
+03:39:28,755 --> 03:39:31,695
+Hocam bende de bir yerde hata var da bu kodu göndereceksiniz değil mi?
+
+979
+03:39:31,695 --> 03:39:43,975
+Göndereceğim. Ve çok merak ettim. Bulursam hatayı duyurulardan yazacağım. Şurada şu sıkıntı varmış diye. Tamam mı?
+
+980
+03:39:44,796 --> 03:39:45,935
+Tamam hocam teşekkür ederim.
+
+981
+03:39:46,255 --> 03:39:52,835
+Şimdi ben buradan sohbetten göndereyim isterseniz. Yine şeyde de paylaşırım.
+
+982
+03:39:56,755 --> 03:39:57,995
+Recursive
+
+983
+03:40:07,636 --> 03:40:13,816
+Doğrusunu gönderdim. Doğrusunu gönderdim. Find Pet'i de şuradan göndereceğim.
+
+984
+03:40:18,772 --> 03:40:21,112
+Dota sesi de göndereyim. Bir daha uğraşmayayım.
+
+985
+03:40:40,404 --> 03:40:48,843
+Ben yine duyurulardan paylaşacağım şeyleri, dosyaları. Şu sıkıntıyı da bulduktan sonra onu da açıklamaya yazarım. Tamam.
+
+986
+03:40:49,843 --> 03:40:54,203
+Başka bir problemimiz var mı? Anlaşılmayan, soru sormak istediğiniz bir yer.
+
+987
+03:40:55,423 --> 03:41:01,583
+Sıkıntı için de kusura bakmayın. Valla fark edemedim yani ne olduğunu. Bulamadık.
+
+988
+03:41:02,420 --> 03:41:11,960
+Yok hocam, ben sizle beraber yazıyordum. Ben orayı doğruya yapmışım. Farklı bir yerde bir hatam var. Yani siz sıkıntı yaptığınız yeri yazanlar, sizle birlikte kodlayanlar yüksek ihtimalle doğru çalışıyor.
+
+989
+03:41:13,100 --> 03:41:29,920
+Allah Allah. Neyse, bunu kapatınca yayını bulacağımı düşünüyorum. Haber vereceğim size de. Tamam. Sorunuz yoksa kapatacağım. Bu da son uygulamamızdı birlikte. Umarım bu zamana kadar yaptığınız uygulamalar da sizin için faydalı olmuştur.
+
+990
+03:41:31,731 --> 03:41:35,531
+Laboratuvarınızda da bir sonraki laboratuvarınızda da başarılar dilerim.
+
+991
+03:41:36,971 --> 03:41:39,291
+Teşekkür ederiz hocam. İyi günler.
+
+992
+03:41:39,751 --> 03:41:40,931
+İyi günler hepinize.
+
+993
+03:41:43,731 --> 03:41:45,891
+Sınavlarınızda da başarılar dilerim şimdi de.
