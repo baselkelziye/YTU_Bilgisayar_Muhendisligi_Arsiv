@@ -1,0 +1,5611 @@
+1
+00:08:01,555 --> 00:08:03,615
+Evet arkadaşlar, hoşgeldiniz, merhabalar.
+
+2
+00:08:07,603 --> 00:08:09,363
+[öğrenci] mikroponun kapalı galiba.
+
+3
+00:08:11,843 --> 00:08:14,884
+Merhaba hocam.
+
+4
+00:08:15,144 --> 00:08:17,764
+Sınavlar nasıl geçti? Sınav haftanız.
+
+5
+00:08:21,971 --> 00:08:24,031
+Yorucu. Benim çok dersim var.
+
+6
+00:08:25,512 --> 00:08:26,531
+Aynı şekilde hocam.
+
+7
+00:08:28,731 --> 00:08:35,052
+Ders sayısı fazla olunca şey... İyi ki biz yapmadık o zaman. Yani biz aradan kaçmış olalım.
+
+8
+00:08:36,491 --> 00:08:38,851
+Şimdi şunu soracağım.
+
+9
+00:08:40,711 --> 00:08:44,591
+Önümüzdeki hafta bayram tatili, ondan sonraki hafta 11. hafta.
+
+10
+00:08:45,908 --> 00:09:08,008
+Biz sınavımızı 12. hafta yaparız diye düşünüyorum ama şundan da çekiniyorum. 12. hafta vize 2 deyip diğer çakışan dersler sınav yapabilir mi acaba? Çünkü herkes ders saatinde yapıyor o zaman sınavını. Bu saatte iki tane ders alan var mı aranızda? Tabii burada şu an herkes yok ama.
+
+11
+00:09:11,668 --> 00:09:14,768
+Bir bakayım ders programına bir tekrardan.
+
+12
+00:09:27,508 --> 00:09:31,988
+Yani bu aralıkta bir veri madenciliği görünüyor. Ondan sonra herhangi bir şey yok.
+
+13
+00:09:33,508 --> 00:09:40,988
+En kötü ihtimal şunu yaparız arkadaşlar. Ben 11. haftada konu anlatayım. 12. hafta, 2. vize haftası sınav yapayım istiyorum.
+
+14
+00:09:41,927 --> 00:09:44,848
+Yani bir hafta daha vaktimiz olur çalışmak için.
+
+15
+00:09:48,448 --> 00:09:52,648
+Songül Hoca ile de bir konuşurum. 2. hafta sınav yapacak mı, yapmayacak mı öğrenirim.
+
+16
+00:09:53,491 --> 00:10:19,271
+Sınav yapacaksa laboratuvar saatinde sınav yaparız. Cuma saat 15'te başlar. 12. haftanın tarihi neyse artık öyle şu an 21 mi oluyor? Yok 28 galiba. 28 Mayıs'ta olması lazım. O hafta sınavımızı yapabiliriz. Baktık biraz çözümsüz kalıyoruz. 21 Mayıs'ta da çekebilirim. Bunun hakkında bilgi göndereceğim.
+
+17
+00:10:20,244 --> 00:10:45,824
+Tek vizemiz olacak. Bu tek vizeyi bu şekilde yapacağız. Ondan sonra da zaten konularımızı yetiştirmek için ek ders yapabiliriz. Onu da söyleyecektim, unuttum. Şimdi iki hafta tatillere ayrıldığı için bizim şimdi backtracking konusu var.
+
+18
+00:10:46,644 --> 00:11:04,104
+graflarla alakalı konularımız var. Yaklaşık 2-3 tane konumuz var. Bugün dinamik programlamayı bitireceğiz. Bunların hepsinin bir arada olması demek, yani bizim ekstra bir tane ek derse ihtiyaç duymamız anlamına geliyor. Onu da tekrar duyururum.
+
+19
+00:11:05,024 --> 00:11:06,663
+[öğrenci], bu dersi daha önce aldın mı?
+
+20
+00:11:08,755 --> 00:11:32,935
+Genelde bu ders şu an alttan alan arkadaşların aldığı bir ders. Almadıysan bilmiyorsundur. Veri yapıları aldın ama muhtemelen. Ki aldın ki onun için bu dersi açabiliyorsun. Veri yapılarına benzer şekilde dersin teorik tarafından daha çok kod yazma olabilir, algoritma çizme olabilir, bilgi amaçlı bazı sorular olabilir.
+
+21
+00:11:33,587 --> 00:11:58,887
+Yani dersin içeriğindeki verdiğimiz teorik bilgileri test etmeyi, doğrudan test etmeyi söyleyen, amaçlayan sorular olabilir. Bunun dışında daha çok analiz ve tasarım ağırlıklı sorular gelir. Zaten ödevler ve quizler bunun bir işaretçisidir. Belli bir işi yapan kodu yazmanızı isteyebilirim.
+
+22
+00:11:59,635 --> 00:12:04,796
+Kodu yazıp analiz etmenizi isterim. Belki bir kod parçası veya bir algoritma parçası verip,
+
+23
+00:12:05,336 --> 00:12:10,076
+oradan analiz etmeye, o analizi daha iyi nasıl yapılabilir?
+
+24
+00:12:10,076 --> 00:12:13,355
+İşte brute force verip başka bir şekilde dönüştürme şeklinde.
+
+25
+00:12:14,556 --> 00:12:19,076
+Yani quizler, ödevler ve veri yapıları bu konuda yol gösterici olur.
+
+26
+00:12:19,988 --> 00:12:46,648
+Yaklaşık 80-90 dakikalık bir sınav oluyor bu sınavlar. 100 dakikayı da bulabilir. 4 soru veya 5 soru düşünüyorum. 3 soru olmaz da en az 4 soru olacak. Bunlardan belki 30-35 puanlık, belki 30 puanlık dersin teorik tarafından verilen bilgilerin öğrenilmediğini test etmemeşti.
+
+27
+00:12:47,923 --> 00:12:53,923
+Teorik ağırlıklı sorular, yani bilgi test etmek amaçlı diyebiliriz.
+
+28
+00:12:55,124 --> 00:13:05,923
+30-35 puan veya 40 puanlık bir, bir veya iki analiz sorusu belki yani tasarımla birleşilir.
+
+29
+00:13:05,923 --> 00:13:11,884
+İşte kalanında da bir program yazma ve o programı analiz etme. Aslında o da bir tasarıma giriyor.
+
+30
+00:13:12,211 --> 00:13:18,331
+Yani 30 puan ve 70 puan şeklinde bilgi ve analiz tasarımı olarak ayırabiliriz.
+
+31
+00:13:19,011 --> 00:13:26,172
+Ama bu ders bir bütündür ve geçmişi, geçmiş bilgileri gerektiren bir bütündür.
+
+32
+00:13:27,312 --> 00:13:34,412
+Yani veri yapıları onun için ön koşul, veri yapılarının ön koşulu olan dersler işte bilgisayar bilimlerine giriş onun için bu dersler böyle bir ağaç şeklinde.
+
+33
+00:13:37,107 --> 00:13:52,147
+Bu ders içerisinde her şeyin anlatılması da gerekmiyor. Çünkü daha önceden gördüğünüz şeyler var. İşte bir Q nedir? Ondan sonra Stag nedir? Binary Search nedir? Bunların analizi nasıldır? Bu tarz sorular da olabilir diyelim.
+
+34
+00:13:53,327 --> 00:14:04,427
+Başka sorunuz yoksa konumuza geçelim. Bugün dinamik programlamayı Allah izin verirse bitireceğiz. Yani bir sistemsel internet mi internet kopmazsa bu konuyu bitirmek istiyorum.
+
+35
+00:14:05,491 --> 00:14:19,291
+Ondan sonra gelecek, belki son kısımda ufak bir şey kalabilir, sizde çok görmek istemem. 3-4 farklı case study çalışacağız. Bu şekilde.
+
+36
+00:14:25,043 --> 00:14:28,163
+şey geldi, şeyden ona bir bakalım.
+
+37
+00:14:32,403 --> 00:14:34,323
+Şu an chat'i göremiyorum, chat burada.
+
+38
+00:14:36,823 --> 00:14:42,144
+Bugün quiz yok şey olarak ama quiz'i şu şekilde düşünüyorum.
+
+39
+00:14:43,764 --> 00:14:47,483
+Bu konudan bir quiz, bir ödev gelecek dinamik programlamada.
+
+40
+00:14:49,163 --> 00:14:57,084
+Gelecek cumartesi gününe belki veya cuma gününe olabilecek şekilde bir ödev tarzında.
+
+41
+00:14:57,940 --> 00:15:09,080
+Bir şey yükleyebilirim. Quiz ile ders saatinden sonra, gelecek dersin, bundan sonraki hafta, yapacağımız ilk ders de yapabiliriz. Bugün quiz yok.
+
+42
+00:15:14,100 --> 00:15:16,100
+Şöyle, başlayalım.
+
+43
+00:15:30,580 --> 00:15:40,940
+Dinamik programlama. Şimdi dinamik programlama diye bir başlık atalım. Buraya nereden geldik, ne yaptık? Kısaca onun bir hikayesini anlatayım.
+
+44
+00:15:51,892 --> 00:15:58,012
+Birkaç kod göstereceğim. Hazır bildiğimiz kodlar. Bu konunun nereden geldiğine.
+
+45
+00:16:36,340 --> 00:16:39,519
+Şimdi şöyle bir giriş yapalım.
+
+46
+00:16:40,960 --> 00:16:42,980
+Ağaç yapısını biliyoruz.
+
+47
+00:16:44,220 --> 00:16:45,460
+İkili ağaç diyelim hatta.
+
+48
+00:16:47,440 --> 00:16:48,840
+Binary-tri.
+
+49
+00:16:52,500 --> 00:16:58,500
+Şöyle bir ağacımız olsun. Hani binary search tree olmasına da gerek yok. Hatta üzerinde
+
+50
+00:17:00,900 --> 00:17:03,700
+şöyle diyelim, matematiksel işlemleri
+
+51
+00:17:04,500 --> 00:17:06,099
+A artı B
+
+52
+00:17:10,612 --> 00:17:12,612
+Beyan edelim çarpı
+
+53
+00:17:16,468 --> 00:17:18,628
+Şöyle bir binary tree'miz olsun yeterli.
+
+54
+00:17:21,688 --> 00:17:27,347
+Şimdi bu binary tree'nin matematisel ifadenin karşılığı nedir?
+
+55
+00:17:27,448 --> 00:17:33,868
+X çarpı Y artı B gibi bir şey.
+
+56
+00:17:34,307 --> 00:17:35,288
+Şu çarpı işareti.
+
+57
+00:17:36,668 --> 00:17:39,468
+Buna ne diyorduk? Gezinme şekli olarak. Bunun adı neydi?
+
+58
+00:17:40,088 --> 00:17:41,508
+[öğrenci] bize söylesin.
+
+59
+00:17:43,380 --> 00:17:46,200
+Şöyle bir gezinmeye ne tarz bir gezinme diyorduk.
+
+60
+00:17:52,276 --> 00:17:54,496
+[öğrenci] söylesin, [öğrenci] tak.
+
+61
+00:17:58,804 --> 00:18:00,464
+Hocam, birazcık yardımcı olursanız.
+
+62
+00:18:01,524 --> 00:18:06,464
+Şimdi burada yardımcı olacak bir şey yok. Bu bir bilgi sorusu. Yani bunun daha önce veri yapılarında...
+
+63
+00:18:06,464 --> 00:18:07,224
+Soldan sağa doğru.
+
+64
+00:18:07,923 --> 00:18:14,264
+Hayır, soldan sağa doğru değil. Bir saniye. Veri yapılarında ve ayrı matematikte görülüyor bu. Bu bir gezinme şekli.
+
+65
+00:18:15,664 --> 00:18:19,844
+Bir dakika arkadaşlar, ilgili sorduğum arkadaş bir cevap vermeye çalışırsa.
+
+66
+00:18:21,923 --> 00:18:24,284
+Şöyle şeyler duymuşsunuzdur, post-pix.
+
+67
+00:18:24,736 --> 00:18:26,036
+Evet, evet, evet.
+
+68
+00:18:26,115 --> 00:18:30,855
+Prefix ve NP-x. Hangisine giriyor bunlarla?
+
+69
+00:18:36,147 --> 00:18:37,767
+Post-fix gibi hocam.
+
+70
+00:18:38,347 --> 00:18:39,327
+Şimdi post ne demek?
+
+71
+00:18:39,927 --> 00:18:40,527
+Sondan.
+
+72
+00:18:41,247 --> 00:18:42,127
+Pre ne demek?
+
+73
+00:18:42,288 --> 00:18:42,727
+Önden.
+
+74
+00:18:43,427 --> 00:18:44,007
+İn ne demek?
+
+75
+00:18:44,127 --> 00:18:44,887
+Bilmiyorum hocam.
+
+76
+00:18:45,247 --> 00:18:46,267
+İn de içeriden demek.
+
+77
+00:18:47,467 --> 00:18:53,867
+Fix dediğimiz şey de işaretçi, operatörün sonda olması, yani sonda gelmesi, önde gelmesi ve içeride gelmesi.
+
+78
+00:18:53,967 --> 00:18:56,227
+Günlük hayatta kullandığımız şu ifade infix'tir.
+
+79
+00:18:57,067 --> 00:18:58,847
+İçeride yani, operatörler içeride.
+
+80
+00:18:59,367 --> 00:19:00,827
+Yani şöyle kodlayabiliriz.
+
+81
+00:19:00,887 --> 00:19:03,288
+A artı B, artı AB.
+
+82
+00:19:03,955 --> 00:19:09,335
+AB artı. Siz veri yapıları dersi aldınız herhalde, almış olmanız gerekiyor.
+
+83
+00:19:09,535 --> 00:19:11,375
+Veremedim henüz hocam, yani biraz.
+
+84
+00:19:11,815 --> 00:19:13,576
+Onu veremeyip bunu nasıl alıyorsunuz?
+
+85
+00:19:15,135 --> 00:19:17,135
+Hocam, nendislik tamamlama öğrencisiyim.
+
+86
+00:19:17,315 --> 00:19:17,875
+Tamam.
+
+87
+00:19:17,875 --> 00:19:18,835
+Geç olarak veriliyor dersi.
+
+88
+00:19:18,835 --> 00:19:19,775
+Tamam, anladım.
+
+89
+00:19:21,155 --> 00:19:22,775
+Şimdi, bu ifade...
+
+90
+00:19:23,412 --> 00:19:33,432
+Tamam, infiks olduğunu öğrendik. Peki bunu, yani genelde biz bunu böyle kullanıyoruz. Bunu ağaca çevirmek niye kullanılıyor, niye işimize yarıyor?
+
+91
+00:19:34,711 --> 00:19:42,011
+Infiksi, postfiks'e dönüştürmek, infiksi, prefiks'e dönüştürmek, [öğrenci] teşekkür ederim bu arada, dönüştürmek gerekiyor.
+
+92
+00:19:42,132 --> 00:19:49,612
+Şimdi bu dönüşümlerde ya stack kullanacağız ya da ağaç kullanacağız. Ağaç kullanmak algoritmik olarak daha kolay.
+
+93
+00:19:50,675 --> 00:19:55,496
+Şimdi ağaç kullanalım derken ağaca ne yapıyoruz? Bunları eklemeye çalışıyoruz.
+
+94
+00:19:55,615 --> 00:19:59,496
+Belli bir mantığa göre ekledik ağacı oluşturduk.
+
+95
+00:19:59,976 --> 00:20:04,635
+Yani bu infiks de olsa, prefiks de olsa, postfiks de olsa hep aynı ağaç olacak.
+
+96
+00:20:04,875 --> 00:20:09,375
+Sonra bu ağaçtan yola çıkarak postfiks'e prefiks'i elde edebiliriz.
+
+97
+00:20:09,456 --> 00:20:12,395
+Mesela bunun infiks'in postfiks karşılığını ağaçtan bakalım.
+
+98
+00:20:13,172 --> 00:20:40,372
+Post-Fix bize ne diyor? Operatör sonda gelecek. Önce soldaki operanda, sonra sağdaki operanda, sonra operatöre git. Yani sol, sağ ve operant. O zaman gidebildiğim kadar sola gidiyorum. Gidebildiğim kadar sola gittiğimde ilk ulaştığım şey X. Sonra sağa gittim Y. Bakın operantlar solda geldik. Sonda operatör gelecek. Bunun operatörüne içe.
+
+99
+00:20:40,948 --> 00:21:06,468
+Diyoruz ki önce x ve y'yi çarptık. Şimdi burası sol taraf. Kimin sol tarafı? Bu ağacın sol tarafı. Büyük ağacın sol tarafı. Büyük ağacın sağ tarafı B. Sol, sağ, operanda ne? Artı. Bakın bu bunun postfix karşılığı. Peki bu nerede kullanılır? Özellikle derleyicilerde operatör işte bu tarz optimizasyonlarda bu ifadelerin değerlendirmesinde infix ifadeler.
+
+100
+00:21:07,347 --> 00:21:13,788
+işlem önceliğini ifade etmek adına ve kolaylaştırmak adına postfix'e veya prefix'e dönüştürülür. Bunun prefix'ini de yazalım.
+
+101
+00:21:15,788 --> 00:21:18,587
+Prefix'te de ne yapıyorduk? Gidebildiğimiz kadar
+
+102
+00:21:19,507 --> 00:21:32,987
+öncelikle köklerden operatörleri topluyoruz. Sonra sola, sonra sağa gidiyoruz. Şimdi operatörleri toplarken ilk önce karşılaştığımız yani kökteki operatör artı.
+
+103
+00:21:33,364 --> 00:21:58,864
+Sonra bu kök bitti, artık sola gideceğiz. Sağda gittiğimizde yeni bir ağaçla karşılaştık. Yeni ağacın kökü hangisi? Çarpı. Artık tekrar sola gidiyoruz. Bu yeni bir ağaç ama bu ağacın çocukları yok. Artık bu çocuğu olmadığı için x'i alıyoruz. Ondan sonra bunun sağ tarafındaki çocuğu alacağız. Yani bunun solu bitti. Sağına bakacağız, z'yi alacağız.
+
+104
+00:21:59,443 --> 00:22:07,163
+Bu bitince başka gidecek yer kalmadı. Bu ağacın sol tarafı bitti, sağ tarafına gidiyoruz. Ondan sonra da B'yi alıyoruz.
+
+105
+00:22:08,163 --> 00:22:14,963
+Artı, çarpı, x, y, b şeklinde dönüşüm sağlanıyor. Peki ben bunu niye anlattım?
+
+106
+00:22:15,364 --> 00:22:19,723
+Yani bunlar normalde işte Discrete ve Discrete'de ben anlatıyorum.
+
+107
+00:22:20,743 --> 00:22:26,223
+Data Structure'da da birileri hocalar anlatıyorlar diye biliyorum. Bunlar oranın konusu.
+
+108
+00:22:27,092 --> 00:22:28,892
+Peki biz bunu kodlamak istesek.
+
+109
+00:22:29,751 --> 00:22:31,172
+Şimdi ben size bir kod göstereceğim.
+
+110
+00:22:32,432 --> 00:22:38,072
+Bu kod, non-recursive olan bir şey, kod.
+
+111
+00:22:38,992 --> 00:22:41,532
+Yani göstereceğimiz şey, hatta neyi göstereceğim?
+
+112
+00:22:41,652 --> 00:22:42,932
+In order gösterimini.
+
+113
+00:22:43,652 --> 00:22:44,652
+Ha, önce şunu anlatayım.
+
+114
+00:22:46,132 --> 00:22:47,072
+Bu tabii dönüşüm.
+
+115
+00:22:47,512 --> 00:22:50,592
+Dönüşüme gerek kalmadan, elimizde bir ağaç var.
+
+116
+00:22:50,592 --> 00:22:51,892
+Böyle bir ağaç var.
+
+117
+00:22:53,940 --> 00:23:08,460
+O ağaçla çıkarak şu ifadeyi in order gösterimli veya infix, pardon bunlara infix dedik de, bunlar gösterim, bunların tespit edilmesi de in order, preorder ve postorder traversal diyor.
+
+118
+00:23:08,559 --> 00:23:15,820
+Bu ağaç üzerinden bunu elde etmek. Böyle bir ifadeyi diğerlerine dönüştürmek, işte infix, postfix, prefix dediğimiz işlemlerle yapılıyor.
+
+119
+00:23:16,400 --> 00:23:20,760
+Kullanırken de in order traversal yapıyoruz. Şimdi ağaç var elimizde, şu yok.
+
+120
+00:23:21,172 --> 00:23:37,751
+Şimdi inorder diyor ki, bize aynı şu mantıktan bakacağız. Önce sola gideceksin, sonra ortaya geleceksin, sonra sağa gideceksin. Şimdi gidebildiğimiz kadar sola gidiyoruz. Buradayız, sonra buraya geldik, altı ağaçtayız, sonra buraya geldik. Buradan başka gidecek yer yok, x'i yazıyoruz.
+
+121
+00:23:39,028 --> 00:24:04,068
+Sonra operatörüne çarpıyı yazıyoruz. Sonra sağa geliyoruz, Z'yi yazıyoruz. Sol taraf bitti küçük ağaçtan. Bunun üst tarafında işte artı diye bir şey var. İşte normalde biz parantez kullanmıyoruz ama her bir işlemde burada dönüşümde parantez ekleniyor. Artı B diye bir şey yazılıyor. Bu şekilde bakın bir ağaçtan ne elde edebildik? Inorder gösterimini elde edebildik.
+
+122
+00:24:04,468 --> 00:24:11,927
+Demek ki bana bir ağaç verilirse, ben orada inorder gezersem, orijinal denklemimi, matematiksel günlük hayatta kullandığımız denklemi ifade ediyoruz.
+
+123
+00:24:12,927 --> 00:24:17,068
+Bunu biz kodla yapmaya çalışalım.
+
+124
+00:24:17,068 --> 00:24:23,148
+Yani inorder dışı olacak.
+
+125
+00:24:26,900 --> 00:24:28,900
+Tree traversal
+
+126
+00:24:30,900 --> 00:24:34,900
+Yani bir ağacım var, bu ağaçta inorder mantığına göre gezeceğim.
+
+127
+00:24:34,900 --> 00:24:43,900
+Şimdi ağacımızın üzerinde gezebilmek için bize ne lazım? Root lazım. Root'u bilirsem, işte root'un soluna sağına bir şekilde gidip ağacın bütün düğümlerini gezebilirim.
+
+128
+00:24:43,900 --> 00:24:49,900
+Öyle değil mi? Ağaçta sadece root'un nasıl linked liste hedi biliyorsak burada da root'u bileceğiz.
+
+129
+00:24:49,900 --> 00:24:52,900
+Şimdi bunun kodunu yazacak değiliz.
+
+130
+00:24:53,236 --> 00:24:59,236
+Kodunu ben şöyle internetten buldum. Ama önce recursion olmadan buldum.
+
+131
+00:24:59,236 --> 00:25:09,236
+Şimdi biraz önce yaptığım şeye bir bakalım. Yani inorder mantığına bir öyle el ile analiz etmeye çalışalım. Buradayız ilk başta.
+
+132
+00:25:09,236 --> 00:25:15,236
+Diyor ki bana inorder mantığı. Önce sola git. Şimdi sola gidince buraya geleceğiz.
+
+133
+00:25:15,827 --> 00:25:38,567
+Sonra tekrar sola git, gidebildiğin kadar sola git diyor. Şimdi ben bir while döngüsüyle sola giderim. Ama gittiğim yerden önceki geçtiğim düğümleri bir yerde saklamam gerekiyor. Yani buraya geldim, ondan sonra buraya geldim, ondan sonra buraya geldim, bundan sonra bir şey olsaydı oraya gidecektim ama gitmeyeceğim. Dolayısıyla bunları bir yerde saklamam gerekiyor. Bunları belli bir hiyerarşiye göre saklayacağız.
+
+134
+00:25:43,124 --> 00:26:10,163
+Artıya sonra çarpıya geldik. Bakın bir stek karşımıza çıktı. Sonra işte bunun gidebilecek bir tarafı yok. Yani solu yok, sağı da yok. O zaman bunu yazıyorum x. Sonra aslında yani yaptığımız şey şu. Siteye şu x'i de atıyoruz. x'in solunda sağında bir şey yok. Stekten bunu çıkartıyoruz. Çıkartınca bunu yazdık. Çıkarttıktan sonra bunu stekten çıkartıyorum.
+
+135
+00:26:10,559 --> 00:26:14,719
+Şimdi bunun soluna zaten gitmiştik. Sağına baktığımız zaman, sağında ne var?
+
+136
+00:26:15,539 --> 00:26:20,699
+Şey var, sağını o zaman siteye atıyorum, Y'yi atacağım. Ondan sonra X'i attık, Y'yi yazdık.
+
+137
+00:26:21,119 --> 00:26:26,420
+Pardon, önce şunu yazacağız. Yani şunu da stekten çıkaracağım.
+
+138
+00:26:27,719 --> 00:26:30,019
+Bunu da stekten çıkarttıktan sonra Y'yi atacağız.
+
+139
+00:26:30,996 --> 00:26:38,996
+Y'nin solunda sağında herhangi bir çocuğu yok mesela olsaydı onun çocuklarını yani Y stekte kalacaktı sol çocuğuna önce bakacaktık.
+
+140
+00:26:39,416 --> 00:26:48,115
+Stekle beraber kullanacaktık. Y'yi yazdık. Sonra Y stekten çıkartılıyor. Stekte ne var? Artı var. Artıyı getirip yazıyorum.
+
+141
+00:26:48,256 --> 00:26:56,556
+Artının solundaki zaten atılmıştı. Sağındaki kısmı işte atacağız. B falan diyeceğiz. Sonra B'nin solunda sağında bir şeyler varsa onları atacağız.
+
+142
+00:26:56,556 --> 00:26:58,476
+Yoksa getirip B'yi yazacağız.
+
+143
+00:26:59,955 --> 00:27:11,036
+Bu mantıkla dolaşabilir. Şimdi bizim için olan şey kod burada. Yani bunu veri yapıları dersinin konusu olduğu için buraya ben girmem daha fazla. Zaten bunlar bilinmesi gereken şeyler.
+
+144
+00:27:12,155 --> 00:27:19,175
+Bakın burada Recurgeon yok. Recurgeon olmadığı için mesela şöyle bir ağaç verildiğinde bunun in order gösterimi nedir? Birinize soralım.
+
+145
+00:27:21,315 --> 00:27:22,215
+[öğrenci].
+
+146
+00:27:25,203 --> 00:27:28,403
+inorder şekilde sıralarsak burada ne görürüz?
+
+147
+00:27:33,844 --> 00:27:34,723
+[öğrenci]
+
+148
+00:27:39,571 --> 00:27:40,591
+[öğrenci]
+
+149
+00:27:46,740 --> 00:27:47,799
+[öğrenci]
+
+150
+00:27:47,799 --> 00:27:53,500
+4, 2, 5, 1, 3
+
+151
+00:27:53,500 --> 00:28:06,360
+Evet. Ne yaptık? Gidebildiğimiz kadar sola gittik. Sonra üstteki ruta baktık. 4'ten sonra 2'ye alacağız. Sonra sağa gideceğiz. 5. Sonra 1'e bakacağız. Sonra 3'e bakacağız. 4, 2, 5, 1, 3
+
+152
+00:28:06,360 --> 00:28:12,640
+Peki, bunun koduna birazcık bakalım. Yani stack vs. kullanıldığını burada uzun uzun anlatmış.
+
+153
+00:28:13,203 --> 00:28:20,284
+Şimdi şunlar Structure'larımız, ağaç oluşturmak için gerekli olan elemanlar, ağacının yapısını oluşturuyoruz.
+
+154
+00:28:20,624 --> 00:28:33,884
+Şimdi in order gezinmede ne var? Bir root düğmen başlıyor. Eğer diyor ki root'un bir yedeğini alıyor, ondan sonra işte işlem tamamı olarak demiş.
+
+155
+00:28:34,516 --> 00:28:44,676
+bir S işlem, S elemanı ekliyor. İşte boş tadıysa böyle devam edip gidiyor. Yani daha sonra stek üzerinde operasyonlar var.
+
+156
+00:28:45,416 --> 00:28:53,296
+Şimdi bunu stek kullanmadan da yapmak mümkün. Biraz önce ben hat üzerinde anlatırken aslında onu anlattım. Stek kullanmadan anlattım ilk anlattığım şeyde.
+
+157
+00:28:53,875 --> 00:29:18,096
+Öyle değil mi? Yani dedim ki şu bir büyük ağaçtır. Önce bunun soluna gideceğim. Solunda yeni bir ağaç varmış gibi düşüneceğim. İşte onun soluna gideceğim. Yeni bir ağaç varmış gibi düşüneceğim. Bunun üzerine bütün düğümleri dolaşabiliriz. Şimdi Stack kullanarak bunu yaptığımızda iş birazcık uzuyor. Hatta bunun birkaç farklı versiyonu da var. Burada biraz daha kısa yazılmış. Yani in order gezinme şöyle. Şimdi bunu in order
+
+158
+00:29:19,508 --> 00:29:24,048
+traversal diyelim, bir kod daha atalım, recursive diyelim.
+
+159
+00:29:26,388 --> 00:29:29,628
+Şimdi bakın, bu aslında bir brute force approach'tur.
+
+160
+00:29:31,124 --> 00:29:36,403
+Yani algoritma analizi tarafından bunu konuşacak olursak, bu kodu ne yapıyoruz?
+
+161
+00:29:36,543 --> 00:29:38,703
+İşte baştan başlıyoruz, root'tan başladık.
+
+162
+00:29:39,124 --> 00:29:41,923
+İşte bir tane şeyimiz oldu, stay'imiz oldu.
+
+163
+00:29:42,023 --> 00:29:47,763
+Bu stay'in içerisinde sağa sola giderek ve gittiğimiz düğümleri stay'e ekleyerek,
+
+164
+00:29:47,963 --> 00:29:50,423
+çünkü geçtiğimiz yeri kaybetmememiz lazım.
+
+165
+00:29:52,163 --> 00:29:54,003
+BruteForce yaklaşımını bu şekilde çözebiliriz.
+
+166
+00:29:54,003 --> 00:29:57,003
+Şimdi rekürsif yaklaşım aslında...
+
+167
+00:29:57,172 --> 00:30:21,112
+divide and conquer yaklaşımı. Yani bazı problemler divide and conquer ile veya decrease by conquer ile daha iyi oluyordu. Herhalde şurada buluruz bir kod. Burada baktığımızda benim şurada anlattığım şekle benzer. Ne yapacağız? Önce bu bir büyük ağaç. Ben burada in order gezeceksem ne yapacağım? Önce sola gideceğim.
+
+168
+00:30:21,488 --> 00:30:26,567
+Yani solda küçük bir ağaç arayacağım. Varsa onun da soluna gideceğim. Orada da bir küçük ağaç arayacağım.
+
+169
+00:30:27,048 --> 00:30:33,948
+Rekürsif bir şekilde problem, büyük bir problem, onu küçük alt ağaçlara, yani küçük parçalara bölmek.
+
+170
+00:30:34,448 --> 00:30:40,648
+Yani divide and contour yaparak ne yapıyorum? Problemi çözmeye çalışıyorum. İkisi arasındaki fark bu.
+
+171
+00:30:41,307 --> 00:30:45,228
+Gelelim inorder'un koduna bakalım. Şurada bir yerde var.
+
+172
+00:30:45,811 --> 00:31:08,091
+Diyor ki buraya ağacın kökü geliyor. Ağacın kökü geldikten sonra ağaç boşta hiçbir şey yok demektir. Ağaç boş değilse ne yapıyor? Sola git diyor. Yani bizim şurada yaptığımız gibi ne yaptı? Sola gitti. Sola giderek neyi çağırdı arkadaşlar? Aynı fonksiyonu çağırdı. Yani divide and conquer tarzında ağacı küçük bir parçaya böldü. Bakın aynı program çağırıyor.
+
+173
+00:31:08,723 --> 00:31:17,104
+Bu ta ki null görene kadar, yani şuraya gelen her bir alt ağacın nodu sürekli gönderilecek şu şeyler.
+
+174
+00:31:17,823 --> 00:31:20,124
+Null gördüğümüz anda ne demek null görmek?
+
+175
+00:31:20,963 --> 00:31:23,344
+İşte şurada şu x düğümünün olduğu yere ulaştık.
+
+176
+00:31:23,423 --> 00:31:26,104
+Yani buradan buraya geldik, buradan buraya geldik demektir.
+
+177
+00:31:26,783 --> 00:31:31,203
+Buraya gelince duruyoruz, durduktan sonra çıkıyoruz, yani return ediyoruz.
+
+178
+00:31:31,955 --> 00:31:59,135
+Return ettikten sonra, en son kim çağırmıştı bunu? İşte şuradaki not mesela, şunu bu çağırmıştı, x çağırmıştı. Oradaki x'i yazdırıyor ekrana. Sonra diyor ki bir sonrakine geç. Yani bu sefer right'a gidiyor ve bunu yazdırdıktan sonra right. Sağ taraftaki ağaçlar varsa, sağ taraftaki ağaçları print order'la yani recursive olarak çağırıyor. Bu şekilde divide and conquer bütün düğümleri gezebiliyoruz. Dediğim gibi bu tekrar
+
+179
+00:31:59,923 --> 00:32:16,083
+Veri yapıları dersinin konusudur. Hatta ayrık matematikte ben anlatıyorum. Tabi orada kodu olmadan daha çok kağıt üzerinde anlatıyoruz ama orada kodunu da yazdık. Hatta ve hatta yapısal programlamada da anlatılıyor. Bunlar sizin bilmeniz gereken şeyler. Bu dersin kapsamında değil.
+
+180
+00:32:17,923 --> 00:32:24,323
+Şimdi, şu kodla, şu kod arasında farka baktığınız zaman algoritmik olarak
+
+181
+00:32:25,683 --> 00:32:34,124
+Burası çok çok daha kolay bir kod. Yani bu aşikar belli, rahat bir kod. Bunda bir şüphe yok.
+
+182
+00:32:34,864 --> 00:32:40,564
+Şey olarak bakalım, algoritma analizinde Time ve Space Complex'i olarak bakalım.
+
+183
+00:32:41,223 --> 00:32:46,559
+Şimdi burada ne yapılıyor? Inorder'a geldiğimizde bir döngü var. Döngünün içerisinde...
+
+184
+00:32:46,559 --> 00:32:51,559
+Bütün düğümler geziliyor. Kaç tane düğüm varsa onlara gidilecek bir stek var.
+
+185
+00:32:51,559 --> 00:32:56,559
+Yani hemen hemen ON'lik bir karmaşıklığa yakın bir işlem yapılıyor.
+
+186
+00:32:56,559 --> 00:33:02,559
+Bellek açısından baktığımızda yedekte bir tane ne saklıyoruz? Stek saklıyoruz ağaç dışında.
+
+187
+00:33:02,559 --> 00:33:10,559
+İşte orada da belki bir ON'lik bir stek saklı. Böyle bir yapısı var bunun karmaşıklık olarak. Böyle analiz edebiliriz.
+
+188
+00:33:10,559 --> 00:33:12,559
+Şuraya baktığımızda...
+
+189
+00:33:12,884 --> 00:33:18,923
+Herhangi bir yedek bir şeye ihtiyacımız yok. Bakın arkadaşlar, Space Complexity O1 diyebiliriz.
+
+190
+00:33:19,824 --> 00:33:28,263
+Algoritmik olarak baktığımızda bir kod geliyor, ulaşabildiği kadar kaç tane not varsa sağdan, soldan ve sağdan hepsini geziyor.
+
+191
+00:33:28,723 --> 00:33:35,443
+Şimdi bu gezme işlemleri sırasında bir düğme iki defa gitmesi söz konusu değil. Her düğümden bir defa geçecek.
+
+192
+00:33:35,859 --> 00:33:58,519
+Dolayısıyla her birinden bir defa geçince n tane düğümden n defa geçecek. Şuradaki rekürsülük çağrıların toplam sayısı her ne kadar burada iki tane çağrı olsa da birisi aslında ağacın yarısına öbürü de öbür yarısına gitmesi gerekir demektir. Dolayısıyla n bölü iki buradan n bölü iki buradan en defa ağaç üzerinde gezineceğiz demektir.
+
+193
+00:33:58,847 --> 00:34:01,688
+Demek ki Time Complex'de açısından da çok bir fark yok.
+
+194
+00:34:02,208 --> 00:34:07,988
+Ama algoritma geliştirmek, problemi alt parçalara Divide and Conqueror yapabilmek bize burada kazanç sağladı.
+
+195
+00:34:09,087 --> 00:34:16,208
+Geldik. Peki Divide and Conqueror'dan daha iyi bir algoritma geliştirme şekli olabilir mi?
+
+196
+00:34:16,288 --> 00:34:19,668
+Buraya kadar söylediğimiz muhabbetin gerekçesi buydu.
+
+197
+00:34:19,668 --> 00:34:21,668
+Şimdi Divide and Conqueror...
+
+198
+00:34:24,659 --> 00:34:31,099
+Bunu şöyle diyelim, bunu nasıl yaptık? İteratif veya Recursive.
+
+199
+00:34:32,599 --> 00:34:36,079
+Recursive yaptığımızda divide and conquer dedik.
+
+200
+00:34:39,340 --> 00:34:42,119
+İteratif yaptığımızda da brute force gibi bir şey oldu.
+
+201
+00:34:44,947 --> 00:34:54,167
+Hemen hemen burada da ON diyebileceğimiz veya space veya time ve space diyelim ikisinde de ON'lik bir karmaşıklık bulduk.
+
+202
+00:34:55,007 --> 00:35:00,108
+Peki, bir başka problem üzerinden konuşalım. Fibonacci Numbers.
+
+203
+00:35:06,675 --> 00:35:20,876
+Nedir bu fibonacci number? 0, 1, 1, 2, 3, 5, böyle kendinden önceki iki tane terimi ekleye ekleye giden sayılar.
+
+204
+00:35:21,675 --> 00:35:25,715
+Şimdi bu problemi çözerken brute force yaklaşımımız ne olur?
+
+205
+00:35:27,855 --> 00:35:32,916
+Bir dizimizin ilk elemanı olur. İşte S1 eşittir 0.
+
+206
+00:35:33,523 --> 00:35:55,643
+S2 eşittir 0 deriz. Sonra işte bunları mesela bir print yaparız. Print, S1, S2 eğer ekrana yazacaksak gayemiz buysa. Sonra for, i eşittir 1'den, i küçüktür n'e kadar n tane şey isteyebiliyor olabilir. n-2 diyelim hatta. i artı artı. Şu döngünün ne olduğu önemli değil.
+
+207
+00:35:56,788 --> 00:36:21,108
+İşte yeni diyeceğiz. Temp eşittir, S1 artı S2 olacak. Yani şu 0 ve 1'i aldık. Bu arada şunlar 0 ve 1 arkadaşlar. 0 ve 1'i aldık. Temp'te 1 var. Sonra bu 1'i, yani şu temp'i oluşturduk. Bu S1'de, bu S2'de. Temp'i önce bir ekrana yazdıralım, print diyelim.
+
+208
+00:36:22,804 --> 00:36:26,344
+Sonra bu tempi yedekleyeceğiz. Tempi nasıl yedekleyeceğiz?
+
+209
+00:36:27,604 --> 00:36:30,724
+S2'yi S1'e atacağız. Tempi de S2'ye atacağız.
+
+210
+00:36:30,884 --> 00:36:37,804
+Yani önce S1 eşittir S2. Sonra temp eşittir. Ne olacak? S2 olacak.
+
+211
+00:36:38,043 --> 00:36:39,764
+Ve döngü bu şekilde devam edip gidecek.
+
+212
+00:36:40,903 --> 00:36:47,224
+Bakın bu bir recursive brute force yaklaşım.
+
+213
+00:36:50,003 --> 00:37:12,184
+Algoritma karmaşıklığımız ne olur? Bunu bize [öğrenci] söylesin. Şu koddan [öğrenci], T of N nasıl hesaplanır? Temel operasyonu sadece şuradaki işlemler veya döngünün şu kontrolü en defa döneceğini hesap edersek nasıl işlem yaparız?
+
+214
+00:37:16,467 --> 00:37:17,963
+Enginar tut.
+
+215
+00:37:21,844 --> 00:37:24,844
+Arkadaşlar, 13 kişiden neredeyse 7-8 kişi yok gibi.
+
+216
+00:37:25,903 --> 00:37:27,384
+Şey gibi, N değil mi?
+
+217
+00:37:29,244 --> 00:37:34,704
+Yani T-N'i Big-O N cinsinden yazmıyor. Big-O cinsinden yazalım. Onu diyoruz.
+
+218
+00:37:36,963 --> 00:37:39,804
+Sabitlere bir şey vermeyeceğiz ama for için söyleyecek olursa.
+
+219
+00:37:39,864 --> 00:37:45,324
+Tabii tabii. Genel yani hiç böyle detaylara gerek yok. Sadece en sade haliyle yazacağız.
+
+220
+00:37:46,864 --> 00:37:47,484
+Oyun hocam.
+
+221
+00:37:50,675 --> 00:37:53,096
+[öğrenci], buyur.
+
+222
+00:37:55,555 --> 00:37:57,435
+Birek karmaşıklığı mı yoksa şey mi söyleyeceğiz?
+
+223
+00:37:57,755 --> 00:37:58,876
+Birek karmaşıklığı, evet.
+
+224
+00:37:59,755 --> 00:38:01,435
+Şey oluyor, O-N olmuyor mu hocam?
+
+225
+00:38:01,916 --> 00:38:04,795
+Evet, O-N'dir. Niye? Çünkü döngü en defa dönecek.
+
+226
+00:38:04,935 --> 00:38:07,715
+Hani en eksi iki defa dönecek. İki tane de şurada bir işlemler var.
+
+227
+00:38:08,496 --> 00:38:10,836
+O-N defa, yani en defa işlem yapacağız.
+
+228
+00:38:11,675 --> 00:38:15,376
+Peki ben devam ediyorum. Fibonacci Numbers, teşekkür ederim bu arada.
+
+229
+00:38:17,195 --> 00:38:17,675
+Fibonacci.
+
+230
+00:38:20,788 --> 00:38:23,927
+Bunu divide and concur ile yapayım dersen.
+
+231
+00:38:25,427 --> 00:38:28,167
+Yani rekürsif olacak tabii burada.
+
+232
+00:38:29,068 --> 00:38:31,367
+Şimdi 0, 0, 1.
+
+233
+00:38:34,608 --> 00:38:38,167
+1, 2, 3, 5, böyle gidiyor.
+
+234
+00:38:39,387 --> 00:38:44,108
+f'in eninci terimi, f'in en eksi birinci terimi artı f'in en eksi...
+
+235
+00:38:44,371 --> 00:38:49,751
+ikinci teriminden oluşmaz mı? Şöyle bir recurrence slation bize bunu açık meselesi söylüyor.
+
+236
+00:38:51,032 --> 00:38:51,791
+Şimdi bunu
+
+237
+00:38:52,311 --> 00:38:55,131
+Recursive olarak yapmak istediğimizde
+
+238
+00:38:55,891 --> 00:38:57,172
+şöyle bir
+
+239
+00:38:57,931 --> 00:38:59,211
+Function diyelim void
+
+240
+00:39:00,751 --> 00:39:01,532
+fibonacci
+
+241
+00:39:01,771 --> 00:39:03,311
+integer n alacağız.
+
+242
+00:39:05,684 --> 00:39:18,164
+Şimdi eğer if n dediğimiz şey 0 ise, yani burada tabi terim sayısını n dediğim şey eleman sayısı, n eşittir 0 ise, direkt return 0 diyoruz.
+
+243
+00:39:18,164 --> 00:39:30,404
+If n eşittir eşittir 1 ise return 1 diyelim.
+
+244
+00:39:31,603 --> 00:39:42,724
+else durumunda, yani ikinci ve diğer terimler, tabii n'deki kastımız şu sıfırıncı terim, şu birinci terim, şu ikinci terim, yani c'deki şekliyle düşünelim arkadaşlar.
+
+245
+00:39:43,923 --> 00:39:46,243
+Bunu da sıfır döndürdük, bunu da bir döndürdük.
+
+246
+00:39:46,903 --> 00:39:57,224
+Diğer durumda, yani ikinci için, üçüncü için, dördüncü için baktığımızda return, fibonacci n-1'i çağır, ondan sonra fibonacci
+
+247
+00:39:57,811 --> 00:40:19,971
+N-2'yi çağır diyoruz. Bu algoritma normalde Brutforce'da daha iyi çözülüyor. Şimdi daha kötü çözüldüğünü, yani bu yöntemde daha kötü çözüldüğünü göreceğiz. Ama bu algoritma bize bir algoritmanın farklı yöntemlerle geliştirilmesinin hem avantajların hem dezavantajlarını göstermesi açısından çok güzel bir örnek.
+
+248
+00:40:20,532 --> 00:40:24,971
+4-5 farklı algoritma paradigması var. Neredeyse her algoritma paradigması var.
+
+249
+00:40:25,023 --> 00:40:30,483
+paradigmasına fibonatçı sayıları uyuyor. Diğer problemlerde böyle bir şey pek karşımıza çıkmıyor.
+
+250
+00:40:30,983 --> 00:40:35,844
+Evet, genel olarak yaklaşım bu şekilde. Şimdi ben bunu nasıl trace edeceğim?
+
+251
+00:40:35,844 --> 00:40:41,983
+Mesela F3'e hesap edelim. Yani şuradaki değeri 0, 1, 2, 3. Şunu hesap edelim F3.
+
+252
+00:40:42,724 --> 00:40:51,203
+Şimdi F3'ü çağırdığım zaman N0'a eşit mi? Değil. N1'e eşit mi? Değil.
+
+253
+00:40:51,699 --> 00:41:03,980
+Bu ne yaptı? Fibonacci n-1'i çağırdı önce. Şimdi arkadaşlar, bunu trace ederken hemen yanına artı deyip de bu bir 3'ü çağırır, bir 2'yi çağırır, bir 1'i çağırır demeyin.
+
+254
+00:41:04,659 --> 00:41:12,699
+Öncelikle bu fonksiyon tamamlanacak, ondan sonra artısı yapılacak. F2 çağırıldı. F2'yi çağırınca...
+
+255
+00:41:13,523 --> 00:41:21,023
+Ne yapıyoruz? Tekrar bu başa geliyoruz. n0'a eşit mi? Değil. n1'e eşit mi? Değil. Bu da ne yaptı? Kendi içinden f1'i çağırdı.
+
+256
+00:41:23,023 --> 00:41:34,163
+f1'e geldiğimizde buraya geldik. n0'a eşit mi? Değil. n1'e eşit mi? Evet. Evet dediğimiz için buradan ne yapıyoruz? Return olarak 1 döndürüyoruz.
+
+257
+00:41:35,203 --> 00:41:39,043
+Bu 1'i döndürür döndürmez şu işlem tamamlandı. Artı diyoruz.
+
+258
+00:41:40,371 --> 00:42:02,331
+Fibonacci N-2'yi çağırıyoruz. Fibonacci N-2'de neyi çağırıyor burada? F0'ı çağırıyor. F0'ı çağırdıktan sonra, bakın hiç şuradaki ağacın diğer dallarıyla falan ilgilenmedik, sırayla gidiyoruz. Demek ki bu ağacın ilerlemesini şöyle çizecek olsam, şu ana kadar şöyle geldik. Ondan sonra böyle devam ediyoruz.
+
+259
+00:42:02,331 --> 00:42:04,751
+Tamam mı? Evet.
+
+260
+00:42:07,443 --> 00:42:11,243
+Bu F0'ı çağırdığımız zaman N0'a eşit mi? Evet.
+
+261
+00:42:11,463 --> 00:42:16,663
+0'a eşit olduğu için bu da bir değer döndürüyor ve 0'ı döndürüyor.
+
+262
+00:42:17,503 --> 00:42:19,523
+Şimdi bir değer döndü, 0'da döndü.
+
+263
+00:42:19,644 --> 00:42:22,364
+1 artı 0 hesaplandı, 1.
+
+264
+00:42:23,364 --> 00:42:24,724
+Geldik fonksiyonun sonuna.
+
+265
+00:42:25,243 --> 00:42:28,923
+Bu fonksiyonun sonunda F2, yani şurası hesaplandı.
+
+266
+00:42:29,403 --> 00:42:31,503
+Burası neydi? Şu kısımdı.
+
+267
+00:42:31,503 --> 00:42:34,923
+Yani buradan geriye artık bu da dönmüş oluyor, buradan geriye 1 dönüyor.
+
+268
+00:42:35,827 --> 00:42:45,367
+Şimdi bu işlem bittikten sonra, bakın şöyle, ikersif çağrılarımızın geçme sırasına yeşille devam edelim. Buraya kadar geldik.
+
+269
+00:42:46,568 --> 00:43:03,228
+F3'ün bu kısmı bitti, diğer kısmına bakıyoruz. Bu da nedir? F1'dir. F1'e geldiğimizde, sıfıra eşit mi? Değil. Bire eşit mi? Evet. Evet dediğimiz için bu return etti.
+
+270
+00:43:04,275 --> 00:43:08,095
+Arada artı var, artı artı bir, buradan neyi bulduk? İkiyi bulduk.
+
+271
+00:43:08,315 --> 00:43:12,515
+Çünkü başka devam eden bir şey yok. Demek ki iki değerimiz bu şekilde bulunmuş oluyor.
+
+272
+00:43:13,295 --> 00:43:16,655
+Şimdi bunu beş için deneyebilirsiniz, elli beş için deneyebilirsiniz.
+
+273
+00:43:17,855 --> 00:43:21,775
+Bu şekilde problemi çözüyoruz. Karmaşıklığına bakacak olursak, space'e bakalım.
+
+274
+00:43:21,935 --> 00:43:26,355
+Space olarak herhangi bir ekstra bir dizi falan kullanmıyoruz. Sadece rekürsif çağrılar var.
+
+275
+00:43:27,435 --> 00:43:30,395
+Ama time kompleksli birazcık farklı. Şimdi tn dediğimiz şey,
+
+276
+00:43:31,059 --> 00:43:39,699
+Şuradaki operasyonlarda, yani kontrollerde bir tane işlem var diye kabul edebiliriz. Yani şunu kabul edelim.
+
+277
+00:43:40,699 --> 00:43:43,619
+Çünkü ya sıfıra denk geleceğiz, ya bire denk geleceğiz.
+
+278
+00:43:45,000 --> 00:43:50,140
+Çünkü f1 return ettiği için f0'ı tekrar çağırmıyoruz.
+
+279
+00:43:50,140 --> 00:43:56,360
+Yani eğer f1 return etmeseydi, f0'a dönecek olsaydı biraz daha farklı düşünürdük. Bir tane işlem.
+
+280
+00:43:57,536 --> 00:44:04,435
+t n-2 artı t n-1. Bu rekürsif çağrıları çözeceğiz.
+
+281
+00:44:05,655 --> 00:44:08,076
+Biliyoruz ki master teorem diye bir şey vardı.
+
+282
+00:44:08,855 --> 00:44:10,976
+Master teoremi şurada hızlıca bir karalayalım.
+
+283
+00:44:11,115 --> 00:44:12,155
+t n eşittir.
+
+284
+00:44:12,895 --> 00:44:14,036
+İşte 2 çarpı t
+
+285
+00:44:14,559 --> 00:44:18,059
+n bölü 3 artı 1 gibi bir şeyse bu ne yapıyordu?
+
+286
+00:44:18,699 --> 00:44:22,980
+n'lik bir problemi n bölü 3'lik iki tane fonksiyon çağrısıyla çözmeye çalışıyordu.
+
+287
+00:44:23,460 --> 00:44:24,680
+Hatta şuraya n bölü 2 diyelim.
+
+288
+00:44:24,760 --> 00:44:26,440
+İşte master teoremle bunu çözüyorduk.
+
+289
+00:44:27,059 --> 00:44:29,019
+Şimdi çağrılan iki şey de ne?
+
+290
+00:44:29,180 --> 00:44:35,220
+Burada aslında t n bölü 2 artı t n bölü 2 artı 1.
+
+291
+00:44:35,319 --> 00:44:35,940
+Böyle bir şey var.
+
+292
+00:44:36,019 --> 00:44:39,659
+Biz bunun iki tanesini niye böyle ikisi ortak terim olduğu için başına 2 yazdık.
+
+293
+00:44:42,036 --> 00:44:50,036
+veya şöyle olabilirdi bir Recurrence Relation, T, iki tane T, N-1, bakın burada da Decrease by Concure yapalım.
+
+294
+00:44:51,275 --> 00:44:55,435
+N'lik bir problemi N-1'lik bir problem üzerinden çözmeye çalışıyoruz.
+
+295
+00:44:55,435 --> 00:44:59,076
+Önce N-1'i çözeceğiz, ondan sonra N-2 falan böyle devam edip gidecek.
+
+296
+00:44:59,155 --> 00:45:05,636
+Yani bu da nedir? T, N-1'lik bir çağrı var, artı T, N-1'lik bir diğer çağrı var, artı 1.
+
+297
+00:45:06,476 --> 00:45:09,324
+Şimdi burada dikkat ettiğinizde şunların hepsi,
+
+298
+00:45:09,556 --> 00:45:32,175
+Ortak teorem, ortak terimler, yani içerik olarak aynı. Bunlar da ortak. Dolayısıyla bunları backward substitution ile veya şunu master teorem ile çözebiliriz. Bu arada kesinlikle şu master teorem ile yani A, B ve D ile çözülmez. Master teoremi burada kullananlar var. Ödevlerde bunlar kullanılmaz. Tamam mı? Buna dikkat edelim.
+
+299
+00:45:36,788 --> 00:46:01,387
+Fibonacci n-1, Fibonacci n-2. Bunlar birbirine benzemiyor. Bunların birbirine benzememesi için bunları kullanamıyorum. Burada kullanacağımız şey karakteristik denklem, fark denklemlerini kullanacağız. Bu diyor ki, fark denklemlerine göre bu R²'li bir terim ise, bu R'li bir terimdir. Şu da R sabit bir terimdir, 1'dir. Başındaki kas sayılarda 1.
+
+300
+00:46:01,972 --> 00:46:28,112
+Hepsini çünkü önündeki kast sayılar bir. Ben bu karakteristik denklemi önce çözeyim. Re kare eksi re eksi bir eşittir sıfır. Öyle zannediyorum. Karakteristik denklem çözüldükten sonra bunlar ayrık matematiğin konusu olduğu için buna da girmiyorum. Yani bunu burada şimdilik anlatmayacağım. Gelecek hafta gerekirse, gelecek derste gerekirse anlatınız. Buradan Tn yaklaşık olarak O2 üzeri n geliyor arkadaşlar.
+
+301
+00:46:28,788 --> 00:46:32,608
+Şimdi bunu daha basit bir şekilde nasıl çözeriz?
+
+302
+00:46:32,788 --> 00:46:35,887
+Hani bu iki üzeri n'i karakteristik denklemeye girmeden.
+
+303
+00:46:36,608 --> 00:46:45,768
+Şimdi sizin rekürsit çağrılarında n tane eleman verip n-1, n-2 yani n'e yakın değerlerle iki tane dallanmanız varsa
+
+304
+00:46:45,768 --> 00:46:50,688
+bu dallanma sayısı üzeri n kadardır.
+
+305
+00:46:50,867 --> 00:46:53,648
+Yani üç tane olsaydı üç üzeri n gibi bir şey olacaktı.
+
+306
+00:46:53,648 --> 00:46:54,688
+Tamam mı?
+
+307
+00:46:55,764 --> 00:47:03,563
+Yani Fibonacci sayısını ilk iki terim değil de ilk üç terim üzerinden, kendinden önceki üç terim üzerinden çözecek olsak o zaman üç üzere N'lik bir algoritma.
+
+308
+00:47:04,043 --> 00:47:10,643
+Velhasıl biz bunu yaklaşık olarak tabii iki üzere N'de değil, iki üzere N'den 1,6 küsür altın orana yakın bir şey geliyor.
+
+309
+00:47:11,244 --> 00:47:17,023
+Böyle bir karmaşıklıkla buluyoruz. Memory veya Space'e baktığımızda burada da bir diyebiliriz.
+
+310
+00:47:17,083 --> 00:47:20,264
+Çok fazla bir şey yok. Sadece N değişkenini kullandık.
+
+311
+00:47:20,264 --> 00:47:21,244
+Peki.
+
+312
+00:47:22,516 --> 00:47:28,516
+Biz dedik ki bu hangi tarz bir algoritma? Divide and Conqueror.
+
+313
+00:47:29,115 --> 00:47:34,516
+Şimdi ilk problemimizde Brute Force'tan daha iyi bir çözüm sunmuştu Divide and Conqueror.
+
+314
+00:47:34,516 --> 00:47:38,115
+Ama burada ne yaptık? Divide and Conqueror çualladı.
+
+315
+00:47:38,115 --> 00:47:44,115
+Yani şurada basit bir şekilde yaptığımız bir işi, bir basit bir for dönüşü de n defada yaptığımız işi,
+
+316
+00:47:44,115 --> 00:47:47,516
+burada değil n kare, iki üzeri n defada yaptık.
+
+317
+00:47:47,699 --> 00:48:09,459
+polinomsal veya kuadratik zamanda yapamadığımız şeyi yapmadık. Ne yaptık? Eksponansiyel zamana geçtik. Çok çok kötü bir çözüm. Ama bu çözümün sadece kötülüğü bu şey değil, iki üzeri en değil, gereksiz bir angarya var. Bu angaryayı bize [öğrenci]'a söylesin, görebiliyorsan. Hani biliyorsanız.
+
+318
+00:48:12,459 --> 00:48:13,459
+Bilemedim hocam.
+
+319
+00:48:14,228 --> 00:48:22,327
+Şimdi şu ağaca baktığımız zaman gereksiz bazı işlemler yaptık. Bunları bir görmen lazım aslında ya.
+
+320
+00:48:24,507 --> 00:48:31,007
+Hani F5 üzerinden yapsak belki, tamam F5 üzerinden şöyle bir çizelim, belki öyle görürsün. Mesela bana bir F5'i çizdir [öğrenci].
+
+321
+00:48:36,019 --> 00:49:00,559
+İlk olarak F5'i yazıyoruz hocam. Sonra F4'ü soldan yazıyoruz. Tekrardan F3'ü çağırıyoruz. Sonra? F2, F1 şeklinde gidecek. Dur, yavaş. F3, F2. En son F1'i gördüğümüz yerde. Sonra F2'ye tekrar çıkacağız.
+
+322
+00:49:01,748 --> 00:49:04,367
+F0'ı çağıracağız orada.
+
+323
+00:49:05,608 --> 00:49:06,708
+Tamam, güzel.
+
+324
+00:49:07,387 --> 00:49:08,927
+Sonra tekrar yukarı çekeceğiz.
+
+325
+00:49:09,887 --> 00:49:11,788
+F3'de F1'i çağıracağız.
+
+326
+00:49:12,327 --> 00:49:13,068
+Sağdan, evet.
+
+327
+00:49:14,748 --> 00:49:16,447
+F1'i şurada çağırdık ama.
+
+328
+00:49:17,887 --> 00:49:19,268
+Burada bir daha çağıracağız mı?
+
+329
+00:49:22,088 --> 00:49:23,768
+Algoritmaya göre çağırıyoruz hocam.
+
+330
+00:49:24,088 --> 00:49:25,608
+Tamam, doğru. Cevap buydu.
+
+331
+00:49:26,168 --> 00:49:27,947
+Tamam, devam edelim. Algoritmaya devam edelim.
+
+332
+00:49:28,724 --> 00:49:30,764
+F1'den bir şey çağıracağız mı?
+
+333
+00:49:32,324 --> 00:49:32,923
+Sağından.
+
+334
+00:49:34,063 --> 00:49:35,744
+Çağırmayacağız hocam, F1'den dönme.
+
+335
+00:49:36,603 --> 00:49:38,043
+Evet, devam edelim.
+
+336
+00:49:38,663 --> 00:49:41,443
+F4'e çıkacağız geri, sağdan F2'yi çağıracağız.
+
+337
+00:49:41,844 --> 00:49:42,143
+Evet.
+
+338
+00:49:42,623 --> 00:49:44,384
+Soldan F1'i tekrar çağıracağız.
+
+339
+00:49:44,844 --> 00:49:46,244
+Evet, bak bir daha çağırdık F1'i.
+
+340
+00:49:46,244 --> 00:49:47,543
+Evet, durduk orada yine.
+
+341
+00:49:47,983 --> 00:49:48,284
+Tamam.
+
+342
+00:49:48,463 --> 00:49:50,423
+F2 için sağdan F0'ı çağıracağız.
+
+343
+00:49:51,443 --> 00:49:53,204
+Halbuki F0'ı şurada çağırmıştık.
+
+344
+00:49:54,324 --> 00:49:54,563
+Evet.
+
+345
+00:49:55,891 --> 00:50:02,471
+Sonra buradan tekrardan dönüyoruz yukarıya, F5'e kadar, F3'ü çağıracağız.
+
+346
+00:50:03,072 --> 00:50:03,311
+Evet.
+
+347
+00:50:04,431 --> 00:50:06,791
+Yani soldaki ağacın aynısı tekrar olacak aslında hocam.
+
+348
+00:50:06,911 --> 00:50:09,192
+Devam et, devam et. Yani bu işe başladık.
+
+349
+00:50:09,572 --> 00:50:10,711
+F2'yi çağıracağız hocam.
+
+350
+00:50:11,192 --> 00:50:12,231
+F1'i çağıracağız.
+
+351
+00:50:13,152 --> 00:50:14,311
+Orada duracağız.
+
+352
+00:50:14,692 --> 00:50:16,132
+Sağında F0'ı çağıracağız.
+
+353
+00:50:17,771 --> 00:50:18,112
+Evet.
+
+354
+00:50:18,351 --> 00:50:19,512
+Tekrardan yukarı çıkacağız.
+
+355
+00:50:19,672 --> 00:50:21,731
+F3'ün sağında F1'i çağıracağız.
+
+356
+00:50:22,579 --> 00:50:23,539
+Orada duracağız.
+
+357
+00:50:24,359 --> 00:50:31,879
+F1 bize neyi verecek? 1'i verecek. F0 bize 1'i verecek. Pardon, 0 verecek. Şuradan neyi bulduk? 1'i bulduk.
+
+358
+00:50:32,379 --> 00:50:42,299
+F1 bize 1 verdi. Buradan neyi bulduk? 2'i bulduk. F1 bize 1 verdi. F0, 0 verdi. Buradan 1'i bulduk. 2 ile 1'i topladık. Buradan 3'ü bulduk.
+
+359
+00:50:42,963 --> 00:51:02,584
+F1 bize 1 verdi, F0 bize 0 verdi, buradan 1'i bulduk. F2 1'i verdi, F1 de 1'i verdi. Buradan 2'yi bulduk. 3'te 2'yi 5. 0, 0. 0, 1, 1. 1, 1, 2, 5. Pardon, şu 1 olacak. Şuradası 0, 1, 1.
+
+360
+00:51:03,059 --> 00:51:13,759
+İki, üç, beş. Sıfırıncı terim, birinci terim, ikinci terim, üçüncü terim, dördüncü terim, beşinci terim. Demek ki beşi bulduk. Doğru işlem yaptık. İşlem doğru da...
+
+361
+00:51:13,759 --> 00:51:17,639
+Agar ettiğimiz işlem hocam burada. Fazladan aynı şeyleri kullanıyor olmak mı?
+
+362
+00:51:17,859 --> 00:51:26,119
+Aynen. Bak, tecrübe ederek. İşlem doğru da biz [öğrenci]'ı bayağı bir terlettik. Niye terlettik? Şurada yaptığımız işlemler...
+
+363
+00:51:26,119 --> 00:51:30,179
+Bu mantık apresi de yani... İnsanlar anlamıyor ya.
+
+364
+00:51:30,771 --> 00:51:50,791
+F0'ı burada kaç defa tekrar ediyoruz? Ondan sonra F1'i şurada kaç defa tekrar ediyoruz? Gereksiz işlemler böyle çok fazla. Ve bu hem ağacın derinliği artıyor. Yani 2 üzeri n dediğimiz nedir burada aslında? Ağaç iki koldan büyümeye başlıyor.
+
+365
+00:51:51,219 --> 00:51:57,259
+ve eksponansiyel artan bir derinliğe, kompleksliğe ulaşıyoruz.
+
+366
+00:51:57,759 --> 00:52:05,899
+Yani 1000 elemanlı desek, biraz önceki şu brute force algoritmamız bizim 1000 defada çalışacakken,
+
+367
+00:52:05,899 --> 00:52:10,500
+burada 2 üzeri 1000 defa. Yani birisi nerede? 2 üzeri 1000'i herhalde hesaplayamayız.
+
+368
+00:52:11,799 --> 00:52:13,059
+Bu kadar ciddi bir fark var.
+
+369
+00:52:14,299 --> 00:52:15,500
+Şimdi bu farkı...
+
+370
+00:52:17,715 --> 00:52:40,315
+Ama kodlaması, şunun koduna baktığınızda, Fibonacci Recurrence Slation'dan gittiğinizde, şu çok daha basit görünüyor değil mi? Yani fn eşittir, fn-1 artı, kendinden önceki iki elemanı toplarım. Şu biraz daha çetrepilli görünüyor. Biraz burada kafayı çalıştırmak gerekiyor, enerji harcamak gerekiyor.
+
+371
+00:52:41,460 --> 00:52:59,019
+Peki, bu ikisinin iyilikli iyi taraflarını birleştirsek, yani bunun şeyini alsak, ne derler, algoritmik karmaşıklığını alsak, şunun da böyle bir kolay kodlanabilirliğini alsak, bir araya getirsek, bir yöntem bulamaz mıyız? Evet, bulabiliriz.
+
+372
+00:52:59,019 --> 00:53:03,579
+İşte bu yöntem, bu problemler ortaya çıkarak dinamik programlama.
+
+373
+00:53:08,532 --> 00:53:20,012
+dediğimiz bir yaklaşımla karşılaşırız. Bu 1960'larda mı, 50'lerde mi ne? Aslında bu programlamadan kasıt planning arkadaşlar.
+
+374
+00:53:21,992 --> 00:53:28,012
+Endüstri mühendislerinin kullandığı bir, çok kullandığı bir şeydir. Bizim tabii bilgisayarda da karşılığı var.
+
+375
+00:53:35,027 --> 00:53:45,647
+Kombinasyonel, kombinatorik, kombinational problemlerin çözümünde çok da faydalı işler sağlıyor.
+
+376
+00:53:46,387 --> 00:53:53,207
+Esasında yaptığı şey şu, divide and concur veya decrease by concur'de neyi kullanmak zorundayız, ne olması lazım arkadaşlar?
+
+377
+00:53:53,747 --> 00:53:55,447
+[öğrenci] bize bunu söylesin, [öğrenci].
+
+378
+00:53:56,667 --> 00:54:00,647
+Hem divide and concur'de hem decrease by concur'de ne ihtiyacımız var?
+
+379
+00:54:02,547 --> 00:54:04,587
+Bütün şeyi gezmemiz gerekiyor.
+
+380
+00:54:05,827 --> 00:54:11,767
+Yok, ondan önce kodlama yapmak için bir şeye ihtiyacımız var.
+
+381
+00:54:12,747 --> 00:54:13,147
+Öyle değil mi?
+
+382
+00:54:15,047 --> 00:54:17,807
+Yani bir şey olacak yerimizde ona göre kodu yazacağız.
+
+383
+00:54:18,807 --> 00:54:20,167
+Şimdi Fibonacci'de ne yaptık?
+
+384
+00:54:20,627 --> 00:54:23,187
+Şu kodu yazarken bir şeye göre, şuna göre yazdık değil mi?
+
+385
+00:54:23,787 --> 00:54:24,967
+Evet, formülümüz ne?
+
+386
+00:54:25,876 --> 00:54:28,936
+Ona formül demiyoruz da recurrence relation diyoruz.
+
+387
+00:54:29,696 --> 00:54:30,496
+Şimdi recurrence
+
+388
+00:54:30,496 --> 00:54:34,856
+öz yineleme bağıntısı.
+
+389
+00:54:34,856 --> 00:54:35,716
+Bu
+
+390
+00:54:35,716 --> 00:54:39,016
+recurrence relation olduktan sonra
+
+391
+00:54:39,668 --> 00:55:06,347
+dinamik programlama yaparak aslında Recurrence installation, divide and conquer veya decrease by conquer ikisiyle hemen hemen aynı. Ama onun şu gereksiz angaryalarını elimine eden, yok eden bir hatırlama sistemi, yani bir hafıza sistemi kullanılıyor. Buna tabulation veya memorization method deniyor.
+
+392
+00:55:09,235 --> 00:55:12,755
+with, işte, decrease by,
+
+393
+00:55:13,795 --> 00:55:16,835
+concur, yani in addition diyelim, with demeyelim de,
+
+394
+00:55:18,295 --> 00:55:19,135
+in addition,
+
+395
+00:55:20,575 --> 00:55:21,575
+veya decrease by,
+
+396
+00:55:22,915 --> 00:55:27,855
+decrease by concur, veya divide by concur, pardon.
+
+397
+00:55:29,555 --> 00:55:30,495
+Divide by concur.
+
+398
+00:55:31,495 --> 00:55:35,995
+Yani elimde bir recurrence relation olacak, oradaki recurrence relation'ın,
+
+399
+00:55:36,659 --> 00:55:42,479
+gereksiz tekrarlarını bir yerde hatırlayarak, saklayarak bu işi yapacağım.
+
+400
+00:55:44,979 --> 00:55:52,439
+Dinamik programlama, bu bir tekniktir. Bakın yine bir programlama tekniği bu şey gibi.
+
+401
+00:55:53,979 --> 00:56:01,199
+To solve problems, bu kelime önemli.
+
+402
+00:56:02,835 --> 00:56:28,075
+Problemleri çözmek için kullanılan bir teknik. Nasıl problemler? With, şimdi decrease by concure'de de, divide by concure'de de problem alt problemlere bölünüyordu. Bu alt problemler şeyde olduğu gibi, Hipibonacci'de olduğu gibi birbiriyle çakışıyordu. Bakın şurada çakıştırdık. With, çakışan problemler, alt problemler. Overlapping.
+
+403
+00:56:31,188 --> 00:56:32,508
+subproblems.
+
+404
+00:56:33,887 --> 00:56:36,948
+Yani burada da overlap durumları var.
+
+405
+00:56:38,148 --> 00:56:41,208
+Bu overlap durumları yani alt problemleri çözerek kullanacağız ama
+
+406
+00:56:41,208 --> 00:56:47,028
+çözdüğümüz bir problemi sonra tekrardan çözmemek için bunu bir yerde saklayacağız.
+
+407
+00:56:48,488 --> 00:56:48,887
+Tamam mı?
+
+408
+00:56:51,603 --> 00:56:58,923
+Recurrence Relation kesinlikle olacak ve alt problemleri çözerek, bu işi hatırlayarak çözerek, bu işi devam ettireceğiz.
+
+409
+00:57:01,083 --> 00:57:02,523
+Burada mesela
+
+410
+00:57:02,523 --> 00:57:07,683
+Recording dediğimiz şey
+
+411
+00:57:07,683 --> 00:57:09,903
+Yani
+
+412
+00:57:09,903 --> 00:57:13,783
+Overlap
+
+413
+00:57:13,783 --> 00:57:15,603
+Ping
+
+414
+00:57:15,603 --> 00:57:17,683
+Problems
+
+415
+00:57:19,315 --> 00:57:20,435
+Pardon, şöyle diyelim.
+
+416
+00:57:20,435 --> 00:57:45,055
+Solutions of overlapping problems are stored in the proper, uygun data structures.
+
+417
+00:57:48,148 --> 00:57:55,807
+sizin çakışan alt problemlerinizin çözümleri uygun veri yapılarında saklanır.
+
+418
+00:57:56,367 --> 00:57:58,487
+İşte bu dinamik programlamayı ortaya gidiyor.
+
+419
+00:57:58,567 --> 00:58:03,108
+Yani sen decrease by concur veya divide by concur'daki recurrence relation'ı alıyorsun.
+
+420
+00:58:03,108 --> 00:58:06,088
+Buna bir de saklama özelliği ekliyorsun.
+
+421
+00:58:06,208 --> 00:58:08,847
+Oldu sana dinamik programlama.
+
+422
+00:58:10,108 --> 00:58:11,728
+Genel olarak şey budur arkadaşlar.
+
+423
+00:58:12,628 --> 00:58:15,108
+Problemi yine basit problemlere bölüyoruz.
+
+424
+00:58:16,307 --> 00:58:26,387
+Ama yaptığımız işi kaydediyoruz. O zaman [öğrenci]'ın biraz önce yaptığı şu işleme bakarsak, ben F1'i bir defa hesapladayım. Diyeceğim ki F1'i bir yerde saklayalım.
+
+425
+00:58:27,847 --> 00:58:36,847
+Şimdi saatimiz gelmiş, geldikten sonra, hatta geç başlamıştık, onu da göstereyim, ondan sonra devam edelim.
+
+426
+00:58:44,884 --> 00:58:57,963
+Dinamik programlamayla çözmek için. Birincisi neye ihtiyacım var? Recurrence relation. Recurrence relation değişmiyor. Yani fn eşittir. fn-1 artı fn-2. Burada iş fark yok.
+
+427
+00:58:59,443 --> 00:59:08,664
+Burada neyi saklayacağım? Önceki tecrübelerimizi saklayacağız. Bunu saklarken diyorum ki f'in sıfırıncı değeri neydi arkadaşlar? Sıfır.
+
+428
+00:59:11,987 --> 00:59:35,188
+Bu sakladığım değerler bir dizide saklanacak. O zaman integer bir A dizisi dedik. Gerekirse bunu mallocla oluşturun. A'nın 0'ı 0 olsun. A'nın 1'i 1 olsun diyeceğiz. Sonra for, integer i eşittir 0'dan, i küçüktür işte n'e kadar, i artı artı.
+
+429
+00:59:38,356 --> 00:59:42,916
+Pardon, niye 0 dedik ki? İkinci elemandan başlayacağız artık.
+
+430
+00:59:43,056 --> 00:59:50,536
+A'nın i'inci elemanı eşittir. A'nın i-1'i artı A'nın i-2'si.
+
+431
+00:59:50,996 --> 00:59:55,876
+Şimdi A'nın i'sini bilmiyoruz. i-1'i biliyor muyuz? Daha önce çözdük. O neydi? 1'di.
+
+432
+00:59:56,775 --> 01:00:00,476
+A'nın i-2'sini biliyor muyuz? Daha önce çözdük. O da 0'dı. O zaman bu ne oldu?
+
+433
+01:00:01,416 --> 01:00:05,175
+Şu an 1'i bulduk A'nın ikinci elemanını.
+
+434
+01:00:05,780 --> 01:00:23,500
+İkinci elemanı bulduktan sonra artık ikinci elemanı şurada olduğu gibi bir defa bulduk. Tekrar bunu, yani şurayı bulduk, F2'yi bulduk aslında. Tekrar bunu hesaplamaya gerek var mı? Yok. Çünkü bunu bir yerde sakladık. Uygun bir database, data structure dediğimiz bu. Probleme uygun data structure seçeceğiz.
+
+435
+01:00:24,820 --> 01:00:46,900
+Peki, A'nın 3. elemanı ne olacak? A'nın 2. elemanı ile A'nın 1. elemanı. Ben onları daha önce hesaplamıyorum. Bu şekilde ne yapıyoruz? Problemi çözmüş oluyoruz. Peki, bu dinamik programlamada Tn'e bakalım nedir? Tn'in herhangi bir farkı var mı Brutforce'tan? Yok. Yine O, n. N defa döneceğiz. Space n'e bakalım.
+
+436
+01:00:47,476 --> 01:00:52,675
+Space N'de ekstra bir değişken kullandık mı? Yok, kullanmadık. Sadece dizimiz var. Burada da N elemanı.
+
+437
+01:00:53,036 --> 01:01:00,976
+Ha, şurada Space N açısından birazcık BruteForce'dan kötüyüz. Çünkü burada BruteForce yaparken, neredeydik? Şuradayız.
+
+438
+01:01:01,735 --> 01:01:08,096
+Space N'e bakarsak, herhangi bir dizi kullanıyor muyuz arkadaşlar? Var mı burada? Ns?
+
+439
+01:01:10,896 --> 01:01:12,516
+Ns dedik, [öğrenci] çıktı.
+
+440
+01:01:13,436 --> 01:01:14,695
+Sadece değişken bir dizi kullanıyoruz.
+
+441
+01:01:17,427 --> 01:01:42,947
+Sadece değişken var, herhangi bir dizi yok. Yani N'e bağlı bir şey yok. Hepsi sabit şeyler. Yani SN dediğimiz şey 1. Bakın BruteForce'dan tek kötü yanı Fibonacci'de N'lik bir diziye ihtiyaç duymamız. Tamam mikrofonu kullanamıyorsan o zaman senden biraz yanıt almak için bekleyeceğiz enes o zaman soru sorduğumuza. Burada BruteForce'da Space N'imiz 1 oldu.
+
+442
+01:01:43,507 --> 01:01:55,187
+Dinamik programlamaya geldiğimizde ne yapıyoruz? Bir dizi ihtiyacımız var. Yine bir alimiz var ama enlik, tabi buna en dedik de on diyelim.
+
+443
+01:01:57,467 --> 01:02:10,127
+Onlik bir memory ihtiyacımız oldu. Tamam, analizi bu şekilde. Var mı burada bir sorun?
+
+444
+01:02:10,739 --> 01:02:14,419
+Tam bir saatte konunun girişini ve ilk örneğini tamamlamış olduk.
+
+445
+01:02:15,719 --> 01:02:19,579
+Şimdi [öğrenci], sana soralım.
+
+446
+01:02:26,579 --> 01:02:38,919
+Biz herhangi bir problem çözeceğiz şu ana kadarki bilgilerimizden ve bunu dinamik programlamayla çözeceğiz. Benim bu problemi çözmek için yapmam gerekenleri kabaca söylemek gerekirse ne yapmam lazım önce?
+
+447
+01:02:51,155 --> 01:02:52,155
+Evet.
+
+448
+01:02:59,731 --> 01:03:00,871
+Cevap bekliyoruz.
+
+449
+01:03:10,387 --> 01:03:15,847
+Şimdi bulduğumuz her çözümü kaydetmek, yani şu an ekranda yazan şeye baksan aslında daha rahat cevap verirsin.
+
+450
+01:03:16,467 --> 01:03:20,007
+Çözümü kaydetmeden önce çözüm bulabilecek bir şey lazım değil mi bize?
+
+451
+01:03:21,487 --> 01:03:25,327
+O kaydetme mevzusu sonra, çözümü kaydetmeden önce başka bir şeye ihtiyacımız var.
+
+452
+01:03:29,012 --> 01:03:31,572
+Zaten bu işin en zor tarafı da o ilk adımı.
+
+453
+01:03:34,996 --> 01:03:36,876
+Etkin sen ne söylersin bu konuda?
+
+454
+01:03:42,804 --> 01:03:44,523
+Hocam, etkin dediniz değil mi?
+
+455
+01:03:45,583 --> 01:03:45,884
+Evet.
+
+456
+01:03:48,103 --> 01:03:53,284
+Hocam, öncelikle çözüm yolu araştırılır.
+
+457
+01:03:54,284 --> 01:03:58,123
+Nasıl bir çözüm yolu araştıracağız? Zaten onu ben size soruyorum.
+
+458
+01:03:59,143 --> 01:04:05,043
+Giriş ve çıkış belli. Problemde ben dedim ki dinamik programlama kullanacağım.
+
+459
+01:04:05,344 --> 01:04:08,523
+Yani ilk yapacağım şey dinamik programlamayı kullanabilmek için.
+
+460
+01:04:10,483 --> 01:04:21,923
+Veriler belli, yani girişler çıkışlar belli, bir problem yani adı sana belli. Dinamik programlamayı kullanacağımız için şu an yazıyor zaten tahtada, ekranda. İlk yapmamız gereken şey ne olacak?
+
+461
+01:04:22,423 --> 01:04:24,324
+Yapısına karar verilir.
+
+462
+01:04:25,644 --> 01:04:34,423
+Yani sen sondan mı okuyorsun bilmiyorum, recording olmaz. Ağaç diye bir şey yok arkadaşlar, ağaç nereden çıktı [öğrenci]? Herhangi bir problem diyorum.
+
+463
+01:04:39,539 --> 01:04:49,919
+Etkin. Şimdi dinamik programlama, divide and concurrent and decrease by concurrent, yani avantajlarını kullanıyor. Bunu biliyor muyuz?
+
+464
+01:04:50,479 --> 01:04:50,779
+Evet.
+
+465
+01:04:51,879 --> 01:05:01,219
+Yani biraz önce söyledim, artık biliyor olmanız lazım. Peki dinamik programlama bunları kullanıyorsa bize ne lazım? Bir recurrence relation lazım.
+
+466
+01:05:02,547 --> 01:05:08,248
+recurring installation olmadan ne decrease by concur yaparız, ne divide by concur yaparız, ne de dinamik programlama yaparız.
+
+467
+01:05:08,788 --> 01:05:13,547
+Demek ki problemi çözmek için öncelikle recurring installation'a ihtiyacımız var.
+
+468
+01:05:14,527 --> 01:05:24,107
+Ondan sonra bu recurring installation'ı başlangıç koşullarından başlayıp kaydederek, elde ettiğimiz her bir sonucu kaydederek ne yapmamız gerekiyor?
+
+469
+01:05:25,027 --> 01:05:27,807
+Sonuca ulaşmamız gerekiyor, optimal sonuca.
+
+470
+01:05:28,244 --> 01:05:49,884
+Ne yaptık Fibonacci'de? Önce Recurrence Slation'ımız var dedik. Fn eşittir, Fn-1, Fn-2. Bu olacak. Bakın önce şuradaki sıraya göre bakıp söyleseniz bile zaten çok rahat ortaya çıkar. Yani bunları bilmeden ödevleri nasıl yapıyorsunuz o da insanı da şüphe uyandırıyor. Neyse ben kötü düşünmek istemiyorum mübarek gün.
+
+471
+01:05:51,884 --> 01:05:53,884
+Recurrence Slation kurulduktan sonra...
+
+472
+01:05:55,155 --> 01:06:04,976
+Kayıt yapacağız, çözümümüzü kaydederek ilerleyeceğiz ve kaydettiğimiz sonuçlar bize çözümünü verecek. Saatimiz gelmiş, 10 dakika ara verelim, 10 dakika sonra görüşmek üzere.
+
+473
+01:17:28,020 --> 01:17:29,540
+Hocam, mikrofon kapalı sanırım.
+
+474
+01:17:32,300 --> 01:17:40,940
+Tamam, teşekkürler. Ben bir buçak hakikadır anlatıyorum o zaman. Şimdi arkadaşlar, buraya kadar söylediklerimizi neyse tekrar edelim.
+
+475
+01:17:43,120 --> 01:17:54,360
+Dinamik programlama ile alakalı, bu programlama tekniğinin geldiği yer, yaptığımız örnekle alakalı kısmı kısaca bir özetleyecek olursak, bir kere problemimiz alt problemlere
+
+476
+01:17:55,347 --> 01:18:21,787
+çözülebilir bir problem olması gerekiyor. Alt problemlere bölünerek çözülebilen bir problemse, dinamik programlama kullanırız. Eğer böyle bir şey yoksa kullanamayız. Bunu bulduktan sonra bir alt problemlere dönüşüyorsa, Recurrence Relation kuracağız. Establish Recurrence Relation kuracağız. Mesela örnek diyelim burada da, x üzeri n.
+
+477
+01:18:23,444 --> 01:18:41,463
+Bir x üzeri n'i hesaplayacağız. Şimdi bu alt problemlere bölünebilir mi? Ben x üzeri n bölü 2'yi biliyorsam, x üzeri n bölü 2'nin karesini alırım. O zaman neyi buluruz? x üzeri n'i buluruz. Yani x üzeri n bölü 2 çarpı x üzeri n bölü 2 diyebiliriz mesela.
+
+478
+01:18:42,284 --> 01:18:49,444
+Çünkü x üzeri n bölü 2'den yola çıkarak ondan bir sonra onu x ile çarpı onu x ile çarpı artarak n'e git demek daha...
+
+479
+01:18:50,224 --> 01:18:58,963
+gereksiz bir şey. Bu logaritmik N bir şekilde dönerken oluyor. O zaman bu örneğimizde, example.
+
+480
+01:19:02,644 --> 01:19:17,324
+subproblem sağlıyor. Recurrence installation, bununla alakalı recurrence installation'ı daha önce kurmuştuk. Bunların base condition'ı nedir? x üzeri 0 dediğimiz şey 1'dir. Bunu da rahatlıkla çözebiliriz. Bakın. Find all solution.
+
+481
+01:19:20,064 --> 01:19:22,404
+Veya all demeyelim. Find the solution.
+
+482
+01:19:26,355 --> 01:19:27,855
+Evet, solution'u bulacağız.
+
+483
+01:19:29,935 --> 01:19:30,456
+Via
+
+484
+01:19:30,456 --> 01:19:34,456
+Recording
+
+485
+01:19:34,456 --> 01:19:38,235
+Neyi record edeceğiz?
+
+486
+01:19:41,296 --> 01:19:41,815
+The
+
+487
+01:19:41,815 --> 01:19:44,235
+Previous
+
+488
+01:19:44,235 --> 01:19:48,235
+Solutions
+
+489
+01:19:50,579 --> 01:19:56,879
+Önceki şeyleri kaydederek, final solution diyelim hatta buna.
+
+490
+01:19:58,180 --> 01:19:59,239
+Sub-solutionları.
+
+491
+01:19:59,719 --> 01:20:04,440
+Evet, önceki solutionları veya sub-solutionları bularak ne yapıyoruz?
+
+492
+01:20:04,559 --> 01:20:07,000
+Kaydederek solution'u buluyoruz.
+
+493
+01:20:07,779 --> 01:20:11,119
+Hem kaydetme aslında hem de utilizing diyelim.
+
+494
+01:20:13,239 --> 01:20:16,180
+Ne oldu? Niye kapattı?
+
+495
+01:20:45,140 --> 01:20:48,600
+Allah Allah yazdığımız şeyler kayboldu neyse bir daha.
+
+496
+01:21:01,076 --> 01:21:02,576
+Neyse, şurada tekrar yazalım.
+
+497
+01:21:05,456 --> 01:21:12,355
+Bir, demek ki üç defa tekrar etmek gerekiyor. Yani bir mikrofon arıza yaptı, bir PowerPoint arıza yaptı.
+
+498
+01:21:13,396 --> 01:21:15,136
+Ne dedik arkadaşlar? Define
+
+499
+01:21:15,136 --> 01:21:19,076
+Subproblems
+
+500
+01:21:20,355 --> 01:21:23,036
+Sonra
+
+501
+01:21:23,036 --> 01:21:24,355
+Establish
+
+502
+01:21:24,355 --> 01:21:28,435
+Recurrence Relation
+
+503
+01:21:32,372 --> 01:21:47,252
+Sonra, solve, at the end of the solve, then just specify and solve base conditions.
+
+504
+01:21:51,283 --> 01:21:54,283
+hangedan sonra solve, veya find diyelim,
+
+505
+01:21:56,283 --> 01:21:57,283
+the ultimate,
+
+506
+01:21:59,283 --> 01:22:00,283
+veya final,
+
+507
+01:22:02,283 --> 01:22:03,283
+solution,
+
+508
+01:22:06,283 --> 01:22:08,283
+by using,
+
+509
+01:22:10,283 --> 01:22:12,283
+and recording
+
+510
+01:22:14,283 --> 01:22:17,283
+the sub-solutions.
+
+511
+01:22:21,395 --> 01:22:28,395
+Ara çözümleri kullanarak ne yapmamız gerekiyor? Kaydetmemiz gerekiyor.
+
+512
+01:22:29,395 --> 01:22:31,019
+Şunu bir kaydedeyim.
+
+513
+01:22:40,979 --> 01:22:42,979
+İlginç bir şişt var.
+
+514
+01:22:50,963 --> 01:22:54,904
+Genel yaklaşımımız bu şekilde olacak. Şunu bir daha açayım. Belki şuraya kaydetmiştir.
+
+515
+01:23:03,123 --> 01:23:07,804
+Şuradan şu tasarımı siyah yapayım da daha beyaz çok kötü görünüyor.
+
+516
+01:23:16,051 --> 01:23:25,051
+Yani bir Fibonacci örneğinde veya kuvvet örneğinde olduğu gibi arkadaşlar, problemi ne yapabiliyoruz? Rahatlıkla çözebiliyoruz.
+
+517
+01:23:25,051 --> 01:23:30,051
+Şimdi buraya kadar herhalde anlaşılmıştır.
+
+518
+01:23:30,051 --> 01:23:36,051
+Bununla alakalı ilk bilinen algoritmamız dedik ki Fibonacci bunu da söyledik.
+
+519
+01:23:36,051 --> 01:23:41,051
+Zaman karmaşıklığının analizini yaptık. Bellek karmaşıklığı analizini yaptık.
+
+520
+01:23:41,908 --> 01:23:48,708
+Bakın Divide and Concurry ile şöyle kısaca özetleyecek olursak.
+
+521
+01:23:58,228 --> 01:23:59,228
+Fibonacci için
+
+522
+01:23:59,228 --> 01:24:03,468
+BruteForce
+
+523
+01:24:07,155 --> 01:24:09,155
+Divide and Concur,
+
+524
+01:24:11,355 --> 01:24:13,003
+dinamik programlama.
+
+525
+01:24:19,188 --> 01:24:29,927
+Bunların TN ve SN'lerine bakalım. Brutforce'da TN'imiz neydi [öğrenci]? [öğrenci] geldi mi acaba buraya?
+
+526
+01:24:36,180 --> 01:24:40,180
+[öğrenci], Brutforce'da TN'imiz neydi? Siz söyleyin.
+
+527
+01:24:46,996 --> 01:24:47,996
+[öğrenci]
+
+528
+01:24:54,547 --> 01:24:55,147
+[öğrenci]?
+
+529
+01:24:57,147 --> 01:24:58,567
+O-end hocam.
+
+530
+01:24:58,747 --> 01:24:59,407
+O-end.
+
+531
+01:25:00,127 --> 01:25:01,368
+Eserimiz neydi?
+
+532
+01:25:02,907 --> 01:25:03,547
+[öğrenci]?
+
+533
+01:25:05,127 --> 01:25:07,188
+Onu bir olarak söylemiştik hocam.
+
+534
+01:25:07,507 --> 01:25:09,667
+Evet, yani ekstra bir dizimiz yoktu.
+
+535
+01:25:10,727 --> 01:25:11,528
+[öğrenci]?
+
+536
+01:25:16,340 --> 01:25:19,500
+Divide and Conquer algoritmasında tn'imiz neydi?
+
+537
+01:25:20,100 --> 01:25:21,100
+Oda oyandı hocam.
+
+538
+01:25:21,560 --> 01:25:21,819
+Yok.
+
+539
+01:25:23,920 --> 01:25:24,520
+Ağaç baya...
+
+540
+01:25:24,520 --> 01:25:26,239
+Pardon, dinamikte oyandı pardon.
+
+541
+01:25:27,680 --> 01:25:28,239
+Burada neydi?
+
+542
+01:25:31,520 --> 01:25:33,020
+Eksponansiyel, log n miydi hocam?
+
+543
+01:25:33,860 --> 01:25:36,280
+Log n olursa eksponansiyel olmaz, logaritmik olur.
+
+544
+01:25:37,280 --> 01:25:42,760
+Logaritmik eksponansiyel olması için 200 üzeren, 300 üzeren gibi bir şeyler olması lazım.
+
+545
+01:25:43,283 --> 01:25:45,283
+Biz ne demiştik orada?
+
+546
+01:26:11,572 --> 01:26:37,572
+O, N'di hocam. O, N'lik. S, N'lik. O da O, N oluyor. Evet, O, N'di. Yani burada en iyi çözüm aslında Brutforce'tan çıkıyor. Hem bellek hem de şey açısından. Şu biraz daha güzel ama bellek şeyi var. Şu biraz daha kötü bir çözüm. Hatta bayağı bir kötü çözüm diyebiliriz. Onun için bunu Fibonacci sayılarını hesaplayın dediğinizde
+
+547
+01:26:38,131 --> 01:26:56,412
+Yani ya brute force ya da dinamik programlama kullanmak en doğrusu genel olarak. Ama bu eğitim amaçlı yani bütün algoritma kitaplarında bunun birkaç tekniği daha var. Fibonacci sıklıkla kullanılıyor. Analiz açısından güzel bir örnek. Şimdi gelelim yeni bir probleme.
+
+548
+01:26:56,412 --> 01:27:03,192
+Coin-Roll Problem
+
+549
+01:27:04,659 --> 01:27:07,860
+Bir kere şuradaki yeşille yazdıklarımı unutmayacaksınız.
+
+550
+01:27:09,039 --> 01:27:11,659
+Yani o zihnimizde bulunacak.
+
+551
+01:27:12,219 --> 01:27:14,059
+Şimdi bu problem şudur arkadaşlar.
+
+552
+01:27:15,739 --> 01:27:17,800
+Benim madeni paralarım var.
+
+553
+01:27:18,000 --> 01:27:19,460
+Şu sıralanma durumuna göre.
+
+554
+01:27:19,579 --> 01:27:20,880
+C1, C2, C3, C.
+
+555
+01:27:23,000 --> 01:27:29,840
+Mesela bunlar 5 olsun, 1 olsun, 2 olsun.
+
+556
+01:27:31,347 --> 01:27:35,587
+10 olsun, 6 olsun, 2 olsun, kitabımızdaki örnek bu.
+
+557
+01:27:38,468 --> 01:27:39,427
+Diyoruz ki bunlardan
+
+558
+01:27:39,427 --> 01:27:44,068
+ardışık olarak
+
+559
+01:27:44,068 --> 01:27:46,368
+seçmemek şartıyla
+
+560
+01:27:46,368 --> 01:27:49,608
+ne kadar para seçersen en yüksek
+
+561
+01:27:49,608 --> 01:27:51,807
+miktarı elde ederim.
+
+562
+01:27:53,684 --> 01:28:06,684
+Yani seçimler yapacağım ama C1 ile C2'yi seçememem. Ya C1'i seçeceğim ya C2'yi seçeceğim. C1'i seçersem olmuyor. İşte C2'yi seçersem C3'ü seçememem. Böyle bir seçim yapacağız.
+
+563
+01:28:07,664 --> 01:28:14,523
+Şimdi bu seçime göre bizim alabileceğimiz en yüksek miktarda para nedir?
+
+564
+01:28:14,523 --> 01:28:20,384
+Şimdi bu alt problemlere bölünebilir mi? Bölünebilir görünüyor.
+
+565
+01:28:21,203 --> 01:28:44,783
+şunu seçersem, işte geri kalan var, bunu seçemezsem geri kalan durumlar var. Alt probleme görebiliyoruz. Bir Recurrence Slation kuracağız ama önce mantığına bir bakalım, bir düşünelim. Ondan sonra Recurrence Slation kurabileceğimizi göreceğiz. Base Case'imize bakacağız ve bütün solucunu bulacağız. Problem anlaşıldı mı? Yani ben burada 5'i seçiyorsam 2'yi alabiliyorum.
+
+566
+01:28:45,908 --> 01:28:58,708
+Ama mesela, tamam 5 birden büyük, direkt bununla bunu karşılaştırıp, tamam 5 daha büyükmüş bunu alayım dersek, şurada 2'yi alabildiğim için 10'u alamıyorum mesela. Onun için bu bir optimizasyon problemi.
+
+567
+01:28:59,708 --> 01:29:06,268
+5'i seçip 2'ye alacağım, 2'yi aldıysam 6'yı alabileceğim, bu 2'yi alamam.
+
+568
+01:29:07,388 --> 01:29:13,468
+Veya ne yapacağım? 5'i almayıp bunu alacağım, bunu alabilirim. Buradan da bunu alabilirim.
+
+569
+01:29:14,836 --> 01:29:40,056
+olasılıklarım bunlar. Yani 5, 2, 6 olabilir. Tabi 2'yi almayıp, 5'i alıp, sonra 10'u alıp, sonra 2'yi alabilirim. O da bir olasılık. 5, 10, sadece yan yana olmaması lazım. 2'yi alabiliriz. Başka ne olabilir? Mesela 5,
+
+570
+01:29:40,948 --> 01:30:07,468
+1'i alamam, 2'yi aldım, 10'u aldım, 6'yı alabilirim. 6, 2'yi alamam zaten, hiçbir şey alamıyoruz. Burada bu kadar. Bir de ne var? 1 var dedik, 1'i alırsak, 10'u alırsak, 2'yi alırsak var. 1'de 1 ile beraber 10 yerine 6'yı alabiliriz. Ama 1 ile beraber 6'yı alacağım için ne yapamam? 2'yi alamam.
+
+571
+01:30:08,115 --> 01:30:12,115
+Şimdi 2 ile beraber neyi alabilirim? 2 ile beraber 6'yı alabilirim.
+
+572
+01:30:14,275 --> 01:30:16,576
+Veya 2 ile beraber 2'yi alabilirim.
+
+573
+01:30:18,036 --> 01:30:20,735
+Başka 10 ile beraber 2'yi alabilirim sadece.
+
+574
+01:30:23,155 --> 01:30:30,556
+Hemen hemen bütün durumları gösterdik mi? 5 ile beraber 2, 5 ile beraber 10, 5 ile beraber 6.
+
+575
+01:30:32,695 --> 01:30:34,755
+Bir de 5 ile beraber sadece 2 var.
+
+576
+01:30:35,220 --> 01:30:42,700
+Gerçi sıralı yazsaydık daha iyi olur. 5 ile alabileceğim bütün durumlar bunlar. 1 ile beraber alacağım, 1 ile beraber 10'u alabilirim.
+
+577
+01:30:43,440 --> 01:30:52,819
+1 ile beraber 6'ya alabilirim. 1 ile beraber 2'ye alabilirim bile. Onu yazdık mı yazmamışız. Şuraya da 1,2 diyelim.
+
+578
+01:30:54,899 --> 01:31:19,379
+Sonra 2 ile beraber 6'yı alabiliriz, 2 ile beraber 2'yi alabiliriz, sonra 10 ile beraber 2'yi alabiliriz, başka 6 ile beraber 2'yi alamayız. Bir de hepsini tek tek aldım. Sadece 5'i almak, sadece 1'i almak, sadece 2'yi almak, onları düşünün. En yüksek kazanç nerede var? Herhalde şurada görünüyor. 17 mi görünüyor? Bunların hepsini hesaplayacaksınız, en büyüğünü bulacaksınız. Brutforce yaklaşım bu.
+
+579
+01:31:21,171 --> 01:31:40,591
+Bu brute force yaklaşımda bütün kombinasyonel durumları almam gerekiyor. Yani bunu alırsam bunu alacağım, bunu alırsam bunu alırsam. Dolayısıyla bu yine eksponansiyel olarak kombinasyonel değil de yine bir iki üzere n'e yakın bir karmaşıklıkla karşımıza geliyor.
+
+580
+01:31:40,591 --> 01:31:43,591
+Karmaşıklıkla karşımıza geliyor. Bunun yerine
+
+581
+01:31:44,148 --> 01:31:48,308
+Şöyle bir düşünceyle, bir dinamik programlama için bir şey yapsam.
+
+582
+01:31:48,988 --> 01:31:51,788
+Şimdi sonuçları kaydedeceğiz dedik dinamik programlarında.
+
+583
+01:31:51,868 --> 01:31:54,587
+Bir recurrence relation'ımız olacak, base condition'ımız olacak.
+
+584
+01:31:55,988 --> 01:31:58,708
+Uygun bir sonuçları da nerede kaydedeceğiz?
+
+585
+01:32:00,167 --> 01:32:02,087
+Uygun bir veri yapısında kaydedeceğiz.
+
+586
+01:32:02,167 --> 01:32:04,648
+Yani dizi olur, maddes olur, artık ne olsa ona bakacağız.
+
+587
+01:32:05,568 --> 01:32:10,448
+Şimdi ben, paraların da sırası bu arada değişemiyor, onu da söyleyelim.
+
+588
+01:32:10,899 --> 01:32:13,199
+Şöyle bir şey yapıyorum önce.
+
+589
+01:32:15,000 --> 01:32:16,460
+Bir kayıt tablosu yapıyorum.
+
+590
+01:32:16,600 --> 01:32:19,940
+Acaba bunu alsam ne yapabilirim, diğerini alsam ne yapabilirim diye.
+
+591
+01:32:20,940 --> 01:32:22,399
+Şimdi indeksim var önce.
+
+592
+01:32:40,979 --> 01:32:47,519
+0, 1, 2, 3, 4, 5, bir de 6. param varmış.
+
+593
+01:32:52,307 --> 01:32:56,068
+Bunların değerleri ne kadar? 5, 1, 2, 16.
+
+594
+01:32:57,728 --> 01:33:03,427
+Tabii sıfırıncı para diye bir şey yok. Biz şurada base condition'ı söylemek için sıfırıncı para dedik.
+
+595
+01:33:03,528 --> 01:33:08,788
+5, 1, 2, 10, 6, 2.
+
+596
+01:33:10,427 --> 01:33:13,388
+Buradan önce Recurrence Slation'ı kurmaya çalışacağız arkadaşlar.
+
+597
+01:33:13,388 --> 01:33:18,388
+Şimdi Recurrence Slation'ı ön taraftan kurabiliriz. Ama ön taraftan kurmak...
+
+598
+01:33:18,899 --> 01:33:40,299
+Problemi çözmek için çok zorlar. Doğru bir Recurrence Slation kurmak bayağı bir güç oluyor. O zaman geriye doğru, geriden düşünerek bir Recurrence Slation kuralım. Mesela desem ki ben şu n'i alsam, yani c n'inci değeri alsam, sonuncuyu alsam, sonuncuyu alırsam,
+
+599
+01:33:41,395 --> 01:33:54,615
+Problemim ne olacak? Sonuncuyu aldım. CN kadar değerlendim. Yani iki kadar değerlendim. Şöyle diyelim. Artı CN kadar değerlendim. Geri kalan değerlerim nereden itibaren olacak?
+
+600
+01:33:59,412 --> 01:34:02,212
+Sonuncuyu kesinlikle aldığımı düşünelim birinci keyizde.
+
+601
+01:34:06,996 --> 01:34:08,695
+CN kadar değerlendik.
+
+602
+01:34:10,115 --> 01:34:11,916
+Geri kalanlar ne kaldı burada geri?
+
+603
+01:34:12,755 --> 01:34:13,195
+[öğrenci]?
+
+604
+01:34:16,335 --> 01:34:17,076
+Abduraman?
+
+605
+01:34:20,819 --> 01:34:22,399
+2N-2'den sonrası değil mi?
+
+606
+01:34:23,619 --> 01:34:24,859
+2N-2 mi?
+
+607
+01:34:25,939 --> 01:34:27,719
+C-N-2'den.
+
+608
+01:34:28,359 --> 01:34:33,420
+Yani, bir şey, profit-N hesap, yani kazanç hesaplayacağız.
+
+609
+01:34:34,859 --> 01:34:40,199
+Kazancımıza C-N'i dahil edersek, C-N kadar değerlendik. Geriye hangi şeyler kaldı?
+
+610
+01:34:44,115 --> 01:34:48,475
+Yani bunu alıyorsam, bunu alamayacağım kesin oldu artık. Öyle değil mi?
+
+611
+01:34:49,256 --> 01:34:50,136
+Evet hocam.
+
+612
+01:34:50,596 --> 01:34:55,076
+Şimdi bunu aldıysam, bunu alamıyorsam geriye şunlara bakacağım artık.
+
+613
+01:34:55,916 --> 01:35:01,315
+Yani Profit N-2'nin çözümüyle ilgileneceğiz.
+
+614
+01:35:06,100 --> 01:35:06,720
+Tamam mı?
+
+615
+01:35:08,079 --> 01:35:11,559
+Tamam hocam, ben de onu diyorum ya, işte N-2'den sonrası diye onu söylemiştim.
+
+616
+01:35:11,600 --> 01:35:15,779
+Ama ben 2N-2 gibi bir şey duydum da, oradan biraz şey yaptım, kafam karıştı.
+
+617
+01:35:17,220 --> 01:35:25,100
+Yani Profit Enemiz arkadaşlar, eğer bunu alıyorsam, CN kadar değerlendik, değer kazandık, kalan değerler...
+
+618
+01:35:26,931 --> 01:35:33,011
+P n-2 kadar ki para bölümünden alabileceğim değere bakıyorum.
+
+619
+01:35:33,152 --> 01:35:35,131
+Yani problemin, bakın SAP problemi bu oldu.
+
+620
+01:35:35,992 --> 01:35:36,832
+Ana problem bu.
+
+621
+01:35:36,912 --> 01:35:38,211
+Tabii bu birinci kez.
+
+622
+01:35:38,292 --> 01:35:39,251
+Şimdi ikinci keze bakalım.
+
+623
+01:35:43,988 --> 01:35:45,228
+Son parayı almadım.
+
+624
+01:35:48,568 --> 01:35:56,588
+Yani bu para alınmadı. Bu para alınmadıysa ne yapacağız?
+
+625
+01:35:57,428 --> 01:36:00,788
+Geri kalan şunlardan alacağım değerler.
+
+626
+01:36:02,408 --> 01:36:07,728
+Bu parayı alamadık. Geri kalanlardan alabileceğim değere bakacağım.
+
+627
+01:36:07,908 --> 01:36:11,628
+Yani geri kalanlar ne olursa? Bunu alabilirim, almaya da bilirim.
+
+628
+01:36:12,435 --> 01:36:33,435
+Onun için, bu PN'den gelecek değer, P, bunu şöyle kırmızıyla yazalım, ne olacak? Doğrudan N-1 olacak. Case 2. Son parayı, bunu aldık. Yani CN alındı.
+
+629
+01:36:38,355 --> 01:36:58,536
+Case 2'deyiz. Yani burada bir aldık, almadık diyelim. Artık şu n-1 alınmadığı durumda geri kalan durum nedir? Yeni bir problem gibi düşünün. Yani son paraya attık, c1'den cn-1'e kadar problemi sıfırdan çözüyormuş gibi düşünün. O zaman ne yapacağız? pn-1'e bakacağız.
+
+630
+01:37:00,395 --> 01:37:05,875
+Peki, bizim genel pn'imiz ne olacak? Buna p1n diyelim, buna da p2n diyelim.
+
+631
+01:37:06,260 --> 01:37:09,740
+Genel çözümümüz ne olacak? P, N için bakarsak.
+
+632
+01:37:10,340 --> 01:37:16,940
+Şimdi son parayı alıp almamak bana ayrıma sebep oluyor değil mi?
+
+633
+01:37:17,100 --> 01:37:20,160
+Yani mevzu burada nedir? Ya son parayı alacağım ya da almayacağım.
+
+634
+01:37:21,200 --> 01:37:26,780
+O zaman son parayı alıp almamak hangisi benim için daha karlıysa maksimum dedim.
+
+635
+01:37:29,780 --> 01:37:30,780
+P, N.
+
+636
+01:37:31,091 --> 01:37:47,792
+n-2 artı cn, bu son parayı alma durumumdu. Ya bu durumdan elde edeceğim sonuç veya pn-1'den elde edeceğim sonuç benim Recurrence Relation'ım olacak.
+
+637
+01:37:50,391 --> 01:37:54,192
+Peki, hiç para almazsam burada Base Condition'ım ne?
+
+638
+01:37:55,412 --> 01:37:57,032
+Şunu bir kısaca şey yapalım.
+
+639
+01:37:58,612 --> 01:37:59,112
+Buldum.
+
+640
+01:38:04,340 --> 01:38:04,840
+Bandır.
+
+641
+01:38:12,307 --> 01:38:17,067
+Base Condition ne olur arkadaşlar? [öğrenci], ne dersin burada Base Condition'a?
+
+642
+01:38:19,067 --> 01:38:21,407
+Hiç para almıyorsak hocam direkt bir atlıyor.
+
+643
+01:38:21,927 --> 01:38:33,667
+Yani P0, şimdi şurası bizim coinlerimizin şurası, şurada da P'leri saklayacağız. P0 ne olacak? Hiç para almıyorsak 0 alacağız.
+
+644
+01:38:33,667 --> 01:38:39,595
+O zaman arkadaşlar, şu Recurrence relation'dan yola çıkarak benim...
+
+645
+01:38:40,051 --> 01:38:42,412
+problemi çözmem lazım. Bakın bu
+
+646
+01:38:42,412 --> 01:38:47,251
+divide by concur ile çözülebilir mi? Çözülebilir.
+
+647
+01:38:47,912 --> 01:38:51,251
+Yani bir fonksiyon yazarsınız. Bu fonksiyonda işte
+
+648
+01:38:51,251 --> 01:38:54,291
+P5 dersiniz mesela. İşte 6 tane para var. Pardon.
+
+649
+01:38:55,831 --> 01:38:58,492
+P neyi çağırıyoruz burada?
+
+650
+01:38:59,771 --> 01:39:01,532
+C6'yı yazarsınız.
+
+651
+01:39:01,532 --> 01:39:02,532
+6 artı
+
+652
+01:39:03,123 --> 01:39:29,996
+P4'ü çağırırsınız. O 4 gider içinden 10 artı P2'yi çağırır. O gider içinden bunu çağırır. Buradan bir değer gelir. Sonra bir de Pn-1 gelir. Pn-1'i çağırınca tabii ne yapacaksınız? N-1 bazı alt problemler çakışacak, overlap olacak. Hani bir recursive algoritma buna yazılabilir. Decrease by concur olur. Çünkü burada doğrudan azaltarak çözüyoruz. Ama ben...
+
+653
+01:39:30,323 --> 01:39:54,483
+Overlap eden bu problemleri tekrar tekrar yani aynı işi tekrar yapmayayım diye ne yapacağız? Burada arkadaşlar şu tabloyu dolduracağız. P kısmını dolduracağız. Şimdi P'nin sıfır olduğu durumu biliyoruz. Başlangıç koşulumuz sıfır. Şöyle farklı bir renk alalım. Başlangıç koşulumuz sıfır. Şimdi ben Recurrence relation'i kurduktan sonra
+
+654
+01:39:55,347 --> 01:40:01,027
+Şimdi P, yani asılı dikörün sılayışının şu. Bu tabloyu dolduracağım. Nasıl dolduracağız?
+
+655
+01:40:01,216 --> 01:40:27,296
+Tablo sondan geriye doldurulmaz. Bakın, Recurrence Slation'ı sondan düşünerek yaptım. Genellikle bizim bugünkü bakacağımız problemlerin çoğunda son elemanı, son durumu dikkate alarak tabloları, Recurrence Slation'ı yazacağız ama şimdi sona ulaşmam için ondan bir öncekine, ondan bir öncekine Recurrence Slation'dan sonra bu tablo baştan itibaren doldurulur. Çünkü kayıt yapacağız ilerideki adımı doldurmak için. Şimdi biz
+
+656
+01:40:29,652 --> 01:40:31,711
+P1'i doldurmak istiyoruz.
+
+657
+01:40:33,031 --> 01:40:34,551
+Şimdi P1 için, bakıyorum,
+
+658
+01:40:36,311 --> 01:40:38,631
+P1'in profiti ne?
+
+659
+01:40:40,192 --> 01:40:42,731
+Şurada, şey arkadaşlar,
+
+660
+01:40:43,671 --> 01:40:44,311
+5.
+
+661
+01:40:45,591 --> 01:40:48,871
+O zaman, şu kısmı sileyim de, oraya yazalım.
+
+662
+01:41:02,579 --> 01:41:11,579
+P1. Şimdi maksimum dedik. Bu bir verince P-1 olacak.
+
+663
+01:41:16,083 --> 01:41:25,884
+Yani öyle bir şey yok. Sıfır döndürecek o. Return olacak. Artı P1 verince ne kadarlık bir profitimiz var? Cn dediğimiz şey 5 olacak.
+
+664
+01:41:27,684 --> 01:41:38,644
+Virgül, bu biri almayıp bundan bir öncekini almak P0. Yani o da sıfırdır. Şuradaki değerimiz.
+
+665
+01:41:41,712 --> 01:41:50,792
+doğrudan sıfırdır arkadaşlar, P-1 yani öyle bir şey yok, eksi para olan durum. 5 birim maliyet, yani 5 ila sıfırın şeyi, burası 5 olacak.
+
+666
+01:41:51,431 --> 01:42:05,412
+Şimdi bu ne demek? Ben elimde bir tane para olsaydı, alt problemimde, bu alt probleme göre şu recurring slation'ı çözseydim elde edeceğim profit buymuş.
+
+667
+01:42:05,692 --> 01:42:09,011
+Bakın elimde bir tane para var. Dolayısıyla ne yapıyorum?
+
+668
+01:42:09,684 --> 01:42:34,564
+Bir parayı, ya sonuncuyu alıyorum, yani 5'i alıyorum, 5 miktar, 5 birim kar ediyorum, ya da sonuncuyu almıyorum, bir öncekini alıyorum. Bir önceki bizim, bakın burada base condition'ımız, bunu dummy olarak atadık. Yani hiç para demektir. Buradan 0 kar diyoruz. İşte 5 mi alalım, 0 mı alalım, 5 almak daha iyi dedik ve bunu buraya kaydettik. Burası anlaşıldı herhalde. Şimdi gelelim P2'ye.
+
+669
+01:42:35,380 --> 01:43:00,500
+P2'ye baktığımızda artık bizim sap problemimiz iki tane para içeriyor. İki tane para içerdiği için Recurrence Slash'ını buna göre yine şuradaki Rilash'ını yerine yazacağız. Şimdi P'nin en değerimiz iki. P0 artı P2 yazdığımızda ne kadarlık bir şeyimiz var? Yani sonuncu dediğimiz burada iki bir birimlik bir karımız var.
+
+670
+01:43:01,076 --> 01:43:26,676
+Eğer sonuncuyu almayıp bir öncekini alsaydık, ne oluyordu? P2'den P1. Bu P0 dediğimiz şey 0'dı. 0, 1 daha buradan 1 geliyor. P1'de 5 geliyor. Bakın ne yaptık? Bunun maksimumini aldık ve sonucu 5 yazdık. Anladık mı burayı? Şimdi gelelim P3'e.
+
+671
+01:43:27,764 --> 01:43:29,564
+Etkin de bize P3'ü yazdırsın.
+
+672
+01:43:34,003 --> 01:43:36,003
+Hocam P3 için
+
+673
+01:43:39,123 --> 01:43:40,403
+Maximum
+
+674
+01:43:40,663 --> 01:43:41,163
+Evet
+
+675
+01:43:47,731 --> 01:43:52,731
+P0 artı 2 ya da P1 eksi 3 geliyor.
+
+676
+01:43:52,731 --> 01:43:56,731
+Hayır, şuradaki denklemde yerini yazacağız. Başka hiçbir şey yok.
+
+677
+01:43:56,731 --> 01:44:03,731
+Tamam, ödeki denklemde yerini yazdım. Tamam. P1 eksi 3.
+
+678
+01:44:03,731 --> 01:44:05,731
+Eksi mi?
+
+679
+01:44:05,731 --> 01:44:09,731
+P3 2'ye denk geliyor, P1 de 5'e denk geliyor diye.
+
+680
+01:44:11,859 --> 01:44:16,059
+Hayır, denklemde yerine yazıyoruz. Pn-2 artı cn
+
+681
+01:44:16,059 --> 01:44:21,579
+P1 artı 6
+
+682
+01:44:21,579 --> 01:44:25,460
+P3'ün de yerine
+
+683
+01:44:29,268 --> 01:44:31,288
+Özür dilerim, pardon. P1 artı 2.
+
+684
+01:44:32,347 --> 01:44:33,108
+Virgül.
+
+685
+01:44:34,548 --> 01:44:35,868
+Virgül, P2.
+
+686
+01:44:36,948 --> 01:44:37,708
+P2.
+
+687
+01:44:39,588 --> 01:44:40,807
+P1'in değeri ne?
+
+688
+01:44:42,428 --> 01:44:43,148
+5.
+
+689
+01:44:43,668 --> 01:44:44,868
+Yani şurası 7.
+
+690
+01:44:45,108 --> 01:44:45,488
+7.
+
+691
+01:44:46,168 --> 01:44:48,868
+Virgül 1.
+
+692
+01:44:49,628 --> 01:44:50,828
+Hangisini alacağız? 7'ye alacağız.
+
+693
+01:44:51,788 --> 01:44:52,948
+Ne demek arkadaşlar bu?
+
+694
+01:44:54,128 --> 01:44:55,328
+Elimde 3 tane para var.
+
+695
+01:44:56,724 --> 01:45:11,184
+Sonuncuyu alırsam, bunu alamam, bunu alacağım demektir. Sonuncuyu aldım, iki birim karım var. Birinciyi aldım, beş birim karım var, yedi birim. Yani şu kısım bana onu söylüyor.
+
+696
+01:45:13,324 --> 01:45:22,984
+Sonuncuyu almazsam, problemi geri kalan durumlar için çözeceğim. Yani bir ile ikinin olduğu durum için çözeceğim. Şimdi bir ile ikinin olduğu durumda da nedir?
+
+697
+01:45:23,347 --> 01:45:25,748
+Sonuncuyu alma durumum var.
+
+698
+01:45:27,588 --> 01:45:31,368
+P2, evet bir. Şurası, bakayım.
+
+699
+01:45:33,927 --> 01:45:36,807
+Virgülün sağ için hocam, virgülün sağındaki yanlış yazdınız.
+
+700
+01:45:37,368 --> 01:45:38,068
+Bir yazdım.
+
+701
+01:45:40,128 --> 01:45:41,668
+Bir yazmadı mı buraya ben?
+
+702
+01:45:42,047 --> 01:45:42,768
+Beş olmaz ya.
+
+703
+01:45:45,708 --> 01:45:47,368
+P2 değerimiz beş ya hocam.
+
+704
+01:45:48,387 --> 01:45:50,608
+Bir dakika, P2, ha evet, P2 beş, pardon.
+
+705
+01:45:53,332 --> 01:46:20,152
+P'nin ikinci değeri 5. Sonuncuyu almadığım durumda problemi ne için çözüyorum? P n-1 için çözüyorum. P n-1 için çözdüğümde 3'tü. P2'nin değeri nedir? Bakın burada direkt P2. Daha önce çünkü bu çözüldü. Bakın hiç n-2 çözülmüş bir şey. Kaydediyorum, kaydettiğim yerden gidip alıyorum. 5'i getirdik yazdık. P4'ü [öğrenci] bize, etkinden [öğrenci]'e geçelim.
+
+706
+01:46:24,307 --> 01:46:25,307
+P2
+
+707
+01:46:25,307 --> 01:46:29,068
+Maksimum P2
+
+708
+01:46:29,068 --> 01:46:31,747
+Artı A10
+
+709
+01:46:31,747 --> 01:46:33,068
+10
+
+710
+01:46:33,068 --> 01:46:35,967
+Sonrası da P3
+
+711
+01:46:35,967 --> 01:46:37,707
+P3
+
+712
+01:46:37,707 --> 01:46:41,287
+Peki, nedir bunların değerleri?
+
+713
+01:46:42,247 --> 01:46:43,528
+15'e 7
+
+714
+01:46:43,528 --> 01:46:49,287
+15'e 7, güzel. Yani burası bize 15 verecek. Teşekkür ederiz.
+
+715
+01:46:50,644 --> 01:46:52,619
+Şurayı bir küçültelim de
+
+716
+01:47:10,612 --> 01:47:21,112
+Evet, şimdi ne kaldı bizde? P5 kaldı ve P6. P5'in değeri de arkadaşlar hemen yazayım. Herhalde anlaşılmıştır.
+
+717
+01:47:21,112 --> 01:47:34,871
+P3, pardon, evet, P3 artı, P5'imizin şey ne kadar? 6, virgül, P4.
+
+718
+01:47:35,891 --> 01:47:45,811
+P4'ün maliyeti şeyine kadar 15, P3'ümüzü neydi? 7, 7, 6 daha 13, 13,15'ten burası 15 geliyor.
+
+719
+01:47:46,731 --> 01:47:51,491
+Sondakinde P6'yı da hesaplarsak o da 17 geliyor. Hadi yazalım ne olacak?
+
+720
+01:47:51,491 --> 01:47:59,011
+P4, P4 artı 2,
+
+721
+01:48:01,684 --> 01:48:28,024
+P5, P5, P15, P6, pardon P4, P15'ti, bu da 17, burası da 17 geldi. Yani elimizde 5 tane bu kadar para var. Bu kadar para içinden sonuncuyu seçtim, aldım. Sonra sonuncuyu aldıktan sonra bunu alamadım. Ama
+
+722
+01:48:28,724 --> 01:48:56,264
+Bunu almayınca elde ettiğim kâra bakıyorum. Yani sonuncuyu alarak 17 birime ulaştım. Bunu aldığım için 17 birim burada saklandı. Bunu almasaydım bir önceki adımda 15 birimlik bir şey elde edecektim. Kârım elde olacaktı. 15 birime alacaktım. İkisinden hangisi büyük? Almak daha kârlı diyoruz ve sonunca 17 buluyoruz. Peki hangi paralar tercih edildi?
+
+723
+01:48:56,692 --> 01:49:06,791
+Buna bakacağız. Şimdi o zaman şuradan trace edeceğiz. Geriye doğru gideceğiz. Şimdi 17 bizim burada seçtiğimiz bir şey.
+
+724
+01:49:07,471 --> 01:49:18,951
+17'yi nasıl oluşturduk? Sonuncu parayı aldık. Cn'i aldık ve P4'e gittik. P4'e gittiysek artık P5'i almadık demek zaten.
+
+725
+01:49:18,951 --> 01:49:22,572
+Ki doğası gereği alamayız. O zaman P4'e gidiyorum.
+
+726
+01:49:23,060 --> 01:49:40,780
+P4 nasıl oluştu? Burada P4'te maksimum olan hangisi? 15'e 7'ymiş. 15 şurasıydı, 7 burasıydı. Demek ki burada P4'ü, yani 10 birimlik bu parayı aldım ve buradan P2'ye gittim demektir.
+
+727
+01:49:41,140 --> 01:49:48,780
+P2'ye gidince, P2 bakın, 0 ve 1, yani 1 ve 5. P2'yi almamışım.
+
+728
+01:49:49,939 --> 01:50:14,039
+Doğrudan P1'den 5'i almışım. Çünkü P2'nin değerliği 5. Bu bize neyi sağlıyor? Demek ki burada P2 alınmadı, bu alınmadı. Gittik P1'i aldık. P1'de zaten maksimum hangisi? Şurası 5. P1'i aldık. P-1 zaten yoktu. Oradan çıktık. Demek ki bu alındı, bu alınmadı, bunlar alındı, bunlar alınmadı, şu alınmadı, şu alınmadı.
+
+729
+01:50:16,979 --> 01:50:18,619
+4 ve 6.
+
+730
+01:50:22,228 --> 01:50:47,148
+Hem olabilecek en yüksek karı, bir de bu karı elde edeceğimiz itemlarımızı elde etmiş olduk. Bakın şu çok önemli. Son parayı alırsam C'en kadar değerleniyorum. Bunu birkaç farklı boyutta birazdan nebsekte de konuşacağız. Son parayı almazsam problemi...
+
+731
+01:50:47,859 --> 01:51:12,919
+Son parayı almamış şekilde, yani yeni bir problem varmış. Son para devreden çıktı. En eksi bir tane para şey için yeniden çözüyorum. Bakın şu yeniden çözüm gibidir. Yani hiç bizim ben size problem söylemedim. Dedim ki elimizde 6 tane para yok artık 5 tane para var. Bu 5 para için problemi çözeceğiz. Ve bu ikisinden, bu iki keyizden maksimum olanı dikkate alarak genel problemi çözüyoruz.
+
+732
+01:51:13,332 --> 01:51:17,792
+Burada bir şey sorabilir miyim? Burada neden bütün paraları alamıyoruz?
+
+733
+01:51:19,231 --> 01:51:25,671
+Problemin kendisi zaten onu söylüyor. Diyor ki, yan yana dizilmiş paraları seçmeden en yüksek neyi seçeceksin diyor.
+
+734
+01:51:26,112 --> 01:51:34,631
+En yüksek neyi alabilirsin diyor. Yani kural bu. Beşle biri almak yasak. Coin-row probleminin kuralı budur.
+
+735
+01:51:36,551 --> 01:51:38,051
+Yani koltuklar var.
+
+736
+01:51:39,699 --> 01:51:49,880
+Şuradaki ile şuradaki birbiriyle tanışmıyor diyeceksin. Onun gibi düşün. Böyle bir optimizasyon problemi. Kombinatörik bir problem.
+
+737
+01:51:51,340 --> 01:51:53,520
+Şimdi gelin bunun karmaşıklığına bakalım.
+
+738
+01:51:53,520 --> 01:51:59,100
+Ben bir şey sorabilir miyim? Çözümün sonunda maksimum sayı 17'ye ulaşıyoruz da.
+
+739
+01:51:59,408 --> 01:52:03,807
+Bu şeyleri bir yerde tutuyor muyuz hangilerini aldığımızı? Burada mesela 1-4-6'yı?
+
+740
+01:52:03,807 --> 01:52:10,927
+Kodlama yaparken, şimdi burada elle yaparken güzel bir soru. Bunu geri elde edebildik.
+
+741
+01:52:11,188 --> 01:52:17,927
+Yani nerede maksimuma, yani birinci şunu mu seçtik yoksa bunu mu seçtik?
+
+742
+01:52:18,008 --> 01:52:20,708
+Bunu bir yerde saklamamız lazım ilerlerken.
+
+743
+01:52:21,807 --> 01:52:23,408
+Şimdi normalde...
+
+744
+01:52:24,148 --> 01:52:32,188
+Bu iş yani elle çözerken şimdi 5'ten 5'e geçiş var. Demek ki burada bir değişim olmamış. Bu alınmamış demektir.
+
+745
+01:52:33,108 --> 01:52:42,027
+5'ten 7'ye bir şey var. Demek ki burada bir şey alınmış. Alınan ne? Şu. O zaman şunun üzerinden hızlıca söyleyecek olursam.
+
+746
+01:52:43,768 --> 01:52:45,327
+Şunu bir yok edeyim.
+
+747
+01:52:48,648 --> 01:52:50,847
+Kodlama yaparken onu bir yerde saklamamız lazım.
+
+748
+01:52:51,731 --> 01:53:00,912
+Şimdi 17 bizim maksimum değerimiz. 17'den öncekine 15. Demek ki bu para alınmış demekte bir fark var. Bunu bu şekilde çözebiliriz.
+
+749
+01:53:01,672 --> 01:53:09,912
+Şimdi bu alındıktan sonra 17'den 2 birim aldım. Ben 15'lik bir kâra gitmem gerekiyordu. Oradan buraya bakacağım.
+
+750
+01:53:11,112 --> 01:53:12,672
+Bundan bunu çıkarıyorum, buraya geliyorum.
+
+751
+01:53:12,672 --> 01:53:18,672
+Şimdi bunun öncesinde ne var? 7 var. Demek ki burada...
+
+752
+01:53:19,507 --> 01:53:47,047
+Pardon, şuna bakacağız. Demek ki bu öncekinden farklı, yani değişmiş, öncekinden kar gelmiyor. Bakın, coinlerin birbirine artışıl gelmesi başka, şunların artışıl gelmesi başka. Bu, bundan farklıysa demek ki buradaki para alındı demektir. Bu yine bundan farklı, bir öncekinden farklı. Demek ki on birimlik bir para almışız. Şunu almışız. Bunu alınca kime geleceğiz? İlk on beşten onu çıkardık, buraya geliyoruz.
+
+753
+01:53:47,891 --> 01:54:15,412
+Buraya geldiğimizde ne var? Bu demek ki alınmamış. Alınmadığı için ne yapacağız? Bunu almamışız, şuraya gelmişiz demektir. Bu kar burada aynen kalmış. Bu buraya gelince ne yapacağız? Bunu dikkate alacağız. Bu bundan farklı. Demek ki bu alınmış. Alınmış bir para. Bunun öncesinde 5'ten de şeyi çıkarıyoruz. 5'ten 5'i çıkarıyoruz. 0 ve oradan başlangıç duruma geliyoruz. Ve bu sayede hangi paralar seçilmiş şu tablo üzerinden de bulabiliriz.
+
+754
+01:54:15,859 --> 01:54:16,579
+Oldu mu şimdi?
+
+755
+01:54:17,239 --> 01:54:20,100
+Uluşturduğumuz tablodan tekrar geriye giderek bulacağız yani öyle mi?
+
+756
+01:54:20,279 --> 01:54:24,699
+Tabii tabii. Backtracking yani nasıl ben burada backtracking yaptıysam orada da backtracking yapacağız.
+
+757
+01:54:25,699 --> 01:54:34,720
+Ama şu, yani ben paralara eklerken ben şimdi 5'den 5'e geçiş yaptım. Buradan buna veya bundan buna.
+
+758
+01:54:35,520 --> 01:54:37,739
+Bir hafıza yani bir liste tutabilirsiniz.
+
+759
+01:54:39,539 --> 01:54:41,399
+Bir değişkenle işte bu
+
+760
+01:54:42,612 --> 01:55:08,872
+ikinci paranın alınıp alınmadığını, üçüncü paranın alınıp alınmadığını bir listede algoritmayı inşa ederken kullanabilirsiniz. Problem oldu da mesela ben dedim ki problemi bu altı para için bu şeyi kurun, dört para için değerlendirin ilk dört para için. Yani problemi şuradan keselim. O zaman profitimiz ne olur? On beş olur. Bu dört para için yapacağımız şey de dördüncüyü almışız.
+
+761
+01:55:09,492 --> 01:55:25,631
+Ondan sonra bir deneyi almışızdır, birinciyi almışız diyeceğiz. Onun için sondan geriye giderken bir defaya mahsus bunu çözeriz. Ama bir liste tutarsanız alt problemlerdeki çözümleri çok rahat tekrar rekonstrakt edebilirsiniz.
+
+762
+01:55:27,011 --> 01:55:32,631
+Şimdi bu coin roll problemiydi. Nispeten kolay, basit problemlerden bir tanesi.
+
+763
+01:55:34,260 --> 01:55:35,880
+Gelelim Napsack problemine.
+
+764
+01:55:35,979 --> 01:55:38,859
+Karmaşıklığını yapacak mı hocam? Ben araya girmiş oldum.
+
+765
+01:55:39,460 --> 01:55:41,139
+Tamam, onu da iyi hatırlattım.
+
+766
+01:55:41,500 --> 01:55:44,979
+Şimdi karmaşıklığa baktığımızda, biz ne yaptık arkadaşlar?
+
+767
+01:55:45,199 --> 01:55:52,639
+Bu algoritmayla, şu, bu bir aslında matriz, yani ikiye altılık bir matriz.
+
+768
+01:55:53,380 --> 01:55:56,239
+İkiye altılık matrizin son kısmını doldurduk.
+
+769
+01:55:56,420 --> 01:55:57,899
+İlk kısmını da önce doldurmuştuk.
+
+770
+01:55:57,899 --> 01:55:58,899
+O zaman...
+
+771
+01:56:00,083 --> 01:56:20,304
+Karmaşıklık olarak en defa şu profit hesabını yaptık değil mi? Yani bir döngüyle, işte bundan buna, bundan buna, sonuçta şunlarda daha önceden başlangıç koşulu var, bir for döngüsüyle bunu elde etmek için gittik, şuna baktık, işte bir diğer duruma baktık, şu değerleri elde ettik.
+
+772
+01:56:24,659 --> 01:56:43,779
+işte i inci elemanıyla i-1. yani matrisin ikinci satırındaki ilgili yerlerin kontrol edilmesi. Gayet basit bir kodlaması var. O zaman biz burada tn için, şuraya yazayım, yapacağımız şey en defa şu kısmı gezerek dolaşmak.
+
+773
+01:56:45,859 --> 01:56:47,779
+Theta ender veya big-o ender diyebiliriz.
+
+774
+01:56:48,404 --> 01:57:13,584
+Space Compress de SN dediğimize baktığımızda, şimdi şu paraların bir yerde, dizide değil de, dizide var olduğunu, hali hazırda bulunduğunu kabul edelim. O zaman ne olur? Bizim ekstradan şuraya bir N'lik bir diziye ihtiyacımız var. Bu da Theta N veya Big-O N diyebiliriz. Fazladan bir ihtiyacımız da olmadı.
+
+775
+01:57:13,904 --> 01:57:35,984
+Bakın bunu biraz önce brute force çözmeye çalıştığımda, şöyle ağaç yapmak gerekecek. Yani 5'i alırsam, kimi alamam? 2'yi alabilirim, 6'yı alabilirim, 2'yi alabilirim. Daha sonra o alt ağaçlarla devam eder. Yani şöyle diyeyim, 512-162 şöyle hızlıca karalayayım.
+
+776
+01:57:38,228 --> 01:57:39,548
+Bir dakika, neydi ya?
+
+777
+01:57:39,868 --> 01:57:41,648
+5-1-2-16-2
+
+778
+01:57:45,395 --> 01:58:10,515
+10, 6, 2. Yani 5'i alırsam 1'i alamam, 2'yi alabilirim, 10'u alabilirim, 6'yı alabilirim, başka 2'yi alabilirim. Sonra 1'i alırsam, 1'i alırsam zaten 5'i alamayacağım, 2'yi alamam, işte 10'u alabilirim, 6'yı alabilirim, 2'yi alabilirim. Böyle ağaçlar, şimdi 5'i aldım, 2'yi aldım, 10'u alamam, 6'yı alabilirim, 2'yi alabilirim.
+
+779
+01:58:11,188 --> 01:58:30,188
+Bu şekilde ağaçlarla gidecek. Yani ne var arkadaşlar? Bakın eksponansiyel bir durum ortaya çıkıyor. Yani bu da yine iki yüzeri n'ler veya üç yüzeri n'ler mertebesinde bir şekle giriyor. Hatta faktörüyle bile gidebilir. Onun için brute force yaklaşımı bakın burada işe yaramadı. Eğer şu algoritmayı ben...
+
+780
+01:58:31,091 --> 01:58:56,971
+şey yapacak olsam, hani divide and conquer yapacak olsam, şimdi bir tarafta PN-1 var, bir tarafta PN-2 var. Yani Fibonacci gibi düşünün. Bir N-1 çağrısı, bir de N-2 çağrısı yapacağım. Bunlar bir arada overlap olacak ve gereksiz yere bir şeyleri tekrar yapacağım. Onun yerine N tane eleman kullanarak ne yaptığım problemi hızlı bir şekilde kaydederek çözebilirim ve hangi paraları bulabildiğimi de söyledik.
+
+781
+01:58:58,899 --> 01:59:11,340
+Geldiğimizde, şey bakacağız, Naptek problemine bakacağız. Ondan sonra birkaç tane daha problem var. Onlarla devam edeceğiz. Saat elli beş geçiyor, beş geçe görüşmek üzere.
+
+782
+01:59:11,739 --> 01:59:14,819
+Hocam bir mail atmıştınız, dörde yirmi geçiyor, dev kontrolü başlar.
+
+783
+01:59:14,819 --> 01:59:23,920
+Yani en iyi ihtimalle, oh, eğer geç bitirirsek geç bakarız. Ona yapacak bir şey yok. Bugün dört saati, yani bugün bu konuyu bitirmem gerekiyor.
+
+784
+01:59:24,760 --> 01:59:25,479
+Teşekkür ederim.
+
+785
+01:59:35,315 --> 01:59:36,855
+Okullarınız hangi problem?
+
+786
+01:59:42,036 --> 01:59:42,755
+Hangisi?
+
+787
+01:59:44,835 --> 01:59:46,996
+Şey üzerinde işlem yaptığınız, değil misin yoksa?
+
+788
+01:59:47,795 --> 01:59:49,536
+Şu gördünüz mü? Yazı yazdın.
+
+789
+01:59:49,835 --> 01:59:50,135
+Hı hı.
+
+790
+01:59:50,555 --> 01:59:51,015
+PowerPoint.
+
+791
+01:59:55,347 --> 01:59:59,628
+Sadece arka planı siyah yaptım şu an, daha rahat görünsün diye.
+
+792
+02:00:00,548 --> 02:00:02,708
+Yukarıda cheese var, draw, oradan çıkıyor.
+
+793
+02:00:03,268 --> 02:00:06,588
+Hocam neyle yazıyorsunuz? Özel kalemle falan okunmadık mı?
+
+794
+02:00:06,807 --> 02:00:10,828
+XP-Pen şey var, grafik tablet var.
+
+795
+02:00:11,448 --> 02:00:12,468
+Tablette, ha.
+
+796
+02:00:13,268 --> 02:00:15,108
+Bu USB'den bağlanıyor.
+
+797
+02:00:16,108 --> 02:00:18,828
+Şey bu, ne diyorlar? Bunun bir özel adı var ya.
+
+798
+02:00:19,628 --> 02:00:21,188
+Kapasitif mi öyle bir şey?
+
+799
+02:00:22,100 --> 02:00:34,340
+Yani pardon, manyetik aslında üzerinde bir mıknatıs tarzı bir şey var, o ona algılıyor kalemi. Mouse gibi kullanabiliyorsunuz. Ama benimki Hamza Hoca falan da almıştı, belki ondan ders alanlar varsa.
+
+800
+02:00:35,188 --> 02:00:54,828
+Onun çözünürlüğü biraz daha iyiymiş. Ben biraz daha küçük almıştım. Biraz bazen böyle yazılar şey oluyor, yer yetmiyor. Mesela şuradaki şeyler karışıyor. O yönden birazcık memnun değilim. Keşke daha güzel. Normalde ben deftere falan çok iyi yazarım. Tahtaya da iyi yazarım da burada şey yapıyorum, kendimi rahatsız hissediyorum bazen.
+
+801
+02:01:01,811 --> 02:01:12,492
+Hocam, kontrol mailinde bir görüntüde sırayı vereceğim demiştiniz de, bende o görüntü gözükmüyor. Arkadaşlar da gözükmüyor, bilmiyorum da.
+
+802
+02:01:12,492 --> 02:01:22,372
+Muhtemelen şeydir, browser farkındandır. Bazen yolladığım maillerde o görüntü gitmiyormuş. Şöyle bakalım, neredeydi o?
+
+803
+02:01:28,212 --> 02:01:29,692
+Şuradan bulmaya çalışayım.
+
+804
+02:01:39,507 --> 02:01:42,528
+Şuradaki sıraya göre [öğrenci] sen en sonunda görünüyorsun.
+
+805
+02:01:44,528 --> 02:01:45,408
+Sağ olun hocam.
+
+806
+02:05:02,163 --> 02:05:04,163
+Şimdi yeniden mail gönderdim.
+
+807
+02:05:05,283 --> 02:05:07,684
+Saat 17.30'da falan yapalım diye.
+
+808
+02:06:13,876 --> 02:06:14,376
+Evet.
+
+809
+02:06:14,856 --> 02:06:22,096
+Kontrol linkten mi, önceki mail'deki linkten mi şey yapacağız, açacağız? Yoksa buradan mı devam edeceğiz?
+
+810
+02:06:22,096 --> 02:06:26,136
+Evet, yani o linkten geliyor, kayıt açacağız.
+
+811
+02:06:32,115 --> 02:06:39,115
+Diğer şeyimiz çok da duyulan, knapsack problem.
+
+812
+02:06:42,115 --> 02:06:55,115
+Şimdi bir çantamız var. Çantamıza kapasitesi kadar bazı itemler atacağız ve bu itemlerin ağırlıkları, değerleri var. Basit bilgileri var.
+
+813
+02:06:57,363 --> 02:07:12,423
+şekilde değeri nasıl çantaya atabiliriz? Şimdi V dediğimiz weight, N dediğimiz number of items.
+
+814
+02:07:17,876 --> 02:07:21,155
+Şöyle itemları bir örnek olarak yazayım.
+
+815
+02:07:55,380 --> 02:07:59,380
+Şimdi nasıl bir yol düşünürsünüz arkadaşlar, siz olsanız?
+
+816
+02:07:59,380 --> 02:08:13,380
+Yani weightleriniz, çantanın kapasitesini aşmayacak. Mesela çantanın kapasitesi 5. Bu itemlardan atacağız. En yüksek değeri elde etmeye çalışacağız.
+
+817
+02:08:17,939 --> 02:08:19,699
+Siz olsanız ne düşünürsünüz?
+
+818
+02:08:20,199 --> 02:08:21,779
+90'ı atarım direkt çantaya.
+
+819
+02:08:23,420 --> 02:08:27,519
+Direkt 90. Acaba 90'dan daha iyisi yok mu? Ben tam çözüm istiyorum bu arada.
+
+820
+02:08:29,259 --> 02:08:30,519
+Baktım gözüme ilk görünen.
+
+821
+02:08:32,719 --> 02:08:35,519
+Niye 90 dedin peki [öğrenci]?
+
+822
+02:08:38,019 --> 02:08:42,739
+Diğer sayılara şöyle baktım hocam yani brute force yaptım gözümle.
+
+823
+02:08:43,500 --> 02:08:44,500
+Profit en yüksek.
+
+824
+02:08:45,043 --> 02:08:49,484
+O gözüküyor. Yani 5'i diğerleri 90'ı bulmuyor yani topladığımızda.
+
+825
+02:08:49,684 --> 02:08:52,804
+O brute force değil. O başka bir şey. Şimdi onu söyleyeceğim.
+
+826
+02:08:54,043 --> 02:08:56,823
+5 tane 20'lik de var diyor. Mesela [öğrenci] 100 buldu.
+
+827
+02:08:58,444 --> 02:09:00,663
+Hayır, şimdi her birinden birer tane var arkadaşlar.
+
+828
+02:09:02,224 --> 02:09:05,524
+Yani ağırlığı bir. Yani iki tane atamıyoruz. Bir tane.
+
+829
+02:09:11,764 --> 02:09:22,764
+Bir de yarıya bölme falan da yok yani. Buna aslında 0-1 veya 1-0-napsack ya atacağız ya atmayacağız ve bir tane her bir itemden. Bu itemların ID'leri.
+
+830
+02:09:24,364 --> 02:09:31,164
+Bundan bir tane, iki tane falan da hepsinden birer tane var. Şimdi 90 dedi [öğrenci], başka önerisi olan var mı?
+
+831
+02:09:32,164 --> 02:09:33,764
+Kanta'nın kapasitesi ne?
+
+832
+02:09:34,364 --> 02:09:35,364
+5.
+
+833
+02:09:44,275 --> 02:10:11,115
+Evet. Şimdi [öğrenci]'in dediği 90 aslında brute force gibi görünüyor da brute force değil. Biz bundan sonra greedy göreceğiz. Açgözlü algoritma tekniği, optimizasyonda kullanılır. Direkt bakıyor, values'u en yüksek olan tamam diyor. Ben bununla hani Allah belge versin deyip alıp gidiyor. Diğerlerine hiç bakmıyor bile. Bakıyor, wait'i de uyuyor mu uyuyor. Tamam.
+
+834
+02:10:12,020 --> 02:10:37,900
+Bu greedy teknik. Aslında daha iyi bir greedy teknik var. Yükte hafif, fahada ağır. Mesela ne yaparsın? Dokusanı beşe bölersin, on sekiz. Elli beşli dörde bölersin. Yani en yüksek oranda olanları almaya çalışırsın ağırlığı doldurana kadar. O zaman belki biraz daha doktandan daha iyi şeyler olabilir. Tamam mı? Peki. Ama brute force değil.
+
+835
+02:10:39,956 --> 02:10:45,456
+Neden BruteForce diye? Çünkü BruteForce bütün olasılıkları denemek üzerine. BruteForce'u ben söyleyeceğim.
+
+836
+02:10:51,539 --> 02:11:18,639
+Brutforce'un deneme şudur arkadaşlar. Kaç tane itemumuz var? Beş tane. Şimdi ben item'ı birinci item'ı alsam, tek başına ikiye alsam, üçe alsam, dörde alsam, beşe alsam. Bunların hepsinin value'ları yani profitlerimiz belli. İşte 10, 20, 15, 50, 90. Sonra bir ile ikiye alsam, bir üçe alsam, bir dörde alsam, bir beşe alsam. Sonra ne var mesela? İki, üç.
+
+837
+02:11:19,412 --> 02:11:44,971
+3, 2, 4, 2, 5, sonra 3, 4, 3, 5, sonra 4, 5, bakın iki tane alamıyorum. Bunların her biri bir deneme durumları, her birinin şeyleri var. Sonra üçlü olarak alabiliriz. 1, 2, 3, yani şöyle diyelim, daha güzel bir mantıkla. Siz Lojik dersi de aldığınız için, benim itemlarım 5 tane, o zaman 0, 0.
+
+838
+02:11:46,963 --> 02:11:59,404
+0. item, 1. item, 2. item, 3. item, 4. item, 5. item. Bunların hepsini almama durumum var mı? Elbette var. Elim boş gidebilirim.
+
+839
+02:11:59,404 --> 02:12:12,764
+İşte bunu alırım. Ondan sonra bütün binary durumları yazarsak hepsini alma durumum var. Böyle bir doğruluk tablosu yaptığımızı düşündüğümüzde bu tablonun boyutu kaç olur?
+
+840
+02:12:13,876 --> 02:12:33,516
+2 üzeri 5 tam 32. Bunlardan bazılarını eleyeceğiz. Niye eleyeceğiz? Yani hiçbir şey almamazlık yok. Bir de şu weightlerin bazı durumlarda 5'i geçme durumu var. Ne bileyim hepsini aldığında mesela ne yaparsın? Weight'in 5'i geçiyor. Bunu alamazsın. Ama 2 üzeri 32 tane.
+
+841
+02:12:34,387 --> 02:12:56,768
+Hadi ilk durumu geçti. 2 üzeri n, yani n bizim item sayımız, number of item. Şöyle küçük kendine göstermişiz. Eksi bir defa deneme yapıp her birinin bir karşılığını bulmam gerekiyor. Hangisi yüksekse ve hangisi işte şu ağırlık şartımı sağlıyorsa onu alabilirim. O benim en yüksek değerimdir. İşte bu brute force teknik.
+
+842
+02:12:57,716 --> 02:13:18,796
+En küçük değerler için 32 defa denemek çok bir problem değil belki. Alt ürün hesaplı problem. Tabi bunun kodunu yazmak biraz zor. Brute force olsa bile. Deneme şekli kolay geliyor da. Forward olarak ekleyeceksin. 1'i ekle, 2'yi ekle veya 1 ile 2'yi arasında 3'i ekle falan. Yani şu doğruluk tablosundaki bütün case'leri denemek gerekiyor.
+
+843
+02:13:23,604 --> 02:13:35,783
+2 üzeri n dedik. Space n'e baktığımızda, yani bizim number of item sayımız var, bir de bunları tutacak value değerimiz var, toplam değerleri.
+
+844
+02:13:35,943 --> 02:13:43,663
+Yani şu bizim zaten dizi olarak bize veriliyor, ekstra bunu kullanmaya ayrı bir diziye ihtiyacımız yok. Space değerimize de 1 diyebiliriz.
+
+845
+02:13:43,663 --> 02:13:50,724
+Bu şekilde bu problem çözülür. Ama n'in çok büyük değerleri için bu problemi çözmek mümkün değil.
+
+846
+02:13:51,731 --> 02:13:56,711
+O zaman yapacağımız şey, acaba dinamik programlamayı kullanabilir miyiz?
+
+847
+02:13:57,371 --> 02:14:01,051
+Şimdi bunun için, şuradaki kurallara yine bakalım.
+
+848
+02:14:01,452 --> 02:14:03,751
+Yani bunu bir alt problemler halinde yazabilir miyiz?
+
+849
+02:14:04,091 --> 02:14:04,811
+Yazabiliyoruz.
+
+850
+02:14:05,011 --> 02:14:14,871
+Recurrence Slation'ı kurarsak, başlangıç koşullarını ortaya atarsak ve bütün sol ışınları, kaydettiğimiz sol ışınlardan yazarsak, bunu çözebiliriz.
+
+851
+02:14:14,871 --> 02:14:15,851
+Şimdi ben...
+
+852
+02:14:16,275 --> 02:14:22,155
+Bunun için bir veri yapısı öncelikle tasarlamamız gerekiyor. Bu veri yapısı burada matris olacak.
+
+853
+02:14:23,195 --> 02:14:28,555
+Çünkü ağırlık bir değişken, bir de kullandığımız itemlar var. O da bir diğer değişken.
+
+854
+02:14:28,815 --> 02:14:32,916
+Şurayı şöyle bir kopyalayayım. Şurada lazım olacak.
+
+855
+02:14:50,996 --> 02:14:58,916
+şöyle bir V yapısı tasarlıcıda arkadaşlar burada bir matriz
+
+856
+02:15:04,659 --> 02:15:13,659
+Benim ağırlıklarım şuradan, yani weightleri buradan söyleyeceğiz. Itemları da buradan, yani satırlarda söyleyeceğiz.
+
+857
+02:15:18,676 --> 02:15:34,676
+Brutforce'u aslında burada bir anlamda gerçekleştiriyoruz. Ama kaydederek yaptığımız için daha akıllı uslu ilerliyoruz ve ekstra gereksiz işlem kalabalığı olmuyor. 3, 6, 5.
+
+858
+02:15:36,115 --> 02:15:44,155
+Şimdi 0 kilo olma durumu var. Yani hiçbir şey kilo olmadı mı? Olmadı mı? 2, 3, 4, 5.
+
+859
+02:15:45,300 --> 02:15:51,420
+0, 1, 2, 3, 4.
+
+860
+02:15:58,260 --> 02:16:06,860
+4 tane item varmış. Ha, burada değerler değişmiş bu örneğimizde. Tamam, o zaman değerleri ben de değiştireyim. Ben de ne oluyoruz diyorum.
+
+861
+02:16:06,860 --> 02:16:11,060
+2-1-3-2
+
+862
+02:16:11,060 --> 02:16:18,220
+V'miz yine 5, 10-2-10-20-15
+
+863
+02:16:18,220 --> 02:16:20,900
+12-10-20-15
+
+864
+02:16:20,900 --> 02:16:24,480
+Şimdi
+
+865
+02:16:25,007 --> 02:16:27,007
+Bizim amacımız ne arkadaşlar?
+
+866
+02:16:28,507 --> 02:16:31,007
+Maximization yapmak.
+
+867
+02:16:32,808 --> 02:16:42,636
+Neyi? Toplam V'leri, yani çantaya attığımız V'leri maksimiz etmek. Amacımız bu. Kısıtımız ne?
+
+868
+02:16:45,683 --> 02:16:52,683
+Subject to şey, şu V, W. Subject to, şunu düzgün yazayım.
+
+869
+02:16:58,451 --> 02:17:15,831
+Amacımız bu, kısıtımız belli. Şimdi biraz önceki problemde amacımız neydi? En yüksek parayı elde etmektedir. Kısıtımız neydi? Peş peşe gelen iki parayı alamamaktı. Bu amaç ve bu kısıt doğrultusunda, şimdi ben nasıl bir yol izlemem gerekiyor?
+
+870
+02:17:23,631 --> 02:17:31,391
+Diyeceğiz ki arkadaşlar, 0 kiloluk bir çantam varken elde edeceğim profit ne olabilir?
+
+871
+02:17:31,551 --> 02:17:35,551
+Şimdi 0 kiloluk bir çantam varken 0 item alırsam hiçbir kâr elde edemem.
+
+872
+02:17:35,612 --> 02:17:41,092
+0 kiloluk çantam var, birinci item'ın weight'i buraya sığmıyor.
+
+873
+02:17:41,211 --> 02:17:42,332
+Sığmadığı için ne yapacağım?
+
+874
+02:17:42,804 --> 02:17:55,384
+Bunu alamam. İkinci item'ın weighti buraya sığmıyor, sığmadığı için alamam. Üçüncü item'ın weighti sığmıyor, sığmadığı için alamam. Burada da alamam. Yani herhangi bir kar elde edemiyorum.
+
+875
+02:17:57,064 --> 02:18:03,184
+Burayı anladık mı? Bakın şurasını niye düzgün yazamadım? Item diyelim. Bu kısım item'ı şu kısmı da weight'i gösteriyor.
+
+876
+02:18:05,304 --> 02:18:06,703
+Şimdi gelelim.
+
+877
+02:18:07,316 --> 02:18:33,436
+Şu ilk satıra. Bakın bunlar bizim başlangıç koşullarımız. Yani P'nin 0. satırından weightine kadar ve P'nin i. satırından i sıfırına kadar. Yani şurası ne olacak? 0 olacak. Niye?
+
+878
+02:18:33,907 --> 02:18:46,467
+Şimdi sıfır tane item alırsam, bir kiloluk çantam da olsa, iki kiloluk çantam da olsa, üç kilo, dört kilo, beş, çantam ne kadar büyük olursa olsun hiçbir item almadığımda elde edeceğim kar yoktur, sıfırdır.
+
+879
+02:18:48,467 --> 02:18:49,067
+Gelelim.
+
+880
+02:18:50,707 --> 02:18:52,127
+Şimdi bakacağız.
+
+881
+02:18:53,007 --> 02:18:56,327
+Itemlar üzerinden şu tabloyu doldurmaya çalışacağız.
+
+882
+02:18:57,847 --> 02:18:58,727
+Mantığını kuralım.
+
+883
+02:18:59,860 --> 02:19:03,120
+Recurrence installation sonra çok rahat çıkacak aslında.
+
+884
+02:19:04,200 --> 02:19:14,060
+Bir kiloluk birinci item'ı alırsam, şimdi item'ların burada ID'leriyle şeyleri, baitleri farklı, onun için şuraya bir geçmek gerekecek.
+
+885
+02:19:14,200 --> 02:19:17,020
+Keşke diğer örneği yapsaydık ama bu da olsun problem değil.
+
+886
+02:19:17,819 --> 02:19:22,020
+Şimdi birinci item'ı alırsam, iki kiloluk şey.
+
+887
+02:19:23,219 --> 02:19:30,799
+Bir kiloluk bir çantama sığar mı? Sığmaz. O zaman buradan herhangi bir kar elde edemem. Birinci item.
+
+888
+02:19:32,959 --> 02:19:38,540
+Birinci item'ı iki kiloluk bir çantam olsaydı sığdırabilir miyim? Sığdırabilirdim. On iki.
+
+889
+02:19:40,279 --> 02:19:45,399
+Yalnız bunu ekleyince bakacağım. Hemen pat diye eklemiyoruz.
+
+890
+02:19:46,599 --> 02:19:49,559
+Şimdi bunu eklemeseydim daha önce
+
+891
+02:19:50,227 --> 02:20:04,227
+2 kiloluk item'ım vardı ve 2 kiloluk çantam var. Çantamda ne kadar boş yer kalacak? 2 kiloluk çantam var, 2 kiloluk item atıyorum. Ne kadar boş yer kalacak? Söyleyin.
+
+892
+02:20:05,587 --> 02:20:06,087
+Kalmaz.
+
+893
+02:20:07,187 --> 02:20:14,027
+Kalmadığı durum yani sıfır. 0 kilolukta ne kadar karım var? Sıfır. Demek ki...
+
+894
+02:20:14,260 --> 02:20:39,780
+Önceki elde ettiğim durumla şimdiki yeni durum arasında bir karşılaştırma yapıyorum. Atarsam öncekine göre daha iyi durumdayım. O zaman 12 birimlik bir kar elde ediyorum atarsak. Yani doğrudan hani bunu kopyalayalım diyemiyoruz arkadaşlar. Buna dikkat. Peki, aslında bu satır bundan sonra 12-12 gidecek. Çünkü ne yaptım? Sadece bir tane item atıyorum.
+
+895
+02:20:40,435 --> 02:21:01,095
+Şimdi birinci itemı 3 nolu çantaya atabilir miyim? Atabilirim. Kilosu sığıyor. 3 nolu çantaya atarsam, önceki durumda, önceki şartta ne kadarlık yer kalıyor? Bir birimlik karkılığı. Bir birimlik durumda ne kadarlık kârım var? Önceki satırda sıfır. Yani 12 birim. Yine olacak.
+
+896
+02:21:02,355 --> 02:21:28,675
+4'lük çantaya 2'lik şey yine atabiliyorum, atıyorum. 2'lik kar daha önceden yok, 12. 5'lik bir çantaya önceden bir şey atabiliyorum, bir ikilik item atabiliyoruz. Burası da 12. Bakın burası kolay gitti. Çünkü şu ana kadar hiçbir item atmadık çantaya. Geliyoruz. 2'lik item'ı, 2'nin oğlu item, yani bir birimlik item'ım var.
+
+897
+02:21:29,843 --> 02:21:31,843
+Bunu çantaya atabilir miyim?
+
+898
+02:21:34,123 --> 02:21:38,243
+Atabiliriz. Birbiriyle kiloları eşiyor. Ne kadar atarsam şey olacak? On.
+
+899
+02:21:38,683 --> 02:21:41,763
+Peki, birlik attığımda ne kadarlık yer kalıyor?
+
+900
+02:21:43,763 --> 02:21:49,363
+Şurada sıfır birlik. Daha öncekindeki hal ne kadar mı? Sıfırmış. O zaman atmanın faydası var. Bunu atıyoruz.
+
+901
+02:21:51,103 --> 02:21:51,563
+Geldik.
+
+902
+02:21:53,843 --> 02:22:19,783
+Burada dikkat edileceğim şey, nasıl burada 1 ile 0'ı beraber değerlendiriyorsak, yani varken ve yokken, artık burada 3'ünü birden değerlendireceğiz. Yani elimde hem ikilik item var, hem de şu ana kadarki birilerin durumu. Biraz önceki durumla örnekli aynı. Şimdi 2'nin oğlu item'ı buraya kopyalayabilir miyim? Atabilirim. Ama daha önceden 1 attım. O zaman bakacağız karımıza.
+
+903
+02:22:20,180 --> 02:22:43,479
+İki nolu item'ın profiti kaç? 10. Bu 10'u buraya attığımda ne kadarlık yer kalıyor? 0. Ama daha önceden attığımızda arkadaşlar, pardon, iki nolu item'ı buraya attığımızda ne kadarlık şey var? Bir saniye, 1 kilo.
+
+904
+02:22:45,203 --> 02:22:59,943
+11'lik. Daha önceden biz bunu kopyaladığımızda, 12, 12, 12, evet, 12'lik zaten yer vardı. Onun için bunu buraya almamızın bir anlamı yok. Yani doğrudan burası atılmayacak, bu alınmayacak, 12 olarak kalacak.
+
+905
+02:23:02,443 --> 02:23:08,423
+Şimdi geldik, ikin oğlu item'ı 3 kiloluk bir çantaya almaya.
+
+906
+02:23:09,940 --> 02:23:32,860
+İkinoğlu Aytım, 3 kiloluk çantaya sığar mı? Sığar. Çünkü kendisi bir birimdi. Peki, 10 birim bunu atarsak, ne kadarlık yer kalıyor? 12 birim. 12 birimlik bir şeyde, pardon ne birim ya, baştan söylüyorum burayı. İkinoğlu Aytım.
+
+907
+02:23:33,247 --> 02:23:57,608
+1 kg. 1 kg üçlük çantaya atabilir miyiz? Atarız. Peki bunu atarsak, çantada ne kadar boş yer var? 2 birimlik boş yer var. O 2 birimlik boş yer daha önce ne kadar doldurmuş? 12 birimlikle. Ondan daha büyük de yok. O zaman bu 12 birimlik bir şeyle ne yapacağım arkadaşlar? 10 birimliği toplayacağım. Yani bunu da atacağım. Artık 22 birimlik bir durum elde ediyoruz.
+
+908
+02:23:58,324 --> 02:24:04,963
+Buradaki çantaya, yine bu item'ı birimlik çantaya atarsak ne olur?
+
+909
+02:24:06,144 --> 02:24:10,783
+Üç birimlik kalıyor. Üç birimlik kaldığı için üç birimlik daha önce on ikilik bir şey var.
+
+910
+02:24:10,904 --> 02:24:12,584
+Onu da atarsak bu da yirmi iki oldu.
+
+911
+02:24:13,364 --> 02:24:19,524
+Şuraya attığımızda beş birimlik bir çantaya atarsak on birim buradan geldi.
+
+912
+02:24:19,864 --> 02:24:22,283
+Kalan dört birimin on ikisi de daha önceden doldurulmuştu.
+
+913
+02:24:22,344 --> 02:24:24,204
+Buradan da yirmi ikilik bir profil elde ediyoruz.
+
+914
+02:24:26,515 --> 02:24:33,876
+Şimdi gelelim şuraya. Bunu yapacağız, ondan sonra Recurrence Sılayışı'nı kurup diğer örneği sizlerle beraber yaparız.
+
+915
+02:24:34,615 --> 02:24:42,735
+Şimdi üçüncü item, üç birimlik bir weight'i var. Bu bir kiloluk çantaya sığar mı? Sığmaz.
+
+916
+02:24:42,735 --> 02:24:51,695
+Sığmadığı için daha önceden ben neye attım? Şu bir no, iki no item'ı atmıştım. O zaman buradan on devam ediyor.
+
+917
+02:24:54,451 --> 02:25:13,211
+Üçlük çanta ikiye sığar mı? Yine sığmaz. O zaman burası on iki olarak devam ediyor. Üçlük çanta üçe sığar mı? Evet, sığar. Ne kadarlık şey var? Yirmilik bir kar var. Fakat bunun daha önce yirmi iki birimlik bir, yani daha önce de yirmi ikiyle doldurulmuş. O zaman bunu almama gerek yok. Yirmi iki diyoruz.
+
+918
+02:25:13,811 --> 02:25:18,551
+Üçü alıyoruz. Dörde atıyoruz. Nedir bu?
+
+919
+02:25:19,007 --> 02:25:43,128
+Bir birimlik yer kaldı. Bir birimlik yer kaldığında 22 daha önce var. Tamam mı? Ben şu 20'yi alsam, bir de şuradan 10 birimliği alsam, yani buradan atılmışları, çünkü daha önceden burada olanlar var, ne yaparım? 30 birimlik bir kâra ulaşırım.
+
+920
+02:25:45,587 --> 02:26:02,868
+4'e atmak istediğimde 3'ün değeri 20. Bakıyorum daha öncekinden küçük ama 3'ün içerisine bir birimlik daha şey atarım. Bir birimlik daha atılabilecek ne var kar olarak? 10'luk bir karım var. 20 bunu alırım, 10 da bunu alırım, burası 30 olur.
+
+921
+02:26:04,067 --> 02:26:08,507
+Devam edelim. 3'ü 5'lik çantaya atmaya çalışıyoruz.
+
+922
+02:26:09,620 --> 02:26:28,600
+Atabilir miyiz? Atabiliriz. Ne kadarlık yer kalıyor? İki birimlik yer kalıyor. İki birimlik yer kalınca şu iki birimde daha önceden on ikilik bir problem çözülmüş. Bakın bunlar sap problem. Yani çanta iki birimlik olsaydı on iki elde edecektik maksimum. O zaman on iki oradan, yirmi de buradan otuz iki buluyoruz.
+
+923
+02:26:29,043 --> 02:26:35,844
+Doğrudan, mesela bu 22'yi buraya kopyalamadık, dikkat edin bakın, kopyalasaydık 12 birimlik, 10 birimlik burada zararımız vardı.
+
+924
+02:26:36,664 --> 02:26:47,543
+Geldik buraya, 4'ü 1'e atabilir miyiz? Atamayız, sığmaz. 2'yi buraya atabilir miyiz? Atabiliriz.
+
+925
+02:26:54,100 --> 02:27:18,760
+Şurası var, 12 birimlik. O zaman burası 12 mi, 15 mi? 15'i almak daha güzel. 15'i aldık. Bunu 3'e atmaya çalıştığımızda 15 birim. 15 burada bir birim kalacak. 10 buradan gelecek. 15 buradan 25. 15'i buraya almaya çalıştığımızda 15 burada var. Diğer durumdan mesela şuna bakacağız.
+
+926
+02:27:20,659 --> 02:27:27,340
+2 idi, 4'den 2 çıktı, 12, 15 daha 27, 27 mi 30 mu? 30 zaten var elimizde, 30'a alıyoruz.
+
+927
+02:27:29,159 --> 02:27:36,600
+Buraya baktığımızda 15, 3 birim kalıyor, 3 birimden 22, 15 de buradan 37.
+
+928
+02:27:38,600 --> 02:27:43,659
+Bakın 37 ile en fazla kar elde edebiliyormuşuz bu durumda.
+
+929
+02:27:44,628 --> 02:28:11,747
+Şimdi bunun geri gidip hangi itemları alacağımıza bakacağız. Buna hızlıca şöyle bir bakalım. Ondan sonra Recurrence Slash'ını kuralım. Ben 37'yi aldıysam, demek ki üst satırdan bunu almadım demektir. Yani üst satırdan olduğu gibi kopyalamadım. Kopyalamadım ne demek? Dördüncü item'ı aldım demektir arkadaşlar. Dördüncü item'ı aldıysam ne kadarlık bir kar kazandım? 22'lik bir kar.
+
+930
+02:28:12,111 --> 02:28:22,091
+O zaman 22'lik bir kara götüren yere bakacağım. 22'lik kar nereden ekleyerek geldik? 22'ye şuraya eklemiştik değil mi?
+
+931
+02:28:23,091 --> 02:28:29,391
+Demek ki burada 22'lik bir kar elde elden durum. Ama bu 3'ü aldık mı almadık mı bilmiyoruz.
+
+932
+02:28:29,391 --> 02:28:38,351
+Şimdi 3 yukarıdan doğrudan gelmiş bakın. O zaman 2 alınmış demektir. Çünkü 2'nin karı
+
+933
+02:28:39,092 --> 02:29:03,092
+Evet, 22. Şuradan bulduğumuz ker, yani buradan bulduğumuz ker, şu aynen kopyalamış. Yoksa bunu almamışız demektir. O zaman bu alınmadı. 2'yi aldık. 22, daha sonradan 12 olmuş. Şimdi 22'yi elde ettiğimiz durum nedir? İkin oğlu item'ın...
+
+934
+02:29:03,700 --> 02:29:21,700
+Demek ki buradan bir şeyler alınmış, 2 nol item alınmış. Profitini çıkartıyoruz, 12. Bir üst satırda 12'ye gidiyoruz. Şurası. Bu olsaydı çünkü doğrudan bunu alacaktık. Bu item alındığı için...
+
+935
+02:29:22,515 --> 02:29:38,155
+Bu item üzerinden gideceğiz ve şunu da aldığımızı kabul edeceğiz. Zaten 12'den sonra bu bir nolu itemden da 12'den 12 çıktı, 0'a geldik ve demek ki 1, 2 ve 4'ü alarak sonuca ulaştık.
+
+936
+02:29:38,876 --> 02:29:45,635
+Şimdi bu genel analoji, yani üzerinde düşünerek bunu yaptık. Bunun önce case'lerine bakalım.
+
+937
+02:29:52,340 --> 02:30:14,239
+Take item i, i inci item'ın alınması üzerine. Şimdi ben i inci bir item'ı alıyorsam, yani dahil ediyorsak biraz önce olduğu gibi, ne kadar değerlendik? Yani p, i virgül, w'daki hücremize ne yazacağız? Şimdi bir şey yazıyorsak, arkadaşlar,
+
+938
+02:30:22,131 --> 02:30:23,131
+Şuna bakacağız.
+
+939
+02:30:27,827 --> 02:30:46,788
+Bir şey yazıyorsak, bir önceki durumda ne kadar ağırlık farkı varsa, şöyle diyelim, i-1, virgül, v-vi. Şu ana kadarki ağırlığımızdan,
+
+940
+02:30:47,347 --> 02:31:02,347
+Bir önceki duruma kadarki ağırlığımız artı ne kadar değer kazanır. İyi ince item'ı aldık, bir değer kazandık ve iyi ince item'ın ağırlığı kadar çantada boş yerimiz kaldı. Onu söylemek istiyoruz. Tamam mı?
+
+941
+02:31:03,047 --> 02:31:14,067
+Yani çantam 5 kilo, 3 kiloluk bir şey attım, 2 kilo 5 yerim kaldı. Bu 3 kiloluk mesela şu olsun, 20 birimde maliyetim arttı eğer bunu alırsam.
+
+942
+02:31:14,835 --> 02:31:39,655
+Eğer almazsam, arkadaşlar, o zaman case2, şuna case1 diyelim, not take item i, p, i, virgül, v almazsak ne yapacağız? Bir önceki çözümde,
+
+943
+02:31:40,819 --> 02:32:03,959
+p i eksi bir virgül w'yu doğrudan kullanacağız. Peki alalım mı, almayalım mı? Hani bunun durumuna bakmamız gerekiyor. Ha bir de tabii şunu dikkat edeceğiz. Bir şeyi alıp almamanın bir kararı, hani şuradaki durum. İki tane kes. Bir de ne olabilir? Item'ım.
+
+944
+02:32:04,272 --> 02:32:23,612
+weight'ime sığmıyordur. Yani burada 2 nolu item, mesela 3 nolu item'ın weight'i 3. Ne yapıyorum? Onu doğrudan alamam zaten. Çünkü ağırlığım 1, ağırlığım 2. Ancak burada alabilirim. Almayı deneyeceğim. O zaman şöyle bir Recurrence relation yazacağız. Biraz hacimli bir şey. P, i, v eşittir.
+
+945
+02:32:28,912 --> 02:32:31,612
+Başlangıç koşulları zaten şunu yazmış olalım.
+
+946
+02:32:32,435 --> 02:32:54,015
+Şimdi P, I-1, V yani bir önceki satırı olduğu gibi kopyalar. Ne durumda? Eğer V'nin İ inci ağırlığı büyükse V'den, yani şuradaki ağırlığımız şuradaki V değerlerinden büyükse doğrudan üstteki satırı kopyalar. Alma demektir. Hiç almaya uğraşma bile.
+
+947
+02:33:00,051 --> 02:33:25,611
+Alıp almama durumu şu iki tane case'i maksimize edeceğiz. Yani alsam mı iyi olur, almasam mı iyi olur? Şimdi alsam iyi olur da neydi? P'nin i-1, v-b inci karı artı vi. Önceki miktarda elde edilen kar artı şu anki bu item'ın elde ettiği kar ile
+
+948
+02:33:26,420 --> 02:33:44,180
+Daha önce elde ettiğim, eklemeden elde ettiğim, yani bir üst satırdaki elde ettiğim, P-I-1, Omega veya W ise, tabii bu if böyleyse, if not diyelim, böyle değilse, yani ağırlık sığıyorsa, iki farklı duruma bakacağız.
+
+949
+02:33:44,180 --> 02:33:45,963
+Bu iki farklı durumda...
+
+950
+02:33:46,515 --> 02:34:10,015
+Yani biraz önce ne yaptık? 3'ü eklemeye çalıştık. 3'ü en az şuraya ekleyebiliyorduk değil mi arkadaşlar? Biraz öncekilerde yani 1 ve 2 de yok. 3'ü eklerken diyeceğim ki 3'ün profiti ne kadar? 20. 3'ü eklediğim zaman çantada ne kadar boş yer kalacak? 0. 0'da ne kadarlık kar var? 0. O zaman mevcut 0'la mı devam edeyim?
+
+951
+02:34:10,739 --> 02:34:15,399
+Yoksa 20'lik yeni bir karla mı, pardon 22 artı 0'la mı devam edeyim?
+
+952
+02:34:16,739 --> 02:34:20,860
+Yoksa daha önceki karınla mı, 22 ile mi devam edeyim?
+
+953
+02:34:20,939 --> 02:34:25,099
+Şimdi 20 artı 0 bir yanda 22 bir yanda ne oldu? 22 oldu.
+
+954
+02:34:25,799 --> 02:34:28,219
+Şimdi 3'ü 4'e ekleyebilir miyim? Ekleriz.
+
+955
+02:34:28,439 --> 02:34:31,819
+3'ü 4'e ekleyince ne kadarlık bir kar getirecek?
+
+956
+02:34:33,119 --> 02:34:36,180
+Şuradan 20'lik bir kar getirecek şuraya.
+
+957
+02:34:36,628 --> 02:34:59,188
+20'lik kar getirecek ne kadar boş yer kalacak? Bir birim bir boş yer kalacak. Bu boş yer ne kadarlık daha önceden kar getirebilir? 10. 20, 10 daha 30. Eklemesem ne olacak? 22'lik zaten daha önceden çözmüşüm onu. O çözülmüş bir problem. Eklemesem 22 bir durum. 22 var. O zaman ekleyeyim diyoruz ve bunu buraya eklemiş oluyoruz. Anlaşıldı mı?
+
+958
+02:35:04,531 --> 02:35:24,431
+Hani gerek var mı? Tabii problemi çözmek için gerek var ama biz önce algoritmik olarak onu hallettik. Sonra Recurrence Slation üzerinden konuştuk. Peki bunun karmaşıklığına bir bakalım. Şimdi TN hesabında ne kadarlık bir işleme yaptık arkadaşlar?
+
+959
+02:35:32,275 --> 02:35:42,716
+bir matris doldurmak durumundayız. Space n de bunun aynısı. Eşittir space n diyelim. Niye? Matrisin boyutu ayrıca öyle bir matrise ihtiyacımız var.
+
+960
+02:35:43,835 --> 02:35:51,876
+2 üzeri n'ler nerede? Şuradaki şey nerede? Yani v ile n'i birbirine yakın tutarsak n kareye düşüyor. 2 üzeri n'den n kareye indirebiliyoruz.
+
+961
+02:35:53,876 --> 02:35:55,896
+Bakın burada rekürsif bir çağrı da yok.
+
+962
+02:35:56,136 --> 02:35:58,315
+Yani rekürsif fonksiyonu da kurmuyoruz.
+
+963
+02:35:58,435 --> 02:36:03,056
+Sadece matriz üzerinde bir for döngüsüyle şu matrizi doldur veriyoruz.
+
+964
+02:36:03,596 --> 02:36:04,976
+Başlangıç koşullarımız belli.
+
+965
+02:36:05,935 --> 02:36:08,815
+Şuradaki değerlerde çok rahat yerine yazılıp elde edilecek şeyler.
+
+966
+02:36:09,896 --> 02:36:11,896
+Bir örnek daha yapalım mı bu konuda?
+
+967
+02:36:12,896 --> 02:36:14,036
+Herhalde iyi olur dersiniz.
+
+968
+02:36:22,164 --> 02:36:24,463
+Şimdi şöyle yapayım
+
+969
+02:36:28,979 --> 02:36:30,979
+Biraz ekranı bir teğmen.
+
+970
+02:36:41,108 --> 02:36:42,567
+V'miz 9 olsun.
+
+971
+02:36:46,804 --> 02:36:51,384
+Waitler, hatta direkt şeyi çizeyim, onun üzerinden gidelim.
+
+972
+02:36:59,731 --> 02:37:00,932
+Böyle çizemiyorum.
+
+973
+02:37:23,891 --> 02:37:33,371
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+974
+02:37:36,632 --> 02:37:41,092
+Weightlerimizde buysa, value'larımız, değerlerimiz.
+
+975
+02:37:42,231 --> 02:37:45,711
+Şimdi burada değerleri arkadaşlar, yani 1, 2, 3, 4 olarak vermemiş.
+
+976
+02:37:50,092 --> 02:37:51,083
+1, 2, 3, 4.
+
+977
+02:37:55,827 --> 02:38:18,567
+Direkt weightleri yazalım. Yani itemlerin weightlerini yazalım. 1, 2, 3, 4, 5. Yani ID'leri ve weightleri aynı. Her bir item'ın. Bu yoruları da 1, 4, 4, 5, 7. 1, 4, 4, 5, 7.
+
+978
+02:38:24,115 --> 02:38:29,236
+en fazla kar nasıl olacak? Şimdi şu Recurrent Slation'ı alalım.
+
+979
+02:38:48,244 --> 02:38:50,244
+Alamıyoruz. Ctrl C diyelim.
+
+980
+02:39:00,788 --> 02:39:04,788
+Yani bir item'ı alıp alamadığımıza bakacağız.
+
+981
+02:39:06,288 --> 02:39:13,288
+Şimdi sizlere soru sorarak gidelim. Bu kısımda da bu problem bitirirsek edit-tisniz kalıyor, öbür seksiyonunda da onu yaparız.
+
+982
+02:39:14,488 --> 02:39:21,288
+Şimdi [öğrenci], ilk satırı dolduracağız. İlk satırı mesela nasıl doldururuz?
+
+983
+02:39:24,915 --> 02:39:28,675
+hepsi sıfır mı oluyor hocam?
+
+984
+02:39:30,335 --> 02:39:42,635
+hepsi sıfır oluyor. Neden? Şimdi burası waitler, burası da itemler. Yani şunlar itemlerin waitlerini sıraladım, id gibi olsun diye tekrar iki tane iş yapmayalım diye items var.
+
+985
+02:39:44,355 --> 02:39:47,695
+Şimdi bir tane, tabii burada
+
+986
+02:39:51,796 --> 02:39:53,796
+Sıfırdan başlamak gerekiyordu herhalde hocam.
+
+987
+02:39:53,796 --> 02:39:56,796
+Evet, sıfırdan başlamak gerekiyordu.
+
+988
+02:40:00,147 --> 02:40:21,827
+Veya buna gerek yok. Hani şurada eklemeye gerek yok. Bundan da olur. Tamam. Önemli olan şurada sıfırdan başlamak zaten. Onu da problem olur mu? Tamam, problem değil. Şimdi sıfır kiloluk bir çantam varken o zaman birinci sütunu tamamlayacağız.
+
+989
+02:40:22,291 --> 02:40:28,731
+0 kiloluk çantamız varken [öğrenci], hiçbir item alabilir miyiz? Alamayız. Alamadığımız için bütün profitlerimiz ne olur?
+
+990
+02:40:30,631 --> 02:40:31,492
+0 olur, doğru mu?
+
+991
+02:40:33,031 --> 02:40:33,831
+Evet hocam.
+
+992
+02:40:34,471 --> 02:40:41,811
+Peki. Geldik o zaman şu birinciyi dolduralım. Şimdi biraz tabi ezberden de kaçmış oluyoruz aslında böyle oldu iyi oldu.
+
+993
+02:40:41,811 --> 02:40:49,131
+Şimdi 1 kiloluk çantam var. 1 kiloluk çantama 1 item ekleyeceğim.
+
+994
+02:40:50,036 --> 02:41:02,015
+Bu itemlar tabii, şunlar itemların profitleri, buraya da payler diyelim veya value diyelim. Bunlar value, bunlar weight. Şimdi bir kiloluk çantaya bu item'ı atabilir miyiz?
+
+995
+02:41:05,276 --> 02:41:06,855
+Onu atabiliriz hocam.
+
+996
+02:41:07,296 --> 02:41:17,456
+Atabiliriz. Ne kadar değer kazanırız? Bir birim değer kazanırız. İki kiloluk çantaya bu item'ı atabilir miyiz? Onu da atarız. O kadar değer kazanırız. Yani hepsinde
+
+997
+02:41:18,100 --> 02:41:19,479
+1, 1, 1.
+
+998
+02:41:22,299 --> 02:41:30,240
+Yani 9 kiyoluk çanta da olsa, 1 item'i atabileceğim, bu 1. item'i attığımda elde edeceğim değer en fazla 1 olacak.
+
+999
+02:41:31,159 --> 02:41:31,400
+Peki.
+
+1000
+02:41:32,380 --> 02:41:34,360
+[öğrenci], mikrofonu yok.
+
+1001
+02:41:34,659 --> 02:41:35,280
+[öğrenci].
+
+1002
+02:41:39,956 --> 02:41:45,896
+Şimdi [öğrenci], bir kiloluk çantaya şu iki kiloluk item'ı atabilir miyim?
+
+1003
+02:41:46,096 --> 02:41:46,736
+Atamayız.
+
+1004
+02:41:47,156 --> 02:41:51,316
+Atamadığımız için ne yapacağız? Recurrent Slation'a göre bir önceki satır olduğu gibi yazıyoruz.
+
+1005
+02:41:51,556 --> 02:41:51,816
+Evet.
+
+1006
+02:41:52,296 --> 02:41:57,936
+Çünkü yani bir nolu, çünkü burada yapacağımız şey, artık bir ile ikiyi beraber değerlendireceğiz bu satırda.
+
+1007
+02:41:57,995 --> 02:41:59,216
+Üçüncü satırda bir, iki, üçü.
+
+1008
+02:41:59,736 --> 02:42:03,736
+Zaten önceden ben biri almıştım, burada biri alsam olur diyoruz.
+
+1009
+02:42:04,396 --> 02:42:05,736
+Peki iki nolu item'ı?
+
+1010
+02:42:06,451 --> 02:42:09,151
+Şunu, iki kiloluk çantaya alabilir miyiz?
+
+1011
+02:42:09,831 --> 02:42:10,031
+Evet.
+
+1012
+02:42:10,711 --> 02:42:13,671
+Alırız. Peki aldığımız zaman ne kadarlık yerimiz kalacak?
+
+1013
+02:42:14,751 --> 02:42:15,191
+Sıfır.
+
+1014
+02:42:15,551 --> 02:42:20,251
+Sıfır. Sıfırlık yerimiz kaldığında önceden ne kadarlık karımız var?
+
+1015
+02:42:20,851 --> 02:42:21,072
+Bir.
+
+1016
+02:42:21,111 --> 02:42:27,631
+İki artı sıfır, sıfır. Önceden karımız ne kadardı? Bir. Hangisi daha fazla? Yenisi daha fazla. O zaman ikiyi alıyoruz.
+
+1017
+02:42:28,271 --> 02:42:33,311
+İkiyi aldığımızda toplam ne kadar kar elde ediyoruz? Dört. Artı sıfır da şuradan giriyor. Dört bulduk.
+
+1018
+02:42:34,451 --> 02:42:38,871
+Şimdi bu 4, nereden geldi arkadaşlar bize? Şunla.
+
+1019
+02:42:42,579 --> 02:43:03,200
+Şunun toplamından, yani yeni item'ın toplamından geldi. Bakın, bir olsaydı doğrudan buradan yazabilirdik. Tamam mı? Aynen kalsaydı. Bakın, bu bir şuradan aynen kaldığını gösteriyor. Aynı olduğu için. Peki, [öğrenci], teşekkürler. [öğrenci], bu iki no'lu item'ı, üç no'lu şey alabilir miyiz?
+
+1020
+02:43:03,599 --> 02:43:04,459
+Alabiliriz hocam.
+
+1021
+02:43:04,863 --> 02:43:07,304
+Alırsak ne kadarlık yerimiz kalıyor?
+
+1022
+02:43:07,644 --> 02:43:09,243
+Bir birimlik boşluğumuz kalıyor.
+
+1023
+02:43:09,263 --> 02:43:10,723
+Daha önceden ne kadarlık yerimiz?
+
+1024
+02:43:11,083 --> 02:43:12,703
+Bir birimlik karımız neydi? Bir.
+
+1025
+02:43:12,824 --> 02:43:14,384
+O zaman toplam karımız ne olacak?
+
+1026
+02:43:14,603 --> 02:43:15,583
+Beş olur, onu alabilir.
+
+1027
+02:43:15,644 --> 02:43:16,063
+Beş olacak.
+
+1028
+02:43:16,423 --> 02:43:20,384
+Önceki de bizden daha küçük olduğu için, yani şey yapmıyoruz, onu almıyoruz zaten.
+
+1029
+02:43:21,384 --> 02:43:22,403
+Peki, devam ediyorum.
+
+1030
+02:43:23,183 --> 02:43:25,664
+İkin oğlu item'ı dörde alsak alabilir miyiz?
+
+1031
+02:43:25,763 --> 02:43:26,583
+Evet, alabiliyoruz.
+
+1032
+02:43:27,083 --> 02:43:28,603
+Aldığımızda ne kadarlık boş yer var?
+
+1033
+02:43:28,683 --> 02:43:29,683
+Bu kadarlık boş yer var.
+
+1034
+02:43:30,388 --> 02:43:56,548
+İki birimli. Oradaki karımız ne? Bir. O zaman ne olacak? Beş. Zaten bundan önceki bütün durumlar artık bir bir bir şey oldu. Bunlar da beş, beş, beş, beş diye devam edip gidecek. Çünkü dokuz no'lu item için bakalım mesela. İkiye aldık, evet. İkiye aldıktan sonra kaç birimlik yerimiz var? Yedi birimlik yerimiz var. Yedi birimlik yerdeki karımız ne kadar? Bir birim. E ne yapıyoruz? Buradaki biri almak yerine
+
+1035
+02:43:57,012 --> 02:44:18,972
+4 birim oradan, 1 birimde önceden alınık, 5 birim. Şimdi mesela buradaki 5'i ne üretiyor? Buradaki 5'i şu yeni olan item artı bunun 7'deki şey getiriyor. Çünkü 2 birimlik bir şey getiriyor. Yani bir no'lu item ile iki no'lu item'i alarak şuradaki değeri oluşturuyorum aslında.
+
+1036
+02:44:20,468 --> 02:44:40,068
+Tamam, devam edelim. Şimdi 3 nolu item'ı 1 nolu yere alamıyorum. Teşekkür ederim [öğrenci]. Bu olduğu gibi kalacak. 1 olarak kalacak. 3 nolu item'ı 2 nolu ağırlığa alamam. Bu da olduğu gibi kalacak. 3 nolu item'ı 3 ağırlığa 3 kiloya alabiliriz.
+
+1037
+02:44:47,987 --> 02:45:11,727
+0. 4 artı 0 mı daha büyük? Daha önceden yaptığım şey mi daha büyük? 5 daha büyük. Onun için ne yaptım? 5'i aldım. Yani burada bu item'ı dikkat ederseniz almadık. Yukarıdaki değeri kopyaladık. Yani 1 ile 2'yi aldık 3 için. Burada 3'ü dahil ettiğimde 4 birim olan bu ağırlık benim işime yaramadı.
+
+1038
+02:45:12,500 --> 02:45:37,540
+Geliyorum aynısını, 3'ü 4'ün içine alabiliyor muyuz? Alırız. Ne kadarlık yerimiz kalıyor? Bir birim. Bir birim yer kaldığında ne kadarlık karımız var önceden? Bir birim. Şimdi burada alabiliriz, almayabiliriz. Çünkü aldığımızda da 5 oluyor, almadığımızda da 5 oluyor. Hani yine burası 5 olarak bir kar olarak kalacak. O zaman burada bu da olabilir.
+
+1039
+02:45:38,451 --> 02:45:53,851
+veya şuradan bir ok çıkarıp şunu da yapabiliyorduk. Yani iki tane olasılık da olabiliyor. Çünkü öyle denk geldi. Şu bir, şu dört ile toplanınca beş. Şimdi üçü beşin içerisinden alabiliyor muyuz? Evet, alabiliyoruz.
+
+1040
+02:45:54,471 --> 02:46:04,592
+Beşe aldığımızda iki birimlik yer kalıyor. İki birim daha önceden, dört birim bunun çare var. Dört de buradan geliyor.
+
+1041
+02:46:05,056 --> 02:46:22,335
+8 kar ediyoruz, 5'ten büyük. Sonra devam edelim. 3'ü 6'ya aldığımızda 3'lük boş yerimiz var, 5 birim. 4 de buradan geliyor, 9. Daha önceden 5 var, 9. Artık bundan sonrakilerin hepsi aynı, 5, 5, 5 olduğu için 9, 9 devam edip gidiyor.
+
+1042
+02:46:30,399 --> 02:46:56,879
+4, 4'e sığar mı? Evet, sığar. 5. 4'ün profiti 5'miş. 5 yazdığımızda 5 ile 0'ı toplayacağız. 5. Yukarıdaki de 5. Ya alacağız ya da bunu almayıp daha önceki item'lar alacağız. Çünkü burada hepsine birden bakıyoruz. Burada baktığımızda 4, 5'e oluyor mu? Oluyor. Ama 5 ile 0, bu da 8. O zaman bunu almıyoruz bakın. Direkt 8'e aldık. Buraya getirdik.
+
+1043
+02:46:57,556 --> 02:47:11,096
+Burada 6'ya baktığımızda 4, 6'ya sığıyor. 2 birimlik kar var. 4, 5 daha 9. Bu da 9. Bu da 9 olduğu için alabiliriz, almaya da biliriz. Tercih bize kalmış. Alsak da olur.
+
+1044
+02:47:11,835 --> 02:47:14,515
+Veya nereden bakacağız bu 9'u eğer almış olsaydık.
+
+1045
+02:47:16,515 --> 02:47:23,816
+Bir dakika, 4, 6. İkinci itemden değil mi? 2 ile.
+
+1046
+02:47:24,224 --> 02:47:42,224
+Şurayı ilişkilendirmiş olacağız. Alıyorsak eğer. Bunu kod yazarken dikkat etmek gerekiyor. Şimdi 4-7'ye sığar mı? Sığar. Üçteki kâra bakacağız bir önce. 5, burada da şey var, 9. Bu da 9 oldu. Sonra bir dakika, 7'de...
+
+1047
+02:47:42,943 --> 02:47:43,623
+10 olmaz mı?
+
+1048
+02:47:43,884 --> 02:47:44,703
+Evet, 10 olacak.
+
+1049
+02:47:47,156 --> 02:48:08,376
+4, 7'ye sığar mı? Sığar. Evet. 3'teki karımız 5. 5 de oradan 10 olacak. 5 ile 5'i toplayıp şey yaptık. 4, 8'e sığar mı? Sığar. 4'teki karımız 5'ti. Burada 5, bu da o. Bu 10. 9'dan büyük olduğu için bakın burada ne yaptık? Aldık hep bunları. Bir öncekilerden büyük. Sonra 5.
+
+1050
+02:48:09,396 --> 02:48:29,495
+Buna sığar mı? Sığar. Artık kafam karışmaya başladı. 13 olacak burada arkadaşlar. 5 buradan 8'i, bir dakika, 4 birim, 4'teki karımız ne kadar? Pardon, 4 birim, 5'teki karımız 8. Buradan da 5 gelecek 13. Burada 9 var, 13'ü aldık.
+
+1051
+02:48:30,644 --> 02:48:55,524
+Şimdi 5 birimlik ağırlık için bu sığmaz. Aynen yukarıya yazıyoruz. Bunu da yazıyoruz. Geldik buraya. Şimdi 7, 0 daha olmadı. Ne oldu? 8 yaptık. Şuradan 5'i 6'ya sığdırabilir miyiz? Sığdırırız. Karı ne kadar? 7. 7'den 1 birim artıyor. Şurası 1, 6.
+
+1052
+02:48:56,031 --> 02:48:58,491
+Ama burada biz zaten 9'u bulmuştuk.
+
+1053
+02:48:59,271 --> 02:48:59,851
+9 olacak.
+
+1054
+02:49:00,752 --> 02:49:03,391
+7-7'ye, pardon 5-7'ye sığıyor.
+
+1055
+02:49:04,051 --> 02:49:05,572
+2 birimlikteki kar 4.
+
+1056
+02:49:05,811 --> 02:49:08,011
+Buradan 7 geldi bakın, buradan 11'i bulduk.
+
+1057
+02:49:08,131 --> 02:49:09,451
+O zaman bunu alabiliriz.
+
+1058
+02:49:11,051 --> 02:49:11,971
+Sonra devam ediyorum.
+
+1059
+02:49:12,752 --> 02:49:14,731
+8 sığdı.
+
+1060
+02:49:15,511 --> 02:49:16,431
+Sığdığı için
+
+1061
+02:49:16,431 --> 02:49:20,651
+ne var burada? 3'e bakacağız.
+
+1062
+02:49:21,363 --> 02:49:38,783
+3'ten 5 birim, buradan da 7 birim, 12 birim kar geliyor. Bu 9, 4'e bakacağız. 4'teki kar 5 birim, 7, 5 daha 12 ama burada 13 var. Almadığım durumda 13 var. 13'ü alıyorum ve en yüksek karım 13'muş diyorum.
+
+1063
+02:49:49,587 --> 02:50:12,007
+Yukarıdakini almıyoruz bakın, yukarıdaki değil. Alınmamışsa, aşağıdaki durumdan devam ediyoruz. Aldığımız için ne yapacağız? Bir kere yukarıdaki ile farklı olması lazım. Şimdi bakıyorum, yukarıdaki ile kontrol ediyorum. Bunlar farklı olduğu için, pardon aynı olduğu için demek ki alınmadı. Bu alınmadığı için bunu sildik.
+
+1064
+02:50:13,683 --> 02:50:37,943
+13, yukarıdaki ile aynı mı? Alındı. Evet. 13'ü aldıysak, şimdi 4'ü, yani şu item'i aldığımızı kabul ediyoruz. Bu 13'ü nasıl elde ettik? 13'ün karı kimden geldi? 5 olarak geldi. Yani 9. Yukarıda 9'a bakacağım. Pardon bir dakika, burada ağırlık üzerinden gideceğiz.
+
+1065
+02:50:40,863 --> 02:50:43,343
+Ağırlığı kim? 9. Bir dakika.
+
+1066
+02:50:46,663 --> 02:50:50,943
+9 birimden 4'ü çıkartırsak 5'e geleceğiz.
+
+1067
+02:50:51,304 --> 02:50:53,283
+5'e geldiğimizde evet 8.
+
+1068
+02:50:54,503 --> 02:50:56,984
+Yani 13'ten 5'i çıkardık 8'i bulduk.
+
+1069
+02:50:57,324 --> 02:51:01,003
+Veya ağırlık üzerinden gidersek 9 birim ağırlığımız vardı.
+
+1070
+02:51:02,123 --> 02:51:02,863
+13'e...
+
+1071
+02:51:03,219 --> 02:51:21,559
+Bu ağırlığa ne ekledik buradan? Bunu ekleyerek 5 birim ekledik. Yani 9'dan, pardon 4 birim ekledik. 9'dan 4'ü çıkardık. 5 nolu yerdeyiz, şuradayız. Ağırlıktan da gidebiliriz, değerden de gidebiliriz. Değerden gittiğimde 13'e değer olarak neyi ekledim? 8. O zaman bir üst satırda 8'e gidiyorum. Bu.
+
+1072
+02:51:21,559 --> 02:51:28,899
+Şimdi bu 8 yukarıdakiyle aynı mı? Farklı. Demek ki bu burada eklenmiş bir şey. Bunu da eklemişiz diyoruz.
+
+1073
+02:51:30,995 --> 02:51:47,896
+Değerden bakalım. 8 değeri 4 değer eklediğimizde 4 olacak. O zaman 4 şuradan verecek bize bunu. Veya ağırlıktan gidersek, ağırlığı 5, 3 giderse ne kaldı? 2 kaldı. Onu da buradan bulabiliriz. Tamam mı?
+
+1074
+02:51:49,556 --> 02:51:56,855
+Demek ki bu da, şimdi buna bakacağız. Üstündekilerle farklı. Demek ki bu alınmış bir item, yeni bir item. Ne yapıyoruz? 4.
+
+1075
+02:51:57,587 --> 02:52:02,547
+4'ün profitine 4, 4'den 4 çıktı 0, doğrudan buraya geldi.
+
+1076
+02:52:02,647 --> 02:52:05,688
+4'ün ağırlığını 2, 2'den 2 çıktı 0, o da bizi buraya getiriyor.
+
+1077
+02:52:05,768 --> 02:52:07,288
+Zaten başlangıç durumuna geri geldik.
+
+1078
+02:52:07,747 --> 02:52:18,108
+Dolayısıyla biz 2, 3 ve 4 itemları alıp 13 birimlik bir karla işlemi tamamlıyoruz.
+
+1079
+02:52:18,108 --> 02:52:20,647
+Tamam mı?
+
+1080
+02:52:24,020 --> 02:52:26,959
+Anlaşılmayan bir şey. Sorunuz varsa alabiliriz.
+
+1081
+02:52:29,780 --> 02:52:35,299
+Bununla alakalı birazcık, yani şu şeyi artık ben yapa yapa bunu öğrendim.
+
+1082
+02:52:35,940 --> 02:52:37,219
+Yani ezberledim öyle söyleyeyim.
+
+1083
+02:52:37,739 --> 02:52:39,860
+Ama biraz daha öğrenmek için Recurrence Slation'ı.
+
+1084
+02:52:40,531 --> 02:52:46,531
+kurmak gerekiyor. Bence yapılması gereken şey recurrence relation'ı kurmak. Burada asıl problem odur.
+
+1085
+02:52:46,531 --> 02:52:52,531
+Recurrence relation'ın nasıl olacağını da, yani anlattım, bir şey alacağız mı, almayacağız mı?
+
+1086
+02:52:52,531 --> 02:52:59,531
+Alacaksak nasıl bir güncelleme yapacağız? Buna dikkat etmek gerekiyor. Şimdi bir edit distance konusu var.
+
+1087
+02:52:59,531 --> 02:53:07,340
+Edit distance'ı da 10 dakika ara verelim, 17'de başlayalım. O da hemen yarım saat sürer.
+
+1088
+02:53:07,507 --> 02:53:09,268
+Ondan sonra dersimizi tamamlarız.
+
+1089
+03:01:14,067 --> 03:01:14,948
+Evet arkadaşlar.
+
+1090
+03:01:18,772 --> 03:01:27,432
+Bir diğer dinamik programlama uygulaması örneği, edit distance.
+
+1091
+03:01:29,592 --> 03:01:37,891
+Yani bir stringten diğer stringe geçmek için, edit yapmak için yapılması gereken işlem sayısının bulunması.
+
+1092
+03:01:38,051 --> 03:01:40,971
+Tabi burada minimum işlem sayısı bizim için önemli.
+
+1093
+03:01:41,971 --> 03:01:42,412
+Mesela,
+
+1094
+03:01:45,139 --> 03:02:10,779
+Sunny diye bir şey var. Yanlışlıkla bunu Sumney diye yazdık. Yani bir replace veya substitute dediğimiz bir işlem oldu. Bu birinci durum. Replacement veya substitution. İkinci durum ne olabilir? Sunny yazılacak bir yere
+
+1095
+03:02:13,459 --> 03:02:20,180
+hiçbir şey yazmadık, boş bıraktık. Yani aradaki şeyi sadece görünmesi için dedim. Bir de deletion oldu.
+
+1096
+03:02:20,180 --> 03:02:30,260
+Veya şöyle düşünün, bundan bunu elde etmek istiyoruz. Bir deletion yapmamız gerekiyor. Bundan bunu elde etmek istiyoruz veya aşağıdakinden yukarıdakinden fark etmez.
+
+1097
+03:02:30,260 --> 03:02:37,940
+Yapılması gereken bir deletion işlemi. Üçüncüsü, işte Sunny var.
+
+1098
+03:02:41,652 --> 03:02:43,791
+Şöyle bir şey, burada da bir insertion işlem var.
+
+1099
+03:02:45,512 --> 03:02:47,672
+Bunların kendine göre costları olabilir.
+
+1100
+03:02:48,231 --> 03:02:52,291
+Ama biz hepsinin maliyetlerini burada ortak olarak kabul edeceğiz ilk başta.
+
+1101
+03:02:53,352 --> 03:02:59,172
+Bir kelimeden, diğer bir kelimeye acaba geçiş yapmak için
+
+1102
+03:03:01,236 --> 03:03:16,316
+Yapılması gereken minimum operasyon sayısı nedir? Ve bunlar nelerdir? Hem operasyonların sayısını hem de biraz önceki olduğu gibi neler yapılabilir? Buna bakacağız. Örneğin maths kelimesi var.
+
+1103
+03:03:28,020 --> 03:03:55,620
+Bundan buna. Şimdi, S'ler ortak, T şöyle bir şey yazsam. Şurada herhangi bir şey yok. Şurada mesela bundan yukarıya doğru kabul edebiliriz veya ikisini birbirine mesela bundan yukarıya doğru bir insertion olduğunu, şuna bir insertion yaptık. Bunda herhangi bir şey yapılmadı. Burada bir substitution var, change var. Burada bir change var.
+
+1104
+03:03:57,427 --> 03:04:23,368
+Burada da herhangi bir şey yok. Toplamda yapılan işlem sayısı kaç tane? 3 tane. 3 tane operasyonla bundan buna dönüşüm yapılabilir. Eğer tersten düşünürsek, bundan buna bir delation olmuştur. Bundan herhangi bir şey yoktur. Burada bir change vardır. Burada da herhangi bir şey yoktur. Yine 3 olur. Bunlar simetrik olarak işlemler düşünüyor. Tabi simetrik olunca operasyonlar farklılaşıyor ama maliyet yine aynı. Problem bu.
+
+1105
+03:04:26,835 --> 03:04:29,835
+Yine dinamik programlama ile çözümü var.
+
+1106
+03:04:29,835 --> 03:04:32,835
+Edit Distance algoritması ile.
+
+1107
+03:04:32,835 --> 03:04:35,835
+Temel olarak yapılması gereken şey,
+
+1108
+03:04:35,835 --> 03:04:38,835
+yine bir veri yapısıyla bu işlemi sağlamak.
+
+1109
+03:04:38,835 --> 03:04:42,835
+Yalnız burada case'lerimize dikkat edeceğiz. Hangi case'ler var ona bakacağız.
+
+1110
+03:04:42,835 --> 03:04:44,835
+Veri yapısında şunu saklayacağız.
+
+1111
+03:04:44,835 --> 03:04:46,835
+Birinci string,
+
+1112
+03:04:47,835 --> 03:04:51,835
+işte en uzunluklu bir string,
+
+1113
+03:04:51,835 --> 03:04:54,731
+en uzunluklu ikinci string,
+
+1114
+03:04:55,219 --> 03:05:03,219
+Arada edit etmek için, bu stringden bu stringe edit etmek için yapılması gereken işlem edit distance maddesi sayılar saklanacak.
+
+1115
+03:05:03,219 --> 03:05:15,219
+Bunun işte n, m değeri yani sondaki kısmı hatta şu kısmı minimum edit distance veriyor.
+
+1116
+03:05:15,219 --> 03:05:19,219
+Bu mesela bioinformatikte genlerin hizalanmasında
+
+1117
+03:05:19,412 --> 03:05:41,412
+hizalama yapmak için kullanılması gereken, yapılması gereken minimum işlem sayısını yapmak için kullanılan bir algoritma. Gen benzerliklerinde bir ön işlem olarak önce edit distance yapılır, hizalama yapılır, ondan sonra genlerin benzerlikleri ölçülür. Şimdi bu COVID'de de böyle şeyler yapılıyor. Yani bu tabii yıllardır kullanılan bir şey, yeni bir teknik değil de. Bunu normalde...
+
+1118
+03:05:42,451 --> 03:06:02,891
+Brute force yapmak çok daha maliyetli bir şey. Yani bunlar bununla, yani önce bakacaksınız, baştan bakabilirsin, işte bu bununla olmuyor, diğeriyle olur mu, öbürüyle olur mu, silsem ne olur ondan sonra. Çünkü operasyon bakın burada üç tane arkadaşlar. Biraz öncekinde alıyorduk veya alımıyorduk. Burada aynen bırakabiliriz.
+
+1119
+03:06:03,347 --> 03:06:29,147
+silebiliriz, değiştirebiliriz, insert yapıyoruz. Toplam 4 tane farklı operasyon var. Dolayısıyla biraz daha şey karışık yani brute force için senaryolar daha karışık. Buna dikkat etmek gerekiyor. Zaten yani hizalama yapmak için nereden hizalayacağın da belli değil. Onun için dinamik programlama çok daha mantıklı. Peki burada hizalama yapmak, silme yapmak veya işte change yapmak veya aynen bırakmak
+
+1120
+03:06:29,620 --> 03:06:32,780
+ne anlama gelir? Birazcık buna bakalım. Şimdi birinci case'imiz
+
+1121
+03:06:39,476 --> 03:06:40,576
+Insertion olsun.
+
+1122
+03:06:41,696 --> 03:06:43,276
+Şimdi insertion yapacağız.
+
+1123
+03:06:43,356 --> 03:06:48,615
+Insertion yapmak için X'in, şurası X diyelim buraya da Y'in.
+
+1124
+03:06:49,196 --> 03:06:57,856
+Y'inci karakteriyle Y'in C'inci karakteri, tabii bu üçü içinde aslında şey, yani hiçbir şekilde eşleşmiyor.
+
+1125
+03:06:57,956 --> 03:07:01,916
+X'in Y'si eşit değildir, Y'in C'si diyelim.
+
+1126
+03:07:02,016 --> 03:07:03,016
+Burada tekrardan yazmayalım.
+
+1127
+03:07:03,716 --> 03:07:05,276
+Case'lerimiz bunun için olsun.
+
+1128
+03:07:06,260 --> 03:07:08,979
+eşleşme olmuyorsa insertion yapabilirim.
+
+1129
+03:07:09,779 --> 03:07:12,639
+Şimdi insertion yapmak için yapacağımız şey şu.
+
+1130
+03:07:13,840 --> 03:07:14,979
+Elimde bir x, y var.
+
+1131
+03:07:16,959 --> 03:07:18,420
+Karşı tarafta hiçbir şey yok.
+
+1132
+03:07:20,059 --> 03:07:23,059
+Alt probleminde. Yani iki tane şey karşı taraf boş.
+
+1133
+03:07:23,600 --> 03:07:27,159
+O zaman insertion, bir karakter ekleme maliyeti ekleyeceğim.
+
+1134
+03:07:27,760 --> 03:07:29,899
+Maliyetlerin hepsini biraz önce bir demiştik.
+
+1135
+03:07:29,899 --> 03:07:32,619
+O zaman edit distance'ımızla ilgili yere ne yazacağız?
+
+1136
+03:07:33,236 --> 03:07:34,436
+i, j'ye.
+
+1137
+03:07:36,356 --> 03:07:38,036
+Ekleme yapacağım şey,
+
+1138
+03:07:39,396 --> 03:07:43,536
+buradaki string'e bakarak, yukarası x aşağısı y dedik.
+
+1139
+03:07:44,256 --> 03:07:45,056
+Edit distance,
+
+1140
+03:07:47,276 --> 03:07:48,016
+i-1,
+
+1141
+03:07:48,916 --> 03:07:51,736
+yani x'deki bir eksenindeki şey,
+
+1142
+03:07:52,676 --> 03:07:54,236
+j artı 1 diyeceğim.
+
+1143
+03:07:56,356 --> 03:07:57,736
+Sonra case 2,
+
+1144
+03:08:01,492 --> 03:08:10,672
+Dilection olabilir. Yani bunun tam tersi. Yukarıda hiçbir şey yok. Şöyle yapalım. Aşağıda bir y, j var.
+
+1145
+03:08:15,092 --> 03:08:19,492
+Edit Distance'ımız bunun tam tersi olacak. i, j eşittir.
+
+1146
+03:08:23,667 --> 03:08:26,107
+i, j-1
+
+1147
+03:08:26,107 --> 03:08:32,567
+artı 1. Şunlar köşeli parantez.
+
+1148
+03:08:34,347 --> 03:08:40,647
+Yani bir üstteki maliyetim neyse, bir üst satırdaki, bir üst ücredeki maliyetim neyse, onu ekliyorum.
+
+1149
+03:08:42,127 --> 03:08:43,887
+Yani şurada yaptığım şey işte
+
+1150
+03:08:43,887 --> 03:08:46,027
+Sunnili
+
+1151
+03:08:47,827 --> 03:09:03,047
+Bunu silmek istiyorum, yani Sunny oluşturmak istiyorum. Bunu silmek için ne yapacağım? Şunun silmesi için bir operasyon, onunla birbiri maliyetlilik. Burada da bunu tam tersten yaptığımızı düşünelim, bir karakter ekliyoruz. Veya değişiklik yapmak isteyeceğiz, Case 3.
+
+1152
+03:09:06,932 --> 03:09:25,532
+değişiklikle mesela x i'den y j e. Şimdi değişiklik yapacağız ama bunların birbiriyle tutuşma, örtüşmemesi lazım. O zaman edit distance'ımız ne olacak? i, j için eşittir edit distance.
+
+1153
+03:09:28,755 --> 03:09:45,456
+i-1, j-1 artı 1. Neden maliyetler 1? Bu kabul arkadaşlar. Yani bu işlemciden işlemciye, sistemden sisteme değiştir. Bazen bir sıra change'i 2 alırlar, bazen 1 alırlar. O önemli değil. Biz şu an için 1 olduğunu kabul edelim.
+
+1154
+03:09:46,956 --> 03:09:53,056
+Peki, hangisini almamız lazım? Yani case 1 mi, case 2 mi, case 3 mi alalım?
+
+1155
+03:10:00,884 --> 03:10:20,463
+To maximize the cost, we can choose proper selection. Yani bir tanesini seçeceğiz. Hangisini seçeceğiz? Şu olacak. Edit distance'ın iyi bir güleceği ise, yani ekleme benim için daha az manisi ekleme.
+
+1156
+03:10:21,203 --> 03:10:29,203
+silme, daha maliyetli ise silme. Çünkü tabloda bunları saklıyoruz. Minimum diyeceğiz.
+
+1157
+03:10:29,203 --> 03:10:42,203
+Edit distance, yani biraz önceki case'leri tek tek yazıyorum. i-1, virgül j artı 1. Bu insertion'da.
+
+1158
+03:10:42,203 --> 03:10:44,203
+Edit distance.
+
+1159
+03:10:45,683 --> 03:10:49,244
+i, j-1 artı 1
+
+1160
+03:10:49,244 --> 03:10:52,043
+Edit Distance, bu deletion'da
+
+1161
+03:10:52,043 --> 03:10:56,324
+i-1, j-1 artı 1
+
+1162
+03:10:56,324 --> 03:10:57,443
+Bu da changed'i.
+
+1163
+03:10:58,384 --> 03:10:59,164
+Tabi bu bizim
+
+1164
+03:10:59,164 --> 03:11:01,603
+i, j
+
+1165
+03:11:01,603 --> 03:11:04,523
+Ne için? if x'in i'si
+
+1166
+03:11:04,523 --> 03:11:07,644
+Kalem yazmamaya başladı.
+
+1167
+03:11:07,644 --> 03:11:08,644
+x'in i'si
+
+1168
+03:11:09,363 --> 03:11:33,983
+farklıysa y'nin j'inci, karakterler farklıysa, karakterler aynıysa, yapacağımız şey doğrudan almak. Initialization içinde, Edit Distance'ın i'sinin sıfırı, buna i diyeceğiz, birazdan söyleyelim. Edit Distance'ın mantığını anlarız. i'sinin sıfırının j'si, bu da j oluyor.
+
+1169
+03:11:35,471 --> 03:11:37,851
+Insert işlemidir bu arkadaşlar.
+
+1170
+03:11:38,071 --> 03:11:40,651
+Insert. Bu da Delayed işlemidir.
+
+1171
+03:11:41,991 --> 03:11:43,091
+Ne olduğunu anlarız.
+
+1172
+03:11:43,091 --> 03:11:44,811
+Niye böyle yazıldığını.
+
+1173
+03:11:46,611 --> 03:11:47,451
+Genel olarak böyle.
+
+1174
+03:11:49,631 --> 03:11:50,611
+Eğer eşitse,
+
+1175
+03:11:51,891 --> 03:11:52,771
+eşitse de,
+
+1176
+03:11:53,751 --> 03:11:54,871
+şöyle diyelim, if
+
+1177
+03:11:54,871 --> 03:11:59,071
+x'i eşittir, y'i ise, yapacağımız şey
+
+1178
+03:11:59,071 --> 03:12:00,651
+edit distance'ın
+
+1179
+03:12:00,651 --> 03:12:02,651
+i, j'si
+
+1180
+03:12:03,283 --> 03:12:07,683
+ne olacak? Edit Distance, i-1, j-1.
+
+1181
+03:12:09,324 --> 03:12:10,343
+Evet, var mı soru?
+
+1182
+03:12:11,343 --> 03:12:14,123
+Hocam, maximize dediniz ama minimize herhalde değil mi?
+
+1183
+03:12:14,663 --> 03:12:15,623
+Minimize the cost olur.
+
+1184
+03:12:15,623 --> 03:12:16,644
+Evet, evet, evet.
+
+1185
+03:12:18,003 --> 03:12:18,343
+Aynen.
+
+1186
+03:12:20,463 --> 03:12:21,783
+Minimize, teşekkürler.
+
+1187
+03:12:24,543 --> 03:12:29,083
+Şimdi gelelim bunu bir örnek üzerinde yapalım.
+
+1188
+03:12:29,564 --> 03:12:30,523
+Hangi örnek olsun?
+
+1189
+03:12:31,507 --> 03:12:33,108
+Birkaç tane örnek var da.
+
+1190
+03:12:33,108 --> 03:12:35,987
+Şimdi özet olarak şunu söyleyeyim arkadaşlar.
+
+1191
+03:12:45,012 --> 03:12:49,612
+Şuralar nokta nokta, yani daha önceden doldurulmuş yerler. Ben şuradayım.
+
+1192
+03:12:52,172 --> 03:12:54,992
+Buraya remove yaparak gelebilirim.
+
+1193
+03:12:57,052 --> 03:12:58,832
+Insert yaparak gelebilirim.
+
+1194
+03:13:00,112 --> 03:13:01,912
+Replace yaparak gelebilirim.
+
+1195
+03:13:02,932 --> 03:13:05,752
+Hiçbir şey yapmayabilirim de. Eğer hiçbir şey yapmayacaksam
+
+1196
+03:13:06,772 --> 03:13:10,092
+bu karakterlerin birbirine eşit olmasına bakacağım.
+
+1197
+03:13:10,291 --> 03:13:37,072
+Burada bir x karakteri, burada y karakteri. Eğer x eşittir, eşittir, y ise ne yapacağız? Direkt replace'teki işleme bakacağız. Tabii replace'teki işleme bakarken bir kontrol yapacağız. Onu birazdan örnek üsün. Bir şeyler yapacaksam, maliyeti alacaksam aynen yazacağım ve bir ekleyeceğim. Şuna replace'e bir ekleme, yani eğer
+
+1198
+03:13:37,459 --> 03:13:55,040
+x eşit eşit y ise şu aynen kopyalanıyor. Eğer değilse şu üçünden minimum olanını alıp buraya yapıştıracağız. Aslında şey çok basit yani maddesi oluşturmak çok basit. Algoritma biraz böyle uzun geliyor olabilir de. Şimdi anlaşılır.
+
+1199
+03:13:58,040 --> 03:14:00,559
+Econciliation çok karmaşık olmadığı için kopyalamıyorum.
+
+1200
+03:14:03,316 --> 03:14:10,996
+ya üstten, ya alttan, ya da işte diagonal çaprazdan artı bir ekleyeceğiz. Eğer farklıysa, aynıysa hiçbir şey yapmayacağız.
+
+1201
+03:14:10,996 --> 03:14:19,956
+Sadece şu ilk satırın ne olduğunu şimdi bir konuşalım. Şimdi karakterlerimiz, stringlerimiz şunlar olsun.
+
+1202
+03:14:23,347 --> 03:14:25,347
+Buçağa kadar bitiririz inşallah.
+
+1203
+03:14:29,492 --> 03:14:30,951
+A, B, C, F, G
+
+1204
+03:14:40,724 --> 03:14:42,724
+Burada da zero null var.
+
+1205
+03:14:51,412 --> 03:14:54,951
+A, D, C, E, G
+
+1206
+03:14:54,951 --> 03:14:59,072
+A, D, C, E
+
+1207
+03:15:04,404 --> 03:15:04,904
+Care.
+
+1208
+03:15:12,819 --> 03:15:17,899
+Şimdi, bu string 1, diğeri string 2.
+
+1209
+03:15:18,500 --> 03:15:25,020
+Şimdi ilk başta, null bir string'i, null bir string'e dönüştürmek için herhangi bir operasyon yapmama gerek var mı?
+
+1210
+03:15:25,840 --> 03:15:26,079
+Yok.
+
+1211
+03:15:27,079 --> 03:15:30,539
+Bunu, yani ilk kısma şuraya yazıyoruz.
+
+1212
+03:15:31,799 --> 03:15:38,119
+Bakın buradan maliyeti, en az maliyeti bulacağız ve hangi operasyon, yani string'i birbirine nasıl dönüştürürüz, onun yolunu yapacağız.
+
+1213
+03:15:39,239 --> 03:15:40,119
+Şunu alayım.
+
+1214
+03:15:40,531 --> 03:15:52,971
+Peki, null bir string'i a'ya dönüştürmek için, null'u şöyle yapalım, bunu a'ya dönüştürmek için ne yapmam lazım arkadaşlar?
+
+1215
+03:15:57,332 --> 03:15:57,972
+Insert.
+
+1216
+03:15:58,512 --> 03:16:00,472
+Insert yapacağız, ekleme yapacağız. Güzel.
+
+1217
+03:16:01,212 --> 03:16:02,752
+Insert'un maliyetine ne dedik?
+
+1218
+03:16:03,112 --> 03:16:05,772
+Yani bunun daha öncesi olmadığı için burası bir oldu.
+
+1219
+03:16:07,612 --> 03:16:10,332
+Nulber string'i AB'ye çevirmek için ne yapacağız?
+
+1220
+03:16:14,036 --> 03:16:21,595
+Insert yapacağız. Değil mi? Tabii ne kadar insert? İki tane insert'e ihtiyacım var. O da bir öncekinin devamı şeklinde.
+
+1221
+03:16:22,195 --> 03:16:27,456
+Null bir stringi ABC'ye çevirmek için 3, 4 ve 5.
+
+1222
+03:16:31,412 --> 03:16:35,252
+Yani elimizdeki birinci string null, diğeri şey.
+
+1223
+03:16:37,471 --> 03:16:40,711
+A'yı null bir string yapmak için ne yapmamız lazım?
+
+1224
+03:16:43,011 --> 03:16:43,912
+Delayed yapacağız.
+
+1225
+03:16:43,992 --> 03:16:47,752
+Delayed yapacağız. O da bir birimlik bir şeydi. Bir birim delete ettik.
+
+1226
+03:16:49,211 --> 03:16:53,971
+A, D'yi null'a çevirmek için iki birimlik işlem yapmamız lazım. İkisi de delete olacak.
+
+1227
+03:16:53,971 --> 03:16:55,871
+Bakın bunlar da 2, 3.
+
+1228
+03:16:56,319 --> 03:16:59,440
+4. Şurada bir şey daha var mı? Burada bir de G varmış.
+
+1229
+03:17:02,979 --> 03:17:07,940
+Bu örneği ben internetten buldum. Size birkaç tane örnek azadım. Onları çalışırsınız diye.
+
+1230
+03:17:08,859 --> 03:17:13,879
+Bu biraz daha basit, anlaşılması daha rahat bir örnek. Diğer örnekleri de siz yaparsınız.
+
+1231
+03:17:15,000 --> 03:17:22,579
+Şimdi, bu başlangıç koşulları zaten şurada verdiğimiz Recurse-Lation'a uygun bir şekilde gerçekleşti. Mantıklı olarak yazdık bunları.
+
+1232
+03:17:23,092 --> 03:17:49,792
+Gelelim buraya. Şimdi diyoruz ki, A, A'ya dönüşür mü? Yani A'yı A'ya dönüştürmeye gerek var mı? Yok. O zaman bunu doğrudan kopyalıyoruz. Sıfır. Hiçbir şey yapmadık. A'nın A, B'ye dönüşmesi gerekiyor. Yani A'dan A, B elde edeceğiz. İşte şuraya A'dan A, B. Buradan ne yapacağız arkadaşlar?
+
+1233
+03:17:50,484 --> 03:17:52,484
+Şu satır bize neyi söylüyordu yatay?
+
+1234
+03:17:54,224 --> 03:17:55,384
+Insertion değil mi?
+
+1235
+03:17:56,104 --> 03:17:57,724
+Demek ki A'dan A, B'ye dönüşmüyorum.
+
+1236
+03:17:57,844 --> 03:18:00,024
+Zaten insertion yapmam gerektiğini görüyorum.
+
+1237
+03:18:00,524 --> 03:18:02,984
+O zaman A zaten B'ye eşit değil.
+
+1238
+03:18:03,444 --> 03:18:04,704
+O zaman insertion yapacağım.
+
+1239
+03:18:05,384 --> 03:18:10,024
+Yapacağım insertion en makul olanı görünüyor tabii burada.
+
+1240
+03:18:10,784 --> 03:18:12,484
+Ne yapacağız? Bir birimlik bir işlem yapacağız.
+
+1241
+03:18:12,948 --> 03:18:18,748
+Şimdi buna şunları şöyle devam ettirebiliriz. Yani okları da gösterelim. Burada lazım olacak bunlar.
+
+1242
+03:18:25,299 --> 03:18:28,159
+Şöyle yapayım, 0 diyelim, 1 diyelim.
+
+1243
+03:18:29,239 --> 03:18:30,139
+Buraya da 0 diyelim.
+
+1244
+03:18:31,319 --> 03:18:36,019
+Peki, A'dan ABC'ye geçiş yapacağız.
+
+1245
+03:18:36,500 --> 03:18:38,139
+Şimdi A, C'ye eşit değil.
+
+1246
+03:18:40,359 --> 03:18:42,760
+Ne kadarlık bir işleme ihtiyaç var?
+
+1247
+03:18:43,680 --> 03:18:46,180
+Şimdi iki birim bir işlem yapacağız.
+
+1248
+03:18:46,299 --> 03:18:49,819
+Ben bunun bir birimini daha önceden yapmıştım.
+
+1249
+03:18:50,399 --> 03:18:52,079
+Şurada, yani şuna 1 ekleyerek.
+
+1250
+03:18:52,468 --> 03:18:53,268
+İki birim diyorum.
+
+1251
+03:18:54,748 --> 03:19:15,828
+Tamam mı? Sonra A'dan F'ye ama, pardon A'dan A, B, C, F'ye giriş yapacağız. Daha önceden ben A, B, C, F'nin, A, B, C'nin maliyetini biliyordum. İki birimdi. Ona bir birim daha eklersem ne olacak? Yani şuradaki bir birimi ne yapacağım? Üç birim bulabileceğim. Şu da dört birim.
+
+1252
+03:19:16,468 --> 03:19:27,208
+Bakın ne yaptık? Eğer biz bunu rekürsif çözmeye çalışsaydık, A'dan A'ya bir bilim maliyet hesapladık, 0. A'dan B'ye bir bilim maliyeti hesapladık, A'dan AB'ye bir bilim maliyeti hesapladık.
+
+1253
+03:19:27,924 --> 03:19:43,884
+1. Sonra A'dan A, B, C'yi hesaplarken önce A'dan A, B'yi, sonra A'dan B'yi geriye doğru aynı işlemleri tekrar yapmam gerekecekti. Ama bu sayede, tablo sayesinde ne yapıyorum bunu saklayabiliyorum.
+
+1254
+03:19:44,664 --> 03:19:54,044
+Geldik buraya. Şimdi D'den A'ya bir işlem yapıyoruz. Şimdi D'den A'ya işlem yaparken
+
+1255
+03:19:55,347 --> 03:19:57,347
+Ne yapmamız lazım?
+
+1256
+03:19:57,347 --> 03:19:59,347
+Dele işin yapamayız.
+
+1257
+03:20:01,347 --> 03:20:03,347
+Bir dakika...
+
+1258
+03:20:04,347 --> 03:20:05,347
+Şurası...
+
+1259
+03:20:05,347 --> 03:20:07,147
+A, D...
+
+1260
+03:20:10,355 --> 03:20:12,036
+AD'den A'ya değil mi hocam?
+
+1261
+03:20:12,695 --> 03:20:13,095
+Evet.
+
+1262
+03:20:13,816 --> 03:20:15,915
+Pardon, evet şöyle hata yaptım.
+
+1263
+03:20:16,575 --> 03:20:17,275
+Burası AD.
+
+1264
+03:20:18,655 --> 03:20:21,556
+AD'den A'ya, çünkü şu ana kadar ikinci şeye geçtik.
+
+1265
+03:20:21,655 --> 03:20:25,816
+AD'den A'ya geçiş yapacaksam, en makul olan şey delation yapmaktı.
+
+1266
+03:20:25,915 --> 03:20:27,515
+Delation zaten dikey satırdı.
+
+1267
+03:20:28,115 --> 03:20:31,476
+Şöyle delete diyelim, buraya insert diyelim, buraya da replace diyelim.
+
+1268
+03:20:32,255 --> 03:20:33,595
+Şimdi en makul olan zaten...
+
+1269
+03:20:34,004 --> 03:21:01,543
+Delayed, ki maliyet de burada bize bunu söylüyor. Delayed yaparsan diyor bu olur. Birbirinin maliyetle bunu halledebiliriz. Sıfıra bir ekledik. Tamam mı? Sonra AD'den kime gideceğiz? AB'ye geçiş yapacağız. Şimdi aslında direkt bunu yazmaya başlayabiliriz. DB'den farklı mı? Farklı. Bunlardan en küçüğü hangisi arkadaşlar? En küçüğü şuradaki. O zaman bunun yerine.
+
+1270
+03:21:02,004 --> 03:21:28,164
+neyi yazıyoruz? Şu sıfıra bir ekleyip bir yazıyoruz. Minimum dedik ya, recurrence relation bize zaten onu söylüyordu. Hangisi minimumsa onu yap. Çünkü AD'den yapacağımız şey AD'den AB'ye geçiş yapmak. Doğrudan replacement. Sonra ADC'ye eşit değil. Buradan ne yapacağız? Bakın iki şeyi yapabiliriz.
+
+1271
+03:21:28,691 --> 03:21:48,332
+Ya Replacement ya da Insurrection yapabiliriz diyor. Mesela Replacement'ı seçebiliriz. Bir bir daha iki oldu burası. Sonra D, F'den farklı iki iki iki bir daha üç oldu. İster buradan gelir ister buradan gelir ister buradan gelir. Hatta bunları şöyle yapayım arkadaşlar işaretleyelim.
+
+1272
+03:21:51,271 --> 03:21:55,992
+Birden fazla işlem yoluyla bunun yapılabileceğini göstermiş oluruz.
+
+1273
+03:21:56,500 --> 03:21:59,819
+Arada çizmediğim var mı bilmiyorum da, neyse, buluruz herhalde.
+
+1274
+03:22:00,479 --> 03:22:03,759
+Sonra ADG'den farklı, ne yapabiliriz?
+
+1275
+03:22:03,879 --> 03:22:09,319
+İşte ya buradan bir replacement yaparak ya da buradan bir insertion yaparak bunu sağlarız.
+
+1276
+03:22:10,139 --> 03:22:10,739
+Geldik buraya.
+
+1277
+03:22:11,459 --> 03:22:12,959
+Yapacağımız şey...
+
+1278
+03:22:12,959 --> 03:22:18,579
+Ben mi yanlış anladım? AD'den ABC'yi replace olarak çizdiniz siz ama nasıl replace oluyor?
+
+1279
+03:22:20,539 --> 03:22:23,500
+Elimizde gitmek AD zaten, ABC'yi...
+
+1280
+03:22:24,211 --> 03:22:28,931
+Şimdi AD'nin maliyeti, şurada D var.
+
+1281
+03:22:31,891 --> 03:22:33,551
+A, B, C.
+
+1282
+03:22:34,751 --> 03:22:43,551
+Şimdi, bu araya bir şey eklersek, ondan sonra D'yi de değiştirirsek, tamam mı?
+
+1283
+03:22:44,291 --> 03:22:50,651
+Olur. Veya, bir şey silersek buradan, C'yi değiştirirsek o da olur.
+
+1284
+03:22:51,379 --> 03:22:52,839
+Tamam, şimdiden buluyorum sana.
+
+1285
+03:22:55,019 --> 03:23:04,059
+Geldik buraya. CA'dan farklı. Hangisi küçük? Bu en küçük. Burayı 2 yapıyorum. CB'den farklı. Hangisi en küçük? Ya şu, ya bu. Burayı 2 yapıyoruz.
+
+1286
+03:23:04,719 --> 03:23:08,079
+CC ile aynı. CC ile aynı olduğu için burayı doğrudan alıyoruz. 1.
+
+1287
+03:23:08,759 --> 03:23:14,719
+CF'den farklı. Hangisi küçük? Bu. Burayı 2 yaptık. CG'den farklı. Hangisi küçük? Burayı 3 yaptık.
+
+1288
+03:23:17,059 --> 03:23:17,539
+Herhalde.
+
+1289
+03:23:18,131 --> 03:23:43,731
+221-23 diye yükleyecek. Tamam. E, A'dan farklı. Hangisi küçük? Yukarıdaki küçük. Burayı 3 yaptık. E, B'den farklı. Buradan veya buradan 3 yapabiliriz. E, C'den farklı. Bakın buradan 2 yaptık. E, F'den farklı. Buradan 2 yaptık. E, G'den farklı.
+
+1290
+03:23:44,244 --> 03:23:46,704
+Buradan veya şuradan 3 yaptık.
+
+1291
+03:23:46,924 --> 03:23:48,184
+332, 23.
+
+1292
+03:23:48,904 --> 03:23:49,064
+Evet.
+
+1293
+03:23:50,884 --> 03:23:52,024
+Geldik buraya.
+
+1294
+03:23:53,084 --> 03:23:56,444
+G, A'dan farklı, 4 yaptık buradan.
+
+1295
+03:23:57,184 --> 03:24:00,724
+G, B'den farklı, buradan veya buradan 4 yaptık.
+
+1296
+03:24:00,864 --> 03:24:02,904
+G, C'den farklı, buradan 3 yaptık.
+
+1297
+03:24:03,104 --> 03:24:08,364
+G, F'den farklı, buradan veya buradan 3 yaptık.
+
+1298
+03:24:08,884 --> 03:24:10,984
+G, G ile aynı, buradan 3 yaptık.
+
+1299
+03:24:11,572 --> 03:24:27,431
+Demek ki arkadaşlar, şu bizim A, B, C, F, G'den A, D, C, E, G'ye geçiş yapmak istersek, 3 birim değişiklikle bunu yapabiliyormuş.
+
+1300
+03:24:27,551 --> 03:24:28,591
+Şimdi bunlar neymiş bakalım.
+
+1301
+03:24:30,971 --> 03:24:33,271
+Şöyle bir farklı bir kalem rengi alayım.
+
+1302
+03:24:36,031 --> 03:24:38,871
+Şimdi bir kere G, G ile aynı.
+
+1303
+03:24:39,603 --> 03:24:42,843
+Şöyle yapalım, G, G ile aynı. Burada herhangi bir şey yapmıyoruz.
+
+1304
+03:24:43,064 --> 03:24:45,543
+Hocam son kısımda 3 yazdınız, o 2 olmayacak mı peki?
+
+1305
+03:24:45,923 --> 03:24:46,963
+Sağ matrisine.
+
+1306
+03:24:46,984 --> 03:24:49,804
+Pardon, pardon, 2-2, evet. Aynısı olacak.
+
+1307
+03:24:52,984 --> 03:24:55,103
+Doğrudan eşit olduğu için haklısın, aynı.
+
+1308
+03:24:56,243 --> 03:25:01,404
+Bakayım neymiş cevabı, 544-332, evet, iki birimlik bir maliyet gerekiyor.
+
+1309
+03:25:01,904 --> 03:25:03,943
+G, G ile aynı olduğu için bir şey yapmıyoruz.
+
+1310
+03:25:04,823 --> 03:25:06,703
+Şimdi G'ye nereden geldik? Buradan geldik.
+
+1311
+03:25:07,056 --> 03:25:31,296
+E, E, E, F ile aynı mı? Değil. O zaman şimdi buraya nereden geleceğiz arkadaşlar? Nereden gelmişiz? Birden gelmişiz. Birden gelmek ne demek? Change yapmak demek. O zaman bu F'nin buradaki E'ye change olması bir birim operasyon demek. Tamam mı? Peki bu bile nereden geldik? Yani şurada bir change işlemi var. Bu bile nereden geldik?
+
+1312
+03:25:31,763 --> 03:25:52,463
+Burada doğrudan, şuradan gelmişiz. Yani C'den C'ye herhangi bir şey yok. Buna nereden geldik? Buna da buradan geldik. D'den B'ye. Yani ya B'den D'ye, şuraya D'ye yazacağız.
+
+1313
+03:25:52,896 --> 03:26:15,676
+Bu D yazdığımızda bir birim değişiklik var. Nasıl geldiğimiz? Diagonalden geldiğimiz için change yapıyoruz. Change yaptığımız için burası işte bunu aldık. Sonra buraya nereden geldik? Buradan A'dan A'ya herhangi bir değişiklik yok. Bakın maliyet 0. Buraya da baştan geldik. İki tane birim değişikliği söyleyerek yapabiliyoruz. Mesela şunu bulsak.
+
+1314
+03:26:18,388 --> 03:26:35,748
+A, B, C, F, G var. Biz şey istiyoruz. A, D, C istiyoruz. O zaman ben alt maddesi kullanacağım. Bakın string aynı. A, B, C, G, F burası aynı. A, D, C'ye bakacağız.
+
+1315
+03:26:36,988 --> 03:26:41,728
+Üç birim maliyet gerekiyormuş. Bunu bir kere buldum. Bakalım bu üç birim maliyet nasıl gelecek?
+
+1316
+03:26:42,068 --> 03:26:45,308
+Buraya nereden gelmişiz? Şuradan gelmişiz. Yani
+
+1317
+03:26:45,811 --> 03:26:48,172
+G'nin olduğu yere buradan. Bu ne demek?
+
+1318
+03:26:49,652 --> 03:26:50,572
+ADC'ye
+
+1319
+03:26:50,572 --> 03:26:53,851
+ADC'ye bir insertion yap demek.
+
+1320
+03:26:55,172 --> 03:26:58,111
+Şöyle diyelim hatta ADC'ye
+
+1321
+03:26:58,111 --> 03:27:00,912
+bir insertion yapacağız.
+
+1322
+03:27:01,371 --> 03:27:03,652
+Nereye insertion yapacağımızı? Bir dakika.
+
+1323
+03:27:04,291 --> 03:27:05,992
+Replace yapacağız hocam. B ile de.
+
+1324
+03:27:05,992 --> 03:27:06,451
+Bir dakika.
+
+1325
+03:27:08,115 --> 03:27:32,956
+Hayır, üç birim şurada var. ADC, ABC, FG, üç birim buradayız. Buraya nereden geldik? Buradan geldik. Buraya gelmemiz ne demek? Buradan bir insertion yapmak demek. Yani sonuna bir şey ekliyoruz. Şuraya bir şey ekliyoruz demektir. Evet. Sonra buraya nereden geldik? Şimdi buraya birden gelmişiz. Bu doğrudan eşleşecek demek.
+
+1326
+03:27:36,628 --> 03:27:37,868
+ADC
+
+1327
+03:27:39,507 --> 03:27:40,507
+LAKAYA
+
+1328
+03:27:44,884 --> 03:27:47,804
+ADC, şuraya kafam karıştı bir anda.
+
+1329
+03:27:50,224 --> 03:27:51,324
+Üç birim buradan var.
+
+1330
+03:27:53,664 --> 03:27:56,044
+Bu üç birim GC ile eşleşmiyor.
+
+1331
+03:27:56,264 --> 03:27:57,804
+GC ile eşleşmediği için,
+
+1332
+03:27:58,604 --> 03:28:00,104
+şöyle diyeceğiz,
+
+1333
+03:28:00,284 --> 03:28:03,384
+GC ile eşleşmediği için buraya bir boşluk şey yapacağız,
+
+1334
+03:28:04,524 --> 03:28:06,984
+eleman ekleyeceğiz, bir ekleme yapacağız.
+
+1335
+03:28:07,884 --> 03:28:08,404
+Sonra,
+
+1336
+03:28:09,363 --> 03:28:28,363
+Yani C ile eşleşmediği için buraya önce bu şeyi ekliyoruz. Bu burada şöyle bir anlamda shift ettiğimizi düşünün. Sonra bir tane daha eleman ekliyoruz. Bir tane daha eleman ekleyince bu buraya geliyor. C oldu. Yani şöyle. Sonra bu bununla örtüştü.
+
+1337
+03:28:31,476 --> 03:28:44,096
+Nerede örtüştü? Şurada örtüştü. CC ile örtüştü. Bu buraya geldi, bu buraya geldi. Sonra bu dönüşüm yapmak gerekiyor. Burada B'yi D'ye dönüştürme yapmak gerekiyor. Sonra bu A'ya dönüşecek.
+
+1338
+03:28:44,936 --> 03:28:53,956
+Evet. Şurada iki tane insertion işlemiyle, bir de burada replace işlemiyle toplamda üç tane işlem yapıldığını gösteriyoruz. Tamam mı?
+
+1339
+03:28:55,731 --> 03:29:03,192
+Şimdi siz, süremiz 5 dakikamız kaldı. Size örnek olarak bu konuda çözüm için şöyle birkaç kelime verelim.
+
+1340
+03:29:03,951 --> 03:29:05,832
+Bunun mantığı şu.
+
+1341
+03:29:08,612 --> 03:29:12,652
+Hani Recurrence Slation'da biraz önce para örneğinde de yaptık ya.
+
+1342
+03:29:14,692 --> 03:29:15,992
+Asıl mantık şu arkadaşlar.
+
+1343
+03:29:17,371 --> 03:29:21,252
+Eğer ki bir stringin, nasıl desem?
+
+1344
+03:29:27,028 --> 03:29:29,028
+Son iki karakteri
+
+1345
+03:29:29,028 --> 03:29:30,708
+Aynıysa
+
+1346
+03:29:30,708 --> 03:29:32,827
+Ne demek?
+
+1347
+03:29:34,108 --> 03:29:35,227
+Yani matrisin
+
+1348
+03:29:35,227 --> 03:29:37,507
+Edit Distance'in i, j'si
+
+1349
+03:29:37,507 --> 03:29:38,868
+i ve j aynıysa
+
+1350
+03:29:38,868 --> 03:29:41,487
+i-1, j ekstiriyorum.
+
+1351
+03:29:41,548 --> 03:29:42,347
+Hiçbir şey yapma.
+
+1352
+03:29:43,407 --> 03:29:45,268
+Çünkü onlar zaten eşleşti demektir.
+
+1353
+03:29:45,968 --> 03:29:46,827
+Son karakterleri.
+
+1354
+03:29:47,688 --> 03:29:48,768
+Şimdi eğer bizim şurada
+
+1355
+03:29:52,819 --> 03:30:18,079
+Ki zaten ABC'de, FG, G'ler eşleştiği için hiçbir şey yapmadık. O bize söylüyor. Eğer sonlar aynıysa hiçbir şey yapma. Sonlar farklıysa, stringleri bir küçült, yani de ki, diagonaldeki, yani bulunduğun şu noktadaki, üstten,
+
+1356
+03:30:18,451 --> 03:30:38,311
+soldan veya sağdan yapabilecek, elde edeceğim maliyetlerin en küçüğüne bir ekleyerek problemi çöz. Yani stringin son kısmı tamamsa geri kalan kısmına bakıyoruz. Karakterler aynı, ne bileyim 5 karakter var, geri kalan 4 karaktere bakıyoruz. Ama aynı değilse
+
+1357
+03:30:39,219 --> 03:30:45,319
+Ondan önceki 3 farklı durumun, 3 farklı case'in en az mariyetlisi senin için hangisi ise onu seç diyoruz.
+
+1358
+03:30:45,799 --> 03:30:50,139
+Ve bu şekilde Recurrence-lation ile tablomuzu oluşturup şeye çıkıyoruz.
+
+1359
+03:30:50,260 --> 03:30:53,399
+Şimdi şu örnekleri...
+
+1360
+03:30:53,399 --> 03:30:58,579
+Hocam bu tabloyu yapana kadar o en kare bir karmaşıklığa sahip olmuyor muyuz? Biraz fazla değil mi?
+
+1361
+03:30:59,959 --> 03:31:01,739
+Tamam, brute force yap bunu o zaman.
+
+1362
+03:31:02,164 --> 03:31:08,404
+Yani iki stringi karşılaştırmak için sadece tek bir döngüde aynı indisteki elanlar...
+
+1363
+03:31:08,404 --> 03:31:15,023
+Karşılaştırma yapmayacağız. Stringi stringe dönüştüreceğiz ve dönüştürme yaparken yakacağın operasyonlar olacak. Burada string karşılaştırmıyoruz.
+
+1364
+03:31:17,023 --> 03:31:24,804
+Tamam mı? Yani bir ABC, F, G'yi alıp... Hani bir bulmacalar vardır ya, bir string verir o stringten...
+
+1365
+03:31:24,819 --> 03:31:31,819
+öbürüne geçiş yapar. Buradaki geçiş, ekleme de yapabiliyorsun, silme de yapabiliyorsun, karakter de değiştirebiliyorsun.
+
+1366
+03:31:31,819 --> 03:31:40,819
+ADC'den ABFG'yi eriştireceksin. Burada karşılaştırma diye bir şey yok. Bundan buna dönüşüm var. Veya tam tersi. Tamam mı?
+
+1367
+03:31:40,819 --> 03:31:48,819
+Şimdi karmaşıklığına da bakacağız. Bunun çok kısa hemen onu da söyleyeyim. Önce bir şuradan şey bakalım.
+
+1368
+03:31:52,628 --> 03:31:53,388
+Mesela
+
+1369
+03:31:53,388 --> 03:31:57,708
+Geçen dönem bir kitapta yapılmış
+
+1370
+03:31:57,708 --> 03:32:01,348
+Bunu alıp
+
+1371
+03:32:05,299 --> 03:32:18,919
+Honda. Bundan buna bir geçiş maliyeti nedir ve hangi yollardan mesela burada birkaç farklı şey var üretme yolu var.
+
+1372
+03:32:18,919 --> 03:32:28,919
+İsterseniz Hyundai'dan Hyundai veya Hyundai'dan Hyundai ikisi de farklıdır. Bir maliyet 3 oluyor birkaç farklı şekli var onları bir çalışın.
+
+1373
+03:32:29,620 --> 03:32:31,620
+Şimdi gelelim bunun şeyine.
+
+1374
+03:32:31,620 --> 03:32:34,460
+Ne arasında boşluk var değil mi orada? Çizgi çektiniz ya.
+
+1375
+03:32:34,680 --> 03:32:38,560
+Tabii tabii şurada şey var. Ne ile D arasında değil de U şeyde.
+
+1376
+03:32:39,780 --> 03:32:46,120
+Yani hizalayacağımız kelimeler yine aynı. Yani boşluk derken şunu matriste boşluğu görmeyeceksin.
+
+1377
+03:32:46,720 --> 03:32:49,520
+Öyle bir hizalayacaksın ki yani şurada da şey olacak.
+
+1378
+03:32:50,680 --> 03:32:51,700
+Aynı karakterler.
+
+1379
+03:32:53,380 --> 03:32:54,760
+Niye yazamıyoruz ya?
+
+1380
+03:32:55,956 --> 03:33:11,055
+Aynı karakterler karşılıklı gelmeye çalışacak. İşte burada ne var? Şuna göre delation var, buna göre delation var veya buna göre insertion var, burada bir change var deyip 3 birim maliyetle bundan buna nasıl bir hizalama yapılabilir onu göreceğiz.
+
+1381
+03:33:23,731 --> 03:33:24,731
+Bu bir.
+
+1382
+03:33:30,868 --> 03:33:41,007
+Boşluk, evet, hon, ah, diğeri de buymuş. Yani şeyi ürettikten sonra bunlardan bir tanesini, ikisini de elde edebilirsiniz.
+
+1383
+03:33:41,427 --> 03:33:51,948
+Niye iki tane? Çünkü bazı noktalarda biliyoruz ki, nerede vardı mesela, şurada olduğu gibi, bir noktaya iki farklı yerden gelebilir.
+
+1384
+03:33:57,075 --> 03:34:01,775
+Buradan da gelebiliyoruz, buradan da gelebiliyoruz. Yani Substring üzerinden, bunun üzerinden de yapılabilir.
+
+1385
+03:34:02,975 --> 03:34:13,595
+Karmaşıklığa baktığımızda, TN, buradan M çarpı N'lik, O M çarpı N'lik kelimelerin uzunluğu kadar bir işlem yaptık, matrisi doldurduk.
+
+1386
+03:34:14,175 --> 03:34:21,915
+Aynı zamanda bu SN'de karşılık geliyor, Space N'e. Bunu arkadaşlar, BruteForce'da yapmaya çalışmak çok çok zor.
+
+1387
+03:34:21,915 --> 03:34:22,915
+Niye?
+
+1388
+03:34:23,476 --> 03:34:33,936
+Yani A'lar tamam eşleşiyor, eşleşmiyorsa 3 farklı durma. Bir de maliyeti minimize edeceksin. Yani 4 farklı operasyonun var. Maliyet minimize edilecek. Bunlar hizalanacak.
+
+1389
+03:34:35,136 --> 03:34:40,695
+İççe, mesela buradan N kareye yakın bir şey gelebilir eğer stringler uzunsa.
+
+1390
+03:34:41,056 --> 03:34:53,956
+Burada en üzeri 6'lara, en üzeri 5'lere kadar gidebilecek bir şey veya daha da uzayabilir. String'in uzunluğu ile farklılaşabilir. Onun için brute force ile bu iş biraz daha zor. İsterseniz onu araştırabilirsiniz.
+
+1391
+03:34:55,056 --> 03:35:02,816
+Evet, normalde bir tane de anlatacağım şey var da, bugünlük bu kadar yeter. Diğer şeye de bakacağız. Çok fazla da uzatmayalım.
+
+1392
+03:35:03,507 --> 03:35:08,948
+Gelecek hafta dersimiz yok. Şimdiden hepinize iyi tatiller, iyi bayramlar dileyim öncelikle.
+
+1393
+03:35:10,108 --> 03:35:15,287
+Sınavla alakalı bir bilgi göndereceğim, mail ile göndereceğim. Ona da takip edersiniz.
+
+1394
+03:35:15,727 --> 03:35:18,507
+Sınavla alakalı dersin başında zaten içeriğiyle alakalı konuştuk.
+
+1395
+03:35:19,528 --> 03:35:25,007
+Veri madenciliği için Songül Hoca ile konuşurum. 12. hafta eğer sınav yapmayacaksa ben 12. hafta yaparım.
+
+1396
+03:35:25,127 --> 03:35:30,907
+Önce siz daha bir hafta fazladan çalışmış olursunuz. Veya 12. hafta hoca yapar, ben biraz geç saatte yaparım.
+
+1397
+03:35:31,379 --> 03:35:38,219
+Onu da sizlere bildiririm. Bir sıkıntılı bir durum varsa haberleşiriz. Diyelim. Var mı sorunuz?
+
+1398
+03:35:39,139 --> 03:35:40,959
+Ödev linkiyle mi bağlanıyoruz şimdi hocam?
+
+1399
+03:35:42,079 --> 03:35:48,739
+Ödev linki değil. Size yani mailde gönderdiğim bir link var. Oradan bağlanıp ben oradan sizi sırayla tek tek kabul edeceğim.
+
+1400
+03:35:49,599 --> 03:35:53,199
+Hani maildeki linke diyelim. Ödev linki çünkü öyle bir link yok.
+
+1401
+03:35:53,199 --> 03:35:55,339
+Onu tasdettim. Teşekkür ederim.
+
+1402
+03:35:55,540 --> 03:35:56,399
+Görüşmek üzere.
+
+1403
+03:35:56,920 --> 03:36:01,140
+Evet, hepinize iyi tatiller, iyi bayramlar. Kendinize iyi bakın arkadaşlar. Hoşçakalın.
