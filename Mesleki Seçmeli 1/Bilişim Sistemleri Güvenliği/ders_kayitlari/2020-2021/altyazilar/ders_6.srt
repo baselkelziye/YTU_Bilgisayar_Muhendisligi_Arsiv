@@ -1,0 +1,8427 @@
+1
+00:04:27,730 --> 00:04:32,430
+Arkadaşlar uygulama takvimini asistan arkadaşlar belirliyorlar.
+
+2
+00:04:33,089 --> 00:04:36,649
+Avesistan'da yayınlamaya başladılar. Oradan takip edin lütfen.
+
+3
+00:04:38,029 --> 00:04:45,009
+Bugün uygulamayla alakalı her iki asistan arkadaşla da ben konuşmadım ama onlar bir plan yaptılar.
+
+4
+00:04:45,689 --> 00:04:48,110
+Ona bağlı olarak devam edilecek.
+
+5
+00:04:48,449 --> 00:04:52,949
+Oradaki ilanları takip ederseniz bilgilenmiş olursunuz.
+
+6
+00:04:53,470 --> 00:04:57,410
+Şimdi yeterince çoğunluk sağlandı yanılmıyorsam.
+
+7
+00:04:57,730 --> 00:05:01,370
+Bugünkü derse başlayabiliriz.
+
+8
+00:05:02,269 --> 00:05:14,589
+Şimdi geçtiğimiz haftalarda işletim sistemi tarafındaki güvenliğe baktık.
+
+9
+00:05:14,689 --> 00:05:16,470
+Oradaki güvenlik modeline baktık.
+
+10
+00:05:17,629 --> 00:05:21,750
+Unix, Linux özelinde inceledik. Windows özelinde inceledik.
+
+11
+00:05:21,750 --> 00:05:36,279
+Aynı zamanda Principle of Least Privilege, Privilege Separation, Isolation, Compartmentalization gibi
+
+12
+00:05:36,279 --> 00:05:38,740
+kavramları da gözden geçirdik.
+
+13
+00:05:38,860 --> 00:05:40,800
+Akses kontrolü gözden geçirdik.
+
+14
+00:05:42,220 --> 00:05:46,110
+Orada sadece bir soru değil.
+
+15
+00:05:46,290 --> 00:05:51,769
+Aynı zamanda Ticket Token Capability modelini de inceledik.
+
+16
+00:05:51,769 --> 00:06:01,269
+Şimdi bugün benzer bir şekilde web güvenliği modelini gözden geçireceğiz.
+
+17
+00:06:06,709 --> 00:06:13,250
+Çünkü günümüzde browser yapısı neredeyse standart.
+
+18
+00:06:13,610 --> 00:06:16,709
+Standart kullanıcı arayüzü haline dönüştü.
+
+19
+00:06:16,709 --> 00:06:24,490
+Her türlü uygulamanın etkileşimini kullanıcı ile etkileşimini sağlamak için istisnasız
+
+20
+00:06:24,490 --> 00:06:29,790
+diyebileceğimiz fazlalıkta çoğunlukla browserdan yararlanıyoruz.
+
+21
+00:06:29,790 --> 00:06:39,350
+Diğer taraftan da birden fazla kullanıcıya aynı anda hizmet vermesi gereken uygulamalarımızı
+
+22
+00:06:39,350 --> 00:06:43,550
+web servisler şeklinde gerçekleştirip,
+
+23
+00:06:43,550 --> 00:06:46,310
+web sunucularda yayınlıyoruz.
+
+24
+00:06:46,310 --> 00:06:55,189
+Bu açıdan hem browser tarafı hem de sunucu tarafı yani client ve server öyle düşünecek olursak
+
+25
+00:06:55,189 --> 00:07:02,550
+her iki tarafı da güvenlik açısından bilmemiz, incelememiz ve öğrenmemiz gereken ayrıntılar içeriyor.
+
+26
+00:07:02,550 --> 00:07:06,189
+Bugün güvenlik modelini ortaya koyacağız.
+
+27
+00:07:06,189 --> 00:07:13,230
+Daha önceden işletim sistemlerinde öğrendiğimiz kavramlarla,
+
+28
+00:07:13,550 --> 00:07:21,550
+bunları eşleştirmeye çalışacağız, birleştirmeye çalışacağız, aradaki benzerlikleri göstereceğiz.
+
+29
+00:07:21,550 --> 00:07:31,550
+Sonrasında da işte görüyorsunuz web üzerinden oluşabilecek zafiyetler, saldırılar bunlarda ilerleyeceğiz.
+
+30
+00:07:31,550 --> 00:07:35,699
+Hedefimiz çok basit.
+
+31
+00:07:35,699 --> 00:07:44,699
+Bir browserdan günümüzde düşündüğümüzde çoğunlukla aynı anda birden fazla siteye erişiyoruz.
+
+32
+00:07:45,699 --> 00:07:49,699
+Tek bir siteye erişsek de, birden fazla siteye erişsek de,
+
+33
+00:07:49,699 --> 00:07:57,509
+güvenlik açısından birkaç tane kuralın yerine getirildiğini,
+
+34
+00:07:57,509 --> 00:08:01,509
+bu açılardan güvende olduğumuzu bilmemiz gerekiyor.
+
+35
+00:08:01,509 --> 00:08:02,509
+Nedir?
+
+36
+00:08:02,509 --> 00:08:07,509
+Eriştiğimiz ağ sitesi bizden bilgi çalmamalı.
+
+37
+00:08:07,509 --> 00:08:13,509
+Bizim bilgisayarımıza ister bu telefon olsun, ister tablet, ister desktop
+
+38
+00:08:13,509 --> 00:08:17,509
+herhangi bir şekilde kötü niyetli program yüklememeli.
+
+39
+00:08:18,509 --> 00:08:27,509
+Ve mahremiyetimizi zedeleyecek tarzda donanım cihazlarına özellikle kamera olsun, mikrofon olsun
+
+40
+00:08:27,509 --> 00:08:30,509
+bu tarz donanım cihazlarına erişmemeli.
+
+41
+00:08:30,509 --> 00:08:32,509
+Bu olayın bir tarafı.
+
+42
+00:08:32,509 --> 00:08:41,509
+Diğer tarafta da az önce söylediğim gibi aynı browser üzerinden aynı anda birden fazla siteye eriştiğimizde
+
+43
+00:08:41,509 --> 00:08:47,509
+bir sitenin, diğer bir sitenin çalışmasını etkilememesi,
+
+44
+00:08:47,509 --> 00:08:54,509
+o siteden hassas veri almaması veya o siteye kontrol haricinde,
+
+45
+00:08:54,509 --> 00:08:59,509
+kurallarla belirlenmiş senaryolar haricinde veri göndermemesi lazım.
+
+46
+00:08:59,509 --> 00:09:08,210
+Şimdi dersin girişinde söylediğim gibi sadece standart web,
+
+47
+00:09:08,210 --> 00:09:14,210
+arayüzlü web sunucuya erişilerek çalışan uygulamaların haricinde
+
+48
+00:09:14,210 --> 00:09:18,210
+bir de web protokolleri üzerine kurulu uygulamalar var.
+
+49
+00:09:18,210 --> 00:09:24,210
+Örneğin şu anda kullandığımız Zoom uygulaması sizinle ders yapmak için
+
+50
+00:09:24,210 --> 00:09:26,210
+web protokolünü kullanıyor.
+
+51
+00:09:26,210 --> 00:09:28,210
+Bu yapıdan yararlanıyor.
+
+52
+00:09:28,210 --> 00:09:35,210
+O yüzden buradaki bir takım prensipler, güvenlikle alakalı hedefler,
+
+53
+00:09:35,210 --> 00:09:43,210
+güvenlikle alakalı prensipler aynı zamanda bu tarz web protokolleri üzerine kurulu
+
+54
+00:09:43,210 --> 00:09:49,799
+uygulamaların da güvenliğini ilgilendiriyor.
+
+55
+00:09:49,799 --> 00:09:55,269
+Öncelikle saldırı modellerini netleştirelim.
+
+56
+00:09:55,269 --> 00:09:58,269
+Bu saldırı modellerini belirleyelim.
+
+57
+00:09:58,269 --> 00:10:07,269
+En basit olanı bizim bir şekilde kötü niyetli bir web sitesine erişmemiz üzerine kurulu.
+
+58
+00:10:07,269 --> 00:10:14,740
+Sosyal mühendislikte veya başka bir şekilde bu web sitesine yönlendirilmiş olabiliriz.
+
+59
+00:10:14,740 --> 00:10:21,740
+Bu web sitesine bağlanmış olsak bile bağlandıktan sonra buranın kötü bir yer olduğunu fark edebiliyoruz.
+
+60
+00:10:22,740 --> 00:10:31,740
+Browser tarafında işletim sistemi kısmını konuştuk uzun uzun geçtiğimiz haftalarda.
+
+61
+00:10:31,740 --> 00:10:40,740
+Browser tarafında alınacak olan web ile alakalı web erişimi ile alakalı güvenlik tedbirleri sayesinde
+
+62
+00:10:40,740 --> 00:10:53,080
+az önce söylediğim gibi browserında açık olan diğer tablardaki sitelere erişimi ve onları etkilemesini
+
+63
+00:10:53,080 --> 00:10:55,080
+bir kez engellemem gerekiyor.
+
+64
+00:10:55,080 --> 00:10:57,080
+Kurallardan bir tanesi bu.
+
+65
+00:10:57,080 --> 00:11:08,990
+Diğer taraftan güvenlik açısından farklı servislere erişimini hızlandıran tokenlar varsa
+
+66
+00:11:08,990 --> 00:11:14,990
+cookie, birazdan daha net bir şekilde anlayacağız, inceleyeceğiz.
+
+67
+00:11:14,990 --> 00:11:23,990
+Cookie'ler varsa, authentication token, authorization token, bu tarz hassas bilgiler varsa
+
+68
+00:11:23,990 --> 00:11:28,269
+bunları da erişimden korumalıyız.
+
+69
+00:11:29,269 --> 00:11:46,659
+Aynı şekilde lokaldaki dosyalarıma erişmesini, onları şifrelemesini, onları başka bir yere transfer etmesini
+
+70
+00:11:46,659 --> 00:11:55,659
+hatta ve hatta browser'ın üzerinden, lokal network'ün üzerinde bir güvenlik taraması yapmasını,
+
+71
+00:11:55,659 --> 00:12:02,659
+port scan diyoruz, hangi portlar açık, hangi portlar kapalı, bu tarz bir güvenlik taraması yapması,
+
+72
+00:12:02,659 --> 00:12:06,659
+yapmasını engellemem gerekiyor.
+
+73
+00:12:06,659 --> 00:12:17,659
+Birinci saldırı modeli bizim bilerek veya bilmeyerek kötü niyetli bir web sitesine doğrudan erişimimiz.
+
+74
+00:12:17,659 --> 00:12:22,659
+Diğerinde ise dolaylı erişim.
+
+75
+00:12:22,659 --> 00:12:26,659
+Biz aslında düzgün bir yere eriştiğimizi varsayıyoruz.
+
+76
+00:12:26,659 --> 00:12:34,019
+Ancak saldırgan bu düzgün yerin kontrolünü ele geçirmiş olabilir.
+
+77
+00:12:34,019 --> 00:12:46,019
+Oraya bizi bir önceki örnekte olduğu gibi kötü niyetli sitelere yönlendirecek bağlantılar yerleştirmiş olabilir.
+
+78
+00:12:46,019 --> 00:13:00,620
+Veya oradaki bir takım içerik doğrudan kötü niyetli programlar içeriyor olabilir.
+
+79
+00:13:00,620 --> 00:13:02,620
+Malware dediğimiz.
+
+80
+00:13:02,620 --> 00:13:08,620
+Bu durumda da dolaylı olarak erişsek bile mesela bir kullanıcı forumunda
+
+81
+00:13:08,620 --> 00:13:12,620
+bir probleme cevap arıyoruz.
+
+82
+00:13:12,620 --> 00:13:14,620
+Orada bir link görüyoruz.
+
+83
+00:13:14,620 --> 00:13:17,620
+Ona basıp kötü niyetli bir siteye gidiyoruz.
+
+84
+00:13:17,620 --> 00:13:20,620
+Veya orada bir kod parçası görüyoruz.
+
+85
+00:13:20,620 --> 00:13:22,620
+Bir executable görüyoruz.
+
+86
+00:13:22,620 --> 00:13:24,620
+Bir script görüyoruz.
+
+87
+00:13:24,620 --> 00:13:36,190
+Bu durumda da güvenlik modelimizin bu saldırı tipine karşı koruma sağlamasını sağlamak zorundayız.
+
+88
+00:13:36,190 --> 00:13:38,190
+Bunu da öngörmeliyiz.
+
+89
+00:13:38,190 --> 00:13:40,190
+Bir başka saldırı modeli
+
+90
+00:13:40,190 --> 00:13:43,190
+doğrudan network üzerinden yapılan saldırılar.
+
+91
+00:13:43,190 --> 00:13:54,190
+Bakın saldırgan tamamen düzgün bir sunucu ile tamamen düzgün bir browser arasında ki trafiği dinleyebiliyor.
+
+92
+00:13:54,190 --> 00:13:56,190
+Kopyasını alabiliyor.
+
+93
+00:13:56,190 --> 00:14:00,190
+Veya değiştirebiliyor.
+
+94
+00:14:00,190 --> 00:14:02,190
+İşte nedir?
+
+95
+00:14:02,190 --> 00:14:05,190
+Bir routerı ele geçirmiş olabilir.
+
+96
+00:14:05,190 --> 00:14:11,879
+Veya DNS poisoning yaparak
+
+97
+00:14:12,879 --> 00:14:14,879
+DNS queryleri sonucunda
+
+98
+00:14:14,879 --> 00:14:25,100
+bizim doğru sitelere değil yanlış sitelere gitmemize sebep olabilir.
+
+99
+00:14:25,100 --> 00:14:27,100
+Dördüncüsü
+
+100
+00:14:27,100 --> 00:14:29,100
+bütün aldığımız tedbirlere rağmen
+
+101
+00:14:29,100 --> 00:14:31,100
+bir şekilde
+
+102
+00:14:31,100 --> 00:14:33,100
+kötü niyetli kod parçası
+
+103
+00:14:33,100 --> 00:14:35,100
+browserımıza gelmiştir.
+
+104
+00:14:35,100 --> 00:14:38,100
+Ve browserımızda oluşturduğumuz
+
+105
+00:14:38,100 --> 00:14:41,100
+hani geçen haftalardan hatırlayın
+
+106
+00:14:41,100 --> 00:14:43,100
+principle of list
+
+107
+00:14:43,100 --> 00:14:44,100
+privilege
+
+108
+00:14:44,100 --> 00:14:45,100
+separation
+
+109
+00:14:45,100 --> 00:14:46,100
+sandbox
+
+110
+00:14:46,100 --> 00:14:48,100
+isolation
+
+111
+00:14:48,100 --> 00:14:50,100
+bunların hepsini geçmiş ve
+
+112
+00:14:50,100 --> 00:14:53,100
+bir şekilde çalışmaya başlamış olabilir.
+
+113
+00:14:53,100 --> 00:15:00,090
+İşte bu dört tane saldırı modeline
+
+114
+00:15:00,090 --> 00:15:04,090
+temel oluşturacak bilgileri gözden geçirdikten sonra
+
+115
+00:15:04,090 --> 00:15:07,090
+bunlarla alakalı yavaş yavaş
+
+116
+00:15:07,090 --> 00:15:12,090
+neler yapılması gerekiyor sistemsel olarak neler yapılması gerekiyor
+
+117
+00:15:12,090 --> 00:15:14,090
+bunları inceleyeceğiz.
+
+118
+00:15:14,090 --> 00:15:17,090
+Nasıl işte sandboxı isolation'ı tarifledik.
+
+119
+00:15:17,090 --> 00:15:23,090
+Nasıl sistem çağrılarının incelenmesi
+
+120
+00:15:23,090 --> 00:15:30,090
+ve buna bağlı olarak bazılarının engellenmesi bloke edilmesini gözden geçirdik.
+
+121
+00:15:30,090 --> 00:15:35,090
+Veya işte bir hücre yapısı oluşturduk.
+
+122
+00:15:35,090 --> 00:15:38,090
+Burada da web tarafında da
+
+123
+00:15:38,090 --> 00:15:41,090
+benzer prensipleri uygulayacağız ama
+
+124
+00:15:41,090 --> 00:15:46,779
+önce bir temel bilgiyi altyapıyı
+
+125
+00:15:46,779 --> 00:15:48,779
+HTTP protokolüne bakacağız.
+
+126
+00:15:48,779 --> 00:15:51,779
+HTTP protokolünü biliyorsunuz.
+
+127
+00:15:51,779 --> 00:15:54,779
+Zaten günlük hayatımızda sürekli kullanıyorsunuz.
+
+128
+00:15:54,779 --> 00:15:58,779
+Ancak network açısından incelemedik.
+
+129
+00:15:58,779 --> 00:16:00,779
+Önemli değil.
+
+130
+00:16:00,779 --> 00:16:03,779
+Burada şu anda bizim dersimizi ilgilendiren
+
+131
+00:16:03,779 --> 00:16:06,779
+kısmıyla inceleyeceğiz.
+
+132
+00:16:06,779 --> 00:16:09,779
+HTTP protokolü çok eski bir protokol ve
+
+133
+00:16:09,779 --> 00:16:11,779
+ASCII üzerine kurulu.
+
+134
+00:16:11,779 --> 00:16:13,779
+Günümüzde
+
+135
+00:16:13,779 --> 00:16:16,779
+işte Extended ASCII veya Unicode'u da destekliyor.
+
+136
+00:16:16,779 --> 00:16:17,779
+Ama orijinalde ASCII,
+
+137
+00:16:17,779 --> 00:16:21,779
+1989
+
+138
+00:16:21,779 --> 00:16:26,779
+CERN Üniversitesi'nde, CERN Araştırma Merkezi'nde daha doğrusu
+
+139
+00:16:26,779 --> 00:16:28,779
+yapılan fizik çalışmalarının
+
+140
+00:16:28,779 --> 00:16:31,779
+benzer alanda çalışan araştırmacılara
+
+141
+00:16:31,779 --> 00:16:34,779
+çok daha hızlı duyurulabilmesi,
+
+142
+00:16:34,779 --> 00:16:38,779
+onlarla çok daha hızlı paylaşılabilmesi için oluşturulmuş bir protokol.
+
+143
+00:16:38,779 --> 00:16:41,779
+Bu dönemde yaygın olarak kullanılan
+
+144
+00:16:41,779 --> 00:16:44,779
+FTP ve Gopher protokolleri var.
+
+145
+00:16:44,779 --> 00:16:47,779
+Ancak birtakım eksik,
+
+146
+00:16:47,779 --> 00:16:50,779
+birtakım sıkıntılar içeriyorlar.
+
+147
+00:16:50,779 --> 00:16:54,779
+İşte bu eksik ve sıkıntıları ortadan kaldırmak adına
+
+148
+00:16:54,779 --> 00:16:59,629
+HTTP protokolü oluşturuluyor.
+
+149
+00:16:59,629 --> 00:17:03,629
+Orjinal protokol şu anda aslında öyle,
+
+150
+00:17:03,629 --> 00:17:06,630
+ancak protokole yapılan birtakım eklemelerle bu
+
+151
+00:17:06,630 --> 00:17:08,630
+farklılaştırılmış durumda ama
+
+152
+00:17:08,630 --> 00:17:10,630
+orjinal protokol stateless.
+
+153
+00:17:10,630 --> 00:17:11,630
+Ne demek?
+
+154
+00:17:11,630 --> 00:17:16,940
+Alıcı ve verici aldıkları ve verdikleri mesajların
+
+155
+00:17:16,940 --> 00:17:18,940
+arasında bir ilişkilendirme yapmıyorlar.
+
+156
+00:17:18,940 --> 00:17:19,940
+Her şey,
+
+157
+00:17:19,940 --> 00:17:22,940
+sadece ve sadece bir request
+
+158
+00:17:22,940 --> 00:17:26,940
+ve bunun karşılığında yapılan bir response üzerine kurulu.
+
+159
+00:17:26,940 --> 00:17:29,940
+Bir çift şeklinde ilerliyor bunlar
+
+160
+00:17:29,940 --> 00:17:34,940
+ama iki tane bu şekildeki çiftin eşleştirilmesi yapılmıyor.
+
+161
+00:17:34,940 --> 00:17:37,940
+Protokol bu açıdan stateless olarak,
+
+162
+00:17:37,940 --> 00:17:41,940
+yani durum bilgisi tutmayan bir protokol olarak
+
+163
+00:17:41,940 --> 00:17:44,940
+tariflenmiş durumda.
+
+164
+00:17:44,940 --> 00:17:48,940
+HTTP protokolüyle erişilebilecek her kaynak için
+
+165
+00:17:48,940 --> 00:17:55,940
+şurada işte mavi, yeşil, siyah, sarı, kırmızı ve nedir o,
+
+166
+00:17:55,940 --> 00:17:59,940
+mor renklerden oluşan parçalarla ifade edilmiş bir
+
+167
+00:17:59,940 --> 00:18:03,940
+Uniform Resource Location bilgisi var.
+
+168
+00:18:03,940 --> 00:18:09,940
+Scheme, HTTP bir protokol ailesi,
+
+169
+00:18:09,940 --> 00:18:16,940
+bu yapının, hani bu URL yapısının karşımıza çıkan uygulamalarından bir tanesi.
+
+170
+00:18:16,940 --> 00:18:20,940
+Hangi yöntemle erişileceğini söylüyor.
+
+171
+00:18:20,940 --> 00:18:23,940
+Domain nereye erişileceğini.
+
+172
+00:18:23,940 --> 00:18:28,940
+Port erişilen yerde spesifik olarak hangi proses ile konuşulacağını.
+
+173
+00:18:28,940 --> 00:18:37,250
+O prosese nereye erişileceği bilgisinin nasıl verileceğini.
+
+174
+00:18:37,250 --> 00:18:42,250
+Path, Query String ve Fragment ID de bunları ifade ediyor.
+
+175
+00:18:42,250 --> 00:18:48,250
+Aslında baktığınızda uzaktaki bir lokasyonda
+
+176
+00:18:48,250 --> 00:18:51,250
+bir file'ı açmışız gibi oluyor.
+
+177
+00:18:51,250 --> 00:18:53,250
+O file'ın adını vermişiz.
+
+178
+00:18:53,250 --> 00:19:00,250
+Ancak klasik standart bir statik file yapısı değil de
+
+179
+00:19:00,250 --> 00:19:05,250
+parametrelerle beraber şu şekilde açılsın veyahut da o file'ın içeriği
+
+180
+00:19:05,250 --> 00:19:10,250
+bana bu şekilde dönüştürülerek gelsin diyebildiğimiz bir yapı.
+
+181
+00:19:10,250 --> 00:19:18,910
+Istek, az önce söyledim ASCII yani bildiğimiz tekst, metin olarak gidiyor.
+
+182
+00:19:19,910 --> 00:19:21,910
+Bakın üç parçadan oluşuyor.
+
+183
+00:19:21,910 --> 00:19:23,910
+Burada iki parça görünüyor.
+
+184
+00:19:23,910 --> 00:19:25,910
+Üçüncüsü boş olduğu için görünmüyor.
+
+185
+00:19:25,910 --> 00:19:28,910
+Şimdi fark edeceksiniz.
+
+186
+00:19:28,910 --> 00:19:30,910
+Yukarıda metot var.
+
+187
+00:19:30,910 --> 00:19:31,910
+Get.
+
+188
+00:19:31,910 --> 00:19:34,910
+Nereyi get etmek istiyoruz?
+
+189
+00:19:34,910 --> 00:19:36,910
+Get j'i de denk düşüyor.
+
+190
+00:19:36,910 --> 00:19:41,910
+Ve hangi kurallara uygun olarak get etmek istiyoruz?
+
+191
+00:19:41,910 --> 00:19:48,910
+Sonra kabul edebileceğimiz veya karşı taraftan beklediğimiz
+
+192
+00:19:48,910 --> 00:19:50,910
+şeyler neler?
+
+193
+00:19:50,910 --> 00:19:52,910
+Bunları ifade ediyoruz.
+
+194
+00:19:52,910 --> 00:20:01,910
+Diyoruz ki biz image kategorisinde gif, xbitmap veya jpeg kabul edebiliriz.
+
+195
+00:20:01,910 --> 00:20:04,910
+Diğer şeylerden her şeyi kabul edebiliriz.
+
+196
+00:20:04,910 --> 00:20:06,910
+Yani bu şu anlama geliyor.
+
+197
+00:20:06,910 --> 00:20:11,910
+Sonra diyorsun ki eğer image kategorisinde png formatında bir şey varsa
+
+198
+00:20:11,910 --> 00:20:12,910
+bana gönderme.
+
+199
+00:20:12,910 --> 00:20:15,910
+Image'den sadece bunları kabul ediyorum.
+
+200
+00:20:15,910 --> 00:20:16,910
+Burada bakın.
+
+201
+00:20:16,910 --> 00:20:19,910
+Özelden genele doğru gidiyor.
+
+202
+00:20:19,910 --> 00:20:21,910
+Yani bir filtreleme mantığı da var.
+
+203
+00:20:21,910 --> 00:20:24,910
+İngilizce içerik kabul edeceğim diyorsunuz.
+
+204
+00:20:24,910 --> 00:20:26,910
+Ancak bunlar ne kadar kısıtlayıcı?
+
+205
+00:20:26,910 --> 00:20:28,910
+Çok kısıtlayıcı değil.
+
+206
+00:20:28,910 --> 00:20:31,910
+Server'da diyelim ki Almanca içerik var.
+
+207
+00:20:31,910 --> 00:20:33,910
+Siz İngilizce şey yaptınız.
+
+208
+00:20:33,910 --> 00:20:37,910
+Size hizmet vermeyi geri çevirebileceği gibi elinde bu var deyip
+
+209
+00:20:37,910 --> 00:20:39,910
+bunu size geri döndürebilirdi.
+
+210
+00:20:39,910 --> 00:20:41,910
+Orada esneklikler var.
+
+211
+00:20:41,910 --> 00:20:43,910
+Aradaki bağlantı.
+
+212
+00:20:43,910 --> 00:20:45,910
+Bir seferki request response.
+
+213
+00:20:45,910 --> 00:20:49,670
+Request response yapılacak.
+
+214
+00:20:49,670 --> 00:20:50,670
+O yüzden açık tutalım.
+
+215
+00:20:50,670 --> 00:20:55,670
+Hayatta tutalım diye Server'a özellikle belirtiyorsunuz.
+
+216
+00:20:55,670 --> 00:20:57,670
+Yani bağlantıyı ben kapatmayacağım.
+
+217
+00:20:57,670 --> 00:20:59,670
+Sen de kapatma.
+
+218
+00:20:59,670 --> 00:21:02,670
+İşte kendinizi tanıtıyorsunuz.
+
+219
+00:21:02,670 --> 00:21:03,670
+Neymiş aslında?
+
+220
+00:21:03,670 --> 00:21:08,670
+Microsoft Internet Explorer 2.0 Windows 95 üzerinde çalışıyormuş.
+
+221
+00:21:08,670 --> 00:21:12,670
+Mozilla 1.22 versiyonuyla uyumluymuş.
+
+222
+00:21:12,670 --> 00:21:14,670
+İsteği nereye yapıyorum?
+
+223
+00:21:14,670 --> 00:21:16,670
+Example com'a yapıyorum.
+
+224
+00:21:16,670 --> 00:21:19,670
+Ve beni oraya yönlendiren ne?
+
+225
+00:21:19,670 --> 00:21:21,670
+Aslında Google'da bir arama yapmışım.
+
+226
+00:21:21,670 --> 00:21:25,670
+O aramanın sonucunda ben example com'a gönderilmişim.
+
+227
+00:21:25,670 --> 00:21:26,670
+Referrer.
+
+228
+00:21:26,670 --> 00:21:29,670
+Kim beni oraya yönlendirdi?
+
+229
+00:21:29,670 --> 00:21:32,670
+Alt tarafta da isteğin vücudu var.
+
+230
+00:21:32,670 --> 00:21:34,670
+Yani içeriği var.
+
+231
+00:21:34,670 --> 00:21:35,670
+Payload.
+
+232
+00:21:35,670 --> 00:21:37,670
+Network dersinde göreceğiz onu.
+
+233
+00:21:37,670 --> 00:21:38,670
+Konuşacağız.
+
+234
+00:21:38,670 --> 00:21:39,670
+Payload diyoruz.
+
+235
+00:21:39,670 --> 00:21:40,670
+Yük.
+
+236
+00:21:40,670 --> 00:21:42,670
+O istekle ne taşıyoruz?
+
+237
+00:21:42,670 --> 00:21:44,670
+Ama get metodunun özelliği
+
+238
+00:21:44,670 --> 00:21:49,670
+Yük kısmı, payload, body kısmı her zaman boş olur.
+
+239
+00:21:49,670 --> 00:21:51,670
+Orada herhangi bir şey olmaz.
+
+240
+00:21:51,670 --> 00:21:56,940
+Buna karşılık bakın server'dan bir cevap geliyor.
+
+241
+00:21:56,940 --> 00:21:59,940
+Server'dan gelen cevap
+
+242
+00:21:59,940 --> 00:22:03,769
+Pardon.
+
+243
+00:22:03,769 --> 00:22:06,769
+Önce bir status içeriyor.
+
+244
+00:22:06,769 --> 00:22:07,769
+Durum evet diyor.
+
+245
+00:22:07,769 --> 00:22:09,769
+Ben senin isteğini kabul ettim.
+
+246
+00:22:09,769 --> 00:22:10,769
+200 okey.
+
+247
+00:22:10,769 --> 00:22:14,769
+100, 200, 300, 400, 500 olmak üzere kategoriler var.
+
+248
+00:22:14,769 --> 00:22:16,769
+Bu kategorilerin ayrıntısını internetten baktık.
+
+249
+00:22:16,769 --> 00:22:18,769
+Ayrıntısına internetten bakabilirsiniz.
+
+250
+00:22:18,769 --> 00:22:20,769
+Ama 200 güzel bir şey.
+
+251
+00:22:20,769 --> 00:22:21,769
+Düzgün demek.
+
+252
+00:22:21,769 --> 00:22:23,769
+300 kaynak bulunamadı.
+
+253
+00:22:23,769 --> 00:22:25,769
+Başka bir yere yönlendiriyorum.
+
+254
+00:22:25,769 --> 00:22:27,769
+400 ve 500 hatalar.
+
+255
+00:22:27,769 --> 00:22:30,109
+Cevap veriyor.
+
+256
+00:22:30,109 --> 00:22:31,109
+Ne zaman cevap verdiğini söylüyor.
+
+257
+00:22:31,109 --> 00:22:33,109
+Kendisinin ne olduğunu söylüyor.
+
+258
+00:22:33,109 --> 00:22:35,109
+Ne gönderdiğini söylüyor.
+
+259
+00:22:35,109 --> 00:22:38,109
+Text ana kategorisinde HTML.
+
+260
+00:22:38,109 --> 00:22:41,109
+Hypertext Markup Language.
+
+261
+00:22:41,109 --> 00:22:44,109
+Onun text'in alt kategorisi.
+
+262
+00:22:44,109 --> 00:22:47,109
+2543 byte gönderiyormuş.
+
+263
+00:22:47,109 --> 00:22:49,109
+Ve altında da bakın.
+
+264
+00:22:49,109 --> 00:22:52,109
+HTML ile başlamış.
+
+265
+00:22:52,109 --> 00:22:54,109
+Some Data Announcement.
+
+266
+00:22:54,109 --> 00:22:58,829
+HTML ile bitirmiş.
+
+267
+00:22:58,829 --> 00:23:02,829
+Şimdi web protokolünden bahsederken
+
+268
+00:23:02,829 --> 00:23:07,829
+en çok karşınıza çıkan iki tane metot
+
+269
+00:23:07,829 --> 00:23:09,829
+get ve post metodu.
+
+270
+00:23:09,829 --> 00:23:12,829
+Get, var olan bir şeyi var olduğu şekliyle
+
+271
+00:23:12,829 --> 00:23:16,829
+Server'da bulunduğu şekliyle almak için kullanılıyor.
+
+272
+00:23:16,829 --> 00:23:18,829
+Post ise
+
+273
+00:23:18,829 --> 00:23:28,650
+bana bu resursu oluşturup gönderebilir misin demek.
+
+274
+00:23:28,650 --> 00:23:31,650
+Aradaki fark şu.
+
+275
+00:23:31,650 --> 00:23:36,950
+Get'te body gönderemiyoruz ya
+
+276
+00:23:36,950 --> 00:23:38,950
+zaten anlamı yok.
+
+277
+00:23:38,950 --> 00:23:39,950
+Yani get neye denk düşüyor?
+
+278
+00:23:39,950 --> 00:23:40,950
+Bir file açtım okuyorum.
+
+279
+00:23:40,950 --> 00:23:42,950
+File açtım okurken okuma
+
+280
+00:23:42,950 --> 00:23:48,950
+f read'e al şu veriyi de yanımda kullan gibi bir şey göndermemin anlamı olamaz.
+
+281
+00:23:48,950 --> 00:23:52,950
+Get read'e denk düştüğü için body kısmı boş.
+
+282
+00:23:53,950 --> 00:23:55,950
+Post'ta ise
+
+283
+00:23:55,950 --> 00:24:01,950
+oluşturulacak olan içeriği şekillendirmek adına parametre aktarabiliyorum.
+
+284
+00:24:01,950 --> 00:24:06,950
+Şimdi bu işin güzel tarafı
+
+285
+00:24:06,950 --> 00:24:08,950
+bu sayede
+
+286
+00:24:08,950 --> 00:24:15,950
+arka tarafta ek bir aksiyon tetikleyebiliyorum.
+
+287
+00:24:15,950 --> 00:24:16,950
+Çünkü neden?
+
+288
+00:24:16,950 --> 00:24:20,950
+Genel parametreleri işlemem lazım.
+
+289
+00:24:20,950 --> 00:24:22,950
+Ona göre dinamik bir içerik oluşturmam lazım.
+
+290
+00:24:22,950 --> 00:24:25,950
+Ve bunu geri döndürmem lazım.
+
+291
+00:24:25,950 --> 00:24:29,950
+Bunun haricinde put, patch ve delete metotları da var.
+
+292
+00:24:29,950 --> 00:24:35,950
+Put, var olan bir içeriğin değiştirilmesi.
+
+293
+00:24:35,950 --> 00:24:39,950
+Yani onu overwrite ediyoruz.
+
+294
+00:24:39,950 --> 00:24:41,950
+Orada bir dosya var mesela.
+
+295
+00:24:41,950 --> 00:24:44,950
+O dosyayı al bununla değiştir.
+
+296
+00:24:44,950 --> 00:24:48,950
+Bir file'ı karşı tarafa upload etmek
+
+297
+00:24:48,950 --> 00:24:51,950
+veya server'a yükleme yapıyoruz ya
+
+298
+00:24:51,950 --> 00:24:56,950
+upload onu gerçekleştirirken kullanılabilecek metotlardan biri.
+
+299
+00:24:56,950 --> 00:24:59,950
+Ama bunu post ile de yapabiliyoruz.
+
+300
+00:24:59,950 --> 00:25:06,710
+Patch, karşı tarafta var olan bir kaynağın
+
+301
+00:25:06,710 --> 00:25:09,710
+belirli bir kısmına değiştirilmesi.
+
+302
+00:25:09,710 --> 00:25:12,710
+Delete de bunun silinmesi.
+
+303
+00:25:12,710 --> 00:25:19,369
+Şimdi bu konuşmalarımızdan anlayacağımız üzere
+
+304
+00:25:19,369 --> 00:25:21,369
+get metodunun
+
+305
+00:25:21,369 --> 00:25:26,369
+server'da herhangi bir değişiklik yapmaması gerekiyor.
+
+306
+00:25:26,369 --> 00:25:29,650
+Bir soru geldi galiba.
+
+307
+00:25:29,650 --> 00:25:32,650
+Bir saniye onu cevaplamak için.
+
+308
+00:25:32,650 --> 00:25:34,650
+Nereden? Şuradan mı?
+
+309
+00:25:34,650 --> 00:25:36,650
+Neymiş soruyu da görmedim şu anda.
+
+310
+00:25:36,650 --> 00:25:42,490
+Bunu söyledim ya işte [öğrenci].
+
+311
+00:25:42,490 --> 00:25:54,910
+Get metodunun server'da değişiklik yapmaması lazım.
+
+312
+00:25:54,910 --> 00:25:56,910
+Server'ın durumunda.
+
+313
+00:25:56,910 --> 00:26:03,240
+Her zamanki bağlantımı kullanıyorum.
+
+314
+00:26:03,240 --> 00:26:08,240
+Ama internette sıkıntı varsa ona bir şey diyemeyeceğim.
+
+315
+00:26:08,240 --> 00:26:10,240
+Sizden mi, benden mi yoksa
+
+316
+00:26:10,240 --> 00:26:12,240
+genel olarak
+
+317
+00:26:12,240 --> 00:26:14,240
+ortam damla kaynaklanıyor.
+
+318
+00:26:14,240 --> 00:26:17,240
+İnan o konuda en ufak bir bilgim yok.
+
+319
+00:26:17,240 --> 00:26:22,099
+Bu konuda yapabileceğim de bir şey yok maalesef.
+
+320
+00:26:22,099 --> 00:26:26,099
+Çok kesintili veyahut da anlaşılmaz hale gelirse
+
+321
+00:26:26,099 --> 00:26:28,099
+uyarırsınız beni, orada dururuz.
+
+322
+00:26:28,099 --> 00:26:30,099
+Biraz bekler, öyle devam ederiz.
+
+323
+00:26:30,099 --> 00:26:37,700
+Yani üzgünüm arkadaşlar.
+
+324
+00:26:37,700 --> 00:26:40,700
+İnternetin genelindeki aktiviteler de
+
+325
+00:26:40,700 --> 00:26:42,700
+her şeyi etkiliyor.
+
+326
+00:26:42,700 --> 00:26:44,700
+Eee
+
+327
+00:26:44,700 --> 00:26:46,700
+Baştan alıyoruz.
+
+328
+00:26:46,700 --> 00:26:50,700
+Get adı üzerinde size anlattığım şekilde
+
+329
+00:26:50,700 --> 00:26:57,700
+Server'da herhangi bir şekilde durum değişikliği yapmaması lazım.
+
+330
+00:26:57,700 --> 00:27:01,700
+Buna sebebiyet vermemesi lazım.
+
+331
+00:27:01,700 --> 00:27:05,700
+Ancak Server implementasyonundan ötürü
+
+332
+00:27:05,700 --> 00:27:12,210
+bazen böyle durumlarla karşılaşabiliyoruz.
+
+333
+00:27:12,210 --> 00:27:15,210
+Şu an günümüzde kullandığımız modern browser'lar
+
+334
+00:27:15,210 --> 00:27:20,210
+işte Mozilla'sı, Safari'si, Chrome'u neyse
+
+335
+00:27:20,210 --> 00:27:25,210
+bunlar put, patch ve delete metotlarını destekliyor.
+
+336
+00:27:25,210 --> 00:27:29,210
+Ama baktığımız zaman isteklerin
+
+337
+00:27:29,210 --> 00:27:33,210
+büyük bir çoğunluğu post ile gerçekleşiyor.
+
+338
+00:27:33,210 --> 00:27:38,210
+Yani özellikle de Server tarafında değişiklik yapacak olan isteklerin.
+
+339
+00:27:38,210 --> 00:27:42,210
+Normalde Server tarafında değişiklik yapacak olan istekleri
+
+340
+00:27:42,210 --> 00:27:44,210
+put, patch ve delete ile duruma göre
+
+341
+00:27:44,210 --> 00:27:48,210
+hangisi uygunsa o şekilde gerçekleştirmen lazım.
+
+342
+00:27:48,210 --> 00:27:52,210
+Ama hepsini öyle veya böyle parametre aktarabildiğim için
+
+343
+00:27:52,210 --> 00:27:56,769
+post ile yapabiliyorum.
+
+344
+00:27:56,769 --> 00:27:59,769
+Hiçbir zaman ama hiçbir zaman
+
+345
+00:27:59,769 --> 00:28:03,769
+parametre aktardığınız durumlarda
+
+346
+00:28:03,769 --> 00:28:07,769
+get kullanmamanız gerekiyor.
+
+347
+00:28:07,769 --> 00:28:11,769
+Parametre aktarıyorsanız mutlaka ve mutlaka
+
+348
+00:28:11,769 --> 00:28:14,769
+Server tarafında bir değişiklik yapacaksanız
+
+349
+00:28:14,769 --> 00:28:16,769
+mutlaka ve mutlaka ne yapmanız lazım?
+
+350
+00:28:16,769 --> 00:28:20,769
+Post yapmanız lazım ki Server tarafında
+
+351
+00:28:20,769 --> 00:28:23,769
+ekstra bir şeyi tetikleyebilin.
+
+352
+00:28:23,769 --> 00:28:26,769
+Ekstra bir proses çalışıp
+
+353
+00:28:26,769 --> 00:28:28,769
+gelen parametreleri kontrol edip
+
+354
+00:28:28,769 --> 00:28:31,769
+ona göre kontenti dinamik olarak oluşturabilsin.
+
+355
+00:28:31,769 --> 00:28:44,779
+Şimdi klasik herhangi bir siteye ilk eriştiğimiz anda
+
+356
+00:28:44,779 --> 00:28:47,779
+olan şey çok basit arkadaşlar.
+
+357
+00:28:47,779 --> 00:28:49,779
+Get isteği oluşturuluyor.
+
+358
+00:28:49,779 --> 00:28:54,779
+Bakın burada Stanford Edu'ya gidilmesi istenmiş.
+
+359
+00:28:54,779 --> 00:28:57,779
+get slash index.html
+
+360
+00:28:57,779 --> 00:29:01,779
+Bu kabul edilmiş standart isimlerden biri.
+
+361
+00:29:01,779 --> 00:29:04,779
+İşte index.html
+
+362
+00:29:04,779 --> 00:29:07,779
+Hatta sadece slash desem bile
+
+363
+00:29:07,779 --> 00:29:10,779
+browser otomatikman onu sonuna ekleyip
+
+364
+00:29:10,779 --> 00:29:12,779
+o şekilde gönderiyor.
+
+365
+00:29:12,779 --> 00:29:14,779
+Bu örnekte olduğu gibi.
+
+366
+00:29:14,779 --> 00:29:17,779
+Bu istek gidiyor karşılığında da
+
+367
+00:29:17,779 --> 00:29:23,339
+html geliyor.
+
+368
+00:29:23,339 --> 00:29:26,339
+Gelen html pars ediliyor.
+
+369
+00:29:26,339 --> 00:29:33,339
+Ve içeriğine bağlı olarak ek istekler oluşturuluyor.
+
+370
+00:29:33,339 --> 00:29:38,339
+Örneğin burada html'in içerisinde
+
+371
+00:29:38,339 --> 00:29:43,339
+img altında usr cpg bir istek var.
+
+372
+00:29:43,339 --> 00:29:45,339
+O zaman o da neyle gerçekleşecek?
+
+373
+00:29:45,339 --> 00:29:47,339
+Get ile gerçekleşecek.
+
+374
+00:29:47,339 --> 00:29:51,339
+Get gidiyor karşılığında resim geliyor.
+
+375
+00:29:51,339 --> 00:29:53,339
+Burada bir cpg istendiği için.
+
+376
+00:29:53,339 --> 00:29:55,339
+Ama bakın
+
+377
+00:29:55,339 --> 00:29:58,339
+eğer gelen html'in içerisinde
+
+378
+00:29:58,339 --> 00:30:02,339
+bağlı olduğumuz sunucu haricinde başka
+
+379
+00:30:02,339 --> 00:30:06,339
+sunuculara da referans varsa
+
+380
+00:30:06,339 --> 00:30:08,339
+o da gerçekleşiyor.
+
+381
+00:30:08,339 --> 00:30:12,220
+Özellikle ve özellikle
+
+382
+00:30:12,220 --> 00:30:16,220
+burada img'in altını çiziyorum.
+
+383
+00:30:16,220 --> 00:30:19,220
+Bir html içerisinde
+
+384
+00:30:19,220 --> 00:30:22,220
+herhangi bir web serverdaki
+
+385
+00:30:22,220 --> 00:30:24,220
+herhangi bir domaindeki bir
+
+386
+00:30:24,220 --> 00:30:28,220
+bir img'e erişmemi engelleyen bir şey yok.
+
+387
+00:30:28,220 --> 00:30:31,470
+Standart bu şekilde.
+
+388
+00:30:31,470 --> 00:30:33,470
+Yani img'lara erişin
+
+389
+00:30:33,470 --> 00:30:36,470
+görüntülere, resimlere erişin
+
+390
+00:30:36,470 --> 00:30:38,470
+otomatikman açık.
+
+391
+00:30:38,470 --> 00:30:40,470
+Bakın burada
+
+392
+00:30:40,470 --> 00:30:43,470
+işte stanford edu örneği ile başladık.
+
+393
+00:30:43,470 --> 00:30:46,470
+Ancak sayfada ne yazıyor şu anda?
+
+394
+00:30:46,470 --> 00:30:49,470
+Example.com'dan usr cpg almışız
+
+395
+00:30:49,470 --> 00:30:52,470
+img klasörünün altından.
+
+396
+00:30:52,470 --> 00:30:54,470
+Ama hemen altında da
+
+397
+00:30:54,470 --> 00:30:57,470
+bank.com'daki img'den
+
+398
+00:30:57,470 --> 00:31:00,470
+usr cpg'i istemişiz.
+
+399
+00:31:00,470 --> 00:31:02,470
+Bu istek de gerçekleşecek.
+
+400
+00:31:02,470 --> 00:31:04,470
+Eğer o sitede
+
+401
+00:31:04,470 --> 00:31:07,470
+o cpg varsa ve
+
+402
+00:31:07,470 --> 00:31:10,470
+standart erişimi açıksa
+
+403
+00:31:10,470 --> 00:31:13,470
+doğrudan bizim sayfamızın içerisinde
+
+404
+00:31:13,470 --> 00:31:15,470
+ilgili alanda gömülü olarak
+
+405
+00:31:15,470 --> 00:31:18,470
+görüntülenecek.
+
+406
+00:31:18,470 --> 00:31:20,470
+Şimdi
+
+407
+00:31:20,470 --> 00:31:23,470
+şu ana kadar window tarafından
+
+408
+00:31:23,470 --> 00:31:25,470
+yani pencere tarafından
+
+409
+00:31:25,470 --> 00:31:27,470
+browser'ın ana görüntüsü tarafından
+
+410
+00:31:27,470 --> 00:31:29,470
+olaya baktık.
+
+411
+00:31:29,470 --> 00:31:31,470
+Yapılan isteklerin
+
+412
+00:31:31,470 --> 00:31:33,470
+sonucu bu
+
+413
+00:31:33,470 --> 00:31:36,470
+ana pencerenin içine yüklendi.
+
+414
+00:31:36,470 --> 00:31:39,470
+Bu derste window
+
+415
+00:31:39,470 --> 00:31:41,470
+veya windows terimini
+
+416
+00:31:41,470 --> 00:31:43,470
+kullanacağız ancak
+
+417
+00:31:43,470 --> 00:31:45,470
+bunu lütfen işletim sistemi
+
+418
+00:31:45,470 --> 00:31:47,470
+olan windows ile
+
+419
+00:31:47,470 --> 00:31:53,279
+karıştırmayalım.
+
+420
+00:31:53,279 --> 00:31:55,279
+Yaptığımız isteklerle
+
+421
+00:31:55,279 --> 00:31:57,279
+az önceki gibi bir
+
+422
+00:31:57,279 --> 00:32:01,299
+web sitesinden
+
+423
+00:32:01,299 --> 00:32:03,299
+veya başka web sitelerinden
+
+424
+00:32:03,299 --> 00:32:05,299
+kaynakları
+
+425
+00:32:05,299 --> 00:32:08,299
+tek bir pencerenin içerisine
+
+426
+00:32:08,299 --> 00:32:10,299
+yükleyebildiğimiz gibi
+
+427
+00:32:10,299 --> 00:32:13,700
+frame veya iframe yapılarının
+
+428
+00:32:13,700 --> 00:32:15,700
+içerisinden de yükleyebiliyoruz.
+
+429
+00:32:15,700 --> 00:32:17,700
+Frame
+
+430
+00:32:17,700 --> 00:32:19,700
+rigid diyor yani
+
+431
+00:32:19,700 --> 00:32:21,700
+katı, boyutları değişmez
+
+432
+00:32:21,700 --> 00:32:23,700
+diye düşünün ve görünebilir bir
+
+433
+00:32:23,700 --> 00:32:25,700
+bölüm.
+
+434
+00:32:25,700 --> 00:32:27,700
+Iframe ise
+
+435
+00:32:27,700 --> 00:32:29,700
+browser üzerinde
+
+436
+00:32:29,700 --> 00:32:30,700
+o alan üzerinde
+
+437
+00:32:30,700 --> 00:32:32,700
+görünebilir alan üzerinde
+
+438
+00:32:32,700 --> 00:32:34,700
+hareket ettirebildiğimiz
+
+439
+00:32:34,700 --> 00:32:37,700
+bazen görünmez bile yapabildiğimiz
+
+440
+00:32:37,700 --> 00:32:42,980
+floating inline frame
+
+441
+00:32:42,980 --> 00:32:45,980
+yani gömülü inline içine
+
+442
+00:32:45,980 --> 00:32:47,980
+gömmüşüz ve
+
+443
+00:32:47,980 --> 00:32:49,980
+bu herhangi bir yerde olabilir.
+
+444
+00:32:49,980 --> 00:32:53,640
+İç içe geçebilirler.
+
+445
+00:32:53,640 --> 00:32:55,640
+Bakın a.com
+
+446
+00:32:55,640 --> 00:32:57,640
+b.com'u yüklüyor
+
+447
+00:32:57,640 --> 00:32:59,640
+bir frame olarak.
+
+448
+00:32:59,640 --> 00:33:01,640
+Diğer taraftan c.com'u yüklüyor
+
+449
+00:33:01,640 --> 00:33:02,640
+bir frame olarak.
+
+450
+00:33:02,640 --> 00:33:04,640
+c.com da
+
+451
+00:33:04,640 --> 00:33:06,640
+kendi içerisinde d.com'u yüklüyor.
+
+452
+00:33:06,640 --> 00:33:08,640
+Böylece
+
+453
+00:33:08,640 --> 00:33:12,269
+a.com
+
+454
+00:33:12,269 --> 00:33:14,269
+aslında bir yerden sonra
+
+455
+00:33:14,269 --> 00:33:16,269
+siteye
+
+456
+00:33:16,269 --> 00:33:18,269
+neyin yüklendiğinin
+
+457
+00:33:18,269 --> 00:33:20,269
+kontrolünü kaybedebiliyor.
+
+458
+00:33:20,269 --> 00:33:22,269
+Çünkü kendisi
+
+459
+00:33:22,269 --> 00:33:24,269
+c.com'u yüklediğini biliyor ama
+
+460
+00:33:24,269 --> 00:33:26,269
+c.com'un d.com'u
+
+461
+00:33:26,269 --> 00:33:28,269
+yükleyeceğini
+
+462
+00:33:28,269 --> 00:33:30,269
+bilmek zorunda değil veya bunu takip edebilecek
+
+463
+00:33:30,269 --> 00:33:32,269
+mekanizmaları yok.
+
+464
+00:33:32,269 --> 00:33:34,269
+Şu ana kadar
+
+465
+00:33:34,269 --> 00:33:36,269
+olayın statik
+
+466
+00:33:36,269 --> 00:33:38,269
+tarafındaydık.
+
+467
+00:33:38,269 --> 00:33:40,269
+Klasik html
+
+468
+00:33:40,269 --> 00:33:42,269
+orjinal halinde
+
+469
+00:33:42,269 --> 00:33:44,269
+statik olarak oluşturuluyor.
+
+470
+00:33:44,269 --> 00:33:46,269
+Daha sonra
+
+471
+00:33:46,269 --> 00:33:48,269
+server tarafında
+
+472
+00:33:48,269 --> 00:33:50,269
+bir proses çalıştırılarak
+
+473
+00:33:50,269 --> 00:33:54,000
+dinamik olarak şekillendirilen
+
+474
+00:33:54,000 --> 00:33:56,000
+html
+
+475
+00:33:56,000 --> 00:33:58,000
+gönderiliyor.
+
+476
+00:33:58,000 --> 00:34:00,000
+Buna da common gateway interface
+
+477
+00:34:00,000 --> 00:34:02,000
+diyorduk.
+
+478
+00:34:02,000 --> 00:34:04,000
+Serverde bir proses çalıştırıp
+
+479
+00:34:04,000 --> 00:34:06,000
+o prosesin çıktısını
+
+480
+00:34:06,000 --> 00:34:08,000
+doğrudan
+
+481
+00:34:08,000 --> 00:34:10,000
+browser'a göndermek.
+
+482
+00:34:10,000 --> 00:34:12,000
+Böylece browser
+
+483
+00:34:12,000 --> 00:34:14,000
+her iki durumda da içerik
+
+484
+00:34:14,000 --> 00:34:16,000
+ister statik olsun ister
+
+485
+00:34:16,000 --> 00:34:18,000
+server tarafında oluşturulmuş
+
+486
+00:34:18,000 --> 00:34:20,000
+dinamik bir içerik olsun
+
+487
+00:34:20,000 --> 00:34:22,000
+sadece ekranda görüntülemek
+
+488
+00:34:22,000 --> 00:34:24,000
+üzerine
+
+489
+00:34:24,000 --> 00:34:26,000
+kullanılıyordu.
+
+490
+00:34:26,000 --> 00:34:28,000
+Ama daha sonra da
+
+491
+00:34:28,000 --> 00:34:30,000
+browser'lara ne özelliği getirildi?
+
+492
+00:34:30,000 --> 00:34:32,000
+Server'dan gelen
+
+493
+00:34:32,000 --> 00:34:34,000
+javascript
+
+494
+00:34:34,000 --> 00:34:36,000
+dediğimiz dilde yazılmış olan
+
+495
+00:34:36,000 --> 00:34:38,000
+scriptleri
+
+496
+00:34:38,000 --> 00:34:40,000
+interpret etme, anlama ve
+
+497
+00:34:40,000 --> 00:34:42,000
+onları çalıştırma özelliği.
+
+498
+00:34:42,000 --> 00:34:44,000
+Bakın şurada bir örnek verilmiş
+
+499
+00:34:44,000 --> 00:34:46,000
+bir buton tanımlanıyor
+
+500
+00:34:46,000 --> 00:34:48,000
+html butonu tanımlanıyor
+
+501
+00:34:48,000 --> 00:34:50,000
+butonun etiketi
+
+502
+00:34:50,000 --> 00:34:52,000
+click me to display
+
+503
+00:34:52,000 --> 00:34:54,000
+date and time. Ancak
+
+504
+00:34:54,000 --> 00:34:56,000
+butona kliklendiğinde gerçekleşecek
+
+505
+00:34:56,000 --> 00:34:58,000
+olan şey bir javascript
+
+506
+00:34:58,000 --> 00:35:00,000
+alert. Bastığımız zaman
+
+507
+00:35:00,000 --> 00:35:02,000
+lokalde browser'daki
+
+508
+00:35:02,000 --> 00:35:04,000
+tarihi gösteriyor.
+
+509
+00:35:04,000 --> 00:35:06,000
+Ve bunu
+
+510
+00:35:06,000 --> 00:35:08,000
+çok farklı bölgelerde çalıştıracak
+
+511
+00:35:08,000 --> 00:35:10,000
+olursanız dünyanın çok farklı yerlerinde
+
+512
+00:35:10,000 --> 00:35:12,000
+her bir yerde
+
+513
+00:35:12,000 --> 00:35:14,000
+farklı bir sonuç çıkacak. Çünkü
+
+514
+00:35:14,000 --> 00:35:16,000
+neden? Bundan zaman dilimine göre
+
+515
+00:35:16,000 --> 00:35:18,000
+lokaldeki saat neyse o gösterilecek.
+
+516
+00:35:18,000 --> 00:35:20,000
+Yani buradaki date fonksiyonu
+
+517
+00:35:20,000 --> 00:35:22,000
+server'da çalışmayacak
+
+518
+00:35:22,000 --> 00:35:24,000
+date fonksiyonu nerede çalışacak?
+
+519
+00:35:24,000 --> 00:35:26,000
+Lokalde browser'da çalışacak.
+
+520
+00:35:26,000 --> 00:35:28,000
+Javascript'in özelliği
+
+521
+00:35:28,000 --> 00:35:30,000
+ek
+
+522
+00:35:30,000 --> 00:35:32,000
+http requestleri yapabilmesi
+
+523
+00:35:34,000 --> 00:35:36,000
+gelmiş olan
+
+524
+00:35:36,000 --> 00:35:38,000
+sayfa bilgisini
+
+525
+00:35:38,000 --> 00:35:40,000
+değiştirebilmesi,
+
+526
+00:35:40,000 --> 00:35:42,000
+şekillendirebilmesi
+
+527
+00:35:42,000 --> 00:35:44,000
+ve daha da ötesi
+
+528
+00:35:44,000 --> 00:35:46,000
+lokaldeki donanıma
+
+529
+00:35:46,000 --> 00:35:48,000
+kameraya,
+
+530
+00:35:48,000 --> 00:35:50,000
+mikrofona, diske
+
+531
+00:35:50,000 --> 00:35:52,000
+bunların
+
+532
+00:35:52,000 --> 00:35:54,000
+hepsine erişebiliyor olması.
+
+533
+00:35:54,000 --> 00:35:56,000
+Bu açıdan javascript
+
+534
+00:35:56,000 --> 00:35:58,000
+çok güçlü
+
+535
+00:35:58,000 --> 00:36:02,019
+bir yapı ve
+
+536
+00:36:02,019 --> 00:36:04,019
+bu gücünden ötürü de
+
+537
+00:36:04,019 --> 00:36:06,019
+eğer onu bir
+
+538
+00:36:06,019 --> 00:36:08,019
+izolasyon yapısı içerisinde
+
+539
+00:36:08,019 --> 00:36:10,019
+daha önceden öğrendiğimiz şekilde
+
+540
+00:36:10,019 --> 00:36:12,019
+belirli kurallarla kısıtlanmış
+
+541
+00:36:12,019 --> 00:36:14,019
+ve nasıl
+
+542
+00:36:14,019 --> 00:36:16,019
+etkileşeceği tariflenmiş bir
+
+543
+00:36:16,019 --> 00:36:18,019
+izolasyon yapısı içerisinde
+
+544
+00:36:18,019 --> 00:36:20,019
+çalıştırmazsak çok ciddi
+
+545
+00:36:20,019 --> 00:36:22,019
+güvenlik açıkları
+
+546
+00:36:22,019 --> 00:36:24,019
+ve sonrasında da
+
+547
+00:36:24,019 --> 00:36:26,019
+güvenlik saldırıları gerçekleşebilir.
+
+548
+00:36:26,019 --> 00:36:30,349
+Browser'da
+
+549
+00:36:30,349 --> 00:36:32,349
+ekrana yansıtılan
+
+550
+00:36:32,349 --> 00:36:34,349
+üzerinde işlem yapılan
+
+551
+00:36:34,349 --> 00:36:40,190
+bir objekt var.
+
+552
+00:36:40,190 --> 00:36:42,190
+Buna ne diyoruz?
+
+553
+00:36:42,190 --> 00:36:44,190
+Document object diyoruz.
+
+554
+00:36:44,190 --> 00:36:46,190
+Ve bu
+
+555
+00:36:46,190 --> 00:36:48,190
+objektinde yapısına
+
+556
+00:36:48,190 --> 00:36:50,190
+Document Object Model ismini
+
+557
+00:36:50,190 --> 00:36:52,190
+veriyoruz. Bakın işte
+
+558
+00:36:52,190 --> 00:36:54,190
+document en tepede
+
+559
+00:36:54,190 --> 00:36:56,190
+html var, html içerisinde
+
+560
+00:36:56,190 --> 00:36:58,190
+head var, body var
+
+561
+00:36:58,190 --> 00:37:00,190
+onların da alt parçaları var.
+
+562
+00:37:00,190 --> 00:37:03,469
+Document'ı
+
+563
+00:37:03,469 --> 00:37:05,469
+ya statik olarak
+
+564
+00:37:05,469 --> 00:37:07,469
+server'dan gelen
+
+565
+00:37:07,469 --> 00:37:09,469
+içerik belirliyor
+
+566
+00:37:09,469 --> 00:37:11,469
+ya server'da
+
+567
+00:37:11,469 --> 00:37:13,469
+dinamik olarak oluşturulup
+
+568
+00:37:13,469 --> 00:37:15,469
+push edilen
+
+569
+00:37:15,469 --> 00:37:17,469
+içerik belirliyor
+
+570
+00:37:17,469 --> 00:37:19,469
+ya da lokalde
+
+571
+00:37:19,469 --> 00:37:22,750
+browser'da çalışan
+
+572
+00:37:22,750 --> 00:37:24,750
+javascript belirliyor.
+
+573
+00:37:24,750 --> 00:37:26,750
+Bakın şurada script var
+
+574
+00:37:26,750 --> 00:37:28,750
+bir tane paragraf
+
+575
+00:37:28,750 --> 00:37:30,750
+yapılmış, id'si demo
+
+576
+00:37:30,750 --> 00:37:32,750
+verilmiş, onun içeriğine de
+
+577
+00:37:32,750 --> 00:37:34,750
+ne yerleştirilmiş? Tarih
+
+578
+00:37:34,750 --> 00:37:44,659
+yerleştirilmiş. Şimdi öyleyse
+
+579
+00:37:44,659 --> 00:37:46,659
+her browser window'u
+
+580
+00:37:46,659 --> 00:37:48,659
+veya
+
+581
+00:37:48,659 --> 00:37:50,659
+her browser tab'ı diyelim
+
+582
+00:37:50,659 --> 00:37:52,659
+çünkü
+
+583
+00:37:52,659 --> 00:37:54,659
+geçen haftadan öğrendik aslında
+
+584
+00:37:54,659 --> 00:37:56,659
+tab'lar birbirlerinden neydi?
+
+585
+00:37:56,659 --> 00:37:58,659
+Bağımsızdılar değil mi? İzole
+
+586
+00:37:58,659 --> 00:38:00,659
+oluyorlardı.
+
+587
+00:38:00,659 --> 00:38:02,659
+Root noktasından, kök
+
+588
+00:38:02,659 --> 00:38:04,659
+noktasından html'i
+
+589
+00:38:04,659 --> 00:38:14,239
+yüklüyor. Bunu parse
+
+590
+00:38:14,239 --> 00:38:18,030
+ediyor. İmaj varsa
+
+591
+00:38:18,030 --> 00:38:20,030
+ona erişiyor. Cascaded style sheet
+
+592
+00:38:20,030 --> 00:38:22,030
+varsa ona erişiyor. Javascript
+
+593
+00:38:22,030 --> 00:38:24,030
+varsa ona erişiyor. iframe varsa
+
+594
+00:38:24,030 --> 00:38:26,030
+ona erişiyor. Javascript'leri
+
+595
+00:38:26,030 --> 00:38:28,030
+run ediyor. Javascript'ler
+
+596
+00:38:28,030 --> 00:38:30,030
+web request'lerinde bulunuyorsa onları
+
+597
+00:38:30,030 --> 00:38:32,030
+gerçekleştiriyor. Diğer taraftan
+
+598
+00:38:32,030 --> 00:38:34,030
+da kullanıcıdan gelen
+
+599
+00:38:34,030 --> 00:38:36,030
+kuşa basma, mouse'la
+
+600
+00:38:36,030 --> 00:38:38,030
+bir alanın üzerine gitme,
+
+601
+00:38:38,030 --> 00:38:40,030
+bir butona basma veya
+
+602
+00:38:40,030 --> 00:38:42,030
+sayfanın yüklenmesi öncesi
+
+603
+00:38:42,030 --> 00:38:44,030
+veya sonrası ya da set
+
+604
+00:38:44,030 --> 00:38:46,030
+edilmiş bir timeout
+
+605
+00:38:46,030 --> 00:38:48,030
+değeri sonrasında
+
+606
+00:38:48,030 --> 00:38:50,030
+belirlenmiş işlemlerin yapılması
+
+607
+00:38:50,030 --> 00:38:52,030
+tarzında
+
+608
+00:38:52,030 --> 00:38:54,030
+aklınıza girebilecek
+
+609
+00:38:54,030 --> 00:38:56,030
+her türlü çalışmayı
+
+610
+00:38:56,030 --> 00:38:58,030
+gerçekleştiriyor. Sonuçta
+
+611
+00:38:58,030 --> 00:39:00,030
+browser her haliyle
+
+612
+00:39:00,030 --> 00:39:02,030
+şu an günümüzün
+
+613
+00:39:02,030 --> 00:39:04,030
+browser'ları her haliyle
+
+614
+00:39:04,030 --> 00:39:06,030
+aslında bir runtime
+
+615
+00:39:06,030 --> 00:39:09,409
+environment sunuyor.
+
+616
+00:39:09,409 --> 00:39:11,409
+Ve bu runtime environment'ın da
+
+617
+00:39:11,409 --> 00:39:13,409
+bir numaralı
+
+618
+00:39:13,409 --> 00:39:15,409
+dinamik olarak çalışan
+
+619
+00:39:15,409 --> 00:39:17,409
+aktif olarak çalışan
+
+620
+00:39:17,409 --> 00:39:19,409
+aktörü Javascript.
+
+621
+00:39:19,409 --> 00:39:23,650
+2015 yılında
+
+622
+00:39:23,650 --> 00:39:25,650
+2015 yılında
+
+623
+00:39:25,650 --> 00:39:27,650
+HTTP protokolünde
+
+624
+00:39:27,650 --> 00:39:29,650
+güncelleme
+
+625
+00:39:29,650 --> 00:39:34,019
+yapılıyor. Bu
+
+626
+00:39:34,019 --> 00:39:36,019
+Google'ın
+
+627
+00:39:36,019 --> 00:39:38,019
+daha önceden başlatmış olduğu
+
+628
+00:39:38,019 --> 00:39:40,019
+SPDY
+
+629
+00:39:40,019 --> 00:39:42,019
+protokolünü
+
+630
+00:39:42,019 --> 00:39:44,019
+temel alarak
+
+631
+00:39:44,019 --> 00:39:46,019
+oluşturulan bir protokol.
+
+632
+00:39:46,019 --> 00:39:48,019
+Google zaman içerisinde
+
+633
+00:39:48,019 --> 00:39:50,019
+eşitildiği bir protokolünde
+
+634
+00:39:50,019 --> 00:39:52,019
+1-1, 1-0 protokolünde
+
+635
+00:39:52,019 --> 00:39:54,019
+client'lar 1-1
+
+636
+00:39:54,019 --> 00:39:56,019
+çalışıyorlar ama server'lar
+
+637
+00:39:56,019 --> 00:39:58,019
+1-0 çalışıyor.
+
+638
+00:39:58,019 --> 00:40:00,019
+Olan eksikleri
+
+639
+00:40:00,019 --> 00:40:02,019
+ortaya koyarak
+
+640
+00:40:02,019 --> 00:40:04,019
+mevcut client server
+
+641
+00:40:04,019 --> 00:40:06,019
+uygulamalarını değiştirmeden
+
+642
+00:40:06,019 --> 00:40:08,019
+client veya
+
+643
+00:40:08,019 --> 00:40:10,019
+server tarafında
+
+644
+00:40:10,019 --> 00:40:12,019
+çok büyük bir farklılık
+
+645
+00:40:12,019 --> 00:40:14,019
+oluşturmadan
+
+646
+00:40:14,019 --> 00:40:16,019
+aradaki
+
+647
+00:40:16,019 --> 00:40:18,019
+iletişimi
+
+648
+00:40:18,019 --> 00:40:20,019
+haberleşmeyi hızlandırmanın
+
+649
+00:40:20,019 --> 00:40:22,019
+ve daha aktif hale getirmenin
+
+650
+00:40:22,019 --> 00:40:24,019
+yolları üzerinde çalışıyor.
+
+651
+00:40:24,019 --> 00:40:26,019
+2015'te de genel
+
+652
+00:40:26,019 --> 00:40:28,019
+internet community tarafından bu
+
+653
+00:40:28,019 --> 00:40:30,019
+HTTP 2 olarak kabul
+
+654
+00:40:30,019 --> 00:40:34,510
+görüyor. En temel
+
+655
+00:40:34,510 --> 00:40:36,510
+farkı
+
+656
+00:40:36,510 --> 00:40:38,510
+klasik HTTP'de
+
+657
+00:40:38,510 --> 00:40:40,510
+HTTP
+
+658
+00:40:40,510 --> 00:40:42,510
+protokolünde
+
+659
+00:40:42,510 --> 00:40:44,510
+bir request yapılır.
+
+660
+00:40:44,510 --> 00:40:46,510
+Onun sonucu beklenir.
+
+661
+00:40:46,510 --> 00:40:48,510
+Sonra
+
+662
+00:40:48,510 --> 00:40:50,510
+request response'lar
+
+663
+00:40:50,510 --> 00:40:52,510
+sequential'dır.
+
+664
+00:40:52,510 --> 00:40:54,510
+Arka arkaya, sıralı olarak
+
+665
+00:40:54,510 --> 00:40:56,510
+gerçekleşir. Ancak
+
+666
+00:40:56,510 --> 00:40:58,510
+HTTP 2 aynı
+
+667
+00:40:58,510 --> 00:41:00,510
+anda birden fazla
+
+668
+00:41:00,510 --> 00:41:02,510
+request
+
+669
+00:41:02,510 --> 00:41:04,510
+yapılmasına izin veriyor.
+
+670
+00:41:04,510 --> 00:41:06,510
+Özellikle de aynı
+
+671
+00:41:06,510 --> 00:41:08,510
+sunucuya yapılıyorsa eğer
+
+672
+00:41:08,510 --> 00:41:10,510
+tek bir bağlantı
+
+673
+00:41:10,510 --> 00:41:12,510
+üzerinden bunun
+
+674
+00:41:12,510 --> 00:41:14,510
+iletişimi sağlıyor. Böylece
+
+675
+00:41:14,510 --> 00:41:16,510
+her bir istek için
+
+676
+00:41:16,510 --> 00:41:18,510
+sunucuya
+
+677
+00:41:18,510 --> 00:41:20,510
+ek bir bağlantı yapılmasına gerek kalmıyor.
+
+678
+00:41:20,510 --> 00:41:22,510
+İkinci madde
+
+679
+00:41:22,510 --> 00:41:24,510
+Multiplexing Multiple Requests Over One
+
+680
+00:41:24,510 --> 00:41:26,510
+TCP Convection. Bu önemli bir şey.
+
+681
+00:41:26,510 --> 00:41:28,510
+Yoksa düşünsenize bir sayfada 100 tane
+
+682
+00:41:28,510 --> 00:41:30,510
+parça var. 100 tanesi için bir sunucuya
+
+683
+00:41:30,510 --> 00:41:32,510
+100 bağlantı açacak olursanız eğer
+
+684
+00:41:32,510 --> 00:41:34,510
+o sunucuya da
+
+685
+00:41:34,510 --> 00:41:36,510
+aynı anda işte yüzlerce
+
+686
+00:41:36,510 --> 00:41:38,510
+kişi gelecek olursa zaten
+
+687
+00:41:38,510 --> 00:41:40,510
+aynı anda desteklenen
+
+688
+00:41:40,510 --> 00:41:42,510
+TCP bağlantısı sayılırsa
+
+689
+00:41:42,510 --> 00:41:44,510
+bir sını aşacağınız için
+
+690
+00:41:44,510 --> 00:41:46,510
+tıkanıp kalacaksınız.
+
+691
+00:41:46,510 --> 00:41:48,510
+Bu önemli bir şey.
+
+692
+00:41:48,510 --> 00:41:50,510
+Diğer taraftan header'ın
+
+693
+00:41:50,510 --> 00:41:52,510
+tamamen tekst olduğunu biliyoruz.
+
+694
+00:41:52,510 --> 00:41:54,510
+HTML'in tamamen tekst olduğunu
+
+695
+00:41:54,510 --> 00:41:56,510
+biliyoruz.
+
+696
+00:41:56,510 --> 00:41:58,510
+HTML tarafında içeriğin
+
+697
+00:41:58,510 --> 00:42:00,510
+sıkıştırılarak gönderilmesi
+
+698
+00:42:00,510 --> 00:42:02,510
+daha önceden uygulanan bir şey.
+
+699
+00:42:02,510 --> 00:42:04,510
+Ancak HTTP 2
+
+700
+00:42:04,510 --> 00:42:06,510
+header tarafında da
+
+701
+00:42:06,510 --> 00:42:08,510
+sıkıştırmaya izin veriyor. Böylece header
+
+702
+00:42:08,510 --> 00:42:10,510
+daha ufak hale geliyor.
+
+703
+00:42:10,510 --> 00:42:12,510
+Önemli bir kazanç sağlanıyor.
+
+704
+00:42:12,510 --> 00:42:14,510
+Tekst ve tekst tabanlı olduğu için
+
+705
+00:42:14,510 --> 00:42:16,510
+sıkıştırmaya çok uygun.
+
+706
+00:42:16,510 --> 00:42:18,510
+Diğer önemli
+
+707
+00:42:18,510 --> 00:42:20,510
+böyle büyük ciddi
+
+708
+00:42:20,510 --> 00:42:22,510
+değişikliklerden bir tanesi de
+
+709
+00:42:22,510 --> 00:42:24,510
+server push.
+
+710
+00:42:24,510 --> 00:42:26,510
+Normalde HTTP
+
+711
+00:42:26,510 --> 00:42:28,510
+2 protokolüne kadar
+
+712
+00:42:28,510 --> 00:42:30,510
+bir server'ın kendisine
+
+713
+00:42:30,510 --> 00:42:32,510
+request gelmeden
+
+714
+00:42:32,510 --> 00:42:34,510
+client'a response döndürmesi mümkün
+
+715
+00:42:34,510 --> 00:42:36,510
+değil. Çünkü protokol bunun üzerine
+
+716
+00:42:36,510 --> 00:42:38,510
+kurulu request response. Ancak
+
+717
+00:42:38,510 --> 00:42:40,510
+HTTP 2 ile beraber
+
+718
+00:42:40,510 --> 00:42:42,510
+arada açık
+
+719
+00:42:42,510 --> 00:42:44,510
+tutulan bağlantı var ya, TCP
+
+720
+00:42:44,510 --> 00:42:46,510
+bağlantısı uzun sürede
+
+721
+00:42:46,510 --> 00:42:48,510
+açık tutuluyor ya, o bağlantı üzerinden
+
+722
+00:42:50,510 --> 00:42:52,510
+server client'a
+
+723
+00:42:54,510 --> 00:42:56,510
+push yapabiliyor. Yani
+
+724
+00:42:56,510 --> 00:42:58,510
+content'i client'tan
+
+725
+00:42:58,510 --> 00:43:00,510
+bir şey gelmese bile
+
+726
+00:43:00,510 --> 00:43:02,510
+gönderebiliyor. Bu da önemli bir
+
+727
+00:43:02,510 --> 00:43:04,510
+değişiklik. Şimdi
+
+728
+00:43:04,510 --> 00:43:06,510
+ne dedik?
+
+729
+00:43:06,510 --> 00:43:08,510
+HTTP
+
+730
+00:43:08,510 --> 00:43:10,510
+stateless. Ancak
+
+731
+00:43:10,510 --> 00:43:12,510
+HTTP
+
+732
+00:43:12,510 --> 00:43:14,510
+üzerinde
+
+733
+00:43:14,510 --> 00:43:16,510
+uç kullanıcıların
+
+734
+00:43:16,510 --> 00:43:18,510
+lokaldeymiş gibi çalışmasına
+
+735
+00:43:18,510 --> 00:43:20,510
+izin verecek tarzda
+
+736
+00:43:20,510 --> 00:43:22,510
+uygulamalar gerçekleştirmek istiyorsak
+
+737
+00:43:22,510 --> 00:43:24,510
+HTTP'yi
+
+738
+00:43:24,510 --> 00:43:26,510
+bir şekilde stateful hale
+
+739
+00:43:26,510 --> 00:43:28,510
+dönüştürmemiz lazım. Yani bir
+
+740
+00:43:28,510 --> 00:43:30,510
+oturum mantığı getirmemiz lazım.
+
+741
+00:43:30,510 --> 00:43:32,510
+Session tariflememiz lazım.
+
+742
+00:43:32,510 --> 00:43:34,510
+Session'da da
+
+743
+00:43:34,510 --> 00:43:36,510
+Session'ların sağlanmasında
+
+744
+00:43:36,510 --> 00:43:38,510
+da
+
+745
+00:43:38,510 --> 00:43:40,510
+ön plana neler çıkıyor?
+
+746
+00:43:40,510 --> 00:43:42,510
+Cookie'ler çıkıyor.
+
+747
+00:43:42,510 --> 00:43:44,510
+Cookie ne demek?
+
+748
+00:43:44,510 --> 00:43:50,989
+Çerez ne demek?
+
+749
+00:43:50,989 --> 00:43:52,989
+Çerez
+
+750
+00:43:52,989 --> 00:43:54,989
+bir server'ın
+
+751
+00:43:54,989 --> 00:43:56,989
+browser'a gönderdiği
+
+752
+00:43:56,989 --> 00:43:58,989
+çok da büyük
+
+753
+00:43:58,989 --> 00:44:02,239
+olmayan bir bilgi parçası.
+
+754
+00:44:02,239 --> 00:44:04,239
+Bu server için anlam
+
+755
+00:44:04,239 --> 00:44:06,239
+ifade ediyor ve server
+
+756
+00:44:06,239 --> 00:44:08,239
+bunu o client için
+
+757
+00:44:08,239 --> 00:44:10,239
+spesifik olarak üretiyor.
+
+758
+00:44:10,239 --> 00:44:12,239
+O gelen
+
+759
+00:44:12,239 --> 00:44:14,239
+istek için diyelim daha doğrusu.
+
+760
+00:44:14,239 --> 00:44:16,239
+Ve sonrasında
+
+761
+00:44:16,239 --> 00:44:18,239
+client eğer
+
+762
+00:44:18,239 --> 00:44:20,239
+bu cookie'yi,
+
+763
+00:44:20,239 --> 00:44:24,510
+bu çerezi server'a
+
+764
+00:44:24,510 --> 00:44:26,510
+geri gönderirse
+
+765
+00:44:26,510 --> 00:44:28,510
+server bunu
+
+766
+00:44:28,510 --> 00:44:30,510
+kendi içerisinde tuttuğu veri yapılarında
+
+767
+00:44:30,510 --> 00:44:32,510
+arayıp buluyor ve diyor ki
+
+768
+00:44:32,510 --> 00:44:34,510
+evet
+
+769
+00:44:34,510 --> 00:44:36,510
+bu istek bana daha önceki şu
+
+770
+00:44:36,510 --> 00:44:38,510
+client'tan geldi. Böylece
+
+771
+00:44:38,510 --> 00:44:40,510
+kaldığı yerden devam edebiliyor.
+
+772
+00:44:40,510 --> 00:44:42,510
+Neyi sağlamış olduk?
+
+773
+00:44:42,510 --> 00:44:44,510
+İsteklerin
+
+774
+00:44:44,510 --> 00:44:46,510
+devamlılığını, sürekliliğini sağlamış
+
+775
+00:44:46,510 --> 00:44:48,510
+olduk. Yani bir session
+
+776
+00:44:48,510 --> 00:44:50,510
+oluşturduk. Birbirinden
+
+777
+00:44:50,510 --> 00:44:52,510
+bağımsız
+
+778
+00:44:52,510 --> 00:44:56,050
+istekleri cookie
+
+779
+00:44:56,050 --> 00:44:58,050
+kullanarak birbirleriyle
+
+780
+00:44:58,050 --> 00:45:00,050
+ilişkilendirmiş olduk.
+
+781
+00:45:00,050 --> 00:45:02,050
+Cookie'yi oluşturan
+
+782
+00:45:02,050 --> 00:45:04,050
+ve client'a gönderen
+
+783
+00:45:04,050 --> 00:45:06,050
+server.
+
+784
+00:45:06,050 --> 00:45:08,050
+Client
+
+785
+00:45:08,050 --> 00:45:10,050
+server'ın cookie göndermesi için
+
+786
+00:45:10,050 --> 00:45:12,050
+bir şey yapamaz. Ancak
+
+787
+00:45:12,050 --> 00:45:14,050
+server
+
+788
+00:45:14,050 --> 00:45:16,050
+bu şekilde konfigür
+
+789
+00:45:16,050 --> 00:45:18,050
+edildiyse
+
+790
+00:45:18,050 --> 00:45:20,050
+server'daki uygulama bu şekilde
+
+791
+00:45:20,050 --> 00:45:22,050
+çalışıyorsa o zaman o
+
+792
+00:45:22,050 --> 00:45:24,050
+kendisine gelen
+
+793
+00:45:24,050 --> 00:45:26,050
+bağlanan client'lara bu cookie'yi gönderir.
+
+794
+00:45:26,050 --> 00:45:28,050
+Browser'lara bu cookie'yi gönderir.
+
+795
+00:45:28,050 --> 00:45:30,050
+Browser'da da ayar var.
+
+796
+00:45:30,050 --> 00:45:32,050
+Browser'da da
+
+797
+00:45:32,050 --> 00:45:34,050
+onun bir
+
+798
+00:45:34,050 --> 00:45:36,050
+kontrol
+
+799
+00:45:36,050 --> 00:45:38,050
+mekanizması var.
+
+800
+00:45:38,050 --> 00:45:40,050
+Gelen cookie'leri saklasın mı
+
+801
+00:45:40,050 --> 00:45:42,050
+sakladığı
+
+802
+00:45:42,050 --> 00:45:44,050
+cookie'leri yaptığı
+
+803
+00:45:44,050 --> 00:45:46,050
+isteklerde
+
+804
+00:45:46,050 --> 00:45:48,050
+göndersin.
+
+805
+00:45:48,050 --> 00:45:50,050
+Bu ya hep ya hiç.
+
+806
+00:45:50,050 --> 00:45:52,050
+Gönderiyorsa gönderecek. Yani bazısına
+
+807
+00:45:52,050 --> 00:45:54,050
+gönderdim bazısına göndermedim şeklinde
+
+808
+00:45:54,050 --> 00:45:56,050
+çalışmıyor.
+
+809
+00:45:56,050 --> 00:45:58,050
+Cookie'ler sonuçta temel olarak
+
+810
+00:45:58,050 --> 00:46:00,050
+session management için kullanılıyor.
+
+811
+00:46:00,050 --> 00:46:02,050
+İşte bir login bilgisinin
+
+812
+00:46:02,050 --> 00:46:04,050
+saklanması, bir
+
+813
+00:46:04,050 --> 00:46:06,050
+alışveriş sepetinin
+
+814
+00:46:06,050 --> 00:46:08,050
+tutulması, oyundaki
+
+815
+00:46:08,050 --> 00:46:10,050
+elde edilen
+
+816
+00:46:10,050 --> 00:46:12,050
+skorların tutulması ve benzer
+
+817
+00:46:12,050 --> 00:46:14,050
+şeyler. Personalization
+
+818
+00:46:14,050 --> 00:46:16,050
+yani bir sayfanın
+
+819
+00:46:16,050 --> 00:46:18,050
+benim ihtiyaçlarıma veya sizin
+
+820
+00:46:18,050 --> 00:46:20,050
+ihtiyaçlarınıza bağlı olarak farklı
+
+821
+00:46:20,050 --> 00:46:22,050
+renk, font şekillerde
+
+822
+00:46:22,050 --> 00:46:24,050
+karşımıza çıkması için. Ve özellikle
+
+823
+00:46:24,050 --> 00:46:26,050
+ticari olarak baktığımızda
+
+824
+00:46:26,050 --> 00:46:28,050
+kullanıcıların izlenmesi
+
+825
+00:46:28,050 --> 00:46:30,050
+ve o kullanıcıların davranışlarına
+
+826
+00:46:30,050 --> 00:46:32,050
+uygun olarak reklam
+
+827
+00:46:32,050 --> 00:46:34,050
+üretilebilmesi için
+
+828
+00:46:34,050 --> 00:46:37,869
+kullanılıyor. Bakın burada
+
+829
+00:46:37,869 --> 00:46:39,869
+bir server
+
+830
+00:46:39,869 --> 00:46:41,869
+cookie
+
+831
+00:46:41,869 --> 00:46:43,869
+göndermeye karar vermiş.
+
+832
+00:46:43,869 --> 00:46:45,869
+Header'a yerleştiriliyor bu arada
+
+833
+00:46:45,869 --> 00:46:47,869
+cookie. Set cookie. Cookie'nin
+
+834
+00:46:47,869 --> 00:46:49,869
+adı eşittir cookie'nin değeri.
+
+835
+00:46:49,869 --> 00:46:51,869
+İki tane cookie var burada.
+
+836
+00:46:51,869 --> 00:46:53,869
+Tracking ID ve User ID. Değerdir de
+
+837
+00:46:53,869 --> 00:46:55,869
+yanımda.
+
+838
+00:46:55,869 --> 00:46:57,869
+Content'ten bağımsız. Bakın
+
+839
+00:46:57,869 --> 00:46:59,869
+az önce de content 2543
+
+840
+00:46:59,869 --> 00:47:01,869
+byte'tı. Şu anda da
+
+841
+00:47:01,869 --> 00:47:03,869
+content 2543 byte. Çünkü
+
+842
+00:47:03,869 --> 00:47:05,869
+cookie nerede alınıp veriliyor?
+
+843
+00:47:05,869 --> 00:47:07,869
+Header kısmında alınıp veriliyor.
+
+844
+00:47:07,869 --> 00:47:09,869
+Body kısmında değil.
+
+845
+00:47:09,869 --> 00:47:13,380
+Sonrasında browser
+
+846
+00:47:13,380 --> 00:47:15,380
+aynı server'a
+
+847
+00:47:15,380 --> 00:47:17,380
+aynı server'a
+
+848
+00:47:17,380 --> 00:47:19,380
+başka bir server'a değil, birazdan
+
+849
+00:47:19,380 --> 00:47:21,380
+ayrıntılarını daha çok göreceğiz.
+
+850
+00:47:21,380 --> 00:47:23,380
+Aynı server'a bir başka istek
+
+851
+00:47:23,380 --> 00:47:25,380
+gönderirken o server'dan
+
+852
+00:47:25,380 --> 00:47:27,380
+kendisine gelmiş olan bütün
+
+853
+00:47:27,380 --> 00:47:29,380
+cookie'leri geri gönderiyor.
+
+854
+00:47:29,380 --> 00:47:31,380
+Hem tracking ID hem user ID.
+
+855
+00:47:31,380 --> 00:47:33,380
+Seçerek değil.
+
+856
+00:47:33,380 --> 00:47:35,380
+Kritere uyan ne kadar cookie varsa
+
+857
+00:47:35,380 --> 00:47:39,010
+hepsini göndermesi lazım.
+
+858
+00:47:39,010 --> 00:47:41,010
+Şimdi bakın burada
+
+859
+00:47:41,010 --> 00:47:43,010
+cookie alanı boş browser'da.
+
+860
+00:47:43,010 --> 00:47:45,010
+Login formu istiyor.
+
+861
+00:47:45,010 --> 00:47:47,010
+Cookie alanı
+
+862
+00:47:47,010 --> 00:47:49,010
+boş. Login formu geliyor.
+
+863
+00:47:49,010 --> 00:47:56,739
+Burada user ID ve
+
+864
+00:47:56,739 --> 00:47:58,739
+username ve password gönderiliyor.
+
+865
+00:47:58,739 --> 00:48:00,739
+Cookie alanı hala daha boş.
+
+866
+00:48:00,739 --> 00:48:04,739
+Server otantiki ediyor ve
+
+867
+00:48:04,739 --> 00:48:06,739
+dikkat edin cookie gönderiyor.
+
+868
+00:48:06,739 --> 00:48:08,739
+Cookie'nin adı ne? Session. Değerine
+
+869
+00:48:08,739 --> 00:48:10,739
+yanında yazan şey.
+
+870
+00:48:10,739 --> 00:48:12,739
+Şimdi bu browser tarafından
+
+871
+00:48:12,739 --> 00:48:14,739
+saklanıyor ve bundan sonra
+
+872
+00:48:14,739 --> 00:48:16,739
+yapılan bütün
+
+873
+00:48:16,739 --> 00:48:18,739
+isteklerde
+
+874
+00:48:18,739 --> 00:48:20,739
+account'a erişmek istemiş.
+
+875
+00:48:20,739 --> 00:48:22,739
+Get account demiş. Otomatikman
+
+876
+00:48:22,739 --> 00:48:24,739
+Session'ı gönderdi.
+
+877
+00:48:24,739 --> 00:48:26,739
+Image user jpg'ye erişmek istemiş.
+
+878
+00:48:26,739 --> 00:48:28,739
+Otomatikman
+
+879
+00:48:28,739 --> 00:48:30,739
+Session'ı gönderdi. Böyle
+
+880
+00:48:30,739 --> 00:48:32,739
+sadece eğer account
+
+881
+00:48:32,739 --> 00:48:34,739
+alanı
+
+882
+00:48:34,739 --> 00:48:36,739
+server tarafında
+
+883
+00:48:36,739 --> 00:48:38,739
+otantikation
+
+884
+00:48:38,739 --> 00:48:40,739
+kontrolü gerektiren bir
+
+885
+00:48:40,739 --> 00:48:42,739
+alansa veya image user jpg
+
+886
+00:48:42,739 --> 00:48:44,739
+böyle bir alansa
+
+887
+00:48:44,739 --> 00:48:46,739
+tekrar otantikation'dan
+
+888
+00:48:46,739 --> 00:48:48,739
+geçilmesine gerek yok. Niye?
+
+889
+00:48:48,739 --> 00:48:50,739
+Zaten otantikation
+
+890
+00:48:50,739 --> 00:48:52,739
+gerçekleşti başarıyla. Onun
+
+891
+00:48:52,739 --> 00:48:54,739
+karşılığında adı Session olan
+
+892
+00:48:54,739 --> 00:48:56,739
+içeriği de şu değer olan bir
+
+893
+00:48:56,739 --> 00:48:58,739
+cookie oluşturuldu ve bu
+
+894
+00:48:58,739 --> 00:49:00,739
+client'a aktarıldı ve
+
+895
+00:49:00,739 --> 00:49:02,739
+biz ne diyoruz? Bu zaten sadece
+
+896
+00:49:02,739 --> 00:49:04,739
+bir client'a aktarıldı. Başka
+
+897
+00:49:04,739 --> 00:49:06,739
+birinin eline geçmesine imkan yok.
+
+898
+00:49:06,739 --> 00:49:08,739
+Ondan ötürü client
+
+899
+00:49:08,739 --> 00:49:10,739
+bunu bana gönderirse ben bilirim ki
+
+900
+00:49:10,739 --> 00:49:12,739
+bu aslında
+
+901
+00:49:12,739 --> 00:49:14,739
+adı zakir olan
+
+902
+00:49:14,739 --> 00:49:16,739
+kullanıcıdır ve
+
+903
+00:49:16,739 --> 00:49:18,739
+başarılı bir şekilde otantik
+
+904
+00:49:18,739 --> 00:49:20,739
+olmuş sisteme bağlanmıştır.
+
+905
+00:49:20,739 --> 00:49:22,739
+Şimdi o zaman demek ki eğer
+
+906
+00:49:22,739 --> 00:49:24,739
+bir şekilde
+
+907
+00:49:24,739 --> 00:49:26,739
+cookie'ler ele geçirilirse
+
+908
+00:49:26,739 --> 00:49:28,739
+özellikle
+
+909
+00:49:28,739 --> 00:49:30,739
+bu tarz otantikation'la alakalı
+
+910
+00:49:30,739 --> 00:49:32,739
+cookie'ler ele geçirilirse
+
+911
+00:49:32,739 --> 00:49:34,739
+bir
+
+912
+00:49:34,739 --> 00:49:36,739
+başkası
+
+913
+00:49:36,739 --> 00:49:38,739
+sizin kullanıcı adınızı
+
+914
+00:49:38,739 --> 00:49:40,739
+şifrenizi bilmese dahi
+
+915
+00:49:40,739 --> 00:49:42,739
+bu bilgilere ihtiyacı
+
+916
+00:49:42,739 --> 00:49:44,739
+yok. Otantikasyon
+
+917
+00:49:44,739 --> 00:49:46,739
+veya otorizasyon sonrasında
+
+918
+00:49:46,739 --> 00:49:48,739
+size gönderilmiş geçerli
+
+919
+00:49:48,739 --> 00:49:50,739
+bir cookie'yi kullanarak
+
+920
+00:49:50,739 --> 00:49:52,739
+sizmiş gibi davranıp
+
+921
+00:49:52,739 --> 00:49:54,739
+o
+
+922
+00:49:54,739 --> 00:49:56,739
+server'da
+
+923
+00:49:56,739 --> 00:49:58,739
+sizin adınıza
+
+924
+00:49:58,739 --> 00:50:00,739
+hoşunuza giden veya gitmeyen işler
+
+925
+00:50:00,739 --> 00:50:02,739
+yapabilir.
+
+926
+00:50:02,739 --> 00:50:04,739
+Cookie'ler her zaman gönderiliyor.
+
+927
+00:50:04,739 --> 00:50:06,739
+Bunu unutmayın.
+
+928
+00:50:06,739 --> 00:50:08,739
+Eğer cookie'lerin gönderilmesini
+
+929
+00:50:08,739 --> 00:50:10,739
+onayladıysak cookie'ler her zaman
+
+930
+00:50:10,739 --> 00:50:12,739
+gönderiliyor. Sonucu
+
+931
+00:50:12,739 --> 00:50:14,739
+iyi olsun, sonucu kötü
+
+932
+00:50:14,739 --> 00:50:16,739
+olsun.
+
+933
+00:50:16,739 --> 00:50:18,739
+Az önce söyledim ya
+
+934
+00:50:18,739 --> 00:50:20,739
+cookie gidiyor ben o server'a
+
+935
+00:50:20,739 --> 00:50:22,739
+ele geçirdiğim bir cookie'yi gönderiyorum.
+
+936
+00:50:22,739 --> 00:50:24,739
+Ben o kişi değilim
+
+937
+00:50:24,739 --> 00:50:26,739
+aslında ama elimde
+
+938
+00:50:26,739 --> 00:50:28,739
+doğru cookie olduğu için
+
+939
+00:50:28,739 --> 00:50:30,739
+server'da bunu onayladığı için
+
+940
+00:50:30,739 --> 00:50:32,739
+ben
+
+941
+00:50:32,739 --> 00:50:34,739
+cookie'sini ele geçirdiğim kişi
+
+942
+00:50:34,739 --> 00:50:36,739
+gibi davranabiliyorum.
+
+943
+00:50:36,739 --> 00:50:38,739
+Bakın burada Los Angeles'ın
+
+944
+00:50:38,739 --> 00:50:40,739
+web sitesinde bir analiz
+
+945
+00:50:40,739 --> 00:50:42,739
+yapılmış.
+
+946
+00:50:42,739 --> 00:50:44,739
+Dikkat edin çok ciddi bir değer.
+
+947
+00:50:44,739 --> 00:50:46,739
+270 farklı
+
+948
+00:50:46,739 --> 00:50:48,739
+API'ler
+
+949
+00:50:48,739 --> 00:50:50,739
+bunlar 58A'a dağılmışlar.
+
+950
+00:50:50,739 --> 00:50:52,739
+8 farklı
+
+951
+00:50:52,739 --> 00:50:54,739
+ülkedeler demiş.
+
+952
+00:50:54,739 --> 00:50:56,739
+Toplam 540 tane
+
+953
+00:50:56,739 --> 00:50:58,739
+resource include edilmiş.
+
+954
+00:50:58,739 --> 00:51:00,739
+iframe bundan bahsediyoruz.
+
+955
+00:51:00,739 --> 00:51:02,739
+CNN
+
+956
+00:51:02,739 --> 00:51:04,739
+haber kanalı
+
+957
+00:51:04,739 --> 00:51:06,739
+çok bilindik. Orada
+
+958
+00:51:06,739 --> 00:51:08,739
+361 tane
+
+959
+00:51:08,739 --> 00:51:10,739
+farklı yerden
+
+960
+00:51:10,739 --> 00:51:12,739
+yükleme var.
+
+961
+00:51:12,739 --> 00:51:14,739
+Dersin başında neyi konuştuk
+
+962
+00:51:14,739 --> 00:51:16,739
+arkadaşlar?
+
+963
+00:51:16,739 --> 00:51:20,369
+LA Times olsun
+
+964
+00:51:20,369 --> 00:51:22,369
+CNN olsun
+
+965
+00:51:22,369 --> 00:51:24,369
+bu 540 tanesinin veya
+
+966
+00:51:24,369 --> 00:51:26,369
+361 tanesinin hepsini
+
+967
+00:51:26,369 --> 00:51:28,369
+bilemiyor, bilmesine imkan yok.
+
+968
+00:51:28,369 --> 00:51:30,369
+Neden C'yi yükledi, C, D'yi
+
+969
+00:51:30,369 --> 00:51:32,369
+yükledi, D, E'yi yükledi falan
+
+970
+00:51:32,369 --> 00:51:34,369
+böyle ağaç yapısında dağılıp
+
+971
+00:51:34,369 --> 00:51:36,369
+gidebiliyor.
+
+972
+00:51:36,369 --> 00:51:38,369
+Ve LA Times'ın eriştiğiniz
+
+973
+00:51:38,369 --> 00:51:40,369
+zaman size gönderdiği
+
+974
+00:51:40,369 --> 00:51:42,369
+cookie sayısı 51 tane.
+
+975
+00:51:42,369 --> 00:51:44,369
+Bu da şu anlama geliyor.
+
+976
+00:51:46,369 --> 00:51:48,369
+LA Times'a erişirken siz
+
+977
+00:51:48,369 --> 00:51:50,369
+51 tane cookie'yi de tekrar
+
+978
+00:51:50,369 --> 00:51:54,670
+geri gönderiyorsunuz.
+
+979
+00:51:54,670 --> 00:51:56,670
+Header'ın sıkıştırılmasının
+
+980
+00:51:56,670 --> 00:51:58,670
+önemini de burada anlıyorsunuzdur.
+
+981
+00:51:58,670 --> 00:52:00,670
+Çünkü cookie'ler nereden gidiyor?
+
+982
+00:52:00,670 --> 00:52:02,670
+Header üzerinden gidiyor.
+
+983
+00:52:02,670 --> 00:52:04,670
+51 tane cookie ciddi bir şey.
+
+984
+00:52:04,670 --> 00:52:06,670
+Cookie'lerin içerikleri de bakın
+
+985
+00:52:06,670 --> 00:52:08,670
+burada. Ama
+
+986
+00:52:08,670 --> 00:52:10,670
+diğer taraftan da
+
+987
+00:52:10,670 --> 00:52:12,670
+cookie'lerin doğru
+
+988
+00:52:12,670 --> 00:52:14,670
+browser tarafından
+
+989
+00:52:14,670 --> 00:52:16,670
+ilgili kullanıcının
+
+990
+00:52:16,670 --> 00:52:18,670
+browser tarafından
+
+991
+00:52:18,670 --> 00:52:20,670
+kontrollü bir şekilde
+
+992
+00:52:20,670 --> 00:52:22,670
+gönderilmesinin de
+
+993
+00:52:22,670 --> 00:52:24,670
+ne kadar önemli olduğunu
+
+994
+00:52:24,670 --> 00:52:26,670
+görüyoruz.
+
+995
+00:52:26,670 --> 00:52:31,619
+Şimdi burada
+
+996
+00:52:31,619 --> 00:52:33,619
+bakın third party
+
+997
+00:52:33,619 --> 00:52:35,619
+reklamlar add dediği alan var.
+
+998
+00:52:35,619 --> 00:52:37,619
+Yukarıda Google Analytics'in
+
+999
+00:52:37,619 --> 00:52:39,619
+kısmı var.
+
+1000
+00:52:39,619 --> 00:52:41,619
+Şurada bir
+
+1001
+00:52:41,619 --> 00:52:43,619
+ayrı reklam yani
+
+1002
+00:52:43,619 --> 00:52:45,619
+frame olarak LA Times'in kendisinin
+
+1003
+00:52:45,619 --> 00:52:47,619
+aldığı reklam kısmı var.
+
+1004
+00:52:47,619 --> 00:52:49,619
+JQuery library var. Local script var.
+
+1005
+00:52:49,619 --> 00:52:51,619
+Yani şu yukarı headline'ın
+
+1006
+00:52:51,619 --> 00:52:53,619
+değişmesi var. Her şey var burada.
+
+1007
+00:52:55,619 --> 00:52:57,619
+Şimdi buraya kadar genel şeyimizi
+
+1008
+00:52:57,619 --> 00:52:59,619
+yaptık.
+
+1009
+00:52:59,619 --> 00:53:01,619
+Girişimizi yaptık.
+
+1010
+00:53:01,619 --> 00:53:03,619
+Web uygulamalarında
+
+1011
+00:53:03,619 --> 00:53:05,619
+browser tarafında
+
+1012
+00:53:05,619 --> 00:53:07,619
+güvenliğin
+
+1013
+00:53:07,619 --> 00:53:09,619
+temelini oluşturacak bir
+
+1014
+00:53:09,619 --> 00:53:11,619
+kavramdan bahsedeceğiz
+
+1015
+00:53:11,619 --> 00:53:13,619
+şimdi arkadaşlar.
+
+1016
+00:53:13,619 --> 00:53:15,619
+Same origin policy.
+
+1017
+00:53:15,619 --> 00:53:17,619
+SOP.
+
+1018
+00:53:17,619 --> 00:53:19,619
+Aynı kaynak
+
+1019
+00:53:19,619 --> 00:53:21,619
+kuralı.
+
+1020
+00:53:21,619 --> 00:53:23,619
+Bakın işletim sisteminde
+
+1021
+00:53:23,619 --> 00:53:25,619
+herhangi bir
+
+1022
+00:53:25,619 --> 00:53:27,619
+prosesi çalıştırmak için bir
+
+1023
+00:53:27,619 --> 00:53:29,619
+kullanıcıya ihtiyaç duyuyoruz.
+
+1024
+00:53:29,619 --> 00:53:31,619
+Ve o
+
+1025
+00:53:31,619 --> 00:53:33,619
+prosesin yetkileri
+
+1026
+00:53:33,619 --> 00:53:35,619
+kullanıcısının
+
+1027
+00:53:35,619 --> 00:53:37,619
+işletim sistemi seviyesindeki
+
+1028
+00:53:37,619 --> 00:53:39,619
+yetkileriyle belirleniyor.
+
+1029
+00:53:39,619 --> 00:53:41,619
+Şimdi burada da
+
+1030
+00:53:43,440 --> 00:53:45,440
+özellikle
+
+1031
+00:53:45,440 --> 00:53:47,440
+browserlardan
+
+1032
+00:53:47,440 --> 00:53:50,690
+istek yaparken
+
+1033
+00:53:50,690 --> 00:53:52,690
+browserlardaki javascript
+
+1034
+00:53:52,690 --> 00:53:54,690
+çalışırken onun
+
+1035
+00:53:54,690 --> 00:53:56,690
+yaptığı istekleri gerçekleştirirken
+
+1036
+00:53:56,690 --> 00:53:58,690
+benzer şekilde
+
+1037
+00:53:58,690 --> 00:54:00,690
+bir yetkilendirme
+
+1038
+00:54:00,690 --> 00:54:02,690
+ve yetki kısıtlama
+
+1039
+00:54:02,690 --> 00:54:04,690
+mekanizması uygulayabilmemiz lazım.
+
+1040
+00:54:04,690 --> 00:54:06,690
+Ancak şöyle düşünün.
+
+1041
+00:54:06,690 --> 00:54:08,690
+Browser
+
+1042
+00:54:08,690 --> 00:54:10,690
+içerisine yüklenen
+
+1043
+00:54:10,690 --> 00:54:12,690
+sitenin içeriğini gönderen
+
+1044
+00:54:12,690 --> 00:54:14,690
+işte az önceki örnek
+
+1045
+00:54:14,690 --> 00:54:16,690
+olsun LA Times olsun
+
+1046
+00:54:16,690 --> 00:54:18,690
+CNN olsun ne
+
+1047
+00:54:18,690 --> 00:54:20,690
+beni tanır ne sizi tanır.
+
+1048
+00:54:20,690 --> 00:54:22,690
+Benim lokale Gökhan olarak
+
+1049
+00:54:22,690 --> 00:54:24,690
+sizin işte [öğrenci], [öğrenci], [öğrenci], [öğrenci]
+
+1050
+00:54:24,690 --> 00:54:26,690
+neyse bir şey olarak
+
+1051
+00:54:26,690 --> 00:54:28,690
+login olmanızın
+
+1052
+00:54:28,690 --> 00:54:30,690
+hiçbir önemi
+
+1053
+00:54:30,690 --> 00:54:32,690
+olmaz.
+
+1054
+00:54:32,690 --> 00:54:34,690
+Çünkü
+
+1055
+00:54:34,690 --> 00:54:36,690
+bağımsız kullanıcılar olarak
+
+1056
+00:54:36,690 --> 00:54:38,690
+kendi lokalimizde proses çalıştırırken
+
+1057
+00:54:38,690 --> 00:54:40,690
+kullanıcı adımızı
+
+1058
+00:54:40,690 --> 00:54:42,690
+uygulamasının bir anlamı varken
+
+1059
+00:54:42,690 --> 00:54:44,690
+bu kullanıcı adının
+
+1060
+00:54:44,690 --> 00:54:46,690
+web erişimlerinde
+
+1061
+00:54:46,690 --> 00:54:48,690
+karşı taraftaki server açısından
+
+1062
+00:54:48,690 --> 00:54:50,690
+hiçbir anlamı ve önemi yok.
+
+1063
+00:54:50,690 --> 00:54:52,690
+O zaman
+
+1064
+00:54:52,690 --> 00:54:54,690
+buna uygun bir
+
+1065
+00:54:54,690 --> 00:54:56,690
+access control
+
+1066
+00:54:56,690 --> 00:54:58,690
+tasarlamamız lazım.
+
+1067
+00:54:58,690 --> 00:55:00,690
+Buna uygun bir şekilde
+
+1068
+00:55:00,690 --> 00:55:02,690
+authorization yapmamız lazım.
+
+1069
+00:55:02,690 --> 00:55:06,579
+Şimdi bakın şeyle
+
+1070
+00:55:06,579 --> 00:55:08,579
+karıştırmayın. Web uygulamasına
+
+1071
+00:55:08,579 --> 00:55:10,579
+kullanıcı adınızı
+
+1072
+00:55:10,579 --> 00:55:12,579
+ve ona bağlı olarak
+
+1073
+00:55:12,579 --> 00:55:14,579
+şifrenizi gönderip uygulama
+
+1074
+00:55:14,579 --> 00:55:16,579
+seviyesindeki authentication
+
+1075
+00:55:16,579 --> 00:55:18,579
+ve authorization'dan bahsetmiyorum.
+
+1076
+00:55:18,579 --> 00:55:20,579
+Browser'a
+
+1077
+00:55:20,579 --> 00:55:23,860
+yönelik olarak
+
+1078
+00:55:23,860 --> 00:55:25,860
+browser'ın yaptığı
+
+1079
+00:55:25,860 --> 00:55:27,860
+isteklerde
+
+1080
+00:55:27,860 --> 00:55:29,860
+o isteklerin gerçekleştirilmesinde
+
+1081
+00:55:29,860 --> 00:55:31,860
+veya geri çevrilmesinde
+
+1082
+00:55:31,860 --> 00:55:33,860
+uygulanacak olan
+
+1083
+00:55:33,860 --> 00:55:35,860
+güvenlik
+
+1084
+00:55:35,860 --> 00:55:37,860
+politikalarında
+
+1085
+00:55:37,860 --> 00:55:39,860
+güvenlik kurallarında
+
+1086
+00:55:39,860 --> 00:55:41,860
+kullanılacak olan ID'den bahsediyorum.
+
+1087
+00:55:41,860 --> 00:55:43,860
+O da nedir biliyor musunuz?
+
+1088
+00:55:43,860 --> 00:55:45,860
+Origin.
+
+1089
+00:55:45,860 --> 00:55:49,170
+Origin ne ifade ediyor?
+
+1090
+00:55:49,170 --> 00:55:51,170
+İçeriğin hangi server'dan geldi?
+
+1091
+00:55:51,170 --> 00:55:53,170
+Hangi domain'den geldi?
+
+1092
+00:55:53,170 --> 00:55:55,170
+Yani bir içeriği
+
+1093
+00:55:55,170 --> 00:55:57,170
+gönderen domain
+
+1094
+00:55:57,170 --> 00:55:59,170
+o içeriğin sahibi oluyor
+
+1095
+00:55:59,170 --> 00:56:01,170
+ve o içerik
+
+1096
+00:56:01,170 --> 00:56:03,170
+çalışırken
+
+1097
+00:56:03,170 --> 00:56:05,170
+aktif ya sonuçta
+
+1098
+00:56:05,170 --> 00:56:07,170
+çalışırken onu çalıştıran
+
+1099
+00:56:07,170 --> 00:56:09,170
+kullanıcı adını
+
+1100
+00:56:09,170 --> 00:56:11,170
+o domain olarak düşünüyoruz.
+
+1101
+00:56:11,170 --> 00:56:13,170
+Kafanızda böyle camlandırırsanız
+
+1102
+00:56:13,170 --> 00:56:15,170
+eşleştirmeniz de kolay olur.
+
+1103
+00:56:15,170 --> 00:56:17,170
+Anlayıp çözebilmeniz de
+
+1104
+00:56:17,170 --> 00:56:19,170
+kolay olur.
+
+1105
+00:56:19,170 --> 00:56:21,170
+Şimdi Unix güvenlik modelinde
+
+1106
+00:56:21,170 --> 00:56:23,170
+subject, object, access
+
+1107
+00:56:23,170 --> 00:56:25,170
+operations değil mi? Subjectler neydi?
+
+1108
+00:56:25,170 --> 00:56:27,170
+Kullanıcılar ve prosesler
+
+1109
+00:56:27,170 --> 00:56:29,170
+objekler, file'ler, directory'ler
+
+1110
+00:56:29,170 --> 00:56:31,170
+access operasyonları da retry'de
+
+1111
+00:56:31,170 --> 00:56:33,170
+execute. Şimdi bunu web'e translate
+
+1112
+00:56:33,170 --> 00:56:35,170
+edersek veya
+
+1113
+00:56:35,170 --> 00:56:37,170
+denk düşürürsek böyle
+
+1114
+00:56:37,170 --> 00:56:39,170
+üzerine bildirirsek
+
+1115
+00:56:39,170 --> 00:56:41,170
+neye denk düşüyor diye
+
+1116
+00:56:41,170 --> 00:56:43,170
+subject'ler origin
+
+1117
+00:56:43,170 --> 00:56:45,170
+az önce söylediğim şey.
+
+1118
+00:56:45,170 --> 00:56:47,170
+Scheme, domain, port.
+
+1119
+00:56:47,170 --> 00:56:53,170
+http://google.com
+
+1120
+00:56:53,170 --> 00:56:55,170
+object
+
+1121
+00:56:55,170 --> 00:56:57,170
+document
+
+1122
+00:56:57,170 --> 00:56:59,170
+object model
+
+1123
+00:56:59,170 --> 00:57:01,170
+her şey onun üzerinde gerçekleşiyor.
+
+1124
+00:57:01,170 --> 00:57:03,170
+Document
+
+1125
+00:57:03,170 --> 00:57:05,170
+object model'ın storage'ı
+
+1126
+00:57:05,170 --> 00:57:07,170
+değil mi? Yani
+
+1127
+00:57:07,170 --> 00:57:09,170
+DOM'a
+
+1128
+00:57:09,170 --> 00:57:11,170
+tablo eklemek, header eklemek
+
+1129
+00:57:11,170 --> 00:57:13,170
+işte title eklemek veya
+
+1130
+00:57:13,170 --> 00:57:15,170
+onları değiştirmek.
+
+1131
+00:57:15,170 --> 00:57:17,170
+Yani az önce konuştuk.
+
+1132
+00:57:17,170 --> 00:57:19,170
+Donanı verişimlerine izin
+
+1133
+00:57:19,170 --> 00:57:21,170
+verilip verilmemesi.
+
+1134
+00:57:21,170 --> 00:57:23,170
+Peki SOP'nin amacı ne?
+
+1135
+00:57:23,170 --> 00:57:25,170
+Farklı
+
+1136
+00:57:25,170 --> 00:57:27,170
+kaynaklardan gelen içerikleri
+
+1137
+00:57:27,170 --> 00:57:29,170
+birbirinden izole et.
+
+1138
+00:57:29,170 --> 00:57:31,170
+A.com'dan gelen içerikle
+
+1139
+00:57:31,170 --> 00:57:33,170
+B.com'dan gelen içerik
+
+1140
+00:57:33,170 --> 00:57:35,170
+birbirinden izole edilmeli. Çünkü biri
+
+1141
+00:57:35,170 --> 00:57:37,170
+A.com kullanıcısı
+
+1142
+00:57:37,170 --> 00:57:39,170
+olarak çalışıyor, diğeri B.com
+
+1143
+00:57:39,170 --> 00:57:41,170
+kullanıcısı olarak çalışıyor.
+
+1144
+00:57:41,170 --> 00:57:43,170
+Bu da bana ne sağlayacak?
+
+1145
+00:57:43,170 --> 00:57:45,170
+Mesela
+
+1146
+00:57:45,170 --> 00:57:47,170
+gizlilik evil.com'dan bana
+
+1147
+00:57:47,170 --> 00:57:49,170
+gönderilmiş olan bir script
+
+1148
+00:57:49,170 --> 00:57:51,170
+bank.ch
+
+1149
+00:57:51,170 --> 00:57:53,170
+adresinden
+
+1150
+00:57:53,170 --> 00:57:55,170
+bir şey okuyamam ona.
+
+1151
+00:57:55,170 --> 00:57:57,170
+Veya evil.com
+
+1152
+00:57:57,170 --> 00:57:59,170
+bir şekilde aynı browser'da
+
+1153
+00:57:59,170 --> 00:58:01,170
+açık, öbür tab'da da
+
+1154
+00:58:01,170 --> 00:58:03,170
+bank.ch açık
+
+1155
+00:58:03,170 --> 00:58:05,170
+evil.com bank.ch'in
+
+1156
+00:58:05,170 --> 00:58:10,559
+içeriğini değiştirememeli.
+
+1157
+00:58:10,559 --> 00:58:12,559
+Şimdi burada window
+
+1158
+00:58:12,559 --> 00:58:14,559
+kesinlikle işletim sistemi olan
+
+1159
+00:58:14,559 --> 00:58:16,559
+window değil. Ekranda hani
+
+1160
+00:58:16,559 --> 00:58:18,559
+window'umuz var ya pencerelerimiz var ya onlar.
+
+1161
+00:58:18,559 --> 00:58:20,559
+Her window'un
+
+1162
+00:58:20,559 --> 00:58:22,559
+ve her frame'in bir orijini
+
+1163
+00:58:22,559 --> 00:58:26,769
+var. Ve bir orijin
+
+1164
+00:58:26,769 --> 00:58:28,769
+başka
+
+1165
+00:58:28,769 --> 00:58:30,769
+orijinlerden gelen
+
+1166
+00:58:30,769 --> 00:58:32,769
+objektlere erişemez.
+
+1167
+00:58:32,769 --> 00:58:34,769
+Bu kesin
+
+1168
+00:58:34,769 --> 00:58:36,769
+kural.
+
+1169
+00:58:36,769 --> 00:58:38,769
+Bakın
+
+1170
+00:58:38,769 --> 00:58:40,769
+bir tabımda bank.com çalışıyor,
+
+1171
+00:58:40,769 --> 00:58:42,769
+diğer tabımda attacker.com çalışıyor.
+
+1172
+00:58:42,769 --> 00:58:44,769
+Attacker.com
+
+1173
+00:58:44,769 --> 00:58:46,769
+tam tersi de geçerli ama böyle söylersek
+
+1174
+00:58:46,769 --> 00:58:48,769
+kafanızda daha iyi canlanır.
+
+1175
+00:58:48,769 --> 00:58:50,769
+Çünkü biri saldırganı ifade ediyor.
+
+1176
+00:58:50,769 --> 00:58:52,769
+Attacker.com
+
+1177
+00:58:52,769 --> 00:58:54,769
+bank.com tabının
+
+1178
+00:58:54,769 --> 00:58:56,769
+içeriğini okuyamaz veya
+
+1179
+00:58:56,769 --> 00:58:58,769
+değiştiremez, yazamaz.
+
+1180
+00:58:58,769 --> 00:59:00,769
+Attacker.com
+
+1181
+00:59:00,769 --> 00:59:02,769
+bank.com'un
+
+1182
+00:59:02,769 --> 00:59:04,769
+gönderdiği, browser'a
+
+1183
+00:59:04,769 --> 00:59:06,769
+gönderdiği cookie'lere
+
+1184
+00:59:06,769 --> 00:59:08,769
+erişemez.
+
+1185
+00:59:08,769 --> 00:59:10,769
+Attacker.com
+
+1186
+00:59:10,769 --> 00:59:12,769
+diğer bir tabda
+
+1187
+00:59:12,769 --> 00:59:14,769
+bank.com'un açık olduğunun
+
+1188
+00:59:14,769 --> 00:59:16,769
+bile farkına varamaz.
+
+1189
+00:59:16,769 --> 00:59:18,769
+Bakın bunlar
+
+1190
+00:59:18,769 --> 00:59:22,500
+window frame seviyesinde
+
+1191
+00:59:22,500 --> 00:59:24,500
+değil mi? Bir de iframe vardı
+
+1192
+00:59:24,500 --> 00:59:26,500
+inline frame. Öyle düşünün.
+
+1193
+00:59:26,500 --> 00:59:28,500
+İster tab olarak
+
+1194
+00:59:28,500 --> 00:59:30,500
+frame seviyesinde olsun, ister
+
+1195
+00:59:30,500 --> 00:59:32,500
+tab seviyesinde
+
+1196
+00:59:32,500 --> 00:59:34,500
+olsun, window seviyesinde olsun,
+
+1197
+00:59:34,500 --> 00:59:36,500
+ister aynı window'un
+
+1198
+00:59:36,500 --> 00:59:38,500
+içerisinde frame'ler seviyesinde olsun.
+
+1199
+00:59:38,500 --> 00:59:40,500
+Birincisi bu.
+
+1200
+00:59:40,500 --> 00:59:44,000
+Ancak eğer
+
+1201
+00:59:44,000 --> 00:59:46,000
+her iki tab
+
+1202
+00:59:46,000 --> 00:59:48,000
+her iki tab
+
+1203
+00:59:48,000 --> 00:59:50,000
+aynı yerdense
+
+1204
+00:59:50,000 --> 00:59:52,000
+işte ikisi de bank.com'da
+
+1205
+00:59:52,000 --> 00:59:54,000
+tab 1 tab 2'den
+
+1206
+00:59:54,000 --> 00:59:56,000
+tab 2 de tab 1'den
+
+1207
+00:59:56,000 --> 00:59:58,000
+aynı orijinden geldikleri için
+
+1208
+00:59:58,000 --> 01:00:00,000
+her şeyi okuyup
+
+1209
+01:00:00,000 --> 01:00:02,000
+yazabilirler karşılıklı olarak. Cookie'lerine
+
+1210
+01:00:02,000 --> 01:00:04,000
+falan erişebilirler.
+
+1211
+01:00:04,000 --> 01:00:06,000
+Artı aralarında
+
+1212
+01:00:08,000 --> 01:00:10,000
+javascript kapsamında
+
+1213
+01:00:10,000 --> 01:00:12,000
+tanımlanmış olan broadcast channel
+
+1214
+01:00:12,000 --> 01:00:14,000
+API'yi kullanarak haberleşebilirler.
+
+1215
+01:00:16,000 --> 01:00:18,000
+Publisher subscriber.
+
+1216
+01:00:18,000 --> 01:00:20,000
+Bir taraftan
+
+1217
+01:00:20,000 --> 01:00:22,000
+bir kanal oluşturuyorsunuz. Bunu tarif
+
+1218
+01:00:22,000 --> 01:00:24,000
+yapıyorsunuz. Diğer taraftan bu kanala
+
+1219
+01:00:24,000 --> 01:00:26,000
+üye olunuyor. Eğer
+
+1220
+01:00:26,000 --> 01:00:28,000
+SOP açısından sıkıntı yoksa
+
+1221
+01:00:28,000 --> 01:00:30,000
+window'lar
+
+1222
+01:00:30,000 --> 01:00:32,000
+yani tab'lar. Window'da tab'ı
+
+1223
+01:00:32,000 --> 01:00:34,000
+aynı denk düşürüyoruz.
+
+1224
+01:00:34,000 --> 01:00:36,000
+iframe'ler.
+
+1225
+01:00:36,000 --> 01:00:38,000
+Web uygulamaları arasında
+
+1226
+01:00:38,000 --> 01:00:40,000
+web worker'lar arasında
+
+1227
+01:00:40,000 --> 01:00:42,000
+haberleşme
+
+1228
+01:00:42,000 --> 01:00:44,000
+gerçekleşebilir. Burada basit bir örneğini
+
+1229
+01:00:44,000 --> 01:00:48,050
+görüyorsunuz.
+
+1230
+01:00:48,050 --> 01:00:55,039
+Bakın attacker.com
+
+1231
+01:00:55,039 --> 01:00:59,949
+ne yapmış?
+
+1232
+01:00:59,949 --> 01:01:01,949
+İki tane frame yok.
+
+1233
+01:01:01,949 --> 01:01:03,949
+Yüklemiş.
+
+1234
+01:01:03,949 --> 01:01:05,949
+Frame'lerin her ikisi de bank.com'da.
+
+1235
+01:01:05,949 --> 01:01:10,929
+Yükleyebilir mi?
+
+1236
+01:01:10,929 --> 01:01:12,929
+Yükleyebilir. Çünkü
+
+1237
+01:01:12,929 --> 01:01:14,929
+frame başlatır. Frame'in de
+
+1238
+01:01:14,929 --> 01:01:16,929
+sorsu bu olacaktır.
+
+1239
+01:01:16,929 --> 01:01:18,929
+Bunda hiçbir sorun yok.
+
+1240
+01:01:18,929 --> 01:01:20,929
+Ancak attacker.com
+
+1241
+01:01:20,929 --> 01:01:22,929
+bank.com
+
+1242
+01:01:22,929 --> 01:01:24,929
+adresinden
+
+1243
+01:01:24,929 --> 01:01:26,929
+şu frame'i
+
+1244
+01:01:26,929 --> 01:01:28,929
+yükle demiş olmasına rağmen
+
+1245
+01:01:28,929 --> 01:01:30,929
+gelen
+
+1246
+01:01:30,929 --> 01:01:32,929
+kontenti okuyamaz.
+
+1247
+01:01:32,929 --> 01:01:34,929
+Frame'lerin kontentine erişemez.
+
+1248
+01:01:34,929 --> 01:01:36,929
+bank.com'dan
+
+1249
+01:01:36,929 --> 01:01:38,929
+gelen kukilere erişemez.
+
+1250
+01:01:38,929 --> 01:01:42,179
+Yüklemeyi
+
+1251
+01:01:42,179 --> 01:01:44,179
+kendisi başlatmış olmasına rağmen
+
+1252
+01:01:44,179 --> 01:01:46,179
+yüklemenin
+
+1253
+01:01:46,179 --> 01:01:48,179
+nasıl sonuçlandığını
+
+1254
+01:01:48,179 --> 01:01:50,179
+veya sonuçlanıp sonuçlanmadığını
+
+1255
+01:01:50,179 --> 01:01:52,179
+kontrol edemez.
+
+1256
+01:01:52,179 --> 01:01:54,179
+Böyle bir izolasyon var.
+
+1257
+01:01:54,179 --> 01:01:56,179
+Öyleyse
+
+1258
+01:01:56,179 --> 01:01:58,179
+bir orijin
+
+1259
+01:01:58,179 --> 01:02:00,179
+kendisine ait olmayan
+
+1260
+01:02:00,179 --> 01:02:02,179
+orijinden gelen objektlere
+
+1261
+01:02:02,179 --> 01:02:04,179
+ne yapamıyor?
+
+1262
+01:02:04,179 --> 01:02:06,179
+Erişemiyor.
+
+1263
+01:02:06,179 --> 01:02:13,579
+Böyle bir şey.
+
+1264
+01:02:13,579 --> 01:02:15,579
+Aralarında parent child ilişkisi
+
+1265
+01:02:15,579 --> 01:02:17,579
+olan
+
+1266
+01:02:17,579 --> 01:02:19,579
+window veya frame'ler varsa
+
+1267
+01:02:19,579 --> 01:02:21,579
+bunlar
+
+1268
+01:02:21,579 --> 01:02:23,579
+kurallar çerçevesinde
+
+1269
+01:02:23,579 --> 01:02:25,579
+iki tarafta buna istekliyse
+
+1270
+01:02:25,579 --> 01:02:27,579
+yani birbirleriyle
+
+1271
+01:02:27,579 --> 01:02:29,579
+haberleşmek için gerekli kod
+
+1272
+01:02:29,579 --> 01:02:31,579
+parçalarını içeriyorlarsa
+
+1273
+01:02:31,579 --> 01:02:33,579
+o zaman aralarında ne yapabilirler?
+
+1274
+01:02:33,579 --> 01:02:35,579
+Mesaj değiş tokuşu
+
+1275
+01:02:35,579 --> 01:02:39,380
+yapabilirler. Bir window
+
+1276
+01:02:39,380 --> 01:02:41,380
+bir başka window'a post message'la
+
+1277
+01:02:41,380 --> 01:02:43,380
+mesaj yollayabilir.
+
+1278
+01:02:43,380 --> 01:02:45,380
+Bir window da diğer bir window'a
+
+1279
+01:02:45,380 --> 01:02:47,380
+gelecek mesajları
+
+1280
+01:02:47,380 --> 01:02:49,380
+dinlemek için bir listener
+
+1281
+01:02:49,380 --> 01:02:51,380
+devreye sokabilir.
+
+1282
+01:02:51,380 --> 01:02:59,579
+Şimdi öyleyse
+
+1283
+01:02:59,579 --> 01:03:03,699
+same origin
+
+1284
+01:03:03,699 --> 01:03:05,699
+polisiyle
+
+1285
+01:03:05,699 --> 01:03:07,699
+ne sağlanmak istiyoru
+
+1286
+01:03:07,699 --> 01:03:09,699
+anladık. Ne sağlanmak isteniyor?
+
+1287
+01:03:09,699 --> 01:03:11,699
+Isolation
+
+1288
+01:03:11,699 --> 01:03:13,699
+aynı browser'da
+
+1289
+01:03:13,699 --> 01:03:17,900
+farklı
+
+1290
+01:03:17,900 --> 01:03:19,900
+domainlerden gelen
+
+1291
+01:03:19,900 --> 01:03:21,900
+içerik varsa
+
+1292
+01:03:21,900 --> 01:03:23,900
+bu içeriklerin
+
+1293
+01:03:23,900 --> 01:03:25,900
+domain seviyesinde
+
+1294
+01:03:25,900 --> 01:03:27,900
+birbirlerine etki etmesinin
+
+1295
+01:03:27,900 --> 01:03:29,900
+önüne geçilmek istemiyor.
+
+1296
+01:03:29,900 --> 01:03:39,199
+Bakın ne demiştik
+
+1297
+01:03:39,199 --> 01:03:41,199
+imajdan bahsediyoruz
+
+1298
+01:03:41,199 --> 01:03:44,800
+bir sayfa
+
+1299
+01:03:44,800 --> 01:03:46,800
+herhangi bir
+
+1300
+01:03:46,800 --> 01:03:48,800
+domainden gelen
+
+1301
+01:03:48,800 --> 01:03:50,800
+bir sayfa
+
+1302
+01:03:50,800 --> 01:03:52,800
+başka bir domaindeki bir görüntüye
+
+1303
+01:03:52,800 --> 01:03:54,800
+kısıtsız olarak
+
+1304
+01:03:54,800 --> 01:03:56,800
+referansta bulunabilir.
+
+1305
+01:03:56,800 --> 01:03:58,800
+Eğer o görüntü açıksa
+
+1306
+01:03:58,800 --> 01:04:00,800
+herkesin kullanımına açıksa
+
+1307
+01:04:00,800 --> 01:04:04,179
+özel bir otantikasyon gerektirmiyorsa
+
+1308
+01:04:04,179 --> 01:04:08,059
+doğrudan
+
+1309
+01:04:08,059 --> 01:04:10,059
+içerik olarak
+
+1310
+01:04:10,059 --> 01:04:12,059
+sayfada görüntülenecek şekilde
+
+1311
+01:04:12,059 --> 01:04:14,059
+gelir. Ancak
+
+1312
+01:04:14,059 --> 01:04:16,059
+şu örnekte
+
+1313
+01:04:16,059 --> 01:04:18,059
+görüyorsunuz attacker.com
+
+1314
+01:04:18,059 --> 01:04:20,059
+bu jpeg
+
+1315
+01:04:20,059 --> 01:04:22,059
+usr jpeg gelip de
+
+1316
+01:04:22,059 --> 01:04:24,059
+görüntüleniyor olmasına rağmen
+
+1317
+01:04:24,059 --> 01:04:26,059
+usr jpeg'in
+
+1318
+01:04:26,059 --> 01:04:30,690
+içeriğine erişemez.
+
+1319
+01:04:30,690 --> 01:04:32,690
+SOP bunu sağlar ama
+
+1320
+01:04:32,690 --> 01:04:34,690
+SOP
+
+1321
+01:04:34,690 --> 01:04:36,690
+attacker.com'un yüklediği bir
+
+1322
+01:04:36,690 --> 01:04:38,690
+sayfada
+
+1323
+01:04:38,690 --> 01:04:40,690
+attacker.com'a
+
+1324
+01:04:40,690 --> 01:04:42,690
+gidilip de bir istekte bulunmasını
+
+1325
+01:04:42,690 --> 01:04:44,690
+engelleyemez. İstekte bulunur ama
+
+1326
+01:04:44,690 --> 01:04:46,690
+isteğin sonrasında gelen
+
+1327
+01:04:46,690 --> 01:04:48,690
+içerik browser
+
+1328
+01:04:48,690 --> 01:04:50,690
+tarafından ekranda görüntüleniyor
+
+1329
+01:04:50,690 --> 01:04:52,690
+olmasına rağmen attacker.com
+
+1330
+01:04:52,690 --> 01:04:54,690
+göndereceği javascriptle de
+
+1331
+01:04:54,690 --> 01:04:56,690
+başka bir şekilde de
+
+1332
+01:04:56,690 --> 01:04:58,690
+o içeriği
+
+1333
+01:04:58,690 --> 01:05:00,690
+içerik olarak elde edemez.
+
+1334
+01:05:00,690 --> 01:05:02,690
+Kısıt burada geliyor.
+
+1335
+01:05:02,690 --> 01:05:04,690
+İzolasyon burada geliyor. Önemli olan kısmı burası.
+
+1336
+01:05:04,690 --> 01:05:08,929
+İmajlar için
+
+1337
+01:05:08,929 --> 01:05:10,929
+az önce söyledim browser
+
+1338
+01:05:10,929 --> 01:05:12,929
+ekranda görüntülüyor
+
+1339
+01:05:12,929 --> 01:05:14,929
+ama SOP
+
+1340
+01:05:14,929 --> 01:05:16,929
+bu ekranda görüntülen imajın
+
+1341
+01:05:16,929 --> 01:05:18,929
+içeriğinin incelenmesine
+
+1342
+01:05:18,929 --> 01:05:20,929
+izin vermiyor.
+
+1343
+01:05:20,929 --> 01:05:22,929
+Boyutunu check edebiliyor.
+
+1344
+01:05:22,929 --> 01:05:24,929
+İmaj olduğu için düzgün
+
+1345
+01:05:24,929 --> 01:05:26,929
+yüklenip yüklenmediğini kontrol edebiliyor.
+
+1346
+01:05:28,929 --> 01:05:30,929
+Cascaded Star Sheet ve fontlar içinde
+
+1347
+01:05:30,929 --> 01:05:32,929
+aynı şey geçerli.
+
+1348
+01:05:32,929 --> 01:05:34,929
+Yükleyip kullanabilir. Ekranı daha güzel
+
+1349
+01:05:34,929 --> 01:05:36,929
+görüntülenebilir hale getirmek için.
+
+1350
+01:05:36,929 --> 01:05:38,929
+Frame'lerde frame'i
+
+1351
+01:05:38,929 --> 01:05:40,929
+inişiyet edebilirsiniz. Başlatıp şuradan
+
+1352
+01:05:40,929 --> 01:05:42,929
+yükleyeceksin ama dikkat edin imajlarda
+
+1353
+01:05:42,929 --> 01:05:44,929
+boyutunu ve düzgün yüklenip yüklenmediğini
+
+1354
+01:05:44,929 --> 01:05:46,929
+yüklenmediğini test edebiliyor.
+
+1355
+01:05:48,929 --> 01:05:50,929
+Yüklendi mi yüklenmedi mi
+
+1356
+01:05:50,929 --> 01:05:52,929
+bilemiyorum.
+
+1357
+01:05:52,929 --> 01:05:54,929
+Bu yine güvenlik sebebiyle
+
+1358
+01:05:54,929 --> 01:05:56,929
+oluşturulan izolasyonun
+
+1359
+01:05:56,929 --> 01:05:58,929
+bir parçası. SOP mekanizmasının
+
+1360
+01:05:58,929 --> 01:06:06,079
+bir parçası. Scriptler
+
+1361
+01:06:06,079 --> 01:06:08,079
+çok önemli bakın bunu aklınızda
+
+1362
+01:06:08,079 --> 01:06:10,079
+bulundurmanız gerekiyor.
+
+1363
+01:06:10,079 --> 01:06:12,079
+Scriptler
+
+1364
+01:06:12,079 --> 01:06:14,079
+başka orijinlerden yüklenebilirler.
+
+1365
+01:06:14,079 --> 01:06:16,079
+Ancak başka
+
+1366
+01:06:16,079 --> 01:06:18,079
+orijinlerden yüklenen scriptlerin
+
+1367
+01:06:18,079 --> 01:06:20,079
+içeriğini göremeyiz.
+
+1368
+01:06:20,079 --> 01:06:22,079
+Fakat oradaki fonksiyonları
+
+1369
+01:06:22,079 --> 01:06:24,079
+çağırabiliriz. Ancak
+
+1370
+01:06:24,079 --> 01:06:26,079
+sıkıntı nerede biliyor musunuz?
+
+1371
+01:06:26,079 --> 01:06:28,079
+Scriptler
+
+1372
+01:06:28,079 --> 01:06:30,079
+kendisini yükleyen
+
+1373
+01:06:30,079 --> 01:06:32,079
+orijin olarak çalışırlar.
+
+1374
+01:06:32,079 --> 01:06:34,079
+Nereden yüklendiklerinden
+
+1375
+01:06:34,079 --> 01:06:36,079
+bağımsız olarak.
+
+1376
+01:06:36,079 --> 01:06:38,079
+Bu işte kritik
+
+1377
+01:06:38,079 --> 01:06:40,079
+nokta.
+
+1378
+01:06:40,079 --> 01:06:42,079
+Bakın bank.com'un
+
+1379
+01:06:42,079 --> 01:06:44,079
+birinci örnekteki script yüklemesinde
+
+1380
+01:06:44,079 --> 01:06:46,079
+hiçbir sorun yok çünkü script
+
+1381
+01:06:46,079 --> 01:06:48,079
+nereden yüklüyor? Kendisinden
+
+1382
+01:06:48,079 --> 01:06:50,079
+yüklüyor. Slash ile
+
+1383
+01:06:50,079 --> 01:06:52,079
+başlamış. Başına işte
+
+1384
+01:06:52,079 --> 01:06:54,079
+https bank.com
+
+1385
+01:06:54,079 --> 01:06:56,079
+gelecek.
+
+1386
+01:06:56,079 --> 01:06:58,079
+Ve hangi orijinle çalışacak?
+
+1387
+01:06:58,079 --> 01:07:00,079
+bank.com orijinli. Ancak
+
+1388
+01:07:00,079 --> 01:07:02,079
+ikinci örnekte
+
+1389
+01:07:02,079 --> 01:07:04,079
+scriptlerden geldi
+
+1390
+01:07:04,079 --> 01:07:06,079
+jQuery'den geldi.
+
+1391
+01:07:06,079 --> 01:07:08,079
+Fakat jQuery'den
+
+1392
+01:07:08,079 --> 01:07:10,079
+gelen script hangi orijinle
+
+1393
+01:07:10,079 --> 01:07:12,079
+çalışacak? bank.com
+
+1394
+01:07:12,079 --> 01:07:14,079
+O zaman jQuery'de
+
+1395
+01:07:14,079 --> 01:07:16,079
+kötü niyetli script varsa
+
+1396
+01:07:16,079 --> 01:07:18,079
+bu script
+
+1397
+01:07:18,079 --> 01:07:20,079
+şu ikinci örnekte olduğu gibi sayfaya
+
+1398
+01:07:20,079 --> 01:07:22,079
+yüklenirse
+
+1399
+01:07:22,079 --> 01:07:24,079
+bu durumda
+
+1400
+01:07:24,079 --> 01:07:26,079
+ne olacak? O kötü
+
+1401
+01:07:26,079 --> 01:07:28,079
+niyetli script bank.com
+
+1402
+01:07:28,079 --> 01:07:30,079
+orijinle çalıştığı için
+
+1403
+01:07:30,079 --> 01:07:32,079
+normalde erişmemesi
+
+1404
+01:07:32,079 --> 01:07:34,079
+gereken bank.com'la alakalı
+
+1405
+01:07:34,079 --> 01:07:36,079
+mesela cookie'lere, mesela
+
+1406
+01:07:36,079 --> 01:07:38,079
+authentication, authorization, işte bank
+
+1407
+01:07:38,079 --> 01:07:40,079
+account falan şunlara
+
+1408
+01:07:40,079 --> 01:07:42,079
+bunlara erişip başka bir yere aktarabilecek.
+
+1409
+01:07:42,079 --> 01:07:44,079
+Şu ikincisinin
+
+1410
+01:07:44,079 --> 01:07:46,079
+yapılmaması gerekiyor kesinlikle. Çok
+
+1411
+01:07:46,079 --> 01:07:50,190
+ilgili. Bazı durumlarda
+
+1412
+01:07:50,190 --> 01:07:52,190
+bu katı kuralı
+
+1413
+01:07:52,190 --> 01:07:54,190
+rahatlatmak
+
+1414
+01:07:54,190 --> 01:07:56,190
+istiyoruz. Çünkü
+
+1415
+01:07:56,190 --> 01:07:58,190
+sistemin çalışmasını
+
+1416
+01:07:58,190 --> 01:08:00,190
+çalışamaz hale getirebiliyor.
+
+1417
+01:08:00,190 --> 01:08:02,190
+Örneğin Facebook diyor ki
+
+1418
+01:08:02,190 --> 01:08:04,190
+benim content distribution
+
+1419
+01:08:04,190 --> 01:08:06,190
+network'üm var. Bütün içerik
+
+1420
+01:08:06,190 --> 01:08:08,190
+cdm facebook.com
+
+1421
+01:08:08,190 --> 01:08:10,190
+içerisinde. Ben bunu
+
+1422
+01:08:10,190 --> 01:08:12,190
+farklı uygulamalarımda
+
+1423
+01:08:12,190 --> 01:08:14,190
+kullanırım. Her
+
+1424
+01:08:14,190 --> 01:08:16,189
+bir uygulamam için bunu şey yapmama
+
+1425
+01:08:16,189 --> 01:08:18,189
+gerek yok.
+
+1426
+01:08:18,189 --> 01:08:20,189
+Şimdi bu durumda
+
+1427
+01:08:20,189 --> 01:08:22,189
+facebook.com
+
+1428
+01:08:22,189 --> 01:08:24,189
+bir frame açıyor yolladığı
+
+1429
+01:08:24,189 --> 01:08:26,189
+html sayesinde.
+
+1430
+01:08:26,189 --> 01:08:28,189
+O frame'in
+
+1431
+01:08:28,189 --> 01:08:30,189
+içeriğini de cdn facebook.com'dan
+
+1432
+01:08:30,189 --> 01:08:32,189
+alıyor. E ne oldu
+
+1433
+01:08:32,189 --> 01:08:34,189
+şimdi? Bunlar ikisi de
+
+1434
+01:08:34,189 --> 01:08:36,189
+aynı
+
+1435
+01:08:36,189 --> 01:08:38,189
+domenin parçaları. Biri
+
+1436
+01:08:38,189 --> 01:08:40,189
+super domain, biri sub domain.
+
+1437
+01:08:40,189 --> 01:08:42,189
+Ama az önce konuştuğumuz
+
+1438
+01:08:42,189 --> 01:08:44,189
+SOP'den ötürü
+
+1439
+01:08:44,189 --> 01:08:46,189
+birbirlerine
+
+1440
+01:08:46,189 --> 01:08:48,189
+bilgi pastayamayacaklar, erişemeyecekler.
+
+1441
+01:08:48,189 --> 01:08:50,189
+Konuşamayacaklar.
+
+1442
+01:08:50,189 --> 01:08:52,189
+Bu örnek için yanlış. Bunun çözülmesi
+
+1443
+01:08:52,189 --> 01:08:54,189
+lazım. O zaman
+
+1444
+01:08:54,189 --> 01:08:56,189
+eğer
+
+1445
+01:08:56,189 --> 01:08:58,189
+dokümanımızın
+
+1446
+01:08:58,189 --> 01:09:00,189
+domenini
+
+1447
+01:09:00,189 --> 01:09:02,189
+super domain olarak işaretlersek
+
+1448
+01:09:02,189 --> 01:09:06,340
+yani işte
+
+1449
+01:09:06,340 --> 01:09:08,340
+facebook.com'u document
+
+1450
+01:09:08,340 --> 01:09:10,340
+domeninde set ettim ve facebook.com
+
+1451
+01:09:10,340 --> 01:09:12,340
+super domain'dir.
+
+1452
+01:09:12,340 --> 01:09:14,340
+Alttan yüklenenler
+
+1453
+01:09:14,340 --> 01:09:16,340
+a.domain.com'dan
+
+1454
+01:09:16,340 --> 01:09:18,340
+yüklenenler kendilerini domain.com'a
+
+1455
+01:09:18,340 --> 01:09:21,680
+dönüştürebilirler.
+
+1456
+01:09:21,680 --> 01:09:23,680
+Ama a.domain.com kendini
+
+1457
+01:09:23,680 --> 01:09:25,680
+.com'a dönüştüremez.
+
+1458
+01:09:25,680 --> 01:09:27,680
+A.domain.co.uk'ya kendini
+
+1459
+01:09:27,680 --> 01:09:29,680
+.co.uk'ya dönüştüremez. Çünkü neden? Arada
+
+1460
+01:09:29,680 --> 01:09:32,960
+koskocaman bir
+
+1461
+01:09:32,960 --> 01:09:34,960
+ara parçayı atlamış oluyorsunuz. Orada
+
+1462
+01:09:34,960 --> 01:09:36,960
+milyon tane, zilyon tane
+
+1463
+01:09:36,960 --> 01:09:38,960
+farklı şey olabilir.
+
+1464
+01:09:38,960 --> 01:09:45,340
+Şimdi o zaman bakın facebook
+
+1465
+01:09:45,340 --> 01:09:49,069
+frame'i cdn
+
+1466
+01:09:49,069 --> 01:09:51,069
+facebook.com'dan yükledi.
+
+1467
+01:09:51,069 --> 01:09:53,069
+Burada çalışan script de dedi ki
+
+1468
+01:09:53,069 --> 01:09:55,069
+document.domain eşittir
+
+1469
+01:09:55,069 --> 01:09:57,069
+facebook.com ne yaptı?
+
+1470
+01:09:57,069 --> 01:09:59,069
+Super domain'i set etti.
+
+1471
+01:09:59,069 --> 01:10:01,069
+Super domain ile facebook set edebilir mi?
+
+1472
+01:10:01,069 --> 01:10:03,069
+Evet ikisi de aynı yerden geliyor.
+
+1473
+01:10:03,069 --> 01:10:05,069
+Artık bu frame'de
+
+1474
+01:10:05,069 --> 01:10:07,069
+çalışan
+
+1475
+01:10:07,069 --> 01:10:09,069
+bu frame'de çalışan script
+
+1476
+01:10:09,069 --> 01:10:11,069
+bu frame'den yapılacak olan
+
+1477
+01:10:11,069 --> 01:10:13,069
+istekler ve diğer şeyler
+
+1478
+01:10:13,069 --> 01:10:15,069
+nereden yapılıyormuş gibi olacak facebook.com'dan.
+
+1479
+01:10:15,069 --> 01:10:17,069
+Yani
+
+1480
+01:10:17,069 --> 01:10:19,069
+dışarıdaki window ile
+
+1481
+01:10:19,069 --> 01:10:21,069
+içindeki frame
+
+1482
+01:10:21,069 --> 01:10:23,069
+aynı orijinden çalışacak.
+
+1483
+01:10:23,069 --> 01:10:25,069
+Hiçbir sorun yok.
+
+1484
+01:10:25,069 --> 01:10:27,069
+Peki şimdi şuna bakalım.
+
+1485
+01:10:27,069 --> 01:10:29,069
+CS155 Stanford
+
+1486
+01:10:29,069 --> 01:10:31,069
+edu
+
+1487
+01:10:31,069 --> 01:10:33,069
+frame açtı.
+
+1488
+01:10:33,069 --> 01:10:35,069
+Stanford frame'ini açtı.
+
+1489
+01:10:35,069 --> 01:10:37,069
+Stanford frame'i
+
+1490
+01:10:37,069 --> 01:10:39,069
+doğal olarak ne yaptı?
+
+1491
+01:10:39,069 --> 01:10:42,859
+Domain'ini Stanford edu'ya set etti.
+
+1492
+01:10:42,859 --> 01:10:44,859
+Bir anda bakın ne yaptık?
+
+1493
+01:10:44,859 --> 01:10:46,859
+Privilege neye sebep oldu?
+
+1494
+01:10:46,859 --> 01:10:48,859
+Privilege
+
+1495
+01:10:48,859 --> 01:10:50,859
+yükseltilmesi gibi bir şey bu.
+
+1496
+01:10:50,859 --> 01:10:52,859
+Çünkü neden?
+
+1497
+01:10:52,859 --> 01:10:54,859
+Dışarıdaki window CS155
+
+1498
+01:10:54,859 --> 01:10:56,859
+Stanford edu
+
+1499
+01:10:56,859 --> 01:10:58,859
+domaininden, orijininden
+
+1500
+01:10:58,859 --> 01:11:00,859
+çalışırken birden
+
+1501
+01:11:00,859 --> 01:11:02,859
+bire include ettiği
+
+1502
+01:11:02,859 --> 01:11:04,859
+frame sayesinde
+
+1503
+01:11:04,859 --> 01:11:06,859
+Stanford edu orijininden
+
+1504
+01:11:06,859 --> 01:11:08,859
+çalışmaya başladı.
+
+1505
+01:11:08,859 --> 01:11:10,859
+O zaman ne oldu?
+
+1506
+01:11:10,859 --> 01:11:12,859
+CS155
+
+1507
+01:11:12,859 --> 01:11:14,859
+onun push ettiği bir
+
+1508
+01:11:14,859 --> 01:11:18,109
+javascript
+
+1509
+01:11:18,109 --> 01:11:20,109
+bunun çalıştığı
+
+1510
+01:11:20,109 --> 01:11:22,109
+browser'ın sahibi olan
+
+1511
+01:11:22,109 --> 01:11:24,109
+kullanıcının
+
+1512
+01:11:24,109 --> 01:11:26,109
+Stanford edu'daki
+
+1513
+01:11:26,109 --> 01:11:28,109
+CS155'teki değil
+
+1514
+01:11:28,109 --> 01:11:30,109
+Stanford edu'daki login bilgilerini
+
+1515
+01:11:30,109 --> 01:11:32,109
+çalabilir hale geldi.
+
+1516
+01:11:32,109 --> 01:11:34,109
+Çünkü neden? Yetki seviyesi yükseldi.
+
+1517
+01:11:34,109 --> 01:11:36,109
+Bunun böyle olmaması gerekiyor.
+
+1518
+01:11:36,109 --> 01:11:38,109
+Buna bu şekilde izin
+
+1519
+01:11:38,109 --> 01:11:42,350
+verilmemesi gerekiyor.
+
+1520
+01:11:42,350 --> 01:11:44,350
+Çözümü ne?
+
+1521
+01:11:44,350 --> 01:11:46,350
+Her iki tarafında document
+
+1522
+01:11:46,350 --> 01:11:48,350
+domaini aynı
+
+1523
+01:11:48,350 --> 01:11:50,350
+değere set edebiliyor olması.
+
+1524
+01:11:50,350 --> 01:11:52,350
+Şimdi
+
+1525
+01:11:52,350 --> 01:11:54,350
+yüklenen yer
+
+1526
+01:11:54,350 --> 01:11:56,350
+Stanford edu'yu set edebiliyor mu?
+
+1527
+01:11:56,350 --> 01:11:58,350
+Edebiliyor. Peki CS155
+
+1528
+01:11:58,350 --> 01:12:00,350
+Stanford edu document domainini
+
+1529
+01:12:00,350 --> 01:12:02,350
+Stanford edu'ya set edebilir mi?
+
+1530
+01:12:02,350 --> 01:12:04,350
+Hayır. Niçin?
+
+1531
+01:12:04,350 --> 01:12:06,350
+Burada o root'ta.
+
+1532
+01:12:06,350 --> 01:12:08,350
+Şurada
+
+1533
+01:12:08,350 --> 01:12:10,350
+Facebook zaten domainini
+
+1534
+01:12:10,350 --> 01:12:12,350
+facebook.com'a set edebilir mi?
+
+1535
+01:12:12,350 --> 01:12:14,350
+Evet. CDN facebook.com
+
+1536
+01:12:14,350 --> 01:12:16,350
+document domainini facebook'a
+
+1537
+01:12:16,350 --> 01:12:18,350
+set edebilir mi? Evet. Çünkü
+
+1538
+01:12:18,350 --> 01:12:20,350
+neden? Bir frame olarak
+
+1539
+01:12:20,350 --> 01:12:22,350
+facebook.com tarafından yüklendi.
+
+1540
+01:12:22,350 --> 01:12:24,350
+O zaman bu ikisi haberleşebilirler.
+
+1541
+01:12:24,350 --> 01:12:26,350
+Ama bu
+
+1542
+01:12:26,350 --> 01:12:28,350
+az önceki
+
+1543
+01:12:28,350 --> 01:12:30,350
+şu korumadan dolayı
+
+1544
+01:12:30,350 --> 01:12:32,350
+şu çözüm başlığı altında yazan korumadan
+
+1545
+01:12:32,350 --> 01:12:34,350
+dolayı haberleşemez. Yani
+
+1546
+01:12:34,350 --> 01:12:39,550
+aslında bir
+
+1547
+01:12:39,550 --> 01:12:41,550
+window ve o window'un içerisinde
+
+1548
+01:12:41,550 --> 01:12:43,550
+yüklenmiş olan bir frame birbirleriyle
+
+1549
+01:12:43,550 --> 01:12:45,550
+haberleşmek istiyorlar ise
+
+1550
+01:12:45,550 --> 01:12:47,550
+orijinlerini
+
+1551
+01:12:47,550 --> 01:12:49,550
+aynı
+
+1552
+01:12:49,550 --> 01:12:51,550
+değere set edebiliyor
+
+1553
+01:12:51,550 --> 01:12:53,550
+olmaları lazım. Hangi durumda da
+
+1554
+01:12:53,550 --> 01:12:55,550
+aynı domaini set edebileceklerini
+
+1555
+01:12:55,550 --> 01:12:57,550
+az önce gördük.
+
+1556
+01:12:57,550 --> 01:12:59,550
+Onun haricindeki durumlarda
+
+1557
+01:12:59,550 --> 01:13:01,550
+set edememeleri
+
+1558
+01:13:01,550 --> 01:13:03,550
+lazım.
+
+1559
+01:13:03,550 --> 01:13:05,550
+JavaScript'ta nasıl olacak bu iş?
+
+1560
+01:13:05,550 --> 01:13:10,720
+O tarafa bakalım.
+
+1561
+01:13:10,720 --> 01:13:12,720
+Bakın JavaScript çalışırken
+
+1562
+01:13:12,720 --> 01:13:14,720
+HTTP request yapabilir.
+
+1563
+01:13:14,720 --> 01:13:16,720
+Burada iki türlü.
+
+1564
+01:13:16,720 --> 01:13:18,720
+Ya klasik standart işte
+
+1565
+01:13:18,720 --> 01:13:20,720
+JavaScript kütüphanesi üzerinden
+
+1566
+01:13:20,720 --> 01:13:22,720
+ya da jQuery üzerinden.
+
+1567
+01:13:22,720 --> 01:13:24,720
+Öyle veya böyle article example
+
+1568
+01:13:24,720 --> 01:13:26,720
+ne yapılmış?
+
+1569
+01:13:26,720 --> 01:13:28,720
+Include edilmiş, yüklenmiş.
+
+1570
+01:13:28,720 --> 01:13:32,319
+Şimdi burası
+
+1571
+01:13:32,319 --> 01:13:34,319
+bu örnek çok sorun değil çünkü
+
+1572
+01:13:34,319 --> 01:13:36,319
+niye? Bulunulan
+
+1573
+01:13:36,319 --> 01:13:38,319
+orijinden yapıyor bunu.
+
+1574
+01:13:38,319 --> 01:13:40,319
+Zaten server'ın açıkçası
+
+1575
+01:13:40,319 --> 01:13:42,319
+adını vermediği için
+
+1576
+01:13:42,319 --> 01:13:44,319
+bağlı olunan server'dan
+
+1577
+01:13:44,319 --> 01:13:46,319
+bu istek gerçekleşecek.
+
+1578
+01:13:46,319 --> 01:13:48,319
+Ondan ötürü de
+
+1579
+01:13:48,319 --> 01:13:50,319
+same origin
+
+1580
+01:13:50,319 --> 01:13:52,319
+okey hiçbir sorun yok.
+
+1581
+01:13:52,319 --> 01:13:54,319
+Ancak saldırganın
+
+1582
+01:13:54,319 --> 01:13:56,319
+bunu yapamaması lazım. Bakın
+
+1583
+01:13:56,319 --> 01:13:58,319
+jQuery ile
+
+1584
+01:13:58,319 --> 01:14:00,319
+aynı jQuery ile article example'ı
+
+1585
+01:14:00,319 --> 01:14:02,319
+yüklerken burada bank.com'dan
+
+1586
+01:14:02,319 --> 01:14:04,319
+account'u yüklemeye
+
+1587
+01:14:04,319 --> 01:14:06,319
+çalışıyor.
+
+1588
+01:14:06,319 --> 01:14:08,319
+Bunun ne olmaması lazım?
+
+1589
+01:14:08,319 --> 01:14:10,319
+Gerçekleştirilemiyor olması lazım.
+
+1590
+01:14:10,319 --> 01:14:12,319
+Buna izin verilmemesi lazım.
+
+1591
+01:14:12,319 --> 01:14:16,239
+Şimdi
+
+1592
+01:14:16,239 --> 01:14:18,239
+JavaScript'ten yapılan
+
+1593
+01:14:18,239 --> 01:14:20,239
+HTTP request'larını
+
+1594
+01:14:20,239 --> 01:14:22,239
+gerçekleşip
+
+1595
+01:14:22,239 --> 01:14:24,239
+gerçekleşmeyeceğinin
+
+1596
+01:14:24,239 --> 01:14:29,220
+anlaşılmasının
+
+1597
+01:14:29,220 --> 01:14:31,220
+yolu, bunun
+
+1598
+01:14:31,220 --> 01:14:33,220
+karar verilmesinin yolu
+
+1599
+01:14:33,220 --> 01:14:35,220
+nedir arkadaşlar?
+
+1600
+01:14:35,220 --> 01:14:38,750
+Cross origin
+
+1601
+01:14:38,750 --> 01:14:40,750
+resource sharing. Buna
+
+1602
+01:14:40,750 --> 01:14:42,750
+neresi karar veriyor?
+
+1603
+01:14:42,750 --> 01:14:44,750
+Server karar veriyor.
+
+1604
+01:14:44,750 --> 01:14:46,750
+Server'a bir istek
+
+1605
+01:14:46,750 --> 01:14:48,750
+geliyor. Server
+
+1606
+01:14:48,750 --> 01:14:50,750
+bu istekle beraber diyor ki
+
+1607
+01:14:50,750 --> 01:14:52,750
+sen buna erişebilirsin veya
+
+1608
+01:14:52,750 --> 01:14:54,750
+erişemezsin. Teknik
+
+1609
+01:14:54,750 --> 01:14:56,750
+olarak aslında buna kimlerin
+
+1610
+01:14:56,750 --> 01:14:58,750
+erişebileceğini söylüyor.
+
+1611
+01:14:58,750 --> 01:15:00,750
+Öylesi daha kolay. Onu o şekilde
+
+1612
+01:15:00,750 --> 01:15:02,750
+ifade etmesi daha kolay.
+
+1613
+01:15:02,750 --> 01:15:04,750
+Browser'da diyor ki
+
+1614
+01:15:04,750 --> 01:15:06,750
+buna erişilebilir
+
+1615
+01:15:06,750 --> 01:15:08,750
+veya erişilemezsin. Yani aslında
+
+1616
+01:15:08,750 --> 01:15:10,750
+bakın reference monitor ne tarafta?
+
+1617
+01:15:10,750 --> 01:15:12,750
+Browser'da. Kuralı kim gönderiyor?
+
+1618
+01:15:12,750 --> 01:15:14,750
+Server gönderiyor ama
+
+1619
+01:15:14,750 --> 01:15:16,750
+bu kuralın uygulanması ve
+
+1620
+01:15:16,750 --> 01:15:18,750
+gerçekleştirilmesini neresi gerçekleştiriyor?
+
+1621
+01:15:18,750 --> 01:15:20,750
+Browser gerçekleştiriyor. O yüzden
+
+1622
+01:15:20,750 --> 01:15:22,750
+Browser'ın integritesinin önemi
+
+1623
+01:15:22,750 --> 01:15:24,750
+bir kez daha ön plana çıkıyor. Buna ne
+
+1624
+01:15:24,750 --> 01:15:26,750
+diyoruz? Cross origin resource sharing.
+
+1625
+01:15:26,750 --> 01:15:28,750
+Şimdi
+
+1626
+01:15:28,750 --> 01:15:30,750
+istekte bulunulup bulunamaması
+
+1627
+01:15:30,750 --> 01:15:32,750
+ayrı bir şey. Gelen
+
+1628
+01:15:32,750 --> 01:15:34,750
+istek sonucunda
+
+1629
+01:15:34,750 --> 01:15:36,750
+gelen içeriğin okunup okunamaması
+
+1630
+01:15:36,750 --> 01:15:38,750
+ayrı bir şey. Her
+
+1631
+01:15:38,750 --> 01:15:40,750
+ikisini de belirleyen
+
+1632
+01:15:40,750 --> 01:15:42,750
+server'ın kendisi.
+
+1633
+01:15:42,750 --> 01:15:44,750
+Örneklerde
+
+1634
+01:15:44,750 --> 01:15:46,750
+göreceğiz.
+
+1635
+01:15:46,750 --> 01:15:48,750
+Eee
+
+1636
+01:15:48,750 --> 01:15:50,750
+Server'ın bu konuyla alakalı
+
+1637
+01:15:50,750 --> 01:15:56,079
+Server'ın bu konuyla
+
+1638
+01:15:56,079 --> 01:15:58,079
+alakalı. Pardon şu şeyi
+
+1639
+01:15:58,079 --> 01:16:00,079
+üstüme de
+
+1640
+01:16:00,079 --> 01:16:02,079
+kapatalım.
+
+1641
+01:16:02,079 --> 01:16:10,100
+Server'ın
+
+1642
+01:16:10,100 --> 01:16:12,100
+bu konuyla alakalı
+
+1643
+01:16:12,100 --> 01:16:14,100
+gönderdiği
+
+1644
+01:16:14,100 --> 01:16:16,100
+header
+
+1645
+01:16:16,100 --> 01:16:18,100
+bilgisi. Access control
+
+1646
+01:16:18,100 --> 01:16:20,100
+allow origin. Bakın access
+
+1647
+01:16:20,100 --> 01:16:22,100
+control. Dikkat edin. Access
+
+1648
+01:16:22,100 --> 01:16:24,100
+control. Aynı konuya geldik
+
+1649
+01:16:24,100 --> 01:16:26,100
+değil mi? Reference monitor dedik access
+
+1650
+01:16:26,100 --> 01:16:29,699
+control. Burada
+
+1651
+01:16:29,699 --> 01:16:31,699
+performans açısından uzun sürecek
+
+1652
+01:16:31,699 --> 01:16:33,699
+performans açısından uzun sürecek
+
+1653
+01:16:33,699 --> 01:16:35,699
+karmaşık işlemler öncesinde
+
+1654
+01:16:35,699 --> 01:16:37,699
+karmaşık işlemler öncesinde
+
+1655
+01:16:37,699 --> 01:16:39,699
+bu erişim izni var mı yok mu diye
+
+1656
+01:16:39,699 --> 01:16:41,699
+bu erişim izni var mı yok mu diye kontrol edilmesinde fayda var.
+
+1657
+01:16:41,699 --> 01:16:43,699
+Çünkü siz server'a bir şey yaptıracaksınız ama
+
+1658
+01:16:43,699 --> 01:16:45,699
+ondan sonra server'dan gelen
+
+1659
+01:16:45,699 --> 01:16:49,229
+header diyecek ki
+
+1660
+01:16:49,229 --> 01:16:51,229
+sen buna erişemiyorsun ama
+
+1661
+01:16:51,229 --> 01:16:53,229
+server'a bir sürü iş yaptırırsınız. Bakın
+
+1662
+01:16:53,229 --> 01:16:55,229
+o kadar güzel bir denial of
+
+1663
+01:16:55,229 --> 01:16:57,229
+service saldırı noktası ki
+
+1664
+01:16:57,229 --> 01:16:59,229
+erişemeyeceğinizi biliyorsunuz
+
+1665
+01:16:59,229 --> 01:17:01,229
+erişemeyeceğinizi biliyorsunuz yetkili olarak
+
+1666
+01:17:01,229 --> 01:17:03,229
+yetkisiz olduğunuzu biliyorsunuz ama
+
+1667
+01:17:03,229 --> 01:17:05,229
+yaptığınız isteğin karşılığında server'ın
+
+1668
+01:17:05,229 --> 01:17:07,229
+yorulmasına sebep olacak
+
+1669
+01:17:07,229 --> 01:17:09,229
+bir işlem yapacağının farkındasınız
+
+1670
+01:17:09,229 --> 01:17:11,229
+ve bunu siz sürekli ve sürekli
+
+1671
+01:17:11,229 --> 01:17:13,229
+gönderiyorsunuz.
+
+1672
+01:17:13,229 --> 01:17:15,229
+O zaman server o işi yapmaktan dolayı
+
+1673
+01:17:15,229 --> 01:17:17,229
+bayağı bir işlemci ve memur kaynağı
+
+1674
+01:17:17,229 --> 01:17:19,229
+harcıyor.
+
+1675
+01:17:19,229 --> 01:17:21,229
+Ama içeriği kullanmanıza bile gerek yok.
+
+1676
+01:17:21,229 --> 01:17:23,229
+Tam bir denial of service noktası.
+
+1677
+01:17:23,229 --> 01:17:25,229
+Peki standart browser'lar
+
+1678
+01:17:25,229 --> 01:17:27,229
+bunun önüne geçmek için
+
+1679
+01:17:27,229 --> 01:17:29,229
+ne yapıyorlar? Pre-flight
+
+1680
+01:17:29,229 --> 01:17:31,229
+check uçuş öncesi kontrolü yapıyorlar.
+
+1681
+01:17:31,229 --> 01:17:33,229
+Nasıl mı?
+
+1682
+01:17:33,229 --> 01:17:35,229
+Örneğin
+
+1683
+01:17:35,229 --> 01:17:39,090
+appcompany.com'da
+
+1684
+01:17:39,090 --> 01:17:41,090
+bir uygulamamız çalışıyor.
+
+1685
+01:17:41,090 --> 01:17:43,090
+Bunun da appcompany.com'dan
+
+1686
+01:17:43,090 --> 01:17:45,090
+javascript üzerinden
+
+1687
+01:17:45,090 --> 01:17:47,090
+istek yapıp bir json
+
+1688
+01:17:47,090 --> 01:17:49,090
+dosyasını alması lazım,
+
+1689
+01:17:49,090 --> 01:17:51,090
+datasını alması lazım.
+
+1690
+01:17:51,090 --> 01:17:53,090
+Kısaltma olsun diye
+
+1691
+01:17:53,090 --> 01:17:55,090
+c kullanılmış o company yani
+
+1692
+01:17:55,090 --> 01:17:57,090
+oralar büyümesin diye. Şimdi
+
+1693
+01:17:57,090 --> 01:17:59,090
+sayfadan
+
+1694
+01:17:59,090 --> 01:18:01,090
+post diye çıkıyor
+
+1695
+01:18:01,090 --> 01:18:03,090
+browser bunu options'a dönüştürüyor.
+
+1696
+01:18:03,090 --> 01:18:05,090
+http
+
+1697
+01:18:05,090 --> 01:18:07,090
+şeylerinden
+
+1698
+01:18:07,090 --> 01:18:09,090
+metotlarından
+
+1699
+01:18:09,090 --> 01:18:11,090
+bir tanesi de options.
+
+1700
+01:18:11,090 --> 01:18:13,090
+Server'ın neleri
+
+1701
+01:18:13,090 --> 01:18:15,090
+desteklediğini neleri desteklemediğini
+
+1702
+01:18:15,090 --> 01:18:17,090
+görmek adına kullandığımız şeylerden biri.
+
+1703
+01:18:17,090 --> 01:18:19,090
+Hiç bir işlem
+
+1704
+01:18:19,090 --> 01:18:21,090
+yaptırmıyoruz aslında server'a.
+
+1705
+01:18:21,090 --> 01:18:23,090
+Server sadece diyor ki
+
+1706
+01:18:23,090 --> 01:18:25,090
+evet
+
+1707
+01:18:25,090 --> 01:18:27,090
+buraya http
+
+1708
+01:18:27,090 --> 01:18:29,090
+appc.com
+
+1709
+01:18:29,090 --> 01:18:31,090
+erişebilir.
+
+1710
+01:18:31,090 --> 01:18:33,090
+Sadece browser
+
+1711
+01:18:33,090 --> 01:18:35,090
+access control'u gerçekleştirip
+
+1712
+01:18:35,090 --> 01:18:37,090
+gerçek post x'i isteğini gönderiyor.
+
+1713
+01:18:37,090 --> 01:18:39,090
+Bakın alt kısımda.
+
+1714
+01:18:41,090 --> 01:18:43,090
+Veya
+
+1715
+01:18:43,090 --> 01:18:45,090
+şey diyor ki
+
+1716
+01:18:45,090 --> 01:18:47,090
+herkes erişebilir bu içeriğe.
+
+1717
+01:18:47,090 --> 01:18:49,090
+access control hello origin
+
+1718
+01:18:49,090 --> 01:18:51,090
+asterix wildcard
+
+1719
+01:18:51,090 --> 01:18:53,090
+herkes erişebilir. Sorun yok.
+
+1720
+01:18:53,090 --> 01:18:55,090
+O zaman da isteği gönderiyor.
+
+1721
+01:18:55,090 --> 01:18:57,090
+Ama server derse ki
+
+1722
+01:18:57,090 --> 01:18:59,090
+buna sadece www.c.com
+
+1723
+01:18:59,090 --> 01:19:01,090
+erişebilir.
+
+1724
+01:19:01,090 --> 01:19:03,090
+www.c.com eşit midir?
+
+1725
+01:19:03,090 --> 01:19:05,090
+Hayır. O zaman browser
+
+1726
+01:19:05,090 --> 01:19:07,090
+error'u geri döndürüyor.
+
+1727
+01:19:07,090 --> 01:19:09,090
+Şimdi az önce söylediğim gibi bunun
+
+1728
+01:19:11,090 --> 01:19:15,010
+her istekte yapılmasının
+
+1729
+01:19:15,010 --> 01:19:17,010
+anlamı yok. Server'ı yoracak
+
+1730
+01:19:17,010 --> 01:19:19,010
+istekleri
+
+1731
+01:19:19,010 --> 01:19:21,010
+engellemek adına yapılması
+
+1732
+01:19:21,010 --> 01:19:25,310
+gerekiyor. Bakın
+
+1733
+01:19:25,310 --> 01:19:29,489
+get zaten
+
+1734
+01:19:29,489 --> 01:19:31,489
+yani get'in şeyi yok.
+
+1735
+01:19:31,489 --> 01:19:33,489
+Get'i önceden option'la body
+
+1736
+01:19:33,489 --> 01:19:35,489
+göndermiyorsunuz, parametre göndermiyorsunuz
+
+1737
+01:19:35,489 --> 01:19:37,489
+şeyi göndermiyorsunuz. Get'i
+
+1738
+01:19:37,489 --> 01:19:39,489
+otomatikman gidiyor. Yani get ya
+
+1739
+01:19:39,489 --> 01:19:41,489
+get edilebiliyor ya da get edilemiyor.
+
+1740
+01:19:41,489 --> 01:19:43,489
+Geri dönen neyse o şekilde.
+
+1741
+01:19:43,489 --> 01:19:45,489
+Get de
+
+1742
+01:19:45,489 --> 01:19:47,489
+burada error döndü.
+
+1743
+01:19:47,489 --> 01:19:55,279
+Get edemediniz. Şimdi bakın
+
+1744
+01:19:55,279 --> 01:19:59,649
+get, burada da istek
+
+1745
+01:19:59,649 --> 01:20:01,649
+geldi. Değil mi HDTV hep
+
+1746
+01:20:01,649 --> 01:20:03,649
+başından beri konuştuğumuz şu
+
+1747
+01:20:03,649 --> 01:20:05,649
+get olayı meşhur.
+
+1748
+01:20:05,649 --> 01:20:07,649
+Get olayı.
+
+1749
+01:20:07,649 --> 01:20:09,649
+Get'e karşı koruma almak
+
+1750
+01:20:09,649 --> 01:20:11,649
+adına
+
+1751
+01:20:11,649 --> 01:20:13,649
+banka ne demiş?
+
+1752
+01:20:13,649 --> 01:20:15,649
+Sadece bank.com
+
+1753
+01:20:15,649 --> 01:20:17,649
+işleyebilir. O yüzden attacker'ın
+
+1754
+01:20:17,649 --> 01:20:19,649
+isteği ne oluyor?
+
+1755
+01:20:19,649 --> 01:20:27,569
+Geri çevrilmiş oluyor. Şimdi
+
+1756
+01:20:27,569 --> 01:20:29,569
+cookie tarafına bakalım arkadaşlar.
+
+1757
+01:20:29,569 --> 01:20:31,569
+Zaten cookie'leri de bitirdiğimiz zaman
+
+1758
+01:20:31,569 --> 01:20:33,569
+bugünkü dersimiz bitecek. Çok fazla
+
+1759
+01:20:33,569 --> 01:20:35,569
+bir slide'ımız kalmadı.
+
+1760
+01:20:35,569 --> 01:20:37,569
+Devam eder, tamamlarız.
+
+1761
+01:20:37,569 --> 01:20:39,569
+Dersi bir bütün halinde, tek parça
+
+1762
+01:20:39,569 --> 01:20:41,569
+halinde bitirmiş oluruz.
+
+1763
+01:20:41,569 --> 01:20:43,569
+Şimdi cookie'ler de
+
+1764
+01:20:52,340 --> 01:20:54,340
+bundan oluşuyor.
+
+1765
+01:20:54,340 --> 01:20:56,340
+Diğer tarafta HTTP
+
+1766
+01:20:56,340 --> 01:20:58,340
+request'lerinde
+
+1767
+01:20:58,340 --> 01:21:00,340
+origin neden oluşuyordu arkadaşlar?
+
+1768
+01:21:00,340 --> 01:21:02,340
+Scheme domain
+
+1769
+01:21:02,340 --> 01:21:04,340
+port'tan oluşuyordu.
+
+1770
+01:21:04,340 --> 01:21:06,340
+Şimdi bunun üzerinden ilerlememiz
+
+1771
+01:21:06,340 --> 01:21:08,340
+lazım. Örneklerle çok daha rahat
+
+1772
+01:21:08,340 --> 01:21:10,340
+anlayacağız. Domain kısmı
+
+1773
+01:21:10,340 --> 01:21:12,340
+path kısmı.
+
+1774
+01:21:12,340 --> 01:21:14,340
+Bakın üç tane cookie'miz var.
+
+1775
+01:21:14,340 --> 01:21:16,340
+Cookie1, cookie2,
+
+1776
+01:21:16,340 --> 01:21:18,340
+cookie3. Value'ların hiçbir önemi yok.
+
+1777
+01:21:18,340 --> 01:21:20,340
+Birinde domain login site.com
+
+1778
+01:21:20,340 --> 01:21:22,340
+diğerinde site.com, diğerinde
+
+1779
+01:21:22,340 --> 01:21:24,340
+site.com. Birinde path
+
+1780
+01:21:24,340 --> 01:21:26,340
+slash, diğerinde path slash, diğerinde
+
+1781
+01:21:26,340 --> 01:21:28,340
+path slash my slash
+
+1782
+01:21:28,340 --> 01:21:30,340
+home. Bakalım
+
+1783
+01:21:30,340 --> 01:21:32,340
+nereden gelen
+
+1784
+01:21:32,340 --> 01:21:34,340
+istekler için bu cookie
+
+1785
+01:21:34,340 --> 01:21:36,340
+gönderilecek. Bu arada unutmayın
+
+1786
+01:21:36,340 --> 01:21:38,340
+cookie'nin gönderilmesi,
+
+1787
+01:21:38,340 --> 01:21:40,340
+cookie'ye erişilebilir olması yani
+
+1788
+01:21:40,340 --> 01:21:42,340
+cookie'nin server'a gönderilmesi veya
+
+1789
+01:21:42,340 --> 01:21:44,340
+cookie'nin o server'dan
+
+1790
+01:21:44,340 --> 01:21:46,340
+gelen bir javascript
+
+1791
+01:21:46,340 --> 01:21:48,340
+kütüphanesiyle koduyla
+
+1792
+01:21:48,340 --> 01:21:50,340
+okunması güvenlik açığı
+
+1793
+01:21:50,340 --> 01:21:52,340
+oluşturacak. Burada
+
+1794
+01:21:52,340 --> 01:21:54,340
+cookie'yi
+
+1795
+01:21:54,340 --> 01:21:56,340
+server'ın yollamasından
+
+1796
+01:21:56,340 --> 01:21:58,340
+bahsetmiyoruz. O
+
+1797
+01:21:58,340 --> 01:22:00,340
+server'a erişim sırasında
+
+1798
+01:22:00,340 --> 01:22:02,340
+browser'ın cookie göndermesinden
+
+1799
+01:22:02,340 --> 01:22:04,340
+bahsediyoruz. Yani bu tabloyu
+
+1800
+01:22:04,340 --> 01:22:06,340
+şöyle okumamız lazım.
+
+1801
+01:22:06,340 --> 01:22:08,340
+Bu cookie değerleri
+
+1802
+01:22:08,340 --> 01:22:10,340
+varken
+
+1803
+01:22:10,340 --> 01:22:12,340
+browser'da
+
+1804
+01:22:12,340 --> 01:22:14,340
+browser checkout site.com'a
+
+1805
+01:22:14,340 --> 01:22:16,340
+login site.com'a
+
+1806
+01:22:16,340 --> 01:22:18,340
+login site.com slash my slash home'a
+
+1807
+01:22:18,340 --> 01:22:20,340
+site.com slash
+
+1808
+01:22:20,340 --> 01:22:22,340
+account'a erişim yaparken
+
+1809
+01:22:22,340 --> 01:22:24,340
+bu cookie'lerden hangilerini
+
+1810
+01:22:24,340 --> 01:22:26,340
+gönderecek veya göndermeyecek?
+
+1811
+01:22:26,340 --> 01:22:28,340
+Bunu anlamaya çalışıyoruz.
+
+1812
+01:22:28,340 --> 01:22:30,340
+Tamam mı? Buradaki fokusumuz bu.
+
+1813
+01:22:30,340 --> 01:22:32,340
+Şimdi checkout site.com'a
+
+1814
+01:22:32,340 --> 01:22:34,340
+erişiyor. Bakın
+
+1815
+01:22:34,340 --> 01:22:36,340
+domain tutmuyor. O yüzden
+
+1816
+01:22:36,340 --> 01:22:39,899
+cookie1 gitmeyecek.
+
+1817
+01:22:39,899 --> 01:22:41,899
+Checkout site.com'a erişiyor.
+
+1818
+01:22:41,899 --> 01:22:43,899
+Cookie2 için bakıyorum. Site.com
+
+1819
+01:22:43,899 --> 01:22:45,899
+bunun bir
+
+1820
+01:22:45,899 --> 01:22:47,899
+safiksine sahip.
+
+1821
+01:22:47,899 --> 01:22:49,899
+Okey.
+
+1822
+01:22:49,899 --> 01:22:51,899
+Pad zaten
+
+1823
+01:22:51,899 --> 01:22:53,899
+slash olarak verilmiş. Burada da
+
+1824
+01:22:53,899 --> 01:22:55,899
+pad verilmemiş. O da onun
+
+1825
+01:22:55,899 --> 01:22:57,899
+şeyi, alt parçası.
+
+1826
+01:22:57,899 --> 01:22:59,899
+Cookie2 gidecek.
+
+1827
+01:22:59,899 --> 01:23:01,899
+Cookie3 de domain tutuyor
+
+1828
+01:23:01,899 --> 01:23:03,899
+ancak pad tutmuyor.
+
+1829
+01:23:03,899 --> 01:23:05,899
+Çünkü birinde spesifik olarak
+
+1830
+01:23:05,899 --> 01:23:07,899
+my slash home verilmiş.
+
+1831
+01:23:07,899 --> 01:23:09,899
+Diğeri ise sadece slash.
+
+1832
+01:23:09,899 --> 01:23:11,899
+my slash home
+
+1833
+01:23:11,899 --> 01:23:13,899
+slash'i içermediği için
+
+1834
+01:23:13,899 --> 01:23:15,899
+cookie3 gönderemiyor.
+
+1835
+01:23:15,899 --> 01:23:17,899
+Login.
+
+1836
+01:23:17,899 --> 01:23:19,899
+site.com'a erişileceği zaman
+
+1837
+01:23:19,899 --> 01:23:21,899
+birincisi zaten otomatikman
+
+1838
+01:23:21,899 --> 01:23:23,899
+gidiyor. İkincisi site.com'a
+
+1839
+01:23:23,899 --> 01:23:25,899
+login site.com ve pad'in
+
+1840
+01:23:25,899 --> 01:23:27,899
+slash olmasından dolayı gidiyor. Üçüncüsünde
+
+1841
+01:23:27,899 --> 01:23:29,899
+site.com ve login site.com
+
+1842
+01:23:29,899 --> 01:23:31,899
+uyuşmasına rağmen az önce söylediğim
+
+1843
+01:23:31,899 --> 01:23:33,899
+pad'lerin uyuşmamasından ötürü
+
+1844
+01:23:33,899 --> 01:23:35,899
+gitmiyor.
+
+1845
+01:23:35,899 --> 01:23:37,899
+login.site.com slash my
+
+1846
+01:23:37,899 --> 01:23:39,899
+slash home üç cookie birden
+
+1847
+01:23:39,899 --> 01:23:41,899
+gidiyor. Çünkü neden?
+
+1848
+01:23:41,899 --> 01:23:43,899
+Birincisinde domain tutuyor
+
+1849
+01:23:43,899 --> 01:23:45,899
+slash diğerini içeriyor. İkincisinde
+
+1850
+01:23:45,899 --> 01:23:47,899
+domain site.com'dan ötürü
+
+1851
+01:23:47,899 --> 01:23:49,899
+tutuyor. Slash
+
+1852
+01:23:49,899 --> 01:23:51,899
+içeriyor. Üçüncüsünde
+
+1853
+01:23:51,899 --> 01:23:53,899
+site.com zaten
+
+1854
+01:23:53,899 --> 01:23:55,899
+tutuyor login site.com'un
+
+1855
+01:23:55,899 --> 01:23:57,899
+suffix'i olduğu için.
+
+1856
+01:23:57,899 --> 01:23:59,899
+my home
+
+1857
+01:23:59,899 --> 01:24:01,899
+birebir uyumlu olduğu için.
+
+1858
+01:24:01,899 --> 01:24:03,899
+Dördüncü örneğe geliyoruz.
+
+1859
+01:24:03,899 --> 01:24:05,899
+site.com
+
+1860
+01:24:05,899 --> 01:24:07,899
+slash account.
+
+1861
+01:24:07,899 --> 01:24:09,899
+Birincisinde suffix
+
+1862
+01:24:09,899 --> 01:24:11,899
+site.com okey tuttu ama
+
+1863
+01:24:11,899 --> 01:24:13,899
+account ve slash tutmadılar.
+
+1864
+01:24:13,899 --> 01:24:15,899
+O cookie gönderilmeyecek.
+
+1865
+01:24:15,899 --> 01:24:17,899
+İkincisinde
+
+1866
+01:24:17,899 --> 01:24:19,899
+site.com tuttu.
+
+1867
+01:24:19,899 --> 01:24:21,899
+site.com tuttu.
+
+1868
+01:24:21,899 --> 01:24:23,899
+Diğeri slash fondan da
+
+1869
+01:24:23,899 --> 01:24:25,899
+olayı gönderilecek.
+
+1870
+01:24:25,899 --> 01:24:27,899
+Üçüncüsünde
+
+1871
+01:24:27,899 --> 01:24:29,899
+site.com
+
+1872
+01:24:29,899 --> 01:24:31,899
+site.com
+
+1873
+01:24:31,899 --> 01:24:33,899
+tuttu ama
+
+1874
+01:24:33,899 --> 01:24:35,899
+ne tutmadı arkadaşlar? pet tutmadı.
+
+1875
+01:24:35,899 --> 01:24:37,899
+O yüzden üçüncü cookie'yi göndermeyecek.
+
+1876
+01:24:37,899 --> 01:24:39,899
+Mantık bunun üzerine
+
+1877
+01:24:39,899 --> 01:24:46,420
+kurulu. Web siteleri
+
+1878
+01:24:46,420 --> 01:24:48,420
+ne yapabiliyor?
+
+1879
+01:24:48,420 --> 01:24:50,420
+Scobu
+
+1880
+01:24:50,420 --> 01:24:53,819
+bir prefix'in
+
+1881
+01:24:53,819 --> 01:24:55,819
+domain'i şey bir domain'in
+
+1882
+01:24:55,819 --> 01:24:57,819
+prefix'i veya bir pet'in prefix'i
+
+1883
+01:24:57,819 --> 01:24:59,819
+olarak set edebiliyorlar.
+
+1884
+01:24:59,819 --> 01:25:01,819
+Yani
+
+1885
+01:25:01,819 --> 01:25:03,819
+cs155 stanford edu
+
+1886
+01:25:03,819 --> 01:25:05,819
+cookie'yi cs155 stanford
+
+1887
+01:25:05,819 --> 01:25:07,819
+edu için set edebilir veya
+
+1888
+01:25:07,819 --> 01:25:09,819
+stanford edu için set edebilir ama
+
+1889
+01:25:09,819 --> 01:25:11,819
+stanford edu
+
+1890
+01:25:11,819 --> 01:25:13,819
+cs155 stanford edu
+
+1891
+01:25:13,819 --> 01:25:15,819
+için set edemez. Şimdi bakın bir önceki
+
+1892
+01:25:15,819 --> 01:25:17,819
+örnekte browser neyi
+
+1893
+01:25:17,819 --> 01:25:19,819
+gönderebilir? Hangi siteye
+
+1894
+01:25:19,819 --> 01:25:21,819
+erişirken hangi cookie'yi
+
+1895
+01:25:21,819 --> 01:25:23,819
+gönderebilir diye bakıyordun. Bu örnekte
+
+1896
+01:25:23,819 --> 01:25:25,819
+ise server
+
+1897
+01:25:25,819 --> 01:25:27,819
+cookie gönderirken
+
+1898
+01:25:27,819 --> 01:25:29,819
+cookie'nin
+
+1899
+01:25:29,819 --> 01:25:31,819
+scobu'nu ne olarak gönderebilir ona bakıyoruz.
+
+1900
+01:25:31,819 --> 01:25:33,819
+Demek ki
+
+1901
+01:25:33,819 --> 01:25:35,819
+subdomain'ler
+
+1902
+01:25:35,819 --> 01:25:37,819
+superdomain'ler
+
+1903
+01:25:37,819 --> 01:25:39,819
+için gönderebiliyor
+
+1904
+01:25:39,819 --> 01:25:41,819
+ama tabii ki cs stanford edu
+
+1905
+01:25:41,819 --> 01:25:43,819
+cs155 stanford edu
+
+1906
+01:25:43,819 --> 01:25:45,819
+edu için
+
+1907
+01:25:45,819 --> 01:25:47,819
+gönderemez. Sadece stanford edu için
+
+1908
+01:25:47,819 --> 01:25:49,819
+gönderemez.
+
+1909
+01:25:49,819 --> 01:25:51,819
+edu'nun cs155
+
+1910
+01:25:51,819 --> 01:25:53,819
+yani 6 için gönderememesinin sebebi
+
+1911
+01:25:53,819 --> 01:25:55,819
+çok net herhalde değil mi? Çünkü orası
+
+1912
+01:25:55,819 --> 01:25:57,819
+daha aşağıda daha spesifik.
+
+1913
+01:25:57,819 --> 01:25:59,819
+Aynı şekilde bakın
+
+1914
+01:25:59,819 --> 01:26:01,819
+website.com slash
+
+1915
+01:26:01,819 --> 01:26:03,819
+website.com slash için yapabilir
+
+1916
+01:26:03,819 --> 01:26:05,819
+website.com slash login
+
+1917
+01:26:05,819 --> 01:26:07,819
+slash için yapabilir ama
+
+1918
+01:26:07,819 --> 01:26:09,819
+website.com sonunda slash
+
+1919
+01:26:09,819 --> 01:26:11,819
+yok dikkat edin
+
+1920
+01:26:11,819 --> 01:26:13,819
+sonunda slash olmadığı için website.com
+
+1921
+01:26:13,819 --> 01:26:15,819
+slash login için yapamaz.
+
+1922
+01:26:15,819 --> 01:26:17,819
+Ama onun bir trafiksi değil.
+
+1923
+01:26:17,819 --> 01:26:22,670
+Eğer bir cookie'nin
+
+1924
+01:26:22,670 --> 01:26:24,670
+domeni yoksa
+
+1925
+01:26:24,670 --> 01:26:26,670
+yani sadece pet verildiyse
+
+1926
+01:26:26,670 --> 01:26:28,670
+o cookie sadece ve
+
+1927
+01:26:28,670 --> 01:26:30,670
+sadece o cookie'yi
+
+1928
+01:26:30,670 --> 01:26:32,670
+gönderen server'a geri gönderilir.
+
+1929
+01:26:32,670 --> 01:26:34,670
+Başka bir yere geri gönderilemez.
+
+1930
+01:26:34,670 --> 01:26:36,670
+Bakın
+
+1931
+01:26:36,670 --> 01:26:38,670
+site.com'dan
+
+1932
+01:26:38,670 --> 01:26:40,670
+bir cookie gelmiş
+
+1933
+01:26:40,670 --> 01:26:42,670
+adı cookie1
+
+1934
+01:26:42,670 --> 01:26:44,670
+domain site.com pet slash
+
+1935
+01:26:44,670 --> 01:26:46,670
+subdomain.site.com
+
+1936
+01:26:46,670 --> 01:26:48,670
+ona erişirken bu cookie'yi
+
+1937
+01:26:48,670 --> 01:26:50,670
+gönderebilirsiniz. Sorun yok.
+
+1938
+01:26:50,670 --> 01:26:52,670
+Çünkü domain'ler
+
+1939
+01:26:52,670 --> 01:26:54,670
+vardı ya suffix olayı tutuyor
+
+1940
+01:26:54,670 --> 01:26:56,670
+pet olayı tutuyor ama
+
+1941
+01:26:56,670 --> 01:26:58,670
+site.com'dan cookie1 gelmiş
+
+1942
+01:26:58,670 --> 01:27:00,670
+domain'i boş gelmiş pet'i
+
+1943
+01:27:00,670 --> 01:27:02,670
+slash gelmiş. Bu cookie'yi
+
+1944
+01:27:02,670 --> 01:27:04,670
+ancak ve ancak nereye gönderebilirsiniz?
+
+1945
+01:27:04,670 --> 01:27:06,670
+site.com'a erişirken.
+
+1946
+01:27:06,670 --> 01:27:08,670
+Böyle de sizi spesifik
+
+1947
+01:27:08,670 --> 01:27:10,670
+olarak kısıtlayabilir.
+
+1948
+01:27:10,670 --> 01:27:14,819
+Şimdi bazı durumlarda
+
+1949
+01:27:14,819 --> 01:27:18,449
+kurallar çok net olmasına
+
+1950
+01:27:18,449 --> 01:27:20,449
+rağmen çakışma
+
+1951
+01:27:20,449 --> 01:27:22,449
+oluşuyor ve açık
+
+1952
+01:27:22,449 --> 01:27:26,460
+oluşuyor. Nasıl diyeceksiniz?
+
+1953
+01:27:26,460 --> 01:27:33,300
+Bakın CS Stanford
+
+1954
+01:27:33,300 --> 01:27:35,300
+Edu Zakir
+
+1955
+01:27:35,300 --> 01:27:37,300
+CS Stanford Edu Dabo'nun
+
+1956
+01:27:37,300 --> 01:27:39,300
+cookie'lerini göremez.
+
+1957
+01:27:39,300 --> 01:27:41,300
+Doğru mu?
+
+1958
+01:27:41,300 --> 01:27:43,300
+CS Stanford Edu'da
+
+1959
+01:27:43,300 --> 01:27:45,300
+CS Stanford Edu
+
+1960
+01:27:45,300 --> 01:27:47,300
+Zakir'i göremez.
+
+1961
+01:27:47,300 --> 01:27:49,300
+Pet'ler tutunuyor. Okey.
+
+1962
+01:27:49,300 --> 01:27:51,300
+Harika.
+
+1963
+01:27:51,300 --> 01:27:53,300
+Peki
+
+1964
+01:27:53,300 --> 01:27:55,300
+denin cookie'lerine Zakir
+
+1965
+01:27:55,300 --> 01:27:57,300
+erişebilir mi?
+
+1966
+01:27:57,300 --> 01:27:59,300
+Bakın Zakir ne yapıyor?
+
+1967
+01:27:59,300 --> 01:28:01,300
+Bir tane iframe oluşturuyor.
+
+1968
+01:28:01,300 --> 01:28:03,300
+iframe'in sorsunu da
+
+1969
+01:28:03,300 --> 01:28:05,300
+CS Stanford Edu Dabo olarak
+
+1970
+01:28:05,300 --> 01:28:07,300
+veriyor. Sonra da diyor ki
+
+1971
+01:28:07,300 --> 01:28:09,300
+var olan dokümana
+
+1972
+01:28:09,300 --> 01:28:11,300
+bu iframe'i ekle.
+
+1973
+01:28:11,300 --> 01:28:17,680
+Kendisi
+
+1974
+01:28:17,680 --> 01:28:19,680
+Zakir olmasına rağmen
+
+1975
+01:28:19,680 --> 01:28:21,680
+bunu iframe olarak içeriye
+
+1976
+01:28:21,680 --> 01:28:23,680
+eklediği için
+
+1977
+01:28:23,680 --> 01:28:25,680
+eklediği iframe'den
+
+1978
+01:28:25,680 --> 01:28:27,680
+gitti
+
+1979
+01:28:27,680 --> 01:28:31,119
+cookie'yi okuyabildi.
+
+1980
+01:28:31,119 --> 01:28:33,119
+Sıkıntı burada. Burada bir
+
+1981
+01:28:33,119 --> 01:28:35,119
+çakışma var. Öyleyse
+
+1982
+01:28:35,119 --> 01:28:37,119
+diyelim ki
+
+1983
+01:28:37,119 --> 01:28:39,119
+bir bankanız var. Bu
+
+1984
+01:28:39,119 --> 01:28:41,119
+bankada Google Analytics çalıştırmak
+
+1985
+01:28:41,119 --> 01:28:43,119
+istiyorsunuz ve Google Analytics'in
+
+1986
+01:28:43,119 --> 01:28:45,119
+JavaScript'lerini koydunuz.
+
+1987
+01:28:45,119 --> 01:28:47,119
+Google
+
+1988
+01:28:47,119 --> 01:28:49,119
+Analytics JavaScript'i
+
+1989
+01:28:49,119 --> 01:28:51,119
+sizin
+
+1990
+01:28:51,119 --> 01:28:53,119
+bankaya erişmek için
+
+1991
+01:28:53,119 --> 01:28:55,119
+banka tarafından size gönderilmiş
+
+1992
+01:28:55,119 --> 01:28:57,119
+olan işi hızlandıracak
+
+1993
+01:28:57,119 --> 01:28:59,119
+Authentication Cookie'nize
+
+1994
+01:28:59,119 --> 01:29:01,119
+erişebilir mi? Evet
+
+1995
+01:29:01,119 --> 01:29:03,119
+erişebilir. Bir önceki
+
+1996
+01:29:03,119 --> 01:29:05,119
+senaryodan hiçbir farkı
+
+1997
+01:29:05,119 --> 01:29:07,119
+yok.
+
+1998
+01:29:07,119 --> 01:29:09,119
+Peki
+
+1999
+01:29:09,119 --> 01:29:11,119
+o zaman ne yapacağız?
+
+2000
+01:29:11,119 --> 01:29:13,119
+HTTP Only Cookie
+
+2001
+01:29:13,119 --> 01:29:15,119
+diyeceğiz ki
+
+2002
+01:29:15,119 --> 01:29:17,119
+diyeceğiz ki
+
+2003
+01:29:17,119 --> 01:29:19,119
+bu cookie
+
+2004
+01:29:19,119 --> 01:29:21,119
+bu cookie
+
+2005
+01:29:21,119 --> 01:29:23,119
+JavaScript'ten
+
+2006
+01:29:23,119 --> 01:29:25,119
+erişilemez.
+
+2007
+01:29:25,119 --> 01:29:27,119
+Bu cookie sadece
+
+2008
+01:29:27,119 --> 01:29:29,119
+HTTP requestleri ile
+
+2009
+01:29:29,119 --> 01:29:36,369
+taşınabilir.
+
+2010
+01:29:36,369 --> 01:29:38,369
+Bu çok önemli. JavaScript
+
+2011
+01:29:38,369 --> 01:29:40,369
+bu cookie'ye erişemez. Cookie'nin
+
+2012
+01:29:40,369 --> 01:29:42,369
+özelliğini HTTP
+
+2013
+01:29:42,369 --> 01:29:44,369
+only yapıyorsak eğer
+
+2014
+01:29:44,369 --> 01:29:46,369
+cookie sadece
+
+2015
+01:29:46,369 --> 01:29:48,369
+HTTP trafiğinde header'da
+
+2016
+01:29:48,369 --> 01:29:50,369
+taşınabilir. Peki
+
+2017
+01:29:50,369 --> 01:29:52,369
+o zaman
+
+2018
+01:29:52,369 --> 01:29:54,369
+şöyle bir senaryo
+
+2019
+01:29:54,369 --> 01:29:56,369
+bankaya eriştiniz
+
+2020
+01:29:56,369 --> 01:29:58,369
+bankadakiler tam
+
+2021
+01:29:58,369 --> 01:30:00,369
+paranoyak bütün security şeylerini
+
+2022
+01:30:00,369 --> 01:30:03,869
+biliyorlar ve
+
+2023
+01:30:03,869 --> 01:30:05,869
+cookie'leri HTTP cookie olarak
+
+2024
+01:30:05,869 --> 01:30:07,869
+belirlemiş durumdalar.
+
+2025
+01:30:07,869 --> 01:30:09,869
+Bankayla aranızda
+
+2026
+01:30:09,869 --> 01:30:11,869
+sejini tamamladınız
+
+2027
+01:30:11,869 --> 01:30:13,869
+bankada bir sonraki sefer için
+
+2028
+01:30:13,869 --> 01:30:15,869
+size hızlıca bağlanmanızı
+
+2029
+01:30:15,869 --> 01:30:17,869
+sağlayacak cookie'yi gönderdi
+
+2030
+01:30:17,869 --> 01:30:19,869
+veya neyse bir aksiyonu
+
+2031
+01:30:19,869 --> 01:30:21,869
+bir transferi bir şeyi yapmanızı sağlayacak
+
+2032
+01:30:21,869 --> 01:30:23,869
+bir cookie'yi gönderdi.
+
+2033
+01:30:23,869 --> 01:30:25,869
+Browser'ımız da güvenli bir şekilde duruyor.
+
+2034
+01:30:25,869 --> 01:30:27,869
+Domain bank.com
+
+2035
+01:30:27,869 --> 01:30:29,869
+name
+
+2036
+01:30:29,869 --> 01:30:31,869
+ve işte buradaki gibi
+
+2037
+01:30:31,869 --> 01:30:33,869
+authorization id ve authorization.
+
+2038
+01:30:33,869 --> 01:30:35,869
+Şimdi hani saldırı tipleri vardı ya
+
+2039
+01:30:35,869 --> 01:30:37,869
+saldırma modelleri vardı ya
+
+2040
+01:30:37,869 --> 01:30:39,869
+attack models
+
+2041
+01:30:39,869 --> 01:30:41,869
+network attacker vardı
+
+2042
+01:30:41,869 --> 01:30:43,869
+aradaki trafiği izleyebiliyordu
+
+2043
+01:30:43,869 --> 01:30:45,869
+değiştirebiliyordu düşülebiliyordu
+
+2044
+01:30:45,869 --> 01:30:47,869
+falan falan. Şimdi bu olaydan sonra
+
+2045
+01:30:47,869 --> 01:30:52,850
+saldırgan
+
+2046
+01:30:52,850 --> 01:30:54,850
+sizi bank.com'a
+
+2047
+01:30:54,850 --> 01:30:56,850
+bağlanıyorsunuz diye kandırır.
+
+2048
+01:30:56,850 --> 01:30:58,850
+Mesela DNS Poisoning yaptı.
+
+2049
+01:30:59,850 --> 01:31:05,850
+Browser'ınız bank.com'a bağlandığını düşünüyorsa ne gönderecek?
+
+2050
+01:31:05,850 --> 01:31:06,850
+Cookie gönderecek.
+
+2051
+01:31:06,850 --> 01:31:08,850
+Cookie'ler ne üzerinden gelecek?
+
+2052
+01:31:08,850 --> 01:31:12,850
+HTTP üzerinden yani header üzerinden gelecek.
+
+2053
+01:31:12,850 --> 01:31:13,850
+HTTP only.
+
+2054
+01:31:13,850 --> 01:31:20,850
+Cookie HTTP üzerinden aktarılacak ve saldırgan sizin Cookie değerlerinizi elde etmiş olacak.
+
+2055
+01:31:20,850 --> 01:31:23,850
+Sonra da bankaya bunu gönderecek.
+
+2056
+01:31:23,850 --> 01:31:25,850
+Sizmiş gibi paranızı mı çeker, değiştirir mi?
+
+2057
+01:31:25,850 --> 01:31:27,850
+Ne yaparsa bilemeyiz.
+
+2058
+01:31:27,850 --> 01:31:29,850
+Aradaki fark ne?
+
+2059
+01:31:29,850 --> 01:31:46,850
+Saldırganın, bankanın sertifikalarını bilmesine imkan olmadığı için bunları kopyalamasına ve kullanmasına imkan olmadığı için sizi HTTPS değil, HTTP'ye yönlendirmesi lazım.
+
+2060
+01:31:46,850 --> 01:31:53,850
+Ama dikkat edin tıkladığınız anda HTTP olsa bile iş işten geçmiş oluyor.
+
+2061
+01:31:53,850 --> 01:31:54,850
+Çünkü neden?
+
+2062
+01:31:54,850 --> 01:31:55,850
+Browser.com.
+
+2063
+01:31:55,850 --> 01:31:57,850
+Browser bank.com'u gördü.
+
+2064
+01:31:57,850 --> 01:32:05,850
+HTTP request yapacak oraya ve kendisinde bank.com'dan gelmiş olan ne kadar Cookie varsa hepsini gönderdi.
+
+2065
+01:32:05,850 --> 01:32:06,850
+Geçmiş ona.
+
+2066
+01:32:06,850 --> 01:32:10,850
+Peki bunun engellemenin yolu ne?
+
+2067
+01:32:10,850 --> 01:32:11,850
+Secure Cookie.
+
+2068
+01:32:11,850 --> 01:32:14,850
+Bu şekilde yapılmış saldırılar da var arkadaşlar.
+
+2069
+01:32:14,850 --> 01:32:20,850
+Bunların her biri yaşandıkça analizler sonucunda ortaya çıkan şeyler.
+
+2070
+01:32:20,850 --> 01:32:23,850
+Cookie'nin özelliğini ne olarak tarifliyorsunuz?
+
+2071
+01:32:23,850 --> 01:32:24,850
+Secure.
+
+2072
+01:32:24,850 --> 01:32:34,850
+O zaman bu Cookie sadece ve sadece HTTPS protokolü ile gönderilip alınabilir.
+
+2073
+01:32:34,850 --> 01:32:36,850
+Yani ne olması lazım?
+
+2074
+01:32:36,850 --> 01:32:45,850
+Bankanın Cookie'lerini gönderirken, Server'ını gönderirken Cookie'yi Secure olarak set etmesi lazım.
+
+2075
+01:32:45,850 --> 01:32:50,850
+Böylece şu senaryo gerçekleşemez.
+
+2076
+01:32:50,850 --> 01:32:52,850
+Çünkü saldırgan bankanın key'i de var.
+
+2077
+01:32:52,850 --> 01:33:04,850
+Bankanın key değerlerini bilmiyor ki, sertifika değerlerini bilmiyor ki, siz oraya geçerli bir HTTPS isteği başlatın.
+
+2078
+01:33:04,850 --> 01:33:07,850
+Sizi en fazla HTTP'ye yönlendirebilir.
+
+2079
+01:33:07,850 --> 01:33:14,850
+Ama Cookie'ler Secure değilse inanın Cookie'leriniz saldırganın eline geçer.
+
+2080
+01:33:14,850 --> 01:33:20,850
+Ve bir saldırganın bu senaryoda olduğu gibi Network Attacker modeliyle saldırmaz.
+
+2081
+01:33:20,850 --> 01:33:26,850
+Bu senaryoların kolay olduğu var.
+
+2082
+01:33:26,850 --> 01:33:28,850
+Mesela Public Hotspotlar.
+
+2083
+01:33:28,850 --> 01:33:32,850
+Mesela hani bir dönemin çok şey olan internet kafeleri falan buralar.
+
+2084
+01:33:32,850 --> 01:33:36,850
+Buralarda çok dikkatli olmanız lazım.
+
+2085
+01:33:36,850 --> 01:33:48,850
+Anonim kimsenin bilmediği bir yerden bağlanıyorum, nasıl olsa bir şey olmaz diye düşünürken aslında pek çok veriniz ve değerli bilginiz saldırganların eline geçebilir.
+
+2086
+01:33:48,850 --> 01:33:49,850
+Sonuç.
+
+2087
+01:33:49,850 --> 01:33:53,850
+Bugünkü dersimiz burada bitti arkadaşlar.
+
+2088
+01:33:53,850 --> 01:34:01,850
+Temel olarak Web Security modelinin üzerinden geçtik.
+
+2089
+01:34:01,850 --> 01:34:04,850
+Umarım hoşunuza gitmiştir.
+
+2090
+01:34:04,850 --> 01:34:06,850
+Eğlenceli bir konu çünkü.
+
+2091
+01:34:06,850 --> 01:34:17,850
+Böylece aslında bakın hem farklı işletim sistemlerindeki güvenlik modelini, oradaki kavramları, oradaki akses kontrolü görmüş olduk.
+
+2092
+01:34:17,850 --> 01:34:25,850
+Hem şu anda web tarafındaki modeli ve kavramları görmüş olduk.
+
+2093
+01:34:25,850 --> 01:34:41,850
+Böylece çok geniş bir spektrumda birbirine denk düşen kavramları, akses kontrolün ne olduğunu, reference monitörün ne olduğunu, subject'in ne olduğunu, object'in ne olduğunu, bunların arasındaki ilişkilerin ne olduğunu biliyoruz.
+
+2094
+01:34:41,850 --> 01:34:45,850
+Bunun da sizi bakış açınız, bundan sonraki projelerindeki tasarımsal olarak geliştirebileceğini,
+
+2095
+01:34:45,850 --> 01:34:50,850
+bundan sonraki projelerindeki tasarımsal olarak yaklaşımlarınız açısından farklılaştıracağını düşünüyorum.
+
+2096
+01:34:50,850 --> 01:34:56,380
+Evet, ekran paylaşımını durdurabiliriz.
+
+2097
+01:34:56,380 --> 01:35:00,380
+Benim anlatacaklarım bugün bu kadar.
+
+2098
+01:35:00,380 --> 01:35:05,229
+Hepinize iyi günler diliyorum.
+
+2099
+01:35:05,229 --> 01:35:07,229
+Haftaya görüşmek üzere.
+
+2100
+01:35:07,229 --> 01:35:15,229
+[öğrenci], konuyla alakalı asistan arkadaşların sayfalarından artık şeyleri takip edebilirsin.
+
+2101
+01:35:15,229 --> 01:35:18,229
+Uygulama olup olmaması konusunda.
+
+2102
+01:35:18,229 --> 01:35:20,229
+Onlar size takvim yayınlıyorlar.
+
+2103
+01:35:20,229 --> 01:35:23,229
+Ben de şey yaptık, bugünü açıkçası bilmiyorum.
+
+2104
+01:35:23,229 --> 01:35:25,229
+Bakmadım çünkü sayfalarda.
+
+2105
+01:35:25,229 --> 01:35:28,989
+Konular belirdi çünkü.
+
+2106
+01:35:28,989 --> 01:35:31,989
+O zaman görüşmek üzere, iyi günler arkadaşlar.
+
+2107
+01:35:31,989 --> 01:35:33,989
+Ben teşekkür ederim, sağ olun.

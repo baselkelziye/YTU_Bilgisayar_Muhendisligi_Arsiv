@@ -1,0 +1,4467 @@
+1
+00:01:39,540 --> 00:01:40,540
+Günaydın arkadaşlar.
+
+2
+00:01:42,920 --> 00:01:43,359
+Merhaba.
+
+3
+00:01:43,440 --> 00:01:44,620
+Günaydın hocam.
+
+4
+00:01:45,120 --> 00:01:46,020
+Merhabalar.
+
+5
+00:01:47,360 --> 00:01:51,120
+Saat 9.2 geçiyor. 5 geçe başlarız.
+
+6
+00:01:51,120 --> 00:01:53,000
+Şimdi de son çetikolayız.
+
+7
+00:02:03,763 --> 00:02:04,843
+Aslanır Yörçmenizde.
+
+8
+00:07:35,732 --> 00:07:37,752
+Merhaba arkadaşlar. Nasılsınız?
+
+9
+00:07:39,992 --> 00:07:42,492
+Merhaba hocam. Teşekkür ederiz. Siz nasılsınız?
+
+10
+00:07:42,872 --> 00:07:43,472
+Merhaba hocam.
+
+11
+00:07:43,472 --> 00:07:47,152
+Merhabalar. Teşekkür ederim. Merhabalar.
+
+12
+00:07:50,132 --> 00:07:56,432
+Şimdi haftalık programı açtım. Bugün 24 Nisan.
+
+13
+00:08:00,531 --> 00:08:08,531
+Bugün işleyeceğim birkaç konu var aslında ama çok fazla değil. Şunları falan da hallederse tahmin ediyorum.
+
+14
+00:08:10,871 --> 00:08:17,171
+Bundan sonra sizin ödev sonlarımıza geçeceğiz zaten. Önündeki haftada bir haftalık tatilimiz var.
+
+15
+00:08:17,331 --> 00:08:23,312
+Sonrasında ödev üçümüz gelecekmiş ve proje konularımızı duyuracakmışız.
+
+16
+00:08:26,708 --> 00:08:45,248
+Tamam, öyle çok değişik bir şeyimiz yok. Peki. Şimdi burayı bir kapatalım. İlk önce şeyi sorayım. Kimler ödev sunumu yapacak? Artı bir yazarsanız chat'e. Ona göre bir sayıp belirleyelim. Kaç kişi var?
+
+17
+00:09:15,220 --> 00:09:27,180
+Teknik Üniversitesi. Güzel, peki. Tamam. Bunu ayarlarız. Peki, o zaman çok da vakit kaybetmeden ders kısmına başlayalım.
+
+18
+00:09:28,460 --> 00:09:36,120
+Bugün aslında Uygulamalar isimli bir slide'a başlıyoruz.
+
+19
+00:09:37,299 --> 00:09:49,339
+Bunun içerisinde bir sürü uygulama var. Bugün kısa kısa şunlardan birazcık bahsetmeye planlıyorum. Önümüzdeki hafta şunlarla ilerleriz diye düşünüyorum.
+
+20
+00:09:51,559 --> 00:10:02,980
+İlk konumuz metin sınıflandırma. Zaten bu konuda epey bilginizde vardır. Ödevler ve sellelerde de yaptınız.
+
+21
+00:10:03,731 --> 00:10:15,692
+Bir elimizdeki metni daha önceden tanımlanmış olan kategorilerden bir tanesine dahi etme gibisinden bir problem olarak tanımlayabiliriz metin sınıflandırmayı.
+
+22
+00:10:16,771 --> 00:10:24,491
+Uygulama alanları çok fazla metin sınıflandırmanın yani ne bileyim işte bu mail spamdir değildir.
+
+23
+00:10:24,980 --> 00:10:37,100
+Bu konudan haber sitelerindeki son dakika gelişmelerini hangi kategoriye uydurmamız gerektiği gibisinden şeylere kadar birçok alana sahip.
+
+24
+00:10:38,720 --> 00:10:45,360
+Burada belki birkaç tane değişik yön olarak şeyden bahsedebiliriz.
+
+25
+00:10:48,980 --> 00:11:02,799
+Çok sınıflı sınıflandırma. Multilable sınıflandırma da şöyle bir şey. Elinizdeki bir metin, elinizdeki etiketler kategorisinin içerisinden tek bir şey değil de birden fazla şeye karşılık geliyor olabilir.
+
+26
+00:11:04,420 --> 00:11:10,799
+Yani bir metin hem X konusuyla hem Y konusuyla alakalı olabilir. Ya da içerisinde hem...
+
+27
+00:11:12,275 --> 00:11:32,455
+Evet, yani birden fazla, iki tane de değil, daha fazla, on tane etiketiniz varsa belki iki tanesini falan içeriyor olabilir. Ne bileyim, bir haber metni hem siyasete dair hem ekonomiye dair olabilir gibi gibi. Dolayısıyla multi-class classification gibisinden bir şey de düşünebilirsiniz bu noktada.
+
+28
+00:11:32,879 --> 00:11:42,740
+Bunların yapılması noktasında, yani birden fazla sınıfa ait olması noktasında birkaç tane temel teknik var.
+
+29
+00:11:43,500 --> 00:12:00,419
+Bir tanesi her bir metni, her bir sınıfa dahil olasılıklarını bulduğunuzda orada bir eşik değeri belirleyip, o eşik değerinden daha yukarıda bir yerdeyse o etiketlere dahildir.
+
+30
+00:12:01,076 --> 00:12:13,375
+Diye düşünebilirsiniz. Yani ne bileyim, %30'un üstündeki, mesela sağlıyorum, %30'un üstündeki bütün sınıflara dahildir gibisinden bir değerlendirme yapabilirsiniz.
+
+31
+00:12:15,375 --> 00:12:28,216
+Yani tek bir sınıflandırıcı kullanıp, öyle söyleyeyim, tek bir sınıflandırıcı kullanıp, sınıflandırıcının output'unda her bir sınıfa ait olma olsaklarına çıktı olarak verecekken, burada belli bir eşik devrini kullanabilirsiniz.
+
+32
+00:12:29,043 --> 00:12:41,943
+Tabii bunun eğitim kümesini oluştururken de One Hat Encoding'le değil de elinizdeki eğitim kümesindeki örnekler hangi sınıflara ait?
+
+33
+00:12:42,104 --> 00:12:49,104
+Tek bir örnek bile birden fazla sınıfı aitse onları bir yapıp, yani sıfır yapıp şeklinde yapmak mümkün.
+
+34
+00:12:49,104 --> 00:12:53,100
+Ya da başka bir şey, her bir...
+
+35
+00:12:55,700 --> 00:13:08,720
+Her bir kategori için, en zeynep ki 10 tane kategori var. 10 tane klasifier burada eğitebilirsiniz. 10 tane klasifierin her birinin yaptığı şey binary classification olacak.
+
+36
+00:13:08,720 --> 00:13:22,420
+Yani mesela elinizde ekonomi var, siyaset var, spor var. Ekonomi haberi midir, değil midir? Siyaset haberi midir, spor haberi midir, değil midir? Diyen 3 tane modeliniz olacak.
+
+37
+00:13:23,124 --> 00:13:31,864
+Dolayısıyla bir metin bunların her birine ne yapabilir? Girebilir. Bunlar çok temelde kullanan iki yaklaşım. Multiklas, Klasiklaşım.
+
+38
+00:13:33,024 --> 00:13:49,943
+Şimdi, burada şu andaki slide'da gözüken örneğimiz bir haber sınıflandırma problemi. 13 tane sınıf varmış burada. Bunların veriküven ve kodları zaten dersin web sayfasından hepsine erişebilirsiniz.
+
+39
+00:13:50,676 --> 00:14:12,516
+LSA ile bunlar sınıflandırılmış ve beş boyuta indirgenmiş bütün şey kısmı. Kelime boyutu tabii ki yani metinler ilk önce sözlük boyutlu bir uzayda temsil edilmişler. Daha sonra da onun üzerine LSA uygulanarak beş boyuta indirgenmişler.
+
+40
+00:14:16,563 --> 00:14:35,563
+Pardon, 5 diyorum. 65 boyuta indir gelmişler. 13 x 5. Test örneklerinin sabit ve her sınıf için 250 tane olduğunu kabul etmişiz. Daha sonra da eğitim örneklerinin sayısını arttırmışız. Yani şudaki grafikte...
+
+41
+00:14:36,083 --> 00:14:46,663
+İlk önce 10 tane varmış her bir sınıftan. 130 tane eğitim örneği varkenki performans böyle. Her bir sınıfta 50'şer tane örnek varken eğitim örneğinden bahsediyorum.
+
+42
+00:14:47,503 --> 00:14:57,983
+Burada gördüğünüz gibi eğitim kümesindeki örnek sayısı arttıkça her bir sınıfta performansın da doğal olarak arttığını görebiliyoruz.
+
+43
+00:14:59,028 --> 00:15:13,988
+Burada LSI değil de daha basit bir şey. Daha basit. Evet, daha basit diyarız buna. Daha temel diyelim. Daha temel şey. TF, TF, IDF falan gibisinden bir şeyler kullanmak için de onların kodları burada var.
+
+44
+00:15:13,988 --> 00:15:21,528
+Ve buradaki gözüküyor şey eğitim kümesinin örnek sayısı artırsa test kümesindeki performansın da artması.
+
+45
+00:15:22,100 --> 00:15:30,160
+Peki niye böyledir? Yani eğitim kümesindeki örnek sayısı artınca niye test kümesi üzerindeki performans artar? Ne dersiniz?
+
+46
+00:15:31,200 --> 00:15:31,920
+Seni soru.
+
+47
+00:15:34,320 --> 00:15:38,100
+Çok örnek var, çok başka bir öğreniyor sonra...
+
+48
+00:15:38,100 --> 00:15:39,100
+Ne yapıyor bir daha? Söyle.
+
+49
+00:15:40,360 --> 00:15:44,220
+Çok örnek var, daha iyi bir öğreniyor sonra...
+
+50
+00:15:44,220 --> 00:15:46,740
+Niye daha iyi öğreniyor?
+
+51
+00:15:47,220 --> 00:15:48,180
+Neyi daha iyi öğreniyor?
+
+52
+00:15:48,692 --> 00:15:52,271
+Çok örnek olduğu için hep test yapıyor hepsi.
+
+53
+00:15:53,632 --> 00:15:56,892
+Sonuçta bütün eğitim örneklerini kullanıp bir tane model oluşturuyor.
+
+54
+00:15:58,892 --> 00:16:02,152
+Bir tane model oluşturdu. Bu model niye daha iyi oluyor?
+
+55
+00:16:03,432 --> 00:16:07,751
+Eğitim örneklerinin sayısı daha fazla olduğunda model niye daha iyi oluyor?
+
+56
+00:16:11,988 --> 00:16:13,580
+Evet, now this is...
+
+57
+00:16:21,556 --> 00:16:32,895
+Test örnekleri sabitler. Test örnekleri dokunmuyoruz bakın. Ama eğitim örneklerinin sayısını arttırıyoruz giderek. Niye test örneklerinin performansı bilerek artıyor? Ne dersiniz?
+
+58
+00:16:33,895 --> 00:16:43,895
+Hocam, acaba test eğitim örneklerindeki çeşitliliğin de artabileceğini düşündüğümüz için...
+
+59
+00:16:44,464 --> 00:16:46,624
+Daha iyi öğrenmiş olabilir mi?
+
+60
+00:16:47,063 --> 00:16:49,224
+Tamam. Çeşitlilik neyi sağlıyor?
+
+61
+00:16:50,864 --> 00:16:52,303
+Daha çeşitli olur, doğru.
+
+62
+00:16:52,923 --> 00:16:55,764
+Daha fazla özellik öğrenmiş olur.
+
+63
+00:16:56,923 --> 00:16:59,803
+Daha fazla korrelasyon yani...
+
+64
+00:16:59,803 --> 00:17:01,524
+Neyle korrelasyon artar?
+
+65
+00:17:03,163 --> 00:17:05,163
+Neyle benzerliği artar?
+
+66
+00:17:05,244 --> 00:17:09,744
+Eğitim kümesinin arttıkça, örnek sesi arttıkça neye benzer?
+
+67
+00:17:16,435 --> 00:17:22,235
+Test hükümesine daha çok benzer diyebilir miyiz? Test hükümesine daha da yakınlaşır diyebilir miyiz?
+
+68
+00:17:24,056 --> 00:17:25,695
+Böyle sorduğunuza göre diyebiliriz.
+
+69
+00:17:28,155 --> 00:17:34,435
+Evet arkadaşlar, temelde aslında olan şey elinizdeki...
+
+70
+00:17:35,215 --> 00:17:43,375
+İçeride şunu düşünelim, bir sınıflandırıcının bir modeli. Başarısını neyin üzerinden uçuyoruz?
+
+71
+00:17:45,395 --> 00:17:57,855
+Test kümesi üzerinden, değil mi? Test kümesine, mesela test kümesinin kendisiyle eğitim yapsaydık, test kümesi üzerindeki performansımız nasıl olurdu?
+
+72
+00:18:02,963 --> 00:18:04,263
+İyi mi olur, kötü mü olur?
+
+73
+00:18:06,563 --> 00:18:07,284
+Daha iyi olur.
+
+74
+00:18:07,923 --> 00:18:09,583
+Ben yüzde yakın bulurdum.
+
+75
+00:18:09,804 --> 00:18:16,644
+Değil mi? Çok çok iyi olurdu hatta işte bazı türlü sınıflandırıcılar kullansak yüzde yüz gibisinden sonuçlar bile olurdu.
+
+76
+00:18:16,644 --> 00:18:26,403
+Yani test kümesine yakın bir eğitim kümeniz olursa sizin, değil mi? O zaman performansınız iyi olacaktır, doğru mu?
+
+77
+00:18:27,923 --> 00:18:39,423
+Şimdi bu test kümesine yakın bir dağılım elde edebilmek için eğitim kümesinin büyüklüğünü arttırmak bir yol mu?
+
+78
+00:18:42,900 --> 00:19:00,480
+Kesinlikle iyi bir yol. Elinizdeki veri miktarını ne kadar çok arttırırsanız, test kümesindeki örneklere o kadar çok benzeyen bir şeylere, eğitim kümesinde sahip olma ihtimaliniz o kadar artacaktır. Eğitim kümesi sonuçta gittikçe.
+
+79
+00:19:02,291 --> 00:19:08,152
+Eğitim kümesi sonrası giderken, test kümesi üzerindeki performansınız giderek ne olacaktır? Artacaktır.
+
+80
+00:19:08,551 --> 00:19:16,371
+Yoksa eğitim kümesini arttırmak bilinen en güvenli performans arttırma yöntemi aslında.
+
+81
+00:19:16,371 --> 00:19:27,031
+Bir açıdan baktığınızda ne kadar çok datanız varsa tabii bunların iyi etiketlenmiş vesaire vesaire gibisinden olduğunu kabul ediyoruz.
+
+82
+00:19:27,571 --> 00:19:51,431
+Güvendiğimiz veriler odun kalıyoruz, öyle söyleyeyim daha doğrusu. O durumda en büyük performans giderek artacaktır. Eğitim küresinin büyüklüğü bu manada direkt test performansına pozitif katkı sağlamanın en sağlam yollarından bir tanesi. En garantili yollarından bir tanesi, öyle diyelim.
+
+83
+00:19:52,147 --> 00:20:04,087
+Yani hani ne yapalım da biz elimizdeki modelimizin performansını iyileştirelim dendiğinde en garantili yol eğitim kümesinin büyüktüğü.
+
+84
+00:20:04,307 --> 00:20:08,107
+Tabii kaliteli vesaire eğitim kümesinin büyüktüğünü arttırmaktır.
+
+85
+00:20:08,564 --> 00:20:22,124
+Onu rahatlıkla söyleyebiliriz. Hatta başka model kullanırsanız, sudur budur onlara ayrı hikayeler ya da mesela eğitim hükümesinin boyutunu arttıramıyorsunuzdur. O zaman başka yöntemlere geçebilirsiniz. Bunların hepsi mümkünler.
+
+86
+00:20:23,827 --> 00:20:38,548
+Ama şey, iyi bir yol. Eğitim küresinin müddet arttırma gibi. Eliniz gibi çok gürültülü olabilir, gürültüye engelleyeceği bir şeyler kullanabilirsiniz vs. vs. ama hepsi yine şeyi bozmazlar. Yani genel kuralı temel olarak bozmazlar.
+
+87
+00:20:39,607 --> 00:20:51,288
+Peki, şimdi başka bir şeyden bahsedelim. Bu da hepinizin aşina olduğu bir şey. Bir firma, kişi, parti, kurum vs. Kamuoyu algısını ölçmek aslında bu. Duygudurum analizinden kastımız bu.
+
+88
+00:20:51,859 --> 00:21:14,019
+Kamuoyunda bu nasıl algılandı? Bu kamuoyunda bu nasıl algılandı kısmının ölçülmesi için, işte sosyal medyadır vesaire gibisinden şeyler çok sıklıkla kullanılıyorlar. Bunlar oldukça ucuz oluyorlar. Yani hani ne dedim istedim, birilerine anket falan gibisinden bir şey yaptırmaya kalksanız.
+
+89
+00:21:14,480 --> 00:21:32,800
+Bunlar çok daha pahalı yöntemler. Bunun yanına insanların atmış olduğu tweetleri kullanıp bu işi yapmaya kalktığınız zaman çok daha uygun olur. Daha güvenilir mi? Pozitif negatif tarafları var. Anketlerde insanlar kendileriyle bir şeylerin ilişkilendirilmesini istemiyor olabilirler vs. vs.
+
+90
+00:21:34,996 --> 00:21:43,096
+Gibi gibi durumlar olabilir. Twitter'da da anonim hesaplar, herhangi birisinden şeyler bu yüzden kullanılabiliyor.
+
+91
+00:21:43,635 --> 00:22:08,795
+Ama temel olarak en azından daha ucuz bir yol olduğunu söyleyebiliriz. Daha güvenirli kısmı pozitif netif tarafları var. Ama şöyle bir şey yine burada da demin bahsettiğimiz gibi eğitim kümesinin büyüklüğü ne kadar olursa, yani burada da örnekleminiz ne kadar büyük olursa öyle söyleyelim, söylediğiniz şeye güvenme ihtimalimiz o kadar artar.
+
+92
+00:22:08,795 --> 00:22:10,275
+Diyorsunuz ki işte.
+
+93
+00:22:10,836 --> 00:22:24,135
+Ne bileyim, X firmasının çıkarttığı yeni ürün halk tarafından şöyle oldu, böyle oldu. Beğenildi, beğenilmedi falan gibisinden.
+
+94
+00:22:24,235 --> 00:22:28,576
+Bunun ne kadar çok kişiden topladığınız verilerle yaparsanız, o kadar daha ne olacaktı, iyi olacaktır.
+
+95
+00:22:29,395 --> 00:22:57,395
+Tabi burada başka bir an var karşımıza çıkan. Özellikle Twitter vs. gibisinden sosyal ortamlarda sonuçta bunlar bir şekilde toplum algısını yönetmek için de kullanıldığından dolayı, daha doğrusu yönetmek için kullanıldığından dolayı, toplum algısını etkilediğimden dolayı öyle söyleyelim, insanlar bunları bu algıyı yönetmek için de dolayı.
+
+96
+00:22:57,395 --> 00:23:12,776
+Bu tarz botlar tahminen %20 civarında olduğu tahmin ediliyor.
+
+97
+00:23:14,776 --> 00:23:22,936
+Yani orada gördüğünüz kişilerden her 5 kişiden bir tanesi. Ortalama diyoruz tabii. Aslında gerçek değil.
+
+98
+00:23:23,508 --> 00:23:28,887
+Buradaki ders, şöyle söyleyeyim.
+
+99
+00:23:29,619 --> 00:23:42,839
+Şeyden önce, 2020 civarı bu rakam. 2020'den sonra bu değer ne oldu onu çok çok fazla bilmiyoruz.
+
+100
+00:23:42,839 --> 00:23:54,159
+Çünkü Twitter'ın kendi özelinde ve yapay zekanın da NLP tool'larının aşırı derecede geçmiş olması sebebiyle burada bu rakam oldukça değişmiş olabilir.
+
+101
+00:23:55,099 --> 00:23:56,839
+Ve bunların algılanması...
+
+102
+00:23:57,619 --> 00:24:08,619
+Berk taraf edilmesi falan daha zor hale gelmiş olabilir. Ama bunu şöyle bir şey olarak düşünürseniz...
+
+103
+00:24:09,460 --> 00:24:27,720
+İnsanlar Twitter'a girdiğinde nasıl bir ortam görüyorlar gibisinden bunu hayal ettiğinizde bu botları da insanlar görüyorlar mı? Evet görüyorlar. Dolayısıyla bunların etkisi de oluyordur mutlaka.
+
+104
+00:24:29,000 --> 00:24:36,180
+Ki kullanılıyorlar. Etkisi olmasa çok kullanılacağını zannetmiyorum. Çünkü algılanmıyorlar.
+
+105
+00:24:37,140 --> 00:24:51,440
+Yani onların aslında ne bileyim işte bir kişinin yönettiği on bin tane bot var. Mesela diyelim ki X konusunda olumlu bir şey yazacağız deyip hepsi birden yazıyorlar. Hepsi yazdırılıyor.
+
+106
+00:24:51,440 --> 00:25:02,200
+Ya da Y konusunda olumsuz bir şey yazacağız. Bu tarz toplu hareketler topluymuş gibi görünen hareketler.
+
+107
+00:25:03,347 --> 00:25:24,807
+Yaratmak oldukça sıradan işler. Öyle ifade edelim belki. Dolayısıyla da ama bunları yani siz sıradan bir kullanıcı olarak Twitter'a girip baktığınızda bunu çok fazla algılayamıyor olabiliyorsunuz.
+
+108
+00:25:25,332 --> 00:25:37,711
+Yani işte şu kadar like almış, şu olmuş, bu olmuş falan ama onlar dediğim gibi böyle çok gerçekleri, yani ne kadarı gerçek insan, ne kadarı böyle yönetilen sistem çok farkında olmayabiliyorsunuz.
+
+109
+00:25:37,971 --> 00:25:45,251
+Neyse, sonuçta bunların varlığından haberdar olarak hareket etmek, öyle söyleyelim, iyi bir fikir.
+
+110
+00:25:46,932 --> 00:26:12,991
+Duygudurum analizinin bir başka özelliği şu eğitim kimesinin eskimesi mevzu. Yani işte olumlu, olumsuz falan gibisinden bir şey yapıyorsanız, burada belli jargonlar zaman içerisinde belirebiliyor yenileri ve belli bir süre kullanıldıktan sonra da…
+
+111
+00:26:13,279 --> 00:26:25,960
+Bu konuda daha önceki çalışmalarda da gördüğümüz, 2015 yılına dair verilerle bir veri kümesi oluşturdunuz.
+
+112
+00:26:26,516 --> 00:26:49,896
+Test kümesi 2015 yılı çalışıyor. 2016'ya geçtiğinizde yine çalışıyor. Ama 2017-2018'e gittiğinizde aynı modelle test kümesi değişiyor bu sefer zaman içerisinde. Zaman ilerledikçe yani eğitim kümesi ile test kümesi arasındaki zaman farkı arttıkça öyle söyleyelim.
+
+113
+00:26:51,092 --> 00:26:58,352
+Belli konulardaki, belli modellerdeki performansın bir düşmeye başladığını görüyorsunuz.
+
+114
+00:26:58,708 --> 00:27:18,948
+Bunu engellemenin en basit yolu, tahmin edebileceğiz gibi eğitim kümesini güncellemek. Eğitim kümesi sürekli güncellenirse bu eskime mevzusuna amaçlı değil mi? Bir kere yapalım, bir daha hiç dokunmayalım falan gibisinden bir şey pek mümkün değil. Bu ne bileyim işte spam detektörlerde de geçerli.
+
+115
+00:27:24,596 --> 00:27:42,596
+Birçok başka kısmına da geçer. Demin anlattığım şey aslında o. Eğitim kümesi ve test kümesinin birbirine benzerliği. Zaman içerisinde test kümeniz değişiyor ama eğitim kümeniz sabit kalıyorsa bu durumda eğitim kümesi test kümenizden giderek uzaklaşıyor demektir.
+
+116
+00:27:47,635 --> 00:28:14,355
+Temel yaklaşımlar neler? İşte klasik yaklaşımlar, kelime, kelime kökü, engram falan. Yeni yaklaşımlarsa işte bu sementik uzaylar, STM'ler, CNN'ler, belki son dönemde de Transformer'ler. Ama bu, şimdi size göstereceğim çalışmayı yaptığım zamanlarda Transformer'ler yoktu. Transformer'ler de daha sonra buradaki verikümesini kullanarak çalışan arkadaşlar oldular. Onlardan da bahsedelim biraz.
+
+117
+00:28:15,028 --> 00:28:37,948
+Şimdi bu kısımda bir şey var, veri kümesi var. Bu veri kümesi bir GSM operatörünün hakkında kullanıcıların atmış oldukları tweetlerin insanlar tarafından elle etiketlenmesi sonucunda oluşturan bir veri set.
+
+118
+00:28:37,948 --> 00:28:40,348
+İşte eğitim kümesindeki, veri test kümesindeki.
+
+119
+00:28:40,819 --> 00:28:55,240
+Sınıf dağılımları, sayıları falan vesaire burada görüyorsunuz. Bu verikümesi üzerinde işlemler gerçekleştirildi. Şimdi burada bir M maddesi var. Şu M maddesi var. Burada şu gördüğünüz, şurada gördüğünüz yapı bir CNN.
+
+120
+00:28:59,955 --> 00:29:10,975
+Bu metinleri, yani CNN'ler temelde neyde kullanılıyorlar? Görüntü işlemede kullanan bir matris, 3x3, 5x5 vs. bir konvoyü.
+
+121
+00:29:11,539 --> 00:29:24,079
+Bu işlemiyle ilerleterek yapılabilir. Buna benzer bir şekilde bunu metinler için kullanmak mümkün müdür? Evet, mümkün. Nasıl bunu gerçekleştiririz? Onun bir örneği var burada.
+
+122
+00:29:24,079 --> 00:29:30,839
+Şimdi buradaki örnek dediğim gibi bir M madresi var ki bu M madresi aslında metni bizim.
+
+123
+00:29:33,236 --> 00:29:50,396
+İfade ediyor, öyle söyleyeyim. Bir tane metni ifade ediyor. Şimdi burada en M tane satır, D M tane sütun var. Yani şudaki sütun sözü D, D M dediğimiz şey. Satırlar da bizim ne diyelim.
+
+124
+00:29:55,955 --> 00:30:05,075
+Her bir token'ımızın temsili. Her bir token'ımızı DM tane boyutlu bir uzayda temsil ediyormuşuz.
+
+125
+00:30:05,815 --> 00:30:11,535
+Şurada. NM'de bizim token'larımızın sayısı. Buna bir maksimum var tabii.
+
+126
+00:30:11,535 --> 00:30:19,243
+Yani şöyle aşağı doğru bir maksimum sayı var. O sayıdan daha az token'a sahip olan...
+
+127
+00:30:19,284 --> 00:30:23,384
+Metinler için burası padding yani sıfırla dolduruluyor.
+
+128
+00:30:23,384 --> 00:30:30,284
+Şimdi metinler bir kelimese karşı gelen vektörler metindeki sıralarıyla bu maddesinin bir satırına yazılıyorlar.
+
+129
+00:30:30,284 --> 00:30:38,284
+Yani şurası bir kelimenin mesela token'ınız neyse, token'ınız kelimeyse. Bu da bir kelimenin işte şeyi var, karşılığı var.
+
+130
+00:30:39,412 --> 00:31:01,132
+Daha sonra böyle bir tane şey oluşturdu. Şimdi bu asla bir matris oldu. Yani resmin üzerinde konvolution gezdirmek mümkün mü? Evet mümkün. Resim dediğiniz şey bir matris, matrisin üzerinde gezdirebilirsiniz. Burada bir kelimeler var elinizde ama kelimeler şöyle uzun uzun bir şeyler.
+
+131
+00:31:02,099 --> 00:31:19,879
+Uzun uzun bir şeylerde siz burada convolution'u 3x3, 5x5 gibi bir şeyler çevirip geçirmeniz çok mantıklı şeyler değil. Onun yerine burada kelimenizi ya da token'larınızı kaç boyutlu uzayda ifade ediyorsanız işte kmc'a diyemek.
+
+132
+00:31:19,879 --> 00:31:27,759
+Yani mesela işte burası 2 diyelim ki şurasına 2x300 mesela her bir kelimeniz 300 boyutlu. 2x300'lük filtreler gezdiriyorsunuz.
+
+133
+00:31:29,652 --> 00:31:41,932
+Gördüğünüz mavi çerçeve mesela bir tane bir filtreyi gösteriyor. Bu filtreyi kadra kadra kadra kadra gidiyorsunuz. Resimlerde yapılandan tek farkı dediğim gibi.
+
+134
+00:31:42,548 --> 00:31:53,608
+3x3'ü çift boyutta gezdirmek, hem satırda hem sütunla gezdirmek yerine burada mesela örnek olarak sadece satırlarda kaydırma yapılmış. Sütunumuzu zaten sabit bırakmışız.
+
+135
+00:31:54,268 --> 00:32:06,748
+Aslında buradaki filtreleri düşündüğünüzde, yani şu ki ya da kernel diye de ifade ediyor. O filtreleri düşündüğünüzde o filtre aslında ikili, yani şuradaki iki çarpı olduğundan doluyor.
+
+136
+00:32:07,571 --> 00:32:25,291
+Kelime ikililerini ifade ediyorlar. Kelime ikililerini bulmaya çalışıyorlar. Bunu üçlü yaparsanız, bu sefer kelime üçleri üzerinden bir filtre mefret. Yani şu iki kelime bunun içine geçiyor mu, geçmiyor muyu aslında ifade edecekler.
+
+137
+00:32:25,291 --> 00:32:34,951
+Yani kendilerine dediğiniz şey çok enteresan bir şey yapmıyor olacak bu manada. Kelime ikililerinin ya da işte onların bir şekilde temsillerinin, benzerlerinin.
+
+138
+00:32:35,316 --> 00:32:43,495
+Burada var mı yok mu onu gösterecekler. Evde zaten bu convolution işlemlerini sonuçta var.
+
+139
+00:32:43,635 --> 00:32:49,215
+Puding işlemleri vs. vs. Temelde böyle bir şeyleri ne yapabilirsiniz?
+
+140
+00:32:49,215 --> 00:32:58,556
+İşi gerçekleştirebilirsiniz. Burada bu işi gerçekleşirken token dediğimiz şeyi ne yapabiliriz?
+
+141
+00:32:58,996 --> 00:33:17,276
+Token'ı kelime olarak kullanabilirsiniz. Yani alabilirsiniz token dediği şey kelime olsun diyebilirsiniz. O zaman mesela şöyle bir şey olsun en azından, mitin olsun. Allah cezanı versin, xxxx tüm müşterilerini kaybedersin inşallah. Şimdi bunu biz şurada gördüğünüz maddesi çevirmeye çalışacağız. Şu maddesi çevirmeye çalışacağız.
+
+142
+00:33:19,284 --> 00:33:46,784
+Yüz boyutlu kelime vektörleri kullanılmış. Yüz boyutlu kelime vektörleri, işte word to beck olur vs. neyse artık. Mesela bu ilk satır, ilk satırdaki vektör ilk kelimeyi ifade ediyor. İkinci satırdaki vektör ikinci kelimeyi ifade ediyor. Dolayısıyla bu da işte 10'a yakın işte 1, 2, 3, 4, 5, 6, 7, 8 noktada var mutlaka. 9 tane vektör görüyorsunuz burada.
+
+143
+00:33:47,284 --> 00:34:05,284
+9 tane satır görüyorsunuz. 6, geri kalan kısmı şey. Neden? Sıfırlar oluşuyor. Burası şey. Burası kelime tabanlı bu işi yaparsanız. Bu taraf ise bu işi karakter tabanlılığında yapmanın mümkün olduğunu gösteriyor. Karakter derken şundan bahsediyorum. Bu metni bu sefer...
+
+144
+00:34:06,132 --> 00:34:22,731
+Karakter karakter yani ilk satır öyle söylemek. Tokenlarımız karakter bu sefer. İlk satır ilk karakteri gösteriyor. İkinci mesela A'yı gösteriyor. İkinci satır L'yi gösteriyor. İkinci ve üçüncü satır aynı muhtemamda. Şurada biraz büyütürsek daha net gözüktür ama.
+
+145
+00:34:25,952 --> 00:34:29,431
+Şurada ikinci üç L'ye mesela. Şurada tekrardan sonra.
+
+146
+00:34:29,876 --> 00:34:56,096
+A gelmiş, sonra H gelmiş, sonra boşluk gelmiş, boşun bir şeyi var, kodlanmışı var. Sonra C gelmiş, E gelmiş vesaire. Bunu böyle yaparsanız bu da temelde nasıl bir şey olacak? Burada 80 küsur karakter varmış bütün elimizdeki yorumların içerisinde.
+
+147
+00:34:56,884 --> 00:35:03,903
+Ve bu matrisi bu şekilde de göstermenin mümkün olduğunu görebiliyorsunuz.
+
+148
+00:35:07,572 --> 00:35:30,811
+Başka ne var burada? Kritik söyleyebileceğim. Evet. Ve burada tabii işte konuyucundan gezinmeye kalktığınız anda bu sol tarafta ardışık kelime ikilileri üzerinden bir özellikler çıkartırken, işte onlar var mı yok mu?
+
+149
+00:35:32,340 --> 00:35:47,980
+İkililer bu sefer karakter engramlarına karşılık gezecekler. Karakter iki gramlarına karşılık gezecekler. Burada belki biraz daha büyük kenarlar kullanmak daha makul bir hareket olabilir biraz daha fazla algılayabilmek için.
+
+150
+00:35:48,640 --> 00:35:54,980
+Şimdi bunun sonuçlar kısmı, bunun standart bir...
+
+151
+00:35:55,827 --> 00:36:03,827
+Kelime torbası, TFI, DF falan gibisinden bir şey yaparsanız 166 falan bir şeyler çıkıyormuş. Karakter...
+
+152
+00:36:04,755 --> 00:36:08,435
+3 gramları kullanırsanız, ama şey dedi yani CNN'de değil bunlar.
+
+153
+00:36:09,076 --> 00:36:12,055
+66 çıkmış. Kelime vektörünün ortalamasını kullanırsanız.
+
+154
+00:36:12,195 --> 00:36:13,675
+İşte festex falan gibisinden bir şeyler.
+
+155
+00:36:14,315 --> 00:36:15,775
+Ve burada 66'lar çıkmış.
+
+156
+00:36:16,335 --> 00:36:20,275
+İşte LSM kullanmışız. Burada LSM çok çok belki işe yaramamış.
+
+157
+00:36:20,275 --> 00:36:24,835
+Ama kelime bazı yarışımsal ve karakter bazı yarışımsal sinavları daha başarılı olmuş.
+
+158
+00:36:25,015 --> 00:36:27,135
+Karakter bazı bir tık daha başarılı olmuş.
+
+159
+00:36:27,795 --> 00:36:32,275
+Bu ver hükümesinde alınan en iyi sonuçlar...
+
+160
+00:36:32,371 --> 00:36:39,831
+Herhalde bu transforma modellerle çeşitli araştırmalar çalıştılar bunun üzerine. Herhalde 75 falan civarında bir şeylere erişilebiliyor.
+
+161
+00:36:41,291 --> 00:36:46,311
+Bertürk'ü falan gibi Türkçe bir hükümeti bu arada. Bertürk'ü falan kullandığınız zaman.
+
+162
+00:36:47,231 --> 00:36:51,831
+Tabii Bertürk'ü kullandığınız zaman derken...
+
+163
+00:36:56,820 --> 00:37:07,400
+Transformer mimarisi kullanılmasından bahsetmiyoruz. Aslında arka tarafta kocaman bir derlemin de, ön derlemin de kullanıldığını söylüyoruz.
+
+164
+00:37:07,400 --> 00:37:19,260
+Yani şuradaki mesela karakter bazı erişimsel sinir alanı ya da kelime bazı erişimsel sinir alanı dediklerimiz de ya da şunlar da öyle söyleyeyim. Bunlarda herhangi bir şekilde harici bilgi yok.
+
+165
+00:37:19,648 --> 00:37:33,968
+Yani harici bilgi derken, Bertürk'ü eğitirken mesela onu demeye çalışıyorum. Ya da Bertürk'ü eğitirken arka tarafta kocaman bir derlemi de aslında işin içerisine katıyorsunuz. Oradan elde ettiği modelini, oradan elde ettiği bilgileri de model.
+
+166
+00:37:34,739 --> 00:37:58,739
+O derlemler elde edilen bilgileri kullanıyor. Ama burada şu gördüğünüz yapılardan, özellikle karakter tamamını yapıcıyı düşündüğünüz zaman, o karakter tamamını yapıcıyla hiçbir şekilde harici bir bilgi kaynağı yok elinizde. Sadece elinizde veri kümesi var, onu demeye çalışıyorum. Sadece bu veri kümesine bakarak işlem yaptığınızda böyle bir şeyler oluyor ama harici bilgi kullandığınızda...
+
+167
+00:37:59,284 --> 00:38:18,123
+İşte bu pretrain modellerin kendilerini kullanmak aslında harici bilgi kullanmak demek o manada düşünürsek. Burada pek tabii ki daha yüksek başarı çıkabiliyorsunuz. Daha fazla bilgi kullanmak öyle söyleyelim. Daha yüksek performans elde ettirebiliyor. Peki.
+
+168
+00:38:18,804 --> 00:38:44,324
+Şimdi burada bir örnek vereceğim. Duygul durum analizi zordur. Burada iki tane satır var. Şu iki satır. Bu iki satırın arasında, bir tanesi işte 5 dakikada geçiniz, bir tanesi 55 dakikada geçiniz, çok teşekkürler diyorum. İki tane şu metnin arasında tek bir karakter farkı var. O karakter de şurada. Görüyor musunuz? Tek bir karakter.
+
+169
+00:38:44,851 --> 00:39:07,091
+Sadece tek bir karakter farkı olmasına rağmen burada olumlu bir şey söylüyorken burada olumsuz bir şey söylüyor. Aslında burada müşteri memnun değil. Burada bir şey yapıyor. İmağda bulunmuyor. 55 dakikada yemek mi getirilir kardeşim diye yazmıyor da. 55 dakikada getirilmesi çok teşekkür ederim. İmağlı teşekkür.
+
+170
+00:39:07,668 --> 00:39:31,488
+diyebiliriz belki. Ya da işte 2500 TL'lik fatura için çok teşekkür ederim. Şimdi bunların anlaşılması, yani şöyle bir şey mesela, bu tarz yapılarla, karakter bazlı yapılarla falan, bunların anlaşılması mümkün gerçekten değil. Yani çünkü bununla bunun arası tek bir tane karakter farkı var.
+
+171
+00:39:32,019 --> 00:39:56,880
+Yani buna olumlu diyecek, buna olumsuz diyecek falan. Bunun sadece sentaktik olarak bakılarak anlaşılması, kesinlikle sistemin ihtiyacı var. Bir yemek getirme işinin ne kadar sürdüğü, normalde ne kadar sürdüğünün bilgisine ihtiyacı var. Bunu yorumlayarak işler yapması lazım.
+
+172
+00:40:00,000 --> 00:40:23,260
+Bir soru sorayım. ChatGPT bunu yapabilir mi? Hemen sormayın. Yani bilip sormayın hemen. Yani buna olumlu derken buna olumsuz diyebilir mi? Bakın bakalım. İki hocam bir tahmin edin. Sizce nasıl çalışır? Bunu çözebilir mi acaba? Türkçe olarak.
+
+173
+00:40:26,068 --> 00:40:27,307
+Bir ihtimal çözebilir.
+
+174
+00:40:27,807 --> 00:40:34,967
+Bir ihtimal çözebilir cevap değil. Tabii ki bir ihtimal çözebilir değil mi?
+
+175
+00:40:35,548 --> 00:40:42,088
+Ama sonuna mesela ünlem koyarsa belki o güçlendirir. Çözme ihtimali güçlendirir.
+
+176
+00:40:42,088 --> 00:40:46,028
+Yok öyle bir şey yok. Sonunda ünlem falan koymayalım. Direkt böyle.
+
+177
+00:40:46,028 --> 00:40:46,648
+Direkt böyle.
+
+178
+00:40:47,268 --> 00:40:50,948
+Direkt böyle. Ne olur acaba? Ne dersiniz?
+
+179
+00:40:52,019 --> 00:40:54,731
+Evet, bir kişilik rahminde bulundu başka.
+
+180
+00:40:58,324 --> 00:41:00,884
+Başka kimse bir şey demiyor. Peki, bir bakın bakalım.
+
+181
+00:41:01,604 --> 00:41:02,024
+Yapar.
+
+182
+00:41:03,123 --> 00:41:03,724
+Efendim?
+
+183
+00:41:05,144 --> 00:41:07,384
+Bence bulur, yani doğru cevaplar.
+
+184
+00:41:07,724 --> 00:41:10,104
+Doğru cevaplıyor diyorsun, [öğrenci]. Peki.
+
+185
+00:41:12,663 --> 00:41:18,503
+Peki, buna bir bakın. Size şey olsun. Öde olsun. Küçük öde. Tamam.
+
+186
+00:41:20,503 --> 00:41:24,043
+Öyle benzerlerini de deneyebilirsiniz. Neler oluyor, neler bitiyor diye.
+
+187
+00:41:29,427 --> 00:41:47,427
+Şimdi başka bir şeyden bahsedeceğim. Ondan sonra dediğim gibi zaten şey kapatacağım. Konu anlatırım kısmını. Şimdi varlık ismi tanıma değil, problemimiz var. Varlık ismi tanıma aslında bir metnol içindeki önceden tanımlamış varlıkları ve türlerini bulmak. Yani şöyle bir şey mesela burada ne varmış?
+
+188
+00:41:47,956 --> 00:42:10,536
+Ak Bank 8. Caz Festivali. Yani bir metin var elinizde, öyle söyleyeyim. Bir metin var elinizde. O metni bu hale getiriyorsunuz. Bu hal nasıl bir hal? Şöyle bir hal. Burada işte ilk zaman tekrar içerisine alınmış bazı şeyler. Ak Bank diyor mesela. Şunları görmezseniz olay şu işte. Ak Bank 8. Caz Festivali. 8-21 Ekim tarihleri arasında.
+
+189
+00:42:11,152 --> 00:42:24,471
+İstanbul, Ankara ve Adana'da caz ustaları ile müzikseverleri oluşturarak festivalin İstanbul'daki asistörünü vokal ve piyano virtüözü Brezilya sanatçı Tanya Maria yapacak.
+
+190
+00:42:24,471 --> 00:42:32,391
+Şimdi bu metni içerisindeki işte organizat kurum isimleri, yer isimleri, kişi isimleri.
+
+191
+00:42:32,820 --> 00:42:55,820
+Bu da tarihtir gibi bir şeyler. Belirleyebilirsiniz. O size kalmış. Neleri bulmak istediğiniz size kalmış. Varlıkları bulmak istiyorsanız önceden tanımlanmış. Siz tanımlıyorsunuz bunları. Eğitim kümesinin içerisine tabii ki dahil ediyorsunuz. Bunları bulmak. Yani buradaki hikayemiz aslında...
+
+192
+00:42:56,563 --> 00:43:19,244
+Bu metnin içerisinde ne tür varlıklar var ve bunlar neredeler? Bunları bulmak istiyoruz. Böyle bir şeyin yapılabilmesi için, yani elinizde bir metin var ve bu metinden yeni bir metnin aslında üretilmesini istiyorsunuz, öyle söyleyeyim.
+
+193
+00:43:21,588 --> 00:43:36,568
+Eğitim üniversitesi böyle olabilir. Ama giriş ve çıkışı nasıl kodlayacağız? Elimizde bir metin var. Bunu input olarak verdiğimizde output olarak ne vereceğiz?
+
+194
+00:43:36,568 --> 00:43:41,048
+Output olarak da bir sekans oluşturacağız aslında. Bir cümle girecek ve dışarıda bir cümle çıkacak.
+
+195
+00:43:42,708 --> 00:43:58,208
+Burada bir cümle girip bir cümle çıkışını sağlamak için, yani cümle girişi tamam, şey olacak, neden? Metnin kendisi olacak, bunda bir şeylik yok. Ama çıkış olarak neyi kullanacaksınız?
+
+196
+00:44:06,835 --> 00:44:24,755
+Bir varlık ismi ise onun sınıfını ifade eden bir şey kullanabilirsiniz. Eğer ki değilse o durumda da bu bir şey değil, sıfır falan gibisinden bir şey olabilir, yapı olabilir.
+
+197
+00:44:26,835 --> 00:44:50,875
+Hiçbir sınıfa dahil değil. Mesela 8. Caz Festivali. Mesela Akbank geldiğinde Akbank'a karşılıklı organizasyonu ifade etmeli. Ama 8. Caz Festivali geldiğinde biz bir şey yapmasını istiyoruz. Bir şey yapmasın ama dışarıya bir altlık vermemiz lazım. Dolayısıyla mesela Akbank için dışarıya O verirken ya da Org verirken öyle söyleyeyim. Sınıfın etiketi.
+
+198
+00:44:51,347 --> 00:45:11,327
+Bunun için de hiçbir şey vermemeyi ifade eden bir etiketiniz olması lazım. Yani no dersiniz, null dersiniz vs. artık neden o size kalmış. Dolayısıyla input olarak verdiğiniz metin bir sekans, output olarak verdiğiniz şey bir sekans halinde düşünebilirsiniz.
+
+199
+00:45:11,860 --> 00:45:37,360
+Burada ki kodlar var burada. Onların içerisinde bu mimariyi yaparken işte karakterler input olarak verilmiş ve karakterlerine sınıfı da output olarak verilmiş. Yani işte Akbank direkt tek seferde verilmiş. AKB, ANK denmiş. Sonra boşluk denmiş. Sonra 8 nokta boşluk falan. Bu şekilde bunlar tekrar tekrar verilmişler. Her bir girişe karşılık da bunun output'unda bu. İşte Akbank.
+
+200
+00:45:37,972 --> 00:46:01,012
+Bu kelimesi boyunca bunun org sınıfından olduğunu gösteren bir şey var. İşte one head encode var. Girişte yine karakterler de one head encode edilmiş. Yani kelime tabanlı bir yaklaşım değil de karakter tabanlı yaklaşım. Aynen şu yukarıda yaptığımız gibi yani 84 boyutlu şey ya da kaç tane karakterimiz varsa tüm eğitim kümesinin içerisinde. O kadar tane.
+
+201
+00:46:03,764 --> 00:46:08,564
+Burada karakter tabanlı LSM kullanılıyor. Seyerefler falan da başarılı kullanılıyor.
+
+202
+00:46:08,564 --> 00:46:10,164
+Ama onun detayına girmeyeceğiz.
+
+203
+00:46:10,164 --> 00:46:15,364
+Üç sınıflı bir nerf problemi ya da yedi sınıflı bir nerf problemi üzerinde bunlar çalıştırılmış.
+
+204
+00:46:15,364 --> 00:46:19,164
+Performanslar da fena değiller. Şuraya baktığımızda.
+
+205
+00:46:19,164 --> 00:46:25,964
+Varlık olmayan şeyleri zaten çok yüksek olasılıkla şey yapıyorlar. Bunlar varlık olan kısımlar.
+
+206
+00:46:25,964 --> 00:46:30,564
+Üç sınıflı olan da şeyler var. İşte neden bunlar? Organize için, lokasyon.
+
+207
+00:46:30,768 --> 00:46:41,987
+Ama yedi sınıflı olanda tarih var. Şurada görüyorsunuz. Date, percentage, money, time gibisinden. Böyle farklı farklı yapılarda var.
+
+208
+00:46:42,387 --> 00:46:46,807
+Ve burada da performansın yine fena olmadığı ama bütün her şey içinde eşit değiller.
+
+209
+00:46:48,807 --> 00:46:50,567
+Olduğunu görebiliyoruz.
+
+210
+00:46:52,147 --> 00:46:58,407
+Bu sekansdan sekans üretmeniz gereken bir problem çok temel olarak.
+
+211
+00:46:59,731 --> 00:47:07,672
+Aynen makine çevirisi falan gibisinden de düşünebilirsiniz. O noktada bir fark yok.
+
+212
+00:47:09,271 --> 00:47:19,032
+Yani şöyle söyleyeyim. Mesela bir sekam neryapısı yani varlık ismi tanımayla makine çevirisi arasında nasıl bir fark var?
+
+213
+00:47:27,380 --> 00:47:39,380
+Burada, öyle söyleyeyim. Buradaki inputtaki token sayınız da outputtaki token sayınız eşit. Yani buradaki...
+
+214
+00:47:39,519 --> 00:48:01,160
+Metindeki her bir şeye bir şey demeniz lazım. Yani varlıktır, değildir ya da varlıksa da ne tür bir varlıktır. Onu söylemeniz lazım. Makine çevresindeyse, yani o da sekanslı sekans bir işler. Ama orada inputunuzun sekans boyutuyla outputunuzun sekans boyutu aynı olmak zorunda değil. Değil mi? Öyle bir çok temel farklılık var.
+
+215
+00:48:02,867 --> 00:48:17,163
+Sınıf sayıları açısından bir farklılık var. Burada kabaca çıkıştaki sınıf sayısı açısından 3-5 tane sınıfınız var. Ama makine çevirisinde sizin...
+
+216
+00:48:18,164 --> 00:48:43,724
+Hedef dilinizde kullandığınız sözlüğün boyutu tane sınıfınız var. Yani çıkışı bir softmax'a geçirdikten sonra, kelime dağılımına çevirdiğiniz zaman atıyormuş 32 bin tane kelimeniz varsa, tokenınız varsa o şeyde, hedef dilde, 32 bin sınıflı bir problem çözüyorsunuz demek aslında. 32 bin tane sınıfı olan bir problem çözüyorsunuz.
+
+217
+00:48:45,172 --> 00:49:12,652
+Ama yine bir sınıflandırma problemi çözüyorsunuz. Şu vektör, şu 32.000 sınıftan hangisine denk geliyor? O problemi çözüyorsunuz. Yani ayrıca çok daha enteresan bir problem çözmüyorsunuz sekans-o-sekans yaklaşımlarda. Bir tane vektör var, o vektörü bir sınıfa mı ekleyeceksiniz ama o sınıf sayısı bu sefer 32.000. Şeyinizin boyutu 32.000 ise. Dikşinerinizin, vakabelerinizin boyutu.
+
+218
+00:49:13,331 --> 00:49:27,091
+32 bin, 64 bin sınıflı bir sınıflandırma problemi çözüyorsunuz. O noktada farklı bir şey yok. Yaklaşım yok ortada.
+
+219
+00:49:30,691 --> 00:49:36,591
+Peki, bu paragrafı anlama kısmına girmeyelim. Çok da şeydi zaten soru cevaplamayla.
+
+220
+00:49:37,108 --> 00:50:00,827
+Çok çok ayrılabilecek bir şey dediğim, onu haftaya konuşuyoruz. Peki, şimdi o zaman ben burada bir durayım. Bir ara verelim. Ondan sonra sizin sunumlarınıza başlayalım. Saat 9.50. 10.05 desek iyi olur herhalde. 15'e kadar.
+
+221
+00:50:01,684 --> 00:50:24,603
+Ara diyorum. Yani on beş dakika bir aramız var arkadaşlar. Az sonra görüşmek üzere. Ben size sırayla söyleyeceğim. Size teker teker sunumlarınızı gerçekleştirsiniz bizlere. Peki. İkinci dersimizde sunumlarımız başlayacak. Peki o zaman az sonra görüşmek üzere.
+
+222
+01:05:50,036 --> 01:05:53,155
+Evet, tekrardan merhaba arkadaşlar. Sesim giriyor mu?
+
+223
+01:05:54,056 --> 01:05:55,856
+Evet hocam.
+
+224
+01:05:56,275 --> 01:05:56,516
+Tamam.
+
+225
+01:05:57,896 --> 01:06:00,635
+Evet, o zaman şöyle yapalım.
+
+226
+01:06:01,775 --> 01:06:03,456
+[öğrenci]'le başlayalım.
+
+227
+01:06:06,195 --> 01:06:07,536
+Merhabalar hocam.
+
+228
+01:06:07,755 --> 01:06:08,356
+Merhaba.
+
+229
+01:06:10,815 --> 01:06:12,356
+Hemen ekran paylaşıyorum.
+
+230
+01:06:12,795 --> 01:06:13,076
+Tamam.
+
+231
+01:06:15,536 --> 01:06:16,835
+Geldi mi ekran?
+
+232
+01:06:18,291 --> 01:06:20,291
+İngilizce.
+
+233
+01:06:22,291 --> 01:06:24,291
+Tamam, fes.
+
+234
+01:06:24,820 --> 01:06:30,860
+Hello everyone, my name is [öğrenci] and I'm going to talk about prompt analysis in zero-shot learning.
+
+235
+01:06:32,380 --> 01:06:37,920
+I used three models for this project and I tested them onto datasets.
+
+236
+01:06:38,300 --> 01:06:41,440
+One is about topic classification and the other about sentiment analysis.
+
+237
+01:06:42,380 --> 01:06:50,279
+So briefly, zero-shot prompting is the task of using a model on classifying data without using any training data.
+
+238
+01:06:50,279 --> 01:06:52,820
+So in this world...
+
+239
+01:06:52,820 --> 01:07:20,820
+Bu konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda, bir konuda,
+
+240
+01:07:21,320 --> 01:07:22,320
+İlk
+
+241
+01:07:20,820 --> 01:07:27,139
+MLS, MLS, BERT, ve PLM, MLS, İGSANAT.
+
+242
+01:07:27,139 --> 01:07:35,380
+But these two models were fine-tuned using contrastive objective to better understand sentence similarity.
+
+243
+01:07:35,380 --> 01:07:43,860
+I did not fine-tune them. They are already fine-tuned and published under the sentence transformers hub, in Huggenface hub.
+
+244
+01:07:44,244 --> 01:07:50,244
+T5, the same for T5 model. It was fine-tuned for sentence-in-lardy tasks.
+
+245
+01:07:50,244 --> 01:07:58,244
+So, for the first experiment, I used the benchmark of zero-shot text classification.
+
+246
+01:07:58,244 --> 01:07:59,244
+This...
+
+247
+01:07:59,327 --> 01:08:27,327
+Bu yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları
+
+248
+01:08:29,427 --> 01:08:32,627
+Bu da bir soru var.
+
+249
+01:08:32,627 --> 01:08:33,427
+İçinlik ve kültürlük,
+
+250
+01:08:33,427 --> 01:08:35,427
+ve bir soru var.
+
+251
+01:08:35,427 --> 01:08:37,427
+Bir soru var.
+
+252
+01:08:37,427 --> 01:08:39,427
+Bu soru var.
+
+253
+01:08:39,427 --> 01:08:41,427
+Topik classifiyatı,
+
+254
+01:08:41,427 --> 01:08:43,427
+bir soru var.
+
+255
+01:08:43,427 --> 01:08:45,427
+Öncelikle,
+
+256
+01:08:45,427 --> 01:08:47,427
+bir soru var.
+
+257
+01:08:47,427 --> 01:08:51,427
+Bu soru var.
+
+258
+01:08:51,427 --> 01:08:53,427
+İçinlikle,
+
+259
+01:08:53,427 --> 01:08:55,427
+bir soru var.
+
+260
+01:08:55,427 --> 01:08:57,427
+Bu soru var.
+
+261
+01:08:57,427 --> 01:09:25,427
+bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu sözcükü de bu
+
+262
+01:09:53,427 --> 01:09:58,068
+I used an API called Words API to extract.
+
+263
+01:09:58,068 --> 01:10:00,427
+I give the category name and then I get the keywords.
+
+264
+01:10:00,427 --> 01:10:04,068
+And I filtered some unnecessary keywords.
+
+265
+01:10:05,268 --> 01:10:07,019
+For the...
+
+266
+01:10:07,155 --> 01:10:33,315
+F-measure scores for each model. We can see, for example, for the BERT model, when I used only the class name, the performance was very low. When I added just the prefix text is about, the performance was increased from 10% to 28%. When I used the topic definition, the performance was also increased, and it got its best performance when I used the keywords.
+
+267
+01:11:03,155 --> 01:11:09,756
+Text is about we can see more equal distribution along other classes.
+
+268
+01:11:09,756 --> 01:11:14,155
+When I use the topic definition I got even better performance.
+
+269
+01:11:14,155 --> 01:11:21,155
+Something interesting about these prompts is some prompts work better for some classes
+
+270
+01:11:21,155 --> 01:11:24,756
+and some prompts work better for other classes.
+
+271
+01:11:24,756 --> 01:11:29,756
+For example, text is about work the best for this class computers and internet.
+
+272
+01:11:31,155 --> 01:11:49,963
+Bu konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda birçok konuda
+
+273
+01:11:50,195 --> 01:12:12,300
+Bu, bu
+
+274
+01:12:12,500 --> 01:12:14,500
+Bu BERT model.
+
+275
+01:12:14,500 --> 01:12:16,500
+Bu BERT model, bu BERT model,
+
+276
+01:12:16,500 --> 01:12:21,500
+daha önce de BERT model görüldü.
+
+277
+01:12:21,500 --> 01:12:34,500
+Bu BERT model görüldü.
+
+278
+01:12:58,771 --> 01:13:05,771
+Evet, diğer modeller, Szentmiyorsan, modeller, outperformer modeller.
+
+279
+01:13:07,252 --> 01:13:35,252
+Bu, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, adın, prefix, ad
+
+280
+01:14:38,931 --> 01:14:43,371
+Bu dağlı bir şey.
+
+281
+01:15:11,412 --> 01:15:14,332
+Bu bir şey, bu bir şey, bu bir şey.
+
+282
+01:15:14,332 --> 01:15:16,412
+Bu bir şey, bu bir şey.
+
+283
+01:15:16,412 --> 01:15:20,412
+Bu bir şey, bu bir şey, bu bir şey.
+
+284
+01:15:20,412 --> 01:15:34,764
+Bu bir şey, bu bir şey.
+
+285
+01:15:35,507 --> 01:15:43,547
+Bu da performans, bu da
+
+286
+01:15:43,547 --> 01:15:46,427
+pre-trained model performans daha iyi
+
+287
+01:15:46,427 --> 01:15:50,427
+ve pre-trained model performans daha iyi
+
+288
+01:15:50,427 --> 01:15:51,467
+ve de performans daha iyi
+
+289
+01:15:51,467 --> 01:15:52,547
+ama daha iyi bir model
+
+290
+01:15:52,547 --> 01:15:54,427
+ama daha iyi bir performans daha iyi
+
+291
+01:15:54,427 --> 01:15:55,427
+ve de performans daha iyi
+
+292
+01:15:55,427 --> 01:15:56,427
+ve de modeli
+
+293
+01:15:56,427 --> 01:15:58,427
+ve de çok daha iyi
+
+294
+01:15:58,427 --> 01:15:59,427
+bir şekilde
+
+295
+01:15:59,427 --> 01:16:02,028
+bu da veren veren veren
+
+296
+01:16:02,028 --> 01:16:02,547
+bu da
+
+297
+01:16:03,507 --> 01:16:06,507
+Berte'in modeli'nin bu kadar iyi olduğunu düşünüyorum.
+
+298
+01:16:06,507 --> 01:16:10,507
+Bu, Berte'in modeli'nin bu kadar iyi olduğunu düşünüyorum,
+
+299
+01:16:10,507 --> 01:16:16,507
+bu kadar %29-37 %'i bu kadar.
+
+300
+01:16:18,507 --> 01:16:24,507
+Bu, Berte'in modeli'nin modeli'nin bu kadar iyi olduğunu görmek için,
+
+301
+01:16:27,380 --> 01:16:37,819
+Sentiments were classified as fear or love or like the model was misclassified most of the classes.
+
+302
+01:16:37,819 --> 01:16:46,640
+This is for the birth model. For the MPNet model there is a bit improvement in the results.
+
+303
+01:16:46,868 --> 01:16:58,316
+Bu t5, bu t5, bu t5, bu t5, bu t5, bu t5, bu t5, bu t5
+
+304
+01:16:58,579 --> 01:17:14,579
+As a conclusion, we can say that again the sentence models that were fine tuned on sentence similarity tasks performed better than BERT model which were not performed, which was not fine tuned on sentence similarity tasks.
+
+305
+01:17:14,579 --> 01:17:26,579
+Adding the prefix text is about the class name, decreased the performance for the BERT model but decreased it for the sentence reform models and the use of the prefix, I feel, really had
+
+306
+01:17:44,372 --> 01:17:56,652
+Teşekkürler, [öğrenci]'nın güzel ödevin için. Burada her bir sınıftan yüzer tane örneği rastgele seçip yaptın herhalde, değil mi? Sonuçlar hep üzerinde verdi.
+
+307
+01:17:57,852 --> 01:18:08,471
+Peki, iki tarafta birbirinden farklı sonuçlara var mısınız? İki taraftayken topik classification ve sentiment anınızda.
+
+308
+01:18:08,979 --> 01:18:21,840
+Ama ortak nokta yine bu PRET, daha doğrusu Contrastive Learning ile PRET'lerin edinmiş Santos modellerin daha iyi sonuç verdiği, ikisinin içinde ortak olan şey o söyleyebiliriz herhalde.
+
+309
+01:18:22,359 --> 01:18:23,500
+Aynen hocam.
+
+310
+01:18:23,959 --> 01:18:25,600
+Çok teşekkürler.
+
+311
+01:18:26,199 --> 01:18:26,959
+Teşekkür ederim.
+
+312
+01:18:27,739 --> 01:18:30,779
+Peki, [öğrenci] seninle devam edelim mi?
+
+313
+01:18:35,028 --> 01:18:37,427
+Bunları cemek ekranı paylaşıyorum.
+
+314
+01:18:44,948 --> 01:18:45,887
+Geliyor mu ekran?
+
+315
+01:18:46,667 --> 01:18:47,247
+Evet, geldi.
+
+316
+01:18:51,347 --> 01:18:56,747
+Ben de [öğrenci] gibi giriş kısmını biraz atlatarak devam edeyim.
+
+317
+01:18:56,747 --> 01:18:58,887
+Aynı şeylerde.
+
+318
+01:19:00,992 --> 01:19:13,291
+Settinglerde ödevi yaptım. Yani kosen semilatileri hesaplayarak prompta hangisi daha yakınsa o sınıfa ait olarak kabul ettim. Veri kümesi olarak Aging Yuzlu Rotten Tomatoes veri kümelerimi kullandım.
+
+319
+01:19:14,771 --> 01:19:22,220
+Şimdi promptları oluşturmak için başta bir baseline olarak sadece sınıfların isimlerini...
+
+320
+01:19:22,228 --> 01:19:40,028
+Bunlarla karşılaştırmak adına. Sonrasında terim frekanslarını kullandım. Terim frekanslarını kullandım. Gördüğünüz gibi temizlememe rağmen istenmeyen kelimeler öne çıkabiliyor. O yüzden DFIDF'i kullandım çok sık.
+
+321
+01:19:40,287 --> 01:19:59,387
+Geçen sözcükleri elemek adına yine de AP gibi böyle ajansların isimleri halen iki tane sınıfta mesela geçiyorsa, diğerlerinde geçmiyorsa durdular. O yüzden aralarında ortak yani iki tane sınıfın arasında mesela.
+
+322
+01:20:00,115 --> 01:20:10,195
+Hepsine baktım. Ortak sözcüklerin 50 tanesine bakarak en fazla geçen, yani hepsini birleştirdim. 50 tane en fazla geçeni eledim hepsinden.
+
+323
+01:20:12,136 --> 01:20:15,576
+Şimdi ileride TF-IDF olarak bahsedeceğim kısım bu şekilde.
+
+324
+01:20:15,576 --> 01:20:17,296
+Yani şurada.
+
+325
+01:20:17,716 --> 01:20:32,695
+5 tane sözcük seçmişiz her bir sınıf için. Bunlar da TF-IDF skoruna göre sıralandığında yüksekten aşağı doğru en yüksek skora sahip olan 5 tane sözcük tabii elemeleri yaptıktan sonra.
+
+326
+01:20:33,316 --> 01:20:45,156
+Sonrasında frekanslara ek olarak taglerini ekledim. Belli isimler, sıfatlar ve fiiller olacak şekilde sadece onları kabul ettim.
+
+327
+01:20:45,684 --> 01:21:10,904
+Burada birazcık daha iyi temizleme yaptım. Şöyle baktığımızda işte şeylerle ilgili, sporla ilgili, zafer, kupa vesaire gibi şeyler var. Yani diğerine göre biraz daha iyi, daha alakalı şeyler var ve farklı farklı oluyorlar. Hep yakın değiller.
+
+328
+01:21:14,547 --> 01:21:36,647
+Sonrasında World Embedding metodunda da bu üçüncü metot. Burada World2Vac modeline eğitilen bir model aldım. Bu eğitilen modeli kullanarak az önce söylediğim şekilde frekanslara göre sıraladıktan sonra bu sefer Cosign Similorities'i yani sınıfın temsiliyle en benzeşen 6 kelimeyi seçtim.
+
+329
+01:21:42,547 --> 01:22:10,368
+Şimdi burada baktığımızda tüm şeylerde neredeyse bir iyileşme var. Yani sınıfı temsil eden sözcükler seçilmiş gerçekten. Tabi ileride skor bakımından hepsinde o kadar iyi değil ama en altta teknoloji de bu sefer şey yok, farklılıklar yok. Hepsi tek tip ayağına gelmiş. Aşağıda da pozitif ve negatif de pozitif de artık hep olumlu şeyler aradığı için.
+
+330
+01:22:10,547 --> 01:22:20,708
+Pozitifte de bir düşüş yaşanacak. Negatifte de artık sözcükler tamamen negatif veya pozitif olan sözcüklerden oluşuyor. Bunun da kötü tarafı olabilir.
+
+331
+01:22:20,708 --> 01:22:32,528
+En sonunda da şimdi bu sonuçları önceki metotların tamamının sonuçlarını aldıktan sonra her bir sınıf için en iyi prompt neyse onu aldım ve jeneratif bir modele verdim, GPT'ye verdim.
+
+332
+01:22:38,547 --> 01:23:01,188
+O sözcükleri içeren iyi bir prompt oluşturmasını istedim. Bunlarla beşer tane prompt denedim. En iyi promptları seçtim her bir sınıf için. Ve bunlarla bu sefer benzerliği hesaplayarak kullandım. Benim manuel olarak müdahale etmeden yapmaya çalıştım en fazla. Başarısız denemelerden de birazdan bahsedeceğim.
+
+333
+01:23:06,771 --> 01:23:12,711
+Şu anda ilk başta veri kümesi üzerinden her bir metodun performansını söyleyeceğim.
+
+334
+01:23:12,832 --> 01:23:18,971
+Sentence Transformer, benim kullandığım metod, yöntem, sınıf şeyler, temsil yöntemlerinden iki tanesi var.
+
+335
+01:23:19,072 --> 01:23:26,592
+Biri Word2Vec, biri Sentence Transformer. Bunların temsillerini ben kosan benzerliği üzerinden hesaplıyorum.
+
+336
+01:23:27,092 --> 01:23:34,771
+Sadece Word sınıfında, dünyayla ilgili haberlerde ki orada da aslında temelde diğer...
+
+337
+01:24:02,899 --> 01:24:27,819
+TFI'de App Method'una geçtiğimizde her ikisinde performansın iyice arttığını görebiliyoruz. Diğerine baktığımız zaten baseline olarak karşılaştırmak istiyoruz. Beklediğimiz bu ama pozitif ilgilerini eklediğimizde World ve sporlarda daha iyi bir sonuca sebep olurken diğerlerinde, diğer sınıflarda daha kötü bir sonuca sebep oluyor.
+
+338
+01:24:28,256 --> 01:24:41,316
+Word Embedding'lerini kullandığımızda da tam istediğimiz gibi her birinde yükselme veya her sınıfta düşüş gibi bir sonuç yok.
+
+339
+01:24:43,155 --> 01:24:54,496
+Bunun sebebi, başta gösterdiğim büyük ihtimalle promptların bazı sınıflar için iyileşmesi, bazı sınıflar için ise kötüleşmesi. Başta yaptığım yoruma dayalı olarak büyük ihtimalle öyledir.
+
+340
+01:24:55,595 --> 01:25:07,815
+GPT için de aynı şekilde, yani GPT'de eklediğimiz sınıflar, ben özellikle açıkçası BERT tabanlı modelde, Sentence Transform modelinde daha iyi bir sonuca sebep olmasını bekliyordum.
+
+341
+01:25:07,815 --> 01:25:11,155
+Çünkü artık elimizdeki prompt bir cümle, anlamlı bir cümle haline geliyor.
+
+342
+01:25:11,155 --> 01:25:31,355
+Dolayısıyla temsilinin daha iyi olmasını bekliyordum ama öyle olmadı. Baktığımızda bazı sınıflarda dünya mesela çok iyileşiyorken şeyde science ve teknolojide öyle bir iyileşme yakalanmamış.
+
+343
+01:25:34,963 --> 01:25:57,963
+Ben iki önceki ile karşılaştırıyorum. Çünkü bunda da kötü bir kötüleşme oldu. Şuraya baktığımızda 67'den düşmüş 53'e, 68'den de sadece 74'e yükselmiş. Bir öncekinde zaten 73'ü yakalamıştık. O yüzden yorumlarım daha önceki metotlara dayalı. Bir önceki değil. Rotten Tomatoes'a baktığımızda...
+
+344
+01:25:59,283 --> 01:26:14,583
+Baseline'a baktığımızda pozitif sınıfta sentence transform çok iyi sınıflandırma yapabiliyor. Word2Vect'e tam tersi bir durum var. Negatifleri daha iyi yakalıyor.
+
+345
+01:26:16,583 --> 01:26:18,583
+TF-IDF'e geçtiğimizde...
+
+346
+01:26:19,252 --> 01:26:33,231
+Aslında negatif sınıf için çok kötü bir düşüş görüyoruz burada. Sentence Transformer için. Pozitif için zaten her şey pozitif dediği için aslında çok iyi bir şey değil.
+
+347
+01:26:33,231 --> 01:26:39,811
+TFI'de F'e baktığımızda ilk baştaki prompta baktığımızda şöyle.
+
+348
+01:26:40,627 --> 01:26:51,407
+Şurada negatife bakalım. Hep aslında çok fazla geçen ama negatif kelimelerle ilgili olmayan sözcükler geçtiği için böyle olduğunu tahmin ediyorum.
+
+349
+01:26:52,867 --> 01:26:56,627
+Yani negatifliği yakalayamamış yazılan fontlarda.
+
+350
+01:26:57,627 --> 01:27:07,707
+Frekansa dayalı metodlara geçtiğimizde Sentence Transformer performansında pozitif için çok ciddi bir düşüş var. Negatif için ise bir artış var.
+
+351
+01:27:08,627 --> 01:27:36,108
+World2Vac için ise pozitif de yine bir düşüş olmuş ama negatif. Her şeye burada bu sefer negatif demeye başladığı için çok ciddi bir yükselme görüyoruz. World Embedding'lerinde daha da artık World2Vac'in çok kötü bir sonuç verdiğini görüyoruz. Artık her şey negatif diyor. Bu da az önce gösterdiğim frontlarda.
+
+352
+01:27:36,787 --> 01:27:46,127
+Toplulardan kaynak olduğunu zannediyorum. Çünkü orada sözcükler çok uçuk olmuş.
+
+353
+01:27:47,988 --> 01:28:11,988
+GPT'ye geldiğimizde, GPT yine karışık bir sonuç verdi bize ama en azından Shake tarafında, Sentence Transformer tarafında istediğim iyileşmeyi yakalamasa da denge açısından, her şeye artık çok negatif demediğini, pozitiflerin %50'ye, negatiflerin %77'ye yaklaştığını görebiliyoruz.
+
+354
+01:28:11,988 --> 01:28:15,988
+İki farklı deneme yapmıştım ek olarak. Birinde iyi eğitilen bir...
+
+355
+01:28:15,988 --> 01:28:43,988
+Bu modelin hangi sözcük eğitilen bir duygu durumu analizi modelinin hangi sözcüklerin duygu durumu sanatını etkilediğini bularak en fazla etkileyen sözcükleri kullanarak bir çalışma yaptım. Oradaki sonuçlar farklı olmadığı için ve de o duygu durumu üzerinde eğitildiği için sonuçları eklemedim. Çünkü zero shot olmasını istiyoruz. Bu şu ana kadar kullandığım temsil yöntemler.
+
+356
+01:28:43,988 --> 01:28:51,927
+Özellikle bu görev için eğitilmemişler. Sadece temsil için eğitilmişler. Bir de genetik algoritmaları kullanarak bir deney yaptım.
+
+357
+01:28:54,068 --> 01:29:21,907
+Elde ettiğim yani popülasyon büyüklüklerini büyüttüğümde sonuçlar bir türlü çıkmadı. O yüzden onun da sonuçlarını maalesef paylaşamadım. Kod yani bayağı uzun bir süre çalıştı. Orada da benim implementasyonda bazı optimizasyonlar yapabilirim. Oradaki çalışma ama şöyleydi benim kafamdaki. TFI'de F'de seçtiğimiz sözcüklerin sözcükleri alacağız. Bu sefer ilk altısını değil, ilk yüzünü alıyorum. İlk yüzü içerisinden rastgele sözcükler seçiyorum ve onlar popülasyonun bireylerini oluşturuyorlar.
+
+358
+01:29:22,068 --> 01:29:48,327
+Yani bizim elimizdeki her bir birey bir metinden oluşuyor ve bu metnin içinde terimler var. Terim sayısı kadar bir uzunluğu var bireyin. 7 veya 8. Benim denemelerimde 8'di. Sonrasında bunları crossoverlayarak en fazla skora sahip olanları bırakıyorum. Bu daha önce yapay zeka ödevinde yaptığım bir kod vardı. Oradan faydalandım.
+
+359
+01:29:50,068 --> 01:29:59,667
+Bu örnekler üzerinde bu sonuçları alıyor olmama rağmen.
+
+360
+01:30:00,000 --> 01:30:04,239
+Sonuçları bir türlü alamadım. Ama bunu da üzerine gitmek istiyorum.
+
+361
+01:30:05,180 --> 01:30:07,619
+Tamam olarak benim söyleyeceklerim bu kadar.
+
+362
+01:30:07,619 --> 01:30:23,800
+Dediğim gibi iki tane model kullanarak, iki tane temsil yöntemi kullanarak, hem sadece sınıf ismini kullanarak ve en fazla geçenleri TF-IDF yöntemiyle sonrasında tüm sınıflarda yaygın, ortak yaygın geçenleri eleyerek,
+
+363
+01:30:23,920 --> 01:30:27,619
+pozitiklerine bakarak ve de kelime embeddinglerinin sınıflarıyla benzeri.
+
+364
+01:30:28,000 --> 01:30:48,979
+Necdarlıklarına bakarak çeşitli yöntemlerle promptları otomatik olarak hiç müdahale etmeden oluşturmaya çalıştım. Bir de en son da GPT ile böyle daha güzel, daha cümle anlamlı bir cümle oluşturarak denemeler yapmaya çalıştım. Sonuçlarım bu şekilde. Sorunuz varsa dinlemeye hazırım.
+
+365
+01:30:50,899 --> 01:30:58,379
+Çok teşekkürler [öğrenci] çalışmak için. Soru soran var mı arkadaşlar?
+
+366
+01:31:02,439 --> 01:31:07,219
+Peki, devam edelim. [öğrenci], [öğrenci], [öğrenci].
+
+367
+01:31:09,959 --> 01:31:11,000
+Evet hocam.
+
+368
+01:31:11,259 --> 01:31:12,439
+Tamamdır, sen de.
+
+369
+01:31:15,439 --> 01:31:17,159
+Şu an geliyor mu hocam şunu?
+
+370
+01:31:21,203 --> 01:31:21,824
+Evet, geldim.
+
+371
+01:31:22,963 --> 01:31:24,283
+Sayın hocam, değerli arkadaşlar.
+
+372
+01:31:25,103 --> 01:31:26,283
+İsmimiz [öğrenci].
+
+373
+01:31:26,763 --> 01:31:28,984
+Bugün hesaplamalarından benim ikinci ödevimi anlatacağım.
+
+374
+01:31:30,904 --> 01:31:34,663
+Bu sunumunun içindeki özet, veri kümen ve sonuçlar hakkında olacak.
+
+375
+01:31:35,423 --> 01:31:42,023
+Özet olarak bu ödevdeki amacımız Zero Short Learning'de promptların etkisini bulmak ve iyi prompt yollarını bulmaktır.
+
+376
+01:31:42,023 --> 01:31:46,543
+Zero Short Learning'i iki sinisel dil modelinde uyguladık. Bunlar Bert ve Elektra.
+
+377
+01:31:47,188 --> 01:31:59,228
+Ve her bir sınıfı temsil eden 5 farklı prompt belirlendi. Etiketini tahmin etmek istediğimiz veri kümesinin belirdiğimiz prompt'un temsillerinden hangisine daha yakınsa o sınıftandır diye belirttik.
+
+378
+01:31:59,228 --> 01:32:08,203
+Ve başarı eğitim test kümesi ayrımı olmadan tüm veri kümesi üzerinde ölçtük. Kullandığım haber sınıflandırma veri kümesi...
+
+379
+01:32:08,979 --> 01:32:25,039
+Beş klası vardır. Genel olarak normal bir dağılım vardır klaslar arasında. Duygu durum analizinde ise Türkçe tweetlerin bulunduğu tweet veri kümesini kullandım. Burada da pozitif, negatif ve nötr sınıflarına ait.
+
+380
+01:32:25,779 --> 01:32:53,199
+Daha sonra ben promptların başarılarını, daha iyi prompt bulma başarılarını iki yöntem, iki şekilde ölçtüm. Birincisi hepimiz promptları daha iyi geliştirmek için kelimeleri değişiyor. Sanki kelimeyi daha çok kullansam bunda başarı artıyor mu, azalıyor mu? Ben bir de ek olarak acaba bu kullandığımız promptta kaç kelimeden oluşursa acaba başarımız daha iyi veya daha düşük olur? Bunu da ayrıyeten ölçmek istedim.
+
+381
+01:32:53,779 --> 01:32:54,840
+İlk olarak bahsettim.
+
+382
+01:32:55,604 --> 01:33:23,604
+Kelime bazı, yani ben bir kullandığım promptun kelimesini değiştirerek başarı nasıl değişebilir bunu göstereceğim. Önün BBC haber veri setinde sport sınıfı örnek için yapıyorum bunu. Yoksa diğerlerinde de aynı işlemi yaptım şimdi az sonra anlatacağım işlemi. Önün spor sınıfı için temel, genel kelime olarak basket ve futbol, tenis gibi kelimeler kullandığım da örneğin benim genel başarım, tüm hepsi için genel başarım yüzde otuz bir.
+
+383
+01:33:23,604 --> 01:33:38,604
+1.3 gelmişti. Ancak BBC, yanlış bilmiyorsun BBC İngiliz kaynaklı bir haber şeyi. Hani İngiliz sporuyla ilgili, İngiltere futboluyla ilgili acaba kelimeler kullanırsam başarı nasıl artar mı veya azar mı bunu...
+
+384
+01:33:39,123 --> 01:33:58,943
+Burada örneğin Alex Ferguson'ı, Chelsea'ı, Arsene Wenger kelimelerini kullandığında başarının arttığını gördüm. Tabii bu sadece spor şeyi için diğerlerinde de kezayla İngiliz, İngiltere ülkesine ait biraz daha yakın kelimeler kullandığında başarının daha arttığını gördüm. Bu örneğin tek kelimelik. Yani bir kelime.
+
+385
+01:33:59,551 --> 01:34:08,051
+Prompt'un bir kelime olursa olan başarı. Önün üç kelime ile bu işlemi yaptırdığımda burada yine üç kelime ile ilgili...
+
+386
+01:34:08,435 --> 01:34:29,536
+Genel, yani o haber başlıklı şey için genel bir cümle yazdığımda başarımın %42 olduğunu görmüştüm. Front başarımın. Ancak yine İngiltere, yani İngiliz şeyine ait kelimeler kullandığımda, oraya özgü kelimeler diyeyim, başarımın arttığını gördüm. %53.8'e kadar çıktığını gördüm genel başlığında.
+
+387
+01:34:29,536 --> 01:34:36,435
+Yine dediğim gibi bu işlemi diğer haber başlığı, haber klaslarında da yaptım. Burada sporsu daha rahat anlatabilirim diye gösterdim.
+
+388
+01:34:36,435 --> 01:34:59,275
+Kelime bazı da benim promptlardaki kelimeyi bazı değiştirmem bu şekildeydi. Bir de dediğim gibi acaba bu promptum benim kaç kelimeden oluşursa başarım daha iyi olabilir diye bunu gözlemledim Bert'te. Burada en yüksek başarımı 4 ve 5 kelimelik promptlarımda yüksek geldiğini gördüm. Bunun sebebi de hani...
+
+389
+01:34:59,380 --> 01:35:20,859
+Anlamlı bir cümle oluşması için gerekli olan en az 4-5 kelimedir diye düşünüyorum. O yüzden en çok buralarda başarı elde edildiğini gördüm. Burada 6 ve daha fazla kelime, o listemde 6 ve daha fazla kelimeden olduğu tek bir liste. Devam edebilirdim açıkçası 6-7-8 diye ama burada kestim açıkçası. 6 ve şeyleri birleşik aldım.
+
+390
+01:35:26,515 --> 01:35:40,955
+Aldım %65.8'i BERT modelimde. Aynı işlemi elektra modelimde de yaptığımda yine aynı şeyde 4 kelime olan yerde yüksek başarımı aldım %42.4 olarak.
+
+391
+01:35:40,955 --> 01:35:51,335
+Bu zaten işlemlere başlamadan önce de BERT'in elektradan daha yüksek çıkmasını bekliyordum. Birinci bir hükümem için bunu bana sağladı.
+
+392
+01:35:52,467 --> 01:36:13,047
+İkinci veri kümemde ise dediğim gibi Türkçe tweetlerin bulunduğu haber tweetlerdi. Burada da yine ben bir promptları belirlemeden önce dataset'i incelediğimde çoğu cümlelerin turizmle ilgili olduğunu gördüm. Yani %70'e kadar cümlelerin olumlu olumsuzlukları fark etmiyor. Turizmle ilgili olduğunu gördüm.
+
+393
+01:36:13,047 --> 01:36:20,467
+Burada ilk önce yine bir önceki veri kümemde yaptığım gibi 3-4 kelimelik için örnek gösteriyorum.
+
+394
+01:36:20,467 --> 01:36:44,147
+Klasik bir olumlu cümle için yazılan, negatif cümleler için yazılan ve nötr cümleleri izlenen üç farklı prompt örneği gösterdim. Burada başarın 45.7 idi. Daha sonra ben bir önceki veri kümesinde yaptığım şey gibi, yani biraz daha veri kümesini inceleyerek şey yaptığımda, Türkiye'de güzel yerler, turizm sayısı bayağı azaldı ve turizm ülkenin gelir kaynadı. Yani pozitif, negatif, nötr.
+
+395
+01:36:45,011 --> 01:37:13,011
+Pronto yaptığım başarımın düştüğünü gördüm. Bunu da şu sebebe bağlıyorum hocam. Hani haber sınıflandırmada farklı haber sınıflarının kelimeleri farklıdır. Yani spor kelime klasında kullandığımız kelimeler ne bileyim teknoloji haber sınıfı şeyde çok görülmeyebilir. O yüzden orada veri setine benziyor. Yani veri setindeki kelimelere bağlı olarak değiştiğim proplar başarı yaptırdı. Ama burada yani negatif cümlemde pozitif cümlemde.
+
+396
+01:37:13,011 --> 01:37:30,011
+Bu yüzden konu başlıklı olarak özel olarak değiştirdiğim promptlar başarımı düşürdü. Daha çok genel...
+
+397
+01:37:31,347 --> 01:37:59,188
+Postü cümleler, genel negatif cümleler ve genel nötr cümleler başarımı arttırdığını gözlemledim. Burada da yine aynı işlemi yaptım. Yine kelime bazı, kelime sayısı bazı olarak incelediğimde yine burada da dört kelimenin BERT'te yüzde kırk beş nokta yedi. Yani genel başarımı yüzde kırk beş nokta yedi olduğunu görebili dört kelimelik şeylerde. Elektra'da da bu biraz daha düşük. Yani yüzde otuzlara.
+
+398
+01:37:59,347 --> 01:38:15,688
+Burada da 3 kelime, özür dilerim. 6 kelime ve daha fazlasında daha başarılı olduğunu gördüm elektro modelimde. Yani genel olarak hani şeye başlamadan önce Bert'in daha başarılı olmasını bekliyordum.
+
+399
+01:38:19,060 --> 01:38:37,100
+Duygu durum analizindeki başarımı daha fazla çıkmasını bekliyordum. Çünkü orada ayıt ettirme biraz, kelime bazı ayıt ettirme daha kolay. Duygu durum analizinde biraz daha zor diye düşünmüşüm başlarken. Açıkçası sonuçlarda beni bu konuda yanıtmadı. Bu şekilde hocam belirteceklerim.
+
+400
+01:38:38,452 --> 01:39:02,211
+Çok teşekkürler [öğrenci] [öğrenci]. Şey soracağım, mesela iki kelimeden üç kelimeye çıkarken oradaki işlem, sonuçta bunların hepsini elle ayarlıyorsun. Doğru anlıyor musun? Promptada sen kendin elle yazıyorsun. Senin aklına geldiği kadarıyla bunu en iyi bu şekilde temsil edebiliriz şeklinde ilerliyorsun. Sana bağlı yani. Oradaki şeyler bir istatistik falan üzerinden değiller.
+
+401
+01:39:02,211 --> 01:39:03,891
+Bir şey kullanmadım, kendim evet.
+
+402
+01:39:04,252 --> 01:39:06,452
+Anladım, elle ilerledim. Tamamdır. Peki, çok teşekkür ederim.
+
+403
+01:39:06,452 --> 01:39:15,912
+Teşekkürler [öğrenci]'tan. Peki, şimdi devam edelim.
+
+404
+01:39:15,912 --> 01:39:22,131
+[öğrenci] [öğrenci]. Evet, seni dinleyelim.
+
+405
+01:39:34,131 --> 01:39:36,992
+Hacım görüşürüz mü? Evet geldi.
+
+406
+01:39:39,992 --> 01:39:41,751
+My name is [öğrenci].
+
+407
+01:39:42,251 --> 01:39:45,952
+And in this lecture, I will talk about
+
+408
+01:39:45,952 --> 01:39:50,471
+Models, Zilis of Learning, Birth, and Bibbiküls,
+
+409
+01:39:50,791 --> 01:39:55,671
+Experimenting about the BBC News Analyst and Emotional Analyst,
+
+410
+01:39:55,671 --> 01:40:01,291
+Concordial Finding Better From and Evoluted Their Effective Things.
+
+411
+01:40:02,260 --> 01:40:17,260
+Öncelerleaning is this ability to detect the models that have never seen during training. It resembles our ability to help humans to organize, to generalize and identify new scenes without exploiting the environment.
+
+412
+01:40:42,644 --> 01:40:53,403
+Bu model, according to the sentence, has never seen during training. We can see output positive and negative science and politics.
+
+413
+01:40:53,403 --> 01:41:09,644
+We seen the birth, the birth family of the model with the transform and code architect, the process, each token input in the full context of all tokens. You see the architect's birth.
+
+414
+01:41:23,796 --> 01:41:30,796
+Bir de bu konuda BBC News'in
+
+415
+01:41:30,796 --> 01:41:34,796
+İki videoda bu konuda
+
+416
+01:41:34,796 --> 01:41:51,796
+Bir de bu konuda
+
+417
+01:41:51,796 --> 01:41:53,796
+Teknoloji, Work & Other.
+
+418
+01:41:54,228 --> 01:42:12,268
+Modeling techniques, we utilize the Hugging Face Transform library, which feature, we train mode for natural language processing tasks include BERT and GPT-2 to adapt BERT for our specific classification tasks.
+
+419
+01:42:12,268 --> 01:42:17,568
+We employ fine-tuning techniques with a zero-shot learning approach.
+
+420
+01:42:22,228 --> 01:42:23,228
+Teşekkürler.
+
+421
+01:42:23,663 --> 01:42:50,943
+Bu dağsak model on the corresponding dataset. We utilize the soft match function, the general class probability and select the class with higher probability, the particular class for each example. You see in this here, BBC, I use BBC News prompt. One of them is this text is about we should build mass.
+
+422
+01:45:28,692 --> 01:45:34,692
+Positif, negatif, joy, sadness, anger, fear, and surprise.
+
+423
+01:45:34,692 --> 01:45:46,692
+I wrote the emotion prompt like this. This text is about something. The writers seem to be feeling. The emotions conveyed in this text are.
+
+424
+01:45:46,692 --> 01:45:54,347
+Something is the dominated emotion in this text. Reading the text makes me feel something.
+
+425
+01:45:54,612 --> 01:46:16,851
+Emotion example, I am so happy today. I got the job I wanted. I feel really sad because my dog died feeling angry without saying about the current political situation. I am scared of spiders or something like this. This table showed about the emotion. I wrote the two examples.
+
+426
+01:46:46,996 --> 01:46:50,456
+0.99 or something like this.
+
+427
+01:46:51,699 --> 01:47:19,699
+Bu tabel show the accuracy of each prompt for each class in each dataset. I use the dataset BBC News and this table show the economy in the prompt one is 0.660 and prompt two is 0.72 and prompt three 0.78 and the height
+
+428
+01:47:19,699 --> 01:47:21,699
+3.0.555
+
+429
+01:47:21,699 --> 01:47:25,699
+0.62
+
+430
+01:47:25,699 --> 01:47:27,699
+or
+
+431
+01:47:27,699 --> 01:47:29,699
+another one
+
+432
+01:47:29,699 --> 01:47:31,699
+something like this
+
+433
+01:47:43,667 --> 01:48:05,163
+Bu, bu
+
+434
+01:48:06,771 --> 01:48:12,311
+Teşekkürler [öğrenci]. Bir tek Bert'i kullandın diye anladın. Doğru mu?
+
+435
+01:48:13,111 --> 01:48:20,951
+Bert and GPT'yi nerede kullandın?
+
+436
+01:49:00,564 --> 01:49:13,844
+[öğrenci]. Merhaba. Merhaba. Evet, seni dinleyelim şimdi. Ekran görünüyor mu? Evet, geldim.
+
+437
+01:49:17,395 --> 01:49:28,376
+So, I used five models that have been applied to the input data. It's a BART sentiment analysis from the pipeline, BERT, ELECTRA, and XLM, Roberto.
+
+438
+01:49:28,376 --> 01:49:32,376
+So, and here is...
+
+439
+01:49:32,376 --> 01:49:34,036
+Pardon.
+
+440
+01:50:00,000 --> 01:50:28,000
+Bu, bu
+
+441
+01:50:28,000 --> 01:50:56,000
+Bu konuyu örneklerle anlatacağım.
+
+442
+01:51:07,507 --> 01:51:35,507
+And the second input was about the fashion news. So this is travel fashion. In the candidate labels, it predicted as a travel because in the second input, they talked about there was word about countries like Asia, Japan or China. So that's why it predicted as a travel. Then it predicted as a fashion with 23% of the store.
+
+443
+01:51:35,507 --> 01:51:42,507
+ve
+
+444
+01:51:42,507 --> 01:52:03,507
+bu
+
+445
+01:52:34,547 --> 01:52:41,408
+Bu yüzden de kodlarla anlatacağız.
+
+446
+01:52:41,408 --> 01:52:44,627
+Sertimendal analysis'in pipeline'in
+
+447
+01:52:44,627 --> 01:52:48,368
+ve bu kodlarla altyazı ekran.
+
+448
+01:52:48,368 --> 01:52:54,047
+Bir model de kodlarla anlatacağız.
+
+449
+01:52:54,047 --> 01:52:59,488
+Bu kodlarla anlatacağız.
+
+450
+01:53:00,404 --> 01:53:19,984
+A maske model. For example, this news about, and I'm giving a mask, they're predicting as it's Argentina. Because in the first text, they talked about that Argentina is one of the successful team in FIFA. And the second, we can consider this news as a success.
+
+451
+01:53:19,984 --> 01:53:27,824
+A World Cup is a type of tournament and competition. They're similar, so their score are similar too.
+
+452
+01:54:37,747 --> 01:54:57,643
+Bu, bu
+
+453
+01:54:57,652 --> 01:55:05,971
+İlk olarak, ikimizin iki model, BART ve XML-Roberta, çünkü ikimizin kandidatı labelsı.
+
+454
+01:55:05,971 --> 01:55:07,371
+İçerideki kandidatı labelsı.
+
+455
+01:55:07,371 --> 01:55:19,371
+İlk olarak, bu arada, BART'ı yaptık, çünkü, ikimizin kandidatı labelsı.
+
+456
+01:55:25,652 --> 01:55:27,811
+BART model predicted as a quotes.
+
+457
+01:55:29,112 --> 01:55:30,791
+Surt input was about the quotes.
+
+458
+01:55:31,331 --> 01:55:33,091
+Roberto predicted as a message.
+
+459
+01:55:33,551 --> 01:55:37,492
+But we can use quotes as a message too.
+
+460
+01:55:37,692 --> 01:55:41,112
+So I don't think that their difference is big.
+
+461
+01:55:41,931 --> 01:55:53,591
+Also, I compared another two models, BART and Electra, because there is no candidate labels and used masked language models.
+
+462
+01:56:07,412 --> 01:56:26,731
+Yeni birçok
+
+463
+01:56:27,220 --> 01:56:32,220
+İlk adım, Fasiyon ve Japoğlu'ya bahsettiğiniz.
+
+464
+01:56:32,220 --> 01:56:37,220
+Bu konuda, Asia ve Japoğlu'ya bahsettiğiniz.
+
+465
+01:56:37,220 --> 01:56:45,220
+Çünkü Japoğlu'ya bahsettiğinizde, China ve Singapur'a bahsettiğiniz.
+
+466
+01:56:45,220 --> 01:56:50,220
+Bu konuda, Fasiyon ve Japoğlu'ya bahsettiğiniz.
+
+467
+01:56:55,220 --> 01:56:58,560
+İngilizce her brand.
+
+468
+01:57:00,039 --> 01:57:01,060
+They are dissimilar.
+
+469
+01:57:02,340 --> 01:57:04,500
+And in the third input,
+
+470
+01:57:04,600 --> 01:57:08,380
+we can see that we can consider these quotes as important.
+
+471
+01:57:09,000 --> 01:57:10,159
+Elektra gives simple.
+
+472
+01:57:11,000 --> 01:57:13,880
+And Steve Jobs is unique and great.
+
+473
+01:57:14,200 --> 01:57:15,600
+Because in the third input,
+
+474
+01:57:15,600 --> 01:57:18,200
+there is one quote that Steve Jobs said.
+
+475
+01:57:18,560 --> 01:57:24,060
+Ve bu konuyu örneklerle anlatacağım.
+
+476
+01:57:24,060 --> 01:57:28,044
+Bu konuyu örneklerle anlatacağım.
+
+477
+01:57:29,300 --> 01:57:57,300
+As a conclusion, I can say that the scores of the similar or synonym words do not have much difference. And the bird and the bird showed the best results. And models without candidate labels showed different results from the masked language model, but mostly the words were synonym or close to their meanings. And models that used candidate labels performed good with...
+
+478
+01:58:12,916 --> 01:58:14,816
+Çok teşekkürler [öğrenci].
+
+479
+01:58:16,556 --> 01:58:17,456
+Ben teşekkür ederim.
+
+480
+01:58:18,256 --> 01:58:22,896
+Peki, şimdi hemen [öğrenci] ile devam edeceğiz.
+
+481
+01:58:23,736 --> 01:58:26,536
+Şimdi arkadaşlar, bir saniye.
+
+482
+01:58:28,627 --> 01:58:42,467
+Süremiz oldukça kısıtlı biliyorsunuz. Saat 11-12'ye kadar bitirmemiz gerekiyor. O yüzden ortak olan kısımları mümkün olduğunca atlayıp ilerleyebilirsek daha iyi olursun onların açısından. Evet [öğrenci] seni dinliyorum.
+
+483
+01:58:42,963 --> 01:58:50,244
+Hocam ben kodda yazmışım gibi istiyor ama sonuçları çıkar alacağım. Şimdi baktım.
+
+484
+01:58:50,644 --> 01:58:51,604
+Doğru düzeltin.
+
+485
+01:58:51,744 --> 01:58:52,564
+Berti sarkıldık.
+
+486
+01:58:52,684 --> 01:58:54,144
+Berti üzerinden var sadece.
+
+487
+01:58:54,144 --> 01:58:54,364
+Evet.
+
+488
+01:58:54,784 --> 01:58:56,503
+Tamamdır. Teşekkürler. Sağ olun.
+
+489
+01:58:56,979 --> 01:59:13,119
+Evet, [öğrenci]. Merhaba hocam. Ekranım gözüküyor mu? Evet, gözüküyor. Tamam. Benim slide'ım da kısa zaten. Genel şeylerden çok bahsetmeyeceğim. Yine işte temsilleri alıp kozim similaretiyle karşılaştırım sonuçlarımı öyle aldım.
+
+490
+01:59:14,355 --> 01:59:39,136
+İki veri seti kullandım. Yelp veri setinde pozitif ve negatif örnekler var. Bir sentiment analizi veri seti. Buradan biner örnek seçip kaydedip tüm işlemlerimi onlar üstünden yaptım her sınıf için. Yine EGNUIS için de 4 farklı sınıftan her sınıf için biner örnek seçtim. Tüm deneyleri bu aynı örnek üzerinde yaptım. Turn frekansları da bu toplam 4000 ve 2000'er örnek üzerinden çıkarttım.
+
+491
+01:59:40,051 --> 02:00:00,000
+Yelp için şöyle ben promptlarımı direkt yazdım. Biraz manuel ilerledi benim sürecim. Önce sınıf adını pozitif negatif olarak kullandım. Sonra biraz daha yumuşak bir iki sınıfı temsil eden tek kelimelik biraz da sert. Uzayda daha uzak noktaları göstersin diye böyle tek kelimelik.
+
+492
+02:00:00,000 --> 02:00:12,840
+Kelimelik promptlar kullandım. Sonra başlarına prefix ekleyerek üç farklı prompt ekledim. Sonrasında da böyle birleştirerek. Birleştirdiklerimde de her cümledeki birer kelime değişiyor genelde.
+
+493
+02:00:12,840 --> 02:00:23,680
+İşte happy not happy oluyor, easy hard gibi. Burada şey olarak GPT kötü sonuç verdi. Bert Roberta ve Albert modellerinde görece daha iyi sonuçlar alabildim.
+
+494
+02:00:25,471 --> 02:00:35,191
+Şeği kullanmadım burada, turn frekansıyı. Çünkü sonuçları aldım, incelediğimde iki sınıf içinde birbirinden bağımsızlaştırabileceğim kelimeler bulamadım.
+
+495
+02:00:35,191 --> 02:00:41,351
+En çok kullanılan 50'şer kelimeye baktığımda çoğu zaten birbirinin aynısıydı.
+
+496
+02:00:41,587 --> 02:01:05,467
+Burada da en iyi sonucu Bert'te aldım. Orada da Very High Product Quality ve Very Low Product Quality de. Burada sadece tek farkı şey High ve Low kelimeleri oldu. Bir altında da mesela bunun yanına bir prompt daha ekleyerek iki cümleli bir şekilde kullandım. Orada ama başarının çok fazla düştüğünü görüyoruz. Buna da yine bir şey bir yorum getiremedim. Açıklayıcı bir yorum getiremedim.
+
+497
+02:01:08,500 --> 02:01:30,579
+Şöyle ilk başta sadece sınıf hatlarını belirten birer kelime kullandım. Sonra başına bir prefiks ekledim. İşte Disney'sa İzzebat gibisinden. Üçüncü sıradakinde kendim bu sınıflarla ilgili birer basit cümle tamamen kendim şey yaptım hiçbir kelimeye bakmadan. Dördüncüdekinde en çok geçen kelimeleri çıkarttım her sınıf için.
+
+498
+02:01:31,060 --> 02:01:40,460
+Diğerlerinde geçmeyeceğini tahmin ettiğim, burada sayısal bir işlem yapmadım kendim manuel olarak, tahmin ettiğim kelimelerle anlamlı bir cümle oluşturmaya çalıştım.
+
+499
+02:01:40,460 --> 02:01:54,460
+En başarılı sonucu da bu şeyi aldım. Bu da kendim daha fazla üretim yapamadım. O yüzden chat GPT, bu en alttaki üç şeyi de chat GPT'den benim için, hani ZeroShot'lı örnekte kullanabileceğim şu şusuz sınıflar için.
+
+500
+02:01:54,515 --> 02:02:11,416
+Birer prompt üretebilir misin dedim. Onlarda da yine çok çok iyi olmasa da görece iyi sonuçlar aldığım promptlar oldu. Ama buradaki en iyisi tahmin edeceğimiz gibi turn frekanstan almış olduk. Böyle. Teşekkür ediyorum.
+
+501
+02:02:14,475 --> 02:02:15,555
+Teşekkürler.
+
+502
+02:02:16,851 --> 02:02:18,872
+Çetçepildiği geçtin ya mı sen?
+
+503
+02:02:19,351 --> 02:02:23,851
+Geçtim ama ben geçmedim aslında zaten. Train'deki en sota geçti.
+
+504
+02:02:25,192 --> 02:02:28,692
+Peki. Teşekkürler.
+
+505
+02:02:44,372 --> 02:02:45,852
+[öğrenci], [öğrenci].
+
+506
+02:02:48,452 --> 02:02:49,132
+Burdayım, burdayım.
+
+507
+02:02:49,532 --> 02:02:50,832
+Tamam, seni dinleyelim.
+
+508
+02:03:01,427 --> 02:03:02,447
+Ekran gözüküyor.
+
+509
+02:03:03,947 --> 02:03:04,687
+Evet.
+
+510
+02:03:06,127 --> 02:03:06,407
+Tamam.
+
+511
+02:03:09,908 --> 02:03:31,468
+Herkese merhaba. Ben Sıfır Çekim'i öğrenmeniz Sıfır Anlisi için kendimi geliştirdiğim algoritma hakkında sunum yapacağım. Benim kullandığım veri setleri iki tane. Bir BBC News data seti. Bunun da toplam 2.225 tane satır var. 5 etiketten oluşuyor. Tech, Business, Sport, Entertainment ve Politics olarak.
+
+512
+02:03:31,923 --> 02:03:41,523
+Bir de IMDB Datasitinden kullandım. Onların da yorumlara göre, pozitif mi negatif mi ona göre belirlenmiş ve veri siteni kullandım.
+
+513
+02:03:41,523 --> 02:03:47,283
+Bu veri sitenin tamamen hepsini almadım. Her iki veri sitenden toplam 1000 tane ilk 1000'ini aldım.
+
+514
+02:03:47,283 --> 02:03:56,963
+İlk 1000'ini de zaten etiketlerine göre paylaşım burada göz gözüküyor. Pozitif ve negatif neredeyse birbiriyle eşit oranda.
+
+515
+02:03:57,140 --> 02:04:01,980
+Diğerleri de birbirinden çok ayrı gözükmüyor.
+
+516
+02:04:03,956 --> 02:04:17,636
+Ben biraz daha farklı bir şekilde yaklaştım. Ben doğrudan modellere atıp bir sonuç almak yerine modellerin tokenizer ve embeddinglerini kullanarak bir vektör çıkarmaya çalıştım.
+
+517
+02:04:17,636 --> 02:04:31,956
+Vektörlerin sonra kosan similarity'leriyle eşleştirme yapmak istedim. Yani her bir metini bu modelden geçirip bir tane vektör oluşturup bu vektörlerin similarity'sine bakarak yapmak istedim.
+
+518
+02:04:31,956 --> 02:04:46,496
+Bunu yapmamı istemenin nedeni, promptların hangilerinin hangi örnek veri metinlerine benzerliği var, daha yakın gözüküyor, hangilerinden daha zor, onu görmek istedim.
+
+519
+02:04:48,496 --> 02:04:54,956
+O yüzden ben manuel olarak ilk başta girdim. Genelde tüm konuları ilk başta genel olarak...
+
+520
+02:04:56,148 --> 02:05:08,588
+Ver hükümesini incelemeden bir şeyler, promptlar girdim ama her promptta belli konunun sonunda this article is about business, this article is about tech diye özellikle isimlerini belirttim.
+
+521
+02:05:09,728 --> 02:05:17,547
+Diğerleri ise daha çok business genelinde tanımlanan şeyler veya tech konusuna göre tanımlanmış promptlar.
+
+522
+02:05:18,036 --> 02:05:34,255
+Yani burada görüyorsunuz işte sport kısmında diz artık dizibat sport. Özellikle bunların daha fazla başarıya ya da yani kosen simülaritesine en yüksek olacak şekilde bir sonuç vereceğini düşünerek bunları yaptım.
+
+523
+02:05:34,644 --> 02:05:53,163
+Bu IMDB Reviews'da ise gene kendim Mano'ya olarak girdiğim Masterpiece veya Terrible gibisinden genel olarak böyle bir şey olarak girdiğim. Sonra işte bu vektörleri çıkarmamın netini de bir bakımada vektörleri bir anlamsal uzayda göstermek, şekillendirmek istemiştim.
+
+524
+02:06:02,644 --> 02:06:18,983
+Bir şey, verisine göre konum olarak yaptım. Yani bu sonuç olarak çıkardığımda burada çok iyi anlam ifade etmiyor tabii. Şu Yıldız Oğanlar bu her bir promptun konumunun aslında orta noktası gibi.
+
+525
+02:06:21,123 --> 02:06:28,483
+Yani onların ortalamasını alarak elde ettiğim bir nokta. Daha çok göstermek amacıyla yapmak istedim.
+
+526
+02:06:30,644 --> 02:06:48,804
+Doğruymuş gibi geldiğinden dolayı böyle bir şey yaptım. Mesela Berk'te promptları belli bir anlamsız uzaya yerleştirdiğimizde böyle sanki tam ortadan bir çizgi olacak şekilde ikiye yarımış gibi bir kategorize edebilmiş gibi gösteriyor. O yüzden bana bu şekilde göstermek çok yanlış gibi gelmedi.
+
+527
+02:06:49,235 --> 02:07:03,235
+Şimdi benim yapmak istediğim şey şuydu. Bu promptların anlamsız olaydaki orta noktalarına değil de her bir kelimeye hangi kelimeye yakın similarity olarak onları yapmak istedim.
+
+528
+02:07:03,235 --> 02:07:17,235
+Yani mesela bu şuradaki örnekte This Article is About Entertainment bu noktalardan biri oluyor. Bu noktalardan test verik kümesinden hangi metin yakınsa hani ona...
+
+529
+02:07:17,235 --> 02:07:31,515
+Bu veri kümesindeki metnin hangi prompta daha yakın bir sonuç verdiği ve hangi promptun hiçbir işe yaramadığını görmek istedim.
+
+530
+02:07:31,923 --> 02:07:54,763
+Mesela şöyle bir şey yaptım. Bunların hepsini costsimiliterle yaptığım zaman şöyle bir sonuç ortaya çıkarıyorum örnek olarak. Mesela bu tekst veri kümesinden geçen. Bu da benim vermiş olduğum prompt. Şu an kamera yüzünden şey tam göremiyorum da.
+
+531
+02:07:59,923 --> 02:08:03,983
+Bu konularının doğru olarak yapıldığını gösterdiğine dair.
+
+532
+02:08:05,171 --> 02:08:21,371
+Kaydetmiş oluyorum. Tekmiş meğerse bununki ama bununki entertainment olduğundan sıfır. Entertainment ve entertainment bir prompt olarak eşleştiğinden dolayı bir yaptım. O yüzden 1000 veri üzerinde kaliteli doğru diye doğruluk oranlarını ona göre ölçtüm.
+
+533
+02:08:29,136 --> 02:08:39,195
+Metini doğru karşılaştırmış. Bu BBC News, pardon affedersiniz, IMD Reviews üzerinde. BBC News'u da 47.2 şeklinde.
+
+534
+02:08:40,115 --> 02:08:49,916
+GPT ve Roberta'nın BBC News'daki değerleri çok kötü gözüküyor ama IMD Reviews, yani iki kategori olan şey değilse daha yüksek ortaya çıkmış.
+
+535
+02:08:50,256 --> 02:09:02,796
+Sonra burada çıkardığım şeylerde mesela en çok eşleşme yapan promptu görmek istedim. Mesela burada diyor ki en fazla eşleşmeyi yapan business kısmındaki stock market olandı.
+
+536
+02:09:02,796 --> 02:09:11,756
+The story discusses, the impact of business inflation, on the stock market. Bu promptun en fazla eşleşmeyi gördüğü gözüküyor. Bunun göre bir liste yaptım.
+
+537
+02:09:12,079 --> 02:09:26,520
+Bu listede yanlış olanları da saydırdım ama yanlış olanları saydırdığımda ise mesela gene aynı promptun 54 tanesinde de hata verdiğini, yani farklı veri metinleriyle eşleştiğini görüyorum.
+
+538
+02:09:27,140 --> 02:09:36,840
+Ama aradaki sayı oranı fazlasıyla biri 157, biri ise 54. O arada fazla olduğundan dolayı bunların bazılarını fazla değiştirmedim.
+
+539
+02:09:37,587 --> 02:09:52,648
+Burada mesela hiç kullanılmayan suflere de ayırdım. Ve ilginç bir tarafı, hiç kullanılmayan suflere de ben hepsinin tüm business, tek gibi konuları kullandığım promptların hiçbiri eşleşmemiş. Yani hiçbirine yaklaşmamış değer olarak.
+
+540
+02:09:53,047 --> 02:09:59,927
+Bunu aynı zamanda şey için de yaptım. IMDb Reviews seti için de yaptım. Burada da I didn't like the plato.
+
+541
+02:10:00,000 --> 02:10:25,939
+The Story mesela negatif olduğunu 179 metinde doğrulamış. Ama mesela yine 83'ünde de yanlış bir şekilde yapmış. Ben işte bu bilgilere göre tekrar promptları düzenlemek istedim. Hiç kullanılmayan süre ise mesela komik bir şekilde. This movie was terrible. Hani en çok anlam çıkan bir kelime ama gene de bu şey hiç kullanılmamış. Prompt hiç kullanılmamış.
+
+542
+02:10:26,323 --> 02:10:34,083
+Metinlerde en sonra benim yapmak istediğim frekanslarını ölçmekti bu test metin kümesinde.
+
+543
+02:10:34,804 --> 02:10:41,344
+Ve şu mesela İGİK. Biznes'te en çok geçen mesela Government'la Politics'te de Government geçiyor.
+
+544
+02:10:41,344 --> 02:10:54,304
+Belki sorun bu tarz tekrar tekrar aynı kelimeler kullanılması. Çünkü ben mesela promptlarımdan Business'te galiba yanlış hatırlamıyorsam. Government yoktu.
+
+545
+02:10:54,323 --> 02:11:21,543
+Politics'le government vardı. Belki aradaki sorun bundan dolayıdır diye düşündüm. Tekrar eden kelimeler diğerinde de fazla geçtiğinden dolayı. Bu aynı zamanda diğer pozitif negatifte de genel olarak film, movie konuları zaten kelimeleri tekrar edecektir. Ama mesela tekrar etmeyen kelimeler pozitifte good, great, even'de mesela negatif en fazla kişi olan varmış. Bir de bad varmış.
+
+546
+02:11:22,323 --> 02:11:46,323
+O yüzden ben bu süfeleri tekrar değiştirmek istedim. Bu süfeleri yerleştirirken, şuradaki özellikle tekrar tekrar geçmeyen kelimeleri koymak istedim. Tekte mesela geçiyor. Bir de şöyle bir şey var. Ben kelimeleri bir şeyden geçirmedim. Tek ve teknolojiyi yine ayrı görürsün gibisinden yaptım. Ona göre belki o da...
+
+547
+02:11:46,703 --> 02:11:59,384
+Büyük bir etkisi olmuştur. Tek diye özellikle ne denir? Kelimenin köküyle karşılaştırma yapsaydım daha iyi bir sonuç büyük ihtimalle edebilirdi. Ama ben her kelimeyi farklı bir değermiş gibi almak istedim.
+
+548
+02:11:59,828 --> 02:12:14,868
+Kısaca bu tek de mesela teknolojiyi tek diye yaptım. Mesela business de ekonomi diye yaptım. Ne kadar doğrudur bilmem ama business kısmında ekonomi mesela çok fazla geçen kelimelerden biri olduğundan dolayı şu anı değiştirdim.
+
+549
+02:12:15,796 --> 02:12:40,876
+Bunu da aynı zamanda IMDB Reviews için yaptım. Ve yeni çıkan sonuçlar da biraz değişik. Genel olarak hepsinde bir artma olmasına rağmen nedense IMDB Reviews'un berti kısmında bir hata veriyor. Hata denemez. Çok başarı oranı düşmüş olayı. Belki çok büyük bir düşüş olmayabilir ama gene de yükselge düşünüyordum.
+
+550
+02:12:43,796 --> 02:12:57,916
+Diğer hepsi az bir oranda bir başarı oranı artmış olsa bile, bu vertin düşmesinin tam nedenini büyük ihtimalle yaptığım şundan dolayı.
+
+551
+02:13:02,292 --> 02:13:17,471
+Pardon affedersiniz, prompt anlamsal uzayının görüntüsü gibi temsil etsek. Mesela buradaki diğer aslında biraz daha buna yakındı. Ben kelimeleri kelimeleri eşleştirmeyle yapmak istediğimden dolayı böyle bir hatanın artması.
+
+552
+02:13:18,591 --> 02:13:31,572
+Neden olabilir? Ama genel olarak yükselmesi de biraz şaşırtıcı. Benim aynı zamanda başka geliştirebilecek şey bunların ortalamasına yakınlığıydı. Zaten sınıfların belli bir ortalama olması.
+
+553
+02:13:33,043 --> 02:13:40,064
+Daha mantıklı bir sonuç olurdu. Bu noktaya en yakın hangisi oraya yerleştir gibi, onu etiketle gibi olabilirdi.
+
+554
+02:13:40,064 --> 02:13:47,064
+Sadece benim özellikle bu noktaları eşleştirmem nedeni, promptların...
+
+555
+02:13:47,344 --> 02:14:02,344
+Şuradaki gibi hangisinde en fazla doğru karşılaştırılmış, hangisinde en az doğru karşılaştırılmış gibi bir amacım vardı. Benim çalışmam böyle. Sorunuz varsa yapmayabilirim.
+
+556
+02:14:04,344 --> 02:14:08,243
+Teşekkürler, [öğrenci] [öğrenci] çalışman için.
+
+557
+02:14:13,971 --> 02:14:14,971
+Ne?
+
+558
+02:14:19,507 --> 02:14:21,087
+[öğrenci].
+
+559
+02:14:22,707 --> 02:14:25,167
+Geliyorum hocam. Bir saniye. Kameramı açayım.
+
+560
+02:14:35,988 --> 02:14:37,368
+Hemen ekranımı da paylaşıyorum.
+
+561
+02:14:41,652 --> 02:14:43,652
+Şu an geliyor sanırım ekranın.
+
+562
+02:14:43,652 --> 02:14:44,652
+Evet.
+
+563
+02:14:48,692 --> 02:15:12,631
+Ben de yine prompt analiz ve zero shot'ların üzerine çalıştım. Buraları hızlı geçmek istiyorum o yüzden. Yapı genel olarak böyleydi kullandığım. Prompt'ları bir dil modeline verip vektörünü alıyordum. Test datasından bir örnek alıp dil modelinden vektörünü alıyordum. Sonrasında ise Oakley Distance hesapladım aralarında.
+
+564
+02:15:13,235 --> 02:15:36,915
+İşte en yakın olanları Most Similar Class'ı onu atama yaparak bir ekürüsü ölçtüm. Böyle ilerledim. Seçtim veri setleri. Bir tanesi Restaurant Review Dataset'i. İşte bir negatif ve pozitif yorumlardan oluşan. İkinci veri seti ise NIRS Classification Dataset. Yine 8900 örnekten ve 7 sınıflı bir şey, dataset. Bunu önceki çalışmada da kullanmıştım, önceki ödevde.
+
+565
+02:15:37,279 --> 02:15:41,439
+Yani daha aşina olduğum bir veri seti diye bunu kullanmak istedim bu çalışmada da.
+
+566
+02:15:42,939 --> 02:15:48,679
+Temsil yöntemi olarak da bir tane BERT, bir tane de GPT-2 kullandım bu çalışmada.
+
+567
+02:15:50,515 --> 02:16:14,536
+İlk yöntemim Class Names'lerini direkt prompt olarak kullanmak. Burada işte haber sınıflandırmada gördüğünüz gibi işte World Entertainment, Sport Technology, Politics, Science, Otomobil 7 tane sınıfım var. Duygu analizi zaten negatif ve pozitif olarak geçiyor. Burada Class Names'ini negatif ve pozitif olarak değil de like ve dislike olarak kullandım. Çünkü negatif ve pozitif de çok alakalı şeyler olmuyordu.
+
+568
+02:16:15,252 --> 02:16:39,531
+Burada başarı olarak ise BERT'de %17 başarı, GPT'de %15 başarı haber sınıflandırma üniversitesinde. Duygu analizinde ise 51'e 49. Yani aslında burada %50 başarı sallayarak ulaşabileceği bir başarı. Burada GPT %49'a düşmüş. Bunu ödev genelinde en son yorumlamak istiyorum. Çünkü başarılarımı çok yükseltemedim. Bu sorundan ödev sonunda da bahsedeceğim. Sunum sonunda.
+
+569
+02:16:40,020 --> 02:17:07,459
+Onun üzerine de konuşmak istiyorum. İkinci yöntem olarak Word2Vec kullanarak ben bu sınıf isimlerine benzer kelimeleri prompt olarak seçmeye çalıştım. Burada sanırım benim arkadaşlarım çoğundan farklı olarak yaptığım şey, arkadaşlarım prompt olarak cümle vermişler. Ben de onu deneyebilirdim. Cümle değil de ben kelimeler seçmeyi denedim. Ben kelimeleri yan yana koyup aslında kelimelerin vektörlerinin ortalamasını aldım gibi oldu.
+
+570
+02:17:08,051 --> 02:17:35,391
+Burada öyle bir farklılık var aramızda. Aslında diğerini de denemek isterdim. Şu an biraz daha farkına vardı onun. Burada işte Word kelimesini, Word2VK verip, most similar 10 tane kelimeyi alıp, mesela buraya 2-3 tanesini koydum. 10 kelimeyi alıp bunu bir prompt olarak vermeyi denedim. Böyle Word'in başarısı %18, GPT'nin iki yine %11. Duygu analizinde de yine burada dediğim gibi like ve dislike olarak verdim ve benzer kelimeleri alıp başarıları bu şekilde elde ettim.
+
+571
+02:17:37,139 --> 02:17:51,579
+Üçüncü yönteme geçecek olursam, üçüncü yöntem de sınıfları birbirinden ayırabilecek ama çok kullanılmayan, her sınıftaki haberlerde geçmeyen ama sınıfı temsil eden kelimeleri bulmaya çalıştım. TFI diye öfle.
+
+572
+02:17:53,012 --> 02:18:17,792
+Burada da yine sınıflara özel kelimeleri görebiliyorsunuz. İşte dikkat çekici olan COVID-19 var burada. İşte dünyayla ilgili haberlerde veya teknolojiyle ilgili haberlerde burada Elon Musk'ın adını vesaire görebiliyoruz. Bu şekilde kelimeleri çıkarttım. Burada kullandığım kontekste zaten şey, dataset'in kendisi, test dataset'inin içinden aslında bir TF-IDF ile şey seçiyorum, kelime seçiyorum.
+
+573
+02:18:18,208 --> 02:18:39,308
+Başarı bu şekilde. Bert'te %25'e çıktı. GPT'de %16'ya çıktı. Diğer veri setinde, Duygu Analizi veri setinde. Bert'te %54, GPT'de aynı şekilde %54'de kaldı burada da. Üçüncü yöntemim de bu şekildeydi. Dördüncü yöntem çok benzer bir şekilde yine en ayırt edici kelimeyi bulmaya çalıştım ama bu sefer Count Vectorizer'layan direkt.
+
+574
+02:18:39,615 --> 02:18:57,835
+En çok geçme oranına bakarak yaptım. Burada bunu yapmadan önce stop word'leri attım bu arada. Başarının düşük olmasının sebebinin olduğunu düşünmüyorum. Zaten burada gelen kelimelerden birkaç örnekle koydum. Genelde alakalı kelimeler. Science'da burada alakalı gelmemiş.
+
+575
+02:18:58,975 --> 02:19:05,275
+Yani count vectorizer, tf-idf'e göre daha kötü çalışıyor. Bunun yorumunu zaten son genel tabloda da yapacağım.
+
+576
+02:19:05,683 --> 02:19:20,463
+Ama genelde alakalı kelimeler çıkmış. Yine Word'da bakın aşıyla ilgili, işte Trump'la ilgili şeyler çıkmış. Başarı %19'a düşmüş. TF-IDF'de %25'ti. GPT'de %18'e yükselmiş oluyor burada 16'dan.
+
+577
+02:19:21,703 --> 02:19:26,383
+Dördüncü yöntem olarak da bunu kullandım. Aslında bunu kullanmamın sebebi karşılaştırma yapmaktı TF-IDF'le.
+
+578
+02:19:27,572 --> 02:19:45,792
+Beşinci yöntem olarak, bu da son yöntemim zaten, Word Cloud kullandım. Burada şeyi verip, o klasa ait bütün metinleri bu Word Cloud algoritmasına verip, bunu bana işte frekanslarına göre söylemesini, açıklamasını, işte bana frekanslarını ve kelimelerini döndürmesini istedim.
+
+579
+02:19:46,144 --> 02:20:05,144
+Bu şekilde kelimeler aldım. Mesela burada da direkt görsel olarak koymak istedim. İşte teknolojiyle alakalı olan da Elon Musk daha çok geçiyor. Şey dikkatimi çekti burada Haber Veri Set'inde. Seyit kelimesi hepsinde. Şunu dediği gibi alıntılarda çok fazla dikkatimi çekti. O var. Ama bu da zaten eleniyor bu kelimede.
+
+580
+02:20:05,144 --> 02:20:12,263
+Şeyle beraber stop wordleri ve lematize ettiğim de genel kelimeleri. Bu da elenmiş oluyor.
+
+581
+02:20:12,724 --> 02:20:35,144
+WordCloud yöntemiyle de BERT'te %19, GPT'de %20'ye ulaştım başarı olarak. Duygu analizinde ise %53'e %52 olarak kaldı başarım. Şimdi genel tabloya bakacak olursak da BERT'te %25 TF-IDF en iyi başarıyı aldı. GPT'de ise WordCloud %20 ile en iyi başarıyı aldı. Bu haber sınıflandırma veri seti.
+
+582
+02:20:38,879 --> 02:21:01,779
+En iyi sonucu vermiş. Sonra Count Vectorizer. Burada mesela Count Vectorizer'ın TFI DF'den hemen sonra geldiğini görüyoruz. Ben Word Cloud'un veya Word2Vec'in daha başarılı olmasını beklerdim. Burada yorum olarak şey yapabilirim. Word2Vec content'e bakmıyor. Yani o verdiğim veri setine bakmadan aslında en yakın kelimeleri bulmaya çalışıyor. Class ismine en yakın kelimeleri bulmaya çalışıyor.
+
+583
+02:21:02,324 --> 02:21:09,623
+O yüzden daha başarısız olmuştur diye yorumladım ben burada. Çünkü diğerleri işte TF-IDF, Count ve Word Cloud, Dataset'in kendisine de bakıyor.
+
+584
+02:21:10,783 --> 02:21:13,164
+Buradaki sonuçlarım bu şekilde, yorumlarım bu şekilde.
+
+585
+02:21:14,283 --> 02:21:27,584
+Duygu analizi veri setinde de ulaşabildim en yüksek başarı yine Bert'le TF-IDF'le erişebilmişim, %54'le. Diğerinde ise yine Count Vectorizer'la GPT2'de %57 başarıya ulaşmışım.
+
+586
+02:21:27,956 --> 02:21:41,315
+İki datasette de ve iki yöntemde de işte Bert ve GPT'de de PFIDF hep üst sıralarda başarı olarak. Bu da zaten dokümana göre en ayırt edici kelimeyi seçebilmesinden dolayı aslında.
+
+587
+02:21:42,195 --> 02:21:49,615
+WordCloud burada Bert'te Count'un çok önüne geçmiş ama GPT'de Count Vectorizer burada WordCloud'un önüne geçmiş.
+
+588
+02:21:50,131 --> 02:22:11,611
+Bu değişimler çok fazla olduğu için genel bir yorum yapamadım aslında çok fazla. Bir de şöyle bir şey var. Başarıyı çok yükseltemedim. Bunun sebebi arkadaşım gibi cümle olarak prompt vermemek mi yoksa başka bir sebebim var tam anlayamadım ama başarıyı özellikle bu duygu analizinde %50'nin üzerine çıkarmakta çok zorlandım verdiğim promptlarla.
+
+589
+02:22:17,888 --> 02:22:21,268
+Anlamsız kaldı sonuçlarım, öyle söyleyeyim.
+
+590
+02:22:22,608 --> 02:22:25,247
+Burada söylemeyi unuttuğum bir şey var mı diye bakayım hemen.
+
+591
+02:22:27,968 --> 02:22:30,968
+Word2Wack'in neden zayıf kaldığını tahmin etmiştim.
+
+592
+02:22:30,968 --> 02:22:35,087
+Bir şey olarak bağlamdan bağımsız bir şekilde sınıflara göre seçtiği için.
+
+593
+02:22:35,988 --> 02:22:39,567
+Burada başka söylemeyi unuttuğum şeyler var mı diye tekrar bakayım.
+
+594
+02:22:40,587 --> 02:22:44,808
+Bert genel olarak GPT2'den daha iyi temsiller oluşturdu verdiğim bütün promptlarda.
+
+595
+02:22:45,747 --> 02:22:56,927
+Burada genel olarak 7 sınıflı veri setinde %25 başarı, 2 sınıflı ise çoğu zaman %50'nin üzerine çıkılamamıştır. Yani maksimum %57 idi az önce de gördüğünüz gibi.
+
+596
+02:22:58,047 --> 02:23:00,887
+Kullanılan yöntemlerde, bir de bu da detay olarak vermek istedim.
+
+597
+02:23:00,887 --> 02:23:02,887
+İşte TF-IDF'de en...
+
+598
+02:23:03,311 --> 02:23:30,492
+Ayırt edici 10 kelimeyi aldıysam mesela, Confactorizer'da en ayırt edici 5 veya 15 kelimeyi almış olduğum durumlar oldu. Çünkü başarı ona göre değişiyordu ve ona göre kelime sayımı seçtim. Bu detayla en son olarak vermek istedim. Burada da Google görselleri ZeroShot yazıp buraya koyacak bir görseller erken böyle bir protein tozu benzeri bir şey buldum. Onu koymamak istedim. Dinlediğiniz için teşekkür ederim. Sorularınız varsa alabilirim.
+
+599
+02:23:32,435 --> 02:23:50,515
+Teşekkürler [öğrenci]. Şey kısmı dediğin gibi yani kelimeleri anlamlı ve birliktelik oluşturmayan kelime kümesi çok iyi temsil edilemiyor gibisinden bir durum var o zaman bu tarz dil modelleriyle. Senin elde ettiğin sonuçlar birazcık onu gösterir cümle.
+
+600
+02:23:51,123 --> 02:24:09,563
+Çünkü hiç öyle bir şey görmemişler. Öyle söyleyebiliriz sanki. Ondan sonra onu görmek gibi sinemişler. Onlar birlikte görmek gibi sinemişler. Pek karşılaştıkları durumlar değiller. O yüzden de çok iyi temsiller oluşturamıyorlar muhtemelen onları için. Peki, çok teşekkürler [öğrenci].
+
+601
+02:24:10,183 --> 02:24:11,164
+Ben de teşekkür ederim.
+
+602
+02:24:11,164 --> 02:24:12,563
+Tamam ediyoruz.
+
+603
+02:24:17,172 --> 02:24:19,492
+[öğrenci], [öğrenci], pardon.
+
+604
+02:24:21,092 --> 02:24:21,592
+Buradayım.
+
+605
+02:24:21,972 --> 02:24:22,492
+Tamam.
+
+606
+02:24:23,672 --> 02:24:24,391
+Dinleyelim seni.
+
+607
+02:24:33,811 --> 02:24:35,171
+Ekranım geliyor mu?
+
+608
+02:24:37,171 --> 02:24:37,772
+Evet, gel.
+
+609
+02:24:41,811 --> 02:25:02,072
+Merhabalar herkese, ben [öğrenci]. Şimdi öde öde yaptıklarımı sizinle paylaşacağım. Benim veri setlerimde haber kategorileri veri setlerimde dört sınıflı bir veri seti kullandım. Buradan rastgele bin örnek aldım. İkincisi de restoran ürünleri veri setini kullandım ben de. Burada da pozitif ve negatif olmak üzere bin satır örneğim vardı.
+
+610
+02:25:09,811 --> 02:25:33,011
+Eşleştirdim. Model olarak da Bert kullandım. O cümle tabanlı bir Bert modeli kullandım. Bir de GPT kullandım. O kelime tabanlıydı. Sonuçlarıma bakacak olursak öncelikle haber kategorileri veris ettiği için promptlarım var. Promptlarımda ben de genelde kendi yorumlarımla ilerledim. Nasıl modeli yönlendirebilirim diye düşünerek ilerledim.
+
+611
+02:25:37,811 --> 02:26:05,792
+Ve label'ımı verdim orada. İşte label'larım spor vardı, teknoloji vardı. Bunun gibi onları içeren bir cümle verdim. Yüzde elli altılık bir başarı elde ettim burada. Sonra devam ettim. Bu haberin konusu dedim bu sefer kelimeleri değiştirerek daha çok. Yani biraz daha düştü ama genelde aynıydı. Ardından bu haber şunun hakkında bilgi içerir diye bir iki kelimelik haberin kategorisine göre kendimce bulduğum kelimeleri verdim.
+
+612
+02:26:05,811 --> 02:26:33,252
+Burada biraz daha düştü. Verdiğim kelimelerin de büyük bir etkisi olduğu için burada. Mesela spor için skor ve goller hakkında bilgi içerir diye vermiştim. Biraz daha düşünce sınıf etiketin önemli olduğunu düşündüm. Ardından bu haberin başlığı olsa sınıfın kategorisi olurdu diye bir prompt verdim. Orada biraz daha yükseldi. Son olarak da direkt yanlış yazılmışım burada. Kategori. Bu haberin kategorisi şu.
+
+613
+02:26:33,811 --> 02:26:50,811
+Şudur diye Label'ımı verdim. Burada en iyi sonucum bu haber şunun hakkındadır dediğim prompttan geldi. Ama kategori dediğimde çok yakın bir sonuç aldım yani. Genelde sınıfın etiketin adını içermesi iyi bir şey olduğuna karar verdim sonuç olarak.
+
+614
+02:26:52,115 --> 02:27:07,296
+Burada GPT modelim için sonuçlarım var. Aynı şekilde aynı promptları verdim buraya da. Genel olarak GPT modelimin sonuçları daha düşük çıktı. Ama burada en yüksek sonucu başlığımın etiketim olsaydı isimli promptumdan aldım.
+
+615
+02:27:08,564 --> 02:27:20,724
+Ardından restoran yorumları verir seti ve Bert modeline bakacak olursak, burada da yine restoran yorumları olduğu için cümlelerin içeriklerinin de hedef alan promptlar vermeye çalıştım.
+
+616
+02:27:20,724 --> 02:27:32,603
+İlk olarak bu görüş pozitiftir, negatiftir diye genel bir başlık verdim ve %87 aldım burada. Ardından bu restoran iyidir, kötüdür şeklinde verdim olumsuz olarak.
+
+617
+02:27:36,564 --> 02:28:03,543
+Yemeklerden bahsetmek istedim. Çünkü yorumlarda yemeklerden bahsedildiği için güzel yemek yapar, kötü yemek yapar verdim. Biraz daha arttı burada. Sonra servis de önemli bir şey olduğu için servisten bahseden bir prompt verdim. Son olarak da bu restoranı sevdim, sevmedim şeklinde pozitif, negatif olarak bir prompt verdim. En iyi sonucu da bu prompttan aldım.
+
+618
+02:28:04,915 --> 02:28:14,235
+GPT'de yine genel olarak sonuçlarım düştü ama en iyi sonucu bu restoran güzel yemek yapar, kötü yemek yapardan aldım.
+
+619
+02:28:14,235 --> 02:28:21,975
+Yani diğerlerine göre daha yüksek bir sonuç verdiğini görebiliyoruz. Demek ki yani yemeğin aslında önemli bir kelime olduğunu görebiliyoruz bu sonuçlara göre.
+
+620
+02:28:22,975 --> 02:28:32,915
+Genel olarak Bert'in hem cümle tabanlı olması hem de GPT'ye göre Text Classification Task'larına daha başarılı bir model.
+
+621
+02:28:32,915 --> 02:28:45,915
+Ödel olmasından dolayı Bertin daha iyi sonuçlar vermesini bekliyordum. Zaten sonuçlarım da bu şekilde çıktı genel olarak. Benim sunumum bu kadar. Teşekkür ederim.
+
+622
+02:28:45,915 --> 02:28:49,915
+Teşekkürler [öğrenci].
+
+623
+02:28:49,915 --> 02:28:51,403
+[öğrenci]'in
+
+624
+02:28:56,595 --> 02:29:20,235
+[öğrenci]'in burada mı? Evet hocam, şu an paylaştım o ekran. Tamam. Geldi ekranım, baş verilirsin. Tamam. Ben iki tane ver hükümesi kullandım. Bunlardan bir tanesi AG News. Dört tane sınıfı var. Bir de duygularla ilgili olan MMO 2019 dataset'i var. Bu da üç tane sınıftan oluşuyor.
+
+625
+02:29:21,940 --> 02:29:38,360
+Kullandığım modeller, BART ve DEBERTA modelleri. Bunlar NLI modelleri. Yani o şekilde tasarlanmış. Üç tane sınıftan oluşan bir çıktı veriyor bu modeller. Contradiction, Entailment ve Nötral olarak geçiyor.
+
+626
+02:29:39,819 --> 02:29:45,360
+Öncül ve Hipotezin, girdi olarak öncül ve Hipotezi veriyoruz. Bunların bu iki...
+
+627
+02:29:45,907 --> 02:30:10,987
+Bu kelimenin ya da uzun bir pasaj dolabı sınırı yok. Ne kadar alakalı olduğunu ya da ne kadar çeliştiğini bize veriyor. Bu şekilde modellerle gittim. Ödevde her sınıf için beşer adet prompt yazılması gerekiyordu. Ben de bu şekilde ilerledim. Promptları manuel ile oluşturdum.
+
+628
+02:30:11,263 --> 02:30:33,103
+Biraz şunluyum aslında ben, daha çok doğal dil olarak ifade ettiğimizde, yani anahtar kendileri arda arda sıralamak ya da başka şekilde oranı yükseltmeye çalışmaktan ziyade bunu normal bir insan ifade etse nasıl bir sonuç alırız gibi çalışmayı yaptım.
+
+629
+02:30:35,183 --> 02:30:37,804
+Romplarım bu şekilde gördüğünüz gibi.
+
+630
+02:30:38,548 --> 02:30:39,988
+Hesaplamalı Anlambilim dersi.
+
+631
+02:30:39,988 --> 02:30:44,988
+Basit cümlelerde Bart'ın daha iyi bir sonuç verebildiğini fark ettim.
+
+632
+02:30:45,608 --> 02:30:49,828
+[öğrenci]'in burada şeyi soracağım. Bu modeller üç tane çıktı veriyorlar dedin ya.
+
+633
+02:30:51,208 --> 02:30:56,268
+Sen burada ver hükümesindeki bir tane teksti veriyorsun. Bir de buraya yaz mesela.
+
+634
+02:30:56,268 --> 02:30:59,168
+The test is written by a happy person diyorsun.
+
+635
+02:30:59,768 --> 02:31:03,648
+Ona karşılık sanan bu üç sınıfa dair bir olasılıklar veriyor.
+
+636
+02:31:04,500 --> 02:31:06,840
+Evet, Contradiction, Entailment ve Neutral.
+
+637
+02:31:07,060 --> 02:31:08,420
+Sonrasında ne yapıyorsun burada?
+
+638
+02:31:08,940 --> 02:31:09,380
+Yani hangisi?
+
+639
+02:31:10,600 --> 02:31:20,020
+Threshold belirledim. 0.80. Entailment'e bakıyorum sadece. Entailment'ı promptta 0.80'den büyükse doğru kabul ediyorum.
+
+640
+02:31:20,239 --> 02:31:20,880
+Bu oranları doğru.
+
+641
+02:31:21,200 --> 02:31:22,799
+Hiçbiri 80'in üstüne çıkmazsa?
+
+642
+02:31:23,619 --> 02:31:31,459
+Yani hiçbiri 80'in üstüne çıkmazsa, yani şu an benim yaptığım düzenine göre yanlış kabul ediliyor ama çıkanlar var çoğunlukla.
+
+643
+02:31:31,956 --> 02:31:41,515
+Anladım, anladım. Ama en yüksek entayman skorunu niye anladın mesela? O da olabilirdi. 80 değil de. Anlatabildim mi demek istediğimi?
+
+644
+02:31:41,596 --> 02:31:55,396
+Anladım, anladım. Ben şöyle yapmak istedim. En emin olduğu şekilde almak istedim. Şunu da yapabilirdim. Şu an 5 tane prompt olduğu için, her sınıf için bunu yapmak istemedim. Her sınıf için birer promptum olsa 3 sınıfı karşılaştırıp…
+
+645
+02:31:56,020 --> 02:32:00,740
+En yükseğe bu. Bunu doğru kabul et diyebilirim. Daha çok 5.0 olduğu için bir klas için.
+
+646
+02:32:00,840 --> 02:32:02,299
+Peki, tamamdır.
+
+647
+02:32:05,299 --> 02:32:19,599
+Dediğim gibi Bart basit ve sıralı cümlelerde daha güzel bir sonuç verdi. De Bart'a hiç çok bir sıranın önemi olmadığını fark ettim. Daha çok karmaşık, biraz daha uzun cümlelerde daha başarılı oldu.
+
+648
+02:32:19,599 --> 02:32:28,659
+Ama genel olarak kendi insan ifadesi yaptığımızda ki sonuçlar Bart'ın daha iyi yani şu şekilde sonuçlarda.
+
+649
+02:32:31,572 --> 02:32:34,672
+Mesela basit bir şekilde ifade etmek istemedim.
+
+650
+02:32:34,672 --> 02:32:40,612
+This text is about the service falan. Biraz daha doğaylı olan ifadeler denedim.
+
+651
+02:32:41,811 --> 02:32:44,272
+Aldığım sonuçlar genel olarak bug konusunda.
+
+652
+02:32:44,572 --> 02:32:50,851
+Sizin de dediğiniz gibi mesela threshold 80'nin yukarısında çok fazla bir sonuç alamadım şuradaki cümlede.
+
+653
+02:32:50,932 --> 02:32:53,531
+I have no joy because life has no meanings cümlesinde.
+
+654
+02:32:55,031 --> 02:32:57,672
+Bahsettiğiniz gibi yapsaydım büyük ihtimalle sonuçlar daha...
+
+655
+02:32:58,067 --> 02:33:01,567
+Fazla çıkacaktı. Aynı şekilde aşağıdaki sonuçta da.
+
+656
+02:33:03,268 --> 02:33:06,268
+Geçiyorum. Çok vaktimizi almayayım.
+
+657
+02:33:08,067 --> 02:33:17,067
+Diğer veri setinde, bu da bu veri seti, az önceki veri seti duygularla ilgiliydi. Şu anki veri seti haber ve konularıyla ilgili.
+
+658
+02:33:17,907 --> 02:33:35,108
+Bunda da açıkçası şunu dedim biraz. İnternetten biraz haber başlıklarıyla birleştirip bir sonuç almaya çalıştım. Ama genel olarak daha önce bahsettiğim gibi Bart'ın pek uzun ve karmaşık cümlelerde verimli olmadığını fark ettim.
+
+659
+02:33:35,540 --> 02:33:50,580
+Deberta biraz daha, hatta sırasının hiç önemli olmadığını da söyleyebilirim. Buradaki cümleleri biraz hani dilden bağımsız şekilde, alakasız bir şekilde yazsam bile yine benzer sonuçları veriyor Deberta. Mimarisinden kaynaklı büyük ihtimalle.
+
+660
+02:33:52,720 --> 02:33:58,260
+Genel olarak şöyle bir sonuç alıyorum.
+
+661
+02:33:59,731 --> 02:34:06,652
+Bart'ın yetersiz kaldığı yerde Debert'e biraz daha iyi sonuçlar veriyor. Ama çoğunlukla Bart daha iyi sonuç veriyor.
+
+662
+02:34:07,492 --> 02:34:17,432
+Benim fark ettiğim promptları baking ve boosting yaparak Bart, Debert'e farklı farklı şekillerde daha iyi sonuçlar alabileceğimizi düşünüyorum.
+
+663
+02:34:17,672 --> 02:34:21,412
+Bununla ilgili bir çalışma yapmadım. Zaten tamamen tahminin üzerinden gidiyorum.
+
+664
+02:34:24,231 --> 02:34:25,412
+Sonuçlarım bu şekilde.
+
+665
+02:34:27,891 --> 02:34:40,351
+Peki, teşekkürler [öğrenci]'in. Dediğin gibi birbirlerinin biraz tamamlayıcı yapıları varsa, bu tarz bir ensemble kullanıldığında daha iyi bir şeyler olabilir diye tahmin ediyorum ben de.
+
+666
+02:34:40,351 --> 02:34:42,231
+Peki, sağ ol.
+
+667
+02:34:45,231 --> 02:34:51,072
+Şimdi arkadaşlar, 10 dakika bir ara verelim. Ondan sonra kaldığımız yerden devam edeceğiz.
+
+668
+02:34:52,211 --> 02:34:54,092
+11.35 şu anda.
+
+669
+02:34:56,564 --> 02:35:07,564
+Açırabilirsem, ben 140'e kadar ara diyorum.
+
+670
+02:35:12,308 --> 02:35:15,448
+10 dakika sonra devam ediyoruz arkadaşlar.
+
+671
+02:45:51,219 --> 02:45:54,099
+Evet arkadaşlar, tekrardan merhaba.
+
+672
+02:45:56,399 --> 02:45:57,379
+Merhaba hocam.
+
+673
+02:46:00,000 --> 02:46:04,779
+[öğrenci], tamamen çek. [öğrenci].
+
+674
+02:46:05,079 --> 02:46:06,039
+Buradayım hocam.
+
+675
+02:46:06,239 --> 02:46:06,639
+Evet.
+
+676
+02:46:06,899 --> 02:46:07,899
+Paylaşayım ekranı.
+
+677
+02:46:26,355 --> 02:46:50,695
+Şimdi ben konuyla ilgili iki farklı veri setinde çalıştım. Bir tanesi sentiment analizi tarafında iki farklı klas içeriyor. 25.000 data. IMDB datası bu. Diğeri de ilk ödevde kullandığım 58.000 örnek içeren 10 farklı sınıfa ait Türkçe haber metinlerinin sınıflandırıldığı veri seti mevcut. Bu iki veri seti üzerinde denemeler yaptım.
+
+678
+02:46:53,075 --> 02:47:00,075
+Üç farklı yöntem kullandım. Onlardan bahsetmek istiyorum. İlkinde Bert'in...
+
+679
+02:47:00,659 --> 02:47:18,119
+Dil modelinden sonra bir Classifier bloğu koyarak Class sayısı kadar bir not içerecek şekilde sınıflandırma yapmasını sağlayacak bir Fully Connected Layer ekledim oraya. Daha sonra oraya Softmax uygulayıp sonuçları alıyordum.
+
+680
+02:47:19,399 --> 02:47:28,639
+İstek atma noktasında da Prompt ve SEP token artı film yorumu veya diğer örnek için haber metnini koyuyorum buraya.
+
+681
+02:47:28,659 --> 02:47:40,239
+Mesela sentiment analiz tarafında aldığım ekürsler bu şekilde. Promptlarla da karşılaştırdığımda bu şekilde oluyor.
+
+682
+02:47:41,020 --> 02:47:46,799
+Bir dakika ben şey anlamadım. Ben bir sınıflandırıcı mı eğitiyorsun burada?
+
+683
+02:47:46,799 --> 02:47:55,279
+Yok eğitmiyorum hocam. Direkt Bayes modeli istek atıyorum. Train etmeden. O şekilde.
+
+684
+02:47:56,468 --> 02:48:21,927
+Train kısmı yok. Peki, BaseModel ne output veriyor? Orasını anlamadım ben. Normal CLS tokenından aldığım çıktığı da bu sefer bir Classifier'a veriyorum. Classifier layer'ına. Yani çıktı boyutundan iki node'a düşürecek şekilde. Yani iki boyutlu bir vektör veriyor çıktısında.
+
+685
+02:48:22,579 --> 02:48:33,119
+O şey kısmını anlayamadım. En sondaki klasifiye neye göre çıkıveriyor? O klasifiye neye göre işlem yapıyor?
+
+686
+02:48:35,180 --> 02:48:47,579
+O kısmı çok emin olamadım hocam ben de. O yüzden farklı yöntemler de denedim. Zaten aslında bahsedecektim. Sonuç vermedi bu yöntem diye anlatacaktım ama...
+
+687
+02:48:47,924 --> 02:48:52,584
+O zaman geçelim burasını. Tamam. Sonuç olarak son geçelim.
+
+688
+02:48:53,103 --> 02:48:55,724
+Tamam hocam. Şöyle bir saniye.
+
+689
+02:48:57,304 --> 02:49:04,564
+Bu şekilde yaptığım zaman, yani sentiment analizde zaten iki klas var. 50'ye yakın sonuçlandı.
+
+690
+02:49:06,548 --> 02:49:20,548
+Diğer haber datasında da hep aynı sınıfı öneriyordu. Yani 100 bölü sınıf sayısı kadarlık bir ekürsi etrafında şekilleniyor. Dolayısıyla bu yöntemin çalışmadığını fark ettim ben. Beklediğim...
+
+691
+02:49:20,819 --> 02:49:39,059
+Şeyin tersi oldu aslında. Daha sonra ikinci bir yöntem olarak sonuç almak açısından şöyle bir yöntem denedim. Prompt'ta verirken Prompt'taki klasın ismini içeren token'ı kelimeyi mask token'la değiştirip bu sefer dil modeline istek attım.
+
+692
+02:49:47,603 --> 02:49:59,423
+Buraya işte, this text about a good review dediğimde mesela good'u işte mask'la değiştiriyorum. Sonra isek atıyorum.
+
+693
+02:50:00,000 --> 02:50:27,900
+Maske yerine böyle şeyler, 32 bin uzunluğunda, vocab txt boyutunda bir çıktı vektörü veriyor. Bunların yanında bir de skorları oluyor. Buraya istek atma noktasında da şöyle bir şey yapıyorum. Bir de liste gönderiyorum yanında. Mesela işte ödevde bahsettiğiniz mesela ekonomiyle alakalıysa Metin, işte ekonomi, faiz, enflasyon gibi kelimeler. Diğer klaslar için benzer kelimeler. Mesela işte şey için.
+
+694
+02:50:28,000 --> 02:50:41,459
+Film yorumları için mesela good, positive ve bad ve negative kelimelerini yolluyorum. Good'un skoru, positive'in skorunu topluyorum ondan sonra. Bad ve negative'in skorunu topluyorum. Skor hangisinde yüksekse.
+
+695
+02:50:41,808 --> 02:51:05,348
+Oraya doğru sınıflandırmış oluyor aslında. Bu da yine Zero Shot ve Prompt'la gerçekleşiyor yöntem olarak. Bunun dezavantajı çok uzun sürüyor. Çünkü 32 binlik çıktığı içerisinde seçme yapıyoruz. Bir de ben onları sortluyordum. O yüzden de çok uzun sürmüş olabilir. Yani baştan sona bir çalışması 5 saat falan sürüyordu 25 bin data için.
+
+696
+02:51:05,775 --> 02:51:24,736
+O yüzden sadece bir sefer aşağıda bahsettiğim, şu son satırda bahsettiğim örnekle istek atabildim. Şu şekilde. Orada da %70 civarında bir şey verdi. Yine yukarıdaki listeyle attım. Eqris'i aldım. Bu da bu şekilde oldu. Bu aslında daha mantıklı ve başarılı bir yöntem oldu.
+
+697
+02:51:25,620 --> 02:51:36,620
+Bundan sonra bir de üçüncü yöntem olarak Mask Language Model'ı kullandım. Hani dedim ki o zaman NSP'yi de kullanarak belki bir şeyler yapılabilir diye düşündüm.
+
+698
+02:51:36,620 --> 02:51:51,468
+Bir de Next Sentence, iki tane NSP blog da şöyle çalışıyor. İki tane sentence veriyoruz. İkisinin arasındaki ilişki varsa, yani bu cümle bu cümleden sonra gelebilir gibi bir durum varsa arasında o pozitif dönüyor.
+
+699
+02:51:51,603 --> 02:52:02,423
+Bunları da yine pretrained olarak kullandım. Herhangi bir trenden geçirmeden. İlk başta mesela pozitif dataları ayırdım. 12.500'ü pozitif.
+
+700
+02:52:02,768 --> 02:52:24,047
+Buraya şu promptla istek attığımda mesela %97.52 geldi. Ben dedim ki bu çok iyiymiş, çok iyi çalışıyor gibi bir düşünce oluştu bende. Sonra aynı şekilde şu tekstle istek atınca, şu promptla istek atınca bu sefer de 96.78 verdi. Yani aslında bu da çalışmıyor train edilmediği sürece.
+
+701
+02:52:30,768 --> 02:52:39,627
+Bu önceki cümleden sonra gelebilir şeklinde yorumluyor diye düşünüyorum model.
+
+702
+02:52:40,371 --> 02:53:02,311
+O yüzden aslında üçüncü yöntem de çok başarılı değil. Kullanılabilecek gibi değil yani. Bir ve üç böylece boşa çıktı. Yani arkadaşlardan, sunumlarından da gördüğüm kadarıyla genelde çıktığı sentence similarity gibi yöntemler uygulamak daha mantıklı olabilirmiş. Onu ben düşünmemiştim. Öyle yapsam daha sağlıklı olabilirmiş aslında.
+
+703
+02:53:08,371 --> 02:53:12,611
+Fena olmuyor hocam. Yine o da iyi sonuçlar veriyor. Yorumlarım bu şekilde.
+
+704
+02:53:13,252 --> 02:53:19,352
+Anladım. Ödevde yazıyordun zaten nasıl yapacağınız. Niye hiç bakmadın?
+
+705
+02:53:20,432 --> 02:53:21,871
+Evet, haklısınız hocam.
+
+706
+02:53:22,811 --> 02:53:29,291
+Değil mi? Yani ödevde yazıyordun nasıl bir süreç izleyeceğin. Peki, teşekkürler.
+
+707
+02:53:29,291 --> 02:53:30,451
+Rica ederim.
+
+708
+02:53:44,340 --> 02:53:48,279
+[öğrenci] burada mı?
+
+709
+02:53:48,279 --> 02:53:49,299
+Korkuyorum.
+
+710
+02:54:03,540 --> 02:54:04,760
+[öğrenci].
+
+711
+02:54:06,579 --> 02:54:07,680
+Selamlar hocam.
+
+712
+02:54:07,959 --> 02:54:09,639
+Evet, dinliyoruz.
+
+713
+02:54:10,299 --> 02:54:12,579
+Hemen ekranımı paylaşayım.
+
+714
+02:54:22,451 --> 02:54:23,351
+Geldim [öğrenci].
+
+715
+02:54:25,031 --> 02:54:25,611
+Geldim.
+
+716
+02:54:26,831 --> 02:54:27,191
+[öğrenci].
+
+717
+02:54:30,191 --> 02:54:39,531
+İlk olarak duygu analizi veri setiyle Festex ve BERT algoritmalarını test ettim.
+
+718
+02:54:40,191 --> 02:54:42,791
+Bu duygu analizinde beş farklı sınıf vardı.
+
+719
+02:54:43,451 --> 02:54:46,611
+Anger, Fear, Joy, Love ve Sadness olarak.
+
+720
+02:54:47,540 --> 02:55:08,299
+5 sınıf için promplarımı test ettim. İlk olarak Anger sınıfı için 5 tane promp veriledim. Bu promplarda çok küçük farklarla Anger olarak Fastex'te sonuç alabildim. Ama dediğim gibi sonuçlar zaten grafitten de anlaşılacağı göre birbirine çok çok...
+
+721
+02:55:08,308 --> 02:55:27,228
+Bir tek şurada şu üçüncü prompt diğerlerine göre bir tık daha iyiydi ve zaten Bert'te de bundan yine bahsedeceğim. Fear'da ise Enger'e göre daha bariz sonuçlar aldım.
+
+722
+02:55:27,228 --> 02:55:35,768
+Burada da bunun da sebebi olarak daha fear'la ilgili kelimeler seçip daha sonra o kelimelerle cümleler oluşturdum.
+
+723
+02:55:36,404 --> 02:55:50,884
+Bundan dolayı burada daha bariz sonuçlar aldığımı düşünüyorum. Daha sonrasında Joy için ise yine bazılarına kelimeler seçtim. Bazılarına ise test veri setindeki.
+
+724
+02:55:51,603 --> 02:56:06,623
+Bu kelimelerle veya oradaki cümlelerle kendim yeni bir cümle oluşturarak bir prompt yapmayı denedim. Burada çok düzgün sonuç alamadıklarım oldu. Örneğin şu dördüncü promptta.
+
+725
+02:56:10,227 --> 02:56:16,187
+Watching movies so fun dediğimizde diğerleri bir tek şu fiirden var.
+
+726
+02:56:16,887 --> 02:56:23,987
+Bir şey diyeceğim. Buradaki sonuçların bu sol taraftaki skellere baktığında bunlar zaten hepsi eşki.
+
+727
+02:56:25,887 --> 02:56:27,267
+Anlamadım dediğinizi.
+
+728
+02:56:27,827 --> 02:56:34,527
+Sol taraftaki sonuçlara baktığımızda 0.999'dan sonra değişiyor hepsi.
+
+729
+02:56:35,412 --> 02:56:49,112
+Evet, doğru. Ama aralarında farklar var. Yani bire çok yakın, doğru. O da bu duygu veriseti olduğu için birbirlerine çok yakın. Happy dediğimiz, I am so happy.
+
+730
+02:56:49,112 --> 02:56:56,872
+Bence burada bir yerde bir problem var ya. Yani bu sonuçlar çok şey değiller bence. Ne derler ona?
+
+731
+02:56:57,683 --> 02:57:21,863
+Nasıl söyleyeyim? Hani bir kez daha bunları tekrarlasan bir şekilde, tamam mı? Yani gürültüyü aşacak bir sinyal yok gibi burada, öyle söyleyeyim. Şimdi burada FastSex kullanıyorum derken FastSex'e nasıl bir işlem yapıyorsun? Şimdi elinde bir tane şey var, bir metin var. Sonra bir de elinde I am so happy var mesela, öyle mi?
+
+732
+02:57:22,579 --> 02:57:25,659
+Evet, doğru. Fastex'te...
+
+733
+02:57:25,659 --> 02:57:27,620
+I am so happy'nin Fastex vektörünü alıyorsun.
+
+734
+02:57:28,500 --> 02:57:29,480
+Evet. Daha sonra...
+
+735
+02:57:29,480 --> 02:57:32,400
+Sonra bir de o metninkini alıyorsun. Sonra ne yapıyorsun bu ikisine?
+
+736
+02:57:32,400 --> 02:57:42,200
+Sonra bunların kosnüs similatilerini hesaplıyorum. O da işte mesela bunun için 0.99'dan sonraki bir rakam çıkmış.
+
+737
+02:57:43,620 --> 02:57:49,400
+Bir dakika. Anger için de fear için de Joe, love, sadness. Bunların hepsi için böyle rakamlar çıkıyor öyle mi?
+
+738
+02:57:49,744 --> 02:58:00,204
+Doğru ama şöyle, şimdi atıyorum bu Emotion veri seti biraz dağınık bir veri setiydi. Örneğin işte Angry için elinde 275 tane sample var.
+
+739
+02:58:00,204 --> 02:58:08,984
+275 sample ile I am so happy'nin tek tek kosün sinülleri hesaplayıp daha sonra bunların ortalamasını alıyorum.
+
+740
+02:58:13,396 --> 02:58:29,456
+Anladım ama yani hani bu mesela fear'la bunun bu kadar yani mesela bu ikinci sütundaki bu I'm So Happy'nin ilk sütunu mavi bir sütun. O anladığım kadarıyla en grın ki değil mi? Evet doğru.
+
+741
+02:58:31,219 --> 02:58:36,079
+Yani o anger'ın anlamı ne orada? Orasını tam şey yapamadan çözemedim ben.
+
+742
+02:58:36,260 --> 02:58:36,939
+Bu sınıf.
+
+743
+02:58:37,600 --> 02:58:38,079
+Tamam.
+
+744
+02:58:38,399 --> 02:58:42,979
+Emotion olarak o kızgınlığı belirten bir cümle mi?
+
+745
+02:58:44,199 --> 02:58:44,920
+Tamam.
+
+746
+02:58:44,920 --> 02:58:45,439
+O olmasında.
+
+747
+02:58:46,100 --> 02:58:49,379
+Ve bu işte I am so happy yani kızgınlığa yakın çıkmış.
+
+748
+02:58:49,840 --> 02:58:55,219
+Burada ben bunu iki sebebi aldım aslında. Bunların bu kadar yakın olmasının sebebi.
+
+749
+02:58:55,731 --> 02:59:11,932
+Birincisi, bu emotionlar birbirine aslında çok birbiri yerine kullanılabilen kelimeler olur. I am so happy derken, seni gördüğüme çok mutluyum da diyebiliriz. Ya da böyle kinayelili bir şekilde.
+
+750
+02:59:13,971 --> 02:59:31,951
+Ya tamam da hani kinayeler falan yüzde bir olur, yüzde iki olur. Yani hani bütün dataset'in her şeyiyle her şeyin birbirine bu kadar benzer olması bence muhtemelen hesaplamalarda bir yerde bir problem var. Yani bu hesaplamalardan doğru olma ihtimali bence çok fazla yok.
+
+751
+02:59:33,152 --> 02:59:36,752
+Ya Berk'te de aslında aynı hesaplamalarda. Orada sanki biraz daha iyi gibi sonuçlar ama.
+
+752
+02:59:37,172 --> 02:59:38,971
+Tamam devam edelim. Berk'te geç o zaman.
+
+753
+02:59:39,407 --> 03:00:00,000
+Tamam. Bu da Love'da. Love'da yine fark ediliyor. Bert'e geldik. Bert'te ise bu, az önce üçüncü prompttan bahsetmiştim. Burada hani I say it, don't understand my intelligence gibi bir cümlem vardı. Bu biraz daha kızgınlığa yakın bir cümle.
+
+754
+03:00:00,000 --> 03:00:27,000
+Burada bariz öndeydi. Diğerlerinde yine şu iki prompt için ve şu prompt için biraz daha... Burada tabii tek kelime olmasının da burada etkisi var. Hani Bert'te biraz daha bunu en sonunda genel olarak sonuçlarda bahsettim. Burada angry gibi tek kelime veya kısa kelime öbeklerinde kullandığımız zaman Bert'te biraz daha...
+
+755
+03:00:27,572 --> 03:00:41,292
+Kötü sonuçlar elde edebiliyoruz. Bu da işte Bert'in biraz daha kontekse bağlı bir model olmasından kaynaklı olduğunu düşünüyorum. Festex'te ise daha çok kelime kelime vektörlerini alıyor bu şekilde çalıştığı için.
+
+756
+03:00:41,292 --> 03:00:50,932
+Şey soracağım sana. Şimdi buradaki ilk sütun var ya mesela bu mavi bir tane sütun. 0.82'nin birazcık üstünde. Şimdi bu neyi gösteriyor bize?
+
+757
+03:00:51,700 --> 03:00:58,060
+Bu I feel irritated cümlesi diye bir cümle var. Bu cümle bir bert temsili var elimizde.
+
+758
+03:00:58,060 --> 03:01:19,420
+Evet. Bir de anger için 2-35 tane benim şeyim var. Ayrı bir sampleım var. Bunun anger olduğunu biliyorum. Anger olduğunu bildiğim 2-35 tane cümlem var. Bu 2-35 cümleyi de berte sokuyoruz. Bir temsilini alıyoruz. Daha sonra I feel irritated'e berte sokuyoruz.
+
+759
+03:01:19,700 --> 03:01:31,180
+Bunun da temsilini alıyoruz. Daha sonrasında bu 275 cümleyle tek tek bu temsillerin kosinüs simülaritesini alıyoruz. En sonunda bunların ortalamasını alıyoruz.
+
+760
+03:01:33,820 --> 03:01:39,700
+Ben anlamadım. Yani şimdi 275 tane anger var cümle. Değil mi?
+
+761
+03:01:39,700 --> 03:01:39,920
+Evet.
+
+762
+03:01:39,920 --> 03:01:42,480
+Bu 275 tane cümleyi bertebiliyorsun.
+
+763
+03:01:43,123 --> 03:01:48,064
+Evet. Onlar bir temsil veriyorlar sana. Sonra onların ortalamasını alıyorsun muyum?
+
+764
+03:01:48,664 --> 03:01:56,244
+Yok, şu an almıyorum daha. Önce o 235 tane temsille Eiffel Irritated'ın temsilinin similitesine bakıyorum.
+
+765
+03:01:56,904 --> 03:01:57,504
+Tamam.
+
+766
+03:01:58,344 --> 03:02:09,463
+Sonra elime değerler çıktı. İşte eksi bir ile bir arasında değerler çıkıyor elimle. Yani 235 tane benzerlik değeri çıkıyor. Daha sonra onların ortalamasını alıyorum.
+
+767
+03:02:10,355 --> 03:02:14,915
+O ortalama da 0.82'li bir değer çıkmış.
+
+768
+03:02:21,075 --> 03:02:25,475
+Bunlar yani doğru bildim, yanlış bildim değil bunlar o zaman.
+
+769
+03:02:26,375 --> 03:02:29,015
+Yok, aynen. Bunlar doğru bildim, yanlış bildim değil.
+
+770
+03:02:29,015 --> 03:02:30,175
+O skorlar nerede?
+
+771
+03:02:32,255 --> 03:02:35,175
+Aslında öyle bir skor hesaplaması yapmadım.
+
+772
+03:02:35,715 --> 03:02:37,555
+Onu yapmamış gerekiyor sonuçta.
+
+773
+03:02:38,451 --> 03:02:50,411
+Yani ZeroShot'ta bizim yapmamız gereken şey ne? Sonuçta bir tane metin var. O metni vereceğiz. Hani böyle bir eğitim falan olmadan bu model bunun sınıfını tahmin edecek. Doğrunu tahmin edecek, yanlış mı tahmin edecek?
+
+774
+03:02:51,188 --> 03:02:57,528
+Her birinde 5 prompt var ya, o yüzden 5 tane olduğu için öyle bir isositeye girmedim.
+
+775
+03:02:57,528 --> 03:03:01,128
+İşte o promptların birbirlerine göre karşılaştırılmalı şeyini görmek istiyorduk.
+
+776
+03:03:01,128 --> 03:03:04,967
+Şu promptu kullandığı zaman şöyle oluyor, şu promptu kullandığı zaman şöyle oluyor.
+
+777
+03:03:04,967 --> 03:03:08,167
+O aslında grafikte belli oluyor ya hocam.
+
+778
+03:03:08,167 --> 03:03:11,967
+Mesela I feel irritated dediğimiz şey daha çok fiire yakın çıkmış.
+
+779
+03:03:11,967 --> 03:03:13,567
+Yani burada bir başarı elde edemeyiz.
+
+780
+03:03:13,567 --> 03:03:15,108
+Tamam bak şimdi şöyle bir sıkıntı var.
+
+781
+03:03:15,108 --> 03:03:19,188
+Zero shot diyoruz tamam mı? Şimdi zero shot da sen gidiyorsun bir yandan şey...
+
+782
+03:03:19,188 --> 03:03:22,708
+Anger'de 275 tane şey var diyorsun değil mi? Ne derler ona?
+
+783
+03:03:22,708 --> 03:03:23,587
+Sample.
+
+784
+03:03:23,927 --> 03:03:30,827
+Sample var. Onların her birini I feel irritated ile karşılaştırıyorsun. Doğru mu anlıyor?
+
+785
+03:03:30,847 --> 03:03:31,768
+Doğru, evet.
+
+786
+03:03:32,188 --> 03:03:43,247
+Bir mesafe ölçüyorsun. Sonra bu mesafelerin bir ortalamasını alıyorsun.
+
+787
+03:03:43,727 --> 03:04:01,567
+Sana şey veriyor, ne derler? Burada 0.82'den birazcık bir şey, üstten bir şey varmış. Sonra bir de I Feel Irritated'da bunları mesafelerine alıyorsun. Öyle mi? Pardon, Fear'deki bir şeylerle.
+
+788
+03:04:02,788 --> 03:04:08,028
+İkinci promptla mesela, Anger'deki ikinci promptla. İkinci promptla alıyorsun.
+
+789
+03:04:13,012 --> 03:04:34,012
+Peki sonuç olarak ne diyeceksin? Onunla hareket edelim ben. En sona devam edelim. Tamam Berk'le de bu sonuçları aldın. Tamam. Bir de haber sınıflandırmaya geçeyim o zaman. Haber sınıflandırmada da dört farklı sınıfım vardı. Bunlar da Business, Politics, Food, Endric ve Sport. Burada ise yine Festex'lerde eğer ki...
+
+790
+03:04:34,239 --> 03:04:51,640
+Seçtiğimiz kelimeler diğer gruplarda varsa, diğer gruplarda olma olasılığı daha yüksek olan kelimelerden çok yüksek sonuçlar elde edemiyoruz. Daha yakın sonuçlar elde ediyoruz. Ama Berth'e geldiğimiz zaman Berth'te daha net ayrışıyorlar.
+
+791
+03:04:51,640 --> 03:04:55,640
+Burada da önemli olan nokta seçilen...
+
+792
+03:04:58,100 --> 03:05:02,760
+Kelimeden ziyade biraz da konteksi verecek promplarımızın olması.
+
+793
+03:05:02,920 --> 03:05:07,051
+İşte politik veya governor seçtiğimiz zaman burada...
+
+794
+03:05:07,572 --> 03:05:21,311
+Bu politik, normalde bunun işte şu gri sütünün daha yüksek olması lazım diğerlerinden. Çünkü bu ona ait olmasını bekliyoruz. Politik sınıfına ait birer kelimeler olmasını bekliyoruz ama çok ayrışamıyor.
+
+795
+03:05:29,780 --> 03:05:39,280
+Politik bir cümle içeren, politik ifadeler içeren bir metin verdiğimiz zaman bunlar daha net bir şekilde ayrışabiliyorlar.
+
+796
+03:05:40,200 --> 03:05:43,379
+Yine business'da da benzer durumlar var.
+
+797
+03:05:43,379 --> 03:05:45,100
+Örneğin burada...
+
+798
+03:05:45,203 --> 03:05:57,663
+Financial Regulation dediğimiz zaman bu çok net ayrışmamış ama bu üçüncü fronta baktığımız zaman diğerlerinden daha yüksek, daha iyi bir ayrışma göstermiş.
+
+799
+03:05:59,343 --> 03:06:05,423
+Burada da business ilk mi? Business mavi olan.
+
+800
+03:06:07,379 --> 03:06:24,039
+Burada Food Ending. Food zaten diğerlerinden çok bağımsız spor, politik ve biznes'a göre çok ayrı bir konu olduğu için genellikle çok basit, resipi bile veya pizza bile seçmiş olsak, tek kelimeli bile olsa burada ayrıştığını görüyoruz.
+
+801
+03:06:24,724 --> 03:06:46,004
+Burada da, sporda çok, burada Berk'te de düzgün sonuç alamadım. Bunu da şeye bağladım. Spordaki haberler genellikle kişiler üzerinden haberlerdi. İşte atıyorum bir basketbol oyuncusu şunu yaptı veya başka bir futbolcunun sakatlandığı şöyle oldu, böyle oldu gibi.
+
+802
+03:06:46,548 --> 03:07:01,587
+Sporla ilgili çok fazla veri olmadığı için aslında orada haber başlıklarında daha çok o sporcuların hayatıyla ilgili verileri olduğu için buradan çok düzgün bir sonuç elde edilemediğini düşünüyorum.
+
+803
+03:07:02,648 --> 03:07:13,968
+Sonuç olarak, Festex algoritmasında kelime bazlı çalıştığımız için ve duygu analizi veri setindeki aynı kelime birden fazla duygu için kullanılabildiğinden sınıflar arası yakın sonuçlar elde.
+
+804
+03:07:14,548 --> 03:07:27,308
+BERT algoritmasında ise tek kelime ya da kısa cümleler olması durumunda sınıflar arası ayrım yine düzgün yapılamıyor. Burada biraz daha kontekse uygun, daha ayrıştırmayı kolaylaştıracak.
+
+805
+03:07:27,987 --> 03:07:55,987
+Cümleler vermemiz gerekiyor. Haber sınıflandırma veris etinde ise spor haberleri, en son bahsetmiştim. Genellikle sporcu isimleri içerisinde ve sporcu hayatlarıyla ilgili haberler olduğundan burada yine düzgün bir sınıflandırma elde edemedik. Haber sınıflandırma veris etinde seçilen kelimelerin tekilliğine göre FESTX algoritmasının başarısı artıyor. Duygu analizinde bu tekilliği çok fazla yakalayamayalım.
+
+806
+03:07:55,987 --> 03:08:20,847
+Duygular, o kelimeler, aynı kelime farklı duygular için kullanılabiliyor. Ya da mesela feel diye bir kelimeyi bütün duygular, duygu cümlelerinde aslında görüyoruz. Bu da sonucu biraz etkiliyor, saptırıyor. Ama haberde bu durum çok fazla olmadığı için genellikle FastEx'te duygu analizlerinde daha iyi sonuç elde edebiliyoruz.
+
+807
+03:08:22,868 --> 03:08:31,208
+Çünkü seçilen problemler, kelimeler olumlu, olumsuz eklerle ya da vurgularla farklı duygular için kullanılabilmekte aslında bu birinci maddede söylediğim şey.
+
+808
+03:08:32,208 --> 03:08:32,907
+Yani bu şekilde.
+
+809
+03:08:35,487 --> 03:08:40,128
+Burada yöntem olarak bir hata var mıydı?
+
+810
+03:08:42,420 --> 03:08:58,520
+Yöntem olarak sonuçlar yok. Yani başarı sonuçları ortada. Elimizde bin tane örnek var. Bunların şu kadarı doğru sınıf bandırı, şu kadarı yanlış sınıf bandırı gibisinden bir sonuç göremiyoruz burada. Doğru mu?
+
+811
+03:09:01,236 --> 03:09:05,456
+Aslında onları ben grafik 5'er tane olduğu için her birinde...
+
+812
+03:09:05,456 --> 03:09:19,156
+Tamam 5'er tane olduğu için 5'er birine şeyini verebilirdin. Burada bu similarity skorlarına bakarak niye ikinci bir daha sonuçların buradan çıkarsan masını niye bize bırakıyorsun? Sen direkt niye bunları çıkartmadın?
+
+813
+03:09:19,856 --> 03:09:23,576
+Onları aslında şeyde anlatırım. Sonunda anlatmayı düşündüm de.
+
+814
+03:09:24,596 --> 03:09:28,116
+Sonunda anlattığın şeyle sınıflandırma başarısının ne alakası var?
+
+815
+03:09:28,979 --> 03:09:42,939
+Mesela burada, ne bileyim ben işte, şu bir hükümesinde Bert'in şu prompt'u kullandığımızda başarı şu oluyor, şu prompt'u kullandığımızda şöyle oluyor gibisinden bir şeyler ortada pek gözükmüyor.
+
+816
+03:09:43,479 --> 03:09:49,279
+Yani en başarılısını seçip mesela burada, onlardan bir tanesine, ona dair sınıflandırma skorlarını verebilirdin değil mi?
+
+817
+03:09:50,439 --> 03:09:50,799
+Evet.
+
+818
+03:09:52,499 --> 03:09:54,039
+Ya da Fast Text'te.
+
+819
+03:09:54,779 --> 03:09:56,259
+Peki, teşekkürler [öğrenci].
+
+820
+03:09:57,043 --> 03:10:01,043
+[öğrenci] burada mı arkadaşlar? [öğrenci]...
+
+821
+03:10:03,043 --> 03:10:06,283
+Evet, sen de izleyeceğim.
+
+822
+03:10:27,827 --> 03:10:29,847
+Sesim geliyor mu şu an? Geliyor, evet.
+
+823
+03:10:37,148 --> 03:10:39,028
+Sesini biraz yükseltebilir misin?
+
+824
+03:10:41,167 --> 03:10:43,247
+Şu an nasıl? Daha iyi.
+
+825
+03:10:45,587 --> 03:10:55,048
+Veri seti olarak Tivenin Yuskuru ve Twitter'da duygu analiz yapabileceğim bir veri setini kullandım. Model olarak da WordVac ve Word kullanılmayacağım.
+
+826
+03:10:55,891 --> 03:11:12,391
+Timen News Group için kullandığım promptlar, en iyi sonuç veren promptlar genelde biraz daha uzun olanlardı.
+
+827
+03:11:12,391 --> 03:11:19,471
+Tek bir kelimelik ya da iki kelimelik promptlar biraz daha düşük doğrulukta sonuçlar verdi.
+
+828
+03:11:20,275 --> 03:11:42,975
+Zaten veri setimi sadece 5 topiği baz alarak bölmüştüm. Onun üzerinde çalışmıştım. Aynı şekilde duygu analizi içinde sadece negatif ve pozitif sınıfları aldım. Bu label'lar üzerinde çalıştım.
+
+829
+03:11:44,275 --> 03:11:54,175
+Orada da yine aynı şekilde kısa promptlar biraz daha kötü sonuçlar verdi diğerlerine göre. Bunlar diğerlerine göre en iyi sonuçlar.
+
+830
+03:11:54,175 --> 03:12:07,115
+Doğruluk oranını ise, yani accuracy nasıl kullanılıyorsanız, orada da şöyle anlatayım.
+
+831
+03:12:11,059 --> 03:12:32,699
+Uzaklıklarının minimumunu cosine simulatiği ile şey yaptım. Tamamını bir ortalama aslında buradaki %11. Tek prompt prompt değil de 5 tane farklı promptun, 2 kelimelik, 3 kelimelik, 7 kelimelik promptların.
+
+832
+03:12:33,959 --> 03:12:35,239
+Kaç tane örnek var burada?
+
+833
+03:12:36,020 --> 03:12:42,680
+Ben burada üçer tane örnek seçtim. Negatif promptlar için üç tane en normal.
+
+834
+03:12:42,680 --> 03:12:45,399
+Üç örnek üzerinden deneme yaptın yani.
+
+835
+03:12:45,920 --> 03:12:50,079
+Hayır, beş örnek üzerinde. Bunlar iyi sonuç verenler. Diğerleri daha kısa örnekler.
+
+836
+03:12:51,459 --> 03:12:58,559
+Örnek demiyorum. Şeyleri söylüyorum ya. Data setin içerisinde kaç örnek var? Bunlar prompt örnekleri.
+
+837
+03:12:59,959 --> 03:13:01,963
+Veri setinin içinde...
+
+838
+03:13:02,004 --> 03:13:03,404
+Senin kullandığın.
+
+839
+03:13:04,424 --> 03:13:11,744
+Büyük bir veri setiydi. Küçük değil. 1000-2000 örnekli bir veri setiydi. Tam sayısını bilmiyorum şu anda.
+
+840
+03:13:14,824 --> 03:13:16,824
+Oradaki bütün örnekleri mi kullandın?
+
+841
+03:13:18,844 --> 03:13:29,623
+Evet, tamamını kullandım ama şeyleri böldüm. Mesela burada irrelevant, nötral, nötral sınıflandırmalar da vardı. Onları kullanmadım.
+
+842
+03:13:29,920 --> 03:13:44,819
+Twitter için. Mesela burada da normalde 20 tane konu başlıyor, altında dağılmış şeyler. Ama ben sadece 5 tanesini kullanarak devam ettim. Ama geri kalan, yani 5 tane topin tamamını, tüm örneklerini aldım.
+
+843
+03:13:45,739 --> 03:13:48,280
+Peki, mesela şimdi oradaki %11'in anlamı ne?
+
+844
+03:13:49,220 --> 03:13:53,920
+%11, burada bizim uzayımızda...
+
+845
+03:13:54,579 --> 03:14:03,940
+Vektorize ettiğimiz promptun aslında olması gereken yerin tamamının ortalaması gibi.
+
+846
+03:14:03,940 --> 03:14:16,180
+Yani hepsinin minimumunu aldım. Kosain similareleri. Aslında olması gereken yere ne kadar yakın gibi düşünebiliriz.
+
+847
+03:14:16,440 --> 03:14:18,979
+Yani kümelenmiş olduğu için zaten uzayda bunlar.
+
+848
+03:14:19,139 --> 03:14:21,620
+Ne demek? %11 ne demek demek demek? Bunu anlayamadım.
+
+849
+03:14:22,355 --> 03:14:47,255
+Yani şöyle, %90 diğer şeylere daha yakın, kümelere daha yakın. Mesela World to Wake Topic Detection için diğer dört kümeye aslında olması gereken, mesela buradaki örneğimizde ateizmle ilgili bir şey, prompt vermişim.
+
+850
+03:14:48,147 --> 03:14:58,207
+Bunun yanlış hatırlamıyorsam %23 landı doğruluk oranı. Yani en yüksek buydu ona rağmen. Zaten yakındı birilerinin.
+
+851
+03:15:01,108 --> 03:15:09,768
+Yine de ateizm konu başlığına diğerlerine göre daha uzaktı diyebilirim.
+
+852
+03:15:11,227 --> 03:15:13,608
+World Bank için. Aynı şekilde Berth'te de öyle.
+
+853
+03:15:13,747 --> 03:15:15,447
+Peki sınıflandırma başarısından yani?
+
+854
+03:15:16,755 --> 03:15:31,995
+Anlamadım. Sınıflandırma başarısı ne burada? Bu şu an sınıflandırma başarısı aslında. Yani manuel yapılmış. Evet. Sınıflandırma başarısı. Yani sentiment alanında iki tane sınıf var. Sınıflandırma başarısı nasıl? %17, %13 oluyor.
+
+855
+03:15:35,995 --> 03:15:40,335
+Evet. Çok haklı bir soru hocam şu an. Aydınlandım.
+
+856
+03:15:41,780 --> 03:15:50,319
+Bir yerlerde muhtemelen bir şeyi yanlış yapmışımdır. İkisinde de aynı şeyi kullandım aslında. Fonksiyonu kullandım uzaklıkları hesaplamak için.
+
+857
+03:15:51,940 --> 03:15:53,780
+Nerede çok olmamış hali değil mi?
+
+858
+03:15:54,399 --> 03:15:55,659
+Biraz yanlış olmuş sanırım.
+
+859
+03:15:56,079 --> 03:15:59,360
+Peki. Peki, teşekkürler hocam.
+
+860
+03:16:05,971 --> 03:16:06,772
+[öğrenci].
+
+861
+03:16:10,172 --> 03:16:11,612
+Merhaba hocam. Sesim geliyor.
+
+862
+03:16:11,612 --> 03:16:18,412
+Merhaba. [öğrenci] geliyor. Sen sistemi yükleyememişsin ama daha sonra mail olarak gönderdim galiba. Sistemde bir şey oldu dedin ama anlayamadım.
+
+863
+03:16:18,452 --> 03:16:21,752
+Evet hocam. Sistemi yükleyemedim. Ben de mail olarak attım.
+
+864
+03:16:21,752 --> 03:16:23,412
+Sistemde sıkıntı mı vardı? Anlayamıyorum.
+
+865
+03:16:23,852 --> 03:16:26,432
+Hayır. Sistemlik bir sıkıntı değil. Benlik bir sıkıntı vardı.
+
+866
+03:16:28,891 --> 03:16:29,752
+Yani şey mi?
+
+867
+03:16:31,028 --> 03:16:39,207
+[kişisel bilgi]
+
+868
+03:16:40,627 --> 03:16:42,507
+[kişisel bilgi]
+
+869
+03:16:42,507 --> 03:16:47,368
+[kişisel bilgi]
+
+870
+03:16:48,227 --> 03:16:54,528
+Peki. Peki. Bunu müşterilere söylemeyin çok. Peki. Tamam. Dinliyoruz biz.
+
+871
+03:16:54,528 --> 03:16:57,487
+Tabii. Açıyorum ekran hocam.
+
+872
+03:17:15,763 --> 03:17:18,724
+Ekranı nereden paylaşıyorduk acaba?
+
+873
+03:17:19,443 --> 03:17:21,323
+Aşağıda şerif, screen var.
+
+874
+03:17:22,003 --> 03:17:22,983
+Evet, evet gördüm.
+
+875
+03:17:30,675 --> 03:17:31,835
+Şu an ekran gözüküyor mu?
+
+876
+03:17:33,395 --> 03:17:33,675
+Evet.
+
+877
+03:17:37,876 --> 03:17:57,016
+Ben Robertova GPT-2'yi kullandım. Anlamsal uzaylarını kullandım. Uzaklık algoritması olarak buraya üçünü de yazdım. Ökletmenet'in kosin similirtiği yazdım ama en başarılı kosin similirtiği olduğu için testlerimi şu an göreceğimiz sonuçları onun üzerinden yapıyorum.
+
+878
+03:18:01,012 --> 03:18:19,352
+Haber sınıflandırma veri seti, bir tane otel uygulamasının review veri seti. Linklerini kaynakçıda paylaştım. Sınıflandırma tekniği de ortalama ve minimum şeklinde sınıflandırmayı şu şekilde yapıyorum.
+
+879
+03:18:26,739 --> 03:18:33,439
+O promplardan çıkan sonuçların, uzaklıkların veya benzerliklerin ortalamasını alıyorum.
+
+880
+03:18:34,739 --> 03:18:40,019
+Aldığım ortalamalara göre bir sınıflandım, kıyaslama yapıyorum.
+
+881
+03:18:42,019 --> 03:18:45,019
+Haber birisinde...
+
+882
+03:18:45,843 --> 03:18:53,804
+Yani beş tane prompt varsa, beş tane promptun temsillerin ortalamasını alıp sanki o sınıfın temsiliymiş gibi kullanıyorsun. Öyle mi anlıyorum?
+
+883
+03:18:53,804 --> 03:19:08,103
+Aynen öyle hocam. Aynen öyle. Şurada göstereyim isterseniz. Bu ilk örnek ama ikinci de daha anlaşılır. Mesela gördüğünüz gibi şurada politika için beş tane örnek ekledim, beş tane prompt ekliyorum. Bu promptlar politikaya ait diyorum.
+
+884
+03:19:13,652 --> 03:19:21,311
+Target'a yani cümleye sınıflandıracağımız cümle olan uzaklıklarına, daha doğrusu bizim keyzimizde benzerliklerine bakıyorum.
+
+885
+03:19:22,072 --> 03:19:25,172
+Ve benzerliklerinin ortalamasını alıyorum.
+
+886
+03:19:27,291 --> 03:19:28,172
+Bu ortalama da aynı şekilde...
+
+887
+03:19:28,172 --> 03:19:31,971
+Niye öyle bir şey yaptın ki? O zaman şeyleri nasıl karşılaştıracağım birbiriyle, promptları?
+
+888
+03:19:33,332 --> 03:19:37,172
+Şu şekilde, bu 5 prompt'u birbiriyle değil de...
+
+889
+03:19:37,620 --> 03:19:45,460
+[öğrenci] promptlu birbiriyle karşılaştırıyorum. Mesela şöyle, bu beş prompt konteks olarak şey tutuyor.
+
+890
+03:19:46,460 --> 03:19:50,620
+Şimdi durmadan bir oraya bir oraya gidiyorsun, ben anlayamıyorum.
+
+891
+03:19:50,980 --> 03:19:56,240
+Ben baştan devam edebilir miyim isterseniz, daha anlaşılır şekilde anlatayım.
+
+892
+03:19:57,160 --> 03:19:57,400
+Peki.
+
+893
+03:20:00,000 --> 03:20:17,119
+Verisiyetlerim şu şekilde. Normalde bunlar dağılımı, distribüüşi eşit değildi. Hepsinin genel ekürsiye etkisi aynı olsun diye en az olanı dahil etti. En az olanın sayısı kadar.
+
+894
+03:20:17,119 --> 03:20:21,239
+Hepsi şu an. Yani yaklaşık 2000'er tane bu veriseti için.
+
+895
+03:20:21,971 --> 03:20:39,471
+Her sınıfta örnek var. Bu veri setinde ise 20 bin tane veri vardı ve iki sınıfta eşit dağılımdaydı. Yani onar biner tane pozitif ve negatif ayrımı var. Pozitif ve negatif normalde veri setinde 0 ile 5 arasında sınıflandırılmıştı.
+
+896
+03:20:48,180 --> 03:20:49,700
+Çıkarısını pozitifledim.
+
+897
+03:20:50,440 --> 03:20:51,600
+Reviewler için.
+
+898
+03:20:53,079 --> 03:21:03,579
+İlk deneyim haber sınıflandırmaydı. Burada direkt prompt olarak haberlerin, kategorilerinin kendilerini verdim.
+
+899
+03:21:03,579 --> 03:21:06,720
+Ve Roberta'da %18'lik bir başarı aldım.
+
+900
+03:21:07,180 --> 03:21:11,620
+GBD'de ise %9'luk, yani 9.7'lik bir başarı aldım.
+
+901
+03:21:13,340 --> 03:21:14,579
+Ondan sonra...
+
+902
+03:21:15,219 --> 03:21:38,659
+Bir konteks verdim. Bu haber şununla alakalıdır. Bu haber veya bu başlık şudur, bu haber şudur şeklinde bir konteks verdim. Ve konteks verdiğimde başarı arttı. Roberto'da %22.8'e çıktı. GBT'e %13'e yükseldi.
+
+903
+03:21:42,031 --> 03:22:06,011
+Hepsi kontekst vereyim. Yine tek bir kelime olmasın. Ama hepsinde bir ortak geçenleri de vermeyeyim dedim. Şu şekilde yine bazen kelime bazen kontekst şeklinde beşer tane prompt verdim hepsi için. Bu promptlara göre bir sınıflandırma yaptım.
+
+904
+03:22:06,515 --> 03:22:19,056
+Bu sınıflandırmanın sonucundaysa yine bir artış oldu. Roberta yine Cipit'den yüksek çıktı. Bir yüzde yirmi yedi, yüzde on altı şeklinde.
+
+905
+03:22:23,056 --> 03:22:29,056
+Sınıflandırmayı yaparken kullandığım algoritma şu şekilde hocam. Biraz önce onun konuda...
+
+906
+03:22:29,363 --> 03:22:46,884
+Bir anlaşmazlık yaşadık. Şimdi diyelim ki politika için ben beş tane prompt ekledim. Aynı şekilde travel için de beş tane prompt ekliyorum. Bütün kategoriler için beşer tane prompt ekledim. Beş olmak zorunda değil bu. Ama ben beşer tane ekledim.
+
+907
+03:22:52,691 --> 03:23:00,371
+Bu promplara olan benzerliklerine veya uzaklıklarına, bizim durumumuzda benzerliklerine baktım.
+
+908
+03:23:02,951 --> 03:23:11,031
+Ortalama benzerlikli, her sınıf için ortalama benzerlik aldım. Mesela government'a 0.3 çıktı, vota 0.5 çıktı.
+
+909
+03:23:12,628 --> 03:23:30,087
+Elektriğe 0.7 çıktı. Ortalama 0.5 dedim diye varsayabiliriz. Şu an şeyleri, sayıları öyle değil ama. Ondan sonra bunu mesela politikanın 0.5 diyelim ortalaması.
+
+910
+03:23:40,020 --> 03:23:44,559
+Metin style'dır. Şeklinde sınıflandırmasını yapıyorum.
+
+911
+03:23:46,180 --> 03:23:47,500
+Tamam, devam edebilirsin.
+
+912
+03:23:49,680 --> 03:24:02,700
+Şimdi TripAdvisor dataset'indeki şeyleri göstereyim. Burada da pozitif ve negatif şeklinde yaptım ama direkt pozitif negatif vermedim bu sefer.
+
+913
+03:24:02,700 --> 03:24:07,040
+Bu sefer direkt konteks verdim. Çünkü pozitif negatifin... Pardon.
+
+914
+03:24:07,636 --> 03:24:22,116
+Direkt sınıfın kendisini vermenin geçen deneyde faydalı olmadığını görmüştüm. Burada da aynı şekilde direkt bir konteks verdim. Verdiğim kontekste başarı oranlarına baktım.
+
+915
+03:24:23,716 --> 03:24:25,616
+Bu dataset ile sınıfların dağılımı nasıl?
+
+916
+03:24:26,451 --> 03:24:34,591
+%50'ye %50 yaklaşık hocam. Tam %50'şer değil fakat %50'ye %50'ye... Yakınlar bebilenler. Evet, yakınlar.
+
+917
+03:24:34,591 --> 03:24:44,591
+Türkiye'ye %32 nasıl oluyor? Tahmin düzgün çalışmadı yani hocam.
+
+918
+03:24:47,871 --> 03:24:50,332
+Atsan tutturma ihtimali zaten %50.
+
+919
+03:24:52,659 --> 03:24:55,739
+Evet, veya bir tanesinin tamamını yanlış yapsa da %50.
+
+920
+03:24:57,199 --> 03:25:00,019
+Yani bu sözlerinin tam tersini söylesen %168 olur başarı.
+
+921
+03:25:02,519 --> 03:25:03,420
+Evet, doğru.
+
+922
+03:25:07,123 --> 03:25:12,123
+Yani embedding kısmında bir problem yaptım ondan emin değilim fakat...
+
+923
+03:25:13,304 --> 03:25:19,063
+Tam tersiyle eşleşeyelim. GPT'de %87 falan çıkardık.
+
+924
+03:25:21,823 --> 03:25:24,123
+Bir problem var gibi. Peki...
+
+925
+03:25:25,427 --> 03:25:49,747
+Acaba şey yaparken mi hata yaptım? Similarity alırken bir eksi yapmıştım ama emin değilim. Bir daha bakmam lazım. Burada da dediğim gibi context verdim. Verdiğim context'e başarı olanları buydu. Bu sefer context'e ortak kelimeleri çıkarttım. Yine aynı şekilde. Mesela this review is kısmı, this reviewer had. Bunlar hepsinin de ortak olacağı için hepsini çıkarttım.
+
+926
+03:25:52,915 --> 03:25:57,895
+Konteksi tutup ortakları çıkarttığımda başarı oranı yine arttı.
+
+927
+03:25:59,675 --> 03:26:03,216
+Yani bu sefer de hani şey geliyor.
+
+928
+03:26:03,235 --> 03:26:08,595
+Arttı diyorsun da yani hani arttı mı ondan çok çok iyi mi?
+
+929
+03:26:09,155 --> 03:26:12,275
+Olamadım ben. Peki tamam devam edelim.
+
+930
+03:26:13,675 --> 03:26:14,275
+Bu kadar hocam.
+
+931
+03:26:18,004 --> 03:26:21,484
+Belki şey kısmında bir problem yapmış olabilirim diyeceğim.
+
+932
+03:26:23,484 --> 03:26:27,043
+Şöyle söyleyin, bir yerde bir şey yapmışsın.
+
+933
+03:26:28,664 --> 03:26:32,564
+%50'lik bir azizette böyle çıkması çok makul bir şey değil herhalde değil mi?
+
+934
+03:26:33,523 --> 03:26:33,843
+Evet.
+
+935
+03:26:35,203 --> 03:26:39,384
+Peki, peki. Teşekkürler [öğrenci].
+
+936
+03:26:39,384 --> 03:26:41,123
+Teşekkür ederim.
+
+937
+03:26:45,940 --> 03:26:47,180
+[öğrenci], seninle devam edelim.
+
+938
+03:26:52,244 --> 03:26:54,004
+Tamam hocam, ekranımı paylaşıyorum hemen.
+
+939
+03:26:54,444 --> 03:26:54,764
+Tamam.
+
+940
+03:27:03,028 --> 03:27:14,728
+Arkadaşımız ekran paylaşımını durdurursa hocam paylaşamıyorum şu anda paylaştığı için. Tamam biliyorum. [öğrenci]. Tamam. Kusura bakmayın kapattım. Estağfurullah.
+
+941
+03:27:26,995 --> 03:27:46,795
+Merhaba arkadaşlar, ben [öğrenci]. Şimdi ödev 2'yi size sunacağım. Hocam, iki tane veri seti kullandım. Biri haber sınıflandırma, diğeri de duygu analizi. Haber sınıflandırmada dört sınıf vardı. Duygu analizinde de negatif, pozitif olarak iki sınıf vardı. Her bir sınıf için 500 örnek aldım.
+
+942
+03:27:47,412 --> 03:28:01,792
+Çünkü BERT ve BART iki modeli kullanmıştım. Çok yavaş çalıştığı için biraz örnek sayımı düşürdüm. Daha yüksekti. Bütün sınıfı kullanmıştım. Bütün sınıf örneklerini kullanmıştım. Daha sonra düşünmek zorunda kaldım.
+
+943
+03:28:02,412 --> 03:28:11,792
+Uygun olan yöntem her bir veri seti için sınıfları belirledim. Daha sonra promptların o sınıfları olan benzerliklerinin...
+
+944
+03:28:12,500 --> 03:28:31,540
+Benzerliklerini hesapladım. O sınıftaki her bir kelimeye olan benzerliklerinin ortalamasını alıp daha sonra o promptların negatif veya pozitif olan sınıflara benzerliklerini hesaplayıp o sınıflandırmaların doğru veya yanlış olduğunu karar verip ona göre bir başarı hesapladım.
+
+945
+03:28:32,340 --> 03:28:35,659
+Uygulanan sinirsel dil modelleri de Bert ve Bart'tı.
+
+946
+03:28:36,468 --> 03:29:01,347
+Prompt belirlemede prompt listlerimi üç farklı şekilde belirledim. İlk önce o sınıfları temsil eden bir kelimeden oluşan temsilleri belirledim. Negatif, pozitif, mutlu, üzgün gibi tek kelimeden oluşan promptlardı. Daha sonra bu promptları bir kelime öbekleri olarak kullandım. Üzgün bir insan, mutlu bir çocuk, zor sınav gibi.
+
+947
+03:29:03,775 --> 03:29:27,956
+Bir cümleler oluşturdum. Anlamlı cümleler verdim. Her iki veri seti için de aynı işlemleri uyguladım. Burada herhangi bir kelime frekanslarına falan bakmadım. Direkt kendim manuel olarak girdim. Promptları. İlk 500 örneği her bir küme için incelediğimde orada geçen kelimelere baktım. Kelimelere göre kendim promptlar oluşturmaya çalıştım.
+
+948
+03:29:30,100 --> 03:29:35,780
+Her bir prompt listesinde de her bir sınıfa ait 5 prompt verdim.
+
+949
+03:29:41,299 --> 03:29:58,000
+Duygu analizi için ilk oluşturduğum prompt listesinde tek kelimeden oluşan negatif, pozitif sınıfı temsil eden beş kelime, negatif sınıfı temsil eden beş kelime vardı. Bu sınıflara benzerliklerini hesaplamaya çalıştık.
+
+950
+03:30:00,000 --> 03:30:03,139
+ve pozitif sınıfı olan benzerliğini hesapladım.
+
+951
+03:30:03,540 --> 03:30:06,159
+Burada benzerlikler birbirlerine yakın çıktı aslında.
+
+952
+03:30:07,299 --> 03:30:09,920
+Yani virgülden sonra bazı şeyler değişti.
+
+953
+03:30:09,920 --> 03:30:18,440
+%72, %721, %723 gibi arada çok şey farklar vardı.
+
+954
+03:30:18,879 --> 03:30:20,652
+Ben de bunun sebebini işte...
+
+955
+03:30:20,819 --> 03:30:42,699
+negatif veya pozitif sınıfta geçen işte güzel değildir gibi hani olumsuzluk ekleri vardı. Acaba dedim hani negatif veya pozitif sınıfı birbirinden ayırırken bu konuda düzgün bir ayrım yapamıyor mu? Hani ikisinde de aslında güzel var. Birinde güzeldir diyor. Diğerinde güzel değildir diyor. Tam olarak onları net bir şekilde ayrım yapamadığını düşündüm.
+
+956
+03:30:48,819 --> 03:30:56,739
+Doğru bildi. Negatiflik, şey, Bart için de on taneden altı tanesini doğru bildi. Yani doğru bir şekilde sınıflandırma yaptı.
+
+957
+03:30:58,036 --> 03:31:19,255
+İkisi de bu konuda duygu analizindeki ilk sınıf prompt listimde doğu başarıları aynı çıktı. Daha sonra bir kelime örnekleri oluşturdum. Belki daha bir anlam ifade eder ya, daha doğru bir şekilde ayırt eder diye. Bart'ın burada başarısı düştü. Niye ben başarısı artar diye düşünmüştüm.
+
+958
+03:31:20,371 --> 03:31:24,871
+Böyle bir tahminde bulunmuştum başlamadan önce ama burada bir yüzde elliye düştü.
+
+959
+03:31:25,352 --> 03:31:37,492
+Daha çok benim bu duygan izi sınıflandırmamda pozitifleri sınıflandırırken bir daha yüksek başarı elde ettim ama negatiflerde daha düşük bir sınıflandırma başarısı elde ettim.
+
+960
+03:31:37,492 --> 03:31:41,652
+Yani negatifleri sınıflandırırken daha kötü sonuçlar verdi.
+
+961
+03:31:44,371 --> 03:32:12,371
+Daha sonra hocam anlamlı cümleler oluşturdum. Yine bunları ben kendim girdim anlamlı cümlelere de. Anlamlı cümlelerde işte bu duyguyu temsil ederken iki defa yazmaya çalıştım. İşte ben çok mutlu oldum. Sokakta mutlu çocuklar görünce daha mutlu oldum gibi. Belki dedim bu şekilde başarıyı arttırabilirim. Ama nedense benim bu negatif veya pozitif sınıfları ayrıştırırken benzerlikleri çok yakın çıktı. Bilmiyorum ben mi bir...
+
+962
+03:32:12,371 --> 03:32:25,771
+Benzerlikleri hesaplarken bir yerde hata yaptım bilmiyorum ama işte Bert'in burada yüzde seksen başarı, başarı Mart'ta ikisi içinde yüzde seksen başarı ederken Bart için de yüzde yetmiş bir başarı elde ettim.
+
+963
+03:32:27,796 --> 03:32:39,236
+Burada ikisinin de performans karşılaştırmasını yaptım. Benim tahmin ettiğim gibi 3 prompt listim vardı. Bu prompt listlerde daha başarısı kademeli olarak artarken,
+
+964
+03:32:39,236 --> 03:32:49,736
+BART prompt list 2'de yani kelime ve bekleri kullanımda bir başarısı düştü. Daha sonra yine anlamlı cümleler kurup test ettiğimde başarısı arttı.
+
+965
+03:32:50,136 --> 03:32:55,796
+Ama dediğim gibi negatif pozitifleri birbiriyle sınıflandırırken iyi sonuç aldım ama negatif...
+
+966
+03:32:55,796 --> 03:33:06,096
+Sonunda biraz daha negatif olan cümleleri etiketlerken, negatif veya pozitif derken başarısı daha düşük iki Bart'ın da, Bert'ın da.
+
+967
+03:33:07,976 --> 03:33:13,776
+Haber sınıflandırma da yine aynı şekilde yaptım. Sınıfları temsil eden kelimeleri kullandım.
+
+968
+03:33:14,276 --> 03:33:19,516
+Her biri için beş tane örnek vardı. Her bir sınıf için beşer tane prompt örneği verdim.
+
+969
+03:33:22,899 --> 03:33:26,840
+Bu örneklerin içerisinde sınıfların etiketlerini de koydum.
+
+970
+03:33:27,572 --> 03:33:55,572
+Daha sonra Prompt List 2'de yine aynı şekilde kelime örbekleri kullandım sınıfları temsil eden. Daha sonra Prompt List 3'de de yine anlamlı kelimeler oluşturdum. Mesela Artificial Intelligence, bilimle ilgili bunları kendim belirledim bu arada. Bilimle ilgilidir diye daha böyle belirli, direkt sınıflandırılabileceğim, baktığımda direkt sınıflandırılabilecek kelimeleri seçtim. Artificial Intelligence, Microsoft gibi. Daha kolay etiketleyebileceğini düşündüm. Kelimeleri seçerim.
+
+971
+03:33:55,572 --> 03:34:04,012
+Birek cümleler oluşturdum. Başta bu haber sınıflandırmada yine Bert, Bart'a göre daha iyi bir performans gösterdi.
+
+972
+03:34:04,711 --> 03:34:11,672
+Kelimeleri kullandığımda Bert'in performansı yüzde elliyken başarılması, Bart'ın yüzde yirmi beş çıktı.
+
+973
+03:34:12,451 --> 03:34:17,451
+Burada hocam daha fazla örneğim var da burada sadece tabloda kısa bir şekilde göstermek için azaldım.
+
+974
+03:34:17,451 --> 03:34:23,531
+Normalde her bir sınıf için beşer tane örneğim var. Dört sınıfım var, yirmi tane promptum var.
+
+975
+03:34:23,572 --> 03:34:24,412
+Her bir listede.
+
+976
+03:34:26,932 --> 03:34:34,211
+Daha sonra kelime öbeklerini kullandığımda Bert'in %55, Bert'in %31 başarı performansı çıktı.
+
+977
+03:34:35,111 --> 03:34:38,992
+Yani her ikisinin de kelime öbekleri kullandığı başarısı artmış oldu.
+
+978
+03:34:41,363 --> 03:34:56,363
+Daha sonraki anlamlı kelimeler kullandığımda da Bert'in başarısı yüzde 65 başa yükseldi. Aynı şekilde Bart'ın da başarısı yüzde 65'e yükseldi. Yani benim başarı ölçüme göre ikisi de cümle...
+
+979
+03:34:56,852 --> 03:35:06,852
+Anlamlı cümlelerde daha iyi bir performans gösterdi. Burada mesela spor sınıfı için kelimeler oluştururken özel kelimeler de kullandım.
+
+980
+03:35:06,852 --> 03:35:17,912
+İşte Lionel Messi, sporla alakalı isimlerini kullandım. Bazı takımların takım isimlerini kullandım. Mesela bilimle ilgili.
+
+981
+03:35:19,059 --> 03:35:47,059
+Bir kampani, şirketler tarzında, iş alanıyla ilgili bir etiketleme yaparken şirketleri kullandım. Ama mesela burada COVID-19 yaşı örnekte, 3. örnekte COVID-19 geçtiği için bunu biraz bilime de yakın hesaplıyor. Yani onu biraz daha bilim ve teknolojiye de yakın hesapladı. Daha mesela diğer örnekte de vermiştim. İşte burada Artificial Intelligence, Yapay Zeka gibi şeyleri de kullanmaya çalıştım.
+
+982
+03:35:47,059 --> 03:35:57,039
+İstim promptları belirlerken. Burada da en son olarak karşılaştırdığımda da iki Bert ve Bart'ın performansını. Bert daha iyi bir sonuç gösterdi.
+
+983
+03:35:57,039 --> 03:36:14,379
+Ama daha iyi sonuç gösterdi. Prompt List ve Prompt List 2'de. Üçüncüde de ikisi de aynı performansı gösterdi. Büyük ihtimalle benim örneklerim arttığında ya prompt liste verdiğim örnekler arttığında performansları belki aynı olmayabilirdi. Benim verdiğim prompt liste göre aynı çıktı.
+
+984
+03:36:15,059 --> 03:36:22,539
+Kullandığım prompt listeler değiştikçe performansları da karşılaştırmaları da büyük ihtimalle değişecektir. Bu şekilde hocam.
+
+985
+03:36:24,000 --> 03:36:31,979
+Peki. Teşekkürler [öğrenci]. Sağ ol. [öğrenci] ile devam edelim. [öğrenci].
+
+986
+03:36:31,979 --> 03:36:34,600
+Evet hocam hemen açıyorum.
+
+987
+03:36:45,459 --> 03:37:10,940
+Ben bu çalışmada duygu durumu analizi için natural, pozitif ve negatif olmak üzere 3 sınıflı tweetler kullandım. 27481 örnekten oluşuyordu bu veri seti. Haber sınıflandırma için de World Sports, Business ve SciTech olmak üzere 4 sınıftan oluşan toplam 7600 örnekli bir haber veri seti kullanıldım.
+
+988
+03:37:11,680 --> 03:37:24,180
+Bert ve Albert'i kullandım model olarak da. Denemeler yapılırken, am is are, was were, and the gibi sık kullanılan daha fazlası da var ama buraya yazmadım.
+
+989
+03:37:24,180 --> 03:37:36,379
+Ve her sınıftaki örneklerde bulunabilecek kelimeleriyle başlayan veya biten sözcük veya sözcük köpeklerini prompt olarak seçmedim.
+
+990
+03:37:37,363 --> 03:37:46,363
+Bir de LL, İNC gibi sözcükleri de içeren kelime sözcük köpeklerini prompt olarak seçmedim.
+
+991
+03:37:47,363 --> 03:37:57,564
+Denemelerin genelinde en sık geçen sözcük ve sözcük köpeklerinin engramlara göre şeyini denedim.
+
+992
+03:37:57,564 --> 03:38:02,603
+İlk başta rastgele promptlar koydum. Yani kendim böyle.
+
+993
+03:38:03,347 --> 03:38:06,307
+Rastgele konutlar denedim ve başarıları bu şekilde oldu.
+
+994
+03:38:11,667 --> 03:38:37,887
+Ondan sonra sadece en yüksek, yani sınıf bazında, işte Vault sınıfındaki en yüksek sıklıktaki kelimeleri prompt olarak seçtim. Aynı şekilde Sports sınıfına ait en yüksek sıklıktaki kelimeleri prompt olarak seçtim. Bu şekilde bütün şeyler de yaptım. Klaslar için yaptım ve başarısı daha düştü rastgele yaptığıma göre.
+
+995
+03:38:39,252 --> 03:39:06,392
+Sonra Stemming'i denedim. Yani mesela burada şeyi görmüştüm. Yarts ile Yart vardı. Bunları aynıymış gibi görsün diye düşündüm. Böylelikle Stemming'i denedim. Albert'te büyük oranda bir başarı artışı olmuş. Duygu sınıflandırma için düşerken Albert'te başarı artışı oluyor.
+
+996
+03:39:08,468 --> 03:39:10,468
+Sonra dedim 2 lang gramlarına bakayım.
+
+997
+03:39:15,572 --> 03:39:29,891
+Ama daha güzel sonuçlar elde ettim nispeten. Böyle olunca acaba işte en gramları arttırınca yani üçlü kelimelere baksam daha mı güzel sonuçlar elde ederim diye düşündüm.
+
+998
+03:39:29,891 --> 03:39:39,612
+Bu sefer ona göre yaptım. Ama ikilen gramlara göre bir düşüş gözlemledim başarılarda.
+
+999
+03:39:41,747 --> 03:39:55,507
+Daha sonra dörtleri denedim. Ama bunu denerken, burada üçlüğü engramlara baktığım zaman hocam, World, Sport, Business ve SizeTech'te mesela hepsinde World kelimesi yer alıyor.
+
+1000
+03:39:56,887 --> 03:40:04,208
+Dedim ki belki bu World kelimeleri dört sınıfta da yer aldığı için doğru bir ayırt edicilik yoktur.
+
+1001
+03:40:09,311 --> 03:40:32,531
+Prompt'ları da almamayı tercih ettim. İkilen gramlara göre karşılaştırma yaptığımda Albert'in başarısı artarken Bert'in başarısı düşmüş. Sonra beşli kelimeleri denedim. Yine Word ile başlayanları prompt olarak kabul etmedim.
+
+1002
+03:40:34,515 --> 03:40:58,536
+İkilen gramlara göre genel bir farklılık bulamamışım. Ama Bert'in haber veriseti üzerinde ciddi bir başarı artışı gözlemlemişiz. İşte 0.54'lerde. Sonra dedim ki değişik sayıda kelimelerden oluşan frontlar olsun. Burada bir başarı düşüşü oldu.
+
+1003
+03:40:59,123 --> 03:41:16,523
+Bert'in başarısı daha düşük oldu. Bir de burada world kelimesini de yasaklamadım. Burada fark ettim. Şöyle bir şey fark ettim. Yards and to, Touchdowns ve Yards and to mesela birbirini içeren iki prompt.
+
+1004
+03:41:25,139 --> 03:41:49,699
+3,6'lı engramlarda deneme yaptım. Bir öncekine göre Albert'in başarı puanları büyük bir artışa sahipken, Bert'in başarı puanlarında değişiklik, çok önemli bir değişiklik görülmemiş. İkilengramlara göre ise genel manada başarı artışı gözlemlenmiş. Burada tabii şunu da yaptım duygu analizi için.
+
+1005
+03:41:50,164 --> 03:42:12,904
+Wish, Want gibi kelimeleri de yasakladım. Şundan dolayı yaptım. Mesela Wish'i burada yaptım. Çünkü 3 tane prompt da, pozitif sıfır, 3 tane prompt da içiriyordu. Hani 3'üne de yakın olur diye düşündüm yani benzer kelimeler. Dolayısıyla bir tanesi yeter diye iki tanesi en azından farklı olsun.
+
+1006
+03:42:14,100 --> 03:42:24,420
+Amacıyla böyle bir şey yaptım ve başarısı arttı. Sonra 4.12 gangramını denedim.
+
+1007
+03:42:27,891 --> 03:42:36,572
+Yine burada da bir prompt diğer promptun içerisinde bulunmasın, yani içermesin diye ayarlama yaptım.
+
+1008
+03:42:36,572 --> 03:42:52,572
+Ve Albert'in başarısı azalırken Bert'in başarısı artmış. En sonunda da diğer örnekleri, diğer denemelerime bakarak acaba hangi promptlar olur diye bir...
+
+1009
+03:42:53,523 --> 03:43:03,563
+Kendim prompt seçtim, manuel olarak. Ama başarıları nispeten daha düşük çıktı. Yani bu kadar.
+
+1010
+03:43:05,843 --> 03:43:08,043
+Peki, teşekkürler [öğrenci].
+
+1011
+03:43:12,543 --> 03:43:13,543
+[öğrenci].
+
+1012
+03:43:17,907 --> 03:43:18,907
+Evet, o John.
+
+1013
+03:43:18,907 --> 03:43:19,907
+Bu da şöro.
+
+1014
+03:43:29,012 --> 03:43:30,051
+Ekranım geldi mi?
+
+1015
+03:43:30,952 --> 03:43:31,492
+Geldi.
+
+1016
+03:44:04,244 --> 03:44:11,244
+ve BERT-Beyes ve V-trained modelleri.
+
+1017
+03:44:11,244 --> 03:44:23,244
+I couldn't run all the datasets, so I had to sample 500 samples from each class.
+
+1018
+03:44:32,115 --> 03:44:57,164
+Bu modelde de bu ve
+
+1019
+03:44:57,523 --> 03:45:00,523
+...each ...sentence.
+
+1020
+03:45:00,523 --> 03:45:04,523
+Eks. If we have a word like terribly, ...
+
+1021
+03:45:04,523 --> 03:45:08,523
+... my code changes that to terrible.
+
+1022
+03:45:08,523 --> 03:45:14,523
+I want to work with the root word, and I will explain why I did this.
+
+1023
+03:45:14,523 --> 03:45:18,523
+And I also removed some English stop words.
+
+1024
+03:45:18,523 --> 03:45:22,523
+So, the steaming ...
+
+1025
+03:45:22,523 --> 03:45:24,523
+I used the steaming ...
+
+1026
+03:45:24,639 --> 03:45:44,907
+Bu, bu
+
+1027
+03:45:46,227 --> 03:46:04,459
+İkincisi, birçok birçok
+
+1028
+03:46:04,628 --> 03:46:06,628
+Bu filmin'in sonrasında,
+
+1029
+03:46:06,628 --> 03:46:08,628
+bu filmin'in sonrasında,
+
+1030
+03:46:08,628 --> 03:46:10,628
+ilerleyen birçok bir şey
+
+1031
+03:46:10,628 --> 03:46:12,628
+daha sonra,
+
+1032
+03:46:12,628 --> 03:46:14,347
+bu sözlerle
+
+1033
+03:46:14,772 --> 03:46:42,028
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+1034
+03:46:42,644 --> 03:46:50,963
+İlk başlayarak da, benzeri bir kılıklarım var.
+
+1035
+03:47:27,824 --> 03:47:32,984
+So, total, my predicted label had 0.47%
+
+1036
+03:47:32,984 --> 03:47:36,824
+for this world-led class.
+
+1037
+03:47:37,824 --> 03:47:40,184
+Similarly, we can see for sports,
+
+1038
+03:47:40,184 --> 03:47:43,184
+the best performing prompts are prompt number 2
+
+1039
+03:47:43,184 --> 03:47:45,384
+and prompt number 1
+
+1040
+03:47:45,384 --> 03:47:48,824
+which gave me like around 0.6%
+
+1041
+03:47:50,824 --> 03:47:53,623
+success accuracy.
+
+1042
+03:47:53,647 --> 03:47:58,367
+Bu business'in birçok birçok birçok birçok, 0.7.
+
+1043
+03:47:58,807 --> 03:48:02,447
+Bu çok çok farklı, farklı birçokok,
+
+1044
+03:48:02,447 --> 03:48:04,967
+bu birçokok, bu birçokok, bu birçokok.
+
+1045
+03:48:04,967 --> 03:48:09,967
+Bu birçokok, bu birçokok, bu birçokok.
+
+1046
+03:48:09,967 --> 03:48:12,967
+Bu birçok, bu birçokok,
+
+1047
+03:48:12,967 --> 03:48:16,007
+çünkü bu birçokok, bu birçokok, bu birçokok,
+
+1048
+03:48:16,007 --> 03:48:18,087
+değil mi?
+
+1049
+03:48:18,879 --> 03:48:28,779
+Bu, aynı token olarak Excel NAT, birçok birçok birçok birçok birçok.
+
+1050
+03:48:29,236 --> 03:48:56,811
+Bu, bu
+
+1051
+03:48:57,012 --> 03:49:10,988
+Birt olarak, Birt olarak bu konuda bu konuda bu konuda 0.4, 0.6, 0.7, 0.4
+
+1052
+03:49:11,188 --> 03:49:27,987
+Bu, ExcelNet generally performt under 0.45, 0.5. That's the best it could get. And it really performed badly under the science classification for some reason.
+
+1053
+03:49:30,128 --> 03:49:34,227
+For the IMDB data sets and sentiment analysis,
+
+1054
+03:49:37,683 --> 03:49:47,583
+Bu birçok bir soru. Çünkü BERT, BERT'i birçok bir soru.
+
+1055
+03:49:47,583 --> 03:49:56,503
+BERT'i bir soru.
+
+1056
+03:49:56,503 --> 03:50:01,503
+Bu bir soru.
+
+1057
+03:50:01,503 --> 03:50:05,675
+BERT'i bir soru.
+
+1058
+03:50:06,868 --> 03:50:11,368
+Bu çok çok interesting.
+
+1059
+03:50:11,368 --> 03:50:13,868
+Çünkü bu modelde de
+
+1060
+03:50:13,868 --> 03:50:16,868
+bu modelde
+
+1061
+03:50:16,868 --> 03:50:19,868
+bahsettiğim gibi
+
+1062
+03:50:19,868 --> 03:50:21,868
+bu modelde de
+
+1063
+03:50:21,868 --> 03:50:23,868
+kullanılabilirsiniz
+
+1064
+03:50:23,868 --> 03:50:25,868
+ve
+
+1065
+03:50:25,868 --> 03:50:27,868
+bu modelde
+
+1066
+03:50:27,868 --> 03:50:29,868
+ve
+
+1067
+03:50:29,868 --> 03:50:30,123
+bu modelde
+
+1068
+03:50:30,260 --> 03:50:36,380
+Bu nedenle, bu nedenle, ne kadar çok iyi bir şey var.
+
+1069
+03:50:52,308 --> 03:51:12,012
+Mühendisliği, bu filmlerden bir filmlerden bir şeye bakıyor. Bu, bu bir şeye bakıyor. Bu, bu şeye bakıyor.
+
+1070
+03:51:12,051 --> 03:51:37,412
+Models need to be fine-tuned to give better results because they can't really separate what's positive and what's negative. The overall F1 score can be for BERT I think it's okay for this prompt 0.5 with accuracy of 0.5. While for Excel net 0.3 all the way.
+
+1071
+03:52:01,631 --> 03:52:13,631
+Atağgory works better than just relying on one prompt. So, increasing the number of prompts might help our zero-shot classification.
+
+1072
+03:52:13,631 --> 03:52:27,631
+And the second takeaway is, like I said, performance of models can be improved by fine-tuning them for these specific tasks.
+
+1073
+03:52:59,028 --> 03:52:59,827
+Harika bir çün.
+
+1074
+03:53:03,283 --> 03:53:11,643
+[öğrenci].
+
+1075
+03:53:13,963 --> 03:53:15,804
+Merhabalar. Geliyoruz şimdi değil mi?
+
+1076
+03:53:16,183 --> 03:53:17,143
+Geliyor gayet iyi.
+
+1077
+03:53:17,143 --> 03:53:19,203
+Dur, kameramı açayım.
+
+1078
+03:53:19,384 --> 03:53:20,963
+Hem de şunu açacağım.
+
+1079
+03:53:23,963 --> 03:53:26,083
+Şimdi de paylaşayım.
+
+1080
+03:53:28,723 --> 03:53:30,043
+Şöyle bir saniye.
+
+1081
+03:53:31,891 --> 03:53:36,612
+Geldi mi? Evet, geldi.
+
+1082
+03:53:37,112 --> 03:53:41,852
+Tamamdır. Ben ilk giriş kısmına hızlıca geçeyim.
+
+1083
+03:53:43,700 --> 03:54:09,299
+İki konu için iki farklı veri hükümet üzerinde çalıştım ben de burada. Haber sınıflandırma tarafında büyük bir veri hükümeti vardı. Interpress Veri Hükümeti oldukça popüler bir haber veri hükümeti. Ama ben buradan sadece 5 bin örneklem üzerinde çalışmayı gerçekleştirdim. Bu örneklem alırken de Statified Sampling yaptım. Yine buradaki 10 tane kategori üzerinden.
+
+1084
+03:54:11,123 --> 03:54:35,564
+Buradaki çalışmada biraz da replikasyon yapmış gibi oldu aslında paylaştığımız makalya üzerinden. Buradaki ilk replikasyon yaptığım şey ConvertBertBaseTurkisi vardı. O NLI modeli vardı. Bu model üzerinde çalışmalar gerçekleşti. 5 farklı prompt belirledim.
+
+1085
+03:54:39,123 --> 03:54:57,003
+Görünüyor sanırım. Evet. Şu şekilde. Beş farklı prolet belirledim. Bunun ilk üçü şeyden geliyor. Yine çalışmadan geliyor. Akademik çalışmadan ama sonraki ikisini ben biraz daha cümleleri değiştirerek performanslarını elde etmeye çalıştım.
+
+1086
+03:54:58,384 --> 03:55:06,003
+Buradaki en yüksek performansı şeyle karşılaştığımda, F1 skorlarına baktığımda benim sonradan eklediğim...
+
+1087
+03:55:16,992 --> 03:55:31,371
+Fakaldeki prompt'la benziyor ama Eqrish'e baktığımızda Eqrish'e bir tık daha yüksek gözlemledim buradaki çalışmada. Bunun üzerine tabii farklı bu tarz prompt'larla da burası genişletilebilir.
+
+1088
+03:55:34,675 --> 03:55:54,956
+Direkt bu promplar üzerindeki skorları elde etmiştim. Yani şey detayına inmemiş. On farklı sınıf için farklı promplar detayına inmemiştim. Bu arada buraya eklememiştim ama şey de söyleyeyim. Bu en iyi promptaki sınıflar bazındaki performans nasıl? Biraz oradaki F1 skorlardan bahsedeyim.
+
+1089
+03:56:02,675 --> 03:56:11,675
+Şeydi, buradaki sınıflar içerisinde oldukça fazla ağırlıklardı ama ona rağmen belki de kültür sanat şeyi...
+
+1090
+03:56:12,788 --> 03:56:32,268
+Tam böyle, oradaki prompt tam onu karşılamadığı için F1 skora çok düşük geldi. Yüzde 0.09. Yine aynı şekilde eğitim de aynı şekilde 0.03 şeklinde. Ama sağlıkta özellikle yüzde 83 gibi bir F1 skora elde ettim. Biraz daha bunun ağırlığı, şeylerin arasındaki ağırlığı daha az ama sağlık şeyinden.
+
+1091
+03:56:33,363 --> 03:56:49,103
+Kategoriler bazındaki sorular da böyle. Diğer bir veri kimisi de bir önceki ödevi de kullandım.
+
+1092
+03:56:50,384 --> 03:57:01,443
+Türkçe tweetler veri seti. Burada yine 4 bin tane tweet var ve bunun içerisindeki etiketler kızgın, korku, mutlu, sürpriz ve üzgün şeklinde farklı etiketler.
+
+1093
+03:57:05,012 --> 03:57:28,692
+Çalışmadan farklı olarak, makaledeki çalışmadan farklı olarak MDBARTA modelini kullandım. Bu çok dilli bir yapı. Bu da Microsoft'ın gerçekleştiği CC100 çok dilli verik yönesi üzerinde ettiği bir şey, algoritma. Bunu biraz bu çalışmada uygulamış oldum. Yine burada da 5 farklı prompt üzerinde çalıştım.
+
+1094
+03:57:32,208 --> 03:57:36,968
+Sonradan eklediğim dördüncü promptta oldukça yüksek skorlar elde ettim.
+
+1095
+03:57:37,308 --> 03:57:48,528
+Buradaki şeylere baktığımızda bu çalışmanın dördüncü promptun kategori bazındaki skorlarına baktığımızda hemen onu da paylaşayım sizinle.
+
+1096
+03:57:50,260 --> 03:58:02,060
+Aynen. F1 skorları sürpriz kısmında %70. En yüksek şey F1 skoru mutlu kısmında gelmiş. Yine korku kısmında mesela %65 F1 skoru elde ettim.
+
+1097
+03:58:02,060 --> 03:58:10,780
+Bu şekilde. Eccuracy olarak da macro average ve west average F1 skorları olarak da diğer promp'lara göre oldukça iyi.
+
+1098
+03:58:18,260 --> 03:58:42,260
+çalışmaları gerçekleşirken makaledeki arayüz oldukça kolaylaştırdığı işleri buradaki modeller uygulamayı. Ama bunun yanında yetersiz kaldığı yerler de vardı. Özellikle ek çalışmalarlarla kurguladığım Google'ın modeli daha büyük bir model. Belki biraz daha iyi sonuçlar verebilir. Bunun üzerinde çalışma planları daha şey olarak...
+
+1099
+03:58:42,739 --> 03:58:51,719
+Yine program pencere kısmında biraz daha detaylı, belki farklı araçlardan yararlanabilirim ileriki çalışma olarak.
+
+1100
+03:58:52,736 --> 03:59:12,615
+Çok farklı araç burada open source ve ücret olarak geliştirildi. Open source olanları göz atmayı planlıyorum. Belki burada tip frontları yaratırken bir katkısı da olabilir. Tıpkı GPT'nin veya diğer yaklaşımlarının olduğu gibi. Genel olarak benim en sürü ilgilerim de burada.
+
+1101
+03:59:12,615 --> 03:59:15,176
+Sorusu olan varsa.
+
+1102
+03:59:15,731 --> 03:59:22,731
+Çok teşekkürler. Çok teşekkürler [öğrenci]. Özellikle çalışmak için.
+
+1103
+03:59:26,832 --> 03:59:32,432
+[öğrenci]. Bir de şeyi söyleyeyim. [öğrenci]'ın haricinde sunum yapmamış olan var mı arkadaşlar?
+
+1104
+03:59:35,551 --> 03:59:41,371
+Herkes yaptı herhalde değil mi? Tamam. Peki. [öğrenci] seni dinliyoruz.
+
+1105
+03:59:51,476 --> 03:59:52,236
+[öğrenci]?
+
+1106
+04:00:00,000 --> 04:00:01,059
+[öğrenci] burada mısın?
+
+1107
+04:00:11,347 --> 04:00:14,847
+Bu da gözüküyor ama… Benim sesimi alıyorsunuz değil mi arkadaşlar?
+
+1108
+04:00:18,847 --> 04:00:19,847
+Evet.
+
+1109
+04:00:20,647 --> 04:00:21,847
+Yardıklar mı geliyor?
+
+1110
+04:00:24,347 --> 04:00:26,847
+[öğrenci]'ın sesini alamıyoruz ama…
+
+1111
+04:00:26,847 --> 04:00:27,847
+Peki.
+
+1112
+04:00:27,847 --> 04:00:28,847
+Yok.
+
+1113
+04:00:29,847 --> 04:00:30,847
+Peki, sağ ol.
+
+1114
+04:00:34,388 --> 04:00:44,048
+Peki arkadaşlar, bize çok teşekkür ediyorum. Biraz uzun sürdü bugünkü dersimiz ama faydalı olmuştur diye ümit ediyorum birbirinin yaptıklarımızı da görmeniz.
+
+1115
+04:00:45,108 --> 04:00:55,308
+Peki o zaman haftaya görüşmek üzere diyorum. Belki projelerinizle falan alakalı bir şeyler sayfaya koyarım, yani sayfaya derken...
+
+1116
+04:00:56,628 --> 04:01:17,308
+OBS'ye koyarım. Zaten bir şey koyduğum zaman size haber gelir. Yani önden bir şeyler görmek isterseniz görürsünüz. Ben dediğim gibi önden bir şey koyarsam yine haberdar ederim sizleri. Peki arkadaşlar, ödev 3 ve projelerle alakalı. Peki o zaman arkadaşlar, herkese katıldığı için çok teşekkürler. Görüşmek üzere, iyi günler.
+
+1117
+04:01:17,308 --> 04:01:18,088
+Teşekkürler hocam.

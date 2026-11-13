@@ -1,0 +1,2115 @@
+1
+00:13:28,851 --> 00:13:47,651
+Arkadaşlar, inşallah hepiniz maili almışsınızdır ve bugün okula giden, okulda emeğim, üniversiteye giden hiç kimse olmaz. Herkes yerinde mi yoksa açıp kalktınız mı?
+
+2
+00:13:53,139 --> 00:14:13,179
+[kişisel bilgi]
+
+3
+00:14:13,844 --> 00:14:28,044
+[kişisel bilgi]
+
+4
+00:14:28,532 --> 00:14:51,892
+[kişisel bilgi]
+
+5
+00:14:56,532 --> 00:15:11,492
+Başlamak istiyorum. Bazen ekranı ressem de açılmıyor. Eğer öyle bir şey olursa bana haber verin. Bir dakika önce bir açacağım şeyi de bulsam da.
+
+6
+00:15:22,836 --> 00:15:32,395
+Şu an ekranda gördüğünüz slide'ın kendisi olabilir mi? Biriniz cevap verirse sevinirim. Çünkü şu an chat gitti.
+
+7
+00:15:32,395 --> 00:15:38,716
+Bu full screen'e geçince. Slide'ı görebiliyor musunuz?
+
+8
+00:15:40,796 --> 00:15:41,336
+Evet, evet.
+
+9
+00:15:41,916 --> 00:15:48,336
+Tamam, teşekkür ederim. Biraz sesim kısık mı geliyor? Bir mikrofonu da kontrol edeyim.
+
+10
+00:15:50,548 --> 00:15:59,847
+Sıkıştırma geçince her şey burada doldu. Sesimi rahat duyabiliyor musunuz? Son bir kez.
+
+11
+00:16:03,635 --> 00:16:05,096
+Sesin rahatlıkla duyuluyor mu?
+
+12
+00:16:09,364 --> 00:16:10,044
+Duyuluyor hocam.
+
+13
+00:16:10,264 --> 00:16:22,923
+Tamam, peki. Şimdi bugün sözlük tabanlı yöntemlere başlıyoruz. Önce şöyle bir özet yapalım. Bir önce biz neleri gördük, şimdi göreceğimiz yöntemin bir öncekilere göre farkı nedir?
+
+14
+00:16:22,923 --> 00:16:36,923
+Şimdi bundan önce hep gördüklerimiz olasılık tabanlı sıkıştırma yöntemleriydi. Yani verinin istatistiğini kullanıyorduk. Verinin istatistiği nedir peki? İşte olasılık değerlerini çıkarılmaktadır.
+
+15
+00:16:37,364 --> 00:16:54,484
+Bu modeli ne kadar iyi oturtursam sıkıştırmanın verimi de o kadar artıyordu. Sözlük tabanlı yöntemlerde ise statistiksel modeller kullanılmıyor. Yani hiçbir zaman bir sembolün ya da karakterin olasılığını kullanmayacağım.
+
+16
+00:17:05,364 --> 00:17:07,364
+Sağol deyenler ya da...
+
+17
+00:17:08,064 --> 00:17:36,064
+Değişkin uzunluklu, sabit uzunluklu kodlar da kullanılmayacak. Peki neler kullanılacak? Sözlükler. Peki bu sözlükler acaba benim bildiğim işte TDK'nın sözlükleri gibi anlamlı halleri yazılmış olan kelimelerden mi oluşacak? Hayır. Öyle de değil. Sözlük ama bu sözlükler olabilecek en uzun patronları tutabilen sözlükler olacak ve biz bunlara da...
+
+18
+00:17:36,064 --> 00:17:48,903
+Buradan klimimi de yine alayım. Biz bunlara topkun adını vereceğiz. İlk başlarda belki örnek olsun diye bildiğiniz sözlük kullanan yöntemler olabilecek.
+
+19
+00:17:49,104 --> 00:17:59,604
+Ama bu sözlük kullanan yöntemler deyince de kelime kelimenin alnımı falan değil. Asıl yazım kılavuzunda sadece kelimelerin kendisi bulunur. Bunlar yer alabilir.
+
+20
+00:18:04,064 --> 00:18:31,604
+Öniversitenlerin statik veya dinamik olanları var. Ne demek? Benim bir sözlüğüm vardır, statiktir. Hiçbir zaman bu sözlüğe yeni bir patron ekleyemem ya da buradan patron silemem. Ama sözlüklerim dinamik olursa sözlüğümün hafızası dolduğunda, yani ona ayırdığım alan dolduğunda daha az kullanılan patronları silebilir. Oraya yeni patronlar ekleyebilirim. Bana böyle bir dinamiklik sağlıyor.
+
+21
+00:18:32,339 --> 00:18:49,339
+Dinamik sözlükteki amaç, input stream'de daha önce bulunmuş olan stringler. Dinamik sözlüğün amacı benim bir input streamim var. Burası input stream olsun. Bir tane de sözlük alanım var. Burası da sözlük alanım olsun.
+
+22
+00:18:49,339 --> 00:19:00,339
+Bu input stream'deki patronları, patron diyorum yani illa bu sözlükte anlamlı bir kelimenin olması gerekmiyor. İki karakter, bir karakter, üç karakter.
+
+23
+00:19:00,339 --> 00:19:07,219
+7 karakter, belki 10 karakterden oluşan anlamlı ya da anlamsız patternlar olabilir.
+
+24
+00:19:07,939 --> 00:19:13,159
+Buradaki işlenmemiş veri, burası işlenerek sözlüğe atılmış veri.
+
+25
+00:19:13,159 --> 00:19:18,719
+Ben buradaki veriyi bu sözlük alanının içerisinde aramaya çalışacağım. Var mı yok mu?
+
+26
+00:19:19,079 --> 00:19:23,299
+Yöntemden yönteme de bunlarda değişiklikler karşımıza gelecek.
+
+27
+00:19:25,811 --> 00:19:39,751
+Sözlük yöntemleri statik yöntemler ve dinamik yöntemler diye ayrılır dedik. En basit statik yöntem İngilizce dokümanları sıkıştırmak için kullanılan İngilizce diline ait sözlüktür.
+
+28
+00:19:39,751 --> 00:19:53,031
+Bildiğimiz gibi İngilizce sonundan eklemeli bir dil değildir. Yani sonuna almış olduğu ekler belki ion, tion gibi kelimeler ya da s takısı, ing, ed gibi.
+
+29
+00:19:53,811 --> 00:20:03,811
+gerçekten kaynaklı olan eklerdir. Bizim Türkçe gibi değil. Yani Türkçe'de ben bir kelimeye onlarca ek getirerek farklı anlamlar ifade edebilirim.
+
+30
+00:20:03,811 --> 00:20:08,431
+Böyle bir sözlük oluşturmaya kalksam yüzbinlerce...
+
+31
+00:20:08,432 --> 00:20:31,392
+Şeyim olacak, sözlükte pattern'ım olacak. O yüzden Türkçe için uygun değildir. İngilizce için bir statik sözlük oluşturulmuş. Bunun içerisinde de yarım milyon kelime var. Input stream'den bir kelimeyi okuyor, bu sözlükte arıyor. Eğer bu sözlükte bu kelime varsa sözlükteki sırasını output stream'e yazıyor.
+
+32
+00:20:36,432 --> 00:21:04,012
+Sözlük işte diyor ki 121. sırada bu kelime var. Output Stream'e 121 yazıyor. Her iki tarafta da aynı sözlük olduğu için 121'in karşılığına hangi kelimenin geldiğini karşı tarafta anlıyor. Bunu bir örnekle gösterelim. Eğer sözlükte de kelime yoksa, kelime sözlükte yoksa ne yapacağım? O zaman kelimeyi olduğu gibi ASKE kodlarıyla Output Stream'e yazacağım.
+
+33
+00:21:04,432 --> 00:21:11,291
+Öyleyse benim şöyle bir problemim var. Yazmış olduğum, alt kutustur ve göndermiş olduğum bilgi...
+
+34
+00:21:11,291 --> 00:21:12,092
+Pardon, hocam.
+
+35
+00:21:12,632 --> 00:21:13,092
+Efendim?
+
+36
+00:21:13,951 --> 00:21:15,991
+İlk sayfa görüyorum sadece.
+
+37
+00:21:16,771 --> 00:21:25,572
+Okey. O zaman ben bunu yine başaramadım demektir. Diğerleri öyle mi görüyor? Niye seslerini çıkarmadı?
+
+38
+00:21:25,572 --> 00:21:30,572
+Hadi bakalım. Şimdi buna screen dediğimde...
+
+39
+00:21:31,859 --> 00:21:42,079
+Screen Share diyeceğim. Şu an yani statik sözlük diye başlayan bir kelime var mı? Tamam, tamam.
+
+40
+00:21:42,079 --> 00:21:53,519
+Tamam, tamam. Okey. O zaman şunları anlatmaya çalıştım. Elimde benim bir sözlüğüm var. Bu sözlüğe o dildeki belirli kelimeleri yazıyorum.
+
+41
+00:21:53,935 --> 00:22:03,395
+Eğer input stream'den gelen bir kelime bu sözlükte varsa bu sözlüğün indeks numarasını veriyorum. Yoksa olduğu gibi yazıyorum.
+
+42
+00:22:04,015 --> 00:22:14,795
+Öyleyse benim karşıma şöyle bir problem çıkıyor. Output stream ile okuduğum hangi kelimeler, pattern'lar indeks numarasına karşılık geliyor?
+
+43
+00:22:14,795 --> 00:22:20,455
+Hangileri olduğu gibi kodlanmış? Bunu bulmam lazım. Bu önemli bir şey.
+
+44
+00:22:21,935 --> 00:22:38,555
+Sözlükte nerede yazdık? Yarım milyon tane kelimemiz olsun dedik. Yarım milyon, işte bu 524.288 kelime, yarım milyondan biraz fazla 500.000'den. Bu sayıyı da 19 bitle kodlayabilirim.
+
+45
+00:22:38,555 --> 00:22:49,935
+O zaman bu kadar kelimeyi 19 bitle kodluyorsam, benim sözlüğümün indeksleri 19 bitlik olacak. Bu 19 bit de birden...
+
+46
+00:22:49,935 --> 00:23:17,935
+İndeks numaraları yazacak. Eğer kelimem sözlükte varsa bu 19 bitli indeks numarasını yazacak. Sözlükte yoksa ham kelimeyi olduğu gibi yazacak. Peki indeks numarasını mı yazdı, ham kelimeyi mi yazdı bunu nasıl anlayacak? Bunun için de ekstra bir bit kullanacağım.
+
+47
+00:23:17,935 --> 00:23:44,555
+İşte bu ekranda da bunu kullanıyorum. Eğer benim sözlüğümde 500 bin tane kelime varsa, ben bunu 19 bitle indeksini kodluyordum. 20 bitlik bir yer ayırıyorum. Diyorum ki, bunun sol tarafındaki bir tane bit, bir bit. Eğer sıfırsa bu bitin değeri, buradan sonra okuyacağın 20 tane bit sözlükteki indeks sırasını verecek.
+
+48
+00:23:45,935 --> 00:23:53,935
+Buradaki bit sıfır değil birse, burada olduğu gibi birse bu...
+
+49
+00:23:55,316 --> 00:24:21,576
+Bir byte'lık buna yer ayırdım. Bir byte'ın bir bitini flek için kullandım. Yedi tane bitini de o kelimem kaç tane karakterden oluşuyor onu yazdım. Ondan sonra da karakterlerimin her biri bir byte'a geldi. Buraya neden 48 tane bit dedik? Örnekle diyor ki senin sözlükteki kelimelerin maksimum beş karakter uzunlukta olacak.
+
+50
+00:24:23,316 --> 00:24:27,976
+Yaklaşık daha uzunluğunda da olsa o zaman burada 9 tane byte olacaktı.
+
+51
+00:24:28,376 --> 00:24:38,956
+Şimdi yeniden şöyle bir örnek veriyorum. Bana diyor ki senin elinde 500 bine yakın kelime var. Bu kelimelerin de maksimum uzunluğu 5.
+
+52
+00:24:38,956 --> 00:24:49,436
+Bu kelimelerin sözlük içinde olanların indislerini yazacağım. Bu indislerde 500 bin tane sayıyı yazmak için 19 bit kullanılıyordu.
+
+53
+00:24:49,940 --> 00:24:59,579
+Eğer bu kelime sözlükte yoksa, o kelimenin kaç karakterden oluştuğunu yaz, arkasına da karakterlerin kendisini koy.
+
+54
+00:24:59,960 --> 00:25:07,600
+Mesela okul diye kelimem olsun, sözlükte diyelim ki okul yok, ben bunun birinci bitine bir diyeceğim.
+
+55
+00:25:07,600 --> 00:25:17,440
+Bu kelime sözlükte yok demektir, bundan sonraki yedi tane biti oku. Bu yedi tane bitin içinde de dört göreceğim. Anlamı da şu.
+
+56
+00:25:17,940 --> 00:25:30,000
+Okuyacağın kelime dört karakterden oluşuyor. Birinci byte'a okulu yazdım. İkinci byte'a işte K'yı, üçüncü byte'a U'yu, dördüncü byte'a L'yi yazdım.
+
+57
+00:25:30,000 --> 00:25:40,920
+Buraya herhangi bir şey yazarım ya da yazmam. Buradan zaten kaç tane byte okuyacağımı bana söylüyor. Ama soru da hepsi maksimum beş uzunluğunda olsun diyor.
+
+58
+00:25:45,940 --> 00:26:00,000
+Önündeki bir bir, sol taraftaki bir bitti sıfırsa diyorum ki sıfırsa buradan on dokuz tane bitti oku. Bu sayı neyse git bu sözlükte de o satıra o satırdaki kelimeyi oku diyoruz.
+
+59
+00:26:00,000 --> 00:26:10,440
+Bunun üzerine bize şöyle bir soru sorulsak. Elinizde bir sözlüğünüz var. Bu sözlüğünüzde beş karakter uzunluğunda kelimeler var.
+
+60
+00:26:13,748 --> 00:26:19,648
+Kelimelerin kaç tanesi olsun ki bir sıkıştırmadan bahsedilebilsin?
+
+61
+00:26:19,648 --> 00:26:22,648
+Yani benim sözlüğümde...
+
+62
+00:26:22,648 --> 00:26:25,228
+Benim sözlüğümde...
+
+63
+00:26:25,652 --> 00:26:34,092
+Bu beş tane karakterli kelimelerden yüzde ne kadar sözlükte olsun ki ben bir sıkıştırmadan bahsedeyim.
+
+64
+00:26:34,092 --> 00:26:42,092
+Bu problemi nasıl çözebiliriz? Şöyle çözebiliriz. Eğer elimdeki kelimelerin sözlükte olma olasılığı P'se,
+
+65
+00:26:43,443 --> 00:26:54,963
+P olasılıklısı sözlükte var. Sözlükteki kelimelerin hepsi beş karakter uzunluğunda. Her bir karakteri byte'te tutuyorum. Sekizle çarpsam kırk eder.
+
+66
+00:26:57,463 --> 00:27:09,543
+Kırk edecek. Şimdi sözlükte eğer yoksa, sözlükte yoksa kelime, eksi diyeyim buna, sözlükte kelime varsa
+
+67
+00:27:10,420 --> 00:27:28,619
+Bu da sözlükte kelime varsa buna da artı değil. Eğer sözlükte kelime varsa ben kaç bit harcıyordum? 20 bit. 19 biti indeks numarasını veriyordum. Soldaki bir bit de bunun sözlükten mi yoksa indeks numarasından mı okunduğunu gösteriyordum.
+
+68
+00:27:35,731 --> 00:27:45,451
+5 kere 8'e 40 diyordum. Bir de ilk başta 8 bitlik bir alan vardı. Bunun bir bitti sözlükte olup olmadığını gösteriyor.
+
+69
+00:27:45,451 --> 00:27:57,592
+7 bitine de bu kelimenin kaç tane karakterden oluştuğunu yazıyordum. O zaman sözlükte yoksa 48 bit kullanıyorum. Sözlükte varsa 20 bit kullanıyorum.
+
+70
+00:28:01,332 --> 00:28:09,392
+Olan bir kelimeyi 20 bit ile kullanıyorsam ve sözlükte bir kelimenin bulunma olasılığı P ise 20'yi P ile çarptım.
+
+71
+00:28:09,392 --> 00:28:18,572
+Sözlükte bulunmanın olasılığı eğer P ise sözlükte bulunmamanın olasılığı da nedir? 1-P'dir.
+
+72
+00:28:19,316 --> 00:28:41,655
+1-P'nin olasılığını da kaç bitle kodluyorum? 48 bitle kodluyorum. Elimde de n tane sembol var. Bunu neye eşitliyorum? Elimde n tane sembol var. Bunların her birini ASCII olarak kodlasaydım. Her bir kelime 5 karakterden oluşuyor. 8 ile çarptım 40.
+
+73
+00:28:42,132 --> 00:29:02,112
+Böyle bir eşitlik çıkacaktı karşıma. Enler birbirini götürsün. Burada 20p var. 48-48p. Buradan 28p çıkar. Bu 48p'nin yanına 40 giderse 8 kalır. 28p eşittir 8. P 0, 29.
+
+74
+00:29:02,112 --> 00:29:10,052
+O zaman ben diyeceğim ki elimde en tane kelimenin %29'u çünkü p'yeni buldum.
+
+75
+00:29:10,132 --> 00:29:28,932
+%29'u. En az %29'u sözlükte varsa ucu ucuna bir sıkıştırma yaparım. Eğer sözlükte bulunan kelime sayısı %29'u aşarsa, 30-35 tane olursa bir sıkıştırmadan bahsedebiliriz diyebiliriz.
+
+76
+00:29:29,296 --> 00:29:56,756
+Bu statik sözlüğe örnek. Tercih edilen bir yöntem mi? Hayır, tercih edilen bir yöntem değil. Sadece özel bir durumun varsa, yani senin elinde belirli bir alanda sıkıştırma yapıyorsun, o alanda kullanılan kelimeler, literatür, belirli sayıda kelimeden oluşuyor. Elindeki doküman belirli sayıda kelimeden oluşuyor. O zaman bu yöntemi kullanır, hiç diğerleriyle uğraşmayabilirsin.
+
+77
+00:29:57,296 --> 00:30:01,876
+Ama diğer yöntemler, daha iyi sonuçlar bize verecektir.
+
+78
+00:30:02,836 --> 00:30:06,296
+Peki, şimdi dinamiğe geçmeden evvel...
+
+79
+00:30:06,804 --> 00:30:21,624
+Dedik ki biz bu sözlüklerde pattern'lar tutacağız. Yani bu pattern'lar illa anlamlı kelimeler olmak zorunda değil. İki karakterden, üç karakterden, dört karakterden hatta bir karakterden bile oluşabilir.
+
+80
+00:30:21,624 --> 00:30:32,884
+Şimdi bunların bize nasıl bir yararı olacak? Onu şu örnekle göstermek istiyorum. String Sıkıştırma diye bir tane şeyimiz var, konu başlığımız var.
+
+81
+00:30:34,804 --> 00:30:53,064
+Bu sözlükte yer alacak sembolümüzün bizim tek karakterden oluştuğunu kabul edelim. Elimde iki tane sembolüm var. Bir tanesi A1, olasılığı 08, diğeri de A2, olasılığı 02. İki sembollü bir alfaben var.
+
+82
+00:30:53,619 --> 00:31:17,799
+Peki, bunun ortalama olasılığı nedir? Olasılıklar toplamı bir. İki tane sembolüm varsa biri ikiye böldü. Ortalama olasılığım ne oldu? 0.5. Peki, varyansı nedir? İki sembolden oluşan, iki tane harften oluşan bir alfabeyle neler yazabilirim ben?
+
+83
+00:31:18,259 --> 00:31:37,139
+İki karakterli semboller yazabilirim. Öyleyse bunun varyansını hesaplayalım bu kodu. Varyansı ne olur? Varyansı her bir sembolün olasılığından ortalama olasılık değerini çıkarıyorum, mutlak değerce farklarını alıyorum ve bunları topluyorum.
+
+84
+00:31:37,619 --> 00:32:05,619
+Ortalama olasılık değerim 0.5 ise 0.8-0.5 artı 0.2-0.5 varyansım da 0.6. Varyansım küçük ya da büyük olması neydi? Varyans eğer büyük olursa kodlayacağım semboller arasındaki bitler oldukça farklı olacaktı. Biri iki bitli olabilir, bir tanesi on bitli olabilir. Varyans eğer küçükse...
+
+85
+00:32:05,619 --> 00:32:33,599
+Sambollerin olasılık değerleri, yani bit değerleri birbirine yakın. İşte 3 bitli, 4 bitli, 5 bitli birbirlerine yakındı. Bunlar da neye sebebiyet veriyordu dinamik kodlamalarda? Buffer alanının küçük ya da büyük olmasına. Eğer varyans çok büyükse buffer alanını büyük tutuyorduk ki diğer taraf çözene kadar öteki tarafta gönderiyorsa veriler kaybolmasın, buffer alanında dursun.
+
+86
+00:32:33,619 --> 00:32:47,379
+Peki, varyansının 0.6 olması bana aslında ne diyor? Sen diyor bu iki tane sembolü bir bitle kodlayabilirsin diyor.
+
+87
+00:32:49,619 --> 00:33:03,819
+Maksimum, minimum bir bitle kodlayabilirim. Çünkü 0,6 bit diye bir şey olmaz. Bu mutlaka yukarı yuvarlanacak. Ya bir bit ya da birden daha fazla bitle kodlayacağım.
+
+88
+00:33:06,740 --> 00:33:29,039
+Tek sembollerden oluşursa biri A1, diğeri de A2. O zaman ben bunları zaten bir bitle kodlarım. Buna 1 derim, buna 0 derim. Ya da buna 0 kodunu veririm, buna da 1 kodunu veririm. Ama sözlükteki elemanlarım bir tane sembolden oluşuyor. Peki gelelim 2 bitli olsaydı.
+
+89
+00:33:29,844 --> 00:33:46,124
+İki bitle, yani benim stringlerim iki sembolden olsaydı neler yazabilirdim? A1-A1, A1-A2, A2-A1, A2-A2 yazardım. Böyle sembollerin karşıma çıkma olasılıkları ne olacaktı?
+
+90
+00:33:57,844 --> 00:34:13,903
+A1, A2'ninki 0.8 olasılık A1'i, 0.2 olasılık A2'ninki ise olasılık 0.16 olacak. İşte A2'ninki de 0.04 olacak. Bunları da ben topladım.
+
+91
+00:34:14,356 --> 00:34:27,556
+Olasılığı en fazla olan, karşıma en fazla çıkması olası olan sembol demektir. Bunu daha az bitle kodladım. Daha küçük olasılıkları ise daha büyük bitlerle kodladım.
+
+92
+00:34:27,556 --> 00:34:42,356
+Peki, ortalama olasılık değeri ne olur burada? Bütün olasılıklar toplamı 1'di. Bütün olasılıklar toplamı 1. Benim elimde 4 tane patronum var. 1, 2, 3, 4. 4'e böldüm. 0, 7.
+
+93
+00:34:42,356 --> 00:35:06,036
+Varyansım ne olur? Her bir ikili sembolün olasılık değerinden varyansı çıkaracağım. 064-025, 016-025, 0,04-025. Bunların hepsini topladım. 078 oldu.
+
+94
+00:35:10,356 --> 00:35:30,336
+Bu nokta 6'ydı. Burada ise varyans 0.78 oldu. Peki ben de bunları kodladım. 1 bit, 2 bit, 3 bit, 3 bit. Hufman'a göre kodladığımda, Hufman'a göre ortalama kod uzunluğunu hesaplarsam da, bir saniye.
+
+95
+00:35:30,835 --> 00:35:57,655
+Buraya bir tane şey geldi. Yaparsam da bu 1 bit uzunluğunda Varyans'ı 0.64, bu 2 bit uzunluğunda Varyans'ı 0.16, 3 bit uzunluğunda 0.16 ortalaması. Varyans dedim özür dilerim. 3 bit ortalaması 0.4, 1.56 bit bölü string. Yani bu ne demek? String dedim çünkü stringlerim iki sambolden oluşuyor.
+
+96
+00:35:58,835 --> 00:36:11,015
+Bir sembolü 1.56 bit ile koklarsam, bunu da ikiye bölersem, bir sembolü 0.78 bit ile kokluyorum. Bir öncekinde bu neydi? 0.6 idi.
+
+97
+00:36:11,456 --> 00:36:34,735
+Şimdi oldu 0.78. Peki ben çıtayı biraz daha yukarıya çıkarayım. Benim elimde iki tane sembolüm var ama bunları üçlük üçlük oluşturuyorum. Bu da nedir? İşte 0.00'dan başladı. İkbanları olarak yazarsam birbire kadar sekiz tane farklı durum var.
+
+98
+00:36:35,764 --> 00:36:42,583
+A1 ve A2 ile yazılabilecek 8 tane farklı durumum var. Bunların olasılıklarını biliyorum.
+
+99
+00:36:43,444 --> 00:36:48,083
+Efendim, beni bir şey mi soruyor?
+
+100
+00:36:51,795 --> 00:37:02,015
+Ben biri bir şey mi soruyor anlayamıyorum. Çete yazsın. Ya da mikrofonu mu açır?
+
+101
+00:37:08,275 --> 00:37:11,335
+[öğrenci], mikrofonun açık.
+
+102
+00:37:15,219 --> 00:37:27,719
+Tamam. A1 ve A2'nin olasılık değerlerini biliyoruz. Biliyorsak ne yaptık? Bu üç tane stringin olasılık değerini hesapladım. 0, 512.
+
+103
+00:37:38,324 --> 00:38:05,764
+Birinin bir kafanı açık ama kimin bilmiyorum. Neyse, kafam işte olabilir. Olasılık değerleri bunlar olacak. Bunların ortalama olasılığı ne olacak? Bütün bu olasılıklar toplamı bir. Benim sekiz tane farklı patronum var. Sekize böldüm. 0-125. Her bir olasılık değerinden o patronların 0-125'e çıkardım.
+
+104
+00:38:06,483 --> 00:38:25,483
+0.792 çıktı. Kufman kodlarının uzunluklarını hesapladım. 1 bitten 0.512'yi çarptım. 0.128, 3 tane var ve her biri 3 bit kodlanmış. Buraya yazdım. 0.32'den 1, 2, 3 tane var.
+
+105
+00:38:28,148 --> 00:38:54,387
+Her biri için 5 bit verilmiş. Onları da buraya yazdık. Ve 2.184 bit string oldu. Yani bu da diyor ki 3 tane stringin varsa bunları minimum 2.18 bitle kodlarsın. Bunun da sembol başını oranını hesapladık. 3 tane var diye 0.728. Buraya yaptıklarımın hepsini aldım. Şimdi burası bana ne diyor?
+
+106
+00:38:56,148 --> 00:39:21,408
+Bütün bir tane kelimeden oluşacaksa diyor, ortalama olarak kod uzunluğu 1 bit olacak. Eğer iki tane sembolden oluşuyorsa ortalama kod uzunluğun 0.78, üç tane sembolden oluşuyorsa 0.728 olacak. Eğer bu 4, 5, 6 diye gitse buradaki değerler daha da daha da küçülecek.
+
+107
+00:39:21,728 --> 00:39:33,127
+Şimdi benim alfabemde tabii iki sembol olmadığı için, çok daha fazla semboller olduğu için buradaki ortalama kod uzunlukları da daha mantıklı çıkacak.
+
+108
+00:39:33,127 --> 00:39:42,148
+Yani buraya baktığınızda bana diyorsunuz ki hocam 0.78'i de bir bitle kodlayacak, bunu da bir bitle kodlayacak, bunu da bir bitle kodluyor.
+
+109
+00:39:42,528 --> 00:39:43,827
+Ne anladık bundan?
+
+110
+00:39:45,448 --> 00:39:49,708
+Alfabedeki iki tane karakter üzerinden bunların hepsini yaptığım için.
+
+111
+00:39:49,728 --> 00:39:59,988
+Bu kadar birbirlerine yakın çıktılar. Burada aslında göstermek istediğim şey şu, benim kodladığım tek karakterse mi? Dağ başarılı sonuçlar alır.
+
+112
+00:40:00,000 --> 00:40:27,760
+İki karakteri mi daha başarılı olur, üç karakter mi daha başarılı olabilir? Mesela Hufman'ı düşünün. Karakterleri kodladım. Ben Hufman'da karakterleri değil, heceleri kodlasam daha mı başarılı olacağım? Evet. Bir karaktere Hufman ağacındaki bir kodu koyacağımı, bir heceye koyacağım. Bazı hecelerimizin büyük bir çoğunluğu üç karakterden oluşuyor. Bazıları iki karakterden. Bazı heceler var tek karakter.
+
+113
+00:40:28,000 --> 00:40:37,300
+Bazı heceler de var. Mesela 44 gibi tek heceden oluşuyor. 4 karakter. O zaman daha da başarılı olacağız demektir.
+
+114
+00:40:37,300 --> 00:40:46,579
+Şimdi ben slide'ın başında dedim ki sözlük kullanan yöntemler öyle değişken uzunluklu kodlar kullanmazlar.
+
+115
+00:40:47,019 --> 00:40:52,440
+Eee hocam hep buraya değişken uzunluklu bildiğimiz kodlardan yazdınız diyeceksiniz.
+
+116
+00:40:53,079 --> 00:40:56,000
+Evet yazdım ama bunlar zaten sözlük kullananlar.
+
+117
+00:40:56,000 --> 00:41:22,880
+Yöntemler değil. Sadece ben kodlarken bir sembolü değil, birden fazla sembolü kodlarsam ne kadar başarılı olacağını gösteriyorum olayı. Yani bir tane karakteri kodlamak yerine kodlayabildiysem maksimum sayıda karakteri kodlamalıyım ki daha anlamlı sıkıştırma performansı elde edeyim. Bunu göstermek için bunları yaptık.
+
+118
+00:41:24,000 --> 00:41:26,480
+Sözlük kullanan yöntemleri.
+
+119
+00:41:32,659 --> 00:41:51,479
+Şimdi bu sözü kullanan yöntemlerde size LZ77'yi ve LZ78'i bir de LZV'yi göstereceğim. Diğerleri ise bu göstereceklerimden türemiş yöntemler.
+
+120
+00:41:51,923 --> 00:42:19,743
+Jacob Ziv, Abraham Lempel, bunlar doktora öğrencisiyken 70'li yıllarda LZ-77'yi buluyorlar. Bunlar zaten bunların soyadlarının ilk harflerini almış ve 77 yılında buluyorlar. Daha sonra yine aynı kişi o 77'yi geliştiriyorlar bir sene sonra. Buna da LZ-78 adını veriyorlar ve sözlük kullanan yöntem ortaya atıyorlar.
+
+121
+00:42:19,923 --> 00:42:47,923
+Bu da ilk dictionary-based tabanlı yani sözlük tabanlı bir sıkıştırma algoritması oluyor. Daha sonra bu LZ'ye 78'den türeyerek LZ, ZZ, bu Storer, Zeiss, Manski onların harfleri, Fiala, Grena yine LZ'den türetilmiş, yine LZ'den türetilmiş Rose, William, LZ'den türetilmiş Welch var, bu V ile bu V karışmasın diye.
+
+122
+00:42:47,923 --> 00:43:15,923
+Bunun sonuna bir konulmuş. Yine lezzeden türetilmiş Miller-Wegman var. Lezzeden türetilmiş Old Prefix, lezzeden türetilmiş Yapma, lezzeden türetilmiş Prediction var. Bunlardan bahsetmeyeceğim. Neden? Mevcut olan lezzet yöntemlerinde belirli parametreleri değiştirerek ortaya yöntem atmışlar. Hangi parametreleri değiştirdiklerini bu yöntemleri anlatırken söyleyebilirim.
+
+123
+00:43:15,923 --> 00:43:43,644
+Söyleyeceğim. Bunlardan biri diyecek ki ben buffer'ın boyunu değiştirdim de şöyle in sonuç aldım diyor. Öteki diyor ki ben buffer'da sözlükte veriyi ararken lineer olarak aradım diyor. Biri diyor ki ben circular bir arama yaptım. Böyle döndürerek, sözlüğü döndürerek aradım diyor. Ötekisi diyor ki benim bu sözlükteki indeksleri tuttuğum diyor.
+
+124
+00:43:43,923 --> 00:43:58,503
+Sözlüğümü boyutunu değişken yaptım ya da sabit yaptım. Biri diyor ki sözlüğümü dinamik tuttum, biri diyor ki sözlüğümü statik tuttum. Belirli parametrelerle sonuçlar alarak türevlerini yapmışlar.
+
+125
+00:44:11,923 --> 00:44:19,503
+Şimdi en başarılı olan LZV'yi size aktaracağım. Şimdi gelelim LZ77'ye.
+
+126
+00:44:20,500 --> 00:44:40,659
+Kayan pencere diyoruz biz buna. Sliding Window diye geçer. Yani bir pencerem var. Bunlar hani pencere diye geçiyor ama kodlamaya kalktığımızda buradaki pencere benim için bir stack alanı. İlk giden ilk çıkar mantığıyla düşünün.
+
+127
+00:44:41,204 --> 00:44:58,884
+Sliding olması da bu sitenin içerisinde veriler kayarak ilerliyor. O yüzden bu ismi vermişler. Bu yöntemdeki ana fikir, önceden input stream'den okunmuş olan bilgiyi sözlük gibi kullanmaktır. Ne demek istiyorum?
+
+128
+00:45:09,204 --> 00:45:22,724
+Kodlayıcı ise input stream için bir pencere oluşturuyor ve kodlanan input değerlerini sağdan sola doğru bu pencere içerisinde öteliyor.
+
+129
+00:45:22,724 --> 00:45:29,304
+Yani benim elimde şöyle iki tane verim olacak. Buradan input streamim gelecek.
+
+130
+00:45:30,132 --> 00:45:48,271
+Bu input stream'den gelen veri bu pencerenin içerisinde aranacak. Arama yaparken de sağdan sola doğru bir arama gerçekleştirecek. Bunun içerisinde pointer'ın kayacak. Şuradan gelen en uzun eşleşmeyi buluncaya kadar.
+
+131
+00:45:58,132 --> 00:46:16,311
+Arama alanı Search Buffer deniyor. Çünkü bunu sözlük gibi kullanacağım burayı ve okuduğum her yeni sembolün bu sözlük içerisinde olup olmadığını burada arayacağım. O yüzden bu sol taraftaki alana Search Buffer arama alanı deniyor.
+
+132
+00:46:26,132 --> 00:46:53,231
+Demek ki LZ77'de iki tane pencerem var. Bir tanesi şu pencere. Aslında pencere olan yer burası. Burası da pencere gibi dursa bile input stream'in aktığı alan. Buraya kaynak kod alanı diyorum. Yani kaynak buradan geliyor. Burası işlenmiş olan verinin yazıldığı sözlük. Bu sözlüğe de durmadan veri yazılıyor. Bu sözlüğün boyu dolana kadar.
+
+133
+00:46:54,132 --> 00:46:59,632
+Tüm boyu dolduğunda buradaki artık dışarı çıkıyor. En sondaki buraya yenileri giriyor.
+
+134
+00:47:00,132 --> 00:47:07,452
+Ve burada arama yapıyorum. Burada arama yaptığım için buraya da arama alanı Search Buffer diyoruz.
+
+135
+00:47:08,672 --> 00:47:20,452
+Pratikte arama alanı yani şurası sol taraf pratikte binlerce byte uzunluğundayken kaynak kod alanı ise onlarca byte uzunluğunda.
+
+136
+00:47:21,268 --> 00:47:33,068
+Yani sözlük alanı dediğim search buffer her zaman ve her zaman arama alanı dediğim look at bufferdan büyük olacak. Sol taraf daha büyük olacak.
+
+137
+00:47:33,068 --> 00:47:45,907
+Şimdi bu dediğimizi şöyle yapalım. Bir örnek üzerinden gösteriyorum. Sizin elinizde şöyle bir şey var, dökman var. Keşke buraya onu da yazsaydım.
+
+138
+00:47:47,956 --> 00:48:12,916
+Boşluk, Seat, Boşluk, Istman, Boşluk, Easily, Boşluk ve T var. Tamam mı? Şuraya açtın. Search Buffer alanın burası senin.
+
+139
+00:48:13,396 --> 00:48:17,816
+Burası da Look Ahead Buffer'ın yani kaynak kod alanı.
+
+140
+00:48:18,195 --> 00:48:45,775
+Şimdi sırasıyla teksti okuyorum. Önce S'yi okuyorum. Sonra İ'yi, sonra R'yi. Böyle okuyorum. Okudukça bunun içine kaydırıyorum. Bunu biraz sonra daha basit bir örnekle göstereceğim. Bunun içine kaydırıyorum bu veriyi. Kaydırırken de yeni bir E geldi mesela burada. Bunun içinde E var mı diye arayacağım. Burada bir E gördüm. Acaba ileride başka E var mı?
+
+141
+00:48:46,195 --> 00:49:02,895
+Burada da E gördüm. Başka E var mı? Gidebildiğim kadar gidiyorum. Acaba ikili sıkışma olabilir mi? İkili kodlama yapabilir miyim? E'den sonra gelen bir A var mı? Geliyorum bu E'ye. E'den sonra gelen bir A var. E'den sonra gelen bir A var.
+
+142
+00:49:03,411 --> 00:49:31,371
+Bundan sonra zaten E yoktu. Üçüncü karakteri alıyorum. E, A, S var mı? İlk E, A, S'yi burada buluyorum. İkinci E, A, S'yi burada buluyorum. Gerisinde olmadığını artık biliyorum. Dördüncü karakterle bakıyorum var mı? E, A, S, E var mı? E, A, S, E yok. E, A, S, E yok. O zaman en uzun match hangisi? Şu üç tane karakter. İşte bu üç tane karakter.
+
+143
+00:49:31,411 --> 00:49:49,611
+Karakteri en son nereden görmüşsem diyorum ki sözlükte ben bu üç tane karakteri buldum. O da bu. Bundan sonra ben ne yapacağım? Onlar burada yazıyor ve arkada da teker teker örneğini göstereceğim.
+
+144
+00:49:57,811 --> 00:50:16,112
+Önce karnak kod alanından ilk sembolüm E'yi alıyorum. E'yi gidiyorum. Search Buffer'da sağdan sola doğru tarıyorum. Burada E var mı diye bakıyorum. İlk E harfini buluyorum. Nerede buldum? Easily kelimesinde ilk E harfini buldum.
+
+145
+00:50:16,831 --> 00:50:19,492
+Bunun offset değeri nedir?
+
+146
+00:50:20,244 --> 00:50:44,264
+Burası sıfırdan başlamak üzere, burası sıfır olmak üzere 1, boşluk 2, y3, 4, 5, 6, 7 ve 8. İndeks değeri 8. İlk e'yi 8'de buldum. Başka e var mı diye bakıyorum. Başka bir e var mı bunun içerisinde. İlerliyorum. Diğer e de burada.
+
+147
+00:50:44,784 --> 00:51:08,724
+Bunun indisi ne? Bu 8'di. 9, 10, 11, 12, 13, 14, 15 ve 16. 16. indisi de 16. sırada 2. E'yi de buldum. Başka E var mı diye bakıyorum. Başka E yok.
+
+148
+00:51:09,119 --> 00:51:21,239
+Ondan sonra geliyorum. İkinci karakteri alıyorum. A'yı aldım. İlk E'nin olduğu indekse geliyorum. 8'e. Burada E, A'lı pattern var mı? Evet, var.
+
+149
+00:51:21,844 --> 00:51:49,844
+Öteki E'nin olduğu yere gidiyorum. E, A'lı pattern var mı? Evet var. Başka yoktu E ile başlayan. Daha uzun bir match olur mu? Buraya geliyorum. İlk 3 karakteri alıyorum. İlk 8. indekse geliyorum. Burada E, A, S var mı? Evet var. 16. indekse gidiyorum. E, A, S var mı? Evet var. Başka yok. O zaman daha uzununu bulabilir miyim diyorum. E, A, S, E'ye geliyorum.
+
+150
+00:51:49,844 --> 00:52:04,324
+İlk 8'e gidiyorum. Hayır, bunun dördüncü karakteri iyi değil. Ama buradaki dördüncü karakter E olabilir. Bakıyorum, bu da E değil. O zaman bulunabilen en uzun eşleşme nedir? Üç karakterli EAS.
+
+151
+00:52:04,880 --> 00:52:24,720
+O zaman gidiyorum, bu E, A, S'yi bunun içerisine yerleştiriyorum buraya. E, A, S buraya yerleşiyor. Buradan bunlar çıkarılıyor, buraya geçiyor. Bu dördüncü karakteri de getiriyorum, buraya yazıyorum. O dördüncü karakter de buradan çıkıyor.
+
+152
+00:52:24,720 --> 00:52:30,800
+Ve bir sonraki adımda artık buradaki S'den başlayacak işlem yapmaya.
+
+153
+00:52:31,168 --> 00:52:37,932
+Peki, nerede kodluyorum? İşte kodlamada da ben en uzun...
+
+154
+00:52:38,228 --> 00:53:03,467
+En uzun ve en son çakışmayı bir token'a yazıyorum. Bu bir token. Bu token'ın üç tane hanesi var. Birinci hane, en uzun ve en son olan eşleşmenin indeksi. Sekizde de üçlü bir eşleşme vardı, on altıda da. Ama en son bulduğum eşleşmeyi yapıyorum. Bir de geriye dönme maliyetiyle uğraşmayayım diye. On altıncısı.
+
+155
+00:53:06,228 --> 00:53:28,028
+Ease 3 tane sembol eşleşti. Buraya da bunu koydum. Tocundaki 3. alan ise eşleşmeden kalan 4. terim. 3 tanesi eşleşmiş, 4.sü eşleşmemişti. Onu da buraya yazıyorum. Benim artık output stream'e yazdığım token bu.
+
+156
+00:53:34,099 --> 00:53:59,339
+İlk eşleşmenin olduğu, pardon ilk eşleşmenin değil, en uzun ve en son yapılan eşleşmenin sözlükteki offset sırası. Kaç tane karakter eşleşti? Bu da o kelimenin length uzunluğu. Ve eşleşmeden sonra gelecek olan sembolün kendisi. Tamam mı?
+
+157
+00:53:59,668 --> 00:54:17,708
+Bunları yazıyoruz. Üç tane token'dan oluşuyor. Output stream'e bunu yazıyorum ve dördüncü eşleşmeden kalan dördüncü string'i de sol taraftaki kayan pencere olan kısma atıyorum.
+
+158
+00:54:19,155 --> 00:54:33,615
+Bu yöntemde başka bir şey yok. Şimdi şeyden örnek verelim. İşte bazıları diyor ki, ben diyor en son eşleşmeyi, nasıl diyeyim?
+
+159
+00:54:34,068 --> 00:55:01,288
+Neyse, LZ78'den sonra onu anlatırım. Buraya kadar bir sorusu olan var mı? LZ77'de, şunu da yapayım ondan sonra sorun. Elinizde şöyle bir inputunuz var. Burası benim neyimdi? Look at buffer'ım. Yani kaynak. Yine bir şey çıktı. Kaynak kodu alalım burası. Kaynak kodu alalım. Kaynak.
+
+160
+00:55:01,715 --> 00:55:17,715
+Kod alanım burası. Input'un burada geliyor. Habire buraya, boyu ne kadarsa input buraya akacak. Burası da benim Search Buffer'ım, arama alanım. Buradaki karakterleri burada en uzun eşleşmelerine...
+
+161
+00:55:18,547 --> 00:55:37,307
+Bulmaya çalışacağım, arayacağım. Ama buranın da boyu dolabilir. Buranın da boyu dolarsa ilk giren, ilk çıkacak olarak onu atacağım. Burada boşalan bir kayacak bunların yeri. Boşalan değeri koyacağım. Şimdi algoritma nasıl çalışıyor? Bakalım. İlk karakter nedir? S.
+
+162
+00:55:37,307 --> 00:55:41,407
+S. İlk karakter S.
+
+163
+00:55:41,876 --> 00:56:02,496
+Bakıyorum, S burada var mı kaynak kod alanında? Yok. Ne yapacağım? Hiçbir eşleşme olmadığı için offset alanı sıfır. Hiçbir eşleşme çakışma olmadığı için çakışma bilgisi de sıfır. Sıradaki işlenecek olan sembol hangisi? S.
+
+164
+00:56:02,960 --> 00:56:27,339
+Ben Output Stream'e bu token'ı yazıyorum ve S'yi artık bunun içerisine atıyorum. Ve buradan yeni eleman geliyor boşalan yere. E geliyor. Şimdi karakteri alıyorum i'yi. i'yi burada arıyorum. Burada i var mı? Yok. O zaman çakışmanın olduğu pointer sıfır. Hiç çakışan yok.
+
+165
+00:56:27,764 --> 00:56:47,903
+Üzerinde işlem yaptığım harf hangisi? I. A. Putstream'e bunu yazıyorum. Bu I'yi alıyorum. Buradan bu tarafa atıyorum. I buraya geçiyor. Buraya da yeni karakter geldi. A. Üçüncü karakterim R. Bakıyorum bu R burada var mı? Yok.
+
+166
+00:56:48,532 --> 00:57:04,291
+Pointer Offset 0. Çakışma yok. Hiç çakışma olmadığı için 0. Üzerinde işlem yaptığım sembol de R. R'yi de geliyorum. Bunun içine attım. Buraya yeni kelime ekledim. A'dan sonra da buraya S geldi.
+
+167
+00:57:04,916 --> 00:57:30,636
+Yeniden devam ediyorum. Burada boşluk var. Boşluğu arıyorum burada var mı? Yok. Offset 0, çakışma 0. Üzerinde işlem yaptığım karakter boşluk. Boşluğu alıyorum bu tarafa geçiriyorum. Boşluk artık arama alanına geçti. Buraya yeni karakter geldi. İyi. Şimdi dikkat edin. S geldi. Burada arıyorum. S var mı? Var.
+
+168
+00:57:31,891 --> 00:57:57,491
+Başka S var mı? Yok. Acaba S'den daha uzun bir çakışma olabilir mi? S diye bakayım. Burada S var mı? Var. Acaba bu S'den daha uzun çakışma var mı? S de bakayım. Burada S var mı? Yok. Sadece kaç tanesi çakıştı? İki tanesi. Öyleyse offset değerime ne yazacağım?
+
+169
+00:57:59,155 --> 00:58:08,235
+1, 2, 3, 4. Dördüncü sırada S var. Burası sıfırıncı indis. Burada kalan sembol olacak.
+
+170
+00:58:10,296 --> 00:58:21,536
+1, 2, 3, 4. 4'ü yazdım. Kaç tanesi çakıştı burada? İki tanesi çakıştı. İkiyi yazdım. Bulamadığım en son çakışmayan şey neydi?
+
+171
+00:58:23,347 --> 00:58:33,347
+D'di, D yok. D'yi buraya yazdım. Bundan sonra devam ettirelim. Nasıl devam ettireceğiz? Siliyorum burayı.
+
+172
+00:58:33,347 --> 00:58:39,347
+Silmiyor. Siliyorum burayı.
+
+173
+00:58:40,371 --> 00:59:01,871
+Şimdi bunu yazdım. Neler bu tarafa geçecek? Zaten S, İ, R boşluk vardı. Şuradaki S çakıştı, o buraya geçti. Şuradaki İ çakıştı, buraya geçti. D çakışmadı ama bu tokuna D'yi yazdığım için D de buraya geçti. O zaman durum bu.
+
+174
+00:59:03,507 --> 00:59:08,668
+Burada ne var? Burada da boşluk var. Eastman diye gidiyor.
+
+175
+00:59:09,844 --> 00:59:36,124
+Buraya yine üç tane karakter geliyor. Şimdi bakıyoruz burada. Boşluk var. Boşluk var mı burada? Boşluk bir tane şurada var. Başka yok. Peki daha uzun bir çakışma bulabilir miyim? Boşluk E var mı? Bakıyorum buradaki boşluğun pointer'ın yanına E değilse. Öyleyse ben buraya ne yazacağım? Boşluğun yerine. Bir, iki, üç, dört.
+
+176
+00:59:37,811 --> 00:59:57,971
+Doğru mu saydım? Bu kim? 1, 2, 3, 4. Evet, boşlukta. Kaç tane çakışma var? Sadece boşluk çakıştı. En son bulamadığım, üzerinde işlem yaptığım şey neydi? E. Buraya da E'yi yazıyorum.
+
+177
+01:00:01,012 --> 01:00:12,211
+Bu boşluk yani ve E buraya geçiyor. Bunlar buradan siliniyor. Buraya yeni şeyler geliyor. Ben artık A için oluşturmaya çalışıyorum.
+
+178
+01:00:13,072 --> 01:00:20,391
+Bu, bu şekilde işliyor. Şimdi LZ77 için soracağınız bir soru var mı? Nasıl çalıştığıyla alakalı.
+
+179
+01:00:21,831 --> 01:00:23,172
+Varsa sorun.
+
+180
+01:00:27,443 --> 01:00:43,764
+Peki, şimdi o zaman ben sorayım. Search buffer'ın uzunluğu S olsun. Yani şuranın uzunluğu, arama buffer'ın uzunluğuna ben S dersem, bu S için boyut ne olacak?
+
+181
+01:00:43,764 --> 01:00:51,163
+Diyelim ki burası 100 ise, S'yi 100 uzunluğunda bir şey verdim, dizi verdim.
+
+182
+01:00:54,195 --> 01:01:07,235
+Yukarıya yuvarlama. S'yi aldığım vakit bunun değeri, bunu şuradaki offset'i yazmak için kaç bit uzunluğunda yer ayıracağımı bana gösteriyor.
+
+183
+01:01:07,235 --> 01:01:12,695
+Yani burası diyelim ki S'ye 100 verim ben. S100 olsun.
+
+184
+01:01:15,699 --> 01:01:35,419
+Yok, 32 olsun, böyle basit bir şey olsun diye gösteriyorum. S'nin boyutuna 32 verdim. S'yi 2 üzeri 5 diye yazabilirim. Logaritma 2, 32 daha ne olur? Burası 5 olur. Demek ki offset alanını ayırmak için ben, tutmak için 5 bitlik yer ayıracağım.
+
+185
+01:01:40,371 --> 01:01:50,091
+Dedik ki arama alanı birkaç byte uzunluğunda olur pratikte. Karnak kot alanı da...
+
+186
+01:01:51,380 --> 01:02:04,519
+Bunlar onlarca bit uzunluğunda olur. O yüzden pratikte search buffer, arama alanı yani burasının uzunluğunu 10 ile 12 bit arasında insanlar sınırlamışlar.
+
+187
+01:02:04,519 --> 01:02:18,560
+Şimdi o lezeyinin trevleri dedik ya, o trevlerinde işte biri gidiyor, bunun minimum sınırı 10 olursa daha iyi performans çıkarıyor. Biri diyor ki 12 olursa ya da 15 olursa daha iyi performans verir.
+
+188
+01:02:19,380 --> 01:02:28,860
+Bunların yapmış olduğu değişiklikler bu parametre değerlerinde. Yani bu arama bufferının boyu ne olmalıdır? Bunların parametrelerinden biri.
+
+189
+01:02:29,248 --> 01:02:57,188
+Gelelim, peki buranın boyutu ne olacak? Burası da log-ahead buffer'dı. Buranın da uzunluğuna L diyelim. Burası da log 2, L-1'in logaritmik değeri neyse o kadar bit uzunluğunda olacak. Bu da yapılan araştırmalarda buranın da kaç bit olacağı çıkarılmış. Yani farklı parametreler de çıkarılmış. Bunu ben kendim de belirlerim.
+
+190
+01:02:57,248 --> 01:03:08,728
+Elimdeki inputun içeriğine bağlı olarak S ve L'ye oynayarak en iyi aramaları, en uzun matchlerin nasıl tutulacağını kendim denemelerle bulabilirim.
+
+191
+01:03:09,868 --> 01:03:20,128
+Sembolun uzunluğu da burası da belli. Bir karakter yazdığım için 8 bit uzunluğunda olacak. Çünkü buraya her zaman bir tane karakter gelecek.
+
+192
+01:03:21,235 --> 01:03:32,576
+Peki, bunu çözmek kolay mı? Bunu nasıl çözeceğim? Şurayı yine siliyorum. Karşı tarafa bunları gönderdim.
+
+193
+01:03:32,576 --> 01:03:44,755
+Karşı tarafı bunları gönderdim. Bir saniye gönderdim diyorum. Bir türlü gönderemiyorum. Yağa çekil.
+
+194
+01:03:46,099 --> 01:03:51,859
+Mavi renk olsun. Karşı taraf bunları aldı. Ben ne anlarım? Hiç yakışma yok.
+
+195
+01:03:52,916 --> 01:04:20,916
+Bir S varmış. Sonra bakıyorum. Hiç çakışmalar yok. Arkasından İ gelir. Bakıyorum. Hiç çakışma yok. Arkasından R gelecek. Hiç çakışma yok. Arkasından boşluk geldi. Sonra bakıyorum. Dördüncü indeksten çakışmış. Dört neresi oluyor? Bir, iki, üç, dört. S. Kaç tane çakışma var? İki tane. S ve İ çakışmış. Öyleyse bunun sonuna S, İ ve S.
+
+196
+01:04:20,916 --> 01:04:36,135
+Çakışmanın bulunmadığı D sembolü gelecek. Output Stim'e artık bunu yazdı çözerken. Bunları bu şekilde devam ettirerek ben çok kolaylıkla yaptığım işi tersten yaparak açabilirim.
+
+197
+01:04:37,456 --> 01:04:45,155
+İşte kod çözücü kodlayıcıdan daha basittir. Kodlayıcı pencere boyutuna eşit bir buffer alanı oluşturur.
+
+198
+01:04:45,552 --> 01:05:05,791
+Kod çözücü de token'ı okur. Buffer'ın bulunduğunda çakışan sembollerin olduğu yere kadar gider. Oradan çakışmanın olduğu yere gelir. Kaç tane çakışma var o kadar karakteri alır. Buffer'ın üçüncü alanındaki değeri de alır. Hepsini Output Stream'e yazar.
+
+199
+01:05:06,579 --> 01:05:22,159
+Bu yöntem ne zaman başarılı olur? Burada çakışmalar ne kadar uzun çakışmalar yakalarsam, mesela bunların hepsi girdi girdi, buffer alanı şöyle bir şeye geldi. Tamam mı?
+
+200
+01:05:22,452 --> 01:05:40,392
+Sözlük şurası oldu ve buradan yeniden surseed diye bir kelime geliyor. Surseed ismi. Bunun tamamı çakışacak. Düşünün. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 tane kelimeyi çakıştıracağım.
+
+201
+01:05:50,452 --> 01:06:06,612
+En son çakışmaya 8 koydum. Burasına 10 bit ayırsam, buraya da 12 bit ayırsam 10, 20, 30 bit. 128 bit yerine 30 bit ile bu kadar büyük bir ifadeyi göndermiş olacağım.
+
+202
+01:06:07,711 --> 01:06:14,352
+Lezzet'in başka türevleri de var demiştik. Neler değişir? Bazılarını anlatırken ben söyledim.
+
+203
+01:06:14,804 --> 01:06:32,804
+Offset ve Length'in boylarını değiştiriyor. Çeşitli varyasyonda kullanılan parametrelerinden biri. Offset'in boyu değişken olursa ne olur? Length'in boyu değişken olursa ne olur? Her iki buffer'ın da hem sol taraf hem sağ taraftaki buffer'ın boyutlarını...
+
+204
+01:06:33,907 --> 01:06:53,327
+Değiştirirsem ne olur? Search bufferın boyu artarsa yani sol taraftakini ne kadar büyütürsem o kadar daha uzun eşleşmeleri bulabilirim. Peki bu kadar uzun eşleşmeler bulursam tokenlara yazmış olduğum indekslerin değerlerinde değişecek. Bunların ideali nedir?
+
+205
+01:06:56,467 --> 01:07:10,768
+Window'da Linear olarak ilerlemeyip Circular olarak Window'u döndürmek. Bunu da anlatıp bir ara vereceğim. Linear Window ya da Circular Window ne demek?
+
+206
+01:07:17,619 --> 01:07:33,099
+1, 2, 3, 4, 5, 6 tane gözden oluşuyor. Buraya da A, B, C, D, E, F ve G gelecek. Önce A giriyor. A buraya geliyor.
+
+207
+01:07:33,811 --> 01:08:01,291
+Sonra bu siliniyor. B gelecek. A buraya geçiyor. B buraya geliyor. B de girdi. Sonra A buraya kaydı. B burada. C burada. Sonra C de bunun içine girdi. Sonra D geldi. A burada. B burada. C burada. D burada. Sonra E geldi. A buraya kaydı. B burada. C burada. D burada. E burada. Sonra F geldi.
+
+208
+01:08:01,811 --> 01:08:14,192
+A buraya geçti, B burada, C burada, D, E ve F. Şimdi G geldi. Linear arama yapıyorsam ben, burada linear arama yapıyorsam ne yapıyorum?
+
+209
+01:08:14,192 --> 01:08:25,971
+Stek gibi davranıyorum. İlk giren A'yı buradan dışarı atıyorum. Artık buraya B, C, D, E, F. Buraya da G'yi giriyorum.
+
+210
+01:08:26,515 --> 01:08:35,796
+Linear olarak Window'u kullanırsak böyle. Peki Circle'ı kullanırsak nasıl olacak? Şimdi bunu bu örnek üzerinden bakalım.
+
+211
+01:08:37,203 --> 01:09:04,243
+İki tane pointerım var benim. Start pointer ve end pointer. Önce S gelmiş. Ona start pointer'ı vermişim. Arkasından İ, D, L, L, L, L, L girmiş. End olan en son pointer T'de duruyor. Start pointer da S'de duruyor. Daha sonra buna her yeni sembol ilerledikçe end pointer nereye geldi? En sona. Artık buraya bakıyorum.
+
+212
+01:09:04,916 --> 01:09:24,176
+Buradaki search alanım doldu. Yeni bir karakter gelecek. Bu yeni karakter neydi? Easily yani L harfiydi. Şimdi linear şey kullansaydım window, buradan S dışarı atılacaktı. Bunlar bir bir kayacaktı ve buraya L yerleşecekti.
+
+213
+01:09:30,963 --> 01:09:47,604
+Bu S evet gidecek ama benim startım iyi gibi gözükecek, buna kayacak. Buradaki iyiye böyle ilerlemeyecek, buradaki iyi gelecek, buraya yerleşecek, yerleşti.
+
+214
+01:09:48,015 --> 01:10:14,655
+Pardon, L. Şuradan gelen L. Bunun sonuna gelmeyecek. Circle buraya gelecek. Bu S'nin yerine L gelecek. L artık benim end pointer'ım oldu. Start böyle geldi. Her yeni gelen şey bunun sonuna eklenecek. Mesela Y geldi diyelim. Y geldiyse en son giren neydi? İlk giren İ'di. Bu İ buradan düşecek.
+
+215
+01:10:15,060 --> 01:10:42,040
+D start'ı gösterecek. Buraya Y gelecek. End de Y'yi gösterecek. Artık start ve end böyle gidecek. Diyelim ki şuradayım, şu durumdayım. Mesela ne gelse S geliyor. Şurada S bekliyor. Ne yapacak? İlk giren start pointer şu boşluktaydı. Artık bu buradan gidecek. Start pointer buradaki E olacak.
+
+216
+01:10:43,828 --> 01:10:58,208
+Endpoint'ı en son buradaki boşluktu. Onun yerine S gelecek. Endpoint'ı da bunu gösterecek. Burada aynısı değil hocam diyeceksin. Bu araya başka şeyler koyduğu için bunun nasıl değiştiğini bana gönderiyor.
+
+217
+01:10:58,208 --> 01:11:03,408
+Yani buradaki window'un da circular olarak içinde değişmesi.
+
+218
+01:11:04,083 --> 01:11:29,724
+circular olarak böyle dönmesi veya lineer olarak gitmesi de yine parametrik bir durum. Ben o lezeyden türetilmiş yöntemlerin bazılarında circular kullanıyorum, bazılarında linear kullanıyorum. Başarı performansım değişmiyor ama circular kullandığımda daha hızla, hızdan kazanıyorum. Ama eğer burası çok uzunsa
+
+219
+01:11:30,292 --> 01:11:45,051
+Sörkülür yapmam daha mantıklı olabilir. Eğer burası için birkaç bitlik bir alan ayırmışsam o zaman burayı linear yapmam, hiç sörkülür ile uğraşmam linear yapabilirim. Bunlara ben karar veriyorum.
+
+220
+01:11:45,524 --> 01:11:59,364
+Evet, şimdi LZ77'yi bitirdik. Bir ara verelim. Aklınızda oturmayan yer varsa arada sorarsınız ve LZ78'e geçelim. Bir 10 dakika ara veriyorum.
+
+221
+01:12:00,364 --> 01:12:09,364
+Benim saatim, kolumdaki saat biraz ileridir. Bilgisayar'ın saatine bakacağım. Bu yüzden de...
+
+222
+01:12:11,364 --> 01:12:12,184
+Bir dakika.
+
+223
+01:12:19,444 --> 01:12:20,164
+Allah Allah.
+
+224
+01:12:24,372 --> 01:12:40,231
+[kişisel bilgi]
+
+225
+01:12:41,391 --> 01:12:42,051
+Anlaştık hocam.
+
+226
+01:12:42,051 --> 01:12:48,731
+Tamam. Bu arada bakın isterseniz anlamadığınız yer varsa bana sorun. Girdiğimizde.
+
+227
+01:12:50,012 --> 01:12:50,711
+Tamamdır hocam.
+
+228
+01:27:12,564 --> 01:27:36,884
+Ben bir şeyleri açtım, kapadım. LZ78 yazan slide'ı görebiliyor musunuz? Erken mi geldim? Görüyoruz hocam. Tamam. Bir sayfa daha ilerliyorum. Sayfa değişiyor mu? Bir dakika. Değişti mi? Hayır, değişmedi. Tamam. Demek ki beceremedik. Bir daha yapacağım.
+
+229
+01:27:39,188 --> 01:27:44,448
+Bunu böyle açıp, şimdik. Ne görüyorsun?
+
+230
+01:27:44,788 --> 01:27:45,688
+Değişti hocam.
+
+231
+01:27:45,807 --> 01:27:46,208
+Tablo?
+
+232
+01:27:46,907 --> 01:27:47,728
+Evet tablo.
+
+233
+01:27:47,887 --> 01:27:54,228
+Tamam, şimdi yeniden yazıya dönmesi lazım bunun. Şimdi döndü mü? 78 yazıyor mu tepede?
+
+234
+01:27:54,608 --> 01:27:55,387
+Evet hocam.
+
+235
+01:27:55,448 --> 01:28:02,567
+Tamam, okey. Eğer yine sayfalar geçmezse zamanında haber verin ki boşuna ilerlemeyeyim. Oldu mu buçuk?
+
+236
+01:28:03,407 --> 01:28:06,028
+Bakayım. Bir dakikam var.
+
+237
+01:28:06,387 --> 01:28:10,327
+Peki, lezzet 77 ile ilgili soracak bir şeyiniz var mı şu an?
+
+238
+01:28:16,307 --> 01:28:25,487
+Bu videoyu da sizinle paylaşmam gerekiyor mu? Sizler bu dersi alan kişiler olduğunuz için videoyu bir daha dinleyebilirsiniz diye düşünüyorum.
+
+239
+01:28:25,487 --> 01:28:35,148
+Eğer dinleyemezseniz benden linki istersiniz. Peki, şimdi LZ78'e geldik. Yine aynı kişiler.
+
+240
+01:28:35,731 --> 01:28:50,332
+Zannederiz ki mevcut olan yöntemleri üzerinde değişiklikler yaptı. Aslında büyük bir değişiklikler yaptılar. Ne gibi değişiklikler oldu? Lampı, lazif neler yaptı?
+
+241
+01:28:50,332 --> 01:29:01,832
+DZ-77 algoritmasında bir kayan pencere vardı. Arama ve kaynak kod alanları vardı. Fakat DZ-78'de böyle bir şeye ihtiyaç duymuyorlar.
+
+242
+01:29:03,731 --> 01:29:11,731
+Bu sözlük kullanılıyor. Başlangıçta bu sözlüğü alfabenin...
+
+243
+01:29:11,828 --> 01:29:31,268
+Boyuyla sınırlı ve boş olarak başlıyor bu sözlük. Bu sözlüğün boyunun ne olacağını ben belirliyorum. Diyebilirim ki benim sözlüğümün boyu şu kadar token'la dolacak. Yani şu kadar alanı kullanabilir memori'de.
+
+244
+01:29:38,003 --> 01:29:50,863
+Ya da diyebilirim ki ne diyecektim? Şu kadar sayıda sözlüğe kelime ekleyebilir. Bakın burada dediğim kelimeler aslında anlamlı bir şeyler ifade etmeyebilir.
+
+245
+01:29:51,363 --> 01:30:01,484
+Hecelerden, patronlardan oluşmuş bir şey. Şu kadar boyutlu sözlüğüm olabilir ya da sözlüğü sahip olduğum memorinin hafızasıyla sınırlı.
+
+246
+01:30:01,939 --> 01:30:22,159
+Kodlayıcı Output Stream'e iki tane alanı olan bir token yazıyor. Bir öncekinde tokenlarımızın üç tane alanı vardı. Burada iki tane alanı var. İlk alanı sıra belirleyicisi, yani sözlükte kaçıncı sırada olduğu. İkinci alanda sembolü.
+
+247
+01:30:23,028 --> 01:30:45,088
+İmpel Stream'den bir sembol geliyor. Bu sembolü W diyoruz. Bu W sembolünü sözlükte arıyor. Yine aynı şekilde bir kalem alalım. Kalemimizi şuradan. Benim bazı şeyleri bazen bulmam çok zorlaşıyor. Kalem niye çıkmıyor? Çıktı.
+
+248
+01:30:45,779 --> 01:31:01,019
+Yine elimizde bir sözlüğümüz var. Şöyle bir sözlüğümüz var. Bu sözlükte işte arıyor. W şeyi geldi. Adı nedir? Bir sembol geldi. Bu sembol W olarak bu sözlükte var mı?
+
+249
+01:31:01,019 --> 01:31:09,899
+Eğer yoksa, sözlükte aradığım bu sembol yoksa sözlüğün en son sırasına W'yu yerleştiriyor.
+
+250
+01:31:10,271 --> 01:31:13,971
+Ve onun sıra belirleyicisine de sıfır değerini veriyor.
+
+251
+01:31:14,872 --> 01:31:17,271
+Eğer bir çakışma olmuş ise...
+
+252
+01:31:17,524 --> 01:31:41,344
+W'yu sözlükte böyle bir pattern buldu. Bundan daha uzun bir pattern bulabilir mi? Bir sonraki sembolü alıyor K'yı. W ile K'yı birleştiriyor. W, K olarak sözlükte bakıyor. Sözlükte böyle bir sembol var mı? Varsa buna yeni bir K daha ekliyor. W, K, K sözlükte var mı diye bekliyor.
+
+253
+01:31:45,524 --> 01:31:58,564
+Token'in en son sırasına yerleştiriyor. Token alanına da en son çakışmanın olduğu sıraya K değeriyle yerleştiriyor. Şimdi bunu da bir örnekle görelim. Daha iyi anlaşılacak.
+
+254
+01:32:00,435 --> 01:32:18,915
+Bu 78'de iki tane alandan oluşuyordu token'ım. Token'ların burası gördüğünüz gibi. Birinci alan, ikinci alan. Bu da benim sözlüğüm, dikşinirim. Sözlüğüm başlangıçta şöyle başlıyor. NAL, boş. Sıfırıncı indekste NAL var. Daha herhangi bir şey yok.
+
+255
+01:32:28,435 --> 01:32:43,815
+Bu son sıraya S'yi yazıyor. S'nin birinci sırada S oluyor. İki tane token yazacak. Öncesinde bir çakışması olmadığı için 0 yazdı. Sonra da S'yi buraya koydu.
+
+256
+01:32:44,275 --> 01:33:10,796
+Sırada ne var? İ harfi var. Bakıyor sözlükte İ var mı? Bir nal var. Bir de S var. İ yok. En son sıraya geliyor. İ'yi yazdı. Tokununa da hiç çakışan başlangıç bir yer olmadığı için yine sıfır ve İ'yi ekledi. Sonra R'yi aldı. R'yi aradı. Sözlükte R var mı? Yok. En son sırasına R'yi yazdı.
+
+257
+01:33:11,247 --> 01:33:27,847
+İndeks 0 ve R'yi buraya verdi. Sonra geldi boşluk. Boşluk sözlükte var mı? Null, S, İ, R. Boşlukta yok. Sözlüğe boşluğu ekledi. Offset 0 ve boşluğu da buraya koydu.
+
+258
+01:33:27,847 --> 01:33:38,067
+Şimdi sırada kalemimizin rengini değiştirelim. Bir S'ye geldi. W şu an nedir? W'da S var.
+
+259
+01:33:38,963 --> 01:33:50,923
+Baktın sözlükte S var mı? Nal. Evet, sözlükte bir S var. Acaba daha uzun bir çakışma bulabilir miyim? Sırada ne var? K.
+
+260
+01:33:51,828 --> 01:34:18,788
+K'ya İ harfini koydu. W ile K'yı birleştirdi. W ile K ne oldu? C oldu. Bakacak, sözlükte C var mı? C var, İ var, R var, boşluk var. C ikilisi yok. O zaman dikkat edin, C'yi en son sıraya yerleştirdi. Çakışan kimdi? S'di. S kaçıncı indisde? 1.
+
+261
+01:34:19,828 --> 01:34:46,908
+Sıfırı buraya bir koydu. Daha sonra da çakışmayan sembolü ekledi. İyi diye. Öyleyse ben S'yi ve İ'yi sözlüye ekledim. Ne geldi? Sırada ne var? D. Sözlükte D var mı? Nal, S, İ, R, boşluk, S, İ. Sözlükte D yok. En son satıra D'yi ekledim. Hiçbir çakışma olmadığı için offset sıfır, D'yi koyduk.
+
+262
+01:34:47,155 --> 01:35:11,655
+Sırada ne var? Boşluk. Bakıyorum boşluk var mı sözlükte? Nal, S, İ, R, A. Sözlükte boşluk var. O zaman bunu biraz büyütelim. K'ya, E'yi aldım. Boşlukla E'yi birleştirdim. Sözlükte boşluk ve E'yi arıyorum. Boşluk E var mı? Yok. Boşluk E'yi sözlüğe yazdım.
+
+263
+01:35:12,115 --> 01:35:21,735
+Boşlukta bir çakışma olduğu için ve boşlukta dörtte yer aldığı için offset'e dördü yazdım ve arkasına e'yi ekledim.
+
+264
+01:35:22,595 --> 01:35:28,835
+Sırada ne var? A. A önceden sözlükte var mı? Bakıyorum buralara. A yok.
+
+265
+01:35:29,476 --> 01:35:36,556
+Öyleyse sekizinci sıraya a'yı yazdım. Hiçbir çakışma olmadığı için sıfır ve a'yı ekledim.
+
+266
+01:35:38,644 --> 01:35:41,844
+Yeşile geçiyorum. Sırada ne var? S.
+
+267
+01:35:42,771 --> 01:36:10,631
+Bakıyorum sözlükte S var mı? Evet, birinci sırada S var. O zaman bunu büyütüyorum. K diye T'yi ekledim. ST sözlükte var mı? Bakıyorum. İ, R, boşluk S, İ, D, boşluk E, A, ST yok. Öyleyse geldim. Dokuzuncu indi S. ST'yi yazdım. S nerede çakıştı? Birde. Buraya biri koydum. Çakışmayıp ekledim. Kimdi T? T.
+
+268
+01:36:10,771 --> 01:36:30,672
+Sırada M var. Bakıyorum sözlükte M var mı? Sol tarafta M yok. Sağda da A var, ST var, M yok. Öyleyse M'yi yazdım. Sıfır çakışma var, M'yi ekledim. Sırada ne var? A. A sözlükte var mı?
+
+269
+01:36:31,283 --> 01:36:54,903
+Geldim, geldim. A8. sırada sözlükte var. Daha büyük bir çakışma arayacağım. A'nın yanına N'yi aldım. A, N sözlükte var mı? Gidiyorum, geliyorum. A, N sözlükte yok. A, N'yi en son sıraya ekledim. İlk çakışma A'daydı. Bu A'da 8. sırada offset'e 8'i koydum ve N'yi yazdım.
+
+270
+01:36:55,539 --> 01:37:18,199
+Neleri bitti? Şunlar bitti. Şimdi geldi kalemi değiştirelim rengini. Mor yapalım. Şimdi boşluk geldi. Boşluk sözlükte var mı? Var. Nerede? Dördüncü sırada bir boşluk var. Bunu büyüttüm. Boşluk E yaptım. Boşluk E sözlükte var mı? Evet var. Yedinci sırada.
+
+271
+01:37:18,931 --> 01:37:41,211
+Boşluk E var. Bunu biraz daha büyüttüm. Boşluk E ve A var mı? Sözlükte bakıyorum. Boşluk E ve A yok. En son sıraya, 12. satıra boşluk E, A diyorum. En uzun meç boşluk E ile nerede oluştu? 7 de oluştu. Buraya 7'yi yazdım. Sonuna da A'yı ekledim.
+
+272
+01:37:47,507 --> 01:38:13,927
+Rengimizi değiştirelim. Sarı alalım. Ne kaldı? Sırada ne var? S var. S sözlükte var mı? Evet var. S birinci sırada burada var. Bunu iki karaktere çıkarttım. S'i var mı? S'i bakıyorum. S'i beşinci sırada var. Tamam. Bunu bir üçlüye çıkarayım. Sil var mı? Bakıyorum sil.
+
+273
+01:38:14,612 --> 01:38:36,252
+Geldik, geldik. Sil yok. 13. sıraya sili ekledim. İlk çakışma, en uzun çakışma C'de oldu. C nerede? 5. offsette. Buraya 5'i koydum. Yanına da L'yi ekledim. Sil de bitti artık. Sırada ne var? Y var.
+
+274
+01:38:36,724 --> 01:38:46,724
+Y'yi geldim. Y sözlükte var mı? Sözlükte hiç yok. Yok yok. Y'yi yazdım. Sıfır offset ve Y dedim.
+
+275
+01:38:47,444 --> 01:38:56,404
+On beşinci sırayı da siz söyleyin bakalım. Ne olacak? On beşinci sırada. Sırada ne var şu an? Boşluk var.
+
+276
+01:38:57,224 --> 01:39:02,604
+Bakacaksın. Boşluk sözlükte var mı? Var. Nerede var? Dörtte.
+
+277
+01:39:03,060 --> 01:39:21,320
+Daha büyüğünü bulabilir miyim? Boşluk ve T'ye bakacaksın. Boşluk ve T var mı sözlükte? Yok. Öyleyse boşluk ve T'yi buraya ekledik. Kaçıncı indisli ilk boşlukta buluştu? 4, T'yi ekledik.
+
+278
+01:39:21,320 --> 01:39:29,140
+Bu şekilde cümlenin ya da tekstin, dökümanın sonuna gelene kadar bu sözlüğü oluşturuyorum.
+
+279
+01:39:29,555 --> 01:39:49,336
+Bu sözlük dipsiz kuyu mu? Ne kadar gidecek? İşte bana söyleyebilir. Bana der ki, şunları indeks yazıyorum. Bu indeks maksimum 10 bit olacak. 10 bitle ben kaç tane sayı yazarım? 2 üzeri 10 neyse o kadar sayı yazabilirim. Ona geldiğim an durur.
+
+280
+01:39:49,939 --> 01:40:09,979
+Ya da der ki benim sözlüğümdeki bu indeks alanı 4 bitle yazılabilir. 4 bitle maksimum ne yazarsın? 16. Yani sıfırdan 15'e kadar olan sayıları yazabilirsin. Sözlük burada dolar. Bundan sonra her şeyi olduğu gibi ASKİ olarak gönderirsin.
+
+281
+01:40:13,952 --> 01:40:22,872
+Senin elindeki memorinle sınırladın. Memori ne kadar büyükse kullan, kullanabildiğin kadar diye algoritma işler.
+
+282
+01:40:22,872 --> 01:40:30,735
+LZ-78 de böyle çalışıyor. Buraya kadar sorunuz var mı? Yoksa...
+
+283
+01:40:30,735 --> 01:40:47,755
+Öncelikle başka derslerden duymuş olabilirsiniz ya da benden doğal dil işlemi almışsınız orada da duymuşsunuzdur. Önemli olan bu elimdeki verileri ben nasıl saklamalıyım, nasıl hızlı ilerleyeceğim? Ne demek istiyorum?
+
+284
+01:40:59,024 --> 01:41:27,024
+Buna E'yi ekleyeyim. Ya da burada sil var. S, S, İ'nin ve arkasına L geliyor. Ben bunları sanki pointerla geçiyormuş gibi çok hızlı bir şekilde erişmem lazım. Yoksa hep sıralı olarak aramam gerekir sözlükte. Var mı S? Var, buldum şu sırada. Sonra S, İ'yi arayacağım. Geriden başlayacağım. Başta var mı S, İ? Ha buldum falan filan diye. Bunları hızlandırmak için.
+
+285
+01:41:27,024 --> 01:41:39,564
+Triya ağaçları kullanılır. İşte şu, triya ağaçları. Bu triya ağaçları nasıl bir yapıdır? Şurası kök, rut burası. Nalla başlıyor sözlüğün.
+
+286
+01:41:43,380 --> 01:42:06,619
+Eğer İngiliz alfabesinde çalışıyorsam ben 26 tane karakterli dal çıkıyor. Türkçeyle çalışıyorsam 29 tane. Bu işte bütün boşlukla başlayanlar, A'la başlayanlar, C'yle başlayanlar, D'le, E'yle başlayanlar. Bunların her birinin indisi var. Mesela bakın şurası boşluktu.
+
+287
+01:42:07,315 --> 01:42:33,975
+Boşluğun altına S gelmişse benim metinlerim içerisinde boşluk S diye ilerleyen bir şey var. Boşluk E, boşluk E diye ilerleyen bir patternım var. Boşluk T, boşluk T diye ilerleyen bir patternım var. Boşluk S, onu takip eden E olmuş. Öyleyse boşluk S ve E'ye erişirken bu.
+
+288
+01:42:35,315 --> 01:42:56,796
+Üçlüğü ararken sözlükte sırasıyla aramıyorum. Boşluğun olduğu yeri buluyorum. Ha, boşluğu buldum bu adres. Sonra boşluğun altında A'dan S'ye kadar bir sürüşe gidebilir. Eğer varsa hemen buradan S'yi buluyorum. S'nin altında da yine alfabenin boyu kadar sınırlı olan karakterler gidecek. Böyle.
+
+289
+01:43:03,315 --> 01:43:31,315
+Şunların her birini gösteriyor. Bunlar sadece kendi altındaki 29 karakteri gösterecek. Hadi boşluk da olsun 30 karakter. Bunun her biri kendi altında 29 tane karakteri gösterecek maksimum. Her zaman her karakterden sonra her karakter gelmiyor. Mesela Türkçe'de acaba yumuşak G'den sonra gelen G var mı? Böyle bir ikili zaten olmayacağı için bu bir full binary olmayacak. Bazı dallar var.
+
+290
+01:43:31,315 --> 01:43:50,595
+Bazı ikili patronlar var, bazı üçlü patronlar var. Bazen eğer memori alanım benim çok büyükse buraya çok daha fazla şeyler yazabilirim, patronlar yazabilirim. Üçlü, dörtlü, beşli. Uzunluğu ne kadar olursa buradaki ağacın derinliği de o kadar olacak.
+
+291
+01:43:51,667 --> 01:44:10,427
+O yüzden böyle bir ağaç yapısında veriyi saklamak en ideal şekli. Peki bu işlem anlattığım gibi ne kadar süre yapılacak? Sözlük dolana kadar yapılır. Sözlüğün olması ne demek? Elindeki sınırlı hafızayla sınırlısın.
+
+292
+01:44:19,667 --> 01:44:24,707
+Sonrasını ASCII göndereceksin. O zaman sadece 32 tane yazabilirsin.
+
+293
+01:44:25,347 --> 01:44:30,267
+Veya farklı versiyonları, LZ'nin farklı versiyonları da var dedik.
+
+294
+01:44:30,267 --> 01:44:40,567
+LZ 78'in de farklı versiyonları var. Burada eğer sözlüğün donmuşsa, sözlükte yerin kalmamışsa frozen yaptırıyorsun.
+
+295
+01:44:41,147 --> 01:44:47,667
+Sözlüğü donduruyorsun, artık sözlüğe hiç yeni bir şey eklemiyorsun. Her şeyi ASCII olarak gönderiyorsun.
+
+296
+01:44:47,667 --> 01:44:57,667
+Sözlükte olanları token olarak, sözlükte olmayanları ASCII karşılığıyla gönderiyorsun. Bir başka versiyonunda ağaç dolmuşsa,
+
+297
+01:44:58,032 --> 01:45:06,752
+Artık memoride yerin kalmamışsa bütün ağacı, bütün memoriyi siliyorsun ve yeniden boş bir ağaçla işleme başlıyorsun.
+
+298
+01:45:06,752 --> 01:45:20,912
+Bir başka versiyonda bir ek işlem yapıyor. Bu ağaçta en az sıklıkla karşıma geçen semboller neyse onlar pek sık geçmiyor diye onları sözlükten çıkarıyor.
+
+299
+01:45:21,432 --> 01:45:26,032
+Onların yerine yeni gelenleri koyuyor. Şöyle düşünüyorum.
+
+300
+01:45:26,032 --> 01:45:54,012
+Bir tarih kitabı yazıyorsun var elinizde. Tarih kitabını sıkıştırıyorsun. Bir tanesi ilk çağ anlatırken kullanılan kelimeler farklı iken, günümüzün tarihini anlatırken kullanılan kelimeler farklı. Mesela eski tarihte cumhuriyet kelimesi hiç geçmiyor. Hiçbir zaman C-U ya da C-U-M diye bir pattern karşına gelmemiş. 12. bölümde başlıyor diyelim ki yeni tarih.
+
+301
+01:45:54,032 --> 01:46:22,032
+O zaman sözlükte daha önceden kullanılmış ama artık kullanılmayan eskimiş patronlar varsa onları sözlükten siliyor. Onların yerine yeni patronları koyuyor. Bu biraz zahmetli bir iş. Çok uğraşmanı gerektirir ama bunu yapan versiyonlar da var, yok. Ama günümüzde en fazla kullanılanın LZV, onu göstereceğim. Çünkü en iyi performansı veren LZ77 ve LZ77.
+
+302
+01:46:22,032 --> 01:46:35,712
+LZV 78'e göre de LZV'dir. Fakat diğerlerin hepsi LZV'den ve LZV 78'den türetilmiştir. O hangi hiperparametrelerin değişeceği bilgisine bağlı olarak.
+
+303
+01:46:36,659 --> 01:46:50,500
+Evet, şimdi sözlük yöntemlerinden bir statik sözlüğü görmüştük. Türkçe ekibi sonlar eklemeli dillere pek uygun değildi. Arkasından kayan pencere kullanan LZ77'yi gördük.
+
+304
+01:46:50,500 --> 01:47:04,079
+Tokenlarımız üç alandan oluşuyordu. Sözlüğümüz kayan bir pencereydi. Burada diner olarak ilerleyebiliyor veya döngüsel olarak ilerliyordu.
+
+305
+01:47:04,659 --> 01:47:14,600
+Daha sonra leğize 78'i gördük. Token sayısını 2'ye indirdi. Daha az yer kaplıyor memoride ve daha fazla şey tutuyor sözlükte.
+
+306
+01:47:14,600 --> 01:47:27,500
+Sözlüğümün boyutu memorimle sınırlı olabiliyor ya da bana verilmiş olan sözlük sayısıyla, yani sözlük sayısı, sözün içindeki eleman sayısıyla sınırlı olabiliyor.
+
+307
+01:47:28,300 --> 01:47:32,600
+Bunlar, bana verilmiş olan değişkenler hangisini istiyor?
+
+308
+01:47:32,659 --> 01:47:43,659
+onları kullanabiliyorum. Şimdi, LZV diye bir başka türevimiz var. Buna da Welch ekleniyor. Bir de bu bir adamın soyadı Welch.
+
+309
+01:47:46,644 --> 01:48:10,083
+gerçekleştiriyor. LZ'ler içerisinde en performanslı olan, bildiğimiz birçok sıkıştırma formatı içerisinde de kullanılan bir yöntem. Nasıl alışıpek içerisinde Hufman kullanılıyor ya da Zip içerisinde aritmatik kodim kullanıyorsa, LZV'yi de içerisinde kullanan algoritmalar var.
+
+310
+01:48:13,811 --> 01:48:22,152
+[kişisel bilgi]
+
+311
+01:48:22,912 --> 01:48:29,652
+Şimdi LZV'ye bakalım. Bu nasıl çalışıyor? LZV geniş bir kodlama alanına sahip.
+
+312
+01:48:29,652 --> 01:48:37,952
+Okey. Codebook dinamik olarak oluşturuluyor. Buradaki codebook kelimesi nedir? Aslında codebook dediğimiz bizim dictionary.
+
+313
+01:48:38,528 --> 01:48:52,828
+Ama bu LZV'de artık buna sözlük dememişlerdi. Kodbuk diyorlar. Bu sözlük dinamik olarak oluşturuluyor. Önceden oluşmamış. Mekni okudukça oluşturuyorum. Aynı LZV 78 ve 77'de olduğu gibi.
+
+314
+01:48:53,028 --> 01:49:05,828
+Kodların boyutu kodbukun uzunluğuna bağlı olarak değişir. Ne demek bu? Kodbukun boyu 8 ise bunun anlamı şudur. Bu kodbuka yani bu sözlüğe
+
+315
+01:49:06,528 --> 01:49:21,828
+Sekiz adet kelime yerleşecek, pattern yerleşecek. Eğer ben codebook diye sözlüğü kullanıyorsam, code word demem lazım. Dictionary diyorsam da pattern demem gerekir. Yani ona daha böyle uyan ikili gibi.
+
+316
+01:49:21,828 --> 01:49:25,307
+Yani codebook böyle afilli bir isim ama bildiğin dictionary.
+
+317
+01:49:26,420 --> 01:49:45,260
+Codebook'un başlangıcını da alfabem oluşturuyor. Benim alfabemde kaç tane farklı sembol varsa, codebook yani sözlüğe başlıyorum öncelikle onları sıralamaya, ondan sonra ikili, üçlü, dörtlü gelmesine bağlı olarak sözlüğe yeni şeyler ekliyorum.
+
+318
+01:49:45,260 --> 01:49:49,119
+Yani eklerken de codebook'un boyutu önemli.
+
+319
+01:49:49,811 --> 01:50:11,992
+İmput stream'den her okunan sembol ile de sözlük oluşturulmaya çalışılıyor. Şimdi bir örnekle bunu göstereceğim. Bunu yani çok uğraşmıştım çünkü renkli renkli şeylerle anlatacağım tam gözüksün diye. Elinizde bir input stream var. Input stream de şu.
+
+320
+01:50:12,756 --> 01:50:17,595
+A, B, B, B, A, A, C, B, B, A, B. Hiç okumayayım. Yani bu.
+
+321
+01:50:18,068 --> 01:50:36,247
+Bu benim sözlüğüm, dinamik olarak oluşturacağım sözlüğüme. Şu an boyu 13, bu 14, 15, 16. Memorim ne kadar izin veriyorsa gidiyor. Bunlar dediği nedir? Binary karşılığı, sıfırın binary karşılığı, birin binary karşılığı, 13'ün binary karşılığı.
+
+322
+01:50:46,068 --> 01:51:11,427
+A, B ve C. Benim sanki alfabemde üç sembolüm var ve bunlarla bütün kelimelerimi yazıyorum diye düşünelim. Basit olsun diye. Ve sözlüğü A, B, C diye yazdım. Şimdi önemli olan bunun nasıl çalışacağı. Mavi A'dayım. A mavi. Önce bakıyorum. Bu kodbukta A var mı? Evet, kodbukta A var.
+
+323
+01:51:11,823 --> 01:51:28,323
+Benim amacım en uzununu bulabilmek. O zaman bunu biraz daha büyüttü. AB yaptım. AB sözlükte var mı? Hayır yok. Öyleyse üçüncü satıra AB'yi yerleştirdim.
+
+324
+01:51:39,699 --> 01:51:43,720
+A'nın kodu neydir? Sıfır. Sıfırı buraya yazmam lazım.
+
+325
+01:51:46,119 --> 01:51:54,479
+AB'yi sözlükte yok diye ekledim ama işlenmemiş olan B olduğu için B'yi kırmızıyla gösterdim.
+
+326
+01:51:54,479 --> 01:52:00,260
+B sözlükte var mı? Evet var. Acaba daha uzunu olabilir mi?
+
+327
+01:52:00,979 --> 01:52:04,199
+BB'ye bakıyorum. BB sözlükte yok.
+
+328
+01:52:04,692 --> 01:52:22,811
+En uzunu B olarak B'yi bulmuştum. B'nin indisini 1, output'a 1 yazıyorum. Sözlüğün dördüncü sırasına getiriyorum. BB'yi yazıyorum. İşlenmemiş olanı nedir? En son B işlenmedi. Bunu yeşil yaptım.
+
+329
+01:52:23,283 --> 01:52:43,843
+B sözlükte var mı? Evet, var. Daha büyüğünü arıyorum. B, B sözlükte var mı? Evet, B, B sözlükte var. Daha da büyüğünü arıyorum. B, B, A sözlükte var mı? Hayır, yok. Sözlükte en uzun ne vardı? B, B vardı. B, B'nin indeksi 4.
+
+330
+01:52:49,555 --> 01:53:17,115
+Üçlü olarak buraya ekliyorum. İşlem görmemiş olanı ne? Şuradaki A. A'yı aldım. A sözlükte var mı? Evet var. Biraz büyüttüm. A, A sözlükte var mı? Yanındaki A'yı aldım. A, A sözlükte yok. Sadece A vardı. A'nın indisi nedir? Sıfır. Sıfırı buraya yazdım. A, A'yı aldım. En son sıraya yazdım.
+
+331
+01:53:17,908 --> 01:53:19,348
+Eeeh...
+
+332
+01:53:22,644 --> 01:53:36,044
+Evet, A'yı en son sıraya yazdım. En son A'da kaldım. A kırmızı. A sözlükte var mı? Evet var. Yanına büyüttüm. C'yi ekledim. A, C sözlükte var mı? Hayır yok.
+
+333
+01:53:36,564 --> 01:53:48,264
+Öyleyse sözlükte olan A'dı. A nedir? 0. 0'ı yazdım. Buraya gittim. A, C'yi koydum. A, C'yi buraya koydum. İşlenmemiş olan nedir? C.
+
+334
+01:53:49,140 --> 01:54:11,280
+C'ye geldim. C sözlükte var mı? Evet var. Büyüttüm. C, B. C, B sözlükte var mı? Hayır yok. Öyleyse C'yi yazacağım. C'nin indisi nedir? 2. Buraya 2'yi yazdım. C, B'yi getirdim. Buraya koydum. İşlem yapılmayan hangisi? B. B'yi maviyle aldım.
+
+335
+01:54:17,140 --> 01:54:41,579
+BB sözlükte var mı? Evet var. Bunu büyüttüm. BBA'yı aldım. BBA sözlükte var mı? Evet var burada. Bunu biraz daha büyüttüm. BBAB'yi aldım. BBAB sözlükte yok. En uzun hangisiydi? BBA. Yani şu yeşil. İndeksi nedir? 5. Öyleyse 5'i buraya aldım.
+
+336
+01:54:42,036 --> 01:55:10,036
+B, B, A, B'yi, Mavi'yi buraya yazdım. Burada işlenmemiş olan en sondaki B var. En sondaki B'deyiz. B sözlükte var mı? Evet var. Genişlettim. B, B, A sözlükte var mı? Evet var. Genişlettim. B, B, A sözlükte var mı? B, B, A da sözlükte var. Genişlettim. B, B, A, A sözlükte var mı? B, B, A, A sözlükte var.
+
+337
+01:55:10,036 --> 01:55:30,016
+Var olan neydi? BBA. BBA nerede? 5'te. 5'i buraya yazdım. Buradaki şu kuyuk kiremit rengi BBA'yı buraya koydum. En son A'la işlem yapılmadı. A'yı aldık. En son adımdan. A sözlükte var mı? Var.
+
+338
+01:55:30,644 --> 01:55:55,324
+Büyüttüm. AC sözlükte var mı? AC sözlükte var. 7. sırada. Büyüttüm. AC sözlükte var mı? Bakıyorum. AC sözlükte yok. Öyleyse AC'yi aldım. Output stream'e yazdım. Yani 7'ye. Sonra AC'yi aldım. 11. indekse koydum. Bunun en son A'sıyla yoluma devam ediyorum.
+
+339
+01:55:56,500 --> 01:56:15,960
+Yanında C var. A, C var mı sözlükte? Evet, A, C var. Büyülttüm. A, C var mı sözlükte? Evet, A, C da var. Büyülttüm. A, C, A, A sözlükte var mı? Yok. Sadece sözlükte olan A, C. A, C nerede? 11'de. 11'e buraya yazdım.
+
+340
+01:56:16,979 --> 01:56:38,819
+Sonra A, C, A, A'yı 12. sıraya yazdım. En sonundaki A'la yoluma devam ediyorum. A sözlükte var mı? Var. AB sözlükte var mı? Var. Büyüttüm. ABB sözlükte var mı? Var. 5. Bunu daha büyütemiyorum. Artık bitti. ABB nedir? 5. 5'i alıyorum.
+
+341
+01:56:40,115 --> 01:56:59,055
+Ve ben karşı tarafa şu output stream'i gönderiyorum. Karşı tarafın yapacağı şey benim gibi sadece şu üçlüyle başlayacak ve buradaki değerleri okuyarak açmaya çalışacak. Nasıl mesela?
+
+342
+01:56:59,956 --> 01:57:07,956
+Adpost Stream'de 0 var. Nedir? Buraya bakacak 0 A'dır. Demek ki ilk yazılacak şey A.
+
+343
+01:57:08,435 --> 01:57:36,055
+Fakat bunun bir ikincisi geliyor ki, o ikincisi burada olmadığı için en son satıra yazılıyor. Acaba ikincisi nedir? B midir? Bu bir, B var. Öyleyse burada B var. Şimdi bakalım doğru mu? A sözlükte var mı? Evet var. Buraya sıfır yazdık. A, B sözlükte yok. Ekledik. Sonra B'de sıra. Burada ne var?
+
+344
+01:57:36,435 --> 01:58:01,475
+B'yi sözlüye yazdık. Evet, buraya geldik. Bunun sonunda B olarak 1 yazmışım ama bunun bir üçüncüsünü alıyorum ki bunun sonuna ekleyeceğim. Bunun üçüncüsü ne olabilir? Bunun üçüncüsü, bunun arkasında gelen bildiğimiz bir şey yok. Daha bu BB'yi koymadık. Buradayız. Öyleyse bunun arkasından bir BB geliyordur.
+
+345
+01:58:01,939 --> 01:58:23,339
+Bu B'yi yazacak bir diye, bu BB'yi dört diye buraya ekleyecek. Bir sonrakinde bu BB'yi görecek. Bu BB dörttür. Burada bir BB var demektir. Bu şekilde devam edecek. Sonra arkasından bir tane A geliyor ki sıfır yazmışım.
+
+346
+01:58:24,948 --> 01:58:52,088
+Sıfır yazmışım. BBA'yı da buraya ekliyorum. Bunu anlatırken birazcık karıştırmış olabilirim ama yapılan şey artık şununla başlıyorsun açan taraf. Bunu alıyor kendisine ve bunu kendisine alıyor ve buradaki değerlerde sözlükte artık ne varsa onu koyuyor. Sözlüğe eklenmesi gerekenleri ekliyor. Karşı tarafta bunun aynısını oluşturuyor.
+
+347
+01:58:52,511 --> 01:59:10,251
+Ama burada benim sözlümün boyunu ben sabit bıraktım. Limitsiz bıraktım. Çok memorim var ne yaparsam yapayım dolduramıyorum. Sözlüm gidebildiği yere kadar gidiyor.
+
+348
+01:59:21,587 --> 01:59:25,867
+Sınır koyayım kendime. Şunları da sileyim.
+
+349
+01:59:29,844 --> 01:59:47,164
+Başarabilirsem. Evet, şimdi diyeceğim ki bağlı diyorum senin sözlüğün 8 boyutunda. Yani şunlar yok. 8 tane code word yazabilirsin. Onun dışında hiçbir şey yazamazsın. Bunu oluştur diyor bana. Tamam.
+
+350
+01:59:56,692 --> 02:00:11,412
+AB'yi buraya ekledim. AB'yi ve ben artık B'deyim. B sözlükte var mı? Var. BB sözlükte var mı? Yok. BB'nin indisi nedir? Bir. BB'yi de geldim. Buraya yazdım.
+
+351
+02:00:12,115 --> 02:00:32,416
+Sonra bu B'deyim. B sözlükte var mı? Evet var. B, B sözlükte var mı? Evet var. B, B, A sözlükte var mı? Yok. En son B, B'yi buldum. Buraya dördü ekledim. B, B, A'yı da buraya koydum. Ben en sonuncusu yani şu A'dayım.
+
+352
+02:00:33,235 --> 02:00:54,675
+A sözlükte var mı? Evet var. A A sözlükte var mı? Hayır yok. A'nın kodu nedir? 0. A A'yı da buraya ekledim. Şu ikinci A'dayım. A sözlükte var mı? Var. A C sözlükte var mı? Yok. A'yı yazdım. 0. A C'yi yazdım buraya.
+
+353
+02:00:55,667 --> 02:01:08,827
+Artık sözlüğüm doldu. Sözlüğe yeni bir şey yazamıyorum. Peki ne yapacağım? Geldim C'deyim. C sözlükte var mı? Var. C, B sözlükte var mı? Yok. Sadece C'yi yazacağım. İki.
+
+354
+02:01:09,427 --> 02:01:19,907
+Sonra B'ye geldim. B sözlükte var mı? Var. B, B sözlükte var mı? Var. B, B, A sözlükte var mı? Var. B, B, A, B sözlükte var mı? Yok.
+
+355
+02:01:20,287 --> 02:01:30,447
+Öyleyse B, B, A'yı yazacağım. 5 sözlükte olduğu için ve bu B'ye geldim. Doğru mu? B, B.
+
+356
+02:01:31,091 --> 02:01:53,071
+B, B, A'yı yazdım. B yok. Şu B'ye geldim. B sözlükte var mı? Evet, var. B, B sözlükte var mı? Evet, var. B, B, A sözlükte var mı? Evet, var. B, B, A, A sözlükte var mı? Yok. Öyleyse 5'i yazdım. En son şu A'dayım.
+
+357
+02:01:53,587 --> 02:02:01,268
+Bu A sözlükte var mı? Var. A, C sözlükte var mı? Var. A, C sözlükte var mı? Yok. A, C nedir? 7. 7'yi yazdım.
+
+358
+02:02:02,036 --> 02:02:03,676
+Bu A'ya geldim.
+
+359
+02:02:04,235 --> 02:02:05,515
+A sözlükte var mı? Var.
+
+360
+02:02:05,636 --> 02:02:07,115
+AC sözlükte var mı? Var.
+
+361
+02:02:07,235 --> 02:02:08,996
+AC sözlükte var mı? Yok.
+
+362
+02:02:09,376 --> 02:02:11,336
+AC'yi yazdım. 7.
+
+363
+02:02:12,015 --> 02:02:13,256
+Ve bu A'ya geldim.
+
+364
+02:02:13,695 --> 02:02:15,076
+A sözlükte var mı? Var.
+
+365
+02:02:15,416 --> 02:02:17,115
+AB sözlükte var mı? Var.
+
+366
+02:02:17,556 --> 02:02:19,716
+ABB sözlükte var mı? Yok.
+
+367
+02:02:20,096 --> 02:02:21,775
+AB'yi yazdım. 3.
+
+368
+02:02:21,775 --> 02:02:23,216
+Bu B'ye geldim.
+
+369
+02:02:23,456 --> 02:02:25,275
+B sözlükte var mı? Var. 1.
+
+370
+02:02:25,648 --> 02:02:40,648
+Yani eğer sözlüğümün boyutunu bir şeyle sınırlandırırsa, sözlüğüm dolana kadar ekliyorum. Ondan sonra hep sözlükte var olanları yazıyorum. Yeni patronlar oluşturmuyorum.
+
+371
+02:02:40,648 --> 02:02:53,127
+Fakat sözlüğüm boyutuna sınır koymazlarsa, sözlüğüm boyutuna sınır koymazlarsa, sözlüğüm dolana kadar bu dolma işlemi belki dökümanımın tamamı bitince olacak.
+
+372
+02:02:53,648 --> 02:02:59,307
+Bunun doğal dilde bir şey olduğunu zannedin. Artık belirli patronlar hep tekrar edecek.
+
+373
+02:02:59,747 --> 02:03:06,347
+Dökümanın 10. 20. sayfasına geldiğinizde artık sözlüğe yeni şeyler eklemenizde pek gelmeyecek.
+
+374
+02:03:06,347 --> 02:03:18,127
+Daha önceden mutlaka o ikili ya da üçlü olarak geçmiş. Ancak yeni yeni kelimeler girerse, dökümanın içerisine girerse onların sözlüğe eklenmesi gerekecek.
+
+375
+02:03:18,507 --> 02:03:20,467
+Ve ekleyerek devam edeceğiz.
+
+376
+02:03:21,648 --> 02:03:35,207
+LZV yöntemi. Sorusu olan var mı? Varsa lütfen sorun. Yoksa bir tane örnek yapalım. Atacağım şu an bir örnek atacağız. Şuraya bir boş slide açayım ben.
+
+377
+02:03:36,243 --> 02:03:46,304
+Sizde önünüzde de kağıt kalem varsa lütfen kağıt kalem üzerinde denemeye çalışın ki anlayıp anlamadığımızı bulalım.
+
+378
+02:03:46,304 --> 02:03:52,304
+Benim elimde şöyle bir şey var. Benim elimdeki inputum.
+
+379
+02:04:00,304 --> 02:04:02,543
+Şunu da biraz büyüteyim.
+
+380
+02:04:03,123 --> 02:04:24,743
+İmputunuz bu. 36 verdim. Kodbook'un da boyu 5. 5 tane sembol yazabilirsiniz. Ve böyle bir şeyi LZV ile kodlamak istiyorsunuz. Nasıl kodlarız?
+
+381
+02:04:29,460 --> 02:04:54,480
+Ne yapacağız arkadaşlar? Bir codebook'u hazırlayalım. Kalemimizi alalım. Beş tane code word yazacaksam sıfır, bir, iki, üç ve dört. Önce bu codebook'u neyle dolduruyorduk? Elimdeki alfabeyle. Benim elimdeki alfabe kaç tane şeyden oluşuyor alfabe?
+
+382
+02:04:55,475 --> 02:05:11,455
+Alfabem A ve B'den oluşuyor. İki tane sembol var. A ve B. A'yı sıfıra yazdım. B'yi de buraya yazdım. Şimdi bunu LZV ile kodluyorum. Nasıl kodlayacağız?
+
+383
+02:05:13,895 --> 02:05:20,395
+Önce neye bakmam gerekiyor? A sözlükte var mı? Evet var.
+
+384
+02:05:21,332 --> 02:05:40,952
+O zaman bunu büyütüyorum. AB sözlükte var mı? Hayır, yok. AB'yi eklemeden önce A'yı sözlükte bulduğum için sırasını Output Stream'e yazdım. Sıfır. Neyi koyacağım pattern olarak? İkinci sıraya AB'yi koyacağım.
+
+385
+02:05:42,311 --> 02:05:45,832
+A Output Stream'e yazıldığı için sıra nerede? B'de.
+
+386
+02:05:46,515 --> 02:06:11,695
+B sözlükte var mı? Evet var. Büyüteceğim. B, B sözlükte var mı? Hayır yok. Sözlükte olan B'di. B'nin sırası nedir? Bir. Öyleyse biri buraya yazacağım. B, B'yi de üçüncü sıraya yazacağım. Ben şu B'yi kotladım tek B olarak. Bunu kotlamadım. Öyleyse sıra nerede? Şuradaki B'de.
+
+387
+02:06:12,275 --> 02:06:38,876
+B sözlükte var mı? Var. B A sözlükte var mı? Yok. Öyleyse B sözlükte vardı. Değeri 1 ise burayı 1'i yazdım. Sözlükte yoktu. Nerede kaldım? Şuradaki A'da. A sözlükte var mı? Var. A B sözlükte var mı? Var.
+
+388
+02:06:40,404 --> 02:06:52,464
+A, B, B sözlükte var mı? Yok. A, B sözlükte vardı. İkiyi yazdım. En son B yok. Ben bu B'deyim. B sözlükte var mı? Evet, var.
+
+389
+02:06:52,880 --> 02:07:20,420
+BA sözlükte var mı? Evet, var. BA, A sözlükte var mı? Yok. Sözlüğü ekleyemiyorum. Sözlüğümde dört tane code word olacak. BA neydi? Dörttü. En son A kaldı. A sözlükte var mı? Var. AB sözlükte var mı? Var. AB, B sözlükte var mı? Yok. Sadece AB'yi koyacağım. İki. Ne kaldı sadece? B.
+
+390
+02:07:20,880 --> 02:07:23,340
+B sözlükte var mı? Evet, bir var.
+
+391
+02:07:24,120 --> 02:07:28,220
+Eğer sözlüğümün boyu sınırlıysa bu şekilde yapıyorum.
+
+392
+02:07:28,220 --> 02:07:30,220
+Sınırlı değilse...
+
+393
+02:07:30,452 --> 02:07:54,011
+Burayı ilave etmeye çalışıyorum. Neleri ilave etmiş oluruz? Bir bakalım. A sözlükte yok sıfırı yazdık. AB'yi ekledik. B sözlükte yok biri yazdık. BB'yi ekledik. B sözlükte var. BA da sözlükte yok. BA'ya ekledik. B'yi yazdık. 1.
+
+394
+02:07:55,539 --> 02:08:05,320
+A'ya baktık sözlükte var. AB sözlükte var. İki yazdık. ABB'yi ekledik. Buraya ABB eklenecek.
+
+395
+02:08:06,195 --> 02:08:28,796
+Beşinci sıraya. Eğer sözlüğümü sınırlandırmasalardı. A, B, B'yi yazacak ama A, B'yi koyacak. A, B nedir? İkiyi koydu. B'deyim. B sözlükte var. B, A sözlükte var. B, A, A sözlükte yok. B, A var. B, A'yı dördü koyduk.
+
+396
+02:08:29,043 --> 02:08:50,444
+B, A, A'yı buraya ekledim. Şu A'dayım. Bu A'dayım. A sözlükte var mı? Var. A, B sözlükte var mı? Var. A, B, B sözlükte var mı? Var. Gerisi yok, boş. A, B, B'de neydi? Beşti. Buraya da beşi yazdım.
+
+397
+02:08:51,667 --> 02:09:12,787
+Peki bu inputu bana LZ78 ile kodla deselerdi nasıl yapacaktım? Yine sözlüğüm var. Sıfırıncı indis, birinci indis, ikinci indis, üç, dört, beş diye gitsin. Sıfıra neyi koydum?
+
+398
+02:09:13,939 --> 02:09:21,599
+A'nın mal olsun sıfır. 1'e neyi koydum? A'yı koydum. 2'ye de B'yi koydum.
+
+399
+02:09:22,719 --> 02:09:27,759
+Şimdi, hayır böyle miydi? Evet böyleydi.
+
+400
+02:09:28,599 --> 02:09:35,539
+Bunun ne geldi ilk önce? A. A hiçbir yerde yok. A'yı koydum.
+
+401
+02:09:35,939 --> 02:09:39,319
+Sonra B geldi. B hiçbir yerde yok.
+
+402
+02:09:41,427 --> 02:09:52,667
+B'yi koydum. Sonra bir saniye şuradaki şeyde nal var mıydı yok muydu? Evet nal vardı ekliyorum ekliyorum.
+
+403
+02:10:02,292 --> 02:10:28,652
+Sonra ne yapacağım? B, B sözlükte var mı diyeceğim. B sözlükte var mı? Var. Yazdım. B sözlükte var mı? Var. B, A sözlükte var mı? Yok. B, A'yı buraya yazdım. Ama bunun token'a ne olacak? İlk B'de var 2. Arkasına A'yı yazdım.
+
+404
+02:10:29,332 --> 02:10:43,852
+Sonra bakacağım A sözlükte var mı? Var. AB sözlükte var mı? Yok. Buraya AB'yi yazdım. Bunun konu ne olacak? A'nın olduğu yer 1. Arkasına B'yi yazdım.
+
+405
+02:10:44,532 --> 02:11:07,872
+Bunların hangisine geldiğimi şu an karıştırmış durumdayım. B'deyim. B sözlükte var mı? Evet var. B A sözlükte var mı? Evet var. B A A sözlükte var mı? Hayır yok. B A A'yı buraya yazdım. Bununki nedir? B A'sı burada olduğu için 3. Bunun arkasına A diye gittim.
+
+406
+02:11:08,243 --> 02:11:35,743
+Bunları da bu şekilde yapıyoruz. LZ78 böyle. Bu 77 olsaydı ne olacaktı? Kayan pencere olacaktı. Bunun içerisine işte nereye kadar gelecekti? A hiç çakışma yok, B hiç çakışma yok. Şurada B, A, B kaldığında bakacak. Burada bir çakışma var. O zaman ne olacak? Çakışma birinci pointer'da bir. Kaç tane çakıştı? Bir tane çakıştı.
+
+407
+02:11:36,243 --> 02:11:55,003
+Çakışmayanı hangisidir? A. A'yı buraya yazacağım üç token olarak. Bunun içerisine B ve A girmiş olacak. Bunlar çıkacak. B. B burada bir çakışıyor. Daha ileride çakışma var mı? Evet burada bir çakışma var. Sonra ikiliyi arayıp üçlüyü, dörtlüyü bulana kadar devam edecektik.
+
+408
+02:12:04,243 --> 02:12:31,043
+Sıkıştırma ile ilgili bir şeyler size anlatacağım. Çünkü orada görüntü işlemeyi bilmemiz gerekiyor. Quantization işlemleri için. Neyse onu o zaman bahsederiz. Yine bir ara verelim. Bu sefer 10 dakikalık ara yeterli. 10 dakikalık ara verelim. 14, 25'te yine bir araya gelelim. Son slide'ımız 12 tane falan. Onları da hızlıca bitirelim. Tamam mı?
+
+409
+02:12:33,108 --> 02:12:35,708
+Tamamdır hocam. Tamam. Hadi görüşmek üzere.
+
+410
+02:24:11,796 --> 02:24:16,655
+Bölüm 7 diye görüyor musunuz? Evet hocam.
+
+411
+02:24:16,655 --> 02:24:22,056
+Sadece çevireceğim. Bakayım değişecek mi? Daha çevirmedim. Şimdi değişti mi?
+
+412
+02:24:22,056 --> 02:24:29,335
+Değişti hocam. Tamamdır. Son bölüm olarak görüntü sıkıştırmadan biraz size bahsedeceğim.
+
+413
+02:24:33,647 --> 02:24:40,887
+Başta bir ön işleme adımı var. Arkasından gördüğümüz tüm yöntemleri görüntüye uygulayabiliriz.
+
+414
+02:24:40,887 --> 02:24:52,307
+Ama şunu unutmayalım. Nasıl bütün yöntemler tekstlerde başarılı olmuyorsa, her yöntemde görüntü işleminde, görüntü datasında başarılı olmayacaktır.
+
+415
+02:24:52,768 --> 02:25:00,847
+En iyilerini bulmaya çalışacağız. Ön işlem dediğimiz şey nedir? Bir tekste ön işlem aslında yok.
+
+416
+02:25:01,647 --> 02:25:29,647
+Bu örneğe bakalım.
+
+417
+02:25:29,647 --> 02:25:34,407
+Bunları da görüntü dersinde alanlar bilir bu yöntemlerin neler olduğunu.
+
+418
+02:25:34,907 --> 02:25:42,527
+Ya da veri madenciliği dersi almışsınız, oralarda da kullanmış olduğumuz ya da NLP'de de kullanmıştınız.
+
+419
+02:25:42,527 --> 02:25:50,527
+Kümeleme yöntemleri tamamıyla bana renk sayısını azaltmada yardımcı olacak yöntemler.
+
+420
+02:25:50,927 --> 02:25:54,367
+Çünkü elimde bir True Color resim varsa düşünün.
+
+421
+02:25:54,647 --> 02:25:57,448
+True Color 8-3 tane paletim var.
+
+422
+02:25:57,647 --> 02:26:14,907
+Red Green Blue, 888, 24, 2 üzeri 24 bit neyse bu sayı benim o kadar rengim var. Benim gözüm o kadar rengi ayırt edemez. Ayırt edemeyecek renkleri de resim üzerinden çıkarmam gerekiyor.
+
+423
+02:26:14,907 --> 02:26:24,128
+Şimdi bunlara geçerken bir sürü resim formatları var. Bu resim formatlarından bahsedelim. Mesela bir GIF formatı var.
+
+424
+02:26:24,595 --> 02:26:42,236
+Bu GIF formatı acaba arka planda ne yapıyor? İşte 87 yılında kompüsör tarafından geliştirilmiş. Özünde LZV yöntemi var. GIF algoritmasının yani resim formatının arkasında LZV var.
+
+425
+02:26:52,595 --> 02:27:09,415
+LZV'de ben patronlar saklıyordum ya, orada geçen şeyler 256 tane farklı renk. Renkli fotoğrafların sıkıştırılmasında yetersiz kalıyor. Daha çok greyscale resimlerde çok daha başarılı bir yöntem.
+
+426
+02:27:14,963 --> 02:27:40,684
+Alınmış bir yöntem olduğu için kullanım oranı birazcık düşük. Çünkü ben bunu alıp kendi uygulamada herhangi bir şeyde kullandığım vakit ticari bir uygulamada buna telif hakkı ödemem gerekiyor. O yüzden ticari amaçlı GIF'i kullanmıyorlar. Ama burada bilmeniz gereken şey LZV, GIF formatının içinde kullanılan bir renk.
+
+427
+02:27:40,816 --> 02:27:42,636
+Ama bir yöntem.
+
+428
+02:27:43,059 --> 02:28:10,939
+TİF formatı var hatırlarsanız. Bu da Adobe tarafından geliştirilmiş bir yöntem. Bunun içinde de LZV yöntemi kullanılıyor. 5.0 sürümünde ama 92'deki 6.0 sürümünün içerisinde de JPEG sıkıştırmasını bunun içerisine eklemişler. LZV çalıştığı vakit bir kayıp olmadan çalışması sağlanılıyor.
+
+429
+02:28:11,059 --> 02:28:39,059
+JPEG kullandıklarında da kayıba izin veriliyor. O zaman resmin boyutu kayıba izin verdiğim için biraz daha küçülebiliyor. Çok renkte olan resim dosyalarında iyi performans vermese de hızından dolayı tercih edilen bir yöntem. Ama özünde gördüğünüz gibi LZV var. Burada JPEG de kullanılma. JPEG'in özünde de Hufman'ın olduğu.
+
+430
+02:28:39,059 --> 02:28:48,899
+olduğunu göreceksiniz bir başka sıkıştırma png var resim formatı Porto bulmak çok grafik bu
+
+431
+02:28:49,940 --> 02:29:07,979
+GIF'e karşı, GIF ve TİP standartlarına karşı geliştirilmiş açık bir kod. Ticari amaçla da kullanılabilir. 46 bit gerçek renk yani 200 üzeri 48 tane renk sayı neyse o kadar renge kadar destek veriyor.
+
+432
+02:29:07,979 --> 02:29:17,060
+Gray tonlamasında da 16 bite kadar destek veriyor. Yüksek oranda bir sıkıştırma gerçekleştiriyor bu PNK.
+
+433
+02:29:17,940 --> 02:29:32,159
+Altında Z-Lip var ve deflate, veri sıkıştırma yöntemlerinde PNG formatı kullanılıyor. Çok basit bir format. Aslında bitme formatı gibi kendine özgü bir resim formatı.
+
+434
+02:29:33,427 --> 02:29:56,087
+Bunun dışında yine kullandıklarımız arasında zip ve gezip formatı var mesela. Birden fazla dosyayı, içerisinde tekst varsa, görüntü varsa kullanabildiğimiz zip ve gezip formatlarında elimizdeki veri bloklara ayrılıyor. Bu blokların büyüklüğüne ben kendim karar veriyorum. Yazılımı kodlayan kişi olarak.
+
+435
+02:29:56,087 --> 02:30:00,000
+Ve bunun içerisinde LZ77 yöntemi kullanılıyor.
+
+436
+02:30:00,000 --> 02:30:16,880
+DZ77'nin bir türeviyle Static Hoffman kullanılıyor. Türevi dedik çünkü burada kayan bir sözlük var. 32 kilobaytlık bir kayan sözlük. 258 baytlık da kaynak kod alanı kullanıyor.
+
+437
+02:30:16,880 --> 02:30:27,880
+Buradaki bu iki window'un da boyutlarını kendisi karar vermiş olduğu için bir değişkenlik gösteriyor. Yani ben burada gidip 64 kilobaytlık kullanılıyor.
+
+438
+02:30:28,000 --> 02:30:39,939
+Kilobaktik bir kayan sözlük de kullanabilirim. Girişi işte belirli bloklara ayrılıyor. Bu blokları da kodu yazan algoritma kendisi karar veriyor. Blokların uzunlukları ne olacak?
+
+439
+02:30:40,600 --> 02:30:56,000
+Farklı farklı uzunluklarda, değişkin uzunluklarda bloklar da alabilir. Sabit uzunlukta bloklar da alabilir. PKZip, Unzip, Arc, Lit diye başka yine birden fazla dökümanı sıkıştırabilen algoritma.
+
+440
+02:30:56,000 --> 02:31:14,180
+Bunların içerisinde de PK-Ark'ta mesela LZV ve Hufman kullanılıyor. Anzip'te LZV ve VLE kullanılıyor. Diğer bir tanesinde şunu çekeyim. Şanon Fano LZ77 kullanılıyor.
+
+441
+02:31:24,000 --> 02:31:52,000
+Bildiğimiz, görmüş olduğumuz yöntemlerin birleşimi ve karışımı. Biriyle, RL ile diyelim ki bir ön işlem yapıyor. Arkasından Huffman uyguluyor. Ya da ilk başta renkleri azaltmak için bir quantization yöntemi kullanıyor. Arkasından bildiğimiz, bu görmüş olduğumuz yöntemlerden bir tanesini kullanıyor. Eğer resimler içerisinde bu renkli görüntü de olabilir, hep tekrar eden...
+
+442
+02:31:52,000 --> 02:32:20,000
+Bu da kullanılan patronlar varsa mesela puantiyeli bir resim var. Siyah üzerine beyaz beyaz puantiyeler var. Bunda LZV yöntemleri de başarılı olabilir. Çünkü çok uzun bir siyah piksel, kısa kısa beyaz pikseller var. LZV de kullanabilirsin veya RL de kullanabilirsin. Sen zaten datana göre uygun yöntemleri kullanıp en iyi sonucu hangisi veriyorsa onunla yoluna devam et.
+
+443
+02:32:20,000 --> 02:32:23,159
+Burada son olarak
+
+444
+02:32:25,012 --> 02:32:50,832
+JPEG ve JPEG 2000'den bahsedeceğim. JPEG, Loiceless, kayıpsız olanı var. Aslında JPEG'in farklı versiyonlarında kendi içerisinde kayıp oranını da sen ayarlıyorsun. Evet, bunu JPEG olarak save et ama %25 kayıbı ben kabul ediyorum ya da %40 kayıbı ben kabul ediyorum.
+
+445
+02:32:50,832 --> 02:32:53,012
+%50 kayıbı ben kabul ediyorum.
+
+446
+02:32:53,012 --> 02:33:12,932
+Algoritmaya sen diyorsun ki, bundan bana kazanç sağlayacak şu kadarlık bilgiyi at. O at dediğimiz bilgi aslında gözümün algılamakta zorlandığı renkler. O renklerin yerine daha fazla sıklıkla kullanılan, gözümün de algılabildiği renkler kullanıyorum.
+
+447
+02:33:21,012 --> 02:33:38,452
+Ayırt edebildiği yeşillerle ifade ediyorum, göremediğim diğer yeşilleri. Böylece renk sayısı azalıyor. Renk sayısı azaldığı vakit kullandığım prefiks kodlama hangi yöntemse daha az kod üretiyor. Kod daha az üretilirse header daha küçük oluyor.
+
+448
+02:33:49,012 --> 02:34:07,312
+İkisi arasındaki fark nedir? JPEG içerisinde Kufman'ı kullanıyorum. Kayıplı ya da kayıpsız gerçekleştirebiliyorum. Fakat JPEG 2000'i kullanıyorsam bu tamamıyla kayıpsız bir sıkıştırma yapıyor.
+
+449
+02:34:17,012 --> 02:34:43,592
+DCT, Discrete Cosen Transform. Sinyal işleme dersi alanlar bilir, resimlerin içerisinde bir yüksek frekanslar, bir de düşük frekanslar vardır. Ben düşük frekansları resimden çıkarmaya çalışıyorum. DCT bu işlemi görüyor. Bunu yaparken de float sayılarla, yani bölme işlemleri yapıldığı için mutlaka kayıplar olabiliyor.
+
+450
+02:34:45,012 --> 02:35:07,172
+Bu bir transform yöntemi. Bu Weavlet Transform'unu da kullanan JPEG 2000 içerisinde de bu kullanılıyor, görüntü içerisinde. Fakat kayıp yapmıyor, kayıpsız bir sıkıştırma veriyor. Çünkü Weavlet Sıkıştırma, Weavlet Transform'u, DCT Transform'una göre daha başarılı bir transform yöntemi.
+
+451
+02:35:07,664 --> 02:35:25,664
+Şimdi ben birazcık JPEG üzerinde durmak istiyorum. Genelde çoğumuzun kullanmış olduğu resim formatı JPEG. Bu JPEG nedir? JPEG içerisinde discrete cosine transform dediğim, bir ayrı kosinüs dönüşümü dediğimiz bir standartı kullanıyor.
+
+452
+02:35:25,664 --> 02:35:35,664
+Sıkıştırmada kayıp oranı var. Bunu belirleyen Q diye matrislerim var. Eğer ben resimde yüzde elli sıkıştırmayı...
+
+453
+02:35:35,664 --> 02:36:03,664
+Eğer bu yüzdeyi kabul ediyorsam yüzde 45 ya da yüzde 25 bu yüzdeliğim neyse sıkıştırmadaki kabul edebileceğim. Onlar için önceden hazırlanmış Q diye isimlendirdiğim Quantization'ın Q'su bu. Matrisler kullanılıyor. Bu matrislerden herhangi birini kullanabilir. Ben sıkıştırma kayıp oranını ne kadar seçmişsem. 24 bit renk derinliğine sahip resimlerde çok iyi sonuçlar veriyor.
+
+454
+02:36:03,664 --> 02:36:23,884
+O yüzden sayısal fotoğrafçılık da kullanılıyor. Yani dijital kameralarla fotoğraf çektiğimizde onu JPEG standartında indirebiliyorum. Öyle saklıyor çünkü. JPEG birçok görüntü sıkıştırma yönteminin bir araya getirilmesiyle oluşturulmuş bir standarttır.
+
+455
+02:36:31,664 --> 02:36:59,084
+Teknik İşlem Adımı var JPEG'te. Onu göstereceğim. Sıkıştırma ve açma süreleri tek algoritmaya sahip olan kayıpsı sıkıştırma yöntemlerine göre daha uzundur. Evet, belki sıkıştırma ve açma süreleri arka arkaya birkaç tane yöntem kullandığı için daha uzun süre alabilir. Fakat süreni yerden mi kazanmak, zamandan mı kazanmak buna karar vermek zorundasın.
+
+456
+02:36:59,664 --> 02:37:21,804
+Eğer senin için daha önemli ise zamandan vereceksin. Ama bu zamanda da öyle dakikalar falan süren bir şey değil. Yani mikrosaniyeler kadar. 50 mikrosaniye sürmesinde 60 mikrosaniye sürsün. Yani bizim günlük hayatımızda yapmış olduğumuz bu işlemlerde bunların hiç önemi bile yok.
+
+457
+02:37:27,664 --> 02:37:52,963
+Şurada bir fener var. Bu benim kaynak resim dosyam. Belki 24 bitlik bir resim. 2 üzeri 24 farklı renkle bu resim oluşturulmuş olabilir. Bu resim Red Green Blue paletlerine sahip. Ben RGB üzerinde de JPEG sıkıştırmasını yapabilirim. Ya da bunu farklı bir uzaya dönüştürerek onun üzerinde de yapabilirim.
+
+458
+02:37:54,484 --> 02:38:03,984
+Genelde bu isteğe bağlı, RGB olmuş ya da Yuh olmuş, bu isteğe bağlı Yuh da bir şey.
+
+459
+02:38:04,724 --> 02:38:26,463
+Transform yöntemi, başka HSV yöntemi var. Bunlar içerisinde önceden de şeyler çıkarılmış. Yani bir RGB resmi yuva çevirirken hangi matris kullanılır? Ya da HSV formatına transform'a çevirmek istiyorsam RGB'yi, hangi matris kullanılır? Bunlar literatürde var.
+
+460
+02:38:32,724 --> 02:38:42,644
+Dönüyordur inşallah. Kalemi alalım yine. Red var, Green var, Blue var. Bir de ben U formatına çevireceğim.
+
+461
+02:38:42,644 --> 02:38:44,923
+Mouse gel bakayım buraya.
+
+462
+02:38:51,731 --> 02:38:54,291
+Mouse'u göremiyorum. Siz görüyor musunuz?
+
+463
+02:38:57,940 --> 02:39:18,520
+Şurada Y var, U var, V var. Nasıl çevireceğim? Red paletindeki değeri 0.299 ile green'deki değeri piksel değerinin 0.587 ile pikseldeki blue değerini de 0.114 ile çarparsan Y paletinin değerini elde edersin.
+
+464
+02:39:25,940 --> 02:39:45,940
+Hsv'ye nasıl geçersin? Hsv'den ötekine nasıl geçersin? Bunlar bizimle paylaşılan matrisler. Biz bu matrislerden yararlanacağız. İster RGB'de çalışalım, ister RUA geçelim. Daha sonra burada örneklemeyi azaltacağız. Yani burada bizim yapacağımız şey...
+
+465
+02:39:50,772 --> 02:39:59,772
+Şurada onu anlatıyor. Örneklemeyi azaltacağız. Örneklemeyi azaltma işleminde de benim işte kaç tane paletim var? Red, green...
+
+466
+02:40:00,000 --> 02:40:10,139
+Blue'da olabilir ya da YUV diye paletlerim olabilir. Bu paletlerin her birini 8'e 8'lik bloklara bölüyorum.
+
+467
+02:40:10,139 --> 02:40:22,439
+Ve her bir paleti ayrı ayrı DCT'den geçiriyorum. Daha sonra çıkarılmış olan Quantization yöntemleri, nicemleme matrisleri var, Q matrisleri var demiştim.
+
+468
+02:40:22,840 --> 02:40:27,680
+Ben %25'lik kaybı kabul ediyorum, %40'lık, %50'lik.
+
+469
+02:40:28,000 --> 02:40:44,979
+Burada bunları gerçekleştiriyorsun. Daha sonra zigzag taramayla RLE yapıyorsun. Bu DCT'den gelmiş olan bir AC bir de DC değerler var. Bunları AC'leri RLE'den, DC'leri farklı bir modülasyondan geçiriyorsun.
+
+470
+02:40:44,979 --> 02:40:56,000
+Yani burada aslında yapılan şey bir quantization işlemi. Hazır matrisler var. Yine onları kullanıyorum. Ve daha sonra bana veriyi oluşturuyor. Sıkıştırılıyor.
+
+471
+02:40:56,000 --> 02:41:02,959
+Bu da başlık bilgileri. Bunu geri açarken de yine ters işlemi yapıyorum.
+
+472
+02:41:03,968 --> 02:41:12,008
+Quantization'ın ters işlemini yapıyorum. Sonra DCT'nin ters işlemini yapıyorum. Sonra paletleri çevirmenin ters işlemini yapıyorum.
+
+473
+02:41:12,427 --> 02:41:20,888
+Orijinal veriyi elde ediyorum. Eğer burada renk azaltmayı yapmışsam, orijinal veriyi olduğu gibi elde edemem.
+
+474
+02:41:20,888 --> 02:41:27,888
+Renk azaltmayı kullanmamışsam, olduğu gibi kullanmışsam da orijinal veriyi azaltabilirim.
+
+475
+02:41:31,968 --> 02:41:58,988
+Yani aldın RGB'den bunu yuva çevirdin. Bu isteğe bağlıdır diyor. Daha sonra downsampling yaptın. Belirli örnekleri aldın resim üzerinden. Onu göstereceğiz. Sonra resmi 8'e 8'lik bloklara böldük. Size de hani RL ile sıkıştırma yaparken küçük küçük bloklara bölün demiştim. İşte aynen onun gibi. Sonra her bir bloğa DCT kullandım.
+
+476
+02:41:59,968 --> 02:42:14,828
+Bu bilgilerini aslında Time Domain'inden Frekans Domain'ine çevirdim. DCT dönüşümünden sonra bir nicamlendirme matrisine soktum. Arkasından RLE'yi uyguladım.
+
+477
+02:42:22,227 --> 02:42:47,948
+Dinamik Kufman kullanılıyor burada da. Onları uyguluyorum ve resim sıkıştırılmış oluyor. Şimdi bir tane örnek olması lazımdı. Evet var. Renk dönüştürmeyi nasıl yapabilirsiniz? İşte dediğim gibi farklı hangi resim formatına çevireceksek onlar için hazırlanmış hazır şablonlarım var. RGB'yi yuva dönüştürürken de renk parlaklık.
+
+478
+02:42:48,340 --> 02:42:52,340
+Ve şey, luminans parlaklı...
+
+479
+02:42:53,363 --> 02:43:19,123
+Kromini diyemiyorum. Krominans değerlerini değiştiriyor birazcık. Yani parlaklığı biraz azaltıyor. Renklerin ayrıcılığını ortaya çıkarıyor. Örneklemeyi azaltmak ne demek? Downsampling yapacağız dedik. Burada da yapılan şey insan gözü parlaklığa daha çok, renkliyesi daha azdır.
+
+480
+02:43:21,363 --> 02:43:40,363
+Bu yüzden UVV değerlerini bir miktar azaltmak insan gözünde bozulmaya neden olmaz. Ben o bozulmayı...
+
+481
+02:43:40,976 --> 02:44:00,396
+Hissedemem. Resimleri ikiye ikilik şeylere bölüyor, parçacıklara bölüyor, 4 piksellik. Ve bunları U, Y, U, V de bunları değiştiriyor. Yani 8 bit olan bütün değerleri 4 bit ile ifade etmeye çalışıyor.
+
+482
+02:44:01,587 --> 02:44:16,828
+Ondan sonra arkasından DCT uygulanıyor dedik. Bu DCT de nedir? Şimdi benim amacım insan gözünün yüksek frekansları göremediği için resim üzerindeki yüksek frekansları elimine etmek.
+
+483
+02:44:16,828 --> 02:44:28,227
+Resim üzerindeki yüksek frekansları elimine etmek için yine resmi bu sefer 8'e 8'lik bloklara bölüyorum. Her bir bloğu DCT'ye uyguluyorum.
+
+484
+02:44:29,587 --> 02:44:56,788
+Bana 64 kas sayı çıkaracak. 8'e 8'lik bir bloğum var. 64 kas sayı çıkaracak. 8'e 8'lik bir matriz düşünün. Bunun şuradaki ilk matriz değeri yani sıfırıncı satır sıfırıncı kolondaki değer AC değeri. Diğerleri ise DC değerleri olacak. Şurada da öyle bir şey vermişimdir. Mesela şuradaki şu değer AC değeri.
+
+485
+02:44:57,587 --> 02:45:13,247
+Bunların hepsi DC değerleri ve ben bu yüksek olan DC değerlerini de yok etmek istiyorum, sıfırlamak istiyorum. Çünkü bunlar renkleri gösterecek olan değerler ve renklerin bu kadar hassas şeyleri göremiyor.
+
+486
+02:45:13,683 --> 02:45:34,663
+Tabii ben yanlış matriste gösterdim ama önemli değil. Şimdi elimde 8'e 8'lik bir matris var. Düşünün, elimde 8'e 8'lik bir matris var. Bu matriste de renk değerleri var. İşte 65, 72 piksel değerleri, işte 42, 47, 62. 8'e 8'lik bir değer var.
+
+487
+02:45:41,683 --> 02:45:54,283
+Eksi 28 ile artı 127 arasına sıkıştıracak. Bunu yaparken de bütün renklerden, buradaki renk piksellerinden 128 çıkaracak.
+
+488
+02:45:54,283 --> 02:46:07,383
+Yani elimdeki renkler 0 ile 256 arasında renk var. Bu 0 ile 256 arasındaki değerlerden 128'i çıkaracak.
+
+489
+02:46:09,683 --> 02:46:15,863
+27 arasında bir değer elde edilecek ve buna da T matrisi denecek.
+
+490
+02:46:15,863 --> 02:46:20,963
+Daha sonra da her matrise bir DCT uygulayacak.
+
+491
+02:46:21,103 --> 02:46:23,003
+Bu DCT uygularken de
+
+492
+02:46:23,347 --> 02:46:38,347
+Bir M matrisi hesaplayacak. M matrisinde de bakacak. İ ve J, benim matrislerimi İ ve J diye okuyorum. Eğer İ sıfırsa, J ne olursa olsun o göze bir bölü köken diyeceğim.
+
+493
+02:46:38,347 --> 02:46:51,347
+En buradaki matrisin boyutu. İ'nin sıfırdan büyük olduğu bütün değerlerde J ne olursa olsun şu işlemleri yapacağım. Ve İ, J değerlerini bulacağım.
+
+494
+02:46:51,347 --> 02:47:12,788
+M matrisinin EJ değerlerini bulacağım. DCT sonucunda elde etmiş olduğum M matrisi olacak. Şuradaki nicemleme yapmış olduğum hepsinden 128'i çıkardığımda bir downsampling işlemiydi. Onlardan oluşan matrise de T matrisi diyorum.
+
+495
+02:47:19,347 --> 02:47:34,347
+T matrisi ve M matrisinin kendisini çarpıyorum. Bir D matrisi elde ediyorum. Bu D matrisinin sol üst köşesi yüksek frekanslı değerleri sağ alt köşesi de...
+
+496
+02:47:35,347 --> 02:47:57,387
+Alçak frekans değerlerine barındırıyor. Sonra elimdeki bu D matrisine Quantization matrisini uyguluyorum. Bu Q'da kayıba göre değiştirilecek olan matris. %25 kayıp olabilir, onun matrisini kullanacağım. %50 kayıp olabilir, onun matrisini kullanacağım.
+
+497
+02:48:03,347 --> 02:48:22,387
+Bu sayılarını bölüp round ediyorum. İşte burada virgüllü sayılar çıktığı için yuvarladığımdan dolayı da bir takım kayıplarla geliyor bu C matrisi. O yüzden orijinale dönemiyorum. Çünkü burada iki buçuk sayısını diyelim ki iki olarak yuvarladım. Orijinal iki buçuğa dönemiyorum.
+
+498
+02:48:22,899 --> 02:48:37,599
+Burada yazdığım şeylerin hepsi aynı. Bu Quality Factor, kullandığım Q matrisleri dedim. Hazır olarak çıkarılmış. İnternete baktığınızda görebilirsiniz. Onları kullanıyorsunuz.
+
+499
+02:48:38,611 --> 02:49:05,371
+Nicemleme yaparken de elimdeki matristeki 0 ile 255 arasındaki sayıları eksi 128 ile artı 127 arasına dönüştürüyorum. Burada da DCT işlemini yapıyorum. Aynen burada olduğu gibi. Şurası DC olan kas sayı. Gözümün en çok algıladığı renk burada var. Daha sonra şu diakonelin altında da şeyler var.
+
+500
+02:49:06,611 --> 02:49:21,751
+Bunlar gözümün algılayamadığı renkler. Bunları yok etmeye çalışıyorum. Sadece AC olan şu mavilerde gittikçe birazcık sayıları artıyor. Şurada zikzak dönüşüm yaparak bilgilerimi okuyorum.
+
+501
+02:49:34,611 --> 02:49:59,611
+küçük parçaya bölmüşsem o kadarlık C matrisi var. Onları yan yana koyarak orijinal resmi oluşturuyorum. Bunun tersine dönecekken de buradaki C matrisini alıyorum. Ne kadarlık bir sıkıştırma yapmıştım. O aynı matrisle çarpıyorum. Sonra bir öncekinde buraları T'di. Artık T yerine R koyup o disklitten çıkarmış olduğum...
+
+502
+02:50:00,000 --> 02:50:10,200
+M matrislerini alıyorum. Bu şekilde çarpıp, artı 128'e ekleyerek DCT'nin ters dönüşümünü yaparak orijinal matrisimi elde ediyorum.
+
+503
+02:50:10,200 --> 02:50:22,380
+Tam olarak orijinal matrisi elde edemiyorum dedim ama hani şuradaki kayıplardan dolayı ufak tefek şeyler oluyor ama gözüm onu zaten hiç algılamıyor.
+
+504
+02:50:23,059 --> 02:50:31,739
+Yani jipekte sıkış bitmete aldım, jipeke çevirdim. Jipekten yeniden bitmeme çevirirken ufak tefek kayıplan oluyor.
+
+505
+02:50:31,739 --> 02:50:42,840
+Eğer şu işlem sırasında Q'yu ben kayıpsız yapacağım deseydim. Dur bulamıyorum. Nerede vardı? Q'yu kayıpsız yapacağım.
+
+506
+02:50:43,283 --> 02:50:54,384
+Diyorsam hiç bu işlemi yapmam. Bu bölme işlemini kullanmazsam kayıp yok demektir. Round işlemi de olmayacak. Orjinal verime dönebilirim.
+
+507
+02:51:03,443 --> 02:51:29,984
+Öncelikle resim üzerinde paleti değiştirmek istiyorsam değiştiriyorum. Sebep neydi? Gözüm çok aşırı parlaklığa daha duyarlı olduğu için parlaklığı ön plana çıkarıyorum. Sonra Downsampling yapıyorum. Elimdeki verileri eksi 127 ile artı 128 arasına dönüştürüyorum. Sonra DCT uyguluyorum. Burada bir takım.
+
+508
+02:51:30,708 --> 02:51:58,688
+Yüksek frekansları alıyorum, düşük frekansları alıyorum, yüksek frekansları eliyorum. Arkasından da bunlara RL'ye ve Hufman'ı uyguluyorum. Eğer burada da bir kayıp olmasını istersem, burada da Q matrislerinden geçiriyorum ve sıkıştırılmış jüphek dosyam oluşuyor. Bu matristen çok daha basit anlatılmış şeyler de görebilirsiniz. Benim kaynağımda bu resim kullanılıyor.
+
+509
+02:51:58,708 --> 02:52:15,747
+Ben bu resmi alıp buraya koydum. Daha az komplike olarak anlatılmıştır. Ama burada size göstermek, bahsetmek istediğim şey şudur. Resimin özel bir sıkıştırma yöntemi yok. Sadece resim üzerine özel ön işlemeler yapabilirsiniz.
+
+510
+02:52:26,708 --> 02:52:54,708
+Kümelerin kısaltmak için de kullanabilirsiniz. Öyle kümeler olacak ki, ona 16 renge düşürün. K-Mins kümleme algoritması 16 kümen var. Her kümenin içerisinde de o renk ve o rengin tonları olduğunu düşünün. Bir küme var, içinde mavi ve mavinin tonları, birinde kırmızının tonları, sarının, yeşilin tonları ve ben o kümelerin ortalamasını alarak bütün kırmızının tonlarına tek bir kırmızı.
+
+511
+02:52:54,708 --> 02:53:15,828
+Biraz daha hassas olmasını istiyorsam o kırmızıları da kendi içerisinde alt kümelere bölebilirim. Onun dışındaki yapılacak her şey tekste kullanmış olduğumuz sıkıştırma yöntemlerini burada kullanabiliriz. Redundancy azalmamışsa arkasından bir sıkıştırma yöntemi daha kullanırız.
+
+512
+02:53:22,708 --> 02:53:36,328
+Nasıl ölçüyoruz deyince görüntüde signal noise ratio'dan bahsetmiştik. Siyanlar diye, PCR diye sıkıştırma performansını ölçen metrikler vardı.
+
+513
+02:53:36,328 --> 02:53:44,587
+Orjinal ve sıkıştırılmış olan verinin datalarının farklarını birbirinden alarak, aralarındaki farkların karesel olarak.
+
+514
+02:53:45,172 --> 02:53:58,871
+En küçük minimum distance'ı o neydi? En küçük kareler yönteminde olduğu gibi minimum hatayı elde edinceye kadar o işlemleri yapabiliyorduk. Gerisi diğer yöntemlerimizin aynısı.
+
+515
+02:53:59,263 --> 02:54:23,063
+Evet, benim size kamerayı açmamışım. Veri sıkıştırmada anlatacağım şeyler bunlardan ibaret. Haftaya hayırlısıyla diyoruz, sınavımızı yapıyoruz. Sınavınızı onda başlatayım. Hem daha rahat gelin, soluklanmayın yetişmek için. Zaten bir saat, bir saat on beş dakika yeterli olacaktır.
+
+516
+02:54:24,915 --> 02:54:52,895
+O yani sınavınızı yapacağız ve hemen arkasından da seminerler başladı. Seminer takvimi drive'da duruyor. Halen orada kendi ismini göremeyen varsa, çünkü bazı arkadaşlarınız geç bildirde onları eklemeyi unutmuş olabilirim, lütfen bana haber versin. O takvimde bizim ismimiz yok hocam, bizi de yerleştirin diye yerleştireyim. Projelerinizi de seçip ve artık başlamanız gerekiyor arkadaşlar.
+
+517
+02:54:52,915 --> 02:55:04,036
+Arkadaşlar, gerçekten başlayın. Yoksa yetiştirmeniz zor olabilir. Sizin soracak bir sorunuz varsa sorunuzu alayım. Var mı?
+
+518
+02:55:08,371 --> 02:55:10,932
+Her şey çok açık ve sorry, net.
+
+519
+02:55:15,412 --> 02:55:40,332
+Peki, bu dersin slide videosuna erişilebilir. Çünkü siz bu dersi alan kişiler olduğunuz için sistem otomatik bu dersi açmış olduğu için siz alabilirsiniz. Alamazsanız da bana haber verin. Belirli bir saat sonra şey oluşuyor, videoyu oluşturuyor sistem. Linki size gönderirim. Başka soracak bir şeyiniz yoksa dersi burada bitiriyorum arkadaşlar.
+
+520
+02:55:41,108 --> 02:55:43,367
+Hocam, sınav bu konunun sonuna kadar mı?
+
+521
+02:55:44,247 --> 02:55:50,987
+Evet, buraya kadar. Görüntü işlemeden soru sormam. Çünkü sorulacak bir soru yok.
+
+522
+02:55:52,327 --> 02:55:53,448
+Tamam, teşekkürler.
+
+523
+02:55:53,987 --> 02:55:54,688
+Başka soru?
+
+524
+02:55:56,368 --> 02:55:57,548
+Yok, teşekkür ederim.
+
+525
+02:55:57,548 --> 02:56:02,268
+Bütün dönemin en uzun dersi oldu. Tam 12'de bitti.
+
+526
+02:56:03,059 --> 02:56:29,260
+[kişisel bilgi]
+
+527
+02:56:30,100 --> 02:56:31,000
+Hoşçakalın.
+
+528
+02:56:31,600 --> 02:56:32,360
+Görüşürüz hocam.
+
+529
+02:56:32,680 --> 02:56:34,299
+Görüşmek üzere hocam. İyi günler.

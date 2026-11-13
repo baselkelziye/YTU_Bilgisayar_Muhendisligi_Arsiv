@@ -1,0 +1,1259 @@
+1
+00:03:52,659 --> 00:03:53,659
+Günaydın.
+
+2
+00:03:55,400 --> 00:03:56,960
+[öğrenci] Bey sen var mı?
+
+3
+00:03:58,120 --> 00:04:01,479
+Nasılsın? Eğer şu an Bilgisayar'ın başındaysan.
+
+4
+00:04:02,439 --> 00:04:03,379
+[öğrenci].
+
+5
+00:04:04,620 --> 00:04:05,359
+Günaydın hocam.
+
+6
+00:04:05,620 --> 00:04:08,519
+[kişisel bilgi]
+
+7
+00:04:10,355 --> 00:04:13,335
+[kişisel bilgi]
+
+8
+00:04:13,435 --> 00:04:16,235
+[kişisel bilgi]
+
+9
+00:04:16,755 --> 00:04:19,755
+[kişisel bilgi]
+
+10
+00:04:19,755 --> 00:04:29,016
+Tamam. [öğrenci] hala bağlanamadı. Nereden bağlanıyorsa bilmiyorum. Ben yavaş yavaş derse başlayayım.
+
+11
+00:04:29,492 --> 00:04:43,212
+Zaten çok uzun sürmeyecek. Bu yüzden okula o kadar gelip git yapmayın istedim. Çünkü kısa bir konu ve ben nasıl oldu da takvimi hazırlarken böyle bir hata yaptım halen bilmiyorum.
+
+12
+00:04:43,923 --> 00:05:00,483
+Her haftaya 10 kişiyi sıkıştırdık böyle. Çok kötü oldu. Neyse, şimdi zaten görüntü sıkıştırmadan biraz bahsedeceğim. Zaten göreceksiniz onları anlatırken de tekste kullandığımız yöntemlerin aynaları.
+
+13
+00:05:00,944 --> 00:05:15,224
+Sadece buradaki verimiz pikseller, renkler olacak ve bazı ön işlem adımları var. Öncesinde olabiliyor eğer bir kayıplı sıkıştırma yapacaksak görüntüde.
+
+14
+00:05:16,344 --> 00:05:27,463
+[öğrenci] hoş geldin sen de. [öğrenci] hala bağlanamıyor. Şimdi ben ekran paylaşacağım ama hep paylaşırken bildiğiniz gibi bazen bir kere de çıkmıyor. İnşallah şimdi.
+
+15
+00:05:28,980 --> 00:05:41,400
+Çıkacak. Dur bakalım. Daha yapamadım. Ne yapıyorsam şu an bilmiyorum. Şu an ne görüyorsunuz arkadaşlar?
+
+16
+00:05:43,620 --> 00:05:53,680
+Görünüyor hocam şu an. İyi, slide gözüküyor. Tamam. Şimdi görüntü sıkıştırma diye başladık. Aynı ilerlesin.
+
+17
+00:05:56,435 --> 00:06:09,995
+Benim şeyim açık mı? Monitörüm, ekranım. O kapalıdır. Kapalı değil mi? Sadece slide'ı görüyoruz. Tamam. Şimdi beni de göreceksiniz.
+
+18
+00:06:10,708 --> 00:06:31,788
+Şimdi tekste nasıl kayıplı ve kayıpsız sıkıştırma varsa, görüntü işlemede de yani görüntü üzerinde çalışıyorsak kayıplı ve kayıpsız diye yöntemlerimiz var. Kayıpsız sıkıştırma genellikle pikseller arasındaki korelasyonun düşük olduğu resimlerde kullanılır.
+
+19
+00:06:38,708 --> 00:07:06,708
+Bu örneğe bakalım.
+
+20
+00:07:06,708 --> 00:07:16,908
+Farkları fazla olmayan resimlerde tercih ediliyor, kayıpsız. Kayıplı sıkıştırma ise fotoğraf görüntülerinde tercih ediliyor.
+
+21
+00:07:16,908 --> 00:07:26,228
+Çünkü ben bazen öyle kriteri fotoğraflar çekebiliyorum ki, işte True Color dediğimiz 24 bitlik resimler oluyor.
+
+22
+00:07:29,331 --> 00:07:57,331
+Neyi ifade edebiliyorsa, bu sayı neye karşılık geliyorsa o kadar değişik renk olabilir. Gözümde bu kadar farklı rengi algılayamadığı için ben bunlarda kayıplı sıkıştırmayı kullanabiliyorum. Bunlara işte fotoğraf görüntüleri ve yüksek korelasyona sahip olan görüntüleri veriyoruz. Yani renkler arasındaki geçişlerin çok farklı olabildiği resimleri.
+
+23
+00:07:57,331 --> 00:08:21,072
+Peki, kayıpsız görüntü sıkıştırma yapacağım ben. Bir görüntü üzerinde kayıpsız bir sıkıştırma ile sıkıştırdığımda arka planda hangi yöntemleri kullanabilirim? Burada da gördüğümüz gibi olasılık veya sözlük tabanlı bir yöntem ile yapılabileceği gibi ikisinin arasında kullanılan hibrit bir yöntem de kullanabilirim.
+
+24
+00:08:25,331 --> 00:08:39,192
+Bunlar neydi? Aritematik Koding, Huffman Koding veya sözlük kullanan yöntemler, LZV türevleri, LZV'di ya da bu ikisini birden kullanabilen yöntemleri kullanabiliriz.
+
+25
+00:08:39,872 --> 00:08:53,331
+Mesela PNG diye bir resim formatı var. Görüntü sıkıştırma yöntemidir. Freedir, hiçbir lisans hakkı yoktur ve iyi de bir sıkıştırma yapar resim üzerinde.
+
+26
+00:08:53,331 --> 00:09:08,932
+Bunun içerisinde kullanılan yöntem mesela Lampuzlef 77. LZ77'yi belki hatırlarsınız. Belki değil miyim? Hatırlamanız gerekir. Çok kısa zaman önce gördük. Kayan pencereyi kullanan bir yöntemde.
+
+27
+00:09:08,932 --> 00:09:21,331
+Bir taraftan veriler giriyor, bir taraftan pencerenin içerisinde daha önceden işlenmiş olan verileri sözlük olarak kullanıyorum. Yeni gelen veri o kayan pencereyi kullanıyor.
+
+28
+00:09:21,331 --> 00:09:34,052
+Bu pencere içerisinde en uzakta nerede bulunuyorsa onun offset değeri, ne kadarlık çakışma olduğu ve arkasından gelen next symbol yazaraktan oluşturabiliyorduk.
+
+29
+00:09:34,052 --> 00:09:45,211
+Yine bu PNG'nin içerisinde Huffman da kullanılıyor. Bu ikisi hibrit kullanılmış. Bu hibrit kullanılınca bunlara deflet sıkıştırma yöntemi adı da verilmiyor.
+
+30
+00:09:49,331 --> 00:10:07,052
+Bu zaman kullanılıyor. Eğer açık okursanız PNG resim formatı nasıl çalışıyor, nedir diye karşımıza bu iki tane yöntem çıkacak. Bunun başında JPEG yönteminin Loseless kayıpsız olarak sıkıştırılmasında ya da JPEG var.
+
+31
+00:10:09,299 --> 00:10:25,720
+Üst mertebeden olan, daha iyi, daha hızlı sıkıştırma yapan bir algoritma. Bunlar da özellikle kıyıpsız görüntü sıkıştırmada kullanılacak olan yöntemler arasında yer alıyor. Burada ben jipek hakkında size biraz daha detaylı bilgi vereceğim.
+
+32
+00:10:27,859 --> 00:10:29,480
+Şimdi devam edelim.
+
+33
+00:10:32,275 --> 00:10:40,875
+Bu kayıplı ya da kayıpsız. Hatırlarsınız, RLE yöntemini görmüştük. Bu RLE yöntemini size de ödev olarak vermiştim.
+
+34
+00:10:41,355 --> 00:10:49,576
+RLE yöntemini eğer textlerde kullanırsak başarısız bir algoritmaydı. RLE'nin esas amacı neydi?
+
+35
+00:10:49,576 --> 00:11:00,275
+Bir veri içerisinde bazı semboller arka arkaya geliyorsa, bu arka arkaya gelişler de çok fazla tekrar ediliyorsa iyi bir performans.
+
+36
+00:11:00,275 --> 00:11:20,435
+Fakat bir tekst içerisinde aynı karakterin ikiden fazla tekrar etmesi mümkün değil. Ancak tekrar edenler ne olabilir? Boşluk karakteri olabilir veya işte çok sıfırlı bir şey yazıyorum o da olabilir. Ne kadar çok sıfırlı şey yazabilirim ki arka arkaya?
+
+37
+00:11:28,275 --> 00:11:53,135
+Rahatlıkla kullanabiliyordum. Hem kayıplı hem de kayıpsız olarak kullanabiliyordum. Kayıplı yaparsam ne yapıyordum? İşte R'liğinin bir kere nasıl çalıştığını hatırlayalım. Şurada ne diyor R'liğinin temel mantığına? Bir değerin ardışık olarak çok sayıda tekrar etmesi durumunda o değeri bir kez kodlayıp ardından da tekrar sayısını yazıyordum.
+
+38
+00:11:56,275 --> 00:12:06,655
+Boşluk var. Ben ram değerini yazıyorum 50. Arkasına da boşluk karakterini koyuyorum ve anlıyorum ki boşluktan 50 tane var diyorum.
+
+39
+00:12:10,131 --> 00:12:27,191
+Görüntü sıkıştırmada Bitmap formatında PCX'de ve TIF görüntü dosyalarının içerisinde RL'ye de kullanılıyor. Yani ben RL'yi kullanarak bunlar üzerinde sıkıştırmalar yapıyorum.
+
+40
+00:12:27,191 --> 00:12:37,731
+Ama neden özellikle bu dosya formatlarında? Bu dosya formatlarının desteklediği renk sayısı daha kısıtlıdır. Öyle çok büyük.
+
+41
+00:12:38,131 --> 00:12:56,251
+Tipekte 2 üzeri 24 tane farklı rengi desteklerken Bitmap ya da Tif de o kadar çok rengi desteklemediği için renklerin piksel olarak arka arkaya gelme sıklıkları daha fazla daha yüksek olduğu için RL'ler iyi bir sonuç veriyor.
+
+42
+00:12:56,251 --> 00:13:04,251
+RL'yi ben eğer kayıplı olarak kullanacaksam ne yapıyordu? Yine hatırlayalım geçmişi.
+
+43
+00:13:06,131 --> 00:13:22,011
+İşte ran değeri eğer iki ve üç kez geçiyorsa arka arkaya bir renk kodu. O üçü ihmal ediyorum. Ondan sonra gelen en uzun renk hangisiyse o üç tane rengi en uzun renk olarak kodluyorum.
+
+44
+00:13:31,840 --> 00:13:38,639
+Ne kadar sıklıkla bunun kullanıldığı ve gözümün algılayabildiği renklerde mi geçişler oluyor?
+
+45
+00:13:38,639 --> 00:13:49,340
+Yani bir kırmızı rengi düşünün. İki tane farklı kırmızı rengi var. Fakat gözüm onu tam olarak algılayamıyor. Ben aynı diye görüyorum.
+
+46
+00:13:49,500 --> 00:13:59,639
+Hele üç tane piksel yan yana geldiğinde, yirmi tane farklı kırmızı piksel yan yana geldiğinde bunları ayırt bile etmekte zorlanıyorsam ben o az...
+
+47
+00:13:59,840 --> 00:14:26,460
+Az olan piksel renklerini daha büyük olan, uzun olan patronlara çevirebiliyorum. Şimdi RL'de de bir çalışma mantığı vardı. Mesela eğer elimizdeki bir bit renk derinliğindeyse bu ne demek? Bir bitle ben neyi koklayabilirim? İki tane rengi. Ya siyah olacak ya da beyaz olacak. Bu gibi şeylerde yine şöyle bir kuralımız vardı.
+
+48
+00:14:27,840 --> 00:14:42,820
+Elimde 640 tane pikselim olsun. Bunun 200 adeti beyaz, 240 adeti siyah, sonraki 200 adeti de beyaz olsun. Bu ne oldu? 200, 400, 600, 640.
+
+49
+00:14:43,187 --> 00:15:10,848
+RL'ye der ki eğer siyah beyaz resimlerde bu defolttur. İlk okunacak olan değer beyazdır der. Ve arka arkaya beyaz, siyah, beyaz diye gider. Şimdi mesela buraya 200, 240, 200 dedim. Bu eğer siyah beyaz bir resimse ben biliyorum ki ilk okuduğum RAM değeri beyazın kaç tane olduğunu gösteriyor. İkincisi siyahın, üçüncüsü beyazın.
+
+50
+00:15:11,187 --> 00:15:27,548
+Elimdeki resim beyazla başlamıyorsa ne olacak? O zaman buraya sıfır değerini koyacağım. Sıfır tane beyaz var, iki yüz tane siyah, iki yüz kırk tane beyaz, iki yüz tane siyah var diyebilirim.
+
+51
+00:15:39,187 --> 00:15:55,668
+Beyazdan sıfır tane varsa sıfır yazabilirim. Ya da diyelim ki greyscale bir resim beyazla da başlamıyor. O zaman da hangi renkle başladığı, neyle başladığı bilgisini header'da bir yere yerleştirebilirim.
+
+52
+00:15:55,668 --> 00:16:04,168
+Decoder header'ın kaçıncı byte'ından bu bilgiyi okuyacağını bildiği için oraya çekerek buna karar verebilir.
+
+53
+00:16:04,947 --> 00:16:28,627
+Sonra yine tekstlerde anlattığım ama fax makinelerinde kullanılan bir sıkıştırma yöntemi vardı. Yine hatırlayacaksınız. Grup 3 diye geçiyordu. Modify Hoofman diyorduk. Hatta buna grup 3 olduğu için G3 ve bir boyutlu, one dimensional bir yöntem diyorduk.
+
+54
+00:16:32,947 --> 00:16:49,427
+Faks makinelerine koyduğum bilgi bir tekst bilgisi. Bir teksti yerleştiriyorum ve karşı tarafa gönderiyorum. Fakat fax makinelerine içeriği teksti olsa koymuş olduğum sayfayı o içeriği resim dosyası olarak görüyordu.
+
+55
+00:16:49,427 --> 00:17:00,788
+Her siyah ve beyaz olarak yazılmış yazıların her biri siyahlar işte sanki resimdeki siyah piksellere, beyazlar da beyaz piksellere geliyordu.
+
+56
+00:17:00,947 --> 00:17:28,947
+Hatta bunların ismini değiştirmiştik. Hatırlayın. Piksel yerine Pulse demiştik. Eğer fax makinelerinde bir resim gönderiyorsam, yazıyı resim olarak gönderiyorduk. Bunlara piksel değil, Pulse, Pulse diyorduk. Pulse'lerinde neden Pulse demiştik? Çünkü bir satıra gelen Pulse sayısı fazlaydı. Şimdi resmin her bir satırında bir piksel var. Yani pikseller...
+
+57
+00:17:28,948 --> 00:17:44,528
+Perslerden oluşuyor. Fakat tekst gönderdiğimde tekstteki aslında bir satır bir karakteri yazmak için gerekli olan yükseklik ya da en var. Bir karakterin yüksekliği ve eni var. Bunların da perslerden oluşuyor.
+
+58
+00:17:48,208 --> 00:18:01,988
+Bir pels işte şu kadar inçtir. Bir karakterin boyu atıyorum. İki inçe kaç tane pels geliyorsa benim satırımın yüksekliği odur diyorduk.
+
+59
+00:18:02,387 --> 00:18:29,447
+Bu neden bir boyutlu demiştik? Tekrar sayıları R'liye de önemliydi. İki tane tablomuz vardı. Bir sıfırdan 63'e kadar 64 değerini alan kodlar, bir de 64'ü katı olan kodlar vardı. Eğer bana 55 tane RAM değeri gelmişse 54'e göre mod alıyordum, 1 kalıyordu.
+
+60
+00:18:30,387 --> 00:18:41,268
+Böyle mod oluyordum. Bir kalıyordu. Yukarı ki tablodan birin Pulse değerini aşağıdan da 64'ün tek katı olduğu için 64'ün katına bakıyordum.
+
+61
+00:18:41,827 --> 00:18:50,587
+Tablonun ikinci kısmı 64'ün katlarına verilmiş olan Huffman kodlarıydı. O yüzden buna Modify Huffman diyorduk.
+
+62
+00:18:50,587 --> 00:18:58,387
+Çünkü elimizdeki tabloda bir sıfırdan 63'e kadar olan kodlar bir de 64 ve 64'ün katlarından oluşuyor.
+
+63
+00:18:58,387 --> 00:19:26,387
+Bir tablomuz vardı. Sonuçta bir metindi fakat ben bu metni bir görüntü olarak algılıyorum ve Huffman'ı kullanarak bu görüntü dosyasını kayıpsız olarak sıkıştırıyorum. Çünkü faksa bir tekst gönderdiğim için bir resim değil. Bunun kayıpsız olması lazım. Kayıplık kullanırsan karakterler arasındaki kopukluklar olur. Bir karakteri öyle bir yerden...
+
+64
+00:19:26,387 --> 00:19:43,947
+Mesela eğer kayıplı olsaydı, şuraya bir kalem alalım. Mesela T harfi yazdık. Ya da şöyle T dedi. Ben kayıbı öyle bir yere rastlattım ki şuradaki çizgiyi almadım. Elimde şöyle bir şey oldu.
+
+65
+00:19:44,352 --> 00:20:09,092
+Sen bunun T mi L mi olduğunu anlayamazsın. Belki bunu L olarak okursun. Bunun T olduğunu anlayabilmek için burada doğal dil işleme uygulaman gerekir. Acaba buradaki engramlara göre buradaki karakterin ne olması gerekir diye bir tahminde bulunman gerekir. İşin rengi değişir. O yüzden kayıpsız sıkıştırma burada kullanılır.
+
+66
+00:20:09,811 --> 00:20:34,071
+Yine derste görmüştük. İki boyutlu kodlama vardı. Yine faxlarda kullanılan. Buna da modify, modify, read demiştik. Bunu da hatırlayın. İki tane, yani yine parslerden oluşan satırlarım vardı. Bir tanesi referans aldığım üst satır, aşağısı da kodladığım satırdı.
+
+67
+00:20:37,811 --> 00:20:49,531
+Bu da ki pointer'ların durumlarına bakıyorduk. Nasıl hatırlarsınız? Mesela Horizontal Mode, Vertical Mode. Öteki modun adını unuttum. Horizontal, Vertical.
+
+68
+00:20:52,531 --> 00:21:14,231
+Bir mod daha vardı, şu an unuttum. Hatırlayın, işte A1, B1'in solunda olursa, sağında olursa bunları ezbere bilmek zorunda değiliz. Şu moda girer, şöyle şöyle parslerin yerini kaydırabiliriz diyorduk. Onları da mesela tekste gördük ama görüntüde de gördüğünüz gibi kullanılıyor.
+
+69
+00:21:14,836 --> 00:21:28,135
+Jipik standartı, bunu günlük hayatımızda çok fazla kullanmıyoruz bu Jipik standartını. Çünkü bu Jipik standartı da lisanslı bir şey, sıkıştırma yöntemi.
+
+70
+00:21:29,875 --> 00:21:57,796
+Hızlı, yani öyle bir sıkıştırma yapıyor ki veriyi gönderirken daha hızlı gönderdiği için tercih ediliyor. Fakat biz çok büyük tıbbi verilerle falan uğraşmıyoruz. Hani çok yoğun piksel değerleri olan, renk değerleri olan büyük resimler olsaydı JPEG'le sıkıştırırken kalitemiz biraz düşebilirdi ya da süresi biraz daha dosyanın boyutu büyük oldu.
+
+71
+00:21:57,875 --> 00:22:05,816
+Bu için veriyi gönderirken süremiz uzun olabilirdi. Buradaki sürenin uzunluğu ya da kısalığını dakikalar ile düşünmeyin.
+
+72
+00:22:06,096 --> 00:22:14,955
+Milli saniyeler cinsinden daha hızlı yapıyor JPEG algoritması. Daha komplike ve karışık bir algoritmadır. Kullanılır.
+
+73
+00:22:15,195 --> 00:22:22,796
+Ama dediğim gibi lisanslı olduğumuz için biz günlük hayatımızda JPEG'i rahatlıkla kullanıyoruz.
+
+74
+00:22:24,531 --> 00:22:39,591
+Yine biz neleri kullanıyoruz? Bir zamanlar zip ve gezip vardı. Hala hani zip ya da gezip kullananlarımız vardır. Bunların içerisinde de dosyalar büyüklüğüne göre belirli bloklara ayrılıyor.
+
+75
+00:22:52,531 --> 00:23:02,211
+Bir bakta bu bloğa bölüyorsam ben kendim karar veriyorum. Blocumun boyutlarını da sıkıştırılmış verinin üstündeki header bilgisinde bunu tutuyorum.
+
+76
+00:23:02,211 --> 00:23:16,211
+E işte diyorum decoder sen bunu açarken bloklarının boyutu şu kadar kilobayttır. Buna göre aç. Her bloğu da kendi içerisinde ayrı ayrı sıkıştırıyor. Yani her bloğa...
+
+77
+00:23:16,915 --> 00:23:28,395
+Her bloğa Kufman ağacını ayrı ayrı uyguluyor. Her bloğun başında da sıkıştırılacak olan verinin bilgisi saklanıyor.
+
+78
+00:23:28,395 --> 00:23:41,135
+Yani ne demek istedim? Yine şuradan kalemi alalım. Elimde şöyle bir dosyam var.
+
+79
+00:23:41,715 --> 00:24:09,715
+Ben bu dosyayı sıkıştıracağım. Bunu şu kadarlık bloklara bölüyorum. Hepsinin eşit bölündüğünü zannedin. Bu her bir blok Hufman'la sıkıştırıyorum. Başına da sıkıştırırken bir header ekliyorum. Diyorum ki işte blokların şu kadar uzunluğu şudur. Hufman'ın header'ında neler olması gerekirse yazıyorum. Altına sıkıştırılmış veri geliyor. Sonra ikinci blok için bir header yazıyorum.
+
+80
+00:24:09,715 --> 00:24:19,976
+İşte bu blog şu kadar boyutlu boyutunda. Hedder'ı budur. Onun altına onun sıkıştırılmışını koyuyorum. Bu şekilde devam ediyor.
+
+81
+00:24:20,655 --> 00:24:34,955
+Ha sorabilirsiniz, hocam neden her blogun boyutu aynı değil? Şöyle düşünün, neden aynı olsun? Elinizde bir tane kitap sayfası var, iki tane. Bu kitap sayfasının yarısına kadar olan kısmı resim.
+
+82
+00:24:35,796 --> 00:24:42,016
+Bir kısmı yazı, bir kısmı ise boşluk. Bunun ise tamamı yazı.
+
+83
+00:24:42,416 --> 00:24:49,816
+Şimdi ben her bir veriyi, her bir sayfayı sıkıştırırken aynı bloklarla sıkıştırmıyorum.
+
+84
+00:24:50,056 --> 00:24:52,736
+İçindeki verinin özelliklerine de bakıyorum.
+
+85
+00:24:52,736 --> 00:24:59,736
+Yani bunda resim, boşluk ve yazı varsa belki resimleri ayrı bir algoritmayla sıkıştıracağım.
+
+86
+00:25:03,796 --> 00:25:16,556
+Ayrı bir algoritma ile sıkıştıracağım. O zaman bloklarımın boyutları da farklı olur. Kullandığım yöntem de farklı olur. Bu bilgilerde header'da yer alması gerekiyor. Onu da header'a yazıyoruz.
+
+87
+00:25:18,936 --> 00:25:28,716
+Buraya nereden geldim? Fazla bastım. Özür dilerim. Zip ve gezip değdik. İşte bunu da her blok ayrı hufman ağacıyla koklanır dedik.
+
+88
+00:25:29,203 --> 00:25:48,663
+Bazen bazı blokları Kufman kullanmayıp bazılarında LZ77'nin bir türevi kullanılıyor. LZ77'nin türevi ne demekti? Bunu da hatırlayalım. Elimizde bir LZ77 algoritması vardı. Bazı parametre değerlerinde değişiklik yapıyorduk.
+
+89
+00:25:57,203 --> 00:26:02,243
+Bu ne olsun? Ya da verinin verildiği aktığı boyut ne olsun?
+
+90
+00:26:03,383 --> 00:26:05,099
+Topkanımın boyu...
+
+91
+00:26:05,332 --> 00:26:20,052
+Yani token'ın iki değişkenden mi olursun, üç değişkenden mi olursun bunlar farklılıklar yapıyordu. Her bir farklı değer, her bir parametrenin değişmesi LZ'nin de farklı türevlerini karşıma getiriyordu.
+
+92
+00:26:20,052 --> 00:26:33,312
+İşte görmüştük LZ, Y vardı, LZ, AP vardı, LZ, V vardı, LZ bilmem ne vardı. LZ'den türetilmiş bir sürü türev algoritması. Yani zip ve gezipte de bunlar.
+
+93
+00:26:33,332 --> 00:26:34,231
+Bunlar kullanılıyor.
+
+94
+00:26:34,708 --> 00:26:59,048
+Burada mesela işte demiş bu zip ve gezipti. Genellikle kayan pencere içerisinde LZD varsa 32 kilovaytlık bir kayan pencere kullanılıyor. Kayan pencere bizim sözlük alanımızdı. Kaynak kod alanımız Look at Search Buffer dediğimiz yerde 258 byte'di. Buraya da işlenmemiş veriler geliyordu.
+
+95
+00:27:02,708 --> 00:27:20,367
+Bunu ASCII olarak olduğu gibi kokluyorduk. Hatırlayın. Sözlükte varsa tokenlara yazıyorduk. Sözlükte şu indiste şu kadar uzunluğunda çakışma var ve kendisinden sonra gelen, çakışmadan sonra gelen byte da odur diye yazıyorduk.
+
+96
+00:27:30,708 --> 00:27:39,708
+Arka kullanmamış olabilirsiniz. Bir zamanlar P-Pazip kullanılıyordu. Arka kullanabilirsiniz. Bunların içerisindeki yöntemler de...
+
+97
+00:27:40,468 --> 00:28:01,147
+Bunların içerisindeki yöntemlerde yine bakıyorsanız mesela şu PK-Ark'ın içerisinde hem LZV var hem de Huffman Coding var. LZV nasıl bir algoritmaydı hatırlayalım. LZ77 ve LZ78'den farkı neydi? Aslında bir sözlü kullanan yöntemdi.
+
+98
+00:28:03,188 --> 00:28:19,148
+Sözlüğün ilk başı alfabemdeki harflerden başlıyor. Daha sonra harflerin ikili kombinasyonlarına bakıyorum. Sözlükte var mı? Yoksa sözlüğe ekliyordum. En uzun kombinasyonları oluşturuncaya kadar gidiyordu.
+
+99
+00:28:24,468 --> 00:28:46,968
+Tipte dosyadan oluşmuş şeylerim varsa, sıkıştırılacak dosyalarım. Mesela elimde hem görüntü var, hem ses dosyası var, hem resim dosyası var. Her biri en ideal hangi yöntemle çalışması gerekiyorsa onunla kodlanacak. Çok değişik datalarım var. Bunları LZV ve Hufman'la birlikte hibrit olarak kodluyor.
+
+100
+00:28:52,468 --> 00:29:09,248
+LZ'yi kullanan bir başkası var. Bir başka böyle şu üç taneden hangisinde ne olduğunu şu an hatırlamıyorum. Ama sadece burada size göstermek istediğim şey aslında bildiğimiz yöntemler mesela LZ77 ve Shannon Fanon.
+
+101
+00:29:20,468 --> 00:29:39,028
+Elimdeki olasılık değerlerini büyükten küçüğe doğru sıralıyordum. Hep olasılığı yarı yarıya olacak şekilde ikiye bölüyordum. Her bölünmüş parçayı olasılıklar ortadan bölünecekmiş gibi ikiye bölüyordum. Tek parça oluncaya kadar oluşturuyordum.
+
+102
+00:29:47,988 --> 00:30:06,768
+Allah'ım yine ağız gitti. Şunu kullanmış. Kimi bunu, kimi bu yöntemleri kullanmış. Zaten bu görüntü sıkıştırmanın anlatırken daha kısa sürmesinin sebebi bu yöntemleri daha önceden görmüş olduğumuz için bunları açık açık bir daha anlatmamıza gerek yok.
+
+103
+00:30:07,307 --> 00:30:11,728
+Şimdi gelelim jipeke. Şurayı bir silelim.
+
+104
+00:30:15,092 --> 00:30:38,451
+Aşağıya alalım. JPEG, Noosless JPEG var. Kayıpsız JPEG. Şimdi JPEG şeylerinde de, formatlarında da kayıplı da sıkıştırabilirim, kayıpsız da sıkıştırabilirim. Kayıplı sıkıştırmak istiyorsam JPEG'in ara işleminde yapılan bir adım var.
+
+105
+00:30:40,307 --> 00:30:48,288
+DCT dönüşümü yapılıyor. Ben o DCT dönüşümünü mesela orada kullanıyorum. Bunun bir de
+
+106
+00:30:48,660 --> 00:31:13,400
+Kayıplı olanı var. Ben orada Weaver Transform'unu kullanabilirim. Yani bunun mesela göreceksiniz JPEG var, JPEG 2000 var, JPEG var. Bunlarda kullanılan o Transform dönüşümlerde renklerin bir domeinden bir başka domeine, zaman domeininden frekans domeinine çevirirken, frekans domeininden zaman domeinine.
+
+107
+00:31:13,759 --> 00:31:25,939
+Çok özür dilerim. Zamandan frekansa çevirirken kullanacağım transform yöntemleri değişiyor. Cosinus transformu var, Velvet transformu var. Başka transformlarda kullanabiliriz.
+
+108
+00:31:25,939 --> 00:31:32,939
+Bu JPEG'de neyin kısaltılmışı? Joint Photographic Expert Group. Yine bu bir...
+
+109
+00:31:35,188 --> 00:31:47,548
+sıkıştırma resimler üzerinde sıkıştırma algoritması geliştirmek isteyen bir grup. Bu grubun çıkarmış olduğu bir format. Zaten burada yazıyor.
+
+110
+00:31:49,779 --> 00:32:11,099
+IEC tarafından geliştirilmiş International Organization for Standardization, International Electrotechnical Commission. Oturup bunu böyle uzun uzun zaten söyleyemeyiz. 98 yılında ortaya atılmış bir algoritma JPE'in farklı versiyonlarıyla görüntülü sıkıştırma da yapabilirim.
+
+111
+00:32:17,779 --> 00:32:45,599
+Kayıplı sıkıştırma da yapabilirim. Buradaki kayıbı ben kendim belirliyorum. %30 sıkıştıracak kadar yap. %20 sıkıştıracak kadar yap. Ya da %60 kayıp olabilir resimde ben bunu kabul ediyorum diye yap. Elimde bir MR görüntüsü var. Ben bunu JPEG formatına çevirirken kayıpsız, %0 kayıplı çevrilmesini istiyorum ki en ufak bir hatayı bile kabul edemem.
+
+112
+00:32:45,779 --> 00:33:08,259
+Fakat elimde diyelim ki bir deniz ve gökyüzünden oluşan bir resim var. Mavinin türevleri, tonları. Gözüm zaten bu kadar mavinin tonunu benim ayıklayamayacaksa o zaman ben kayıplı yapabilirim. İşte diyeceğim ki kayıp oranı %30 olsun, %40 olsun. Bunları ben söyleyebiliyorum.
+
+113
+00:33:10,163 --> 00:33:36,564
+Bunun standartı da yine Hayward Packard laboratuvarında geliştirilmiş. LOCA ID'ye geçiyor. Buradaki LOV, LOV'un LO'su, JO'da komplekslinin CO'su, sonra Lossless Compression for Image. Burası da LOCA LOCA olduğu için. Bu I'da imicin I'sı. Böyle görürseniz yani bu nedir falan demeyin.
+
+114
+00:33:38,163 --> 00:33:43,903
+Ben hem renkli resimlerde kullanabiliyorum hem de grayscale resimlerde kullanıyorum.
+
+115
+00:33:43,903 --> 00:33:48,084
+Siyah-beyaz bir resimde jipeg kullanmak çok mantıksız.
+
+116
+00:33:48,484 --> 00:33:54,903
+Siyah-beyaz bir resmin varsa RL'den başka sana iyi sonuç verebilecek bir yöntem yoktur.
+
+117
+00:33:55,004 --> 00:33:56,624
+Yani uğraşmana bile değmez.
+
+118
+00:33:57,683 --> 00:34:06,104
+Gri tonlamalı görüntülerde nasıl bir yöntem izliyorsam, çünkü mesela gri tonlarda ben derim ki
+
+119
+00:34:06,163 --> 00:34:22,524
+3 bitlik grey seviyesi bu nedir? 2 üzeri 3'ten 8 tane grinin tonları var. 4 bitlik dersem 2 üzeri 4'ten 16 tane renk var. 5 bitlik dersem 32 tane, 6 bit dersem 64'lük derim.
+
+120
+00:34:34,164 --> 00:35:02,144
+Kırmızı, yeşil, mavi mesela renkli bir şey. Üç tane paletim var. Turukalı bir resim. Kırmızıyı, tek paleti sanki grayscale bir resimmiş gibi ayrı kodlayacağım. Yeşil paletini ayrı kodlayacağım. Maviyi ayrı kodlayacağım. Çünkü kırmızı için 8 bit kullanıyorum. Yeşil paleti için 8 bit. Mavi paleti için 8 bit. 3 kere 8, 24. Üçünü birlikte kullanırsam 200.
+
+121
+00:35:02,164 --> 00:35:20,444
+Gözleri 24'ten True Color bir resim oluyor. Eğer ben bu jippette de gri tonlamada nasıl bir yöntem izliyorsam, bu gri tonlamayı da 8 bit yapabilirim. Yani 7 bit diyebilirim. Sıfırdan 7'ye kadar aslında. 8 tane renk olur elimde.
+
+122
+00:35:20,444 --> 00:35:30,164
+Burada da her bir palete tek bir gri seviyesinde ne yapıyorsam onları ayrı ayrı yapıyorum. Ayrı ayrı sıkıştırıyorum. Açarken de en son...
+
+123
+00:35:30,164 --> 00:35:43,923
+Kırmızı, yeşil ve maviyi birleştirerek tek bir rengin kodu olarak açıyorum. Yine resim dosyalarında sıkıştırma yapıyorken önemli olan şey nereden başlanacağı resmi.
+
+124
+00:35:43,923 --> 00:35:57,344
+Yine bundan da söylemiştik. Ben şu sayfayı sıkıştırmak istiyorsam şu sol en üst pikselden başlamam gerekiyor. Okurken ya böyle satır satır okuyorum. En sağdaki.
+
+125
+00:35:58,228 --> 00:36:25,788
+Px'e gelene kadar ya da kolon kolon okuyabilirim. Bunları da ödevde yapmıştınız. Düz çizgi bile çizemedim. Kolon kolon okuyabilirim. Satırlarda Rotate yaparak okuyabilirim. Kolonda da Rotate yapabilirim. Veya Zikzak yaparız demiştik. Genelde çoğunuz ödevde bütün resme Zikzak uygulamıştınız. Ama şu pek böyle yapmaz. Bütün bir resmi.
+
+126
+00:36:26,228 --> 00:36:40,228
+Silelim şurayı. Bütün bir resmi küçük küçük bloklara böler. 8'e 8'lik ya da 32'ye 32'lik ve her bir küçük bloğa kendi içerisinde...
+
+127
+00:36:40,371 --> 00:36:55,011
+Zikzak kodu uygular. Bunların her birine kendi içerisinde kodlamasını yapar. En sonunda birleştirir. Açarken de ters işlemi yapar yapar. İlk başlangıç noktasına gelir.
+
+128
+00:36:55,011 --> 00:37:01,511
+JPEG'in çalışma prensibini gösterirken bunları daha iyi bir şekilde göreceğiz.
+
+129
+00:37:07,360 --> 00:37:32,539
+Şimdi benim bir pikselim vardı. Bu pikselimin kaç tane komşusu var? Sekiz tane. North var. South var güney. West var batı. East var doğu. Sonra northwest var. Burası da northeast. Sonra southeast var.
+
+130
+00:37:33,396 --> 00:37:56,436
+ve Southwest var. Yani benim 3, 6, 7, 8 bir de kendimi alırsam 9 tane piksel değerim varken, JPEG LS algoritması 4 tanesini kullanır. Yani neyi? Her zaman şuradakinin, şu üzerinde çalıştığım pikselin üstündeki satır
+
+131
+00:37:56,947 --> 00:38:08,467
+solundaki satır sol üstündeki ve sağ üstündeki piksel değerlerine kullanır ve o şekilde resimde ilerler.
+
+132
+00:38:08,467 --> 00:38:21,667
+Bu nasıl ilerliyor da ne yapıyor ona bakalım. Mesela benim üzerimde çalışacağım pikselim bu olsun.
+
+133
+00:38:23,251 --> 00:38:39,251
+Yeni bir değer atacağım. Bu piksele yeni bir değer atarken işte bunun solundaki, üstündeki, sol üst ve sağ üstteki piksel değerlerine bakarak buradaki piksel değerini update edeceğim.
+
+134
+00:38:39,251 --> 00:38:50,251
+Bunun için çıkarılmış olan tablomuz bu. İşte bakıyor. Bu nedir? Nost West yani şuradaki pikselin değeri.
+
+135
+00:38:51,891 --> 00:38:53,471
+Büyük eşit midir?
+
+136
+00:38:54,036 --> 00:39:13,955
+North ve West. Şuradaki North ve West'teki piksel değerlerini alıyor. Buradaki değerlerden maksimum olanı hangisi ise, NV değerinden küçük ve eşitse, V ve N'nin minimum değerini alıp G'ye yazacak. Yani G pikselini update edecek.
+
+137
+00:39:13,955 --> 00:39:22,036
+Ya da NV'nin piksel değeri küçükse, N'nin ve V'nin minimum olanı hangisi ise bunu aldırıyor.
+
+138
+00:39:22,036 --> 00:39:50,036
+Bu örneğe bakalım. Bu örneğe bakalım. Bu örneğe bakalım.
+
+139
+00:39:50,036 --> 00:39:58,496
+İki aşamadan geçer diyor. Birinci aşamada şu, kontrolü yapacağım diyor.
+
+140
+00:40:00,000 --> 00:40:16,739
+N'nin V'den büyük ya da N'nin küçük eşit N, V'den büyük olduğunu eğer bakıyorsam şu birinci satır diyor. Dikey, yatay kenarları yakalamaya çalışır resimdeki. Şu ise dikeyleri yakalar.
+
+141
+00:40:16,739 --> 00:40:27,839
+Yani eğer burasındaki dağ kuvvetliyse bu pikseli buna benzetmeye renk olarak, buradaki dağ baskınsa buna benzetmeye çalışır.
+
+142
+00:40:28,000 --> 00:40:34,339
+Aksi durumda da diğer durum geçerli. Yani bu ne yatayda ne dikeyde.
+
+143
+00:40:36,755 --> 00:40:42,596
+Yani yerine değişim yapamıyorum. O zaman diyagonaldeki değeri alırsın diyor.
+
+144
+00:40:42,596 --> 00:41:04,755
+Şimdi birinci aşamada şuradaki pikselin değerini şu G tablosuna bakarak değiştirdim. Peki sonra ne yapacağım? Sonra resim üzerinden ikinci bir geçiş yapacağım. Bu ikinci geçişi yaparken de çevresindeki piksel çiftlerinin değerlerinin farklarına göre bir düzeltme.
+
+145
+00:41:04,755 --> 00:41:18,695
+Şimdi üç tane piksel çiftini alıyor. İşte Kuzey-Batı ile Batı'da olan yani West ile North West arasındaki pikselin farkına bakıyor.
+
+146
+00:41:18,695 --> 00:41:29,795
+North West ile North'un arasındaki pikselin farkına. North ile da North East arasındaki pikselin farklarına bakıyor.
+
+147
+00:41:31,219 --> 00:41:49,019
+Aslında benim kaç tane durumum vardı bu ortadaki pikselde dahil? 9 tane durumum vardı. Bu 9 tane durumun 3 tane çifti varsa böyle bakacak olan 9 üzeri 3'den 729 tane farklı durum ortaya çıkacak.
+
+148
+00:41:49,019 --> 00:41:59,019
+Ben bu kadar farklı durum içerisinden bakarak buraya en uygununun ne gelmesi gerektiğine karar vereceğim. Ama bu kadar farklı durum...
+
+149
+00:41:59,219 --> 00:42:23,999
+Bununla uğraşmak yerine en önemlisi bu yatay ve dikey geçişlerde değişimi sağlayan şu üç tane pikselin fark değerlerine bakarım. Buna göre bir değişiklik yaparım. Bu algoritmaların biraz daha derinlemesi var ama hiç onlara girmemize gerek yok. Oturup jipeki yazacak halimiz yok. O yüzden bu resimler üzerinde oynamalar olacak.
+
+150
+00:42:24,724 --> 00:42:30,664
+Şimdi jpeg'in bir sürü versiyonları var dedik. Bir jpeg'e bakalım.
+
+151
+00:42:31,699 --> 00:42:46,639
+Default, sade olan JPEG nasıl çalışıyor? JPEG bir kere ayrı kosünüs dönüşümüdür. Eğer bir sinyal işlemi aldıysanız dersi ya da görüntü dersi de aldıysanız mutlaka karşınıza bu çıkar.
+
+152
+00:42:46,639 --> 00:42:59,259
+DCT, Discrete Cosine Transform yani ayrı kosünüs dönüşümüdür. Ne işe yarar? Birazdan bahsedeceğim. Bu standartı kullanır.
+
+153
+00:42:59,699 --> 00:43:24,559
+Sıkıştırmanın kayıp oranını ben belirliyorum dedim. İşte hiç sıkıştırma olmasın, %20 sıkıştırma olsun, %40 sıkıştırma olsun. Bunları ben parametre olarak belirliyorum. Bunu belirleyen de Q faktörü olacak. Benim elimde önceden çıkarılıp hazırlanmış Q faktörleri olacak. Buradaki faktör dediğim şey aslında bir tablo.
+
+154
+00:43:27,699 --> 00:43:54,899
+Ben bu matrisimi kaça kaçlık piksellere böldüm? 8'e 8 mi? 16'ya 16 mı? Benim Q matrislerim de o matrislerim kaça kaçtıksa öyle bir matris olacak. Bana diyecek ki %40 sıkıştırma yapmak istiyorsan şu Q matrisini kullan. %60 sıkıştırma yapmak istiyorsan şu matrisi kullan diyecek. Bu matrisi yapılmış bir sürü denemelerle çıkarılmış.
+
+155
+00:43:55,699 --> 00:44:01,219
+Sunulmuş matrisler hazır. Bunları ben hazır olarak kullanacağım.
+
+156
+00:44:02,068 --> 00:44:19,688
+24 bit renk derinliğindeki fotoğraflarda çok iyi sonuç verir. Yani bir siyah beyaz resimde jpeg kullanmak ya da greyscale resimde jpeg kullanmak biraz mantıksız. Diğerleri çok daha iyi sıkıştırma yöntemleri sonuçları verir.
+
+157
+00:44:19,688 --> 00:44:29,988
+Bu dediğim gibi true color olan resimlerde. Mesela fotoğraf makinelerimizde çekmiş olduğumuz resimleri indirdiyseniz, indirirseniz diske falan.
+
+158
+00:44:30,068 --> 00:44:44,988
+JPEG uzantılı olarak indirdiğini göreceksiniz. Bazıları farklı formatada çeviriyor olabilir ama genelde JPEG'de JPEG'e çevriliyor. Çünkü çok iyi bir kaliteyi bozmuyor. İyi bir sıkıştırma bana veriyor.
+
+159
+00:44:44,988 --> 00:44:55,368
+Ha diyebilirsiniz ki yüzde kaçlık bir sıkıştırma yaparak indiriyor onu bilmem. Yani o yazılım ne yüklenmişse cep telefonuna ne kullanıyorsa.
+
+160
+00:44:55,856 --> 00:45:05,856
+O kadarlık bir sıkıştırmayı kabul etmiştir. Belki kendisi şeye bakıyordur. Ben fotoğraf çekerken bazen zoom'uyla...
+
+161
+00:45:06,612 --> 00:45:16,751
+İlgileniyorum, mesela zoom'a basıyorum, biraz uzak, yakın, daha yakın bir resim çekmek istiyorsam o zaman hassasiyet daha önemlidir bir şeyi büyüterek çekiyorsam.
+
+162
+00:45:16,751 --> 00:45:34,231
+Bir şeyi yakalamak istiyorum. Oradaki resmi saklarken belki kayıpsız cipek yapıyor da çok uzun derinliğim olan bir resim çekiyorsam, gözüm de zaten uzaktaki bir noktayı da rahat göremeyeceği için kayıplı bir formatı.
+
+163
+00:45:34,612 --> 00:45:47,692
+seçiyor olabilir. Onları arkada ne yaptığını bilemeyiz. Sıkıştırma ve açma süreleri de tek algoritmayı sahip olan kayıpsız sıkıştırma yöntemlerine göre daha uzundur.
+
+164
+00:45:47,692 --> 00:45:58,911
+Yani JPEG ne kadar bana bütün resim formatları hızlı gibi de gelse, şu an bir resimde tip açayım, JPEG açayım, pat diye açılıyor.
+
+165
+00:46:02,612 --> 00:46:15,612
+Datalar belli. Ben şu şundan daha hızlı açılmıştır diyemem. Zaten donanımlarımız da hepimizde i7, i5 var. Bundan 10 yıl önceki bilgisayarlarda bu resim formatlarını...
+
+166
+00:46:16,563 --> 00:46:26,204
+Aynı resmi farklı formatlarda saklayıp açtığınızda belki biraz daha yavaş sürüyor, bir kısmı daha uzun sürüyor diyebilirdik.
+
+167
+00:46:26,204 --> 00:46:34,143
+Ama şu an bunları algılayamıyoruz bile. Arkada benim fark edemediğim kadar hızlı çalışıyor her şey.
+
+168
+00:46:35,304 --> 00:46:43,143
+Yine de tabii JPEG arkada yapmış olduğu işlem yükünden dolayı süresi biraz daha uzun olabiliyor.
+
+169
+00:46:43,572 --> 00:47:11,572
+Peki, JPEC'in mimarisi nedir? Neler var içerisinde? Aslında şurada görüyorsunuz. Bundan daha da basit bir şekil rastlayabilirsiniz, görebilirsiniz. Ama hepsini anlatmak istediği şey aynıdır. Benim kullandığım kaynak bu resim üzerinden anlatmış olduğu için ben de bu resmi aldım. Burada çok daha fazla detaylar var ama ben onlara da yer vermeyeceğim.
+
+170
+00:47:11,572 --> 00:47:22,392
+Çünkü gerek yok. Mesela öncelikle şuraya bakalım. Kaynak resim. Evet bir tane resim aldım. Bu almış olduğum resim formatı RGB.
+
+171
+00:47:23,764 --> 00:47:49,983
+RGB olarak tutuluyor. Ben bu resim formatını başka formatlara çevirebilirim. Huv formatı var. Huv diye yazılıyor. Ya da U formatı var. Bu jpeg de eğer isteğe bağlı olarak bırakıyor. Sen RGB üzerinde de çalışabilirsin. U üzerinde de çalışabilirsin. Neden U seçtik? Bir sonraki slide'da var.
+
+172
+00:47:51,764 --> 00:48:05,564
+Bir format değiştiriyorum ama bunu seçimlik olarak verilmiş. Zaten bu nokta nokta olması bunun seçimlik olmasını gösteriyor. Daha sonra örneklemeyi azaltma yapıyorum. Buna Down Sampling diyorum.
+
+173
+00:48:06,291 --> 00:48:34,291
+Örneklemeyi azaltmak ne demek? Yani mesela dörde dörtlük bir resmim var. Dört tane pikselden oluşan bir resmim var. Ben belki bu dört tane pikselin yerine bir tane pikselin rengini diğer dördüne birden de aynı rengi koyacağım. Düşünsenize bunu RL'ye yaptığımda hepsi aynı renk koduna gelmiş olacak. Örneklemeyi azaltmak bu dansantik.
+
+174
+00:48:34,291 --> 00:48:52,112
+Sonra elimdeki resmin Red, Green, Blue diye üç tane paletim vardı. Bunları Yuv paletine çevirirsem bunlar Y, U, V oldu. Her bir paleti ayrı ayrı çalışacağım. Ve her bir paleti de küçük parçalara bölüyorum.
+
+175
+00:49:02,291 --> 00:49:07,112
+Siz de yapmış olduğunuz ödevde bütün tamamına zikzak uygulamıştınız.
+
+176
+00:49:07,572 --> 00:49:17,271
+Hani yapabilen varsa bunları küçük parçalara da bölüp her birine zikzak uygulasaydınız, başarınız, sıkıştırma performansınız daha yüksek olacaktı.
+
+177
+00:49:17,271 --> 00:49:23,452
+Daha sonra her bir palete ayrı ayrı DCT uyguluyorum.
+
+178
+00:49:23,912 --> 00:49:28,392
+DCT uyguladığında bazı kayıplar olacak.
+
+179
+00:49:30,900 --> 00:49:43,159
+Yani aslında şöyle söyleyeyim, DST'nin yapmış olduğu işlem resim üzerindeki yüksek ve alçak frekansları belirlemek.
+
+180
+00:49:43,619 --> 00:49:52,180
+Gözüm alçak olan frekanslardaki renkleri göremediği için onlar kayıp olarak gidecek, sıfırlanacak.
+
+181
+00:49:52,180 --> 00:49:57,720
+Yüksek frekanslar ise benim kullanacağım piksel renk değerlerim olacak.
+
+182
+00:49:58,900 --> 00:50:00,000
+Hadi bir sonraki slide.
+
+183
+00:50:00,000 --> 00:50:09,599
+Bu sayede göstereceğim. İşte DCT yapıyor. Burada Quantization işlemi var. Quantization işlemi de ne demek?
+
+184
+00:50:10,360 --> 00:50:17,220
+İşte ben eğer bir sıkıştırma yapacaksam, yani yüzde kırklık sıkıştırma kullanmak istiyorum.
+
+185
+00:50:17,740 --> 00:50:25,480
+Yüzde otuzluk, yüzde yirmilik. İşte burada da benim için çıkarılmış Quantization tablolarım var.
+
+186
+00:50:28,000 --> 00:50:54,880
+Ne yapacaksam o tabloların verileri alınıyor, veriliyor. Bu yine niye nokta nokta? Hiç sıkıştırma yapmayacaksam ben bu kısmı kullanmayacağım demektir. Ondan sonra zikzak tarama yapıyorum. Zikzak taramadan sonra DC ve AC, DC düşük frekanslar, AC yüksek frekanslar ayrılıyor. Bunları kendi içlerinde ayrı ayrı sıkıştırıyorum.
+
+187
+00:50:56,000 --> 00:51:08,920
+İlklerde RL'yi kullandım. DC'lerin birçoğu sıfır olarak zaten kaybolacak. Burada da kodluyoruz ve kodlanmış veriyi de alıyorum.
+
+188
+00:51:08,920 --> 00:51:22,380
+Hader'ın altına yazıyorum. Bu header'ın başlıklarında neden bunlar var? Hangi Q tablosunu kullanıyorsam başlığa koymalıyım ki açacak olan kısım bunun tam tersini yapacak.
+
+189
+00:51:24,000 --> 00:51:33,619
+Alacak bu veriyi, veriyi alacak. Bu işte küçük küçük parçalara bölünmüştü ama önce bakacak bir sıkıştırma işlemi yapılmış mı yapılmamış mı?
+
+190
+00:51:33,619 --> 00:51:39,619
+Bu başlıkta o bilgi var. Yapılmışsa o tablolardan geçirip ondan sonra...
+
+191
+00:51:41,876 --> 00:51:55,676
+Şeyleri, küçük matrisleri oluşturacak. Şu forma gelecek. Sonra DCT'nin ters işlemini yapacak. Buraya geçecek. Buradan buraya, buradan buraya. Yeniden RGB'den orijinal resme dönecek.
+
+192
+00:51:55,676 --> 00:52:09,396
+Orijinal resme tam dönemeyebilir. İşte burada sıkıştırmamı sıfır yaptım ya da %10, %20 dediğime bağlı olarak değişebilir. Şimdi buradaki olayı biraz daha açalım.
+
+193
+00:52:09,844 --> 00:52:35,764
+Pardon. Şimdi elimizde şey, orijinal resmimiz var dedik. Bu Red Green Blue paletinde ben bunun paletini değiştiriyorum. Neden değiştiriyorum? Yuv, yuva değiştiriyorum. Gerekli değildir diyor. Ama eğer diyor yüksek sıkıştırma yapmak istiyorsan diyor elindeki RGB'yi yuva dönüştür.
+
+194
+00:52:36,179 --> 00:53:04,179
+Çünkü şöyle söyleyeyim, RGB bileşenleri arasındaki, nasıl diyeyim, neden yuva değiştiriyoruz? RGB paletleri arasındaki korelasyonu azaltıyor. Yani red, green ve blue. Bir pikselin üç tane palette de değeri var. Eğer ben yuva geçirirsem bu piksel değerleri arasındaki korelasyonlar bir...
+
+195
+00:53:04,179 --> 00:53:27,219
+Birbirine yakınlaşıyor. Birbirine daha yakın renk değerleri elde ediliyor. Ve böyle renk sayısında bir azalma oluyor. Aslında şöyle bir durum da oluyor. Yıldız'da ki bu paletler, Y olan palet, parlaklığı veriyor. U ve V'ler ise krominans denilen renklilik değerini.
+
+196
+00:53:27,615 --> 00:53:49,195
+Y paleti de parlaklık, luminans değerini veriyor. İnsan gözü parlaklığı daha iyi algılıyor. Yani parlakla bir mat renk olsun ben bunu çok rahatlıkla ayırt edebiliyorum. Fakat renklilikte gözüm çok hassas değişimleri görmüyor.
+
+197
+00:53:55,615 --> 00:54:04,495
+Red, Green, Blue'da diyelim ki 42 olsun. Bir başka piksel de 45, 55 ve 41 olsun.
+
+198
+00:54:04,884 --> 00:54:32,884
+Şöyle bir piksel, bunun da bir piksel. Sen bu pikseldeki green paletinin 42 ile green paletinin 41 olduğundaki farkı ne yaparsan yap, insanoğlunun gözü bunu ayırt edemez. Ayırt edebilen canlı türü belki dünyada vardır, bilmiyorum. Biz ayırt edemediğimiz için bu tip değişimler, yani başka palete geçirdiğimde ben daha iyi sıkıştırmalar yapabiliyorum.
+
+199
+00:54:32,884 --> 00:54:57,943
+Benim için önemli olan parlaklığı korumak. Parlak bir resimle donup, mat bir resim arasındaki farkı çünkü gözüm çok iyi ayırt edebiliyor. Nasıl çeviririm? İşte bunlar da çıkarılmış. Görüntü işleme kitaplarının içerisinde mutlaka bunlara rastlarsınız. Şuradaki red, pardon, yine mouse gitti. Bir dakika.
+
+200
+00:55:00,239 --> 00:55:18,559
+Şu Red, şu Green, şu Blue. Pikselimin Red değeri 45'ti. 45'ü şu kas sayıyla çarpıyorum. Green'i alıyorum şu kas sayıyla. Blue'u alıyorum şu kas sayıyla çarpıyorum. Bunların toplamı Y'nin değerini veriyor.
+
+201
+00:55:18,559 --> 00:55:28,159
+Aynı şekilde Red, Green, Blue'ları farklı kas sayılarla çarpıyorum. U'yu farklı kas sayılarla çarpıyorum. V'yi elde ediyorum.
+
+202
+00:55:28,239 --> 00:55:56,219
+Bunun tam tersi var. Ben Yuv'dan Red Green Blue'a dönmek istiyorsam onun kas sayıları ayrı. Ben Yuv'dan Huv'a geçmek istiyorsam Huv'da bir resim paleti, renk paleti ayrı çarpanlar var. Huv'da RGB'ye geçişler var. Bunlar birileri tarafından hazırlanmış, yapılan testlerle çıkarılmış en iyi şeyler.
+
+203
+00:55:56,239 --> 00:55:59,039
+Oturup ben bunları bulmaya falan çalışmıyorum.
+
+204
+00:55:59,411 --> 00:56:17,051
+Öyleyse, şimdi burada dönüşümü neden yaptık? Benim için parlaklığı ayırt etmek daha iyi ve renk paletleri arasındaki korelasyonlar da birbirine yakınsa, yılda bunları daha rahat yakalarım diye yuvu yapıyorum.
+
+205
+00:56:17,231 --> 00:56:24,811
+Şimdi arkasından örneklemeyi azaltma var. Örneklemeyi azaltma nedir? Yine şu ekranımızı bir temizleyelim.
+
+206
+00:56:25,972 --> 00:56:41,711
+Pardon. Siliyorum. Örneklemeyi azaltma nedir? Yine yukarıda bahsettiğimiz şeyden bahsediyoruz. Şunu yok edemiyorum bir türlü.
+
+207
+00:56:42,228 --> 00:56:59,028
+İnsan gözü parlaklığa daha çok, renkliliğe ise daha hassastır. U ve V değerleri renkliliği verdiği için miktarını azaltmak, görüntüyü insan gözü için çok fazla farklılaştırmaz diyor.
+
+208
+00:57:10,228 --> 00:57:15,568
+Yaparsam ne oluyor? 4 tane piksel var.
+
+209
+00:57:16,916 --> 00:57:34,956
+4 piksellik bir blok için UV değerlerinden 4, 4, 4 kullanılır. Yani nedir? Red paletinden de 4 alacağım. Green paletinden de 4 bit. Red, Green, Blue'dan da alacağım.
+
+210
+00:57:43,923 --> 00:58:06,683
+Dörtse bunları şöyle yapabiliyorum. Retinden, şimdi şöyle yapalım. Yanlış anlatmayayım. Şu mouse'a hakimiyetim niye bazen gidiyor? Şimdi U var, Y var, U var ve V var. Dört bit, dört bit alıyorduk. Şunu dört bit, dört bit düşün. Dört bit düşün.
+
+211
+00:58:07,795 --> 00:58:18,975
+Örnek azaltma yapıyorum. Şimdi Y neydi? Parlaklık. Parlaklığı gözüm algıladığı için olduğu gibi onu 4 alıyorum. Şurada olduğu gibi 4 alıyorum.
+
+212
+00:58:22,387 --> 00:58:40,568
+Renklilik olduğu için ve gözüm bütün renkleri çok iyi algılayamadığı için bana bazen diyor ki buradan sadece iki tane piksel değerini al. Şunu şuna alırım veya şunu şuna alabilirim 2-2. Diğerinde de böyle yapabilirim.
+
+213
+00:58:40,568 --> 00:58:50,387
+Veya Down Sampling, daha az örnek alacaksan diyor, evet Y'nin ilk dört piksel değerini al ama diğerlerinde birinci piksellerini al.
+
+214
+00:58:50,387 --> 00:59:14,468
+Birinci pikselde şunun en üst köşesindeki AC olan yani gözün en fazla algılayacağı yüksek frekansa sahip olan değeri alacaksın. Eğer böyle bir şey yapıyorsan örnek azaltmış oluyorum. Eğer örnek azaltmak istemiyorsan bulunan 4 biti Y içinde, U içinde, V içinde hep 4 bit olarak kullanacağım.
+
+215
+00:59:18,387 --> 00:59:25,927
+Bu örneklerindekini iki piksele çekeceğim ya da bir piksele çekeceğim. Bu işlemede Downsampling işlemi deniyor.
+
+216
+00:59:26,387 --> 00:59:54,007
+Şimdi yeniden buraya geçelim. Paletimi değiştirdim. Örnek azaltmayı yaptım. Şimdi her bir paletimi küçük küçük parçalara bölüyorum. 8'e 8'lik bloklara bölmüşüm. Her bir 8'e 8'lik blok için DCT'yi uygulayacağım. Her biri için. Red paletindeki 8'e 8'lik blok, buradan başlayacağım buraya kadar, green'deki buradan sonuna kadar.
+
+217
+00:59:54,387 --> 01:00:02,967
+Blue'daki buradan sonuna kadar DST uygulayacağız. Peki DST nedir? Şimdi bakalım. DST,
+
+218
+01:00:03,503 --> 01:00:19,983
+Dediğimiz gibi Discret Cosine Transform dedik. Ayrı Kosinüs dönüşümü. Görüntü 8'e 8'lik bloklara bölünür ve her blok diğer bloklardan bağımsız olarak DCT'ye tabi tutulur diyor.
+
+219
+01:00:20,283 --> 01:00:31,023
+Şimdi elimde 8'e 8'lik bir maksim varsa, 8'e 8'lik blok almıştım ya, buranın 8'e 8'lik çizemem ben şimdi. Bunun 8'e 8'lik olduğunu düşünün.
+
+220
+01:00:31,327 --> 01:00:44,547
+Bunların ilkine şuraya DC diyeceğim ilk piksele. Yani sıfırın sıfırıncısına. Diğerlerine de AC diyeceğim. Şunu da şöyle göstereyim.
+
+221
+01:00:56,563 --> 01:01:15,123
+Piksellerden bir kare aldığınızı düşünün. Şunu alıyorsun. Bunlar renklerin kodları. Bunlar renk kodları olsun. Şimdi ben bunu DCT uyguladığım vakit en üstteki şu sıfır olan DC kas sayısını gösteriyor.
+
+222
+01:01:20,672 --> 01:01:32,791
+0'dan farklı olan AC'leri gösteriyor. Şuradaki şu renk olanlarda yani şunlarda değeri 0 olan AC'leri gösteriyor.
+
+223
+01:01:32,791 --> 01:01:44,991
+Bu 8'e 8'lik matrise DCT uyguladığında şuradaki katsayı kesinlikle 0 olup DC'yi anlatacak.
+
+224
+01:01:45,132 --> 01:01:46,391
+DC katsayısını.
+
+225
+01:01:48,467 --> 01:02:11,087
+Şu kısımlar, diakonilin altında kalan şu kısım ise AC kas sayıları ama değeri sıfırdan farklı. Şunlar ise gözümün algılayamadığı varyansı çok düşük olan AC kas sayıları. Bunları ben aslında yok etmeye çalışacağım. Burada bahsettiğim şey bu.
+
+226
+01:02:12,083 --> 01:02:38,343
+Peki, nasıl yapacağım? Yani burada bu matrise 8'e 8'lik renk pikselim vardı. DCT uyguluyorum. Bunların içindeki değerler değişecek. Nasıl değişecek? İşte buraya bakalım. Bir kere insan gözü yüksek frekanstaki değerleri algılayamaz. Şimdi elimde neler var? Bir DC frekanslarım var. Yine nereye yazıyorum acaba ben? Bir DC frekanslarım var. Bir de AC'ler var.
+
+227
+01:02:38,963 --> 01:03:01,923
+AC'leri insan gözü algılayamıyor. Bunlar çünkü yüksek frekans. DS'ler ise düşük frekans. Bunları insan gözü algılayabilir. İnsan gözü yüksek frekanstaki değerleri algılayamaz. Resimde sıkıştırma yapılacak ise resimden bu yüksek frekansları çıkarıyorum insan gözü algılamadığı için.
+
+228
+01:03:06,963 --> 01:03:32,403
+ismi 8x8'lik bloklara ayırdığımızı düşünelim. 8x8'lik bloklara ayırıldı. Her bir paleti ayrı ayırıyorduk. Burası red paleti, green paleti, blue paleti vardı. Bunun içindeki 8'lik bloku aldım birincisine. İçinde piksel değerlerim var. Nedir piksel değerlerim? 0 ile 255 arasında sayılar var.
+
+229
+01:03:34,963 --> 01:03:59,844
+Sayıları şu hale getireceğim. DCT-128 ile artı 127 arasında çalışır. Öyleyse elimdeki renkler sıfırdan 255'e kadar değişiyorsa benim bunları eksi 28 ile artı 127'ye normalize edebilmem için bütün değerlerden 128 çıkarıyorum.
+
+230
+01:04:02,963 --> 01:04:10,963
+Ne kalır? Eksi yüz yirmi sekiz kalır. İki yüz elli beşten yüz yirmi sekiz çıkarırsan da yüz yirmi yedi kalır.
+
+231
+01:04:11,327 --> 01:04:24,148
+Demek ki D-128 ile artı 127 arasında değiştiği için 8 ile 8'lik bloklarda 0 ile 255 arasında olan renkleri buna çevirmem lazım.
+
+232
+01:04:24,648 --> 01:04:29,427
+Çevirebilmek için de bütün renk kodlarından 128'i çıkarıyorum.
+
+233
+01:04:29,427 --> 01:04:33,568
+İşte bu çıkarılmış matrisi T matrisi diyorum.
+
+234
+01:04:34,036 --> 01:04:45,215
+Orijinal, o almış olduğum 8'e 8'lik blokları, x'e 128 ile artı 127 arasına getirme işleminde oluşan matrise T matrisi diyorum.
+
+235
+01:04:46,096 --> 01:04:48,776
+Her bloğa bu DCT'yi uyguluyorum.
+
+236
+01:04:49,556 --> 01:04:56,376
+Düşük frekanslı değerler matrisin sol üst köşesinde, çünkü şurasıydı sol üst köşesi matrisin.
+
+237
+01:04:57,996 --> 01:05:00,376
+Şurayı görüyorum. Şurasıydı.
+
+238
+01:05:02,036 --> 01:05:02,675
+Ey!
+
+239
+01:05:03,027 --> 01:05:20,187
+Aşağıya doğru yüksek frekanslar geliyor. Diagonelin altı neredeyse sıfırlanan yüksek frekanslar. Diagonelin üstü ise sıfırdan farklı yüksek frekanslar. Ben oturup aslında sıfırları yok etmeye çalışıyorum.
+
+240
+01:05:31,027 --> 01:05:49,967
+Peki, M matrisi nedir? M matrisi, işte DCT kas sayılarından oluşan matrisi. Burada ne yapıyor? Matrisin İ'inci ve J'inci satır ve sütunu. Bu ne olacak? 0,0'dan başlayacak. 8,8'e kadar gidecek.
+
+241
+01:05:49,967 --> 01:05:59,027
+Eğer İ0 ise bir bölü köken yazıyorum o göze. İ0'dan büyükse şuradaki işlemden geçiriyorum.
+
+242
+01:05:59,027 --> 01:06:10,047
+Peki n nedir? n matrisin boyutu. Ben 8'e 8'lik bir matris yapıyorsam burası 8. n değer. 32, 32 diyorsam burası 32.
+
+243
+01:06:11,127 --> 01:06:25,147
+m matrisini de bu şekilde elde ediyorum. Sonra m matrisinin transpozunu t matrisi ile çarpıp sonra da m matrisi ile çarptığımda işte d matrisini elde ediyorum.
+
+244
+01:06:26,068 --> 01:06:28,428
+Dm atresini elde ettim.
+
+245
+01:06:29,076 --> 01:06:38,556
+Şunu yine şöyle alayım. D madresini elde ettim. Daha sonra D madresini Quantization madresini uyguluyorum. Quantization madresi neydi?
+
+246
+01:06:38,556 --> 01:06:56,056
+İşte sıkıştırmam, Quantization aslında azaltmak. Mesela Quantization algoritmaları var. Renkleri azaltmak. İşte mesela K-minc renkleri azaltmak için kullanıyordum. Bir kümeleme algoritmasıydı. Aslında o yapılan işlem Quantization işlemidir.
+
+247
+01:06:57,076 --> 01:07:16,955
+İşleminde de benim için çıkarılmış Q matrisleri var dedim hazır olarak. İşte %20 sıkıştırma yapıyorsan %80, %40 ama böyle apık supuk şeyler de vermiyorlar. Yani %30, %60, %45 böyle bir standartlar belirlenmiş çalışmalarda hep bunlar kullanılır. Çıkarıyorlar.
+
+248
+01:07:25,300 --> 01:07:53,220
+Senin kullanacağım quantization matrisi budur diyor. Bunu çıkarmış. Ben hemen alıyorum bunu. D matrisimi elde etmiştim diskret kosen sonucunda. Bunu Q matrisine oranlıyorum. Tabi burada real sayılar çıktığı için round'unu da aldığımda integer sayılardan oluşan bir C matrisim oluyor. Bu C matrisimde round işlemi yaptığım için aslında bir kayıplar.
+
+249
+01:07:53,300 --> 01:08:03,720
+Burada gerçekleşiyor. Çünkü böyle işlemi flow sayıların çıkması lazım. Round işlemiyle duvarlama yapıyorum. Burada sabit sayılar çıkıyor.
+
+250
+01:08:04,244 --> 01:08:29,144
+DST dönüşümü ortaya çıkan kas sayılar, işte burada da bunu demişiz zaten. DST dönüşümü sonrasında ortaya çıkan kas sayılar genellikle ondalıklıdır. Niceleme yöntemiyle tam sayıya dönüştürülmüştür. Nicemleme yönteminde her kas sayısı 1 ile 255 arasında bir tam sayıya bölünür ve daha sonra en yakın tam sayıya yuvarlanır. Bu işte bir kayıbı meydana getiriyor.
+
+251
+01:08:32,243 --> 01:09:00,003
+Bu nicamleme batrisleri 8'e 8'lik blokları vermişsem bu 8'e 8'lik bir blok kullanacağım. Eğer 16'lık vermişsem 16'lık olarak hazırlanmışını kullanacağım. Parlaklık ve renklilik için farklı tablolarımız var. Bunları hep anlatırken söyledim. Görüntüdeki kayıp miktarını belirlemek için işte şu quality factor diye kullanmış olduğum bu matris kullanılır.
+
+252
+01:09:00,243 --> 01:09:13,363
+Kalite çarpmanına göre tablolarda değişiklik gösterilir dedim. İşte oluyor, oldu. C maddesinin bir dakika sağ alt köşesi 0 ile doludur.
+
+253
+01:09:14,068 --> 01:09:24,328
+Sağ alt köşesi diye yazmışım. Sağ alt köşesi sıfırdı. Çünkü bunların altına bakın ne diyor? İşte sıfırla dolu. Şunlar değişince sıfırlanıyor.
+
+254
+01:09:24,328 --> 01:09:34,488
+İşte şuradan ötesi maviler sıfırdan farklı yüksek frekanslar. Şurası da sıfır. Ve geliyoruz. Bunların hepsini yapıyoruz.
+
+255
+01:09:35,475 --> 01:09:52,895
+Arkasından bir RLE'yi uyguluyor. Neden? Bu AC'ler hep sıfır olduğu için RLE ile sıkıştırıyor. Burada da DC kas sayılarında da renk kodları olduğu için burada da Huffman Koding kullanıyor. Ve sıkıştırılmış veriyi yazıyor.
+
+256
+01:10:00,083 --> 01:10:10,943
+Ters işlem olacaktı. Ben ne yapmıştım? C'yi bulmak için ne yapmıştım? D'yi Q'ya bölmüştüm hatırlarsınız ve round etmiştim.
+
+257
+01:10:10,943 --> 01:10:27,683
+Şimdi elimdeki bu C matrisini bu sefer Q ile çarpıyorum. R'yi elde ediyorum. Sonra ne vardı? M'nin transpozu çarpı D matrisi çarpı M'nin kendisiydi.
+
+258
+01:10:28,083 --> 01:10:56,064
+Şimdi burada da D yerine artık geri dönüşümdeki R'yi kullanıyorum. Yine M'nin transpozu M. Bir de 128 çıkarmıştım. 128'i ekliyorum. N'yi elde ediyorum. Yani DST'nin tam tersini elde ediyorum. O da ne oluyor? DST'nin tam tersi gelip 128'i de ekleyerek burayı oluşturuyor. Bunların her biri çıkarıyor. Burada ne yapmışsam?
+
+259
+01:10:56,083 --> 01:11:23,583
+Aynısını ters işleme yapıyorum. Sonra yine RGB'ye çevirmek istiyorsam, yıldan RGB'ye çeviriyorum ve kaynak resmimi elde ediyorum. Eğer kayıplı yapmışsam belki bozulmaları hissederim ama gözümün algılamadığı yüksek frekansları değiştirdiği için çipektin sıkıştırma kayıplı da olsa gözümüz pek algılamıyor. Çok büyük bozulmalar yaşatırsam.
+
+260
+01:11:24,083 --> 01:11:38,983
+Yani işte 3000 tane renk varken ben bunu gidip 16 renge düşürürsem elbette gözüm algılar. En azından 16 tane farklı rengi bir odaya bile baksam gözümle ayırt edebilirim.
+
+261
+01:11:39,583 --> 01:11:43,443
+Jipekte kısacası bu şekilde çalışan bir yöntem.
+
+262
+01:11:44,275 --> 01:12:09,476
+Az kaldı. O yüzden ara falan vermek istemiyorum arkadaşlar. Bunun dışında JPEG 2000 var dedik. Bunun diğerinden ne farkı var? Aslında tek farkı şu. DCT yerine bu Weavlit Transform'unu kullanıyor. Bu Weavlit Transform'u da sinyal işlemede gösterilen bir şey. Ben oturup bunları zaten hazır olarak kullanıyorum.
+
+263
+01:12:12,275 --> 01:12:23,996
+Resmi dörde bölüyor. Bu dört parçadan bir tanesi çok yüksek boyutta olanı alıyor.
+
+264
+01:12:24,851 --> 01:12:52,851
+Şöyle diyeyim, bunları şimdi ezbere bilmiyorum da bunun bir tanesi low-low filter, bir tanesi low-high filter, bir tanesi high-high, bir tanesi de high-low herhalde. Sonra bunları kendi içinde dörde bölüyor. Bunları kendi içinde dörde bölüyüp bunun seviyesine göre bir takım kayıplar kullanıyor. JPEG'den, pardon DCT'den daha iyi sıkıştırma performansı.
+
+265
+01:12:52,851 --> 01:13:03,431
+Ve DCT'den daha hızlı çalıştığı için kullanılıyor. Ama bu yine bu grup tarafından kullanıldığı için nasıl diyeyim?
+
+266
+01:13:03,988 --> 01:13:21,648
+Copyright değil de lisanslı. Ben herhangi bir ticari ürün piyasaya çıkaracaksam, içinde bu formata ihtiyacım varsa mutlaka onlara bir para ödemem gerekiyor ya da bu formatı kullanmayacağım. Açık olan formatı kullanacağız.
+
+267
+01:13:22,420 --> 01:13:36,219
+Mesela başka neler var? GIF var. Mesela GIF resim formatı olarak biliyoruz. Graphics Interchange Format. 87 yılında yine geliştirilmiş. İçinde LZV'yi kullanan bir yöntem.
+
+268
+01:13:38,292 --> 01:14:06,212
+256 renge sahip. 256'dan fazla renk varsa resimde GIF çalışmıyor. 8 bitlik renk derinliğine sahip. Renkli fotoğraf görüntülerinde yetersiz kalıyor ki yüksek kalitedeki resimlerde 256'dan fazla renk olduğu için GIF'e çeviremiyoruz. Birkaç rengin çoğunlukta olduğu grafiksel gösterimlerde RL için de bahsetmiştik.
+
+269
+01:14:06,292 --> 01:14:27,872
+Kayıpsız olarak, bir sıkıştırma yöntemi olarak görüyoruz. İki tane versiyonu var. 87A ve 89A. Bunlardan 89A'nın içinde gif içinde gifler oynatılabiliyor. O animated gifler 89A versiyonu. Resim içerisine başka bir resim yerleştirebiliyor.
+
+270
+01:14:34,292 --> 01:14:56,912
+En son seviyede en net haliyle görüyoruz. Mesela bu nerede işe yarar? Büyük bir resim var. Birinci seviyesini açıyorum. Resmi öyle hayal mayan ne olduğunu tahmin edebiliyorum. Aradığım resim bu değil diyorum. Hemen resmi kapatıyorum. Tamamını açsam süre olarak ve işlem olarak uzun zaman sürecek.
+
+271
+01:15:02,292 --> 01:15:15,012
+Aslında ne demek? Sadece alçak frekansları gösteriyorsun. Sonra biraz yüksek frekans katıyorsun. Sonraki aşamada biraz daha yüksek frekans katarak resmi netleştiriyorsun.
+
+272
+01:15:15,592 --> 01:15:26,811
+Kullanım oranı yine düşük. Çünkü patentli bu da. Donanımdan da bağımsız. İfleri her türlü bilgisayarda rahatlıkla açabilirsiniz.
+
+273
+01:15:26,811 --> 01:15:28,271
+Tif var.
+
+274
+01:15:28,640 --> 01:15:50,119
+TİF'de Tekt İmitfile Format diye geçiyor. Bu TİF'ler şeylerde biraz rastlayabilirsiniz. Tıbbi görüntülerde GIF değil de TİF karşınıza çıkabilir. Çünkü bu da kayıpsız bir sıkıştırma. Yine bu da lisanslı.
+
+275
+01:15:56,640 --> 01:16:22,000
+LZV'yi kullanmış. 4-5 sene sonra da yeni sürümünde de jipeyi eklemiş. LZV'nin patent sorunlarından dolayı TİF altında zip sıkıştırması kullanılmış. 24 bit renk derinliğine destekliyor. Öyleyse ben fotoğraflarda kayıpsız sıkıştırma da kullanabilirim.
+
+276
+01:16:24,640 --> 01:16:33,140
+İndirdiğiniz vakit tip formatıyla da indirebilir. Çok renkli resim dosyalarında hem yerden hem de zamandan
+
+277
+01:16:34,996 --> 01:17:02,876
+Yer daha önemliyse, zaman değil de daha az yer kaplamasını istiyorsam tifi tercih edebilirim. Hızlı jüpheye göre daha iyi ama sıkıştırma oranı jüpheye göre daha düşük. Gif'ten temel farkı nedir? Gifi demiştik ya daha az renklere izin veriyor. Yani 256 renkle sınırlı fakat tifte her bir palet 8 bitten.
+
+278
+01:17:02,996 --> 01:17:11,195
+24 bit derinliğine destek verebiliyor. Sonra yine bir başka format var. Bu free bir format.
+
+279
+01:17:11,604 --> 01:17:37,804
+Hiçbiri telif hakkı ödemek istemiyorsa bir yere bu PNG formatını kullanıyor. Portable Network Graphics. Zaten buradaki portable taşınabilir olması da yine her türlü donanımda falan kullanabiliyorsunuz. GIF ve altyapısında leze ve algoritmalarının patent anlaşmaları olduğu için insanlar zorda kalmışlar ve bu PNG formatını geliştirmişler.
+
+280
+01:17:39,604 --> 01:17:56,863
+Teknik Renk yani 2 üzeri 48 bit ve 2 üzeri 16 bit gri tonlama desteği var. Yüksek oranda sıkıştırma becerisi yapıyor. Bunun içerisinde ZLIP ve DIFLET var. DIFLET'in içerisinde ne vardı? LZV ve Huffman vardı.
+
+281
+01:18:07,604 --> 01:18:23,983
+LZV'ler çıkıyor. Resmin kalitesine ne kadarlık sıkıştırma yapacağıma, hız mı önemli yoksa yer mi önemli buna vererek farklı farklı kombinasyonlar oluşuyor.
+
+282
+01:18:35,604 --> 01:19:00,323
+Yüksek frekanslarını düşürebilirim. Yüksek frekans renkleri ya da düşürmeyebilirim. Downsampling yaparak küçük küçük bloklarda işlem yapıyorsam 4 bit yerine 2 biti komşu bitlerinin benzerliğine bakarak alıp kullanabilirim. Böyle farklı versiyonlar bunların farklı trevlerinden oluşmuş bir sürü algoritmamız var.
+
+283
+01:19:00,884 --> 01:19:18,923
+Şimdi arkadaşlar, görüntü işlemede de size anlatacaklarım bunlar. Daha bir sürü şey bulabilirsiniz. Ama ana ve öz olanlar bu. Altında yatanlar da diğer algoritmalarda gördüğümüz yöntemler.
+
+284
+01:19:25,268 --> 01:19:30,268
+Bu sıkıştırmadan önce sinyal işlemi...
+
+285
+01:19:30,644 --> 01:19:49,184
+Görülecek olan bazı algoritmalar var, transformlar. Bunları belki bilmesi gerekiyor. Bazı quantization yöntemleri var. İşte Pim quantization, Plot quantization ya da Plot. Görüntü üzerine çalışmadığım için isimler aklımda pek kalmıyor.
+
+286
+01:19:58,644 --> 01:20:24,403
+Kullanabilirim. Bunlar işte farklı derslerin konuları. Onları biliyorsam, bilmesem bile ben compression'da onu alıp hazır olarak kullanacağım. Eğer datam çok çok özel bir dataysa, onların içerisinde değişikliğe gitmem gerekiyorsa, o zaman algoritmalar hakkında kısa da olsa bir bilgim olması lazım ki, koda girdiğim vakit neresine ne ekleyeyim, ne çıkarayım, bunlara rahatlıkla cevap verebileyim.
+
+287
+01:20:25,203 --> 01:20:38,984
+Benim anlatacaklarım bugün bu kadar. Sorunuz varsa alayım ama sorunuzu bana sormadan evvel önümüzdeki hafta seminerlerimiz başlıyor. Yine 9'da başlayacağız ve online olarak yapacağız arkadaşlar.
+
+288
+01:20:38,984 --> 01:20:52,123
+Seminer günü seminerini veren kişi bana hazırladığı PowerPoint sunumu Drive açacağım. Drive'a mutlaka gönderecek. Rapor istemiyorum.
+
+289
+01:20:53,203 --> 01:21:21,203
+Bu hafta ağzından rapor çıkmışsa, hazırlayan varsa onu da kabul ederim. Ama PowerPoint üzerinden anlatın. Maksimum 15 dakika ile sınırlandırın. Çünkü 10 kişinin anlatması oldukça sıkıcı ve zaman alıcı. Açtın, kapatın, hepsi 15 dakika olması gerekiyor. Ben bugün unutmadan seminer diye bir klasör açıp yine gruba göndereceğim. Sunumlarınızı oraya koyun. Ama lütfen...
+
+290
+01:21:21,203 --> 01:21:30,604
+Lütfen dosyanın ismine numaranızı alt tire adve soyadınızı yazın. Ki ben tek tek girip kim neymiş deyip adına bakmayayım.
+
+291
+01:21:31,347 --> 01:21:44,368
+Sorunuz varsa sorunuzu alıyorum. Projelerinize başlamanız lazım. Herhalde Haziran'da final sınavlarımız olacağına göre, Haziran'ın hangi haftasına koyacaklar finali bilmiyorum.
+
+292
+01:21:44,368 --> 01:21:55,368
+Final gününde yine online olarak bana göstereceksiniz. O final günü onun bilgilerini verebilirim ama öncesinde projesini bitiren olursa,
+
+293
+01:21:55,923 --> 01:22:17,684
+Bana söyleyeyim, birkaç kişiyi bir araya toplayıp bitenleri ayrı bir gün saat verip, akşam saatinde olup bakabilirim. Çünkü aynı gün bütün projelere bakmam da çok zor olur. O gün başka sınavınız varsa ona da geçebilirsiniz. Ben bütün günü öyle size ayırmak zorunda kalacağım. Evet, sorunuz var mı?
+
+294
+01:22:21,684 --> 01:22:25,584
+Nezaketen biri açıp var mı hocam? Yok hocam. İyi ki hocam.
+
+295
+01:22:25,604 --> 01:22:27,284
+Hocam merhabalar, nasılsınız?
+
+296
+01:22:28,544 --> 01:22:31,584
+[kişisel bilgi]
+
+297
+01:22:32,104 --> 01:22:33,024
+[kişisel bilgi]
+
+298
+01:22:33,524 --> 01:22:35,144
+[kişisel bilgi]
+
+299
+01:22:36,224 --> 01:22:37,984
+[kişisel bilgi]
+
+300
+01:22:38,264 --> 01:22:40,544
+[kişisel bilgi]
+
+301
+01:22:41,363 --> 01:22:46,783
+[kişisel bilgi]
+
+302
+01:22:46,963 --> 01:22:49,323
+[kişisel bilgi]
+
+303
+01:22:50,003 --> 01:22:54,144
+[kişisel bilgi]
+
+304
+01:22:54,144 --> 01:23:02,344
+[kişisel bilgi]
+
+305
+01:23:02,815 --> 01:23:07,296
+[kişisel bilgi]
+
+306
+01:23:07,376 --> 01:23:10,675
+[kişisel bilgi]
+
+307
+01:23:10,916 --> 01:23:12,595
+Tamam. Bölümde de olabilirim ama.
+
+308
+01:23:13,416 --> 01:23:13,935
+Tamam. Tamam hocam.
+
+309
+01:23:13,935 --> 01:23:16,935
+Aşağıda imzalar vardır. Tamam. Başka sorusu olan var mı?
+
+310
+01:23:17,456 --> 01:23:17,876
+Tamam.
+
+311
+01:23:18,716 --> 01:23:22,175
+Yoksa hepinize iyi günler diliyorum. Hoşçakalın.
+
+312
+01:23:23,036 --> 01:23:23,956
+İyi günler hocam.
+
+313
+01:23:24,175 --> 01:23:24,595
+İyi günler.
+
+314
+01:23:25,619 --> 01:23:34,760
+Ha bu arada slide'a yeni şeyler eklemiştim. Akşam değiştirdim. İndirmişseniz yenisini koydum. Tamam mı?
+
+315
+01:23:36,320 --> 01:23:38,360
+Tamam hocam. İyi günler.
