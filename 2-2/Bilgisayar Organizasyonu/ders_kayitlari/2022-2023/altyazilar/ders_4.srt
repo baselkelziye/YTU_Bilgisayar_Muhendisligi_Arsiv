@@ -1,0 +1,2291 @@
+1
+00:02:01,108 --> 00:02:14,388
+Arkadaşlar, merhabalar. Bu hafta daha önce ilan ettiğimiz gibi dersin son saatinde kısa sınavımızı yapacağız. İlk dört haftanın konusu dahil olacak demiştik zaten.
+
+2
+00:02:15,848 --> 00:02:20,608
+Şimdi, geçen hafta programlanabilir cihazlardan bahsetmiştik.
+
+3
+00:02:21,587 --> 00:02:31,427
+Bu arada sesle ilgili bir sıkıntı var mı yok mu? Sabahki bir derste öyle bir problem oldu sanki de. Eğer bir problem varsa sesle ilgili iletirseniz başka bir şeyler deneyeceğim.
+
+4
+00:02:32,268 --> 00:02:33,487
+Yok hocam, sıkıntısız.
+
+5
+00:02:33,487 --> 00:02:44,828
+Tamam, teşekkür ederim. Bu haftaki dersimizde de bu iki saatlik süreç içerisinde hafız elemanları üzerinde duracağız. Ben şimdi onunla ilgili paylaşım yapayım.
+
+6
+00:03:28,692 --> 00:03:29,152
+Şalom.
+
+7
+00:04:13,651 --> 00:04:19,531
+İlk 3 haftanın slide'ları içerisinde yer alan bir başlık vardı hafıza elemanları diye.
+
+8
+00:04:20,951 --> 00:04:22,911
+Bir oraya değineceğiz şimdi.
+
+9
+00:04:25,031 --> 00:04:29,831
+Burada genel blok yapıları göreceğiz. Daha sonrasında da daha detay yapılara bakacağız.
+
+10
+00:04:30,831 --> 00:04:40,651
+Öncelikli olarak bir bilgisayar yapısında içerisinde çeşitli hafıza hiyerarşilerinden bahsedebiliriz.
+
+11
+00:04:41,267 --> 00:04:44,967
+Nerede vardı mesela bu kayıt?
+
+12
+00:04:53,012 --> 00:04:53,632
+Teşekkürler.
+
+13
+00:05:01,908 --> 00:05:18,867
+Şimdi bir hafıza hiyerarşisinden bahsedebiliriz. Bunun için CPU'nun kendisini bir öncelikli olarak bir hiyerarşi içerisinde yer verecek olursak, CPU içerisinde arkadaşlar bir hafıza elemanının varlığından bahsederiz. Bunlar yazmaçlar.
+
+14
+00:05:20,148 --> 00:05:22,388
+Yazmaç veya register diye geçer.
+
+15
+00:05:24,867 --> 00:05:29,008
+CPU içerisindeki yazmaçların özelliğine baktığımız zaman,
+
+16
+00:05:29,427 --> 00:05:40,867
+Bunlar çok yüksek hızlı hafıza elemanları ama imalat maliyetleri yüksek. Dolayısıyla kapasite olarak küçük miktarlarda kullanılıyor.
+
+17
+00:05:41,668 --> 00:05:44,007
+Örneğin SM dersinden anlatılacak olursak.
+
+18
+00:05:44,596 --> 00:05:52,315
+Genel amaçlı yazmaç dediğimiz zaman, bizim dışarıdan erişebildiğimiz az sayıda yazmaç vardı. AX, BX, CX, DX gibi yazmaçlar vardı.
+
+19
+00:05:52,435 --> 00:05:57,435
+Veya bunların 64 bitlik versiyonlarına baktığımız zaman orada biraz daha çeşitlenme vardı.
+
+20
+00:05:58,375 --> 00:06:06,256
+Örneğin 64 bitlik bir CPU'da, Intel CPU içerisinde çeşitli genel amaçlı yazmaçlar haricinde bir de vektör yazmaçları vardı.
+
+21
+00:06:07,196 --> 00:06:10,256
+Bunların kullanımı, CPU içerisindeki işlemleri...
+
+22
+00:06:10,771 --> 00:06:19,911
+Yürütürken girdi sağlamak, üzerinde kayıtlı değerle girdi sağlamak, işlem sonuçlarını tutmak,
+
+23
+00:06:20,403 --> 00:06:35,443
+gibi görevleri yerine getiriyordu. Dolayısıyla bunlar CPI içerisindeki temel hafıza birimleri, hiyerarşi içerisindeki en hızlı ve kapasite olarak en düşük, maliyet olarak da yüksek birim başına maliyeti yüksek kısımlar.
+
+24
+00:06:35,443 --> 00:06:47,423
+Daha sonrasında bir ön bellek kavramından bahsedebiliriz. Ön bellek kavramından bahsedebiliriz. Ön bellekle ilgili olarak da şunu söyleyebiliriz. İngilizcesi de cache diye geçiyor.
+
+25
+00:06:47,839 --> 00:06:57,659
+Cache ile ilgili olarak da bunun CPU içerisinde yer alan versiyonları da var. Hemen CPU dışında alan seviyeleri de var.
+
+26
+00:06:57,759 --> 00:07:03,759
+Onu dolayısıyla belki şöyle çizebiliriz. İç içe geçtikleri yerler var. Böyle çizebiliriz bunu.
+
+27
+00:07:04,596 --> 00:07:21,596
+Ön bellek yazmaçlara göre daha yüksek kapasitedeler. Daha hızlı erişim, daha yavaş bir erişim süresine sahip ama daha yüksek kapasitede kullanılabiliyorlar. Bunun bir sonraki hiyerarşisinde yer alan şey ise bellek.
+
+28
+00:07:24,660 --> 00:07:40,320
+Bellek yapısı. İşte günümüzde bunlar daha çok bellek yapısı dediğimiz şey aslında dinamik RAM mantığında kullanılan özellikteki yapılar. Ders içerisinde ne demek olduğunu göreceğiz. Bir de ikinci hafıza birimleri var.
+
+29
+00:07:43,987 --> 00:08:10,007
+İkinci hafıza birimleri var. Bunlar hard disk olabilir, magnetic tape olabilir, CD-ROM olabilir gibi şeyler. Bunlar arasındaki hiyerarşiye baktığımızda normalde ön belleğin görevi burada şu. CPU bellekten bir hafıza erişimi yapmak isterse bu instruction içinde olabilir, komut içinde olabilir, bir data içinde olabilir.
+
+30
+00:08:10,867 --> 00:08:18,748
+Bunun gidip bellekten veriyi istemesi ve geri getirmesi oldukça uzun zaman alıyor.
+
+31
+00:08:22,468 --> 00:08:25,548
+Dolayısıyla daha küçük kapasitede bir ön belleğimiz var.
+
+32
+00:08:26,828 --> 00:08:34,408
+Genel programlama yaklaşımındaki takip edeceğimiz bir takım özelliklerden faydalanarak ön bellekle performans arttırıyoruz.
+
+33
+00:08:34,488 --> 00:08:37,268
+Ne gibi özellikler var? Bunu daha sonra yine bahsedeceğiz.
+
+34
+00:08:37,908 --> 00:08:42,668
+Biz mesela bir döngü yazdığımız zaman işte sıfırdan.
+
+35
+00:08:46,580 --> 00:08:54,519
+Böyle bir döngü yazmaya çalıştığımızda, bunu bir işte X değişkenine atıyor olacak olsak.
+
+36
+00:08:55,440 --> 00:09:03,860
+Şimdi burada ben sıfır indisindeki ERA dizisine eriştiğim zaman T artı bir anda biri erişeceğim.
+
+37
+00:09:05,300 --> 00:09:11,060
+Dolayısıyla hep komşularına erişiyorum. Dolayısıyla bir veriye eriştiğimde komşuluk özelliğini kullanarak
+
+38
+00:09:11,443 --> 00:09:19,743
+Bir sonraki komşuya erişme ihtimali yüksek. Bu programlamanın genel akışı çerçevesine karşılaştıkmamız muhtemel olan bir senaryo.
+
+39
+00:09:20,423 --> 00:09:29,384
+Veya şöyle bir şey olabilir. Ben bir döngü içerisinde şunu yapıyor olabilirim. X eşittir, X artı, I gibi bir şey yapıyor olabilirim. Sürekli X'e erişiyorum.
+
+40
+00:09:29,503 --> 00:09:36,083
+Bakın bu da yine bir for döngüsü içerisinde X'e erişiyorum. Yine farklı zamanlarda aynı veriye erişme şansım olabilir.
+
+41
+00:09:36,628 --> 00:09:46,067
+Dolayısıyla baktığımız zaman şurada spotial yani bir komşuluk var. Komşuluk uzamsal bir şey. Dolayısıyla buradaki özelliğe spotial lokalite deniyor.
+
+42
+00:09:48,508 --> 00:09:53,488
+Uzamsal bir yerellik var burada. Burada da temporal lokalite var.
+
+43
+00:09:59,059 --> 00:10:26,059
+Ceydemeyiz. Buradaki anlamda şöyle tanımlayabiliriz. Geliştiğim bir veriye başka bir zaman tekrarleşme ihtiyacım olabilir. O zaman ben CPU tarafında belleyi adreslemişsem, bellekten tek bir veri okumak yerine bellekteki bir hafıza bölgesini, gelişmek istediğim nokta ve civarındaki bellek bölgesini ön belleğe aktarıyorum.
+
+44
+00:10:26,803 --> 00:10:33,523
+Bunu ön belliğe aktardım. Dolayısıyla benim aradığım veri, şu noktaya gösterdiğim yerdeki aradığım veri artık ön bellekte.
+
+45
+00:10:34,003 --> 00:10:39,864
+Dolayısıyla buradaki süreçteki izlediğimiz yol ne oldu? Ben önce artık veriyi ön bellekten bakacağım.
+
+46
+00:10:40,503 --> 00:10:49,223
+Ön bellek de varsa buradan kullanacağım. Ön belliğin erişim hızı daha yüksek olduğu için bu durumda ortalama erişim süremi arttırmış oldum.
+
+47
+00:10:49,223 --> 00:10:52,083
+Bir sonraki anda arayacağım veri şurada.
+
+48
+00:10:52,755 --> 00:11:04,475
+Yine bellekte de aynısı mevcut duruyor. Ama ben yine önce ön belliğe baktım ve buldum. Bir sonraki aşamada erişeceğim veri şurada. Ama ön bellek de yok. O zaman ne olacak?
+
+49
+00:11:05,015 --> 00:11:16,535
+CPI ön belliğe baktı. Aradığı veriyi bulamadı. Gidecek. Bu sefer bellekten bir sonraki belleyi alıp tekrar onu ön bellekte bir yere yerleştirecek.
+
+50
+00:11:17,268 --> 00:11:25,148
+Ön bellekli bir yere, boş bir yere yerleştirecek. Velev ki boş yer kalmadı, nereye yerleştirmesi gerekir? Hangisini kaldıracak?
+
+51
+00:11:26,168 --> 00:11:34,748
+Veyahut da çekiyor ama yerleştireceği yer neresi olabilir? Boşluk da var ama çeşitli yerleştirme polisleri var, kuralları var.
+
+52
+00:11:35,288 --> 00:11:41,948
+Onlara göre yerleştirmek istese, mevcutta daha boş yer olsa bile mevcutlardan birini kaldırıp onun yerine koyabilir.
+
+53
+00:11:42,668 --> 00:11:44,327
+Dolayısıyla böyle bir yapı söz konusu.
+
+54
+00:11:44,884 --> 00:12:07,504
+Ön bellek bellek mantığı çerçevesinde. Bu yapıyı incelediğimizde aslında bizim çalıştırdığımız programlar belliğe yüklüyor. Biz bellekten çalıştırıyoruz programları. Ama öyle büyük programlar olabilir ki bu programın tamamı belliğe sığmayabilir veya zaman çoğullamalı olarak çalıştığımız vakit bellekte koyup kaldırdığımız bazı belliler olabilir.
+
+55
+00:12:08,083 --> 00:12:31,823
+Bunun karşılığı da tıpkı ön bellek bellek de olduğu gibi ikinci hafıza bilimleriyle bellek arasında da benzer bir yapı var. Yani bizim çok büyük bir programımız var. Bu program eğer ki belleğe sığmaya olsa veya birden fazla yüklediğimiz işletim sistemi parçacıkları var falan yer kalmadıysa ne olacak? Yeni yüklediğimiz için uygun bir yer yok.
+
+56
+00:12:33,183 --> 00:12:38,603
+Bellekte bulunan bir sayfa, bir page kaldırılacak. Onun yerine bu getirilecek.
+
+57
+00:12:39,323 --> 00:12:45,503
+Ve ben bunu bellekten yürütmeye başlayacağım. Bellekten yürütmek istediğimde de yine belirli bir parçasını ön belleğe aktaracağım.
+
+58
+00:12:45,723 --> 00:12:50,823
+CPU önce ön belleğe bakacak. Varsa ön bellekten kullanacak. Yoksa bellekten getirecek.
+
+59
+00:12:51,263 --> 00:12:58,823
+Bellekte de yoksa ikinci lafızadan bir page'i belleğe getirecek. Oradan bir parçayı ön belleğe getirecek. Oradan CPU işlemeye çalışacak.
+
+60
+00:12:59,200 --> 00:13:12,080
+Dolayısıyla böyle bir hiyerarşi var. Bu hiyerarşi içerisine baktığımızda tekrar etmek gerekirse hız açısından baktığımızda ikinci hafıza birimlerine doğru gittikçe bu hızın gittikçe düştüğünü söyleyebiliriz.
+
+61
+00:13:12,660 --> 00:13:26,379
+Ama bununla birlikte üretim maliyeti olarak baktığımızda benzer bir şey söz konusu. CPU'ya yakın hafıza birimlerinin üretim maliyeti birim başına daha yüksek.
+
+62
+00:13:26,772 --> 00:13:34,692
+Onu söyleyebiliriz. Erişim süresi olarak baktığımızda da, erişim süresi olarak CP içerisindeki elemanlardaki erişim süresi en yüksek.
+
+63
+00:13:35,292 --> 00:13:41,692
+Ön belliğe doğru gittikçe artıyor, belliğe doğru gittikçe artıyor. İkinci hafıza birimlerinde artık çok yüksek bir değere ulaşmış oluyor.
+
+64
+00:13:41,812 --> 00:13:47,952
+Kabaca böyle bir mantık oturtabiliriz. Şimdi burada göreceğimiz hafıza birimleri için
+
+65
+00:13:49,331 --> 00:13:57,511
+İki farklı yapı var. Temel yapıdan bahsedeceğiz. Bunlardan birisi kalıcı hafıza, diğerisi bellek gibi RAM tarzındaki hafızalar olacak.
+
+66
+00:13:57,971 --> 00:13:59,231
+Hocam bir şey sorabilir miyim?
+
+67
+00:13:59,391 --> 00:13:59,791
+Buyurun.
+
+68
+00:14:00,851 --> 00:14:10,791
+Erişim süresiyle hızın arasındaki farkı biraz açıklayabilir misiniz? Ters yönde mi artıyor demiştin? Yok, aynı yönde artıyormuş da. İkisini ayrı söylediniz de ondan.
+
+69
+00:14:12,231 --> 00:14:14,192
+Yani hız olarak kastım şu.
+
+70
+00:14:14,639 --> 00:14:20,659
+Tekil olarak hafıza elemanı evimizde var. Ben ona bir girdi verdim. O bana çıktı üretecek.
+
+71
+00:14:21,491 --> 00:14:47,711
+Sadece bu bağlamda düşündüğümüzde. Ama erişim süresi dediğimizde bir hiyerarşimiz vardı. Bu hiyerarşi içerisinde önce bir yerde arıyorum, orada yoksa diğerinde arıyorum. Yani başka unsurlarla devreye giriyor erişim süresi dediğimizde. CPU'nun adres çözümlemesi, ona karşılık farklı elemanlarda bunlara bakması. Yani değerlendirdiğiniz zaman bu unsurlar da dahil olarak düşünebilirsiniz erişim süresi içerisine.
+
+72
+00:14:49,491 --> 00:14:52,971
+Ön bellek ortalama erişim sürelerini hesaplıyor olacağız.
+
+73
+00:14:53,572 --> 00:15:05,072
+Orada da aslında ön bellekten bir veriyi getirebilme ihtimalimizi ve bunu ön bellekte bulamama ihtimalimizi devreye alarak, hesaba katarak bir ortalama erişim süresi hesaplayacağız.
+
+74
+00:15:06,031 --> 00:15:15,072
+Yani aslında erişim süresiyle hız yakın kavramlar ama erişim süresi dediğimiz zaman dışsal unsurları da diğer unsurlarının etkisini de düşünmemiz gerekir.
+
+75
+00:15:16,083 --> 00:15:17,563
+Tamam hocam, teşekkürler.
+
+76
+00:15:17,703 --> 00:15:18,263
+Rica ederim.
+
+77
+00:15:19,203 --> 00:15:22,623
+Şimdi şeyden bahsediyorduk, iki çeşit hafıza birimi var.
+
+78
+00:15:23,783 --> 00:15:28,203
+Bunlardan birisi kalıcı hafıza, birisi geçici hafıza diyebileceğimiz yapılar.
+
+79
+00:15:29,172 --> 00:15:53,331
+Şimdi kalıcı hafıza yapısı temel olarak bir şekilde programladığımızı düşünelim. Bu programladığımız hafıza elemanında enerjisi kesilse bile üzerindeki program kalıcı oluyor. Yeniden enerji verdiğimizde değişen ne var? Artık tekrar okuyabilir hale geliyoruz. Enerjisini kestiğimizde okuyamayacak bir durumdayız. İlgili hafıza gözlerine erişemiyoruz ama program hala orada kalmış oluyor.
+
+80
+00:15:53,812 --> 00:16:02,692
+RAM gibi geçici hafıza birimlerine baktığımızda ise onlar enerji mevcut olduğu süre boyunca üzerindeki verileri saklıyor. Enerji kesildiğinde bu veriyi yitiriyor.
+
+81
+00:16:03,591 --> 00:16:07,991
+Dolayısıyla RAM ve ROM dediğimiz hafıza birimlerinin kullanım amacı temelde şu şekilde ayrılıyor.
+
+82
+00:16:12,115 --> 00:16:21,255
+Sistemin boot etmesine yönelik olarak bir takım programlar bulunan BIOS gibi çipler aslında ROM tabanlı hafıza elemanları olarak düşünebiliriz.
+
+83
+00:16:21,336 --> 00:16:31,696
+Onlar üzerinde sistem açılırken çeşitli çevre bilimlerini kontrol ettiğimiz, ondan sonra CPU'yu uygun şekilde şartladığımız,
+
+84
+00:16:32,144 --> 00:16:39,144
+Ve sonrasında da boot'u işletim sistemine devrettiğimiz bir süreç yürütüyor. Orada bir program çalışıyor.
+
+85
+00:16:39,144 --> 00:16:50,644
+Ve eğer ki siz bu BIOS'daki yer alan programa bir şekilde güncellerken zarar verirseniz, orada anlamsız bir veri yanı oluyor ve bilgisayarınız boot olmuyor.
+
+86
+00:16:50,932 --> 00:17:08,711
+Dolayısıyla ROM gibi özel hafıza birimlerini düşündüğümüzde CPU'nun aslında reset vektörü dediğimiz sistem ilk olarak enerji verildiğinde CPU'nun gidip de ilk olarak bakacağı adres alanında bu şekilde bir ROM hafızasının yerleşik olması uygun oluyor.
+
+87
+00:17:16,243 --> 00:17:36,163
+Burada aslında direkt çalışacak programın kendisi var. Biz mikro denetleyici programladığımızda aslında onun ROM'unu programlıyoruz. CPU'da açıldığında video oranındaki belirli bir adresten itibaren çalışmaya başlıyor. Bizim derlediğimiz programda o adresten itibaren yerleşik olduğu için aslında sadece bizim programımızı çalıştırıyor.
+
+88
+00:17:41,971 --> 00:17:54,172
+Aslında ROM tarzı hafıza elemanları dediğimiz gibi BIOS gibi bir takım ön kontrolleri yerine getirip işlemciyi şartladıktan sonra şartlamaktan kasıt da şu.
+
+89
+00:17:55,112 --> 00:18:04,632
+Intel 64 bitlik işlemciler dahi günümüzde ilk enerji verildiğinde 16 bitlik modda açılıyor ve onların bir durum geçiş diagramı var.
+
+90
+00:18:09,920 --> 00:18:20,680
+64 bit kullanıcı moduna getirilmesi gerekiyor. Sanırım 4 geçiş üzerinden gelebiliyor. Bu tür şartlamalarda yine BIOS'un kontrolü sırasında gerçekleşiyor.
+
+91
+00:18:21,172 --> 00:18:33,172
+Dolayısıyla genel amaçlı bir CQ söz konusu olduğunda buradaki temel yaklaşım, bir takım ön kontrolleri gerçekleyecek, sonra işletim sistemine boot'u devredecek bir ara kontrol.
+
+92
+00:18:33,271 --> 00:18:38,092
+Ama yine CQ'nin ilk baktığı adres de bir ROM tipinde hafıza elemanı var.
+
+93
+00:18:38,632 --> 00:18:49,172
+ROM tipi hafıza elemanı da temel olarak bizim programlarımızı yürüttüğümüz hafıza ama dediğim gibi mikro denetleyicilerle genel amaçlı mikro işlemci yapısında bunlar biraz farklılaşmış durumda.
+
+94
+00:18:49,172 --> 00:18:55,231
+mikro denetleyicilerde bir RAM alanı var. Oraya da veri aktarabiliyoruz ama.
+
+95
+00:18:55,615 --> 00:19:18,816
+Genel amaçlı bir bilgisayarda, CPU'da bizim ikinci hafıza birimlerimiz var. Oradaki bir takım page'ler belleğe geliyor ve bellekten ön döndük ve sonra CPU'ya aktarılarak bu işletim sisteminin yüklenmesi sonrasında da kernel üzerinde kullanıcıya bir takım işlem haklarının verilmesi gerçekleşiyor. Dolayısıyla genel amaçlı bir CPU'da bizim çalıştırdığımız programlar
+
+96
+00:19:19,119 --> 00:19:41,179
+Bellek üzerinde çalışıyor, RAM üzerinde çalışıyor diyebiliriz. Ve çalıştıracağımız programı tamamen bellekte oluyor. Eğer sığmıyorsa, az önce bahsettiğimiz gibi, ikinci hafızada bunlar belleğe sayabilecek bloklar şeklinde tasarlanmış durumda, yerleştirilmiş durumda. İlgili sıradaki bizim çalıştıracağımız bir sonraki page'e ilişkin yükleme belleğe gerçekleştiriliyor.
+
+97
+00:19:41,179 --> 00:19:47,059
+Bellekten kaldırma nasıl planlanmışsa, yeri olmayan page'lerde.
+
+98
+00:19:47,119 --> 00:20:00,000
+bellekten kaldırılmış oluyor. Dolayısıyla, RAM'in ve RAM'in temel olarak net şekilde kullanımı olduğunu ifade etmiş olalım. Şimdi RAM'la ilgili durumu aslında...
+
+99
+00:20:00,000 --> 00:20:04,940
+Şeyde de bahsetmiştik. Programlanabilir cihazlar böyle bir kısa bahsetmiştik.
+
+100
+00:20:05,400 --> 00:20:09,159
+ROM dediğimiz yapının içine baktığımızda ne vardı? Bir tane dekoder vardı.
+
+101
+00:20:09,880 --> 00:20:21,340
+Adres ucu, ROM'un adres ucu kadar girdisi olan ve buna karşılık iki üzeri adres miktarınca satır seçtirebilen, hücre seçtirebilen bir dekoder yapısı vardı.
+
+102
+00:20:21,340 --> 00:20:27,980
+Bu dekoderlerin her bir çıkışı bir hafıza bloğunu seçiyordu. Her bir gözünü diyelim, hafıza gözünü seçiyordu.
+
+103
+00:20:28,000 --> 00:20:50,859
+Her bir hafıza gözümüzünde M bitik olma ihtimali vardı. Yani M bit şeklinde bunu organize edebilirdik. Dolayısıyla en adet adres ucundan sahip bir ROM, iki üzeri en adet hafıza gözü seçiyor. Her bir gözümüzde de M adet bit var. Dolayısıyla bu ROM'un kapasitesini programlanabilir cihazlarda da tanımlamıştık. İki üzeri N çarpı M şeklinde verebiliyorduk.
+
+104
+00:20:50,859 --> 00:20:55,759
+Yine burada hafıza ilişkin olarak genişletme mantığı da söz konusu.
+
+105
+00:20:56,000 --> 00:20:59,440
+Biraz sonra bu konudan bahsediyor olacağız zaten.
+
+106
+00:21:00,400 --> 00:21:04,000
+Şimdi Rızan ve Rom arasındaki temel farka bakacak olursak, Rom...
+
+107
+00:21:04,692 --> 00:21:12,971
+Kalıcı hafızaydı. Operasyon sırasında sadece okunabilir yönde, okuma yönünde çalıştırılabiliyordu.
+
+108
+00:21:13,071 --> 00:21:18,051
+RAM'ler ise operasyon sırasında hem yazma hem okuma yönünü olarak çalıştırılabiliyor.
+
+109
+00:21:18,692 --> 00:21:27,311
+Burada gördüğünüz yapıda adres ucu uçlarımız var. Bu adres uçları yine tıpkı RAM'da olduğu gibi bir dekodere ulaştırılabilir.
+
+110
+00:21:28,311 --> 00:21:30,871
+Bununla birlikte okuma ve yazma kontrolü uçları da var.
+
+111
+00:21:31,347 --> 00:21:42,067
+Bu işemada veri girişi ve veri çıkışı uçları aynı şekilde verilmiş. Ama bunları daha önce dersimizde görmüş olduğumuz Tri-State Buffer mantığı çerçevesinde
+
+112
+00:21:42,448 --> 00:22:08,448
+Çoklayabiliriz. Yani aynı uçlardan hem veri okuma hem veri yazma sağlanabilir. Ama bu dışarıdan okuma yazma yönünü gelen uçlar hemen RAM'in ucunda ikiye alırılarak okuma yönünü veya giriş yönünü olarak T-State-Bof üzerinden kontrol edilerek ikiye dallandırılabilir ve o yapı yani burada iki kol olarak görünen in ve out mantığı RAM'in iç yapısına gömülmüş olabilir. O da söz konusu.
+
+113
+00:22:09,172 --> 00:22:26,471
+Şimdi burada örneğin biz 38 x 32 x 8 bitik düzeninden bahsediyorsak buradan kastettiğimiz şu içeride 32 tane hafıza gözü var ve her birisi 8 adet.
+
+114
+00:22:27,124 --> 00:22:38,124
+bit saklayabiliyor. Buna göre buradaki uçların değerlerini gösterecek olursak ne demişiz? 8 bitlik bir RAM var. Dolayısıyla...
+
+115
+00:22:40,124 --> 00:22:42,703
+Şuraya gelince bir şey dedi ama...
+
+116
+00:22:42,703 --> 00:22:43,124
+Tamam.
+
+117
+00:22:44,147 --> 00:23:03,007
+Şurada 8 adet bitir M8 olduğunu söyleyebiliyoruz. Veri girişi de 8 bittik. Kaç adet adres ucu var? İçeride 32 tane adres gözü olduğuna göre bunları seçebilmek için dekoderimizin kaç girişi olması lazım? Log2 32 yani 5 adet adres ucu olması lazım.
+
+118
+00:23:05,167 --> 00:23:11,007
+Dolayısıyla RAM kapasitesine bağlı olarak adres ve data 3 sayısını belirleyebiliyoruz.
+
+119
+00:23:11,604 --> 00:23:15,704
+RAM'lara ilişkin olarak statik RAM ve dinamik RAM mantıkları var.
+
+120
+00:23:16,664 --> 00:23:25,344
+Statik RAM mantığında daha önceki derslerde görmüş olduğunuz gibi flip-flop çerçevesinde birim hafıza elemanlarından bahsedebiliriz.
+
+121
+00:23:26,564 --> 00:23:32,564
+Bir flip-flop'a baktığımız zaman da sanırım 2, 4, 6.
+
+122
+00:23:34,420 --> 00:23:54,700
+En az 6 tane transistörden oluşması gerekiyor. Bunun karşısında bir de dinamik RAM'ler var. Dinamik RAM'ler temel olarak bir transistör ve bir de kapasite elemanından oluşuyor. İlgili hafıza gözü seçildiğinde transistör açılmış oluyor ve ilgili kapasitörü eğer oraya bir saklayacaksak şarj ediyor.
+
+123
+00:23:55,347 --> 00:24:02,607
+Daha sonrasında bu adresin seçimini kaldırdığımızda içeride bir değeri saklı olmuş oldu. Çünkü yük değeri kondansatörde mevcut.
+
+124
+00:24:03,288 --> 00:24:08,128
+Fakat zamanla kaçak akımlar dolayısıyla o yüklediğimiz değer yavaş yavaş yitiriliyor.
+
+125
+00:24:09,327 --> 00:24:12,948
+Dinamik remin dinamik olmasının mantığı da burada zaten ortaya çıkıyor.
+
+126
+00:24:15,092 --> 00:24:34,152
+Kullanılmış olan kondansatör özelliğine göre ne kadar süre içerisinde yük değerimizin lojik birden lojik sıfıra kaçak akımlar dolayısıyla düşeceği hesaplanarak belirli bir takım periyotlarda dinamik RAM üzerinde yazılı olan değerler tekrar programlanıyor.
+
+127
+00:24:34,872 --> 00:24:40,112
+Yani yeniden yükleme yapılıyor. Dolayısıyla bu dinamiklik buradan karşımıza çıkıyor.
+
+128
+00:24:40,559 --> 00:24:51,159
+Dinamik RAM tarafında ise bir hafıza elemanı için iki tane transistör genişliğinde yere ihtiyaç var netice itibariyle.
+
+129
+00:24:53,179 --> 00:24:59,919
+Dolayısıyla dinamik RAM'ler, statik RAM'lere göre çok daha veri yoğun elemanlar olarak karşımıza çıkıyor.
+
+130
+00:25:00,539 --> 00:25:01,639
+Onu da söyleyebiliriz.
+
+131
+00:25:02,900 --> 00:25:09,500
+Temel yapısına bakacak olursak, dediğimiz gibi bu Roma geçtik mi? Ben yanlış tuşa basmışım yine, pardon.
+
+132
+00:25:12,019 --> 00:25:15,840
+Page dağına basınca en aşağı gidiyor. Çok değişik geldi de.
+
+133
+00:25:16,600 --> 00:25:21,860
+Şimdi RAM içerisindeki yapıya bakacak olursak, burada bir yine dekoderimiz var.
+
+134
+00:25:21,860 --> 00:25:26,680
+Dekoderimizin M adet adres ucu varsa, bu içeride 2 üzeri M adet.
+
+135
+00:25:27,347 --> 00:25:48,627
+Seçim sağlıyor. Bu seçimlerden her birisi de bir hafıza gözüne karşılık geliyor. Hafıza gözlerimizde örneğin en adet veri saklayabiliyorsa bit bazında bu şekilde bir erişim sağlamış oluyor. Dışarıdan gelen read ve write uçlarının kullanımını da şöyle düşünebiliriz. Örneğin write ucu ve read ucu. Bunların kullanımını da şöyle düşünelim.
+
+136
+00:25:49,076 --> 00:26:04,236
+Örneğin, 80-86'da read-write ucu iki ayrı uç olarak mevcut. Fakat ikisi de aynı değeri, örneğin bir yönü, şey sıfır yönünde, aktif sıfır uçlar çünkü yönler. İkisi de aynı anda aktif olamıyor.
+
+137
+00:26:04,716 --> 00:26:14,716
+Veya bazı mimarilerde read-write isimli tek bir uç var. Bu uç sıfır değerini alınca read işlemini, bir değerini alınca mesela write işlemini yerine getirecek şekilde programlanmış oluyor.
+
+138
+00:26:15,412 --> 00:26:22,352
+Buradaki mimarda iki ayrı uç olarak tanımlanmış ama ikisinin de aynı anda aktif olmayacağını varsayarak hareket edelim.
+
+139
+00:26:23,692 --> 00:26:32,252
+Örneğin ben belirli bir hafıza gözüne bir en bitlik değer yazmak istiyorsam yürüteceğim işlem şöyle oluyor.
+
+140
+00:26:33,512 --> 00:26:41,092
+RAM'in adre tuşlarına ilgili hafıza gözünün adresini yüklüyorum. O adrese ilişkin olarak bir seçim gerçekleştiriliyor.
+
+141
+00:26:41,619 --> 00:27:04,939
+Örneğin ben buraya bir adres değeri yükledim. Bu adrese göre bir tane seçim gerçekleşti. Örneğin şurası gerçekleşti. Ve daha sonra da data in uçlarında ben yazmak istediğim veriyi oluşturuyorum. Şurada data in için değerlerimi oluşturdum. Ve sonrasında da write işaretini gönderdim. Write işaretini gönderince de ne oluyor? Bakın burada bitir state buffer var.
+
+142
+00:27:05,311 --> 00:27:24,911
+Aktif bir seçimli, aktif bir çıkışlı bir tristate buff'u. Dolayısıyla ben gönderdiğim değer seçmiş olduğum hafıza gözüne. Bunları bir hafıza gözü olarak düşünebilirsiniz. Şu aşamada flipfloplar olarak düşünebilirsiniz. İlgili flipflop'un D flipflop'u gibi düşünelim. D flipflop'una yazıldı.
+
+143
+00:27:25,523 --> 00:27:35,523
+Daha sonrasında ben burada seçimi ve right işaretini kaldırdıktan sonra bu değer bu flip-flop içerisinde saklanmış oldu veya bu hafıza gözünde saklanmış oldu.
+
+144
+00:27:35,523 --> 00:27:43,523
+Aynı şeyi okuma yönünü olarak yapacak olursak, aynı adresten okumayı deneyecek olursak, bu sefer yine aynı adresi sağladık.
+
+145
+00:27:43,523 --> 00:27:49,451
+Yine aynı satırdaki hafıza elemanı seçildi. Fakat bu eleman seçildiği vakit...
+
+146
+00:27:49,779 --> 00:28:04,440
+Diğerleri seçilmediği için bunların her birisinin data uçları ortaklanmış durumda ve şuraya kadar gelmiş durumda. Mesela birinci stündeki tüm flipflopların data uçları, çıkışları ortaklanmış ve şuraya kadar getirilmiş durumda. Burada neye güveniyoruz?
+
+147
+00:28:04,440 --> 00:28:17,440
+Bu kadar kullandığımız için yataydaki seçim uçlarından aynı anda ikisi aktif olmayacak. Sadece bir tanesi aktif olacak. Aktif olmayan içinde ne olacak? Yüksek empedans gösterdiği için sadece buraya, şuraya,
+
+148
+00:28:17,779 --> 00:28:34,400
+işaret etmiş olduğum noktaya seçili olan flip-flop'un çıkışı aktarılacak. Dolayısıyla ben bu seçimi, adres ucunu ve seçimi gönderdikten sonra, dolayısıyla benim seçmiş olduğum hafıza gözüne ilişkin değerler, 3-State Buffer'ın ucuna kadar, girişine kadar aktarılmış olacak.
+
+149
+00:28:34,400 --> 00:28:45,779
+Ve ben bunun peşine bir read işaretini gönderirsem, bunlar 3-State Buffer'dan dışarı aktarılacak ve ben artık renin dışarısında, data out uçlarında bu kaydetmiş olduğum noktaya.
+
+150
+00:28:45,779 --> 00:28:53,619
+veriyi okuyabilir hale geleceğim. Buradaki okuma yazma mantığı, read write işaretlerinin etkisi bu şekilde tanımlanabilir.
+
+151
+00:28:57,491 --> 00:29:03,572
+Yine bir başka blok diagramımız arkadaşlar, RAM'den sonra ROM elemanı.
+
+152
+00:29:04,152 --> 00:29:09,772
+ROM elemanının özelliği bunun sadece operasyon sırasında okuma yönünü olarak çalışıyor olması.
+
+153
+00:29:10,552 --> 00:29:16,471
+ROM'ların çeşitlerine baktığımızda bunların üretim aşamasında programlanan versiyonları var.
+
+154
+00:29:16,471 --> 00:29:22,332
+Yani üretilirken belirli bir değerli ilginçler zediliyor, ilklendiriliyor ve bir daha değiştirilemiyor.
+
+155
+00:29:25,076 --> 00:29:27,016
+Masked.ROM ismi veriliyor.
+
+156
+00:29:27,923 --> 00:29:55,923
+Yine bir seferlik programlanabilen versiyonlar vardı eski tabi bunlar. Bunlar da işte genel programlanmamış olarak üretiliyor. Bir sefer programlandıktan sonra bir daha değiştirilemiyor. Daha sonraki süreçte tarihi olarak elektriksel olarak silinebilir, yazılabilir ROM'lar çıkıyor. Bunları belki görmüşsünüzdür. ROM üzerinde bir pencere var, açıklık var. O açıklık içerisinde...
+
+157
+00:29:55,923 --> 00:30:08,163
+İşte çipin iç yapısı da görülüyor. Programlamayı elektriksel olarak gerçekleştiriyorsunuz. Elektriksel olarak gerçekleştirme şu. Çeşitli program uçları var. Yani burada gördüğümüz uçlar haricinde bir takım uçlar daha var.
+
+158
+00:30:08,627 --> 00:30:33,107
+Bu uçları ilgili gereklilikte şartladıktan sonra artık bu programlama moduna geçiyor. Yani biz ROM da olsa ona yazabilir hale geliyoruz. Fakat şunu unutmayalım. Programlama modundan çıktıktan sonra operasyonel modda kullanılırken artık biz buraya veri yazamıyoruz. Ve bu enerjisi kesilse de verisi saklanmaya devam ediyor.
+
+159
+00:30:33,971 --> 00:30:46,292
+programladıktan sonra, elektriksel olarak programladıktan sonra bunları ultraviyole ışıkta belirli bir süre bekletirseniz bu yapmış olduğunuz programlar siliniyor.
+
+160
+00:30:46,292 --> 00:30:59,731
+Bir sonraki tarihi gelişimde gördüğünüz versiyonda ise E-kare ROM'lar var. Yani elektriksel olarak silinebilen, yazılabilen programlarla ilgili ROM'lar var.
+
+161
+00:31:00,276 --> 00:31:12,955
+Bunların özelliği de şu. Yine programlama uçlar üzerinden programlayabildiğiniz gibi yine silmek de mümkün. Programı silmek, yeniden programlamak mümkün olduğunu söyleyebiliriz.
+
+162
+00:31:12,955 --> 00:31:20,256
+ROM'un genel operasyon sırasındaki yapısına baktığımızda ise bir adres ucumuz var.
+
+163
+00:31:20,692 --> 00:31:33,231
+Adı yolumuz var. Yol dediğimiz şeyde daha çok şöyle düşünelim. Yol dediğimiz zaman, çok bükten oluşan örneğin en büklik bir MUX'u konuştuğumuzda da gösterim aynı şekildeydi hatırlayacak olursanız.
+
+164
+00:31:34,231 --> 00:31:43,112
+Ok işareti üzerine bir çizgi koyup bir sayı veya harf yazdığımızda bu, burada aslında M adet ayrıcık tel olduğu anlamına geliyor.
+
+165
+00:31:43,112 --> 00:31:47,271
+Bunlar aynı fonksiyonu gösteriyor. Aynı demeyelim de birlikte fonksiyon gösteriyorlar.
+
+166
+00:31:48,692 --> 00:32:01,152
+Bu birisi adres 0, diğer adres 1, nokta nokta en sonuncusu da adres m-1 fonksiyonu gösterecek şekilde kullanılıyor demek. Dolayısıyla bunun adres ucu ve data ucu var, bir de gibi ucu var.
+
+167
+00:32:01,940 --> 00:32:22,500
+Bunun iç yapısına bakıp değerlendirmek istediğimizde de özelliklerimiz şunlar. Yine benzer bir durum var. İçeride dekoder var. Daha önceden programlanmış bir sigorta yapısı var. Bu sigorta yapısına göre ben ilgili satırı seçtiğimde, dekoder üzerinden seçtiğimde bunun verisi, diğer verinin verisiyle, az öncekiyle aynı durum söz konusu.
+
+168
+00:32:29,940 --> 00:32:33,119
+Şuraya kadar ulaştırılmış durumda. Biz ama yine neye güveniyoruz?
+
+169
+00:32:33,680 --> 00:32:39,079
+Dekodera olduğu için aynı anda bunlardan iki tanesi veya daha fazlası aynı anda seçilmeyecek.
+
+170
+00:32:39,079 --> 00:32:43,700
+Aynı anda sadece bir tanesi seçilecek. Diğerleri hattan koparılmış gibi etki gösterecek.
+
+171
+00:32:44,119 --> 00:32:45,799
+Dolayısıyla ben hangisini seçmişsem,
+
+172
+00:32:46,144 --> 00:33:12,563
+Onun ilgili girelim seviyesi ve e-lojik değeri burada görülüyor olacak. Dolayısıyla ben bir satırı seçmişsem, o satırdaki bütün veri gözleri, TIRSTAT'in ön girişine kadar ulaşacak. Ben RID işaretini verdiğimde de bunlar data out uçlarına çıkacak ve dış dünyaya iletilmiş olacak. Temel yapısı ROM'unda bu şekilde diyebiliriz. Bu genel girişi yaptıktan sonra bir şeyi kontrol edeyim bir saniye.
+
+173
+00:33:12,960 --> 00:33:19,000
+İçerikle ilgili olarak diğer tarafta bu detaylı mı yoksa burada girmek uygun olur mu diye.
+
+174
+00:33:23,412 --> 00:33:24,892
+Diğer tarafta varmış, tamam.
+
+175
+00:33:26,231 --> 00:33:27,251
+Diğer tarafta varmış.
+
+176
+00:33:27,471 --> 00:33:34,311
+Dolayısıyla bu ilk 3 haftanın slide'larından kalan konuyla ilgili genel girişi tamamlamış olduk.
+
+177
+00:33:35,051 --> 00:33:38,291
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+178
+00:33:38,451 --> 00:33:40,372
+Yoksa bir ara vereceğim 10 dakika kadar.
+
+179
+00:33:40,932 --> 00:33:44,892
+Diğer konunun bütünlüğü bölün olmasın diye aradan sonra onu devam ettireceğim.
+
+180
+00:33:45,071 --> 00:33:46,971
+Var mı buraya kadar olanlarla ilgili sormak istediğiniz?
+
+181
+00:33:56,756 --> 00:34:02,256
+Yok sanırım. Bir 10 dakikada verelim. 52 geçe kaldığımız yerden devam edeceğiz arkadaşlar.
+
+182
+00:34:03,276 --> 00:34:08,756
+Ali Can Hoca diğer slide'larla ilgili de Google Classroom'a slide'ları koymuştu.
+
+183
+00:34:09,596 --> 00:34:11,855
+Oradan da takip ediyorsunuz diye tahmin ediyorum.
+
+184
+00:34:13,395 --> 00:34:20,336
+W5 yani week 5, 5. hafta, garip bir şey oldu. 5. hafta slide'larıyla devam edeceğiz bir sonraki derste.
+
+185
+00:34:21,336 --> 00:34:21,855
+Saatli.
+
+186
+00:34:22,931 --> 00:34:24,751
+En iyi gece görüşmek üzere.
+
+187
+00:45:04,596 --> 00:45:27,395
+Arkadaşlar, merhaba tekrar. Şimdi kısa sınavla ilgili olarak şu anda derste olan herkes online yıldızı, TRD dersin sayfasına gittiğinde kısa sınav biri görebiliyor değil mi? Göremeyen var mı acaba? Ben şimdi yeni bir kontrol yaptım. 5 kişi sanırım listeye sonradan eklenmiş. Ben sınavı oluşturduktan sonra eklenmiş.
+
+188
+00:45:27,744 --> 00:45:43,984
+Onlar katılmayacak olarak görünüyordu. Onları da sınav listesine ekleyip yeniden sınavı yayınladım. Arada bir kontrol edebilirseniz sevinirim. Online Yıldız Edi TV'de dersin sayfasında kısa sınav 1'i görünmeyen, saat 4'de 10 geçe başlamak üzere görünmeyen kimse var mı?
+
+189
+00:45:47,668 --> 00:45:53,507
+Varsa söylerseniz arkadaşlar onu da eklemeye çalışalım. Gözden kaçmasın.
+
+190
+00:45:53,507 --> 00:45:54,648
+Şimdi
+
+191
+00:46:00,596 --> 00:46:27,975
+Hafize elemanlarıyla ilgili devam etmek üzere. Ekran paylaşımını açayım. Her şeyi hatırlatayım tekrar. Bilimsel hazırlık öğrencileri kısa sınavdan muaf. Onlar için kısa sınav hariç, Ali Can hocamız yayınlamıştı Google Classroom'da. Onlar için ayrı bir değerlendirme oranı kullanıyoruz. Kısa sınava girmeleri gerekmiyor. Onu da tekrar hatırlatmış olalım.
+
+192
+00:46:29,204 --> 00:46:38,564
+Şimdi hafıza elemanlarıyla ilgili olarak hafıza nedir, hafıza organizasyonu nedir, rem nedir, adres nedir, birazcık bunlardan bahsetmiştik.
+
+193
+00:46:39,144 --> 00:46:48,503
+Hafıza organizasyonu dediğimiz şey dersin girişinde bahsettiğimiz işte bir bilgisayar mimarisi sistemindeki, bilgisayar mimarisindeki
+
+194
+00:46:48,911 --> 00:47:05,851
+Veri erişiminin ne şekilde olmasının planlandığı, ne şekilde tasarlandığıyla alakalı. Dolayısıyla baktığımızın hafıza organizasyonu dediğimiz şeyde, CPU'nun ihtiyaç duyduğu yüksek hızlı anlık depolama birimleri olarak yazmaçlar mevcut.
+
+195
+00:47:06,771 --> 00:47:13,899
+CPU dışarıdan instruksiyonları okuyacak, komutları okuyacak, ona göre çalıştıracak. Komutlar belki...
+
+196
+00:47:14,068 --> 00:47:33,168
+Bir takım farklı dataları da memori'den istiyor olabilir, bellekten istiyor olabilir. Dolayısıyla CPU'da programlar çalışabilmesi için bir kere bir instruction memorisi olması lazım. Yani bir komut hafızası olması lazım. Bunu ayrı bir hafıza olarak tutan mimariler var.
+
+197
+00:47:33,684 --> 00:47:47,944
+Yani data ve komut hafızasını ayrı bloklar ve veri yolları şeklinde tanımlayan mimariler var. Bunları aynı yol üzerinden kullanan mimariler de var. Örneğin, hızlıca bahsetmek gerekirse.
+
+198
+00:47:52,244 --> 00:47:55,623
+Hızlıca bahsetmek gerekirse şöyle bir durum söz konusu olabilir.
+
+199
+00:47:59,507 --> 00:48:01,007
+İşte CPI'muz burada.
+
+200
+00:48:02,287 --> 00:48:02,847
+Burada
+
+201
+00:48:02,847 --> 00:48:06,887
+Takılıyor yani.
+
+202
+00:48:15,923 --> 00:48:38,483
+Bu bizim veri hafızamız. Burada da bir program hafızamız olabilir. Program hafızasına erişebilmek için, CPU'dan ve verilere erişebilmek için bunlar için ayrı yollara ihtiyaç var. Örneğin bir veri yolu data hafızasına erişirken ve bir adres yolu ihtiyacı olabilir. Buna mesela adres data diyelim.
+
+203
+00:48:45,235 --> 00:49:03,575
+DataBus diyebiliriz. AdresBus ve DataBus diyebiliriz. Bu ama veri hafızasına erişmek için yine benzer şekilde program hafızasına eriştiğimiz tarafta da ayrı bir veri yolu ve adres yolu olabilir. Ek olarak burada bir de kontrol yolları da doğal olarak ayrılacak.
+
+204
+00:49:04,755 --> 00:49:14,795
+Şunu da kontrol yolu diyelim. Dolayısıyla, CPI'nin program hafızasına ve data hafızasına erişim için iki ayrı basa ihtiyacı var. İki ayrı kontrolcüye ihtiyacı var.
+
+205
+00:49:14,795 --> 00:49:29,215
+Fakat bunun avantajı ne? Herhangi bir program çalışırken, yani dışarıdan çalıştırdığımız bir program, bizim işletim sistemimizle veya kritik bir takım programlarımızla aynı yerleri kullanmıyor. Aynı hafızayı kullanmıyor. Güvenlik açısından.
+
+206
+00:49:29,648 --> 00:49:33,108
+ek artı olarak düşünebiliriz.
+
+207
+00:49:34,928 --> 00:49:38,388
+Diğer mimaride ise bir CPU'muz var.
+
+208
+00:49:40,768 --> 00:49:45,328
+CPU'muzdan bir bas çıkıyor. Bu data bası olsun. Bir adres bası çıkıyor.
+
+209
+00:49:46,568 --> 00:49:47,668
+İçişe çizildi.
+
+210
+00:49:49,248 --> 00:49:52,928
+Bir adres bası olsun. Bir de kontrol bası olsun.
+
+211
+00:49:53,715 --> 00:50:02,556
+Control adres. Örneğin buradaki hafıza elemanımız programlamaya ilişkinse ve ROM tipi bir hafıza ise o da aynı basları kullanıyor.
+
+212
+00:50:03,096 --> 00:50:08,335
+Veri ilişki başka bir hafıza birimimiz varsa yine o da aynı yolları kullanıyor.
+
+213
+00:50:08,915 --> 00:50:17,815
+Dolayısıyla bunların komutlar koştururken birbirinin verisine erişme ihtimali burada bir güvenlik noktasında sıkıntı oluşturabilir.
+
+214
+00:50:18,224 --> 00:50:25,764
+diye ifade edebiliriz. Bu mimarinin adı arkadaşlar von Neumann mimarisi.
+
+215
+00:50:33,715 --> 00:50:47,535
+yazamadım ama, von Neumann mimarisi. İlk bahsettiğimiz mimarinin adı, yani CPU'nun iki ayrı hafıza elemanları, blockları için erişim sağladığı yapımın ismi de Harvard mimarisi.
+
+216
+00:50:47,535 --> 00:50:52,535
+Bu iki mimari temel olarak program hafızası ile veri hafızasının...
+
+217
+00:50:52,976 --> 00:51:05,596
+Aynı yolları kullanıp kullanmaması ile alakalı bir durum. Dolayısıyla bu mimari ve organizasyon yapısını şeyle birlikte de düşünecek olursak, işte CPU içerisinde yazmaç var.
+
+218
+00:51:06,195 --> 00:51:15,016
+Yazmaçlarımız var. İşte ön bellekle görüşüyor, konuşuyor. Ön bellek. Bu ana hafızayla main memory ile konuşuyor.
+
+219
+00:51:16,052 --> 00:51:35,532
+Bu da eğer veri üzerinde yoksa ikinci hafıza birimlerinden veriyi alıyor. Dolayısıyla baktığımız zaman bu şekilde bir hafıza hiyerarşisi veya organizasyonu düşündüysek, Harvard mimarisinde bunu her iki yönde de hem datapha hem de program hafızası için yürütmek gerekiyor.
+
+220
+00:51:42,960 --> 00:51:49,240
+Tek bir kontrolcüyle sağlamak mümkün. Bu ikisini ayırt edebiliriz.
+
+221
+00:51:50,360 --> 00:51:59,460
+Yine şimdi ön bellek dediğimiz şeyde sadece data için düşünmemek lazım. Program hafızası içinde bir ön bellek var. Program ön belleği var.
+
+222
+00:51:59,860 --> 00:52:12,659
+Dolayısıyla programları yürütürken hafızadan çektiğimiz, sırasıyla çektiğimiz program kodlarımız veya instrakşınlarımız da aslında bir toplu olarak program ön belliğine gelip oradan tüketiliyor öncelikli olarak.
+
+223
+00:52:13,259 --> 00:52:23,119
+Aynı şey data içinde geçerli. Bir for döngüsünde bir veri erişimi yapacaksam bu veri erişimine ilişkin olarak da yine o veri ve belirli bir komşuluğu ön belliğe taşınıyor.
+
+224
+00:52:23,119 --> 00:52:26,519
+Önce ön bellekten kontrol edeyim varsa oradan kullanıyorum yoksa.
+
+225
+00:52:26,900 --> 00:52:31,960
+Tekrar bellekten ön belliğe getirmeye çalışıyoruz. Yapı temel olarak bu şekilde.
+
+226
+00:52:35,960 --> 00:52:42,799
+Şimdi bir adres dediğimiz zaman ise aslında bu her iki mimari içinde geçerli bir senaryo olabilir.
+
+227
+00:52:42,940 --> 00:52:52,719
+Çok genel bir bilgisi, CPI, sistem, blok diagramı çizecek olursak arkadaşlar bu fonlimon mimarisinden hareketle çizeceğim bir şey olacak.
+
+228
+00:52:53,168 --> 00:52:58,928
+Örneğin, elimizde şu şekilde 3 kontrol basıyla birlikte 3 yapımız var.
+
+229
+00:52:59,488 --> 00:53:08,688
+Ve daha sonra burada çeşitli I.O. cihazlarımız olabilir. Bunların her birisi ayrı bir adres alanı da veya hafıza birimlerimiz olabilir burada.
+
+230
+00:53:09,368 --> 00:53:13,148
+Hafıza birimlerimiz olabilir. Bir kısmı RAM, bir kısmı ROM cinsinde olabilir.
+
+231
+00:53:13,688 --> 00:53:16,908
+Fakat baktığınız zaman bunlar hep aynı bası paylaşıyor.
+
+232
+00:53:17,488 --> 00:53:18,308
+Gördüğünüz gibi.
+
+233
+00:53:19,328 --> 00:53:20,588
+Aynı bası paylaşıyor.
+
+234
+00:53:22,771 --> 00:53:44,031
+Az önce konuştuğumuz özellik vardı ya, bir hafıza elemanının içerisindeki hafıza gözü yani bir satırda seçim yaptığında diğer satırlar aktif olmuyordu ya. Dolayısıyla dışarı çıkan veri sadece seçtiğimiz göze ilişkin oluyordu. Diğerleri seçilmediği için yüksek empedans gösteriyordu. Burada da benzer bir mantıktan bahsedebiliriz.
+
+235
+00:53:46,480 --> 00:53:56,279
+Bir I.O. cihazıyla veya hafıza birimiyle konuşurken veya veri alışverişi yaparken sadece bir tanesiyle konuşabilir. Aynı anda ikisiyle birlikte konuşmaya çalışsa ne olur?
+
+236
+00:53:56,860 --> 00:54:09,420
+Bu da verisini çıktı diyelim. Bu da verisini çıktı. Birisi sıfır çıktı, birisi bir çıktı. Dolayısıyla veri çakışması olabilir. Elektriksel seviyede, lojik seviyede veya veri genişliği seviyesinde bir çakışma olabilir.
+
+237
+00:54:09,920 --> 00:54:25,940
+Bunu engellemek adına biz şöyle bir yaklaşım takip edebiliriz. Baştan bu mimari üzerindeki, bu tasarım üzerindeki her bir bloğun, I.O. birimlerini veya hafıza birimlerini böyle bir adres aralığına yerleştirmek isteyebiliriz.
+
+238
+00:54:26,452 --> 00:54:46,492
+Bu aslında şeyde görebilirsiniz bunu. İşte donanım özelliklerine girdiğiniz vakit, orada bir cihaz veya driver'ına girdiğiniz vakit cihaza ilişkin bir takım adresler görürsünüz. Bu adresler aslında o tasarım için, örneğin laptop için, o bilgisayar için belirli adresler ve fix adresler.
+
+239
+00:54:46,492 --> 00:54:54,112
+Evet, başka bir hafıza elemanı taktığınızda genişliyor ama o anda takılı olanlar için ayrılmış olanlar bunlar.
+
+240
+00:54:54,452 --> 00:55:04,532
+Dolayısıyla bu ayrılmış hafıza alanları belli iken bir adres çözümleme devresi kullanarak şunu gerçekleştiriyoruz.
+
+241
+00:55:04,992 --> 00:55:08,692
+Bu bizim adres yolumuz ve kontrol yolumuz olsun. Bu da data yolumuz olsun.
+
+242
+00:55:09,612 --> 00:55:14,332
+Adres bus'tan bir takım değerler adres çözümleme devresine geliyor.
+
+243
+00:55:14,512 --> 00:55:18,772
+Yine kontrol uçlarından bazıları adres çözümleme devresine geliyor.
+
+244
+00:55:19,192 --> 00:55:21,912
+Adres çözümleme devresinin yaptığı da şu.
+
+245
+00:55:23,539 --> 00:55:44,739
+Ben o anda hangi komutu yürütüyorsam, örneğin, işte move ax, 100 gibi bir komut yürütüyorum. Bu 100h adresi veya buradan türetilecek adres, hangi blokta ise, daha önce benim planlamış olduğum veya ayırmış olduğum hangi blokta ise sadece onun seçilmesi lazım.
+
+246
+00:55:45,268 --> 00:56:03,268
+O zaman adres çözünleme devresinde bu mantık çerçevesinde programlıyoruz. Her bir blog adres aralığıyla ilgili bilgi burada var. O adres aralığıyla ilgili bir adres okuma ve yazma işareti geldiğinde sadece o cihaz aktif edilecek şekilde burada gördüğünüz üzere
+
+247
+00:56:04,500 --> 00:56:25,559
+kontrol işaretleri üretiliyor. Bu kontrol işaretleri de sadece bir tanesinin aktif olduğu bir senaryo. Yani biz hangi adres aralığıyla ilgili işlem yapıyorsak, cihazlarımızdan hangisi o adres aralığına girmişse, onu aktif eden, diğerlerini aktif etmeyen bir adres çözümleme mantığı var. Dolayısıyla bunların, bu cihazların belirli bir adres aralıkları var.
+
+248
+00:56:26,228 --> 00:56:35,987
+Onu söyleyebiliriz. Bu önemli bir nokta. Ve şurada görmüş olduğumuz yapıda genel bir mikro işlemcinin sistem mimarisinin blok diagramı diyebiliriz.
+
+249
+00:56:36,228 --> 00:56:47,807
+Her birisi aynı basları kullanıyor fakat bunları birbirinden ayırabilmek için bir adres çözümüne mantığı gündeme geliyor diyebiliriz.
+
+250
+00:56:54,835 --> 00:56:56,235
+Devam edecek olursak.
+
+251
+00:56:58,655 --> 00:57:01,935
+Yine temel kavramlardan bahsedecek olursak.
+
+252
+00:57:02,255 --> 00:57:09,695
+Günümüzdeki sayısal bilgisayar mantıklarında binary lojiğin bir elektriksel implementasyonu var.
+
+253
+00:57:09,695 --> 00:57:18,135
+Elektronik bir implementasyonu var. Dolayısıyla bizim elektriksel olarak tutmuş olduğumuz veriler ya 0 ya 1 lojik değerine sahip olacak şekli.
+
+254
+00:57:18,235 --> 00:57:24,035
+Yani 0 ve 5 volt veya kullandığımız MOS yapısı ise 0 ile 3.3 volt veya daha düşük.
+
+255
+00:57:24,335 --> 00:57:31,875
+CMOS mantıkları da var tabii. Bu elektriksel seviyelere karşılık iki değerli bilimler.
+
+256
+00:57:32,208 --> 00:57:36,048
+Dolayısıyla biz bir hafıza biriminde ya sıfır ya bir değerini saklayabiliyoruz.
+
+257
+00:57:36,128 --> 00:57:40,968
+Tuttuğumuz bu atomik hafıza elemanına da bit ismi veriliyor.
+
+258
+00:57:41,148 --> 00:57:45,327
+Açılımı da binary digitten geliyor. Binary digitin satılmışı aslında.
+
+259
+00:57:46,468 --> 00:57:54,028
+Fakat günümüze kadar kullanılan veya geliştirilen tüm bilgisayar veya işlemci sistemleri sadece binary mantık kullanmamışlardı.
+
+260
+00:57:54,748 --> 00:58:00,208
+Örneğin Sovyet Rusya zamanında üç değerli bir lojik üzerinde de bir bilgisayar geliştirilmişti.
+
+261
+00:58:00,208 --> 00:58:06,908
+Satun isimli bir CPU geliştirilmiş ve onun kullanımı programlaması yürütülmüş.
+
+262
+00:58:06,908 --> 00:58:11,908
+Yine tanımlardan devam edecek olursak, byte kavramı bizim...
+
+263
+00:58:12,384 --> 00:58:33,384
+Temel işleme bloklarımız olarak karşımıza çıkacak. 8 adet bitten oluşan veri bloğuna 1 byte ismi veriliyor. Dersimiz içerisinde de şu şekilde kullanacağız. Aksi belirtilmediği sürece hafıza elemanlarının her bir gözünün 1 byte genişliğinde olduğunu varsayabiliriz.
+
+264
+00:58:34,356 --> 00:58:43,316
+Aksi belirtilmediği sürece hafıza elemanlarımızdaki her bir gözün 8 bit yani 1 byte olduğunu varsayabiliriz.
+
+265
+00:58:44,096 --> 00:58:47,936
+Bununla birlikte yine SMD'den hatırlayacağınız üzere bir road kavramı var.
+
+266
+00:58:48,856 --> 00:58:51,436
+Sonrasında double road, quad road diye de gidiyor.
+
+267
+00:58:52,755 --> 00:59:07,576
+Bunlar da iki tane byte'ın birleşmesiyle oluşan 16 bitlik bir değer word mesela. Double word, iki tane word'ın birleşmesi, quad word, dört tane word'ın, quad word miydim?
+
+268
+00:59:07,576 --> 00:59:17,896
+Bir saniye, double word, quad word diye geçiyordu. Evet, dolayısıyla iki tane word'ın birleşmesiyle bir araya gelen hafıza genişliği olarak isimlendirebiliriz.
+
+269
+00:59:18,483 --> 00:59:28,463
+Dolayısıyla biz bir hafıza elemanına bir veri gönderdiğimizde, bir adresleme yaptığımızda, o hafıza elemanını seçtiğimizde, nasıl seçtik, adres çözümleme devresi onu aktif etti.
+
+270
+00:59:28,463 --> 00:59:40,184
+Bir adres değerini gönderdik memori birimine. Dolayısıyla bu memori birimi içerisinde bir göz aktif edildi. Biz oraya veri yazabilir, okuyabilir durumdayız. Bu, mevirdeki datayı ifade etmiş oluyor.
+
+271
+00:59:46,612 --> 01:00:03,592
+Yere ilişkin olarak yapabileceğimiz işlemlerde okuma, yazma gibi işlemler olabilir. Bunu yine byte, word seviyesinde yapabiliriz. Bit seviyesinde desteklemek çok pratik değil ama bit seviyesinde de olabileceğini söyleyebiliriz.
+
+272
+01:00:03,632 --> 01:00:11,152
+Ama bit seviyesindeki, temel olarak byte seviyesindeki bir işlem bit karşılığıyla yapılıp tekrar byte olarak yazılıyor diye düşünebilirsiniz.
+
+273
+01:00:11,699 --> 01:00:24,099
+Bu arada şeyden bir bahsedebiliriz. Mesela 16 bitlik Intel mimarilerinde veya 32 bit 64 gibi mimarilerde şu tür işlemler destekleniyor.
+
+274
+01:00:24,179 --> 01:00:33,199
+Hafıza işlemi olarak şunlar destekleniyor. Örneğin 16 bitlik bir mimari için bahsedecek olursak bu 16 bitlik mimariyi de
+
+275
+01:00:33,552 --> 01:00:56,592
+16 bitlik mimaride mikrofilemci verilen tek bir adresten, yani tek değerli, sonu 1 ile biten adresten, tek adresten 8 bitlik bir değer okuyabiliyor veya çift adresten 8 bitlik bir değer okuyabiliyor veya bir seferinde çift adresten
+
+276
+01:00:58,291 --> 01:01:04,691
+16 bitlik değer okuyabiliyor. Mesela 16 bitlik mimaride Intel ailesi bu özelliğe sahip.
+
+277
+01:01:05,251 --> 01:01:11,711
+Şunu da birleştirerek söyleyelim. 16 bitlik bir mimari dediğimiz zaman şunu kastediyoruz aslında.
+
+278
+01:01:11,711 --> 01:01:20,711
+İşte mikro işlemcinin mikro prosesör, mikro prosesör bunun 16 tane data ucu var ve içerideki yazmaçlar.
+
+279
+01:01:22,291 --> 01:01:31,591
+Yazmaçlar 16 bit. Dolayısıyla bundan dolayı 16 bitlik bir mimari. Bu 16 bitlik mimariye baktığımızda ise bunun 20 tane adres ucu var.
+
+280
+01:01:31,591 --> 01:01:41,871
+20 adres ucu var. Dolayısıyla bizim totalde bu 16 bitlik mikro işlemciyle adresleyebileceğimiz hafıza gözü kaç tane olur? Ne dersiniz?
+
+281
+01:01:44,471 --> 01:01:46,111
+20 tane adres ucumuz varsa.
+
+282
+01:01:48,719 --> 01:02:00,879
+2 üzeri 20 olarak verebiliriz. Bu kadar hafıza gözü. Bunun 2 üzeri 10'u kilo, 2 üzeri 10'u da tekrar kilo, 2 tane kilo olduğu için 1 mega hafıza gözü adresleyebilir.
+
+283
+01:02:01,399 --> 01:02:11,319
+Az önce demiştik, aksi belirtilmediği sürece her hafıza gözümüzün 1 byte genişliğinde olduğunu varsayabiliriz. Dolayısıyla 1 mega adet, yani 1 milyon diyebiliriz kabaca.
+
+284
+01:02:11,827 --> 01:02:23,748
+1 milyon adet hafıza gözümüz var ve bunların her birisi 8 bit. O zaman bizim 20 adet adres ucuyla adresleyebileceğimiz hafıza kapasitesini 1 MB olarak ifade edebiliriz.
+
+285
+01:02:24,128 --> 01:02:30,788
+Şimdi totalde 1 MB'lik bir hafıza genişliği adreslenebilir. Her bir hafıza gözümüzde 8 bitten oluşuyor.
+
+286
+01:02:30,788 --> 01:02:39,788
+Ama mikro işlemcinin desteklediği şu şekilde bir okuma yazma işlem birimi değil de ne denir ona?
+
+287
+01:02:39,827 --> 01:02:48,387
+işlem özelliği var. O zaman mikro işlemci, bu bahsetmiş olduğumuz 16 bitlik mikro işlemci karşısında şunu görmek istemiyor.
+
+288
+01:02:48,387 --> 01:02:55,527
+İşte mikro işlemcimiz diyelim. Bunun adres ve data uçları var.
+
+289
+01:02:58,579 --> 01:03:06,019
+Toplamda 1 mega adet göz var. Her birisi 8 bit. Bu formatta bunu görmek istemiyor. Bu yazdığım formatı...
+
+290
+01:03:06,019 --> 01:03:08,059
+Biraz düzeltim yeri yanlış olmuş.
+
+291
+01:03:12,500 --> 01:03:33,920
+Hafıza elemanını bu şekilde görmek istemiyor. Bu ne şekilde? 1M çarpı 8 formatında görmek istemiyor. Bu 1M çarpı 8 formatı şu anlama geliyor. Burada 1M adet göz var. Her birisi ayrı bir adres ve toplamda her birisi de kendi içerisinde 8 adet bitten oluşuyor. Bu buna karşılık geliyor.
+
+292
+01:03:34,367 --> 01:03:52,667
+Şimdi bu yazmış olduğumuz arayüz CPU için 1Mx8 formatında kapasite olarak yine 1 MB salgı, onda bir sıkıntı yok ama şu okuma yazma operasyonlarında hangisiyle ilgili sıkıntısı var? Şuradaki işlemleri bir seferde yapmasını istiyoruz.
+
+293
+01:03:53,619 --> 01:03:55,319
+1Cycle'da yapmasını istiyoruz.
+
+294
+01:03:55,339 --> 01:03:57,919
+16 bitlik için de sıkıntı olur.
+
+295
+01:03:58,299 --> 01:04:03,259
+Evet, 16 bitlik veriyi bir seferde alamayacak bu mimaride değil mi?
+
+296
+01:04:03,959 --> 01:04:09,799
+Peki, şöyle bir yapı olsa 16 bitliyi aldırabilmek için özel bir şey tasarladık diyelim.
+
+297
+01:04:13,556 --> 01:04:24,635
+Özel bir şey tasarladık. Bu sefer getirdik, şöyle koyduk. Hafıza biliyormuz. 1M çarpı 16 dedik. Bunda ne var?
+
+298
+01:04:34,579 --> 01:04:36,899
+Artık 16'lık okuyabiliyoruz.
+
+299
+01:04:37,419 --> 01:04:39,099
+8 bitlik okuma yapıyoruz o zaman.
+
+300
+01:04:39,539 --> 01:04:45,659
+8 bitlik okuma yapıyoruz ama, 8 bitlik okuma yapmak istediğimiz zaman, ben şu hafıza gözüme erişmek istedim.
+
+301
+01:04:46,599 --> 01:04:48,579
+Bunun şu kısmıyla ilgileniyorum.
+
+302
+01:04:49,399 --> 01:04:54,379
+Çünkü çift adres dediğimiz şey sanki buraya karşılık gelecek veya sadece burasını bağlayacağım.
+
+303
+01:04:54,899 --> 01:04:56,699
+Burada kullanmadığım çöp alan var.
+
+304
+01:04:57,799 --> 01:05:00,639
+Dolayısıyla kapasitenin yarısını kullanamayacağım belki de.
+
+305
+01:05:01,652 --> 01:05:19,211
+Bu da böyle bir sıkıntısı var. Peki, uygun arayüz nasıl bir şey olabilir? Uygun arayüz. Toplam kapasite ve şuradaki erişim özelliklerini dikkate alarak kapasitemizin nasıl bir organizasyona girmesi lazım? Ne dersiniz?
+
+306
+01:05:25,876 --> 01:05:28,635
+512 çarpı 8'den 2 tane yan yan.
+
+307
+01:05:29,296 --> 01:05:29,596
+Evet.
+
+308
+01:05:30,736 --> 01:05:33,516
+Şu şekilde bir formasyona getirmemiz lazım.
+
+309
+01:05:34,536 --> 01:05:36,135
+Şimdi şunun genişliği 8 bit.
+
+310
+01:05:36,536 --> 01:05:38,036
+Hemen 8 bit demiştik zaten.
+
+311
+01:05:38,196 --> 01:05:38,956
+Bu da 8 bit.
+
+312
+01:05:39,596 --> 01:05:41,716
+Toplam kapasite 1 MB olacak şekilde.
+
+313
+01:05:41,836 --> 01:05:44,816
+O zaman burada toplamda 512K adet göz olacak.
+
+314
+01:05:44,816 --> 01:05:49,816
+O zaman şunun toplam formatı 512K.
+
+315
+01:05:51,155 --> 01:06:06,536
+çarpı 16 ile ifade edeceğimiz yapı olacak. 512K çarpı 16 demenin anlamı şu. Ben bir adres değerini verdiğimde şu aynı satırda, her iki bölün aynı satırda olan değerleri seçebilmeliyim. Bunu da şöyle yapacağım.
+
+316
+01:06:07,027 --> 01:06:26,067
+Adres çözümleme devresinden bahsetmiştik ya, adres çözümleme devresine A0 ucu gitmeyecek. A0 ucu çift blokları veya tek blokları seçebilmek amacıyla kullanacağın bir uç olacak. Ama burada sadece A0 da yetmiyor. Üç tane alternatif var ya, A0'ı kullandım, kullanmadım. Tek ve çifte ayırır.
+
+317
+01:06:27,219 --> 01:06:54,639
+Buna çift adresler diyelim, buna tek adresler diyelim. Üçüncü bir alternatif de her ikisini birden seçtirmem gerekiyor. O zaman bunu şöyle organize ediyorum. Burada A0 eşittir 0 olduğunda seçilen bir A0 eşittir 0 olduğunda seçilen biliyorumuz çift adresler. Bir de ismi BAS High Enable diye bir şey veya ne olduğu önemli değil. Burası için de ayrı bir seçim ucu kullanıyorum.
+
+318
+01:06:55,023 --> 01:07:06,963
+Dolayısıyla ben mikro işlemci tarafında çift adresten 16 bitlik bir işlem vücuduğumu anlayabilirim. Onu anladığım zaman zaten çift adres olduğundan A0, 0.
+
+319
+01:07:07,487 --> 01:07:16,347
+16 bitlik bir işlem olduğunda anladığımda bu tek bir adresi seçen seçim ucunu da 0 beğeniverim. Aktif 0 bir değer çünkü.
+
+320
+01:07:16,887 --> 01:07:22,867
+Onu da 0 verdiğimde her ikisinde A0'nı çıkarttığımda peş peşe gelen adresler aynı satıra denk gelir.
+
+321
+01:07:23,387 --> 01:07:26,807
+Böyleyse tek bir adresi seçmiş oluyorum 16 bitlik veri çıkmış oluyorum.
+
+322
+01:07:27,267 --> 01:07:30,887
+8 bitliklerde nasıl? Onlarda da şöyle çalışacak mantık.
+
+323
+01:07:30,887 --> 01:07:34,007
+Tek adresten 8 bitlik bir komut yürütüyorum örneğin.
+
+324
+01:07:35,487 --> 01:07:47,827
+A0 değerim 1. Bu blok seçilmedi. Çift blok seçilmedi. Tek adresten 8 bitki bir işlem yaptığım için tek bloku seçen bas high enable isimli seçim ucum aktif oldu.
+
+325
+01:07:48,307 --> 01:07:54,487
+Ve sadece bu bloktan, tek bloktan bir tane ilgili adresime uygun olarak bir bloku seçtim ve data yolunu aktardım.
+
+326
+01:07:55,087 --> 01:07:59,927
+Aynı şey çift adres içinde geçerli. Çift adres olduğu için A0 zaten 0.
+
+327
+01:08:00,500 --> 01:08:18,680
+Çift adresten 8 bitlik işlem olduğu için tek bloku seçtirmeyeceğim. Yani basahya enable'a 1 vereceğim. Aktif 0 diye uç ya. 1 verdiğim zaman seçmiyor. Dolayısıyla gidecek tek çift bloktan, çift adresler arasından verdiğim adres neye karşılık geliyorsa o satırı seçecek ve onun verisini dışarı çıkartmış olacak.
+
+328
+01:08:18,680 --> 01:08:27,780
+Bu operasyonları 16 bit yerine 64 bit için de genişletebiliriz veya 32 bit için verelim.
+
+329
+01:08:28,275 --> 01:08:55,735
+32 bit'te de Intel ailesindeki 32 bitlik bir mimari şu hafıza işlemlerini destekliyor. Çift adresten 8 bitlik işlemi destekliyor. Sonrasında yine tek adresten 8 bitlik işlemi destekliyor. Yani bu şu demek, hafıza gözlerini çift veya tek olması önemli değil. Her hafıza gözüne tek tek erişebilme imkanı olması lazım. Bu ilk iki satır buna karşılık geliyor.
+
+330
+01:08:56,435 --> 01:08:58,435
+Daha sonra şunu yapabiliyoruz.
+
+331
+01:09:00,355 --> 01:09:01,735
+4'ün tam katı
+
+332
+01:09:06,420 --> 01:09:07,779
+İkinin katı, dördün.
+
+333
+01:09:09,880 --> 01:09:16,739
+Tam katı adreslerden dört tane adres aralığı geçecek. Ne yapmış oluyor?
+
+334
+01:09:19,779 --> 01:09:25,639
+Neydi? 0011. Pardon, çift adresler diyecektik. Arada bir tanesini atladım.
+
+335
+01:09:27,000 --> 01:09:29,479
+Şöyle bunu uçurdum. Onu bir sonraki adımda yazacağım.
+
+336
+01:09:30,760 --> 01:09:32,180
+Veya şunu yapabiliyoruz.
+
+337
+01:09:33,524 --> 01:09:37,684
+Shift adreslerle 16 bitlik işlem yapabiliyoruz.
+
+338
+01:09:38,484 --> 01:09:40,324
+Veyahut da durdun tam katı
+
+339
+01:09:43,923 --> 01:10:02,103
+adreslerden 32 bitlik işlem yapabiliyoruz. Dördün tam katı olması şu demek, son iki biti 00, 01, 10, 11 olan ardışık dört tane adresi bir seferde aktif edebilmeli, onlardan datayı çıkabilmeli.
+
+340
+01:10:02,103 --> 01:10:09,103
+Buna göre bu 32 bitlik Intel mimarisinin karşısında, 32 bitlik mimari de,
+
+341
+01:10:09,779 --> 01:10:22,279
+32 bit mimari. Böyle bir Intel CPU'sunda 32 adet data ucu var ve 32 adet adres ucu var.
+
+342
+01:10:25,939 --> 01:10:46,939
+32 adet adres ucu olduğuna göre bu vatandaşın desteklediği hafıza kapasitesi ne kadar olacak? 2 üzeri 32 diyeceğiz değil mi? 2 üzeri 2 çarpı 2 üzeri 10, 2 üzeri 10, 2 üzeri 10. Yani kilo, mega, giga. Demek ki toplamda bu 4 GB'lık bir...
+
+343
+01:10:47,412 --> 01:10:57,731
+Kapasite yerleşecek. 4 GB adet hafıza gözü adresi verilir ama her bir hafıza gözümüzün 8 bitlik olacağını varsayalım demiştim. Böyle 4 GB'lik bir toplam kapasite.
+
+344
+01:10:58,260 --> 01:11:20,020
+ve memory operasyonu olarak da, hafıza operasyonu olarak da şunları destekliyor. Her bir hafıza gözüne tek tek erişebilmeli. Her çift adresden 16 bitlik okuyabilmeli. Dördün tam katlarından da 32 bitlik veriyi okuyabilmeli. Buna göre bizim 4 GB'lik hafızamızı bu işlenciyle nasıl interfease sokmalıyız ne dersiniz?
+
+345
+01:11:25,427 --> 01:11:35,127
+16 bitlik mimaride 2 tane blok kullanmıştık. Dolayısıyla burada da 32 bitlik mimaride 32 bölü 8, 4 adet blok kullanmamız lazım.
+
+346
+01:11:40,532 --> 01:11:42,332
+Bunların her birisi 8 bit.
+
+347
+01:11:47,252 --> 01:11:56,872
+Dolayısıyla biz ya şuradan bir değer okuyabiliriz, şuradan bir değer okuyabiliriz, istersek tekil olarak buradan, istersek tekil olarak buradan değer okuyabiliriz.
+
+348
+01:11:57,292 --> 01:12:04,652
+Demek ki bunların her birinin tek tek aktif edilebilmesi lazım. O yüzden her bir bloğu kendi aktif edicisi var.
+
+349
+01:12:04,772 --> 01:12:14,051
+Yani bunların ismi de enable 0, enable 1, enable 2, enable 3 diyelim şimdilik. Aktif 0, 3'ler.
+
+350
+01:12:14,707 --> 01:12:25,147
+Bu uçlar var. Dolayısıyla mikro işlemci yürütülen komuta bakacak. Yürütülen komut mesela çift adresten 8 bitlik bir işlemse ne bölge aktif etmesi lazım bu durumda?
+
+351
+01:12:25,147 --> 01:12:27,967
+Çift adresten 8 bitlik işlemse.
+
+352
+01:12:33,844 --> 01:12:42,543
+E2 veya E0 aktif olabilir. Bunlar ikinin çift katı. Ama vermiş olduğumuz adres hangisiyle ilişkiliyse, ilgili sütundan bir tanesini seçebilecek.
+
+353
+01:12:42,844 --> 01:12:57,023
+Veya en son durumda 32 bitlik bir işlem yürütüyorsa, E0, E1, E2, E3'ün hepsini aktif edecek. Bunlara göre de tüm blokların aynı satırına denk gelen bir veri dışarı çıkacak.
+
+354
+01:12:57,123 --> 01:12:58,804
+Yani 32 bitlik bir veriyi dışarı çıkacak.
+
+355
+01:12:59,155 --> 01:13:12,376
+Dolayısıyla bu mimarinin 32 bitlik Intel mimarisi karşısında görmek istediği hafıza arayüzü 1G x 32 formatında bir yapı olması gerekiyor diyebiliriz kabaca.
+
+356
+01:13:12,979 --> 01:13:31,439
+Dolayısıyla bir hafıza yapısını oluştururken mikro işlemcinin adres ucu sayısı, mikro işlemcinin data ucu sayısı, bir clock cycle'da desteklediği işlemler gibi özellikleri dikkate alarak uygun hafıza arayüzünü oluşturmak gerekiyor diyebiliriz.
+
+357
+01:13:41,395 --> 01:13:53,695
+8088 diye bir mimari vardı. Adres yolu sayısı 8086 da olduğu gibi ama Vili sayısı 8 bit. Dolayısıyla bir de ona bakalım son olarak.
+
+358
+01:13:55,395 --> 01:13:59,935
+8088 nasıl görmek istiyor hafıza arayüzünü, interfazı nasıl yapmak istiyor?
+
+359
+01:14:01,315 --> 01:14:07,175
+8088 için 8 data ucu var, 20 adres ucu var.
+
+360
+01:14:07,796 --> 01:14:23,355
+Toplam kapasitesine baktığımızda, evet, 1 MB'lik bir alan. Ama 8 tane data hoca olduğu için desteklediği adresler, işlemler şunlar. Tek adresten 8 bit. Tek adres 8, çift adres 8.
+
+361
+01:14:26,296 --> 01:14:31,396
+16 bit'lik işlemleri. İçerisinde 16 bit'lik yazmaçlar var. 16 bit yazmaç.
+
+362
+01:14:33,203 --> 01:14:50,843
+İçinde 16 bit yazmaçlar var. Yani aslında bir seferde 16 bitlik işlemler yürütebiliyor. Ama hafıza arayüzü tarafında 8 ucu olduğu için 16 bitlik bir veriyi yazmacına doldurabilmesi için bunu iki kere bir okuma işleminden geçirmesi gerekiyor.
+
+363
+01:14:51,220 --> 01:15:06,079
+Baktığımız zaman 8088'deki hafıza arayüzünün de hem kapasiteyi hem de buradaki okuma özelliklerini destekleyecek şekilde 1Mx8 formatında interfaz edilmesi gerekiyor diyebiliriz bu mantık çerçevesinde arkadaşlar.
+
+364
+01:15:08,220 --> 01:15:16,199
+Az önce konuştuklarımızın benzeri şeyler olduğu için burayı devam ediyorum. Bir sonraki geçelim.
+
+365
+01:15:21,492 --> 01:15:23,212
+Konuş
+
+366
+01:15:27,315 --> 01:15:43,876
+Az önce de görmüş olduğumuz bir yapıydı bu. Temel bir hafıza bülüğü için en adet giriş ucu, data girişi, en adet data çıkışı var. K adet adres ucu varsa read ve write uçlarıyla birlikte. Eğer REMS'e read write uçları var.
+
+367
+01:15:44,796 --> 01:15:50,315
+Bazı mimarilerde veya yapılarda şey olduğunu söylemiştik, read write ucu tek bir...
+
+368
+01:15:50,703 --> 01:16:04,943
+uç kontrolücuyla geliyor fakat ucun 0 veya 1 olmasına göre fonksiyon gösteriyor. İki ayrı uç olarak geliyorsa bunların aynı anda aktif olmaması önemliydi. Çünkü hem bir ucu ilişkin okuma ve yazma işlemi aynı göze ilişkin yapmak mümkün değil.
+
+369
+01:16:05,703 --> 01:16:12,443
+Dolayısıyla genel yapı bu şekilde olmakla birlikte bunun kapasitesinin 2K çarpı n'lik bir hafıza birimi olduğunu söyleyebiliriz.
+
+370
+01:16:12,884 --> 01:16:25,363
+Hafıza birimi dediğimiz şey aslında temel olarak bir adres değeri verdiğimizde o adrese ilişkin, tablonun o gözünde ilişkin, memori bir tablo olarak düşünün.
+
+371
+01:16:25,363 --> 01:16:40,623
+Bir memori adresine gittiğimizde, baştan itibaren bütün tablonun satırlarını numaralandırmış olalım. İlgili tablo satırına gittiğimizde o tablo gözü içerisindeki değere karşılık geliyor.
+
+372
+01:16:40,884 --> 01:16:52,123
+Dolayısıyla bunu BlueCup Table olarak da düşünebilirsiniz. Mesela biz programlamayla ilgili, devlet tasarımıyla ilgili konuları yeniden hatırladık ama
+
+373
+01:16:52,123 --> 01:17:04,363
+mesela bu programlamayla ilgili mantığın aynısı BlueCup Table olarak da oluşturulabilir. Yani bir hafıza elemanını bir lojik fonksiyon olarak da kullanmak mümkün.
+
+374
+01:17:05,003 --> 01:17:07,943
+Onu da tekrar söylemiş olalım. Yani aslında
+
+375
+01:17:08,448 --> 01:17:22,788
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10 tane adres ucu olan ve 16 tane her bir hafıza, 16 bitten oluşan bir memory birimine baktığımızda bu aslında şu demek.
+
+376
+01:17:24,228 --> 01:17:29,228
+10 girişli lojik fonksiyonları burada gerçekleyebiliriz.
+
+377
+01:17:33,716 --> 01:17:47,036
+Farklı değeri için, yani her bir satır için, örneğin verilerin 15 numaralı bitleri, 0'dan 15'e kadar isimlendirmiş oralı, 15 numaralı bitleri bir fonksiyona karşılık geliyor.
+
+378
+01:17:47,796 --> 01:17:54,195
+Yani bu verinin, yani data out'un 15 numaralı biti bir lojik fonksiyona karşılık geliyor.
+
+379
+01:17:54,707 --> 01:18:09,967
+Yine 14 numaralı çıkış bir ayrı lojik fonksiyona karşılıyor. Yani burada 10 girişli 16 farklı fonksiyon gerçeklenmiş durumda. Memoryde bu özellikle mevcut. Bunu da bir lookup table gibi düşünebiliriz. Bunun özelliği nerede gündeme geliyor?
+
+380
+01:18:10,647 --> 01:18:18,327
+FBJ mantığında tasarımlar gerçekleştirilirken bazı fonksiyonları lookup table olarak oluşturup koyuyorsunuz.
+
+381
+01:18:18,655 --> 01:18:44,456
+Look up diye bir olarak koyduğunuzda yine bu bir hafıza elemanı olarak oluşturuluyor. Oradaki trade-off'a bakıyorsunuz. Gidip de çok kat, kas kat bağlı bir tasarımsa bu, logic up olarak, oradaki gecikmeleri dikkate alıp belki hafıza elemanı olarak kullanmak daha pratik olabilir. Hem süre açısından hem de tasarım karmaşıklığı açısından daha pratik olabilir. Onun kararını verebiliyorsunuz.
+
+382
+01:18:45,555 --> 01:18:51,135
+Yine devam edecek olursak, buradan bahsetmiştik, bunu tekrar etmeyelim.
+
+383
+01:18:56,195 --> 01:19:01,915
+Kontrol uçları olarak şimdiye kadar hep read-write uçlarını gördük. Bunlar haricinde bir de chip select ucu var.
+
+384
+01:19:02,515 --> 01:19:10,975
+Chip select ucunun aslında fonksiyonelini şurada görmüştük. Adres çözünme devresi olarak bahsettiğimiz devreden çıkışlar.
+
+385
+01:19:11,328 --> 01:19:15,488
+Hatırlayacak olursanız, bir mikro işlemci var, fonlimu mimarisi çizmiştik.
+
+386
+01:19:15,928 --> 01:19:18,488
+İşte databas çıkıyor, adres bas çıkıyor, kontrol bas çıkıyor.
+
+387
+01:19:18,968 --> 01:19:22,688
+Sistemdeki bütün Ayo birimleri, hafıta birimleri bu baslar üzerinden bağlı.
+
+388
+01:19:23,248 --> 01:19:26,868
+Ve mikro işlemci sadece bir tanesiyle konuşmak istiyor.
+
+389
+01:19:26,968 --> 01:19:31,188
+Diğerleriyle konuşmaya çalışırsa aynı anda yeri çakışması olacak.
+
+390
+01:19:31,347 --> 01:19:33,528
+Dolayısıyla bir adres çözünürme devrimiz var.
+
+391
+01:19:34,008 --> 01:19:38,568
+Ve her bir elemanı, her bir bloğu yerleştirdiğimiz bir adres evvelerimiz var.
+
+392
+01:19:38,568 --> 01:19:39,268
+Bunu da başta.
+
+393
+01:19:39,328 --> 01:19:47,728
+tasarım itibariyle tanımlamış durumdayız. Böyle bir süreç içerisinde adres çözümleme devresi vermiş olduğumuz komuta göre örneğin,
+
+394
+01:19:48,048 --> 01:20:00,000
+move a-1,100 adresinden bir değer okuyacak hafıza elemanı olarak gelecek onu a-1, ne yazacak? Böyle bir komutu verdiğimizde bunun hafıza elemanı
+
+395
+01:20:00,000 --> 01:20:07,560
+elemanlarıyla ilgili olduğunu ayırt ettik. Bir. İkincisi, memori işlenmeyle, memori'nin yüz numaralı adresiyle ilgili bir işlem.
+
+396
+01:20:07,620 --> 01:20:15,260
+Dolayısıyla yüz adresi bizim adres uzayımızda hangi bloğa karşılık geliyorsa onu aktif etmemiz lazım.
+
+397
+01:20:15,739 --> 01:20:25,700
+Bunu adres çözümleme devresi yapıyor demiştik ama bunu adres çözümleme devresinin gerçekleştirme mantığı ilgili hafıza elemanının chip select ucu üzerinden oluyor.
+
+398
+01:20:28,000 --> 01:20:44,500
+Aktif 0 bir uç olarak da verilebilir. Burada aktif 1 uç şeklinde verilmiş. Eğer ilgili hafızı elemanın chip select ucuna 0 değeri gelmişse bu örnek için bu durumda bunun veri yolu, veri çıkışları yüksek empedans gösteriyor.
+
+399
+01:20:46,036 --> 01:21:14,036
+Yani adres çözümleme devresinin etkisinde bahsettiğimiz durum. Eğer diğer hafıza elemanları, diğer IO birimlerinin data bası olan bağlantısı yüksek empedans gösteriyorsa, bunlar hattan koparılmış gibi bir etki gösteriyor. Sadece adres çözümleme devresinin seçmiş olduğu cihaz o anda data yoluna bağlı. Dolayısıyla mikro işlemci sadece onunla konuşuyor. Adres uçları da sadece onda bir sonuç üretiyor. Adres uçları diğerlerine de gidiyor ama...
+
+400
+01:21:14,036 --> 01:21:22,255
+Bu da bir çıktı üretimi. Çünkü veri yolu yüksek empedansta ayrılmış durumda. Onun haricinde eğer ki biz
+
+401
+01:21:22,868 --> 01:21:41,728
+Cihazı seçmişsek, vermiş olduğumuz read veya write komutuna göre yürütme gerçekleştirebilecek durumda. Çünkü data hattı mikro işlemci üzerinden bağlı. Mikro işlemciye erişebiliyor. Ayrıca tuşları zaten gelmiş. Vermiş olduğumuz kontrol işaretlerine göre okuma veya yazma işlemini yürütebilir hale geliyoruz.
+
+402
+01:21:42,804 --> 01:21:51,503
+Burada erişim süresi ve yazma zamanı gibi bir takım kavramlar var. Bu ikisini şöyle ayıralım.
+
+403
+01:21:52,423 --> 01:22:03,363
+Temel olarak hafıza birimlerine okuma yönlü olarak erişirken ve yazma yönlü olarak erişirken geçecek süreleri birbirinden farklı olarak modellemek uygun.
+
+404
+01:22:08,340 --> 01:22:14,860
+Orada mevcut olan verinin hızlıca bir takım kontrol kapılarından geçirip dışarıya aktarılması.
+
+405
+01:22:15,540 --> 01:22:18,300
+Yazma derken ise ekstra bir takım işlemler var.
+
+406
+01:22:19,520 --> 01:22:28,640
+Dolayısıyla bu ikisi arasındaki farklılığı ortaya koymak adına erişim süresi ve yazma süresi olarak bunu iki başlık altında vermek mümkün.
+
+407
+01:22:29,060 --> 01:22:33,200
+Ve bunların birbirinden farklı olabileceğinin de farkında olmak önemli.
+
+408
+01:22:33,747 --> 01:22:48,727
+Burada mesela bir örnek verilmiş. Okuma yazma süresi 65 nanosaniyeymiş burada verilen örnekteki CPU'da ve yazma süresi de 75 nanosaniye olarak karşımıza çıkıyormuş. Bu nerede önemli?
+
+409
+01:22:48,727 --> 01:22:58,987
+Bu şurada önemli. Okuma ve yazma işlemlerini senkron bir kontrol veya senkron bir klok işareti yardımıyla kontrol etmek istiyorsak.
+
+410
+01:22:59,412 --> 01:23:20,072
+Burada evet okuma işlemleri daha kısa sürüyor ama yazma işlemi de aynı slotta yapacağımız bir işlem olduğu için ve dolayısıyla bütün işlemler senkron aynı periyodda gerçekleşeceği için bizim saat frekansımızın, saat derbemizin periyodu 75 nanosaniyenin üzerinde olmak zorunda kalıyor.
+
+411
+01:23:20,072 --> 01:23:26,532
+Yani tasarımdaki saat frekansımızı etkileyen bir unsur olarak karşımıza çıkmış oluyor buradaki görmüş olduğumuz değer.
+
+412
+01:23:28,595 --> 01:23:37,915
+Buradaki örneğimiz bir aslında 80-86'lı mikro işlemci sistemine ilişkin olarak okuma yazma çevrimleri.
+
+413
+01:23:38,547 --> 01:23:55,707
+Burada okuma ve yazma çevrimi dediğimiz şey aslında saat darbesinden farklı bir yapı. Biz dersimiz kapsamında tek çevrim bilgisayar tasarımı göreceğiz, CPU tasarımı göreceğiz. O tasarımda bir clock darbesi vurduğunda ilgili komutu yürütmüş olacağız.
+
+414
+01:24:08,595 --> 01:24:30,135
+Multicycle mimariler de var. Multicycle mimariler aslında temel olarak, işte eğer işlem birimimizdeki yürüteceğimiz alt blokları birbirinden ayrıştırıp bir pipeline boyu hattı mantığı oluşturmuşsak, örneğin normalde bir single cycle kompütörde şunu diyeceğiz, komutun yürütülmesi diyeceğiz.
+
+415
+01:24:36,595 --> 01:24:46,135
+Komutun datasının getirilmesi, komutun yürütülmesi, komut sonucunun yazılması gibi alt blokları ayırabiliyor olacağız. Bu şekilde alt blokları ayırabilirsek aslında
+
+416
+01:24:46,135 --> 01:24:57,836
+Single Cycle Mimari'den farklı olarak şu ortaya çıkacak. Single Cycle Mimari'de yine bu bloklar mevcut ama bunlar sequential yani ağırla bağlı bir şekilde.
+
+417
+01:24:57,967 --> 01:25:15,347
+Dolayısıyla bir tane komut geldi, hafızadan çekildi. Instruction fetch yaptık, yani komutu getirdik. O blok görevini yaptı. Sonra komut çözümlemeye devrediyor. Komut çözümleme alıyor, hafızadan veri getirilecekse operant fetch yapıyor.
+
+418
+01:25:16,020 --> 01:25:32,300
+Sonra komut belli, operantları belli, getirilmiş. Komutu yürütüyor, execution yapıyor. Daha sonra da işlem sonucunu, right back, geri yazma işlemini yapacak. Ama bu süreç içerisinde bir blok aktifken diğer bloklar boşta bekliyor.
+
+419
+01:25:32,819 --> 01:25:45,779
+Yine bloklara bölsek bile, single cycle mimaride diğer bloklar boşta bekliyor ve bir komutun yürütülmesi, sırasıyla bu 5 saymış olduğumuz 5 tane bloktan, sırasıyla bu komutun geçmesi sayesinde gerçekleşiyor.
+
+420
+01:25:45,779 --> 01:25:49,619
+Ama multi cycle mimarilerde ise şöyle bir durum söz konusu.
+
+421
+01:25:51,439 --> 01:25:57,779
+Bu bahsetmiş olduğumuz blokların her birisi, belirli bir T anında farklı bir komutu...
+
+422
+01:25:58,511 --> 01:26:11,971
+ilgili kısmıyla bir işlem yürütüyor olabilir. Örneğin, pipeline'ımız, boru hattımız boş. Birinci komutu aldık. Birinci komut, işte, add komutuymuş. Onun ne olduğunu anladık. Yani getirdik önce.
+
+423
+01:26:12,463 --> 01:26:20,623
+instruction fetch yaptık. Daha sonra t eşittir iki anında bu add komutu ikinci bloğa gitti. Bunun çözümlemesini yapıyoruz.
+
+424
+01:26:20,823 --> 01:26:32,683
+İşte getirmiştik, şimdi çözümleyeceğiz. Add komut olduğunu anladık. Ama bu sırada birinci blok boşta beklemesin. Ona ikinci komut kuyruğumuzdaki ikinci komutu verelim.
+
+425
+01:26:32,683 --> 01:26:38,523
+Bu komut kuyruğundaki ikinci komutta işte bir hafıza işlemi olabilir, read işlemi olabilir neyse.
+
+426
+01:26:40,463 --> 01:27:08,363
+Bu da işte ed işlemi şey operant facha gitti. Memory ile ilgili olan komutumuz dekoda gitti ve instruction facha bloğumuz boşta beklemişsin oraya bir üçüncü komut girdi. Dolayısıyla bunları da nereden alıyoruz? Bir komut kuyruğumuz var. Gitmişiz komut hafızasına. Oradan belirli bir miktardaki komutu içeri almışız. Çünkü gidip tek tek okumak, yürüttükçe okumak masraflı. Gidiyoruz bir sefer bir hafıza elemanını hazır.
+
+427
+01:27:08,463 --> 01:27:17,723
+Oradan peş peşe hızlıca okumalar yapıyoruz ve CPI içerisindeki bu kuyrukta bunları tutuyoruz ve bu kuyruk üzerinden yürütüyoruz gibi düşünebilirsiniz.
+
+428
+01:27:18,723 --> 01:27:21,723
+Tabi bu pipeline mantığı her zaman...
+
+429
+01:27:22,707 --> 01:27:37,247
+Temel olarak performans çok yükseltmesini bekleriz ama bir takım veri bağımlılıkları, modüler bağımlılıkları, yapısal bağımlılıklar dolayısıyla ve dallanma komutları dolayısıyla her zaman efektif bir şekilde kullanılamıyor.
+
+430
+01:27:37,247 --> 01:27:49,087
+Örneğin bir dallanma komutu yürüteceksek, normalde SMD'den hatırlarsınız, dallanma komutu şöyle çalışıyor. Bir koşul var, bu koşul sağlanmışsa uzaktaki bir komuta atla.
+
+431
+01:27:49,587 --> 01:27:52,648
+Eğer sağlanmamışsa hemen altındakini yürüt.
+
+432
+01:27:53,235 --> 01:28:15,155
+Dolayısıyla biz komut kuyruğumuza, komut hafızasından belirli bir takım bloğu getirdiğimizde, bu onun içinde bir branş komutu varsa, davranma komutu varsa, aslında o branş komutunun hemen ardında bu if kodunun bir maddesi var. Demek ki şu ortaya çıkıyor, örneğin true kodu hemen şeyin altında olsun, branş komutunun altında olsun.
+
+433
+01:28:21,235 --> 01:28:39,215
+Yürütüyorsam, yürütmeye başlattıysam ve branş komutu gerçekten turu döndürdüyse sıkıntı yok. Ama ben işte bu pipeline'ımdaki, boru hattımdaki bloklardan birinde branş komutunu işlerken mecburen branşın hemen altındaki komutu da diğer peşindeki bloklarda işleyeceğim.
+
+434
+01:28:39,215 --> 01:28:49,215
+Hasbel kadar komut dallanmayı gerektirecek bir çıktı verirse o zaman benim komutta yürütmüş olduğum, pipeline'da yürütmüş olduğum...
+
+435
+01:28:49,235 --> 01:29:06,215
+olduğum işlemler çöp olmuş oluyor. Onları atmamız gerekiyor. O zaman pipeline kullanımı arkasında şeyi getirecek. Dallanmayı ben yapacak mıyım, yapmayacak mıyım? Onun uygun bir şekilde tahminini getirecek. Veya tamamen bu şeyi göz ardı edeceğim.
+
+436
+01:29:06,640 --> 01:29:14,880
+Bu tür bağımlılıklar gerektiren komutlar geldiyse pipeline'a, pipeline'ın mantığını durduracağım ve tekrar sequential mantığa geçeceğim.
+
+437
+01:29:15,000 --> 01:29:20,540
+Sırayla komut bitene kadar, komut karar verene kadar diğer bloklarda bir şey işlemeyeceğim.
+
+438
+01:29:20,540 --> 01:29:28,760
+Ama burada doğal olarak performans düşecektir. Onun yerine şun var, dallanmanın tahmin edilmesi var.
+
+439
+01:29:29,140 --> 01:29:42,160
+Veyahut da başka senaryo şu olabilir. Ardarda gelen komutlar birbiriyle veri bağımlılığı oluşturabilir. Örneğin birinci komut A ile B'yi topla A'ya koy diyor. İkinci komut da A'ya ikiye böl diyor.
+
+440
+01:29:42,160 --> 01:29:56,980
+Şimdi A'ya B'yi toplayıp A'ya atamadan önce A'yı ikiye bölmeye çalışmanın bir anlamı yok. Çünkü güncel değerini işlememiş olacağım. Dolayısıyla burada mecburen beklemesi gerekecek işlem sonucunun yürütülmesini.
+
+441
+01:29:57,140 --> 01:30:15,140
+Beklemesi gerekecek. Bu durumda da veri bağımlılığı olmayan diğer komutları hızlıca öne alıp belki onları yürütmek isteyecek. Dolayısıyla böyle bir durum söz konusu. Buraya nereden geldik? Tek çevrim bilgisayarlar olabildiği gibi multi-cycle bilgisayarlar, çevrim bilgisayarlar da var.
+
+442
+01:30:16,275 --> 01:30:27,595
+Multicycle Computer mimarisinde de temel olarak bir komutun yürütülmesi mesela burada Intel için 4 clock cycle'da gerçekleşiyor. 4 saat çevriminde gerçekleşiyor.
+
+443
+01:30:28,000 --> 01:30:35,380
+Buradaki T1, T2, T3, T4 diye bahsetmiş olduğunuz 4 saat darbesi temelde şu işlemleri yerine getiriyor.
+
+444
+01:30:35,380 --> 01:30:45,600
+Eğer okuma veya yazma yapılacaksa ilgili işaretlerin çıkılması, adresin çıkılması, kontrol işaretlerinin yürütülmesi ilgili T zamanlarında gerçekleştiriliyor.
+
+445
+01:30:45,680 --> 01:30:47,700
+Hepsi aynı anda gerçekleştirilmiyor demek.
+
+446
+01:30:48,240 --> 01:30:53,700
+Mesela burada bir A şıkkıyla görmüş olduğunuz yapı, bir yazma çevrimi.
+
+447
+01:30:54,200 --> 01:30:55,660
+Yazma çevrimi demek ne demek?
+
+448
+01:30:56,000 --> 01:31:01,500
+Bu işlemcinin yaptığı işlemleri hep tanımlıyoruz. Mikro işlemci bir şey yazacak. Nereye? Hafıza elemanına yazacak.
+
+449
+01:31:02,220 --> 01:31:06,720
+Buradaki işlemleri hep mikro işlemci açısından tanımlıyoruz. Bu önemli bir nokta.
+
+450
+01:31:06,720 --> 01:31:11,140
+Dolayısıyla mikro işlemcinin yapacağı yazma için öncelikle bakın ne oluyor?
+
+451
+01:31:13,779 --> 01:31:40,199
+Mikro işlemci ilgili elemanın, ilgili hafıza bloğunun adres değerine çıkıyor. Bu hafıza bloğu içerisinde ki hangi göze erişeceksem onun adres değerine çıkıyor. Daha sonrasında hafıza elemanı için chip select işareti üretiyor. Bir chip select işareti üretiyor. Bunu kim üretecek? Bunu belki CPU değil de adres çözümleme devresi üretecek mesela. Daha sonrasında da mikro işlemci
+
+452
+01:31:41,587 --> 01:32:06,027
+Verisini hazırlayıp, verisini hazırladıktan sonra da yazma komutunu göndermesi lazım. Dolayısıyla karşı taraftaki hafıza elemanı okuma-yazma kontrolücünde yazma işareti yani sıfır verini örneklediğinde veri uçlarında valid datanın hazır olması lazım. Valid datayı kim koyacak? Mikro işlemci koyacak. Çünkü mikro işlemcinin bir yazma şartı var burada.
+
+453
+01:32:06,579 --> 01:32:09,659
+Okuma işlemine baktığımızda da şöyle bir senaryo var.
+
+454
+01:32:10,644 --> 01:32:22,344
+Mikro işlemci ilgili nereden okuma yapmak istiyorsa adreslerini koyacak. Bunun 4 saat çevrim boyunca hatta olması gerekiyor. Stabil olarak gerekiyor.
+
+455
+01:32:22,344 --> 01:32:32,304
+Bakın benzer şekilde yazma işaretini gönderdikten sonra yazma çevriminde de uzunca bir süre boyunca geçerli veriyi hatta tutmuştu.
+
+456
+01:32:32,824 --> 01:32:37,484
+Çünkü karşı tarafa verinin yazılıp yazılmayacağı belki bir handshaking yok.
+
+457
+01:32:38,644 --> 01:32:44,944
+Yeterince süre bu adres ve verinin hatta stabil olarak tutunmasıyla sağlanabiliyor ancak.
+
+458
+01:32:45,444 --> 01:32:47,444
+Bu yüzden yazdığımızı varsayıyoruz aslında.
+
+459
+01:32:48,604 --> 01:32:53,744
+Yine adres değerimizi oluşturduk. Nereye okumak istiyorsak verimizi oluşturduk.
+
+460
+01:32:53,744 --> 01:32:58,144
+Adres çözümleme değerlerimiz chip select üretti hafıza elemanı için.
+
+461
+01:32:58,664 --> 01:33:03,344
+Daha sonrasında da read write işaretimizden read komutunu verdik.
+
+462
+01:33:03,464 --> 01:33:05,224
+Yani bir değerini verdik.
+
+463
+01:33:05,568 --> 01:33:16,488
+Artık bu bir değerini aldıktan sonra, karşıdaki hafıza elemanı ne kadar süre sonra verisini çıkacaksa, bunlar zaten tasarım gereği biliniyordur.
+
+464
+01:33:17,608 --> 01:33:22,568
+Bu veriyi çıktıktan sonra, valut datayı çıktıktan sonra bu aralıkta yani T4...
+
+465
+01:33:22,739 --> 01:33:38,059
+T4 içerisinde, düşen kenarda data hatları örneklenerek hafıza elemanının verisi okunmuş oluyor. Yine aynı şey burada yazma için de söz konusu. Yazma işleminde de write işlemini verdik.
+
+466
+01:33:49,587 --> 01:34:00,207
+Bu yazma işleminin tamamlandığı karar veriliyor mikro işlemci tarafına. Yeterince uzun bir süre boyunca ben bunu hatta tuttum anlamında düşünebilirsiniz.
+
+467
+01:34:01,027 --> 01:34:07,207
+Dolayısıyla burada gördüğümüz yapıda bir okuma yazma çevrim birden fazla saat darbesiyle kontrol ediliyor.
+
+468
+01:34:07,967 --> 01:34:13,027
+Bu karşılaşabileceğimiz mimarilerden birisi olarak yine karşımıza olmuş oluyor.
+
+469
+01:34:13,684 --> 01:34:19,864
+Hafıza elemanlarıyla ilgili olarak RAM tiplerinden dinamik ve statik RAM'ler olduğundan bahsetmiştik.
+
+470
+01:34:20,500 --> 01:34:34,920
+Statik RAM'ler aslında temel olarak flip-flop mantığındaki hafıza bloklarından oluşuyor. Dinamik RAM'ler ise yine geçen derse bahsetmiştik. Kapasitör ve transistör şeklindeki bloklardan oluşuyor.
+
+471
+01:34:34,920 --> 01:34:48,500
+Fakat dinamik RAM'lerdeki birim hafıza hücresi kapasitörü şarj ettikten sonra, evet veriyi orada sakladı ama veriyi uzunca bir süre boyunca saklayamıyor. Çünkü sistemde bir takım kaçak akımlar var.
+
+472
+01:34:48,500 --> 01:35:00,399
+Transistörde dahi böyle bir takım küçük kaçak akımlar var. Dolayısıyla yavaş yavaş deşarj oluyor. Oradaki veriyi yitirmemek adına belirli periyotlarla bunun tekrar edilmesi lazım.
+
+473
+01:35:02,676 --> 01:35:20,676
+Yine hafıza elemanlarıyla ilgili olarak geçici ve kalıcı hafıza. Bu da non-volatile olarak tanımlanan hafıza birimi, ROM'lara karşılık gelen yapılar. Volatile ise değişken hafıza veya geçici hafıza dediğimiz yapı, ROM'a ilişkin tanımlamayı içeriyor.
+
+474
+01:35:26,804 --> 01:35:32,403
+Model olarak bilseye de leçe kullanılmış ise örneğin,
+
+475
+01:35:32,688 --> 01:35:42,528
+Doğal olarak gireceğimiz verinin, bitimizin kendisinin ve değinin sistemde olması gerekir. Yani bu model çerçevesinde öyle düşünebiliriz bunu.
+
+476
+01:35:42,528 --> 01:35:50,568
+Yine sistemik olarak bize eğer bu hücreyi seçmişsek veriyi ve verinin değinini de sağlayalım. Bir simetriklik söz konusu yani burada.
+
+477
+01:35:51,268 --> 01:35:56,367
+Select dediğimiz şey ise bunun aslında seçim ucu olarak düşünebilirsiniz.
+
+478
+01:35:56,832 --> 01:36:19,231
+Adres ucu olarak düşünebilirsiniz, seçim ucu olarak düşünebilirsiniz. Bu bizim birim. RAM hücresi, statik RAM hücre yapısını bu şekilde örnekleyebiliriz. Bunlardan kullanarak, çok sayıda kullanarak 2 üzeri n çarpı birlik bir hafıza buluğu, RAM buluğu oluşturmaya çalıştık. Ne yapmamız lazım?
+
+479
+01:36:22,707 --> 01:36:32,007
+Bizim her bir 2 üzeri en adet hafıza bloğumuzdan her birisini ayrı ayrı seçebileceğimiz bir kontrol ucumuz olması lazım.
+
+480
+01:36:32,127 --> 01:36:37,147
+Bunu Word Select olarak ilgili hafıza gözünü Select ucuna bağlayarak gerçekleştirdik.
+
+481
+01:36:37,227 --> 01:36:41,107
+Bunlardan kaç tane var? 2 üzeri en adet Word Select ucumuz var.
+
+482
+01:36:41,207 --> 01:36:44,687
+Bunlar nereden türetilmiş olabilir? Zemin veronun iç yapısını bildiğimiz için.
+
+483
+01:36:44,687 --> 01:36:50,327
+En adet giriş ucuna sahip bir dekoderin çıktıkları bunlara karşılık gelebilir.
+
+484
+01:36:50,868 --> 01:37:15,068
+Şimdi bu yapı içerisinde veri girişi ve veri çıkışı uçlarını da görüyorsunuz. Veri çıkışı bir yine latch üzerinden kontrol edilmiş durumda. Bunun kontrolücü de şu anlama göre ilgili bloğu seçiyor muyuz, seçmiyor muyuz? Okuma yönünü mü seçiyoruz, yazma yönünü mü seçiyoruz? Ona göre değişen bir mantık aslında.
+
+485
+01:37:15,764 --> 01:37:26,743
+Örneğin, biz buraya ilgili bir satıra bir değerini yazmak istersek, bunun için bit değeri olarak dışarıdan data in değeri olarak biri gönderiyoruz.
+
+486
+01:37:27,764 --> 01:37:35,563
+Biz bir yazma işlemi yapacağız. Yazma işlemi için sıfır verilmiyor. Devresi buraya bir geldi. İlgili sütunu seçmiş isek,
+
+487
+01:37:35,904 --> 01:37:54,424
+İngilizce tütünü seçmişiz. Buradan da bir gelecek. Dolayısıyla B değerimizi girmiş olalım şimdilik veya B değerini demiştik. Bir değeri demiştik. Data in de bir. Dolayısıyla şuradaki end kapısının çıkışları bir. Buralarda değili geliyor. Dolayısıyla burada sıfır değerlerimiz var.
+
+488
+01:37:54,868 --> 01:38:03,588
+Bir SR bloğunun içerisinde ilgili satırı aktif ettiğimizde, Word Select'i aktif ettiğimizde de sadece ilgili satır seçilecekti.
+
+489
+01:38:04,048 --> 01:38:14,188
+Dolayısıyla bunun S ucuna 1, R ucuna 0 gelmiş oldu. Bu şekildeki bir işlem sonucunda içeri 1 yazılmış olacak. Yazma işlemini bu şekilde gerçekleştirebiliyoruz.
+
+490
+01:38:14,579 --> 01:38:38,099
+Okuma işleminde ise, bu sefer, bakın, read ucuna 1 geldi, buraya 0 geldi, end kapısının çıkışı 0, o ve işte buraya 0 gelmiş oldu. Bu end kapısının 0 olduğu için, R ucuna da, buradaki end kapısının girişine de 0 geldi. Ben ilgili herhangi bir satırı seçtim ve S ve R uçlarına 0, 0 gelecek, içerideki değeri korumuş olacak.
+
+491
+01:38:38,484 --> 01:38:56,644
+içerideki değeri korumuş olacak. Peki, bunun bu taraftaki etkisine ilgili bit slice'ı ve sütunu seçmişsek, buradaki cihazlardan bir tanesinin verisi buraya kadar aktarılacak.
+
+492
+01:38:56,824 --> 01:39:02,704
+Seçmediklerimizin değeri buraya aktarılmayacak. Gelenle ilgili olarak hangi değer varsa,
+
+493
+01:39:03,507 --> 01:39:30,288
+O, sr-letçi vasıtasıyla dışarı aktarılmış olacak. Okuma işlemini de bu şekilde tanımlayabileceğiz. Bunu bir blok haline getirip bakacak olursak, kara kutu şeklinde getirecek olursak, 2 üzeri n adet seçim ucu var, bir bit data in var, bir bit data out var, bu blok'u seçtiğimiz bir seçim ucumuz var. Bunları adres gibi düşünebilirsiniz şimdilik dekoderi daha bağlamadığımız için. Bir de okuma yazma kontrol ucumuz mevcut.
+
+494
+01:39:31,155 --> 01:39:33,195
+Bir dokumaya zamanı kontur dümün meyju.
+
+495
+01:39:40,435 --> 01:39:50,036
+Bunun dış taraftaki karşılığı, yani Word Select'lerin karşılığı nedir diye bakacak olursak, az önce bahsetmiştik aslında, bu bir dekoder olarak karşımıza gelebilir.
+
+496
+01:39:51,576 --> 01:40:01,115
+Mesela 16 tane satırımız varsa burada hafıza yücresi olarak, 4 adres ucuna sahip bir 4'de 16 dekoder kullanabiliriz.
+
+497
+01:40:02,963 --> 01:40:09,404
+Girmiş olduğumuz 4 tane adres ucuna karşılık 16 tane satırdan herhangi birini seçtirebiliyoruz.
+
+498
+01:40:10,003 --> 01:40:16,884
+Seçtirmiş olduğumuz satırlara data in ve read write chipset ek control uçları vasıtasıyla bir değeri yazabiliyoruz.
+
+499
+01:40:16,884 --> 01:40:20,824
+Okuma işlemi içinde read ucu 1 olduğunda
+
+500
+01:40:22,387 --> 01:40:33,108
+Hafıza gözleri durumunu koruyordu ve bunlardan bir tanesi vermiş olduğumuz adreslere göre aktif olduğu için onun ucu data out'a kadar aktarılabiliyordu.
+
+501
+01:40:34,108 --> 01:40:41,387
+Eğer çipi seçmişsek veri dışarı gidiyor, çipi seçmemişsek dışarı ile hattı koparmış, yani dışarı bir değer göndermiyor.
+
+502
+01:40:41,807 --> 01:40:45,387
+Tristate buffer mantığıyla da bu özelliği kazanmış oluyor.
+
+503
+01:40:50,707 --> 01:40:54,847
+Bu statiklem için iç yapı mantığına karşılık geliyor.
+
+504
+01:40:56,587 --> 01:40:59,087
+Eğer ki biz en genel anlamda
+
+505
+01:40:59,604 --> 01:41:10,224
+N adet adres ucuna sahipsek, örneğin, N adet adres ucuna sahipsek, bu durumda 2 üzeri N adet hafıza gözünü adresleyebiliriz.
+
+506
+01:41:10,304 --> 01:41:17,784
+Onu yaparken de burada gördüğümüz gibi sadece 1 bitlik blok hafıza adreslemek yerine bu sütunlardan çokça tekrarlarsam,
+
+507
+01:41:17,784 --> 01:41:22,784
+2 üzeri N çarpı N bitse mesela bunlar N bitlik bir.
+
+508
+01:41:23,220 --> 01:41:36,619
+Çıkış elde edebilirim. Ama 2 üzeri en adet hafıza bloğunu seçtirebilirim. En adet adres gözüyle. Bunu iyileştirebilmek adına ne yapabiliriz? Bunu iyileştirebilmek adına şunu yapabiliriz.
+
+509
+01:41:38,819 --> 01:41:47,920
+Seçimlerimizi iki ayrı zamana bölebiliriz. Yani bu ne demek? İki kere adres değeri gönderebilirsem şöyle bir özellik kazanıyorum aslında.
+
+510
+01:41:49,076 --> 01:42:07,595
+İki kere adres gönderebilirsem. Bu durumda ilk gönderdiğim en bitlik adresle bir tane satır seçtim. İkinci göndermiş olduğum en bitlik değerle bir tane sütun seçmiş oldum. Bu ikisinin de çıkıştığı nokta benim seçmiş olduğum hafıza gözü olmuş oldu.
+
+511
+01:42:07,967 --> 01:42:16,847
+Bunları 3 boyutlu olarak derinlemesine tekrarladığımızı düşünelim. Dolayısıyla buradan M bitlik bir veriyi aynı anda aktif edebiliriz.
+
+512
+01:42:17,427 --> 01:42:22,467
+Fakat şu anda erişebilmiş olduğumuz hafıza kapasitesi ne olmuş oldu? Zamanlamayı ikiye bölerek.
+
+513
+01:42:22,467 --> 01:42:30,688
+2 üzeri N'lik bir blok içerisinde çarpı 2 üzeri N, çarpı N miktarında bir veriyi erişebilmiş olduk.
+
+514
+01:42:35,123 --> 01:42:39,623
+Hafıza gözüne erişim imkanımız oldu. Bunu nasıl sağladık? Tekrar edelim.
+
+515
+01:42:41,283 --> 01:42:47,623
+Adres değerlerini zaman çoğulu kullanarak, iki farklı adres değeri kullanarak bunu sağlayabilmiş olduk.
+
+516
+01:42:47,623 --> 01:42:55,983
+Eğer ki biz adreslerde adresin yarısını satır seçimine, yarısını sütun seçimine vermiş olsaydık ne olurdu?
+
+517
+01:42:56,063 --> 01:42:58,843
+Ve ikisini aynı anda sağlamış olsaydık.
+
+518
+01:43:03,891 --> 01:43:12,292
+2 üzeri n bölü 2 satırdan birini seçecektik. 2 üzeri n bölü 2 çutundan birini seçecektik. Çarptığımızda yine 2 üzeri n yapacaktı.
+
+519
+01:43:12,771 --> 01:43:18,811
+Aynı anda verdiğimiz vakit bunları ikiye bölmenin kapasite anlamında bir fark yaratmadığını görmüş olduk.
+
+520
+01:43:25,171 --> 01:43:44,711
+Benzer bir mantık olduğu için devam edelim. Şimdi burada önemli bir konumuz var. Veri yolu genişletme ve adres kapasite genişletme. Örneğin elimizde 64K çarpı 8'lik RAM'ler olduğunu varsayalım. Böyle bir özelliğe göre bunun 8 adet data ucu var. Data in, data out olarak ifade edemiz ayrı ayrı.
+
+521
+01:43:45,140 --> 01:43:51,420
+64K olduğu için 2 üzeri 6, 2 üzeri 10, 16 adet adres ucu var.
+
+522
+01:43:51,860 --> 01:43:59,180
+Chip Select variety var. Biz bu kapasitedeki elemanlardan kullanarak şunu yapmak istesek neyle karşılaşırız?
+
+523
+01:44:00,360 --> 01:44:08,280
+256K çarpı 8'lik bir blok oluşturmak istesek ne yapacağız? Burada veri yolu aynı genişliğe sahip fakat kapasite genişlemiş.
+
+524
+01:44:08,700 --> 01:44:11,120
+Dolayısıyla kaç tane bu elemandan kullanmam lazım?
+
+525
+01:44:11,120 --> 01:44:13,120
+256K bölü, 256K bölü.
+
+526
+01:44:13,140 --> 01:44:18,700
+6K bölü 64K, 4 adet bu çiplerden kullanmamız gerektiği ortaya çıkıyor.
+
+527
+01:44:19,180 --> 01:44:24,160
+Fakat bunların aynı anda seçilmemesi gerekiyor. Bunların ayrıca zamanlarda seçilmesi lazım.
+
+528
+01:44:24,627 --> 01:44:50,067
+Buradaki adres ucu sayımız 16. Her bir birim elemandaki adres ucu sayımız 16. Fakat 256K dediğimiz bir blok için adres ucu sayımız ne olacak? 18 olacak. Dolayısıyla elimizde iki tane ekstra uç var. Bu iki ucu ne için kullanacağız? Bu iki ucu 2x4 bir dekodere girdi olarak sağlayıp kullandığımız 4 tane blokun farklı değerler için seçiminde kullanacağız.
+
+529
+01:44:52,627 --> 01:45:02,487
+Bu blok aktif oluyorsa, bizim 2 üzeri 18'lik adres uzayımızdaki düşük anlamlı adresler burası, en yüksek anlamlı adresler bunlar.
+
+530
+01:45:02,487 --> 01:45:13,667
+Ve bunlar da sırasıyla en yüksek 2 biti 0, 0 olan, en yüksek 2 biti 0, 1 olan, en yüksek 2 biti 1, 0 olan, en yüksek biti 1, 1 olan 18 bitlik adresleri.
+
+531
+01:45:14,228 --> 01:45:34,087
+Bu şekilde birbirinden ayırmış oluyoruz. Dekoder kullanmanın avantajı bu bloklardan herhangi ikisi aynı anda aktif değil. Bir seferde sadece bir tanesi aktif. Adres uçlarına dikkat edin. Adres uçları 16 tane düşük anlamlı adres ucu bu 4 tane blokun her birisine eşlenerek gönderilmiş.
+
+532
+01:45:34,463 --> 01:45:50,123
+Dolayısıyla aslında her birisine aynı adres değeri gidiyor ama dekoder ve yüksek anlamlı 256K'nın yüksek anlamlı 2 bitlik adresi dolayısıyla bunlardan sadece bir tanesi aktif olduğu için bir tanesine bir tanesinden bir değer çıkıyor.
+
+533
+01:45:59,764 --> 01:46:13,904
+karşılık gelen yol seçilmiş oluyor. Burada dikkat edeceğimiz çok önemli bir özellik de şu var. Bunların hepsi aynı anda aktif olamayacağı için ve bizim de 8 bitlik nihai bir çıkışa ihtiyacımız olduğu için
+
+534
+01:46:14,304 --> 01:46:41,304
+Bütün data uçları ortaklanmış durumda. Nasıl ortaklanmış? İlk bloğun sıfır numaralı ucu, ikinci bloğun sıfır numaralı ucu ile birleştirilmiş, üçüncü bloğun sıfır ucu ona birleştirilmiş, dördüncü bloğun sıfır ucu ortaklanmış. Dolayısıyla her birisinin sıfır numaralı data sıfırı ortaklanmış. Data 1'leri her bloğ için ortak, data 2'leri her biri için ortak. Toplamda 8 tane uç var. Fakat burada bir çakışma olmuyor şundan dolayı.
+
+535
+01:46:42,304 --> 01:46:45,404
+Bu seferinde vermiş olduğum 18 bitlik adrese karşılık
+
+536
+01:46:45,695 --> 01:47:01,716
+Bunlardan bir tanesi aktif olduğu en yüksek anlamda 2 bitine göre ve vermiş olduğum ve her birisine giden adres değerlerine karşılık bunun da aynı numaralı satırı aktif olup dışarı veri çıktığı için sadece bunun değerini 8 bitik değerini karşıda görmüş oluyoruz.
+
+537
+01:47:01,716 --> 01:47:10,136
+Bu yapı kapasite genişletme olarak tanımlanan yapı. Bir de veri yolu genişletme yapabiliriz. Veri yolu genişletme amacımız şu.
+
+538
+01:47:13,695 --> 01:47:34,855
+K çarpı 8'lik içinden kullanarak 64 K çarpı 16 yapacağız. Şimdi burada kapasite genişlemiyor. Bu 16 bitlik adrese sahip. Bu da 16 bitlik adrese sahip. Dolayısıyla bunlardan kaç tane kullanmam lazım ona bir karar vereyim. 64 K çarpı 16 bölü şöyle diyebiliriz burada pratiklik anlamında.
+
+539
+01:47:39,188 --> 01:47:58,148
+64K çarpı 16 bölü, 64K çarpı 8 dedik. Kapasiteden herhangi bir genişletme yok ama veri yolunu genişletmek adına iki tane bu bloklardan kullanmam lazım. Bir önceki örnekte nasıldı? 256K çarpı 8 bölü.
+
+540
+01:47:58,547 --> 01:48:14,648
+64K çarpı 8'di. Baktığımız zaman veri yolu genişletme noktasında bir katkı yok. Fakat kapasite genişletme 4 katlık bir şey var. Dolayısıyla 4 tane eleman kullanacağım ve bunları kapasite genişletme yönünde kullanmam gerekiyor.
+
+541
+01:48:14,648 --> 01:48:25,807
+Ve nefkü şöyle bir şey olmuş olsaydı. 256K çarpı 16'lık bir hafıza bloğunu 64K çarpı 8'lik bir elemanlar kullanarak yapalım diyecek olsaydık.
+
+542
+01:48:26,079 --> 01:48:35,199
+Veri genişletme yönünde çarpı 2 olacaktı. Kapasite genişletme yönünde çarpı 4 olacaktı. Yani bu elemanlardan 8 tane kullanacaktık.
+
+543
+01:48:35,199 --> 01:48:46,340
+Yani bunlar 4 satır, 2 sütun formatında genişletme yönünde kullanılacaktı.
+
+544
+01:48:46,399 --> 01:48:49,979
+Şimdi adres çözüm veri yolu genişletme mantığına.
+
+545
+01:48:50,452 --> 01:49:01,452
+Büyük kapasitenin de 64K 16 adresi var. Küçük blokların da 16 adres ucu var. Dolayısıyla bu 16 tane adres ucu her ikisine de ortak olarak gidiyor.
+
+546
+01:49:01,452 --> 01:49:05,452
+Veri girişlerini şöyle yapıyoruz.
+
+547
+01:49:05,452 --> 01:49:06,452
+Şu bloğu...
+
+548
+01:49:06,996 --> 01:49:34,295
+Veri yolunun yüksek anlamlı kısmı olarak tanımladım. Bu kısmını da düşük anlamlı kısmı olarak tanımladım. 8-8-16 bit. Aynı şeyi çıkış yönü içinde yaptım. Bunlar yan yana gidiyorlar. Dolayısıyla 8 bit çıkış şu bloktan geldi. Yüksek anlamlı 8 bit çıkış, düşük anlamlı 8 bit çıkış toplam 16 bit veri çıkışı sağladık. Bununla birlikte bu bloklar artık aynı anda seçilmesi lazım.
+
+549
+01:49:34,996 --> 01:49:40,996
+Şu satırdan bir verim çıkıyorsam, okuyorsam, yazıyorsam aynı satırda bu bloktan da verinin çıkması lazım.
+
+550
+01:49:41,536 --> 01:49:48,935
+Dolayısıyla her ikisine de ortak read write ve ortak çift sebeg işaretlerinin gitmesi gerekiyor.
+
+551
+01:49:48,935 --> 01:49:52,935
+Bu da söyledikten sonra.
+
+552
+01:49:57,315 --> 01:49:59,935
+Şöyle dynamic RAM elemanı içinde temel...
+
+553
+01:50:00,000 --> 01:50:09,819
+Bu konular olarak bir kapasite ve transistör var. Bu kapasite ve transistör mantığına bağlı olarak şarj ve deşarj üzerinden veri yazma gerçekleşiyor diyeceğim.
+
+554
+01:50:11,279 --> 01:50:19,019
+S-RAM'da anlattığımız mantığın benzeri var. Dolayısıyla tekrar onu devam ettirmeyeceğim. Burada farklı bir şey var mıydı ona bakalım.
+
+555
+01:50:22,739 --> 01:50:50,299
+Özel bir durum yok. Tamam. Kabaca bu memory konusunu tamamlamış olduk. Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı arkadaşlar? Kısa sınavımız saat 10 geçe başlayacak. 50 dakika süresi var. Çoktan seçmeli sınav. Önceki sorulara dönülebiliyor. Kabaca bu şekilde diyebilirim. Sizin bu haftaki konuyla ilgili sormak istediğiniz bir şey var mı?
+
+556
+01:50:55,028 --> 01:50:56,348
+Hocam kolay gelsin.
+
+557
+01:50:58,328 --> 01:50:59,368
+Teşekkürler.
+
+558
+01:50:59,748 --> 01:51:03,848
+Ben bu derse sistemdeki şeyden dolayı daha yeni katılıyorum.
+
+559
+01:51:04,228 --> 01:51:11,848
+Şimdi gördüm sisteminde sınavı var ama girmem gerekir mi gerekmez mi onu çok çözümleyemedim.
+
+560
+01:51:13,588 --> 01:51:17,368
+Şimdi siz bilimsel hazırlık mısınız yoksa?
+
+561
+01:51:17,488 --> 01:51:19,988
+Mühendislik tamamlama.
+
+562
+01:51:20,435 --> 01:51:29,355
+Mühendislik tamamlama için de benzer şekilde şey yapabiliriz aslında. Onu şu anda bir Ali Can Hoca ile konuşayım da ondan sonra tam net halimi söyleyeyim.
+
+563
+01:51:30,335 --> 01:51:38,295
+Mufiyet tanımlayabiliriz veya söyleyebiliriz kısa sınavlar için. Sizin kayıt niye bu kadar gecikti? Ancak mı yapılabildi?
+
+564
+01:51:38,771 --> 01:51:59,931
+Sistemsel bir sıkıntı vardı. Belki size de mail olarak atmıştım. Bu bitirme çalışması eklenemiyordu. Bitirme çalışmasıyla yazılım mühendisliği dersi eklendi. Sonra sistemden bunlar silindi. Sonra bunların eklenebilmesi için tekrar başvuru yapmak zorunda kaldım. 6 Mart'ta yaptım ama ancak geçtiğimiz çarşamba eklenebildi sisteme.
+
+565
+01:52:00,211 --> 01:52:01,952
+Dersleri hiç takip edebildiniz mi?
+
+566
+01:52:01,952 --> 01:52:04,811
+Yani çarşamba günü sistem bana açıldı daha.
+
+567
+01:52:05,952 --> 01:52:13,251
+Yani mail atıyordum devamlı. Sadece ilk dersin şeyine girebildim. Ondan sonra hiçbirine giremedim. Onda da siz bana link atmıştınız.
+
+568
+01:52:13,251 --> 01:52:30,291
+Link atmıştım evet. Tamam hatırladım. Yani şöyle yapalım. Şimdi bir girmiş olun ama bunu değerlendirip değerlendirmeyeceğimizle ilgili bir Ali Can Hoca ile de konuşalım ve mühendisliği tamamlama öğrencileri için genel bir kural oluşturalım. Sonra da klasmurundan ilan ederiz onu olur mu?
+
+569
+01:52:30,591 --> 01:52:31,692
+Tamam. Teşekkür ederim.
+
+570
+01:52:31,912 --> 01:52:32,652
+Rica ederim.
+
+571
+01:52:33,492 --> 01:52:37,231
+Var mı arkadaşlar başka sorumuz? İletmek istediğiniz bir şey.
+
+572
+01:52:39,652 --> 01:52:48,671
+Yoksa ders sonlandıralım şimdi. 10 dakika içinde sınav başlayacak. Online Yıldız Edyo TRD girişlerinizi yapabilirsiniz.
+
+573
+01:52:49,211 --> 01:52:54,291
+Haftaya tekrar görüşmek üzere arkadaşlar. Katıldığınız için teşekkür ederim. İyi günler.

@@ -1,0 +1,2763 @@
+1
+00:04:47,732 --> 00:05:01,652
+Arkadaşlar merhaba. Son kişi kadar varız. Bu hafta, geçen haftadan kalan bir konu var. Onlara bakacağız. Sonrasında da ön bellek konusuna geçiyor olacağız.
+
+2
+00:05:02,612 --> 00:05:11,272
+Şimdi öncelikle geçen haftadan kalan konudan biraz daha atılıyorum. Şimdi temel olarak gördüğüm haliyle bir köşemli sistemde.
+
+3
+00:05:12,052 --> 00:05:17,652
+kullanabileceğimiz çeşitli çevre bilimler olduğunu konuşmuştuk. Genelde blog diagramını da vermiştik.
+
+4
+00:05:17,652 --> 00:05:29,252
+CPU, bu çeşitli çevre bilimler, RAN, ROM ve IO bilimleriyle ortak bir yol üzerinden bağlıydı. Bu ortak yol üzerinde sadece bir cihazla konuşuyorduk.
+
+5
+00:05:29,252 --> 00:05:34,652
+Bunu yerine getirmek üzere de görevli olan adres çözünme devresinden bahsetmiştik.
+
+6
+00:05:39,860 --> 00:05:43,319
+Yine adres basılan değerler giriyordu.
+
+7
+00:05:44,060 --> 00:05:51,980
+Ve yürütmekte olduğumuz komuta dair verdiğimiz adres değeri, bir adres erişimiyse,
+
+8
+00:05:52,580 --> 00:06:01,519
+adres değeri hangi çevre biriminin aralığındaysa, adres aralığındaysa onu aktif yapan bir sistemdi.
+
+9
+00:06:01,519 --> 00:06:03,519
+Bu mantık çerçevesinde de.
+
+10
+00:06:03,891 --> 00:06:15,572
+CPU, akkı falan tek adresi de adres basına çıktı. Konuşmak istediği tek cihazla ortak bastan konuşun hale geliyordu.
+
+11
+00:06:15,572 --> 00:06:23,291
+Şimdi bu noktada biz de bu adres sözüme mantığı geçen haftadan kalan kısmı birazcık ona değinelim. Daha sonuçta da bu haftalık konusuna geçelim.
+
+12
+00:06:23,291 --> 00:06:30,219
+Şimdi adres sözüme mantığı ile ilgili olarak şöyle bir örnek yapalım.
+
+13
+00:06:41,459 --> 00:06:42,459
+Evet, evet.
+
+14
+00:06:51,636 --> 00:06:53,176
+Ben nefes ben açayım şimdi.
+
+15
+00:07:07,764 --> 00:07:10,524
+Açalım, cevap ekran programı, şunluşun bilmeyiz.
+
+16
+00:07:20,884 --> 00:07:22,384
+Tekrar paylaşım açıyorum.
+
+17
+00:07:24,204 --> 00:07:24,403
+Evet.
+
+18
+00:07:25,844 --> 00:07:26,283
+Şimdi
+
+19
+00:07:26,283 --> 00:07:32,324
+yine dersimiz kapsamında gördüğümüz
+
+20
+00:07:32,324 --> 00:07:35,684
+içerik dairinde şu bilgiye de sahibiz.
+
+21
+00:07:36,604 --> 00:07:39,084
+Genel olarak gördük ki hafıza bilimleri için
+
+22
+00:07:43,124 --> 00:07:47,184
+ve giriş çıkış birimleri için şu iki temel fark vardı.
+
+23
+00:07:56,052 --> 00:08:02,872
+Örneğin, bu tür cihazların 10-20 adres uçları 10-15 adres uçları bulabiliyordu.
+
+24
+00:08:02,872 --> 00:08:18,552
+Mertebe olarak baktığımız zaman, 10 KB mertebesinde, 10-100 KB mertebelerinde birer blok olarak karşımıza çıkıyordu.
+
+25
+00:08:18,552 --> 00:08:21,052
+Bilin çıkış bilimleri ise geçen hafta gördüm.
+
+26
+00:08:21,267 --> 00:08:31,747
+Bunlar adres ücün sayısı itibariyle orantılı bir şekilde. Bunlarda ise iki tane adres ücün olan versiyonlar vardı.
+
+27
+00:08:31,747 --> 00:08:45,187
+Bir tane adres ücün olan vardı. Dolayısıyla bunlar da adres ücün 4, 2 veya 1 byte'lık alan kaplayan cihazlar.
+
+28
+00:08:47,316 --> 00:08:50,316
+Çevre bilimleri.
+
+29
+00:08:52,316 --> 00:09:04,316
+Dolayısıyla şimdi baktığımız zaman kapasite olarak bu mertebelerde olan cihazlarla, mertebelerde olan çevre bilimlerini aynı azda çözünürlüğüne belki vermek anlamda olmayabilir.
+
+30
+00:09:04,316 --> 00:09:06,316
+Dolayısıyla şuradakileri...
+
+31
+00:09:07,316 --> 00:09:20,216
+Birincisi ders içerisine göreceğiz ama şimdi şuna odaklanacağız bu noktada. Giriş çıkış birimleriyle ilgili olan çeşitli adres aralıkları vereceğiz ve bu adres aralıklarını sağlayan adres çözünürlüğü devresini yapacağız.
+
+32
+00:09:20,216 --> 00:09:33,816
+Gerçeklenmeye çalışacağız. Ters tarafta da mesela memori birimlerine ilikin ayrı bir adres çözünürlüğü devresi olduğunu varsayabileceğiz. Dolayısıyla sadece giriş çıkışlara odaklandırılır bir senaryomuz olabilecek.
+
+33
+00:09:34,868 --> 00:09:36,868
+Evet, evet.
+
+34
+00:09:40,563 --> 00:09:46,563
+Bunun yüzüne tadına şöyle yapalım. Bir örnek üzerinde ilerleyelim.
+
+35
+00:10:00,659 --> 00:10:07,659
+Şöyle bir storyumuz oldu. Mikroistlemcinin adresi benziyor.
+
+36
+00:10:13,427 --> 00:10:25,927
+Mikro işlemcimizin genel bir özelliğini tanımlayabiliriz. Yani burada 8086'da mikro işlemciler dersine geldiğimiz zaman 8086'ın özel bir durum vardı. O ne istiyordu?
+
+37
+00:10:26,467 --> 00:10:33,008
+Çarpı 16 olarak haklıda bilinen veya çevre bilinenin karşısına görmek istiyordu. Ama burada daha genel bir cihazdan bahsedelim.
+
+38
+00:10:33,147 --> 00:10:38,028
+Buradaki mikro işlemcimizin örneği şöyle de olabilir. 8 bit veri yoluna sahip olsun.
+
+39
+00:10:43,251 --> 00:10:51,451
+Dolayısıyla bu cihaz karşısında gördüğü memori veya ayı uzayını çarpı sekiz genişliğini görmek istiyor.
+
+40
+00:10:51,451 --> 00:10:57,451
+Bu durumda, yani bunlarla birtakım ek bilgiler soruyoruz. Bu da kafamızı karıştırmasın.
+
+41
+00:10:57,451 --> 00:11:05,251
+Asıl diyebileceğimiz şey, bu özelliklere sahip olan bir mikro işlemciye bağladığımız çevreden, ayrı çıkardasıyla yerleştirebilir.
+
+42
+00:11:05,251 --> 00:11:09,851
+Yani bunu söylemek için zorluklardır. Mikro işlemci adres uzayında örneğin.
+
+43
+00:11:09,940 --> 00:11:12,440
+80H adresinden itibaren.
+
+44
+00:11:17,364 --> 00:11:19,464
+ARDİŞC adreslere yerleştirebilir.
+
+45
+00:11:29,203 --> 00:11:40,503
+Paralel programlanabilir, arayüz, DPR, IO birimine, IO birimine ulaştım.
+
+46
+00:11:45,268 --> 00:11:47,428
+Ayrıca sözümüne hal etsin gerçekliğinde.
+
+47
+00:11:57,971 --> 00:11:59,971
+En basit örnek olarak böyle başlayalım.
+
+48
+00:11:59,971 --> 00:12:03,971
+Şimdi burada neler var?
+
+49
+00:12:05,971 --> 00:12:07,971
+Tek bir cihazımız var.
+
+50
+00:12:07,971 --> 00:12:11,971
+Evet, biz başta şeyi konuşmuştuk, onu okumaya seçtim konumunu.
+
+51
+00:12:11,971 --> 00:12:17,971
+Bu mikro işlemci sistemin ayağa kalkabilmesi için sadece mikro işlemci sistem yeterli değil.
+
+52
+00:12:18,419 --> 00:12:28,139
+Onun yanında birtakım veri hafızası, komut hafızası, IO birimleri gibi çevre birimlerine ihtiyacımız var. Bunları bağlayan yollara ihtiyacımız var.
+
+53
+00:12:28,139 --> 00:12:41,539
+Şimdi ama bir basitleştirme yapıyoruz. Bunların hepsi var. Ama IO birimi özelinde, IO birimi için ayrıca Adres Çözümünün Ömeri Devresi'nde çalışanlık sistemde, bu IO birimle ilişkiler Adres Çözümünün Ömeri Devresi'nde bakacağız. Yani özel bir kısımla bakıyoruz.
+
+54
+00:12:42,611 --> 00:12:57,971
+Sorumuz bu haldeyken bir takım şeyleri bilmemiz lazım. Paralel programla alabilir, interfaithimizin kaç tane adres ucuna sahip onu bilmemiz gerekiyor. Çünkü iU uzayına ne kadar fiyat kapladığını bilmemiz.
+
+55
+00:12:57,971 --> 00:13:10,172
+Geçen haftaki derste baktığımızda en genel, jenerik bir şekilde yazılmış olan bu CPI iU cihazımızın iki tane adres ucu olduğunu görüyoruz. İki adres ucu var.
+
+56
+00:13:12,884 --> 00:13:21,163
+Bu da demek ki bu toplamda ayı uzayında 4x40 yer kaplıyor. 4x8 litre alan kaplıyor.
+
+57
+00:13:24,223 --> 00:13:25,844
+Nerede? Ayı uzayında.
+
+58
+00:13:29,556 --> 00:13:42,556
+Demek ki bu cihazımız 4x40 kâpladığına göre bu cihaz 80H adresinde artış kadresinde de yerleştirilmiş diye 81H adresinde, 82H adresinde ve 83H adresinde.
+
+59
+00:13:42,556 --> 00:13:49,556
+Bu aralıkta bu PPI cihazımızı paragraf programlarının interfej cihazını yerleştirmek istiyorum.
+
+60
+00:13:50,388 --> 00:13:58,388
+Bu cihaza baktığımızda şöyle bir özelliği var. Şimdi uçlarında böyle blok diagramını içelim. Kalıdığı neye deniriz onu anlatırlamaya çalışalım.
+
+61
+00:13:58,388 --> 00:14:10,388
+Bu cihazın bir tane sekizliklik data ucu vardı. Bunun yine iki tane adres ucu vardı. Bu adres uçlarımız...
+
+62
+00:14:11,604 --> 00:14:18,604
+ne olarak geçiyordu? A1 ve A0 üçleri olarak geçiyor. İkdani artık bu.
+
+63
+00:14:18,604 --> 00:14:23,604
+Yine buraya çeşitli kontrol işaretleri geliyordu. V-Bark gibi kontrol işaretlerimiz bulundu.
+
+64
+00:14:23,604 --> 00:14:29,604
+Yine bu cihazın bir tane chip select vücudu vardı. Şöyle göstereyim. Chip select vücudu vardı.
+
+65
+00:14:36,947 --> 00:14:42,947
+Çift yönünü de ayarlanabiliyordu, giriş veya çıkış yönünü ayarlanabiliyordu. Bir de port cieniz var, 2-3 olarak.
+
+66
+00:14:43,379 --> 00:14:54,079
+Bu cihazın dışarıdan erişilebilir yazmaçlarına baktığımızda da Port A'ya karşılık bir tane yazmacı vardı. Port B'ye ilişkin bir tane yazmacı vardı.
+
+67
+00:14:54,240 --> 00:15:02,319
+Yani biz dışarıdan mikro işlemci gelip de buna bir cihazın Port A adresine bir şey yazdığında yazdığımız değer 102 Port A uçlarına çıkıyoruz.
+
+68
+00:15:02,460 --> 00:15:11,379
+Veya yazdığımız değer Port B yazmacı ile ulaşmışsa bu bir rejister bilgisinin rejisterların paralel çıkışları yine Port B 102 uçlarına çıkıyor.
+
+69
+00:15:11,379 --> 00:15:37,379
+Bu yazmaçları da şöyle şuraya ifade edelim. Aslında 80H adresine değil de şöyle daha güzel bir şekilde yapalım.
+
+70
+00:15:37,583 --> 00:15:51,743
+Doğru tablosuna sürecek olursanız, A1 ve A0 adres kuşlarına gelen değerlere göre eşilen yazmaç hangisi oluyor diye bakacak olursak, 00 adresindeki yazmacımız Port A yazmacıydı.
+
+71
+00:15:51,743 --> 00:15:58,163
+Port A, register diyorum. 01 için Port B registerı.
+
+72
+00:16:00,659 --> 00:16:07,139
+port C registerine erişiyorduk. 1.1'de ise kontrol ve status yazmacına erişiyorduk.
+
+73
+00:16:12,083 --> 00:16:29,163
+Kontrol, statüs yazmacına erişiyorduk. Yani, jenerik durumda tabii farklı senaryo olabilir ama biraz genelden bahsedecek olursak, mesela, birbir olarak cihazı adresleyip, yani A1, A0'lara birbir verdikten sonra buraya bir yazma yaptığımızda, erişeceğimiz yazmaç, kontrol yazma yolunu oluyor.
+
+74
+00:16:29,604 --> 00:16:37,604
+Veya birbir olarak adresleyip okuma yapmak istediğimizde, bu durumda da statüs yazmacını veya durum yazmacını okumuş oluyoruz. Durum yazmacı içerisinde neler var?
+
+75
+00:16:38,163 --> 00:17:04,983
+Satüs veya durum yazmacı dediğimiz şeyin içinden en yer var. İşte çeşitli kontrol bitleri var. Bu kontrol bitleri mesela strop işareti, ondan sonra etnoloji işareti gibi bir takım özel durumları içeren şenaryolar olabilir. Kontrol yazmacı içinde ne vardı? Kontrol yazmacı içerisinde de yine böyle bir takım değerler. İşte port ağının yönü. Port ağa yön.
+
+76
+00:17:05,375 --> 00:17:17,375
+port B yön ve port C'nin yönü gibi birtakım jenerik olarak bahsediyoruz. Özel konfig kelimeleri, bitleri bulunabilir diyebiliriz.
+
+77
+00:17:17,375 --> 00:17:32,271
+Şimdi bu durumda biz, demek ki bu A1-A tuşlarına verdiğimiz değerlere göre elde edeceğiz. Bu, şuraya kadar anlattığımız kısım, cihazın kendisiyle alakalı senaryo. Yani dışarıdan bir şey bağlandığı...
+
+78
+00:17:32,271 --> 00:17:45,471
+durumda ise şu adreslere dikkat almamız gerekiyor. Bu adreslerin içerideki port yazmaçlarına veya içerideki yazmaçlarla ilişkisi nasıl kurulduğunda da bu çerçevede ele almamız gerekiyor.
+
+79
+00:17:45,471 --> 00:17:47,612
+Şimdi ilerleyelim.
+
+80
+00:17:48,500 --> 00:18:00,519
+Şu anda bu dışarıdan vermiş olduğumuz adreslerle içerideki bağlantıları herhangi bir şekilde tanımlamış değil. Bu tanımlama biraz sonra oluşacak. Şimdi öncelikli adres çözünürlüğü devresine vereceğiz.
+
+81
+00:18:01,240 --> 00:18:06,700
+Adres çözünürlüğü devresine baktığımızda ne demiştik? Control işaretlerinin belirli bir kısmı girecek.
+
+82
+00:18:08,627 --> 00:18:22,007
+adres uçlarının belirli bir kısmı girecek demiştik. Şimdi bir ön varsayımımızdan daha bahsedelim. Kullanmış olduğumuz mikro işlemcinin fiziki olarak bir M.I.O. isimli uca sahip oldu.
+
+83
+00:18:22,007 --> 00:18:35,407
+Bu uç hatırlayacak olursanız daha önce de konuşmuştuk. Bu yürütülen işlemin bu uç yürütülen işlem bir hafıza işlemi mi?
+
+84
+00:18:36,211 --> 00:18:57,791
+Yoksa bir IO işlemi mi? Bunu ayırt eden bir uç. Nasıl ayırt ediyor bunu? Zaten mikro işlemci yürüttüğü komutu diyor. Mesela MOVE diye bir komut yürütüyorsa veya IN, OUT diye bir komut yürütüyorsa buna göre bu uçta uygun değeri oluşturuyor. MOVE komutunu yürütüyorsa aslında bizim verişmek istediğimiz şey hafıza elemanları.
+
+85
+00:19:03,951 --> 00:19:14,391
+Bu durumda mikro işlemci bizatihi kendisi M.I.O. isimli bir uçta hangi değeri oluşturuyor? Bakın, çift fonksiyonlu bir uç M.I.O.
+
+86
+00:19:14,836 --> 00:19:24,735
+Aktif sıfırken IO görevinde, aktif sıfırken memory görevinde. Dolayısıyla MUT isimli bir komut çalıştırırken mikro işlemci bu uçta bir değerini oluşturuyor.
+
+87
+00:19:25,175 --> 00:19:36,355
+Yine IN ve OUT komutları bunlar IO işlemleri, temelde IO işlemleri. Dolayısıyla mikro işlemci IN komutuyla dışarıdaki bir porttan veri okurken veya OUT komutuyla bir porta değer yazarken
+
+88
+00:19:38,483 --> 00:20:00,000
+Bu sefer bir IO işlemi yapmak istediğini açıkça belirtmek oluyor. Dolayısıyla bu durumda da MIO ucumuzda mikro işlemcinin kendisi sıfır değerini üretiyor. Dolayısıyla dış dünyadan bakan bir cihaz bu adres çözümleme devresi olabilir örneğin. O sırada adres basa basılmış olan adres değerini veya adres değerini diyelim adres basına çıkılmış olan adres değerini.
+
+89
+00:20:00,000 --> 00:20:10,880
+Adresim, bir IIO cihazı adresim yoksa bir memory cihazı adresim olduğunu ayırt edebiliyor bu MIO ucuna bakarak. Dolayısıyla şunu söyleyeceğiz. Biz adres çözümleme devresinde,
+
+90
+00:20:13,000 --> 00:20:15,240
+adres çözümleme devresinde,
+
+91
+00:20:20,852 --> 00:20:29,032
+MIO isimli bu ucumuzu dikkate alıyor olacağız. Çünkü bizim mikro işlemcimiz için bu fonksiyon aktif olduğunu belirtmiş olduk.
+
+92
+00:20:29,972 --> 00:20:35,612
+Şimdi bunu da bir not olarak verdikten sonra devam edelim. Bir adım daha devam edelim.
+
+93
+00:20:36,751 --> 00:20:40,092
+Bizim kullanacağımız adres değerleri neydi? İşte 80H.
+
+94
+00:20:40,852 --> 00:20:53,032
+81H, 4 tane adresin sıyorduk. 82H ve 83H isimli adresler. Bunların bir binary karşılıklarına bakalım. Binary olarak karşılıklarına bakalım bunların.
+
+95
+00:20:53,032 --> 00:21:04,811
+Hangi adresten itibaren? A7, A6, A5, A4, A3, A2, A1 ve A0 diye değerlerimiz gitti.
+
+96
+00:21:05,428 --> 00:21:27,028
+80 haşı yazmak istediğinizde 1, 0, 0, 0, 0, 0, 0, 0 değer olur. 81 haş için 0, 0, 0, 1 bu şekilde yazabiliriz. 82 haş için 0, 0, 0, 0, 1, 0 yazabiliriz. 82 haş için 0, 0, 0, 1, 1 değerlerini yazabiliriz.
+
+97
+00:21:27,827 --> 00:21:45,827
+Şimdi biz cihazımızdan biliyoruz ki cihazımızdan dışarıdan erişilebilir 4 tane yazmaç değerimiz var. Dolayısıyla aslında 4 farklı durumu oluşturan adres uçları hangileri ise onları bu PPI cihazımızın adres uçlarına bağlamalıyız. Böyle bir durum var.
+
+98
+00:21:52,223 --> 00:21:58,023
+veri iletişim cihazının ve bu PPI cihazına bağlamamız gereken adres kuşların hangisi olduğunu görebiliyor muyuz?
+
+99
+00:21:58,603 --> 00:22:02,523
+Dört farklı adres alternatifini oluşturan adres kuşları hangisi?
+
+100
+00:22:04,683 --> 00:22:05,603
+A1 ve A1.
+
+101
+00:22:06,612 --> 00:22:14,932
+Şu iki değer değil mi? Bunlar bu vermiş olduğumuz veya seçmiş olduğumuz adres aralarında dört farklı kombinasyonu oluşturan adreslerdir.
+
+102
+00:22:15,372 --> 00:22:24,332
+Demek ki bu adres değerlerini biz orada CPI cihazımızın A1 ve A0 adres uçlarına bağlayacağız.
+
+103
+00:22:24,932 --> 00:22:30,231
+Geri kalan uçları nereye bağlayacağız demek ki? Geri kalan uçlar da şunu belirtiyor aslında.
+
+104
+00:22:32,147 --> 00:22:41,467
+Geri kalan uçların işaret etmiş olduğumuz değerleri alıyor olması bu adresin PPI cihazıyla ilgili bir komut ürütü, mikro işlem bilim belirtmiş oluyor.
+
+105
+00:22:41,567 --> 00:22:48,867
+Yani ben A7'den A2'ye kadar olan uçlarda 1,0,0,0,0 görmüşsem ben kesinlikle PPI ile ilgili işlem yapıyorum.
+
+106
+00:22:49,387 --> 00:22:51,768
+Hangi şartta? EMA ucu da 0'sa.
+
+107
+00:22:52,728 --> 00:22:53,708
+Şu da olabilir çünkü.
+
+108
+00:22:54,288 --> 00:22:56,147
+Belki biz 80H adresindeki...
+
+109
+00:22:58,771 --> 00:23:07,771
+bir memory birimine de erişiyor olabiliriz. Bunu nasıl ayırt edeceğiz? Adresindeki memory mi yoksa,
+
+110
+00:23:07,771 --> 00:23:16,771
+AYU cihazına mı erişmek istiyoruz? Bu da şu demek aslında, bizim bir tane memory uzayımız var, ayrı bir memory uzayımız var, bir de AYU uzayımız var.
+
+111
+00:23:17,327 --> 00:23:31,867
+Şuna mem diyelim, şuna da ayo diyelim. Bunun da 80H adresi var, bunun da 80H adresi var. Dolayısıyla biz sadece adres yoluna baktığımızda, memorinin 80'ine mi erişmek istiyoruz yoksa ayo'nun 80'ine mi erişmek istiyoruz bu belli değil.
+
+112
+00:23:45,327 --> 00:23:49,487
+Yerleştirmiş olduğumuz PPI cihazına erişmek istediğimizi belirtiyor.
+
+113
+00:23:49,567 --> 00:23:59,767
+Dolayısıyla bizim oluşturacağımız adres sözümleme devresi 80 ve 83H adresi aralığında bir değer geldiğinde bir chip select üretecek.
+
+114
+00:23:59,767 --> 00:24:12,127
+Bunun dışında herhangi bir adres geldiğinde veya 80 ve 83H adresinde gelmiş olsa bile MIOS'u birse bir chip select işareti üretmeyecek. Böyle bir gereksinimimiz var.
+
+115
+00:24:13,236 --> 00:24:22,855
+Sadece ve sadece MIO 0 iken ve 80-83 adresindeyken chipserek üretmeli. Bunun dışında herhangi bir değişiklik olduğunda chipserek üretmeli.
+
+116
+00:24:23,596 --> 00:24:34,615
+Özetçe bunu söyleyelim. Dolayısıyla 80-H adresindeki memory mu yoksa IOMU'ya karar verebilmek için de MIO ucuna bakmamız gerektiğini söyledik.
+
+117
+00:24:34,615 --> 00:24:40,635
+Şimdi bu durumda bizim adres yüzünleme devremize girmesi gereken değerler ve sağlanması gereken değerler neler?
+
+118
+00:24:40,991 --> 00:24:58,451
+A7'nin 1 olması lazım. A6'nın 0, A5'in 0, 7, 6, 5, A4'ün 0, A3'ün 0, A2'nin 0 olması lazım. Arttı.
+
+119
+00:24:58,900 --> 00:25:06,720
+MIO isimli ucunda sıfır değeri alması lazım. Ancak ve ancak bu şartlar sağlandığında CISCBilgisayar üretmeliyiz.
+
+120
+00:25:07,240 --> 00:25:14,440
+Biz bu adres çözünürme devresini soruya bir ek bilgi olarak yukarı yazayım daha anlamlı olur.
+
+121
+00:25:14,520 --> 00:25:23,360
+Soruya bir ek bilgi olarak ne diyorduk? Bu adres aralarındaki PPI, IO birimine ilişkin adres çözünürme devresini neyle gerçekleyelim?
+
+122
+00:25:24,723 --> 00:25:28,723
+3x8 decoder kullanarak gerçekleyelim.
+
+123
+00:25:28,723 --> 00:25:31,723
+ile gerçekleyiniz. Tamam mı?
+
+124
+00:25:31,723 --> 00:25:33,723
+Devam ediyoruz. İndik aşağı.
+
+125
+00:25:33,723 --> 00:25:36,587
+3x8 decoderimizi çizelim.
+
+126
+00:25:43,284 --> 00:25:55,004
+C8 dekollere baktığımızda bunun uç tanımları, seçim uçları C, B, A diye uçlar vardı. Ondan sonra 3 tane de enable ucu vardı.
+
+127
+00:25:55,744 --> 00:26:07,464
+Enable 1, daha sonra 2 tane aktif 0 enable ucu vardı. Enable 2A ve Enable 2B şeklinde 3 tane enable ucu var.
+
+128
+00:26:07,464 --> 00:26:10,084
+Çıkışlarımız da şu şekilde.
+
+129
+00:26:10,544 --> 00:26:18,424
+Y1 üstü, Y2 üstü, Y3 üstü, Y0'dan başlayacaktık.
+
+130
+00:26:18,424 --> 00:26:19,004
+Gitti.
+
+131
+00:26:20,844 --> 00:26:22,124
+Burası gerek yapabiliriz.
+
+132
+00:26:33,428 --> 00:26:35,428
+Parlamazı kesemeyiz değil mi?
+
+133
+00:26:37,628 --> 00:26:39,564
+Ekranı çizemeyeceğim.
+
+134
+00:26:58,163 --> 00:27:00,943
+Whiteboard'ta bir sıkıntı oldu herhalde. Bir tekrar açalım.
+
+135
+00:27:07,412 --> 00:27:10,011
+Zaten açılışlı bir törenle olmuştu.
+
+136
+00:27:48,372 --> 00:27:49,612
+Aynı zamanda şu idi.
+
+137
+00:28:02,324 --> 00:28:04,324
+Arkadaşlar, komut küreselarşisi konularını işleyeceğiz.
+
+138
+00:28:41,044 --> 00:28:54,744
+Y1, Y2, Y3, Y4, Y5, Y6 ve Y7'ye ihtiyacımız var.
+
+139
+00:28:55,344 --> 00:28:59,344
+Kutlamadık. Y1 sıfırdan Y7'ye kadar 8 tane çıkışımdır.
+
+140
+00:28:59,892 --> 00:29:11,472
+Şimdi, olması gereken değerler bunlar. Sadece ve sadece bu değerler varken bir tane sıfır değeri üreteceğim. Bunlar dışında herhangi bir değer varken seçtiğimi çiftçerek tepkir değeri üretmeli.
+
+141
+00:29:11,923 --> 00:29:35,883
+Şimdi burada tüm değerlerimiz tabit olduğu için ve tek bir cihazı seçtiğimiz için bunları uygun sırada bağlamaya çalışalım. Mesela A7 aktif bir değer alması gerekiyor. Dolayısıyla bu A7'ye getirip aktif bir enable ucumuza bağlayabiliriz. Daha sonrasında A6 ve şimdi bir de şu var tabii 1, 2, 3, 4, 5, 6, 7 tane uç var.
+
+142
+00:29:36,276 --> 00:29:45,276
+Burada kaç tane ucu var? 6 tane ucumuz var. Dolayısıyla burada aynı aktiflikte olan iki tane ucu birleştirmemiz lazım.
+
+143
+00:29:45,276 --> 00:29:55,276
+Yani demem o ki 7'yi 6'yı bağladık 5 ve 4'ü birleştirelim diyorum. 5 ve 4'ü birleştirip şuradaki aktif 0 ucuna bağlayacağız.
+
+144
+00:30:00,000 --> 00:30:08,299
+A5 veya A4 sıfırdan farklı bir değer varken bir çıkartan bir logik arıyorum. Bu nasıl bir logiktir? Daha önceki adet çözümlerden yapmıştık.
+
+145
+00:30:13,203 --> 00:30:15,623
+Sadece ve sadece her ikisi de sıfırken.
+
+146
+00:30:19,363 --> 00:30:20,703
+Olur mu hocam?
+
+147
+00:30:21,203 --> 00:30:34,283
+Evet, or kapısı. Dolayısıyla A5 ve A4'ü bir or kapısından geçirerek bunların çıktısını şuradaki aktif sıfır seçim enable ucuna bağladık.
+
+148
+00:30:39,284 --> 00:30:50,004
+A2 ve EMA uçlarını da bu şekilde bağlayacak olursak bizim aradığımız yani bizim için anlamlı olan aktif 0, enabled veya chipset ekstüğü nereden üretilir?
+
+149
+00:30:50,084 --> 00:30:58,224
+Bu da fikir 3'ten hangisinden çıkar bakalım. Şuradaki değerlerimiz 0, 0, 0. Bunlar zaten bizim istediğimiz aralıkta gelirse ne olacaktı bunlar?
+
+150
+00:30:59,059 --> 00:31:13,539
+Çip seçilecekti. Dolayısıyla bu 3x8 dekoder seçilmiş olacaktı. Bizim seçmiş olduğumuz değer de 0, 0, 0. Yani Y0. Bizim seçmiş olduğumuz çip selek, çip selek, PPI ucumuz aslında bu dekoderin Y0 ucuydu.
+
+151
+00:31:13,900 --> 00:31:25,519
+Mesela şunu analiz edelim şimdi. Eğer ki A7 ucuna 0 değil de 1 gelmiş olsaydı ne olur? Bakalım. Mesela şuraya 1 gelmiş olsaydı ne olur?
+
+152
+00:31:25,971 --> 00:31:26,731
+En iyi bu.
+
+153
+00:31:27,188 --> 00:31:32,188
+Pardon, 0 gelmiş olsaydı ne olursa aradığımız değerlerden farklı bir şey varsa ne olacak diyebiliriz.
+
+154
+00:31:32,188 --> 00:31:42,188
+0 gelmişse bu entegre 3x8 dekoder ne olur? Seçilmez. Seçilmediği zaman çıkışların hepsinde bir çıkışı üretir.
+
+155
+00:31:42,188 --> 00:31:51,188
+Dolayısıyla aktif 0 bir seçim ucunda bir değeri varsa seçme işlemini yerine getirmiyor. Dolayısıyla A7 0 ise çıkışımız 1 oluyor.
+
+156
+00:31:51,188 --> 00:31:53,188
+Aynı şey A6 için de geçerli.
+
+157
+00:31:55,188 --> 00:32:12,567
+Sadece A6 için düşünelim. A6'ya 0 değil de 1 değeri gelmiş olsa ne olacaktı? A1, 0 seçim vücut. Yine bunun seçmesi için 0 gelmesi lazım. 1 gelmiş. Yine çiftçerek olmayacak. Çıkışımız yine 1 olacak. Bu da cihazı seçtirmiyor.
+
+158
+00:32:13,268 --> 00:32:32,847
+Şuraya bakalım, bu birleştirdiğimiz uçlardan. Herhangi birisinin sıfır harcıyla bir değer gelmiş olsaydı ne olacaktı? Or kapısı bir yutan eleman, dolayısıyla çıkışımız bir olacaktı. Aktif sıfır seçim ucuna bir geldiği için chip select olacaktı, çıkışların hepsi bir olacaktı. Yine aktif sıfır chip select olduğu için PPI cihazı seçmeyecekti.
+
+159
+00:32:33,683 --> 00:32:41,423
+Şimdi seçim ucuna bağladıklarımıza bakalım. Bunlar seçim ucuna bağladıklarımı, şuradakilerde enable ucuna bağladıklarımıza.
+
+160
+00:32:41,983 --> 00:32:49,284
+Enable uçlarını konuştuk. Seçim uçlarına bakalım. Eğer biz bu ucu aldık, PPI cihazımızın çiftçenekine bağladık.
+
+161
+00:32:49,284 --> 00:33:00,423
+Eğer ki bizim seçim uçlarımıza sıfırdan farklı bir değer gelmiş olsaydı, örneğin 1.0.0 gelmiş olsaydı.
+
+162
+00:33:00,564 --> 00:33:10,384
+Bu durumda Y4'den 0 çıkacaktı fakat Y0'dan 1 çıkacaktı. Bu ne anlama geliyor? Bunların hepsinden 1 çıkacaktı.
+
+163
+00:33:10,867 --> 00:33:37,387
+Sadece Y4'ten 0 çıkacaktır. Bunun anlamı ne? Biz bu ucu, PPI cihazımızın çiftçenekine bağlıdıkça, o uca 1 gelecek. Yani çip seçilmeyecek. Dolayısıyla seçim uçlarına da 0,0 haricinde bir değer geldiğinde de bizim kullanmış olduğumuz, seçmiş olduğumuz seçim ucu Y0 ucuna 1 geldiği için cihaz yine seçilmemiş olacak. Dolayısıyla burada tek bir cihaz için adres sözümleme devresi bu mantık çerçevesinde belirlemiş oluyor.
+
+164
+00:33:38,867 --> 00:33:49,807
+Şunu konuşmamız lazım. Bu cihazımızın uçlarına mikro işlemci tarafından hangi mikro işlemci ve adres sözüleme devresi üzerine hangi uçların bağlantısı yapılması gerekiyor ona bakacağız.
+
+165
+00:33:52,067 --> 00:33:58,567
+Cihazımızı şuraya çiziyorum. Cihazımızın bir tane chip selekti var demiştik. Ondan sonra read write.
+
+166
+00:34:03,827 --> 00:34:15,988
+Bir tane read write ucu var demiştik. Onun haricinde 8 bitlik bir data ucu olduğunu söylemiştik. İki tane adres ucu olduğunu söylemiştik. Bunları A1 ve A0 diyelim.
+
+167
+00:34:17,648 --> 00:34:25,148
+Hala şeyi bilmiyoruz. 80H portaya gidiyor, 81H portaya gidiyor daha onu bilmiyoruz. Çünkü daha bahatli yapmadık.
+
+168
+00:34:26,260 --> 00:34:36,420
+Bunlar var. Karşı tarafta da port uçları var. Port A şöyle yapalım. Port B, Port C diye yazmış olalım.
+
+169
+00:34:36,420 --> 00:34:48,140
+Şimdi biz chipselek değerini ürettik. Diyoruz ki bu dekoderin Y0 ucunu. Bu dekoderin Y0 ucunu getirip, yazımızın chipselek ucuna bağlıyorum.
+
+170
+00:34:51,507 --> 00:35:10,707
+Read-write ucuna ne bağlayacağız? Buraya da mikro işlemcinin read-write uçlarını bağlayacağız. Peki, PPI cihazının A1 ucuna ne bağlayacağız? Buraya A0 ve A1 mikro işlemciden gelen, mesela A0 ucunu bağlayalım. Buraya da mikro işlemciden gelen A1 ucunu bağlayalım.
+
+171
+00:35:11,443 --> 00:35:28,804
+Bu durumda artık adreslerimiz verilendi. Şuradaki 8 ucada mikro işlemciden gelen D0, D7 arasındaki data uçlarını bağlı. Dolayısıyla mikro işlemci ve adresi sözünleme devresi tarafındaki bütün bağlantıları bu PPI cihazı için yapmış olduk.
+
+172
+00:35:35,411 --> 00:35:49,011
+81H adresi, 82H adresi ve 83H adresi, port A yazmacı, port B yazmacı, port C yazmacı ve kontrol durum yazmaçlarından hangilerine ilişkili olsun.
+
+173
+00:35:49,831 --> 00:35:54,851
+80H adresi için mikro işlemcinin A0 ve A1 uçlarının değerleri nedir?
+
+174
+00:35:57,684 --> 00:36:17,963
+Mikro işlemcinin A1 ve A0 işleri nedir diye bakalım. 0, 0'dır. 81H için A1'i 0'dır, A0'ı 1'dir. 82H için A1'i 1'dir, A0'ı 0'dır. 83H için ikisi de 1'dir. Dolayısıyla biz ne yapmış olduk bakın. Şuraya da bir tane şey çizelim.
+
+175
+00:36:19,987 --> 00:36:29,667
+PPI'in A0 ve A1 uçlarına ne bağlanmış oluyor? Şimdi ona bakalım. Mikro işlemcinin A1 ucunda 0, A0 ucunda 0 olduğu için bunları ters sırada bağlamışız yalnız.
+
+176
+00:36:30,228 --> 00:36:44,228
+A1 ve A0 PPI'in A0 ve A1 adres uçlarına yine 0'a 0 gelmiş oluyor. Dolayısıyla 80H adresi ilgili bir komut yürüttüğümüzde bu Port A yazmacına denk geliyor.
+
+177
+00:36:45,652 --> 00:37:02,952
+81H değerini uyguladığımızda adret uygulama, mikro işlemcinin A1'i 1, A00 ama ters sırada bağladığımız için 1'e 0 olacak. 1'e 0 olduğu zaman kimi adresliyordu? Port C'yi adresliyordu. Dolayısıyla 81H adresinde Port C adreslenmiş oluyor.
+
+178
+00:37:05,452 --> 00:37:09,751
+Port C adresi işaret edilmiş oluyor.
+
+179
+00:37:11,315 --> 00:37:15,315
+Bu bağlantıda port 81H ile port C'yi seçmiş oluyoruz.
+
+180
+00:37:15,315 --> 00:37:22,315
+82H'a baktığımızda ise 1'e 0 bağlamışız ama sırası ters olduğu için 0, 1.
+
+181
+00:37:22,315 --> 00:37:31,315
+Dolayısıyla bu da port B'yi seçiyor. 83H ile 1, 1 olduğu için yine sırası değişmiyor.
+
+182
+00:37:31,315 --> 00:37:37,195
+1, 1 oluştu simetrik olduğu için 83H ile kontrol adresini yazmış oluyor.
+
+183
+00:37:37,652 --> 00:37:51,532
+Bu yaptığımız bağlantıya göre bu olumluğunu her nefretmişiz. Ama genel bir kural olarak arkadaşlar, izleyeceğimiz yolun şu olması gerekir. Adres ucu anlam sırasını burada bağlantı anlam sırasında da korumak gerekir. Dolayısıyla...
+
+184
+00:37:56,052 --> 00:37:59,372
+Şimdi bu şeyden iskantıcı, cipkıvay bu orta.
+
+185
+00:38:01,372 --> 00:38:02,572
+Şöyle şuna.
+
+186
+00:38:27,956 --> 00:38:35,355
+Dolayısıyla temel bir kural olarak adres ucundaki anlam sırasını bağlantı anlam sırasında da korumak temel bir kuraldır.
+
+187
+00:38:35,456 --> 00:38:53,956
+Yani dolayısıyla aslında biz buraya PPI'nin A1 ucuna mikro işlemcinin A1 ucunu yine PPI'nin A0 adres ucuna da mikro işlemcinin A0 ucunu bağlamayı temel bir kural olarak belirlemeliyiz.
+
+188
+00:38:53,956 --> 00:38:55,436
+Bu durumda da şu olur.
+
+189
+00:38:56,019 --> 00:39:11,260
+Şurası değil de artık şurada yazacağım olur. 80H, port A'ya tekabül eder. 81H, port B'ye tekabül eder. 82H, port C'ye tekabül eder. 83H ise kontrol ve durum yazmacılar tekabül eder hale gelmiş oluyor arkadaşlar.
+
+190
+00:39:11,987 --> 00:39:20,587
+Bu tek bir cihaz ve tek bir adres sözcüğü ile ilgili durumu özetlemiş oluyor. Şimdi bunu bir adım daha ileri götürelim.
+
+191
+00:39:20,587 --> 00:39:30,987
+Bir sonraki aşamada ise iki tane I.O. cihazının adres sözcüğü ile nasıl yapacağınıza bakalım. Bunun için de şöyle bir örnek verelim.
+
+192
+00:39:38,771 --> 00:39:39,952
+Kaç oldu?
+
+193
+00:39:48,179 --> 00:39:50,659
+Ne oldu? Ne oluyor? C ne oluyor?
+
+194
+00:39:53,420 --> 00:39:58,579
+ACH adresinden itibaren, bu bir sürü soru mu düşünelim şimdi.
+
+195
+00:39:59,659 --> 00:40:02,859
+A8 yapsam daha iyi olacak. Örnek tersine.
+
+196
+00:40:03,519 --> 00:40:07,299
+A8H adresinden itibaren, bu işlemcinin.
+
+197
+00:40:07,299 --> 00:40:11,859
+A8H adresinden itibaren.
+
+198
+00:40:14,036 --> 00:40:30,456
+Ağırlaşık adreslere, PPI bir cihazı ve yine mikro işlemcinin 5.0H, ama bu da çok farklı oldu.
+
+199
+00:40:30,456 --> 00:40:34,195
+A'dan sonra B olsun.
+
+200
+00:40:36,315 --> 00:40:38,836
+B0H.
+
+201
+00:40:41,076 --> 00:40:43,076
+adresinden itibaren
+
+202
+00:40:43,076 --> 00:40:47,076
+ardışık adreslere
+
+203
+00:40:47,956 --> 00:40:51,076
+PPI
+
+204
+00:40:51,076 --> 00:40:55,076
+2 cihazı bağlanmak istemeyecek cihazı bağlanacaktır diyelim.
+
+205
+00:40:59,219 --> 00:41:23,420
+Uygun adres sözümleme devresini 3x8 dekoder, 1 adet 3x8 dekoder ve gerekli basit lojik kapılar ile gerçekleyin.
+
+206
+00:41:27,795 --> 00:41:32,395
+Kapılar ile gerçekleyiniz.
+
+207
+00:41:33,735 --> 00:41:39,275
+Sorumuz bu. Şimdi bu sefer iki tane cihaz var. Ondan doğru bir farklılık oluştuk olacak.
+
+208
+00:41:39,935 --> 00:41:44,235
+Bu sefer bizim hani blok diagram olarak düşündüğümüzde az öncekinde neydi?
+
+209
+00:41:44,335 --> 00:41:51,735
+Az öncekinde buraya kontrol uçları giriyordu, adres uçları giriyordu. Bir tane çipçerek çıkıyordu. Çipçerek bir çıkıyordu.
+
+210
+00:41:54,579 --> 00:42:17,599
+İki tane çipserek çıkması lazım. Yine benzer adres ve kontrolü söyleyecek ama iki tane çipserek değeri eşyalı olarak çıkması lazım. Bunların seçimi mülkü eksklusif olduğu için, ikisi de aynı anda seçim yapamayacağı için ya ikisi de bir olacak ya bunlardan sadece bir tanesi bir sıfır olacak.
+
+211
+00:42:18,356 --> 00:42:27,695
+Bağlantıda bu şekilde olması gerekiyor. Benzer bir mantık çerçevesinde bu adreslerimizi yazarak bunların binary hallerine belirterek ilerleyelim.
+
+212
+00:42:28,316 --> 00:42:29,356
+Bük adresimiz neydi?
+
+213
+00:42:31,735 --> 00:42:32,976
+A8B0.
+
+214
+00:42:34,739 --> 00:42:40,420
+Şimdi öncelikle ikisi de PPI cihazı olduğu için bunlar ay uzayında iki tane adres ucu var bunların her birisi.
+
+215
+00:42:40,539 --> 00:42:45,460
+Demek ki ay uzayında dört bike yer kaplıyor. Yani dört tane adres işgal edecekler.
+
+216
+00:42:45,979 --> 00:42:52,019
+Yani A8H, A8'den sonra A9H gelir. Sonra B0 gelir değil mi?
+
+217
+00:42:54,880 --> 00:42:56,719
+A, A. Gelmez mi hocam?
+
+218
+00:42:57,259 --> 00:43:01,219
+Gelir. Yani gelir de işte sınavda en çok yapılan hatalar bu olduğu için.
+
+219
+00:43:01,748 --> 00:43:25,668
+Bu adres aralığımız bizim PPI, bir cihazımızın adres aralığı. Yine ikinci cihazımız için de B0 demiştik. B0'dan başlıyor. Yine orada 4 tane adres aralığı kaplıyor. B1H, B2H ve B3H adreslerimize tekabül ediyor. Bu da bizim PPI, iki cihazımıza karşılık geliyor.
+
+220
+00:43:26,387 --> 00:43:34,788
+Şimdi bunların biz bu binary hallerini yazacağız. Neye göre yazacağız? Şöyle tavuk yapabilirsek güzelce çok güzel olacak ama bakalım.
+
+221
+00:43:51,347 --> 00:44:05,827
+Adres yüzü, mikro işlemcinin adres yüzü A7, A6, A5, A4, şöyle bir araç yapalım karışmasın. A3, A2, A1 ve A0.
+
+222
+00:44:06,748 --> 00:44:18,547
+Şimdi şurayı bir kalıp çizgiyle çizelim. İki cihaza ayırdığımız yer olacak. Her iki cihaz için adres yüzü dönemeler var olması gerektiğine de bu da iki ayrı bir dök içerisinde karar verdim.
+
+223
+00:44:18,867 --> 00:44:20,488
+A8 olduğu vakit.
+
+224
+00:44:21,988 --> 00:44:23,887
+A8 olduğunda A'yı yazalım.
+
+225
+00:44:24,088 --> 00:44:29,307
+1, 0, 1, 0, 8 ile 1, 0, 0, 0.
+
+226
+00:44:29,928 --> 00:44:31,648
+Bunların hepsi A.
+
+227
+00:44:37,108 --> 00:44:43,428
+1 0 0 1 1 0 1 0 1 0
+
+228
+00:44:44,307 --> 00:44:46,428
+ve bu 8'li tamam.
+
+229
+00:44:47,028 --> 00:44:47,988
+1 1.
+
+230
+00:44:48,827 --> 00:44:49,948
+Adreslerimiz bunlar.
+
+231
+00:44:49,948 --> 00:44:51,868
+Hemen otomatik olarak söyleyebiliriz.
+
+232
+00:44:51,868 --> 00:44:55,548
+Birinci ihtiyacı yazı için adres uçlarına bağlanması gereken
+
+233
+00:44:56,108 --> 00:45:00,748
+mikro işlemciden gelen A0 ve A1 uçları olduğunu görüyoruz.
+
+234
+00:45:00,748 --> 00:45:03,028
+4 farklı akademisi oluşturanlar bunlar.
+
+235
+00:45:03,284 --> 00:45:09,143
+Diğer cihazımızınki yazalım. Bu da B'ymiş. B0. B'de şu olsa gerek değil mi?
+
+236
+00:45:16,244 --> 00:45:28,704
+0'dan itibaren yetmiş, 0, 0, 0, 1, pardon, 0, 0, 0, 1, 0, 0, 0, 1, 1 değerlerimiz var.
+
+237
+00:45:28,704 --> 00:45:39,483
+Burada da görüyoruz ki, mikro işlemciden gelen A0 ve A0 uçlarında yine 2. PPI'nin adres uçlarına bağlamamız gerekiyor.
+
+238
+00:45:40,820 --> 00:45:46,280
+Dolayısıyla, şimdi elimizde iki tane seçim yaptıracağımız senaryo için şunu söyleyebiliriz.
+
+239
+00:45:46,280 --> 00:46:07,460
+Eğer ki A7, 1, A6, 0, A5, 1, A4, 0, A3, 1, A2, 0 ve MIO, 0 ise
+
+240
+00:46:07,956 --> 00:46:32,835
+PPI 1'in seçilmesi lazım. A7 1, A6 0, A5 1, A4 1, A3 0, A2 0 ve MIO 0 iken PPI 2'nin seçilmesi lazım. Bunlar dışında herhangi bir durum varsa hiçbirinin seçilmemesi gerekiyor.
+
+241
+00:46:34,324 --> 00:46:48,963
+Bunlar tekil de olabilir. Yani şu senaryo varsa sadece PPI'de seçilecek, bir senaryo varsa sadece PPI'de seçilecek. İkisi aynı anda seçilemez. Çünkü adres sıfırı aynı anda hem 0-1 hem de 1-0 olamayacağı için ART-A4'te. İkisi aynı anda seçilemez diye bir dememiz gerekiyor.
+
+242
+00:46:48,963 --> 00:46:52,764
+Şimdi adres sözümleme devresine baktığımızda
+
+243
+00:46:53,619 --> 00:47:04,159
+Şimdi farkı oluşturan uçların şunlar olduğunu gördük değil mi? PPI 1 ve PPI 2 arasındaki seçimi yapan uçlar A4 ve A3 uçları.
+
+244
+00:47:04,159 --> 00:47:16,539
+Şimdi bu durumda biz dekoderimizi çizerken iki cihazı birbirinden ayıran adres uçları A4 ve A3 olduğu için bu uçların mutlaka ve mutlaka seçim uçlarında olması gerekiyor.
+
+245
+00:47:17,679 --> 00:47:18,399
+Bunu çizelim.
+
+246
+00:47:25,172 --> 00:47:31,711
+CBA, en yüksek anlamlısı C, sonra B, sonra A.
+
+247
+00:47:31,711 --> 00:47:33,112
+Bakalım bir de çalıştayız.
+
+248
+00:47:36,012 --> 00:47:38,312
+E2A, active 0 enable.
+
+249
+00:47:39,812 --> 00:47:41,852
+E2B, active 0 enable.
+
+250
+00:47:43,352 --> 00:47:50,992
+Y0, Y1, Y2, Y3.
+
+251
+00:47:52,275 --> 00:48:13,975
+Y4, Y5, Y6 ve Y7 çıkışlarımız da buradan evlum. Ne dedik? PPI 1 ile PPI 2'yi birbirinden ayırt edemişler. A4 ve A3. O zaman bunlar kesinlikle seçim uçlarına bağlanacak. A4 ve A3 burada. Yine 7 tane ucumuz var.
+
+252
+00:48:14,579 --> 00:48:34,280
+7 tane ucumuz var. 6 tane girişimiz var. Dolayısıyla yine 2 tanesini birleştirmemiz lazım. Birleştirilecek olanlar A2 ile MI olsun. İkisi de aktif 0 olduğu için aktif 0 üstü yine birleştiriyorum. Hatta bu sefer farklı bir örnek olsun. 2 tane aktif bir ucu birleştirmeye bakalım. Yani A7 ile A5'i birleştirmeye bakalım.
+
+253
+00:48:42,579 --> 00:48:46,519
+İçin bir şey veren bir dojik oluyordu. O dojikte neydi?
+
+254
+00:48:54,612 --> 00:48:58,172
+Her ikisinde birken, lojik bir üretilen bir mantık var. Neydi o?
+
+255
+00:49:03,155 --> 00:49:07,155
+ERN lojiydi değil mi? ERN lojiyi.
+
+256
+00:49:07,155 --> 00:49:16,155
+Dolayısıyla buradan çıkarttığımızda şu oluyor. Ya iki tane aktif bir ucu birleştirebilirim ya da iki tane aktif sıfır ucu birleştirebilirim.
+
+257
+00:49:16,155 --> 00:49:27,980
+İki tane aktif bir ucu aktif bir uçta birleştirebilirim. Aktif bir çıkış verecek şekilde birleştirebilirim. İki tane aktif sıfır girişi aktif sıfır çıkış verecek şekilde birleştirebilirim.
+
+258
+00:49:28,083 --> 00:49:39,884
+İki tane aktif bir girişi bir aktif 0 çıkışı verecek şekilde de kullanabilirim. Yani bunu NAND kapısı yapmamda NAND kapısı yaptığım zaman şu aktif 0 enable'lara da bağlayabilirim.
+
+259
+00:49:40,884 --> 00:49:55,223
+Şunları kullandık. A6'nın 0 olması gerekiyormuş. Aktif 0 uçta. A2'nin yine 0 olması gerekiyormuş. Oraya yine aktif 0 uca bağladım. Bir de MO ucumuz vardı. Onu da 0 olması gerektiği için.
+
+260
+00:49:55,860 --> 00:50:17,500
+seçim uçlarından birine bağlı. Şimdi bizim aradığımız seçim uçları nerede bakalım. PPI 1 için şu 0, bu 1 oluyor. Bu da 0 oluyor. Dolayısıyla enable'ımı sağlanacağı için çıkışımız nerede? 0, 1, 0. Yani Y2'de. Y2, chip select, PPI 1 olmuş oluyor.
+
+261
+00:50:22,164 --> 00:50:32,724
+A3-0, 1-0-0, yani Y4 olmuş oluyor. Dolayısıyla CISCBILG PPI-2, Y4 çıkışında mevcut.
+
+262
+00:50:33,604 --> 00:50:42,084
+İki tane CISCBILG ürettik. Bu CISCBILG'leri iki tane cihazda nasıl kullanacağız diye bakacak olursak. Şimdi iki tane cihazımızı çizelim şöyle.
+
+263
+00:50:46,804 --> 00:50:54,183
+Bu PPI 2 olsun, bu PPI 1 olsun. Bunun da chip select ucu var.
+
+264
+00:50:54,804 --> 00:50:56,804
+Bunun da chip select ucu var.
+
+265
+00:50:56,804 --> 00:51:07,304
+PPI 2'nin chip select ucu Y4'ten gelecek. PPI 1'in chip select ucu Y2'den gelecek.
+
+266
+00:51:09,907 --> 00:51:27,596
+Mikro işlemciden D0, D7 uçları bağlı olacak. Aynı şekilde bunun da data uçlarından mikro işlemciden gelen D0, D7 bağlı olacak. Bunun A1 ve A0 adres uçları var. Mikro işlemciden gelen adres bir ucu bağlı olacak. Mikro işlemciden gelen...
+
+267
+00:51:27,668 --> 00:51:39,628
+A0 ucu bağlı olacak. Yine benzer şekilde A1 ve A0 ucu içinde mikro işlemciden gelen A1 ucuyla mikro işlemciden gelen A0 ucu bağlı olacak. Tek weak write'lar kaldı.
+
+268
+00:51:40,387 --> 00:51:46,867
+Weak write içinde mikro işlemciden gelen weak write ucu bağlı olacak. Benzer şekilde burada da yazalım.
+
+269
+00:51:48,048 --> 00:51:51,668
+Mikro işlemciden gelen weak write ucu bağlı olmuş olacak. Bu sayede
+
+270
+00:51:52,244 --> 00:51:57,923
+mikro işlemci tarafından yapılması gereken tüm bağlantıları burada sağlamış oluyoruz.
+
+271
+00:51:57,923 --> 00:52:11,844
+Buraya kadar olanlarla ilgili bir sorunuz var mı arkadaşlar? Bir ara vereceğim şimdi. Aradan sonra da boyutları farklı olan iki tane IOO cihazı için adres çözümlemeyi nasıl yapmalıyız ona bakacağız. Buraya kadar olanla ilgili bir sorunuz var mı?
+
+272
+00:52:19,635 --> 00:52:26,115
+Yoksa 3'ü 5 geçe kaldığımız yerden devam ediyoruz. 3'ü 5 geçe kaldığımız yerden devam ediyoruz.
+
+273
+00:52:26,115 --> 00:52:27,235
+Çepeye yazıyoruz.
+
+274
+00:52:28,235 --> 00:52:29,476
+Super 5'te.
+
+275
+00:52:37,588 --> 00:52:41,088
+Aradan sonra tekrar, algılımcadan devam edeceğiz.
+
+276
+01:13:55,731 --> 01:14:03,112
+Merhaba arkadaşlar tekrar. Bir artı on dakika eklemde ama aldım verip devam edelim.
+
+277
+01:14:03,851 --> 01:14:20,131
+Şimdi son olarak da bu adres çözümleme ile ilgili iki farklı adres kapasitesine sahip cihazı yine tek bir dekoder kullanarak nasıl adres çözümleme ile kullanabilir diye bakıyor olacağı.
+
+278
+01:14:20,500 --> 01:14:23,539
+Demiştik. Şimdi ona ilişkin bir örneğimizi açalım.
+
+279
+01:14:24,280 --> 01:14:25,680
+Kuluşturalım, beğenmeyi kere.
+
+280
+01:14:31,859 --> 01:14:52,699
+Bu seferki örneğimizi şöyle tanımlayalım. Yine benzer adresler olabilir. Bir mikro işlemcimiz var. Mikro işlemcinin A8H adresinden itibaren, itibaren,
+
+281
+01:14:58,836 --> 01:15:04,836
+Bir ne cihazı yerleştirilmesini, onun adı ne olarak geçiyor? Bir UART cihazı yerleştirilmesini.
+
+282
+01:15:06,515 --> 01:15:10,876
+UART olarak geçmedi isim ama şey olarak geçmiştir, seri haberleşme birimi.
+
+283
+01:15:13,675 --> 01:15:19,115
+Bu vatandaşın bir tane adres ucu vardı. A diye bir tane adres ucu vardı.
+
+284
+01:15:20,336 --> 01:15:24,615
+UART birimi ve yine mikro işlemcini.
+
+285
+01:15:27,572 --> 01:15:42,752
+80H adresinden itibaren, ardışık adreslere, 1, TPI birimine yerleştirilmek isteniyor.
+
+286
+01:15:50,931 --> 01:15:53,051
+Gerekli adres sözünleme devresine.
+
+287
+01:16:02,612 --> 01:16:17,051
+3 x 1 adet yine, 3 x 8 dekoder ve yine gerekli basit lojik kapılar.
+
+288
+01:16:23,028 --> 01:16:24,948
+kullanarak gerçekleyiniz.
+
+289
+01:16:30,644 --> 01:16:37,644
+Burada UART cihazımız bir tane adres ucu var. Bu vatandaş ayı uzayında 2 bayklık yer kaplıyor.
+
+290
+01:16:38,844 --> 01:16:44,484
+Deminden beri örneklerde kullanmış olduğunuz CPI geliştiği ayı uzayında 4 bayklık yer kaplıyor.
+
+291
+01:16:44,484 --> 01:16:51,484
+Şimdi bu tür durumlarda şunu yapmak mümkün olabilir.
+
+292
+01:16:58,515 --> 01:17:04,515
+En düşük adres çözünürlüğüne sahip cihazlar çözünürlüğünde seçim yaptırabiliriz.
+
+293
+01:17:04,515 --> 01:17:12,515
+Veya ikinci adresin en yüksek çözünürlüğe sahip olan cihazın çözünürlüğünde seçim yaptırabiliriz çıkışlarda.
+
+294
+01:17:12,515 --> 01:17:20,268
+Yani bu şu demek, çıkışlarımız her bir seçim ucu değiştiğinde 2 byte'lık bir yer seçiyor olabilir.
+
+295
+01:17:20,532 --> 01:17:28,532
+Veya 4 baytlık yer seçiyor olabilir. Eğer 2 baytlık yer seçiyorsa, bu şekilde ayarlamışsak yani birinci alternatifte...
+
+296
+01:17:30,532 --> 01:17:37,532
+Şimdi nasıl olduğunu bilmiyoruz da, komutcu üzerinden konuşacağım sadece. Çıkışlarımın her birisi...
+
+297
+01:17:39,155 --> 01:17:45,716
+2 byte yer tutuyorsa, 2 byte'lık bir çözümlemeye karşılık geliyorsa veya adres seçimine karşılık geliyorsa
+
+298
+01:17:45,716 --> 01:17:52,115
+demek ki bunlardan bir tanesi UART cihazımızın chip select'i olacak uygun şekilde ayarlamış.
+
+299
+01:17:52,115 --> 01:17:58,515
+Peki PPI cihazımızın 4 byte'lık yer kapliyodu o nasıl karşılık bulacak?
+
+300
+01:17:58,515 --> 01:18:06,595
+Mesela şu çıkış PPI'in 2 byte'ına denk gelirse, şu da diğer 2 byte'ına denk gelirse. Bu ikisini nasıl birleştireceğiz?
+
+301
+01:18:06,899 --> 01:18:09,639
+Ne dersin, aktyırsın, patçıkışlar.
+
+302
+01:18:15,444 --> 01:18:25,624
+Bu veya bu seçildiğinde herhangi birisi aktif olduğunda yani sıfır olduğunda bizim PPI cihazımızın chipset ekleksine sıfır gelmesi lazım.
+
+303
+01:18:25,724 --> 01:18:30,004
+Demek ki bunlardan herhangi birisi sıfır olduğunda sıfır üreten bir lojik arıyoruz.
+
+304
+01:18:31,264 --> 01:18:36,864
+Herhangi birisi sıfır olduğunda sıfır üreten lojiğimizin ismi bu tarafta end kapısı olmuş oluyor.
+
+305
+01:18:38,004 --> 01:18:42,584
+Bu da bizim chipset ekleksiyonu diye yazabiliriz.
+
+306
+01:18:44,275 --> 01:18:55,075
+Diğer bir senaryo, birinin A'sı bu olsun, birinin B alternatifine bakalım. Bu durumda da eğer ki çıkışlarımız aktif bir olmuş olsaydı.
+
+307
+01:19:01,811 --> 01:19:08,372
+ve cihazlarımızın seçim uçları da yine aktif bir chip select olmuş ortak, böyle bir senaryo olmuş ortak.
+
+308
+01:19:08,372 --> 01:19:15,332
+Yine uçlardan bir tanesi doğrudan U artı chip select olacak. Çünkü her bir uç 2 byte'e tekabin ediyor.
+
+309
+01:19:15,332 --> 01:19:25,971
+Fakat şu mesela PPI'nin 2 byte'ı, bu da PPI'nin diğer 2 byte'ı. Ne arıyoruz? Bunlardan herhangi birisi 1 olduğunda çıkışı 1 olan bir lojik.
+
+310
+01:19:30,612 --> 01:19:38,612
+bir tane OR kapısıyla bunları birleştirmek gerekecek ve bu da bizim chip select EPI'yımız olmuş olacak.
+
+311
+01:19:39,612 --> 01:19:47,612
+Hangi senaryoda bu geçerli? Cihazların chip select'i aktif birken ve dekoder çıkışlarımız aktif birken bu senaryo geçerli.
+
+312
+01:19:48,612 --> 01:19:51,612
+Cihazlarımızın chip select'leri aktif tuturken,
+
+313
+01:19:52,948 --> 01:19:58,228
+Aktif 0 iken ve aktif 0 çıkışlı bir dekoder kullanıyorsak bu senaryo geçerli.
+
+314
+01:19:58,788 --> 01:20:08,548
+2 dediğimiz senaryoda ise dekoderimiz var. Aktif 0 çıkışlı olsun yine.
+
+315
+01:20:12,435 --> 01:20:39,695
+Bu çıkışların her birisi 4 byte. Dolayısıyla çıkışlardan bir tanesi artık chip select, PPI olarak düşündüğümüz yer. Ama şu uçlardan bir tanesi de UART'ın chip select'inin normalde 4 byte yer. Bunun iki tanesi şeyle ilgili. UART cihazımızın adres aralığıyla ilgili. O zaman bunu nasıl küçültüleceğiz? Mesela bu tarafta kullanmadığımız ama
+
+316
+01:20:40,692 --> 01:20:48,511
+UAT cihazının adres aralığını belirlemekte etkin olan bir tane uç var. Mesela A2 numaralı uç diyelim. Burada kullanmadık bunu.
+
+317
+01:20:49,572 --> 01:20:55,951
+A2 ucunun, dolayısıyla burası A2 ucunun hem 1 hem de 0 olduğu durumları içerisine alıyor.
+
+318
+01:20:55,951 --> 01:21:03,431
+O zaman ben burada A2'nin 0 olduğu durumu ele almak istersen o zaman şöyle bir çipiş kullandığımda burası.
+
+319
+01:21:05,395 --> 01:21:14,995
+Şu artık A2 eşittir 0 iken, şu 4 byte'lık aralığı A2'sinin 0 olduğu 2 byte'lık kısma tekabül edelim.
+
+320
+01:21:14,995 --> 01:21:19,395
+Dolayısıyla bu da chips-align var diyebiliriz.
+
+321
+01:21:19,395 --> 01:21:24,108
+Bu tarafta kullanmadığımız öyle bir alpütücü kalıyor ki geriye.
+
+322
+01:21:24,372 --> 01:21:31,352
+Buradaki çıkışların her birisi, mesela A2 diyelim, somut örnek, A2'nin hem 0 hem 1 olduğu senaryo ile tekabül ediyoruz.
+
+323
+01:21:31,452 --> 01:21:38,372
+4 durumdan, ikisinde A2 0, ikisinde A2 1. Ama bizim o artımız...
+
+324
+01:21:38,399 --> 01:21:52,619
+Bu aralıkta yani vermiş olduğumuz 4 bayitlik aralığın sadece A2'sinin 0 olduğu kısımda aktif olmalı. Dolayısıyla A2'nin 0 olduğu kısımla bunu limitlemek istediğimizde bir or kapısında bunları belirleyicidir. Ne demek bu?
+
+325
+01:21:53,119 --> 01:22:03,260
+A2'de 0 iken, şuradaki adres değerlerine göre seçim de uygun iken 2 bayitlik bir kısma 4'ten 2'ye bunu düşürmüş oluyoruz. İkinci alternatifte.
+
+326
+01:22:04,212 --> 01:22:08,032
+Bu şekilde bir çözüm gerçekleştirmek diyebiliriz.
+
+327
+01:22:16,083 --> 01:22:20,884
+Burada adres değerlerimiz neydi? A8 ve 80, A8 ve UART var.
+
+328
+01:22:22,003 --> 01:22:23,923
+Yine adres aralıklarımızı yazalım.
+
+329
+01:22:25,224 --> 01:22:29,604
+A8H ve A9H bizim UART adres aralığımız.
+
+330
+01:22:30,503 --> 01:22:31,304
+Diğeri de 8.
+
+331
+01:22:33,423 --> 01:22:35,564
+Diğeri içinde 4 bayit yer kaplıyor.
+
+332
+01:22:35,564 --> 01:22:41,003
+80H, 81H, 82H ve 83H adresi.
+
+333
+01:22:41,844 --> 01:22:44,844
+Bu da bizim PPI cihazımızın adres aralığı.
+
+334
+01:22:44,844 --> 01:22:51,344
+Burada adres değerlerini yazacak olursak 7, 6, 5, 4, 3, 2, 1, 0 diye gidelim.
+
+335
+01:23:14,131 --> 01:23:19,571
+0 0 0 1 0 0 0 1 1
+
+336
+01:23:20,451 --> 01:23:22,611
+Şimdi bir takım şeylere dikkat edelim.
+
+337
+01:23:22,611 --> 01:23:28,611
+UART cihazımız Ayo uzayında 2 baytık yer kaplıyor ve bunun bir adres ucu var.
+
+338
+01:23:28,851 --> 01:23:34,851
+Peki bu UART'ın adres ucuna A0'dan A7'ye kadar olan uçlardan hangisini bağlamamız lazım?
+
+339
+01:23:35,055 --> 01:23:46,655
+A8 ve A19 filminden ayırt eden uç, gördüğünüz gibi A0'miş. Demek ki U artı adres ucuna mikro işlemcinin A0'unu var.
+
+340
+01:23:47,195 --> 01:23:55,415
+PPI için durum aynı değil, öncekilerle aynı şekilde değişen bir şey yok. Dolayısıyla PPI'ın, bunun iki tane adres ucu vardı.
+
+341
+01:23:56,735 --> 01:24:01,695
+Bu iki adres ucuna da bağlayacağımız değerler mikro işlemcinin A0 ve A1'iymiş.
+
+342
+01:24:02,420 --> 01:24:15,700
+Şimdi burada her ikisi için ortak olanlar ve ayırt edici olanlar var. Baktığımız zaman A5 ve A3, Juan ve PPI'yi birbirinden ayırıyor.
+
+343
+01:24:23,572 --> 01:24:49,631
+Dolayısıyla A3 ve A5'i seçim üçlerine bağlayacağız. Geri kalanlar, yani bu aralık için A7, 1 olmalı. A6, 0 olmalı. A4, 0 olmalı. A2, 0 olmalı. Kaç oldu? 1, 2, 3, 4, 5, 6. Bir tane daha kullanalım.
+
+344
+01:24:56,595 --> 01:25:13,875
+Şimdi iki tane alternatif anlatmıştık ya şurada. Bu alternatiflerden ilki için yapalım. Yani düşük çözünürlükteki durum için. Burada da bakacak olursak M1'i de 0 olması lazım diyoruz.
+
+345
+01:25:16,787 --> 01:25:43,727
+0 ve 1 değerlerini almış BPI için ama UART için 0 değerini almış. Dolayısıyla aslında A1'in durumları da bir ayırt edici durum. Yani seçici durum. Dolayısıyla A1'i de seçim uçlarından birine bağlamamıyoruz. Dolayısıyla A1, A3, A5 seçim uçlarına bağlarsak çıkışlarımızın her birisi 2 byte çözünürlükte olacak. Yani A1 senaryosuna ilişkin bir durum oluşturulacak.
+
+346
+01:25:45,108 --> 01:25:48,228
+Şimdi dekoderimizi çizerek bunu yerleştirelim.
+
+347
+01:25:56,659 --> 01:26:08,939
+Bu anlam sırasını koruyalım. C, B, A diye gidiyor. Anlam sırasını korumak demek şu demek. En anlamlısı A5, sonra A3, sonra A1 değerlerini bağladık.
+
+348
+01:26:08,939 --> 01:26:15,939
+Şimdi bu durumda 1, 2, 3, 4, 5, 6, 7, 8 tane uç var. Dolayısıyla biz 2 tane...
+
+349
+01:26:16,384 --> 01:26:40,384
+Ucu birleştirmemiz lazım. Onu da fark etmemiz gerekiyor. A1 aktif bir seçim ucu. A2A ve E2B aktif 0 seçim ucu. A7 aktif bir. Dolayısıyla şuraya A7'yi doğrudan bağlayalım. A6 ile A4'ü birleştiriyorum. Or kapısını birleştirebiliyorduk.
+
+350
+01:26:40,756 --> 01:26:51,515
+Şu şekilde yaptık diyelim. Ve benzer şekilde A2 ile MIO'yu da birleştirdik. Bunları da yine bir ork kapısıyla birleştirdik.
+
+351
+01:26:52,336 --> 01:26:59,376
+Şimdi buradan elde ettiğimiz çıkışların her birisi 2 byte'lık bir yere tekabül ediyor. Şöyle bakalım hatta.
+
+352
+01:27:07,859 --> 01:27:25,739
+Y4, Y5, Y6. Şimdi burada U artı kendisine denk gelen kısım, hangi çıkışta var diye bakacak olursak, U artı seçebilmemiz için A5'in 1 olması lazım.
+
+353
+01:27:25,739 --> 01:27:33,739
+A3'ün 1 olması lazım. A1'in 0 olması lazım. Bunlar zaten çift çelektiği sağladığı için bunlar uygun değerli diye kabul edebilirim.
+
+354
+01:27:34,963 --> 01:27:57,463
+Yani 6 yaptı. Şu, G7 yazmıyor. Yani burası bizim CIPSELEK UAR. Peki hangi adres aralıklarını seçiyor? A8 ve A9H adreslerinde bir işlem varsa burası aktif oluyor. A8 ve A9 adreslerinde bu 3 aktif oluyor.
+
+355
+01:28:02,676 --> 01:28:12,136
+A1'in 0 ve 1 olduğu iki ayrı satır var ya, dolayısıyla PPI'in düşük adresli iki byte'ı nerede ona bakabiliriz.
+
+356
+01:28:12,775 --> 01:28:25,676
+A5'im 0, A3'üm 0, A1'im 0. Dolayısıyla G0 hangi adres aralıklarını yapmış oluyor? 80 ve 81 haşı yapmış oluyor. Yarısı burada.
+
+357
+01:28:25,676 --> 01:28:28,176
+Şimdi şu yarısı için bakalım.
+
+358
+01:28:28,692 --> 01:28:40,291
+Burada A5, 0, A3, 0, A1, 1 o da şuradan çıkmış. Bu adreste 82 ve 83H aralığına tekabül ediyor. Şimdi bu ikisini birleştireceğiz.
+
+359
+01:28:40,979 --> 01:29:01,459
+Ben 80 ile 83 aşağı arasında bir işlem yaptığımda ya bu aktif olur ya bu aktif olur. İkisi aynı anda aktif olamaz. Demek ki aradığım bunlardan herhangi birisi sıfır olduğunda sıfır üreten lojik yani end kapısıydı. Bu şekilde birleştirdiğimde buradan çıkışta chip select şöyle diyelim birazcık şu kaydıralım.
+
+360
+01:29:09,140 --> 01:29:18,079
+ucu olarak karşımıza çıkmış oluyor. Mesela burada Y4 numaralı ucun seçtiği adres aralığı nedir diye tersten bir soru sorsak ne olacak?
+
+361
+01:29:18,800 --> 01:29:34,500
+Y4'ün aktif olabilmesi için A7'nin 1 olması gerekiyor. A6'nın 0 olması gerekiyor. 4 yazabilmemiz için 1, 0, 0. Demek ki A5'in 1 olması lazım.
+
+362
+01:29:36,688 --> 01:29:38,688
+şurada 0 olması lazım.
+
+363
+01:29:39,688 --> 01:29:43,688
+A3 nerede? A3 burada 0 olması lazım.
+
+364
+01:29:43,688 --> 01:29:46,688
+4'ü şuraya yapmıştık çünkü. 0 olması lazım.
+
+365
+01:29:46,688 --> 01:29:49,688
+A2'ye bakıyorum. A2 şurada.
+
+366
+01:29:49,688 --> 01:29:51,688
+0.
+
+367
+01:29:51,688 --> 01:29:53,688
+A1 ne olmalı?
+
+368
+01:29:53,688 --> 01:29:55,688
+A1'de 0.
+
+369
+01:29:55,688 --> 01:29:57,688
+Emoyo'da 0.
+
+370
+01:29:57,688 --> 01:30:00,688
+Dolayısıyla bu cihaz hangi adresleri seçiyor?
+
+371
+01:30:00,688 --> 01:30:03,688
+A0'ı 0'da olabilir, 1'de olabilir.
+
+372
+01:30:05,076 --> 01:30:22,015
+A0 ve A1 adreslerini seçmiş oluyor. Burası A0 ve A1 adreslerinin seçiminin yapıldığı uç olarak karşımıza çıkıyor. Tersten değerlendirdiğimizde de bu şekilde bunu anlamamız gerekiyor arkadaşlar.
+
+373
+01:30:24,515 --> 01:30:32,175
+Diğer alternatifi yapabilmek için de A1'i bu sefer seçiminde kullanmayacağız. Onu da yapalım şurada.
+
+374
+01:30:34,899 --> 01:30:35,559
+Evet, ederim.
+
+375
+01:30:40,435 --> 01:30:45,435
+Ne yapacaktık yani? 4 byte çözünürlükte
+
+376
+01:30:51,060 --> 01:30:52,420
+Çıkışları kullanacağız.
+
+377
+01:30:56,020 --> 01:31:03,400
+Bunun için A1 seçimde ve Enable'da kullanılmıyor.
+
+378
+01:31:09,427 --> 01:31:20,907
+A1'i daha sonra 4 baytelik seçimler yapar uçlardan birisini limitlemekte kullanacağız. Dolayısıyla bizim aradığımız durumda A5 ve A3 seçim uçlarına mutlaka bağlanmalı.
+
+379
+01:31:26,387 --> 01:31:41,467
+Çünkü, şuradaki A8'den itibaren başlayan 4 bayislik adreslerde, 80'den itibaren başlayan 4 tane adres değerini birbirinden ayırt eden adres değerleri A3 ve A5 üzerinden gerçekleştiriyor.
+
+380
+01:31:43,007 --> 01:31:52,708
+Bununla birlikte, A7, 1 olarak, A7, 1 değeriydi. A6, 0 değeriydi.
+
+381
+01:31:53,268 --> 01:32:01,268
+A4 sıfır değeriyle, A2 sıfır değeriyle ve MIO sıfır değeriyle enay buluşlarında olmalı.
+
+382
+01:32:04,659 --> 01:32:09,199
+Bunları belirledikten sonra devremizi çizelim.
+
+383
+01:32:15,796 --> 01:32:42,416
+CBA, E1, E2A, aktif 0, enable ucu, E2B, aktif 0, enable ucu. Diğerlerin hepsini çizmeyeceğim. Şimdi ne demiştik? A5, mikro işlemcikten gelen A5 ucu ve mikro işlemcikten gelen A3 ucu seçim uçlarında olmalı.
+
+384
+01:32:42,931 --> 01:32:50,791
+Getirelim A6'yı da buraya bağlayalım. Geriye kalan uçlarda A7 aktif 1 olması gereken E1'e bağladım.
+
+385
+01:32:50,992 --> 01:33:06,951
+A6'yı kullandık. 4 ile 2'yi birleştirelim. A4 ve A2'yi birleştirelim. İkisi de 0 iken 0 çıkışı almamız lazım. Dolayısıyla orkası da birleştirebiliriz. Burada da MIO'yu birleştirebiliriz.
+
+386
+01:33:07,444 --> 01:33:24,484
+Şimdi bu durumda bizim istediğimiz aralıkta yani mesela U'arkı için A5-1, A3-1 olmalı. A5-1, A3-1, A6 ama 0 olacak. Dolayısıyla bizim çıkışımız Y6'dan bir çıkış elde etti.
+
+387
+01:33:25,084 --> 01:33:32,104
+Y6'dan elde ettiğimiz çıkış hangi aralıklar için seçim yaptırıyor? 4 bayitlik bir seçim yaptırıyor. Normalde bu.
+
+388
+01:33:35,123 --> 01:33:37,244
+A mıydı ya? Unutayım bir adresi.
+
+389
+01:33:37,244 --> 01:33:38,724
+A8.
+
+390
+01:33:39,564 --> 01:33:48,724
+Bu çıkışımız A8, A9, AA ve AB adreslerini seçtiriyor.
+
+391
+01:33:48,923 --> 01:33:51,363
+Halbuki bizim aradığımız sadece şu aralık.
+
+392
+01:33:52,083 --> 01:34:14,003
+Sadece bu aralıkta bir işlem geldiğinde seçim yaptırmamız. Yani AA adresi ile ilgili bir komut ürütlüğümüzde bizim U artımız seçilmemeli. Burası U artın adres aralığı şu. A8, A9. Ama 4 bitlik çözünürlük yaptığım için A8'den itibaren başlayan 4, 5, 5'e gelen adresle seçim yaptırılıyor.
+
+393
+01:34:14,203 --> 01:34:19,564
+Şey için bakalım şimdi, PPI için bakalım. Orada A5 ve A3 0 olmalı.
+
+394
+01:34:20,627 --> 01:34:43,587
+A5-0, A3-0, A6-0 yani 0 çift. O zaman Y0'mız için kesinlikle çip selek PPI. Bunu bulduk. Peki bunu nasıl daraltacağız? Nasıl daraltmamız lazım? Bu aralıktayken bakın bizim ilgilendiğimiz A8-A9 aralığında A1'in her zaman için 0 olması gerekiyor. Dolayısıyla
+
+395
+01:34:47,731 --> 01:34:59,932
+Bu çıkışı A1'deki değerle bir or kapısından geçirerek kullanırsak elde ettiğimiz çıkış sadece artık A8 ve A9 adreslerini seçse.
+
+396
+01:35:00,692 --> 01:35:11,771
+Mesela A1'in 1 olduğu duruma gelelim. A1, 1 ise normalde neyi seçtirmesi lazım? A, A ve A, B'yi seçtirmesi lazım. A1, 1 ise or kapısının çıkışı 1 olacağı için
+
+397
+01:35:12,243 --> 01:35:33,503
+CISCB1 geldi. Active 0, CISCB1 olduğu için seçmeyeceğiz. Ama A0'a 0 geldiğinde, buradan da 0 geliyor. Yani bu A8'e itibaren artışık 4 adres ve A1'in 0 olduğu durum dediğimizde bu bize A8 ve A9'u seçiliyor.
+
+398
+01:35:37,844 --> 01:35:49,443
+belirtebileceğimiz seçim ucu olmuş oluyor. Burada bir de şeyden bahsedelim. Bu mikro işlemci tarafına yapılacak bağlantılardan bahsedelim.
+
+399
+01:35:51,943 --> 01:36:01,443
+Bu cihaz için. İşte data uçlarımız vardı. Sekiz tane. Mikro işlemcinin D0, D7 uçları buraya bağlı.
+
+400
+01:36:01,492 --> 01:36:21,420
+Bu PPI için olsun. Bunun A1 ve A0 işleri var. Bağlantımızı mikro işlemcinin A1 ve mikro işlemcinin A0 şeklinde yapalım. Bu durumda ne olmuş oldu? Adreslerimize ne diye gidiyoruz bizlerce? 80'den mi? 80'den mi?
+
+401
+01:36:22,452 --> 01:36:30,452
+80'de port A var, 81'de port B var, 82'de port C var, 83'de control status var.
+
+402
+01:36:30,452 --> 01:36:41,452
+Bunun chip selectine, hangi mantık olursa olsun 3 tane alternatif yaptık. Bu 3 alternatiften herhangi birisini bağlayabiliriz.
+
+403
+01:36:41,452 --> 01:36:47,452
+Read right ucuda da mikro işlemciden gelen.
+
+404
+01:36:47,731 --> 01:36:50,931
+mid-drive ucunu bağlıyoruz. Bu PPI için bu şekilde.
+
+405
+01:36:50,931 --> 01:36:57,731
+UAT cihazına baktığımızda ise yine bu cihazımızın da
+
+406
+01:36:59,988 --> 01:37:17,268
+8 bitlik data ucu var. Buna da yine mikro işlemcinin D0, D7'sini bağlıyoruz. Yani bir bas geliyor, 8 bitlik data bas geliyor. Bu data bas hem buraya giriyor hem de çoğullanarak buraya dahil oluyor. Ama iç sayınlandı aktif olmadığı için mikro işlemci bunlardan sadece bir tanesi de çıkışıyor.
+
+407
+01:37:17,268 --> 01:37:27,128
+Adres ucuna mikro işlemcinin A0'unu bağlıyoruz. ChipSelect ucuna ChipSelect UART diye üretmiş olduğumuz ucu bağlıyoruz.
+
+408
+01:37:28,115 --> 01:37:39,895
+Son olarak, re-drive ucuna da mikro işlemciden gelen re-drive uclarını bağlayarak bu cihazların mikro işlemci tarafına yapılmış olan bağlantılarını göstermiş oluyorlar.
+
+409
+01:37:40,495 --> 01:37:52,115
+Dolayısıyla bu haliyle düşük adres kapasitesine sahip olan I.O. cihazlarının bir, iki veya daha fazla miktarda olan halleri için
+
+410
+01:37:52,595 --> 01:38:03,115
+Dekoder kullanarak bir adres çözünürme devresi nasıl yapılır? Farklı çözünürlükteki adres aralıkları nasıl seçilirilir? Bunlara ilişkin bir örnek yapmış olduk.
+
+411
+01:38:04,216 --> 01:38:09,956
+Daha karmaşık adres aralıkları için bu şekilde dekoderle arzış kadresler üretmek zor olacağı için
+
+412
+01:38:10,368 --> 01:38:22,368
+PAL, PLA gibi programlanabilir lojik entegreler kullanılarak bu adres sözünleme devresinin ne gerçekleştirilir diyebilirim.
+
+413
+01:38:22,368 --> 01:38:32,368
+Onun haricinde buraya kadar olan kısım ve ilgisi olmak istediğiniz bir şey varsa onları alalım. Var mı arkadaşlar buraya kadar olan ve ilgisi olmak istediğiniz bir şey?
+
+414
+01:38:32,368 --> 01:38:35,756
+Bu konu anlaşıldı mı? Önemli.
+
+415
+01:38:43,859 --> 01:38:44,659
+Bu konu önemli.
+
+416
+01:38:47,619 --> 01:38:48,500
+Soru yok.
+
+417
+01:38:51,059 --> 01:38:54,920
+Öyleyse, I.O. cihazlarıyla ilgili konumuzu kapatmış oluyorum.
+
+418
+01:38:55,719 --> 01:39:02,260
+Şimdi önümüzdeki hafta itibariyle, önümüzde 2 hafta zaten 19 Mayıs oluyor. Ders yok önümüzdeki hafta.
+
+419
+01:39:02,859 --> 01:39:10,079
+Sonraki haftalarda da bir tane kısa sınavımız ve en son haftada sanırım ödevimiz var.
+
+420
+01:39:11,188 --> 01:39:26,528
+Ödevimiz yine cache'lerle ilgili olacak diye düşünebiliriz. Kısa sınavda da ayın 26'sı oluyor sanırım. Ayın 26'sındaki sınavda da o günde dahil olmak üzere işlediğimiz tüm konular sınavda sorumlu olacaksınız.
+
+421
+01:39:26,528 --> 01:39:38,728
+Kısa sınavda sorumlu olacaksınız. Yine sınavı dersin son saatinde yaparız. Yani ne olmuş oluyor? 4 ile 5 arasında kısa sınavımızı tanımlarız. Yine birinci kısa sınavda olduğu gibi.
+
+422
+01:39:39,188 --> 01:39:51,288
+Test üsülü olma ihtimali çok yüksek. Dediğim gibi, o haftaki konular da dahil olmak üzere. Vizeden sonraki konular çok da ağırlıklı olacağı şekilde kısa sınavımızı yapıyor olacağız.
+
+423
+01:39:51,288 --> 01:40:04,288
+Şimdi başka soracağınız bir şey yoksa bir noktada ben bir sonraki konu olan cache mantığına geçiyor olacağım. Var mı tekrar bir konu sorayım sorunuz?
+
+424
+01:40:21,716 --> 01:40:23,556
+Yok, tamam, devam edelim şimdi.
+
+425
+01:40:25,015 --> 01:40:37,596
+Bir mikro işlemcili sistem içerisinde arkadaşlar, bizim bir hafıza hiyerarşimiz var. Bunu daha önce güzel saygıda konuşmuşuz sanırım. Birinci noktada bizim ikinci hafıza birimlerimiz var.
+
+426
+01:40:41,076 --> 01:40:42,956
+Bunlar magnetikti.
+
+427
+01:40:46,931 --> 01:41:14,811
+CD, DVD gibi gibi şeyler. Bu cihazların kapasitesi genel olarak yüksek, büyük boyutlu kapasitelere sahipte. Fakat bunların erişim süreleri küçük. Şurası boyut olsun. Şurada erişim süresi olsun. Bunların hem boyutları yüksek hem de erişim süreleri yüksek.
+
+428
+01:41:15,956 --> 01:41:25,796
+Dolayısıyla şöyle bir şey çizmiş olalım. Her ikisi için de aynı olacakmış zaten. Pardon. Erişim süresi de boyutta yüksek.
+
+429
+01:41:28,496 --> 01:41:33,435
+Daha sonraki hiyerarşisine gelen birimlerimiz ana bellekler.
+
+430
+01:41:37,908 --> 01:42:00,807
+Temel olarak bir program çalışabilmesi için bunun ana bellere yüklenmesi lazım. Oradan yürütülüyor yani aslında. Dolayısıyla kapasite kısmen düştü. Erişim süresi de biraz kısaldı. Daha kısaldı. Normalde mikro işlemci emekli işlem bir konutu veya bir programı yürütmek istediği zaman
+
+431
+01:42:01,587 --> 01:42:05,987
+Gidip ana bellekten bunları çekmesi lazım. Normalde böyle bir süreç işliyor.
+
+432
+01:42:05,987 --> 01:42:12,987
+CPU dediğimiz şey gidip ana bellekte bir yeri adresleyip getirip bunu çalıştırması lazım.
+
+433
+01:42:16,404 --> 01:42:40,484
+Ama bu ana bellekten erişim süresi, sizinle hafta birilerine göre görece düşük ama çok da düşük değil. Yani daha iyi optimize edilebilir. Dolayısıyla arada bir cache yapısı var, ön bellek. Bu ön bellek yapısı daha küçük bir kapasite ama erişim süresi daha yüksek.
+
+434
+01:42:41,652 --> 01:43:09,032
+Hatta bu önbelliğe baktığımız zaman şöyle mimariler var. Multi core sistemlerde bir işlemcimiz olsun. Bu işlemcinin içerisinde core 1, core 2, core 3 diyelim mesela. Her birisinin kendi L1 ve L2 seviye cache'leri mevzul bir olacak. Kendilerine ait L1, L2 seviye cache'ler var.
+
+435
+01:43:10,068 --> 01:43:27,928
+Bunun haricinde bir de ortak bir L3 seviye cache var. Ortaklaşa kullanılan bir cache var. Dolayısıyla bu cache yapısı, ön bellek yapısı dediğimiz zaman kabaca böyle bir mimari, çok seviyeli bir mimari hakkında gelmek lazım.
+
+436
+01:43:27,928 --> 01:43:35,528
+Yine memory hiyerarşisi içerisindeki son kısım ise şöyle çizeceğimiz yazmaçlar.
+
+437
+01:43:38,260 --> 01:43:51,260
+Yazmaçların erişim süresi düşük, kapasite ve boyutları düşük. İkinci nabıda bölümlerin erişim süresi de yüksek, boyutları da yüksek.
+
+438
+01:43:52,920 --> 01:44:03,200
+Dolayısıyla böyle bir mimari var. Yani CPU'ya yaklaştıkça hem kapasiteler düşüyor, hem üretim maliyetleri artıyor.
+
+439
+01:44:03,712 --> 01:44:19,312
+Hem de erişim süreleri kısalıyor. Ön bellek niçin avantajlıydı? Ön bellek, CPU gidip de ana bellekten bir yere adreslemek istediği zaman görece fazla zaman harcıyor.
+
+440
+01:44:19,312 --> 01:44:28,112
+Ama bir paternimiz var bizim yazmış olduğumuz kodlarda bir paternimiz var genel olarak ortalamada, istatistik olarak ne derseniz artık.
+
+441
+01:44:30,515 --> 01:44:40,975
+Ere işlemleri yapıyoruz, dizi işlemleri yapıyoruz. Dizi işlemleri yaptığımız vakit bu genelde dizilerin hafızadaki yerleşimleri ardıçık oluyor dizi elemanlarının.
+
+442
+01:44:41,315 --> 01:44:48,655
+Hani ben şu göze eriştiysem bir sonraki çevrimde büyük ihtimal şunlara erişeceğim ve bir sonraki çevrimde buna erişeceğim.
+
+443
+01:44:48,655 --> 01:44:54,336
+Dolayısıyla bu yakın komşuluk benim tekrar erişimime dair bir gösterge.
+
+444
+01:44:56,243 --> 01:45:20,123
+Benim işte bir aggregator olsun, toplama değerini biriktirdiğim bir değişken, ben buna eriştim. Bir sonraki cycle'da tekrar bunun üzerine değer yazacağım. Sonra tekrar buna değer yazacağım, tekrar bunu inceleyeceğim. Dolayısıyla burada görmüş olduğunuz gibi konumsal komşuluk, yani spatial lokalite.
+
+445
+01:45:24,851 --> 01:45:31,551
+Veya farklı zamanlarda aynı hücreye erişeceğim. Yani zaman konuşuluğu veya temporal lokalite.
+
+446
+01:45:35,539 --> 01:45:49,539
+Üzerinden şunu söyleyebiliriz. Bizim yapmış olduğumuz kodların istatistiki özelliklerine dayanarak arada ana belleğe göre görece küçük. Fakat erişim hızı daha yüksek bir ara bellek kısmı koyarsa...
+
+447
+01:45:50,047 --> 01:46:15,807
+Ve ben bir erişim yapmak istediğimde, örneğin ben şu noktaya erişmek istiyorum. Ama sadece bunu ön belliğe taşımakla yetinmiyorum. Bir komşuluğunu da ön belliğe taşırsam, yani şuradaki komşuluk videonu komple taşırsam, bir sonraki erişimim, bunu CPU'dan, CPU ön bellekten okutmuş olsun. Bir sonraki erişimim için artık CPU gidip önce ön belliğe baktığı zaman veriyi burada bulabilir.
+
+448
+01:46:16,787 --> 01:46:24,027
+Dolayısıyla ortalama erişim sürelerini arttıran bir yaklaşım ön bellekli cache için elde edilmiş olacak.
+
+449
+01:46:25,087 --> 01:46:35,027
+Dolayısıyla bu memory hiyerarşisi çerçevesinde boyutlar, erişim süreleri, üretim maliyetlerini bu şekilde ifade edebiliriz.
+
+450
+01:46:35,827 --> 01:46:42,487
+Burada cache tarafında görmüş olduğumuz durumun bir benzeri de ikinci hafıza birimleriyle ana bellek içinde geçerli.
+
+451
+01:46:43,188 --> 01:47:06,891
+Normalde düşünelim ki işletim sistemi yüklendi. Belirli bir takım programlar çalışıyor. Ana belleğin pek çok kısmı dolu. Bir boş alan var. Ama bu boş alanda benim çalıştırmak istediğim programın işte belirli bir kısmına tekabül ediyor. Ancak şurasına tekabül ediyor. O zaman ne yapacağız? O zaman yer varsa...
+
+452
+01:47:06,931 --> 01:47:19,992
+Bir boşluk varsa, bir sayfa boşluğu varsa, bu ana programımın, benim çalıştırmak istediğim programın belirli bir adres bloğunu alacağım, ana belliğe yükleyeceğim.
+
+453
+01:47:21,011 --> 01:47:28,431
+Daha sonra bunu çalıştırdım, bitirdim. Artık ana bellekte hiç boş yer kalmadı. Ama benim şuraya geçmem lazım. Bu durumda ne yapacağım?
+
+454
+01:47:31,167 --> 01:47:38,167
+Bir tanesini kaldırmam gerekiyor. Neye göre kaldıracağım? Uzun süre boyunca hiç kullanılmamış bir sayfa var. Kaldırabilirim.
+
+455
+01:47:38,167 --> 01:47:45,167
+Ana belliğe ilk yüklenen, mevcutlar içerisinde en eski yüklenen sayfa var. Onu kaldırabilirim.
+
+456
+01:47:45,167 --> 01:47:46,987
+Veya...
+
+457
+01:47:47,636 --> 01:48:01,136
+Erişeli çok uzun zaman olmamış olabilir ama sıklık olarak en az erişilen ortalamada, sıklık olarak erişilen en az sayfa hangisi ise onu kaldırıp sıradaki sayfayı oraya yükleyebilirim ve çalıştırabilirim.
+
+458
+01:48:01,136 --> 01:48:12,136
+Dolayısıyla yine benzer bir durum yani ana bellek cache ve memori arasındaki optimizasyonun bir benzeri.
+
+459
+01:48:16,884 --> 01:48:18,884
+Memory arasında da var.
+
+460
+01:48:20,884 --> 01:48:27,884
+Buradaki işlem cache memory kullanımı, buradaki işlem ise virtual memory kullanımı olarak isimlendir.
+
+461
+01:48:28,884 --> 01:48:31,627
+Bu virtual memory olmasının anlamı da şu.
+
+462
+01:48:32,115 --> 01:48:41,416
+Bir programı yazdığımız zaman, bu program kendi şu noktasından itibaren, 0 referansından itibaren görece adreslemesini yapabilir.
+
+463
+01:48:41,416 --> 01:48:51,115
+Bu programın kendisine ait sanal bir adres uzayı var. Bu adres uzayı fiziki ana bellekten büyük de olabilir. Hiç önemli değil.
+
+464
+01:48:51,231 --> 01:49:09,231
+Bütün adreslemeleri kendi tanımladığı referansa göre yapıyorsa ben bunu parçalara bölüp aynı referansı kullansam yine bu program çalışabilir hale geliyor. Dolayısıyla programın kendisine ait özel bir kanal hafıza uzayı olmuş oluyor.
+
+465
+01:49:18,771 --> 01:49:24,091
+Yine bir optimizasyon yapmış oluyoruz. Çünkü öbür türlü ne olmuş olacaktı?
+
+466
+01:49:24,091 --> 01:49:30,051
+Anabelleye baktık, mesela ben şuradaki kod satırını çalıştırmak istiyorum. Anabelleye baktım yok.
+
+467
+01:49:30,051 --> 01:49:37,172
+İkinci hafızadan şunu anabelleye yükleyelim. İkinci liste anabelleye yüklemek çok daha maliyetli.
+
+468
+01:49:37,172 --> 01:49:45,971
+Bir sonraki satır için tekrar gelmekte. Dolayısıyla yine az önce bahsetmiş olduğumuz sıfat-ıyer temporal lokalite özelliklerini aktif etmek üzere.
+
+469
+01:49:46,047 --> 01:49:55,627
+İkinci rafıda bilimlerinde yer alan bir sayfayı alıp ana belliğe topluca yükleyip bu şekilde çalıştırmaya çalışıyorum.
+
+470
+01:49:59,220 --> 01:50:02,000
+CESC ile ilgili girişi bu şekilde vermiş olalım.
+
+471
+01:50:08,659 --> 01:50:13,699
+Bu memory hiyerarşi dediğimiz tabaca buna karşımız geliyor.
+
+472
+01:50:22,387 --> 01:50:31,988
+Yine cache dediğimiz mantık bu hiyerarşi içerisinde CPU'nun yazmaçlarıyla ana-bendek arasındaki bir tamponlama bölgesi.
+
+473
+01:50:32,988 --> 01:50:43,328
+Temel olarak dizi işlemleri ve çeşitli adres değerlerinin tekrar erişim özelliğinden dolayı, istatistik olarak bunların daha yoğun gerçekleşmesinden dolayı.
+
+474
+01:50:43,792 --> 01:50:52,492
+Bahsetmiş olduğumuz temporal lokalite ve spatial lokalite özelliğinden faydalanarak bu cache ile ortalama erişim sürenizi arttırabiliyorum.
+
+475
+01:50:53,431 --> 01:51:00,252
+Tabii cache dediğimiz zaman neler için cache'e ihtiyacımız var, hangi tip veriler için cache'e ihtiyacımız var diye düşünebiliriz.
+
+476
+01:51:00,756 --> 01:51:18,576
+Örneğin, günümüzdeki CPU'larda hem komutlar için, yürütülecek instruction'lar için bir cache bilo var. Yani instruction cache dediğimiz yapı var. Hem de data cache bir yapısı var. Dolayısıyla bu ikisinin ortak bir şekilde kullanıldığını da söylememiz gerekiyor.
+
+477
+01:51:25,076 --> 01:51:27,076
+Burada bir şeyden daha bahsetmiştik.
+
+478
+01:51:33,363 --> 01:51:47,003
+Tamam. Instruction ve data cache'ten bahsedecektim. O söylemiş oldum. Burada yine bu örnek bir sistem için ortalama erişim süreleriyle bunların boyutlarını ve geliştiklerini, kapasitelerini görebilirsiniz.
+
+479
+01:51:47,003 --> 01:51:55,923
+Üretim maliyetleri gibi değerleri görebilirsiniz. Hatta maliyetlerini de görebilirsiniz. Birim maliyetlerini, birim hafıda bile ona göre maliyet.
+
+480
+01:51:56,819 --> 01:52:12,339
+Yine önemli bir konu tekrar üzerine vurgulamak gerekirse, ikinci lafıza birimlerinden memoriye optimum bir şekilde veya optimize edilmiş bir şekilde erişim süresinde arttırdığımız yaklaşım ismi virtual memory olarak isimlendiriliyor.
+
+481
+01:52:16,659 --> 01:52:24,579
+Küçük komşuluk blokları olarak bir ara birime aktarıp o şekilde kullanıyoruz. RISC'in memazı da bu şekilde, cache de de benzer şekilde.
+
+482
+01:52:24,579 --> 01:52:35,299
+Yine ana bellekten doğrudan simtüye aktarılmak gereken verileri bir komşuluk bloku olarak ara tampon bölgesi olan cache'e aktarıp oradan okumaya çalışıyoruz.
+
+483
+01:52:35,419 --> 01:52:41,319
+Erişim süresi daha hızlı olduğu için ortalama erişimlerimiz iyileşmiş oluyor.
+
+484
+01:52:41,939 --> 01:52:48,939
+Peki buradaki trade-off nerede? Ben bütün memory'i cache olarak veya bütün memory'i register olarak tanımlayamazsınız.
+
+485
+01:52:48,939 --> 01:52:56,939
+Tanımlardık ama öyle bir maliyet çıkardı ki kullanılabilir bir durumda bir şey olmaz bir sistem.
+
+486
+01:53:00,939 --> 01:53:02,939
+Dediğim gibi günümüzdeki...
+
+487
+01:53:03,155 --> 01:53:17,155
+CPU'larda veya işlemcilerde 3 seviye cache var. Bunlardan L1 ve L2 temel olarak multi-core sistemlerde dahi her bir konu kendine özel L1 ve L2 cache blokları var.
+
+488
+01:53:17,295 --> 01:53:23,536
+L3 bloklu bloğu ise temelde ortak paylaşılan bir blok olarak karşımıza çıkıyor diyebiliriz.
+
+489
+01:53:26,456 --> 01:53:28,715
+Memory hiyerarşisi bu şekilde diyelim.
+
+490
+01:53:30,036 --> 01:53:35,876
+Şimdi mantık olarak yine aynı şey üzerinden gidiyormuş.
+
+491
+01:53:37,635 --> 01:53:40,115
+Şimdi tabii sıkıntı nereden çıkıyor?
+
+492
+01:53:41,576 --> 01:53:42,815
+Sıkıntı şuradan çıkıyor.
+
+493
+01:53:44,115 --> 01:53:55,435
+Baktığımız zaman işlemcilerin gelişimine baktığımız zaman işlemciler yaklaşık 10 yılda bir 10 kat performansa çıkıyor.
+
+494
+01:53:56,595 --> 01:54:06,815
+İşlemciler 10 yılda bir 10 katı performansa çıkıyor kafaca diye bize söyle. Bununla birlikte hafıza teknolojisi bu kapasitede bu hızda ilerlemiyor.
+
+495
+01:54:07,555 --> 01:54:12,195
+Dolayısıyla performans açısından hafıza yararşısı bir darboğaz oluşturmaya başlıyor.
+
+496
+01:54:13,195 --> 01:54:19,675
+Dolayısıyla burada yapılabilecek ilişkileştirmeler darboğazı açma açısından önem arz ediyor.
+
+497
+01:54:23,796 --> 01:54:37,376
+Yine bu memory hiyerarşisine ilişkin bir başka gösterimde burada görebilirsiniz. İşte işlemciye yaklaştıkça boyutlar küçülüyor, erişim süreleri hızlanıyor ama maliyetler de artıyor.
+
+498
+01:54:45,587 --> 01:54:53,927
+Şimdi, cache dediğimiz zaman öyleyse bir orta arada erişim süremizi artıracak tampon bir hafıza bölgesi.
+
+499
+01:54:55,007 --> 01:55:06,847
+Normalde biz ürettiğimiz adresleri ikinci diske saklanan programın kendi içerisindeki o virtual memorisine bağlı olarak adres değerleri ürettiği olarak üretiyoruz.
+
+500
+01:55:06,847 --> 01:55:12,108
+Yani şöyle düşünebilirsiniz, öyle büyük bir program var ki ana hafıza tek başına sığınmıyor.
+
+501
+01:55:12,692 --> 01:55:26,471
+Ve dolayısıyla o ana hafıza adres uzayından çok daha geniş bir virtual memory kullanıyor olabilir. Dolayısıyla programın kendi içerisinde refere ettiği adres aralıkları programın fiziki adres yolu genişliğinden fazla olabilir.
+
+502
+01:55:28,511 --> 01:55:36,811
+Dolayısıyla önce o kısımdan bunun uygun şekilde yani ikinci hafıza bilimlerinden ana belleğe uygun şekilde getirildiğini varsayalım şimdilik.
+
+503
+01:55:37,268 --> 01:55:46,807
+Ve ilgilendiğimiz adres yolu genişliklerinin fiziki adres yolu genişliği ile eşit olduğunu varsayalım. Ama bunun nasıl olduğunu işte son haftaki dersimizde göreceğiz.
+
+504
+01:55:46,887 --> 01:55:53,868
+Virçim memoriye ele aldığımız zaman göreceğiz. Şimdilik varsayalım ki ana belliğe yüklemiş olduğunuz bir program sayfası var.
+
+505
+01:55:53,988 --> 01:56:00,628
+HVARC, CISCBilgisayar Organizasyonu'nun üzerindeki erişimleri fiziki adres yolu genişliği ile eşit her şekilde yapabiliyor olalım.
+
+506
+01:56:00,992 --> 01:56:27,212
+Normalde CPU demek ki fiziki adres yolu genişliğinde bir adres çıkacak ve bunu ana bellek de normalde erişip alabilir. Ama biz istiyoruz ki daha küçük kapasiteli bir cache kullanıp tekrarlı erişimlerde de bu cache'ten faydalanıp erişim sayısını artırmak istiyoruz. Bu durumda bizim fiziki adres yolu genişliğindeki adres değerimizi önce gidip cache'e bakmamız lazım.
+
+507
+01:56:28,243 --> 01:56:39,643
+Daha geniş bir adres yolu, fiziki adres genişliğimiz var. Cache daha küçük kapasitede. Dolayısıyla bu adres yolu genişliğini kullanarak Cache'in neresine bakmalıyız, nasıl bakmalıyız?
+
+508
+01:56:39,643 --> 01:56:52,643
+Ki aradığımız veri orada var mı yok mu bunu ayırt edelim. Eğer aradığımız veri, baktığımız adresle aradığımız veri Cache'te yoksa bu sefer ana hafızaya gidilmesi lazım. Memory interface'lerin bunu yapacak.
+
+509
+01:56:52,756 --> 01:57:18,356
+Ana hafızaya gidilecek. Oradan bir komşuluk bloğu alınıp cache'e taşınacak ve biz yine cache'ten oturmuş olacağız. Dolayısıyla aradığımız veri cache'te var mı yok mu? Bir. İkincisi, aradığımız veri yoktu. Main memory'den cache'e yeni veri getirdik. Nereye yazacağız? Cache'teki bütün yerler dolu. Hangi gözü kaldıracağız ki cache üzerinde getirmek istediğimiz veriyi yerleştirelim.
+
+510
+01:57:18,771 --> 01:57:31,832
+Neye göre yerleştireceğiz? Ve aradığımız veri cache'te var mı? Bunlar birbirine doğrudan iletili bir yapı. Nasıl iletili? Yerleştirme mantığımız neyse arama mantığımızı ona göre kurgulan.
+
+511
+01:57:32,592 --> 01:57:44,471
+Eğer ki sıradaki boş yere yerleştirme yapıyorsak, aradığımız veri cache'te var mı yok diye bulabilmek için bütün gözleri baştan sona özel bir keyword için aramamız lazım.
+
+512
+01:57:45,171 --> 01:58:09,171
+Eğer ki ana hafızadan heşe yerleştirme adres değerinin belirli bir kısmıyla ifade ediliyorsa, yani en düşük anlamda 10 bitiyle ifade ediliyorsa örneğin, bu durumda her 1K'lık adres atlamasında ana bellekte her 1K'lık uzaklıktaki veriler keş'te hep aynı göze denk gelecek. Aramak kolay ama...
+
+513
+01:58:09,619 --> 01:58:27,299
+Yerleşim açısından efektif değil. Örneğin benim kodum hep 1K'lık aralıklardaki veriye erişmek istiyorsa, cache'imde 10 göz var ama eriştiğim her veri 10K aralıkta olduğu için hep cache'imin birinci satırına tekabül edecek bunlar. Yani cache'imin %90'ını kullanamadım.
+
+514
+01:58:27,956 --> 01:58:41,916
+Dolayısıyla veriyi cache'e nasıl yerleştirdiğimiz, aradığımız verinin cache'e olup olmaması durumları birbirleriyle elintili ve tasarımı etkileyen süreçler ve performansı etkileyen süreçler.
+
+515
+01:58:43,775 --> 01:58:48,235
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı? Yine bir ara vermek istiyorum ben.
+
+516
+01:58:54,836 --> 01:59:09,275
+Burada belki Play Associated Cache yapısını anlatıp da dersleri sonlandırabiliriz. Bir kısa ara verelim. Sormak istediğiniz bir şey varsa alayım. Yoksa bir ara verelim. 4'ü 10 geçe devam edeceğiz.
+
+517
+01:59:17,652 --> 01:59:18,731
+ÇT'de yazayım.
+
+518
+01:59:28,627 --> 01:59:30,627
+Konoplu, devam ediyorlar.
+
+519
+02:13:02,036 --> 02:13:03,496
+Evet, böyle bir şey yoksa bir şey yoksa.
+
+520
+02:13:08,020 --> 02:13:20,240
+Şimdi demiştik ki ikinci hafıza bilimlerinden ana belleğe aktarımla ilgili prosesin yani prosedürün tamamlandığını veya çalışmış olduğunu baktığımı.
+
+521
+02:13:20,240 --> 02:13:32,680
+Biz fiziki adres genişlikleri üzerinden ve ana hafıza ile ön bellek arasındaki veri iletişiminden veya aktarımdan konuşuyor olalım.
+
+522
+02:13:33,120 --> 02:13:35,480
+Buraya problemi indiriyemiş olalım demiştik.
+
+523
+02:13:35,807 --> 02:13:46,127
+Bu noktada tabii ki cache'in kapasitesi ne olacak? Cache'in yapısı nasıl olacak? Nasıl bir organizasyona sahip olacak?
+
+524
+02:13:46,648 --> 02:13:53,247
+İşte bununla birlikte bu fiziki adres değerimiz ana bellekte belli. Doğrudan bir adrese tekabül ediyor.
+
+525
+02:13:53,347 --> 02:14:02,807
+Çünkü ana bellekteki adres genişliği ile fiziki adres yolu genişliği birbiriyle uyumlu. Doğrudan bir adrese tekabül ediyor ama bu fiziki adres değeri
+
+526
+02:14:03,699 --> 02:14:27,039
+Cache'te nereye tekabül edecek, onu nasıl ayırmalıyız, o fiziki adresi nasıl bölümlendirmeliyiz. Daha sonra aradığımız bir veri Cache'te var mı yok mu? Cache'te hangi veriler var. Ve bu Cache'teki veriyi hızlı bir şekilde nasıl bulabiliriz? Çünkü aradığımız veriyi Cache'te bulmakta bakıp kaybediyorsak aslında o da bizim yapmaya çalıştığımız şeyi bozan bir şey. Çünkü erişim süresini ortalama da artırmaya çalışıyoruz.
+
+527
+02:14:32,564 --> 02:14:57,204
+Cache ile ilgili olarak verilen bir fiziki adresin Cache'te bulunamaması durumunda ana bellekten bu verinin Cache'e getirilmesi ile ilgili, taşınması ile ilgili süreçte 3 farklı mapping kullanılabilir, 3 farklı haritalama yöntemi kullanılabilir.
+
+528
+02:14:57,876 --> 02:15:05,816
+Bunlardan en anlaşılabilir olanları, yani doğrudan anlaşılabilir olanları, Fully Associated ve Direct Map Cache yapıları.
+
+529
+02:15:06,956 --> 02:15:14,076
+Fully Associated tanımı da kolay. Şu demek, aradığımız veriyi Cache'te bulamadık.
+
+530
+02:15:14,536 --> 02:15:24,416
+Gidiyoruz, ana bellekten o adres komşuluğu bloğunu getiriyoruz. Bakıyoruz sıradan itibaren. Sıradaki ilk boş yere koyuyoruz.
+
+531
+02:15:25,108 --> 02:15:48,248
+Yerleştirme bu şekilde sıradaki ilk boş yere koyduk. Dolayısıyla nereye koyduğumuz, yani hangi satınca hangi veri olduğunu ayırt etmek için bir takım özel adresin özel bir kısmını, genişçe bir kısmını ayırt edici bir alan olarak yine veriyle birlikte saklamamız lazım.
+
+532
+02:15:49,011 --> 02:16:02,132
+Demek ki full associative cache yapısı dediğimizde, aradığımız veri cache'te yoksa, fiziki adres genişliğine karşılık gelen, değerine karşılık gelen main memorydeki komşuluk adres bloğunu alıyoruz.
+
+533
+02:16:03,212 --> 02:16:05,971
+Sıradaki boş cache gözüne yerleştiriyorum.
+
+534
+02:16:13,268 --> 02:16:23,428
+O veri olduğunu veya o veriyi ayırt etmek üzere adres değerinin genişçe bir kısmını datanın kendisiyle birlikte aynı cache gözünde saklıyoruz.
+
+535
+02:16:24,468 --> 02:16:32,847
+Tabii veri komşuluğunun çoğu için hatta tamamı için bu ayırt edici adres alanı tek.
+
+536
+02:16:34,064 --> 02:16:42,463
+Her bir adres gözü için ayrı ayrı, ayrı dedici adres değeri koymuyorum da o blogun tamamı için ayrı dedici tek bir adres blog koyuyorum.
+
+537
+02:16:43,804 --> 02:16:45,164
+Ararken ne yapacağız o zaman?
+
+538
+02:16:45,923 --> 02:16:47,064
+Ararken de...
+
+539
+02:16:47,156 --> 02:17:02,016
+Geniş ayı dedici adres değerini yukarıdan itibaren bakıyorum. Aradığım değer mi? Aradığım değer mi? Aradığım değer mi? Aradığım değer mi? Aradığım değer mi? Bulamadığımı ne zaman karar verebilirim? Tüm gözlere bakıp da eşleşen bir adres aralığı adres değeri bulamadığımda karar verebilirim tamca.
+
+540
+02:17:02,016 --> 02:17:07,016
+Araması da bu şekilde. Peki yine...
+
+541
+02:17:07,667 --> 02:17:15,047
+Fiziki adreslerini uyguladık adres yoluna. Erişmek istediğimiz verinin adresini bastık. Daha sonra cache'e kontrol ettik. Bulamadık.
+
+542
+02:17:15,768 --> 02:17:23,608
+Main memory'den getireceğiz cache'e ama cache'teki sırasıyla bakıyorum bütün gözler dolu. Bu durumda ne yapacağız?
+
+543
+02:17:25,007 --> 02:17:29,667
+Bu durumda da bu veriyi mutlaka cache'e koymamız lazım. Çünkü cache'e getirmemiz gereken bir veri bu.
+
+544
+02:17:33,871 --> 02:17:48,531
+En eski tarihli veri neyse onu kaldırabilir. Arkadaşlar birisi bu. En eski tarihlisi ne? Veya cache'te en az sıklıkla kullandığımız veri hangisi ise onu kaldırabilir.
+
+545
+02:17:55,603 --> 02:18:15,023
+Eriştiğimiz veriyi kaldırabilir. En son çok uzak bir geçmişte eriştiğimiz veri varsa erişiminden çok vakit geçmiş. Erişmişiz veriye, üzerinden bir tür vakit geçmiş ve daha erişmemişiz o veriye. Ama en eski veri olmayabilir bu. Cişe yerleştirilen en eski veri olmayabilir. Onu kaldırabilir.
+
+546
+02:18:20,788 --> 02:18:30,847
+First out mantığı, yani cache'e yerleştirilmiş olan en eski verinin kaldırılması veya least recently used. Cache'imizde veriler var.
+
+547
+02:18:31,347 --> 02:18:44,668
+A verisi en eski yerleştirilen veri ama ben ona bir önceki cycle'da erişik bir şey yapmıştım. Oradan veri okumuşum. Bir de B verisi var. B verisine uzunca bir süredir hiç erişmemişim.
+
+548
+02:18:46,191 --> 02:18:59,291
+Erişimin üzerinden çokça vakit geçmiş olan bu veriyi kaldırabilirim. Yeni koyacağım veriyi ona yer ayırmak için. Bu yaklaşımın adı da List Recently Used mantığı oluyor.
+
+549
+02:19:03,059 --> 02:19:23,059
+İkinci doğrudan anlayabileceğimiz basit mantık direct map cache yapısı. Bu yapıda da fiziki adresimizin düşük anlamlı kısmı cache'in bir indisi oluyor.
+
+550
+02:19:25,843 --> 02:19:35,663
+Adres kısmının yüksek anlamlı kısmı veya indis halindeki yer alan kısmı ise ayırt edici adres alanı olarak kullanılıyor.
+
+551
+02:19:35,663 --> 02:19:47,243
+Çünkü biz geniş kapasiteye sahip bir ana bellekten sadece düşük anlamlı belirli bir adres genişliğini indis değer olarak kullanırsak bunun anlamı şu.
+
+552
+02:19:50,064 --> 02:20:05,064
+İndiş değerine karşılık getirdik, cache'in indişlerine karşılık getirmiş olalım. Bu durumda her 32 byte'lık verilebilir, her 32 göz sonra bunların map ettiği adres cache'te hep aynı olur. Dolayısıyla...
+
+553
+02:20:05,840 --> 02:20:19,239
+1.32'likten mi, 2.32'likten mi, 3.32'likten mi verinin geldiğini anlayabilmek için indis kısmı haricindeki diğer adres değerlerini ayırt edici adres değeri olarak yine kullanmam gerekiyor.
+
+554
+02:20:20,220 --> 02:20:27,159
+Direct cache yapısında, direct map cache yapısını düşünelim. Aradığım veri cache'te var mı yok diye bakmak için.
+
+555
+02:20:27,860 --> 02:20:37,659
+Cache yapısını bildiğim için bu adresin kaç bitlik kısmı indise tekabül ediyor bilirim. Doğrudan Cache'in 10 numaralı gözüne girer bakarım.
+
+556
+02:20:38,611 --> 02:20:49,771
+Ayırdedici adres değeriyle, benim erişmek istediğim adresin ayırdedici kısmıyla, cache'te ilgili indisle, aynı indisle yer alan verinin ayırdedici adres bölgesi aynı değere sahip.
+
+557
+02:20:49,871 --> 02:20:57,371
+Aynı değere sahipte aradığım veriyi buldum, okurum. Farklı değere sahipte ne yapacağım? Gideceğim ana belleğe.
+
+558
+02:20:57,371 --> 02:21:05,431
+Ana bellekten bizdeki adres genişliğini uygulayıp aradığım gözdeki veriyi alacağım. Az önce baktığım cache gözüne.
+
+559
+02:21:05,824 --> 02:21:32,424
+Yazacağım bunu. Yazdığım zaman data değişir. Bir de ayırt edici adres alanı değişir. Çünkü farklı bir adres gözünden veriyi getirdim. Ararken ve veriyi yazarken bu şekilde. Peki bu DirectMap'in kötü yanı ne? DirectMap cache'in kötü yanı şu. Mesela benim kurmuş olduğum algoritma verilere öyle bir çizgi erişiyor ki bu mesela her
+
+560
+02:21:32,752 --> 02:21:53,292
+Atıyorum, 512 byte adres ötedeki veriye erişiyorum. Ve benim cache'imin genişliği ile imdiz değeri olarak da 9 bitlik bir alan kullanıyorum. Yani bu durumda benim eriştiğim her 512 byte ötedeki veri hep cache'imin birinci satırına denk gelir.
+
+561
+02:21:53,843 --> 02:22:19,063
+CECIM 10 gözlü bir şey olsun mesela. CECIM'in 9 tane gözüne hiç değer yazmıyorum. Her 512 adım ötedeki adreste veriye erişmek istedikçe CECIM'in birinci gözüne bakıyorum. Aradığım verimi değil. Ana bellekten gidiyorum, getiriyorum. Birinci göze yazıyorum. CPU da kullanıyorum. Bir sonraki döngüde yine gidiyorum. Birinci göze bakıyorum. Aradığım verimi ayırt edici adres bölgesi uyuşmuyor.
+
+562
+02:22:20,115 --> 02:22:28,515
+Ana belleğe gidiyorum. Bu da bir önceki 1512 byte ötesindeki veri alıyorum. Cache'e koyuyorum. Data değişti. Ayırt edici adres bölgesi değişti.
+
+563
+02:22:28,515 --> 02:22:34,015
+Ve cache'imin sadece onda birini kullanıyorum. Direct map cache'in kötü yanı bu.
+
+564
+02:22:34,015 --> 02:22:43,716
+Full associated cache'in kötü yanı var mı? Elbette onun da kötü yanı var. Cache'e koyduğum bir veriyi bulabilmek için tek tek bütün gözlere bakmam lazım.
+
+565
+02:22:44,500 --> 02:22:49,500
+Tek tek bütün gözlere bakmamız gerekiyor. Dolayısıyla erişimdeci süreyi arttıran bir durum.
+
+566
+02:22:49,500 --> 02:22:58,500
+Peki bu ikisinin iyi ve kötü yanlarını, kötü yanlarını giderecek şekilde iyi yanlarını sinerji oluşturacak şekilde bir araya getirebiliriz.
+
+567
+02:22:58,500 --> 02:23:10,432
+O yöntemin adı CESC. Bu durumda ise CESC'imiz yatayda full associated mantıkla çalışıyor.
+
+568
+02:23:10,432 --> 02:23:34,572
+Dikey'de ise Direct Map mantığında çalışıyor. Dolayısıyla biz artık aynı satıra map eden adres gözlerini yan yana birlikte barındırabiliyoruz. Çünkü onu çoğulladık, yatayda çoğulladık. Dolayısıyla aynı adrese map eden Direct Map olarak adreslenen adres gözlerinden.
+
+569
+02:23:35,283 --> 02:23:48,484
+Sadece bir tane kullanmak yerine zorunda değilim. En gözlü bir küme yaklaşımı dediğimiz vakit, en tane göz var demek bu her bir satırda.
+
+570
+02:23:48,484 --> 02:23:59,484
+Dolayısıyla bu en tane göz kendi aralarında full associative mantıkla çalışıyor. Dolayısıyla kısmen full associative'in iyi yanını...
+
+571
+02:23:59,615 --> 02:24:05,216
+Gözüm ben DirectMap'in erişim hızını bir arada brandıran bir özellik elde etmiş oluyoruz.
+
+572
+02:24:05,876 --> 02:24:07,556
+STS-şekip, cache mantığında.
+
+573
+02:24:08,155 --> 02:24:10,435
+Ve kabaca bunları tanım olarak düşünebilirsiniz.
+
+574
+02:24:11,216 --> 02:24:12,615
+Bunları iyileştirmek adına...
+
+575
+02:24:18,227 --> 02:24:23,227
+Bunları tanımlamış olduk. Bunları daha görsel bir şekilde görebilmek için...
+
+576
+02:24:26,611 --> 02:24:28,371
+tanımlar üzerinden gidiyor olacağız.
+
+577
+02:24:32,340 --> 02:24:36,220
+Bir soru var acaba.
+
+578
+02:24:50,324 --> 02:25:03,263
+Şimdi burada Direct Map Cache mantığını kullandığınızda ana belleğin adres uzayındaki her bir göz Cache'te tek bir göze eşleniyor.
+
+579
+02:25:03,263 --> 02:25:09,100
+Bu durumda ana bellekteki her bir göz...
+
+580
+02:25:09,811 --> 02:25:19,891
+Cache'te bir göze eşlendiği için, kapasite Cache'te daha küçük olduğundan dolayı birden fazla adres değeri Cache'te aynı göze adreslenmiş olabilir, MEP'lenmiş olabilir.
+
+581
+02:25:22,511 --> 02:25:32,171
+Birden fazla ana bellek gözü Cache'te aynı satıra denk geldiği için, hangi MEP'ingin o sırada Cache'te olduğunu bulabilmek için,
+
+582
+02:25:33,108 --> 02:25:38,227
+indis değeri haricinde ayırt edici adres alanını da koymak zorundayız.
+
+583
+02:25:40,788 --> 02:25:43,727
+Ayırt edici adres alanını da koymak zorunda oluyoruz.
+
+584
+02:25:44,488 --> 02:25:54,768
+Mesela buradaki örneğe bakacak olursak bizim burada gördüğünüz durumda 15 byte'lık bir ana hafızamız var.
+
+585
+02:25:54,768 --> 02:26:00,587
+Ve bizim 4 byte'lık bir direct map cache'imiz var.
+
+586
+02:26:01,268 --> 02:26:06,347
+Sistem nasıl çalışıyor? 15 byte hafıza olduğuna göre bizim adres yolu genişliğimiz ne?
+
+587
+02:26:13,203 --> 02:26:29,724
+4.000 değil mi? 4.000. Şimdi buna göre biz bu adresleri yazacak olsak ve cache'teki adresleri yazmış olsak adreslerimiz şunlar oluyor 00.01.1011. Buradaki memori adreslerine bakalım.
+
+588
+02:26:54,164 --> 02:27:14,484
+Adreslerimiz böyle. Demek ki, biz 4 bitlik adres yolu genişliğimizin düşük anlamlı 2 bitini cache için haritalamada kullanıyoruz.
+
+589
+02:27:20,340 --> 02:27:36,299
+Bunun anlamı ne? Bunun anlamı şu. Mesela düşük anlamlı 2 biti 0, 0. 0, 1, 2, 3. 4. satıra geldiğimde bunun düşük anlamlı 2 biti de 0. Demek ki son 2 bitinin 0 olduğu.
+
+590
+02:27:37,139 --> 02:27:50,259
+Bizim 15 byte'lık adres uzayımızdaki 0 adresi, 4 adresi, 8 adresi ve 12 adresi bunlar erişilmek istendiğinde cache'in 0 numaralı satırından erişilmek istenecek.
+
+591
+02:27:50,399 --> 02:28:00,520
+Yani 0, 4, 8, C adresleri ile ilgili işlem yapıyorsak CPU gelip cache'in 0 satırına bakacak.
+
+592
+02:28:02,579 --> 02:28:10,539
+Neden sıfır satırına bakıyoruz? Çünkü bu adreslerin son iki biti sıfır. Yani indis değerine karşılık geliyor. Peki biz burada...
+
+593
+02:28:14,675 --> 02:28:26,075
+Baktık, 0. satıra geldik. Burada anlamlı bir veri var. Mesela biz 4 adreslemiş olalım. Burada baktık, 0.0 satırına anlamlı bir veri var.
+
+594
+02:28:26,899 --> 02:28:34,119
+Fakat bu veri sıfırdan mı gelmiş, dörtten mi gelmiş? Onu nasıl ayırt edeceğiz? Onu ayırt edebilmek için burada bir tag alanı ayıracağız.
+
+595
+02:28:34,259 --> 02:28:41,340
+Tag alanı da bizim kullanmamış olduğumuz, adres bölgesinde kullanmamış olduğumuz yüksek anlamlı iki bite karşılık oluyor.
+
+596
+02:28:41,439 --> 02:28:52,079
+Yani bu da şu demek, ilk dört adres bölgesinin yüksek anlamlı tag alan değeri sıfır sıfır olmuş oluyor.
+
+597
+02:28:53,332 --> 02:29:09,551
+Bunların tag alanı 0, 1 olmuş oluyor. Şu bölgenin tag alanı 1, 0 olmuş oluyor. Şu bölgenin tag alanı 1, 1 olmuş oluyor. Dolayısıyla biz verimimizi buraya koymuşken tag değerini de koyacağız.
+
+598
+02:29:09,691 --> 02:29:18,912
+Örneğin biz burada tag alanında 1, 1 değerini koymuşsak, burada data olsun ve biz komut olarak şunu çalıştırmışsak.
+
+599
+02:29:21,268 --> 02:29:46,907
+Biz komut olarak şunu çalıştırmışsak, mesela move, AL, 4 gibi bir komut çalıştırmışsak, şöyle diyelim, 4 komutunu çalıştırmışsak, bu durumda CPU 4 adresiyle ilgili işlem yapacak. 4 adresin binary halini yazdı. Şu. Bunun düşük anlamda iki bitine baktı. 0, 0.
+
+600
+02:29:47,252 --> 02:30:10,932
+Dolayısıyla cache'imizin 00 indisine gidecek. İndis burası. Yani bu ilk gör. Tag değerimiz ne? Tag indis diyelim. Tag değerimiz 01. Mevcut da verinin 0. satırda verinin tag alanı 11. Yani aslında C adresindeki veri varmış burada. Bu data dediğimiz şey daha önce C adresinden buraya aktarıyormuş.
+
+601
+02:30:11,252 --> 02:30:19,252
+O zaman tag değerimiz örtüşmediği için bizim 4 adresiyle ilgili yapmak istediğimiz erişimi cache'in 0 numarası gözünde bulamadık.
+
+602
+02:30:19,252 --> 02:30:29,252
+Diğer gözlerde olma ihtimali var mı? Yok. Çünkü birebir eşleme var. Son iki biti 0 olan bir adresten içerik ancak ancak 0. satırda olabilir.
+
+603
+02:30:29,252 --> 02:30:34,220
+O zaman ne yapmış oluyoruz? Aradığımız veriyi cache'te bulamadık diye. Cache miss oldu.
+
+604
+02:30:34,260 --> 02:30:48,840
+CES'te bulamama durumu. Ne yapacağız? Gideceğiz ana bellekten veriyi alıp tekrar CES'e aktaracağız. CES'e aktardığımız zaman, yani 4 adresindeki veriyi aktardığımız zaman, şöyle diyelim, tekrar CES'e aktardığımız zaman,
+
+605
+02:30:53,139 --> 02:31:03,379
+ve tag alanımızda artık 1,1 değil, 0,1 olarak güncellendi. Tekrar 4 adresi ile ilgili aynı komutu çalıştırsak yine CPU gidecek.
+
+606
+02:31:03,379 --> 02:31:20,739
+Son 2 biti 0,0 olan endis'e gidecek yani 0.1 satıra. 4 adresin tag alanı 0,1, cache'te yazan tag alanı 0,1. Demek ki bizim aradığımız veri cache'te var, cache'ten kullanabiliyoruz diyeceğiz.
+
+607
+02:31:22,324 --> 02:31:26,004
+Dolayısıyla yapı kapaca bu şekilde diyebiliriz.
+
+608
+02:31:30,963 --> 02:31:38,963
+Burada da örnekle görelim. Son iki bitin sıfır olduğu tüm adres gözlerimiz cache'in sıfırıncı gözüne adresleniyor.
+
+609
+02:31:39,963 --> 02:31:44,963
+Sıfırıncı gözde 0, 4, 8 ve 12 adreslere yer alabilir.
+
+610
+02:31:45,963 --> 02:31:55,963
+Direct map cache'in sıkıntısı nerede? Birden fazla ana bellek gözü cache ile aynı satıra tekabül ediyor.
+
+611
+02:31:57,600 --> 02:32:06,000
+Maplediğimiz adres gözlerinden, içeriklerinden hangisini var bunu ayırt etmek lazım. O yüzden dolayı bir tag alanı koymamız lazım.
+
+612
+02:32:06,000 --> 02:32:18,000
+İkinci bir durumda bizim blok genişliğimiz bir byte değilse, yani blok genişliği dediğimiz yerde şurası, mesela 0. cache satırının büyüklüğü bir byte değilse o zaman ne olacak?
+
+613
+02:32:18,000 --> 02:32:25,399
+O zaman da aslında her iki shell, arda arda gelen iki blok bir cache satırına tekabül etmiş olacak.
+
+614
+02:32:27,827 --> 02:32:37,427
+Bu durumda elde ettiğimiz sonuç kabaca bu şekilde verilebilir. Bizim elimizde bir durumun rengini değiştiren sesler.
+
+615
+02:32:37,747 --> 02:33:00,347
+Bizim elimizde bir fiziki adres var. Yani mesela 64 bitki bir CPU dediğimizde bunun adres yolu genişliği fiziki olarak 64 bit veya 32 bitki bir CPU dediğimiz zaman adres yolu 32 bitse. Fiziki adres genişliği 32 bit konuşuluyor. Fiziki adres genişliğimiz var. Bunu alanlara böleceğiz. Nasıl böleceğiz?
+
+616
+02:33:01,811 --> 02:33:05,952
+Burada Byte Offset'i de tekrar iki parçaya bölelim.
+
+617
+02:33:10,420 --> 02:33:35,760
+Bu kısım, şuradaki kısım, cache'in blok genişliği ile ilişkili. Şu demek bu. Bizim cache'imizin bir satırı diyebiliriz ki iki tane word tutabilir. İki tane word saklayabilir. Peki bizim bir tane word'ümüzün genişliği de o da bizim veri yolu genişliğimizle alakalı.
+
+618
+02:33:38,675 --> 02:33:56,255
+64 bit ise biz burada bu cache terminolojisi içerisinde word genişliğimizi ne diyeceğiz? 64'ü her bir byte 8 bit olduğuna göre 8 byte olarak ifade edeceğiz.
+
+619
+02:33:56,995 --> 02:34:04,275
+Demek ki bizim bir cache satırımız içerisinde, bir cache satırımız içerisinde bunu tekrar açacak olup da
+
+620
+02:34:05,587 --> 02:34:06,587
+Böyle yapalım.
+
+621
+02:34:08,747 --> 02:34:10,587
+Bir cache satırımız içerisinde.
+
+622
+02:34:13,747 --> 02:34:16,407
+Buraya iki tane word duyuyor demiştik ya.
+
+623
+02:34:16,987 --> 02:34:18,927
+İki tane word duyabiliyoruz buraya.
+
+624
+02:34:19,807 --> 02:34:24,087
+Ve bu sun wordlerden her birisinin de 8 byte'dan oluşuyor.
+
+625
+02:34:25,087 --> 02:34:26,187
+Şunu böyle kalın kişisel.
+
+626
+02:34:33,556 --> 02:34:39,736
+Dolayısıyla biz cache'in herhangi bir satırından bir byte'lık veri okumak istesek şunlara cevap vermeliyiz.
+
+627
+02:34:40,436 --> 02:34:41,556
+İlgili satırdaki...
+
+628
+02:34:45,971 --> 02:34:57,971
+Hangi word'a erişeceğiz? Hangi word'a erişeceğiz? Daha sonra mesela şu word'a erişeceğiz. Daha sonra ilgili word'ın hangi byte'ına erişeceğiz?
+
+629
+02:34:57,971 --> 02:35:11,851
+İşte bunlara cevap, bu cache'in bir blok genişliğindeki iki ayrı adres alanıyla ifade ediliyor.
+
+630
+02:35:11,924 --> 02:35:33,924
+Hangi word'ü seçtiğimiz, şuradaki yüksek anlamda bitlerde saklı bu. Word offset olacak. Şu kısım ise byte offset olarak karşımıza çıkacak. Örneği vermek gerekirse, bir cache mimarisinden bahsedelim. Bu cache'teki blok genişliği,
+
+631
+02:35:37,620 --> 02:35:44,620
+64 byte olsun. Tamam mı?
+
+632
+02:35:44,620 --> 02:35:55,620
+CPU'muz 32 bit adres genişliğine sahip ve 32 bit data genişliğine sahip.
+
+633
+02:35:55,620 --> 02:36:03,596
+Buna göre biz adres alanlarımızı yani 32 adres genişliğimizi parçalarken
+
+634
+02:36:03,956 --> 02:36:09,556
+Veri erişimi için parçalarken, bu byte offset ve word offset nasıl oluşur diye bakacak olalım.
+
+635
+02:36:09,556 --> 02:36:19,636
+Şimdi, bizim bir blok genişliğimiz 64 byte olduğuna göre, kaç tane word sağlayabiliriz?
+
+636
+02:36:19,636 --> 02:36:22,436
+32 bit, bir wordümüz.
+
+637
+02:36:24,596 --> 02:36:29,876
+32 bit, bir wordümüz. Dolayısıyla, bir word
+
+638
+02:36:30,484 --> 02:36:39,283
+4 byte'a karşılık geliyor. Demek ki bizim bu 64 byte'lık satırımız içerisinde kaç tane word var? 16 tane word var.
+
+639
+02:36:42,424 --> 02:36:44,924
+Burada 16 tane word var.
+
+640
+02:36:45,876 --> 02:37:01,876
+Bu wordlerden herhangi birisini aldığımızda da bu word'un içerisinde 4 tane byte var. 4 byte olduğun yerden ısrakladık. 32 bitlik data genişliğine sahip olduğumuz için bizim bir seferde erişebildiğimiz veri 32 bit yani 4 byte'dan oluşuyor.
+
+641
+02:37:12,051 --> 02:37:14,111
+Ama cache kapasitesi ise
+
+642
+02:37:18,131 --> 02:37:35,731
+Cache kapasitesi de 1024 byte olsun toplamda. Buna göre fiziki adresi ayırıştıracağız.
+
+643
+02:37:42,260 --> 02:38:00,380
+İndex genişliğimiz ve tag genişliğimiz olarak bunları ayarlamayız. Tag genişliği birden fazla adres gözü aynı cache satısına denk gelebildiği için hangi adres gözünden gelen veri cache'te var bunu ayırt edebilmek için kullandığımız ayırt edici adres bölgesi.
+
+644
+02:38:05,791 --> 02:38:11,311
+Cache'in hangi satırında erişim yapacağı? Cache'in satırını index diyoruz.
+
+645
+02:38:12,191 --> 02:38:17,391
+Word offset, byte offset, cache'in bir satırında pek çok byte'dan oluşan bir veri var.
+
+646
+02:38:17,891 --> 02:38:25,051
+Bu veri hangi adresdeki word ve o word'ün hangi numaralı byte'ı onları ayırt ediyor.
+
+647
+02:38:25,932 --> 02:38:30,151
+Bize verilenler çerçevesinde bir word 4 byte'dan oluşuyorsa
+
+648
+02:38:30,675 --> 02:38:45,075
+4 byte'ı bizim memorimizde fizik olarak her bir gözümüz bir byte'dan oluşsun. 4 ayrı byte'ı ifade edebilmek için kaç byte'e ihtiyacımız var? Log2, 4. Yani 2 byte'e ihtiyacımız var. Demek ki bizim byte offset'imiz 2.
+
+649
+02:38:45,940 --> 02:39:12,180
+Her bir bloğumuz 64 byte'dan oluşuyor. Dolayısıyla 64 byte içerisinde kaç tane word var? 16 tane word var. Bu wordler arasında seçim yapabilmek için kaç byte ihtiyacımız var? 4 byte ihtiyacımız var. Şu ikisinin toplamı ne yaptı? 6 yaptı. Yani bir cache satırı içerisinde, yani bir blok içerisinde 2 üzeri 6. Yani 64 tane byte'dan herhangi birisi eşittirebiliriz.
+
+650
+02:39:12,819 --> 02:39:14,819
+Bunun sağlamasını bu şekilde yapmamız.
+
+651
+02:39:16,700 --> 02:39:18,939
+Cache kapatisitemiz 1024 byte.
+
+652
+02:39:19,239 --> 02:39:23,459
+Demek ki cache'te toplamda bir seferde 1024 byte saklanabiliyor.
+
+653
+02:39:24,000 --> 02:39:25,939
+Her bir satırımız 64 byte.
+
+654
+02:39:26,459 --> 02:39:28,259
+Öyleyse bu cache'in kaç satırı var?
+
+655
+02:39:29,079 --> 02:39:30,500
+1024 bölü 64.
+
+656
+02:39:34,759 --> 02:39:37,759
+4'e böl 16, 4'e böl 256.
+
+657
+02:39:38,708 --> 02:39:52,828
+16. Demek ki bizim cache'imiz 16 tane satırdan oluşuyor. Dolayısıyla bizim vermiş olduğumuz adres, cache'in hangi satırına gidecek? 16 tane satır olduğu için, satır seçimi içinde 4 biti ihtiyacımız var.
+
+658
+02:40:00,896 --> 02:40:06,976
+Bir satırdaki bir word'ü hangi byte ile ilgili erişim yapmak istediğimizi ayırt etmekte kullandık.
+
+659
+02:40:06,976 --> 02:40:14,976
+Yine 32 tane adres değerinin 4 tanesini bir satırdaki hangi word ile ilgili işlem yaptığımızı belirlemek için kullandık.
+
+660
+02:40:15,675 --> 02:40:23,056
+Yine bu 32 bitlik adresin 4 tanesini de cache'in hangi satırındaki veri ile ilgili işlem yaptığımızı ayırt etmek için kullandık.
+
+661
+02:40:23,316 --> 02:40:49,656
+Geriye ne kaldı? 4, 8, 10. Geriye 22 bit kaldı. Bu 22 bit de ardışık 64 byte'lık verinin ortak adres alanı. Yani biz memory'de 0 adresinden itibaren 64 tane byte'ı alsak bunların en yüksek anlamlı 22 biti hep aynı gerçek. Bu da bu 64 byte'lık bloğun.
+
+662
+02:40:50,000 --> 02:41:10,079
+Ortak ayırt edici adres bölgesi olarak karşımıza çıkmış oluyor. Dolayısıyla 32 bitlik fiziki adresi, 22 bit tag, 4 bit index, 4 bit byte offset ve 2 bit byte offset olmak şartıyla 4 parçaya ayırmamız gerekiyor.
+
+663
+02:41:11,380 --> 02:41:17,000
+Veriyi yerleştirirken de, veriyi okurken de buna göre bir işlem yapmamız gerekiyor.
+
+664
+02:41:17,523 --> 02:41:21,703
+Şimdi bir saniye diğer gruptan bir mesaj var.
+
+665
+02:41:45,652 --> 02:42:03,932
+Direct Map Cache'in adreslerini ayırmak bu şekilde. Bu ayırdığımız adresler bizim için önemli. Mesela biz bir adres eleşimi yapmak istiyor olalım. Örnek F00481216
+
+666
+02:42:08,211 --> 02:42:35,691
+16'da burada 32. 32 bitlik adres alanımız bu. Ben bu adrese erişmek istiyorum. Veri cache ile arayabilmek için şunu yapacağım. Bu egzeresimal bir sayı ya. Bunun iki düşük anlamlı bitine bakacağım. 0,0. Bu bizim byte offsetimizin. Daha sonra gelen 4 biti. Aslında bu adresi direkt yazıp öyle ilerlemek daha anlamlı olabilir. Şöyle yapalım.
+
+667
+02:42:38,548 --> 02:42:43,668
+Bu kalması lazım, pardon. Şu 32 bitlik adresi yazalım.
+
+668
+02:42:44,328 --> 02:42:48,348
+1111 1111 1111 1111
+
+669
+02:42:48,348 --> 02:42:53,087
+İlk 4x basamağı yazdım.
+
+670
+02:42:55,648 --> 02:42:58,628
+Şu f'i yazdım. Şimdi sıfırları yazıyorum.
+
+671
+02:43:01,128 --> 02:43:02,688
+Bizim uyguladığımız adres bu.
+
+672
+02:43:02,688 --> 02:43:04,688
+Bu veri
+
+673
+02:43:05,620 --> 02:43:25,484
+Bunu okumak istiyoruz. Bu adresi okumak istiyoruz. Ama önce gideceğiz cache'e bakacağız. Cache'e nasıl bakacağız? Şöyle bakacağız. 2 biti byte offset. 4 biti word offset. 4 biti index. Dolayısıyla gidiyoruz cache'imizin...
+
+674
+02:43:25,876 --> 02:43:31,456
+6 numaralı satırına bakıyoruz. Toplamda 16 tane satır var ya. Şunlar indekse karşılık gelenlerdi.
+
+675
+02:43:32,015 --> 02:43:37,835
+16 tane satırdan 6 numaralı cache satırına gidiyoruz. Cache'imizin 6 numaralı satırına gidiyoruz.
+
+676
+02:43:38,976 --> 02:43:45,056
+Bu 6 numaralı satırdaki tag alanına bakıyoruz. Bizdeki tag alanı hepsi birlerden oluşan bir değer.
+
+677
+02:43:45,835 --> 02:43:49,936
+Buradaki tag alanı ne? Hepsi birlerden oluşuyorsa aradığımız veri burada vardır.
+
+678
+02:43:50,355 --> 02:43:53,236
+Eğer ki bu cache'teki verinin tag değeri.
+
+679
+02:43:53,716 --> 02:44:15,476
+Bizimkinin tak değeriyle eşleşmiyorsa gideceğiz memuriden getireceğiz. Eşleştiğini varsayalım. Burada 64 tane byte var. Hangisini okuyacağız? Bu içeride 64 tane byte ama 16 tane word var. Hangi worde bakacağız? 0 indisindeki worde yani en düşük anlamlı adresdeki worde bakacağız. Bunun da en düşük anlamlı byte'ına bakacağız.
+
+680
+02:44:16,852 --> 02:44:26,391
+Şu adrestekine bakıyor. Bu veriyi okuyacağız. Aradığımız veri cache'te varsa, datanın en düşük anlamlı baykını okumamız gerekiyor arkadaşlar.
+
+681
+02:44:27,231 --> 02:44:33,432
+Şimdi diğer grupta bu noktada duracağı için bence dersi bu noktada sonlandıracağım. Bir diğer şeylere de bir bakalım.
+
+682
+02:44:34,672 --> 02:44:37,352
+Sanki sivaklara da bir bakalım. Son olarak neler var.
+
+683
+02:44:39,592 --> 02:44:43,992
+Ekses sayma geçmiş. Burada durabiliriz yani.
+
+684
+02:44:45,043 --> 02:44:53,043
+CESC ile ilgili kısımda genel bir tanım çerçevesi oluşturduk.
+
+685
+02:44:53,043 --> 02:45:06,043
+Artı, full associative, direct map ve set associative mantıkların tanımlarını verdik. Bunları fiziki olarak nasıl çalıştığını gördük ya daha iyi anlayabileceğim.
+
+686
+02:45:06,484 --> 02:45:24,283
+Özel olarak, spesifik olarak da DirectMath cache yapısı için fiziki adresinin nasıl bölünmesi gerekiyor, bu bölümleme çerçevesinde aradığımız veriyi cache'te nasıl bulabiliriz mantığını konuştuk. Daha sonraki haftalarda bunun devresini de konuşuyor olacağız.
+
+687
+02:45:24,283 --> 02:45:28,076
+Benzer şekilde diğer cache yapıları için de ilerlemeye çalışacağız.
+
+688
+02:45:28,340 --> 02:45:53,899
+Dolayısıyla bu haftalık ben dersi burada sonlandıracağım. Diğer grupta tekrar bir şekilde ilerleyebilmek adına. Sizin sormak istediğiniz bir konu varsa onu alalım. Yoksa dersi sonlandırı istememez. Var mı sormak istediğiniz bir şey? Önümüzdeki hafta dersi yok. Onu da bulma işlemi geldiği için. Daha sonraki iki haftada da birinde kısa sınav diğerinde de ödev 2 olacak sırasıyla. Bu şekilde ilerleyeceğiz.
+
+689
+02:45:58,195 --> 02:46:19,256
+Dersle ilgili mazeret sınavına girecek olan arkadaş varsa mazeret sınavını son hafta yaparız büyük ihtimal. Son hafta dersin son saatini falan gibi veya dersten sonraki bir saatte olabilir. Vizeler online olduğu için mazeretlerden online yaparız ama mazeretin bölüm tarafından kabul edilmiş olması gerekiyor. Tekrar hatırlatma olayım.
+
+690
+02:46:21,299 --> 02:46:28,299
+Bu çerçevede sormak istediğiniz bir şey varsa genelle ilgili bu haftaki konuyu da alalım. Yoksa dersi sonlandıralım.
+
+691
+02:46:39,796 --> 02:46:54,015
+Sanırım soru yok. Katılımınız için teşekkür ediyorum arkadaşlar. Katılımınız için teşekkür ediyorum. İki hafta sonra tekrar görüşürüz. Her size iyi yaşlı.
