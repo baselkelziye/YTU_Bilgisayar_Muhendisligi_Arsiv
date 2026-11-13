@@ -1,0 +1,2443 @@
+1
+00:00:19,187 --> 00:00:19,807
+Erhova, bu da.
+
+2
+00:03:22,451 --> 00:03:31,752
+Merhaba arkadaşlar, nasılsınız? Merhaba Doktor, nasılsınız? Merhaba hocam. Sesim geliyor mu? Merhaba hocam, geliyor.
+
+3
+00:03:42,292 --> 00:03:43,651
+Ses geliyor mu arkadaşlar?
+
+4
+00:03:45,451 --> 00:03:46,372
+Evet hocam geliyor.
+
+5
+00:03:47,032 --> 00:03:47,771
+Tamamdır.
+
+6
+00:03:49,391 --> 00:03:54,491
+Şimdi ben ilk gelen arkadaşımızla beraber başlayalım.
+
+7
+00:03:55,771 --> 00:03:58,012
+[öğrenci] öncesini gördüğüm gibi hatırlıyorum.
+
+8
+00:03:58,891 --> 00:04:00,771
+Ekran paylaşımı da vereyim ben bir.
+
+9
+00:04:02,372 --> 00:04:04,372
+Değerlendirmelere başlayalım arkadaşlar.
+
+10
+00:04:04,372 --> 00:04:05,032
+Evet.
+
+11
+00:04:06,707 --> 00:04:26,087
+Bu ders şeyde artık paylaşacağımız şunlar vardı. Sorunlar, yöntemlerde bulduğunuz sonuçlar nasıl ilerliyorsunuz? Yani aynı bir ufak bir yüksek lisans projesi gibi bunu düşünebilirsiniz. Tamam mı arkadaşlar?
+
+12
+00:04:27,348 --> 00:04:39,228
+Tamamdır hocam. Geçen haftadan aldığım bazı notlar vardı hocam. Onlar üzerinden ben ilerledim. Transfer Learning ile ilerleriz diye konuşmuştuk. Benim dataset'im bu arada Bintim ve O sınıflandırmasıydı.
+
+13
+00:04:39,987 --> 00:05:07,987
+Bu noktada MobileNet ve BGG'nin birkaç örneği üzerinde çalıştım. Halihazırda zaten üzerinde çalıştığım bir tane CNN vardı. Bunu Kaggle tarafından almıştım. Onun üzerine MobileNet ile şu an bir sistem çalıştırdım. Yaklaşık 3-4 saatlik runtime zamanları oldu. Şu an için daha iyi sonuçlar vermedi. Ağın tamamını eğitilebilir şekilde, trainable şekilde set ettim. Bu noktada çok büyük bir ağ olduğundan dolayı büyük ihtimalle daha...
+
+14
+00:05:07,987 --> 00:05:21,567
+Daha da fazla bir eğitim zamanına ihtiyaç duyuyor diye düşünüyorum. Onun dışında pre-processing yöntemleri üzerine bir bakabileceğimi söylemiştiniz. Hali hazırda yine zaten yapılan yöntemde bir crop mekanizmasının olduğunu gördüm.
+
+15
+00:05:22,036 --> 00:05:49,235
+Ancak onun üzerine daha da iyileştirilebilir şekilde bu kapatasının olduğu kısımlara kadar bir kesme uygulanabileceğini söylemiştiniz. O noktada şu an için pratikte bir şey yok hocam. O konuda araştırmalarım devam ediyor. Onun dışında dataset ile ilgili hocam, aslında bakarsanız benim babam da bu konuda şu an şeyde çalışıyor, radyoloji tarafında çalışıyor. Ondan da bir destek aldım. Bir görüntü vermek istiyorum hocam. Bir saniyemizi rica edeceğim.
+
+16
+00:05:50,867 --> 00:05:58,288
+Ben dataset'i incelediğimde aslında çok farklı açılardan çekilmiş görsellerin olduğunu gördüm.
+
+17
+00:05:58,367 --> 00:06:04,867
+Bazıları yanal olarak çekilmiş, bazıları beynin sadece olduğu gibi üstten çekilmiş görselleri.
+
+18
+00:06:06,228 --> 00:06:11,707
+Biraz sadece bu tip de var diye düşünmüştüm ama yanal olduğunu görmemiştim.
+
+19
+00:06:12,168 --> 00:06:14,867
+Bu şekilde olduğunda aslında hepsini aynı sisteme besliyoruz.
+
+20
+00:06:18,867 --> 00:06:23,307
+Ne olduğunu besleyebilirsek sisteme başarım oranlarını arttırabiliriz diye düşündüm.
+
+21
+00:06:23,847 --> 00:06:28,487
+Çünkü insan gözüyle ben bile baktığımda bu ikisi arasında doğrudan fark var.
+
+22
+00:06:29,467 --> 00:06:33,127
+İkisini aynı sisteme besleyip de sonuç beklemek çok mantıklı gelmedi.
+
+23
+00:06:33,888 --> 00:06:40,408
+İlk etapta belki de bunları sınıflandıracak bir ara katman yazıp onun sonucunu da A'a besleyip.
+
+24
+00:06:40,723 --> 00:06:49,723
+Bir şey daha vardı yani Braidsmin'li bir tane daha Brain MRI Dataset vardı.
+
+25
+00:06:49,723 --> 00:06:52,723
+9 MB'lık var hocam.
+
+26
+00:06:52,723 --> 00:06:54,723
+Bu neydi o ney lan?
+
+27
+00:06:55,723 --> 00:06:57,723
+Bu mu acaba hocam?
+
+28
+00:06:59,723 --> 00:07:03,723
+Braidsmin'e her yıl sene yayınlanıyor. 2019-2020.
+
+29
+00:07:03,723 --> 00:07:05,723
+Ha, o Bey'in alakalı.
+
+30
+00:07:07,444 --> 00:07:15,283
+Onları da deneyebilirsin. Bu da farklı bir şey herhalde değil mi?
+
+31
+00:07:15,283 --> 00:07:22,283
+Bu farklı bir dataset hocam. Zaten şöyle konuşmuştuk, ikinci bir dataset'i de validasyon için kullanırız diyorduk hocam.
+
+32
+00:07:22,283 --> 00:07:28,604
+Bu noktada ben bunu kullanabilirim diye düşündüm. Daha küçük bir dataset. Yaptığımız işleri bunda da bir test edebiliriz.
+
+33
+00:07:28,604 --> 00:07:32,604
+Brakes miydi? Ne demiştiniz siz?
+
+34
+00:07:35,411 --> 00:07:37,072
+Breast için bir tane vardı hocam.
+
+35
+00:07:37,491 --> 00:07:39,651
+Breast diye bir data seti var.
+
+36
+00:07:40,391 --> 00:07:43,751
+Bir 400x var ama bu bambaşka bir şey hocam. Sanırım bu değildir.
+
+37
+00:07:46,411 --> 00:07:48,731
+Hayır, ben sana şimdi bir şey göndereyim.
+
+38
+00:07:52,572 --> 00:07:54,991
+2015'inde var, 2018'de var.
+
+39
+00:08:01,235 --> 00:08:03,235
+2021'de de yapmışlar.
+
+40
+00:08:07,444 --> 00:08:19,204
+2020 versiyonu da var zannedersem ya. Ben göndereyim. 2020'yi bakalım görebilecek miyiz?
+
+41
+00:08:22,324 --> 00:08:34,403
+2019'da varmış. Ben şimdi chatten gönderiyorum sana. Bu dataset'lerin şeyleri de baya iyi.
+
+42
+00:08:34,416 --> 00:08:43,816
+Ne derler? Tabi bu daha çok segmentasyon dataset yani şey değil. Classification yapacaksan başka MRI dataları araman lazım.
+
+43
+00:08:43,816 --> 00:08:47,416
+Classification hocam, asıl odaklandığım konu şu an için o.
+
+44
+00:08:47,416 --> 00:08:53,416
+Eğer şey istediğiniz, senin datasetinin boyutu neydi?
+
+45
+00:08:53,416 --> 00:08:55,916
+90 MB civarındaydı hocam.
+
+46
+00:08:56,436 --> 00:09:08,636
+Düşükmüş. Yani bunlara da bir bakıver. Farklı çünkü yanal MR şeyleri de var sende. Yani çok böyle benzer tatil ürün ma şansı biraz yok gibi orada.
+
+47
+00:09:09,736 --> 00:09:10,776
+Bu kadarmış hocam. Aynen.
+
+48
+00:09:12,416 --> 00:09:20,355
+Burada mesela Brain Tumor Classification. Başka var mı Brain Tumor Classification ile alakalı?
+
+49
+00:09:20,884 --> 00:09:33,844
+Çok sınırlı sayıda var hocam. Özellikle classification tarafında. Kaggle tarafında benim bulabildiğim, şu an üzerinde çalıştığım bu. Bir tane de çok daha düşük boyutlu. 9 MB'li bu dataset vardı. Onun dışında pek bulamadım.
+
+50
+00:09:33,844 --> 00:09:44,804
+Ranked Work classification. Bu detection hatta hocam. Bu classification da değil. Yani yes no şeklinde sadece paketler ayrılmış.
+
+51
+00:09:49,524 --> 00:09:54,763
+Şurada da bir tane vermiş ama hangi latasırtı kullanmış bir bakar mısın?
+
+52
+00:09:55,524 --> 00:09:56,063
+Tabii hocam.
+
+53
+00:10:11,155 --> 00:10:18,955
+Olmadı şeye dönüştüreceğiz. Segmentation'a dönüştürürüz senin şeyini. Olur hocam. Sorun olmayacaktır benim için.
+
+54
+00:10:20,244 --> 00:10:38,844
+Önemli olan. Şimdi burada şey var. Transformer tabanlı segmentation'lar. Transformer, Brain Tumor Segmentation'ı en son gönderdim. Bir bak bakalım orada. Classification yerine acaba buna mı geçsek acaba? Transformer tabanlı. Transformer'lar, Visual Transformer'lar.
+
+55
+00:10:39,216 --> 00:10:41,135
+Bayağı bir yaygınlaştı.
+
+56
+00:10:43,036 --> 00:10:45,076
+Bölütleme açısından. Böylece
+
+57
+00:10:45,076 --> 00:10:49,395
+Bratz Dataset'ini de kullanabiliyorsun. Bu sana en son gönderdiğim
+
+58
+00:10:49,395 --> 00:10:53,135
+yayın hangi Dataset'i kullanıyor bilmiyorum ama bir bakayım hızlıca
+
+59
+00:10:53,135 --> 00:10:57,276
+yayınına. Hangi Dataset'i kullanmış bu?
+
+60
+00:11:00,855 --> 00:11:01,576
+Experiment
+
+61
+00:11:07,827 --> 00:11:09,827
+Bunlar kendi şeyleri mi?
+
+62
+00:11:11,587 --> 00:11:16,947
+Brad status setini kullanmış. Bence buna doğru kaymak daha mantıklı olabilir ya.
+
+63
+00:11:17,235 --> 00:11:36,336
+Daha böyle hani lokalizasyonunu bulabilmek. Ondan sonra şöyle bir şey yapılabilir belki ikinci adım olarak. Senin de elde segment ettin sen segmentini buldun tümörün. Artı kendininkinde de şu classification yaptığında dört tip var.
+
+64
+00:11:36,851 --> 00:12:03,851
+Bu segmentlerin etrafında bir bounding box çizerek yaklaşık ne kadar eşit olacak? 256'e 256 diyelim. Merkez alacak şekilde. Arkasından senin şu classification network'üne. Tabi o classification network'ün de segmenti yapman yeterli bir projede ama ilerletelim bir dergi yayınına dönüştürelim hocam dersen şayet.
+
+65
+00:12:04,916 --> 00:12:18,076
+Classification'la da, AT Network'le bu bulduğumuz tümörleri klasifiye etmeye çalışıyoruz. Ama elimizde tabii ki şey olmayacak. Ne derler? Karşılaştırma imkanı olmayacak.
+
+66
+00:12:19,036 --> 00:12:19,256
+Evet.
+
+67
+00:12:19,836 --> 00:12:29,916
+Ama olsun diyelim. Belki elle bir şeyler yapabiliriz. Çok ayrıştırılabiliyor mu bilmiyorum. Klaslar falan. Hem sen gördüğün zaman ayrıştırabiliyor musun? Veya babandan yardım alıp...
+
+68
+00:12:30,100 --> 00:12:40,000
+Test için kullandığımız tümör cinsi, 4 tane burada biliyorum tümör vardı. Birkaç tane daha var senin gördüğün.
+
+69
+00:12:40,000 --> 00:12:43,899
+Ayrıştık. Daha doğrusu 3'e ayırıyoruz. No tümörle beraber.
+
+70
+00:12:43,899 --> 00:12:48,200
+Ayrıştık. Biliyor mu göz, vücudu olarak? Onu bilmiyorum.
+
+71
+00:12:48,200 --> 00:12:54,899
+Ama segmentasyona yönelelim istersen. Ama classification yapacağım diyorsan, kaç tane örnek ver her bir sınıftan?
+
+72
+00:12:54,960 --> 00:13:01,180
+Training tarafında baya fazla sayıda var hocam. Bir saniye, notunu şurada almıştım.
+
+73
+00:13:05,107 --> 00:13:12,267
+2870 tane var. Yaklaşık No2More hariç. Her birinden 800 tane var hocam.
+
+74
+00:13:12,267 --> 00:13:21,507
+İşte segmentasyon tarafı biraz daha böyle sanki şey gibi. Ama ben seni zorlamıyorum tabii. Sen bu konudan hoşlandım, devam edeceğim.
+
+75
+00:13:21,507 --> 00:13:25,747
+Üzerine biraz daha klasifik eşim. Ben sadece bu data setiyle çalışacağım diyorsan.
+
+76
+00:13:26,515 --> 00:13:33,176
+Çalışırsın. Bir ikinci dataset bulunabilse çok daha güzel olur. O yes no dataset de olur bence.
+
+77
+00:13:33,176 --> 00:13:37,015
+Olur mu? Tamamdır. Onu da kullanabilirim öyleyse hocam. Çünkü bayağı yakın gözüküyor.
+
+78
+00:13:37,015 --> 00:13:48,716
+Öbür türünde sadece tümör var tümör yok. Önce bunu eğitmen lazım. Tümör var tümör yoku burada da yapabiliyorsun biliyorsun değil mi? Glioma, menüjioma, pideolaryayı sıfır yapıp...
+
+79
+00:13:48,768 --> 00:14:02,768
+Pardon, bir yapıp no tümörle bir yaparsan, pardon sıfır yaparsan, böylece benzetebilirsin. Orada hediye ettiğin sonuca göre arkasından bu ikinci bulduğun data sette.
+
+80
+00:14:03,796 --> 00:14:29,716
+Tümör ayrıştırmanı burada yapabiliyorsan alt sınıfları bulmanın yüzdesini arttırabilirsin burada. Yani ikinci bulduğun data set ile gerçekten tümör tespit edebilen bir ağ yapabiliyorsan, biraz verirsin beslersin. Daha sonra tümör tümörsüz şeklinde. Ondan sonraki adım üç sınıflı. Tümör var deyince üç sınıfa bölüp böylece test etme, sayısal olarak bir karşılık bulabilme şansına da sahip olabilirsin.
+
+81
+00:14:31,796 --> 00:14:35,176
+Assemble Learning'e de ilerlemiş oluyoruz gibi gözüküyor hocam değil mi?
+
+82
+00:14:35,176 --> 00:14:37,516
+Assemble değil de bu benim dediğim şey.
+
+83
+00:14:40,563 --> 00:15:05,943
+Başka bir transfer learning aslında bu. Sen aslında bir ağda öğrendiğin yapıyı, ikinci data setin diyorum, var yok data setin diyorum. Buraya uyarlıyorsun. Burada aslında dört sınıf gözüken şeyi, üç sınıf bir yere, tek sınıf bir yere. No tümör bir tarafı, öbür tarafı bir yere yapıyorsun. Sonra bu tümör var denilenleri klasifiye etmek için kendi içerisinde eğitiyorsun. Böyle bir şey de gerekiyor tabii.
+
+84
+00:15:06,515 --> 00:15:31,235
+Anladım hocam. Tamamdır. Bir miktar ışık yandı o konuda şu an benim aklımda. Aslında ben klasifikasında kalmayı tercih ederim hocam. O yüzden ikinci söylediğiniz benim için daha cazip geldi şu aşamada. Bir diğer konuştuğumuz şey de hocam referansları bir latex dosyasına aktarmamı söylemiştiniz. Onun için çalışma yaptım. Ancak şu an açıkçası rapora bir şey yazmadım. Bir saniye kısmını göremiyorum.
+
+85
+00:15:31,648 --> 00:15:44,028
+Bu dataset'ini kullanmış, benzer dataset'leri bir tara. Onlar ne sonuçlar bulmuşlar, geçmiş sonuçlar, datayı nasıl anlatmışlar. Bunlar da önemli tabii bizim için.
+
+86
+00:15:44,416 --> 00:16:07,996
+Tamamdır hocam. Onları zaten araştırmaya devam ediyorum. Özellikle bu haftam MobileNet'i nasıl kodu aktarıp çalıştırabilirim kısmıyla geçti. Onun tutoryallarını çalıştırmakla geçti. MobileNet tarafında hocam şöyle bir durum var. Ben %31 başarım elde ettim ki bu başarım değil aslında. Çünkü 4 tane sınıf var. Zaten ben random bile yapmış olsam %25'i elde ediyorum. O bakımdan %30 hiçbir şey değil.
+
+87
+00:16:12,416 --> 00:16:18,996
+RGB imajlar üzerinde çalışıyor olması mı diye düşündüm. Sizin bir yorumunuz olur mu? Normalde bunlar üzerinde çalışıyor çünkü.
+
+88
+00:16:19,636 --> 00:16:22,196
+Ya şimdi eldeki data biktarı da az senin.
+
+89
+00:16:23,796 --> 00:16:25,896
+İstins olarak var ama boyut çok az.
+
+90
+00:16:25,916 --> 00:16:29,736
+Yani ben o yüzden segmentasyona biraz geçebilirsin diye şey yapmıştım.
+
+91
+00:16:29,736 --> 00:16:34,636
+Yani 800 data düşük, gerçekten düşük.
+
+92
+00:16:35,136 --> 00:16:38,536
+Yani o implementation yapılıp biraz daha bakılabilir.
+
+93
+00:16:38,912 --> 00:16:43,952
+Eğer bulunamıyorsa, baktın yükseltemiyorsun, direkt segmentation'a kaç bence.
+
+94
+00:16:44,532 --> 00:16:47,592
+Tamam hocam, o benim kaçış planım olacak o durumda o zaman.
+
+95
+00:16:48,592 --> 00:16:54,772
+Onun dışında farklı da bir durum yoktu hocam. Sizin aktardıklarınızı not almıştım. Bu şekildeydi.
+
+96
+00:16:55,172 --> 00:17:02,112
+Tamamdır. Tamam, kolay gelsin. Colab kullanıyorsun yoksa Anaconda, yerelde mi çalışıyorsun?
+
+97
+00:17:02,272 --> 00:17:05,332
+Yerelde, PyCharm'da, kendi bilgisayarımda çalıştırıyorum hocam.
+
+98
+00:17:05,683 --> 00:17:12,744
+Ama Colab'de de hızlı sonuçlar elde edebilmek için, en azından bilgisayarı da meşgul etmemek için Colab'i de tavsiye ederim.
+
+99
+00:17:13,423 --> 00:17:14,943
+Tamamdır hocam, ona da bakıyor hocam.
+
+100
+00:17:15,244 --> 00:17:17,884
+Tamamdır. Hadi kolay gelsin, görüşürüz yine.
+
+101
+00:17:18,144 --> 00:17:19,144
+Sağ olun hocam, teşekkürler.
+
+102
+00:17:19,304 --> 00:17:21,963
+Sırada kim anlatmak istiyor? Sıradaki arkadaşım kim?
+
+103
+00:17:23,744 --> 00:17:25,784
+İsteyen yoksa ben anlatabilirim hocam.
+
+104
+00:17:26,324 --> 00:17:27,704
+Tamam, [öğrenci] buyur sen.
+
+105
+00:17:29,652 --> 00:17:31,791
+Kamera açayım hocam isterseniz.
+
+106
+00:17:32,352 --> 00:17:33,812
+Teşekkür ediyorum. Sen değilsin.
+
+107
+00:17:36,372 --> 00:17:37,771
+Sağ olun hocamsın. Nasılsın?
+
+108
+00:17:38,532 --> 00:17:41,332
+Sağ olasın. Sen nasılsın? Devam ediyoruz böyle.
+
+109
+00:17:42,872 --> 00:17:48,052
+Hemen ekran paylaşıyorum hocam. Ben geçen hafta sunum yapmamıştım hocam hatırlıyorsunuz.
+
+110
+00:17:49,751 --> 00:17:53,632
+Evet, hisam ettim. Ama bugün bomba gibi bir çıkış yapacağını tahmin ediyorum.
+
+111
+00:18:00,372 --> 00:18:02,652
+Altta ki eşit düğmeye bas, share yap.
+
+112
+00:18:03,872 --> 00:18:06,012
+Sunu bulmaya çalışalım da hocam çok fazla pincer açık.
+
+113
+00:18:09,587 --> 00:18:12,748
+Yan ekranın çıkıyor şu anda senin herhalde.
+
+114
+00:18:15,447 --> 00:18:17,587
+Şu an doğru slide geliyor musun hocam?
+
+115
+00:18:17,667 --> 00:18:18,167
+Evet, evet.
+
+116
+00:18:20,667 --> 00:18:25,307
+Hocam ben arkadaşlar, öyle hitap edeyim.
+
+117
+00:18:26,548 --> 00:18:34,967
+Akciğer ve kolon kanserinin histopolojik, histopatolojik resimlerini sınıflandırmasıyla alakalı çalışacağım.
+
+118
+00:18:37,811 --> 00:18:59,551
+Motivasyon olarak şöyle söyleyeyim. Zaten tıp alanında machine learning artık yaygınlaştı. Ve de doktorların manuel seçimi yapmasındansa artık bilgisayar yardımıyla bu seçimler bu şeyleri çok daha hızlandırıyor. Hem zamandan hem de iş gücünden tasarruf ettiriyor.
+
+119
+00:19:02,516 --> 00:19:15,396
+Kanserde erken teşhis çok önemli bir şey. Özellikle akciğer kanserinde ve kolon kanserinde erken teşhis hayat kurtarıyor. Dolayısıyla bizim burada kazandıracağımız hız tıpa çok büyük katkı sağlayacaktır.
+
+120
+00:19:15,816 --> 00:19:27,716
+Akciğer kanserinden çok kısa bahsedersem. Akciğer kanseri 3 tane yaygın türü var. Adenokarsinoma, Sucamusser karsinoma ve Dertser karsinoma diye.
+
+121
+00:19:29,491 --> 00:19:50,311
+Karsinoma aslında kanserli dokuyu ifade eden, kötü hücül tümleri ifade eden bir ifade. Öyle bir kelime. Baktığımız zaman adeno karsinoma akciğer kanseri türleri arasında %40-50'lik bir yeri kaplıyor. Yine skramus ter karsinoma %30'luk bir kesimi kaplıyor. Lerts ter karsinoma ise çok daha nadir görülen bir tür.
+
+122
+00:19:51,347 --> 00:19:58,508
+Ve vaktimizden bizim data setimiz içerisinde adenokarsinoma ve skonosal karsinoma türlerine ait örnekler var.
+
+123
+00:19:59,208 --> 00:20:04,427
+Ve de beniyim dediğimiz iyi huylu dokulara ilişkin örnekler var.
+
+124
+00:20:06,967 --> 00:20:13,288
+Kolon kanserine geldiğimiz zaman kolon kanseri de dünyada üçüncü en popüler kanser türünden birisi.
+
+125
+00:20:13,748 --> 00:20:15,148
+Üçüncü en popüler kanser türü.
+
+126
+00:20:16,559 --> 00:20:24,700
+Ve de erken teşhiste %90 bir kurtulma şansı var. O yüzden kolon kanserize çok önemli bir yer tutuyor makine öğrenmesi.
+
+127
+00:20:25,539 --> 00:20:35,019
+Yine kolon kanserinde de bizim datasetimizde adenokarsinoma ve iyi huylu tümör olarak, iyi huylu doku örneği olarak iki farklı sınıfımız olacak.
+
+128
+00:20:35,779 --> 00:20:43,420
+Datasetimizi incelersek, çok popüler bir dataset aslında. Özellikle literatürde de yeri olan bir dataset.
+
+129
+00:20:47,380 --> 00:20:48,240
+Bir dakika.
+
+130
+00:20:53,748 --> 00:21:10,148
+Devam ediyorum. Datasetimizde 25 bin tane imaj dosyası var. Bunlar 5 sınıfa ait. Aslında bunların 15 bin tanesi akciğer kanserine ait, 10 bin tanesi ise kolon kanserine ait. 5'er bin tane örnek var biraz önce gösterdiğim her bir resim için.
+
+131
+00:21:11,508 --> 00:21:21,968
+Bunlar çok farklı mı birbirlerinden? Mesela Lang Adonikarsinoma ile Kolon Adonikarsinoma birbirinden çok farklı mı?
+
+132
+00:21:21,968 --> 00:21:31,008
+Yani biz bunları yapılan çalışmalarda 5 sınıflı mı çalışmışlar yoksa 3 artı 2 sınıflı farklı farklı Lang artı Kolon diye mi çalışmışlar?
+
+133
+00:21:31,408 --> 00:21:39,148
+Biraz önce biraz sonra şeyleri de göstereceğim. Literatürde ve internetteki kod analiklerinde göstereceğim. Çalışan insanlar genelde.
+
+134
+00:21:39,220 --> 00:21:50,420
+Ya akciğer kanserini ya kolon kanser üzerine çalışmışlar. İkisini birden çalışanlar da ayrı ayrı değerlendirmişler. 5 sınıf olarak değil de 3 sınıfta 2 sınıf olarak ayrı ayrı çalışmışlar. Bu şekilde değerlendirmişler.
+
+135
+00:21:51,700 --> 00:21:57,980
+Baktığımız zaman ben işin uzmanı olmadığım için gözle baktığım zaman renk ayrımı dışında çok bir şey fark edemedim.
+
+136
+00:21:58,740 --> 00:22:01,860
+Yine aynı şekilde burada da baktığınız zaman örnekler üzerinden özellikle farklı bir çalışma.
+
+137
+00:22:01,860 --> 00:22:04,220
+Bu da şeye bakmak lazım belki kabaca.
+
+138
+00:22:05,880 --> 00:22:14,320
+Hücrelerin normal yapılarda, binayen yapılarda hücrelerin morfolojisi, yuvarlaklığı biraz daha sabitken,
+
+139
+00:22:14,840 --> 00:22:18,259
+karsinomlarla beraber o hücrelerin deformasyonu başlıyor.
+
+140
+00:22:20,259 --> 00:22:22,259
+Yani şekilleri bozuluyor.
+
+141
+00:22:23,251 --> 00:22:28,731
+Evet, biraz daha parçalı şekiller varken aslında böyle o şekillerde biraz daha birleşme oluyor gibi.
+
+142
+00:22:30,111 --> 00:22:31,331
+Kanserli hücrelerde.
+
+143
+00:22:34,031 --> 00:22:36,451
+Yine zaten şey, dataset'ten bahsetmiştim.
+
+144
+00:22:37,231 --> 00:22:39,351
+5 farklı klastan oluşuyor. 5 farklı klastan oluşuyor.
+
+145
+00:22:39,351 --> 00:22:39,871
+Burada belirttik.
+
+146
+00:22:40,871 --> 00:22:41,791
+İyi size etmişler.
+
+147
+00:22:42,311 --> 00:22:46,131
+768-768 JPEG formatında resimlerimiz var.
+
+148
+00:22:49,556 --> 00:23:12,316
+Onun haricinde 2019'da çıkan güncel bir dataset diyebiliriz. 53 tane Kaggle kod örneği var. 2 GB'lık bir datasetimiz. Normalde datasetimiz her biri 250'şer tane örnek olacak şekilde ama bunu algüment ederek, geliştirerek 20 katına çıkarmış hatta datasetin büyüklüğünü.
+
+149
+00:23:16,180 --> 00:23:29,539
+Kaggle'daki örneklere bakarsak hızlıca, daha doğrusu internetteki örneklere bakarsak, iki tane Kaggle'dan örnek aldım. Bunlardan bir tanesi ResNet 50 önceden eğitilmiş modelini kullanıyor.
+
+150
+00:23:30,132 --> 00:23:38,572
+Bu akciğer kanseri üzerinde bir eğitim yapmış. Veri setine 12.000'e 3.000 olarak, 15.000'lik veri setine 12.000'e 3.000 olarak verilmiş.
+
+151
+00:23:38,892 --> 00:23:46,632
+Train ve validation olarak. Yine aynı sete 15.000 örnek olarak teste kullanmış. 20 epok üzerinden çalışmış.
+
+152
+00:23:46,632 --> 00:23:53,491
+Ne yapmış yapmış onu anlayamadım ben. Yani sonuçta akciğerde 3 tane vardı değil mi sınav?
+
+153
+00:23:53,759 --> 00:23:56,400
+Evet, toplamda 15 bin örnek var Akciğer'de.
+
+154
+00:23:56,460 --> 00:23:59,519
+Kaç tanesini train için kullanmış? 12 bin tanesini.
+
+155
+00:23:59,880 --> 00:24:01,519
+3 bini validation için kullanmış.
+
+156
+00:24:01,980 --> 00:24:04,720
+Bir şey kalmıyor geriye, 15 bin etti zaten.
+
+157
+00:24:06,000 --> 00:24:08,600
+İşte biraz acemice bir çalışma olmuş.
+
+158
+00:24:09,715 --> 00:24:11,755
+Baktığımız an testte de yine aynı örnekleri kullanmışsın.
+
+159
+00:24:11,755 --> 00:24:26,596
+Öyle bir şey yapılabilir. Burada k-fold cross-validation kullanabilirsin sen. Yani 15.000'lik seti 5'e bölersin. 4 tanesini train için veya 3 tanesini train, bir tanesini validation, bir tanesini testi ararsın.
+
+160
+00:24:26,596 --> 00:24:37,596
+Böylece validation ve testin ve train'in yerlerini değiştik, onların ortalamalarını aldığında ortalama bir başarım çekmiş olur. Dolayısıyla hiç bakmadığın test kısımların test train...
+
+161
+00:24:37,715 --> 00:24:41,235
+Bu da trend test datası ayrık mıydı?
+
+162
+00:24:42,735 --> 00:24:45,755
+Bir ayrım yok. Ayrımı biz kod içinde kendimiz yapıyoruz.
+
+163
+00:24:47,336 --> 00:24:54,735
+Diğer örneklere baktığımızda zaten belediye işini ikiye böldüklerini, 1500-1500 olarak, 1500-1500'de test örneği çıkardıklarını göreceğiz.
+
+164
+00:24:55,235 --> 00:24:59,915
+12.000'e 1500-1500 şeklinde de bölebiliyorlar. Bu şekilde yapılan örneklerde var.
+
+165
+00:25:00,372 --> 00:25:18,811
+Mesela Kegel'deki ikinci örneğe baktığımız zaman yine ResNet-18 ve ResNet-152 modellerini kullanmış. ResNet-18'i akciğer kanseri için, ResNet-152 kolon kanseri için kullanmış. Burada %70'e %30 bir ayırma yapmış. Test için yine aynı verileri kullanmış.
+
+166
+00:25:20,531 --> 00:25:36,911
+Burada da pre-trained yani transfer learning ile zaten %94 ve %99'a vardım diyor. Test için tamamını mı kullanmış bu sefer? Zaten öğrendiği verilerle test etmiş gibi.
+
+167
+00:25:37,831 --> 00:25:44,911
+Burada test yanlış hocam, çıkarmayı unutmuşum buradan. Test yapmıyor. Validation Accuracy paylaşmıştı.
+
+168
+00:25:45,044 --> 00:25:50,944
+Ben kodu çalıştırmadım. Ayrıyeten sadece test için bir verisiyeti bırakmamış.
+
+169
+00:25:51,944 --> 00:25:55,684
+İşte burada şey yanlıştır bu paperlardaki.
+
+170
+00:25:56,104 --> 00:25:59,104
+%70 sabit ayırıp %30 yapılmaz.
+
+171
+00:25:59,104 --> 00:26:01,384
+Yani burada şey yapılması lazım.
+
+172
+00:26:01,724 --> 00:26:04,784
+K-fold cross-validation yapıp ortalamasının alınması lazım.
+
+173
+00:26:05,364 --> 00:26:12,903
+Bunlar aslında Pepper'dan değil de Kaggle örneklerinden olduğu için hocam muhtemelen biraz da çok progresyonel yaklaşmamışlar.
+
+174
+00:26:13,243 --> 00:26:13,624
+Ben de.
+
+175
+00:26:14,763 --> 00:26:17,543
+Ama iyi bir sonucu varmış sonuçta.
+
+176
+00:26:18,583 --> 00:26:25,644
+Evet yani validation'da güzel bir sonucu varmış. Testte aynı başarıyı sağlar mıydı bilmiyorum. Test sonucu yok diye zaten yazmışım alta.
+
+177
+00:26:27,092 --> 00:26:33,352
+Baktığınız zaman iki örnek de Gitab'da buldum. Gitab'da yine TensorFlow'lar üzerinde, keras üzerinde çalışan bir örnek var.
+
+178
+00:26:34,132 --> 00:26:41,172
+İki örneğimizle benzer şekilde CNN kullanmış, 3 tane Convolution Pool-in Payload'ları kullanmış.
+
+179
+00:26:41,172 --> 00:26:50,112
+Yani Convolution Pool-in şeklinde 3 tane katman kullanmış. Bir tane de gizli katman kullanarak 4 katman da bu işi halletmiş.
+
+180
+00:26:51,347 --> 00:27:08,307
+Burada da sanki 10.000 data kullanmış ama sadece kolon. Kolon kanseri olduğu için burada 10.000 örnek var. Bu 10.000 örneği 8.000'e 1000, 1000 şekilde bölmüş. Biraz daha mantıklı bir bölüm olmuş. 10 epok üzerinden gidince test ekürüsü olarak %88'e ulaşmış.
+
+181
+00:27:08,307 --> 00:27:10,107
+Epokları çok düşük tutmuşlar ama.
+
+182
+00:27:11,567 --> 00:27:18,048
+Evet, baktığımız zaman şeyde literatürdeki örneklerle daha yüksek epoklarla daha güzel bölgelerle ulaşmışlar.
+
+183
+00:27:20,500 --> 00:27:29,900
+Gitaptaki diğer örneğe girsek, son örneğimiz. Burada keras üzerinde çalışmış, benzer bir yapı kullanmış. Bu sefer akciğer verisi üzerinde çalışmış bu arkadaş.
+
+184
+00:27:35,600 --> 00:27:45,200
+Pre-processing yapmış burada. Pre-processing olarak sadece şey yapmış, resize etmiş imicilere. 80'e 80 olarak resize edip o şekilde vermiş.
+
+185
+00:27:46,003 --> 00:27:51,023
+Yine %80'e %10, %10 şeklinde train ve değişimi testte bölmüş.
+
+186
+00:27:51,503 --> 00:27:55,723
+Güzel 25 ipok üzerinde çalıştırınca %92 bir ekürasiye ulaşmış.
+
+187
+00:28:00,403 --> 00:28:17,783
+Şimdi alandaki, daha doğrusu bu dataset üzerindeki ilgili literatürdeki çalışmalara baktığımız zaman, ben buraya 2021 yılında yayınlanmış 4 tane çalışmayı aldım ama biraz popüler bir dataset olduğu için çok daha fazla çalışma arandığı zaman bulunabiliyor.
+
+188
+00:28:17,783 --> 00:28:20,463
+Ben örnek olarak 4 tanesini inceledim sadece burada.
+
+189
+00:28:21,523 --> 00:28:48,283
+Burada Capsule Network olarak araya bir slide ekledim. Çünkü Capsule Network kullanmışlar literatürde. Buna o yüzden bir arada açıklama gireymiştim. 2017'de Geoffrey Hinton tarafından ortaya atılmış Capsule Network. CNN'deki pooling katmanının veri kaybına sebep olduğunu, dolayısıyla veri üzerine doğru bir sınıflandırma yapılsa dahi resim üzerindeki nesnenin yeri değiştiği zaman
+
+190
+00:28:48,884 --> 00:29:10,463
+Bu sınıflandırmayı yapamadığı gözleniyormuş. Bu veri kaybını önlemek adına pooling katmanını kaldırmış onun yerine kapsülleri kullanıyor. Yine activation function olarak da RELU yerine squashing function denilen bir fonksiyon kullanıyor kapsüle networklerde.
+
+191
+00:29:10,880 --> 00:29:36,359
+Temel olarak kapsül netförtü bu şekilde diyebiliriz. Yandar esimde de örnek olarak vermiş, insan yüzünde normal CNN'de baktığımız zaman her bir objenin, yani gözün, kaşın, ağzın hepsinin sadece olup olmaması ile ilgileniyor CNN. Ama kapsül netförtü baktığımız zaman bunların konum bilgisini de tutuyor. Dolayısıyla daha düzgün bir sınıflandırma yapabiliyoruz.
+
+192
+00:29:37,811 --> 00:30:02,671
+Literatürdeki ilk örneğimize bakarsak, yine kapsül network üzerine bir geliştirme yaparak gidilmiş. Burada multi-input kapsül network demiş. Çünkü kapsül network'te aradaki kapsül katmanını ikiye bölmüş. Bir convolution layer olmuş, bir de separable convolution layer denir. İki tane layer'a bölmüş bunu. Bir tanesine...
+
+193
+00:30:02,963 --> 00:30:18,923
+Ön işleme yapılmamış ham veriyi veriyor. Bir tanesine de ön işleme yapıp o şekilde veriyor veriyi. Sonra iki katmandan çıkan sonucu kapsüle gönderiyor. Bu şekilde bir çalışma yapmış ve %99.58.
+
+194
+00:30:19,763 --> 00:30:45,683
+Bir accuracy'ye ulaşmış. Gayet güzel bir accuracy gözüküyor. Ama zaten literatürlük çalışmalara baktığımız zaman bu sene çok güzel sonuçlar elde etmişler zaten herkes. Burada pre-processing dediğimizde de color balancing, gamma düzeltmesi, yine image sharpening ve multi-scale fusion şeklinde pre-processing işlemleri yapılmış.
+
+195
+00:30:46,579 --> 00:31:13,879
+İkinci literatür dükkanemize baktığımız zaman yine kapsül network üzerine çalışıyor. Burada dual horizontal, ben de şu an şey gözükmüyor hocam. Dual horizontal squash kapsül network demesinin sebebi iki farklı, burada ne diyorduk?
+
+196
+00:31:14,644 --> 00:31:40,384
+Buradaki yapıyı çok anlamadım ama yine kapsül network üzerine bir yapı oluşturduğunu anladım ama tam olarak şeyi anlamadım. Burada yine akciğer ve kolon kanseri üzerine bir sınıflandırma üzerine çalışmıştı. Ve de her iki data seside kullanıp toplamda %99.23'lük bir overall accuracy'ye ulaşmış. Bu çalışma aslında birinci verdiğim çalışmadan daha önce bir çalışma.
+
+197
+00:31:40,852 --> 00:32:01,392
+Traditional Capsule Network'te, geleneksel Capsule Network'te %85 accuracy'e ulaşılırken bu arkadaşlar %99.23'e ulaşmış ve en iyi accuracy bizde diyorlardı. Aradan birkaç ay geçtikten sonra yine 2021 yılı içerisinde bir önceki örnekte bu geçilmiş.
+
+198
+00:32:08,019 --> 00:32:24,240
+Siener algoritmalarının, Siener modellerinin karşılaştırmasını yapıyor ve burada bizim Akciğer dataset'imizi kullanmış. Burada 3 farklı dataset diyor ama 3 farklı dataset aslında bizim Akciğer dataset'imizin resimlerinin sadece resize edilmiş hali.
+
+199
+00:32:25,240 --> 00:32:34,839
+Arası koparmış mı içinden? O yüzden mi 20 bine çıkmış? Resize edilmiş hali mi yoksa parçalarının alındığı hali mi?
+
+200
+00:32:36,372 --> 00:32:43,372
+Onu kaçırmışım hocam gözden önce. Resize ediliyor ama resimlerin miktarının...
+
+201
+00:32:43,372 --> 00:32:53,172
+Yok yok, resize değil o. 768'lik resimde 364'lük parçalardan, 384'lük parçalardan kaç tane çıkarabilirsin?
+
+202
+00:32:55,392 --> 00:32:57,152
+Normalde dört katı çıkması lazım.
+
+203
+00:32:57,672 --> 00:32:59,271
+Zaten 5000 çarpı 4000.
+
+204
+00:33:00,692 --> 00:33:04,692
+20 bin o şekilde ama 192-192 duran 80 bin olması lazım.
+
+205
+00:33:05,192 --> 00:33:14,711
+80 bin olması lazım ama içinden seçip almıştır bence. Mesela çok genel benzerlik gösteren yağ dokusunun olduğu yerleri almamıştır bence.
+
+206
+00:33:17,392 --> 00:33:23,711
+Olabilir hocam. Orayı hızlı geçmişim. Ama baktığınız zaman aynı data setin...
+
+207
+00:33:24,403 --> 00:33:37,024
+Şimdi ikram ettim. Biraz daha hızlanacağız. Transfer öğrenme yöntemleri, kapsül networkler güzel giriyor. En azından bir deneriz onları ilk başta. Biz hangi yöntemi kullanacağız? Biraz oraya gelebilir miyiz?
+
+208
+00:33:37,024 --> 00:33:48,984
+Hemen hızlıca oraya gireyim hocam. Burada yine CNN modelinin farklı bir implementasyonu yapmış arkadaşlar. Burada yine %99.75 over accuracy'ye ulaşıklığı iddia ediliyor.
+
+209
+00:33:50,451 --> 00:33:53,571
+Şimdi Vision Transformers'a girsek benim kullanacağım yöntem.
+
+210
+00:33:54,192 --> 00:33:55,291
+Sen ona mı karar verdin?
+
+211
+00:33:55,612 --> 00:33:59,632
+Ben normalde Deep Kennel Learning de istiyorum hocam. Aslında benim test konum da o olacak.
+
+212
+00:34:00,352 --> 00:34:03,711
+Değiştirebiliriz, o sorun değil. Seversen konuyu buradan da gidersin.
+
+213
+00:34:04,892 --> 00:34:11,231
+Olabilir hocam. Bu konuda aslında çok daha fazla kaynak buldum. Deep Kennel Learning aslında üzerinde çalışacak güzel bir alan.
+
+214
+00:34:11,231 --> 00:34:16,011
+Çünkü henüz karanlıkta olan bir alan. Hani yavaş yavaş aydınlatılıyor.
+
+215
+00:34:16,384 --> 00:34:21,663
+Bir de Deep Biasing Learning, Biasing Deep Learning de var. Diğer arkadaşlara da söylüyorum.
+
+216
+00:34:22,203 --> 00:34:31,564
+Konusunda şey yapan, umut vadecici konulardan Vision Transformer'lar var, Biasing Deep Learning'ler var gibi.
+
+217
+00:34:34,264 --> 00:34:35,324
+Devam et sen.
+
+218
+00:34:36,503 --> 00:34:42,703
+Tamam hocam, Vision Transformers'a karar verdim doğal olarak. Diğeri için biraz daha vakit ayırmam. Uzun süre üzerinde çalışmam gerekiyor.
+
+219
+00:34:43,411 --> 00:34:59,731
+Kısa sürede ilerletmek için bunu sercih ettim. Baktığınız zaman 2021 yılında öne sürü Vision Transformer. Aslında Transformer kavramı 2017 yılına dayanıyor. Bir sonraki site'in de bahsetmiş miyim ondan?
+
+220
+00:35:02,068 --> 00:35:19,268
+2017 yılına dayanıyor aslında Transformer kavramı. Transformer kavramının normalde doğal dil işleme üzerine kullanılan bir şey. Aslında kelimelerin enkod edilmesiyle alakalı bir yöntem.
+
+221
+00:35:21,108 --> 00:35:22,228
+Bir saniye.
+
+222
+00:35:54,132 --> 00:35:55,332
+Cevap gelmedi.
+
+223
+00:35:58,996 --> 00:36:00,176
+Devam edeyim mi hocam?
+
+224
+00:36:00,216 --> 00:36:04,016
+Sen devam et. Çalarsa bir şey yaparım ben. Devam et.
+
+225
+00:36:04,216 --> 00:36:04,815
+Tamamdır hocam.
+
+226
+00:36:05,996 --> 00:36:17,836
+2017 yılında Transformer cover'ı ortaya atılıyor. 2021 yılında bunun Neşru doğal dil işleminin haricinde Computer Vision'de de kullanılabileceği fark ediliyor.
+
+227
+00:36:18,324 --> 00:36:37,224
+Şu anda revaçta olan bir model. CNN'in 4 katına kadar computational, hesaplama performansı ve accuracy olarak CNN'in 4 katına kadar çıkabileceği iddia ediliyor.
+
+228
+00:36:39,956 --> 00:36:50,976
+Baktığımız zaman yine 2021 yılında Alexi Dosovski tarafından ortaya atılan, 2021-2020 yılında atılmış ama 2021 yılındaki konferansta çıkmış.
+
+229
+00:36:52,615 --> 00:37:01,896
+Bu Alexi Dosovski de Google'un beyin takımından, Google'un araştırma ekibinden, tabii ekibiyle beraber bunu ortaya atıyorlar.
+
+230
+00:37:05,235 --> 00:37:25,771
+Şu anda da yine Google tarafından destek verilen bir şey Vision Transformers. Yalnız Vision Transformers'ın eğitilebilmesi için çok büyük bir veri setine ihtiyacı var. CNN'e 4 katına kadar çıkabiliyor dedik performans olarak ama CNN'in performansını geçebilmesi için...
+
+231
+00:37:25,780 --> 00:37:38,920
+En azından 14 milyonluk bir imaj seti üzerinde eğitilmesi lazım. Aksi takdirde ResNet üzerinde veya benzer modeller üzerinde kalmak daha mantıklı diyorlar.
+
+232
+00:37:41,300 --> 00:37:48,920
+Ama Google bununla alakalı bir önceden eğitilmiş bir model tasarlamış. Bunun da kitap linkini koydum zaten.
+
+233
+00:37:50,119 --> 00:37:53,060
+%86 Imagined Accuracy almış.
+
+234
+00:37:53,619 --> 00:38:18,639
+Imagine Earth üzerinde önceden eğittiği bir modeli var şu an. O kullanılabilir. Onun haricinde benzer şekilde Vision Transformers modelleri de çok fazla miktarda şu an internette revaçta olduğu için farklı farklı modeller de görülebiliyor. Hem PyTorch üzerinde hem de Keras üzerinde oluşturulmuş modeller var.
+
+235
+00:38:22,516 --> 00:38:25,416
+Burada baktığınız zaman Visual Transformers'a
+
+236
+00:38:30,228 --> 00:38:44,448
+Şöyle diyeyim, resmi öncelikle parçalara ayırıyoruz. Patchler dediğimiz patchlere ayırıyoruz. Daha sonra oluştuğumuz patchlere flatten ediyoruz. Düz bir vektör haline getiriyoruz.
+
+237
+00:38:52,500 --> 00:39:07,920
+Direkt şey yapmak yani doğal dil işlemede bu şekilde yapılmış. Benzer şekilde yapılmış. Normalde bu cümleyi oluşturan kelimeler şeklinde düşünebiliriz bu her bir peçe. Her bir kelimeyi normalde enkod etmenin 3 farklı yolu var.
+
+238
+00:39:18,324 --> 00:39:43,324
+Öz nitelik oluşturmamız lazım ve her birini bir sıfır şeklinde değerlendirmemiz lazım. Bu çok gereksiz ve çoğunluğun sıfırların oluşturduğu tablolar ortaya çıkartacak. Bu bir yöntem veya her birini her bir kelimeyi unik şekilde idlendirebiliriz. 1, 2, 3, 4, 5 diye her bir kelimeye farklı bir id verebiliriz. Veya üçüncü bir yöntem olarak da...
+
+239
+00:39:43,728 --> 00:40:01,728
+Yani bu şekilde ayrılendirdiğimiz zaman da kelimeler arasında anlamsal bir ilişki kuramıyoruz. Üçüncü bir yöntem olarak da bu yöntemi şey yapmışlar. Her bir kelimeyi teker teker sıra numarası vererek...
+
+240
+00:40:02,068 --> 00:40:09,908
+Bunları aslında bir sequential array olarak değil de bir set olarak transformer'a gönderiyoruz.
+
+241
+00:40:10,068 --> 00:40:13,228
+Ama sıra numarasını sıra numarasıyla beraber gönderiyoruz.
+
+242
+00:40:15,308 --> 00:40:19,128
+Encoder'a girdiği zaman aslında yine sırasını kaybetmemiş oluyor.
+
+243
+00:40:19,128 --> 00:40:27,128
+Aslında biz resmi parçaladığımız zaman her bir patchin resim içerisindeki konum bilgisini yine tutmuş oluyoruz.
+
+244
+00:40:28,568 --> 00:40:29,288
+[öğrenci].
+
+245
+00:40:31,027 --> 00:40:32,688
+Geliyor hocam.
+
+246
+00:40:33,208 --> 00:40:42,668
+Tamamdır. Sen şimdi anladığım kadarıyla Vision Transform'un uyarlaması üzerine ön araştırmayı yapmışsın. Herhangi bir kod çalıştırıp başladın mı çalışmalara?
+
+247
+00:40:43,807 --> 00:40:46,288
+Yok hocam. Bugün de kod çalıştırmaya başlayacağım.
+
+248
+00:40:46,827 --> 00:40:53,387
+Tamamdır. O zaman kolay gelsin. Problemine güzelce uyarlarsan güzel bir şeyler çıkabilecek gibi gözüküyor buradan da.
+
+249
+00:40:53,715 --> 00:41:14,395
+Buradan sonraki yapacağım aşamada zaten hocam. Python üzerinde kodun implementasyonuna geçmek. Yine hiperparametreyle oynayarak daha iyi sonuçlar almaya çalışacağım. Çalışacağım ortam ya Colab olacak ya da kendi bilgisayarında çalışacak olursam da Jupyter Notebook'u kullanacağım. Ama artık notbook ortamı daha iyi.
+
+250
+00:41:14,395 --> 00:41:20,235
+Hem de bilgisayarında Vision Transformer'ları çalışıyorsam bence Google Colab'e diye etmez. Sen Huawei'de çalışıyordun değil mi?
+
+251
+00:41:20,884 --> 00:41:21,643
+Evet hocam.
+
+252
+00:41:22,463 --> 00:41:23,663
+[öğrenci]'ye tanıyor musun?
+
+253
+00:41:24,643 --> 00:41:25,744
+Yok hocam, duymadım.
+
+254
+00:41:26,244 --> 00:41:39,403
+Tamam. Belki onların serverleri varsa orada çalışabilirsin veya Google Colab. Oradan böyle alan kiralayarak mesela pro versiyonu 10 dolar ayda bence işine de yarar. Tezinde de kullanırsın.
+
+255
+00:41:41,903 --> 00:41:47,884
+Olabilir hocam, bunu düşüneceğim. Ben önce kendi bilgisayarını da deneyip performansını görmek istemiştim ama...
+
+256
+00:41:48,083 --> 00:41:51,703
+Bitlemesin bilgisayarını, onu görmek istiyor. Onun için dedim ben.
+
+257
+00:41:52,383 --> 00:41:57,403
+Boşta bunu çalıştıracağım bir bilgisayarım var hocam. Yanında açacağım. Ayrıca çalışacak.
+
+258
+00:41:57,943 --> 00:42:01,723
+Ya o şekilde yapacağım ya da kolapizyonda çalışacağım. Her türlü bir notluk ortamında çalışmayı düşünüyorum.
+
+259
+00:42:01,843 --> 00:42:02,043
+Tamam.
+
+260
+00:42:02,483 --> 00:42:03,303
+O da acayızlık geliyor.
+
+261
+00:42:04,463 --> 00:42:09,863
+Tamamdır, kolay gelsin. Sen de bir yola girmiş gözüküyorsun. Sıradaki arkadaşımız kim?
+
+262
+00:42:11,223 --> 00:42:12,623
+Ben başlayabilirim hocam.
+
+263
+00:42:14,675 --> 00:42:27,455
+Tamamdır. Teşekkürler hocam. Kolay gelsin. Görüşürüz. Sağ olun hocam. Görüşürüz. Merhabalar. Ekranım geliyor mu hocam? Geliyor evet.
+
+264
+00:42:27,455 --> 00:42:40,455
+Önce geçen haftadan ne konuştuğumuz hakkında bir hatırlatma yapayım. Ben veri seti araştırırken Brat veri seti üzerinde çalışmak istediğimden bahsetmiştim. Sizin önermiş olduğunuz veri seti...
+
+265
+00:42:41,012 --> 00:42:53,912
+Büyük Brisk Cancer veriseti. İlk birkaç gün bu verisetin inceleyerek geçirdim. 922 tane hasta mevcut verisetin de MRI görüntülerinden oluşuyor.
+
+266
+00:42:54,272 --> 00:43:07,392
+Bir tanesini açtığımız zaman içerisinde birkaç farklı kontrast seviyesinden alınmış görüntüler mevcut. Bunlar T1, T2, Fluid sanırsam farklı bandlardaki kontrast seviyelerine sahip.
+
+267
+00:43:08,307 --> 00:43:10,307
+Bunu...
+
+268
+00:43:13,940 --> 00:43:27,260
+Şurada görselleştirecektim. Bu görüntülerin uzantıları, Daikon uzantısı. Tek teksten alınmış Daikonlardan. Farklı kontrol seveylerinde sahip görüntülerde. Burada görselleştirmeye çalıştım.
+
+269
+00:43:28,540 --> 00:43:35,600
+Biri setinin boyutu öncelikle çok büyük. 360 GB seviyesinde seyrediyor.
+
+270
+00:43:35,983 --> 00:43:44,743
+Bu benim şu an saklayabileceğim ya da daha da ilerisi işleyebileceğim bir boyuta sahip değil. Maalesef birazcık yüksek bir boyuta sahip.
+
+271
+00:43:48,851 --> 00:44:04,951
+Bir takım feature'ları barındırıyor. Bu feature'ların olması her bir pasta için ayrılmış farklı feature'lar. Timör boyutu, tipi özelliğiyle alakalı feature'lar bunlar. Bu feature'ları bu bir set içerisinde görmek açıkçası beni heyecanlandırdı.
+
+272
+00:44:15,476 --> 00:44:24,655
+Sonuçlar ürettiğini tespit edilebilmesi için böyle bir table'a ihtiyaç olduğunu düşünüyorum. Bu veri setinde var fakat boyutu yüksek bir veri seti maalesef.
+
+273
+00:44:24,816 --> 00:44:29,115
+Bu arada boyutu yüksek ama okuldaki ağımız çok iyi bizim.
+
+274
+00:44:29,536 --> 00:44:32,356
+Download kısmını buradan halledebiliriz.
+
+275
+00:44:32,356 --> 00:44:37,476
+Çok sevinirim. Fakat işleme kısmını nasıl halletmem gerektiğini önerirsiniz.
+
+276
+00:44:37,476 --> 00:44:45,795
+Zaten anladığım kadarıyla bu çalışma üzerinde şey varsa, bunun bir subset'i veya belli bir kısmıyla çalışırız.
+
+277
+00:44:45,795 --> 00:44:50,775
+Resizing, Missizing yapılması gerekirse yaparız. Bunun içerisinde...
+
+278
+00:44:51,027 --> 00:45:05,188
+Dikom'dan PNG'ye düştükten sonra veya BMP'ye düştükten sonra düşebilir bu. Rezolüsyonlarıyla da uğrayabiliriz. Yani biz kendimiz bunları temizleyip çalışabilecek hale getirebiliriz. Bu da iyi bir çalışma olur bence.
+
+279
+00:45:07,423 --> 00:45:14,423
+Veri içinde bir tane harddisk, 260 GB çok bir şey değil. Daha sonra bunun bir sub setiyle çalışırız.
+
+280
+00:45:14,423 --> 00:45:19,423
+Veya çalışılan çalışmalar daha çok nelerle uğraşmış? Bunların hakkında bir bilgin var mı?
+
+281
+00:45:19,423 --> 00:45:30,423
+Evet. Bu data seti kullanan birkaç farklı çalışma gördüm. Bunlar yaklaşık 260 hasta kaide ile çalışmışlar.
+
+282
+00:45:30,423 --> 00:45:32,423
+Hepsi de değil mi?
+
+283
+00:45:32,927 --> 00:45:56,168
+Hayır, hepsiyle değil. 260 civarında bir sapsetle çalışmışlar. Bunun nedenini açıklamışlardı. Fakat nedensellik olarak tıplı bir nedeni var. Dolayısıyla ben bunu idrak edemedim. Ve hangilerini almışlar? 922 tane hastadan bunu maalesef göremedim çalışmalarda.
+
+284
+00:45:56,543 --> 00:46:01,423
+Eksik bir Class veya Feature özelliği varsa onları eleyebiliriz de.
+
+285
+00:46:01,423 --> 00:46:03,423
+Notum.
+
+286
+00:46:03,423 --> 00:46:13,103
+Mesela şu şeyde OnCotype Score olanlarla çalışabiliriz belki sadece. Önemli bir parametre ise mesela.
+
+287
+00:46:13,103 --> 00:46:21,744
+Available hepsi öyle mi? Kaç tane var burada toplam? Kaç tane MRR var? Her bir satırda bir tane resim var değil mi?
+
+288
+00:46:21,744 --> 00:46:23,903
+Yok hayır. Şöyle açayım.
+
+289
+00:46:24,148 --> 00:46:26,268
+Yoksa hastanın numarası mı sadece?
+
+290
+00:46:26,547 --> 00:46:34,168
+Ben sadece şu an 921. hastayı indirdim. Bunun içerisindeki kontrast seviyeleri böyle ayrılmış klasörlere.
+
+291
+00:46:34,168 --> 00:46:36,487
+Neyler bunlar bu klasörler?
+
+292
+00:46:37,628 --> 00:46:47,248
+Bunlar T1, T2 gibi MR görüntülerin farklı kontrast seviyelerinde elde edilmiş versiyonları.
+
+293
+00:46:48,340 --> 00:46:52,660
+Bunların hepsini kullanmak zorundayınız. Yoksa sadece T1 ile çalışsak yeter mi bize?
+
+294
+00:46:52,660 --> 00:47:07,880
+Evet. Literatürdeki çalışmalarda sadece tek bir kontrol seviyesinde çalışılmamış, farklı kontrol seviyesindeki görüntüler farklı ağlarla eğitilmişler. Örneğin 4 tane kontrol seviyesi varsa burada 4 farklı ağ eğitmişler.
+
+295
+00:47:08,947 --> 00:47:22,367
+Mesela bunların hepsi öyle mi? T1, AX, Faz 1, AX, Faz 2, Fa 103, AX. Yanılmıyorsam evet öyleler. Farklı kontrast seviyelerine sahipler. Bunlar Dikon. Bunların görselleştirmiş halleri de bunlar oluyor.
+
+296
+00:47:23,027 --> 00:47:27,287
+O Dikon kloserinin içerisinde aslında bu slicer var değil mi? Evet.
+
+297
+00:47:27,923 --> 00:47:37,324
+Peki bu slice'ların içerisinde sadece breast kanseri olduğu, yani etiketinin olduğu slice'ları çeksek?
+
+298
+00:47:37,324 --> 00:47:39,923
+Evet, o da şunun içerisinde bulunuyor.
+
+299
+00:47:39,923 --> 00:47:45,923
+Önüneşim Boxes denilen bir şey var. İçerisinde belge var bu veri setinin.
+
+300
+00:47:45,923 --> 00:47:54,523
+Hasta numaraları hangi işte X'den başlı X'ye olarak ayırırsak, rov'u ve kolom'u.
+
+301
+00:47:54,643 --> 00:47:55,903
+Hangi X'ten başlamış mı?
+
+302
+00:47:55,903 --> 00:48:03,723
+Baksana, bunun içerisinde mesela bütün slice'ları almak gerekmiyor. 89'da 112'yi almak yeter. Bu da data boyutunu baya düşürmez mi?
+
+303
+00:48:04,163 --> 00:48:05,683
+Evet, muhtemelen düşürecektir.
+
+304
+00:48:06,000 --> 00:48:16,500
+Sen buradaki veriyle çalışmaya devam et o zaman. Bu veriyi eğitilebilir hale getirdiğimizde elimizde çok değerli bir şey olmuş olacak zaten.
+
+305
+00:48:16,500 --> 00:48:25,700
+Ben de bu noktaya girecektim. Elimizde farklı aralıklar var. Başlangıç sılayısı, bitiş sılayısı diye. Bunlar da tümörün bulunmuş olduğu noktalar.
+
+306
+00:48:26,612 --> 00:48:35,931
+Grand Truth'lar olacak elimizde. Grand Truth dosyasını oluşturabileceksin burada. Biraz zaman alışı zorlu bir işlem gibi ama değerli bence, değerli bir çalışma.
+
+307
+00:48:35,931 --> 00:48:42,991
+Grand Truth'un dosyaları maalesef yok. Sadece Box'ların başlangıç ve bitiş noktaları var.
+
+308
+00:48:43,443 --> 00:48:50,443
+Onlar şey değil mi? Ne derler? Tümörün bulunduğu bounding boxları veriyor değil mi?
+
+309
+00:48:50,443 --> 00:48:59,443
+Evet. Tamam yeterli bizim için. Burada slicelar her slicelar malum şey gözükmediği için.
+
+310
+00:48:59,443 --> 00:49:07,072
+Nerede gözüküyorsa zaten önemli. Bir sürü temizleme yapacağız. Bu data setinin boyutu çok düşer. Anladım.
+
+311
+00:49:07,072 --> 00:49:10,432
+Ben hepsini kullanacağımızı düşünmüştüm.
+
+312
+00:49:10,731 --> 00:49:11,352
+Yok yok yok.
+
+313
+00:49:15,539 --> 00:49:36,539
+Sadece ilgili sliceları alacağız. Grand truth'u bulunan. Çünkü benim sende mi göstermiş olduğun Excel dosyası biraz daha aydınlatıcıydı. Örneğin bunda 174 tane var ya. Aç mesela bunun şeyini. Bu hangi?
+
+314
+00:49:36,539 --> 00:49:42,539
+191. 925.
+
+315
+00:49:44,052 --> 00:49:59,532
+Bak bunun 97 ile 121. arasında tümör gözüküyor. Ve de bounding box'ının sınırları da şu. 328 ile 374, 404 ile 446 arasında. Bir bakalım oraya.
+
+316
+00:50:03,188 --> 00:50:06,907
+Kaç ile kaç arasındaydı? 90 mı? 97'den başlıyordu.
+
+317
+00:50:06,907 --> 00:50:13,688
+125. Gel bakalım 121'e kadar gidiyor muyuz?
+
+318
+00:50:13,688 --> 00:50:20,347
+120'yi bir göreyim. Evet, 121 yap.
+
+319
+00:50:20,347 --> 00:50:30,588
+Burada da gördük. Sonra çık. Demek ki ondan sonra kaybolan bir şey var şu anda. Evet, sadece bu slice'ları seçip
+
+320
+00:50:31,027 --> 00:50:48,208
+Bunları PNG formatında koyalım. Bounding Box'ları da bunların sabit, görünen Bounding Box'ı çizmiş anladığım kadarıyla. Mesajdaki siyah nokta mı acaba? Nereye denk geliyor o siyah? Onları bir araştırsana Şerif.
+
+321
+00:50:48,208 --> 00:50:57,668
+Tam şu kısımlara denk geliyor aslında. Bu örnek için baktığım zaman tam şu kısımlara denk geliyor. Uç kısımlarına denk geliyordu galiba.
+
+322
+00:50:59,092 --> 00:51:00,092
+Evet.
+
+323
+00:51:03,987 --> 00:51:11,147
+Evet, şey, buradan bir şeyler çıkar. Yani buradan bayağı bir şey çıkacağa benziyor.
+
+324
+00:51:11,147 --> 00:51:25,147
+Ben burada danışmak istediğim farklı bir konu daha var. Aslında farklı kod örneklere baktığımız zaman, Tegel'dan ağırlıklı olarak, bu tip bir kutu...
+
+325
+00:51:26,164 --> 00:51:36,364
+Tanımlaması yapmak yerine siyah-beyaz olarak Ground Truth'ları vermişler sizin bahsettiğiniz gibi. Bunların üzerinden nasıl Ground Truth'ı ileteceğimi bilmiyorum açıkçası.
+
+326
+00:51:37,104 --> 00:51:46,804
+Şey ki biz resmin şu Ground Truth'ları, Ground Truth'ların boyutları sabit mi yoksa hani kaça kaçlık Ground Truth'lar bakalım önleyin.
+
+327
+00:51:47,903 --> 00:51:49,003
+Bunlar değişiyorlar.
+
+328
+00:51:49,523 --> 00:51:51,483
+Değişken mi? Hemen bakıyorum ben bir.
+
+329
+00:51:53,715 --> 00:52:10,135
+Değişken olmasa biz bunları, mesela 374-328. 46'lık bu. 193-172. Bu 21'lik.
+
+330
+00:52:10,675 --> 00:52:24,496
+Bunların içerisinde bakarız tamam mı? Bound Big Box'a bir görelim. Değişken boyutluysa şayet. Biz örneğin bir üst sınırdan yapalım bunu. Örneğin kimi 21'e 21, kimi 20. Hani bir örnek olarak bana göstersen.
+
+331
+00:52:24,784 --> 00:52:36,683
+Ben belki bir üst sınır belirleyeceğim. Alacağız, bunları mesela CNN'lere vereceğiz mesela. Var yok şeklinde. Bir de bunlar hangi sınıflara ayrılıyor? Bir de onu söyler misin? Var mı bilgi elimizde?
+
+332
+00:52:36,683 --> 00:52:50,123
+Evet, bunların hepsi kanserli hastalardan ilgilenmiş biriler. Burada sanırsam şu üç şey.
+
+333
+00:52:50,900 --> 00:53:08,039
+Tümörün karakteristiğini gösteriyor. Bunların, yanlış hatırlamıyorsam şu iki diğerin, işte her ikisinin negatif olmasıyla, bir tanesinin pozitif diğerinin negatif olmasıyla tümör farklı sınıflara ayrılıyor. Bunların isimlerini bilmiyorum ama.
+
+334
+00:53:11,539 --> 00:53:17,660
+Anladım. Yani bu üç türe mi ayıracağız? Yapılan çalışmalarda bu üçe mi ayırmış karakteristiklerini?
+
+335
+00:53:18,260 --> 00:53:19,980
+Evet, üç diye hatırlıyorum.
+
+336
+00:53:21,460 --> 00:53:24,740
+Ama baksana, mol, subtype diye bir şey var mesela.
+
+337
+00:53:27,619 --> 00:53:31,460
+Bu feature'ların her birinin açıklamaları var.
+
+338
+00:53:31,460 --> 00:53:34,219
+Fakat bu virüseti...
+
+339
+00:53:34,324 --> 00:53:57,744
+Daha doğrusu birisi değil, bu feature seti oluşturulurken birçok farklı çalışmadan beslenilmiş. Örneğin bir çalışmadan 80 tane feature alınmış, diğerinden 50 tane feature alınmış ve aslında feature sayıları çok fazla. Bunları incelemek başlı başına çok vakit alacak bir şey.
+
+340
+00:53:58,387 --> 00:54:03,387
+Dolayısıyla sorduğunuzda aslında, Pitch'in tam olarak neye karşılık geldiğini bilmiyorum.
+
+341
+00:54:04,387 --> 00:54:11,387
+Anladım. Bu dataset'in indirildiği yerde, sayfayı bir açsana tekrar.
+
+342
+00:54:13,387 --> 00:54:15,387
+Kaggle yarışması mıydı bu?
+
+343
+00:54:16,387 --> 00:54:17,387
+Kaggle değildi.
+
+344
+00:54:26,068 --> 00:54:30,228
+Bu database ile alakalı bunların bir paper vardır muhakkak. Ne diyor bu?
+
+345
+00:54:31,548 --> 00:54:36,907
+Bu datadan bir sürü şey yapılabiliyor anladığım kadarıyla. Çalışma çıkarılabiliyor.
+
+346
+00:54:41,788 --> 00:54:47,068
+Mesela bu çalışmada Machine Learning Approach falan diyor ya.
+
+347
+00:54:47,860 --> 00:54:57,220
+Bu paperi indirdin mi? Acaba kendimize classification için bir şey yapabilecek miyiz burada? Bir yol açabilecek miyiz?
+
+348
+00:54:58,140 --> 00:55:06,720
+Bu paperi indirdim. Ama şu an bu sorunun cevabını bilmiyorum açıkçası.
+
+349
+00:55:07,840 --> 00:55:11,059
+Hızlıca bir bakar mısın sana? Bir aç bakayım indirdiğin şeyden.
+
+350
+00:55:15,891 --> 00:55:22,731
+Aşağı indir. Bunu bir okumak lazım. Biraz indir. Datasete gel.
+
+351
+00:55:25,132 --> 00:55:30,072
+Baksana buralarda anlatılıyor zaten. Bir yukarı çık bakalım.
+
+352
+00:55:38,579 --> 00:55:49,339
+Bir in aşağıya bakayım. İn yeni. Experimental Results'a gelelim. Training test et. Birazcık açık.
+
+353
+00:55:51,379 --> 00:55:54,379
+Bak, Model Development diyor.
+
+354
+00:56:00,755 --> 00:56:21,596
+Imaging features can distinguish between different tumor subtypes. Bak, tumor subtypes'lerine göre ayrılabiliyormuş. Tamam mı? Ondan sonra bir yukarı çık bakayım. Sen bunu bir incele bakalım. Burada ne yapmış? Burada açıklıyor zaten. Cross validation falan yaptım diyor.
+
+355
+00:56:22,420 --> 00:56:26,619
+Kaç sınıfı ayırdım gibi bir bilgi var mı? Bunları bir incele bakalım. Oldu mu?
+
+356
+00:56:26,980 --> 00:56:31,139
+Tamam. Bir kez okumuştum belirle bir kısmı kadar. Yeniden göz atacağım.
+
+357
+00:56:31,980 --> 00:56:35,420
+Evet, evet. Buradan bir şey çıkacak yani. Güzel bir şey çıkacak.
+
+358
+00:56:35,420 --> 00:56:48,119
+Bunun haricinde geçen hafta şunları konuşmuştuk. Siz UNET, UNET++, France UNET ve Sivin UNET.
+
+359
+00:56:48,724 --> 00:56:58,403
+Göz atmamı olabiliyor. Eğer Classification yapacaksak burada şayet, Classification, Transfer öğrenme ile başlarız standart.
+
+360
+00:57:00,884 --> 00:57:08,644
+Yani pre-trained versiyonlar ile CNN'ler ile başlarız. O yeterli olur. Çünkü senin data kısmın bu sefer zorlu.
+
+361
+00:57:09,331 --> 00:57:13,691
+Yöntemsel kısım çok zorlaştırmadan adım adım daha sonra bakılabilir.
+
+362
+00:57:14,211 --> 00:57:17,611
+Anladım. Peki classification için önerdiğiniz bir yöntem modelleri?
+
+363
+00:57:17,611 --> 00:57:20,371
+Transfer öğrenme. Hani rest, net, dense, net.
+
+364
+00:57:20,788 --> 00:57:44,087
+İnception, Exception gibi hazır yapılan. Ama önce bir hani elimizde şey olsun. Görüntü ve onun sınıfı. Yani illa Grand Truth olmak zorunda değil. Görüntünün ne olduğu bilgisine sahip olursak bakalım onu ayrıştırabiliyor muyuz? Sen bu paper baştan sonra bir oku bakayım. Bir aşağı kay bakayım iyice. Bir tablo mablo var mı? Bakayım.
+
+365
+00:57:53,652 --> 00:58:13,372
+Buralar sana biraz daha işine yarayabilir bence. İyine aşağı. Burada tanıtıyor bayağı bir data seti. İyine aşağı. Pozitif negatif bile ayrılsa mesela PR'ye, HR'e, R'e göre ayrıştırabiliyorsak bunlar bile başlı başına. Baksana ona göre yapıyor galiba.
+
+366
+00:58:13,372 --> 00:58:19,732
+Evet. Bak bak bak tablo 3'e bak tablo 3'e. Moleküler subtype'ına göre ayrıştırıyor.
+
+367
+00:58:20,659 --> 00:58:30,299
+ER'ye göre, biz de bunlara göre yaparız. Toplam 5 tane sınıf tipimiz var bizim. Onlara göre ayrıştırmadan elde edecek. Ona da bakarız.
+
+368
+00:58:31,599 --> 00:58:33,539
+5 sınıf tipi aslında olmuyor.
+
+369
+00:58:34,179 --> 00:58:35,059
+5 sınıf değil de.
+
+370
+00:58:39,059 --> 00:58:39,179
+Bunlar...
+
+371
+00:58:39,251 --> 00:58:45,632
+Pozitif, negatif bazıları. Bazı ise 4 sınıf. Luminal A, Luminal B, her iki TNBC diye.
+
+372
+00:58:46,052 --> 00:58:56,192
+Evet, bundan sanırsam bir tanesinin pozitif yerinin de pozitif, pozitif negatif gibi. Farklı böyle kombinasyonel bir sınıf ortaya çıkıyor sanırsam.
+
+373
+00:58:56,672 --> 00:59:05,871
+Evet, evet. Buradan çıkacak ne yapacağımızı. Yani klasifikasyon yapacağız ama 1, 2, 3, 4, 5 tane farklı klasifikasyon modeli oluşturmak gerekiyor.
+
+374
+00:59:06,496 --> 00:59:33,915
+Çünkü 267'ye, HER'e göre, HER'e göre, Moleküler Subtype'a göre farklı şeyler bulmamız gerekecek. Ne derler? Farklı denemeler yapmamız gerekecek. Tamam. Zaten burada Number of Train 461 diyor ama 461 hastanın o Layler sayısı kadar elimizde eğitim seti olacak. Onlar da artacak. En az 20 tane olsa daha da artıyor yani.
+
+375
+00:59:35,092 --> 00:59:58,851
+Anlaştık mı? Anlaştık hocam. Ben o zaman kod kısmına hiç girmiyorum. Orada yine segmentasyonla alakalı. Yok yok orada segmentasyon. Burada segment edebileceğim bir şey yok burada. Kut sınıflandırma problemi. Tamamdır. Tamam mı [öğrenci]? Tamamdır. Kameranı açsana [öğrenci]. Ben bir yüzünü hatırlayayım seni.
+
+376
+01:00:05,076 --> 01:00:31,395
+Tamamdır. Tamamdır [öğrenci]. Devam. Tamam görüşmek üzere hocam. Tamamdır görüşürüz. Evet sırada kim var? Merhaba hocam. Evet [öğrenci]. Evet hocam. Nasılsın iyisin? İyiyim hocam teşekkür ederim. Evet kolay geldin. Teşekkür ederim. Evet şimdi.
+
+377
+01:00:32,692 --> 01:00:37,532
+Nelerdir problemlerini, neler yapıyorsun? Onları bir öğrenelim senden.
+
+378
+01:00:39,132 --> 01:00:46,532
+En son hafta, NarsNet Mobile'da çalıştım.
+
+379
+01:00:50,132 --> 01:00:53,132
+Bir saniye. Evet.
+
+380
+01:00:53,132 --> 01:00:58,132
+Yeni ve Nesnet Mobile'i çalıştık ama çalıştık
+
+381
+01:00:58,132 --> 01:01:00,132
+ve bütün de data seti.
+
+382
+01:01:00,132 --> 01:01:03,132
+Samut, I want to ask you a question.
+
+383
+01:01:03,132 --> 01:01:08,132
+When you are using Nesnet,
+
+384
+01:01:08,132 --> 01:01:13,132
+do you use an interface for classification?
+
+385
+01:01:13,440 --> 01:01:14,440
+Evet.
+
+386
+01:01:14,440 --> 01:01:20,440
+Orada, you are implementing your own code on the MATLAB.
+
+387
+01:01:20,440 --> 01:01:23,440
+I work on the MATLAB.
+
+388
+01:01:23,440 --> 01:01:26,440
+Can I see the MATLAB interface?
+
+389
+01:01:26,440 --> 01:01:27,440
+Yes.
+
+390
+01:01:27,440 --> 01:01:30,440
+You are writing your code, am I right?
+
+391
+01:01:30,440 --> 01:01:31,440
+Okay.
+
+392
+01:01:31,440 --> 01:01:35,440
+Yes, what I do, I explain what I do.
+
+393
+01:01:35,440 --> 01:01:38,440
+I first go to the MATLAB designer.
+
+394
+01:01:40,244 --> 01:01:47,244
+ve
+
+395
+01:01:47,244 --> 01:01:50,244
+bu
+
+396
+01:01:50,244 --> 01:01:51,244
+3
+
+397
+01:01:51,244 --> 01:01:52,244
+layers
+
+398
+01:01:52,244 --> 01:01:53,244
+çünkü
+
+399
+01:01:53,244 --> 01:01:54,244
+bu
+
+400
+01:01:54,244 --> 01:01:55,244
+my
+
+401
+01:01:55,244 --> 01:01:56,244
+dataset
+
+402
+01:01:56,244 --> 01:01:57,244
+ve
+
+403
+01:01:57,244 --> 01:01:58,244
+bu
+
+404
+01:01:58,244 --> 01:01:59,244
+kod
+
+405
+01:01:59,244 --> 01:02:00,244
+ve
+
+406
+01:02:00,244 --> 01:02:01,244
+kod
+
+407
+01:02:01,244 --> 01:02:02,244
+ve
+
+408
+01:02:02,244 --> 01:02:03,244
+bu
+
+409
+01:02:03,244 --> 01:02:05,244
+kod
+
+410
+01:02:05,876 --> 01:02:13,876
+Bu konuyu örneklerle anlatacağım.
+
+411
+01:02:14,463 --> 01:02:19,963
+Bir sonraki birçok ekranı var.
+
+412
+01:02:19,963 --> 01:02:40,463
+Birçok ekranı var.
+
+413
+01:02:42,003 --> 01:03:07,383
+Valdation frequency, I use 10. Sometimes I use 50. After that, I use crossfold validation to check the result. This is the fold one, and this is the fold two, three, four, and five. And the overall result.
+
+414
+01:03:07,891 --> 01:03:17,891
+Crossfold validation, I use fivefold. Maybe I use tenfold and check the results.
+
+415
+01:03:19,891 --> 01:03:20,891
+But I have...
+
+416
+01:03:20,891 --> 01:03:22,891
+There are seven classes.
+
+417
+01:03:22,891 --> 01:03:23,891
+Yes.
+
+418
+01:03:23,891 --> 01:03:26,891
+There are seven classes in your dataset, CRCplastification.set.
+
+419
+01:03:26,891 --> 01:03:27,891
+Yes, this is my...
+
+420
+01:03:27,891 --> 01:03:32,891
+What is the average overall accuracy for NASNAT?
+
+421
+01:03:39,956 --> 01:03:44,956
+Averişim, Averişim, Averişim, Ayrıca?
+
+422
+01:03:44,956 --> 01:03:47,956
+Ayrıca 70?
+
+423
+01:03:47,956 --> 01:03:51,956
+Evet, Ayrıca 70-74.
+
+424
+01:03:52,956 --> 01:03:59,903
+Ayrıca, bu kadar yüksek performansı.
+
+425
+01:03:59,903 --> 01:04:21,547
+Evet, bu da
+
+426
+01:04:21,715 --> 01:04:48,655
+Bu, bu
+
+427
+01:04:48,655 --> 01:04:55,375
+Maybe you have to use some small batches, small subsets of the data.
+
+428
+01:04:55,596 --> 01:05:00,615
+For example, you can train your data with 1000 sample.
+
+429
+01:05:01,895 --> 01:05:08,715
+Then you have to store your network settings.
+
+430
+01:05:08,715 --> 01:05:13,956
+Then you can use another 1000 sample in the training.
+
+431
+01:05:15,603 --> 01:05:22,603
+ve
+
+432
+01:05:43,923 --> 01:05:50,403
+you can change your settings to the Python
+
+433
+01:05:50,403 --> 01:05:51,403
+yes
+
+434
+01:05:51,403 --> 01:05:53,603
+that's the only solution with the Python
+
+435
+01:05:53,603 --> 01:05:56,523
+but if you don't want to use Python
+
+436
+01:05:56,523 --> 01:05:58,403
+if you don't want to use Python
+
+437
+01:05:58,403 --> 01:06:01,403
+if you want to continue on the MATLAB
+
+438
+01:06:01,403 --> 01:06:03,403
+you have to
+
+439
+01:06:03,699 --> 01:06:06,699
+Work, Store, Work, Store.
+
+440
+01:06:06,699 --> 01:06:07,699
+The results.
+
+441
+01:06:07,699 --> 01:06:08,699
+So you can...
+
+442
+01:06:08,699 --> 01:06:12,699
+But this is also a time consuming problem.
+
+443
+01:06:12,699 --> 01:06:13,699
+Yes.
+
+444
+01:06:14,016 --> 01:06:19,516
+Bu, Matlab Online'e alın. Bu, Matlab Online'e alın.
+
+445
+01:06:19,516 --> 01:06:21,516
+Can you use Matlab Online'?
+
+446
+01:06:21,516 --> 01:06:27,516
+Evet, ama bir problem var. Matlab Cloud'a maksimum 5 GB.
+
+447
+01:06:27,516 --> 01:06:33,516
+Bu, 12 GB'e alın. Bu, benim için problem.
+
+448
+01:06:33,516 --> 01:06:40,492
+Bu, bu, Matlab Drive'e alın.
+
+449
+01:06:52,596 --> 01:06:55,576
+Bu da 5GB'de.
+
+450
+01:06:55,576 --> 01:06:57,496
+Bu da 12GB'de.
+
+451
+01:06:57,496 --> 01:07:00,496
+Bu da,
+
+452
+01:07:00,496 --> 01:07:07,496
+bu da
+
+453
+01:07:07,496 --> 01:07:10,096
+150x150.
+
+454
+01:07:27,443 --> 01:07:33,943
+Bu, 224GB, NASNET Mobile'in
+
+455
+01:07:33,943 --> 01:07:38,843
+Bu, 12GB,
+
+456
+01:07:38,843 --> 01:07:43,043
+Bu,
+
+457
+01:07:49,940 --> 01:07:54,340
+Çünkü de resimler daha yüksek daha yüksek.
+
+458
+01:08:05,139 --> 01:08:23,879
+PNG takes more space. Therefore, I try to convert all my dataset from PNG to JPG images. After I convert it to JPG images, it becomes about 2G or something.
+
+459
+01:08:25,479 --> 01:08:28,019
+These are JPG images. Am I right?
+
+460
+01:08:29,108 --> 01:08:31,068
+Evet, 2.6.
+
+461
+01:08:43,347 --> 01:08:56,347
+Yeni devam edebilirsiniz. Ama sadece NASNET, diğer türlü bir tanesi, transfer learning metodlar da önemli.
+
+462
+01:08:56,347 --> 01:09:01,347
+Yani, bu da farklı net modeli ile ilgili de verenlerle anlatacağım.
+
+463
+01:09:01,347 --> 01:09:09,292
+Evet, bu da DENSNET 21 ve RISNET 50.
+
+464
+01:09:09,747 --> 01:09:12,647
+Breastnet, Dancenet, Inception, Exception.
+
+465
+01:09:13,147 --> 01:09:15,947
+Inception, Exception. Tamam. Tamam inşallah hocam.
+
+466
+01:09:16,027 --> 01:09:16,287
+Okey.
+
+467
+01:09:16,887 --> 01:09:20,167
+İnşallah. Teşekkür ederim. Sağ ol. Teşekkür ederim hocam.
+
+468
+01:09:20,907 --> 01:09:23,627
+Have a nice day. Selamlar.
+
+469
+01:09:25,707 --> 01:09:29,227
+Next please. Next volunteer.
+
+470
+01:09:30,887 --> 01:09:32,387
+Ben anlatabilirim hocam.
+
+471
+01:09:33,747 --> 01:09:35,147
+[öğrenci]. Tamamdır.
+
+472
+01:09:36,372 --> 01:09:38,372
+Nasıl gidiyor [öğrenci], Libray?
+
+473
+01:09:38,372 --> 01:09:52,876
+Güzel gidiyor hocam. Devam ediyorum. Dataset kısmında bu hafta çalışma yapmayı planlıyordum. Şimdi paylaşayım. Ekranımı paylaşıyorum. Ekranım görünüyor mu?
+
+474
+01:09:56,243 --> 01:09:57,724
+Evet, sorun yok. Devam.
+
+475
+01:09:58,323 --> 01:09:58,623
+Çok iyi.
+
+476
+01:09:59,483 --> 01:10:00,243
+Şöyle...
+
+477
+01:10:01,779 --> 01:10:18,520
+Başlatayım. Bu hafta öncelikle kısaca ne yaptığımdan bahsedeyim. Graph Conversion Neural Network'ları kullanarak bir attention mekanizması yardımıyla en son hafta bir mimari tasarlamaya karar vermiştik. Bunun üzerine ilerleyelim demiştik.
+
+478
+01:10:18,520 --> 01:10:29,779
+Ben de bu hafta açıkçası şunları yapmayı planlıyordum. Birincisi veri setini işleyebileceğim bir formata getirmeyi istiyordum. Çünkü aslında biz görselleri graf üzerinde...
+
+479
+01:10:29,779 --> 01:10:43,579
+Sonrasında bunu bir modelde kullanmak istiyoruz. Onunla alakalı bazı çalışmalarım oldu. Onun dışında attention networklerle alakalı hem tutorialları hem de var olan literatürdeki makaleleri birazcık daha incelemeye çalıştım.
+
+480
+01:10:43,920 --> 01:10:46,920
+Çünkü tam oturtmadan girmek istemedim.
+
+481
+01:10:47,572 --> 01:11:14,032
+Bununla alakalı bazı story'ları takip ettim. Onun dışında PyTorch Geometrik kullanarak veri setini generate edebileceğimiz bir arayüz var. Daha doğrusu arayüz dediğim bir PyTorch'un alt fonksiyon oluşturma kısmı var. Burada yapmak istediğim şey şuydu. Elimizde bulunan Monusag veri setini uygun bir formatta PyTorch Geometri'yi tanıtabilmek istiyordum.
+
+482
+01:11:15,572 --> 01:11:23,692
+Takıldığım yer şu oldu. Bizim aslında verisiyetini oluştururken izlememiz gereken yol bizim seçtiğimiz yöntem vasıtasıyla belirlenecek.
+
+483
+01:11:23,692 --> 01:11:29,832
+Şimdi eğer biz süperpiksel tabağında bir yöntem kullanacaksak verisiyetini buna göre oluşturmamız gerekiyor.
+
+484
+01:11:30,252 --> 01:11:42,131
+Veya işte piksellerin komşuluk ilişkisi veya piksellerin birbirisi arasındaki ilişkiye bağlı bir model oluşturmayı planlıyorsak bu sefer buna göre bir verisiyeti generator oluşturmam gerekecekti.
+
+485
+01:11:42,931 --> 01:11:54,451
+Her ikisine de uygun bir şekilde en azından verisiyetini okuyup sonrasında memoriye uygun bir şekilde, uygun bir formatta yükleyebilecek hale getirecek kadar kodu implement ettim.
+
+486
+01:11:54,572 --> 01:11:58,131
+Ama tabii burada bizim seçeceğimiz modelin çok büyük etkisi olacak.
+
+487
+01:11:58,131 --> 01:12:09,451
+Tabii bu araştırmaları yaparken kafam birazcık da karıştı. Neden karıştı? Daha doğrusu karışmadı da farklı alternatifleri değerlendirirken kararsız kaldım diyebilirim.
+
+488
+01:12:11,347 --> 01:12:21,268
+Bu yöntemlerden, daha doğrusu bizim metodumuzda kullanabileceğimiz yöntemlerden birisi, geçen hafta üzerinden geçtiğimiz gibi süper piksellere ayırıp resimleri her bir band için.
+
+489
+01:12:21,688 --> 01:12:30,247
+Sonrasında bunları birer node gibi düşünüp bunların graf üzerinde temsil edilmesi vasıtasıyla sonrasında modeli eğitmek ve test etmek.
+
+490
+01:12:30,247 --> 01:12:39,347
+Bu birinci yöntemimizdi. Araştırma yaparken şöyle bir yapıyı da gördüm. Bu da aslında metot olarak kullanıp belki geliştirebileceğim.
+
+491
+01:12:39,347 --> 01:12:41,007
+bir yöntem olabilir diye düşündüm.
+
+492
+01:12:41,507 --> 01:12:42,948
+Bir resim üzerinde
+
+493
+01:12:42,948 --> 01:12:44,448
+hem graph
+
+494
+01:12:44,448 --> 01:12:46,847
+convolutional neural networkleri çalıştırıyorlar
+
+495
+01:12:46,847 --> 01:12:48,807
+hem de CNN'leri çalıştırıyorlar.
+
+496
+01:12:49,228 --> 01:12:50,568
+Sonra bunları bir fusion network
+
+497
+01:12:50,568 --> 01:12:52,847
+ile birleştirip sonrasında
+
+498
+01:12:52,847 --> 01:12:55,228
+kategorizasyona ayırabiliyorlar.
+
+499
+01:12:55,568 --> 01:12:57,167
+Bu şu açıdan avantajlı
+
+500
+01:12:57,167 --> 01:12:58,368
+hem graphların
+
+501
+01:12:58,368 --> 01:13:00,587
+birbirinden uzak nesneleri
+
+502
+01:13:00,587 --> 01:13:03,228
+temsil etme yeteneğini kullanıyoruz hem de
+
+503
+01:13:03,228 --> 01:13:04,927
+standart convolutional
+
+504
+01:13:04,927 --> 01:13:05,688
+networklerin
+
+505
+01:13:07,028 --> 01:13:14,868
+Daha düşük alanlardaki daha iyi tahmin yeteneklerini bir araya getirip, bir fusion network'ı tasarlıyoruz.
+
+506
+01:13:14,868 --> 01:13:17,347
+Bu da güzel bir yaklaşım olur.
+
+507
+01:13:18,087 --> 01:13:27,847
+Bunun segmentation değil, classification için kullanmışlar bunu. Belki bunu segmentation'a çevirebiliriz. Bu güzel bir yaklaşım olarak geldi bana.
+
+508
+01:13:28,435 --> 01:13:43,195
+Ama aslında şunu da yapmak istiyorum. Herhangi bir konvallisyonel neural network kullanan sadece grafların üzerinde, CNN değil de direkt CNN'leri kullanarak, GCN'leri kullanarak daha doğrusu bir yapı tasarlamayı istiyorum. Neden?
+
+509
+01:13:56,435 --> 01:14:02,595
+Bu laf kısmına, attention kısmına ekleyip bu mimariyi geliştirmiş olursak güzel bir katkı sağlar diye düşünüyorum.
+
+510
+01:14:02,595 --> 01:14:03,695
+Evet, doğru.
+
+511
+01:14:04,635 --> 01:14:11,715
+O yüzden şu an benim ilk amacım şey yapmak. Buradaki şu veri setini oluşturacak daha da şu.
+
+512
+01:14:13,235 --> 01:14:38,235
+Tahtorç Geometri'yi tanıtacak şekilde bir çalışmaya başlamıştım. Onu daha da şekillendirip artık uygun formatta okuyup artık network eğitebilecek hale yetireceğim haftaya. Daha doğrusu bu hafta bitirmeyi planlıyordum ama yetiştiremedim. Onun dışında bir çalışma daha gördüm. Bu da ilgimi çekti. O da aslında kafamı birazcık karıştırdı. Bu benim aklıma yatmıştı ama bir de...
+
+513
+01:14:39,188 --> 01:14:52,188
+Piramit Graph Attention Network implement etmişler. Burada da aslında 3D convolutionlarla bu yine hiperspektrel uydu görüntüler üzerine yapılmış bir çalışma ama bunu...
+
+514
+01:14:52,948 --> 01:15:12,048
+Kendi veri setime implemente edebilirim diye düşünüyorum. 3D olmasa bile belki 2D. İki boyutlu olarak yapabilirim belki. Veya zaten 3 kat resmin üzerindeki artık verinin şeklinde bağlı. Bunu 3D değil de iki boyutlu konvolüsyonlar uygulayarak yaparım.
+
+515
+01:15:20,948 --> 01:15:35,948
+Bu örneğe işlemini buradaki network'e bırakıyorlar. Sonrasında bir graf oluşturuluyor. Sonra da bunu Attached Network'e çevirip sonrasında şeyi elde ediyorlar. Yine bir convolution'a bağlayıp classification...
+
+516
+01:15:35,948 --> 01:15:38,668
+Bu da güzel. Yaklaşım olarak bu da güzel.
+
+517
+01:15:38,804 --> 01:16:06,524
+Bu bana daha yakın geldi. Çünkü ben süperpikseli kullanmak istemiyorum. Onu neden kullanmak istemiyorum? Süperpiksel demek aslında bizim bir parametreye bağlı birbirine yakın piksel değerlerini birbiriyle ilişkilendirmek anlamına geliyor. Ben burada herhangi bir elle set ettiğimiz parametreyi kullanmayı istemiyorum. Daha çok böyle daha yalın, daha kendi içinde çalışan bir network.
+
+518
+01:16:06,804 --> 01:16:08,003
+Bir çözüm istiyorsun.
+
+519
+01:16:08,543 --> 01:16:12,663
+Evet, evet. Yani ben burada parametresi set etmeye çalışmayayım. Network bunun kendisi yapsın istiyorum.
+
+520
+01:16:13,144 --> 01:16:18,423
+Dolayısıyla bu çözüm bana birazcık daha yakın geldi. Belki şunu yapabilirim.
+
+521
+01:16:19,315 --> 01:16:37,916
+Buradaki yapıyla bir şekilde önceki mimarideki yapıyı birleştirip, aslında bu da onu yapıyor bir şekilde. Yukarıda iki katmandan gidiyor. Bir graf tabanlı gidiyor, bir de CNN tabanlı gidiyor. Sonrasında Fusion yapıyor.
+
+522
+01:16:38,676 --> 01:17:01,676
+Buradaki model birazcık daha kompakt bir model. Bu modeli birazcık daha geliştirip, buraya ne katabilirim onu düşünüp, belki buradan yürüyebilirim. Şu anki amacım şu. Bu network'ü tekrar hazır çalışır hale getirip, üzerinde bazı aklıma gelen fikirleri denemeyi planlıyorum. Bu şu an için ilerleyiş...
+
+523
+01:17:02,448 --> 01:17:29,927
+Rotam diyebilirim. O yüzden haftaya yapacağım çalışmalarda muhtemelen şunlar olacak. Öncelikle bu dataset olayını halletmiş olacağım ki aslında metodumuzu belirlemiş olduk. Sonrasında buradaki bu makaledeki önerilen çözümü, implementasyonu vardı diye hatırlıyorum ama eğer yoksa kendimi implemente edip eğitilebilir ve test edilebilir hale getirmeyi planlıyorum.
+
+524
+01:17:30,448 --> 01:17:36,108
+Sonrasında burada bulduğum farklı yöntemleri bir ara getirip yeni bir yöntem sunmayı planlıyorum.
+
+525
+01:17:36,548 --> 01:17:38,648
+Tamam. Çok güzel. Teşekkürler.
+
+526
+01:17:39,328 --> 01:17:40,268
+Ben de teşekkür ederim.
+
+527
+01:17:40,887 --> 01:17:43,208
+Kolay gelsin diyelim sana da şimdiden.
+
+528
+01:17:45,548 --> 01:17:50,508
+Bundan sonraki dersimize, önümüzdeki hafta son hafta dersimiz olacak arkadaşlar.
+
+529
+01:17:52,188 --> 01:17:54,508
+Son haftaki dersimizden sonra.
+
+530
+01:17:55,123 --> 01:18:17,423
+Şimdi final haftasına gireceğiz. Final haftasında bir final sınavımız olacak yazılı şekilde ama standart çalışmalara devam edeceğiz tabii ki. Hep beraber şeyler belirleyeceğiz, toplantı tarihleri. Artık bu bütünlemelerin sonuna kadar daha vaktimiz var yani bu işlerde çalışacak. Bir ay kadar vaktimiz rahat var zaten.
+
+531
+01:18:21,108 --> 01:18:47,108
+O yüzden çalışmaları boş bırakmayın. Çünkü finaller minallerde girince çalışmalar bu tadında, bu şeyde olmayabilir. Şu anda asılıp, altyapıyı yapıp hem paper yazımını hem de sonuçların parlatılması kısmını bırakalım sonlara doğru. O yüzden şu anda herkes iyi gidiyor. Daha da iyi gitsin. Rahat zamanlarımızı, yani okul kapanına kadar ki rahat zamanlarımızı verimli geçirelim. Anlaştık mı?
+
+532
+01:18:49,332 --> 01:18:49,972
+Peki hocam.
+
+533
+01:18:50,492 --> 01:18:51,372
+Okey. [öğrenci].
+
+534
+01:18:53,112 --> 01:18:54,812
+Evet hocam. Merhabalar.
+
+535
+01:18:54,812 --> 01:18:57,272
+Merhabalar.
+
+536
+01:18:57,452 --> 01:18:59,652
+We can start your presentation.
+
+537
+01:19:21,460 --> 01:19:31,219
+Doktor, as you said to me in the last week I read another paper from what I read.
+
+538
+01:19:31,219 --> 01:19:32,899
+Come on.
+
+539
+01:19:32,899 --> 01:19:37,219
+What was your subject and methodology?
+
+540
+01:19:37,219 --> 01:19:47,460
+Last week I said I will present my object.
+
+541
+01:19:48,627 --> 01:19:54,627
+My dataset is lung and colon cancer classification.
+
+542
+01:19:56,627 --> 01:19:57,627
+Okay.
+
+543
+01:19:57,627 --> 01:19:58,627
+Tamam.
+
+544
+01:20:00,627 --> 01:20:03,627
+You are using transfer learning methodologies, am I right?
+
+545
+01:20:03,627 --> 01:20:05,627
+Yes. Yes, yes, Doktor.
+
+546
+01:20:06,627 --> 01:20:15,627
+First, I will implement Xergi Network.
+
+547
+01:20:16,979 --> 01:20:43,659
+Bu, bu
+
+548
+01:20:44,916 --> 01:20:54,916
+ve %20, %20 ve %80.000.
+
+549
+01:20:54,916 --> 01:21:00,916
+Ben recommendi-k-fold cross-validation.
+
+550
+01:21:00,916 --> 01:21:04,916
+Ben de k-fold cross-validation.
+
+551
+01:21:04,916 --> 01:21:08,916
+Do you know k-fold cross-validation?
+
+552
+01:21:08,916 --> 01:21:12,427
+I don't know.
+
+553
+01:21:13,011 --> 01:21:17,011
+İçinliklerle anlatacağım.
+
+554
+01:21:17,011 --> 01:21:19,011
+I'm writing to chat section.
+
+555
+01:21:24,372 --> 01:21:33,132
+K-fold cross-validation, we divide the dataset into the k parts.
+
+556
+01:21:33,132 --> 01:21:41,472
+For example, if k is 5, suppose that we have got 100 samples.
+
+557
+01:21:42,372 --> 01:21:46,252
+If we use 5-fold cross-validation,
+
+558
+01:21:46,623 --> 01:22:10,956
+Bu, bu
+
+559
+01:22:11,091 --> 01:22:23,091
+Bu örneğe alakalı olarak kullanılıyor. Tamam, ben de kullanmak istiyorum.
+
+560
+01:22:23,091 --> 01:22:30,091
+Evet, bu örneğe alakalı.
+
+561
+01:22:30,515 --> 01:22:44,335
+Evet, bu 5-volt kursi verilisinizde, bu prosesi öneren 5-tere, 5-tere, 5-tere.
+
+562
+01:22:44,335 --> 01:22:49,335
+Ayrıca, sistemlerinin sistemlerinin performansı.
+
+563
+01:22:49,335 --> 01:22:50,475
+Tamam mı?
+
+564
+01:22:57,971 --> 01:23:07,971
+Bu sorunlarla ilgili bir sorunlarla ilgili. İpoch 10 yapmak istiyorum.
+
+565
+01:23:19,667 --> 01:23:32,667
+Bu, if you want to reach to better results with your network, you have to increase the epoch sizes.
+
+566
+01:23:32,667 --> 01:23:41,228
+If this is a problem in your local PC, you can change to online MATLAB editor.
+
+567
+01:23:41,427 --> 01:23:42,427
+Bu problemin...
+
+568
+01:23:42,427 --> 01:23:43,427
+Ama bu problemin...
+
+569
+01:23:43,427 --> 01:23:45,427
+...in online metafetörlerine...
+
+570
+01:23:45,427 --> 01:23:47,427
+...bu bayağı yaratan yaratan...
+
+571
+01:23:47,427 --> 01:23:49,427
+...on Python'a...
+
+572
+01:23:49,427 --> 01:23:51,427
+...online sources.
+
+573
+01:23:51,427 --> 01:23:53,427
+Tamam.
+
+574
+01:23:53,427 --> 01:23:55,427
+Bu problemin memori...
+
+575
+01:23:55,427 --> 01:23:57,427
+...in picturesi...
+
+576
+01:23:57,427 --> 01:24:07,884
+...sizek...
+
+577
+01:24:13,020 --> 01:24:18,020
+Biyo, sizlerle anlatacağım.
+
+578
+01:24:18,020 --> 01:24:24,780
+Evet.
+
+579
+01:24:28,500 --> 01:24:41,500
+Bu ne kadar da?
+
+580
+01:24:41,684 --> 01:24:45,004
+5.000.
+
+581
+01:24:45,004 --> 01:24:51,004
+780.
+
+582
+01:24:51,004 --> 01:24:55,004
+Resolution.
+
+583
+01:24:55,004 --> 01:24:55,504
+Evet.
+
+584
+01:24:55,504 --> 01:24:58,684
+İlk başta resizlerle alabilirsiniz.
+
+585
+01:24:58,684 --> 01:25:01,904
+Ama bu iyi bir altyazı değil.
+
+586
+01:25:01,904 --> 01:25:07,484
+Sizin online medlec edici alabilirsiniz.
+
+587
+01:25:07,484 --> 01:25:09,684
+Tamam, bunu yapacağım.
+
+588
+01:25:09,684 --> 01:25:11,684
+Tamam, Doktor.
+
+589
+01:25:11,684 --> 01:25:13,684
+Peki, Doktor.
+
+590
+01:25:13,684 --> 01:25:18,684
+Ama bu problemi bu problemi yok.
+
+591
+01:25:18,684 --> 01:25:22,684
+Bu problemiyle geçerli.
+
+592
+01:25:22,684 --> 01:25:24,684
+Tamam, Doktor.
+
+593
+01:25:24,684 --> 01:25:27,436
+Öncelikle, bu çarşı resiz.
+
+594
+01:25:27,507 --> 01:25:32,667
+And on the other side, I will work on another code, on code.
+
+595
+01:25:32,667 --> 01:25:37,707
+Because I can change all the layers in code.
+
+596
+01:25:39,507 --> 01:25:42,707
+I didn't understand what is it. Can you repeat it again?
+
+597
+01:25:43,528 --> 01:25:48,467
+I am working on another code, to execute in code.
+
+598
+01:25:49,568 --> 01:25:52,728
+Because in the code, I can change all the layers in network.
+
+599
+01:25:53,108 --> 01:26:00,108
+Tamam, kodin, network arketi olduğunu anlayabilirsiniz. Evet.
+
+600
+01:26:00,108 --> 01:26:03,108
+Bunu da da da da yapabilirsiniz. Tamam.
+
+601
+01:26:03,108 --> 01:26:11,108
+Sonuçta, hatırlayabilirsiniz, bu kadar da performansınızı yüksekliğinizde.
+
+602
+01:26:11,108 --> 01:26:16,108
+Bu, bir de çalışmaların bir de çalışmaların.
+
+603
+01:26:21,108 --> 01:26:30,588
+Evet, çünkü metodoloji, basit metodoloji, transfer learning. Evet.
+
+604
+01:26:30,588 --> 01:26:38,388
+Yani, bu da her şeyi kullanmalısınız. Evet. Bunu yapacağım. Tamam. Tamam, çok teşekkür ederim.
+
+605
+01:26:47,859 --> 01:27:11,759
+Başka sorusu olan yoksa şahit çalışmalar dar bir ekiple, dar ve ne derler buna? Dar ve başarılı bir ekiple devam ediyor. Olsun. Biz bunları sonlandırırız. Güzel bir bildiri yaparız. Hatta makale yaparız. Benim desteğim sizlerle güzel bir yola girdiniz. Zor kısmı atlattınız. Bundan sonra çalışmanıza devam edin.
+
+606
+01:27:12,787 --> 01:27:33,247
+Feil ettiğiniz yerlerde bir çözüm yolu bulacağız. Başka bir yola yönlendireceğiz. O yüzden güzel bir şekilde ilerleyelim. Yeni yıldan sonra da son dersimiz olacak. Hepinize güzel bir yıl geçirmenizi diliyorum. İnşallah bu yılı aratmaz gelecek yılımız. Hepinize hayırlı seneler.
+
+607
+01:27:34,907 --> 01:27:37,487
+Teşekkür ederiz hocam. Hayırlı seneler. Teşekkürler hocam.
+
+608
+01:27:38,007 --> 01:27:39,367
+Sağ olsunuz. Görüşmek üzere.
+
+609
+01:27:40,212 --> 01:27:42,212
+Görüşmek üzere.
+
+610
+01:27:42,212 --> 01:27:44,212
+Teşekkür ederim.
+
+611
+01:27:44,212 --> 01:27:46,212
+Görüşürüz.
