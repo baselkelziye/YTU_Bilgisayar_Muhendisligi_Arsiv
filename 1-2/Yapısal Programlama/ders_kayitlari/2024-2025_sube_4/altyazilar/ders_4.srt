@@ -1,0 +1,2471 @@
+1
+00:00:12,435 --> 00:00:15,955
+paylaşalım tam başlayalım.
+
+2
+00:00:19,283 --> 00:00:21,283
+Sonra iddia çalıştırılırız.
+
+3
+00:00:23,283 --> 00:00:24,235
+Uyuuu.
+
+4
+00:00:40,051 --> 00:00:54,051
+Şimdi 13.05'a kadar açık bekleyelim. 14.05 yani pardon. Evet, o zaman tam 10 dakikada. Demektir ki şöyle yapıyorum.
+
+5
+00:10:07,988 --> 00:10:16,388
+Evet arkadaşlar, belki anladığımızı artar diye biraz bekledim ama işle yaramadı. Olsun ne yapalım.
+
+6
+00:10:16,388 --> 00:10:25,348
+E-post attığım üzere bugün, daha doğrusu bu hafta uygulama ile teorik kısmını diğerleriyle değiştirdik.
+
+7
+00:10:25,348 --> 00:10:35,028
+Günün iki ders saati ben teorik kısmına anlatacağım. Çarşambayın da uygulama yapılacak normal ders saatinde.
+
+8
+00:10:36,244 --> 00:10:43,923
+Şimdi bizim bu tarafta dosya işlemleri var. Bununla üstüne güzelce konuşalım.
+
+9
+00:10:48,436 --> 00:11:14,756
+Bu dönem geçip başlıyor. File, input, output, dosya. Bir de çıktı işlem. Şimdi burada, odak noktası olarak bilgisayar belliyeli düşünüyoruz. Bu bağlamda input dosyadan, output ise bilgisayardan dosya olacak. Mesela, konut satırı işlemleri için de input kullanıcı girdisi.
+
+10
+00:11:15,220 --> 00:11:22,220
+Konut satılımda bilgisayar bellerine, outputta bilgisayar bellerinden ekrana aynı fiyatı. O yüzden değişen bir şey yok.
+
+11
+00:11:22,220 --> 00:11:35,220
+Şimdi, input output işlemleri ile ilgili dilin kendine fark göre özgü, kendine has tetrifilleri var.
+
+12
+00:11:35,220 --> 00:11:42,220
+C programlama dili mümkün olduğu kadar yaygın, geniş ve standart olmak istiyor.
+
+13
+00:11:42,868 --> 00:12:05,828
+Fakat derslerimizden biliyorsunuz, çok çeşitli ebatlarda, çok çeşitli yeteneklerde, çok farklı farklı doğanımlar ve eşitim sistemleri arasında ortak çalışacak bir özellikle input-output işlemleri yazmak kolay değil.
+
+14
+00:12:07,892 --> 00:12:17,272
+Bu bağlamda biz mümkün olduğu kadar bu derste hep olduğu gibi ortak standartlara yönelik konuşmaya çalışacağız.
+
+15
+00:12:18,052 --> 00:12:25,292
+Ama illaki beklenmedik olaylar olabiliriz. Bu da sınamanın önemini gösteriyor bize.
+
+16
+00:12:29,107 --> 00:12:55,107
+Şimdi, bu farklı platformlar arasında, eş biçimli tutağları sağlamak için, genelde bir stream yapısı getiriyor diller. C'de de bu şekilde, C dilimleri de bu şekilde. Tüm input output işlemleri, her biri bir dosya veya cihaz ile ilişkilendirilmiş streamler üzerinden yapılır.
+
+17
+00:12:55,475 --> 00:13:11,475
+Stream, hani İngilizce derseniz, akış, akım, akım demeyelim de current anlamında değil ama, benzetebilirsiniz. Nehir akışı gibi düşünebilirsiniz. İşte sırrı bytelar birisi nihayetinde.
+
+18
+00:13:12,820 --> 00:13:35,820
+Fakat burada önemli olan bu byte'ları nasıl alacağız, nasıl aktaracağız? Hangi sırada alacağız, aktaracağız? Hangi ebatta alacağız, aktaracağız? Tek tek mi? Yoksa kaç byte'lık bloklar halinde yazacağız? Ondan sonra acaba bu...
+
+19
+00:13:37,043 --> 00:14:00,803
+Steam'in ucundaki kaynak bize rastgele eleşime izin veriyor mu? Yoksa sarı eleşim üzerinden mi ancak diyebiliriz? Önemli ayrıntılar var. CD'de bunu Steam'ler üzerinden gözlemeye çalışıyor. Mesela diyelim ki, belli bir risk sistemi random eleşime izin vermiyorken.
+
+20
+00:14:01,331 --> 00:14:08,531
+Nasıl vermez hocam derseniz, ben de size ta eskilerde kullanan tape kasetlerini...
+
+21
+00:14:08,768 --> 00:14:19,408
+Örnek olarak, eskiden manyetik ortamlardan ziyade, tape kasetlerine girdi çıktı işlemleri yapmak daha yargındı.
+
+22
+00:14:19,408 --> 00:14:25,408
+Ondan sonraki kartı sistemlere hiç girmeyelim bile. Ben kullanabilirsiniz olarak kartı sistem kullanmadım.
+
+23
+00:14:25,408 --> 00:14:36,768
+Ama çocukluğumda kullandığım ev bilgisayarlarından, yediklemenin dot kartı sistemleri yapılan sistemleri...
+
+24
+00:14:36,768 --> 00:14:44,768
+çok değişik ortamlar var. Bunların da en büyük ortak faydasına hitap edilmeye çalışılıyor.
+
+25
+00:14:44,768 --> 00:14:57,768
+Şimdi, bir stream altyapısına çok girmeyeceğiz. C dedi, bir stream'e erişmek ile ilgili file türünden bir pointer yapısı tanımlamıştır.
+
+26
+00:15:02,388 --> 00:15:18,388
+file türü ile çalışan çeşitli metotlar üzerinden işlemlerimizi yürüteceğiz. Hani ExampleModit ayırıyor da Stux'in kendisini çok çok fazla incelemeyeceğiz. Onunla ne işler yapıyoruz, nasıl yapıyoruz, onları inceleyeceğiz daha çok.
+
+27
+00:15:20,388 --> 00:15:28,172
+Evet, bu arada her şey ortamında aslında üç tane varsayılan string var.
+
+28
+00:15:28,820 --> 00:15:40,320
+STD in, standard input anlamındadır. STD out, standard input anlamındadır. STD error ise standard error anlamındadır.
+
+29
+00:15:40,320 --> 00:15:55,320
+Kullanıcıdan bilgi alacağımız zaman, standard input stringini kullanıyoruz aslında. Scanf, biz özellikle belirtmemekle birlikte, genç arka planda, komut satırını...
+
+30
+00:15:55,700 --> 00:16:10,700
+üzerinden biri kabul etmektedir. Standart input string komut satırına bağlıksın. stdout ise standart output komut satırı ekranına, konsoluna bağlıksın.
+
+31
+00:16:10,964 --> 00:16:24,104
+Eski ana makinelerde slim dart input bir kart, değişik bir kart cihazı olabilirken, STD alt ise çıktıların bir line printer nokta buluşu bir line printer'a çıktısı olarak da konflikredilebilirdi.
+
+32
+00:16:25,104 --> 00:16:32,324
+STD el o ise işte acil bir sistem sonucuna Azure mesajı gönderecek bir elektronik kalep olabilirdi.
+
+33
+00:16:35,316 --> 00:16:47,316
+Biz de file için file sonu ile ilişkili dosya ile ilişkilendireceğiz, devam edeceğiz.
+
+34
+00:16:47,316 --> 00:16:56,316
+Genelde yaptığımız işlemle komut satırı ile ilgili interscanf gibi fonksiyonlarımız var. Bunun çok benzerleri
+
+35
+00:16:57,364 --> 00:17:03,604
+Başına da f harfi getirekten fprintf, fscanf gibi fonksiyonlarımız olacak.
+
+36
+00:17:06,884 --> 00:17:10,084
+Genelde onları kullanıyor olacağız.
+
+37
+00:17:12,804 --> 00:17:16,724
+Şimdi gelelim işin kritik ayrıntılara.
+
+38
+00:17:19,284 --> 00:17:22,564
+Şimdi şu bitstreamine vereyim bize.
+
+39
+00:17:22,996 --> 00:17:45,324
+ya metin modunda, text modunda ya da ikili modda, binary modda gelişebiliriz. İkisinden birini kullanacağız uygun senaryoya göre. Eğer biz işte kelime-işlem türünden çalışmalar yapacaksak, bir insanın okuyup açıp anlayabileceği
+
+40
+00:17:45,395 --> 00:18:04,996
+Metin biçiminde veya daha kendi içinde mantıksal formatı olan işte hdml'miş, css'miş, json'miş, xml'miş, arka planında ama metin tabanlı olan dosyalarla çalışacaksak o zaman text mode'da geçeceğiz bu dosyalara.
+
+41
+00:18:05,715 --> 00:18:14,915
+Ama kendi oluşturduğumuz mesela bir struct yapısından kayıtlı bir sisteme yazıyor okuyorsak da genelde binary yapıyı kullanacağız.
+
+42
+00:18:16,715 --> 00:18:25,515
+TextMode'da çalışırken her bir okuma ya da yazma komutu varsayılan olarak...
+
+43
+00:18:25,587 --> 00:18:35,587
+Bu, slash n newline yeni satırı ile çalışmayı sarar ve aynı zamanda şu slash 0 man karakteri ile de çalışmayı sarar.
+
+44
+00:18:37,652 --> 00:18:48,652
+Ama işte yani farklı işlem sistemlerinin satınları, işte farklı şekilde saklama biçimleri falan filan olacağı için her bir satın da illa sıraşlanma bitmesi de gerekmiyor.
+
+45
+00:18:48,652 --> 00:18:53,652
+Yani bir önceki madde genellikle ama altta istisnalarda oluyor diyoruz.
+
+46
+00:18:57,076 --> 00:19:17,076
+Ama, hani şunun sözünü verebiliyor. Hani biz okuma yaptığımız zaman kaynak dosyamızda satırlar slash end ile bitmiyorsa bile runtime fonksiyonları bunu ekliyor diyor. Ama, ben olasın onu da önce bir denelim diyorum. Ondan sonra ona göre kodumu yazalım demek istiyorum.
+
+47
+00:19:20,076 --> 00:19:21,076
+Peki.
+
+48
+00:19:23,124 --> 00:19:29,124
+Evet, müddet auto-funksiyonları yeni kalıyor. Newland karakterlerini,
+
+49
+00:19:29,124 --> 00:19:31,124
+extension, define karakterleri değiştirebilir.
+
+50
+00:19:31,124 --> 00:19:37,124
+//n yerine //v carriage return diye tabur edilen karakterler daha sonra koyabilir.
+
+51
+00:19:37,124 --> 00:19:41,124
+Şimdi burada kadar budu budu yapsak istisnası olabiliyor.
+
+52
+00:19:41,124 --> 00:19:42,796
+Hızlıca bakayım bakayım.
+
+53
+00:19:47,251 --> 00:19:55,251
+Programmes that work on one system may not work exactly the same way on another.
+
+54
+00:19:55,251 --> 00:20:01,251
+Peki geçelim bu yazdığı daha.
+
+55
+00:20:01,251 --> 00:20:06,251
+Text notadan bahsettik, sırada binary notadan.
+
+56
+00:20:06,675 --> 00:20:07,715
+Hissetmedik de.
+
+57
+00:20:08,076 --> 00:20:08,556
+Eha tamam.
+
+58
+00:20:08,735 --> 00:20:10,596
+Genel hattıyla bahsettik ama çok yeni
+
+59
+00:20:10,596 --> 00:20:12,455
+sistem bağımlı bir
+
+60
+00:20:12,455 --> 00:20:14,875
+biçim. Boş. Binary formatta
+
+61
+00:20:14,875 --> 00:20:16,435
+size sistem bağımlı ama
+
+62
+00:20:16,435 --> 00:20:18,115
+en azından
+
+63
+00:20:18,115 --> 00:20:20,455
+şöyle bir durum oluyor. Compiler bu
+
+64
+00:20:20,455 --> 00:20:22,795
+gelen ya da giden byte'ların hiçbir şekilde
+
+65
+00:20:22,795 --> 00:20:23,935
+yorumlamasını yapmıyor.
+
+66
+00:20:25,015 --> 00:20:26,655
+Bunların yorumlaması işlemesi
+
+67
+00:20:26,655 --> 00:20:28,056
+tamamen size tanıyor.
+
+68
+00:20:29,395 --> 00:20:30,836
+Bu bağlamda
+
+69
+00:20:30,836 --> 00:20:32,495
+bazı avantajları
+
+70
+00:20:32,495 --> 00:20:33,035
+var.
+
+71
+00:20:33,748 --> 00:20:41,428
+Öte yandan binary modda yapılan işlemler, hex modda yapılan işlemlere göre daha hızlı yürütüyorlar.
+
+72
+00:20:42,968 --> 00:20:49,048
+Ama aslında söylemiş miyim, söylememişiz. Aklınızda bulunsun. Bu genel olarak böyledir.
+
+73
+00:20:49,844 --> 00:21:00,084
+Çünkü öbür durumda, durumda, metin de işte UTF, yeni çeşitli versiyonları gibi encoding kodlama fonksiyonlarıyla binary'ye çevirmek durumunda olabiliyor.
+
+74
+00:21:00,084 --> 00:21:13,403
+Böyle bir overhead var ve doğalumlarda genelde en alt düzeyde 0,1 üstünden binary modda çalıştığı için genelde daha hızlı oluyor inşallah.
+
+75
+00:21:13,403 --> 00:21:15,403
+Onu önemli olarak söyleyeyim.
+
+76
+00:21:16,660 --> 00:21:27,660
+Eğer bir dosyanın kendi içerisindeki hizalama, satır kırılma vesaire gibi line structure diye tableden yapısını konmak istiyorsak binary'ye girmeyeceğiz.
+
+77
+00:21:27,660 --> 00:21:30,660
+Ama öbür türlü binary kullanırız.
+
+78
+00:21:30,660 --> 00:21:42,660
+Ve burada bilmemiz gereken şey de şu, bütün stringler varsamalı olarak text modda açılıyor ama biz binary seçiyorsak onu özellikle belirteceğiz. Nasıl belirteceğiz?
+
+79
+00:21:43,087 --> 00:21:55,487
+fopen ile dosya açarken, onun gibi files pointer ile işaretle ilişkilendirirken yapacağız birazdan göreceğiz. Ki Winx de tüm datayı binary data olarak söylüyor ama işte.
+
+80
+00:21:55,632 --> 00:21:55,772
+Şu an çok fazla Unix sistemle uğraşamıyor olabiliriz ki ama Miras ve Linux sistemler var. Orada da
+
+81
+00:21:55,772 --> 00:22:07,632
+Orada da
+
+82
+00:22:07,632 --> 00:22:08,632
+Çok fazla
+
+83
+00:22:08,632 --> 00:22:12,395
+İlerleyelim. Önemli ayrıntılar için konuşalım.
+
+84
+00:22:17,587 --> 00:22:23,587
+Evet, tamam. Şimdi geliyoruz. Fire yapısı üzerinden stringleri kullanma işlemi.
+
+85
+00:22:27,667 --> 00:22:34,667
+Şimdi herhangi bir firewall işlemi yapabilmek için bir stream'i, bir dosya ile
+
+86
+00:22:35,220 --> 00:23:02,519
+ilişkilendirmemiz lazım. Direkt dosyada, device yani bir cihaz ile genellikle uğraşmıyoruz biz. Niye sürekli device device deyip yürüyor? Unix'de her şey bir device da bizden öyle device device deyip yürüyor. Yoksa biz yani bir spesifik bir dosya üzerinden işlem yapacağız. Bunun için FireTune'dan biz pointer tanımlayacağız.
+
+87
+00:23:03,796 --> 00:23:12,796
+Bunun file yapısını ayrıntılarını merak istiyorsanız, STD, Ionhap ve H dosyasını kurcalayabilirsiniz.
+
+88
+00:23:12,796 --> 00:23:23,600
+Çeşitli alanlar olduğunu göreceksiniz. Dosyanın adıymış, erişim moduymuş ve sıradaki sonraki karakteri gösteren şahitliymiş gibi.
+
+89
+00:23:23,599 --> 00:23:30,159
+Bunu bir Twinket liste yapısı gibi düşünebilirsiniz arka planda. AccessMode önemli. Birazdan değineceğiz.
+
+90
+00:23:30,159 --> 00:23:36,159
+Dosyenin için eriştiğiniz okuma amaçlı mı, yazma amaçlı mı, yoksa ekleme yapmak amaçlı mı?
+
+91
+00:23:36,159 --> 00:23:45,599
+Ondan sonra okuma modunu okumak için mi açıyorsunuz, yazmak için mi açıyorsunuz? Bunlar önemli erişim modu belirtişleri. Hepsine değineceğiz.
+
+92
+00:23:47,599 --> 00:23:51,039
+Onlar da implementation dependents olabilir.
+
+93
+00:23:51,152 --> 00:23:54,152
+Evet, tamam da sonuçlar.
+
+94
+00:23:57,971 --> 00:24:07,331
+File Stocks'ın sunduğu bazı bilgide doğrudan erişemeyebiliriz. Temel işlevleri nasıl kullanacağımızı şimdi bugün bu daşta görüyor olacağız.
+
+95
+00:24:11,635 --> 00:24:31,627
+Evet, şimdi geçerli bir file pointer elde edilmek için fopen fonksiyon kullanacağız. Ondan sonra bu şekilde fopen ele bir file pointer elde ettikten sonra bir streame, siz onu bir dosya diye de tercüme edebilirsiniz.
+
+96
+00:24:32,084 --> 00:24:40,084
+Ondan okumak, ona yazmak ve onu kapatmak ile ilgili işlemler yapabiliriz. Bunların hepsini bu Firepoint'ı kullanarak yapacağız.
+
+97
+00:24:41,084 --> 00:24:50,827
+Bu arada aklınızda olsun, kendi yazdığınız aynı programda birden fazla stream'i aynı anda açabilirsiniz. Hiç problem değil.
+
+98
+00:24:50,836 --> 00:25:02,836
+Kaç tane aşağıda? 2, 5, 10, 20, 50? Bilmiyorum. Bazı işlemler bununla bir sınır ıssınız sağlayabilirsiniz.
+
+99
+00:25:02,836 --> 00:25:13,324
+Ne bileyim işte, before döngüsü içerisinde diyelim ki 64 tane stream dosya akmaya çalışıyorlar, 64 tane farkı file pointer'ı...
+
+100
+00:25:13,587 --> 00:25:33,827
+ile farklı farklı şey, ne yapayım? Text1, .test2, .fila gibi dosya oluşturmaya çalışın. Üst limitini keşfedemeyizler. Ama zaten birkaç tane file pointer'ın dışında, az önce bahsettim makamlar, aşırı makamlar genelde. Şey yapıyorsanız başka, ne bileyim.
+
+101
+00:25:34,099 --> 00:25:47,099
+Dosya paylaşım adı aynı anda 50 tane dosyayı upload edip 80 tanesini de upload ediyorsanız ondan başka bir mesela var. Neyse yine uzaklaşmayalım, odaklanalım.
+
+102
+00:25:49,263 --> 00:26:10,263
+Siz bu file pointer üzerinden çeşitli okuma, yazma, ekleme işlemleri yaptıkça, işletim sistemi o dosyada, o stringde sıradaki byte konumunun nereye de olduğunu gösteren dosya konum işaretçisini otomatik ayarla.
+
+103
+00:26:10,263 --> 00:26:17,263
+Şimdi, burada iki şey var. Birincisi file pointer, ikincisi file position indicators.
+
+104
+00:26:17,263 --> 00:26:24,463
+Birincisi hangi dosyayla çalışıyorsun? İkincisi şu an o dosyanın hangi byte'ındasın, ne konumundasın?
+
+105
+00:26:24,463 --> 00:26:37,963
+O yüzden şunu da dikkatli söylemek lazım. File pointer dediğimde genelde file, büyük artıda file içerisinden işaretçi pointer'dan bahsediyorken
+
+106
+00:26:38,451 --> 00:26:46,211
+Dosya tonum göstergeci demeliyim ama bazen ağzımda tonum işaretçisi de bakabilir.
+
+107
+00:26:46,211 --> 00:26:51,731
+O unlink'i orada File Position Indicator demek istiyorumdur.
+
+108
+00:26:53,731 --> 00:26:58,052
+Ve bu File Position Indicator da zaten aslında siz doğrudan erişemezsiniz.
+
+109
+00:26:58,052 --> 00:27:04,612
+Bazı erişme yolları vardır ama o yolların taşınabilirdiği portabilitesi sıfırdır diyeyim.
+
+110
+00:27:08,948 --> 00:27:23,347
+O yüzden, hani, filmi sırada olmayan yollardan geçmek için bunları yapmaya çalışabilirsiniz ama, burada aslında yapılması gereken, random access yöntemini kullanmaktır.
+
+111
+00:27:23,347 --> 00:27:34,548
+Ama da biraz dangerous daha sonra. Evet, burada tekrar söylüyor, bunları birbirine karıştırmayın. Yani, file pointer ve file position indicator'ı karıştırmayın diyor.
+
+112
+00:27:35,700 --> 00:27:44,700
+Peki, şimdi birçok şeyde olduğu gibi dosya işlemlerinde de temel olarak kullanacağımız kitaplık, CD de Ayona Touch kitaplığı.
+
+113
+00:27:44,700 --> 00:27:58,251
+Bunun içerisinde birkaç tane, daha doğrusu iki tane önemli takma adımız var. Birincisi EOF.
+
+114
+00:27:58,259 --> 00:28:26,259
+İkincisi NULL. Nullı zaten biliyoruz aslında. Bellek ayırmak için malloc veya ciğerloc ile bellek ayırırız ama bellek ayıramazsa dönen, yere döndüren pointer NULL pointer olur. O zaman işte bellek yok diyip uygulamadan çıkarız biliyorsunuz. Bizim standart uygulamamız artık. O yüzden Nullı zaten bilmediğimiz şey değil. Eof'yi yeni öğreniyoruz. Eof endof file demek. Şu anda işte bu file position.
+
+115
+00:28:26,259 --> 00:28:39,859
+Indicators, ilgili file pointer'ının ilişkili olduğu, ilgili dosyanın ya da backstream'inin sonuna ulaşmış mı, ulaşmamış mı?
+
+116
+00:28:40,579 --> 00:28:47,279
+Ulaştıysa EOF değeri döndürüyor, ulaşmadıysa başka bir değer döndürülüyor.
+
+117
+00:28:50,279 --> 00:28:51,859
+Uygulamalarını göreceğiz.
+
+118
+00:28:56,084 --> 00:29:09,084
+Niye amaçlı olursa olsun, bir dosya atmak için öncelikle fopen fonksiyonunu kullanmaya ihtiyacımız var. İki parametre alıyor. Birinci parametre dosya adı, ikinci parametre erişim modu.
+
+119
+00:29:09,084 --> 00:29:20,084
+Tamam. Ve erişim modunda da işte text modunda mı binary modunda mı açıyoruz onu an önce belirteceğiz. Okuma mı yazma mı ekleme amacıyla mı yazıyoruz onu da belirteceğiz.
+
+120
+00:29:22,836 --> 00:29:26,836
+Şimdi bunların tablosu ekranda yer alıyor arkadaşlar.
+
+121
+00:29:31,155 --> 00:29:50,515
+Şimdi var söylen mod da text moduydu. Eğer özellikle teksti ifade eden T harfini yazmazsanız, sadece T harfi görmüyorsunuz. O zaman zaten defolta olarak T modunda açılıyor. Metin eleşim biçimine açılıyor.
+
+122
+00:29:50,515 --> 00:29:54,915
+Şimdi burada geldik. Ne amaçla bu dosyayı açacağımızı belirtmeye.
+
+123
+00:29:55,955 --> 00:30:00,955
+Bunlar case sensitive oluyor arkadaşlar. Küçük ağzı kullanmaya özen gösterelim.
+
+124
+00:30:01,955 --> 00:30:08,955
+Sadece v karakterini kullanıyorsak, bunu okuma amaçlı açıyoruz anlamına geliyor.
+
+125
+00:30:09,955 --> 00:30:15,955
+Bu nedenle bir dosyayı okurken de dosyayı başından itibaren okumamızın en anlamlı olacağı için
+
+126
+00:30:15,955 --> 00:30:21,955
+File Position Indicators dosyanın başına yerleştirilmiş olduğunu otomatik olarak.
+
+127
+00:30:24,531 --> 00:30:34,531
+O dosyaya yazma amaçlı gelişiyorsak, gelişmek istiyorsak, o zaman da w yani write yazmanın google'usunu kullanacağız.
+
+128
+00:30:35,531 --> 00:30:46,531
+Burada dikkat etmeniz gereken şey, eğer aynı isimli dosya hali hazırda varsa, o zaman dosyanın eski hali uçuruluyor arkadaşlar.
+
+129
+00:30:47,059 --> 00:30:53,059
+File biliyorsunuz, geçmiş olsun. Her her bir şekilde geri alınması mümkün değil.
+
+130
+00:30:53,059 --> 00:31:01,059
+File Position Indicator'da bir şey yazarken temiz bir sayfa açarak baştan yazmak isterseniz genelde.
+
+131
+00:31:01,059 --> 00:31:05,059
+O yüzden baştan konuluyor. File Position Indicator.
+
+132
+00:31:05,907 --> 00:31:31,107
+Böyle olsun istemiyorsunuz. Dosyanın mevcut halinin sonuna ekleme yaparaktan yazma yapmak diyorsanız eğer o zaman da append'in asını say pozisyon intikators dosyanın mevcut halinin sonuna gidiyor. Bunu daha geriye alamıyorsunuz.
+
+133
+00:31:32,147 --> 00:31:37,427
+Ancak işte çeşitli yazma fonksiyonunu kullanarak yazdıkça ileri gidiyor.
+
+134
+00:31:41,427 --> 00:31:51,907
+Eğer isterseniz tamam geri alabiliyorsunuz ama geri alabileceğiniz en erken yer o dosyanın işte açıldığı andaki son noktası daha da geri alamıyorsunuz.
+
+135
+00:31:53,779 --> 00:32:06,019
+Temel şeylerimiz bunlar. Önünü V ile read için açtığınızda write ya da append yapamazsınız. Ya da append için açtığınızda read yapamazsınız.
+
+136
+00:32:08,019 --> 00:32:16,499
+Bu sıkılığı biraz esnetmek istiyorsanız, o zaman artı karakteri de bir yandan kullanıyorsunuz.
+
+137
+00:32:16,819 --> 00:32:34,579
+v artı diye açıklanır zaman dosyayı hem okumak hem de yazmak amaçlı erişeliyorsunuz bu dosyaya. Normal sıfraya da olduğu gibi dosya konum işaretçisi dosyanın başına yerleştirilmiş oluyor.
+
+138
+00:32:35,923 --> 00:32:57,163
+w artı ise yine reading, writing, her iki amaçla da kullanabiliyorsunuz. w artı kullanarak da açarsanız ama işte aynı isimli dosya varsa onun siliniyor olması devam ediyor. Tamam mı? Ve son olarak a artı. Append hem sonunu ekleyebiliyorsunuz hem okuyabiliyorsunuz.
+
+139
+00:32:58,163 --> 00:33:09,763
+Herhangi bir yerden okuyabiliyorsunuz ama yazacağınız zaman bunu ancak işte o dosyayı açtığınız andaki dosyası nereye gösteriyorsa oradan sonrasını yazabilirsiniz.
+
+140
+00:33:11,124 --> 00:33:18,103
+Peki hocam, mevcut dosyanın önceki halinin başında da yazma işlemleri falan yapmak istiyorsam ne yapacağım?
+
+141
+00:33:18,103 --> 00:33:22,223
+O zaman işin kolayı birden fazla stream açacaksınız.
+
+142
+00:33:23,988 --> 00:33:38,748
+Aynı dosyeler birden fazla steam açmayın. Fakat ne yapabilirsiniz? Önce mesela diyelim ki dosyayı okuma amaçlı açacağız. Okul bir kopyasını oluşturursunuz.
+
+143
+00:33:39,571 --> 00:34:03,031
+write ile de kopya sonuçlarımız. Sonra kapatıp, ondan sonra standart A ile belki ya da baştaki işlemleri önce yaptıktan sonra yazma işlemleri yazmak gibi bizden fazla string kullanan çözümlerle gelebilirsiniz. Bana tekrarlıyorum, aynı dosyaya ve aynı anda bizden fazla file pointer açmayın. Orada problem.
+
+144
+00:34:06,031 --> 00:34:06,511
+Peki.
+
+145
+00:34:07,028 --> 00:34:14,028
+Peki ya Text modunda değil de Binary modda bu işlemleri yapmak istiyorum derseniz ne olacak? O zaman
+
+146
+00:34:14,387 --> 00:34:38,107
+Harfin yerine bir de B ekleyeceksiniz. Yani RB, WB, AB. Peki, R artı da nasıl olacak? RB artı şeklinde yazacaksınız. W artı yerine WB artı şeklinde yazacaksınız. A artı yerine AB artı şeklinde yazacaksınız. B artını da sağına yazsak olur mu hocam?
+
+147
+00:34:38,804 --> 00:34:48,804
+implementation dependent. Ben o şekilde hatırlıyorum. En yaygını artıya en sağa koymak şeklinde. Deneyin görün.
+
+148
+00:34:56,371 --> 00:35:05,672
+Evet. Şimdi bu tabloda çeşitli erişim modlarında söylediklerimizin tablo şeklinde özetlenmiş halde var.
+
+149
+00:35:05,672 --> 00:35:12,371
+Ama sonra hani tam tersi. Eğer hani stream'den okuma yapmak istiyorsanız neler kullanabilirsiniz?
+
+150
+00:35:12,371 --> 00:35:18,072
+R kullanabilirsiniz, R artı kullanabilirsiniz, W artı kullanabilirsiniz, A artı kullanabilirsiniz gibisinden.
+
+151
+00:35:18,072 --> 00:35:23,371
+Bu tabloda bu sefer satır, sütun satır yapmış bir şekilde anlatıyor size.
+
+152
+00:35:24,788 --> 00:35:48,108
+Evet. Şimdi örneğimize başlayacağız. Evet, fopen size bir file pointer döndürüyor. Bu file pointer'ın null olup olmadığını kontrol etmek zorundayız. Çünkü o belirttiğimiz dosya olmayabilir. Dosya vardır ama bizim okuma hakkımız olmayabiliriz. Veya gözüküyordur o dosya ama bir kod yaptır, bozulmuştur.
+
+153
+00:35:48,692 --> 00:35:54,692
+Her şey olabilir. Bunlar benim aklıma gelir. İlk olası aksikler daha büyük bir şeyler de olabilir.
+
+154
+00:35:56,692 --> 00:36:00,692
+Ve yazmak için ise fprintf fonksiyon kullanılacak.
+
+155
+00:36:00,692 --> 00:36:13,692
+Ve yine format stringler, işte %s, %d, %c gibi onlar da hala kullanılır şekilde olmasa birlikte işlemlerimizi yapabiliriz.
+
+156
+00:36:17,108 --> 00:36:40,044
+Şimdi, bu hani bu printf'lere alternatif olarak, printf'in fprintf, genet'in fscanf, buna alternatif olarak, ek farklı erişim yöntemleri sağlayan farklı fonksiyonlar. Örneğin, hocam ben, eee...
+
+157
+00:36:40,083 --> 00:37:01,683
+Özellikle text modda anlamı var. Bunların çoğunlukla ilk ikisinin text modda daha çok anlamı var. Metin dosyasını karakter karakter okumak istiyorum derseniz o zaman getce ben metin dosyasına başlıklar tek bir karakter yazarak ilerlemek istiyorum diyorsanız da o zaman da putge fonksiyonları var. Bunları kullanacağız.
+
+158
+00:37:02,516 --> 00:37:22,516
+Hocam, karakter karakterle uğraşmayacağım. Ben satır satır okuma ve yazma işlemleri yapmak istiyorum diyorsanız, o zaman satır okumak için fgets yani ffile get input anlamında, s de string anlamında. Bir satır okumak ve string okumak anlamında.
+
+159
+00:37:22,516 --> 00:37:27,516
+Fgets bir satır yazmak için ise fboots fonksiyonları var. Bunları kullanacağız.
+
+160
+00:37:28,436 --> 00:37:39,396
+Binary modda gelişiyorsanız ise de, o zaman kayıt kayıt okumak ve kayıt kayıtı yazmak şeklinde işlemler yapacaksanız, fread ve fwrite fonksiyonlarını kullanacağız.
+
+161
+00:37:40,115 --> 00:37:52,536
+Mesela bir strc yapısı içerisinde kendi yapımızı oluşturup ve öyle veriler yazıyorsak eğer, o zaman tercih edeceğimiz yöntem okuma için fread, yazmak için de fwrite fonksiyonlarını kullanmak olacak.
+
+162
+00:37:53,523 --> 00:38:00,523
+Bunlarınkin dağlarında bazı avantaj ve detumantajları da var. Onlara da deneyeceğiz.
+
+163
+00:38:04,500 --> 00:38:08,779
+Şimdi ortak bazı genel kurallar var, onlardan da.
+
+164
+00:38:11,900 --> 00:38:15,980
+Şimdi bazı modlarda hem okuyabiliyoruz hem yazabiliyoruz ya dosyayı.
+
+165
+00:38:15,980 --> 00:38:23,980
+Eğer öyle bir şey yapacaksak, hani biz stringden okumak ve ardından da yazmak istiyorsak bunları peş peşe yapamıyoruz.
+
+166
+00:38:23,980 --> 00:38:26,180
+Okuma işlemlerimizi bitirip...
+
+167
+00:38:26,579 --> 00:38:48,939
+Şu aşağıdaki 3 fonksiyondan birini verip ancak ondan sonra yazma yapabiliyoruz. Ya da işte yazma yaptık, şimdi okumaya geçmek istiyoruz. Yine şu aşağıdaki 3 fonksiyondan birini çalmamız lazım. Aksi takdirde doğru biriyle çalışılamıyor. Birisi fseq, ikincisi rewind, üçüncüsü fflash. Bunlar ne işleriyor?
+
+168
+00:38:49,327 --> 00:39:00,327
+fseek bir stream içerisinde belli bir byte'da dosya konum göstergecini yerleştirmeye yarıyor, taşımaya yarıyor.
+
+169
+00:39:00,327 --> 00:39:11,327
+divine ise dosya konum göstergecini dosyanın en başına almaya yarıyor. fflash ise neye yarıyor? Şimdi anlatayım.
+
+170
+00:39:19,219 --> 00:39:24,219
+Şimdi siz isteseniz de istemeseniz de
+
+171
+00:39:27,219 --> 00:39:35,884
+İçer zaten işin doğası gereği bellek sistemi ile dosya sistemi farklı hızlarda çalışmakta.
+
+172
+00:39:39,572 --> 00:39:47,572
+Belki elişimleri çok hızlı iken, dosya elişimleri çok çok yavaş. Peki, şimdi siz şöyle düşünün.
+
+173
+00:39:47,572 --> 00:39:54,572
+Veriyi su gibi değil. Su gibi düşünün. Veriyi su gibi düşünün.
+
+174
+00:39:54,572 --> 00:40:05,572
+Bir şehir hattı su borusunu, kümkünü diyeyim mesela, oradan gelen yoğun hacimli su var.
+
+175
+00:40:06,164 --> 00:40:14,444
+Siz kovanızı doldurmak istiyorsanız, oradan dolduramazsınız.
+
+176
+00:40:14,444 --> 00:40:26,324
+Ama elinizdeki mutfağa gelene kadar o su akışı aralarda çok farklı gitgide düşüren gidip düşüren bodolardan falan geliyor.
+
+177
+00:40:26,324 --> 00:40:29,764
+O şekilde, o hıza düşürülerekten geliyor.
+
+178
+00:40:33,108 --> 00:40:36,108
+Şöyle bir şey olundu diyelim ki.
+
+179
+00:40:40,108 --> 00:40:45,108
+O senaryoya geçelim. Nasıl sönebiliriz?
+
+180
+00:40:46,108 --> 00:40:48,108
+Ha şöyle söyleyeyim.
+
+181
+00:40:48,108 --> 00:40:56,108
+Şimdi eskiden yangın söndürme amaçlı insanlar Erden'in'e kova ile su taşıyorlardı.
+
+182
+00:40:57,715 --> 00:41:04,516
+Şimdi diyelim ki o su taşıyan insanlarla bir tanesi yorulmuş olsun.
+
+183
+00:41:04,516 --> 00:41:11,715
+O yüzden ayak uyduramıyor. Ne olacak? Bazı kovaları alamayacak, düşecek ya da döpeyecek.
+
+184
+00:41:11,715 --> 00:41:20,715
+Bu engellemenin bir yolu, ona destek olabilecek birkaç kişi daha koymak olabilir.
+
+185
+00:41:21,427 --> 00:41:37,748
+O kişiler bu yolu olan kişinin yedi olarak görev yapacak ve orada bir tampon bölge oluşturacaklar. Böylece dökülmesini engelleyecekler.
+
+186
+00:41:37,748 --> 00:41:46,707
+Dosya sistemleri de böyle çalışıyor arkadaşlar. Bellekten gelen, çok hızlı gelen veriyi
+
+187
+00:41:46,835 --> 00:42:00,315
+Doğrudan dosya sistemini kararmaya gidiyoruz. Çünkü dosya sistemine erişmek isteyen birden fazla uygulama olacaktır illa ki. Bakın aynı dosyaya demiyorum.
+
+188
+00:42:03,188 --> 00:42:29,248
+Farklı dosyalara output yapılmak istenebilir veya farklı dosyalardan input yapılmak istenebilir. Fakat bunların hepsi aynı diskte ise o disk kendisine gelen o kadar yoğun isteği karşılayamaz. Bu nedenle işletim sistemleri gerek donanımlar gerek işletim sistemleri tampon bellekler kullanırlar.
+
+189
+00:42:30,068 --> 00:42:34,068
+Buna İngilizce cache memory deniliyor.
+
+190
+00:42:35,068 --> 00:42:42,068
+Hele ki eski biçim döner, manyetik sabitlisler söz konuksuyken,
+
+191
+00:42:42,068 --> 00:42:54,028
+harddiskin performansını, başarılı belirleyen etkerlerden biri de üstündeki yüksel kampon bellek idi.
+
+192
+00:42:54,132 --> 00:43:19,132
+Yani, ısıtı bir miktarda RAM bellek içeriyorlar. Ben, 128 MB, siz deyin 512 MB. Hani, en büyük sumucu diskleri diyelim ki 1 GB ya da 2 GB tampon bellek lüks olarak içeriyor. Böylece ne oluyor mesela? Oraya yoğun yazma işlemleri mi olacak? Aslında o yazacak bilgiler diskin lüksal tampon belliğinde bekletiliyor.
+
+193
+00:43:19,411 --> 00:43:32,411
+Diskin kafası ne zaman ilgili yere konumlandı ve daha önceki işlemleri bitirebildi, yeni sıradaki işlemi tampon bellekten haa yapacak ne varmış, haa işte oradan alayım diyor mesela.
+
+194
+00:43:34,152 --> 00:43:39,411
+Gibi bir çalışma biçim var ya da öbür taraftan okuma yapılacak diyelim ki.
+
+195
+00:43:42,356 --> 00:44:09,155
+Bazı tahminleme yöntemleri ile işletim sistemi belki diskten bazı byte'ları önceden çekebilir bellekte bir yere. Ondan sonra o byte'ları sizin uygulamanıza bellekten veriyor olabilir aslında mesela. Bu tamamen sistem bağımsız yapılan optimizasyon başlamamız. Bütün bunların yapılan növresi için tampon bellek kullanılır. Bu tampon bellek dolu ise bunu boşaltmak komutudur fflash fonksiyon.
+
+196
+00:44:10,356 --> 00:44:20,356
+İki, siz diyelim ki yazma komutları verdiniz, sonra okuma yapacaksınız ama belki yazılacak, belki daha henüz ilgili dosya yazılamadı. Kampon belirti bekliyor.
+
+197
+00:44:21,427 --> 00:44:31,148
+O tampon belliğin boşaltılmaya zorlamayı, şu an boşanmamış ise de en azından boşlama kadar beklemeyi sağlıyor mesela.
+
+198
+00:44:31,148 --> 00:44:39,427
+Tf-flash. Bunu output açısından da düşünebilirsiniz, input açısından da düşünebilirsiniz. Bu zorunluluk arka planı da bundan kaybedebilir.
+
+199
+00:44:43,827 --> 00:44:53,827
+Ve bu bahsettiğim üç fonksiyon, işte fsc, baksaylar, bunların hepsi tampon bellekleri boşalttığı için bunları kullanılması gerekiyor.
+
+200
+00:44:55,827 --> 00:45:05,827
+Ama eğer hani, ne bileyim, bellek sıkıntımız yoksa isterseniz, anlayın, bir input systemden veriyi okup, okuyup,
+
+201
+00:45:06,452 --> 00:45:18,072
+Ondan sonra, cıma output edecek veriyenin hepsini bellekte tutup, ondan sonra bunları tekrar hamlederek output stream'e gönderebilirsiniz. Eğer bellek sıkıntınız yoksa.
+
+202
+00:45:18,072 --> 00:45:28,871
+Ama bellek sıkıntınız varsa, ne kadar boş belleniz varsa, bir sefer o kadar byte okuyup, onu başka bir stream'e, o kadar byte şeklinde yazabilirsiniz.
+
+203
+00:45:36,884 --> 00:45:50,884
+input var put stimmleri aynı dosyayı işaret edebilir fakat mesela örneğin okuduğun dosyayı yazmadan önce illa kapatmak zorundasın.
+
+204
+00:45:50,884 --> 00:46:00,556
+Yani append ile bile yapsak, a6 ile b6 ile w6 ile r6 ile ne ile yaparsak yapalım.
+
+205
+00:46:01,076 --> 00:46:20,076
+Eğer iki file pointer aynı dosyayı gösteriyorsa iki farklı file pointer o zaman yukarıdaki üç tane fonksiyon da kutlanmıyor. Önce bir vey ile ilgili yaptığım işi yapıp ondan sonra o file pointer'ı kapattıktan onunla ötüksünü yıkırıp diğer işlemleri yapıyorsunuz.
+
+206
+00:46:22,996 --> 00:46:29,556
+Peki nasıl kapatılacak hocam, dosyaları? fclose fonksiyonunu kullanıyorsun, tek parametre alıyor, bir file pointer.
+
+207
+00:46:29,556 --> 00:46:35,795
+Daha ben açabilmiş olduğunuz, null olmayan bir file pointer'ını veriyorsunuz, sayfak olarak kapatıyor.
+
+208
+00:46:35,795 --> 00:46:40,996
+Bu kadar asit. Aynı zamanda tabii tampon belliği de başartıyor.
+
+209
+00:46:42,291 --> 00:46:52,291
+Evet şunu söylemiştik, aynı anda açılan bir sınır olabilir. O yüzden kullanmadıklarınızı kapatmak önemli. Zaten programdan çıkıyorken kapatmak daha daha önemli.
+
+210
+00:46:52,788 --> 00:47:06,067
+Çünkü eğer olur da aynı zamanda diyelim ki daha karmaşık pointer aritmetiyle çeşitli işlemler de yapıyorsanız bir yandan, daha önceki haftada gördük.
+
+211
+00:47:06,067 --> 00:47:16,107
+Bir yıldızı yanlış koymak, bir parantezi yanlış yere koymak, ilan nedenleriyle uygulamanın donup kaldığını gördünüz.
+
+212
+00:47:16,967 --> 00:47:19,127
+Yaptığımız çeşitli hatalar yüzünden mesela.
+
+213
+00:47:19,440 --> 00:47:41,440
+Eğer o sırada bir file pointer açık kalsaydı, ben o komut satırı penceresini kullanılan zorla kapattığımda veya kontrol arttırıyla kapattığımda geçmiş olsun, o dosya işaretçisi, hele ki yazma modunda açtıysam, bence yazdığım neler kayboldu, bitti, gitti, geçmiş olsun, geri alabilmemin hiçbir yolu da yok. Bu nedenle...
+
+214
+00:47:45,300 --> 00:47:50,240
+programdan çıkmadan önce, main fonksiyonundan çıkmadan önce
+
+215
+00:47:51,188 --> 00:48:19,084
+Hem tabiki ayırdığımız belliyi geri vermek ve ardından da ya da öncesinden sonra sırasına göre hangisini önce yaparsanız yapın. İster önce belliyi boşaltın sonra dosyları kapatın veya tam tersi hangisi de sizin o anki akışınız uygunsa. Ama exit ya da return yapmadan önce main fonksiyonla bu iki işi ayırdığımız belliyi geri vermeyi ve file pointerlarını kapatmayı fclose kesinlikle kesinlikle unutmayın.
+
+216
+00:48:19,731 --> 00:48:22,731
+Umutleri kaybı çok ciddi bir sorumluluyor.
+
+217
+00:48:26,099 --> 00:48:35,960
+Bakın, katılımcı olmamış. O yüzden şimdi direkt devam edelim bakalım. Bir örnek uygulamamıza.
+
+218
+00:48:36,307 --> 00:48:46,307
+Şimdi, şu bahsettiğim işte file, staktöründen kayıtlar oluşturalım, bunlarla uğraşturalım falan bir şey. Uygulama dersini yapacaksınız.
+
+219
+00:48:46,307 --> 00:49:00,307
+Şimdi bu değişik dosya erişim modlarını denemek, nasıl açıyoruz, nasıl kapatıyoruz, nasıl okuyoruz, nasıl yazıyoruz bunun örneklerini görmek için senaryo şu olacak.
+
+220
+00:49:00,307 --> 00:49:03,307
+Bir dosyanın kopyasını alışverişim.
+
+221
+00:49:04,307 --> 00:49:17,307
+Ama bunu hem text modunda yapacağız hem de binary modda yapacağız. Text modunda yaptığımızda karakter karakter kopyalama ve satır satır kopyalama işleri yapacağız.
+
+222
+00:49:17,307 --> 00:49:26,891
+Değişik dosya formatlarında bu erişim yöntemleri nasıl sonuç veriyor bunların biz uygulamalı örneklemesini yapacağız şimdi.
+
+223
+00:49:32,275 --> 00:49:33,755
+Başlayalım bakalım.
+
+224
+00:49:34,955 --> 00:49:36,076
+Bir tane
+
+225
+00:49:37,275 --> 00:49:38,475
+vide açalım.
+
+226
+00:49:44,884 --> 00:49:51,884
+başlıyor
+
+227
+00:50:12,543 --> 00:50:13,543
+Başlıyor.
+
+228
+00:50:12,115 --> 00:50:16,115
+Şöyle bir alalım. Diye geçirelim de onun üstünde.
+
+229
+00:50:16,115 --> 00:50:17,115
+Şuruz.
+
+230
+00:50:18,115 --> 00:50:19,115
+Hadi alın ben.
+
+231
+00:50:19,115 --> 00:50:21,115
+Kilişelim.
+
+232
+00:50:22,115 --> 00:50:24,115
+Nah, niye ya?
+
+233
+00:50:26,115 --> 00:50:29,115
+O zaman Ctrl A, Ctrl C.
+
+234
+00:50:29,115 --> 00:50:35,115
+Ve sonraki yansıdan devam edeceğiz.
+
+235
+00:50:39,775 --> 00:50:42,455
+İnceleyelim, ondan sonra o yansıya geri dönürüz.
+
+236
+00:50:45,907 --> 00:50:48,788
+şey, şurada dönmeyi unutmayalım.
+
+237
+00:50:48,788 --> 00:51:00,307
+v, control, v, her şeyi de dese ki yolu, system, pause, ondan sonra acılamak, cırmızı sız.
+
+238
+00:51:03,891 --> 00:51:25,891
+Peki. Şimdi, iki tane de sabit tanımlamışız. Hata olarak sıfır değeri, success baş olarak da bir değeri düşünmüşüz. Hoş gibi iki tane tanım yapmışız. Copy file'da bir fonksiyonumuz var.
+
+239
+00:51:26,784 --> 00:51:39,784
+input dosyasına olacak bir işaret, bir de output dosyasına adını içerecek işaret. Bunlar string pointerlarımız aslında.
+
+240
+00:51:39,784 --> 00:51:48,784
+Input dosyamızın adını içeren bir string olacak karakter pointerımız, in-fire.
+
+241
+00:51:54,963 --> 00:51:56,963
+Adını da outfire deneceğiz.
+
+242
+00:51:56,963 --> 00:52:08,963
+Tabii ki, bir dosyadan diğerine kopyalama yapacağımız için iki ayrı streame eşittir. İki ayrı fire pointer'ına ihtiyacım var. Fire turn'den bir tane pointer tanımladım.
+
+243
+00:52:08,963 --> 00:52:11,963
+fp1 ve fp2 olmak üzere.
+
+244
+00:52:11,963 --> 00:52:17,963
+Öncelikle ilgili dosyaları açmak lazım. Açmak için fopen fonksiyonunu kullanıyorum.
+
+245
+00:52:22,483 --> 00:52:24,723
+İkinci parametresi ise Erişim Modu.
+
+246
+00:52:25,364 --> 00:52:28,083
+İlk pointerımı okuma modunda açıyorum.
+
+247
+00:52:28,083 --> 00:52:30,083
+Ve...
+
+248
+00:52:31,123 --> 00:52:38,963
+Şimdi her seferinde Binary. Peki, karakter karakter okuyacağız ama bunu hani tekste yazsaydık daha uygun olmaz mıydı?
+
+249
+00:52:38,963 --> 00:52:42,803
+Hepsinin örneğini göreceğiz arkadaşlar. Sırayla tek tek deneyeceğiz.
+
+250
+00:52:44,643 --> 00:52:46,643
+Binary Modu da...
+
+251
+00:52:49,556 --> 00:53:11,556
+tek byte tek byte yani nihayetinde karakter bir byte aslında. Byte byte okuyacağız, byte byte yazacağız. Peki okuma amaçlı binary modda ilk dosyayı açmaya çalışıyorum. Açamamışsam o ilgili file pointer değeri NULL olacak. O yüzden NULL gelmişse işte ilgili input lososunu açamadım deyip ondan sonra başarısızlık şeklinde görüyorum.
+
+252
+00:53:11,956 --> 00:53:23,956
+Benzer şekilde ikinci dosyayı da, bu da yazma amaçlı. Onu da bu sefer w yazma modunda ve b binary modda açıyorum. Açamamışsam açmadım diyeyim.
+
+253
+00:53:23,956 --> 00:53:39,791
+İlk açtığım dosyayı kapatmayı unutmuyorum. Önemli. Ve ondan sonra return ediyorum bu fonksiyonu da. Sonra da ff fonksiyonu arkadaşlar.
+
+254
+00:53:39,791 --> 00:53:49,391
+Biz File pointer'ın gösterdiği stream'in, dosyanın nasıl düşünürseniz, sonuna gelip gelmediğini gösterir bize.
+
+255
+00:53:49,391 --> 00:53:57,391
+Sonuna gelmişse, Clue olarak düşünebileceğiniz non-zero value gönderir.
+
+256
+00:53:57,391 --> 00:54:02,591
+Ama sonuna gelmemişsek, ah, hizmet, o zaman...
+
+257
+00:54:03,251 --> 00:54:18,551
+get c fonksiyonunu kullanarak fp1'den karakteri alıp, o aldığım karakteri alır almaz put c fonksiyonu ile fp2'ye yazmış oluyor.
+
+258
+00:54:19,551 --> 00:54:27,871
+Bunu ne kadar tekrarlıyorum? İşte okuyacak dosyada, kaynak dosyada fp1'de daha okunacak byte kalmadığı süreci yapıyorum.
+
+259
+00:54:28,371 --> 00:54:33,371
+En sonunda iki dosyayı da kapatmayı ve altından başarı kodu döndürmeyi unutmuyorum.
+
+260
+00:54:39,411 --> 00:54:42,091
+Diyelim bunu çağıracak, main fonksiyonuna.
+
+261
+00:54:45,091 --> 00:54:53,091
+Kaynak dosyayı adını tutmak için 100 karakterlik karakter simzisi tanımlıyorum.
+
+262
+00:54:53,364 --> 00:55:20,364
+Bunun için string memory management şeyleriyle uğraşmayalım. Dosya işlemlerine odaklanalım diye. Daha basit şekilde de input file için bu l insl input file üst karakterlik altı farı üst karakterlik olabilir. Üst karakteri çok değil mi hocam? Şimdi bu biraz şuna da göre değişir. Eğer belirli bir konumdan dosya okuyup belirli bir konumdan yazmak istiyorsanız eğer,
+
+263
+00:55:20,431 --> 00:55:30,431
+Bu konum sizin uygulamanızın çalıştığı konumdan bağımsız olmasını istiyorsanız, o zaman dosyanın tüm yolunu yazmanız lazım.
+
+264
+00:55:30,431 --> 00:55:34,431
+Örneğin,
+
+265
+00:55:34,431 --> 00:55:36,431
+Şöyleyeyim.
+
+266
+00:55:40,431 --> 00:55:41,431
+Ha şimdi mesela.
+
+267
+00:55:50,931 --> 00:55:51,491
+VE VAT
+
+268
+00:55:57,108 --> 00:56:00,768
+IDE ile aynı dizinde kolaylık olsun diye.
+
+269
+00:56:24,980 --> 00:56:28,300
+Çünkü main metodunu da işte göreceğiz ya.
+
+270
+00:56:29,980 --> 00:56:33,539
+Ha, şu orada tam isim yazmamışım. Kullanacak alacağız. Tamam.
+
+271
+00:56:33,539 --> 00:56:38,380
+Bakalım. Örnekli, nosyam vardı bir yerlerde yoksa şurada mı acaba?
+
+272
+00:56:38,380 --> 00:56:39,259
+Kodda mı?
+
+273
+00:56:40,539 --> 00:56:42,619
+Evet, koddaymış. Tamam. Peki.
+
+274
+00:56:42,619 --> 00:56:44,460
+Neyse, ben şimdi onu oraya...
+
+275
+00:56:44,460 --> 00:56:47,579
+Ha, ya da şey, tamam, garantifikate...
+
+276
+00:56:47,579 --> 00:56:50,300
+Şöyle doğru. Şimdi diyelim ki...
+
+277
+00:56:50,739 --> 00:57:01,799
+İçlem yapmak istediğim dosyalar, şu sss adlı işlem dosya. Bunlar diyelim ki benim belgelerim de bir yerde olsaydı.
+
+278
+00:57:06,003 --> 00:57:20,503
+Burası da OneDrive'mış. OneDrive'mış yani OneDrive olmayan hükümanlarım şurada. Diyelim ki buradalar. Ben şimdi şu diyelim ki işte SSS adlı.
+
+279
+00:57:21,588 --> 00:57:39,788
+Metin dosyasını, sss.txt bu aslında. Ve bakın, metin belgesi türü olduğunu görüyorum. Aslında her bir dosyanın adı bir uzantısıdır konusudur. En son nokta karakterinden sonraki karakterler dosyanın uzantısıdır. Ben şöyle bir ayar yaparsam eğer,
+
+280
+00:57:42,452 --> 00:58:08,052
+göster deyip mesela bakın dosya adı uzattığında göster yaptığımda bakın bunun sss.txt olduğunu görüyorum. Ben bu dosyayı sss.txt diye ulaşmam gerekiyor. Ama özellikle benim şu an kod diziminden çok bağımsız değişik bir yerlerde olduğu için bu dosya. Bu dosyaya ulaşırken benim bu dosyanın adını şu şekilde yazmam gerekiyor girerken.
+
+281
+00:58:10,452 --> 00:58:25,692
+ysr slash button slash sss.txt dememek gerekiyor. Bu fullpad. Yani dosyanın bütün ayrıntılı tam yolu. Adı ve dizini. Buna tam yol veriliyor. Fullpad.
+
+282
+00:58:25,692 --> 00:58:30,552
+Ya da relativepad de kullanabilirim. Göreceli yol.
+
+283
+00:58:30,931 --> 00:58:42,271
+Şimdi eğer uygulamamın bulunduğu execute mille kullanacağın dosyalar birbirine yakın konumlarda iseler o zaman şöyle bir şey yapabilirim.
+
+284
+00:58:42,271 --> 00:58:56,931
+Şimdi bu arada ben uygulamayı ideden çalıştırdığımda veya satırından çalıştırdığımda uygulamamın gösterdiği varsayılan konum farklı olabiliyor.
+
+285
+00:58:57,523 --> 00:59:00,563
+Ya farklı ideler bu şekilde farklı davranabiliyor.
+
+286
+00:59:00,563 --> 00:59:01,903
+Mesela abim.
+
+287
+00:59:03,423 --> 00:59:05,763
+Normalde ben şunu bekliyorum.
+
+288
+00:59:06,423 --> 00:59:23,343
+Bu yazdığım C kodu, diskte neredeyse, ben sadece dosya adına, örneğin işte sss.txt dersem, tüm yolumu vermeden sss.txt dersem, o zaman o dosyanın işte şurada
+
+289
+00:59:23,860 --> 00:59:24,860
+Döbile.
+
+290
+00:59:31,987 --> 00:59:42,987
+Ama benim idemim kendisi de, şurada, yani devsitli 4 dizinin de yer alıyor, C de yer almıyor, Jode dizinin de yer almıyor.
+
+291
+00:59:42,987 --> 00:59:46,987
+Hangisini bekliyor, ezberimde yok demeyeceğiz.
+
+292
+00:59:46,987 --> 00:59:47,987
+Tamam mı?
+
+293
+00:59:47,987 --> 00:59:56,987
+Ve hepsini diyelim ki, konuksatör üstünden çalıştırabiliriz, sistem parspa yapsın. O şekilde devam edelim.
+
+294
+00:59:58,931 --> 01:00:06,612
+Yardım bu jode de sss var mı? Öncelikle bir mesela oraya diyelim ki oraya da kopyalım mesela bunları.
+
+295
+01:00:13,396 --> 01:00:28,196
+Şimdi emin olmak için belki de şöyle de kopyalarsam o nokta abartmayalım. Şimdi tam olarak nerede? Bunu bir daha iyi anlayalım. Direkt çalıştıracağım.
+
+296
+01:00:35,219 --> 01:00:37,219
+sss.txt
+
+297
+01:00:39,219 --> 01:00:41,219
+porsum ss
+
+298
+01:00:41,460 --> 01:00:45,219
+outputu da destination anlamında ddd.txt
+
+299
+01:00:47,219 --> 01:00:49,219
+bakın input file açamadım diyor
+
+300
+01:00:49,719 --> 01:00:54,219
+o yüzden input file de output file de kopyalamadı
+
+301
+01:00:54,219 --> 01:00:56,219
+o şekilde bit etmeni bulundu ama
+
+302
+01:00:56,219 --> 01:00:59,219
+demek ki ben bunları, bu dosyaları
+
+303
+01:01:00,219 --> 01:01:01,931
+işte şu
+
+304
+01:01:05,108 --> 01:01:07,108
+Göde dizinin ne?
+
+305
+01:01:07,108 --> 01:01:09,108
+Alman yetmedi.
+
+306
+01:01:09,108 --> 01:01:19,108
+Faka, ben bunu kendisini komut satırından çalıştırsaydım. Bakın şu an executor'u burada hafta 13p-e. Oradan cmd alayım.
+
+307
+01:01:19,108 --> 01:01:21,108
+Konsol alayım.
+
+308
+01:01:21,108 --> 01:01:25,108
+Şimdi burada çalıştıracağım.
+
+309
+01:01:25,108 --> 01:01:30,700
+Hafta 13p.exe.
+
+310
+01:01:31,251 --> 01:01:55,251
+inputfirm, sss.txt, outputfirm, ddd.txt. Bakın, açabildi ve kopyaladın diyor şimdi. Ama bakalım nasıl kopyalamayız? Bir text dosyasını binary modda açıp, karakter karakter byte byte diyelim burada.
+
+311
+01:01:55,280 --> 01:01:59,880
+okuyup yazdım. Bakalım nasıl bir sonuç elde edilmiş.
+
+312
+01:02:01,940 --> 01:02:02,940
+Şimdi
+
+313
+01:02:03,220 --> 01:02:06,039
+benim CSSTX'den
+
+314
+01:02:09,099 --> 01:02:11,159
+şeyden işte
+
+315
+01:02:12,679 --> 01:02:20,119
+Word'un otomatik metin oluşturma formüllerinden bir tanesi kullanmaktan böyle bir içerik yazmışım.
+
+316
+01:02:20,659 --> 01:02:46,359
+Bakalım ddd texte nasıl gerçekleşti. Fena değil ama şimdi ayrı sekmelerde açtık. Dikkat ederseniz bir fark var. Bakın bu destination texte sonuna geldim. Bakın şurada bir tane y üstünde iki nokta. Böyle bir şey ekledi. Neden ekledi? Niçin ekledi?
+
+317
+01:02:47,092 --> 01:03:02,092
+Bunu acaba eklememesi için ne yapmalıyım? Bu sorunun yanıtını bulmak için uğraşacaksanız, Allah kolaylık versin. Bence şu an uğraşmayın. Projeleriniz var, ödevleriniz var.
+
+318
+01:03:02,092 --> 01:03:10,092
+Projeleriniz var, dersin projesini de sormam lazım. Tamamdır onu da söyleriz ama şu an değil.
+
+319
+01:03:10,092 --> 01:03:14,092
+Bunu ne yapacağız?
+
+320
+01:03:14,643 --> 01:03:18,224
+Burada sadece çıkartmanızı istediğim ders şu.
+
+321
+01:03:19,003 --> 01:03:28,463
+Bir metin dosyasını binary modda açıp byte byte kopyalamak genelde doğru çalışıyor ama sonunda ufak bir kriz olabiliyor.
+
+322
+01:03:30,764 --> 01:03:37,684
+Gelelim şimdi text dosyasını değil de aynı şekilde bir pdf dosyasına.
+
+323
+01:03:37,876 --> 01:03:47,596
+şeyleri kopyalayalım. Burada bir pdf dosyası kullanmanın özel bir nedeni var. Df dosyası çok hassas bir binary format.
+
+324
+01:03:47,596 --> 01:03:58,996
+Bir tane bile byte fazla ya da eksik ya da hatalı olursa pdf dosyası açılamadı, files, format falan diyen çok hassas bir yapısı var.
+
+325
+01:04:01,139 --> 01:04:10,139
+Özellikle indirmeye çalıştığımız pdf dosyasında download işlemi yarım kaldıysa, ne kadar indirdiyse o kadar açıyor gibi bir şey olamıyor arkadaşlar.
+
+326
+01:04:10,139 --> 01:04:23,139
+Ya hep yayın çalışıyor. Dogex'de evet binary bir format olarak da kritik bazı hatalara karşı o da hassas ama genelde pdf'den daha hassas oluyor genel kullanımda.
+
+327
+01:04:23,139 --> 01:04:28,139
+Şimdi bu kod kullanımında göreceğiz. Aynı şey olacak mı? Olacak mı?
+
+328
+01:04:28,139 --> 01:04:28,683
+Şimdi...
+
+329
+01:04:29,300 --> 01:04:40,500
+Aynı işi bu sefer sss.tdf solsun, destination'da ddd.tdf olarak kopyalasın.
+
+330
+01:04:40,500 --> 01:04:44,660
+Kopyaladım diyor, iyi, bakalım bakalım, bunu kopyalayabiliriz mi?
+
+331
+01:04:44,660 --> 01:04:50,660
+Bakın ddd.tdf geldi, açıyorum.
+
+332
+01:04:53,780 --> 01:05:01,179
+Bakın, callout, mallout, finanda demedi. Gayet güzel. Her şeyi de kopyaladı. Ekstradan bir şeyler de eklemedi.
+
+333
+01:05:01,179 --> 01:05:10,380
+Update remember later kardeşim. Evet. Bakın üç paragraf herhangi bir eksiklik yok.
+
+334
+01:05:10,380 --> 01:05:20,780
+Kezra isterseniz bunu da hani mesela Wordle açık daha paragraflı yapısını daha iyi gösterebiliriz belki.
+
+335
+01:05:21,076 --> 01:05:23,076
+Şimdi şu bar engin oluyor.
+
+336
+01:05:26,076 --> 01:05:28,076
+Aç, bu adıyla mesela.
+
+337
+01:05:35,347 --> 01:05:43,347
+Şöyle söyleyeyim, şu karakteri gösterip, aslında şunların ppp'nin ayrı paragraf olduğunu gösterdi.
+
+338
+01:05:43,347 --> 01:05:47,347
+Tamam, bakın, şurada son bir tane paragraf var.
+
+339
+01:05:47,347 --> 01:05:55,347
+Belki de, o tek paragraf karakterinin yüzünden o değişik y harfi çıktı.
+
+340
+01:05:55,347 --> 01:05:57,347
+Deneyelim.
+
+341
+01:05:57,347 --> 01:06:00,204
+Source Text'i alıyorum.
+
+342
+01:06:01,940 --> 01:06:08,440
+Şu fazla enterları silip kaydediyorum. Sonucuma tekrar çalıştırıyorum.
+
+343
+01:06:10,440 --> 01:06:23,440
+fsc.mx, ddd.mx, kopyaladım diyor. Açmadan önce press any click continue deyip çıkalım. Kamular kapansın, if close yapılsın dosyalar. Ondan sonra bakalım şimdi.
+
+344
+01:06:25,523 --> 01:06:32,083
+Bak aynı şeyleri, iki tane satır silmiştim, boş satır, sonra en sonunda o garip yeği koydum.
+
+345
+01:06:32,083 --> 01:06:35,764
+Buyur kardeşim, buyur işte.
+
+346
+01:06:36,980 --> 01:07:00,380
+Yani koduma da baktığımda, f-off'e olmadığı sürece bilinen al, bütkine yaz. Peki f-off'den bir byte geri demeyeyim, o son şeyi yazmasın diye ulaşmak istiyorsanız, o konumun nerede olduğunu tam akarit bir şekilde, hassas bir şekilde ve bütün platformlarda, çalışabilecek şekilde elde almak imkansıza yakın bir şey. O nedenle diyoruz ki,
+
+347
+01:07:01,619 --> 01:07:23,139
+Metin modundaki bir dosyayı binary ile açmayalım. Yine metin dosyası olan bir pdf'i açtık. Aslında metin var. Kendisi aslında bir binary modda. O yüzden onu binary modda kopyalamak gayet başarılı oldu. Bakalım Office formatı nasıl bir performans gösterecek bu konuda.
+
+348
+01:07:27,123 --> 01:07:34,483
+sss.logix, bu arada doji, logix, yani daha yeni sürün versiyon dosya kodu.
+
+349
+01:07:34,483 --> 01:07:41,203
+A tutta ddd.logix, kopyaladım yiyor. Bakalım bakalım.
+
+350
+01:07:45,844 --> 01:07:59,844
+Bakalım, CSS Logics şurada. Hatta şöyle yapayım, 3 paragraf. Sonda da şöyle bir tane ek paragraf karakteri de var aslında. Destination nasıl olmuş?
+
+351
+01:08:05,940 --> 01:08:16,880
+Açamıyorum. Neden? Dosya işle ilgili bir sonla. Yani bu da Dogex formatı daha hassas oldu. Olmadı. Bu şekilde kopyalımımız. Bu dosyayı işe yaramaz.
+
+352
+01:08:21,460 --> 01:08:33,460
+Sürekli activation gerektirmeyen bizim üniversiteden lisanslı biraz eski bir sürü kullanıyoruz. Belki o sürü bunu açamıyor ama belki yeni sürü bunu onlayayım mı der ve o ufak hatayı belki onları sileyemiyor.
+
+353
+01:08:33,460 --> 01:08:37,460
+Ama bakın, word process'ını bu şekilde kopyalıyoruz.
+
+354
+01:08:40,460 --> 01:08:44,460
+Ha, evet, kurtarmaya çalışıyorum bakın. Ha, bak açtım.
+
+355
+01:08:45,460 --> 01:08:46,460
+Ben...
+
+356
+01:08:46,579 --> 01:08:52,340
+Çıktım da yani her şeyden çıktım yani bitti gitti ama bell yapımcılar kurtarabildi.
+
+357
+01:08:52,340 --> 01:08:54,340
+Peki.
+
+358
+01:08:54,340 --> 01:08:58,315
+Ama üstüne kaydetmek istemiyorum gerek yok.
+
+359
+01:09:05,203 --> 01:09:06,203
+Peki.
+
+360
+01:09:08,203 --> 01:09:09,703
+Hiç bununla gelir neyim?
+
+361
+01:09:12,203 --> 01:09:15,703
+Ha. Neyse konuşacağım bunu.
+
+362
+01:09:19,703 --> 01:09:21,203
+Daha sonra karakterini tutar.
+
+363
+01:09:21,203 --> 01:09:24,203
+Sonra falan. Ha. Satır satır falan. Falan geçeceğiz. Peki.
+
+364
+01:09:24,703 --> 01:09:26,203
+Ama önce
+
+365
+01:09:26,996 --> 01:09:38,996
+Bu sefer şimdi her bir olasılığı deneyelim dedik ya binary modde açmıyorum da text modda açaraktan ggpc yapmaya çalışalım. Bakalım nasıl sonuç yardır edeceğiz.
+
+366
+01:09:45,300 --> 01:09:53,300
+Bakın özünde binary modda olmasına rağmen dojiks ve pdf masyalarını bu şekilde kopyalayabilecek miyiz bakalım.
+
+367
+01:09:53,300 --> 01:10:00,300
+Save ettim. Derledim. Ve şimdi derdini tekrar deneyelim.
+
+368
+01:10:00,300 --> 01:10:08,300
+sss.txt, dvd.txt, kopyaladım büro. Evet, entity to continue.
+
+369
+01:10:10,804 --> 01:10:12,404
+Açalım, aç korku onu.
+
+370
+01:10:32,532 --> 01:10:43,971
+Yine sonuna o şeyi ekledi. Text modu açmama rağmen yine sonuna o harfi ekledi text ile tutturamadık. Yani
+
+371
+01:10:43,971 --> 01:10:51,971
+fss.pdf, dddd.pdf.pdf.
+
+372
+01:10:51,971 --> 01:10:59,971
+Haa bakın, popyalayamadım diyor. Neden? dddpdf, şu an pdf okuyucusumuz açık.
+
+373
+01:11:00,307 --> 01:11:23,028
+Açık olduğu için, poxy pdf reader'ı şu an o usfeyi kilitlemiş durumda, kapatmış durumda. O yüzden kopyalayamadım diyor. Onu yazmak amaçlı fopen açmaya çalıştığında yapamadı. Ama mesela bu bizim, sss pdf'imizi bozdu mu? Bozmadı çünkü emniyetli kodu yazdık bu bağlamda.
+
+374
+01:11:29,203 --> 01:11:37,203
+hala açıla biliniyor. Bu konuda bir problemim yok. Şimdi, cdf-read'i kapatalım tamamen. Tekrar deneyim.
+
+375
+01:11:37,203 --> 01:11:47,203
+cdc.pdf, cdd.pdf. Kopyaladım diyor. Bakalım. Düzgün kopyalayabilmiş.
+
+376
+01:11:51,859 --> 01:11:58,859
+Bakın, bunu düzgün kopyalayamadı. Enteresan.
+
+377
+01:12:03,539 --> 01:12:09,940
+bansayana modu text modlu olduğu için, pdf'de binary ağırlıklı bir format olduğu için kopyalayamadım.
+
+378
+01:12:09,940 --> 01:12:14,539
+Dogex nasıl başarımı gösterecek? Burada verelim.
+
+379
+01:12:15,539 --> 01:12:17,539
+Evet, Word'de açık olmasın.
+
+380
+01:12:17,539 --> 01:12:18,539
+Kupalı kalan.
+
+381
+01:12:18,539 --> 01:12:24,539
+s.logics.d.logics
+
+382
+01:12:24,539 --> 01:12:27,140
+Kopyaladım diyor. Bakalım.
+
+383
+01:12:30,963 --> 01:12:32,108
+şurada
+
+384
+01:12:36,275 --> 01:12:59,575
+Evet, konum buldum diyor. Kurtarmaya çalışalım mı? Kurtar. Kurtaramadı da. Tamam, peki. Mantıklı. Bunlar binary.modda dosyalar olduğu için aslında özünde. O yüzden kopyalaması düzgün olmadı. Hak veriyorum. Burada bir kutu kabahat bulundu. Peki, şimdi.
+
+385
+01:13:00,627 --> 01:13:04,268
+Şeye gelelim, diğer yöntemlere geleceğiz. Yavaş yavaş.
+
+386
+01:13:04,868 --> 01:13:07,268
+Yansıda yer alıyor hepsi.
+
+387
+01:13:14,771 --> 01:13:16,747
+Saçlı edersen onu unutmayayım da.
+
+388
+01:13:19,796 --> 01:13:47,716
+ERF'ye ulaştık mı, ulaşmadık mı? Acaba o fonksiyonun bir artançını koyayım gibisinden şeyler yapmaya çalışırsak, mesela geç yer acaba en son ne okuyorduk, okuyamadık mı? Bunun kontrolünü yaparaktan, hani şurada göründüğü gibi bir dönüm yazmaya çalışırsak, dönen ERF döndürmemişse bunu yap falan gibi çalışmıyor arkadaşlar, o da çalışmıyor. Nedenini aşağıda birkaç kelimeyle.
+
+389
+01:13:47,796 --> 01:13:59,796
+anlatmaya çalıştım. Nedenini tam olarak anlayabilsek, anlayamasak da çalışmıyor. O yüzden daha fazla şey etmeyeceğim, birikleyemeyeceğim. Süremizi biraz verimi kullanalım.
+
+390
+01:13:59,796 --> 01:14:14,796
+Bu arada hani ara vermek isteyen arkadaşım olursa nasıl olsa kayıtlar. Şu zaman durduk. Sonra devam edebilirsiniz. Ben şu an için anlatmaya devam edebilirsiniz.
+
+391
+01:14:29,619 --> 01:14:31,619
+Burada biz kodla
+
+392
+01:14:32,819 --> 01:14:42,619
+GATC ve PUTC kullandık. Bunun f-form versiyonları olan f-putc, f-geçc versiyonları da var.
+
+393
+01:14:42,619 --> 01:14:44,268
+Aslında
+
+394
+01:14:48,083 --> 01:14:54,644
+C, C arka planda aslında şey diyeyim de bir makro olarak hazırlanmış durumda.
+
+395
+01:14:54,644 --> 01:15:00,403
+Keza kutbile de arka planda bir makro olarak hazırlanmış durumda.
+
+396
+01:15:00,403 --> 01:15:04,724
+Bunların versiyonları fgeççiye ve fk var.
+
+397
+01:15:04,724 --> 01:15:09,843
+Onlar da normal fonksiyon olarak hazırlanmış durumda.
+
+398
+01:15:10,036 --> 01:15:35,515
+Fonksiyon ile makro arasında ne fark var hocam derseniz, bazı cip kontrol denetimi avantajları var fonksiyonlarda ama çok fazla bir şey fark etmiyor. Fonksiyonlar makrolar konusunu daha sonra dosyalar konusundan sonra konuşacağız. Artık haftaya konuşuruz onu. Biz izlemeyi devam edeceğiz. Ama tabii biz de genel arkadaşlarla YouTube yapacağız konuları.
+
+399
+01:15:39,667 --> 01:16:06,387
+Hadi onları da deneyelim diyelim. Ama yani Macworld ayrıntısını göreceğiz. Özellikle hani FirePointer'a acaba, ya o da bir pointer, acaba dizi operatörüyle ya da biz kendimiz FirePointer'ı artı artı yapmaya çalışsak bir şey başarabilir miyiz? Benimle arkadaşlar riskli işler çalışsa bile her yerde çalışma olasılığı çok düşük.
+
+400
+01:16:06,448 --> 01:16:18,448
+işlemle hiç uğraşmayın. Ama en azından hızlıca gtc'leri bir de fgtc'leri fpc'ye yapsak, mesela aynı sonuçları da elde edeceğiz. Biz şimdi deneyelim.
+
+401
+01:16:18,448 --> 01:16:28,448
+Şimdi, şöyle, şöyle. Başka fark yok.
+
+402
+01:16:31,028 --> 01:16:39,427
+derve, evet derve dedi. Şimdi aynı şeyleri deneyelim. Açık şeyler kalmasın. Deneyelim şimdi.
+
+403
+01:16:56,404 --> 01:16:59,164
+ddd text diye bir deneyelim.
+
+404
+01:16:59,164 --> 01:17:00,164
+Bir saniye.
+
+405
+01:17:13,011 --> 01:17:36,011
+Bakın yine sonuna şöyle bir karakter ekledim. Ne yapalım? Ondan sonra işe var. Devam. sss.pdf. d.pdf. Kopyalarım diyor. Bakalım. Bak, bu sefer burada call up dedi.
+
+406
+01:17:36,659 --> 01:17:44,100
+Haa yok yine bu evet, geçirece de yine call up demişti tamam diye çıkmık yok.
+
+407
+01:17:44,100 --> 01:17:48,500
+Keza world halinde.
+
+408
+01:17:48,500 --> 01:17:57,619
+SSS.logix, kopyaladım diyor ama...
+
+409
+01:18:01,460 --> 01:18:02,460
+Namay.
+
+410
+01:18:03,460 --> 01:18:06,460
+Kodan çalışma, onu da başlamadım.
+
+411
+01:18:07,460 --> 01:18:14,460
+Hiçbir şey fark etmedi. Şimdi binary modda erişmeye ve epli versiyonları yapmaya devam edelim.
+
+412
+01:18:16,460 --> 01:18:17,460
+Neredeyiz?
+
+413
+01:18:17,460 --> 01:18:20,460
+G, B, kaydet.
+
+414
+01:18:21,460 --> 01:18:24,460
+Verde, okey. Şuradan da çalışırız.
+
+415
+01:18:27,380 --> 01:18:54,899
+CSS.txt, dgt.txt, kopyaladım diyor. Bakalım bakalım. Yine son grip ye harfi var. Başka bir problemim yok. CSS.txt, CSS.txt, CSS.txt, kopyaladım diyor. Bakalım.
+
+416
+01:18:55,091 --> 01:18:58,251
+Ayy, uzaklığın yanlış yanlış yaslandı.
+
+417
+01:19:02,899 --> 01:19:12,899
+stc.pdf, std.pdf, std.pdf, kopyalarım. Bakalım pbs'i.
+
+418
+01:19:14,899 --> 01:19:17,643
+Kopyalayebilmiş gibi karakter yok.
+
+419
+01:19:21,427 --> 01:19:32,268
+ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'in ss.logix'
+
+420
+01:19:37,235 --> 01:19:49,775
+Deneyelim, kurtarmayı. Evet, kurtarmadı da bu sefer. Yani çok bir şey fark etmedi. En azından düzgün çalışanlar, bozulmuş olanlar dışarıda bozulmuştu.
+
+421
+01:19:49,775 --> 01:19:55,175
+Politik olarak herhangi bir fark olmadı. Girelim diğer örneklere.
+
+422
+01:20:01,011 --> 01:20:19,011
+Evet, bu sefer putse, getse putse üstünden örneklerimizi yapalım. Şimdi, bu sefer sadece şeyi, copy file gövdesini kopyalıyorum. Main method aynı kalıyor, herhalde değişiklik yok.
+
+423
+01:20:23,636 --> 01:20:25,636
+Şimdi bakın ne değişti.
+
+424
+01:20:25,636 --> 01:20:33,636
+Birincisi, şu üçüncü geçişi değişken dizi değişkeni geldi karakter türünden çünkü satır satır okuyacağız ya.
+
+425
+01:20:33,636 --> 01:20:43,636
+Aaa bu arada bizim bir satırımız en fazla kaç karakter uzunluğunu olabilir? Bunu da bilmemiz gerekiyor.
+
+426
+01:20:43,636 --> 01:20:50,636
+Ya bir şeyler versek mi, vermeye çalışsak mı, veremesek mi bir bakalım bakalım.
+
+427
+01:20:51,220 --> 01:20:59,220
+Mesela şunu bir verelim bakalım. Tamam yani Maximum, bizim line size'ımız 100 karakterlik olabilir.
+
+428
+01:20:59,220 --> 01:21:13,220
+Ama acaba bakın şimdi bizim örnek dosyamızda paragrafa yani line'ın sonuna gelecek olan karakter kaç karakter? 100'den büyük mü? Çıkkın. O yüzden de denemelerimiz farklılaştırabiliriz mesela.
+
+429
+01:21:18,195 --> 01:21:20,195
+Bunu da şöyle iniz oluruz.
+
+430
+01:21:21,195 --> 01:21:23,195
+Bunların sayma özelliğini kullanırız.
+
+431
+01:21:28,724 --> 01:21:41,443
+haa, modcoco, planlama dersiyonuydu da. Evet, bir metini txt ile açalım. Ssd txt'yi birlikte aç, bu aç.
+
+432
+01:21:47,667 --> 01:21:51,167
+Bence şurada 100'den fazla kartlar vardır ama
+
+433
+01:21:51,907 --> 01:21:53,667
+Şu seçtim yer de
+
+434
+01:21:54,967 --> 01:21:57,967
+33 sözcük varmış. Şu arkasını da görüyorum.
+
+435
+01:21:57,967 --> 01:22:03,067
+Yani hepsi de içten fazla harf içerdiği için
+
+436
+01:22:03,067 --> 01:22:06,067
+Hadi şöyle yapabilirim. Özellikle
+
+437
+01:22:08,884 --> 01:22:20,384
+Ya da şöyle yapayım isterseniz. Video kısmını da sileyim. Bütün hepsi 33 törzcük ama kaç harf var? Ha, 10 şey vardı ya. Ayarlar törzcük sayıyor muydu? Satkladan değil de. Neydi?
+
+438
+01:22:31,636 --> 01:22:35,636
+Aşkımas, hap.
+
+439
+01:22:42,452 --> 01:22:47,952
+Aya, şühe, çıdık da, ay, ha, tamam.
+
+440
+01:22:48,148 --> 01:23:14,868
+sayfada sözcükçe seçmemek. Bakın, boşluksuz 227, boşluk 200 ve 900. Boşlukluya bakacağız. Boşlukta tek bir boşluk karakteri en azından bir bar tutacak. Bakın, seçtiğim yüz sayısı bir satırdan aslında daha geniş. Bakın, şuradaki satır mesela, sharem içinde yeni satıra geçmiş gibi ama aslında bu yeni satır değil.
+
+441
+01:23:14,960 --> 01:23:34,800
+Ben şöyle yapsam mesela, şeyde, notpadde, görümüm, sözcük kaydır demesa, sadece yeni satır, gerçekten yeni satır da yeni satıra geçiyor aslında ya da paragrafta yeni satıra geçiyor. Buna ta en sonuna kadar devam ediyor aslında yani.
+
+442
+01:23:35,188 --> 01:24:02,007
+Ben şu an projucu kaydınız demiş olmam, bunun üç satır olduğu anlamına gelmiyor. Aslında hepsi tek bir satır. Ve o satırda olabilecekten daha az bir yer ayırdım. Buna rağmen aslında sorun çıkarmayan sorun çıkarmayacak. Sorun çıkmayacak. Yani en azından bu yüzden sorun çıkmayacak. Sorun çıksa çıksa işte dosya formatları açısından çıkıyor. Peki, devam edelim.
+
+443
+01:24:03,252 --> 01:24:14,952
+İşte bir bu geldi. Bir de şimdi şöyle yapıyoruz. Getse fonksiyonunun ya da fget, parameter sayıda da aynı. İster fget, ister get.
+
+444
+01:24:17,011 --> 01:24:36,411
+Ama, wets yanılmıyorsam, default olarak, standard input'tan alıyordu. Dosyadan, ama ki özellikle fonksiyon versiyonlarının ihtiyacını var. Fgets ve fputs. Zaten fc ile fc sıkı fark etmiyordu.
+
+445
+01:24:39,155 --> 01:25:06,604
+fget fonksiyonu ilk parametre olarak bana tampon belliği, tampon bellik alanını ister. İkinci parametre olarak buradan ne kadar karakter alacağımı vermemi ister. Şimdi burada şu line size'a uymam gerekiyor. Line size ebatıma uymam gerekiyor. Burada eğer olması gereken
+
+446
+01:25:08,307 --> 01:25:35,587
+Burada uymam gerekiyor. Öğretim mesela. Ve hangi file pointer'dan okuyacak? Un file un'dan okuyacak. Al bunu. Eğer şimdi fgets başarılı bir şekilde, bu verdiğim alanı doldurabilecek kadar, en azından doldurabilecek kadar bir şeyi okuyursa, o zaman null döndürmüyor.
+
+447
+01:25:35,712 --> 01:25:41,712
+Ama artık okunacak bir şey kalmadı ise...
+
+448
+01:25:42,771 --> 01:26:09,271
+eof'e gelmeden önce tam bu 100 örneği verdiğim için 100 karakter ya da daha az karakter okuyabilmişse, 1 karakter okuyabilmişse fcats bana null döndürmüyor. Ama 0 karakter okuyabilmişse, hiç karakter okuyamamışsa o zaman null döndürüyor. Böylece fcats kullanmaktan dosyanın sonuna, okuyacağın dosyanın sonuna gelmiş miyim gelmemiş miyim kontrolünü bu şekilde yapıyorsunuz.
+
+449
+01:26:10,771 --> 01:26:22,372
+Şimdi null değilse dosyanın sonuna gelmemiş yazısı demektir. Gelmediysek de o zaman fpux kullanarak da okuduğum veriyi diğer hedefimize yazıyoruz.
+
+450
+01:26:22,372 --> 01:26:28,372
+Bundan sonra iki dosyayı da iki dosya içerisinde kapatmayı unutuyoruz. Main'de hiçbir değişikliğim yok.
+
+451
+01:26:39,347 --> 01:26:49,347
+Evet, şimdi, sss.txt, vdd.txt. Kopyaladım diyor. Bakalım.
+
+452
+01:26:49,347 --> 01:26:52,347
+vdd.txt'ye
+
+453
+01:26:56,372 --> 01:27:03,372
+Kodla kopyalayabildi ve herhangi bir ek karakterde çıkarmadı bana. Hiçbir problem yok.
+
+454
+01:27:05,372 --> 01:27:13,372
+Ve, tabii şimdi varslanan default mode text, o yüzden text modunda aslında yaptı bunları.
+
+455
+01:27:13,372 --> 01:27:22,368
+Bir problem oluşturmadı. Ama daha da iyi çalıştı. Gece karakter okumaya göre line moduyla okumak daha iyi çalıştı.
+
+456
+01:27:22,368 --> 01:27:25,427
+en sondaki o gayıp karakteri vermedi.
+
+457
+01:27:26,828 --> 01:27:28,587
+Şimdi diğerlerini de deneyelim.
+
+458
+01:27:30,748 --> 01:27:33,047
+pss.pdf
+
+459
+01:27:33,587 --> 01:27:36,587
+ddd.pdf
+
+460
+01:27:36,988 --> 01:27:39,488
+yaladım diyor. Bakalım.
+
+461
+01:27:43,315 --> 01:27:55,675
+olmadı. Dosya formatı beğenmedi. O yüzden kopyalamıyorum dedi. Satır satır işlem yapmak doğru olmadı. Bakalım Word dosyası nasıl çalışacak?
+
+462
+01:27:55,675 --> 01:28:06,076
+dss.projects, dddd.projects. Copy alalım diyor. Bakalım.
+
+463
+01:28:10,036 --> 01:28:13,036
+Sonuna kurtarayım mı? Denem bakalım.
+
+464
+01:28:13,036 --> 01:28:15,036
+Kurtaramaz. Peki.
+
+465
+01:28:17,036 --> 01:28:19,036
+Evet. Üçüne denedim. Onladı.
+
+466
+01:28:19,036 --> 01:28:22,036
+Bunların şeyleri var mıydı?
+
+467
+01:28:22,036 --> 01:28:25,036
+Makro versiyonları var mıydı?
+
+468
+01:28:25,036 --> 01:28:28,036
+Şunu geç, şunu isteyelim.
+
+469
+01:28:28,036 --> 01:28:32,036
+Derlerse, evet. Yokmuş. Hiç yapmamışlar bile.
+
+470
+01:28:32,036 --> 01:28:37,036
+Bunların yani fputsun makro versiyonu olan puts mesela yok.
+
+471
+01:28:37,619 --> 01:29:01,519
+Bu, bunlar böyle kalsın. Ha, yok, yok, bir dakika. Ha, çok, evet, çok mini algoritma var diyor. File pointer'ı veremeyeceğim. Şu konular sabit olarak işte, şeyden, konsoldan almaya çalışıyoruz. Dosya işlemleri mutlaka fget, fbox. Peki. Devam edelim.
+
+472
+01:29:02,036 --> 01:29:28,875
+variasyonlara. Ha, yine hazır aynı modda, yukarıda B kullanalım. B modda açtığım dosyayı fgets fputs gibi line line işleyebiliyor muyum onu görmüş olacağız şimdi, denemiş olacağız. B, W, B. Peki, save. Nerede? Kodlam yok. Çalıştalım. Açık bir şey olmasın.
+
+473
+01:29:29,619 --> 01:29:32,420
+Şuradan, pardon, şuradan.
+
+474
+01:29:33,920 --> 01:29:39,199
+Çalıştığınız, sts.txt, ddd.txt.
+
+475
+01:29:40,399 --> 01:29:42,559
+Topyaladım diyor. Bakalım.
+
+476
+01:29:46,100 --> 01:29:48,500
+Bir problem yok, tek karakter de yok.
+
+477
+01:29:51,956 --> 01:29:57,076
+ss.pdf, ddd.pdf
+
+478
+01:29:58,036 --> 01:29:59,876
+yaptım, diyor bakalım.
+
+479
+01:30:07,028 --> 01:30:13,848
+Dosya bozuk demedi ama hiçbir şeyleri göstermedi. Bir daha çabuk mu tıkladım?
+
+480
+01:30:13,848 --> 01:30:21,028
+Yok, çıktım da. Tekrar devam edelim. Bir şeyler de var sanki.
+
+481
+01:30:21,028 --> 01:30:27,028
+Yok. Peki. Bu arada deneyelim.
+
+482
+01:30:34,931 --> 01:30:36,931
+yaptım diyor. Bakalım.
+
+483
+01:30:41,363 --> 01:30:47,363
+Açamadım diyor. Onaramıyorum diyor da. Tamam peki. Mantıklı.
+
+484
+01:30:47,363 --> 01:31:02,283
+Kendi özler içerisinde binary dosyaları TextMode'da da açsan, BinaryMode'da da açsan puts ve gets, daha doğrusu fputs ve fgets ile içlemek doğru olur.
+
+485
+01:31:06,163 --> 01:31:07,163
+Gelelim.
+
+486
+01:31:09,764 --> 01:31:13,163
+Evet, parametrede burada sözde söylemiş olduğumda bakalım.
+
+487
+01:31:13,663 --> 01:31:16,163
+Unuttuğum bir şeyler var mı?
+
+488
+01:31:17,864 --> 01:31:19,864
+Evet.
+
+489
+01:31:20,564 --> 01:31:21,963
+Nereye okuyacağım?
+
+490
+01:31:22,264 --> 01:31:24,764
+En fazla kaç karakter okuyacağım?
+
+491
+01:31:24,764 --> 01:31:27,163
+Hangi stilden okuyacağım?
+
+492
+01:31:27,163 --> 01:31:29,163
+Evet, parametrede bunlar.
+
+493
+01:31:29,555 --> 01:31:38,555
+NewLine görene kadar veya EOF görene kadar veyahut da maksimum numara karakter okumuna kadar karakter okumaya devam edecek.
+
+494
+01:31:38,555 --> 01:31:50,187
+Peki, bakın. FGATS otomatik olarak diziye yazılan karakterin sonuna bir tane mall karakteri ekliyor.
+
+495
+01:31:50,996 --> 01:32:05,996
+O yüzden belki de bu nedenle bu ekranen slash 0 nal karakteri nedeniyle binary modda olan word ve pdf kaynak dosyalarının, making dosyalarının formu. O yüzden açamıyorum diyor. Olay olsun.
+
+496
+01:32:08,996 --> 01:32:09,771
+Evet.
+
+497
+01:32:13,844 --> 01:32:24,804
+Peki ne döndürüyormuş bu arada Gates? Eğer yani EOF'ye ulaşmamışsa, ilk argümanı yani şu s stringini geri döndürüyor diyor.
+
+498
+01:32:25,484 --> 01:32:34,783
+Peki o zaman neden bunu hem parametre olarak veriyoruz, yani parametre olarak vermenize gerek var mı? Sadece return'ı yazsak olmaz mı?
+
+499
+01:32:37,076 --> 01:32:57,076
+Bu ikisinin hangisi daha sağlam çalışır? Fonksiyonla parametre olarak verilen daha sağlam çalışır diye düşünüyorum. Başka platformlarda belki return eden düzgün olmayabiliriz. Ama deneyelim. Vaktimiz var.
+
+500
+01:33:03,475 --> 01:33:06,115
+girsek bugün girmeyebiliriz.
+
+501
+01:33:06,115 --> 01:33:09,036
+Şimdi bitireceğiz diye bir kuralım da yok.
+
+502
+01:33:13,171 --> 01:33:15,171
+İmza ektaş tolman nakirda.
+
+503
+01:33:17,671 --> 01:33:18,671
+Miesi vabaka.
+
+504
+01:33:25,140 --> 01:33:39,539
+Block Aero'da yapalım da ondan sonra. Denemenimizi çok arttırmayalım. Denersiniz isterseniz. Yani biton ettiğinden atasak gitsek ne olur? Onu denemeyelim.
+
+505
+01:33:42,836 --> 01:33:46,195
+Evet, tamam burada güzel bir şey yok.
+
+506
+01:33:48,836 --> 01:33:55,836
+Evet, binary dosyayı lininputta oluşturulmaz, callapp.ca oluşturulur. Evet, burada söyleçisine ilerliyoruz.
+
+507
+01:33:59,699 --> 01:34:01,319
+Get Spots, tamam.
+
+508
+01:34:06,292 --> 01:34:08,832
+Ha, bunun McLuhan versiyonu da varmış ama
+
+509
+01:34:08,832 --> 01:34:11,591
+Bakalım.
+
+510
+01:34:11,952 --> 01:34:12,311
+Geç,
+
+511
+01:34:12,511 --> 01:34:13,971
+Gaz,
+
+512
+01:34:13,971 --> 01:34:17,711
+Evet, bu işlemden iyiymiş, bu işlem iyiymiş ama
+
+513
+01:34:17,711 --> 01:34:19,631
+Geçsin o zaman
+
+514
+01:34:19,631 --> 01:34:20,631
+Şey
+
+515
+01:34:24,948 --> 01:34:42,948
+şeyini yazmamışız. Özel fonksiyon imzasını yazmamışız. Şeyden bakabiliriz belki. STDRH'tan bakabiliriz. Ya da şuradan tekrar yaptığımda. Ben olmamıştı. Get string ama neyden yani.
+
+516
+01:34:47,155 --> 01:34:50,655
+Gets.faction.net.diz.la.fr, stdin.
+
+517
+01:34:50,655 --> 01:34:52,655
+Yönlendimliğini unutmuş. Tamam, peki.
+
+518
+01:34:54,155 --> 01:34:57,655
+Evet, bu console.inputu ile ilgilimiş. Şu önemli yani.
+
+519
+01:34:57,655 --> 01:35:02,655
+Gets.dosya ile ilgili. Zaten kullanabiliriz. Tamam.
+
+520
+01:35:04,655 --> 01:35:08,155
+Ama bir şekilde stdinputu
+
+521
+01:35:08,467 --> 01:35:19,747
+Dosyaya yönlendirebiliyorsanız eğer platformunuzda kullandığınız unix tabanlı, unix tabanlı bir şeyinde falan filan o zaman deneyebilirsiniz. Benden bir şey yok.
+
+522
+01:35:22,787 --> 01:35:30,707
+Geçelim üçüncü yöntem olan GlockBlock okuma işine. Onu daha deneyelim, öğrenelim deneyelim.
+
+523
+01:35:36,148 --> 01:35:51,148
+Sizin hem okuduğunuz donanımın, hem işletim sisteminizin ne tür blog sayısıyla uğraştığını biliyorsanız,
+
+524
+01:35:51,283 --> 01:35:58,783
+Tamamen aynı ebat blokla bu işlemleri yaparsanız en iyi performansı öyle etkiledersiniz.
+
+525
+01:35:58,783 --> 01:36:13,283
+Ama tabi bulun bakalım bulabiliyorsanız kullandığınız işitim sisteminin kullandığınız versiyonunun blok mod erişimde bu kaç byte'lık bloklar kullandığını bulabiliyorsanız bulun bakalım kolay gelsin. Bu kolay bir iş değil.
+
+526
+01:36:14,739 --> 01:36:42,739
+Ama en azından şöyle düşünebilirsiniz. Benim bu okuma ve yazma işlemleri için ayıracağım bir block tampon benliğim varsa, kendi çalışma yani kodlama ayıran bellekten ben böyle bir block alanı oluşturabiliyorum şu kadarı yetiyor, o kadar o kadar okuyacağım diyorsanız, o açıdan daha yüksek başarılı bir kod çalışabiliriz. O yüzden bunun da nasıl olacağını bir görevim.
+
+527
+01:36:42,739 --> 01:36:53,739
+Temel olarak fread ve fwrite fonksiyonları kullanıyorsunuz arkadaşlar. Block modda input output yapabilmek için.
+
+528
+01:36:53,739 --> 01:37:09,739
+fread'in birinci parametresi, bu okuyacağınız içeriği yazacağınız, yani benliğe yerleştireceğiniz karakter pointerı.
+
+529
+01:37:10,547 --> 01:37:30,547
+ikincisi bu blogunuzun tek bir tanesinin kaç byte olacağı, ikincisi bu bloglardan kaç tane okumak istediğiniz, sonuncusu ise hangi file pointerdan okuyacağız.
+
+530
+01:37:31,796 --> 01:37:39,556
+Onun tamamen aynı parametre, aynı sırada olan fprintfonsorunu da eşlebilir.
+
+531
+01:37:44,724 --> 01:37:48,043
+Evet. Peki. Bunun üstünden gidelim.
+
+532
+01:37:50,363 --> 01:37:52,083
+Bu arada mesela eğer sizin
+
+533
+01:37:53,923 --> 01:37:55,923
+kayıt edeceğiniz verilerden
+
+534
+01:37:56,163 --> 01:37:57,884
+kaç kayıt
+
+535
+01:37:57,884 --> 01:38:00,724
+sakladığınızı biliyorsanız eğer
+
+536
+01:38:00,724 --> 01:38:02,203
+onu nasıl bilebilirsiniz?
+
+537
+01:38:02,203 --> 01:38:05,043
+Belki dosyanın başına yazacağınız ilk içerik
+
+538
+01:38:05,043 --> 01:38:09,523
+bir tam sayı olarak, 4 bahçede tam sayı olarak kayıt sayısı ver.
+
+539
+01:38:09,523 --> 01:38:11,923
+Dosyada kaç kayıt olduğunu düşünürseniz.
+
+540
+01:38:12,064 --> 01:38:18,583
+O zaman hepsini bir seferde isterseniz okuyabilirsiniz. İlgili N-member parametresini falan vererek.
+
+541
+01:38:18,583 --> 01:38:28,304
+Ama hem blok performansını kazanır hem de daha sade ve daha az iş yapıları daha güvenli olsun diyorsanız işte
+
+542
+01:38:28,304 --> 01:38:35,384
+herhalde olana kadar bir blok oku bir blok yaz şeklinde çalışmak en sağlamı olacaktır.
+
+543
+01:38:39,923 --> 01:39:05,923
+Yalnız şimdi fread'in önemli bir ayrıntısı var arkadaşlar. Bu fread'in geri döndürdüğü şey, return ettiği şey size t türünden yani sizin bir kaydınız, bir bloğunuz touch byte ise o bloğ kadar okuyup okuyamadığını size geri döndüğü.
+
+544
+01:39:06,771 --> 01:39:16,592
+Siz öyle bir block void seçmişinizdir ki çalıştığınız dosya tam o block void'un tam katı kadar byte içermeyebilirsin.
+
+545
+01:39:16,592 --> 01:39:25,212
+O yüzden burada sonuna kadar erişik mi erişemek mi nasıl bakacağız?
+
+546
+01:39:29,460 --> 01:39:55,460
+tam olarak kaç eleman okuduğumuzun sayısını döndürüyor. Kaç byte okuduğunu döndürüyor. Bu nedenle eğer eof'e gelmediysek geri dönen değerleri de 3. parametre aynı boyda olacak, aynı büyüklükte olacak. Aksi takdirde geri dönü 3. argümandan daha küçük bir değer olacak.
+
+547
+01:39:56,115 --> 01:40:12,355
+Ve siz de bu bağlamda dosya sonuna ulaşma şeyini kontrol edecek ederken, şu şekilde bir şey yazmanız gerekiyor, döngü yazmanız gerekiyor.
+
+548
+01:40:13,235 --> 01:40:25,536
+fread'in geri döndürdüğü okunan byte sayısını bir değişkeni kaydedip, daha sonra o değişken sizin ayarladığınız block size'a eşit olduğu sürece okumaya devam edin.
+
+549
+01:40:25,536 --> 01:40:35,635
+Ama en son yaptığı, efe'ye gelince yaptığı okumada bu numret block size'dan daha küçük bir değer olacak.
+
+550
+01:40:35,635 --> 01:40:36,635
+O yüzden...
+
+551
+01:40:37,587 --> 01:41:04,067
+Hani Wire küçük eşittir derseniz, bu sefer o döngü öyle yapmaya çalışırız olabilir ama bu şekilde yapıyorsanız eğer Wire dönüşünden çıktıktan sonra ona kadar bloğu doğdurmayan ama anlamlı veri içeren son kısmı da tekrar f-vart ile output stream'i yazmanız, o kalanı da kopyalamanız gerekiyor arkadaşlar.
+
+552
+01:41:04,467 --> 01:41:29,828
+Bardak bardak diyelim ki, bir büyük kaptan bir küçük kapa, pardon, bir küçük kaptan bir büyük kapa bardak bardak doğdu görseniz diyelim ki, en son doğrusu da bardağın yarısını, üçle birine kadar doğdu. Onu da boşa atmayın, onu da aktarmamız gereken yere aktarmaya devam edin. Şimdi mantığıyla şu satıra da kodlamaya ihtiyacımız olacak. Bunu unutmayalım.
+
+553
+01:41:30,323 --> 01:41:33,323
+diye de benim başka bir ayrıntı varmıyor evde ayrıntı.
+
+554
+01:41:41,619 --> 01:41:49,300
+Örnek mesela, siz BIM 4 byte blog dediniz. Ama aslında gerçekte 512...
+
+555
+01:41:49,811 --> 01:41:58,671
+Byte'lık şey, ha bu arada, dosya sistemleri de aslında ne okuyor işte, belirli block size kadar okuyorlar.
+
+556
+01:41:58,671 --> 01:42:08,572
+Daha fazla byte okumuş olsa bile, sizin daha az byte çekmeniz gerekiyorken daha fazla byte okumuş olsa bile Amazon olmayan byte okuyamaz.
+
+557
+01:42:08,572 --> 01:42:16,112
+İşletim sistemi otomatik olarak artan byte'ları boş boğdu, EOFA'ya tam orada problem olmaz.
+
+558
+01:42:16,112 --> 01:42:17,112
+Evet.
+
+559
+01:42:19,220 --> 01:42:28,640
+Siz arka planda işte tam sayıda denk geldi mi, denk geldi mi, benim kullandığım block size, diskin block size ya da işlettim, sizin block size ile aynı mı değil mi?
+
+560
+01:42:28,640 --> 01:42:30,840
+Çok dağılık etmeyeyim arkadaşlar, problem oldu.
+
+561
+01:42:30,840 --> 01:42:32,060
+Değil mi, geçelim.
+
+562
+01:42:35,060 --> 01:42:37,060
+Başka özel bir şey var mı?
+
+563
+01:42:37,060 --> 01:42:38,280
+Evet, tamam.
+
+564
+01:42:38,280 --> 01:42:41,640
+Biraz daha fazla şeyim var.
+
+565
+01:42:43,260 --> 01:42:44,640
+Ön tanımım var.
+
+566
+01:42:47,539 --> 01:42:48,460
+Aşır.
+
+567
+01:42:53,108 --> 01:43:05,108
+Şimdi bu sefer şu header dosyasındaki şeylere ihtiyacım var. Tam olarak ne içeriyordu unuttum. Bakarız. Commentların neleri göremiyorsa onlar oradaymış diye anlarız.
+
+568
+01:43:05,395 --> 01:43:14,815
+Fail success kodları yine burada da var. İlk, ta ilk idrasyon örneğimde olduğu gibi. Ek olarak block size'ım var bu sefer.
+
+569
+01:43:14,815 --> 01:43:33,395
+Server line size'ım vardı. Bu sefer de block size'ım olacak. Ve benim datam karakter türünde her yere çarçar yere yazmak yerine data diyorum. Böylece karakter dışında başka bir şey okuyacağım zaman veya kendi işte structum türünden kayıtlar okuyacağım zaman o zaman zaten onu...
+
+570
+01:43:33,395 --> 01:43:40,835
+Onda bir typedef, her neyse bilmem ne bilmem ne, typedef, struct bilmem ne filan filan filan. En sonunda data diyelim.
+
+571
+01:43:40,835 --> 01:43:49,635
+Böylelikle bazı kodlarıma da değişimi düzenlemeleri yapmama ihtiyacım olmaz şeklinde bir mantık.
+
+572
+01:43:49,635 --> 01:43:55,795
+Şimdi kodfile tamamen değişecek. Ama main aynı kalacak.
+
+573
+01:43:57,363 --> 01:44:01,863
+Blog moddaki copy file kodunu kopyalayalım.
+
+574
+01:44:17,652 --> 01:44:31,011
+Tamam. Yine açma aynı mantık. İşte birini read, birini write. Binary modda bu sefer. Şimdi karakter modunda, karakter dosyalarını block block okumanın pek bir espresi yok.
+
+575
+01:44:31,011 --> 01:44:43,492
+O yüzden hani binary mod esas odak noktamız olacak ama hani block ve text nasıl çalışıyor onu da denediz. O çok bir şey kaybettiriyor, çok zaman kaybettirmiyor bizi.
+
+576
+01:44:43,828 --> 01:44:51,188
+Ondan sonra, civa, vay dönmesinden konuşmuştuk aslında. Biraz ileriye gidip anlatmıştım size.
+
+577
+01:44:51,188 --> 01:44:56,468
+En son kalanı da yazmayı unutmadıktan sonra şeyleri kapatıyoruz.
+
+578
+01:44:56,468 --> 01:45:06,188
+Eğer hatalarınız vardıysa da bunu da okuyamadım falan gibisinden hatanızı verebiliriz.
+
+579
+01:45:06,188 --> 01:45:09,508
+Ve taksitle stres veriyorum. Geri kalan şeyler aynı.
+
+580
+01:45:09,508 --> 01:45:11,508
+Nullin fonksiyonu aynı.
+
+581
+01:45:11,891 --> 01:45:20,391
+Şimdi, deneyelim bakalım, açık bir şey olmasın. Binary moddayım ama yine text tasındayım, yazmaya devam edeceğim.
+
+582
+01:45:20,391 --> 01:45:29,391
+dsss.txt ddd.txt yaptım diyor. Bakalım.
+
+583
+01:45:33,203 --> 01:45:42,804
+yapabilirmiş. Herhangi bir adım yok. App'leri karakterde koymak için. Şimdi PDF dosyasını deneyelim.
+
+584
+01:45:47,667 --> 01:45:48,667
+Çok iyi anladım diyor.
+
+585
+01:45:49,667 --> 01:45:50,667
+Bakalım.
+
+586
+01:45:57,619 --> 01:46:18,619
+Evet, boş mu getirecek dedim, scroll yaptım, başımda eksik olmadığını gördüm. Güzel. Ekstra gedik medik bir şey de yok, farklı bir grip karakter de yok. Ne eksik ne fazla her şey düzgün pdf oluşturabilirim. Work dosyası da oluşturabileceğim inşallah.
+
+587
+01:46:24,564 --> 01:46:30,564
+cms.logix, dpt.logix
+
+588
+01:46:31,564 --> 01:46:34,564
+Kopyaladım diyor. Bakalım.
+
+589
+01:46:40,595 --> 01:47:08,363
+Açamadı, olmadı. Ama kurtarayım mı? Ha kurtaramadı da. Enteresan. Peki, binary modda olmasıma rağmen, şey, verbs dosyası ve bu şekilde kopyalamayı şey demedim, kaldılamadı. Peki, edibar text modda yaparsak kurtarır mı? Bakalım zaten şu an sıra ona geldi. Şuradaki b'leri silip, öyle deneyelim bakalım.
+
+590
+01:47:10,804 --> 01:47:27,043
+aşağı kaydet. Değerledim, tamam. Elkaç bir şey olmasın. SS.txt, dd.txt. Kopyaladım diyor. Bakalım.
+
+591
+01:47:30,292 --> 01:47:34,652
+Evet, aşabildi. Extra da bir şey eklemedi. Gayet güzel.
+
+592
+01:47:34,652 --> 01:47:41,292
+Aaa, stansiyse baktılar. Pd için denedim.
+
+593
+01:47:41,292 --> 01:47:45,652
+Kopyaladım diyor.
+
+594
+01:47:50,899 --> 01:47:52,899
+PowerAct olmadı.
+
+595
+01:47:52,899 --> 01:47:54,899
+Eee...
+
+596
+01:47:54,899 --> 01:47:56,899
+Ve...
+
+597
+01:47:56,899 --> 01:47:58,899
+Word'u deneyelim.
+
+598
+01:48:14,420 --> 01:48:16,172
+Aşıl.
+
+599
+01:48:16,564 --> 01:48:44,564
+Açsaydı, şaşırıldım. Ama bir ihtimal denemek istedim. Çünkü nihayetinde işin özüne baktığımızda, block modu erişim, text modu için uygun bir mod değil, binary mod için uygun. Ama hani binary ya da text modunda açmamıza göre, özlü tekst olan dosyalar genelde rahat bir şekilde kopyalanabildiler, yazılabildiler. Zaten hepsini okumada...
+
+600
+01:48:44,564 --> 01:49:08,564
+Ama yazma mantığında bir tek yani text dosyasının yazmada sonuna karakter ekleyebildiği oldu. Onun için de text dosyamızın genelde çok ezici bir mantıklı çalışabildi. Ama binary modlarda ulaşmak istiyorsak string şeklinde değil, binary modlarda...
+
+601
+01:49:08,576 --> 01:49:13,576
+erişmemiz lazım, kulakımız lazım şekilde toparlayalım.
+
+602
+01:49:13,576 --> 01:49:15,576
+Gidim.
+
+603
+01:49:15,576 --> 01:49:18,576
+Şimdi
+
+604
+01:49:18,576 --> 01:49:20,576
+şimdi
+
+605
+01:49:20,576 --> 01:49:38,939
+eee
+
+606
+01:49:22,579 --> 01:49:26,579
+Ben saydına bir beş dakika ara vereyim.
+
+607
+01:49:26,579 --> 01:49:34,579
+Yani bu sırayı değiştirmemizin sebebi de hani uygulamaya hiç konuyu bilmeden sıfır girmeyin demekti.
+
+608
+01:49:34,579 --> 01:49:40,579
+Bakalım uygulama nasıl da sonlarda ilerlemem gerekiyor mu, gerekmiyor mu bir onu bakacağım.
+
+609
+01:49:44,148 --> 01:50:08,387
+Onun için de 5 dakika ara veriyorum. Saat 15.05 oldu. 15.50'ye kadar ben bu işlere bakacağım. Ondan sonra ne yapacağız, ne edeceğiz? Konuşulur. Paylaşımına odaklıyorum.
+
+610
+01:50:17,235 --> 01:50:18,988
+Sizin da kvartalini.
+
+611
+01:55:04,340 --> 01:55:06,340
+Arkadaşlar, şimdi,
+
+612
+01:55:06,340 --> 01:55:30,615
+...
+
+613
+01:55:26,131 --> 01:55:39,131
+içerikte şu an o kadar konuştuğumuz şeyler üstüne yapılacak, edilecek. Bu bağlamda bugün bu kadar yapmamız yeter. Online uygulamamızı.
+
+614
+01:55:39,444 --> 01:56:05,444
+Haftaya, normal 15 saatte, yani çarşamba, yani şey, bugün 12'si, şey de, 21 Mayıs çarşamba günü, normal ders günü saatinde, yani bizim için çarşamba saat 10'da, 10'dan 12'ye kadar, kalan içeriği,
+
+615
+01:56:06,228 --> 01:56:19,768
+bitiririz. Bitiremesek bile, bitiremesek bile, 28 Mayıs'ın haftasında eksik kalan konuları ben şey derim, tamamlarım.
+
+616
+01:56:20,047 --> 01:56:42,447
+Ahmet Hoca, ondan sonra Cuma, İrem Hoca, onlar herhalde bitirebilirler diye düşünüyorum. Nitekim benden daha net ders saati yapabiliyorlar. Ondan sonra Cuma telafi sınavına girecek olan arkadaşlar. Ya Ahmet Hoca'nın ya İrem Hoca'nın gözetiminde.
+
+617
+01:56:43,572 --> 01:56:55,011
+Kedafi sınavına girerler. Biz de eksik konularımızı yaparız diye düşünüyorum. 28 Mayıs noktasında.
+
+618
+01:56:55,011 --> 01:57:04,364
+O yüzden bugünlük bu kadar. Haftaya inşallah görüşmek üzere. Şimdilik arasında artık otomu kapatalım.
