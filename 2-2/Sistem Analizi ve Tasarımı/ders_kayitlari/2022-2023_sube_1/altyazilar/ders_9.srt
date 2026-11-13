@@ -1,0 +1,1323 @@
+1
+00:00:42,548 --> 00:00:50,428
+Evet, biraz arkadaşlığınız eklensin diye bekliyorum. Bir beş dakika içinde başlayacağız derste.
+
+2
+00:03:51,508 --> 00:03:58,008
+Evet, belki katılan olur diye biraz bekledik ama 9 kişiden 11 kişiye çıkmış sadece.
+
+3
+00:04:00,228 --> 00:04:02,188
+Derse başlayabiliriz.
+
+4
+00:04:03,668 --> 00:04:06,368
+Şimdi önce ekran paylaşımı yapayım.
+
+5
+00:04:18,899 --> 00:04:25,959
+Sınavdan önce ses açık değil mi? Duyuyorsunuz konuştuklarımı bakmadım.
+
+6
+00:04:27,879 --> 00:04:30,000
+Evet, teşekkürler.
+
+7
+00:04:32,500 --> 00:04:45,159
+Şey üzerinde durmuştuk, tasarım aşamasına gelmiştik. Ondan önce de nesneye yönelik yaklaşımlar üzerinde durduk.
+
+8
+00:04:46,708 --> 00:04:51,088
+Analiz ve tasarımda kullandığımız diagramları gördük.
+
+9
+00:04:52,148 --> 00:04:55,008
+Bu arada unutmadan söyleyeyim.
+
+10
+00:04:55,508 --> 00:04:59,088
+Önümüzdeki hafta, yani biz şeyde...
+
+11
+00:05:00,980 --> 00:05:07,280
+Sınavdan sonra iki hafta ders yapacağız, sonra bir uygulama yapacağız demiştik.
+
+12
+00:05:07,280 --> 00:05:10,980
+Ama Göksel hocanızla da konuştuk.
+
+13
+00:05:12,020 --> 00:05:24,280
+Araştırma görevlisi arkadaşlar, bir hafta öne alalım uygulama case study konusunu ki size...
+
+14
+00:05:24,980 --> 00:05:51,139
+Projelerinizi yaparken faydası olsun diye. Dolayısıyla önümüzdeki hafta bir uygulamanın diagramlarını nasıl çizeriz, bir uygulamayın gereksinim analizi ve tasarım aşamasında hangi şeyleri düşünürüz ve hangi diagramları çizeriz konusunda bir uygulama yapacaklar.
+
+15
+00:05:52,980 --> 00:06:16,379
+Son iki haftada konuları tamamlayacağız. Son iki haftada projelerinizin sunumu. Dolayısıyla proje tanımında da belirttiğimiz gibi dönemin bitişinden iki hafta öncesindeki tarihte de zaten şeye koymuştuk.
+
+16
+00:06:16,755 --> 00:06:31,615
+ders projelerine, projelerinizi teslim edeceksiniz orada belirtilen tarihte ve ona da önümüzdeki haftaya kadar düşünürsünüz.
+
+17
+00:06:32,836 --> 00:06:41,096
+Bana mail atar gruplar, hangi grup ilk hafta sunmak istiyor diye.
+
+18
+00:06:43,764 --> 00:06:50,824
+Böyle bir istek sıralamasında iki hafta içinde kimler sunacak programımızı yapacağız.
+
+19
+00:06:51,636 --> 00:07:14,475
+En son nelerden bahsetmiştik? Tasarım aşamasında genel tasarım ve ayrıntılı tasarımdan söz etmiştik. Genel tasarım kapsamında yapı diagramlarını gördük. Yapı diagramı üzerinde başka bir slide daha kullandım.
+
+20
+00:07:20,244 --> 00:07:27,644
+Klasik yaklaşımda nasıl yapacağımızı, yapısal yaklaşımda nasıl yapacağımızı belirttik.
+
+21
+00:07:27,644 --> 00:07:39,884
+Ve daha sonra da nesneye yönelik tasarımda, nesneye yönelik yaklaşımla tasarımda neler yapmamız gerekiyor, onun üzerinde.
+
+22
+00:07:40,271 --> 00:07:51,172
+Durduk. En son yaptığımız derste, sınavdan önce, hatta sınavda da bununla ilgili bir soru gelmişti.
+
+23
+00:07:51,172 --> 00:07:54,971
+İşte çıktı tasarımı, girdi tasarımı.
+
+24
+00:07:58,004 --> 00:08:09,684
+Hangi girdi tasarımında kodlamayı nasıl gerçekleştireceğiz? Hangi hedefler doğrultusunda girdi tasarımını yapıyoruz?
+
+25
+00:08:11,668 --> 00:08:26,987
+Çıktı tasarımında hedeflerimiz ne? Bunları gördük ayrıntılı tasarımda. Yani genel tasarımı bir donanım altyapısının hazırlanması, kuruluşunun yapılması.
+
+26
+00:08:39,668 --> 00:08:40,228
+Ayrıca
+
+27
+00:08:40,624 --> 00:08:46,844
+yazılımımızın planını oluşturduk. Yani hangi modüller olacak?
+
+28
+00:08:47,884 --> 00:08:55,283
+Şeyde de, nesne yönelik tasarımda da hangi nesneler hangi işlemlere girecekler?
+
+29
+00:08:55,283 --> 00:09:03,203
+Bir sequence diagramı ile bunu gerçekleştirdik tasarım aşamasında.
+
+30
+00:09:04,163 --> 00:09:08,604
+Ayrıca sınıf diagramı tasarım için oluşturduk.
+
+31
+00:09:08,624 --> 00:09:20,104
+nesneye yönelik de. Genel tasarım çerçevesinde ER diagramını oluşturuyoruz.
+
+32
+00:09:20,104 --> 00:09:30,584
+Şimdi, işte bu ayrıntılı tasarımda neler yapmıştık onları da bir özetleyeyim.
+
+33
+00:09:34,836 --> 00:09:43,776
+Evet, ayrıntılı tasarım tapsamında çıktı tasarımı, girdi tasarımı, veri tabanı tasarımı, program tasarımı, ara birim tasarımı yapıyoruz.
+
+34
+00:09:43,776 --> 00:09:58,076
+Çıktı tasarımı dediğimiz şey nedir? Yazılım oluşturuldu, çıktıları elde ediyoruz. Bu çıktılarda hedefler nelerdir?
+
+35
+00:10:00,000 --> 00:10:16,000
+Amaca uygun olma, anlamlı olma, uygun sayıda olma, belirli kişilere dağıtılma, etkin çıktı yönetimi belirlenme. Bunlar hedeflerimiz ve çıktı dediğimiz zaman bizim belli...
+
+36
+00:10:17,491 --> 00:10:31,491
+Sorunlara da çözüm getirmesini bekliyoruz çıktılarımızın. Yani kolay izlenebilir olması için alfabetik, kronolojik ya da maliyete göre sıralanmasına, kabul edilebilir sınırların belirlenmesine, mesela bir...
+
+37
+00:10:33,587 --> 00:10:46,327
+Teşhis şeyinde değer nedir, kabul edilen değerler nelerdir, normal değerler nelerdir gibi bir çıktı alıyoruz.
+
+38
+00:10:47,048 --> 00:10:52,827
+Bu şekilde kabul edilebilir sınırlar, bunları göstermesi gerekiyor çıktının.
+
+39
+00:10:53,767 --> 00:11:01,548
+Çıktı grafik olarak olabilir, yazı olarak olabilir, rengi ölçeğini grafikse ayarlamak gerekir.
+
+40
+00:11:01,587 --> 00:11:10,987
+Renkler neleri belirtecek, hangi işaretleri, hangi tür grafikleri, hangi tür çıktılarda kullanabiliyoruz.
+
+41
+00:11:11,987 --> 00:11:20,407
+Girdi için ise, girdi de bilgi girişini nasıl bir ekrandan gerçekleştireceğiz, bu önemli.
+
+42
+00:11:21,107 --> 00:11:38,167
+Girdiler için girdi tasarımında hedefleri gördük. Etkinlik, doğruluk, basitlik. Yani kolay kullanımının olması gerekiyor ki kullanıcı hata yapmasını girerken etkin olması gerekiyor, doğru olması gerekiyor.
+
+43
+00:11:38,167 --> 00:11:49,107
+Doğru girdi yapabilmesi için de yine sizin ekranlarınızı da düzgün hazırlamanız gerekiyor. Yani kullanıcının rahat gireceği hata.
+
+44
+00:11:49,107 --> 00:12:07,107
+yapmayacağı şekilde basit giriş olması gerekiyor. Bunu sağlamanız gerekiyor ve ayrıca girdi de bir de kodlama şeyi var. Girdi bilgisini daha...
+
+45
+00:12:08,403 --> 00:12:19,183
+Sınıflamaya ve hesaplamaya uygun olması için, sıralamaya uygun olması için bir kodla tarif ediyoruz girdileri.
+
+46
+00:12:20,963 --> 00:12:28,943
+Buna da kodlama diyoruz. Mesela hastalık bilgisini uzun uzun yazsak karışacak birbirine, sınıflamak zor olacak, saymak zor olacak.
+
+47
+00:12:29,663 --> 00:12:32,844
+Bunu kodla belirtiyoruz.
+
+48
+00:12:33,375 --> 00:12:36,196
+Aynı şekilde işte
+
+49
+00:12:38,868 --> 00:13:06,868
+Eğitim düzeyi için örnek vermiştik. Bunlar kodlamada anlamlı kod değerleri olması uygun olur. Kolay değişmeyecek şekilde olması gerekir. Tekrarlanmaması gerekir. Birbirine çok benzer karışıklığa yol açacak şeyler olmaması gerekir. Buna göre kodlama aralıkları olmalıdır gibi bir kodlama.
+
+50
+00:13:06,868 --> 00:13:08,967
+oluşturuyoruz.
+
+51
+00:13:12,008 --> 00:13:19,868
+Ekran, bilgi giriş ekranları içinde ekran tasarımı, bununla ilişkili ayrı bir eğitim...
+
+52
+00:13:21,312 --> 00:13:43,572
+de oluşturuluyor ama yine de bizlerin de bunları takip edecek düzeyde bilmemiz gerekiyor. Web tasarımı konusu bilgi giriş ekranlarında önem kazanıyor. Burada kullanıcıyı yormayacak renkler, kullanıcıyı hata yapmamaya yöneltecek şeyler gibi.
+
+53
+00:13:46,419 --> 00:13:51,279
+Dikkat edeceğimiz noktalar vardı. Renk kullanımından söz etmiştik.
+
+54
+00:13:57,043 --> 00:14:15,883
+Bunun dışında, hangi renkler daha kolay etkin görünür? Doğru giriş için etkin kodlama ve etkin verimli bilgi girişinin sağlayacak yapının olması gerekir. Veri saklama ortamı tasarımı ise,
+
+55
+00:14:16,755 --> 00:14:25,936
+Bugün söz edeceğimiz şey veri tasarımı dediğimizde, veri tabanı tasarımını anlıyoruz aslında.
+
+56
+00:14:26,836 --> 00:14:40,596
+Veri yapısının tasarlanması, sistem üzerinde sürekli saklanması gereken bilginin nasıl bir yapıda saklanması gerekeceğini bilinmesi gerekiyor.
+
+57
+00:14:40,596 --> 00:14:43,975
+Bu noktada bizim için önemli olanlar neler?
+
+58
+00:14:44,755 --> 00:14:53,015
+Verinin kullanıcı istediği anda kullanılabilir olması, doğru ve uyumlu olması,
+
+59
+00:14:53,552 --> 00:15:07,552
+Yani veri bütünlüğünün sağlanması, güncelleştirmenin etkin yapılması, geri çağırmada amaca uygun gerçekleştirilmesi hedefleniyor. Bunlara bir daha buradan bakabiliriz.
+
+60
+00:15:08,552 --> 00:15:16,111
+Veri tabanı tasarımında etkin veri, etkin güncelleme, anlamlı bilgi alma.
+
+61
+00:15:18,388 --> 00:15:21,188
+Veri bütünlüğünün sağlanması. Bu nedir?
+
+62
+00:15:29,268 --> 00:15:31,388
+Veri bütünlüğünün sağlanması.
+
+63
+00:16:39,379 --> 00:16:46,939
+Evet, verinin anlamlı olması, veri bütünlüğünden bahsetmiştik burada.
+
+64
+00:16:47,079 --> 00:16:59,319
+Veri tabanı dersinde gördüğünüzde daha ayrıntılı göreceksiniz ama buradaki bütünlükten kastımız bir ekleme, silme.
+
+65
+00:16:59,759 --> 00:17:08,139
+Değişiklik yapıldığında bunun kayıt altında bulunması, veri bütünlüğünü gösteriyor.
+
+66
+00:17:14,067 --> 00:17:30,087
+Veri tabanının düzenlenmesi gerekiyor. Veri tabanı yönetim sistemleri bu veri bütünlüğü konusunda mesela bir arıza oldu kaydetme sırasında donanım arızası oldu.
+
+67
+00:17:40,276 --> 00:17:52,696
+Yardımcı olacak sistemdeki yapılandırmaların olması gerekiyor veritabanı yönetim sistemlerinde. Bu da bütün veritabanı yönetim sistemlerinde sağlanıyor genellikle.
+
+68
+00:17:53,299 --> 00:18:05,039
+Kullanışlı veri, yani her zaman ulaşılabilecek, kullanılabilecek yapıda veri olması gerekiyor.
+
+69
+00:18:06,359 --> 00:18:19,619
+Etkin olması gerekiyor ve etkin güncelleme, her an yeni düzenleme yapılabilecek şekilde bulunması gerekiyor.
+
+70
+00:18:20,307 --> 00:18:29,827
+Şimdi kullanıcı ara birim tasarımı nasıl gerçekleştiriliyor?
+
+71
+00:18:29,827 --> 00:18:41,827
+Burada da bilgi girişi ve işlemlerin gerçekleştirilmesi sırasında.
+
+72
+00:18:43,604 --> 00:18:55,324
+Bilgisayarın doğru formda olup olmadığı, işlemin tamamlanmadığıyla ilişkili bilgileri gönderiyorlar.
+
+73
+00:18:55,324 --> 00:19:05,124
+Yani işte beklemeniz gerekiyor, hata oluştu falan gibi kullanıcıyla etkileşim halinde bulunan ekranlar.
+
+74
+00:19:05,963 --> 00:19:07,296
+Bunların da...
+
+75
+00:19:07,296 --> 00:19:29,536
+Aynı yapıda oluşturulması daha uygun. Bunlarda da yine etkinlik kullanıcıların daha kolay kullanacağı şekilde hataları azaltma, veri giriş hızını arttırmaya yönelik ve ergonomik olması gerekiyor.
+
+76
+00:19:29,536 --> 00:19:34,155
+Bir de kullanıcının alışkanlıklarına uygun olması.
+
+77
+00:19:35,296 --> 00:19:40,496
+Bu işlerinin alınabilmesini bu anlamı taşıyor.
+
+78
+00:19:42,436 --> 00:19:53,135
+Kullanıcıya önem verme, kullanıcının alışkanlıklarına ve yapısına uygun olması gerekiyor.
+
+79
+00:19:54,516 --> 00:19:59,576
+Ara birim problemleri bazen ortaya çıkabiliyor.
+
+80
+00:20:00,000 --> 00:20:04,119
+Bunların da neler olduğunu belirtmişiz.
+
+81
+00:20:04,240 --> 00:20:12,500
+Şimdi bu hafta özellikle veri tabanı tasarımı üzerinde duracağız.
+
+82
+00:20:13,160 --> 00:20:19,420
+Veri tabanı yapısını nasıl oluşturacağız?
+
+83
+00:20:21,000 --> 00:20:25,539
+Bu konuda başka bir ekran paylaşımı gerçekleştireceğim.
+
+84
+00:20:52,180 --> 00:21:06,039
+Evet, nedir karakteristik özellikleri, ilişki ve özellikler?
+
+85
+00:21:06,516 --> 00:21:24,615
+Bir, hangi varlıklar hakkında bilgi tutulacak? ER diyagramı, varlık ilişki diyagramları, veri tabanı içinde sürekli saklanacak veri var demiştik.
+
+86
+00:21:24,615 --> 00:21:34,516
+Bunu daha analiz sırasında, başlıyoruz bunun hazırlıklarına. Analiz sırasında öncelikle hangi varlık...
+
+87
+00:21:34,516 --> 00:21:57,436
+Bu varlıklar hakkında bilgi tutacağız. Bunu belirliyoruz. Ve bu varlıkların öncelikle atribütleri, özellikleri, hangi bilgi parçalarına ihtiyacımız var? Mesela bir öğrenci bilgi sisteminde hakkında sürekli bilgi tutmamız gereken varlıklar nelerdir?
+
+88
+00:21:58,640 --> 00:22:22,019
+Dersler, öğretim üyeleri, bölümler özellikle bunlar hakkında bilgi tutmamız gerekiyor. Sürekli bilgi olacak ki bütün işlemleri her seferinde farklı bilgilerle oluşturmayalım.
+
+89
+00:22:22,963 --> 00:22:37,863
+Özellik nedir? Mesela öğrenci varlığını tanımlamamız gereken, hakkında bilgi girmemiz gereken şeyler nelerdir? Varlıklar nelerdir?
+
+90
+00:22:37,863 --> 00:22:41,003
+Burada
+
+91
+00:22:45,236 --> 00:23:04,776
+Mesela öğrencinin numarası, ad soyadı, hangi bölümde olduğu. Bunlar mutlaka tutulacak özellikler. İlişki dediğimizde de diğer varlıkla ilişkisinin nasıl bir ilişkisi var? İki varlık arasındaki ilişkiyi belirtiyor.
+
+92
+00:23:13,236 --> 00:23:29,016
+Bir de sayısal tarafı olabilir. Zorunluluk seçimlik ilişkisi olabilir. İkili, birli, üçlü ilişki olabilir.
+
+93
+00:23:30,740 --> 00:23:40,099
+Biz ER diyagramlarında bunların hepsini ikili ilişki olarak değiştiriyoruz. Üçlü ve enli ilişkileri.
+
+94
+00:23:43,988 --> 00:23:57,087
+İki varlık arasında nasıl bir ilişki var? Bire bir mi? Bire en mi? Bire en mi? Yoksa ene en ilişki mi?
+
+95
+00:23:57,087 --> 00:24:06,087
+Şimdi bunu şurada görüyoruz mesela. Varlıklar arasındaki...
+
+96
+00:24:06,259 --> 00:24:24,060
+Doğal ilişkiler. Mesela burada bir kişi var, müşteri bir sipariş veriyor. Hangi sipariş?
+
+97
+00:24:26,163 --> 00:24:44,323
+Muhasebe Departmanı'nda çalışan Mr. Smith şu siparişi verdi. Hangi bilgileri içeriyor bu sipariş? Bu da sipariş kalemlerini gösteriyor.
+
+98
+00:24:55,796 --> 00:25:11,636
+Şurada her bir müşteri hangi özelliklere sahip ve her bir müşteri bunda nasıl değişebilir, bilgiler nasıl değişebilir?
+
+99
+00:25:11,636 --> 00:25:17,036
+Bir müşteri için müşteri numarası.
+
+100
+00:25:17,423 --> 00:25:36,504
+Adı, soyadı, ev numarası, iş numarası var. Her bir müşteri için bu bilgileri girmek zorundayız. Bazen sizler de program yaparken mutlaka girilecek bilgileri işaret edersiniz.
+
+101
+00:25:45,423 --> 00:25:46,799
+Öl...
+
+102
+00:25:46,799 --> 00:26:11,979
+Her kayıtta farklı bir değer içeriyor. Yani şurası bir varlığın özellikleri. Bu tarafta da bu varlığa yani müşteri varlığının her bir özelliği için alınan değerler, her bir kayıttaki farklı değerleri bu şekilde görebiliyoruz.
+
+103
+00:26:14,324 --> 00:26:36,983
+Şimdi burada bir varlık, şunlar müşteri bir varlık, şunlar varlığın atribütleri, özellikleri, şunlar da her bir atribüt için farklı müşterilerde alınan değerler. Bunları görüyoruz.
+
+104
+00:26:40,564 --> 00:26:44,764
+İşte biz burada varlıkları görüyoruz.
+
+105
+00:26:46,824 --> 00:27:04,044
+Geleneksel bilgi sistemi yaklaşımında veriyi saklamak üzere kullanılan şeyler, ortamlar, veri varlıkları ve bunlar ER diyagramlarıyla modelleniyorlar.
+
+106
+00:27:06,132 --> 00:27:15,032
+Entity Relationship için E ve R harfleri ER diyagramının yapısını oluşturuyor.
+
+107
+00:27:15,032 --> 00:27:23,951
+ER diyagramıyla modelliyoruz ve ilişkisel database geliştiriyoruz biz bunlar için.
+
+108
+00:27:27,763 --> 00:27:36,163
+Her iki varlık arasındaki ilişki, ilişkinin tipi belirlenir.
+
+109
+00:27:37,363 --> 00:27:44,263
+Ve burada da baktığımızda nasıl bir ilişki var?
+
+110
+00:27:45,383 --> 00:27:48,747
+Nesne yapısında da...
+
+111
+00:27:49,299 --> 00:28:04,599
+Saklama işi sistemdeki davranışlar ve özellikleri saklıyor. Yani burada bir varlığın tipi sınıf.
+
+112
+00:28:04,948 --> 00:28:09,268
+Özel bir varlık nesneyi gösteriyor.
+
+113
+00:28:09,867 --> 00:28:13,627
+Metotlar da nesnenin davranışlarını gösteriyor.
+
+114
+00:28:14,188 --> 00:28:20,347
+Yani burada entity, klasik yaklaşımla
+
+115
+00:28:21,748 --> 00:28:32,188
+Entity'lerde varlıkları görüyoruz, ER diyagramlarıyla modelleniyor, ilişkisel database'ler kullanıyor.
+
+116
+00:28:32,348 --> 00:28:38,888
+Nesnelerde ise bir sınıf belirleniyor, sınıfın altındaki nesne.
+
+117
+00:28:39,888 --> 00:28:49,648
+Sadece nesnelerin özellikleri burada yazılmamış ama sadece objekt ve metot değil, objekt, attribute.
+
+118
+00:28:49,748 --> 00:29:02,668
+ve metot görünüyor. Data Entity'lerde biz metotları görmüyoruz. Ayrıca programlarla bağlıyoruz yapılacak işlemleri.
+
+119
+00:29:02,668 --> 00:29:12,508
+Şimdi şurada daha iyi göreceksiniz. Data Entity'ler ve nesnelerin kıyaslanması.
+
+120
+00:29:15,124 --> 00:29:19,524
+Burada bir veri varlığı
+
+121
+00:29:19,955 --> 00:29:36,575
+Veri varlığı bir programla ilişkiye giriyor. Girdi çıktı ve sürekli saklanacak varlıklar, bunlar işlemlerden geçerek tekrar sonuçlar veri tabanına aktarılabiliyor.
+
+122
+00:29:36,575 --> 00:29:47,575
+Ama işlemler ayrı bir noktada oluşuyor. Nesne yapısında ise encapsulation kavramı.
+
+123
+00:29:47,955 --> 00:30:09,955
+Veri ve metotlar birlikte bulunuyor. Mesajlar bu işlemleri tetikliyor ve girilecek, yapılacak işlemler burada belirtilmiş oluyor. Hangi mesajlarla, hangi işlemler tetiklenecek bunları görebiliyoruz.
+
+124
+00:30:15,347 --> 00:30:33,167
+Az önceki örnekle şurada bir sipariş, sipariş hangi şeyleri içeriyor?
+
+125
+00:30:41,172 --> 00:30:51,592
+Ve gerçekleştirilen işlemleri bir müşteri çok sayıda sipariş verebilir.
+
+126
+00:30:52,692 --> 00:30:59,172
+Ama bir sipariş sadece bir müşteriyle ilişkilendirilir.
+
+127
+00:31:01,552 --> 00:31:07,332
+Birden fazla müşteriyle ilişkilendirilmez. O işlemi kim yaptı?
+
+128
+00:31:07,796 --> 00:31:28,256
+Müşteri ile sipariş arasında sıfır veya çoklu ilişki var. Sipariş ile müşteri arasında bir ve sadece bir ilişki var. Bunun anlamı nedir?
+
+129
+00:31:34,355 --> 00:31:53,816
+Serbestlik ve mutlaklık derecesi de tanımlanmış durumda. Şuradaki işaret, bunun yerine burada gösterim şekli olarak farklı gösterimler de verilebilir.
+
+130
+00:31:53,816 --> 00:31:59,056
+Bire çoklu ilişki için.
+
+131
+00:32:00,832 --> 00:32:11,552
+Varlıklar arasındaki ilişkileri biz birebir, bireçoklu ve çokluya çoklu olarak tanımlayabiliyoruz.
+
+132
+00:32:12,211 --> 00:32:16,211
+Birebir, bireen, enem şeklinde.
+
+133
+00:32:19,604 --> 00:32:33,364
+Bir de zorunluluk seçimlik ilişkisini de burada sıfır da olabilir, çoklu da olabilir ya da bir ve yalnız bir olabilir gibi gösterebiliyoruz.
+
+134
+00:32:35,364 --> 00:32:41,663
+Evet, mutlak bir zorunluluk var. Şurada belirtiliyor.
+
+135
+00:32:42,324 --> 00:32:57,764
+Sıfır veya çoklu, optional. Bir kişi bizim müşteri kayıtlarımızda bulunur ama şimdiye kadar hiç sipariş vermemiştir. Sıfır ya da çok fazla sipariş vermiştir, çoklu.
+
+136
+00:33:00,764 --> 00:33:08,764
+Bu taraf sıfır da olabilirse sıfır veya seçimlik olabilir.
+
+137
+00:33:10,132 --> 00:33:17,512
+Bu da bir veya daha çok anlamı şurada çıkıyor.
+
+138
+00:33:19,432 --> 00:33:28,752
+Hiç vermemiş olabilir ya da vermişse de bir tane vermiş olabilir diye de burada gösterebiliyoruz.
+
+139
+00:33:34,579 --> 00:33:41,039
+sayısal ve seçimlik zorunluluk ilişkilerini burada gösterebiliyoruz.
+
+140
+00:33:41,039 --> 00:33:56,299
+Bu arada bu ER diyagramları ve varlıklar arasındaki ilişkiler her zaman
+
+141
+00:33:56,703 --> 00:34:19,304
+Aynı notasyonda, yani notasyonu gösterim şekli olarak kullanıyorum. Aynı gösterim şekliyle gösterilmeyebilirler. Buradaki gösterim şekilleri zorunluluk seçimliği de belirtecek şekilde kullanılmış.
+
+142
+00:34:23,027 --> 00:34:28,227
+Daha farklı şekilde de kullanılması mümkün.
+
+143
+00:34:30,867 --> 00:34:32,447
+Burada şey de olabilir.
+
+144
+00:34:38,547 --> 00:34:46,847
+ER yapısı farklı olabilir. Yani farklı gösterim şekilleri olabilir.
+
+145
+00:34:46,847 --> 00:34:53,807
+Mesela çenin gösterim şekli daha farklı.
+
+146
+00:34:57,047 --> 00:35:04,027
+Araya üçgen yerleştirecek şekilde de ifade edilebilir.
+
+147
+00:35:04,563 --> 00:35:17,344
+Şimdi bu slide'ı tamamladıktan sonra size bu çenin gösterim şeklini de belirtecek şekilde kullanacağım.
+
+148
+00:35:27,956 --> 00:35:49,636
+Evet, en son buna örnek verdik. Bir müşteri çok sayıda sipariş verebilir ama hiç vermemiş de olabilir. Şurada sıfır var. Bir sipariş verilmişse mutlaka karşılığında bir müşteri vardır. Bir müşteri kaydıyla birleştirilmiş olmalıdır.
+
+149
+00:35:50,099 --> 00:35:58,640
+Şimdi bir de buraya bakalım. Müşteri sipariş, sipariş parçası.
+
+150
+00:36:01,076 --> 00:36:25,916
+Sipariş kaydı. Müşteri ayrı bir tabloyu gösterecek. Sipariş ayrı bir tabloyu. Sipariş parçası ise hangi siparişte kaç kalem mal alınmış? Bu malların her birinin fiyat ve miktarı ile ilişkili bilgi içerilmiş olacak.
+
+151
+00:36:29,076 --> 00:36:37,916
+Sipariş parçası, müşterinin altında hangi şeyler var?
+
+152
+00:36:38,367 --> 00:37:01,467
+Hangi alanlar var? Hangi kolonlar var? Müşteri numarası, adı, fatura adresi, ev telefonu, ofis telefonu. Buradaki yıldız, zorunluluk anlamında. Yani müşteri kaydı olarak girilen her bir kayıtta mutlaka bir müşteri numarası olmalı ve bu müşteri numarası primary key yapısında.
+
+153
+00:37:03,280 --> 00:37:18,020
+Esas anahtar, birincil anahtar. Burada müşterinin her bir müşteri için farkı verilmiş olan bir numaradan bahsediyoruz burada.
+
+154
+00:37:24,532 --> 00:37:42,372
+Siparişte, sipariş numarası, sipariş tarihi ve miktar. Arada ilişki olduğu için hangi müşteri tarafından verilmiş bir sipariş olduğu da bu aradaki ilişki de belirtilmiş oluyor.
+
+155
+00:37:47,956 --> 00:37:55,336
+Müşteri numarası Forenki olarak bulunacak.
+
+156
+00:37:56,916 --> 00:38:09,615
+Sipariş parçası, sipariş numarası, sipariş tarihi ve siparişin toplam miktarını içeriyor.
+
+157
+00:38:14,996 --> 00:38:38,815
+Her bir parçanın adı, ürünün kodu, miktarı ve fiyatı. Ne kadar alındı ve fiyatı? Buradaki ilişkilere bakalım. ER diyagramında. Müşteri sıfır siparişte vermiş olabilir, çok sayıda siparişte vermiş olabilir.
+
+158
+00:38:39,376 --> 00:39:03,396
+Her bir siparişte birden fazla sipariş kaydı olabilir. Burada bakıyoruz mesela burada sıfır ve çoklu, burada bir veya çoklu. Neden? Çünkü bir sipariş varsa ortada, kayıtlı bir sipariş, mutlaka bir tane sipariş kaydının olması gerekiyor.
+
+159
+00:39:07,155 --> 00:39:27,715
+Her bir sipariş hangi sipariş kayıtlarını içeriyor? Çok sayıda da olabilir, bir de olabilir ama en az bir olması gerekir sipariş kaydının. Burada bunu belirtmemiz gerekiyor.
+
+160
+00:39:29,492 --> 00:39:40,351
+Buraya kadar sorusu olan var mı? Örneğin şu yapı anlaşıldı mı? Aradaki ilişkiler, birebir, bireen, eneem ilişkiler.
+
+161
+00:39:46,132 --> 00:39:47,351
+Sorunuz var mı?
+
+162
+00:39:53,364 --> 00:39:55,023
+[öğrenci] anlaşıldı mı?
+
+163
+00:39:57,764 --> 00:39:58,963
+Evet hocam anlaşıldı.
+
+164
+00:39:59,564 --> 00:39:59,804
+Tamam.
+
+165
+00:40:02,583 --> 00:40:08,903
+Henüz veritabanı dersi almamış olduğunuz için bunu biraz çok yavaş giderek anlatıyorum.
+
+166
+00:40:10,524 --> 00:40:13,724
+Yerleşmesi ve şeyde kullanmanız açısından.
+
+167
+00:40:14,503 --> 00:40:16,203
+Şimdi burada bir daha bakalım.
+
+168
+00:40:18,579 --> 00:40:34,579
+John, Mary, Sarah, bunlar müşteri. John iki tane sipariş vermiş. Burada tarih önemli sipariş bilgisi içinde. Şuralarda...
+
+169
+00:40:35,411 --> 00:41:00,511
+Burada gösteriş şeklimiz bu. Mesela müşteri dediğimiz zaman hangi kolonlardan oluşuyor? Yanında yıldız olan da primary keyi. Primary keyin en önemli özelliği bir boş olmaması, ikincisi tekrarlanmayamış olması. Yani başka kayıtlarda bu müşterinin numarası bir daha geçmeyecek.
+
+170
+00:41:03,795 --> 00:41:17,795
+İçinde yine aynı şekilde sipariş kayıtları, sipariş altında geçen bilgiler, sipariş parçası da veya kalemi diyoruz, sipariş kalemi diyoruz.
+
+171
+00:41:17,795 --> 00:41:26,036
+Bir şeyde kaç tane sipariş kalemi olabilir? Çoklu, bire çoklu.
+
+172
+00:41:27,572 --> 00:41:51,572
+Evet, burada da bunun değer her bir özelliğin farklı kayıtlarını, aslında özellik demeyeyim de her bir varlığın hangi…
+
+173
+00:41:52,947 --> 00:42:12,987
+Sipariş kalemlerinden oluştuğunu görüyoruz. Her bir siparişteki alt kalemleri görüyoruz. Mesela John önce Şubat'ta alışveriş yaptı. Üç kalem mal aldı. Sonra 2 Mart'ta alışveriş yaptı. Üç kalem mal aldı.
+
+174
+00:42:20,307 --> 00:42:38,327
+Üye oldu ama hiç sipariş vermedi henüz. Sara ise bu mağazaya üye oldu. Şu tarihten itibaren kayıt almaya başladı.
+
+175
+00:42:46,036 --> 00:43:04,856
+Sınıf diagramını daha önce gördük. Şimdi bu bilgilerimizi kullanarak sınıf diagramına bakarsak, genelleştirilmiş hiyerarşiler var, aggregation yapısı var bu sınıf diagramında.
+
+176
+00:43:07,123 --> 00:43:20,123
+Ve sınıf diyagramı yapısını oluşturduğumuzda da daha alt nesnelere doğru hiyerarşinin olduğunu görüyoruz.
+
+177
+00:43:20,123 --> 00:43:23,983
+İşte şunlar genelleştirmeler.
+
+178
+00:43:26,739 --> 00:43:38,900
+Motorlu taşıtlar, işte kamyon, araba ve traktör. Araba dediğimiz zaman hangi tip arabalardan bahsediyoruz, onları da belirtiyoruz.
+
+179
+00:43:40,119 --> 00:43:46,360
+Aşağıdan yukarıya baktığımızda da genelleştirme gerçekleştirilmiş oluyor.
+
+180
+00:43:46,360 --> 00:43:52,840
+Bir motorlu taşıt yapısı için.
+
+181
+00:43:58,963 --> 00:44:21,923
+Aggregation ve bütün parça ilişkisi, bilgisayar hangi varlıklarla ilişkide bunu belirtmek üzere de böyle bir haritalandırma yapmanız uygun olacaktır.
+
+182
+00:44:31,603 --> 00:44:41,304
+Burada bu aggregation ilişkisinde görüyoruz bilgisayar ve parçaları arasında.
+
+183
+00:44:42,623 --> 00:44:48,983
+Nesne'ye yönelik yaklaşımda biz şeyi de hatırlatmıştık.
+
+184
+00:44:48,983 --> 00:44:56,244
+Aggregation nedir? Başka hangi ilişkiler var?
+
+185
+00:44:57,811 --> 00:45:17,171
+Arası dolgulu olan şu yapıda eşkener dörtgenler, boş olanların anlamı nedir, dolu olanlarda hangi yapı belirtiliyor bunu görebiliyoruz.
+
+186
+00:45:21,972 --> 00:45:44,812
+Sınıf diagramı için sınıf sembolü, öncelikle sınıf yapısı, sınıfın adı, özellikleri ve metotlar olarak görülüyor. Bunları bu şekilde tanımlayabiliyoruz.
+
+187
+00:45:47,027 --> 00:45:51,647
+Sınıfın adı, atribütler ve mesajlar.
+
+188
+00:45:53,867 --> 00:46:03,347
+Sınıf yapısında müşteri, şimdi sınıf diagramına bakalım.
+
+189
+00:46:04,127 --> 00:46:06,727
+Yani ER diyagramı ile oldukça benzer.
+
+190
+00:46:07,947 --> 00:46:10,427
+ER diyagramında varlıkları gösteriyoruz.
+
+191
+00:46:10,992 --> 00:46:16,672
+Mesajları kullanmıyoruz, aradaki işlemleri.
+
+192
+00:46:18,211 --> 00:46:23,432
+Sınıflar arasındaki ilişki yerine, varlıklar arasındaki ilişkiyi gösteriyoruz.
+
+193
+00:46:23,432 --> 00:46:29,432
+Ve her bir varlık arasında da işte birey...
+
+194
+00:46:30,099 --> 00:46:35,779
+Çoklu gibi nasıl bir ilişki varsa belirtiyoruz.
+
+195
+00:46:36,980 --> 00:46:48,399
+Sınıf diagramında mesela burada bir müşteri
+
+196
+00:46:49,139 --> 00:47:01,780
+Bankacılık uygulamalarında, banka hesabı sisteminde nasıl gösteriliyor? Bir müşteri hiç hesabı olmayabilir, bir müşteri numarası kalabilir eski hesaplardan.
+
+197
+00:47:07,188 --> 00:47:32,088
+Bir müşterinin bir hesabı var. Hesap numarası, işte ne kadar para var hesapta şu anda ve buradaki tarih nedir? Açıldığı tarih nedir hesabın?
+
+198
+00:47:32,467 --> 00:47:47,367
+Hangi işlemler gerçekleştirilir hesap üzerinde? Depozit gerçekleştir ve geri alma işlemi.
+
+199
+00:47:47,827 --> 00:47:54,208
+Hesaptaki parayı ve şu andaki durum nedir bunları gösteriyor.
+
+200
+00:47:54,208 --> 00:48:00,268
+Ama bu hesap sadece bütün hesaplar için aynı hesap kullanılacak değil.
+
+201
+00:48:00,928 --> 00:48:11,128
+Bu hesap bir büyütülmüş üst yapıda olabilir.
+
+202
+00:48:15,539 --> 00:48:25,019
+Çok gereksiz, farklı tanımlamalarla aradaki ilişki kurulabilir.
+
+203
+00:48:26,360 --> 00:48:29,280
+Bunu şöyle açabiliriz.
+
+204
+00:48:31,160 --> 00:48:35,039
+Hangi işlemler gerçekleşiyor?
+
+205
+00:48:35,039 --> 00:48:39,600
+Genel olarak hesap üzerinden.
+
+206
+00:48:39,903 --> 00:48:45,544
+Hangi işlemler gerçekleşiyor?
+
+207
+00:48:47,403 --> 00:48:53,784
+Şurada da hangi işareti bu? Daha önce görmüştük. Şu işaret ne işareti?
+
+208
+00:48:57,460 --> 00:48:59,819
+[öğrenci], şu ne işareti?
+
+209
+00:49:05,268 --> 00:49:18,347
+Buradaki anlamını kullanarak da bakabiliriz. Mesela burada çek hesabı, mevdat hesabı diyelim.
+
+210
+00:49:22,804 --> 00:49:34,344
+Bu da hesap. Şu ok işareti, büyük ok işareti neyi anlatmış oluyor? [öğrenci] sen söyler misin?
+
+211
+00:49:35,304 --> 00:49:36,943
+İnheritansı göstermiyor mu hocam?
+
+212
+00:49:38,923 --> 00:49:45,663
+İnheritansı gösteriyor ama burada başka bir isim veriyoruz. Genelleştirme. Çünkü aşağıdan yukarıya bakıyoruz.
+
+213
+00:49:46,739 --> 00:49:59,499
+Yukarıdan aşağıya baktığımızda hesabın bütün alttaki şeylere aktardığı özellikleri konuşabiliriz.
+
+214
+00:49:59,499 --> 00:50:01,499
+Mesela hesap...
+
+215
+00:50:02,675 --> 00:50:26,395
+Özellikleri, hesap numarası, son bu hesaptaki para durumu ve açıldığı tarih. Burada alttaki nesneler, farklı hesap tipleri, çek hesabı ve şey hesabı. Bu özelliklerde artık bunları saymıyoruz.
+
+216
+00:50:26,847 --> 00:50:52,847
+Hesap numarası, son durum ve açıldığı tarih var. Bir de oran var, faiz oranı gibi. Başka bir check hesabında ise check stili minimum balance var. Bunlar inheritance. Yani şu üç özelliğin.
+
+217
+00:50:53,184 --> 00:50:58,384
+Bu ikisinde de olması inheritance, kalıtım.
+
+218
+00:50:59,524 --> 00:51:09,644
+Şu, bu iki hesaba alttan ayrıntıda baktığımızda yukarıya doğru bir genelleştirme yapıyoruz. İkisi de hesap.
+
+219
+00:51:09,644 --> 00:51:18,264
+Yani şu genelleştirme aşağıdaki nesnelerden.
+
+220
+00:51:18,559 --> 00:51:20,940
+Sınıfa doğru gidiyoruz.
+
+221
+00:51:35,891 --> 00:51:52,751
+Burada gösterim şekli olarak baktığımızda sınıf diagramında bir müşteri sıfır hesabı da olabilir, nokta nokta yıldız çok hesabı da olabilir tanımını veriyoruz.
+
+222
+00:52:02,576 --> 00:52:15,315
+Şubesi de olabilir. Yani çok sayıda grubu da olabilir. Biz de grup olarak veriyoruz. Çok sayıda grubu da olabilir.
+
+223
+00:52:18,315 --> 00:52:27,115
+Kursta kayıt yaptırma üzerinden bağlıyoruz. Öğrenci.
+
+224
+00:52:27,764 --> 00:52:43,043
+Öğrencinin özellikleri, öğrencinin gerçekleştirdiği işlemler, araya bir şey eklemişiz, kursa kayıt.
+
+225
+00:52:43,043 --> 00:52:51,483
+Yani belirli bir kurs ders grubuna öğrencilerin kayıt olması.
+
+226
+00:52:52,340 --> 00:52:58,099
+Kaydolan her bir öğrenci için not durumu gerilmesi gerekir.
+
+227
+00:52:59,440 --> 00:53:02,980
+Ve gerçekleştirilen işlem de şudur bunun üzerinde.
+
+228
+00:53:04,980 --> 00:53:12,260
+Bir taraftan diğer tarafa baktığımızda her ikisi de sıfır ya da çoklu.
+
+229
+00:53:12,260 --> 00:53:16,199
+Yani bir derste.
+
+230
+00:53:16,755 --> 00:53:35,275
+Seçen hiç öğrenci olmayabilir ya da çok sayıda öğrenci olabilir. Bir öğrenci o dönemde hiç ders seçmemiş olabilir, kayıt dondurmuş olabilir ya da çok sayıda ders seçmiş olabilir. Bu da aradaki şeyi gösteriyor.
+
+231
+00:53:35,275 --> 00:53:42,576
+Burada bunların işaretleri farklı olabilir. Bu şekilde.
+
+232
+00:53:43,168 --> 00:53:46,368
+gösterebiliyoruz durumu.
+
+233
+00:53:48,308 --> 00:53:53,348
+Şimdi biz esas ER diyagramlarında
+
+234
+00:54:08,019 --> 00:54:09,619
+Hangisi göstermiştik?
+
+235
+00:54:16,340 --> 00:54:20,760
+ER diyagramlarında ilişkileri böyle belirtiyoruz.
+
+236
+00:54:36,211 --> 00:54:42,771
+Şurada göstermiştik. Basit bir ER diyagramını bu şekilde oluşturabiliyoruz.
+
+237
+00:54:44,692 --> 00:54:56,572
+Daha karmaşık ER diyagramları da bire çoklu değil, çokluya çoklu olarak kullanılabilir.
+
+238
+00:54:57,431 --> 00:55:01,012
+Bunu da şöyle çizerek göstereyim.
+
+239
+00:55:01,780 --> 00:55:03,820
+Buraya kadar sorunuz var mı?
+
+240
+00:56:05,811 --> 00:56:12,731
+Evet, bir tahta kullanarak bir tane çen formatında.
+
+241
+00:59:35,092 --> 00:59:38,411
+Şu anda bu tahtada çizdiklerimi görebiliyor musunuz?
+
+242
+00:59:45,300 --> 00:59:45,920
+Evet, hoşuma.
+
+243
+00:59:45,920 --> 00:59:46,960
+Tamam.
+
+244
+00:59:50,880 --> 01:00:00,540
+Şu eşkenar dörtgen üzerinden aradaki ilişkinin fiilini görebiliyoruz.
+
+245
+01:00:01,320 --> 01:00:06,880
+Mesela bire en bir ilişkide arada fiil görülebilir.
+
+246
+01:00:06,880 --> 01:00:11,880
+Mesela şurada bir müşteri...
+
+247
+01:00:12,307 --> 01:00:35,487
+Sipariş verir, bir müşteri verir sipariş. Aradaki ilişki bire en bir ilişki. Bir müşteri çok sayıda sipariş verebilir veya işte zorunluluk seçimliği de gösterirsek sıfır da olabilir. Böyle gösterebiliriz.
+
+248
+01:00:37,007 --> 01:00:42,187
+Bu aradaki de bir ilişki tablosu olarak görünür.
+
+249
+01:00:43,187 --> 01:00:47,567
+Mesela şurada öğrenci.
+
+250
+01:00:55,795 --> 01:00:57,536
+Burada da dersler.
+
+251
+01:01:03,443 --> 01:01:08,724
+Öğrenci ile dersler arasındaki ilişki nasıl bir ilişkidir?
+
+252
+01:01:11,963 --> 01:01:12,844
+Bire çoklu mu?
+
+253
+01:01:17,556 --> 01:01:18,675
+Çokluya çoklu mu?
+
+254
+01:01:18,815 --> 01:01:19,896
+Çokluya çoklu.
+
+255
+01:01:20,396 --> 01:01:24,956
+Çünkü çok sayıda öğrenci aynı dersi alabilir.
+
+256
+01:01:26,175 --> 01:01:32,376
+Bir öğrenci çok sayıda dersi alabilir.
+
+257
+01:01:34,516 --> 01:01:37,556
+Ders tarafından baktığımızda da...
+
+258
+01:01:38,003 --> 01:01:56,863
+Bir ders çok sayıda öğrenci tarafında alınabilir şeklinde tanımlama yapabiliriz. Bir öğrenci çok sayıda ders de alabilir, bir ders de çok sayıda öğrenci alabilir. Peki aradaki bağlantıyı nasıl yapacağız?
+
+259
+01:02:03,840 --> 01:02:23,700
+Bire en ilişki arasındaki bağlantı olsaydı burada diyecektik ki fiil var sadece bu bağlantı. İki varlık hangi fiille bir ilişki gerçekleştiriyor?
+
+260
+01:02:29,588 --> 01:02:48,088
+İlişki bir tablo olmalı. Arada bir ilişki tablosu olmalı. Bu ilişki tablosunda arada notlar olacak.
+
+261
+01:02:49,780 --> 01:03:04,380
+Atribütlerden bir tanesi veya işte üç kolon her neyse, devam, vize ve final notu, devam arasına final notu.
+
+262
+01:03:40,340 --> 01:03:46,540
+Notlar ilişkisi, notlar ilişki tablosu diyelim.
+
+263
+01:03:52,724 --> 01:03:55,004
+Şuradaki ilişkide
+
+264
+01:04:00,916 --> 01:04:12,916
+İlişkinin özelliği, notlar tablosu daha sonra olacak olan ilişki tablosu.
+
+265
+01:04:47,315 --> 01:05:03,435
+Vize ve final notlar tablosu. Özellikleri burada olduğu gibi, şuradaki mesela bu notlar ilişki tablosu, vize ve final notu.
+
+266
+01:05:04,788 --> 01:05:08,847
+Atribütler, bu ilişki tablosunun özellikleri.
+
+267
+01:05:09,468 --> 01:05:17,588
+Öğrenci tablosu içinde eğitim anlamıyla bu yapıyı kullanabiliyoruz.
+
+268
+01:05:35,315 --> 01:05:44,735
+Bu gösterim şekli, notasyon, çen notasyonu, varlıkların dikdörtgenlerle.
+
+269
+01:05:45,139 --> 01:06:04,079
+Aradaki ilişki fiilini eşkenar dörtgenle, eğer ilişki çokluya çoklu ilişki ise bu defa sadece fiil değil, aradaki ilişki tablosunu da eşkenar dörtgenle gösteriyoruz.
+
+270
+01:06:04,079 --> 01:06:13,139
+Bunun bir ilişki tablosu olduğunu nasıl anlıyoruz? Sadece isim değil, özellikler var aynısıyla.
+
+271
+01:06:13,139 --> 01:06:17,499
+Bu şekilde görüyoruz.
+
+272
+01:06:30,867 --> 01:06:42,847
+şey değil, bir aradaki varlıkları da gösterelim. Pardon, varlığın özelliklerini de gösterelim.
+
+273
+01:09:49,332 --> 01:09:59,332
+Tren modeline göre öğrenci atribütleri, öğrenci varlığının atribütleri, numara, numaranın altı çizili yazdık.
+
+274
+01:10:11,155 --> 01:10:21,915
+Altı çizili olarak gösterdiğimiz Primary Key, başka sınıf diagramında yanında yıldız olarak belirtmiştik.
+
+275
+01:10:22,415 --> 01:10:29,435
+Primary Key'in özelliği nedir? Söylemek isteyen var mı? Primary Key'in özelliği?
+
+276
+01:10:32,136 --> 01:10:36,115
+Her entitede olması gerekmektedir hocam.
+
+277
+01:10:37,043 --> 01:10:52,203
+Evet, yani her varlıkta mutlaka bir numara olmalı ve numarada da farklı olmalı, tekrarlanmamalı ve boş olmamalı.
+
+278
+01:10:52,564 --> 01:11:03,084
+Bunu daha sonra ilişkisel veritabanı yönetim sistemlerinin kuralları olarak da veritabanı yönetim sistemi dersinizde göreceksiniz.
+
+279
+01:11:04,084 --> 01:11:07,884
+Şimdi dersler tablosu içinde çizelim bunu.
+
+280
+01:11:26,228 --> 01:11:46,427
+Derslerinde mutlaka bir ders kodu olacak, bir adı olacak ve bir de aynı şekilde bu öğrenci gibi bu ders hangi bölümün dersi başka bölümlere de verilecek olsa bu bölüme kayıtlı olan bir ders olacak.
+
+281
+01:11:46,427 --> 01:11:49,427
+Şurada.
+
+282
+01:12:34,163 --> 01:12:39,483
+Burada da baktığınızda bölümün üstü çizimi olsun, ders kodu.
+
+283
+01:12:43,380 --> 01:12:45,719
+6 çizili olacak ders adı.
+
+284
+01:12:47,139 --> 01:12:50,239
+Şimdi bunların da bağlantılarını yapalım.
+
+285
+01:13:09,492 --> 01:13:25,492
+Şimdi, buradaki şeyleri bir daha hatırlatayım size. Çen notasyonu, bu çizim notasyonu. Az önce ekran paylaştığım dosyada gördüğümüz...
+
+286
+01:13:27,380 --> 01:13:37,039
+ER diyagramlarının yapısı farklı bir notasyondaydı. Aradaki bağlantıyı tek çizgiyle gösterdik. İlişki tablosu da olsa.
+
+287
+01:13:38,163 --> 01:13:56,283
+Varlık tablosu da olsa hepsini dikdörtgenle göstermiştik orada. Çen'de daha farklı. Çen daha çok ilk öğrenme durumunda, eğitim durumunda bu kullanılır. Genellikle de bu yapıyı görebilirsiniz.
+
+288
+01:14:06,163 --> 01:14:10,163
+Pek fazla kullanmayabilirsiniz.
+
+289
+01:14:10,963 --> 01:14:16,663
+Burada vurgulamak için atribütleri de elipslerle gösteriyoruz.
+
+290
+01:14:16,663 --> 01:14:23,163
+Şimdi burada tamamladık bu tabloyu, pardon ER diyagramını.
+
+291
+01:14:25,363 --> 01:14:29,663
+İki tane varlığımız var, öğrenci ve dersler.
+
+292
+01:14:34,163 --> 01:14:49,503
+Mutlaka olması gereken primary keyi öğrenci numarası, adı soyadı var öğrencinin, bir de bölümü var. Bölümlerin üzerini çizgili olarak gösterdik. Bu neyi anlatıyor? Bunlar da birer forenki.
+
+293
+01:14:50,479 --> 01:15:06,479
+Bölüm varlığı diye bir varlık var. Bölüm kodu, bölüm adı, işte bölümün telefon numarası, bölüm başkanı ismi gibi bilgiler olan. Bunlar da...
+
+294
+01:15:06,899 --> 01:15:19,899
+Öğrenci tablosu ve ders tablosunda Horenki olarak bulunacak. Yani başka bir varlığın anahtarı.
+
+295
+01:15:20,467 --> 01:15:37,427
+Başka bir varlıkla bağlantı sağlıyorlar. Öğrenci ve dersler arasında çokluya çoklu bir ilişki var ve bu çokluya çoklu ilişkide aradaki ilişki tablosu notlar.
+
+296
+01:15:41,427 --> 01:15:47,547
+Tanımında olan atribütler, vize ve final notu. Belki devam durumu olabilir.
+
+297
+01:15:49,167 --> 01:15:57,927
+Şimdi notlar tablosu diye bir tablo açtığımız zaman sadece bu iki alan olmayacak tabii.
+
+298
+01:16:01,760 --> 01:16:13,920
+Öğrenci numarası forenki olarak bulunacak. Derslerle arasını sağlayan ders kodu forenki olarak bulunacak.
+
+299
+01:16:13,920 --> 01:16:21,800
+Yani bunları zaten hani şunların arasındaki ilişkiyi gösterdiği için bunları ayrıca elipslerle çizmedik.
+
+300
+01:16:22,380 --> 01:16:26,840
+Öğrenci numarası ders kodu da olacak bu notlar tablosunda diye.
+
+301
+01:16:27,480 --> 01:16:29,760
+Ama hangi numaralı öğrenci?
+
+302
+01:16:29,760 --> 01:16:38,620
+Hangi kodlu dersten aldığı vize ve final notunu belirteceği için bunlar da arada olmalı.
+
+303
+01:16:40,940 --> 01:16:45,800
+Evet, şimdi bunlardan sonra sorusu olan var mı?
+
+304
+01:16:51,572 --> 01:16:52,811
+Sorunuz var mı?
+
+305
+01:17:00,500 --> 01:17:02,539
+Evet.
+
+306
+01:17:06,355 --> 01:17:18,755
+Bu şeyi, ER diyagramını okuyabiliyor musunuz? Başka bir yerde karşılaştığınızda ER diyagramını okuyabilecek misiniz? Ne, ne anlama geliyor?
+
+307
+01:17:20,675 --> 01:17:26,475
+Şimdi bunu gördük. Bunu gördükten sonra tekrar diğer diagrama da bakalım.
+
+308
+01:17:33,140 --> 01:17:37,000
+Tahtayı kapatıyorum. Bununla ilişkili sorunuz var mı?
+
+309
+01:17:38,700 --> 01:17:56,640
+Burada şimdi neler gördük? Primary key, foreign key, attribute, entity, relationship, aradaki ilişki, relation table, bunları gördük.
+
+310
+01:17:57,747 --> 01:18:02,747
+Bunlardan her birinin anlamı yerleşti mi kafanızda?
+
+311
+01:18:06,707 --> 01:18:16,347
+Siz de uygulamalarınızda bu şekilde ER diyagramları hazırlayacaksınız. Yani proje uygulamalarınızda.
+
+312
+01:18:24,435 --> 01:18:27,655
+Hocam, diğer diagramlarını ÇAM modelinde mi yapmalıyız?
+
+313
+01:18:28,456 --> 01:18:35,775
+Yok, diğer gösterdiğim modelde de yapabilirsiniz.
+
+314
+01:18:40,467 --> 01:18:41,207
+Teşekkürler.
+
+315
+01:18:55,380 --> 01:19:01,319
+Mesela şunu görmüştük, böyle de verebilirsiniz, böyle de tanımlayabilirsiniz.
+
+316
+01:19:01,775 --> 01:19:22,495
+Ya da arada çok farklı gösterim şekilleri var. Müşteri, sipariş, burada sayısal zorunluluk, seçimlik değerlerini göstermeyebilirsiniz. Şunun üzerine bir, bu tarafa N yazabilirsiniz. Bire N ilişki, yani sayıları burada gösterebilirsiniz.
+
+317
+01:19:29,775 --> 01:19:36,036
+Diyelim ki N ve M olarak da burada işaretleyip gösterebilirsiniz.
+
+318
+01:19:36,655 --> 01:19:44,195
+Ya da müşteri verir sipariş diye burada aradaki çizgiye pilin adını yazabilirsiniz.
+
+319
+01:19:45,876 --> 01:19:48,956
+Farklı gösterim şekilleri var.
+
+320
+01:19:50,075 --> 01:19:55,095
+Veri tabanı yönetim dersinizde de farklı gösterimleri görebilirsiniz.
+
+321
+01:19:57,119 --> 01:20:07,420
+Aradaki ilişki tipi sayısal olarak birebir, bireen, eneem olur. İki varlığın kayıtları arasında.
+
+322
+01:20:08,015 --> 01:20:20,515
+Arada çokluya çokluysa bunu bire n'e indirgemek için araya bir ilişki tablosu yerleştirmeniz gerekir. Bu da aklınızda olsun.
+
+323
+01:20:20,515 --> 01:20:29,515
+Şimdi ben burada sadece pratik şeyleri söylüyorum. Esas kuralları, ilişkisel veri tabanı...
+
+324
+01:20:30,420 --> 01:20:51,300
+Kurallarını, 12 kuralı vardır ilişkisel veri tabanlarının, ilişkisel modellerin. Bunları daha ayrıntılı olarak göreceksiniz. Ama ilk uygulamanızda kullanabilmeniz için çok pratik bilgiler vermiş oluyoruz bu derste sadece.
+
+325
+01:20:53,779 --> 01:21:11,360
+Veri tabanı dediğimizde ilk aklınıza gelen şey primary key, foreign key. Bunları doğru yerleştirebilmeniz gerekiyor uygulamalarınızda.
+
+326
+01:21:11,360 --> 01:21:19,960
+Bunlarla ilgili tekrar sorayım. Sorunuz var mı bu kavramlarda?
+
+327
+01:21:20,511 --> 01:21:24,511
+yerleşti mi şu anda aklınıza?
+
+328
+01:21:31,475 --> 01:21:46,475
+Evet, o zaman dersi bitirebiliriz bugün için. Önümüzdeki hafta uygulama yapacaksınız. Ondan sonraki haftada konularınıza devam edeceğiz.
+
+329
+01:21:48,595 --> 01:21:54,695
+Evet, bize notlarınızı açıklayamadım henüz. Umarım bu hafta içinde açıklarım.
+
+330
+01:22:06,676 --> 01:22:08,496
+Evet, iyi haftalar diliyorum.
+
+331
+01:22:13,427 --> 01:22:14,427
+İyafet olarak.

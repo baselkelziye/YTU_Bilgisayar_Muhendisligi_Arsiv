@@ -1,0 +1,3631 @@
+1
+00:00:22,739 --> 00:00:27,459
+Hocam merhaba, sunumların sırası belli mi? Bugün isteyen çıkacak o şekilde mi ilerleyin?
+
+2
+00:00:27,579 --> 00:00:32,599
+Bugün bir hemen sizinle sıralama yapacağız. Çünkü herkes bugün sunacak demiştik.
+
+3
+00:00:35,019 --> 00:00:37,219
+Hazır olan grup...
+
+4
+00:00:37,219 --> 00:00:38,379
+Biz hazırız hocam.
+
+5
+00:00:38,879 --> 00:00:40,959
+[öğrenci] mı?
+
+6
+00:00:42,560 --> 00:00:44,679
+Bir dakika, kim şimdi konuşan?
+
+7
+00:00:46,140 --> 00:00:49,479
+Benim hocam [öğrenci] ve [öğrenci] var grubumuzda.
+
+8
+00:00:49,908 --> 00:00:51,647
+Tamam, bir dakika.
+
+9
+00:01:08,915 --> 00:01:14,155
+Şimdi proje grupları listesi karşımda.
+
+10
+00:01:16,115 --> 00:01:29,155
+Grup 1 sundu, grup 2 sundu, grup 5 sundu, grup 3, grup 4 ve grup 8. Siz kaçıncı grupsunuz hatırlıyor musunuz?
+
+11
+00:01:36,531 --> 00:01:38,951
+[öğrenci], grup 6 mı?
+
+12
+00:01:40,491 --> 00:01:41,871
+Öyle olması lazım hocam.
+
+13
+00:01:41,891 --> 00:01:48,051
+[öğrenci], [öğrenci], [öğrenci], [öğrenci] değil mi?
+
+14
+00:01:48,591 --> 00:01:49,351
+Aynen hocam.
+
+15
+00:01:49,671 --> 00:01:52,292
+Evet, o zaman şimdi sizi dinleyelim.
+
+16
+00:01:55,091 --> 00:01:59,531
+Ondan sonra o zaman...
+
+17
+00:02:00,212 --> 00:02:00,891
+Bir dakika.
+
+18
+00:02:01,451 --> 00:02:02,811
+Hocam grup 7 de hazır.
+
+19
+00:02:03,811 --> 00:02:04,091
+Tamam.
+
+20
+00:02:04,391 --> 00:02:09,151
+Grup sıralamayı şöyle yapıyorum.
+
+21
+00:02:09,271 --> 00:02:10,031
+Grup 6.
+
+22
+00:02:13,072 --> 00:02:15,432
+Ondan sonra grup 7.
+
+23
+00:02:18,271 --> 00:02:20,891
+Sonra grup 10 mu mesaj atmıştı?
+
+24
+00:02:21,831 --> 00:02:23,031
+Evet hocam, biz buradayız.
+
+25
+00:02:33,972 --> 00:02:35,632
+Sonra da grup 12.
+
+26
+00:02:43,156 --> 00:02:48,475
+Evet, şimdi grup 6'yı dinliyoruz. Ben böyle de kişileri yazayım.
+
+27
+00:02:57,843 --> 00:03:11,923
+Evet, şimdi grup 6, sonra grup 7, sonra 10, sonra 12 demişim, sonra da 11. Arada sizi atlamışım. Sonra grup 11.
+
+28
+00:03:19,795 --> 00:03:22,055
+Grup 6 başlayabilir.
+
+29
+00:03:23,195 --> 00:03:28,475
+Tamamdır. Biz Uber sistemi tasarladık. Sistemimizin adı RIDIS.
+
+30
+00:03:31,675 --> 00:03:39,436
+Projeyi rapor üzerinden anlatacağız. İlk önce ben genel olarak projeden bahsedeceğim. Önünceleme raporunun üzerinden geçeceğim.
+
+31
+00:03:39,975 --> 00:03:44,795
+Diğer arkadaşım fizibilite raporlarından bahsedecek. Diğer arkadaşımız da diagramlar üzerinden geçecek.
+
+32
+00:03:46,355 --> 00:04:01,415
+Organizasyon şemamız bu şekilde. Üst yönetimde müşteri aynı zamanda proje sahibimiz var. Bir tane proje yöneticimiz var. Bilgi teknolojileri departmanında Java geliştiricilerimiz ve sistem analistimiz var. Bir tane pazarlama departmanımız, bir tane de test departmanımız var.
+
+33
+00:04:02,900 --> 00:04:18,340
+İlk toplantıda müşteriyle birlikte ekibimiz görüştüler. Proje hedeflerini ve gereksinimlerini konuşuldu. Önceleme raporu oluşturuldu. Bir sonraki toplantıda da fizibilite çalışmalarının yapılması planlandı.
+
+34
+00:04:20,360 --> 00:04:28,860
+Önceleme raporunda genel olarak genel soruların üzerinden geçilerek genel bir sistem tasarımı yapıldı.
+
+35
+00:04:32,115 --> 00:04:34,615
+Bu şekilde fizibilite raporlarına geçebiliriz.
+
+36
+00:04:38,548 --> 00:04:58,548
+Evet, fizibilite raporu kısmını ben anlatacağım. Fizibilite raporları projenin olabilirlerini araştırılması için aşağıdaki fizibilite çalışmaları yapılmış ve raporlanmıştır. Öncelikle yasal fizibilitesi önemli, yasalara uygun olması önemli. Türkiye'de Uber biliyorsunuz 2020 yılında yasaklanmıştı, iptal edilmişti. Şu anda...
+
+37
+00:04:59,103 --> 00:05:07,303
+Uber benzeri bir uygulamaya getirilen bir yasal kısıtlama mevcut olmadığı için uygulama yasal fizibiliteye uygun bir şekilde oluyor.
+
+38
+00:05:10,083 --> 00:05:17,203
+Yönetim fizibilitesine geldiğimizde yolculuk trendleri, müşteri tercihleri ve arz-talep dengesini analiz etmemiz gerekiyor.
+
+39
+00:05:17,303 --> 00:05:20,583
+Buna göre müşteri iletişim kurulmalı, geri bildirim alınmalı.
+
+40
+00:05:20,603 --> 00:05:22,203
+Diğer fizibiliteleri geçebilirsiniz.
+
+41
+00:05:22,867 --> 00:05:23,707
+Tamam hocam.
+
+42
+00:05:23,908 --> 00:05:27,967
+Bir fizibilite, alternatif fizibilite matrisiniz varsa onu göreyim.
+
+43
+00:05:29,528 --> 00:05:30,888
+Yok hocam, onu oluşturmadık.
+
+44
+00:05:33,127 --> 00:05:36,788
+Burada gider kalemlerini görüyorsunuz hocam, arkadaşlar.
+
+45
+00:05:39,947 --> 00:05:43,927
+Başa baş nokta analizi, burada kaç kilometrede, kaç sürede.
+
+46
+00:05:43,927 --> 00:05:47,807
+Şimdiye kadar [öğrenci]'le ve [öğrenci] konusu değil mi?
+
+47
+00:05:48,467 --> 00:05:49,107
+Evet hocam.
+
+48
+00:05:49,607 --> 00:05:49,868
+Tamam.
+
+49
+00:05:54,612 --> 00:05:57,092
+Diğer fizibiliteleri atlıyoruz hocam değil mi?
+
+50
+00:05:57,172 --> 00:05:57,352
+Evet.
+
+51
+00:05:59,872 --> 00:06:01,612
+Burada GARP diagramı var.
+
+52
+00:06:05,651 --> 00:06:10,491
+Buralarda bende değil mi?
+
+53
+00:06:12,611 --> 00:06:13,012
+Evet.
+
+54
+00:06:13,171 --> 00:06:13,651
+[öğrenci].
+
+55
+00:06:14,651 --> 00:06:16,431
+Toplantı raporlarınız mı?
+
+56
+00:06:17,692 --> 00:06:18,331
+Evet hocam.
+
+57
+00:06:19,651 --> 00:06:19,951
+Evet.
+
+58
+00:06:21,431 --> 00:06:27,651
+Burada yine tasarım ilkelerinin kullanıcı deneyiminin tartışılması, geliştirme sürecinin planlanması üzerine.
+
+59
+00:06:28,048 --> 00:06:39,567
+Fizibilite raporlarının uygun olduğuna karar verilip kapsam tanımı yapıldı. Ondan sonra diagramların oluşturulmasına vesaire karar verildi ama bazı diagramlarımız eksik yine de.
+
+60
+00:06:42,740 --> 00:06:53,920
+Burada sonrasında bütçe kararlaştırıldı. 200 bin liralık bir bütçe ile Uber benzeri bir taksi hizmeti sunulabileceği kararlaştırıldı. Özellikleri de burada yazıyor.
+
+61
+00:06:54,060 --> 00:06:59,320
+Siz var olan Uber sistemi incelediniz mi? Nereden incelediniz?
+
+62
+00:07:01,240 --> 00:07:02,260
+Ne soruyoruz hocam?
+
+63
+00:07:02,700 --> 00:07:05,440
+Yani var olan Uber sistemi var ya.
+
+64
+00:07:06,280 --> 00:07:06,880
+Evet.
+
+65
+00:07:07,379 --> 00:07:14,240
+Onu incelediniz mi? Sizin yapacağınızda farklılıklar, şeyler ne olacak?
+
+66
+00:07:18,899 --> 00:07:24,119
+Onlardan bir sınavı yapacaksınız yoksa ondan farklı bir şey mi olacak?
+
+67
+00:07:24,939 --> 00:07:40,399
+Hocam ben açıkçası patentlere baktım. Birçok patent alınmıştı. Farklı bir şey yapmak imkansız gibi bir şeydi. O yüzden ona çok benzer bir şey oldu maalesef. O konuda orijinal bir şey yapamadık.
+
+68
+00:07:41,843 --> 00:07:55,144
+Ne bileyim, mesela o ER sistemden farklı, biz sadece daha dar bir çevreye şey yapacak, daha farklı bir şey yapacağız diyebilirsiniz. Farklı ne olacak, evet.
+
+69
+00:08:00,244 --> 00:08:01,484
+Diagramları geçelim mi?
+
+70
+00:08:01,944 --> 00:08:02,223
+Evet.
+
+71
+00:08:02,463 --> 00:08:08,364
+Tamamdır, diagramlar bende. Merhabalar hocam, [öğrenci] ben. UML, re-sequence diagramlarını ben sunacağım.
+
+72
+00:08:08,819 --> 00:08:22,620
+UML diyagramımızda iki tane classımız var sadece. Taksi ve Taksi App GUI classlarımız. Aslında bizim birçok modülle programlama yapmaya başladık ama daha sonunda bu modüllerin hepsini...
+
+73
+00:08:22,620 --> 00:08:24,699
+Programınızı gösterdiniz mi Elçin Hanım'a?
+
+74
+00:08:26,099 --> 00:08:27,519
+Evet hocam ben göstermeyim.
+
+75
+00:08:28,319 --> 00:08:28,899
+Aynen tamam.
+
+76
+00:08:29,295 --> 00:08:37,895
+Birçok modülle başladık aslında ama daha sonra bunların hepsini B-Class'a sığdırabiliyoruz dedik. Efficiency bakımından B-Class'da hepsini takside topladık.
+
+77
+00:08:40,375 --> 00:08:41,675
+Taksi ve app...
+
+78
+00:08:41,675 --> 00:08:46,895
+Peki, UML diyagramı dediğinize göre siz nesneye yönelik hazırladınız.
+
+79
+00:08:47,536 --> 00:08:48,056
+Evet hocam.
+
+80
+00:08:49,415 --> 00:08:51,576
+Use case diagramımıza bir daha bakabilir miyim?
+
+81
+00:08:52,816 --> 00:08:54,175
+Hangi diyagramımıza hocam?
+
+82
+00:08:54,375 --> 00:08:56,135
+Use case diagramımız.
+
+83
+00:08:57,683 --> 00:09:01,503
+Sequence diagramı. Use case diagramınız var mı?
+
+84
+00:09:02,163 --> 00:09:06,604
+Use case yok diyebiliyorum ben galiba. Analiz sırasında, analizi neyle yaptınız?
+
+85
+00:09:09,283 --> 00:09:12,024
+Yok hocam, use case. Analiz sırasında nasıl çalıştınız?
+
+86
+00:09:15,124 --> 00:09:19,423
+Sekuz artık yazılımın nasıl hareket ettiğini, tasarlandığını gösteriyor.
+
+87
+00:09:21,423 --> 00:09:23,743
+Use case diagramınız yok mu?
+
+88
+00:09:24,532 --> 00:09:34,272
+Yok hocam, 100 case diagramını galiba şey, şey, açıklama olarak değil mi?
+
+89
+00:09:34,272 --> 00:09:36,912
+Veri akış diyagramları yerine mi yapacaktık?
+
+90
+00:09:37,352 --> 00:09:37,572
+Niye?
+
+91
+00:09:37,572 --> 00:09:45,852
+Yok yok, UML diyagram, ya derste böyle bir açıklama vardı galiba, şeyden esneye yönelik, UML diyagram olduğu zaman 100 case diagrama ihtiyaç yok diye.
+
+92
+00:09:46,711 --> 00:09:46,991
+Yok.
+
+93
+00:09:48,371 --> 00:09:54,491
+Yapısal yaklaşım yapıyorsanız, veri akış diyagramı varsa use case olmayacak.
+
+94
+00:09:56,251 --> 00:09:57,131
+Açıklı olmaz öyle.
+
+95
+00:09:59,131 --> 00:10:00,831
+O zaman bizi yanlış yapmış.
+
+96
+00:10:00,851 --> 00:10:03,651
+Ya veri akış diyagramı ya use case diyagramı olacak.
+
+97
+00:10:04,571 --> 00:10:08,572
+Biz veri akış diyagramı yerine UML ve sequence yapabiliyoruz.
+
+98
+00:10:08,572 --> 00:10:13,391
+İşte bunlar tasarımı gösteriyor. Analizi görmek istiyorum.
+
+99
+00:10:13,812 --> 00:10:18,711
+Yok hocam, bizde o zaman bir yanlış anlaşılma durumu olmuş. UML ve sequels tiyatramlarımız var.
+
+100
+00:10:20,052 --> 00:10:20,731
+Evet.
+
+101
+00:10:22,192 --> 00:10:25,111
+Yani dediğim gibi UML diyagrama çıkabilir miyiz?
+
+102
+00:10:27,668 --> 00:10:38,028
+Teşekkür ederim. Dediğim gibi UML diyagramımızda taksi ve taksi hep bu şeylerimiz var. Taksi de şey olarak, metod olarak birçok metod.
+
+103
+00:10:38,028 --> 00:10:42,507
+Tamam, veri akış diyagramımız yok değil mi? Veri akış diyagramımız da yok.
+
+104
+00:10:43,548 --> 00:10:44,487
+Yok hocam, benim bilim.
+
+105
+00:10:45,408 --> 00:10:52,187
+Hocam, veri akış yerine UML ve sequence yapmamız gerektiğini düşünmüştük, yani öyle zannetmiştik ve o ikisi var sadece.
+
+106
+00:10:52,487 --> 00:10:52,707
+Tamam.
+
+107
+00:10:54,447 --> 00:10:54,788
+Aynen.
+
+108
+00:10:56,403 --> 00:10:59,683
+Geçebilirsiniz.
+
+109
+00:11:01,223 --> 00:11:02,663
+Yani, sequence diyagramı da.
+
+110
+00:11:02,903 --> 00:11:09,283
+Tamam, çizmişsiniz. Bir tek bir diyagramda mı hepsini gösterdiniz? Bunlar da toplantı raporlarınız.
+
+111
+00:11:09,283 --> 00:11:12,723
+Evet hocam, bu taksi ve şurada et taksi olarak iki tane.
+
+112
+00:11:13,244 --> 00:11:13,764
+Geçebilirsiniz.
+
+113
+00:11:14,463 --> 00:11:16,343
+Üçüncü toplantı raporumuz bu da.
+
+114
+00:11:18,484 --> 00:11:21,104
+Müşteri değerlendirmelerini mi buna göre yaptınız?
+
+115
+00:11:22,388 --> 00:11:40,328
+Hocam, üçüncü toplantı raporunda prototip sunumu yapılmasına karar verildi. Müşteri değerlendirmeleri daha sonra, ikinci toplantıda prototip yaptık. Daha sonra müşteri değerlendirmelerini gözden geçirdik burada. Şurada bir Google Forms oluşturduk.
+
+116
+00:11:40,692 --> 00:11:52,372
+Müşteri değerlendirmelerine göre ve bizim kendi müşterimizin verdiği geri bildirimlere göre prototipi geliştirme kararı aldık 3. toplantıda.
+
+117
+00:12:00,532 --> 00:12:05,552
+Test planı oluşturuldu. Bu üçüncü toplantıda oluşturulması kararlaştırıldı.
+
+118
+00:12:13,620 --> 00:12:22,180
+Daha sonra dördüncü toplantımızda da test süreçleri bitti. Yani son aşamaya gelindi. Test süreçleri de değerlendirildi.
+
+119
+00:12:23,000 --> 00:12:26,920
+Ortaya çıkan tüm problemlerin giderildiği tüm testlerin olumlu sonuçlarında açıklandı.
+
+120
+00:12:29,060 --> 00:12:32,180
+Son teslimatı bu dördüncü toplantıda gerçekleştirdik.
+
+121
+00:12:34,019 --> 00:12:35,740
+Evet, teşekkürler.
+
+122
+00:12:36,840 --> 00:12:37,840
+Biz teşekkür ederiz.
+
+123
+00:12:38,019 --> 00:12:39,160
+Biz teşekkür ederiz hocam.
+
+124
+00:12:40,436 --> 00:12:46,436
+Şimdi grup yediyi dinliyoruz.
+
+125
+00:12:48,035 --> 00:12:49,176
+Merhaba hocam.
+
+126
+00:12:50,495 --> 00:12:50,676
+Evet.
+
+127
+00:12:51,216 --> 00:12:52,096
+Ekran paylaşayım.
+
+128
+00:12:52,355 --> 00:12:53,915
+Burada mı? [öğrenci].
+
+129
+00:12:54,475 --> 00:12:55,375
+Ben buradayım hocam.
+
+130
+00:12:55,696 --> 00:12:57,255
+[öğrenci].
+
+131
+00:12:57,515 --> 00:12:57,995
+Buradayım.
+
+132
+00:12:59,076 --> 00:13:00,495
+[öğrenci].
+
+133
+00:13:00,515 --> 00:13:01,436
+Buradayım, buradayım.
+
+134
+00:13:02,495 --> 00:13:03,296
+[öğrenci].
+
+135
+00:13:03,775 --> 00:13:04,355
+Buradayım hocam.
+
+136
+00:13:04,975 --> 00:13:06,155
+Tamam. Atahan.
+
+137
+00:13:06,676 --> 00:13:07,076
+Buradayım.
+
+138
+00:13:08,115 --> 00:13:11,855
+Sesim geldi mi? Evet, geldi. Evet, şimdi devam edelim.
+
+139
+00:13:13,675 --> 00:13:15,975
+Hocam ekran geliyor herhalde. Evet.
+
+140
+00:13:17,436 --> 00:13:24,995
+Merhaba hocam, biz vatandaş bilgi sistemi geliştirdik bu dönem projesinde. Şöyle rapor üzerinde anlatacağız biz de.
+
+141
+00:13:25,615 --> 00:13:30,395
+Raporun içeriklere baktığım zaman öncelikle projemiz hakkında bir ön bilgi.
+
+142
+00:13:30,964 --> 00:13:48,423
+Ardından önceme ve fizibilite analizleri, ardından sistem analizi kısmı, tasarım kısmı, gerçekleşme ve test kısmı. Biz aslında nesneye dayalıma, nesne yönelik bir tasarım yapmıştık ama bizde de bu hocam bu use case, UML biraz sıkıntı olmuş orada. Bizde de tüm diagramlar var.
+
+143
+00:13:49,364 --> 00:13:50,864
+O şekilde yaptık.
+
+144
+00:13:51,303 --> 00:13:52,844
+Veri akış diyagramınız var mı?
+
+145
+00:13:53,063 --> 00:13:54,084
+O da var hocam.
+
+146
+00:13:54,744 --> 00:14:00,264
+Tüm hepsini yaptık ama galiba sadece 100 kez yapsak da oluyormuş galiba öyle dediniz.
+
+147
+00:14:00,504 --> 00:14:05,823
+Yok, şimdi siz nasıl hazırladınız yazılımınızı?
+
+148
+00:14:06,192 --> 00:14:08,251
+Hocam, yazılım Java üzerinden yaptık.
+
+149
+00:14:08,631 --> 00:14:11,152
+Nesne yönelik programlamayı.
+
+150
+00:14:11,152 --> 00:14:11,451
+Evet.
+
+151
+00:14:11,971 --> 00:14:18,432
+O zaman use case, yani veri akış diyagramı da çizseniz olur ama sistem alakalı.
+
+152
+00:14:18,432 --> 00:14:19,172
+Bu şekilde yaptık.
+
+153
+00:14:20,192 --> 00:14:22,491
+Siz veri akış diyagramlarınızı çizmişsiniz.
+
+154
+00:14:22,491 --> 00:14:24,932
+Onu da çizdik, use case var, bir de UML'lerimiz var.
+
+155
+00:14:24,932 --> 00:14:26,772
+Yapı diyagramı da çizmişsiniz.
+
+156
+00:14:28,403 --> 00:14:29,663
+Evet, bir de UML var.
+
+157
+00:14:29,903 --> 00:14:33,223
+Yani her şey var. Bir tek bir şey yok.
+
+158
+00:14:33,264 --> 00:14:36,043
+Evet, tamam. Teşekkürler. Devam edin.
+
+159
+00:14:36,524 --> 00:14:39,803
+Ön bilgi kısmında sistemimizin adı Vatandaş Bilgi Sistemi.
+
+160
+00:14:40,323 --> 00:14:44,024
+Bu sistemde vatandaşların kişisel verilerini tek bir uygulamada görüntülememelik sağlıyoruz.
+
+161
+00:14:44,603 --> 00:14:48,683
+Giriş yapmak için TC kimlik numarası gerekiyor vatandaşın. Bunu da tabi tutuyoruz zaten.
+
+162
+00:14:50,163 --> 00:14:52,624
+Modüllerimizde beş tane ana modülümüz var.
+
+163
+00:14:53,268 --> 00:15:14,768
+Alt modülümüz var. Vergi sisteminde vatandaşımız kayıtlı vergilerini görüntüleyebiliyor ve bunları ödemesini yapabiliyor. Askerlik sistemi modülünde askerlik durumunu görüntüleyebiliyor ve uygun olduğu takdirde müracaat yapabiliyor. Yani tehecil bozma işlemi. İkametgah sisteminde adresini görüntüleyebiliyor ve bu adresine değişiklik yapabiliyor.
+
+164
+00:15:15,283 --> 00:15:23,043
+Eğitim sisteminde okumakta olduğu veya bitirdiği okulları lise, üniversite olarak görüntülebiliyor ve öğrenci belgesi sorgulaması yapabiliyor.
+
+165
+00:15:23,543 --> 00:15:26,584
+Varlık sisteminde ise sahip olduğu varlıkları görüntülebiliyor.
+
+166
+00:15:27,584 --> 00:15:36,783
+Öncelikle burada toplantı raporları kısmına geçtiğimizde müşteril yaptığımız tüm toplantının tarihleri ve kısa olarak anlatılan detayları var.
+
+167
+00:15:37,604 --> 00:15:42,864
+İlk toplantıda öncelikle sistemin genel yapısını ve alt modülleri hangi alt modüllerin olacağını belirledik.
+
+168
+00:15:43,231 --> 00:15:50,211
+Ardından bunun üzerine bir son toplantıda bu sistemi detaylandırdık, alt modelleri ve genel yapısını.
+
+169
+00:15:51,351 --> 00:15:58,312
+Sonrasında analizler yapıldıktan sonra, bunu zaten Gantt diagramında birazdan [öğrenci] anlatacak, daha detaylı aşamaları var.
+
+170
+00:15:59,052 --> 00:16:01,951
+Her toplantıyı genelde her bir işlem sonunda yapmaya çalıştık.
+
+171
+00:16:02,292 --> 00:16:10,792
+Üçüncü toplantıda bu detaylarımız sistem yapısı müşterinin onaya sunulduktan sonra gerçekleştirme aşamasına, geliştirme aşamasına geçtik.
+
+172
+00:16:12,612 --> 00:16:21,992
+Sonrasındaki toplantıda ise geliştirdiğimiz uygulaması bir prototipini müşteriye gösterdik ve müşterinin istekleri doğrultusunda değişiklikler yapmaya başladık.
+
+173
+00:16:22,612 --> 00:16:28,272
+En sonda da uygulamayı yaptıktan sonra müşteriye son halini gösterip bir sorun yapamadığı hakkında geri dönüş aldık.
+
+174
+00:16:28,851 --> 00:16:54,532
+Proje ekip yapısına baktığımız zaman iki tane grup halinde yapmaya çalıştık bunu. İki grubumuz da şu şekilde Sistem Analizi ve Tasarımı ve Uygulama Geliştirme olarak ayrılıyor. Sistem Analizi kısmında Sistem Analizi ve Proje Müdürü var. Uygulama Geliştirme de Veri Tabanı ve Yazılımcı kısmı var. Burada grupların [öğrenci], [öğrenci] ve [öğrenci] kısmında. [öğrenci], Ben ve [öğrenci] yine Sistem Analizi kısmında görev aldık.
+
+175
+00:16:56,115 --> 00:16:58,815
+Burası Gant diagram, burada [öğrenci] bunu anlatacak.
+
+176
+00:16:59,875 --> 00:17:07,155
+Evet hocam, Gant diagramına geldiğimiz zaman da [öğrenci] arkadaşımız da anlattığı gibi, biz iki kısmı ayrıdık, uygulama geliştirme ve sistem analizi tasarımına.
+
+177
+00:17:07,635 --> 00:17:12,056
+İki farklı grup şekilde çalıştık fakat bütün bu süreçleri birbirimize bilgilendirdik.
+
+178
+00:17:12,756 --> 00:17:19,076
+Onun sayesinde de bu GAN şemasını oluşturduk. İlk kısım analiz kısmı, Mart'ın 26'sında başladık, Nisan'ın birinde bitti.
+
+179
+00:17:19,176 --> 00:17:27,536
+Fizibilite çalışması, ihtiyaçların verilenmesi, proje ekip yapısının verilenmesi ve analizin bitimindeki toplantıyı burada görüyoruz.
+
+180
+00:17:28,016 --> 00:17:32,615
+Ardından tasarım süreci başladı, birinde bitmişti ilk.
+
+181
+00:17:33,364 --> 00:17:46,364
+Toplantımız, yani ilk süreçin toplantısı. Ardından bir ara verdik. Devamında ön tasarım, ayrıntılı tasarım, yapı diagramları, ER diyagramları ve tasarımın bitiminin toplantısını burada görüyoruz.
+
+182
+00:17:46,364 --> 00:17:49,084
+Bunların hepsini süreçler haline tek tek yaptık.
+
+183
+00:17:50,451 --> 00:18:08,211
+Baklava gibi işaretlerde yani bir süreç bittikten sonra öbür sürece başlandığını gösteriyor. Üçüncü kısım geliştirme ve test aşaması veri tabanını oluşturma, önünüz geliştirme, veri tabanı bağlantısı, sistem testi ve kullanıcı testinin tarihsel sürecini burada görüyoruz tekrardan. O da ne zaman başlamıştı?
+
+184
+00:18:14,483 --> 00:18:23,443
+16 Mayıs'a kadar gibi süreçti. En sonunda da zaten projenin sonu. Proje teslim toplantısı yaptık hep birlikte. Böyle de bitti. Bu şekilde de.
+
+185
+00:18:26,963 --> 00:18:28,884
+Fizibilite maddesine geçiyorum hocam.
+
+186
+00:18:29,332 --> 00:18:57,332
+Burada tek tek her biri için ayrı ayrı yazmak yerine fizibilite maddesi üzerinden seçtiğim sistemin analizini yapmayı tercih ettim. Daha okunaklı olur diye. Üç tane sistem öderimiz vardı proje başında. Bunlardan ilkinde ilkiniz kullanmayı tercih ettik. Java kullanmayı ve SQL Server kullanmayı tercih ettik. Ekonomik fizibilite olarak ben buraya kullanacağımız yazılımların ücretlerini yazmayı tercih ettim ve burada ücretsiz iki yazılım olduğu için ekonomik olarak bir sıkıntı bize yarattı.
+
+187
+00:18:57,332 --> 00:19:21,292
+Zaman fizibilite zaten Gant diagramında da gördüğünüz gibi 58 gün olarak sürüyor ve sürmüştü. Sosyal fizibilite ve yasal fizibilite açısından bir sıkıntı yok. Burada yasal fizibilitede vatandaşın bilgilerini tutacağımız için o biraz gizlilik önemliydi. O KVKK kapsamında koruma sağlayacağız şeklinde konuşma yaptık müşteriyle. Bu bu şekilde.
+
+188
+00:19:21,940 --> 00:19:40,480
+Veri akış diyagramına geçersek, burada taslak veri akış diyagramımız var. Taslak olarak baktığımız zaman vatandaşımız var ve vatandaş bilgi sistemi var. Burada vatandaş sisteme kişisel bilgilerini, güncellenecek veri seçimini ve modül seçimini yolluyor. Bilgi sisteminden de modül bilgisi olarak vatandaşa geri dönüşü sağlıyoruz.
+
+189
+00:19:40,980 --> 00:19:50,060
+Birinci düzey veri akış diyagramına baktığımız zaman burada vatandaşın gerçekleştirebileceği işlemler üye girişi, modül görüntüleme ve modül alt modül işlemlerimiz var.
+
+190
+00:19:50,740 --> 00:20:02,279
+Burada üye girişi için vatandaşımız TC kimlikle olsun yolluyor ve vatandaşlar data beyazından bakıldıktan sonra üye girişi kısmında üye girişi onayı vatandaşa gönderilmiş oluyor.
+
+191
+00:20:02,736 --> 00:20:09,956
+Modül görüntülemede yine vatandaşımız modül seçimini yolluyor ve database'den modül ismini kontrol edikten sonra modül bilgisi geri dönüp vatandaş iletiliyor.
+
+192
+00:20:10,855 --> 00:20:19,036
+Alt modül işlemlerinde vergi ödemede vatandaş vergi seçimini yaptıktan sonra yine vergi ve database'den ödenecek tutağa dönerek ekrana bastırılmış oluyor, görüntülenmiş oluyor.
+
+193
+00:20:19,776 --> 00:20:21,176
+Askerlik kısmında tevkili bu.
+
+194
+00:20:21,196 --> 00:20:23,615
+Birinci düzey veri akış diyagramı var.
+
+195
+00:20:23,956 --> 00:20:26,256
+Altta şey var, daha detaylı tek tek onları aşık.
+
+196
+00:20:27,776 --> 00:20:33,836
+Birinci düzeyin daha detaylısı olan ikinci düzey ile farkı nedir?
+
+197
+00:20:34,420 --> 00:20:43,420
+Hocam, birinci düzeyde mesela üye girişi kısmı var vatandaşın yapabileceği. Burada sadece bu metodun değil, bu kısmın girişleri…
+
+198
+00:20:44,060 --> 00:20:46,420
+Bütün sistemi birinci düzeyde görebiliyoruz.
+
+199
+00:20:47,160 --> 00:20:51,300
+Evet, görebiliyoruz ama alt işlemlerin tek tek şeylerini burada görebiliyoruz.
+
+200
+00:20:51,400 --> 00:20:59,360
+Her birinin daha fazla detayı varsa ikinci düzeyde görüyoruz. Evet, geçebilirsiniz hepsini. Şimdi tasarıma geçelim.
+
+201
+00:20:59,360 --> 00:21:00,360
+Tamam.
+
+202
+00:21:01,236 --> 00:21:07,736
+Burada göreceğim bir use case var, use case kullanıyorum senaryosu. Burada yine vatandaşımız var, üye girişi, modül bilgisi görüntüleme.
+
+203
+00:21:08,316 --> 00:21:09,556
+Hay use case de yaptınız.
+
+204
+00:21:09,836 --> 00:21:16,395
+Evet, onu da yaptık. Bilmiyorum yani, orada biraz sıkıntı oldu galiba, doğarın tam emin değilim ama. Yani şey olarak.
+
+205
+00:21:16,415 --> 00:21:19,355
+Evet, yani bir genel bir şey yapmışsınız. Baya bir her şey.
+
+206
+00:21:19,355 --> 00:21:23,016
+TACRA Vatandaş değil de, başka birileri de var herhalde burada.
+
+207
+00:21:24,336 --> 00:21:24,855
+Yok, burada.
+
+208
+00:21:24,996 --> 00:21:28,216
+Nereye diyecek vergiyi? Bir görevli de var, değil mi?
+
+209
+00:21:28,852 --> 00:21:29,692
+Nerede hocam?
+
+210
+00:21:31,252 --> 00:21:34,752
+Şimdi, yani bir admin ya da bir görevli bir şey olmadı.
+
+211
+00:21:34,752 --> 00:21:40,252
+Hocam, o şöyle, admin sistemi yapmayı düşünün fakat şurada yazmıştım, onu atladım herhalde.
+
+212
+00:21:40,971 --> 00:21:47,252
+Müşteriyle yapılan konuşma sonrasında admin taneliği gerek olmadığı şey yaptık ama hani ileriki eğer ki daha çok...
+
+213
+00:21:47,252 --> 00:21:49,252
+Yok, yani paneli olmasa da...
+
+214
+00:21:49,460 --> 00:22:01,240
+Panel yok, sizin sisteminizde yok ama vatandaş bu sistemde vergi ödemesi falan yapıyor. Bunu takip edecek birisi var sonuçta.
+
+215
+00:22:01,300 --> 00:22:06,500
+Evet, bu alt modüllerin her birinde ayrı bir sistem olabilir tabii. Bunlar da yük yapma sistemler olarak değerlendirilebilir.
+
+216
+00:22:06,500 --> 00:22:08,180
+Tamam, devam edin tasarıma.
+
+217
+00:22:09,299 --> 00:22:16,980
+Bu kısımdan devam edelim. Yapı diagramı. Sistem yapı diagramı var hocam. Bunu kısaca açıklayayım zaten. Uzun bir şey değil. Görebiliyorum. Aşağıya doğrayayım.
+
+218
+00:22:17,360 --> 00:22:23,860
+Tamam. Geçeyim mi hocam bunu? Evet geç. O zaman gerçekten çok şeymiş, sadeymiş.
+
+219
+00:22:23,860 --> 00:22:31,980
+Evet biraz sadeymiş. UML diagramını hocam kodlama kısmında [öğrenci], [öğrenci] ve [öğrenci] üçünden biri veya üçü anlatabilir.
+
+220
+00:22:32,460 --> 00:22:34,460
+Ben alabilirim başlangıç olarak.
+
+221
+00:22:35,124 --> 00:22:44,804
+Bu kadar fazla fonksiyon, bu kadar fazla şey görünse de işler o kadar karışık değil. Sadece bütün iş aslında vatandaş üzerinden yürüdüğü için malum.
+
+222
+00:22:45,844 --> 00:22:52,003
+Bunun fiyatlarını düzenlemek için yapılan çok fazla fonksiyonlar main bununla etkileşmeye geçiyor.
+
+223
+00:22:58,804 --> 00:23:13,483
+O şekilde işliyor sistem. Aşağıda da görebildiğimiz gibi diğer modüllerin detayları var. Nesneye yönelik olduğu için her birinin farklı sınıfı var. Ve onların da fonksiyonlarını görebiliyoruz. Bunun hakkında başka bir şey söylemek istiyorsa hatana veriyorum sözü.
+
+224
+00:23:21,268 --> 00:23:23,488
+Zatan diye konuşmaya sesi gelmiyor şu an.
+
+225
+00:23:25,448 --> 00:23:26,748
+Buradayım, devam edebiliriz.
+
+226
+00:23:26,848 --> 00:23:27,308
+Evet, tamam.
+
+227
+00:23:28,208 --> 00:23:29,488
+UML bu şekildeydi.
+
+228
+00:23:29,608 --> 00:23:33,548
+ER diyagramı, veri tabanı kısmında [öğrenci] görev aldı, o anlatabilir.
+
+229
+00:23:34,228 --> 00:23:49,748
+Evet, ER diyagramında 5 adet tablo var. Vatandaş tablasında genel bilgiler tutuluyor. İsim, say isim, cinsiyet, ikamet, hükâ, doğum tarihi gibi. Daha sonra okuduğu lise, üniversite bölümü durumları vs. gibi bilgiler eğitim bilgileri tablasında tutuluyor.
+
+230
+00:23:49,748 --> 00:24:00,428
+Yine ödediği vergilerin isimleri ve yıllık ücretleri vergiler tablasında. Sahip olduğu varlıklar tablasında ve askerlikle ilgili bilgileri de bu askerlik tablasında tutuluyor.
+
+231
+00:24:02,228 --> 00:24:08,048
+TCNA olduğu için vatandaş tablosundan diğer tablolara TCNA kullanılara geliştiriyor.
+
+232
+00:24:10,588 --> 00:24:11,948
+Tamam, bu şekildeydi.
+
+233
+00:24:12,928 --> 00:24:17,368
+Gerçekleştirme kısmında hocam, burada veri tabanı ve kodlamanın kısaca bir açıklamaları var.
+
+234
+00:24:17,448 --> 00:24:20,508
+Bunu da yine söyleyebiliriz [öğrenci] veri tabanı kısmına.
+
+235
+00:24:20,915 --> 00:24:30,555
+Veri tabanında Postgre Esker kullandık. Yine tabloları ayırılması gerektiği gibi ayırdık ve gerekli sınıflandırmaları, yani konstretleri de tanımladık.
+
+236
+00:24:31,995 --> 00:24:36,215
+Podlama kısmında [öğrenci] açıklayabilir.
+
+237
+00:24:37,475 --> 00:24:44,475
+Konuşabilirim ben. Programı Java üzerinden yaptık. Java nesne yönelinde bir dili olduğu için çoğu işlemin kolay olacağını düşündük.
+
+238
+00:24:45,715 --> 00:24:56,655
+Müşteri değerlendirmesi kısmına da bağlarsak, kullanıcı açısından kolay kolay bir program yaptık. Yani kullanıcı bir ek yazılım yükleme gerek kalmaksızın kolay bir şekilde modülü, programa erişip bütün modülleri kullanılabiliyor.
+
+239
+00:24:57,995 --> 00:25:01,355
+Evet, programınızı Erçin Hanım'a gösterdiniz değil mi?
+
+240
+00:25:01,795 --> 00:25:02,635
+Evet, gösterdik.
+
+241
+00:25:03,515 --> 00:25:03,815
+Tamam.
+
+242
+00:25:05,375 --> 00:25:06,735
+Bu şekilde edeceğim bizim rapor.
+
+243
+00:25:06,755 --> 00:25:09,096
+Müşteri değerlendirmesiyle yaptınız.
+
+244
+00:25:10,036 --> 00:25:12,455
+Evet, müşterinin geri dönüşüyle.
+
+245
+00:25:12,556 --> 00:25:14,415
+Tamam, başka ekleyecek bir şeyimiz var mı?
+
+246
+00:25:15,155 --> 00:25:17,695
+Başka bir şey yok hocam, bu şekildeydim, teşekkür ederiz.
+
+247
+00:25:17,875 --> 00:25:19,375
+Tamam, teşekkürler.
+
+248
+00:25:23,284 --> 00:25:24,804
+Hocam sunduktan sonra çıkabiliyor muyuz?
+
+249
+00:25:25,324 --> 00:25:26,064
+Çıkabilirsiniz.
+
+250
+00:25:29,324 --> 00:25:30,664
+Grup 10.
+
+251
+00:25:31,744 --> 00:25:33,584
+Buradayız hocam, başlayabiliriz.
+
+252
+00:25:35,944 --> 00:25:36,784
+Başlayabilirsiniz.
+
+253
+00:25:37,904 --> 00:25:39,744
+Ben de bu arada isimlerinizi okuyayım.
+
+254
+00:25:41,304 --> 00:25:42,404
+[öğrenci].
+
+255
+00:25:42,884 --> 00:25:43,584
+Evet, buradayım.
+
+256
+00:25:46,424 --> 00:25:47,384
+[öğrenci].
+
+257
+00:25:47,384 --> 00:25:48,984
+Buradayım hocam.
+
+258
+00:25:52,531 --> 00:25:53,372
+[öğrenci].
+
+259
+00:25:54,271 --> 00:25:55,271
+Buradayım hocam.
+
+260
+00:25:57,372 --> 00:25:58,271
+[öğrenci].
+
+261
+00:25:59,612 --> 00:26:00,332
+Buradayım.
+
+262
+00:26:02,491 --> 00:26:04,491
+[öğrenci], [öğrenci].
+
+263
+00:26:04,912 --> 00:26:05,612
+Buradayım hocam.
+
+264
+00:26:08,192 --> 00:26:09,731
+Evet, başlayın.
+
+265
+00:26:10,612 --> 00:26:33,612
+Bizim dönem projemizin ismi Streampass hocam. Streampass aslında Gamepass'e çok benzer bir özellik gösteriyor. Fakat Gamepass'tan farklı olarak içerisindeki oyunlara bir cloud sistemi ile erişiyoruz. Yani kullanıcı tek bir ücret ederek bizim sunduğumuz oyun kütüphanesindeki oyunlara fiziksel veya dijital bir kopya almadan erişim sağlayabiliyor. Ayrıca bu oyunlara...
+
+266
+00:26:34,163 --> 00:26:41,163
+İyi bir bilgisayar gereksinim duymadan bir cloud sistemi üzerinden erişimi sağlayabiliyor. Böyle bir proje düşündük.
+
+267
+00:26:41,163 --> 00:26:50,163
+Proje kapsamımızda hesap oluşturma, kayıtlı hesap girişi, arkadaşlık işlemleri, oyunlara giriş ve oyun tavsiye etme alt sistemleri yer alıyor.
+
+268
+00:26:50,163 --> 00:26:53,163
+Proje ekibimiz...
+
+269
+00:26:53,587 --> 00:27:12,288
+Proje müdürü olarak ben çalıştım hocam. Sistem analistliğini [öğrenci] ve [öğrenci] paylaştılar. Sistem tasarımcılığını [öğrenci] yaptı. Geliştirici olarak [öğrenci] ve ben çalıştık tekrar. [öğrenci] daha çok veri tavana kısmına baktı. Ben de arayüz kısmına baktım. Müşteri olarak da [öğrenci] çalıştı, [öğrenci] canlandırdı.
+
+270
+00:27:13,299 --> 00:27:30,299
+Organizasyon şamamız bu şekilde. [öğrenci] genelde fizibilite, GAMD diyagramı, PERT diyagramı kısmına baktı. [öğrenci], veri akış diyagramlarına baktı. [öğrenci], Yapı ve ER diyagramlarına baktı. Fiziksel veri tabanına ise ben ve kodlama kısmına ben baktım bu şekilde.
+
+271
+00:27:30,299 --> 00:27:35,299
+Bu arada bir dakika sizden izin alarak bir şey sorayım.
+
+272
+00:27:35,700 --> 00:28:02,940
+Şimdi ilk derse başladığımızda grup 6, 7, 10, 11 ve 12 hazırız dediler. Başka sonradan gelip hazır olan grup var mı? Başka anlatacak olan var mı? Yani bu gruptan sonra grup 12'yi dinleyeceğiz, sonra grup 12'yi.
+
+273
+00:28:05,044 --> 00:28:11,624
+Şimdi grup 13 mü hazır? Grup 13 hazır. Başka?
+
+274
+00:28:18,355 --> 00:28:24,236
+[öğrenci], [öğrenci], hepiniz 13'teyiz.
+
+275
+00:28:25,756 --> 00:28:28,176
+[öğrenci], [öğrenci], hepiniz 13'te misiniz?
+
+276
+00:28:28,276 --> 00:28:28,855
+Aynen hocam.
+
+277
+00:28:29,256 --> 00:28:34,135
+Tamam, 13'ü yazdım. Bir de grup 9'da mı az kişi varsınız?
+
+278
+00:28:34,875 --> 00:28:37,596
+Ben 9'dayım ama galiba hepimiz yokuz.
+
+279
+00:28:38,056 --> 00:28:41,976
+Tamam, o zaman siz olduğunuz kadar grup 9'u da sonraya yazın.
+
+280
+00:28:41,976 --> 00:28:42,756
+Sunabilirim ama, evet.
+
+281
+00:28:44,115 --> 00:28:45,776
+Sunabilirim ama yani şu an.
+
+282
+00:28:46,056 --> 00:28:46,355
+9.
+
+283
+00:28:47,256 --> 00:28:47,875
+Evet.
+
+284
+00:28:48,655 --> 00:28:52,576
+Tamam. Size bakalım kaç kişiyseniz ona göre şey yaparız.
+
+285
+00:28:53,355 --> 00:29:01,895
+Evet, şimdi grup 10'u devam ediyoruz.
+
+286
+00:29:02,996 --> 00:29:28,956
+Burada ise hocam, sistem analizi ve tasarımı yaparken izlediğimiz adımları görüyorsunuz. Öncelikle müşteri ile toplantılar yaparak bir gereksinim analizi yaptık. Bunlar bu görüşmelerin yazılı kayıtları. Raporumuzda zaten mevcut. Daha sonra gerekli fizibilite araştırmalarını yaptık. Burada daha çok teknik fizibilite üstüne durduk. Daha sonra da sistem tasarımı adımlarına geçtik.
+
+287
+00:29:32,723 --> 00:29:34,803
+Buradan sonrasını [öğrenci] anlatacak.
+
+288
+00:29:35,303 --> 00:29:40,923
+Tamam. Teknik fizibilitede yazılım, donanım ve iletişim fizibilitesinden bahsetmemiz gerekiyor hocam.
+
+289
+00:29:42,743 --> 00:29:51,943
+Yazılım fizibilitesinde yazılımcı arkadaşlarımız [öğrenci] ve [öğrenci]'ın araştırmaları sonucu yazılım dil olarak pardon, ve taban olarak da postural SQL kullandık.
+
+290
+00:29:52,824 --> 00:29:56,124
+Donanım fizibilitesinde bu programın yürütebilmesi için...
+
+291
+00:29:56,124 --> 00:29:57,723
+Bu konuda yine gerek yok.
+
+292
+00:30:00,000 --> 00:30:07,399
+İlşkili olduğu için güçlü bir bilgisayar donanımınız var, görüyorum. Evet, devam edebilirsiniz.
+
+293
+00:30:07,919 --> 00:30:25,000
+Ekonomik fizibilite başa baş noktasına hesaplamak için giderler ve gelirler hesapladık. Giderlerde bizim yazılım araştırı, sunucu, router, buradaki bilgisayar ücretleri, çalışan ücretleri gibi ücretler var. Başlangıçta toplam bir giderimiz var, bir de aylık giderimiz var. Gelirlerimizde giriş ortalık yöntemiz var.
+
+294
+00:30:28,000 --> 00:30:30,319
+Gideri değil, geliri de düşündünüz.
+
+295
+00:30:31,059 --> 00:30:31,740
+Evet hocam.
+
+296
+00:30:31,859 --> 00:30:42,740
+Başa baş noktasını, bir önceki grup da bunu düşünmüştü değil mi? Bir önceki grup. Gitti mi herkes o grupta? Evet, devam edin.
+
+297
+00:30:43,155 --> 00:30:45,955
+6. ayda başa başa noktasına geleceğimizi gördük.
+
+298
+00:30:46,275 --> 00:30:50,495
+Bunu devam etme, bundan sürekilere geç.
+
+299
+00:30:50,975 --> 00:30:55,816
+Tamam, sosyal fizibilite de zaten standart, oyun severleri çeşitli oyunlar, bunu da geçelim hocam.
+
+300
+00:30:55,816 --> 00:30:59,535
+Yani fizibiliteyi atlayabilirsin, zaman fizibiliteyi ne gel.
+
+301
+00:30:59,635 --> 00:31:07,055
+Gant diagramı kullandık, Gant projenin faaliyetleri ve faaliyetleri süredenlerine görsel temsil edilir ve PERT'i çıkardık buradan.
+
+302
+00:31:07,475 --> 00:31:10,395
+PERT de işte belirsizlikleri ve bağımlılıkları dikkate alıyor.
+
+303
+00:31:11,155 --> 00:31:32,295
+İşleme modeli olarak da iteratif waterfall modeli kullandık, şelale modeli. Sürekli bir geribesleme içindeydik. Gant'a geçebiliriz hocam bundan sonra isterseniz. Gant'ta da bizim projenin ilk adımları var. Burada ekip oluşturulması gibi, proje başlangıcı gibi. Problem tanımı var. Daha sonra fizibilite çalışmaları, genel tasarım, ayrıntılı tasarım ve gerçekleştirme şeklinde gidiyor.
+
+304
+00:31:32,819 --> 00:31:51,759
+Burada biz sistemimiz bittikten sonra bir de 3 aydık, 90 günlük bir bakım periyodu verdik. Bu sayede biz karı geçebiliyoruz ve bu bakımdan da bir gelir elde ediyoruz. Burada kaynak altlarını dağıttık ve kilometre taşları bizim belli bir modül bittikten sonra toplantıyı yaptığımız zamanlarda kilometre taşı olarak bilinildi.
+
+305
+00:31:51,779 --> 00:31:53,180
+Dant diagramını nerede çizdiniz?
+
+306
+00:31:53,819 --> 00:31:55,920
+MS Project'e çizdik hocam.
+
+307
+00:31:56,000 --> 00:31:56,720
+Evet, güzel.
+
+308
+00:31:57,339 --> 00:31:58,119
+Distro'dan elde ediyoruz.
+
+309
+00:31:58,139 --> 00:31:59,920
+Paystone'larınızı falan da göstermişsiniz.
+
+310
+00:32:00,480 --> 00:32:00,819
+Evet hocam.
+
+311
+00:32:00,819 --> 00:32:02,619
+Hocam, bu şeyleri de gösterdik.
+
+312
+00:32:02,879 --> 00:32:03,859
+Evet, devam et.
+
+313
+00:32:04,420 --> 00:32:24,659
+Bundan sonra PERTD ekramı var. PERTD ekramı zaten kanttan oluşturduğu için çok ayrıntılı anlatmıyorum ama mesela burada ekip oluşturulması var. Sonra görüşme, proje başlangıçı, problem tanımı bu şekilde ilerliyor. İhtiyaçların belirlenmesi var bir sonraki slide'ta. Fizibilite çalışmaları var burada. Ekip toplantısı oluyor tabii bu her bir alt modülden sonra. En sonunda da işte bu ve akış diyagramı kullanılıyor.
+
+314
+00:32:26,387 --> 00:32:28,727
+Tamam, bir de fizibilite matrisi yaptık.
+
+315
+00:32:28,867 --> 00:32:31,407
+Ha, fizibilite matrisi de var. Evet, güzel.
+
+316
+00:32:31,988 --> 00:32:37,748
+Üstelik sistem öneriyoruz ve hangisine daha kârdarız, onları bahsettik. Çok ayrıntılı anlatmamı gerek yoksa, geçebilirim hocam.
+
+317
+00:32:38,028 --> 00:32:40,847
+Geçebilirsin, yani böyle bir şeyi hazırlamış olmanız güzel.
+
+318
+00:32:41,488 --> 00:32:42,727
+Tamam hocam, teşekkür ederim.
+
+319
+00:32:43,307 --> 00:32:49,768
+Peki, siz yazılımınızı, programınızı nasıl hazırladınız?
+
+320
+00:32:50,528 --> 00:32:52,447
+Hocam, yapısal bir yaklaşımla hazırladım.
+
+321
+00:32:52,467 --> 00:32:54,248
+Yapısal bir yaklaşımla, tamam, güzel.
+
+322
+00:32:54,387 --> 00:32:57,748
+Zahreler üstü diyagramı da var.
+
+323
+00:32:57,967 --> 00:32:59,807
+Hemen veri akış diyagramına geçin.
+
+324
+00:33:00,807 --> 00:33:03,827
+Aslak düzey, siz de bir kez söyleyerek açtığınız için.
+
+325
+00:33:03,827 --> 00:33:05,048
+Çok teşekkür ederim.
+
+326
+00:33:08,435 --> 00:33:20,836
+Kafanın bir bilgiler, kullanıcı çizgilerin birini de, kafanın bir bilgilerini seçiyoruz, sonra bir de tutaması istiyoruz. Arkadaşın arkadaş ailesine giriyor ve arkadaşların bir bilgilerini arkaç kısmına alıyoruz.
+
+327
+00:33:20,836 --> 00:33:22,435
+Visual paradigm'de mi çizdiniz?
+
+328
+00:33:22,435 --> 00:33:27,435
+Evet hocam, hiç çıkamadım. Genelde bir şey çıkartamadığınız zaman herhalde giriyor mu?
+
+329
+00:33:27,435 --> 00:33:28,435
+Evet.
+
+330
+00:33:28,435 --> 00:33:33,435
+Oyun oynamak için de, oyun birin sıraya almak.
+
+331
+00:33:55,827 --> 00:33:58,008
+İlk başına ayırın zaten.
+
+332
+00:33:59,188 --> 00:34:07,587
+Evet, tamam bir akış diyagramlarınız güzel. ER diyagramınız.
+
+333
+00:34:08,488 --> 00:34:13,007
+Evet hocam, merhaba. Sistemin tasarım kısmını ben anlatacağım şimdi.
+
+334
+00:34:13,248 --> 00:34:13,507
+Evet.
+
+335
+00:34:14,068 --> 00:34:18,728
+ER diyagramı ve yapı diyagramı yaptık çünkü yapısal bir programlama geliştirdik.
+
+336
+00:34:19,788 --> 00:34:22,507
+ER diyagramı kısaca bahsetmem gerekirse.
+
+337
+00:34:23,347 --> 00:34:34,148
+Veri nesneleri ve veya varlıklar arasındaki ilişkileri özelliklerini gösterir. Mesela kullanıcı ödeme bilgisi, oyun, arkadaşlık ve kullanıcının oyunları gibi bunlar varlıklar oluyor.
+
+338
+00:34:35,167 --> 00:34:41,108
+Kullanıcının niteliklerine bakacak olursak ad, soyad, kullanıcı id, takma, ad, şifre, e-mail ve birlik tarihi gibi.
+
+339
+00:34:42,327 --> 00:34:49,527
+Prime key olarak kullanıcı adını seçtim. Arkadaşlıkta da mesela arkadaş kullanıcı id, primary key oluyor.
+
+340
+00:34:50,260 --> 00:34:54,180
+Diğer kısma geçebiliriz. Yapısal şey, yapı diagramı.
+
+341
+00:34:55,320 --> 00:35:08,680
+Burada da kullanıcı veri tabanı dan kayıt bilgileri geliyor. Kayıt olma penceresi ve giriş ekranına doğru gidiyor. Oradan da ana modül olan StreamPass'e gidiyor. Sonra hepsi doğrulaması ve onaylaması gerekiyor.
+
+342
+00:35:09,204 --> 00:35:15,944
+Aynı şekilde ana pencere, oyun seçme penceresi ve arkadaş şeklinde penceresine göre gidiyor.
+
+343
+00:35:16,324 --> 00:35:22,984
+Yapı diagramını kısaca bahsedecek olursam, yapısal örgüleri arasındaki ilişkileri ve sistemin mimarisini gösteriyor aslında.
+
+344
+00:35:24,123 --> 00:35:28,944
+Ve aynı şekilde ana modül ile bilimler arasındaki veri akışını biraz daha detaylı gösteriyor.
+
+345
+00:35:28,944 --> 00:35:31,824
+Yapı diagramınızda hiç döngü falan yok muydu?
+
+346
+00:35:32,275 --> 00:35:38,076
+Döngü gerek yok. Aslında şu giriş ekranıyla ana pencere arasında bir tane noktada yaptım.
+
+347
+00:35:38,076 --> 00:35:41,456
+Doğru, hep böyle akış yakarak gidiyor. Evet. Tamam. O şekilde.
+
+348
+00:35:42,695 --> 00:35:46,355
+Güzel. Veri tabanınızı.
+
+349
+00:35:48,036 --> 00:35:55,195
+Veri tabanını da ben anlatıyorum. Dört tane tablo oluşturduk. Arkadaşlık, kullanıcı, kullanıcı oyun ve oyun şeklinde.
+
+350
+00:35:56,692 --> 00:36:03,891
+İlk kullanıcı, kullanıcının hakkındaki bilgileri sunu olarak belirledik. Ad, soy, ad, takma, ad gibi.
+
+351
+00:36:04,771 --> 00:36:13,872
+Tabii primary key olarak kullanıcı adı belirledik. Sonra e-mail ve takma adında unique olması şeklinde sınırlama koyduk.
+
+352
+00:36:15,668 --> 00:36:32,068
+Arkadaşlıkta yine ID'ler primary key olarak belirlendi. Kullanıcı ID iki kişinin arasındaki arkadaş ilişkileri belirlendi. Üç durum olabilir, onay bekliyor olabilir, arkadaş olabilir, engelli olabilir. Bu şekilde belirledik.
+
+353
+00:36:32,724 --> 00:36:43,483
+Kullanıcı oyunda da kullanıcının hangi oyunları oynamasını tutmak için tablo oluşturduk ve oyuna her tıkladığında oynama süresi bir saat artıyor. Bu şekilde bununla tabloda tuttuk.
+
+354
+00:36:45,623 --> 00:36:55,784
+Oyunda oyunlarla alakalı bilgileri tutmak için oyunlar, oyun adı, eklenme tarihi ve kategorisinin birini de kategoriye göre de oyun tavsiyesi sistemini yaptık.
+
+355
+00:36:58,083 --> 00:36:59,503
+Başka anlatacağınız bir şey?
+
+356
+00:37:00,019 --> 00:37:01,000
+Bu şekilde.
+
+357
+00:37:05,972 --> 00:37:08,052
+Özet olarak da burada gösterebiliriz.
+
+358
+00:37:08,072 --> 00:37:22,132
+Bu arada bu değerlendirmeyi yanlış anlamışsınız. Siz nasıl değerlendiriyorsunuz gibi. Değerlendirmede projeyi anlatan müşteri düzeyindeki kişi sonucu nasıl görüyor?
+
+359
+00:37:23,052 --> 00:37:26,212
+Onu da rapora ekledik müşteri raporlarına.
+
+360
+00:37:26,212 --> 00:37:27,512
+Tamam, teşekkürler.
+
+361
+00:37:29,232 --> 00:37:29,652
+Biz teşekkür ederiz.
+
+362
+00:37:29,672 --> 00:37:32,332
+Sonraki gruba geçebiliriz. Teşekkürler.
+
+363
+00:37:38,228 --> 00:37:40,028
+Bir sonraki grup, grup 12.
+
+364
+00:37:45,172 --> 00:37:47,291
+Grup 12 hazır mı?
+
+365
+00:37:48,032 --> 00:37:48,831
+Buradayız hocam.
+
+366
+00:37:49,512 --> 00:37:51,771
+Evet, kimler varmış? Bakayım.
+
+367
+00:37:53,731 --> 00:37:54,771
+Grup 12.
+
+368
+00:37:57,231 --> 00:37:58,612
+Sesim geliyor mu hocam?
+
+369
+00:37:58,612 --> 00:37:58,951
+[öğrenci].
+
+370
+00:38:01,092 --> 00:38:01,951
+Değil mi?
+
+371
+00:38:01,991 --> 00:38:03,751
+Buradayım hocam, buradayım. [öğrenci] burada.
+
+372
+00:38:09,012 --> 00:38:10,791
+[öğrenci]. Buradayım.
+
+373
+00:38:10,791 --> 00:38:11,572
+[öğrenci]'e.
+
+374
+00:38:20,755 --> 00:38:22,015
+[öğrenci].
+
+375
+00:38:23,695 --> 00:38:24,915
+Ben de buradayım hocam.
+
+376
+00:38:26,375 --> 00:38:27,455
+[öğrenci].
+
+377
+00:38:29,675 --> 00:38:31,435
+[öğrenci] burada mı?
+
+378
+00:38:38,708 --> 00:38:39,348
+Burada değil hocam.
+
+379
+00:38:40,348 --> 00:38:40,808
+Efendim?
+
+380
+00:38:41,488 --> 00:38:42,228
+Burada değil bu.
+
+381
+00:38:44,168 --> 00:38:45,908
+[öğrenci].
+
+382
+00:38:46,588 --> 00:38:46,908
+Burada.
+
+383
+00:38:51,956 --> 00:38:55,136
+Şimdi hepiniz 21 girişli.
+
+384
+00:38:57,976 --> 00:39:00,596
+Altı yüzlü olunca şey mi?
+
+385
+00:39:10,164 --> 00:39:12,503
+Yatağa geçiş mi oluyorsunuz siz?
+
+386
+00:39:13,483 --> 00:39:14,784
+Evet hocam, yatay geçiş.
+
+387
+00:39:20,179 --> 00:39:21,139
+Fутbol klübü.
+
+388
+00:39:30,228 --> 00:39:32,028
+Başlıyor mu? Evet.
+
+389
+00:39:33,448 --> 00:39:46,028
+Futbol kulübü ve akademisi yönetim sistemi. Problemin tanımında futbol kulüpler ve akademiler, sporcuların yeteneklerini geliştirdiği, eğitimi aldıkları ve rekabetçi ortamlarda müsaakalara katıldığı önemli kurum var.
+
+390
+00:39:46,488 --> 00:39:51,068
+Bu tür kurumlarda yönetim karanışlık olabilir ve çeşitli zorluklar beraberinde...
+
+391
+00:39:51,068 --> 00:39:53,268
+Ulusal [öğrenci] yok herhalde değil mi?
+
+392
+00:39:53,748 --> 00:39:54,307
+Yok hocam.
+
+393
+00:39:54,623 --> 00:40:01,043
+Tamam. O yani size çalışmalarınızda da destek vermedi herhalde.
+
+394
+00:40:04,820 --> 00:40:09,860
+Çalışmalarına destek verdi aslında ama bugün yani haber alamadık.
+
+395
+00:40:11,400 --> 00:40:11,760
+Tamam.
+
+396
+00:40:13,360 --> 00:40:14,600
+Neyi yaptı o?
+
+397
+00:40:15,820 --> 00:40:16,140
+Efendim?
+
+398
+00:40:17,080 --> 00:40:18,380
+Hangi bölümünü yaptı?
+
+399
+00:40:19,700 --> 00:40:22,340
+Bu değerlendirme kısmını yapacağım en sonunda.
+
+400
+00:40:23,800 --> 00:40:24,600
+Efendim?
+
+401
+00:40:25,120 --> 00:40:28,500
+En son raporun sonundaki özet kısmını, değerlendirme kısmını yapmıştım.
+
+402
+00:40:28,920 --> 00:40:30,700
+Ha yani, evet.
+
+403
+00:40:32,403 --> 00:40:35,223
+Siz programınızı gösterdiniz mi?
+
+404
+00:40:35,744 --> 00:40:36,603
+Gösterdik hocam.
+
+405
+00:40:37,583 --> 00:40:41,284
+Programı gösterirken kim gösterdi?
+
+406
+00:40:42,023 --> 00:40:42,784
+Erçin Hanım'a.
+
+407
+00:40:44,143 --> 00:40:46,103
+[öğrenci], [öğrenci] ve ben.
+
+408
+00:40:47,884 --> 00:40:48,804
+Evet, tamam.
+
+409
+00:40:50,099 --> 00:40:59,619
+Bu tür kurumların yönetimi karmaşık olabilir ve çeşitli zorlukları beraberinde getirebilir. Bu nedenle futbol kulübü ve akademisi yönetim sistemi için aşağıdaki problemler tanımlanabilir.
+
+410
+00:41:00,240 --> 00:41:11,659
+Üye yönetiminde kulüp ve akademinin üyelerinin kaydedilmesi, takip edilmesi ve yönetilmesi gerekmektedir. Bu yeni üyelerin kaydedilmesi, mevcut üyelerin bilgilerinin yücelerlenmesi gibi süreçler içerir.
+
+411
+00:41:11,983 --> 00:41:19,983
+Takım yönetiminde kulüp veya akademideki, farklı yaş gruplarındaki takımların oluşturulması, teknik direktör veya antrenör kaydedilmesi gerektirir.
+
+412
+00:41:20,724 --> 00:41:25,983
+Finans yönetimine gelince kulüpler ve akademiler, mali kaynakları doğru bir şekilde yönetmelidir.
+
+413
+00:41:26,124 --> 00:41:32,804
+Gütçe planlaması, gelir ve gider takip gibi finansal süreçlerin düzenli olarak izlenmesi ve kontrol edilmesi gerektirir.
+
+414
+00:41:34,084 --> 00:41:39,084
+Yukarıda belirtilen problemler futbol kulübü ve akademisi yönetim sistemi için sözülmesi gereken temel zorluklardır.
+
+415
+00:41:39,391 --> 00:41:49,751
+Eşip yapısında müşteri [öğrenci], proje yönetiküsü [öğrenci], Zeman listi [öğrenci], yazılım geliştirici [öğrenci] ve [öğrenci].
+
+416
+00:41:50,291 --> 00:42:02,091
+Toplantı raporları, ilk toplantımızı 28 Nisan'da gerçekleştirdik. Ekibimiz müşteriyle görüşme gerçekleştirdi. Bu görüşmede müşteriden sistemden beklediği ve talep ettiği özelliklerin alındığı tespit edildi.
+
+417
+00:42:02,091 --> 00:42:14,931
+Sisteme yönetici, koç ve oyuncu olarak 3 farklı kurumsal kimliğe sahip kullanıcıların giriş yapacağı tarafımıza yetildi. Bu kullanıcıların her birinin hangi database'lere eşit edeceği ve ne gibi etkinliklerde bulunabileceği not edildi.
+
+418
+00:42:15,155 --> 00:42:19,456
+Bunun yanı sıra ekibimiz, sistemin kurulacağı ofiste teknik incelemelerde bulundu.
+
+419
+00:42:19,916 --> 00:42:25,155
+Ofiste herhangi bir bilgisayar bulamadığı ve yeterli hızda iletim sağlayan rutör olmadığı tespit edildi.
+
+420
+00:42:26,696 --> 00:42:30,096
+İkinci görüşmemiz 20 Mayıs'ta gerçekleştirildi.
+
+421
+00:42:30,556 --> 00:42:36,816
+Yapılan değerlendirme sonuçlarından müşteriye sunulan ürün de genel olarak müşterinin aldığı performanstan memnun olduğu gözlemlenmiştir.
+
+422
+00:42:37,336 --> 00:42:42,155
+Bu durum müşterinin beklentilerinin büyük ölçüde karşılandığını ve ürünün başarıyla uygulandığını göstermektedir.
+
+423
+00:42:43,380 --> 00:42:49,659
+Ürünün arayüzü olmadığı için ve kolay kullanılamadığından da türü yakınmıştır ve müşteri yakınmıştır.
+
+424
+00:42:49,860 --> 00:42:56,820
+Müşterinin bu talebile özelliğinde bulundurularak sonraki personel için bir arayüz tasarlanması kararlaştırıldı.
+
+425
+00:42:57,179 --> 00:42:58,079
+Bu eklentinin sağlanması için.
+
+426
+00:42:58,079 --> 00:43:06,039
+Şey soracağım, bu futbol kulüpleriyle hiç ilgili olan var mı içinizde?
+
+427
+00:43:09,076 --> 00:43:10,235
+İlgiliyiz hocam yani.
+
+428
+00:43:11,315 --> 00:43:23,596
+Yani normalde bu kulüp şeyi nasıl yönetiliyor? Bilgi alırken hiç nasıl bilgi aldınız?
+
+429
+00:43:25,295 --> 00:43:30,675
+Yani genel olarak kendi bildiklerimizden yola çıktık hocam. Öyle.
+
+430
+00:43:31,675 --> 00:43:34,755
+Tamam. Evet, devam edebilirsin.
+
+431
+00:43:37,684 --> 00:43:47,164
+Sistem analizi ve tasarımı adımları, fizibilite araştırması, projenin teknik, ekonomik, zaman ve finansal açılardan gerçekleştirebilirlik potansiyelini değerlendirmeyi amaçlar.
+
+432
+00:43:47,704 --> 00:43:52,684
+Gereksinim analizinde sistemin ihtiyaçlarını beklentilerini belirlenmek amaçıyla yapılan bir süreç,
+
+433
+00:43:53,224 --> 00:43:59,824
+analiz sistemin işletme saatleri, müşteriler ve diğer ilgili taraflarla yetişme halinde gerçekleştirilir.
+
+434
+00:43:59,824 --> 00:44:05,684
+Sistem tasarımı, bu süreçte sistem verdiğinin gereksinimleri temel olarak onları yerine getirilir.
+
+435
+00:44:05,684 --> 00:44:19,684
+Bilecek bir tasarım oluşturulur. Teknik fizibiliteye geçelim. Sistemin hayata geçirmesinde kullanılacak yazılım ve donanım birimleri araştırılır. Sistem nesneye de yaklaşım programlanacak. Java ile arka plan geliştirilmeleri sağlanacak.
+
+436
+00:44:21,144 --> 00:44:24,983
+Burada kullandığımız donanım elemanları yazılıyor.
+
+437
+00:44:26,708 --> 00:44:37,647
+Ekonomik fizibilite ise, gider olarak server, router, bilgisayar ve yazılım çekiyeti fiyatlarını, gelir olarak ise her yeni öğrenci üyesini hesapladık.
+
+438
+00:44:37,748 --> 00:44:45,107
+Yani 30 öğrenci ilk başta üye oluyor ve her birinden 500 dolar ücret alınıyor.
+
+439
+00:44:47,007 --> 00:44:50,748
+Burada sözü erdiğim arkadaşıma devrediyorum.
+
+440
+00:44:56,980 --> 00:45:02,139
+Zaman fizibilitesini de ben yapmıştım Microsoft Project'le.
+
+441
+00:45:05,139 --> 00:45:18,980
+31 gün sürüyordu, analiz aşaması 6 gün, tasarım 10 gün ve kodlama ve test aşaması 13 gün sürerek toplamda 15 Nisan'dan başlayıp 22 Mayıs'a kadar sürüyordu.
+
+442
+00:45:22,708 --> 00:45:36,588
+Aşağıda da şey var, bu da zaman çizelgesini gösteriyor. Yani gelen olarak sırasıyla ve burada daha rahat gözüküyor aslında hangi akışların ne kadar süre aldığı ve aralarındaki ilişkiler daha iyi gözüküyor.
+
+443
+00:45:37,307 --> 00:45:45,928
+Mesela kodlama ve test aşamasında kodlama sistem testi ve kullanıcı testinin nasıl şey olduğu gözüküyor.
+
+444
+00:45:51,731 --> 00:45:58,332
+Sosyal fizibilite, üyelikleri içeren futbol akademi sisteminin benzerlerinin akademiler tarafından kullanıldığı görülmüştür.
+
+445
+00:45:58,992 --> 00:46:04,211
+İnternet kullanım kolaylığı ve oranı yüksek olduğu için internetten üyelik sistemi sosyal açıdan kabul edilebilirdir.
+
+446
+00:46:04,792 --> 00:46:09,672
+Projeye uzun vadeli bakıldığında sürdürebilirlik açısından da sistemin uygun olduğu görülmektedir.
+
+447
+00:46:13,300 --> 00:46:23,300
+Yasal fizibilite, üyelerin sistemde paylaştığı bilgiler, kişisel verileri korumak durumu gereğince koruma altına alınacaktır ve üye olma aşamasında belirtilecektir.
+
+448
+00:46:26,320 --> 00:46:34,700
+Yönetim fizibilitesi ise, Apple Akademi sistemi yönetimin isteği ve desteği ile gerçekleştirilmektedir. Bu yüzden yönetimsel bir sorun olmayıcı varsayılmıştır.
+
+449
+00:46:37,043 --> 00:46:47,883
+Fizibilite matrisinde ise önceden alınan ekonomik fizibilite ve kendimin oluşturduğu zaman fizibilitesini kullanarak bir grafik oluşturdum. İki tane sistem.
+
+450
+00:46:49,183 --> 00:47:00,983
+Eğer bilgisayar şey ise daha üst düzey bir bilgisayar ise 15.800 dolar oluyor ama normal bir şey ise yani sistem bilgisayarı 15.000 dolar oluyor.
+
+451
+00:47:02,931 --> 00:47:15,031
+31 gün, 32 gün olarak da değişebilir. Bu şekilde arada farklar var. Veya teknik hizmetedeki C-Sharp, Java, bu da değişebiliyor.
+
+452
+00:47:19,476 --> 00:47:31,936
+Fizibilite madresinde önerilen sistem örnekleri arttırılabilir. Önerilen sistemlere göre teknik fizibilite, ekonomik fizibilite, zaman fizibilitesi, yasal fizibilite, yönetim fizibilitesi, sosyal fizibilite farklılık göstermektedir.
+
+453
+00:47:32,596 --> 00:47:38,976
+Önerilen sistemlerde teknik fizibilite kısmında nesne yönelik programlamayı destekleyen herhangi bir programlama dili tercih edilebilir.
+
+454
+00:47:39,443 --> 00:47:48,884
+Java, C Sharp, C++ gibi. Zamanstizibilitesi kısmında ise yapılan Gant diagramına sitendik çalışanların uyumu ve sayısına göre gün sayısı değişebilir.
+
+455
+00:47:52,344 --> 00:47:54,804
+Böyleydi benim de. Teşekkürler.
+
+456
+00:47:55,956 --> 00:48:00,396
+Merhaba, ben [öğrenci] [öğrenci]. Sistemin gereksinim analizi kısmına ben üstlendim.
+
+457
+00:48:00,916 --> 00:48:08,136
+Gereksinim analizi nedir? Gereksinim analizi, ürün geliştirmede paydaşlarının ihtiyaçlarını anlamak için gerçekleştirilen çeşitli görevlerden ve faaliyetlerden oluşur.
+
+458
+00:48:08,816 --> 00:48:14,336
+Gereksinim analizi, projede hayati biri olarak anlar çünkü projenin başarısı ve başarısızlığı gereksinim analizine bağlıdır.
+
+459
+00:48:15,216 --> 00:48:21,076
+Zibit adımında elde edilen bilgiler ve ait raporda incelenir. Sistemde var olan kaynaklar gözden geçilir.
+
+460
+00:48:21,972 --> 00:48:31,132
+Kurulacak sistemin özellikleri en dolu şekilde saplamak için futbol kulübü ile detaylı görüşmeler yapıldı. Bu görüşmelerde tasarımın yaşamasının temelleri oluşturulur. Geçebiliriz.
+
+461
+00:48:33,076 --> 00:48:57,916
+Öncelikle sistemin analizini yapmak için veri toplamamız gerekiyor. Peki veriyi nasıl toplayacağız? Bir anket örneği var burada. Tasarlanacak sistem kurumsal bir işletme tarafından kullanacağından veri toplama işlemi soruları cavallamaya istekli ve konu hakkında daha önceden bilgilendirilmiş işletme yönetici ve çalışanlığı ile gerçekleştirilecektir. Bu yüzden veri toplama soru sorması tümden gelim şeklinde olması mülakatın kolay başlamasına olarak sağlar.
+
+462
+00:48:58,288 --> 00:49:09,627
+Burada ilk önce 2-3 tane açık uçlu soru sorup, daha sonra da çoktan seçmeniz sorulara sorarak mülakatın kolay başlamasını sağlıyoruz. Geçebiliriz.
+
+463
+00:49:11,587 --> 00:49:23,147
+Burada sisteme ait use case senaryomuz var. Aktörlerimiz menajer, koç ve oyuncular. Menajer ve koçların hangi fonksiyonuna sahip olacağı,
+
+464
+00:49:23,284 --> 00:49:31,304
+Futbol Akademisi ile yaptığımız görüşmeler sonucu belli oluyor ve buraya taslak bir çizim halinde çiziliyor. Geçebiliriz.
+
+465
+00:49:33,903 --> 00:49:46,603
+Bu da use case senaryomuzun kullanım dokumentasyonu. Tasarımı yapacak arkadaşı her bir use case senaryosunda bulunan aksiyon için bu kullanım senaryosu da dokumentasyonu hazırlıyor.
+
+466
+00:49:46,603 --> 00:49:48,683
+Geçebiliriz.
+
+467
+00:49:50,483 --> 00:50:05,423
+Bu da kavramsal sınıf diagramı. Kavramsal sınıf diagramı, sınıf diagramının daha kompak hali diyebiliriz. Bilgilerin daha az olduğu, tasarım aşamasına daha geçilmeden önce kafa bir çizimi olarak delendilirilir. Benim kısmım bu kadardı. Teşekkürler.
+
+468
+00:50:06,903 --> 00:50:16,363
+Ben [öğrenci]. Sistem tasarımında UML diagramı ve ardış ol diagramlarımızı anlatacağım sistemimiz için. Burada UML diagramımızı görüyoruz.
+
+469
+00:50:17,235 --> 00:50:24,675
+İşte oyuncumuz var sistemimizde. Oyuncularımız ikiye ayrılıyor. Profesyonel oyuncularımız var, bir de öğrenci oyuncularımız var.
+
+470
+00:50:25,155 --> 00:50:33,336
+Bu öğrenci oyuncularımız akademiye para verip gelen oyuncular. Bunlardan para alıyoruz ve profesyonel oyunculara bunu maaş olarak veriyoruz.
+
+471
+00:50:34,916 --> 00:50:36,816
+Koçumuz var, teknik direktörümüz var.
+
+472
+00:50:38,804 --> 00:50:49,844
+Yöneticimiz var, menajerimiz var, antrenörümüz var ve sabıkçımız var. Bunlarla ilgili işlemleri artificial diagramlarda detaylı olarak göstereceğiz zaten. Bir sonraki slide'a geçebiliriz.
+
+473
+00:50:52,224 --> 00:51:00,724
+Burada ilk paragrafta sistem tasarımını anlattım. İkinci paragrafta da artificial diagramlarda hangi artificial diagramları göstereceğimizi söyledim.
+
+474
+00:51:01,144 --> 00:51:05,024
+Futbolcularla, koçlarla ve antrenörlerle alakalı üç farklı artificial diagramımız var.
+
+475
+00:51:06,003 --> 00:51:06,844
+Geçebiliriz.
+
+476
+00:51:08,903 --> 00:51:13,824
+İlk ardışıl diyagramımız yöneticilerle alakalı, yöneticiyle alakalı, menajerle alakalı yani.
+
+477
+00:51:14,483 --> 00:51:17,403
+Burada koç, antrenör, sağlıkçı atama işlemleri yapabiliyoruz.
+
+478
+00:51:18,403 --> 00:51:22,364
+Antrenör ve oyuncunun sözleşmenin uzatılması işlemlerini yapabiliyoruz.
+
+479
+00:51:23,344 --> 00:51:25,224
+Geçelim, ardışıl diyagramımızı gösterelim.
+
+480
+00:51:26,844 --> 00:51:30,983
+Burada az önce bahsettiğim işlemleri yaptığımız ardışıl diyagram var.
+
+481
+00:51:30,983 --> 00:51:32,023
+Koç atayabiliyoruz.
+
+482
+00:51:33,472 --> 00:51:49,932
+Sözleşmesini uzatabiliyoruz. Antrenörün sözleşmesini uzatabiliyoruz. Oyuncuların kontratını uzatabiliyoruz. Masraflarımızı görüntüleyebiliyoruz. Gelirimizi görüntüleyebiliyoruz. Ve antrenör ve sağlıkçı atabiliyoruz. Diğer slayda geçelim.
+
+483
+00:51:51,155 --> 00:51:56,295
+Diğer artificial diagramımızda da antrenörün yapabildiği işlemleri anlattık.
+
+484
+00:51:56,695 --> 00:52:04,295
+Antrenörümüz takıma oyuncu ekleyip silebiliyor, takımdaki bir oyuncuyu arayabiliyor ismiyle, bir oyuncunun oynayacağı pozisyonu belirleyebiliyor,
+
+485
+00:52:04,295 --> 00:52:11,295
+mevcut oyuncuların listesini yazdırabiliyor ve şu anda oynaması uygun olmayan oyuncuların yazdırılması işlemlerini yapabiliyor.
+
+486
+00:52:11,875 --> 00:52:12,295
+Geçelim.
+
+487
+00:52:14,275 --> 00:52:17,355
+Burada da bahsettiğim fonksiyonlar var.
+
+488
+00:52:18,099 --> 00:52:30,199
+Oyuncu ekleyebiliyoruz, istediğimiz oyuncuyu bulabiliyoruz, oyuncuyu silebiliyoruz, oyuncuların oynayacağı pozisyonu ayarlayabiliyoruz ve uygun olmayan oyuncuları yazdırabiliyoruz.
+
+489
+00:52:30,199 --> 00:52:39,279
+Bu şekilde diğer slide'a geçelim. Son ardışıl diagramımızda da bir oyuncu üzerinden yapabildiğimiz işlemlere bakıyoruz.
+
+490
+00:52:40,159 --> 00:52:45,199
+Oyuncunun kişisel verilerini görüntüleyebiliyoruz, aylık kazanç, borç durumunu görüntüleyebiliyoruz.
+
+491
+00:52:45,523 --> 00:52:49,323
+Burada da gözüktüğü gibi konularımız bu şekilde.
+
+492
+00:52:50,023 --> 00:52:54,183
+Hocam, bundan sonraki kısmı [öğrenci] arkadaşımız hazırlamıştı ama kendisi şu an burada değil.
+
+493
+00:52:57,043 --> 00:52:57,623
+Nasıl yapalım?
+
+494
+00:53:01,623 --> 00:53:06,463
+[öğrenci] değerlendirmeyi mi yapmıştı?
+
+495
+00:53:06,996 --> 00:53:10,416
+Bu özet kısmını ve değerlendirme kısmını yapmış sanırım hocam.
+
+496
+00:53:10,496 --> 00:53:17,316
+Evet, zaten o da çok az bir kısmı. Niye gelmediği konusunda bir şey söyledim size.
+
+497
+00:53:19,376 --> 00:53:23,596
+Bilmiyoruz hocam, biz gruptan konuşmuştuk ama ulaşamadık arkadaşa.
+
+498
+00:53:24,296 --> 00:53:27,736
+Anladım, zaten buluşmak diye bir şey yok, derse katılacak.
+
+499
+00:53:27,736 --> 00:53:30,296
+Evet, teşekkürler.
+
+500
+00:53:34,000 --> 00:53:38,799
+Hangi şeyle yapmışsınız? Bir daha soru olarak sorayım.
+
+501
+00:53:38,939 --> 00:53:40,399
+Nesneye yönelik tasarım yapalım.
+
+502
+00:53:40,399 --> 00:53:56,960
+Nesneye yönelik. Dolayısıyla diagramlarınızın şeyde, use case var, ardışıl diagramlarınız var, sınıf diagramınız da vardı.
+
+503
+00:53:57,079 --> 00:53:58,579
+Avramsal sınıf diagramınız da vardı.
+
+504
+00:53:58,739 --> 00:54:00,719
+Evet, evet. Teşekkürler.
+
+505
+00:54:02,324 --> 00:54:03,544
+Biz teşekkür ederiz hocam.
+
+506
+00:54:07,635 --> 00:54:09,115
+Şimdi grup 11.
+
+507
+00:54:11,335 --> 00:54:15,036
+Buradayız hocam.
+
+508
+00:54:15,675 --> 00:54:15,996
+Tamam.
+
+509
+00:54:16,215 --> 00:54:18,076
+Buradayız hocam.
+
+510
+00:54:18,076 --> 00:54:18,295
+Tamam.
+
+511
+00:54:21,295 --> 00:54:22,076
+Düşüyorum.
+
+512
+00:54:39,668 --> 00:54:41,007
+Evet, içebilirsiniz.
+
+513
+00:54:42,867 --> 00:54:54,007
+Evet hocam, biz zaten gördüğünüz gibi bir polis merkezi sistemi yaptık ve bu müşteri bizden şu an kağıt olarak bir arşivde saklanan bilgileri...
+
+514
+00:54:54,579 --> 00:55:04,039
+Sanki samal bir ortama aktarmak istiyormuş gibi. Buna göre bir veri tabanı ve web sitesi tasarladık. Buradan girişi hem zaten şeylerden de...
+
+515
+00:55:04,039 --> 00:55:11,579
+Konuşları olarak konuştuğunuz canlı kişiler var mı yoksa...
+
+516
+00:55:12,739 --> 00:55:15,259
+Yok hocam, gerçek insanlarla konuşmadık.
+
+517
+00:55:15,380 --> 00:55:17,639
+Tamam, tamam. Teşekkürler.
+
+518
+00:55:18,195 --> 00:55:26,595
+Yani diagramlardan da göreceksiniz zaten bir şey girişi olacak, yönetici bir de personel girişi olacak şekilde tasarımımızı yaptık.
+
+519
+00:55:26,995 --> 00:55:27,195
+Tamam.
+
+520
+00:55:28,155 --> 00:55:29,175
+[öğrenci] geçebilirsin.
+
+521
+00:55:33,364 --> 00:55:37,384
+Evet, polis veri tabuna müşteri geliştirici hâsı...
+
+522
+00:55:37,384 --> 00:55:39,023
+Kapatayım mı da dışarıdan gürültü?
+
+523
+00:55:41,663 --> 00:55:43,244
+Hocam, kuş sesi mi geliyor?
+
+524
+00:55:49,396 --> 00:55:49,936
+Bir saniye.
+
+525
+00:55:51,216 --> 00:55:55,676
+Evet, üniversitenin bahçesinde çimleri biçiyorlar, ses geliyor o yüzden kapatıyorum ses.
+
+526
+00:55:57,655 --> 00:55:58,996
+Evet, devam edebilirsiniz.
+
+527
+00:56:03,668 --> 00:56:09,847
+Hocam, şey, nazar sanırım kendisinden ses geliyor sandı da, gelecek şimdi tamam.
+
+528
+00:56:10,188 --> 00:56:11,908
+Hocam, geliyor mu şu an hocam?
+
+529
+00:56:15,987 --> 00:56:17,647
+Yok yok, sen devam et [öğrenci].
+
+530
+00:56:17,787 --> 00:56:18,227
+Sen nasıl?
+
+531
+00:56:18,467 --> 00:56:25,067
+Ben de bizim üniversitenin baş üstünden geliyor diye sesi kapattım, tamam. Evet, devam et.
+
+532
+00:56:25,287 --> 00:56:25,487
+Tamam.
+
+533
+00:56:26,607 --> 00:56:29,967
+Polis veri tabanında projesi müşteri geliştirici arası toplantı raporu.
+
+534
+00:56:30,707 --> 00:56:37,447
+Biz sadece bir tane toplantı raporu yaptık çünkü sistem gayet basit aslında.
+
+535
+00:56:37,807 --> 00:56:41,347
+Böyle çok ileri geri iletişime gerek kalmadı.
+
+536
+00:56:42,099 --> 00:56:44,099
+Bu sitemini tamamlayabilmek için.
+
+537
+00:56:45,519 --> 00:56:58,979
+Toplantı katılımcıları, bu [öğrenci] araştırmacı, [öğrenci] analist, [öğrenci] yetişken müşteri, [öğrenci] proje yeticisi ve ben de Devolver.
+
+538
+00:57:05,440 --> 00:57:17,160
+Müşteri temsilcisi ile geliştirici takım arasında yapılacak olan sitenin müşteri gereksinimlerinin alındığı, değerlendirildi ve sonradan sitenin gelişim aşımına karar verildiği bir toplantı gerçekleşti.
+
+539
+00:57:19,980 --> 00:57:24,000
+İşte toplantıda müşteri gereksinimleri bunlar.
+
+540
+00:57:27,827 --> 00:57:40,568
+İstediği suçlular, bölgeler, personeliler, devreler ve vakalar için yöneticinin içine alakalı bilgi kaydedebileceği, eklenen bilgileri düzenleyebileceği ve silinebileceği birer liste sayfası olmalı.
+
+541
+00:57:41,847 --> 00:57:50,827
+Yöneticinin şifresine girip yönetici ana sayfasına normal personel ise aileleriyle ihbar yapma veya devreye sorgulama sayfalarına gidebileceği bir ana sayfa olmalı.
+
+542
+00:57:51,731 --> 00:58:06,452
+İhbar listesi sayfasında yöneticiye gelen ihbarlar, istenilen ihbarın ihbar aidesi gelip bulunabilmeli, ihbar gönderen personellerin aidesi, ihbarın başlığı ve hangi bir bölgeyle alakalı olduğu bir liste belirtilmeli.
+
+543
+00:58:07,912 --> 00:58:16,192
+İhbar listesi ve devre listesi ayrıç tüm liste sayfalarında bir elma seçilip onunla alakalı tüm detaylara bulunduğu bir sayfaya gidilebilmelidir.
+
+544
+00:58:19,123 --> 00:58:33,123
+Mesela suçlu detaylarına bakınca hangi vakalara bağlı olduğu da görülebilmeli. Örneğin, yönetici anal sayfasında suçlu vaka bölge devri ve personel listesi sayfalarına rahatça gidilebilir olmalı.
+
+545
+00:58:34,263 --> 00:58:38,163
+Personel ihbar sayfasında ihbar başlığı ile ihbar teksti gönderilebilmeli.
+
+546
+00:58:38,867 --> 00:58:47,748
+Personel için olan sayfalar ve giriş sayfası hariç her sayfadan herhangi personel özel sayfalar hariç bir sayfaya rahat bir geçiş yolu olmalı.
+
+547
+00:58:48,907 --> 00:58:54,087
+Gidilen detay sayfasına önceden seçilen liste elmanın detayları değiştirilebilir ve elman siniridir olmalı.
+
+548
+00:58:54,768 --> 00:58:56,567
+Site iki ay içinde hazır olmalı.
+
+549
+00:58:58,027 --> 00:58:58,867
+Evet.
+
+550
+00:59:00,608 --> 00:59:05,567
+İşte toplantıdan müşteri gereksinimlerini için...
+
+551
+00:59:06,835 --> 00:59:32,855
+Böyle toplantı notları aldık. Site arayüzü için JavaScript, HTML ve CSS kullanılacak. Backend için JavaScript kullanılacak. Backend, onun kütüphanesi kullanılarak oluşturulacak. Backend, kodunun çalışması ve frontend dosyaların yayınlanması için Cloudflare'in Cloud'u kullanılacak. Veri tabanı için PostgreSQL bir database olan USB-Base kullanılacak.
+
+552
+00:59:33,876 --> 00:59:39,596
+Toplantı sonucunda da toplantı boyunca müşterinin tüm istekleri alındı ve takım tarafından değerlendirildi.
+
+553
+00:59:40,116 --> 00:59:45,716
+Projenin müşteri tarafından istenilen kalitede zamanda ve şekilde tamamlanabileceği sonucuna varıldı.
+
+554
+00:59:49,476 --> 00:59:50,636
+Merhaba hocam.
+
+555
+00:59:51,796 --> 00:59:59,596
+Teknik fizibilite, projemiz JavaScript dilini kullanarak hem ön yüzde hem de arka yüzde fonksiyonel programlamayla gerçekleştirilecektir.
+
+556
+01:00:00,000 --> 01:00:05,199
+Bir web sitesi olarak tasarlanacak ve mevcut polis istasyonu bilgisayarlarında görüntülenebilecektir.
+
+557
+01:00:06,119 --> 01:00:11,639
+Projenin tamamen cloud tabanını çalışacak olması ayrıca bir sonucuya ihtiyaç duyulmaması sağlayacaktır.
+
+558
+01:00:12,899 --> 01:00:14,859
+Ekonomik fizibilite ise...
+
+559
+01:00:14,859 --> 01:00:16,459
+[öğrenci] geçebiliriz burayı.
+
+560
+01:00:21,043 --> 01:00:28,503
+Yazılım araçları ücretsizdir. Ancak cloud tabanlı bir çözüm kullanacağınız için aylık bir maliyetimiz olacak.
+
+561
+01:00:29,223 --> 01:00:34,623
+Yani tahmini olarak cloud hizmeti için yaklaşık 20 dolar ve veri tabanı için 25 dolarlık bir maliyet öngörülmektedir.
+
+562
+01:00:35,583 --> 01:00:39,523
+Yazılım geliştirme maliyeti ise yaklaşık olarak 10 bin dolar olarak hesaplanmıştır.
+
+563
+01:00:40,304 --> 01:00:45,403
+Toplamda projenin 2 yıllık maliyeti ise yaklaşık olarak 11 bin dolar olarak tahmin edilmektedir.
+
+564
+01:00:46,483 --> 01:00:47,703
+Zaman fizibilitesine geçelim.
+
+565
+01:00:48,980 --> 01:00:52,400
+Ekonomik fizibilite sadece gelir midir?
+
+566
+01:00:55,240 --> 01:00:57,039
+Gelir kısmı eksik hocam.
+
+567
+01:00:58,420 --> 01:00:58,860
+Efendim?
+
+568
+01:00:59,320 --> 01:01:01,800
+Sadece gider kısmı yaptık, gelir kısmı eksik.
+
+569
+01:01:03,079 --> 01:01:06,019
+Ekonomik deyince ne anlaşılır?
+
+570
+01:01:08,179 --> 01:01:09,199
+Yani gelir ve gider mi?
+
+571
+01:01:10,400 --> 01:01:10,740
+Evet.
+
+572
+01:01:11,659 --> 01:01:12,619
+Harcamalarımız?
+
+573
+01:01:15,764 --> 01:01:21,044
+Faysa karşılık gelir nedir?
+
+574
+01:01:21,764 --> 01:01:26,403
+Yani hocam geliri öngörümüzde zor bu konuda.
+
+575
+01:01:27,164 --> 01:01:28,684
+Maliyet var ama fayda ne?
+
+576
+01:01:29,544 --> 01:01:33,024
+Hocam projemiz gelir bekleme. Biz öyle yaptık aslında.
+
+577
+01:01:34,604 --> 01:01:37,124
+Hocam halkın güvenliğe gelirimiz hocam.
+
+578
+01:01:37,864 --> 01:01:41,464
+Evet. O da bir şey. Fayda.
+
+579
+01:01:43,987 --> 01:01:48,007
+Evet. Zaman fizibilitesini anlatın.
+
+580
+01:01:48,787 --> 01:01:59,847
+Gantiyagramımız bu şekilde. Ön hazırlık, sistem analizi ve tasarımı, kodlama ve test süreci aşamalarından oluşuyor. Bu diyagrama göre yaklaşık 55 günlük bir süre öngörüldü.
+
+581
+01:02:01,987 --> 01:02:03,087
+Geçelim burayı da.
+
+582
+01:02:06,132 --> 01:02:13,592
+Sosyal fizibilite, projemizde kullanıcıların daha önce farklı işlevdeki benzer arayızları sahip sistemleri kullanmış olduğu göz önüne olmuştur.
+
+583
+01:02:14,252 --> 01:02:18,952
+Yani bu nedenle projenin kullanımının zorluk çıkarmayacağı düşünülüyor.
+
+584
+01:02:20,132 --> 01:02:21,792
+Yönetim fizibilitesine geçelim.
+
+585
+01:02:26,068 --> 01:02:39,068
+Yönetim fizibilitesinde ise, proje polis merkezi yönetimi ile yapılan görüşmeler sonucunda başlatılmış ve yönetimin tarafından tercih edilen şekilde geliştirilmektedir.
+
+586
+01:02:40,068 --> 01:02:42,648
+Yani kendilerinin tercihleri doğrultusunda son halini almıştır.
+
+587
+01:02:44,108 --> 01:02:46,068
+Son olarak yasal fizibilite...
+
+588
+01:02:47,987 --> 01:02:54,228
+Yasal fişe ise proje polis merkezi tarafından sağlanan tüm yasal belgeler ve düzenlemelere uygun olarak geliştirilmektedir.
+
+589
+01:02:54,967 --> 01:02:59,907
+Yani ayrıca kullanılan klas sistemlerin veri kurulumu taahhütleri de polis merkezi yönetimi ile paylaşılmıştır.
+
+590
+01:03:02,887 --> 01:03:05,447
+Bu kısmı ziya arkadaşım anlatacak, sözü alana bırakıyorum.
+
+591
+01:03:06,387 --> 01:03:07,228
+Hocam merhaba.
+
+592
+01:03:08,019 --> 01:03:29,859
+Teknik fizibilitesi için önerilen sistemde JavaScript ve Cloud teknolojilerini kullanacağız. JavaScript web tabanlı bir uygulama için güçlü ve esnek bir program var mı? Dili. Cloud teknolojisi veri depolama ve erişim için maliyet etkin ve ölçeklenebilir bir çözüm sunar. Teknolojiler polis merkezi yönetim sistemini teknik olarak uygulanabilir kılar.
+
+593
+01:03:30,420 --> 01:03:48,199
+Ekonomik fizibilitede önerilen sistemin iki yıllık maliyetinin 11.080 dolar olduğu öngörülmüştür. Bu maliyet yazılım, geliştirme, bakım ve güncelleme gibi çeşitli unsurları içerir. Bu projenin maliyet ehkiliğini değerlendirmemize yardımcı olur.
+
+594
+01:03:48,839 --> 01:03:55,099
+Zaman fizibilitesine önerilen sistem 55 gün içerisinde tamamlanabilecek bir süre zarfına sahip.
+
+595
+01:03:55,443 --> 01:04:02,164
+Bu proje sürecinin her aşamasının dikkatini alır, gereksinim analizi, sistem tasarımı, geliştirme, test etme ve uygulama gibi.
+
+596
+01:04:03,064 --> 01:04:09,684
+Sosyal fizibilite de sosyal açıdan sistem kullanıcıları ve genel halk için olumlu bir etkiye sahip olacaktır.
+
+597
+01:04:11,084 --> 01:04:18,264
+Yönetim fizibilitesinde sistem yönetimin bilgisi ve onayı dahilinde gerçekleştirilmektedir.
+
+598
+01:04:19,003 --> 01:04:22,884
+Bu proje sürecinin her aşamasında etkin bir koordinasyon ve iletişim sağlar.
+
+599
+01:04:23,248 --> 01:04:31,907
+Yasal fizibilite de projenin yasal uygulanabildiği müşteri tarafından sağlanan gerekli yasal düzenlemlerle sağlamaktadır.
+
+600
+01:04:33,128 --> 01:04:35,028
+Bir sonraki sayfaya geçelim.
+
+601
+01:04:36,820 --> 01:04:47,820
+Değerlendirmede teknik fizibiliteyi 8 verdik. Projenin teknik uygulanabildiği yüksektir. Çünkü mevcut teknoloji gereken tüm işlevleri sağlama kapasitesine sahip.
+
+602
+01:04:47,820 --> 01:05:01,280
+İşte veritabanı yönetimi, güvenli, ahli yetişim, kullanıcı, dostu bir arayüz gibi. Ekonomik fizibiliteyi 7 puan verdik. Projenin başlangıç maliyetleri, yazılım geliştirme, eğitim ve bakım gibi unsurlar da yüksek olabilir.
+
+603
+01:05:01,844 --> 01:05:17,103
+Zaman fizibilitesine bu tür bir projenin geliştirilmesi, test edilmesi ve başarılı uygulanması biraz zaman alabilir. Ek olarak personel eğitimi ve adaptasyon sürecinde projenin tamamlanmasını geciktirebilir.
+
+604
+01:05:17,963 --> 01:05:24,503
+Sosyal fizibilitede bir tür sistem polis merkezi, personeli ve genel halk için büyük bir değer sağlar.
+
+605
+01:05:24,947 --> 01:05:37,967
+Yönetim fizibilitesinde de 3 puan verdik. Sistemi yönetmek bir dizi farklı görev ve sorumluluk içerir. Bu yüksek düzeyde koordinasyon ve yönetim becerisi gerektirir ve dolayısıyla yönetim fizibilitesinin puanını düşürür.
+
+606
+01:05:38,967 --> 01:05:47,347
+Ve yasal fizibilitede yasal gereklikleri bu tür bir sistem için özellikle önemlidir. Veri gizliliği ve güvenliği konusunda kesin canlandırılır.
+
+607
+01:05:47,347 --> 01:05:51,668
+Bu da yasal fizibilitede puanını etkiler.
+
+608
+01:05:52,083 --> 01:06:00,643
+Gereksinim analizi, işte bu aşama polis merkezindeki belli ihtiyaçları ve gereksinimleri anlamak için önemlidir. O yüzden 40 puan verdik buna.
+
+609
+01:06:00,643 --> 01:06:16,983
+Şimdi, şeye tekrar geçelim. Gereksinim analizinde, siz burada nesneye yönelik mi çalıştınız, yapısal yaklaşımla mı?
+
+610
+01:06:17,983 --> 01:06:19,043
+Yapısal yaklaşımla.
+
+611
+01:06:19,731 --> 01:06:22,692
+Yapısal yaklaşım. Hangi diagramlar çizildi?
+
+612
+01:06:24,271 --> 01:06:27,132
+Onu isterseniz [öğrenci] arkadaşım anlatsın.
+
+613
+01:06:27,932 --> 01:06:29,352
+Use case ve veri akış diyagramı.
+
+614
+01:06:29,352 --> 01:06:31,112
+Sende neler çizildi? Onun farkında?
+
+615
+01:06:31,112 --> 01:06:35,092
+Use case var, yapı diagramı var, veri akış diyagramı var.
+
+616
+01:06:38,052 --> 01:06:41,512
+Daha sonra işte use case kullanım senaryolarımız var.
+
+617
+01:06:42,332 --> 01:06:43,652
+Veri ilişki diagramımız var.
+
+618
+01:06:43,652 --> 01:06:45,228
+Ama use case...
+
+619
+01:06:45,492 --> 01:07:03,252
+Çizdiğinizde nesneye yönelik yapmanız daha uygun. Siz yapısal yaklaşımla yaptınız. Pasarımda hangi diyagramları çizdiniz? Bir daha sorayım. Herkes her şeyin farkında ama onu anlamak istiyorum.
+
+620
+01:07:03,252 --> 01:07:06,892
+Beli akış diyagramını çizdik. ER diyagramı.
+
+621
+01:07:08,472 --> 01:07:13,032
+Şöyle hızlıca bir geçin raporunuzdan. Bakalım hep beraber kontrol edelim.
+
+622
+01:07:16,211 --> 01:07:25,112
+Use case, veri tabanı diyagramı, veri akış diyagramı, veri akış diyagramlarınız.
+
+623
+01:07:26,172 --> 01:07:41,791
+Şimdi sizin programınız, yapı diyagramınız da var. Programınız, program kodlamanız yapısal yaklaşımla mı? Nesneye yönelik.
+
+624
+01:07:45,043 --> 01:07:46,543
+Kim cevap verecek buna?
+
+625
+01:07:47,063 --> 01:07:48,284
+Yapısal yaklaşımla.
+
+626
+01:07:48,704 --> 01:07:59,443
+Yapısal yaklaşımla. O zaman siz sadece veri akış diyagramlarınızı, yapı diyagramınızı ve veri tabanı tasarımınızı verecektiniz.
+
+627
+01:07:59,443 --> 01:08:02,403
+Yani diğerlerini hani...
+
+628
+01:08:02,403 --> 01:08:03,864
+Yani use case olmayacak mıydı hocam?
+
+629
+01:08:04,043 --> 01:08:09,123
+Use case olmayacaktı. Artışıl diyagramınız yok zaten.
+
+630
+01:08:09,715 --> 01:08:19,496
+Hani use case'e de gerek yoktu. Veri akış diyagramını vermiştiniz çünkü. Neyse, tamam, güzel. Evet, başka ekleme yapmak isteyen var mı?
+
+631
+01:08:21,056 --> 01:08:24,996
+Yani diğer diagramları sunmayacaksak? Yok.
+
+632
+01:08:25,755 --> 01:08:29,515
+Tamam. Tamam, teşekkürler.
+
+633
+01:08:30,195 --> 01:08:31,636
+Biz teşekkür ederiz hocam.
+
+634
+01:08:33,536 --> 01:08:35,115
+Grup 13 mü kaldı şimdi?
+
+635
+01:08:35,731 --> 01:08:38,791
+Bir de dokuzda kim varsa onlara anlatacak bir şeyler.
+
+636
+01:08:42,484 --> 01:08:45,784
+Grup 13. [öğrenci].
+
+637
+01:08:48,123 --> 01:08:49,424
+[öğrenci] burada mı?
+
+638
+01:08:50,344 --> 01:08:51,424
+Buradaydı az önce.
+
+639
+01:08:52,224 --> 01:08:53,043
+Gelecek mi?
+
+640
+01:08:54,004 --> 01:08:55,184
+Burada hocam şeydi.
+
+641
+01:08:56,524 --> 01:08:57,484
+[öğrenci].
+
+642
+01:08:57,504 --> 01:08:58,084
+Yine gördüm.
+
+643
+01:08:58,463 --> 01:08:58,764
+Burada.
+
+644
+01:08:59,284 --> 01:09:01,304
+Burada [öğrenci], burada hocam yazıyor.
+
+645
+01:09:02,024 --> 01:09:03,564
+[kişisel bilgi]
+
+646
+01:09:04,844 --> 01:09:06,324
+[kişisel bilgi]
+
+647
+01:09:06,584 --> 01:09:08,224
+Hiç çalışmadı ve bıraktı yani.
+
+648
+01:09:08,684 --> 01:09:09,623
+[kişisel bilgi]
+
+649
+01:09:10,228 --> 01:09:12,927
+Bilmiyorum, onu bilmiyorum ama projeyi bıraktı yani.
+
+650
+01:09:26,452 --> 01:09:45,452
+[kişisel bilgi] [öğrenci]. Benim hocam burada. Bir de [öğrenci]. Buradayım hocam. Mustafa hocam gördünüz mü katılımcilerin arasında? Şu an var da sormuştunuz. Bakıyorum. [öğrenci].
+
+651
+01:09:52,404 --> 01:10:18,484
+[öğrenci], burada mısın? Adı burada ama kendi bir yerlere gidiyor. Bir yere gidip gelmiş olabilir. Evet, şimdi başlayın anlatmaya. Anlatma görevi neredeydi? Efendim hocam? [öğrenci] nerede anlatacak? [öğrenci] kodu yazdı hocam. Sonra ona da bir şeyler sorarız. Evet.
+
+652
+01:10:18,960 --> 01:10:22,960
+Tamamdır hocam. Ben ekranı paylaşıyorum. Görünüyor mu hocam?
+
+653
+01:10:23,159 --> 01:10:23,680
+Görünüyor.
+
+654
+01:10:25,359 --> 01:10:29,039
+Hocam ben başlıyorum. İç önce projemizin adı online yemek.
+
+655
+01:10:29,039 --> 01:10:38,879
+Bir dakika, bir dakika. Ben şey yapacağım önce bir proje konusunu vesaire onları bir açıklayacağım. Ondan sonra şey yaparım. Tamamdır.
+
+656
+01:10:42,479 --> 01:10:43,879
+Hocam projemizin...
+
+657
+01:10:43,879 --> 01:10:44,559
+Online yemek.
+
+658
+01:10:45,300 --> 01:10:52,840
+Aynen, online yemek hizmetleri, getir, yemek sepeti gibi onların üç bir imitasyonunu yaptık aslında.
+
+659
+01:10:53,840 --> 01:10:56,260
+Onları bildiğiniz gibi nasıl çalıştığınız zaten biliyorsunuz.
+
+660
+01:10:56,260 --> 01:11:04,700
+Çeşitli restoranları bir araya getirerek kolayca bir seçim yapma olanağı sunuyor menüler arasından vs.
+
+661
+01:11:04,980 --> 01:11:11,220
+Yine adresi dayalı, kuryeler vs. var. Onlar çalışıyor, adresinize yemeğinizi getiriyor.
+
+662
+01:11:12,627 --> 01:11:28,807
+Bu organizasyon şeması hocam, proje yöneticisi, IMEG, tabii bu ilk başta kurguladığımız organizasyon şeması ama kaymalar oldu dediğim gibi arkadaşımız ayrıldığından dolayı.
+
+663
+01:11:29,587 --> 01:11:43,287
+Kuruje yöneticimiz, IBAC, toplantı raporları, organizasyon işleması, Gantt diyagramı vs. onda. Ben sistem analistiyim. TASAK veri akış diyagramı, birinci düzey veri akış diyagramı, ikinci düzey veri akış diyagramı kullanım senaryolarını ben yapıyordum.
+
+664
+01:11:44,188 --> 01:11:57,147
+Sistem tasarımcısı bahsettiğim gibi bir arkadaşımızın kısmıydı, onu paylaştık kendilerimizde. Yapı diyagramıyla ER diyagramı, yazılımcı musap, fiziksel veri tabanı ve kodlama.
+
+665
+01:11:57,747 --> 01:12:07,807
+Müşteri de [öğrenci], onun da müşteri değerlendirmesi var. Buradan [öğrenci] devam etsin hocam.
+
+666
+01:12:09,188 --> 01:12:24,107
+Hocam, biz bir tane proje bitirdikten sonra bir toplantı yaptık. Toplantıda uygulamanın tanıtımı, uygulamanın özellikleri yani, restoranları seçebilmek, restorandan menüyü seçebilmek ve oradan sipariş vererek.
+
+667
+01:12:24,564 --> 01:12:26,364
+Getir tarzını uygulama yaptık.
+
+668
+01:12:26,884 --> 01:12:29,203
+Bunun toplantısını uygulamayı bitirdikten sonra yaptık.
+
+669
+01:12:31,844 --> 01:12:33,203
+Devam edebiliriz.
+
+670
+01:12:33,764 --> 01:12:33,984
+Evet.
+
+671
+01:12:34,564 --> 01:12:35,184
+Tamamdır.
+
+672
+01:12:35,924 --> 01:12:37,203
+Şeyleri açıklamayacak mısın?
+
+673
+01:12:37,203 --> 01:12:39,963
+Uygulama, tanıtımı, özellikler.
+
+674
+01:12:41,064 --> 01:12:42,164
+Uygulamamızı işte.
+
+675
+01:12:42,524 --> 01:12:44,104
+Elçin Hanım'a göstereceksiniz.
+
+676
+01:12:44,844 --> 01:12:47,043
+Ona göstermişiz zaten. O zaman ilerliyorum.
+
+677
+01:12:47,043 --> 01:12:47,764
+Evet.
+
+678
+01:12:50,064 --> 01:12:50,344
+Öyle.
+
+679
+01:12:50,899 --> 01:13:10,819
+Uygulamanın gelişimi, kullanıcıların ihtiyaçlarını belirlemek, uygulamanın arayöz tasarımını oluşturmak, yazılım gelişme, uygulamanın temel fonksiyonlarını ve arka plan işlemlerini kodlamak, pazarlama büyüme genellikle ise getir nasıl pazarlanır, reklamlarla, promosyonlarla, indirimlerle kullanıcı tabanını böyle büyüklüğünü düşündük.
+
+680
+01:13:14,996 --> 01:13:33,176
+Toplantıda uygulamanın genel özellikleri gelişim başarı hakkında bilgi paylaşım yaptık. Uygulamanın test edilmesi, hatalarının düzeltilmesi yapıldı. Pazarların bilme stratejinin uygulandı. Kullanış tabanının arttırılması hedeflendi. Toplantı uygulamayı iyileştirme amacıyla gerçekleşti.
+
+681
+01:13:35,316 --> 01:13:37,556
+İlerliyorum. [öğrenci]'i bana söyleyeyim.
+
+682
+01:13:39,060 --> 01:13:40,700
+Burayı [öğrenci] hazırlamıştı.
+
+683
+01:13:40,700 --> 01:13:44,660
+Hocam, burası bende. Toplam projemiz 45 kesimdindim.
+
+684
+01:13:45,140 --> 01:13:51,460
+Projeyi başlangıç ekip oluşturmadan hayata gitme etrafa falan arasında bir gantil önerisi yaptım.
+
+685
+01:13:51,960 --> 01:14:02,400
+Arkadaşlarımızın dediği gibi sadece bir toplantıda ve toplantıda dediğiniz gibi bütün konuşulan başlıkları ve bütün belirlenen planları teker teker yazdık.
+
+686
+01:14:03,140 --> 01:14:05,720
+Sonuç olarak da böyle bir gantil öneri ortaya çıkardık.
+
+687
+01:14:07,220 --> 01:14:07,900
+Geçen mi?
+
+688
+01:14:10,400 --> 01:14:31,199
+Tamamdır. Buradan sonrası ben de. Bu Tasak veri akış diyagramımız hocam. İki kişi var, çalışan ve müşteri. Bunların restoran bilgi sistemiyle arasındaki ilişkileri görebiliyoruz. Müşteri menü alıyor ve para veriyor. Çalışan malzeme veya ürün değişikliği gibi.
+
+689
+01:14:31,712 --> 01:14:35,552
+işlemleri yapıyor restoran bilgi sisteminde ve mevcut durumu öğrenebiliyor.
+
+690
+01:14:37,891 --> 01:14:40,872
+Bu birinci bir akış diyagramımız.
+
+691
+01:14:42,872 --> 01:14:48,912
+Müşteri yine burada önüne seçilen restoran seçeneklerinden birini seçiyor.
+
+692
+01:14:49,912 --> 01:14:52,712
+Önüne sunulan restoran seçeneklerinden birini seçiyor.
+
+693
+01:14:53,971 --> 01:15:16,332
+Bu restorana göre menü veriliyor müşteriye. Müşteri buradan istediği ürünü seçerek, tabii öncesinde adres yazımı falan bir işlemleri var. Ondan sonra ürünü alıyor. Burada çalışan için ayrı şeyler görüyoruz. Ürün ekleme çıkarma işlemleri var menü yönetim kaydında.
+
+694
+01:15:17,811 --> 01:15:27,132
+Kuriyelerimiz var. Kuriyeler de yine satış sistemine dahil. Ve bir de ürün stok sistemimiz var. Burada da ürün ekleme çıkarma yapılıyor.
+
+695
+01:15:29,672 --> 01:15:36,132
+Buradan sonrası bu ikinci düzey. Burada çok net gözükmüyor. Zaten daha büyük halini göstereceğim ama...
+
+696
+01:15:36,851 --> 01:15:39,112
+Uzaktan bakınca yani böyle görünüyor.
+
+697
+01:15:39,731 --> 01:15:41,951
+Çok yaklaşırsak görebiliyoruz.
+
+698
+01:15:41,971 --> 01:15:44,152
+Yaklaştıracağım, onlar var hocam parçalı olarak.
+
+699
+01:15:44,591 --> 01:15:46,751
+Üst kısım şu şekilde.
+
+700
+01:15:46,931 --> 01:15:49,571
+Siz de yapısal yaptınız, hangi dil yapmıştınız?
+
+701
+01:15:49,571 --> 01:15:51,351
+Yok, şey, nesneye yönelik hocam.
+
+702
+01:15:51,711 --> 01:15:52,711
+Nesneye yönelik mi?
+
+703
+01:15:52,951 --> 01:15:54,192
+C şartla yapmıştım.
+
+704
+01:15:54,811 --> 01:16:01,091
+Anladım. Peki, şeyiniz var ama, use case diyagramınız yok, veri akış diyagramınız mı var?
+
+705
+01:16:02,031 --> 01:16:03,851
+Use case var hocam, onu...
+
+706
+01:16:04,467 --> 01:16:07,047
+Ana şeyi eklememiş olabilirim ama case var.
+
+707
+01:16:09,207 --> 01:16:18,887
+Eklememiz gereken işte UML ve ardışıl diagramlar vardı ama onu [öğrenci] arkadaşımız yapacaktı. O ayrılınca şey yapamadım.
+
+708
+01:16:21,147 --> 01:16:23,987
+Ben yaptığım kısmını anlatmaya devam edeyim.
+
+709
+01:16:26,127 --> 01:16:31,287
+Şöyle bir hızlıca gösterir misiniz ilk baştan diagramlarınızı?
+
+710
+01:16:32,212 --> 01:16:34,592
+Tamam dur hocam. Buradan başlıyorum değil mi?
+
+711
+01:16:35,811 --> 01:16:37,592
+Diyagramlar buradan mı başlıyor?
+
+712
+01:16:37,692 --> 01:16:38,752
+Aynen buradan başlıyor.
+
+713
+01:16:39,092 --> 01:16:42,652
+Tamam, yok. Tamam, devam edebilirsin o zaman kaldığın yerde.
+
+714
+01:16:49,412 --> 01:16:51,972
+Gant diagramınızı nerede çizmiştiniz?
+
+715
+01:16:52,152 --> 01:16:52,692
+Burada hocam.
+
+716
+01:16:54,032 --> 01:16:55,391
+Yani nerede hazırladınız?
+
+717
+01:16:56,243 --> 01:16:58,983
+Bunu [öğrenci] hazırladı hocam, o söylesin.
+
+718
+01:16:59,344 --> 01:17:00,643
+[öğrenci] nerede hazırladı?
+
+719
+01:17:01,403 --> 01:17:04,323
+Hocam, GAMP diagramı biraz değişik oldu hocam.
+
+720
+01:17:05,583 --> 01:17:08,724
+Hazırlama tarafını tam böyle hazırlayamamıştım bunu.
+
+721
+01:17:08,943 --> 01:17:13,643
+O yüzden resim demeyeyim de hocam böyle, cörbitlerime göre yapmayı çalıştım.
+
+722
+01:17:14,643 --> 01:17:18,163
+Peki şey var mı? My Stone'un var mı?
+
+723
+01:17:19,663 --> 01:17:22,224
+Hocam, o bende yok.
+
+724
+01:17:24,115 --> 01:17:25,496
+milestone nedir?
+
+725
+01:17:29,747 --> 01:17:32,327
+Hocam başkası da cevap verebilir.
+
+726
+01:17:32,867 --> 01:17:36,867
+Hocam kilit bir işlem olduğu zaman ona milestone diyoruz mesela.
+
+727
+01:17:37,107 --> 01:17:38,347
+Yok, kilit değil.
+
+728
+01:17:39,867 --> 01:17:42,907
+Değil mi? O yapılmadan ilerlenemeyecek işlemler.
+
+729
+01:17:43,647 --> 01:17:44,027
+Yok.
+
+730
+01:17:45,967 --> 01:17:47,287
+Kilometre taşı ne demek?
+
+731
+01:17:49,787 --> 01:17:52,967
+Mesela hayatta senin kilometre taşların nelerdir?
+
+732
+01:17:56,500 --> 01:17:57,779
+Bayusta mı oluyor hocam?
+
+733
+01:17:59,880 --> 01:18:03,000
+Nerede olduğumuzu belirten işaretler gibi mi?
+
+734
+01:18:03,020 --> 01:18:09,239
+Evet, yani şimdi bu bir süreç olduğuna göre sürecin önemli dönüm noktaları.
+
+735
+01:18:09,819 --> 01:18:13,359
+Orada durup bir geriye bakarsın buraya kadar nasıl geldim diye.
+
+736
+01:18:15,359 --> 01:18:16,359
+Bu aslında...
+
+737
+01:18:17,140 --> 01:18:21,320
+Renkli yazılanlar sanırım bunlar Mayıs sonları mı karşılık geliyor?
+
+738
+01:18:21,320 --> 01:18:24,640
+Mesela hayatın için ne dersin? Kilometre taşları.
+
+739
+01:18:25,940 --> 01:18:27,900
+Lise ve üniversite sınavları diyebilirim.
+
+740
+01:18:27,900 --> 01:18:34,720
+Evet, evet. Yani işte liseye giriş sınavı, oraya kadar geldiğinde.
+
+741
+01:18:35,720 --> 01:18:40,100
+Ondan sonra üniversiteye giriş başlama zamanı.
+
+742
+01:18:40,479 --> 01:19:04,159
+Sonra inşallah bitirme zamanınız. Bundan sonra ne yapacağız? Buraya kadar ne yaptık? Bundan sonra ne yapacağız? Süreçte de öyle. Yazılım geliştirme, sistem geliştirmede de öyle. Analiz bitti. İyi miyiz? İyi bir yerde miyiz? Tasarıma nasıl başlayacağız? Evet. Dönüm noktaları yani süreci.
+
+743
+01:19:07,828 --> 01:19:09,268
+Devam edeyim o zaman.
+
+744
+01:19:09,288 --> 01:19:11,368
+Devam edin. Tasarıma geçin şimdi.
+
+745
+01:19:12,428 --> 01:19:15,608
+Tamam, buraya baktım. Tasarıma geçin.
+
+746
+01:19:17,928 --> 01:19:19,348
+Bu use case zaten.
+
+747
+01:19:20,148 --> 01:19:20,988
+Evet.
+
+748
+01:19:21,788 --> 01:19:23,588
+Burada çalışanın...
+
+749
+01:19:23,891 --> 01:19:25,931
+kullanabildiği fonksiyonları.
+
+750
+01:19:25,931 --> 01:19:38,511
+Yani şu anda çok az kişi kaldınız ama bundan sonrası için, final için hep bu şeyleri yapısal yaklaşımla yaptığınızda analiz için hangi diagramları çizmeniz lazım?
+
+751
+01:19:39,391 --> 01:19:42,391
+Tasarım için hangi diagramları çizmeniz lazım?
+
+752
+01:19:43,952 --> 01:19:48,152
+Nesneye yönelik çalıştığınızda hangi diagramı çizmeniz lazım analizde?
+
+753
+01:19:48,252 --> 01:19:50,452
+Tasarımda hangi diagramı çizmeniz lazım?
+
+754
+01:19:51,891 --> 01:20:00,051
+Bunlar önemli. Ortak anlaşma şeyleriniz, dilleriniz bunlar.
+
+755
+01:20:02,192 --> 01:20:10,931
+Onun için hani bunları anlamlı çizmek gerekiyor, şekil olsun diye değil. Bunları çalışın biraz sınav için.
+
+756
+01:20:10,931 --> 01:20:13,971
+Evet, şimdi devam edin.
+
+757
+01:20:14,452 --> 01:20:25,632
+Burada çalışanın yapabildiği şeyleri görüyoruz. Ürün ekran, ürün silme, ürün miktarı azaltma, artırma. Bu da müşterinin restoran seçme ve ürün seçme seçenekleri.
+
+758
+01:20:26,392 --> 01:20:31,032
+Evet, devam edelim. Başka tasarım sırasında yapı diyagramınız mı var?
+
+759
+01:20:31,112 --> 01:20:34,452
+Bunu [öğrenci] hazırlamıştım. Bu normal bir [öğrenci]'in göreviydi.
+
+760
+01:20:34,612 --> 01:20:37,072
+Arkadaşlar bunu ben devralım yapı diyagramı.
+
+761
+01:20:37,695 --> 01:20:45,215
+Burada kullanıcı restoranları listeliyor, uygulama restoran listesini gönderiyor, veri tabanı restoran bilgisini uygulamaya gönderiyor.
+
+762
+01:20:45,215 --> 01:20:55,375
+Burada mesela tasarım sırasında yapı diagramının anlamı şu, bizim böyle hep düz akışı olmaz, bazen dallanmalar olur program çalışırken.
+
+763
+01:20:55,375 --> 01:21:04,595
+Yani modüllerin çalışma sırası nasıl olacak? Hani uygulama değil de sipariş verme isteği, bu istek onay.
+
+764
+01:21:05,695 --> 01:21:11,115
+Biraz normal yapı diyagramından uzakta bir şekil olmuş.
+
+765
+01:21:11,835 --> 01:21:20,335
+Ben dallanmalı yapmaya çalışmadım. Nerede dallanma yapacağını aklıma gelmedi. Bana biraz düz sıralı olduğunu varsaydım çünkü.
+
+766
+01:21:20,755 --> 01:21:22,715
+Tüm işlemler sıra sıra oluyor ya.
+
+767
+01:21:22,715 --> 01:21:23,735
+O yüzden.
+
+768
+01:21:24,595 --> 01:21:28,135
+Sıra sıra olsa da soldan sağa doğru gider dallanmalar.
+
+769
+01:21:29,875 --> 01:21:31,595
+Evet, devam edin.
+
+770
+01:21:34,515 --> 01:21:52,735
+Başka bir şey var mı? ER diyagramımız var. ER diyagramına bakayım. Onu da ben çizdim. Burada kullanıcımız var. Sipariş var, restoran var, menü var. Kullanıcının adı, soyadı, ID'si, telefonu var. Kullanıcı sipariş veriyor. Siparişin ID'si.
+
+771
+01:21:52,735 --> 01:21:56,615
+[öğrenci] nerede? Katıldın mı?
+
+772
+01:21:57,335 --> 01:21:58,456
+[öğrenci] toplantıda.
+
+773
+01:22:00,295 --> 01:22:00,996
+[öğrenci].
+
+774
+01:22:01,652 --> 01:22:03,412
+Burada hocam, sesi geldi o zaman.
+
+775
+01:22:04,072 --> 01:22:05,112
+[öğrenci], neredesin?
+
+776
+01:22:06,511 --> 01:22:07,652
+Sesim geliyor mu hocam?
+
+777
+01:22:07,952 --> 01:22:11,672
+Şimdi geliyor. Şimdi sen kodlamayı yaptın herhalde.
+
+778
+01:22:12,332 --> 01:22:13,091
+Evet hocam, aynen.
+
+779
+01:22:13,931 --> 01:22:18,051
+Hangi dille yaptın? Veri tabanında da sen mi hazırladın?
+
+780
+01:22:18,391 --> 01:22:19,572
+Veri tabanında da hazırladın mı?
+
+781
+01:22:19,572 --> 01:22:24,652
+C şartla yazdım, ayrıca veri tabanında eskali sarılmadım.
+
+782
+01:22:28,212 --> 01:22:36,612
+SQL Server'da hangi şeyleri oluşturdun? Tabloları.
+
+783
+01:22:38,891 --> 01:22:50,972
+Şöyle söyleyeyim hocam, zaten bir kullanıcı tablosu vardı, bir sipariş tablosu vardı, bir kuryeler tablosu vardı.
+
+784
+01:22:51,032 --> 01:22:53,891
+Hocam size gösterseniz ekran paylaşırsınız.
+
+785
+01:22:54,739 --> 01:22:57,899
+ER diyagramı duruyor burada. Oradan bakıp okuyor zaten.
+
+786
+01:23:00,139 --> 01:23:05,399
+Sadece kuryeler yok burada. Kuryelerin de olduğunu söyledi.
+
+787
+01:23:06,159 --> 01:23:13,839
+Evet. Bir de zaten menüler tablosu vardı. Restoranlar tablosu vardı.
+
+788
+01:23:13,839 --> 01:23:16,079
+Evet. Tamam. Teşekkürler.
+
+789
+01:23:17,279 --> 01:23:18,159
+Şimdi
+
+790
+01:23:19,380 --> 01:23:24,260
+9. gruba geçebiliriz. Sizin grupta başka ekleyeceğiniz bir şey var mı?
+
+791
+01:23:24,640 --> 01:23:26,480
+Müşteri değerlendirmesinde.
+
+792
+01:23:27,600 --> 01:23:27,880
+Evet.
+
+793
+01:23:30,840 --> 01:23:35,000
+Mesela müşteri değerlendirmesinde biz inceledik.
+
+794
+01:23:35,120 --> 01:23:39,460
+İşte yemek sepetinde şurada şurada şöyle oluyor ama biz biraz daha basitleştirdik.
+
+795
+01:23:40,020 --> 01:23:44,800
+Çünkü bu amatör bir program. Şöyle yaptık, böyle yaptık diyeceğiniz bir şey var mı?
+
+796
+01:23:47,507 --> 01:24:02,467
+Yani yemek sepetindeki gibi direkt mesela kuryoyu takip etme falan konum olarak tam olarak öyle bir özellik yok. Canlı konumdan kuryoyu takip etme durumu falan.
+
+797
+01:24:09,684 --> 01:24:11,264
+Bu şekilde hocam vermişsin.
+
+798
+01:24:11,324 --> 01:24:13,243
+Evet, tamam. Teşekkürler.
+
+799
+01:24:14,623 --> 01:24:15,484
+Biz teşekkür ederiz.
+
+800
+01:24:15,524 --> 01:24:16,644
+Biz teşekkür ederiz hocam.
+
+801
+01:24:22,452 --> 01:24:25,212
+Şimdi grup 9'da kimler var, kimler yok?
+
+802
+01:24:26,992 --> 01:24:28,132
+[öğrenci]
+
+803
+01:24:35,699 --> 01:24:37,899
+Var olanlar söylesin önce.
+
+804
+01:24:38,779 --> 01:24:39,599
+Varım [öğrenci].
+
+805
+01:24:40,199 --> 01:24:41,000
+[öğrenci].
+
+806
+01:24:41,699 --> 01:24:43,659
+[öğrenci], [öğrenci].
+
+807
+01:24:44,340 --> 01:24:44,619
+Evet.
+
+808
+01:24:45,179 --> 01:24:46,059
+Başka?
+
+809
+01:24:48,239 --> 01:24:51,679
+Hiç arkadaşım yok dediler, diğerlerini bilmiyorum.
+
+810
+01:24:52,619 --> 01:24:54,599
+[öğrenci] daha [öğrenci] yok.
+
+811
+01:24:56,840 --> 01:25:01,859
+Ama o yazmamıştı, [öğrenci] ile [öğrenci] yazmıştı.
+
+812
+01:25:03,155 --> 01:25:08,695
+[öğrenci], [öğrenci] çalıştı ama bugün mü yok?
+
+813
+01:25:10,535 --> 01:25:12,935
+Hepsi biraz çalıştılar aslında.
+
+814
+01:25:13,795 --> 01:25:19,076
+Biraz çalıştı da esas çalıştı diyeceği kim?
+
+815
+01:25:20,235 --> 01:25:22,115
+Raporu ben hazırladım hepsini.
+
+816
+01:25:22,935 --> 01:25:23,415
+[öğrenci].
+
+817
+01:25:23,415 --> 01:25:24,215
+Evet.
+
+818
+01:25:25,595 --> 01:25:26,815
+[öğrenci] ne yaptı?
+
+819
+01:25:27,539 --> 01:25:36,659
+[öğrenci], o kodun face recognition kısmını yaptı. Ben de kodların yazdıkları modülleri birleştirdim hepsini.
+
+820
+01:25:37,939 --> 01:25:38,939
+[öğrenci]?
+
+821
+01:25:39,819 --> 01:25:45,119
+O şey, bu filtreleme, employee açleme, Excel'e yazma, onu yazdım.
+
+822
+01:25:45,119 --> 01:25:47,539
+Baştan itibaren çıkan yok mu grupta?
+
+823
+01:25:48,759 --> 01:25:51,319
+Yok, hiç kimse çıkmadı. Ara ara konuştuk.
+
+824
+01:25:52,159 --> 01:25:54,919
+Ara ara konuştunuz. Peki bugün niye gelmediler?
+
+825
+01:25:55,859 --> 01:25:57,139
+Onu bilmiyorum.
+
+826
+01:25:57,539 --> 01:25:59,439
+Peki, şeye yüklediniz mi?
+
+827
+01:26:00,220 --> 01:26:05,579
+Evet, ben sisteme PDF'i yükledim. Şimdi de PDF'i sunabilirim hepsini.
+
+828
+01:26:06,739 --> 01:26:11,639
+Kodu da gtap linkini atmıştık, sunduk kodu. Ben dün kodu sundum.
+
+829
+01:26:14,659 --> 01:26:15,899
+Sen sundun.
+
+830
+01:26:16,479 --> 01:26:16,720
+Evet.
+
+831
+01:26:24,659 --> 01:26:37,239
+Evet, bunların hepsi yani çok az bir puan alırlar. Çünkü hiçbir mazerette söylemediler katılmakla ilgili.
+
+832
+01:26:40,059 --> 01:26:42,899
+Kodun sunumunda senden başka kimse var mıydı?
+
+833
+01:26:43,659 --> 01:26:43,899
+Hayır.
+
+834
+01:26:44,559 --> 01:26:45,479
+Hayır, tamam.
+
+835
+01:26:50,195 --> 01:26:56,015
+Yani bunların içinde hepsinden biraz daha çok çalıştı diyeceğin kimse var mı?
+
+836
+01:26:57,155 --> 01:27:04,275
+Bu [öğrenci] şey yaptı, Excel dosyası hazırladı, 350 şiriş çalışan database gibi.
+
+837
+01:27:06,376 --> 01:27:10,596
+Yani kodun bir kısmını o yaptı, ben de birleştirdim. Diğerleri daha az.
+
+838
+01:27:11,096 --> 01:27:11,676
+Daha az.
+
+839
+01:27:15,475 --> 01:27:16,875
+Evet, anlat bakalım.
+
+840
+01:27:18,475 --> 01:27:19,655
+Ekran paylaşıyorum.
+
+841
+01:27:23,699 --> 01:27:25,340
+Geldim ekran.
+
+842
+01:27:25,880 --> 01:27:26,400
+Geldim.
+
+843
+01:27:27,400 --> 01:27:29,840
+İnsan kaynakları yönetim sistemi yaptık.
+
+844
+01:27:31,619 --> 01:27:34,980
+Geç önce ön izleme ve fizibilite analizi var.
+
+845
+01:27:35,420 --> 01:27:37,060
+Toplantılar yaptık.
+
+846
+01:27:38,100 --> 01:27:40,420
+4-5 tane toplantı yaptık.
+
+847
+01:27:42,820 --> 01:27:47,159
+Mayıs ayının 10'unda başladık bu projeyi yapmaya.
+
+848
+01:27:47,667 --> 01:28:05,247
+Her toplantıda da şu an olduğumuz aşamanın aşamayla ilicili kararlar aldık. Toplantıların hepsi Discord'tan yapıldı. Ondan sonra proje yapsı ve organizasyon şeması var.
+
+849
+01:28:06,247 --> 01:28:10,247
+Discord'ta bir para ödediniz mi yoksa?
+
+850
+01:28:10,720 --> 01:28:28,300
+Yok şey, free, proje içi büyülerimiz şöyle, bu alt sistemleri aramızda bölüştük. Ben veri grafiğe yönetilme ile sorumluydum, [öğrenci], çalışan veri tabağılıyız.
+
+851
+01:28:28,420 --> 01:28:31,079
+Geçelim, zaten uyumamış hiçbir şey.
+
+852
+01:28:31,079 --> 01:28:37,360
+Evet, içip yapısında böyleydi ama bu da biraz kaymış oldu.
+
+853
+01:28:38,100 --> 01:28:40,260
+Gant diagramımız var.
+
+854
+01:28:41,500 --> 01:28:43,579
+İlk önce planlamaya başladık.
+
+855
+01:28:44,079 --> 01:28:57,340
+3-4 gün sürdü. Ondan sonra planlama bitti, işten sonra sistem analizine başladık. O da yine 3-4 gün sürdü. Ondan sonra dizayn yaptık. Bundan sonra implementasyon bir hafta falan sürdü.
+
+856
+01:28:58,100 --> 01:29:09,079
+Implementasyon ortasında reportu da hazırlamaya başladık. Sondaysa bu test falan yaptık. Buglarımızı bulup onları düzelttik.
+
+857
+01:29:10,260 --> 01:29:24,479
+Sonra sistem analizi var. Taslak veri akış diyagramımız böyle. Bir tane bu Excel file'ın database olarak Excel file'ı kullandık. Çünkü şey istedik, kullanıcı daha rahat erişim sağlayabilsin.
+
+858
+01:29:25,268 --> 01:29:49,367
+Birbirleri arasında paylaşabilsinler diye. Bu database'imizden main fonksiyonumuza employees, çalışanlar geliyor. Main fonksiyonu direkt Human Resource Manager ile alakalı oluyor. Ondan input'u output alıyor. Bu main fonksiyonundan filtrelenmiş employee'ler UI'mize geliyor. UI'den yine menajere gösteriliyor.
+
+859
+01:29:50,963 --> 01:29:54,523
+Draft DFT, bu taslak ve akış diyagramı.
+
+860
+01:29:55,123 --> 01:30:06,804
+Evet. Taslak akış diyagramında bir tek sistem, bir de kimler var, kaynaklar var. Kaynaklar mı bunlar?
+
+861
+01:30:06,983 --> 01:30:09,443
+Alt sistemlerimizi yazdım.
+
+862
+01:30:09,663 --> 01:30:11,063
+Evet, devam et.
+
+863
+01:30:11,844 --> 01:30:13,764
+Birinci düzeyler var.
+
+864
+01:30:15,043 --> 01:30:17,083
+Bu face recognition ile ilgili
+
+865
+01:30:18,100 --> 01:30:23,779
+Bunu ben yapmadım. O face recognition yapan arkadaş yaptı. Aslında kod da böyle değil, farklı.
+
+866
+01:30:25,380 --> 01:30:29,319
+Face recognition insan kaynaklarında yüz tanıma mı kullanıyorsunuz?
+
+867
+01:30:30,260 --> 01:30:33,500
+Evet ama o biraz şey oldu, çok alakasız oldu.
+
+868
+01:30:33,500 --> 01:30:34,079
+Evet.
+
+869
+01:30:36,212 --> 01:30:56,912
+Bu document generation, main'den employee ID'yi alıyoruz. Sonra o ID'yi data frame'den bulup, o çalışanı, ondan sonra email bilgisi, password'ı alıp, sonra bir template'i doldurup, sonra onu bu SMTP server, Python'da şeyden gönderiyoruz.
+
+870
+01:30:57,292 --> 01:31:01,892
+Bu çok karışık bir diagram olmuş. Ne ikinci düzey, ne birinci düzey.
+
+871
+01:31:03,412 --> 01:31:13,752
+Birinci düzey ile ikinci düzeyin karışımı ve şeylere uymayan bir şey olmuş. Evet, devam et.
+
+872
+01:31:16,311 --> 01:31:20,092
+Bu veri cöntüleme arayüzünün diagramı, birinci düzey.
+
+873
+01:31:20,932 --> 01:31:21,332
+Evet.
+
+874
+01:31:22,612 --> 01:31:24,752
+Bir command line interfazimiz var.
+
+875
+01:31:24,771 --> 01:31:25,792
+Evet, devam edebilirsin.
+
+876
+01:31:25,792 --> 01:31:28,792
+Bu salary managementimiz.
+
+877
+01:31:31,283 --> 01:31:36,983
+İkinci düzeyde de şeyin daha detaylı yaptığım, document generation'ın command line interfeysini.
+
+878
+01:31:37,884 --> 01:31:46,063
+Çünkü bu data frame'den search yapılıyordu, sonra istenilen filtre çıkarılıyordu rowdan, employee hakkında.
+
+879
+01:31:47,443 --> 01:31:48,783
+İkinci seviyede bunu yaptım.
+
+880
+01:31:50,443 --> 01:31:53,783
+Tasarımı, CESM yapı diagramım var.
+
+881
+01:31:59,184 --> 01:32:01,184
+and add modülüne cidiyor.
+
+882
+01:32:01,623 --> 01:32:05,724
+Filter add modülünden filtrelenmiş data frame, data view modülüne cidiyor.
+
+883
+01:32:06,203 --> 01:32:11,923
+Bir de main dashi jpg uzantılı dosya face recognition cidiyor.
+
+884
+01:32:12,363 --> 01:32:16,503
+Face recognition önceden bu train model modülünden T7 dosyalarını alıyor.
+
+885
+01:32:17,403 --> 01:32:18,963
+Öğrenilmiş model dosyalarını.
+
+886
+01:32:19,523 --> 01:32:23,463
+Sonra da jpg recognizer'a veriyor ve...
+
+887
+01:32:23,463 --> 01:32:25,483
+Evet, şimdi tasarımına bakalım.
+
+888
+01:32:27,155 --> 01:32:29,475
+Şu an sistem tasarımında.
+
+889
+01:32:30,475 --> 01:32:31,996
+Yapı diyagramı mı?
+
+890
+01:32:32,095 --> 01:32:33,095
+Bakayım yapı diyagramı.
+
+891
+01:32:33,095 --> 01:32:35,135
+Evet bu yapı diyagramı. Bir saniye şey yapıyorum.
+
+892
+01:32:40,500 --> 01:32:45,659
+ER diyagramında da employee database'inin rola.
+
+893
+01:32:45,659 --> 01:32:46,460
+[öğrenci], sen mi çizdin?
+
+894
+01:32:47,619 --> 01:32:54,479
+Evet, hepsini elimle çizdim, çünki şeyin vaxt itirmek istemedim, aletleri falan kullanmaya çalışmaya.
+
+895
+01:32:54,479 --> 01:32:54,719
+Evet.
+
+896
+01:32:57,880 --> 01:33:01,859
+Şeyleri, böyle filtrleri var, salarisi var, ID'si var, departmanı var.
+
+897
+01:33:02,963 --> 01:33:29,884
+İşi ne, agenda neymi falan. Her row'nun böyle konuları var. Bir tane entitemiz var, o da employee. Cersetleştirmede bunu aslında şeye sunmuştum ben dün. Kod kısmında burayı geçebilir miyim? Python kullandık, şey yaptık. Excel, başlayınca Excel'den okuduk. İşlemleri yapıp sonra sonunda Excel'e yazdık.
+
+898
+01:33:33,395 --> 01:33:36,515
+Test kısmında da müşteri değerlendirmesi şöyle oldu.
+
+899
+01:33:38,475 --> 01:33:43,015
+Celiştirilse ve ara yüzü web'e veya desktop'a taşınsa daha kullanımlı olur.
+
+900
+01:33:43,195 --> 01:33:47,635
+Yani şu an Command Line Interface olarak biraz çok kullanışlı olmadı.
+
+901
+01:33:49,915 --> 01:33:52,076
+Nesliye danayalı yaklaşım kullanmadık.
+
+902
+01:33:53,115 --> 01:33:56,255
+Normal, yapsal yaklaşım kullandık.
+
+903
+01:33:57,268 --> 01:34:02,108
+Bu kadar. Aşağıda da şeyle kodlayıcılık ısımlar var. Onu dün sunmuştuk.
+
+904
+01:34:02,908 --> 01:34:05,268
+Evet. Evet. Tamam. Teşekkürler.
+
+905
+01:34:05,968 --> 01:34:06,708
+Ben teşekkür ederim.
+
+906
+01:34:07,448 --> 01:34:10,208
+Evet. Herkese sınavlarda başarılar.
+
+907
+01:34:12,648 --> 01:34:15,448
+İyi haftalar diliyorum. Dersi bitiriyorum.
+
+908
+01:34:22,355 --> 01:34:23,475
+Sorunuz var mı?

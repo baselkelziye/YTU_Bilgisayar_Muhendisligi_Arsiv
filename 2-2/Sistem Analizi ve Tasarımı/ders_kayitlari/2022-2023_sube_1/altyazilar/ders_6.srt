@@ -1,0 +1,1391 @@
+1
+00:00:18,675 --> 00:00:30,735
+Merhabalar. Bugün size geçen hafta bir ödev vermiştim. Onunla başlayalım.
+
+2
+00:02:26,611 --> 00:02:31,711
+Evet, geçen hafta verdiğim ödevi hazırlayan var mı?
+
+3
+00:02:35,604 --> 00:02:36,284
+[öğrenci]
+
+4
+00:02:42,388 --> 00:02:43,188
+[öğrenci].
+
+5
+00:02:48,188 --> 00:02:51,867
+Sistemi nasıl oluşturduğunuzu anlatır mısınız?
+
+6
+00:02:54,427 --> 00:02:59,307
+Hocam ben PDF'le hazırladım isterseniz. Ekranı paylaşıp gösterebilirim.
+
+7
+00:02:59,588 --> 00:03:07,747
+Tamam, iyi olur. Ben şu videoyu kapatayım ki fili ona göre ayarlayalım.
+
+8
+00:03:08,175 --> 00:03:09,915
+Tamam. Gözüküyor mu?
+
+9
+00:03:09,915 --> 00:03:14,555
+Evet, görüyorum. Önce Tasrakveri akış diyagramını oluşturdunuz.
+
+10
+00:03:15,475 --> 00:03:27,755
+Evet, Tasrakveri diyagramı şöyle. İlk önce öğrenci bölüm, öğretim üyesi, diş birimler var. Ders kayıt sistemiyle ilişkileri var bunların da.
+
+11
+00:03:35,792 --> 00:03:38,112
+Seçebileceği ders listesini sunuyor.
+
+12
+00:03:38,572 --> 00:03:38,912
+Evet.
+
+13
+00:03:39,432 --> 00:03:43,352
+Bölüm açılacak derslerin bilgisini veriyor ders kayıt sistemine.
+
+14
+00:03:43,451 --> 00:03:50,612
+Ders kayıt sistemisi öğretim üyesinden aldığı sınıf listesini bölümü eğitiyor diye bir sistem kurdum.
+
+15
+00:03:51,651 --> 00:03:59,932
+Evet. Öğretim üyeleri dersi alan öğrencileri alıyor. Sınıf listesini vermiyor da not girişini yapıyor.
+
+16
+00:04:01,092 --> 00:04:02,052
+Öğretim üyesi.
+
+17
+00:04:02,431 --> 00:04:04,012
+Tamam, öyle bir değişiklik.
+
+18
+00:04:04,012 --> 00:04:13,031
+Evet, onun haricinde tamam, güzel. Yani veri kaynaklarını da doğru belirlemişsiniz. Doğru, evet.
+
+19
+00:04:13,731 --> 00:04:17,012
+Sonra birinci düzey bir akış diyagramı var burada.
+
+20
+00:04:19,752 --> 00:04:24,271
+Burada da iç işlemleri biraz detaylaştırmaya çalıştım.
+
+21
+00:04:24,863 --> 00:04:47,283
+Bölüm açılacak bilgileri veriyor. Sonra açılacak dersleri işleme birimi var burada. O müfredattan öğrenci hangi bölümdeyse onun bilgilerini, bölüm müfredatını alıyor. Krediler vesaire bilgileri bir depoda tutuyor açık dersler diye ders bilgilerini iletiyor.
+
+22
+00:04:47,711 --> 00:04:49,711
+Ve öğrenciler...
+
+23
+00:04:49,711 --> 00:04:57,711
+Beş dakika ara verelim, bir kabloyu alacağım. İki dakika ara verelim.
+
+24
+00:07:00,403 --> 00:07:02,963
+Evet [öğrenci], devam edebilirsin. Teşekkürler.
+
+25
+00:07:09,427 --> 00:07:10,048
+Gözüküyor musun?
+
+26
+00:07:10,767 --> 00:07:12,487
+Evet, evet görüyoruz.
+
+27
+00:07:12,487 --> 00:07:36,347
+Şimdi az önce söylediğim gibi bölüm açılacak derslerin bilgilerini şu birime gönderiyor. Bu birim ise müfredattan kredi bilgileridir, bölümün müfredat bilgileridir. Bunları toparlayarak öğrenciye seçilebilir derslerini sunuyor ve açık dersler listesine verileri aktarıyor.
+
+28
+00:07:37,012 --> 00:08:02,612
+Öğrenci seçilmiş derslerini ders seçimi, inceleme ve kredi hesabına gönderiyor. Bu birim müfredat bilgilerinden kredi bilgilerini alıyor ve açık dersler veri deposundan da ders saatleri ve kontajen bilgilerini alıyor. Ders saati çakışması vs. gibi kontrolleri yaptıktan sonra doğrulanmış ders seçimini öğrenci kaydı işlemeye gönderiyor.
+
+29
+00:08:03,444 --> 00:08:15,804
+Bu bölümde ise öğrenci bilgi deposundan öğrencinin bilgilerini alıyor ve açık derslerde dersi alan öğrenci olarak onu kaydediyor.
+
+30
+00:08:16,372 --> 00:08:21,951
+Hem de öğrencinin aldığı dersler listesini bilgi deposuna aktarıyor.
+
+31
+00:08:22,612 --> 00:08:25,992
+Bu ders şu öğrenci şu dersleri aldı diye.
+
+32
+00:08:26,152 --> 00:08:28,831
+Evet, burada da notlar olarak düzeltti.
+
+33
+00:08:28,831 --> 00:08:30,632
+Sınav listesini.
+
+34
+00:08:32,052 --> 00:08:45,652
+Kurallar olarak bakalım. Veri kaynağından veri kaynağına bilgi geliyor mu? Gelmiyor. Saklama ortamından, doğrudan saklama ortamına bilgi gelmiyor.
+
+35
+00:08:46,355 --> 00:09:11,296
+Geçen hafta benim söylemediğim bir kural vardı. İkinci kez kullanılıyorsa bir veri kaynağı, onu da köşeye bir çizgi çekerek gösteriliyor. Onu da belirtmiş arkadaşınız saklama ortamı için. Veri kaynakları için de geçerli bu. Orada da aynı şekilde görünmüş. Güzel, evet.
+
+36
+00:09:12,755 --> 00:09:15,456
+Ve de ikinci düzey veri akış diyagramı.
+
+37
+00:09:16,316 --> 00:09:32,076
+Bunun için de ders seçimi inceleme ve kredi hesabı yok. Öğrenci kaydı işlemini seçtim. O da şu şekilde. İçerisinde iki alt birim var. Ders seçimi inceleme ve bu kredi hesabından doğrulanmış ders seçimi alıyor.
+
+38
+00:09:33,235 --> 00:09:39,235
+Öğrencinin aldığı derslerin kaydedilmesi birimiyle ona öğrenci bilgi deposunu aktarıyor alınan dersler diye.
+
+39
+00:09:40,500 --> 00:10:01,379
+İkinci birim ise öğrenci ders alanlarının listesine eklenmesi ve kontenjanın güncellenmesi. O da doğrulanmış ders seçim bilgilerini ve öğrenci bilgilerini alıyor ve açık derslere, açık dersler listesini bu dersi alan öğrenci olarak kaydediyor ve bu kontenjanı artırıyor.
+
+40
+00:10:07,347 --> 00:10:08,227
+Uçak ne yazı.
+
+41
+00:10:18,227 --> 00:10:35,127
+Evet, ikinci düzeyde iki tane alt işlem var. Bu iki tane alt işleme birbirinden bilgi gidiyor mu? Gitmiyor.
+
+42
+00:10:35,127 --> 00:10:37,127
+Yok.
+
+43
+00:10:37,707 --> 00:10:40,127
+Evet. Çünkü...
+
+44
+00:10:44,532 --> 00:11:05,132
+Aldığı derslerin kaydedilmesi. Evet, ikinin birinde veri saklama ortamına veri kaydediliyor. Sonra bu kaydedilen veriyi ikinin ikisi kullanıyor. Evet, bu bakış açısıyla. Yani esas da kurallar açısından uygun olmuş. Teşekkürler.
+
+45
+00:11:05,832 --> 00:11:06,592
+Ben teşekkür ederim.
+
+46
+00:11:06,692 --> 00:11:10,852
+[öğrenci], sen ilk ödevi de yapanlar arasındaydın.
+
+47
+00:11:11,347 --> 00:11:13,687
+Öyle hatırlıyorum, listeye bakacağım ama.
+
+48
+00:11:15,227 --> 00:11:15,667
+Evet hocam.
+
+49
+00:11:18,987 --> 00:11:19,747
+Teşekkürler.
+
+50
+00:11:19,747 --> 00:11:21,587
+Ayrıca şunu da durduruyorum, ben teşekkür ederim.
+
+51
+00:11:22,387 --> 00:11:27,327
+Diğer arkadaşınız da [öğrenci] miydi?
+
+52
+00:11:27,956 --> 00:11:31,115
+[öğrenci] bir de senin çözümüne bakalım.
+
+53
+00:11:31,696 --> 00:11:34,915
+Bakalım hocam ben o kadar ayrıntılı yapmadım açıkçası.
+
+54
+00:11:35,395 --> 00:11:42,516
+Olsun. Sonuçta yani önemli olan kurallara uygun ve işin kapsamını oluşturduğun mu?
+
+55
+00:11:43,716 --> 00:11:46,995
+Şimdi ilk olarak bir taslığım var burada.
+
+56
+00:11:46,995 --> 00:11:47,735
+Evet.
+
+57
+00:11:48,851 --> 00:12:07,971
+Öğretmenlerden verdikleri dersleri alıyor, ders kayıt sistemi. Yani notlara falan hiç girmedim ben sadece. İşte öğrenciler ve hangi derslere ve sınıf listesine son olarak yaptım. Öğrenciler ders kayıt fonu doldurup bunu sisteme veriyor ve bunlardan sonra kabul edilen kayıtlardan da sınıf listeleri oluşturuluyor.
+
+58
+00:12:08,659 --> 00:12:12,659
+Bundan sonra ayrıntılı olarak da, yani birinci düzey olarak da...
+
+59
+00:12:12,659 --> 00:12:15,279
+Hepsi var, bütün alt işlemler var burada.
+
+60
+00:12:15,960 --> 00:12:20,860
+Aynen. Öğretmenler verdikleri dersleri buraya veriyor.
+
+61
+00:12:21,039 --> 00:12:26,680
+İşte ondan sonra bölüm hangi dersleri açacağına karar veriyor ve bunun sonucunda da ders listeleri saklanılıyor.
+
+62
+00:12:27,559 --> 00:12:34,599
+Sonra yine aynı şekilde bu sefer sınıf kapasiteleri şey yapılıp kontajanlar belirleniyor ve bunlar saklanıyor.
+
+63
+00:12:36,659 --> 00:12:43,680
+Kayıt formu dolduruyor bu kontenjanla ders listelerine göre. Derse kaydoluyorlar. Ben sonunda sınıf listeleri oluşturuluyor.
+
+64
+00:12:44,460 --> 00:12:54,420
+Evet, öğretmenlerden bilgi gidiyor. Sınıf listeleri oluşuyor. Aslında burada sen bölümü işin içine katmamışsın galiba değil mi?
+
+65
+00:12:54,940 --> 00:12:57,120
+Şey yaparken aklıma gelmedi.
+
+66
+00:12:57,120 --> 00:13:04,659
+Evet, doğrudan hani kısıtını da bu şekilde kurmuş olduk.
+
+67
+00:13:04,659 --> 00:13:20,660
+Doğrudan sisteme bilgiye hocalar giriyor şeklinde. Ders listelerini ona göre oluşturuyorlar ve öğretmenler yine kontajjana...
+
+68
+00:13:21,587 --> 00:13:31,087
+dahili olan kişiler oluyor. Yani bölümün kontenjan belirlemesi değil de doğrudan öğretim üyelerinin belirlemesi şeklinde oluyor.
+
+69
+00:13:32,487 --> 00:13:44,367
+Öğrenciler de kayıt formunu oluşturur. Evet, daha sade olmuş. Ama en azından yani kuralları ve sistemin bütününü şey yapma açısından seninki de doğru.
+
+70
+00:13:44,367 --> 00:13:49,427
+Bir de ben de bir şey koymuştum.
+
+71
+00:13:49,587 --> 00:14:07,367
+En basit haliyle yapın demiştim. Ama bu basit haline isterseniz not girişlerini de ekleyebilirsiniz. İsterseniz eklemezsiniz. Seninkinde eklenmemiş. O yüzden bir sıkıntı yok. Bunun ikinci düzeyini çizdin mi herhangi birini?
+
+72
+00:14:07,947 --> 00:14:09,087
+Yok çizmedim hocam.
+
+73
+00:14:09,507 --> 00:14:15,587
+Tamam. Zaten basit olduğu için hepsi birinci düzeyde gerekli ayrıntıyı vermiş oldu.
+
+74
+00:14:16,083 --> 00:14:24,303
+Tamamdır, teşekkürler. Başka ödevini göstermek isteyen var mı yaptığı çalışmayı?
+
+75
+00:14:43,860 --> 00:14:47,320
+Evet, o zaman şimdi bugünün konusuna geçebiliriz.
+
+76
+00:14:59,892 --> 00:15:02,152
+Ekran paylaşımı yapayım yine kitaptan.
+
+77
+00:15:09,556 --> 00:15:26,375
+Evet, veri akış diyagramları için daha önce de bir örnek yapmıştık derste, fatura hazırlama örneği. Bunun üzerinde kalmışız. Evet, arkadaşlarınız da buna benzer şekilde oluşturmuşlar.
+
+78
+00:15:36,532 --> 00:15:45,292
+Hangi kararlar alınacaksa bunu durum şeyinde hangi durumlar var?
+
+79
+00:15:46,231 --> 00:16:03,271
+İşte bir disiplin cezasını ve not ortalamasına ve giriş puanına göre öğrencilerin ne tür burs alacaklarını, burs alıp alamayacaklarını ve ne tür burs alacaklarını belirten bir örnek üzerinde karar tablosunu göstermiştik.
+
+80
+00:16:04,532 --> 00:16:13,251
+Dolayısıyla kaç tane sorumuz varsa ikinin üzeri o sayı kadar kolonumuz oluyor.
+
+81
+00:16:13,711 --> 00:16:18,971
+Ki burada üç tane durumumuz var. İki üzeri durum sayısı kadar kolonumuz olabilir.
+
+82
+00:16:19,152 --> 00:16:24,231
+Ama bir tane durum, kör durum diyeceğimiz durum.
+
+83
+00:16:24,371 --> 00:16:32,532
+Yani disiplin cezası almışsa diğerleri ne olursa olsun burs alamaz kararı işle.
+
+84
+00:16:32,532 --> 00:16:55,251
+işlemi uygulanacağı için böyle beş kolonlu bir karar tablosu oldu. Bu karar if bloklarını tanımlamak için ağaç yapısını da kullanabiliriz demiştik. Karar ağaçlarını. Burada da sorular ve sorulara karşı alınan cevaplarla işlemi yürütebiliyoruz.
+
+85
+00:17:00,724 --> 00:17:11,884
+Veri sözlüğü tanımını yapmıştım. Data Dictionary, bilşim maddelerinin içeriğini bil planlarına uygun olarak tanımlamak amacıyla düzenlenmektedir.
+
+86
+00:17:11,884 --> 00:17:22,884
+Ve sadece veri akış diyagramındaki bilgilerle değil, veri sözlüğü, veri akış diyagramı ve...
+
+87
+00:17:23,571 --> 00:17:30,671
+ER diyagramlarındaki veri tanımlamaları olmak üzere her şeye bütün bilgileri içeriyordu.
+
+88
+00:17:32,291 --> 00:17:51,291
+Veri akış sözlüğü veri deposuyla ilişkili, veri akışıyla ilişkili yani nasıl hangi işlemden hangi işleme doğru bilgi gidiyor, işlemlerin tanımlarıyla ilişkili ve veri yapısıyla ilişkili.
+
+89
+00:17:51,571 --> 00:17:56,611
+Veri deposuyla ilişkili bilgileri kaydediyordu.
+
+90
+00:17:57,931 --> 00:18:00,555
+Bu bilgileri...
+
+91
+00:18:00,723 --> 00:18:24,624
+Veri elemanı, veri saklama ortamı, veri akışı ve işlemler olmak üzere, mesela veri akış diyagramındaki hangi işlem, hangi girdilerle hangi işlemi gerçekleşiyor ve hangi çıktığı üretiyor şeklinde bilgi girişi gerçekleştirebiliyoruz.
+
+92
+00:18:24,624 --> 00:18:28,663
+Şimdi sistem tasarımına geçmeden mesleğe yönelik.
+
+93
+00:18:28,723 --> 00:18:46,864
+yaklaşımla sistem yapısı üzerinde duracağız. Nesneye yönelik yaklaşımla biz gereksinim analizini nasıl yapabiliyoruz?
+
+94
+00:18:57,875 --> 00:19:07,596
+Tanımlamaları aynı zamanda nesne yönelik yaklaşım dersinde de temel kavramları görüyorsunuz.
+
+95
+00:19:08,115 --> 00:19:12,816
+Nesne nedir, sınıf nedir kavramlarını.
+
+96
+00:19:13,263 --> 00:19:22,483
+Sınıf aynı özellik ve işlemlere sahip nesne kümesi için yapılan bir tanımlama.
+
+97
+00:19:24,123 --> 00:19:31,403
+Sınıfta tanımlanan işlemleri o sınıftan türetilen nesnelerde gerçekleştiriyorlar.
+
+98
+00:19:31,503 --> 00:19:35,923
+Yani klaslarla objeler arasındaki ilişkiler.
+
+99
+00:19:40,500 --> 00:19:45,360
+Bir sınıfın UML gösterimini bu şekilde tanımlayabiliyoruz.
+
+100
+00:19:46,300 --> 00:19:50,759
+Sınıf yapısında sınıfın adı, özellikleri ve işlemleri.
+
+101
+00:19:51,300 --> 00:19:57,579
+Öncelikle biz sistem analizi sırasında kavramsal sınıf diagramını oluşturuyoruz.
+
+102
+00:20:00,415 --> 00:20:07,516
+İşte hangi nesneler birbirleriyle nasıl ilişkideler onu gösteriyoruz.
+
+103
+00:20:09,516 --> 00:20:14,240
+Nesneler için...
+
+104
+00:20:14,240 --> 00:20:26,500
+Bu tanımı yapınca işlemler de nesnelere uygulanacak işlemler, mesajlar diyebiliyoruz, metotlar şeklinde tanımlıyoruz.
+
+105
+00:20:27,320 --> 00:20:32,400
+Mesela sınıflar arası ilişkileri gösterelim.
+
+106
+00:20:32,519 --> 00:20:42,240
+Sınıflar arası ilişkiler, işte bir satış bilgisinde satış kalemi ilişkisi nasıl gerçekleşiyor?
+
+107
+00:20:42,240 --> 00:20:45,280
+Bunu görebiliyoruz.
+
+108
+00:21:24,723 --> 00:21:36,443
+Nesne 1, nesne 2 arasındaki ilişkiler 0-1, 0 çoklu, 1'e 1 ve 1'e çoklu gibi gösterilebiliyor.
+
+109
+00:21:37,804 --> 00:21:47,723
+Yani bir nesnenin hiçbir elemanı diğer nesne ile ilişkide olmayabilir ama olursa da en fazla...
+
+110
+00:21:49,519 --> 00:21:52,880
+Sıfır bir ilişkisi.
+
+111
+00:21:53,980 --> 00:21:55,519
+Bir nesnenin...
+
+112
+00:21:56,980 --> 00:22:19,340
+Sıfır, sonsuz, birebir, bire çoklu ilişkiler de olabilir. Burada sıfır, alt limit seçimlik. Yani hiçbir elemanıyla da ilişkide olmayabilir. Bir de en az bir elemanıyla mutlaka ilişkide olmalıdır tanımını vermektedir.
+
+113
+00:22:20,240 --> 00:22:23,980
+Kümeleme, aggregation ve composition tanımı.
+
+114
+00:22:24,980 --> 00:22:30,980
+Yine bu ilişkilendirme de var. Sınıflar arasındaki parça bütün ilişkisidir.
+
+115
+00:22:33,740 --> 00:22:41,019
+Hümelemede alt parçalar sadece o sınıfa ait üyeler değil, kendi başlarına da kullanılabilir.
+
+116
+00:22:41,240 --> 00:22:43,980
+Yani aggregation ve composition arasındaki...
+
+117
+00:22:44,768 --> 00:23:11,728
+Farklılık bu. Sol taraftaki kümeleme aggregation ve kümeleme ilişkisi varsa bağlantılı olduğu yerde eşkenar dörtgen var ama içi boş bir eşkenar dörtgen. Yani yığınla liste arasındaki ilişki. Burada kümeleme ilişkisi var.
+
+118
+00:23:12,180 --> 00:23:28,900
+Şuradaki tanıma tekrar bakarsak, kümelemede alt parçalar sadece o sınıfa ait üyeler değil, kendi başlarına da kullanılabiliyorlar.
+
+119
+00:23:29,263 --> 00:23:43,603
+İçi boş, dikdörtgenle belirtiliyor. İçi dolu, dikdörtgende ise mesela bir kitap, bir kitabın bölümü, kısım ve bölümleri kendi başına bir anlam ifade etmiyor.
+
+120
+00:23:57,039 --> 00:24:00,779
+kompozisyon ilişkisi olduğunu görüyoruz.
+
+121
+00:24:00,879 --> 00:24:12,439
+Ve kompozisyon ilişkisi varsa içi kapalı, dolgulu bir eşkenar dörtgen olacak şekilde tanımlanıyor.
+
+122
+00:24:12,919 --> 00:24:24,919
+Genelleştirme, genel tanımlar içeren bir ana sınıfla alt sınıflar arasındaki ilişki çeşidi.
+
+123
+00:24:25,039 --> 00:24:52,239
+Bu da genelleştirme adını alıyor. Mesela müşteri, banka müşterisi ama nasıl müşteri? Kurumsal müşteri de olabilir, şahıs müşteri de olabilir. Bu genelleştirme özelliği ve gösterim şekli de bu şekilde. İçi boş üçgenle birleştiriliyor.
+
+124
+00:24:53,039 --> 00:25:10,559
+Burada çok şekillelik de yine nesneye yönelik kavramlarla ilişkili bir sınıftan yaratılmış olan nesneler aynı mesaja farklı tepkiler verebilirler. Bu olaya da polimorfizm deniyor.
+
+125
+00:25:11,124 --> 00:25:28,604
+İşte kredi hesaplan, farklı müşteriler için farklı hesaplanır. Bu da polimorfizm'dir. Bu arada hangi işlemler var? Kredi hesaplan.
+
+126
+00:25:28,960 --> 00:25:42,779
+Bu kurumsal müşteri de tanımlanmış. Şimdi bu nesne kavramlarını zaten diğer derslerimizde de görüyorsunuz ama bir tekrarını yapmış olduk. Burada da kullanacağız çünkü.
+
+127
+00:25:43,720 --> 00:25:52,759
+Nesne yönelik sistem analizi dediğimizde aklımıza sınıf diagramları geliyor ama sınıf diagramlarının kavramsal gösterimi geliyor.
+
+128
+00:25:52,759 --> 00:25:56,000
+Bir de kullanım senaryoları geliyor.
+
+129
+00:26:02,516 --> 00:26:09,436
+Use case'leri bir belge olarak bir de diagram olarak görüyoruz.
+
+130
+00:26:10,296 --> 00:26:22,256
+Sistemin davranışı, dış olaylara verdiği tepkiler, UML'de sistemin dışarıdan görülebilen ve test edilebilen davranışları kullanım senaryoları ile gösteriliyor.
+
+131
+00:26:22,256 --> 00:26:30,256
+Senaryolar anlamlı bir sonuca ulaşmak için aktörler ve sistemler...
+
+132
+00:26:30,516 --> 00:26:45,976
+Arasında gerçekleşen olaylardır. Aktör bir senaryoyla etkileşime geçen kişi veya kavram veya bir donanım birimidir.
+
+133
+00:26:54,132 --> 00:27:06,591
+Aktörler tanımlanır, birinci ve diğer aktörler. Daha sonra da gerçekleşen işlemler tanımlanır.
+
+134
+00:27:07,672 --> 00:27:19,271
+Yani sizin algoritmadan bildiğiniz adımlar burada aktörlerin gerçekleştirdiği alt işlemler olarak sıralanırlar.
+
+135
+00:27:22,132 --> 00:27:42,124
+Bu açıda burada özetlenir. Genel olarak hangi sırada, hangi işlemler gerçekleştiriliyor? Mesela bizim kahve satış uygulaması dediğimiz bir uygulama var. Bu uygulamada…
+
+136
+00:27:42,195 --> 00:28:08,855
+site kahve satışı yapıyor. Hazır kahve olabileceği gibi özel kahve siparişi de verilebiliyor. Bir alışverişle birden fazla kahve siparişi verilebiliyor. Siparişi tamamlamak için teslimat ve ödeme fonları dolduruluyor. Ödeme yapılıyor ve ödeme doğrulamayınca da depodan alınarak müşteriye teslim ediliyor.
+
+137
+00:28:10,195 --> 00:28:28,195
+Mantıksal sıralaması da burada belirtilmiş ve bu mantıksal sıralamaya göre adımlar belirleniyor ve 7 tane alt işlem olacak şekilde burada sıralandığını görüyoruz.
+
+138
+00:28:29,587 --> 00:28:37,227
+Kullanım senaryosu, yani bir depodaki kişi var, ikinci laktör, birinci laktör de müşteri burada.
+
+139
+00:28:37,227 --> 00:28:44,227
+Kullanım senaryolarında bir aktöre fonksiyonel olarak...
+
+140
+00:28:47,220 --> 00:28:52,140
+İşlemler gerçekleştirilir. Buna da senaryo denir.
+
+141
+00:28:53,920 --> 00:29:04,860
+Ve burada dikkat edeceğiniz şey, yani bu işle ilgili gibi görülebilir ama hiçbir senaryoyla ilişkisini kuramamışsak bir aktörün, o zaman bu aktörün burada işi yok diyeceğiz.
+
+142
+00:29:05,820 --> 00:29:10,660
+Kullanım senaryo modellemesinde yardımcı olan aktörler de vardır.
+
+143
+00:29:10,660 --> 00:29:15,220
+Şimdi bir tane öncelikli kullanım senaryo.
+
+144
+00:29:15,220 --> 00:29:28,220
+Bu sistem için müşteri, ana aktör, birinci aktör hangi işleri gerçekleştirecek?
+
+145
+00:29:28,640 --> 00:29:56,640
+Kahve seçimi yapacak. Kahve seçimi yapacak. Kahve seçimi yapabilmesi yaptıktan sonra sipariş vermek istiyorsa önce bilgi girişi yapmalı ama daha önceden bilgi girişi yapmışsa o zaman sipariş verme sırasında bunu tekrarlamasına gerek yok. Bilgileri sadece ortaya çıkarılır. Kahve seçimi yaparken birden fazla...
+
+146
+00:29:56,640 --> 00:30:10,100
+Bazı da blend kahve oluşturmak isterse o zaman bir ekstent işlemler arasında bir genişleme yani uzatma işlemi vardır.
+
+147
+00:30:10,260 --> 00:30:15,820
+Kahve seçimini özel kahve oluşturmayla genişletebiliriz.
+
+148
+00:30:16,900 --> 00:30:20,720
+Sipariş verme ile bilgi girişi arasında da include ilişkisi var.
+
+149
+00:30:23,988 --> 00:30:25,488
+Uuuuh...
+
+150
+00:30:26,259 --> 00:30:30,980
+Bilgi gelişi sipariş vermenin içinde olarak tanımlanıyor.
+
+151
+00:30:31,819 --> 00:30:38,139
+Aynı şekilde sipariş teslimatı gerçekleştiği zaman fatura basımı da bunun içinde anlatılır.
+
+152
+00:30:38,940 --> 00:30:46,319
+Burada da depo sipariş teslimatını gerçekleştirecek birim.
+
+153
+00:30:46,980 --> 00:30:49,960
+Müşteriye sipariş teslimatı gider.
+
+154
+00:30:51,099 --> 00:30:54,259
+Depodan da bu okun aslında ters oluyor.
+
+155
+00:30:54,259 --> 00:31:22,139
+kullanılması gerekir. İşte burada, şimdi bu örnekte gördük Extend ve Include'u. Senaryolar arasındaki ilişkiler, az önce mesela nesneler arasındaki ilişkileri gördük. Sınıf diyagramında kullanılmak üzere. Burada da senaryolar arasındaki ilişkiler. Senaryolar arasındaki ilişkiler, içerme, include, bir senaryoda kullanılan.
+
+156
+00:31:22,259 --> 00:31:25,500
+Başka bir senaryoyu belirtir.
+
+157
+00:31:26,779 --> 00:31:34,339
+Sipariş verme senaryosunun içinde müşterinin ödeme ve teslimat bilgisini girmesi de vardır.
+
+158
+00:31:35,124 --> 00:31:51,464
+Genişletme ekstentte ise doğal akışına göre hazırlanır ama burada bir farklılaştırma ek yapmak istersek o zaman bu işlemler arasında ekstent belirtiriz.
+
+159
+00:31:52,183 --> 00:32:02,764
+Özelleştirme de sınıflar arası süreme ilişkileri gibi senaryolarda türetilebilir. Mesela ödeme işlemi. Ödeme işlemi kredi kartıyla da olabilir, nakit de olabilir.
+
+160
+00:32:03,124 --> 00:32:19,284
+Veya havaleyle olabilir bu bir sistem olduğuna göre, yerinde ödeme falan denilebilir belki de. Ödeme şekillerini genişletirsek özelleştirme ekleyebiliriz.
+
+161
+00:32:22,867 --> 00:32:27,107
+Her senaryo bir senaryo dokümanıyla detaylandırılır.
+
+162
+00:32:27,107 --> 00:32:29,327
+Bu da az önce bahsettik.
+
+163
+00:32:29,887 --> 00:32:35,947
+Hani algoritmaya benzer bir akış tanımı gerçekleştirilir diye.
+
+164
+00:32:36,887 --> 00:32:43,107
+Bu da bu sipariş verme şeyi...
+
+165
+00:33:24,372 --> 00:33:34,072
+Sipariş verme senaryo dokümentasyonunu, kullanım senaryosu belgesini incelediniz mi? Bununla ilişkili sorunuz var mı?
+
+166
+00:33:37,132 --> 00:33:40,672
+Kullanım senaryo belgesinin nasıl hazırlanacağıyla ilişkili.
+
+167
+00:33:48,147 --> 00:33:51,207
+Hocam, onu nereden okumamız gerekiyordu?
+
+168
+00:33:52,607 --> 00:33:53,447
+Efendim?
+
+169
+00:33:54,227 --> 00:33:56,047
+Onu nereden okumamız gerekiyordu?
+
+170
+00:33:58,167 --> 00:34:02,407
+Ekranda şu anda kullanım senaryo dokumentasyonunu görebiliyoruz.
+
+171
+00:34:02,407 --> 00:34:07,147
+Evet, görüyoruz hocam. Ben PDF falan paylaştığınızı sanmıyorum.
+
+172
+00:34:07,147 --> 00:34:12,527
+Yok yok. Yani şimdi burada bir şey gösterdim ya.
+
+173
+00:34:14,771 --> 00:34:22,912
+Az önce bir case paylaştım, kahve sitesiyle ilişkili.
+
+174
+00:34:24,051 --> 00:34:29,771
+Onun az önce diyagramını gördük.
+
+175
+00:34:30,331 --> 00:34:40,431
+Bu diyagramın belli bir aşaması için sipariş verme işlemi nasıl yürüyor?
+
+176
+00:34:41,108 --> 00:35:03,008
+Onu göstermek için de bir senaryo belgesi oluşturduk. Yani siz de sınavlarda bundan sorumlu olacaksınız. Biz belirtebiliriz veya projelerinizde siz kendiniz keyfi olarak seçeceksiniz.
+
+177
+00:35:09,108 --> 00:35:19,847
+Yapısal yaklaşımla mı? Yapısal yaklaşımla gerçekleştiriyorsanız veya biz öyle istersek o zaman veri akış diyagramlarını
+
+178
+00:35:21,556 --> 00:35:25,275
+Belli bir hiyerarşik sırada çizmenizi isteyeceğiz.
+
+179
+00:35:26,395 --> 00:35:32,275
+Ve belki kabaca ER diyagramı çizmenizi isteyeceğiz.
+
+180
+00:35:33,275 --> 00:35:43,496
+Eğer nesneye yönelik analiz demişsek, o zaman size bu mesela kahve sitesinin benzeri başka bir olay vereceğiz.
+
+181
+00:35:48,436 --> 00:36:02,216
+Use case diagramını da çizmenizi isteyebiliriz. Use case belgesini yazmanızı da isteyebiliriz. Yani burada nasıl yazıldığı anlaşıldı mı? Onun için inceleyin diye bir süre bıraktım bunu.
+
+182
+00:36:04,716 --> 00:36:05,416
+Anlaşıldı hocam.
+
+183
+00:36:05,780 --> 00:36:25,860
+Sırayla bakalım. Senaryoya bir isim veriyoruz. Bu senaryoda birinci aktör kimdir? Müşteri. İlgililer ve beklentileri, kahve sitesi ne yapıyor? Depo ne yapıyor? Ön koşul nedir? Müşteri alışveriş sitesine girecek bir bilgisayara donanıma sahip olmalı.
+
+184
+00:36:26,420 --> 00:36:46,420
+Son koşulda ödeme ve teslimat bilgilerini doğrulamalı. Ana akışta müşteri siparişi, işte bir algoritmamız sırayla veriyoruz. Müşteri siparişi vermek istediğini belirtiyor. Teslimat için adına adresini veriyor. Ödeme şeklini seçiyor ve...
+
+185
+00:36:48,692 --> 00:37:16,231
+Sipariş için kod üretiyor. Bütün bunlar normal yürüyorsa normal akış, ana akış yürüyor, devam ediyor, bitiyor. Ama eğer bir problem olursa alternatif akış oluyor. Alternatif akışta da işte ya müşteri tüm bilgilerini sağlamadan siparişi tamamlar, sistemde eksik bilgi ver der, tamamlanmasını ister veya
+
+186
+00:37:16,692 --> 00:37:22,351
+Başka bir problem çıkar ama burada sadece tek bir problem belirtilmiş.
+
+187
+00:37:24,916 --> 00:37:52,056
+Genellikle bu modellemede kullanım senaryoları yeterli olur. Çok karmaşık bir işlemse anlaşılabilirliği arttırmak için bazı maddelerde sözleşmeler, yani ön koşullar sağlandığında sistemin işlemesi ve son durumu daha açıklamalı olarak tarif eden ekler yazılır. Bunlara da sözleşmeler denir.
+
+188
+00:37:52,916 --> 00:37:57,336
+son durumu hakkında daha fazla bilgi verilir.
+
+189
+00:38:00,596 --> 00:38:06,195
+Kavramsal sınıf diagramı nasıl oluşturuluyor?
+
+190
+00:38:07,096 --> 00:38:11,695
+Kavramsal sınıf diagramı yapısına girelim.
+
+191
+00:38:12,695 --> 00:38:19,596
+Nesneye yönelik analizde sistemin iç durumu sınıf modeliyle tanımlanır.
+
+192
+00:38:28,659 --> 00:38:30,939
+Gösterilir sınıfların ilişkileri.
+
+193
+00:38:31,979 --> 00:38:47,739
+Kavramsal sınıf diagramında, yani bu uygulamada hangi şeyler var, sınıflar var, nesneler var, bunların arasındaki ilişkiler ne tür ilişkiler?
+
+194
+00:38:51,347 --> 00:38:58,268
+Her bir sınıfın özellikleri nelerdir? Bunları belirtiyoruz sadece, işlemler tarafına girmiyoruz.
+
+195
+00:38:59,487 --> 00:39:08,667
+Şimdi kullanım senaryosundaki yapılara baktığımızda müşteriye sipariş vermek istediğini belirtiyor.
+
+196
+00:39:08,947 --> 00:39:19,347
+Teslimat için adını, adresini, teslimat bilgilerini veriyor, fatura bilgilerini veriyor, ödeme şeklini seçiyor ve ödeme bilgilerini...
+
+197
+00:39:19,347 --> 00:39:27,207
+giriyor, veri tabanına kaydediliyor. Şimdi bunlar kullanım senaryosundaki isimler.
+
+198
+00:39:30,996 --> 00:39:48,796
+Kullanılarak sınıf diyagramı çizilir. Tabi bu tamamen alışkanlığa ve çalışma biçimine bağlı. Önce sınıf diyagramlarını da çizebilir yazılım geliştirme ekibi. Önce kullanım senaryolarından da başlayabilir.
+
+199
+00:39:58,996 --> 00:40:18,996
+Bu yolda izlenebilir. Önce sınıflar ve özellikleri belirlenir. Yani hangi sınıflar var burada bilgi tutulan ve bunların arasındaki bağlantılar nelerdir? Sınıflar arasındaki bağlantılar nelerdir? Bunlar...
+
+200
+00:40:20,755 --> 00:40:30,515
+belirtiliyor ve bunlar önce kağıt üzerinde çalışmalardan sonra sınıf diagramı haline getiriliyor.
+
+201
+00:40:30,695 --> 00:40:37,255
+Burada kümelemeler mi var az önce gördüğümüz gibi sınıf tanımlarında?
+
+202
+00:40:37,840 --> 00:40:46,280
+Kümeleme mi var, kompozisyon mu var, genelleştirme mi var? Hepsi sınıf yapısında tanımlanıyor.
+
+203
+00:40:46,280 --> 00:40:53,460
+Ve sınıflar arasındaki ilişki de sayısal olarak da gösteriliyor.
+
+204
+00:40:54,260 --> 00:41:03,680
+Şimdi sınıf diagramı, yine bu kahve sitesi örneği için sınıf diagramı ama kavramsal sınıf diagramına bakalım.
+
+205
+00:41:04,436 --> 00:41:22,036
+Kahramsal sınıf diagramında müşteri, kahve sitesi, bir kahve sitesi birçok müşteriye hitap eder. Bu yıldız çoklu anlamında bir kahve sitesi çok sayıda kahvenin tanımlanmasına yol açar.
+
+206
+00:41:32,724 --> 00:41:39,643
+Müşteri hiç sipariş vermemiş olabilir veya çok sayıda sipariş vermiş olabilir.
+
+207
+00:41:40,244 --> 00:41:53,163
+Aslında bu 0-1 şuradaki bir müşteri hiç sipariş vermemiş olabilir ama çok sayıda sipariş de vermiş olabilir.
+
+208
+00:41:53,463 --> 00:41:57,483
+Bunların her birisi farklı tarihte olabilir. Şu aslında yıldız olmalı.
+
+209
+00:41:58,132 --> 00:42:17,252
+Bir sipariş için, sipariş verilir ama fatura daha hazırlanmamış olabilir. Sipariş verilince ödemenin yapılmış olması gerekir birebir ilişkide.
+
+210
+00:42:19,860 --> 00:42:47,860
+gibi bir sipariş birden fazla sipariş kalemine sahip. Bir kahve sipariş kalemi içinde bulunabilir ama sipariş kalemi birden fazla kahveyi de içerebilir. Bu da bir aggregation birlikteliği. İçi dolu olsaydı kompozisyon olurdu.
+
+211
+00:42:47,860 --> 00:43:05,619
+Yani ayrı ayrı da kahvelerin ayrı ayrı da tanımı var. Birden fazla kahveyi tanımladığımızda her birinin ayrı ayrı da bir kavramı var.
+
+212
+00:43:09,588 --> 00:43:28,827
+Bu özel kalem de olabilir, standart kalem de olabilir. Özel kalem ise içeriği farklı olacaktır. Para hesabı ayrı olacaktır. Bu da genelleştirme. Standart ya da özel sipariş kalemi olabilir.
+
+213
+00:43:30,108 --> 00:43:32,188
+Buraya kadar sorunuz var mı?
+
+214
+00:43:42,771 --> 00:43:43,912
+Sorunuz var mı?
+
+215
+00:43:47,539 --> 00:43:54,259
+O zaman bir 5-10 dakika bir ara verelim.
+
+216
+00:51:29,940 --> 00:51:31,779
+Evet, tekrar derste geri döndük.
+
+217
+00:51:34,179 --> 00:51:39,039
+Bu sınıf diyagramıyla ilişkili sorunuz var mı?
+
+218
+00:51:45,940 --> 00:51:53,960
+Sınıf diyagramındaki ilişkiler, zaten bunları nesneye yönelik dersinde de UML diyagramları olarak görüyorsunuz.
+
+219
+00:51:53,960 --> 00:51:57,420
+Burada da bir tekrar etmiş olduk.
+
+220
+00:52:00,120 --> 00:52:06,160
+Şimdi tasarım aşamasına geçebiliriz.
+
+221
+00:52:06,720 --> 00:52:10,440
+Çünkü analiz sırasında bir nesne tanımı.
+
+222
+00:52:10,927 --> 00:52:18,567
+Sınıf diagramı, use case diagramı ve use case belgesini kullanıyoruz.
+
+223
+00:52:18,567 --> 00:52:31,627
+Aslında karar şemaları, karar tabloları ve karar ağaçları nesneye yönelik yaklaşımla gerçekleştirdiğimiz uygulamalarda da kullanılabilir.
+
+224
+00:52:31,787 --> 00:52:38,567
+Çünkü burada nesne ya da sınıf kavramından bağımsız olarak yapısal yaklaşımdan...
+
+225
+00:52:38,927 --> 00:52:52,547
+bağımsız olarak uygulamanın içindeki karar mekanizmaları konuşulmuş oluyor. O yüzden bu sorun değil.
+
+226
+00:52:58,036 --> 00:53:01,836
+Yani her ikisinde de kullanılabilir. O yüzden sorun değil diyorum.
+
+227
+00:53:02,836 --> 00:53:08,016
+Şimdi tasarım kavramına geçiyoruz.
+
+228
+00:54:14,324 --> 00:54:17,264
+Evet, tasarım tarafına geçmiş olduk.
+
+229
+00:54:17,264 --> 00:54:18,744
+Şimdi
+
+230
+00:54:23,987 --> 00:54:36,567
+Sistem tasarımı ve sistem analizi arasındaki fark neydi? Sistem analizinde ne yapıyorduk? Sistem tasarımında ne yapıyorduk?
+
+231
+00:54:45,460 --> 00:54:49,120
+Burada zaten sistem tasarımının ne olduğunu yazmışız.
+
+232
+00:54:49,600 --> 00:54:56,460
+Belirlenmiş olan bir dizi gereksinimin ana sistem içerisinde işlersel bir öğe haline getirilmesi.
+
+233
+00:54:57,260 --> 00:55:04,460
+Yani yazılıma aktarılacak hale getirilmesi gereksinimlerin sistem tasarımı.
+
+234
+00:55:06,220 --> 00:55:10,840
+Daha önceden ben analizle tasarım arasındaki farkı söylemiştim.
+
+235
+00:55:11,360 --> 00:55:13,380
+Analizde hangi soruya cevap?
+
+236
+00:55:13,460 --> 00:55:19,059
+Tasarımda hangi soruya cevap veriyoruz? Bunu söylemek isteyen var mı?
+
+237
+00:55:29,043 --> 00:55:39,683
+Analizde hangi soruya cevap veriyoruz? Tasarımda hangi soruya cevap veriyoruz? [öğrenci], sen söyleyebilir misin?
+
+238
+00:55:40,903 --> 00:55:41,863
+Sesim geliyor mu?
+
+239
+00:55:42,183 --> 00:55:42,623
+Geliyor.
+
+240
+00:55:43,283 --> 00:55:47,443
+Sistem analizinde tasarımın nasıl oluşturulacağının temelini oluşturmuyor muyduk?
+
+241
+00:55:47,775 --> 00:56:04,735
+Sistem analizinde ne sorusuna cevap veriyoruz? Yani üzerinde çalışacağımız sistem, üzerine yazılım hazırlayacağımız sistem nedir? Bu sistemin ihtiyaçları nelerdir? Buna cevap veriyoruz.
+
+242
+00:56:15,775 --> 00:56:25,675
+Egemin nasıl yazılım ortamına aktarılacağına tasarımda karar veriyoruz.
+
+243
+00:56:26,335 --> 00:56:32,375
+Yani birisi ne sorusuna cevap veriyor, diğeri nasıl bu işi yapacağız sorusuna cevap veriyor.
+
+244
+00:56:34,515 --> 00:56:37,415
+Evet, teşekkürler [öğrenci].
+
+245
+00:56:39,495 --> 00:56:40,491
+Şimdi...
+
+246
+00:56:42,068 --> 00:56:51,868
+sistem tasarımını ön tasarım ve ayrıntılı tasarım olmak üzere iki aşama halinde gerçekleştiriyoruz.
+
+247
+00:56:52,028 --> 00:56:53,468
+Şimdi bu aşamalara bakalım.
+
+248
+00:56:59,123 --> 00:57:10,643
+Sistem gereksinimleri, sistemin veri yapıları tanımı, sistem gereksinimlerini alıyoruz tasarım sırasında.
+
+249
+00:57:11,327 --> 00:57:25,248
+Öncelikle veri yapıları, modüllere ayrılma işi ve kısıtların tanımlanması ön tasarımda gerçekleştiriliyor ve bir ön tasarım raporu hazırlanıyor.
+
+250
+00:57:25,248 --> 00:57:30,407
+Bu ön tasarıma genel tasarım adını da verebiliyoruz.
+
+251
+00:57:39,327 --> 00:57:50,688
+Eğer bu tasarım raporunu oluşturacak olgunluk da değilse inceliyoruz, tekrar düzenleme yapıyoruz, tekrar tasarım raporu ortaya çıkana kadar oluşturuyoruz.
+
+252
+00:57:50,688 --> 00:58:04,688
+Bu arada iki kavram var. Bir tanesi SRS, buraya chat ortamına yazdım.
+
+253
+00:58:05,440 --> 00:58:16,019
+Software Requirement Specification, bu SRS belgesi gereksinim analizi sonucunda elde edilen belge.
+
+254
+00:58:19,376 --> 00:58:36,376
+SDS, Software Design Specification. Bu da yazılım tasarımını oluşturduktan sonra elde edilen belge, spesifikasyon, ayrıntılı belge demek zaten. Bunu oluşturuyoruz.
+
+255
+00:58:38,155 --> 00:58:43,396
+Ön tasarımdan sonra modüllerin ayrıntılı tanımını gerçekleştiriyoruz.
+
+256
+00:58:44,788 --> 00:58:53,788
+Ön tasarım raporunda ayrıntılı tasarım raporuna geçişi gerçekleştiriyoruz.
+
+257
+00:58:53,788 --> 00:59:07,547
+Hem modülleri yani yazılım içinde olan modülleri hem de veri tabanını, işlemleri, modülleri ayrı ayrı.
+
+258
+00:59:09,619 --> 00:59:29,019
+İşte ekran düzenlerini hepsini ayrı ayrı ayrıntılı tasarımda oluşturuyoruz. Ön tasarımdaki genel bilgilerden yola çıkarak yapıyoruz bunu. Sonra bu da inceleniyor, oluşursa sistem tasarım raporları hazırlanmış oluyor.
+
+259
+00:59:37,619 --> 01:00:00,000
+Hem ön tasarımda genel yapıyı ortaya çıkarmak üzere, ayrıntılı tasarımda da bütün bu şeyleri hem veritabanı tasarımını, hem ekran tasarımını, hem girdi tasarımını.
+
+260
+01:00:00,000 --> 01:00:10,000
+hem de işlem tasarımını, yani modüllerin ayrıntılı tanımlanmasını hep bu ses sırasında tanınamış oluyoruz.
+
+261
+01:00:14,228 --> 01:00:20,807
+Tasarım belgesi üzerinde, Software Design Specification üzerinde tanımlamış oluyoruz.
+
+262
+01:00:20,807 --> 01:00:27,807
+Yani tasarım dediğimiz olay, design tarafı yazılımın.
+
+263
+01:00:28,211 --> 01:00:51,052
+Burada bütün bilgi sistemini konuşuyoruz. Ön tasarımda önce nasıl bir donanım ortamı üzerinde geliştirilecek, nasıl bir yapı üzerinde geliştirilecek ve hangi modüllere ayrılacak, hangi alt parçalara ayrılacak bunları belirliyoruz.
+
+264
+01:00:51,052 --> 01:00:56,211
+Tasarım aşamasında, ön tasarım aşamasında.
+
+265
+01:00:56,211 --> 01:01:10,211
+Daha sonra bu ön tasarımı ayrıntılandırarak ayrıntılı tasarımı oluşturuyoruz. Hepsi birlikte de bu tasarım raporlarını Software Design Specification'ı oluşturuyor.
+
+266
+01:01:11,248 --> 01:01:25,028
+Ön tasarımda sistemin belirlermiş olan amaç ve hedeflere nasıl ulaşabileceği ile ilişkili yapı belirtiliyor.
+
+267
+01:01:30,003 --> 01:01:55,183
+Ayrıntılı tasarımda ise modüller tek tek açıklamalı olarak belirtiliyor. Dosyalar, ekran görüntüleri, raporlar daha ayrıntılı tasarlanıyor ve ayrıntılı tasarım artık kodlamaya hazır hale getirilmiş.
+
+268
+01:01:56,947 --> 01:02:00,887
+Yarı ürünler olarak tanımlanabiliyor.
+
+269
+01:02:01,927 --> 01:02:12,047
+Şimdi genel tasarım dediğimiz şey ya da ön tasarım olarak tanımladığımız şey nedir? Neler yapıyoruz biz burada?
+
+270
+01:02:17,235 --> 01:02:36,975
+Sistemin alt yapısı belirleniyor, sistem mimarisi oluşturuluyor ve sistem gereksinimleri girdi olarak alınarak analizden tasarıma geçişle adımlar gerçekleştiriliyor.
+
+271
+01:02:45,235 --> 01:03:12,215
+Burada öncelikle tasarım, genel tasarım aşamasında şimdi bütün bilgisayar ortamlarının tasarımını yapacağımız için bilgi sisteminde kullanacağımız altyapı, bilgisayar donanımının ne kadarını kullanacağız var olanın, yeni ürünleri nasıl satın alacağız?
+
+272
+01:03:13,235 --> 01:03:22,976
+donanma işlemlerini burada gerçekleştiriyoruz. Yani fizibilite çalışmasında belirlediğimiz yapıyı burada gerçekleştiriyoruz.
+
+273
+01:03:24,056 --> 01:03:31,715
+Var olan bilgisayar donanımı ve yazılımı envanteri nedir? Yani neler var elimizde? Bunların iş şükleri nelerdir?
+
+274
+01:03:31,715 --> 01:03:38,715
+O zaman donanımı değerlendirip, yazılımı değerlendirip burada...
+
+275
+01:03:39,827 --> 01:04:00,107
+Satın alma raporlarını oluşturuyoruz. Yani istek raporlarımızı oluşturuyoruz. Satıcı firmayı belirliyoruz ve finansal satın alma türünü de belirleyerek satın alma işini gerçekleştiriyoruz.
+
+276
+01:04:01,947 --> 01:04:05,047
+Envanter belirleme dediğimiz şey,
+
+277
+01:04:06,132 --> 01:04:33,812
+Burada tasarım aşamasında elimizde hangi bilgisayarlar var, yeni sistemde bunların ne kadarını kullanabileceğiz. Bu yüzden işte önce altyapıda bütün aletler, bütün donanım birimleri şu anda kullanılıyor mu, kaç yaşında, planlanan yaşı nedir, yani daha kullanım ihtimali var mı, fiziksel yeri nedir, sorumlusu kimdir?
+
+278
+01:04:34,132 --> 01:04:51,872
+Herhangi bir envanter çıkarılıyor. Yani envanter işletmecilikte herhangi bir yapının elde bulunanlar listesi nedir? Mesela stokta da bir envanter oluşturulur ürün tanımlarında.
+
+279
+01:04:52,320 --> 01:05:07,280
+Bir sistem geliştireceğimiz zaman bu sistemi geliştirmek için gerekli olan ürün donanım parçalarının ne kadarı bizim elimizdekilerle hallolabilir bunu anlamaya çalışıyoruz.
+
+280
+01:05:07,800 --> 01:05:09,600
+İş yükünün tahmini nedir?
+
+281
+01:05:16,980 --> 01:05:36,059
+Mesela bir bilgisayar hangi işi gerçekleştiriyor? Bu hangi işte kullanılıyor? Kim kullanıyor? Ne kadar acaba bu?
+
+282
+01:05:38,132 --> 01:05:54,931
+Kira, kiralamak mı uygun yoksa satın almak mı uygun? Buna karar vermek için işte önerilen sistemde bunu ne olarak kullanabiliriz? Bunun özelliklerine bakıyoruz.
+
+283
+01:06:01,844 --> 01:06:16,544
+Maliyet karşılaştırması da gerçekleştiriliyor ve donanım değerlendirme işi yapılmış oluyor. Donanımın nerede, nasıl kullanılacağı.
+
+284
+01:06:22,612 --> 01:06:35,812
+Yazılım değerlendirmede ise paket yazılımların hangisi var elimizde? Yine aynı şekilde onun içinde bir değerlendirme kriteri.
+
+285
+01:06:36,652 --> 01:06:47,292
+Yazılımın gereksinimleri nelerdir? Performans etkinliği nelerdir? Verimlilik tarafı nedir? Kullanım kolaylığı nedir?
+
+286
+01:06:47,860 --> 01:07:00,960
+Yani özellikleri ne olmalı yazılımı? Biz bunun için bir paket program satın alalım dediğimizde satıcı firmayı nasıl belirleyebiliriz?
+
+287
+01:07:00,960 --> 01:07:13,539
+Burada belirttiğim yazılım değerlendirme kriteri bir işletim sistemi olabilir, bir case aracı olabilir. Case aracı dediğimde artık anlıyorsunuz değil mi?
+
+288
+01:07:15,860 --> 01:07:18,840
+Önceki derslerimde tanınlamıştım.
+
+289
+01:07:25,972 --> 01:07:30,492
+Case aracı neydi? Computer Aided Software Engineering.
+
+290
+01:07:31,507 --> 01:07:41,047
+Yani yazılım geliştirme sürecimizde bize yardımcı olacak destek elemanlarına case araçları olarak tanımlıyoruz.
+
+291
+01:07:41,507 --> 01:07:49,507
+Bir case aracı olabilir, bir veri tabanı yönetim sistemi yazılımı olabilir. Bunları anlatmış oluyoruz.
+
+292
+01:07:51,507 --> 01:07:54,507
+Performans verimliliği nedir?
+
+293
+01:07:57,204 --> 01:08:06,924
+Hangi işleri yerine getirecek? Girdi, çıktı seçenekleri nelerdir? Bunları belirliyoruz.
+
+294
+01:08:06,924 --> 01:08:14,184
+Ve bu tür ürünleri hangi satıcı firmalardan alabiliriz?
+
+295
+01:08:14,844 --> 01:08:20,844
+Her bir satıcı firmayı ürün kalitesi, garantisi, yazılım desteği,
+
+296
+01:08:23,572 --> 01:08:31,752
+Kuruluşunu yapıyorlar mı, eğitim veriyorlar mı, bakımını yapıyorlar mı? Buna göre karar veririz hangi firmadan alınacağına.
+
+297
+01:08:31,752 --> 01:08:41,872
+Yani tasarım sırasında biz neler yaptık? Donanım ve yazılım alımı için gerekli olan şeyler.
+
+298
+01:08:42,152 --> 01:08:50,792
+Önce bir envanter belirledik. Tekrar şimdi yukarıdaki şemayı inceleyelim.
+
+299
+01:08:54,260 --> 01:09:01,540
+Yazılım içinde, donanım içinde bir şey belirliyoruz.
+
+300
+01:09:47,956 --> 01:09:59,676
+Evet, var olan bilgisayar donanım ve yazılım envanterini belirliyoruz. İş yükünü tahmin ediyoruz. Donanımı nasıl?
+
+301
+01:10:00,020 --> 01:10:20,659
+Bir donanım, yeni alınacak donanımlar için özellikler nelerdir? Yazılım için özellikler nelerdir? Hangi firmaları kıyaslayıp bunlardan hangisini tercih ederiz? Ve böylece alım aşamasına geçmiş oluyoruz.
+
+302
+01:10:24,115 --> 01:10:40,095
+Alım aşaması tasarım sırasında gerçekleştiriliyor. Burada hangi finans yoluyla elde edilir? Satın alınır, leasing yapılır ya da kiralama gerçekleştirilir.
+
+303
+01:10:41,595 --> 01:10:50,775
+Bu da alım yöntemi de finansal olarak üç türlü satın alma, leasing ve kiralama şeklinde olabilir.
+
+304
+01:10:53,652 --> 01:10:58,652
+Hangisi daha şey gelirse bunu gerçekleştiririz.
+
+305
+01:10:59,572 --> 01:11:09,912
+Şimdi sistem mimarisi dediğimizde mimari tasarım yapı diagramıyla, yapısal yaklaşımda yapı diagramıyla gösteriliyor.
+
+306
+01:11:10,631 --> 01:11:13,372
+Yapı diagramını şöyle bir inceleyelim.
+
+307
+01:11:19,507 --> 01:11:36,288
+Yapı diyagramı da modül, hangi alt modüllere ayrılır? Şimdi şeyi getirin gözünüzün önüne, bir veri akış diyagramını. Veri akış diyagramından tasarıma nasıl geçiyoruz?
+
+308
+01:11:47,283 --> 01:12:04,703
+alt işlemlere ayrıldığını düşünüyorsak, yapı diyagramında da ön tasarım sırasında modüllerimizi ve modüllerimizin alt başlıklarını belirtiyoruz.
+
+309
+01:12:07,712 --> 01:12:35,712
+Modülleri tanımlayıp, alt modülleri tanımlayıp, bunların arasında veri girişi, veri akışı nasıl olacaktır? Hangi modül, hangi modüle, hangi veriyi gönderecek? Hangi modülde işlenen bir veri yukarıya gönderilecek? Bir bu anlatılır, bir de birden fazla modül...
+
+310
+01:12:35,712 --> 01:12:37,832
+Bu yüzden bir tanesi
+
+311
+01:12:38,452 --> 01:13:05,192
+Bir if kuralına göre çalıştırılacaksa nasıl çalıştırılır? Bunu belirliyoruz. Bunu daha basit olarak, işte envanter güncelleme ve raporlama programı, envanter güncelleme ve raporlama, envanter güncelleme altında kaç tane işlem var?
+
+312
+01:13:06,452 --> 01:13:12,792
+Aslında kaç tane işlem var? Bunları böyle görebiliyoruz.
+
+313
+01:13:14,692 --> 01:13:29,231
+Bu yapı diagramı için şu kuralları söyleyebiliriz yapı diagramında.
+
+314
+01:13:32,528 --> 01:13:45,468
+Şema ile açıklanması. Burada sistemin alt modülleri arasındaki ilişki ve etkileşim anlaşılmaya çalışılıyor.
+
+315
+01:13:47,988 --> 01:13:57,028
+Bu tabii ki bir tane çözümü yok tasarımın. Birden fazla çözümü olabilir yapı diagramlarının.
+
+316
+01:13:59,828 --> 01:14:08,708
+Modüller, gereksinim mesela geçen hafta gördüğümüz
+
+317
+01:14:11,956 --> 01:14:25,355
+Hasta faturalarının belirlenmesi uygulamasının tasarımını, ön tasarımını gerçekleştirdiğimizde bir yapı diagramı ile gösterebiliriz bunu.
+
+318
+01:14:39,956 --> 01:14:56,956
+Olmalı, yapı diyagramı olmalı. Hangi alt işlemler var? Bu işlemlerin hepsi ayrı ayrı. Orada söylendiği gibi modüller mi ayrılmalı? Yoksa bu tanınlanan...
+
+319
+01:14:58,496 --> 01:15:18,615
+alt birimler birleştirilerek bir modülde mi gösterilebilir? Yani veri akış diyagramındaki her bir gereksinimi belirten bir işlem, veri akış diyagramındaki her bir işlem,
+
+320
+01:15:19,060 --> 01:15:35,140
+Eşittir, buradaki bir modül değildir her zaman. Ama oradaki işlemlerin hepsini burada modüllerde tanımlayabilmemiz gerekiyor. Bu işlem şu modülde yapılıyor, bu işlem şu modülde yapılıyor diye.
+
+321
+01:15:35,140 --> 01:15:46,940
+İşte burada mesela bir ana modül altta üç tane modüle ayrılarak gidiyor. Sistemde gerçekleştirecek işlemler.
+
+322
+01:15:47,060 --> 01:15:59,160
+Bu alt modüllerden bir tanesi başka bir alt fonksiyonu ya da modülü çağırarak gerçekleştiriliyor.
+
+323
+01:16:00,640 --> 01:16:08,340
+Diğer bir alt modül ise başka bir modül çağırarak gerçekleştirilebiliyor.
+
+324
+01:16:13,395 --> 01:16:33,155
+Üç tane de yapı var. Bir, veri akışları. Bu veri akışları içi boş veya dolu oluşuna göre okların ayırt ediliyor. Ya veri akışı ya da kontrol akışı sağlıyor.
+
+325
+01:16:38,292 --> 01:16:51,391
+Veri tanımlamalarında belirtiliyor. Ayrıca bir fonksiyon mu çağrılıyor yoksa bir modül mü bağımsız olarak çağrılıyor. Bunlar da yapı diyagramında gösteriliyor.
+
+326
+01:16:51,391 --> 01:17:05,412
+Ayrıca yapı diyagramında mesela ya şu işlem ya şu işlem gerçekleştirecek. Araya bir eşkener dörtgen konularak sırayla her ikisi de işlenecekse soldan sağa doğru işleniyor.
+
+327
+01:17:06,292 --> 01:17:23,332
+Ya o ya o ise şurada birleşme noktasında bir eşkenal dörtgen oluyor. Şu modül içinden koşula göre ya bu modül çağrılıyor ya bu modül çağrılıyor şeklinde.
+
+328
+01:17:23,332 --> 01:17:34,172
+Bir de şurada bir yarım daire ile birleştirilirse burada bir döngü ile çalışacak.
+
+329
+01:17:34,292 --> 01:17:36,372
+diyebiliyoruz.
+
+330
+01:17:37,012 --> 01:17:46,352
+Şimdi bunlar hakkında, yapı diyagramları hakkında önümüzdeki haklı biraz daha ayrıntı vereceğim.
+
+331
+01:17:46,352 --> 01:17:51,352
+Sizler bu özellikle...
+
+332
+01:17:51,828 --> 01:18:06,927
+Geçen hafta verdiğim ödevde geliştirdiğiniz ayrıntılı veri akış diyagramını bir yapı diyagramı haline dönüştürmeye çalışın bu hafta gördüğümüzle.
+
+333
+01:18:07,828 --> 01:18:12,828
+Önümüzdeki hafta ben de biraz daha ayrıntı vereceğim bu yapı diyagramları konusunda.
+
+334
+01:18:12,828 --> 01:18:19,308
+Ondan sonra da nesneye yönelik yaklaşımla tasarım tarafına geçeceğiz.
+
+335
+01:18:19,828 --> 01:18:22,568
+Sorunuz var mı bugün anlattıklarımla ilişkili?
+
+336
+01:18:31,475 --> 01:18:32,695
+Sorunuz var mı?
+
+337
+01:18:54,739 --> 01:19:08,159
+Evet, dersi bitiriyorum. Yalnız arkadaşlarınız da söyleyin, derste online katılımın sayısı bu hafta çok düştü.
+
+338
+01:19:12,724 --> 01:19:29,224
+Yüz yüze devam zorunluluğumuz yok ama dersleri hiç dinlemeden, online'a katılmadan derste başarılı olmanız pek zor olur. Online olarak katılsınlar.
+
+339
+01:19:31,103 --> 01:19:39,463
+Hocam, bu sadece kitapla ilgili bir sorunum var da kitabı bulamıyorum satış olarak.
+
+340
+01:19:40,051 --> 01:19:48,611
+Kütüphanede de dijital olarak maalesef şeyi yok. Kitabın örneği bunu nasıl şey yapabiliriz, erişim sağlayabiliriz?
+
+341
+01:19:48,611 --> 01:19:49,731
+Kitab vardır kütüphanede.
+
+342
+01:19:51,611 --> 01:19:56,951
+Fiziksel olarak var da online devam edecek olanlar için nasıl olacak?
+
+343
+01:19:57,871 --> 01:20:04,332
+Yani fiziksel olarak da bir üstteki arkadaşlarınızdan filan bulabilirsiniz.
+
+344
+01:20:08,020 --> 01:20:27,920
+Bazı slide'ları koyacağım sisteme ama hani buradaki kütüphane dediyse de başka yerdeki kütüphanelerde de kitabın yani bu konuda İngilizce olan kitaplar da var.
+
+345
+01:20:30,800 --> 01:20:32,360
+Tamamdır hocam, teşekkür ederim.
+
+346
+01:20:33,560 --> 01:20:34,420
+Teşekkürler.
+
+347
+01:20:37,011 --> 01:20:39,771
+Evet, bugün için tamamlayabiliriz o zaman.
+
+348
+01:20:44,819 --> 01:20:46,279
+İyi haftalar diliyorum.
