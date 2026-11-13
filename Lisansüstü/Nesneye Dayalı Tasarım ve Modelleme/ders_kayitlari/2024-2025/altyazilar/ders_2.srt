@@ -1,0 +1,2339 @@
+1
+00:00:04,564 --> 00:00:05,323
+Evet.
+
+2
+00:13:13,011 --> 00:13:40,071
+Evet, merhaba arkadaşlar. Güya o kadar ince hesap yaptım ama hani 5 geçe başlarız diye. Ha az geçiyoruz. Çok da geçmemişiz. Tamam, peki güzel. O zaman 13 dakika değil, 14. dakikasında eski kaydım. Neyse, aynısı o kadar önemli değil. Evet, başlayalım şimdi madem öyle. Henüz ders notlarını şey demedim, güncelleyemedim. Ama niyetim var, bakalım. Sonraki haftayı bir bekleyin lütfen.
+
+3
+00:13:42,323 --> 00:13:55,783
+Kodları ve notları. Hoş geldin notları şu an pdf olarak indirebilirsiniz. Kodları da. Kodları şu an indirmeyin isterseniz çünkü daha nispeten erken bir haftadayız. İkinci haftadayız daha.
+
+4
+00:13:58,663 --> 00:14:02,663
+Örnekleri değiştireceğim kalıplar da daha ilerleyen haftalarda.
+
+5
+00:14:04,596 --> 00:14:14,596
+O yüzden ben sinyalinizde olsam belki ön çalışma için notları indirdim ama kodları şu an için indirmeye gerek yok diye düşünüyorum. Evet, başlayalım.
+
+6
+00:14:20,947 --> 00:14:30,367
+Bugün kalıplara artık giriş yapıyoruz. Dörtlü çetenin söylediği şekilde.
+
+7
+00:14:37,748 --> 00:14:38,508
+Evet, tamam.
+
+8
+00:14:43,956 --> 00:14:54,927
+Öncelikle bir şeyin tanımı yapılmadan aslında girelim. Tasarım kalıbı dediğiniz şey, yazılım tasarımında karşılaşılan belli sorunların yalın ve güzel...
+
+9
+00:14:54,927 --> 00:15:11,947
+Çözümlerinin tarifidir. Bu da bir sadelik söz konusu. Ayrıntılar çünkü zaten değişik problemlerde, değişik ayrıntılar gereksinler, daha fazla ayrıntılar var olabileceği için burada bir temel verilmeye çalışılıyor. Önerilen kalıp çözümleriyle.
+
+10
+00:15:22,927 --> 00:15:27,567
+Tasarım veriliyor mutlaka ama bazı kanıtlarda çok ayrıntısına girilmeye biliniyor.
+
+11
+00:15:29,107 --> 00:15:57,107
+Tasarım kalıplarının kullanılmasındaki en temel amaç, tek yerle yeniden keşfetmek zorunda kalmadan iyi bir tasarıma ulaşmak. İyi derken de geçen hafta tartışmıştık. Problem ne düzeyde parçalar ayrılabiliyorsa, o düzeyde parçalar ayrılardı, çözüm, iyi bir çözüm diyorduk. Ve iyilikle ilgili somut ölçütler tanımlarsın. Bunların da en temelinde uyum ve bağlaşım dedik ve bunlarla ilgili.
+
+12
+00:15:57,107 --> 00:16:17,507
+Geçen hafta konuştuk. Ve burada aynı zamanda iyi derken esnek bir biçimde ve yeniden kullanılabilir, artılacak yönde çözülmesi de söz konusu. Esnek derken gerekse minnardaki değişiklikler kaçınılmaz. Bu değişiklikleri kolay uyum sağlayabilecek şekilde
+
+13
+00:16:18,388 --> 00:16:25,848
+Ana tasarımımızın ve kodlarımızın değiştirilmesinden bahsediliyor. Esnek tükle temel olarak kastettiğimiz bu.
+
+14
+00:16:26,228 --> 00:16:34,827
+Ve madem kalıplar esnek çözümler sunma iddiasında bulunuyor, işte bu iddiayı gösterecek şekilde de zaten örneklerimizi vereceğiz.
+
+15
+00:16:35,728 --> 00:16:39,448
+İlk başta kafamıza göre bir çözüm yapacağız. Sonra gereksinimi bir değiştireceğiz.
+
+16
+00:16:39,448 --> 00:16:45,148
+Kafamıza göre alan çözümün çok problemli olduğunu göreceğiz.
+
+17
+00:16:46,388 --> 00:17:09,948
+Bu kalıpların örneklerinde iyi bir çözümü göreceğiz. Kalıp kullanmadan doğru düz bir nesneye dayalı tasarım yaptığımızda elde ettiğimiz çözümü inceleyeceğiz. Onunla bu esneklik nasıl sağlandığını göreceğiz ve bir de tasarım kalıbını ile çözümü göreceğiz ve getirilerini götürilerini tartışacağız.
+
+18
+00:17:14,387 --> 00:17:20,347
+Bunun üstüne örnek yapamayabiliyorum. Bazılarında sadece tek çözümle kalıbın uygulanmasını görüyor olacağız.
+
+19
+00:17:21,607 --> 00:17:23,487
+Ay yeniden kullanılabildik de tabii ki önemli.
+
+20
+00:17:25,288 --> 00:17:33,207
+Gerçi sağdaki çalışmalarda en fazla %31 tasarlıf, maliyet ve çıba tasarlıfı getirdiğini gösterse de
+
+21
+00:17:33,207 --> 00:17:35,487
+biz yine de çoktan iyidir deyip devam edeceğiz.
+
+22
+00:17:36,403 --> 00:18:01,884
+Evet, şimdi bir tasarım kalıbının dört ana bileşeni var. Birinci bileşeni ismi. Bu isim kalıbı en güzel, net ve e şekilde anlatacak ve en kolay şekilde hatırlamamızı sağlayacak bir veya birkaç kelimelik bir ismi buluyor. Ne olursa olsun bir şeyi isimlendirmek, o şey ne olursa olsun onun isimlendirmek çok kritik bir şey. Kalıplarda da bu durum söz konusu aynen geçer.
+
+23
+00:18:02,900 --> 00:18:09,900
+Ardından kalıp çözdüğü sorunu tarif ediyor. Bunun neden bir sorun olduğunu, nasıl...
+
+24
+00:18:13,683 --> 00:18:37,304
+Bu sorunları çözmek için önerdiği tasarımın bileşenlerini anlatıyor. Tabii ki sınıf düzeyinde konuşuyoruz. Burada bileşenlerimiz sınıf. Temel olarak dörtlü çetelerinin tasarım kalıpları, aydınlığı nesneye yönelik kalıplar ve nesne yönelik ile ilgili en temel tasarım birleşenlerimiz oluyor.
+
+25
+00:18:37,304 --> 00:18:41,683
+Tabii sınıfların üyeleri ve metotları ve bunların nasıl belirlenmesi gerektiği.
+
+26
+00:18:41,683 --> 00:18:57,463
+Nasıl sorumlulukların daha iyi atanması gerektiği gibi aynı tırda elbette anlatıyoruz. Tasarımdaki sınıflar, bunların arasındaki ilişkiler, bunlardan oluşturulan nesnelerin nasıl davranacakları vs. vs. Aynı tırda bir şekilde.
+
+27
+00:18:58,259 --> 00:19:16,279
+Tasarım anlatılıyor. Ardından son bölüm tartışma sonuçlar bölümü. İşte bu çözümün sistemin geneline getirdiği olumlu etkiler. Esneklik yönünden, genişletilebilirlik yönünden, taşınabilirlik yönünden vs. Çözümün güçlü ve zayıf yönleri. Yer-zaman çelişkileri.
+
+28
+00:19:18,036 --> 00:19:28,056
+Şu iki şeyi bir açayım. Bir kere bir tasarım kalıbı elbette sihri değnek değil. Veyahut da silver bullet diye de geçiyor literatürde. Gümüş kurşun da değil.
+
+29
+00:19:28,615 --> 00:19:35,675
+Yani işte kurt adamları falan normal kurşunla öldüremezsiniz, gümüş kurşunla öldürürsünüz. Öyle mucize bir şey.
+
+30
+00:19:36,016 --> 00:19:42,635
+Böyle çok mucize bir çözümlerde silver bullet diyorlar. Bizimki ölçüde artık sihri değnek diye geçiyor.
+
+31
+00:19:42,635 --> 00:19:46,036
+Yani sallayabiliyorsun her şeyi halledeveriyor. Keşke gerçekleri...
+
+32
+00:19:46,036 --> 00:20:00,076
+Öyle bir şey olsa ama yok öyle bir şey. Yani bir mühendis olarak da mühendisin temel tanımı hesap yapan kişi. Neyi hesaplayacak? Aslında sadece aritmetik ya da kalkülüs hesapları değil. Problemi çözmek için.
+
+33
+00:20:00,596 --> 00:20:15,776
+Kullanabileceği çözüm yollarını bileşenleri ve yöntemleri ve bunların hangi yöntemin hangi tür problemde daha verimli kullanılacağını ama bununla beraber getireceği dezavantajlar edebilen kişidir.
+
+34
+00:20:17,155 --> 00:20:23,476
+Aynı zamanda yer-zaman çalışkısı dediğimizde Time Memory Tread-off anlamındadır bilgisayar bilimlerinde.
+
+35
+00:20:28,596 --> 00:20:56,596
+Sahip bir sistemde çalışıyorsanız veya işlem gücünden tasarruf etmek istiyorsanız daha fazla bellek kullanımıyla bunu yapabilirsiniz. Örneğin bazı hesaplamanın sonuçlarını önceden yapılmış olarak bir bellekle ya da bir tablo da saklayıp daha sonra oraya look up, referans etmek şeklinde işler yapılırsa bu karmaşık denklemle yeniden hesaplamaktan daha hızlı bir çözüm sağlar size. Zamandan tasarruf etmek etmiş oluyorsunuz ya da işlem gücünden tasarruf etmiş oluyorsunuz.
+
+36
+00:20:56,596 --> 00:21:20,576
+Ama belli daha fazla harcamış oluyorsunuz. Ya da tam tersi, müdür o kadar az belli kullanıma yönelik şekilde kod yazarsanız da bu sefer daha çok ara işlem ara hesaplamalar falan yapmak zorunda kalıyorsunuz. İşlem daha uzun sürüyor. İşlemci kaynaklanıyor. Daha fazla kullanıyorsunuz. Bunu optimuma getirmeye çalışaraktan çözüm önerileri elbette en iyileridir.
+
+37
+00:21:24,596 --> 00:21:25,496
+Çünkü önemli olan
+
+38
+00:21:26,163 --> 00:21:50,104
+Kalıpların temel hitap ettiği alan modelleme, başarım performansı, runtime performans değil. Hatta bazı yerlerde runtime performansa olumsuz etkileri de olabileceğini değerlendirebilirsiniz. Ama o konuda refactoring kısmında daha çok fazla tartışacağız. Şu sunduğu diğer avantajların yanında bir işlemin mesela 100 milisaniye yerine 200 milisaniyede yapılmasının bir kaybı olmayacaktır.
+
+39
+00:21:54,163 --> 00:21:59,684
+İnsan bir sonucun 100 bin saniyede gelmesiyle 200 bin saniyede gelmesi arasındaki farkı anlayamaz.
+
+40
+00:22:00,084 --> 00:22:02,663
+Fakat orkutasının kalınlığı getirdiği o kadar...
+
+41
+00:22:02,976 --> 00:22:29,456
+Önemli esneklikler vardır ki, gereksinler diye çok kolaylıkla bunları hayata geçirirsiniz. Uzun uzun pahalı saatler geçirmek zorunda kalmazsınız. Bu durumda bu avantajı mutlaka kullanmak lazım deriz. Bir de bazı kalıpların bazı problemlerde birbirleriyle ortak çalışmalara da sinerji doğurabiliyorlar. Bunu da Lottie Jete aynı zamanda kalıplarında anlatıyor.
+
+42
+00:22:30,976 --> 00:22:51,996
+Dörtlü çetenin beyan ettiği yerlerde yazıyor olacağım. Fakat bu sadece bunlardan ibaret değil. Öyle bir problemle karşılaşırsınız ki dörtlü çetenin önermediği şekilde farklı sinacılar keşfedebilirsiniz. O açıdan hiçbir şey sadece orada yazıldığı gibi notumot değil.
+
+43
+00:22:54,612 --> 00:23:06,251
+Evet, şimdi şu şekli arkadaşlar, 4 şete kitabında vermiş kalıplar arasındaki olası ilişkileri söylüyor. Nasıl okuyabiliriz bu şekli mesela? Şöyle diyebiliriz.
+
+44
+00:23:06,852 --> 00:23:13,932
+Mesela böyle grafikleri nereden okumak lazım? Bazen köşesinden bakarsınız, bir yerden ipi devam edersiniz.
+
+45
+00:23:13,932 --> 00:23:20,932
+Veya ortadan bakıp ortadan nereye doğru dallanacağına bakabilirsiniz. Mesela diyelim ki...
+
+46
+00:23:21,503 --> 00:23:26,503
+Comment tasarım kalıbını göreceğiz. Bir komut...
+
+47
+00:23:27,316 --> 00:23:55,276
+Mesela event-based, GUI tabanlı bir şey düşünün. Orada bir komut söz konusu olduğunda, basit komutları ayrıntılı metotlara eşleştirmekle ilgili bir kalıptır bu. Bu komutlar eğer birden fazla ise veya belki birbirinin zincirlenmesi söz konusu ise, mesela Composite Dissom kalıbıyla da bu komutları birbirine zincirlemeyi yapabilirsiniz demek istiyor mesela.
+
+48
+00:23:55,316 --> 00:23:57,316
+Veyahut da mesela ne bileyim...
+
+49
+00:23:59,380 --> 00:24:27,160
+Evet, state kalıbı bir varlığın içinde bulunduğu durumları simgeler. Bir durumdan diğer duruma geçişin nasıl modellenebileceği hakkında anlatan bir kalıptır. Bu da denilebilir ki mesela veya strateji kalıbı da dış tasarımlar olarak benzer kalıplardır. Bir işin yapılmasının birden fazla yolu vardır. Çalışma anında bu yollardan hangisinin en uygun olacaksa ona geçirebilmesi ne?
+
+50
+00:24:27,380 --> 00:24:44,700
+Genelik nasıl bir tasarım yapılır? Ondan bahseder. Bu ikisinin işte birinin stratejileri, birinin stekleri Flyweight olaraktan modellenilebilir. Flyweight'te çok sayıda paylaşılan, pardon çok sayıda aynı türden varlık varsa.
+
+51
+00:24:45,715 --> 00:25:05,715
+Bunların her birinin durum bilgilerini ayrı ayrı saklayıp bellekte çok yer harcamak yerine bunların ortak verileri, yani durumları, yani verileri, üyelerinin bir kısmı tüm örnekler arasında ortak, bir kısmı ise farklılaşabilir şekilde ise işte bunları ikiye bölüp...
+
+52
+00:25:07,923 --> 00:25:22,764
+Bunların ortak durumlarıyla ilgili nesneleri bellekte saklayıp, bellekten ilgili nesneyi çağırırken de değişen veri kısmını o nesneye vermek ve onu kullanmak şekilde çalışmak için.
+
+53
+00:25:33,587 --> 00:25:43,947
+Bu grafik de çizmemiş ama strateji kalıbını anlatıyor ki, strateji örnekleri Singleton'da olabilir mesela diyor.
+
+54
+00:25:43,947 --> 00:25:55,867
+Ama bakın burada o aralar ilişkiyi çizmemiş mesela. Demek ki bu grafta olası sadece bu yönlerde ilişkiler olabilir şeklinde diyen bir graf değil.
+
+55
+00:25:56,307 --> 00:25:59,947
+Biz de çeşitli problemlerle karşılaşıkça buraya yeni...
+
+56
+00:26:00,400 --> 00:26:04,100
+Etkileşim, olası etkileşimler ekleyebiliriz.
+
+57
+00:26:08,307 --> 00:26:24,288
+Evet. Şimdi bu az önce konuştuğumuz avantajlarını ek olarak esneklik yeniden kullanabilerek bazı yan yararları daha var. Bunları ikinci olarak da görmemek lazım aslında. Çok önemli bir yararı.
+
+58
+00:26:26,355 --> 00:26:40,996
+Yazılım ekibi arasında ortak bir sözlük oluşturması. Bu da çok önemli bir yarar. Ve deneyimin yazılı biçimde aktarılabilmesi bu da çok iyi bir yarar. İlk iki maddeyi konuştuk zaten. Lafı geçmişti. Üçüncüsünden ve dördüncüsünden bahsedelim.
+
+59
+00:26:42,579 --> 00:26:54,199
+Bu tasarım kalıplarını ortaya çıkaran dörtlü çete ve netövete ve çeşitli yeni tasarım kalıpları kazandıranlar, Nesneye'ye yönelim de tecrübeli insanlar olabilir ancak.
+
+60
+00:26:54,199 --> 00:27:10,579
+Ve bu deneyimlerini spesifik bir probleme uyarlayarak sizinle bu deneyimlerinin bir kısmını paylaşmış oluyorlar. Böylece deneyimin yazılı biçimde aktarılıyor.
+
+61
+00:27:10,579 --> 00:27:11,299
+Anlaşılabilmesi.
+
+62
+00:27:12,019 --> 00:27:39,940
+Mümkün oluyor. Normalde deneyim öyle pek yazılı şekilde aktarılmaz. Ya bir usta-çırak ilişkisi, ya bir öğretmen-öğrenci ilişkisi içerisinde. Genelde gösterilerek anlatılıyor. Gösterilerek ve yapılarak. Ama tasarım kalıbı, kalıpları üstünden yapılan tasarımda hazır, kullanıma hazır çablonlar şeklinde olduğu için ve az önce bahsettiğim dört bölümden oluşarak çok ayrıntılı biçimde konuyu anlattığı için.
+
+63
+00:27:40,019 --> 00:28:02,920
+Siz de o kalıbın bir problemini uygular uygulamaz, o kalıbı artık öğrenmiş ve onun o kalıbı ortaya çıkaran deneyimi siz de almış ve içselleştirmiş hale getiriyorsunuz. Bu açıdan önemli. Ve son olarak tasarım kalıplarını bilen kişiler arasında çok daha etkili ve verimli bir iletişim haberleşme söz konusu olabilir.
+
+64
+00:28:06,996 --> 00:28:19,516
+Tasarım aşamasındasınız. Burada diyebilirsiniz ki mesela iki tane senior designer veya senior architect konuşuyor ve diyor ki işte burada şey.
+
+65
+00:28:20,660 --> 00:28:34,599
+Burada farklı finansal algoritmalar olabilir. Müşterilerde farklı algoritmalar kullanmayı çok seviyorlar. Biz bunu stratejik alımına göre tasarlarsak eğer bu algoritmaları kolaylıkla değiştirebilirler.
+
+66
+00:28:35,940 --> 00:28:48,599
+Ötekisi de der ki mesela evet iyi fikir fakat bunları single-time yapmayalım çünkü aynı algoritma çok farklı varyasyonlar da olabiliyor. Onun yerine fly-rate olabilir bunlar. Çünkü bazı bilgiler...
+
+67
+00:28:48,660 --> 00:29:00,780
+İki cümlelik bir konuşmada tasarımın önemli bir kısmını karar verilmiş oluyor. Karşılıklı anlaşılmış oluyor.
+
+68
+00:29:00,780 --> 00:29:08,180
+Veya kodlama aşamasında bir programcı bir kısmını çok verimli kodlayamadı.
+
+69
+00:29:09,460 --> 00:29:17,300
+Arkadaşlar ona geldi ki, ya işte burada komposit kullansa o bütün varlıkları, farklı nesnleri bir arada daha rahat tutabilirsin.
+
+70
+00:29:17,300 --> 00:29:27,140
+Çok iyi fikir deyip, yani uzun uzun bak şöyle şöyle tasarlı, şöyle şöyle kodlar diyeceğine pek kelimeyle kalıp söylediğinde öteki kişi bunu anlayıp gereğini yerine getirebilecek.
+
+71
+00:29:27,619 --> 00:29:30,079
+Bunun da önemini lütfen hafif almayın.
+
+72
+00:29:32,211 --> 00:29:41,632
+Burada kimler diyebilir ki, özellikle bazı kapılar için, ya siz buna bir kalıp denilmiş ama yani çok temel bir ilkenin basit bir uygulamasıdır.
+
+73
+00:29:41,911 --> 00:29:50,592
+Sen gibisinden düşünebilirsiniz. Yine göre de haklısınız daha. Çünkü bazı kapılar hakikaten sadece basit bir fikir düzeyinde anlatılıyor.
+
+74
+00:29:50,592 --> 00:29:59,971
+Çok ayrıntıda anlatılıyor. Ama varsın basit olsun, yararlı ve kullanışı olduğu sürece bence o bir tasavuk alım şeklinde adlandırılıyor.
+
+75
+00:30:00,000 --> 00:30:16,440
+Hak ediyor diye düşünüyorum. Peki, şimdi bu ders notlarında kalıpların hangisinde anlatıyorum? Biraz da onun üstünde konuşmak istiyorum. Çünkü geçmiş bir deneyimin var, bir hikayem var bu konuyla ilgili.
+
+76
+00:30:19,179 --> 00:30:20,759
+Şimdi dörtlük şete.
+
+77
+00:30:22,099 --> 00:30:47,099
+Kalıpları anlatırken belirli bir sıraya göre anlatıyor. Bunu da anlatırken önce tasarım kalıplarını 3 ayrı kümeye ayırıyorlar. İşte creation olanlar, structure olanlar ve behavioral olanlar diye. Daha sonra bunların bu sırayla anlatıyorlar. Önce creation'ı, tak öyle miydi bir bakayım. Yanlış şey söylemiş oldu. Bunu nereye koyduk? Şuraya.
+
+78
+00:30:55,923 --> 00:31:00,923
+Evet, creation'ı doğru, creation, structure, behavior'ı.
+
+79
+00:31:01,395 --> 00:31:27,215
+Creation Instruction Behavior. Evet, bu sırada anlatıyorlar. Fakat ilk anlattıkları kalıp, benim de tabii ki bu sırayı kullanarak anlatıyor olacağım. İlk anlattıkları kalıp, Modelleme Controller kalıbı, MVC. Bu bir davranışsal kalıp aslında. Fakat çok ayrıntılı kod içermediği için biraz da giriş olsun. Niye herhalde bunu seçmişler diye tahmin ediyorum. Ondan sonra da behaviorlardan direkt devam etmiyorlar.
+
+80
+00:31:29,236 --> 00:31:37,796
+Sebebi üstünde çok fazla kafa patlatmadım. Vardır bir bilgileri herhalde diye düşünüyorum. Önce creation'ı, sonra structure'ı, sonra behavior'ı katılıyorlar.
+
+81
+00:31:39,176 --> 00:31:48,696
+Şimdi şöyle bir arazı düşününce, tabii ki oluşturmadığınız şeyleri kullanamazsınız veya belli bir yapıda ilişkilendiremezsiniz. O yüzden önce creation'ı anlatıyorlar.
+
+82
+00:31:49,488 --> 00:31:59,128
+Ondan sonra Structure'ı anlatıyorlar. İşte oluşturulan sınıflardan nesneler nasıl bir araya getiririz? Nasıl bir yapı oluşturur bunlardan herhalde diye düşünüyorum.
+
+83
+00:31:59,508 --> 00:32:10,688
+Creation'ı da sonra Structure'ı. Ondan sonra da hadi bakalım şimdi elimizde nesneler var? Bunların davranışlarının en ilginç, en esnek şekilde modeller mesleğine yönelik kalıplardan da bahsedelim.
+
+84
+00:32:10,688 --> 00:32:17,488
+Yani behavioral herhalde böyle düşünmüş olabilirler mesela. Bu sıraya göre anlatıyorlar. Ben ilk başta...
+
+85
+00:32:17,488 --> 00:32:29,488
+Bu sıraya göre anlatmak istemedim. Değişik, farklı bir şey olsun istedim. Bu üçlü gruplamaya ek olarak bir gruplama daha yapıyor dörtlük çete.
+
+86
+00:32:34,932 --> 00:32:50,351
+Sınıfı yok, bu o değil. Bir kategorileme daha yapıyorlar ama o kategorinin olduğunu ezbere söyleyemeyeceğim. Eski kitabı açıp bakarız. Aslında madem konuşuyorum, şuraya söylemem iyi olurmuş. Bir tane ekleyeyim bari.
+
+87
+00:32:50,351 --> 00:32:55,351
+Bunun notumu, belki onu da yazalım şimdi güncelleme sırasında.
+
+88
+00:33:02,548 --> 00:33:03,307
+Günaydın.
+
+89
+00:33:11,307 --> 00:33:14,327
+Arada bakabilirim. Belki de bakarız duruma göre.
+
+90
+00:33:18,708 --> 00:33:41,128
+İşte kalıpların kullanım çözdüğü problemlerin genel tarifine yönelik bir üç ayrı kategoride de gruplayabiliriz kalıpları diyorlar. Fakat bu sıraya göre anlatıyorlar. Ben de hani o dedikleri alternatif gruplamaya göre anlatayım dedim ilk başta.
+
+91
+00:33:43,220 --> 00:33:50,220
+O şekilde anlatırken bazı çevrimsel referanslar verilmek zorunda kalındı.
+
+92
+00:33:50,220 --> 00:33:52,100
+Yani şöyle demek istiyorum.
+
+93
+00:33:54,380 --> 00:34:01,600
+Örneğin behavioral kalıplardan neyi anlatırken mesela?
+
+94
+00:34:02,836 --> 00:34:21,256
+Observer'ı anlatırken mesela, diyebiliyor ki, gözlemlenen varlıklar veya gözleyici varlıklar kendi aralarında bir ağaç yapısı, yaraşık yapı içerisinde bulunabilir. O da kompozit structure kalıbıyla iyi modellenebilir diyor.
+
+95
+00:34:21,748 --> 00:34:34,608
+Amaca göre anlatımda önce işte bu diğer kalıbı söylüyorsa eğer o zaman daha henüz bu kompozit kalıbı görülmediğinden...
+
+96
+00:34:35,027 --> 00:35:01,067
+Bir kalıbı görmeden adı geçiyor. E o nasıl bir şey? O zaman anlatılan biraz havada kalabiliyor. Gördüğüm, deneyimlediğim sakınca o oldu. Böyle işte bir çevrimsel referanslar, saklik referans problemleri oldu o anlatım sırasında. Ben de o yüzden vazgeçtim. Kitapta anlatılan şekilde anlatmaya karar verdim. Bu konuyla ilgili bir dolu kaynak olduğundan da bahsetmişim. Hepsi de aynı şekilde anlatıyor.
+
+97
+00:35:03,027 --> 00:35:26,987
+Kendi bildirimi okumayıp, demek ki doğru yolu daha rahat, oradan devam edelim dedim. Ama denemeden de bilemezdik yani nihayetinde. Bazen Nasreddin Hoca haklı olabiliyor tasarımcılığıyla ama bu vakada evet tamamen en iyi anlatım sırası buymuş diye ben de karar kıldım. Ve o sırada kalıpları anlatmaya epey bir senedir devam ediyoruz.
+
+98
+00:35:29,331 --> 00:35:48,992
+Evet, peki. Evet, birazcık daha bir kelime daha edelim bu gruplar ile ilgili. Evet, yaratımsal. Yaratımsal kalıplar, nesnenin oluşturulması, temsil edilmesi, ilişkilendirmelerindeki bağımlılık yani coupling. Bunu azaltmaya yönelik kalıplardı ve bağlaşımın düşük olmasının tercih edildiğini konuşmuştuk.
+
+99
+00:35:49,771 --> 00:35:57,192
+Structuralı kalıplar, yapısal kalıplar, sınıflar ve nesnelerin bir araya getirerek daha büyük yapılar elde edilmesine yönelik kalıplardır.
+
+100
+00:35:57,331 --> 00:36:07,192
+Ve sadece bir araya getirmek değil bu ilişkilerin idamesi gibi başka yan problemlerle de önerilir oluyor elbette bu katlarım.
+
+101
+00:36:07,431 --> 00:36:15,431
+Ve son olarak da davranış sağlıklar, solumlulukların nesneyle dağıtılması ve doğru algoritma seçimine yönelik katlar oluyor bunlar.
+
+102
+00:36:15,912 --> 00:36:25,331
+Solumlulukların da doğru dağıtılması uyumun yani kohejyanın yüksek olmasını sağlar ki işte onun da öyle olması gerektiğini.
+
+103
+00:36:25,331 --> 00:36:45,192
+Geçen hafta konuşmuştuk. Burada şöyle bir belki ipucu olabilir. Bir problemde hem yaratımsal ihtiyaçlar, hem yapısal ihtiyaçlar, hem de davranışsal ihtiyaçlar olabilir. O zaman hani yaratıma yönelik bir kalıpsi açtıktan sonra belki sistemdeki davranışı daha iyi modelleme yönelik bir heyyvoru.
+
+104
+00:36:45,588 --> 00:36:53,088
+Bir ya da birden fazla kalıp da uygulamak yararlı olabilir diye o bakışıyla bakıp probleme kalıp uyarlayabilirsiniz.
+
+105
+00:36:53,715 --> 00:37:16,555
+Veya işte bu aradaki nesnlerin ilişkilerindeki yapısallığı daha iyileştirmeye yönelik bir ihtiyaç olabilir diye düşünüp, hani stakçı kalıpları da gözden getirip, bu da bir uygulanabilir diye o bakış açısıyla bakınca uygulanmasının yerinde olduğu bir kalıp görebiliyorsunuz.
+
+106
+00:37:16,555 --> 00:37:21,555
+Çünkü normalde gerek işçiler sınavlarda olsun, gerek gerçek...
+
+107
+00:37:21,715 --> 00:37:47,655
+Hatta bırakın sadece bu tasarım kalıplığı konusu. Gerçek hayatımızda diyelim, yaşantımızda diyelim. Sizin belli bir şeye ihtiyacınız yokken onunla ilgili şeyleri dışarıda görmeden geçersiniz. İhtiyacınız olduğu zaman görürsünüz. Örneğin mesela ne diyelim? Daha evvel bisikletiniz yoktur.
+
+108
+00:37:48,340 --> 00:38:10,699
+Hiç böyle etraftaki bisikletçi dükkanlarını falan görmezsiniz. Ama ne zamanki kafanıza ya bir de bisiklet alsam hem spor olur hem işte havalarda güzel dolaşılın çok iyi olur diye düşünülerekten etrafta dolaştığınızda o zaman etraftaki bütün bisiklet satan dükkanları görüyor olursunuz gibi diyorum.
+
+109
+00:38:16,340 --> 00:38:23,340
+O zaman şimdi...
+
+110
+00:38:24,467 --> 00:38:50,567
+Listelen kalıplara bakıp, ha şimdi bu kalıp bu problemin bir köşesine uyar mı? Yok şu kalıp şu problemin bir köşesine uyar mı? Şeklinde düşünmek daha yeni başladığımız zaman tasarım kalıpları ve çalışmaya yararlı olacaktır haliyle. Ama bu kalıpları iyi özümseyip çeşitli örneklerle de uyguladıktan sonra siz problemi gördüğünüzde ha ona bu kalıp yarar diye o ilişkiyi doğrudan kurabileceksiniz.
+
+111
+00:38:52,467 --> 00:39:20,307
+Sınavda olsun, gerek kod yazarken olsun. Daha iyi bir kod yazmaya, daha esnek kod yazmaya çalışıyorum. Ne yapayım? O zaman işte şu an görevlendirilimin bu konuda şu kalıp işe yarar mı? Yaramaz. Bu yarar mı? Yaramaz. Bu yarar deyip bunu alıp uygulamaya çalışıp baktınız o kadar da iyi oturmadı. Eksik yaraya kaldı. Tamam iyi bir fikir değilmiş deyip. Sonraki diğer kalıpları da incelemeye başlayabilirsiniz. Ama tabii ki bu çok verimli bir yol değil. Ama işte böyle kullana kullana, yapa yapa artık
+
+112
+00:39:20,467 --> 00:39:24,607
+Burada bu kalıbı kullanılmasına işe çok yararlı olur noktasına gireceksiniz.
+
+113
+00:39:30,835 --> 00:39:53,775
+Tamam, peki. Bir kategori daha var ama o bulamadığım sıra değil. Bir de iki kategoriden de inceleyebilmiyor atasal kalıpları. Sınıfsal kalıplar ve nesnelersel kalıplar şeklinde. Sınıfsal kalıplar, sınıflar ve bunların alt sınıfları arasındaki ilişkilere yönelik kalıplar oluyorlar.
+
+114
+00:39:56,052 --> 00:40:00,000
+Kendi doğası gereği daha dudağın...
+
+115
+00:40:00,000 --> 00:40:25,619
+Bir ilişki türü. Eğer bir sınıf diğer sınıftan kalıtımla türetildiğinde bunun herhangi şekilde değiştirilmesi, çalışma zamanında değiştirilmesi imkansız. Ancak kodu tamamen değiştirirsiniz. Ancak öyle değişikliği yapmış olursunuz. Mesela işte insan sınıfınız var. Ondan kalıtımla çalışan sınıfı oluşturduğunuzda her çalışan aynı zamanda bir insandır ve bunu değiştiremezsiniz.
+
+116
+00:40:28,000 --> 00:40:50,900
+Kardeş sınıfı, öğrenci sınıfı olsun. Artık bir insanı işiten çıkartıp bunu bir öğrenci olarak modelleyeceğiniz zaman o insan nesnesini, çalışan nesnesini, öğrenci nesnesini doğrudan değiştiremezsiniz. Çünkü o sınıfın türünü değiştirmek zorunda.
+
+117
+00:40:51,956 --> 00:41:19,956
+Fakat burada sahiplik ilişkisi türünden yapsaydınız eğer, mesela bir kompozit içerisinde, bir ağaç yapısı içerisinde diyelim veya bir parça bütün ilişkisi içerisinde bir insan nesnesiyle onun sahip olduğu rolleri de sahiplik ilişkisiyle tuttuğumuz durumlarda bir insan çalışıyorken ona çalışan üye alanını...
+
+118
+00:41:19,956 --> 00:41:44,636
+Üye alanının olur. O türden bir nesne atarsınız. Ama öğrenci değildir. Öğrenci nesnesi atamazsınız. Onu işten çıkaracağınız zaman insan olması hakkındaki bilgiler sabit kalıp sadece çalışan üye alanını mal yaparsınız. Ama öğrenci nesnesi ise sadece öğrencilikle ilgili durum bilgisini verecek şekilde bir nesne atarsınız.
+
+119
+00:41:47,956 --> 00:42:03,115
+Kopi Konstruktör'lar oluşturup, silinecek nesnenin ortak insanlık ile ilgili durum bilgilerini alıp, ak olarak bu yeni rolü olacak öğrencilik ile bilgilerini de veren şekilde bir kopi konstruktör yaparsınız.
+
+120
+00:42:03,216 --> 00:42:08,676
+Ancak onun üstünden veriyi taşırsınız ve nesnenin kimliği de kaybolmuş olursunuz.
+
+121
+00:42:08,676 --> 00:42:15,956
+Eski çalışan nesnesi bellekte farklı bir yerde duruyorken, yeni öğrenci nesnesi bellekte bambaşka bir yerde duruyorken.
+
+122
+00:42:15,956 --> 00:42:41,548
+Bu örneğe bakalım.
+
+123
+00:42:42,900 --> 00:43:10,840
+Anlatmak istiyorum bu konuyu. Nesnesel kalıplar, ikinci kategori ise çeşitli türden nesneler arasındaki ilişkilerin modellenmesine yönelik kalıplar oluyorlar. İşte nesne arasındaki ilişkiler runtime ile çalışma süresinin içi rahatlıkla değiştirebilir, daha dinamiktir. İşte birisini nal yaparsınız, başka nesne verirsiniz gibi çok basit setter veya benzer durum bilgisini değiştirecek.
+
+124
+00:43:10,900 --> 00:43:37,920
+Çalışma zamanında çağırılabilecek metotlarla daha esnek bir yapı sağlar size. Genelde bir kalıp bu gruplardan birine dahildir sadece. Tek istisnası adaptör kalıbı. Bu kalıbı hem sınıfsel hem de nesnesel olarak değerlendiriyor. Bir de böyle bir kırılımımız da var. Bu kırılımları kesinlikle ezberlemeniz gerekmiyor arkadaşlar.
+
+125
+00:43:38,900 --> 00:43:54,100
+Bu konuyu anlatan çeşitli kitaplarda, sitelerdeki testlerde falan olsun. Aşağıdakilerden hangisi değerlerinden farklıdır? Dört tane katı vermiş. Üç bir behavior, biri creation'ın, creation'ın olduğu için onu seçmek zorundasınız gibi sorular gelebiliyor.
+
+126
+00:44:03,092 --> 00:44:09,092
+O kategorik katıların isimlerini yazıyor oluyorum zaten tahtaya. Bu arada bir ezbere ihtiyacımız yok.
+
+127
+00:44:12,092 --> 00:44:23,271
+Evet, buraya kadar konuştuklarımda soru varsa buyurun. İster çete yazın, ister sesinizi açın hocam deyin ve söyleyin konuşalım.
+
+128
+00:44:24,211 --> 00:44:27,271
+Sizi beklerken ben bir eklist açayım.
+
+129
+00:44:33,715 --> 00:44:38,916
+Hemen ihtiyaç yok ama yakın olabilirsin. Evet, bunun varsa bekliyorum bu sohbet.
+
+130
+00:44:44,148 --> 00:44:48,148
+Tabi burada WhatsApp gibi birisi yazarken bilmem kim yazıyor demiyor.
+
+131
+00:44:56,436 --> 00:44:59,815
+Peki, alay yok. Geldi. Bir şey geliyor ki.
+
+132
+00:45:00,216 --> 00:45:02,336
+Evet, alttan demiş ki.
+
+133
+00:45:03,216 --> 00:45:08,896
+Evet, bir dakika. Bir de şey yapacaktım. Yeni kayıt olan öğrenci olabilir. Link yollayacaktım.
+
+134
+00:45:09,016 --> 00:45:10,436
+Dur, dur, dur. Evet, bir de o var.
+
+135
+00:45:11,336 --> 00:45:13,576
+Derster herhangi bir proje geliştirecekmiş.
+
+136
+00:45:13,896 --> 00:45:16,936
+Yok hayır arkadaşlar. Ders kapsamında bir proje düşünmüyorum.
+
+137
+00:45:18,396 --> 00:45:21,936
+Belki sürpriz şapkadan bir şey çıkabilir ama...
+
+138
+00:45:23,027 --> 00:45:24,947
+Zannetmiyorum doğrusu.
+
+139
+00:45:26,195 --> 00:45:53,076
+Şu an kadar hiç vermedim ders konu kapsamında proje. Vermeyi düşündüğüm dönemler oldu ama bu başka akademik araştırmalara katkı sağlayacak bir etkinlik gibi düşündüğüm şeyler oluyor. Ve böyle bir şey olsa da büyük ihtimalle bunu bonus gibi düşünebilirim. Ama o zaman da herkes de bonus almak isteyecektir. Öyle bir durum söz konusuysa da bir tür zorunlu gibi olabilecektir.
+
+140
+00:45:54,195 --> 00:46:08,315
+Bu konuda için düşünmüyorum arkadaşlar. Evet, bir de şöyle yapalım madem öyle. Nasıl yapıyoruz şimdi? Nasıl yapıyorduk? Katılımın içine ara bir tıklayıp ondan sonra cama şurada.
+
+141
+00:46:21,619 --> 00:46:26,260
+Bir şey bir açalım. OBS'yi. Şöyle çıktıktan sonra.
+
+142
+00:46:33,715 --> 00:46:45,715
+Bunu 1-2 hafta yapayım. Çünkü dilekçe kabul ediliyor ama V-OBS'de ders eklermiş oluyor. Fakat online yıldızı da bu aktarılmamış olabiliyor.
+
+143
+00:46:45,715 --> 00:46:47,715
+Bu bağlamda.
+
+144
+00:46:52,980 --> 00:46:53,932
+Teşekkürler.
+
+145
+00:46:59,539 --> 00:47:00,539
+Ve bu kit.
+
+146
+00:47:01,539 --> 00:47:02,539
+Bu kit ya.
+
+147
+00:48:13,523 --> 00:48:18,443
+Yenidenin
+
+148
+00:48:24,755 --> 00:48:25,695
+Bir yandan.
+
+149
+00:48:31,059 --> 00:48:36,180
+Evet, Mühendisliği kalıbıyla başlıyoruz. Modelleme kontrolü ama bir dakika bunu çağıracağım.
+
+150
+00:49:15,603 --> 00:49:22,603
+Söyleyeceğim bir şey daha vardı. Şu noktada söylemeyi düşünmüştüm ama...
+
+151
+00:49:23,283 --> 00:49:26,884
+Şu noktada söylemeyi düşünmüştüm. Söylememiştim. Şimdi söyleyeyim.
+
+152
+00:49:27,423 --> 00:49:31,603
+Şimdi madem tasarım katları deneyimin yazılı biçimde aktarabilmesini sağlıyor ya...
+
+153
+00:49:31,860 --> 00:49:56,119
+O zaman aslında bu dersi canlı olarak dinlemek zorunda da değilsiniz. Nihayetinde. Madem öyle, ben de bu Dörtlü Çetlerin kitabını okurum. Ondan sonra acaba. Ders noktalarına da bakarım. Ondan sonra acaba işte başka kitaplardan da. Yani kendim çalışabilirim diyebilirsiniz halbette. Bu ders self-study için, yani kendi kendinizle çalışmak için gayet uygun bir konu aslında.
+
+154
+00:49:56,851 --> 00:50:13,091
+Fakat bununla birlikte herkes o disiplini gösteremeyebilir. Benim gibisiniz özellikle. Tamam çalışacağım dersiniz, ertelersiniz, ertelersiniz. Sonra sınav vakti gelmiştir, çalışamamışsınızdır gibi durumlar olabilir.
+
+155
+00:50:13,876 --> 00:50:29,696
+O yüzden belli bir hafta, belli bir derse katılamayan arkadaşlar üzülmesin. Hem kayıttan izlerler hem de o hafta anlatılan kalıpları başka kaynaklardan da çalışabilirler. Bu konuda bir kaydınız olmayacaktır.
+
+156
+00:50:29,696 --> 00:50:41,116
+Fakat madem dersi senklon olarak, canlı olarak izlemeye, dinlemeye, katılmaya karar verdiniz. O zaman en önemli avantajınız sizin soru sormak olacaktır.
+
+157
+00:50:42,771 --> 00:51:00,192
+Belli bir konuda kafanıza yatmayan noktalarda sorularınız olursa beklerim mutlaka. Ya da siz de bir kalıbı kullandık. Bu kalıbı siz de daha evvelki çalışmalarınızda kullandıysanız bilerek veya bilmeyerek.
+
+158
+00:51:00,192 --> 00:51:10,192
+Çünkü bazen biliyorsunuz öyle bir tasarım kalıbı olduğunu ve spesifik olarak belli bir problemlerinize uygulamışsınızdır. Veyahut da kalıbı anlattınca o çalışma biçimini duyunca...
+
+159
+00:51:10,771 --> 00:51:20,592
+Ben böyle şeyler zaten yapmıştım deyip, ondan sonra yaptığınız kısımları hatırlarsanız eğer, sizin de ders katkalarınızı beklerim.
+
+160
+00:51:20,992 --> 00:51:28,152
+Hocam deyin, açın sözünü, hocam deyin. Anlatın, bizimle paylaşın. Böylece daha renkli bir ders geçmiş olur.
+
+161
+00:51:28,672 --> 00:51:31,512
+Ben de yeni kişiler öğrenmiş olabilirim bu şekilde.
+
+162
+00:51:34,420 --> 00:51:40,519
+Evet, bunu demek istiyordum. Ve altından şimdi Modell View Control Tasım kalıbına geçebiliriz.
+
+163
+00:51:43,476 --> 00:52:11,476
+Şimdi bu kalıbın çözmeye çalıştığı sorun şudur. Bakalım chatte bir şey var. [öğrenci] Bey diyor ki, bildiri sununuz varmış. Kolay gelsin, başaralar derim. Yolunuz açık olsun. Evet, ben özel bir yoklamada almıyorum zaten. Bu yapılabiliniyor. Katılım listesini alabiliyorsunuz. Ona göre takip yapabiliyorsunuz. Ama bu self-stay için uygun olduğundan ben de çok öyle bir şey yapmıyorum zaten. O nedenle...
+
+164
+00:52:11,476 --> 00:52:14,936
+O polisin nedir? Onu da söylemiş olmamda yalak var.
+
+165
+00:52:14,936 --> 00:52:18,755
+Peki, şimdi Modelleme Kontrollers kalıbında.
+
+166
+00:52:19,096 --> 00:52:24,835
+MVC deyince herkesin aklına ilk başta Microsoft gelebiliyor. Daha çok gençlerin aklına geliyor bu.
+
+167
+00:52:25,436 --> 00:52:30,835
+Ya da işte genç olunmasa bile tasarım kalıpları üstünde daha evvel çalışılmamışsa.
+
+168
+00:52:31,235 --> 00:52:33,855
+MVC deyince Microsoft'un Framework geliyor.
+
+169
+00:52:34,396 --> 00:52:39,275
+Microsoft'un MVC Framework'ı arkadaşlar bu Modelleme Kontrollers tasarım kalıbına
+
+170
+00:52:39,476 --> 00:53:02,235
+Dayanan, çok kullanışlı, çok daha geniş ölçekli bir framework aslında tabii ki. Tasarım kalıbı dediği için tanımını yaptık. Ondan sonra acaba ama Microsoft'un başlı başlı bir framework. O açıdan hakkını verelim. Ama hani MVC'nin aslı ilk kullanıldığı nokta 4.3'in tasarım kalıplarımız.
+
+171
+00:53:05,108 --> 00:53:12,908
+Çalıştırıcı sorun şudur ki, bizim bir verimiz var. Bu veriyi farklı farklı biçimlerde gösterebilmek istiyoruz.
+
+172
+00:53:13,648 --> 00:53:19,728
+Ve ayrıca istiyoruz ki, kullanıcı verinin hepsini görmek zorunda da değil, bir kısmını görebiliriz.
+
+173
+00:53:20,108 --> 00:53:22,908
+Ve veriyi farklı biçimlerde görmek de isteyebiliriz.
+
+174
+00:53:23,608 --> 00:53:25,908
+İşte bütün bunları mümkün kılabilen.
+
+175
+00:53:26,255 --> 00:53:44,515
+Ve kullanıcının bu veriyi değiştirebilmesini de sağlayacak ve isterse de farklı biçimlerde değiştirebilmesini de sağlayacak bir altyapı kurmak istiyoruz. Buna yönelik bir modellemeyi nasıl yaparız? Buna yönelik cevabı vardır. Modelleme kontrolü tasarım kalıbının.
+
+176
+00:53:50,623 --> 00:54:17,523
+Bir ilkemiz var. Neyin değiştiğini bul ve onu sarmala. Yani burada değişen şey ne? Veri değişebiliyor, verinin gösterimi değişebiliyor, verinin gösteriminin yönetimi değişebiliyor, düzenlenmesi değişebiliyor. Bunlar değişebiliyorsa eğer bunları farklı sınıflar şeklinde ele almalıyız.
+
+177
+00:54:18,291 --> 00:54:30,092
+Yani bizim ham verimizi simgelemek üzere Modell diye bir sınıf öneriyor kalıp. Bu verinin...
+
+178
+00:54:30,099 --> 00:54:36,039
+Farklı gösterim biçimlerini simgelemek üzere bir view sınıfı öneriliyor.
+
+179
+00:54:36,039 --> 00:54:55,039
+Ve gerek farklı view'lar arasında geçiş, gerek aynı view veriyi farklı bölümlerini gösteriyorsa, şu an şu bölümünü göster gibisinden işleri, dileklerimizi, isteklerimizi yürütecek olan view sınıfı.
+
+180
+00:54:58,099 --> 00:55:09,619
+Veride değişiklik işlemleri gerekse şu view'un ayarlarıyla ilgili değişiklikleri yapmak üzere de controllers adlı bir sınıf öneriyor.
+
+181
+00:55:09,619 --> 00:55:17,539
+Ve aradaki ilişkileri bu şekilde veriyor arkadaşlar. Bir kere model sınıfının başka hiçbir sınıfa bağımlılığı yok.
+
+182
+00:55:22,260 --> 00:55:25,980
+Veridir. Kendisinin nasıl gösterildiği
+
+183
+00:55:26,351 --> 00:55:53,351
+Kendi değiştirilme yöntemlerinden bağımsız olmak durumundadır. Veya kendisinin değiştirilme yöntemlerinden bağımsız olmak durumundadır. Değiştirilirse değiştirilir kardeşim. Şöyle gelerek de değiştirilmiş, böyle gelerek de değiştirilmiş. Bunlar hakkında herhangi bir bilgisi olması gerekmiyor. Bunların farkında olması gerekmiyor. Buram değişti, yeni değer bu. Sadece ondan bilgisi olması gerekiyor.
+
+184
+00:55:54,351 --> 00:56:20,512
+Nesneye en önemli bir hatırlayın. Bir nesnenin bir metodu çağrıldığında o nesne o metodunu çağıran nesnenin kim olduğunu ne olduğunu bilmez. Ancak belki o metod parametresi olarak bir dis pointer'ı atanıyor olabilir. Metodu çağıran kendi referansını o dis pointer'ı üstünden metodu çağıran nesnenin o metodunu iletebilir belki. Ama ona da null deyip geçebilir mesela yani.
+
+185
+00:56:20,815 --> 00:56:39,596
+Bu nedenle madem bir nesne kendisinin bir metodunun çağıranın kim olduğunu bilmiyor, bilemiyor. Veri de aynı şekilde. Beni değiştirmek üzere veya beni farklı biçimlerde göstermek üzere şu nesne beni kullanıyor, bu nesne beni kullanıyor diye bilmesine gerek yok kesinlikle.
+
+186
+00:56:39,956 --> 00:57:04,196
+Bu nedenle Modell sınıfından başka bir yere doğru giden ok yok. Fakat elbette View sınıfından Modell sınıfına doğru giden bir ok var, bir sahiplik ilişkisi var. Çünkü hangi veriyi gösterecek? Bunu bilmek zorunda. Arada bu nedenle göstereceği veriyi de buna atanmış olacak. Bu nedenle View'dan Modell'a doğru okumuz var.
+
+187
+00:57:04,947 --> 00:57:10,327
+Kontrolün ise hem veriyi doğrudan düzenleyebileceği gibi.
+
+188
+00:57:10,735 --> 00:57:35,295
+O yüzden kontrolüden Modell'a doğru ok var. Ve View'la ilgili değişiklikler, şunlar bunlar ihtiyaçlarımız olacak. O ihtiyaçları alıp View'a iletmesi söz konusu kontrolcü. O yüzden kontrolcüden View'a doğru da ok var. Ama diğer yönlerde ok yok. Bu sayede bağlaşımı minimumda tutuyoruz.
+
+189
+00:57:37,076 --> 00:58:00,356
+Temel ihtiyaçlarımız kapsamında. Burada neden bu model view kontrol şeklinde isim vermişler? Bir ona gelelim. Şuna benzetiyorlar bu kıvı, bu hikayeyi. Bir ressam ve çizdiği insana benzetiyorlar. Şimdi ressamların çizdiği insanlara ve hatta cansızlara da model veriliyor ya.
+
+190
+00:58:00,947 --> 00:58:10,267
+Modellik yapıyorum. Sanat realisinde modellik yapıyorum. Resmini çiziyorlar. Tamam. Şimdiki ben bir resmimle çizmesini istedim.
+
+191
+00:58:12,347 --> 00:58:14,827
+Diyelim ki o zaman model benim.
+
+192
+00:58:15,347 --> 00:58:28,347
+Fakat ressama dedim ki, benim lütfen portre şeklinde resmen içerisiniz. Gerçekçi bir portre olarak bak. İşte o ortaya çıkacak resmin bakış açısını vermiş oldum ressama.
+
+193
+00:58:28,347 --> 00:58:35,347
+Vivo verdim. Boynumdan yukarısı, omzumdan yukarısı. Ya da beni tam boy olarak resmetledim.
+
+194
+00:58:35,347 --> 00:58:37,347
+Vivo.
+
+195
+00:58:37,972 --> 00:58:58,972
+Beni gösterecek pencerenin ebatını vermiş oldum. Sonra belki diyebilirim ki, beni gerçekçi çiz veya karikatür olarak çiz. Karikatür çizdi dersen, kara kalem çiz. Bazı özelliklerimi abarttım, burnum büyüktür, daha büyük çiz. Epey kül aldım, kocaman bir göbek çizim.
+
+196
+00:59:02,420 --> 00:59:29,840
+Karikatür çizdim ya, gerisi onda. Ne tarafım büyük, ne tarafım küçük, ne tarafım abartı, ne tarafım komik göstereceği ressama kalmış. Ressam da kontrolcü arkadaşlar. Ortaya çıkacak nihai ürünün ayrıntılarını kontrol ediyor. Ben anahtarı diyebiliyorum ressama. İşte böyle olsun, böyle olsun. Ama iş sonunda ressamın çizdiği esere. Böyle bir benzetme öneriliyor herhalde.
+
+197
+00:59:30,420 --> 00:59:34,200
+Başka benzetmeniniz varsa sizlerden duymaktan memnun olalım.
+
+198
+00:59:35,340 --> 00:59:54,920
+İşte bu benzetmeyi aklınıza getirdiğinizde hemen isim ve isimden tasarım ayrıntıları aklınıza gelip bu kalıbı hızlıca, kolaylıkla tekrar bütün ayrıntılarıyla hatırlayabiliyor olursunuz.
+
+199
+00:59:58,260 --> 01:00:00,000
+Ne gibi kazanılması olur?
+
+200
+01:00:00,000 --> 01:00:09,840
+Temel olarak yaptığımız şey, gösterimi, kontrol ve veriyi birbirinden ayırmak suretiyle bunları çalışma anında değiştirebilme olanları kazandık.
+
+201
+01:00:11,840 --> 01:00:24,840
+Evet, artık şimdi jeneratif AI'lar çok moda. Mesela ressam da olmak zorunda değil. Normal bir mesela tambo kendi resmimi yükledikten sonra bunları çeşitli bit diye de söyleyebilirim.
+
+202
+01:00:25,980 --> 01:00:28,000
+Ya da sırf vesikalımı bile yüklesebilirim.
+
+203
+01:00:28,000 --> 01:00:47,000
+Vücut hatlarımı şöyle çiz, böyle çiz, potta çiz, deneyim, loketin üstünde binmiş uçarken çiz, beni şey gibi çiz, Superman gibi çiz veyahut da şey gibi çiz, hoca göbek karakterlerden bir tanesini söyleyeyim. Her neyse.
+
+204
+01:00:55,795 --> 01:01:07,895
+Bu çok büyük olmuş, bu çok küçük olmuş. Şuradan yukarısını göster, şuradan şurasına önem ver gibisinden. Tarifimi de değiştirebilirim. Bunları çalışma anında değiştirebilirim.
+
+205
+01:01:07,895 --> 01:01:23,675
+Ve madem bu yaptığım işler farklı sorumluluklar, bu sorumlulukları birbirinden ayararak da uyumu da yükseltmiş oluyorum. İlgi alanlarını birbirinden ayırmış oluyorum. Ve yeniden kullanımı da arttırmış olabilirim.
+
+206
+01:01:23,795 --> 01:01:29,755
+Bu noktada. Çünkü diyelim ki çeşitli view tür. Şöyle bir şeyden de düşünemiyoruz aslında. Yok muydu?
+
+207
+01:01:29,755 --> 01:01:46,795
+Benim şunlarda bir yerde. Yokmuş. Tamam peki. Şeyde var. Kitapta var. Bende yok. Buraya koymamışım. Şöyle düşünün. Şimdi ben diyelim ki bir Excel verim var diyelim ki.
+
+208
+01:01:54,483 --> 01:02:01,483
+ulusal seçimler olduğu diyelim ki ve seçim sonuçlarını görmek istiyoruz.
+
+209
+01:02:01,483 --> 01:02:18,483
+Veri işte nedir? A partisi, B partisi, C partisi. Aldıkları oyla mesela. 38, 27, 50, 65 oldu.
+
+210
+01:02:21,076 --> 01:02:24,536
+80 oldu ve diğer mesela diyelim.
+
+211
+01:02:25,375 --> 01:02:31,795
+80 buna 20 oldu. Toplanınca 100 mü? Evet, toplam 100 ediyor mesela.
+
+212
+01:02:37,108 --> 01:03:02,268
+Şimdi benim verim bu. Bu veriyi farklı biçimlerde görmek isteyebilirim. Bu şekilde tablo gibi görmek isteyebilirim. Veya bir çubuk grafiği veyahut da bir pasta grafiği şeklinde görmek isteyebilirim. Bu gibi şeyleri egzarda kolaylıkla yapıyorduk biliyorsunuz. Ama şimdi nereden yapıyorduk? Bir bakalım şimdi ekreğe.
+
+213
+01:03:02,708 --> 01:03:07,827
+Evet, grafik ekleyeceğiz şimdi. Bir tane pie chart ekleyelim mesela.
+
+214
+01:03:08,884 --> 01:03:36,884
+İki boyutlu pasta olsun mesela. Ve kendisi otomatik algıladığı hangi yerine neye yönelik işte hangileri paylaştığı hangileri oy olanları. Ondan sonra ben hızlıca bunu biçimlendirerekten yoktum. Ne diyoruz? Hani şeyleri göster filan, yüzde oranları göster filan falan. Bunları nasıl yapıyorduk? Sağ tıklıyoruz. Sağ tıklıyoruz. Veri etiketleri ekle. Bakın evet sayılar da burada çıktı şimdi. Her şey gözüküyor. Ama ben bunu belki bu şekilde değil de belki.
+
+215
+01:03:36,884 --> 01:03:40,403
+Sütun grafik şeklinde olsun istiyordum mesela.
+
+216
+01:03:40,403 --> 01:03:44,403
+Tamam sütun grafiği de yapabilirim. Farklı şeye tıklamam yeterlidir.
+
+217
+01:03:47,284 --> 01:03:49,284
+Nerede olacak? Mesela biçimde mi?
+
+218
+01:03:52,884 --> 01:03:55,123
+Pardon, odaklamadığım için kaydır.
+
+219
+01:03:55,123 --> 01:03:56,083
+Şuna bakalım.
+
+220
+01:03:56,083 --> 01:03:59,364
+Yok, bunlar evet. Ha, şurada grafik türünü değiştirsin.
+
+221
+01:03:59,364 --> 01:04:01,364
+Çuk grafiği yap.
+
+222
+01:04:01,780 --> 01:04:21,240
+Eşe bu grafiği oldu gibi. Şimdi bunu egzardan yaptım. Siz odaklanmış uygulaması üzerinden düşünün. Bu şimdi seçimle ilgili bir durumdu. Ama ben bunu seçimden katılımcı demografik bilgilerini odaklama şeklinde çevirebilirdim.
+
+223
+01:04:21,240 --> 01:04:28,740
+İşte kadınların olanı, erkeklerin olanı, çalışanların olanı, çalışmayanların olanı vs. vs. Hani uygulamaların değişiyor.
+
+224
+01:04:29,268 --> 01:04:43,748
+Verim de değişiyor ama bu çizergeleme işlerin, yani farklı view'ların değişmiyor. Bu diğer uygulamamda önceki uygulamamın view bileşenlerini alıp yeniden kullanabilirim. Böyle bir romantaj sağlıyor bana mesela.
+
+225
+01:04:56,755 --> 01:05:02,036
+Bunlar ne gibi, bu kalıpta ne gibi çeşitlemeler söz konusu olabilir? Alışık onlardan bahsedelim.
+
+226
+01:05:05,748 --> 01:05:19,728
+Şimdi acaba model yani veri de acaba düzenleme değişiklik yapmanın tek yolu kontrolcü müdür? Yoksa bu veriyi değiştiren başka bir kaynak da var mıdır?
+
+227
+01:05:19,728 --> 01:05:29,708
+Eğer seçimlerden bahsediyorsak, eğer çeşitli illerde bölgelerde açılan sandıklar oldukça oranlar değişecek.
+
+228
+01:05:30,387 --> 01:05:40,387
+Bu oranlar nereden geliyor? Seçim bölgelerinden...
+
+229
+01:05:40,884 --> 01:06:08,523
+Neyi teknik terimi ya? Unuttum. İlçe seçim merkezlerinden, il seçim merkezlerine bilgi sistemi üstünden veriler gidiyor. İl seçim merkezlerinden de yüksek seçim kurulunun merkezleri üstün üstüne veriler gidiyor. Ve bunları bize gösteren televizyon kanalları oluyor. Farklı televizyon kanalları kendi farklı uygulamalarını yazabilirler. Veya belki hazır bir uygulamayı alabilir ama bir arası da farklı.
+
+230
+01:06:08,884 --> 01:06:31,183
+Hazır uygulamalar vardır. Yani grafiklerin çizdiği veri sürekli değişiyor. Veri değiştikçe o grafiklerin de güncellenmesi lazım. Bu nedenle verinin değiştiğinden haberdar olabilmemiz lazım. Bu değişiklikten ilk önce haberi olan Nesne kim oluyor? Verinin kendisi oluyor model.
+
+231
+01:06:36,083 --> 01:06:57,264
+Artık benim farklı bir şekilde aynı yöntemle ama farklı değerlerle çizilmem gerekiyor. Bunu Viva bildireyim. Viva kendisini tazelesin gibisinden bir çalışma biçimi isteyebilirsiniz. Böyle bir çalışma biçimi istiyorsanız da o zaman yapacağınız şey bu modelden Viva doğru olan.
+
+232
+01:06:58,164 --> 01:07:06,364
+Bir ok da çizmeniz gerekecek. Yani modelde kendisini gösteren View ya da View'ların neler olduğunu bilmeli bu durumda.
+
+233
+01:07:06,364 --> 01:07:15,664
+Ki değişiyor değişmez. Kendisini değiştiren View'a bildirsin. View'da yeni veriyi kontrol edip çizimini güncellesin.
+
+234
+01:07:16,563 --> 01:07:23,543
+İşte bunun için bu yönde de ok kurabilirsiniz mesela. Ama bu illaki gerekli değil.
+
+235
+01:07:24,083 --> 01:07:51,284
+Biu, belli bir periyotta modeli tekrar kontrol edip değişmiş mi, değişmemiş mi diye karar verebilir. Değiştiğini görürse de kendisini çizer. Peki bu sorgulma aralığı ne kadar zamanda bir olacak? Bu kullandığınız senaryoya göre değişir. Problem alanına göre de değişir. Yani 10 saniyede bir bakmasına gerek yok.
+
+236
+01:07:51,891 --> 01:07:58,611
+10 dakikada bir bakmasına da pek gerek yok. Ama saat başı bakarsa bu geç olabilirsin.
+
+237
+01:08:00,596 --> 01:08:14,635
+En son veriyi görmek istiyorsanız saat başı bakmak fazla geniş bir alan olur. İzleyiciler var ki, bu bir saat geriden geliyor, neredeyse biz başka kalardan seyretmeye devam edelim diyebilirler mesela seçim sunucu.
+
+238
+01:08:14,635 --> 01:08:21,416
+Ve ayrıca bir de bunların farklı farklı sunucularda yer aldıklarını düşünürseniz eğer,
+
+239
+01:08:23,347 --> 01:08:40,987
+Sık sık değişmiş mi, değişmemiş mi sorgulaması yapmak, network trafiğini arttırır, haberleşme masrafını arttırır. Çok sık yaparsınız. Tamam, daha taze veriye ulaşırsanız sık sorgulamalarda, ama bunun da maliyeti artar.
+
+240
+01:08:41,427 --> 01:08:49,567
+Veya haberleşme maliyetinden kısmak istiyorsanız o zaman bayat veriyle gösteriyor olma riskini de alıyorsunuz.
+
+241
+01:08:49,567 --> 01:08:58,847
+İşte bu da artık bağlaşıma mı oynayayım yoksa başarıma mı oynayayım? Hangisi daha önemliyse ona göre karar vereceğiz.
+
+242
+01:08:59,448 --> 01:09:08,747
+Mümkün olan en hızlı ve anlık değişiklikleri istiyorsak o zaman tek şalimiz Modelleme'ye doğru ek ilişkimizi de kurmaktadır.
+
+243
+01:09:09,395 --> 01:09:21,456
+Bu ihtiyaç kapsamında bu modeli böyle, bu kalıbı bu şekilde düzenleyebiliriz, değiştirebiliriz. Bu arada tasarım kalıplarına da illaki motomot birebir uymamız da gerekmiyor arkadaşlar.
+
+244
+01:09:21,456 --> 01:09:37,275
+Bizim avantajımız olacak şekilde bu kalıpların temel önerilerinde değişiklikler de yapabiliriz. Bu bir yasa değil, kanun değil. İşimize nasıl geliyorsa modellerimizi öyle yapacak.
+
+245
+01:09:37,395 --> 01:09:58,595
+Yapacağız. Peki, bundan bahsettik. Sonra ne olabilir? Birden fazla view olabilir. Örneğin işte en basit örnek değişik graf türleri olabilir ama bundan daha karmaşık senaryolar da mümkündür. Bu view'ların iç içe nested olması söz konusu olabilir.
+
+246
+01:10:00,000 --> 01:10:27,739
+İl düzeyinde oy oranlarını gösteren harita. Sonra belirli illere, bütün Türkiye haritasında toplam oy oranlarını gösteriyoruz. Ama bazı illerle özel olarak ilgileniyorsak, mesela İstanbul, mesela Ankara, o zaman o ile odaklanıp, mesela o ilin içerisindeki seçim bölgelerindeki ayrı ayrı oy oranlarını görmek isteyebiliriz mesela. Bu da bir genelşik, nested, iç içe bir geçiş.
+
+247
+01:10:28,000 --> 01:10:52,020
+Ona göre hiyerarşide, yukarı çıkma, aşağı inme gibi işlemler yapıp grafiği mutfelerimizi de ona göre düzenlememiz, yenilememiz gerekebilir. Ondan sonra onun gerçekleme ayrıntıları konusunda özel bir önerisi yok kalıbın ama böyle bir şey olabileceğini de unutmayın diyor. Ona da hazırlı olun mesela.
+
+248
+01:10:52,595 --> 01:10:58,355
+Sonra bu view'lar belki farklı thread'lerde çalışıyor olabilirler.
+
+249
+01:10:58,355 --> 01:11:06,515
+O zaman ve hele ki bu view'ların veriyi değiştirme yeteneği de varsa...
+
+250
+01:11:06,931 --> 01:11:26,412
+Az önceki Excel tursasında diyelim ki grafikte bazı şeyleri çekerekten de bazı rakamlar değiştirebiliyor olma yeteneğimizi düşünün mesela. O zaman farklı grafikler arasında veri tutarlarını sağlamak gerekmektedir. Onun için gerekli altyapıyı kurmamız gerekmektedir mesela.
+
+251
+01:11:26,412 --> 01:11:33,412
+Ya da bu view'lar bir kısmı birbiriyle örtüşebilir. Nasıl olabilir mesela?
+
+252
+01:11:36,500 --> 01:11:51,000
+Mesela bolsada çeşitli indekslerin değerlerine bakıyoruz. Bir firmanın hisseleri hem BIS 100 indeksinde olabilir hem Teknoloji 50 indeksinde yer alabilir gibi gibi.
+
+253
+01:11:56,500 --> 01:12:16,639
+Tümüyle Teknoloji 50 indeksindeki firmaların tümü ortak değildi. Bir kısmında bir kesişim küresi vardı ama ayrı olan noktalar da vardı. Bir kısmı örtüşmeli gibi durumlar da olabilir. Bunların farkında olun. Gerekiyorsa ona göre ek önlemler alın diyor. Bunun çok ayrıntılarından bahsetmiyor.
+
+254
+01:12:20,851 --> 01:12:36,531
+Ama gerek Controller için olsun, gerek View için olsun, farklı farklı ve bizden fazla View'lar olabilecekse o zaman belki bir kalıtım ilişkisiyle bunun kardeş sınıflarını kurmak yararlı olabilir arkadaşlar.
+
+255
+01:12:37,140 --> 01:12:50,319
+Mesela diyelim ki varsayılan kontrolcümüz klavye ve faaleliyle düzenleme alıyorken belki ses kontrolü de yapmak isteyebiliriz.
+
+256
+01:12:50,700 --> 01:13:03,319
+Sesle çalışan kontrolcü, klavye ve faaleliyle çalışan kontrolcün bütün yaptıklarının yapabileceği gibi ek olarak ses komutlarını alıp ve işlemekle ilgili ek...
+
+257
+01:13:03,636 --> 01:13:09,636
+Üye alan ve üye metotlara sahip olacaktır. Belki bu da yetmez. Mesela diyelim ki...
+
+258
+01:13:14,804 --> 01:13:38,804
+Başka bir input şekli, sesle. Bir de diyelim ki, sanal başlık geçirdik. Havada bazı şeyleri sürükleyerek ten yatırsın. O da bir uçuk oldu ama neyse. Tek alt sınıf ithal. İlla kardeş sınıf koymamıza gerek yok. Veya viewlarımız mesela. Bir viewumuz graph pie chart olur mesela. Öbür viewumuz...
+
+259
+01:13:41,043 --> 01:13:49,043
+Bar Chart olur. Öbür view'muz başka bir dolu view ekleyebilirsiniz arkadaşlar. Bütün bunları.
+
+260
+01:13:56,180 --> 01:14:09,180
+Kontrols. Biraz büyük oldu. Yani taşlama tık dörtgenleri sınıfa dev olarak düşünün lütfen. Ne bileyim işte bar chart.
+
+261
+01:14:11,680 --> 01:14:18,500
+Vesaire gibi bu şekilde yaparsanız eğer, sadece yeni değiştirmek istiyordum.
+
+262
+01:14:22,163 --> 01:14:38,783
+Böyle bir şeyler yaparsanız eğer, mesela belirli bir anda parça art görmek istiyorsan o zaman view türünden olan nesnemi bunun alt sınıfında olan parça art türünden nesne verdiğim zaman sisteme artık şey olacaktır.
+
+263
+01:14:40,435 --> 01:15:05,515
+Parçart gözükecektir. Yok barçart verirsem o zaman barçart olarak gözükecektir şeklinde bir yapı söz konusu olabilir. Komple sistemi düşündüğünüzde set view dediğimizde set view metoduna parçart nesnesi de veririz. Barçart nesnesi de veririz. Başka bir şey de verebiliriz. Ama parçart her zaman parçarttır. Öyle baki gibi.
+
+264
+01:15:05,844 --> 01:15:18,304
+Böyle varyasyonlar olabilir. Özellikle Multiple View ve Multiple Controller söz konusu ise ilk başta aklımıza gelebilecek şey bu şekilde alt sınıflar oluşturmak olabiliriz.
+
+265
+01:15:23,155 --> 01:15:34,496
+Evet, durum bu. Evet arkadaşlar, bu kalıpta konuşacaklarımız bu kadar. Sorularımız varsa ya da anlatmak istedikleriniz varsa lütfen buyurun.
+
+266
+01:15:48,948 --> 01:16:08,507
+Yoksa ara vermeyi hak ettik diyelim. Bakalım orada sohbetim şimdi gelmemiş. Neyse. Gelirse yazın arkadaşlar. 10 dakika arayı hak ettik diyorum. Saatimiz 14.10. 14.20'ye kadar 10 dakika.
+
+267
+01:29:49,235 --> 01:29:51,275
+Evet arkadaşlar, ara vaktimiz doldu.
+
+268
+01:29:52,275 --> 01:29:53,536
+İki dakikada gecikti mesajı.
+
+269
+01:29:54,935 --> 01:29:56,275
+Kaldığımız yerden devam.
+
+270
+01:30:04,948 --> 01:30:05,507
+Tamam.
+
+271
+01:30:10,484 --> 01:30:20,623
+Şimdi yaratımsal kalıplara geçiyoruz arkadaşlar. Üç temel kategoriden ilki olan yaratımsal kalıpları incelemeye başlıyoruz.
+
+272
+01:30:20,623 --> 01:30:35,504
+Bu gruptaki ilk kalıbımız Afsak Factory. Şimdi arkadaşlar bir kalıp içerisinde Factory kelimesini görüyorsanız eğer bu nesne oluşturulması ile ilgili bir kalıptır. Faktörünün anlamı budur.
+
+273
+01:30:35,568 --> 01:30:46,288
+Fakat hiçbir zaman sadece Faktörü deyip geçmeyin. Absak Faktörü ve Faktörü Metodu olmak üzere 4T'in önerdiği iki tane farklı kalıp vardır.
+
+274
+01:30:49,971 --> 01:31:01,311
+Belki başka kalıplar da olabilir adında faktörü geçir ama sadece faktörü değildir arkadaşlar. Lütfen net olarak hangi kalıb demek istediğinizi, kastettiğinizi belirtiniz.
+
+275
+01:31:01,311 --> 01:31:15,931
+Şimdi Afslak Faktörü Tasarım kalıbındaki amaç birbiriyle ilişkili ya da aynı aileden olan çeşitli nesneleri bunların tam olarak hangi sınıftan olduğunu belirtmeden oluşturabilmektir.
+
+276
+01:31:17,011 --> 01:31:33,391
+Burada sadece bu cümleden kafa karışabilir. Çünkü bir sınıftan bir nesne oluştururken illaki Constructor metodunu çağırmak gerekmektedir. Ve o metodun adı da sınıfın adıyla aynıdır. Sınıfın adını belirtmeden nasıl nesne oluşturacağız?
+
+277
+01:31:36,304 --> 01:31:47,424
+Kalıtımın yerine geçebilirlik ilkesini kullanarak da akıllıca bir çözüm öneriyor bu kalıp. O şekilde gerçekleşecek olay. Örnek problemimiz şu olacak.
+
+278
+01:31:54,707 --> 01:32:20,547
+İkincisini söylüyor 4.3.4. Şimdi farklı Linux dağıtımları var ve bunlar da farklı pencere yöneticileri kullanılıyor olabilir. Siz de uygulamamızda bu farklı pencere yöneticilerini destekleyebilecek şekilde bir sürükle bırak yöntemiyle ön yüzler oluşturabileceğiniz bir uygulama yapmak istiyorsanız bu mesela.
+
+279
+01:32:21,363 --> 01:32:41,363
+Veya Java bloggramcıları bilirler. Eğer Swing filan kullanıyorsanız, eğer Java'nın kendi GUI oluşturma yöntemlerinden olan, burada herhangi bir anda uygulamanızın dış görünüşünü, look and feel diye geçer, çalışma anında değiştirebiliyorsunuz.
+
+280
+01:32:41,363 --> 01:32:47,363
+Klasik, motif, metal vs. farklı türleri var.
+
+281
+01:32:48,399 --> 01:32:54,079
+O görünümü değiştirdiğinizde bütün GUI bileşenleri tema değiştiriyor mesela.
+
+282
+01:32:54,079 --> 01:32:58,319
+Windows'da mesela temalar var.
+
+283
+01:32:58,319 --> 01:33:04,639
+Doğa teması, makine teması, osudu teması gibi temayı seçiyorsunuz.
+
+284
+01:33:04,639 --> 01:33:13,199
+Bütün bileşenler, masaüstü arka planından, pencerenin başlık çubuklarının rengine falan bir paket halinde...
+
+285
+01:33:14,304 --> 01:33:41,543
+Dış görünüş, makyajlanıyor, değiştiriliyor gibi çalışma biçimleri var. Mesela şimdi diyecek ki sizin uygulamanız, güya oluşturmadan bir tane işte düğme ver bana. Ama o düğme Lucentier'a göre veyahut da işte pencere yöneticisinin şeyine göre, düğme gerçeklemesine göre farklı isimler de olabilecektir. Farklı sınıflar da olabilecektir.
+
+286
+01:33:41,904 --> 01:34:02,344
+Buradaki temel problemimiz şu. Mümkün olduğu kadar taşınabilir bir kod yazmak istiyoruz. İstekçi hangi tür görünüşün hangi sınıftan nesnelerle bilmesi gerekmesin. Hangi tür görünüş hangi sınıftan nesnelerle gerçekleniyor, sağlanıyor onu bilmek zorunda kalmasın.
+
+287
+01:34:03,859 --> 01:34:28,340
+Sağlayacak şekilde bir çözüm öneri yoktur. Bu arada çok önemli bir şeye değinmek istiyorum. Bu resim, ekranda gördüğünüz şama, sınıf şeması, doğrudan Dörtlük Şetinin kitabından alınmış bir şemadır. Vatis'ten gelerek elektronik versiyonu buldum. Oradan Print Screen yapıp PowerPoint'e eklediğim sürümüdür.
+
+288
+01:34:28,787 --> 01:34:42,108
+Şimdi bu kitabın oluşturulduğu ve hazırlandığı senede UML henüz bir standart olarak önerilmemişti. Farklı farklı şama türleri mevcuttu.
+
+289
+01:34:42,547 --> 01:35:00,528
+Farklı farklı ekollerin, farklı farklı modelleme teknikleri ve şamalama kuralları vardı. Daha sonra Yönel bunları bir araya getirdi. En güçlü yönleri aldı, en avantajlı yönleri aldı ve biz aile haline getirdi.
+
+290
+01:35:00,979 --> 01:35:24,139
+Dörtlü çetenin kitabından aldığım örneklerdeki sınıf şamaları UML standartlarına uygun şekilde gözükmemektedir. Örneğin, en temel fark kalıtım ilişkisinin gösterilmesinde yatmaktadır arkadaşlar. Örneğin, şurayı ele alalım. Şu kalıtım oku arkadaşlar.
+
+291
+01:35:24,851 --> 01:35:29,551
+Bu ok diyor ki, işte Widget Factory adında bir sınıf vardır.
+
+292
+01:35:29,792 --> 01:35:34,792
+Bu sınıfta aslında AdStract'da, Soyuz sınıfta çünkü İtalik yazılmış dikkat ederseniz.
+
+293
+01:35:34,792 --> 01:35:44,792
+Ama şimdi belki de dikkat etmediniz. Ben şu an kendi bilgisayarımda bunu tam ekran olarak görüyorum. O yüzden biraz daha büyük görüyorum.
+
+294
+01:35:44,792 --> 01:35:52,792
+Siz kendi pencerenizde, belki pencere modunda seviyorsunuz bunu, belki küçük pencere modundadır. Bir yandan başka ders notunuz açıktır belki.
+
+295
+01:35:52,792 --> 01:35:57,792
+Bir yandan bunu dinliyorsunuz, bir yandan kod yazılmak için idrenizin bir kenarda penceresi açıktır belki.
+
+296
+01:35:57,792 --> 01:36:19,891
+Böyle çok yakından bakmadığın sürece onun yatık olduğunu, ithalik olduğunu fark edemeyebilirsiniz mesela. İşte bu gibi durumlar için aslında YMEL yeni standartında Stereotype özelliği getirmiştir. İki küçüktür ve iki büyüktür karakterleri içerisinde sınıf adının üstüne ek olarak Abstract'ı yazılırsa
+
+297
+01:36:21,492 --> 01:36:29,352
+Şimdi uzun uzun yazamayacağım. Metin moduna geldikten sonra şuraya geri dönebilecek miyim bilmiyorum. Neyse.
+
+298
+01:36:32,132 --> 01:36:44,772
+Evet ve niye kırmızı oldu? Rengimiz sarıydı. Niye kırmızıya geçtik? Aynı şekilde yazmaya devam etmek istiyorum. Fontu da biraz küçük olsun istiyorum. Şuraya sığsın. Ama o zaman da pek gözükmüyor. Şöyle olsa yeter herhalde.
+
+299
+01:36:45,587 --> 01:36:51,587
+Yüküçük, dur.
+
+300
+01:36:54,036 --> 01:37:07,355
+Evet, tamam oldu. Evet, yani bu şekilde bu abstract'ın aslında sınıf adının hemen üstüne, aynı kutunun içerisinde şuraya yazılı olması gerekiyordu ki daha net bunun soyut sınıfı olduğunu anlayalım.
+
+301
+01:37:07,355 --> 01:37:20,755
+Keza şu metotlar da soyut metotlar aslında, yine itelik yazıldıklarından. Bu nedenle aslında bunların da sağına şu şekilde abstract yazarız.
+
+302
+01:37:28,340 --> 01:37:32,860
+Bu şekilde. Her bir metodun yanına bunu da yazarız.
+
+303
+01:37:37,332 --> 01:37:59,072
+Ve şu bence en uyumsuz olanı da şu kalıtım okunun bu noktada çiziliyor olması. Doğrusu, bu okun burada çizilmesi arkadaşlar.
+
+304
+01:38:00,595 --> 01:38:27,235
+Okun ucunun üst sınıfa değecek şekilde yukarıda çizilmesi. Aşağı çizilince bunu veri tabanı, iar diagramlarındaki karga bacağı notasyonuna benziyor o zaman. Yok iki ayak, yok şurada bir üçüncü ayak gibi şamaşeleri var. Bir ilişkin ucu böyle olabilir. İki ayak olur, üç ayak olur.
+
+305
+01:38:28,404 --> 01:38:38,904
+Karga Bacağı Diagramı'nın yada hiçbir bacağı olmaz. Şurada bir veri tabanı tablosu, burada da bir veri tabanı tablosu.
+
+306
+01:38:38,904 --> 01:38:46,404
+İşte bakın şu nokta tam da şu nokta gibi oldu.
+
+307
+01:38:49,684 --> 01:38:58,404
+Bu şamayı çizin, UAMS sınıf şaması çizmeyi bilmediğini düşünür ve o sorudan en azından 10 puan kırarım.
+
+308
+01:38:59,184 --> 01:39:09,704
+Ki 50 puanlık iki soru soruyoruz klasik sınavlarda. UAMS sınıf şamalarını çizme kurallarına uymadığınız zaman bitti 10 puan.
+
+309
+01:39:09,704 --> 01:39:16,043
+Bu da en bariz bu kuralları bilmediğinizin veya o kurallara çalışmadığınızın göstergesi.
+
+310
+01:39:16,212 --> 01:39:31,652
+Bunu dörtlü çöte için söylemiyorum elbette. Bunun çizildiği tarihte gösterim o şekilde değildi. Ama şimdi gösterim bu şekilde, yeşilde çizdiğim şekilde. Mutlaka o şekilde sizin de şamalarınızı çizmenizi özellikle istiyorum.
+
+311
+01:39:37,652 --> 01:39:51,431
+Ben tutup da bu şemaları güncel bir anı, standartlarına göre sıfırdan tekrar çizme işini yapmadım, yapamadım şimdiye kadar. Sözlü olarak söyleyip öğrenciye uyarıyorum. Bu konuya dikkat etmenizi istiyorum.
+
+312
+01:39:53,872 --> 01:39:56,431
+Durum bu. Peki, şimdi silin şu şekilleri.
+
+313
+01:40:00,851 --> 01:40:12,331
+Evet, şimdi bu kalıbın örnek çözümü bu şekilde. Şimdi bizim clientımız, işte çeşitli suyukla bırak yöntemleri, çeşitli gül bileşenleri koyacak formu.
+
+314
+01:40:12,331 --> 01:40:16,871
+İşte bir window çözülmek isteniyor, bir scroll bar çözülmek isteniyor.
+
+315
+01:40:18,163 --> 01:40:45,963
+Daha da başka kalıtma yenerşivleri olacak. İşte düğme çizilmek isteniyor. Textbox çizilmek istiyor. Vesaire vesaire. Fakat mesela bu işi, bu arada bu yine eski olduğu için Linux dağıtımları değil de eski Unix dağıtımları üstünden örnekler veriliyor. Eski Unix dağıtımlarındaki Window Manager'lar, PN Presentation Manager, Motif gibi eski tür örneğe.
+
+316
+01:40:46,163 --> 01:41:02,384
+Bunu daha güncele örneklemek istersek, işte GNOME ve KDE var mesela Linux tartımlar için. GNOME, Windows, KDE, Windows vs. vs. O şekilde alt sınıflar, kardeş sınıflar olacak burada.
+
+317
+01:41:11,380 --> 01:41:27,840
+Hangi window, Presentation Manager'ın motif mi, GNOME mu, KDE mi? Bunu bilmesi gerekmiyor. Tek bilmesi gereken istediği tek şey bir pencere verilmesi kendisine. Bir pencereye çizilecek. Ama bunun hangisi olduğu ayrıntıları ile uğraşmak zorunda kalmak istemiyor.
+
+318
+01:41:27,840 --> 01:41:38,359
+O zaman bu gibi isteklerini yönlendirebileceği bir widget faktörü. Widgetleri de gübileşenlerin her yerine widget deniliyor. Biraz eski tarihinden önce de.
+
+319
+01:41:39,380 --> 01:41:58,380
+Widget'ları isteyebileceği bir örneğimizde Widget Factory sınıfına gidiyor. Diyor ki, işte bana bir tane scrollbar ver diyor. Ve onun geri döndürecek ki, bu da Method Return'de gösterilmemiş. Normalde bunun şu şekilde gösterilmesi lazım. Yine Text moduna geleyim şuraya.
+
+320
+01:42:09,171 --> 01:42:21,451
+Nesnesi üretiyor ve geri döndürüyor. Ve aynı zamanda bu metodun aslında soyut bir metot olduğunu da söylemiştik. Aynısının bu şekilde yazılıyor olması lazım.
+
+321
+01:42:21,876 --> 01:42:39,736
+Evet, Client diyecek ki bir widget factory nesnesini, bu sahiplik ilişkisi sayesinde bir widget factory ile ilişkilendirilmiş olacak. Bana scrollbar barber kardeşim diyecek. Create scrollbar metodunu çağırarak da bir scrollbar nesnesi alacak. Ama dikkat ederseniz bu işte Windows scrollbar bu sınıflar da soyut.
+
+322
+01:42:40,275 --> 01:43:03,895
+İtalik yazılmışlar çünkü. Sadece alt sınıflar, somut sınıflar arkadaşlar. Ve biz eğer bu çözüme göre, bu tasarıma göre farklı Window Manager türlerinden widgetler oluşturacak farklı sınıflar olarak kodluyoruz. Her bir sınıf belirli bir Window Manager türüne yönelik çalışıyor olacak.
+
+323
+01:43:08,275 --> 01:43:16,956
+Motif Widget Factory, PN Widget Factory, Gnome Widget Factory, KDE Widget Factory gibi alt sınıflar türetiriz.
+
+324
+01:43:16,956 --> 01:43:30,595
+Üst sınıftan ve Motif Widget Factory'nin Create Scrollbar metodu bize bir somut Motif Scrollbar nesnesi geri dönüyoruz.
+
+325
+01:43:30,595 --> 01:43:36,275
+Onun Create Window metodu bize somut Motif Window nesnesi.
+
+326
+01:43:36,275 --> 01:43:50,235
+Bu somut window nesneleri, perifiyan window, motif window nesnesi sınıfları, window'un alt sınıflarıdır. O türden nesneler ile uğraşırız. İlgili faktörü nesnesi.
+
+327
+01:43:50,547 --> 01:44:10,987
+Ve client ile aralardaki ilişkiler hep soyut üst sınıflar türünden kurulmuş olduğu için biz bir client'a bir motif vücut faktörü nesnesi verdiğimizde o create scrollbar metodunu çağırdığında aslında bir motif scrollbar nesnesi geri dönmüş oluyor bu client'a.
+
+328
+01:44:10,987 --> 01:44:18,527
+Ama kendisi bunun motif scrollbar nesnesi olduğunu bilmek zorunda değil. O sadece bir scrollbar nesnesi soyut sınıfı ile.
+
+329
+01:44:18,547 --> 01:44:29,947
+O erişim metotları üzerinden alt somut sınıftan olan nesneye ulaşıp onu çağırıyor.
+
+330
+01:44:30,640 --> 01:44:49,740
+Böylece benim client'ım tam olarak hangi sınıftan Nesne ile uğraştığını bilmiyor ama tabii ki hangi aile ile çalışacağını bilmek zorunda kalıyor sadece. Client'ım hangi aile ile çalışacağını da bilmek zorunda kalmıyor.
+
+331
+01:44:58,640 --> 01:45:04,820
+En spesifik olarak tam olarak hangi nesnelerde çalışacağını bilmek zorunda kalmıyor.
+
+332
+01:45:06,387 --> 01:45:25,587
+Olay bu. Ve böylece yeni window managerlar çıktıkça biz yeni kardeş sınıflar, kardeş faktörü sınıfları ve o window managerlarda ilgili gücü bileşenlerini modelleyecek uygun yeni sınıflar oluşturmamız bizim framework'ımızı genişletmemiz için yeterli.
+
+333
+01:45:34,387 --> 01:45:43,948
+Varlıkları, yeni birleşenleri kodlayıp tasarımımızı eklemiş oluyoruz. Bu şekilde işin altından kalkmış oluyoruz.
+
+334
+01:45:50,323 --> 01:45:55,323
+Sizin oluşturmak istemedim. Sadece şunu kapatayım.
+
+335
+01:45:59,252 --> 01:46:26,851
+Bunu başka şekillerde kodlayamaz mıydık? Kodlak. Mesela Switch Case kullanırdık. Bir tane enum türümüz olur. Bu enum türümüzün değerleri bizim farklı ailelerimizi simgeler. Ondan sonra basit bir setter metodu üstünden ilgili enum değerini vererekten factory sınıfımızın artık o ilgili türden nesneler vermesini sağlayabilirdik.
+
+336
+01:46:27,252 --> 01:46:53,632
+Bunu somut olarak sağlaymak için ise biz ilgili bütün create metotlarında bir switch açıp case olarak o var değerini verip işte eğer case pm ise return pm'ye bilmem ne şeklinde bütün case'leri ve bütün olası varyasyonları yazmak zorunda kaladık.
+
+337
+01:46:54,131 --> 01:47:12,331
+Bunun da dezavantajı ne olacaktı? Daha uzun kod yazmayı bir kenara koyduk. O da aslında başlı başında bir dezavantajı ama daha önemli sıkıntı yeni bir Window Manager geldiği zaman bizim elumumuza yeni bir değer eklemek.
+
+338
+01:47:12,688 --> 01:47:32,268
+Ondan sonra bütün switch'lerin geçtiği yere o yeni değer olan kez'i eklemek ve onların return oluşturma konutlarını ayrıca kodlamak gerekecek. Bunun için de mevcut faktörü sınıfımızın kaynak kodunu değiştirmek zorunda kalacağız.
+
+339
+01:47:34,996 --> 01:47:46,975
+Ve böyle olduğu zaman bu güncellemeleri müşterilerimize aktaracağımız zaman komple bütün değişen değişmeyen bütün sınıfları birden aktarmamız gerekecek.
+
+340
+01:47:46,975 --> 01:47:57,555
+Halbuki kalıbın önerdiği şekilde mesela yapsak biz sadece yeni eklediğimiz sınıfların kaynak kodlarını müşterimize iletmemiz yeterli olacaktı.
+
+341
+01:47:58,815 --> 01:48:02,015
+Çünkü başka hiçbir şey değişmedi. Sadece yenilikler eklendi.
+
+342
+01:48:02,351 --> 01:48:04,951
+Mevcut anında hiçbir şey değişmedi.
+
+343
+01:48:11,091 --> 01:48:20,311
+Ve yine size önemli bir tavsiye. Eğer kod yazarken kendinizi Switchcase kodluyorken görürseniz büyük olasılıkla o noktada
+
+344
+01:48:20,884 --> 01:48:47,524
+Kalıtım hiyerarşisi ve polimorfizm, çok biçimlik ilişkisi kurmanız gerektiğinin işaretidir bu. Lütfen tasarımınızı gözden geçirin. Ya kalıtım veyahut da kalıtım yerine uygun bir parça bütün ilişkisi şeklinde tasarımınızı değiştirmenizi önerin. Bu da mutlaka aklınızın bir köşesinde bulunsun.
+
+345
+01:48:47,859 --> 01:49:05,439
+Başka çözümler de olabilir ama her birinin illaki bir daha kritik dezavantajı olacak. Yeni de sizin aklınıza gelebilecek avantajlı olduğunuz çözümler varsa benimle paylaşın. Şu anda gelmeyebilir elbette ama daha sonra gelirse mutlaka yazışalım mesela.
+
+346
+01:49:07,479 --> 01:49:11,539
+Şey bu, durum bu. Şimdi kalıp yapısını görelim.
+
+347
+01:49:11,887 --> 01:49:15,807
+Problemden bağımsız olarak genel kalıp yapısı nedir?
+
+348
+01:49:16,967 --> 01:49:20,927
+İşte bizim bir soyut fabrika sınıfımız olur.
+
+349
+01:49:21,007 --> 01:49:22,007
+Absak faktörü olur.
+
+350
+01:49:22,507 --> 01:49:25,047
+Bunun üreteceği çeşitli ürünler olur.
+
+351
+01:49:25,167 --> 01:49:27,307
+Her biri için bir daha create metodiler alır.
+
+352
+01:49:27,307 --> 01:49:39,887
+Ve hangi tür aileden üyeler oluşturmak istiyorsak, o ailelerin oluşturucu sınıflarını, faktörü sınıflarını sonuçta yapabiliriz.
+
+353
+01:49:39,887 --> 01:49:45,028
+Bu sınıflar olarak soyut abstrak faktör sınıfından kalıtımla türetiriz.
+
+354
+01:49:45,728 --> 01:50:02,728
+Ve bizim klientimiz de bu abstrak faktörden istediği nesneleri aileye özel türler cinsinden değil de genel olarak bileşen türü cinsinden ister.
+
+355
+01:50:04,532 --> 01:50:22,192
+Product sınıflarımız olur. Product A, Product B, Product C her neyse. Fakat bu soyut ürün sınıflarından hangi bütün ailelerin ilgili bireylerini somut alt sınıflar olarak kodlarız?
+
+356
+01:50:28,979 --> 01:50:40,519
+O, şu ikinci aileden olanı, birinci aileden olanı vs. vs. Ek kardeş sınıflar ve tabii ki ek kardeş faktörü sınıfları.
+
+357
+01:50:48,884 --> 01:50:58,684
+Yenilerini oluşturabiliriz. Bu da kodun başka herhangi bir yerine bulaşmak zorunda kalmadan yapabiliriz.
+
+358
+01:50:59,624 --> 01:51:04,543
+İşte Product X'ye dediğimiz şeyler oluşturulacak nesneler yani ürünler.
+
+359
+01:51:04,979 --> 01:51:20,539
+Aslında Product X şeklinde geçen sınıflar X ürünlerinin ara yüzlerini tanımlamaktadır aslında. İşte neydi? Aslında Aslında Window'du. Window'da ne yapılır? Yer değiştirilir, boyutu değiştirilir, başlığı değiştirilir, ikonunu değiştirilir filan filan gibi.
+
+360
+01:51:29,140 --> 01:51:42,200
+Düğmeymiş, Textbox'mış falan gibi. Absalak Faktörü ise bu ürünü oluşturmak için G-Comutların müzalarının barındırıldığı üst boyut sınıfımızdır.
+
+361
+01:51:43,560 --> 01:51:56,200
+Bu kalıbı ne zamanlarda uygulayabiliriz? Bir sistemin kendisine ait ürünlerin nasıl oluşturulduğu, birleştirildi ve sunulduğundan bağımsız olmasını istediğimiz durumlarda kullanabiliriz.
+
+362
+01:51:57,043 --> 01:52:12,623
+Bunların farklı ailelerden tanımlamak suretiyle oluşturma, birleştirme, sunulma, ayrıntılığına ulaşmak zorunda kalmadan bize sadece o üründen, o aileden bir ürün veririz, geçeriz. Böylece kullanabiliriz.
+
+363
+01:52:13,300 --> 01:52:23,220
+Ya da bir sistemin farklı ailelerden herhangi birinden olan nesneler tarafından yapılandırılması, onlarla ilişkilendirmesi gerektiğinde kullanabiliriz.
+
+364
+01:52:23,820 --> 01:52:29,540
+İlişkilinin ailelerinden oluşan nesnelerin birlikte kullanılması gerektiğinde kullanabiliriz.
+
+365
+01:52:30,000 --> 01:52:35,420
+Mesela bir Windows listesi ama içerisindeki listesi üyeler farklı farklı Windows menajerlerden oluşabilir.
+
+366
+01:52:35,420 --> 01:52:39,600
+Belki mesela bir senaryo ihtiyaç duyuyorsa. Biraz uyduruk oldu ama neyse.
+
+367
+01:52:41,300 --> 01:53:08,800
+Bir ürün anisindeki nesnelerine bir kod kitaplığı şeklinde, sınıf kütüphanesi şeklinde sunmak istiyorsunuz. Fakat bunların somut gerçeklemelerinin yerine sadece bunlarda neler yapılabileceğinin ifadesi olan arayüzlerine, burada interfez kavramından bahsetmiyorum, bir nesnenin public olan metotlarının tümünün imzaları anlamında bahsediyorum.
+
+368
+01:53:09,300 --> 01:53:24,840
+Sadece bunu açığa çıkarıp, spesifik olarak sınıf adlarına ihtiyaç duyulmaması gereken hallerde de bu kanımı kullanabiliriz.
+
+369
+01:53:25,203 --> 01:53:53,043
+Şimdi ben bunu böyle söylüyorum ama yani işte kimisini 4.3 çetenin anlattığından tercüme ettim. Kimisini aklıma gelen ihtiyaçlardan yardım ettim. Ama hani bunları ezberlemek ya da buradan yola çıkmak çok da mantıklı olmayabiliyor arkadaşlar. Nereden yola çıkacağız? Kalıpları kullandıkça, hatırladıkça, kullandıkça, akılda kaldıkça bu kalıpların burasını da bu kalıp kullanırlar şeklinde.
+
+370
+01:53:53,203 --> 01:54:11,803
+İçinizden gelecek size ilham. Sadece olayı bir kaplamak için yazıya dökmüş oldum. Yoksa buraya çok daha fazla şekillerde, fazla şeyleri de anlatabilirsiniz. Bazen kelimeler daha kafa karıştırıcı olabiliyor.
+
+371
+01:54:14,260 --> 01:54:27,300
+Evet, şimdi sorumuz varsa buyurun. Sorumuz yoksa bir problemi verip bunu işte bir daha farklı yöntemle çözeceğiz. Avantajlarını, dezavantajlarını karşılaştıracağız.
+
+372
+01:54:31,475 --> 01:54:35,575
+Bu sırada suyumu tazlemem gerekiyor. Sizin sorunuz var, siz düşünmeyiz. Ben geliyorum.
+
+373
+01:55:16,659 --> 01:55:44,060
+Evet, tam bir şey gelmiş mi? Gelmiş. Peki. Şimdi şöyle problem üstünlüğe çalışıyoruz. Bir iş boyutta oyun motoru hazırlamak istiyoruz. Fakat bu oyun motorumuzu mümkün olduğu kadar geniş bir platforma hitap etmesini istiyoruz. Bu nedenle bu bir PC platformu olur.
+
+374
+01:55:44,659 --> 01:56:04,500
+PC platformu kendi içerisinde farklı işlemcilere, hadi işlemci kısmını bıraktık, oyunda daha önemli olan grafik kartları. Fakat bu grafik kartları da farklı mimarilerde bulabiliyorlar. Hadi onu da çok ayrıntılarına girmeyelim.
+
+375
+01:56:09,279 --> 01:56:21,319
+Maksimum performansla çalışmak istenen bir oyun programı Microsoft'un sağladığı DirectX kütüphanesinin bileşenleri kullanılarak hazırlanır.
+
+376
+01:56:21,319 --> 01:56:31,460
+Ama mesela eğer bu oyun örneğin Mac'lerde, örneğin Linux işletim sisteminde çalışsın istiyorsanız, onlarda DirectX yok.
+
+377
+01:56:32,500 --> 01:56:45,920
+Microsoft'un kendi platformuna özel olarak hazırladığı property, kapalı kaynak, başka platformlarda kullanımlı olmayan bir kitaplıktır.
+
+378
+01:56:46,387 --> 01:57:08,927
+Linux'la çalışmasını istiyorsanız, açık kaynaklı bir standart olan OpenGL üzerinden 3 boyutlu işlemleri yürütmek zorundasınız. Şanslıyız ki ekran kartları farklı işlem sistemlerinde ilgili. Mesela Linux'ta OpenGL sürücülere de oluyor ekran kartını. Böylece kullanabiliyorsunuz. Böyle bir şansımız var.
+
+379
+01:57:09,844 --> 01:57:28,364
+Kaldı ki bu OpenGL ve... Onu da sonra söyleyeyim. Çeşitliler kısmında söyleyeyim. Yani bizim oyun notumuzda renderers, yani noktaları belli bir üç boyutlu cismin ekrana çizilmesi.
+
+380
+01:57:28,948 --> 01:57:30,408
+Render edilmesi.
+
+381
+01:57:31,088 --> 01:57:33,328
+Shaders, gölgelendirici.
+
+382
+01:57:34,508 --> 01:57:39,048
+Sahnenin bir yerinde ya da bizden fazla yerinde ışık kaynakları vardı.
+
+383
+01:57:39,048 --> 01:57:49,068
+Bu ışık kaynaklarından gelen ışıkların bizim ortamdaki varlıkların gölgelerinin nerelere ne şekilde düşüreceğinin hesaplanması işlemidir.
+
+384
+01:57:49,348 --> 01:57:49,708
+Shaders.
+
+385
+01:57:50,908 --> 01:57:52,688
+Texture Mapping vardır.
+
+386
+01:57:54,127 --> 01:57:59,467
+Bir üç boyutlu objenin dış yüzeyini belli bir doku ile kaplayacak.
+
+387
+01:57:59,764 --> 01:58:25,024
+İşte oyuncu zırh giyiyorsa zırh ondan sonra ama mesela zırh giymiyorsa veya sadece göğsünü kaplıyorsa kolları çıplak çizilecek, göğüs kısmı zırhla çizilecek. İnsan nesnesinin göğüs kısmı farklı render edilecek, kol kısmı farklı render edilecek. Render edilirken farklı kaplamayla kaplanarak çizilecek gibisinden bir dolu ayrıntı var.
+
+388
+01:58:25,652 --> 01:58:48,231
+Evet, burada kaynak benmişim. Bu kaynağı ben oluşturur. Örneği ben oluşturmuşum, tasarlamışım. Peki, şimdi madem böyle bir yapımız var, ilk aklıma gelen çözüm şöyle bir şey oldu. Şuan bile çizmedim. İlk başta K cinsinden düşündüm, Kod cinsinden düşündüm diyelim. Sonra orada aynı şamaya oluşturacağım veya telsi de olabilir, fark etmez.
+
+389
+01:58:53,652 --> 01:58:57,132
+İşte oyun motoru olsun.
+
+390
+01:58:57,972 --> 01:59:04,632
+Şimdi ben ilk başta aklıma gelen çözüm işte Enum ve Switch Case oldu.
+
+391
+01:59:05,952 --> 01:59:10,832
+OpenGL türünden render işlemlerini yapmak için OpenGL Render'ı sınıfı var.
+
+392
+01:59:11,252 --> 01:59:13,552
+O türden ORE adlı bir üye alanım var.
+
+393
+01:59:16,083 --> 01:59:43,563
+Sınıfından OS diye bir alama var. DirectX Render diye DR'e bir alama var. DirectX Shader türlümlerinde DS nesnem var. Yani ben madem OpenGL ve DirectX platformlarına hizmet etmek istiyorum. Her birinin render, shader vs. vs. daha da başka türden yeteneklerini kullanabileceğim ilgili nesnelerimi tanımlamış oluyorum.
+
+394
+01:59:44,083 --> 01:59:50,563
+Ben şu an hangi tür kitaplıkla çalışacağımı ise Library adlı üye alanımla saklıyor olacağım.
+
+395
+01:59:50,563 --> 01:59:52,563
+O da Library Type türünden.
+
+396
+01:59:52,764 --> 01:59:54,823
+Library Type de bir enum aslında.
+
+397
+01:59:55,323 --> 01:59:57,563
+Şuradaki sonraki yansıda gördüğünüz üzere.
+
+398
+01:59:58,043 --> 01:59:59,783
+Public Enum Library Type dedim.
+
+399
+02:00:00,163 --> 02:00:03,323
+İki tane de üyesi var. İki türden olabilir bu enum nesnesi.
+
+400
+02:00:03,563 --> 02:00:06,003
+Ya OpenChair ya Dairetics. Başka şey tanımlı değil.
+
+401
+02:00:07,344 --> 02:00:08,203
+Ondan sonra mı?
+
+402
+02:00:09,011 --> 02:00:22,572
+Core Structure'da hangi tür ekran kartına sahip bir sistemde çalışıyorsa onu ilklendirmek üzere çeşitli kodlar yer alabilir Core Structure içerisinde.
+
+403
+02:00:22,572 --> 02:00:29,112
+O kadar ayrıntıya girmeyelim. Modellerin ve tasarım kalıbı odan uzaklaşmış oluruz.
+
+404
+02:00:29,371 --> 02:00:36,271
+Keza o kadar ayrıntıda bilmiyorum. Zamanında OpenGL'le yaptığım şeyler oldu ama çok eskiden bir sene önceydi unuttum.
+
+405
+02:00:37,011 --> 02:01:03,431
+Render işlemini nasıl yapacağım? Bu rendering metodunda önce bir bakacağım. Sırıç içerisinde benim libraryim neymiş? OpenGL ise ben OR nesnesinin çeşitli render operasyonlarını kullanarak işimi yürütmek zorundayım. Yok eğer DirectX'miş ise bu. O zaman ilgili diğer nesnenin işte ABC rendering operasyonlarını yürüterek işimi yapıyorum. Olay oluyor bitiyor.
+
+406
+02:01:05,011 --> 02:01:30,371
+Şading işlemi için de yine SwitchCase içerisinde bakıp yok library meğer open jail misle o zaman open jail ile ilgili nesnelerin işte os nesnesinin shade işlemlerini metotlarını çağırarak işlemi yapacağım. Yok eğer direct x isleymiş ise o zaman direct x shader nesnesinin ds'nin işte çeşitli shading yeteneklerinden kullanarak işimi yapacağım. Böyle bir kod çıkıyor ortaya.
+
+407
+02:01:33,011 --> 02:02:00,471
+Ve bu ilgili OpenGL, DirectX, DirectX, DirectX Shader sınıflarında bu tip operasyonları varmış diye bunu da gösteriyorum size. Ve ortaya çıkan sınıf şaması da bu şekilde bir şey oluyor. AP kontrolü benim ana sınıfım. Dört türden üye alanları var. Bunların ilgili metotları var. Hangi switchime bakaraktan, case'inle ilgili case'ini çalıştırarak da.
+
+408
+02:02:01,011 --> 02:02:07,591
+Oradaki ilgili metodlar çalışıyor şeklinde de bir tasanıma götürmüş. Şimdi bu işime yarıyor mu? Yarıyor.
+
+409
+02:02:12,020 --> 02:02:15,340
+Fakat... Gelelim.
+
+410
+02:02:16,880 --> 02:02:21,240
+Çünkü farkettik. Ben DirectX 10 ile çalışıyordum.
+
+411
+02:02:21,740 --> 02:02:28,660
+O ile ilgili DirectX Shader'ı falan, DirectX 10 ile çalışıyordum.
+
+412
+02:02:28,920 --> 02:02:31,740
+Sonra Microsoft tuttu, DirectX 11'i de çıkardı.
+
+413
+02:02:32,240 --> 02:02:36,600
+Onu da ekstra yetenekler, ekstra performans eleştirmeyi falan yaktı.
+
+414
+02:02:37,360 --> 02:02:38,640
+Ondan sonra aşama.
+
+415
+02:02:40,180 --> 02:03:07,039
+Ama ben geriye doğru uyumluluğu da kurabilmek için hem DirectX 10'u hem de DirectX 11'i desteklemek istiyorum diyelim ki. O zaman ne oldu? Bir kere önce kafamdan o DirectX sınıfın DirectX 10 olduğunu hep hatırlıyorum. Ardından bir de DirectX 11 sınıfını oluşturmam lazım. Bakalım tasarımda nereye eklemem gerekecek? Kodda neleri değiştirmem gerekecek? Bir kere şurada.
+
+416
+02:03:07,539 --> 02:03:19,039
+Ek olarak, şuradan çizeyim. Ama artık şimdi bunların üstünde çizmek de daha az, daha verimsiz hale gelecek.
+
+417
+02:03:20,660 --> 02:03:24,720
+Vahit Yaman'dan şekli hatırlayabilir miyim? İmdat olduğunu bakayım bakalım.
+
+418
+02:03:37,844 --> 02:03:39,344
+Plastik ile olacak.
+
+419
+02:03:42,904 --> 02:03:44,344
+Tamam, dersler.
+
+420
+02:03:45,064 --> 02:03:46,564
+Sıslatım modelleme.
+
+421
+02:03:48,624 --> 02:03:51,304
+Ders malzemesini girerken.
+
+422
+02:03:51,304 --> 02:03:52,324
+Şimdi hangisi?
+
+423
+02:03:53,064 --> 02:03:54,304
+Patense.
+
+424
+02:03:55,584 --> 02:03:57,164
+Bakalım şimdi.
+
+425
+02:03:58,484 --> 02:04:00,864
+Bu, apsak faktörü.
+
+426
+02:04:01,724 --> 02:04:05,124
+Apsak faktörü burada göremiyorum.
+
+427
+02:04:06,771 --> 02:04:28,052
+Şu an şu example'sına gidelim. Ha evet. Axtra Factor Sonuç'un var. Herhalde bu. Evet. Tamam. Evet. Şama bu şama. Tamam. Pekala. Şimdi burada ne yapmam gerekecek? Diyelim ki DirectX 11'i de desteklemek gerekiyorsa. Bir kere şunun bir kardeşini oluşturmam gerekiyor.
+
+428
+02:04:40,979 --> 02:04:45,839
+Bu Dialectics 11 şeydir.
+
+429
+02:04:49,492 --> 02:05:05,492
+Sonra Ctrl C Ctrl ve DirectX 11'den dırız. Sonra benim ap kontrolüme bunları da eklemem gerekiyor.
+
+430
+02:05:07,492 --> 02:05:12,492
+Şunu da Horizontal Rarticle.
+
+431
+02:05:17,395 --> 02:05:41,955
+Ama şey, şey yapmaya çalışıyorum da, şöyle demek istiyorum. Şunun kardeş olduğu belli olsun. Şunların kardeş olduğu belli olsun. Sürekli seçmeliyim. Evet. Bir kere bunu yapmalıyım.
+
+432
+02:05:42,515 --> 02:06:02,355
+Tasarımla. Bu iki yeni sınıfı eklemeliyim. Keza eğer burada bir mesela Texture Mapping de yapıyor olsaydım DirectX 11 Mapper da olmalıydı. Tabi OpenGL Mapper, DirectX Mapper bir de DirectX 11 Mapper olacaktı mesela. Ama tabi sadece bu iki sınıfı eklemek yetmiyor.
+
+433
+02:06:09,779 --> 02:06:37,559
+Do Rendering metoduna hem Do Shining metoduna Switch'in içerisinde bir Case ekleyecektim. Ha bu arada Enum'un kendisini de ekleyecektim. Şuraya DirectX 11 seçeneğini de eklemek durumundayım. Ondan sonra buraya gidip yeni bir Case ekleyip Case DirectX 11. O zaman ha ve üye alanlara da tabii eklemek zorundayım. Private DirectX 11 Rendered DR11. Private DirectX 11.
+
+434
+02:06:37,779 --> 02:06:54,439
+Ds11 oluşturup, Case DirectX 11 deyip, DR11.rendropa, DR11.be falan. Bütün bunları o şekilde kodlamak zorundayım. Aynı şeyleri şeyden işlemi içerisinde de yapmak zorundayım.
+
+435
+02:07:00,819 --> 02:07:11,399
+3D arayüzü ekleyebilmek için, 3D framework ekleyebilmek için uygulamamın her yerine müdahale etmek zorunda.
+
+436
+02:07:12,340 --> 02:07:39,340
+Bu kadar kalmaşık olmamalı diyorum. Çünkü işte yarın o bugün DirectX 12, DirectX 13 gelecek. Yok belki konsollara da uyarlanmak isteyeceğim bunu. PlayStation Renderer, Xbox Renderer olacak. Hadi Xbox DirectX ile çalışılalım da. İşte PlayStation veya Nintendo, DS falan için onların kitaplıkları ayrı olacaktır. Onları eklemek zorunda kalacağım. Ondan sonucuma...
+
+437
+02:07:40,340 --> 02:07:54,840
+Bir dolu iş yapmak zorunda kalacağım. Ekstradan. O yüzden bu iş doğru bir giriş değil deyip daha iyi, daha doğru bir tasarıma geçmem lazım diyorum.
+
+438
+02:07:56,083 --> 02:08:04,283
+Evet, bu çözümün temel zayıf yönü bu. Yeni bir kütüphane eklemek için çok çok fazla yerde kod değişikliği yapmam gelecek.
+
+439
+02:08:04,283 --> 02:08:12,283
+Ve işte burada da yine yazıyla geçiyor. Eğer bir yerde kendinizi SwitchKS kullanırken görüyorsanız aslında ya...
+
+440
+02:08:12,787 --> 02:08:17,547
+Bunu kalıtım ve çok biçimlilik kullanarak yeniden tasarlama ihtiyacımız var.
+
+441
+02:08:17,967 --> 02:08:26,047
+Veyahut da sorumlulukları atarken yanlış yerlere atama yaptığımız şeklinde bir durum söz konusunda çok büyük olasılıkla.
+
+442
+02:08:26,507 --> 02:08:29,768
+Lütfen komple tasarımımızı gözden geçelim demek istiyorum.
+
+443
+02:08:29,768 --> 02:08:32,728
+Evet, gözden geçinmemiz gerekiyor tasarımımızı.
+
+444
+02:08:33,067 --> 02:08:35,907
+O zaman ben şöyle bir şey yapsam.
+
+445
+02:08:36,307 --> 02:08:38,667
+Burada iki çözüm varmış, üç çözümüm yokmuş.
+
+446
+02:08:39,067 --> 02:08:40,768
+Direkt ben böyle bir durum...
+
+447
+02:08:40,787 --> 02:08:42,787
+Bu arada kullanılabilecek...
+
+448
+02:08:42,787 --> 02:08:45,787
+Ha yok, dur daha oraya gelmeyim.
+
+449
+02:08:45,787 --> 02:08:48,787
+Diyelim ki daha o Extra Factor tasarım kalımını da bilmiyorum.
+
+450
+02:08:48,787 --> 02:08:56,787
+İlk yaptığım tasarım doğru değil. Daha iyi bir kalıtım hiyerarşisi ve çok biçimli kullanmam gerekiyor.
+
+451
+02:08:56,787 --> 02:09:01,787
+Madem onu anladım. Yapayım o zaman diyorum. Ve tasarımımı şu şekilde getiriyorum.
+
+452
+02:09:01,787 --> 02:09:06,787
+Şuradan da görebilirim herhalde. Aynı yerdedir.
+
+453
+02:09:07,956 --> 02:09:18,636
+Şu. Evet. Tabii biraz şey bir tarafta duruyor. En azından şeyden PowerPoint'e göründüğünden daha net var değil mi? Daha büyük olarak gözükebildiği için.
+
+454
+02:09:19,836 --> 02:09:26,539
+Evet. Şimdi ne oldu çözümü? Şu şekle geldi. Benim alp... Bu arada...
+
+455
+02:09:26,771 --> 02:09:54,032
+Yaraşimde nasıl kullanılıp neyin değiştiğini bul ve onu sarmala ilkesi gereğince. Şimdi benim farklı tür shaderlarım olacak. Yani shaderlarım değişecek, renderlarım değişecek. Bunları sarmalamam gerekiyor. Yani birer sınıf yaraşısı içerisine almam gerekiyor. O zaman soyut bir shader sınıfım olur ve soyut bir renderer sınıfım olur. İhtiyacım olan shader operasyonları neler? Operasyon, operasyon ve operasyon içe. Bunların hepsi de soyut sınıfları olarak.
+
+456
+02:09:54,771 --> 02:10:12,771
+Soyut metotlar olarak yer alır shader soyut sınıfında. İhtiyacım olan render operasyonlarım neler? Render operasyon A, B, C. Bunların hepsi soyut metotlar olarak soyut sınıfında yer alırlar. Fakat ben OpenGL'le kullanan shader yazmak istediğimde...
+
+457
+02:10:13,792 --> 02:10:26,912
+İlgili bir somut OpenGL Shader sınıfı oluşturup, bunu soyut sınıfın art sınıfı olarak tanımlayıp, ilgili shading operasyonlarının gövdelerini olması gerektiği şekilde kodlarım.
+
+458
+02:10:27,712 --> 02:10:31,172
+Aynı şeyi DirectX Shader sınıfı için de yaparım.
+
+459
+02:10:31,572 --> 02:10:36,572
+Keza Rendering işlemleri için OpenGL ve DirectX'in desteklenmesini istiyorum.
+
+460
+02:10:36,572 --> 02:10:41,572
+Soit Renderer sınıfından kalıtımla, Somut OpenGL Renderer sınıfını tüm üretirim.
+
+461
+02:10:41,572 --> 02:10:46,572
+Ve ilgili Renderer operasyonlarımı OpenGL kullanmaktan güzelce kodlarım.
+
+462
+02:10:46,572 --> 02:10:50,572
+Burada aynı şeyi DirectX Renderer içerisinde yapalım.
+
+463
+02:10:51,572 --> 02:10:56,572
+Bu şekilde yaptığımda benim AP Control kaynak kodum ne hale geliyor?
+
+464
+02:10:56,572 --> 02:10:58,572
+Hadi onu eklist açayım eklistten bakalım.
+
+465
+02:10:59,539 --> 02:11:12,539
+Şunları bir kapatayım. Nesneye Dayalı Tasarım Modelleme kodlarında, Patterns'ta Abstract Faktörünün Sonuç'un ikincisindeyiz şu an.
+
+466
+02:11:12,539 --> 02:11:20,539
+İşte benim artık bir Enum sınıfım yok. Sadece AP Control sınıfım var.
+
+467
+02:11:22,576 --> 02:11:31,576
+DirectX Renderer ve DirectX Shaders sınıflarım. Bunlar da Renderer sınıfından bakın. Renderer sınıfı. İşte Soyut sınıf.
+
+468
+02:11:31,576 --> 02:11:50,576
+Public App Facts Renderer ve Soyut metotlar tanımlanmış durumda. Bundan kalıtım da örneğin DirectX Renderer sınıfını oluşturdum. Public Class DirectX Renderer, Expense Renderer. Ondan sonra DirectX kullanarak Renderer işlemini yapmak için bu metotları tanımlayıp gövdelerini doldurmak gerekiyor elbette.
+
+469
+02:11:50,576 --> 02:11:54,796
+Ama ben dediğim gibi hatırlamadığım için tam o açıklar nasıl yapılıyor? Göğmeni boş bıraktım.
+
+470
+02:11:59,188 --> 02:12:04,588
+Ama oradaki işlemler DirectX kütüphanelerinin çağrılar ile yapılacak.
+
+471
+02:12:05,688 --> 02:12:17,948
+Keza OpenGL Render'a sınıfında kalıtımda türetilmiştir ve artık metotlar somut olarak gövdeleri OpenGL kullanarak kodlanılacaktır.
+
+472
+02:12:19,188 --> 02:12:23,188
+Aynı durum benzer durum DirectX şeydir.
+
+473
+02:12:24,756 --> 02:12:44,076
+OpenGL Smootlar içinde geçerli. Sonra benim AP Control ana oyun motoruma geldiğimde, şimdi aslında şu an yine burada bir Switch Case var ama sadece Constructor'da var.
+
+474
+02:12:52,212 --> 02:13:06,832
+OpenJern'in kullanması daha uygun, DirectX kullanması daha uygun. Veya bir konfigürasyon dosyasında bu ayar yapılış olabilir. Oradan okuyacak ve ona göre şey yapmak durumunda olacak.
+
+475
+02:13:07,380 --> 02:13:34,760
+İlgili kütüphaneyi ayarlamak durumunda kalır. Yani bu Switch Case'den tam olarak kurtulmuyoruz. Ama sadece bir tek yerde kodluyoruz Switch Case. Öbür türümüzde rendering için de ayrı, shadering için de ayrı. Daha sonra bir dolu operasyon gelecek aslında. Texture mapping için ayrı, ray tracing için ayrı, collision detection için ayrı, onun için ayrı, bunun için ayrı. Bir dolu başka yerlerde Switch Case'lar tekrarlanacak. Şimdi bir tek yerde var.
+
+476
+02:13:35,380 --> 02:13:59,840
+Konstruktor'da. Tamam mı? Ona göre, peki hocam şu şeyi nereden alıyor derseniz, aslında orada ufak bir bug var. Şu library aslında AP Control Constructor'ın default Constructor değil de bunu set edecek şekilde yazmalıydım aslında. Burada bakın şeyle ilginç bug da vermiyor aslında. Yani warning da vermiyor aslında.
+
+477
+02:14:05,524 --> 02:14:25,243
+Evet, ilginç. Ve ayrıca burada bunların private metodları da özellikle yazmamışım. Hadi görmüşken yazayım. Elim değmişken. Ama tabii şeyde de değişecek. Powerpoint'te de aynı şey yazmak zorundayım. Bu daha uzun olacak. Onu değiştireyim. Not düşeyim kendine.
+
+478
+02:14:30,524 --> 02:14:31,203
+Evet.
+
+479
+02:14:45,939 --> 02:14:48,939
+Şimdi şöyle yapalım.
+
+480
+02:14:56,467 --> 02:15:15,927
+Sınıf şemasında public olarak, artı olarak gösteriyorum. Ha, aslında şu şemada da aslında void'larında da gözükmemesi gerekiyor. Yani void'la bir şey yazmıyorduk aslında. Boş kalıyordu ve geri dönüşü zaten yömeldi. İk noktası deyip, yani matut parantezinden sonra yazılır aslında. Evet, bir de.
+
+481
+02:15:21,300 --> 02:15:24,460
+Ayrıca bir nokta virgü de var bir ara. O da gözümden kaçmadı.
+
+482
+02:15:28,000 --> 02:15:29,080
+Dersten sonra yapalım.
+
+483
+02:15:30,820 --> 02:15:31,380
+Evet.
+
+484
+02:15:34,020 --> 02:15:34,800
+Durum bu.
+
+485
+02:15:36,372 --> 02:15:49,832
+İyi, bu bizi belli bir yere getirdi. Yeni bir kütüphaneye ekleyeceğim zaman plug and play şeklinde sadece yeni ilgili sınıflarını kodlayıp bu mevcut tasalıma ekleyebilirim direkt.
+
+486
+02:15:49,832 --> 02:15:56,832
+Ve mevcut tasarımda başka hiçbir yere değiştirmek zorunda kalmam. Bir tek bir tek şu Constructor içerisinde...
+
+487
+02:15:57,363 --> 02:16:11,384
+İlklendirmeye yeni kez eklerim. Başka hiçbir yerde mevcut koda bir şeyler eklemem gerekmez. Buralardan bir değişiklik yapmam gerekmez. Yeni sınıfları eklerim. Olur biter.
+
+488
+02:16:12,243 --> 02:16:22,703
+Peki, sonra bir de App Store Factory tasarım kalıbını öğrendik. Madem uygulamaya çalışalım diyelim. O zaman bu kalıbı nasıl uygularız?
+
+489
+02:16:22,703 --> 02:16:36,923
+Şimdi, temel olarak yine Soyut Shader ve Soyut Render'ım olacak. Ama bunlar ya OpenCL ailesinin ya da DirectX ailesinin üyeleri olacak.
+
+490
+02:16:37,556 --> 02:16:58,376
+Böyle baktığımda, Component Factory Snif'ımı tanımlarım. Render, Shaders vs. nesnenin oluşturulması için ilgili Create metotlarını tanımlarım. Sonra bunun somut alt sınıflarını oluştururum. Her bir ailenin için bir sınıf oluştururum.
+
+491
+02:16:58,575 --> 02:17:08,235
+OpenGL ailesinin üyelerini döndürecek OpenGL Faktörü, DirectX ailesinin üyelerini döndürecek DirectX Faktörü sınıfı kurdularım.
+
+492
+02:17:08,975 --> 02:17:13,475
+İşte onların üst sınıftaki soyut metotları da altta sonuta dökerim.
+
+493
+02:17:14,035 --> 02:17:19,615
+Ve o metotların geri dönüştükleri de spesifik ailenin üyeleri olacak şekilde yazalım.
+
+494
+02:17:21,495 --> 02:17:23,975
+Başka bir değişiklikle de gerek yok.
+
+495
+02:17:24,755 --> 02:17:31,255
+İkinci çözümünden üçüncü çözümüne geçiş yapıyorsam eğer başka hiçbir değişiklik yapmaya gerek yok.
+
+496
+02:17:33,556 --> 02:17:37,036
+Ya da sıfırdan kodlıyorsam zaten bu tasarıma göre kodlarım.
+
+497
+02:17:38,739 --> 02:18:06,739
+İkinci tasarımından, üçüncü tasarımma yani düzgün nesneye yönelik düşünceden kalıp kullanan düşünceye geçişimde nispeten yumuşak bir geçiş oldu. Bunun yumuşak olması bence bu ikinci çözümünün gerçekten de nesneye yönelime, sanatına, önerilerine, tahsiasına uyan bir çözüm olduğunu söylüyor bana. Bunun bir göstergesi olduğunu düşünüyorum.
+
+498
+02:18:06,739 --> 02:18:28,000
+Kalıba yumuşak bir geçiş yapabilmeni. Peki, geçtim. Ne kazandım, ne kaybettim? Bir de ne değiştireceğim? Şimdi ikinci çözümle üçüncü çözümü karşılaştırdığımızda ekstradan üç tane sınıf görüyoruz arkadaşlar. Yani bu aftar faktörü tasarım kalıbını oluşturmak için üç tane fazladan sınıf kodlamak zorunda kaldı.
+
+499
+02:18:31,156 --> 02:18:56,376
+Niye böyle bir şey yapmak zorunda kalayım? İkinci çözüm daha sınıf ile çalışması açısından daha avantajlı. Ama birinci çözüm daha daha sınıf ile çalışıyordu. Niye o en avantajlı değil? Yok, yeni eleman eklemekte problem oluyor. Peki, ikinci çözüm ve üçüncü çözümü yeni bir kod kitaplığı eklemek açısından düşünelim. Ne yapmam gerekiyor?
+
+500
+02:18:59,156 --> 02:19:23,236
+İkinci çözümde olduğu gibi kardeş art sınıfları ekleyeceğim. Ama ek olarak bir de DirectX 11 Factory sınıfı oluşturacağım. Üçüncü çözümde, ikinci çözümde yaptığımda bir adet fazla sınıf ile bu değişikliği sağlayabiliyorum. Yani aslında biraz daha fazla sınıf kullanıyor oldum.
+
+501
+02:19:23,987 --> 02:19:37,768
+Bu bakımdan şeyde baktığımda, bundan sonra kod üzerinden anlatayım. Çünkü şurada ekstradan bir şeyim yok. Çok özel bir şeyim yok.
+
+502
+02:19:50,195 --> 02:20:06,536
+Ek olarak şu Component Factory geldi. İlgili oluşturma metotları ve Somut Altınlıklar, Dialytics Factory.
+
+503
+02:20:07,040 --> 02:20:13,180
+İşte o component faktörünün alt sınıfı, render oluştur, shader oluştur metotları.
+
+504
+02:20:13,180 --> 02:20:17,479
+Keza OpenGL için de aynı şey söz konusu.
+
+505
+02:20:17,479 --> 02:20:27,900
+Oyun motoru kodum nasıl değişti derseniz ise, orada bir ek toparlama işlemi de bilmiş oldum.
+
+506
+02:20:34,036 --> 02:20:53,655
+Bu library nesnesi olaraktan direkt ilgili soyut sınıf türünden bir parametre verirsem ama tabii ki buraya gelecek olan nesne somut art sınıflardan somut bir nesne olacak haliyle.
+
+507
+02:20:57,203 --> 02:21:14,043
+Ve artık renderımı ve shaderımı bu fabrika sınıfının create metotlarını kullandığımda bakın switch case de ortadan kalktı. Benim oyun noktomda artık hiç switch case yok.
+
+508
+02:21:25,167 --> 02:21:31,167
+Ayağı kaldıracakken, parametre olarak acaba işte...
+
+509
+02:21:32,051 --> 02:21:55,912
+DirectX Faktörü nesnesi mi vereceğim yoksa OpenGL Faktörü nesnesi mi vereceğim? Ona karar vereceğim bir ilk yapılandırma kodu yazımının bir yerlerinde olması gerekiyor haliyle ve orada o switch kez kalacak. Mecbur. Çünkü bakmamız lazım. Ne gibi stratejiklerim var o stratejiklere karşılık neyi vereceğim ben buna? Bunun mutlaka bir noktada kalacak.
+
+510
+02:22:00,051 --> 02:22:07,371
+Bu durum oyun motorunda bile değil, sadece oyun motorunun konfigürasyon ön yüzünde kodlayacağım bir şey olacak.
+
+511
+02:22:07,371 --> 02:22:23,051
+Ben iş mantığı açısından baktığımda sistem altyapısına bakmak zorunda kalmadan, oradaki o ayrıntıyı bilmek zorunda kalmadan ben kendimi yazmak istediğim oyun motoruna daha odaklayarak çalışabilirim.
+
+512
+02:22:23,476 --> 02:22:45,396
+Bu benzer numarayı az önceki çözümde de yapamaz mıydınız? Evet, yapabilirdiniz. Ama tam olarak yapamazdınız. Çünkü o çözümde ister istemez, onun koduna geçeyim. Soruşinlikinin kodunda. Şimdi orada sadece bir enum var.
+
+513
+02:22:46,291 --> 02:22:56,351
+İki tane ayrı nesne var. O element türüne bakıp mutlaka eğer o element türü şuysa şu türlendir ve şu türlendir oluştur demem gereken switch case olacak.
+
+514
+02:22:56,791 --> 02:23:05,131
+Hani belki if, else, if, else, if de yapabilirim ama o ikisi aynı kapıya çıkıyor. Ha switch case, ha if, else, if, else, if. Aynı mantık aslında.
+
+515
+02:23:10,355 --> 02:23:29,396
+Doğrudan ilgili fabrika nesnesini vermek şeklinde çalışma biçimini bu ikinci çözümünü de yapamıyorum. Üçüncü çözümün ikinci çözüme göre olan avantajı ise bu. Switch Caves'in benim ana odaklandığım sınıflarımın hepsinden uzaklaştırılmış olması.
+
+516
+02:23:33,824 --> 02:23:47,824
+Ekstradan yönetilmesi gereken sınıflara değer mi değmez mi? Onun da kararını siz verin. Uğraşacağınız vakaya göre, projenin boyuna göre vs. vs. değişik kriterlere göre kararınızı verebilirsiniz.
+
+517
+02:23:52,531 --> 02:24:12,951
+Yeter ki birinci çözümü kullanmayın. İkinciyi veya üçüncüyü kullanın. İkisi de kendi ek avantajlarına sahip. Daha düzgün, daha esnek her şeyden önce ve böylece bakım masrafı daha düşük, geliştirmesi daha kolay çözümler aslında.
+
+518
+02:24:13,427 --> 02:24:25,687
+İkinci çözümde, üçüncü çözümde, birinci çözüme göre daha fazla smooth ile uğraşıyor. Fakat işte çok daha esnek çözümler ortaya koyuyorlar. Şimdi bütün esprisi bu.
+
+519
+02:24:27,476 --> 02:24:43,556
+O yansılarda da bunu söylemeye çalışıyorum zaten. Şimdi onu öyle söyleyince şunu daha yapmak çok çok da gerekmiyor. Yani ikinci çözümün konstraktörüne parametre vermek çok çok da fazla bizi kurtarmıyor.
+
+520
+02:24:46,451 --> 02:24:49,371
+Ama yine de vermek lazım. Çünkü bu aslında hata yani.
+
+521
+02:24:49,371 --> 02:24:52,671
+Live'de not defined. Yani şu iki kezlere de girmeyecek.
+
+522
+02:24:53,092 --> 02:24:57,072
+Yani set edilmemiş ki Live'de. Onu yine düzeltmek lazım.
+
+523
+02:24:58,912 --> 02:25:00,151
+Pekalar bakalım.
+
+524
+02:25:03,731 --> 02:25:22,752
+Evet ve bu aslında yaptığım şeydi. Refactoring konusunu işlediğimizde Prezor Hore Object diye bir refactoring eylemi var. Ona da aslında yürütülmüş hali gibidir diyebilirim. Daha sonra refactoring'i gördüğünüz zaman geri dönüp bu noktaya bakabilirsiniz. Ha evet bu gerçekten de buymuş diye alınabilirsiniz. Evet.
+
+525
+02:25:24,180 --> 02:25:45,040
+Aslında bu iki şeyleri sözde de söyledim ama atladığım bir şey var mı? Kontrol edeyim. Neyin değişikliğini bul ve onu sanmama. Evet, değişen neydi? Değişen hangi kod kitaplığını kullanacağı değişiklikte. Onun görevi değiştirdik. Böylece bu işi yaparaktan biz değişen şeyi soyutlamış olduk ve değişen şeyi kara kutu yaklaşımıyla kullanabildik.
+
+526
+02:25:52,180 --> 02:26:05,000
+Örneğimiz açısından konuşursak, oyun motorumuz açısından. İşimize daha çok odaklanıyoruz. Kan kütüphanelerin kullanıldığı ayrıntılarından mümkün olduğu kadar soyutlanmış durumdayız.
+
+527
+02:26:09,492 --> 02:26:30,371
+Bir de genelde daha deneyimli tasarımcılar kalıtım ilişkisi yerine parça-bütün ilişkisini tercih ederler. Neden? Kalıtımın yanlış kurulma olasılığı daha fazla ve bu daha durağan bir ilişki türü olduğu için yan etkili daha ciddi olabiliyor.
+
+528
+02:26:30,371 --> 02:26:37,492
+Şimdi bu çözümümüzde her çözümde, her varyasyonda illaki kalıtım kullandık aslında. Parça-bütün kullanmaktadır.
+
+529
+02:26:37,492 --> 02:26:56,172
+Anladık. Fakat kalıtımın daha doğru kurmamız gerektiğini keşfettik. Birinci çözümde kurduğumuz kalıtım yaraşısı bizi çok ters bir yerlere götürdü. Diğer iki çözümde kullandığımız kalıtım ilişkileri işimizi kolaylaştırdı.
+
+530
+02:26:57,292 --> 02:26:58,512
+Durum bu.
+
+531
+02:27:01,971 --> 02:27:16,471
+Kalıtım yerine tamamen tarça bütün kullandığımız örnekler olabilir. Orada bu durumunu ayrıca tekrarlarız zaten. Çoğu yerde ders notunda da zaten tekrarlanıyoruz. Olmazsa benim de eser aklıma söylerim.
+
+532
+02:27:17,691 --> 02:27:29,971
+Üçüncü ders olarak, çıkardığımız ders olarak gerçeklemelere göre değil, arayüzlere göre tasarım yaparsak eğer daha esnek bir noktada.
+
+533
+02:27:29,971 --> 02:27:43,651
+Bu noktalara geliriz. Arayüzü göre tasarım yapmak, kara kutu yaklaşımını kullanabilmemizi sağlamaktadır. Yine burada Java interfezlerinden bahsetmek istemiyorum. Bir public metotlar.
+
+534
+02:27:44,079 --> 02:28:06,040
+Kullanabilecek pabrik metotlar açısından, olabilecek etkileşimler açısından bakıyoruz. İlk çözümümüzde spesifik gerçeklemelerin spesifik metotları üstünden konuşuyor olduk. Halbuki ikinci ve üçüncü çözümlerimizde soyut üst sınıflarımız vardı. O soyut üst sınıflarda tanımlanan soyut metotlar vardı.
+
+535
+02:28:12,915 --> 02:28:40,536
+Bu türünden istek bekleyen yerlere ilgili soğuk nesneyi verdiğimizde işler kendiliğinden çözülmüş oldu. Bizim örneğimizde AP kontrolü sınıfımızın tek ihtiyacı olan Component Factory sınıfından, soyut sınıftan bir renderer. Bizde şeydir ama hangi spesifik renderer veya hangi spesifik şeydir umurumda değil. ABC operasyonlarına yapılması gerekiyor. O kadar ona göre kodumu yazdım AP kontrolü sınıfına.
+
+536
+02:28:40,915 --> 02:28:43,896
+Ve günü kurtardım diyebilirim.
+
+537
+02:28:47,175 --> 02:29:04,495
+Yalnız ayrıca şunu da söyleyeyim. Benim hem ikinci hem üçüncü tasarımımda şu soyut sınıflarımın sadece ve üye alanları bulunmadan sadece soyut metotları olduğunda, somut herhangi bir metodu da olmadığında ben bunları Java Interfersi olarak da tanımlayabilirim pekala.
+
+538
+02:29:05,299 --> 02:29:19,599
+Ama o noktada biraz daha dille spesifik çözümlere girmiş oluyoruz ki dersin mümkün olduğu kadar dilden bağımsız anlatmaya çalışıyorum aslında. Ve ben sırf şamalar üstünden de konuşabilirdim.
+
+539
+02:29:21,332 --> 02:29:24,871
+Fakat bu durumda biraz daha zorlanabilirdiniz.
+
+540
+02:29:25,252 --> 02:29:30,531
+Kişi biraz somuta eti kemiğe döndürmek için biraz kod yazmak gerekiyor.
+
+541
+02:29:30,531 --> 02:29:37,632
+Onu yazarken de mümkün olduğu kadar dile spesifik şeylerden kaçınarak yazmaya çalışıyorum.
+
+542
+02:29:37,932 --> 02:29:40,152
+Daha geniş bir kitleye hitap edebilmek için.
+
+543
+02:29:49,268 --> 02:30:00,000
+Sonunuz varsa buyurun. Biraz düşünebilirsiniz. Çünkü bugünlük bu kadar diyeceğim. Arada vermedik ama kalıbı kullanıp ondan sonra avverip...
+
+544
+02:30:00,000 --> 02:30:19,819
+Özür dilerim, kalıbı anlatıp ondan sonra ara verdiğimizde araya biraz soğukluk girecek. Hazır kalıbın yapısı kafamızdayken bu örnekleri çözmenin yararlı olduğunu düşünerekten biraz uzattım. Şimdi ara versek, benim hiçbir sorumuz yok. 15-25 ara 15-35 ders geri kalıyor zaten 25 dakika. Çok verilmiş olmayacak.
+
+545
+02:30:28,000 --> 02:30:41,260
+Alkılayabilirdiniz ama zaten ayrıca vurgulayacağım onu. Tamam, bugünlük bu kadar diyebiliriz. Ben şimdi sizden soru bekliyorum arkadaşlar. İsterseniz çatı yazın, isterseniz hocam din açın sesinizi, sonun. Öyle konuşalım.
+
+546
+02:30:43,760 --> 02:30:47,479
+Bu sırada ben ne yaptığımı yazıyı işleyeyim. Bu sorunu unutuyorum çünkü.
+
+547
+02:30:53,139 --> 02:31:06,419
+Hocam, bu tasarım kalıplarına biraz daha fazla aşina olmak için önerebileceğiniz bir ödev benzeri bir site veya çalışabileceğimiz bir site var mıdır?
+
+548
+02:31:07,123 --> 02:31:22,123
+Ödev değil de, ilk yarısında söylediğim geçen hafta ve ders notlarında da var. Düzem patterns konulu çok fazla kitap var aslında.
+
+549
+02:31:22,123 --> 02:31:31,344
+Ve ben bunların içerisinde bazı adlarını zikrettim. Nerede? Şurada.
+
+550
+02:31:33,876 --> 02:31:51,036
+Birkaç kitap, ismini zikrettim. Çok daha da fazla var. Bunu gerek VETİS'ten bağlanıp, bizim kütüphane arasına falan VETİS'ten bağlanıp, kendi evinizden de ulaşabileceğiniz elektronik kaynaklar oluyor. Keza başka ortamlardan da bulabiliyorsunuz pek rahatlıkla.
+
+551
+02:31:53,363 --> 02:32:04,923
+Onlardan yararlanabilirsiniz. Böyle hep örnekler üstünden anlatılır bu gibi kitaplar. Onun dışında Google'a yazdığınızda da çok fazla kaynak bulabiliyorsunuz.
+
+552
+02:32:05,523 --> 02:32:12,863
+Hocam genelde Medium yazısı falan çıkıyor. Ekstradan işte eksik kaldığımız yerleri chat'ci pitiye soruyoruz bazı yerleri anlamak için falan.
+
+553
+02:32:13,703 --> 02:32:18,443
+Onun dışında bilmiyorum önerebileceğiniz bir site varsa iyi olur diyecektim.
+
+554
+02:32:18,443 --> 02:32:19,223
+Bakalım.
+
+555
+02:32:24,595 --> 02:32:47,736
+Yüzemi'nin dersleri varmış. Bakın şu Refactoring Guru sitesi fena değil. Daha önce ziyaret etmişim. Şunu bir söyleyeyim size. Ki burada Refactoring de var. Hem dizanplates hem Refactoring bölümleri var. Dersin tüm kapsamını içeriyor. İşte Creation'ın katılılar.
+
+556
+02:32:48,147 --> 02:33:15,507
+Ondan sonra structural patternlar ve behavioral patternlar hepsi listelenmiş durumda. Gidelim abstract factory mesela diyelim ki. İşte güzel esprileri aklıda kalabilecek grafikler de ki bunların aslında kitabı da var. Bu sitedeki bu örnekler normal kitaplarında da basılı aslında. Ondan sonra işte böyle bir probleminiz var. Böyle bir şeyler oluşturmak istiyorsunuz.
+
+557
+02:33:16,147 --> 02:33:33,827
+Sonra böyle bir ihtiyacımız var. Bu işe olmadı. Şöyle bir şey falan. Ondan sonra görüntü bir sınıf tasarımını da yavaş yavaş yapıyor, veriyor. Oradan bütün çözüme de gidiyor yavaş yavaş falan. Bu site olabilir mesela. Refactoring.guru web sitesi. Bu olabilir.
+
+558
+02:33:44,147 --> 02:34:02,367
+Btk Akademide de benzer şeyler var diye hatırlıyorum ama. Olabilir. Olabilir. Yani bakın arkadaşlar, çok rahat şeyler bulacağınızı düşünüyorum. Medium'da var. O da hiç şey etmemiştim. Başka neler neler varmış bakalım.
+
+559
+02:34:03,379 --> 02:34:15,319
+Genelde hocam bu klas diagramlar ya da veri tabanı tasarımları ya da seküens diagram tarzı çizimler üzerinden dersler işleniyor da siz de ilerleyen süreçte aynı mı?
+
+560
+02:34:15,319 --> 02:34:31,319
+Evet. Tabii tabii. Tabii yani bakın işte ana çablonum hep bu şekilde. Öncelikle dört üç etenin kitabında anlattığı şekilde kalıbı anlatıyorum sınıf şeması üstünden. Ondan sonra örnek problem verip onu kod önce bazen...
+
+561
+02:34:31,379 --> 02:34:44,419
+Önce kod, sonra kod şeklinde bir şeyleri yazıp tasarlayıp falan. Ondan sonra hadi bakalım şöyle bir değişiklik olacak. Nasıl yapabiliriz? İşte böyle yapabiliriz gibisinden dersin konsepti bu şekilde ilerleyecek.
+
+562
+02:34:44,979 --> 02:35:03,639
+Hocam, genelde bu use case, sequence diagram, bu ikisi ağırlıklı oluyor. Nesneye Dayalı Analiz Tasarım derslerinde. Sizde de genel olarak bunlar üzerine mi yoğunlaşacağız ilerleyen süreçte yoksa başka şeylere de bakacak mıyız? Ekstradan daha fazla mı itleneceğimiz?
+
+563
+02:35:12,979 --> 02:35:36,979
+Gereksinim analizi, analiz tasarım, kodlama, sınama, bütün bu ayrıntılığını anlatan ders değil tabii ki. O yüzden 100 kez şamaları çizmeyeceğiz mesela. Yani 100 kez şamaları dersin kapsamında değil kesinlikle. Genellikle sınıf şamaları kullanacağız. Bazen sequence diagramlar da çiziyor olacağız. Diğer yömer şamalarına ihtiyacımız olmuyor bu ders kapsamında.
+
+564
+02:35:37,459 --> 02:35:40,959
+Tamam, benim sorularım bitti hocam. Çok teşekkürler. Ağzınıza sağ olun.
+
+565
+02:35:40,959 --> 02:35:44,019
+Ne demek? Evet, buyurun başkası duvasını alayım.
+
+566
+02:36:07,731 --> 02:36:22,072
+Şimdi sorunlardan devam edeceğiz. 0.11'in bu noktasından 17. yansıda.
+
+567
+02:36:30,675 --> 02:36:33,475
+18.000'e başlayacağız.
+
+568
+02:36:34,675 --> 02:36:36,615
+Bir yere kadar gideceğiz.
+
+569
+02:36:36,775 --> 02:36:48,195
+Yani, factory metoddan başlayıp artık Allah ne verdisi ne kadar ilerletebilirsek, haftaya da o kadar ilerleteceğiz.
+
+570
+02:36:50,635 --> 02:36:51,315
+Pekala.
+
+571
+02:36:52,835 --> 02:36:53,536
+Bakalım.
+
+572
+02:36:54,835 --> 02:36:59,355
+Burada bir değişiklik yaptım mı? Yok özel bir değişiklik yapmadım. Kaydetmedim.
+
+573
+02:37:00,216 --> 02:37:14,155
+Ha evet grafik girmişti bu. Orada ihtiyaç yoktu dedik. Bakalım bir şey nerede? Kontrolü. Ha burada. Ha sohbete bir şey gelmiş. Evet. [öğrenci] Bey diyor ki. Ha onu konuşmuştuk zaten. Katılmışlar için söylemiştik.
+
+574
+02:37:14,611 --> 02:37:42,551
+Evet, şimdi şuraya gel. Ya bakın şimdi yeni mesaj var. Ben tıkladım. Daha eski mesaj odağımda. Yani şöyle kaydırmak aklıma gelmese şey de görmeyeceğim. En sonra kaydırsan ya yani. Neyse. Peki. Yeni sınıfın tanımlanması oldukça büyük bir yük getiriyorsa. Birinci çözümünün daha etkili kabul edilmesini sağlam bir buğaya oluşabilir mi? Hayır oluşmaz. Çünkü illaki yakın gelecekte daha gelecek.
+
+575
+02:37:42,611 --> 02:37:56,271
+11 çıkacak. Sizin yeni gelen yeni çıkacak kitaplıkları desteklemeyeceğim kararımı verdiyseniz eğer o zaman birinci çözümden devam edebilirsiniz. Yani benim çözümümse kullanmaya devam edebilirsiniz.
+
+576
+02:37:58,675 --> 02:38:12,335
+Eyvallah. Zaten bu tasarım kalıbını kullanmak veya daha iyi bir nesne olarak tasarım yapmaya bizi götüren nokta farklı kütüphanelerin de eklenmesi ihtiyacıydı.
+
+577
+02:38:12,896 --> 02:38:20,775
+Bunu eklenmeyeceğiz kesin kardeşim diyorsak o zaman birinci sözümle devam edebiliriz. Sıkıntımız yok.
+
+578
+02:38:26,164 --> 02:38:45,623
+Kaynak kodu elimizde olmayan, sadece binary'leri elimizde olan bir yazılımı iler etmek istiyorsak, bazen mümkün olduğu kadar yeni sınıf eklemek ama o zaman mevcut sınıfta değişiklik yapmamız gerekiyor ve kaynak kodu yok, değişiklik yapacağız. Yok, örnek olmadı.
+
+579
+02:38:47,827 --> 02:39:07,308
+Bunları sınıf değil de mesela ayrı ayrı sunucu çiftliklerinde çalışan, ayrı ayrı silolarda çalışan, ayrı ayrı departmanların, ayrı ayrı sunucu art sistemlerinde çalışan şeyler olarak düşünürseniz yeni bir şey eklememek avantajınıza da tabii ki.
+
+580
+02:39:07,308 --> 02:39:14,367
+Ama artık o kadar orkestration üstüne falan konuşmuyoruz biz ders üstünde.
+
+581
+02:39:16,147 --> 02:39:29,288
+Siz daha güzel bir örnek bulabilirsiniz. Daha sumut bir örnek yazın lütfen. Ama evet, o oldukça büyük bir yükün ne olabileceğini hayal edip örneklemeye çalıştım ama çok çok da güzel örnekler olmadı ama olabilirsin.
+
+582
+02:39:40,852 --> 02:39:42,731
+Peki, başka soru varsa buyurun.
+
+583
+02:39:44,292 --> 02:39:46,692
+Bu arada ben bakayım ne yaptım şu işe mi?
+
+584
+02:39:48,211 --> 02:39:50,192
+Kapatmış mı? Bunu kapatmamışım.
+
+585
+02:39:51,192 --> 02:39:52,852
+Azıcık bakmıyor da bile herhalde.
